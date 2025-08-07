@@ -22,14 +22,12 @@ Inherits from [mobilityManagementPolicy](../resources/mobilitymanagementpolicy.m
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/policyroot-list-mobiledevicemanagementpolicies.md)|[mobileDeviceManagementPolicy](../resources/mobiledevicemanagementpolicy.md) collection|Get a list of the mobileDeviceManagementPolicy objects and their properties.|
-|[Create](../api/policyroot-post-mobiledevicemanagementpolicies.md)|[mobileDeviceManagementPolicy](../resources/mobiledevicemanagementpolicy.md)|Create a new mobileDeviceManagementPolicy object.|
-|[Get](../api/mobiledevicemanagementpolicy-get.md)|[mobileDeviceManagementPolicy](../resources/mobiledevicemanagementpolicy.md)|Read the properties and relationships of [mobileDeviceManagementPolicy](../resources/mobiledevicemanagementpolicy.md) object.|
-|[Update](../api/mobiledevicemanagementpolicy-update.md)|[mobileDeviceManagementPolicy](../resources/mobiledevicemanagementpolicy.md)|Update the properties of a mobileDeviceManagementPolicy object.|
-|[Delete](../api/policyroot-delete-mobiledevicemanagementpolicies.md)|None|Delete a mobileDeviceManagementPolicy object.|
-|[List includedGroups](../api/mobiledevicemanagementpolicy-list-includedgroups.md)|[group](../resources/group.md) collection|Get a list of groups included in an MDM policy.|
-|[Add group](../api/mobiledevicemanagementpolicy-post-includedgroups.md)|[group](../resources/group.md)|Add includedGroups by posting to the includedGroups collection.|
-|[Remove includedGroups](../api/mobiledevicemanagementpolicy-delete-includedgroups.md)|None|Remove a [group](../resources/group.md) object.|
+|[List](../api/mobiledevicemanagementpolicies-list.md)|[mobileDeviceManagementPolicy](../resources/mobileDeviceManagementPolicy.md) collection|Get a list of the [mobileDeviceManagementPolicy](../resources/mobilitymanagementpolicy.md) objects and their properties for mobile device management applications.|
+|[Get](../api/mobiledevicemanagementpolicies-get.md)|[mobileDeviceManagementPolicy](../resources/mobileDeviceManagementPolicy.md)|Read the properties and relationships of a [mobileDeviceManagementPolicy](../resources/mobilitymanagementpolicy.md) object for a mobile device management application.|
+|[Update](../api/mobiledevicemanagementpolicies-update.md)|None|Update the properties of a [mobileDeviceManagementPolicy](../resources/mobileDeviceManagementPolicy.md) object for a mobile device management application.|
+|[List included groups](../api/mobiledevicemanagementpolicies-list-includedgroups.md)|[group](../resources/group.md) collection|List included groups for a [mobileDeviceManagementPolicy](../resources/mobileDeviceManagementPolicy.md) object for a mobile device management application.|
+|[Add group to policy](../api/mobiledevicemanagementpolicies-post-includedgroups.md)|None|Add a group to the [mobileDeviceManagementPolicy](../resources/mobileDeviceManagementPolicy.md) object for a mobile device management application.|
+|[Delete group from policy](../api/mobiledevicemanagementpolicies-delete-includedgroups.md)|None|Delete a group from the [mobileDeviceManagementPolicy](../resources/mobilitymanagementpolicy.md) object for a mobile device management application.|
 
 ## Properties
 |Property|Type|Description|
