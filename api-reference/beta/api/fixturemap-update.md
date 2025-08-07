@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [fixtureMap](../resources/fixturemap.md) object in IMDF format.
+Update the map properties of a [fixture](../resources/fixturemap.md).
 
 ## Permissions
 
@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-PATCH places/{buildingPlaceId}/microsoft.graph.building/map/levels/{levelImdfID}/fixture/{fixtureImdfID}
+PATCH /places/{buildingPlaceId}/microsoft.graph.building/map/levels/{levelImdfID}/fixture/{fixtureImdfID}
 ```
 
 {buildingPlaceId} – **id** of a building with which this [fixturemap](../resources/fixturemap.md) is associated
@@ -58,7 +58,7 @@ PATCH places/{buildingPlaceId}/microsoft.graph.building/map/levels/{levelImdfID}
 |Property|Type|Description|
 |:---|:---|:---|
 |properties|String|Concatenated key-value pair of all properties of a geojson file for this **fixtureMap**. Inherited from [baseMapFeature](../resources/basemapfeature.md). Optional.|
-|placeId|String|Identifier for the [floor](../resources/floor.md) to which this **fixtureMap** belongs. Optional.|
+|placeId|String|Identifier for the [floor](../resources/floor.md) to which this **fixture** belongs to. Optional.|
 
 
 
