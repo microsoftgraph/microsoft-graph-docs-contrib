@@ -100,9 +100,9 @@ Represents a chat that is a collection of [chatMessages](chatmessage.md) between
 
 | Member             | Description                                                                       |
 |:-------------------|:----------------------------------------------------------------------------------|
-| InProgress           | Chat has entered migration mode.                          |
-| Completed            | Chat is out of migration mode. |
-| UnknownFutureValue | Evolvable enumeration sentinel value. Don't use.     |
+| inProgress           | Chat has entered migration mode.                          |
+| completed            | Chat is out of migration mode. |
+| unknownFutureValue | Evolvable enumeration sentinel value. Don't use.     |
 
 ## Relationships
 
