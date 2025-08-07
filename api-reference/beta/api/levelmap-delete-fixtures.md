@@ -4,7 +4,7 @@ description: "Delete a fixtureMap object."
 author: tiwarisakshi02
 ms.date: 06/12/2025
 ms.localizationpriority: medium
-ms.subservice: 
+ms.subservice: outlook
 doc_type: apiPageType
 ---
 
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a [fixtureMap](../resources/fixturemap.md) object.
+Delete a [fixture](../resources/fixturemap.md) on a given floor.
 
 ## Permissions
 
@@ -34,12 +34,14 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-DELETE places/{buildingPlaceId}/microsoft.graph.building/map/levels/{levelImdfID}/fixtures/{fixturesImdfID}
+DELETE /places/{buildingPlaceId}/microsoft.graph.building/map/levels/{levelImdfID}/fixtures/{fixturesImdfID}
 ```
 
-{buildingPlaceId} - **id** of the building with which this map is associated
+{buildingPlaceId} - **id** of the building in Places with which this map is associated
 
-{levelImdfID} - **id** of the level with which this map is associated
+{levelImdfID} - **id** of the level in the IMDF with which this map is associated
+
+{fixturesImdfID}- **id** of the fixture in the IMDF with which this map is associated
 
 ## Request headers
 
