@@ -24,6 +24,14 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 Use the [resize](/graph/api/cloudpc-resize) operation of [cloudPC](/graph/api/resources/cloudpc) to upgrade or downgrade an existing Cloud PC to a configuration with a new virtual CPU (vCPU) and storage size.
 
+## August 2025: New in preview only
+
+### Calendars | Place
+
+- Added the [checkInClaim](/graph/api/resources/checkInClaim?view=graph-rest-beta&preserve-view=true) entity type to represent the check-in status of a Calendar [event](/graph/api/resources/event) booked at a place.
+- Added the **checkInMethod** as a property of a [checkInClaim](/graph/api/resources/checkInClaim?view=graph-rest-beta&preserve-view=true) object, indicating the method of checking in.
+- Supported [create](/graph/api/place-post-checkins?view=graph-rest-beta&preserve-view=true) and [get](/graph/api/checkinclaim-get?view=graph-rest-beta&preserve-view=true) a [checkInClaim](/graph/api/resources/checkinclaim-get?view=graph-rest-beta&preserve-view=true) object.
+
 ## July 2025: New and generally available
 
 ### Bicep Templates for Microsoft Graph resources
@@ -63,12 +71,6 @@ Added the [resourceAccessEvent](/graph/api/resources/security-resourceaccesseven
 ### Teamwork and communications | Messaging
 
 [Send a message with a Loop component](/graph/api/chatmessage-post).
-
-### Calendars | Place
-
-- Added the [checkInClaim](/graph/api/resources/checkInClaim?view=graph-rest-beta&preserve-view=true) entity type to represent the check-in status of a Calendar [event](/graph/api/resources/event) booked at a place.
-- Added the **checkInMethod** as a property of a [checkInClaim](/graph/api/resources/checkInClaim?view=graph-rest-beta&preserve-view=true) object, indicating the method of checking in.
-- Supported [create](/graph/api/place-post-checkins?view=graph-rest-beta&preserve-view=true) and [get](/graph/api/checkinclaim-get?view=graph-rest-beta&preserve-view=true) a [checkInClaim](/graph/api/resources/checkinclaim-get?view=graph-rest-beta&preserve-view=true) object.
 
 ## July 2025: New in preview only
 
