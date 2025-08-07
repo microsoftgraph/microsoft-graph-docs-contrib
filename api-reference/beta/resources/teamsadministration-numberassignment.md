@@ -1,6 +1,6 @@
 ---
 title: "numberAssignment resource type"
-description: "Represents the operations related to telephone number assignment"
+description: "Represents the collection of operations available for telephone number assignment for a user account."
 author: "pavellatif"
 ms.date: 07/23/2025
 ms.localizationpriority: medium
@@ -35,8 +35,8 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 |activationState|microsoft.graph.teamsAdministration.activationState|The activation state of the telephone number. The possible values are: `activated`, `assignmentPending`, `assignmentFailed`, `updatePending`, `updateFailed`, `unknownFutureValue`.|
 |assignmentCategory|microsoft.graph.teamsAdministration.assignmentCategory|Contains the assignment category such as Primary or Private. The possible values are: `primary`, `private`, `alternate`, `unknownFutureValue`.|
 |assignmentStatus|microsoft.graph.teamsAdministration.assignmentStatus|The assignment status of the phone number. The possible values are: `unassigned`, `internalError`, `userAssigned`, `conferenceAssigned`, `voiceApplicationAssigned`, `thirdPartyAppAssigned`, `policyAssigned`, `unknownFutureValue`.|
-|assignmentTargetId|String|The ID of the object the phone number is assigned to, either the ObjectId of a user or resource account or the policy instance ID of a Teams shared calling routing policy instance|
-|capabilities|microsoft.graph.teamsAdministration.numberCapability collection|The list of capabilities assigned to the phone number|
+|assignmentTargetId|String|The ID of the object the phone number is assigned to, either the ObjectId of a user or resource account, or the policy instance ID of a Teams shared calling routing policy instance.|
+|capabilities|microsoft.graph.teamsAdministration.numberCapability collection|The list of capabilities assigned to the phone number.|
 |city|String|The city where the phone number is located or associated with|
 |civicAddressId|String|The ID of the CivicAddress assigned to the phone number|
 |id|String|The ID of the operation Inherited from [microsoft.graph.entity](../resources/entity.md). Inherits from [entity](../resources/entity.md)|
