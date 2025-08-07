@@ -25,7 +25,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /users/{userId}/presence/clearUserPreferredPresence
+POST /users/{id}/presence/clearUserPreferredPresence
 ```
 
 ## Request headers

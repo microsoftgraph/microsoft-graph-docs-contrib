@@ -5,6 +5,7 @@ author: "nilakhan"
 ms.localizationpriority: high
 ms.custom: scenarios:getting-started
 ms.date: 11/07/2024
+ms.topic: how-to
 ---
 
 # Upload documents using the Microsoft Graph Universal Print API
