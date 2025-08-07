@@ -1,6 +1,6 @@
 ---
 title: "chat: startMigration"
-description: "Start the migration of external messages by enabling migration mode in existing chat"
+description: "Start the migration of external messages by enabling migration mode in an existing chat."
 ms.localizationpriority: medium
 author: "MehakAgarwal"
 ms.subservice: "teams"
@@ -14,20 +14,20 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The API will allow users to enable migration mode on existing chats. Previously, users were only allowed to initiate import operations on newly created Standard Channels in empty state ([import-external-messages-to-teams](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)).
+Start the migration of external messages by enabling migration mode in an existing chat. Previously, users were only allowed to initiate import operations on newly created standard channels in an empty state ([import-external-messages-to-teams](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams).
 
 Starts the message migration process by populating `migration mode` to `inProgress` for a [chat](../resources/chat.md).
 
-Users are also allowed to define minimum timestamp for contents to be migrated, allowing them to import messages in the past. Provided timestamp is required to be older than the current `createdDateTime` for a [chat](../resources/chat.md).
+Users are also allowed to define a minimum timestamp for contents to be migrated, allowing them to import messages in the past. Provided timestamp is required to be older than the current `createdDateTime` for a [chat](../resources/chat.md).
 
-Provided timestamp will be used to replace existing `createdDateTime` of the [chat](../resources/chat.md).
+The provided timestamp is  to replace the existing `createdDateTime` of the [chat](../resources/chat.md).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 **Supported types of chats**
 
-1) New Chats (Group, 1:1, and Federated)
-2) Existing Chats (Group, 1:1, and Federated).
+1) New chats (Group, 1:1, and Federated).
+2) Existing chats (Group, 1:1, and Federated).
 
 ## Permissions
 
@@ -82,6 +82,7 @@ POST https://graph.microsoft.com/beta/chats/19:4b6bed8d24574f6a9e436813cb2617d8@
 
 <!-- markdownlint-disable MD001 -->
 <!-- markdownlint-disable MD024 -->
+
 ### Response
 
 The following example shows the response.
