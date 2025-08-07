@@ -4,7 +4,7 @@ description: "Represents a building.geojson file in IMDF format."
 author: tiwarisakshi02
 ms.date: 06/12/2025
 ms.localizationpriority: medium
-ms.subservice: 
+ms.subservice: outlook
 doc_type: resourcePageType
 ---
 
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a building.geojson file in IMDF format.
+Map file associated with a building in Places. This object is the IMDF format representation of building.geojson.
 
 Inherits from [baseMapFeature](./basemapfeature.md).
 
