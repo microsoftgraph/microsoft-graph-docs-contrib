@@ -97,39 +97,7 @@
           "ChangeType": "Addition",
           "Description": "Added the [telephoneNumberLongRunningOperation](https://learn.microsoft.com/en-us/graph/api/resources/teamsAdministration-telephoneNumberLongRunningOperation?view=graph-rest-beta) resource and its methods.",
           "Target": "telephoneNumberLongRunningOperation"
-        },
-        {
-          "Id": "07e967a6-f053-4c19-be0e-0a8373f072c4",
-          "ApiChange": "Resource",
-          "ChangedApiName": "telephoneNumberManagementRoot",
-          "ChangeType": "Addition",
-          "Description": "Added the [telephoneNumberManagementRoot](https://learn.microsoft.com/en-us/graph/api/resources/teamsAdministration-telephoneNumberManagementRoot?view=graph-rest-beta) resource.",
-          "Target": "telephoneNumberManagementRoot"
-        },
-        {
-          "Id": "07e967a6-f053-4c19-be0e-0a8373f072c4",
-          "ApiChange": "Method",
-          "ChangedApiName": "assignNumber",
-          "ChangeType": "Addition",
-          "Description": "Added the [assignNumber](https://learn.microsoft.com/en-us/graph/api/teamsAdministration-numberAssignment-assignNumber?view=graph-rest-beta) method to the [numberAssignment](https://learn.microsoft.com/en-us/graph/api/resources/teamsAdministration-numberAssignment?view=graph-rest-beta) resource.",
-          "Target": "numberAssignment"
-        },
-        {
-          "Id": "07e967a6-f053-4c19-be0e-0a8373f072c4",
-          "ApiChange": "Method",
-          "ChangedApiName": "unassignNumber",
-          "ChangeType": "Addition",
-          "Description": "Added the [unassignNumber](https://learn.microsoft.com/en-us/graph/api/teamsAdministration-numberAssignment-unassignNumber?view=graph-rest-beta) method to the [numberAssignment](https://learn.microsoft.com/en-us/graph/api/resources/teamsAdministration-numberAssignment?view=graph-rest-beta) resource.",
-          "Target": "numberAssignment"
-        },
-        {
-          "Id": "07e967a6-f053-4c19-be0e-0a8373f072c4",
-          "ApiChange": "Method",
-          "ChangedApiName": "updateNumber",
-          "ChangeType": "Addition",
-          "Description": "Added the [updateNumber](https://learn.microsoft.com/en-us/graph/api/teamsAdministration-numberAssignment-updateNumber?view=graph-rest-beta) method to the [numberAssignment](https://learn.microsoft.com/en-us/graph/api/resources/teamsAdministration-numberAssignment?view=graph-rest-beta) resource.",
-          "Target": "numberAssignment"
-        }
+        }        
       ],
       "Id": "07e967a6-f053-4c19-be0e-0a8373f072c4",
       "Cloud": "Prod",
