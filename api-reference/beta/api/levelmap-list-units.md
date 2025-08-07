@@ -4,7 +4,7 @@ description: "Get a list of the unitMap objects and their properties."
 author: tiwarisakshi02
 ms.date: 06/12/2025
 ms.localizationpriority: medium
-ms.subservice: 
+ms.subservice: outlook
 doc_type: apiPageType
 ---
 
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the unitMap objects and their properties.
+Get a list of the [units](../resources/unitmap.md) and their properties.
 
 ## Permissions
 
@@ -36,6 +36,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ``` http
 GET /building/map/levels/{levelMapId}/units
 ```
+{levelMapId} - **id** of the level in IMDF
 
 ## Optional query parameters
 
@@ -97,7 +98,7 @@ Content-Type: application/json
             "placeId": null,
             "id": "92171039-cf9b-4590-a406-43ca824c8418",
             "properties": "{\"id\":\"92171039-cf9b-4590-a406-43ca824c8418\",\"type\":\"Feature\",\"feature_type\":\"unit\",\"geometry\":{\"type\":\"Polygon\",\"coordinates\":[[[-121.8884352,37.3296641],[-121.8883999,37.329681],[-121.8883976,37.3296821],[-121.8883886,37.3296864],[-121.8883712,37.3296947],[-121.8884224,37.3297623],[-121.888436,37.3297802],[-121.8884642,37.3297667],[-121.8884817,37.3297583],[-121.8885142,37.3297428],[-121.8885182,37.3297408],[-121.8885162,37.3297381],[-121.8884834,37.3296948],[-121.8884725,37.3296805],[-121.8884577,37.3296608],[-121.8884535,37.3296554],[-121.8884495,37.3296573],[-121.8884352,37.3296641]]]},\"properties\":{\"name\":{\"en\":\"Test room 2 from Test Floor 1 (120.14)\"},\"level_id\":\"e537d463-475b-43c3-a650-184566c68bc9\",\"display_point\":{\"type\":\"Point\",\"coordinates\":[-121.8884437,37.3297165]},\"places_category\":\"conferenceroom\"}}"
-        },……
+        },
     ]
 }
 
