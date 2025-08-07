@@ -5593,16 +5593,32 @@
           "ApiChange": "Property",
           "ChangedApiName": "isInteractiveRosterEnabled",
           "ChangeType": "Addition",
-          "Description": "Added the **isInteractiveRosterEnabled** property to the [callOptions](https://learn.microsoft.com/en-us/graph/api/resources/callOptions?view=graph-rest-1.0) resource.",
+          "Description": "Added the **isInteractiveRosterEnabled** property to the [callOptions](https://learn.microsoft.com/en-us/graph/api/resources/calloptions?view=graph-rest-1.0) resource.",
           "Target": "callOptions"
+        },
+        {
+          "Id": "c7cd14b5-66f1-4c4a-b994-1a447beaa249",
+          "ApiChange": "Property",
+          "ChangedApiName": "isInteractiveRosterEnabled",
+          "ChangeType": "Addition",
+          "Description": "Added the **isInteractiveRosterEnabled** property to the [incomingCallOptions](https://learn.microsoft.com/en-us/graph/api/resources/incomingcalloptions?view=graph-rest-1.0) resource.",
+          "Target": "incomingCallOptions"
+        },
+        {
+          "Id": "c7cd14b5-66f1-4c4a-b994-1a447beaa249",
+          "ApiChange": "Property",
+          "ChangedApiName": "isInteractiveRosterEnabled",
+          "ChangeType": "Addition",
+          "Description": "Added the **isInteractiveRosterEnabled** property to the [outgoingCallOptions](https://learn.microsoft.com/en-us/graph/api/resources/outgoingcalloptions?view=graph-rest-1.0) resource.",
+          "Target": "outgoingCallOptions"
         }
       ],
       "Id": "c7cd14b5-66f1-4c4a-b994-1a447beaa249",
       "Cloud": "Prod",
       "Version": "v1.0",
-      "CreatedDateTime": "2025-07-23T20:17:07.7199965Z",
-      "WorkloadArea": "Cloud communications",
-      "SubArea": "Call"
+      "CreatedDateTime": "2025-03-27T15:19:10.1478061Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
     }
   ]
 }
