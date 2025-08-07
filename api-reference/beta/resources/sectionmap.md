@@ -4,7 +4,7 @@ description: "Represents a section.geojson file in IMDF format showing sections 
 author: tiwarisakshi02
 ms.date: 06/12/2025
 ms.localizationpriority: medium
-ms.subservice: 
+ms.subservice: outlook
 doc_type: resourcePageType
 ---
 
