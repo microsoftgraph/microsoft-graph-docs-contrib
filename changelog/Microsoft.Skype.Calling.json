@@ -3,23 +3,13 @@
     {
       "ChangeList": [
         {
-          "Id": "f172483d-128f-4174-828f-d5b133aa5c7b",
+          "Id": "9ae3e4e6-451d-43f2-ba1c-b1f3402ee10c",
           "ApiChange": "Resource",
           "ChangedApiName": "outOfOfficeSettings",
           "ChangeType": "Addition",
-          "Description": "Added the [outOfOfficeSettings](https://learn.microsoft.com/en-us/graph/api/resources/outOfOfficeSettings?view=graph-rest-1.0) resource.",
+          "Description": "Added the [outOfOfficeSettings](https://learn.microsoft.com/en-us/graph/api/resources/outOfOfficeSettings?view=graph-rest-1.0) resource type.",
           "Target": "outOfOfficeSettings"
-        }
-      ],
-      "Id": "f172483d-128f-4174-828f-d5b133aa5c7b",
-      "Cloud": "Prod",
-      "Version": "v1.0",
-      "CreatedDateTime": "2025-07-16T23:52:04.1387626Z",
-      "WorkloadArea": "Cloud communications",
-      "SubArea": "Call"
-    },
-    {
-      "ChangeList": [
+        },
         {
           "Id": "9ae3e4e6-451d-43f2-ba1c-b1f3402ee10c",
           "ApiChange": "Property",
@@ -41,8 +31,8 @@
       "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2025-07-16T23:52:04.1390021Z",
-      "WorkloadArea": "Cloud communications",
-      "SubArea": "Call"
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
     },
     {
       "ChangeList":[
