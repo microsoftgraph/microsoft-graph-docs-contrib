@@ -18,7 +18,7 @@ Represents the out-of-office settings related to the [presence](presence.md) of 
 
 | Property            | Type    | Description                                                                    |
 |:--------------------|:--------|:-------------------------------------------------------------------------------|
-| isOutOfOffice      | Boolean  | True if either of the following is met::</br><ul><li>The current time falls within the out-of-office window configured in Outlook or Teams.</li><li>An event marked as "Show as Out of Office" appears on the user's calendar.</li></ul></br>Otherwise, false. |
+| isOutOfOffice      | Boolean  | True if either of the following is met:</br><ul><li>The current time falls within the out-of-office window configured in Outlook or Teams.</li><li>An event marked as "Show as Out of Office" appears on the user's calendar.</li></ul>Otherwise, false. |
 | message           | String  | The out-of-office message configured by the user in the Outlook client (Automatic Replies) or the Teams client (Schedule out of office). |
 
 ## Relationships
