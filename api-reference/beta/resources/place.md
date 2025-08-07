@@ -52,7 +52,7 @@ The [findRooms](../api/user-findrooms.md) and [findRoomLists](../api/user-findro
 |displayName|String| The name associated with the place. |
 |geoCoordinates|[outlookGeoCoordinates](../resources/outlookgeocoordinates.md)| Specifies the place location in latitude, longitude, and (optionally) altitude coordinates. |
 |id|String| A unique identifier for the place. Read-only. This identifier isn't immutable and can change if there are changes to the mailbox or to the tenant configuration. |
-|isWheelChairAccessible|Boolean| Whether or not the **place** is wheelchair accessible. |
+|isWheelChairAccessible|Boolean| If the **place** is wheelchair accessible. |
 |parentId|String| **id** of a parent **place**. |
 |phone|String| The phone number of the place. |
 |placeId|String| A unique, immutable identifier for the place. Read-only. The value of this identifier is equal to the **ExternalDirectoryObjectId** returned from the `Get-Mailbox` cmdlet. |
@@ -62,7 +62,7 @@ The [findRooms](../api/user-findrooms.md) and [findRoomLists](../api/user-findro
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|checkIns| quasi-collection of [checkInClaim](../resources/checkinclaim.md) | A sub-resource of a place object indicating the check-in status of a Calendar Event booked at the place |
+|checkIns| quasi-collection of [checkInClaim](../resources/checkinclaim.md) | A subresource of a place object indicating the check-in status of a Calendar Event booked at the place |
 
 ## JSON representation
 

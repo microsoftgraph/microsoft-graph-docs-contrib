@@ -26,8 +26,8 @@ Namespace: microsoft.graph
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|calendarEventId|String| A unique identifier for a Calendar event to which the **checkInClaim** object is tied. For more find iCalUId in [event](../resources/event.md). |
-|checkInMethod|checkInMethod| The method of check-in. The possible values are: `unspecified`, `manual`, `inferred`, `verified`, `unknownFutureValue`.|
+|calendarEventId|String| A unique identifier for a Calendar event to which the **checkInClaim** object is tied. For more, find iCalUId in [event](../resources/event.md). |
+|checkInMethod|checkInMethod| The method of checking in. The possible values are: `unspecified`, `manual`, `inferred`, `verified`, `unknownFutureValue`.|
 |createdDateTime|DateTimeOffset| The date and time the **checkInClaim** object was created. In UTC timezone. |
 
 ## Relationships
