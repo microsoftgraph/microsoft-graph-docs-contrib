@@ -976,12 +976,19 @@
         "driveItem",
         "bundle",
         "fileStorageContainer",
+        "fileStorageContainerType",
+        "fileStorageContainerTypeAppPermissionGrant",
+        "fileStorageContainerTypeRegistration",
         "permission",
         "recycleBin",
         "recycleBinItem",
         "sharedDriveItem",
         "sharePointGroup",
         "sharePointGroupMember"
+      ],
+      "complexTypes": [
+        "fileStorageContainerTypeRegistrationSettings",
+        "fileStorageContainerTypeSettings"
       ]
     },
     {
@@ -1505,7 +1512,7 @@
                 "authentication",
                 "authenticationMethod",
                 "emailAuthenticationMethod",
-                "externalAuthenticationMethod"
+                "externalAuthenticationMethod",
                 "fido2AuthenticationMethod",
                 "hardwareOathAuthenticationMethod",
                 "microsoftAuthenticatorAuthenticationMethod",
@@ -2436,7 +2443,12 @@
                     "userCredentialUsageDetails",
                     "userRegistrationDetails",
                     "userRegistrationFeatureSummary",
-                    "userRegistrationMethodSummary"
+                    "userRegistrationMethodSummary",
+                    "userEventsSummary",
+                    "userMfaSignInSummary",
+                    "userPasswordResetsAndChangesSummary",
+                    "userRegistrationActivitySummary",
+                    "userSignInUsageByAuthMethodActivity"
                   ]
                 }
               ]

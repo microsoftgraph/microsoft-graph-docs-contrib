@@ -6,6 +6,7 @@ ms.localizationpriority: high
 ms.subservice: "teams"
 ms.custom: scenarios:getting-started
 ms.date: 01/09/2025
+ms.topic: how-to
 ---
 
 # Get change notifications for Copilot AI interactions using Microsoft Graph

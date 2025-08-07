@@ -5,6 +5,7 @@ author: "MSGraphDocsVTeam"
 ms.localizationpriority: high
 doc_type: conceptualPageType
 ms.date: 11/07/2024
+ms.topic: article
 ---
 
 # Microsoft Teams API implementation differences in national clouds

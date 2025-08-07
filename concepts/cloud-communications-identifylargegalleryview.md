@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: conceptualPageType
 ms.date: 11/07/2024
+ms.topic: how-to
 ---
 
 # Identify large gallery view participants in a roster

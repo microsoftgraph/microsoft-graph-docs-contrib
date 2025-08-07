@@ -4,6 +4,7 @@ description: "The New Chat component allows user to create new 1:1 or group conv
 ms.localizationpriority: medium
 author: sebastienlevert
 ms.date: 11/07/2024
+ms.topic: article
 ---
 
 # New chat component in Microsoft Graph Toolkit
