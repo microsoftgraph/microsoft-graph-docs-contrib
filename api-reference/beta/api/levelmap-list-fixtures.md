@@ -4,7 +4,7 @@ description: "Get a list of the fixtureMap objects and their properties."
 author: tiwarisakshi02
 ms.date: 06/12/2025
 ms.localizationpriority: medium
-ms.subservice: 
+ms.subservice: outlook
 doc_type: apiPageType
 ---
 
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the fixtureMap objects and their properties.
+Get a list of the [fixtures](../fixturemap.md) and their properties.
 
 ## Permissions
 
@@ -36,6 +36,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ``` http
 GET /building/map/levels/{levelMapId}/fixtures
 ```
+{levelMapId} - **id** of level in the IMDF
 
 ## Optional query parameters
 
