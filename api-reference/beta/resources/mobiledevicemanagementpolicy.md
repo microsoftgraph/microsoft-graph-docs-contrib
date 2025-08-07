@@ -16,14 +16,14 @@ Namespace: microsoft.graph
 
 In Microsoft Entra ID, a Mobile Device Management (MDM) policy defines the configuration and enforcement rules for managing devices that access corporate resources. MDM policies are designed to ensure secure, compliant, and efficient access to corporate resources across employee devices. When a device is enrolled, it automatically receives required configurations, applications, and security policies without manual IT intervention.
 
-Inherits from [mobilityManagementPolicy](../resources/mobilitymanagementpolicy.md).
+Inherits from [mobilityManagementPolicy](../resources/mobilityManagementPolicy.md).
 
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/mobiledevicemanagementpolicies-list.md)|[mobileDeviceManagementPolicy](../resources/mobileDeviceManagementPolicy.md) collection|Get a list of the [mobileDeviceManagementPolicy](../resources/mobilitymanagementpolicy.md) objects and their properties for mobile device management applications.|
-|[Get](../api/mobiledevicemanagementpolicies-get.md)|[mobileDeviceManagementPolicy](../resources/mobileDeviceManagementPolicy.md)|Read the properties and relationships of a [mobileDeviceManagementPolicy](../resources/mobilitymanagementpolicy.md) object for a mobile device management application.|
+|[List](../api/mobiledevicemanagementpolicies-list.md)|[mobileDeviceManagementPolicy](../resources/mobileDeviceManagementPolicy.md) collection|Get a list of the [mobileDeviceManagementPolicy](../resources/mobileDeviceManagementPolicy.md) objects and their properties for mobile device management applications.|
+|[Get](../api/mobiledevicemanagementpolicies-get.md)|[mobileDeviceManagementPolicy](../resources/mobileDeviceManagementPolicy.md)|Read the properties and relationships of a [mobileDeviceManagementPolicy](../resources/mobileDeviceManagementPolicy.md) object for a mobile device management application.|
 |[Update](../api/mobiledevicemanagementpolicies-update.md)|None|Update the properties of a [mobileDeviceManagementPolicy](../resources/mobileDeviceManagementPolicy.md) object for a mobile device management application.|
 |[List included groups](../api/mobiledevicemanagementpolicies-list-includedgroups.md)|[group](../resources/group.md) collection|List included groups for a [mobileDeviceManagementPolicy](../resources/mobileDeviceManagementPolicy.md) object for a mobile device management application.|
 |[Add group to policy](../api/mobiledevicemanagementpolicies-post-includedgroups.md)|None|Add a group to the [mobileDeviceManagementPolicy](../resources/mobileDeviceManagementPolicy.md) object for a mobile device management application.|
