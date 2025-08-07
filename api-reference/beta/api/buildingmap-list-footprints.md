@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of [maps](../resources/footprintmap.md) for footprints and their properties.
+Get a list of [maps](../resources/footprintmap.md) for building footprints and their properties.
 
 ## Permissions
 
