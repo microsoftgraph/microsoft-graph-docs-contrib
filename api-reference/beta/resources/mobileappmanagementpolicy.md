@@ -25,7 +25,7 @@ Inherits from [mobilityManagementPolicy](../resources/mobilitymanagementpolicy.m
 |[Get](../api/mobileappmanagementpolicy-get.md)|[mobileAppManagementPolicy](../resources/mobileappmanagementpolicy.md)|Read the properties and relationships of [mobileAppManagementPolicy](../resources/mobileappmanagementpolicy.md) object.|
 |[Update](../api/mobileappmanagementpolicy-update.md)|[mobileAppManagementPolicy](../resources/mobileappmanagementpolicy.md)|Update the properties of a mobileAppManagementPolicy object.|
 |[Delete](../api/policyroot-delete-mobileappmanagementpolicies.md)|None|Delete a mobileAppManagementPolicy object.|
-|[List includedGroups](../api/mobileappmanagementpolicy-list-includedgroups.md)|[group](../resources/group.md) collection|**TODO: Add a useful description.**|
+|[List includedGroups](../api/mobileappmanagementpolicy-list-includedgroups.md)|[group](../resources/group.md) collection|Get a list of groups included in an mobileAppManagementPolicy object.|
 |[Add group](../api/mobileappmanagementpolicy-post-includedgroups.md)|[group](../resources/group.md)|Add includedGroups by posting to the includedGroups collection.|
 |[Remove includedGroups](../api/mobileappmanagementpolicy-delete-includedgroups.md)|None|Remove a [group](../resources/group.md) object.|
 
