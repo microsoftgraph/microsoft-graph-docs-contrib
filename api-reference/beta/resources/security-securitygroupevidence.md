@@ -19,10 +19,14 @@ A security group that is reported in the alert as evidence.
 Inherits from [alertEvidence](../resources/security-alertevidence.md).
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|displayName|String|The name of the security group.|
-|securityGroupId|String|Unique identifier of the security group.|
+| Property                  | Type   | Description                                                   |
+|---------------------------|--------|---------------------------------------------------------------|
+| sid                       | String | The security identifier of the group.                         |
+| securityGroupId           | String | Unique identifier of the security group.                      |
+| distinguishedName         | String | The distinguished name of the security group                  |
+| displayName               | String | The name of the security group.                               |
+| friendlyName              | String | The friendly name of the security group.                      |
+| activeDirectoryObjectGuid | Guid   | The group unique identifier assigned by the Active Directory. |
 
 ## Relationships
 None.
@@ -48,7 +52,11 @@ The following JSON representation shows the resource type.
   "tags": [
     "String"
   ],
+  "sid": "String",
   "securityGroupId": "String",
-  "displayName": "String"
+  "distinguishedName": "String",
+  "displayName": "String",
+  "friendlyName": "String",
+  "groupObjectId": "Guid"
 }
 ```
