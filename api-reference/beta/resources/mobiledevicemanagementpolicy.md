@@ -1,6 +1,6 @@
 ---
 title: "mobileDeviceManagementPolicy resource type"
-description: "A mobile device management policy represents an device autoenrollment policy for mobility management application configured in Azure AD."
+description: "A mobile device management policy represents a device autoenrollment policy for mobility management application configured in Microsoft Entra ID."
 author: "garg-shubham"
 ms.date: 08/06/2025
 ms.localizationpriority: medium

@@ -60,7 +60,7 @@ In the request body, supply the values for fields listed below that should be up
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [mobilityManagementPolicy](../resources/mobilitymanagementpolicy.md) object in the response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 

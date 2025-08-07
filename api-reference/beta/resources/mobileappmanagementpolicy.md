@@ -1,6 +1,6 @@
 ---
 title: "mobileAppManagementPolicy resource type"
-description: "A mobile device management policy represents an device autoenrollment policy for mobility management application configured in Azure AD."
+description: "A mobile app management policy represents an app autoenrollment policy for mobility management application configured in Microsoft Entra ID."
 author: "garg-shubham"
 ms.date: 08/06/2025
 ms.localizationpriority: medium
@@ -13,7 +13,9 @@ doc_type: resourcePageType
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 In Microsoft Entra ID, a Mobile Application Management (MAM) policy defines how corporate data is protected within mobile apps, regardless of device enrollment status. These policies are enforced through Intune app protection policies, which apply to both managed (MDM-enrolled) and unmanaged (personal) devices.
+
 Inherits from [mobilityManagementPolicy](../resources/mobilitymanagementpolicy.md).
 
 
