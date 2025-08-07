@@ -4,7 +4,7 @@ description: "Get a list of the sectionMap objects and their properties."
 author: tiwarisakshi02
 ms.date: 06/12/2025
 ms.localizationpriority: medium
-ms.subservice: 
+ms.subservice: outlook
 doc_type: apiPageType
 ---
 
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the sectionMap objects and their properties.
+Get a list of the [sections](../resources/sectionmap.md) and their properties.
 
 ## Permissions
 
