@@ -22,27 +22,25 @@ Read the properties and relationships of a **policyDeletableItem** object, which
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "policydeletableitem-get-permissions"
-}
--->
-<!--[!INCLUDE [permissions-table](../includes/permissions/policydeletableitem-get-permissions.md)]-->
-
-|Permission type|Least privileged permission|Higher privileged permissions|
-|:---|:---|:---|
-|Delegated (work or school account)|Policy.ReadWrite.CrossTenantAccess|Not available.|
-|Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|Policy.ReadWrite.CrossTenantAccess|Not available.|
 
 ## HTTP request
 
+Get a deleted **crossTenantAccessPolicyConfigurationPartner** object:
 <!-- {
   "blockType": "ignored"
 }
 -->
 ``` http
-GET /policyDeletableItem
+GET /policies/deletedItems/crossTenantPartners/{id}
+```
+
+Get a deleted **crossTenantIdentitySyncPolicyPartner** object:
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+GET /policies/deletedItems/crossTenantSyncPolicyPartners/{id}
 ```
 
 ## Optional query parameters
@@ -67,14 +65,14 @@ If successful, this method returns a `200 OK` response code and a [policyDeletab
 
 ### Request
 
-The following example shows a request.
+The following example shows a request for a crossTenantAccessPolicyConfigurationPartner.
 <!-- {
   "blockType": "request",
   "name": "get_policydeletableitem"
 }
 -->
-``` http
-GET https://graph.microsoft.com/beta/policyDeletableItem
+```HTTP
+GET https://graph.microsoft.com/beta/policies/deletedItems/crossTenantPartners/01d0e717-bc90-46ba-94a9-71b4a811fddb
 ```
 
 
@@ -88,14 +86,68 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.policyDeletableItem"
 }
 -->
-``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
+```json
+  HTTP/1.1 200 OK 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.policyDeletableItem",
-    "deletedDateTime": "String (timestamp)"
+  "@odata.context": "https://graph.microsoft-ppe.com/testppebetadeleteapis/$metadata#policies/deletedItems/crossTenantPartners/$entity",
+  "tenantId": "01d0e717-bc90-46ba-94a9-71b4a811fddb",
+  "deletedDateTime": "2025-06-18T22:58:04Z",
+  "displayName": null,
+  "isServiceProvider": null,
+  "isInMultiTenantOrganization": false,
+  "blockServiceProviderOutboundAccess": null,
+  "inboundTrust": null,
+  "b2bCollaborationOutbound": null,
+  "b2bCollaborationInbound": null,
+  "b2bDirectConnectOutbound": null,
+  "b2bDirectConnectInbound": null,
+  "tenantRestrictions": null,
+  "invitationRedemptionIdentityProviderConfiguration": null,
+  "crossCloudMeetingConfiguration": {
+    "inboundAllowed": null,
+    "outboundAllowed": null
+  },
+  "automaticUserConsentSettings": {
+    "inboundAllowed": null,
+    "outboundAllowed": null
+  },
+  "protectedContentSharing": {
+    "inboundAllowed": null,
+    "outboundAllowed": null
   }
+}
+```
+### Request
+
+The following example shows a request for a crossTenantIdentitySyncPolicyPartner.
+<!-- {
+  "blockType": "request",
+  "name": "get_policydeletableitem"
+}
+-->
+```HTTP
+GET https://graph.microsoft.com/beta/policies/deletedItems/crossTenantSyncPolicyPartners/01d0e717-bc90-46ba-94a9-71b4a811fddb
+```
+
+
+### Response
+
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.policyDeletableItem"
+}
+-->
+```json
+  HTTP/1.1 200 OK 
+{
+  "@odata.context": "https://graph.microsoft-ppe.com/testppebetadeleteapis/$metadata#policies/deletedItems/crossTenantSyncPolicyPartners/$entity",
+  "tenantId": "01d0e717-bc90-46ba-94a9-71b4a811fddb",
+  "displayName": null,
+  "deletedDateTime": "2025-06-18T23:11:01Z",
+  "externalCloudAuthorizedApplicationId": null,
+  "userSyncInbound": null
 }
 ```

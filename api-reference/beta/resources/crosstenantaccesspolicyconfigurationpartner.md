@@ -33,7 +33,7 @@ Inherits from [policyDeletableItem](../resources/policydeletableitem.md).
 | [List deleted policies](../api/policydeletableitem-list.md) | None | List all deleted partner-specific configuration policies. |
 | [Get deleted policies](../api/policydeletableitem-get.md) | None | Get a single deleted partner-specific configuration policy. |
 | [Permanently delete deleted policies](../api/policydeletableitem-delete.md) | None | Permanently delete a deleted partner-specific configuration policy. |
-| [Restore](../api/crosstenantaccesspolicyconfigurationpartner-restore.md) | None | Restore the partner-specific configuration policy. |
+| [Restore deleted policies](../api/crosstenantaccesspolicyconfigurationpartner-restore.md) | None | Restore the partner-specific configuration policy. |
 
 ## Properties
 
