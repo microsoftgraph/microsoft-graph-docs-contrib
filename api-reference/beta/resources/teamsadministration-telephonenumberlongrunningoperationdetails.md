@@ -1,6 +1,6 @@
 ---
 title: "telephoneNumberLongRunningOperationDetails resource type"
-description: "Represents telephone number asynchronous operation details"
+description: "Represents the telephone number asynchronous operation details."
 author: "pavellatif"
 ms.date: 07/23/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.teamsAdministration
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents the telephone number asynchronous operation details.
 
 
 ## Properties
