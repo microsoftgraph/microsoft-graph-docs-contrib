@@ -4,7 +4,7 @@ description: "Update the properties of an unitMap object in IMDF format."
 author: tiwarisakshi02
 ms.date: 06/12/2025
 ms.localizationpriority: medium
-ms.subservice: 
+ms.subservice: outlook
 doc_type: apiPageType
 ---
 
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of an [unitMap](../resources/unitmap.md) object in IMDF format.
+Update the properties of an [unit](../resources/unitmap.md) on a given floor.
 
 ## Permissions
 
@@ -34,14 +34,14 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-PATCH places/{buildingPlaceId}/microsoft.graph.building/map/levels/{levelImdfID}/units/{unitImdfID}
+PATCH /places/{buildingPlaceId}/microsoft.graph.building/map/levels/{levelImdfID}/units/{unitImdfID}
 ```
 
-{buildingPlaceId} – **id** of a building with which this [unitmap](../resources/unitmap.md) is associated
+{buildingPlaceId} – **id** of a building with which this [unit](../resources/unitmap.md) is associated
 
-{levelImdfId} - **id** of the level in the IMDF file
+{levelImdfId} - **id** of the level in the IMDF 
 
-{unitImdfID} - **id** of the unit in the IMDF file 
+{unitImdfID} - **id** of the unit in the IMDF  
 
 ## Request headers
 
