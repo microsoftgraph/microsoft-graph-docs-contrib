@@ -25,7 +25,7 @@ $requestBody->setIdentities($identitiesArray);
 $requestBody->setMail('adelev@adatum.com');
 $passwordProfile = new PasswordProfile();
 $passwordProfile->setPassword('passwordValue');
-$passwordProfile->setForceChangePasswordNextSignIn(false);
+$passwordProfile->setForceChangePasswordNextSignIn(true);
 $requestBody->setPasswordProfile($passwordProfile);
 $requestBody->setPasswordPolicies('DisablePasswordExpiration');
 

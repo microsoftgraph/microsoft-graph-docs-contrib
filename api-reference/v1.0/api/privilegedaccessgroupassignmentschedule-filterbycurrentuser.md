@@ -1,6 +1,6 @@
 ---
 title: "privilegedAccessGroupAssignmentSchedule: filterByCurrentUser"
-description: "In PIM for groups, retrieve the schedules for membership or ownership assignments for the calling principal to groups that are governed by PIM."
+description: "In PIM for Groups, retrieve the schedules for membership or ownership assignments for the calling principal to groups that are governed by PIM."
 author: "ilyalushnikov"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
@@ -11,7 +11,7 @@ ms.date: 04/04/2024
 # privilegedAccessGroupAssignmentSchedule: filterByCurrentUser
 Namespace: microsoft.graph
 
-In PIM for groups, retrieve the schedules for membership or ownership assignments for the calling principal to groups that are governed by PIM.
+In PIM for Groups, retrieve the schedules for membership or ownership assignments for the calling principal to groups that are governed by PIM.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -70,10 +70,6 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/privilegedAccess/group/a
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/privilegedaccessgroupassignmentschedulethisfilterbycurrentuser-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/privilegedaccessgroupassignmentschedulethisfilterbycurrentuser-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

@@ -22,10 +22,7 @@ Get the usage rights granted to the calling user for a specific sensitivity labe
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "purviewecosystem-sensitivitylabels-getrightsforlabelid-permissions"
-} -->
+<!-- { "blockType": "permissions", "name": "usagerightsincluded_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/usagerightsincluded-get-permissions.md)]
 
 ## HTTP request
@@ -41,12 +38,9 @@ GET /security/dataSecurityAndGovernance/sensitivityLabels/{labelId}/rights
 | Authorization       | Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts). |
 | Client-Request-Id   | Optional. A client-generated GUID to trace the request. Recommended for troubleshooting.                                                  |
 
-## Query parameters
+## Optional query parameters
 
-| Parameter  | Type   | Description                                                                                                                                                               |
-| :--------- | :----- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| ownerEmail | String | Optional. The email address of the content owner. This parameter is sometimes required by the underlying Rights Management service depending on the protection template. |
-| userEmail  | String | Optional. The email address of the user for whom the rights are being requested. This parameter is sometimes required by the underlying Rights Management service.          |
+This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request body
 
@@ -80,10 +74,6 @@ Client-Request-Id: 7c9b1b4c-5b5a-4e3e-9f1b-2d9b0b4a9a0a
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-rights-for-sensitivitylabel-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-rights-for-sensitivitylabel-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-rights-for-sensitivitylabel-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -98,6 +88,10 @@ Client-Request-Id: 7c9b1b4c-5b5a-4e3e-9f1b-2d9b0b4a9a0a
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-rights-for-sensitivitylabel-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-rights-for-sensitivitylabel-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

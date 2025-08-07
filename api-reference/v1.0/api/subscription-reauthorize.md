@@ -27,6 +27,8 @@ Depending on the resource and the permission type (delegated or application) req
 
 | Supported resource | Delegated (work or school account) | Delegated (personal Microsoft account) | Application |
 |:-----|:-----|:-----|:-----|
+|[aiInteraction](../resources/aiinteraction.md)  <br /> `copilot/users/{userId}/interactionHistory/getAllEnterpriseInteractions`  <br /> Copilot AI interactions that a particular user is part of. | AiEnterpriseInteraction.Read  | Not supported.  | AiEnterpriseInteraction.Read.All, AiEnterpriseInteraction.Read.User  |
+|[aiInteraction](../resources/aiinteraction.md)  <br /> `copilot/interactionHistory/getAllEnterpriseInteractions`  <br /> Copilot AI interactions in an organization. | Not supported.  | Not supported.  | AiEnterpriseInteraction.Read.All  |
 |[baseTask](../resources/todotask.md) (deprecated) | Tasks.ReadWrite | Tasks.ReadWrite | Not supported. |
 |[callRecord](../resources/callrecords-callrecord.md) | Not supported. | Not supported. | CallRecords.Read.All  |
 |[callRecording](../resources/callrecording.md) <br /> `communications/onlineMeetings/getAllRecordings` <br /> All recordings in an organization. | Not supported.  | Not supported.  | OnlineMeetingRecording.Read.All |
@@ -80,6 +82,9 @@ Depending on the resource and the permission type (delegated or application) req
 
 [!INCLUDE [teams-subscription-notes](../../includes/teams-subscription-notes.md)]
 
+<!-- ### aiInteraction -->
+[!INCLUDE [copilot-aiinteraction-subscription-notes.md](../../includes/copilot-aiinteraction-subscription-notes.md)]
+
 ## HTTP request
 
 <!-- {
@@ -118,10 +123,6 @@ POST https://graph.microsoft.com/v1.0/subscriptions/{subscriptionsId}/reauthoriz
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/subscriptionthisreauthorize-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/subscriptionthisreauthorize-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

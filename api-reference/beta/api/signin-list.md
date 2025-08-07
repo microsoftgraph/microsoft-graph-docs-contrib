@@ -5,7 +5,7 @@ description: "Get a list of the user sign-ins in a Microsoft Entra tenant."
 ms.localizationpriority: medium
 author: "egreenberg14"
 ms.subservice: "entra-monitoring-health"
-ms.date: 05/16/2025
+ms.date: 06/18/2025
 ---
 
 # List signIns
@@ -45,7 +45,17 @@ This method supports the `$top`, `$skiptoken`, and `$filter` OData query paramet
 To avoid having the request time out, apply the `$filter` parameter with a time range for which to get all sign-ins, as shown in [Example 1](signin-list.md#example-1-list-all-sign-ins-during-a-specific-time-period).
 
 > [!NOTE]
-> This API returns only interactive sign-ins unless you set an explicit filter. For example, the filter for getting non-interactive sign-ins is `https://graph.microsoft.com/beta/auditLogs/signIns?&$filter=signInEventTypes/any(t: t eq 'nonInteractiveUser')`.
+> Only interactive sign-ins are returned through GET signins API requests unless you set an explicit filter on the **signInEventType** property as shown in the following examples:
+
+To request non-interactive sign-ins:
+```http
+GET https://graph.microsoft.com/beta/auditLogs/signIns?$filter=(createdDateTime ge 2024-01-13T14:13:32Z and createdDateTime le 2024-01-14T17:43:26Z) and signInEventTypes/any(t: t eq 'nonInteractiveUser')
+```
+
+To request service principal sign-ins:
+```http
+GET https://graph.microsoft.com/beta/auditLogs/signIns?$filter=(createdDateTime ge 2024-01-13T14:13:32Z and createdDateTime le 2024-01-14T17:43:26Z) and signInEventTypes/any(t: t eq 'servicePrincipal')
+```
 
 ## Request headers
 
@@ -66,6 +76,7 @@ If successful, this method returns a `200 OK` response code and collection of [s
 ### Example 1: List all sign-ins during a specific time period
 In this example, the response object shows the user signed in using MFA that was triggered by a conditional access policy, and the primary authentication method is through FIDO.
 
+
 #### Request
 
 The following example shows a request.
@@ -81,10 +92,6 @@ GET https://graph.microsoft.com/beta/auditLogs/signIns?$filter=createdDateTime g
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-signins-1-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-signins-1-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -267,10 +274,6 @@ GET https://graph.microsoft.com/beta/auditLogs/signins?&$filter=startsWith(appDi
 [!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-signins-2-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -430,10 +433,6 @@ GET https://graph.microsoft.com/beta/auditLogs/signins?&$filter=(signInEventType
 
 # [C#](#tab/csharp)
 [!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-signins-ne-noninteractiveuser-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -625,10 +624,6 @@ GET https://graph.microsoft.com/beta/auditLogs/signins?&$filter=(signInEventType
 
 # [C#](#tab/csharp)
 [!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/list-signins-signineventtypes-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

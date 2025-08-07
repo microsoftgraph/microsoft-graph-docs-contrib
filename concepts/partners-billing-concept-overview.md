@@ -5,6 +5,7 @@ author: "abhishek-singh-ms"
 ms.localizationpriority: medium
 ms.subservice: "reports"
 ms.date: 11/07/2024
+ms.topic: article
 ---
 
 # Use the partner billing API in Microsoft Graph to access billing data

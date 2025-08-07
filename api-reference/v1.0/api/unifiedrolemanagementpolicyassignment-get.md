@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ms.date: 04/04/2024
+ms.custom: sfi-ga-nochange
 ---
 
 # Get unifiedRoleManagementPolicyAssignment
@@ -30,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 [!INCLUDE [rbac-pim-entra-roles-apis](../includes/rbac-for-apis/rbac-pim-entra-roles-apis.md)]
 
-### For PIM for groups
+### For PIM for Groups
 <!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
@@ -40,7 +41,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-To retrieve the details of a policy assignment made in PIM for Microsoft Entra roles or PIM for groups membership and ownership:
+To retrieve the details of a policy assignment made in PIM for Microsoft Entra roles or PIM for Groups membership and ownership:
 <!-- {
   "blockType": "ignored"
 }
@@ -85,10 +86,6 @@ GET https://graph.microsoft.com/v1.0/policies/roleManagementPolicyAssignments/Di
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-unifiedrolemanagementpolicyassignment-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-unifiedrolemanagementpolicyassignment-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -159,10 +156,6 @@ GET https://graph.microsoft.com/v1.0/policies/roleManagementPolicyAssignments/Di
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-unifiedrolemanagementpolicyassignment-expand-all-relationships-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-unifiedrolemanagementpolicyassignment-expand-all-relationships-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -526,7 +519,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 3: Retrieve the details of a policy assignment for PIM for groups
+### Example 3: Retrieve the details of a policy assignment for PIM for Groups
 
 #### Request
 
@@ -544,10 +537,6 @@ GET https://graph.microsoft.com/beta/policies/roleManagementPolicyAssignments/Gr
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-unifiedrolemanagementpolicyassignment-azureadgroup-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-unifiedrolemanagementpolicyassignment-azureadgroup-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

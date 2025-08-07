@@ -5,7 +5,7 @@ author: "soneff"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
-ms.date: 07/22/2024
+ms.date: 06/25/2025
 ---
 
 # customAuthenticationExtension resource type
@@ -14,11 +14,22 @@ Namespace: microsoft.graph
 
 Custom authentication extensions define interactions with external systems during a user authentication session. This is an abstract type from which the following types are derived.
 
+- [onAttributeCollectionStartCustomExtension](../resources/onattributecollectionstartcustomextension.md) resource type.
+- [onAttributeCollectionSubmitCustomExtension](../resources/onattributecollectionsubmitcustomextension.md) resource type.
 - [onTokenIssuanceStartCustomExtension](../resources/ontokenissuancestartcustomextension.md) resource type.
+- [onAttributeCollectionStartCustomExtension](../resources/onattributecollectionstartcustomextension.md) resource type.
+- [onAttributeCollectionSubmitCustomExtension](../resources/onattributecollectionsubmitcustomextension.md) resource type.
+- [onOtpSendCustomExtension](../resources/onotpsendcustomextension.md) resource type.
 
 Inherits from [customCalloutExtension](../resources/customcalloutextension.md).
 
-Learn how to use this API when [Configuring a custom claim provider token issuance event](/azure/active-directory/develop/custom-extension-get-started?tabs=microsoft-graph?toc=/graph/toc.json&context=graph/context).
+Learn how to use this API when [Configuring a custom claim provider token issuance event (preview)](/azure/active-directory/develop/custom-extension-get-started?tabs=microsoft-graph?toc=/graph/toc.json&context=graph/context).
+
+> [!NOTE]
+>
+> You can have a maximum of 100 custom extension policies.
+
+[Learn more about custom authentication extensions](/entra/identity-platform/custom-extension-overview) and how to use this API when [Configuring a custom claim provider token issuance event (preview)](/entra/identity-platform/custom-extension-tokenissuancestart-configuration?toc=/graph/toc.json&context=graph/context).
 
 ## Methods
 |Method|Return type|Description|
@@ -28,12 +39,13 @@ Learn how to use this API when [Configuring a custom claim provider token issuan
 |[Get](../api/customauthenticationextension-get.md)|[customAuthenticationExtension](../resources/customauthenticationextension.md)|Read the properties and relationships of an object type that is derived from **customAuthenticationExtension**.|
 |[Update](../api/customauthenticationextension-update.md)|None|Update the properties of an object type that is derived from **customAuthenticationExtension**.|
 |[Delete](../api/customauthenticationextension-delete.md)|None|Delete an object type that is derived from **customAuthenticationExtension**.|
-|[Validate authentication configuration](../api/customauthenticationextension-validateauthenticationconfiguration.md)|[authenticationConfigurationValidation](../resources/authenticationconfigurationvalidation.md)|Check validity of the endpoint and authentication configuration for a [customAuthenticationExtension](../resources/customauthenticationextension.md) object.|
+|[Validate authentication configuration](../api/customauthenticationextension-validateauthenticationconfiguration.md)|[authenticationConfigurationValidation](../resources/authenticationconfigurationvalidation.md)|Check the validity of the endpoint and authentication configuration for a [customAuthenticationExtension](../resources/customauthenticationextension.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |authenticationConfiguration|[customExtensionAuthenticationConfiguration](../resources/customextensionauthenticationconfiguration.md)|The authentication configuration for the customAuthenticationExtension. Inherited from [customCalloutExtension](../resources/customcalloutextension.md).|
+|behaviorOnError|[customExtensionBehaviorOnError](../resources/customextensionbehavioronerror.md)|The behaviour on error for the custom authentication extension.|
 |clientConfiguration|[customExtensionClientConfiguration](../resources/customextensionclientconfiguration.md)|The connection settings for the customAuthenticationExtension. Inherited from [customCalloutExtension](../resources/customcalloutextension.md).|
 |description|String|The description of the customAuthenticationExtension. Inherited from [customCalloutExtension](../resources/customcalloutextension.md).|
 |displayName|String|The display name for the customAuthenticationExtension. Inherited from [customCalloutExtension](../resources/customcalloutextension.md).|
@@ -67,11 +79,13 @@ The following JSON representation shows the resource type.
   "displayName": "String",
   "endpointConfiguration": {
     "@odata.type": "microsoft.graph.customExtensionEndpointConfiguration"
+  },
+  "behaviorOnError": {
+    "@odata.type": "microsoft.graph.customExtensionBehaviorOnError"
   }
 }
 ```
 
 ## Related content
 
-- [Configure a custom claim provider token issuance event](/azure/active-directory/develop/custom-extension-get-started?tabs=microsoft-graph?toc=/graph/toc.json&context=graph/context)
-
+- [Configure a custom claim provider token issuance event (preview)](/azure/active-directory/develop/custom-extension-get-started?tabs=microsoft-graph?toc=/graph/toc.json&context=graph/context)

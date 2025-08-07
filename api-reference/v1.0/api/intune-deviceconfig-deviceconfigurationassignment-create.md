@@ -82,10 +82,6 @@ Content-length: 221
 [!INCLUDE [sample-code](../includes/snippets/csharp/intune-deviceconfig-deviceconfigurationassignment-create-create-deviceconfigurationassignment-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/intune-deviceconfig-deviceconfigurationassignment-create-create-deviceconfigurationassignment-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/intune-deviceconfig-deviceconfigurationassignment-create-create-deviceconfigurationassignment-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

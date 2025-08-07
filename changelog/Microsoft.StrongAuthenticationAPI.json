@@ -419,6 +419,48 @@
       "SubArea": "Identity and sign-in"
     },
     {
+        "ChangeList": [
+          {
+            "Id": "df8d136d-ca86-4f86-ad47-7d5298f9f2e4",
+            "ApiChange": "Relationship",
+            "ChangedApiName": "externalAuthenticationMethods",
+            "ChangeType": "Addition",
+            "Description": "Added the **externalAuthenticationMethods** relationship to the [authentication](https://learn.microsoft.com/en-us/graph/api/resources/authentication?view=graph-rest-beta) resource.",
+            "Target": "authentication"
+          },
+          {
+            "Id": "df8d136d-ca86-4f86-ad47-7d5298f9f2e4",
+            "ApiChange": "Resource",
+            "ChangedApiName": "authentication",
+            "ChangeType": "Deprecation",
+            "Description": "Deprecated the [authentication](https://learn.microsoft.com/en-us/graph/api/resources/authentication?view=graph-rest-beta) resource.",
+            "Target": "authentication"
+          },
+          {
+            "Id": "df8d136d-ca86-4f86-ad47-7d5298f9f2e4",
+            "ApiChange": "Resource",
+            "ChangedApiName": "externalAuthenticationMethod",
+            "ChangeType": "Addition",
+            "Description": "Added the [externalAuthenticationMethod](https://learn.microsoft.com/en-us/graph/api/resources/externalAuthenticationMethod?view=graph-rest-beta) resource.",
+            "Target": "externalAuthenticationMethod"
+          },
+          {
+            "Id": "df8d136d-ca86-4f86-ad47-7d5298f9f2e4",
+            "ApiChange": "Resource",
+            "ChangedApiName": "externalAuthenticationMethod",
+            "ChangeType": "Deprecation",
+            "Description": "Deprecated the [externalAuthenticationMethod](https://learn.microsoft.com/en-us/graph/api/resources/externalAuthenticationMethod?view=graph-rest-beta) resource.",
+            "Target": "externalAuthenticationMethod"
+          }
+        ],
+        "Id": "df8d136d-ca86-4f86-ad47-7d5298f9f2e4",
+        "Cloud": "Prod",
+        "Version": "beta",
+        "CreatedDateTime": "2025-07-30T23:19:18.4980804Z",
+        "WorkloadArea": "Identity and access",
+        "SubArea": "Identity and sign-in"
+      },
+    {
       "ChangeList": [
         {
           "Id": "25af4412-9671-4230-898f-905be64c8da2",

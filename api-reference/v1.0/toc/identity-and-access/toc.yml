@@ -1473,6 +1473,8 @@ items:
       href: ../../resources/onattributecollectionsubmitlistener.md
     - name: On authentication method load start listener
       href: ../../resources/onauthenticationmethodloadstartlistener.md
+    - name: On email OTP send listener
+      href: ../../resources/onemailotpsendlistener.md
     - name: On interactive auth flow start listener
       href: ../../resources/oninteractiveauthflowstartlistener.md
     - name: On token issuance start listener
@@ -1553,9 +1555,9 @@ items:
         href: ../../api/phoneauthenticationmethod-disablesmssignin.md
       - name: Enable SMS sign-in
         href: ../../api/phoneauthenticationmethod-enablesmssignin.md
-    - name: Platform credential authentication method
+    - name: Platform credential
       items:
-      - name: Platform credential authentication method
+      - name: Platform credential
         href: ../../resources/platformcredentialauthenticationmethod.md
       - name: List
         href: ../../api/platformcredentialauthenticationmethod-list.md
@@ -1766,6 +1768,12 @@ items:
         href: ../../api/conditionalaccesspolicy-update.md
       - name: Delete
         href: ../../api/conditionalaccesspolicy-delete.md
+    - name: What If evaluation
+      items:
+      - name: What If evaluation
+        href: ../../resources/whatifanalysisresult.md
+      - name: Evaluate
+        href: ../../api/conditionalaccessroot-evaluate.md
     - name: Named location
       items:
       - name: Named location
@@ -1894,6 +1902,8 @@ items:
       href: ../../resources/onattributecollectionstartcustomextension.md
     - name: On attribute collection submit custom extension
       href: ../../resources/onattributecollectionsubmitcustomextension.md
+    - name: On OTP send custom extension
+      href: ../../resources/onotpsendcustomextension.md
     - name: On token issuance start custom extension
       href: ../../resources/ontokenissuancestartcustomextension.md
   - name: Data policy operation
@@ -2234,6 +2244,54 @@ items:
         href: ../../api/identitysecuritydefaultsenforcementpolicy-get.md
       - name: Update
         href: ../../api/identitysecuritydefaultsenforcementpolicy-update.md
+  - name: Public key infrastructure
+    items:
+    - name: Certificate-based auth pki
+      items:
+      - name: Certificate-based auth pki
+        href: ../../resources/certificatebasedauthpki.md
+      - name: List
+        href: ../../api/publickeyinfrastructureroot-list-certificatebasedauthconfigurations.md
+      - name: Create
+        href: ../../api/publickeyinfrastructureroot-post-certificatebasedauthconfigurations.md
+      - name: Get
+        href: ../../api/certificatebasedauthpki-get.md
+      - name: Update
+        href: ../../api/certificatebasedauthpki-update.md
+      - name: Delete
+        href: ../../api/publickeyinfrastructureroot-delete-certificatebasedauthconfigurations.md
+      - name: Upload
+        href: ../../api/certificatebasedauthpki-upload.md
+      - name: List deleted items
+        href: ../../api/directory-deleteditems-list.md
+      - name: Get deleted item
+        href: ../../api/directory-deleteditems-get.md
+      - name: Restore deleted item
+        href: ../../api/directory-deleteditems-restore.md
+      - name: Permanently delete item
+        href: ../../api/directory-deleteditems-delete.md
+    - name: Certificate authority detail
+      items:
+      - name: Certificate authority detail
+        href: ../../resources/certificateauthoritydetail.md
+      - name: List
+        href: ../../api/certificatebasedauthpki-list-certificateauthorities.md
+      - name: Create
+        href: ../../api/certificatebasedauthpki-post-certificateauthorities.md
+      - name: Get
+        href: ../../api/certificateauthoritydetail-get.md
+      - name: Update
+        href: ../../api/certificateauthoritydetail-update.md
+      - name: Delete
+        href: ../../api/certificatebasedauthpki-delete-certificateauthorities.md
+      - name: List deleted items
+        href: ../../api/directory-deleteditems-list.md
+      - name: Get deleted item
+        href: ../../api/directory-deleteditems-get.md
+      - name: Restore deleted item
+        href: ../../api/directory-deleteditems-restore.md
+      - name: Permanently delete item
+        href: ../../api/directory-deleteditems-delete.md
   - name: User flows in external tenants
     items:
     - name: Authentication events flow

@@ -85,10 +85,6 @@ Content-length: 189
 [!INCLUDE [sample-code](../includes/snippets/csharp/intune-books-userinstallstatesummary-update-update-userinstallstatesummary-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/intune-books-userinstallstatesummary-update-update-userinstallstatesummary-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/intune-books-userinstallstatesummary-update-update-userinstallstatesummary-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

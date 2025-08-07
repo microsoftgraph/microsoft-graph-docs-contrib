@@ -5,6 +5,7 @@ author: "idwilliams"
 ms.localizationpriority: medium
 ms.subservice: "m365-lighthouse"
 ms.date: 11/07/2024
+ms.topic: article
 ---
 
 # Manage multiple customer tenants using the Microsoft 365 Lighthouse API

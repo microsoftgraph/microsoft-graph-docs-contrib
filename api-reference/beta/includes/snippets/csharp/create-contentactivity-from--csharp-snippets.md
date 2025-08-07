@@ -12,55 +12,104 @@ using Microsoft.Kiota.Abstractions.Serialization;
 
 var requestBody = new ContentActivity
 {
-	ContentMetadata = new ProcessContentRequest
+	AdditionalData = new Dictionary<string, object>
 	{
-		ContentEntries = new List<ProcessContentMetadataBase>
 		{
-			new ProcessConversationMetadata
+			"contentToProcess" , new UntypedObject(new Dictionary<string, UntypedNode>
 			{
-				OdataType = "microsoft.graph.processConversationMetadata",
-				Identifier = "d6ab5054-e111-45c3-9fba-9f2a59c9bbf8",
-				Name = "CA Purview API Explorer message",
-				CorrelationId = "edfb7f88-b963-4ef2-8b30-5cb90f80e01e",
-				SequenceNumber = 0L,
-				IsTruncated = false,
-				CreatedDateTime = DateTimeOffset.Parse("2025-05-28T20:20:37"),
-				ModifiedDateTime = DateTimeOffset.Parse("2025-05-28T20:20:37"),
-			},
-		},
-		ActivityMetadata = new ActivityMetadata
-		{
-			Activity = UserActivityType.DownloadText,
-		},
-		IntegratedAppMetadata = new IntegratedApplicationMetadata
-		{
-			Name = "CA Purview API Explorer",
-			Version = "0.1",
-		},
-		AdditionalData = new Dictionary<string, object>
-		{
-			{
-				"deviceMetadata" , new UntypedObject(new Dictionary<string, UntypedNode>
 				{
+					"contentEntries", new UntypedArray(new List<UntypedNode>
 					{
-						"operatingSystemSpecifications", new UntypedObject(new Dictionary<string, UntypedNode>
+						new UntypedObject(new Dictionary<string, UntypedNode>
 						{
 							{
-								"operatingSystemPlatform", new UntypedString("Windows 11")
+								"@odata.type", new UntypedString("microsoft.graph.processConversationMetadata")
 							},
 							{
-								"operatingSystemVersion", new UntypedString("10.0.26100.0")
+								"identifier", new UntypedString("07785517-9081-4fe7-a9dc-85bcdf5e9075")
 							},
-						})
-					},
-				})
-			},
-			{
-				"userId" , "7c497f10-cba8-4a8d-9449-db4b76d1ef80"
-			},
-			{
-				"scopeIdentifier" , "0"
-			},
+							{
+								"name", new UntypedString("PC Purview API Explorer message")
+							},
+							{
+								"correlationId", new UntypedString("d63eafd2-e3a9-4c1a-b726-a2e9b9d9580d")
+							},
+							{
+								"sequenceNumber", new UntypedString("0")
+							},
+							{
+								"isTruncated", new UntypedBoolean(false)
+							},
+							{
+								"createdDateTime", new UntypedString("2025-05-27T17:23:20")
+							},
+							{
+								"modifiedDateTime", new UntypedString("2025-05-27T17:23:20")
+							},
+						}),
+					})
+				},
+				{
+					"activityMetadata", new UntypedObject(new Dictionary<string, UntypedNode>
+					{
+						{
+							"activity", new UntypedString("uploadText")
+						},
+					})
+				},
+				{
+					"deviceMetadata", new UntypedObject(new Dictionary<string, UntypedNode>
+					{
+						{
+							"operatingSystemSpecifications", new UntypedObject(new Dictionary<string, UntypedNode>
+							{
+								{
+									"operatingSystemPlatform", new UntypedString("Windows 11")
+								},
+								{
+									"operatingSystemVersion", new UntypedString("10.0.26100.0")
+								},
+							})
+						},
+						{
+							"ipAddress", new UntypedString("127.0.0.1")
+						},
+					})
+				},
+				{
+					"protectedAppMetadata", new UntypedObject(new Dictionary<string, UntypedNode>
+					{
+						{
+							"name", new UntypedString("PC Purview API Explorer")
+						},
+						{
+							"version", new UntypedString("0.2")
+						},
+						{
+							"applicationLocation", new UntypedObject(new Dictionary<string, UntypedNode>
+							{
+								{
+									"@odata.type", new UntypedString("microsoft.graph.policyLocationApplication")
+								},
+								{
+									"value", new UntypedString("83ef208a-0396-4893-9d4f-d36efbffc8bd")
+								},
+							})
+						},
+					})
+				},
+				{
+					"integratedAppMetadata", new UntypedObject(new Dictionary<string, UntypedNode>
+					{
+						{
+							"name", new UntypedString("PC Purview API Explorer")
+						},
+						{
+							"version", new UntypedString("0.2")
+						},
+					})
+				},
+			})
 		},
 	},
 };

@@ -6,6 +6,7 @@ ms.localizationpriority: high
 ms.subservice: "people"
 ms.custom: scenarios:getting-started
 ms.date: 05/02/2025
+ms.topic: how-to
 ---
 
 # Manage profile source precedence settings for an organization using the Microsoft Graph API (preview)
@@ -69,7 +70,8 @@ Content-Type: application/json
 
 {
   "prioritizedSourceUrls": [
-    "https://graph.microsoft.com/beta/admin/people/profileSources(sourceId='contosohr1')"
+    "https://graph.microsoft.com/beta/admin/people/profileSources(sourceId='contosohr1')",
+    "https://graph.microsoft.com/beta/admin/people/profileSources(sourceId='4ce763dd-9214-4eff-af7c-da491cc3782d')"
   ]
 }
 ```
@@ -107,7 +109,8 @@ Content-Type: application/json
 {
   "prioritizedSourceUrls": [
     "https://graph.microsoft.com/beta/admin/people/profileSources(sourceId='contosohr1')",
-    "https://graph.microsoft.com/beta/admin/people/profileSources(sourceId='contosohr2')"
+    "https://graph.microsoft.com/beta/admin/people/profileSources(sourceId='contosohr2')",
+    "https://graph.microsoft.com/beta/admin/people/profileSources(sourceId='4ce763dd-9214-4eff-af7c-da491cc3782d')"
   ]
 }
 ```
@@ -127,7 +130,8 @@ Content-type: application/json
   "allowedAudiences": null,
   "prioritizedSourceUrls": [
     "https://graph.microsoft.com/beta/admin/people/profileSources(sourceId='contosohr1')",
-    "https://graph.microsoft.com/beta/admin/people/profileSources(sourceId='contosohr2')"
+    "https://graph.microsoft.com/beta/admin/people/profileSources(sourceId='contosohr2')",
+    "https://graph.microsoft.com/beta/admin/people/profileSources(sourceId='4ce763dd-9214-4eff-af7c-da491cc3782d')"
   ]
 }
 ```
@@ -150,6 +154,96 @@ If successful, this method returns a `204 No Content` response code.
 HTTP/1.1 204 No Content
 ```
 
+## Configure profile source precedence setting using the Microsoft Graph PowerShell SDK
+
+You can use the [Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/installation) to configure profile source precedence settings in your organization.
+
+### Prerequisites
+
+- **PowerShell module** - Install [module version 2.3.0 or higher](https://www.powershellgallery.com/packages/Microsoft.Graph).
+- **.NET Framework** - Install [.NET Framework 4.7.2](https://dotnet.microsoft.com/download/dotnet-framework) or a higher version.
+
+> [!NOTE]
+> The PowerShell commands for profile source precedence settings are only available in beta. Switch to the beta experience before you run the following commands.
+
+```powershell
+Install-Module -Name Microsoft.Graph.Beta -MinimumVersion 2.3.0
+Update-Module Microsoft.Graph.Beta
+```
+
+### Confirm your current settings
+
+To get profile property settings configuration for an organization, use the following command.
+
+```powershell
+Get-MgBetaAdminPeopleProfilePropertySetting
+```
+
+To get the profile source precedence configuration in an organization, use the following command.
+
+```powershell
+Get-MgBetaAdminPeopleProfilePropertySetting -ProfilePropertySettingId $id
+```
+
+> [!NOTE]
+> The get commands require the `PeopleSettings.Read.All` permission. To create a Microsoft Graph session with a specific required scope, use the following command and consent to the requested permissions.
+
+```powershell
+Connect-MgGraph -Scopes "PeopleSettings.Read.All"
+```
+
+### Add profile source precedence setting in your organization
+
+You can use the Microsoft Graph PowerShell module to configure profile precedence in your organization. The new command requires the PeopleSettings.ReadWrite.All permission, and to create a Microsoft Graph session with the specific required scope, use the following command and consent to the requested permissions.
+
+```powershell
+Connect-MgGraph -Scopes "PeopleSettings.ReadWrite.All","PeopleSettings.Read.All"
+```
+
+```powershell
+$params = @{
+    prioritizedSourceUrls = @(
+      "https://graph.microsoft.com/beta/admin/people/profileSources(sourceId='hrPlatform1')",
+	    "https://graph.microsoft.com/beta/admin/people/profileSources(sourceId='4ce763dd-9214-4eff-af7c-da491cc3782d')"
+    )
+}
+
+New-MgBetaAdminPeopleProfilePropertySetting -BodyParameter $params
+```
+
+### Update profile source precedence setting in your organization
+
+You can use the Microsoft Graph PowerShell module to update the profile source precedence setting in your organization. The update command requires the PeopleSettings.ReadWrite.All permission, and to create a Microsoft Graph session with the specific required scope, use the following command and consent to the requested permissions.
+
+```powershell
+Connect-MgGraph -Scopes "PeopleSettings.ReadWrite.All","PeopleSettings.Read.All"
+```
+
+```powershell
+$params = @{
+    prioritizedSourceUrls = @(
+        "https://graph.microsoft.com/beta/admin/people/profileSources(sourceId='contosohr1')",
+        "https://graph.microsoft.com/beta/admin/people/profileSources(sourceId='contosohr2')",
+        "https://graph.microsoft.com/beta/admin/people/profileSources(sourceId='4ce763dd-9214-4eff-af7c-da491cc3782d')"
+    )
+}
+
+Update-MgBetaAdminPeopleProfilePropertySetting -ProfilePropertySettingId $id -BodyParameter $params
+```
+
+### Remove profile source precedence setting in your organization
+
+You can use the Microsoft Graph PowerShell module to remove the profile source precedence setting from your organization. The remove command requires the PeopleSettings.ReadWrite.All permission, and to create a Microsoft Graph session with the specific required scope, use the following command and consent to the requested permissions.
+
+```powershell
+Connect-MgGraph -Scopes "PeopleSettings.ReadWrite.All","PeopleSettings.Read.All"
+```
+
+```powershell
+Remove-MgBetaAdminPeopleProfilePropertySetting -ProfilePropertySettingId $id
+```
+
 ## Related content
+* [Manage profile source settings for an organization](/graph/profilesource-configure-settings)
 * [Understand how organizational data is used and retained in Microsoft 365](/viva/orgdata-data-usage)
 * [User profile synchronization](/sharepoint/user-profile-sync)

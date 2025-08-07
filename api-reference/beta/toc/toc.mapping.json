@@ -13,7 +13,8 @@
       "overview": "../../resources/groups-overview.md",
       "resources": [
         "group",
-        "groupLifecyclePolicy"
+        "groupLifecyclePolicy",
+        "onPremisesSyncBehavior"
       ]
     },
     {
@@ -148,6 +149,7 @@
       ],
       "resources": [
         "backupRestoreRoot",
+        "emailNotificationsSetting",
         "protectionPolicyBase",
         "protectionRuleBase",
         "protectionUnitBase",
@@ -219,6 +221,7 @@
       ],
       "complexTypes": [
         "artifactQuery",
+        "notificationRecipients",
         "restorePointSearchResponse",
         "restorePointSearchResult",
         "retentionSetting",
@@ -487,6 +490,10 @@
           ],
           "complexTypes": [
             "appScope",
+            "cloudPcAgentHealthCheckDetail",
+            "cloudPcAgentHealthCheckStatusDetail",
+            "cloudPcAgentHealthCheckSummary",
+            "cloudPcAgentStatusDetail",
             "cloudPcAuditActor",
             "cloudPcAuditProperty",
             "cloudPcAuditResource",
@@ -496,6 +503,7 @@
             "cloudPcBulkMove",
             "cloudPcBulkPowerOff",
             "cloudPcBulkPowerOn",
+            "cloudPcBulkReinstallAgent",
             "cloudPcBulkReprovision",
             "cloudPcBulkResize",
             "cloudPcBulkRestart",
@@ -504,6 +512,7 @@
             "cloudPcBulkRemoteActionResult",
             "cloudPcBulkCreateSnapshot",
             "cloudPcBulkSetReviewStatus",
+            "CloudPcConnectionSetting",
             "cloudPcConnectivityEvent",
             "cloudPcConnectivityResult",
             "cloudPcCrossRegionDisasterRecoverySetting",
@@ -512,6 +521,7 @@
             "cloudPcDisasterRecoveryNetworkSetting",
             "cloudPcDomainJoinConfiguration",
             "cloudPcForensicStorageAccount",
+            "cloudPcFrontlineSharedDeviceDetail",
             "cloudPcHealthCheckItem",
             "cloudPcLaunchInfo",
             "cloudPcLoginResult",
@@ -530,7 +540,7 @@
             "cloudPcSourceDeviceImage",
             "cloudPcStatusDetails",
             "cloudPcStatusDetail",
-            "CloudPcConnectionSetting",
+            "cloudPcStatusSummary",
             "cloudPcSupportedRegionRestrictionDetail",
             "cloudPcSubscription",
             "cloudPcUserRoleScopeTagInfo",
@@ -700,6 +710,7 @@
             "microsoft.graph.windowsUpdates.qualityUpdateCveSeverityInformation",
             "microsoft.graph.windowsUpdates.qualityUpdateFilter",
             "microsoft.graph.windowsUpdates.rateDrivenRolloutSettings",
+            "microsoft.graph.windowsUpdates.remediationUpdateFilter",
             "microsoft.graph.windowsUpdates.safeguardProfile",
             "microsoft.graph.windowsUpdates.safeguardSettings",
             "microsoft.graph.windowsUpdates.scheduleSettings",
@@ -827,6 +838,7 @@
         "educationSubmission",
         "educationSubmissionResource",
         "readingAssignmentSubmission",
+        "readingCoachPassage",
         "reflectCheckInResponse",
         "relatedContact",
         "speakerAssignmentSubmission"
@@ -886,6 +898,11 @@
             "engagementRole",
             "engagementRoleMember",
             "employeeExperienceUser"
+          ],
+          "complexTypes": [
+            "engagementConversationMessageAttachment",
+            "engagementConversationMessageMention",
+            "engagementIdentitySet"
           ]
         },
         {
@@ -959,12 +976,19 @@
         "driveItem",
         "bundle",
         "fileStorageContainer",
+        "fileStorageContainerType",
+        "fileStorageContainerTypeAppPermissionGrant",
+        "fileStorageContainerTypeRegistration",
         "permission",
         "recycleBin",
         "recycleBinItem",
         "sharedDriveItem",
         "sharePointGroup",
         "sharePointGroupMember"
+      ],
+      "complexTypes": [
+        "fileStorageContainerTypeRegistrationSettings",
+        "fileStorageContainerTypeSettings"
       ]
     },
     {
@@ -1023,6 +1047,7 @@
             "directorySettingTemplate",
             "domain",
             "onPremisesDirectorySynchronization",
+            "onPremisesSyncBehavior",
             "organization",
             "orgContact",
             "tenantInformation",
@@ -1487,6 +1512,7 @@
                 "authentication",
                 "authenticationMethod",
                 "emailAuthenticationMethod",
+                "externalAuthenticationMethod",
                 "fido2AuthenticationMethod",
                 "hardwareOathAuthenticationMethod",
                 "microsoftAuthenticatorAuthenticationMethod",
@@ -1711,14 +1737,6 @@
               ]
             },
             {
-              "name": "Microsoft Entra lifecycle announcements (deprecated)",
-              "resources": [
-                "changeItemBase",
-                "announcement",
-                "roadmap"
-              ]
-            },
-            {
               "name": "User flows in external tenants",
               "resources": [
                 "authenticationEventsFlow",
@@ -1929,7 +1947,8 @@
             "microsoft.graph.networkaccess.enrichedAuditLogs",
             "microsoft.graph.networkaccess.logs",
             "microsoft.graph.networkaccess.reports",
-            "microsoft.graph.networkaccess.remoteNetwork"
+            "microsoft.graph.networkaccess.remoteNetwork",
+            "microsoft.graph.networkaccess.alert"
           ],
           "childNodes": [
             {
@@ -1967,7 +1986,11 @@
                 "microsoft.graph.networkaccess.filteringPolicyLink",
                 "microsoft.graph.networkaccess.filteringRule",
                 "microsoft.graph.networkaccess.fqdnFilteringRule",
-                "microsoft.graph.networkaccess.webCategoryFilteringRule"
+                "microsoft.graph.networkaccess.webCategoryFilteringRule",
+                "microsoft.graph.networkAccess.threatIntelligencePolicy",
+                "microsoft.graph.networkAccess.threatIntelligencePolicyLink",
+                "microsoft.graph.networkAccess.threatIntelligenceRule"
+
               ]
             },
             {
@@ -1982,6 +2005,15 @@
               "resources": [
                 "microsoft.graph.networkaccess.networkAccessTraffic",
                 "microsoft.graph.networkaccess.remoteNetworkHealthEvent"
+              ]
+            },
+            {
+              "name": "TLS inspection",
+              "resources": [
+                "microsoft.graph.networkaccess.externalCertificateAuthorityCertificate",
+                "microsoft.graph.networkaccess.tlsInspectionPolicy",
+                "microsoft.graph.networkaccess.tlsInspectionPolicyLink",
+                "microsoft.graph.networkaccess.tlsInspectionRule"
               ]
             }
           ]
@@ -2411,7 +2443,12 @@
                     "userCredentialUsageDetails",
                     "userRegistrationDetails",
                     "userRegistrationFeatureSummary",
-                    "userRegistrationMethodSummary"
+                    "userRegistrationMethodSummary",
+                    "userEventsSummary",
+                    "userMfaSignInSummary",
+                    "userPasswordResetsAndChangesSummary",
+                    "userRegistrationActivitySummary",
+                    "userSignInUsageByAuthMethodActivity"
                   ]
                 }
               ]
@@ -2419,11 +2456,13 @@
             {
               "name": "Microsoft Entra audit logs",
               "overview": "../../resources/azure-ad-auditlog-overview.md",
+              "shouldSort": true,
               "resources": [
                 "customSecurityAttributeAudit",
                 "directoryAudit",
-                "signIn",
-                "provisioningObjectSummary"
+                "provisioningObjectSummary",
+                "selfServiceSignUp",
+                "signIn"
               ]
             }
           ]
@@ -2550,10 +2589,11 @@
         },
         {
           "name": "Alerts and incidents",
-          "resources": [
+      "resources": [
             "microsoft.graph.security.alert",
             "microsoft.graph.security.alertEvidence",
-            "microsoft.graph.security.incident"
+            "microsoft.graph.security.incident",
+            "microsoft.graph.security.incidentTask"
           ],
           "complexTypes": [
             "microsoft.graph.security.teamsMessageEvidence"
@@ -2598,7 +2638,7 @@
           ]
         },
         {
-          "name": "Data security and compliance (preview)",
+          "name": "Data security and compliance",
           "resources": [
             "contentActivity",
             "microsoft.graph.security.sensitivityLabel",
@@ -2643,6 +2683,8 @@
               "processingError",
               "protectedApplicationMetadata",
               "protectedContent",
+              "restrictAccessAction",
+              "restrictAccessActionBase",
               "scopeBase",
               "tenantScope",
               "textContent",
@@ -2671,6 +2713,11 @@
                 "microsoft.graph.security.ediscoveryReviewSetQuery"
               ]
             }
+          ],
+          "complexTypes": [
+            "microsoft.graph.security.ediscoveryAddToReviewSetOperation",
+            "microsoft.graph.security.ediscoveryEstimateOperation",
+            "microsoft.graph.security.reportFileMetadata"
           ]
         },
         {
@@ -3112,6 +3159,7 @@
                 "meetingAttendanceReport",
                 "attendanceRecord",
                 "onlineMeeting",
+                "onlineMeetingEngagementConversation",
                 "externalMeetingRegistration",
                 "meetingRegistration",
                 "callAiInsight",
@@ -3268,8 +3316,7 @@
             "timeOffReason",
             "timeOffRequest",
             "workforceIntegration",
-            "workingTimeSchedule",
-            ""
+            "workingTimeSchedule"
           ],
           "complexTypes": [
             "geoCoordinates",
@@ -3415,6 +3462,10 @@
     {
       "resource": "partnerSecurityAlert",
       "overview": "../../resources/partner-security-partnersecurityalert-api-overview.md"
+    },
+    {
+      "resource": "incidentTask",
+      "overview": "../../resources/security-incidenttask.md"
     }
   ]
 }

@@ -7,6 +7,7 @@ doc_type: conceptualPageType
 ms.subservice: search
 description: "Follow the steps in this article to test the custom connector you built using the Copilot connectors SDK."
 ms.date: 11/07/2024
+ms.topic: how-to
 ---
 
 # Test your Copilot connector

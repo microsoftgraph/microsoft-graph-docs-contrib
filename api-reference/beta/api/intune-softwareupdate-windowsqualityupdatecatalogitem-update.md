@@ -12,7 +12,7 @@ ms.date: 08/01/2024
 
 Namespace: microsoft.graph
 
-> **Important:** APIs under the /beta version in Microsoft Graph are subject to change which could break your applications. While Intune /beta APIs are supported by Microsoft, you should use these at your own discretion. In general, /beta APIs are not recommended for use in production applications. To determine whether an API is available in v1.0, use the Version selector.
+> **Important:** Microsoft supports Intune /beta APIs, but they are subject to more frequent change. Microsoft recommends using version v1.0 when possible. Check an API's availability in version v1.0 using the Version selector.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -60,6 +60,7 @@ The following table shows the properties that are required when you create the [
 |qualityUpdateCadence|[windowsQualityUpdateCadence](../resources/intune-softwareupdate-windowsqualityupdatecadence.md)|The publishing cadence of the quality update. Possible values are: monthly, outOfBand. This property cannot be modified and is automatically populated when the catalog is created. Read-only. Possible values are: `monthly`, `outOfBand`, `unknownFutureValue`.|
 |isExpeditable|Boolean|When TRUE, indicates that the quality updates qualify for expedition. When FALSE, indicates the quality updates do not quality for expedition. Default value is FALSE. Read-only|
 |productRevisions|[windowsQualityUpdateCatalogProductRevision](../resources/intune-softwareupdate-windowsqualityupdatecatalogproductrevision.md) collection|The operating system product revisions that are released as part of this quality update. Read-only.|
+|qualityUpdateSeverityInformation|[windowsQualityUpdateCatalogItemSeverityInformation](../resources/intune-softwareupdate-windowsqualityupdatecatalogitemseverityinformation.md)|CVE information for catalog items|
 
 
 
@@ -73,7 +74,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/windowsUpdateCatalogItems/{windowsUpdateCatalogItemId}
 Content-type: application/json
-Content-length: 1177
+Content-length: 1572
 
 {
   "@odata.type": "#microsoft.graph.windowsQualityUpdateCatalogItem",
@@ -104,7 +105,19 @@ Content-length: 1177
         "articleUrl": "https://example.com/articleUrl/"
       }
     }
-  ]
+  ],
+  "qualityUpdateSeverityInformation": {
+    "@odata.type": "microsoft.graph.windowsQualityUpdateCatalogItemSeverityInformation",
+    "maxSeverity": "important",
+    "maxBaseScore": 4.0,
+    "exploitedCves": [
+      {
+        "@odata.type": "microsoft.graph.windowsQualityUpdateCatalogItemExploitedCve",
+        "number": "Number value",
+        "url": "Url value"
+      }
+    ]
+  }
 }
 ```
 
@@ -113,7 +126,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1226
+Content-Length: 1621
 
 {
   "@odata.type": "#microsoft.graph.windowsQualityUpdateCatalogItem",
@@ -145,6 +158,18 @@ Content-Length: 1226
         "articleUrl": "https://example.com/articleUrl/"
       }
     }
-  ]
+  ],
+  "qualityUpdateSeverityInformation": {
+    "@odata.type": "microsoft.graph.windowsQualityUpdateCatalogItemSeverityInformation",
+    "maxSeverity": "important",
+    "maxBaseScore": 4.0,
+    "exploitedCves": [
+      {
+        "@odata.type": "microsoft.graph.windowsQualityUpdateCatalogItemExploitedCve",
+        "number": "Number value",
+        "url": "Url value"
+      }
+    ]
+  }
 }
 ```

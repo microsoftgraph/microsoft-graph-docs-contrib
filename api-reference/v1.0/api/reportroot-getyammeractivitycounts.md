@@ -87,10 +87,6 @@ GET https://graph.microsoft.com/v1.0/reports/getYammerActivityCounts(period='D7'
 [!INCLUDE [sample-code](../includes/snippets/csharp/reportroot-getyammeractivitycounts-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/reportroot-getyammeractivitycounts-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/reportroot-getyammeractivitycounts-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

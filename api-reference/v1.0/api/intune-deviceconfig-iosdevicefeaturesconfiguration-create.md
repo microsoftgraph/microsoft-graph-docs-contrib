@@ -150,10 +150,6 @@ Content-length: 1988
 [!INCLUDE [sample-code](../includes/snippets/csharp/intune-deviceconfig-iosdevicefeaturesconfiguration-create-create-iosdevicefeaturesconfiguration-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/intune-deviceconfig-iosdevicefeaturesconfiguration-create-create-iosdevicefeaturesconfiguration-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/intune-deviceconfig-iosdevicefeaturesconfiguration-create-create-iosdevicefeaturesconfiguration-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
