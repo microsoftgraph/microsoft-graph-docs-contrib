@@ -1,66 +1,75 @@
-## Methods
+---
+title: "mobileDeviceManagementPolicy resource type"
+description: "**TODO: Add Description**"
+author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.date: 08/06/2025
+ms.localizationpriority: medium
+ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+doc_type: resourcePageType
+---
 
+# mobileDeviceManagementPolicy resource type
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+**TODO: Add Description**
+
+
+Inherits from [mobilityManagementPolicy](../resources/mobilitymanagementpolicy.md).
+
+
+## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/mobiledevicemanagementpolicies-list.md)|[mobilityManagementPolicy](../resources/mobilitymanagementpolicy.md) collection|Get a list of the [mobilityManagementPolicy](../resources/mobilitymanagementpolicy.md) objects and their properties for mobile device management applications.|
-|[Get](../api/mobiledevicemanagementpolicies-get.md)|[mobilityManagementPolicy](../resources/mobilitymanagementpolicy.md)|Read the properties and relationships of a [mobilityManagementPolicy](../resources/mobilitymanagementpolicy.md) object for a mobile device management application.|
-|[Update](../api/mobiledevicemanagementpolicies-update.md)|None|Update the properties of a [mobilityManagementPolicy](../resources/mobilitymanagementpolicy.md) object for a mobile device management application.|
-|[List included groups](../api/mobiledevicemanagementpolicies-list-includedgroups.md)|[group](../resources/group.md) collection|List included groups for a [mobilityManagementPolicy](../resources/mobilitymanagementpolicy.md) object for a mobile device management application.|
-|[Add group to policy](../api/mobiledevicemanagementpolicies-post-includedgroups.md)|None|Add a group to the [mobilityManagementPolicy](../resources/mobilitymanagementpolicy.md) object for a mobile device management application.|
-|[Delete group from policy](../api/mobiledevicemanagementpolicies-delete-includedgroups.md)|None|Delete a group from the [mobilityManagementPolicy](../resources/mobilitymanagementpolicy.md) object for a mobile device management application.|
+|[List](../api/policyroot-list-mobiledevicemanagementpolicies.md)|[mobileDeviceManagementPolicy](../resources/mobiledevicemanagementpolicy.md) collection|Get a list of the mobileDeviceManagementPolicy objects and their properties.|
+|[Create](../api/policyroot-post-mobiledevicemanagementpolicies.md)|[mobileDeviceManagementPolicy](../resources/mobiledevicemanagementpolicy.md)|Create a new mobileDeviceManagementPolicy object.|
+|[Get](../api/mobiledevicemanagementpolicy-get.md)|[mobileDeviceManagementPolicy](../resources/mobiledevicemanagementpolicy.md)|Read the properties and relationships of [mobileDeviceManagementPolicy](../resources/mobiledevicemanagementpolicy.md) object.|
+|[Update](../api/mobiledevicemanagementpolicy-update.md)|[mobileDeviceManagementPolicy](../resources/mobiledevicemanagementpolicy.md)|Update the properties of a mobileDeviceManagementPolicy object.|
+|[Delete](../api/policyroot-delete-mobiledevicemanagementpolicies.md)|None|Delete a mobileDeviceManagementPolicy object.|
+|[List includedGroups](../api/mobiledevicemanagementpolicy-list-includedgroups.md)|[group](../resources/group.md) collection|**TODO: Add a useful description.**|
+|[Add group](../api/mobiledevicemanagementpolicy-post-includedgroups.md)|[group](../resources/group.md)|Add includedGroups by posting to the includedGroups collection.|
+|[Remove includedGroups](../api/mobiledevicemanagementpolicy-delete-includedgroups.md)|None|Remove a [group](../resources/group.md) object.|
 
 ## Properties
-
 |Property|Type|Description|
 |:---|:---|:---|
-|appliesTo|policyScope|Indicates the user scope of the mobility management policy. Possible values are: `none`, `all`, `selected`.|
-|isMdmEnrollmentDuringRegistrationDisabled|Boolean|Determines whether user will be asked to enroll the device to the MDM provider when they register their new device. Applies to users adding a work or school account to Windows through an application or Edge during the Entra account registration flow.|
-|complianceUrl|String|Compliance URL of the mobility management application.|
-|description|String|Description of the mobility management application.|
-|discoveryUrl|String|Discovery URL of the mobility management application.|
-|displayName|String|Display name of the mobility management application.|
-|id|String|Object Id of the mobility management application.|
-|isValid|Boolean|Whether policy is valid. Invalid policies may not be updated and should be deleted.|
-|termsOfUseUrl|String|Terms of Use URL of the mobility management application.|
+|appliesTo|policyScope|**TODO: Add Description** Inherited from [mobilityManagementPolicy](../resources/mobilitymanagementpolicy.md). The possible values are: `none`, `all`, `selected`, `unknownFutureValue`.|
+|complianceUrl|String|**TODO: Add Description** Inherited from [mobilityManagementPolicy](../resources/mobilitymanagementpolicy.md).|
+|description|String|**TODO: Add Description** Inherited from [mobilityManagementPolicy](../resources/mobilitymanagementpolicy.md).|
+|discoveryUrl|String|**TODO: Add Description** Inherited from [mobilityManagementPolicy](../resources/mobilitymanagementpolicy.md).|
+|displayName|String|**TODO: Add Description** Inherited from [mobilityManagementPolicy](../resources/mobilitymanagementpolicy.md).|
+|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md). Inherits from [entity](../resources/entity.md)|
+|isValid|Boolean|**TODO: Add Description** Inherited from [mobilityManagementPolicy](../resources/mobilitymanagementpolicy.md).|
+|termsOfUseUrl|String|**TODO: Add Description** Inherited from [mobilityManagementPolicy](../resources/mobilitymanagementpolicy.md).|
 
 ## Relationships
-
 |Relationship|Type|Description|
 |:---|:---|:---|
-|includedGroups|[group](../resources/group.md) collection|Microsoft Entra groups under the scope of the mobility management application if appliesTo is `selected`|
+|includedGroups|[group](../resources/group.md) collection|**TODO: Add Description** Inherited from [microsoft.graph.mobilityManagementPolicy](../resources/mobilitymanagementpolicy.md)|
 
 ## JSON representation
-
 The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.mobilityManagementPolicy",
+  "@odata.type": "microsoft.graph.mobileDeviceManagementPolicy",
+  "baseType": "microsoft.graph.mobilityManagementPolicy",
   "openType": false
 }
 -->
-
 ``` json
 {
+  "@odata.type": "#microsoft.graph.mobileDeviceManagementPolicy",
   "id": "String (identifier)",
   "appliesTo": "String",
   "complianceUrl": "String",
   "description": "String",
   "discoveryUrl": "String",
   "displayName": "String",
-  "isValid": "Boolean",
   "termsOfUseUrl": "String",
-  "isMdmEnrollmentDuringRegistrationDisabled" : "Boolean"
+  "isValid": "Boolean"
 }
 ```
 
-<!-- uuid: 5c98f801-d1c4-44eb-ac11-f72b6754deda
-2020-03-23T22:34:45.203Z -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "mobilityManagementPolicy resource",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}
--->

@@ -15,3 +15,60 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 In Microsoft Entra ID, a mobility management policy represents an autoenrollment configuration for a mobility management (MDM or MAM) application. These policies are only applicable to devices based on Windows 10 OS and its derivatives (Surface Hub, HoloLens etc.). [Autoenrollment](/windows/client-management/mdm/azure-ad-and-microsoft-intune-automatic-mdm-enrollment-in-the-new-portal) enables organizations to automatically enroll devices into their chosen mobility management application as part of [Microsoft Entra join](/azure/active-directory/devices/concept-azure-ad-join) or [Microsoft Entra register](/azure/active-directory/devices/concept-azure-ad-register) process on Windows 10 devices.
+
+## Methods
+None
+
+## Properties
+
+|Property|Type|Description|
+|:---|:---|:---|
+|appliesTo|policyScope|Indicates the user scope of the mobility management policy. Possible values are: `none`, `all`, `selected`.|
+|complianceUrl|String|Compliance URL of the mobility management application.|
+|description|String|Description of the mobility management application.|
+|discoveryUrl|String|Discovery URL of the mobility management application.|
+|displayName|String|Display name of the mobility management application.|
+|id|String|Object Id of the mobility management application.|
+|isValid|Boolean|Whether policy is valid. Invalid policies may not be updated and should be deleted.|
+|termsOfUseUrl|String|Terms of Use URL of the mobility management application.|
+
+## Relationships
+
+|Relationship|Type|Description|
+|:---|:---|:---|
+|includedGroups|[group](../resources/group.md) collection|Microsoft Entra groups under the scope of the mobility management application if appliesTo is `selected`|
+
+## JSON representation
+
+The following JSON representation shows the resource type.
+<!-- {
+  "blockType": "resource",
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.mobilityManagementPolicy",
+  "openType": false
+}
+-->
+
+``` json
+{
+  "id": "String (identifier)",
+  "appliesTo": "String",
+  "complianceUrl": "String",
+  "description": "String",
+  "discoveryUrl": "String",
+  "displayName": "String",
+  "isValid": "Boolean",
+  "termsOfUseUrl": "String"
+}
+```
+
+<!-- uuid: 5c98f801-d1c4-44eb-ac11-f72b6754deda
+2020-03-23T22:34:45.203Z -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "mobilityManagementPolicy resource",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}
+-->

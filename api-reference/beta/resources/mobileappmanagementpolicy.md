@@ -1,64 +1,75 @@
-## Methods
+---
+title: "mobileAppManagementPolicy resource type"
+description: "**TODO: Add Description**"
+author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.date: 08/06/2025
+ms.localizationpriority: medium
+ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+doc_type: resourcePageType
+---
 
+# mobileAppManagementPolicy resource type
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+**TODO: Add Description**
+
+
+Inherits from [mobilityManagementPolicy](../resources/mobilitymanagementpolicy.md).
+
+
+## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/mobileappmanagementpolicies-list.md)|[mobilityManagementPolicy](../resources/mobilitymanagementpolicy.md) collection|Get a list of the [mobilityManagementPolicy](../resources/mobilitymanagementpolicy.md) objects and their properties for mobile app management applications.|
-|[Get](../api/mobileappmanagementpolicies-get.md)|[mobilityManagementPolicy](../resources/mobilitymanagementpolicy.md)|Read the properties and relationships of a [mobilityManagementPolicy](../resources/mobilitymanagementpolicy.md) object for a mobile app management application.|
-|[Update](../api/mobileappmanagementpolicies-update.md)|None|Update the properties of a [mobilityManagementPolicy](../resources/mobilitymanagementpolicy.md) object for a mobile app management application.|
-|[List included groups](../api/mobileappmanagementpolicies-list-includedgroups.md)|[group](../resources/group.md) collection|List included groups for a [mobilityManagementPolicy](../resources/mobilitymanagementpolicy.md) object for a mobile app management application.|
-|[Add group to policy](../api/mobileappmanagementpolicies-post-includedgroups.md)|None|Add a group to the [mobilityManagementPolicy](../resources/mobilitymanagementpolicy.md) object for a mobile app management application.
-|[Delete group from policy](../api/mobileappmanagementpolicies-delete-includedgroups.md)|None|Delete a group from the [mobilityManagementPolicy](../resources/mobilitymanagementpolicy.md) object for a mobile app management application.|
+|[List](../api/policyroot-list-mobileappmanagementpolicies.md)|[mobileAppManagementPolicy](../resources/mobileappmanagementpolicy.md) collection|Get a list of the mobileAppManagementPolicy objects and their properties.|
+|[Create](../api/policyroot-post-mobileappmanagementpolicies.md)|[mobileAppManagementPolicy](../resources/mobileappmanagementpolicy.md)|Create a new mobileAppManagementPolicy object.|
+|[Get](../api/mobileappmanagementpolicy-get.md)|[mobileAppManagementPolicy](../resources/mobileappmanagementpolicy.md)|Read the properties and relationships of [mobileAppManagementPolicy](../resources/mobileappmanagementpolicy.md) object.|
+|[Update](../api/mobileappmanagementpolicy-update.md)|[mobileAppManagementPolicy](../resources/mobileappmanagementpolicy.md)|Update the properties of a mobileAppManagementPolicy object.|
+|[Delete](../api/policyroot-delete-mobileappmanagementpolicies.md)|None|Delete a mobileAppManagementPolicy object.|
+|[List includedGroups](../api/mobileappmanagementpolicy-list-includedgroups.md)|[group](../resources/group.md) collection|**TODO: Add a useful description.**|
+|[Add group](../api/mobileappmanagementpolicy-post-includedgroups.md)|[group](../resources/group.md)|Add includedGroups by posting to the includedGroups collection.|
+|[Remove includedGroups](../api/mobileappmanagementpolicy-delete-includedgroups.md)|None|Remove a [group](../resources/group.md) object.|
 
 ## Properties
-
 |Property|Type|Description|
 |:---|:---|:---|
-|appliesTo|policyScope|Indicates the user scope of the mobility management policy. Possible values are: `none`, `all`, `selected`.|
-|complianceUrl|String|Compliance URL of the mobility management application.|
-|description|String|Description of the mobility management application.|
-|discoveryUrl|String|Discovery URL of the mobility management application.|
-|displayName|String|Display name of the mobility management application.|
-|id|String|Object Id of the mobility management application.|
-|isValid|Boolean|Whether policy is valid. Invalid policies may not be updated and should be deleted.|
-|termsOfUseUrl|String|Terms of Use URL of the mobility management application.|
+|appliesTo|policyScope|**TODO: Add Description** Inherited from [mobilityManagementPolicy](../resources/mobilitymanagementpolicy.md). The possible values are: `none`, `all`, `selected`, `unknownFutureValue`.|
+|complianceUrl|String|**TODO: Add Description** Inherited from [mobilityManagementPolicy](../resources/mobilitymanagementpolicy.md).|
+|description|String|**TODO: Add Description** Inherited from [mobilityManagementPolicy](../resources/mobilitymanagementpolicy.md).|
+|discoveryUrl|String|**TODO: Add Description** Inherited from [mobilityManagementPolicy](../resources/mobilitymanagementpolicy.md).|
+|displayName|String|**TODO: Add Description** Inherited from [mobilityManagementPolicy](../resources/mobilitymanagementpolicy.md).|
+|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md). Inherits from [entity](../resources/entity.md)|
+|isValid|Boolean|**TODO: Add Description** Inherited from [mobilityManagementPolicy](../resources/mobilitymanagementpolicy.md).|
+|termsOfUseUrl|String|**TODO: Add Description** Inherited from [mobilityManagementPolicy](../resources/mobilitymanagementpolicy.md).|
 
 ## Relationships
-
 |Relationship|Type|Description|
 |:---|:---|:---|
-|includedGroups|[group](../resources/group.md) collection|Microsoft Entra groups under the scope of the mobility management application if appliesTo is `selected`|
+|includedGroups|[group](../resources/group.md) collection|**TODO: Add Description** Inherited from [microsoft.graph.mobilityManagementPolicy](../resources/mobilitymanagementpolicy.md)|
 
 ## JSON representation
-
 The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.mobilityManagementPolicy",
+  "@odata.type": "microsoft.graph.mobileAppManagementPolicy",
+  "baseType": "microsoft.graph.mobilityManagementPolicy",
   "openType": false
 }
 -->
-
 ``` json
 {
+  "@odata.type": "#microsoft.graph.mobileAppManagementPolicy",
   "id": "String (identifier)",
   "appliesTo": "String",
   "complianceUrl": "String",
   "description": "String",
   "discoveryUrl": "String",
   "displayName": "String",
-  "isValid": "Boolean",
-  "termsOfUseUrl": "String"
+  "termsOfUseUrl": "String",
+  "isValid": "Boolean"
 }
 ```
 
-<!-- uuid: 5c98f801-d1c4-44eb-ac11-f72b6754deda
-2020-03-23T22:34:45.203Z -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "mobilityManagementPolicy resource",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}
--->
