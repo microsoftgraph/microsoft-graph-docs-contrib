@@ -100,10 +100,6 @@ PATCH https://graph.microsoft.com/v1.0/solutions/backupRestore/oneDriveForBusine
 [!INCLUDE [sample-code](../includes/snippets/csharp/onedriveforbusinessprotectionpolicy-update-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/onedriveforbusinessprotectionpolicy-update-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/onedriveforbusinessprotectionpolicy-update-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

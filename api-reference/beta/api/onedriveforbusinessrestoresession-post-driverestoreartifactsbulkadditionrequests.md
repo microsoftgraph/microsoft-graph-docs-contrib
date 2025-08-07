@@ -75,7 +75,7 @@ For a list of possible error responses, see [Backup Storage API error responses]
 
 ### Request
 
-The following example shows a request that adds a list of drives to the specified Onedrive for work or school restore session in a bulk operation.
+The following example shows a request that adds a list of drives to the specified OneDrive for work or school restore session in a bulk operation.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -107,10 +107,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-driverestoreartifactsbulkadditionrequest-from--csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-driverestoreartifactsbulkadditionrequest-from--cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

@@ -6,6 +6,7 @@ ms.localizationpriority: high
 ms.subservice: "teams"
 ms.custom: scenarios:getting-started
 ms.date: 11/07/2024
+ms.topic: how-to
 ---
 
 # Get change notifications for teams and channels using Microsoft Graph
@@ -327,7 +328,8 @@ For notifications without resource data, the payload looks like the following. T
 ## Related content
 
 - [Microsoft Graph change notifications](change-notifications-overview.md)
-- [Get change notifications for membership changes in teams and channels using Microsoft Graph](teams-changenotifications-teammembership.md)
+- [Get change notifications for membership changes in channels using Microsoft Graph](teams-changenotifications-channelmembership.md)
+- [Get change notifications for membership changes in teams using Microsoft Graph](teams-changenotifications-teammembership.md)
 - [Get change notifications for messages in Teams channels and chats using Microsoft Graph](teams-changenotifications-chatmessage.md)
 - [Get change notifications for chats using Microsoft Graph](teams-changenotifications-chat.md)
 - [Get change notifications for chat membership using Microsoft Graph](teams-changenotifications-chatmembership.md)

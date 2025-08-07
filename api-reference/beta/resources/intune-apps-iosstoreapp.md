@@ -12,7 +12,7 @@ ms.date: 08/01/2024
 
 Namespace: microsoft.graph
 
-> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
+> **Important:** Microsoft supports Intune /beta APIs, but they are subject to more frequent change. Microsoft recommends using version v1.0 when possible. Check an API's availability in version v1.0 using the Version selector.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -120,7 +120,8 @@ Here is a JSON representation of the resource.
     "v14_0": true,
     "v15_0": true,
     "v16_0": true,
-    "v17_0": true
+    "v17_0": true,
+    "v18_0": true
   }
 }
 ```

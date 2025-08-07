@@ -1,14 +1,15 @@
 ---
-title: Use external groups to manage permissions to Microsoft Graph connectors data sources
+title: Use external groups to manage permissions to Microsoft 365 Copilot connectors data sources
 description: Learn how to use external groups to manage permissions to view external items in a Microsoft Graph connection and connect to data sources outside Microsoft Entra groups.
 author: mecampos
 doc_type: conceptualPageType
 ms.subservice: search
 ms.localizationpriority: medium
 ms.date: 11/07/2024
+ms.topic: how-to
 ---
 
-# Use external groups to manage permissions to Microsoft Graph connectors data sources
+# Use external groups to manage permissions to Copilot connectors data sources
 
 [External groups](/graph/api/resources/externalconnectors-externalgroup) let you manage permissions to view [external items](/graph/api/resources/externalconnectors-externalitem) in a Microsoft Graph connection and connect to data sources outside Microsoft Entra groups.
 
@@ -161,6 +162,5 @@ You can use the groups API to manage your external groups and group membership. 
 
 ## Related content
 
-- [Learn about Microsoft Graph connectors API limits](connecting-external-content-api-limits.md)
-- [Work with the Microsoft Graph connectors API](connecting-external-content-connectors-api-overview.md)
-- [Use Postman with the Microsoft Graph connectors API](connecting-external-content-connectors-api-postman.md)
+- [Learn about Copilot connectors API limits](connecting-external-content-api-limits.md)
+- [Work with the Copilot connectors API](connecting-external-content-connectors-api-overview.md)

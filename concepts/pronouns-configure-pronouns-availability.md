@@ -4,8 +4,9 @@ description: "Learn how to use Microsoft Graph APIs to enable, disable, or get s
 author: "aymen-ms"
 ms.localizationpriority: high
 ms.subservice: "people"
-ms.custom: scenarios:getting-started
+ms.custom: scenarios:getting-started, sfi-ga-nochange
 ms.date: 11/07/2024
+ms.topic: how-to
 ---
 
 # Manage pronouns settings for an organization using the Microsoft Graph API

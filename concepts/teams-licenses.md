@@ -5,6 +5,8 @@ author: "MSFTRickyCastaneda"
 ms.localizationpriority: high
 ms.subservice: "teams"
 ms.date: 11/07/2024
+ms.custom: sfi-image-nochange
+ms.topic: article
 ---
 
 # Payment models and licensing requirements for Microsoft Teams APIs
@@ -21,7 +23,7 @@ The following table lists the APIs and [change notification](/graph/api/subscrip
 | [Change notification](/graph/api/subscription-post-subscriptions) `resources`: <ul><li>/users/{user-id}/chats/getAllMessages</li><li>/me/chats/getAllMessages</li><li>/appCatalogs/teamsApps/{app-id}/installedToChats</li><li>/appCatalogs/teamsApps/{app-id}/installedToChats/getAllMessages</li><li>/appCatalogs/teamsApps/{app-id}/installedToChats/getAllMembers</li></ul> | B |
 | [Export APIs](/microsoftteams/export-teams-content): <ul><li>[GET /users/{user-id}/chats/getAllMessages](/graph/api/chats-getallmessages)</li><li>[GET /users/{user-id}/chats/getAllRetainedMessages](/graph/api/chat-getallretainedmessages)</li><li>[GET /me/chats/getAllMessages](/graph/api/chats-getallmessages)</li><li>[GET /teams/{team-id}/channels/getAllMessages](/graph/api/channel-getallmessages)</li><li>[GET /teams/{team-id}/channels/getAllRetainedMessages](/graph/api/channel-getallretainedmessages)</li><li>[GET /teamwork/deletedTeams/{deletedTeamId}/channels/getAllMessages](/graph/api/deletedteam-getallmessages)</li></ul> | A, B |
 | PATCH APIs, when updating the `policyViolation` property: <ul><li>[PATCH /teams/{team-id}/channels/{channel-id}/messages/{message-id}](/graph/api/chatmessage-update)</li><li>[PATCH /teams/(team-id)/channels/{channel-id}/messages/{message-id}/replies/{reply-id}](/graph/api/chatmessage-update)</li><li>[PATCH /chats/{chatThread-id}/messages/{message-id}](/graph/api/chatmessage-update)</li></ul> | A |
-| Teams meeting APIs: <ul><li>[GET /users/{userId}/onlineMeetings/{meetingId}/transcripts/{transcriptId}/content](/graph/api/calltranscript-get#example-2-get-a-calltranscript-content)</li><li>[GET /users/{userId}/onlineMeetings/{meetingId}/transcripts/{transcriptId}/metadataContent](/graph/api/calltranscript-get#example-4-get-a-calltranscript-metadatacontent)</li><li>[GET /users/{userId}/onlineMeetings/{meetingId}/recordings/{recordingId}/content](/graph/api/callrecording-get#example-2-get-callrecording-content)</li></ul> | No model parameter |
+| Teams meeting APIs: <ul><li>[GET /users/{userId}/onlineMeetings/{meetingId}/transcripts/{transcriptId}/content](/graph/api/calltranscript-get#example-2-get-a-calltranscript-content)</li><li>[GET /users/{userId}/onlineMeetings/{meetingId}/transcripts/{transcriptId}/metadataContent](/graph/api/calltranscript-get#example-4-get-a-calltranscript-metadatacontent)</li><li>[GET /users/{userId}/onlineMeetings/{meetingId}/recordings/{recordingId}/content](/graph/api/callrecording-get#example-2-get-callrecording-content)</li><li>[GET /copilot/users/{userId}/onlineMeetings/{meetingId}/aiInsights/{aiInsightId}](/graph/api/callaiinsight-get#example-1-get-a-callaiinsight)</li></ul> | No model parameter |
 
 > [!NOTE]
 > To set up an active Azure subscription for your application for billing purposes, see [Enable metered Microsoft 365 APIs and services](/graph/metered-api-setup). For more information, see [Payment and billing updates](#payment-and-billing).
@@ -140,6 +142,9 @@ The following table lists the prices for using Teams meeting APIs, applicable to
 | Teams meeting recording APIs: <ul><li>[GET /users/{userId}/onlineMeetings/{meetingId}/recordings/{recordingId}/content](/graph/api/callrecording-get#example-2-get-callrecording-content)</li></ul>  | None | $0.003 per minute | The duration is rounded down to the nearest minute. |
 | Teams meeting transcript APIs: <ul><li>[GET /users/{userId}/onlineMeetings/{meetingId}/transcripts/{transcriptId}/content](/graph/api/calltranscript-get#example-2-get-a-calltranscript-content)</li><li>[GET /users/{userId}/onlineMeetings/{meetingId}/transcripts/{transcriptId}/metadataContent](/graph/api/calltranscript-get#example-4-get-a-calltranscript-metadatacontent)</li></ul>  | None |  $0.0022 per minute | The duration is rounded down to the nearest minute. |
 
+## License requirements for Teams meeting AI insights APIs
+
+This section describes the license requirements for Teams meeting AI insights APIs. To access the beta endpoint, users must have a [Microsoft 365 Copilot](https://www.microsoft.com/en-us/microsoft-365/copilot) license. Payment models or evaluation mode aren't applicable for these APIs; they can be used by any application for users who have the required license.
 
 ## Payment and billing
 

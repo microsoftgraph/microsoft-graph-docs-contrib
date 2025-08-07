@@ -102,7 +102,7 @@ configuration:
       then:
       - addReply:
           reply: >-
-            Thank you for indicating that your pull request is ready for content review, @${issueAuthor}. It has been added to the **Content Review** project and an available reviewer will be assigned in the next 15 business days, depending on demand.
+            Thank you for indicating that your pull request is ready for content review, @${issueAuthor}. It has been added to the **Content Review** project and an available reviewer will be assigned in the next one (1) business day, depending on demand. If this PR relates to any schema changes, refer to the pull request description box for quick instructions to move this PR forward.
 
 
             Check the content review workflow [here](https://eng.ms/cid/27dee76c-3a60-4e65-8fdf-08ea849b3498/fid/3a993b6c9d547e46f59d8d7851f191c38bbbea6ead01253dc62fcdd8101a1ff9).
@@ -171,16 +171,64 @@ configuration:
       then:
       - removeLabel:
           label: ready for content review
-    - description: When Identity-related label is added to a pull request request review from FaithOmbongi
+    - description: When Security, Identity, & Compliance-related label is added to a pull request, request review from FaithOmbongi
       if:
       - payloadType: Pull_Request
       - or:
         - labelAdded:
-            label: 'area: Azure AD'
-        - labelAdded:
             label: 'area: Entra'
         - labelAdded:
             label: 'area: identity'
+        - labelAdded:
+            label: 'area: app model'
+        - labelAdded:
+            label: 'area: app role assignment'
+        - labelAdded:
+            label: 'area: applications'
+        - labelAdded:
+            label: 'area: authN/Z'
+        - labelAdded:
+            label: 'area: batch requests'
+        - labelAdded:
+            label: 'area: change notifications'
+        - labelAdded:
+            label: 'area: change tracking'
+        - labelAdded:
+            label: 'area: compliance'
+        - labelAdded:
+            label: 'area: directory management'
+        - labelAdded:
+            label: 'area: eDiscovery'
+        - labelAdded:
+            label: 'area: extensions'
+        - labelAdded:
+            label: 'area: governance'
+        - labelAdded:
+            label: 'area: groups'
+        - labelAdded:
+            label: 'area: GSA'
+        - labelAdded:
+            label: 'area: identity protection'
+        - labelAdded:
+            label: 'area: intune'
+        - labelAdded:
+            label: 'area: app model'
+        - labelAdded:
+            label: 'area: multicloud permissions management'
+        - labelAdded:
+            label: 'area: paging'
+        - labelAdded:
+            label: 'area: permissions'
+        - labelAdded:
+            label: 'area: query parameters'
+        - labelAdded:
+            label: 'area: security'
+        - labelAdded:
+            label: 'area: throttling'
+        - labelAdded:
+            label: 'area: users'
+        - labelAdded:
+            label: 'area: Azure AD B2C'
       - isOpen
       then:
       - requestReview:
@@ -954,7 +1002,7 @@ configuration:
 
 
             If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
-    - description: 'Add ready for content review label if author comments #sign-off'
+    - description: 'Add ready to merge label if author comments #sign-off'
       if:
       - payloadType: Issue_Comment
       - isActivitySender:
@@ -965,7 +1013,7 @@ configuration:
           isRegex: False
       then:
       - addLabel:
-          label: ready for content review
+          label: ready to merge
     - description: Add do not merge label to new pull requests opened by contributors
       if:
       - payloadType: Pull_Request
@@ -1011,6 +1059,8 @@ configuration:
 
 
             After the content review is complete and the updates in this PR are ready for external customers to use, please replace the **do not merge** label with **ready to merge**.
+
+            Refer to the pull request description for quick instructions to move this PR forward.
 
 
             > [!NOTE]

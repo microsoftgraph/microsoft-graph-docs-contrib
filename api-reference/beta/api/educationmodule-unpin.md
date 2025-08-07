@@ -64,10 +64,6 @@ POST https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-
 [!INCLUDE [sample-code](../includes/snippets/csharp/educationmodule-unpin-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/educationmodule-unpin-1-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/educationmodule-unpin-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -116,6 +112,7 @@ HTTP/1.1 200 OK
     "status": "published",
     "createdDateTime": "2023-06-21T17:25:44.1277744Z",
     "lastModifiedDateTime": "2023-06-21T18:18:49.1101173Z",
+    "languageTag": null,
     "id": "ba8e4215-4fb2-4dba-abe7-a8f2585177d3",
     "createdBy": {
         "application": null,

@@ -9,9 +9,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 EducationAssignment educationAssignment = new EducationAssignment();
-OffsetDateTime dueDateTime = OffsetDateTime.parse("2022-09-16T00:00:00Z");
+OffsetDateTime dueDateTime = OffsetDateTime.parse("2025-09-16T00:00:00Z");
 educationAssignment.setDueDateTime(dueDateTime);
-educationAssignment.setDisplayName("Reading test 09.14 Beta");
+educationAssignment.setDisplayName("Reading test 09.14");
+educationAssignment.setLanguageTag("es-MX");
 EducationItemBody instructions = new EducationItemBody();
 instructions.setContentType(BodyType.Text);
 instructions.setContent("Read chapter 4");

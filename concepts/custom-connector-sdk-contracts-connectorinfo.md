@@ -1,17 +1,18 @@
 ---
-title: "Microsoft Graph connectors SDK contracts ConnectorInfo API and models"
+title: "Microsoft 365 Copilot connectors SDK contracts ConnectorInfo API and models"
 author: rchanda1392
 manager: harshkum
 ms.localizationpriority: medium
 doc_type: conceptualPageType
 ms.subservice: search
-description: "Learn about the Microsoft Graph connectors SDK contracts ConnectorInfo API and models."
+description: "Learn about the Copilot connectors SDK contracts ConnectorInfo API and models."
 ms.date: 11/07/2024
+ms.topic: article
 ---
 
-# Microsoft Graph connectors SDK ConnectorInfo API and models
+# Copilot connectors SDK ConnectorInfo API and models
 
-The Microsoft Graph connectors SDK contracts **ConnectorInfo** API allows you to get information about the connector.
+The Microsoft 365 Copilot connectors (formerly Microsoft Graph connectors) SDK contracts **ConnectorInfo** API allows you to get information about the connector.
 
 ## ConnectorInfo API
 

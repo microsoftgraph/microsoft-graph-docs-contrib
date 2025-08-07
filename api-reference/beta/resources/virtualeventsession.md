@@ -46,7 +46,7 @@ Inherits from [onlineMeetingBase](../resources/onlinemeetingbase.md).
 | anonymizeIdentityForRoles    | onlineMeetingRole collection | Specifies whose identity is anonymized in the virtual event session. Possible values are: `attendee`. The `attendee` value can't be removed through a PATCH operation once added. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md).|
 | audioConferencing     | [audioConferencing](audioconferencing.md)     | The phone access (dial-in) information for the virtual event session. Read-only. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
 | chatInfo              | [chatInfo](chatinfo.md) | The chat information associated with the virtual event session. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
-| chatRestrictions | [chatrestrictions](../resources/chatrestrictions.md) | Specifies the configuration settings for meeting chat restrictions. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
+| chatRestrictions | [chatRestrictions](../resources/chatrestrictions.md) | Specifies the configuration settings for meeting chat restrictions. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
 | endDateTime           | [dateTimeTimeZone](../resources/datetimetimezone.md) | The virtual event session end time.   |
 | id | String | The unique identifier of the virtual event session. Read-only. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
 | isEndToEndEncryptionEnabled | Boolean | Indicates whether end-to-end encryption (E2EE) is enabled for the virtual event session. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |

@@ -21,7 +21,7 @@ The maximum number of attendees included in an **event**, and the maximum number
 This resource supports:
 
 - Adding your own data to custom properties as [extensions](/graph/extensibility-overview).
-- Subscribing to [change notifications](/graph/webhooks).
+- Subscribing to [change notifications](/graph/change-notifications-overview).
 - Using [delta query](/graph/delta-query-overview) to track incremental additions, deletions, and updates, by providing a [delta](../api/event-delta.md) function.
 
 > **Note:** There are a few minor differences in the way you can interact with user calendars, group calendars, and their events:
@@ -69,6 +69,7 @@ This resource supports:
 |attendees|[Attendee](attendee.md) collection|The collection of attendees for the event.|
 |body|[ItemBody](itembody.md)|The body of the message associated with the event. It can be in HTML or text format.|
 |bodyPreview|String|The preview of the message associated with the event. It's in text format.|
+|cancelledOccurrences|String collection|Contains **occurrenceId** property values of canceled instances in a recurring series, if the event is the series master. Instances in a recurring series that are canceled are called canceled occurences.<br><br>Returned only on `$select` in a [Get](../api/event-get.md) operation which specifies the ID (**seriesMasterId** property value) of a series master event.|
 |categories|String collection|The categories associated with the event. Each category corresponds to the **displayName** property of an [outlookCategory](outlookcategory.md) defined for the user.|
 |changeKey|String|Identifies the version of the event object. Every time the event is changed, ChangeKey changes as well. It allows Exchange to apply changes to the correct version of the object.|
 |createdDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
@@ -129,8 +130,9 @@ This resource supports:
 |:---------------|:--------|:----------|
 |attachments|[Attachment](attachment.md) collection|The collection of [FileAttachment](fileattachment.md), [ItemAttachment](itemattachment.md), and [referenceAttachment](referenceattachment.md) attachments for the event. Navigation property. Read-only. Nullable.|
 |calendar|[Calendar](calendar.md)|The calendar that contains the event. Navigation property. Read-only.|
+|exceptionOccurrences|[event](event.md) collection|Contains the **id** property values of the event instances that are exceptions in a recurring series.<br>Exceptions can differ from other occurrences in a recurring series, such as the subject, start or end times, or attendees. Exceptions don't include canceled occurrences.<br><br>Returned only on `$select` and `$expand` in a [GET](../api/event-get.md) operation that specifies the ID (**seriesMasterId** property value) of a series master event.|
 |extensions|[Extension](extension.md) collection|The collection of open extensions defined for the event. Nullable.|
-|instances|[Event](event.md) collection|The occurrences of a recurring series, if the event is a series master. This property includes occurrences that are part of the recurrence pattern, and exceptions modified, but doesn't include occurrences cancelled from the series. Navigation property. Read-only. Nullable.|
+|instances|[Event](event.md) collection|The occurrences of a recurring series, if the event is a series master. This property includes occurrences that are part of the recurrence pattern, and exceptions modified, but doesn't include occurrences canceled from the series. Navigation property. Read-only. Nullable.|
 |multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) collection| The collection of multi-value extended properties defined for the event. Read-only. Nullable.|
 |singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| The collection of single-value extended properties defined for the event. Read-only. Nullable.|
 
@@ -144,6 +146,7 @@ The following JSON representation shows the resource type.
   "optionalProperties": [
     "attachments",
     "calendar",
+    "exceptionOccurrences",
     "extensions",
     "instances",
     "singleValueExtendedProperties",
@@ -159,6 +162,7 @@ The following JSON representation shows the resource type.
   "attendees": [{"@odata.type": "microsoft.graph.attendee"}],
   "body": {"@odata.type": "microsoft.graph.itemBody"},
   "bodyPreview": "string",
+  "cancelledOccurrences": ["String"],
   "categories": ["string"],
   "changeKey": "string",
   "createdDateTime": "String (timestamp)",
@@ -197,6 +201,7 @@ The following JSON representation shows the resource type.
 
   "attachments": [ { "@odata.type": "microsoft.graph.attachment" } ],
   "calendar": { "@odata.type": "microsoft.graph.calendar" },
+  "exceptionOccurrences": [{ "@odata.type": "microsoft.graph.event" }],
   "extensions": [ { "@odata.type": "microsoft.graph.extension" } ],
   "instances": [ { "@odata.type": "microsoft.graph.event" }],
   "singleValueExtendedProperties": [ { "@odata.type": "microsoft.graph.singleValueLegacyExtendedProperty" }],

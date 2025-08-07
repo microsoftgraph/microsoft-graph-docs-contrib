@@ -4,6 +4,7 @@ description: "Get started building a web application using Microsoft Graph Toolk
 ms.localizationpriority: medium
 author: sebastienlevert
 ms.date: 11/07/2024
+ms.topic: how-to
 ---
 
 # Build a web application with the Microsoft Graph Toolkit

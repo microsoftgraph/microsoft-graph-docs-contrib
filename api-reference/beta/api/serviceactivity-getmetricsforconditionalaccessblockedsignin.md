@@ -72,10 +72,6 @@ GET https://graph.microsoft.com/beta/reports/serviceActivity/getMetricsForCondit
 [!INCLUDE [sample-code](../includes/snippets/csharp/serviceactivitythisgetmetricsforconditionalaccessblockedsignin-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/serviceactivitythisgetmetricsforconditionalaccessblockedsignin-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/serviceactivitythisgetmetricsforconditionalaccessblockedsignin-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -90,6 +86,10 @@ GET https://graph.microsoft.com/beta/reports/serviceActivity/getMetricsForCondit
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/serviceactivitythisgetmetricsforconditionalaccessblockedsignin-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/serviceactivitythisgetmetricsforconditionalaccessblockedsignin-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

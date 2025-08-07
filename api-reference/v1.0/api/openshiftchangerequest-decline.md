@@ -23,6 +23,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 > **Note**: This API supports admin permissions. Users with admin roles can access groups that they are not a member of.
 
+[!INCLUDE [declineforuser-application-permission](../includes/declineforuser-application-permission.md)]
+
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
@@ -37,7 +39,7 @@ POST /teams/{id}/schedule/openShiftChangeRequests/{openShiftChangeRequestId}/dec
 |:--------------|:--------------|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-type | application/json. Required. |
-| MS-APP-ACTS-AS  | A user ID (GUID). Required only if the authorization token is an application token; otherwise, optional. |
+| MS-APP-ACTS-AS (deprecated) | A user ID (GUID). Required only if the authorization token is an application token; otherwise, optional. Until January 1, 2026, this API supports application permissions only when used in combination with the deprecated `MS-APP-ACTS-AS` header.|
 
 ## Request body
 

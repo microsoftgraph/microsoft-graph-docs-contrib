@@ -56,18 +56,11 @@ The following table shows the parameters that you can use with this method.
 | filter     | String                       | OData `$filter` syntax. Supported filters are: `and`, `or`, `gt`, and `eq`.                          |
 | groupBy    | String collection            | Specifies how to group the reports. If used, must have the same content as the **select** parameter. |
 | orderBy    | String collection            | Specifies how to sort the reports.                                                                   |
-| reportName | cloudPCPerformanceReportName | The report name. The possible values are: `performanceTrendReport`, `unknownFutureValue`.             |
+| reportName | [cloudPCPerformanceReportName](../resources/cloudpcreports.md#cloudpcperformancereportname-values) | The report name. The possible values are: `performanceTrendReport`, `unknownFutureValue`.             |
 | search     | String                       | Specifies a String to search.                                                                        |
 | select     | String collection            | OData `$select` syntax. The selected columns of the reports.                                         |
 | skip       | Int32                        | Number of records to skip.                                                                           |
 | top        | Int32                        | Specifies the page size. If not defined, the default is 25, with a maximum of 100.                   |
-
-### cloudPCPerformanceReportName values
-
-| Member                       | Description       |
-| :--------------------------- | :---------------- |
-| performanceTrendReport     | Indicates a daily aggregated report that provides a list of connection quality metrics for Cloud PCs over the past seven days within a tenant. The metrics include `SlowRoundTripTimeCloudPcCount`, `LowUdpConnectionPercentageCount`, `NoTimeConnectedCloudPcCount`, and `LowTimeConnectedCloudPcCount`. Each daily report is an aggregation of the previous 28 days, counted back from the trigger time.  | 
-| unknownFutureValue         | Evolvable enumeration sentinel value. Don't use.             |
 
 ## Response
 
@@ -107,10 +100,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/cloudpcreportsthisgetcloudpcperformancereport-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/cloudpcreportsthisgetcloudpcperformancereport-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

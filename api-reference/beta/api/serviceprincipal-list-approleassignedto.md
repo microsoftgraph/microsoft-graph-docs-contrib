@@ -5,7 +5,7 @@ ms.localizationpriority: high
 doc_type: apiPageType
 ms.subservice: "entra-applications"
 author: "sureshja"
-ms.date: 10/15/2024
+ms.date: 05/23/2025
 ---
 
 # List appRoleAssignments granted for a service principal
@@ -14,11 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of [appRoleAssignment](../resources/approleassignment.md) that users, groups, or client service principals have been granted for the given resource service principal.
+Retrieve all clients (users, groups, or client service principals) that have an [appRoleAssignment](../resources/approleassignment.md) for a given resource service principal.
 
-For example, if the resource service principal is the service principal for the Microsoft Graph API, this will return all service principals that have been granted any app-only permissions to Microsoft Graph.
-
-If the resource service principal is an application that has app roles granted to users and groups, this will return all the users and groups assigned app roles for this application.
+For example, if the resource service principal is the service principal for the Microsoft Graph API, this API returns all service principals that have been granted any app-only permissions to Microsoft Graph. If the resource service principal is an application with app roles granted to users and groups, this API returns all the users and groups assigned app roles for this application.
 
 >**Note** This request might have replication delays for app role assignments that were recently granted or removed.
 
@@ -43,7 +41,7 @@ GET /servicePrincipals/{id}/appRoleAssignedTo
 
 ## Optional query parameters
 
-This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
+This method supports the `$select` and `$filter` (`eq`, `startswith`) [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 
@@ -78,10 +76,6 @@ GET https://graph.microsoft.com/beta/servicePrincipals/8e881353-1735-45af-af21-e
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/serviceprincipal-get-approleassignedto-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/serviceprincipal-get-approleassignedto-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

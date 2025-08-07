@@ -2,7 +2,7 @@
 title: "Get platformCredentialAuthenticationMethod"
 description: "Read the properties and relationships of a platformCredentialAuthenticationMethod object."
 author: "ploegert"
-ms.date: 04/2/2025
+ms.date: 07/31/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
@@ -18,31 +18,32 @@ Read the properties and relationships of a [platformCredentialAuthenticationMeth
 
 ## Permissions
 
-The following tables show the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-### Permissions acting on self
-
-<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
+<!-- { 
+  "blockType": "permissions", 
+  "name": "platformcredentialauthenticationmethod_get", 
+  "requestUrls": ["GET /me/authentication/platformCredentialMethods/{platformCredentialAuthenticationMethodId}"]
+ } -->
 [!INCLUDE [permissions-table](../includes/permissions/platformcredentialauthenticationmethod-get-permissions.md)]
-
-### Permissions acting on other users
-
-<!-- { "blockType": "permissions", "name": "platformcredentialauthenticationmethod_get_2" } -->
-[!INCLUDE [permissions-table](../includes/permissions/platformcredentialauthenticationmethod-get-2-permissions.md)]
 
 [!INCLUDE [rbac-authentication-methods-apis-read-others](../includes/rbac-for-apis/rbac-authentication-methods-apis-read-others.md)]
 
 ## HTTP request
 
-To read details of your own Platform Credential authentication method:
+Read details of your own Platform Credential authentication method.
+
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
+
 <!-- { "blockType": "ignored" } -->
 ``` http
 GET /me/authentication/platformCredentialMethods/{platformCredentialAuthenticationMethodId}
 ```
 
-[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
+Read details of your own or another user's Platform Credential authentication method.
 
-To read details of your own or another user's Platform Credential authentication method:
+[!INCLUDE [authentication-methods-apis-users-selfservice](../includes/authentication-methods-apis-users-selfservice.md)]
+
 <!-- { "blockType": "ignored" } -->
 ``` http
 GET /users/{id | userPrincipalName}/authentication/platformCredentialMethods/{platformCredentialAuthenticationMethodId}
@@ -75,6 +76,7 @@ If successful, this method returns a `200 OK` response code and a [platformCrede
 
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_platformcredentialauthenticationmethod_1",
@@ -84,6 +86,36 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/v1.0/me/authentication/platformCredentialMethods/R18B3t8Ogh9XIOGmPt81d6p_KXJs1YTxfGgGqeVFJSM1
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-platformcredentialauthenticationmethod-1-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-platformcredentialauthenticationmethod-1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-platformcredentialauthenticationmethod-1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-platformcredentialauthenticationmethod-1-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-platformcredentialauthenticationmethod-1-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-platformcredentialauthenticationmethod-1-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-platformcredentialauthenticationmethod-1-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 

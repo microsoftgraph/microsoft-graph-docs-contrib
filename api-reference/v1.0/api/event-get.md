@@ -36,8 +36,7 @@ Prefer: outlook.timezone="Eastern Standard Time"
 ```
 
 If the event was created in a different time zone, the start and end times will be adjusted to the time zone specified in that `Prefer` header.
-See this [list](../resources/datetimetimezone.md) for the supported time zone names. If the `Prefer: outlook.timezone` header is not specified, the start and end
-times are returned in UTC.
+For the supported time zone names, see [dateTimeTimeZone](../resources/datetimetimezone.md). If the `Prefer: outlook.timezone` header is not specified, the start and end times are returned in UTC.
 
 You can use the **OriginalStartTimeZone** and **OriginalEndTimeZone** properties on the **event** resource to
 find out the time zone used when the event was created.
@@ -83,14 +82,20 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and [event](../resources/event.md) object in the response body.
-## Example
-##### Request 1
-The first example gets the specified event. It specifies the following:
+If successful, this method returns a `200 OK` response code and an [event](../resources/event.md) object in the response body.
+
+## Examples
+
+### Example 1: Get a specified event
+
+The following example gets the specified event. It specifies the following:
 
 - A `Prefer: outlook.timezone` header to get date time values returned in Pacific Standard Time.
-- A `$select` query parameter to return specific properties. Without a `$select` parameter, all of the event properties will be returned.
+- A `$select` query parameter to return specific properties. Without a `$select` parameter, all of the event properties are returned.
 
+#### Request
+
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -106,10 +111,6 @@ Prefer: outlook.timezone="Pacific Standard Time"
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-event-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-event-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -138,7 +139,7 @@ Prefer: outlook.timezone="Pacific Standard Time"
 
 ---
 
-##### Response 1
+#### Response
 
 The following example shows the response. The **body** property is returned in the default format of HTML.
 
@@ -213,12 +214,14 @@ Preference-Applied: outlook.timezone="Pacific Standard Time"
 }
 ```
 
+### Example 2: Get an event that specifies more than one location
 
-##### Request 2
-
-The second example shows getting an event that specifies more than one location. The request specifies a `$select` query parameter
+The following example shows how to get an event that specifies more than one location. The request specifies a `$select` query parameter
 to return specific properties.
 
+#### Request
+
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -232,10 +235,6 @@ GET https://graph.microsoft.com/v1.0/me/events/AAMkAGVmMDEzMTM4LTZmYWUtNDdkNC1hM
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-event-multiple-locations-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-event-multiple-locations-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -264,11 +263,11 @@ GET https://graph.microsoft.com/v1.0/me/events/AAMkAGVmMDEzMTM4LTZmYWUtNDdkNC1hM
 
 ---
 
-##### Response 2
-The following example shows the response. The **locations** property includes details for the 3 locations that the event is organized for.
+#### Response
 
-Because the request does not specify any `Prefer: outlook.timezone` header,
-the **start** and **end** properties are displayed in the default UTC time zone.
+The following example shows the response. The **locations** property includes details for the three locations that the event is organized for.
+
+Because the request doesn't specify any `Prefer: outlook.timezone` header, the **start** and **end** properties are displayed in the default UTC time zone.
 
 The event body is in the default HTML format.
 
@@ -349,7 +348,106 @@ Content-type: application/json
 }
 ```
 
+### Example 3: Expand a series master event
 
+The following example shows how to expand a series master event of a recurring series with exceptions and cancelled occurences. The request specifies a `$select` query parameter to return specific properties.
+
+#### Request
+
+The following example shows a request.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_event_seriesMaster_expansion",
+  "sampleKeys": ["AAMkADAGAADDdm4NAAA="]
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/me/events/AAMkADAGAADDdm4NAAA=?$select=subject,start,end,occurrenceId,exceptionOccurrences,cancelledOccurrences&$expand=exceptionOccurrences
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-event-seriesmaster-expansion-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-event-seriesmaster-expansion-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-event-seriesmaster-expansion-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-event-seriesmaster-expansion-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-event-seriesmaster-expansion-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-event-seriesmaster-expansion-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-event-seriesmaster-expansion-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+
+The following example shows the response. The GET operation returns the selected properties for the series master event. Specifically, for events in the **exceptionOccurrences** collection, the operation returns the **id** property, and the applicable, selected properties (**subject**, **start**, **end**, **occurrenceId**). As for events in the **cancelledOccurrences** collection, because the events no longer exist, the operation returns only their **occurrenceId** property values.
+
+<!-- {
+  "blockType": "response",
+  "name": "get_event_seriesMaster_expansion",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.event"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('d1a2fae9-db66-4cc9-8133-2184c77af1b8')/events(subject,start,end,occurrenceId,exceptionOccurrences,cancelledOccurrences)/$entity",
+  "@odata.etag": "W/\"y53lbKh6jkaxHzFwGhgyxgAAw5zhug==\"",
+  "id": "AAMkADAGAADDdm4NAAA=",
+  "iCalUId": "040000008200E00074=",
+  "uid": "040000008200E00074C=",
+  "subject": "Daily stand-up",
+  "cancelledOccurrences": [
+    "OID.AAMkADAGAADDdm4NAAA=.2020-04-30",
+    "OID.AAMkADAGAADDdm4NAAA=.2020-05-07",
+    "OID.AAMkADAGAADDdm4NAAA=.2020-05-14"
+  ],
+  "occurrenceId": null,
+  "start": {
+    "dateTime": "2020-04-23T11:30:00.0000000",
+    "timeZone": "UTC"
+  },
+  "end": {
+    "dateTime": "2020-04-23T12:00:00.0000000",
+    "timeZone": "UTC"
+  },
+  "exceptionOccurrences": [
+    {
+      "id": "AAMkADM0ZGRhMjdjLTA==",
+      "Subject": "SM update 24",
+      "occurrenceId": "OID.AAMkADAGAADDdm4NAAA=.2020-05-21",
+      "start": {
+        "dateTime": "2020-05-21T11:30:00.0000000",
+        "timeZone": "UTC"
+      },
+      "end": {
+        "dateTime": "2020-05-21T12:00:00.0000000",
+        "timeZone": "UTC"
+      }
+    }
+  ]
+}
+```
 
 ## Related content
 

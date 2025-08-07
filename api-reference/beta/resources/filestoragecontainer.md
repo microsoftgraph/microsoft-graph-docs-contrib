@@ -19,7 +19,7 @@ Represents a location where multiple users or a group of users can store files a
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/filestorage-list-containers.md)|[fileStorageContainer](../resources/filestoragecontainer.md) collection|Get a list of the [fileStorageContainer](../resources/filestoragecontainer.md) objects and their properties.|
+|[List](../api/filestorage-list-containers.md)|[fileStorageContainer](../resources/filestoragecontainer.md) collection|Get a list of [fileStorageContainer](../resources/filestoragecontainer.md) objects that are accessible to a caller.|
 |[Create](../api/filestoragecontainer-post.md)|[fileStorageContainer](../resources/filestoragecontainer.md)|Create a new [fileStorageContainer](../resources/filestoragecontainer.md) object.|
 |[Get](../api/filestoragecontainer-get.md)|[fileStorageContainer](../resources/filestoragecontainer.md)|Read the properties and relationships of a [fileStorageContainer](../resources/filestoragecontainer.md) object.|
 |[Update](../api/filestoragecontainer-update.md)|[fileStorageContainer](../resources/filestoragecontainer.md)|Update the properties of a [fileStorageContainer](../resources/filestoragecontainer.md) object.|
@@ -43,8 +43,8 @@ Represents a location where multiple users or a group of users can store files a
 |[Delete file storage container column](../api/filestoragecontainer-delete-column.md)|None|Delete a column from a fileStorageContainer.|
 |[Get column](../api/filestoragecontainer-get-column.md)|[columnDefinition](../resources/columndefinition.md)|Get a column from a fileStorageContainer.|
 |[Update recycle bin settings](../api/filestoragecontainer-update-recyclebinsettings.md)|[recyclebinsettings](../resources/recyclebinsettings.md)|Update recycleBin settings for a fileStorageContainer.|
-|[Restore recycle bin items](../api/filestoragecontainer-restore-recyclebinitem.md)|[recycleBinItem](../resources/recyclebinitem.md) collection|Restore recycle bin items in a fileStorageContainer.|
-|[Delete recycle bin items](../api/filestoragecontainer-delete-recyclebinitem.md)|None|Delete recycle bin items from a fileStorageContainer.|
+|[Restore recycle bin items](../api/recyclebinitem-restore.md)|[recycleBinItem](../resources/recyclebinitem.md) collection|Restore [recycleBinItem](../resources/recyclebinitem.md) objects from the [recycleBin](../resources/recyclebin.md) of a [fileStorageContainer](../resources/filestoragecontainer.md).|
+|[Delete recycle bin items](../api/recyclebinitem-delete.md)|None|Delete [recycleBinItem](../resources/recyclebinitem.md) objects permanently from the [recycleBin](../resources/recyclebin.md) of a [fileStorageContainer](../resources/filestoragecontainer.md).|
 |[List recycle bin items](../api/filestoragecontainer-list-recyclebinitem.md)|[recycleBinItem](../resources/recyclebinitem.md) collection|List recycle bin items in a fileStorageContainer.|
 |[Lock](../api/filestoragecontainer-lock.md)|None|Lock a [fileStorageContainer](../resources/filestoragecontainer.md) to prevent modifications to its content.|
 |[Unlock](../api/filestoragecontainer-unlock.md)|None|Unlock a [fileStorageContainer](../resources/filestoragecontainer.md) for users and application-only identities to allow the addition, updating, and deletion of content.|

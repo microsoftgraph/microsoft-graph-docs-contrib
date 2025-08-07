@@ -4,6 +4,7 @@ description: "Use the SharePoint provider inside your SharePoint web parts to po
 ms.localizationpriority: medium
 author: sebastienlevert
 ms.date: 11/07/2024
+ms.topic: article
 ---
 
 # SharePoint provider

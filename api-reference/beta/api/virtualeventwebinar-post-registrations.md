@@ -21,12 +21,8 @@ Create a [registration record](../resources/virtualeventregistration.md) for a r
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "virtualeventregistration-post-permissions"
-}
--->
-[!INCLUDE [permissions-table](../includes/permissions/virtualeventregistration-post-permissions.md)]
+<!-- { "blockType": "permissions", "name": "virtualeventwebinar_post_registrations" } -->
+[!INCLUDE [permissions-table](../includes/permissions/virtualeventwebinar-post-registrations-permissions.md)]
 
 ## HTTP request
 
@@ -95,7 +91,7 @@ Content-Type: application/json
 
 {
   "externalRegistrationInformation": {
-    "referrer": "Facebook",
+    "referrer": "Fabrikam",
     "registrationId": "myExternalRegistrationId"
   },
   "preferredTimezone":"Pacific Standard Time",
@@ -131,10 +127,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-virtualeventregistration-delegated-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-virtualeventregistration-delegated-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -184,7 +176,7 @@ Content-Type: application/json
   "lastName": "Pham",
   "email": "EmileeMPham@contoso.com",
   "externalRegistrationInformation": {
-    "referrer": "Facebook",
+    "referrer": "Fabrikam",
     "registrationId": "myExternalRegistrationId"
   },
   "status": "registered",
@@ -247,7 +239,7 @@ Content-Type: application/json
   "lastName" : "Demoss",
   "email" : "DianeDemoss@contoso.com",
   "externalRegistrationInformation": {
-    "referrer": "Facebook",
+    "referrer": "Fabrikam",
     "registrationId": "myExternalRegistrationId"
   },
   "preferredTimezone":"Pacific Standard Time",
@@ -282,10 +274,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-virtualeventregistration-application-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-virtualeventregistration-application-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

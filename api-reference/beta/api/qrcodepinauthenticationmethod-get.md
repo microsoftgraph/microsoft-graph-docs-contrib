@@ -21,29 +21,30 @@ Retrieve a user's [qrCodePinAuthenticationMethod](../resources/qrcodepinauthenti
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-### Permissions acting on self
-
-<!-- { "blockType": "ignored"  } -->
+<!-- { 
+  "blockType": "permissions", 
+  "name": "qrcodepinauthenticationmethod_get", 
+  "requestUrls": ["GET /users/{id}/authentication/qrCodePinMethod"]
+ } -->
 [!INCLUDE [permissions-table](../includes/permissions/qrcodepinauthenticationmethod-get-permissions.md)]
-
-### Permissions acting on other users
-
-<!-- { "blockType": "ignored"  } -->
-[!INCLUDE [permissions-table](../includes/permissions/qrcodepinauthenticationmethod-get-2-permissions.md)]
 
 [!INCLUDE [rbac-authentication-methods-apis-read-others](../includes/rbac-for-apis/rbac-authentication-methods-apis-read-others.md)]
 
 ## HTTP request
 
 Retrieve your own QR Code + PIN authentication method.
+
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
+
 <!-- { "blockType": "ignored" } -->
 ``` http
 GET /me/authentication/qrCodePinMethod
 ```
 
-[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
-
 Retrieve another user's QR Code + PIN authentication method.
+
+[!INCLUDE [authentication-methods-apis-users-selfservice](../includes/authentication-methods-apis-users-selfservice.md)]
+
 <!-- { "blockType": "ignored" } -->
 ``` http
 GET /users/{id}/authentication/qrCodePinMethod
@@ -86,10 +87,6 @@ GET https://graph.microsoft.com/beta/users/7c4999f7-9c25-4f8e-8b84-766eb28a1b49/
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-qrcodepinauthenticationmethod-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-qrcodepinauthenticationmethod-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-qrcodepinauthenticationmethod-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -106,12 +103,15 @@ GET https://graph.microsoft.com/beta/users/7c4999f7-9c25-4f8e-8b84-766eb28a1b49/
 [!INCLUDE [sample-code](../includes/snippets/php/get-qrcodepinauthenticationmethod-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-qrcodepinauthenticationmethod-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/get-qrcodepinauthenticationmethod-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [permissions-management-retirement-note](../../includes/permissions-management-retirement-note.md)]
+
 Read the properties and relationships of a [permissionsCreepIndexDistribution](../resources/permissionscreepindexdistribution.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
@@ -86,10 +88,6 @@ GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-permissionscreepindexdistribution-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-permissionscreepindexdistribution-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-permissionscreepindexdistribution-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -153,3 +151,4 @@ Content-type: application/json
     }
 }
 ```
+

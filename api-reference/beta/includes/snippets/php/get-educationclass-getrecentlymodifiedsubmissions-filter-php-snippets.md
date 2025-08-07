@@ -13,7 +13,7 @@ $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestConfiguration = new GetRecentlyModifiedSubmissionsRequestBuilderGetRequestConfiguration();
 $queryParameters = GetRecentlyModifiedSubmissionsRequestBuilderGetRequestConfiguration::createQueryParameters();
-$queryParameters->filter = "status eq 'working'";
+$queryParameters->filter = "lastModifiedDateTime gt 2025-04-10T19:02:00.8753517Z";
 $requestConfiguration->queryParameters = $queryParameters;
 
 

@@ -153,10 +153,6 @@ Content-length: 1667
 [!INCLUDE [sample-code](../includes/snippets/csharp/intune-mam-iosmanagedappprotection-create-create-iosmanagedappprotection-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/intune-mam-iosmanagedappprotection-create-create-iosmanagedappprotection-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/intune-mam-iosmanagedappprotection-create-create-iosmanagedappprotection-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

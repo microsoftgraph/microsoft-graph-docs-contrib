@@ -26,6 +26,7 @@ For more information about risk events, see [Microsoft Entra ID Protection](/azu
 |[List](../api/riskyuser-list.md)|[riskyUser](../resources/riskyuser.md) collection|Get a list of the **riskyUser** objects and their properties.|
 |[Get](../api/riskyuser-get.md)|[riskyUser](../resources/riskyuser.md)|Read the properties and relationships of a **riskyUser** object.|
 |[Confirm compromised](../api/riskyuser-confirmcompromised.md)|None|Confirm one or more **riskyUser** objects as compromised.|
+|[Confirm safe](../api/riskyuser-confirmsafe.md)|None|Confirm one or more **riskyUser** objects as safe.|
 |[Dismiss](../api/riskyuser-dismiss.md)|None|Dismiss the risk of one or more **riskyUser** objects. |
 |[List history](../api/riskyuser-list-history.md)|[riskyUserHistoryItem](../resources/riskyuserhistoryitem.md) collection|Get the **riskyUserHistoryItems** from the history navigation property.|
 

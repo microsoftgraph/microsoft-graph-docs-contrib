@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
 ms.date: 07/22/2024
+ms.custom: sfi-ga-nochange
 ---
 
 # userRegistrationMethodSummary resource type

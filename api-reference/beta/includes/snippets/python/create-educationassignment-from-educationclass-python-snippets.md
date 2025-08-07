@@ -14,8 +14,9 @@ from msgraph_beta.generated.models.education_assignment_class_recipient import E
 from msgraph_beta.generated.models.education_assignment_status import EducationAssignmentStatus
 # To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = EducationAssignment(
-	due_date_time = "2022-09-16T00:00:00Z",
-	display_name = "Reading test 09.14 Beta",
+	due_date_time = "2025-09-16T00:00:00Z",
+	display_name = "Reading test 09.14",
+	language_tag = "es-MX",
 	instructions = EducationItemBody(
 		content_type = BodyType.Text,
 		content = "Read chapter 4",

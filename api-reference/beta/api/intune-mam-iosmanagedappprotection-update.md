@@ -12,7 +12,7 @@ ms.date: 08/01/2024
 
 Namespace: microsoft.graph
 
-> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
+> **Important:** Microsoft supports Intune /beta APIs, but they are subject to more frequent change. Microsoft recommends using version v1.0 when possible. Check an API's availability in version v1.0 using the Version selector.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -108,6 +108,9 @@ The following table shows the properties that are required when you create the [
 |isAssigned|Boolean|Indicates if the policy is deployed to any inclusion groups or not. Inherited from [targetedManagedAppProtection](../resources/intune-mam-targetedmanagedappprotection.md)|
 |targetedAppManagementLevels|[appManagementLevel](../resources/intune-mam-appmanagementlevel.md)|The intended app management levels for this policy Inherited from [targetedManagedAppProtection](../resources/intune-mam-targetedmanagedappprotection.md). Possible values are: `unspecified`, `unmanaged`, `mdm`, `androidEnterprise`, `androidEnterpriseDedicatedDevicesWithAzureAdSharedMode`, `androidOpenSourceProjectUserAssociated`, `androidOpenSourceProjectUserless`, `unknownFutureValue`.|
 |appGroupType|[targetedManagedAppGroupType](../resources/intune-mam-targetedmanagedappgrouptype.md)|Public Apps selection: group or individual Inherited from [targetedManagedAppProtection](../resources/intune-mam-targetedmanagedappprotection.md). Possible values are: `selectedPublicApps`, `allCoreMicrosoftApps`, `allMicrosoftApps`, `allApps`.|
+|genmojiConfigurationState|[genmojiIosManagedAppConfigurationState](../resources/intune-mam-genmojiiosmanagedappconfigurationstate.md)|Configuration state (blocked or not blocked) for Apple Intelligence Genmoji setting. Possible values are: `notBlocked`, `blocked`, `unknownFutureValue`.|
+|screenCaptureConfigurationState|[screenCaptureIosManagedAppConfigurationState](../resources/intune-mam-screencaptureiosmanagedappconfigurationstate.md)|Configuration state (blocked or not blocked) for Apple Intelligence screen capture setting. Possible values are: `notBlocked`, `blocked`, `unknownFutureValue`.|
+|writingToolsConfigurationState|[writingToolsIosManagedAppConfigurationState](../resources/intune-mam-writingtoolsiosmanagedappconfigurationstate.md)|Configuration state (blocked or not blocked) for Apple Intelligence writing tools setting. Possible values are: `notBlocked`, `blocked`, `unknownFutureValue`.|
 |appDataEncryptionType|[managedAppDataEncryptionType](../resources/intune-mam-managedappdataencryptiontype.md)|Type of encryption which should be used for data in a managed app. Possible values are: `useDeviceSettings`, `afterDeviceRestart`, `whenDeviceLockedExceptOpenFiles`, `whenDeviceLocked`.|
 |minimumRequiredSdkVersion|String|Versions less than the specified version will block the managed app from accessing company data.|
 |deployedAppCount|Int32|Count of apps to which the current policy is deployed.|
@@ -141,7 +144,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/iosManagedAppProtections/{iosManagedAppProtectionId}
 Content-type: application/json
-Content-length: 3918
+Content-length: 4058
 
 {
   "@odata.type": "#microsoft.graph.iosManagedAppProtection",
@@ -205,6 +208,9 @@ Content-length: 3918
   "isAssigned": true,
   "targetedAppManagementLevels": "unmanaged",
   "appGroupType": "allCoreMicrosoftApps",
+  "genmojiConfigurationState": "blocked",
+  "screenCaptureConfigurationState": "blocked",
+  "writingToolsConfigurationState": "blocked",
   "appDataEncryptionType": "afterDeviceRestart",
   "minimumRequiredSdkVersion": "Minimum Required Sdk Version value",
   "deployedAppCount": 0,
@@ -243,7 +249,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 4090
+Content-Length: 4230
 
 {
   "@odata.type": "#microsoft.graph.iosManagedAppProtection",
@@ -310,6 +316,9 @@ Content-Length: 4090
   "isAssigned": true,
   "targetedAppManagementLevels": "unmanaged",
   "appGroupType": "allCoreMicrosoftApps",
+  "genmojiConfigurationState": "blocked",
+  "screenCaptureConfigurationState": "blocked",
+  "writingToolsConfigurationState": "blocked",
   "appDataEncryptionType": "afterDeviceRestart",
   "minimumRequiredSdkVersion": "Minimum Required Sdk Version value",
   "deployedAppCount": 0,

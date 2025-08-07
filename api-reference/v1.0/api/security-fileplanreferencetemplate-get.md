@@ -66,10 +66,6 @@ GET https://graph.microsoft.com/v1.0/security/labels/filePlanReferences/b1f7b518
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-fileplanreferencetemplate-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-fileplanreferencetemplate-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-fileplanreferencetemplate-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

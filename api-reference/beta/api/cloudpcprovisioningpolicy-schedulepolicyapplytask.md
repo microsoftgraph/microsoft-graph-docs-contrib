@@ -53,6 +53,9 @@ The following table shows the properties that can be supplied when you schedule 
 |:---|:---|:---|
 |reservePercentage|Int32|For `Frontline shared` only. The percentage of Cloud PCs to keep available. Administrators can set this property to a value from 0 to 99. Cloud PCs are reprovisioned only when there are no active and connected Cloud PC users.|
 |cronScheduleExpression|String|Administrators can set a cron expression to define the scheduling rules for automatic regular apply. When auto provision is disabled, `cronScheduleExpression` is set to null, stopping the automatic task scheduling (ex. "0 0 0 20 * *" means schedules a job to run at midnight on the 20th of every month). Read-only.|
+|startDateTime|String|Indicates IT Admins can set a start date to define the first scheduler run after this time. If not set, default is current time. There are no time zone information at this time, it needs to be coordinated with `timezone`, for example, "2025-01-01 00:00:00" with "China Standard Time" means the scheduling rule will take effect after Jan 01 2025 00:00:00 GMT+0800 (China Standard Time).|
+|endDateTime|String|Indicates IT Admins can set an end date to define the last scheduler run before this time. If not set, the scheduler runs continuously. There are no time zone information at this time, it needs to be coordinated with `timezone`, for example, "2025-02-01 00:00:00" with "China Standard Time" means the scheduling rule will take effect before Feb 01 2025 00:00:00 GMT+0800 (China Standard Time).|
+|timezone|cloudPcPolicyTimezone|Indicates IT Admins can set a timezone to define the timezone of `nextRunDateTime`, `startDateTime`, `endDateTime`, default is `gmt`. Possible values are `gmt`, `bit`, `nut`, `hst`, `mit`, `akst`, `pst`, `mst`, `east`, `est`, `ast`, `nst`, `art`, `gst`, `azot`, `cet`, `cat`, `eat`, `get`, `pkt`, `ist`, `bst`, `tha`, `cst`, `jst`, `acst`, `pgt`, `sbt`, `fjt`, `tot`, `lint`, and `unknownFutureValue`.|
 
 ## Response
 
@@ -76,17 +79,16 @@ POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/provision
 
 {
   "reservePercentage": 50,
-  "cronScheduleExpression": "0 0 0 20 * *"
+  "cronScheduleExpression": "0 0 0 20 * *",
+  "startDateTime": "2025-03-12 00:00:00",
+  "endDateTime": null,
+  "timezone": "cst"
 }
 
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/cloudpcprovisioningpolicy-schedulepolicyapplytask-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/cloudpcprovisioningpolicy-schedulepolicyapplytask-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

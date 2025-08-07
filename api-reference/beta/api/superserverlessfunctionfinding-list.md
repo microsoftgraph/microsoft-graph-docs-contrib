@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [permissions-management-retirement-note](../../includes/permissions-management-retirement-note.md)]
+
 Get a list of the [superServerlessFunctionFinding](../resources/superserverlessfunctionfinding.md) objects and their properties.
 
 ## Permissions
@@ -82,10 +84,6 @@ GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/azu
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-superserverlessfunctionfinding-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/list-superserverlessfunctionfinding-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -172,4 +170,5 @@ Content-Type: application/json
   ]
 }
 ```
+
 
