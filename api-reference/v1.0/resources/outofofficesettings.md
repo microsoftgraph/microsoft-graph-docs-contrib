@@ -1,6 +1,6 @@
 ---
 title: "outOfOfficeSettings resource type"
-description: "Represents the out of office message information for a user presence entity"
+description: "Represents the out-of-office settings related to the presence of a user."
 author: "garchiro7"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
@@ -12,14 +12,14 @@ ms.date: 07/15/2025
 
 Namespace: microsoft.graph
 
-Represents the out of office settings related to the [presence](presence.md) of a user.
+Represents the out-of-office settings related to the [presence](presence.md) of a user.
 
 ## Properties
 
 | Property            | Type    | Description                                                                    |
 |:--------------------|:--------|:-------------------------------------------------------------------------------|
-| message           | String  | The out of office message that the user configured on Outlook client (Automatic Replies (Out of Office)) or the Teams client (Schedule out of office). |
-| isOutOfOffice      | Boolean  | True if either:</br><ul><li>It's currently in the out of office time window configured on the Outlook or Teams client.</li><li>Thert's currently an event on the user's calendar that's mark as Show as Out of Office</li></ul></br>Otherwise, false. |
+| isOutOfOffice      | Boolean  | True if either of the following is met::</br><ul><li>The current time falls within the out-of-office window configured in Outlook or Teams.</li><li>An event marked as "Show as Out of Office" appears on the user's calendar.</li></ul></br>Otherwise, false. |
+| message           | String  | The out-of-office message configured by the user in the Outlook client (Automatic Replies) or the Teams client (Schedule out of office). |
 
 ## Relationships
 None.
@@ -36,7 +36,7 @@ The following JSON representation shows the resource type.
 }-->
 ```json
 {
-  "message": "String",
-  "isOutOfOffice": "Boolean"
+  "isOutOfOffice": "Boolean",
+  "message": "String"
 }
 ```
