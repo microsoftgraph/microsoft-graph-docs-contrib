@@ -4,7 +4,7 @@ description: "Create a new sectionMap object in IMDF format."
 author: tiwarisakshi02
 ms.date: 06/12/2025
 ms.localizationpriority: medium
-ms.subservice: 
+ms.subservice: outlook
 doc_type: apiPageType
 ---
 
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [sectionMap](../resources/sectionmap.md) object in IMDF format.
+Create a new [section](../resources/sectionmap.md) on a given floor.
 
 ## Permissions
 
@@ -34,10 +34,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-PATCH places/{buildingPlaceId}/microsoft.graph.building/map/levels/{levelImdfID}/section/{sectionImdfID}
+PATCH /places/{buildingPlaceId}/microsoft.graph.building/map/levels/{levelImdfID}/section/{sectionImdfID}
 ```
 
-{buildingPlaceId} – **id** of a building with which this [levelmap](../resources/levelmap.md) is associated.
+{buildingPlaceId} – **id** of a building with which this [section](../resources/sectionmap.md) is associated.
 
 {levelImdfId}- **id** of the level in the IMDF file.
 
@@ -54,12 +54,12 @@ PATCH places/{buildingPlaceId}/microsoft.graph.building/map/levels/{levelImdfID}
 
 In the request body, supply a JSON representation of the [sectionMap](../resources/sectionmap.md) object.
 
-You can specify the following properties when creating a **sectionMap**.
+You can specify the following properties when creating the map of a **section**.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|properties|String|Concatenated key-value pair of all properties of a geojson file for this **levelMap**. Inherited from [baseMapFeature](../resources/basemapfeature.md). Optional.|
-|placeId|String|Identifier for the [floor](../resources/floor.md) to which this **levelMap** belongs. Optional.|
+|properties|String|Concatenated key-value pair of all properties of a geojson file for this **section**. Inherited from [baseMapFeature](../resources/basemapfeature.md). Optional.|
+|placeId|String|Identifier for the [floor](../resources/floor.md) to which this **section** belongs. Optional.|
 
 
 
