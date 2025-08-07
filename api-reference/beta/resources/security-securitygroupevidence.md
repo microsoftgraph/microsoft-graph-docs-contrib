@@ -57,6 +57,6 @@ The following JSON representation shows the resource type.
   "distinguishedName": "String",
   "displayName": "String",
   "friendlyName": "String",
-  "groupObjectId": "Guid"
+  "activeDirectoryObjectGuid": "Guid"
 }
 ```
