@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: "exchange"
 doc_type: conceptualPageType
 ms.date: 07/11/2025
+ms.topic: upgrade-and-migration-article
 ---
 
 # Migrate Exchange Web Services (EWS) apps to Microsoft Graph

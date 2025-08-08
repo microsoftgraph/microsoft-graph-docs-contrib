@@ -6,6 +6,7 @@ ms.localizationpriority: high
 ms.subservice: "outlook"
 ms.custom: scenarios:getting-started
 ms.date: 11/07/2024
+ms.topic: concept-article
 ---
 
 # Outlook calendar API overview
@@ -43,7 +44,7 @@ The calendar API helps customers navigate their day and enhance productivity:
 <!-- change link to notifications to the concept topic once it's created. In general, try staying in the conceptual level in these overview topics, if conceptual topics are available for the link destination.
 -->
 
-- You can keep the app local store synchronized by subscribing to [change notifications](/graph/api/resources/webhooks) and [tracking changes to events](delta-query-events.md) in a user's calendar.
+- You can keep the app local store synchronized by subscribing to [change notifications](/graph/api/resources/change-notifications-api-overview) and [tracking changes to events](delta-query-events.md) in a user's calendar.
 - You can display the user's agenda based on a light-weight [reminder view](/graph/api/user-reminderview).
 - You can let the user conveniently [accept](/graph/api/event-accept) and take a meeting online through its **webLink** property, which opens the meeting in Outlook on the web.
 - Users can also [tentatively accept](/graph/api/event-tentativelyaccept) or [decline](/graph/api/event-decline) a meeting while on the go.

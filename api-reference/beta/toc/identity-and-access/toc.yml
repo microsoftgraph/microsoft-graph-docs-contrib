@@ -468,9 +468,9 @@ items:
       href: ../../api/onpremisesdirectorysynchronization-get.md
     - name: Update
       href: ../../api/onpremisesdirectorysynchronization-update.md
-  - name: On-premises sync behavior
+  - name: On-premises sync behavior (Source of Authority)
     items:
-    - name: On-premises sync behavior
+    - name: On-premises sync behavior (Source of Authority)
       href: ../../resources/onpremisessyncbehavior.md
     - name: Get
       href: ../../api/onpremisessyncbehavior-get.md
@@ -979,8 +979,6 @@ items:
         href: ../../api/appconsentapprovalroute-list-appconsentrequests.md
       - name: Get
         href: ../../api/appconsentrequest-get.md
-      - name: Filter by current user
-        href: ../../api/appconsentrequest-filterByCurrentUser.md
     - name: User consent request
       items:
       - name: User consent request
@@ -2114,6 +2112,18 @@ items:
         href: ../../api/emailauthenticationmethod-update.md
       - name: Delete
         href: ../../api/emailauthenticationmethod-delete.md
+    - name: External authentication method
+      items:
+      - name: External authentication method
+        href: ../../resources/externalauthenticationmethod.md
+      - name: List
+        href: ../../api/authentication-list-externalauthenticationmethods.md
+      - name: Create
+        href: ../../api/authentication-post-externalauthenticationmethods.md
+      - name: Get
+        href: ../../api/externalauthenticationmethod-get.md
+      - name: Delete
+        href: ../../api/authentication-delete-externalauthenticationmethods.md
     - name: FIDO2
       items:
       - name: FIDO2
@@ -2265,8 +2275,6 @@ items:
           href: ../../api/qrcode-update.md
         - name: Get
           href: ../../api/qrcode-get.md
-        - name: Update
-          href: ../../api/qrcode-update.md
         - name: Delete
           href: ../../api/qrcode-delete.md
       - name: PIN
@@ -4180,6 +4188,18 @@ items:
         href: ../../resources/networkaccess-remotenetworkconnectivityconfiguration.md
       - name: Get
         href: ../../api/networkaccess-remotenetworkconnectivityconfiguration-get.md
+  - name: Alert
+    items:
+    - name: Alert
+      href: ../../resources/networkaccess-alert.md
+    - name: List
+      href: ../../api/networkaccess-networkaccessroot-list-alerts.md
+    - name: Get alert severity summaries
+      href: ../../api/networkaccess-alert-getalertseveritysummaries.md
+    - name: Get alert frequencies
+      href: ../../api/networkaccess-alert-getalertfrequencies.md
+    - name: Get alert summaries
+      href: ../../api/networkaccess-alert-getalertsummaries.md
   - name: Settings
     items:
     - name: Cross-tenant access settings

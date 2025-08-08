@@ -6,6 +6,7 @@ doc_type: conceptualPageType
 ms.subservice: search
 ms.localizationpriority: medium
 ms.date: 11/07/2024
+ms.topic: how-to
 ---
 
 # Use external groups to manage permissions to Copilot connectors data sources

@@ -7,6 +7,7 @@ doc_type: conceptualPageType
 ms.subservice: search
 description: "Learn how to troubleshoot issues with the Copilot connectors SDK."
 ms.date: 11/07/2024
+ms.topic: troubleshooting-general
 ---
 
 # Troubleshoot issues with the Copilot connectors SDK

@@ -6,6 +6,7 @@ ms.localizationpriority: high
 ms.subservice: "people"
 ms.custom: scenarios:getting-started
 ms.date: 01/05/2025
+ms.topic: how-to
 ---
 
 # Manage pronunciation settings for an organization

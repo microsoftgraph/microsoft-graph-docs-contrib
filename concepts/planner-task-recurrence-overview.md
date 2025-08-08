@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: "planner"
 doc_type: conceptualPageType
 ms.date: 11/07/2024
+ms.topic: concept-article
 ---
 
 # Configuring task recurrence in Planner (preview)
@@ -145,7 +146,7 @@ Note the difference of Thursday 2/10 vs. Thursday 2/3. When **firstDayOfWeek** =
 
 ### Notes about the schedule and due date
 
-The **dueDateTime** may be edited by clients to have a different value (including `null`), without affecting the schedule and the **nextOccurrenceDateTime**. For example, if a task is late and the due date is changed to accommodate that lateness, the next task in the series appears as originally scheduled, unless the **pattern** and/or the **patternStartDateTime** are explicitly updated. Hence, postponing the due date doesn't result in _skipping dates_ according to the defined schedule. This differs from a _meeting_ model, where _today's date_ plays a role in determining when the next meeting occurs. Knowing _today's date_ is relevant for calculating the next meeting or event date, but it isn't relevant for calculating the next task due date.
+The **dueDateTime** might be edited by clients to have a different value (including `null`), without affecting the schedule and the **nextOccurrenceDateTime**. For example, if a task is late and the due date is changed to accommodate that lateness, the next task in the series appears as originally scheduled, unless the **pattern** and/or the **patternStartDateTime** are explicitly updated. Hence, postponing the due date doesn't result in _skipping dates_ according to the defined schedule. This differs from a _meeting_ model, where _today's date_ plays a role in determining when the next meeting occurs. Knowing _today's date_ is relevant for calculating the next meeting or event date, but it isn't relevant for calculating the next task due date.
 
 #### Example 1: Changing the pattern with and without changes to patternStartDateTime
 
@@ -292,7 +293,7 @@ The **recurrence.seriesId** property on each **plannerTask** is an identifier th
 > **Note:**
 >
 > - If some tasks in the series have been deleted, the indices might contain gaps.
-> - If users have moved the recurring series to a different plan, then you need to look in other plans to see other tasks in the series; however, users are typically primarily interested in the recurring series within one plan. Tasks may not be moved across group boundaries; if all the plans in a group are queried, you can find all the tasks that could have been moved out of the original plan.
+> - If users have moved the recurring series to a different plan, then you need to look in other plans to see other tasks in the series; however, users are typically primarily interested in the recurring series within one plan. Tasks might not be moved across group boundaries; if all the plans in a group are queried, you can find all the tasks that could have been moved out of the original plan.
 
 ## REST operation examples
 
