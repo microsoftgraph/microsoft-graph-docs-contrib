@@ -34,8 +34,6 @@ Get a deleted **crossTenantAccessPolicyConfigurationPartner** object:
 GET /policies/deletedItems/crossTenantPartners/{id}
 ```
 
-## HTTP request
-
 Get a deleted **crossTenantIdentitySyncPolicyPartner** object:
 <!-- {
   "blockType": "ignored"
@@ -121,6 +119,7 @@ Content-Type: application/json
   }
 }
 ```
+
 ### Request
 
 The following example shows a request for a crossTenantIdentitySyncPolicyPartner.

@@ -8,7 +8,7 @@ ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
-# crossTenantIdentitySyncPolicyPartner: restore
+# Restore crossTenantIdentitySyncPolicyPartner
 
 Namespace: microsoft.graph
 
