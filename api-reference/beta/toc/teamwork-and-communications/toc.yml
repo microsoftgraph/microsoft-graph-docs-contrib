@@ -430,22 +430,6 @@ items:
         href: ../../resources/callrecords-smslogrow.md
       - name: Get SMS log
         href: ../../api/callrecords-callrecord-getsmslog.md
-  - name: Copilot settings
-    items:
-    - name: Copilot admin limited mode
-      items:
-      - name: Copilot admin limited mode
-        href: ../../resources/copilotadminlimitedmode.md
-      - name: Get
-        href: ../../api/copilotadminlimitedmode-get.md
-      - name: Update
-        href: ../../api/copilotadminlimitedmode-update.md
-    - name: Complex types
-      items:
-      - name: Copilot admin
-        href: ../../resources/copilotadmin.md
-      - name: Copilot admin setting
-        href: ../../resources/copilotadminsetting.md
   - name: Online meetings
     items:
     - name: Meeting attendance report
@@ -476,8 +460,6 @@ items:
         href: ../../api/onlinemeeting-delete.md
       - name: Create or get
         href: ../../api/onlinemeeting-createorget.md
-      - name: List AI insights
-        href: ../../api/onlinemeeting-list-aiinsights.md
       - name: List recordings
         href: ../../api/onlinemeeting-list-recordings.md
       - name: List transcripts
@@ -512,14 +494,6 @@ items:
         href: ../../api/meetingregistration-update.md
       - name: Delete
         href: ../../api/meetingregistration-delete.md
-    - name: Call AI insight
-      items:
-      - name: Call AI insight
-        href: ../../resources/callaiinsight.md
-      - name: List
-        href: ../../api/onlinemeeting-list-aiinsights.md
-      - name: Get
-        href: ../../api/callaiinsight-get.md
     - name: Call recording
       items:
       - name: Call recording
@@ -554,20 +528,8 @@ items:
         href: ../../api/virtualappointment-sendvirtualappointmentsms.md
     - name: Complex types
       items:
-      - name: Action item
-        href: ../../resources/actionitem.md
-      - name: AI online meeting
-        href: ../../resources/aionlinemeeting.md
-      - name: Call AI insight viewpoint
-        href: ../../resources/callaiinsightviewpoint.md
       - name: Identity set
         href: ../../resources/identityset.md
-      - name: Meeting note
-        href: ../../resources/meetingnote.md
-      - name: Meeting note subpoint
-        href: ../../resources/meetingnotesubpoint.md
-      - name: Mention event
-        href: ../../resources/mentionevent.md
   - name: Virtual events
     items:
     - name: Virtual event presenter
