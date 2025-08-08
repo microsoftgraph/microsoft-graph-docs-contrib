@@ -7,7 +7,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "activeDirectoryObjectGuid",
           "ChangeType": "Addition",
-          "Description": "Added the **activeDirectoryObjectGuid** property to the [securityGroupEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-securityGroupEvidence?view=graph-rest-1.0) resource.",
+          "Description": "Added the **activeDirectoryObjectGuid** property to the [securityGroupEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-securitygroupevidence?view=graph-rest-1.0) resource.",
           "Target": "securityGroupEvidence"
         },
         {
@@ -15,7 +15,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "distinguishedName",
           "ChangeType": "Addition",
-          "Description": "Added the **distinguishedName** property to the [securityGroupEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-securityGroupEvidence?view=graph-rest-1.0) resource.",
+          "Description": "Added the **distinguishedName** property to the [securityGroupEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-securitygroupevidence?view=graph-rest-1.0) resource.",
           "Target": "securityGroupEvidence"
         },
         {
@@ -23,7 +23,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "friendlyName",
           "ChangeType": "Addition",
-          "Description": "Added the **friendlyName** property to the [securityGroupEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-securityGroupEvidence?view=graph-rest-1.0) resource.",
+          "Description": "Added the **friendlyName** property to the [securityGroupEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-securitygroupevidence?view=graph-rest-1.0) resource.",
           "Target": "securityGroupEvidence"
         },
         {
@@ -31,7 +31,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "sid",
           "ChangeType": "Addition",
-          "Description": "Added the **sid** property to the [securityGroupEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-securityGroupEvidence?view=graph-rest-1.0) resource.",
+          "Description": "Added the **sid** property to the [securityGroupEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-securitygroupevidence?view=graph-rest-1.0) resource.",
           "Target": "securityGroupEvidence"
         },
         {
@@ -39,7 +39,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "activeDirectoryObjectGuid",
           "ChangeType": "Addition",
-          "Description": "Added the **activeDirectoryObjectGuid** property to the [userAccount](https://learn.microsoft.com/en-us/graph/api/resources/security-userAccount?view=graph-rest-1.0) resource.",
+          "Description": "Added the **activeDirectoryObjectGuid** property to the [userAccount](https://learn.microsoft.com/en-us/graph/api/resources/security-useraccount?view=graph-rest-1.0) resource.",
           "Target": "userAccount"
         }
       ],
