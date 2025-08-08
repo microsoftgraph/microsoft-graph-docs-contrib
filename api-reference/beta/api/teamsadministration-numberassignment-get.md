@@ -57,9 +57,10 @@ If successful, this method returns a `200 OK` response code and a [microsoft.gra
 
 ## Examples
 
-Get assignment details for a single telephone number using the id
-
 ### Request
+
+The following request shows how to get assignment details for a single telephone number using the ID. 
+
 <!-- {
   "blockType": "request",
   "name": "get_numberAssignments",
