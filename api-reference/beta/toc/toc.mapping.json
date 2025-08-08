@@ -2307,6 +2307,11 @@
             "skillProficiency",
             "webAccount",
             "personWebsite"
+          ],
+          "complexTypes": [
+            "companyDetail",
+            "originTenantInfo",
+            "positionDetail"
           ]
         },
         {
