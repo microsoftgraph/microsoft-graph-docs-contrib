@@ -13,14 +13,14 @@ ms.date: 11/30/2024
 
 Namespace: microsoft.graph
 
-Validate if a Microsoft 365 [group's](../resources/group.md) display name or mail nickname complies with naming policies. Clients can use the API to determine if a display name or mail nickname is valid before trying to **update** a Microsoft 365 group. For validating properties before creating a group, use the [validateProperties function](directoryobject-validateproperties.md) for directory objects.
+Validate if a Microsoft 365 [Group's](../resources/group.md) display name or mail nickname complies with naming policies. Clients can use the API to determine if a display name or mail nickname is valid before trying to **update** a Microsoft 365 Group. For validating properties before creating a group, use the [validateProperties function](directoryobject-validateproperties.md) for directory objects.
 
 The following validations are performed for the display name and mail nickname properties:
 
 1. Validate the prefix and suffix naming policy
 2. Validate the custom banned words policy
 
-This API returns with the first failure encountered. If one or more properties fail multiple validations, only the property with the first validation failure is returned. However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you are only validating the prefix and suffix naming policy.
+This API returns with the first failure encountered. If one or more properties fail multiple validations, only the property with the first validation failure is returned. However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you're only validating the prefix and suffix naming policy.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -52,8 +52,8 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter        | Type   | Description                                                                                                                                                      |
 | :--------------- | :----- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| displayName      | String | The display name of the group to validate. The property is not individually required. However, at least one property (displayName or mailNickname) is required.  |
-| mailNickname     | String | The mail nickname of the group to validate. The property is not individually required. However, at least one property (displayName or mailNickname) is required. |
+| displayName      | String | The display name of the group to validate. The property isn't individually required. However, at least one property (displayName or mailNickname) is required.  |
+| mailNickname     | String | The mail nickname of the group to validate. The property isn't individually required. However, at least one property (displayName or mailNickname) is required. |
 | onBehalfOfUserId | Guid   | The object ID of the user to impersonate when calling the API. The validation results are for the onBehalfOfUserId's attributes and roles.                       |
 
 ## Response
@@ -62,7 +62,7 @@ If successful and there are no validation errors, the method returns `204 No Con
 
 If the request is invalid, the method returns `400 Bad Request` response code. An error message with details about the invalid request is returned in the response body.
 
-If there is a validation error. The method returns `422 Unprocessable Entity` response code. An error message and a collection of error details is returned in the response body.
+If there's a validation error, the method returns `422 Unprocessable Entity` response code. An error message and a collection of error details is returned in the response body.
 
 ## Examples
 
@@ -176,8 +176,5 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: directoryobjectvalidatepropertiesinvalidrequest:
-        Unable to locate the corresponding response for this method. Missing or incorrect code block annotation."
-  ]
+  "suppressions": []
 }-->

@@ -34,10 +34,6 @@ items:
     href: ../../api/user-revokesigninsessions.md
   - name: Export personal data
     href: ../../api/user-exportpersonaldata.md
-  - name: AI interaction
-    items:
-    - name: Get all enterprise interactions
-      href: ../../api/aiinteractionhistory-getallenterpriseinteractions.md
   - name: App role assignments
     items:
     - name: List
