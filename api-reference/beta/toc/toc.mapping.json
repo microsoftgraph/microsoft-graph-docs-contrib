@@ -3451,7 +3451,8 @@
     {
       "resource": "incidentTask",
       "overview": "../../resources/security-incidenttask.md"
+    } 
+     ]
     }
   ]
 }
-  
