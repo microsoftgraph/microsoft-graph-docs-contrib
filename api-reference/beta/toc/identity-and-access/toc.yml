@@ -2671,6 +2671,14 @@ items:
         href: ../../api/crosstenantaccesspolicyconfigurationpartner-update.md
       - name: Delete
         href: ../../api/crosstenantaccesspolicyconfigurationpartner-delete.md
+      - name: List deleted policies
+        href: ../../api/policydeletableitem-list.md
+      - name: Get deleted policies
+        href: ../../api/policydeletableitem-get.md
+      - name: Permanently delete deleted policies
+        href: ../../api/policydeletableitem-delete.md
+      - name: Restore deleted policies
+        href: ../../api/crosstenantaccesspolicyconfigurationpartner-restore.md
     - name: Partner user sync settings
       items:
       - name: Partner user sync settings
@@ -2683,6 +2691,14 @@ items:
         href: ../../api/crosstenantidentitysyncpolicypartner-update.md
       - name: Delete
         href: ../../api/crosstenantidentitysyncpolicypartner-delete.md
+      - name: Restore
+        href: ../../api/crosstenantidentitysyncpolicypartner-restore.md
+      - name: List deleted policies
+        href: ../../api/policydeletableitem-list.md
+      - name: Get deleted policies
+        href: ../../api/policydeletableitem-get.md
+      - name: Permanently delete deleted policies
+        href: ../../api/policydeletableitem-delete.md
   - name: Cross-tenant shared user profiles
     items:
     - name: Inbound shared user profile
