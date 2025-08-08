@@ -27,10 +27,10 @@ Inherits from [policyDeletableItem](../resources/policydeletableitem.md).
 |[Get](../api/crosstenantidentitysyncpolicypartner-get.md)|[crossTenantIdentitySyncPolicyPartner](../resources/crosstenantidentitysyncpolicypartner.md)|Get the user synchronization policy of a partner-specific configuration.|
 |[Update](../api/crosstenantidentitysyncpolicypartner-update.md)|None|Update the user synchronization policy of a partner-specific configuration.|
 |[Delete](../api/crosstenantidentitysyncpolicypartner-delete.md)|None|Delete the user synchronization policy for a partner-specific configuration.|
-|[Restore](../api/crosstenantidentitysyncpolicypartner-restore.md)|None|Restore the user synchronization policy for a partner-specific configuration.|
 | [List deleted policies](../api/policydeletableitem-list.md) | None | List all deleted partner-specific configuration policies. |
 | [Get deleted policies](../api/policydeletableitem-get.md) | None | Get a single deleted partner-specific configuration policy. |
 | [Permanently delete deleted policies](../api/policydeletableitem-delete.md) | None | Permanently delete a deleted partner-specific configuration policy. |
+|[Restore deleted policies](../api/crosstenantidentitysyncpolicypartner-restore.md)|[crossTenantIdentitySyncPolicyPartner](../resources/crosstenantidentitysyncpolicypartner.md)|Restore the user synchronization policy for a partner-specific configuration.|
 
 ## Properties
 
@@ -43,9 +43,7 @@ Inherits from [policyDeletableItem](../resources/policydeletableitem.md).
 
 ## Relationships
 
-|Relationship|Type|Description|
-|:---|:---|:---|
-|deletedDateTime|DateTimeOffset|Shows the last date and time the policy was deleted.|
+None.
 
 ## JSON representation
 The following JSON representation shows the resource type.
@@ -60,8 +58,10 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.crossTenantIdentitySyncPolicyPartner",
-  "displayName": "String",
+  "deletedDateTime": "String (timestamp)",
   "tenantId": "String (identifier)",
+  "displayName": "String",
+  "externalCloudAuthorizedApplicationId": "String",
   "userSyncInbound": {
     "@odata.type": "microsoft.graph.crossTenantUserSyncInbound"
   }

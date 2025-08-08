@@ -33,7 +33,7 @@ Inherits from [policyDeletableItem](../resources/policydeletableitem.md).
 | [List deleted policies](../api/policydeletableitem-list.md) | None | List all deleted partner-specific configuration policies. |
 | [Get deleted policies](../api/policydeletableitem-get.md) | None | Get a single deleted partner-specific configuration policy. |
 | [Permanently delete deleted policies](../api/policydeletableitem-delete.md) | None | Permanently delete a deleted partner-specific configuration policy. |
-| [Restore deleted policies](../api/crosstenantaccesspolicyconfigurationpartner-restore.md) | None | Restore the partner-specific configuration policy. |
+|[Restore deleted policies](../api/crosstenantaccesspolicyconfigurationpartner-restore.md)|[crossTenantAccessPolicyConfigurationPartner](../resources/crosstenantaccesspolicyconfigurationpartner.md)| Restore the partner-specific configuration policy. |
 
 ## Properties
 
@@ -56,7 +56,6 @@ Inherits from [policyDeletableItem](../resources/policydeletableitem.md).
 |Relationship|Type|Description|
 |:---|:---|:---|
 |identitySynchronization|[crossTenantIdentitySyncPolicyPartner](../resources/crosstenantidentitysyncpolicypartner.md)|Defines the cross-tenant policy for the synchronization of users from a partner tenant. Use this user synchronization policy to streamline collaboration between users in a multitenant organization by automating the creation, update, and deletion of users from one tenant to another.|
-|deletedDateTime|DateTimeOffset|Shows the last date and time the policy was deleted.|
 
 ## JSON representation
 
@@ -72,6 +71,13 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.crossTenantAccessPolicyConfigurationPartner",
+  "deletedDateTime": "String (timestamp)",
+  "tenantId": "String (identifier)",
+  "isServiceProvider": "Boolean",
+  "isInMultiTenantOrganization": "Boolean",
+  "inboundTrust": {
+    "@odata.type": "microsoft.graph.crossTenantAccessPolicyInboundTrust"
+  },
   "automaticUserConsentSettings": {"@odata.type": "microsoft.graph.inboundOutboundPolicyConfiguration"},
   "b2bCollaborationInbound": {"@odata.type": "microsoft.graph.crossTenantAccessPolicyB2BSetting"},
   "b2bCollaborationOutbound": {"@odata.type": "microsoft.graph.crossTenantAccessPolicyB2BSetting"},

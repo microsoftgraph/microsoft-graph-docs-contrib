@@ -1,6 +1,6 @@
 ---
 title: "Restore crossTenantIdentitySyncPolicyPartner"
-description: "Restore the user synchronization policy for a partner-specific configuration."
+description: "Restore a deleted crossTenantIdentitySyncPolicyPartner object."
 author: "ashyasingh"
 ms.date: 06/18/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Restore the user synchronization policy for a partner-specific configuration.
+Restore a deleted crossTenantIdentitySyncPolicyPartner object.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

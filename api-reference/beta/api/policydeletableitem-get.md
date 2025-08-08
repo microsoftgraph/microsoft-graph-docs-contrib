@@ -22,6 +22,12 @@ Read the properties and relationships of a **policyDeletableItem** object, which
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
+<!-- {
+  "blockType": "permissions",
+  "name": "policydeletableitem-list-permissions"
+}
+-->
+[!INCLUDE [permissions-table](../includes/permissions/policydeletableitem-list-permissions.md)]
 
 ## HTTP request
 
@@ -45,7 +51,7 @@ GET /policies/deletedItems/crossTenantSyncPolicyPartners/{id}
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+Not supported.
 
 ## Request headers
 
@@ -53,7 +59,7 @@ This method supports some of the OData query parameters to help customize the re
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
-## Request body
+If successful, this method returns a `200 OK` response code and a [policyDeletableItem](../resources/policydeletableitem.md) object in the response body. The `@odata.context` property in the request body indicates which type of policy is returned.
 
 Don't supply a request body for this method.
 

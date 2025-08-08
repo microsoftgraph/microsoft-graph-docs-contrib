@@ -1,6 +1,6 @@
 ---
 title: "Restore crossTenantAccessPolicyConfigurationPartner"
-description: "Restore a partner-specific configuration in a cross-tenant access policy."
+description: "Restore a deleted crossTenantAccessPolicyConfigurationPartner object."
 author: "ashyasingh"
 ms.date: 06/18/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Restore a [partner-specific configuration](../resources/crosstenantaccesspolicyconfigurationpartner.md) in a cross-tenant access policy. 
+Restore a deleted [crossTenantAccessPolicyConfigurationPartner](../resources/crosstenantaccesspolicyconfigurationpartner.md) object. 
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
