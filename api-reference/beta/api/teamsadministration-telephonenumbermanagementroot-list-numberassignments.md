@@ -1,5 +1,5 @@
 ---
-title: "List numberAssignment objects"
+title: "List numberAssignments"
 description: "Get a list of the numberAssignment objects and their properties."
 author: "pavellatif"
 ms.date: 07/23/2025
@@ -8,7 +8,7 @@ ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
-# List numberAssignment objects
+# List numberAssignments```
 
 Namespace: microsoft.graph.teamsAdministration
 
@@ -67,7 +67,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 #### Request 
 
-The following example shows a request to *get a list of all telephone numbers including assignment details.*
+The following example shows a request to get a list of all telephone numbers, including assignment details.
 <!-- {
   "blockType": "request",
   "name": "get_numberassignment1"
@@ -155,7 +155,7 @@ Content-Type: application/json
 
 #### Request
 
-The following example shows a request to *get a list of telephone numbers based on a filter.*
+The following example shows a request to get a list of telephone numbers based on a filter.
 
 <!-- {
   "blockType": "request",
@@ -218,7 +218,7 @@ Content-Type: application/json
 #### Request
 
 
- The following example shows a request to *get a list of telephone numbers using `$top` and `$skip` for pagination.*
+ The following example shows a request to get a list of telephone numbers using `$top` and `$skip` for pagination.
 <!-- {
   "blockType": "request",
   "name": "get_numberAssignments3",
@@ -306,7 +306,7 @@ Content-Type: application/json
 #### Request
 
 
- The following example shows a request to *get assignment details for a single telephone number using a filter.*
+ The following example shows a request to get assignment details for a single telephone number using a filter.
 <!-- {
   "blockType": "request",
   "name": "get_numberAssignments4",

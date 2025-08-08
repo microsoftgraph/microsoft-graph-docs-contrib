@@ -52,9 +52,9 @@ The following table lists the parameters that are required when you call this ac
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|telephoneNumber|String|The telephone number intended to be assigned. (Mandatory parameter)|
+|telephoneNumber|String|Mandatory. The telephone number intended to be assigned.|
 |locationId|String|Indicates the emergency address identifier set on the phone number. Passing an empty string clears the locationId, while passing `null` or not including the field preserves the existing value.|
-|networkSiteId|String|Indicates the updated NetworkSiteId. Use an empty string to clear the existing networkSiteId, or use `null`/omit the field to preserve the existing value.|
+|networkSiteId|String|Indicates the updated networkSiteId. Use an empty string to clear the existing networkSiteId, or use `null`/omit the field to preserve the existing value.|
 |reverseNumberLookupOptions|String collection|This parameter is used to control the behavior of reverse number lookup (RNL) for a phone number. When RNL contains `skipInternalVoip`, an internal call to this phone number doesn't attempt to pass through internal VoIP via reverse number lookup in Microsoft Teams. Instead, the call establishes through external Public Switched Telephone Network (PSTN) connectivity directly.|
 
 ## Response
@@ -63,7 +63,7 @@ If successful, this method returns a `200 OK` response code.
 
 ## Examples
 
-### Example 1: Update Location ID
+### Example 1: Update location ID
 
 #### Request
 
