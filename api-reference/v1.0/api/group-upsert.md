@@ -41,7 +41,7 @@ In order for an app with Group.Create permission to create a group with owners o
 <!-- { "blockType": "ignored" } -->
 
 ``` http
-PATCH /groups/(uniqueName='uniqueName')
+PATCH /groups(uniqueName='uniqueName')
 ```
 
 ## Request headers

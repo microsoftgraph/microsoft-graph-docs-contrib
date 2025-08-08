@@ -6,6 +6,7 @@ ms.localizationpriority: high
 ms.subservice: "data-connect"
 ms.date: 11/07/2024
 ms.custom: sfi-image-nochange
+ms.topic: how-to
 ---
 
 # Use Microsoft Graph Data Connect to define the scope of a dataset

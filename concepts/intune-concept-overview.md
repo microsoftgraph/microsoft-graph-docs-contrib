@@ -5,6 +5,7 @@ author: "dougeby"
 ms.localizationpriority: high
 ms.subservice: "intune"
 ms.date: 11/07/2024
+ms.topic: concept-article
 ---
 
 # Intune devices and apps API overview

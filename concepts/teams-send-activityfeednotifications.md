@@ -5,6 +5,7 @@ author: "RamjotSingh"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 ms.date: 05/15/2025
+ms.topic: how-to
 ---
 
 # Send activity feed notifications to users in Microsoft Teams

@@ -17,6 +17,8 @@ var requestBody = new AddToReviewSetPostRequestBody
 		Id = "c17e91d6-6bc0-4ecb-b388-269ea3d4ffb7",
 	},
 	AdditionalDataOptions = AdditionalDataOptions.LinkedFiles,
+	CloudAttachmentVersion = CloudAttachmentVersion.Latest,
+	DocumentVersion = DocumentVersion.Recent10,
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
