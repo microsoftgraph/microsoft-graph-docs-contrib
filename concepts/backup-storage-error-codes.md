@@ -6,6 +6,7 @@ ms.localizationpriority: high
 ms.subservice: "m365-backup-storage"
 doc_type: conceptualPageType
 ms.date: 11/07/2024
+ms.topic: troubleshooting-error-codes
 ---
 
 # Backup Storage API error responses

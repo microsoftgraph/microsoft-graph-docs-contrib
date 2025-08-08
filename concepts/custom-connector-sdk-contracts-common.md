@@ -7,6 +7,7 @@ doc_type: conceptualPageType
 ms.subservice: search
 description: "Learn about the common models used in the Microsoft 365 Copilot connectors SDK."
 ms.date: 11/07/2024
+ms.topic: article
 ---
 
 # Copilot connectors SDK common models

@@ -15,7 +15,7 @@ var requestBody = new ExportResultPostRequestBody
 	DisplayName = "Export 4",
 	ExportCriteria = ExportCriteria.PartiallyIndexed,
 	ExportLocation = ExportLocation.ResponsiveLocations | ExportLocation.NonresponsiveLocations,
-	AdditionalOptions = AdditionalOptions.AdvancedIndexing | AdditionalOptions.SubfolderContents | AdditionalOptions.AllItemsInFolder | AdditionalOptions.ListAttachments | AdditionalOptions.TeamsAndYammerConversations | AdditionalOptions.HtmlTranscripts | AdditionalOptions.CloudAttachments | AdditionalOptions.IncludeFolderAndPath | AdditionalOptions.SplitSource | AdditionalOptions.CondensePaths | AdditionalOptions.FriendlyName | AdditionalOptions.OptimizedPartitionSize | AdditionalOptions.IncludeReport,
+	AdditionalOptions = AdditionalOptions.AdvancedIndexing | AdditionalOptions.SubfolderContents | AdditionalOptions.AllItemsInFolder | AdditionalOptions.ListAttachments | AdditionalOptions.TeamsAndYammerConversations | AdditionalOptions.HtmlTranscripts | AdditionalOptions.CloudAttachments | AdditionalOptions.IncludeFolderAndPath | AdditionalOptions.SplitSource | AdditionalOptions.CondensePaths | AdditionalOptions.FriendlyName | AdditionalOptions.IncludeReport,
 	ExportFormat = ExportFormat.Eml,
 };
 

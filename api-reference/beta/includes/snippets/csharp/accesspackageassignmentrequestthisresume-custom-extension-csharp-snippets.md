@@ -14,7 +14,7 @@ var requestBody = new ResumePostRequestBody
 {
 	Source = "Contoso.AADProcess",
 	Type = "microsoft.graph.accessPackageCustomExtensionStage.assignmentRequestCreated",
-	Data = new CustomExtensionData
+	Data = new AccessPackageRequestApprovalStageCallbackConfiguration
 	{
 		OdataType = "microsoft.graph.accessPackageRequestApprovalStageCallbackConfiguration",
 		AdditionalData = new Dictionary<string, object>

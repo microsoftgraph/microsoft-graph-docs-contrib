@@ -4,6 +4,7 @@ description: "Upgrade guide to help you move from a previous version of the Tool
 ms.localizationpriority: medium
 author: sebastienlevert
 ms.date: 11/07/2024
+ms.topic: upgrade-and-migration-article
 ---
 
 # Upgrade to the latest version of Microsoft Graph Toolkit

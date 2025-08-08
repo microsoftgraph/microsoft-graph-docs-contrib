@@ -8,5 +8,5 @@ ms.localizationpriority: medium
 |:---|:---|:---|
 |Delegated (work or school account)|UserAuthenticationMethod.ReadWrite|UserAuthenticationMethod.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|Not supported.|Not supported.|
+|Application|UserAuthenticationMethod.ReadWrite.All|Not available.|
 

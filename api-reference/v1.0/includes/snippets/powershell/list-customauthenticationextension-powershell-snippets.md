@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Identity.SignIns
 
-Get-MgIdentityCustomAuthenticationExtension -Filter "isOf('microsoft.graph.onTokenIssuanceStartCustomExtension')" 
+Get-MgIdentityCustomAuthenticationExtension
 
 ```

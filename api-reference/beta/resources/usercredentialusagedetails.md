@@ -6,6 +6,7 @@ author: "egreenberg14"
 ms.subservice: "entra-monitoring-health"
 doc_type: "resourcePageType"
 ms.date: 07/22/2024
+toc.title: User credential usage details (deprecated)
 ---
 
 # userCredentialUsageDetails resource type
@@ -13,6 +14,9 @@ ms.date: 07/22/2024
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+> [!IMPORTANT]
+> The user credential usage details API is deprecated and will stop returning data on August 1, 2025. Use the new [User Events Summary](../resources/usereventssummary.md) API instead.
 
 Represents the self-service password reset usage for a given tenant. Details include user information, status of the reset, and the reason for failure. For more information about license requirements for this feature, see [Authentication Methods Activity: Permissions and licenses](/entra/identity/authentication/howto-authentication-methods-activity#permissions-and-licenses).
 
