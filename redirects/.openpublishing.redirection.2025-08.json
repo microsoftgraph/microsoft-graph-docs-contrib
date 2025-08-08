@@ -152,52 +152,52 @@
     },
     {
       "redirect_url": "/microsoft-365-copilot/extensibility/api/admin-settings/copilotadminlimitedmode-get",
-      "source_path_from_root": "api-reference/beta/api/copilotadminlimitedmode-get.md",
+      "source_path_from_root": "/api-reference/beta/api/copilotadminlimitedmode-get.md",
       "redirect_document_id": false
     },
     {
       "redirect_url": "/microsoft-365-copilot/extensibility/api/admin-settings/copilotadminlimitedmode-update",
-      "source_path_from_root": "api-reference/beta/api/copilotadminlimitedmode-update.md",
+      "source_path_from_root": "/api-reference/beta/api/copilotadminlimitedmode-update.md",
       "redirect_document_id": false
     },
     {
       "redirect_url": "/microsoft-365-copilot/extensibility/api/admin-settings/resources/copilotadmin",
-      "source_path_from_root": "api-reference/beta/resources/copilotadmin.md",
+      "source_path_from_root": "/api-reference/beta/resources/copilotadmin.md",
       "redirect_document_id": false
     },
     {
       "redirect_url": "/microsoft-365-copilot/extensibility/api/admin-settings/resources/copilotadminlimitedmode",
-      "source_path_from_root": "api-reference/beta/resources/copilotadminlimitedmode.md",
+      "source_path_from_root": "/api-reference/beta/resources/copilotadminlimitedmode.md",
       "redirect_document_id": false
     },
     {
       "redirect_url": "/microsoft-365-copilot/extensibility/api/admin-settings/resources/copilotadminsetting",
-      "source_path_from_root": "api-reference/beta/resources/copilotadminsetting.md",
+      "source_path_from_root": "/api-reference/beta/resources/copilotadminsetting.md",
       "redirect_document_id": false
     },
     {
       "redirect_url": "/microsoft-365-copilot/extensibility/api/admin-settings/copilotadminlimitedmode-get",
-      "source_path_from_root": "api-reference/v1.0/api/copilotadminlimitedmode-get.md",
+      "source_path_from_root": "/api-reference/v1.0/api/copilotadminlimitedmode-get.md",
       "redirect_document_id": false
     },
     {
       "redirect_url": "/microsoft-365-copilot/extensibility/api/admin-settings/copilotadminlimitedmode-update",
-      "source_path_from_root": "api-reference/v1.0/api/copilotadminlimitedmode-update.md",
+      "source_path_from_root": "/api-reference/v1.0/api/copilotadminlimitedmode-update.md",
       "redirect_document_id": false
     },
     {
       "redirect_url": "/microsoft-365-copilot/extensibility/api/admin-settings/resources/copilotadmin",
-      "source_path_from_root": "api-reference/v1.0/resources/copilotadmin.md",
+      "source_path_from_root": "/api-reference/v1.0/resources/copilotadmin.md",
       "redirect_document_id": false
     },
     {
       "redirect_url": "/microsoft-365-copilot/extensibility/api/admin-settings/resources/copilotadminlimitedmode",
-      "source_path_from_root": "api-reference/v1.0/resources/copilotadminlimitedmode.md",
+      "source_path_from_root": "/api-reference/v1.0/resources/copilotadminlimitedmode.md",
       "redirect_document_id": false
     },
     {
       "redirect_url": "/microsoft-365-copilot/extensibility/api/admin-settings/resources/copilotadminsetting",
-      "source_path_from_root": "api-reference/v1.0/resources/copilotadminsetting.md",
+      "source_path_from_root": "/api-reference/v1.0/resources/copilotadminsetting.md",
       "redirect_document_id": false
     }
   ]
