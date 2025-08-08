@@ -88,8 +88,9 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.policyDeletableItem"
 }
 -->
-```json
-  HTTP/1.1 200 OK
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
 
 {
   "@odata.context": "https://graph.microsoft-ppe.com/testppebetadeleteapis/$metadata#policies/deletedItems/crossTenantPartners/$entity",
@@ -143,8 +144,9 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.policyDeletableItem"
 }
 -->
-```json
-  HTTP/1.1 200 OK 
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
 
 {
   "@odata.context": "https://graph.microsoft-ppe.com/testppebetadeleteapis/$metadata#policies/deletedItems/crossTenantSyncPolicyPartners/$entity",

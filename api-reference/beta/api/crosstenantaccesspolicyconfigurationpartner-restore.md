@@ -79,7 +79,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.crossTenantAccessPolicyConfigurationPartner"
 }
 -->
-```json
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
