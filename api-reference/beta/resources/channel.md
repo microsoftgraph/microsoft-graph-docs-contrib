@@ -78,7 +78,7 @@ where files are shared, and where tabs are added.
 |summary|[channelSummary](../resources/channelsummary.md)|Contains summary information about the channel, including number of guests, members, owners, and an indicator for members from other tenants. The **summary** property is only returned if it appears in the `$select` clause of the [Get channel](../api/channel-get.md) method.|
 |tenantId |string | The ID of the Microsoft Entra tenant. |
 |isArchived| Boolean | Indicates whether the channel is archived. Read-only. |
-|migrationMode|[migrationMode](../resources/channel.md#migrationmode-values)|Setting to indicate whether a channel is in migrationMode. This will be `null` for channels that never entered migration mode.|
+|migrationMode|[migrationMode](../resources/channel.md#migrationmode-values)|Indicates whether a channel is in migrationMode. This value is `null` for channels that never entered migration mode.|
 |originalCreatedDateTime|dateTimeOffset|Timestamp for the original creation time of chat/channel. `null` if the chat/channel has never been in migration mode.|
 
 ### channelMembershipType values
@@ -94,9 +94,9 @@ where files are shared, and where tabs are added.
 
 | Member             | Description                                                                       |
 |:-------------------|:----------------------------------------------------------------------------------|
-| InProgress           | Channel has entered migration mode.                          |
-| Completed            | Channel is out of migration mode. |
-| UnknownFutureValue | Evolvable enumeration sentinel value. Don't use.                                 |
+| inProgress           | Channel has entered migration mode.                          |
+| completed            | Channel is out of migration mode. |
+| unknownFutureValue | Evolvable enumeration sentinel value. Don't use.                                 |
 
 ### Instance attributes
 

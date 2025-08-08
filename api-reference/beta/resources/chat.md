@@ -84,7 +84,7 @@ Represents a chat that is a collection of [chatMessages](chatmessage.md) between
 | topic| String|  (Optional) Subject or topic for the chat. Only available for group chats.|
 | viewpoint|[chatViewpoint](../resources/chatviewpoint.md)|Represents caller-specific information about the chat, such as last message read date and time. This property is populated only when the request is made in a delegated context.|
 | webUrl| String | The URL for the chat in Microsoft Teams. The URL should be treated as an opaque blob, and not parsed. Read-only.|
-|migrationMode|[migrationMode](../resources/chat.md#migrationmode-values)|Setting to indicate whether a chat is in migrationMode. This will be `null` for chats that never entered migration mode.|
+|migrationMode|[migrationMode](../resources/chat.md#migrationmode-values)|Indicates whether a chat is in migrationMode. This value is`null` for chats that never entered migration mode.|
 |originalCreatedDateTime|dateTimeOffset|Timestamp for the original creation time of chat/channel. `null` if the chat/channel has never been in migration mode.|
 
 ### chatType values 
