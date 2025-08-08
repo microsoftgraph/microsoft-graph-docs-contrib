@@ -61,8 +61,6 @@ items:
   - name: Federated identity credential
     displayName: Workload identity federation, workload identities
     items:
-    - name: Overview
-      href: ../../resources/federatedidentitycredentials-overview.md
     - name: Federated identity credential
       href: ../../resources/federatedidentitycredential.md
     - name: List
