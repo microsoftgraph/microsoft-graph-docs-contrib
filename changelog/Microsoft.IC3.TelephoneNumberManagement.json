@@ -84,14 +84,6 @@
         },
         {
           "Id": "07e967a6-f053-4c19-be0e-0a8373f072c4",
-          "ApiChange": "Relationship",
-          "ChangedApiName": "telephoneNumberManagement",
-          "ChangeType": "Addition",
-          "Description": "Added the **telephoneNumberManagement** relationship to the [teamsAdminRoot](https://learn.microsoft.com/en-us/graph/api/resources/teamsAdministration-teamsAdminRoot?view=graph-rest-beta) resource.",
-          "Target": "teamsAdminRoot"
-        },
-        {
-          "Id": "07e967a6-f053-4c19-be0e-0a8373f072c4",
           "ApiChange": "Resource",
           "ChangedApiName": "telephoneNumberLongRunningOperation",
           "ChangeType": "Addition",
