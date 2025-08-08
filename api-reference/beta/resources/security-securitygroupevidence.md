@@ -23,7 +23,7 @@ Inherits from [alertEvidence](../resources/security-alertevidence.md).
 |---------------------------|--------|---------------------------------------------------------------|
 | sid                       | String | The security identifier of the group.                         |
 | securityGroupId           | String | Unique identifier of the security group.                      |
-| distinguishedName         | String | The distinguished name of the security group                  |
+| distinguishedName         | String | The distinguished name of the security group.                 |
 | displayName               | String | The name of the security group.                               |
 | friendlyName              | String | The friendly name of the security group.                      |
 | activeDirectoryObjectGuid | Guid   | The group unique identifier assigned by the Active Directory. |
