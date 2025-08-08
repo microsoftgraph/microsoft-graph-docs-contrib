@@ -24,6 +24,12 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 Use the [resize](/graph/api/cloudpc-resize) operation of [cloudPC](/graph/api/resources/cloudpc) to upgrade or downgrade an existing Cloud PC to a configuration with a new virtual CPU (vCPU) and storage size.
 
+## August 2025: New in preview only
+
+### Calendars | Places
+
+[Create](/graph/api/place-post?view=graph-rest-beta&preserve-view=true), [get descendants](/graph/api/place-descendants?view=graph-rest-beta&preserve-view=true), and [delete](/graph/api/place-delete?view=graph-rest-beta&preserve-view=true) a [place](/graph/api/resources/place?view=graph-rest-beta&preserve-view=true) and its derived objects (for example, [building](/graph/api/resources/building?view=graph-rest-beta&preserve-view=true), [desk](/graph/api/resources/desk?view=graph-rest-beta&preserve-view=true), [floor](/graph/api/resources/floor?view=graph-rest-beta&preserve-view=true), or [section](/graph/api/resources/section?view=graph-rest-beta&preserve-view=true). These APIs enable scalable onboarding and management of the Places directory.
+
 ## July 2025: New and generally available
 
 ### Bicep Templates for Microsoft Graph resources
@@ -99,6 +105,9 @@ Retired the previously deprecated Microsoft Entra lifecycle announcements APIs t
 
 Deprecated the **markAllStudentsAsMinors** property on [additionalUserOptions](/graph/api/resources/industrydata-additionaluseroptions?view=graph-rest-beta&preserve-view=true) in favor of the **studentAgeGroup** property.
 
+### People and workplace intelligence | Profile
+
+Added user profile-related properties to the following resources: **costCenter** and **division** to [companyDetail](/graph/api/resources/companydetail?view=graph-rest-beta&preserve-view=true), **employeeId** and **employeeType** to [positionDetail](/graph/api/resources/positiondetail?view=graph-rest-beta&preserve-view=true), and **originTenantInfo** and **userPersona** to [userAccountInformation](/graph/api/resources/useraccountinformation?view=graph-rest-beta&preserve-view=true).
 ### Security | eDiscovery
 
 Use the **reportFileMetadata** property on [ediscoveryAddToReviewSetOperation](/graph/api/resources/security-ediscoveryaddtoreviewsetoperation?view=graph-rest-beta&preserve-view=true) and [ediscoveryEstimateOperation](/graph/api/resources/security-ediscoveryestimateoperation?view=graph-rest-beta&preserve-view=true) to get the properties for report file metadata.
@@ -143,7 +152,7 @@ New rate limits apply to Cloud PC APIs. The [List Cloud PCs](/graph/api/virtuale
 
 ### Teamwork and communications | Shift management
 
-Deprecated the `MS-APP-ACTS-AS` request header for all operations of the resources: [offerShiftRequest](/graph/api/resources/offershiftrequest), [openShift](/graph/api/resources/openshift), [openShiftChangeRequest](/graph/api/resources/openshiftchangerequest), [schedule](/graph/api/resources/schedule), [schedulingGroup](/graph/api/resources/schedulinggroup), [shift](/graph/api/resources/shift), [shiftPreferences](/graph/api/resources/shiftpreferences), [shiftsRoleDefinition](/graph/api/resources/shiftsroledefinition), [swapShiftsChangeRequest](/graph/api/resources/swapshiftschangerequest), [timeCard](/graph/api/resources/timecard), [timeOff](/graph/api/resources/timeoff), [timeOffReason](/graph/api/resources/timeoffreason), [timeOffRequest](/graph/api/resources/timeoffrequest), and [workforceIntegration](/graph/api/resources/workforceintegration). This header was also deprecated for the [changeTrackedEntity: stageForDeletion](/graph/api/changetrackedentity-stagefordeletion) method.
+Deprecated the `MS-APP-ACTS-AS` request header for all operations of the resources: [offerShiftRequest](/graph/api/resources/offershiftrequest), [openShift](/graph/api/resources/openshift), [openShiftChangeRequest](/graph/api/resources/openshiftchangerequest), [schedule](/graph/api/resources/schedule), [schedulingGroup](/graph/api/resources/schedulinggroup), [shift](/graph/api/resources/shift), [shiftPreferences](/graph/api/resources/shiftpreferences), [shiftsRoleDefinition](/graph/api/resources/shiftsroledefinition), [swapShiftsChangeRequest](/graph/api/resources/swapshiftschangerequest), [timeCard](/graph/api/resources/timecard), [timeOff](/graph/api/resources/timeoff), [timeOffReason](/graph/api/resources/timeoffreason), [timeOffRequest](/graph/api/resources/timeoffrequest), and [workforceIntegration](/graph/api/resources/workforceintegration). This header was also deprecated for the [changeTrackedEntity: stageForDeletion](/graph/api/changetrackedentity-stagefordeletion) method.
 
 ## June 2025: New in preview only
 
@@ -178,7 +187,7 @@ Added [phoneUserConversationMember](/graph/api/resources/phoneuserconversationme
 
 ### Teamwork and communications | Shift management
 
-Deprecated the `MS-APP-ACTS-AS` request header for all operations of the resources: [offerShiftRequest](/graph/api/resources/offershiftrequest?view=graph-rest-beta&preserve-view=true), [openShift](/graph/api/resources/openshift?view=graph-rest-beta&preserve-view=true), [openShiftChangeRequest](/graph/api/resources/openshiftchangerequest?view=graph-rest-beta&preserve-view=true), [schedule](/graph/api/resources/schedule?view=graph-rest-beta&preserve-view=true), [schedulingGroup](/graph/api/resources/schedulinggroup?view=graph-rest-beta&preserve-view=true), [shift](/graph/api/resources/shift?view=graph-rest-beta&preserve-view=true), [shiftPreferences](/graph/api/resources/shiftpreferences?view=graph-rest-beta&preserve-view=true), [shiftsRoleDefinition](/graph/api/resources/shiftsroledefinition?view=graph-rest-beta&preserve-view=true), [swapShiftsChangeRequest](/graph/api/resources/swapshiftschangerequest?view=graph-rest-beta&preserve-view=true), [timeCard](/graph/api/resources/timecard?view=graph-rest-beta&preserve-view=true), [timeOff](/graph/api/resources/timeoff?view=graph-rest-beta&preserve-view=true), [timeOffReason](/graph/api/resources/timeoffreason?view=graph-rest-beta&preserve-view=true), [timeOffRequest](/graph/api/resources/timeoffrequest?view=graph-rest-beta&preserve-view=true), and [workforceIntegration](/graph/api/resources/workforceintegration?view=graph-rest-beta&preserve-view=true). This header was also deprecated for the [changeTrackedEntity: stageForDeletion](/graph/api/changetrackedentity-stagefordeletion?view=graph-rest-beta&preserve-view=true) method.
+Deprecated the `MS-APP-ACTS-AS` request header for all operations of the resources: [offerShiftRequest](/graph/api/resources/offershiftrequest?view=graph-rest-beta&preserve-view=true), [openShift](/graph/api/resources/openshift?view=graph-rest-beta&preserve-view=true), [openShiftChangeRequest](/graph/api/resources/openshiftchangerequest?view=graph-rest-beta&preserve-view=true), [schedule](/graph/api/resources/schedule?view=graph-rest-beta&preserve-view=true), [schedulingGroup](/graph/api/resources/schedulinggroup?view=graph-rest-beta&preserve-view=true), [shift](/graph/api/resources/shift?view=graph-rest-beta&preserve-view=true), [shiftPreferences](/graph/api/resources/shiftpreferences?view=graph-rest-beta&preserve-view=true), [shiftsRoleDefinition](/graph/api/resources/shiftsroledefinition?view=graph-rest-beta&preserve-view=true), [swapShiftsChangeRequest](/graph/api/resources/swapshiftschangerequest?view=graph-rest-beta&preserve-view=true), [timeCard](/graph/api/resources/timecard?view=graph-rest-beta&preserve-view=true), [timeOff](/graph/api/resources/timeoff?view=graph-rest-beta&preserve-view=true), [timeOffReason](/graph/api/resources/timeoffreason?view=graph-rest-beta&preserve-view=true), [timeOffRequest](/graph/api/resources/timeoffrequest?view=graph-rest-beta&preserve-view=true), and [workforceIntegration](/graph/api/resources/workforceintegration?view=graph-rest-beta&preserve-view=true). This header was also deprecated for the [changeTrackedEntity: stageForDeletion](/graph/api/changetrackedentity-stagefordeletion?view=graph-rest-beta&preserve-view=true) method.
 
 ## Contribute to Microsoft Graph
 
