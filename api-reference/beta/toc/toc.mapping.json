@@ -258,10 +258,25 @@
         },
         {
           "name": "Places",
+          "overview": "../../resources/places-api-overview.md",
           "resources": [
             "place",
+            "building",
+            "floor",
+            "section",
+            "desk",
             "room",
+            "workspace",
             "roomList"
+          ],
+          "complexTypes": [
+            "resourceLink",
+            "mailboxDetails",
+            "placeMode",
+            "assignedPlaceMode",
+            "dropInPlaceMode",
+            "reservablePlaceMode",
+            "offlinePlaceMode"
           ],
            "childNodes": [
             {

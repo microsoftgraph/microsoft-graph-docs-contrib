@@ -5289,6 +5289,13 @@ Possible values for user account types (group membership), per Windows definitio
 | lint               | 30    | Indicates the time zone is associated with Line Islands Time(UTC+14:00).                                      |
 | unknownFutureValue | 31    | Evolvable enumeration sentinel value. Do not use.                                                             |
 
+### resourceLinkType values 
+
+|Member|
+|:---|
+|url|
+|unknownFutureValue|
+
 ### userPersona values 
 
 |Member|
