@@ -47,7 +47,7 @@ Permanently delete a **crossTenantIdentitySyncPolicyPartner** object:
 }
 -->
 ``` http
-DELETE /policies/deletedItems/crossTenantPartners/{id}
+DELETE /policies/deletedItems/crossTenantSyncPolicyPartners/{id}
 ```
 
 ## Request headers
@@ -100,7 +100,7 @@ The following example shows a request for crossTenantIdentitySyncPolicyPartner.
 }
 -->
 ```HTTP
-DELETE https://graph.microsoft.com/beta/policies/deletedItems/crossTenantPartners/809cbbd2-2325-4c17-bd51-f8f098db19c8
+DELETE https://graph.microsoft.com/beta/policies/deletedItems/crossTenantSyncPolicyPartners/809cbbd2-2325-4c17-bd51-f8f098db19c8
 ```
 
 
