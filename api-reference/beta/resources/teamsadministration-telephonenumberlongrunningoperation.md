@@ -29,9 +29,9 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|createdDateTime|String|Date and time when the asynchronous operation was created|
-|id|String|Operation identifier found as a response to asynchronous action. Inherited from [microsoft.graph.entity](../resources/entity.md). Inherits from [entity](../resources/entity.md)|
-|numbers|[microsoft.graph.teamsAdministration.telephoneNumberLongRunningOperationDetails](../resources/teamsadministration-telephonenumberlongrunningoperationdetails.md) collection|Asynchronous operation details|
+|createdDateTime|String|Date and time when the asynchronous operation was created.|
+|id|String|Operation identifier found as a response to asynchronous action. Inherited from [microsoft.graph.entity](../resources/entity.md). Inherits from [entity](../resources/entity.md).|
+|numbers|[microsoft.graph.teamsAdministration.telephoneNumberLongRunningOperationDetails](../resources/teamsadministration-telephonenumberlongrunningoperationdetails.md) collection|Asynchronous operation details.|
 |status|longRunningOperationStatus|Status of the operation. The possible values are: `notStarted`, `running`, `succeeded`, `failed`, `unknownFutureValue`.|
 
 ## Relationships

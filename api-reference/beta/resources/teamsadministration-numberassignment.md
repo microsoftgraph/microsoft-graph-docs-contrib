@@ -24,9 +24,9 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 |:---|:---|:---|
 |[List](../api/teamsadministration-telephonenumbermanagementroot-list-numberassignments.md)|[microsoft.graph.teamsAdministration.numberAssignment](../resources/teamsadministration-numberassignment.md) collection|Get a list of the numberAssignment objects and their properties.|
 |[Get](../api/teamsadministration-numberassignment-get.md)|[microsoft.graph.teamsAdministration.numberAssignment](../resources/teamsadministration-numberassignment.md)|Get details for a list of telephone numbers.|
-|[assignNumber](../api/teamsadministration-numberassignment-assignnumber.md)|None|Assign a telephone number to a user account|
-|[unassignNumber](../api/teamsadministration-numberassignment-unassignnumber.md)|None|Unassign a telephone number from a user or resource account|
-|[updateNumber](../api/teamsadministration-numberassignment-updatenumber.md)|None|Update an existing telephone number with optional details|
+|[assignNumber](../api/teamsadministration-numberassignment-assignnumber.md)|None|Assign a telephone number to a user account.|
+|[unassignNumber](../api/teamsadministration-numberassignment-unassignnumber.md)|None|Unassign a telephone number from a user or resource account.|
+|[updateNumber](../api/teamsadministration-numberassignment-updatenumber.md)|None|Update an existing telephone number with optional details.|
 
 ## Properties
 
