@@ -1,6 +1,6 @@
 ---
 title: "Create permission on a driveItem"
-description: "Create a new permission for a driveItem."
+description: "Create a new permission object for a driveItem."
 author: "BarrySh"
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
@@ -9,6 +9,7 @@ ms.date: 07/25/2025
 ---
 
 # Create permission on a driveItem
+
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -16,10 +17,10 @@ Namespace: microsoft.graph
 Create a new [permission](../resources/permission.md) object on a [driveItem](../resources/permission.md).
 
 > [!IMPORTANT]
-> Consider the following restrictions for this API:
+> This API has the following restrictions:
 >
-> - For OneDrive and SharePoint Online, you can only use this method to create a new application permission. If you want to create a new user permission in a drive item, see [invite](./driveitem-invite.md). For more information on application permissions, see [Selected permissions in OneDrive and SharePoint](/graph/permissions-selected-overview).
-> - For SharePoint Embedded, you can only use this method to create a new [sharePointGroup](../resources/sharepointgroup.md) permission with app-only access. Creating a permission on the root item of a container isn't supported.
+> - For OneDrive for work or school and SharePoint Online, you can only use this method to create a new application permission. If you want to create a new user permission in a **driveItem**, see [invite](./driveitem-invite.md). For more information on application permissions, see [Overview of Selected permissions in OneDrive and SharePoint](/graph/permissions-selected-overview).
+> - For SharePoint Embedded, you can only use this method to create a new [sharePointGroup](../resources/sharepointgroup.md) permission with app-only access. You can't create a permission on the root item of a container.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -62,14 +63,20 @@ If successful, this method returns a `201 Created` response code and a [permissi
 
 ### Example 1: Add an application permission to a driveItem in OneDrive or SharePoint Online
 
-This example shows how to add a `write` [permission](../resources/permission.md) for the `Contoso Time Manager App` [application](../resources/identity.md) on a [driveItem](../resources/driveitem.md) identified by `{item-id}` in a [drive](../resources/drive.md) identified by `b!s8RqPCGh0ESQS2EYnKM0IKS3lM7GxjdAviiob7oc5pXv_0LiL-62Qq3IXyrXnEop`.
+The following example shows how to add a `write` [permission](../resources/permission.md) for the `Contoso Time Manager App` [application](../resources/identity.md) on a [driveItem](../resources/driveitem.md) identified by `1` in a [drive](../resources/drive.md) identified by `b!s8RqPCGh0ESQS2EYnKM0IKS3lM7GxjdAviiob7oc5pXv_0LiL-62Qq3IXyrXnEop`.
 
 #### Request
 
-<!-- { "blockType": "request", "name": "driveitem-post-permissions-1", "scopes": "filestoragecontainer.selected", "target": "action" } -->
+The following example shows a request.
 
+<!-- {
+  "blockType": "request",
+  "name": "driveitem-post-permissions-1",
+  "scopes": "filestoragecontainer.selected",
+  "target": "action"
+} -->
 ```http
-POST https://graph.microsoft.com/beta/drives/b!s8RqPCGh0ESQS2EYnKM0IKS3lM7GxjdAviiob7oc5pXv_0LiL-62Qq3IXyrXnEop/items/{item-id}/permissions
+POST https://graph.microsoft.com/beta/drives/b!s8RqPCGh0ESQS2EYnKM0IKS3lM7GxjdAviiob7oc5pXv_0LiL-62Qq3IXyrXnEop/items/1/permissions
 Content-Type: application/json
 
 {
@@ -82,8 +89,6 @@ Content-Type: application/json
   "roles": ["write"]
 }
 ```
-
----
 
 #### Response
 
@@ -126,14 +131,20 @@ Content-Type: application/json
 
 ### Example 2: Add a SharePoint group permission to a driveItem in a SharePoint Embedded container
 
-This example shows how to add a `write` [permission](../resources/permission.md) for the `Internal Collaborators` [sharePointGroup](../resources/sharepointgroup.md) on a [driveItem](../resources/driveitem.md) identified by `{item-id}` in a SharePoint Embedded [fileStorageContainer](../resources/filestoragecontainer.md) identified by `b!s8RqPCGh0ESQS2EYnKM0IKS3lM7GxjdAviiob7oc5pXv_0LiL-62Qq3IXyrXnEop`.
+The following example shows how to add a `write` [permission](../resources/permission.md) for the `Internal Collaborators` [sharePointGroup](../resources/sharepointgroup.md) on a [driveItem](../resources/driveitem.md) identified by `1` in a SharePoint Embedded [fileStorageContainer](../resources/filestoragecontainer.md) identified by `b!s8RqPCGh0ESQS2EYnKM0IKS3lM7GxjdAviiob7oc5pXv_0LiL-62Qq3IXyrXnEop`.
 
 #### Request
 
-<!-- { "blockType": "request", "name": "driveitem-post-permissions-2", "scopes": "filestoragecontainer.selected", "target": "action" } -->
+The following example shows a request.
 
+<!-- {
+  "blockType": "request",
+  "name": "driveitem-post-permissions-2",
+  "scopes": "filestoragecontainer.selected",
+  "target": "action"
+} -->
 ```http
-POST https://graph.microsoft.com/beta/drives/b!s8RqPCGh0ESQS2EYnKM0IKS3lM7GxjdAviiob7oc5pXv_0LiL-62Qq3IXyrXnEop/items/{item-id}/permissions
+POST https://graph.microsoft.com/beta/drives/b!s8RqPCGh0ESQS2EYnKM0IKS3lM7GxjdAviiob7oc5pXv_0LiL-62Qq3IXyrXnEop/items/1/permissions
 Content-Type: application/json
 
 {
@@ -146,8 +157,6 @@ Content-Type: application/json
   "roles": ["write"]
 }
 ```
-
----
 
 #### Response
 
