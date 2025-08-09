@@ -1,6 +1,6 @@
 ---
-title: "Report Message"
-description: "Report the message as junk or phish or not junk"
+title: "message: reportMessage"
+description: "Report a message as junk, phishing, or not junk, which improves mail filtering."
 author: "ka-gunase"
 ms.date: 07/09/2025
 ms.localizationpriority: medium
@@ -8,13 +8,13 @@ ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
-# Report Message
+# message: reportMessage
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**Report a message as junk, phish, or not junk to help improve mail filtering.**
+Report a [message](../resources/message.md) as junk, phishing, or not junk, which improves mail filtering.
 
 ## Permissions
 
@@ -52,20 +52,19 @@ The following table lists the parameters that are required when you call this ac
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|ReportAction|ReportAction|Indicates the type of action to be reported on the message, which can be junk, notJunk, or phish. For more information, see [ReportAction](../resources/enums.md#reportaction-values)|
-|IsMessageMoveRequested|Boolean|Indicates if the message should be moved out of current folder.|
-
-
+|IsMessageMoveRequested|Boolean|Indicates whether the message should be moved out of current folder.|
+|ReportAction|reportAction|Indicates the type of action to be reported on the message that can be junk, not junk, or phishing. The possible values are: `unknown`, `junk`, `notJunk`, `phish`, `unknownFutureValue`. |
 
 ## Response
 
-If successful, this action returns a `200 OK` response code and a [message](../resources/message.md) in the response body.
+If successful, this action returns a `200 OK` response code and a [message](../resources/message.md) object in the response body.
 
 ## Examples
 
 ### Request
 
 The following example shows a request.
+
 <!-- {
   "blockType": "request",
   "name": "messagethis.reportmessage"
@@ -76,11 +75,10 @@ POST https://graph.microsoft.com/beta/me/messages/AAMkADhAAATs28OAAA=/reportMess
 Content-Type: application/json
 
 {
-  "ReportAction": "junk",
-  "IsMessageMoveRequested": "true"
+  "IsMessageMoveRequested": "true",
+  "ReportAction": "junk"
 }
 ```
-
 
 ### Response
 
