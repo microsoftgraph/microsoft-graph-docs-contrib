@@ -22,10 +22,10 @@ Represents the rule conditions for an [alert rule](devicemanagement-alertrule.md
 
 |Property|Type|Description|
 |:---|:---|:---|
-|relationshipType|[microsoft.graph.deviceManagement.relationshipType](#relationshiptype-values)| The relationship type.  Possible values are: `and`, `or`.|
-|conditionCategory|[microsoft.graph.deviceManagement.conditionCategory](#conditioncategory-values)|The property that the rule condition monitors. Possible values are:  `provisionFailures`, `imageUploadFailures`, `azureNetworkConnectionCheckFailures`, `cloudPcInGracePeriod`, `frontlineInsufficientLicenses`, `cloudPcConnectionErrors`, `cloudPcHostHealthCheckFailures`, `cloudPcZoneOutage`, `unknownFutureValue`.|
 |aggregation|[microsoft.graph.deviceManagement.aggregationType](#aggregationtype-values)|The built-in aggregation method for the rule condition. The possible values are: `count`, `percentage`, `affectedCloudPcCount`, `affectedCloudPcPercentage`, `unknownFutureValue`.|
+|conditionCategory|[microsoft.graph.deviceManagement.conditionCategory](#conditioncategory-values)|The property that the rule condition monitors. Possible values are: `provisionFailures`, `imageUploadFailures`, `azureNetworkConnectionCheckFailures`, `cloudPcInGracePeriod`, `frontlineInsufficientLicenses`, `cloudPcConnectionErrors`, `cloudPcHostHealthCheckFailures`, `cloudPcZoneOutage`, `unknownFutureValue`, `frontlineBufferUsageDuration`, `frontlineBufferUsageThreshold`, `cloudPcUserSettingsPersistenceUsageThreshold`, `deprovisionedCloudPcCount`, `deprovisionFailedReserveCloudPcCount`. Use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `frontlineBufferUsageDuration`, `frontlineBufferUsageThreshold`, `cloudPcUserSettingsPersistenceUsageThreshold`, `deprovisionedCloudPcCount`, `deprovisionFailedReserveCloudPcCount`.|
 |operator|[microsoft.graph.deviceManagement.operatorType](#operatortype-values)|The built-in operator for the rule condition. The possible values are: `greaterOrEqual`, `equal`, `greater`, `less`, `lessOrEqual`, `notEqual`, `unknownFutureValue`.|
+|relationshipType|[microsoft.graph.deviceManagement.relationshipType](#relationshiptype-values)| The relationship type.  Possible values are: `and`, `or`.|
 |thresholdValue|String|The threshold value of the alert condition. The threshold value can be a number in string form or string like "WestUS".|
 
 ### relationshipType values
@@ -52,7 +52,7 @@ Represents the rule conditions for an [alert rule](devicemanagement-alertrule.md
 |frontlineBufferUsageThreshold| The alert rule condition targets Frontline buffer usage exceeds limiting frequency.|
 |cloudPcUserSettingsPersistenceUsageThreshold| Indicates that the alert rule condition targets User Experience Sync Storage exceeds limiting usage.|
 |deprovisionedCloudPcCount| Indicates that the alert rule condition targets the count of Cloud PC entered deprovision.|
-|deprovisionFailedReserveCloudPcCount| Indicates that the alert rule condition targets the count of  Reserve Cloud PC entered failed deprovision.|
+|deprovisionFailedReserveCloudPcCount| Indicates that the alert rule condition targets the count of Reserve Cloud PCs that entered failed deprovision.|
 
 ### aggregationType values
 
