@@ -31,6 +31,7 @@ The following table lists the latency to expect between an event happening in th
 | [driveItem][]           | Less than 1 minute   | 5 minutes       |
 | [event][]               | Unknown              | Unknown         |
 | [group][]               | Unknown              | Unknown         |
+| [health monitoring alert][] | Unknown           | Unknown         |
 | [list][]                | Less than 1 minute   | 5 minutes       |
 | [message][]             | Less than 1 minute   | 3 minutes       |
 | [offerShiftRequest][]   | Less than 1 minute   | 60 minutes      |
@@ -48,7 +49,7 @@ The following table lists the latency to expect between an event happening in th
 | [user][]                | Unknown              | Unknown         |
 
 <sup>1</sup> The latency provided for the **alert** resource is only applicable after the alert is created. It doesn't include the time it takes for a rule to create an alert from the data.
-<sup>2</sup> The latency provided for the **callRecord** resource is only applicable to the first version of a call record. Subsequent versions of a call record may be updated beyond the stated latencies.
+<sup>2</sup> The latency provided for the **callRecord** resource is only applicable to the first version of a call record. Subsequent versions of a call record might be updated beyond the stated latencies.
 
 [aiInteraction]: /graph/api/resources/aiinteraction
 [contact]: /graph/api/resources/contact
@@ -81,3 +82,4 @@ The following table lists the latency to expect between an event happening in th
 [calendar]: /graph/api/resources/calendar
 [teamsAppInstallation]: /graph/api/resources/teamsappinstallation
 [approvals]: /graph/api/resources/approvalItem
+[health monitoring alert]: /graph/api/resources/healthmonitoring-alert
