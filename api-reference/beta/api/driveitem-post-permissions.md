@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [permission](../resources/permission.md) object on a [driveItem](../resources/permission.md).
+Create a new [permission](../resources/permission.md) object on a [driveItem](../resources/driveitem.md).
 
 > [!IMPORTANT]
 > This API has the following restrictions:
