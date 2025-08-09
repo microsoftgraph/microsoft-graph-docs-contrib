@@ -9,3 +9,4 @@ ms.localizationpriority: medium
 |Delegated (work or school account)|UserAuthenticationMethod.Read|UserAuthenticationMethod.ReadWrite.All, UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
 |Application|UserAuthenticationMethod.Read.All|UserAuthenticationMethod.ReadWrite.All|
+

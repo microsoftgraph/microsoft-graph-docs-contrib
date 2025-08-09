@@ -4,6 +4,7 @@ description: "You can use the `mgt-people` web component to display a group of p
 ms.localizationpriority: medium
 author: sebastienlevert
 ms.date: 11/07/2024
+ms.topic: how-to
 ---
 
 # People component in Microsoft Graph Toolkit

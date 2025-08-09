@@ -5,6 +5,7 @@ author: "cohanley"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 ms.date: 11/07/2024
+ms.topic: concept-article
 ---
 
 # Overview for Windows 365 Cloud PC on Microsoft Graph

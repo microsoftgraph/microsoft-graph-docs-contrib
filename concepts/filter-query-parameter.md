@@ -22,7 +22,7 @@ The `$filter` query parameter can also be applied against relationships like **m
 
 ## Operators and functions supported in filter expressions
 
-Microsoft Graph supports the use of following operators and functions. However, support by individual resources and its properties or relationships may vary. In addition, some properties and relationships support `$filter` only with [advanced queries](/graph/aad-advanced-queries). See the specific resource documentation for details, and [Syntax for using the filter OData query parameter](#syntax-for-using-the-filter-odata-query-parameter) for examples of how to use these operators and functions. Also, [some limitations apply](/graph/known-issues?search=13635).
+Microsoft Graph supports the use of following operators and functions. However, support by individual resources and its properties or relationships varies. In addition, some properties and relationships support `$filter` only with [advanced queries](/graph/aad-advanced-queries). See the specific resource documentation for details, and [Syntax for using the filter OData query parameter](#syntax-for-using-the-filter-odata-query-parameter) for examples of how to use these operators and functions. Also, [some limitations apply](/graph/known-issues?search=13635).
 
 | Operator type         | Operator                                                                                                                                         |
 | --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |

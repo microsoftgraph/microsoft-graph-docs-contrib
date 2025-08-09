@@ -31,9 +31,14 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users/{id}/presence
-GET /communications/presences
+GET /communications/presences/{id}
 GET /me/presence
 ```
+
+> [!NOTE]
+> - You must pass the user's ID to get their presence information.
+> - When you call `GET /users/{id}/presence` or `GET /communications/presences/{id}`, replace `{id}` with the user’s GUID.
+> - For examples on how to get the unique identifier for a user, see [Get user](../api/user-get.md).
 
 ## Request Headers
 | Name          | Description               |

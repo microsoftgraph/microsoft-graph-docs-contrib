@@ -5,6 +5,7 @@ author: "SuryaLashmiS"
 ms.localizationpriority: high
 ms.subservice: "outlook"
 ms.date: 11/07/2024
+ms.topic: how-to
 ---
 
 # Obtain immutable identifiers for Outlook resources
@@ -53,7 +54,7 @@ You can use immutable IDs to find a message in the Sent Items folder after it ha
 1. [Get the message](/graph/api/message-get) using the ID from the first step. This is the copy in Sent Items.
 
 > [!NOTE]
-> Getting the message in Sent Items may not succeed immediately after sending the message. The copy of the message is not created until the message successfully sends, which may take time.
+> Getting the message in Sent Items might not succeed immediately after sending the message. The copy of the message is not created until the message successfully sends, which might take time.
 
 ## Immutable ID with change notifications
 
