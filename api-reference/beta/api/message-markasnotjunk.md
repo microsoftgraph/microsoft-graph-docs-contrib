@@ -9,11 +9,13 @@ ms.date: 04/04/2024
 ---
 
 # message: markAsNotJunk (deprecated)
-The **markAsNotJunk** API is deprecated and will stop working data on December 30, 2025. Going forward use the [reportMessage](message-reportmessage.md)) API.
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+> [!CAUTION]
+> The **markAsNotJunk** API is deprecated and will stop returning data on December 30, 2025. Going forward use the [reportMessage](message-reportmessage.md) API.
 
 Mark a [message](../resources/message.md) as not junk. This API removes the sender from the list of blocked senders and moves the message to the **Inbox** folder, when **moveToInbox** is `true`.
 
