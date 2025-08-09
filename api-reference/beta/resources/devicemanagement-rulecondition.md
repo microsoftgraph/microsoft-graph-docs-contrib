@@ -51,7 +51,7 @@ Represents the rule conditions for an [alert rule](devicemanagement-alertrule.md
 |frontlineBufferUsageDuration| The alert rule condition targets Frontline buffer usage exceeds time duration.|
 |frontlineBufferUsageThreshold| The alert rule condition targets Frontline buffer usage exceeds limiting frequency.|
 |cloudPcUserSettingsPersistenceUsageThreshold| Indicates that the alert rule condition targets User Experience Sync Storage exceeds limiting usage.|
-|deprovisionedCloudPcCount| Indicates that the alert rule condition targets the count of Cloud PC entered deprovision.|
+|deprovisionedCloudPcCount| Indicates that the alert rule condition targets the count of Cloud PCs that entered deprovision.|
 |deprovisionFailedReserveCloudPcCount| Indicates that the alert rule condition targets the count of Reserve Cloud PCs that entered failed deprovision.|
 
 ### aggregationType values
