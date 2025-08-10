@@ -1,6 +1,6 @@
 ---
 title: "protectionUnitBase: cancelOffboard"
-description: "Cancel offboarding of a protectionUnitBase."
+description: "Cancel the offboarding of a protectionUnitBase."
 author: "haputta"
 ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
@@ -13,7 +13,7 @@ ms.date: 08/26/2024
 
 Namespace: microsoft.graph
 
-Cancel offboarding of a [protectionUnitBase](../resources/protectionunitbase.md).
+Cancel the offboarding of a [protectionUnitBase](../resources/protectionunitbase.md).
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
