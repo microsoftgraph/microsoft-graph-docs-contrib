@@ -94,7 +94,7 @@
             "publishedResource",
             "ipApplicationSegment",
             "webApplicationSegment",
-            "corsConfiguration_v2"           
+            "corsConfiguration_v2"
           ],
           "complexTypes": [
             "applicationSegment",
@@ -258,10 +258,25 @@
         },
         {
           "name": "Places",
+          "overview": "../../resources/places-api-overview.md",
           "resources": [
             "place",
+            "building",
+            "floor",
+            "section",
+            "desk",
             "room",
+            "workspace",
             "roomList"
+          ],
+          "complexTypes": [
+            "resourceLink",
+            "mailboxDetails",
+            "placeMode",
+            "assignedPlaceMode",
+            "dropInPlaceMode",
+            "reservablePlaceMode",
+            "offlinePlaceMode"
           ],
            "childNodes": [
             {
@@ -976,12 +991,19 @@
         "driveItem",
         "bundle",
         "fileStorageContainer",
+        "fileStorageContainerType",
+        "fileStorageContainerTypeAppPermissionGrant",
+        "fileStorageContainerTypeRegistration",
         "permission",
         "recycleBin",
         "recycleBinItem",
         "sharedDriveItem",
         "sharePointGroup",
         "sharePointGroupMember"
+      ],
+      "complexTypes": [
+        "fileStorageContainerTypeRegistrationSettings",
+        "fileStorageContainerTypeSettings"
       ]
     },
     {
@@ -1049,8 +1071,8 @@
             "featureRolloutPolicy",
             "mobilityManagementPolicy",
             "organizationSettings",
-            "uxSetting", 
-            "deviceTemplate", 
+            "uxSetting",
+            "deviceTemplate",
             "mutualTlsOauthConfiguration"
           ],
           "complexTypes": [
@@ -1505,7 +1527,7 @@
                 "authentication",
                 "authenticationMethod",
                 "emailAuthenticationMethod",
-                "externalAuthenticationMethod"
+                "externalAuthenticationMethod",
                 "fido2AuthenticationMethod",
                 "hardwareOathAuthenticationMethod",
                 "microsoftAuthenticatorAuthenticationMethod",
@@ -1574,7 +1596,7 @@
                 "whatIfAnalysisResult",
                 "namedLocation",
                 "authenticationContextClassReference",
-                "conditionalAccessTemplate",                
+                "conditionalAccessTemplate",
                 "continuousAccessEvaluationPolicy"
               ],
               "childNodes": [
@@ -1636,7 +1658,7 @@
               "childNodes": [
                 {
                   "name": "External identities",
-                  "resources": [                    
+                  "resources": [
                     "identityProviderBase",
                     "builtInIdentityProvider",
                     "socialIdentityProvider",
@@ -2300,6 +2322,11 @@
             "skillProficiency",
             "webAccount",
             "personWebsite"
+          ],
+          "complexTypes": [
+            "companyDetail",
+            "originTenantInfo",
+            "positionDetail"
           ]
         },
         {
@@ -2681,7 +2708,7 @@
               "scopeBase",
               "tenantScope",
               "textContent",
-              "userScope" 
+              "userScope"
             ]
           },
         {
@@ -3046,21 +3073,6 @@
           ]
         },
         {
-          "name": "AI interactions",
-          "resources": [
-            "aiInteractionHistory"
-          ],
-         "complexTypes": [
-           "aiInteraction",
-           "aiInteractionAttachment",
-           "aiInteractionContext",
-           "aiInteractionLink",
-           "aiInteractionMention",
-           "aiInteractionMentionedIdentitySet",
-           "aiUser"
-         ]
-        },
-        {
           "name": "Approvals",
           "resources": [
             "approvalItem",
@@ -3136,17 +3148,6 @@
               ]
             },
             {
-              "name": "Copilot settings",
-              "resources": [
-                "copilotAdminLimitedMode"
-              ],
-              "complexTypes": [
-                "copilotAdmin",
-                "copilotAdminSetting",
-                "copilotRoot"
-              ]
-            },
-            {
               "name": "Online meetings",
               "resources": [
                 "meetingAttendanceReport",
@@ -3155,7 +3156,6 @@
                 "onlineMeetingEngagementConversation",
                 "externalMeetingRegistration",
                 "meetingRegistration",
-                "callAiInsight",
                 "callRecording",
                 "callTranscript"
               ],
@@ -3181,7 +3181,6 @@
               "complexTypes": [
                 "actionItem",
                 "aiOnlineMeeting",
-                "callAiInsightViewPoint",
                 "meetingNote",
                 "meetingNoteSubpoint",
                 "mentionEvent",

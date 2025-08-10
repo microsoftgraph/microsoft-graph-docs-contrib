@@ -4,6 +4,7 @@ description: "Use the TeamsFx provider inside your Microsoft Teams applications 
 ms.localizationpriority: medium
 author: sebastienlevert
 ms.date: 11/07/2024
+ms.topic: article
 ---
 
 # TeamsFx provider

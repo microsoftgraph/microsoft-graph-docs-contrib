@@ -7,6 +7,7 @@ doc_type: conceptualPageType
 ms.subservice: search
 description: "Apply best practices when you use the Copilot connectors SDK."
 ms.date: 11/07/2024
+ms.topic: best-practice
 ---
 
 # Copilot connectors SDK best practices

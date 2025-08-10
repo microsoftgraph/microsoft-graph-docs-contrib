@@ -5,6 +5,7 @@ author: "yiwenwang"
 ms.localizationpriority: medium
 ms.subservice: "search"
 ms.date: 11/07/2024
+ms.topic: how-to
 ---
 
 # Search SharePoint content with application permissions

@@ -4,6 +4,7 @@ description: "Create a custom provider to enable authentication and graph access
 ms.localizationpriority: medium
 author: sebastienlevert
 ms.date: 11/07/2024
+ms.topic: article
 ---
 
 # Custom provider
