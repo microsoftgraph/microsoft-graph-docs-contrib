@@ -1,6 +1,6 @@
 ---
 title: "protectionUnitBase: cancelOffboard"
-description: "Cancel offboarding for a protection unit"
+description: "Cancel offboarding of a protectionUnitBase."
 author: "haputta"
 ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
@@ -8,11 +8,12 @@ ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
 ms.date: 08/26/2024
 ---
+
 # protectionUnitBase: cancelOffboard
 
 Namespace: microsoft.graph
 
-Cancel offboard for a [protectionUnitBase](../resources/protectionunitbase.md).
+Cancel offboarding of a [protectionUnitBase](../resources/protectionunitbase.md).
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -51,51 +52,22 @@ For a list of possible error responses, see [Backup Storage API error responses]
 
 ## Examples
 
-### Example 1: Cancel offboard for a protection unit in the billingStopped flow
+### Example 1: Cancel offboarding of a protection unit in the billingStopped flow
+
+The following example shows how to cancel the offboarding of a protection unit in the *billingStopped* flow.
 
 #### Request
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "protectionunitbase_cancelOffboard_example1"
 }
 -->
 ``` http
-POST https://graph.microsoft.com/v1/solutions/backupRestore/protectionUnits/89014d8c-71fe-4d00-a01a-31850bc5b32c/cancelOffboard
+POST https://graph.microsoft.com/v1.0/solutions/backupRestore/protectionUnits/89014d8c-71fe-4d00-a01a-31850bc5b32c/cancelOffboard
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/protectionunitbase-canceloffboard-example1-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/protectionunitbase-canceloffboard-example1-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/protectionunitbase-canceloffboard-example1-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/protectionunitbase-canceloffboard-example1-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/protectionunitbase-canceloffboard-example1-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/protectionunitbase-canceloffboard-example1-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/protectionunitbase-canceloffboard-example1-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 #### Response
 
@@ -109,6 +81,7 @@ The following example shows the response.
 
 ``` http
 HTTP/1.1 200 OK
+Content-Type: application/json
 
 {
   "id": "89014d8c-71fe-4d00-a01a-31850bc5b32c",
@@ -144,49 +117,20 @@ HTTP/1.1 200 OK
 }
 ```
 
-### Example 2: Cancel offboarding for a protection unit that is not in the offboarding flow
+### Example 2: Cancel offboarding of a protection unit that isn't in the offboarding flow
+
+The following example shows how to cancel the offboarding of a protection unit that isn't in the offboarding flow.
 
 #### Request
-
-# [HTTP](#tab/http)
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "protectionunitbase_canceloffboard_example2"
 }
 -->
 ``` http
-POST https://graph.microsoft.com/v1/solutions/backupRestore/protectionUnits/89014d8c-71fe-4d00-a01a-31850bc5b32c/cancelOffboard
+POST https://graph.microsoft.com/v1.0/solutions/backupRestore/protectionUnits/89014d8c-71fe-4d00-a01a-31850bc5b32c/cancelOffboard
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/protectionunitbase-canceloffboard-example2-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/protectionunitbase-canceloffboard-example2-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/protectionunitbase-canceloffboard-example2-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/protectionunitbase-canceloffboard-example2-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/protectionunitbase-canceloffboard-example2-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/protectionunitbase-canceloffboard-example2-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/protectionunitbase-canceloffboard-example2-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 #### Response
 
@@ -200,6 +144,7 @@ The following example shows the response.
 -->
 ``` http
 HTTP/1.1 403 Operation Not Allowed
+Content-Type: application/json
 
 {
   "error": {
