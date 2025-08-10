@@ -1,6 +1,6 @@
 ---
 title: "protectionUnitBase: cancelOffboard"
-description: "Cancel offboarding for a protection unit"
+description: "Cancel the offboarding of a protectionUnitBase."
 author: "haputta"
 ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Cancel offboard for a [protectionUnitBase](../resources/protectionunitbase.md).
+Cancel the offboarding of a [protectionUnitBase](../resources/protectionunitbase.md).
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -53,7 +53,9 @@ For a list of possible error responses, see [Backup Storage API error responses]
 
 ## Examples
 
-### Example 1: Cancel offboard for a protection unit in the billingStopped flow
+### Example 1: Cancel offboarding of a protection unit in the billingStopped flow
+
+The following example shows how to cancel the offboarding of a protection unit in the *billingStopped* flow.
 
 #### Request
 
@@ -111,6 +113,7 @@ The following example shows the response.
 
 ``` http
 HTTP/1.1 200 OK
+Content-Type: application/json
 
 {
   "id": "89014d8c-71fe-4d00-a01a-31850bc5b32c",
@@ -146,10 +149,12 @@ HTTP/1.1 200 OK
 }
 ```
 
-### Example 2: Cancel offboarding for a protection unit that is not in the offboarding flow
+### Example 2: Cancel offboarding of a protection unit that isn't in the offboarding flow
+
+The following example shows how to cancel the offboarding of a protection unit that isn't in the offboarding flow.
 
 #### Request
-
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -202,6 +207,7 @@ The following example shows the response.
 -->
 ``` http
 HTTP/1.1 403 Operation Not Allowed
+Content-Type: application/json
 
 {
   "error": {
