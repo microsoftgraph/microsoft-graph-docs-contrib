@@ -6,6 +6,7 @@ ms.localizationpriority: high
 ms.subservice: "people"
 ms.custom: scenarios:getting-started
 ms.date: 04/30/2025
+ms.topic: how-to
 ---
 
 # Manage profile source settings for an organization using the Microsoft Graph API

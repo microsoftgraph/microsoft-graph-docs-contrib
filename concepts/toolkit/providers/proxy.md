@@ -4,6 +4,7 @@ description: "The proxy provider allows you to use your own server-side authenti
 ms.localizationpriority: medium
 author: sebastienlevert
 ms.date: 11/07/2024
+ms.topic: article
 ---
 
 # Proxy provider

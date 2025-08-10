@@ -4,6 +4,7 @@ description: "The MSAL provider for Electron uses MSAL-node to sign in users and
 ms.localizationpriority: medium
 author: sebastienlevert
 ms.date: 11/07/2024
+ms.topic: article
 ---
 # Electron provider
 

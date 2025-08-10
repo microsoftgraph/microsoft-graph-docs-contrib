@@ -81,10 +81,12 @@ items:
       href: ../../api/cloudpc-reboot.md
     - name: Rename
       href: ../../api/cloudpc-rename.md
-    - name: Troubleshoot
-      href: ../../api/cloudpc-troubleshoot.md
+    - name: Resize
+      href: ../../api/cloudpc-resize.md
     - name: Restore
       href: ../../api/cloudpc-restore.md
+    - name: Troubleshoot
+      href: ../../api/cloudpc-troubleshoot.md
   - name: Cloud PC audit event
     items:
     - name: Cloud PC audit event
