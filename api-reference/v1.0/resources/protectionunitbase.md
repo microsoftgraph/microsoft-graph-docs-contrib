@@ -28,15 +28,15 @@ This resource is an abstract type.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The unique identifier of the protection unit.|
-|policyId|String|The unique identifier of the protection policy based on which protection unit was created.|
-|createdBy|[identitySet](../resources/identityset.md)|The identity of person who created the protection unit.|
-|createdDateTime|DateTimeOffset|The time of creation of the protection unit.|
+|createdBy|[identitySet](../resources/identityset.md)|The identity of the person who created the protection unit.|
+|createdDateTime|DateTimeOffset|The time of creation of the protection unit. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |error|[publicError](../resources/publicerror.md)|Contains error details if an error occurred while creating a protection unit.|
+|id|String|The unique identifier of the protection unit.|
 |lastModifiedBy|[identitySet](../resources/identityset.md)|The identity of person who last modified the protection unit.|
-|lastModifiedDateTime|DateTimeOffset|Timestamp of the last modification of this protection unit.|
-|status|[protectionUnitStatus](../resources/protectionunitbase.md#protectionunitstatus-values)|The status of the protection unit. The possible values are: `protectRequested`, `protected`, `unprotectRequested`, `unprotected`, `removeRequested`, `offboardRequested`, `offboarded`, `cancelOffboardRequested`, `unknownFutureValue`.
-|offboardRequestedDateTime|DateTimeOffset|The time when protection unit offboard was requested.|
+|lastModifiedDateTime|DateTimeOffset|Timestamp of the last modification of this protection unit. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+|offboardRequestedDateTime|DateTimeOffset|The date and time when protection unit offboard was requested. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+|policyId|String|The unique identifier of the protection policy based on which protection unit was created.|
+|status|[protectionUnitStatus](../resources/protectionunitbase.md#protectionunitstatus-values)|The status of the protection unit. The possible values are: `protectRequested`, `protected`, `unprotectRequested`, `unprotected`, `removeRequested`, `unknownFutureValue`, `offboardRequested`, `offboarded`, `cancelOffboardRequested`. Use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `offboardRequested`, `offboarded`, `cancelOffboardRequested`.|
 
 ### protectionUnitStatus values
 |Member | Description |
@@ -49,7 +49,7 @@ This resource is an abstract type.
 |unknownFutureValue | Evolvable enumeration sentinel value. Don't use.|
 |offboardRequested |A request to offboard the protection unit. |
 |offboarded |The protection unit is successfully offboarded. |
-|cancelOffboardRequested |A request to cancel protection unit offboarding. |
+|cancelOffboardRequested |A request to cancel the offboarding of a protection unit. |
 
 ## Relationships
 None.
@@ -67,21 +67,15 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.protectionUnitBase",
-  "id": "String (identifier)",
-  "policyId": "String",
-  "status": "String",
+  "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
   "createdDateTime": "String (timestamp)",
-  "createdBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
+  "error": {"@odata.type": "microsoft.graph.publicError"},
+  "id": "String (identifier)",
+  "lastModifiedBy": {"@odata.type": "microsoft.graph.identitySet"},
   "lastModifiedDateTime": "String (timestamp)",
-  "lastModifiedBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
-  "error": {
-    "@odata.type": "microsoft.graph.publicError"
-  },
-  "offboardRequestedDateTime": "String (timestamp)"
+  "offboardRequestedDateTime": "String (timestamp)",
+  "policyId": "String",
+  "status": "String"
 }
 ```
 
