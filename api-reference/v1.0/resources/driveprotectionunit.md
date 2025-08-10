@@ -54,24 +54,18 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.driveProtectionUnit",
-  "id": "String (identifier)",
-  "policyId": "String",
-  "status": "String",
+  "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
   "createdDateTime": "String (timestamp)",
-  "createdBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
-  "lastModifiedDateTime": "String (timestamp)",
-  "lastModifiedBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
-  "error": {
-    "@odata.type": "microsoft.graph.publicError"
-  },
   "directoryObjectId": "String",
   "displayName": "String",
   "email": "String",
+  "error": {"@odata.type": "microsoft.graph.publicError"},
+  "id": "String (identifier)",
+  "lastModifiedBy": {"@odata.type": "microsoft.graph.identitySet"},
+  "lastModifiedDateTime": "String (timestamp)",
   "offboardRequestedDateTime": "String (timestamp)",
+  "policyId": "String",
+  "status": "String"
 }
 ```
 
