@@ -1,6 +1,6 @@
 ---
 title: "securityGroupEvidence resource type"
-description: "A security group that is reported in the alert as evidence."
+description: "Represents a security group that is reported in the alert as evidence."
 ms.date: 09/09/2021
 author: "BenAlfasi"
 ms.localizationpriority: medium
@@ -14,19 +14,19 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A security group that is reported in the alert as evidence.
+Represents a security group that is reported in the alert as evidence.
 
 Inherits from [alertEvidence](../resources/security-alertevidence.md).
 
 ## Properties
 | Property                  | Type   | Description                                                   |
 |---------------------------|--------|---------------------------------------------------------------|
-| sid                       | String | The security identifier of the group.                         |
-| securityGroupId           | String | Unique identifier of the security group.                      |
-| distinguishedName         | String | The distinguished name of the security group.                 |
+| activeDirectoryObjectGuid | Guid   | The unique group identifier assigned by Active Directory.     |
 | displayName               | String | The name of the security group.                               |
+| distinguishedName         | String | The distinguished name of the security group.                 |
 | friendlyName              | String | The friendly name of the security group.                      |
-| activeDirectoryObjectGuid | Guid   | The group unique identifier assigned by the Active Directory. |
+| securityGroupId           | String | Unique identifier of the security group.                      |
+| sid                       | String | The security identifier of the group.                         |
 
 ## Relationships
 None.
@@ -42,21 +42,17 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.security.securityGroupEvidence",
+  "activeDirectoryObjectGuid": "Guid",
   "createdDateTime": "String (timestamp)",
-  "verdict": "String",
+  "displayName": "String",
+  "distinguishedName": "String",
+  "friendlyName": "String",
   "remediationStatus": "String",
   "remediationStatusDetails": "String",
-  "roles": [
-    "String"
-  ],
-  "tags": [
-    "String"
-  ],
-  "sid": "String",
+  "roles": ["String"],
   "securityGroupId": "String",
-  "distinguishedName": "String",
-  "displayName": "String",
-  "friendlyName": "String",
-  "activeDirectoryObjectGuid": "Guid"
+  "sid": "String",
+  "tags": ["String"],
+  "verdict": "String"
 }
 ```
