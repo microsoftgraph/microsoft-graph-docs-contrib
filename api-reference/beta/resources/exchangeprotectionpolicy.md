@@ -38,16 +38,7 @@ Inherits from [protectionPolicyBase](../resources/protectionpolicybase.md).
 |lastModifiedDateTime|DateTimeOffset|The date and time when the policy was last modified. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [protectionPolicyBase](../resources/protectionpolicybase.md).|
 |protectionPolicyArtifactCount|[protectionPolicyArtifactCount](../resources/protectionpolicyartifactcount.md)|The count of artifacts in the protection policy by status. Returned only on `$select`. Inherited from [protectionPolicyBase](../resources/protectionpolicybase.md).|
 |retentionSettings|[retentionSetting](../resources/retentionsetting.md) collection|Contains the retention setting details for the policy. Inherited from [protectionPolicyBase](../resources/protectionpolicybase.md).|
-|status|[protectionPolicyStatus](../resources/exchangeProtectionPolicy.md#protectionpolicystatus-values)|Status of the policy. This value is an aggregated status of the protection units. The possible values are: `inactive`, `activeWithErrors`, `updating`, `active`, `unknownFutureValue`. Inherited from [protectionPolicyBase](../resources/protectionpolicybase.md).|
-
-### protectionPolicyStatus values
-|Member | Description |
-|:------|:------------|
-|active | All units are protected.|
-|activeWithErrors | Some units are protected while others are unprotected.|
-|inactive | All units are unprotected.|
-|updating | Some or all units are in a `protectRequested`, `unprotectRequested`, or `removeRequested` state.|
-|unknownFutureValue | Evolvable enumeration sentinel value. Don't use.|
+|status|[protectionPolicyStatus](../resources/protectionpolicybase.md#protectionpolicystatus-values)|Status of the policy. This value is an aggregated status of the protection units. The possible values are: `inactive`, `activeWithErrors`, `updating`, `active`, `unknownFutureValue`. Inherited from [protectionPolicyBase](../resources/protectionpolicybase.md).|
 
 ## Relationships
 |Relationship|Type|Description|
