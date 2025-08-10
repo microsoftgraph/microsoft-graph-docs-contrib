@@ -25,6 +25,54 @@
             "ChangeType": "Addition",
             "Description": "Added the **protectionPolicyArtifactCount** property to the [protectionPolicyBase](https://learn.microsoft.com/en-us/graph/api/resources/protectionPolicyBase?view=graph-rest-beta) resource.",
             "Target": "protectionPolicyBase"
+          },
+          {
+            "Id": "4cf82b20-c864-4b2b-b34a-17d6dc80dccc",
+            "ApiChange": "Property",
+            "ChangedApiName": "isEnabled",
+            "ChangeType": "Addition",
+            "Description": "Added the **isEnabled** property to the [exchangeProtectionPolicy](https://learn.microsoft.com/en-us/graph/api/resources/exchangeProtectionPolicy?view=graph-rest-beta) resource.",
+            "Target": "exchangeProtectionPolicy"
+          },
+          {
+            "Id": "4cf82b20-c864-4b2b-b34a-17d6dc80dccc",
+            "ApiChange": "Property",
+            "ChangedApiName": "protectionPolicyArtifactCount",
+            "ChangeType": "Addition",
+            "Description": "Added the **protectionPolicyArtifactCount** property to the [exchangeProtectionPolicy](https://learn.microsoft.com/en-us/graph/api/resources/exchangeProtectionPolicy?view=graph-rest-beta) resource.",
+            "Target": "exchangeProtectionPolicy"
+          },
+          {
+            "Id": "4cf82b20-c864-4b2b-b34a-17d6dc80dccc",
+            "ApiChange": "Property",
+            "ChangedApiName": "isEnabled",
+            "ChangeType": "Addition",
+            "Description": "Added the **isEnabled** property to the [oneDriveForBusinessProtectionPolicy](https://learn.microsoft.com/en-us/graph/api/resources/oneDriveForBusinessProtectionPolicy?view=graph-rest-beta) resource.",
+            "Target": "oneDriveForBusinessProtectionPolicy"
+          },
+          {
+            "Id": "4cf82b20-c864-4b2b-b34a-17d6dc80dccc",
+            "ApiChange": "Property",
+            "ChangedApiName": "protectionPolicyArtifactCount",
+            "ChangeType": "Addition",
+            "Description": "Added the **protectionPolicyArtifactCount** property to the [oneDriveForBusinessProtectionPolicy](https://learn.microsoft.com/en-us/graph/api/resources/oneDriveForBusinessProtectionPolicy?view=graph-rest-beta) resource.",
+            "Target": "oneDriveForBusinessProtectionPolicy"
+          },
+          {
+            "Id": "4cf82b20-c864-4b2b-b34a-17d6dc80dccc",
+            "ApiChange": "Property",
+            "ChangedApiName": "isEnabled",
+            "ChangeType": "Addition",
+            "Description": "Added the **isEnabled** property to the [sharePointProtectionPolicy](https://learn.microsoft.com/en-us/graph/api/resources/sharePointProtectionPolicy?view=graph-rest-beta) resource.",
+            "Target": "sharePointProtectionPolicy"
+          },
+          {
+            "Id": "4cf82b20-c864-4b2b-b34a-17d6dc80dccc",
+            "ApiChange": "Property",
+            "ChangedApiName": "protectionPolicyArtifactCount",
+            "ChangeType": "Addition",
+            "Description": "Added the **protectionPolicyArtifactCount** property to the [sharePointProtectionPolicy](https://learn.microsoft.com/en-us/graph/api/resources/sharePointProtectionPolicy?view=graph-rest-beta) resource.",
+            "Target": "sharePointProtectionPolicy"
           }
         ],
         "Id": "4cf82b20-c864-4b2b-b34a-17d6dc80dccc",
