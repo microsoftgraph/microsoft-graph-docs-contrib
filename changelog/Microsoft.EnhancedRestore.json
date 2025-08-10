@@ -1618,6 +1618,30 @@
         },
         {
           "Id": "8662c176-3414-42a2-bf63-99822f367120",
+          "ApiChange": "Property",
+          "ChangedApiName": "offboardRequestedDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **offboardRequestedDateTime** property to the [siteProtectionUnit](https://learn.microsoft.com/en-us/graph/api/resources/siteProtectionUnit?view=graph-rest-1.0) resource.",
+          "Target": "siteProtectionUnit"
+        },
+        {
+          "Id": "8662c176-3414-42a2-bf63-99822f367120",
+          "ApiChange": "Property",
+          "ChangedApiName": "offboardRequestedDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **offboardRequestedDateTime** property to the [mailboxProtectionUnit](https://learn.microsoft.com/en-us/graph/api/resources/mailboxProtectionUnit?view=graph-rest-1.0) resource.",
+          "Target": "mailboxProtectionUnit"
+        },
+        {
+          "Id": "8662c176-3414-42a2-bf63-99822f367120",
+          "ApiChange": "Property",
+          "ChangedApiName": "offboardRequestedDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **offboardRequestedDateTime** property to the [driveProtectionUnit](https://learn.microsoft.com/en-us/graph/api/resources/driveProtectionUnit?view=graph-rest-1.0) resource.",
+          "Target": "driveProtectionUnit"
+        },
+        {
+          "Id": "8662c176-3414-42a2-bf63-99822f367120",
           "ApiChange": "Method",
           "ChangedApiName": "cancelOffboard",
           "ChangeType": "Addition",
@@ -1637,8 +1661,8 @@
       "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2025-08-05T01:08:05.3436315Z",
-      "WorkloadArea": "EnhancedRestore",
-      "SubArea": "Backup and Restore"
+      "WorkloadArea": "Backup storage",
+      "SubArea": ""
     }
   ]
 }
