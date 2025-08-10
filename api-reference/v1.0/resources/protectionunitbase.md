@@ -23,7 +23,7 @@ This resource is an abstract type.
 |:---|:---|:---|
 |[Get](../api/protectionunitbase-get.md)|[protectionUnitBase](../resources/protectionunitbase.md)|Read the properties and relationships of a [protectionUnitBase](../resources/protectionunitbase.md) object.|
 |[Offboard](../api/protectionunitbase-offboard.md)|[protectionUnitBase](../resources/protectionunitbase.md)|Offboard a [protectionUnitBase](../resources/protectionunitbase.md).|
-|[Cancel offboard](../api/protectionunitbase-cancelOffboard.md)|[protectionUnitBase](../resources/protectionunitbase.md)|Cancel the offboarding of a [protectionUnitBase](../resources/protectionunitbase.md).|
+|[Cancel offboard](../api/protectionunitbase-canceloffboard.md)|[protectionUnitBase](../resources/protectionunitbase.md)|Cancel the offboarding of a [protectionUnitBase](../resources/protectionunitbase.md).|
 
 ## Properties
 |Property|Type|Description|
