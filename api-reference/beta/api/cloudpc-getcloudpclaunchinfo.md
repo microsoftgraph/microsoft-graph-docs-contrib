@@ -43,7 +43,7 @@ To get the [cloudPCLaunchInfo](../resources/cloudpclaunchinfo.md) for a specific
 GET /deviceManagement/virtualEndpoint/cloudPCs/{cloudPCId}/getCloudPcLaunchInfo
 ```
 
-> ![CAUTION]
+> [!CAUTION]
 > The `/deviceManagement/virtualEndpoint/cloudPCs/{cloudPCId}/getCloudPcLaunchInfo` endpoint is deprecated and will stop returning data on October 30, 2025.
 
 ## Request headers
