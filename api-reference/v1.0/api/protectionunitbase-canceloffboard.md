@@ -149,7 +149,7 @@ Content-Type: application/json
 {
   "error": {
     "code": "OperationNotAllowed",
-    "message": "Offboarding cannot be cancelled as it not in valid state.",
+    "message": "Offboarding cannot be cancelled as it is not in a valid state.",
     "details": []
   }
 }
