@@ -17,6 +17,13 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 > [!IMPORTANT]
 > Features in _preview_ status are subject to change without notice, and might not be promoted to generally available (GA) status. Don't use preview features in production apps.
 
+## August 2025: New in preview only
+
+### Backup storage
+
+- Use the **isEnabled** property on [exchangeProtectionPolicy](/graph/api/resources/exchangeProtectionPolicy?view=graph-rest-beta&preserve-view=true), [oneDriveForBusinessProtectionPolicy](/graph/api/resources/oneDriveForBusinessProtectionPolicy?view=graph-rest-beta&preserve-view=true), [sharePointProtectionPolicy](/graph/api/resources/sharePointProtectionPolicy?view=graph-rest-beta&preserve-view=true) to get whether the policy is enabled.
+-  Use the **protectionPolicyArtifactCount** property on [exchangeProtectionPolicy](/graph/api/resources/exchangeProtectionPolicy?view=graph-rest-beta&preserve-view=true), [oneDriveForBusinessProtectionPolicy](/graph/api/resources/oneDriveForBusinessProtectionPolicy?view=graph-rest-beta&preserve-view=true), [sharePointProtectionPolicy](/graph/api/resources/sharePointProtectionPolicy?view=graph-rest-beta&preserve-view=true) to get the count of artifacts in the protection policy by status.
+
 ## July 2025: New and generally available
 
 ### Bicep Templates for Microsoft Graph resources
