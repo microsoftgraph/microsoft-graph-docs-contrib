@@ -20,7 +20,7 @@ Inherits from [alertEvidence](../resources/security-alertevidence.md).
 
 ## Properties
 | Property                  | Type   | Description                                                   |
-|---------------------------|--------|---------------------------------------------------------------|
+|:--------------------------|:-------|:--------------------------------------------------------------|
 | activeDirectoryObjectGuid | Guid   | The unique group identifier assigned by Active Directory.     |
 | displayName               | String | The name of the security group.                               |
 | distinguishedName         | String | The distinguished name of the security group.                 |
