@@ -41,7 +41,7 @@ This resource is an abstract type.
 ### protectionUnitStatus values
 |Member | Description |
 |:------|:------------|
-|protectRequested | Protection of the unit was requested. |
+|protectRequested | Protection of the unit was requested. Applies when a policy is activated or new units are added to an active policy. |
 |protected | The protection unit is successfully enabled.|
 |unprotectRequested | Disabling protection of the unit was requested. |
 |unprotected | The protection unit is successfully disabled.|
