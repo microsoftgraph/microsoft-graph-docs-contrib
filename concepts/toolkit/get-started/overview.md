@@ -4,6 +4,7 @@ description: "Learn how to set up your Microsoft 365 tenant and development envi
 ms.localizationpriority: medium
 author: sebastienlevert
 ms.date: 11/07/2024
+ms.topic: get-started
 ---
 
 # Get started with Microsoft Graph Toolkit

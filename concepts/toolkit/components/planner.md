@@ -4,6 +4,7 @@ description: "The Planner component enables the user to view, add, remove, compl
 ms.localizationpriority: medium
 author: sebastienlevert
 ms.date: 11/07/2024
+ms.topic: article
 ---
 
 # Planner component in Microsoft Graph Toolkit

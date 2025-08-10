@@ -4,6 +4,7 @@ description: "Find instructions for installing the Microsoft Graph SDKs for .NET
 ms.localizationpriority: medium
 author: MichaelMainer
 ms.date: 11/07/2024
+ms.topic: install-set-up-deploy
 ---
 
 # Install a Microsoft Graph SDK

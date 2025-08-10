@@ -5,6 +5,7 @@ author: "SuryaLashmiS"
 ms.localizationpriority: high
 ms.subservice: "outlook"
 ms.date: 11/07/2024
+ms.topic: concept-article
 ---
 
 # Overview of the Microsoft Graph send mail process
@@ -32,7 +33,7 @@ If step 3 fails, the transport process constructs a non-delivery report message 
 
 ## 4. Move original message to the Sent Items folder
 After all of this succeeds, transport calls back to the store to assume responsibility for the message. In response, the Exchange store updates the message and
-moves it from the Drafts folder to the Sent Items folder. (Depending on optional message properties, it may move to a different folder or delete the message instead.)
+moves it from the Drafts folder to the Sent Items folder. (Depending on optional message properties, it might move to a different folder or delete the message instead.)
 
 ## 5. Perform policy evaluation and routing
 The next steps taken by transport include policy enforcement, routing, and next-hop delivery. Transport examines recipient email addresses and buckets them according
@@ -49,7 +50,7 @@ A few services are involved in generating delivery reports and sending them to t
 - When a responsible transport component, which can be a Exchange Online or non-Exchange Online component, determines that one or more recipient email
 addresses are non-deliverable, the component generates non-delivery reports.
 - At the same time, the transport component generates delivery reports if the sender explicitly requested them.
-- The recipient's email service or email client may generate read and non-read notifications, or not at all.
+- The recipient's email service or email client might generate read and non-read notifications, or not at all.
 
 For more information about report messages, see [DSNs and NDRs in Exchange Server](/exchange/mail-flow/non-delivery-reports-and-bounce-messages/non-delivery-reports-and-bounce-messages).
 
