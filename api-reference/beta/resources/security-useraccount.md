@@ -21,13 +21,13 @@ Represents common properties for a user account.
 | Property                  | Type   | Description                                                            |
 |:--------------------------|:-------|:-----------------------------------------------------------------------|
 | accountName               | String | The displayed name of the user account.                                |
+| activeDirectoryObjectGuid | Guid   | The unique user identifier assigned by Active Directory.               |
 | azureAdUserId             | String | The user object identifier in Microsoft Entra ID.                      |
 | displayName               | String | The user display name in Microsoft Entra ID.                           |
 | domainName                | String | The name of the Active Directory domain of which the user is a member. |
 | resourceAccessEvents|[microsoft.graph.security.resourceAccessEvent](../resources/security-resourceaccessevent.md) collection | Information on resource access attempts made by the user account. |
 | userPrincipalName         | String | The user principal name of the account in Microsoft Entra ID.          |
 | userSid                   | String | The local security identifier of the user account.                     |
-| activeDirectoryObjectGuid | Guid   | The user unique identifier assigned by the Active Directory.           |
 
 ## Relationships
 
@@ -45,16 +45,12 @@ The following JSON representation shows the resource type.
 {
   "@odata.type": "#microsoft.graph.security.userAccount",
   "accountName": "String",
+  "activeDirectoryObjectGuid": "Guid",
   "azureAdUserId": "String",
   "displayName": "String",
   "domainName": "String",
+  "resourceAccessEvents": [{"@odata.type": "microsoft.graph.security.resourceAccessEvent"}],
   "userPrincipalName": "String",
-  "userSid": "String",
-  "activeDirectoryObjectGuid": "Guid",
-  "resourceAccessEvents": [
-    {
-      "@odata.type": "microsoft.graph.security.resourceAccessEvent"
-    }
-  ]
+  "userSid": "String"
 }
 ```
