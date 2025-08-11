@@ -23,3 +23,6 @@ Represents the level to which the device's clipboard may be shared between apps
 |:---|:---|:---|
 |anyDestinationAnySource|0|Org users can paste data from and cut/copy data to any account, document, location or application.|
 |none|1|Org users cannot cut, copy or paste data to or from external accounts, documents, locations or applications from or into the org context.|
+|orgDestinationAnySource|2|Indicates organization users can cut/copy/paste data into the org context from any account, document, location or application.|
+|orgDestinationOrgSource|3|Indicates organization users can cut/copy/paste data into the org context from org accounts, org documents, org locations or org applications.|
+|unknownFutureValue|4|Evolvable enumeration sentinel value. Do not use.|
