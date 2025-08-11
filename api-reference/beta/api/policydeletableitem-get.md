@@ -24,7 +24,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "policydeletableitem-list-permissions"
+  "name": "policydeletableitem-get-permissions",
+  "requestUrls": ["GET /policies/deletedItems/crossTenantPartners/{id}", "GET /policies/deletedItems/crossTenantSyncPolicyPartners/{id}"],
+  "mergePermissions": true 
+  
 }
 -->
 [!INCLUDE [permissions-table](../includes/permissions/policydeletableitem-list-permissions.md)]
