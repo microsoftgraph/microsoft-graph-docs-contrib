@@ -169,7 +169,7 @@ Content-Type: application/json
 The following example shows a request for crossTenantIdentitySyncPolicyPartner.
 <!-- {
   "blockType": "request",
-  "name": "list_policydeletableitem"
+  "name": "list_policydeletableitem_crossTenantIdentitySyncPolicyPartner"
 }
 -->
 ```HTTP
