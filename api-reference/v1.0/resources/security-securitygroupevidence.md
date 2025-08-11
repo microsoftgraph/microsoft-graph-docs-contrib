@@ -25,13 +25,13 @@ Inherits from [alertEvidence](../resources/security-alertevidence.md).
 | displayName               | String | The name of the security group.                               |
 | distinguishedName         | String | The distinguished name of the security group.                 |
 | friendlyName              | String | The friendly name of the security group.                      |
-| remediationStatus         | [microsoft.graph.security.evidenceRemediationStatus](#evidenceremediationstatus-values)| Status of the remediation action taken. The possible values are: `none`, `remediated`, `prevented`, `blocked`, `notFound`, `unknownFutureValue`, `active`, `pendingApproval`, `declined`, `unremediated`, `running`, `partiallyRemediated`. Use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `active`, `pendingApproval`, `declined`, `unremediated`, `running`, `partiallyRemediated`.|
+| remediationStatus         | [microsoft.graph.security.evidenceRemediationStatus](../resources/security-alertevidence.md#evidenceremediationstatus-values)| Status of the remediation action taken. The possible values are: `none`, `remediated`, `prevented`, `blocked`, `notFound`, `unknownFutureValue`, `active`, `pendingApproval`, `declined`, `unremediated`, `running`, `partiallyRemediated`. Use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `active`, `pendingApproval`, `declined`, `unremediated`, `running`, `partiallyRemediated`.|
 | remediationStatusDetails  | String | Details about the remediation status.                         |
-| roles                     | [microsoft.graph.security.evidenceRole](#evidencerole-values) collection | The role/s that an evidence entity represents in an alert, for example, an IP address that is associated with an attacker has the evidence role **Attacker**.|
+| roles                     | [microsoft.graph.security.evidenceRole](../resources/security-alertevidence.md#evidencerole-values) collection | The role/s that an evidence entity represents in an alert, for example, an IP address that is associated with an attacker has the evidence role **Attacker**.|
 | securityGroupId           | String | Unique identifier of the security group.                      |
 | sid                       | String | The security identifier of the group.                         |
 | tags                      | String collection | Array of custom tags associated with an evidence instance, for example, to denote a group of devices, high-value assets, etc.|
-| verdict                   | [microsoft.graph.security.evidenceVerdict](#evidenceverdict-values) | The decision reached by automated investigation. The possible values are: `unknown`, `suspicious`, `malicious`, `noThreatsFound`, `unknownFutureValue`.|
+| verdict                   | [microsoft.graph.security.evidenceVerdict](../resources/security-alertevidence.md#evidenceverdict-values) | The decision reached by automated investigation. The possible values are: `unknown`, `suspicious`, `malicious`, `noThreatsFound`, `unknownFutureValue`.|
 
 ## Relationships
 None.
