@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the **policyDeletableItem** objects and their properties, which might be one of the following deleted policy types:
+Get a list of the [policyDeletableItem](../resources/policydeletableitem.md) objects and their properties, which might be one of the following deleted policy types:
 - [crossTenantAccessPolicyConfigurationPartner](../resources/crosstenantaccesspolicyconfigurationpartner.md)
 - [crossTenantIdentitySyncPolicyPartner](../resources/crosstenantidentitysyncpolicypartner.md)
 
