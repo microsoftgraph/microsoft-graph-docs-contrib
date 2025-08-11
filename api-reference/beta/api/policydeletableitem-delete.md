@@ -110,7 +110,7 @@ DELETE https://graph.microsoft.com/beta/policies/deletedItems/crossTenantSyncPol
 ```
 
 
-### Response
+#### Response
 
 The following example shows the response.
 <!-- {
