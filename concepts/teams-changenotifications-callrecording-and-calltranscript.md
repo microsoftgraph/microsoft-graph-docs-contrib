@@ -19,6 +19,7 @@ This article describes scenarios for the **transcript** and **recording** resour
 > If you request a subscription **expirationDateTime** that is more than 1 hour in the future, you must subscribe to lifecycle notifications by including a **lifecycleNotificationUrl** property in your subscription request. Otherwise, your subscription request will fail with the following error message: *lifecycleNotificationUrl is required for subscription creation on this resource when the expirationDateTime value exceeds 1 hour*.
 
 ## Subscribe to transcripts available at the tenant-level
+
 This sections describes the methods to subscribe to transcripts available at the tenant level for both online meetings and adhoc calls.
 
 ### **For online meetings**
