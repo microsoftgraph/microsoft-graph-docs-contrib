@@ -20,20 +20,18 @@ Inherits from [alertEvidence](../resources/security-alertevidence.md).
 | Property                  | Type   | Description                                                   |
 |:--------------------------|:-------|:--------------------------------------------------------------|
 | activeDirectoryObjectGuid | Guid   | The unique group identifier assigned by Active Directory.     |
+| createdDateTime           | DateTimeOffset | The date and time when the evidence was created and added to the alert. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. |
+| detailedRoles             | String collection | Detailed description of the entity role/s in an alert. Values are free-form.|
 | displayName               | String | The name of the security group.                               |
 | distinguishedName         | String | The distinguished name of the security group.                 |
 | friendlyName              | String | The friendly name of the security group.                      |
-| activeDirectoryObjectGuid | Guid   | The group unique identifier assigned by the Active Directory. |
-| createdDateTime           | DateTimeOffset | The date and time when the evidence was created and added to the alert. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. |
-| detailedRoles             | String collection | Detailed description of the entity role/s in an alert. Values are free-form.|
 | remediationStatus         | [microsoft.graph.security.evidenceRemediationStatus](#evidenceremediationstatus-values)| Status of the remediation action taken. The possible values are: `none`, `remediated`, `prevented`, `blocked`, `notFound`, `unknownFutureValue`, `active`, `pendingApproval`, `declined`, `unremediated`, `running`, `partiallyRemediated`. Use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `active`, `pendingApproval`, `declined`, `unremediated`, `running`, `partiallyRemediated`.|
 | remediationStatusDetails  | String | Details about the remediation status.                         |
 | roles                     | [microsoft.graph.security.evidenceRole](#evidencerole-values) collection | The role/s that an evidence entity represents in an alert, for example, an IP address that is associated with an attacker has the evidence role **Attacker**.|
-| tags                      | String collection | Array of custom tags associated with an evidence instance, for example, to denote a group of devices, high-value assets, etc.|
-| verdict                   | [microsoft.graph.security.evidenceVerdict](#evidenceverdict-values)    | The decision reached by automated investigation. The possible values are: `unknown`, `suspicious`, `malicious`, `noThreatsFound`, `unknownFutureValue`.|
-
 | securityGroupId           | String | Unique identifier of the security group.                      |
 | sid                       | String | The security identifier of the group.                         |
+| tags                      | String collection | Array of custom tags associated with an evidence instance, for example, to denote a group of devices, high-value assets, etc.|
+| verdict                   | [microsoft.graph.security.evidenceVerdict](#evidenceverdict-values) | The decision reached by automated investigation. The possible values are: `unknown`, `suspicious`, `malicious`, `noThreatsFound`, `unknownFutureValue`.|
 
 ## Relationships
 None.
@@ -51,6 +49,7 @@ The following JSON representation shows the resource type.
   "@odata.type": "#microsoft.graph.security.securityGroupEvidence",
   "activeDirectoryObjectGuid": "Guid",
   "createdDateTime": "String (timestamp)",
+  "detailedRoles": ["String"],
   "displayName": "String",
   "distinguishedName": "String",
   "friendlyName": "String",
