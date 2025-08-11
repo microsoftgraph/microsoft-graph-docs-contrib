@@ -68,7 +68,9 @@ If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
-### Request
+### Example 1: Permanently delete a deleted crossTenantAccessPolicyConfigurationPartner object
+
+#### Request
 
 The following example shows a request for crossTenantAccessPolicyConfigurationPartner.
 <!-- {
