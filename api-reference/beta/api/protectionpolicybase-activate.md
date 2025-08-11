@@ -125,6 +125,7 @@ Content-Location: https://graph.microsoft.com/beta/solutions/backupRestore/prote
   "id": "61633878-8321-4950-bfaf-ed285bdd1461",
   "displayName": "SharePoint Protection Policy",
   "status": "updating",
+  "isEnabled" : true,
   "createdBy": {
     "application": {
       "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
