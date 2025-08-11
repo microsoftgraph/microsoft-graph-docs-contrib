@@ -30,7 +30,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/policydeletableitem-list-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/policydeletableitem-get-permissions.md)]
 
 ## HTTP request
 
