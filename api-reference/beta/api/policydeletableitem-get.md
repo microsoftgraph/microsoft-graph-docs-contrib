@@ -72,7 +72,9 @@ If successful, this method returns a `200 OK` response code and a [policyDeletab
 
 ## Examples
 
-### Request
+### Example 1: Retrieve a deleted crossTenantAccessPolicyConfigurationPartner object
+
+#### Request
 
 The following example shows a request for a crossTenantAccessPolicyConfigurationPartner.
 <!-- {
