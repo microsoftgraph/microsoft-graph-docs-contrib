@@ -1,7 +1,7 @@
 ---
 title: "reports: getEnterpriseApplicationReport"
 description: "Get a collection of enterprise application reports based on aggregated traffic logs for a specified time period."
-author: Moti-ba
+author: miritsadon
 ms.localizationpriority: medium
 ms.subservice: entra-global-secure-access
 doc_type: apiPageType
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a collection of enterprise application reports based on aggregated traffic logs for a specified time period.
+Get a collection of enterprise application reports based on aggregated traffic logs for a specified time period in Global Secure Access.
 
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -35,7 +35,6 @@ GET /networkAccessRoot/reports/getEnterpriseApplicationReport(startDateTime={sta
 
 ## Function parameters
 In the request URL, provide the following query parameters with values.
-The following table shows the parameters that can be used with this function.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
@@ -59,14 +58,13 @@ If successful, this function returns a `200 OK` response code and a [microsoft.g
 
 ### Request
 The following example shows a request.
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "reportsthis.getenterpriseapplicationreport"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/networkaccess/reports/getEnterpriseApplicationReport(startDateTime=2023-08-20T12:12:59.076Z, endDateTime=2023-08-21T12:12:59.076Z)
+GET https://graph.microsoft.com/beta/networkAccessRoot/reports/getEnterpriseApplicationReport(startDateTime=String (timestamp),endDateTime=String (timestamp),userId='parameterValue')
 ```
 
 ### Response
