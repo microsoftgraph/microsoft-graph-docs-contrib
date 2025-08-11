@@ -37,7 +37,7 @@ GET /me/cloudPCs/{cloudPCId}/getCloudPcLaunchInfo
 GET /users/{userId}/cloudPCs/{id}/getCloudPcLaunchInfo
 ```
 
-To get the [cloudPCLaunchInfo](../resources/cloudpclaunchinfo.md) for a specific [cloudPC](../resources/cloudpc.md) in the organization, using either delegated permission (the signed-in user should be the administrator) or application permission.
+To get the [cloudPCLaunchInfo](../resources/cloudpclaunchinfo.md) for a specific [cloudPC](../resources/cloudpc.md) in the organization, using delegated permission (the signed-in user should be the administrator).
 
 ``` http
 GET /deviceManagement/virtualEndpoint/cloudPCs/{cloudPCId}/getCloudPcLaunchInfo
