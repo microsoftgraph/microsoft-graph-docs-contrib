@@ -102,7 +102,7 @@ HTTP/1.1 204 No Content
 The following example shows a request for crossTenantIdentitySyncPolicyPartner.
 <!-- {
   "blockType": "request",
-  "name": "delete_policydeletableitem"
+  "name": "delete_policydeletableitem_crossTenantIdentitySyncPolicyPartner"
 }
 -->
 ```HTTP
