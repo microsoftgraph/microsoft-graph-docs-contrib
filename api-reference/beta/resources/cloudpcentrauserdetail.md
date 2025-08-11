@@ -1,0 +1,44 @@
+---
+title: "cloudPcEntraUserDetail resource type"
+description: "Represents the user details (id, displayName) for the user associated with a Reserve Cloud PC assignment."
+author: "bert589998"
+ms.localizationpriority: medium
+ms.subservice: "cloud-pc"
+doc_type: resourcePageType
+ms.date: 08/11/2025
+---
+
+# cloudPcEntraUserDetail resource type
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Represents the user details (for example, **id** and **displayName**) for the user associated with a Reserve Cloud PC assignment.
+
+## Properties
+
+|Property|Type|Description|
+|:---|:---|:---|
+|displayName|String|The display name of the user. Read-only.|
+|id|String|The unique identifier (GUID) of the user. Read-only.|
+
+## Relationships
+
+None.
+
+## JSON representation
+
+The following JSON representation shows the resource type.
+<!-- {
+  "blockType": "resource",
+  "@odata.type": "microsoft.graph.cloudPcEntraUserDetail",
+  "openType": false
+} -->
+``` json
+{
+  "@odata.type": "#microsoft.graph.cloudPcEntraUserDetail",
+  "displayName": "String",
+  "id": "String"
+}
+```
