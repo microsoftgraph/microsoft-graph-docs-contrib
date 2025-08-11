@@ -161,7 +161,10 @@ Content-Type: application/json
 }
 ```
 
-### Request
+
+### Get deleted crossTenantIdentitySyncPolicyPartner objects
+
+#### Request
 
 The following example shows a request for crossTenantIdentitySyncPolicyPartner.
 <!-- {
