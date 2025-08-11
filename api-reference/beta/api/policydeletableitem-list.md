@@ -71,7 +71,9 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Request
+### Get deleted crossTenantAccessPolicyConfigurationPartner objects
+
+#### Request
 
 The following example shows a request for crossTenantAccessPolicyConfigurationPartner.
 <!-- {
