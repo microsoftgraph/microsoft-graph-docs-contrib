@@ -75,7 +75,7 @@ If successful, this method returns a `204 No Content` response code.
 The following example shows a request for crossTenantAccessPolicyConfigurationPartner.
 <!-- {
   "blockType": "request",
-  "name": "delete_policydeletableitem"
+  "name": "delete_policydeletableitem_crossTenantAccessPolicyConfigurationPartner"
 }
 -->
 ```HTTP
