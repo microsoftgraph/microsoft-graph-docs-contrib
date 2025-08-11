@@ -468,9 +468,9 @@ items:
       href: ../../api/onpremisesdirectorysynchronization-get.md
     - name: Update
       href: ../../api/onpremisesdirectorysynchronization-update.md
-  - name: On-premises sync behavior
+  - name: On-premises sync behavior (Source of Authority)
     items:
-    - name: On-premises sync behavior
+    - name: On-premises sync behavior (Source of Authority)
       href: ../../resources/onpremisessyncbehavior.md
     - name: Get
       href: ../../api/onpremisessyncbehavior-get.md
