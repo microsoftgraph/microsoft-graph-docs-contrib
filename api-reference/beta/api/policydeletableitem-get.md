@@ -131,7 +131,10 @@ Content-Type: application/json
 }
 ```
 
-### Request
+
+### Example 2: Retrieve a deleted crossTenantIdentitySyncPolicyPartner object
+
+#### Request
 
 The following example shows a request for a crossTenantIdentitySyncPolicyPartner.
 <!-- {
