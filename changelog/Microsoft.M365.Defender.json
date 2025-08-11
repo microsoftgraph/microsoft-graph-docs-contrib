@@ -3,6 +3,56 @@
     {
       "ChangeList": [
         {
+          "Id": "439479a0-083f-497c-a248-be7c89e7f773",
+          "ApiChange": "Property",
+          "ChangedApiName": "activeDirectoryObjectGuid",
+          "ChangeType": "Addition",
+          "Description": "Added the **activeDirectoryObjectGuid** property to the [securityGroupEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-securitygroupevidence?view=graph-rest-beta) resource.",
+          "Target": "securityGroupEvidence"
+        },
+        {
+          "Id": "439479a0-083f-497c-a248-be7c89e7f773",
+          "ApiChange": "Property",
+          "ChangedApiName": "distinguishedName",
+          "ChangeType": "Addition",
+          "Description": "Added the **distinguishedName** property to the [securityGroupEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-securitygroupevidence?view=graph-rest-beta) resource.",
+          "Target": "securityGroupEvidence"
+        },
+        {
+          "Id": "439479a0-083f-497c-a248-be7c89e7f773",
+          "ApiChange": "Property",
+          "ChangedApiName": "friendlyName",
+          "ChangeType": "Addition",
+          "Description": "Added the **friendlyName** property to the [securityGroupEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-securitygroupevidence?view=graph-rest-beta) resource.",
+          "Target": "securityGroupEvidence"
+        },
+        {
+          "Id": "439479a0-083f-497c-a248-be7c89e7f773",
+          "ApiChange": "Property",
+          "ChangedApiName": "sid",
+          "ChangeType": "Addition",
+          "Description": "Added the **sid** property to the [securityGroupEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-securitygroupevidence?view=graph-rest-beta) resource.",
+          "Target": "securityGroupEvidence"
+        },
+        {
+          "Id": "439479a0-083f-497c-a248-be7c89e7f773",
+          "ApiChange": "Property",
+          "ChangedApiName": "activeDirectoryObjectGuid",
+          "ChangeType": "Addition",
+          "Description": "Added the **activeDirectoryObjectGuid** property to the [userAccount](https://learn.microsoft.com/en-us/graph/api/resources/security-useraccount?view=graph-rest-beta) resource.",
+          "Target": "userAccount"
+        }
+      ],
+      "Id": "439479a0-083f-497c-a248-be7c89e7f773",
+      "Cloud": "Review",
+      "Version": "beta",
+      "CreatedDateTime": "2025-08-07T18:25:12.5236065Z",
+      "WorkloadArea": "Security",
+      "SubArea": "Alerts and incidents"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "b6c0867e-4f50-47cf-80ca-426e318970f5",
           "ApiChange": "Property",
           "ChangedApiName": "activeDirectoryObjectGuid",
