@@ -29,17 +29,17 @@
           {
             "Id": "049f16d5-1009-42de-b1c3-67f2fb51e47f",
             "ApiChange": "Member",
-            "ChangedApiName": "deprovisionedCloudPcCount",
+            "ChangedApiName": "cloudPcDeprovisionedThreshold",
             "ChangeType": "Addition",
-            "Description": "Added the `deprovisionedCloudPcCount` member to the **conditionCategory** enumeration.",
+            "Description": "Added the `cloudPcDeprovisionedThreshold` member to the **conditionCategory** enumeration.",
             "Target": "conditionCategory"
           },
           {
             "Id": "049f16d5-1009-42de-b1c3-67f2fb51e47f",
             "ApiChange": "Member",
-            "ChangedApiName": "deprovisionFailedReserveCloudPcCount",
+            "ChangedApiName": "cloudPcReserveDeprovisionFailedThreshold",
             "ChangeType": "Addition",
-            "Description": "Added the `deprovisionFailedReserveCloudPcCount` member to the **conditionCategory** enumeration.",
+            "Description": "Added the `cloudPcReserveDeprovisionFailedThreshold` member to the **conditionCategory** enumeration.",
             "Target": "conditionCategory"
           }
       ],

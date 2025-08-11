@@ -56,7 +56,7 @@ For more information, see the [monitoring](devicemanagement-monitoring.md) resou
 |cloudPcFrontlineInsufficientLicensesScenario| The alert rule was triggered for the Frontline Cloud PCs where more concurrent Cloud PC connections were active than the concurrency limit allows.|
 |cloudPcInaccessibleScenario| The alert rule was triggered when Cloud PCs couldn't connect due to host health failure, connection errors, or a zone outage. Alternatively, because they were under provisioning or restoring device status.|
 |cloudPcFrontlineConcurrencyScenario| Indicates that the alert rule was triggered for all conditions of the Frontline Cloud PCs concurrency usage. It includes buffer usage conditions for now.|
-|cloudPcUserSettingsPersistenceScenario| Indicates that the alert rule was triggered when a Cloud PC entered a failed deprovisioning process.|
+|cloudPcUserSettingsPersistenceScenario| Indicates that the alert rule is associated with Frontline Cloud PC user experience sync storage has reached limits/thresholds.|
 |cloudPcDeprovisionFailedScenario|Indicates that the alert rule was triggered when a Cloud PC entered a failed deprovisioning process.|
 
 ### ruleSeverityType values
