@@ -1,6 +1,6 @@
 ---
 title: "policyDeletableRoot resource type"
-description: "Resource type showing the relationship with deletable policy types."
+description: "Represents a container for policy types in Microsoft Entra that support soft-delete functionality."
 author: "ashyasingh"
 ms.date: 06/18/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Resource type showing the relationship with deletable policy types.
+Represents a container for policy types in Microsoft Entra that support soft-delete functionality.
 
 
 ## Methods
