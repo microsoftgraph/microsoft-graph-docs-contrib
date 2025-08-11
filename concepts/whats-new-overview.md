@@ -28,7 +28,7 @@ Use the [resize](/graph/api/cloudpc-resize) operation of [cloudPC](/graph/api/re
 
 ### Terraform Templates for Microsoft Graph resources
 
-[Terraform templates for Microsoft Graph resources](https://learn.microsoft.com/graph/templates/terraform/) is now in preview. Using Terraform templates, you can deploy the following Microsoft Graph resources for your infrastructure as code (IaC) projects:
+[Terraform templates for Microsoft Graph resources](/graph/templates/terraform/overview-terraform-for-graph) is now in preview. Using Terraform templates, you can deploy the following Microsoft Graph resources for your infrastructure as code (IaC) projects:
 
 - Applications
 - App role assignments
