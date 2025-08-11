@@ -8,7 +8,7 @@ ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
-# Delete policyDeletableItem
+# Permanently delete policyDeletableItem
 
 Namespace: microsoft.graph
 
