@@ -83,7 +83,7 @@ DELETE https://graph.microsoft.com/beta/policies/deletedItems/crossTenantPartner
 ```
 
 
-### Response
+#### Response
 
 The following example shows the response.
 <!-- {
