@@ -79,7 +79,7 @@ If successful, this method returns a `200 OK` response code and a [policyDeletab
 The following example shows a request for a crossTenantAccessPolicyConfigurationPartner.
 <!-- {
   "blockType": "request",
-  "name": "get_policydeletableitem"
+  "name": "get_policydeletableitem_crossTenantAccessPolicyConfigurationPartner"
 }
 -->
 ```HTTP
