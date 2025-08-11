@@ -95,7 +95,9 @@ The following example shows the response.
 HTTP/1.1 204 No Content
 ```
 
-### Request
+### Example 2: Permanently delete a deleted crossTenantIdentitySyncPolicyPartner object
+
+#### Request
 
 The following example shows a request for crossTenantIdentitySyncPolicyPartner.
 <!-- {
