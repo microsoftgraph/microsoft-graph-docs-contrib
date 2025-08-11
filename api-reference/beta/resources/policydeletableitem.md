@@ -1,6 +1,6 @@
 ---
 title: "policyDeletableItem resource type"
-description: "Resource type showing the deletable policy types."
+description: "Represents policy types in Microsoft Entra that support soft-delete functionality."
 author: "ashyasingh"
 ms.date: 06/18/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents policies that support soft-delete. When deleted, you can restore these policies within a 30-day window, after which they are automatically and permanently deleted.
+Represents policy types in Microsoft Entra that support soft-delete functionality. When deleted, you can restore these policies within a 30-day window, after which they are automatically and permanently deleted.
 
 This resource is an abstract type from which the following resources inherit: 
 - [crossTenantAccessPolicyConfigurationPartner](../resources/crosstenantaccesspolicyconfigurationpartner.md)
