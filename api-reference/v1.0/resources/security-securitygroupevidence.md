@@ -1,6 +1,6 @@
 ---
 title: "securityGroupEvidence resource type"
-description: "A security group that is reported in the alert as evidence."
+description: "Represents a security group that is reported in the alert as evidence."
 ms.date: 11/11/2022
 author: "BenAlfasi"
 ms.localizationpriority: medium
@@ -12,17 +12,16 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.security
 
-A security group that is reported in the alert as evidence.
+Represents a security group that is reported in the alert as evidence.
 
 Inherits from [alertEvidence](../resources/security-alertevidence.md).
 
 ## Properties
 | Property                  | Type   | Description                                                   |
-|---------------------------|--------|---------------------------------------------------------------|
-| sid                       | String | The security identifier of the group.                         |
-| securityGroupId           | String | Unique identifier of the security group.                      |
-| distinguishedName         | String | The distinguished name of the security group.                 |
+|:--------------------------|:-------|:--------------------------------------------------------------|
+| activeDirectoryObjectGuid | Guid   | The unique group identifier assigned by Active Directory.     |
 | displayName               | String | The name of the security group.                               |
+| distinguishedName         | String | The distinguished name of the security group.                 |
 | friendlyName              | String | The friendly name of the security group.                      |
 | activeDirectoryObjectGuid | Guid   | The group unique identifier assigned by the Active Directory. |
 | createdDateTime           | DateTimeOffset | The date and time when the evidence was created and added to the alert. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. |
@@ -33,6 +32,8 @@ Inherits from [alertEvidence](../resources/security-alertevidence.md).
 | tags                      | String collection | Array of custom tags associated with an evidence instance, for example, to denote a group of devices, high-value assets, etc.|
 | verdict                   | [microsoft.graph.security.evidenceVerdict](#evidenceverdict-values)    | The decision reached by automated investigation. The possible values are: `unknown`, `suspicious`, `malicious`, `noThreatsFound`, `unknownFutureValue`.|
 
+| securityGroupId           | String | Unique identifier of the security group.                      |
+| sid                       | String | The security identifier of the group.                         |
 
 ## Relationships
 None.
@@ -48,21 +49,17 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.security.securityGroupEvidence",
+  "activeDirectoryObjectGuid": "Guid",
   "createdDateTime": "String (timestamp)",
-  "verdict": "String",
+  "displayName": "String",
+  "distinguishedName": "String",
+  "friendlyName": "String",
   "remediationStatus": "String",
   "remediationStatusDetails": "String",
-  "roles": [
-    "String"
-  ],
-  "tags": [
-    "String"
-  ],
-  "sid": "String",
+  "roles": ["String"],
   "securityGroupId": "String",
-  "distinguishedName": "String",
-  "displayName": "String",
-  "friendlyName": "String",
-  "activeDirectoryObjectGuid": "Guid"
+  "sid": "String",
+  "tags": ["String"],
+  "verdict": "String"
 }
 ```

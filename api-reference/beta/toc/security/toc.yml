@@ -64,8 +64,12 @@ items:
       href: ../../api/security-incidenttask-executeresponseaction.md
   - name: Complex types
     items:
+    - name: Security group evidence
+      href: ../../resources/security-securitygroupevidence.md
     - name: Teams message evidence
       href: ../../resources/security-teamsmessageevidence.md
+    - name: User account
+      href: ../../resources/security-useraccount.md
 - name: Attack simulation and training
   items:
   - name: Simulation
