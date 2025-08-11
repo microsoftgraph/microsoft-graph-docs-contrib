@@ -69,12 +69,6 @@ The following example shows a request.
 GET https://graph.microsoft.com/beta/networkaccess/reports/getCloudApplicationReport(startDateTime=2023-08-20T12:12:59.076Z, endDateTime=2023-08-21T12:12:59.076Z) 
 ```
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/reportsthisgetcloudapplicationreport-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 ### Response
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
