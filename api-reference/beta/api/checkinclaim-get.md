@@ -4,7 +4,7 @@ description: "Read the properties and relationships of checkInClaim object."
 author: "shijieyao"
 ms.date: 08/06/2025
 ms.localizationpriority: medium
-ms.subservice:
+ms.subservice: "Outlook"
 doc_type: apiPageType
 ---
 
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of [checkInClaim](../resources/checkinclaim.md) object.
+This API provides the check-in status for a specific Place—such as a room, workspace or desk—associated with a particular reservation. 
 
 ## Permissions
 
