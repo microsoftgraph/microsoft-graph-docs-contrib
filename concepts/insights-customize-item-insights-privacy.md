@@ -4,7 +4,7 @@ description: "Configure the visibility of insights derived from Microsoft Graph 
 author: "simonhult"
 ms.localizationpriority: high
 ms.subservice: "insights"
-ms.custom: scenarios:getting-started
+ms.custom: scenarios:getting-started, sfi-ga-nochange
 ms.date: 11/07/2024
 ---
 

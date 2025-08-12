@@ -12,7 +12,10 @@ ms.date: 04/04/2024
 
 Namespace: microsoft.graph
 
-Restore a [driveItem](../resources/driveitem.md) that has been deleted and is currently in the recycle bin. **NOTE**: This functionality is currently only available for OneDrive Personal.
+Restore a [driveItem](../resources/driveitem.md) that has been deleted and is currently in the recycle bin.
+
+> [!IMPORTANT]
+> This functionality is currently only available for OneDrive Personal.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

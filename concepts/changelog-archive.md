@@ -4,6 +4,7 @@ description: "This article contains archived changelog entries for Microsoft Gra
 author: "MSGraphDocsVteam"
 ms.localizationpriority: high
 ms.date: 07/08/2024
+ms.custom: sfi-ga-nochange
 ---
 
 # Changelog for Microsoft Graph (Archive)
