@@ -31,11 +31,11 @@
       "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2025-07-11T19:34:07.3297702Z",
-            "WorkloadArea": "Teamwork and communications",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": "Calls and online meetings"
     },
     { 
-            "ChangeList": [
+      "ChangeList": [
         {
           "Id": "9ae3e4e6-451d-43f2-ba1c-b1f3402ee10c",
           "ApiChange": "Resource",
