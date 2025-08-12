@@ -66,7 +66,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1724
+Content-Length: 1747
 
 {
   "value": {
@@ -100,15 +100,15 @@ Content-Length: 1724
         }
       }
     ],
-    "qualityUpdateSeverityInformation": {
-      "@odata.type": "microsoft.graph.windowsQualityUpdateCatalogItemSeverityInformation",
-      "maxSeverity": "important",
+    "cveSeverityInformation": {
+      "@odata.type": "microsoft.graph.windowsQualityUpdateCveSeverityInformation",
+      "maxSeverityLevel": "important",
       "maxBaseScore": 4.0,
       "exploitedCves": [
         {
-          "@odata.type": "microsoft.graph.windowsQualityUpdateCatalogItemExploitedCve",
-          "number": "Number value",
-          "url": "Url value"
+          "@odata.type": "microsoft.graph.windowsQualityUpdateCveDetail",
+          "cveNumber": "Cve Number value",
+          "cveInformationUrl": "https://example.com/cveInformationUrl/"
         }
       ]
     }
