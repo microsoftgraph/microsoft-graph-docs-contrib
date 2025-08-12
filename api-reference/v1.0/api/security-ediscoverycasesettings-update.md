@@ -48,7 +48,8 @@ PATCH /security/cases/ediscoveryCases/{ediscoveryCaseId}/settings
 |redundancyDetection|[microsoft.graph.security.redundancyDetectionSettings](../resources/security-redundancydetectionsettings.md)|Redundancy (email threading and near duplicate detection) settings for an eDiscovery case. Optional.|
 |topicModeling|[microsoft.graph.security.topicModelingSettings](../resources/security-topicmodelingsettings.md)|Topic modeling (Themes) settings for an eDiscovery case. Optional.|
 |ocr|[microsoft.graph.security.ocrSettings](../resources/security-ocrsettings.md)|The OCR (Optical Character Recognition) settings for the eDiscovery case. Optional.|
-
+|caseType|microsoft.graph.security.caseType|The type of the eDiscovery case. Possible values are: `standard`, `premium`, `unknownFutureValue`.|
+|reviewSetSettings|[microsoft.graph.security.reviewSetSettings](../resources/security-ediscoverycasesettings.md#reviewSetSettings-values)|The review set settings for the case. Possible values are: `none`, `disableGrouping`, `unknownFutureValue`.|
 
 
 ## Response
@@ -80,7 +81,9 @@ Content-Type: application/json
   },
   "ocr": {
     "@odata.type": "microsoft.graph.security.ocrSettings"
-  }
+  },
+  "caseType": "String",
+  "reviewSetSettings": "String"
 }
 ```
 

@@ -34,6 +34,7 @@ Inherits from [entity](../resources/entity.md).
 |ocr|[microsoft.graph.ediscovery.ocrSettings](../resources/ediscovery-ocrsettings.md)|The OCR (Optical Character Recognition) settings for the case.|
 |redundancyDetection|[microsoft.graph.ediscovery.redundancyDetectionSettings](../resources/ediscovery-redundancydetectionsettings.md)|The redundancy (near duplicate and email threading) detection settings for the case.|
 |topicModeling|[microsoft.graph.ediscovery.topicModelingSettings](../resources/ediscovery-topicmodelingsettings.md)|The article Modeling (Themes) settings for the case.|
+|caseType|[microsoft.graph.security.caseType](../resources/security-casetype.md)|The type of the eDiscovery case: standard, premium.|)
 
 ## Relationships
 
