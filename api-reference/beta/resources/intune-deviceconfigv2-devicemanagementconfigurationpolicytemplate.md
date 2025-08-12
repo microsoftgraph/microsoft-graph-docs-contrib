@@ -42,6 +42,7 @@ Device Management Configuration Policy Template
 |templateFamily|[deviceManagementConfigurationTemplateFamily](../resources/intune-deviceconfigv2-devicemanagementconfigurationtemplatefamily.md)|TemplateFamily for this template. Possible values are: `none`, `endpointSecurityAntivirus`, `endpointSecurityDiskEncryption`, `endpointSecurityFirewall`, `endpointSecurityEndpointDetectionAndResponse`, `endpointSecurityAttackSurfaceReduction`, `endpointSecurityAccountProtection`, `endpointSecurityApplicationControl`, `endpointSecurityEndpointPrivilegeManagement`, `enrollmentConfiguration`, `appQuietTime`, `baseline`, `unknownFutureValue`, `deviceConfigurationScripts`, `deviceConfigurationPolicies`, `windowsOsRecoveryPolicies`, `companyPortal`.|
 |allowUnmanagedSettings|Boolean|Allow unmanaged setting templates|
 |settingTemplateCount|Int32|Number of setting templates. Valid values 0 to 2147483647. This property is read-only.|
+|disableEntraGroupPolicyAssignment|Boolean|Indicates whether assignments to Entra security groups is disabled|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -70,6 +71,7 @@ Here is a JSON representation of the resource.
   "technologies": "String",
   "templateFamily": "String",
   "allowUnmanagedSettings": true,
-  "settingTemplateCount": 1024
+  "settingTemplateCount": 1024,
+  "disableEntraGroupPolicyAssignment": true
 }
 ```
