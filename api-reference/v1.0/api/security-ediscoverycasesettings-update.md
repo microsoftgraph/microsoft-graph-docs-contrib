@@ -49,7 +49,7 @@ PATCH /security/cases/ediscoveryCases/{ediscoveryCaseId}/settings
 |topicModeling|[microsoft.graph.security.topicModelingSettings](../resources/security-topicmodelingsettings.md)|Topic modeling (Themes) settings for an eDiscovery case. Optional.|
 |ocr|[microsoft.graph.security.ocrSettings](../resources/security-ocrsettings.md)|The OCR (Optical Character Recognition) settings for the eDiscovery case. Optional.|
 |caseType|microsoft.graph.security.caseType|The type of the eDiscovery case. Possible values are: `standard`, `premium`, `unknownFutureValue`.|
-|reviewSetSettings|[microsoft.graph.security.reviewSetSettings](../resources/security-ediscoverycasesettings.md#reviewSetSettings-values)|The review set settings for the case. Possible values are: `none`, `disableGrouping`, `unknownFutureValue`.|
+|reviewSetSettings|[microsoft.graph.security.reviewSetSettings](../resources/security-ediscoverycasesettings.md#reviewsetsettings-values)|The review set settings for the case. Possible values are: `none`, `disableGrouping`, `unknownFutureValue`.|
 
 
 ## Response

@@ -33,13 +33,13 @@ Inherits from [entity](../resources/entity.md).
 |redundancyDetection|[microsoft.graph.security.redundancyDetectionSettings](../resources/security-redundancydetectionsettings.md)|The redundancy (near duplicate and email threading) detection settings for the case.|
 |topicModeling|[microsoft.graph.security.topicModelingSettings](../resources/security-topicmodelingsettings.md)|The Topic Modeling (Themes) settings for the case.|
 |caseType|microsoft.graph.security.caseType|The type of the eDiscovery case. Possible values are: `standard`, `premium`, `unknownFutureValue`.|
-|reviewSetSettings|[microsoft.graph.security.reviewSetSettings](#reviewSetSettings-values)|The review set settings for the case. Possible values are: `none`, `disableGrouping`, `unknownFutureValue`.|
+|reviewSetSettings|[microsoft.graph.security.reviewSetSettings](#reviewsetsettings-values)|The review set settings for the case. Possible values are: `none`, `disableGrouping`, `unknownFutureValue`.|
 
 ### reviewSetSettings values
 
 |Name|Description|
 |:----|:----------|
-|none      | No additional options selected.|
+|none      | No other options selected.|
 |disableGrouping    | Disable grouping control, and use the old view of UI.|
 |unknownFutureValue   | Evolvable enumeration sentinel value. Don't use. |
 
