@@ -44,42 +44,98 @@ Inherits from [deviceConfiguration](../resources/intune-shared-deviceconfigurati
 |description|String|Admin provided description of the Device Configuration. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|dmaGuardDeviceEnumerationPolicy|[dmaGuardDeviceEnumerationPolicyType](../resources/intune-deviceconfig-dmaguarddeviceenumerationpolicytype.md)|This policy is intended to provide additional security against external DMA capable devices. It allows for more control over the enumeration of external DMA capable devices incompatible with DMA Remapping/device memory isolation and sandboxing. This policy only takes effect when Kernel DMA Protection is supported and enabled by the system firmware. Kernel DMA Protection is a platform feature that cannot be controlled via policy or by end user. It has to be supported by the system at the time of manufacturing. To check if the system supports Kernel DMA Protection, please check the Kernel DMA Protection field in the Summary page of MSINFO32.exe. Possible values are: `deviceDefault`, `blockAll`, `allowAll`.|
+|applicationGuardEnabled|Boolean|Enable Windows Defender Application Guard|
+|applicationGuardEnabledOptions|[applicationGuardEnabledOptions](../resources/intune-deviceconfig-applicationguardenabledoptions.md)|Enable Windows Defender Application Guard for newer Windows builds. Possible values are: `notConfigured`, `enabledForEdge`, `enabledForOffice`, `enabledForEdgeAndOffice`.|
+|applicationGuardBlockFileTransfer|[applicationGuardBlockFileTransferType](../resources/intune-deviceconfig-applicationguardblockfiletransfertype.md)|Block clipboard to transfer image file, text file or neither of them. Possible values are: `notConfigured`, `blockImageAndTextFile`, `blockImageFile`, `blockNone`, `blockTextFile`.|
+|applicationGuardBlockNonEnterpriseContent|Boolean|Block enterprise sites to load non-enterprise content, such as third party plug-ins|
+|applicationGuardAllowPersistence|Boolean|Allow persisting user generated data inside the App Guard Containter (favorites, cookies, web passwords, etc.)|
+|applicationGuardForceAuditing|Boolean|Force auditing will persist Windows logs and events to meet security/compliance criteria (sample events are user login-logoff, use of privilege rights, software installation, system changes, etc.)|
+|applicationGuardBlockClipboardSharing|[applicationGuardBlockClipboardSharingType](../resources/intune-deviceconfig-applicationguardblockclipboardsharingtype.md)|Block clipboard to share data from Host to Container, or from Container to Host, or both ways, or neither ways. Possible values are: `notConfigured`, `blockBoth`, `blockHostToContainer`, `blockContainerToHost`, `blockNone`.|
+|applicationGuardAllowPrintToPDF|Boolean|Allow printing to PDF from Container|
+|applicationGuardAllowPrintToXPS|Boolean|Allow printing to XPS from Container|
+|applicationGuardAllowPrintToLocalPrinters|Boolean|Allow printing to Local Printers from Container|
+|applicationGuardAllowPrintToNetworkPrinters|Boolean|Allow printing to Network Printers from Container|
+|applicationGuardAllowVirtualGPU|Boolean|Allow application guard to use virtual GPU|
+|applicationGuardAllowFileSaveOnHost|Boolean|Allow users to download files from Edge in the application guard container and save them on the host file system|
+|applicationGuardAllowCameraMicrophoneRedirection|Boolean|Gets or sets whether applications inside Microsoft Defender Application Guard can access the device’s camera and microphone.|
+|applicationGuardCertificateThumbprints|String collection|Allows certain device level Root Certificates to be shared with the Microsoft Defender Application Guard container.|
+|appLockerApplicationControl|[appLockerApplicationControlType](../resources/intune-deviceconfig-applockerapplicationcontroltype.md)|Enables the Admin to choose what types of app to allow on devices. Possible values are: `notConfigured`, `enforceComponentsAndStoreApps`, `auditComponentsAndStoreApps`, `enforceComponentsStoreAppsAndSmartlocker`, `auditComponentsStoreAppsAndSmartlocker`.|
+|bitLockerAllowStandardUserEncryption|Boolean|Allows the admin to allow standard users to enable encrpytion during Azure AD Join.|
+|bitLockerDisableWarningForOtherDiskEncryption|Boolean|Allows the Admin to disable the warning prompt for other disk encryption on the user machines.|
+|bitLockerEnableStorageCardEncryptionOnMobile|Boolean|Allows the admin to require encryption to be turned on using BitLocker. This policy is valid only for a mobile SKU.|
+|bitLockerEncryptDevice|Boolean|Allows the admin to require encryption to be turned on using BitLocker.|
+|bitLockerSystemDrivePolicy|[bitLockerSystemDrivePolicy](../resources/intune-deviceconfig-bitlockersystemdrivepolicy.md)|BitLocker System Drive Policy.|
+|bitLockerFixedDrivePolicy|[bitLockerFixedDrivePolicy](../resources/intune-deviceconfig-bitlockerfixeddrivepolicy.md)|BitLocker Fixed Drive Policy.|
+|bitLockerRemovableDrivePolicy|[bitLockerRemovableDrivePolicy](../resources/intune-deviceconfig-bitlockerremovabledrivepolicy.md)|BitLocker Removable Drive Policy.|
+|bitLockerRecoveryPasswordRotation|[bitLockerRecoveryPasswordRotationType](../resources/intune-deviceconfig-bitlockerrecoverypasswordrotationtype.md)|This setting initiates a client-driven recovery password rotation after an OS drive recovery (either by using bootmgr or WinRE). Possible values are: `notConfigured`, `disabled`, `enabledForAzureAd`, `enabledForAzureAdAndHybrid`.|
+|defenderSecurityCenterDisableAppBrowserUI|Boolean|Used to disable the display of the app and browser protection area.|
+|defenderSecurityCenterDisableFamilyUI|Boolean|Used to disable the display of the family options area.|
+|defenderSecurityCenterDisableHealthUI|Boolean|Used to disable the display of the device performance and health area.|
+|defenderSecurityCenterDisableNetworkUI|Boolean|Used to disable the display of the firewall and network protection area.|
+|defenderSecurityCenterDisableVirusUI|Boolean|Used to disable the display of the virus and threat protection area.|
+|defenderSecurityCenterDisableAccountUI|Boolean|Used to disable the display of the account protection area.|
+|defenderSecurityCenterDisableClearTpmUI|Boolean|Used to disable the display of the Clear TPM button.|
+|defenderSecurityCenterDisableHardwareUI|Boolean|Used to disable the display of the hardware protection area.|
+|defenderSecurityCenterDisableNotificationAreaUI|Boolean|Used to disable the display of the notification area control. The user needs to either sign out and sign in or reboot the computer for this setting to take effect.|
+|defenderSecurityCenterDisableRansomwareUI|Boolean|Used to disable the display of the ransomware protection area. |
+|defenderSecurityCenterDisableSecureBootUI|Boolean|Used to disable the display of the secure boot area under Device security.|
+|defenderSecurityCenterDisableTroubleshootingUI|Boolean|Used to disable the display of the security process troubleshooting under Device security.|
+|defenderSecurityCenterDisableVulnerableTpmFirmwareUpdateUI|Boolean|Used to disable the display of update TPM Firmware when a vulnerable firmware is detected.|
+|defenderSecurityCenterOrganizationDisplayName|String|The company name that is displayed to the users.|
+|defenderSecurityCenterHelpEmail|String|The email address that is displayed to users.|
+|defenderSecurityCenterHelpPhone|String|The phone number or Skype ID that is displayed to users.|
+|defenderSecurityCenterHelpURL|String|The help portal URL this is displayed to users.|
+|defenderSecurityCenterNotificationsFromApp|[defenderSecurityCenterNotificationsFromAppType](../resources/intune-deviceconfig-defendersecuritycenternotificationsfromapptype.md)|Notifications to show from the displayed areas of app. Possible values are: `notConfigured`, `blockNoncriticalNotifications`, `blockAllNotifications`.|
+|defenderSecurityCenterITContactDisplay|[defenderSecurityCenterITContactDisplayType](../resources/intune-deviceconfig-defendersecuritycenteritcontactdisplaytype.md)|Configure where to display IT contact information to end users. Possible values are: `notConfigured`, `displayInAppAndInNotifications`, `displayOnlyInApp`, `displayOnlyInNotifications`.|
+|windowsDefenderTamperProtection|[windowsDefenderTamperProtectionOptions](../resources/intune-deviceconfig-windowsdefendertamperprotectionoptions.md)|Configure windows defender TamperProtection settings. Possible values are: `notConfigured`, `enable`, `disable`.|
+|defenderAdobeReaderLaunchChildProcess|[defenderProtectionType](../resources/intune-deviceconfig-defenderprotectiontype.md)|Value indicating the behavior of Adobe Reader from creating child processes. Possible values are: `userDefined`, `enable`, `auditMode`, `warn`, `notConfigured`.|
+|defenderAttackSurfaceReductionExcludedPaths|String collection|List of exe files and folders to be excluded from attack surface reduction rules|
+|defenderOfficeAppsOtherProcessInjectionType|[defenderAttackSurfaceType](../resources/intune-deviceconfig-defenderattacksurfacetype.md)|Value indicating the behavior of Office applications injecting into other processes. Possible values are: `userDefined`, `block`, `auditMode`, `warn`, `disable`.|
+|defenderOfficeAppsOtherProcessInjection|[defenderProtectionType](../resources/intune-deviceconfig-defenderprotectiontype.md)|Value indicating the behavior of  Office applications injecting into other processes. Possible values are: `userDefined`, `enable`, `auditMode`, `warn`, `notConfigured`.|
+|defenderOfficeCommunicationAppsLaunchChildProcess|[defenderProtectionType](../resources/intune-deviceconfig-defenderprotectiontype.md)|Value indicating the behavior of Office communication applications, including Microsoft Outlook, from creating child processes. Possible values are: `userDefined`, `enable`, `auditMode`, `warn`, `notConfigured`.|
+|defenderOfficeAppsExecutableContentCreationOrLaunchType|[defenderAttackSurfaceType](../resources/intune-deviceconfig-defenderattacksurfacetype.md)|Value indicating the behavior of Office applications/macros creating or launching executable content. Possible values are: `userDefined`, `block`, `auditMode`, `warn`, `disable`.|
+|defenderOfficeAppsExecutableContentCreationOrLaunch|[defenderProtectionType](../resources/intune-deviceconfig-defenderprotectiontype.md)|Value indicating the behavior of Office applications/macros creating or launching executable content. Possible values are: `userDefined`, `enable`, `auditMode`, `warn`, `notConfigured`.|
+|defenderOfficeAppsLaunchChildProcessType|[defenderAttackSurfaceType](../resources/intune-deviceconfig-defenderattacksurfacetype.md)|Value indicating the behavior of Office application launching child processes. Possible values are: `userDefined`, `block`, `auditMode`, `warn`, `disable`.|
+|defenderOfficeAppsLaunchChildProcess|[defenderProtectionType](../resources/intune-deviceconfig-defenderprotectiontype.md)|Value indicating the behavior of Office application launching child processes. Possible values are: `userDefined`, `enable`, `auditMode`, `warn`, `notConfigured`.|
+|defenderOfficeMacroCodeAllowWin32ImportsType|[defenderAttackSurfaceType](../resources/intune-deviceconfig-defenderattacksurfacetype.md)|Value indicating the behavior of Win32 imports from Macro code in Office. Possible values are: `userDefined`, `block`, `auditMode`, `warn`, `disable`.|
+|defenderOfficeMacroCodeAllowWin32Imports|[defenderProtectionType](../resources/intune-deviceconfig-defenderprotectiontype.md)|Value indicating the behavior of Win32 imports from Macro code in Office. Possible values are: `userDefined`, `enable`, `auditMode`, `warn`, `notConfigured`.|
+|defenderScriptObfuscatedMacroCodeType|[defenderAttackSurfaceType](../resources/intune-deviceconfig-defenderattacksurfacetype.md)|Value indicating the behavior of obfuscated js/vbs/ps/macro code. Possible values are: `userDefined`, `block`, `auditMode`, `warn`, `disable`.|
+|defenderScriptObfuscatedMacroCode|[defenderProtectionType](../resources/intune-deviceconfig-defenderprotectiontype.md)|Value indicating the behavior of obfuscated js/vbs/ps/macro code. Possible values are: `userDefined`, `enable`, `auditMode`, `warn`, `notConfigured`.|
+|defenderScriptDownloadedPayloadExecutionType|[defenderAttackSurfaceType](../resources/intune-deviceconfig-defenderattacksurfacetype.md)|Value indicating the behavior of js/vbs executing payload downloaded from Internet. Possible values are: `userDefined`, `block`, `auditMode`, `warn`, `disable`.|
+|defenderScriptDownloadedPayloadExecution|[defenderProtectionType](../resources/intune-deviceconfig-defenderprotectiontype.md)|Value indicating the behavior of js/vbs executing payload downloaded from Internet. Possible values are: `userDefined`, `enable`, `auditMode`, `warn`, `notConfigured`.|
+|defenderPreventCredentialStealingType|[defenderProtectionType](../resources/intune-deviceconfig-defenderprotectiontype.md)|Value indicating if credential stealing from the Windows local security authority subsystem is permitted. Possible values are: `userDefined`, `enable`, `auditMode`, `warn`, `notConfigured`.|
+|defenderProcessCreationType|[defenderAttackSurfaceType](../resources/intune-deviceconfig-defenderattacksurfacetype.md)|Value indicating response to process creations originating from PSExec and WMI commands. Possible values are: `userDefined`, `block`, `auditMode`, `warn`, `disable`.|
+|defenderProcessCreation|[defenderProtectionType](../resources/intune-deviceconfig-defenderprotectiontype.md)|Value indicating response to process creations originating from PSExec and WMI commands. Possible values are: `userDefined`, `enable`, `auditMode`, `warn`, `notConfigured`.|
+|defenderUntrustedUSBProcessType|[defenderAttackSurfaceType](../resources/intune-deviceconfig-defenderattacksurfacetype.md)|Value indicating response to untrusted and unsigned processes that run from USB. Possible values are: `userDefined`, `block`, `auditMode`, `warn`, `disable`.|
+|defenderUntrustedUSBProcess|[defenderProtectionType](../resources/intune-deviceconfig-defenderprotectiontype.md)|Value indicating response to untrusted and unsigned processes that run from USB. Possible values are: `userDefined`, `enable`, `auditMode`, `warn`, `notConfigured`.|
+|defenderUntrustedExecutableType|[defenderAttackSurfaceType](../resources/intune-deviceconfig-defenderattacksurfacetype.md)|Value indicating response to executables that don't meet a prevalence, age, or trusted list criteria. Possible values are: `userDefined`, `block`, `auditMode`, `warn`, `disable`.|
+|defenderUntrustedExecutable|[defenderProtectionType](../resources/intune-deviceconfig-defenderprotectiontype.md)|Value indicating response to executables that don't meet a prevalence, age, or trusted list criteria. Possible values are: `userDefined`, `enable`, `auditMode`, `warn`, `notConfigured`.|
+|defenderEmailContentExecutionType|[defenderAttackSurfaceType](../resources/intune-deviceconfig-defenderattacksurfacetype.md)|Value indicating if execution of executable content (exe, dll, ps, js, vbs, etc) should be dropped from email (webmail/mail-client). Possible values are: `userDefined`, `block`, `auditMode`, `warn`, `disable`.|
+|defenderEmailContentExecution|[defenderProtectionType](../resources/intune-deviceconfig-defenderprotectiontype.md)|Value indicating if execution of executable content (exe, dll, ps, js, vbs, etc) should be dropped from email (webmail/mail-client). Possible values are: `userDefined`, `enable`, `auditMode`, `warn`, `notConfigured`.|
+|defenderAdvancedRansomewareProtectionType|[defenderProtectionType](../resources/intune-deviceconfig-defenderprotectiontype.md)|Value indicating use of advanced protection against ransomeware. Possible values are: `userDefined`, `enable`, `auditMode`, `warn`, `notConfigured`.|
+|defenderGuardMyFoldersType|[folderProtectionType](../resources/intune-deviceconfig-folderprotectiontype.md)|Value indicating the behavior of protected folders. Possible values are: `userDefined`, `enable`, `auditMode`, `blockDiskModification`, `auditDiskModification`.|
+|defenderGuardedFoldersAllowedAppPaths|String collection|List of paths to exe that are allowed to access protected folders|
+|defenderAdditionalGuardedFolders|String collection|List of folder paths to be added to the list of protected folders|
+|defenderNetworkProtectionType|[defenderProtectionType](../resources/intune-deviceconfig-defenderprotectiontype.md)|Value indicating the behavior of NetworkProtection. Possible values are: `userDefined`, `enable`, `auditMode`, `warn`, `notConfigured`.|
+|defenderExploitProtectionXml|Binary|Xml content containing information regarding exploit protection details.|
+|defenderExploitProtectionXmlFileName|String|Name of the file from which DefenderExploitProtectionXml was obtained.|
+|defenderSecurityCenterBlockExploitProtectionOverride|Boolean|Indicates whether or not to block user from overriding Exploit Protection settings.|
+|defenderBlockPersistenceThroughWmiType|[defenderAttackSurfaceType](../resources/intune-deviceconfig-defenderattacksurfacetype.md)|Value indicating the behavior of Block persistence through WMI event subscription. Possible values are: `userDefined`, `block`, `auditMode`, `warn`, `disable`.|
+|firewallBlockStatefulFTP|Boolean|Blocks stateful FTP connections to the device|
+|firewallIdleTimeoutForSecurityAssociationInSeconds|Int32|Configures the idle timeout for security associations, in seconds, from 300 to 3600 inclusive. This is the period after which security associations will expire and be deleted. Valid values 300 to 3600|
+|firewallPreSharedKeyEncodingMethod|[firewallPreSharedKeyEncodingMethodType](../resources/intune-deviceconfig-firewallpresharedkeyencodingmethodtype.md)|Select the preshared key encoding to be used. Possible values are: `deviceDefault`, `none`, `utF8`.|
+|firewallIPSecExemptionsNone|Boolean|Configures IPSec exemptions to no exemptions|
+|firewallIPSecExemptionsAllowNeighborDiscovery|Boolean|Configures IPSec exemptions to allow neighbor discovery IPv6 ICMP type-codes|
+|firewallIPSecExemptionsAllowICMP|Boolean|Configures IPSec exemptions to allow ICMP|
+|firewallIPSecExemptionsAllowRouterDiscovery|Boolean|Configures IPSec exemptions to allow router discovery IPv6 ICMP type-codes|
+|firewallIPSecExemptionsAllowDHCP|Boolean|Configures IPSec exemptions to allow both IPv4 and IPv6 DHCP traffic|
+|firewallCertificateRevocationListCheckMethod|[firewallCertificateRevocationListCheckMethodType](../resources/intune-deviceconfig-firewallcertificaterevocationlistcheckmethodtype.md)|Specify how the certificate revocation list is to be enforced. Possible values are: `deviceDefault`, `none`, `attempt`, `require`.|
+|firewallMergeKeyingModuleSettings|Boolean|If an authentication set is not fully supported by a keying module, direct the module to ignore only unsupported authentication suites rather than the entire set|
+|firewallPacketQueueingMethod|[firewallPacketQueueingMethodType](../resources/intune-deviceconfig-firewallpacketqueueingmethodtype.md)|Configures how packet queueing should be applied in the tunnel gateway scenario. Possible values are: `deviceDefault`, `disabled`, `queueInbound`, `queueOutbound`, `queueBoth`.|
+|firewallProfileDomain|[windowsFirewallNetworkProfile](../resources/intune-deviceconfig-windowsfirewallnetworkprofile.md)|Configures the firewall profile settings for domain networks|
+|firewallProfilePublic|[windowsFirewallNetworkProfile](../resources/intune-deviceconfig-windowsfirewallnetworkprofile.md)|Configures the firewall profile settings for public networks|
+|firewallProfilePrivate|[windowsFirewallNetworkProfile](../resources/intune-deviceconfig-windowsfirewallnetworkprofile.md)|Configures the firewall profile settings for private networks|
 |firewallRules|[windowsFirewallRule](../resources/intune-deviceconfig-windowsfirewallrule.md) collection|Configures the firewall rule settings. This collection can contain a maximum of 150 elements.|
-|userRightsAccessCredentialManagerAsTrustedCaller|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|This user right is used by Credential Manager during Backup/Restore. Users' saved credentials might be compromised if this privilege is given to other entities. Only states NotConfigured and Allowed are supported|
-|userRightsAllowAccessFromNetwork|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|This user right determines which users and groups are allowed to connect to the computer over the network. State Allowed is supported.|
-|userRightsBlockAccessFromNetwork|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|This user right determines which users and groups are block from connecting to the computer over the network. State Block is supported.|
-|userRightsActAsPartOfTheOperatingSystem|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|This user right allows a process to impersonate any user without authentication. The process can therefore gain access to the same local resources as that user. Only states NotConfigured and Allowed are supported|
-|userRightsLocalLogOn|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|This user right determines which users can log on to the computer. States NotConfigured, Allowed are supported |
-|userRightsDenyLocalLogOn|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|This user right determines which users cannot log on to the computer. States NotConfigured, Blocked are supported |
-|userRightsBackupData|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|This user right determines which users can bypass file, directory, registry, and other persistent objects permissions when backing up files and directories. Only states NotConfigured and Allowed are supported|
-|userRightsChangeSystemTime|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|This user right determines which users and groups can change the time and date on the internal clock of the computer. Only states NotConfigured and Allowed are supported|
-|userRightsCreateGlobalObjects|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|This security setting determines whether users can create global objects that are available to all sessions. Users who can create global objects could affect processes that run under other users' sessions, which could lead to application failure or data corruption. Only states NotConfigured and Allowed are supported|
-|userRightsCreatePageFile|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|This user right determines which users and groups can call an internal API to create and change the size of a page file. Only states NotConfigured and Allowed are supported|
-|userRightsCreatePermanentSharedObjects|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|This user right determines which accounts can be used by processes to create a directory object using the object manager. Only states NotConfigured and Allowed are supported|
-|userRightsCreateSymbolicLinks|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|This user right determines if the user can create a symbolic link from the computer to which they are logged on. Only states NotConfigured and Allowed are supported|
-|userRightsCreateToken|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|This user right determines which users/groups can be used by processes to create a token that can then be used to get access to any local resources when the process uses an internal API to create an access token. Only states NotConfigured and Allowed are supported|
-|userRightsDebugPrograms|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|This user right determines which users can attach a debugger to any process or to the kernel. Only states NotConfigured and Allowed are supported|
-|userRightsRemoteDesktopServicesLogOn|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|This user right determines which users and groups are prohibited from logging on as a Remote Desktop Services client. Only states NotConfigured and Blocked are supported|
-|userRightsDelegation|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|This user right determines which users can set the Trusted for Delegation setting on a user or computer object. Only states NotConfigured and Allowed are supported.|
-|userRightsGenerateSecurityAudits|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|This user right determines which accounts can be used by a process to add entries to the security log. The security log is used to trace unauthorized system access.  Only states NotConfigured and Allowed are supported.|
-|userRightsImpersonateClient|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|Assigning this user right to a user allows programs running on behalf of that user to impersonate a client. Requiring this user right for this kind of impersonation prevents an unauthorized user from convincing a client to connect to a service that they have created and then impersonating that client, which can elevate the unauthorized user's permissions to administrative or system levels. Only states NotConfigured and Allowed are supported.|
-|userRightsIncreaseSchedulingPriority|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|This user right determines which accounts can use a process with Write Property access to another process to increase the execution priority assigned to the other process. Only states NotConfigured and Allowed are supported.|
-|userRightsLoadUnloadDrivers|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|This user right determines which users can dynamically load and unload device drivers or other code in to kernel mode. Only states NotConfigured and Allowed are supported.|
-|userRightsLockMemory|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|This user right determines which accounts can use a process to keep data in physical memory, which prevents the system from paging the data to virtual memory on disk. Only states NotConfigured and Allowed are supported.|
-|userRightsManageAuditingAndSecurityLogs|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|This user right determines which users can specify object access auditing options for individual resources, such as files, Active Directory objects, and registry keys. Only states NotConfigured and Allowed are supported.|
-|userRightsManageVolumes|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|This user right determines which users and groups can run maintenance tasks on a volume, such as remote defragmentation. Only states NotConfigured and Allowed are supported.|
-|userRightsModifyFirmwareEnvironment|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|This user right determines who can modify firmware environment values. Only states NotConfigured and Allowed are supported.|
-|userRightsModifyObjectLabels|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|This user right determines which user accounts can modify the integrity label of objects, such as files, registry keys, or processes owned by other users. Only states NotConfigured and Allowed are supported.|
-|userRightsProfileSingleProcess|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|This user right determines which users can use performance monitoring tools to monitor the performance of system processes. Only states NotConfigured and Allowed are supported.|
-|userRightsRemoteShutdown|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|This user right determines which users are allowed to shut down a computer from a remote location on the network. Misuse of this user right can result in a denial of service. Only states NotConfigured and Allowed are supported.|
-|userRightsRestoreData|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|This user right determines which users can bypass file, directory, registry, and other persistent objects permissions when restoring backed up files and directories, and determines which users can set any valid security principal as the owner of an object. Only states NotConfigured and Allowed are supported.|
-|userRightsTakeOwnership|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|This user right determines which users can take ownership of any securable object in the system, including Active Directory objects, files and folders, printers, registry keys, processes, and threads. Only states NotConfigured and Allowed are supported.|
-|xboxServicesEnableXboxGameSaveTask|Boolean|This setting determines whether xbox game save is enabled (1) or disabled (0).|
-|xboxServicesAccessoryManagementServiceStartupMode|[serviceStartType](../resources/intune-deviceconfig-servicestarttype.md)|This setting determines whether the Accessory management service's start type is Automatic(2), Manual(3), Disabled(4). Default: Manual. Possible values are: `manual`, `automatic`, `disabled`.|
-|xboxServicesLiveAuthManagerServiceStartupMode|[serviceStartType](../resources/intune-deviceconfig-servicestarttype.md)|This setting determines whether Live Auth Manager service's start type is Automatic(2), Manual(3), Disabled(4). Default: Manual. Possible values are: `manual`, `automatic`, `disabled`.|
-|xboxServicesLiveGameSaveServiceStartupMode|[serviceStartType](../resources/intune-deviceconfig-servicestarttype.md)|This setting determines whether Live Game save service's start type is Automatic(2), Manual(3), Disabled(4). Default: Manual. Possible values are: `manual`, `automatic`, `disabled`.|
-|xboxServicesLiveNetworkingServiceStartupMode|[serviceStartType](../resources/intune-deviceconfig-servicestarttype.md)|This setting determines whether Networking service's start type is Automatic(2), Manual(3), Disabled(4). Default: Manual. Possible values are: `manual`, `automatic`, `disabled`.|
 |localSecurityOptionsBlockMicrosoftAccounts|Boolean|Prevent users from adding new Microsoft accounts to this computer.|
 |localSecurityOptionsBlockRemoteLogonWithBlankPassword|Boolean|Enable Local accounts that are not password protected to log on from locations other than the physical device.Default is enabled|
 |localSecurityOptionsDisableAdministratorAccount|Boolean|Determines whether the Local Administrator account is enabled or disabled.|
@@ -128,104 +184,11 @@ Inherits from [deviceConfiguration](../resources/intune-shared-deviceconfigurati
 |localSecurityOptionsAllowAnonymousEnumerationOfSAMAccountsAndShares|Boolean|This security setting determines whether to allows anonymous users to perform certain activities, such as enumerating the names of domain accounts and network shares.|
 |localSecurityOptionsDoNotStoreLANManagerHashValueOnNextPasswordChange|Boolean|This security setting determines if, at the next password change, the LAN Manager (LM) hash value for the new password is stored. It’s not stored by default.|
 |localSecurityOptionsSmartCardRemovalBehavior|[localSecurityOptionsSmartCardRemovalBehaviorType](../resources/intune-deviceconfig-localsecurityoptionssmartcardremovalbehaviortype.md)|This security setting determines what happens when the smart card for a logged-on user is removed from the smart card reader. Possible values are: `noAction`, `lockWorkstation`, `forceLogoff`, `disconnectRemoteDesktopSession`.|
-|defenderSecurityCenterDisableAppBrowserUI|Boolean|Used to disable the display of the app and browser protection area.|
-|defenderSecurityCenterDisableFamilyUI|Boolean|Used to disable the display of the family options area.|
-|defenderSecurityCenterDisableHealthUI|Boolean|Used to disable the display of the device performance and health area.|
-|defenderSecurityCenterDisableNetworkUI|Boolean|Used to disable the display of the firewall and network protection area.|
-|defenderSecurityCenterDisableVirusUI|Boolean|Used to disable the display of the virus and threat protection area.|
-|defenderSecurityCenterDisableAccountUI|Boolean|Used to disable the display of the account protection area.|
-|defenderSecurityCenterDisableClearTpmUI|Boolean|Used to disable the display of the Clear TPM button.|
-|defenderSecurityCenterDisableHardwareUI|Boolean|Used to disable the display of the hardware protection area.|
-|defenderSecurityCenterDisableNotificationAreaUI|Boolean|Used to disable the display of the notification area control. The user needs to either sign out and sign in or reboot the computer for this setting to take effect.|
-|defenderSecurityCenterDisableRansomwareUI|Boolean|Used to disable the display of the ransomware protection area. |
-|defenderSecurityCenterDisableSecureBootUI|Boolean|Used to disable the display of the secure boot area under Device security.|
-|defenderSecurityCenterDisableTroubleshootingUI|Boolean|Used to disable the display of the security process troubleshooting under Device security.|
-|defenderSecurityCenterDisableVulnerableTpmFirmwareUpdateUI|Boolean|Used to disable the display of update TPM Firmware when a vulnerable firmware is detected.|
-|defenderSecurityCenterOrganizationDisplayName|String|The company name that is displayed to the users.|
-|defenderSecurityCenterHelpEmail|String|The email address that is displayed to users.|
-|defenderSecurityCenterHelpPhone|String|The phone number or Skype ID that is displayed to users.|
-|defenderSecurityCenterHelpURL|String|The help portal URL this is displayed to users.|
-|defenderSecurityCenterNotificationsFromApp|[defenderSecurityCenterNotificationsFromAppType](../resources/intune-deviceconfig-defendersecuritycenternotificationsfromapptype.md)|Notifications to show from the displayed areas of app. Possible values are: `notConfigured`, `blockNoncriticalNotifications`, `blockAllNotifications`.|
-|defenderSecurityCenterITContactDisplay|[defenderSecurityCenterITContactDisplayType](../resources/intune-deviceconfig-defendersecuritycenteritcontactdisplaytype.md)|Configure where to display IT contact information to end users. Possible values are: `notConfigured`, `displayInAppAndInNotifications`, `displayOnlyInApp`, `displayOnlyInNotifications`.|
-|windowsDefenderTamperProtection|[windowsDefenderTamperProtectionOptions](../resources/intune-deviceconfig-windowsdefendertamperprotectionoptions.md)|Configure windows defender TamperProtection settings. Possible values are: `notConfigured`, `enable`, `disable`.|
-|firewallBlockStatefulFTP|Boolean|Blocks stateful FTP connections to the device|
-|firewallIdleTimeoutForSecurityAssociationInSeconds|Int32|Configures the idle timeout for security associations, in seconds, from 300 to 3600 inclusive. This is the period after which security associations will expire and be deleted. Valid values 300 to 3600|
-|firewallPreSharedKeyEncodingMethod|[firewallPreSharedKeyEncodingMethodType](../resources/intune-deviceconfig-firewallpresharedkeyencodingmethodtype.md)|Select the preshared key encoding to be used. Possible values are: `deviceDefault`, `none`, `utF8`.|
-|firewallIPSecExemptionsNone|Boolean|Configures IPSec exemptions to no exemptions|
-|firewallIPSecExemptionsAllowNeighborDiscovery|Boolean|Configures IPSec exemptions to allow neighbor discovery IPv6 ICMP type-codes|
-|firewallIPSecExemptionsAllowICMP|Boolean|Configures IPSec exemptions to allow ICMP|
-|firewallIPSecExemptionsAllowRouterDiscovery|Boolean|Configures IPSec exemptions to allow router discovery IPv6 ICMP type-codes|
-|firewallIPSecExemptionsAllowDHCP|Boolean|Configures IPSec exemptions to allow both IPv4 and IPv6 DHCP traffic|
-|firewallCertificateRevocationListCheckMethod|[firewallCertificateRevocationListCheckMethodType](../resources/intune-deviceconfig-firewallcertificaterevocationlistcheckmethodtype.md)|Specify how the certificate revocation list is to be enforced. Possible values are: `deviceDefault`, `none`, `attempt`, `require`.|
-|firewallMergeKeyingModuleSettings|Boolean|If an authentication set is not fully supported by a keying module, direct the module to ignore only unsupported authentication suites rather than the entire set|
-|firewallPacketQueueingMethod|[firewallPacketQueueingMethodType](../resources/intune-deviceconfig-firewallpacketqueueingmethodtype.md)|Configures how packet queueing should be applied in the tunnel gateway scenario. Possible values are: `deviceDefault`, `disabled`, `queueInbound`, `queueOutbound`, `queueBoth`.|
-|firewallProfileDomain|[windowsFirewallNetworkProfile](../resources/intune-deviceconfig-windowsfirewallnetworkprofile.md)|Configures the firewall profile settings for domain networks|
-|firewallProfilePublic|[windowsFirewallNetworkProfile](../resources/intune-deviceconfig-windowsfirewallnetworkprofile.md)|Configures the firewall profile settings for public networks|
-|firewallProfilePrivate|[windowsFirewallNetworkProfile](../resources/intune-deviceconfig-windowsfirewallnetworkprofile.md)|Configures the firewall profile settings for private networks|
-|defenderAdobeReaderLaunchChildProcess|[defenderProtectionType](../resources/intune-deviceconfig-defenderprotectiontype.md)|Value indicating the behavior of Adobe Reader from creating child processes. Possible values are: `userDefined`, `enable`, `auditMode`, `warn`, `notConfigured`.|
-|defenderAttackSurfaceReductionExcludedPaths|String collection|List of exe files and folders to be excluded from attack surface reduction rules|
-|defenderOfficeAppsOtherProcessInjectionType|[defenderAttackSurfaceType](../resources/intune-deviceconfig-defenderattacksurfacetype.md)|Value indicating the behavior of Office applications injecting into other processes. Possible values are: `userDefined`, `block`, `auditMode`, `warn`, `disable`.|
-|defenderOfficeAppsOtherProcessInjection|[defenderProtectionType](../resources/intune-deviceconfig-defenderprotectiontype.md)|Value indicating the behavior of  Office applications injecting into other processes. Possible values are: `userDefined`, `enable`, `auditMode`, `warn`, `notConfigured`.|
-|defenderOfficeCommunicationAppsLaunchChildProcess|[defenderProtectionType](../resources/intune-deviceconfig-defenderprotectiontype.md)|Value indicating the behavior of Office communication applications, including Microsoft Outlook, from creating child processes. Possible values are: `userDefined`, `enable`, `auditMode`, `warn`, `notConfigured`.|
-|defenderOfficeAppsExecutableContentCreationOrLaunchType|[defenderAttackSurfaceType](../resources/intune-deviceconfig-defenderattacksurfacetype.md)|Value indicating the behavior of Office applications/macros creating or launching executable content. Possible values are: `userDefined`, `block`, `auditMode`, `warn`, `disable`.|
-|defenderOfficeAppsExecutableContentCreationOrLaunch|[defenderProtectionType](../resources/intune-deviceconfig-defenderprotectiontype.md)|Value indicating the behavior of Office applications/macros creating or launching executable content. Possible values are: `userDefined`, `enable`, `auditMode`, `warn`, `notConfigured`.|
-|defenderOfficeAppsLaunchChildProcessType|[defenderAttackSurfaceType](../resources/intune-deviceconfig-defenderattacksurfacetype.md)|Value indicating the behavior of Office application launching child processes. Possible values are: `userDefined`, `block`, `auditMode`, `warn`, `disable`.|
-|defenderOfficeAppsLaunchChildProcess|[defenderProtectionType](../resources/intune-deviceconfig-defenderprotectiontype.md)|Value indicating the behavior of Office application launching child processes. Possible values are: `userDefined`, `enable`, `auditMode`, `warn`, `notConfigured`.|
-|defenderOfficeMacroCodeAllowWin32ImportsType|[defenderAttackSurfaceType](../resources/intune-deviceconfig-defenderattacksurfacetype.md)|Value indicating the behavior of Win32 imports from Macro code in Office. Possible values are: `userDefined`, `block`, `auditMode`, `warn`, `disable`.|
-|defenderOfficeMacroCodeAllowWin32Imports|[defenderProtectionType](../resources/intune-deviceconfig-defenderprotectiontype.md)|Value indicating the behavior of Win32 imports from Macro code in Office. Possible values are: `userDefined`, `enable`, `auditMode`, `warn`, `notConfigured`.|
-|defenderScriptObfuscatedMacroCodeType|[defenderAttackSurfaceType](../resources/intune-deviceconfig-defenderattacksurfacetype.md)|Value indicating the behavior of obfuscated js/vbs/ps/macro code. Possible values are: `userDefined`, `block`, `auditMode`, `warn`, `disable`.|
-|defenderScriptObfuscatedMacroCode|[defenderProtectionType](../resources/intune-deviceconfig-defenderprotectiontype.md)|Value indicating the behavior of obfuscated js/vbs/ps/macro code. Possible values are: `userDefined`, `enable`, `auditMode`, `warn`, `notConfigured`.|
-|defenderScriptDownloadedPayloadExecutionType|[defenderAttackSurfaceType](../resources/intune-deviceconfig-defenderattacksurfacetype.md)|Value indicating the behavior of js/vbs executing payload downloaded from Internet. Possible values are: `userDefined`, `block`, `auditMode`, `warn`, `disable`.|
-|defenderScriptDownloadedPayloadExecution|[defenderProtectionType](../resources/intune-deviceconfig-defenderprotectiontype.md)|Value indicating the behavior of js/vbs executing payload downloaded from Internet. Possible values are: `userDefined`, `enable`, `auditMode`, `warn`, `notConfigured`.|
-|defenderPreventCredentialStealingType|[defenderProtectionType](../resources/intune-deviceconfig-defenderprotectiontype.md)|Value indicating if credential stealing from the Windows local security authority subsystem is permitted. Possible values are: `userDefined`, `enable`, `auditMode`, `warn`, `notConfigured`.|
-|defenderProcessCreationType|[defenderAttackSurfaceType](../resources/intune-deviceconfig-defenderattacksurfacetype.md)|Value indicating response to process creations originating from PSExec and WMI commands. Possible values are: `userDefined`, `block`, `auditMode`, `warn`, `disable`.|
-|defenderProcessCreation|[defenderProtectionType](../resources/intune-deviceconfig-defenderprotectiontype.md)|Value indicating response to process creations originating from PSExec and WMI commands. Possible values are: `userDefined`, `enable`, `auditMode`, `warn`, `notConfigured`.|
-|defenderUntrustedUSBProcessType|[defenderAttackSurfaceType](../resources/intune-deviceconfig-defenderattacksurfacetype.md)|Value indicating response to untrusted and unsigned processes that run from USB. Possible values are: `userDefined`, `block`, `auditMode`, `warn`, `disable`.|
-|defenderUntrustedUSBProcess|[defenderProtectionType](../resources/intune-deviceconfig-defenderprotectiontype.md)|Value indicating response to untrusted and unsigned processes that run from USB. Possible values are: `userDefined`, `enable`, `auditMode`, `warn`, `notConfigured`.|
-|defenderUntrustedExecutableType|[defenderAttackSurfaceType](../resources/intune-deviceconfig-defenderattacksurfacetype.md)|Value indicating response to executables that don't meet a prevalence, age, or trusted list criteria. Possible values are: `userDefined`, `block`, `auditMode`, `warn`, `disable`.|
-|defenderUntrustedExecutable|[defenderProtectionType](../resources/intune-deviceconfig-defenderprotectiontype.md)|Value indicating response to executables that don't meet a prevalence, age, or trusted list criteria. Possible values are: `userDefined`, `enable`, `auditMode`, `warn`, `notConfigured`.|
-|defenderEmailContentExecutionType|[defenderAttackSurfaceType](../resources/intune-deviceconfig-defenderattacksurfacetype.md)|Value indicating if execution of executable content (exe, dll, ps, js, vbs, etc) should be dropped from email (webmail/mail-client). Possible values are: `userDefined`, `block`, `auditMode`, `warn`, `disable`.|
-|defenderEmailContentExecution|[defenderProtectionType](../resources/intune-deviceconfig-defenderprotectiontype.md)|Value indicating if execution of executable content (exe, dll, ps, js, vbs, etc) should be dropped from email (webmail/mail-client). Possible values are: `userDefined`, `enable`, `auditMode`, `warn`, `notConfigured`.|
-|defenderAdvancedRansomewareProtectionType|[defenderProtectionType](../resources/intune-deviceconfig-defenderprotectiontype.md)|Value indicating use of advanced protection against ransomeware. Possible values are: `userDefined`, `enable`, `auditMode`, `warn`, `notConfigured`.|
-|defenderGuardMyFoldersType|[folderProtectionType](../resources/intune-deviceconfig-folderprotectiontype.md)|Value indicating the behavior of protected folders. Possible values are: `userDefined`, `enable`, `auditMode`, `blockDiskModification`, `auditDiskModification`.|
-|defenderGuardedFoldersAllowedAppPaths|String collection|List of paths to exe that are allowed to access protected folders|
-|defenderAdditionalGuardedFolders|String collection|List of folder paths to be added to the list of protected folders|
-|defenderNetworkProtectionType|[defenderProtectionType](../resources/intune-deviceconfig-defenderprotectiontype.md)|Value indicating the behavior of NetworkProtection. Possible values are: `userDefined`, `enable`, `auditMode`, `warn`, `notConfigured`.|
-|defenderExploitProtectionXml|Binary|Xml content containing information regarding exploit protection details.|
-|defenderExploitProtectionXmlFileName|String|Name of the file from which DefenderExploitProtectionXml was obtained.|
-|defenderSecurityCenterBlockExploitProtectionOverride|Boolean|Indicates whether or not to block user from overriding Exploit Protection settings.|
-|defenderBlockPersistenceThroughWmiType|[defenderAttackSurfaceType](../resources/intune-deviceconfig-defenderattacksurfacetype.md)|Value indicating the behavior of Block persistence through WMI event subscription. Possible values are: `userDefined`, `block`, `auditMode`, `warn`, `disable`.|
-|appLockerApplicationControl|[appLockerApplicationControlType](../resources/intune-deviceconfig-applockerapplicationcontroltype.md)|Enables the Admin to choose what types of app to allow on devices. Possible values are: `notConfigured`, `enforceComponentsAndStoreApps`, `auditComponentsAndStoreApps`, `enforceComponentsStoreAppsAndSmartlocker`, `auditComponentsStoreAppsAndSmartlocker`.|
 |deviceGuardLocalSystemAuthorityCredentialGuardSettings|[deviceGuardLocalSystemAuthorityCredentialGuardType](../resources/intune-deviceconfig-deviceguardlocalsystemauthoritycredentialguardtype.md)|Turn on Credential Guard when Platform Security Level with Secure Boot and Virtualization Based Security are both enabled. Possible values are: `notConfigured`, `enableWithUEFILock`, `enableWithoutUEFILock`, `disable`.|
 |deviceGuardEnableVirtualizationBasedSecurity|Boolean|Turns On Virtualization Based Security(VBS).|
 |deviceGuardEnableSecureBootWithDMA|Boolean|This property will be deprecated in May 2019 and will be replaced with property DeviceGuardSecureBootWithDMA. Specifies whether Platform Security Level is enabled at next reboot.|
 |deviceGuardSecureBootWithDMA|[secureBootWithDMAType](../resources/intune-deviceconfig-securebootwithdmatype.md)|Specifies whether Platform Security Level is enabled at next reboot. Possible values are: `notConfigured`, `withoutDMA`, `withDMA`.|
 |deviceGuardLaunchSystemGuard|[enablement](../resources/intune-shared-enablement.md)|Allows the IT admin to configure the launch of System Guard. Possible values are: `notConfigured`, `enabled`, `disabled`.|
-|smartScreenEnableInShell|Boolean|Allows IT Admins to configure SmartScreen for Windows.|
-|smartScreenBlockOverrideForFiles|Boolean|Allows IT Admins to control whether users can can ignore SmartScreen warnings and run malicious files.|
-|applicationGuardEnabled|Boolean|Enable Windows Defender Application Guard|
-|applicationGuardEnabledOptions|[applicationGuardEnabledOptions](../resources/intune-deviceconfig-applicationguardenabledoptions.md)|Enable Windows Defender Application Guard for newer Windows builds. Possible values are: `notConfigured`, `enabledForEdge`, `enabledForOffice`, `enabledForEdgeAndOffice`.|
-|applicationGuardBlockFileTransfer|[applicationGuardBlockFileTransferType](../resources/intune-deviceconfig-applicationguardblockfiletransfertype.md)|Block clipboard to transfer image file, text file or neither of them. Possible values are: `notConfigured`, `blockImageAndTextFile`, `blockImageFile`, `blockNone`, `blockTextFile`.|
-|applicationGuardBlockNonEnterpriseContent|Boolean|Block enterprise sites to load non-enterprise content, such as third party plug-ins|
-|applicationGuardAllowPersistence|Boolean|Allow persisting user generated data inside the App Guard Containter (favorites, cookies, web passwords, etc.)|
-|applicationGuardForceAuditing|Boolean|Force auditing will persist Windows logs and events to meet security/compliance criteria (sample events are user login-logoff, use of privilege rights, software installation, system changes, etc.)|
-|applicationGuardBlockClipboardSharing|[applicationGuardBlockClipboardSharingType](../resources/intune-deviceconfig-applicationguardblockclipboardsharingtype.md)|Block clipboard to share data from Host to Container, or from Container to Host, or both ways, or neither ways. Possible values are: `notConfigured`, `blockBoth`, `blockHostToContainer`, `blockContainerToHost`, `blockNone`.|
-|applicationGuardAllowPrintToPDF|Boolean|Allow printing to PDF from Container|
-|applicationGuardAllowPrintToXPS|Boolean|Allow printing to XPS from Container|
-|applicationGuardAllowPrintToLocalPrinters|Boolean|Allow printing to Local Printers from Container|
-|applicationGuardAllowPrintToNetworkPrinters|Boolean|Allow printing to Network Printers from Container|
-|applicationGuardAllowVirtualGPU|Boolean|Allow application guard to use virtual GPU|
-|applicationGuardAllowFileSaveOnHost|Boolean|Allow users to download files from Edge in the application guard container and save them on the host file system|
-|applicationGuardAllowCameraMicrophoneRedirection|Boolean|Gets or sets whether applications inside Microsoft Defender Application Guard can access the device’s camera and microphone.|
-|applicationGuardCertificateThumbprints|String collection|Allows certain device level Root Certificates to be shared with the Microsoft Defender Application Guard container.|
-|bitLockerAllowStandardUserEncryption|Boolean|Allows the admin to allow standard users to enable encrpytion during Azure AD Join.|
-|bitLockerDisableWarningForOtherDiskEncryption|Boolean|Allows the Admin to disable the warning prompt for other disk encryption on the user machines.|
-|bitLockerEnableStorageCardEncryptionOnMobile|Boolean|Allows the admin to require encryption to be turned on using BitLocker. This policy is valid only for a mobile SKU.|
-|bitLockerEncryptDevice|Boolean|Allows the admin to require encryption to be turned on using BitLocker.|
-|bitLockerSystemDrivePolicy|[bitLockerSystemDrivePolicy](../resources/intune-deviceconfig-bitlockersystemdrivepolicy.md)|BitLocker System Drive Policy.|
-|bitLockerFixedDrivePolicy|[bitLockerFixedDrivePolicy](../resources/intune-deviceconfig-bitlockerfixeddrivepolicy.md)|BitLocker Fixed Drive Policy.|
-|bitLockerRemovableDrivePolicy|[bitLockerRemovableDrivePolicy](../resources/intune-deviceconfig-bitlockerremovabledrivepolicy.md)|BitLocker Removable Drive Policy.|
-|bitLockerRecoveryPasswordRotation|[bitLockerRecoveryPasswordRotationType](../resources/intune-deviceconfig-bitlockerrecoverypasswordrotationtype.md)|This setting initiates a client-driven recovery password rotation after an OS drive recovery (either by using bootmgr or WinRE). Possible values are: `notConfigured`, `disabled`, `enabledForAzureAd`, `enabledForAzureAdAndHybrid`.|
 |defenderDisableScanArchiveFiles|Boolean|Allows or disallows scanning of archives.|
 |defenderAllowScanArchiveFiles|Boolean|Allows or disallows scanning of archives.|
 |defenderDisableBehaviorMonitoring|Boolean|Allows or disallows Windows Defender Behavior Monitoring functionality.|
@@ -270,6 +233,43 @@ Inherits from [deviceConfiguration](../resources/intune-shared-deviceconfigurati
 |defenderSignatureUpdateIntervalInHours|Int32|Specifies the interval (in hours) that will be used to check for signatures, so instead of using the ScheduleDay and ScheduleTime the check for new signatures will be set according to the interval. Valid values 0 to 24|
 |defenderSubmitSamplesConsentType|[defenderSubmitSamplesConsentType](../resources/intune-deviceconfig-defendersubmitsamplesconsenttype.md)|Checks for the user consent level in Windows Defender to send data. Possible values are: `sendSafeSamplesAutomatically`, `alwaysPrompt`, `neverSend`, `sendAllSamplesAutomatically`.|
 |defenderDetectedMalwareActions|[defenderDetectedMalwareActions](../resources/intune-deviceconfig-defenderdetectedmalwareactions.md)|Allows an administrator to specify any valid threat severity levels and the corresponding default action ID to take.|
+|dmaGuardDeviceEnumerationPolicy|[dmaGuardDeviceEnumerationPolicyType](../resources/intune-deviceconfig-dmaguarddeviceenumerationpolicytype.md)|This policy is intended to provide additional security against external DMA capable devices. It allows for more control over the enumeration of external DMA capable devices incompatible with DMA Remapping/device memory isolation and sandboxing. This policy only takes effect when Kernel DMA Protection is supported and enabled by the system firmware. Kernel DMA Protection is a platform feature that cannot be controlled via policy or by end user. It has to be supported by the system at the time of manufacturing. To check if the system supports Kernel DMA Protection, please check the Kernel DMA Protection field in the Summary page of MSINFO32.exe. Possible values are: `deviceDefault`, `blockAll`, `allowAll`.|
+|smartScreenEnableInShell|Boolean|Allows IT Admins to configure SmartScreen for Windows.|
+|smartScreenBlockOverrideForFiles|Boolean|Allows IT Admins to control whether users can can ignore SmartScreen warnings and run malicious files.|
+|userRightsAccessCredentialManagerAsTrustedCaller|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|This user right is used by Credential Manager during Backup/Restore. Users' saved credentials might be compromised if this privilege is given to other entities. Only states NotConfigured and Allowed are supported|
+|userRightsAllowAccessFromNetwork|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|This user right determines which users and groups are allowed to connect to the computer over the network. State Allowed is supported.|
+|userRightsBlockAccessFromNetwork|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|This user right determines which users and groups are block from connecting to the computer over the network. State Block is supported.|
+|userRightsActAsPartOfTheOperatingSystem|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|This user right allows a process to impersonate any user without authentication. The process can therefore gain access to the same local resources as that user. Only states NotConfigured and Allowed are supported|
+|userRightsLocalLogOn|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|This user right determines which users can log on to the computer. States NotConfigured, Allowed are supported |
+|userRightsDenyLocalLogOn|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|This user right determines which users cannot log on to the computer. States NotConfigured, Blocked are supported |
+|userRightsBackupData|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|This user right determines which users can bypass file, directory, registry, and other persistent objects permissions when backing up files and directories. Only states NotConfigured and Allowed are supported|
+|userRightsChangeSystemTime|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|This user right determines which users and groups can change the time and date on the internal clock of the computer. Only states NotConfigured and Allowed are supported|
+|userRightsCreateGlobalObjects|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|This security setting determines whether users can create global objects that are available to all sessions. Users who can create global objects could affect processes that run under other users' sessions, which could lead to application failure or data corruption. Only states NotConfigured and Allowed are supported|
+|userRightsCreatePageFile|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|This user right determines which users and groups can call an internal API to create and change the size of a page file. Only states NotConfigured and Allowed are supported|
+|userRightsCreatePermanentSharedObjects|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|This user right determines which accounts can be used by processes to create a directory object using the object manager. Only states NotConfigured and Allowed are supported|
+|userRightsCreateSymbolicLinks|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|This user right determines if the user can create a symbolic link from the computer to which they are logged on. Only states NotConfigured and Allowed are supported|
+|userRightsCreateToken|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|This user right determines which users/groups can be used by processes to create a token that can then be used to get access to any local resources when the process uses an internal API to create an access token. Only states NotConfigured and Allowed are supported|
+|userRightsDebugPrograms|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|This user right determines which users can attach a debugger to any process or to the kernel. Only states NotConfigured and Allowed are supported|
+|userRightsRemoteDesktopServicesLogOn|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|This user right determines which users and groups are prohibited from logging on as a Remote Desktop Services client. Only states NotConfigured and Blocked are supported|
+|userRightsDelegation|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|This user right determines which users can set the Trusted for Delegation setting on a user or computer object. Only states NotConfigured and Allowed are supported.|
+|userRightsGenerateSecurityAudits|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|This user right determines which accounts can be used by a process to add entries to the security log. The security log is used to trace unauthorized system access.  Only states NotConfigured and Allowed are supported.|
+|userRightsImpersonateClient|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|Assigning this user right to a user allows programs running on behalf of that user to impersonate a client. Requiring this user right for this kind of impersonation prevents an unauthorized user from convincing a client to connect to a service that they have created and then impersonating that client, which can elevate the unauthorized user's permissions to administrative or system levels. Only states NotConfigured and Allowed are supported.|
+|userRightsIncreaseSchedulingPriority|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|This user right determines which accounts can use a process with Write Property access to another process to increase the execution priority assigned to the other process. Only states NotConfigured and Allowed are supported.|
+|userRightsLoadUnloadDrivers|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|This user right determines which users can dynamically load and unload device drivers or other code in to kernel mode. Only states NotConfigured and Allowed are supported.|
+|userRightsLockMemory|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|This user right determines which accounts can use a process to keep data in physical memory, which prevents the system from paging the data to virtual memory on disk. Only states NotConfigured and Allowed are supported.|
+|userRightsManageAuditingAndSecurityLogs|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|This user right determines which users can specify object access auditing options for individual resources, such as files, Active Directory objects, and registry keys. Only states NotConfigured and Allowed are supported.|
+|userRightsManageVolumes|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|This user right determines which users and groups can run maintenance tasks on a volume, such as remote defragmentation. Only states NotConfigured and Allowed are supported.|
+|userRightsModifyFirmwareEnvironment|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|This user right determines who can modify firmware environment values. Only states NotConfigured and Allowed are supported.|
+|userRightsModifyObjectLabels|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|This user right determines which user accounts can modify the integrity label of objects, such as files, registry keys, or processes owned by other users. Only states NotConfigured and Allowed are supported.|
+|userRightsProfileSingleProcess|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|This user right determines which users can use performance monitoring tools to monitor the performance of system processes. Only states NotConfigured and Allowed are supported.|
+|userRightsRemoteShutdown|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|This user right determines which users are allowed to shut down a computer from a remote location on the network. Misuse of this user right can result in a denial of service. Only states NotConfigured and Allowed are supported.|
+|userRightsRestoreData|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|This user right determines which users can bypass file, directory, registry, and other persistent objects permissions when restoring backed up files and directories, and determines which users can set any valid security principal as the owner of an object. Only states NotConfigured and Allowed are supported.|
+|userRightsTakeOwnership|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|This user right determines which users can take ownership of any securable object in the system, including Active Directory objects, files and folders, printers, registry keys, processes, and threads. Only states NotConfigured and Allowed are supported.|
+|xboxServicesEnableXboxGameSaveTask|Boolean|This setting determines whether xbox game save is enabled (1) or disabled (0).|
+|xboxServicesAccessoryManagementServiceStartupMode|[serviceStartType](../resources/intune-deviceconfig-servicestarttype.md)|This setting determines whether the Accessory management service's start type is Automatic(2), Manual(3), Disabled(4). Default: Manual. Possible values are: `manual`, `automatic`, `disabled`.|
+|xboxServicesLiveAuthManagerServiceStartupMode|[serviceStartType](../resources/intune-deviceconfig-servicestarttype.md)|This setting determines whether Live Auth Manager service's start type is Automatic(2), Manual(3), Disabled(4). Default: Manual. Possible values are: `manual`, `automatic`, `disabled`.|
+|xboxServicesLiveGameSaveServiceStartupMode|[serviceStartType](../resources/intune-deviceconfig-servicestarttype.md)|This setting determines whether Live Game save service's start type is Automatic(2), Manual(3), Disabled(4). Default: Manual. Possible values are: `manual`, `automatic`, `disabled`.|
+|xboxServicesLiveNetworkingServiceStartupMode|[serviceStartType](../resources/intune-deviceconfig-servicestarttype.md)|This setting determines whether Networking service's start type is Automatic(2), Manual(3), Disabled(4). Default: Manual. Possible values are: `manual`, `automatic`, `disabled`.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -324,7 +324,222 @@ Here is a JSON representation of the resource.
   "description": "String",
   "displayName": "String",
   "version": 1024,
-  "dmaGuardDeviceEnumerationPolicy": "String",
+  "applicationGuardEnabled": true,
+  "applicationGuardEnabledOptions": "String",
+  "applicationGuardBlockFileTransfer": "String",
+  "applicationGuardBlockNonEnterpriseContent": true,
+  "applicationGuardAllowPersistence": true,
+  "applicationGuardForceAuditing": true,
+  "applicationGuardBlockClipboardSharing": "String",
+  "applicationGuardAllowPrintToPDF": true,
+  "applicationGuardAllowPrintToXPS": true,
+  "applicationGuardAllowPrintToLocalPrinters": true,
+  "applicationGuardAllowPrintToNetworkPrinters": true,
+  "applicationGuardAllowVirtualGPU": true,
+  "applicationGuardAllowFileSaveOnHost": true,
+  "applicationGuardAllowCameraMicrophoneRedirection": true,
+  "applicationGuardCertificateThumbprints": [
+    "String"
+  ],
+  "appLockerApplicationControl": "String",
+  "bitLockerAllowStandardUserEncryption": true,
+  "bitLockerDisableWarningForOtherDiskEncryption": true,
+  "bitLockerEnableStorageCardEncryptionOnMobile": true,
+  "bitLockerEncryptDevice": true,
+  "bitLockerSystemDrivePolicy": {
+    "@odata.type": "microsoft.graph.bitLockerSystemDrivePolicy",
+    "encryptionMethod": "String",
+    "startupAuthenticationRequired": true,
+    "startupAuthenticationBlockWithoutTpmChip": true,
+    "startupAuthenticationTpmUsage": "String",
+    "startupAuthenticationTpmPinUsage": "String",
+    "startupAuthenticationTpmKeyUsage": "String",
+    "startupAuthenticationTpmPinAndKeyUsage": "String",
+    "minimumPinLength": 1024,
+    "recoveryOptions": {
+      "@odata.type": "microsoft.graph.bitLockerRecoveryOptions",
+      "blockDataRecoveryAgent": true,
+      "recoveryPasswordUsage": "String",
+      "recoveryKeyUsage": "String",
+      "hideRecoveryOptions": true,
+      "enableRecoveryInformationSaveToStore": true,
+      "recoveryInformationToStore": "String",
+      "enableBitLockerAfterRecoveryInformationToStore": true
+    },
+    "prebootRecoveryEnableMessageAndUrl": true,
+    "prebootRecoveryMessage": "String",
+    "prebootRecoveryUrl": "String"
+  },
+  "bitLockerFixedDrivePolicy": {
+    "@odata.type": "microsoft.graph.bitLockerFixedDrivePolicy",
+    "encryptionMethod": "String",
+    "requireEncryptionForWriteAccess": true,
+    "recoveryOptions": {
+      "@odata.type": "microsoft.graph.bitLockerRecoveryOptions",
+      "blockDataRecoveryAgent": true,
+      "recoveryPasswordUsage": "String",
+      "recoveryKeyUsage": "String",
+      "hideRecoveryOptions": true,
+      "enableRecoveryInformationSaveToStore": true,
+      "recoveryInformationToStore": "String",
+      "enableBitLockerAfterRecoveryInformationToStore": true
+    }
+  },
+  "bitLockerRemovableDrivePolicy": {
+    "@odata.type": "microsoft.graph.bitLockerRemovableDrivePolicy",
+    "encryptionMethod": "String",
+    "requireEncryptionForWriteAccess": true,
+    "blockCrossOrganizationWriteAccess": true
+  },
+  "bitLockerRecoveryPasswordRotation": "String",
+  "defenderSecurityCenterDisableAppBrowserUI": true,
+  "defenderSecurityCenterDisableFamilyUI": true,
+  "defenderSecurityCenterDisableHealthUI": true,
+  "defenderSecurityCenterDisableNetworkUI": true,
+  "defenderSecurityCenterDisableVirusUI": true,
+  "defenderSecurityCenterDisableAccountUI": true,
+  "defenderSecurityCenterDisableClearTpmUI": true,
+  "defenderSecurityCenterDisableHardwareUI": true,
+  "defenderSecurityCenterDisableNotificationAreaUI": true,
+  "defenderSecurityCenterDisableRansomwareUI": true,
+  "defenderSecurityCenterDisableSecureBootUI": true,
+  "defenderSecurityCenterDisableTroubleshootingUI": true,
+  "defenderSecurityCenterDisableVulnerableTpmFirmwareUpdateUI": true,
+  "defenderSecurityCenterOrganizationDisplayName": "String",
+  "defenderSecurityCenterHelpEmail": "String",
+  "defenderSecurityCenterHelpPhone": "String",
+  "defenderSecurityCenterHelpURL": "String",
+  "defenderSecurityCenterNotificationsFromApp": "String",
+  "defenderSecurityCenterITContactDisplay": "String",
+  "windowsDefenderTamperProtection": "String",
+  "defenderAdobeReaderLaunchChildProcess": "String",
+  "defenderAttackSurfaceReductionExcludedPaths": [
+    "String"
+  ],
+  "defenderOfficeAppsOtherProcessInjectionType": "String",
+  "defenderOfficeAppsOtherProcessInjection": "String",
+  "defenderOfficeCommunicationAppsLaunchChildProcess": "String",
+  "defenderOfficeAppsExecutableContentCreationOrLaunchType": "String",
+  "defenderOfficeAppsExecutableContentCreationOrLaunch": "String",
+  "defenderOfficeAppsLaunchChildProcessType": "String",
+  "defenderOfficeAppsLaunchChildProcess": "String",
+  "defenderOfficeMacroCodeAllowWin32ImportsType": "String",
+  "defenderOfficeMacroCodeAllowWin32Imports": "String",
+  "defenderScriptObfuscatedMacroCodeType": "String",
+  "defenderScriptObfuscatedMacroCode": "String",
+  "defenderScriptDownloadedPayloadExecutionType": "String",
+  "defenderScriptDownloadedPayloadExecution": "String",
+  "defenderPreventCredentialStealingType": "String",
+  "defenderProcessCreationType": "String",
+  "defenderProcessCreation": "String",
+  "defenderUntrustedUSBProcessType": "String",
+  "defenderUntrustedUSBProcess": "String",
+  "defenderUntrustedExecutableType": "String",
+  "defenderUntrustedExecutable": "String",
+  "defenderEmailContentExecutionType": "String",
+  "defenderEmailContentExecution": "String",
+  "defenderAdvancedRansomewareProtectionType": "String",
+  "defenderGuardMyFoldersType": "String",
+  "defenderGuardedFoldersAllowedAppPaths": [
+    "String"
+  ],
+  "defenderAdditionalGuardedFolders": [
+    "String"
+  ],
+  "defenderNetworkProtectionType": "String",
+  "defenderExploitProtectionXml": "binary",
+  "defenderExploitProtectionXmlFileName": "String",
+  "defenderSecurityCenterBlockExploitProtectionOverride": true,
+  "defenderBlockPersistenceThroughWmiType": "String",
+  "firewallBlockStatefulFTP": true,
+  "firewallIdleTimeoutForSecurityAssociationInSeconds": 1024,
+  "firewallPreSharedKeyEncodingMethod": "String",
+  "firewallIPSecExemptionsNone": true,
+  "firewallIPSecExemptionsAllowNeighborDiscovery": true,
+  "firewallIPSecExemptionsAllowICMP": true,
+  "firewallIPSecExemptionsAllowRouterDiscovery": true,
+  "firewallIPSecExemptionsAllowDHCP": true,
+  "firewallCertificateRevocationListCheckMethod": "String",
+  "firewallMergeKeyingModuleSettings": true,
+  "firewallPacketQueueingMethod": "String",
+  "firewallProfileDomain": {
+    "@odata.type": "microsoft.graph.windowsFirewallNetworkProfile",
+    "firewallEnabled": "String",
+    "stealthModeRequired": true,
+    "stealthModeBlocked": true,
+    "incomingTrafficRequired": true,
+    "incomingTrafficBlocked": true,
+    "unicastResponsesToMulticastBroadcastsRequired": true,
+    "unicastResponsesToMulticastBroadcastsBlocked": true,
+    "inboundNotificationsRequired": true,
+    "inboundNotificationsBlocked": true,
+    "authorizedApplicationRulesFromGroupPolicyMerged": true,
+    "authorizedApplicationRulesFromGroupPolicyNotMerged": true,
+    "globalPortRulesFromGroupPolicyMerged": true,
+    "globalPortRulesFromGroupPolicyNotMerged": true,
+    "connectionSecurityRulesFromGroupPolicyMerged": true,
+    "connectionSecurityRulesFromGroupPolicyNotMerged": true,
+    "outboundConnectionsRequired": true,
+    "outboundConnectionsBlocked": true,
+    "inboundConnectionsRequired": true,
+    "inboundConnectionsBlocked": true,
+    "securedPacketExemptionAllowed": true,
+    "securedPacketExemptionBlocked": true,
+    "policyRulesFromGroupPolicyMerged": true,
+    "policyRulesFromGroupPolicyNotMerged": true
+  },
+  "firewallProfilePublic": {
+    "@odata.type": "microsoft.graph.windowsFirewallNetworkProfile",
+    "firewallEnabled": "String",
+    "stealthModeRequired": true,
+    "stealthModeBlocked": true,
+    "incomingTrafficRequired": true,
+    "incomingTrafficBlocked": true,
+    "unicastResponsesToMulticastBroadcastsRequired": true,
+    "unicastResponsesToMulticastBroadcastsBlocked": true,
+    "inboundNotificationsRequired": true,
+    "inboundNotificationsBlocked": true,
+    "authorizedApplicationRulesFromGroupPolicyMerged": true,
+    "authorizedApplicationRulesFromGroupPolicyNotMerged": true,
+    "globalPortRulesFromGroupPolicyMerged": true,
+    "globalPortRulesFromGroupPolicyNotMerged": true,
+    "connectionSecurityRulesFromGroupPolicyMerged": true,
+    "connectionSecurityRulesFromGroupPolicyNotMerged": true,
+    "outboundConnectionsRequired": true,
+    "outboundConnectionsBlocked": true,
+    "inboundConnectionsRequired": true,
+    "inboundConnectionsBlocked": true,
+    "securedPacketExemptionAllowed": true,
+    "securedPacketExemptionBlocked": true,
+    "policyRulesFromGroupPolicyMerged": true,
+    "policyRulesFromGroupPolicyNotMerged": true
+  },
+  "firewallProfilePrivate": {
+    "@odata.type": "microsoft.graph.windowsFirewallNetworkProfile",
+    "firewallEnabled": "String",
+    "stealthModeRequired": true,
+    "stealthModeBlocked": true,
+    "incomingTrafficRequired": true,
+    "incomingTrafficBlocked": true,
+    "unicastResponsesToMulticastBroadcastsRequired": true,
+    "unicastResponsesToMulticastBroadcastsBlocked": true,
+    "inboundNotificationsRequired": true,
+    "inboundNotificationsBlocked": true,
+    "authorizedApplicationRulesFromGroupPolicyMerged": true,
+    "authorizedApplicationRulesFromGroupPolicyNotMerged": true,
+    "globalPortRulesFromGroupPolicyMerged": true,
+    "globalPortRulesFromGroupPolicyNotMerged": true,
+    "connectionSecurityRulesFromGroupPolicyMerged": true,
+    "connectionSecurityRulesFromGroupPolicyNotMerged": true,
+    "outboundConnectionsRequired": true,
+    "outboundConnectionsBlocked": true,
+    "inboundConnectionsRequired": true,
+    "inboundConnectionsBlocked": true,
+    "securedPacketExemptionAllowed": true,
+    "securedPacketExemptionBlocked": true,
+    "policyRulesFromGroupPolicyMerged": true,
+    "policyRulesFromGroupPolicyNotMerged": true
+  },
   "firewallRules": [
     {
       "@odata.type": "microsoft.graph.windowsFirewallRule",
@@ -354,6 +569,118 @@ Here is a JSON representation of the resource.
       "localUserAuthorizations": "String"
     }
   ],
+  "localSecurityOptionsBlockMicrosoftAccounts": true,
+  "localSecurityOptionsBlockRemoteLogonWithBlankPassword": true,
+  "localSecurityOptionsDisableAdministratorAccount": true,
+  "localSecurityOptionsAdministratorAccountName": "String",
+  "localSecurityOptionsDisableGuestAccount": true,
+  "localSecurityOptionsGuestAccountName": "String",
+  "localSecurityOptionsAllowUndockWithoutHavingToLogon": true,
+  "localSecurityOptionsBlockUsersInstallingPrinterDrivers": true,
+  "localSecurityOptionsBlockRemoteOpticalDriveAccess": true,
+  "localSecurityOptionsFormatAndEjectOfRemovableMediaAllowedUser": "String",
+  "localSecurityOptionsMachineInactivityLimit": 1024,
+  "localSecurityOptionsMachineInactivityLimitInMinutes": 1024,
+  "localSecurityOptionsDoNotRequireCtrlAltDel": true,
+  "localSecurityOptionsHideLastSignedInUser": true,
+  "localSecurityOptionsHideUsernameAtSignIn": true,
+  "localSecurityOptionsLogOnMessageTitle": "String",
+  "localSecurityOptionsLogOnMessageText": "String",
+  "localSecurityOptionsAllowPKU2UAuthenticationRequests": true,
+  "localSecurityOptionsAllowRemoteCallsToSecurityAccountsManagerHelperBool": true,
+  "localSecurityOptionsAllowRemoteCallsToSecurityAccountsManager": "String",
+  "localSecurityOptionsMinimumSessionSecurityForNtlmSspBasedClients": "String",
+  "localSecurityOptionsMinimumSessionSecurityForNtlmSspBasedServers": "String",
+  "lanManagerAuthenticationLevel": "String",
+  "lanManagerWorkstationDisableInsecureGuestLogons": true,
+  "localSecurityOptionsClearVirtualMemoryPageFile": true,
+  "localSecurityOptionsAllowSystemToBeShutDownWithoutHavingToLogOn": true,
+  "localSecurityOptionsAllowUIAccessApplicationElevation": true,
+  "localSecurityOptionsVirtualizeFileAndRegistryWriteFailuresToPerUserLocations": true,
+  "localSecurityOptionsOnlyElevateSignedExecutables": true,
+  "localSecurityOptionsAdministratorElevationPromptBehavior": "String",
+  "localSecurityOptionsStandardUserElevationPromptBehavior": "String",
+  "localSecurityOptionsSwitchToSecureDesktopWhenPromptingForElevation": true,
+  "localSecurityOptionsDetectApplicationInstallationsAndPromptForElevation": true,
+  "localSecurityOptionsAllowUIAccessApplicationsForSecureLocations": true,
+  "localSecurityOptionsUseAdminApprovalMode": true,
+  "localSecurityOptionsUseAdminApprovalModeForAdministrators": true,
+  "localSecurityOptionsInformationShownOnLockScreen": "String",
+  "localSecurityOptionsInformationDisplayedOnLockScreen": "String",
+  "localSecurityOptionsDisableClientDigitallySignCommunicationsIfServerAgrees": true,
+  "localSecurityOptionsClientDigitallySignCommunicationsAlways": true,
+  "localSecurityOptionsClientSendUnencryptedPasswordToThirdPartySMBServers": true,
+  "localSecurityOptionsDisableServerDigitallySignCommunicationsAlways": true,
+  "localSecurityOptionsDisableServerDigitallySignCommunicationsIfClientAgrees": true,
+  "localSecurityOptionsRestrictAnonymousAccessToNamedPipesAndShares": true,
+  "localSecurityOptionsDoNotAllowAnonymousEnumerationOfSAMAccounts": true,
+  "localSecurityOptionsAllowAnonymousEnumerationOfSAMAccountsAndShares": true,
+  "localSecurityOptionsDoNotStoreLANManagerHashValueOnNextPasswordChange": true,
+  "localSecurityOptionsSmartCardRemovalBehavior": "String",
+  "deviceGuardLocalSystemAuthorityCredentialGuardSettings": "String",
+  "deviceGuardEnableVirtualizationBasedSecurity": true,
+  "deviceGuardEnableSecureBootWithDMA": true,
+  "deviceGuardSecureBootWithDMA": "String",
+  "deviceGuardLaunchSystemGuard": "String",
+  "defenderDisableScanArchiveFiles": true,
+  "defenderAllowScanArchiveFiles": true,
+  "defenderDisableBehaviorMonitoring": true,
+  "defenderAllowBehaviorMonitoring": true,
+  "defenderDisableCloudProtection": true,
+  "defenderAllowCloudProtection": true,
+  "defenderEnableScanIncomingMail": true,
+  "defenderEnableScanMappedNetworkDrivesDuringFullScan": true,
+  "defenderDisableScanRemovableDrivesDuringFullScan": true,
+  "defenderAllowScanRemovableDrivesDuringFullScan": true,
+  "defenderDisableScanDownloads": true,
+  "defenderAllowScanDownloads": true,
+  "defenderDisableIntrusionPreventionSystem": true,
+  "defenderAllowIntrusionPreventionSystem": true,
+  "defenderDisableOnAccessProtection": true,
+  "defenderAllowOnAccessProtection": true,
+  "defenderDisableRealTimeMonitoring": true,
+  "defenderAllowRealTimeMonitoring": true,
+  "defenderDisableScanNetworkFiles": true,
+  "defenderAllowScanNetworkFiles": true,
+  "defenderDisableScanScriptsLoadedInInternetExplorer": true,
+  "defenderAllowScanScriptsLoadedInInternetExplorer": true,
+  "defenderBlockEndUserAccess": true,
+  "defenderAllowEndUserAccess": true,
+  "defenderScanMaxCpuPercentage": 1024,
+  "defenderCheckForSignaturesBeforeRunningScan": true,
+  "defenderCloudBlockLevel": "String",
+  "defenderCloudExtendedTimeoutInSeconds": 1024,
+  "defenderDaysBeforeDeletingQuarantinedMalware": 1024,
+  "defenderDisableCatchupFullScan": true,
+  "defenderDisableCatchupQuickScan": true,
+  "defenderEnableLowCpuPriority": true,
+  "defenderFileExtensionsToExclude": [
+    "String"
+  ],
+  "defenderFilesAndFoldersToExclude": [
+    "String"
+  ],
+  "defenderProcessesToExclude": [
+    "String"
+  ],
+  "defenderPotentiallyUnwantedAppAction": "String",
+  "defenderScanDirection": "String",
+  "defenderScanType": "String",
+  "defenderScheduledQuickScanTime": "String (time of day)",
+  "defenderScheduledScanDay": "String",
+  "defenderScheduledScanTime": "String (time of day)",
+  "defenderSignatureUpdateIntervalInHours": 1024,
+  "defenderSubmitSamplesConsentType": "String",
+  "defenderDetectedMalwareActions": {
+    "@odata.type": "microsoft.graph.defenderDetectedMalwareActions",
+    "lowSeverity": "String",
+    "moderateSeverity": "String",
+    "highSeverity": "String",
+    "severeSeverity": "String"
+  },
+  "dmaGuardDeviceEnumerationPolicy": "String",
+  "smartScreenEnableInShell": true,
+  "smartScreenBlockOverrideForFiles": true,
   "userRightsAccessCredentialManagerAsTrustedCaller": {
     "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
     "state": "String",
@@ -706,333 +1033,6 @@ Here is a JSON representation of the resource.
   "xboxServicesAccessoryManagementServiceStartupMode": "String",
   "xboxServicesLiveAuthManagerServiceStartupMode": "String",
   "xboxServicesLiveGameSaveServiceStartupMode": "String",
-  "xboxServicesLiveNetworkingServiceStartupMode": "String",
-  "localSecurityOptionsBlockMicrosoftAccounts": true,
-  "localSecurityOptionsBlockRemoteLogonWithBlankPassword": true,
-  "localSecurityOptionsDisableAdministratorAccount": true,
-  "localSecurityOptionsAdministratorAccountName": "String",
-  "localSecurityOptionsDisableGuestAccount": true,
-  "localSecurityOptionsGuestAccountName": "String",
-  "localSecurityOptionsAllowUndockWithoutHavingToLogon": true,
-  "localSecurityOptionsBlockUsersInstallingPrinterDrivers": true,
-  "localSecurityOptionsBlockRemoteOpticalDriveAccess": true,
-  "localSecurityOptionsFormatAndEjectOfRemovableMediaAllowedUser": "String",
-  "localSecurityOptionsMachineInactivityLimit": 1024,
-  "localSecurityOptionsMachineInactivityLimitInMinutes": 1024,
-  "localSecurityOptionsDoNotRequireCtrlAltDel": true,
-  "localSecurityOptionsHideLastSignedInUser": true,
-  "localSecurityOptionsHideUsernameAtSignIn": true,
-  "localSecurityOptionsLogOnMessageTitle": "String",
-  "localSecurityOptionsLogOnMessageText": "String",
-  "localSecurityOptionsAllowPKU2UAuthenticationRequests": true,
-  "localSecurityOptionsAllowRemoteCallsToSecurityAccountsManagerHelperBool": true,
-  "localSecurityOptionsAllowRemoteCallsToSecurityAccountsManager": "String",
-  "localSecurityOptionsMinimumSessionSecurityForNtlmSspBasedClients": "String",
-  "localSecurityOptionsMinimumSessionSecurityForNtlmSspBasedServers": "String",
-  "lanManagerAuthenticationLevel": "String",
-  "lanManagerWorkstationDisableInsecureGuestLogons": true,
-  "localSecurityOptionsClearVirtualMemoryPageFile": true,
-  "localSecurityOptionsAllowSystemToBeShutDownWithoutHavingToLogOn": true,
-  "localSecurityOptionsAllowUIAccessApplicationElevation": true,
-  "localSecurityOptionsVirtualizeFileAndRegistryWriteFailuresToPerUserLocations": true,
-  "localSecurityOptionsOnlyElevateSignedExecutables": true,
-  "localSecurityOptionsAdministratorElevationPromptBehavior": "String",
-  "localSecurityOptionsStandardUserElevationPromptBehavior": "String",
-  "localSecurityOptionsSwitchToSecureDesktopWhenPromptingForElevation": true,
-  "localSecurityOptionsDetectApplicationInstallationsAndPromptForElevation": true,
-  "localSecurityOptionsAllowUIAccessApplicationsForSecureLocations": true,
-  "localSecurityOptionsUseAdminApprovalMode": true,
-  "localSecurityOptionsUseAdminApprovalModeForAdministrators": true,
-  "localSecurityOptionsInformationShownOnLockScreen": "String",
-  "localSecurityOptionsInformationDisplayedOnLockScreen": "String",
-  "localSecurityOptionsDisableClientDigitallySignCommunicationsIfServerAgrees": true,
-  "localSecurityOptionsClientDigitallySignCommunicationsAlways": true,
-  "localSecurityOptionsClientSendUnencryptedPasswordToThirdPartySMBServers": true,
-  "localSecurityOptionsDisableServerDigitallySignCommunicationsAlways": true,
-  "localSecurityOptionsDisableServerDigitallySignCommunicationsIfClientAgrees": true,
-  "localSecurityOptionsRestrictAnonymousAccessToNamedPipesAndShares": true,
-  "localSecurityOptionsDoNotAllowAnonymousEnumerationOfSAMAccounts": true,
-  "localSecurityOptionsAllowAnonymousEnumerationOfSAMAccountsAndShares": true,
-  "localSecurityOptionsDoNotStoreLANManagerHashValueOnNextPasswordChange": true,
-  "localSecurityOptionsSmartCardRemovalBehavior": "String",
-  "defenderSecurityCenterDisableAppBrowserUI": true,
-  "defenderSecurityCenterDisableFamilyUI": true,
-  "defenderSecurityCenterDisableHealthUI": true,
-  "defenderSecurityCenterDisableNetworkUI": true,
-  "defenderSecurityCenterDisableVirusUI": true,
-  "defenderSecurityCenterDisableAccountUI": true,
-  "defenderSecurityCenterDisableClearTpmUI": true,
-  "defenderSecurityCenterDisableHardwareUI": true,
-  "defenderSecurityCenterDisableNotificationAreaUI": true,
-  "defenderSecurityCenterDisableRansomwareUI": true,
-  "defenderSecurityCenterDisableSecureBootUI": true,
-  "defenderSecurityCenterDisableTroubleshootingUI": true,
-  "defenderSecurityCenterDisableVulnerableTpmFirmwareUpdateUI": true,
-  "defenderSecurityCenterOrganizationDisplayName": "String",
-  "defenderSecurityCenterHelpEmail": "String",
-  "defenderSecurityCenterHelpPhone": "String",
-  "defenderSecurityCenterHelpURL": "String",
-  "defenderSecurityCenterNotificationsFromApp": "String",
-  "defenderSecurityCenterITContactDisplay": "String",
-  "windowsDefenderTamperProtection": "String",
-  "firewallBlockStatefulFTP": true,
-  "firewallIdleTimeoutForSecurityAssociationInSeconds": 1024,
-  "firewallPreSharedKeyEncodingMethod": "String",
-  "firewallIPSecExemptionsNone": true,
-  "firewallIPSecExemptionsAllowNeighborDiscovery": true,
-  "firewallIPSecExemptionsAllowICMP": true,
-  "firewallIPSecExemptionsAllowRouterDiscovery": true,
-  "firewallIPSecExemptionsAllowDHCP": true,
-  "firewallCertificateRevocationListCheckMethod": "String",
-  "firewallMergeKeyingModuleSettings": true,
-  "firewallPacketQueueingMethod": "String",
-  "firewallProfileDomain": {
-    "@odata.type": "microsoft.graph.windowsFirewallNetworkProfile",
-    "firewallEnabled": "String",
-    "stealthModeRequired": true,
-    "stealthModeBlocked": true,
-    "incomingTrafficRequired": true,
-    "incomingTrafficBlocked": true,
-    "unicastResponsesToMulticastBroadcastsRequired": true,
-    "unicastResponsesToMulticastBroadcastsBlocked": true,
-    "inboundNotificationsRequired": true,
-    "inboundNotificationsBlocked": true,
-    "authorizedApplicationRulesFromGroupPolicyMerged": true,
-    "authorizedApplicationRulesFromGroupPolicyNotMerged": true,
-    "globalPortRulesFromGroupPolicyMerged": true,
-    "globalPortRulesFromGroupPolicyNotMerged": true,
-    "connectionSecurityRulesFromGroupPolicyMerged": true,
-    "connectionSecurityRulesFromGroupPolicyNotMerged": true,
-    "outboundConnectionsRequired": true,
-    "outboundConnectionsBlocked": true,
-    "inboundConnectionsRequired": true,
-    "inboundConnectionsBlocked": true,
-    "securedPacketExemptionAllowed": true,
-    "securedPacketExemptionBlocked": true,
-    "policyRulesFromGroupPolicyMerged": true,
-    "policyRulesFromGroupPolicyNotMerged": true
-  },
-  "firewallProfilePublic": {
-    "@odata.type": "microsoft.graph.windowsFirewallNetworkProfile",
-    "firewallEnabled": "String",
-    "stealthModeRequired": true,
-    "stealthModeBlocked": true,
-    "incomingTrafficRequired": true,
-    "incomingTrafficBlocked": true,
-    "unicastResponsesToMulticastBroadcastsRequired": true,
-    "unicastResponsesToMulticastBroadcastsBlocked": true,
-    "inboundNotificationsRequired": true,
-    "inboundNotificationsBlocked": true,
-    "authorizedApplicationRulesFromGroupPolicyMerged": true,
-    "authorizedApplicationRulesFromGroupPolicyNotMerged": true,
-    "globalPortRulesFromGroupPolicyMerged": true,
-    "globalPortRulesFromGroupPolicyNotMerged": true,
-    "connectionSecurityRulesFromGroupPolicyMerged": true,
-    "connectionSecurityRulesFromGroupPolicyNotMerged": true,
-    "outboundConnectionsRequired": true,
-    "outboundConnectionsBlocked": true,
-    "inboundConnectionsRequired": true,
-    "inboundConnectionsBlocked": true,
-    "securedPacketExemptionAllowed": true,
-    "securedPacketExemptionBlocked": true,
-    "policyRulesFromGroupPolicyMerged": true,
-    "policyRulesFromGroupPolicyNotMerged": true
-  },
-  "firewallProfilePrivate": {
-    "@odata.type": "microsoft.graph.windowsFirewallNetworkProfile",
-    "firewallEnabled": "String",
-    "stealthModeRequired": true,
-    "stealthModeBlocked": true,
-    "incomingTrafficRequired": true,
-    "incomingTrafficBlocked": true,
-    "unicastResponsesToMulticastBroadcastsRequired": true,
-    "unicastResponsesToMulticastBroadcastsBlocked": true,
-    "inboundNotificationsRequired": true,
-    "inboundNotificationsBlocked": true,
-    "authorizedApplicationRulesFromGroupPolicyMerged": true,
-    "authorizedApplicationRulesFromGroupPolicyNotMerged": true,
-    "globalPortRulesFromGroupPolicyMerged": true,
-    "globalPortRulesFromGroupPolicyNotMerged": true,
-    "connectionSecurityRulesFromGroupPolicyMerged": true,
-    "connectionSecurityRulesFromGroupPolicyNotMerged": true,
-    "outboundConnectionsRequired": true,
-    "outboundConnectionsBlocked": true,
-    "inboundConnectionsRequired": true,
-    "inboundConnectionsBlocked": true,
-    "securedPacketExemptionAllowed": true,
-    "securedPacketExemptionBlocked": true,
-    "policyRulesFromGroupPolicyMerged": true,
-    "policyRulesFromGroupPolicyNotMerged": true
-  },
-  "defenderAdobeReaderLaunchChildProcess": "String",
-  "defenderAttackSurfaceReductionExcludedPaths": [
-    "String"
-  ],
-  "defenderOfficeAppsOtherProcessInjectionType": "String",
-  "defenderOfficeAppsOtherProcessInjection": "String",
-  "defenderOfficeCommunicationAppsLaunchChildProcess": "String",
-  "defenderOfficeAppsExecutableContentCreationOrLaunchType": "String",
-  "defenderOfficeAppsExecutableContentCreationOrLaunch": "String",
-  "defenderOfficeAppsLaunchChildProcessType": "String",
-  "defenderOfficeAppsLaunchChildProcess": "String",
-  "defenderOfficeMacroCodeAllowWin32ImportsType": "String",
-  "defenderOfficeMacroCodeAllowWin32Imports": "String",
-  "defenderScriptObfuscatedMacroCodeType": "String",
-  "defenderScriptObfuscatedMacroCode": "String",
-  "defenderScriptDownloadedPayloadExecutionType": "String",
-  "defenderScriptDownloadedPayloadExecution": "String",
-  "defenderPreventCredentialStealingType": "String",
-  "defenderProcessCreationType": "String",
-  "defenderProcessCreation": "String",
-  "defenderUntrustedUSBProcessType": "String",
-  "defenderUntrustedUSBProcess": "String",
-  "defenderUntrustedExecutableType": "String",
-  "defenderUntrustedExecutable": "String",
-  "defenderEmailContentExecutionType": "String",
-  "defenderEmailContentExecution": "String",
-  "defenderAdvancedRansomewareProtectionType": "String",
-  "defenderGuardMyFoldersType": "String",
-  "defenderGuardedFoldersAllowedAppPaths": [
-    "String"
-  ],
-  "defenderAdditionalGuardedFolders": [
-    "String"
-  ],
-  "defenderNetworkProtectionType": "String",
-  "defenderExploitProtectionXml": "binary",
-  "defenderExploitProtectionXmlFileName": "String",
-  "defenderSecurityCenterBlockExploitProtectionOverride": true,
-  "defenderBlockPersistenceThroughWmiType": "String",
-  "appLockerApplicationControl": "String",
-  "deviceGuardLocalSystemAuthorityCredentialGuardSettings": "String",
-  "deviceGuardEnableVirtualizationBasedSecurity": true,
-  "deviceGuardEnableSecureBootWithDMA": true,
-  "deviceGuardSecureBootWithDMA": "String",
-  "deviceGuardLaunchSystemGuard": "String",
-  "smartScreenEnableInShell": true,
-  "smartScreenBlockOverrideForFiles": true,
-  "applicationGuardEnabled": true,
-  "applicationGuardEnabledOptions": "String",
-  "applicationGuardBlockFileTransfer": "String",
-  "applicationGuardBlockNonEnterpriseContent": true,
-  "applicationGuardAllowPersistence": true,
-  "applicationGuardForceAuditing": true,
-  "applicationGuardBlockClipboardSharing": "String",
-  "applicationGuardAllowPrintToPDF": true,
-  "applicationGuardAllowPrintToXPS": true,
-  "applicationGuardAllowPrintToLocalPrinters": true,
-  "applicationGuardAllowPrintToNetworkPrinters": true,
-  "applicationGuardAllowVirtualGPU": true,
-  "applicationGuardAllowFileSaveOnHost": true,
-  "applicationGuardAllowCameraMicrophoneRedirection": true,
-  "applicationGuardCertificateThumbprints": [
-    "String"
-  ],
-  "bitLockerAllowStandardUserEncryption": true,
-  "bitLockerDisableWarningForOtherDiskEncryption": true,
-  "bitLockerEnableStorageCardEncryptionOnMobile": true,
-  "bitLockerEncryptDevice": true,
-  "bitLockerSystemDrivePolicy": {
-    "@odata.type": "microsoft.graph.bitLockerSystemDrivePolicy",
-    "encryptionMethod": "String",
-    "startupAuthenticationRequired": true,
-    "startupAuthenticationBlockWithoutTpmChip": true,
-    "startupAuthenticationTpmUsage": "String",
-    "startupAuthenticationTpmPinUsage": "String",
-    "startupAuthenticationTpmKeyUsage": "String",
-    "startupAuthenticationTpmPinAndKeyUsage": "String",
-    "minimumPinLength": 1024,
-    "recoveryOptions": {
-      "@odata.type": "microsoft.graph.bitLockerRecoveryOptions",
-      "blockDataRecoveryAgent": true,
-      "recoveryPasswordUsage": "String",
-      "recoveryKeyUsage": "String",
-      "hideRecoveryOptions": true,
-      "enableRecoveryInformationSaveToStore": true,
-      "recoveryInformationToStore": "String",
-      "enableBitLockerAfterRecoveryInformationToStore": true
-    },
-    "prebootRecoveryEnableMessageAndUrl": true,
-    "prebootRecoveryMessage": "String",
-    "prebootRecoveryUrl": "String"
-  },
-  "bitLockerFixedDrivePolicy": {
-    "@odata.type": "microsoft.graph.bitLockerFixedDrivePolicy",
-    "encryptionMethod": "String",
-    "requireEncryptionForWriteAccess": true,
-    "recoveryOptions": {
-      "@odata.type": "microsoft.graph.bitLockerRecoveryOptions",
-      "blockDataRecoveryAgent": true,
-      "recoveryPasswordUsage": "String",
-      "recoveryKeyUsage": "String",
-      "hideRecoveryOptions": true,
-      "enableRecoveryInformationSaveToStore": true,
-      "recoveryInformationToStore": "String",
-      "enableBitLockerAfterRecoveryInformationToStore": true
-    }
-  },
-  "bitLockerRemovableDrivePolicy": {
-    "@odata.type": "microsoft.graph.bitLockerRemovableDrivePolicy",
-    "encryptionMethod": "String",
-    "requireEncryptionForWriteAccess": true,
-    "blockCrossOrganizationWriteAccess": true
-  },
-  "bitLockerRecoveryPasswordRotation": "String",
-  "defenderDisableScanArchiveFiles": true,
-  "defenderAllowScanArchiveFiles": true,
-  "defenderDisableBehaviorMonitoring": true,
-  "defenderAllowBehaviorMonitoring": true,
-  "defenderDisableCloudProtection": true,
-  "defenderAllowCloudProtection": true,
-  "defenderEnableScanIncomingMail": true,
-  "defenderEnableScanMappedNetworkDrivesDuringFullScan": true,
-  "defenderDisableScanRemovableDrivesDuringFullScan": true,
-  "defenderAllowScanRemovableDrivesDuringFullScan": true,
-  "defenderDisableScanDownloads": true,
-  "defenderAllowScanDownloads": true,
-  "defenderDisableIntrusionPreventionSystem": true,
-  "defenderAllowIntrusionPreventionSystem": true,
-  "defenderDisableOnAccessProtection": true,
-  "defenderAllowOnAccessProtection": true,
-  "defenderDisableRealTimeMonitoring": true,
-  "defenderAllowRealTimeMonitoring": true,
-  "defenderDisableScanNetworkFiles": true,
-  "defenderAllowScanNetworkFiles": true,
-  "defenderDisableScanScriptsLoadedInInternetExplorer": true,
-  "defenderAllowScanScriptsLoadedInInternetExplorer": true,
-  "defenderBlockEndUserAccess": true,
-  "defenderAllowEndUserAccess": true,
-  "defenderScanMaxCpuPercentage": 1024,
-  "defenderCheckForSignaturesBeforeRunningScan": true,
-  "defenderCloudBlockLevel": "String",
-  "defenderCloudExtendedTimeoutInSeconds": 1024,
-  "defenderDaysBeforeDeletingQuarantinedMalware": 1024,
-  "defenderDisableCatchupFullScan": true,
-  "defenderDisableCatchupQuickScan": true,
-  "defenderEnableLowCpuPriority": true,
-  "defenderFileExtensionsToExclude": [
-    "String"
-  ],
-  "defenderFilesAndFoldersToExclude": [
-    "String"
-  ],
-  "defenderProcessesToExclude": [
-    "String"
-  ],
-  "defenderPotentiallyUnwantedAppAction": "String",
-  "defenderScanDirection": "String",
-  "defenderScanType": "String",
-  "defenderScheduledQuickScanTime": "String (time of day)",
-  "defenderScheduledScanDay": "String",
-  "defenderScheduledScanTime": "String (time of day)",
-  "defenderSignatureUpdateIntervalInHours": 1024,
-  "defenderSubmitSamplesConsentType": "String",
-  "defenderDetectedMalwareActions": {
-    "@odata.type": "microsoft.graph.defenderDetectedMalwareActions",
-    "lowSeverity": "String",
-    "moderateSeverity": "String",
-    "highSeverity": "String",
-    "severeSeverity": "String"
-  }
+  "xboxServicesLiveNetworkingServiceStartupMode": "String"
 }
 ```

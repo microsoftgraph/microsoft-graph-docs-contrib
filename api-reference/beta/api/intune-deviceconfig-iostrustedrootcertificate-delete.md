@@ -36,6 +36,8 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.iosScepCertificateProfile/rootCertificate
+DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.iosWiredNetworkConfiguration/rootCertificateForServerValidation
+DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.iosWiredNetworkConfiguration/rootCertificatesForServerValidation/{iosTrustedRootCertificateId}
 DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.iosEnterpriseWiFiConfiguration/rootCertificatesForServerValidation/{iosTrustedRootCertificateId}
 ```
 
