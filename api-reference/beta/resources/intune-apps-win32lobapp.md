@@ -76,6 +76,8 @@ Inherits from [mobileLobApp](../resources/intune-apps-mobilelobapp.md)
 |minimumSupportedWindowsRelease|String|Indicates the value for the minimum supported windows release. Example: `Windows11_23H2`.|
 |displayVersion|String|Indicates the version displayed in the UX for this app. Used to set the version of the app. Example: `1.0.3.215`.|
 |allowAvailableUninstall|Boolean|Indicates whether the uninstall is supported from the company portal for the Win32 app with an available assignment. When TRUE, indicates that uninstall is supported from the company portal for the Windows app (Win32) with an available assignment. When FALSE, indicates that uninstall is not supported for the Windows app (Win32) with an Available assignment. Default value is FALSE.|
+|activeInstallScript|[mobileAppScriptReference](../resources/intune-apps-mobileappscriptreference.md)|Contains the unique identifier of the associated install script for this Win32 app to be used instead of the install command line by the managed device during app installation. When null, the install command line is used instead.|
+|activeUninstallScript|[mobileAppScriptReference](../resources/intune-apps-mobileappscriptreference.md)|Contains the unique identifier of the associated uninstall script for this Win32 app to be used instead of the uninstall command line by the managed device during app uninstallation. When null, the uninstall command line is used instead.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -209,6 +211,14 @@ Here is a JSON representation of the resource.
   "setupFilePath": "String",
   "minimumSupportedWindowsRelease": "String",
   "displayVersion": "String",
-  "allowAvailableUninstall": true
+  "allowAvailableUninstall": true,
+  "activeInstallScript": {
+    "@odata.type": "microsoft.graph.mobileAppScriptReference",
+    "targetId": "String"
+  },
+  "activeUninstallScript": {
+    "@odata.type": "microsoft.graph.mobileAppScriptReference",
+    "targetId": "String"
+  }
 }
 ```
