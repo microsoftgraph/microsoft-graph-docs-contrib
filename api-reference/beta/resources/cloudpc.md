@@ -62,7 +62,7 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled in In
 |displayName|String|The display name of the Cloud PC.|
 |frontlineCloudPcAvailability|[frontlineCloudPcAvailability](#frontlinecloudpcavailability-values)|The current availability of a frontline assigned Cloud PC. Possible values: `notApplicable`, `available`,`notAvailable` and `unknownFutureValue`. Default value is `notApplicable`. Read Only.|
 |gracePeriodEndDateTime|DateTimeOffset|The date and time when the grace period ends and reprovisioning or deprovisioning happens. Required only if the status is `inGracePeriod`. The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC). For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
-|groupDetail|[cloudPcEntraGroupDetail](../resources/cloudpcentragroupdetail.md)|The Microsoft Entra group details (for example, **id** and **displayName**) for the Entra ID group associated with the user's Reserve Cloud PC assignment. Read-only.|
+|groupDetail|[cloudPcEntraGroupDetail](../resources/cloudpcentragroupdetail.md)|The Microsoft Entra group details (for example, ID and display name) for the Entra ID group associated with the user's Reserve Cloud PC assignment. Read-only.|
 |id|String|The unique identifier for the Cloud PC. Read-only.|
 |imageDisplayName|String|Name of the OS image that's on the Cloud PC.|
 |lastLoginResult|[cloudPcLoginResult](../resources/cloudpcloginresult.md)|The last login result of the Cloud PC. For example, `{ "time": "2014-01-01T00:00:00Z"}`.|
@@ -87,7 +87,7 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled in In
 |statusDetail|[cloudPcStatusDetail](../resources/cloudpcstatusdetail.md)|Indicates the detailed status associated with Cloud PC, including error/warning code, error/warning message, additionalInformation. For example, `{ "code": "internalServerError", "message": "There was an error during the Cloud PC upgrade. Please contact support.", "additionalInformation": null }`. |
 |connectionSetting|[cloudPcConnectionSetting](../resources/cloudpcconnectionsetting.md)|The connection setting of the Cloud PC. Possible values: `enableSingleSignOn`. Read Only.|
 |userAccountType|[cloudPcUserAccountType](../resources/cloudpcorganizationsettings.md#cloudpcuseraccounttype-values)|The account type of the user on provisioned Cloud PCs. Possible values are: `standardUser`, `administrator`, `unknownFutureValue`.|
-|userDetail|[cloudPcEntraUserDetail](../resources/cloudpcentrauserdetail.md)|The user details (for example, **id** and **displayName**) for the user associated with a Reserve Cloud PC assignment. Read-only.|
+|userDetail|[cloudPcEntraUserDetail](../resources/cloudpcentrauserdetail.md)|The user details (for example, ID and display name) for the user associated with a Reserve Cloud PC assignment. Read-only.|
 |userPrincipalName|String|The user principal name (UPN) of the user assigned to the Cloud PC.|
 |statusDetails (deprecated)|[cloudPcStatusDetails](../resources/cloudpcstatusdetails.md)|The details of the Cloud PC status. For example, `{ "code": "internalServerError", "message": "There was an error during the Cloud PC upgrade. Please contact support.", "additionalInformation": null }`. This property is deprecated and will no longer be supported effective August 31, 2024. Use statusDetail instead.|
 
