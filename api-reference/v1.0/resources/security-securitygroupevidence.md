@@ -12,7 +12,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.security
 
-Represents a Microsoft Entra security group that is reported in the [alert](../resources/security-alert.md). as evidence.
+Represents a Microsoft Entra security group that is reported in the [alert](../resources/security-alert.md). As evidence.
 
 Inherits from [alertEvidence](../resources/security-alertevidence.md).
 

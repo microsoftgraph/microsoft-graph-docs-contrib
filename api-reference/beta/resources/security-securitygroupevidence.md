@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a Microsoft Entra security group that is reported in the [alert](../resources/security-alert.md). as evidence.
+Represents a Microsoft Entra security group that is reported in the [alert](../resources/security-alert.md). As evidence.
 
 Inherits from [alertEvidence](../resources/security-alertevidence.md).
 
