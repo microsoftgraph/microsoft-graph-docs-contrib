@@ -65,7 +65,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/networkAccessRoot/reports/getApplicationUsageAnalytics(startDateTime=String (timestamp),endDateTime=String (timestamp),aggregatedBy='parameterValue')
+GET https://graph.microsoft.com/beta/networkAccessRoot/reports/getApplicationUsageAnalytics(startDateTime={startDateTime},endDateTime={endDateTime},aggregatedBy={aggregatedBy})
 ```
 
 ### Response
