@@ -22,14 +22,12 @@ Inherits from [mobilityManagementPolicy](../resources/mobilitymanagementpolicy.m
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/policyroot-list-mobileappmanagementpolicies.md)|[mobileAppManagementPolicy](../resources/mobileappmanagementpolicy.md) collection|Get a list of the mobileAppManagementPolicy objects and their properties.|
-|[Create](../api/policyroot-post-mobileappmanagementpolicies.md)|[mobileAppManagementPolicy](../resources/mobileappmanagementpolicy.md)|Create a new mobileAppManagementPolicy object.|
-|[Get](../api/mobileappmanagementpolicy-get.md)|[mobileAppManagementPolicy](../resources/mobileappmanagementpolicy.md)|Read the properties and relationships of [mobileAppManagementPolicy](../resources/mobileappmanagementpolicy.md) object.|
-|[Update](../api/mobileappmanagementpolicy-update.md)|[mobileAppManagementPolicy](../resources/mobileappmanagementpolicy.md)|Update the properties of a mobileAppManagementPolicy object.|
-|[Delete](../api/policyroot-delete-mobileappmanagementpolicies.md)|None|Delete a mobileAppManagementPolicy object.|
-|[List includedGroups](../api/mobileappmanagementpolicy-list-includedgroups.md)|[group](../resources/group.md) collection|Get a list of groups included in an mobileAppManagementPolicy object.|
-|[Add group](../api/mobileappmanagementpolicy-post-includedgroups.md)|[group](../resources/group.md)|Add includedGroups by posting to the includedGroups collection.|
-|[Remove includedGroups](../api/mobileappmanagementpolicy-delete-includedgroups.md)|None|Remove a [group](../resources/group.md) object.|
+|[List](../api/mobileappmanagementpolicies-list.md)|[mobileAppManagementPolicy](../resources/mobileappmanagementpolicy.md) collection|Get a list of the [mobileAppManagementPolicy](../resources/mobileappmanagementpolicy.md) objects and their properties for mobile app management applications.|
+|[Get](../api/mobileappmanagementpolicies-get.md)|[mobileAppManagementPolicy](../resources/mobileappmanagementpolicy.md)|Read the properties and relationships of a [mobileAppManagementPolicy](../resources/mobileappmanagementpolicy.md) object for a mobile app management application.|
+|[Update](../api/mobileappmanagementpolicies-update.md)|None|Update the properties of a [mobileAppManagementPolicy](../resources/mobileappmanagementpolicy.md) object for a mobile app management application.|
+|[List included groups](../api/mobileappmanagementpolicies-list-includedgroups.md)|[group](../resources/group.md) collection|List included groups for a [mobileAppManagementPolicy](../resources/mobileappmanagementpolicy.md) object for a mobile app management application.|
+|[Add group to policy](../api/mobileappmanagementpolicies-post-includedgroups.md)|None|Add a group to the [mobileAppManagementPolicy](../resources/mobileappmanagementpolicy.md) object for a mobile app management application.|
+|[Delete group from policy](../api/mobileappmanagementpolicies-delete-includedgroups.md)|None|Delete a group from the [mobileAppManagementPolicy](../resources/mobileappmanagementpolicy.md) object for a mobile app management application.|
 
 ## Properties
 |Property|Type|Description|
