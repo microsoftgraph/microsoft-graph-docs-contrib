@@ -49,7 +49,11 @@ The following JSON representation shows the resource type.
   "azureAdUserId": "String",
   "displayName": "String",
   "domainName": "String",
-  "resourceAccessEvents": [{"@odata.type": "microsoft.graph.security.resourceAccessEvent"}],
+  "resourceAccessEvents": [
+	{
+	  "@odata.type": "microsoft.graph.security.resourceAccessEvent"
+	}
+  ],
   "userPrincipalName": "String",
   "userSid": "String"
 }
