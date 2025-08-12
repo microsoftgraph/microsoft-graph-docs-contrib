@@ -1,6 +1,6 @@
 ---
 title: "cloudPcEntraUserDetail resource type"
-description: "Represents the user details (id, displayName) for the user associated with a Reserve Cloud PC assignment."
+description: "Represents the user details (for example, **id** and **displayName**) for a user associated with a Reserve Cloud PC assignment."
 author: "bert589998"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the user details (for example, **id** and **displayName**) for the user associated with a Reserve Cloud PC assignment.
+Represents the user details (for example, **id** and **displayName**) for a user associated with a Reserve Cloud PC assignment.
 
 ## Properties
 
