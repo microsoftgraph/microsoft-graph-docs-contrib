@@ -1,6 +1,40 @@
 {
   "changelog": [
     {
+      "ChangeList": [
+        {
+          "Id": "9ae3e4e6-451d-43f2-ba1c-b1f3402ee10c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "outOfOfficeSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [outOfOfficeSettings](https://learn.microsoft.com/en-us/graph/api/resources/outOfOfficeSettings?view=graph-rest-1.0) resource type.",
+          "Target": "outOfOfficeSettings"
+        },
+        {
+          "Id": "9ae3e4e6-451d-43f2-ba1c-b1f3402ee10c",
+          "ApiChange": "Property",
+          "ChangedApiName": "outOfOfficeSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the **outOfOfficeSettings** property to the [presence](https://learn.microsoft.com/en-us/graph/api/resources/presence?view=graph-rest-1.0) resource.",
+          "Target": "presence"
+        },
+        {
+          "Id": "9ae3e4e6-451d-43f2-ba1c-b1f3402ee10c",
+          "ApiChange": "Property",
+          "ChangedApiName": "sequenceNumber",
+          "ChangeType": "Addition",
+          "Description": "Added the **sequenceNumber** property to the [presence](https://learn.microsoft.com/en-us/graph/api/resources/presence?view=graph-rest-1.0) resource.",
+          "Target": "presence"
+        }
+      ],
+      "Id": "9ae3e4e6-451d-43f2-ba1c-b1f3402ee10c",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-07-16T23:52:04.1390021Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+    },
+    {
       "ChangeList":[
         {
           "Id": "5f408e9d-15ae-45a2-89c1-427f83598967",
