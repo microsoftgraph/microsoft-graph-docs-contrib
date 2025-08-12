@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "4bd57b38-2da3-442a-99d5-a0b760c82a10",
+          "ApiChange": "Property",
+          "ChangedApiName": "isAgenticExperienceEnabled",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **isAgenticExperienceEnabled** property from the [assignmentReviewSettings](https://learn.microsoft.com/en-us/graph/api/resources/assignmentReviewSettings?view=graph-rest-beta) resource.",
+          "Target": "assignmentReviewSettings"
+        }
+      ],
+      "Id": "4bd57b38-2da3-442a-99d5-a0b760c82a10",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-08-07T17:40:11.9922416Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "2e9689f1-ac83-4805-bd3e-6916503a87d1",
           "ApiChange": "Resource",
           "ChangedApiName": "targetUserSponsors",
