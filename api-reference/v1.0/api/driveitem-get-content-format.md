@@ -48,7 +48,7 @@ The following values are valid for the **format** parameter:
 
 | Format value | Description                        | Supported source extensions
 |:-------------|:-----------------------------------|----------------------------
-| pdf          | Converts the item into PDF format. | csv, doc, docx, odp, ods, odt, pot, potm, potx, pps, ppsx, ppsxm, ppt, pptm, pptx, rtf, xls, xlsx
+| pdf          | Converts the item into PDF format. | doc, docx, dot, dotx, dotm, odf, odt, rtf, csv, ods, xlsb, xlsm, xlsx, odp, ppt, pptx, pptm, pot, potx, potm, pps, ppsx, ppsxm, vsd, vsdm, vsdx, epub, eml, htm, html, md, msg, tif, tiff
 | html         | Converts the item into HTML format.| loop, fluid, wbtx
 
 ## Request headers
