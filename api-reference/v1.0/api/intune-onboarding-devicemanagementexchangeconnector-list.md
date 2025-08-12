@@ -63,10 +63,6 @@ GET https://graph.microsoft.com/v1.0/deviceManagement/exchangeConnectors
 [!INCLUDE [sample-code](../includes/snippets/csharp/intune-onboarding-devicemanagementexchangeconnector-list-list-devicemanagementexchangeconnectors-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/intune-onboarding-devicemanagementexchangeconnector-list-list-devicemanagementexchangeconnectors-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/intune-onboarding-devicemanagementexchangeconnector-list-list-devicemanagementexchangeconnectors-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

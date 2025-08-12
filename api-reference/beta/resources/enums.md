@@ -13,6 +13,15 @@ ms.custom: sfi-ropc-nochange
 
 Namespace: microsoft.graph
 
+### readingCoachStoryType values
+
+|Member|
+|:---|
+|aiGenerated|
+|readWorks|
+|userProvided|
+|unknownFutureValue|
+
 ### changeAnnouncementChangeType values
 
 |Member|
@@ -362,6 +371,7 @@ Namespace: microsoft.graph
 | microsoftEntraIdGovernance |
 | microsoftEntraWorkloadId |
 | unknownFutureValue |
+| aatp |
 
 ### recommendationCategory values
 
@@ -370,6 +380,7 @@ Namespace: microsoft.graph
 | identityBestPractice |
 | identitySecureScore |
 | unknownFutureValue |
+| mdiSecureScore |
 
 ### recommendationFeatureAreas values
 
@@ -402,6 +413,10 @@ Namespace: microsoft.graph
 | dismissed |
 | postponed |
 | unknownFutureValue |
+| riskAccepted |
+| thirdParty |
+| planned |
+| alternateMitigation |
 
 ### recommendationType values
 
@@ -1591,6 +1606,7 @@ Namespace: microsoft.graph
 | fido |
 | appPassword |
 | unknownFutureValue |
+| externalAuthMethod |
 
 ### authenticationAppAdminConfiguration values
 
@@ -5272,3 +5288,79 @@ Possible values for user account types (group membership), per Windows definitio
 | tot                | 29    | Indicates the time zone is associated with Tonga Time(UTC+13:00).                                             |
 | lint               | 30    | Indicates the time zone is associated with Line Islands Time(UTC+14:00).                                      |
 | unknownFutureValue | 31    | Evolvable enumeration sentinel value. Do not use.                                                             |
+
+### resourceLinkType values 
+
+|Member|
+|:---|
+|url|
+|unknownFutureValue|
+
+### userPersona values 
+
+|Member|
+|:---|
+|unknown|
+|externalMember|
+|externalGuest|
+|internalMember|
+|internalGuest|
+
+### fileStorageContainerBillingClassification values 
+
+|Member|
+|:---|
+|standard|
+|trial|
+|directToCustomer|
+|unknownFutureValue|
+
+### fileStorageContainerBillingStatus values 
+
+|Member|
+|:---|
+|invalid|
+|valid|
+|unknownFutureValue|
+
+### fileStorageContainerTypeAppPermission values 
+
+|Member|
+|:---|
+|none|
+|readContent|
+|writeContent|
+|manageContent|
+|create|
+|delete|
+|read|
+|write|
+|enumeratePermissions|
+|addPermissions|
+|updatePermissions|
+|deletePermissions|
+|deleteOwnPermission|
+|managePermissions|
+|full|
+|unknownFutureValue|
+
+### fileStorageContainerTypeSettingsOverride values 
+
+|Member|
+|:---|
+|urlTemplate|
+|isDiscoverabilityEnabled|
+|isSearchEnabled|
+|isItemVersioningEnabled|
+|itemMajorVersionLimit|
+|maxStoragePerContainerInBytes|
+|unknownFutureValue|
+
+### aggregationPeriod values 
+
+|Member|
+|:---|
+|d1|
+|d7|
+|d30|
+|unknownFutureValue|

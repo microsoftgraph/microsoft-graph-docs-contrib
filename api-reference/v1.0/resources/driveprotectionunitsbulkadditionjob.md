@@ -12,7 +12,7 @@ ms.date: 05/22/2025
 
 Namespace: microsoft.graph
 
-Represents the properties of a driveProtectionUnitsBulkAdditionJob associated with a [oneDriveForBusinessProtectionPolicy](../resources/onedriveforbusinessprotectionpolicy.md). It contains a list of email addresses, drives, and, directory object IDs to be added to the OneDrive protection policy for backup.
+Represents the properties of a **driveProtectionUnitsBulkAdditionJob** associated with a [oneDriveForBusinessProtectionPolicy](../resources/onedriveforbusinessprotectionpolicy.md). It contains a list of email addresses, drives, and, directory object IDs to be added to the OneDrive protection policy for backup.
 
 Inherits from [protectionUnitsBulkJobBase](../resources/protectionunitsbulkjobbase.md).
 
@@ -30,9 +30,9 @@ Inherits from [protectionUnitsBulkJobBase](../resources/protectionunitsbulkjobba
 |:---|:---|:---|
 |createdBy|[identitySet](../resources/identityset.md)|The identity of the person who created the job.|
 |createdDateTime|DateTimeOffset|The date and time that the job was created.|
-|directoryObjectIds|Collection(String)|The list of OneDrive directoryObjectIds to add to the OneDrive protection policy.|
+|directoryObjectIds|String collection|The list of OneDrive **directoryObjectIds** to add to the OneDrive protection policy.|
 |displayName|String|The name of the job.|
-|drives|Collection(String)|The list of email addresses to add to the OneDrive protection policy.|
+|drives|String collection|The list of email addresses to add to the OneDrive protection policy.|
 |error|[publicError](../resources/publicerror.md)|Contains error details if any email address resolution fails.|
 |id|String|The unique identifier of the job associated with the OneDrive protection policy.|
 |lastModifiedBy|[identitySet](../resources/identityset.md)|Identity of the person who last modified the job.|

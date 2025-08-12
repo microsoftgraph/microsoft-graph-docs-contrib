@@ -77,10 +77,6 @@ Content-length: 71
 [!INCLUDE [sample-code](../includes/snippets/csharp/intune-devices-mobileapptroubleshootingevent-update-update-mobileapptroubleshootingevent-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/intune-devices-mobileapptroubleshootingevent-update-update-mobileapptroubleshootingevent-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/intune-devices-mobileapptroubleshootingevent-update-update-mobileapptroubleshootingevent-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

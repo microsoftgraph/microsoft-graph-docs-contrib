@@ -79,10 +79,6 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-useraccountinformation-from-profile-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-useraccountinformation-from-profile-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-useraccountinformation-from-profile-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -147,7 +143,9 @@ Content-Type: application/json
   "ageGroup": "adult",
   "countryCode": "NO",
   "preferredLanguageTag": null,
-  "userPrincipalName": "innocenty.popov@adventureworks.com"
+  "userPrincipalName": "innocenty.popov@adventureworks.com",
+  "originTenantInfo": null,
+  "userPersona": null
 }
 ```
 

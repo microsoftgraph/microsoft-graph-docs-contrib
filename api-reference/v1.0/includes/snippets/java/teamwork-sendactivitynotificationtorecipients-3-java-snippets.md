@@ -18,6 +18,7 @@ sendActivityNotificationToRecipientsPostRequestBody.setActivityType("announcemen
 ItemBody previewText = new ItemBody();
 previewText.setContent("new announcemnet posted");
 sendActivityNotificationToRecipientsPostRequestBody.setPreviewText(previewText);
+sendActivityNotificationToRecipientsPostRequestBody.setIconId("announcementCreated");
 LinkedList<KeyValuePair> templateParameters = new LinkedList<KeyValuePair>();
 KeyValuePair keyValuePair = new KeyValuePair();
 keyValuePair.setName("deploymentId");
@@ -38,9 +39,6 @@ teamworkNotificationRecipient2.setOdataType("microsoft.graph.aadUserNotification
 teamworkNotificationRecipient2.setUserId("01c64f53-69aa-42c7-9b7f-9f75195d6bfc");
 recipients.add(teamworkNotificationRecipient2);
 sendActivityNotificationToRecipientsPostRequestBody.setRecipients(recipients);
-HashMap<String, Object> additionalData = new HashMap<String, Object>();
-additionalData.put("iconId", "announcementCreated");
-sendActivityNotificationToRecipientsPostRequestBody.setAdditionalData(additionalData);
 graphClient.teamwork().sendActivityNotificationToRecipients().post(sendActivityNotificationToRecipientsPostRequestBody);
 
 

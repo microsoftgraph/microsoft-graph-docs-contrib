@@ -35,7 +35,7 @@ Admins can configure Microsoft 365 Copilot connectors for people data in the [Mi
 
 When multiple sources provide overlapping data, Microsoft 365 uses a precedence model to determine which source is authoritative. Before you have configured a Copilot connector for people data, Entra ID is the highest priority source for people data. People connectors handle data by prioritizing and managing these sources by configuring Admin settings. Newly configured Copilot connectors for people data are given the highest priority. For more information, see [source precedence](profilepriority-configure-profilepropertysetting.md).
 
-Note that not all the data ingested from third-party systems appears automatically in Microsoft 365 experiences by default. For example, admins have to select what data is shown in the [profile card](add-properties-profilecard.md).  
+Not all the data ingested from third-party systems appears automatically in Microsoft 365 experiences by default. For example, admins have to select what data is shown in the [profile card](add-properties-profilecard.md).  
 
 ## Compliance, privacy, and data usage
 
@@ -49,7 +49,7 @@ Microsoft 365 Copilot connectors for people data comply with information barrier
 
 ### Data usage 
 
-People data imported via Copilot connectors is considered customer content and is used by Microsoft 365 services as mentioned previously. Within your organization, this data is treated as publicly accessible. In cross-tenant collaboration scenarios and Copilot experiences, connector data may also be used to enhance context and productivity. 
+People data imported via Copilot connectors is considered customer content and is used by Microsoft 365 services as mentioned previously. Within your organization, this data is treated as publicly accessible. In cross-tenant collaboration scenarios and Copilot experiences, connector data might also be used to enhance context and productivity. 
 
 ## Profile information
 
@@ -64,9 +64,14 @@ To update incorrect information on a profile card, you need to submit a request.
 
 ### Deleting profile information
 
-Only tenant admins can delete people's data that originates from a source owned by your employer and is exposed in Microsoft 365 experiences via the user profile. Depending on your employer's policies, you may or may not be able to delete the data. Alternatively, your administrator may update a Copilot people data connector configuration to reflect this. 
+Only tenant admins can delete people's data that originates from a source owned by your employer and is exposed in Microsoft 365 experiences via the user profile. Depending on your employer's policies, you might or might not be able to delete the data. Alternatively, your administrator might update a Copilot people data connector configuration to reflect this. 
 
 For more on DSRs, see Microsoft’s guidance on [GDPR and CCPA compliance](https://myaccount.microsoft.com/settingsandprivacy/privacy).  
+
+### Property-specific considerations
+
+- User editable properties - All properties ingested via the people connectors are read-only. We recommend that you disable user editing of any properties that are also ingested via people connectors to avoid scenarios where user edits aren't displayed on the profile card due to the [precedence model](/graph/profilepriority-configure-profilepropertysetting). To configure editing of properties, use the SharePoint admin center to [disable user editing in user profiles](/sharepoint/manage-user-profiles).
+- Skills - Skills is a supported property for ingestion via people connectors as read-only skills and merges with user-editable skills, unless editing of skills is disabled. If the tenant opts in to the People Skills service, only skills that originate from [People Skills](/copilot/microsoft-365/people-skills-overview) are displayed on the profile card. In this scenario, when People Skills is enabled, skills from people connectors are only available in people search and Microsoft 365 Copilot Chat.
 
 ## Authentication and authorization
 

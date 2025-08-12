@@ -12,7 +12,7 @@ ms.date: 08/01/2024
 
 Namespace: microsoft.graph
 
-> **Important:** APIs under the /beta version in Microsoft Graph are subject to change which could break your applications. While Intune /beta APIs are supported by Microsoft, you should use these at your own discretion. In general, /beta APIs are not recommended for use in production applications. To determine whether an API is available in v1.0, use the Version selector
+> **Important:** Microsoft supports Intune /beta APIs, but they are subject to more frequent change. Microsoft recommends using version v1.0 when possible. Check an API's availability in version v1.0 using the Version selector.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -112,6 +112,7 @@ Inherits from [deviceConfiguration](../resources/intune-shared-deviceconfigurati
 |kioskModeManagedFolders|[androidDeviceOwnerKioskModeManagedFolder](../resources/intune-deviceconfig-androiddeviceownerkioskmodemanagedfolder.md) collection|A list of managed folders for a device in Kiosk Mode. This collection can contain a maximum of 500 elements.|
 |kioskModeAppPositions|[androidDeviceOwnerKioskModeAppPositionItem](../resources/intune-deviceconfig-androiddeviceownerkioskmodeapppositionitem.md) collection|The ordering of items on Kiosk Mode Managed Home Screen. This collection can contain a maximum of 500 elements.|
 |kioskModeManagedHomeScreenAutoSignout|Boolean|Whether or not to automatically sign-out of MHS and Shared device mode applications after inactive for Managed Home Screen.|
+|kioskModeManagedHomeScreenAppSettings|[androidDeviceOwnerKioskModeApp](../resources/intune-deviceconfig-androiddeviceownerkioskmodeapp.md) collection|Indicates the list of managed applications and associated settings, which will be applied when android device is run on kiosk mode with Managed Home Screen. This collection can contain a maximum of 500 elements.|
 |kioskModeManagedHomeScreenInactiveSignOutDelayInSeconds|Int32|Number of seconds to give user notice before automatically signing them out for Managed Home Screen. Valid values 0 to 9999999|
 |kioskModeManagedHomeScreenInactiveSignOutNoticeInSeconds|Int32|Number of seconds device is inactive before automatically signing user out for Managed Home Screen. Valid values 0 to 9999999|
 |kioskModeManagedHomeScreenPinComplexity|[kioskModeManagedHomeScreenPinComplexity](../resources/intune-deviceconfig-kioskmodemanagedhomescreenpincomplexity.md)|Complexity of PIN for sign-in session for Managed Home Screen. Possible values are: `notConfigured`, `simple`, `complex`.|
@@ -299,8 +300,12 @@ Here is a JSON representation of the resource.
   ],
   "factoryResetBlocked": true,
   "globalProxy": {
-    "@odata.type": "microsoft.graph.androidDeviceOwnerGlobalProxyAutoConfig",
-    "proxyAutoConfigURL": "String"
+    "@odata.type": "microsoft.graph.androidDeviceOwnerGlobalProxyDirect",
+    "host": "String",
+    "port": 1024,
+    "excludedHosts": [
+      "String"
+    ]
   },
   "googleAccountsBlocked": true,
   "kioskCustomizationDeviceSettingsBlocked": true,
@@ -371,6 +376,15 @@ Here is a JSON representation of the resource.
     }
   ],
   "kioskModeManagedHomeScreenAutoSignout": true,
+  "kioskModeManagedHomeScreenAppSettings": [
+    {
+      "@odata.type": "microsoft.graph.androidDeviceOwnerKioskModeApp",
+      "package": "String",
+      "className": "String",
+      "offlineAppAccessEnabled": true,
+      "preSignInAppAccessEnabled": true
+    }
+  ],
   "kioskModeManagedHomeScreenInactiveSignOutDelayInSeconds": 1024,
   "kioskModeManagedHomeScreenInactiveSignOutNoticeInSeconds": 1024,
   "kioskModeManagedHomeScreenPinComplexity": "String",
