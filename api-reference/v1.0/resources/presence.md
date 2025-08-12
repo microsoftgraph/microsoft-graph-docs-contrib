@@ -35,8 +35,10 @@ This resource supports subscribing to [change notifications](/graph/changenotifi
 | Property | Type              | Description                                                                                                                                                                                                                                                                                       |
 | :----------- | :---------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | activity     | String collection | The supplemental information to a user's availability. Possible values are `Available`, `Away`, `BeRightBack`, `Busy`, `DoNotDisturb`, `InACall`, `InAConferenceCall`, `Inactive`, `InAMeeting`, `Offline`, `OffWork`, `OutOfOffice`, `PresenceUnknown`, `Presenting`, `UrgentInterruptionsOnly`. |
-| availability | String collection | The base presence information for a user. Possible values are `Available`, `AvailableIdle`,  `Away`, `BeRightBack`, `Busy`, `BusyIdle`, `DoNotDisturb`, `Offline`, `PresenceUnknown`                                                                                                              |
-| id           | String            | The unique identifier for the user.                                                                                                                                                                                                                                                                                |
+| availability | String collection | The base presence information for a user. Possible values are `Available`, `availableIdle`,  `Away`, `beRightBack`, `Busy`, `busyIdle`, `DoNotDisturb`, `Offline`, `presenceUnknown`.|
+| id           | String            | The unique identifier for the user. |
+| outOfOfficeSettings | [outOfOfficeSettings](outofofficesettings.md) | The user's out-of-office settings. |
+| sequenceNumber | String | The lexicographically sortable string stamp that represents the version of a **presence** object. |
 | statusMessage | [presenceStatusMessage](presencestatusmessage.md) | The presence status message of a user. |
 
 >**Note:** To learn more about the different presence states, see [User presence in Teams](/microsoftteams/presence-admins). 
@@ -60,6 +62,8 @@ The following JSON representation shows the resource type.
    "activity": "String",
    "availability":"String",
    "id": "String (identifier)",
-   "statusMessage":{"@odata.type": "#microsoft.graph.presenceStatusMessage"}
+   "outOfOfficeSettings": {"@odata.type": "#microsoft.graph.outOfOfficeSettings"},
+   "sequenceNumber": "String",
+   "statusMessage": {"@odata.type": "#microsoft.graph.presenceStatusMessage"}
 }
 ```
