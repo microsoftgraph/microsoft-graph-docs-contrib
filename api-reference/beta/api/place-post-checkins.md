@@ -4,7 +4,7 @@ description: "Create a new checkInClaim object."
 author: "shijieyao"
 ms.date: 08/06/2025
 ms.localizationpriority: medium
-ms.subservice:
+ms.subservice: outlook
 doc_type: apiPageType
 ---
 
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new checkInClaim object.
+Create a check-in status for a specific Place— such as a room, workspace or desk— for a specific calendar reservation. This check-in confirms that the reserved space is in use and prevents automatic release if auto-release policies are configured for that Place.
 
 ## Permissions
 
