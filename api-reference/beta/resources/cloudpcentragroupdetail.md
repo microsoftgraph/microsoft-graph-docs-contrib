@@ -20,8 +20,8 @@ Represents the Entra group details (for example, **id** and **displayName**) for
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|The display name of the Microsoft Entra ID group. Read-only.|
-|id|String|The unique identifier (GUID) of the Microsoft Entra ID group. Read-only.|
+|groupDisplayName|String|The display name of the Microsoft Entra ID group. Read-only.|
+|groupId|String|The unique identifier (GUID) of the Microsoft Entra ID group. Read-only.|
 
 ## Relationships
 
@@ -38,7 +38,7 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.cloudPcEntraGroupDetail",
-  "displayName": "String",
-  "id": "String"
+  "groupDisplayName": "String",
+  "groupId": "String"
 }
 ```

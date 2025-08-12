@@ -20,8 +20,8 @@ Represents the user details (for example, **id** and **displayName**) for the us
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|The display name of the user. Read-only.|
-|id|String|The unique identifier (GUID) of the user. Read-only.|
+|userDisplayName|String|The display name of the user. Read-only.|
+|userId|String|The unique identifier (GUID) of the user. Read-only.|
 
 ## Relationships
 
@@ -38,7 +38,7 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.cloudPcEntraUserDetail",
-  "displayName": "String",
-  "id": "String"
+  "userDisplayName": "String",
+  "userId": "String"
 }
 ```
