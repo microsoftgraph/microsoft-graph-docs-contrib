@@ -1,6 +1,6 @@
 ---
 title: "cloudPcEntraGroupDetail resource type"
-description: "Represents the Microsoft Entra group details (for example, **id** and **displayName**) for the Entra ID group associated with a user's Reserve Cloud PC assignment."
+description: "Represents the Microsoft Entra group details (for example, ID and display name) for the Entra ID group associated with a user's Reserve Cloud PC assignment."
 author: "bert589998"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the Microsoft Entra group details (for example, **id** and **displayName**) for the Entra ID group associated with a user's Reserve Cloud PC assignment.
+Represents the Microsoft Entra group details (for example, ID and display name) for the Entra ID group associated with a user's Reserve Cloud PC assignment.
 
 ## Properties
 
