@@ -1864,6 +1864,9 @@
           "resources": [
             "presence"
           ],
+          "complexTypes": [
+            "outOfOfficeSettings"
+          ],
           "childNodes": [
             {
               "name": "Calls",
