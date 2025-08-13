@@ -40,7 +40,7 @@ In the request URL, provide the following query parameters with values.
 |:---|:---|:---|
 |startDateTime|DateTimeOffset|The date and time when the reporting period begins.|
 |endDateTime|DateTimeOffset|The date and time when the reporting period ends.|
-|userId|String|Optional. AAD id of the user that is used to filter the cloud application report to apps accessed only by this user.|
+|userId|String|Optional. Entra id of the user that is used to filter the cloud application report to apps accessed only by this user.|
 
 ## Request headers
 |Name|Description|
