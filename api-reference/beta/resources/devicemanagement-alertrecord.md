@@ -52,7 +52,7 @@ For more information, see the [monitoring](devicemanagement-monitoring.md) resou
 |:---|:---|
 |active|The alert is active.|
 |resolved|The alert is marked as resolved.|
-|unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
+|unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
 
 ## Relationships
 
