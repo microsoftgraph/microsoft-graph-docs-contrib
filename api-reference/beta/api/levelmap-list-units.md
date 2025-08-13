@@ -34,9 +34,11 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /building/map/levels/{levelMapId}/units
+GET /places/{buildingPlaceId}/microsoft.graph.building/map/levels/{levelMapId}/units
 ```
-{levelMapId} - **id** of the level in IMDF
+{buildingPlaceId} - **placeID** of the building with which this map is associated
+
+{levelImdfID} - **id** of the level with which this map is associated
 
 ## Optional query parameters
 

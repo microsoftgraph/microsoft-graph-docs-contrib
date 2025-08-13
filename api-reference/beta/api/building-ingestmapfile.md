@@ -37,7 +37,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 POST /places/{placesBuildingId}/microsoft.graph.building/ingestMapFile
 ```
 
-{placesBuildingId} - **id** of the building in Places with which this map should be associated
+{placesBuildingId} - **PlaceID** of the building in Places with which this map should be associated
 
 ## Request headers
 

@@ -37,9 +37,11 @@ Choose the permission or permissions marked as least privileged for this API. Us
 DELETE places/{buildingPlaceId}/microsoft.graph.building/map/levels/{levelImdfID}/units/{unitImdfID}
 ```
 
-{buildingPlaceId} - **id** of the building with which this map is associated
+{buildingPlaceId} - **placeID** of the building with which this map is associated
 
 {levelImdfID} - **id** of the level with which this map is associated
+
+{unitImdfID}- **id** of the unit in IMDF with which this map is associated
 
 ## Request headers
 

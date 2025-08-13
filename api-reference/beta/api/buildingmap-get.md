@@ -37,7 +37,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 GET /places/{buildingPlaceId}/microsoft.graph.building/map
 ```
 
-{buildingPlaceId} - **id** of the building with which this map is associated
+{buildingPlaceId} - **PlaceID** of the building with which this map is associated
 
 ## Optional query parameters
 
