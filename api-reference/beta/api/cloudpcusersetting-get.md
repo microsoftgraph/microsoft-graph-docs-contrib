@@ -135,6 +135,7 @@ Content-Type: application/json
       "disasterRecoveryType": "premium",
       "userInitiatedDisasterRecoveryAllowed": true
     },
+    "provisioningSourceType": "image",
     "lastModifiedDateTime": "2021-02-01T10:29:57Z",
     "createdDateTime": "2021-02-01T10:29:57Z"
   }
@@ -222,6 +223,7 @@ Content-Type: application/json
       "disasterRecoveryType": "premium",
       "userInitiatedDisasterRecoveryAllowed": true
     },
+    "provisioningSourceType": "image",
     "lastModifiedDateTime": "2021-02-01T10:29:57Z",
     "createdDateTime": "2021-02-01T10:29:57Z",
     "assignments": [
