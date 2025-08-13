@@ -72,7 +72,9 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceManagement.alertRecord",
-  "alertImpact": {"@odata.type": "microsoft.graph.deviceManagement.alertImpact"},  
+  "alertImpact": {
+    "@odata.type": "microsoft.graph.deviceManagement.alertImpact"
+  },  
   "alertRuleId": "String",
   "alertRuleTemplate": "String",
   "detectedDateTime": "String (timestamp)",
