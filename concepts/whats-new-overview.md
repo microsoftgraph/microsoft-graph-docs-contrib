@@ -77,6 +77,7 @@ Added the [resourceAccessEvent](/graph/api/resources/security-resourceaccesseven
 
 - Added the **itemsToInclude**, **cloudAttachmentVersion**, **documentVersion**, **additionalDataOptions**, and **statisticsOptions** as supported properties and parameters across various resources and actions of the eDiscovery API.
 - Use the **reportFileMetadata** property on [ediscoveryAddToReviewSetOperation](/graph/api/resources/security-ediscoveryaddtoreviewsetoperation) and [ediscoveryEstimateOperation](/graph/api/resources/security-ediscoveryestimateoperation) to get the properties for report file metadata.
+- Added **caseType** and **reviewSetSettings** as supported properties to [caseSettings](/graph/api/resources/security-ediscoverycasesettings).
 
 ### Teamwork and communications | Messaging
 
