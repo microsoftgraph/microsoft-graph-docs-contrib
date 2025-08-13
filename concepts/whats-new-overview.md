@@ -29,7 +29,6 @@ Use the [resize](/graph/api/cloudpc-resize) operation of [cloudPC](/graph/api/re
 ### Calendars | Places
 
 - [Create](/graph/api/place-post?view=graph-rest-beta&preserve-view=true), [get descendants](/graph/api/place-descendants?view=graph-rest-beta&preserve-view=true), and [delete](/graph/api/place-delete?view=graph-rest-beta&preserve-view=true) a [place](/graph/api/resources/place?view=graph-rest-beta&preserve-view=true) and its derived objects (for example, [building](/graph/api/resources/building?view=graph-rest-beta&preserve-view=true), [desk](/graph/api/resources/desk?view=graph-rest-beta&preserve-view=true), [floor](/graph/api/resources/floor?view=graph-rest-beta&preserve-view=true), or [section](/graph/api/resources/section?view=graph-rest-beta&preserve-view=true). These APIs enable scalable onboarding and management of the Places directory.
-
 - Added the [checkInClaim](/graph/api/resources/checkInClaim?view=graph-rest-beta&preserve-view=true) entity type to represent the check-in status of a Calendar [event](/graph/api/resources/event) booked at a place.
 - Added the **checkInMethod** as a property of a [checkInClaim](/graph/api/resources/checkInClaim?view=graph-rest-beta&preserve-view=true) object, indicating the method of checking in.
 - Supported [create](/graph/api/place-post-checkins?view=graph-rest-beta&preserve-view=true) and [get](/graph/api/checkinclaim-get?view=graph-rest-beta&preserve-view=true) a [checkInClaim](/graph/api/resources/checkinclaim-get?view=graph-rest-beta&preserve-view=true) object.
