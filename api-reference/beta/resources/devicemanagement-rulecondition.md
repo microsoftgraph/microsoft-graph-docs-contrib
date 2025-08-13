@@ -50,7 +50,7 @@ Represents the rule conditions for an [alert rule](devicemanagement-alertrule.md
 |unknownFutureValue| Evolvable enumeration sentinel value. Don't use.|
 |frontlineBufferUsageDuration| The alert rule condition targets Frontline buffer usage exceeds time duration.|
 |frontlineBufferUsageThreshold| The alert rule condition targets Frontline buffer usage exceeds limiting frequency.|
-|cloudPcUserSettingsPersistenceUsageThreshold| Indicates that the alert rule condition targets user experience sync storage exceeding the usage threshold.|
+|cloudPcUserSettingsPersistenceUsageThreshold| Indicates that the alert rule condition targets user experience sync storage that exceeds the usage threshold.|
 |cloudPcDeprovisionedThreshold| Indicates that the alert rule condition targets the count of Windows 365 Cloud PCs that entered deprovision.|
 |cloudPcReserveDeprovisionFailedThreshold| Indicates that the alert rule condition targets the count of Windows 365 Reserve Cloud PCs that entered a failed deprovisioning process.|
 
