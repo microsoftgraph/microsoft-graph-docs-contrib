@@ -578,7 +578,27 @@ Namespace: microsoft.graph.networkaccess
 |reportOnly|
 |unknownFutureValue|
 
+### deploymentConfigurationType values 
 
+|Member|
+|:---|
+|remoteNetwork|
+|enrichedAuditLogsSetting|
+|crossTenantAccessSettings|
+|conditionalAccessSettings|
+|forwardingOptions|
+|forwardingProfile|
+|filteringProfile|
+|unknownFutureValue|
+
+### deploymentStage values 
+
+|Member|
+|:---|
+|inProgress|
+|failed|
+|succeeded|
+|unknownFutureValue|
 
 
 <!--
