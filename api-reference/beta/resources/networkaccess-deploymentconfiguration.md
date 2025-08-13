@@ -1,0 +1,44 @@
+---
+title: "Global secure access deploymentConfiguration resource type"
+description: "Represents the configuration details for a deployment performed through the Global Secure Access services."
+author: Gautham C A
+ms.date: 13/08/2025
+ms.localizationpriority: medium
+ms.subservice: entra-global-secure-access
+doc_type: resourcePageType
+---
+
+# Global secure access deploymentConfiguration resource type
+
+Namespace: microsoft.graph.networkaccess
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Represents the configuration details for a deployment performed through the Global Secure Access services.
+This is an abstract type.
+
+
+## Properties
+|Property|Type|Description|
+|:---|:---|:---|
+|changeType|microsoft.graph.networkaccess.deploymentConfigurationType|Specifies the type of configuration change being deployed. The possible values are: `remoteNetwork`, `enrichedAuditLogsSetting`, `crossTenantAccessSettings`, `conditionalAccessSettings`, `forwardingOptions`, `forwardingProfile`, `filteringProfile`, `unknownFutureValue`.|
+|operationName|String|Indicates the name of the operation being performed as part of the deployment configuration.|
+
+
+## Relationships
+None.
+
+## JSON representation
+The following JSON representation shows the resource type.
+<!-- {
+  "blockType": "resource",
+  "@odata.type": "microsoft.graph.networkaccess.deploymentConfiguration"
+}
+-->
+``` json
+{
+  "@odata.type": "#microsoft.graph.networkaccess.deploymentConfiguration",
+  "operationName": "String",
+  "changeType": "String"
+}
+```
