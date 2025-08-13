@@ -632,6 +632,10 @@ items:
       items:
       - name: Virtual event external information
         href: ../../resources/virtualeventexternalinformation.md
+  - name: Complex types
+    items:
+    - name: Out of office settings
+      href: ../../resources/outofofficesettings.md
 - name: Devices (preview)
   items:
   - name: Teamwork device
