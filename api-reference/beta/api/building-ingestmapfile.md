@@ -56,6 +56,7 @@ The following table lists the parameters that are required when you call this ac
 |:---|:---|:---|
 |file|String|Collection of IMDF map files for a building in Base64 zip format. [Learn more](https://learn.microsoft.com/en-us/microsoft-365/places/configure-maps-in-places) about supported geojsons in Places .|
 |importSetting|[importBuildingMapSetting](../resources/importbuildingmapsetting.md)|Settings that can be used during import.|
+|isDryRun|Boolean|When isDryRun is true, the service runs the ingestion logic but doesn’t actually save any data. |
 
 
 
