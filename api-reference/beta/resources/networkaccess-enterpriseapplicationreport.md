@@ -1,6 +1,6 @@
 ---
 title: "enterpriseApplicationReport resource type"
-description: "Represents a report with network traffic data and metadata for an enterprise application."
+description: "Represents a Global Secure Access report with network traffic data and metadata for an enterprise application."
 author: "miritsadon"
 ms.date: 08/10/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a report with network traffic data and metadata for an enterprise application.
+Represents a Global Secure Access report with network traffic data and metadata for an enterprise application. This information is returned by the [getEnterpriseApplicationReport](../api/networkaccess-reports-getenterpriseapplicationreport.md) API.
 
 
 ## Properties
