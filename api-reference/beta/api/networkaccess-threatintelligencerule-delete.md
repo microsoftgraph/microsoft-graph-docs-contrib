@@ -1,16 +1,4 @@
 ---
-<<<<<<<< HEAD:api-reference/beta/api/building-delete-map.md
-title: "Delete buildingMap"
-description: "Delete a buildingMap object."
-author: tiwarisakshi02
-ms.date: 06/12/2025
-ms.localizationpriority: medium
-ms.subservice: outlook
-doc_type: apiPageType
----
-
-# Delete buildingMap
-========
 title: "Delete threatIntelligenceRule"
 description: "Delete a threatIntelligenceRule object."
 author: "fgomulka"
@@ -21,17 +9,12 @@ doc_type: apiPageType
 ---
 
 # Delete threatIntelligenceRule
->>>>>>>> origin/main:api-reference/beta/api/networkaccess-threatintelligencerule-delete.md
 
 Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<<<<<<<< HEAD:api-reference/beta/api/building-delete-map.md
-Delete the [map](../resources/buildingmap.md) of a specific building.
-========
 Delete a [threatIntelligenceRule](../resources/networkaccess-threatintelligencerule.md) object.
->>>>>>>> origin/main:api-reference/beta/api/networkaccess-threatintelligencerule-delete.md
 
 ## Permissions
 
@@ -39,19 +22,12 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-<<<<<<<< HEAD:api-reference/beta/api/building-delete-map.md
-  "name": "building-delete-map-permissions"
-}
--->
-[!INCLUDE [permissions-table](../includes/permissions/building-delete-map-permissions.md)]
-========
   "name": "networkaccess-threatintelligencerule-delete-permissions"
 }
 -->
 [!INCLUDE [permissions-table](../includes/permissions/networkaccess-threatintelligencerule-delete-permissions.md)]
 
 [!INCLUDE [rbac-global-secure-access-apis-write](../includes/rbac-for-apis/rbac-global-secure-access-apis-write.md)]
->>>>>>>> origin/main:api-reference/beta/api/networkaccess-threatintelligencerule-delete.md
 
 ## HTTP request
 
@@ -60,14 +36,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-<<<<<<<< HEAD:api-reference/beta/api/building-delete-map.md
-DELETE /places/{buildingPlaceId}/microsoft.graph.building/map
-========
 DELETE /networkAccess/filteringProfiles/{filteringProfileId}/policies/{policyLinkId}/policyRules/{id}
->>>>>>>> origin/main:api-reference/beta/api/networkaccess-threatintelligencerule-delete.md
 ```
-
-{buildingPlaceId} - **PlaceID** of the building in Places with which this map is associated
 
 ## Request headers
 
@@ -90,20 +60,13 @@ If successful, this method returns a `204 No Content` response code.
 The following example shows a request.
 <!-- {
   "blockType": "request",
-<<<<<<<< HEAD:api-reference/beta/api/building-delete-map.md
-  "name": "delete_buildingmap"
-}
--->
-``` http
-DELETE https://graph.microsoft.com/beta/places/30ca79af-ecb7-46c2-a14b-afe264a91543/microsoft.graph.building/map
-========
   "name": "delete_threatintelligencerule"
 }
 -->
 ``` http
 DELETE https://graph.microsoft.com/beta/networkAccess/filteringProfiles/ab4f3459-c39d-4e99-b8d0-b1aee4726b84/policies/ac253559-37a0-4f72-b666-103420b94e38/policyRules/0823cb1e-644b-4585-80db-1c1055894ec7
->>>>>>>> origin/main:api-reference/beta/api/networkaccess-threatintelligencerule-delete.md
 ```
+
 
 ### Response
 
