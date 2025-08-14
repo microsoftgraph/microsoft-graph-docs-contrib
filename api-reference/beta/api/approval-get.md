@@ -24,35 +24,47 @@ Retrieve the properties of an [approval](../resources/approval.md) object. This 
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-### For entitlement management
-<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+### For Entitlement Management
+<!-- { 
+  "blockType": "permissions", 
+  "name": "approval_get", 
+  "requestUrls": ["GET /identityGovernance/entitlementManagement/accessPackageAssignmentApprovals/{id}"]
+ } -->
+|Permission type|Least privileged permissions|Higher privileged permissions|
+|:---|:---|:---|
+|Delegated (work or school account)|EntitlementManagement.Read.All|EntitlementManagement.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|Not supported.|
+|Application|Not supported.|Not supported.|
 
 [!INCLUDE [rbac-entitlement-catalog-reader](../includes/rbac-for-apis/rbac-entitlement-management-catalog-reader-apis-read.md)]
 
 <a name='for-pim-for-azure-ad-roles'></a>
 
 ### For PIM for Microsoft Entra roles
-<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | RoleAssignmentSchedule.Read.Directory, RoleAssignmentSchedule.ReadWrite.Directory |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+<!-- { 
+  "blockType": "permissions", 
+  "name": "approval_get_2", 
+  "requestUrls": ["GET /roleManagement/directory/roleAssignmentApprovals/{id}"]
+ } -->
+|Permission type|Least privileged permissions|Higher privileged permissions|
+|:---|:---|:---|
+|Delegated (work or school account)|RoleAssignmentSchedule.Read.Directory|RoleAssignmentSchedule.ReadWrite.Directory|
+|Delegated (personal Microsoft account)|Not supported.|Not supported.|
+|Application|Not supported.|Not supported.|
 
 ### For PIM for Groups
-<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | PrivilegedAssignmentSchedule.Read.AzureADGroup, PrivilegedAssignmentSchedule.ReadWrite.AzureADGroup |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+<!-- { 
+  "blockType": "permissions", 
+  "name": "approval_get_3", 
+  "requestUrls": ["GET /identityGovernance/privilegedAccess/group/assignmentApprovals/{id}"]
+ } -->
+|Permission type|Least privileged permissions|Higher privileged permissions|
+|:---|:---|:---|
+|Delegated (work or school account)|PrivilegedAssignmentSchedule.Read.AzureADGroup|PrivilegedAssignmentSchedule.ReadWrite.AzureADGroup|
+|Delegated (personal Microsoft account)|Not supported.|Not supported.|
+|Application|Not supported.|Not supported.|
 
 ## HTTP request
 
