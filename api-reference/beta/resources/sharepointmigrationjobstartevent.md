@@ -1,6 +1,6 @@
 ---
 title: "sharePointMigrationJobStartEvent resource type"
-description: "**TODO: Add Description**"
+description: "Migration start status event"
 author: "wenzhou"
 ms.date: 06/04/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+The **sharePointMigrationJobStartEvent** resource represents the start status of a migration job.
 
 
 Inherits from [sharePointMigrationEvent](../resources/sharepointmigrationevent.md).
