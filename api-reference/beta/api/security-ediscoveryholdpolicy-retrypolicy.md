@@ -1,0 +1,70 @@
+---
+title: "ediscoveryHoldPolicy: retryPolicy"
+description: "Retry policy triggers the hold process to restamp all mailboxes/sites in the policy to enforce hold."
+author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.date: 08/11/2025
+ms.localizationpriority: medium
+ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+doc_type: apiPageType
+---
+
+# ediscoveryHoldPolicy: retryPolicy
+
+Namespace: microsoft.graph.security
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Retry policy triggers the hold process to restamp all mailboxes/sites in the policy to enforce hold.
+
+## Permissions
+
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- {
+  "blockType": "permissions",
+  "name": "security-ediscoveryholdpolicy-retrypolicy-permissions"
+}
+-->
+[!INCLUDE [permissions-table](../includes/permissions/security-ediscoveryholdpolicy-retrypolicy-permissions.md)]
+
+## HTTP request
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/legalHolds/{ediscoveryHoldPolicyId}/retryPolicy
+```
+
+## Request headers
+
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+
+## Request body
+
+Don't supply a request body for this method.
+
+## Response
+
+If successful, this action returns a `204 No Content` response code.
+
+## Examples
+
+### Request
+
+The following example shows a request.
+<!-- {
+  "blockType": "request",
+  "name": "ediscoveryholdpolicythis.retrypolicy"
+}
+-->
+``` http
+POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/c2940e86-57c0-4b6d-acce-9944bdfdf58a/legalHolds/21292627-70a5-47e1-aef1-5f70c6d0bb42/retryPolicy
+```
+
+## Response
+
+If successful, this action returns a `204 No Content` response code.
