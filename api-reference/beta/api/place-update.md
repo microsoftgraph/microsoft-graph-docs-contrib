@@ -78,10 +78,6 @@ The following example shows how to update a **building** object.
 
 The following example shows a request.
 
-<<<<<<< HEAD
-# [HTTP](#tab/http)
-=======
->>>>>>> origin/main
 <!-- {
   "blockType": "request",
   "name": "update_building"
