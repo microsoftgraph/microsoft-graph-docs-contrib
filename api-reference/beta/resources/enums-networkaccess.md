@@ -596,6 +596,7 @@ Namespace: microsoft.graph.networkaccess
 |Member|
 |:---|
 |inProgress|
+|pending|
 |failed|
 |succeeded|
 |unknownFutureValue|
