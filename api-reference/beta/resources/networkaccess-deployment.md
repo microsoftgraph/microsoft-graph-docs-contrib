@@ -1,14 +1,14 @@
 ---
-title: "Global secure access deployment resource type"
+title: "Deployment resource type"
 description: "Represents a deployment event within the Global Secure Access services, including its configuration, status, and related data."
-author: Gautham C A
-ms.date: 13/08/2025
+author: cagautham
+ms.date: 08/14/2025
 ms.localizationpriority: medium
 ms.subservice: entra-global-secure-access
 doc_type: resourcePageType
 ---
 
-# Global secure access deployment resource type
+# Deployment resource type
 
 Namespace: microsoft.graph.networkaccess
 
@@ -60,3 +60,4 @@ The following JSON representation shows the resource type.
   }
 }
 ```
+
