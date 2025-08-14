@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /building/map/footprints
+GET /places/{buildingPlaceId}/microsoft.graph.building/map/footprints
 ```
 
 ## Optional query parameters
@@ -66,7 +66,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/building/map/footprints
+GET https://graph.microsoft.com/beta//places/9748dc5b-3f08-407b-9a8d-f5ed626bf9e8/microsoft.graph.building/map/footprints
 ```
 
 
@@ -85,8 +85,6 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://canary.graph.microsoft.com/testprodbetamapserviceapi0613/$metadata#places('91ac6c16-cda9-4506-b55d-e1f4dac3cbe7')/microsoft.graph.building/map/footprints",
-    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET places('<guid>')/microsoft.graph.building/map/footprints?$select=properties",
     "value": [
         {
             "id": "9748dc5b-3f08-407b-9a8d-f5ed626bf9e8",

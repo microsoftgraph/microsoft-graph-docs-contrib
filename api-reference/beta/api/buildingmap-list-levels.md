@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [ floor maps](../resources/levelmap.md) and their properties.
+Get a list of the [ level maps](../resources/levelmap.md) and their properties.
 
 ## Permissions
 
@@ -34,8 +34,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /building/map/levels
+GET /places/{buildingPlaceId}/microsoft.graph.building/map/levels
 ```
+
+{buildingPlaceId} – **placeID** of a building with which this [ level maps](../resources/levelmap.md) is associated.
 
 ## Optional query parameters
 
@@ -66,7 +68,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/building/map/levels
+GET https://graph.microsoft.com/beta/places/4bff9586-c9ee-401d-9d35-c476231a33e6/microsoft.graph.building/map/levels
 ```
 
 
@@ -85,8 +87,6 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://canary.graph.microsoft.com/testprodbetamapserviceapi0613/$metadata#places('91ac6c16-cda9-4506-b55d-e1f4dac3cbe7')/microsoft.graph.building/map/levels",
-    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET places('<guid>')/microsoft.graph.building/map/levels?$select=placeId",
     "value": [
         {
             "placeId": "4bff9586-c9ee-401d-9d35-c476231a33e6",

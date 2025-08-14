@@ -59,7 +59,7 @@ You can specify the following properties when creating a **unitMap**.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|properties|String|Concatenated key-value pair of all properties of a geojson file for this **unit**. Inherited from [baseMapFeature](../resources/basemapfeature.md). Optional.|
+|properties|String|Concatenated key-value pair of all properties of a geojson file for this **unit**. Inherited from [baseMapFeature](../resources/basemapfeature.md). Required.|
 |placeId|String|Identifier of the [place](../resources/place.md) (such as a [room](../resources/room.md)) to which this **unit** belongs. Optional.|
 
 
@@ -102,7 +102,6 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-    "@odata.context": "https://canary.graph.microsoft.com/testprodbetamapserviceapi0613/$metadata#places('91ac6c16-cda9-4506-b55d-e1f4dac3cbe7')/microsoft.graph.building/map/levels('e537d463-475b-43c3-a650-184566c68bc9')/units/$entity",
     "placeId": null,
     "id": "test0613-c95d-4d35-a8a0-22d3cb4d6542",
     "properties": "{\"id\":\"test0613-c95d-4d35-a8a0-22d3cb4d6542\",\"type\":\"Feature\",\"feature_type\":\"unit\",\"geometry\":{\"type\":\"Polygon\",\"coordinates\":[[[-121.8889415,37.3295396],[-121.8889137,37.329503],[-121.8889082,37.3294956],[-121.888907,37.3294941],[-121.8888551,37.3295189],[-121.8888895,37.3295644],[-121.8889415,37.3295396]]]},\"properties\":{\"name\":{\"en\":\"Test room from Test Floor 1 (120.3)\"},\"level_id\":\"e537d463-475b-43c3-a650-184566c68bc9\",\"display_point\":{\"type\":\"Point\",\"coordinates\":[-121.8888983,37.3295292]},\"category\":\"room\"}}"
