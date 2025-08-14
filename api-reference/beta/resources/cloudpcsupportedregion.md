@@ -73,7 +73,7 @@ Represents a supported region to establish an Azure network connection for Cloud
 | australasia        | The region belongs to the region group: Australasia.                               |
 | europe             | The region belongs to the region group: Europe.                                    |
 | singapore          | The region belongs to the region group: Singapore.                                 |
-| hongKong           | The region belongs to the region group: Hong Kong.                                 |
+| hongKong           | The region belongs to the region group: Hong Kong SAR.                             |
 | ireland            | The region belongs to the region group: Ireland.                                   |
 | sweden             | The region belongs to the region group: Sweden.                                    |
 | poland             | The region belongs to the region group: Poland.                                    |
