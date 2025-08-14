@@ -105,7 +105,7 @@ Content-Type: application/json
         {
           "provider": "EntraID",
           "identifier": "69dfa3ea-1295-4e2c-b469-59564581143d",
-          "actions": ["enable"]
+          "actions": []
         },
         {
           "provider": "Okta",
