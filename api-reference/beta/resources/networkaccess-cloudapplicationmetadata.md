@@ -1,6 +1,6 @@
 ---
 title: "cloudApplicationMetadata resource type"
-description: "Represents properties related to a SaaS application."
+description: "Represents data related to a SaaS application in Global Secure Access network traffic."
 author: "miritsadon"
 ms.date: 08/10/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents properties related to a SaaS application.
+Represents data related to a SaaS application in Global Secure Access [network traffic](../resources/networkaccess-networkaccesstraffic.md).
 
 
 ## Properties
