@@ -1,6 +1,6 @@
 ---
 title: "applicationAnalyticsUsagePoint resource type"
-description: "Represents a single data point for application usage analytics, providing daily aggregated counts for cloud and enterprise applications."
+description: "Represents a single data point for application usage analytics, providing daily aggregated counts for cloud and enterprise applications in Global Secure Access."
 author: "miritsadon"
 ms.date: 08/10/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a single data point for application usage analytics, providing daily aggregated counts for cloud and enterprise applications.
+Represents a single data point for application usage analytics, providing daily aggregated counts for cloud and enterprise applications in Global Secure Access. This information is returned by the [getApplicationUsageAnalytics](../api/networkaccess-reports-getapplicationusageanalytics.md) API.
 
 
 ## Properties
