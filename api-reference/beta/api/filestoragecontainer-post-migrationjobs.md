@@ -12,9 +12,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)] local to a [fileStorageContainer](../resources/filestoragecontainer.md). The migration is queued for later processing in a separate timer job.
-
-Create a new [sharePointMigrationJob](../resources/sharepointmigrationjob.md) object.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)] Create a new [sharePointMigrationJob](../resources/sharepointmigrationjob.md) object that is scheduled to execute at a later time, migrating content from an intermediary storage to the target [fileStorageContainer](../resources/filestoragecontainer.md).
 
 ## Permissions
 
@@ -46,9 +44,7 @@ POST /storage/fileStorage/containers/{fileStorageContainerId}/migrationJobs
 
 ## Request body
 
-In the request body, supply a JSON representation of the [sharePointMigrationJob](../resources/sharepointmigrationjob.md) object.
-
-You can specify the following properties when creating a **sharePointMigrationJob**.
+A JSON object containing the [sharePointMigrationContainerInfo](../resources/sharepointmigrationcontainerinfo.md) object.
 
 |Property|Type|Description|
 |:---|:---|:---|
