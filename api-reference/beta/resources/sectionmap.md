@@ -23,8 +23,6 @@ Inherits from [baseMapFeature](../resources/basemapfeature.md).
 |:---|:---|:---|
 |[Create](../api/levelmap-post-sections.md)|[sectionMap](../resources/sectionmap.md)|Create a new **sectionMap** object.|
 |[Delete](../api/levelmap-delete-sections.md)|None|Delete a **sectionMap** object.|
-|[Get](../api/sectionmap-get.md)|[sectionMap](../resources/sectionmap.md)|Get the properties and relationships of a **sectionMap** object in IMDF format.|
-|[List](../api/levelmap-list-sections.md)|[sectionMap](../resources/sectionmap.md) collection|Get a list of **sectionMap** objects and their properties.|
 |[Update](../api/sectionmap-update.md)|[sectionMap](../resources/sectionmap.md)|Update the properties of a **sectionMap** object.|
 
 ## Properties

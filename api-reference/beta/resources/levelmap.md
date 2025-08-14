@@ -21,17 +21,9 @@ Inherits from [baseMapFeature](./basemapfeature.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Create](../api/buildingmap-post-levels.md)|[levelMap](./levelmap.md)|Create a new **levelMap** object.|
-|[Create fixtureMap](../api/levelmap-post-fixtures.md)|[fixtureMap](./fixturemap.md)|Create a new [fixtureMap](./fixturemap.md) object.|
-|[Create sectionMap](../api/levelmap-post-sections.md)|[sectionMap](./sectionmap.md)|Create a new [sectionMap](./sectionmap.md) object.|
-|[Create unitMap](../api/levelmap-post-units.md)|[unitMap](./unitmap.md)|Create a new [unitMap](./unitmap.md) object.|
-|[Delete](../api/buildingmap-delete-levels.md)|None|Delete a **levelMap** object.|
-|[Get](../api/levelmap-get.md)|[levelMap](./levelmap.md)|Get the properties and relationships of a **levelMap** object in IMDF format.|
-|[List](../api/buildingmap-list-levels.md)|[levelMap](./levelmap.md) collection|Get a list of **levelMap** objects and their properties.|
 |[List fixtures](../api/levelmap-list-fixtures.md)|[fixtureMap](./fixturemap.md) collection|Get a list of [fixtureMap](./fixturemap.md) objects and their properties.|
 |[List sections](../api/levelmap-list-sections.md)|[sectionMap](./sectionmap.md) collection|Get a list of [sectionMap](./sectionmap.md) objects and their properties.|
 |[List units](../api/levelmap-list-units.md)|[unitMap](./unitmap.md) collection|Get a list of the [unitMap](./unitmap.md) objects and their properties.|
-|[Update](../api/levelmap-update.md)|[levelMap](./levelmap.md)|Update the properties of a **levelMap** object.|
 
 ## Properties
 |Property|Type|Description|
