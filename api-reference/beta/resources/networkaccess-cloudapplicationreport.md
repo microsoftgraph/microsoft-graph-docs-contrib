@@ -33,7 +33,7 @@ Represents a report with network traffic data and metadata of a catalog applicat
 |securityScore|Int32|The security score of the application.|
 |totalBytesReceived|Int64|Total bytes received from the application.|
 |totalBytesSent|Int64|Total bytes sent to the application.|
-|trafficType|microsoft.graph.networkaccess.trafficType|The type of traffic. Options are: Internet, Private Access, M365. The possible values are: `internet`, `private`, `microsoft365`, `all`, `unknownFutureValue`.|
+|trafficType|microsoft.graph.networkaccess.trafficType|The type of traffic. The possible values are: `internet`, `private`, `microsoft365`, `all`, `unknownFutureValue`.|
 |transactionCount|Int32|Number of transactions under this application.|
 |userCount|Int32|Number of users under this application.|
 
