@@ -42,7 +42,7 @@ GET /places/{buildingPlaceId}/microsoft.graph.building/map/levels/{levelMapId}/u
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -71,7 +71,6 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/beta/building/map/levels/e537d463-475b-43c3-a650-184566c68bc9/units
 ```
-
 
 ### Response
 
