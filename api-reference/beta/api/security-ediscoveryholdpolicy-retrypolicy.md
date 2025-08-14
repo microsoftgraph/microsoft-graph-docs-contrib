@@ -1,10 +1,10 @@
 ---
 title: "ediscoveryHoldPolicy: retryPolicy"
 description: "Retry policy triggers the hold process to restamp all mailboxes/sites in the policy to enforce hold."
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+author: "v-kafeng"
 ms.date: 08/11/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice: "ediscovery"
 doc_type: apiPageType
 ---
 
@@ -67,4 +67,11 @@ POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/c2940e86-57
 
 ## Response
 
-If successful, this action returns a `204 No Content` response code.
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
+``` http
+HTTP/1.1 204 No Content
+```

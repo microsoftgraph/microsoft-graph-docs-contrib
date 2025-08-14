@@ -572,6 +572,8 @@ items:
       href: ../../api/security-ediscoveryholdpolicy-update.md
     - name: Delete
       href: ../../api/security-ediscoverycase-delete-legalholds.md
+    - name: Retry Policy
+      href: ../../api/security-ediscoveryholdpolicy-retrypolicy.md
     - name: Site sources
       items:
       - name: List
