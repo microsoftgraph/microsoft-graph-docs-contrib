@@ -1,5 +1,5 @@
 ---
-title: "aiInteractionPlugin resource type (preview)"
+title: "aiInteractionPlugin resource type"
 description: "Represents a plugin or extension invoked during an interaction with an AI or bot service."
 author: "ArunGedela"
 ms.date: 04/08/2025
@@ -30,7 +30,7 @@ None.
 
 ## JSON representation
 
-The following JSON representation shows the resopurce type.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.aiInteractionPlugin",

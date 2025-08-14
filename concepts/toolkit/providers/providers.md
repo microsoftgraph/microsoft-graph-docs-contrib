@@ -4,6 +4,7 @@ description: "The Microsoft Graph Toolkit providers enable authentication and Mi
 ms.localizationpriority: medium
 author: sebastienlevert
 ms.date: 11/07/2024
+ms.topic: article
 ---
 
 # Microsoft Graph Toolkit providers

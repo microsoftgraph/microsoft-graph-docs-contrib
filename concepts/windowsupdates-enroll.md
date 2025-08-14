@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: windows-autopatch
 doc_type: conceptualPageType
 ms.date: 11/07/2024
+ms.topic: how-to
 ---
 
 # Enroll in update management by Windows Autopatch
@@ -85,7 +86,7 @@ Content-Type: application/json
 
 ## Unenroll from management or unregister  
 
-When you [unenroll](/graph/api/windowsupdates-updatableasset-unenrollassets) a device from management for a given update category, the device is no longer considered managed and may start receiving other updates from Windows Update based on its policy configuration. The unenrolled device is removed from all audiences and deployments that contain content for the given update category. The device remains registered and is still enrolled and receiving content for other update categories, if applicable.
+When you [unenroll](/graph/api/windowsupdates-updatableasset-unenrollassets) a device from management for a given update category, the device is no longer considered managed and might start receiving other updates from Windows Update based on its policy configuration. The unenrolled device is removed from all audiences and deployments that contain content for the given update category. The device remains registered and is still enrolled and receiving content for other update categories, if applicable.
 
 ### Request
 

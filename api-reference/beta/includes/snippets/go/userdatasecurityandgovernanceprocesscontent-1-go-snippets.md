@@ -48,6 +48,18 @@ activityMetadata := graphmodels.NewActivityMetadata()
 activity := graphmodels.UPLOADTEXT_USERACTIVITYTYPE 
 activityMetadata.SetActivity(&activity) 
 contentToProcess.SetActivityMetadata(activityMetadata)
+deviceMetadata := graphmodels.NewDeviceMetadata()
+deviceType := "Unmanaged"
+deviceMetadata.SetDeviceType(&deviceType) 
+operatingSystemSpecifications := graphmodels.NewOperatingSystemSpecifications()
+operatingSystemPlatform := "Windows 11"
+operatingSystemSpecifications.SetOperatingSystemPlatform(&operatingSystemPlatform) 
+operatingSystemVersion := "10.0.26100.0"
+operatingSystemSpecifications.SetOperatingSystemVersion(&operatingSystemVersion) 
+deviceMetadata.SetOperatingSystemSpecifications(operatingSystemSpecifications)
+ipAddress := "127.0.0.1"
+deviceMetadata.SetIpAddress(&ipAddress) 
+contentToProcess.SetDeviceMetadata(deviceMetadata)
 protectedAppMetadata := graphmodels.NewProtectedApplicationMetadata()
 name := "PC Purview API Explorer"
 protectedAppMetadata.SetName(&name) 
@@ -64,19 +76,6 @@ integratedAppMetadata.SetName(&name)
 version := "0.2"
 integratedAppMetadata.SetVersion(&version) 
 contentToProcess.SetIntegratedAppMetadata(integratedAppMetadata)
-additionalData := map[string]interface{}{
-deviceMetadata := graph.New()
-operatingSystemSpecifications := graph.New()
-operatingSystemPlatform := "Windows 11"
-operatingSystemSpecifications.SetOperatingSystemPlatform(&operatingSystemPlatform) 
-operatingSystemVersion := "10.0.26100.0"
-operatingSystemSpecifications.SetOperatingSystemVersion(&operatingSystemVersion) 
-	deviceMetadata.SetOperatingSystemSpecifications(operatingSystemSpecifications)
-ipAddress := "127.0.0.1"
-deviceMetadata.SetIpAddress(&ipAddress) 
-	contentToProcess.SetDeviceMetadata(deviceMetadata)
-}
-contentToProcess.SetAdditionalData(additionalData)
 requestBody.SetContentToProcess(contentToProcess)
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go

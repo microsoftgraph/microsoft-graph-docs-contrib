@@ -50,6 +50,11 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 | [List operations](../api/site-list-operations.md) | GET /sites/{site-id}/operations                             |
 | [Get site settings][]                             | GET /sites/{site-id}/settings                               |
 | [Get delta](../api/site-delta.md)                 | GET /sites/delta                                            |
+|**Open extensions**||
+| [Create open extension](../api/opentypeextension-post-opentypeextension.md)                         | POST /sites/{site-id}/extensions         |
+| [Get open extension](../api/opentypeextension-get.md)                            | GET /sites/{site-id}/extensions                             |
+| [Update open extension](../api/opentypeextension-update.md)                         | PATCH /sites/{site-id}/extensions                        |
+| [Delete open extension](../api/opentypeextension-delete.md)                         | DELETE /sites/{site-id}/extensions                       |
 
 [Get site]: ../api/site-get.md
 [Get root site]: ../api/site-get.md
@@ -79,20 +84,20 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 
 ## Properties
 
-| Property                 | Type               | Description                                                                                    |
-| :----------------------- | :----------------- | :--------------------------------------------------------------------------------------------- |
-| **id**                   | string             | The [unique identifier](#id-property) of the item. Read-only.                                  |
-| **createdDateTime**      | DateTimeOffset     | The date and time the item was created. Read-only.                                             |
-| **description**          | string             | The descriptive text for the site.                                                             |
-| **eTag**                 | string             | ETag for the item. Read-only.                                                                  |
-| **displayName**          | string             | The full title for the site. Read-only.                                                        |
-| **lastModifiedDateTime** | DateTimeOffset     | The date and time the item was last modified. Read-only.                                       |
-| **name**                 | string             | The name/title of the item.                                                                  |
-| **root**                 | [root][]           | If present, provides the root site in the site collection. Read-only.            |
-| **settings**             | [siteSettings]     | The settings on this site. Read-only.                                |
-| **sharepointIds**        | [sharepointIds][]  | Returns identifiers useful for SharePoint REST compatibility. Read-only.                       |
-| **siteCollection**       | [siteCollection][] | Provides details about the site's site collection. Available only on the root site. Read-only. |
-| **webUrl**               | string (url)       | URL that displays the item in the browser. Read-only.                                          |
+| Property             | Type               | Description                                                                                    |
+| :------------------- | :----------------- | :--------------------------------------------------------------------------------------------- |
+| createdDateTime      | DateTimeOffset     | The date and time when the item was created. Read-only.                                             |
+| description          | string             | The descriptive text for the site.                                                             |
+| displayName          | string             | The full title for the site. Read-only.                                                        |
+| eTag                 | string             | ETag for the item. Read-only.                                                                  |
+| id                   | string             | The [unique identifier](#id-property) of the item. Read-only.                                  |
+| lastModifiedDateTime | DateTimeOffset     | The date and time the item was last modified. Read-only.                                       |
+| name                 | string             | The name/title of the item.                                                                  |
+| root                 | [root][]           | If present, provides the root site in the site collection. Read-only.            |
+| settings             | [siteSettings]     | The settings on this site. Read-only.                                |
+| sharepointIds        | [sharepointIds][]  | Returns identifiers useful for SharePoint REST compatibility. Read-only.                       |
+| siteCollection       | [siteCollection][] | Provides details about the site's site collection. Available only on the root site. Read-only. |
+| webUrl               | string (url)       | URL that displays the item in the browser. Read-only.                                          |
 
 ### id property
 
@@ -117,6 +122,7 @@ The `root` identifier always references the root site for a given target, as fol
 | drive           | [drive][]                                                                       | The default drive (document library) for this site.                                                                                        |
 |documentProcessingJobs |[documentProcessingJob](../resources/documentprocessingjob.md) collection  | The document processing jobs running on this site. |
 | drives          | [drive][] collection                                                           | The collection of drives (document libraries) under this site.                                                                             |
+| extensions           | [extension](extension.md) collection | The collection of open extensions defined for this site. Nullable.|
 | externalColumns | [columnDefinition][] collection                                                | The collection of column definitions available in the site that is referenced from the sites in the parent hierarchy of the current site. |
 | items           | [baseItem][] collection                                                        | Used to address any item contained in this site. This collection can't be enumerated.                                                     |
 | lists           | [list][] collection                                                            | The collection of lists under this site.                                                                                                   |
@@ -181,6 +187,7 @@ The **site** resource is derived from [**baseItem**](baseitem.md) and inherits p
   "analytics": { "@odata.type": "microsoft.graph.itemAnalytics" },
   "columns": [ { "@odata.type": "microsoft.graph.columnDefinition" }],
   "contentTypes": [ { "@odata.type": "microsoft.graph.contentType" }],
+  "extensions": [ { "@odata.type": "microsoft.graph.extension" }],
   "externalColumns": [ { "@odata.type": "microsoft.graph.columnDefinition" }],
   "drive": { "@odata.type": "microsoft.graph.drive" },
   "drives": [ { "@odata.type": "microsoft.graph.drive" }],

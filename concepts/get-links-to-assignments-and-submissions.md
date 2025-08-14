@@ -6,6 +6,7 @@ author: "AshwaniBansal1"
 ms.subservice: "education"
 doc_type: conceptualPageType
 ms.date: 11/07/2024
+ms.topic: how-to
 ---
 
 # Get links to assignments and submissions

@@ -13,6 +13,8 @@ from msgraph_beta.generated.models.process_conversation_metadata import ProcessC
 from msgraph_beta.generated.models.text_content import TextContent
 from msgraph_beta.generated.models.activity_metadata import ActivityMetadata
 from msgraph_beta.generated.models.user_activity_type import UserActivityType
+from msgraph_beta.generated.models.device_metadata import DeviceMetadata
+from msgraph_beta.generated.models.operating_system_specifications import OperatingSystemSpecifications
 from msgraph_beta.generated.models.protected_application_metadata import ProtectedApplicationMetadata
 from msgraph_beta.generated.models.policy_location_application import PolicyLocationApplication
 from msgraph_beta.generated.models.integrated_application_metadata import IntegratedApplicationMetadata
@@ -38,6 +40,14 @@ request_body = ProcessContentPostRequestBody(
 		activity_metadata = ActivityMetadata(
 			activity = UserActivityType.UploadText,
 		),
+		device_metadata = DeviceMetadata(
+			device_type = "Unmanaged",
+			operating_system_specifications = OperatingSystemSpecifications(
+				operating_system_platform = "Windows 11",
+				operating_system_version = "10.0.26100.0",
+			),
+			ip_address = "127.0.0.1",
+		),
 		protected_app_metadata = ProtectedApplicationMetadata(
 			name = "PC Purview API Explorer",
 			version = "0.2",
@@ -50,15 +60,6 @@ request_body = ProcessContentPostRequestBody(
 			name = "PC Purview API Explorer",
 			version = "0.2",
 		),
-		additional_data = {
-				"device_metadata" : {
-						"operating_system_specifications" : {
-								"operating_system_platform" : "Windows 11",
-								"operating_system_version" : "10.0.26100.0",
-						},
-						"ip_address" : "127.0.0.1",
-				},
-		}
 	),
 )
 

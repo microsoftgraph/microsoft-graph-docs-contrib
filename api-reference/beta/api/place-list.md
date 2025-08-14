@@ -114,6 +114,7 @@ The following example shows how to get all the [building](../resources/building.
 #### Request
 
 The following example shows a request.
+<<<<<<< HEAD
 
 # [HTTP](#tab/http)
 <!-- {
@@ -429,14 +430,18 @@ The following example shows how to get all the [room](../resources/room.md) obje
 The following example shows a request.
 
 # [HTTP](#tab/http)
+=======
+
+>>>>>>> origin/main
 <!-- {
   "blockType": "request",
-  "name": "get_all_rooms"
+  "name": "get_all_buildings"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/places/microsoft.graph.room
+GET https://graph.microsoft.com/beta/places/microsoft.graph.building
 ```
 
+<<<<<<< HEAD
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-all-rooms-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -467,11 +472,205 @@ GET https://graph.microsoft.com/beta/places/microsoft.graph.room
 
 ---
 
+=======
+>>>>>>> origin/main
 #### Response
 
 The following example shows the response.
 
 >**Note**: The response object shown here might be shortened for readability.
+<<<<<<< HEAD
+=======
+<!-- {
+  "blockType": "response",
+  "name": "get_all_buildings",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.building)"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "value": [
+    {
+      "id": "e18a8e21-0494-4296-a5bc-f848dba2740d",
+      "placeId": "e18a8e21-0494-4296-a5bc-f848dba2740d",
+      "displayName": "MRS",
+      "phone": "8801733457",
+      "isWheelChairAccessible": true,
+      "label": "this is a building not open to all",
+      "hasWiFi": false,
+      "geoCoordinates": {
+        "latitude": 31.2513263,
+        "longitude": 121.3912291,
+        "accuracy": null,
+        "altitude": null,
+        "altitudeAccuracy": null
+      },
+      "resourceLinks": []
+    }
+  ]
+}
+```
+
+### Example 2: List all floors defined in the tenant
+
+The following example shows how to get all the [floor](../resources/floor.md) objects in the tenant.
+
+#### Request
+
+The following example shows a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_all_floors"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/places/microsoft.graph.floor
+```
+
+#### Response
+
+The following example shows the response.
+
+>**Note**: The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "name": "get_all_floors",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.floor)"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "value": [
+    {
+      "id": "c64205d0-1a2d-4cfe-9012-3f5d668d28ea",
+      "placeId": "c64205d0-1a2d-4cfe-9012-3f5d668d28ea",
+      "displayName": "Floor A",
+      "parentId": "be7b53f1-7c63-4533-91d4-52c3ca856afb",
+      "isWheelChairAccessible": false,
+      "sortOrder": 1
+    }
+  ]
+}
+```
+
+### Example 3: List all sections defined in the tenant
+
+The following example shows how to get all the [section](../resources/section.md) objects in the tenant.
+
+#### Request
+
+The following example shows a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_all_sections"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/places/microsoft.graph.section
+```
+
+#### Response
+
+The following example shows the response.
+
+>**Note**: The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "name": "get_all_sections",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.section)"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "value": [
+    {
+      "id": "3e7160bb-75da-4456-ab3c-5ee061f4611a",
+      "placeId": "3e7160bb-75da-4456-ab3c-5ee061f4611a",
+      "displayName": "section_1",
+      "parentId": "e30d4c71-95bf-4576-be4f-b6b7a8d2eeb7"
+    }
+  ]
+}
+```
+
+### Example 4: List all desks defined in the tenant
+
+The following example shows how to get all the [desk](../resources/desk.md) objects in the tenant.
+
+#### Request
+
+The following example shows a request.
+<!-- {
+  "blockType": "request",
+  "name": "get_all_desks"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/places/microsoft.graph.desk
+```
+
+#### Response
+
+The following example shows the response.
+
+>**Note**: The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "name": "get_all_desks",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.desk)"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "value": [
+    {
+      "id": "530f7900-8063-4daf-9cc1-168cb3ac26e9",
+      "placeId": "530f7900-8063-4daf-9cc1-168cb3ac26e9",
+      "displayName": "desk 5",
+      "parentId": "ca163ae1-14a3-4e2a-8a97-5f82d672186f",
+      "isWheelChairAccessible": true,
+      "mode": {
+        "@odata.type": "#microsoft.graph.offlinePlaceMode",
+        "reason": "New"
+      }
+    }
+  ]
+}
+```
+
+### Example 5: List all rooms defined in the tenant
+
+The following example shows how to get all the [room](../resources/room.md) objects in the tenant.
+
+#### Request
+
+The following example shows a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_all_rooms"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/places/microsoft.graph.room
+```
+
+#### Response
+
+The following example shows the response.
+
+>**Note**: The response object shown here might be shortened for readability.
+>>>>>>> origin/main
 <!-- {
   "blockType": "response",
   "name": "get_all_rooms",
@@ -655,7 +854,10 @@ The following example shows how to get all the [roomList](../resources/roomlist.
 
 The following example shows a request.
 
+<<<<<<< HEAD
 # [HTTP](#tab/http)
+=======
+>>>>>>> origin/main
 <!-- {
   "blockType": "request",
   "name": "get_all_roomlists"
@@ -741,6 +943,147 @@ Content-Type: application/json
       "phone": null,
       "emailAddress": "bldg2@contoso.com",
       "placeId": "25709e2a-4c17-49ab-b591-1daf8d9b786d"
+<<<<<<< HEAD
+=======
+    }
+  ]
+}
+```
+
+### Example 8: List rooms contained in a room list
+
+The following example shows how to get a list of [room](../resources/room.md) objects contained in a **roomList**. 
+
+#### Request
+
+The following example shows a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_rooms_in_roomlist",
+  "sampleKeys": ["bldg2@contoso.com"]
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/places/bldg2@contoso.com/microsoft.graph.roomlist/rooms
+```
+
+#### Response
+
+The following example shows the response.
+
+>**Note**: The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "name": "get_rooms_in_roomlist",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.room)"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#places('bldg2%40contoso.com')/microsoft.graph.roomList/rooms",
+  "value": [
+    {
+      "id": "3162F1E1-C4C0-604B-51D8-91DA78970B97",
+      "emailAddress": "cf200@contoso.com",
+      "displayName": "Conf Room 200",
+      "address": {
+        "street": "4567 Main Street",
+        "city": "Buffalo",
+        "state": "NY",
+        "postalCode": "98052",
+        "countryOrRegion": "USA"
+      },
+      "geoCoordinates": {
+        "latitude": 47.640568390488625,
+        "longitude": -122.1293731033802
+        },
+      "phone": "000-000-0000",
+      "nickname": "Conf Room",
+      "label": "200",
+      "capacity": 40,
+      "building": "2",
+      "floorNumber": 2,
+      "isWheelChairAccessible": false,
+      "bookingType": "standard",
+      "tags": [
+        "benches",
+        "nice view"
+      ],
+      "audioDeviceName": null,
+      "videoDeviceName": null,
+      "displayDeviceName": "surface hub",
+      "placeId": "62cfc8cb-fc2b-4783-aeea-f9ce0f8e2904"
+    }
+  ]
+}
+```
+
+### Example 9: List workspaces contained in a room list
+
+The following example shows how to get a list of [workspace](../resources/workspace.md) objects contained in a **roomList**. 
+
+#### Request
+
+The following example shows a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_workspaces_in_roomlist",
+  "sampleKeys": ["bldg2@contoso.com"]
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/places/bldg2@contoso.com/microsoft.graph.roomlist/workspaces
+```
+
+#### Response
+
+The following example shows the response.
+>**Note**: The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "name": "get_workspaces_in_roomlist",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.workspace)"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#places('bldg2%40contoso.com')/microsoft.graph.roomList/workspaces",
+  "value": [
+    {
+      "id": "3162F1E1-C4C0-604B-51D8-91DA78970B97",
+      "emailAddress": "ws200@contoso.com",
+      "displayName": "Workspace 200",
+      "address": {
+        "street": "4567 Main Street",
+        "city": "Buffalo",
+        "state": "NY",
+        "postalCode": "98052",
+        "countryOrRegion": "USA"
+      },
+      "geoCoordinates": {
+        "latitude": 47.640568390488625,
+        "longitude": -122.1293731033802
+      },
+      "phone": "000-000-0000",
+      "nickname": "Workspace",
+      "label": "200",
+      "capacity": 40,
+      "building": "2",
+      "floorNumber": 2,
+      "isWheelChairAccessible": false,
+      "tags": [
+        "benches",
+        "nice view"
+      ],
+      "placeId": "ca4e4ca8-4e92-4a83-afe4-5104c0ca1de3"
+>>>>>>> origin/main
     }
   ]
 }

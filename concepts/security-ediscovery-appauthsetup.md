@@ -4,8 +4,9 @@ description: "Follow the steps to set up app-only access for eDiscovery Microsof
 author: "pamehra"
 ms.localizationpriority: high
 ms.subservice: "security"
-ms.custom: scenarios:getting-started
+ms.custom: scenarios:getting-started, sfi-image-nochange
 ms.date: 11/14/2024
+ms.topic: how-to
 ---
 
 # Set up app-only access for Microsoft Purview eDiscovery 

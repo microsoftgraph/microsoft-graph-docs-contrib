@@ -1,10 +1,10 @@
 ---
 title: "resourceLink resource type"
-description: "Specifies external links that should be associated to a building in Places, such as a dining menu or a link to other services."
+description: "Represents external links that should be associated with a building in Places, such as a dining menu or a link to other services."
 author: tiwarisakshi02
 ms.date: 06/11/2025
 ms.localizationpriority: medium
-ms.subservice:
+ms.subservice: outlook
 doc_type: resourcePageType
 ---
 
@@ -14,16 +14,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Specifies external links that should be associated to this [building](./building.md), such as a dining menu, a link to services, and so on.
+Represents external links that should be associated with a [building](./building.md) in Places, such as a dining menu or a link to other services.
 
-For more information on how to set up services in Places, go to [Add services to buildings](/microsoft-365/places/services-in-places).
+For more information on how to set up services in Places, see [Add services to buildings](/microsoft-365/places/services-in-places).
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |linkType|resourceLinkType|Type of link. The possible values are: `url`, `unknownFutureValue`.|
-|name|String|The link text that is visible in the Places app. The max length is 200 characters|
-|value|String|The URL of the resource link. The max length is 200 characters.|
+|name|String|The link text that is visible in the Places app. The maximum length is 200 characters.|
+|value|String|The URL of the resource link. The maximum length is 200 characters.|
 
 ## Relationships
 None.

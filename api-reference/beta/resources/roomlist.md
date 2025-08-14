@@ -3,7 +3,7 @@ title: "roomList resource type"
 description: "Represents a group of rooms created by the company."
 ms.localizationpriority: medium
 author: tiwarisakshi02
-ms.subservice: "outlook"
+ms.subservice: outlook
 doc_type: "resourcePageType"
 ms.date: 03/22/2024
 ---
@@ -18,7 +18,7 @@ Represents a group of [room](room.md) or [workspace](workspace.md) resources def
 
 In Exchange Online, each **roomList** is associated with a mailbox.
 
-Derived from [place](place.md).
+Inherits from [place](place.md).
 
 ## Methods
 

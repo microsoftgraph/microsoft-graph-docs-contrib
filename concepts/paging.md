@@ -35,7 +35,7 @@ When there's at least one more page of data available, Microsoft Graph returns a
 
 ### Client-side paging
 
-In client-side paging, a client app specifies the number of results it wants Microsoft Graph to return in a single page by using the [$top](query-parameters.md#top-parameter), [$skip](query-parameters.md#skip-parameter), or [$skipToken](query-parameters.md#skiptoken-parameter) query parameters. Support for client-side paging, including the number of results that the client can request for in a single page depends on the API and the query being performed. For example, the `/users` endpoint supports `$top` but not `$skip`.
+In client-side paging, a client app specifies the number of results it wants Microsoft Graph to return in a single page by using the [$top](query-parameters.md#top), [$skip](query-parameters.md#skip), or [$skipToken](query-parameters.md#skiptoken) query parameters. Support for client-side paging, including the number of results that the client can request for in a single page depends on the API and the query being performed. For example, the `/users` endpoint supports `$top` but not `$skip`.
 
 The rest of this article describes how to implement client-side paging.
 
@@ -54,10 +54,6 @@ GET https://graph.microsoft.com/v1.0/users?$top=5
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/v1/paging-top-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/paging-top-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -96,7 +92,7 @@ Use the entire URL in the `@odata.nextLink` property in a GET request to retriev
 
 Paging behavior varies across different Microsoft Graph APIs. Consider the following points when working with paged data:
 
-- A page of results may contain zero or more results.
+- A page of results might contain zero or more results.
 - Different APIs might have different default and maximum page sizes.
 - Different APIs might behave differently if you specify a page size (via the `$top` query parameter) that exceeds the maximum page size for that API. The requested page size might be ignored, it might default to the maximum page size for that API, or Microsoft Graph might return an error.
 - Not all resources or relationships support paging. For example, queries against [directoryRole](/graph/api/resources/directoryrole) don't support paging. This includes reading role objects themselves and role members.

@@ -12,7 +12,7 @@ ms.date: 08/01/2024
 
 Namespace: microsoft.graph
 
-> **Important:** APIs under the /beta version in Microsoft Graph are subject to change which could break your applications. While Intune /beta APIs are supported by Microsoft, you should use these at your own discretion. In general, /beta APIs are not recommended for use in production applications. To determine whether an API is available in v1.0, use the Version selector
+> **Important:** Microsoft supports Intune /beta APIs, but they are subject to more frequent change. Microsoft recommends using version v1.0 when possible. Check an API's availability in version v1.0 using the Version selector.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -43,3 +43,12 @@ The set of available policy types that can be configured for approval. The polic
 |deviceResetPasscode|19|Indicates that the configured policy type is for a Device Reset Passcode Action. Not in use at this time.|
 |unknownFutureValue|21|Evolvable enumeration sentinel value. Do not use.|
 |operationApprovalPolicy|22|Indicates that the configured policy type is for an Operation Approval Policy.|
+|autopilot|23|Indicates that the configured policy type is for Autopilot operations. Not in use at this time.|
+|windows365|24|Indicates that the configured policy type is for Windows 365 operations. Not in use at this time.|
+|deviceEnrollment|25|Indicates that the configured policy type is for Device Enrollment operations. Not in use at this time.|
+|deviceUpdate|26|Indicates that the configured policy type is for Device Update operations. Not in use at this time.|
+|enrollmentRestriction|27|Indicates that the configured policy type is for Enrollment Restriction operations. Not in use at this time.|
+|tenantConfiguration|28|Indicates that the configured policy type is for Tenant Configuration operations. Not in use at this time.|
+|tunnel|29|Indicates that the configured policy type is for Tunnel operations. Not in use at this time.|
+|endpointPrivilegeManagement|30|Indicates that the configured policy type is for Endpoint Privilege Management. Not in use at this time.|
+|deviceSecurityAction|31|Indicates that the configured policy type is for Device Security Action. Not in use at this time.|

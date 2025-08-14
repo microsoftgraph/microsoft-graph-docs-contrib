@@ -9,7 +9,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 // Dependencies
 using Microsoft.Graph.Beta.Me.DataSecurityAndGovernance.ProcessContent;
 using Microsoft.Graph.Beta.Models;
-using Microsoft.Kiota.Abstractions.Serialization;
 
 var requestBody = new ProcessContentPostRequestBody
 {
@@ -17,59 +16,63 @@ var requestBody = new ProcessContentPostRequestBody
 	{
 		ContentEntries = new List<ProcessContentMetadataBase>
 		{
-			new ProcessConversationMetadata
+			new ProcessFileMetadata
 			{
-				OdataType = "#microsoft.graph.processConversationMetadata",
+				OdataType = "#microsoft.graph.processFileMetadata",
 				Identifier = "f7af180f-dc2e-467c-9719-757e1c61eabf",
-				Content = new BinaryContent
+				Content = new TextContent
 				{
-					OdataType = "#microsoft.graph.binaryContent",
-					Data = Convert.FromBase64String("Base64 encoded content"),
+					OdataType = "#microsoft.graph.textContent",
+					Data = "Base64 encoded content",
 				},
-				Name = "Some name",
+				Name = "Test File.docx",
 				CorrelationId = "d63eafd2-e3a9-4c1a-b726-a2e9b9d95822",
+				CreatedDateTime = DateTimeOffset.Parse("2024-07-23T01:31:40.2020463Z"),
+				ModifiedDateTime = DateTimeOffset.Parse("2024-09-17T13:45:21.0000000Z"),
+				CorrelationId = "9d84223c-521c-42f4-8f35-3cdeabe515d3",
+				Length = 17352L,
+				IsTruncated = false,
+				OwnerId = "ffe1ca70-6e5b-4120-abf0-472034ba05d4",
+				CustomProperties = new CustomMetadataDictionary
+				{
+					AdditionalData = new Dictionary<string, object>
+					{
+						{
+							"Department" , "Finance"
+						},
+						{
+							"ReviewerName" , "John Smith"
+						},
+					},
+				},
 			},
 		},
 		ActivityMetadata = new ActivityMetadata
 		{
 			Activity = UserActivityType.UploadFile,
 		},
+		DeviceMetadata = new DeviceMetadata
+		{
+			DeviceType = "unmanaged",
+			OperatingSystemSpecifications = new OperatingSystemSpecifications
+			{
+				OperatingSystemPlatform = "Windows",
+				OperatingSystemVersion = "11.1",
+			},
+		},
 		IntegratedAppMetadata = new IntegratedApplicationMetadata
 		{
-			Name = "Some integrated app name",
+			Name = "Network Proxy App",
 			Version = "1.0.0",
 		},
 		ProtectedAppMetadata = new ProtectedApplicationMetadata
 		{
+			Name = "My App",
+			Version = "0.1",
 			ApplicationLocation = new PolicyLocationUrl
 			{
 				OdataType = "#microsoft.graph.policyLocationUrl",
 				Value = "https://gemini.google.com",
-			},
-		},
-		AdditionalData = new Dictionary<string, object>
-		{
-			{
-				"deviceMetadata" , new UntypedObject(new Dictionary<string, UntypedNode>
-				{
-					{
-						"deviceType", new UntypedString("Unmanaged")
-					},
-					{
-						"ipAddress", new UntypedNull()
-					},
-					{
-						"operatingSystemSpecifications", new UntypedObject(new Dictionary<string, UntypedNode>
-						{
-							{
-								"operatingSystemPlatform", new UntypedString("Windows")
-							},
-							{
-								"operatingSystemVersion", new UntypedString("11.1")
-							},
-						})
-					},
-				})
 			},
 		},
 	},

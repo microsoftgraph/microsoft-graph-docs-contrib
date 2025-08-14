@@ -1,54 +1,61 @@
 ---
-title: "Use query parameters to customize responses"
-description: "Microsoft Graph supports query parameters that you can use to specify and control the amount of data returned in a response."
+title: Customize Microsoft Graph Responses with Query Parameters
+description: Discover how to use query parameters with Microsoft Graph APIs to control data retrieval and efficiently customize API responses and improve performance.
 author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: Luca.Spolidoro
 ms.topic: concept-article
 ms.subservice: non-product-specific
 ms.localizationpriority: high
-ms.custom: graphiamtop20, scenarios:getting-started
-ms.date: 07/16/2024
-#Customer intent: As a developer building apps that consume Microsoft Graph APIs, I want to learn how to use OData query parameters, so that I can control the data retrieval and optimize data usage.
+ms.date: 07/02/2025
 
+#customer intent: As a developer working with Microsoft Graph APIs, I want to understand how to use query parameters to customize API responses, so that I can retrieve only the data my application needs efficiently.
 ---
 
-# Use query parameters to customize responses
+# Customize Microsoft Graph responses with query parameters
 
-Microsoft Graph supports query parameters that you can use to specify and control the amount of data returned in a response. The support for the exact query parameters varies from one API operation to another, and depending on the API, can differ between the *v1.0* and *beta* endpoints.
+Query parameters help you optimize Microsoft Graph API responses by controlling exactly what data is returned. Instead of retrieving all available properties and data, you can use query parameters to:
+
+- Filter results to get only the records you need
+- Select specific properties to reduce response size and improve performance
+- Sort and paginate data for better user experiences
+- Expand related resources to get connected data in a single request
+
+This article explains how to use [OData system query options](http://docs.oasis-open.org/odata/odata/v4.01/odata-v4.01-part2-url-conventions.html#_Toc31360955) and other Microsoft Graph query parameters effectively. You learn the syntax, see practical examples, and discover best practices for building efficient queries that enhance your application's performance.
+
+Support for specific query parameters varies between API operations and can differ between the *v1.0* and *beta* endpoints.
 
 > [!TIP] 
-> On the *beta* endpoint, the `$` prefix is optional. For example, instead of `$filter`, you can use `filter`. 
+> On the *beta* endpoint, the `$` prefix is optional. For example, you can use `filter` instead of `$filter`. 
 > On the *v1.0* endpoint, the `$` prefix is optional for only a subset of APIs. **For simplicity, always include `$` across all versions**.
-
-Query parameters can be [OData system query options](http://docs.oasis-open.org/odata/odata/v4.01/odata-v4.01-part2-url-conventions.html#_Toc31360955) or other query parameters.
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/7BuFv3yETi4]
 
 ## OData system query options
-A Microsoft Graph API operation might support one or more of the following OData system query options. These query options are compatible with the [OData V4 query language][odata-query] and are supported in only GET operations.
 
-Click the examples to try them in [Graph Explorer][graph-explorer].
+A Microsoft Graph API operation might support one or more of the following OData system query options. These query options are compatible with the [OData V4 query language][odata-query] and are supported only in *GET* operations.
+
+Select the examples to try them in [Graph Explorer][graph-explorer].
 
 | Name                     | Description | Example
 |:-------------------------|:------------|:---------|
-| [$count](#count-parameter)         | Retrieves the total count of matching resources. | [`/me/messages?$top=2&$count=true`][count-example]
-| [$expand](#expand-parameter)       | Retrieves related resources.|[`/groups?$expand=members`][expand-example]
-| [$filter](#filter-parameter)       | Filters results (rows).|[`/users?$filter=startswith(givenName,'J')`][filter-example]
-| [$format](#format-parameter)       | Returns the results in the specified media format.|[`/users?$format=json`][format-example]
-| [$orderby](#orderby-parameter)     | Orders results.|[`/users?$orderby=displayName desc`][orderby-example]
-| [$search](#search-parameter)       | Returns results based on search criteria. |[`/me/messages?$search=pizza`][search-example]
-| [$select](#select-parameter)       | Filters properties (columns).|[`/users?$select=givenName,surname`][select-example]
-| [$skip](#skip-parameter)           | Indexes into a result set. Also used by some APIs to implement paging and can be used together with `$top` to manually page results. | [`/me/messages?$skip=11`][skip-example]
-| [$top](#top-parameter)             | Sets the page size of results. |[`/users?$top=2`][top-example]
+| [$count](#count)         | Returns the total count of matching resources. | [`/me/messages?$top=2&$count=true`][count-example]
+| [$expand](#expand)       | Returns related resources.|[`/groups?$expand=members`][expand-example]
+| [$filter](#filter)       | Filters results (rows).|[`/users?$filter=startswith(givenName,'J')`][filter-example]
+| [$format](#format)       | Returns results in the specified media format.|[`/users?$format=json`][format-example]
+| [$orderby](#orderby)     | Orders results.|[`/users?$orderby=displayName desc`][orderby-example]
+| [$search](#search)       | Returns results based on search criteria. |[`/me/messages?$search=pizza`][search-example]
+| [$select](#select)       | Filters properties (columns).|[`/users?$select=givenName,surname`][select-example]
+| [$skip](#skip)           | Skips items in a result set. Also used by some APIs to implement paging and can be used with `$top` to manually page results. | [`/me/messages?$skip=11`][skip-example]
+| [$top](#top)             | Sets the page size of results. |[`/users?$top=2`][top-example]
 
-To know the OData system query options that an API and its properties support, see the "Properties" table in the resource page, and the "Optional query parameters" section of the LIST and GET operations for the API.
+To find the OData system query options that an API and its properties support, see the "Properties" table in the resource page and the "Optional query parameters" section of the LIST and GET operations for the API.
 
 ## Other query parameters
 
 | Name                     | Description | Example |
 |:-------------------------|:------------|:---------|
-| [$skipToken](#skiptoken-parameter) | Retrieves the next page of results from result sets that span multiple pages. (Some APIs use `$skip` instead.) | `/users?$skiptoken=X%274453707402000100000017...`|
+| [$skipToken](#skiptoken) | Returns the next page of results from result sets that span multiple pages. (Some APIs use `$skip` instead.) | `/users?$skiptoken=X%274453707402000100000017...`|
 
 ## Other OData URL capabilities
 
@@ -56,17 +63,17 @@ The following OData 4.0 capabilities are URL segments, not query parameters.
 
 | Name                     | Description | Example 
 |:-------------------------|:------------|:---------|
-| $count| Retrieves the integer total of the collection. | `GET /users/$count` <br> `GET /groups/{id}/members/$count` <br/><br/> [Get a count of users](/graph/api/user-list#example-3-get-only-a-count-of-users)|
+| $count| Returns the integer total of the collection. | `GET /users/$count` <br> `GET /groups/{id}/members/$count` <br/><br/> [Get a count of users](/graph/api/user-list#example-3-get-only-a-count-of-users)|
 | $ref | Updates entities membership to a collection. | `POST /groups/{id}/members/$ref` <br/><br/> [Add a member to a group](/graph/api/group-post-members) |
-| $value | Retrieves or updates the binary value of an item. | `GET /me/photo/$value` <br/><br/> [Get the photo for a user, group, or team](/graph/api/profilephoto-get) |
-| $batch | Combine multiple HTTP requests into a batch request. | `POST /$batch` <br/><br/> [JSON batching](/graph/json-batching) |
+| $value | Returns or updates the binary value of an item. | `GET /me/photo/$value` <br/><br/> [Get the photo for a user, group, or team](/graph/api/profilephoto-get) |
+| $batch | Combines multiple HTTP requests into a batch request. | `POST /$batch` <br/><br/> [JSON batching](/graph/json-batching) |
 
 ## Encoding query parameters
 
-The values of query parameters should be percent-encoded as per [RFC 3986](https://www.rfc-editor.org/rfc/rfc3986#section-2.2). For example, all reserved characters in query strings must be percent-encoded. Many HTTP clients, browsers, and tools (such as the [Graph Explorer][graph-explorer]) handle this encoding for you. If a query fails, one possible cause is failure to encode the query parameter values appropriately. In some cases, you need to double-encode the values.
+Percent-encode query parameter values according to [RFC 3986](https://www.rfc-editor.org/rfc/rfc3986#section-2.2). All reserved characters in query strings must be percent-encoded. Many HTTP clients, browsers, and tools (such as the [Graph Explorer][graph-explorer]) handle this encoding automatically. If a query fails, a possible cause is failure to encode the query parameter values appropriately. Sometimes, you need to double-encode values.
 
 > [!NOTE]
-> There's a known issue related to encoding ampersand (&) symbols in `$search` expressions on the *v1.0* endpoint. For more information about the issue and the recommended workaround, see [Known issue: $search for directory objects fails for encoded ampersand (&) character](https://developer.microsoft.com/en-us/graph/known-issues/?search=18185).
+> There's a known issue with encoding ampersand (&) symbols in `$search` expressions on the *v1.0* endpoint. For more information about the issue and the recommended workaround, see [Known issue: $search for directory objects fails for encoded ampersand (&) character](https://developer.microsoft.com/en-us/graph/known-issues/?search=18185).
 
 For example, an unencoded URL looks like this:
 
@@ -82,10 +89,6 @@ GET https://graph.microsoft.com/v1.0/users?$filter=startswith(givenName, 'J')
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/v1/query-parameters-unencoded-url-example-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/query-parameters-unencoded-url-example-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -130,10 +133,6 @@ GET https://graph.microsoft.com/v1.0/users?$filter=startswith(givenName%2C+'J')
 [!INCLUDE [sample-code](../includes/snippets/csharp/v1/query-parameters-percentencoded-url-example-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/query-parameters-percentencoded-url-example-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/v1/query-parameters-percentencoded-url-example-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -176,10 +175,6 @@ GET https://graph.microsoft.com/v1.0/users?$filter=startswith%28givenName%2C%20%
 [!INCLUDE [sample-code](../includes/snippets/csharp/v1/query-parameters-doublepercentencoded-url-example-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/query-parameters-doublepercentencoded-url-example-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/v1/query-parameters-doublepercentencoded-url-example-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -208,7 +203,7 @@ GET https://graph.microsoft.com/v1.0/users?$filter=startswith%28givenName%2C%20%
 
 ### Escaping single quotes
 
-For requests that use single quotes, if any parameter values also contain single quotes, they must be double escaped; otherwise, the request fails due to invalid syntax. In the example, the string value `let''s meet for lunch?` has the single quote escaped.
+For requests that use single quotes, if any parameter values also contain single quotes, they should be double escaped; otherwise, the request fails because of invalid syntax. In the example, the string value `let''s meet for lunch?` has the single quote escaped.
 
 
 # [HTTP](#tab/http)
@@ -222,10 +217,6 @@ GET https://graph.microsoft.com/v1.0/me/messages?$filter=subject eq 'let''s meet
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/v1/query-parameters-escaped-quotes-example-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/query-parameters-escaped-quotes-example-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -254,19 +245,19 @@ GET https://graph.microsoft.com/v1.0/me/messages?$filter=subject eq 'let''s meet
 
 ---
 
-## count parameter
+## Count
 
-Use the `$count` query parameter to retrieve the count of the total number of items in a collection or matching an expression. `$count` can be used in the following ways:
+Use the `$count` query parameter to get the count of the total number of items in a collection or matching an expression. You can use `$count` in the following ways:
 
 1. As a query string parameter with the syntax `$count=true` to include a count of the total number of items in a collection alongside the page of data values returned from Microsoft Graph. For example, `users?$count=true`.
-2. As a [URL segment](#other-odata-url-capabilities) to retrieve only the integer total of the collection. For example, `users/$count`.
-3. In a `$filter` expression with equality operators to retrieve a collection of data where the filtered property is an empty collection. See [Use the $filter query parameter to filter a collection of objects](/graph/filter-query-parameter).
+2. As a [URL segment](#other-odata-url-capabilities) to get only the integer total of the collection. For example, `users/$count`.
+3. In a `$filter` expression with equality operators to get a collection of data where the filtered property is an empty collection. See [Use the $filter query parameter to filter a collection of objects](/graph/filter-query-parameter).
 
 > [!NOTE]
 > 1. On resources that derive from [directoryObject](/graph/api/resources/directoryobject), `$count` is only supported in an advanced query. See [Advanced query capabilities on directory objects](/graph/aad-advanced-queries).
-> 2. Use of `$count` is not supported in Azure AD B2C tenants.
+> 2. Use of `$count` isn't supported in Azure AD B2C tenants.
 
-For example, the following request returns both the **contact** collection of the current user, and the number of items in the **contact** collection in an **@odata.count** property.
+For example, the following request returns both the **contact** collection of the current user and the number of items in the **contact** collection in an **@odata.count** property.
 
 
 # [HTTP](#tab/http)
@@ -280,10 +271,6 @@ GET  https://graph.microsoft.com/v1.0/me/contacts?$count=true
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/v1/query-parameters-count-example-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/query-parameters-count-example-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -314,7 +301,7 @@ GET  https://graph.microsoft.com/v1.0/me/contacts?$count=true
 
 For directory objects, that is, resources that derive from [directoryObject](/graph/api/resources/directoryobject), the `$count` query parameter is only supported in [advanced queries](/graph/aad-advanced-queries). 
 
-## expand parameter
+## Expand
 
 Many Microsoft Graph resources expose both declared properties of the resource and its relationships with other resources. These relationships are also called reference properties or navigation properties, and they can reference either a single resource or a collection of resources. For example, the mail folders, manager, and direct reports of a user are all exposed as relationships. 
 
@@ -334,10 +321,6 @@ GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/v1/query-parameters-expand-example-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/query-parameters-expand-example-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -366,7 +349,7 @@ GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children
 
 ---
 
-With some resource collections, you can also specify the properties to be returned in the expanded resources by adding a `$select` parameter. The following example performs the same query as the previous example but uses a [`$select`](#select-parameter) statement to limit the properties returned for the expanded child items to the **id** and **name** properties.
+With some resource collections, you can also specify the properties to be returned in the expanded resources by adding a `$select` parameter. The following example performs the same query as the previous example but uses a [`$select`](#select) statement to limit the properties returned for the expanded child items to the **id** and **name** properties.
 
 
 # [HTTP](#tab/http)
@@ -380,10 +363,6 @@ GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children($select=id,n
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/v1/query-parameters-expand+nestedselect-example-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/query-parameters-expand+nestedselect-example-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -413,21 +392,21 @@ GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children($select=id,n
 ---
 
 > [!NOTE]
-> + Not all relationships and resources support the `$expand` query parameter. For example, you can expand the **directReports**, **manager**, and **memberOf** relationships on a user, but you cannot expand its **events**, **messages**, or **photo** relationships. Not all resources or relationships support using `$select` on expanded items. 
+> + Not all relationships and resources support the `$expand` query parameter. For example, you can expand the **directReports**, **manager**, and **memberOf** relationships on a user, but you can't expand its **events**, **messages**, or **photo** relationships. Not all resources or relationships support using `$select` on expanded items. 
 > 
 > + With Microsoft Entra resources that derive from [directoryObject](/graph/api/resources/directoryobject), like [user](/graph/api/resources/user) and [group](/graph/api/resources/group), `$expand` typically returns a maximum of 20 items for the expanded relationship and has no [@odata.nextLink](./paging.md). For details, see [query parameter limitations](https://developer.microsoft.com/en-us/graph/known-issues/?search=13635).
 >
-> + `$expand` is not currently supported with [advanced queries](/graph/aad-advanced-queries).
+> + `$expand` isn't currently supported with [advanced queries](/graph/aad-advanced-queries).
 
-## filter parameter
+## Filter
 
-Use the `$filter` query parameter to retrieve just a subset of a collection. For guidance on using `$filter`, see [Use the $filter query parameter to filter a collection of objects](/graph/filter-query-parameter).
+Use the `$filter` query parameter to get just a subset of a collection. For guidance on using `$filter`, see [Use the $filter query parameter to filter a collection of objects](/graph/filter-query-parameter).
 
-## format parameter
+## Format
 
 Use the `$format` query parameter to specify the media format of the items returned from Microsoft Graph.
 
-For example, the following request returns the users in the organization in the json format:
+For example, the following request returns the users in the organization in JSON format:
 
 
 # [HTTP](#tab/http)
@@ -441,10 +420,6 @@ GET https://graph.microsoft.com/v1.0/users?$format=json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/v1/query-parameters-format-example-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/query-parameters-format-example-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -474,13 +449,13 @@ GET https://graph.microsoft.com/v1.0/users?$format=json
 ---
 
 > [!NOTE]
-> The `$format` query parameter supports a number of formats (for example, `atom`, `xml`, and `json`) but results may not be returned in all formats.
+> The `$format` query parameter supports many formats (for example, `atom`, `xml`, and `json`) but results might not be returned in all formats.
 
-## orderby parameter
+## OrderBy
 
-Use the `$orderby` query parameter to specify the sort order of the items returned from Microsoft Graph. The default order is ascending order.
+Use the `$orderby` query parameter to specify the sort order of the items returned from Microsoft Graph. The default order is ascending.
 
-For example, the following request returns the users in the organization ordered by their display name in ascending order:
+For example, the following request returns users in the organization ordered by their display name in ascending order:
 
 
 # [HTTP](#tab/http)
@@ -494,10 +469,6 @@ GET https://graph.microsoft.com/v1.0/users?$orderby=displayName
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/v1/query-parameters-orderby-example-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/query-parameters-orderby-example-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -542,10 +513,6 @@ GET https://graph.microsoft.com/v1.0/me/messages?$orderby=from/emailAddress/addr
 [!INCLUDE [sample-code](../includes/snippets/csharp/v1/query-parameters-defaultorderby-collection-example-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/query-parameters-defaultorderby-collection-example-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/v1/query-parameters-defaultorderby-collection-example-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -572,7 +539,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$orderby=from/emailAddress/addr
 
 ---
 
-To sort the results in ascending or descending order, append either `asc` or `desc` to the field name, separated by a space; for example, `?$orderby=name desc` (unencoded), `?$orderby=name%20desc` (URL encoded). If the sort order isn't specified, the default ascending order is inferred.
+To sort results in ascending or descending order, append either `asc` or `desc` to the field name, separated by a space; for example, `?$orderby=name desc` (unencoded), `?$orderby=name%20desc` (URL encoded). If you don't specify the sort order, ascending order is inferred.
 
 With some APIs, you can order results on multiple properties. For example, the following request orders the messages in the user's Inbox, first by the name of the person who sent it in descending order (Z to A), and then by subject in ascending order (default).
 
@@ -588,10 +555,6 @@ GET https://graph.microsoft.com/v1.0/me/mailFolders/Inbox/messages?$orderby=from
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/v1/query-parameters-descorderby-collection-example-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/query-parameters-descorderby-collection-example-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -640,10 +603,6 @@ GET https://graph.microsoft.com/v1.0/me/messages?$filter=Subject eq 'welcome' an
 [!INCLUDE [sample-code](../includes/snippets/csharp/v1/query-parameters-filter+orderby-example-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/query-parameters-filter+orderby-example-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/v1/query-parameters-filter+orderby-example-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -671,23 +630,23 @@ GET https://graph.microsoft.com/v1.0/me/messages?$filter=Subject eq 'welcome' an
 ---
 
 > [!NOTE] 
-> Combining `$orderby` and `$filter` query parameters is supported for directory objects. See [Advanced query capabilities in directory objects](/graph/aad-advanced-queries).
+> Combining `$orderby` and `$filter` query parameters is supported for directory objects. See [Advanced query capabilities on directory objects](/graph/aad-advanced-queries).
 
-## search parameter
+## Search
 
-Use the `$search` query parameter to restrict the results of a request to match a search criterion. It's syntax and behavior varies from one API operation to another. To see the syntax for `$search` across different resources, see [Use the $search query parameter to match a search criterion](/graph/search-query-parameter).
+Use the `$search` query parameter to restrict request results to match a search criterion. Its syntax and behavior varies across different resources. For more information, see [Use the $search query parameter to match a search criterion](/graph/search-query-parameter).
 
-## select parameter
+## Select
 
 Use the `$select` query parameter to return a subset of properties for a resource. With `$select`, you can specify a subset or a superset of the default properties.
 
-When you make a GET request without using `$select` to limit the amount of properties data, Microsoft Graph includes a **@microsoft.graph.tips** property that provides a best practice recommendation for using `$select` similar to the following message:
+When you make a GET request without using `$select` to limit the property data, Microsoft Graph includes a **@microsoft.graph.tips** property that provides a best practice recommendation for using `$select` similar to the following message:
 
 ```html
 "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET groups?$select=appMetadata,assignedLabels",
 ```
 
-For example, when retrieving the messages of the signed-in user, you can specify that only the **from** and **subject** properties be returned:
+For example, when getting the messages of the signed-in user, you can specify that only the **from** and **subject** properties be returned:
 
 
 # [HTTP](#tab/http)
@@ -701,10 +660,6 @@ GET https://graph.microsoft.com/v1.0/me/messages?$select=from,subject
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/v1/query-parameters-select-example-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/query-parameters-select-example-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -734,11 +689,11 @@ GET https://graph.microsoft.com/v1.0/me/messages?$select=from,subject
 ---
 
 > [!IMPORTANT]
-> In general, we recommend that you use `$select` to limit the properties returned by a query to those needed by your app. This is especially true of queries that might potentially return a large result set. Limiting the properties returned in each row will reduce network load and help improve your app's performance.
+> We recommend that you use `$select` to limit the properties returned by a query to those needed by your app. This is especially true for queries that might potentially return a large result set. Limiting the properties returned in each row reduces network load and improves your app's performance.
 >
 > In *v1.0*, some Microsoft Entra resources that derive from [directoryObject](/graph/api/resources/directoryobject), like [user](/graph/api/resources/user) and [group](/graph/api/resources/group), return a limited, default subset of properties on reads. For these resources, you must use `$select` to return properties outside of the default set.
 
-## skip parameter
+## Skip
 
 Use the `$skip` query parameter to set the number of items to skip at the start of a collection.
 For example, the following request returns events for the user sorted by date created, starting with the 21st event in the collection:
@@ -755,10 +710,6 @@ GET  https://graph.microsoft.com/v1.0/me/events?$orderby=createdDateTime&$skip=2
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/v1/query-parameters-skip-example-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/query-parameters-skip-example-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -787,21 +738,21 @@ GET  https://graph.microsoft.com/v1.0/me/events?$orderby=createdDateTime&$skip=2
 
 ---
 
-Some Microsoft Graph APIs, like Outlook Mail and Calendars (**message**, **event**, and **calendar**), use `$skip` to implement paging. When results of a query span multiple pages, these APIs return an **@odata.nextLink** property with a URL that contains a `$skip` parameter. You can use this URL to return the next page of results. To learn more, see [Paging](./paging.md).
+Some Microsoft Graph APIs, like Outlook Mail and Calendars (**message**, **event**, and **calendar**), use `$skip` to implement paging. When query results span multiple pages, these APIs return an **@odata.nextLink** property with a URL that contains a `$skip` parameter. You can use this URL to return the next page of results. To learn more, see [Paging](./paging.md).
 
 [Directory objects](/graph/api/resources/directoryobject) such as **user**, **group**, and **application** don't support `$skip`.
 
-## skipToken parameter
+## SkipToken
 
-Some requests return multiple pages of data, either due to server-side paging or due to the use of the [`$top`](#top-parameter) parameter to limit the page size of the response. Many Microsoft Graph APIs use the `skipToken` query parameter to reference subsequent pages of the result.  
+Some requests return multiple pages of data, either due to server-side paging or due to using the [`$top`](#top) parameter to limit the page size of the response. Many Microsoft Graph APIs use the `skipToken` query parameter to reference subsequent pages of the result.  
 This parameter contains an opaque token that references the next page of results and is returned in the URL provided in the **@odata.nextLink** property in the response. To learn more, see [Paging](./paging.md).
 
 > [!NOTE]
 > If you're using OData Count (adding `$count=true` in the query string) for queries against directory objects, the `@odata.count` property is present only in the first page.
 >
-> The **ConsistencyLevel** header required for advanced queries against directory objects is not included by default in subsequent page requests. It must be set explicitly in subsequent pages.
+> The **ConsistencyLevel** header required for advanced queries against directory objects isn't included by default in subsequent page requests. It must be set explicitly in subsequent pages.
 
-## top parameter
+## Top
 
 Use the `$top` query parameter to specify the number of items to be included in the result.
 
@@ -823,10 +774,6 @@ GET https://graph.microsoft.com/v1.0/me/messages?$top=5
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/v1/query-parameters-top-example-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/query-parameters-top-example-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -856,7 +803,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$top=5
 ---
 
 > [!NOTE]
-> The **ConsistencyLevel** header required for advanced queries against directory objects is not included by default in subsequent page requests. It must be set explicitly in subsequent pages.
+> The **ConsistencyLevel** header required for advanced queries against directory objects isn't included by default in subsequent page requests. It must be set explicitly in subsequent pages.
 
 ## Error handling for query parameters
 
@@ -879,7 +826,7 @@ https://graph.microsoft.com/v1.0/me?$expand=photo
 }
 ```
 
-However, sometimes query parameters specified in a request fail silently. For example, for unsupported query parameters and for unsupported combinations of query parameters. In these cases, you should examine the data returned by the request to determine whether the query parameters you specified had the desired effect.
+However, sometimes query parameters specified in a request fail silently. For example, for unsupported query parameters and for unsupported combinations of query parameters. In these cases, examine the data returned by the request to determine whether the query parameters you specified had the desired effect.
 
 [graph-explorer]: https://developer.microsoft.com/graph/graph-explorer
 [odata-filter]: https://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc453752358

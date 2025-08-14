@@ -5,6 +5,7 @@ author: "angelgolfer-ms"
 ms.localizationpriority: medium
 ms.subservice: "outlook"
 ms.date: 11/07/2024
+ms.topic: how-to
 ---
 
 # Get Outlook contacts in a shared folder
