@@ -30,5 +30,51 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
-```http
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
 DELETE /networkAccess/filteringProfiles/{filteringProfileId}/policies/{policyLinkId}/policy/{id}
+```
+
+## Request headers
+
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+
+## Request body
+
+Don't supply a request body for this method.
+
+## Response
+
+If successful, this method returns a `204 No Content` response code.
+
+## Examples
+
+### Request
+
+The following example shows a request.
+<!-- {
+  "blockType": "request",
+  "name": "delete_policy_from_threatintelligencepolicylink"
+}
+-->
+``` http
+DELETE https://graph.microsoft.com/beta/networkAccess/filteringProfiles/{filteringProfileId}/policies/{policyLinkId}/policy/{id}
+```
+
+
+### Response
+
+The following example shows the response.
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
+``` http
+HTTP/1.1 204 No Content
+```
