@@ -78,6 +78,7 @@ The following example shows how to update a **building** object.
 
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_building"
@@ -92,7 +93,6 @@ Content-Type: application/json
 }
 ```
 
-<<<<<<< HEAD
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-building-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -123,8 +123,6 @@ Content-Type: application/json
 
 ---
 
-=======
->>>>>>> origin/main
 #### Response
 
 The following example shows the response.
@@ -170,10 +168,6 @@ The following example shows how to update a **floor** object.
 
 The following example shows a request.
 
-<<<<<<< HEAD
-# [HTTP](#tab/http)
-=======
->>>>>>> origin/main
 <!-- {
   "blockType": "request",
   "name": "update_floor"
@@ -189,7 +183,6 @@ Content-Type: application/json
 }
 ```
 
-<<<<<<< HEAD
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-floor-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -220,8 +213,6 @@ Content-Type: application/json
 
 ---
 
-=======
->>>>>>> origin/main
 #### Response
 
 The following example shows the response.
@@ -262,10 +253,6 @@ The following example shows how to update a **section** object.
 
 The following example shows a request.
 
-<<<<<<< HEAD
-# [HTTP](#tab/http)
-=======
->>>>>>> origin/main
 <!-- {
   "blockType": "request",
   "name": "update_section"
@@ -280,7 +267,6 @@ Content-Type: application/json
 }
 ```
 
-<<<<<<< HEAD
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-section-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -311,8 +297,6 @@ Content-Type: application/json
 
 ---
 
-=======
->>>>>>> origin/main
 #### Response
 
 The following example shows the response.
@@ -346,10 +330,6 @@ The following example shows how to update a **desk** object.
 
 The following example shows a request.
 
-<<<<<<< HEAD
-# [HTTP](#tab/http)
-=======
->>>>>>> origin/main
 <!-- {
   "blockType": "request",
   "name": "update_desk"
@@ -366,7 +346,6 @@ Content-Type: application/json
 }
 ```
 
-<<<<<<< HEAD
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-desk-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -397,8 +376,6 @@ Content-Type: application/json
 
 ---
 
-=======
->>>>>>> origin/main
 #### Response
 
 The following example shows the response.
@@ -438,10 +415,6 @@ The following example shows how to update a **room** object.
 
 The following example shows a request.
 
-<<<<<<< HEAD
-# [HTTP](#tab/http)
-=======
->>>>>>> origin/main
 <!-- {
   "blockType": "request",
   "sampleKeys": ["cf100@contoso.com"],
@@ -461,7 +434,6 @@ Content-Type: application/json
 }
 ```
 
-<<<<<<< HEAD
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-room-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -492,8 +464,6 @@ Content-Type: application/json
 
 ---
 
-=======
->>>>>>> origin/main
 #### Response
 
 The following example shows the response.
@@ -552,10 +522,6 @@ The following example shows how to update a **workspace** object.
 
 The following example shows a request.
 
-<<<<<<< HEAD
-# [HTTP](#tab/http)
-=======
->>>>>>> origin/main
 <!-- {
   "blockType": "request",
   "sampleKeys": ["ws100@contoso.com"],
@@ -575,7 +541,6 @@ Content-Type: application/json
 }
 ```
 
-<<<<<<< HEAD
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-workspace-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -606,8 +571,6 @@ Content-Type: application/json
 
 ---
 
-=======
->>>>>>> origin/main
 #### Response
 
 The following example shows the response.
@@ -663,10 +626,6 @@ The following example shows how to update a **roomList** object.
 
 The following example shows a request.
 
-<<<<<<< HEAD
-# [HTTP](#tab/http)
-=======
->>>>>>> origin/main
 <!-- {
   "blockType": "request",
   "sampleKeys": ["Building1RroomList@contoso.com"],
@@ -697,7 +656,6 @@ Content-Type: application/json
 }
 ```
 
-<<<<<<< HEAD
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-roomlist-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -728,8 +686,6 @@ Content-Type: application/json
 
 ---
 
-=======
->>>>>>> origin/main
 #### Response
 
 The following example shows the response.
@@ -769,9 +725,3 @@ Content-Type: application/json
   "emailAddress": "bldg1@contoso.com",
   "placeId": "406bd1b2-237c-4710-bda2-8b7900d61b27"
 }
-<<<<<<< HEAD
-```
-=======
-```
-
->>>>>>> origin/main

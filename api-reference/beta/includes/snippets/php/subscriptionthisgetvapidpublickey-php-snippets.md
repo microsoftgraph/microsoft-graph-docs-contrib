@@ -11,6 +11,6 @@ use Microsoft\Graph\Beta\GraphServiceClient;
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 
-$result = $graphServiceClient->subscriptions()->bySubscriptionId('subscription-id')->get()->wait();
+$result = $graphServiceClient->subscriptions()->getVapidPublicKey()->get()->wait();
 
 ```
