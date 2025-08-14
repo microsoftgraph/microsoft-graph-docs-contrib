@@ -30,7 +30,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /networkAccessRoot/reports/getCloudApplicationReport(startDateTime={startDateTime},endDateTime={endDateTime})
+GET /networkAccess/reports/getCloudApplicationReport(startDateTime={startDateTime},endDateTime={endDateTime})
 ```
 
 ## Function parameters
