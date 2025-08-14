@@ -5215,3 +5215,4 @@ API snippets ([example](/graph/api/user-get?view=graph-rest-1.0&preserve-view=tr
 - See [what's currently new](whats-new-overview.md) in Microsoft Graph.
 - Check out the [Microsoft Graph developer blog](https://developer.microsoft.com/graph/blogs/) periodically for release announcements and helpful resources.
 - Browse details of Microsoft Graph API additions, and API behavior updates in the [changelog](https://developer.microsoft.com/graph/changelog).
+
