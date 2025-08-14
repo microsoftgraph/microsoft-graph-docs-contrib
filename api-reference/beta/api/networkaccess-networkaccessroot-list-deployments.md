@@ -1,14 +1,14 @@
 ---
-title: "List Global secure access deployment logs"
+title: "Deployment logs list"
 description: "Retrieve a list of logs that include the status of deployments performed through the Global Secure Access services."
-author: Gautham C A
-ms.date: 12/08/2025
+author: cagautham
+ms.date: 08/14/2025
 ms.localizationpriority: medium
 ms.subservice: entra-global-secure-access
 doc_type: apiPageType
 ---
 
-# List Global secure access deployment logs
+# Deployment logs list
 
 Namespace: microsoft.graph.networkaccess
 
@@ -102,4 +102,5 @@ Content-Type: application/json
     ]
 }
 ```
+
 
