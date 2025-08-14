@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a sharePointMigrationJob object.
+Delete a [sharePointMigrationJob](../resources/sharepointmigrationjob.md) object.
 
 ## Permissions
 
