@@ -82,7 +82,7 @@ Represents a supported region to establish an Azure network connection for Cloud
 | netherlands        | The region belongs to the region group: Netherlands.                               |
 | brazil             | The region belongs to the region group: Brazil.                                    |
 | israel             | The region belongs to the region group: Israel.                                    |
-| automatic          | There's no preference for a specific region or region group. Windows 365 service will distribute the CloudPCs across all healthy regions within the chosen grouping to maximize reliability and availability. |
+| automatic          | There's no preference for a specific region or region group. Windows 365 service distribute the Cloud PCs across all healthy regions within the chosen grouping to maximize reliability and availability. |
 | indonesia          | The region belongs to the region group: Indonesia.                                 |
 | taiwan             | The region belongs to the region group: Taiwan.                                    |
 | malaysia           | The region belongs to the region group: Malaysia.                                  |
@@ -96,7 +96,7 @@ Represents a supported region to establish an Azure network connection for Cloud
 
 | Member             | Description                                                                      |
 |:-------------------|:---------------------------------------------------------------------------------|
-| default            | Default. No valid region belongs to this value. Do not use.                      |
+| default            | The region belongs to the default geographic location.                           |
 | asia               | The region belongs to the geographic location: Asia.                             |
 | australasia        | The region belongs to the geographic location: Australasia.                      |
 | canada             | The region belongs to the geographic location: Canada.                           |
