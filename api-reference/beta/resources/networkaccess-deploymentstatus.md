@@ -1,14 +1,14 @@
 ---
-title: "Global secure access deploymentStatus resource type"
+title: "DeploymentStatus resource type"
 description: "Represents the status of a deployment performed through the Global Secure Access services"
-author: Gautham C A
-ms.date: 13/08/2025
+author: cagautham
+ms.date: 08/14/2025
 ms.localizationpriority: medium
 ms.subservice: entra-global-secure-access
 doc_type: resourcePageType
 ---
 
-# deploymentStatus resource type
+# DeploymentStatus resource type
 
 Namespace: microsoft.graph.networkaccess
 
@@ -41,3 +41,4 @@ The following JSON representation shows the resource type.
   "message": "String"
 }
 ```
+
