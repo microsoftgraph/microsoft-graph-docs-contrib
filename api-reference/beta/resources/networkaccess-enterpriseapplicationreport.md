@@ -21,7 +21,7 @@ Represents a Global Secure Access report with network traffic data and metadata 
 |Property|Type|Description|
 |:---|:---|:---|
 |accessType|microsoft.graph.networkaccess.accessType|The type of accessed application. The possible values are: `quickAccess`, `privateAccess`, `unknownFutureValue`, `appAccess`. Use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `appAccess`.|
-|applicationId|String|The unique identifier for the enterprise application in Entra.|
+|applicationId|String|The unique identifier for the enterprise application (`appId`) in Microsoft Entra ID.|
 |deviceCount|Int32|Number of devices that accessed this application.|
 |firstAccessDateTime|DateTimeOffset|Timestamp of the first access to the application.|
 |lastAccessDateTime|DateTimeOffset|Timestamp of the last access to the application.|
