@@ -86,6 +86,7 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled in In
 |statusDetail|[cloudPcStatusDetail](../resources/cloudpcstatusdetail.md)|Indicates the detailed status associated with Cloud PC, including error/warning code, error/warning message, additionalInformation. For example, `{ "code": "internalServerError", "message": "There was an error during the Cloud PC upgrade. Please contact support.", "additionalInformation": null }`. |
 |connectionSetting|[cloudPcConnectionSetting](../resources/cloudpcconnectionsetting.md)|The connection setting of the Cloud PC. Possible values: `enableSingleSignOn`. Read Only.|
 |userAccountType|[cloudPcUserAccountType](../resources/cloudpcorganizationsettings.md#cloudpcuseraccounttype-values)|The account type of the user on provisioned Cloud PCs. Possible values are: `standardUser`, `administrator`, `unknownFutureValue`.|
+|userExperienceType|[cloudPcUserExperienceType](../resources/cloudpcprovisioningpolicy.md#cloudpcuserexperiencetype-values)|Specifies the type of cloud object the end user can access. The possible values are: `cloudPc`, `cloudApp`, `unknownFutureValue`. When set to `cloudPc`, it indicates that the end user can access the entire desktop. When set to `cloudApp`, it indicates that the end user can only access cloud apps published under the associated provisioning policy. Since the cloud app experience also creates Cloud PC devices that appear in the Cloud PC device list, this property helps differentiate them. The default value is `cloudPc`. This property is defined in the provisioning policy.|
 |userPrincipalName|String|The user principal name (UPN) of the user assigned to the Cloud PC.|
 |statusDetails (deprecated)|[cloudPcStatusDetails](../resources/cloudpcstatusdetails.md)|The details of the Cloud PC status. For example, `{ "code": "internalServerError", "message": "There was an error during the Cloud PC upgrade. Please contact support.", "additionalInformation": null }`. This property is deprecated and will no longer be supported effective August 31, 2024. Use statusDetail instead.|
 
@@ -208,6 +209,7 @@ The following JSON representation shows the resource type.
   "sharedDeviceDetail": {"@odata.type": "microsoft.graph.cloudPcFrontlineSharedDeviceDetail"},
   "status": "String",
   "userAccountType": "String",
+  "userExperienceType": "String",
   "userPrincipalName": "String"
 }
 ```

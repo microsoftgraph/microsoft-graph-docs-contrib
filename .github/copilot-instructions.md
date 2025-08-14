@@ -24,6 +24,7 @@ This repository contains several types of files with different review requiremen
 ## General Review Guidelines
 - All files must be in lowercase; otherwise, the PR will be blocked from review and approval.
 - Include `Namespace: microsoft.graph*` immediately after the H1 title.
+- References to OData query parameters and supported operators should be formatted in Markdown code font, for example, `$filter`, `$filter` (`eq`), `$select`, `$expand`, `$top`, `$orderby`, `$search`
 
 ## API Reference Topics Review Guidelines
 

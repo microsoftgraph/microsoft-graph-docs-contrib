@@ -108,7 +108,7 @@ tools:
       imageSrc: ./images/hub/icon04-graphtoolkit.svg
       url: ./toolkit/overview.md
      # Card
-    - title: Templates
+    - title: IaC templates
       imageSrc: ./images/hub/icon02-quickstart.svg
       url: /graph/templates/
 
