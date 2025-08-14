@@ -157,7 +157,7 @@ Content-Type: application/json
         {
           "provider": "EntraID",
           "identifier": "69dfa3ea-1295-4e2c-b469-59564581143d",
-          "actions": ["disable"]
+          "actions": []
         },
         {
           "provider": "Okta",
@@ -168,3 +168,6 @@ Content-Type: application/json
     }
 }
 ```
+> [!NOTE] 
+> Actions related to Entra ID are not covered in the current scope.
+> 
