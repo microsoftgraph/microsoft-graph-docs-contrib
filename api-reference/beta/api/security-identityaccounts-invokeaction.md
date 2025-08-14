@@ -61,12 +61,10 @@ The following table lists the parameters that are required when you call this ac
 
 | Action Value             | Description                                                                                                                         | Supported identity providers   |
 |--------------------------|-------------------------------------------------------------------------------------------------------------------------------------|--------------------------------|
-| Disable                  | Disable account. The account is unable to authenticate. If the account recently logged in, it doesn't have access to resources. | `activeDirectory`, `entraID`, `okta` |
-| Enable                   | Enable account.                                                                                                                     | `activeDirectory`, `entraID`, `okta`          |
+| Disable                  | Disable account. The account is unable to authenticate. If the account recently logged in, it doesn't have access to resources. | `activeDirectory`, `okta` |
+| Enable                   | Enable account.                                                                                                                     | `activeDirectory``, `okta`          |
 | ForcePasswordReset       | Force password reset of the account.                                                                                                | `activeDirectory`                         |
-| RevokeAllSessions        | Revoke all of active sessions for the account.                                                                                      | `entraID`, `okta`                  |
-| RequireUserToSignInAgain | Require the user to sign in again.                                                                                                  | `entraID`                        |
-| MarkUserAsCompromised    | Mark the user as compromised.                                                                                                       | `entraID`                        |
+| RevokeAllSessions        | Revoke all of active sessions for the account.                                                                                      | `okta`                  |
 
 ## Response
 
@@ -89,7 +87,7 @@ Content-Type: application/json
 {
   "accountId": "256db173-930a-4991-9061-0d51a9a93ba5",
   "action": "disable",
-  "identityProvider": "ActiveDirectory"
+  "identityProvider": "activeDirectory"
 }
 ```
 
@@ -117,3 +115,7 @@ Content-Type: application/json
     }
 }
 ```
+
+> [!NOTE] 
+> Actions related to Entra ID are not covered in the current scope.
+> 
