@@ -73,7 +73,7 @@ If successful, this method returns a `201 Created` response code and a [fileStor
 ## Examples
 
 ### Request
-The following example shows how to create a trial [fileStorageContainerType](../resources/filestoragecontainertype.md).
+The following example shows how to create a trial [fileStorageContainerType](../resources/filestoragecontainertype.md) with a default allowed host URL that is allowed to embed the agent chat experience.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -91,7 +91,10 @@ Content-Type: application/json
   "settings": {
     "isItemVersioningEnabled": true,
     "isSharingRestricted": false,
-    "consumingTenantOverridables": "isSearchEnabled,itemMajorVersionLimit"
+    "consumingTenantOverridables": "isSearchEnabled,itemMajorVersionLimit",
+    "agent": {
+      "chatEmbedAllowedHosts": ["https://localhost:3000"]
+    }
   }
 }
 ```
@@ -153,7 +156,10 @@ Content-Type: application/json
     "itemMajorVersionLimit": 50,
     "maxStoragePerContainerInBytes": 104857600,
     "isSharingRestricted": false,
-    "consumingTenantOverridables": "isSearchEnabled,itemMajorVersionLimit"
+    "consumingTenantOverridables": "isSearchEnabled,itemMajorVersionLimit",
+    "agent": {
+      "chatEmbedAllowedHosts": ["https://localhost:3000"]
+    }
   }
 }
 ```

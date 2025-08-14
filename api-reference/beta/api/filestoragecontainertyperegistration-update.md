@@ -18,7 +18,7 @@ Update the properties of a [fileStorageContainerTypeRegistration](../resources/f
 
 > [!NOTE]
 > * [The settings in the fileStorageContainerType](../resources/filestoragecontainertypesettings.md) control which [settings](../resources/filestoragecontainertyperegistrationsettings.md) can be updated.
-> * The updated settings change the behavior of new **fileStorageContainer** objects, but existing containers might require their [settings](../resources/filestoragecontainer.md) to be updated directly. Some settings can't be updated at all. For example, changing storage capability.
+> * The updated settings change the behavior of new **fileStorageContainer** objects, but existing containers might require their [settings](../resources/filestoragecontainer.md) to be updated directly. Some settings can't be updated at all, e.g. changing storage capability. Agent related settings have the additional requirement of `.agent.chatEmbedAllowedHosts` host URLs being a subset of what is defined in the owning container type. Learn more about [SharePoint Embedded agent](/sharepoint/dev/embedded/development/declarative-agent/spe-da-adv)
 
 ETag is used for optimistic concurrency control. It must match the value from [Create](./filestorage-post-containertyperegistrations.md), [Get](./filestoragecontainertyperegistration-get.md) or the previous Update.
 

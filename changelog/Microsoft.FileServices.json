@@ -4447,6 +4447,40 @@
       "CreatedDateTime": "2025-07-22T18:23:42.5437381Z",
       "WorkloadArea": "Files",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "d279437f-b07f-4363-99ee-4ce0ba1a8a81",
+          "ApiChange": "Resource",
+          "ChangedApiName": "fileStorageContainerAgentSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [fileStorageContainerAgentSettings](https://learn.microsoft.com/en-us/graph/api/resources/fileStorageContainerAgentSettings?view=graph-rest-beta) resource.",
+          "Target": "fileStorageContainerAgentSettings"
+        },
+        {
+          "Id": "d279437f-b07f-4363-99ee-4ce0ba1a8a81",
+          "ApiChange": "Property",
+          "ChangedApiName": "agent",
+          "ChangeType": "Addition",
+          "Description": "Added the **agent** property to the [fileStorageContainerTypeRegistrationSettings](https://learn.microsoft.com/en-us/graph/api/resources/fileStorageContainerTypeRegistrationSettings?view=graph-rest-beta) resource.",
+          "Target": "fileStorageContainerTypeRegistrationSettings"
+        },
+        {
+          "Id": "d279437f-b07f-4363-99ee-4ce0ba1a8a81",
+          "ApiChange": "Property",
+          "ChangedApiName": "agent",
+          "ChangeType": "Addition",
+          "Description": "Added the **agent** property to the [fileStorageContainerTypeSettings](https://learn.microsoft.com/en-us/graph/api/resources/fileStorageContainerTypeSettings?view=graph-rest-beta) resource.",
+          "Target": "fileStorageContainerTypeSettings"
+        }
+      ],
+      "Id": "d279437f-b07f-4363-99ee-4ce0ba1a8a81",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-08-13T20:43:33.2529931Z",
+      "WorkloadArea": "Files",
+      "SubArea": ""
     }
   ]
 }
