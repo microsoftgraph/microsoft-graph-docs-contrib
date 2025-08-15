@@ -27,7 +27,7 @@ Namespace: microsoft.graph
 |Property|Type|Description|
 |:---|:---|:---|
 |calendarEventId|String| A unique identifier for a Calendar event to which the **checkInClaim** object is tied. For more, find iCalUId in [event](../resources/event.md). |
-|checkInMethod|checkInMethod| The method of checking in. The possible values are: , `manual` (manual check-ins to a building via Calendar/Teams/Places or a desk via email reminder), `inferred` (Wi-Fi, badging data or GPS signal based building check-ins), `verified` (check-ins via device bounded to a place), `unspecified`.|
+|checkInMethod|checkInMethod| The method of checking in. The possible values are: , `manual` (manual check-ins to a building via Calendar/Teams/Places or a desk via email reminder), `inferred` (Wi-Fi, badging data or GPS signal based building check-ins), `verified` (check-ins via device bounded to a place), `unspecified` (default value when no other check-in method is used; value other than unspecified is recommended).|
 |createdDateTime|DateTimeOffset| The date and time the **checkInClaim** object was created. In UTC timezone. |
 
 ## Relationships
