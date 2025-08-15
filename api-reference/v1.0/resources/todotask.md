@@ -53,6 +53,30 @@ This resource supports the following:
 |status|taskStatus|Indicates the state or progress of the task. Possible values are: `notStarted`, `inProgress`, `completed`, `waitingOnOthers`, `deferred`.|
 |title|String|A brief description of the task.|
 
+### Note on Task Export
+
+Tasks can be exported using the PST download described in [Export Content Search results from the Microsoft Purview portal](/purview/export-content-search-results). The following table describes the mapping between To Do Graph API properties and the properties in the exported PST file.
+
+|To Do Graph v1 Property|Property in PST|
+|:---|:---|
+|body | **Body**, if plain text<br>**BodyHtmlText**, if HTML<br>**BodyRtf**, if RTF |
+|bodyLastModifiedDateTime | **BodyLastModifiedTime** (named property – String `{6f305800-7b8b-41af-b73b-84de53a69d3d}` Name `BodyLastModifiedTime`) |
+|categories | **Categories** |
+|completedDateTime | **DateCompleted** |
+|createdDateTime | **CreationTime** |
+|dueDateTime | **DueDate** |
+|hasAttachments | **HasAttachments** |
+|id | **Id** |
+|importance | **Importance** |
+|isReminderOn | **IsReminderSet** |
+|lastModifiedDateTime | **LastModificationTime** |
+|recurrence | **RecurrencePattern**<br>**RecurrenceRange** |
+|reminderDateTime | **ReminderTime** |
+|startDateTime | **StartDate** |
+|status | **Status** |
+|title | **Subject** |
+
+
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
@@ -100,6 +124,7 @@ The following JSON representation shows the resource type.
   "bodyLastModifiedDateTime": "String (timestamp)"
 }
 ```
+
 
 
 
