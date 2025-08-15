@@ -45,11 +45,11 @@ PATCH /security/cases/ediscoveryCases/{ediscoveryCaseId}/settings
 
 |Property|Type|Description|
 |:---|:---|:---|
-|redundancyDetection|[microsoft.graph.security.redundancyDetectionSettings](../resources/security-redundancydetectionsettings.md)|Redundancy (email threading and near duplicate detection) settings for an eDiscovery case. Optional.|
-|topicModeling|[microsoft.graph.security.topicModelingSettings](../resources/security-topicmodelingsettings.md)|Topic modeling (Themes) settings for an eDiscovery case. Optional.|
-|ocr|[microsoft.graph.security.ocrSettings](../resources/security-ocrsettings.md)|The OCR (Optical Character Recognition) settings for the eDiscovery case. Optional.|
 |caseType|[microsoft.graph.security.caseType](../resources/security-ediscoverycasesettings.md#casetype-values)|The type of the eDiscovery case. Possible values are: `standard`, `premium`, `unknownFutureValue`.|
+|ocr|[microsoft.graph.security.ocrSettings](../resources/security-ocrsettings.md)|The OCR (Optical Character Recognition) settings for the eDiscovery case. Optional.|
+|redundancyDetection|[microsoft.graph.security.redundancyDetectionSettings](../resources/security-redundancydetectionsettings.md)|Redundancy (email threading and near duplicate detection) settings for an eDiscovery case. Optional.|
 |reviewSetSettings|[microsoft.graph.security.reviewSetSettings](../resources/security-ediscoverycasesettings.md#reviewsetsettings-values)|The review set settings for the case. Possible values are: `none`, `disableGrouping`, `unknownFutureValue`.|
+|topicModeling|[microsoft.graph.security.topicModelingSettings](../resources/security-topicmodelingsettings.md)|Topic modeling (Themes) settings for an eDiscovery case. Optional.|
 
 
 ## Response

@@ -28,12 +28,12 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
+|caseType|[microsoft.graph.security.caseType](#casetype-values)|The type of the eDiscovery case. Possible values are: `standard`, `premium`, `unknownFutureValue`.|
 |id|String|The ID of the eDiscovery case. Inherited from [entity](../resources/entity.md).|
 |ocr|[microsoft.graph.security.ocrSettings](../resources/security-ocrsettings.md)|The OCR (Optical Character Recognition) settings for the case.|
 |redundancyDetection|[microsoft.graph.security.redundancyDetectionSettings](../resources/security-redundancydetectionsettings.md)|The redundancy (near duplicate and email threading) detection settings for the case.|
-|topicModeling|[microsoft.graph.security.topicModelingSettings](../resources/security-topicmodelingsettings.md)|The Topic Modeling (Themes) settings for the case.|
-|caseType|[microsoft.graph.security.caseType](#casetype-values)|The type of the eDiscovery case. Possible values are: `standard`, `premium`, `unknownFutureValue`.|
 |reviewSetSettings|[microsoft.graph.security.reviewSetSettings](#reviewsetsettings-values)|The review set settings for the case. Possible values are: `none`, `disableGrouping`, `unknownFutureValue`.|
+|topicModeling|[microsoft.graph.security.topicModelingSettings](../resources/security-topicmodelingsettings.md)|The Topic Modeling (Themes) settings for the case.|
 
 ### caseType values
 |Name|Description|
