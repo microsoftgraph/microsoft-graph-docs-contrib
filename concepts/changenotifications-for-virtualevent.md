@@ -214,7 +214,7 @@ The following table indicates the supported notification and change types for th
 |:--------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------|:------------------|
 | [Webinar](/graph/api/resources/virtualeventwebinar)                       | `solutions/virtualEvents/webinars/{webinarId}`                                                 | created, updated  |
 | [Session](/graph/api/resources/virtualeventsession)                       | `solutions/virtualEvents/webinars/{webinarId}/sessions/{sessionId}`                            | created, updated  |
-| [Registration](/graph/api/resources/virtualeventregistration?view=graph-rest-1.0)               | `solutions/virtualEvents/webinars/{webinarId}/registrations/{registrationId}`                  | created, updated  |
+| [Registration](/graph/api/resources/virtualeventregistration)               | `solutions/virtualEvents/webinars/{webinarId}/registrations/{registrationId}`                  | created, updated  |
 | [Meeting Attendance Report](/graph/api/resources/meetingattendancereport) | `solutions/virtualEvents/webinars/{webinarId}/getAttendanceReports`                            | created           |
 | [Townhall](/graph/api/resources/virtualeventtownhall)                     | `solutions/virtualEvents/townhalls/{townhallId}`                                               | created, updated  |
 | [Session](/graph/api/resources/virtualeventsession)                       | `solutions/virtualEvents/townhalls/{townhallId}/sessions/{sessionId}`                          | created, updated  |
