@@ -24,7 +24,11 @@ The following tables show the least privileged permission or permissions require
 
 ### For entitlement management
 
-<!-- { "blockType": "permissions", "name": "approvalstep_get", "requestUrls": ["GET /identityGovernance/entitlementManagement/accessPackageAssignmentApprovals/{id}/steps/{id}"] } -->
+<!-- { 
+  "blockType": "permissions", 
+  "name": "approvalstep_get", 
+  "requestUrls": ["GET /identityGovernance/entitlementManagement/accessPackageAssignmentApprovals/{id}/steps/{id}"]
+ } -->
 [!INCLUDE [permissions-table](../includes/permissions/approvalstep-get-permissions.md)]
 
 [!INCLUDE [rbac-entitlement-catalog-reader](../includes/rbac-for-apis/rbac-entitlement-management-catalog-reader-apis-read.md)]
