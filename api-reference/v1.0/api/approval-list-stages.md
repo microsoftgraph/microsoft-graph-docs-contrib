@@ -25,22 +25,22 @@ The following tables show the least privileged permission or permissions require
 
 ### For entitlement management
 
-<!-- { "blockType": "permissions", "name": "approval_list_stages", "requestUrls": ["GET /identityGovernance/entitlementManagement/accessPackageAssignmentApprovals/{accessPackageAssignmentRequestId}/stages"] } -->
-|Permission type|Least privileged permissions|Higher privileged permissions|
-|:---|:---|:---|
-|Delegated (work or school account)|EntitlementManagement.Read.All|EntitlementManagement.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|Not supported.|Not supported.|
+<!-- { 
+  "blockType": "permissions", 
+  "name": "approval_list_stages", 
+  "requestUrls": ["GET /identityGovernance/entitlementManagement/accessPackageAssignmentApprovals/{accessPackageAssignmentRequestId}/stages"]
+ } -->
+[!INCLUDE [permissions-table](../includes/permissions/approval-list-stages-permissions.md)]
 
 [!INCLUDE [rbac-entitlement-catalog-reader](../includes/rbac-for-apis/rbac-entitlement-management-catalog-reader-apis-read.md)]
 
 ### For PIM for Groups
-<!-- { "blockType": "permissions", "name": "approval_list_stages_1", "requestUrls": ["GET /identityGovernance/privilegedAccess/group/assignmentApprovals/{privilegedaccessgroupassignmentschedulerequestId}/stages"] } -->
-|Permission type|Least privileged permissions|Higher privileged permissions|
-|:---|:---|:---|
-|Delegated (work or school account)|PrivilegedAssignmentSchedule.Read.AzureADGroup|PrivilegedAssignmentSchedule.ReadWrite.AzureADGroup|
-|Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|Not supported.|Not supported.|
+<!-- { 
+  "blockType": "permissions", 
+  "name": "approval_list_stages_2", 
+  "requestUrls": ["GET /identityGovernance/privilegedAccess/group/assignmentApprovals/{privilegedaccessgroupassignmentschedulerequestId}/stages"]
+ } -->
+[!INCLUDE [permissions-table](../includes/permissions/approval-list-stages-2-permissions.md)]
 
 ## HTTP request
 

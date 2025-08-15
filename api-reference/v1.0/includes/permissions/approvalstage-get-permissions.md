@@ -6,7 +6,7 @@ ms.localizationpriority: medium
 
 |Permission type|Least privileged permissions|Higher privileged permissions|
 |:---|:---|:---|
-|Delegated (work or school account)|CloudPC.Read.All|CloudPC.ReadWrite.All|
+|Delegated (work or school account)|EntitlementManagement.Read.All|EntitlementManagement.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|CloudPC.Read.All|CloudPC.ReadWrite.All|
+|Application|Not supported.|Not supported.|
 
