@@ -144,7 +144,7 @@ Use [delta query](delta-query-overview.md) to efficiently keep data up to date.
 
 Webhooks and delta query are often used better together, because if you use delta query alone, you need to figure out the right polling interval - too short and this leads to empty responses, which waste resources, too long and you end up with stale data. If you use webhook notifications as the trigger to make delta query calls, you get the best of both worlds.
 
-Use [webhook notifications](/graph/api/resources/change-notifications-api-overview?view=graph-rest-1.0) as the trigger to make delta query calls. You should also ensure that your application has a backstop polling threshold, in case no notifications are triggered.
+Use [webhook notifications](/graph/api/resources/change-notifications-api-overview) as the trigger to make delta query calls. You should also ensure that your application has a backstop polling threshold, in case no notifications are triggered.
 
 ### Batching
 
