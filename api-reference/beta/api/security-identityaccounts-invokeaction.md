@@ -58,11 +58,12 @@ The following table lists the parameters that are required when you call this ac
 |action|microsoft.graph.security.action|The type of action to perform on the account. The possible values are: `disable`, `enable`, `forcePasswordReset`, `revokeAllSessions`, `requireUserToSignInAgain`, `markUserAsCompromised`.|
 |identityProvider|microsoft.graph.security.identityProvider|The identity provider associated with the account. The possible values are: `entraID`, `activeDirectory`, `okta`.|
 
+The following table shows the identity providers supported for each **action** value type:
 
 |Action Value|Description|Supported identity providers|
 |:---|:---|:---|
 | Disable| Disable account. The account is unable to authenticate. If the account recently logged in, it doesn't have access to resources.| `activeDirectory`, `okta`|
-| Enable| Enable account.| `activeDirectory``, `okta`|
+| Enable| Enable account.| `activeDirectory`, `okta`|
 | ForcePasswordReset| Force password reset of the account.| `activeDirectory`|
 | RevokeAllSessions| Revoke all of active sessions for the account.| `okta`|
 
