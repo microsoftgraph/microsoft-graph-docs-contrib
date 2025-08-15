@@ -135,6 +135,7 @@ Content-Type: application/json
   "value": {
     "@odata.type": "#microsoft.graph.hardwareOathAuthenticationMethod",
     "id": "aad49556-####-####-####-############",
+    "lastUsedDateTime": "2022-11-06T23:16:12Z",
     "device": {
         "id": "aad49556-####-####-####-############",
         "displayName": "Amy Masters Token",
