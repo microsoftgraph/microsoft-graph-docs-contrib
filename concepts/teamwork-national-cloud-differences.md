@@ -70,7 +70,7 @@ This section describes implementation differences in the Microsoft Graph for the
 | **Team Membership**            |                                                          |
 Membership | Membership APIs to add and delete guests aren't supported.
 | **Change notifications**            |                                                          |
-[Change notifications](/graph/api/resources/webhooks) | Change notifications aren't supported for Microsoft Teams resources.
+[Change notifications](/graph/api/resources/change-notifications-api-overview) | Change notifications aren't supported for Microsoft Teams resources.
 | **Meeting AI insights**            |                                                          |
 |[List AI insights](/microsoft-365-copilot/extensibility/api-reference/onlinemeeting-list-aiinsights) | Not supported. |
 |[Get AI insight](/microsoft-365-copilot/extensibility/api-reference/callaiinsight-get) | Not supported. |
