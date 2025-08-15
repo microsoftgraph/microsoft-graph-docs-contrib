@@ -134,7 +134,7 @@ For some operations, such as PUT and PATCH (and in some cases POST), if your app
 
 If your application needs to know about changes to data, you can get a webhook notification whenever data of interest has changed. This is more efficient than simply polling regularly.
 
-Use [webhook notifications](/graph/api/resources/change-notifications-api-overview?view=graph-rest-1.0) to get push notifications when data changes.
+Use [webhook notifications](/graph/api/resources/change-notifications-api-overview) to get push notifications when data changes.
 
 If your application is required to cache or store Microsoft Graph data locally, and keep that data up to date, or track changes to data for any other reasons, you should use delta query. This avoids excessive computation by your application to retrieve data your application already has, minimize network traffic, and reduce the likelihood of reaching a throttling threshold.
 
