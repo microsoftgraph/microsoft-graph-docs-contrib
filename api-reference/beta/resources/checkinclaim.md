@@ -20,15 +20,25 @@ Namespace: microsoft.graph
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Create](../api/place-post-checkins.md)|[checkInClaim](../resources/checkinclaim.md)|Create a new checkInClaim object.|
+|[Create](../api/place-post-checkins.md)|[checkInClaim](../resources/checkinclaim.md)|Create a new [checkInClaim](../resources/checkinclaim.md) object.|
 |[Get](../api/checkinclaim-get.md)|[checkInClaim](../resources/checkinclaim.md)|Read the properties and relationships of [checkInClaim](../resources/checkinclaim.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|calendarEventId|String| A unique identifier for a Calendar event to which the **checkInClaim** object is tied. For more, find iCalUId in [event](../resources/event.md). |
-|checkInMethod|checkInMethod| The method of checking in. The possible values are: , `manual` (manual check-ins to a building via Calendar/Teams/Places or a desk via email reminder), `inferred` (Wi-Fi, badging data or GPS signal based building check-ins), `verified` (check-ins via device bounded to a place), `unspecified` (default value when no other check-in method is used; value other than unspecified is recommended).|
-|createdDateTime|DateTimeOffset| The date and time the **checkInClaim** object was created. In UTC timezone. |
+|calendarEventId|String| A unique identifier for an Outlook calendar event associated with the **checkInClaim** object. For more information, see the **iCalUId** property in [event](../resources/event.md). |
+|checkInMethod|[checkInMethod](../resources/checkinclaim.md#checkinmethod-values)| The method of checking in. The possible values are: `unspecified`, `manual`, `inferred`, `verified`, `unknownFutureValue`. The default value is `unspecified`.|
+|createdDateTime|DateTimeOffset| The date and time when the **checkInClaim** object was created. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. |
+
+### checkInMethod values 
+
+|Member|Description|
+|:---|:---|
+|unspecified| Default value when no other check-in method is used. We recommend that you use a value other than `unspecified`. |
+|manual| Manual check-ins to a building via Outlook calendar, Teams, Places, or to a desk via email reminder. |
+|inferred| Building check-ins based on wireless network, badging data, or GPS signal. |
+|verified| Check-ins via a device bound to a place. |
+|unknownFutureValue| Evolvable enumeration sentinel value. Don't use.  |
 
 ## Relationships
 None.
