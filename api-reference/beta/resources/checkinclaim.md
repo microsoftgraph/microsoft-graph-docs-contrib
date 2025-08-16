@@ -6,6 +6,7 @@ ms.date: 08/06/2025
 ms.localizationpriority: medium
 ms.subservice: "outlook"
 doc_type: resourcePageType
+toc.title: "Check-in claim"
 ---
 
 # checkInClaim resource type
