@@ -1,6 +1,6 @@
 ---
 title: "Get checkInClaim"
-description: "Read the properties and relationships of checkInClaim object."
+description: "Read the properties and relationships of a checkInClaim object."
 author: "shijieyao"
 ms.date: 08/06/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of [checkInClaim](../resources/checkinclaim.md) object. This API provides the check-in status for a specific place, such as a room, workspace, or desk, associated with a particular reservation.
+Read the properties and relationships of a [checkInClaim](../resources/checkinclaim.md) object. This API provides the check-in status for a specific place, such as a room, workspace, or desk, associated with a particular reservation.
 
 ## Permissions
 
