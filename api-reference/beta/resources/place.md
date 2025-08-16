@@ -50,7 +50,7 @@ Base type of [building](../resources/building.md), [desk](../resources/desk.md),
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|checkIns| quasi-collection of [checkInClaim](../resources/checkinclaim.md) | A subresource of a place object indicating the check-in status of a Calendar Event booked at the place |
+|checkIns| [checkInClaim](../resources/checkinclaim.md) collection | A subresource of a **place** object that indicates the check-in status of a calendar event booked at the place. |
 
 ## JSON representation
 The following JSON representation shows the resource type.
