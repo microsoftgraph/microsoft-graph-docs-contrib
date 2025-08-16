@@ -48,7 +48,7 @@ The following values are valid for the **format** parameter:
 
 | Format value | Description                        | Supported source extensions
 |:-------------|:-----------------------------------|----------------------------
-| pdf          | Converts the item into PDF format. | doc, docx, dot, dotx, dotm, dsn, dwg, eml, epub, fluidframework, form, htm, html, loop, loot, markdown, md, msg, note, odp, ods, odt, page, pps, ppsx, ppt, pptx, pulse, rtf, task, tif, tiff, whiteboard, wbtx, xls, xlsm, xlsx
+| pdf          | Converts the item into PDF format. | doc, docx, dot, dotx, dotm, dsn, dwg, eml, epub, fluidframework, form, htm, html, loop, loot, markdown, md, msg, note, odp, ods, odt, page, pps, ppsx, ppt, pptx, pulse, rtf, task, tif, tiff, wbtx, whiteboard, xls, xlsm, xlsx
 | html         | Converts the item into HTML format.| loop, fluid, wbtx
 
 ## Request headers
