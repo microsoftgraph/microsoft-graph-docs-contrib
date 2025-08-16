@@ -262,13 +262,13 @@
           "resources": [
             "place",
             "building",
+            "checkInClaim",
             "floor",
             "section",
             "desk",
             "room",
             "workspace",
-            "roomList",
-            "checkInClaim"
+            "roomList"
           ],
           "complexTypes": [
             "resourceLink",
