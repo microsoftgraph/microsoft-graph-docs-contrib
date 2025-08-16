@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This API provides the check-in status for a specific Place—such as a room, workspace or desk—associated with a particular reservation.
+Read the properties and relationships of [checkInClaim](../resources/checkinclaim.md) object. This API provides the check-in status for a specific place, such as a room, workspace, or desk, associated with a particular reservation.
 
 ## Permissions
 
@@ -69,7 +69,6 @@ The following example shows a request.
 GET https://graph.microsoft.com/beta/places/{placesId}/checkIns/{calendarEventId}
 ```
 
-
 ### Response
 
 The following example shows the response.
@@ -93,4 +92,3 @@ Content-Type: application/json
   }
 }
 ```
-
