@@ -268,8 +268,7 @@
             "room",
             "workspace",
             "roomList",
-            "checkInClaim",
-            "checkInMethod"
+            "checkInClaim"
           ],
           "complexTypes": [
             "resourceLink",
