@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [checkInClaim](../resources/checkinclaim.md) object. This API provides the check-in status for a specific place, such as a room, workspace, or desk, associated with a particular reservation.
+Read the properties and relationships of a [checkInClaim](../resources/checkinclaim.md) object. This API provides the check-in status for a specific place, such as a [desk](../resources/desk.md), [room](../resources/room.md), or [workspace](../resources/workspace.md), associated with a particular reservation.
 
 ## Permissions
 
