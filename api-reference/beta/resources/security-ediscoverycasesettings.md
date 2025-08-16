@@ -36,7 +36,8 @@ Inherits from [entity](../resources/entity.md).
 |topicModeling|[microsoft.graph.security.topicModelingSettings](../resources/security-topicmodelingsettings.md)|The Topic Modeling (Themes) settings for the case.|
 
 ### caseType values
-|Name|Description|
+
+|Member|Description|
 |:----|:----------|
 |standard      | Standard eDiscovery case for E3 tenants.|
 |premium    | Premium eDiscovery case with advanced features for E5 tenants.|
@@ -44,10 +45,10 @@ Inherits from [entity](../resources/entity.md).
 
 ### reviewSetSettings values
 
-|Name|Description|
+|Member|Description|
 |:----|:----------|
 |none      | No other options selected.|
-|disableGrouping    | Disable grouping control, and use the old view of UI.|
+|disableGrouping    | Disable the grouping control and use the old UI view.|
 |unknownFutureValue   | Evolvable enumeration sentinel value. Don't use. |
 
 ## Relationships
