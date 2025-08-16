@@ -766,12 +766,28 @@ items:
       href: ../../api/security-sensor-getdeploymentpackageuri.md
     - name: Regenerate deployment access key
       href: ../../api/security-sensor-regeneratedeploymentaccesskey.md
+  - name: Identity accounts
+    items:
+    - name: Identity accounts
+      href: ../../resources/security-identityaccounts.md
+    - name: List
+      href: ../../api/security-identitycontainer-list-identityaccounts.md
+    - name: Get
+      href: ../../api/security-identityaccounts-get.md
+    - name: invokeAction
+      href: ../../api/security-identityaccounts-invokeaction.md
+  - name: User
+    href: ../../resources/security-user.md
   - name: Complex types
     items:
+    - name: Account
+      href: ../../resources/security-account.md
     - name: Deployment access key type
       href: ../../resources/security-deploymentaccesskeytype.md
     - name: Identity container
       href: ../../resources/security-identitycontainer.md
+    - name: Invoke action result
+      href: ../../resources/security-invokeactionresult.md
     - name: Network adapter
       href: ../../resources/security-networkadapter.md
     - name: Sensor deployment package

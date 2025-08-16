@@ -28,15 +28,13 @@ The **place** object can be one of the following types:
 
 The listed resources are derived from the **place** object.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "place-get-permissions"
-}
--->
+<!-- { "blockType": "permissions", "name": "place_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/place-get-permissions.md)]
 
 ## HTTP request
@@ -73,6 +71,7 @@ If successful, this method returns a `200 OK` response code and a [place](../res
 The following example shows a request to get a [building](../resources/building.md). 
 #### Request
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_building"
@@ -81,6 +80,12 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/beta/places/ca147fcf-ae27-43bb-9d91-f11e626e58bf
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-building-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 The following example shows the response.
@@ -126,6 +131,7 @@ The following example shows a request to get a [floor](../resources/floor.md).
 #### Request
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_floor"
@@ -134,6 +140,12 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/beta/places/49558ad4-6ede-46d7-8254-3ca9f90fc4e2
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-floor-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 The following example shows the response.
@@ -163,6 +175,7 @@ The following example shows a request to get a [section](../resources/section.md
 #### Request
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "place_get_section"
@@ -171,6 +184,12 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/beta/places/ca163ae1-14a3-4e2a-8a97-5f82d672186f
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/place-get-section-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 The following example shows the response.
@@ -198,6 +217,7 @@ Content-Type: application/json
 The following example shows a request to get a [desk](../resources/desk.md).
 #### Request
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_desk"
@@ -206,6 +226,12 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/beta/places/df7dd4ef-04c4-41dd-816e-35475f4dd546
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-desk-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 The following example shows the response.
@@ -237,6 +263,7 @@ Content-Type: application/json
 The following example shows a request to get a [room](../resources/room.md).
 #### Request
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_room"
@@ -245,6 +272,12 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/beta/places/0be387a4-d53b-410f-9daf-f4fa07e5b05a
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-room-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 The following example shows the response.
@@ -277,6 +310,7 @@ Content-Type: application/json
 The following example shows a request to get a [workspace](../resources/workspace.md).
 #### Request
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_workspace"
@@ -285,6 +319,12 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/beta/places/ec10ce32-2065-40ba-aa2f-ecd5ea175420
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-workspace-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 The following example shows the response.
@@ -315,6 +355,7 @@ Content-Type: application/json
 The following example shows a request to get a [roomList](../resources/roomlist.md).
 #### Request
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_roomlist"
@@ -323,6 +364,12 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/beta/places/bldg1@contoso.com
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-roomlist-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 The following example shows the response.

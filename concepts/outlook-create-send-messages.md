@@ -96,7 +96,7 @@ You can:
 
 Take advantage of the following common capabilities that are shared among Microsoft Graph entities:
 
-- Subscribe to [change notifications](/graph/api/resources/webhooks) on messages when one or more types of changes occur, such as message creation or update.
+- Subscribe to [change notifications](/graph/api/resources/change-notifications-api-overview) on messages when one or more types of changes occur, such as message creation or update.
 - [Track incremental changes to messages in a folder](delta-query-messages.md).
 - Create [open extensions](extensibility-overview.md#open-extensions) or [schema extensions](extensibility-overview.md#schema-extensions) to add custom data to a message instance.
 - Create [extended properties](/graph/api/resources/extended-properties-overview) in a message instance to store custom data for Outlook MAPI properties, when these properties are not already exposed in the Microsoft Graph API metadata.
