@@ -67,18 +67,12 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.security.ediscoveryCaseSettings",
-  "id": "String (identifier)",
-  "redundancyDetection": {
-    "@odata.type": "microsoft.graph.security.redundancyDetectionSettings"
-  },
-  "topicModeling": {
-    "@odata.type": "microsoft.graph.security.topicModelingSettings"
-  },
-  "ocr": {
-    "@odata.type": "microsoft.graph.security.ocrSettings"
-  },
   "caseType": "String",
-  "reviewSetSettings": "String"
+  "id": "String (identifier)",
+  "ocr": {"@odata.type": "microsoft.graph.security.ocrSettings"},
+  "redundancyDetection": {"@odata.type": "microsoft.graph.security.redundancyDetectionSettings"},
+  "reviewSetSettings": "String",
+  "topicModeling": {"@odata.type": "microsoft.graph.security.topicModelingSettings"}
 }
 ```
 
