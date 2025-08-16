@@ -53,7 +53,7 @@ You can specify the following properties when you create a **checkInClaim**.
 |Property|Type|Description|
 |:---|:---|:---|
 |calendarEventId|String| The unique identifier for an Outlook calendar event associated with the **checkInClaim** object. For more information, see the **iCalUId** property in [event](../resources/event.md). Read-only. Required. |
-|checkInMethod|checkInMethod| Indicates the method of check-in. The possible values are: `unspecified`, `manual`, `inferred`, `verified`, `unknownFutureValue`. The default value is `unspecified`. Required.|
+|checkInMethod|[checkInMethod](../resources/checkinclaim.md#checkinmethod-values)| Indicates the method of check-in. The possible values are: `unspecified`, `manual`, `inferred`, `verified`, `unknownFutureValue`. The default value is `unspecified`. Required.|
 
 ## Response
 
