@@ -1,6 +1,6 @@
 ---
 title: "adhocCall resource type"
-description: "Contains information about an adhoc call."
+description: "Contains information about an ad hoc call."
 author: "kanchm"
 ms.date: 07/04/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Contains information about a call.
+Contains information about an ad hoc call.
 
 This resource supports subscribing to [change notifications](/graph/webhooks).
 
