@@ -21,7 +21,7 @@ Namespace: microsoft.graph
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Create](../api/place-post-checkins.md)|[checkInClaim](../resources/checkinclaim.md)|Create a new [checkInClaim](../resources/checkinclaim.md) object to record the check-in status for a specific place, such as a room, workspace, or desk, associated with a specific calendar reservation.|
+|[Create](../api/place-post-checkins.md)|[checkInClaim](../resources/checkinclaim.md)|Create a new [checkInClaim](../resources/checkinclaim.md) object to record the check-in status for a specific place, such as a [desk](../resources/desk.md), [room](../resources/room.md), or [workspace](../resources/workspace.md), associated with a specific calendar reservation.|
 |[Get](../api/checkinclaim-get.md)|[checkInClaim](../resources/checkinclaim.md)|Read the properties and relationships of a [checkInClaim](../resources/checkinclaim.md) object.|
 
 ## Properties
