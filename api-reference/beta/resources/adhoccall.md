@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Contains information about an ad hoc call.
 
-This resource supports subscribing to [change notifications](/graph/webhooks).
+This resource supports subscribing to [change notifications](/graph/change-notifications-overview).
 
 ## Properties
 
