@@ -225,9 +225,19 @@
           "ChangeType": "Addition",
           "Description": "Added the [identity](https://learn.microsoft.com/en-us/graph/api/resources/identity?view=graph-rest-beta) resource.",
           "Target": "identity"
-        },
+        }
+      ],
+      "Id": "6dc9f725-b820-4f19-a177-a01ff1a48090",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-08-06T01:41:37.6480761Z",
+      "WorkloadArea": "Calendar",
+      "SubArea": "Places"
+    },
+    {
+      "ChangeList": [
         {
-          "Id": "6dc9f725-b820-4f19-a177-a01ff1a48090",
+          "Id": "6364e2f8-0f15-4f27-9d4b-cab5710f9967",
           "ApiChange": "Enumeration",
           "ChangedApiName": "checkInMethod",
           "ChangeType": "Addition",
@@ -235,15 +245,15 @@
           "Target": "checkInMethod"
         },
         {
-          "Id": "6dc9f725-b820-4f19-a177-a01ff1a48090",
+          "Id": "6364e2f8-0f15-4f27-9d4b-cab5710f9967",
           "ApiChange": "Resource",
           "ChangedApiName": "checkInClaim",
           "ChangeType": "Addition",
-          "Description": "Added the [checkInClaim](https://learn.microsoft.com/en-us/graph/api/resources/checkInClaim?view=graph-rest-beta) resource.",
+          "Description": "Added the [checkInClaim](https://learn.microsoft.com/en-us/graph/api/resources/checkInClaim?view=graph-rest-beta) resource and associated methods.",
           "Target": "checkInClaim"
         },
         {
-          "Id": "6dc9f725-b820-4f19-a177-a01ff1a48090",
+          "Id": "6364e2f8-0f15-4f27-9d4b-cab5710f9967",
           "ApiChange": "Relationship",
           "ChangedApiName": "checkIns",
           "ChangeType": "Addition",
@@ -251,7 +261,7 @@
           "Target": "place"
         }
       ],
-      "Id": "6dc9f725-b820-4f19-a177-a01ff1a48090",
+      "Id": "6364e2f8-0f15-4f27-9d4b-cab5710f9967",
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2025-08-06T01:41:37.6480761Z",
