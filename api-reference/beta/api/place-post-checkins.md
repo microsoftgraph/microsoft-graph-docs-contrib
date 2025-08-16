@@ -1,6 +1,6 @@
 ---
 title: "Create checkInClaim"
-description: "Create a new checkInClaim object."
+description: "Create a new checkInClaim object to record the check-in status for a specific place, such as a room, workspace, or desk, associated with a specific calendar reservation."
 author: "shijieyao"
 ms.date: 08/06/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a check-in status for a specific Place— such as a room, workspace or desk— for a specific calendar reservation. This check-in confirms that the reserved space is in use and prevents automatic release if auto-release policies are configured for that Place.
+Create a new [checkInClaim](../resources/checkinclaim.md) object to record the check-in status for a specific place, such as a room, workspace, or desk, associated with a specific calendar reservation. This check-in confirms that the reserved space is in use and prevents automatic release if auto-release policies are configured for that place.
 
 ## Permissions
 
@@ -48,14 +48,12 @@ POST /places/{placesId}/checkIns
 
 In the request body, supply a JSON representation of the [checkInClaim](../resources/checkinclaim.md) object.
 
-You can specify the following properties when creating a **checkInClaim**.
+You can specify the following properties when you create a **checkInClaim**.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|calendarEventId|String| A unique identifier for a Calendar event. For more find iCalUId in [event](../resources/event.md). Read-only. Required. |
-|checkInMethod|checkInMethod| Indicates the method of check-in. The possible values are: `unspecified`, `manual`, `inferred`, `verified`, `unknownFutureValue`. Required.|
-
-
+|calendarEventId|String| The unique identifier for an Outlook calendar event associated with the **checkInClaim** object. For more information, see the **iCalUId** property in [event](../resources/event.md). Read-only. Required. |
+|checkInMethod|checkInMethod| Indicates the method of check-in. The possible values are: `unspecified`, `manual`, `inferred`, `verified`, `unknownFutureValue`. The default value is `unspecified`. Required.|
 
 ## Response
 
@@ -82,7 +80,6 @@ Content-Type: application/json
 }
 ```
 
-
 ### Response
 
 The following example shows the response.
@@ -104,4 +101,3 @@ Content-Type: application/json
   "createdDateTime": "2025-06-28T12:34:56.789Z"
 }
 ```
-
