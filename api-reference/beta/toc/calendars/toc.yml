@@ -288,6 +288,10 @@ items:
       href: ../../api/place-delete.md
     - name: Descendants
       href: ../../api/place-descendants.md
+    - name: Get check-in claim
+      href: ../../api/checkinclaim-get.md
+    - name: Create check-in claim
+      href: ../../api/place-post-checkins.md
   - name: Building
     href: ../../resources/building.md
   - name: Floor
@@ -310,6 +314,14 @@ items:
       href: ../../api/place-get.md
     - name: Update place
       href: ../../api/place-update.md
+  - name: Check in claim
+    items:
+    - name: Check in claim
+      href: ../../resources/checkinclaim.md
+    - name: Create
+      href: ../../api/place-post-checkins.md
+    - name: Get
+      href: ../../api/checkinclaim-get.md
   - name: Devices (preview)
     items:
     - name: Workplace sensor device
