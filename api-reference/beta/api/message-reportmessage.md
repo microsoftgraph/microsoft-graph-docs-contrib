@@ -35,6 +35,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 ``` http
 POST /me/messages/{messageId}/reportMessage
+POST /users/{userId}/messages/{messageId}/reportMessage
 ```
 
 ## Request headers
