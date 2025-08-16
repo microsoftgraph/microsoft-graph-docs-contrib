@@ -4,7 +4,7 @@ description: "**TODO: Add Description**"
 author: "shijieyao"
 ms.date: 08/06/2025
 ms.localizationpriority: medium
-ms.subservice:
+ms.subservice: "outlook"
 doc_type: resourcePageType
 ---
 
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Create](../api/place-post-checkins.md)|[checkInClaim](../resources/checkinclaim.md)|Create a new [checkInClaim](../resources/checkinclaim.md) object.|
+|[Create](../api/place-post-checkins.md)|[checkInClaim](../resources/checkinclaim.md)|Create a new [checkInClaim](../resources/checkinclaim.md) object to record the check-in status for a specific place, such as a room, workspace, or desk, associated with a specific calendar reservation.|
 |[Get](../api/checkinclaim-get.md)|[checkInClaim](../resources/checkinclaim.md)|Read the properties and relationships of [checkInClaim](../resources/checkinclaim.md) object.|
 
 ## Properties
