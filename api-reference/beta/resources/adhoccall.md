@@ -22,7 +22,7 @@ This resource supports subscribing to [change notifications](/graph/webhooks).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The default ID associated with the call. Read-only.|
+|id|String|The unique identifier for the ad hoc call. Read-only.|
 
 ## Relationships
 
