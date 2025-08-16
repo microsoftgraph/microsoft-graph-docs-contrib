@@ -3071,7 +3071,7 @@
           ],
           "childNodes": [
             {
-              "name": "Ad hoc Calls",
+              "name": "Ad hoc calls",
               "resources": [
                 "adhocCall"
               ]
