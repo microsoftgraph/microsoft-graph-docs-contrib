@@ -36,12 +36,11 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ``` http
 GET /places/{buildingPlaceId}/microsoft.graph.building/map
 ```
-
-{buildingPlaceId} - **PlaceID** of the building with which this map is associated
+> **Note:** `{buildingPlaceId}` is the unique **placeId** of the [building](../resources/building.md) linked to this map in Places.
 
 ## Optional query parameters
 
-This method supports the `$select` query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -71,7 +70,6 @@ The following example shows a request.
 GET https://graph.microsoft.com/beta/places/30ca79af-ecb7-46c2-a14b-afe264a91543/microsoft.graph.building/map
 ```
 
-
 ### Response
 
 The following example shows the response.
@@ -86,6 +84,28 @@ The following example shows the response.
 HTTP/1.1 200 OK
 Content-Type: application/json
 
-{ "placeId": "30ca79af-ecb7-46c2-a14b-afe264a91543", "id": "26f04b4f-9ae2-45e3-99d1-393c66d58eb4", "properties": "{"id":"26f04b4f-9ae2-45e3-99d1-393c66d58eb4","type":"Feature","feature_type":"building","geometry":null,"properties":{"name":{"en":"San Jose McEnery Convention Center"},"address_id":"e105efb7-b0d1-4144-8b8e-72eadf95724f","display_point":{"type":"Point","coordinates":[-121.889164,37.32925]}"}}" }
+{
+  "placeId": "30ca79af-ecb7-46c2-a14b-afe264a91543",
+  "id": "26f04b4f-9ae2-45e3-99d1-393c66d58eb4",
+  "properties": {
+    "id": "26f04b4f-9ae2-45e3-99d1-393c66d58eb4",
+    "type": "Feature",
+    "feature_type": "building",
+    "geometry": null,
+    "properties": {
+      "name": {
+        "en": "San Jose McEnery Convention Center"
+      },
+      "address_id": "e105efb7-b0d1-4144-8b8e-72eadf95724f",
+      "display_point": {
+        "type": "Point",
+        "coordinates": [
+          -121.889164,
+          37.32925
+        ]
+      }
+    }
+  }
+}
 ```
 
