@@ -1,6 +1,6 @@
 ---
 title: "Delete buildingMap"
-description: "Delete a buildingMap object."
+description: "Delete the map of a specific building."
 author: tiwarisakshi02
 ms.date: 06/12/2025
 ms.localizationpriority: medium
@@ -25,7 +25,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "name": "building-delete-map-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/building-delete-map-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/buildingmap-delete-permissions.md)]
 
 ## HTTP request
 
@@ -36,8 +36,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ``` http
 DELETE /places/{buildingPlaceId}/microsoft.graph.building/map
 ```
-
-{buildingPlaceId} - **PlaceID** of the building in Places with which this map is associated
+> **Note:** `{buildingPlaceId}` is the unique **placeId** of the [building](../resources/building.md) linked to this map in Places.
 
 ## Request headers
 
