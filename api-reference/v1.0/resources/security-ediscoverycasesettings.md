@@ -32,11 +32,12 @@ Inherits from [entity](../resources/entity.md).
 |id|String|The ID of the eDiscovery case. Inherited from [entity](../resources/entity.md).|
 |ocr|[microsoft.graph.security.ocrSettings](../resources/security-ocrsettings.md)|The OCR (Optical Character Recognition) settings for the case.|
 |redundancyDetection|[microsoft.graph.security.redundancyDetectionSettings](../resources/security-redundancydetectionsettings.md)|The redundancy (near duplicate and email threading) detection settings for the case.|
-|reviewSetSettings|[microsoft.graph.security.reviewSetSettings](#reviewsetsettings-values)|The review set settings for the case. Possible values are: `none`, `disableGrouping`, `unknownFutureValue`.|
+|reviewSetSettings|[microsoft.graph.security.reviewSetSettings](#reviewsetsettings-values)|The settings of the review set for the case. Possible values are: `none`, `disableGrouping`, `unknownFutureValue`.|
 |topicModeling|[microsoft.graph.security.topicModelingSettings](../resources/security-topicmodelingsettings.md)|The Topic Modeling (Themes) settings for the case.|
 
 ### caseType values
-|Name|Description|
+
+|Member|Description|
 |:----|:----------|
 |standard      | Standard eDiscovery case for E3 tenants.|
 |premium    | Premium eDiscovery case with advanced features for E5 tenants.|
@@ -44,10 +45,10 @@ Inherits from [entity](../resources/entity.md).
 
 ### reviewSetSettings values
 
-|Name|Description|
+|Member|Description|
 |:----|:----------|
 |none      | No other options selected.|
-|disableGrouping    | Disable grouping control, and use the old view of UI.|
+|disableGrouping    | Disable the grouping control and use the old UI view.|
 |unknownFutureValue   | Evolvable enumeration sentinel value. Don't use. |
 
 ## Relationships
@@ -66,18 +67,12 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.security.ediscoveryCaseSettings",
-  "id": "String (identifier)",
-  "redundancyDetection": {
-    "@odata.type": "microsoft.graph.security.redundancyDetectionSettings"
-  },
-  "topicModeling": {
-    "@odata.type": "microsoft.graph.security.topicModelingSettings"
-  },
-  "ocr": {
-    "@odata.type": "microsoft.graph.security.ocrSettings"
-  },
   "caseType": "String",
-  "reviewSetSettings": "String"
+  "id": "String (identifier)",
+  "ocr": {"@odata.type": "microsoft.graph.security.ocrSettings"},
+  "redundancyDetection": {"@odata.type": "microsoft.graph.security.redundancyDetectionSettings"},
+  "reviewSetSettings": "String",
+  "topicModeling": {"@odata.type": "microsoft.graph.security.topicModelingSettings"}
 }
 ```
 
