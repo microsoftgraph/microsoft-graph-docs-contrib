@@ -11,7 +11,7 @@ ms.topic: how-to
 
 # Get change notifications for Microsoft Teams virtual event updates
 
-Change notifications in Microsoft Graph support subscriptions to virtual events. Change notifications provide a low-latency model by allowing you to maintain a webhook to Microsoft Teams virtual events. Virtual event subscriptions have a maximum period of a day. To extend the lifetime of a subscription, the subscription must be renewed before the expiry period. Alternatively, a user might decide to create a new subscription for the resource after the expiry of an existing subscription. For more information, see [Use the Microsoft Graph API to get change notifications](/graph/api/resources/webhooks).
+Change notifications in Microsoft Graph support subscriptions to virtual events. Change notifications provide a low-latency model by allowing you to maintain a webhook to Microsoft Teams virtual events. Virtual event subscriptions have a maximum period of a day. To extend the lifetime of a subscription, the subscription must be renewed before the expiry period. Alternatively, a user might decide to create a new subscription for the resource after the expiry of an existing subscription. For more information, see [Use the Microsoft Graph API to get change notifications](/graph/api/resources/change-notifications-api-overview).
 
 ## Permissions
 
@@ -214,7 +214,7 @@ The following table indicates the supported notification and change types for th
 |:--------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------|:------------------|
 | [Webinar](/graph/api/resources/virtualeventwebinar)                       | `solutions/virtualEvents/webinars/{webinarId}`                                                 | created, updated  |
 | [Session](/graph/api/resources/virtualeventsession)                       | `solutions/virtualEvents/webinars/{webinarId}/sessions/{sessionId}`                            | created, updated  |
-| [Registration](/graph/api/resources/virtualeventregistrant)               | `solutions/virtualEvents/webinars/{webinarId}/registrations/{registrationId}`                  | created, updated  |
+| [Registration](/graph/api/resources/virtualeventregistration)               | `solutions/virtualEvents/webinars/{webinarId}/registrations/{registrationId}`                  | created, updated  |
 | [Meeting Attendance Report](/graph/api/resources/meetingattendancereport) | `solutions/virtualEvents/webinars/{webinarId}/getAttendanceReports`                            | created           |
 | [Townhall](/graph/api/resources/virtualeventtownhall)                     | `solutions/virtualEvents/townhalls/{townhallId}`                                               | created, updated  |
 | [Session](/graph/api/resources/virtualeventsession)                       | `solutions/virtualEvents/townhalls/{townhallId}/sessions/{sessionId}`                          | created, updated  |
