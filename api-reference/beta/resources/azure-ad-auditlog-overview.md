@@ -21,13 +21,16 @@ Microsoft Entra provides an audit trail of all user and app activity in your ten
 
 ## What are activity reports?
 
-Microsoft Entra provides four types of activity reports:
+Microsoft Entra provides eight types of activity reports:
 
 - Directory audit logs
 - Custom security attribute audit logs
 - Self-service sign-ups (Microsoft Entra External ID)
 - Sign-ins
 - Provisioning
+- Audit Activity Types
+- Sign In Events App Summary
+- Sign In Events Summary
 
 ## Available audit logs
 
@@ -65,6 +68,18 @@ The [provisioning logs](../resources/provisioningobjectsummary.md) help you see 
 - What roles were imported from Amazon Web Services?
 - What users were unsuccessfully created from Workday?
 
+### Audit Activity Types
+
+The [auditActivityType](../resources/auditactivitytype.md) provide you with a list of all available audit activity types and their corresponding service and category.
+
+### Sign In Events App Summary
+
+The [signInEventsAppActivity](../resources/signineventsappactivity.md) helps you see the total number of sign in events that have occurred for a specific application in the past 30 days.
+
+### Sign In Events Summary
+
+The [signInEventsActivity](../resources/signineventsactivity.md) helps you see the total number of sign in events that have occurred for a specific day.
+
 ## What can I do with activity reports in Microsoft Graph?
 
 Here are popular requests for working with report data:
@@ -76,7 +91,9 @@ Operation | URL
 |GET tenant user sign-ins | [https://graph.microsoft.com/beta/auditLogs/signIns](https://developer.microsoft.com/graph/graph-explorer?request=auditLogs/signIns&version=beta)
 |GET provisioning logs | [https://graph.microsoft.com/beta/auditLogs/provisioning](https://developer.microsoft.com/graph/graph-explorer?request=auditLogs/Provisioning&version=beta)
 |GET tenant user (self-service) sign-ups | [https://graph.microsoft.com/beta/auditLogs/signUps](https://developer.microsoft.com/graph/graph-explorer?request=auditLogs/signUps&version=beta)
-
+|GET audit activity types | [https://graph.microsoft.com/beta/auditLogs/auditActivityTypes](https://developer.microsoft.com/graph/graph-explorer?request=auditLogs/auditActivityTypes&version=beta)
+|GET sign in events app summary | [https://graph.microsoft.com/beta/auditLogs/signInEventsAppSummary](https://developer.microsoft.com/graph/graph-explorer?request=auditLogs/signInEventsAppSummary&version=beta)
+|GET sign in events summary | [https://graph.microsoft.com/beta/auditLogs/signInEventsSummary](https://developer.microsoft.com/graph/graph-explorer?request=auditLogs/signInEventsSummary&version=beta)
 
 ## License requirements
 

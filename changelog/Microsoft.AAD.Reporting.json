@@ -3776,7 +3776,64 @@
       "CreatedDateTime": "2025-07-31T14:44:53.5395251Z",
       "WorkloadArea": "Reports",
       "SubArea": "Identity and access reports"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "9d1e8041-4099-464b-a094-0646b81efc01",
+          "ApiChange": "Resource",
+          "ChangedApiName": "auditActivityType",
+          "ChangeType": "Addition",
+          "Description": "Added the [auditActivityType](https://learn.microsoft.com/en-us/graph/api/resources/auditActivityType?view=graph-rest-beta) resource.",
+          "Target": "auditActivityType"
+        },
+        {
+          "Id": "9d1e8041-4099-464b-a094-0646b81efc01",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "auditActivityTypes",
+          "ChangeType": "Addition",
+          "Description": "Added the **auditActivityTypes** relationship to the [auditLogRoot](https://learn.microsoft.com/en-us/graph/api/resources/auditLogRoot?view=graph-rest-beta) resource.",
+          "Target": "auditLogRoot"
+        },
+        {
+          "Id": "9d1e8041-4099-464b-a094-0646b81efc01",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "signInEventsAppSummary",
+          "ChangeType": "Addition",
+          "Description": "Added the **signInEventsAppSummary** relationship to the [auditLogRoot](https://learn.microsoft.com/en-us/graph/api/resources/auditLogRoot?view=graph-rest-beta) resource.",
+          "Target": "auditLogRoot"
+        },
+        {
+          "Id": "9d1e8041-4099-464b-a094-0646b81efc01",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "signInEventsSummary",
+          "ChangeType": "Addition",
+          "Description": "Added the **signInEventsSummary** relationship to the [auditLogRoot](https://learn.microsoft.com/en-us/graph/api/resources/auditLogRoot?view=graph-rest-beta) resource.",
+          "Target": "auditLogRoot"
+        },
+        {
+          "Id": "9d1e8041-4099-464b-a094-0646b81efc01",
+          "ApiChange": "Resource",
+          "ChangedApiName": "signInEventsActivity",
+          "ChangeType": "Addition",
+          "Description": "Added the [signInEventsActivity](https://learn.microsoft.com/en-us/graph/api/resources/signInEventsActivity?view=graph-rest-beta) resource.",
+          "Target": "signInEventsActivity"
+        },
+        {
+          "Id": "9d1e8041-4099-464b-a094-0646b81efc01",
+          "ApiChange": "Resource",
+          "ChangedApiName": "signInEventsAppActivity",
+          "ChangeType": "Addition",
+          "Description": "Added the [signInEventsAppActivity](https://learn.microsoft.com/en-us/graph/api/resources/signInEventsAppActivity?view=graph-rest-beta) resource.",
+          "Target": "signInEventsAppActivity"
+        }
+      ],
+      "Id": "9d1e8041-4099-464b-a094-0646b81efc01",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-08-13T20:40:36.754886Z",
+      "WorkloadArea": "Reports",
+      "SubArea": "Identity and access reports"
     }
-
   ]
 }

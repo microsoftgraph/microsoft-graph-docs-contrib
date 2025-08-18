@@ -378,6 +378,24 @@ items:
         href: ../../api/signin-confirmsafe.md
       - name: Dismiss
         href: ../../api/signin-dismiss.md
+    - name: Audit Activity Type
+      items:
+      - name: Audit Activity Type
+        href: ../../resources/auditactivitytype.md
+      - name: List
+        href: ../../api/auditlogroot-list-auditactivitytypes.md
+    - name: Sign In Events App Summary
+      items:
+      - name: Sign In Events App Summary
+        href: ../../resources/signineventsappactivity.md
+      - name: List
+        href: ../../api/auditlogroot-list-signineventsappsummary.md
+    - name: Sign In Events Activity
+      items:
+      - name: Sign In Events Activity
+        href: ../../resources/signineventsactivity.md
+      - name: List
+        href: ../../api/auditlogroot-list-signineventssummary.md
 - name: Microsoft 365 monitoring reports (preview)
   items:
   - name: Overview
