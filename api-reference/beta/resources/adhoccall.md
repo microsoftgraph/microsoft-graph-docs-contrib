@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Contains information about an ad hoc call.
+Contains information about an ad hoc call including PSTN, 1:1 and group call.
 
 This resource supports subscribing to [change notifications](/graph/change-notifications-overview).
 
@@ -23,7 +23,7 @@ This resource supports subscribing to [change notifications](/graph/change-notif
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The unique identifier for the ad hoc call. Read-only.|
+|id|String|The unique identifier for the ad hoc call including PSTN, 1:1 and group call. Read-only.|
 
 ## Relationships
 

@@ -991,8 +991,8 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Category | Application | Delegated |
 |--|--|--|
 | Identifier | ce8fb1f1-5e1f-44a0-b102-4ec28454d0dc | 63d31bd6-bcf5-40ca-8283-ba4130a66405 |
-| DisplayText | Read all recordings of calls. | Read all recordings of calls. |
-| Description | Allows the app to read all recordings of all calls, without a signed-in user. | Allows the app to read all recordings of calls, on behalf of the signed-in user. |
+| DisplayText | Read all call recordings | Read all recordings of calls. |
+| Description | Allows the app to read call recordings for all calls without a signed-in user. | Allows the app to read all recordings of calls, on behalf of the signed-in user. |
 | AdminConsentRequired | Yes | Yes |
 
 ---
