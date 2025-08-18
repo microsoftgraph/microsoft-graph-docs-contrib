@@ -1,6 +1,6 @@
 ---
 title: "cloudApplicationReport resource type"
-description: "Represents a report with network traffic data and metadata of a catalog application."
+description: "Represents a Global Secure Access report with network traffic data and metadata of a catalog application. "
 author: "miritsadon"
 ms.date: 08/10/2025
 ms.localizationpriority: medium
