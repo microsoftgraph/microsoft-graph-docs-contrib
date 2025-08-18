@@ -111,7 +111,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 The following example shows how to get all the [building](../resources/building.md) objects in the tenant.
 
->**Note**: The resourceLinks property of [building](../resources/building.md) may lead to perf issue when listing buildings, which can be mitigated by excluding the property using `$select` query parameter.
+>**Note**: The **resourceLinks** property of the [building](../resources/building.md) resource might cause performance issues when you list buildings. You can mitigate this issue by excluding the property using the `$select` query parameter.
 
 #### Request
 
