@@ -210,9 +210,9 @@ items:
       href: ../../api/presence-clearuserpreferredpresence.md
     - name: Set user status message
       href: ../../api/presence-setstatusmessage.md
-  - name: Ad hoc calls
+  - name: Ad hoc call
     items:
-    - name: Adhoc call
+    - name: Ad hoc call (preview)
       href: ../../resources/adhoccall.md
   - name: Calls
     items:
