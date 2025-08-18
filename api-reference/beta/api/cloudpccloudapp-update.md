@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Update the properties of a [cloudPcCloudApp](../resources/cloudpccloudapp.md) object, such as the display name or icon path.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 

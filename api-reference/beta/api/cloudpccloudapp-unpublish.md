@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Unpublish a [cloudPcCloudApp](../resources/cloudpccloudapp.md) to remove it from the end-user portal, for example, the Windows App. When a cloud app is unpublished, any changes made to its app details are reverted and reset to the values of the discovered app it's linked to.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 

@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Read the properties of a specific [cloudPcCloudApp](../resources/cloudpccloudapp.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
