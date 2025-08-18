@@ -1,6 +1,6 @@
 ---
 title: "cloudPC: getCloudPcLaunchInfo"
-description: "Get the launch information for a specific Cloud PC."
+description: "Get the cloudPCLaunchInfo for a specific cloudPC that belongs to the current signed-in user."
 author: "andrewku0409"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the [cloudPCLaunchInfo](../resources/cloudpclaunchinfo.md) for a specific [cloudPC](../resources/cloudpc.md).
+Get the [cloudPCLaunchInfo](../resources/cloudpclaunchinfo.md) for a specific [cloudPC](../resources/cloudpc.md) that belongs to the current signed-in user.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -37,11 +37,14 @@ GET /me/cloudPCs/{cloudPCId}/getCloudPcLaunchInfo
 GET /users/{userId}/cloudPCs/{id}/getCloudPcLaunchInfo
 ```
 
-To get the [cloudPCLaunchInfo](../resources/cloudpclaunchinfo.md) for a specific [cloudPC](../resources/cloudpc.md) in the organization, using either delegated permission (the signed-in user should be the administrator) or application permission:
+To get the [cloudPCLaunchInfo](../resources/cloudpclaunchinfo.md) for a specific [cloudPC](../resources/cloudpc.md) in the organization using delegated permission (the signed-in user should be the administrator):
 
 ``` http
 GET /deviceManagement/virtualEndpoint/cloudPCs/{cloudPCId}/getCloudPcLaunchInfo
 ```
+
+> [!CAUTION]
+> The `/deviceManagement/virtualEndpoint/cloudPCs/{cloudPCId}/getCloudPcLaunchInfo` endpoint is deprecated and will stop returning data on October 30, 2025.
 
 ## Request headers
 |Name|Description|

@@ -239,7 +239,7 @@ items:
       href: toolkit/permissions.md
     - name: Upgrade to the latest version
       href: toolkit/upgrade.md
-  - name: Deploy with Bicep
+  - name: Deploy in IaC with templates
     href: /graph/templates?toc=/graph/toc.json
 - name: Services and features
   expanded: true
@@ -1100,8 +1100,10 @@ items:
         href: teams-changenotifications-chatmessage.md
       - name: Chat membership
         href: teams-changenotifications-chatmembership.md
-      - name: Team and channel membership
+      - name: Team membership
         href: teams-changenotifications-teammembership.md
+      - name: Channel membership
+        href: teams-changenotifications-channelmembership.md
       - name: Teams and channels
         href: teams-changenotifications-team-and-channel.md
       - name: Teams app installation

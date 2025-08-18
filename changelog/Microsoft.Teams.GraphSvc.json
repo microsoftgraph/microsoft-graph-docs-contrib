@@ -2596,7 +2596,7 @@
     },
     {
       "ChangeList": [
-        {          
+        {
           "Id": "a4f30f3d-c27f-47d7-954b-4536991308c0",
           "ApiChange": "Enumeration",
           "ChangedApiName": "aiInteractionType",
@@ -2673,7 +2673,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getAllEnterpriseInteractions",
           "ChangeType": "Addition",
-          "Description": "Added the [getAllEnterpriseInteractions](https://learn.microsoft.com/en-us/graph/api/aiInteractionHistory-getAllEnterpriseInteractions?view=graph-rest-beta) method to the [aiInteractionHistory](https://learn.microsoft.com/en-us/graph/api/resources/aiInteractionHistory?view=graph-rest-beta) resource.",
+          "Description": "Added the [getAllEnterpriseInteractions](https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/api-reference/aiInteractionHistory-getAllEnterpriseInteractions?view=graph-rest-beta) method to the [aiInteractionHistory](https://learn.microsoft.com/en-us/graph/api/resources/aiInteractionHistory?view=graph-rest-beta) resource.",
           "Target": "aiInteractionHistory"
         }
       ],
@@ -3011,7 +3011,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getAllEnterpriseInteractions",
           "ChangeType": "Addition",
-          "Description": "Added the [getAllEnterpriseInteractions](https://learn.microsoft.com/en-us/graph/api/aiInteractionHistory-getAllEnterpriseInteractions?view=graph-rest-1.0) method to the [aiInteractionHistory](https://learn.microsoft.com/en-us/graph/api/resources/aiInteractionHistory?view=graph-rest-1.0) resource.",
+          "Description": "Added the [getAllEnterpriseInteractions](https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/api-reference/aiInteractionHistory-getAllEnterpriseInteractions?view=graph-rest-1.0) method to the [aiInteractionHistory](https://learn.microsoft.com/en-us/graph/api/resources/aiInteractionHistory?view=graph-rest-1.0) resource.",
           "Target": "aiInteractionHistory"
         },
         {
@@ -3069,6 +3069,24 @@
       "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2022-05-24T18:54:16.6879906Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Messaging"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "0865d30f-0b82-47be-acb2-8dbe48a0be25",
+          "ApiChange": "Term",
+          "ChangedApiName": "originalSourceMembershipUrl",
+          "ChangeType": "Addition",
+          "Description": "Added the **originalSourceMembershipUrl** as an instance attribute that you can use with the [aadUserConversationMember](https://learn.microsoft.com/en-us/graph/api/resources/aadUserConversationMember?view=graph-rest-beta) resource.",
+          "Target": "aadUserConversationMember"
+        }
+      ],
+      "Id": "0865d30f-0b82-47be-acb2-8dbe48a0be25",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-07-31T16:03:44.5549271Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": "Messaging"
     }

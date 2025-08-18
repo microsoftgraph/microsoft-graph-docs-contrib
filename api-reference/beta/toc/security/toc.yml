@@ -48,6 +48,20 @@ items:
       href: ../../api/security-incident-update.md
     - name: Create comment for incident
       href: ../../api/security-incident-post-comments.md
+  - name: Incident task
+    items:
+    - name: Overview
+      href: ../../resources/security-incidenttask.md
+    - name: Incident task
+      href: ../../resources/security-incidenttask.md
+    - name: List
+      href: ../../api/security-list-incidenttasks.md
+    - name: Get
+      href: ../../api/security-incidenttask-get.md
+    - name: Update
+      href: ../../api/security-incidenttask-update.md
+    - name: Execute response action
+      href: ../../api/security-incidenttask-executeresponseaction.md
   - name: Complex types
     items:
     - name: Teams message evidence
@@ -682,6 +696,14 @@ items:
       href: ../../api/security-ediscoverycasemember-post.md
     - name: Remove
       href: ../../api/security-ediscoverycasemember-delete.md
+  - name: Complex types
+    items:
+    - name: eDiscovery add to review set operation
+      href: ../../resources/security-ediscoveryaddtoreviewsetoperation.md
+    - name: eDiscovery estimate operation
+      href: ../../resources/security-ediscoveryestimateoperation.md
+    - name: Report file metadata
+      href: ../../resources/security-ediscoveryreportfilemetadata.md
 - name: Email and collaboration protection
   items:
   - name: Analyzed email
@@ -744,12 +766,28 @@ items:
       href: ../../api/security-sensor-getdeploymentpackageuri.md
     - name: Regenerate deployment access key
       href: ../../api/security-sensor-regeneratedeploymentaccesskey.md
+  - name: Identity accounts
+    items:
+    - name: Identity accounts
+      href: ../../resources/security-identityaccounts.md
+    - name: List
+      href: ../../api/security-identitycontainer-list-identityaccounts.md
+    - name: Get
+      href: ../../api/security-identityaccounts-get.md
+    - name: invokeAction
+      href: ../../api/security-identityaccounts-invokeaction.md
+  - name: User
+    href: ../../resources/security-user.md
   - name: Complex types
     items:
+    - name: Account
+      href: ../../resources/security-account.md
     - name: Deployment access key type
       href: ../../resources/security-deploymentaccesskeytype.md
     - name: Identity container
       href: ../../resources/security-identitycontainer.md
+    - name: Invoke action result
+      href: ../../resources/security-invokeactionresult.md
     - name: Network adapter
       href: ../../resources/security-networkadapter.md
     - name: Sensor deployment package
