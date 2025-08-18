@@ -64,7 +64,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/networkAccessRoot/reports/getCloudApplicationReport(startDateTime={startDateTime},endDateTime={endDateTime},userId={userId})
+GET https://graph.microsoft.com/beta/networkAccess/reports/getCloudApplicationReport(startDateTime={startDateTime},endDateTime={endDateTime},userId={userId})
 ```
 
 ### Response
