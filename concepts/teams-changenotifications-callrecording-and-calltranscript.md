@@ -19,7 +19,7 @@ This article describes scenarios for the **transcript** and **recording** resour
 
 ## Subscribe to transcripts available at the tenant-level
 
-To get change notifications for any transcript available for any online meeting and ad hoc call in a tenant, subscribe to `communications/onlineMeetings/getAllTranscripts` and `communications/adhocCalls/getAllTranscripts`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification. The notification for a transcript is sent only if the subscription happens before the transcription starts. This subscription supports scheduled [onlineMeetings](/graph/api/resources/onlinemeeting) and [adhocCalls](/graph/api/resources/adhoccall).
+To get change notifications for any transcript available for any online meeting or ad hoc call in a tenant, subscribe to `communications/onlineMeetings/getAllTranscripts` or `communications/adhocCalls/getAllTranscripts`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification. The notification for a transcript is sent only if the subscription happens before the transcription starts. This subscription supports scheduled [onlineMeetings](/graph/api/resources/onlinemeeting) and [adhocCalls](/graph/api/resources/adhoccall).
 
 > **Note:** This subscription doesn't currently support private channel meetings.
 
@@ -176,7 +176,7 @@ Content-Type: application/json
 }
 ```
 
-## Subscribe to transcripts available for online meeting organized by the user
+## Subscribe to transcripts available for online meetings organized by a user
 
 To get change notifications for any transcript available for any online meeting organized by a specific user, subscribe to `users/{userId}/onlineMeetings/getAllTranscripts`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification. The notification for a transcript is sent only if the subscription happens before the transcription starts. This subscription supports scheduled [onlineMeetings](/graph/api/resources/onlinemeeting).
 
@@ -213,7 +213,7 @@ Content-Type: application/json
 }
 ```
 
-## Subscribe to transcripts available for ad hoc call where user initiates transcription
+## Subscribe to transcripts available for ad hoc call where a specific user initiates transcription
 
 To get change notifications for any transcript available for any ad hoc call where a specific user initiates the transcription, subscribe to `users/{userId}/adhocCalls/getAllTranscripts`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification. The notification for a transcript is sent only if the subscription happens before the transcription starts. This subscription supports [adhocCalls](/graph/api/resources/adhoccall).
 
@@ -274,6 +274,7 @@ One of the following permissions is required to subscribe to `appCatalogs/teamsA
 ```http
 POST https://graph.microsoft.com/beta/subscriptions
 Content-Type: application/json
+
 {
   "changeType": "created",
   "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
@@ -292,6 +293,7 @@ Content-Type: application/json
 ```http
 POST https://graph.microsoft.com/beta/subscriptions
 Content-Type: application/json
+
 {
   "changeType": "created",
   "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
@@ -343,7 +345,7 @@ Content-Type: application/json
 
 ## Subscribe to recordings available for ad hoc calls at the tenant level
 
-To get change notifications for any recording available for any ad hoc calls in a tenant, subscribe to `communications/adhocCalls/getAllRecordings`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification. This subscription supports [adhocCalls](/graph/api/resources/adhoccall).
+To get change notifications for any recording available for any ad hoc call in a tenant, subscribe to `communications/adhocCalls/getAllRecordings`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification. This subscription supports [adhocCalls](/graph/api/resources/adhoccall).
 
 ### Permissions
 
@@ -601,7 +603,7 @@ Depending on your subscription, you can get the notification with or without res
 
 ### Notifications with resource data
 
-For notifications with resource data, the payload looks like the following. This payload is for a transcript available for an online meeting. For ad hoc calls, the `meetingId` will be null.
+For notifications with resource data, the payload looks like the following. This payload is for a transcript available for an online meeting. For ad hoc calls, the **meetingId** is `null`.
 
 >**Note:** The payload object shown here is shortened for readability.
 
@@ -749,7 +751,7 @@ For notifications without resource data, the payload looks like the following. T
 }
 ```
 
-For notifications without resource data, the payload looks like the following. This payload is for a recording available for an online meeting.  For ad hoc calls, the `meetingId` will be null.
+For notifications without resource data, the payload looks like the following. This payload is for a recording available for an online meeting.  For ad hoc calls, the **meetingId** is `null`.
 
 >**Note:** The payload object shown here is shortened for readability.
 
