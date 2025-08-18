@@ -1,6 +1,6 @@
 ---
 title: "ediscoveryHoldPolicy: retryPolicy"
-description: "Retry policy triggers the hold process to restamp all mailboxes/sites in the policy to enforce hold."
+description: "Trigger a retry of an eDiscovery hold policy."
 author: "v-kafeng"
 ms.date: 08/11/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retry policy triggers the hold process to restamp all mailboxes/sites in the policy to enforce hold.
+Trigger a retry of an [eDiscovery hold policy](../resources/security-ediscoveryholdpolicy.md).
 
 ## Permissions
 
