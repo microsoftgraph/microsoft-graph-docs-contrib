@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Reset the app details of the [cloudPcCloudApp](../resources/cloudpccloudapp.md) object to the [app details](../resources/cloudpccloudappdetail.md) of the initially discovered app that this cloud app is mapped to. This action requires the `Microsoft.CloudPC/CloudApps/Update` permission.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
