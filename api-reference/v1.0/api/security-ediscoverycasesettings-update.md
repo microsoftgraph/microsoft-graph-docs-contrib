@@ -71,7 +71,7 @@ PATCH https://graph.microsoft.com/v1.0/security/cases/ediscoveryCases/b0073e4e-4
 Content-Type: application/json
 
 {
-    "@odata.type": "https://graph.microsoft.com/beta/$metadata#security/cases/ediscoveryCases('b0073e4e-4184-41c6-9eb7-8c8cc3e2288b')/settings/$entity",
+    "@odata.type": "https://graph.microsoft.com/v1.0/$metadata#security/cases/ediscoveryCases('b0073e4e-4184-41c6-9eb7-8c8cc3e2288b')/settings/$entity",
     "redundancyDetection": {
         "isEnabled": true,
         "similarityThreshold": 65,
