@@ -58,11 +58,6 @@ Deprecated the [markAsJunk](/graph/api/message-markasjunk?view=graph-rest-beta&p
 
 Added the [identityAccounts](graph/api/resources/security-identityaccounts?view=graph-rest-beta&preserve-view=true) and its related methods that lets you retrieve details of user accounts observed by Microsoft Defender for Identity and apply response actions such as disabling accounts and forcing password reset. 
 
-### Security | eDiscovery
-
-- Use the **caseType** property on [ediscoveryCaseSettings](/graph/api/resources/security-ediscoverycasesettings?view=graph-rest-beta&preserve-view=true) to get or set the type of an eDiscovery case.
-- Use the **reviewSetSettings** property on [ediscoveryCaseSettings](/graph/api/resources/security-ediscoverycasesettings?view=graph-rest-beta&preserve-view=true) to get or set the review set settings for a case.
-
 ### Terraform Templates for Microsoft Graph resources
 
 [Terraform templates for Microsoft Graph resources](/graph/templates/terraform/overview-terraform-for-graph) is now in preview. Using Terraform templates, you can deploy the following Microsoft Graph resources for your infrastructure as code (IaC) projects:
