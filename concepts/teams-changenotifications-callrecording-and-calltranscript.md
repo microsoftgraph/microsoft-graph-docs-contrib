@@ -229,7 +229,7 @@ One of the following permissions is required to subscribe to `users/{userId}/onl
 
 ### Example
 
-The following example shows how to subscribe to transcripts available for any online meeting organized by a specific user.
+The following example shows how to subscribe to transcripts available for any ad hoc call where a specific user initiates transcription.
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -349,7 +349,7 @@ To get change notifications for any recording available for any ad hoc call in a
 
 ### Permissions
 
-One of the following permissions is required to subscribe to `communications/onlineMeetings/getAllRecordings`. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to subscribe to `communications/adhocCalls/getAllRecordings`. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
@@ -442,7 +442,7 @@ To get change notifications for any recording available for a particular ad hoc 
 
 ### Permissions
 
-One of the following permissions is required to subscribe to `communications/onlineMeetings/{onlineMeetingId}/recordings`. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to subscribe to `communications/adhocCalls/{onlineMeetingId}/recordings`. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
@@ -512,7 +512,7 @@ To get change notifications for any recording available for any ad hoc call wher
 
 ### Permissions
 
-One of the following permissions is required to subscribe to `users/{userId}/onlineMeetings/getAllRecordings`. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to subscribe to `users/{userId}/adhocCalls/getAllRecordings`. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
 | :------------------------------------- | :------------------------------------------ |
