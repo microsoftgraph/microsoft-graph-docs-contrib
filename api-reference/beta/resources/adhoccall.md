@@ -1,6 +1,6 @@
 ---
 title: "adhocCall resource type"
-description: "Contains information about an ad hoc call."
+description: "Contains information about an ad hoc call including PSTN, 1:1 and group call."
 author: "kanchm"
 ms.date: 07/04/2025
 ms.localizationpriority: medium
