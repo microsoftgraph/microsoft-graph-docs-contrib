@@ -389,7 +389,7 @@ Content-Type: application/json
   "tags": [
     "test"
   ],
-  "emailAddress": "testSpace0015d9988631755150528582@M365x42405544.onmicrosoft.com",
+  "emailAddress": "testSpace0015d9988631755150528582@contoso.com",
   "nickname": "testSpace001",
   "mode": {
     "@odata.type": "#microsoft.graph.offlinePlaceMode",
