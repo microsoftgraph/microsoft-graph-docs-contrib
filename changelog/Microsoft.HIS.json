@@ -1,0 +1,54 @@
+﻿{
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "8609efd4-10a9-4d92-afc6-f078ae56150c",
+          "ApiChange": "Member",
+          "ChangedApiName": "privateAccess",
+          "ChangeType": "Deletion",
+          "Description": "Removed the `privateAccess` member from the **onPremisesPublishingType** enumeration.",
+          "Target": "onPremisesPublishingType"
+        },
+        {
+          "Id": "8609efd4-10a9-4d92-afc6-f078ae56150c",
+          "ApiChange": "Member",
+          "ChangedApiName": "servicePrincipalName",
+          "ChangeType": "Deletion",
+          "Description": "Removed the `servicePrincipalName` member from the **privateNetworkDestinationType** enumeration.",
+          "Target": "privateNetworkDestinationType"
+        },
+        {
+          "Id": "8609efd4-10a9-4d92-afc6-f078ae56150c",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "sensors",
+          "ChangeType": "Addition",
+          "Description": "Added the **sensors** relationship to the [onPremisesPublishingProfile](https://learn.microsoft.com/en-us/graph/api/resources/onPremisesPublishingProfile?view=graph-rest-beta) resource.",
+          "Target": "onPremisesPublishingProfile"
+        },
+        {
+          "Id": "8609efd4-10a9-4d92-afc6-f078ae56150c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "privateAccessSensor",
+          "ChangeType": "Addition",
+          "Description": "Added the [privateAccessSensor](https://learn.microsoft.com/en-us/graph/api/resources/privateAccessSensor?view=graph-rest-beta) resource.",
+          "Target": "privateAccessSensor"
+        },
+        {
+          "Id": "8609efd4-10a9-4d92-afc6-f078ae56150c",
+          "ApiChange": "Property",
+          "ChangedApiName": "isBreakglassEnabled",
+          "ChangeType": "Addition",
+          "Description": "Added the **isBreakglassEnabled** property to the [privateAccessSensor](https://learn.microsoft.com/en-us/graph/api/resources/privateAccessSensor?view=graph-rest-beta) resource.",
+          "Target": "privateAccessSensor"
+        }
+      ],
+      "Id": "8609efd4-10a9-4d92-afc6-f078ae56150c",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-06-13T19:24:31.4151653Z",
+      "WorkloadArea": "Application",
+      "SubArea": ""
+    }
+  ]
+}
