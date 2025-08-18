@@ -40,7 +40,7 @@ In the request URL, provide the following query parameters with values.
 |:---|:---|:---|
 |startDateTime|DateTimeOffset|The date and time when the reporting period begins.|
 |endDateTime|DateTimeOffset|The date and time when the reporting period ends.|
-|aggregatedBy|microsoft.graph.networkaccess.aggregationFilter|The aggregation type for the returned data. The possible values are: `transactions`, `users`, `devices`, `unknownFutureValue`, `bytesSent`, `bytesReceived`, `totalBytes`. Use the `Prefer: include-unknown-enum-members` request header to get the following values from this {evolvable enum}(/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `bytesSent`, `bytesReceived`, `totalBytes`.|
+|aggregatedBy|microsoft.graph.networkaccess.aggregationFilter|The aggregation type for the returned data. The possible values are: `transactions`, `users`, `devices`, `unknownFutureValue`, `bytesSent`, `bytesReceived`, `totalBytes`. Use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `bytesSent`, `bytesReceived`, `totalBytes`.|
 
 ## Request headers
 |Name|Description|
