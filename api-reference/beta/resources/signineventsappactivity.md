@@ -1,6 +1,6 @@
 ---
 title: "signInEventsAppActivity resource type"
-description: "Represents the summary of sign in events for a specific application in the past 30 days."
+description: "Represents the summary of sign-in events for a specific application in the past 30 days."
 ms.date: 08/18/2025
 author: "cumansfi"
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the total number of sign in events that have occurred for a specific application in the past 30 days.
+Represents the total number of sign-in events that have occurred for a specific application in the past 30 days.
 
 ## Methods
 |Method|Return type|Description|
@@ -25,8 +25,8 @@ Represents the total number of sign in events that have occurred for a specific 
 |Property|Type|Description|
 |:---|:---|:---|
 |appId|String|The application id for the given summary.|
-|signInCount|Int32|The total number of sign in events for the given application.|
-|tenantId|String|The tenant id where sign in events occurred.|
+|signInCount|Int32|The total number of sign-in events for the given application.|
+|tenantId|String|The tenant id where sign-in events occurred.|
 
 ## Relationships
 |Relationship|Type|Description|

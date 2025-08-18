@@ -34,8 +34,8 @@ None.
 |provisioning|[provisioningObjectSummary](../resources/provisioningobjectsummary.md) collection|Represents an action performed by the Microsoft Entra provisioning service and its associated properties.|
 |signIns|[signIn](../resources/signin.md) collection|Represents Microsoft Entra sign-in events. Read-only. Nullable.|
 |signUps|[selfServiceSignUp](../resources/selfservicesignup.md) collection|Represents sign up events in Microsoft Entra External ID. Read-only. Nullable.|
-|signInEventsAppSummary|[signInEventsAppActivity](../resources/signineventsappactivity.md) collection|Represents the number of sign in events for a specific application.|
-|signInEventsSummary|[signInEventsActivity](../resources/signineventsactivity.md) collection|Represents the total number of sign in events for a specific day.|
+|signInEventsAppSummary|[signInEventsAppActivity](../resources/signineventsappactivity.md) collection|Represents the number of sign-in events for a specific application.|
+|signInEventsSummary|[signInEventsActivity](../resources/signineventsactivity.md) collection|Represents the total number of sign-in events for a specific day.|
 
 ## JSON representation
 

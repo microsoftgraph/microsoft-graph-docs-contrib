@@ -1,6 +1,6 @@
 ---
 title: "List signInEventsActivity objects"
-description: "Get a list of the number of signin events that occurred for a specific day."
+description: "Get a list of the number of signin events for a specific day."
 author: "cumansfi"
 ms.date: 08/13/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the number of signin events that occurred for a specific day as defined in the [signInEventsActivity](../resources/signineventsactivity.md) object.
+Get a list of the number of signin events for a specific day as defined in the [signInEventsActivity](../resources/signineventsactivity.md) object.
 
 ## Permissions
 
@@ -43,8 +43,8 @@ This method supports the `$filter` [OData query parameter](/graph/query-paramete
 
 | Property          | Description                                                                                                                     | Example                                                                   |
 |:------------------|:--------------------------------------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------|
-| activityDateTime      | Filter for only sign in events in a given time frame Supported filter operators: `eq`.| `/auditLogs/signInEventsSummary?$filter=activityDateTime gt '2025-08-18T00:00:00Z'`           |
-| signInCount   | Filter for only days with a specific sign in count window. Supported filter operators are: `gt`.                                              | `/auditLogs/signInEventsSummary?$filter=signInCount gt 10`        |
+| activityDateTime      | Filter for only sign-in events in a given time frame Supported filter operators: `eq`.| `/auditLogs/signInEventsSummary?$filter=activityDateTime gt '2025-08-18T00:00:00Z'`           |
+| signInCount   | Filter for only days with a specific sign-in count window. Supported filter operators are: `gt`.                                              | `/auditLogs/signInEventsSummary?$filter=signInCount gt 10`        |
 
 ## Request headers
 

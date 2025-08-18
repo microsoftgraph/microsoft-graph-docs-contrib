@@ -1,6 +1,6 @@
 ---
 title: "List signInEventsAppActivity objects"
-description: "Get a list of applications and the number of signin events that have occurred in the past 30 days."
+description: "Get a list of applications and their number of sign-in events in the past 30 days."
 author: "cumansfi"
 ms.date: 08/13/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of applications and their number of sign in events in the past 30 days as defined in the [signInEventsAppActivity](../resources/signineventsappactivity.md) object.
+Get a list of applications and their number of sign-in events in the past 30 days as defined in the [signInEventsAppActivity](../resources/signineventsappactivity.md) object.
 
 ## Permissions
 
@@ -39,12 +39,12 @@ GET /auditLogs/signInEventsAppSummary
 
 ## Optional query parameters
 
-This method supports the `$filter` [OData query parameter](/graph/query-parameters) to help customize the response. You can apply `$filter` on one or more of the following properties of the [signInEventsAppActivity](../resources/signineventsappactivity.md) resource. You may also apply the `$top` query parameter to limit the number of results returned to a specific number. The default and max `$top` parameter is 1000 records. 
+This method supports the `$filter` [OData query parameter](/graph/query-parameters) to help customize the response. You can apply `$filter` on one or more of the following properties of the [signInEventsAppActivity](../resources/signineventsappactivity.md) resource. You may also apply the `$top` query parameter to limit the number of results returned to a specific number. The default and max `$top` parameter is 1,000 records. 
 
 | Property          | Description                                                                                                                     | Example                                                                   |
 |:------------------|:--------------------------------------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------|
-| appId      | Filter for only sign in events summary only for a specific application id. Supported filter operators: `eq`.| `/auditLogs/signInEventsAppSummary?$filter=appId eq 'fc7ac587-0824-44b4-9ad5-b51827bafa20'`           |
-| signInCount   | Filter for only applications with a specific sign in count window. Supported filter operators are: `gt`.                                              | `/auditLogs/signInEventsAppSummary?$filter=signInCount gt 10`        |
+| appId      | Filter for only sign-in events summary only for a specific application id. Supported filter operators: `eq`.| `/auditLogs/signInEventsAppSummary?$filter=appId eq 'fc7ac587-0824-44b4-9ad5-b51827bafa20'`           |
+| signInCount   | Filter for only applications with a specific sign-in count window. Supported filter operators are: `gt`.                                              | `/auditLogs/signInEventsAppSummary?$filter=signInCount gt 10`        |
 
 ## Request headers
 
