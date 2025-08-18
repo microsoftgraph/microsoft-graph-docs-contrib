@@ -20,11 +20,7 @@ Get a list of the [identityAccounts](../resources/security-identityaccounts.md) 
 
 One of the following permissions is required to call this API. Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "security-identitycontainer-list-identityaccounts-permissions"
-}
--->
+<!-- { "blockType": "permissions", "name": "security_identitycontainer_list_identityaccounts" } -->
 [!INCLUDE [permissions-table](../includes/permissions/security-identitycontainer-list-identityaccounts-permissions.md)]
 
 [!INCLUDE [rbac-security-identity-accounts-apis](../includes/rbac-for-apis/rbac-security-identity-accounts-apis.md)]
