@@ -33,7 +33,8 @@ Represents on-premises agents group. Agent groups enable a tenant admin to assig
 |displayName|String|Display name of the **onPremisesAgentGroup**.|
 |id|String| The object ID of the **onPremisesAgentGroup**. Read-only.|
 |isDefault|Boolean|Indicates if the **onPremisesAgentGroup** is the default agent group. Only a single agent group can be the default **onPremisesAgentGroup** and is set by the system.|
-|publishingType|String| Possible values are: `applicationProxy`, `exchangeOnline`, `authentication`, `provisioning`, `adAdministration`.|
+|publishingType|onPremisesPublishingType| Possible values are: `applicationProxy`, `exchangeOnline`, `authentication`, `provisioning`, `intunePfx`, `oflineDomainJoin`, `unknownFutureValue`, `privateAccess`. Use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `privateAccess`.|
+|resourceName|String|Name of the publishedResource.|
 
 ## Relationships
 

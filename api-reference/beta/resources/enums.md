@@ -1105,6 +1105,7 @@ Namespace: microsoft.graph
 | intunePfx |
 | oflineDomainJoin |
 | unknownFutureValue |
+|privateAccess|
 
 ### agentStatus values
 
