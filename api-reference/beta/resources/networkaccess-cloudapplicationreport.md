@@ -14,7 +14,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a report with network traffic data and metadata of a catalog application.
+Represents a Global Secure Access report with network traffic data and metadata of a catalog application. This information is returned by the [getCloudApplicationReport](../api/networkaccess-reports-getcloudapplicationreport.md) API.
 
 
 ## Properties
