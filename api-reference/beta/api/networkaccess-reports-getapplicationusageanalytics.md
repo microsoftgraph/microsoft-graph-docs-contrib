@@ -46,6 +46,7 @@ In the request URL, provide the following query parameters with values.
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+|include-unknown-enum-members|Optional. Add this header to retrieve the enumeration members after the sentinel value.|
 
 ## Request body
 Don't supply a request body for this method.
