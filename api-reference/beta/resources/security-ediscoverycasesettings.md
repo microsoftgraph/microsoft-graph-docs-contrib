@@ -48,7 +48,7 @@ Inherits from [entity](../resources/entity.md).
 |Member|Description|
 |:----|:----------|
 |none      | No other options selected.|
-|disableGrouping    | Disable the grouping control and use the old UI view.|
+|disableGrouping    | Disable the grouping control.|
 |unknownFutureValue   | Evolvable enumeration sentinel value. Don't use. |
 
 ## Relationships
