@@ -145,7 +145,7 @@ Content-Type: application/json
 
 ## Subscribe to transcripts available for a particular ad hoc call
 
-To get change notifications for any transcript available for a particular online meeting, subscribe to `communications/adhocCalls/{adhocCallId}/transcripts`.
+To get change notifications for any transcript available for a particular ad hoc call, subscribe to `communications/adhocCalls/{adhocCallId}/transcripts`.
 
 ### Permissions
 
