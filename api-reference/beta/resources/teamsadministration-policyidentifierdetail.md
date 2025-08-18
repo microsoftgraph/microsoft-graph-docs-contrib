@@ -20,14 +20,11 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 
 ## Methods
 |Method|Return type|Description|
-|:---|:---|:---|
-<!-- |[List](../api/teamsadministration-policyidentifierdetail-list.md)|[microsoft.graph.teamsAdministration.policyIdentifierDetail](../resources/teamsadministration-policyidentifierdetail.md) collection|Get a list of the policyIdentifierDetail objects and their properties.| -->
-|[Get](../api/teamsadministration-policyidentifierdetail-get.md)|[microsoft.graph.teamsAdministration.policyIdentifierDetail](../resources/teamsadministration-policyidentifierdetail.md)|Read the properties and relationships of [microsoft.graph.teamsAdministration.policyIdentifierDetail](../resources/teamsadministration-policyidentifierdetail.md) object.
+None.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|**TODO: Add Description** Inherited from [microsoft.graph.entity](../resources/entity.md). Inherits from [entity](../resources/entity.md)|
 |name|String|The display name of the policy instance|
 |policyId|String|The unique ID associated with the policy instance|
 
@@ -47,7 +44,6 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.teamsAdministration.policyIdentifierDetail",
-  "id": "String (identifier)",
   "name": "String",
   "policyId": "String"
 }
