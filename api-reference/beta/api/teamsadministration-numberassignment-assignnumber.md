@@ -14,7 +14,7 @@ Namespace: microsoft.graph.teamsAdministration
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Creates an asynchronous order to assign a telephone number to a user or resource account.
+Creates an asynchronous order to assign a telephone number to a user account.
 
 ## Permissions
 

@@ -1,6 +1,6 @@
 ---
 title: "numberAssignment: unassignNumber"
-description: "Unassign a telephone number from a user or resource account"
+description: "Unassign a telephone number from a user account"
 author: "pavellatif"
 ms.date: 07/23/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.teamsAdministration
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Creates an asynchronous order to assign a telephone number to a user or resource account.
+Creates an asynchronous order to unassign a telephone number from a user account.
 
 ## Permissions
 
