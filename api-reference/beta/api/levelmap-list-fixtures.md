@@ -37,7 +37,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 GET /places/{buildingPlaceId}/microsoft.graph.building/map/levels/{levelMapId}/fixtures
 ```
 > **Note:**
-> * `{buildingPlaceId}` is the **placeId** of a [building](../resources/building.md) for which you want to list [fixtureMap](../resources/fixturemap.md) is associated.
+> * `{buildingPlaceId}` is the **placeId** of a [building](../resources/building.md) for which you want to list [fixtureMap](../resources/fixturemap.md).
 > * `{levelImdfId}` is the **id** of the level in the IMDF file for which you want to list fixture map.
 
 ## Optional query parameters
