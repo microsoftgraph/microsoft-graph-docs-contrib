@@ -14,8 +14,6 @@ const place = {
   '@odata.type': 'microsoft.graph.workspace',
   parentId: 'f7de7265-e420-47b4-9d49-28d728716241',
   displayName: 'testSpace001',
-  emailAddress: 'frank@contoso.com',
-  description: 'test for workspace',
   tags: ['test']
 };
 
