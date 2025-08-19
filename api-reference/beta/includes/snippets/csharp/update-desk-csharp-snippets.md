@@ -8,21 +8,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Dependencies
 using Microsoft.Graph.Beta.Models;
-using Microsoft.Kiota.Abstractions.Serialization;
 
-var requestBody = new Place
+var requestBody = new Desk
 {
 	OdataType = "microsoft.graph.desk",
-	AdditionalData = new Dictionary<string, object>
+	Mode = new DropInPlaceMode
 	{
-		{
-			"mode" , new UntypedObject(new Dictionary<string, UntypedNode>
-			{
-				{
-					"@odata.type", new UntypedString("microsoft.graph.dropInPlaceMode")
-				},
-			})
-		},
+		OdataType = "microsoft.graph.dropInPlaceMode",
 	},
 };
 
