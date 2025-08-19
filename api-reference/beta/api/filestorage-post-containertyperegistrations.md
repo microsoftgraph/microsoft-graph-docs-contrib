@@ -22,8 +22,7 @@ For standard containers, [billing](/sharepoint/dev/embedded/administration/billi
 > * An application can only register a [fileStorageContainerType](../resources/filestoragecontainertype.md) that it owns, either using app-only or delegated tokens.
 > * The registration of a container type in a newly created tenant can fail if the tenant isn't yet fully ready. You might need to wait at least an hour before you can register a container type in a new tenant.
 
-Settings can't be modified during registration with the exception of agent related settings. For agent settings, the list of host urls in the `.agent.chatEmbedAllowedHosts` must be subset of what is defined in the owning container type. Learn more about [SharePoint Embedded agent](/sharepoint/dev/embedded/development/declarative-agent/spe-da-adv)
-
+Settings can't be modified during registration.
 
 ## Permissions
 
