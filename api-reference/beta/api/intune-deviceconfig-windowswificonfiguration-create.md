@@ -63,7 +63,6 @@ The following table shows the properties that are required when you create the w
 |description|String|Admin provided description of the Device Configuration. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|preSharedKey|String|This is the pre-shared key for WPA Personal Wi-Fi network.|
 |wifiSecurityType|[wiFiSecurityType](../resources/intune-deviceconfig-wifisecuritytype.md)|Specify the Wifi Security Type. Possible values are: `open`, `wpaPersonal`, `wpaEnterprise`, `wep`, `wpa2Personal`, `wpa2Enterprise`.|
 |meteredConnectionLimit|[meteredConnectionLimitType](../resources/intune-deviceconfig-meteredconnectionlimittype.md)|Specify the metered connection limit type for the wifi connection. Possible values are: `unrestricted`, `fixed`, `variable`.|
 |ssid|String|Specify the SSID of the wifi connection.|
@@ -76,6 +75,7 @@ The following table shows the properties that are required when you create the w
 |proxyManualPort|Int32|Specify the port for the proxy server.|
 |proxyAutomaticConfigurationUrl|String|Specify the URL for the proxy server configuration script.|
 |forceFIPSCompliance|Boolean|Specify whether to force FIPS compliance.|
+|preSharedKey|String|This is the pre-shared key for WPA Personal Wi-Fi network.|
 
 
 
@@ -121,7 +121,6 @@ Content-length: 1559
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
-  "preSharedKey": "Pre Shared Key value",
   "wifiSecurityType": "wpaPersonal",
   "meteredConnectionLimit": "fixed",
   "ssid": "Ssid value",
@@ -133,7 +132,8 @@ Content-length: 1559
   "proxyManualAddress": "Proxy Manual Address value",
   "proxyManualPort": 15,
   "proxyAutomaticConfigurationUrl": "https://example.com/proxyAutomaticConfigurationUrl/",
-  "forceFIPSCompliance": true
+  "forceFIPSCompliance": true,
+  "preSharedKey": "Pre Shared Key value"
 }
 ```
 
@@ -177,7 +177,6 @@ Content-Length: 1731
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
-  "preSharedKey": "Pre Shared Key value",
   "wifiSecurityType": "wpaPersonal",
   "meteredConnectionLimit": "fixed",
   "ssid": "Ssid value",
@@ -189,6 +188,7 @@ Content-Length: 1731
   "proxyManualAddress": "Proxy Manual Address value",
   "proxyManualPort": 15,
   "proxyAutomaticConfigurationUrl": "https://example.com/proxyAutomaticConfigurationUrl/",
-  "forceFIPSCompliance": true
+  "forceFIPSCompliance": true,
+  "preSharedKey": "Pre Shared Key value"
 }
 ```

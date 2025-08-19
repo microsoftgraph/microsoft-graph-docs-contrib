@@ -5159,6 +5159,16 @@ Possible values for user account types (group membership), per Windows definitio
 |failed|
 |unknownFutureValue|
 
+### reportAction values
+
+|Member|
+|:---|
+|unknown|
+|junk|
+|notJunk|
+|phish|
+|unknownFutureValue|
+
 ### errorCorrectionLevel values 
 
 |Member|
@@ -5288,6 +5298,23 @@ Possible values for user account types (group membership), per Windows definitio
 | tot                | 29    | Indicates the time zone is associated with Tonga Time(UTC+13:00).                                             |
 | lint               | 30    | Indicates the time zone is associated with Line Islands Time(UTC+14:00).                                      |
 | unknownFutureValue | 31    | Evolvable enumeration sentinel value. Do not use.                                                             |
+
+### resourceLinkType values 
+
+|Member|
+|:---|
+|url|
+|unknownFutureValue|
+
+### userPersona values 
+
+|Member|
+|:---|
+|unknown|
+|externalMember|
+|externalGuest|
+|internalMember|
+|internalGuest|
 
 ### fileStorageContainerBillingClassification values 
 
