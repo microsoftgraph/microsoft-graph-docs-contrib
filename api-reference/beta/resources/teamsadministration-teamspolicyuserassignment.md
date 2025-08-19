@@ -1,6 +1,6 @@
 ---
 title: "teamsPolicyUserAssignment resource type"
-description: "Represents a Teams policy assignment object used to either assign or unassign a policy for a specific user. It includes the user's ID, the type of policy (such as TeamsMeetingBroadcastPolicy), and the policy ID being targeted."
+description: "Represents a Teams policy assignment object used to either assign or unassign a policy for a specific user. It includes the user's ID, the type of policy (such as TeamsMeetingBroadcastPolicy), and the id of the policy instance being targeted."
 author: "praspatil05"
 ms.date: 08/14/2025
 ms.localizationpriority: medium
