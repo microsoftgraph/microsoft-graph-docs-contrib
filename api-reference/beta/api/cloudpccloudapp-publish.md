@@ -19,7 +19,7 @@ Publish a [cloudPcCloudApp](../resources/cloudpccloudapp.md) object to make it a
 > [!NOTE]
 > An admin can publish up to 500 cloud apps under a single provisioning policy
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
