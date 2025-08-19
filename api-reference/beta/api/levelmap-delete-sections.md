@@ -36,12 +36,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ``` http
 DELETE /places/{buildingPlaceId}/microsoft.graph.building/map/levels/{levelImdfID}/sections/{sectionImdfID}
 ```
-
-{buildingPlaceId} - **placeID** of the building in Places with which this map is associated
-
-{levelImdfID} - **id** of the level in IMDF with which this map is associated
-
-{sectionImdfID}- **id** of the level in IMDF with which this map is associated
+> **Note:**
+> * `{buildingPlaceId}` is the **placeId** of a [building](../resources/building.md) with which this [section](../resources/sectionmap.md) is associated.
+> * `{levelImdfId}` is the **id** of the level in the IMDF file.
+> * `{sectionImdfID}` is the **id** of the section in the IMDF file.
 
 ## Request headers
 
