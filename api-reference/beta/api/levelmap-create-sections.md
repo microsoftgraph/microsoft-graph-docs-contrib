@@ -37,11 +37,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 PATCH /places/{buildingPlaceId}/microsoft.graph.building/map/levels/{levelImdfID}/section/{sectionImdfID}
 ```
 
-{buildingPlaceId} – **placeID** of a building with which this [section](../resources/sectionmap.md) is associated.
-
-{levelImdfId}- **id** of the level in the IMDF file.
-
-{sectionImdfID}- **id** of the section in the IMDF file.
+> **Note:**
+> * `{buildingPlaceId}` is the **placeId** of a [building](../resources/building.md) with which this [section](../resources/sectionmap.md) is associated.
+> * `{levelImdfId}` is the **id** of the level in the IMDF file.
+> * `{sectionImdfID}` is the **id** of the section in the IMDF file.
 
 ## Request headers
 
