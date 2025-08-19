@@ -36,10 +36,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ``` http
 GET /places/{buildingPlaceId}/microsoft.graph.building/map/levels/{levelMapId}/sections
 ```
-
-{buildingPlaceId} - **placeID** of the building with which this map is associated
-
-{levelImdfID} - **id** of the level with which this map is associated
+> **Note:**
+> * `{buildingPlaceId}` is the **placeId** of a [building](../resources/building.md) for which you want to list [sectionMap](../resources/fixturemap.md).
+> * `{levelImdfId}` is the **id** of the level in the IMDF file for which you want to list section map.
 
 ## Optional query parameters
 
