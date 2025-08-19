@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the list of [callRecording](../resources/callrecording.md) objects associated with an [adhocCall](/graph/api/resources/adhoccall?view=graph-rest-beta). This API supports the retrieval of call recordings from unscheduled PSTN, VoIP and group calls . However, private channel meetings are supported, but with limitations.
+Get the list of [callRecording](../resources/callrecording.md) objects associated with an [adhocCall](/graph/api/resources/adhoccall?view=graph-rest-beta). This API supports the retrieval of call recordings from unscheduled PSTN, VoIP and group calls.
 
 > [!NOTE]
 > * This API works differently in one or more national clouds. For details, see [Microsoft Teams API implementation differences in national clouds](/graph/teamwork-national-cloud-differences).
