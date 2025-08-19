@@ -36,12 +36,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ``` http
 DELETE /places/{buildingPlaceId}/microsoft.graph.building/map/levels/{levelImdfID}/fixtures/{fixturesImdfID}
 ```
-
-{buildingPlaceId} - **placeID** of the building in Places with which this map is associated
-
-{levelImdfID} - **id** of the level in the IMDF with which this map is associated
-
-{fixturesImdfID}- **id** of the fixture in the IMDF with which this map is associated
+> **Note:**
+> * `{buildingPlaceId}` is the **placeId** of a [building](../resources/building.md) with which this [fixtureMap](../resources/fixturemap.md) is associated.
+> * `{levelImdfId}` is the **id** of the level in the IMDF file.
+> * `{fixtureImdfId}` is the **id** of the fixture in the IMDF file.
 
 ## Request headers
 
