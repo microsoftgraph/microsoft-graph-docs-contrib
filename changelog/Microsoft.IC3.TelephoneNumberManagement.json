@@ -89,6 +89,22 @@
           "ChangeType": "Addition",
           "Description": "Added the [telephoneNumberLongRunningOperation](https://learn.microsoft.com/en-us/graph/api/resources/teamsAdministration-telephoneNumberLongRunningOperation?view=graph-rest-beta) resource and its methods.",
           "Target": "telephoneNumberLongRunningOperation"
+        }, 
+        {
+          "Id": "07e967a6-f053-4c19-be0e-0a8373f072c4",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "telephoneNumberLongRunningOperation",
+          "ChangeType": "Addition",
+          "Description": "Added the **telephoneNumberLongRunningOperation** relationship to [teamsAdministration](https://learn.microsoft.com/en-us/graph/api/resources/teamsadministration-teamsadminroot?view=graph-rest-beta) resource.",
+          "Target": "teamsAdministration"
+        },
+        {
+          "Id": "07e967a6-f053-4c19-be0e-0a8373f072c4",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "numberAssignment",
+          "ChangeType": "Addition",
+          "Description": "Added the **numberAssignment** relationship to [teamsAdministration](https://learn.microsoft.com/en-us/graph/api/resources/teamsadministration-teamsadminroot?view=graph-rest-beta) resource.",
+          "Target": "teamsAdministration"
         }        
       ],
       "Id": "07e967a6-f053-4c19-be0e-0a8373f072c4",
