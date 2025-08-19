@@ -1,10 +1,10 @@
 ---
 title: "teamsPolicyAssignment resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+description: "Represents the root entity for managing Teams policy assignments. It provides access to user policy assignments and supports resolving policyId."
+author: "praspatil05"
 ms.date: 08/14/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.teamsAdministration
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents the root entity for managing Teams policy assignments. It provides access to user policy assignments and supports resolving policyId.
 
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).
@@ -23,24 +23,16 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/teamsadministration-teamsadminroot-list-policy.md)|[microsoft.graph.teamsAdministration.teamsPolicyAssignment](../resources/teamsadministration-teamspolicyassignment.md) collection|Get a list of the teamsPolicyAssignment objects and their properties.|
-|[Create](../api/teamsadministration-teamsadminroot-post-policy.md)|[microsoft.graph.teamsAdministration.teamsPolicyAssignment](../resources/teamsadministration-teamspolicyassignment.md)|Create a new teamsPolicyAssignment object.|
-|[Get](../api/teamsadministration-teamspolicyassignment-get.md)|[microsoft.graph.teamsAdministration.teamsPolicyAssignment](../resources/teamsadministration-teamspolicyassignment.md)|Read the properties and relationships of [microsoft.graph.teamsAdministration.teamsPolicyAssignment](../resources/teamsadministration-teamspolicyassignment.md) object.|
-|[Update](../api/teamsadministration-teamspolicyassignment-update.md)|[microsoft.graph.teamsAdministration.teamsPolicyAssignment](../resources/teamsadministration-teamspolicyassignment.md)|Update the properties of a teamsPolicyAssignment object.|
-|[Delete](../api/teamsadministration-teamsadminroot-delete-policy.md)|None|Delete a teamsPolicyAssignment object.|
-|[getPolicyId](../api/teamsadministration-teamspolicyassignment-getpolicyid.md)|[microsoft.graph.teamsAdministration.policyIdentifierDetail](../resources/teamsadministration-policyidentifierdetail.md) collection|**TODO: Add Description**|
-|[List userAssignments](../api/teamsadministration-teamspolicyassignment-list-userassignments.md)|[microsoft.graph.teamsAdministration.teamsPolicyUserAssignment](../resources/teamsadministration-teamspolicyuserassignment.md) collection|**TODO: Add a useful description.**|
-|[Create teamsPolicyUserAssignment](../api/teamsadministration-teamspolicyassignment-post-userassignments.md)|[microsoft.graph.teamsAdministration.teamsPolicyUserAssignment](../resources/teamsadministration-teamspolicyuserassignment.md)|Create a new teamsPolicyUserAssignment object.|
+|[getPolicyId](../api/teamsadministration-teamspolicyassignment-getpolicyid.md)|[microsoft.graph.teamsAdministration.policyIdentifierDetail](../resources/teamsadministration-policyidentifierdetail.md) collection|Retrieves policy identifier details such as name and ID of the Teams Policy|
 
 ## Properties
 |Property|Type|Description|
-|:---|:---|:---|
-|id|String|**TODO: Add Description** Inherited from [microsoft.graph.entity](../resources/entity.md). Inherits from [entity](../resources/entity.md)|
+None.
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|userAssignments|[microsoft.graph.teamsAdministration.teamsPolicyUserAssignment](../resources/teamsadministration-teamspolicyuserassignment.md) collection|**TODO: Add Description**|
+|userAssignments|[microsoft.graph.teamsAdministration.teamsPolicyUserAssignment](../resources/teamsadministration-teamspolicyuserassignment.md) collection|Navigation property to the collection of user policy assignments.|
 
 ## JSON representation
 The following JSON representation shows the resource type.
@@ -54,8 +46,7 @@ The following JSON representation shows the resource type.
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.teamsAdministration.teamsPolicyAssignment",
-  "id": "String (identifier)"
+  "@odata.type": "#microsoft.graph.teamsAdministration.teamsPolicyAssignment"
 }
 ```
 
