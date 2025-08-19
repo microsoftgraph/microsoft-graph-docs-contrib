@@ -2552,7 +2552,7 @@
     },
     {
       "ChangeList": [
-        {          
+        {
           "Id": "a4f30f3d-c27f-47d7-954b-4536991308c0",
           "ApiChange": "Enumeration",
           "ChangedApiName": "aiInteractionType",
@@ -2629,7 +2629,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getAllEnterpriseInteractions",
           "ChangeType": "Addition",
-          "Description": "Added the [getAllEnterpriseInteractions](https://learn.microsoft.com/en-us/graph/api/aiInteractionHistory-getAllEnterpriseInteractions?view=graph-rest-beta) method to the [aiInteractionHistory](https://learn.microsoft.com/en-us/graph/api/resources/aiInteractionHistory?view=graph-rest-beta) resource.",
+          "Description": "Added the [getAllEnterpriseInteractions](https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/api-reference/aiInteractionHistory-getAllEnterpriseInteractions?view=graph-rest-beta) method to the [aiInteractionHistory](https://learn.microsoft.com/en-us/graph/api/resources/aiInteractionHistory?view=graph-rest-beta) resource.",
           "Target": "aiInteractionHistory"
         }
       ],
@@ -2967,7 +2967,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getAllEnterpriseInteractions",
           "ChangeType": "Addition",
-          "Description": "Added the [getAllEnterpriseInteractions](https://learn.microsoft.com/en-us/graph/api/aiInteractionHistory-getAllEnterpriseInteractions?view=graph-rest-1.0) method to the [aiInteractionHistory](https://learn.microsoft.com/en-us/graph/api/resources/aiInteractionHistory?view=graph-rest-1.0) resource.",
+          "Description": "Added the [getAllEnterpriseInteractions](https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/api-reference/aiInteractionHistory-getAllEnterpriseInteractions?view=graph-rest-1.0) method to the [aiInteractionHistory](https://learn.microsoft.com/en-us/graph/api/resources/aiInteractionHistory?view=graph-rest-1.0) resource.",
           "Target": "aiInteractionHistory"
         },
         {

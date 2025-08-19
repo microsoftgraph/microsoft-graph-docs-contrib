@@ -107,7 +107,7 @@ Added `microsoftThreatIntelligence` as a supported detection source for the **de
 
 ### Teamwork and communications | AI interactions
 
-Use the [getAllEnterpriseInteractions](/graph/api/aiinteractionhistory-getallenterpriseinteractions) method to get Microsoft 365 Copilot interaction data, including user prompts to Copilot and Copilot responses.
+Use the [getAllEnterpriseInteractions](/microsoft-365-copilot/extensibility/api/ai-services/interaction-export/aiinteractionhistory-getallenterpriseinteractions?pivots=graph-v1) method to get Microsoft 365 Copilot interaction data, including user prompts to Copilot and Copilot responses.
 
 ### Teamwork and communications | Calls and online meetings
 
@@ -703,7 +703,7 @@ Added application authentication for Microsoft Purview eDiscovery Graph APIs. Fo
 
 ### Teamwork and communications | AI interactions
 
-Use the [getAllEnterpriseInteractions](/graph/api/aiinteractionhistory-getallenterpriseinteractions?view=graph-rest-beta&preserve-view=true) method to get Microsoft 365 Copilot interaction data, including user prompts to Copilot and Copilot responses.
+Use the [getAllEnterpriseInteractions](/microsoft-365-copilot/extensibility/api/ai-services/interaction-export/aiinteractionhistory-getallenterpriseinteractions?pivots=graph-preview) method to get Microsoft 365 Copilot interaction data, including user prompts to Copilot and Copilot responses.
 
 ### Teamwork and communications | Calls and online meetings
 
@@ -5215,3 +5215,4 @@ API snippets ([example](/graph/api/user-get?view=graph-rest-1.0&preserve-view=tr
 - See [what's currently new](whats-new-overview.md) in Microsoft Graph.
 - Check out the [Microsoft Graph developer blog](https://developer.microsoft.com/graph/blogs/) periodically for release announcements and helpful resources.
 - Browse details of Microsoft Graph API additions, and API behavior updates in the [changelog](https://developer.microsoft.com/graph/changelog).
+

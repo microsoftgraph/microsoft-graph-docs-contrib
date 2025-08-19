@@ -63,6 +63,7 @@ The following table shows the properties that are required when you create the [
 |creationSource|String|Policy creation source|
 |roleScopeTagIds|String collection|List of Scope Tags for this Entity instance.|
 |isAssigned|Boolean|Policy assignment status. This property is read-only.|
+|disableEntraGroupPolicyAssignment|Boolean|Indicates whether Entra Group policy assignment is disabled|
 |templateReference|[deviceManagementConfigurationPolicyTemplateReference](../resources/intune-deviceconfigv2-devicemanagementconfigurationpolicytemplatereference.md)|Template reference information|
 |priorityMetaData|[deviceManagementPriorityMetaData](../resources/intune-deviceconfigv2-devicemanagementprioritymetadata.md)|Indicates the priority of each policies that are selected by the admin during enrollment process|
 
@@ -78,7 +79,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/configurationPolicies/{deviceManagementConfigurationPolicyId}
 Content-type: application/json
-Content-length: 809
+Content-length: 855
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementConfigurationPolicy",
@@ -92,6 +93,7 @@ Content-length: 809
     "Role Scope Tag Ids value"
   ],
   "isAssigned": true,
+  "disableEntraGroupPolicyAssignment": true,
   "templateReference": {
     "@odata.type": "microsoft.graph.deviceManagementConfigurationPolicyTemplateReference",
     "templateId": "Template Id value",
@@ -111,7 +113,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 981
+Content-Length: 1027
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementConfigurationPolicy",
@@ -128,6 +130,7 @@ Content-Length: 981
     "Role Scope Tag Ids value"
   ],
   "isAssigned": true,
+  "disableEntraGroupPolicyAssignment": true,
   "templateReference": {
     "@odata.type": "microsoft.graph.deviceManagementConfigurationPolicyTemplateReference",
     "templateId": "Template Id value",

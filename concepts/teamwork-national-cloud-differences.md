@@ -35,8 +35,8 @@ This section describes implementation differences in the Microsoft Graph for US 
 |[Get chat](/graph/api/chat-get)| Chats with meetings associated with them aren't supported in application context in the GCC High and DOD environments. |
 |[List chats](/graph/api/chat-list)| The `OrderBy` OData query parameter is not supported. |
 | **Meeting AI insights**            |                                                          |
-|[List AI insights](/graph/api/onlinemeeting-list-aiinsights) | Not supported. |
-|[Get AI insight](/graph/api/callaiinsight-get) | Not supported. |
+|[List AI insights](/microsoft-365-copilot/extensibility/api-reference/onlinemeeting-list-aiinsights) | Not supported. |
+|[Get AI insight](/microsoft-365-copilot/extensibility/api-reference/callaiinsight-get) | Not supported. |
 | **Meeting recordings**            |                                                          |
 |[Get delta by organizer](/graph/api/callrecording-delta) | Not supported. |
 |[List recordings by organizer](/graph/api/onlinemeeting-getallrecordings) | Not supported. |
@@ -66,19 +66,19 @@ This section describes implementation differences in the Microsoft Graph for the
 | **Chat**            |                                                          |
 |[List chats](/graph/api/chat-list)| The `OrderBy` OData query parameter isn't supported. |
 | **Messaging**            |                                                          |
-[Export content](/microsoftteams/export-teams-content) | APIs to export chat and channel messages aren't supported. 
+[Export content](/microsoftteams/export-teams-content) | APIs to export chat and channel messages aren't supported.
 | **Team Membership**            |                                                          |
 Membership | Membership APIs to add and delete guests aren't supported.
 | **Change notifications**            |                                                          |
-[Change notifications](/graph/api/resources/webhooks) | Change notifications aren't supported for Microsoft Teams resources. 
+[Change notifications](/graph/api/resources/change-notifications-api-overview) | Change notifications aren't supported for Microsoft Teams resources.
 | **Meeting AI insights**            |                                                          |
-|[List AI insights](/graph/api/onlinemeeting-list-aiinsights) | Not supported. |
-|[Get AI insight](/graph/api/callaiinsight-get) | Not supported. |
+|[List AI insights](/microsoft-365-copilot/extensibility/api-reference/onlinemeeting-list-aiinsights) | Not supported. |
+|[Get AI insight](/microsoft-365-copilot/extensibility/api-reference/callaiinsight-get) | Not supported. |
 | **Meeting transcripts**            |                                                          |
 |[List transcripts](/graph/api/onlinemeeting-list-transcripts) | Not supported. |
 |[Get transcript](/graph/api/calltranscript-get) | Not supported. |
 |[Get delta by organizer](/graph/api/calltranscript-delta) | Not supported. |
 |[List transcripts by organizer](/graph/api/onlinemeeting-getalltranscripts) | Not supported. |
 | **HostedContent**            |                                                          |
-[Hosted Content](/graph/api/chatmessagehostedcontent-get) | APIs to manage hosted content aren't supported in application context. 
+[Hosted Content](/graph/api/chatmessagehostedcontent-get) | APIs to manage hosted content aren't supported in application context.
 

@@ -60,7 +60,7 @@ The following table shows the properties that are required when you create the [
 |qualityUpdateCadence|[windowsQualityUpdateCadence](../resources/intune-softwareupdate-windowsqualityupdatecadence.md)|The publishing cadence of the quality update. Possible values are: monthly, outOfBand. This property cannot be modified and is automatically populated when the catalog is created. Read-only. Possible values are: `monthly`, `outOfBand`, `unknownFutureValue`.|
 |isExpeditable|Boolean|When TRUE, indicates that the quality updates qualify for expedition. When FALSE, indicates the quality updates do not quality for expedition. Default value is FALSE. Read-only|
 |productRevisions|[windowsQualityUpdateCatalogProductRevision](../resources/intune-softwareupdate-windowsqualityupdatecatalogproductrevision.md) collection|The operating system product revisions that are released as part of this quality update. Read-only.|
-|qualityUpdateSeverityInformation|[windowsQualityUpdateCatalogItemSeverityInformation](../resources/intune-softwareupdate-windowsqualityupdatecatalogitemseverityinformation.md)|CVE information for catalog items|
+|cveSeverityInformation|[windowsQualityUpdateCveSeverityInformation](../resources/intune-softwareupdate-windowsqualityupdatecveseverityinformation.md)|CVE information for catalog items|
 
 
 
@@ -74,7 +74,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/windowsUpdateCatalogItems/{windowsUpdateCatalogItemId}
 Content-type: application/json
-Content-length: 1572
+Content-length: 1595
 
 {
   "@odata.type": "#microsoft.graph.windowsQualityUpdateCatalogItem",
@@ -106,15 +106,15 @@ Content-length: 1572
       }
     }
   ],
-  "qualityUpdateSeverityInformation": {
-    "@odata.type": "microsoft.graph.windowsQualityUpdateCatalogItemSeverityInformation",
-    "maxSeverity": "important",
+  "cveSeverityInformation": {
+    "@odata.type": "microsoft.graph.windowsQualityUpdateCveSeverityInformation",
+    "maxSeverityLevel": "important",
     "maxBaseScore": 4.0,
     "exploitedCves": [
       {
-        "@odata.type": "microsoft.graph.windowsQualityUpdateCatalogItemExploitedCve",
-        "number": "Number value",
-        "url": "Url value"
+        "@odata.type": "microsoft.graph.windowsQualityUpdateCveDetail",
+        "cveNumber": "Cve Number value",
+        "cveInformationUrl": "https://example.com/cveInformationUrl/"
       }
     ]
   }
@@ -126,7 +126,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1621
+Content-Length: 1644
 
 {
   "@odata.type": "#microsoft.graph.windowsQualityUpdateCatalogItem",
@@ -159,15 +159,15 @@ Content-Length: 1621
       }
     }
   ],
-  "qualityUpdateSeverityInformation": {
-    "@odata.type": "microsoft.graph.windowsQualityUpdateCatalogItemSeverityInformation",
-    "maxSeverity": "important",
+  "cveSeverityInformation": {
+    "@odata.type": "microsoft.graph.windowsQualityUpdateCveSeverityInformation",
+    "maxSeverityLevel": "important",
     "maxBaseScore": 4.0,
     "exploitedCves": [
       {
-        "@odata.type": "microsoft.graph.windowsQualityUpdateCatalogItemExploitedCve",
-        "number": "Number value",
-        "url": "Url value"
+        "@odata.type": "microsoft.graph.windowsQualityUpdateCveDetail",
+        "cveNumber": "Cve Number value",
+        "cveInformationUrl": "https://example.com/cveInformationUrl/"
       }
     ]
   }

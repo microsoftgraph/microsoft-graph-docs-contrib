@@ -35,7 +35,8 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/identityCertificate/rootCertificate
+PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/rootCertificate
+PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.androidForWorkCertificateProfileBase/rootCertificate
 PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.androidForWorkEnterpriseWiFiConfiguration/rootCertificateForServerValidation
 ```
 
@@ -76,7 +77,7 @@ If successful, this method returns a `200 OK` response code and an updated [andr
 ### Request
 Here is an example of the request.
 ``` http
-PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}/identityCertificate/rootCertificate
+PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}/rootCertificate
 Content-type: application/json
 Content-length: 1147
 

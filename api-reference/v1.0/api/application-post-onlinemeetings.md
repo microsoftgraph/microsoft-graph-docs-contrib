@@ -20,6 +20,10 @@ Create an online meeting on behalf of a user.
 > * This API doesn't create a Teams live event.
 > * To be able to retrieve meeting transcripts at a later stage, use the [Create event](../api/user-post-events.md#example-4-create-and-enable-an-event-as-an-online-meeting) API that is calendar-backed.
 
+> [!NOTE]
+> If you invite a contact list of more than 150 members to a meeting, they can only access the chat during the meeting. If some people in the contact list are required attendees and the rest are optional, add them directly as participants.
+> If you add a contact list that makes the chat exceed 1,000 people, you aren't able to add the list. For more information, see [Chat in Microsoft Teams meetings](https://support.microsoft.com/office/chat-in-microsoft-teams-meetings-64e2cb91-8a11-4781-94ea-fbb23f2b922f).
+
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
@@ -477,7 +481,7 @@ The following example shows a request.
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/me/onlineMeetings
+POST https://graph.microsoft.com/v1.0/me/onlineMeetings
 Content-Type: application/json
 
 {
@@ -509,7 +513,7 @@ Content-Type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-online-meeting-with-meeting-template-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -535,7 +539,7 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('xxxxxxxx')/onlineMeetings/$entity",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('xxxxxxxx')/onlineMeetings/$entity",
   "audioConferencing": {
     "tollNumber": "+12345678",
     "tollFreeNumber": "+12345",
@@ -567,6 +571,112 @@ Content-Type: application/json
   },
   "subject": "User meeting",
   "meetingTemplateId": "05b9ed5f-2ac3-4470-aae9-f4a0c30b1a4b"
+}
+```
+
+### Example 5: Create an encrypted online meeting
+
+The following example shows how to create an online meeting that is end-to-end encrypted.
+
+> **Note:** The **isEndToEndEncryptionEnabled** property must be used with Teams policies to determine the final behavior, and policy updates can take up to 24 hours to apply. For more information, see [Require end-to-end encryption for sensitive Teams meetings](/microsoftteams/end-to-end-encrypted-meetings).
+
+#### Request
+
+The following example shows a request.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "create-encrypted-online-meeting"
+}-->
+
+```msgraph-interactive
+POST https://graph.microsoft.com/v1.0/me/onlineMeetings
+Content-Type: application/json 
+
+{
+  "startDateTime":"2025-02-01T14:30:34.2444915-07:00",
+  "endDateTime":"2025-02-01T15:00:34.2464912-07:00",
+  "subject":"Encrypted Meeting",
+  "isEndToEndEncryptionEnabled": true
+}
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-encrypted-online-meeting-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-encrypted-online-meeting-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-encrypted-online-meeting-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-encrypted-online-meeting-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-encrypted-online-meeting-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-encrypted-online-meeting-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-encrypted-online-meeting-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+
+The following example shows the response.
+
+> **Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.onlineMeeting"
+} -->
+```http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+  "id": "MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZi",
+  "creationDateTime": "2020-07-03T00:23:39.444642Z",
+  "startDateTime": "2025-02-01T14:30:34.2444915-07:00",
+  "endDateTime": "2025-02-01T15:00:34.2464912-07:00",
+  "joinWebUrl": "(redacted)",
+  "subject": "Encrypted Meeting",
+  "autoAdmittedUsers": "EveryoneInCompany",
+  "isEndToEndEncryptionEnabled": true,
+  "isEntryExitAnnounced": true,
+  "allowedPresenters": "everyone",
+  "videoTeleconferenceId": "(redacted)",
+  "participants": {
+    "organizer": {
+      "upn": "(redacted)",
+      "role": "presenter",
+      "identity": {
+        "user": {
+          "id": "dc17674c-81d9-4adb-bfb2-8f6a442e4622",
+          "displayName": null,
+          "tenantId": "909c6581-5130-43e9-88f3-fcb3582cde38",
+          "identityProvider": "AAD"
+        }
+      }
+    },
+    "attendees": []
+  },
+  "lobbyBypassSettings": {
+    "scope": "organization",
+    "isDialInBypassEnabled": true
+  }
 }
 ```
 
