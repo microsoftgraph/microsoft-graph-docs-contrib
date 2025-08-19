@@ -1,7 +1,7 @@
 ---
 title: "ediscoveryHoldPolicy: retryPolicy"
 description: "Trigger a retry of an eDiscovery hold policy."
-author: "v-kafeng"
+author: "Kylefk"
 ms.date: 08/11/2025
 ms.localizationpriority: medium
 ms.subservice: "ediscovery"
@@ -65,7 +65,7 @@ The following example shows a request.
 POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/c2940e86-57c0-4b6d-acce-9944bdfdf58a/legalHolds/21292627-70a5-47e1-aef1-5f70c6d0bb42/retryPolicy
 ```
 
-## Response
+### Response
 
 <!-- {
   "blockType": "response",
