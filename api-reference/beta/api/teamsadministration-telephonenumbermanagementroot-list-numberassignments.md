@@ -8,7 +8,7 @@ ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
-# List numberAssignments```
+# List numberAssignments
 
 Namespace: microsoft.graph.teamsAdministration
 
@@ -43,7 +43,7 @@ This method supports some of the OData query parameters to help customize the re
 
 - `$filter`: Use the `$filter` query parameter to retrieve just a subset of a collection. For example, you can use the `$filter` parameter to retrieve those telephone numbers with numberType equals `DirectRouting`. Filter can be applied by appending the following expression to the query `$filter=numberType eq ‘DirectRouting’`. All fields from the number assignments can be filtered except `id` and `city`.
 
-- `$Top`: Use the `$Top` parameter top return first “X” number of results. Default number of results is 500 entries and maximum 1,000 entries allowed per query.
+- `$Top`: Use the `$Top` parameter to return first “X” number of results. Default number of results is 500 entries and maximum 1,000 entries allowed per query.
 
 - `$Skip`: Use the `$Skip` query parameter to skip first “X” number of results. Default value is 0
 
@@ -162,7 +162,7 @@ The following example shows a request to get a list of telephone numbers based o
   "name": "get_numberAssignments2",
 }
 -->
-``` https
+``` http
 GET https://graph.microsoft.com/beta/admin/teams/telephoneNumberManagement/numberAssignments?$filter=assignmentStatus eq 'unassigned' and capabilities/any(c:c eq 'userAssignment')
 ```
 
