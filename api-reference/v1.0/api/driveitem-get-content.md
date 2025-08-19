@@ -92,7 +92,7 @@ GET /me/drive/items/{item-id}/content
 
 ### Response
 
-Returns a `302 Found` response redirecting to a preauthenticated download URL for the file, which is the same URL available through the `@microsoft.graph.downloadUrl` property on the DriveItem.
+Returns a `302 Found` response redirecting to a preauthenticated download URL for the file, which is the same URL available through the `@microsoft.graph.downloadUrl` property on the **driveItem**.
 
 To download the contents of the file your application needs to follow the `Location` header in the response.
 Many HTTP client libraries will automatically follow the 302 redirection and start downloading the file immediately.
