@@ -4,7 +4,7 @@ description: "Delete a unitMap object."
 author: tiwarisakshi02
 ms.date: 06/12/2025
 ms.localizationpriority: medium
-ms.subservice: 
+ms.subservice: outlook
 doc_type: apiPageType
 ---
 
@@ -34,14 +34,12 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-DELETE places/{buildingPlaceId}/microsoft.graph.building/map/levels/{levelImdfID}/units/{unitImdfID}
+DELETE /places/{buildingPlaceId}/microsoft.graph.building/map/levels/{levelImdfID}/units/{unitImdfID}
 ```
-
-{buildingPlaceId} - **placeID** of the building with which this map is associated
-
-{levelImdfID} - **id** of the level with which this map is associated
-
-{unitImdfID}- **id** of the unit in IMDF with which this map is associated
+> **Note:**
+> * `{buildingPlaceId}` is the **placeId** of a [building](../resources/building.md) with which this [unit](../resources/unitmap.md) is associated.
+> * `{levelImdfId}` is the **id** of the level in the IMDF file.
+> * `{unitImdfID}` is the **id** of the unit in the IMDF file.
 
 ## Request headers
 
@@ -68,7 +66,7 @@ The following example shows a request.
 }
 -->
 ``` http
-DELETE places/30ca79af-ecb7-46c2-a14b-afe264a91543/microsoft.graph.building/map/levels/81e9fd76-b34a-45f6-a6dc-1f172f01e849/units/9e0cdcd1-7b86-4f50-839d-d8e4a5ac9237
+DELETE /places/30ca79af-ecb7-46c2-a14b-afe264a91543/microsoft.graph.building/map/levels/81e9fd76-b34a-45f6-a6dc-1f172f01e849/units/9e0cdcd1-7b86-4f50-839d-d8e4a5ac9237
 ```
 
 ### Response
