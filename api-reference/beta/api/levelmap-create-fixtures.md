@@ -36,12 +36,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ``` http
 PATCH /places/{buildingPlaceId}/microsoft.graph.building/map/levels/{levelImdfID}/fixture/{fixtureImdfID}
 ```
-
-{buildingPlaceId} – **placeID** of a building with which this [fixturemap](../resources/fixturemap.md) is associated.
-
-{levelImdfId}- **id** of the level in the IMDF file.
-
-{fixtureImdfID}- **id** of the fixture in the IMDF file.
+> **Note:**
+> * `{buildingPlaceId}` is the **placeId** of a [building](../resources/building.md) with which this [fixtureMap](../resources/fixturemap.md) is associated.
+> * `{levelImdfId}` is the **id** of the level in the IMDF file.
+> * `{fixtureImdfId}` is the **id** of the fixture in the IMDF file.
 
 ## Request headers
 
