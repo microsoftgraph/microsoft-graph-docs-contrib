@@ -103,7 +103,7 @@ It's the same URL available through the `@microsoft.graph.downloadUrl` property 
 To download the contents of the file your application needs to follow the `Location` header in the response.
 Many HTTP client libraries follow the 302 redirection and start downloading the file immediately.
 
-Preauthenticated download URLs are only guaranteed to be valid for a short period of time. They should be consumed immediately, as they are not guaranteed to be valid for longer than a few minutes. Consuming the URL does not require an `Authorization` header.
+Preauthenticated download URLs are valid for a limited time. Use them immediately, as they might expire within minutes. You don't need to include an `Authorization` header when you access the download URL.
 
 <!-- { "blockType": "response" } -->
 
