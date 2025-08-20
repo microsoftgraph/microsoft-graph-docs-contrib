@@ -53,13 +53,10 @@ PATCH /places/{buildingPlaceId}/microsoft.graph.building/map/levels/{levelImdfID
 
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
-
 |Property|Type|Description|
 |:---|:---|:---|
 |properties|String|Concatenated key-value pair of all properties of a geojson file for this **unitMap**. Inherited from [baseMapFeature](../resources/basemapfeature.md). Optional.|
 |placeId|String|Identifier of the [place](../resources/place.md) (such as a [room](../resources/room.md)) to which this **unitMap** belongs. Optional.|
-
-
 
 ## Response
 
@@ -76,7 +73,7 @@ The following example shows a request.
 }
 -->
 ``` http
-PATCH places/30ca79af-ecb7-46c2-a14b-afe264a91543/microsoft.graph.building/map/levels/81e9fd76-b34a-45f6-a6dc-1f172f01e849/units/005eb3b8-c95d-4d35-a8a0-22d3cb4d6542
+PATCH https://graph.microsoft.com/beta/places/30ca79af-ecb7-46c2-a14b-afe264a91543/microsoft.graph.building/map/levels/81e9fd76-b34a-45f6-a6dc-1f172f01e849/units/005eb3b8-c95d-4d35-a8a0-22d3cb4d6542
 Content-Type: application/json
 
 {
