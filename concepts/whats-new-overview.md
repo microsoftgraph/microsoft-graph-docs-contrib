@@ -24,6 +24,15 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 Use the [resize](/graph/api/cloudpc-resize) operation of [cloudPC](/graph/api/resources/cloudpc) to upgrade or downgrade an existing Cloud PC to a configuration with a new virtual CPU (vCPU) and storage size.
 
+### Identity and access | Directory management
+
+Resolved a known permissions issue for internalDomainFederation WRITE APIs that previously required consenting to the *Directory.AccessAsUser.All* permission for delegated scenarios. The following new permissions are now available as lesser-privileged alternatives for managing internalDomainFederation:
+
+- **Domain-InternalFederation.Read.All** - Read internalDomainFederation resources
+- **Domain-InternalFederation.ReadWrite.All** - Read and write internalDomainFederation resources
+
+These permissions provide more granular access control compared to the broader **Domain.Read.All** and **Domain.ReadWrite.All** permissions.
+
 ### Sites and lists
 
 Removed support for delegated permissions in the [List sites](/graph/api/site-list) and [site: delta](/graph/api/site-delta) APIs.
