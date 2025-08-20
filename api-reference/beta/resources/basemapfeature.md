@@ -1,6 +1,6 @@
 ---
 title: "baseMapFeature resource type"
-description: "Represents different map types within a tenant."
+description: "An abstract type that represents different map types within a tenant."
 author: tiwarisakshi02
 ms.date: 06/12/2025
 ms.localizationpriority: medium
@@ -14,15 +14,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This is an abstract type that all other map types inherit. 
+An abstract type that represents different map types within a tenant.
+
+Base type of [buildingMap](../resources/buildingmap.md), [fixtureMap](../resources/fixturemap.md), [footprintMap](../resources/footprintmap.md), [levelMap](../resources/levelmap.md), [sectionMap](../resources/sectionmap.md), and [unitMap](../resources/unitmap.md).
+
 Inherits from [entity](./entity.md).
 
-
 ## Methods
-|Method|Return type|Description|
-kuanhsiungwu marked this conversation as resolved.
-Outdated
-|:---|:---|:---|
+None.
 
 ## Properties
 |Property|Type|Description|
