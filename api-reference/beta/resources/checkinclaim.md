@@ -1,6 +1,6 @@
 ---
 title: "checkInClaim resource type"
-description: "**TODO: Add Description**"
+description: "Represents status of check-in to a place for a Calendar Event."
 author: "shijieyao"
 ms.date: 08/06/2025
 ms.localizationpriority: medium
@@ -15,8 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+Represents status of check-in to a place for a Calendar Event.
 
 ## Methods
 |Method|Return type|Description|
@@ -31,7 +30,7 @@ Namespace: microsoft.graph
 |checkInMethod|[checkInMethod](../resources/checkinclaim.md#checkinmethod-values)| Indicates the method of check-in. The possible values are: `unspecified`, `manual`, `inferred`, `verified`, `unknownFutureValue`. The default value is `unspecified`.|
 |createdDateTime|DateTimeOffset| The date and time when the **checkInClaim** object was created. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. |
 
-### checkInMethod values 
+### checkInMethod values
 
 |Member|Description|
 |:---|:---|
