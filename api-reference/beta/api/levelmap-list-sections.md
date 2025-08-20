@@ -38,11 +38,11 @@ GET /places/{buildingPlaceId}/microsoft.graph.building/map/levels/{levelMapId}/s
 ```
 > **Note:**
 > * `{buildingPlaceId}` is the **placeId** of a [building](../resources/building.md) for which you want to list [sectionMap](../resources/fixturemap.md).
-> * `{levelImdfId}` is the **id** of the level in the IMDF file for which you want to list section map.
+> * `{levelImdfId}` is the **id** of the level in the IMDF file for which you want to list [sectionMap](../resources/fixturemap.md).
 
 ## Optional query parameters
 
-This method supports the `$select` query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 

@@ -37,7 +37,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 PATCH /places/{buildingPlaceId}/microsoft.graph.building/map/levels/{levelImdfID}/units/{unitImdfID}
 ```
 > **Note:**
-> * `{buildingPlaceId}` is the **placeId** of a [building](../resources/building.md) with which this [unit](../resources/unitmap.md) is associated.
+> * `{buildingPlaceId}` is the **placeId** of a [building](../resources/building.md) with which this [unitMap](../resources/unitmap.md) is associated.
 > * `{levelImdfId}` is the **id** of the level in the IMDF file.
 > * `{unitImdfID}` is the **id** of the unit in the IMDF file.
 
