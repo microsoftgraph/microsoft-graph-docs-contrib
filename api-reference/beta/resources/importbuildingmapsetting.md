@@ -19,7 +19,7 @@ Supported import setting for ingestMapFile method.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|isDryRun|Boolean|**TODO: Add Description**|
+|isDryRun|Boolean|If isDryRun is true, the service will process the map but won’t save anything. If it's false, the service will process and store the map.|
 
 ## Relationships
 None.
