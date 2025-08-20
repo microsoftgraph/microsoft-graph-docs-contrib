@@ -53,11 +53,11 @@ The following table lists the parameters that are required when you call this ac
 |Parameter|Type|Description|
 |:---|:---|:---|
 |telephoneNumber|String|The telephone number intended to be unassigned|
-|numberType|microsoft.graph.teamsAdministration.numberType|Number type for the telephone number to be unassigned. It can be Direct Routing, Calling Plan or Operator Connect|
+|numberType|microsoft.graph.teamsAdministration.numberType|Number type for the telephone number to be unassigned. It can be direct Routing, calling plan, or operator connect.|
 
 ## Response
 
-If successful, the method returns a `202 Accepted` response code with Location response header with a link to get the action results.
+If successful, the method returns a `202 Accepted` response code with location response header with a link to get the action results.
 
 ## Examples
 

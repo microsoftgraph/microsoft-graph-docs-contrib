@@ -52,10 +52,10 @@ The following table lists the parameters that are required when you call this ac
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|telephoneNumber|String|The telephone number intended to be assigned. (Mandatory parameter)|
-|assignmentTargetId|String|The ID associated with User account. (Mandatory parameter)|
-|numberType|microsoft.graph.teamsAdministration.numberType|Number type can be Direct Routing, Calling Plan or Operator Connect. (Mandatory parameter)|
-|assignmentCategory|microsoft.graph.teamsAdministration.assignmentCategory|Indicates the type of number assignment. Example: Primary or Private. Default is Primary.|
+|telephoneNumber|String|The telephone number intended to be assigned. (Mandatory parameter).|
+|assignmentTargetId|String|The ID associated with User account. (Mandatory parameter).|
+|numberType|microsoft.graph.teamsAdministration.numberType|Number type can be direct routing, calling plan, or operator connect. (Mandatory parameter)|
+|assignmentCategory|microsoft.graph.teamsAdministration.assignmentCategory|Indicates the type of number assignment. Example: primary or private. Default is primary.|
 |locationId|String|The ID associated with an emergency address.|
 
 ## Response
