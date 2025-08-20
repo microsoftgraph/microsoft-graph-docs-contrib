@@ -24,6 +24,26 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 Use the [resize](/graph/api/cloudpc-resize) operation of [cloudPC](/graph/api/resources/cloudpc) to upgrade or downgrade an existing Cloud PC to a configuration with a new virtual CPU (vCPU) and storage size.
 
+### Security | Alerts and incidents
+
+- Added the following new properties to the [securityGroupEvidence](/graph/api/resources/security-securitygroupevidence?view=graph-rest-beta&preserve-view=true) resource:
+  - Use the **activeDirectoryObjectGuid** property to get the unique group identifier assigned by the on-premises Active Directory.
+  - Use the **distinguishedName** property to identify the distinguished name of the security group.
+  - Use the **friendlyName** property to identify the friendly name of the security group.	
+  - Use the **sid** property to get the security identifier of the group.
+- Use the **activeDirectoryObjectGuid** property on [userAccount](/graph/api/resources/security-useraccount?view=graph-rest-beta&preserve-view=true) to get the the unique user identifier assigned by the on-premises Active Directory.
+
+## August 2025: New in preview only
+
+### Security | Alerts and incidents
+
+- Added the following new properties to the [securityGroupEvidence](/graph/api/resources/security-securitygroupevidence) resource:
+  - Use the **activeDirectoryObjectGuid** property to get the unique group identifier assigned by the on-premises Active Directory.
+  - Use the **distinguishedName** property to identify the distinguished name of the security group.
+  - Use the **friendlyName** property to identify the friendly name of the security group.	
+  - Use the **sid** property to get the security identifier of the group.
+- Use the **activeDirectoryObjectGuid** property on [userAccount](/graph/api/resources/security-useraccount) to get the the unique user identifier assigned by the on-premises Active Directory.
+
 ## July 2025: New and generally available
 
 ### Bicep Templates for Microsoft Graph resources
