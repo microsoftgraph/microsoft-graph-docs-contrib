@@ -49,7 +49,7 @@ Base type of [building](../resources/building.md), [desk](../resources/desk.md),
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|checkIns| [checkInClaim](../resources/checkinclaim.md) collection | A subresource of a **place** object that indicates the check-in status of a calendar event booked at the place. |
+|checkIns| [checkInClaim](../resources/checkinclaim.md) collection | A subresource of a **place** object that indicates the check-in status of an Outlook calendar event booked at the place. |
 
 ## JSON representation
 The following JSON representation shows the resource type.
