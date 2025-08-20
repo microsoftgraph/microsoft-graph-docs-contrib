@@ -29,9 +29,9 @@ Inherits from [baseMapFeature](./basemapfeature.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Unique identifier for the **buildingMapFeature** object. Inherited from [entity](./entity.md). |
+|id|String|Unique identifier for the **buildingMapFeature** object. Inherited from [baseMapFeature](./basemapfeature.md). |
 |placeId|String|Identifier for the [building](./building.md) to which this **buildingMap** belongs. |
-|properties|String|Concatenated key-value pair of all properties of a geojson file for this **buildingMap**. Inherited from [baseMapFeature](./basemapfeature.md).|
+|properties|String|Concatenated key-value pair of all properties of a GeoJSON file for this **buildingMap**. Inherited from [baseMapFeature](./basemapfeature.md).|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -53,8 +53,8 @@ The following JSON representation shows the resource type.
 {
   "@odata.type": "#microsoft.graph.buildingMap",
   "id": "String (identifier)",
-  "properties": "String",
-  "placeId": "String"
+  "placeId": "String",
+  "properties": "String"
 }
 ```
 
