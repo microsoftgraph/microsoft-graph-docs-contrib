@@ -24,9 +24,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "internaldomainfederation_update" } -->
 [!INCLUDE [permissions-table](../includes/permissions/internaldomainfederation-update-permissions.md)]
 
-> [!IMPORTANT]
-> This method has a [known permissions issue](https://developer.microsoft.com/en-us/graph/known-issues/?search=21445) and might require consenting to the *Directory.AccessAsUser.All* permission for delegated scenarios.
-
 [!INCLUDE [rbac-domainfederation-apis-write](../includes/rbac-for-apis/rbac-domainfederation-apis-write.md)]
 
 ## HTTP request
