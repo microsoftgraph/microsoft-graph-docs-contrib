@@ -289,7 +289,23 @@ items:
     - name: descendants
       href: ../../api/place-descendants.md
   - name: Building
-    href: ../../resources/building.md
+    items:
+    - name: Building
+      href: ../../resources/building.md
+    - name: BaseMapFeature
+      href: ../../resources/basemapfeature.md
+    - name: FootprintMap
+      href: ../../resources/footprintmap.md
+    - name: LevelMap
+      items:
+      - name: LevelMap
+        href: ../../resources/levelmap.md
+      - name: UnitMap
+        href: ../../resources/unitmap.md
+      - name: FixtureMap
+        href: ../../resources/fixturemap.md
+      - name: SectionMap
+        href: ../../resources/sectionmap.md
   - name: Floor
     href: ../../resources/floor.md
   - name: Section

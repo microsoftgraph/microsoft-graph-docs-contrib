@@ -467,6 +467,86 @@
           "ChangeType": "Addition",
           "Description": "Added the [delete](https://learn.microsoft.com/en-us/graph/api/place-delete?view=graph-rest-beta) operation to the [place](https://learn.microsoft.com/en-us/graph/api/resources/place?view=graph-rest-beta) resource.",
           "Target": "place"
+        },
+        {
+          "Id": "7be00093-6bce-4bfd-bbdc-b663ab3fd7c0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "importBuildingMapSetting",
+          "ChangeType": "Addition",
+          "Description": "Added the [importBuildingMapSetting](https://learn.microsoft.com/en-us/graph/api/resources/importBuildingMapSetting?view=graph-rest-beta) resource.",
+          "Target": "importBuildingMapSetting"
+        },
+        {
+          "Id": "7be00093-6bce-4bfd-bbdc-b663ab3fd7c0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "baseMapFeature",
+          "ChangeType": "Addition",
+          "Description": "Added the [baseMapFeature](https://learn.microsoft.com/en-us/graph/api/resources/baseMapFeature?view=graph-rest-beta) resource.",
+          "Target": "baseMapFeature"
+        },
+        {
+          "Id": "7be00093-6bce-4bfd-bbdc-b663ab3fd7c0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "building",
+          "ChangeType": "Addition",
+          "Description": "Added the [building](https://learn.microsoft.com/en-us/graph/api/resources/building?view=graph-rest-beta) resource.",
+          "Target": "building"
+        },
+        {
+          "Id": "7be00093-6bce-4bfd-bbdc-b663ab3fd7c0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "buildingMap",
+          "ChangeType": "Addition",
+          "Description": "Added the [buildingMap](https://learn.microsoft.com/en-us/graph/api/resources/buildingMap?view=graph-rest-beta) resource.",
+          "Target": "buildingMap"
+        },
+        {
+          "Id": "7be00093-6bce-4bfd-bbdc-b663ab3fd7c0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "fixtureMap",
+          "ChangeType": "Addition",
+          "Description": "Added the [fixtureMap](https://learn.microsoft.com/en-us/graph/api/resources/fixtureMap?view=graph-rest-beta) resource.",
+          "Target": "fixtureMap"
+        },
+        {
+          "Id": "7be00093-6bce-4bfd-bbdc-b663ab3fd7c0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "footprintMap",
+          "ChangeType": "Addition",
+          "Description": "Added the [footprintMap](https://learn.microsoft.com/en-us/graph/api/resources/footprintMap?view=graph-rest-beta) resource.",
+          "Target": "footprintMap"
+        },
+        {
+          "Id": "7be00093-6bce-4bfd-bbdc-b663ab3fd7c0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "levelMap",
+          "ChangeType": "Addition",
+          "Description": "Added the [levelMap](https://learn.microsoft.com/en-us/graph/api/resources/levelMap?view=graph-rest-beta) resource.",
+          "Target": "levelMap"
+        },
+        {
+          "Id": "7be00093-6bce-4bfd-bbdc-b663ab3fd7c0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sectionMap",
+          "ChangeType": "Addition",
+          "Description": "Added the [sectionMap](https://learn.microsoft.com/en-us/graph/api/resources/sectionMap?view=graph-rest-beta) resource.",
+          "Target": "sectionMap"
+        },
+        {
+          "Id": "7be00093-6bce-4bfd-bbdc-b663ab3fd7c0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "unitMap",
+          "ChangeType": "Addition",
+          "Description": "Added the [unitMap](https://learn.microsoft.com/en-us/graph/api/resources/unitMap?view=graph-rest-beta) resource.",
+          "Target": "unitMap"
+        },
+        {
+          "Id": "7be00093-6bce-4bfd-bbdc-b663ab3fd7c0",
+          "ApiChange": "Method",
+          "ChangedApiName": "ingestMapFile",
+          "ChangeType": "Addition",
+          "Description": "Added the [ingestMapFile](https://learn.microsoft.com/en-us/graph/api/building-ingestMapFile?view=graph-rest-beta) method to the [building](https://learn.microsoft.com/en-us/graph/api/resources/building?view=graph-rest-beta) resource.",
+          "Target": "building"
         }
       ],
       "Id": "3e86af9c-5584-4544-9705-15b97fcd9dd4",
