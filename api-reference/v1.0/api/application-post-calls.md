@@ -70,7 +70,6 @@ If successful, this method returns a `201 Created` response code and a [call](..
 #### Request
 The following example shows a request that makes a peer-to-peer call between the bot and the specified user. In this example, the service hosts the media. The values of authorization token, callback URL, application ID, application name, user ID, user name, and tenant ID must be replaced with actual values to make the example work.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create-call-service-hosted-media-1",
@@ -102,43 +101,14 @@ Content-Type: application/json
   "callOptions": {
     "@odata.type": "#microsoft.graph.outgoingCallOptions",
     "isContentSharingNotificationEnabled": true,
-    "isDeltaRosterEnabled": true
+    "isDeltaRosterEnabled": true,
+    "isInteractiveRosterEnabled": true
   },
   "mediaConfig": {
     "@odata.type": "#microsoft.graph.serviceHostedMediaConfig"
   }
 }
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-call-service-hosted-media-1-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/create-call-service-hosted-media-1-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-call-service-hosted-media-1-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-call-service-hosted-media-1-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/create-call-service-hosted-media-1-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/create-call-service-hosted-media-1-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/create-call-service-hosted-media-1-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 #### Response
 
@@ -188,7 +158,7 @@ Content-Type: application/json
         }
       },
       "endpointType": null,
-      "replacesCallId": null,
+      "replacesCallId": null
     }
   ],
   "requestedModalities": [
@@ -197,15 +167,15 @@ Content-Type: application/json
   "mediaConfig": {
     "@odata.type": "#microsoft.graph.serviceHostedMediaConfig",
     "preFetchMedia": [
-     {
-       "uri": "https://cdn.contoso.com/beep.wav",
-       "resourceId": "f8971b04-b53e-418c-9222-c82ce681a582"
-     },
-     {
-       "uri": "https://cdn.contoso.com/cool.wav",
-       "resourceId": "86dc814b-c172-4428-9112-60f8ecae1edb"
-     }
-    ],
+      {
+        "uri": "https://cdn.contoso.com/beep.wav",
+        "resourceId": "f8971b04-b53e-418c-9222-c82ce681a582"
+      },
+      {
+        "uri": "https://cdn.contoso.com/cool.wav",
+        "resourceId": "86dc814b-c172-4428-9112-60f8ecae1edb"
+      }
+    ]
   },
   "myParticipantId": "499ff390-7a72-40e8-83a0-8fac6295ae7e",
   "id": "2e1a0b00-2db4-4022-9570-243709c565ab",
@@ -221,7 +191,8 @@ Content-Type: application/json
   "callOptions": {
     "@odata.type": "#microsoft.graph.outgoingCallOptions",
     "isContentSharingNotificationEnabled": true,
-    "isDeltaRosterEnabled": true
+    "isDeltaRosterEnabled": true,
+    "isInteractiveRosterEnabled": true
   },
   "toneInfo": null
 }

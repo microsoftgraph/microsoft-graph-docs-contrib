@@ -1,5 +1,5 @@
 ---
-title: "admin resource type"
+title: "Admin resource type"
 description: "Represents an entity that acts as a container for administrator functionality."
 author: "angelgolfer-ms"
 ms.localizationpriority: medium

@@ -16,12 +16,10 @@ import (
 )
 
 requestBody := graphmodels.NewPlace()
-additionalData := map[string]interface{}{
-	tags := []string {
-		"most popular building",
-	}
+tags := []string {
+	"most popular building",
 }
-requestBody.SetAdditionalData(additionalData)
+requestBody.SetTags(tags)
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 places, err := graphClient.Places().ByPlaceId("place-id").Patch(context.Background(), requestBody, nil)

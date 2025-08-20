@@ -16,12 +16,10 @@ import (
 )
 
 requestBody := graphmodels.NewPlace()
-additionalData := map[string]interface{}{
-	isWheelChairAccessible := true
+isWheelChairAccessible := true
 requestBody.SetIsWheelChairAccessible(&isWheelChairAccessible) 
-	"sortOrder" : int32(2) , 
-}
-requestBody.SetAdditionalData(additionalData)
+sortOrder := int32(2)
+requestBody.SetSortOrder(&sortOrder) 
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 places, err := graphClient.Places().ByPlaceId("place-id").Patch(context.Background(), requestBody, nil)
