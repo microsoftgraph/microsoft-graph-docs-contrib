@@ -1,6 +1,6 @@
 ---
 title: "building: ingestMapFile"
-description: "Ingests the map file for a building in Places."
+description: "Ingest the map file for a building in Places."
 author: tiwarisakshi02
 ms.date: 06/12/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Ingests the map file for a [building](../resources/building.md) in Places. 
+Ingest the map file for a [building](../resources/building.md) in Places. 
 
 ## Permissions
 
@@ -56,9 +56,6 @@ The following table lists the parameters that are required when you call this ac
 |:---|:---|:---|
 |file|String|Collection of IMDF map files for a building in Base64 zip format. [Learn more](https://learn.microsoft.com/en-us/microsoft-365/places/configure-maps-in-places) about supported geojsons in Places .|
 |importSetting|[importBuildingMapSetting](../resources/importbuildingmapsetting.md)|Settings that can be used during import.|
-|isDryRun|Boolean|When isDryRun is true, the service runs the ingestion logic but doesn’t actually save any data. |
-
-
 
 ## Response
 
@@ -89,7 +86,7 @@ Content-Type: application/json
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true
