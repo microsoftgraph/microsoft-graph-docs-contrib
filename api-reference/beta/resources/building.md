@@ -21,8 +21,9 @@ Inherits from [place](./place.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[ingestMapFile](../api/building-ingestmapfile.md)|None|Ingest a map of a **building**.|
-For the list of supported methods, see [place](./place.md).
+|[Ingest map file](../api/building-ingestmapfile.md)|None|Ingest the map file for a [building](../resources/building.md) in Places.|
+
+For more supported methods, see [place](./place.md).
 
 ## Properties
 |Property|Type|Description|
