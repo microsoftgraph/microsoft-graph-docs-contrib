@@ -70,12 +70,12 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/places/{placesId}/checkIns
+POST https://graph.microsoft.com/beta/places/c8aaf4d8-6c73-46c4-bf28-b2adadafb5be/checkIns
 Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.checkInClaim",
-  "calendarEventId": "040000008200E00074C5B7101A82E00800000000437CE0E4DFF9DB01000000000000000010000000D091FECD6A60864DA3E3064053ABF7D4",
+  "calendarEventId": "040000008200E00074C5B7101A82E00800000000D02AC02D26EFDB010000000000000000100000005A18ADA04F0A24489AE13ED3CC367978",
   "checkInMethod": "verified"
 }
 ```
@@ -96,7 +96,7 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.checkInClaim",
-  "calendarEventId": "040000008200E00074C5B7101A82E00800000000437CE0E4DFF9DB01000000000000000010000000D091FECD6A60864DA3E3064053ABF7D4",
+  "calendarEventId": "040000008200E00074C5B7101A82E00800000000D02AC02D26EFDB010000000000000000100000005A18ADA04F0A24489AE13ED3CC367978",
   "checkInMethod": "verified",
   "createdDateTime": "2025-06-28T12:34:56.789Z"
 }
