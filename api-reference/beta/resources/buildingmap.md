@@ -18,12 +18,11 @@ Map file associated with a building in Places. This object is the IMDF format re
 
 Inherits from [baseMapFeature](./basemapfeature.md).
 
-
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Delete](../api/building-delete-map.md)|None|Delete a **buildingMap** object.|
 |[Get](../api/buildingmap-get.md)|[buildingMap](./buildingmap.md)|Get the properties and relationships of a **buildingMap** object in IMDF format.|
+|[Delete](../api/buildingmap-delete.md)|None|Delete a **buildingMap** object.|
 |[List footprints](../api/buildingmap-list-footprints.md)|[footprintMap](./footprintmap.md) collection|Get a list of [footprintMap](./footprintmap.md) objects and their properties.|
 |[List levels](../api/buildingmap-list-levels.md)|[levelMap](./levelmap.md) collection|Get a list of [levelMap](./levelmap.md) objects and their properties.|
 
