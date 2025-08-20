@@ -108,13 +108,6 @@ The following JSON representation shows the resource type.
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /resources/internaldomainfederation.md:
-      Exception processing links.
-      Link Definition was null. Link text: !INCLUDE Azure AD PowerShell deprecation note (Parameter 'Definition')",
-    "Error: /resources/internaldomainfederation.md:
-        Exception processing links.
-        Link Definition was null. Link text: !INCLUDE Azure AD PowerShell deprecation note (Parameter 'Definition')"
-  ]
+  "suppressions": []
 }
 -->

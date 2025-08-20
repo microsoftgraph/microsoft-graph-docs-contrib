@@ -104,7 +104,6 @@ Content-Length: 1840
     "description": "Description value",
     "displayName": "Display Name value",
     "version": 7,
-    "preSharedKey": "Pre Shared Key value",
     "wifiSecurityType": "wpaPersonal",
     "meteredConnectionLimit": "fixed",
     "ssid": "Ssid value",
@@ -116,7 +115,8 @@ Content-Length: 1840
     "proxyManualAddress": "Proxy Manual Address value",
     "proxyManualPort": 15,
     "proxyAutomaticConfigurationUrl": "https://example.com/proxyAutomaticConfigurationUrl/",
-    "forceFIPSCompliance": true
+    "forceFIPSCompliance": true,
+    "preSharedKey": "Pre Shared Key value"
   }
 }
 ```

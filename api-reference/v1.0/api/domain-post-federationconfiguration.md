@@ -73,7 +73,7 @@ You can specify the following properties when creating an **internalDomainFedera
 | rejectMfaByFederatedIdp | Microsoft Entra ID always performs MFA and rejects MFA that's performed by the federated identity provider. |
 
 >[!NOTE]
->**federatedIdpMfaBehavior** is an evolved version of the **SupportsMfa** property of the [Set-EntraDomainFederationSettings PowerShell cmdlet](/powershell/module/microsoft.entra/set-entradomainfederationsettings). 
+>**federatedIdpMfaBehavior** is an evolved version of the **SupportsMfa** property of the [Set-EntraDomainFederationSettings PowerShell cmdlet](/powershell/module/microsoft.entra/set-entradomainfederationsettings).
 >+ Switching between **federatedIdpMfaBehavior** and **SupportsMfa** is not supported.
 >+ When **federatedIdpMfaBehavior** property is set, Microsoft Entra ID ignores the **SupportsMfa** setting.
 >+ If the **federatedIdpMfaBehavior** property is never set, Microsoft Entra ID will continue to honor the **SupportsMfa** setting.
@@ -189,10 +189,6 @@ Content-Type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api/domain-post-federationconfiguration.md:
-      Exception processing links.
-      Link Definition was null. Link text: !INCLUDE Azure AD PowerShell deprecation note (Parameter 'Definition')"
-  ]
+  "suppressions": []
 }
 -->

@@ -88,6 +88,10 @@ DELETE https://graph.microsoft.com/beta/servicePrincipals/2a8f9e7a-af01-413a-959
 [!INCLUDE [sample-code](../includes/snippets/php/delete-tokenlifetimepolicies-from-serviceprincipal-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-tokenlifetimepolicies-from-serviceprincipal-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/delete-tokenlifetimepolicies-from-serviceprincipal-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

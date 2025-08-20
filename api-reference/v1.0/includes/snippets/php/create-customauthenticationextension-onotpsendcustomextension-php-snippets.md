@@ -6,15 +6,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\CustomAuthenticationExtension;
+use Microsoft\Graph\Generated\Models\OnOtpSendCustomExtension;
 use Microsoft\Graph\Generated\Models\AzureAdTokenAuthentication;
 use Microsoft\Graph\Generated\Models\CustomExtensionClientConfiguration;
 use Microsoft\Graph\Generated\Models\HttpRequestEndpoint;
+use Microsoft\Graph\Generated\Models\CustomExtensionBehaviorOnError;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
-$requestBody = new CustomAuthenticationExtension();
+$requestBody = new OnOtpSendCustomExtension();
 $requestBody->setOdataType('#microsoft.graph.onOtpSendCustomExtension');
 $authenticationConfiguration = new AzureAdTokenAuthentication();
 $authenticationConfiguration->setOdataType('#microsoft.graph.azureAdTokenAuthentication');
@@ -30,12 +31,9 @@ $endpointConfiguration = new HttpRequestEndpoint();
 $endpointConfiguration->setOdataType('#microsoft.graph.httpRequestEndpoint');
 $endpointConfiguration->setTargetUrl('https://onotpsendcustomextension.b2c.expert/api/OnOTPCodeSendToTeamsDemo');
 $requestBody->setEndpointConfiguration($endpointConfiguration);
-$additionalData = [
-	'behaviorOnError' => [
-		'@odata.type' => 'microsoft.graph.customExtensionBehaviorOnError',
-	],
-];
-$requestBody->setAdditionalData($additionalData);
+$behaviorOnError = new CustomExtensionBehaviorOnError();
+$behaviorOnError->setOdataType('microsoft.graph.customExtensionBehaviorOnError');
+$requestBody->setBehaviorOnError($behaviorOnError);
 
 $result = $graphServiceClient->identity()->customAuthenticationExtensions()->post($requestBody)->wait();
 

@@ -22,8 +22,10 @@ Represents information about companies related to entities within their [profile
 |:---------------|:------------------------------------|:-------------------------------------------------------|
 |address         |[physicalAddress](physicaladdress.md)| Address of the company.                                |
 |companyCode     |String                               | Legal entity number of the company or its subdivision. For information on how to set the value for the **companyCode**, see [profileSourceAnnotation](profilesourceannotation.md).|
+|costCenter      |String                               | The cost center associated with the company or department. |
 |department      |String                               | Department Name within a company.                      |
 |displayName     |String                               | Company name.                                          |
+|division        |String                               | The division within the company.                       |
 |officeLocation  |String                               | Office Location of the person referred to.             |
 |pronunciation   |String                               | Pronunciation guide for the company name.              |
 |secondaryDepartment|String                            | Secondary Department Name within a company.            |
@@ -46,8 +48,10 @@ The following JSON representation shows the resource type.
 {
   "address": {"@odata.type": "microsoft.graph.physicalAddress"},
   "companyCode": "String",
+  "costCenter": "String",
   "department": "String",
   "displayName": "String",
+  "division": "String",
   "officeLocation": "String",
   "pronunciation": "String",
   "secondaryDepartment": "String",
