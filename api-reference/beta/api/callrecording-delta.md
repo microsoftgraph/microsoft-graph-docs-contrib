@@ -1,6 +1,6 @@
 ---
 title: "callRecording: delta"
-description: "Get a set of callRecording resources added for onlineMeeting instancesorganized by the specified user."
+description: "Get a set of callRecording resources added for onlineMeeting instances organized by the specified user."
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "JacobSatora"
