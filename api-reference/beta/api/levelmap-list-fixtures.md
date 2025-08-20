@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [fixtures](../fixturemap.md) and their properties.
+Get a list of the [fixtureMap](../resources/fixturemap.md) and their properties.
 
 ## Permissions
 
