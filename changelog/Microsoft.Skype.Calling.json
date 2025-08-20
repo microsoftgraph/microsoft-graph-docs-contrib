@@ -521,8 +521,8 @@
       "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2024-12-25T21:56:05.4071005Z",
-      "WorkloadArea": "Cloud communications",
-      "SubArea": "Call"
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
     },
     {
       "ChangeList": [
@@ -5321,8 +5321,8 @@
       "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2023-08-23T20:47:40.1194217Z",
-      "WorkloadArea": "Cloud communications",
-      "SubArea": "Call"
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
     },
     {
       "ChangeList": [
@@ -5669,6 +5669,40 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2025-05-03T09:04:47.884691Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "c7cd14b5-66f1-4c4a-b994-1a447beaa249",
+          "ApiChange": "Property",
+          "ChangedApiName": "isInteractiveRosterEnabled",
+          "ChangeType": "Addition",
+          "Description": "Added the **isInteractiveRosterEnabled** property to the [callOptions](https://learn.microsoft.com/en-us/graph/api/resources/calloptions?view=graph-rest-1.0) resource.",
+          "Target": "callOptions"
+        },
+        {
+          "Id": "c7cd14b5-66f1-4c4a-b994-1a447beaa249",
+          "ApiChange": "Property",
+          "ChangedApiName": "isInteractiveRosterEnabled",
+          "ChangeType": "Addition",
+          "Description": "Added the **isInteractiveRosterEnabled** property to the [incomingCallOptions](https://learn.microsoft.com/en-us/graph/api/resources/incomingcalloptions?view=graph-rest-1.0) resource.",
+          "Target": "incomingCallOptions"
+        },
+        {
+          "Id": "c7cd14b5-66f1-4c4a-b994-1a447beaa249",
+          "ApiChange": "Property",
+          "ChangedApiName": "isInteractiveRosterEnabled",
+          "ChangeType": "Addition",
+          "Description": "Added the **isInteractiveRosterEnabled** property to the [outgoingCallOptions](https://learn.microsoft.com/en-us/graph/api/resources/outgoingcalloptions?view=graph-rest-1.0) resource.",
+          "Target": "outgoingCallOptions"
+        }
+      ],
+      "Id": "c7cd14b5-66f1-4c4a-b994-1a447beaa249",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-08-19T15:19:10.1478061Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": "Calls and online meetings"
     }

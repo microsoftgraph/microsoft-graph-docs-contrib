@@ -18,7 +18,6 @@ const onlineMeeting = {
 };
 
 await client.api('/me/onlineMeetings')
-	.version('beta')
 	.post(onlineMeeting);
 
 ```
