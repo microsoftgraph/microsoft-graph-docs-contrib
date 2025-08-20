@@ -49,3 +49,7 @@ The following JSON representation shows the resource type.
 }
 ```
 
+## Related content
+
+* [Change notifications for Microsoft Teams resources](/graph/teams-change-notification-in-microsoft-teams-overview)
+* [Get change notifications for transcripts and recordings using Microsoft Graph](/graph/teams-changenotifications-callrecording-and-calltranscript)
