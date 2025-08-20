@@ -168,6 +168,7 @@ The following example shows how to update a **floor** object.
 
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_floor"
@@ -253,6 +254,7 @@ The following example shows how to update a **section** object.
 
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_section"
@@ -330,6 +332,7 @@ The following example shows how to update a **desk** object.
 
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_desk"
@@ -415,6 +418,7 @@ The following example shows how to update a **room** object.
 
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["cf100@contoso.com"],
@@ -522,6 +526,7 @@ The following example shows how to update a **workspace** object.
 
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["ws100@contoso.com"],
@@ -626,6 +631,7 @@ The following example shows how to update a **roomList** object.
 
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["Building1RroomList@contoso.com"],
@@ -725,3 +731,5 @@ Content-Type: application/json
   "emailAddress": "bldg1@contoso.com",
   "placeId": "406bd1b2-237c-4710-bda2-8b7900d61b27"
 }
+```
+
