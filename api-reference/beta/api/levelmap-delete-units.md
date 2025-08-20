@@ -66,7 +66,7 @@ The following example shows a request.
 }
 -->
 ``` http
-DELETE /places/30ca79af-ecb7-46c2-a14b-afe264a91543/microsoft.graph.building/map/levels/81e9fd76-b34a-45f6-a6dc-1f172f01e849/units/9e0cdcd1-7b86-4f50-839d-d8e4a5ac9237
+DELETE https://graph.microsoft.com/beta/places/151e85a7-c0b8-4519-997e-1a0858255704/microsoft.graph.building/map/levels/81e9fd76-b34a-45f6-a6dc-1f172f01e849/units/9e0cdcd1-7b86-4f50-839d-d8e4a5ac9237
 ```
 
 ### Response

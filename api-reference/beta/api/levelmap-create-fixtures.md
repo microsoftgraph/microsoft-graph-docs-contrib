@@ -76,7 +76,7 @@ The following example shows a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/building/map/levels/e537d463-475b-43c3-a650-184566c68bc9/fixtures/005eb3b8-c95d-4d35-a8a0-22d3cb4d6002
+PATCH https://graph.microsoft.com/beta/places/151e85a7-c0b8-4519-997e-1a0858255704/microsoft.graph.building/map/levels/e537d463-475b-43c3-a650-184566c68bc9/fixtures/005eb3b8-c95d-4d35-a8a0-22d3cb4d6002
 Content-Type: application/json
 
 {

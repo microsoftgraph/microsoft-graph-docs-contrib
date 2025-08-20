@@ -10,7 +10,7 @@ doc_type: apiPageType
 
 # Delete buildingMap
 
-Namespace: microsoft.graph.networkaccess
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
