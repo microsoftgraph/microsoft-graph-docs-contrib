@@ -751,7 +751,7 @@ For notifications without resource data, the payload looks like the following. T
 }
 ```
 
-For notifications without resource data, the payload looks like the following. This payload is for a recording available for an online meeting.  For ad hoc calls, the **meetingId** is `null`.
+For notifications without resource data, the payload looks like the following. This payload is for a recording available for an online meeting. For ad hoc calls, the **meetingId** is `null`.
 
 >**Note:** The payload object shown here is shortened for readability.
 
