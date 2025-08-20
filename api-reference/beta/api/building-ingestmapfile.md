@@ -34,10 +34,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-POST /places/{placesBuildingId}/microsoft.graph.building/ingestMapFile
+POST /places/{buildingPlaceId}/microsoft.graph.building/ingestMapFile
 ```
-
-{placesBuildingId} - **PlaceID** of the building in Places with which this map should be associated
+> **Note:** `{buildingPlaceId}` is the unique **placeId** of the [building](../resources/building.md) in Places with which this map should be associated.
 
 ## Request headers
 
