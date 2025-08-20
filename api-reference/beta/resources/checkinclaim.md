@@ -1,6 +1,6 @@
 ---
 title: "checkInClaim resource type"
-description: "Represents status of check-in to a place for a Calendar Event."
+description: "Represents the check-in status to a place for a calendar event."
 author: "shijieyao"
 ms.date: 08/06/2025
 ms.localizationpriority: medium
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents status of check-in to a place for a Calendar Event.
+Represents the check-in status to a place for a calendar event.
 
 ## Methods
 |Method|Return type|Description|
