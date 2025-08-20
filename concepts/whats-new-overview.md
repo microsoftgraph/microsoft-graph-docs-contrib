@@ -31,7 +31,7 @@ Use the [resize](/graph/api/cloudpc-resize) operation of [cloudPC](/graph/api/re
   - Use the **distinguishedName** property to identify the distinguished name of the security group.
   - Use the **friendlyName** property to identify the friendly name of the security group.	
   - Use the **sid** property to get the security identifier of the group.
-- Use the **activeDirectoryObjectGuid** property on [userAccount](/graph/api/resources/security-useraccount) to get the the unique user identifier assigned by the on-premises Active Directory.
+- Use the **activeDirectoryObjectGuid** property on [userAccount](/graph/api/resources/security-useraccount) to get the unique user identifier assigned by the on-premises Active Directory.
 
 ### Sites and lists
 
@@ -70,7 +70,7 @@ Deprecated the [markAsJunk](/graph/api/message-markasjunk?view=graph-rest-beta&p
   - Use the **distinguishedName** property to identify the distinguished name of the security group.
   - Use the **friendlyName** property to identify the friendly name of the security group.	
   - Use the **sid** property to get the security identifier of the group.
-- Use the **activeDirectoryObjectGuid** property on [userAccount](/graph/api/resources/security-useraccount?view=graph-rest-beta&preserve-view=true) to get the the unique user identifier assigned by the on-premises Active Directory.
+- Use the **activeDirectoryObjectGuid** property on [userAccount](/graph/api/resources/security-useraccount?view=graph-rest-beta&preserve-view=true) to get the unique user identifier assigned by the on-premises Active Directory.
 
 ### Security | Identities
 
