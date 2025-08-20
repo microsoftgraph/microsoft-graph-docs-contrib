@@ -23,7 +23,7 @@ This resource supports subscribing to [change notifications](/graph/change-notif
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The unique identifier for the ad hoc call including PSTN, 1:1 and group call. Read-only.|
+|id|String|The unique identifier for the ad hoc call, including PSTN, 1:1, and group calls. Read-only.|
 
 ## Relationships
 
