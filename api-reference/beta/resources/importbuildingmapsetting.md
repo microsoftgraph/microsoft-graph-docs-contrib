@@ -1,6 +1,6 @@
 ---
 title: "importBuildingMapSetting resource type"
-description: "**TODO: Add Description**"
+description: "Represents the supported import setting for the ingestMapFile API. "
 author: tiwarisakshi02
 ms.date: 06/12/2025
 ms.localizationpriority: medium
@@ -14,12 +14,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Supported import setting for ingestMapFile method. 
+Represents the supported import setting for the [ingestMapFile](../api/building-ingestmapfile.md) API. 
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|isDryRun|Boolean|If isDryRun is true, the service will process the map but won’t save anything. If it's false, the service will process and store the map.|
+|isDryRun|Boolean|`True` indicates that the service processes the map but doesn't save anything. `False` indicates that the service processes and stores the map.|
 
 ## Relationships
 None.
