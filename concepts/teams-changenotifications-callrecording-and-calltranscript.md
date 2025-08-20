@@ -219,7 +219,7 @@ To get change notifications for any transcript available for any ad hoc call whe
 
 ### Permissions
 
-One of the following permissions is required to subscribe to `users/{userId}/onlineMeetings/getAllTranscripts`. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to subscribe to `users/{userId}/adhocCalls/getAllTranscripts`. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
 | :------------------------------------- | :------------------------------------------ |
