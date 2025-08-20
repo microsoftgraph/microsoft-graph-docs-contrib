@@ -69,9 +69,8 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/building/map/levels/e537d463-475b-43c3-a650-184566c68bc9/fixtures
+GET https://graph.microsoft.com/beta/places/151e85a7-c0b8-4519-997e-1a0858255704/microsoft.graph.building/map/levels/e537d463-475b-43c3-a650-184566c68bc9/fixtures
 ```
-
 
 ### Response
 
@@ -88,19 +87,18 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "value": [
-        {
-            "placeId": null,
-            "id": "005eb3b8-c95d-4d35-a8a0-22d3cb4d6998",
-            "properties": "{\"id\":\"005eb3b8-c95d-4d35-a8a0-22d3cb4d6998\",\"type\":\"Feature\",\"feature_type\":\"fixture\",\"geometry\":{\"type\":\"Polygon\",\"coordinates\":[[[-121.8889415,37.3295396],[-121.8889137,37.329503],[-121.8889082,37.3294956],[-121.888907,37.3294941],[-121.8888551,37.3295189],[-121.8888895,37.3295644],[-121.8889415,37.3295396]]]},\"properties\":{\"name\":{\"en\":\"Test Fixture 01\"},\"level_id\":\"e537d463-475b-43c3-a650-184566c68bc9\",\"display_point\":{\"type\":\"Point\",\"coordinates\":[-121.8888983,37.3295292]},\"places_category\":\"desk\"}}"
-        },
-        {
-            "placeId": "67149ec1-4b99-42d4-88a4-d92cd23cb606",
-            "id": "005eb3b8-c95d-4d35-a8a0-22d3cb4d6997",
-            "properties": "{\"id\":\"005eb3b8-c95d-4d35-a8a0-22d3cb4d6997\",\"type\":\"Feature\",\"feature_type\":\"fixture\",\"geometry\":{\"type\":\"Polygon\",\"coordinates\":[[[-121.8889415,37.3295396],[-121.8889137,37.329503],[-121.8889082,37.3294956],[-121.888907,37.3294941],[-121.8888551,37.3295189],[-121.8888895,37.3295644],[-121.8889415,37.3295396]]]},\"properties\":{\"name\":{\"en\":\"Test Fixture 02\"},\"level_id\":\"e537d463-475b-43c3-a650-184566c68bc9\",\"display_point\":{\"type\":\"Point\",\"coordinates\":[-121.8888983,37.3295292]},\"places_category\":\"desk\",\"directory_id\":\"67149ec1-4b99-42d4-88a4-d92cd23cb606\"}}"
-        }
-    ]
+  "value": [
+    {
+      "placeId": null,
+      "id": "005eb3b8-c95d-4d35-a8a0-22d3cb4d6998",
+      "properties": "{\"id\":\"005eb3b8-c95d-4d35-a8a0-22d3cb4d6998\",\"type\":\"Feature\",\"feature_type\":\"fixture\",\"geometry\":{\"type\":\"Polygon\",\"coordinates\":[[[-121.8889415,37.3295396],[-121.8889137,37.329503],[-121.8889082,37.3294956],[-121.888907,37.3294941],[-121.8888551,37.3295189],[-121.8888895,37.3295644],[-121.8889415,37.3295396]]]},\"properties\":{\"name\":{\"en\":\"Test Fixture 01\"},\"level_id\":\"e537d463-475b-43c3-a650-184566c68bc9\",\"display_point\":{\"type\":\"Point\",\"coordinates\":[-121.8888983,37.3295292]},\"places_category\":\"desk\"}}"
+    },
+    {
+      "placeId": "67149ec1-4b99-42d4-88a4-d92cd23cb606",
+      "id": "005eb3b8-c95d-4d35-a8a0-22d3cb4d6997",
+      "properties": "{\"id\":\"005eb3b8-c95d-4d35-a8a0-22d3cb4d6997\",\"type\":\"Feature\",\"feature_type\":\"fixture\",\"geometry\":{\"type\":\"Polygon\",\"coordinates\":[[[-121.8889415,37.3295396],[-121.8889137,37.329503],[-121.8889082,37.3294956],[-121.888907,37.3294941],[-121.8888551,37.3295189],[-121.8888895,37.3295644],[-121.8889415,37.3295396]]]},\"properties\":{\"name\":{\"en\":\"Test Fixture 02\"},\"level_id\":\"e537d463-475b-43c3-a650-184566c68bc9\",\"display_point\":{\"type\":\"Point\",\"coordinates\":[-121.8888983,37.3295292]},\"places_category\":\"desk\",\"directory_id\":\"67149ec1-4b99-42d4-88a4-d92cd23cb606\"}}"
+    }
+  ]
 }
-
 ```
 
