@@ -60,7 +60,7 @@ In the request body, provide a JSON object with the following parameters.
 | callbackUri       |String                                    |Allows bots to provide a specific callback URI for the concurrent call to receive later notifications. If this property isn't set, the bot's global callback URI is used instead. I must be `https`.    |
 |acceptedModalities|String collection                         |The list of accepted modalities. Possible values are: `audio`, `video`, `videoBasedScreenSharing`. Required for answering a call. |
 | callOptions            | [incomingCallOptions](../resources/incomingcalloptions.md)                                                         | The call options.   |
-| mediaConfig       | [appHostedMediaConfig](../resources/apphostedmediaconfig.md) or [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md) |The media configuration. (Required)                                                                                                            |
+| mediaConfig       | [appHostedMediaConfig](../resources/apphostedmediaconfig.md) or [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md) |The media configuration. Required.                                                                                                            |
 | participantCapacity | Int32 | The number of participants that the application can handle for the call, for [Teams policy-based recording](/microsoftteams/teams-recording-policy) scenario.                                                     |
 
 ## Response
@@ -72,7 +72,6 @@ The following example shows how to call this API.
 #### Request
 The following example shows the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "call-answer"
@@ -94,41 +93,12 @@ Content-Length: 211
   "callOptions": {
     "@odata.type": "#microsoft.graph.incomingCallOptions",
     "isContentSharingNotificationEnabled": true,
-    "isDeltaRosterEnabled": true
+    "isDeltaRosterEnabled": true,
+    "isInteractiveRosterEnabled": true
   },
   "participantCapacity": 200
 }
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/call-answer-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/call-answer-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/call-answer-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/call-answer-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/call-answer-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/call-answer-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/call-answer-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 #### Response
 The following example shows the response.
