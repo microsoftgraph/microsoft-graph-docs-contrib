@@ -71,7 +71,7 @@ The following example shows a request.
 }
 -->
 ``` http
-POST /places/30ca79af-ecb7-46c2-a14b-afe264a91543/microsoft.graph.building/ingestMapFile
+POST https://graph.microsoft.com/beta/places/30ca79af-ecb7-46c2-a14b-afe264a91543/microsoft.graph.building/ingestMapFile
 Content-Type: application/json
 
 {
