@@ -28,6 +28,7 @@ For the list of API operations for managing this resource type, see the [authent
 |:---|:---|:---|
 |authenticationEventsFlowId|String|The identifier of the authenticationEventsFlow object. Inherited from [authenticationEventListener](../resources/authenticationeventlistener.md).|
 |conditions|[authenticationConditions](../resources/authenticationconditions.md)|The conditions on which this authenticationEventListener should trigger. Inherited from [authenticationEventListener](../resources/authenticationeventlistener.md).|
+|displayName|String|The display name of the fraud protection provider configuration. Inherited from [authenticationEventListener](../resources/authenticationeventlistener.md).|
 |handler|[onAttributeCollectionSubmitHandler](../resources/onattributecollectionsubmithandler.md)|Configuration for what to invoke if the event resolves to this listener. |
 |id|String|Identifier for this authenticationEventListener. Inherited from [entity](../resources/entity.md).|
 |priority|Int32|The priority of this listener. Between 0 (lower priority) and 1000 (higher priority). Inherited from [authenticationEventListener](../resources/authenticationeventlistener.md).|

@@ -1,0 +1,39 @@
+---
+title: "fraudProtectionConfiguration resource type"
+description: "**TODO: Add Description**"
+author: "more-rasika"
+ms.date: 08/05/2025
+ms.localizationpriority: medium
+ms.subservice: "identity-and-sign-in
+doc_type: resourcePageType
+---
+
+# fraudProtectionConfiguration resource type
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Represents the configuration settings for a third-party fraud protection provider in Microsoft Entra External ID.
+This is an abstract type.
+
+
+## Properties
+None.
+
+## Relationships
+None.
+
+## JSON representation
+The following JSON representation shows the resource type.
+<!-- {
+  "blockType": "resource",
+  "@odata.type": "microsoft.graph.fraudProtectionConfiguration"
+}
+-->
+``` json
+{
+  "@odata.type": "#microsoft.graph.fraudProtectionConfiguration"
+}
+```
+

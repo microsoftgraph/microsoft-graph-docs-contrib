@@ -32,6 +32,7 @@ For the list of API operations for managing this resource type, see the [authent
 |priority|Int32|Required. Inherited from [authenticationEventListener](../resources/authenticationeventlistener.md).|
 |authenticationEventsFlowId|String| Inherited from [authenticationEventListener](../resources/authenticationeventlistener.md).|
 |handler|[onAttributeCollectionHandler](../resources/onattributecollectionhandler.md)|Required. Configuration for what to invoke if the event resolves to this listener.|
+|displayName|String|The display name of the fraud protection provider configuration. Inherited from [authenticationEventListener](../resources/authenticationeventlistener.md).|
 
 
 ## Relationships
