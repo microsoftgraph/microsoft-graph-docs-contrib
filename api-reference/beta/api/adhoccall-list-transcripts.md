@@ -1,25 +1,26 @@
 ---
-title: "List transcripts-adhoc calls"
-description: "Retrieve the list of transcripts associated with a Microsoft Teams adhoc call."
+title: "List transcripts-ad hoc calls"
+description: "Retrieve the list of transcripts associated with an ad hoc call."
 author: "SukanyaDas-MSFT"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: apiPageType
-ms.date: 08/01/2025
+ms.date: 08/20/2025
 ---
 
-# List transcripts for adhoc calls
+# List transcripts for ad hoc calls
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the list of [callTranscript](../resources/calltranscript.md) objects associated with an [adhocCall](/graph/api/resources/adhoccall?view=graph-rest-beta). This API supports the retrieval of call recordings from unscheduled PSTN, VoIP and group calls . However, private channel meetings are supported, but with limitations.
+Get the list of [callTranscript](../resources/calltranscript.md) objects associated with an [adhocCall](/graph/api/resources/adhoccall?view=graph-rest-beta). This API supports the retrieval of call recordings from unscheduled PSTN, VoIP and group calls . Private channel meetings are not supported.
 
 > [!NOTE]
-> * This API works differently in one or more national clouds. For details, see [Microsoft Teams API implementation differences in national clouds](/graph/teamwork-national-cloud-differences).
-
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+>
+> - For ad hoc calls:
+>   - Subscribe to [notifications](/graph/teams-changenotifications-callrecording-and-calltranscript) to get access to the call id.
+>   - To obtain the call id while the call is still ongoing, have the app get called through [App-hosted/service-hosted Calls](https://learn.microsoft.com/en-us/graph/api/resources/call?view=graph-rest-1.0) and use the `callChainId`.
 
 ## Permissions
 
@@ -32,14 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
 |Application|CallTranscripts.Read.All, CallTranscripts.Read.Chat|Not available.|
 
-> **Note:** The application permissions `CallTranscripts.Read.Chat` will use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent). The `CallTranscripts.Read.Chat` permission applies only to unscheduled PSTN, VoIP and group calls
-
 To use application permissions for this API, tenant administrators must create an application access policy and grant it to a user. It authorizes the app configured in the policy to fetch ad hoc calls or related artifacts on behalf of that user (with the user ID specified in the request path). For more information, see [Allow applications to access ad hoc calls on behalf of a user](/graph/cloud-communication-online-meeting-application-access-policy).
-
-> [!NOTE]
->
-> * This API is available for a meeting that hasn't expired. For more information, see [Limits and specifications for Microsoft Teams](/microsoftteams/limits-specifications-teams#meeting-expiration).
-> * This API is also available to users who are part of the meeting calendar invite, which applies to both private chat meetings and channel meetings.
 
 ## HTTP request
 
@@ -48,20 +42,6 @@ To use application permissions for this API, tenant administrators must create a
 GET /me/adhocCalls/{call-id}/transcripts
 GET /users/{user-id}/adhocCalls/{call-id}/transcripts
 ```
-
-## Optional query parameters
-
-This method supports the `$select`, `$filter`, and `$top`  [OData query parameters](/graph/query-parameters) to customize the response.
-
-## Request headers
-
-| Header       | Value |
-|:---------------|:--------|
-|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
-
-## Request body
-
-Don't supply a request body for this method.
 
 ## Response
 
@@ -98,7 +78,8 @@ GET https://graph.microsoft.com/beta/me/adhocCalls/af630fe0-04d3-4559-8cf9-91fe4
 
 The following example shows the response.
 
-> **Note:** The response object shown here might be shortened for readability.
+> [!NOTE]
+> The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

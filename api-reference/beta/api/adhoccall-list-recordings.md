@@ -1,29 +1,26 @@
 ---
-title: "List recordings-adhoc calls"
-description: "Get the list of callRecording objects associated with an adhoc call."
+title: "List recordings-ad hoc calls"
+description: "Get the list of callRecording objects associated with an ad hoc call."
 author: "SukanyaDas-MSFT"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: apiPageType
-ms.date: 08/01/2025
+ms.date: 08/20/2025
 ---
 
-# List recordings for adhoc calls
+# List recordings for ad hoc calls
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the list of [callRecording](../resources/callrecording.md) objects associated with an [adhocCall](/graph/api/resources/adhoccall?view=graph-rest-beta). This API supports the retrieval of call recordings from unscheduled PSTN, VoIP and group calls.
+Get the list of [callRecording](../resources/callrecording.md) objects associated with an [ad hocCall](/graph/api/resources/adhoccall?view=graph-rest-beta). This API supports the retrieval of call recordings from unscheduled PSTN, VoIP and group calls.
 
 > [!NOTE]
-> * This API works differently in one or more national clouds. For details, see [Microsoft Teams API implementation differences in national clouds](/graph/teamwork-national-cloud-differences).
-
-This API is available in the following [national cloud deployments](/graph/deployments).
-
-| Global service     | US Government L4 | US Government L5 (DOD) | China operated by 21Vianet |
-|--------------------|------------------|------------------------|----------------------------|
-| :white_check_mark: | :x:              | :x:                    | :x:                        |
+>
+> - For ad hoc calls:
+>   - Subscribe to [notifications](/graph/teams-changenotifications-callrecording-and-calltranscript) to get access to the call id.
+>   - To obtain the call id while the call is still ongoing, have the app get called through [App-hosted/service-hosted Calls](https://learn.microsoft.com/en-us/graph/api/resources/call?view=graph-rest-1.0) and use the `callChainId`.
 
 ## Permissions
 
@@ -36,10 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
 |Application|CallRecordings.Read.All, CallRecordings.Read.Chat|Not available.|
 
-> [!NOTE]
-> The application permission `CallRecordings.Read.Chat` will use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent). This permission applies only to unscheduled unscheduled PSTN, VoIP and group calls . However, private channel meetings supported, but with limitations.
-
-To use application permission for this API, tenant administrators must create an application access policy and grant it to a user. It authorizes the app configured in the policy to fetch the adhoc calls online meeting artifacts on behalf of that user (with the user ID specified in the request path). For more information, see [Allow applications to access adhoc calls on behalf of a user](/graph/cloud-communication-adhoc-call-application-access-policy).
+To use application permission for this API, tenant administrators must create an application access policy and grant it to a user. It authorizes the app configured in the policy to fetch the ad hoc calls online meeting artifacts on behalf of that user (with the user ID specified in the request path). For more information, see [Allow applications to access ad hoc calls on behalf of a user](/graph/cloud-communication-adhoc-call-application-access-policy).
 
 ## HTTP request
 
@@ -47,6 +41,7 @@ To use application permission for this API, tenant administrators must create an
 GET /me/adhocCalls/{callid}/recordings  
 GET /users/{userId}/adhocCalls/{callId}/recordings/{recordingId}  
 ```
+
 ## Response
 
 If successful, this method returns a `200 OK` response code and a collection of [callRecording](../resources/callrecording.md) objects in the response body.
@@ -74,7 +69,8 @@ GET  https://graph.microsoft.com/beta/users/b935e675-5e67-48b9-8d45-249d5f88e964
 
 The following example shows the response.
 
-> **Note:** The response object shown here might be shortened for readability.
+> [!NOTE]
+> The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

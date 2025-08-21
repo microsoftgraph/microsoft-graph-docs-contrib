@@ -51,7 +51,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ``` http
 GET /users/{usersId}/onlineMeetings/getAllRecordings(meetingOrganizerUserId='{userId}',startDateTime={startDateTime})/delta
 ```
->**Note:** The request fails if you don't pass the function parameter **meetingOrganizerUserId** for online meetings
+> [!NOTE] 
+> The request fails if you don't pass the function parameter **meetingOrganizerUserId** for online meetings
 
 ## Query parameters
 

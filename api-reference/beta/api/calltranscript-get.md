@@ -1,11 +1,11 @@
 ---
 title: "Get callTranscript"
-description: "Retrieve a single callTranscript associated with a Microsoft Teams online meeting and adhoc call."
+description: "Retrieve a single callTranscript associated with a Microsoft Teams online meeting and ad hoc call."
 author: "mankadnandan"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: apiPageType
-ms.date: 08/07/2025
+ms.date: 08/20/2025
 ---
 
 # Get callTranscript
@@ -14,12 +14,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a callTranscript object associated with a scheduled [onlineMeeting](../resources/onlinemeeting.md) and an [adhoc call](/graph/api/resources/adhoccall?view=graph-rest-beta). These APIs supports the retrieval of call transcripts from private chat meetings and channel meetings. Private channel meetings are not supported for online calls at this time, but for adhoc calls they are supported with limited permissions.
+Retrieve a callTranscript object associated with a scheduled [onlineMeeting](../resources/onlinemeeting.md) and an ad hoc call. These APIs supports the retrieval of call transcripts from private chat meetings and channel meetings. Private channel meetings are not supported both for online meetings and ad hoc calls. 
 
-Retrieving the transcript returns the metadata of the single transcript associated with the online meeting or an adhoc call. Retrieving the content of the transcript returns the stream of text associated with the transcript.
+Retrieving the transcript returns the metadata of the single transcript associated with an online meeting or an ad hoc call. Retrieving the content of the transcript returns the stream of text associated with the transcript.
 
 > [!NOTE]
->
+> For online meetings:
+
 > * This is a metered API. For more information, see [payment models for meeting APIs](/graph/teams-licenses#payment-models-for-meeting-apis).
 > * This API doesn't support meetings created using the [create onlineMeeting API](/graph/api/application-post-onlinemeetings) that are not associated with an event on the user's calendar.
 > * This API might not return a call transcript if multiple meetings are scheduled under a single channel post thread.
@@ -35,17 +36,19 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "ignored", "name": "calltranscript_get" } -->
 | Permission type| Least privileged permissions|Higher privileged permissions|
 | :---| :---| :--- |
-|Delegated (work or school account)| **For online meetings**: OnlineMeetingTranscript.Read.All <br> <br> **For adhoc calls**: CallTranscripts.Read.All| Not available.|
+|Delegated (work or school account)| **For online meetings**: OnlineMeetingTranscript.Read.All <br> <br> **For adhoc calls**: <br> CallTranscripts.Read.All| Not available.|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
 |Application|**For online meetings**:<br> <ul><li>OnlineMeetingTranscript.Read.All</li> <li> OnlineMeetingTranscript.Read.Chat</li></ul> <br>**For adhoc calls**: <br> <ul><li>CallTranscripts.Read.All</li> <li>CallTranscripts.Read.Chat</li></ul>| Not available.|
 
 > [!NOTE]
+
 > * The application permissions `OnlineMeetingTranscript.Read.Chat` uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent). The `OnlineMeetingTranscript.Read.Chat` permission applies only to scheduled private chat meetings, not to channel meetings. 
-> * Resource-specific consent is not applicable for `CallTranscripts.Read.Chat` yet, but will be enabled soon.  
+> * Resource-specific consent is not applicable for `CallTranscripts.Read.Chat`.  
 
 To use application permissions for this API, tenant administrators must create an application access policy and grant it to a user. It authorizes the app configured in the policy to fetch online meetings and/or online meeting artifacts on behalf of that user (with the user ID specified in the request path). For more information, see [Allow applications to access online meetings on behalf of a user](/graph/cloud-communication-online-meeting-application-access-policy).
 
 > [!NOTE]
+> For online meetings:
 >
 > * This API is available for a meeting that hasn't expired. For more information, see [Limits and specifications for Microsoft Teams](/microsoftteams/limits-specifications-teams#meeting-expiration).
 > * This API is also available to users who are part of the meeting calendar invite, which applies to both private chat meetings and channel meetings.
@@ -54,7 +57,7 @@ To use application permissions for this API, tenant administrators must create a
 
 <!-- { "blockType": "ignored" } -->
 
-**For an online meeting**
+### For an online meeting
 
 Get a single transcript:
 
@@ -70,7 +73,7 @@ GET me/onlineMeetings/{meetingId}/transcripts/{transcriptId}/content
 GET users/{userId}/onlineMeetings/{meetingId}/transcripts/{transcriptId}/content
 ```
 
-**For an adhoc call**
+### For an adhoc call
 
 Get a single transcript:
 
@@ -110,6 +113,7 @@ If successful, this method returns a `200 OK` response code and a [callTranscrip
 > The docx format for transcripts is deprecated as of May 31, 2023.
 
 ### Example 1: Get a call transcript for online meetings
+
 #### Request
 
 # [HTTP](#tab/http2)
@@ -185,7 +189,9 @@ Content-type: application/json
     }
 }
 ```
+
 ### Example 2: Get a call transcript for adhoc call
+
 #### Request
 
 # [HTTP](#tab/http)
@@ -236,6 +242,7 @@ Content-type: application/json
 ```
 
 ### Example 3: Get a callTranscript content for an online meeting
+
 #### Request
 
 # [HTTP](#tab/http-content)
@@ -295,7 +302,9 @@ WEBVTT
 0:0:0.0 --> 0:0:5.320
 <v User Name>This is a transcript test.</v>
 ```
+
 ### Example 4: Get a callTranscript content for an adhoc call
+
 #### Request
 
 # [HTTP](#tab/http-content1)
@@ -308,6 +317,7 @@ WEBVTT
 ``` http
 GET https://graph.microsoft.com/beta/users/ba321e0d-79ee-478d-8e28-85a19507f456/adhocCalls/MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ/transcripts/MSMjMCMjNzU3ODc2ZDYtOTcwMi00MDhkLWFkNDItOTE2ZDNmZjkwZGY4/content
 ```
+
 #### Response
 
 Response contains bytes for the transcript in the body. `content-type` header specifies type of the transcript content. Negative offsets indicate that the transcription began while the conversation was ongoing.
@@ -328,7 +338,9 @@ WEBVTT
 0:0:0.0 --> 0:0:5.320
 <v User Name>This is a transcript test.</v>
 ```
+
 ### Example 5: Get a callTranscript content specifying $format query param
+
 #### Request
 
 # [HTTP](#tab/http-format)
@@ -389,7 +401,9 @@ WEBVTT
 ```
 
 ### Example 6: Get a callTranscript metadataContent for online meetings
+
 #### Request
+
 # [HTTP](#tab/http5)
 <!-- {
   "blockType": "request",
@@ -428,6 +442,7 @@ GET https://graph.microsoft.com/beta/users/ba321e0d-79ee-478d-8e28-85a19507f456/
 ---
 
 #### Response
+
 > **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -445,7 +460,9 @@ WEBVTT
 {"startDateTime":"2023-03-08T08:22:30.0461639+00:00","endDateTime":"2023-03-08T08:22:31.5261639+00:00","speakerName":"User Name","spokenText":"This is a transcription test.","spokenLanguage":"en-us"}
 ```
 ### Example 7: Get a callTranscript metadataContent for adhoc calls
+
 #### Request
+
 # [HTTP](#tab/http6)
 <!-- {
   "blockType": "request",
@@ -456,7 +473,9 @@ WEBVTT
 ``` http
 GET https://graph.microsoft.com/beta/users/ba321e0d-79ee-478d-8e28-85a19507f456/adhoccalls/MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ/transcripts/MSMjMCMjNzU3ODc2ZDYtOTcwMi00MDhkLWFkNDItOTE2ZDNmZjkwZGY4/metadataContent
 ```
+
 #### Response
+
 > [!NOTE] 
 >The response object shown here might be shortened for readability.
 
