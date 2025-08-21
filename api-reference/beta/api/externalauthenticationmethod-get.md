@@ -25,14 +25,19 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "externalauthenticationmethod-get-permissions"
+  "name": "externalauthenticationmethod-get-permissions",
+  "requestUrls": ["GET /me/authentication/externalAuthenticationMethods/{externalAuthenticationMethodId}"]
 }
 -->
 [!INCLUDE [permissions-table](../includes/permissions/externalauthenticationmethod-get-permissions.md)]
 
 ### Permissions acting on other users
 
-<!-- { "blockType": "permissions", "name": "externalauthenticationmethod_get_2" } -->
+<!-- { 
+  "blockType": "permissions", 
+  "name": "externalauthenticationmethod_get_2",
+  "requestUrls": ["GET /users/{usersId}/authentication/externalAuthenticationMethods/{externalAuthenticationMethodId}"]
+} -->
 [!INCLUDE [permissions-table](../includes/permissions/externalauthenticationmethod-get-2-permissions.md)]
 
 [!INCLUDE [rbac-authentication-methods-apis-read-others](../includes/rbac-for-apis/rbac-authentication-methods-apis-read-others.md)]
