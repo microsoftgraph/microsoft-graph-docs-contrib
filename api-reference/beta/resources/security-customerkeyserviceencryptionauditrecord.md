@@ -1,8 +1,8 @@
 ---
 title: "customerKeyServiceEncryptionAuditRecord resource type"
-description: "**TODO: Add Description**"
-author: "diksha27"
-ms.subservice: compliance
+description: "Represents an audit record for customer key service encryption operations in Microsoft 365."
+author: "palakagrawaljk"
+ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ---
@@ -12,10 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
-
-Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).
+Represents an audit record for customer key service encryption operations in Microsoft 365. This resource captures audit information related to customer-managed encryption key operations, including key creation, rotation, and usage in service encryption scenarios. It provides visibility into encryption key management activities for compliance and security monitoring.
 
 
 ## Properties

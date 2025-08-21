@@ -1,8 +1,8 @@
 ---
 title: "cpsPolicyConfigAuditRecord resource type"
-description: "**TODO: Add Description**"
-author: "diksha27"
-ms.subservice: compliance
+description: "Represents an audit record for policy configuration changes in the Customer Protection Service (CPS)."
+author: "palakagrawaljk"
+ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ---
@@ -12,10 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
-
-Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).
+Represents an audit record for policy configuration changes in the Customer Protection Service (CPS). This resource captures detailed audit information about modifications to policy configurations, including creation, updates, and deletions of policy settings related to customer protection.
 
 
 ## Properties

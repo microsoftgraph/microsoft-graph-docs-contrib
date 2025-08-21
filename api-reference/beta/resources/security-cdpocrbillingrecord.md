@@ -1,8 +1,8 @@
 ---
 title: "cdpOcrBillingRecord resource type"
-description: "**TODO: Add Description**"
-author: "diksha27"
-ms.subservice: compliance
+description: "Represents a record related to cdpOcrBillingRecord recordType."
+author: "palakagrawaljk"
+ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ---
@@ -12,15 +12,14 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents a record related to cdpOcrBillingRecord recordType.
 
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).
 
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+None.
 
 ## Relationships
 None.

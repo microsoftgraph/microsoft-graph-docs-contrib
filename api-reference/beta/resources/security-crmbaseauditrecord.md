@@ -1,8 +1,8 @@
 ---
 title: "crmBaseAuditRecord resource type"
-description: "**TODO: Add Description**"
-author: "diksha27"
-ms.subservice: compliance
+description: "Represents a base audit record for Customer Relationship Management (CRM) system activities."
+author: "palakagrawaljk"
+ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ---
@@ -12,10 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
-
-Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).
+Represents a base audit record for Customer Relationship Management (CRM) system activities. This resource serves as the foundation for CRM-related audit records, capturing core audit information about actions taken within CRM systems that may have security or compliance implications.
 
 
 ## Properties

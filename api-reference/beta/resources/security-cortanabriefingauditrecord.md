@@ -1,8 +1,8 @@
 ---
 title: "cortanaBriefingAuditRecord resource type"
-description: "**TODO: Add Description**"
-author: "diksha27"
-ms.subservice: compliance
+description: "Represents an audit record for Cortana Briefing activities and configuration changes."
+author: "palakagrawaljk"
+ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ---
@@ -12,10 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
-
-Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).
+Represents an audit record for Cortana Briefing activities and configuration changes. This resource captures audit information related to Cortana Briefing interactions, settings modifications, and personalization features in a security and compliance context.
 
 
 ## Properties

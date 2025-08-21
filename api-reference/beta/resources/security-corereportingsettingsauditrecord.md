@@ -1,8 +1,8 @@
 ---
 title: "coreReportingSettingsAuditRecord resource type"
-description: "**TODO: Add Description**"
-author: "diksha27"
-ms.subservice: compliance
+description: "Represents an audit record for changes to core reporting settings in security and compliance services."
+author: "palakagrawaljk"
+ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ---
@@ -12,10 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
-
-Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).
+Represents an audit record for changes to core reporting settings in security and compliance services. This resource captures configuration changes to reporting functionality, including modifications to report schedules, formats, and distribution settings.
 
 
 ## Properties
