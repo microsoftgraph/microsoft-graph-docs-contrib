@@ -17,7 +17,7 @@ Namespace: microsoft.graph.security
 Export results from an estimated [ediscoverySearch](../resources/security-ediscoverysearch.md). For details, see [Manage a collection estimate](/purview/ediscovery-create-draft-collection#manage-a-collection-estimate).
 
 >[!NOTE]
-> Usage of eDiscovery APIs for tenants with Standard Microsoft (e.g. E3) licenses requires a subscription to Purview pay-as-you-go billing. For more information, see: [Billing in eDiscovery](/purview/edisc-billing).
+> Usage of eDiscovery APIs for tenants with Standard Microsoft (for example, E3) licenses requires a subscription to Purview pay-as-you-go billing. For more information, see [Billing in eDiscovery](/purview/edisc-billing).
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
