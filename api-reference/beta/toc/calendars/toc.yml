@@ -294,6 +294,8 @@ items:
       href: ../../resources/building.md
     - name: BaseMapFeature
       href: ../../resources/basemapfeature.md
+    - name: BuildingMap
+      href: ../../resources/buildingmap.md
     - name: FootprintMap
       href: ../../resources/footprintmap.md
     - name: LevelMap
