@@ -11,7 +11,7 @@ ms.topic: how-to
 
 # Get change notifications for meeting transcripts and recordings using Microsoft Graph
 
-Change notifications enable you to subscribe to changes to transcripts and recordings. You can get notified whenever a [transcript](/graph/api/resources/calltranscript) or a [recording](/graph/api/resources/callrecording) is available after a scheduled online meeting or an adhoc call.
+Change notifications enable you to subscribe to changes to transcripts and recordings. You can get notified whenever a [transcript](/graph/api/resources/calltranscript) or a [recording](/graph/api/resources/callrecording) is available after a scheduled online meeting or an ad hoc call.
 
 This article describes scenarios for the **transcript** and **recording** resources. For more information, see [Change notifications for Microsoft Teams resources](teams-change-notification-in-microsoft-teams-overview.md).
 
@@ -20,7 +20,7 @@ This article describes scenarios for the **transcript** and **recording** resour
 
 ## Subscribe to transcripts available at the tenant-level
 
-This sections describes the methods to subscribe to transcripts available at the tenant level for both online meetings and adhoc calls.
+This sections describes the methods to subscribe to transcripts available at the tenant level for both online meetings and ad hoc calls.
 
 ### **For online meetings**
 
@@ -60,10 +60,10 @@ Content-Type: application/json
 }
 ```
 
-### **For adhoc calls**
+### **For ad hoc calls**
 
-To obtain change notifications for any transcript available for any adhoc call in a tenant, subscribe to `/communications/adhocCalls/getAllTranscripts`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification.
-The notification for a transcript is sent only if the subscription happens before the transcription starts. This subscription supports [adhoc calls](/graph/api/resources/adhoccall?view=graph-rest-beta).
+To obtain change notifications for any transcript available for any ad hoc call in a tenant, subscribe to `/communications/adhocCalls/getAllTranscripts`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification.
+The notification for a transcript is sent only if the subscription happens before the transcription starts. This subscription supports [ad hoc calls](/graph/api/resources/adhoccall?view=graph-rest-beta).
 
 > [!NOTE] 
 > This resource type is available only on the `/beta` endpoint.
@@ -71,7 +71,7 @@ The notification for a transcript is sent only if the subscription happens befor
 
 #### Permissions
 
-One of the following permissions is required to subscribe to `/communications/adhocCalls/getAllTranscripts` for adhoc calls. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to subscribe to `/communications/adhocCalls/getAllTranscripts` for ad hoc calls. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
@@ -81,7 +81,7 @@ One of the following permissions is required to subscribe to `/communications/ad
 
 #### Example
 
-The following example shows how to subscribe to transcripts available at the tenant level for an adhoc call.
+The following example shows how to subscribe to transcripts available at the tenant level for an ad hoc call.
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -101,7 +101,8 @@ Content-Type: application/json
 ```
 
 ## Subscribe to transcripts available for a particular meeting or call instance
-This sections describes the methods to subscribe to transcripts available for a particular meeting or call instance, for both online meetings and adhoc calls.
+
+This sections describes the methods to subscribe to transcripts available for a particular meeting or call instance, for both online meetings and ad hoc calls.
 
 ### **For online meetings**
 
@@ -124,13 +125,13 @@ One of the following permissions is required to subscribe to `communications/onl
 > - The `OnlineMeetingTranscript.Read.Chat` permission uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent). This permission applies only to scheduled private chat meetings, not to channel meetings.
 > - To subscribe to any transcript available for a particular online meeting by using only required [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent) permissions, use the `useResourceSpecificConsentBasedAuthorization=true` query parameter with your resource string.
 
-### **For adhoc calls**
+### **For ad hoc calls**
 
-To get change notifications for any transcript available for a particular adhoc call, subscribe to `/communications/adhocCalls/{callId}/transcripts`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification. The notification for a transcript is sent only if the subscription happens before the transcription starts. This subscription supports unscheduled [adhoc calls](/graph/api/resources/adhoccall?view=graph-rest-beta).
+To get change notifications for any transcript available for a particular ad hoc call, subscribe to `/communications/adhocCalls/{callId}/transcripts`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification. The notification for a transcript is sent only if the subscription happens before the transcription starts. This subscription supports unscheduled [adhoc calls](/graph/api/resources/adhoccall?view=graph-rest-beta).
 
 > [!NOTE]
 > - This resource type is available only on the `/beta` endpoint.
-> - Enumeration is not available on AdhocCalls.
+> - Enumeration is not available on ad hocCalls.
 > - Subscribe to the appropriately scoped 2 separate resources (one for OnlineMeetings and other for AdhocCalls). These will supply the URLs to use for fetching the data.
 
 #### Permissions
@@ -162,7 +163,7 @@ Content-Type: application/json
 }
 ```
 
-#### Example 2: Subscribe to transcripts available for a particular adhoc call using classic permissions
+#### Example 2: Subscribe to transcripts available for a particular ad hoc call using classic permissions
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -199,8 +200,9 @@ Content-Type: application/json
   "clientState": "{secretClientState}"
 }
 ```
+
 ## Subscribe to transcripts available at the user level
-This sections describes the methods to subscribe to transcripts available at the user level for both online meetings and adhoc calls.
+This sections describes the methods to subscribe to transcripts available at the user level for both online meetings and ad hoc calls.
 
 ### **For online meetings**
 
@@ -239,43 +241,6 @@ Content-Type: application/json
   "clientState": "{secretClientState}"
 }
 ```
-### **For adhoc calls**
-
-To get change notifications for any transcript available for any online meeting organized by a specific user, subscribe to `/users/{userId}/adhocCalls/getAllTranscripts`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification. The notification for a transcript is sent only if the subscription happens before the transcription starts.
-
-> [!NOTE] 
-> This subscription does not support private channel meetings.
-
-#### Permissions
-
-One of the following permissions is required to subscribe to `/users/{userId}/adhocCalls/getAllTranscripts`. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
-
-| Permission type                        | Permissions (from least to most privileged) |
-| :------------------------------------- | :------------------------------------------ |
-| Delegated (work or school account)     | CallTranscripts.Read.All           |
-| Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | CallTranscripts.Read.All           |
-
-#### Example
-
-The following example shows how to subscribe to transcripts available for any adhoc calls made by a specific user.
-
-<!-- { "blockType": "ignored" } -->
-```http
-POST https://graph.microsoft.com/beta/subscriptions
-Content-Type: application/json
-
-{
-  "changeType": "created",
-  "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
-  "resource": "/users/{userId}/adhocCalls/getAllTranscripts",
-  "includeResourceData": true,
-  "encryptionCertificate": "{base64encodedCertificate}",
-  "encryptionCertificateId": "{customId}",
-  "expirationDateTime": "2023-03-20T11:00:00.0000000Z",
-  "clientState": "{secretClientState}"
-}
-```
 
 ## Subscribe to transcripts available for any online meeting where a specific Teams app is installed
 This section describes the methods to subscribe to transcripts available for any online meeting where a specific Teams app is installed.
@@ -301,26 +266,6 @@ One of the following permissions is required to subscribe to `appCatalogs/teamsA
 > - The `OnlineMeetingTranscript.Read.Chat` permission uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 > - To subscribe to transcripts available for any online meeting where a specific Teams app is installed using only required [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent) permissions, use the `useResourceSpecificConsentBasedAuthorization=true` query parameter with your resource string.
 
-**For adhoc calls**
-
-To get change notifications for any transcript available for any adhoc call where a specific Teams app is installed, subscribe to `appCatalogs/teamsApps/{teams-app-id}/installedToChats/getAllTranscripts`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification. The notification for a transcript is sent only if the subscription happens before the transcription starts.
-
-> [!NOTE]
-> This resource type is available only on the `/beta` endpoint.
-
-#### Permissions
-
-One of the following permissions is required to subscribe to `appCatalogs/teamsApps/{teams-app-id}/installedToChats/getAllTranscripts`. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
-
-| Permission type                        | Permissions (from least to most privileged) |
-| :------------------------------------- | :------------------------------------------ |
-| Delegated (work or school account)     | Not supported.                              |
-| Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | CallTranscripts.Read.All (RSC),CallTranscripts.Read.Chat|
-
-> [!NOTE]
-> - The `CallTranscripts.Read.Chat` permission will use resource-specific consent when the feature will be available.
-
 #### Example 1: Subscribe to transcripts available for any online meeting where a specific Teams app is installed using classic permissions
 
 <!-- { "blockType": "ignored" } -->
@@ -338,7 +283,8 @@ Content-Type: application/json
   "clientState": "{secretClientState}"
 }
 ```
-#### Example 2: Subscribe to transcripts available for any adhoc call where a specific Teams app is installed using classic permissions
+
+#### Example 2: Subscribe to transcripts available for any ad hoc call where a specific Teams app is installed using classic permissions
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -355,6 +301,7 @@ Content-Type: application/json
   "clientState": "{secretClientState}"
 }
 ```
+
 #### Example 3: Subscribe to transcripts available for any online meeting where a specific Teams app is installed using only resource-specific consent permissions
 
 <!-- { "blockType": "ignored" } -->
@@ -372,8 +319,10 @@ Content-Type: application/json
   "clientState": "{secretClientState}"
 }
 ```
+
 ## Subscribe to recordings available at the tenant level
-This section describes the methods to subscribe to recordings available at the tenant level for both online meetings and adhoc calls.
+
+This section describes the methods to subscribe to recordings available at the tenant level for both online meetings and ad hoc calls.
 
 ### **For online meetings**
 
@@ -392,9 +341,9 @@ One of the following permissions is required to subscribe to `communications/onl
 | Delegated (personal Microsoft account) | Not supported.                              |
 | Application                            | OnlineMeetingRecording.Read.All             |
 
-### **For adhoc calls**
+### **For ad hoc calls**
 
-To get change notifications for any recording available for any adhoc call in a tenant, subscribe to `communications/adhocCalls/getAllRecordings`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification.
+To get change notifications for any recording available for any ad hoc call in a tenant, subscribe to `communications/adhocCalls/getAllRecordings`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification.
 
 > [!NOTE]
 > This resource type is available only on the `/beta` endpoint.
@@ -432,7 +381,7 @@ Content-Type: application/json
 ```
 #### Example 2
 
-The following example shows how to subscribe to recordings available at the tenant level for adhoc calls.
+The following example shows how to subscribe to recordings available at the tenant level for ad hoc calls.
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -451,8 +400,9 @@ Content-Type: application/json
 }
 ```
 
-## Subscribe to recordings available for a all online meeting and adhoc call instances
-This section describes the methods to subscribe to recordings available for a particular online meeting or adhoc call instance.
+## Subscribe to recordings available for a all online meeting and ad hoc call instances
+
+This section describes the methods to subscribe to recordings available for a particular online meeting or ad hoc call instance.
 
 ### **For online meetings**
 
@@ -475,16 +425,16 @@ One of the following permissions is required to subscribe to `communications/onl
 > - The `OnlineMeetingRecording.Read.Chat` permission uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent). This permission applies only to scheduled private chat meetings, not to channel meetings.
 > - To subscribe to any recording available for a particular online meeting using only required [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent) permissions, use the `useResourceSpecificConsentBasedAuthorization=true` query parameter with your resource string.
 
-### **For adhoc calls**
+### **For ad hoc calls**
 
-To get change notifications for any recording available for a particular adhoc call, subscribe to `users/{userId}/adhocCalls/getAllRecordings`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification.
+To get change notifications for any recording available for a particular ad hoc call, subscribe to `users/{userId}/adhocCalls/getAllRecordings`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification.
 
 > [!NOTE]
 > This resource type is available only on the `/beta` endpoint.
 
 #### Permissions
 
-One of the following permissions is required to subscribe to `users/{userId}/adhocCalls/getAllRecordings`. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to subscribe to `users/{userId}/ad hocCalls/getAllRecordings`. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
@@ -510,8 +460,9 @@ Content-Type: application/json
   "clientState": "{secretClientState}"
 }
 ```
+
 ## Subscribe to recordings available at the user level
-This section describes the methods to subscribe to recordings available at the user level for both online meetings and adhoc calls.
+This section describes the methods to subscribe to recordings available at the user level for both online meetings and ad hoc calls.
 
 ### **For online meetings**
 
@@ -530,7 +481,7 @@ One of the following permissions is required to subscribe to `users/{userId}/onl
 | Delegated (personal Microsoft account) | Not supported.                              |
 | Application                            | OnlineMeetingRecording.Read.All             |
 
-#### **For adhoc calls**
+#### **For ad hoc calls**
 
 To get change notifications for any recording available for a particular adhoc call, subscribe to `users/{userId}/adhocCalls/{callId}/recordings`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification.
 
@@ -567,9 +518,10 @@ Content-Type: application/json
   "clientState": "{secretClientState}"
 }
 ```
+
 #### Example 2
 
-The following example shows how to subscribe to recordings available for any adhoc call made by a specific user.
+The following example shows how to subscribe to recordings available for any ad hoc call made by a specific user.
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -589,9 +541,11 @@ Content-Type: application/json
 ```
 
 ## Subscribe to recordings available for any online meeting where a specific Teams app is installed
-This section describes the methods to subscribe to recordings available for any online meeting or adhoc call where a specific Teams app is installed.
+
+This section describes the methods to subscribe to recordings available for any online meeting or ad hoc call where a specific Teams app is installed.
 
 ### For online meetings
+
 To get change notifications for any recording available for any online meeting where a specific Teams app is installed, subscribe to `appCatalogs/teamsApps/{teams-app-id}/installedToOnlineMeetings/getAllRecordings`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification. This subscription supports scheduled [onlineMeetings](/graph/api/resources/onlinemeeting) but not channel meetings.
 
 > [!NOTE]
@@ -608,29 +562,8 @@ One of the following permissions is required to subscribe to `appCatalogs/teamsA
 | Application                            | OnlineMeetingRecording.Read.Chat, OnlineMeetingRecording.Read.All |
 
 > [!NOTE]
-
-> - The `OnlineMeetingRecording.Read.Chat` permission uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
-> - To subscribe to recordings available for any online meeting where a specific Teams app is installed using only required [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent) permissions, use the `useResourceSpecificConsentBasedAuthorization=true` query parameter with your resource string.
-
-### **For adhoc calls**
-To get change notifications for any recording available for any adhoc call where a specific Teams app is installed, subscribe to `appCatalogs/teamsApps/{teams-app-id}/installedToChats/getAllRecordings`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification.
-
-> [!NOTE]
-> This resource type is available only on the `/beta` endpoint.
-
-#### Permissions
-
-One of the following permissions is required to subscribe to `appCatalogs/teamsApps/{teams-app-id}/installedToChats/getAllRecordings`. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
-
-| Permission type                        | Permissions (from least to most privileged) |
-| :------------------------------------- | :------------------------------------------ |
-| Delegated (work or school account)     | Not supported.                               |
-| Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | CallRecordings.Read.All,(RSC)CallRecordings.Read.Chat |
-
-> [!NOTE]
 >
-> - The `CallRecordings.Read.Chat` permission uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
+> - The `OnlineMeetingRecording.Read.Chat` permission uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 > - To subscribe to recordings available for any online meeting where a specific Teams app is installed using only required [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent) permissions, use the `useResourceSpecificConsentBasedAuthorization=true` query parameter with your resource string.
 
 #### Example 1: Subscribe to recordings available for any online meeting where a specific Teams app is installed using required classic permissions
@@ -643,24 +576,6 @@ Content-Type: application/json
   "changeType": "created",
   "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
   "resource": "appCatalogs/teamsApps/386bbcdb-1e1c-4f3f-b7d0-ad7b9ea6cf7c/installedToOnlineMeetings/getAllRecordings",
-  "includeResourceData": true,
-  "encryptionCertificate": "{base64encodedCertificate}",
-  "encryptionCertificateId": "{customId}",
-  "expirationDateTime": "2023-03-20T11:00:00.0000000Z",
-  "clientState": "{secretClientState}"
-}
-```
-
-#### Example 2: Subscribe to recordings available for any adhoc call where a specific Teams app is installed using required classic permissions
-
-<!-- { "blockType": "ignored" } -->
-```http
-POST https://graph.microsoft.com/beta/subscriptions
-Content-Type: application/json
-{
-  "changeType": "created",
-  "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
-  "resource": "appCatalogs/teamsApps/{teams-app-id}/installedToChats/getAllRecordings",
   "includeResourceData": true,
   "encryptionCertificate": "{base64encodedCertificate}",
   "encryptionCertificateId": "{customId}",
@@ -730,7 +645,7 @@ For notifications with resource data, the payload looks like the following.
 }
 ```
 
-#### **For adhoc calls**
+#### **For ad hoc calls**
 
 <!-- { "blockType": "ignored" } -->
 ```json
@@ -761,7 +676,6 @@ For notifications with resource data, the payload looks like the following.
   ]
 }
 ```
-
 The decrypted notification payload looks like the following. The payload conforms to the [transcript](/graph/api/resources/calltranscript) schema. The payload is similar to the ones returned by GET operations.
 
 > [!NOTE]
@@ -791,8 +705,7 @@ The decrypted notification payload looks like the following. The payload conform
   }
 }
 ```
-
-#### **For adhoc calls**
+#### **For ad hoc calls**
 
 <!-- { "blockType": "ignored" } -->
 ```json
@@ -823,6 +736,7 @@ For notifications with resource data, the payload looks like the following.
 > The payload object shown here is shortened for readability.
 
 #### **For online meetings**
+
 <!-- { "blockType": "ignored" } -->
 ```json
 {
@@ -853,7 +767,8 @@ For notifications with resource data, the payload looks like the following.
 }
 ```
 
-#### **For adhoc calls**
+#### **For ad hoc calls**
+
 <!-- { "blockType": "ignored" } -->
 ```json
 {
@@ -910,7 +825,7 @@ Notifications without resource data give you the resource ID to make GET calls t
 
 For notifications without resource data, the payload looks like the following.
 
-> [!NOTE] 
+> [!NOTE]
 > The payload object shown here is shortened for readability.
 
 #### **For online meetings**
@@ -932,7 +847,7 @@ For notifications without resource data, the payload looks like the following.
 }
 ```
 
-#### **For adhoc calls**
+#### **For ad hoc calls**
 
 <!-- { "blockType": "ignored" } -->
 ```json
@@ -950,6 +865,7 @@ For notifications without resource data, the payload looks like the following.
   }
 }
 ```
+
 For notifications without resource data, the payload looks like the following.
 
 > [!NOTE]
@@ -974,7 +890,7 @@ For notifications without resource data, the payload looks like the following.
 }
 ```
 
-#### **For adhoc calls**
+#### **For ad hoc calls**
 
 <!-- { "blockType": "ignored" } -->
 ```json

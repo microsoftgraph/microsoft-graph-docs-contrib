@@ -26,7 +26,9 @@ Inherits from [entity](../resources/entity.md).
 |[Get](../api/callaiinsight-get.md)|[callAiInsight](../resources/callaiinsight.md)| Get a [callAiInsight](../resources/callaiinsight.md) object associated with an [onlineMeeting](../resources/onlinemeeting.md).|
 
 ## Properties
+
 |Property|Type|Description|
+
 |:---|:---|:---|
 |actionItems|[actionItem](../resources/actionitem.md) collection|The collection of AI-generated action items. Read-only.|
 |callId|String|The ID for the online meeting call for which the **callAiInsight** was generated. Read-only.|
@@ -38,9 +40,10 @@ Inherits from [entity](../resources/entity.md).
 |viewpoint|[callAiInsightViewPoint](../resources/callaiinsightviewpoint.md)|The caller-specific properties of the **callAiInsight** entity. Read-only.|
 
 ## Relationships
-None.
+None
 
 ## JSON representation
+
 The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
