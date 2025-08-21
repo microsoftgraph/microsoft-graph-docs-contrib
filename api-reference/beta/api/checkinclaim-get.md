@@ -39,7 +39,7 @@ GET /places/{placesId}/checkIns/{calendarEventId}
 
 ## Optional query parameters
 
-This method supports the `$select` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+We do not support any OData query parameter for this API.
 
 ## Request headers
 
