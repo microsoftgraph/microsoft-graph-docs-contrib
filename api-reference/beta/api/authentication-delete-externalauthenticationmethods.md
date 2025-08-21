@@ -68,7 +68,6 @@ DELETE https://graph.microsoft.com/beta/users/{id}/authentication/externalAuthen
 
 ---
 
-
 ### Response
 
 The following example shows the response.

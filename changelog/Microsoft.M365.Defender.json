@@ -2933,6 +2933,80 @@
       "CreatedDateTime": "2025-07-24T08:49:07.5855472Z",
       "WorkloadArea": "Security",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "073825ba-a2f4-4e27-b4c3-b5db3401ace2",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "action",
+          "ChangeType": "Addition",
+          "Description": "Added the **action** enumeration type.",
+          "Target": "action"
+        },
+        {
+          "Id": "073825ba-a2f4-4e27-b4c3-b5db3401ace2",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "identityProvider",
+          "ChangeType": "Addition",
+          "Description": "Added the **identityProvider** enumeration type.",
+          "Target": "identityProvider"
+        },
+        {
+          "Id": "073825ba-a2f4-4e27-b4c3-b5db3401ace2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "user",
+          "ChangeType": "Addition",
+          "Description": "Added the [user](https://learn.microsoft.com/en-us/graph/api/resources/security-user?view=graph-rest-beta) resource.",
+          "Target": "user"
+        },
+        {
+          "Id": "073825ba-a2f4-4e27-b4c3-b5db3401ace2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "account",
+          "ChangeType": "Addition",
+          "Description": "Added the [account](https://learn.microsoft.com/en-us/graph/api/resources/security-account?view=graph-rest-beta) resource.",
+          "Target": "account"
+        },
+        {
+          "Id": "073825ba-a2f4-4e27-b4c3-b5db3401ace2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "identityaccounts",
+          "ChangeType": "Addition",
+          "Description": "Added the [identityAccounts](https://learn.microsoft.com/en-us/graph/api/resources/security-identityaccounts?view=graph-rest-beta) resource.",
+          "Target": "identityaccounts"
+        },
+        {
+          "Id": "073825ba-a2f4-4e27-b4c3-b5db3401ace2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "invokeactionresult", 
+          "ChangeType": "Addition",
+          "Description": "Added the [invokeActionResult](https://learn.microsoft.com/en-us/graph/api/resources/security-invokeactionresult?view=graph-rest-beta) resource.",
+          "Target": "invokeactionresult"
+        },
+        {
+          "Id": "073825ba-a2f4-4e27-b4c3-b5db3401ace2",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "identityaccounts",
+          "ChangeType": "Addition",
+          "Description": "Added the **identityaccounts** relationship to the [identityContainer](https://learn.microsoft.com/en-us/graph/api/resources/security-identityContainer?view=graph-rest-beta) resource.",
+          "Target": "identityContainer"
+        },
+        {
+          "Id": "073825ba-a2f4-4e27-b4c3-b5db3401ace2",
+          "ApiChange": "Method",
+          "ChangedApiName": "invokeAction",
+          "ChangeType": "Addition",  
+          "Description": "Added the [invokeAction](https://learn.microsoft.com/en-us/graph/api/security-identityaccounts-invokeaction?view=graph-rest-beta) method to the [identityAccounts](https://learn.microsoft.com/en-us/graph/api/resources/security-identityaccounts?view=graph-rest-beta) resource.",
+          "Target": "sensor"
+        }
+      ],
+      "Id": "073825ba-a2f4-4e27-b4c3-b5db3401ace2",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-08-14T13:42:04.531087Z",
+      "WorkloadArea": "Security",
+      "SubArea": "Identities"
     }
   ]
 }

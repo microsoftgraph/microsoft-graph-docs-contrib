@@ -5159,6 +5159,16 @@ Possible values for user account types (group membership), per Windows definitio
 |failed|
 |unknownFutureValue|
 
+### reportAction values
+
+|Member|
+|:---|
+|unknown|
+|junk|
+|notJunk|
+|phish|
+|unknownFutureValue|
+
 ### errorCorrectionLevel values 
 
 |Member|

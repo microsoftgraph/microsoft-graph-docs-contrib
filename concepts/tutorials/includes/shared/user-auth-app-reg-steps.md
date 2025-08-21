@@ -6,7 +6,7 @@ ms.localizationpriority: medium
 
 ## Register an application for user authentication
 
-Register an application that supports [user authentication](/graph/auth-v2-user) using [device code flow](/azure/active-directory/develop/v2-oauth2-device-code). You can register an application using the Microsoft Entra admin center, or by using the [Microsoft Graph PowerShell SDK](/graph/powershell/get-started).
+Register an application that supports [user authentication](/graph/auth-v2-user) using [device code flow](/azure/active-directory/develop/v2-oauth2-device-code). You can register an application using the Microsoft Entra admin center, or by using the [Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/get-started).
 
 ### [Microsoft Entra admin center](#tab/aad)
 

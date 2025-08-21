@@ -93,6 +93,10 @@ GET https://graph.microsoft.com/beta/education/reports/readingCoachPassages
 [!INCLUDE [sample-code](../includes/snippets/php/get-readingcoachpassages-1-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-readingcoachpassages-1-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/get-readingcoachpassages-1-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -188,6 +192,10 @@ GET https://graph.microsoft.com/beta/education/reports/readingCoachPassages?$fil
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-readingcoachpassages-2-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-readingcoachpassages-2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
