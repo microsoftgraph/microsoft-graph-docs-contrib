@@ -222,6 +222,7 @@
       "complexTypes": [
         "artifactQuery",
         "notificationRecipients",
+        "protectionPolicyArtifactCount",
         "restorePointSearchResponse",
         "restorePointSearchResult",
         "retentionSetting",
