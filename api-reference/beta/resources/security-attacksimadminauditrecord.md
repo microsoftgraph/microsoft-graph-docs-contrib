@@ -1,6 +1,6 @@
 ---
 title: "attackSimAdminAuditRecord resource type"
-description: "**TODO: Add Description**"
+description: "Represents a record related to attackSimAdminAuditRecord recordType."
 author: "diksha27"
 ms.subservice: compliance
 ms.localizationpriority: medium
@@ -12,8 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+Represents a record related to attackSimAdminAuditRecord recordType.
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).
 

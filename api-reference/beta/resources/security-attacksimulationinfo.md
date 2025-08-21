@@ -1,7 +1,7 @@
 ---
 title: "attackSimulationInfo resource type"
 description: "Represents attack simulation information for threat submission."
-author: "caigen"
+author: "palakagrawaljk"
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: resourcePageType

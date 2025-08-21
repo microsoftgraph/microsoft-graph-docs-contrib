@@ -1,7 +1,7 @@
 ---
 title: "categoryTemplate resource type"
 description: "Specifies a group of similar types of content in a particular department."
-author: "sseth"
+author: "palakagrawaljk"
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: resourcePageType
