@@ -23,6 +23,7 @@ Update the properties of an [authenticationEventListener](../resources/authentic
 - [onAttributeCollectionStartListener](../resources/onattributecollectionstartlistener.md) resource type
 - [onAttributeCollectionSubmitListener](../resources/onattributecollectionsubmitlistener.md) resource type
 - [onPhoneMethodLoadStartListener](../resources/onphonemethodloadstartlistener.md) resource type
+- [onFraudProtectionLoadStartListener](../resources/onFraudProtectionLoadStartListener.md) resource type
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -67,7 +68,9 @@ You must specify the **@odata.type** property and the value of the [authenticati
 |handler|[onAttributeCollectionStartHandler](../resources/onattributecollectionstarthandler.md)|The handler to invoke when conditions are met. Can be updated for the **onAttributeCollectionStartListener** listener type.|
 |handler|[onAttributeCollectionSubmitHandler](../resources/onattributecollectionsubmithandler.md)|The handler to invoke when conditions are met. Can be updated for the **onAttributeCollectionSubmitListener** listener type.|
 |handler|[onPhoneMethodLoadStartHandler](../resources/onphonemethodloadstarthandler.md) | The handler to invoke when conditions are met. Can be updated for the **onPhoneMethodStartListener** type. |
+|handler|[onFraudProtectionLoadStartHandler](../resources/onFraudProtectionLoadStartHandler.md) | The handler to invoke when conditions are met. Can be updated for the **onFraudProtectionLoadStartHandler** type. |
 |priority|Int32|The priority of this handler. Between 0 (lower priority) and 1000 (higher priority). Required.|
+|displayName|String|The display name of fraud protection provider configuration. Optional.|
 
 ## Response
 

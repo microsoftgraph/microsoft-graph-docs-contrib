@@ -1,20 +1,20 @@
 ---
-title: "Delete onInteractiveAuthFlowStartListener"
-description: "Delete an onInteractiveAuthFlowStartListener object."
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+title: "Delete fraudProtectionProvider"
+description: "Delete a fraudProtectionProvider object."
+author: "more-rasika"
 ms.date: 08/05/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
-# Delete onInteractiveAuthFlowStartListener
+# Delete fraudProtectionProvider
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete an onInteractiveAuthFlowStartListener object.
+Delete a fraudProtectionProvider object.
 
 ## Permissions
 
@@ -22,10 +22,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "oninteractiveauthflowstartlistener-delete-permissions"
+  "name": "riskpreventioncontainer-delete-fraudprotectionproviders-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/oninteractiveauthflowstartlistener-delete-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/riskpreventioncontainer-delete-fraudprotectionproviders-permissions.md)]
 
 ## HTTP request
 
@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-DELETE /onInteractiveAuthFlowStartListener
+DELETE /fraudProtectionProviderConfiguration/fraudProtectionProvider/$ref
 ```
 
 ## Request headers
@@ -58,11 +58,11 @@ If successful, this method returns a `204 No Content` response code.
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "delete_oninteractiveauthflowstartlistener"
+  "name": "delete_fraudprotectionprovider"
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/onInteractiveAuthFlowStartListener
+DELETE https://graph.microsoft.com/beta/fraudProtectionProviderConfiguration/fraudProtectionProvider
 ```
 
 

@@ -50,12 +50,11 @@ PATCH /onFraudProtectionLoadStartListener
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|**TODO: Add Description** Inherited from [authenticationEventListener](../resources/authenticationeventlistener.md). Optional.|
-|priority|Int32|**TODO: Add Description** Inherited from [authenticationEventListener](../resources/authenticationeventlistener.md). Required.|
-|conditions|[authenticationConditions](../resources/authenticationconditions.md)|**TODO: Add Description** Inherited from [authenticationEventListener](../resources/authenticationeventlistener.md). Optional.|
-|authenticationEventsFlowId|String|**TODO: Add Description** Inherited from [authenticationEventListener](../resources/authenticationeventlistener.md). Optional.|
-|handler|[onFraudProtectionLoadStartHandler](../resources/onfraudprotectionloadstarthandler.md)|**TODO: Add Description** Optional.|
-
+|authenticationEventsFlowId|String|The identifier of the authentication events flow associated with this listener. Inherited from [authenticationEventListener](../resources/authenticationeventlistener.md). Optional.|
+|conditions|[authenticationConditions](../resources/authenticationconditions.md)|Defines the conditions under which this listener is triggered. Inherited from [authenticationEventListener](../resources/authenticationeventlistener.md). Optional.|
+|displayName|String|The display name of the fraud protection provider configuration. Inherited from [authenticationEventListener](../resources/authenticationeventlistener.md). Optional.|
+|handler|[onFraudProtectionLoadStartHandler](../resources/onfraudprotectionloadstarthandler.md)| Configuration for what to invoke if the event resolves to this listener. Optional.|
+|priority|Int32|Indicates the execution priority of the listener relative to other listeners. Between 0 (lower priority) and 1000 (higher priority). Inherited from [authenticationEventListener](../resources/authenticationeventlistener.md). Required.|
 
 
 ## Response
