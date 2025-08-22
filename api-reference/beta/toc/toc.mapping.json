@@ -262,21 +262,28 @@
           "resources": [
             "place",
             "building",
-            "floor",
-            "section",
+            "buildingMap",
             "desk",
+            "fixtureMap",
+            "floor",
+            "footprintMap",
+            "levelMap",
             "room",
-            "workspace",
-            "roomList"
+            "roomList",
+            "section",
+            "sectionMap",
+            "unitMap",
+            "workspace"
           ],
           "complexTypes": [
-            "resourceLink",
-            "mailboxDetails",
-            "placeMode",
             "assignedPlaceMode",
             "dropInPlaceMode",
+            "importBuildingMapSetting",
+            "mailboxDetails",
+            "offlinePlaceMode",
+            "placeMode",
             "reservablePlaceMode",
-            "offlinePlaceMode"
+            "resourceLink"
           ],
            "childNodes": [
             {
