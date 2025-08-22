@@ -1,6 +1,6 @@
 ---
 title: "Delete sectionMap"
-description: "Delete a sectionMap object."
+description: "Delete a sectionMap object on a specified floor."
 author: tiwarisakshi02
 ms.date: 06/12/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a [section](../resources/sectionmap.md) on a given floor.
+Delete a [sectionMap](../resources/sectionmap.md) object on a specified floor.
 
 ## Permissions
 
@@ -68,7 +68,6 @@ The following example shows a request.
 ``` http
 DELETE https://graph.microsoft.com/beta/places/151e85a7-c0b8-4519-997e-1a0858255704/microsoft.graph.building/map/levels/e537d463-475b-43c3-a650-184566c68bc9/sections/005eb3b8-c95d-4d35-a8a0-22d6nb4d6003
 ```
-
 
 ### Response
 
