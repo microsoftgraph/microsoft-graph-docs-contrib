@@ -7,6 +7,8 @@ ms.custom: scenarios:getting-started
 ms.date: 08/06/2025
 ms.topic: article
 ---
+[!IMPORTANT]
+As of August 25, 2025 the Teams APIs listed on this page are no longer metered. No action is required on your part if you have previously configured billing for your application. No billing configuration is required to use the APIs from August 25, 2025 forward. This does not apply to the SharePoint and OneDrive for Business [assignSensitivityLabel] (/graph/api/driveitem-assignsensitivitylabel) API which is still metered.
 
 # Metered APIs and services in Microsoft Graph
 

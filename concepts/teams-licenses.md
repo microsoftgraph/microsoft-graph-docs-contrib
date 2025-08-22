@@ -9,6 +9,9 @@ ms.custom: sfi-image-nochange
 ms.topic: article
 ---
 
+[!IMPORTANT]
+As of August 25, 2025 the Teams APIs listed on this page are no longer metered. No action is required on your part if you have previously configured billing for your application. No billing configuration is required to use the APIs from August 25, 2025 forward. This page is provided for reference as the final billing cycle for metered Microsoft Teams APIs completes.
+
 # Payment models and licensing requirements for Microsoft Teams APIs
 
 This article describes the payment models and licensing requirements for Microsoft Teams APIs in Microsoft Graph. For a high-level description of metered APIs and services in Microsoft Graph, see [Overview of metered APIs and services in Microsoft Graph](metered-api-overview.md).
