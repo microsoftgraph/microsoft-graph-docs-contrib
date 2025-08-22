@@ -7,7 +7,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "federatedTokenValidationPolicy",
           "ChangeType": "Change",
-          "Description": "The [federatedTokenValidationPolicy](https://learn.microsoft.com/en-us/graph/api/resources/federatedTokenValidationPolicy?view=graph-rest-beta) APIs now support management by lesser-privileged Entra roles including Security Administrator, Hybrid Identity Administrator, and External Identity Provider Administrator roles, reducing dependency on the Global Administrator role.",
+          "Description": "The [federatedTokenValidationPolicy](https://learn.microsoft.com/en-us/graph/api/resources/federatedTokenValidationPolicy?view=graph-rest-beta) APIs now support management by lesser-privileged Entra roles including Security Administrator, Hybrid Identity Administrator, and External Identity Provider Administrator roles, removing dependency on the Global Administrator role.",
           "Target": "federatedTokenValidationPolicy"
         }
       ],
