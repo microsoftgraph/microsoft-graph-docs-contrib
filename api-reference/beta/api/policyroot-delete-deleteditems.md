@@ -1,6 +1,6 @@
 ﻿---
-title: "List policyDeletableItem objects"
-description: "Get a list of the policyDeletableItem objects and their properties."
+title: "Delete policyDeletableRoot"
+description: "Delete a policyDeletableRoot object."
 author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
 ms.date: 08/11/2025
 ms.localizationpriority: medium
@@ -8,13 +8,13 @@ ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](
 doc_type: apiPageType
 ---
 
-# List policyDeletableItem objects
+# Delete policyDeletableRoot
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the policyDeletableItem objects and their properties.
+Delete a policyDeletableRoot object.
 
 ## Permissions
 
@@ -22,10 +22,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "policydeletableitem-list-permissions"
+  "name": "policyroot-delete-deleteditems-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/policydeletableitem-list-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/policyroot-delete-deleteditems-permissions.md)]
 
 ## HTTP request
 
@@ -34,12 +34,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET ** Collection URI for microsoft.graph.policyDeletableItem not found
+DELETE /policies/deletedItems/$ref
 ```
-
-## Optional query parameters
-
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -53,7 +49,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [policyDeletableItem](../resources/policydeletableitem.md) objects in the response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
@@ -62,11 +58,11 @@ If successful, this method returns a `200 OK` response code and a collection of 
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "list_policydeletableitem"
+  "name": "delete_policydeletableroot"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta** Collection URI for microsoft.graph.policyDeletableItem not found
+DELETE https://graph.microsoft.com/beta/policies/deletedItems
 ```
 
 
@@ -76,21 +72,10 @@ The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.policyDeletableItem"
+  "truncated": true
 }
 -->
 ``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.policyDeletableItem",
-      "deletedDateTime": "String (timestamp)"
-    }
-  ]
-}
+HTTP/1.1 204 No Content
 ```
 

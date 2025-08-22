@@ -1,20 +1,20 @@
 ﻿---
-title: "Get policyDeletableItem"
-description: "Read the properties and relationships of policyDeletableItem object."
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+title: "Restore a named location"
+description: "Restore a deleted named location object."
+author: "*ashyasingh"
 ms.date: 08/11/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice: "entra-sign-in
 doc_type: apiPageType
 ---
 
-# Get policyDeletableItem
+# namedLocation: restore
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of [policyDeletableItem](../resources/policydeletableitem.md) object.
+Restore a deleted [namedLocation](../resources/namedlocation.md)
 
 ## Permissions
 
@@ -22,10 +22,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "policydeletableitem-get-permissions"
+  "name": "namedlocation-restore-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/policydeletableitem-get-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/namedlocation-restore-permissions.md)]
 
 ## HTTP request
 
@@ -34,12 +34,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /policyDeletableItem
+POST /identity/conditionalAccess/deletedItems/namedLocations/{namedLocationId}/restore
 ```
-
-## Optional query parameters
-
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -53,7 +49,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [policyDeletableItem](../resources/policydeletableitem.md) object in the response body.
+If successful, this action returns a `200 OK` response code and a [namedLocation](../resources/namedlocation.md) in the response body.
 
 ## Examples
 
@@ -62,13 +58,12 @@ If successful, this method returns a `200 OK` response code and a [policyDeletab
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "get_policydeletableitem"
+  "name": "namedlocationthis.restore"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/policyDeletableItem
+POST https://graph.microsoft.com/beta/identity/conditionalAccess/deletedItems/namedLocations/b5b69bc9-3e36-4fa0-bc7f-f0e5fd3aebf1/restore
 ```
-
 
 ### Response
 
@@ -77,7 +72,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.policyDeletableItem"
+  "@odata.type": "microsoft.graph.namedLocation"
 }
 -->
 ``` http
@@ -86,8 +81,12 @@ Content-Type: application/json
 
 {
   "value": {
-    "@odata.type": "#microsoft.graph.policyDeletableItem",
-    "deletedDateTime": "String (timestamp)"
+    "@odata.type": "#microsoft.graph.namedLocation",
+    "deletedDateTime": "String (timestamp)",
+    "id": "String (identifier)",
+    "displayName": "String",
+    "createdDateTime": "String (timestamp)",
+    "modifiedDateTime": "String (timestamp)"
   }
 }
 ```

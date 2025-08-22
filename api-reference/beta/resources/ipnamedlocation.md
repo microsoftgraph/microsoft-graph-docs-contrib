@@ -1,12 +1,11 @@
----
+﻿---
 title: "ipNamedLocation resource type"
-description: "Represents a Microsoft Entra ID named location defined by IP ranges. Named locations are custom rules that define network locations that can then be used in a Conditional Access policy."
+description: "**TODO: Add Description**"
+author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.date: 08/11/2025
 ms.localizationpriority: medium
-author: "lisaychuang"
-ms.reviewer: conditionalaccesspm
-ms.subservice: "entra-sign-in"
+ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
 doc_type: resourcePageType
-ms.date: 05/23/2024
 ---
 
 # ipNamedLocation resource type
@@ -15,70 +14,59 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a Microsoft Entra ID named location defined by IP ranges. Named locations are custom rules that define network locations that can then be used in a Conditional Access policy.
+**TODO: Add Description**
 
-Inherits from [namedLocation](../resources/namedLocation.md)
+
+Inherits from [namedLocation](../resources/namedlocation.md).
+
 
 ## Methods
-
-| Method       | Return Type | Description |
-|:-------------|:------------|:------------|
-| [List](../api/conditionalaccessroot-list-namedlocations.md) | [ipNamedLocation](ipNamedLocation.md) collection | Get all the **ipNamedLocation** objects in the organization. |
-| [Create](../api/conditionalaccessroot-post-namedlocations.md) | [ipNamedLocation](ipNamedLocation.md) | Create a new **ipNamedLocation** object. |
-| [Get](../api/ipnamedlocation-get.md) | [ipNamedLocation](ipnamedlocation.md) | Read the properties and relationships of an **ipNamedLocation** object. |
-| [Update](../api/ipnamedlocation-update.md) | [ipNamedLocation](ipnamedlocation.md) | Update an **ipNamedLocation** object. |
-| [Delete](../api/ipnamedlocation-delete.md) | None | Delete an **ipNamedLocation** object. |
+|Method|Return type|Description|
+|:---|:---|:---|
+|[List](../api/ipnamedlocation-list.md)|[ipNamedLocation](../resources/ipnamedlocation.md) collection|Get a list of the ipNamedLocation objects and their properties.|
+|[Get](../api/ipnamedlocation-get.md)|[ipNamedLocation](../resources/ipnamedlocation.md)|Read the properties and relationships of [ipNamedLocation](../resources/ipnamedlocation.md) object.|
+|[Update](../api/ipnamedlocation-update.md)|[ipNamedLocation](../resources/ipnamedlocation.md)|Update the properties of an ipNamedLocation object.|
+|[Delete](../api/ipnamedlocation-delete.md)|None|Delete an ipNamedLocation object.|
+|[restore](../api/ipnamedlocation-restore.md)|[namedLocation](../resources/namedlocation.md)|**TODO: Add Description**|
 
 ## Properties
-
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-|createdDateTime|DateTimeOffset|The Timestamp type represents creation date and time of the location using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only. Inherited from [namedLocation](../resources/namedLocation.md).|
-|displayName|String|Human-readable name of the location. Required.|
-|id|String|Identifier of a namedLocation object. Read-only. Inherited from [namedLocation](../resources/namedLocation.md).|
-|ipRanges|[ipRange](iprange.md) collection|List of IP address ranges in IPv4 CIDR format (for example, 1.2.3.4/32) or any allowable IPv6 format from IETF RFC5969. Required.|
-|isTrusted|Boolean|`true` if this location is explicitly trusted. Optional. Default value is `false`.|
-|modifiedDateTime|DateTimeOffset|The Timestamp type represents last modified date and time of the location using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only. Inherited from [namedLocation](../resources/namedLocation.md).|
+|Property|Type|Description|
+|:---|:---|:---|
+|createdDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [namedLocation](../resources/namedlocation.md).|
+|deletedDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [policyDeletableItem](../resources/policydeletableitem.md).|
+|displayName|String|**TODO: Add Description** Inherited from [namedLocation](../resources/namedlocation.md).|
+|id|String|**TODO: Add Description** Inherited from [namedLocation](../resources/namedlocation.md). Inherits from [entity](../resources/entity.md)|
+|ipRanges|[ipRange](../resources/intune-iprange.md) collection|**TODO: Add Description**|
+|isTrusted|Boolean|**TODO: Add Description**|
+|modifiedDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [namedLocation](../resources/namedlocation.md).|
 
 ## Relationships
-
 None.
 
 ## JSON representation
-
 The following JSON representation shows the resource type.
-
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.ipNamedLocation"
-}-->
-
-```json
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.ipNamedLocation",
+  "baseType": "microsoft.graph.namedLocation",
+  "openType": false
+}
+-->
+``` json
 {
-  "createdDateTime": "String (timestamp)",
-  "displayName": "String",
+  "@odata.type": "#microsoft.graph.ipNamedLocation",
+  "deletedDateTime": "String (timestamp)",
   "id": "String (identifier)",
-  "ipRanges": [{"@odata.type": "microsoft.graph.ipRange"}],
-  "isTrusted": true,
-  "modifiedDateTime": "String (timestamp)"
+  "displayName": "String",
+  "createdDateTime": "String (timestamp)",
+  "modifiedDateTime": "String (timestamp)",
+  "ipRanges": [
+    {
+      "@odata.type": "microsoft.graph.iPv6Range"
+    }
+  ],
+  "isTrusted": "Boolean"
 }
 ```
 
-## Related content
-
-+ [What is Conditional Access?](/azure/active-directory/conditional-access/overview)
-+ [Using the location condition in a Conditional Access policy](/azure/active-directory/conditional-access/location-condition)
-
-
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "ipNamedLocation resource",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->

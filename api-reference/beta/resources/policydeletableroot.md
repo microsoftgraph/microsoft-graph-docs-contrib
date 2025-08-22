@@ -1,10 +1,10 @@
----
+﻿---
 title: "policyDeletableRoot resource type"
-description: "Represents a container for policy types in Microsoft Entra that support soft-delete functionality."
-author: "ashyasingh"
-ms.date: 06/18/2025
+description: "**TODO: Add Description**"
+author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.date: 08/11/2025
 ms.localizationpriority: medium
-ms.subservice: "entra-sign-in"
+ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
 doc_type: resourcePageType
 ---
 
@@ -14,20 +14,35 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a container for policy types in Microsoft Entra that support soft-delete functionality.
+**TODO: Add Description**
+
+
+Inherits from [entity](../resources/entity.md).
 
 
 ## Methods
-None
+|Method|Return type|Description|
+|:---|:---|:---|
+|[List](../api/policyroot-list-deleteditems.md)|[policyDeletableRoot](../resources/policydeletableroot.md) collection|Get a list of the policyDeletableRoot objects and their properties.|
+|[Create](../api/policyroot-post-deleteditems.md)|[policyDeletableRoot](../resources/policydeletableroot.md)|Create a new policyDeletableRoot object.|
+|[Get](../api/policydeletableroot-get.md)|[policyDeletableRoot](../resources/policydeletableroot.md)|Read the properties and relationships of [policyDeletableRoot](../resources/policydeletableroot.md) object.|
+|[Update](../api/policydeletableroot-update.md)|[policyDeletableRoot](../resources/policydeletableroot.md)|Update the properties of a policyDeletableRoot object.|
+|[Delete](../api/policyroot-delete-deleteditems.md)|None|Delete a policyDeletableRoot object.|
+|[List crossTenantPartners](../api/policydeletableroot-list-crosstenantpartners.md)|[crossTenantAccessPolicyConfigurationPartner](../resources/crosstenantaccesspolicyconfigurationpartner.md) collection|**TODO: Add a useful description.**|
+|[Create crossTenantAccessPolicyConfigurationPartner](../api/policydeletableroot-post-crosstenantpartners.md)|[crossTenantAccessPolicyConfigurationPartner](../resources/crosstenantaccesspolicyconfigurationpartner.md)|Create a new crossTenantAccessPolicyConfigurationPartner object.|
+|[List crossTenantSyncPolicyPartners](../api/policydeletableroot-list-crosstenantsyncpolicypartners.md)|[crossTenantIdentitySyncPolicyPartner](../resources/crosstenantidentitysyncpolicypartner.md) collection|**TODO: Add a useful description.**|
+|[Create crossTenantIdentitySyncPolicyPartner](../api/policydeletableroot-post-crosstenantsyncpolicypartners.md)|[crossTenantIdentitySyncPolicyPartner](../resources/crosstenantidentitysyncpolicypartner.md)|Create a new crossTenantIdentitySyncPolicyPartner object.|
 
 ## Properties
-None
+|Property|Type|Description|
+|:---|:---|:---|
+|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md). Inherits from [entity](../resources/entity.md)|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|crossTenantPartners|[crossTenantAccessPolicyConfigurationPartner](../resources/crosstenantaccesspolicyconfigurationpartner.md) collection|Represents the partner-specific configuration for cross-tenant access and tenant restrictions. Cross-tenant access settings include inbound and outbound settings of Microsoft Entra B2B collaboration and B2B direct connect.|
-|crossTenantSyncPolicyPartners|[crossTenantIdentitySyncPolicyPartner](../resources/crosstenantidentitysyncpolicypartner.md) collection|Defines the cross-tenant policy for synchronization of users from a partner tenant. Use this user synchronization policy to streamline collaboration between users in a multi-tenant organization by automating the creation, update, and deletion of users from one tenant to another.|
+|crossTenantPartners|[crossTenantAccessPolicyConfigurationPartner](../resources/crosstenantaccesspolicyconfigurationpartner.md) collection|**TODO: Add Description**|
+|crossTenantSyncPolicyPartners|[crossTenantIdentitySyncPolicyPartner](../resources/crosstenantidentitysyncpolicypartner.md) collection|**TODO: Add Description**|
 
 ## JSON representation
 The following JSON representation shows the resource type.
@@ -45,3 +60,4 @@ The following JSON representation shows the resource type.
   "id": "String (identifier)"
 }
 ```
+

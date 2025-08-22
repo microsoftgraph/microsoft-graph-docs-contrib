@@ -1,22 +1,20 @@
----
-title: "Permanently delete policyDeletableItem"
-description: "Permanently delete a policyDeletableItem object."
-author: "ashyasingh"
-ms.date: 06/18/2025
+﻿---
+title: "Delete policyDeletableItem"
+description: "Delete a policyDeletableItem object."
+author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.date: 08/11/2025
 ms.localizationpriority: medium
-ms.subservice: "entra-sign-in"
+ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
 doc_type: apiPageType
 ---
 
-# Permanently delete policyDeletableItem
+# Delete policyDeletableItem
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Permanently delete a [policyDeletableItem](../resources/policydeletableitem.md) object, which might be one of the following deleted policy types:
-- [crossTenantAccessPolicyConfigurationPartner](../resources/crosstenantaccesspolicyconfigurationpartner.md)
-- [crossTenantIdentitySyncPolicyPartner](../resources/crosstenantidentitysyncpolicypartner.md)
+Delete a policyDeletableItem object.
 
 ## Permissions
 
@@ -24,32 +22,19 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "policydeletableitem-delete-permissions",
-  "requestUrls": ["DELETE /policies/deletedItems/crossTenantPartners/{id}", "DELETE /policies/deletedItems/crossTenantSyncPolicyPartners/{id}"],
-  "mergePermissions": true 
+  "name": "policydeletableitem-delete-permissions"
 }
 -->
 [!INCLUDE [permissions-table](../includes/permissions/policydeletableitem-delete-permissions.md)]
 
 ## HTTP request
 
-Permanently delete a **crossTenantAccessPolicyConfigurationPartner** object:
 <!-- {
   "blockType": "ignored"
 }
 -->
 ``` http
-DELETE /policies/deletedItems/crossTenantPartners/{id}
-```
-
-
-Permanently delete a **crossTenantIdentitySyncPolicyPartner** object:
-<!-- {
-  "blockType": "ignored"
-}
--->
-``` http
-DELETE /policies/deletedItems/crossTenantSyncPolicyPartners/{id}
+DELETE /policyDeletableItem
 ```
 
 ## Request headers
@@ -68,24 +53,23 @@ If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
-### Example 1: Permanently delete a deleted crossTenantAccessPolicyConfigurationPartner object
+### Request
 
-#### Request
-
-The following example shows a request for crossTenantAccessPolicyConfigurationPartner.
+The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "delete_policydeletableitem_crossTenantAccessPolicyConfigurationPartner"
+  "name": "delete_policydeletableitem"
 }
 -->
-```HTTP
-DELETE https://graph.microsoft.com/beta/policies/deletedItems/crossTenantPartners/809cbbd2-2325-4c17-bd51-f8f098db19c8
+``` http
+DELETE https://graph.microsoft.com/beta/policyDeletableItem
 ```
 
 
-#### Response
+### Response
 
 The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -95,29 +79,3 @@ The following example shows the response.
 HTTP/1.1 204 No Content
 ```
 
-### Example 2: Permanently delete a deleted crossTenantIdentitySyncPolicyPartner object
-
-#### Request
-
-The following example shows a request for crossTenantIdentitySyncPolicyPartner.
-<!-- {
-  "blockType": "request",
-  "name": "delete_policydeletableitem_crossTenantIdentitySyncPolicyPartner"
-}
--->
-```HTTP
-DELETE https://graph.microsoft.com/beta/policies/deletedItems/crossTenantSyncPolicyPartners/809cbbd2-2325-4c17-bd51-f8f098db19c8
-```
-
-
-#### Response
-
-The following example shows the response.
-<!-- {
-  "blockType": "response",
-  "truncated": true
-}
--->
-``` http
-HTTP/1.1 204 No Content
-```

@@ -1,6 +1,6 @@
 ﻿---
-title: "List policyDeletableItem objects"
-description: "Get a list of the policyDeletableItem objects and their properties."
+title: "List crossTenantPartners"
+description: "**TODO: Add a useful description.**"
 author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
 ms.date: 08/11/2025
 ms.localizationpriority: medium
@@ -8,13 +8,13 @@ ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](
 doc_type: apiPageType
 ---
 
-# List policyDeletableItem objects
+# List crossTenantPartners
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the policyDeletableItem objects and their properties.
+**TODO: Add a useful description.**
 
 ## Permissions
 
@@ -22,10 +22,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "policydeletableitem-list-permissions"
+  "name": "policydeletableroot-list-crosstenantpartners-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/policydeletableitem-list-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/policydeletableroot-list-crosstenantpartners-permissions.md)]
 
 ## HTTP request
 
@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET ** Collection URI for microsoft.graph.policyDeletableItem not found
+GET /policies/deletedItems/crossTenantPartners
 ```
 
 ## Optional query parameters
@@ -53,7 +53,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [policyDeletableItem](../resources/policydeletableitem.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [crossTenantAccessPolicyConfigurationPartner](../resources/crosstenantaccesspolicyconfigurationpartner.md) objects in the response body.
 
 ## Examples
 
@@ -62,11 +62,11 @@ If successful, this method returns a `200 OK` response code and a collection of 
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "list_policydeletableitem"
+  "name": "list_crosstenantaccesspolicyconfigurationpartner"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta** Collection URI for microsoft.graph.policyDeletableItem not found
+GET https://graph.microsoft.com/beta/policies/deletedItems/crossTenantPartners
 ```
 
 
@@ -77,7 +77,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.policyDeletableItem"
+  "@odata.type": "microsoft.graph.crossTenantAccessPolicyConfigurationPartner"
 }
 -->
 ``` http
@@ -87,8 +87,32 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.policyDeletableItem",
-      "deletedDateTime": "String (timestamp)"
+      "@odata.type": "#microsoft.graph.crossTenantAccessPolicyConfigurationPartner",
+      "deletedDateTime": "String (timestamp)",
+      "tenantId": "167baaa6-c42b-034e-62f1-56480a366779",
+      "isServiceProvider": "Boolean",
+      "isInMultiTenantOrganization": "Boolean",
+      "inboundTrust": {
+        "@odata.type": "microsoft.graph.crossTenantAccessPolicyInboundTrust"
+      },
+      "b2bCollaborationOutbound": {
+        "@odata.type": "microsoft.graph.crossTenantAccessPolicyB2BSetting"
+      },
+      "b2bCollaborationInbound": {
+        "@odata.type": "microsoft.graph.crossTenantAccessPolicyB2BSetting"
+      },
+      "b2bDirectConnectOutbound": {
+        "@odata.type": "microsoft.graph.crossTenantAccessPolicyB2BSetting"
+      },
+      "b2bDirectConnectInbound": {
+        "@odata.type": "microsoft.graph.crossTenantAccessPolicyB2BSetting"
+      },
+      "tenantRestrictions": {
+        "@odata.type": "microsoft.graph.crossTenantAccessPolicyTenantRestrictions"
+      },
+      "automaticUserConsentSettings": {
+        "@odata.type": "microsoft.graph.inboundOutboundPolicyConfiguration"
+      }
     }
   ]
 }
