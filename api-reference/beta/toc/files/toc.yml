@@ -324,3 +324,9 @@ items:
     href: ../../resources/sharepointmigrationjob.md
   - name: SharePoint migration event
     href: ../../resources/sharepointmigrationevent.md
+- name: Complex types
+  items:
+  - name: File storage container type registration settings
+    href: ../../resources/filestoragecontainertyperegistrationsettings.md
+  - name: File storage container type settings
+    href: ../../resources/filestoragecontainertypesettings.md
