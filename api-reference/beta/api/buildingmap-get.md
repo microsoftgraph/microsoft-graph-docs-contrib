@@ -1,6 +1,6 @@
 ---
 title: "Get buildingMap"
-description: "Get a buildingMap object in IMDF format."
+description: "Get the map of a building in IMDF format."
 author: tiwarisakshi02
 ms.date: 06/12/2025
 ms.localizationpriority: medium
@@ -63,7 +63,8 @@ If successful, this method returns a `200 OK` response code and a [buildingMap](
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "get_buildingmap"
+  "name": "get_buildingmap",
+  "sampleKeys": ["30ca79af-ecb7-46c2-a14b-afe264a91543"]
 }
 -->
 ``` http
