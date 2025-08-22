@@ -65,7 +65,8 @@ If successful, this method returns a `200 OK` response code and a collection of 
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "list_fixturemap"
+  "name": "list_fixturemap",
+  "sampleKeys": ["151e85a7-c0b8-4519-997e-1a0858255704","e537d463-475b-43c3-a650-184566c68bc9"]
 }
 -->
 ``` http
