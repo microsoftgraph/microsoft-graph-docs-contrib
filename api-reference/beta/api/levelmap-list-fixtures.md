@@ -1,5 +1,5 @@
 ---
-title: "List fixtureMap objects"
+title: "List fixtures"
 description: "Get a list of the fixtureMap objects and their properties."
 author: tiwarisakshi02
 ms.date: 06/12/2025
@@ -8,13 +8,13 @@ ms.subservice: outlook
 doc_type: apiPageType
 ---
 
-# List fixtureMap objects
+# List fixtures
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [fixtureMap](../resources/fixturemap.md) and their properties.
+Get a list of the [fixtureMap](../resources/fixturemap.md) objects and their properties.
 
 ## Permissions
 
