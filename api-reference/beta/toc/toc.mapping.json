@@ -976,6 +976,10 @@
         "sharePointGroupMember",
         "sharePointMigrationJob",
         "sharePointMigrationEvent"
+      ],
+      "complexTypes": [
+        "fileStorageContainerTypeRegistrationSettings",
+        "fileStorageContainerTypeSettings"
       ]
     },
     {
