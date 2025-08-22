@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-PATCH /places/{buildingPlaceId}/microsoft.graph.building/map/levels/{levelImdfId}/fixture/{fixtureImdfId}
+PATCH /places/{buildingPlaceId}/microsoft.graph.building/map/levels/{levelImdfId}/fixtures/{fixtureImdfId}
 ```
 > **Note:**
 > * `{buildingPlaceId}` is the **placeId** of a [building](../resources/building.md) with which this [fixtureMap](../resources/fixturemap.md) is associated.
