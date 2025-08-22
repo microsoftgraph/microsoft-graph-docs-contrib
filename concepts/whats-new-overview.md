@@ -153,7 +153,7 @@ Added the [resourceAccessEvent](/graph/api/resources/security-resourceaccesseven
 
 ### Identity and access | Identity and sign-in
 
-- Retired the previously deprecated Microsoft Entra lifecycle announcements APIs that stopped returning data in May 2025. Use the [Microsoft Entra release notes RSS feed instead](/entra/fundamentals/whats-new).
+Retired the previously deprecated Microsoft Entra lifecycle announcements APIs that stopped returning data in May 2025. Use the [Microsoft Entra release notes RSS feed instead](/entra/fundamentals/whats-new).
 
 ### Industry data ETL
 
