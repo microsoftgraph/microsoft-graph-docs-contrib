@@ -1,6 +1,6 @@
 ---
 title: "Create unitMap"
-description: "Create a new unitMap object in IMDF format."
+description: "Create a new unitMap object in IMDF format on a specified floor."
 author: tiwarisakshi02
 ms.date: 06/12/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [unit](../resources/unitmap.md) on a given floor.
+Create a new [unitMap](../resources/unitmap.md) object in IMDF format on a specified floor.
 
 ## Permissions
 
@@ -52,14 +52,12 @@ PATCH /places/{buildingPlaceId}/microsoft.graph.building/map/levels/{levelImdfID
 
 In the request body, supply a JSON representation of the [unitMap](../resources/unitmap.md) object.
 
-You can specify the following properties when creating a **unitMap**.
+You can specify the following properties when you create a **unitMap**.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|properties|String|Concatenated key-value pair of all properties of a geojson file for this **unit**. Inherited from [baseMapFeature](../resources/basemapfeature.md). Required.|
-|placeId|String|Identifier of the [place](../resources/place.md) (such as a [room](../resources/room.md)) to which this **unit** belongs. Optional.|
-
-
+|placeId|String|Identifier of the [place](../resources/place.md) (such as a [room](../resources/room.md)) to which this unit belongs. Optional.|
+|properties|String|Concatenated key-value pair of all properties of a GeoJSON file for this unit. Inherited from [baseMapFeature](../resources/basemapfeature.md). Required.|
 
 ## Response
 
@@ -99,9 +97,9 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-    "placeId": null,
-    "id": "test0613-c95d-4d35-a8a0-22d3cb4d6542",
-    "properties": "{\"id\":\"test0613-c95d-4d35-a8a0-22d3cb4d6542\",\"type\":\"Feature\",\"feature_type\":\"unit\",\"geometry\":{\"type\":\"Polygon\",\"coordinates\":[[[-121.8889415,37.3295396],[-121.8889137,37.329503],[-121.8889082,37.3294956],[-121.888907,37.3294941],[-121.8888551,37.3295189],[-121.8888895,37.3295644],[-121.8889415,37.3295396]]]},\"properties\":{\"name\":{\"en\":\"Test room from Test Floor 1 (120.3)\"},\"level_id\":\"e537d463-475b-43c3-a650-184566c68bc9\",\"display_point\":{\"type\":\"Point\",\"coordinates\":[-121.8888983,37.3295292]},\"category\":\"room\"}}"
+  "placeId": null,
+  "id": "test0613-c95d-4d35-a8a0-22d3cb4d6542",
+  "properties": "{\"id\":\"test0613-c95d-4d35-a8a0-22d3cb4d6542\",\"type\":\"Feature\",\"feature_type\":\"unit\",\"geometry\":{\"type\":\"Polygon\",\"coordinates\":[[[-121.8889415,37.3295396],[-121.8889137,37.329503],[-121.8889082,37.3294956],[-121.888907,37.3294941],[-121.8888551,37.3295189],[-121.8888895,37.3295644],[-121.8889415,37.3295396]]]},\"properties\":{\"name\":{\"en\":\"Test room from Test Floor 1 (120.3)\"},\"level_id\":\"e537d463-475b-43c3-a650-184566c68bc9\",\"display_point\":{\"type\":\"Point\",\"coordinates\":[-121.8888983,37.3295292]},\"category\":\"room\"}}"
 }
 ```
 
