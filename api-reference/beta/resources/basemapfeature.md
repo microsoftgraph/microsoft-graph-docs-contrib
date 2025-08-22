@@ -27,7 +27,7 @@ None.
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Unique identifier for the **baseMapFeature** object. Inherited from [entity](./entity.md). |
-|properties|String|Concatenated key-value pair of all properties of a geojson file for this **baseMapFeature**.|
+|properties|String|Concatenated key-value pair of all properties of a GeoJSON file for this **baseMapFeature**.|
 
 ## Relationships
 None.
