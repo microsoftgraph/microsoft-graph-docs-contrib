@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [sections](../resources/sectionmap.md) and their properties.
+Get a list of the [sectionMap](../resources/sectionmap.md) objects and their properties.
 
 ## Permissions
 
@@ -37,8 +37,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 GET /places/{buildingPlaceId}/microsoft.graph.building/map/levels/{levelMapId}/sections
 ```
 > **Note:**
-> * `{buildingPlaceId}` is the **placeId** of a [building](../resources/building.md) for which you want to list [sectionMap](../resources/fixturemap.md).
-> * `{levelImdfId}` is the **id** of the level in the IMDF file for which you want to list [sectionMap](../resources/fixturemap.md).
+> * `{buildingPlaceId}` is the **placeId** of a [building](../resources/building.md) for which you want to list the [sectionMap](../resources/sectionmap.md).
+> * `{levelImdfId}` is the **id** of the level in the IMDF file for which you want to list the [sectionMap](../resources/sectionmap.md).
 
 ## Optional query parameters
 
