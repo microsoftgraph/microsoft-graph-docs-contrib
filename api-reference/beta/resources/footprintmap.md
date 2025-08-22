@@ -21,11 +21,12 @@ Inherits from [baseMapFeature](./basemapfeature.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
+|[List](../api/buildingmap-list-footprints.md)|[footprintMap](./footprintmap.md) collection|Get a list of [footprintMap](./footprintmap.md) objects and their properties.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Unique identifier for the **footprintMap** object. Inherited from [entity](./entity.md). Inherits from [entity](./entity.md)|
+|id|String|Unique identifier for the **footprintMap** object. Inherited from [baseMapFeature](./basemapfeature.md).|
 |properties|String|Concatenated key-value pair of all properties of a geojson file for this **footprintMap**. Inherited from [baseMapFeature](./basemapfeature.md).|
 
 ## Relationships
