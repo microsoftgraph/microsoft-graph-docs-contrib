@@ -4429,6 +4429,56 @@
       "CreatedDateTime": "2025-06-27T14:50:53.1991698Z",
       "WorkloadArea": "Files",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "7bd9c41c-6743-412f-84b5-75007609fe82",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "extensions",
+          "ChangeType": "Addition",
+          "Description": "Added the **extensions** relationship to the [site](https://learn.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-beta) resource.",
+          "Target": "site"
+        },
+        {
+          "Id": "7bd9c41c-6743-412f-84b5-75007609fe82",
+          "ApiChange": "Method",
+          "ChangedApiName": "openTypeExtension",
+          "ChangeType": "Change",
+          "Description": "Enabled [site](https://learn.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-beta) as a supported resource for the [delete](https://learn.microsoft.com/en-us/graph/api/opentypeextension-delete?view=graph-rest-beta) operation of the [openTypeExtension](https://learn.microsoft.com/en-us/graph/api/resources/opentypeextension?view=graph-rest-beta) resource.",
+          "Target": "openTypeExtension"
+        },
+        {
+          "Id": "7bd9c41c-6743-412f-84b5-75007609fe82",
+          "ApiChange": "Method",
+          "ChangedApiName": "openTypeExtension",
+          "ChangeType": "Change",
+          "Description": "Enabled [site](https://learn.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-beta) as a supported resource for the [get](https://learn.microsoft.com/en-us/graph/api/opentypeextension-get?view=graph-rest-beta) operation of the [openTypeExtension](https://learn.microsoft.com/en-us/graph/api/resources/opentypeextension?view=graph-rest-beta) resource.",
+          "Target": "openTypeExtension"
+        },
+        {
+          "Id": "7bd9c41c-6743-412f-84b5-75007609fe82",
+          "ApiChange": "Method",
+          "ChangedApiName": "openTypeExtension",
+          "ChangeType": "Change",
+          "Description": "Enabled [site](https://learn.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-beta) as a supported resource for the [create](https://learn.microsoft.com/en-us/graph/api/opentypeextension-post-opentypeextension?view=graph-rest-beta) operation of the [openTypeExtension](https://learn.microsoft.com/en-us/graph/api/resources/opentypeextension?view=graph-rest-beta) resource.",
+          "Target": "openTypeExtension"
+        },
+        {
+          "Id": "7bd9c41c-6743-412f-84b5-75007609fe82",
+          "ApiChange": "Method",
+          "ChangedApiName": "openTypeExtension",
+          "ChangeType": "Change",
+          "Description": "Enabled [site](https://learn.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-beta) as a supported resource for the [update](https://learn.microsoft.com/en-us/graph/api/opentypeextension-update?view=graph-rest-beta) operation of the [openTypeExtension](https://learn.microsoft.com/en-us/graph/api/resources/opentypeextension?view=graph-rest-beta) resource.",
+          "Target": "openTypeExtension"
+        }
+      ],
+      "Id": "7bd9c41c-6743-412f-84b5-75007609fe82",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-07-22T18:23:42.5437381Z",
+      "WorkloadArea": "Files",
+      "SubArea": ""
     }
   ]
 }
