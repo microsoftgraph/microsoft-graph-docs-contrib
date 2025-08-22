@@ -1,6 +1,6 @@
 ---
 title: "Delete fixtureMap"
-description: "Delete a fixtureMap object."
+description: "Delete a fixture on a specified floor."
 author: tiwarisakshi02
 ms.date: 06/12/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a [fixture](../resources/fixturemap.md) on a given floor.
+Delete a [fixture](../resources/fixturemap.md) on a specified floor.
 
 ## Permissions
 
