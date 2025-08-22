@@ -1,6 +1,6 @@
 ---
-title: "List levelMap objects"
-description: "Get a list of the level map objects and their properties."
+title: "List levels"
+description: "Get a list of the levelMap objects and their properties."
 author: tiwarisakshi02
 ms.date: 06/12/2025
 ms.localizationpriority: medium
@@ -8,13 +8,13 @@ ms.subservice: outlook
 doc_type: apiPageType
 ---
 
-# List levelMap objects
+# List levels
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [level map](../resources/levelmap.md) objects and their properties.
+Get a list of the [levelMap](../resources/levelmap.md) objects and their properties.
 
 ## Permissions
 
