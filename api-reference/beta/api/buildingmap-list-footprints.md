@@ -1,6 +1,6 @@
 ---
-title: "List footprintMap objects"
-description: "Get a list of map objects for building footprints and their properties."
+title: "List footprints"
+description: "Get a list of footprintMap objects for building footprints and their properties."
 author: tiwarisakshi02
 ms.date: 06/12/2025
 ms.localizationpriority: medium
@@ -8,13 +8,13 @@ ms.subservice: outlook
 doc_type: apiPageType
 ---
 
-# List footprintMap objects
+# List footprints
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of [map](../resources/footprintmap.md) objects for building footprints and their properties.
+Get a list of [footprintMap](../resources/footprintmap.md) objects for [building](../resources/building.md) footprints and their properties.
 
 ## Permissions
 
