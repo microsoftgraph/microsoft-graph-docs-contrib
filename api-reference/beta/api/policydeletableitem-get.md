@@ -1,10 +1,10 @@
 ﻿---
 title: "Get policyDeletableItem"
 description: "Read the properties and relationships of policyDeletableItem object."
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+author: "ashyasingh"
 ms.date: 08/11/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -14,7 +14,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of [policyDeletableItem](../resources/policydeletableitem.md) object.
+Read the properties and relationships of a [policyDeletableItem](../resources/policydeletableitem.md) object, which might be one of the following deleted policy types:
+- [crossTenantAccessPolicyConfigurationPartner](../resources/crosstenantaccesspolicyconfigurationpartner.md)
+- [crossTenantIdentitySyncPolicyPartner](../resources/crosstenantidentitysyncpolicypartner.md)
+- [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md)
+- [namedLocation](../resources/namedlocation.md)
 
 ## Permissions
 
@@ -29,17 +33,45 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
+Get a deleted **crossTenantAccessPolicyConfigurationPartner** object:
+<!-- {
+  "blockType": "ignored"
+}
+-->
+```HTTP
+GET /policies/deletedItems/crossTenantPartners/{id}
+```
+
+Get a deleted **crossTenantIdentitySyncPolicyPartner** object:
+<!-- {
+  "blockType": "ignored"
+}
+-->
+```HTTP
+GET /policies/deletedItems/crossTenantSyncPolicyPartners/{id}
+```
+
+Get a deleted **conditionalAccessPolicy** object:
 <!-- {
   "blockType": "ignored"
 }
 -->
 ``` http
-GET /policyDeletableItem
+GET /identity/conditionalAccess/deletedItems/policies/{id}
+```
+
+Get a deleted **namedLocation** object:
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+GET identity/conditionalAccess/deletedItems/namedLocations/{id}
 ```
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+None.
 
 ## Request headers
 
@@ -56,21 +88,24 @@ Don't supply a request body for this method.
 If successful, this method returns a `200 OK` response code and a [policyDeletableItem](../resources/policydeletableitem.md) object in the response body.
 
 ## Examples
+## Examples
 
-### Request
+### Example 1: Retrieve a deleted crossTenantAccessPolicyConfigurationPartner object
 
-The following example shows a request.
+#### Request
+
+The following example shows a request for a crossTenantAccessPolicyConfigurationPartner.
 <!-- {
   "blockType": "request",
-  "name": "get_policydeletableitem"
+  "name": "get_policydeletableitem_crossTenantAccessPolicyConfigurationPartner"
 }
 -->
-``` http
-GET https://graph.microsoft.com/beta/policyDeletableItem
+```HTTP
+GET https://graph.microsoft.com/beta/policies/deletedItems/crossTenantPartners/01d0e717-bc90-46ba-94a9-71b4a811fddb
 ```
 
 
-### Response
+#### Response
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
@@ -80,15 +115,153 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.policyDeletableItem"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.policyDeletableItem",
-    "deletedDateTime": "String (timestamp)"
+  "@odata.context": "https://graph.microsoft-ppe.com/testppebetadeleteapis/$metadata#policies/deletedItems/crossTenantPartners/$entity",
+  "tenantId": "01d0e717-bc90-46ba-94a9-71b4a811fddb",
+  "deletedDateTime": "2025-06-18T22:58:04Z",
+  "displayName": null,
+  "isServiceProvider": null,
+  "isInMultiTenantOrganization": false,
+  "blockServiceProviderOutboundAccess": null,
+  "inboundTrust": null,
+  "b2bCollaborationOutbound": null,
+  "b2bCollaborationInbound": null,
+  "b2bDirectConnectOutbound": null,
+  "b2bDirectConnectInbound": null,
+  "tenantRestrictions": null,
+  "invitationRedemptionIdentityProviderConfiguration": null,
+  "crossCloudMeetingConfiguration": {
+    "inboundAllowed": null,
+    "outboundAllowed": null
+  },
+  "automaticUserConsentSettings": {
+    "inboundAllowed": null,
+    "outboundAllowed": null
+  },
+  "protectedContentSharing": {
+    "inboundAllowed": null,
+    "outboundAllowed": null
   }
+}
+```
+
+
+### Example 2: Retrieve a deleted crossTenantIdentitySyncPolicyPartner object
+
+#### Request
+
+The following example shows a request for a crossTenantIdentitySyncPolicyPartner.
+<!-- {
+  "blockType": "request",
+  "name": "get_policydeletableitem_crossTenantIdentitySyncPolicyPartner"
+}
+-->
+```HTTP
+GET https://graph.microsoft.com/beta/policies/deletedItems/crossTenantSyncPolicyPartners/01d0e717-bc90-46ba-94a9-71b4a811fddb
+```
+
+
+#### Response
+
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.policyDeletableItem"
+}
+-->
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+{
+  "@odata.context": "https://graph.microsoft-ppe.com/testppebetadeleteapis/$metadata#policies/deletedItems/crossTenantSyncPolicyPartners/$entity",
+  "tenantId": "01d0e717-bc90-46ba-94a9-71b4a811fddb",
+  "displayName": null,
+  "deletedDateTime": "2025-06-18T23:11:01Z",
+  "externalCloudAuthorizedApplicationId": null,
+  "userSyncInbound": null
+}
+```
+
+### Example 3: Retrieve a deleted conditionalAccessPolicy object
+
+#### Request
+
+The following example shows a request for a conditionalAccessPolicy.
+<!-- {
+  "blockType": "request",
+  "name": "get_policydeletableitem_crossTenantIdentitySyncPolicyPartner"
+}
+-->
+```HTTP
+GET https://graph.microsoft.com/beta/identity/conditionalAccess/deletedItems/policies
+```
+
+
+#### Response
+
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.policyDeletableItem"
+}
+-->
+```http
+  HTTP/1.1 200 OK 
+{
+    "@odata.nextLink": "https://graph.microsoft.com/beta/identity/conditionalAccess/deletedItems/policies?$skiptoken=RFNwdAIAAQAAAA86MjExNTIwQFRDUy5jb20pVXNlcl84MDhmMDYzYy04MTk4LTQ4N2UtOTlkNC1hM2FmNjg0NjRjNzW5AAAAAAAAAAAAAA",
+    "value": [
+      {
+        "id": "4fa582af-f900-495c-9772-ccf34d5a95fc",
+        "deletedDateTime": "2024-08-15T04:59:43.250386Z",
+        ... // Rest of the properties defined for the microsoft.graph.conditionalAccessPolicy entity
+      }
+    ]
+}
+```
+
+### Example 4: Retrieve a deleted namedLocation object
+
+#### Request
+
+The following example shows a request for a conditionalAccessPolicy.
+<!-- {
+  "blockType": "request",
+  "name": "get_policydeletableitem_crossTenantIdentitySyncPolicyPartner"
+}
+-->
+```HTTP
+GET https://graph.microsoft.com/beta/identity/conditionalAccess/deletedItems/namedLocations
+```
+
+
+#### Response
+
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.policyDeletableItem"
+}
+-->
+```http
+  HTTP/1.1 200 OK 
+{
+    "@odata.nextLink": "https://graph.microsoft.com/beta/identity/conditionalAccess/deletedItems/namedLocations?$skiptoken=RFNwdAIAAQAAAA86MjExNTIwQFRDUy5jb20pVXNlcl84MDhmMDYzYy04MTk4LTQ4N2UtOTlkNC1hM2FmNjg0NjRjNzW5AAAAAAAAAAAAAA",
+    "value": [
+      {
+        "id": "b5b69bc9-3e36-4fa0-bc7f-f0e5fd3aebf1",
+        "deletedDateTime": "2024-08-15T04:59:43.250386Z",
+        ... // Rest of the properties defined for the microsoft.graph.namedLocation entity
+      }
+    ]
 }
 ```
 

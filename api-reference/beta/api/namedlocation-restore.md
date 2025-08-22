@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Restore a deleted [namedLocation](../resources/namedlocation.md)
+Restore a deleted [namedLocation](../resources/namedlocation.md) object.
 
 ## Permissions
 

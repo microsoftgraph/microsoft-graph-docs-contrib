@@ -1,10 +1,10 @@
 ﻿---
 title: "policyDeletableRoot resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+description: "Represents a container for policy types in Microsoft Entra that support soft-delete functionality."
+author: "*ashyasingh"
 ms.date: 08/11/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice: "*entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -14,35 +14,25 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents a container for policy types in Microsoft Entra that support soft-delete functionality.
 
 
 Inherits from [entity](../resources/entity.md).
 
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List](../api/policyroot-list-deleteditems.md)|[policyDeletableRoot](../resources/policydeletableroot.md) collection|Get a list of the policyDeletableRoot objects and their properties.|
-|[Create](../api/policyroot-post-deleteditems.md)|[policyDeletableRoot](../resources/policydeletableroot.md)|Create a new policyDeletableRoot object.|
-|[Get](../api/policydeletableroot-get.md)|[policyDeletableRoot](../resources/policydeletableroot.md)|Read the properties and relationships of [policyDeletableRoot](../resources/policydeletableroot.md) object.|
-|[Update](../api/policydeletableroot-update.md)|[policyDeletableRoot](../resources/policydeletableroot.md)|Update the properties of a policyDeletableRoot object.|
-|[Delete](../api/policyroot-delete-deleteditems.md)|None|Delete a policyDeletableRoot object.|
-|[List crossTenantPartners](../api/policydeletableroot-list-crosstenantpartners.md)|[crossTenantAccessPolicyConfigurationPartner](../resources/crosstenantaccesspolicyconfigurationpartner.md) collection|**TODO: Add a useful description.**|
-|[Create crossTenantAccessPolicyConfigurationPartner](../api/policydeletableroot-post-crosstenantpartners.md)|[crossTenantAccessPolicyConfigurationPartner](../resources/crosstenantaccesspolicyconfigurationpartner.md)|Create a new crossTenantAccessPolicyConfigurationPartner object.|
-|[List crossTenantSyncPolicyPartners](../api/policydeletableroot-list-crosstenantsyncpolicypartners.md)|[crossTenantIdentitySyncPolicyPartner](../resources/crosstenantidentitysyncpolicypartner.md) collection|**TODO: Add a useful description.**|
-|[Create crossTenantIdentitySyncPolicyPartner](../api/policydeletableroot-post-crosstenantsyncpolicypartners.md)|[crossTenantIdentitySyncPolicyPartner](../resources/crosstenantidentitysyncpolicypartner.md)|Create a new crossTenantIdentitySyncPolicyPartner object.|
+None.
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md). Inherits from [entity](../resources/entity.md)|
+None.
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|crossTenantPartners|[crossTenantAccessPolicyConfigurationPartner](../resources/crosstenantaccesspolicyconfigurationpartner.md) collection|**TODO: Add Description**|
-|crossTenantSyncPolicyPartners|[crossTenantIdentitySyncPolicyPartner](../resources/crosstenantidentitysyncpolicypartner.md) collection|**TODO: Add Description**|
+|crossTenantPartners|[crossTenantAccessPolicyConfigurationPartner](../resources/crosstenantaccesspolicyconfigurationpartner.md) collection|Represents the partner-specific configuration for cross-tenant access and tenant restrictions. Cross-tenant access settings include inbound and outbound settings of Microsoft Entra B2B collaboration and B2B direct connect.|
+|crossTenantSyncPolicyPartners|[crossTenantIdentitySyncPolicyPartner](../resources/crosstenantidentitysyncpolicypartner.md) collection|Defines the cross-tenant policy for synchronization of users from a partner tenant. Use this user synchronization policy to streamline collaboration between users in a multi-tenant organization by automating the creation, update, and deletion of users from one tenant to another.|
+|conditionalAccessPolicy|[conditionalAccessPolicy](../resources/conditionalaccesspolicy.md)|Represents a Microsoft Entra Conditional Access policy. Conditional access policies are custom rules that define an access scenario.|
+|namedLocation|[namedLocation](../resources/namedlocation.md)|This is the base class that represents a Microsoft Entra ID named location. Named locations are custom rules that define network locations which can then be used in a Conditional Access (CA) policy.|
 
 ## JSON representation
 The following JSON representation shows the resource type.

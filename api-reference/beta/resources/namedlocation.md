@@ -1,6 +1,6 @@
 ﻿---
 title: "namedLocation resource type"
-description: "his is the base class that represents a Microsoft Entra ID named location. Named locations are custom rules that define network locations which can then be used in a Conditional Access policy."
+description: "This is the base class that represents a Microsoft Entra ID named location. Named locations are custom rules that define network locations which can then be used in a Conditional Access policy."
 author: "*ashyasingh"
 ms.date: 08/11/2025
 ms.localizationpriority: medium
@@ -31,7 +31,7 @@ Inherits from [policyDeletableItem](../resources/policydeletableitem.md).
 |[Restore](../api/namedlocation-restore.md)|[namedLocation](../resources/namedlocation.md)|Restore a named location object. |
 | [List deleted named locations](../api/policydeletableitem-list.md) | [namedLocation](../resources/namedlocation.md) collection | List all deleted named locations. |
 | [Get deleted named locations](../api/policydeletableitem-get.md) | [namedLocation](../resources/namedlocation.md)| Get a single deleted named location. |
-| [Permanently delete a soft deleted named location](../api/policydeletableitem-delete.md) | None | Permanently delete a deleted named location. |
+| [Permanently delete a soft deleted named location](../api/policydeletableitem-delete.md) | None | Permanently delete a soft deleted named location. |
 
 ## Properties
 |Property|Type|Description|

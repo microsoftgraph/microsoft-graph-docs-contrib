@@ -1,6 +1,6 @@
 ﻿---
 title: "Restore a conditional access policy."
-description: "Restore a soft deleted Conditional Access policy"
+description: "Restore a soft deleted Conditional Access policy object."
 author: "*ashyasingh"
 ms.date: 08/11/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Restore a deleted [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md)
+Restore a deleted [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md) object.
 
 ## Permissions
 

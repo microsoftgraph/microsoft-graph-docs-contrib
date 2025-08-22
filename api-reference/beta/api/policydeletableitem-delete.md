@@ -1,10 +1,10 @@
 ﻿---
-title: "Delete policyDeletableItem"
-description: "Delete a policyDeletableItem object."
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+title: "Permanently delete policyDeletableItem"
+description: "Permanently delete a policyDeletableItem object."
+author: "ashyasingh"
 ms.date: 08/11/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -14,7 +14,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a policyDeletableItem object.
+
+Permanently delete a [policyDeletableItem](../resources/policydeletableitem.md) object, which might be one of the following deleted policy types:
+- [crossTenantAccessPolicyConfigurationPartner](../resources/crosstenantaccesspolicyconfigurationpartner.md)
+- [crossTenantIdentitySyncPolicyPartner](../resources/crosstenantidentitysyncpolicypartner.md)
+- [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md)
+- [namedLocation](../resources/namedlocation.md)
 
 ## Permissions
 
@@ -29,12 +34,40 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
+Permanently delete a  **crossTenantAccessPolicyConfigurationPartner** object:
+<!-- {
+  "blockType": "ignored"
+}
+-->
+```HTTP
+DELETE /policies/deletedItems/crossTenantPartners/{id}
+```
+
+Permanently delete a  **crossTenantIdentitySyncPolicyPartner** object:
+<!-- {
+  "blockType": "ignored"
+}
+-->
+```HTTP
+DELETE /policies/deletedItems/crossTenantSyncPolicyPartners/{id}
+```
+
+Permanently delete a  **conditionalAccessPolicy** object:
 <!-- {
   "blockType": "ignored"
 }
 -->
 ``` http
-DELETE /policyDeletableItem
+DELETE /identity/conditionalAccess/deletedItems/policies/{id}
+```
+
+Permanently delete a  **namedLocation** object:
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+DELETE identity/conditionalAccess/deletedItems/namedLocations/{id}
 ```
 
 ## Request headers
@@ -53,23 +86,105 @@ If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
-### Request
+### Example 1: Permanently delete a deleted crossTenantAccessPolicyConfigurationPartner object
 
-The following example shows a request.
+#### Request
+
+The following example shows a request for crossTenantAccessPolicyConfigurationPartner.
 <!-- {
   "blockType": "request",
-  "name": "delete_policydeletableitem"
+  "name": "delete_policydeletableitem_crossTenantAccessPolicyConfigurationPartner"
 }
 -->
-``` http
-DELETE https://graph.microsoft.com/beta/policyDeletableItem
+```HTTP
+DELETE https://graph.microsoft.com/beta/policies/deletedItems/crossTenantPartners/809cbbd2-2325-4c17-bd51-f8f098db19c8
 ```
 
 
-### Response
+#### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
+``` http
+HTTP/1.1 204 No Content
+```
+
+### Example 2: Permanently delete a deleted crossTenantIdentitySyncPolicyPartner object
+
+#### Request
+
+The following example shows a request for crossTenantIdentitySyncPolicyPartner.
+<!-- {
+  "blockType": "request",
+  "name": "delete_policydeletableitem_crossTenantIdentitySyncPolicyPartner"
+}
+-->
+```HTTP
+DELETE https://graph.microsoft.com/beta/policies/deletedItems/crossTenantSyncPolicyPartners/809cbbd2-2325-4c17-bd51-f8f098db19c8
+```
+
+
+#### Response
+
+The following example shows the response.
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
+``` http
+HTTP/1.1 204 No Content
+```
+
+### Example 3: Permanently delete a deleted conditionalAccessPolicy object
+
+#### Request
+
+The following example shows a request for conditionalAccessPolicy.
+<!-- {
+  "blockType": "request",
+  "name": "delete_policydeletableitem_crossTenantIdentitySyncPolicyPartner"
+}
+-->
+```HTTP
+DELETE https://graph.microsoft.com/beta/identity/conditionalAccess/deletedItems/policies/4fa582af-f900-495c-9772-ccf34d5a95fc
+```
+
+
+#### Response
+
+The following example shows the response.
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
+``` http
+HTTP/1.1 204 No Content
+```
+
+### Example 4: Permanently delete a deleted namedLocation object
+
+#### Request
+
+The following example shows a request for namedLocation.
+<!-- {
+  "blockType": "request",
+  "name": "delete_policydeletableitem_crossTenantIdentitySyncPolicyPartner"
+}
+-->
+```HTTP
+DELETE https://graph.microsoft.com/beta/identity/conditionalAccess/deletedItems/namedLocations/b5b69bc9-3e36-4fa0-bc7f-f0e5fd3aebf1
+```
+
+
+#### Response
+
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true
