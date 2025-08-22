@@ -21,9 +21,10 @@ Inherits from [baseMapFeature](../resources/basemapfeature.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Create](../api/levelmap-post-sections.md)|[sectionMap](../resources/sectionmap.md)|Create a new **sectionMap** object.|
-|[Update](../api/sectionmap-update.md)|[sectionMap](../resources/sectionmap.md)|Update the properties of a **sectionMap** object.|
-|[Delete](../api/sectionmap-delete.md)|None|Delete a **sectionMap** object.|
+|[List](../api/levelmap-list-sections.md)|[sectionMap](./sectionmap.md) collection|Get a list of the [sectionMap](../resources/sectionmap.md) objects and their properties.|
+|[Create](../api/levelmap-post-sections.md)|[sectionMap](../resources/sectionmap.md)|Create a new [sectionMap](../resources/sectionmap.md) object in IMDF format on a specified floor.|
+|[Update](../api/sectionmap-update.md)|[sectionMap](../resources/sectionmap.md)|Update the properties of a [sectionMap](../resources/sectionmap.md) object in IMDF format on a specified floor.|
+|[Delete](../api/sectionmap-delete.md)|None|Delete a [sectionMap](../resources/sectionmap.md) object on a specified floor.|
 
 ## Properties
 |Property|Type|Description|
