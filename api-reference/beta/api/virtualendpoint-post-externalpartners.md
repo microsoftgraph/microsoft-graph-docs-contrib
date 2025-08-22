@@ -1,11 +1,11 @@
 ---
 title: "Create cloudPcExternalPartner"
 description: "Create a new cloudPcExternalPartner object."
-author: "Shaowei-Dong"
+author: "XunZhangSZ"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: apiPageType
-ms.date: 04/05/2024
+ms.date: 08/22/2025
 ---
 
 # Create cloudPcExternalPartner
@@ -49,7 +49,7 @@ You can specify the following properties when you create a **cloudPcExternalPart
 
 |Property|Type|Description|
 |:---|:---|:---|
-|enableConnection|Boolean|Enable or disable the connection to an external partner. If `true`, an external partner API will accept incoming calls from external partners. Required.|
+|enableConnection|Boolean|Enable or disable the connection to an external partner. If `true`, an external partner API accepts incoming calls from external partners. Required.|
 |partnerId|String|The external partner ID. Required.|
 
 

@@ -1,11 +1,11 @@
 ---
 title: "Update cloudPcExternalPartner"
 description: "Update the properties of a cloudPcExternalPartner object."
-author: "Shaowei-Dong"
+author: "XunZhangSZ"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: apiPageType
-ms.date: 04/05/2024
+ms.date: 08/22/2025
 ---
 
 # Update cloudPcExternalPartner
@@ -18,10 +18,13 @@ Update the properties of a [cloudPcExternalPartner](../resources/cloudpcexternal
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
-Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-<!-- { "blockType": "permissions", "name": "cloudpcexternalpartner_update" } -->
-[!INCLUDE [permissions-table](../includes/permissions/cloudpcexternalpartner-update-permissions.md)]
+|Permission type|Permissions (from least to most privileged)|
+|:---|:---|
+|Delegated (work or school account)|CloudPC.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|CloudPC.ReadWrite.All|
 
 ## HTTP request
 
@@ -45,7 +48,7 @@ PATCH /deviceManagement/virtualEndpoint/externalPartners/{cloudPcExternalPartner
 
 |Property|Type|Description|
 |:---|:---|:---|
-|enableConnection|Boolean|Enable or disable the connection to an external partner. If `true`, an external partner API will accept incoming calls from external partners. Required.|
+|enableConnection|Boolean|Enable or disable the connection to an external partner. If `true`, an external partner API accepts incoming calls from external partners. Required.|
 
 
 

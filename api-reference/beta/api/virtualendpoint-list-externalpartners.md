@@ -1,11 +1,11 @@
 ---
 title: "List cloudPcExternalPartners"
 description: "Get a list of the cloudPcExternalPartner objects and their properties."
-author: "Shaowei-Dong"
+author: "XunZhangSZ"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: apiPageType
-ms.date: 08/01/2024
+ms.date: 08/22/2025
 ---
 
 # List cloudPcExternalPartners
