@@ -14,7 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of [fraudProtectionProvider](../resources/fraudprotectionprovider.md) object.
+Read the properties and relationships of [fraudProtectionProvider](../resources/fraudprotectionprovider.md) object. The following derived types are currently supported.
+
+- [arkosefraudprotectionprovider](../resources/arkosefraudprotectionprovider.md) resource type
 
 ## Permissions
 
