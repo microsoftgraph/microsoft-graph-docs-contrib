@@ -1,5 +1,5 @@
 ---
-title: "List sectionMap objects"
+title: "List sections"
 description: "Get a list of the sectionMap objects and their properties."
 author: tiwarisakshi02
 ms.date: 06/12/2025
@@ -8,7 +8,7 @@ ms.subservice: outlook
 doc_type: apiPageType
 ---
 
-# List sectionMap objects
+# List sections
 
 Namespace: microsoft.graph
 
