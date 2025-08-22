@@ -1,6 +1,6 @@
 ---
 title: "Update fixtureMap"
-description: "Update the properties of a fixtureMap object in IMDF format."
+description: "Update the map properties of a fixture in IMDF format."
 author: tiwarisakshi02
 ms.date: 06/12/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the map properties of a [fixture](../resources/fixturemap.md) object in IMDF format.
+Update the map properties of a [fixture](../resources/fixturemap.md) in IMDF format.
 
 ## Permissions
 
