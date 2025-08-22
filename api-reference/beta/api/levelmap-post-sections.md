@@ -52,7 +52,7 @@ PATCH /places/{buildingPlaceId}/microsoft.graph.building/map/levels/{levelImdfID
 
 In the request body, supply a JSON representation of the [sectionMap](../resources/sectionmap.md) object.
 
-You can specify the following properties when create the map of a section.
+You can specify the following properties when you create a [sectionMap](../resources/sectionmap.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
