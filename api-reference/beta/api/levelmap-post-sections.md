@@ -1,6 +1,6 @@
 ---
 title: "Create sectionMap"
-description: "Create a new section on a specific floor."
+description: "Create a new sectionMap object in IMDF format on a specified floor."
 author: tiwarisakshi02
 ms.date: 06/12/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [section](../resources/sectionmap.md) on a specific floor.
+Create a new [sectionMap](../resources/sectionmap.md) object in IMDF format on a specified floor.
 
 ## Permissions
 
@@ -52,12 +52,12 @@ PATCH /places/{buildingPlaceId}/microsoft.graph.building/map/levels/{levelImdfID
 
 In the request body, supply a JSON representation of the [sectionMap](../resources/sectionmap.md) object.
 
-You can specify the following properties when create the map of a **section**.
+You can specify the following properties when create the map of a section.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|placeId|String|Identifier for the [floor](../resources/floor.md) to which this **section** belongs. Optional.|
-|properties|String|Concatenated key-value pair of all properties of a geojson file for this **section**. Inherited from [baseMapFeature](../resources/basemapfeature.md). Required.|
+|placeId|String|Identifier for the [floor](../resources/floor.md) to which this section belongs. Optional.|
+|properties|String|Concatenated key-value pair of all properties of a geojson file for this section. Inherited from [baseMapFeature](../resources/basemapfeature.md). Required.|
 
 ## Response
 
