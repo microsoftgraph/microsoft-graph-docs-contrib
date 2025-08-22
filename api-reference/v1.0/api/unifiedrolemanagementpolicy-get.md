@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 [!INCLUDE [rbac-pim-entra-roles-apis](../includes/rbac-for-apis/rbac-pim-entra-roles-apis.md)]
 
-### For PIM for groups
+### For PIM for Groups
 <!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
@@ -825,7 +825,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 3: Retrieve the details of a policy in PIM for groups
+### Example 3: Retrieve the details of a policy in PIM for Groups
 
 #### Request
 

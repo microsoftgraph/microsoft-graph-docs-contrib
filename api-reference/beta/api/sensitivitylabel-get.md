@@ -22,7 +22,7 @@ Get a sensitivity label available for the entire tenant.
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "permissions", "name": "purviewecosystem-sensitivitylabels-getsensitivitylabels-permissions" } -->
+<!-- { "blockType": "permissions", "name": "sensitivitylabel_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/sensitivitylabel-get-permissions.md)]
 
 When using application permissions (`SensitivityLabels.Read.All`), the API returns all labels for the tenant by default.
@@ -42,13 +42,9 @@ GET /security/dataSecurityAndGovernance/sensitivityLabels/{labelId}
 | Authorization       | Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).                                |
 | Client-Request-Id   | Optional. A client-generated GUID to trace the request. Recommended for troubleshooting.                                                  |
 
-## Query parameters
+## Optional query parameters
 
-| Parameter      | Type             | Description                                                                                                                                                                                                                                                                                           |
-| :------------- | :--------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| locale         | String           | Optional. Specifies the locale for localizable fields.                                                                                                                                        |
-| applicableTo   | String           | Optional. A comma-separated string of content formats (for example, `File,Email`). Filters the returned labels to only those applicable to *at least one* of the specified formats. Possible values are `Email`,`File`,`SchematizedData`,`Site`,`Teamwork`,`UnifiedGroup`. |
-| id             | String           | Optional. A comma-separated string of sensitivity label GUIDs. Filters the returned labels to only those matching the specified IDs. |
+This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request body
 
@@ -131,8 +127,6 @@ Content-Type: application/json
       "isEnabled": true,
       "isEndpointProtectionEnabled": true,
       "autoTooltip": "",
-      "isSmimeSignEnabled": true,
-      "isSmimeEncryptEnabled": true,
       "actionSource": "manual",
       "applicableTo": "email,teamwork,file",
       "sublabels": []

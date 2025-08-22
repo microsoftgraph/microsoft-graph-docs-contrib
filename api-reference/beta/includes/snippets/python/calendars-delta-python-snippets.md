@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 from msgraph_beta import GraphServiceClient
 # To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 
-result = await graph_client.me.calendars.by_calendar_id('calendar-id').get()
+result = await graph_client.me.calendars.delta.get()
 
 
 ```

@@ -3,11 +3,45 @@
     {
       "ChangeList": [
         {
+          "Id": "06ac0e0b-f773-434f-9bd2-c487e89814af",
+          "ApiChange": "Resource",
+          "ChangedApiName": "changeItemBase",
+          "ChangeType": "Deletion",
+          "Description": "Removed the previously deprecated **changeItemBase** resource and its associated APIs and derived types that support the Microsoft Entra lifecycle announcements APIs. The APIs stopped returning data in May 2025. Use the [Microsoft Entra release notes RSS feed instead](https://learn.microsoft.com/en-us/entra/fundamentals/whats-new).",
+          "Target": "changeItemBase"
+        },
+        {
+          "Id": "06ac0e0b-f773-434f-9bd2-c487e89814af",
+          "ApiChange": "Resource",
+          "ChangedApiName": "announcement",
+          "ChangeType": "Deletion",
+          "Description": "Removed the previously deprecated **announcement** resource and its associated APIs and derived types that support the Microsoft Entra lifecycle announcements APIs. The APIs stopped returning data in May 2025. Use the [Microsoft Entra release notes RSS feed instead](https://learn.microsoft.com/en-us/entra/fundamentals/whats-new).",
+          "Target": "announcement"
+        },
+        {
+          "Id": "06ac0e0b-f773-434f-9bd2-c487e89814af",
+          "ApiChange": "Resource",
+          "ChangedApiName": "roadmap",
+          "ChangeType": "Deletion",
+          "Description": "Removed the previously deprecated **roadmap** resource and its associated APIs and derived types that support the Microsoft Entra lifecycle announcements APIs. The APIs stopped returning data in May 2025. Use the [Microsoft Entra release notes RSS feed instead](https://learn.microsoft.com/en-us/entra/fundamentals/whats-new).",
+          "Target": "roadmap"
+        }
+      ],
+      "Id": "06ac0e0b-f773-434f-9bd2-c487e89814af",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-07-03T15:55:45.1517232Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "8a6907ae-d579-4e4c-ae41-a0625b3a8bb2",
           "ApiChange": "Resource",
           "ChangedApiName": "changeItemBase",
           "ChangeType": "Deprecation",
-          "Description": "Deprecated the [changeItemBase](https://learn.microsoft.com/en-us/graph/api/resources/changeItemBase?view=graph-rest-beta) resource and its associated APIs and derived types that support the Microsoft Entra lifecycle announcements APIs. The APIs will stop returning data in May 2025. Use the [Microsoft Entra release notes RSS feed instead](https://learn.microsoft.com/en-us/entra/fundamentals/whats-new).",
+          "Description": "Deprecated the **changeItemBase** resource and its associated APIs and derived types that support the Microsoft Entra lifecycle announcements APIs. The APIs will stop returning data in May 2025. Use the [Microsoft Entra release notes RSS feed instead](https://learn.microsoft.com/en-us/entra/fundamentals/whats-new).",
           "Target": "changeItemBase"
         }
       ],
@@ -41,7 +75,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "announcement",
           "ChangeType": "Addition",
-          "Description": "Added the [announcement](https://learn.microsoft.com/en-us/graph/api/resources/announcement?view=graph-rest-beta) resource. Use this resource to track Microsoft Entra change announcements including deprecations, breaking changes, retirements, feature changes, and Microsoft-managed policies.",
+          "Description": "Added the **announcement** resource. Use this resource to track Microsoft Entra change announcements including deprecations, breaking changes, retirements, feature changes, and Microsoft-managed policies.",
           "Target": "announcement"
         },
         {
@@ -49,7 +83,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "changeItemBase",
           "ChangeType": "Addition",
-          "Description": "Added the [changeItemBase](https://learn.microsoft.com/en-us/graph/api/resources/changeItemBase?view=graph-rest-beta) resource. Use this resource to track planned changes or new features in Microsoft Entra.",
+          "Description": "Added the **changeItemBase** resource. Use this resource to track planned changes or new features in Microsoft Entra.",
           "Target": "changeItemBase"
         },
         {
@@ -65,7 +99,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "roadmap",
           "ChangeType": "Addition",
-          "Description": "Added the [roadmap](https://learn.microsoft.com/en-us/graph/api/resources/roadmap?view=graph-rest-beta) resource. Use this resource to view the Microsoft Entra product roadmap which comprises public previews and recent general availability releases.",
+          "Description": "Added the **roadmap** resource. Use this resource to view the Microsoft Entra product roadmap which comprises public previews and recent general availability releases.",
           "Target": "roadmap"
         },
         {

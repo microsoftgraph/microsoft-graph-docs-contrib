@@ -8,6 +8,7 @@ ms.topic: tutorial
 ms.localizationpriority: medium
 ms.subservice: entra-id-governance
 ms.date: 03/21/2025
+ms.custom: sfi-ga-nochange
 #Customer intent: As a developer integrating with Microsoft Graph, I want to learn how to integrate PIM APIs for just-in-time access to Microsoft Entra roles, so that I can strengthen my organization's Zero Trust posture by enforcing the principle of least privilege.
 ---
 

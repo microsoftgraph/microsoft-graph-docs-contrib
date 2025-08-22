@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: sebastienlevert
 zone_pivot_groups: mgt-version
 ms.date: 11/07/2024
+ms.custom: sfi-image-nochange
 ---
 
 # Use the Microsoft Graph Toolkit with React

@@ -15,7 +15,8 @@ Namespace: microsoft.graph
 
 Create a new [permission](../resources/permission.md) object on a [driveItem](../resources/permission.md).
 
->**Note:** You can only use this method to create a new application permission. If you want to create a new user permission in a drive item, see [invite](./driveitem-invite.md).
+> [!NOTE]
+> You can only use this method to create a new application permission. If you want to create a new user permission in a drive item, see [invite](./driveitem-invite.md).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -24,6 +25,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "driveitem_post_permissions" } -->
 [!INCLUDE [permissions-table](../includes/permissions/driveitem-post-permissions-permissions.md)]
+
+[!INCLUDE [app-permissions](../includes/sharepoint-embedded-app-driveitem-permissions.md)]
 
 ## HTTP request
 

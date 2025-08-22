@@ -7,6 +7,7 @@ ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
 ms.date: 10/10/2024
+ms.custom: sfi-ga-nochange
 ---
 
 # restoreSessionBase: activate

@@ -2,7 +2,7 @@
 title: "Update claimsmappingpolicy"
 description: "Update the properties of claimsMappingPolicy object."
 ms.localizationpriority: medium
-author: "paulgarn"
+author: "vimrang"
 ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
 ms.date: 06/26/2024

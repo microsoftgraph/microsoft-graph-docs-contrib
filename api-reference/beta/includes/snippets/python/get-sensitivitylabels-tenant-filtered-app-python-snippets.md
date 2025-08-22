@@ -10,7 +10,7 @@ from msgraph_beta.generated.security.data_security_and_governance.sensitivity_la
 from kiota_abstractions.base_request_configuration import RequestConfiguration
 # To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 query_params = SensitivityLabelsRequestBuilder.SensitivityLabelsRequestBuilderGetQueryParameters(
-		filter = "applicableTo eq 'File' and id in ('4e4234dd-377b-42a3-935b-0e42f138fa23','b7a21bba-8197-491f-a5d6-0d0f955397ca')",
+		filter = "applicableTo has 'File' and id in ('4e4234dd-377b-42a3-935b-0e42f138fa23','b7a21bba-8197-491f-a5d6-0d0f955397ca')",
 )
 
 request_configuration = RequestConfiguration(

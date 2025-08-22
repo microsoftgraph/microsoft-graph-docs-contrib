@@ -16,7 +16,7 @@ Namespace: microsoft.graph.identityGovernance
 
 Provide a summary of the workflows processed the most, known as top workflows, for a specified period in a tenant. Workflow basic details are given, along with run information. For information about tasks processed, see [insights: topTasksProcessedSummary](identitygovernance-insights-toptasksprocessedsummary.md).
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

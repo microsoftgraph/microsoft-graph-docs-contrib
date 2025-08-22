@@ -20,7 +20,7 @@ Represents the result of an export operation performed by the [exportItems](../a
 |Property|Type|Description|
 |:---|:---|:---|
 |changeKey|String|The version of the item.|
-|data|Stream|Data that represents an item in a base64 encoded [FastTransfer stream](/openspecs/exchange_server_protocols/ms-oxcfxics/ed7d3455-9bdf-40eb-90bd-8dfe6164a250#gt_12daff0e-4241-4498-a93f-212795ab2450) format.|
+|data|Stream|Data that represents an item in a base64 encoded opaque stream.|
 |error|[mailTipsError](mailtipserror.md)|An error that occurs during an action.|
 |itemId|String|The unique identifier of the item.|
 
@@ -35,7 +35,7 @@ The following JSON representation shows the resource type.
 {
   "@odata.type": "#microsoft.graph.exportItemResponse",
   "changeKey": "String",
-  "data": "Stream",
+  "data": "String",
   "error": {"@odata.type": "microsoft.graph.mailTipsError"},
   "itemId": "String"
 }

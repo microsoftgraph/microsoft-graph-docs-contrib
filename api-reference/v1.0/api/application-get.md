@@ -22,7 +22,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "application_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/application-get-permissions.md)]
 
-
+[!INCLUDE [rbac-application-apis-read](../includes/rbac-for-apis/rbac-application-apis-read.md)]
 
 ## HTTP request
 

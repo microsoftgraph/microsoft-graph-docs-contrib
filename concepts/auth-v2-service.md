@@ -7,7 +7,7 @@ ms.reviewer: jackson.woods
 ms.topic: how-to
 ms.localizationpriority: high
 ms.subservice: entra-applications
-ms.custom: graphiamtop20
+ms.custom: graphiamtop20, sfi-image-nochange
 ms.date: 08/26/2024
 #customer intent: As a developer, I want to understand how my app can call Microsoft Graph on behalf of a signed-in user to access resources in a tenant.
 ---

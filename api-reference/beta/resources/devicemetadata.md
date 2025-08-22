@@ -1,5 +1,5 @@
 ---
-title: "deviceMetadata resource type (preview)"
+title: "deviceMetadata resource type"
 description: "Contains details about the device involved in a session, including type and OS specifications."
 author: "ArunGedela"
 ms.date: 04/08/2025

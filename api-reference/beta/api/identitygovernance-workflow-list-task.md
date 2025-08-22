@@ -16,7 +16,7 @@ Namespace: microsoft.graph.identityGovernance
 
 Retrieve the details of the built-in tasks in Lifecycle Workflows.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Translate identifiers of Outlook-related resources between formats.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-china.md)]
 
 ## Permissions
 

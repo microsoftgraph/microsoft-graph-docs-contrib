@@ -8,6 +8,7 @@ ms.subservice: "m365-backup-storage"
 doc_type: resourcePageType
 toc.title: Restore session
 ms.date: 11/25/2024
+ms.custom: sfi-ga-nochange
 ---
 
 # restoreSessionBase resource type

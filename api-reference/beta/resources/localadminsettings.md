@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
 ms.date: 06/03/2024
+ms.custom: sfi-ga-nochange
 ---
 # localAdminSettings resource type
 

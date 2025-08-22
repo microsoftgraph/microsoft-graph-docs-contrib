@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 [!INCLUDE [rbac-pim-entra-roles-apis](../includes/rbac-for-apis/rbac-pim-entra-roles-apis.md)]
 
-### For PIM for groups
+### For PIM for Groups
 <!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
@@ -64,7 +64,7 @@ GET /policies/roleManagementPolicies?$filter=scopeId eq '{groupId}' and scopeTyp
 This method requires the `$filter` (`eq`) query parameter to scope the request to a **scopeId** and a **scopeType**. 
 
 - To retrieve policies in PIM for Microsoft Entra roles, the **scopeId** must be `/` and **scopeType** can be either `Directory` or `DirectoryRole`. 
-- To retrieve policies in PIM for groups, the **scopeId** must be a group ID and **scopeType** must be `Group`.
+- To retrieve policies in PIM for Groups, the **scopeId** must be a group ID and **scopeType** must be `Group`.
 
 You can also use the `$select` and `$expand` OData query parameters to help customize the response. This API also supports `$select` nested in `$expand` to return only specific properties of those rules. For general information, see [OData query parameters](/graph/query-parameters).
 
@@ -182,11 +182,11 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: Retrieve policies and their details in PIM for groups
+### Example 2: Retrieve policies and their details in PIM for Groups
 
 #### Request
 
-The following example retrieves policies that are scoped to the group and apply to PIM for groups membership and ownership.
+The following example retrieves policies that are scoped to the group and apply to PIM for Groups membership and ownership.
 
 # [HTTP](#tab/http)
 <!-- {

@@ -22,6 +22,9 @@ The [Microsoft Entra data retention policies](/azure/active-directory/reports-mo
 |:---------------|:--------|:----------|
 |[List](../api/signin-list.md) | [signIn](signin.md) |Read the properties and relationships of **signIn** objects.|
 |[Get](../api/signin-get.md) | [signIn](signin.md) |Read the properties and relationships of **signIn** object.|
+|[Confirm compromised](../api/signin-confirmcompromised.md)|None|Mark an event in the Microsoft Entra sign-in logs as risky.|
+|[Confirm safe](../api/signin-confirmsafe.md)|None|Mark an event in Microsoft Entra sign-in logs as safe.|
+|[Dismiss](../api/signin-dismiss.md)|None|Dimiss sign-in risk from Microsoft Entra sign-in events|
 
 ## Properties
 | Property       | Type    |Description|

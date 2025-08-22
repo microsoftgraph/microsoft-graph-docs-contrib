@@ -16,7 +16,7 @@ Namespace: microsoft.graph.identityGovernance
 
 Update the properties of a [task](../resources/identitygovernance-task.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

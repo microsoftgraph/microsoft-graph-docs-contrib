@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Retry the [group](../resources/group.md) service provisioning.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

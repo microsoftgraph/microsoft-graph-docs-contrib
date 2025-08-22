@@ -2,7 +2,7 @@
 title: "Delete claimsMappingPolicy"
 description: "Delete claimsMappingPolicy."
 ms.localizationpriority: medium
-author: "paulgarn"
+author: "vimrang"
 ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
 ms.date: 04/04/2024

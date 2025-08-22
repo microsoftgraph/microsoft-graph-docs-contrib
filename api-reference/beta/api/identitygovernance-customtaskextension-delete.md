@@ -16,7 +16,7 @@ Namespace: microsoft.graph.identityGovernance
 
 Delete a [customTaskExtension](../resources/identitygovernance-customtaskextension.md) object. A custom task extension  can only be deleted if it is not referenced in any task objects in a lifecycle workflow.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

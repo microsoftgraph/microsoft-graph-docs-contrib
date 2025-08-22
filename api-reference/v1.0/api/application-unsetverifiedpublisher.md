@@ -22,6 +22,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "application_unsetverifiedpublisher" } -->
 [!INCLUDE [permissions-table](../includes/permissions/application-unsetverifiedpublisher-permissions.md)]
 
+[!INCLUDE [rbac-application-apis-write](../includes/rbac-for-apis/rbac-application-apis-write.md)]
+
 ## HTTP request
 
 You can address the application using either its **id** or **appId**. **id** and **appId** are referred to as the **Object ID** and **Application (Client) ID**, respectively, in app registrations in the Microsoft Entra admin center.

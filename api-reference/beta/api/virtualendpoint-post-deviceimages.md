@@ -147,6 +147,7 @@ Content-Type: application/json
   "errorCode": null,
   "osStatus": null,
   "expirationDate": null,
-  "osVersionNumber": null
+  "osVersionNumber": null,
+  "sizeInGB": 64
 }
 ```

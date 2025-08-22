@@ -7,6 +7,7 @@ ms.localizationpriority: high
 ms.subservice: entra-users
 doc_type: resourcePageType
 ms.date: 01/10/2025
+ms.custom: sfi-ga-blocked
 ---
 
 # user resource type
@@ -231,7 +232,7 @@ This resource supports:
 | infoCatalogs | String collection | Identifies the info segments assigned to the user.  Supports `$filter` (`eq`, `not`, `ge`, `le`, `startsWith`). |
 | interests | String collection | A list for users to describe their interests. <br><br>Returned only on `$select`. |
 | isLicenseReconciliationNeeded | Boolean | Indicates whether the user is pending an exchange mailbox license assignment. <br><br> Read-only. <br><br> Supports `$filter` (`eq` where `true` only).  |
-| isManagementRestricted| Boolean | `true` if the user is a member of a restricted management administrative unit. Default value is `false`. Read-only. <br/><br/> To manage a user who is a member of a restricted management administrative unit, the administrator or calling app must be assigned a Microsoft Entra role at the scope of the restricted management administrative unit.|
+| isManagementRestricted| Boolean | `true` if the user is a member of a restricted management administrative unit. If not set, the default value is `null` and the default behavior is false. Read-only. <br/><br/> To manage a user who is a member of a restricted management administrative unit, the administrator or calling app must be assigned a Microsoft Entra role at the scope of the restricted management administrative unit.|
 | isResourceAccount | Boolean | Do not use – reserved for future use. |
 | jobTitle | String | The user's job title. Maximum length is 128 characters. <br><br>Supports `$filter` (`eq`, `ne`, `not` , `ge`, `le`, `in`, `startsWith`, and `eq` on `null` values).|
 | lastPasswordChangeDateTime | DateTimeOffset | When this Microsoft Entra user last changed their password or when their password was created, whichever date the latest action was performed. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only. <br><br>Returned only on `$select`.  |
@@ -441,7 +442,7 @@ The following JSON representation shows the resource type.
 ```json
 {
   "aboutMe": "String",
-  "accountEnabled": true,
+  "accountEnabled": "Boolean",
   "ageGroup": "String",
   "assignedLicenses": [{"@odata.type": "microsoft.graph.assignedLicense"}],
   "assignedPlans": [{"@odata.type": "microsoft.graph.assignedPlan"}],
@@ -480,8 +481,9 @@ The following JSON representation shows the resource type.
   "id": "String (identifier)",
   "identities": [{"@odata.type": "microsoft.graph.objectIdentity"}],
   "interests": ["String"],
-  "isLicenseReconciliationNeeded": false,
-  "isResourceAccount": false,
+  "isLicenseReconciliationNeeded": "Boolean",
+  "isManagementRestricted": "Boolean",
+  "isResourceAccount": "Boolean",
   "jobTitle": "String",
   "legalAgeGroupClassification": "String",
   "licenseAssignmentStates": [{"@odata.type": "microsoft.graph.licenseAssignmentState"}],

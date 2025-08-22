@@ -16,7 +16,7 @@ Namespace: microsoft.graph.identityGovernance
 
 Get a list of built-in workflow tasks in Lifecycle Workflows. A task is represented by the [taskDefinition](../resources/identitygovernance-taskdefinition.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

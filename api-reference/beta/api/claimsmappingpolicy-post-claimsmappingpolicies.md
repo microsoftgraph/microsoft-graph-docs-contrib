@@ -2,7 +2,7 @@
 title: "Create claimsMappingPolicy"
 description: "Create a new claimsMappingPolicy."
 ms.localizationpriority: medium
-author: "paulgarn"
+author: "vimrang"
 ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
 ms.date: 04/05/2024

@@ -208,7 +208,7 @@ items:
       href: ../../resources/security-auditdata.md
     - name: Default audit data
       href: ../../resources/security-defaultauditdata.md
-- name: Data security and compliance (preview)
+- name: Data security and compliance
   items:
   - name: Content activity
     items:
@@ -246,10 +246,6 @@ items:
     items:
     - name: Tenant data security and governance
       href: ../../resources/tenantdatasecurityandgovernance.md
-    - name: Compute protection scopes
-      href: ../../api/tenantprotectionscopecontainer-compute.md
-    - name: Process content
-      href: ../../api/userdatasecurityandgovernance-processcontent.md
     - name: Process content async
       href: ../../api/tenantdatasecurityandgovernance-processcontentasync.md
   - name: User data security and governance
@@ -282,12 +278,16 @@ items:
       href: ../../resources/computerightsandinheritanceresult.md
     - name: Content base
       href: ../../resources/contentbase.md
+    - name: Custom metadata dictionary
+      href: ../../resources/custommetadatadictionary.md
     - name: Device metadata
       href: ../../resources/devicemetadata.md
     - name: Dlp action info
       href: ../../resources/dlpactioninfo.md
     - name: Group scope
       href: ../../resources/groupscope.md
+    - name: Integrated application metadata
+      href: ../../resources/integratedapplicationmetadata.md
     - name: Label action base
       href: ../../resources/labelactionbase.md
     - name: Label content right
@@ -330,6 +330,10 @@ items:
       href: ../../resources/protectedapplicationmetadata.md
     - name: Protected content
       href: ../../resources/protectedcontent.md
+    - name: Restrict access action
+      href: ../../resources/restrictaccessaction.md
+    - name: Restrict access action base
+      href: ../../resources/restrictaccessactionbase.md
     - name: Scope base
       href: ../../resources/scopebase.md
     - name: Tenant scope
@@ -620,6 +624,8 @@ items:
       href: ../../api/security-ediscoverycase-post-reviewsets.md
     - name: Get
       href: ../../api/security-ediscoveryreviewset-get.md
+    - name: Update
+      href: ../../api/security-ediscoveryreviewset-update.md
     - name: Export
       href: ../../api/security-ediscoveryreviewset-export.md
     - name: Add to review set

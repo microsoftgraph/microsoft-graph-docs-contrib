@@ -24,6 +24,8 @@ The application object is located in the tenant where the app is registered. A s
 
 In Microsoft Graph, an application is represented by the [application resource type](application.md), and a service principal is represented by the [servicePrincipal resource type](serviceprincipal.md). The details of the two objects can be accessed on the Microsoft Entra admin center through the **Entra ID** > **App registrations** and **Entra ID** > **Enterprise applications** menus respectively.
 
+Service principals inherit specific properties from their associated app registrations. These properties are synchronized from the app registration, but the synchronization isn't immediate or continuous. Sometimes, updating a service principal may prompt the directory to refresh properties from the app registration, causing updates that weren't part of the original request.
+
 ## API use cases for managing applications
 
 The following API use cases are supported for managing applications through the [application resource type](../resources/application.md) in Microsoft Graph.

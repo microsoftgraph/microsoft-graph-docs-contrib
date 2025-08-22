@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Retry the provisioning of a [user](../resources/user.md) object in Microsoft Entra ID.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

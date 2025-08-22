@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ms.date: 06/26/2024
+ms.custom: sfi-ga-nochange
 ---
 
 # unifiedRoleAssignmentSchedule: filterByCurrentUser

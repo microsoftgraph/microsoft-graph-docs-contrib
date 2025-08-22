@@ -8,6 +8,7 @@ ms.localizationpriority: medium
 ms.topic: how-to
 ms.subservice: entra-id-governance
 ms.date: 09/24/2024
+ms.custom: sfi-ga-nochange
 #Customer intent: As a developer, I want to learn how to programmatically manage security alerts relating to Microsoft Entra roles via Privileged Identity Management (PIM).
 ---
 

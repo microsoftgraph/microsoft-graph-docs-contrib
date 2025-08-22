@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: "service-communications"
 doc_type: apiPageType
 ms.date: 08/01/2024
+ms.custom: sfi-ga-nochange
 ---
 
 # List attachments

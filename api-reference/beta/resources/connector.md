@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an Application Proxy connector. Connectors are lightweight agents that sit on-premises and facilitate the outbound connection to the [Microsoft Entra application proxy](/azure/active-directory/app-proxy/what-is-application-proxy) service. Each connector is part of a [connectorGroup](connectorgroup.md).
+Represents an Application Proxy connector. Connectors are lightweight agents that sit on-premises and facilitate the outbound connection to the [Microsoft Entra application proxy](/entra/identity/app-proxy/overview-what-is-app-proxy) service. Each connector is part of a [connectorGroup](../resources/connectorgroup.md).
 
 ## Methods
 

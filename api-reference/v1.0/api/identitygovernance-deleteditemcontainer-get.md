@@ -14,7 +14,7 @@ Namespace: microsoft.graph.identityGovernance
 
 Retrieve a deleted [workflow](../resources/identitygovernance-workflow.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

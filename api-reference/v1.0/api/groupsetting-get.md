@@ -13,7 +13,7 @@ ms.date: 03/06/2024
 
 Namespace: microsoft.graph
 
-Retrieve the properties of a specific group setting object. The setting can be a tenant-level or group-specific setting.
+Retrieve the properties of a specific [group setting](../resources/groupsetting.md) object. The setting can be a tenant-level or group-specific setting.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -22,12 +22,12 @@ Retrieve the properties of a specific group setting object. The setting can be a
 The following tables show the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 ### List tenant-wide settings
-<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
+<!-- { "blockType": "permissions", "name": "groupsetting_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/groupsetting-get-permissions.md)]
 
 ### List group-specific settings
 
-<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
+<!-- { "blockType": "permissions", "name": "groupsetting_get_2" } -->
 [!INCLUDE [permissions-table](../includes/permissions/groupsetting-get-2-permissions.md)]
 
 [!INCLUDE [rbac-group-directorysettings-all](../includes/rbac-for-apis/rbac-group-directorysettings-all.md)]

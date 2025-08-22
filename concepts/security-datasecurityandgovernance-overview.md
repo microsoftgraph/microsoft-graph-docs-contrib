@@ -1,13 +1,13 @@
 ---
-title: "Microsoft Purview data security and governance overview (preview)"
+title: "Microsoft Purview data security and governance overview"
 description: "Microsoft Purview data security and governance overview"
-author: "ArunGedela"
+author: "kylemar"
 ms.date: 04/08/2025
 ms.localizationpriority: medium
 ms.subservice: "security"
 ---
 
-# Microsoft Purview data security and governance APIs (preview)
+# Microsoft Purview data security and governance APIs
 
 The Microsoft Purview data security and governance APIs allow developers to seamlessly integrate the robust protection capabilities of Microsoft Purview into their applications. These APIs are essential for retrieval-augmented generation (RAG) applications, line-of-business (LOB) applications, and systems that handle sensitive data. They provide programmatic access to Microsoft Purview's policy evaluation engine, ensuring consistent enforcement of data security and governance policies across a range of applications.
 
@@ -21,11 +21,11 @@ Collection policies are an event collection and filtering tool in Microsoft Purv
 
 The **Collection** policy is crucial for organizations, particularly those using custom-built **line-of-business (LOB)** applications or third-party vendor applications. These environments can introduce risks where data may not align with organizational standards or could unintentionally breach data boundaries. A Collection policy helps mitigate these risks by ensuring sensitive activities are properly detected and governed, making it a key component in maintaining compliance with data security and governance requirements.
 
-[Learn more about collection policies](https://learn.microsoft.com/en-us/purview/collection-policies-solution-overview)
+[Learn more about collection policies](/purview/collection-policies-solution-overview)
 
 ### Data Loss Prevention (DLP) Policy
 
-The **Data Loss Prevention (DLP)** policy in Microsoft Purview enables administrators to control or restrict the movement of sensitive data within specific user or application contexts. DLP policies can help organizations can prevent the unintended exposure of sensitive information. 
+The **Data Loss Prevention (DLP)** policy in Microsoft Purview enables administrators to control or restrict the movement of sensitive data within specific user or application contexts. DLP policies can help organizations can prevent the unintended exposure of sensitive information.
 
 For example, a security administrator like Joyce might configure a DLP policy to limit the use of sensitive business data when a user attempts to upload files containing such data into non-enterprise-grade AI applications. This ensures that sensitive data remains protected, aligning with organizational data governance standards and maintaining compliance with internal security policies.
 
@@ -96,4 +96,4 @@ The following execution modes and their behaviors are expected:
 
 ## Related content
 
-[Microsoft Purview data security and governance in Microsoft Graph](/graph/api/resources/userdatasecurityandgovernance?view=graph-rest-beta)
+[Microsoft Purview data security and governance in Microsoft Graph](/graph/api/resources/userdatasecurityandgovernance)

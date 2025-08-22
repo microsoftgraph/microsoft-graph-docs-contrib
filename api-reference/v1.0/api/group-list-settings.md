@@ -13,7 +13,7 @@ ms.date: 04/04/2024
 
 Namespace: microsoft.graph
 
-Retrieve a list of tenant-level or group-specific group settings objects.
+Retrieve a list of tenant-level or group-specific [group settings](../resources/groupsetting.md) objects.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -22,17 +22,16 @@ Retrieve a list of tenant-level or group-specific group settings objects.
 The following tables show the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 ### List tenant-wide settings
-<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
+<!-- { "blockType": "permissions", "name": "group_list_settings" } -->
 
 [!INCLUDE [permissions-table](../includes/permissions/group-list-settings-permissions.md)]
 
+[!INCLUDE [rbac-group-directorysettings-all](../includes/rbac-for-apis/rbac-group-directorysettings-all.md)]
+
 ### List group-specific settings
-<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
+<!-- { "blockType": "permissions", "name": "group_list_settings_2" } -->
 
 [!INCLUDE [permissions-table](../includes/permissions/group-list-settings-2-permissions.md)]
-
-
-[!INCLUDE [rbac-group-directorysettings-all](../includes/rbac-for-apis/rbac-group-directorysettings-all.md)]
 
 ## HTTP request
 

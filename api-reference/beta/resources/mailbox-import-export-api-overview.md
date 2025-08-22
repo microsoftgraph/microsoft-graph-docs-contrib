@@ -12,9 +12,12 @@ ms.date: 12/06/2024
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The mailbox import and export APIs in Microsoft Graph allow your application to import and export contents from Exchange Online mailboxes. Mailbox contents can be accessed as a collection of [folders](./mailboxfolder.md) and [items](./mailboxitem.md) in a consistent format, without the need to manage the metadata or structure of each item type individually. These items can be [exported](../api/mailbox-exportitems.md) in [FastTransfer stream](/openspecs/exchange_server_protocols/ms-oxcfxics/a2648823-0a98-43ee-98e8-590e4f7bcbbe) format with full fidelity. Full-fidelity exports ensure that when you [import](../api/mailbox-createimportsession.md) an item, Exchange recreates it with no loss of information.
+The mailbox import and export APIs in Microsoft Graph allow your application to import and export contents from Exchange Online mailboxes. Mailbox contents can be accessed as a collection of [folders](./mailboxfolder.md) and [items](./mailboxitem.md) in a consistent format, without the need to manage the metadata or structure of each item type individually. These items can be [exported](../api/mailbox-exportitems.md) as an opaque stream in full fidelity (you can't change the export stream). Full-fidelity exports ensure that when you [import](../api/mailbox-createimportsession.md) an item, Exchange recreates it with no loss of information.
 
-These APIs support access to data in users' primary and [in-place archive](/exchange/clients-and-mobile-in-exchange-online/archive-client-and-compliance-&-security-feature-details?tabs=Archive-features#archive-mailbox) mailboxes on Exchange.
+These APIs support access to data in users' primary mailboxes and shared mailboxes on Exchange Online. Items can be imported to the same mailbox or a different one.
+
+> [!Important]
+> The mailbox import and export APIs in Microsoft Graph are not designed for mailbox backup and restore. For mailbox backup and restore in Microsoft 365, see [Microsoft 365 Backup](/graph/backup-storage-concept-overview).
 
 ## How to use the mailbox import and export APIs
 

@@ -2234,6 +2234,54 @@ items:
         href: ../../api/identitysecuritydefaultsenforcementpolicy-get.md
       - name: Update
         href: ../../api/identitysecuritydefaultsenforcementpolicy-update.md
+  - name: Public key infrastructure
+    items:
+    - name: Certificate-based auth pki
+      items:
+      - name: Certificate-based auth pki
+        href: ../../resources/certificatebasedauthpki.md
+      - name: List
+        href: ../../api/publickeyinfrastructureroot-list-certificatebasedauthconfigurations.md
+      - name: Create
+        href: ../../api/publickeyinfrastructureroot-post-certificatebasedauthconfigurations.md
+      - name: Get
+        href: ../../api/certificatebasedauthpki-get.md
+      - name: Update
+        href: ../../api/certificatebasedauthpki-update.md
+      - name: Delete
+        href: ../../api/publickeyinfrastructureroot-delete-certificatebasedauthconfigurations.md
+      - name: Upload
+        href: ../../api/certificatebasedauthpki-upload.md
+      - name: List deleted items
+        href: ../../api/directory-deleteditems-list.md
+      - name: Get deleted item
+        href: ../../api/directory-deleteditems-get.md
+      - name: Restore deleted item
+        href: ../../api/directory-deleteditems-restore.md
+      - name: Permanently delete item
+        href: ../../api/directory-deleteditems-delete.md
+    - name: Certificate authority detail
+      items:
+      - name: Certificate authority detail
+        href: ../../resources/certificateauthoritydetail.md
+      - name: List
+        href: ../../api/certificatebasedauthpki-list-certificateauthorities.md
+      - name: Create
+        href: ../../api/certificatebasedauthpki-post-certificateauthorities.md
+      - name: Get
+        href: ../../api/certificateauthoritydetail-get.md
+      - name: Update
+        href: ../../api/certificateauthoritydetail-update.md
+      - name: Delete
+        href: ../../api/certificatebasedauthpki-delete-certificateauthorities.md
+      - name: List deleted items
+        href: ../../api/directory-deleteditems-list.md
+      - name: Get deleted item
+        href: ../../api/directory-deleteditems-get.md
+      - name: Restore deleted item
+        href: ../../api/directory-deleteditems-restore.md
+      - name: Permanently delete item
+        href: ../../api/directory-deleteditems-delete.md
   - name: User flows in external tenants
     items:
     - name: Authentication events flow

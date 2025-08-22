@@ -23,9 +23,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "schedule_list_timecards" } -->
 [!INCLUDE [permissions-table](../includes/permissions/schedule-list-timecards-permissions.md)]
 
-> [!IMPORTANT]
-> When you use the Schedule.Read.All and Schedule.ReadWrite.All application permissions, you must include the `MS-APP-ACTS-AS` header in the request.
-
 ## HTTP request
 
 <!-- {
@@ -45,7 +42,7 @@ This method supports the `$filter`, `$orderby`, `$top`, `$skipToken` OData query
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
-| MS-APP-ACTS-AS | The ID of the user on behalf of whom the app is acting. Required when you use the application permission scope. |
+| MS-APP-ACTS-AS (deprecated) | A user ID (GUID). Required only if the authorization token is an application token; otherwise, optional. The `MS-APP-ACTS-AS` header is deprecated and no longer required with application tokens.|
 
 ## Request body
 

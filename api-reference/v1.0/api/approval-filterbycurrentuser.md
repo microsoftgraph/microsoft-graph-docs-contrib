@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 In [Microsoft Entra entitlement management](../resources/entitlementmanagement-overview.md), return a collection of [access package assignment approvals](../resources/approval.md). The objects returned are those that are in scope for approval by the calling user.
 
-In [PIM for groups](../resources/privilegedidentitymanagement-for-groups-api-overview.md), return a collection of [assignment approvals](../resources/approval.md). The objects returned are those that are in scope for approval by the calling user.
+In [PIM for Groups](../resources/privilegedidentitymanagement-for-groups-api-overview.md), return a collection of [assignment approvals](../resources/approval.md). The objects returned are those that are in scope for approval by the calling user.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | Not supported. |
 
-### For PIM for groups
+### For PIM for Groups
 <!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
@@ -47,7 +47,7 @@ To retrieve the approval resources in entitlement management:
 GET /identityGovernance/entitlementManagement/accessPackageAssignmentApprovals/filterByCurrentUser(on='approver')
 ```
 
-To retrieve the approval resources in PIM for groups:
+To retrieve the approval resources in PIM for Groups:
 <!-- {
   "blockType": "ignored"
 }
@@ -147,7 +147,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: Retrieve the approval resources in PIM for groups
+### Example 2: Retrieve the approval resources in PIM for Groups
 
 #### Request
 

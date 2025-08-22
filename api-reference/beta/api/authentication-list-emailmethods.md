@@ -44,6 +44,9 @@ GET /me/authentication/emailMethods
 [!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
 
 Get details of your own or another user's email authentication method.
+
+[!INCLUDE [authentication-methods-apis-users-selfservice](../includes/authentication-methods-apis-users-selfservice.md)]
+
 <!-- { "blockType": "ignored" } -->
 ``` http
 GET /users/{id | userPrincipalName}/authentication/emailMethods

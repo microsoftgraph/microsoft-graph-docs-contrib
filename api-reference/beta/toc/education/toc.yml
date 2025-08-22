@@ -318,20 +318,32 @@ items:
   items:
   - name: Reading assignment submission
     href: ../../resources/readingassignmentsubmission.md
-  - name: Get
-    href: ../../api/readingassignmentsubmission-get.md
+  - name: List
+    href: ../../api/reportsroot-list-readingassignmentsubmissions.md
+- name: Reading coach passage
+  items:
+  - name: Reading coach passage
+    href: ../../resources/readingcoachpassage.md
+  - name: List
+    href: ../../api/reportsroot-list-readingcoachpassages.md
 - name: Reflect check-in response
   items:
   - name: Reflect check-in response
     href: ../../resources/reflectcheckinresponse.md
-  - name: Get
-    href: ../../api/reflectcheckinresponse-get.md
+  - name: List
+    href: ../../api/reportsroot-list-reflectcheckinresponses.md
 - name: Related contact
   items:
   - name: Related contact
     href: ../../resources/relatedcontact.md
   - name: Update
     href: ../../api/relatedcontact-update.md
+- name: Speaker assignment submission
+  items:
+  - name: Speaker assignment submission
+    href: ../../resources/speakerassignmentsubmission.md
+  - name: List
+    href: ../../api/reportsroot-list-speakerassignmentsubmissions.md
 - name: Complex types
   items:
   - name: Challenging word

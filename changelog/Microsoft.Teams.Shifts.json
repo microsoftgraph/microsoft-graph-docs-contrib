@@ -1067,6 +1067,266 @@
       "CreatedDateTime": "2025-05-26T22:49:05.1424181Z",
       "WorkloadArea": "Teamwork",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "a1b2c3d4-e5f6-7890-ab12-cd34ef56gh78",
+          "ApiChange": "Header",
+          "ChangedApiName": "MS-APP-ACTS-AS",
+          "ChangeType": "Addition",
+          "Description": "Deprecated the `MS-APP-ACTS-AS` request header for the [stageForDeletion](https://learn.microsoft.com/en-us/graph/api/changetrackedentity-stagefordeletion?view=graph-rest-beta) method to the [changeTrackedEntity](https://learn.microsoft.com/en-us/graph/api/resources/changetrackedentity?view=graph-rest-beta) resource.",
+          "Target": "changeTrackedEntity"
+        },
+        {
+          "Id": "a1b2c3d4-e5f6-7890-ab12-cd34ef56gh78",
+          "ApiChange": "Header",
+          "ChangedApiName": "MS-APP-ACTS-AS",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the `MS-APP-ACTS-AS` request header for all operations of the [offerShiftRequest](https://learn.microsoft.com/en-us/graph/api/resources/offershiftrequest?view=graph-rest-beta) resource.",
+          "Target": "offerShiftRequest"
+        },
+        {
+          "Id": "a1b2c3d4-e5f6-7890-ab12-cd34ef56gh78",
+          "ApiChange": "Header",
+          "ChangedApiName": "MS-APP-ACTS-AS",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the `MS-APP-ACTS-AS` request header for all operations of the [openShift](https://learn.microsoft.com/en-us/graph/api/resources/openshift?view=graph-rest-beta) resource.",
+          "Target": "openShift"
+        },
+        {
+          "Id": "a1b2c3d4-e5f6-7890-ab12-cd34ef56gh78",
+          "ApiChange": "Header",
+          "ChangedApiName": "MS-APP-ACTS-AS",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the `MS-APP-ACTS-AS` request header for all operations of the [openShiftChangeRequest](https://learn.microsoft.com/en-us/graph/api/resources/openshiftchangerequest?view=graph-rest-beta) resource.",
+          "Target": "openShiftChangeRequest"
+        },
+        {
+          "Id": "a1b2c3d4-e5f6-7890-ab12-cd34ef56gh78",
+          "ApiChange": "Header",
+          "ChangedApiName": "MS-APP-ACTS-AS",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the `MS-APP-ACTS-AS` request header for all operations of the [schedule](https://learn.microsoft.com/en-us/graph/api/resources/schedule?view=graph-rest-beta) resource.",
+          "Target": "schedule"
+        },
+        {
+          "Id": "a1b2c3d4-e5f6-7890-ab12-cd34ef56gh78",
+          "ApiChange": "Header",
+          "ChangedApiName": "MS-APP-ACTS-AS",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the `MS-APP-ACTS-AS` request header for all operations of the [schedulingGroup](https://learn.microsoft.com/en-us/graph/api/resources/schedulinggroup?view=graph-rest-beta) resource.",
+          "Target": "schedulingGroup"
+        },
+        {
+          "Id": "a1b2c3d4-e5f6-7890-ab12-cd34ef56gh78",
+          "ApiChange": "Header",
+          "ChangedApiName": "MS-APP-ACTS-AS",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the `MS-APP-ACTS-AS` request header for all operations of the [shift](https://learn.microsoft.com/en-us/graph/api/resources/shift?view=graph-rest-beta) resource.",
+          "Target": "shift"
+        },
+        {
+          "Id": "a1b2c3d4-e5f6-7890-ab12-cd34ef56gh78",
+          "ApiChange": "Header",
+          "ChangedApiName": "MS-APP-ACTS-AS",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the `MS-APP-ACTS-AS` request header for all operations of the [shiftPreferences](https://learn.microsoft.com/en-us/graph/api/resources/shiftpreferences?view=graph-rest-beta) resource.",
+          "Target": "shiftPreferences"
+        },
+        {
+          "Id": "a1b2c3d4-e5f6-7890-ab12-cd34ef56gh78",
+          "ApiChange": "Header",
+          "ChangedApiName": "MS-APP-ACTS-AS",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the `MS-APP-ACTS-AS` request header for all operations of the [shiftsRoleDefinition](https://learn.microsoft.com/en-us/graph/api/resources/shiftsroledefinition?view=graph-rest-beta) resource.",
+          "Target": "shiftsRoleDefinition"
+        },
+        {
+          "Id": "a1b2c3d4-e5f6-7890-ab12-cd34ef56gh78",
+          "ApiChange": "Header",
+          "ChangedApiName": "MS-APP-ACTS-AS",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the `MS-APP-ACTS-AS` request header for all operations of the [swapShiftsChangeRequest](https://learn.microsoft.com/en-us/graph/api/resources/swapshiftschangerequest?view=graph-rest-beta) resource.",
+          "Target": "swapShiftsChangeRequest"
+        },
+        {
+          "Id": "a1b2c3d4-e5f6-7890-ab12-cd34ef56gh78",
+          "ApiChange": "Header",
+          "ChangedApiName": "MS-APP-ACTS-AS",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the `MS-APP-ACTS-AS` request header for all operations of the [timeCard](https://learn.microsoft.com/en-us/graph/api/resources/timecard?view=graph-rest-beta) resource.",
+          "Target": "timeCard"
+        },
+        {
+          "Id": "a1b2c3d4-e5f6-7890-ab12-cd34ef56gh78",
+          "ApiChange": "Header",
+          "ChangedApiName": "MS-APP-ACTS-AS",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the `MS-APP-ACTS-AS` request header for all operations of the [timeOff](https://learn.microsoft.com/en-us/graph/api/resources/timeoff?view=graph-rest-beta) resource.",
+          "Target": "timeOff"
+        },
+        {
+          "Id": "a1b2c3d4-e5f6-7890-ab12-cd34ef56gh78",
+          "ApiChange": "Header",
+          "ChangedApiName": "MS-APP-ACTS-AS",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the `MS-APP-ACTS-AS` request header for all operations of the [timeOffReason](https://learn.microsoft.com/en-us/graph/api/resources/timeoffreason?view=graph-rest-beta) resource.",
+          "Target": "timeOffReason"
+        },
+        {
+          "Id": "a1b2c3d4-e5f6-7890-ab12-cd34ef56gh78",
+          "ApiChange": "Header",
+          "ChangedApiName": "MS-APP-ACTS-AS",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the `MS-APP-ACTS-AS` request header for all operations of the [timeOffRequest](https://learn.microsoft.com/en-us/graph/api/resources/timeoffrequest?view=graph-rest-beta) resource.",
+          "Target": "timeOffRequest"
+        },
+        {
+          "Id": "a1b2c3d4-e5f6-7890-ab12-cd34ef56gh78",
+          "ApiChange": "Header",
+          "ChangedApiName": "MS-APP-ACTS-AS",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the `MS-APP-ACTS-AS` request header for all operations of the [workforceIntegration](https://learn.microsoft.com/en-us/graph/api/resources/workforceintegration?view=graph-rest-beta) resource.",
+          "Target": "workforceIntegration"
+        }
+      ],
+      "Id": "f98a1b2c-3d4e-5f67-890a-b12c3d4e5f67",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-06-25T01:15:33.264Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Shift management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "123e4567-e89b-12d3-a456-426614174000",
+          "ApiChange": "Header",
+          "ChangedApiName": "MS-APP-ACTS-AS",
+          "ChangeType": "Addition",
+          "Description": "Deprecated the `MS-APP-ACTS-AS` request header for the [stageForDeletion](https://learn.microsoft.com/en-us/graph/api/changetrackedentity-stagefordeletion?view=graph-rest-1.0) method to the [changeTrackedEntity](https://learn.microsoft.com/en-us/graph/api/resources/changetrackedentity?view=graph-rest-1.0) resource.",
+          "Target": "changeTrackedEntity"
+        },
+        {
+          "Id": "123e4567-e89b-12d3-a456-426614174000",
+          "ApiChange": "Header",
+          "ChangedApiName": "MS-APP-ACTS-AS",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the `MS-APP-ACTS-AS` request header for all operations of the [offerShiftRequest](https://learn.microsoft.com/en-us/graph/api/resources/offershiftrequest?view=graph-rest-1.0) resource.",
+          "Target": "offerShiftRequest"
+        },
+        {
+          "Id": "123e4567-e89b-12d3-a456-426614174000",
+          "ApiChange": "Header",
+          "ChangedApiName": "MS-APP-ACTS-AS",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the `MS-APP-ACTS-AS` request header for all operations of the [openShift](https://learn.microsoft.com/en-us/graph/api/resources/openshift?view=graph-rest-1.0) resource.",
+          "Target": "openShift"
+        },
+        {
+          "Id": "123e4567-e89b-12d3-a456-426614174000",
+          "ApiChange": "Header",
+          "ChangedApiName": "MS-APP-ACTS-AS",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the `MS-APP-ACTS-AS` request header for all operations of the [openShiftChangeRequest](https://learn.microsoft.com/en-us/graph/api/resources/openshiftchangerequest?view=graph-rest-1.0) resource.",
+          "Target": "openShiftChangeRequest"
+        },
+        {
+          "Id": "123e4567-e89b-12d3-a456-426614174000",
+          "ApiChange": "Header",
+          "ChangedApiName": "MS-APP-ACTS-AS",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the `MS-APP-ACTS-AS` request header for all operations of the [schedule](https://learn.microsoft.com/en-us/graph/api/resources/schedule?view=graph-rest-1.0) resource.",
+          "Target": "schedule"
+        },
+        {
+          "Id": "123e4567-e89b-12d3-a456-426614174000",
+          "ApiChange": "Header",
+          "ChangedApiName": "MS-APP-ACTS-AS",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the `MS-APP-ACTS-AS` request header for all operations of the [schedulingGroup](https://learn.microsoft.com/en-us/graph/api/resources/schedulinggroup?view=graph-rest-1.0) resource.",
+          "Target": "schedulingGroup"
+        },
+        {
+          "Id": "123e4567-e89b-12d3-a456-426614174000",
+          "ApiChange": "Header",
+          "ChangedApiName": "MS-APP-ACTS-AS",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the `MS-APP-ACTS-AS` request header for all operations of the [shift](https://learn.microsoft.com/en-us/graph/api/resources/shift?view=graph-rest-1.0) resource.",
+          "Target": "shift"
+        },
+        {
+          "Id": "123e4567-e89b-12d3-a456-426614174000",
+          "ApiChange": "Header",
+          "ChangedApiName": "MS-APP-ACTS-AS",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the `MS-APP-ACTS-AS` request header for all operations of the [shiftPreferences](https://learn.microsoft.com/en-us/graph/api/resources/shiftpreferences?view=graph-rest-1.0) resource.",
+          "Target": "shiftPreferences"
+        },
+        {
+          "Id": "123e4567-e89b-12d3-a456-426614174000",
+          "ApiChange": "Header",
+          "ChangedApiName": "MS-APP-ACTS-AS",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the `MS-APP-ACTS-AS` request header for all operations of the [shiftsRoleDefinition](https://learn.microsoft.com/en-us/graph/api/resources/shiftsroledefinition?view=graph-rest-1.0) resource.",
+          "Target": "shiftsRoleDefinition"
+        },
+        {
+          "Id": "123e4567-e89b-12d3-a456-426614174000",
+          "ApiChange": "Header",
+          "ChangedApiName": "MS-APP-ACTS-AS",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the `MS-APP-ACTS-AS` request header for all operations of the [swapShiftsChangeRequest](https://learn.microsoft.com/en-us/graph/api/resources/swapshiftschangerequest?view=graph-rest-1.0) resource.",
+          "Target": "swapShiftsChangeRequest"
+        },
+        {
+          "Id": "123e4567-e89b-12d3-a456-426614174000",
+          "ApiChange": "Header",
+          "ChangedApiName": "MS-APP-ACTS-AS",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the `MS-APP-ACTS-AS` request header for all operations of the [timeCard](https://learn.microsoft.com/en-us/graph/api/resources/timecard?view=graph-rest-1.0) resource.",
+          "Target": "timeCard"
+        },
+        {
+          "Id": "123e4567-e89b-12d3-a456-426614174000",
+          "ApiChange": "Header",
+          "ChangedApiName": "MS-APP-ACTS-AS",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the `MS-APP-ACTS-AS` request header for all operations of the [timeOff](https://learn.microsoft.com/en-us/graph/api/resources/timeoff?view=graph-rest-1.0) resource.",
+          "Target": "timeOff"
+        },
+        {
+          "Id": "123e4567-e89b-12d3-a456-426614174000",
+          "ApiChange": "Header",
+          "ChangedApiName": "MS-APP-ACTS-AS",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the `MS-APP-ACTS-AS` request header for all operations of the [timeOffReason](https://learn.microsoft.com/en-us/graph/api/resources/timeoffreason?view=graph-rest-1.0) resource.",
+          "Target": "timeOffReason"
+        },
+        {
+          "Id": "123e4567-e89b-12d3-a456-426614174000",
+          "ApiChange": "Header",
+          "ChangedApiName": "MS-APP-ACTS-AS",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the `MS-APP-ACTS-AS` request header for all operations of the [timeOffRequest](https://learn.microsoft.com/en-us/graph/api/resources/timeoffrequest?view=graph-rest-1.0) resource.",
+          "Target": "timeOffRequest"
+        },
+        {
+          "Id": "123e4567-e89b-12d3-a456-426614174000",
+          "ApiChange": "Header",
+          "ChangedApiName": "MS-APP-ACTS-AS",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the `MS-APP-ACTS-AS` request header for all operations of the [workforceIntegration](https://learn.microsoft.com/en-us/graph/api/resources/workforceintegration?view=graph-rest-1.0) resource.",
+          "Target": "workforceIntegration"
+        }
+      ],
+      "Id": "123e4567-e89b-12d3-a456-426614174000",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-06-25T01:15:33.264Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Shift management"
     }
   ]
 }

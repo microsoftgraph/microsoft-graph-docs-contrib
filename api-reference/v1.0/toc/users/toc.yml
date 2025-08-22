@@ -62,6 +62,14 @@ items:
       href: ../../api/user-list-calendarview.md
     - name: Reminder view
       href: ../../api/user-reminderview.md
+  - name: Data security and governance
+    items:
+    - name: Compute protection scopes
+      href: ../../api/userprotectionscopecontainer-compute.md
+    - name: Create content activity
+      href: ../../api/activitiescontainer-post-contentactivities.md
+    - name: Process content
+      href: ../../api/userdatasecurityandgovernance-processcontent.md
   - name: Delegated permission grants
     items:
     - name: List delegated permission grants

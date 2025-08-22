@@ -16,6 +16,8 @@ items:
     href: ../../api/calendar-update.md
   - name: Delete
     href: ../../api/calendar-delete.md
+  - name: Get delta
+    href: ../../api/calendar-delta.md
   - name: Permanently delete
     href: ../../api/calendar-permanentdelete.md
   - name: List calendar view

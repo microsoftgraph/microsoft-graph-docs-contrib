@@ -1,5 +1,63 @@
 {
   "changelog": [
+      {
+      "ChangeList": [
+        {
+          "Id": "7a41ef2d-f996-4dad-898c-3720beaa8e63",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "signUpIdentifierType",
+          "ChangeType": "Addition",
+          "Description": "Added the **signUpIdentifierType** enumeration type.",
+          "Target": "signUpIdentifierType"
+        },
+        {
+          "Id": "7a41ef2d-f996-4dad-898c-3720beaa8e63",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "signUpStage",
+          "ChangeType": "Addition",
+          "Description": "Added the **signUpStage** enumeration type.",
+          "Target": "signUpStage"
+        },
+        {
+          "Id": "7a41ef2d-f996-4dad-898c-3720beaa8e63",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "signUps",
+          "ChangeType": "Addition",
+          "Description": "Added the **signUps** relationship to the [auditLogRoot](https://learn.microsoft.com/en-us/graph/api/resources/auditLogRoot?view=graph-rest-beta) resource.",
+          "Target": "auditLogRoot"
+        },
+        {
+          "Id": "7a41ef2d-f996-4dad-898c-3720beaa8e63",
+          "ApiChange": "Resource",
+          "ChangedApiName": "signUpIdentity",
+          "ChangeType": "Addition",
+          "Description": "Added the [signUpIdentity](https://learn.microsoft.com/en-us/graph/api/resources/signUpIdentity?view=graph-rest-beta) resource.",
+          "Target": "signUpIdentity"
+        },
+        {
+          "Id": "7a41ef2d-f996-4dad-898c-3720beaa8e63",
+          "ApiChange": "Resource",
+          "ChangedApiName": "signUpStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the [signUpStatus](https://learn.microsoft.com/en-us/graph/api/resources/signUpStatus?view=graph-rest-beta) resource.",
+          "Target": "signUpStatus"
+        },
+        {
+          "Id": "7a41ef2d-f996-4dad-898c-3720beaa8e63",
+          "ApiChange": "Resource",
+          "ChangedApiName": "selfServiceSignUp",
+          "ChangeType": "Addition",
+          "Description": "Added the [selfServiceSignUp](https://learn.microsoft.com/en-us/graph/api/resources/selfServiceSignUp?view=graph-rest-beta) resource. Use this resource to analyze self-service sign-up requests in Microsoft Entra External ID.",
+          "Target": "selfServiceSignUp"
+        }
+      ],
+      "Id": "7a41ef2d-f996-4dad-898c-3720beaa8e63",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-06-20T04:05:00.070367Z",
+      "WorkloadArea": "Reports",
+      "SubArea": "Identity and access reports"
+    },
     {
       "ChangeList": [
         {
@@ -658,6 +716,64 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2023-12-05T20:31:40.7734069Z",
+      "WorkloadArea": "Reports",
+      "SubArea": "Identity and access reports"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "1c87abd9-25fe-4859-95de-5aa9ec50f55a",
+          "ApiChange": "Member",
+          "ChangedApiName": "mdiSecureScore",
+          "ChangeType": "Addition",
+          "Description": "Added the `mdiSecureScore` member to the **recommendationCategory** enumeration.",
+          "Target": "recommendationCategory"
+        },
+        {
+          "Id": "1c87abd9-25fe-4859-95de-5aa9ec50f55a",
+          "ApiChange": "Member",
+          "ChangedApiName": "riskAccepted",
+          "ChangeType": "Addition",
+          "Description": "Added the `riskAccepted` member to the **recommendationStatus** enumeration.",
+          "Target": "recommendationStatus"
+        },
+        {
+          "Id": "1c87abd9-25fe-4859-95de-5aa9ec50f55a",
+          "ApiChange": "Member",
+          "ChangedApiName": "thirdParty",
+          "ChangeType": "Addition",
+          "Description": "Added the `thirdParty` member to the **recommendationStatus** enumeration.",
+          "Target": "recommendationStatus"
+        },
+        {
+          "Id": "1c87abd9-25fe-4859-95de-5aa9ec50f55a",
+          "ApiChange": "Member",
+          "ChangedApiName": "planned",
+          "ChangeType": "Addition",
+          "Description": "Added the `planned` member to the **recommendationStatus** enumeration.",
+          "Target": "recommendationStatus"
+        },
+        {
+          "Id": "1c87abd9-25fe-4859-95de-5aa9ec50f55a",
+          "ApiChange": "Member",
+          "ChangedApiName": "alternateMitigation",
+          "ChangeType": "Addition",
+          "Description": "Added the `alternateMitigation` member to the **recommendationStatus** enumeration.",
+          "Target": "recommendationStatus"
+        },
+        {
+          "Id": "1c87abd9-25fe-4859-95de-5aa9ec50f55a",
+          "ApiChange": "Member",
+          "ChangedApiName": "aatp",
+          "ChangeType": "Addition",
+          "Description": "Added the `aatp` member to the **requiredLicenses** enumeration.",
+          "Target": "requiredLicenses"
+        }
+      ],
+      "Id": "1c87abd9-25fe-4859-95de-5aa9ec50f55a",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-07-08T12:50:50.7875451Z",
       "WorkloadArea": "Reports",
       "SubArea": "Identity and access reports"
     },
@@ -3466,6 +3582,58 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2025-04-11T16:50:10.8533511Z",
+      "WorkloadArea": "Reports",
+      "SubArea": "Identity and access reports"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "fbb0cc8a-c51e-4909-a514-08704a852821",
+          "ApiChange": "Method",
+          "ChangedApiName": "dismiss",
+          "ChangeType": "Addition",
+          "Description": "Added the [dismiss](https://learn.microsoft.com/en-us/graph/api/signIn-dismiss?view=graph-rest-beta) method to the [signIn](https://learn.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
+          "Target": "signIn"
+        }
+      ],
+      "Id": "fbb0cc8a-c51e-4909-a514-08704a852821",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-06-09T17:50:36.6108245Z",
+      "WorkloadArea": "Reports",
+      "SubArea": "Identity and access reports"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "e3f790f7-6add-4fc9-a947-63b5df732d5b",
+          "ApiChange": "Method",
+          "ChangedApiName": "confirmCompromised",
+          "ChangeType": "Addition",
+          "Description": "Added the [confirmCompromised](https://learn.microsoft.com/en-us/graph/api/signIn-confirmCompromised?view=graph-rest-1.0) method to the [signIn](https://learn.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-1.0) resource.",
+          "Target": "signIn"
+        },
+        {
+          "Id": "e3f790f7-6add-4fc9-a947-63b5df732d5b",
+          "ApiChange": "Method",
+          "ChangedApiName": "confirmSafe",
+          "ChangeType": "Addition",
+          "Description": "Added the [confirmSafe](https://learn.microsoft.com/en-us/graph/api/signIn-confirmSafe?view=graph-rest-1.0) method to the [signIn](https://learn.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-1.0) resource.",
+          "Target": "signIn"
+        },
+        {
+          "Id": "e3f790f7-6add-4fc9-a947-63b5df732d5b",
+          "ApiChange": "Method",
+          "ChangedApiName": "dismiss",
+          "ChangeType": "Addition",
+          "Description": "Added the [dismiss](https://learn.microsoft.com/en-us/graph/api/signIn-dismiss?view=graph-rest-1.0) method to the [signIn](https://learn.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-1.0) resource.",
+          "Target": "signIn"
+        }
+      ],
+      "Id": "e3f790f7-6add-4fc9-a947-63b5df732d5b",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-07-03T17:50:36.6110895Z",
       "WorkloadArea": "Reports",
       "SubArea": "Identity and access reports"
     }

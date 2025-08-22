@@ -3,6 +3,64 @@
      {
       "ChangeList": [
         {
+          "Id": "09afe499-9b77-43d7-af4d-c36fa7c14aeb",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "certificateAuthorityType",
+          "ChangeType": "Addition",
+          "Description": "Added the **certificateAuthorityType** enumeration type.",
+          "Target": "certificateAuthorityType"
+        },
+        {
+          "Id": "09afe499-9b77-43d7-af4d-c36fa7c14aeb",
+          "ApiChange": "Resource",
+          "ChangedApiName": "certificateAuthorityDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the [certificateAuthorityDetail](https://learn.microsoft.com/en-us/graph/api/resources/certificateAuthorityDetail?view=graph-rest-1.0) resource.",
+          "Target": "certificateAuthorityDetail"
+        },
+        {
+          "Id": "09afe499-9b77-43d7-af4d-c36fa7c14aeb",
+          "ApiChange": "Resource",
+          "ChangedApiName": "certificateBasedAuthPki",
+          "ChangeType": "Addition",
+          "Description": "Added the [certificateBasedAuthPki](https://learn.microsoft.com/en-us/graph/api/resources/certificateBasedAuthPki?view=graph-rest-1.0) resource.",
+          "Target": "certificateBasedAuthPki"
+        },
+        {
+          "Id": "09afe499-9b77-43d7-af4d-c36fa7c14aeb",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "publicKeyInfrastructure",
+          "ChangeType": "Addition",
+          "Description": "Added the **publicKeyInfrastructure** relationship to the [directory](https://learn.microsoft.com/en-us/graph/api/resources/directory?view=graph-rest-1.0) resource.",
+          "Target": "directory"
+        },
+        {
+          "Id": "09afe499-9b77-43d7-af4d-c36fa7c14aeb",
+          "ApiChange": "Resource",
+          "ChangedApiName": "publicKeyInfrastructureRoot",
+          "ChangeType": "Addition",
+          "Description": "Added the [publicKeyInfrastructureRoot](https://learn.microsoft.com/en-us/graph/api/resources/publicKeyInfrastructureRoot?view=graph-rest-1.0) resource.",
+          "Target": "publicKeyInfrastructureRoot"
+        },
+        {
+          "Id": "09afe499-9b77-43d7-af4d-c36fa7c14aeb",
+          "ApiChange": "Method",
+          "ChangedApiName": "upload",
+          "ChangeType": "Addition",
+          "Description": "Added the [upload](https://learn.microsoft.com/en-us/graph/api/certificateBasedAuthPki-upload?view=graph-rest-1.0) method to the [certificateBasedAuthPki](https://learn.microsoft.com/en-us/graph/api/resources/certificateBasedAuthPki?view=graph-rest-1.0) resource.",
+          "Target": "certificateBasedAuthPki"
+        }
+      ],
+      "Id": "09afe499-9b77-43d7-af4d-c36fa7c14aeb",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-06-26T23:18:09.7666936Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+     },
+     {
+      "ChangeList": [
+        {
           "Id": "2f9ab027-9e3a-49ed-aa2c-7ebbb4d9fb66",
           "ApiChange": "Property",
           "ChangedApiName": "isCompliantNetworkAccepted",
@@ -605,6 +663,48 @@
       "CreatedDateTime": "2024-06-10T16:45:20.304139Z",
       "WorkloadArea": "Applications",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "cf36e724-9cf6-4325-b375-0f64652d11d5",
+          "ApiChange": "Property",
+          "ChangedApiName": "isMemberManagementRestricted",
+          "ChangeType": "Addition",
+          "Description": "Added the **isMemberManagementRestricted** property to the [administrativeUnit](https://learn.microsoft.com/en-us/graph/api/resources/administrativeunit?view=graph-rest-1.0) resource.",
+          "Target": "administrativeUnit"
+        },
+        {
+          "Id": "cf36e724-9cf6-4325-b375-0f64652d11d5",
+          "ApiChange": "Property",
+          "ChangedApiName": "isManagementRestricted",
+          "ChangeType": "Addition",
+          "Description": "Added the **isManagementRestricted** property to the [device](https://learn.microsoft.com/en-us/graph/api/resources/device?view=graph-rest-1.0) resource.",
+          "Target": "device"
+        },
+        {
+          "Id": "cf36e724-9cf6-4325-b375-0f64652d11d5",
+          "ApiChange": "Property",
+          "ChangedApiName": "isManagementRestricted",
+          "ChangeType": "Addition",
+          "Description": "Added the **isManagementRestricted** property to the [group](https://learn.microsoft.com/en-us/graph/api/resources/group?view=graph-rest-1.0) resource.",
+          "Target": "group"
+        },
+        {
+          "Id": "cf36e724-9cf6-4325-b375-0f64652d11d5",
+          "ApiChange": "Property",
+          "ChangedApiName": "isManagementRestricted",
+          "ChangeType": "Addition",
+          "Description": "Added the **isManagementRestricted** property to the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-1.0) resource.",
+          "Target": "user"
+        }
+      ],
+      "Id": "cf36e724-9cf6-4325-b375-0f64652d11d5",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-06-26T00:00:00.000Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
     },
     {
       "ChangeList": [

@@ -7,6 +7,7 @@ ms.reviewer: "iamut"
 ms.subservice: entra-users
 doc_type: "apiPageType"
 ms.date: 10/22/2024
+ms.custom: sfi-ga-nochange
 ---
 
 # directoryObject: checkMemberObjects

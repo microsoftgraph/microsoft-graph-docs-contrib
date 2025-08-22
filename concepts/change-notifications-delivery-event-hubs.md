@@ -6,7 +6,7 @@ ms.author: ombongifaith
 ms.subservice: change-notifications
 ms.topic: tutorial
 ms.localizationpriority: high
-ms.custom: graphiamtop20, devx-track-azurecli
+ms.custom: graphiamtop20, devx-track-azurecli, sfi-ropc-nochange
 ms.date: 08/19/2024
 #customer intent: As a developer, I want to receive notifications of changes to specific Microsoft Graph resources through Azure Event Hubs so I can build apps that process the changes according to the business requirements.
 ---

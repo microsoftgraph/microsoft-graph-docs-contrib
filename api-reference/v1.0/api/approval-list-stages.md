@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 List the [approvalStage](../resources/approvalstage.md) objects associated with an [approval](../resources/approval.md). This API request is made by an approver in the following scenarios:
 
 In [Microsoft Entra entitlement management](../resources/entitlementmanagement-overview.md), providing the identifier of the [access package assignment request](../resources/accesspackageassignmentrequest.md).
-In [PIM for groups](../resources/privilegedidentitymanagement-for-groups-api-overview.md), providing the identifier of the [assignment schedule request](../resources/privilegedaccessgroupassignmentschedulerequest.md).
+In [PIM for Groups](../resources/privilegedidentitymanagement-for-groups-api-overview.md), providing the identifier of the [assignment schedule request](../resources/privilegedaccessgroupassignmentschedulerequest.md).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -33,7 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 [!INCLUDE [rbac-entitlement-catalog-reader](../includes/rbac-for-apis/rbac-entitlement-management-catalog-reader-apis-read.md)]
 
-### For PIM for groups
+### For PIM for Groups
 <!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
@@ -49,7 +49,7 @@ To list the approval stages in entitlement management:
 GET /identityGovernance/entitlementManagement/accessPackageAssignmentApprovals/{accessPackageAssignmentRequestId}/stages
 ```
 
-To list the approval stages in PIM for groups:
+To list the approval stages in PIM for Groups:
 
 <!-- { "blockType": "ignored" } -->
 ```http

@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Retrieve the properties and relationships of an [administrativeUnit](../resources/administrativeunit.md) object.
 
-Since the **administrativeUnit** resource supports [extensions](/graph/extensibility-overview), you can also use the `GET` operation to get custom properties and extension data in an **administrativeUnit** instance.
+The **administrativeUnit** resource supports [extensions](/graph/extensibility-overview), which also allows you to use the `GET` operation to get custom properties and extension data in an **administrativeUnit** instance.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -58,9 +58,9 @@ If successful, this method returns a `200 OK` response code and [administrativeU
 ## Examples
 
 ### Example 1: Get an administrative unit
-
+The following example shows how to get an administrative unit.
 #### Request
-
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -105,6 +105,7 @@ GET https://graph.microsoft.com/beta/administrativeUnits/4d7ea995-bc0f-45c0-8c3e
 ---
 
 #### Response
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -121,6 +122,7 @@ Content-type: application/json
     "deletedDateTime": null,
     "displayName": "Seattle District Technical Schools",
     "description": "Seattle district technical schools administration",
+    "isMemberManagementRestricted": false,
     "visibility": null,
     "membershipRule": "(user.country -eq \"United States\")",
     "membershipType": "Dynamic",
@@ -129,8 +131,9 @@ Content-type: application/json
 ```
 
 ### Example 2: Get a restricted management administrative unit
-
+The following example shows a restricted management administrative unit (`"isMemberManagementRestricted": true`).
 #### Request
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -175,6 +178,7 @@ GET https://graph.microsoft.com/beta/administrativeUnits/2sd35b05-ae71-48ab-9e7d
 ---
 
 #### Response
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

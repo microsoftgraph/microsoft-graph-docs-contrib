@@ -36,7 +36,7 @@ The following tables show the least privileged permission or permissions require
 <!-- { "blockType": "permissions", "name": "approvalstep_get_2" } -->
 [!INCLUDE [permissions-table](../includes/permissions/approvalstep-get-2-permissions.md)]
 
-### Permissions required for calling this API for PIM for groups
+### Permissions required for calling this API for PIM for Groups
 
 <!-- { "blockType": "permissions", "name": "approvalstep_get_3" } -->
 [!INCLUDE [permissions-table](../includes/permissions/approvalstep-get-3-permissions.md)]
@@ -57,7 +57,7 @@ To get an approval step in PIM for Microsoft Entra roles:
 GET /roleManagement/directory/roleAssignmentApprovals/{id}/steps/{id}
 ```
 
-To get an approval step in PIM for groups:
+To get an approval step in PIM for Groups:
 
 <!-- { "blockType": "ignored" } -->
 ```http

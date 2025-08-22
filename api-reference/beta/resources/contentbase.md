@@ -1,5 +1,5 @@
 ---
-title: "contentBase resource type (preview)"
+title: "contentBase resource type"
 description: "Abstract base type representing the actual content, text, or binary being processed."
 author: "ArunGedela"
 ms.date: 04/08/2025
@@ -15,6 +15,10 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Abstract base type representing the actual content, text, or binary) being processed.
+
+Use [textContent](../resources/textcontent.md) for text or [binaryContent](../resources/binarycontent.md) binary content.
+
+> **Note:** This abstract type won't be instantiated directly.
 
 ## Properties
 

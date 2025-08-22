@@ -40,7 +40,7 @@ Currently, **targetProduct** supports the following products:
 
    There's a limit of 15,000 indicators per tenant for Microsoft Defender for Endpoint.
 
-- **Microsoft Sentinel** – Only existing customers can use the **tiIndicator** API to send threat intelligence indicators to Microsoft Sentinel. For the most up-to-date, detailed instructions on how to send threat intelligent indicators to Microsoft Sentinel, see [Connect your threat intelligence platform to Microsoft Sentinel with the upload API](/azure/sentinel/connect-threat-intelligence-upload-api).
+- **Microsoft Sentinel** – For the most up-to-date, detailed instructions on how to send threat intelligent indicators to Microsoft Sentinel, see [Connect your threat intelligence platform to Microsoft Sentinel with the upload API](/azure/sentinel/connect-threat-intelligence-upload-api).
   
 For details about the types of indicators supported and limits on indicator counts per tenant, see [Manage indicators](/windows/security/threat-protection/microsoft-defender-atp/manage-indicators).
 

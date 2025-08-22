@@ -38,6 +38,7 @@ Represents the Microsoft 365 Backup Storage service in a tenant.
 |:---|:---|:---|
 |driveInclusionRules|[driveProtectionRule](../resources/driveprotectionrule.md) collection|The list of drive inclusion rules applied to the tenant.|
 |driveProtectionUnits|[driveProtectionUnit](../resources/driveprotectionunit.md) collection|The list of drive protection units in the tenant.|
+|emailNotificationsSetting|[emailNotificationsSetting](../resources/emailnotificationssetting.md)|The email notification settings in the tenant.|
 |exchangeProtectionPolicies|[exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md) collection|The list of Exchange protection policies in the tenant.|
 |exchangeRestoreSessions|[exchangeRestoreSession](../resources/exchangerestoresession.md) collection|The list of Exchange restore sessions available in the tenant.|
 |mailboxInclusionRules|[mailboxProtectionRule](../resources/mailboxprotectionrule.md) collection|The list of mailbox inclusion rules applied to the tenant.|

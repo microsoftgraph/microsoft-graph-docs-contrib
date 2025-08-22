@@ -35,7 +35,7 @@ When there's at least one more page of data available, Microsoft Graph returns a
 
 ### Client-side paging
 
-In client-side paging, a client app specifies the number of results it wants Microsoft Graph to return in a single page by using the [$top](query-parameters.md#top-parameter), [$skip](query-parameters.md#skip-parameter), or [$skipToken](query-parameters.md#skiptoken-parameter) query parameters. Support for client-side paging, including the number of results that the client can request for in a single page depends on the API and the query being performed. For example, the `/users` endpoint supports `$top` but not `$skip`.
+In client-side paging, a client app specifies the number of results it wants Microsoft Graph to return in a single page by using the [$top](query-parameters.md#top), [$skip](query-parameters.md#skip), or [$skipToken](query-parameters.md#skiptoken) query parameters. Support for client-side paging, including the number of results that the client can request for in a single page depends on the API and the query being performed. For example, the `/users` endpoint supports `$top` but not `$skip`.
 
 The rest of this article describes how to implement client-side paging.
 

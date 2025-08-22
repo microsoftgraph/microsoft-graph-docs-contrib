@@ -18,7 +18,7 @@ Retrieve a list of recently deleted directory objects from [deleted items](../re
 - [administrativeUnit](../resources/administrativeunit.md)
 - [application](../resources/application.md)
 - [certificateBasedAuthPki](../resources/certificatebasedauthpki.md)
-- [certificateAuthorityDetail](../resources/certificateauthoritydetail.md
+- [certificateAuthorityDetail](../resources/certificateauthoritydetail.md)
 - [externalUserProfile](../resources/externaluserprofile.md)
 - [group](../resources/group.md)
 - [pendingExternalUserProfile](../resources/pendingexternaluserprofile.md)
@@ -46,6 +46,8 @@ The following table shows the least privileged permission or permissions require
 | [certificateAuthorityDetail](../resources/certificateauthoritydetail.md) | PublicKeyInfrastructure.Read.All | Not supported. | PublicKeyInfrastructure.Read.All |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
+
+[!INCLUDE [rbac-directory-deleted-items-apis](../includes/rbac-for-apis/rbac-directory-deleted-items-apis.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

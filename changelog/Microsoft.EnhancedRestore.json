@@ -3,6 +3,56 @@
       {
         "ChangeList": [
           {
+            "Id": "a9aa0a8e-95b2-4bf7-9851-9fe707d27968",
+            "ApiChange": "Enumeration",
+            "ChangedApiName": "notificationEventsType",
+            "ChangeType": "Addition",
+            "Description": "Added the **notificationEventsType** enumeration type.",
+            "Target": "notificationEventsType"
+          },
+          {
+            "Id": "a9aa0a8e-95b2-4bf7-9851-9fe707d27968",
+            "ApiChange": "Enumeration",
+            "ChangedApiName": "notificationRecipientsType",
+            "ChangeType": "Addition",
+            "Description": "Added the **notificationRecipientsType** enumeration type.",
+            "Target": "notificationRecipientsType"
+          },
+          {
+            "Id": "a9aa0a8e-95b2-4bf7-9851-9fe707d27968",
+            "ApiChange": "Resource",
+            "ChangedApiName": "notificationRecipients",
+            "ChangeType": "Addition",
+            "Description": "Added the [notificationRecipients](https://learn.microsoft.com/en-us/graph/api/resources/notificationRecipients?view=graph-rest-beta) resource type.",
+            "Target": "notificationRecipients"
+          },
+          {
+            "Id": "a9aa0a8e-95b2-4bf7-9851-9fe707d27968",
+            "ApiChange": "Relationship",
+            "ChangedApiName": "emailNotificationsSetting",
+            "ChangeType": "Addition",
+            "Description": "Added the **emailNotificationsSetting** relationship to the [backupRestoreRoot](https://learn.microsoft.com/en-us/graph/api/resources/backupRestoreRoot?view=graph-rest-beta) resource.",
+            "Target": "backupRestoreRoot"
+          },
+          {
+            "Id": "a9aa0a8e-95b2-4bf7-9851-9fe707d27968",
+            "ApiChange": "Resource",
+            "ChangedApiName": "emailNotificationsSetting",
+            "ChangeType": "Addition",
+            "Description": "Added the [emailNotificationsSetting](https://learn.microsoft.com/en-us/graph/api/resources/emailNotificationsSetting?view=graph-rest-beta) resource and associated methods.",
+            "Target": "emailNotificationsSetting"
+          }
+        ],
+        "Id": "a9aa0a8e-95b2-4bf7-9851-9fe707d27968",
+        "Cloud": "Prod",
+        "Version": "beta",
+        "CreatedDateTime": "2025-06-17T09:39:55.7553844Z",
+        "WorkloadArea": "Backup storage",
+        "SubArea": ""
+      },
+      {
+        "ChangeList": [
+          {
             "Id": "991146f6-22d4-4e50-b893-fbea11342412",
             "ApiChange": "Enumeration",
             "ChangedApiName": "protectionUnitsBulkJobStatus",
@@ -1423,6 +1473,64 @@
       "CreatedDateTime": "2024-10-08T06:23:33.4182656Z",
       "WorkloadArea": "Backup storage",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "8662c176-3414-42a2-bf63-99822f367129",
+          "ApiChange": "Member",
+          "ChangedApiName": "offboardRequested",
+          "ChangeType": "Addition",
+          "Description": "Added the `offboardRequested` member to the **protectionUnitStatus** enumeration.",
+          "Target": "protectionUnitStatus"
+        },
+        {
+          "Id": "8662c176-3414-42a2-bf63-99822f367129",
+          "ApiChange": "Member",
+          "ChangedApiName": "offboarded",
+          "ChangeType": "Addition",
+          "Description": "Added the `offboarded` member to the **protectionUnitStatus** enumeration.",
+          "Target": "protectionUnitStatus"
+        },
+        {
+          "Id": "8662c176-3414-42a2-bf63-99822f367129",
+          "ApiChange": "Member",
+          "ChangedApiName": "cancelOffboardRequested",
+          "ChangeType": "Addition",
+          "Description": "Added the `cancelOffboardRequested` member to the **protectionUnitStatus** enumeration.",
+          "Target": "protectionUnitStatus"
+        },
+        {
+          "Id": "8662c176-3414-42a2-bf63-99822f367129",
+          "ApiChange": "Property",
+          "ChangedApiName": "offboardRequestedDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **offboardRequestedDateTime** property to the [protectionUnitBase](https://learn.microsoft.com/en-us/graph/api/resources/protectionUnitBase?view=graph-rest-beta) resource.",
+          "Target": "protectionUnitBase"
+        },
+        {
+          "Id": "8662c176-3414-42a2-bf63-99822f367129",
+          "ApiChange": "Method",
+          "ChangedApiName": "cancelOffboard",
+          "ChangeType": "Addition",
+          "Description": "Added the [cancelOffboard](https://learn.microsoft.com/en-us/graph/api/protectionUnitBase-cancelOffboard?view=graph-rest-beta) method to the [protectionUnitBase](https://learn.microsoft.com/en-us/graph/api/resources/protectionUnitBase?view=graph-rest-beta) resource.",
+          "Target": "protectionUnitBase"
+        },
+        {
+          "Id": "8662c176-3414-42a2-bf63-99822f367129",
+          "ApiChange": "Method",
+          "ChangedApiName": "offboard",
+          "ChangeType": "Addition",
+          "Description": "Added the [offboard](https://learn.microsoft.com/en-us/graph/api/protectionUnitBase-offboard?view=graph-rest-beta) method to the [protectionUnitBase](https://learn.microsoft.com/en-us/graph/api/resources/protectionUnitBase?view=graph-rest-beta) resource.",
+          "Target": "protectionUnitBase"
+        }
+      ],
+      "Id": "8662c176-3414-42a2-bf63-99822f367129",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-06-27T01:08:05.3436315Z",
+      "WorkloadArea": "EnhancedRestore",
+      "SubArea": "Backup and Restore"
     }
   ]
 }

@@ -5,7 +5,7 @@ author: "rolyon"
 ms.localizationpriority: medium
 ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
-ms.date: 03/06/2024
+ms.date: 06/11/2025
 ---
 
 # auditLogRoot resource type
@@ -31,7 +31,8 @@ None.
 |customSecurityAttributeAudits|[customSecurityAttributeAudit](../resources/customsecurityattributeaudit.md) collection|Represents a custom security attribute audit log.|
 |directoryAudits|[directoryAudit](../resources/directoryaudit.md) collection|Read-only. Nullable.|
 |provisioning|[provisioningObjectSummary](../resources/provisioningobjectsummary.md) collection|Represents an action performed by the Microsoft Entra provisioning service and its associated properties.|
-|signIns|[signIn](../resources/signin.md) collection|Read-only. Nullable.|
+|signIns|[signIn](../resources/signin.md) collection|Represents Microsoft Entra sign-in events. Read-only. Nullable.|
+|signUps|[selfServiceSignUp](../resources/selfservicesignup.md) collection|Represents sign up events in Microsoft Entra External ID. Read-only. Nullable.|
 
 ## JSON representation
 

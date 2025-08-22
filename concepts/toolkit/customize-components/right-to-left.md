@@ -4,6 +4,7 @@ description: "Describes right-to-left (rtl) support in the Microsoft Graph Toolk
 ms.localizationpriority: medium
 author: sebastienlevert
 ms.date: 11/07/2024
+ms.custom: sfi-image-nochange
 ---
 
 # Display Microsoft Graph Toolkit components right-to-left (rtl)

@@ -4,6 +4,7 @@ description: Use Graph Explorer to make Microsoft Graph REST API requests and vi
 ms.localizationpriority: high
 author: RabebOthmani
 ms.date: 11/07/2024
+ms.custom: sfi-image-nochange
 ---
 
 # Work with Graph Explorer

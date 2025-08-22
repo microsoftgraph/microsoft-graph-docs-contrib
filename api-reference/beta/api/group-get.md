@@ -265,7 +265,7 @@ Content-type: application/json
 
 #### Request
 
-Here's an example  of the request.
+The following example shows a request.
 
 <!-- {
   "blockType": "ignored",
@@ -279,13 +279,12 @@ GET https://graph.microsoft.com/beta/groups/1cdf9c18-a7dc-46b1-b47f-094d5656376d
 
 #### Response
 
-Here's an example  of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.group",
-  "isCollection": true
+  "@odata.type": "Collection(microsoft.graph.group)"
 } -->
 
 ```http
@@ -305,9 +304,10 @@ Content-type: application/json
 }
 ```
 
-### Example 4: Check if management of a group is restricted
-
+### Example 4: Check if the management of a group is restricted
+The following example shows how to check whether the management of a group is restricted.
 #### Request
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -352,18 +352,19 @@ GET https://graph.microsoft.com/beta/groups/aed0b780-965f-4149-85c5-a8c73e58brt6
 ---
 
 #### Response
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.administrativeUnit"
+  "@odata.type": "microsoft.graph.group"
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "isManagementRestricted": true
+  "isManagementRestricted": true
 }
 ```
 

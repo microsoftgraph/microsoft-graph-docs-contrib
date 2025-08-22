@@ -1,11 +1,12 @@
 ---
 title: "List myRoles"
-description: "Get the roles that a signed-in user has through a delegated relationship across managed tenants." 
+description: "Get the roles that a signed-in user has through a delegated relationship across managed tenants."
 author: "idwilliams"
 ms.localizationpriority: medium
 ms.subservice: "m365-lighthouse"
 doc_type: apiPageType
 ms.date: 04/04/2024
+ms.custom: sfi-ga-nochange
 ---
 
 # List myRoles

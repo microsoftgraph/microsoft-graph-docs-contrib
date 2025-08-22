@@ -151,5 +151,6 @@ HTTP/1.1 204 No Content
 ```
 
 ## Related content
+* [Manage profile source settings for an organization](/graph/profilesource-configure-settings)
 * [Understand how organizational data is used and retained in Microsoft 365](/viva/orgdata-data-usage)
 * [User profile synchronization](/sharepoint/user-profile-sync)

@@ -25,6 +25,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "application_upsert" } -->
 [!INCLUDE [permissions-table](../includes/permissions/application-upsert-permissions.md)]
 
+[!INCLUDE [rbac-application-apis-write](../includes/rbac-for-apis/rbac-application-apis-write.md)]
+
 ## HTTP request
 
 To create or update an application, specify the **uniqueName** client-provided alternate key.

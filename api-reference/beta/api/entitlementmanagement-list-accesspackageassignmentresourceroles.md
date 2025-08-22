@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Retrieve a list of [accessPackageAssignmentResourceRole](../resources/accesspackageassignmentresourcerole.md) objects.  The resulting list includes all the resource roles of all assignments that the caller has access to read, across all catalogs and access packages.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

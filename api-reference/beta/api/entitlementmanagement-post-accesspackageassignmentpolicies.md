@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Create a new [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) object in [Microsoft Entra entitlement management](../resources/entitlementmanagement-overview.md).
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

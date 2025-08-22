@@ -6,6 +6,7 @@ author: "keylimesoda"
 doc_type: apiPageType
 ms.subservice: change-notifications
 ms.date: 07/26/2024
+ms.custom: sfi-ga-nochange
 ---
 
 # List subscriptions

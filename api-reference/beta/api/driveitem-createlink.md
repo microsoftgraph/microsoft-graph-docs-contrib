@@ -14,6 +14,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create a link to share a driveItem [driveItem](../resources/driveitem.md).
+
 The **createLink** action creates a new sharing link if the specified link type doesn't already exist for the calling application.
 If a sharing link of the specified type already exists for the app, the existing sharing link is returned.
 
@@ -27,6 +28,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "driveitem_createlink" } -->
 [!INCLUDE [permissions-table](../includes/permissions/driveitem-createlink-permissions.md)]
+
+[!INCLUDE [app-permissions](../includes/sharepoint-embedded-app-driveitem-permissions.md)]
 
 ## HTTP request
 

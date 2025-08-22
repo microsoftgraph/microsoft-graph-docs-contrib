@@ -1,5 +1,5 @@
 ---
-title: "customMetadataDictionary resource type (preview)"
+title: "customMetadataDictionary resource type"
 description: "Represents a dictionary specifically for storing custom metadata extracted from content, where values must be strings."
 author: "ArunGedela"
 ms.date: 04/08/2025
@@ -10,19 +10,17 @@ doc_type: resourcePageType
 
 # customMetadataDictionary resource type
 
-Namespace: microsoft.dataClassificationService.contract
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents a dictionary specifically for storing custom metadata extracted from content, where values must be strings.
 
-It's an open type but constrained to only accept string values for its dynamic properties.
+It's an open type but constrained to only accept string values for its dynamic properties. Inherits from the base `Org.OData.Core.V1.Dictionary` type.
 
 ## Properties
 
-| Property    | Type   | Description                                                              |
-| :---------- | :----- | :----------------------------------------------------------------------- |
-| (dynamic)   | String | Represents dynamically added key-value pairs of custom content metadata. Keys are property names, values must be strings. |
+None.
 
 ## Relationships
 
@@ -38,8 +36,6 @@ The following JSON representation shows the resource type. Specific properties d
 }-->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.customMetadataDictionary",
-  "ProjectCode": "Alpha",
-  "Department": "Finance"
+  "@odata.type": "#microsoft.graph.customMetadataDictionary"
 }
 ```

@@ -1977,6 +1977,143 @@ Content-type: application/json
   "reactions": []
 }
 ```
+### Example 15: Send a message with a Loop component
+
+The following example shows how to send a message with an embedded Loop component. The Loop component is a special type of message that allows users to collaborate in real-time on a shared task or project. It can be used to create a collaborative workspace within a chat or channel.
+
+#### Request
+
+The following example shows a request.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "post_chatmessage_15",
+  "sampleKeys": ["19:7fb82b685f9c457296a0ab6a1d98b4c1@thread.v2"]
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/chats/19:7fb82b685f9c457296a0ab6a1d98b4c1@thread.v2/messages
+Content-type: application/json
+
+
+{
+    "body": {
+        "contentType": "html",
+        "content": "<attachment id=\"74d20c7f34aa4a7fb74e2b30004247c5\"></attachment>"
+    },
+    "attachments": [
+		{
+			"id": "74d20c7f34aa4a7fb74e2b30004247c5",
+			"contentType": "application/vnd.microsoft.card.fluidEmbedCard",
+			"content": "{\"componentUrl\": \"{LoopComponent_url}\", \"sourceType\": \"Compose\"}",
+			"name": null,
+			"thumbnailUrl": null,
+			"teamsAppId": "FluidEmbedCard"
+		}
+	]
+}
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/post-chatmessage-15-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/post-chatmessage-15-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/post-chatmessage-15-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/post-chatmessage-15-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/post-chatmessage-15-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/post-chatmessage-15-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/post-chatmessage-15-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/post-chatmessage-15-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+
+The following example shows the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.chatMessage"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('5c884e2f-83f8-4cff-af8e-0177f260b9f8')/channels('19%3A81f49626414645c99469ee65a1a7e1a4%40thread.tacv2')/messages/$entity",
+    "id": "1675104302171",
+    "replyToId": null,
+    "etag": "1675104302171",
+    "messageType": "message",
+    "createdDateTime": "2023-01-30T18:45:02.171Z",
+    "lastModifiedDateTime": "2023-01-30T18:45:02.171Z",
+    "lastEditedDateTime": null,
+    "deletedDateTime": null,
+    "subject": "Announcement Subheading",
+    "summary": null,
+    "chatId": null,
+    "importance": "normal",
+    "locale": "en-us",
+    "webUrl": "https://teams.microsoft.com/l/message/19%3A81f49626414645c99469ee65a1a7e1a4%40thread.tacv2/1675104302171?groupId=5c884e2f-83f8-4cff-af8e-0177f260b9f8&tenantId=2432b57b-0abd-43db-aa7b-16eadd115d34&createdTime=1675104302171&parentMessageId=1675104302171",
+    "onBehalfOf": null,
+    "policyViolation": null,
+    "eventDetail": null,
+    "from": {
+        "application": null,
+        "device": null,
+        "user": {
+            "id": "28c10244-4bad-4fda-993c-f332faef94f0",
+            "displayName": "Adele Vance",
+            "userIdentityType": "aadUser"
+        }
+    },
+    "body": {
+        "contentType": "text",
+        "content": "<attachment id=\"74d20c7f34aa4a7fb74e2b30004247c5\"></attachment>"
+    },
+    "channelIdentity": {
+        "teamId": "5c884e2f-83f8-4cff-af8e-0177f260b9f8",
+        "channelId": "19:81f49626414645c99469ee65a1a7e1a4@thread.tacv2"
+    },
+    "attachments": [
+		{
+			"id": "74d20c7f34aa4a7fb74e2b30004247c5",
+			"contentType": "application/vnd.microsoft.card.fluidEmbedCard",
+			"contentUrl": null,
+			"content": "{\"componentUrl\": \"{LoopComponent_url}\", \"sourceType\": \"Compose\"}",
+			"name": null,
+			"thumbnailUrl": null,
+			"teamsAppId": "FluidEmbedCard"
+		}
+	],  
+    "mentions": [],
+    "reactions": []
+}
+```
 
 ## Related content
 

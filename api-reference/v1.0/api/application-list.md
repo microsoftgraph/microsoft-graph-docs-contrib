@@ -26,7 +26,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 [!INCLUDE [permissions-table](../includes/permissions/application-list-permissions.md)]
 
-
+[!INCLUDE [rbac-application-apis-read](../includes/rbac-for-apis/rbac-application-apis-read.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
