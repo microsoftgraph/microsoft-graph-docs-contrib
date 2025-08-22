@@ -1,7 +1,7 @@
 ---
 title: "validatingDomains resource type"
 description: "Defines the types of domains to which the federated token validation applies."
-author: "rahul-nagraj"
+author: "vimrang"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType

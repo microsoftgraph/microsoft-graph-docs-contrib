@@ -1,7 +1,7 @@
 ---
 title: "Update internalDomainFederation"
 description: "Update the properties of an internalDomainFederation object."
-author: "rahul-nagraj"
+author: "vimrang"
 ms.localizationpriority: medium
 ms.custom: has-azure-ad-ps-ref, azure-ad-ref-level-one-done
 ms.subservice: "entra-sign-in"
