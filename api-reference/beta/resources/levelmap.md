@@ -1,6 +1,6 @@
 ---
 title: "levelMap resource type"
-description: "Represents a level.geojson file in IMDF format showing the physical floor structure within a building."
+description: "Represents a level.geojson file in IMDF format that shows the physical floor structure within a building."
 author: tiwarisakshi02
 ms.date: 06/12/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a level.geojson file in IMDF format showing the physical floor structure within a building.
+Represents a level.geojson file in IMDF format that shows the physical floor structure within a [building](../resources/building.md).
 
 Inherits from [baseMapFeature](./basemapfeature.md).
 
@@ -30,7 +30,7 @@ Inherits from [baseMapFeature](./basemapfeature.md).
 |:---|:---|:---|
 |id|String|Unique identifier for the **levelMap** object. Inherited from [baseMapFeature](./basemapfeature.md).|
 |placeId|String|Identifier of the [floor](./floor.md) to which this **levelMap** belongs.|
-|properties|String|Concatenated key-value pair of all properties of a geojson file for this **levelMap**. Inherited from [baseMapFeature](./basemapfeature.md).|
+|properties|String|Concatenated key-value pair of all properties of a GeoJSON file for this **levelMap**. Inherited from [baseMapFeature](./basemapfeature.md).|
 
 ## Relationships
 |Relationship|Type|Description|
