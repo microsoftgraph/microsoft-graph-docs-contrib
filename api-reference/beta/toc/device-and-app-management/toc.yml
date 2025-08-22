@@ -202,7 +202,7 @@ items:
       href: ../../api/cloudpcdeviceimage-getsourceimages.md
     - name: Reupload
       href: ../../api/cloudpcdeviceimage-reupload.md
-  - name: Cloud PC external partner setting
+  - name: Cloud PC external partner setting (deprecated)
     items:
     - name: Cloud PC external partner setting
       href: ../../resources/cloudpcexternalpartnersetting.md
@@ -214,6 +214,18 @@ items:
       href: ../../api/cloudpcexternalpartnersetting-get.md
     - name: Update
       href: ../../api/cloudpcexternalpartnersetting-update.md
+  - name: Cloud PC external partner
+    items:
+    - name: Cloud PC external partner
+      href: ../../resources/cloudpcexternalpartner.md
+    - name: List
+      href: ../../api/virtualendpoint-list-externalpartners.md
+    - name: Create
+      href: ../../api/virtualendpoint-post-externalpartners.md
+    - name: Get
+      href: ../../api/cloudpcexternalpartner-get.md
+    - name: Update
+      href: ../../api/cloudpcexternalpartner-update.md
   - name: Cloud PC front line service plan
     items:
     - name: Cloud PC front line service plan

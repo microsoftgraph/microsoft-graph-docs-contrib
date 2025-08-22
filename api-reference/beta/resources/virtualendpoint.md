@@ -40,6 +40,8 @@ Inherits from [entity](../resources/entity.md).
 |[List service plans](../api/virtualendpoint-list-serviceplans.md)|[cloudPcServicePlan](../resources/cloudpcserviceplan.md) collection|List properties and relationships of the [cloudPcServicePlan](../resources/cloudpcserviceplan.md) objects.|
 |[List external partner settings](../api/virtualendpoint-list-externalpartnersettings.md)|[cloudPcExternalPartnerSetting](../resources/cloudpcexternalpartnersetting.md) collection|Get a list of the [cloudPcExternalPartnerSetting](../resources/cloudpcexternalpartnersetting.md) objects and their properties.|
 |[Create external partner setting](../api/virtualendpoint-post-externalpartnersettings.md)|[cloudPcExternalPartnerSetting](../resources/cloudpcexternalpartnersetting.md)|Create a new [cloudPcExternalPartnerSetting](../resources/cloudpcexternalpartnersetting.md) object.|
+|[List external partners](../api/virtualendpoint-list-externalpartners.md)|[cloudPcExternalPartner](../resources/cloudpcexternalpartner.md) collection|Get a list of the [cloudPcExternalPartner](../resources/cloudpcexternalpartner.md) objects and their properties.|
+|[Create external partner](../api/virtualendpoint-post-externalpartners.md)|[cloudPcExternalPartner](../resources/cloudpcexternalpartner.md)|Create a new [cloudPcExternalPartner](../resources/cloudpcexternalpartner.md) object.|
 |[List front line service plans](../api/virtualendpoint-list-frontlineserviceplans.md) |[cloudPcFrontLineServicePlan](../resources/cloudpcfrontlineserviceplan.md) collection|Get a list of the [cloudPcFrontLineServicePlan](../resources/cloudpcfrontlineserviceplan.md) objects and their properties.|
 |[List bulk actions](../api/virtualendpoint-list-bulkactions.md)|[cloudPcBulkAction](../resources/cloudpcbulkaction.md) collection|Get a list of the [cloudPcBulkAction](../resources/cloudpcbulkaction.md) objects and their properties.|
 |[Create bulk action](../api/virtualendpoint-post-bulkactions.md)|[cloudPcBulkAction](../resources/cloudpcbulkaction.md)|Create a new [cloudPcBulkAction](../resources/cloudpcbulkaction.md) object.|
@@ -64,6 +66,7 @@ Inherits from [entity](../resources/entity.md).
 |crossCloudGovernmentOrganizationMapping|[cloudPcCrossCloudGovernmentOrganizationMapping](../resources/cloudpccrosscloudgovernmentorganizationmapping.md)|Cloud PC organization mapping between public and US Government Community Cloud (GCC) organizations.|
 |deviceImages|[cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) collection|The image resource on Cloud PC.|
 |externalPartnerSettings|[cloudPcExternalPartnerSetting](../resources/cloudpcexternalpartnersetting.md) collection|The external partner settings on a Cloud PC.|
+|externalPartners|[cloudPcExternalPartner](../resources/cloudpcexternalpartner.md) collection|The external partners on a Cloud PC.|
 |frontLineServicePlans|[cloudPcFrontLineServicePlan](../resources/cloudpcfrontlineserviceplan.md) collection|Front-line service plans for a Cloud PC.|
 |galleryImages|[cloudPcGalleryImage](../resources/cloudpcgalleryimage.md) collection|The gallery image resource on Cloud PC.|
 |onPremisesConnections|[cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) collection|A defined collection of Azure resource information that can be used to establish on-premises network connectivity for Cloud PCs.|
