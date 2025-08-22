@@ -18,13 +18,12 @@ Represents a fixture.geojson file in IMDF format that defines movable or semi-pe
 
 Inherits from [baseMapFeature](./basemapfeature.md).
 
-
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Create](../api/levelmap-post-fixtures.md)|[fixtureMap](./fixturemap.md)|Create a new **fixtureMap** object.|
-|[Update](../api/fixturemap-update.md)|[fixtureMap](./fixturemap.md)|Update the properties of a **fixtureMap** object.|
-|[Delete](../api/fixturemap-delete.md)|None|Delete a **fixtureMap** object.|
+|[Create](../api/levelmap-post-fixtures.md)|[fixtureMap](./fixturemap.md)|Create a new [fixtureMap](../resources/fixturemap.md) object in IMDF format within a specified floor.|
+|[Update](../api/fixturemap-update.md)|[fixtureMap](./fixturemap.md)|Update the properties of a [fixtureMap](../resources/fixturemap.md) object in IMDF format.|
+|[Delete](../api/fixturemap-delete.md)|None|Delete a [fixture](../resources/fixturemap.md) on a specified floor.|
 
 ## Properties
 |Property|Type|Description|
