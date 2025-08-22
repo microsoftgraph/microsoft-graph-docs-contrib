@@ -1,6 +1,6 @@
 ---
 title: "Update sectionMap"
-description: "Update the properties of a section on a specific floor."
+description: "Update the properties of a sectionMap object in IMDF format on a specified floor."
 author: tiwarisakshi02
 ms.date: 06/12/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [section](../resources/sectionmap.md) on a specific floor.
+Update the properties of a [sectionMap](../resources/sectionmap.md) object in IMDF format on a specified floor.
 
 ## Permissions
 
