@@ -1,6 +1,6 @@
 ---
 title: "sharePointMigrationJobCancelledEvent resource type"
-description: "Migration cancelled status event"
+description: "Migration canceled status event"
 author: "wenzhou"
 ms.date: 06/04/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The **sharePointMigrationJobCancelledEvent** resource represents the cancelled status of a SharePoint migration job.
+The **sharePointMigrationJobCancelledEvent** resource represents the canceled status of a SharePoint migration job.
 
 Inherits from [sharePointMigrationEvent](../resources/sharepointmigrationevent.md).
 
@@ -26,12 +26,12 @@ Inherits from [sharePointMigrationEvent](../resources/sharepointmigrationevent.m
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|correlationId|String|The correlation id of a migration job. Read-only. Only on OneDrive for Business and SharePoint. Inherited from [sharePointMigrationEvent](../resources/sharepointmigrationevent.md).|
-|eventDateTime|DateTimeOffset|The UTC time when job status changes to **JobCancelled**. Read-only. Only on OneDrive for Business and SharePoint. Inherited from [sharePointMigrationEvent](../resources/sharepointmigrationevent.md).|
-|id|String|The id of a **JobCancelled** event. Read-only. Only on OneDrive for Business and SharePoint. Inherits from [entity](../resources/entity.md).|
-|isCancelledByUser|Boolean|True if job is cancelled by user. False if it's cancelled due to system error. Read-only. Only on OneDrive for Business and SharePoint.|
-|jobId|String|The unique identifier of a migration job. Read-only. Only on OneDrive for Business and SharePoint. Inherited from [sharePointMigrationEvent](../resources/sharepointmigrationevent.md).|
-|totalRetryCount|Int32|Current job retry count. Read-only. Only on OneDrive for Business and SharePoint.|
+|correlationId|String|The correlation ID of a migration job. Read-only. Only on OneDrive and SharePoint. Inherited from [sharePointMigrationEvent](../resources/sharepointmigrationevent.md).|
+|eventDateTime|DateTimeOffset|The UTC time when job status changes to **JobCancelled**. Read-only. Only on OneDrive and SharePoint. Inherited from [sharePointMigrationEvent](../resources/sharepointmigrationevent.md).|
+|id|String|The ID of a **JobCancelled** event. Read-only. Only on OneDrive and SharePoint. Inherits from [entity](../resources/entity.md).|
+|isCancelledByUser|Boolean|True when a user cancels the job, and False otherwise. Read-only. Only on OneDrive and SharePoint.|
+|jobId|String|The unique identifier of a migration job. Read-only. Only on OneDrive and SharePoint. Inherited from [sharePointMigrationEvent](../resources/sharepointmigrationevent.md).|
+|totalRetryCount|Int32|Current job retry count. Read-only. Only on OneDrive and SharePoint.|
 
 ## Relationships
 None.

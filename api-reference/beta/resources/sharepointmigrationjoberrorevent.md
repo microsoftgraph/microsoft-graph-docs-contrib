@@ -26,16 +26,16 @@ Inherits from [sharePointMigrationEvent](../resources/sharepointmigrationevent.m
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|correlationId|String|The correlation id of a migration job. Read-only. Only on OneDrive for Business and SharePoint. Inherited from [sharePointMigrationEvent](../resources/sharepointmigrationevent.md).|
-|error|[publicError](../resources/publicerror.md)|The error code and message. Read-only. Only on OneDrive for Business and SharePoint.|
-|errorLevel|sharePointMigrationJobErrorLevel|The error level. Read-only. Only on OneDrive for Business and SharePoint. The possible values are: `important`, `warning`, `error`, `fatalError`, `unknownFutureValue`.|
-|eventDateTime|DateTimeOffset|The UTC time when job status changes to a certain type of **JobError**. Read-only. Only on OneDrive for Business and SharePoint. Inherited from [sharePointMigrationEvent](../resources/sharepointmigrationevent.md).|
-|id|String|The id of a **JobError** event. Read-only. Only on OneDrive for Business and SharePoint. Inherited from [entity](../resources/entity.md).|
-|jobId|String|The unique identifier of a migration job. Read-only. Only on OneDrive for Business and SharePoint. Inherited from [sharePointMigrationEvent](../resources/sharepointmigrationevent.md).|
-|objectId|String|The object id. Read-only. Only on OneDrive for Business and SharePoint.|
-|objectType|sharePointMigrationObjectType|The object type. Read-only. Only on OneDrive for Business and SharePoint. The possible values are: `site`, `web`, `folder`, `list`, `listItem`, `file`, `alert`, `sharedWithObject`, `invalid`, `unknownFutureValue`.|
-|objectUrl|String|The object url. Read-only. Only on OneDrive for Business and SharePoint.|
-|totalRetryCount|Int32|Current job retry count. Read-only. Only on OneDrive for Business and SharePoint.|
+|correlationId|String|The correlation ID of a migration job. Read-only. Only on OneDrive and SharePoint. Inherited from [sharePointMigrationEvent](../resources/sharepointmigrationevent.md).|
+|error|[publicError](../resources/publicerror.md)|The error code and message. Read-only. Only on OneDrive and SharePoint.|
+|errorLevel|sharePointMigrationJobErrorLevel|The error level. Read-only. Only on OneDrive and SharePoint. The possible values are: `important`, `warning`, `error`, `fatalError`, `unknownFutureValue`.|
+|eventDateTime|DateTimeOffset|The UTC time when job status changes to a certain type of **JobError**. Read-only. Only on OneDrive and SharePoint. Inherited from [sharePointMigrationEvent](../resources/sharepointmigrationevent.md).|
+|id|String|The ID of a **JobError** event. Read-only. Only on OneDrive and SharePoint. Inherited from [entity](../resources/entity.md).|
+|jobId|String|The unique identifier of a migration job. Read-only. Only on OneDrive and SharePoint. Inherited from [sharePointMigrationEvent](../resources/sharepointmigrationevent.md).|
+|objectId|String|The object id. Read-only. Only on OneDrive and SharePoint.|
+|objectType|sharePointMigrationObjectType|The object type. Read-only. Only on OneDrive and SharePoint. The possible values are: `site`, `web`, `folder`, `list`, `listItem`, `file`, `alert`, `sharedWithObject`, `invalid`, `unknownFutureValue`.|
+|objectUrl|String|The object url. Read-only. Only on OneDrive and SharePoint.|
+|totalRetryCount|Int32|Current job retry count. Read-only. Only on OneDrive and SharePoint.|
 
 ## Relationships
 None.

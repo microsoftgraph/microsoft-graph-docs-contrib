@@ -26,14 +26,14 @@ Inherits from [sharePointMigrationEvent](../resources/sharepointmigrationevent.m
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|correlationId|String|The correlation id of a migration job. Read-only. Only on OneDrive for Business and SharePoint. Inherited from [sharePointMigrationEvent](../resources/sharepointmigrationevent.md).|
-|eventDateTime|DateTimeOffset|The UTC time when job status changes to **JobPostponed**. Read-only. Only on OneDrive for Business and SharePoint. Inherited from [sharePointMigrationEvent](../resources/sharepointmigrationevent.md).|
-|id|String|The id of a **JobPostponed** event. Read-only. Only on OneDrive for Business and SharePoint. Inherits from [entity](../resources/entity.md).|
-|jobId|String|The unique identifier of a migration job. Read-only. Only on OneDrive for Business and SharePoint. Inherited from [sharePointMigrationEvent](../resources/sharepointmigrationevent.md).|
-|jobsInQueue|Int64|The number of migration jobs in the queue of current db. Read-only. Only on OneDrive for Business and SharePoint.|
-|nextPickupDateTime|DateTimeOffset|The UTC time indicating when this job will be picked up next time. Read-only. Only on OneDrive for Business and SharePoint.|
-|reason|String|The postponement reason. Read-only. Only on OneDrive for Business and SharePoint.|
-|totalRetryCount|Int32|Current job retry count. Read-only. Only on OneDrive for Business and SharePoint.|
+|correlationId|String|The correlation ID of a migration job. Read-only. Only on OneDrive and SharePoint. Inherited from [sharePointMigrationEvent](../resources/sharepointmigrationevent.md).|
+|eventDateTime|DateTimeOffset|The UTC time when job status changes to **JobPostponed**. Read-only. Only on OneDrive and SharePoint. Inherited from [sharePointMigrationEvent](../resources/sharepointmigrationevent.md).|
+|id|String|The ID of a **JobPostponed** event. Read-only. Only on OneDrive and SharePoint. Inherits from [entity](../resources/entity.md).|
+|jobId|String|The unique identifier of a migration job. Read-only. Only on OneDrive and SharePoint. Inherited from [sharePointMigrationEvent](../resources/sharepointmigrationevent.md).|
+|jobsInQueue|Int64|The number of migration jobs in the queue of current db. Read-only. Only on OneDrive and SharePoint.|
+|nextPickupDateTime|DateTimeOffset|The UTC time indicating when this job will be picked up next time. Read-only. Only on OneDrive and SharePoint.|
+|reason|String|The postponement reason. Read-only. Only on OneDrive and SharePoint.|
+|totalRetryCount|Int32|Current job retry count. Read-only. Only on OneDrive and SharePoint.|
 
 ## Relationships
 None.

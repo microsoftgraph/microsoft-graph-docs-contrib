@@ -48,7 +48,7 @@ Represents a location where multiple users or a group of users can store files a
 |[List recycle bin items](../api/filestoragecontainer-list-recyclebinitem.md)|[recycleBinItem](../resources/recyclebinitem.md) collection|List recycle bin items in a fileStorageContainer.|
 |[Lock](../api/filestoragecontainer-lock.md)|None|Lock a [fileStorageContainer](../resources/filestoragecontainer.md) to prevent modifications to its content.|
 |[Unlock](../api/filestoragecontainer-unlock.md)|None|Unlock a [fileStorageContainer](../resources/filestoragecontainer.md) for users and application-only identities to allow the addition, updating, and deletion of content.|
-|[Provision migrationContainers](../api/filestoragecontainer-provisionmigrationcontainers.md)|[sharePointMigrationContainerInfo](../resources/sharepointmigrationcontainerinfo.md)|Provision SharePoint-managed azure blob containers as temporary storage for migration content and metadata.|
+|[Provision migrationContainers](../api/filestoragecontainer-provisionmigrationcontainers.md)|[sharePointMigrationContainerInfo](../resources/sharepointmigrationcontainerinfo.md)|Provision SharePoint-managed Azure blob containers as temporary storage for migration content and metadata.|
 |[Create migrationJob](../api/filestoragecontainer-post-migrationjobs.md)|[sharePointMigrationJob](../resources/sharepointmigrationjob.md)|Create a new migrationJob in a fileStorageContainer.|
 |[Delete migrationJob](../api/filestoragecontainer-delete-migrationjobs.md)|None|Delete a migrationJob from a fileStorageContainer.|
 |[List migration events](../api/filestoragecontainer-migrationjob-list-progressevents.md)|[sharePointMigrationEvent](../resources/sharepointmigrationevent.md) collection|List migration events for a particular job in a fileStorageContainer.|
@@ -81,7 +81,7 @@ Represents a location where multiple users or a group of users can store files a
 |sharePointGroups|[sharePointGroup](../resources/sharepointgroup.md) collection|The collection of **sharePointGroup** objects local to the container. Read-write.|
 |migrationJobs|[migrationJob](../resources/sharepointmigrationjob.md) collection|The collection of **sharePointMigrationJob** objects local to the container. Read-write.|
 
-### roles property values
+### Roles property values
 |Value|Description|
 |:---|:---|
 |reader|Readers can read **fileStorageContainer** metadata and the content inside.|

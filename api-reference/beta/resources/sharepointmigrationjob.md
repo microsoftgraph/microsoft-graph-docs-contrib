@@ -14,9 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The **sharePointMigrationJob** resource represents a SharePoint migration timer job that is queued for later processing. A migration import job will move content to SharePoint, while an Asynchronous Metadata Read (AMR) job will export content from SharePoint conversely.
+The **sharePointMigrationJob** resource represents a SharePoint migration timer job that is queued for later processing. A migration import job moves content to SharePoint, while an Asynchronous Metadata Read (AMR) job exports content from SharePoint conversely.
 
-The job may take a few minutes to hours to complete and will be automatically removed from the queue upon completion. However, progress events will remain accessible for up to 4 days.
+The job may take a few minutes to hours to complete and is automatically removed from the queue upon completion. However, progress events remain accessible for up to four days.
 
 Inherits from [entity](../resources/entity.md).
 
@@ -31,13 +31,13 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|containerInfo|[sharePointMigrationContainerInfo](../resources/sharepointmigrationcontainerinfo.md)|The Azure Blob Containers associated with the migration job. It contains 2 container URLs and the key for content encryption. Read-only. Only on OneDrive for Business and SharePoint.|
-|id|String|The unique identifier of the migration job. Read-only. Only on OneDrive for Business and SharePoint. Inherits from [entity](../resources/entity.md).|
+|containerInfo|[sharePointMigrationContainerInfo](../resources/sharepointmigrationcontainerinfo.md)|The Azure Blob Containers associated with the migration job. It contains two container URLs and the key for content encryption. Read-only. Only on OneDrive and SharePoint.|
+|id|String|The unique identifier of the migration job. Read-only. Only on OneDrive and SharePoint. Inherits from [entity](../resources/entity.md).|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|progressEvents|[sharePointMigrationEvent](../resources/sharepointmigrationevent.md) collection|A collection of migration events reflecting the job status changes. Only on OneDrive for Business and SharePoint.|
+|progressEvents|[sharePointMigrationEvent](../resources/sharepointmigrationevent.md) collection|A collection of migration events reflecting the job status changes. Only on OneDrive and SharePoint.|
 
 ## JSON representation
 The following JSON representation shows the resource type.

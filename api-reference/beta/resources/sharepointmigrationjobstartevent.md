@@ -28,12 +28,12 @@ Inherits from [sharePointMigrationEvent](../resources/sharepointmigrationevent.m
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|correlationId|String|The correlation id of a migration job. Read-only. Only on OneDrive for Business and SharePoint. Inherited from [sharePointMigrationEvent](../resources/sharepointmigrationevent.md).|
-|eventDateTime|DateTimeOffset|The UTC time when job status changes to **JobStart** or **JobRestart**. Read-only. Only on OneDrive for Business and SharePoint. Inherited from [sharePointMigrationEvent](../resources/sharepointmigrationevent.md).|
-|id|String|The id of a **JobStart** or **JobRestart** event. Read-only. Only on OneDrive for Business and SharePoint. Inherited from [entity](../resources/entity.md).|
-|isRestarted|Boolean|True if job is restarted. False if this is the first start. Read-only. Only on OneDrive for Business and SharePoint.|
-|jobId|String|The unique identifier of a migration job. Read-only. Only on OneDrive for Business and SharePoint. Inherited from [sharePointMigrationEvent](../resources/sharepointmigrationevent.md).|
-|totalRetryCount|Int32|Current job retry count. Read-only. Only on OneDrive for Business and SharePoint.|
+|correlationId|String|The correlation ID of a migration job. Read-only. Only on OneDrive and SharePoint. Inherited from [sharePointMigrationEvent](../resources/sharepointmigrationevent.md).|
+|eventDateTime|DateTimeOffset|The UTC time when job status changes to **JobStart** or **JobRestart**. Read-only. Only on OneDrive and SharePoint. Inherited from [sharePointMigrationEvent](../resources/sharepointmigrationevent.md).|
+|id|String|The ID of a **JobStart** or **JobRestart** event. Read-only. Only on OneDrive and SharePoint. Inherited from [entity](../resources/entity.md).|
+|isRestarted|Boolean|True if the job is restarted and False if it is the initial start. Read-only. Only on OneDrive and SharePoint.|
+|jobId|String|The unique identifier of a migration job. Read-only. Only on OneDrive and SharePoint. Inherited from [sharePointMigrationEvent](../resources/sharepointmigrationevent.md).|
+|totalRetryCount|Int32|Current job retry count. Read-only. Only on OneDrive and SharePoint.|
 
 ## Relationships
 None.

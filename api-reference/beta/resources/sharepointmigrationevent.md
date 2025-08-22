@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The **sharePointMigrationEvent** resource represents the common information of a SharPoint migration event. All the progress events are inherited from this base event.
+The **sharePointMigrationEvent** resource represents the common information of a SharePoint migration event. All the progress events are inherited from this base event.
 
 Inherits from [entity](../resources/entity.md).
 
@@ -26,10 +26,10 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|correlationId|String|The correlation id of a migration job. Read-only. Only on OneDrive for Business and SharePoint.|
-|eventDateTime|DateTimeOffset|The UTC time when job status changes. Read-only. Only on OneDrive for Business and SharePoint.|
-|id|String| The id of a migration progress event. Read-only. Only on OneDrive for Business and SharePoint. Inherits from [entity](../resources/entity.md).|
-|jobId|String|The unique identifier of a migration job. Read-only. Only on OneDrive for Business and SharePoint.|
+|correlationId|String|The correlation ID of a migration job. Read-only. Only on OneDrive and SharePoint.|
+|eventDateTime|DateTimeOffset|The UTC time when job status changes. Read-only. Only on OneDrive and SharePoint.|
+|id|String| The ID of a migration progress event. Read-only. Only on OneDrive and SharePoint. Inherits from [entity](../resources/entity.md).|
+|jobId|String|The unique identifier of a migration job. Read-only. Only on OneDrive and SharePoint.|
 
 ## Relationships
 None.
