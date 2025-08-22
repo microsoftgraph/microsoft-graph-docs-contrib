@@ -312,12 +312,14 @@ items:
     items:
     - name: Fixture map
       href: ../../resources/fixturemap.md
+    - name: List
+      href: ../../api/levelmap-list-fixtures.md
     - name: Create
       href: ../../api/levelmap-post-fixtures.md
     - name: Update
       href: ../../api/fixturemap-update.md
     - name: Delete
-      href: ../../api/levelmap-delete-fixtures.md
+      href: ../../api/fixturemap-delete.md
   - name: Floor
     href: ../../resources/floor.md
   - name: Footprint map
@@ -330,6 +332,8 @@ items:
     items:
     - name: Level map
       href: ../../resources/levelmap.md
+    - name: List
+      href: ../../api/buildingmap-list-levels.md
     - name: List fixtures
       href: ../../api/levelmap-list-fixtures.md
     - name: List sections
@@ -354,22 +358,26 @@ items:
     items:
     - name: Section map
       href: ../../resources/sectionmap.md
+    - name: List
+      href: ../../api/levelmap-list-sections.md
     - name: Create
       href: ../../api/levelmap-post-sections.md
     - name: Update
       href: ../../api/sectionmap-update.md
     - name: Delete
-      href: ../../api/levelmap-delete-sections.md
+      href: ../../api/sectionmap-delete.md
   - name: Unit map
     items:
     - name: Unit map
       href: ../../resources/unitmap.md
+    - name: List
+      href: ../../api/levelmap-list-units.md
     - name: Create
       href: ../../api/levelmap-post-units.md
     - name: Update
       href: ../../api/unitmap-update.md
     - name: Delete
-      href: ../../api/levelmap-delete-units.md
+      href: ../../api/unitmap-delete.md
   - name: Workspace
     href: ../../resources/workspace.md
   - name: Devices (preview)
