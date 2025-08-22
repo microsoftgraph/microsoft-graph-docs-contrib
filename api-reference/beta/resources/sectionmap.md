@@ -1,6 +1,6 @@
 ---
 title: "sectionMap resource type"
-description: "Represents a section.geojson file in IMDF format showing sections (such as zones or partitions) on the floor of a building."
+description: "Represents a section.geojson file in IMDF format that defines sections (such as zones or partitions) on the floor of a building."
 author: tiwarisakshi02
 ms.date: 06/12/2025
 ms.localizationpriority: medium
@@ -23,7 +23,7 @@ Inherits from [baseMapFeature](../resources/basemapfeature.md).
 |:---|:---|:---|
 |[Create](../api/levelmap-post-sections.md)|[sectionMap](../resources/sectionmap.md)|Create a new **sectionMap** object.|
 |[Update](../api/sectionmap-update.md)|[sectionMap](../resources/sectionmap.md)|Update the properties of a **sectionMap** object.|
-|[Delete](../api/levelmap-delete-sections.md)|None|Delete a **sectionMap** object.|
+|[Delete](../api/sectionmap-delete.md)|None|Delete a **sectionMap** object.|
 
 ## Properties
 |Property|Type|Description|
