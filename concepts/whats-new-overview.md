@@ -149,7 +149,8 @@ Added the [resourceAccessEvent](/graph/api/resources/security-resourceaccesseven
 
 ### Identity and access | Identity and sign-in
 
-Retired the previously deprecated Microsoft Entra lifecycle announcements APIs that stopped returning data in May 2025. Use the [Microsoft Entra release notes RSS feed instead](/entra/fundamentals/whats-new).
+- Retired the previously deprecated Microsoft Entra lifecycle announcements APIs that stopped returning data in May 2025. Use the [Microsoft Entra release notes RSS feed instead](/entra/fundamentals/whats-new).
+- The [federatedTokenValidationPolicy](/graph/api/resources/federatedtokenvalidationpolicy?view=graph-rest-beta&preserve-view=true) APIs now support management by lesser-privileged Entra roles including Security Administrator, Hybrid Identity Administrator, and External Identity Provider Administrator roles, reducing dependency on the Global Administrator role.
 
 ### Industry data ETL
 

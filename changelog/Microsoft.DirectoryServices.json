@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "953a488b-df04-494e-a18e-3ae9c92e0a9b",
+          "ApiChange": "Permission",
+          "ChangedApiName": "federatedTokenValidationPolicy",
+          "ChangeType": "Change",
+          "Description": "The [federatedTokenValidationPolicy](https://learn.microsoft.com/en-us/graph/api/resources/federatedTokenValidationPolicy?view=graph-rest-beta) APIs now support management by lesser-privileged Entra roles including Security Administrator, Hybrid Identity Administrator, and External Identity Provider Administrator roles, reducing dependency on the Global Administrator role.",
+          "Target": "federatedTokenValidationPolicy"
+        }
+      ],
+      "Id": "953a488b-df04-494e-a18e-3ae9c92e0a9b",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-08-22T00:00:00.0000000Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "4f2f1a3f-688d-4c65-8210-6879922e1c86",
           "ApiChange": "Relationship",
           "ChangedApiName": "onPremisesSyncBehavior",
