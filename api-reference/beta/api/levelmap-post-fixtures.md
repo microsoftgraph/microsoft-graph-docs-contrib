@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-PATCH /places/{buildingPlaceId}/microsoft.graph.building/map/levels/{levelImdfID}/fixture/{fixtureImdfID}
+PATCH /places/{buildingPlaceId}/microsoft.graph.building/map/levels/{levelImdfID}/fixtures/{fixtureImdfID}
 ```
 > **Note:**
 > * `{buildingPlaceId}` is the **placeId** of a [building](../resources/building.md) with which this [fixtureMap](../resources/fixturemap.md) is associated.
@@ -52,14 +52,12 @@ PATCH /places/{buildingPlaceId}/microsoft.graph.building/map/levels/{levelImdfID
 
 In the request body, supply a JSON representation of the [fixtureMap](../resources/fixturemap.md) object.
 
-You can specify the following properties when creating a **fixtureMap**.
+You can specify the following properties when you create a **fixtureMap**.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|properties|String|Concatenated key-value pair of all properties of a geojson file for this **fixtureMap**. Inherited from [baseMapFeature](../resources/basemapfeature.md). Required.|
 |placeId|String|Identifier for the [floor](../resources/floor.md) to which this **fixtureMap** belongs. Optional.|
-
-
+|properties|String|Concatenated key-value pair of all properties of a GeoJSON file for this **fixtureMap**. Inherited from [baseMapFeature](../resources/basemapfeature.md). Required.|
 
 ## Response
 
@@ -80,11 +78,10 @@ PATCH https://graph.microsoft.com/beta/places/151e85a7-c0b8-4519-997e-1a08582557
 Content-Type: application/json
 
 {
-    "placeId": "67149ec1-4b99-42d4-88a4-d92cd23cb606",
-    "properties": "{\"id\":\"005eb3b8-c95d-4d35-a8a0-22d3cb4d6002\",\"type\":\"Feature\",\"feature_type\":\"fixture\",\"geometry\":{\"type\":\"Polygon\",\"coordinates\":[[[-121.8889415,37.3295396],[-121.8889137,37.329503],[-121.8889082,37.3294956],[-121.888907,37.3294941],[-121.8888551,37.3295189],[-121.8888895,37.3295644],[-121.8889415,37.3295396]]]},\"properties\":{\"name\":{\"en\":\"Test Fixture 01\"},\"level_id\":\"e537d463-475b-43c3-a650-184566c68bc9\",\"display_point\":{\"type\":\"Point\",\"coordinates\":[-121.8888983,37.3295292]}}}"
+  "placeId": "67149ec1-4b99-42d4-88a4-d92cd23cb606",
+  "properties": "{\"id\":\"005eb3b8-c95d-4d35-a8a0-22d3cb4d6002\",\"type\":\"Feature\",\"feature_type\":\"fixture\",\"geometry\":{\"type\":\"Polygon\",\"coordinates\":[[[-121.8889415,37.3295396],[-121.8889137,37.329503],[-121.8889082,37.3294956],[-121.888907,37.3294941],[-121.8888551,37.3295189],[-121.8888895,37.3295644],[-121.8889415,37.3295396]]]},\"properties\":{\"name\":{\"en\":\"Test Fixture 01\"},\"level_id\":\"e537d463-475b-43c3-a650-184566c68bc9\",\"display_point\":{\"type\":\"Point\",\"coordinates\":[-121.8888983,37.3295292]}}}"
 }
 ```
-
 
 ### Response
 
@@ -101,9 +98,9 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-    "placeId": "67149ec1-4b99-42d4-88a4-d92cd23cb606",
-    "id": "005eb3b8-c95d-4d35-a8a0-22d3cb4d6002",
-    "properties": "{\"id\":\"005eb3b8-c95d-4d35-a8a0-22d3cb4d6002\",\"type\":\"Feature\",\"feature_type\":\"fixture\",\"geometry\":{\"type\":\"Polygon\",\"coordinates\":[[[-121.8889415,37.3295396],[-121.8889137,37.329503],[-121.8889082,37.3294956],[-121.888907,37.3294941],[-121.8888551,37.3295189],[-121.8888895,37.3295644],[-121.8889415,37.3295396]]]},\"properties\":{\"name\":{\"en\":\"Test Fixture 01\"},\"level_id\":\"e537d463-475b-43c3-a650-184566c68bc9\",\"display_point\":{\"type\":\"Point\",\"coordinates\":[-121.8888983,37.3295292]}}}"
+  "placeId": "67149ec1-4b99-42d4-88a4-d92cd23cb606",
+  "id": "005eb3b8-c95d-4d35-a8a0-22d3cb4d6002",
+  "properties": "{\"id\":\"005eb3b8-c95d-4d35-a8a0-22d3cb4d6002\",\"type\":\"Feature\",\"feature_type\":\"fixture\",\"geometry\":{\"type\":\"Polygon\",\"coordinates\":[[[-121.8889415,37.3295396],[-121.8889137,37.329503],[-121.8889082,37.3294956],[-121.888907,37.3294941],[-121.8888551,37.3295189],[-121.8888895,37.3295644],[-121.8889415,37.3295396]]]},\"properties\":{\"name\":{\"en\":\"Test Fixture 01\"},\"level_id\":\"e537d463-475b-43c3-a650-184566c68bc9\",\"display_point\":{\"type\":\"Point\",\"coordinates\":[-121.8888983,37.3295292]}}}"
 }
 ```
 
