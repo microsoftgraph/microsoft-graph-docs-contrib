@@ -57,7 +57,7 @@ You can specify the following properties when create the map of a section.
 |Property|Type|Description|
 |:---|:---|:---|
 |placeId|String|Identifier for the [floor](../resources/floor.md) to which this section belongs. Optional.|
-|properties|String|Concatenated key-value pair of all properties of a geojson file for this section. Inherited from [baseMapFeature](../resources/basemapfeature.md). Required.|
+|properties|String|Concatenated key-value pair of all properties of a GeoJSON file for this section. Inherited from [baseMapFeature](../resources/basemapfeature.md). Required.|
 
 ## Response
 
