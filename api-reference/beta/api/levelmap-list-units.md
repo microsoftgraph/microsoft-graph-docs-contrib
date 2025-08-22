@@ -1,5 +1,5 @@
 ---
-title: "List unitMap objects"
+title: "List units"
 description: "Get a list of the unitMap objects and their properties."
 author: tiwarisakshi02
 ms.date: 06/12/2025
@@ -8,13 +8,13 @@ ms.subservice: outlook
 doc_type: apiPageType
 ---
 
-# List unitMap objects
+# List units
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [units](../resources/unitmap.md) and their properties.
+Get a list of the [unitMap](../resources/unitmap.md) objects and their properties.
 
 ## Permissions
 
