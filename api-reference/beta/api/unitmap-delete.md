@@ -22,10 +22,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "levelmap-delete-units-permissions"
+  "name": "unitmap-delete-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/levelmap-delete-units-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/unitmap-delete-permissions.md)]
 
 ## HTTP request
 
