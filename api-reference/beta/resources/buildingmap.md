@@ -1,6 +1,6 @@
 ---
 title: "buildingMap resource type"
-description: "Represents a building.geojson file in IMDF format."
+description: "Represents a map file associated with a building in Places."
 author: tiwarisakshi02
 ms.date: 06/12/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Map file associated with a building in Places. This object is the IMDF format representation of building.geojson.
+Represents a map file associated with a [building](./building.md) in Places. This object is the IMDF-format representation of building.geojson.
 
 Inherits from [baseMapFeature](./basemapfeature.md).
 
@@ -36,8 +36,8 @@ Inherits from [baseMapFeature](./basemapfeature.md).
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|footprints|[footprintMap](./footprintmap.md) collection|Represents the approximate physical extent of a referenced [building](./building.md). Represents footprint.geojson in IMDF format.|
-|levels|[levelMap](./levelmap.md) collection|Represents a physical floor structure within a building. Represents level.geojson in IMDF format.|
+|footprints|[footprintMap](./footprintmap.md) collection|Represents the approximate physical extent of a referenced [building](./building.md). It corresponds to footprint.geojson in IMDF format.|
+|levels|[levelMap](./levelmap.md) collection|Represents a physical floor structure within a building. It corresponds to level.geojson in IMDF format.|
 
 ## JSON representation
 The following JSON representation shows the resource type.
