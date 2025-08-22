@@ -1,6 +1,6 @@
 ---
 title: "Create fixtureMap"
-description: "Create a new fixtureMap object in IMDF format."
+description: "Create a new fixtureMap object in IMDF format within a specified floor."
 author: tiwarisakshi02
 ms.date: 06/12/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [fixture](../resources/fixturemap.md) within a given floor.
+Create a new [fixtureMap](../resources/fixturemap.md) object in IMDF format within a specified floor.
 
 ## Permissions
 
