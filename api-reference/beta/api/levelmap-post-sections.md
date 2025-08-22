@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-PATCH /places/{buildingPlaceId}/microsoft.graph.building/map/levels/{levelImdfID}/section/{sectionImdfID}
+PATCH /places/{buildingPlaceId}/microsoft.graph.building/map/levels/{levelImdfID}/sections/{sectionImdfID}
 ```
 > **Note:**
 > * `{buildingPlaceId}` is the **placeId** of a [building](../resources/building.md) with which this [sectionMap](../resources/sectionmap.md) is associated.
