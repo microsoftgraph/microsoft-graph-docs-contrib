@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /places/{buildingPlaceId}/{placeType}/map/footprints
+GET /places/{buildingPlaceId}/microsoft.graph.building/map/footprints
 ```
 > **Note:** `{buildingPlaceId}` is the unique **placeId** of the [building](../resources/building.md) linked to this map in Places for which we want to retrieve the foorprint.
 
@@ -64,7 +64,7 @@ The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "list_footprintmap",
-  "sampleKeys": ["9748dc5b-3f08-407b-9a8d-f5ed626bf9e8","microsoft.graph.building"]
+  "sampleKeys": ["9748dc5b-3f08-407b-9a8d-f5ed626bf9e8"]
 }
 -->
 ``` http
