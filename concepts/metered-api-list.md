@@ -10,8 +10,8 @@ ms.topic: article
 
 # Metered APIs and services in Microsoft Graph
 
-[!IMPORTANT]
-As of August 25, 2025 the Teams APIs listed on this page are no longer metered. No action is required on your part if your application is configured for billing. No billing configuration is required to use the APIs from August 25, 2025 forward. The SharePoint and OneDrive for Business [assignSensitivityLabel] (/graph/api/driveitem-assignsensitivitylabel) API remains metered.
+> [!IMPORTANT]
+> Starting August 25, 2025, the Teams APIs listed in this article are no longer metered, and no billing configuration is needed to use these APIs. If your application is configured for billing, no action is required. The SharePoint and OneDrive for work or school [assignSensitivityLabel](/graph/api/driveitem-assignsensitivitylabel) API remains metered.
 
 This article provides a list of metered APIs and services in Microsoft Graph. To call these APIs and services, you must associate an active Azure subscription with the calling application. For details, see [Overview of metered APIs and services in Microsoft Graph](metered-api-overview.md).
 
