@@ -26,6 +26,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "driveitem_get_content" } -->
 [!INCLUDE [permissions-table](../includes/permissions/driveitem-get-content-permissions.md)]
 
+[!INCLUDE [app-permissions](../includes/sharepoint-embedded-app-driveitem-permissions.md)]
+
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
@@ -63,10 +65,6 @@ GET /me/drive/items/{item-id}/content
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/download-item-content-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/download-item-content-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

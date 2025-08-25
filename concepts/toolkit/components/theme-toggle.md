@@ -4,6 +4,7 @@ description: "The theme toggle component allows the user to set or change the do
 ms.localizationpriority: medium
 author: musale
 ms.date: 11/07/2024
+ms.topic: article
 ---
 
 # Theme toggle component in the Microsoft Graph Toolkit

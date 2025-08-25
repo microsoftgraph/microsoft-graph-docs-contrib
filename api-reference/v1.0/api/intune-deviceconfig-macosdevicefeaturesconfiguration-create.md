@@ -85,10 +85,6 @@ Content-length: 170
 [!INCLUDE [sample-code](../includes/snippets/csharp/intune-deviceconfig-macosdevicefeaturesconfiguration-create-create-macosdevicefeaturesconfiguration-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/intune-deviceconfig-macosdevicefeaturesconfiguration-create-create-macosdevicefeaturesconfiguration-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/intune-deviceconfig-macosdevicefeaturesconfiguration-create-create-macosdevicefeaturesconfiguration-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

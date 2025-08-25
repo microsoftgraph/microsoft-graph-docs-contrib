@@ -73,10 +73,6 @@ DELETE https://graph.microsoft.com/v1.0/solutions/backupRestore/exchangeRestoreS
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-mailboxrestoreartifactsbulkadditionrequest-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/delete-mailboxrestoreartifactsbulkadditionrequest-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-mailboxrestoreartifactsbulkadditionrequest-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -91,6 +87,10 @@ DELETE https://graph.microsoft.com/v1.0/solutions/backupRestore/exchangeRestoreS
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/delete-mailboxrestoreartifactsbulkadditionrequest-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-mailboxrestoreartifactsbulkadditionrequest-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

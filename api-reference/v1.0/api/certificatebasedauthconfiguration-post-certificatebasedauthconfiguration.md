@@ -6,6 +6,7 @@ author: "vimrang"
 ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
 ms.date: 04/05/2024
+ms.custom: sfi-ga-nochange
 ---
 
 # Create certificateBasedAuthConfiguration
@@ -83,10 +84,6 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-certificatebasedauthconfiguration-from-certificatebasedauthconfiguration-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-certificatebasedauthconfiguration-from-certificatebasedauthconfiguration-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

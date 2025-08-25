@@ -69,10 +69,6 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals?$filter=appId eq '0000000
 [!INCLUDE [sample-code](../includes/snippets/csharp/v1/migrate-azureadgraph-get-serviceprincipal-azureadgraph-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/migrate-azureadgraph-get-serviceprincipal-azureadgraph-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/v1/migrate-azureadgraph-get-serviceprincipal-azureadgraph-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -208,10 +204,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/v1/migrate-azureadgraph-update-application-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/migrate-azureadgraph-update-application-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

@@ -23,6 +23,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "serviceprincipal_addpassword" } -->
 [!INCLUDE [permissions-table](../includes/permissions/serviceprincipal-addpassword-permissions.md)]
 
+[!INCLUDE [rbac-apps-serviceprincipal-creds-apis](../includes/rbac-for-apis/rbac-apps-serviceprincipal-creds-apis.md)]
+
 ## HTTP request
 
 You can address the service principal using either its **id** or **appId**. **id** and **appId** are referred to as the **Object ID** and **Application (Client) ID**, respectively, in app registrations in the Microsoft Entra admin center.
@@ -45,7 +47,7 @@ POST /servicePrincipals(appId='{appId}')/addPassword
 
 In the request body, provide an empty [passwordCredential](../resources/passwordcredential.md) object or with the following optional properties.
 
-| Property	   | Type	|Description|
+| Property       | Type    |Description|
 |:---------------|:--------|:----------|
 | displayName | String | Friendly name for the password. Optional. |
 | endDateTime | DateTimeOffset | The date and time at which the password expires represented using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Optional. The default value is "startDateTime + 2 years". |
@@ -82,10 +84,6 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/serviceprincipal-addpassword-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/serviceprincipal-addpassword-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

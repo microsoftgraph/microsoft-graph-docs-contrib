@@ -14,10 +14,10 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Various Azure services (for example, Microsoft Entra Connect [Passthrough Authentication](/azure/active-directory/hybrid/how-to-connect-pta), [Workday to Microsoft Entra users provisioning](/azure/active-directory/saas-apps/workday-inbound-tutorial), and [Application Proxy](/azure/active-directory/app-proxy/what-is-application-proxy) allow access to various on-premises resources from outside the corporate network.
+Various Azure services (for example, Microsoft Entra Connect [Passthrough Authentication](/entra/identity/hybrid/connect/how-to-connect-pta), [Workday to Microsoft Entra users provisioning](/entra/identity/saas-apps/workday-inbound-tutorial), and [Application Proxy](/entra/identity/app-proxy/overview-what-is-app-proxy) allow access to various on-premises resources from outside the corporate network.
 
-[On-premises agents](onpremisesagent.md) (or [connectors](connector.md) for Application Proxy) installed by an administrator can be configured to route requests to a particular [published resource](publishedresource.md).
-[Agent groups](onpremisesagentgroup.md) (or [connector groups](connectorgroup.md) for Application Proxy) enable an administrator to assign specific agents to serve specific published on-premises resources. Administrators can also group multiple agents together, and then assign each published resource to an agent group. The entire set of entities of the same on-premises publishing type is represented by **onPremisesPublishingProfile**.
+[On-premises agents](onpremisesagent.md) (or [connectors](../resources/connector.md) for Application Proxy) installed by an administrator can be configured to route requests to a particular [published resource](../resources/publishedresource.md).
+[Agent groups](../resources/onpremisesagentgroup.md) (or [connector groups](../resources/connectorgroup.md) for Application Proxy) enable an administrator to assign specific agents to serve specific published on-premises resources. Administrators can also group multiple agents together, and then assign each published resource to an agent group. The entire set of entities of the same on-premises publishing type is represented by **onPremisesPublishingProfile**.
 
 ## Methods
 

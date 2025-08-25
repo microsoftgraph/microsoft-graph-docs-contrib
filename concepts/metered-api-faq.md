@@ -5,6 +5,7 @@ author: "JeremyKelley"
 ms.localizationpriority: high
 ms.custom: scenarios:getting-started
 ms.date: 11/07/2024
+ms.topic: faq
 ---
 
 # Metered APIs and services in Microsoft Graph FAQ
@@ -28,7 +29,7 @@ For information about how to verify billing setup, see [Enable metered APIs and 
 ## Microsoft Teams export API billing FAQs
 
 ### Are there more requirements beyond setting up billing to call Microsoft Teams export APIs?
-Yes, Microsoft Teams export APIs require a `model` parameter to be passed as part of the API call. Depending on the value of the `model` parameter, a user license may also be required for certain data. For more information, see [Teams API payment models and licensing requirements](teams-licenses.md).
+Yes, Microsoft Teams export APIs require a `model` parameter to be passed as part of the API call. Depending on the value of the `model` parameter, a user license might also be required for certain data. For more information, see [Teams API payment models and licensing requirements](teams-licenses.md).
 ### How do I know which model parameter is being used in API calls?
 The best way to determine which `model` parameter is in use is to inspect the code of the calling application.
 
@@ -50,7 +51,7 @@ When calling an API without a required `model` parameter, the API defaults to ev
 The owner of the application registration handles billing for metered APIs and services in Microsoft Graph. If you acquired an application that requires you to be the owner of the application registration, you are responsible for any metered APIs and services used by the application.
 
 ### Do I need licenses for every user in my tenant?
-A license is required for each user subject to security and compliance policies. Other scenarios may not require a license. For more information, see [Teams API payment models and licensing requirements](teams-licenses.md).
+A license is required for each user subject to security and compliance policies. Other scenarios might not require a license. For more information, see [Teams API payment models and licensing requirements](teams-licenses.md).
 
 ## Cost management and billing FAQ
 

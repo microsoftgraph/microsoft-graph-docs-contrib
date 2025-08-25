@@ -14,7 +14,7 @@ const exportResult = {
   displayName: 'Export 2',
   exportCriteria: 'searchHits, partiallyIndexed',
   exportLocation: 'responsiveLocations, nonresponsiveLocations',
-  additionalOptions: 'none',
+  additionalOptions: 'splitSource',
   exportFormat: 'pst'
 };
 

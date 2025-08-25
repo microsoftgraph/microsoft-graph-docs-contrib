@@ -68,10 +68,6 @@ DELETE https://graph.microsoft.com/beta/security/cases/ediscoveryCases/4c551bc5-
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-ediscoveryholdpolicy-sitesource-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/delete-ediscoveryholdpolicy-sitesource-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-ediscoveryholdpolicy-sitesource-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

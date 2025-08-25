@@ -5,6 +5,7 @@ author: "jewan-microsoft"
 ms.localizationpriority: medium
 ms.subservice: "onenote"
 ms.date: 11/07/2024
+ms.topic: how-to
 ---
 
 # Use OneNote API div tags to extract data from captures 
@@ -132,7 +133,7 @@ The API is optimized for recipes from many popular sites such as *Allrecipes.com
 
 Specify the `extract.recipe` method and the `none` fallback. Also send an `img` element with the `data-render-src` attribute set to the recipe URL. If the API is unable to extract any content, it renders a snapshot of the recipe webpage only.
 
-This scenario potentially provides the most information because the webpage may include additional information, such as customer reviews and suggestions.
+This scenario potentially provides the most information because the webpage might include additional information, such as customer reviews and suggestions.
 
 ```html 
 <div
@@ -193,7 +194,7 @@ The API is optimized for products from many popular sites such as *Amazon.com* a
 
 Specify the `extract.product` method and the `none` fallback. Also send an `img` element with the `data-render-src` attribute set to the product URL. If the API is unable to extract any content, it renders a snapshot of the product webpage only.
 
-This scenario potentially provides the most information because the webpage may include additional information, such as customer reviews and suggestions.
+This scenario potentially provides the most information because the webpage might include additional information, such as customer reviews and suggestions.
 
 ```html 
 <div

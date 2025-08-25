@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /users/{userId}/presence/setUserPreferredPresence
+POST /users/{id}/presence/setUserPreferredPresence
 ```
 
 ## Request headers
@@ -91,10 +91,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/setuserpreferredpresence-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/setuserpreferredpresence-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

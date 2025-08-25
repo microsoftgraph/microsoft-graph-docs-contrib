@@ -4,8 +4,9 @@ description: "Learn how to use Microsoft 365 audit logs with Microsoft Graph Dat
 author: "michaelvenables"
 ms.localizationpriority: high
 ms.subservice: "data-connect"
-ms.custom: scenarios:getting-started
+ms.custom: scenarios:getting-started, sfi-image-nochange, sfi-ga-blocked
 ms.date: 11/07/2024
+ms.topic: article
 ---
 
 # Use Microsoft 365 audit logs with Microsoft Graph Data Connect

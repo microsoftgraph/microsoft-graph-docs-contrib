@@ -97,10 +97,6 @@ Content-length: 391
 [!INCLUDE [sample-code](../includes/snippets/csharp/intune-deviceconfig-devicecompliancepolicysettingstatesummary-update-update-devicecompliancepolicysettingstatesummary-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/intune-deviceconfig-devicecompliancepolicysettingstatesummary-update-update-devicecompliancepolicysettingstatesummary-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/intune-deviceconfig-devicecompliancepolicysettingstatesummary-update-update-devicecompliancepolicysettingstatesummary-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

@@ -7,6 +7,7 @@ ms.localizationpriority: high
 ms.subservice: entra-users
 doc_type: resourcePageType
 ms.date: 01/10/2025
+ms.custom: sfi-ga-blocked
 ---
 
 # user resource type
@@ -18,7 +19,7 @@ Represents a Microsoft Entra user account. This resource is an open type that al
 This resource supports:
 
 - Adding your own data to custom properties as [extensions](/graph/extensibility-overview).
-- Subscribing to [change notifications](/graph/webhooks).
+- Subscribing to [change notifications](/graph/change-notifications-overview).
 - Using [delta query](/graph/delta-query-overview) to track incremental additions, deletions, and updates, by providing a [delta](../api/user-delta.md) function.
 
 ## Methods
@@ -35,8 +36,6 @@ This resource supports:
 | [Retry service provisioning](../api/user-retryserviceprovisioning.md) | None | Retry the user service provisioning. |
 | [Revoke sign-in sessions](../api/user-revokesigninsessions.md) | None | Revokes all the user's refresh and session tokens issued to applications, by resetting the **signInSessionsValidFromDateTime** user property to the current date-time. It forces the user to sign in to those applications again. |
 | [Export personal data](../api/user-exportpersonaldata.md) | None | Submits a data policy operation request, made by a company administrator to export an organizational user's data. |
-| **AI interaction**|||
-| [Get all enterprise interactions](../api/aiinteractionhistory-getallenterpriseinteractions.md) |[aiInteraction](../resources/aiinteraction.md) collection|Get all Microsoft 365 Copilot interaction data, including user prompts to Copilot and Copilot responses. |
 | **App role assignments** |  |  |
 | [List](../api/user-list-approleassignments.md) | [appRoleAssignment](approleassignment.md) collection | Get the apps and app roles assigned to this user. |
 | [Add](../api/user-post-approleassignments.md) | [appRoleAssignment](approleassignment.md) | Assign an app role to this user. |
@@ -52,6 +51,10 @@ This resource supports:
 | [Get free/busy schedule](../api/calendar-getschedule.md) | [scheduleInformation](scheduleinformation.md) | Get the free/busy availability information for a collection of users, distributions lists, or resources (rooms or equipment) for a specified period. |
 | [List calendar view](../api/user-list-calendarview.md) | [event](event.md) collection | Get an event object collection. |
 | [Reminder view](../api/user-reminderview.md) | [Reminder](reminder.md) collection | Return a list of calendar reminders within the start and end times specified. |
+| **Data security and governance** | | |
+|[Compute protection scopes](../api/userprotectionscopecontainer-compute.md)|[policyUserScope](../resources/policyuserscope.md) collection|Compute the protection scopes for the signed-in user. |
+|[Create content activity](../api/activitiescontainer-post-contentactivities.md)|[contentActivity](../resources/contentactivity.md)|Create a content activity for the signed-in user. |
+|[Process content](../api/userdatasecurityandgovernance-processcontent.md)|[processContentResponse](../resources/processcontentresponse.md)|Process content against data protection policies in the context of the signed-in user. |
 | **Delegated permission grants** | | |
 | [List delegated permission grants](../api/user-list-oauth2permissiongrants.md) | [oAuth2PermissionGrant](oauth2permissiongrant.md) collection | Retrieve a list of delegated permissions granted to enable a client application to access an API on behalf of the user. |
 | **Directory objects** |  |  |
@@ -186,9 +189,10 @@ This resource supports:
 |givenName|String|The given name (first name) of the user. Maximum length is 64 characters. <br><br>Returned by default. Supports `$filter` (`eq`, `ne`, `not` , `ge`, `le`, `in`, `startsWith`, and `eq` on `null` values).|
 | hireDate | DateTimeOffset | The hire date of the user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014, is `2014-01-01T00:00:00Z`. <br><br>Returned only on `$select`. <br> **Note:** This property is specific to SharePoint in Microsoft 365. We recommend using the native **employeeHireDate** property to set and update hire date values using Microsoft Graph APIs. |
 |id|String|The unique identifier for the user. Should be treated as an opaque identifier. Inherited from [directoryObject](directoryobject.md). Key. Not nullable. Read-only. <br><br>Returned by default. Supports `$filter` (`eq`, `ne`, `not`, `in`).|
-|identities|[objectIdentity](objectIdentity.md) collection| Represents the identities that can be used to sign in to this user account. Microsoft (also known as a local account), organizations, or social identity providers such as Facebook, Google, and Microsoft can provide identity and tie it to a user account. It might contain multiple items with the same **signInType** value. <br><br>Returned only on `$select`. <br><br> Supports `$filter` (`eq`) with limitations. <!--Supports `$filter` (`eq`) including on `null` values, only where the **signInType** is not `userPrincipalName`.-->|
+|identities|[objectIdentity](objectidentity.md) collection| Represents the identities that can be used to sign in to this user account. Microsoft (also known as a local account), organizations, or social identity providers such as Facebook, Google, and Microsoft can provide identity and tie it to a user account. It might contain multiple items with the same **signInType** value. <br><br>Returned only on `$select`. <br><br> Supports `$filter` (`eq`) with limitations. <!--Supports `$filter` (`eq`) including on `null` values, only where the **signInType** is not `userPrincipalName`.-->|
 |imAddresses|String collection|The instant message voice-over IP (VOIP) session initiation protocol (SIP) addresses for the user. Read-only. <br><br>Returned only on `$select`. Supports `$filter` (`eq`, `not`, `ge`, `le`, `startsWith`).|
 |interests|String collection|A list for the user to describe their interests. <br><br>Returned only on `$select`.|
+|isManagementRestricted| Boolean | `true` if the user is a member of a restricted management administrative unit. If not set, the default value is `null` and the default behavior is false. Read-only. <br/><br/> To manage a user who is a member of a restricted management administrative unit, the administrator or calling app must be assigned a Microsoft Entra role at the scope of the restricted management administrative unit. <br><br>Returned only on `$select`.|
 |isResourceAccount|Boolean| Don't use – reserved for future use.|
 |jobTitle|String|The user's job title. Maximum length is 128 characters. <br><br>Returned by default. Supports `$filter` (`eq`, `ne`, `not` , `ge`, `le`, `in`, `startsWith`, and `eq` on `null` values).|
 |lastPasswordChangeDateTime| DateTimeOffset | The time when this Microsoft Entra user last changed their password or when their password was created, whichever date the latest action was performed. The date and time information uses ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. <br><br>Returned only on `$select`.|
@@ -305,6 +309,7 @@ For example: Cameron is the administrator of a directory for an elementary schoo
 |contactFolders|[contactFolder](contactfolder.md) collection|The user's contacts folders. Read-only. Nullable.|
 |contacts|[contact](contact.md) collection|The user's contacts. Read-only. Nullable.|
 |createdObjects|[directoryObject](directoryobject.md) collection|Directory objects that the user created. Read-only. Nullable.|
+|dataSecurityAndGovernance|[userDataSecurityAndGovernance](../resources/userDatasecurityandgovernance.md)| The data security and governance settings for the user. Read-only. Nullable.|
 |directReports|[directoryObject](directoryobject.md) collection|The users and contacts that report to the user. (The users and contacts that have their manager property set to this user.) Read-only. Nullable. Supports `$expand`. |
 |drive|[drive](drive.md)|The user's OneDrive. Read-only.|
 |drives|[drive](drive.md) collection| A collection of drives available for this user. Read-only. |
@@ -527,6 +532,7 @@ The following JSON representation shows the resource type.
   "identities": [{"@odata.type": "microsoft.graph.objectIdentity"}],
   "imAddresses": ["String"],
   "interests": ["String"],
+  "isManagementRestricted": "Boolean",
   "isResourceAccount": false,
   "jobTitle": "String",
   "legalAgeGroupClassification": "String",

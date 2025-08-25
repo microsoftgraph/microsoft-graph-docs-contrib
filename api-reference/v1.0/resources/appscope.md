@@ -28,7 +28,7 @@ None.
 
 | Property | Type | Description |
 |:-------- |:---- |:----------- |
-| displayName | string | Provides the display name of the app-specific resource represented by the app scope. Read only. |
+| displayName | string | Provides the display name of the app-specific resource represented by the app scope. Read-only. |
 | id | string | ID of an app-specific container or resource representing the scope of the assignment. Usually the immutable ID of the resource. The scope of an assignment determines the set of resources for which the principal is granted access. Required. Read-only. |
 | type | String | Describes the type of app-specific resource represented by the app scope. Read-only. |
 

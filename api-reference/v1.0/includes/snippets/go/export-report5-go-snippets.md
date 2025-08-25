@@ -25,6 +25,12 @@ exportLocation := graphmodels.RESPONSIVELOCATIONS_EXPORTLOCATION
 requestBody.SetExportLocation(&exportLocation) 
 additionalOptions := graphmodels.CLOUDATTACHMENTS_ADDITIONALOPTIONS 
 requestBody.SetAdditionalOptions(&additionalOptions) 
+cloudAttachmentVersion := graphmodels.ALL_CLOUDATTACHMENTVERSION 
+requestBody.SetCloudAttachmentVersion(&cloudAttachmentVersion) 
+additionalData := map[string]interface{}{
+	"doucmentVersion" : "recent100", 
+}
+requestBody.SetAdditionalData(additionalData)
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 graphClient.Security().Cases().EdiscoveryCases().ByEdiscoveryCaseId("ediscoveryCase-id").Searches().ByEdiscoverySearchId("ediscoverySearch-id").MicrosoftGraphSecurityExportReport().Post(context.Background(), requestBody, nil)

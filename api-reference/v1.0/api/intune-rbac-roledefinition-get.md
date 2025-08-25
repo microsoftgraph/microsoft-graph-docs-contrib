@@ -67,10 +67,6 @@ GET https://graph.microsoft.com/v1.0/deviceManagement/roleDefinitions/{roleDefin
 [!INCLUDE [sample-code](../includes/snippets/csharp/intune-rbac-roledefinition-get-get-roledefinition-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/intune-rbac-roledefinition-get-get-roledefinition-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/intune-rbac-roledefinition-get-get-roledefinition-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

@@ -88,10 +88,6 @@ Content-length: 259
 [!INCLUDE [sample-code](../includes/snippets/csharp/intune-notification-notificationmessagetemplate-create-create-notificationmessagetemplate-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/intune-notification-notificationmessagetemplate-create-create-notificationmessagetemplate-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/intune-notification-notificationmessagetemplate-create-create-notificationmessagetemplate-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

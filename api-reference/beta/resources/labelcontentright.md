@@ -1,5 +1,5 @@
 ---
-title: "labelContentRight resource type (preview)"
+title: "labelContentRight resource type"
 description: "Represents the rights associated with a specific piece of content."
 author: "ArunGedela"
 ms.date: 04/21/2025

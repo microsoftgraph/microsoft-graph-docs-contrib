@@ -63,10 +63,6 @@ GET https://graph.microsoft.com/v1.0/deviceAppManagement/mobileAppConfigurations
 [!INCLUDE [sample-code](../includes/snippets/csharp/intune-apps-manageddevicemobileappconfigurationassignment-list-list-manageddevicemobileappconfigurationassignments-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/intune-apps-manageddevicemobileappconfigurationassignment-list-list-manageddevicemobileappconfigurationassignments-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/intune-apps-manageddevicemobileappconfigurationassignment-list-list-manageddevicemobileappconfigurationassignments-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

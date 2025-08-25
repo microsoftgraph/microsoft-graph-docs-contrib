@@ -108,10 +108,6 @@ Content-length: 1098
 [!INCLUDE [sample-code](../includes/snippets/csharp/intune-onboarding-devicemanagement-update-update-devicemanagement-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/intune-onboarding-devicemanagement-update-update-devicemanagement-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/intune-onboarding-devicemanagement-update-update-devicemanagement-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

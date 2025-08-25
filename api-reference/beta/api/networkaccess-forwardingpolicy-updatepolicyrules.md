@@ -80,10 +80,6 @@ Content-Type: application/json
 }
 ```
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/forwardingpolicythisupdatepolicyrules-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/forwardingpolicythisupdatepolicyrules-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

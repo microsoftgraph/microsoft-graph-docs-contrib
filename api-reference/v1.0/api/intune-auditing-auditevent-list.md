@@ -63,10 +63,6 @@ GET https://graph.microsoft.com/v1.0/deviceManagement/auditEvents
 [!INCLUDE [sample-code](../includes/snippets/csharp/intune-auditing-auditevent-list-list-auditevents-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/intune-auditing-auditevent-list-list-auditevents-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/intune-auditing-auditevent-list-list-auditevents-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

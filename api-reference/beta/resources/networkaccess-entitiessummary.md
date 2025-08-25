@@ -1,11 +1,11 @@
 ---
 title: "entitiesSummary resource type"
-description: "Contains information about unique connectivity entities."
-author: Moti-ba
+description: "Represents a summary of entities for Global Secure Access reporting."
+author: "miritsadon"
+ms.date: 04/07/2025
 ms.localizationpriority: medium
-ms.subservice: entra-global-secure-access
+ms.subservice: "entra-global-secure-access"
 doc_type: resourcePageType
-ms.date: 03/06/2024
 ---
 
 # entitiesSummary resource type
@@ -14,17 +14,15 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Contains information about unique connectivity entities.
+Represents a summary of entities for Global Secure Access reporting.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|deviceCount|Int64|The number of unique devices that were seen.|
-|trafficType|microsoft.graph.networkaccess.trafficType|The traffic classification. The possible values are: `internet`, `private`, `microsoft365`, `all`.|
-|userCount|Int64|The number of unique Microsoft Entra ID users that were seen.|
-|workloadCount|Int64|The number of unique target workloads/hosts that were seen.|
-
-
+|deviceCount|Int64|The number of devices in the summary. Required.|
+|trafficType|microsoft.graph.networkaccess.trafficType|The type of network traffic summarized. Required. The possible values are: `internet`, `private`, `microsoft365`, `all`, `unknownFutureValue`.|
+|userCount|Int64|The number of users in the summary. Required.|
+|workloadCount|Int64|The number of workloads in the summary. Required.|
 
 ## Relationships
 None.

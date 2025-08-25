@@ -5,6 +5,7 @@ author: "SuryaLashmiS"
 ms.localizationpriority: high
 ms.subservice: "outlook"
 ms.date: 11/07/2024
+ms.topic: how-to
 ---
 
 # Organize Outlook messages
@@ -59,7 +60,7 @@ Programmatically, you can update the **inferenceClassification** property of a [
 
 Apps often have to synchronize and keep a user's mail data up-to-date in the app local store. Microsoft Graph lets you subscribe to change notifications to get notified when data changes, and query for actual changes as soon as they happen.
 
-Notifications are delivered via [webhooks](/graph/api/resources/webhooks) asynchronously when the changes happen, saving apps the overhead to poll frequently. You can [subscribe to change notifications](/graph/api/subscription-post-subscriptions) about additions,
+Notifications are delivered via [webhooks](/graph/api/resources/change-notifications-api-overview) asynchronously when the changes happen, saving apps the overhead to poll frequently. You can [subscribe to change notifications](/graph/api/subscription-post-subscriptions) about additions,
 updates, or deletions to a user's mail data. For example, you can create a subscription to messages in a specific folder (i.e., `/me/mailFolders('{folderId'}')`),
 or at the root level (i.e., `/me/messages`). The subscription specifies a **notificationUrl** where Microsoft Graph notifies the app when the requested types of changes happen.
 

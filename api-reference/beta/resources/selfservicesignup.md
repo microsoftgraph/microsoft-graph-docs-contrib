@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
 ms.date: 06/11/2025
+toc.title: Self-service sign-up
 ---
 
 # selfServiceSignUp resource type

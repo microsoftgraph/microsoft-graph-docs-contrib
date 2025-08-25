@@ -16,7 +16,8 @@ This action allows you to obtain a short-lived embeddable URL for an item in ord
 
 If you want to obtain long-lived embeddable links, use the [createLink][] API instead.
 
-> **Note:** The **preview** action is currently only available on SharePoint and OneDrive for Business.
+> [!NOTE]
+> The **preview** action is currently only available on SharePoint and OneDrive for Business.
 
 [createLink]: driveitem-createlink.md
 
@@ -28,6 +29,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "driveitem_preview" } -->
 [!INCLUDE [permissions-table](../includes/permissions/driveitem-preview-permissions.md)]
+
+[!INCLUDE [app-permissions](../includes/sharepoint-embedded-app-driveitem-permissions.md)]
 
 ## HTTP request
 

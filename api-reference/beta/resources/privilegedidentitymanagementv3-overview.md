@@ -9,6 +9,7 @@ doc_type: conceptualPageType
 ms.topic: overview
 ms.subservice: entra-id-governance
 ms.date: 09/24/2024
+ms.custom: sfi-ga-nochange
 # Customer intent: As a developer, I want to learn how to get started with PIM APIs for managing Microsoft Entra roles.
 ---
 

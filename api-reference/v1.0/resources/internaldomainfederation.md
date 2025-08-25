@@ -1,7 +1,7 @@
 ---
 title: "internalDomainFederation resource type"
 description: "Represents configurations of the domains in a tenant that are federated with Azure AD."
-author: "rahul-nagraj"
+author: "vimrang"
 ms.localizationpriority: medium
 ms.custom: no-azure-ad-ps-ref
 ms.subservice: "entra-sign-in"
@@ -105,10 +105,6 @@ The following JSON representation shows the resource type.
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /resources/internaldomainfederation.md:
-      Exception processing links.
-      Link Definition was null. Link text: !INCLUDE Azure AD PowerShell deprecation note (Parameter 'Definition')"
-  ]
+  "suppressions": []
 }
 -->

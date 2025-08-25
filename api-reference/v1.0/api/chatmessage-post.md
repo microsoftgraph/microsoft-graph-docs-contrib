@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 Send a new [chatMessage](../resources/chatmessage.md) in the specified [channel](../resources/channel.md) or a [chat](../resources/chat.md).
 
 > **Notes:**
-> - We don't recommend using this API for data migration. It does not have the throughput necessary for a typical migration.
+> - We don't recommend using this API for data migration. Its throughput is limited to 10 messages every 10 seconds, which isn't sufficient for typical migration scenarios.
 > - It is a violation of the [terms of use](/legal/microsoft-apis/terms-of-use) to use Microsoft Teams as a log file. Only send messages that people will read.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
@@ -104,10 +104,6 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/post-chatmessage-1-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/post-chatmessage-1-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -232,10 +228,6 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/post-chatmessage-2-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/post-chatmessage-2-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -376,10 +368,6 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/post-chatmessage-3-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/post-chatmessage-3-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/post-chatmessage-3-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -509,10 +497,6 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/post-chatmessage-4-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/post-chatmessage-4-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -648,10 +632,6 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/post-chatmessage-5-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/post-chatmessage-5-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/post-chatmessage-5-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -780,10 +760,6 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/post-chatmessage-6-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/post-chatmessage-6-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -915,10 +891,6 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/post-chatmessage-7-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/post-chatmessage-7-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -1054,10 +1026,6 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/post-chatmessage-atmentionchannel-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/post-chatmessage-atmentionchannel-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -1204,10 +1172,6 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/post-chatmessage-atmentionteam-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/post-chatmessage-atmentionteam-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/post-chatmessage-atmentionteam-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -1350,10 +1314,6 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/post-chatmessage-10-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/post-chatmessage-10-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -1502,10 +1462,6 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/post-chatmessage-11-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/post-chatmessage-11-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/post-chatmessage-11-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -1546,7 +1502,7 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('5c884e2f-83f8-4cff-af8e-0177f260b9f8')/channels('19%3A81f49626414645c99469ee65a1a7e1a4%40thread.tacv2')/messages/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#teams('5c884e2f-83f8-4cff-af8e-0177f260b9f8')/channels('19%3A81f49626414645c99469ee65a1a7e1a4%40thread.tacv2')/messages/$entity",
     "id": "1675104302171",
     "replyToId": null,
     "etag": "1675104302171",
@@ -1586,7 +1542,7 @@ Content-type: application/json
             "id": "d7ddbf876ae340c3a03bada395ec7da7",
             "contentType": "application/vnd.microsoft.teams.messaging-announcementBanner",
             "contentUrl": null,
-            "content": "{\"title\":\"Test title\",\"cardImageType\":\"uploadedImage\",\"cardImageDetails\":{\"uploadedImageDetail\":{\"originalImage\":{\"source\":\"https://graph.microsoft.com/beta/teams/5c884e2f-83f8-4cff-af8e-0177f260b9f8/channels/19%3A81f49626414645c99469ee65a1a7e1a4%40thread.tacv2/messages/1736180726031/hostedContents/aWQ9LHR5cGU9MSx1cmw9aHR0cHM6Ly91cy1hcGkuYXNtLnNreXBlLmNvbS92MS9vYmplY3RzLzAtd3VzLWQ5LTEzMzNjYzJhOWFlYTdjOWYwMWJmNjc2YWU5YWE3NTdhL3ZpZXdzL2ltZ3BzaF9mdWxsc2l6ZQ==/$value\",\"width\":1317,\"height\":366,\"croppedWidth\":1317.0,\"croppedHeight\":366.0,\"leftMargin\":0.0,\"topMargin\":0.0},\"croppedImage\":{\"source\":\"https://graph.microsoft.com/beta/teams/5c884e2f-83f8-4cff-af8e-0177f260b9f8/channels/19%3A81f49626414645c99469ee65a1a7e1a4%40thread.tacv2/messages/1736180726031/hostedContents/aWQ9LHR5cGU9MSx1cmw9aHR0cHM6Ly91cy1hcGkuYXNtLnNreXBlLmNvbS92MS9vYmplY3RzLzAtd3VzLWQ5LTEzMzNjYzJhOWFlYTdjOWYwMWJmNjc2YWU5YWE3NTdhL3ZpZXdzL2ltZ3BzaF9mdWxsc2l6ZQ==/$value\"}}}}",
+            "content": "{\"title\":\"Test title\",\"cardImageType\":\"uploadedImage\",\"cardImageDetails\":{\"uploadedImageDetail\":{\"originalImage\":{\"source\":\"https://graph.microsoft.com/v1.0/teams/5c884e2f-83f8-4cff-af8e-0177f260b9f8/channels/19%3A81f49626414645c99469ee65a1a7e1a4%40thread.tacv2/messages/1736180726031/hostedContents/aWQ9LHR5cGU9MSx1cmw9aHR0cHM6Ly91cy1hcGkuYXNtLnNreXBlLmNvbS92MS9vYmplY3RzLzAtd3VzLWQ5LTEzMzNjYzJhOWFlYTdjOWYwMWJmNjc2YWU5YWE3NTdhL3ZpZXdzL2ltZ3BzaF9mdWxsc2l6ZQ==/$value\",\"width\":1317,\"height\":366,\"croppedWidth\":1317.0,\"croppedHeight\":366.0,\"leftMargin\":0.0,\"topMargin\":0.0},\"croppedImage\":{\"source\":\"https://graph.microsoft.com/v1.0/teams/5c884e2f-83f8-4cff-af8e-0177f260b9f8/channels/19%3A81f49626414645c99469ee65a1a7e1a4%40thread.tacv2/messages/1736180726031/hostedContents/aWQ9LHR5cGU9MSx1cmw9aHR0cHM6Ly91cy1hcGkuYXNtLnNreXBlLmNvbS92MS9vYmplY3RzLzAtd3VzLWQ5LTEzMzNjYzJhOWFlYTdjOWYwMWJmNjc2YWU5YWE3NTdhL3ZpZXdzL2ltZ3BzaF9mdWxsc2l6ZQ==/$value\"}}}}",
             "name": null,
             "thumbnailUrl": null,
             "teamsAppId": null
@@ -1625,10 +1581,6 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/post-chatmessage-12-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/post-chatmessage-12-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -1712,9 +1664,142 @@ Content-type: application/json
 }
 ```
 
+### Example 13: Send a message with a Loop component
+
+The following example shows how to send a message with an embedded Loop component. The Loop component is a special type of message that allows users to collaborate in real-time on a shared task or project. It can be used to create a collaborative workspace within a chat or channel.
+
+#### Request
+
+The following example shows a request.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "post_chatmessage_13",
+  "sampleKeys": ["19:7fb82b685f9c457296a0ab6a1d98b4c1@thread.v2"]
+}-->
+
+```msgraph-interactive
+POST https://graph.microsoft.com/v1.0/chats/19:7fb82b685f9c457296a0ab6a1d98b4c1@thread.v2/messages
+Content-Type: application/json
+
+{
+  "body": {
+    "contentType": "html",
+    "content": "<attachment id=\"74d20c7f34aa4a7fb74e2b30004247c5\"></attachment>"
+  },
+  "attachments": [
+    {
+      "id": "74d20c7f34aa4a7fb74e2b30004247c5",
+      "contentType": "application/vnd.microsoft.card.fluidEmbedCard",
+      "content": "{\"componentUrl\": \"{LoopComponent_url}\", \"sourceType\": \"Compose\"}",
+      "name": null,
+      "thumbnailUrl": null,
+      "teamsAppId": "FluidEmbedCard"
+    }
+  ]
+}
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/post-chatmessage-13-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/post-chatmessage-13-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/post-chatmessage-13-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/post-chatmessage-13-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/post-chatmessage-13-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/post-chatmessage-13-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/post-chatmessage-13-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+
+The following example shows the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.chatMessage"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#teams('5c884e2f-83f8-4cff-af8e-0177f260b9f8')/channels('19%3A81f49626414645c99469ee65a1a7e1a4%40thread.tacv2')/messages/$entity",
+  "id": "1675104302171",
+  "replyToId": null,
+  "etag": "1675104302171",
+  "messageType": "message",
+  "createdDateTime": "2023-01-30T18:45:02.171Z",
+  "lastModifiedDateTime": "2023-01-30T18:45:02.171Z",
+  "lastEditedDateTime": null,
+  "deletedDateTime": null,
+  "subject": "Announcement Subheading",
+  "summary": null,
+  "chatId": null,
+  "importance": "normal",
+  "locale": "en-us",
+  "webUrl": "https://teams.microsoft.com/l/message/19%3A81f49626414645c99469ee65a1a7e1a4%40thread.tacv2/1675104302171?groupId=5c884e2f-83f8-4cff-af8e-0177f260b9f8&tenantId=2432b57b-0abd-43db-aa7b-16eadd115d34&createdTime=1675104302171&parentMessageId=1675104302171",
+  "onBehalfOf": null,
+  "policyViolation": null,
+  "eventDetail": null,
+  "from": {
+    "application": null,
+    "device": null,
+    "user": {
+      "id": "28c10244-4bad-4fda-993c-f332faef94f0",
+      "displayName": "Adele Vance",
+      "userIdentityType": "aadUser"
+    }
+  },
+  "body": {
+    "contentType": "text",
+    "content": "<attachment id=\"74d20c7f34aa4a7fb74e2b30004247c5\"></attachment>"
+  },
+  "channelIdentity": {
+    "teamId": "5c884e2f-83f8-4cff-af8e-0177f260b9f8",
+    "channelId": "19:81f49626414645c99469ee65a1a7e1a4@thread.tacv2"
+  },
+  "attachments": [
+    {
+      "id": "74d20c7f34aa4a7fb74e2b30004247c5",
+      "contentType": "application/vnd.microsoft.card.fluidEmbedCard",
+      "contentUrl": null,
+      "content": "{\"componentUrl\": \"{LoopComponent_url}\", \"sourceType\": \"Compose\"}",
+      "name": null,
+      "thumbnailUrl": null,
+      "teamsAppId": "FluidEmbedCard"
+    }
+  ],
+  "mentions": [],
+  "reactions": []
+}
+```
+
 ## Related content
 
-* [Cards reference](/microsoftteams/platform/concepts/cards/cards-reference)
+[Cards reference](/microsoftteams/platform/concepts/cards/cards-reference)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

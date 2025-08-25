@@ -84,10 +84,6 @@ Content-type: application/zip
 app.zip
 ```
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/update-teamsapp-beta-e1-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-teamsapp-beta-e1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -129,10 +125,6 @@ Content-type: application/zip
 
 app.zip
 ```
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/update-teamsapp-beta-e2-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-teamsapp-beta-e2-javascript-snippets.md)]

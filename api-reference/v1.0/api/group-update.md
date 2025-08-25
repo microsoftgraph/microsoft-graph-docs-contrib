@@ -58,7 +58,9 @@ The following table specifies the properties that can be updated.
 | visibility              | String  | Specifies the visibility of a Microsoft 365 group. The possible values are: **Private**, **Public**, or empty (which is interpreted as **Public**).                                                                                                                                                                                                                                                                                                                                          |
 
 > [!IMPORTANT]
-> - To update the following properties, you must specify them in their own PATCH request, without including the other properties listed in the previous table: **allowExternalSenders**, **autoSubscribeNewMembers**, **hideFromAddressLists**, **hideFromOutlookClients**, **isSubscribedByMail**, **unseenCount**.
+> - To update these properties (**allowExternalSenders**, **autoSubscribeNewMembers**, **hideFromAddressLists**, **hideFromOutlookClients**, **isSubscribedByMail**, **unseenCount**), you must:
+>    - Specify them in their own PATCH request without including other properties from the previous table
+>    - Have the Group.ReadWrite.All permission (*Directory.ReadWrite.All* is not supported for these properties)
 > - Only a subset of the group API that pertains to core group administration and management supports application and delegated permissions. All other members of the group API, including updating **autoSubscribeNewMembers**, support only delegated permissions.
 > - The rules for updating mail-enabled security groups in Microsoft Exchange Server can be complex; to learn more, see [Manage mail-enabled security groups in Exchange Server](/Exchange/recipients/mail-enabled-security-groups).
 > - Application permissions are not supported when updating assignedLabels.
@@ -102,10 +104,6 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-group-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/update-group-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

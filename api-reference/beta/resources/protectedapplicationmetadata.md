@@ -1,5 +1,5 @@
 ---
-title: "protectedApplicationMetadata resource type (preview)"
+title: "protectedApplicationMetadata resource type"
 description: "Represents metadata about an application whose activities are being governed by an integrated application."
 author: "ArunGedela"
 ms.date: 04/08/2025
@@ -16,13 +16,15 @@ Namespace: microsoft.graph
 
 Represents metadata about an application whose activities governed by an integrated application.
 
+Inhertits from [integratedApplicationMetadata](./integratedapplicationmetadata.md).
+
 For internal use only. Don't use.
 
 ## Properties
 
 | Property      | Type   | Description                                                      |
 | :------------ | :----- | :--------------------------------------------------------------- |
-| applicationLocation | [policyLocation](../resources/policylocation.md) |The Entra client (application) ID. Required.|
+| applicationLocation | [policyLocation](../resources/policylocation.md) |The client (application) ID of the Microsoft Entra application. Required.|
 | name     | String | The name of the integrated application. Inherited from [integratedApplicationMetadata](./integratedapplicationmetadata.md).       |
 | version  | String | The version number of the integrated application. Inherited from [integratedApplicationMetadata](./integratedapplicationmetadata.md). |
 

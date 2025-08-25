@@ -17,7 +17,7 @@ request_body = Application(
 		"HideApp",
 	],
 	info = InformationalUrl(
-		logo_url = "https://cdn.pixabay.com/photo/2016/03/21/23/25/link-1271843_1280.png",
+		logo_url = "https://cdn.contoso.com/photo/2016/03/21/23/25/link-1271843_1280.png",
 		marketing_url = "https://www.contoso.com/app/marketing",
 		privacy_statement_url = "https://www.contoso.com/app/privacy",
 		support_url = "https://www.contoso.com/app/support",

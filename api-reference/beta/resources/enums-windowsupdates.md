@@ -129,6 +129,12 @@ Namespace: microsoft.graph.windowsUpdates
 | html   |
 | unknownFutureValue |
 
+### remediationType values
+| Member |
+|:-------|
+| inPlaceUpgrade   |
+| unknownFutureValue |
+
 <!--
 {
   "type": "#page.annotation",

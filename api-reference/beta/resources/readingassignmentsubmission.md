@@ -14,19 +14,19 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a reading assignment that was submitted by a student. 
+Represents a reading assignment that was submitted by a student.
 Inherits from [entity](../resources/entity.md).
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get](../api/readingassignmentsubmission-get.md)|[readingAssignmentSubmission](../resources/readingassignmentsubmission.md)|Read the properties and relationships of a [readingAssignmentSubmission](../resources/readingassignmentsubmission.md) object.|
+|[List](../api/reportsroot-list-readingassignmentsubmissions.md)|[readingAssignmentSubmission](../resources/readingassignmentsubmission.md) collection|Get a list of [reading assignments](../resources/readingassignmentsubmission.md) that were submitted by a student.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |accuracyScore|Double|Accuracy score of the reading progress.|
-|action|String|Indicates whether the submission is an attempt by the student or a miscue edit done by the educator. The possible values are `Attempt` and `EditMiscue`.
+|action|String|Indicates whether the submission is an attempt by the student or a miscue edit done by the educator. The possible values are `Attempt` and `EditMiscue`.|
 |assignmentId|String|ID of the assignment with which this submission is associated.|
 |challengingWords|[challengingWord](../resources/challengingword.md) collection|List of words that the student found challenging during the reading session.|
 |classId|String|ID of the class this reading progress is associated with.|

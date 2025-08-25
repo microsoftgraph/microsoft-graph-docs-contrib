@@ -6,6 +6,7 @@ doc_type: resourcePageType
 ms.subservice: "entra-applications"
 author: "sureshja"
 ms.date: 04/03/2024
+ms.custom: sfi-ropc-nochange
 ---
 
 # implicitGrantSettings resource type

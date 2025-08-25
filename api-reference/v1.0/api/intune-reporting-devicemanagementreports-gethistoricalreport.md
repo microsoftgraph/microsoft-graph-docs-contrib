@@ -97,10 +97,6 @@ Content-length: 242
 [!INCLUDE [sample-code](../includes/snippets/csharp/intune-reporting-devicemanagementreports-gethistoricalreport-gethistoricalreport-action-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/intune-reporting-devicemanagementreports-gethistoricalreport-gethistoricalreport-action-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/intune-reporting-devicemanagementreports-gethistoricalreport-gethistoricalreport-action-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

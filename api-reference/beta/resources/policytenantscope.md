@@ -1,5 +1,5 @@
 ---
-title: "policyTenantScope resource type (preview)"
+title: "policyTenantScope resource type"
 description: "Defines the scope of a data governance policy at the tenant level, including user binding information."
 author: "ArunGedela"
 ms.date: 04/08/2025
@@ -16,11 +16,15 @@ Namespace: microsoft.graph
 
 Defines the scope of a data governance policy at the tenant level, including user binding information.
 
+Returned from [compute protection scope](../api/tenantprotectionscopecontainer-compute.md)
+
+Inherits from [policyScopeBase](../resources/policyscopebase.md).
+
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
-|activities|microsoft.graph.security.userActivityTypes| Flags specifying the user activities the calling application supports or is interested. Possible values are `none`, `uploadText`, `uploadFile`, `downloadText`, `downloadFile`. Required.|
+|activities|microsoft.graph.security.userActivityTypes| Flags specifying the user activities the calling application supports or is interested. Possible values are `none`, `uploadText`, `uploadFile`, `downloadText`, `downloadFile`, `unknownFutureValue`. Required.  This object is a multi-valued enumeration.|
 |executionMode|microsoft.graph.security.executionMode|Policy execution mode at the tenant level.  Possible values are `evaluateInline` and `evaluateOffline`. Inherited from `policyScopeBase`. Required.|
 |locations|Collection([microsoft.graph.policyLocation](../resources/policylocation.md))|Locations protected at the tenant level. Inherited from `policyScopeBase`. Required.|
 |policyActions|Collection([microsoft.graph.dlpActionInfo](../resources/dlpactioninfo.md))|Enforcement actions at the tenant level. Inherited from `policyScopeBase`. Required.|

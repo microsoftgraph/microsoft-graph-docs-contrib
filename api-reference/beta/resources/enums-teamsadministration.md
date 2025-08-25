@@ -43,6 +43,81 @@ Namespace: microsoft.graph.teamsAdministration
 |group|
 |unknownFutureValue|
 
+### activationState values 
+
+|Member|
+|:---|
+|activated|
+|assignmentPending|
+|assignmentFailed|
+|updatePending|
+|updateFailed|
+|unknownFutureValue|
+
+### assignmentStatus values 
+
+|Member|
+|:---|
+|unassigned|
+|internalError|
+|userAssigned|
+|conferenceAssigned|
+|voiceApplicationAssigned|
+|thirdPartyAppAssigned|
+|policyAssigned|
+|unknownFutureValue|
+
+### customerAction values 
+
+|Member|
+|:---|
+|locationUpdate|
+|release|
+|unknownFutureValue|
+
+### numberCapability values 
+
+|Member|
+|:---|
+|conferenceAssignment|
+|voiceApplicationAssignment|
+|userAssignment|
+|teamsPhoneMobile|
+|unknownFutureValue|
+
+### numberSource values 
+
+|Member|
+|:---|
+|online|
+|onPremises|
+|unknownFutureValue|
+
+### numberType values 
+
+|Member|
+|:---|
+|internalError|
+|directRouting|
+|callingPlan|
+|operatorConnect|
+|unknownFutureValue|
+
+### portInStatus values 
+
+|Member|
+|:---|
+|completed|
+|firmOrderCommitmentAccepted|
+|unknownFutureValue|
+
+### reverseNumberLookupOption values 
+
+|Member|
+|:---|
+|skipInternalVoip|
+|unknownFutureValue|
+
 <!-- {
   "type": "#page.annotation",
   "namespace": "microsoft.graph.teamsAdministration"

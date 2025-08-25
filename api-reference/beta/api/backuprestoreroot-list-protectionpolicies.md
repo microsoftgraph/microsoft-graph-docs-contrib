@@ -71,10 +71,6 @@ GET https://graph.microsoft.com/beta/solutions/backupRestore/ProtectionPolicies
 [!INCLUDE [sample-code](../includes/snippets/csharp/protectionpolicybase-list-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/protectionpolicybase-list-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/protectionpolicybase-list-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -123,6 +119,7 @@ Content-Location: https://graph.microsoft.com/beta/solutions/backupRestore/Prote
       "id": "b218eb4a-ea72-42bd-8f0b-d0bbf794bec7",
       "displayName": "SharePoint Protection Policy",
       "status": "inactive",
+      "isEnabled": false,
       "createdBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -163,6 +160,7 @@ Content-Location: https://graph.microsoft.com/beta/solutions/backupRestore/Prote
       "id": "945457dc-4bb2-4815-bef3-8628ebd1952e",
       "displayName": "Exchange Protection Policy",
       "status": "active",
+      "isEnabled": true,
       "createdBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -203,6 +201,7 @@ Content-Location: https://graph.microsoft.com/beta/solutions/backupRestore/Prote
       "id": "785457dc-4bb2-4815-bef3-8628ebd1952e",
       "displayName": "OneDrive Protection",
       "status": "updating",
+      "isEnabled": true,
       "createdBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",

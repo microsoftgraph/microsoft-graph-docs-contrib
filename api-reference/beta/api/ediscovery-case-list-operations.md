@@ -76,10 +76,6 @@ GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/061b9a92-8926-4
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-caseoperation-for-caseid-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/list-caseoperation-for-caseid-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-caseoperation-for-caseid-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

@@ -12,7 +12,7 @@ com.microsoft.graph.security.cases.ediscoverycases.item.searches.item.microsoftg
 exportReportPostRequestBody.setDisplayName("Export 4");
 exportReportPostRequestBody.setExportCriteria(EnumSet.of(com.microsoft.graph.models.security.ExportCriteria.PartiallyIndexed));
 exportReportPostRequestBody.setExportLocation(EnumSet.of(com.microsoft.graph.models.security.ExportLocation.ResponsiveLocations, com.microsoft.graph.models.security.ExportLocation.NonresponsiveLocations));
-exportReportPostRequestBody.setAdditionalOptions(EnumSet.of(com.microsoft.graph.models.security.AdditionalOptions.TeamsAndYammerConversations, com.microsoft.graph.models.security.AdditionalOptions.CloudAttachments, com.microsoft.graph.models.security.AdditionalOptions.AllDocumentVersions, com.microsoft.graph.models.security.AdditionalOptions.SubfolderContents, com.microsoft.graph.models.security.AdditionalOptions.ListAttachments));
+exportReportPostRequestBody.setAdditionalOptions(EnumSet.of(com.microsoft.graph.models.security.AdditionalOptions.AdvancedIndexing, com.microsoft.graph.models.security.AdditionalOptions.SubfolderContents, com.microsoft.graph.models.security.AdditionalOptions.AllItemsInFolder, com.microsoft.graph.models.security.AdditionalOptions.ListAttachments, com.microsoft.graph.models.security.AdditionalOptions.TeamsAndYammerConversations, com.microsoft.graph.models.security.AdditionalOptions.HtmlTranscripts, com.microsoft.graph.models.security.AdditionalOptions.CloudAttachments));
 graphClient.security().cases().ediscoveryCases().byEdiscoveryCaseId("{ediscoveryCase-id}").searches().byEdiscoverySearchId("{ediscoverySearch-id}").microsoftGraphSecurityExportReport().post(exportReportPostRequestBody);
 
 

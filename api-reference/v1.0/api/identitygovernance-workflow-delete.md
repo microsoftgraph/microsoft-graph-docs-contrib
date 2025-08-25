@@ -69,10 +69,6 @@ DELETE https://graph.microsoft.com/v1.0/identityGovernance/lifecycleWorkflows/wo
 [!INCLUDE [sample-code](../includes/snippets/csharp/lifecycleworkflows-delete-workflow-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/lifecycleworkflows-delete-workflow-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/lifecycleworkflows-delete-workflow-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

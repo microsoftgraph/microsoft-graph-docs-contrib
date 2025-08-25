@@ -42,6 +42,7 @@ ms.date: 11/07/2024
 | Print [printer][]                              | 4,230 minutes (under three days)  |
 | Print [printTaskDefinition][]                  | 4,230 minutes (under three days)  |
 | [todoTask][]                                   | 4,230 minutes (under three days) <br/><br/>Webhooks for this resource are only available in the global endpoint and not in the national clouds.  |
+| Microsoft Entra Health Monitoring [alert][health monitoring alert] | 42,300 minutes (under 30 days)    |
 | **baseTask** (deprecated)                      | 4,230 minutes (under three days)  |
 
 > **Note:** Existing applications and new applications should not exceed the supported value. In the future, any requests to create or renew a subscription beyond the maximum value will fail.
@@ -76,3 +77,4 @@ ms.date: 11/07/2024
 [callRecording]: /graph/api/resources/callrecording
 [teamsAppInstallation]: /graph/api/resources/teamsappinstallation
 [approvals]: /graph/api/resources/approvalItem
+[health monitoring alert]: /graph/api/resources/healthmonitoring-alert

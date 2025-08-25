@@ -63,10 +63,6 @@ DELETE https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations/{d
 [!INCLUDE [sample-code](../includes/snippets/csharp/intune-deviceconfig-macosdevicefeaturesconfiguration-delete-delete-macosdevicefeaturesconfiguration-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/intune-deviceconfig-macosdevicefeaturesconfiguration-delete-delete-macosdevicefeaturesconfiguration-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/intune-deviceconfig-macosdevicefeaturesconfiguration-delete-delete-macosdevicefeaturesconfiguration-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

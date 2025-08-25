@@ -71,10 +71,6 @@ GET https://graph.microsoft.com/beta/solutions/backupRestore/oneDriveForBusiness
 [!INCLUDE [sample-code](../includes/snippets/csharp/onedriveforbusinessprotectionpolicy-list-driveinclusionrule-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/onedriveforbusinessprotectionpolicy-list-driveinclusionrule-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/onedriveforbusinessprotectionpolicy-list-driveinclusionrule-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

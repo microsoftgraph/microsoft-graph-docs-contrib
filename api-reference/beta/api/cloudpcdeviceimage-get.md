@@ -57,7 +57,7 @@ If successful, this method returns a `200 OK` response code and a [cloudPcDevice
 ## Examples
 
 ### Request
-
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -71,10 +71,6 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/deviceImag
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-cloudpcdeviceimage-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-cloudpcdeviceimage-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -104,8 +100,8 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/deviceImag
 ---
 
 ### Response
-
-**Note:** The response object shown here might be shortened for readability.
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -131,6 +127,7 @@ Content-Type: application/json
     "status": "ready",
     "statusDetails": null,
     "errorCode": null,
-    "osVersionNumber": "10.0.22631.3593"
+    "osVersionNumber": "10.0.22631.3593",
+    "sizeInGB": 64
 }
 ```

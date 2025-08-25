@@ -66,10 +66,6 @@ GET https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps/{mobileAppId
 [!INCLUDE [sample-code](../includes/snippets/csharp/intune-apps-windowsuniversalappx-get-get-windowsuniversalappx-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/intune-apps-windowsuniversalappx-get-get-windowsuniversalappx-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/intune-apps-windowsuniversalappx-get-get-windowsuniversalappx-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

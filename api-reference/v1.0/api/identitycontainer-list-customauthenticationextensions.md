@@ -5,7 +5,7 @@ author: "soneff"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
-ms.date: 10/17/2024
+ms.date: 06/25/2025
 ---
 
 # List customAuthenticationExtensions
@@ -14,10 +14,14 @@ Namespace: microsoft.graph
 Get a list of the [customAuthenticationExtension](../resources/customauthenticationextension.md) objects and their properties. The following derived types are supported.
 
 - [onTokenIssuanceStartCustomExtension](../resources/ontokenissuancestartcustomextension.md) resource type.
+- [onAttributeCollectionStartCustomExtension](../resources/onattributecollectionstartcustomextension.md) resource type.
+- [onAttributeCollectionSubmitCustomExtension](../resources/onattributecollectionsubmitcustomextension.md) resource type.
+- [onOtpSendCustomExtension](../resources/onOtpSendCustomExtension.md) resource type.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
+
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 <!-- { "blockType": "permissions", "name": "identitycontainer_list_customauthenticationextensions" } -->
@@ -36,7 +40,7 @@ GET /identity/customAuthenticationExtensions
 ```
 
 ## Optional query parameters
-This method supports the `$filter` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` and `$filter` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -54,7 +58,6 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 The following example shows a request.
-
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -62,15 +65,11 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/v1.0/identity/customAuthenticationExtensions?$filter=isOf('microsoft.graph.onTokenIssuanceStartCustomExtension')
+GET https://graph.microsoft.com/v1.0/identity/customAuthenticationExtensions
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-customauthenticationextension-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/list-customauthenticationextension-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -121,6 +120,7 @@ Content-Type: application/json
             "displayName": "onTokenIssuanceStartCustomExtension",
             "description": "Fetch additional claims from custom user store",
             "clientConfiguration": null,
+            "behaviorOnError": null,
             "authenticationConfiguration": {
                 "@odata.type": "#microsoft.graph.azureAdTokenAuthentication",
                 "resourceId": "api://authenticationeventsAPI.contoso.net/a13d0fc1-04ab-4ede-b215-63de0174cbb4"

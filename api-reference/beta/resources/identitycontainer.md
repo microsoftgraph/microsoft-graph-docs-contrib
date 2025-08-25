@@ -5,7 +5,7 @@ ms.localizationpriority: high
 doc_type: resourcePageType
 ms.subservice: "entra-sign-in"
 author: "namkedia"
-ms.date: 07/22/2024
+ms.date: 07/03/2025
 ---
 
 # identityContainer resource type
@@ -38,7 +38,6 @@ None.
 |userFlowAttributes|[identityUserFlowAttribute](identityUserFlowAttribute.md) collection| Represents entry point for identity userflow attributes.|
 |conditionalAccess|[conditionalAccessRoot](conditionalAccessRoot.md) collection| the entry point for the Conditional Access (CA) object model.|
 |continuousAccessEvaluationPolicy|[continuousAccessEvaluationPolicy](continuousAccessEvaluationPolicy.md)| Represents entry point for continuous access evaluation policy.|
-|productChanges (deprecated)|[changeItemBase](changeitembase.md) collection|Represents entry point for Microsoft Entra product changes and planned new features.|
 
 ## JSON representation
 

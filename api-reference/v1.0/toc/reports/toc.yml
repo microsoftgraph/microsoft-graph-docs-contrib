@@ -60,6 +60,12 @@ items:
         href: ../../api/signin-list.md
       - name: Get
         href: ../../api/signin-get.md
+      - name: Confirm compromised
+        href: ../../api/signin-confirmcompromised.md
+      - name: Confirm safe
+        href: ../../api/signin-confirmsafe.md
+      - name: Dismiss
+        href: ../../api/signin-dismiss.md
     - name: Provisioning object summary
       items:
       - name: Provisioning object summary

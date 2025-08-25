@@ -1,5 +1,5 @@
 ---
-title: "operatingSystemSpecifications resource type (preview)"
+title: "operatingSystemSpecifications resource type"
 description: "Contains the platform and version details of the operating system."
 author: "ArunGedela"
 ms.date: 04/08/2025

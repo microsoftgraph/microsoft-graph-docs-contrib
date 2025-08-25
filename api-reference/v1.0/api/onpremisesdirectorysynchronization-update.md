@@ -7,6 +7,7 @@ ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ms.date: 10/30/2024
+ms.custom: sfi-ga-blocked
 ---
 
 # Update onPremisesDirectorySynchronization
@@ -89,10 +90,6 @@ Content-length: 293
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-onpremisesdirectorysynchronization-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/update-onpremisesdirectorysynchronization-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

@@ -18,7 +18,7 @@ $params = @{
 	mail = "adelev@adatum.com"
 	passwordProfile = @{
 		password = "passwordValue"
-		forceChangePasswordNextSignIn = $false
+		forceChangePasswordNextSignIn = $true
 	}
 	passwordPolicies = "DisablePasswordExpiration"
 }

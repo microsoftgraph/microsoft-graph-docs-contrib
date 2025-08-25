@@ -4,6 +4,7 @@ description: "A search results component allows you to make queries to the searc
 ms.localizationpriority: medium
 author: sebastienlevert
 ms.date: 11/07/2024
+ms.topic: how-to
 ---
 
 # Search results component in Microsoft Graph Toolkit

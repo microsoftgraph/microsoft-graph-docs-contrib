@@ -63,10 +63,6 @@ GET https://graph.microsoft.com/v1.0/deviceAppManagement/managedAppRegistrations
 [!INCLUDE [sample-code](../includes/snippets/csharp/intune-mam-iosmanagedappregistration-list-list-iosmanagedappregistrations-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/intune-mam-iosmanagedappregistration-list-list-iosmanagedappregistrations-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/intune-mam-iosmanagedappregistration-list-list-iosmanagedappregistrations-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

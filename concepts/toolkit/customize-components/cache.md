@@ -4,6 +4,7 @@ description: "Explaining how the Cache works and how to configure the options pr
 ms.localizationpriority: medium
 author: sebastienlevert
 ms.date: 11/07/2024
+ms.topic: article
 ---
 
 # Microsoft Graph Toolkit caching

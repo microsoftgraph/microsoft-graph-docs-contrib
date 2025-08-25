@@ -4,6 +4,7 @@ description: "You can use mgt-teams-channel-picker to search for channels and te
 ms.localizationpriority: medium
 author: sebastienlevert
 ms.date: 11/07/2024
+ms.topic: article
 ---
 
 # Microsoft Teams Channel Picker component in Microsoft Graph Toolkit

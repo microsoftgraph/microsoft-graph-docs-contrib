@@ -84,10 +84,6 @@ GET https://graph.microsoft.com/beta/admin/people/profileSources(sourceId='bambo
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-profilesource-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-profilesource-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-profilesource-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -98,6 +94,10 @@ GET https://graph.microsoft.com/beta/admin/people/profileSources(sourceId='bambo
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-profilesource-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-profilesource-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

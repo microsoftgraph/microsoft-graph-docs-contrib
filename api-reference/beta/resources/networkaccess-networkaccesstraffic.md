@@ -25,7 +25,7 @@ Represents a network access traffic log entry. It contains comprehensive informa
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|action|microsoft.graph.networkaccess.filteringPolicyAction|Indicates the action taken based on filtering policies. The possible values are: `block`, `allow`, `unknownFutureValue`, `bypass`, `alert`. Use the `Prefer: include-unknown-enum-members` request header to get the following values from this {evolvable enum}(/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `bypass` , `alert`.|
+|action|microsoft.graph.networkaccess.filteringPolicyAction|Indicates the action taken based on filtering policies. The possible values are: `block`, `allow`, `unknownFutureValue`, `bypass`, `alert`. Use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `bypass` , `alert`.|
 |agentVersion|String|Represents the version of the Global Secure Access (GSA) client agent software. Supports $filter (`eq`) and `$orderby`.|
 |applicationSnapshot|[microsoft.graph.networkaccess.applicationSnapshot](../resources/networkaccess-applicationsnapshot.md)|Destination Application ID accessed in Azure AD during the transaction. Supports $filter (`eq`) and `$orderby`.|
 |connectionId|String|Represents a unique identifier assigned to a connection. Supports $filter (`eq`) and `$orderby`.|

@@ -23,6 +23,10 @@ search.SetId(&id)
 requestBody.SetSearch(search)
 additionalDataOptions := graphmodels.LINKEDFILES_ADDITIONALDATAOPTIONS 
 requestBody.SetAdditionalDataOptions(&additionalDataOptions) 
+cloudAttachmentVersion := graphmodels.LATEST_CLOUDATTACHMENTVERSION 
+requestBody.SetCloudAttachmentVersion(&cloudAttachmentVersion) 
+documentVersion := graphmodels.RECENT10_DOCUMENTVERSION 
+requestBody.SetDocumentVersion(&documentVersion) 
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 graphClient.Security().Cases().EdiscoveryCases().ByEdiscoveryCaseId("ediscoveryCase-id").ReviewSets().ByEdiscoveryReviewSetId("ediscoveryReviewSet-id").MicrosoftGraphSecurityAddToReviewSet().Post(context.Background(), requestBody, nil)

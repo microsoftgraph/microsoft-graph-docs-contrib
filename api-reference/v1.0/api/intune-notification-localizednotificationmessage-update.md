@@ -86,10 +86,6 @@ Content-length: 200
 [!INCLUDE [sample-code](../includes/snippets/csharp/intune-notification-localizednotificationmessage-update-update-localizednotificationmessage-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/intune-notification-localizednotificationmessage-update-update-localizednotificationmessage-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/intune-notification-localizednotificationmessage-update-update-localizednotificationmessage-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

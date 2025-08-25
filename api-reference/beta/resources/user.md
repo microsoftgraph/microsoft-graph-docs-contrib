@@ -7,6 +7,7 @@ ms.localizationpriority: high
 ms.subservice: entra-users
 doc_type: resourcePageType
 ms.date: 01/10/2025
+ms.custom: sfi-ga-blocked
 ---
 
 # user resource type
@@ -24,7 +25,7 @@ For performance reasons, the [create](../api/user-post-users.md), [get](../api/u
 This resource supports:
 
 - Adding your data to custom properties as [extensions](/graph/extensibility-overview).
-- Subscribing to [change notifications](/graph/webhooks).
+- Subscribing to [change notifications](/graph/change-notifications-overview).
 - Using [delta query](/graph/delta-query-overview) to track incremental additions, deletions, and updates, by providing a [delta](../api/user-delta.md) function.
 
 ## Methods
@@ -44,8 +45,6 @@ This resource supports:
 | [Invalidate all refresh tokens](../api/user-invalidateallrefreshtokens.md) | [user](user.md) | Invalidate all of the user's refresh tokens issued to applications. **DO NOT USE. Use user: revokeSignInSessions method instead.**  |
 | [Revoke sign-in sessions](../api/user-revokesigninsessions.md) | None | Revokes all the user's refresh and session tokens issued to applications by resetting the **signInSessionsValidFromDateTime** user property to the current date-time. This operation forces the user to sign in to those applications again. This method replaces **invalidateAllRefreshTokens**. |
 | [Export personal data](../api/user-exportpersonaldata.md) | None | Submits a data policy operation request made by a company administrator to export an organizational user's data. |
-| **AI interaction**|||
-| [Get all enterprise interactions](../api/aiinteractionhistory-getallenterpriseinteractions.md) |[aiInteraction](../resources/aiinteraction.md) collection|Get all Microsoft 365 Copilot interaction data, including user prompts to Copilot and Copilot responses. |
 | **App role assignments**|||
 | [List](../api/user-list-approleassignments.md) | [appRoleAssignment](approleassignment.md) collection | Get the apps and app roles that a user has been assigned. |
 | [Add](../api/user-post-approleassignments.md) | [appRoleAssignment](approleassignment.md) | Assign an app role to a user. |
@@ -231,7 +230,7 @@ This resource supports:
 | infoCatalogs | String collection | Identifies the info segments assigned to the user.  Supports `$filter` (`eq`, `not`, `ge`, `le`, `startsWith`). |
 | interests | String collection | A list for users to describe their interests. <br><br>Returned only on `$select`. |
 | isLicenseReconciliationNeeded | Boolean | Indicates whether the user is pending an exchange mailbox license assignment. <br><br> Read-only. <br><br> Supports `$filter` (`eq` where `true` only).  |
-| isManagementRestricted| Boolean | `true` if the user is a member of a restricted management administrative unit. Default value is `false`. Read-only. <br/><br/> To manage a user who is a member of a restricted management administrative unit, the administrator or calling app must be assigned a Microsoft Entra role at the scope of the restricted management administrative unit.|
+| isManagementRestricted| Boolean | `true` if the user is a member of a restricted management administrative unit. If not set, the default value is `null` and the default behavior is false. Read-only. <br/><br/> To manage a user who is a member of a restricted management administrative unit, the administrator or calling app must be assigned a Microsoft Entra role at the scope of the restricted management administrative unit.|
 | isResourceAccount | Boolean | Do not use – reserved for future use. |
 | jobTitle | String | The user's job title. Maximum length is 128 characters. <br><br>Supports `$filter` (`eq`, `ne`, `not` , `ge`, `le`, `in`, `startsWith`, and `eq` on `null` values).|
 | lastPasswordChangeDateTime | DateTimeOffset | When this Microsoft Entra user last changed their password or when their password was created, whichever date the latest action was performed. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only. <br><br>Returned only on `$select`.  |
@@ -347,6 +346,7 @@ For example, Cameron is an administrator of a directory for an elementary school
 | Relationship | Type |Description|
 |:---------------|:--------|:----------|
 |activities|[userActivity](projectrome-activity.md) collection|The user's activities across devices. Read-only. Nullable.|
+|adhocCalls|[adhocCall](../resources/adhoccall.md) collection|Ad hoc calls associated with the user. Read-only. Nullable.|
 |agreementAcceptances|[agreementAcceptance](agreementacceptance.md) collection| The user's terms of use acceptance statuses. Read-only. Nullable.|
 |appRoleAssignments|[appRoleAssignment](approleassignment.md) collection|Represents the app roles a user has been granted for an application. Supports `$expand`. |
 |authentication|[authentication](../resources/authentication.md)|The authentication methods that are supported for the user.|
@@ -441,7 +441,7 @@ The following JSON representation shows the resource type.
 ```json
 {
   "aboutMe": "String",
-  "accountEnabled": true,
+  "accountEnabled": "Boolean",
   "ageGroup": "String",
   "assignedLicenses": [{"@odata.type": "microsoft.graph.assignedLicense"}],
   "assignedPlans": [{"@odata.type": "microsoft.graph.assignedPlan"}],
@@ -480,8 +480,9 @@ The following JSON representation shows the resource type.
   "id": "String (identifier)",
   "identities": [{"@odata.type": "microsoft.graph.objectIdentity"}],
   "interests": ["String"],
-  "isLicenseReconciliationNeeded": false,
-  "isResourceAccount": false,
+  "isLicenseReconciliationNeeded": "Boolean",
+  "isManagementRestricted": "Boolean",
+  "isResourceAccount": "Boolean",
   "jobTitle": "String",
   "legalAgeGroupClassification": "String",
   "licenseAssignmentStates": [{"@odata.type": "microsoft.graph.licenseAssignmentState"}],

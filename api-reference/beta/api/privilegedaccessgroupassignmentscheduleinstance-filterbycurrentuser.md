@@ -73,10 +73,6 @@ GET https://graph.microsoft.com/beta/identityGovernance/privilegedAccess/group/a
 [!INCLUDE [sample-code](../includes/snippets/csharp/privilegedaccessgroupassignmentscheduleinstancethisfilterbycurrentuser-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/privilegedaccessgroupassignmentscheduleinstancethisfilterbycurrentuser-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/privilegedaccessgroupassignmentscheduleinstancethisfilterbycurrentuser-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

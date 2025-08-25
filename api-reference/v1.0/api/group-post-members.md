@@ -53,7 +53,7 @@ The following table shows the least privileged permission that's required by eac
 
 ```http
 POST /groups/{group-id}/members/$ref
-PATCH /groups/{group-id}/members
+PATCH /groups/{group-id}
 ```
 
 ## Request headers
@@ -67,7 +67,7 @@ PATCH /groups/{group-id}/members
 
 When using the `POST /groups/{group-id}/members/$ref` syntax, supply a JSON object that contains an **@odata.id** property with a reference by ID to a supported group member object type.
 
-When using the `PATCH /groups/{group-id}/members` syntax, supply a JSON object that contains a **members@odata.bind** property with one or more references by IDs to a supported group member object type. That is:
+When using the `PATCH /groups/{group-id}` syntax, supply a JSON object that contains a **members@odata.bind** property with one or more references by IDs to a supported group member object type. That is:
 - For Microsoft 365 groups, only `https://graph.microsoft.com/v1.0/directoryObjects/{id}` and `https://graph.microsoft.com/v1.0/groups/{id}` is allowed where `{id}` must be a user because only users can members of Microsoft 365 groups.
 - For security groups, the following ID references are allowed:
   - `https://graph.microsoft.com/v1.0/directoryObjects/{id}` where `{id}` must belong to a user, security group, device, service principal, or organizational contact.
@@ -109,10 +109,6 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/add-member-to-group-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/add-member-to-group-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -183,10 +179,6 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/add-multiple-members-to-group-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/add-multiple-members-to-group-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

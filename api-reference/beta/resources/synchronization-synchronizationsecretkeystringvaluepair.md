@@ -6,6 +6,7 @@ doc_type: resourcePageType
 author: "ArvindHarinder1"
 ms.subservice: "entra-applications"
 ms.date: 03/21/2024
+ms.custom: sfi-ropc-nochange
 ---
 
 # synchronizationSecretKeyStringValuePair resource type

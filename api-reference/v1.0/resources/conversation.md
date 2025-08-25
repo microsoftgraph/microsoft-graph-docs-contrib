@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 A conversation is a collection of [threads](conversationthread.md), and a thread contains posts to that thread. All threads and posts in a conversation share the same subject.
 
-This resource supports subscribing to [change notifications](/graph/webhooks).
+This resource supports subscribing to [change notifications](/graph/change-notifications-overview).
 
 ## Methods
 
@@ -31,7 +31,7 @@ This resource supports subscribing to [change notifications](/graph/webhooks).
 | Property       | Type    |Description|
 |:---------------|:--------|:----------|
 |hasAttachments|Boolean|Indicates whether any of the posts within this Conversation has at least one attachment. Supports `$filter` (`eq`, `ne`) and `$search`.|
-|id|String|The conversations's unique identifier. Read-only.|
+|id|String|The conversation's unique identifier. Read-only.|
 |lastDeliveredDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |preview|String|A short summary from the body of the latest post in this conversation. Supports `$filter` (`eq`, `ne`, `le`, `ge`).|
 |topic|String|The topic of the conversation. This property can be set when the conversation is created, but it cannot be updated.|

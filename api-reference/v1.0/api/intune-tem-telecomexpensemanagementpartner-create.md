@@ -87,10 +87,6 @@ Content-length: 248
 [!INCLUDE [sample-code](../includes/snippets/csharp/intune-tem-telecomexpensemanagementpartner-create-create-telecomexpensemanagementpartner-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/intune-tem-telecomexpensemanagementpartner-create-create-telecomexpensemanagementpartner-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/intune-tem-telecomexpensemanagementpartner-create-create-telecomexpensemanagementpartner-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

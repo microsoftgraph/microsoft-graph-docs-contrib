@@ -6,6 +6,7 @@ author: "egreenberg14"
 ms.subservice: "entra-monitoring-health"
 doc_type: "resourcePageType"
 ms.date: 07/22/2024
+toc.title: Credential usage summary (deprecated)
 ---
 
 # credentialUsageSummary resource type
@@ -13,6 +14,9 @@ ms.date: 07/22/2024
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+> [!IMPORTANT]
+> The credential usage summary details API is deprecated and will stop returning data on August 1, 2025. Use the new [User Registration Activity Summary](../resources/userregistrationactivitysummary.md) API instead.
 
 Represents the current state of how many users in your organization are using self-service password reset capabilities. For more information about license requirements for this feature, see [Authentication Methods Activity: Permissions and licenses](/entra/identity/authentication/howto-authentication-methods-activity#permissions-and-licenses).
 

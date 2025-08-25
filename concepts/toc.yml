@@ -129,18 +129,6 @@ items:
         href: /powershell/microsoftgraph/navigating?toc=/graph/toc.json
       - name: App-only authentication
         href: /powershell/microsoftgraph/app-only?toc=/graph/toc.json
-    - name: Use the CLI
-      items:
-      - name: CLI overview
-        href: cli/overview.md
-      - name: Install the CLI
-        href: cli/installation.md
-      - name: Get started
-        href: cli/get-started.md
-      - name: Navigate the CLI
-        href: cli/navigating.md
-      - name: App-only authentication
-        href: cli/app-only.md
   - name: Use the toolkit
     items:
     - name: Overview
@@ -251,7 +239,7 @@ items:
       href: toolkit/permissions.md
     - name: Upgrade to the latest version
       href: toolkit/upgrade.md
-  - name: Deploy with Bicep
+  - name: Deploy in IaC with templates
     href: /graph/templates?toc=/graph/toc.json
 - name: Services and features
   expanded: true
@@ -512,6 +500,8 @@ items:
         href: embed-teams-app-in-assignment.md
       - name: Work with grading categories
         href: work-with-grading-categories.md
+      - name: Create assignment with Speaker Progress resource (preview)
+        href: create-assignment-with-speaker-progress-resource.md
   - name: External data connections
     items:
     - name: Connectors overview
@@ -637,7 +627,7 @@ items:
         - name: Manage security alerts for Microsoft Entra roles (preview)
           href: how-to-pim-alerts.md
           displayName: PIM alerts, privileged identity management
-    - name: Multicloud permissions management (preview)
+    - name: Multicloud permissions management (deprecated)
       items:
       - name: API operations reference
         href: permissions-management-howto.md
@@ -1110,8 +1100,10 @@ items:
         href: teams-changenotifications-chatmessage.md
       - name: Chat membership
         href: teams-changenotifications-chatmembership.md
-      - name: Team and channel membership
+      - name: Team membership
         href: teams-changenotifications-teammembership.md
+      - name: Channel membership
+        href: teams-changenotifications-channelmembership.md
       - name: Teams and channels
         href: teams-changenotifications-team-and-channel.md
       - name: Teams app installation
