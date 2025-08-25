@@ -2,7 +2,7 @@
 title: "onPremisesPublishingProfile resource type"
 description: "onPremisesPublishingProfile resource type."
 ms.localizationpriority: medium
-author: "dhruvinrshah"
+author: "shahzad-khalid"
 ms.subservice: "entra-applications"
 doc_type: "resourcePageType"
 ms.date: 11/28/2024

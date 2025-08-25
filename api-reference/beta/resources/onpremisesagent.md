@@ -2,7 +2,7 @@
 title: "onPremisesAgent resource type"
 description: "onPremisesAgent resource type."
 ms.localizationpriority: medium
-author: "dhruvinrshah"
+author: "shahzad-khalid"
 ms.subservice: "entra-applications"
 doc_type: "resourcePageType"
 ms.date: 05/23/2024

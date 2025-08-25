@@ -2,7 +2,7 @@
 title: "onPremisesAgentGroup resource type"
 description: "onPremisesAgentGroup resource type."
 ms.localizationpriority: medium
-author: "dhruvinrshah"
+author: "shahzad-khalid"
 ms.subservice: "entra-applications"
 doc_type: "resourcePageType"
 ms.date: 07/22/2024

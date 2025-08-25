@@ -2,7 +2,7 @@
 title: "publishedResource resource type"
 description: "publishedResource resource type."
 ms.localizationpriority: medium
-author: "dhruvinrshah"
+author: "shahzad-khalid"
 ms.subservice: "entra-applications"
 doc_type: "resourcePageType"
 ms.date: 07/22/2024
