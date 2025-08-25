@@ -818,6 +818,7 @@
     },
     {
       "ChangeList": [
+        {
           "Id": "4721b4db-6721-46bf-8cd0-ca271cb809a5",
           "ApiChange": "Enumeration",
           "ChangedApiName": "securityRuleStatus",
