@@ -31,11 +31,11 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|externalIp|String|Enternal IP of sensor|
+|externalIp|String|External IP of sensor|
 |id|String|Unique Id of the sensor Inherited from [entity](../resources/entity.md). Inherits from [entity](../resources/entity.md)|
-|isBreakglassEnabled|Boolean|is brekaglass property enabled or not|
+|isBreakglassEnabled|Boolean|Is breakglass property enabled or not|
 |machineName|String|Machine name of sensor|
-|version|String|version of sensor|
+|version|String|Version of sensor|
 
 ## Relationships
 None.
