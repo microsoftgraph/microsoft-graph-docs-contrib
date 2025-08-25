@@ -14,7 +14,7 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the change in user activity that triggers the execution conditions of a workflow for a user.
+Represents a trigger based on user inactivity that initiates workflow execution for a user.
 
 Inherits from [microsoft.graph.identityGovernance.workflowExecutionTrigger](../resources/identitygovernance-workflowexecutiontrigger.md).
 
@@ -22,7 +22,7 @@ Inherits from [microsoft.graph.identityGovernance.workflowExecutionTrigger](../r
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|inactivityPeriodInDays|Int32|Defines, in days, the period of time in which a user has been inactive.|
+|inactivityPeriodInDays|Int32|The number of days a user must be inactive before triggering workflow execution.|
 
 ## Relationships
 None.
