@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [fixtureMap](../resources/fixturemap.md) object in IMDF format.
+Update the properties of a [fixtureMap](../resources/fixturemap.md) object in IMDF format.If the fixtureMap doesn't exist, will create it.
 
 ## Permissions
 
@@ -59,9 +59,10 @@ PATCH /places/{buildingPlaceId}/microsoft.graph.building/map/levels/{levelImdfId
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [fixtureMap](../resources/fixturemap.md) object in the response body.
+If the update is successful, this method returns a `200 OK` response code and an updated [fixtureMap](../resources/fixturemap.md) object in the response body.
+If the creation is successful, this method returns a `201 Created` response code and a [fixtureMap](../resources/fixturemap.md) object in the response body.
 
-## Examples
+## Examples - Update
 
 ### Request
 
@@ -99,6 +100,45 @@ Content-Type: application/json
   "placeId": "67149ec1-4b99-42d4-88a4-d92cd23cb606",
   "id": "005eb3b8-c95d-4d35-a8a0-22d3cb4d6002",
   "properties": "{\"id\":\"005eb3b8-c95d-4d35-a8a0-22d3cb4d6002\",\"type\":\"Feature\",\"feature_type\":\"fixture\",\"geometry\":{\"type\":\"Polygon\",\"coordinates\":[[[-121.8889415,37.3295396],[-121.8889137,37.329503],[-121.8889082,37.3294956],[-121.888907,37.3294941],[-121.8888551,37.3295189],[-121.8888895,37.3295644],[-121.8889415,37.3295396]]]},\"properties\":{\"name\":{\"en\":\"Test Fixture update\"},\"level_id\":\"e537d463-475b-43c3-a650-184566c68bc9\",\"display_point\":{\"type\":\"Point\",\"coordinates\":[-121.8888983,37.3295292]}}}"
+}
+```
+
+## Examples - Create
+
+### Request
+
+The following example shows a request.
+<!-- {
+  "blockType": "request",
+  "name": "create_fixturemap_from_"
+}
+-->
+``` http
+PATCH https://graph.microsoft.com/beta/places/151e85a7-c0b8-4519-997e-1a0858255704/microsoft.graph.building/map/levels/e537d463-475b-43c3-a650-184566c68bc9/fixtures/005eb3b8-c95d-4d35-a8a0-22d3cb4d6002
+Content-Type: application/json
+{
+  "placeId": "67149ec1-4b99-42d4-88a4-d92cd23cb606",
+  "properties": "{\"id\":\"005eb3b8-c95d-4d35-a8a0-22d3cb4d6002\",\"type\":\"Feature\",\"feature_type\":\"fixture\",\"geometry\":{\"type\":\"Polygon\",\"coordinates\":[[[-121.8889415,37.3295396],[-121.8889137,37.329503],[-121.8889082,37.3294956],[-121.888907,37.3294941],[-121.8888551,37.3295189],[-121.8888895,37.3295644],[-121.8889415,37.3295396]]]},\"properties\":{\"name\":{\"en\":\"Test Fixture 01\"},\"level_id\":\"e537d463-475b-43c3-a650-184566c68bc9\",\"display_point\":{\"type\":\"Point\",\"coordinates\":[-121.8888983,37.3295292]}}}"
+}
+```
+
+### Response
+
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.fixtureMap"
+}
+-->
+``` http
+HTTP/1.1 201 Created
+Content-Type: application/json
+{
+  "placeId": "67149ec1-4b99-42d4-88a4-d92cd23cb606",
+  "id": "005eb3b8-c95d-4d35-a8a0-22d3cb4d6002",
+  "properties": "{\"id\":\"005eb3b8-c95d-4d35-a8a0-22d3cb4d6002\",\"type\":\"Feature\",\"feature_type\":\"fixture\",\"geometry\":{\"type\":\"Polygon\",\"coordinates\":[[[-121.8889415,37.3295396],[-121.8889137,37.329503],[-121.8889082,37.3294956],[-121.888907,37.3294941],[-121.8888551,37.3295189],[-121.8888895,37.3295644],[-121.8889415,37.3295396]]]},\"properties\":{\"name\":{\"en\":\"Test Fixture 01\"},\"level_id\":\"e537d463-475b-43c3-a650-184566c68bc9\",\"display_point\":{\"type\":\"Point\",\"coordinates\":[-121.8888983,37.3295292]}}}"
 }
 ```
 
