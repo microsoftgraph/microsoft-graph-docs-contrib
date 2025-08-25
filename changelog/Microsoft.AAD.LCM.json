@@ -39,6 +39,24 @@
     {
       "ChangeList": [
         {
+          "Id": "434078f7-1761-4bd5-9df0-55c28ca4d4fc",
+          "ApiChange": "Resource",
+          "ChangedApiName": "userInactivityTrigger",
+          "ChangeType": "Addition",
+          "Description": "Added the [userInactivityTrigger](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-userInactivityTrigger?view=graph-rest-beta) resource.",
+          "Target": "userInactivityTrigger"
+        }
+      ],
+      "Id": "434078f7-1761-4bd5-9df0-55c28ca4d4fc",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-08-25T14:57:22.6694911Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "90b8705c-d9a1-49d0-9769-ffd324961811",
           "ApiChange": "Method",
           "ChangedApiName": "PATCH",
