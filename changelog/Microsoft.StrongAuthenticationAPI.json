@@ -575,7 +575,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "lastUsedDateTime",
           "ChangeType": "Addition",
-          "Description": "Added the **lastUsedDateTime** property to the [authenticationMethod](https://learn.microsoft.com/en-us/graph/api/resources/authenticationMethod?view=graph-rest-beta) resource.",
+          "Description": "Added the **lastUsedDateTime** property to the [authenticationMethod](https://learn.microsoft.com/en-us/graph/api/resources/authenticationMethod?view=graph-rest-beta) resource and all its derived resources.",
           "Target": "authenticationMethod"
         }
       ],
