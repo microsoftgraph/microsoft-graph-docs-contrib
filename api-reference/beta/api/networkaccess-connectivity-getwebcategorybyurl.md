@@ -66,11 +66,11 @@ If successful, this function returns a `200 OK` response code and a [webCategory
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "connectivitythis.getwebcategorybyurl"
+  "name": "connectivity.getwebcategorybyurl"
 }
 -->
 ``` http
-https://graph.microsoft.com/beta/networkaccess/connectivity/microsoft.graph.networkaccess.getWebCategoryByUrl(url='@url')?@url=msn.com/en-us/sports
+GET https://graph.microsoft.com/beta/networkaccess/connectivity/getWebCategoryByUrl(url='@url')?@url=msn.com/en-us/sports
 ```
 
 
