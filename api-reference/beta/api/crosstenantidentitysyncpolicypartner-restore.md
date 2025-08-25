@@ -16,8 +16,8 @@ Namespace: microsoft.graph
 
 Restore a deleted crossTenantIdentitySyncPolicyPartner object.
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
