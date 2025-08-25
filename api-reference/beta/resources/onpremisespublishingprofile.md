@@ -45,7 +45,7 @@ Various Azure services (for example, Microsoft Entra Connect [Passthrough Authen
 |connectorGroups|[connectorGroup](connectorgroup.md) collection| List of existing **connectorGroup** objects for applications published through Application Proxy. Read-only. Nullable.|
 |connectors|[connector](connector.md) collection| List of existing **connector** objects for applications published through Application Proxy. Read-only. Nullable.|
 |publishedResources|[publishedResource](publishedresource.md) collection| List of existing **publishedResource** objects. Read-only. Nullable.|
-|sensors|[privateAccessSensor](../resources/privateaccesssensor.md) collection|**TODO: Add Description**|
+|sensors|[privateAccessSensor](../resources/privateaccesssensor.md) collection|A lightweight agent installed on domain controllers that helps secure access and enforce MFA to on-premise resources.|
 
 ## JSON representation
 

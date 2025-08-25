@@ -1,10 +1,10 @@
 ---
 title: "privateAccessSensor resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+description: "A lightweight agent installed on domain controllers that helps secure access and enforce MFA to on-premise resources."
+author: "shahzad-khalid"
 ms.date: 06/13/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice: "entra-applications"
 doc_type: resourcePageType
 ---
 
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+A lightweight agent installed on domain controllers that helps secure access and enforce MFA to on-premise resources. For more information, see [Configure Microsoft Entra Private Access for Active Directory domain controllers (preview)](/entra/global-secure-access/how-to-configure-domain-controllers).
 
 
 Inherits from [entity](../resources/entity.md).
@@ -31,11 +31,11 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|externalIp|String|**TODO: Add Description**|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md). Inherits from [entity](../resources/entity.md)|
-|isBreakglassEnabled|Boolean|**TODO: Add Description**|
-|machineName|String|**TODO: Add Description**|
-|version|String|**TODO: Add Description**|
+|externalIp|String|Enternal IP of sensor|
+|id|String|Unique Id of the sensor Inherited from [entity](../resources/entity.md). Inherits from [entity](../resources/entity.md)|
+|isBreakglassEnabled|Boolean|is brekaglass property enabled or not|
+|machineName|String|Machine name of sensor|
+|version|String|version of sensor|
 
 ## Relationships
 None.
