@@ -19,12 +19,16 @@ Represents all the connectivity components in Global Secure Access services.
 Inherits from [microsoft.graph.entity](../resources/entity.md).
 
 ## Methods
-None.
+|Method|Return type|Description|
+|:---|:---|:---|
+|[getWebCategoryByUrl](../api/networkaccess-connectivity-getwebcategorybyurl.md)|[microsoft.graph.networkaccess.webCategory](../resources/networkaccess-webcategory.md)|This method returns the category of a given Uniform Resource Locator (URL).'|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|The unique identifier for this resource. Inherited from [microsoft.graph.entity](../resources/entity.md).|
+|webCategories|[microsoft.graph.networkaccess.webCategory](../resources/networkaccess-webcategory.md) collection|The URL category.|
+
 
 ## Relationships
 |Relationship|Type|Description|

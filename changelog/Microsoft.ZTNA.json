@@ -815,6 +815,24 @@
       "CreatedDateTime": "2024-11-11T00:00:00.8805486Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Network access"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "9c79593d-37e0-481b-917a-7b25327607a0",
+          "ApiChange": "Method",
+          "ChangedApiName": "getWebCategoryByUrl",
+          "ChangeType": "Addition",
+          "Description": "Added the [getWebCategoryByUrl](https://learn.microsoft.com/en-us/graph/api/networkaccess-connectivity-getWebCategoryByUrl?view=graph-rest-beta) method to the [connectivity](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-connectivity?view=graph-rest-beta) resource.",
+          "Target": "connectivity"
+        }
+      ],
+      "Id": "9c79593d-37e0-481b-917a-7b25327607a0",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-08-21T07:42:57.8177927Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Network access"
     }
   ]
 }
