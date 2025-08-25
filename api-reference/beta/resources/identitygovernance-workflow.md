@@ -59,7 +59,7 @@ Inherits from [workflowBase](../resources/identitygovernance-workflowbase.md).
 |Relationship|Type|Description|
 |:---|:---|:---|
 |createdBy|[user](../resources/user.md)|The unique identifier of the Microsoft Entra user that created the [workflow](../resources/identitygovernance-workflow.md) object. Inherited from [workflowBase](../resources/identitygovernance-workflowbase.md).<br><br>Supports `$filter`(`eq`, `ne`) and `$expand`.|
-|executionScope|[microsoft.graph.user](../resources/user.md) collection|The unique identifier of the Microsoft Entra identity that last modified the [workflow](../resources/identitygovernance-workflow.md) object.|
+|executionScope|[microsoft.graph.user](../resources/user.md) collection|The list of users that meet the [workflowExecutionConditions](../resources/identitygovernance-workflowexecutionconditions.md) of a workflow.|
 |lastModifiedBy|[user](../resources/user.md)|The user who last modified the [workflow](../resources/identitygovernance-workflow.md) object. Inherited from [workflowBase](../resources/identitygovernance-workflowbase.md).<br><br>Supports `$filter`(`eq`, `ne`) and `$expand`.|
 |runs|[microsoft.graph.identityGovernance.run](../resources/identitygovernance-run.md) collection|Workflow runs.|
 |taskReports|[microsoft.graph.identityGovernance.taskReport](../resources/identitygovernance-taskreport.md) collection|Represents the aggregation of task execution data for tasks within a [workflow](../resources/identitygovernance-workflow.md) object.|
