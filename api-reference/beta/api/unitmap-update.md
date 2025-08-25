@@ -27,6 +27,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/unitmap-update-permissions.md)]
 
+>**Note**: Exchange Admin role is requied to create or update a unitmap.
+
 ## HTTP request
 
 <!-- {

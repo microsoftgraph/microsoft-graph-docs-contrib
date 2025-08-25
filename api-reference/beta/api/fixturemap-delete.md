@@ -27,6 +27,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/fixturemap-delete-permissions.md)]
 
+>**Note**: Exchange Admin role is requied to delete a fixturemap.
+
 ## HTTP request
 
 <!-- {
