@@ -22,6 +22,7 @@ This is an abstract type from which the following resources are derived:
 - [microsoft.graph.networkaccess.ipRange](networkaccess-iprange.md)
 - [microsoft.graph.networkaccess.ipSubnet](networkaccess-ipsubnet.md)
 - [microsoft.graph.networkaccess.url](networkaccess-url.md)
+- [microsoft.graph.networkaccess.webCategory](networkaccess-webcategory.md)
 
 
 ## Properties
