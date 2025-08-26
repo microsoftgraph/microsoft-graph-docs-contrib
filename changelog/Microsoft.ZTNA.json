@@ -1111,6 +1111,14 @@
           "ChangeType": "Addition",
           "Description": "Added the [getWebCategoryByUrl](https://learn.microsoft.com/en-us/graph/api/networkaccess-connectivity-getWebCategoryByUrl?view=graph-rest-beta) method to the [connectivity](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-connectivity?view=graph-rest-beta) resource.",
           "Target": "connectivity"
+        },
+        {
+          "Id": "872db1cf-2421-4963-aa30-aa934ac5f4eb",
+          "ApiChange": "Resource",
+          "ChangedApiName": "webCategory",
+          "ChangeType": "Addition",
+          "Description": "Added the [webCategory](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-webCategory?view=graph-rest-beta) resource type.",
+          "Target": "webCategory"
         }
       ],
       "Id": "9c79593d-37e0-481b-917a-7b25327607a0",
