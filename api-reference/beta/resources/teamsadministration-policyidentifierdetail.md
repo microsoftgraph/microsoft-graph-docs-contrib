@@ -25,8 +25,8 @@ None.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|name|String|The display name of the policy instance|
-|policyId|String|The unique ID associated with the policy instance|
+|name|String|The display name of the policy instance.|
+|policyId|String|The unique ID associated with the policy instance.|
 
 ## Relationships
 None.
