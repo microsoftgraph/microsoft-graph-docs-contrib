@@ -34,6 +34,22 @@ items:
       href: ../../resources/teamsadministration-telephonenumberlongrunningoperation.md
     - name: Get
       href: ../../api/teamsadministration-telephonenumberlongrunningoperation-get.md
+  - name: Teams policy assignment
+    items:
+    - name: Teams policy assignment
+      href: ../../resources/teamsadministration-teamspolicyassignment.md
+    - name: getPolicyId
+      href: ../../api/teamsadministration-teamspolicyassignment-getpolicyid.md
+  - name: Teams policy user assignment
+    items:
+    - name: Teams policy user assignment
+      href: ../../resources/teamsadministration-teamspolicyuserassignment.md
+    - name: assign
+      href: ../../api/teamsadministration-teamspolicyuserassignment-assign.md
+    - name: unassign
+      href: ../../api/teamsadministration-teamspolicyuserassignment-unassign.md
+  - name: Policy identifier detail
+    href: ../../resources/teamsadministration-policyidentifierdetail.md
   - name: Complex types
     items:
     - name: Assigned telephone number
