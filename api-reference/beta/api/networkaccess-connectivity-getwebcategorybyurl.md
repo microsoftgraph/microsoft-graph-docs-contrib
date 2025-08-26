@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /networkAccess/connectivity/getWebCategoryByUrl
+GET /networkAccess/connectivity/getWebCategoryByUrl(url='@url')?@url=url
 ```
 
 ## Function parameters
