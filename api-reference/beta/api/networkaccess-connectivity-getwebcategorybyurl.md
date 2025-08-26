@@ -42,7 +42,7 @@ In the request URL, provide the following query parameters with values.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|url|String|Uniform Resource Locator (url)|
+|url|String|Uniform Resource Locator (url). Required.|
 
 
 ## Request headers
