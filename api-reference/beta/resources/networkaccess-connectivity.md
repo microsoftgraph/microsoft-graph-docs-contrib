@@ -21,7 +21,7 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[getWebCategoryByUrl](../api/networkaccess-connectivity-getwebcategorybyurl.md)|[microsoft.graph.networkaccess.webCategory](../resources/networkaccess-webcategory.md)|This method returns the category of a given Uniform Resource Locator (URL).'|
+|[Get web category by URL](../api/networkaccess-connectivity-getwebcategorybyurl.md)|[microsoft.graph.networkaccess.webCategory](../resources/networkaccess-webcategory.md)|Check the web category of a given Uniform Resource Locator (URL).|
 
 ## Properties
 |Property|Type|Description|
