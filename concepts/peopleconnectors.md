@@ -26,7 +26,7 @@ You can use Copilot connectors for people data to:
 
 Once connected, people data from the third-party system can appear in Microsoft 365 experiences, such as:  
 
-* Microsoft 365 profile cards
+* [Microsoft 365 profile cards](/microsoft-365/admin/manage/customize-profile-cards?view=o365-worldwide)
 * Microsoft 365 Copilot chat
 * Microsoft Search
 * Org Explorer 
@@ -107,6 +107,4 @@ For more information, see [https://learn.microsoft.com/microsoftsearch/manage-co
 - [Export data from your profile card - Microsoft support](https://support.microsoft.com/office/export-data-from-your-profile-card-d809f83f-c077-4a95-9b6c-4f093305163d) 
 - [Source precedence](profilepriority-configure-profilepropertysetting.md)  
 - [Organizational data in Microsoft 365 | Microsoft Learn](/viva/organizational-data) 
-
-- [Enriching and customizing your organization's profile cards | Microsoft Learn](Enriching and customizing your organization's profile cards)
 
