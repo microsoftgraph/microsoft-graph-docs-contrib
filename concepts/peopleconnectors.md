@@ -11,7 +11,7 @@ ms.subservice: developer
 
 # Microsoft 365 Copilot connectors for people data
 
-Microsoft 365 Copilot connectors for people data (formerly Microsoft Graph connectors) are a type of connector that enhances how individuals are portrayed across Microsoft 365 apps and APIs. They help organizations bring people data from third-party systems into Microsoft 365, ensuring a unified and consistent view of individuals across Copilot, Microsoft Search, [profile cards](), and more.
+Microsoft 365 Copilot connectors for people data (formerly Microsoft Graph connectors) are a type of connector that enhances how individuals are portrayed across Microsoft 365 apps and APIs. They help organizations bring people data from third-party systems into Microsoft 365, ensuring a unified and consistent view of individuals across Copilot, Microsoft Search, [profile cards](/microsoft-365/admin/manage/customize-profile-cards?view=o365-worldwide), and more.
 
 These connectors create a view of a portion of the data from the third-party source system, ensuring the data stays authoritative in its original location while being displayed consistently across Microsoft 365.
 
