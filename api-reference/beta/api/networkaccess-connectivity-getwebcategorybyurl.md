@@ -1,6 +1,6 @@
 ---
 title: "connectivity: getWebCategoryByUrl"
-description: "Method for getting a web category, given a Uniform Resource Locator (URL)"
+description: "Validate the web categorization of a Uniform Resource Locator (URL) in Global Secure Access (GSA) web content filtering."
 author: "fgomulka"
 ms.date: 08/25/2025
 ms.localizationpriority: medium
