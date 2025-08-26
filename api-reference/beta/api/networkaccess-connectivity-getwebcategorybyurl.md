@@ -14,7 +14,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This method allows Global Secure Access (GSA) admins to check the web categorization of an Uniform Resource Locator (URL).
+Validate the web categorization of a Uniform Resource Locator (URL) in Global Secure Access (GSA) web content filtering.
 
 ## Permissions
 
