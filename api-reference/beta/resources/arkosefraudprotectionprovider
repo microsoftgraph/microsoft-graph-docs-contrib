@@ -23,10 +23,6 @@ Inherits from [fraudProtectionProvider](../resources/fraudprotectionprovider.md)
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/arkosefraudprotectionprovider-list.md)|[arkoseFraudProtectionProvider](../resources/arkosefraudprotectionprovider.md) collection|Get a list of the arkoseFraudProtectionProvider objects and their properties.|
-|[Get](../api/arkosefraudprotectionprovider-get.md)|[arkoseFraudProtectionProvider](../resources/arkosefraudprotectionprovider.md)|Read the properties and relationships of [arkoseFraudProtectionProvider](../resources/arkosefraudprotectionprovider.md) object.|
-|[Update](../api/arkosefraudprotectionprovider-update.md)|[arkoseFraudProtectionProvider](../resources/arkosefraudprotectionprovider.md)|Update the properties of an arkoseFraudProtectionProvider object.|
-|[Delete](../api/arkosefraudprotectionprovider-delete.md)|None|Delete an arkoseFraudProtectionProvider object.|
 
 ## Properties
 |Property|Type|Description|

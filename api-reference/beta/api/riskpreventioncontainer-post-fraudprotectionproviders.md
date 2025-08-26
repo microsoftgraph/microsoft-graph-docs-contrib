@@ -76,8 +76,12 @@ POST https://graph.microsoft.com/beta/identity/riskPrevention/fraudProtectionPro
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.fraudProtectionProvider",
-  "displayName": "String"
+   "@odata.type": "#microsoft.graph.arkoseFraudProtectionProvider",
+    "displayName": "Arkose Sign-Up Protection",
+    "publicKey": "A1EE42E0-C88B-47FE-A176-5E9FB8F116FB",
+    "privateKey": "19BBE628-7DEF-4E28-AB25-BF129C760B7E",
+    "clientSubDomain": "client-api",
+    "verifySubDomain": "verify-api"
 }
 ```
 
@@ -95,11 +99,15 @@ The following example shows the response.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-
 {
-  "@odata.type": "#microsoft.graph.fraudProtectionProvider",
-  "id": "08e808ec-4e76-029b-5b80-fc43da5b2c6f",
-  "displayName": "String"
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/riskPrevention/fraudProtectionProviders/$entity",
+    "@odata.type": "#microsoft.graph.arkoseFraudProtectionProvider",
+    "id": "d474f94f-0fcf-4224-a165-c1c5bad1600f",
+    "displayName": "Arkose Sign-Up Protection",
+    "publicKey": "A1EE42E0-C88B-47FE-A176-5E9FB8F116FB",
+    "clientSubDomain": "client-api",
+    "verifySubDomain": "verify-api"
 }
+
 ```
 

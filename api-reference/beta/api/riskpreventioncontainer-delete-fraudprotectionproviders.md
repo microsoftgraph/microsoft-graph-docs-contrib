@@ -62,7 +62,7 @@ The following example shows a request.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/fraudProtectionProviderConfiguration/fraudProtectionProvider
+DELETE https://graph.microsoft.com/beta/identity/riskprevention/fraudprotectionproviders/d474f94f-0fcf-4224-a165-c1c5bad1600f
 ```
 
 
@@ -77,5 +77,6 @@ The following example shows the response.
 -->
 ``` http
 HTTP/1.1 204 No Content
+{}
 ```
 

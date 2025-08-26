@@ -21,13 +21,7 @@ Inherits from [entity](../resources/entity.md)
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/security-identitycontainer-list-riskprevention.md)|[riskPreventionContainer](../resources/riskpreventioncontainer.md) collection|Get a list of the riskPreventionContainer objects and their properties.|
-|[Create](../api/security-identitycontainer-post-riskprevention.md)|[riskPreventionContainer](../resources/riskpreventioncontainer.md)|Create a new riskPreventionContainer object.|
-|[Get](../api/riskpreventioncontainer-get.md)|[riskPreventionContainer](../resources/riskpreventioncontainer.md)|Read the properties and relationships of [riskPreventionContainer](../resources/riskpreventioncontainer.md) object.|
-|[Update](../api/riskpreventioncontainer-update.md)|[riskPreventionContainer](../resources/riskpreventioncontainer.md)|Update the properties of a riskPreventionContainer object.|
-|[Delete](../api/security-identitycontainer-delete-riskprevention.md)|None|Delete a riskPreventionContainer object.|
-|[List fraudProtectionProviders](../api/riskpreventioncontainer-list-fraudprotectionproviders.md)|[fraudProtectionProvider](../resources/fraudprotectionprovider.md) collection|**TODO: Add a useful description.**|
-|[Create fraudProtectionProvider](../api/riskpreventioncontainer-post-fraudprotectionproviders.md)|[fraudProtectionProvider](../resources/fraudprotectionprovider.md)|Create a new fraudProtectionProvider object.|
+
 
 ## Properties
 |Property|Type|Description|

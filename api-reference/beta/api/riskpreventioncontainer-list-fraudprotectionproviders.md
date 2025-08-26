@@ -66,7 +66,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identity/riskPrevention/fraudProtectionProviders
+GET https://graph.microsoft.com/beta/identity/riskprevention/fraudprotectionproviders
 ```
 
 
@@ -83,15 +83,19 @@ The following example shows the response.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.fraudProtectionProvider",
-      "id": "08e808ec-4e76-029b-5b80-fc43da5b2c6f",
-      "displayName": "String"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/riskPrevention/fraudProtectionProviders",
+    "value": [
+        {
+            "@odata.type": "#microsoft.graph.arkoseFraudProtectionProvider",
+            "id": "0bb2618b-51f7-4e83-bcb8-84e70f7cf84d",
+            "displayName": "Arkose Sign-Up Protection",
+            "publicKey": "A1EE42E0-C88B-47FE-A176-5E9FB8F116FB",
+            "clientSubDomain": "client-api",
+            "verifySubDomain": "verify-api"
+        }
+     ]
 }
+
 ```
 

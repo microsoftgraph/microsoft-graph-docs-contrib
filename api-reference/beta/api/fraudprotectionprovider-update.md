@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-PATCH /fraudProtectionProviderConfiguration/fraudProtectionProvider
+PATCH identity/riskprevention/fraudprotectionproviders/{fraudProtectionProviderId}
 ```
 
 ## Request headers
@@ -70,12 +70,12 @@ The following example shows a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/fraudProtectionProviderConfiguration/fraudProtectionProvider
+PATCH https://graph.microsoft.com/beta/identity/riskprevention/fraudprotectionproviders/9826466a-5275-438d-98e1-f3df6470a4b5
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.fraudProtectionProvider",
-  "displayName": "String"
+    "@odata.type": "#microsoft.graph.arkoseFraudProtectionProvider",
+    "displayName": "Arkose Sign-Up Protection Updated",
 }
 ```
 
@@ -90,13 +90,7 @@ The following example shows the response.
 }
 -->
 ``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.fraudProtectionProvider",
-  "id": "08e808ec-4e76-029b-5b80-fc43da5b2c6f",
-  "displayName": "String"
-}
+HTTP/1.1 204 No Content
+{}
 ```
 

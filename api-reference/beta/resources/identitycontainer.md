@@ -42,8 +42,7 @@ None.
 |userFlowAttributes|[identityUserFlowAttribute](identityUserFlowAttribute.md) collection| Represents entry point for identity userflow attributes.|
 |conditionalAccess|[conditionalAccessRoot](conditionalAccessRoot.md) collection| the entry point for the Conditional Access (CA) object model.|
 |continuousAccessEvaluationPolicy|[continuousAccessEvaluationPolicy](continuousAccessEvaluationPolicy.md)| Represents entry point for continuous access evaluation policy.|
-|riskPrevention|[riskPreventionContainer](../resources/riskpreventioncontainer.md)|Represents the container for fraud and risk prevention configurations, including third-party provider settings.|
-|userFlows|[identityUserFlow](../resources/identityuserflow.md) collection|Represents the entry point for managing identity user flows in the tenant.|
+|riskPrevention|[riskPreventionContainer](../resources/riskpreventioncontainer.md)|Represents the entry point for fraud and risk prevention configurations, including third-party provider settings.|
 
 ## JSON representation
 
