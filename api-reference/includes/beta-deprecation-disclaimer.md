@@ -6,6 +6,6 @@ ms.localizationpriority: medium
 ---
 
 <!-- markdownlint-disable MD041-->
-> [!DEPRECATION NOTICE]
+> [!NOTE]
 > The Microsoft Graph beta APIs related to device management under the `teamworkDevice` resource type will be deprecated by November 2025. These APIs will no longer be supported after that time.
 
