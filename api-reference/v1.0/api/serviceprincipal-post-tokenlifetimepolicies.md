@@ -1,7 +1,7 @@
 ---
 title: "Assign tokenLifetimePolicy"
 description: "Assign a tokenLifetimePolicy to a service principal."
-author: "sureshja"
+author: "Jackson-Woods"
 ms.localizationpriority: medium
 ms.subservice: "entra-applications"
 doc_type: apiPageType

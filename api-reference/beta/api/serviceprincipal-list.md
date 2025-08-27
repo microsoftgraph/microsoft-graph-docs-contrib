@@ -4,7 +4,7 @@ description: "Retrieve a list of servicePrincipal objects."
 ms.localizationpriority: high
 doc_type: apiPageType
 ms.subservice: "entra-applications"
-author: "sureshja"
+author: "Jackson-Woods"
 ms.date: 04/19/2024
 ---
 

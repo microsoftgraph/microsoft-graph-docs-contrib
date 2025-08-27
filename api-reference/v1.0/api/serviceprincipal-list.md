@@ -1,7 +1,7 @@
 ---
 title: "List servicePrincipals"
 description: "Retrieve a list of servicePrincipal objects."
-author: "sureshja"
+author: "Jackson-Woods"
 ms.localizationpriority: high
 ms.subservice: "entra-applications"
 doc_type: apiPageType

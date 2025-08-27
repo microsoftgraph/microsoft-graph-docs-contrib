@@ -2,7 +2,7 @@
 title: "List assigned tokenLifetimePolicies"
 description: "List tokenLifetimePolicies that are assigned to an application."
 ms.localizationpriority: medium
-author: "sureshja"
+author: "Jackson-Woods"
 ms.subservice: "entra-applications"
 doc_type: "apiPageType"
 ms.date: 07/30/2024

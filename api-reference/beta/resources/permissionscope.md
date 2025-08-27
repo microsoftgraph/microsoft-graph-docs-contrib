@@ -4,7 +4,7 @@ description: "Represents the definition of a delegated permission, sometimes ref
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "entra-sign-in"
-author: "psignoret"
+author: "Jackson-Woods"
 ms.date: 03/21/2024
 ---
 
