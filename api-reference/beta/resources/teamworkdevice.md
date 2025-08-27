@@ -12,7 +12,7 @@ ms.date: 04/03/2024
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-deprecation-disclaimer](api-reference/includes/beta-deprecation-disclaimer.md)]
+[!INCLUDE [beta-deprecation-disclaimer](../../includes/beta-deprecation-disclaimer.md)]
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
