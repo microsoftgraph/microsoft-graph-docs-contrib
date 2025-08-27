@@ -29,7 +29,7 @@ The map feature represents the corresponding map of a place. A MapFeature object
 |Map Feature type	|Details |
 |:--|:--|
 |[buildingMap](./buildingmap.md) | Represents a map file associated with a [building](./building.md) in Places. This object is the IMDF-format representation of building.geojson. |
-|[footprintMap ](./footprintmap .md) |Represents a footprint.geojson file in IMDF format that defines the approximate physical extent of a referenced [building](./building.md). |
+|[footprintMap ](./footprintmap.md) |Represents a footprint.geojson file in IMDF format that defines the approximate physical extent of a referenced [building](./building.md). |
 |[levelMap](./levelmap.md) |Represents a level.geojson file in IMDF format that defines the physical floor structure within a [building](../resources/building.md). |
 |[unitMap](./unitmap.md) |Represents a unit.geojson file in IMDF format that defines units (such as rooms or offices) on a floor of a [building](../resources/building.md). |
 |[fixtureMap](./fixturemap.md) |Represents a fixture.geojson file in IMDF format that defines movable or semi-permanent physical assets within a space. These assets support utility, service, or aesthetic functions without affecting structural integrity. |
