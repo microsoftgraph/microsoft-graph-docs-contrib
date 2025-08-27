@@ -23,18 +23,13 @@ var requestBody = new SendActivityNotificationPostRequestBody
 	{
 		Content = "new announcemnet posted",
 	},
+	IconId = "announcementCreated",
 	TemplateParameters = new List<KeyValuePair>
 	{
 		new KeyValuePair
 		{
 			Name = "deploymentId",
 			Value = "6788662",
-		},
-	},
-	AdditionalData = new Dictionary<string, object>
-	{
-		{
-			"iconId" , "announcementCreated"
 		},
 	},
 };

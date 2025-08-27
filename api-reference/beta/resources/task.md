@@ -20,7 +20,7 @@ Represents a task, such as a piece of work or personal item, that can be tracked
 
 This resource supports the following:
 * Adding your data as custom properties in [open extensions](/graph/extensibility-overview).
-* Subscribing to [change notifications](/graph/webhooks).
+* Subscribing to [change notifications](/graph/change-notifications-overview).
 * Using [delta query](/graph/delta-query-overview) to track incremental additions, deletions and updates.
 
 Inherits from [baseTask](../resources/basetask.md).

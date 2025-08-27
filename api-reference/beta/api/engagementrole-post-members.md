@@ -73,17 +73,12 @@ POST https://graph.microsoft.com/beta/employeeExperience/roles/{engagementRoleId
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.engagementrolemember",
-  "userId": "String"
+  "user@odata.bind": "https://graph.microsoft.com/beta/users('userId')"
 }
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-engagementrolemember-from--csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-engagementrolemember-from--cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

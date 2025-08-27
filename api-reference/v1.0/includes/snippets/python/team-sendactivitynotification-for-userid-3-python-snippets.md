@@ -22,15 +22,13 @@ request_body = SendActivityNotificationPostRequestBody(
 	preview_text = ItemBody(
 		content = "new announcemnet posted",
 	),
+	icon_id = "announcementCreated",
 	template_parameters = [
 		KeyValuePair(
 			name = "deploymentId",
 			value = "6788662",
 		),
 	],
-	additional_data = {
-			"icon_id" : "announcementCreated",
-	}
 )
 
 await graph_client.users.by_user_id('user-id').teamwork.send_activity_notification.post(request_body)

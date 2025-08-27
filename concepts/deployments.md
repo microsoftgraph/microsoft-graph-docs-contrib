@@ -4,6 +4,7 @@ description: "Learn about Microsoft Graph national cloud deployments and the cap
 ms.reviewer: krbash
 ms.localizationpriority: medium
 ms.date: 01/30/2025
+ms.topic: article
 ---
 
 # Microsoft Graph national cloud deployments

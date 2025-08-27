@@ -6,7 +6,6 @@ ms.localizationpriority: medium
 ms.subservice: "people"
 doc_type: apiPageType
 ms.date: 06/10/2024
-ms.custom: sfi-ga-nochange
 ---
 
 # Update pronounsSettings
@@ -26,7 +25,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "pronounssettings_update" } -->
 [!INCLUDE [permissions-table](../includes/permissions/pronounssettings-update-permissions.md)]
 
->**Note:** Using delegated permissions for this operation requires the signed-in user to have a Global Administrator role.
+[!INCLUDE [rbac-peopleadmin-apis-write](../includes/rbac-for-apis/rbac-peopleadmin-apis-write.md)]
 
 ## HTTP request
 
@@ -80,10 +79,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-pronounssettings-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/update-pronounssettings-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

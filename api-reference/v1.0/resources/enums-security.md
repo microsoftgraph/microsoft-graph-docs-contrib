@@ -913,6 +913,26 @@ Namespace: microsoft.graph.security
 |  replaced  |
 |  unknownFutureValue  |
 
+### cloudAttachmentVersion values
+
+|Member|
+|:----|
+|latest     |
+|recent10   |
+|recent100  |
+|all        |
+|unknownFutureValue|
+
+### documentVersion values
+
+|Member|
+|:----|
+|latest     |
+|recent10   |
+|recent100  |
+|all        |
+|unknownFutureValue|
+
 ### contentProcessingErrorType values
 
 |Member|
@@ -1019,7 +1039,6 @@ Namespace: microsoft.graph.security
 |warn|
 |audit|
 |block|
-
 
 <!--
 {

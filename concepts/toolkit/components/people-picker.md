@@ -4,6 +4,7 @@ description: "You can use the mgt-people-picker web component to search for peop
 ms.localizationpriority: medium
 author: sebastienlevert
 ms.date: 11/07/2024
+ms.topic: how-to
 ---
 
 # People picker component in Microsoft Graph Toolkit

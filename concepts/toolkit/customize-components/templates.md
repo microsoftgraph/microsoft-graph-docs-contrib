@@ -4,6 +4,7 @@ description: "Use custom templates to modify the content of a component."
 ms.localizationpriority: medium
 author: sebastienlevert
 ms.date: 11/07/2024
+ms.topic: article
 ---
 
 # Templates in the Microsoft Graph Toolkit

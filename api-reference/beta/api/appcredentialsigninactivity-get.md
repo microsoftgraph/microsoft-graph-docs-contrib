@@ -72,10 +72,6 @@ GET https://graph.microsoft.com/beta/reports/appCredentialSignInActivities/ODNmN
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-appcredentialsigninactivity-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-appcredentialsigninactivity-1-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-appcredentialsigninactivity-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

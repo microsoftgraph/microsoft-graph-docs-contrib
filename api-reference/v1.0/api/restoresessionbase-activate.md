@@ -83,10 +83,6 @@ POST https://graph.microsoft.com/v1.0/solutions/backupRestore/restoreSessions/61
 [!INCLUDE [sample-code](../includes/snippets/csharp/restoresessionbasethisactivate-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/restoresessionbasethisactivate-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/restoresessionbasethisactivate-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -134,6 +130,13 @@ Content-Type: application/json
   "@odata.type": "#microsoft.graph.sharepointRestoreSession",
   "id": "61633878-8321-4950-bfaf-ed285bdd1461",
   "status": "activating",
+  "restoreJobType": "standard",
+  "restoreSessionArtifactCount": {
+    "total": 2,
+    "completed": 0,
+    "inProgress": 2,
+    "failed": 0
+  },
   "createdBy": {
     "application": {
       "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",

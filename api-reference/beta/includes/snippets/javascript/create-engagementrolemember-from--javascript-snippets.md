@@ -11,8 +11,7 @@ const options = {
 const client = Client.init(options);
 
 const engagementRoleMember = {
-  '@odata.type': '#microsoft.graph.engagementrolemember',
-  userId: 'String'
+  'user@odata.bind': 'https://graph.microsoft.com/beta/users(\'userId\')'
 };
 
 await client.api('/employeeExperience/roles/{engagementRoleId}/members')

@@ -993,6 +993,7 @@
                 "onAttributeCollectionStartListener",
                 "onAttributeCollectionSubmitListener",
                 "onAuthenticationMethodLoadStartListener",
+                "onEmailOtpSendListener",
                 "onInteractiveAuthFlowStartListener",
                 "onTokenIssuanceStartListener",
                 "onUserCreateStartListener"
@@ -1044,6 +1045,7 @@
               "name": "Conditional access",
               "resources": [
                 "conditionalAccessPolicy",
+                "whatIfAnalysisResult",
                 "namedLocation",
                 "authenticationContextClassReference",
                 "conditionalAccessTemplate"
@@ -1074,6 +1076,7 @@
                 "customAuthenticationExtension",
                 "onAttributeCollectionStartCustomExtension",
                 "onAttributeCollectionSubmitCustomExtension",
+                "onOtpSendCustomExtension",
                 "onTokenIssuanceStartCustomExtension"
               ]
             },
@@ -1419,6 +1422,7 @@
             "microsoft.graph.partners.billing.billedUsage",
             "microsoft.graph.partners.billing.manifest",
             "microsoft.graph.partners.billing.operation",
+            "microsoft.graph.partners.billing.unbilledReconciliation",
             "microsoft.graph.partners.billing.unbilledUsage"
           ]
     },
@@ -1567,7 +1571,7 @@
               "scopeBase",
               "tenantScope",
               "textContent",
-              "userScope" 
+              "userScope"
             ]
         },
         {
@@ -1591,6 +1595,11 @@
                 "microsoft.graph.security.ediscoveryReviewSetQuery"
               ]
             }
+          ],
+          "complexTypes": [
+            "microsoft.graph.security.ediscoveryAddToReviewSetOperation",
+            "microsoft.graph.security.ediscoveryEstimateOperation",
+            "microsoft.graph.security.reportFileMetadata"
           ]
         },
         {
@@ -1839,22 +1848,6 @@
       ],
       "childNodes": [
         {
-          "name": "AI interactions",
-          "resources": [
-            "aiInteractionHistory"
-          ],
-          "complexTypes": [
-            "aiInteraction",
-            "aiInteractionAttachment",
-            "aiInteractionContext",
-            "aiInteractionLink",
-            "aiInteractionMention",
-            "aiInteractionMentionedIdentitySet",
-            "aiUser",
-            "copilotRoot"
-          ]
-        },
-        {
           "name": "Apps",
           "resources": [
             "teamsApp",
@@ -1870,6 +1863,9 @@
           "shouldSort": true,
           "resources": [
             "presence"
+          ],
+          "complexTypes": [
+            "outOfOfficeSettings"
           ],
           "childNodes": [
             {
@@ -1894,17 +1890,6 @@
               ],
               "complexTypes": [
                 "microsoft.graph.callRecords.networkInfo"
-              ]
-            },
-            {
-              "name": "Copilot settings",
-              "resources": [
-                "copilotAdminLimitedMode"
-              ],
-              "complexTypes": [
-                "copilotAdmin",
-                "copilotAdminSetting",
-                "copilotRoot"
               ]
             },
             {

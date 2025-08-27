@@ -4,6 +4,7 @@ description: "The file list component is used to display a list of files by show
 ms.localizationpriority: medium
 author: sebastienlevert
 ms.date: 11/07/2024
+ms.topic: how-to
 ---
 
 # File list component in Microsoft Graph Toolkit

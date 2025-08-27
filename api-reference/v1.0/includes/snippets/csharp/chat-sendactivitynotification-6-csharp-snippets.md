@@ -22,6 +22,7 @@ var requestBody = new SendActivityNotificationPostRequestBody
 	{
 		Content = "new task created",
 	},
+	IconId = "taskCreatedIcon",
 	Recipient = new ChatMembersNotificationRecipient
 	{
 		OdataType = "microsoft.graph.chatMembersNotificationRecipient",
@@ -33,12 +34,6 @@ var requestBody = new SendActivityNotificationPostRequestBody
 		{
 			Name = "taskId",
 			Value = "Task 12322",
-		},
-	},
-	AdditionalData = new Dictionary<string, object>
-	{
-		{
-			"iconId" , "taskCreatedIcon"
 		},
 	},
 };

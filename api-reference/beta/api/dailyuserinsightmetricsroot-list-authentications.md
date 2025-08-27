@@ -68,10 +68,6 @@ GET https://graph.microsoft.com/beta/reports/userInsights/daily/authentications
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-dailyauthenticationsmetric-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/list-dailyauthenticationsmetric-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-dailyauthenticationsmetric-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

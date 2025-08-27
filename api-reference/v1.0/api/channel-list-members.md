@@ -1,6 +1,6 @@
 ---
 title: "List members of a channel"
-description: "List members of a channel."
+description: "Get a list of members in a channel, including direct members of standard, private, and shared channels."
 author: "akjo"
 ms.localizationpriority: high
 ms.subservice: "teams"
@@ -12,7 +12,7 @@ ms.date: 04/04/2024
 
 Namespace: microsoft.graph
 
-Retrieve a list of [conversationMembers](../resources/conversationmember.md) from a [channel](../resources/channel.md).
+Get a list of [members](../resources/conversationmember.md) in a [channel](../resources/channel.md), including direct members of standard, private, and shared channels. Use the [List allMembers](../api/channel-list-allmembers.md) API to retrieve both direct and indirect members of a shared channel.
 
 This method supports federation. Only a user who is a member of the shared channel can retrieve the channel member list.
 
@@ -73,10 +73,6 @@ GET https://graph.microsoft.com/v1.0/teams/2ab9c796-2902-45f8-b712-7c5a63cf41c4/
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/channel-list-member-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/channel-list-member-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

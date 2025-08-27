@@ -4,6 +4,7 @@ description: "Get started using the Microsoft Graph Toolkit in an Electron appli
 ms.localizationpriority: medium
 author: sebastienlevert
 ms.date: 11/07/2024
+ms.topic: how-to
 ---
 
 # Use the Microsoft Graph Toolkit with Electron

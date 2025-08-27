@@ -409,6 +409,48 @@
     {
       "ChangeList": [
         {
+          "Id": "657d78ca-114c-48ee-aba1-a0a5bc5a0d31",
+          "ApiChange": "Resource",
+          "ChangedApiName": "customAppScopeAttributesDictionary",
+          "ChangeType": "Addition",
+          "Description": "Added the [customAppScopeAttributesDictionary](https://learn.microsoft.com/en-us/graph/api/resources/customAppScopeAttributesDictionary?view=graph-rest-beta) resource.",
+          "Target": "customAppScopeAttributesDictionary"
+        },
+        {
+          "Id": "657d78ca-114c-48ee-aba1-a0a5bc5a0d31",
+          "ApiChange": "Resource",
+          "ChangedApiName": "Dictionary",
+          "ChangeType": "Addition",
+          "Description": "Added the [Dictionary](https://learn.microsoft.com/en-us/graph/api/resources/Dictionary?view=graph-rest-beta) resource.",
+          "Target": "Dictionary"
+        },
+        {
+          "Id": "657d78ca-114c-48ee-aba1-a0a5bc5a0d31",
+          "ApiChange": "Resource",
+          "ChangedApiName": "customAppScope",
+          "ChangeType": "Addition",
+          "Description": "Added the [customAppScope](https://learn.microsoft.com/en-us/graph/api/resources/customAppScope?view=graph-rest-beta) resource.",
+          "Target": "customAppScope"
+        },
+        {
+          "Id": "657d78ca-114c-48ee-aba1-a0a5bc5a0d31",
+          "ApiChange": "Resource",
+          "ChangedApiName": "unifiedRbacApplicationMultiple",
+          "ChangeType": "Addition",
+          "Description": "Added the [unifiedRbacApplicationMultiple](https://learn.microsoft.com/en-us/graph/api/resources/unifiedRbacApplicationMultiple?view=graph-rest-beta) resource.",
+          "Target": "unifiedRbacApplicationMultiple"
+        }
+      ],
+      "Id": "657d78ca-114c-48ee-aba1-a0a5bc5a0d31",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-07-21T15:04:15.8012716Z",
+      "WorkloadArea": "Security",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "81de8e8a-4ac0-11ed-b878-0242ac120002",
           "ApiChange": "Resource",
           "ChangedApiName": "huntingQueryResults",
@@ -2757,6 +2799,214 @@
         "CreatedDateTime": "2025-05-21T03:30:26.4995892Z",
         "WorkloadArea": "Security",
         "SubArea": ""
-      }
+      },
+      {
+        "ChangeList": [
+          {
+            "Id": "623c159d-820f-4792-9f20-3be4c0d62293",
+            "ApiChange": "Relationship",
+            "ChangedApiName": "incidentTasks",
+            "ChangeType": "Addition",
+            "Description": "Added the **incidentTasks** relationship to the [security](https://learn.microsoft.com/en-us/graph/api/resources/security?view=graph-rest-beta) resource.",
+            "Target": "security"
+          },
+          {
+            "Id": "623c159d-820f-4792-9f20-3be4c0d62293",
+            "ApiChange": "Enumeration",
+            "ChangedApiName": "incidentTaskActionStatus",
+            "ChangeType": "Addition",
+            "Description": "Added the **incidentTaskActionStatus** enumeration type.",
+            "Target": "incidentTaskActionStatus"
+          },
+          {
+            "Id": "623c159d-820f-4792-9f20-3be4c0d62293",
+            "ApiChange": "Enumeration",
+            "ChangedApiName": "incidentTaskActionType",
+            "ChangeType": "Addition",
+            "Description": "Added the **incidentTaskActionType** enumeration type.",
+            "Target": "incidentTaskActionType"
+          },
+          {
+            "Id": "623c159d-820f-4792-9f20-3be4c0d62293",
+            "ApiChange": "Enumeration",
+            "ChangedApiName": "incidentTaskSource",
+            "ChangeType": "Addition",
+            "Description": "Added the **incidentTaskSource** enumeration type.",
+            "Target": "incidentTaskSource"
+          },
+          {
+            "Id": "623c159d-820f-4792-9f20-3be4c0d62293",
+            "ApiChange": "Enumeration",
+            "ChangedApiName": "incidentTaskStatus",
+            "ChangeType": "Addition",
+            "Description": "Added the **incidentTaskStatus** enumeration type.",
+            "Target": "incidentTaskStatus"
+          },
+          {
+            "Id": "623c159d-820f-4792-9f20-3be4c0d62293",
+            "ApiChange": "Resource",
+            "ChangedApiName": "incidentTaskResponseAction",
+            "ChangeType": "Addition",
+            "Description": "Added the [incidentTaskResponseAction](https://learn.microsoft.com/en-us/graph/api/resources/security-incidentTaskResponseAction?view=graph-rest-beta) resource.",
+            "Target": "incidentTaskResponseAction"
+          },
+          {
+            "Id": "623c159d-820f-4792-9f20-3be4c0d62293",
+            "ApiChange": "Property",
+            "ChangedApiName": "deviceId",
+            "ChangeType": "Addition",
+            "Description": "Added the **deviceId** property to the [stopAndQuarantineFileIncidentTaskResponseAction](https://learn.microsoft.com/en-us/graph/api/resources/security-stopAndQuarantineFileIncidentTaskResponseAction?view=graph-rest-beta) resource.",
+            "Target": "stopAndQuarantineFileIncidentTaskResponseAction"
+          },
+          {
+            "Id": "623c159d-820f-4792-9f20-3be4c0d62293",
+            "ApiChange": "Resource",
+            "ChangedApiName": "incidentTask",
+            "ChangeType": "Addition",
+            "Description": "Added the [incidentTask](https://learn.microsoft.com/en-us/graph/api/resources/security-incidentTask?view=graph-rest-beta) resource.",
+            "Target": "incidentTask"
+          },
+          {
+            "Id": "623c159d-820f-4792-9f20-3be4c0d62293",
+            "ApiChange": "Method",
+            "ChangedApiName": "executeResponseAction",
+            "ChangeType": "Addition",
+            "Description": "Added the [executeResponseAction](https://learn.microsoft.com/en-us/graph/api/security-incidentTask-executeResponseAction?view=graph-rest-beta) method to the [incidentTask](https://learn.microsoft.com/en-us/graph/api/resources/security-incidentTask?view=graph-rest-beta) resource.",
+            "Target": "incidentTask"
+          }
+        ],
+        "Id": "623c159d-820f-4792-9f20-3be4c0d62293",
+        "Cloud": "Prod",
+        "Version": "beta",
+        "CreatedDateTime": "2025-07-28T11:56:56.0000000Z",
+        "WorkloadArea": "Security",
+        "SubArea": ""
+      },
+    {
+      "ChangeList": [
+        {
+          "Id": "cb9c46b0-7289-49b5-a915-8489eed2ff1d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "resourceAccessEvent",
+          "ChangeType": "Addition",
+          "Description": "Added the [resourceAccessEvent](https://learn.microsoft.com/en-us/graph/api/resources/security-resourceAccessEvent?view=graph-rest-beta) resource.",
+          "Target": "resourceAccessEvent"
+        },
+        {
+          "Id": "cb9c46b0-7289-49b5-a915-8489eed2ff1d",
+          "ApiChange": "Property",
+          "ChangedApiName": "resourceAccessEvents",
+          "ChangeType": "Addition",
+          "Description": "Added the **resourceAccessEvents** property to the [userAccount](https://learn.microsoft.com/en-us/graph/api/resources/security-userAccount?view=graph-rest-beta) resource.",
+          "Target": "userAccount"
+        }
+      ],
+      "Id": "cb9c46b0-7289-49b5-a915-8489eed2ff1d",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-07-24T08:49:07.5852906Z",
+      "WorkloadArea": "Security",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "35d16a4d-386f-4037-b2d4-2bf4d3782d55",
+          "ApiChange": "Resource",
+          "ChangedApiName": "resourceAccessEvent",
+          "ChangeType": "Addition",
+          "Description": "Added the [resourceAccessEvent](https://learn.microsoft.com/en-us/graph/api/resources/security-resourceAccessEvent?view=graph-rest-1.0) resource.",
+          "Target": "resourceAccessEvent"
+        },
+        {
+          "Id": "35d16a4d-386f-4037-b2d4-2bf4d3782d55",
+          "ApiChange": "Property",
+          "ChangedApiName": "resourceAccessEvents",
+          "ChangeType": "Addition",
+          "Description": "Added the **resourceAccessEvents** property to the [userAccount](https://learn.microsoft.com/en-us/graph/api/resources/security-userAccount?view=graph-rest-1.0) resource.",
+          "Target": "userAccount"
+        }
+      ],
+      "Id": "35d16a4d-386f-4037-b2d4-2bf4d3782d55",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-07-24T08:49:07.5855472Z",
+      "WorkloadArea": "Security",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "073825ba-a2f4-4e27-b4c3-b5db3401ace2",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "action",
+          "ChangeType": "Addition",
+          "Description": "Added the **action** enumeration type.",
+          "Target": "action"
+        },
+        {
+          "Id": "073825ba-a2f4-4e27-b4c3-b5db3401ace2",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "identityProvider",
+          "ChangeType": "Addition",
+          "Description": "Added the **identityProvider** enumeration type.",
+          "Target": "identityProvider"
+        },
+        {
+          "Id": "073825ba-a2f4-4e27-b4c3-b5db3401ace2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "user",
+          "ChangeType": "Addition",
+          "Description": "Added the [user](https://learn.microsoft.com/en-us/graph/api/resources/security-user?view=graph-rest-beta) resource.",
+          "Target": "user"
+        },
+        {
+          "Id": "073825ba-a2f4-4e27-b4c3-b5db3401ace2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "account",
+          "ChangeType": "Addition",
+          "Description": "Added the [account](https://learn.microsoft.com/en-us/graph/api/resources/security-account?view=graph-rest-beta) resource.",
+          "Target": "account"
+        },
+        {
+          "Id": "073825ba-a2f4-4e27-b4c3-b5db3401ace2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "identityaccounts",
+          "ChangeType": "Addition",
+          "Description": "Added the [identityAccounts](https://learn.microsoft.com/en-us/graph/api/resources/security-identityaccounts?view=graph-rest-beta) resource.",
+          "Target": "identityaccounts"
+        },
+        {
+          "Id": "073825ba-a2f4-4e27-b4c3-b5db3401ace2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "invokeactionresult", 
+          "ChangeType": "Addition",
+          "Description": "Added the [invokeActionResult](https://learn.microsoft.com/en-us/graph/api/resources/security-invokeactionresult?view=graph-rest-beta) resource.",
+          "Target": "invokeactionresult"
+        },
+        {
+          "Id": "073825ba-a2f4-4e27-b4c3-b5db3401ace2",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "identityaccounts",
+          "ChangeType": "Addition",
+          "Description": "Added the **identityaccounts** relationship to the [identityContainer](https://learn.microsoft.com/en-us/graph/api/resources/security-identityContainer?view=graph-rest-beta) resource.",
+          "Target": "identityContainer"
+        },
+        {
+          "Id": "073825ba-a2f4-4e27-b4c3-b5db3401ace2",
+          "ApiChange": "Method",
+          "ChangedApiName": "invokeAction",
+          "ChangeType": "Addition",  
+          "Description": "Added the [invokeAction](https://learn.microsoft.com/en-us/graph/api/security-identityaccounts-invokeaction?view=graph-rest-beta) method to the [identityAccounts](https://learn.microsoft.com/en-us/graph/api/resources/security-identityaccounts?view=graph-rest-beta) resource.",
+          "Target": "sensor"
+        }
+      ],
+      "Id": "073825ba-a2f4-4e27-b4c3-b5db3401ace2",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-08-14T13:42:04.531087Z",
+      "WorkloadArea": "Security",
+      "SubArea": "Identities"
+    }
   ]
 }

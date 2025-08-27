@@ -22,6 +22,7 @@ request_body = SendActivityNotificationPostRequestBody(
 	preview_text = ItemBody(
 		content = "new announcemnet posted",
 	),
+	icon_id = "announcementCreated",
 	recipient = AadUserNotificationRecipient(
 		odata_type = "microsoft.graph.aadUserNotificationRecipient",
 		user_id = "jacob@contoso.com",
@@ -36,9 +37,6 @@ request_body = SendActivityNotificationPostRequestBody(
 			value = "23",
 		),
 	],
-	additional_data = {
-			"icon_id" : "announcementCreated",
-	}
 )
 
 await graph_client.teams.by_team_id('team-id').send_activity_notification.post(request_body)

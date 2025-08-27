@@ -68,7 +68,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 6648
+Content-Length: 5448
 
 {
   "value": {
@@ -155,61 +155,34 @@ Content-Length: 6648
       }
     ],
     "singleSignOnExtension": {
-      "@odata.type": "microsoft.graph.credentialSingleSignOnExtension",
+      "@odata.type": "microsoft.graph.redirectSingleSignOnExtension",
       "extensionIdentifier": "Extension Identifier value",
       "teamIdentifier": "Team Identifier value",
-      "domains": [
-        "Domains value"
-      ],
-      "realm": "Realm value",
       "configurations": [
         {
           "@odata.type": "microsoft.graph.keyStringValuePair",
           "key": "Key value",
           "value": "Value value"
         }
+      ],
+      "urlPrefixes": [
+        "Url Prefixes value"
       ]
     },
     "macOSSingleSignOnExtension": {
-      "@odata.type": "microsoft.graph.macOSKerberosSingleSignOnExtension",
-      "realm": "Realm value",
-      "domains": [
-        "Domains value"
+      "@odata.type": "microsoft.graph.macOSRedirectSingleSignOnExtension",
+      "extensionIdentifier": "Extension Identifier value",
+      "teamIdentifier": "Team Identifier value",
+      "configurations": [
+        {
+          "@odata.type": "microsoft.graph.keyStringValuePair",
+          "key": "Key value",
+          "value": "Value value"
+        }
       ],
-      "blockAutomaticLogin": true,
-      "cacheName": "Cache Name value",
-      "credentialBundleIdAccessControlList": [
-        "Credential Bundle Id Access Control List value"
-      ],
-      "domainRealms": [
-        "Domain Realms value"
-      ],
-      "isDefaultRealm": true,
-      "passwordBlockModification": true,
-      "passwordExpirationDays": 6,
-      "passwordExpirationNotificationDays": 2,
-      "userPrincipalName": "User Principal Name value",
-      "passwordRequireActiveDirectoryComplexity": true,
-      "passwordPreviousPasswordBlockCount": 2,
-      "passwordMinimumLength": 5,
-      "passwordMinimumAgeDays": 6,
-      "passwordRequirementsDescription": "Password Requirements Description value",
-      "requireUserPresence": true,
-      "activeDirectorySiteCode": "Active Directory Site Code value",
-      "passwordEnableLocalSync": true,
-      "blockActiveDirectorySiteAutoDiscovery": true,
-      "passwordChangeUrl": "https://example.com/passwordChangeUrl/",
-      "modeCredentialUsed": "Mode Credential Used value",
-      "usernameLabelCustom": "Username Label Custom value",
-      "userSetupDelayed": true,
-      "signInHelpText": "Sign In Help Text value",
-      "kerberosAppsInBundleIdACLIncluded": true,
-      "managedAppsInBundleIdACLIncluded": true,
-      "credentialsCacheMonitored": true,
-      "preferredKDCs": [
-        "Preferred KDCs value"
-      ],
-      "tlsForLDAPRequired": true
+      "urlPrefixes": [
+        "Url Prefixes value"
+      ]
     },
     "contentCachingEnabled": true,
     "contentCachingType": "userContentOnly",

@@ -270,24 +270,36 @@ items:
       href: ../../api/multivaluelegacyextendedproperty-get.md
 - name: Places
   items:
+  - name: Overview
+    href: ../../resources/places-api-overview.md
   - name: Place
     items:
     - name: Place
       href: ../../resources/place.md
-    - name: List places
+    - name: List
       href: ../../api/place-list.md
-    - name: Get place
+    - name: Create
+      href: ../../api/place-post.md
+    - name: Get
       href: ../../api/place-get.md
-    - name: Update place
+    - name: Update
       href: ../../api/place-update.md
+    - name: Delete
+      href: ../../api/place-delete.md
+    - name: Descendants
+      href: ../../api/place-descendants.md
+  - name: Building
+    href: ../../resources/building.md
+  - name: Floor
+    href: ../../resources/floor.md
+  - name: Section
+    href: ../../resources/section.md
+  - name: Desk
+    href: ../../resources/desk.md
   - name: Room
-    items:
-    - name: Room
-      href: ../../resources/room.md
-    - name: List places
-      href: ../../api/place-list.md
-    - name: Get place
-      href: ../../api/place-get.md
+    href: ../../resources/room.md
+  - name: Workspace
+    href: ../../resources/workspace.md
   - name: Room list
     items:
     - name: Room list
@@ -316,3 +328,19 @@ items:
         href: ../../api/workplacesensordevice-delete.md
       - name: Ingest telemetry
         href: ../../api/workplacesensordevice-ingesttelemetry.md
+  - name: Complex types
+    items:
+    - name: Assigned place mode
+      href: ../../resources/assignedplacemode.md
+    - name: Drop in place mode
+      href: ../../resources/dropinplacemode.md
+    - name: Mailbox details
+      href: ../../resources/mailboxdetails.md
+    - name: Offline place mode
+      href: ../../resources/offlineplacemode.md
+    - name: Place mode
+      href: ../../resources/placemode.md
+    - name: Reservable place mode
+      href: ../../resources/reservableplacemode.md
+    - name: Resource link
+      href: ../../resources/resourcelink.md

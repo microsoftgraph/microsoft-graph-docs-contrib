@@ -6,6 +6,7 @@ author: mecampos
 doc_type: conceptualPageType
 ms.subservice: search
 ms.date: 11/07/2024
+ms.topic: how-to
 ---
 <!---<author of this doc: rsamai>--->
 
@@ -182,7 +183,7 @@ A **semantic label** is a well-known tag published by Microsoft that you can ass
 
 You can assign semantic labels using the Graph API or from the **Assign property labels** page when using the SDK. Labels provide semantic meaning and allow your connector data to integrate seamlessly into Microsoft 365 experiences.
 
-For example, different project management tools (like JIRA, Azure DevOps, Asana) may use different terms for the user who created a work item—such as `owner`, `ownedBy`, or `assignedTo`. If your property serves a similar purpose, you can assign the `createdBy` semantic label. 
+For example, different project management tools (like JIRA, Azure DevOps, Asana) might use different terms for the user who created a work item—such as `owner`, `ownedBy`, or `assignedTo`. If your property serves a similar purpose, you can assign the `createdBy` semantic label. 
 
 You can assign semantic labels to your source properties using the graph API or from the **Assign property labels** page while using sdk. Labels provide semantic meaning and let you integrate your connector data into Microsoft 365 experiences.  
 
@@ -216,7 +217,7 @@ The `title` label is the most important. Assigning a property to this label enab
 Applying accurately mapped semantic labels improves the discoverability of your content through search. Microsoft recommends defining as many of the following labels as possible, listed in descending order of their impact on discovery:  
 **title**, **lastModifiedDateTime**, **lastModifiedBy**, **url**, **fileName**, and **fileExtension**.
 
-Ensure that your label mappings are accurate. Assigning a label to a property that contains large content may increase search latency and delay results.
+Ensure that your label mappings are accurate. Assigning a label to a property that contains large content might increase search latency and delay results.
 
 ### Rank hints 
 
@@ -343,7 +344,7 @@ Define clear, well-formed descriptions for all properties. A good description sh
 This section outlines the update capabilities of the [schema](/graph/api/resources/externalconnectors-schema) API.
 
 > [!NOTE]  
-> After updating your schema, we recommend reindexing items to align them with the latest schema. Without reingestion, item behavior may be inconsistent.
+> After updating your schema, we recommend reindexing items to align them with the latest schema. Without reingestion, item behavior might be inconsistent.
 
 ### Add a property
 

@@ -76,10 +76,6 @@ GET https://graph.microsoft.com/beta/education/reports/speakerAssignmentSubmissi
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-speakerassignmentsubmissions-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-speakerassignmentsubmissions-1-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-speakerassignmentsubmissions-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -94,6 +90,10 @@ GET https://graph.microsoft.com/beta/education/reports/speakerAssignmentSubmissi
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-speakerassignmentsubmissions-1-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-speakerassignmentsubmissions-1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -209,10 +209,6 @@ GET https://graph.microsoft.com/beta/education/reports/speakerAssignmentSubmissi
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-speakerassignmentsubmissions-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-speakerassignmentsubmissions-2-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-speakerassignmentsubmissions-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -227,6 +223,10 @@ GET https://graph.microsoft.com/beta/education/reports/speakerAssignmentSubmissi
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-speakerassignmentsubmissions-2-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-speakerassignmentsubmissions-2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

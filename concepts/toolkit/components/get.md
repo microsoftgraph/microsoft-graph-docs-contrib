@@ -4,6 +4,7 @@ description: "A Get component allows you to make any GET query from Microsoft Gr
 ms.localizationpriority: medium
 author: sebastienlevert
 ms.date: 11/07/2024
+ms.topic: article
 ---
 
 # Get component in Microsoft Graph Toolkit

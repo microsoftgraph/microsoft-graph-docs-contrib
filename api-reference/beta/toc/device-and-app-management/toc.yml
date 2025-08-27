@@ -128,6 +128,8 @@ items:
       href: ../../api/cloudpc-setreviewstatus.md
     - name: Retrieve review status
       href: ../../api/cloudpc-retrievereviewstatus.md
+    - name: Retrieve Cloud PC count by status
+      href: ../../api/cloudpc-retrievecloudpccountbystatus.md
     - name: List for user
       href: ../../api/user-list-cloudpcs.md
     - name: Get launch info
@@ -158,6 +160,24 @@ items:
       href: ../../api/cloudpcauditevent-get.md
     - name: Get audit activity types
       href: ../../api/cloudpcauditevent-getauditactivitytypes.md
+  - name: Cloud PC cloud app
+    items:
+    - name: Cloud PC cloud app
+      href: ../../resources/cloudpccloudapp.md
+    - name: List
+      href: ../../api/virtualendpoint-list-cloudapps.md
+    - name: Get
+      href: ../../api/cloudpccloudapp-get.md
+    - name: Update
+      href: ../../api/cloudpccloudapp-update.md
+    - name: Publish
+      href: ../../api/cloudpccloudapp-publish.md
+    - name: Unpublish
+      href: ../../api/cloudpccloudapp-unpublish.md
+    - name: Reset
+      href: ../../api/cloudpccloudapp-reset.md
+    - name: Retrieve discovered apps
+      href: ../../api/cloudpccloudapp-retrievediscoveredapps.md
   - name: Cloud PC cross cloud government organization mapping
     items:
     - name: Cloud PC cross cloud government organization mapping
@@ -384,6 +404,8 @@ items:
       href: ../../api/virtualendpoint-post-bulkactions.md
     - name: Retrieve tenant encryption setting
       href: ../../api/virtualendpoint-retrievetenantencryptionsetting.md
+    - name: List cloud apps
+      href: ../../api/virtualendpoint-list-cloudapps.md
   - name: Cloud PC bulk action
     items:
     - name: Cloud PC bulk action
@@ -419,6 +441,14 @@ items:
     items:
     - name: App scope
       href: ../../resources/appscope.md
+    - name: Cloud PC agent health check detail
+      href: ../../resources/cloudpcagenthealthcheckdetail.md
+    - name: Cloud PC agent health check status detail
+      href: ../../resources/cloudpcagenthealthcheckstatusdetail.md
+    - name: Cloud PC agent health check summary
+      href: ../../resources/cloudpcagenthealthchecksummary.md
+    - name: Cloud PC agent status detail
+      href: ../../resources/cloudpcagentstatusdetail.md
     - name: Cloud PC audit actor
       href: ../../resources/cloudpcauditactor.md
     - name: Cloud PC audit property
@@ -439,6 +469,8 @@ items:
       href: ../../resources/cloudpcbulkpoweroff.md
     - name: Cloud PC bulk power on
       href: ../../resources/cloudpcbulkpoweron.md
+    - name: Cloud PC bulk reinstall agent
+      href: ../../resources/cloudpcbulkreinstallagent.md
     - name: Cloud PC bulk remote action result
       href: ../../resources/cloudpcbulkremoteactionresult.md
     - name: Cloud PC bulk reprovision
@@ -453,6 +485,8 @@ items:
       href: ../../resources/cloudpcbulksetreviewstatus.md
     - name: Cloud PC bulk troubleshoot
       href: ../../resources/cloudpcbulktroubleshoot.md
+    - name: Cloud PC cloud app detail
+      href: ../../resources/cloudpccloudappdetail.md
     - name: Cloud PC connection setting
       href: ../../resources/cloudpcconnectionsetting.md
     - name: Cloud PC connectivity event
@@ -467,10 +501,14 @@ items:
       href: ../../resources/cloudpcdisasterrecoverymicrosofthostednetworksetting.md
     - name: Cloud PC disaster recovery network setting
       href: ../../resources/cloudpcdisasterrecoverynetworksetting.md
+    - name: Cloud PC discovered app
+      href: ../../resources/cloudpcdiscoveredapp.md
     - name: Cloud PC domain join configuration
       href: ../../resources/cloudpcdomainjoinconfiguration.md
     - name: Cloud PC forensic storage account
       href: ../../resources/cloudpcforensicstorageaccount.md
+    - name: Cloud PC frontline shared device detail
+      href: ../../resources/cloudpcfrontlineshareddevicedetail.md
     - name: Cloud PC health check item
       href: ../../resources/cloudpchealthcheckitem.md
     - name: Cloud PC launch info
@@ -509,6 +547,8 @@ items:
       href: ../../resources/cloudpcstatusdetail.md
     - name: Cloud PC status details
       href: ../../resources/cloudpcstatusdetails.md
+    - name: Cloud PC status summary
+      href: ../../resources/cloudpcstatussummary.md
     - name: Cloud PC subscription
       href: ../../resources/cloudpcsubscription.md
     - name: Cloud PC supported region restriction detail
@@ -4699,6 +4739,8 @@ items:
         href: ../../api/intune-raimportcerts-userpfxcertificate-create.md
       - name: Delete userPFXCertificate
         href: ../../api/intune-raimportcerts-userpfxcertificate-delete.md
+      - name: Update userPFXCertificate
+        href: ../../api/intune-raimportcerts-userpfxcertificate-update.md
     - name: VPN configuration
       items:
       - name: VPN configuration

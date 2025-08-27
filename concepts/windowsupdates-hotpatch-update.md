@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: windows-autopatch
 doc_type: conceptualPageType
 ms.date: 11/05/2024
+ms.topic: install-set-up-deploy
 ---
 
 # Deploy a hotpatch quality update using Windows Autopatch
@@ -351,4 +352,4 @@ HTTP/1.1 201 Created
 
 ## After a deployment
 
-After all devices assigned to a deployment audience have been initially offered the update, not all devices may have started or completed the update, due to factors like device connectivity. As long as the deployment still exists, it ensures that Windows Update offers the update to the assigned devices whenever they reconnect.
+After all devices assigned to a deployment audience have been initially offered the update, not all devices might have started or completed the update, due to factors like device connectivity. As long as the deployment still exists, it ensures that Windows Update offers the update to the assigned devices whenever they reconnect.

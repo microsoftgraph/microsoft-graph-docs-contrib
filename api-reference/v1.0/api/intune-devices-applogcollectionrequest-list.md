@@ -63,10 +63,6 @@ GET https://graph.microsoft.com/v1.0/deviceManagement/mobileAppTroubleshootingEv
 [!INCLUDE [sample-code](../includes/snippets/csharp/intune-devices-applogcollectionrequest-list-list-applogcollectionrequests-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/intune-devices-applogcollectionrequest-list-list-applogcollectionrequests-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/intune-devices-applogcollectionrequest-list-list-applogcollectionrequests-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

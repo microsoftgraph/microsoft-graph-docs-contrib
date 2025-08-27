@@ -81,10 +81,6 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-presence-multiple-users-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-presence-multiple-users-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-presence-multiple-users-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -129,19 +125,31 @@ Content-Type: application/json
 Content-Length: 1574
 
 {
-	"value": [{
-			"id": "fa8bf3dc-eca7-46b7-bad1-db199b62afc3",
-			"availability": "Busy",
-			"activity": "InAMeeting"
-		},
-		{
-			"id": "66825e03-7ef5-42da-9069-724602c31f6b",
-			"availability": "Away",
-			"activity": "Away"
-		}
-	]
+  "value": [
+    {
+      "id": "fa8bf3dc-eca7-46b7-bad1-db199b62afc3",
+      "availability": "Busy",
+      "activity": "InAMeeting",
+      "outOfOfficeSettings": {
+        "message": null,
+        "isOutOfOffice": false
+      }
+    },
+    {
+      "id": "66825e03-7ef5-42da-9069-724602c31f6b",
+      "availability": "Away",
+      "activity": "Away",
+      "outOfOfficeSettings": {
+        "message": null,
+        "isOutOfOffice": false
+      }
+    }
+  ]
 }
 ```
+
+## Related content
+[Get change notifications for presence updates in Microsoft Teams](/graph/changenotifications-for-presence).
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -156,6 +164,3 @@ Content-Length: 1574
   ]
 }
 -->
-
-## Related content
-- [Get change notifications for presence updates in Microsoft Teams](/graph/changenotifications-for-presence)

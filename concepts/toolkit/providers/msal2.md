@@ -4,6 +4,7 @@ description: "The MSAL 2 provider uses MSAL-browser to sign in users and acquire
 ms.localizationpriority: medium
 author: sebastienlevert
 ms.date: 11/07/2024
+ms.topic: article
 ---
 
 # MSAL2 Provider

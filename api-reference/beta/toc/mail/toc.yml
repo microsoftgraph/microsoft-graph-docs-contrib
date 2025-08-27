@@ -30,10 +30,6 @@ items:
     href: ../../api/message-delta.md
   - name: Forward message
     href: ../../api/message-forward.md
-  - name: Mark as junk
-    href: ../../api/message-markasjunk.md
-  - name: Mark as not junk
-    href: ../../api/message-markasnotjunk.md
   - name: Move message
     href: ../../api/message-move.md
   - name: Reply to message
@@ -48,6 +44,12 @@ items:
     href: ../../api/message-unsubscribe.md
   - name: Permanently delete
     href: ../../api/message-permanentdelete.md
+  - name: Report message
+    href: ../../api/message-reportmessage.md
+  - name: Mark as junk (deprecated)
+    href: ../../api/message-markasjunk.md
+  - name: Mark as not junk (deprecated)
+    href: ../../api/message-markasnotjunk.md
   - name: Attachments
     items:
     - name: List attachments

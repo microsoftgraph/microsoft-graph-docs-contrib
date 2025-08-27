@@ -536,6 +536,14 @@ items:
       href: ../../api/security-ediscoverycase-delete-tags.md
     - name: List tags as hierarchy
       href: ../../api/security-ediscoveryreviewtag-ashierarchy.md
+  - name: Complex types
+    items:
+    - name: eDiscovery add to review set operation
+      href: ../../resources/security-ediscoveryaddtoreviewsetoperation.md
+    - name: eDiscovery estimate operation
+      href: ../../resources/security-ediscoveryestimateoperation.md
+    - name: Report file metadata
+      href: ../../resources/security-ediscoveryreportfilemetadata.md
 - name: Identities
   items:
   - name: Health issue
