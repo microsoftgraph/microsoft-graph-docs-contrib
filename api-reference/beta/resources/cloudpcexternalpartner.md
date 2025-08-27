@@ -27,11 +27,11 @@ Represents an external partner on Cloud PC.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The unique id is for the Cloud PC external partner entity record. Automatically generated when created. Read-only. |
-|partnerId|String|The partner id is used to identify the external partner. When Cloud PC service are ready to integrate with a new external partner, Cloud PC service generates a GUID to represent this partner. Cloud PC service provides this partner id to partner, then partner can use this Id to call this Graph API and external partner API, Cloud PC service can identity the partner by this Id. Read-only.|
+|id|String|The unique identifier for the Cloud PC external partner entity record. Automatically generated when created. Read-only. |
+|partnerId|String|The partner identifier used to identify the external partner. When the Cloud PC service is ready to integrate with a new external partner, it generates a GUID to represent this partner. The Cloud PC service provides this partner ID to the partner, which can then use it to call this Microsoft Graph API and external partner APIs. Read-only.|
 |enableConnection|Boolean|Enable or disable the connection to an external partner. If `true`, an external partner API accepts incoming calls from external partners. Required. Supports `$filter` (`eq`).|
-|lastSyncDateTime|DateTimeOffset|Last data sync time for this external partner. The Timestamp type represents the date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 looks like this: '2014-01-01T00:00:00Z'.|
-|connectionStatus|[cloudPcExternalPartnerStatus](#cloudpcexternalpartnerstatus-values)|The status of external partner connection. Possible values include notAvailable, available, healthy, unhealthy. Default value is `available`. Read-only.|
+|lastSyncDateTime|DateTimeOffset|Last data sync time for this external partner. The timeStamp type represents date and time information in ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 looks like this: '2014-01-01T00:00:00Z'.|
+|connectionStatus|[cloudPcExternalPartnerStatus](#cloudpcexternalpartnerstatus-values)|The status of external partner connection. Possible values are `notAvailable`, `available`, `healthy`, `unhealthy`. Default value is `available`. Read-only.|
 |statusDetails|String|Status details message. Read-only.|
 
 ### cloudPcExternalPartnerStatus values 
