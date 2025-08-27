@@ -22,7 +22,7 @@ Inherits from [baseMapFeature](../resources/basemapfeature.md).
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List](../api/levelmap-list-units.md)|[unitMap](./unitmap.md) collection|Get a list of the [unitMap](../resources/unitmap.md) objects and their properties.|
-|[Create](../api/levelmap-post-units.md)|[unitMap](../resources/unitmap.md)|Create a new [unitMap](../resources/unitmap.md) object in IMDF format on a specified floor.|
+|[Create](../api/unitmap-update.md)|[unitMap](../resources/unitmap.md)|Create a new [unitMap](../resources/unitmap.md) object in IMDF format on a specified floor.|
 |[Update](../api/unitmap-update.md)|[unitMap](../resources/unitmap.md)|Update the properties of an [unitMap](../resources/unitmap.md) object in IMDF format on a specified floor.|
 |[Delete](../api/unitmap-delete.md)|None|Delete a [unitMap](../resources/unitmap.md) object.|
 

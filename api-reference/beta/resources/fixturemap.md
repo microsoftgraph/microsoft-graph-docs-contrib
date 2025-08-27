@@ -22,7 +22,7 @@ Inherits from [baseMapFeature](./basemapfeature.md).
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List](../api/levelmap-list-fixtures.md)|[fixtureMap](./fixturemap.md) collection|Get a list of the [fixtureMap](../resources/fixturemap.md) objects and their properties.|
-|[Create](../api/levelmap-post-fixtures.md)|[fixtureMap](./fixturemap.md)|Create a new [fixtureMap](../resources/fixturemap.md) object in IMDF format within a specified floor.|
+|[Create](../api/fixturemap-update.md)|[fixtureMap](./fixturemap.md)|Create a new [fixtureMap](../resources/fixturemap.md) object in IMDF format within a specified floor.|
 |[Update](../api/fixturemap-update.md)|[fixtureMap](./fixturemap.md)|Update the properties of a [fixtureMap](../resources/fixturemap.md) object in IMDF format.|
 |[Delete](../api/fixturemap-delete.md)|None|Delete a [fixture](../resources/fixturemap.md) on a specified floor.|
 
