@@ -105,7 +105,7 @@ One of the following permissions is required to subscribe to `/communications/ad
 
 <!-- { "blockType": "ignored" } -->
 ```http
-POST https://graph.microsoft.com/v1.0/subscriptions
+POST https://graph.microsoft.com/beta/subscriptions
 Content-Type: application/json
 
 {
@@ -157,7 +157,7 @@ One of the following permissions is required to subscribe to `communications/adh
 
 <!-- { "blockType": "ignored" } -->
 ```http
-POST https://graph.microsoft.com/v1.0/subscriptions
+POST https://graph.microsoft.com/beta/subscriptions
 Content-Type: application/json
 
 {
@@ -230,7 +230,7 @@ The following example shows how to subscribe to transcripts available for any ad
 
 <!-- { "blockType": "ignored" } -->
 ```http
-POST https://graph.microsoft.com/v1.0/subscriptions
+POST https://graph.microsoft.com/beta/subscriptions
 Content-Type: application/json
 
 {
@@ -409,7 +409,7 @@ The following example shows how to subscribe to recordings available at the tena
 
 <!-- { "blockType": "ignored" } -->
 ```http
-POST https://graph.microsoft.com/v1.0/subscriptions
+POST https://graph.microsoft.com/beta/subscriptions
 Content-Type: application/json
 
 {
@@ -467,7 +467,7 @@ One of the following permissions is required to subscribe to `users/{userId}/adh
 
 <!-- { "blockType": "ignored" } -->
 ```http
-POST https://graph.microsoft.com/v1.0/subscriptions
+POST https://graph.microsoft.com/beta/subscriptions
 Content-Type: application/json
 
 {
@@ -519,7 +519,7 @@ One of the following permissions is required to subscribe to `communications/adh
 
 <!-- { "blockType": "ignored" } -->
 ```http
-POST https://graph.microsoft.com/v1.0/subscriptions
+POST https://graph.microsoft.com/beta/subscriptions
 Content-Type: application/json
 
 {
