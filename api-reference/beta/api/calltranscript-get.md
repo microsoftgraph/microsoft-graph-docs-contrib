@@ -193,7 +193,7 @@ Content-type: application/json
 
 #### Request
 
-# [HTTP](#tab/http)
+# [HTTP](#tab/http3)
 <!-- {
   "blockType": "request",
   "name": "get_callTranscript_adhoc",
