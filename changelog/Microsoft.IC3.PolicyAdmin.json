@@ -12,14 +12,6 @@
         },
         {
           "Id": "371175e2-5a48-4494-83f3-88fde874ac7b",
-          "ApiChange": "Relationship",
-          "ChangedApiName": "userAssignments",
-          "ChangeType": "Addition",
-          "Description": "Added the **userAssignments** relationship to the [teamsPolicyAssignment](https://learn.microsoft.com/en-us/graph/api/resources/teamsAdministration-teamsPolicyAssignment?view=graph-rest-beta) resource.",
-          "Target": "teamsPolicyAssignment"
-        },
-        {
-          "Id": "371175e2-5a48-4494-83f3-88fde874ac7b",
           "ApiChange": "Resource",
           "ChangedApiName": "teamsPolicyUserAssignment",
           "ChangeType": "Addition",
