@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a [callRecording](../resources/callrecording.md) object associated with a scheduled [online meeting](../resources/onlinemeeting.md) and an ad hoc call. This API supports the retrieval of call recordings from private chat meetings and channel meetings. Private channel meetings are not supported.
+Get a [callRecording](../resources/callrecording.md) object associated with a scheduled [online meeting](../resources/onlinemeeting.md) and an ad hoc call. This API supports the retrieval of call recordings from private chat meetings, channel meetings, ad hoc calls, including PSTN, 1:1, and group calls. Private channel meetings are not supported.
 
 For a recording, this API returns the metadata of the single recording associated with the online meeting or an ad hoc call. For the content of a recording, this API returns the stream of bytes associated with the recording.
 
@@ -36,7 +36,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 |:---|:---|:---|
 |Delegated (work or school account)|**For online meetings**: OnlineMeetingRecording.Read.All <br><br> **For adhoc calls**: <br> CallRecording.Read.All |Not available.|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|**For online meetings**: <ul><li> OnlineMeetingRecording.Read.All <li> OnlineMeetingRecording.Read.Chat </ul> <br> **For adhoc calls**: <ul><li> CallRecordings.Read.All <li> CallRecordings.Read.Chat </ul>|Not available.|
+|Application|**For online meetings**: <ul><li> OnlineMeetingRecording.Read.All <li> OnlineMeetingRecording.Read.Chat </ul> <br> **For adhoc calls**: <ul><li> CallRecordings.Read.All </ul>|Not available.|
 
 > [!NOTE]
 >

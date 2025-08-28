@@ -19,7 +19,7 @@ This article describes scenarios for the **transcript** and **recording** resour
 
 ## Subscribe to transcripts available at the tenant-level
 
-To get change notifications for any transcript available for any online meeting or ad hoc call in a tenant, subscribe to `communications/onlineMeetings/getAllTranscripts` or `communications/adhocCalls/getAllTranscripts`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification. The notification for a transcript is sent only if the subscription happens before the transcription starts. This subscription supports scheduled [onlineMeetings](/graph/api/resources/onlinemeeting) and [adhocCalls](/graph/api/resources/adhoccall).
+To get change notifications for any transcript available for any online meeting in a tenant, subscribe to `communications/onlineMeetings/getAllTranscripts`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification. The notification for a transcript is sent only if the subscription happens before the transcription starts. This subscription supports scheduled [onlineMeetings](/graph/api/resources/onlinemeeting).
 
 > [!NOTE]
 > This subscription doesn't currently support private channel meetings.
@@ -33,14 +33,6 @@ One of the following permissions is required to subscribe to `communications/onl
 | Delegated (work or school account)     | Not supported.                              |
 | Delegated (personal Microsoft account) | Not supported.                              |
 | Application                            | OnlineMeetingTranscript.Read.All            |
-
-One of the following permissions is required to subscribe to `communications/adhocCalls/getAllTranscripts`.
-
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Not supported.                              |
-| Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | CallTranscripts.Read.All                    |
 
 To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -65,28 +57,9 @@ Content-Type: application/json
 }
 ```
 
-### Example
-
-The following example shows how to subscribe to **ad hoc call** transcripts available at the tenant level.
-
-<!-- { "blockType": "ignored" } -->
-```http
-POST https://graph.microsoft.com/beta/subscriptions
-Content-Type: application/json
-
-{
-  "changeType": "created",
-  "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
-  "resource": "communications/adhocCalls/getAllTranscripts",
-  "includeResourceData": true,
-  "encryptionCertificate": "{base64encodedCertificate}",
-  "encryptionCertificateId": "{customId}",
-  "expirationDateTime": "2023-03-20T11:00:00.0000000Z",
-  "clientState": "{secretClientState}"
-}
-```
-
 ## Subscribe to transcripts available for a particular online meeting
+
+### **For online meetings**
 
 To get change notifications for any transcript available for a particular online meeting, subscribe to `communications/onlineMeetings/{onlineMeetingId}/transcripts`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification. The notification for a transcript is sent only if the subscription happens before the transcription starts. This subscription supports scheduled [onlineMeetings](/graph/api/resources/onlinemeeting).
 
@@ -110,13 +83,13 @@ One of the following permissions is required to subscribe to `communications/onl
 
 ### **For ad hoc calls**
 
-To get change notifications for any transcript available for a particular ad hoc call, subscribe to `/communications/adhocCalls/{callId}/transcripts`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification. The notification for a transcript is sent only if the subscription happens before the transcription starts. This subscription supports unscheduled [adhoc calls](/graph/api/resources/adhoccall?view=graph-rest-beta).
+To get change notifications for any transcript available for a particular ad hoc call, subscribe to `/communications/adhocCalls/{callId}/transcripts`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification. The notification for a transcript is sent only if the subscription happens before the transcription starts. This subscription supports unscheduled [ad hoc calls](/graph/api/resources/adhoccall?view=graph-rest-beta).
 
 > [!NOTE]
 >
 > - This resource type is available only on the `/beta` endpoint.
 > - Enumeration is not available on ad hocCalls.
-> - Subscribe to the appropriately scoped 2 separate resources (one for OnlineMeetings and other for AdhocCalls). These will supply the URLs to use for fetching the data.
+> - Subscribe to the appropriately scoped 2 separate resources (one for online meetings and other for ad hoc calls). These will supply the URLs to use for fetching the data.
 
 #### Permissions
 
@@ -239,7 +212,7 @@ Content-Type: application/json
 
 ## Subscribe to transcripts available for ad hoc call where a specific user initiates transcription
 
-To get change notifications for any transcript available for any ad hoc call where a specific user initiates the transcription, subscribe to `users/{userId}/adhocCalls/getAllTranscripts`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification. The notification for a transcript is sent only if the subscription happens before the transcription starts. This subscription supports [adhocCalls](/graph/api/resources/adhoccall).
+To get change notifications for any transcript available for any ad hoc call where a specific user initiates the transcription, subscribe to `users/{userId}/adhocCalls/getAllTranscripts`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification. The notification for a transcript is sent only if the subscription happens before the transcription starts. This subscription supports [ad hoc calls](/graph/api/resources/adhoccall?view=graph-rest-beta).
 
 ### Permissions
 
@@ -482,7 +455,7 @@ To get change notifications for any recording available for a particular ad hoc 
 
 #### Permissions
 
-One of the following permissions is required to subscribe to `users/{userId}/ad hocCalls/getAllRecordings`. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to subscribe to `users/{userId}/adhocCalls/getAllRecordings`. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
@@ -636,7 +609,7 @@ The following example shows how to subscribe to recordings available for any ad 
 
 <!-- { "blockType": "ignored" } -->
 ```http
-POST https://graph.microsoft.com/v1.0/subscriptions
+POST https://graph.microsoft.com/beta/subscriptions
 Content-Type: application/json
 
 {

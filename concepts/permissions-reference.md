@@ -1023,17 +1023,6 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 ---
 
-### CallRecordings.Read.Chat
-
-| Category | Application | Delegated |
-|--|--|--|
-| Identifier | 22748df0-bd8c-4626-aad9-6dab421b33e4 | - |
-| DisplayText | Read all recordings of calls where the Teams application is installed. | - |
-| Description | Allows the teams-app to read all recordings of calls where the Teams-app is installed, without a signed-in user. | - |
-| AdminConsentRequired | No | - |
-
----
-
 ### CallTranscripts.Read.All
 
 | Category | Application | Delegated |
@@ -1042,17 +1031,6 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | DisplayText | Read all transcripts of calls. | Read all transcripts of calls. |
 | Description | Allows the app to read all transcripts of all calls, without a signed-in user. | Allows the app to read all transcripts of calls, on behalf of the signed-in user. |
 | AdminConsentRequired | Yes | Yes |
-
----
-
-### CallTranscripts.Read.Chat
-
-| Category | Application | Delegated |
-|--|--|--|
-| Identifier | 7990a5df-4c51-43ea-939c-3e8b18d6ddad | - |
-| DisplayText | Read all transcripts of calls where the Teams app is installed. | - |
-| Description | Allows the Teams app to read all transcripts of calls where the Teams-app is installed, without a signed-in user. | - |
-| AdminConsentRequired | No | - |
 
 ---
 

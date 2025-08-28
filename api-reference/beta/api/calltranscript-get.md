@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a callTranscript object associated with a scheduled [onlineMeeting](../resources/onlinemeeting.md) and an ad hoc call. These APIs support the retrieval of call transcripts from private chat meetings and channel meetings. Private channel meetings are not supported both for online meetings and ad hoc calls. 
+Retrieve a callTranscript object associated with a scheduled [onlineMeeting](../resources/onlinemeeting.md) and an ad hoc call. This APIs supports the retrieval of call transcripts from private chat meetings and channel meetings. Private channel meetings are not supported both for online meetings and ad hoc calls. 
 
 Retrieving the transcript returns the metadata of the single transcript associated with an online meeting or an ad hoc call. Retrieving the content of the transcript returns the stream of text associated with the transcript.
 
@@ -38,12 +38,11 @@ Choose the permission or permissions marked as least privileged for this API. Us
 | :---| :---| :--- |
 |Delegated (work or school account)| **For online meetings**: OnlineMeetingTranscript.Read.All <br> <br> **For adhoc calls**: <br> CallTranscripts.Read.All| Not available.|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|**For online meetings**:<br> <ul><li>OnlineMeetingTranscript.Read.All</li> <li> OnlineMeetingTranscript.Read.Chat</li></ul> <br>**For adhoc calls**: <br> <ul><li>CallTranscripts.Read.All</li> <li>CallTranscripts.Read.Chat</li></ul>| Not available.|
+|Application|**For online meetings**:<br> <ul><li>OnlineMeetingTranscript.Read.All</li> <li> OnlineMeetingTranscript.Read.Chat</li></ul> <br>**For adhoc calls**: <br> <ul><li>CallTranscripts.Read.All</li></ul>| Not available.|
 
 > [!NOTE]
 
-> * The application permissions `OnlineMeetingTranscript.Read.Chat` uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent). The `OnlineMeetingTranscript.Read.Chat` permission applies only to scheduled private chat meetings, not to channel meetings. 
-> * Resource-specific consent is not applicable for `CallTranscripts.Read.Chat`.  
+> * The application permissions `OnlineMeetingTranscript.Read.Chat` uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent). The `OnlineMeetingTranscript.Read.Chat` permission applies only to scheduled private chat meetings, not to channel meetings.  
 
 To use application permissions for this API, tenant administrators must create an application access policy and grant it to a user. It authorizes the app configured in the policy to fetch online meetings and/or online meeting artifacts on behalf of that user (with the user ID specified in the request path). For more information, see [Allow applications to access online meetings on behalf of a user](/graph/cloud-communication-online-meeting-application-access-policy).
 
@@ -190,7 +189,7 @@ Content-type: application/json
 }
 ```
 
-### Example 2: Get a call transcript for adhoc call
+### Example 2: Get a call transcript for ad hoc call
 
 #### Request
 
@@ -204,6 +203,7 @@ Content-type: application/json
 ``` http
 GET https://graph.microsoft.com/beta/users/ba321e0d-79ee-478d-8e28-85a19507f456/adhocCalls/MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ/transcripts/MSMjMCMjNzU3ODc2ZDYtOTcwMi00MDhkLWFkNDItOTE2ZDNmZjkwZGY4
 ```
+
 #### Response
 
 > **Note:** The response object shown here might be shortened for readability.
@@ -303,7 +303,7 @@ WEBVTT
 <v User Name>This is a transcript test.</v>
 ```
 
-### Example 4: Get a callTranscript content for an adhoc call
+### Example 4: Get a callTranscript content for an ad hoc call
 
 #### Request
 
@@ -459,7 +459,8 @@ WEBVTT
 00:00:16.246 --> 00:00:17.726
 {"startDateTime":"2023-03-08T08:22:30.0461639+00:00","endDateTime":"2023-03-08T08:22:31.5261639+00:00","speakerName":"User Name","spokenText":"This is a transcription test.","spokenLanguage":"en-us"}
 ```
-### Example 7: Get a callTranscript metadataContent for adhoc calls
+
+### Example 7: Get a callTranscript metadataContent for ad hoc calls
 
 #### Request
 
