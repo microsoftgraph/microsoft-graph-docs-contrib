@@ -31,7 +31,7 @@ For the list of API operations for managing this resource type, see the [authent
 |conditions|[authenticationConditions](../resources/authenticationconditions.md)|Required. Inherited from [authenticationEventListener](../resources/authenticationeventlistener.md).|
 |handler|[onPhoneMethodLoadStartHandler](../resources/onphonemethodloadstarthandler.md)|Required. Configuration for what to invoke if the event resolves to this listener. |
 |id|String|Required. Inherited from [authenticationEventListener](../resources/authenticationeventlistener.md).|
-|displayName|String|The display name of the fraud protection provider configuration. Inherited from [authenticationEventListener](../resources/authenticationeventlistener.md).|
+|displayName|String|The display name of the listener. Inherited from [authenticationEventListener](../resources/authenticationeventlistener.md).|
 |priority|Int32|Required. Inherited from [authenticationEventListener](../resources/authenticationeventlistener.md).|
 
 ## Relationships

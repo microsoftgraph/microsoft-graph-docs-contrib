@@ -14,7 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the fraudProtectionProvider objects and their properties.
+Get a list of the fraudProtectionProvider objects and their properties. The following derived types are supported:
+
+- [arkoseFraudProtectionProvider](../resources/arkoseFraudProtectionProvider.md)
 
 ## Permissions
 

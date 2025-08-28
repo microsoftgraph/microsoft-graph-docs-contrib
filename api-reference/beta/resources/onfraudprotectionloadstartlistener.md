@@ -21,19 +21,14 @@ Inherits from [authenticationEventListener](../resources/authenticationeventlist
 
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List](../api/onfraudprotectionloadstartlistener-list.md)|[onFraudProtectionLoadStartListener](../resources/onfraudprotectionloadstartlistener.md) collection|Get a list of the onFraudProtectionLoadStartListener objects and their properties.|
-|[Get](../api/onfraudprotectionloadstartlistener-get.md)|[onFraudProtectionLoadStartListener](../resources/onfraudprotectionloadstartlistener.md)|Read the properties and relationships of [onFraudProtectionLoadStartListener](../resources/onfraudprotectionloadstartlistener.md) object.|
-|[Update](../api/onfraudprotectionloadstartlistener-update.md)|[onFraudProtectionLoadStartListener](../resources/onfraudprotectionloadstartlistener.md)|Update the properties of an onFraudProtectionLoadStartListener object.|
-|[Delete](../api/onfraudprotectionloadstartlistener-delete.md)|None|Delete an onFraudProtectionLoadStartListener object.|
+ None.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |authenticationEventsFlowId|String|The identifier of the authentication events flow associated with this listener. Inherited from [authenticationEventListener](../resources/authenticationeventlistener.md).|
 |conditions|[authenticationConditions](../resources/authenticationconditions.md)|Defines the conditions under which this listener is triggered. Inherited from [authenticationEventListener](../resources/authenticationeventlistener.md).|
-|displayName|String|The display name of the fraud protection provider configuration. Inherited from [authenticationEventListener](../resources/authenticationeventlistener.md).|
+|displayName|String|The display name of the listener. Inherited from [authenticationEventListener](../resources/authenticationeventlistener.md).|
 |handler|[onFraudProtectionLoadStartHandler](../resources/onfraudprotectionloadstarthandler.md)| Configuration for what to invoke if the event resolves to this listener.|
 |id|String|The unique identifier of the listener. Inherited from [entity](../resources/entity.md). Inherits from [entity](../resources/entity.md)|
 |priority|Int32|Indicates the execution priority of the listener relative to other listeners. Between 0 (lower priority) and 1000 (higher priority). Inherited from [authenticationEventListener](../resources/authenticationeventlistener.md).|

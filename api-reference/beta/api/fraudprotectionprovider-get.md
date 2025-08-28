@@ -68,7 +68,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identity/riskprevention/fraudprotectionproviders
+GET https://graph.microsoft.com/beta/identity/riskprevention/fraudprotectionproviders/0bb2618b-51f7-4e83-bcb8-84e70f7cf84d
 ```
 
 
@@ -87,7 +87,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/riskPrevention/fraudProtectionProviders",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/riskPrevention/fraudProtectionProviders/$entity",
     "value": [
         {
             "@odata.type": "#microsoft.graph.arkoseFraudProtectionProvider",

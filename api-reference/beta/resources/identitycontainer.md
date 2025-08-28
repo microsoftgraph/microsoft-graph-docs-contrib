@@ -17,13 +17,8 @@ Namespace: microsoft.graph
 Represents the entry point to different features in [External Identities](/azure/active-directory/external-identities/) for both Microsoft Entra ID and Azure AD B2C tenants.
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[Get](../api/identitycontainer-get.md)|[identityContainer](../resources/identitycontainer.md)|Read the properties and relationships of [identityContainer](../resources/identitycontainer.md) object.|
-|[Update](../api/identitycontainer-update.md)|[identityContainer](../resources/identitycontainer.md)|Update the properties of an identityContainer object.|
-|[List riskPreventionContainer](../api/identitycontainer-list-riskprevention.md)|[riskPreventionContainer](../resources/riskpreventioncontainer.md) collection|Get a list of all riskPreventionContainer object.|
-|[Create riskPreventionContainer](../api/identitycontainer-post-riskprevention.md)|[riskPreventionContainer](../resources/riskpreventioncontainer.md)|Create a new riskPreventionContainer object.|
-
+ None.
+ 
 ## Properties
 
 None.
