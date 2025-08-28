@@ -134,6 +134,7 @@ Content-Type: application/json
         "disasterRecoveryType": "premium",
         "userInitiatedDisasterRecoveryAllowed": true
       },
+      "provisioningSourceType": null,
       "lastModifiedDateTime": "2021-02-01T10:29:57Z",
       "createdDateTime": "2021-02-01T10:29:57Z"
     }

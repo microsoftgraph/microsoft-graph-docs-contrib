@@ -250,7 +250,7 @@ Your application receives validation notifications whenever it creates a new sub
 ```
 
 ## Subscriptions for rich notifications with large payloads
-The maximum message size for Event Hubs is 1 MB. When you use [rich notifications](/graph/webhooks-with-resource-data?tabs=csharp), you might expect notifications that exceed this limit. To receive notifications larger than 1 MB through Event Hubs, you must also add a blob storage account to your subscription request.
+The maximum message size for Event Hubs is 1 MB. When you use [rich notifications](/graph/change-notifications-with-resource-data), you might expect notifications that exceed this limit. To receive notifications larger than 1 MB through Event Hubs, you must also add a blob storage account to your subscription request.
 
 ### Set up storage and create a subscription
 

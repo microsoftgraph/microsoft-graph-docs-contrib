@@ -11,6 +11,9 @@ ms.topic: article
 
 # Payment models and licensing requirements for Microsoft Teams APIs
 
+> [!IMPORTANT]
+> Starting August 25, 2025, the Teams APIs listed in this article are no longer metered, and no billing configuration is required to use these APIs. If your application is configured for billing, no action is required. This article is provided for reference as the final billing cycle for metered Microsoft Teams APIs concludes.
+
 This article describes the payment models and licensing requirements for Microsoft Teams APIs in Microsoft Graph. For a high-level description of metered APIs and services in Microsoft Graph, see [Overview of metered APIs and services in Microsoft Graph](metered-api-overview.md).
 
 Some APIs provide the option to choose a licensing and payment model via the `model` query parameter; others only support one model or don't support a licensing and payment model.

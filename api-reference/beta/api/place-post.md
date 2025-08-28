@@ -22,12 +22,10 @@ You can also use this method to create the following child object types: [buildi
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "place-post-permissions"
-}
--->
+<!-- { "blockType": "permissions", "name": "place_post" } -->
 [!INCLUDE [permissions-table](../includes/permissions/place-post-permissions.md)]
+
+>**Note**: Exchange Admin role is requied to create places.
 
 ## HTTP request
 
@@ -66,6 +64,7 @@ The following example shows how to create a new **building** object.
 
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_building"
@@ -79,6 +78,12 @@ Content-Type: application/json
   "displayName": "B001"
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-building-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
@@ -111,6 +116,7 @@ The following example shows how to create a new **floor** object.
 
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_floor"
@@ -125,6 +131,12 @@ Content-Type: application/json
   "parentId": "767a31a7-6987-41c9-b829-ab351b8aab53"
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-floor-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
@@ -159,6 +171,7 @@ The following example shows how to create a new **section** object.
 
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_section"
@@ -173,6 +186,12 @@ Content-Type: application/json
   "parentId": "46ef7aed-5d94-4fd4-ae03-b333bc7a6955"
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-section-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
@@ -207,6 +226,7 @@ The following example shows how to create a new **desk** object.
 
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_desk"
@@ -221,6 +241,12 @@ Content-Type: application/json
   "parentId": "1ad0f725-6885-49c5-9a47-3b22a1f9409d"
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-desk-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
@@ -259,6 +285,7 @@ The following example shows how to create a new **room** object.
 
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_room"
@@ -271,10 +298,15 @@ Content-Type: application/json
   "@odata.type": "microsoft.graph.room",
   "displayName": "Conf Room 4/3.3G11",
   "parentId": "46ef7aed-5d94-4fd4-ae03-b333bc7a6955",
-  "emailAddress": "confroom433G11@contoso.com",
   "bookingType": "standard"
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-room-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
@@ -297,7 +329,7 @@ Content-Type: application/json
   "displayName": "Conf Room 4/3.3G11",
   "parentId": "46ef7aed-5d94-4fd4-ae03-b333bc7a6955",
   "isWheelChairAccessible": false,
-  "emailAddress": "confroom433G11@contoso.com",
+  "emailAddress": "confroom433G115497308f1755150217899@contoso.com",
   "bookingType": "standard"
 }
 ```
@@ -310,6 +342,7 @@ The following example shows how to create a new **workspace** object.
 
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_workspace"
@@ -322,11 +355,15 @@ Content-Type: application/json
   "@odata.type": "microsoft.graph.workspace",
   "parentId": "f7de7265-e420-47b4-9d49-28d728716241",
   "displayName": "testSpace001",
-  "emailAddress": "frank@contoso.com",
-  "description": "test for workspace",
   "tags": ["test"]
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-workspace-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
@@ -344,16 +381,20 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.type": "microsoft.graph.workspace",
-  "id": "316ae189-e420-47b4-9d49-65c3cal16241",
-  "placeId": "316ae189-e420-47b4-9d49-65c3cal16241",
-  "parentId": "f7de7265-e420-47b4-9d49-28d728716241",
+  "@odata.type": "#microsoft.graph.workspace",
+  "id": "49c2fcfb-163a-4e00-a42b-0615d6789e72",
+  "placeId": "d90144aa-8cc4-4d49-97f2-9c365e38ed7e",
   "displayName": "testSpace001",
-  "phone": null,
-  "emailAddress": "frank@contoso.com",
-  "description": "test for workspace",
-  "isWheelChairAccessible": false,
-  "tags": []
+  "parentId": "f7de7265-e420-47b4-9d49-28d728716241",
+  "tags": [
+    "test"
+  ],
+  "emailAddress": "testSpace0015d9988631755150528582@contoso.com",
+  "nickname": "testSpace001",
+  "mode": {
+    "@odata.type": "#microsoft.graph.offlinePlaceMode",
+    "reason": "New"
+  }
 }
 ```
 

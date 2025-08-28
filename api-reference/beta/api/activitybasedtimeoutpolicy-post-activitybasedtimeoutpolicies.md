@@ -65,10 +65,8 @@ POST https://graph.microsoft.com/beta/policies/activityBasedTimeoutPolicies
 Content-type: application/json
 
 {
-  "definition": [
-    "definition-value"
-  ],
-  "displayName": "displayName-value",
+  "definition": ["{\"ActivityBasedTimeoutPolicy\":{\"Version\":1,\"ApplicationPolicies\":[{\"ApplicationId\":\"default\",\"WebSessionIdleTimeout\":\"00:05:00\"}]}}"],
+  "displayName": "activityBasedTimeoutPolicies test",
   "isOrganizationDefault": true
 }
 ```
@@ -120,12 +118,14 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-  "definition": [
-    "definition-value"
-  ],
-  "displayName": "displayName-value",
-  "isOrganizationDefault": true,
-  "id": "id-value"
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/activityBasedTimeoutPolicies/$entity",
+    "id": "cf70ac6c-8a1a-40cd-a523-a2b4a56de0df",
+    "deletedDateTime": null,
+    "definition": [
+        "{\"ActivityBasedTimeoutPolicy\":{\"Version\":1,\"ApplicationPolicies\":[{\"ApplicationId\":\"default\",\"WebSessionIdleTimeout\":\"00:05:00\"}]}}"
+    ],
+    "displayName": "activityBasedTimeoutPolicies test",
+    "isOrganizationDefault": true
 }
 ```
 

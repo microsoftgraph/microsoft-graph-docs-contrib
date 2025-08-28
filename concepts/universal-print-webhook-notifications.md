@@ -192,7 +192,7 @@ Microsoft Graph has a limit on the expiration time. For details, see [maximum ex
 
 ## Get or delete notification subscriptions
 
-Applications can [get](/graph/api/subscription-get) details of the subscription or [delete](/graph/api/subscription-delete) a subscription when required. For details, see [Use the Microsoft Graph API to get change notifications](/graph/api/resources/webhooks).
+Applications can [get](/graph/api/subscription-get) details of the subscription or [delete](/graph/api/subscription-delete) a subscription when required. For details, see [Use the Microsoft Graph API to get change notifications](/graph/api/resources/change-notifications-api-overview).
 
 
 ## FAQs

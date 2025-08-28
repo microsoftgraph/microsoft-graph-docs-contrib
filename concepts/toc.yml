@@ -239,7 +239,7 @@ items:
       href: toolkit/permissions.md
     - name: Upgrade to the latest version
       href: toolkit/upgrade.md
-  - name: Deploy with Bicep
+  - name: Deploy in IaC with templates
     href: /graph/templates?toc=/graph/toc.json
 - name: Services and features
   expanded: true

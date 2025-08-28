@@ -53,7 +53,11 @@ For a list of possible error responses, see [Backup Storage API error responses]
 
 ## Examples
 
-### Request
+### Example 1: Get standard protection policy properties
+
+The following example shows how to get the default properties of a protection policy.
+
+#### Request
 
 The following example shows a request.
 # [HTTP](#tab/http)
@@ -97,7 +101,7 @@ Authorization: Bearer <Access-Token>
 
 ---
 
-### Response
+#### Response
 
 The following example shows the response.
 <!-- {
@@ -111,45 +115,90 @@ HTTP/1.1 200 OK
 Content-Location: https://graph.microsoft.com/beta/solutions/backupRestore/ProtectionPolicies/845457dc-4bb2-4815-bef3-8628ebd1952e
 
 {
-   "@odata.context":"/solutions/backupRestore/$metadata#ProtectionPolicies/$entity",
-   "@odata.id":"/solutions/backupRestore/ProtectionPolicies(845457dc-4bb2-4815-bef3-8628ebd1952e)",
-   "@odata.type": "#microsoft.graph.exchangeProtectionPolicy",
-   "id":"845457dc-4bb2-4815-bef3-8628ebd1952e",
-   "displayName":"Exchange Protection",
-   "status":"updating",
-   "createdBy":{
-      "application":{
-         "id":"1fec8e78-bce4-4aaf-ab1b-5451cc387264",
-         "displayName":"Microsoft Enhanced Restore"
-      },
-      "user":{
-         "email":"ryan@contoso.com",
-         "id":"845457dc-4bb2-4815-bef3-8628ebd1952e",
-         "displayName":"Ryan"
-      }
-   },
-   "createdDateTime":"2015-06-19T12:01:03.45Z",
-   "lastModifiedBy":{
-      "application":{
-         "id":"1fec8e78-bce4-4aaf-ab1b-5451cc387264",
-         "displayName":"Microsoft Enhanced Restore"
-      },
-      "user":{
-         "email":"rian@contoso.com",
-         "id":"845457dc-4bb2-4815-bef3-8628ebd1952e",
-         "displayName":"Rian"
-      }
-   },
-   "lastModifiedDateTime":"2015-06-19T12:01:03.45Z",
-   "retentionSettings" : [
-      {
-          "interval": "R/PT10M",
-          "period": "P2W"
-      },
-      {
-          "interval": "R/P1W",
-          "period": "P1Y"
-      }
-   ]
+  "@odata.context": "/solutions/backupRestore/$metadata#ProtectionPolicies/$entity",
+  "@odata.id": "/solutions/backupRestore/ProtectionPolicies(845457dc-4bb2-4815-bef3-8628ebd1952e)",
+  "@odata.type": "#microsoft.graph.exchangeProtectionPolicy",
+  "id": "845457dc-4bb2-4815-bef3-8628ebd1952e",
+  "displayName": "Exchange Protection",
+  "status": "updating",
+  "createdBy": {
+    "application": {
+      "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
+      "displayName": "Microsoft Enhanced Restore"
+    },
+    "user": {
+      "email": "ryan@contoso.com",
+      "id": "845457dc-4bb2-4815-bef3-8628ebd1952e",
+      "displayName": "Ryan"
+    }
+  },
+  "createdDateTime": "2015-06-19T12:01:03.45Z",
+  "lastModifiedBy": {
+    "application": {
+      "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
+      "displayName": "Microsoft Enhanced Restore"
+    },
+    "user": {
+      "email": "rian@contoso.com",
+      "id": "845457dc-4bb2-4815-bef3-8628ebd1952e",
+      "displayName": "Rian"
+    }
+  },
+  "lastModifiedDateTime": "2015-06-19T12:01:03.45Z",
+  "retentionSettings": [
+    {
+      "interval": "R/PT10M",
+      "period": "P2W"
+    },
+    {
+      "interval": "R/P1W",
+      "period": "P1Y"
+    }
+  ],
+  "isEnabled": true
+}
+```
+
+### Example 2: Use $select to retrieve specific properties of a protection policy
+
+The following example shows how to retrieve specific properties of a protection policy using the `$select` OData query parameter. For example, to return only the **id**, **displayName**, **status**, and **protectionPolicyArtifactCount** properties, add the following query expression to the request URL: `$select=id,displayName,status,protectionPolicyArtifactCount`.
+
+#### Request
+The following example shows a request.
+<!-- {
+  "blockType": "request",
+  "name": "protectionpolicybase_get_selectAttributes"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/solutions/backupRestore/ProtectionPolicies/845457dc-4bb2-4815-bef3-8628ebd1952e?$select=id,displayName,status,protectionPolicyArtifactCount
+Authorization: Bearer <Access-Token>
+```
+
+#### Response
+The following example shows the response.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.exchangeProtectionPolicy"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Location: https://graph.microsoft.com/beta/solutions/backupRestore/ProtectionPolicies/845457dc-4bb2-4815-bef3-8628ebd1952e
+
+{
+  "@odata.context": "/solutions/backupRestore/$metadata#ProtectionPolicies/$entity",
+  "@odata.id": "/solutions/backupRestore/ProtectionPolicies(845457dc-4bb2-4815-bef3-8628ebd1952e)",
+  "@odata.type": "#microsoft.graph.exchangeProtectionPolicy",
+  "id": "845457dc-4bb2-4815-bef3-8628ebd1952e",
+  "displayName": "Exchange Protection",
+  "status": "updating",
+  "protectionPolicyArtifactCount": {
+    "total": 3,
+    "completed": 1,
+    "inProgress": 1,
+    "failed": 1
+  }
 }
 ```
