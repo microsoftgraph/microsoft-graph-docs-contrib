@@ -14,13 +14,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a callTranscript object associated with a scheduled [onlineMeeting](../resources/onlinemeeting.md) and an ad hoc call. This APIs supports the retrieval of call transcripts from private chat meetings and channel meetings. Private channel meetings are not supported both for online meetings and ad hoc calls. 
+Retrieve a callTranscript object associated with a scheduled [onlineMeeting](../resources/onlinemeeting.md) and an [ad hoc call](/graph/api/resources/adhoccall?view=graph-rest-beta&preserve-view=true). This APIs supports the retrieval of call transcripts from private chat meetings and channel meetings. Private channel meetings are not supported both for online meetings and ad hoc calls.
 
 Retrieving the transcript returns the metadata of the single transcript associated with an online meeting or an ad hoc call. Retrieving the content of the transcript returns the stream of text associated with the transcript.
 
 > [!NOTE]
 > For online meetings:
-
+>
 > * This is a metered API. For more information, see [payment models for meeting APIs](/graph/teams-licenses#payment-models-for-meeting-apis).
 > * This API doesn't support meetings created using the [create onlineMeeting API](/graph/api/application-post-onlinemeetings) that are not associated with an event on the user's calendar.
 > * This API might not return a call transcript if multiple meetings are scheduled under a single channel post thread.
