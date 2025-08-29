@@ -37,6 +37,30 @@ Microsoft To Do provides a new entity called _linked resource_, which you can us
 | Update a task | PATCH `https://graph.microsoft.com/v1.0/me/todo/lists/{todoTaskListId}/tasks/{todoTaskId}` |
 | Delete a task | DELETE `https://graph.microsoft.com/v1.0/me/todo/lists/{todoTaskListId}/tasks/{todoTaskId}` |
 
+## Note on Task Export
+ 
+Tasks can be exported using the PST download described in [Export Content Search results from the Microsoft Purview portal](https://learn.microsoft.com/en-us/purview/ediscovery-export-search-results). Once exported, the following table outlines the mapping between [To Do Graph API properties](https://learn.microsoft.com/en-us/graph/api/resources/todotask?view=graph-rest-1.0#properties) and the corresponding fields in the exported PST file, enabling accurate interpretation and integration of task data..
+ 
+|To Do Graph v1 Property|Property in PST|
+|:---|:---|
+|body | **Body**, if plain text<br>**BodyHtmlText**, if HTML<br>**BodyRtf**, if RTF |
+|bodyLastModifiedDateTime | **BodyLastModifiedTime** (named property – String `{6f305800-7b8b-41af-b73b-84de53a69d3d}` Name `BodyLastModifiedTime`) |
+|categories | **Categories** |
+|completedDateTime | **DateCompleted** |
+|createdDateTime | **CreationTime** |
+|dueDateTime | **DueDate** |
+|hasAttachments | **HasAttachments** |
+|id | **Id** |
+|importance | **Importance** |
+|isReminderOn | **IsReminderSet** |
+|lastModifiedDateTime | **LastModificationTime** |
+|recurrence | **RecurrencePattern**<br>**RecurrenceRange** |
+|reminderDateTime | **ReminderTime** |
+|startDateTime | **StartDate** |
+|status | **Status** |
+|title | **Subject** |
+
+
 ## API reference
 
 Looking for the API reference for this service?
