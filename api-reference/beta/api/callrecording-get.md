@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a [callRecording](../resources/callrecording.md) object associated with a scheduled [online meeting](../resources/onlinemeeting.md) and an [ad hoc call](/graph/api/resources/adhoccall?view=graph-rest-beta&preserve-view=true). This API supports the retrieval of call recordings from private chat meetings, channel meetings, ad hoc calls, including PSTN, 1:1, and group calls. Private channel meetings are not supported.
+Get a [callRecording](../resources/callrecording.md) object associated with a scheduled [online meeting](../resources/onlinemeeting.md) and an [ad hoc call](/graph/api/resources/adhoccall?view=graph-rest-beta). This API supports the retrieval of call recordings from private chat meetings, channel meetings, ad hoc calls, including PSTN, 1:1, and group calls. Private channel meetings are not supported.
 
 For a recording, this API returns the metadata of the single recording associated with the online meeting or an ad hoc call. For the content of a recording, this API returns the stream of bytes associated with the recording.
 
