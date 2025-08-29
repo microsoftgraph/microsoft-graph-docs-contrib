@@ -53,7 +53,7 @@ This resource supports the following:
 |status|taskStatus|Indicates the state or progress of the task. Possible values are: `notStarted`, `inProgress`, `completed`, `waitingOnOthers`, `deferred`.|
 |title|String|A brief description of the task.|
 
-Tasks can be exported using the PST download described in [Export Content Search results from the Microsoft Purview portal](https://learn.microsoft.com/en-us/purview/ediscovery-export-search-results). The mapping between To Do Graph API properties and the properties in the exported PST file can be referenced in [To Do API overview](https://learn.microsoft.com/en-us/graph/todo-concept-overview)
+Tasks can be exported using the PST download described in [Export Content Search results from the Microsoft Purview portal](https://learn.microsoft.com/en-us/purview/ediscovery-export-search-results). The mapping between todoTask properties and the properties in the exported PST file can be referenced in [To Do API overview](https://learn.microsoft.com/en-us/graph/todo-concept-overview)
 
 ## Relationships
 |Relationship|Type|Description|
