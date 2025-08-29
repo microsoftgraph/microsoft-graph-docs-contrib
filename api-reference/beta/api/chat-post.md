@@ -354,6 +354,9 @@ The async operation is initiated, and the response contains a Location header, w
 
 ### Example 4: Create a one-on-one chat with RSC-granted apps
 
+> [!Note]
+> This API supports both one-on-one and group chats, even though the documentation currently focuses on one-on-one scenarios. You can install apps during chat creation for either chat type.
+
 The following example shows how to create a one-on-one chat with installed apps that have resource-specific consent (RSC) permissions.
 
 #### Request
