@@ -233,6 +233,9 @@ Content-Type: application/json
 
 ### Example 3: Create a one-on-one chat with installed apps
 
+> [!Note]
+> This API supports both one-on-one and group chats, even though the documentation currently focuses on one-on-one scenarios. You can install apps during chat creation for either chat type.
+
 The following example shows how to create a one-on-one chat with installed apps.
 
 #### Request
@@ -316,6 +319,9 @@ Location: /chats('19:82fe7758-5bb3-4f0d-a43f-e555fd399c6f_bfb5bb25-3a8d-487d-982
 ```
 
 ### Example 4: Create a one-on-one chat with RSC-granted apps
+
+> [!Note]
+> This API supports both one-on-one and group chats, even though the documentation currently focuses on one-on-one scenarios. You can install apps during chat creation for either chat type.
 
 The following example shows how to create a one-on-one chat with installed apps that have resource-specific consent (RSC) permissions.
 
