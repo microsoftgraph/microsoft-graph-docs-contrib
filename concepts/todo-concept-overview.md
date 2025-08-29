@@ -39,7 +39,7 @@ Microsoft To Do provides a new entity called _linked resource_, which you can us
 
 ## Mapping To Do tasks to PST export fields
  
-Tasks can be exported using the PST download described in [Export content search results from the Microsoft Purview portal](https://learn.microsoft.com/purview/ediscovery-export-search-results). Once exported, the following table shows the mapping between [todoTask properties](https://learn.microsoft.com/graph/api/resources/todotask?view=graph-rest-1.0#properties) and the corresponding fields in the PST file.
+Tasks can be exported using the PST download described in [Export content search results from the Microsoft Purview portal](/purview/ediscovery-export-search-results). Once exported, the following table shows the mapping between [todoTask properties](/graph/api/resources/todotask?view=graph-rest-1.0#properties) and the corresponding fields in the PST file.
  
 |To Do Microsoft Graph v1 property|Property in PST|
 |:---|:---|
