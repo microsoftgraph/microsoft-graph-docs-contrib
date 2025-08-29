@@ -46,6 +46,8 @@ GET /sites/{siteId}/drive/items/{itemId}
 GET /sites/{siteId}/drive/root:/{item-path}
 GET /users/{userId}/drive/items/{itemId}
 GET /users/{userId}/drive/root:/{item-path}
+GET /users/{userPrincipalName}/drive/items/{item-id}
+GET /users/{userPrincipalName}/drive/root:/{item-path}
 ```
 
 ## Optional query parameters
