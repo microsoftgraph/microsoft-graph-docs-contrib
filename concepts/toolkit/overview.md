@@ -9,7 +9,10 @@ ms.topic: concept-article
 
 # Microsoft Graph Toolkit overview
 
-Microsoft Graph Toolkit is a collection of reusable, framework-agnostic components and authentication providers for accessing and working with Microsoft Graph. The components are fully functional right of out of the box, with built-in providers that authenticate with and fetch data from Microsoft Graph.
+[!CAUTION]
+The Microsoft Graph CLI (mgcli) is deprecated and will be retired on August 28th, 2026. Users should migrate to the Microsoft Graph PowerShell SDK or other Microsoft Graph SDKs. For more information, see the [Deprecation announcement](https://devblogs.microsoft.com/microsoft365dev/microsoft-graph-cli-retirement/).
+
+Microsoft Graph Toolkit is a collection of reusable, framework-agnostic components and authentication providers for accessing and working with Microsoft Graph. The components are fully functional right out of the box, with built-in providers that authenticate with and fetch data from Microsoft Graph.
 
 Microsoft Graph Toolkit makes it easy to use Microsoft Graph in your application. In the following example, a signed-in user and their calendar events are displayed with just two lines of code by using the [Login](./components/login.md) and [Agenda](./components/agenda.md) components.
 
