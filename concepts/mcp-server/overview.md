@@ -6,7 +6,7 @@ ms.author: ombongifaith
 ms.reviewr: Licantrop0
 ms.subservice: graph-mcp
 ms.topic: overview
-ms.date: 08/28/2025
+ms.date: 08/29/2025
 
 #customer intent: As a developer, I want to understand the Microsoft Graph MCP Server so that I can effectively integrate it into my AI agents and applications.
 
@@ -31,7 +31,7 @@ The following diagram shows what happens when you make a request through an MCP-
 
 Considering the query, "How many users are in my tenant?", these steps happen:
 
-1. **Input**: A user signed in to an AI client, or an autonomous agent, provides a query or command within the context window in natural language.
+1. **Input**: A user signed in to an AI client, or an autonomous agent, provides a query or command within the context window in natural language. Natural language in this context includes [any language supported in the latest version of Windows](https://support.microsoft.com/en-us/windows/language-packs-for-windows-a5094319-a92d-18de-5b53-1cfc697cfca8).
 - The AI client uses LLMs and the Microsoft Graph MCP Server endpoint `mcp.graph.microsoft.com`. The Microsoft Graph MCP Server configuration on the AI client lists the available tools. This setup makes the AI client both an MCP client and host.
 - The user enters a query in the LLM's context window. For example, "How many users are in my tenant?"
 
@@ -68,7 +68,7 @@ The Microsoft Graph MCP Server exposes the following tools that an AI agent can 
 
 ## Scope of coverage
 
-You can query all Microsoft Graph read-only APIs in public preview and general availability using natural language interactions. Invoking write operations isn't supported.
+You can query all Microsoft Graph read-only APIs in public preview and general availability using natural language interactions. Currently, invoking write operations isn't supported.
 
 ## License requirements
 
