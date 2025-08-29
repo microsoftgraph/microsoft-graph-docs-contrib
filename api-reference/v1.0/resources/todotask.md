@@ -53,28 +53,7 @@ This resource supports the following:
 |status|taskStatus|Indicates the state or progress of the task. Possible values are: `notStarted`, `inProgress`, `completed`, `waitingOnOthers`, `deferred`.|
 |title|String|A brief description of the task.|
 
-## Task Export Mapping
-Tasks can be exported using the PST download described in [Export Content Search results from the Microsoft Purview portal](https://learn.microsoft.com/en-us/purview/ediscovery-export-search-results). The following table describes the mapping between To Do Graph API properties and the properties in the exported PST file.
-
-|To Do Graph v1 Property|Property in PST|
-|:---|:---|
-|body | **Body**, if plain text<br>**BodyHtmlText**, if HTML<br>**BodyRtf**, if RTF |
-|bodyLastModifiedDateTime | **BodyLastModifiedTime** (named property – String `{6f305800-7b8b-41af-b73b-84de53a69d3d}` Name `BodyLastModifiedTime`) |
-|categories | **Categories** |
-|completedDateTime | **DateCompleted** |
-|createdDateTime | **CreationTime** |
-|dueDateTime | **DueDate** |
-|hasAttachments | **HasAttachments** |
-|id | **Id** |
-|importance | **Importance** |
-|isReminderOn | **IsReminderSet** |
-|lastModifiedDateTime | **LastModificationTime** |
-|recurrence | **RecurrencePattern**<br>**RecurrenceRange** |
-|reminderDateTime | **ReminderTime** |
-|startDateTime | **StartDate** |
-|status | **Status** |
-|title | **Subject** |
-
+Tasks can be exported using the PST download described in [Export Content Search results from the Microsoft Purview portal](https://learn.microsoft.com/en-us/purview/ediscovery-export-search-results). The mapping between To Do Graph API properties and the properties in the exported PST file can be referenced in [To Do API overview](https://learn.microsoft.com/en-us/graph/todo-concept-overview)
 
 ## Relationships
 |Relationship|Type|Description|
