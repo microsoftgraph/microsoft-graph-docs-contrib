@@ -43,8 +43,8 @@ Tasks can be exported using the PST download described in [Export content search
  
 |To Do Microsoft Graph v1 property|Property in PST|
 |:---|:---|
-|body | **Body**, if plain text<br>**BodyHtmlText**, if HTML<br>**BodyRtf**, if RTF. |
-|bodyLastModifiedDateTime | **BodyLastModifiedTime** (named property – String `{6f305800-7b8b-41af-b73b-84de53a69d3d}` Name `BodyLastModifiedTime`). |
+|body | **Body**, if plain text<br>**bodyHtmlText**, if HTML<br>**bodyRtf**, if RTF. |
+|bodyLastModifiedDateTime | **bodyLastModifiedTime** named property – String `{6f305800-7b8b-41af-b73b-84de53a69d3d}` name `BodyLastModifiedTime`). |
 |categories | **categories** |
 |completedDateTime | **dateCompleted** |
 |createdDateTime | **creationTime** |
