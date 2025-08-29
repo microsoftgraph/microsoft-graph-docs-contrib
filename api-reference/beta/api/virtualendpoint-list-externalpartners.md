@@ -1,6 +1,6 @@
 ---
-title: "List cloudPcExternalPartners"
-description: "Get a list of the cloudPcExternalPartner objects and their properties."
+title: "List externalPartners"
+description: "Get a list of cloudPcExternalPartner objects and their properties."
 author: "XunZhangSZ"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
@@ -8,7 +8,7 @@ doc_type: apiPageType
 ms.date: 08/22/2025
 ---
 
-# List cloudPcExternalPartners
+# List externalPartners
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

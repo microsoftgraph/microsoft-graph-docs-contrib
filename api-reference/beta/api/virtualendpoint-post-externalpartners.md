@@ -1,5 +1,5 @@
 ---
-title: "Create cloudPcExternalPartner"
+title: "Create externalPartner"
 description: "Create a new cloudPcExternalPartner object."
 author: "XunZhangSZ"
 ms.localizationpriority: medium
@@ -8,7 +8,7 @@ doc_type: apiPageType
 ms.date: 08/22/2025
 ---
 
-# Create cloudPcExternalPartner
+# Create externalPartner
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

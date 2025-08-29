@@ -202,7 +202,7 @@ items:
       href: ../../api/cloudpcdeviceimage-getsourceimages.md
     - name: Reupload
       href: ../../api/cloudpcdeviceimage-reupload.md
-  - name: Cloud PC external partner setting
+  - name: Cloud PC external partner setting (deprecated)
     items:
     - name: Cloud PC external partner setting
       href: ../../resources/cloudpcexternalpartnersetting.md
