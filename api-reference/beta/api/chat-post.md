@@ -271,6 +271,9 @@ Content-Type: application/json
 
 ### Example 3: Create a one-on-one chat with installed apps
 
+> [!Note]
+> This API supports both one-on-one and group chats, even though the documentation currently focuses on one-on-one scenarios. You can install apps during chat creation for either chat type.
+
 #### Request
 
 # [HTTP](#tab/http)
