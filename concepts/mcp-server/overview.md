@@ -27,6 +27,29 @@ This overview explains how Microsoft Graph MCP Server works, helping you get sta
 
 The following diagram shows what happens when you make a request through an MCP-enabled AI agent.
 
+```mermaid
+sequenceDiagram  
+    actor User  
+    participant Client  
+    participant MCPServer as MCP Server  
+
+    rect rgba(50, 100, 150, 0.25)  
+    note over Client,MCPServer: Tool Discovery Phase  
+    Client->>MCPServer: Request available tools  
+    MCPServer-->>Client: Return tool metadata  
+    Client->>Client: Parse and register tools  
+    Client-->>User: Tools are now available for use  
+    end  
+
+    rect rgba(50, 150, 50, 0.25)  
+    note over Client,MCPServer: Tool Usage Phase  
+    User->>Client: Provides prompt  
+    Client->>MCPServer: Invoke selected tool  
+    MCPServer-->>Client: Return tool result  
+    Client-->>User: Present tool output  
+    end  
+```
+
 ![MCP Server Workflow](../images/mcp-server-workflow.png)
 
 Considering the query, "How many users are in my tenant?", these steps happen:
