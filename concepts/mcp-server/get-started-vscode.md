@@ -6,7 +6,7 @@ ms.author: ombongifaith
 ms.reviewer: Licantrop0
 ms.service: graph-mcp
 ms.topic: get-started
-ms.date: 08/28/2025
+ms.date: 08/29/2025
 
 #customer intent: As a developer, I want to run the Microsoft Graph MCP Server in VS Code so that I can test its features in my development environment.
 ---
@@ -26,10 +26,10 @@ Before you begin, make sure you have:
 
 1. Select the following button to install the Microsoft Graph MCP Server extension for VS Code.
    
-[Icon](https://vscode.dev/redirect/mcp/install?name=MicrosoftGraph&config=%7B%22name%22%3A%22MicrosoftGraph%22%2C%22type%22%3A%22http%22%2C%22url%22%3A%22https%3A%2F%2Fmcp.graph.microsoft.com%22%7D)
+    [Icon](https://vscode.dev/redirect/mcp/install?name=MicrosoftGraph&config=%7B%22name%22%3A%22MicrosoftGraph%22%2C%22type%22%3A%22http%22%2C%22url%22%3A%22https%3A%2F%2Fmcp.graph.microsoft.com%22%7D)
 
-> [!NOTE]
-> Alternatively, install the extension manually by downloading it from the [VS Code marketplace](https://marketplace.visualstudio.com/items?itemName=ms-graph.vscode-graph-mcp-server), or search for and install **Microsoft Graph MCP Server** in the Extensions view of VS Code.
+    > [!NOTE]
+    > Alternatively, install the extension manually by downloading it from the [VS Code marketplace](https://marketplace.visualstudio.com/items?itemName=ms-graph.vscode-graph-mcp-server), or search for and install **Microsoft Graph MCP Server** in the Extensions view of VS Code.
 
 1. After you install the extension, open GitHub Copilot and switch to Agent mode in the context window.
 1. Select the **Configure Tools** icon to see the list of available tools. Check or search for **MCP Server: MicrosoftGraph**, and expand the menu to see the list of its available tools.
@@ -40,12 +40,8 @@ Before you begin, make sure you have:
 1. In the GitHub Copilot window, select the **Configure chat...** cog wheel at the top right > **MCP Servers**. The Extensions pane opens in VS Code and shows the list of installed MCP Servers, including `MicrosoftGraph`.
 1. Select the cog wheel for **MicrosoftGraph** > **Start Server**.
 
-> [!NOTE]
-> You can also start the MCP Server from the actions inline the *mcp.json* configuration file. For more information, see [Manage MCP servers](https://code.visualstudio.com/docs/copilot/customization/mcp-servers#_manage-mcp-servers).
-
-1. Start the MCP Server in one of the following ways:
-    - In GitHub Copilot Agent mode, select **Configure Tools** icon > select **MCP Server: MicrosoftGraph**. Select the cog wheel to the right of the **MCP Server: MicrosoftGraph** tool to open the *mcp.json* configuration file and run **Start**.
-    - In GitHub Copilot window, select the **Configure chat...** cog wheel at the top right > **MCP Servers**. The Extensions pane opens to the left of the VS Code window. From the list of installed MCP Servers, select the cog wheel for *MicrosoftGraph* and select **Start Server**.
+    > [!NOTE]
+    > You can also start the MCP Server from the actions inline the *mcp.json* configuration file. For more information, see [Manage MCP servers](https://code.visualstudio.com/docs/copilot/customization/mcp-servers#_manage-mcp-servers).
 
 ## Test the Microsoft Graph MCP Server
 
