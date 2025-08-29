@@ -24,7 +24,6 @@ This repository contains several types of files with different review requiremen
 ## General Review Guidelines
 - All files must be in lowercase; otherwise, the PR will be blocked from review and approval.
 - Include `Namespace: microsoft.graph*` immediately after the H1 title.
-- References to OData query parameters and supported operators should be formatted in Markdown code font, for example, `$filter`, `$filter` (`eq`), `$select`, `$expand`, `$top`, `$orderby`, `$search`
 
 ## API Reference Topics Review Guidelines
 
@@ -42,10 +41,16 @@ This repository contains several types of files with different review requiremen
 - Must start with the standard boilerplate text
 - Must have include link to a permissions table
 
-**HTTP Syntax:**
+**HTTP request:**
 - Relative URL instead of absolute URL. For example `/users` instead of `https://graph.microsoft.com/beta/users`
 - Preceded by the HTML comment `<!-- { "blockType": "ignored" } -->`
 - Use format `{type-id}` for placeholders where there are more than 1 ID in the URL
+
+**Optional query parameters**
+- References to OData query parameters and supported operators should be formatted in Markdown code font, for example, `$filter`, `$filter` (`eq`), `$select`, `$expand`, `$top`, `$orderby`, `$search`
+
+**Function parameters**
+- Description of the parameter must include whether the parameter is optional or required.
 
 **Request Headers:**
 - Include Authorization header by default
