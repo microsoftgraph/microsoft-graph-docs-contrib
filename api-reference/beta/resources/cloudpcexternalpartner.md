@@ -61,7 +61,7 @@ The following JSON representation shows the resource type.
   "@odata.type": "#microsoft.graph.cloudPcExternalPartner",
   "id": "String (identifier)",
   "partnerId": "String",
-  "enableConnection": "Boolean",  
+  "enableConnection": "Boolean",
   "lastSyncDateTime": "String (timestamp)",
   "connectionStatus": "String",
   "statusDetails": "String"
