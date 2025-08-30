@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a callTranscript object associated with a scheduled [onlineMeeting](../resources/onlinemeeting.md) and an [ad hoc call](/graph/api/resources/adhoccall?view=graph-rest-beta&preserve-view=true). This APIs supports the retrieval of call transcripts from private chat meetings and channel meetings. Private channel meetings are not supported both for online meetings and ad hoc calls.
+Retrieve a callTranscript object associated with a scheduled [onlineMeeting](../resources/onlinemeeting.md) and an [ad hoc call](/graph/api/resources/adhoccall?view=graph-rest-beta&preserve-view=true). This APIs supports the retrieval of call transcripts from private chat meetings and channel meetings, and ad hoc calls including PSTN, 1:1, and group calls. Private channel meetings are not supported both for online meetings and ad hoc calls.
 
 Retrieving the transcript returns the metadata of the single transcript associated with an online meeting or an ad hoc call. Retrieving the content of the transcript returns the stream of text associated with the transcript.
 
@@ -201,9 +201,9 @@ Content-type: application/json
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/users/ba321e0d-79ee-478d-8e28-85a19507f456/adhocCalls/MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ/transcripts/MSMjMCMjNzU3ODc2ZDYtOTcwMi00MDhkLWFkNDItOTE2ZDNmZjkwZGY4
-```
+GET https://graph.microsoft.com/beta/users/f2e8e111-3887-4936-87f8-639292c70d34/adhocCalls/5f3640e7-a59c-4bec-82ca-e66251f795b7/transcripts/MyMjMTk6NWFiOWQ2OGUxNDhlNDgyNThmYmMzOWYwOGUzOTkyN2NAdGhyZWFkLnYyIyM1ZjM2NDBlNy1hNTljLTRiZWMtODJjYS1lNjYyNTFmNzk1YjctMTc1NDg5MjIyMi1UcmFuc2NyaXB0VjIjIzA=
 
+```
 #### Response
 
 > **Note:** The response object shown here might be shortened for readability.
@@ -219,20 +219,19 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('ba321e0d-79ee-478d-8e28-85a19507f456')/adhoccalls('MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ')/transcripts/$entity",
+    "{@odata.context: "https://graph.microsoft.com/beta/$metadata#users('f2e8e111-3887-4936-87f8-639292c70d34')/adhocCalls('5f3640e7-a59c-4bec-82ca-e66251f795b7')/transcripts/$entity}
     "id": "MSMjMCMjNzU3ODc2ZDYtOTcwMi00MDhkLWFkNDItOTE2ZDNmZjkwZGY4",
-    "meetingId": "MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ",
-    "callId": "af630fe0-04d3-4559-8cf9-91fe45e36296",
-    "createdDateTime": "2021-09-17T06:09:24.8968037Z",
-    "endDateTime": "2021-09-17T06:27:25.2346000Z",
-    "contentCorrelationId": "bc842d7a-2f6e-4b18-a1c7-73ef91d5c8e3",
-    "transcriptContentUrl": "https://graph.microsoft.com/beta/$metadata#users('ba321e0d-79ee-478d-8e28-85a19507f456')/adhocCalls('MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ')/transcripts/('MSMjMCMjNzU3ODc2ZDYtOTcwMi00MDhkLWFkNDItOTE2ZDNmZjkwZGY4')/content",
+    "callId": "5f3640e7-a59c-4bec-82ca-e66251f795b7",
+    "createdDateTime": "2025-08-11T06:03:42.9757215Z",
+    "endDateTime": "2025-08-11T06:04:21.2551933Z",
+    "contentCorrelationId": "c316fb26-aed9-4476-8827-b5be74f74051-10002",
+    "transcriptContentUrl": "https://graph.microsoft.com/beta/users/f2e8e111-3887-4936-87f8-639292c70d34/adhocCalls/5f3640e7-a59c-4bec-82ca-e66251f795b7/transcripts/MyMjMTk6NWFiOWQ2OGUxNDhlNDgyNThmYmMzOWYwOGUzOTkyN2NAdGhyZWFkLnYyIyM1ZjM2NDBlNy1hNTljLTRiZWMtODJjYS1lNjYyNTFmNzk1YjctMTc1NDg5MjIyMi1UcmFuc2NyaXB0VjIjIzA=/content",
     "meetingOrganizer": {
         "application": null,
         "device": null,
-        "user": {
-            "@odata.type": "#Microsoft.Teams.GraphSvc.teamworkUserIdentity",
-            "id": "ba321e0d-79ee-478d-8e28-85a19507f456",
+        "user": {{@odata.type: '#microsoft.graph.teamworkUserIdentity', id: 'f2e8e111-3887-4936-87f8-639292c70d34', displayName: null, userIdentityType: 'aadUser', tenantId: '8393309d-9fb7-4cce-aafb-eedc8c5781e2'}
+            "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+            "id": "f2e8e111-3887-4936-87f8-639292c70d34",
             "displayName": null,
             "userIdentityType": "aadUser",
             "tenantId": "cd6cee19-2d76-4ee0-8f47-9ed12ee44331",
@@ -315,7 +314,7 @@ WEBVTT
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/users/ba321e0d-79ee-478d-8e28-85a19507f456/adhocCalls/MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ/transcripts/MSMjMCMjNzU3ODc2ZDYtOTcwMi00MDhkLWFkNDItOTE2ZDNmZjkwZGY4/content
+GET https://graph.microsoft.com/beta/users/f2e8e111-3887-4936-87f8-639292c70d34/adhocCalls/5f3640e7-a59c-4bec-82ca-e66251f795b7/transcripts/MyMjMTk6NWFiOWQ2OGUxNDhlNDgyNThmYmMzOWYwOGUzOTkyN2NAdGhyZWFkLnYyIyM1ZjM2NDBlNy1hNTljLTRiZWMtODJjYS1lNjYyNTFmNzk1YjctMTc1NDg5MjIyMi1UcmFuc2NyaXB0VjIjIzA=/content?$format=text/vtt
 ```
 
 #### Response
@@ -335,8 +334,11 @@ Content-type: text/vtt
 
 WEBVTT
 
-0:0:0.0 --> 0:0:5.320
-<v User Name>This is a transcript test.</v>
+00:00:03.663 --> 00:00:07.903
+<v MOD Administrator>Hello. Hello. Hello. Hello. Hello. Hello.</v>
+
+00:00:08.063 --> 00:00:08.103
+<v MOD Administrator>Oh.</v>
 ```
 
 ### Example 5: Get a callTranscript content specifying $format query param
@@ -472,7 +474,7 @@ WEBVTT
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/users/ba321e0d-79ee-478d-8e28-85a19507f456/adhoccalls/MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ/transcripts/MSMjMCMjNzU3ODc2ZDYtOTcwMi00MDhkLWFkNDItOTE2ZDNmZjkwZGY4/metadataContent
+GET https://graph.microsoft.com/beta/users/f2e8e111-3887-4936-87f8-639292c70d34/adhocCalls/5f3640e7-a59c-4bec-82ca-e66251f795b7/transcripts/MyMjMTk6NWFiOWQ2OGUxNDhlNDgyNThmYmMzOWYwOGUzOTkyN2NAdGhyZWFkLnYyIyM1ZjM2NDBlNy1hNTljLTRiZWMtODJjYS1lNjYyNTFmNzk1YjctMTc1NDg5MjIyMi1UcmFuc2NyaXB0VjIjIzA=/metadataContent
 ```
 
 #### Response
@@ -492,8 +494,11 @@ Content-type: text/vtt
 
 WEBVTT
 
-00:00:16.246 --> 00:00:17.726
-{"startDateTime":"2023-03-08T08:22:30.0461639+00:00","endDateTime":"2023-03-08T08:22:31.5261639+00:00","speakerName":"User Name","spokenText":"This is a transcription test.","spokenLanguage":"en-us"}
+00:00:03.663 --> 00:00:07.903
+{"startDateTime":"2025-08-11T06:03:46.6390101+00:00","endDateTime":"2025-08-11T06:03:50.8790101+00:00","speakerName":"MOD Administrator","spokenText":"Hello. Hello. Hello. Hello. Hello. Hello.","spokenLanguage":"en-us"}
+
+00:00:08.063 --> 00:00:08.103
+{"startDateTime":"2025-08-11T06:03:51.0390101+00:00","endDateTime":"2025-08-11T06:03:51.0790101+00:00","speakerName":"MOD Administrator","spokenText":"Oh.","spokenLanguage":"en-us"}
 ```
 
 ### Example 8: Get a callTranscript from a corresponding recording using contentCorrelationId

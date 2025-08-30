@@ -99,7 +99,7 @@ One of the following permissions is required to subscribe to `/communications/ad
 |:---------------------------------------|:--------------------------------------------|
 | Delegated (work or school account)     | CallTranscripts.Read.All            |
 | Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | CallTranscripts.Read.Chat |
+| Application                            | Not supported                          |
 
 #### Example 1: Subscribe to transcripts available for a particular online meeting using classic permissions
 

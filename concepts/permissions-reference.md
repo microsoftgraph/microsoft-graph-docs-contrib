@@ -1010,30 +1010,6 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 ---
 
-### CallRecordings.Read.All
-
-| Category | Application | Delegated |
-|--|--|--|
-| Identifier | ce8fb1f1-5e1f-44a0-b102-4ec28454d0dc | 63d31bd6-bcf5-40ca-8283-ba4130a66405 |
-| DisplayText | Read all recordings of calls. | Read all recordings of calls. |
-| Description | Allows the app to read call recordings for all calls and online meetings without a signed-in user. | Allows the app to read all recordings of calls, on your behalf. |
-| AdminConsentRequired | Yes | Yes |
-
-[!INCLUDE [CallRecords.Read.All](../includes/permissions-notes/callrecords.read.all.md)]
-
----
-
-### CallTranscripts.Read.All
-
-| Category | Application | Delegated |
-|--|--|--|
-| Identifier | 4cd61b6d-8692-40bf-9d90-7f38db5e5fce | fbace248-5d8e-441c-85ca-cc19221a69a2 |
-| DisplayText | Read all transcripts of calls. | Read all transcripts of calls. |
-| Description | Allows the app to read all transcripts of all calls, without a signed-in user. | Allows the app to read all transcripts of calls, on behalf of the signed-in user. |
-| AdminConsentRequired | Yes | Yes |
-
----
-
 ### Calls.AccessMedia.All
 
 | Category | Application | Delegated |
@@ -1086,17 +1062,6 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | DisplayText | Join group calls and meetings as a guest | - |
 | Description | Allows the app to anonymously join group calls and scheduled meetings in your organization, without a signed-in user.  The app will be joined as a guest to meetings in your organization. | - |
 | AdminConsentRequired | Yes | - |
-
----
-
-### CallTranscripts.Read.All
-
-| Category | Application | Delegated |
-|--|--|--|
-| Identifier | 4cd61b6d-8692-40bf-9d90-7f38db5e5fce | fbace248-5d8e-441c-85ca-cc19221a69a2 |
-| DisplayText | Read all call transcripts | Read all transcripts of calls.  |
-| Description | Allows the app to read call transcripts for all calls without a signed-in user. | Allows the app to read all transcripts of calls, on behalf of the signed-in user. |
-| AdminConsentRequired | Yes | Yes |
 
 ---
 
