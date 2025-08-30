@@ -113,6 +113,8 @@ If successful, this method returns a `200 OK` response code and a [callTranscrip
 
 ### Example 1: Get a call transcript for online meetings
 
+The following example shows how to get a single transcript of an online meeting.
+
 #### Request
 
 # [HTTP](#tab/http2)
@@ -190,6 +192,8 @@ Content-type: application/json
 ```
 
 ### Example 2: Get a call transcript for ad hoc call
+
+The following example shows how to get a single transcript of an ad hoc call.
 
 #### Request
 

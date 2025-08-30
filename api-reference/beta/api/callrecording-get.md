@@ -107,9 +107,9 @@ Don't supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a [callRecording](../resources/callrecording.md) object in the response body.
 
-## Examples for online meetings
+## Examples
 
-### Example 1: Get a callRecording
+### Example 1: Get a callRecording for an online meeting
 
 The following example shows how to get a single recording of an online meeting.
 
@@ -194,7 +194,60 @@ Content-type: application/json
 }
 ```
 
-### Example 2: Get callRecording content
+### Example 2: Get a callRecording for ad hoc call
+
+The following example shows how to get a single recording of an ad hoc call.
+
+#### Request
+
+# [HTTP](#tab/http3)
+<!-- {
+  "blockType": "request",
+  "name": "get_callRecording_adhoc",
+  "sampleKeys": ["ba321e0d-79ee-478d-8e28-85a19507f456", "MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ", "MSMjMCMjNzU3ODc2ZDYtOTcwMi00MDhkLWFkNDItOTE2ZDNmZjkwZGY4"]
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/users/f2e8e111-3887-4936-87f8-639292c70d34/adhocCalls/1c9ddbc9-82be-46b6-8edd-bf833fe33a03/recordings/VjMjIzE5OjVhYjlkNjhlMTQ4ZTQ4MjU4ZmJjMzlmMDhlMzk5MjdjQHRocmVhZC52MiMjMWM5ZGRiYzktODJiZS00NmI2LThlZGQtYmY4MzNmZTMzYTAzLTE3NTQ4OTU0MzctUmVjb3JkaW5nIyMw
+
+```
+#### Response
+
+> **Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.callRecording"
+}
+-->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "{@odata.context: "https://graph.microsoft.com/beta/$metadata#users('f2e8e111-3887-4936-87f8-639292c70d34')/adhocCalls('1c9ddbc9-82be-46b6-8edd-bf833fe33a03')/recordings/$entity}"
+    "id": "VjMjIzE5OjVhYjlkNjhlMTQ4ZTQ4MjU4ZmJjMzlmMDhlMzk5MjdjQHRocmVhZC52MiMjMWM5ZGRiYzktODJiZS00NmI2LThlZGQtYmY4MzNmZTMzYTAzLTE3NTQ4OTU0MzctUmVjb3JkaW5nIyMw",
+    "callId": "1c9ddbc9-82be-46b6-8edd-bf833fe33a03",
+    "createdDateTime": "2025-08-11T06:57:17.4065904Z",
+    "endDateTime": "2025-08-11T06:57:28.2265904Z",
+    "contentCorrelationId": "58cfc66a-710f-4be7-adc0-1ca5a28f2c0c-0",
+    "recordingContentUrl": "https://graph.microsoft.com/beta/users/f2e8e111-3887-4936-87f8-639292c70d34/adhocCalls/1c9ddbc9-82be-46b6-8edd-bf833fe33a03/recordings/VjMjIzE5OjVhYjlkNjhlMTQ4ZTQ4MjU4ZmJjMzlmMDhlMzk5MjdjQHRocmVhZC52MiMjMWM5ZGRiYzktODJiZS00NmI2LThlZGQtYmY4MzNmZTMzYTAzLTE3NTQ4OTU0MzctUmVjb3JkaW5nIyMw/content",
+    "meetingOrganizer": {
+        "application": null,
+        "device": null,
+        "user": {
+            "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+            "id": "f2e8e111-3887-4936-87f8-639292c70d34",
+            "displayName": null,
+            "userIdentityType": "aadUser",
+            "tenantId": "8393309d-9fb7-4cce-aafb-eedc8c5781e2"
+        }
+    }
+}
+```
+
+### Example 3: Get callRecording content for an online meeting
 
 The following example shows how to get the content of a single recording of an online meeting.
 
@@ -257,7 +310,40 @@ Content-Type: video/mp4
 <bytes of a recording>
 ```
 
-### Example 3: Get a callRecording for an online meeting from a corresponding transcript using contentCorrelationId
+### Example 4: Get a callRecording content for an ad hoc call
+
+#### Request
+
+# [HTTP](#tab/http-content1)
+<!-- {
+  "blockType": "request",
+  "name": "get_callRecording_content_adhoc",
+  "sampleKeys": ["ba321e0d-79ee-478d-8e28-85a19507f456", "MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ", "MSMjMCMjNzU3ODc2ZDYtOTcwMi00MDhkLWFkNDItOTE2ZDNmZjkwZGY4"]
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/users/f2e8e111-3887-4936-87f8-639292c70d34/adhocCalls/1c9ddbc9-82be-46b6-8edd-bf833fe33a03/recordings/VjMjIzE5OjVhYjlkNjhlMTQ4ZTQ4MjU4ZmJjMzlmMDhlMzk5MjdjQHRocmVhZC52MiMjMWM5ZGRiYzktODJiZS00NmI2LThlZGQtYmY4MzNmZTMzYTAzLTE3NTQ4OTU0MzctUmVjb3JkaW5nIyMw/content
+```
+
+#### Response
+
+Response contains bytes for the recording in the body. `content-type` header specifies type of the recording content. Negative offsets indicate that the recording began while the conversation was ongoing.
+
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "stream"
+}
+-->
+```http
+HTTP/1.1 200 OK
+Content-type: text/vtt
+
+'"\\u0000\\u0000\\u0000\\u0018ftypisom\\u0000\\u0000\\u0002\\u0000isomiso2\\u0000\\u0000\\u000e moov\\u0000\\u0000\\u0000lmvhd\\u0000\\u0000\\u0000\\u0000 D  D \\u0000\\u0000\\u0003 \\u0000\\u0000* \\u0000\\u0001\\u0000\\u0000\\u0001\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0001\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0001\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000@\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0003\\u0000\\u0000\\u0007 trak\\u0000\\u0000\\u0000\\\\tkhd\\u0000\\u0000\\u0000\\u0007 D  D \\u0000\\u0000\\u0000\\u0002\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000* \\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0001\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0001\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000@\\u0000\\u0000\\u0000\\u0007 \\u0000\\u0000\\u00048\\u0000\\u0000\\u0000\\u0000\\u00079mdia\\u0000\\u0000\\u0000 mdhd\\u0000\\u0000\\u0000\\u0000 D  D \\u0000\\u0000\'\\u0010\\u0000\\u0001 \\u0000\\u0015 \\u0000\\u0000\\u0000\\u0000\\u0000!hdlr\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000vide\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0006 minf\\u0000\\u0000\\u0000\\u0014vmhd\\u0000\\u0000\\u0000\\u0001\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000$dinf\\u0000\\u0000\\u0000\\u001cdref\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0001\\u0000\\u0000\\u0000\\furl \\u0000\\u0000\\u0000\\u0001\\u0000\\u0000\\u0006 stbl\\u0000\\u0000\\u0000 stsd\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0001\\u0000\\u0000\\u0000 avc1\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0001\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0007 \\u00048\\u0000H\\u0000\\u0000\\u0000H\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0001\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0018  \\u0000\\u0000\\u0000.avcC\\u0001B (  \\u0000\\u0017gB ( \\u0001 \\b  \\u0010\\u0000\\u0000\\u0003\\u0000\\u0010\\u0000\\u0004 \\u0000 *\\u0001\\u0000\\u0004h < \\u0000\\u0000\\u0000 stts\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0002\\u0000\\u0000\\u0000 \\u0000\\u0000\\u0002q\\u0000\\u0000\\u0000\\u0001\\u0000\\u0000\\u00002\\u0000\\u0000\\u0000 stsc\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0011\\u0000\\u0000\\u0000\\u0001\\u0000\\u0000\\u0000\\u0007\\u0000\\u0000\\u0000\\u0001\\u0000\\u0000\\u0000\\u0002\\u0000\\u0000\\u0000\\u0001\\u0000\\u0000\\u0000\\u0001\\u0000\\u0000\\u0000\\u0010\\u0000\\u0000\\u0000\\u0002\\u0000\\u0000\\u0000\\u0001\\u0000\\u0000\\u0000\\u0011\\u0000\\u0000\\u0000\\u0001\\u0000\\u0000\\u0000\\u0001\\u0000\\u0000\\u0000\\u0014\\u0000\\u0000\\u0000\\u0002\\u0000\\u0000\\u0000\\u0001\\u0000\\u0000\\u0000\\u0015\\u0000\\u0000\\u0000\\u0001\\u0000\\u0000\\u0000\\u0001\\u0000\\u0000\\u0000\\u0018\\u0000\\u0000\\u0000\\u0002\\u0000\\u0000\\u0000\\u0001\\u0000\\u0000\\u0000\\u0019\\u0000\\u0000\\u0000\\u0001\\u0000\\u0000\\u0000\\u0001\\u0000\\u0000\\u0000;\\u0000\\u0000\\u0000\\u0002\\u0000
+```
+
+### Example 5: Get a callRecording for an online meeting from a corresponding transcript using contentCorrelationId
 
 The following example shows how to get a single recording of an online meeting corresponding to a transcript using the **contentCorrelationId** property.
 
