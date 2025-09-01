@@ -36,7 +36,7 @@ GET /drives/{drive-id}/items/{item-id}/children
 GET /groups/{group-id}/drive/items/{item-id}/children
 GET /me/drive/items/{item-id}/children
 GET /sites/{site-id}/drive/items/{item-id}/children
-GET /users/{user-id}/drive/items/{item-id}/children
+GET /users/{user-id | userPrincipalName}/drive/items/{item-id}/children
 ```
 
 ## Optional query parameters
