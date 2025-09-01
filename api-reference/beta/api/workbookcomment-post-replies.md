@@ -97,7 +97,7 @@ Content-type: application/json
 
 The following example shows a request to add a reply of mention type.
 
-# [HTTP](#tab/http)
+# [HTTP]
 
 ```http
 POST https://graph.microsoft.com/beta/drive/items/{id}/workbook/comments/{id}/replies

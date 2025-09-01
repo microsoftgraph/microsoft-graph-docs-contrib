@@ -52,7 +52,7 @@ If successful, this method returns a `201 Created` response code and a new [work
 
 The following example shows a request to add a comment of plain type.
 
-# [HTTP](#tab/http)
+# [HTTP]
 <!-- {
   "blockType": "request",
   "name": "create_workbookcomment_from_workbook"
@@ -72,7 +72,7 @@ Content-type: application/json
 
 The following example shows a request to add a comment of mention type.
 
-# [HTTP](#tab/http)
+# [HTTP]
 
 ```http
 POST https://graph.microsoft.com/beta/drive/items/{id}/workbook/comments

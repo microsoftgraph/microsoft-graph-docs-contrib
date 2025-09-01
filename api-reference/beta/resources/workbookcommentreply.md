@@ -27,11 +27,11 @@ Represents a reply to an excel comment.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|content|String|The content of the reply which is displayed to end-users.|
-|contentType|String|The content type for the reply. The value is "plain" or "mention".|
+|content|String|The content of the reply, which is displayed to end-users.|
+|contentType|String|The content type for the reply. The value is `plain` or `mention`.|
 |id|String|The unique identifier for the reply. Read-only.|
-|richContent|String|The rich content of the reply (e.g., reply content with mentions, the first mentioned entity has an ID attribute of 0, and the second mentioned entity has an ID attribute of 1). When contentType is "plain", this is empty. Read-only.|
-|mentions|[CommentMention](workbookcommentmention.md) collection|An array containing all the people mentioned within the reply. When contentType is "plain", this is an empty array. Read-only.|
+|richContent|String|The rich content of the reply (for example, reply content with mentions, the first mentioned entity has an ID attribute of 0, and the second mentioned entity has an ID attribute of 1). When contentType is `plain`, this value is empty. Read-only.|
+|mentions|[WorkbookCommentMention](workbookcommentmention.md) collection|An array containing all the people mentioned within the reply. When contentType is `plain`, this value is an empty array. Read-only.|
 
 ## Relationships
 
