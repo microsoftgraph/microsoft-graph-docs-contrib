@@ -9,6 +9,9 @@ ms.topic: article
 
 # Microsoft Graph Toolkit in SharePoint Framework solutions
 
+[!CAUTION]
+The Microsoft Graph CLI (mgcli) is deprecated and will be retired on August 28th, 2026. Users should migrate to the Microsoft Graph PowerShell SDK or other Microsoft Graph SDKs. For more information, see the [Deprecation announcement](https://devblogs.microsoft.com/microsoft365dev/microsoft-graph-cli-retirement/).
+
 Use Microsoft Graph Toolkit in your SharePoint Framework solutions.
 
 > [!IMPORTANT]
