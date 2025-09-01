@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a callTranscript object associated with a scheduled [onlineMeeting](../resources/onlinemeeting.md) and an [ad hoc call](/graph/api/resources/adhoccall?view=graph-rest-beta&preserve-view=true). This APIs supports the retrieval of call transcripts from private chat meetings and channel meetings, and ad hoc calls including PSTN, 1:1, and group calls. Private channel meetings are not supported both for online meetings and ad hoc calls.
+Retrieve a callTranscript object associated with a scheduled [onlineMeeting](../resources/onlinemeeting.md) and an [ad hoc call](/graph/api/resources/adhoccall?view=graph-rest-beta&preserve-view=true). This APIs supports the retrieval of call transcripts from private chat meetings and channel meetings, and ad hoc calls including PSTN, 1:1, and group calls. Private channel meetings are not supported. 
 
 Retrieving the transcript returns the metadata of the single transcript associated with an online meeting or an ad hoc call. Retrieving the content of the transcript returns the stream of text associated with the transcript.
 
@@ -208,6 +208,7 @@ The following example shows how to get a single transcript of an ad hoc call.
 GET https://graph.microsoft.com/beta/users/f2e8e111-3887-4936-87f8-639292c70d34/adhocCalls/5f3640e7-a59c-4bec-82ca-e66251f795b7/transcripts/MyMjMTk6NWFiOWQ2OGUxNDhlNDgyNThmYmMzOWYwOGUzOTkyN2NAdGhyZWFkLnYyIyM1ZjM2NDBlNy1hNTljLTRiZWMtODJjYS1lNjYyNTFmNzk1YjctMTc1NDg5MjIyMi1UcmFuc2NyaXB0VjIjIzA=
 
 ```
+
 #### Response
 
 > **Note:** The response object shown here might be shortened for readability.

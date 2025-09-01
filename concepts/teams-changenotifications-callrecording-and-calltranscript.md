@@ -740,11 +740,11 @@ For notifications with resource data, the payload looks like the following. This
       "changeType": "created",
       "clientState": "<<--SpecifiedClientState-->>",
       "subscriptionExpirationDateTime": "2023-09-17T08:13:26.3265566+00:00",
-      "resource": "users/{organizer-id}/adhoccalls('Mso...')/transcripts('MSM...')",
+      "resource": "users/{organizer-id}/adhoccalls(GUID)/transcripts('MSM...')",
       "resourceData": {
         "id": "MSM...",
         "@odata.type": "#Microsoft.Graph.callTranscript",
-        "@odata.id": "users/{organizer-id}/adhoccalls('Mso...')/transcripts('MSM...')"
+        "@odata.id": "users/{organizer-id}/adhoccalls(GUID)/transcripts('MSM...')"
       },
       "encryptedContent": {
         "data": "<<--EncryptedContent-->>",
@@ -797,9 +797,9 @@ The decrypted notification payload looks like the following. The payload conform
 ```json
 {
   "id": "MSM...",
-  "meetingId": "MSo...",
+  "meetingId": null,
   "callId": "af630fe0-04d3-4559-8cf9-91fe45e36296",
-  "transcriptContentUrl": "users/{organizer-id}/adhoccalls/MSo.../transcripts/MSM.../content",
+  "transcriptContentUrl": "users/{organizer-id}/adhoccalls/GUID/transcripts/MSM.../content",
   "createdDateTime": null,
   "endDateTime": "2023-04-10T08:27:25.2346000Z",
   "contentCorrelationId": "bc842d7a-2f6e-4b18-a1c7-73ef91d5c8e3",
@@ -865,11 +865,11 @@ For notifications with resource data, the payload looks like the following.
       "tenantId": "2432b57b-0abd-43db-aa7b-16eadd115d34",
       "clientState": "ClientSecret",
       "subscriptionExpirationDateTime": "2025-07-24T18:04:24.3511596+00:00",
-      "resource": "users/cdad9148-d926-4731-8618-371e587dded0/adhocCalls/51607480-d3ac-4ee4-9475-eb36599238d6/transcripts/MyMjMTk6ODA4MTExMTNiYWQzNDNhYzkzNGI2YTVmYzc1ZThmZGJAdGhyZWFkLnYyIyM1MTYwNzQ4MC1kM2FjLTRlZTQtOTQ3NS1lYjM2NTk5MjM4ZDYtMTc1MzM0NTA2OC1UcmFuc2NyaXB0VjI=",
+      "resource": "users/cdad9148-d926-4731-8618-371e587dded0/adhocCalls/GUID/transcripts/MyMjMTk6ODA4MTExMTNiYWQzNDNhYzkzNGI2YTVmYzc1ZThmZGJAdGhyZWFkLnYyIyM1MTYwNzQ4MC1kM2FjLTRlZTQtOTQ3NS1lYjM2NTk5MjM4ZDYtMTc1MzM0NTA2OC1UcmFuc2NyaXB0VjI=",
       "resourceData": {
         "id": "MyMjMTk6ODA4MTExMTNiYWQzNDNhYzkzNGI2YTVmYzc1ZThmZGJAdGhyZWFkLnYyIyM1MTYwNzQ4MC1kM2FjLTRlZTQtOTQ3NS1lYjM2NTk5MjM4ZDYtMTc1MzM0NTA2OC1UcmFuc2NyaXB0VjI=",
         "@odata.type": "#Microsoft.Graph.callTranscript",
-        "@odata.id": "users/cdad9148-d926-4731-8618-371e587dded0/adhocCalls/51607480-d3ac-4ee4-9475-eb36599238d6/transcripts/MyMjMTk6ODA4MTExMTNiYWQzNDNhYzkzNGI2YTVmYzc1ZThmZGJAdGhyZWFkLnYyIyM1MTYwNzQ4MC1kM2FjLTRlZTQtOTQ3NS1lYjM2NTk5MjM4ZDYtMTc1MzM0NTA2OC1UcmFuc2NyaXB0VjI="
+        "@odata.id": "users/cdad9148-d926-4731-8618-371e587dded0/adhocCalls/GUID/transcripts/MyMjMTk6ODA4MTExMTNiYWQzNDNhYzkzNGI2YTVmYzc1ZThmZGJAdGhyZWFkLnYyIyM1MTYwNzQ4MC1kM2FjLTRlZTQtOTQ3NS1lYjM2NTk5MjM4ZDYtMTc1MzM0NTA2OC1UcmFuc2NyaXB0VjI="
       }
     }
   ]
@@ -943,11 +943,11 @@ For notifications without resource data, the payload looks like the following. T
   "tenantId": "<<--TenantForWhichNotificationWasSent-->>",
   "clientState": "<<--SpecifiedClientState-->>",
   "subscriptionExpirationDateTime": "2023-09-17T08:29:11.3173971+00:00",
-  "resource": "users/{organizer-id}/adhoccalls('Mso...')/transcripts('MSM...')",
+  "resource": "users/{organizer-id}/adhoccalls/GUID/transcripts('MSM...')",
   "resourceData": {
     "id": "MSM...",
     "@odata.type": "#Microsoft.Graph.callTranscript",
-    "@odata.id": "users/{organizer-id}/adhoccalls('Mso...')/transcripts('MSM...')"
+    "@odata.id": "users/{organizer-id}/adhoccalls/GUID/transcripts('MSM...')"
   }
 }
 ```
