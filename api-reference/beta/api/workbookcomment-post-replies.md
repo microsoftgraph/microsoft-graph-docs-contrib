@@ -126,7 +126,7 @@ The following example shows the response when the reply is plain type.
   "@odata.type": "microsoft.graph.workbookCommentReply"
 } -->
 
-```json
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 
@@ -150,7 +150,7 @@ The following example shows the response when the reply is mention type.
   "@odata.type": "microsoft.graph.workbookCommentReply"
 } -->
 
-```json
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 

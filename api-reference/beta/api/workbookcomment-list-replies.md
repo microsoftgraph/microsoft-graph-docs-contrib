@@ -101,7 +101,7 @@ The following example shows the response.
   "isCollection": true
 } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -111,7 +111,6 @@ Content-type: application/json
       "content": "This is the first piece of reply.",
       "contentType": "plain",
       "id": "{97A21473-8339-4BF0-BCB6-F55E4909FFB8}",
-      "cellAddress": "Sheet1!A1",
       "richContent": "",
       "mentions": []
     },
@@ -119,7 +118,6 @@ Content-type: application/json
       "content": "This is the second piece of reply.",
       "contentType": "plain",
       "id": "{97A21473-8339-4BF0-BCB6-F55E4909FFF9}",
-      "cellAddress": "Sheet1!A2",
       "richContent": "",
       "mentions": []
      }
