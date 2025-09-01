@@ -25,7 +25,7 @@ Inherits from [mailboxRestoreArtifact](../resources/mailboxRestoreArtifact.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|artifactCount|int|This property will be deprecated; please disregard it.|
+|artifactCount|int|This property will be deprecated, please disregard it.|
 |id|String|The unique identifier of the restore artifact.|
 |completionDateTime|DateTimeOffset|The time when the restoration of the artifact is completed. Inherited from [restoreArtifactBase](../resources/restoreartifactbase.md).|
 |destinationType|[destinationType](../resources/mailboxrestoreartifact.md#destinationtype-values)|Indicates the restoration destination. Inherited from [restoreArtifactBase](../resources/restoreartifactbase.md). The possible values are: `new`, `inPlace`, `unknownFutureValue`.|
