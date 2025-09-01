@@ -9,8 +9,8 @@ ms.topic: article
 
 # Microsoft Graph Toolkit React components
 
-[!CAUTION]
-The Microsoft Graph CLI (mgcli) is deprecated and will be retired on August 28th, 2026. Users should migrate to the Microsoft Graph PowerShell SDK or other Microsoft Graph SDKs. For more information, see the [Deprecation announcement](https://devblogs.microsoft.com/microsoft365dev/microsoft-graph-cli-retirement/).
+> [!CAUTION]
+> The Microsoft Graph CLI (mgcli) is deprecated and will be retired on August 28th, 2026. Users should migrate to the Microsoft Graph PowerShell SDK or other Microsoft Graph SDKs. For more information, see the [Deprecation announcement](https://devblogs.microsoft.com/microsoft365dev/microsoft-graph-cli-retirement/).
 
 The Microsoft Graph Toolkit React components (`mgt-react`) allow React developers to use the Microsoft Graph Toolkit in their React applications. The library wraps all Microsoft Graph Toolkit components and exports them as React components. We also provide another React library (`mgt-chat`) to enable chat scenarios that aren't yet available as regular web components.
 
