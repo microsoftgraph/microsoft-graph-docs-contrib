@@ -23,6 +23,8 @@ You can create the following types of assignment resources:
 - [educationPowerPointResource](../resources/educationpowerpointresource.md)
 - [educationMediaResource](../resources/educationmediaresource.md)
 - [educationTeamsAppResource](../resources/educationteamsappresource.md)
+- [educationSpeakerProgressResource](../resources/educationspeakerprogressresource.md)
+
 
 Every resource has an **@odata.type** property to indicate which type of resource is being created.
 

@@ -322,6 +322,8 @@ items:
     href: ../../resources/educationpowerpointresource.md
   - name: Education resource
     href: ../../resources/educationresource.md
+  - name: Education speaker progress resource
+    href: ../../resources/educationspeakerprogressresource.md
   - name: Education submission individual recipient
     href: ../../resources/educationsubmissionindividualrecipient.md
   - name: Education submission recipient
