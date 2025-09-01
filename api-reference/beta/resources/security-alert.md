@@ -178,8 +178,8 @@ Security providers create an alert in the system when they detect a threat. Micr
 | microsoftDefenderThreatIntelligenceAnalytics | Sentinel Threat Intelligence Alerts.            |
 | builtInMl                                    | Sentinel Built-in ML.                           |
 | microsoftThreatIntelligence                  | Microsoft Threat Intelligence.                  |
-| microsoftDefenderForAIServices               | Microsoft Defender for AI Services.               |
-| securityCopilot                              | Security Copilot.                                 |
+| microsoftDefenderForAIServices               | Microsoft Defender for AI Services.              |
+| securityCopilot                              | Security Copilot.                                |
 
 ## Relationships
 
