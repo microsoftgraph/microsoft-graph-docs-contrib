@@ -27,42 +27,38 @@
       "SubArea": "Cloud PC"
     },
     {
-      "changelog": [
+      "ChangeList": [
         {
-          "ChangeList": [
-            {
-              "Id": "2a89f5ec-0253-4153-b817-83fc3b0f7230",
-              "ApiChange": "Resource",
-              "ChangedApiName": "cloudPcExternalPartner",
-              "ChangeType": "Addition",
-              "Description": "Added the [cloudPcExternalPartner](https://learn.microsoft.com/en-us/graph/api/resources/intune-cloudPcExternalPartner?view=graph-rest-beta) resource.",
-              "Target": "cloudPcExternalPartner"
-            },
-            {
-              "Id": "2a89f5ec-0253-4153-b817-83fc3b0f7230",
-              "ApiChange": "Resource",
-              "ChangedApiName": "cloudPcExternalPartnerSetting",
-              "ChangeType": "Deprecation",
-              "Description": "Deprecated the [cloudPcExternalPartnerSetting](https://learn.microsoft.com/en-us/graph/api/resources/intune-cloudPcExternalPartnerSetting?view=graph-rest-beta) resource.",
-              "Target": "cloudPcExternalPartnerSetting"
-            },
-            {
-              "Id": "2a89f5ec-0253-4153-b817-83fc3b0f7230",
-              "ApiChange": "Relationship",
-              "ChangedApiName": "externalPartners",
-              "ChangeType": "Addition",
-              "Description": "Added the **externalPartners** relationship to the [virtualEndpoint](https://learn.microsoft.com/en-us/graph/api/resources/intune-virtualEndpoint?view=graph-rest-beta) resource.",
-              "Target": "virtualEndpoint"
-            }
-          ],
           "Id": "2a89f5ec-0253-4153-b817-83fc3b0f7230",
-          "Cloud": "Prod",
-          "Version": "beta",
-          "CreatedDateTime": "2025-09-01T10:37:32.228986Z",
-          "WorkloadArea": "Devices and apps",
-          "SubArea": "Cloud PC"
+          "ApiChange": "Resource",
+          "ChangedApiName": "cloudPcExternalPartner",
+          "ChangeType": "Addition",
+          "Description": "Added the [cloudPcExternalPartner](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcExternalPartner?view=graph-rest-beta) resource.",
+          "Target": "cloudPcExternalPartner"
+        },
+        {
+          "Id": "2a89f5ec-0253-4153-b817-83fc3b0f7230",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cloudPcExternalPartnerSetting",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [cloudPcExternalPartnerSetting](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcExternalPartnerSetting?view=graph-rest-beta) resource.",
+          "Target": "cloudPcExternalPartnerSetting"
+        },
+        {
+          "Id": "2a89f5ec-0253-4153-b817-83fc3b0f7230",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "externalPartners",
+          "ChangeType": "Addition",
+          "Description": "Added the **externalPartners** relationship to the [virtualEndpoint](https://learn.microsoft.com/en-us/graph/api/resources/virtualendpoint?view=graph-rest-beta) resource.",
+          "Target": "virtualEndpoint"
         }
-      ]
+      ],
+      "Id": "2a89f5ec-0253-4153-b817-83fc3b0f7230",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-09-01T10:37:32.228986Z",
+      "WorkloadArea": "Device and app management",
+      "SubArea": "Cloud PC"
     },
     {
       "ChangeList": [
