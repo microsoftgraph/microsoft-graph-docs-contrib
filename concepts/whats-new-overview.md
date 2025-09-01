@@ -18,11 +18,7 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 > [!IMPORTANT]
 > Features in _preview_ status are subject to change without notice, and might not be promoted to generally available (GA) status. Don't use preview features in production apps.
 
-## August 2025: New and generally available
-
-### Device and app management | Cloud PC
-
-Use the [resize](/graph/api/cloudpc-resize) operation of [cloudPC](/graph/api/resources/cloudpc) to upgrade or downgrade an existing Cloud PC to a configuration with a new virtual CPU (vCPU) and storage size.
+## September 2025: New and generally available
 
 ### Security | Alerts and incidents
 
@@ -32,6 +28,12 @@ Use the [resize](/graph/api/cloudpc-resize) operation of [cloudPC](/graph/api/re
   - Use the **friendlyName** property to identify the friendly name of the security group.	
   - Use the **sid** property to get the security identifier of the group.
 - Use the **activeDirectoryObjectGuid** property on [userAccount](/graph/api/resources/security-useraccount) to get the unique user identifier assigned by the on-premises Active Directory.
+
+## August 2025: New and generally available
+
+### Device and app management | Cloud PC
+
+Use the [resize](/graph/api/cloudpc-resize) operation of [cloudPC](/graph/api/resources/cloudpc) to upgrade or downgrade an existing Cloud PC to a configuration with a new virtual CPU (vCPU) and storage size.
 
 ### Sites and lists
 
