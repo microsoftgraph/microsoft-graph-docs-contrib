@@ -1,6 +1,6 @@
 ---
 title: "securityGroupEvidence resource type"
-description: "Represents a security group that is reported in the alert as evidence."
+description: "Represents a Microsoft Entra security group that is reported in an alert as evidence."
 ms.date: 11/11/2022
 author: "BenAlfasi"
 ms.localizationpriority: medium
@@ -12,7 +12,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.security
 
-Represents a Microsoft Entra security group that is reported in the [alert](../resources/security-alert.md). As evidence.
+Represents a Microsoft Entra security group that is reported in an [alert](../resources/security-alert.md) as evidence.
 
 Inherits from [alertEvidence](../resources/security-alertevidence.md).
 
