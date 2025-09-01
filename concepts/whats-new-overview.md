@@ -65,15 +65,6 @@ Learn how to [add an application permission to a driveItem in OneDrive or ShareP
 
 Deprecated the [markAsJunk](/graph/api/message-markasjunk?view=graph-rest-beta&preserve-view=true) and [markAsNotJunk](/graph/api/message-markasnotjunk?view=graph-rest-beta&preserve-view=true) actions in favor of the [reportMessage](/graph/api/message-reportmessage?view=graph-rest-beta&preserve-view=true) API.
 
-### Security | Alerts and incidents
-
-- Added the following new properties to the [securityGroupEvidence](/graph/api/resources/security-securitygroupevidence?view=graph-rest-beta&preserve-view=true) resource:
-  - Use the **activeDirectoryObjectGuid** property to get the unique group identifier assigned by the on-premises Active Directory.
-  - Use the **distinguishedName** property to identify the distinguished name of the security group.
-  - Use the **friendlyName** property to identify the friendly name of the security group.	
-  - Use the **sid** property to get the security identifier of the group.
-- Use the **activeDirectoryObjectGuid** property on [userAccount](/graph/api/resources/security-useraccount?view=graph-rest-beta&preserve-view=true) to get the unique user identifier assigned by the on-premises Active Directory.
-
 ### Security | Identities
 
 Added the [identityAccounts](graph/api/resources/security-identityaccounts?view=graph-rest-beta&preserve-view=true) and its related methods that lets you retrieve details of user accounts observed by Microsoft Defender for Identity and apply response actions such as disabling accounts and forcing password reset. 
