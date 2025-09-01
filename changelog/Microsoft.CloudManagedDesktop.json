@@ -3,27 +3,27 @@
     {
       "ChangeList": [
         {
-          "Id": "65e2b6a7-58fb-407c-9eb8-4c3dc56ab783",
+          "Id": "382c3075-26fc-4093-8518-75389ec935f3",
           "ApiChange": "Member",
-          "ChangedApiName": "cloudPcManagementService",
+          "ChangedApiName": "microsoft365Opal",
           "ChangeType": "Addition",
           "Description": "Added the `microsoft365Opal` member to the **cloudPcManagementService** enumeration.",
           "Target": "cloudPcManagementService"
         },
         {
-          "Id": "65e2b6a7-58fb-407c-9eb8-4c3dc56ab783",
+          "Id": "382c3075-26fc-4093-8518-75389ec935f3",
           "ApiChange": "Member",
-          "ChangedApiName": "cloudPcManagementService",
+          "ChangedApiName": "microsoft365BizChat",
           "ChangeType": "Addition",
-          "Description": "Added the 'microsoft365BizChat' member to the **cloudPcManagementService** enumeration.",
+          "Description": "Added the `microsoft365BizChat` member to the **cloudPcManagementService** enumeration.",
           "Target": "cloudPcManagementService"
         }
       ],
-      "Id": "f064222f-fcc8-4493-b2ed-43075268f1dd",
+      "Id": "382c3075-26fc-4093-8518-75389ec935f3",
       "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2025-08-13T12:24:33.7283612Z",
-      "WorkloadArea": "Device and app management",
+      "CreatedDateTime": "2025-09-01T09:55:21.2146082Z",
+      "WorkloadArea": "Devices and apps",
       "SubArea": "Cloud PC"
     },
     {
