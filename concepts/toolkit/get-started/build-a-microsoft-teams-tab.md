@@ -9,8 +9,8 @@ ms.topic: how-to
 
 # Build a Microsoft Teams tab with the Microsoft Graph Toolkit
 
-[!CAUTION]
-The Microsoft Graph CLI (mgcli) is deprecated and will be retired on August 28th, 2026. Users should migrate to the Microsoft Graph PowerShell SDK or other Microsoft Graph SDKs. For more information, see the [Deprecation announcement](https://devblogs.microsoft.com/microsoft365dev/microsoft-graph-cli-retirement/).
+> [!CAUTION]
+> The Microsoft Graph CLI (mgcli) is deprecated and will be retired on August 28th, 2026. Users should migrate to the Microsoft Graph PowerShell SDK or other Microsoft Graph SDKs. For more information, see the [Deprecation announcement](https://devblogs.microsoft.com/microsoft365dev/microsoft-graph-cli-retirement/).
 
 This topic covers how to get started using the Microsoft Graph Toolkit in a Microsoft Teams solution. This guide is for a single-page app without single sign-on (SSO) and does not require a backend. It uses the Teams Toolkit as the scaffolding system.
 
