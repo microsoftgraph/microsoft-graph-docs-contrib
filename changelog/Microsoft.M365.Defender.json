@@ -3107,6 +3107,58 @@
       "CreatedDateTime": "2025-08-14T13:42:04.531087Z",
       "WorkloadArea": "Security",
       "SubArea": "Identities"
+    },
+	{
+      "ChangeList": [
+        {
+          "Id": "e1808615-e721-4bae-932b-da67735f7efc",
+          "ApiChange": "Member",
+          "ChangedApiName": "microsoftDefenderForAIServices",
+          "ChangeType": "Addition",
+          "Description": "Added the `microsoftDefenderForAIServices` member to the **detectionSource** enumeration.",
+          "Target": "detectionSource"
+        },
+        {
+          "Id": "e1808615-e721-4bae-932b-da67735f7efc",
+          "ApiChange": "Member",
+          "ChangedApiName": "securityCopilot",
+          "ChangeType": "Addition",
+          "Description": "Added the `securityCopilot` member to the **detectionSource** enumeration.",
+          "Target": "detectionSource"
+        }
+      ],
+      "Id": "e1808615-e721-4bae-932b-da67735f7efc",
+      "Cloud": "Review",
+      "Version": "beta",
+      "CreatedDateTime": "2025-09-01T05:38:00.0491035Z",
+      "WorkloadArea": "Security",
+      "SubArea": ""
+    },
+	{
+      "ChangeList": [
+        {
+          "Id": "089c2f45-69de-4f7c-a1bc-456c95fb4ae4",
+          "ApiChange": "Member",
+          "ChangedApiName": "microsoftDefenderForAIServices",
+          "ChangeType": "Addition",
+          "Description": "Added the `microsoftDefenderForAIServices` member to the **detectionSource** enumeration.",
+          "Target": "detectionSource"
+        },
+        {
+          "Id": "089c2f45-69de-4f7c-a1bc-456c95fb4ae4",
+          "ApiChange": "Member",
+          "ChangedApiName": "securityCopilot",
+          "ChangeType": "Addition",
+          "Description": "Added the `securityCopilot` member to the **detectionSource** enumeration.",
+          "Target": "detectionSource"
+        }
+      ],
+      "Id": "089c2f45-69de-4f7c-a1bc-456c95fb4ae4",
+      "Cloud": "Review",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-09-01T05:38:00.0493693Z",
+      "WorkloadArea": "Security",
+      "SubArea": ""
     }
   ]
 }
