@@ -2,11 +2,11 @@
 title: "workbookCommentReply resource type"
 description: "Definition of workbookCommentReply resource type"
 ms.localizationpriority: medium
-author: "grangeryy"
+author: "AmandaHan123"
 ms.subservice: "excel"
 doc_type: "resourcePageType"
 toc.title: Comment reply
-ms.date: 07/30/2024
+ms.date: 09/01/2025
 ---
 
 # workbookCommentReply resource type
@@ -27,9 +27,11 @@ Represents a reply to an excel comment.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|content|String|The content of the reply.|
-|contentType|String|The content type for the reply.|
+|content|String|The content of the reply which is displayed to end-users.|
+|contentType|String|The content type for the reply. The value is "plain" or "mention".|
 |id|String|The unique identifier for the reply. Read-only.|
+|richContent|String|The rich content of the reply (e.g., reply content with mentions, the first mentioned entity has an ID attribute of 0, and the second mentioned entity has an ID attribute of 1). When contentType is "plain", this is empty. Read-only.|
+|mentions|[CommentMention](workbookcommentmention.md) collection|An array containing all the people mentioned within the reply. When contentType is "plain", this is an empty array. Read-only.|
 
 ## Relationships
 
@@ -54,7 +56,9 @@ The following JSON representation shows the resource type.
 {
   "content": "String",
   "contentType": "String",
-  "id": "String (identifier)"
+  "id": "String (identifier)",
+  "richContent": "String",
+  "mentions": [{ "@odata.type": "microsoft.graph.workbookCommentMention" }]
 }
 ```
 

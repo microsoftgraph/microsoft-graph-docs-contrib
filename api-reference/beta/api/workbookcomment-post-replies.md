@@ -2,10 +2,10 @@
 title: "Create workbookCommentReply"
 description: "Create a new workbookCommentReply."
 ms.localizationpriority: medium
-author: "grangeryy"
+author: "AmandaHan123"
 ms.subservice: "excel"
 doc_type: "apiPageType"
-ms.date: 04/05/2024
+ms.date: 09/01/2025
 ---
 
 # Create workbookCommentReply
@@ -50,7 +50,7 @@ If successful, this method returns a `201 Created` response code and a new [work
 
 ### Request
 
-The following example shows a request.
+The following example shows a request to add a reply of plain type.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -94,9 +94,29 @@ Content-type: application/json
 
 ---
 
+
+The following example shows a request to add a reply of mention type.
+
+# [HTTP](#tab/http)
+
+```http
+POST https://graph.microsoft.com/beta/drive/items/{id}/workbook/comments/{id}/replies
+Content-type: application/json
+
+{
+  "richContent": "<at id=\"0\">Kate Kristensen</at> - Can you take a look?",
+  "mentions": [{
+		"id": 0,
+		"name": "Kate Kristensen",
+		"email": "kakri@contoso.com"
+		}],
+  "contentType": "mention"
+}
+```
+
 ### Response
 
-The following example shows the response.
+The following example shows the response when the reply is plain type.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -106,14 +126,44 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.workbookCommentReply"
 } -->
 
-```http
+```json
 HTTP/1.1 201 Created
 Content-type: application/json
 
 {
   "content": "This is my reply to the comment.",
   "contentType": "plain",
-  "id": "{97A21473-8339-4BF0-BCB6-F55E4909FFB8}"
+  "id": "{97A21473-8339-4BF0-BCB6-F55E4909FFB8}",
+  "richContent": "",
+  "mentions": []
+}
+```
+---
+
+The following example shows the response when the reply is mention type.
+
+> **Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.workbookCommentReply"
+} -->
+
+```json
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+  "content": "@Kate Kristensen - Can you take a look?",
+  "contentType": "mention",
+  "id": "{97A21473-8339-4BF0-BCB6-F55E4909FFB8}",
+  "richContent": "<at id=\"0\">Kate Kristensen</at> - Can you take a look?",
+  "mentions": [{
+		"id": 0,
+		"name": "Kate Kristensen",
+		"email": "kakri@contoso.com"
+  }]
 }
 ```
 

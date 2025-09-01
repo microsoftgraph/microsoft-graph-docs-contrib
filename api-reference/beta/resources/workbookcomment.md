@@ -2,11 +2,11 @@
 title: "workbookComment resource type"
 description: "Represents a comment in a workbook."
 ms.localizationpriority: medium
-author: "grangeryy"
+author: "AmandaHan123"
 ms.subservice: "excel"
 doc_type: "resourcePageType"
 toc.title: Comment
-ms.date: 07/30/2024
+ms.date: 09/01/2025
 ---
 
 # workbookComment resource type
@@ -21,15 +21,19 @@ Represents a comment in a workbook.
 |:-------------|:------------|:------------|
 | [List](../api/workbook-list-comments.md) | [workbookComment](workbookComment.md) collection | Get a **workbookComment** object collection. |
 | [Get](../api/workbookcomment-get.md) | [workbookComment](workbookcomment.md) | Read the properties and relationships of a **workbookComment** object. |
+| [Create](../api/workbookcomment-post-comment.md) | [workbookComment](workbookcomment.md) | Create a new **workbookComment** object. |
 
 
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|content|String|The content of the comment.|
-|contentType|String|The content type of the comment.|
+|content|String|The content of the comment. It is the string displayed to end-users.|
+|contentType|String|The content type of the comment. The value is "plain" or "mention".|
 |id|String|The unique identifier of the comment. Read-only.|
+|cellAddress|String|The cell that the comment located. Address value is in A1-style which contains the sheet reference (for example, Sheet1!A1). Read-only.
+|richContent|String|The rich content of the comment (e.g., comment content with mentions, the first mentioned entity has an ID attribute of 0, and the second mentioned entity has an ID attribute of 1). When contentType is "plain", this is empty. Read-only.|
+|mentions|[CommentMention](workbookcommentmention.md) collection|An array containing all the people mentioned within the comment. When contentType is "plain", this is an empty array. Read-only.|
 
 ## Relationships
 
@@ -55,7 +59,10 @@ The following JSON representation shows the resource type.
 {
   "content": "String",
   "contentType": "String",
-  "id": "String (identifier)"
+  "id": "String (identifier)",
+  "cellAddress": "String",
+  "richContent": "String",
+  "mentions": [{ "@odata.type": "microsoft.graph.workbookCommentMention" }]
 }
 ```
 
