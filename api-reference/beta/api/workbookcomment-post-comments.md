@@ -73,6 +73,10 @@ Content-type: application/json
 The following example shows a request to add a comment of mention type.
 
 # [HTTP]
+<!-- {
+  "blockType": "request",
+  "name": "create_workbookcomment_from_workbook"
+}-->
 
 ```http
 POST https://graph.microsoft.com/beta/drive/items/{id}/workbook/comments
