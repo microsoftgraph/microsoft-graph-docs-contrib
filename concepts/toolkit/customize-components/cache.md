@@ -9,6 +9,9 @@ ms.topic: article
 
 # Microsoft Graph Toolkit caching
 
+> [!CAUTION]
+> The Microsoft Graph CLI (mgcli) is deprecated and will be retired on August 28th, 2026. Users should migrate to the Microsoft Graph PowerShell SDK or other Microsoft Graph SDKs. For more information, see the [Deprecation announcement](https://devblogs.microsoft.com/microsoft365dev/microsoft-graph-cli-retirement/).
+
 The Microsoft Graph Toolkit supports caching of select Microsoft Graph API calls. Calls are cached per entity, such as people, contact, photo. This allows one component to retrieve the data and other components to reuse it without calling Microsoft Graph.
 
 > [!TIP]
