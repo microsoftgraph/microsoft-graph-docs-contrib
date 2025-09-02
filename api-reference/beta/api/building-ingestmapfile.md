@@ -27,7 +27,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/building-ingestmapfile-permissions.md)]
 
->**Note**: Exchange Admin role is required to ingest map files.
+> [!NOTE]
+> The Exchange Admin role is required to ingest map files.
 
 ## HTTP request
 
