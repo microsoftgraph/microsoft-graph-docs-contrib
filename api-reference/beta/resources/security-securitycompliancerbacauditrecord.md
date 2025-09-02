@@ -1,8 +1,8 @@
 ---
 title: "securityComplianceRBACAuditRecord resource type"
-description: "**TODO: Add Description**"
-author: "diksha27"
-ms.subservice: compliance
+description: "Represents an audit record for role-based access control (RBAC) activities in the Security & Compliance Center."
+author: "palakagrawaljk"
+ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ---
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents an audit record that captures role-based access control (RBAC) activities in the Security & Compliance Center. This resource tracks administrative actions related to role management, including role assignments, role group modifications, and permission changes. These audit records help organizations monitor and manage access control activities for security administration, ensuring appropriate governance of security and compliance management capabilities.
 
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).

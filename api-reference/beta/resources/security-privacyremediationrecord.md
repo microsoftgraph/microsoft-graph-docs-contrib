@@ -1,8 +1,8 @@
 ---
 title: "privacyRemediationRecord resource type"
-description: "**TODO: Add Description**"
-author: "diksha27"
-ms.subservice: compliance
+description: "Represents an audit record for privacy remediation activities across an organization."
+author: "palakagrawaljk"
+ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ---
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents an audit record that captures comprehensive information about privacy remediation activities across an organization. This resource tracks the overall remediation efforts for addressing privacy risks, including summaries of actions taken, remediation statuses, and organization-wide privacy compliance efforts. These records help organizations monitor their privacy protection initiatives and demonstrate compliance with privacy regulations.
 
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).

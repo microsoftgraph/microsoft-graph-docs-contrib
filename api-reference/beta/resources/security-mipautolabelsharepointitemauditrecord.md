@@ -1,8 +1,8 @@
 ---
 title: "mipAutoLabelSharePointItemAuditRecord resource type"
-description: "**TODO: Add Description**"
-author: "diksha27"
-ms.subservice: compliance
+description: "Represents an audit record that captures automatic sensitivity labeling activities for SharePoint items."
+author: "palakagrawaljk"
+ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ---
@@ -12,8 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+Represents an audit record that captures automatic sensitivity labeling activities for SharePoint items. This record type documents events related to the automatic application of sensitivity labels to SharePoint content such as documents, lists, and libraries based on content scanning and classification rules, providing visibility into how sensitive information in SharePoint is being identified and protected through automated mechanisms.
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).
 

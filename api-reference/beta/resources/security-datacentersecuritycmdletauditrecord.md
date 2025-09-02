@@ -1,8 +1,8 @@
 ---
 title: "dataCenterSecurityCmdletAuditRecord resource type"
-description: "**TODO: Add Description**"
-author: "diksha27"
-ms.subservice: compliance
+description: "Represents an audit record that captures data center security-related cmdlet operations executed by administrators."
+author: "palakagrawaljk"
+ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ---
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents an audit record that captures data center security-related cmdlet operations executed by administrators. This record type documents administrative actions taken through PowerShell or other command-line interfaces that affect data center security configurations, including changes to security policies, access controls, and monitoring settings.
 
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).

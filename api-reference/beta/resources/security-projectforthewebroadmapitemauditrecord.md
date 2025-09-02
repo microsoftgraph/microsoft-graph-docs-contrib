@@ -1,8 +1,8 @@
 ---
 title: "projectForTheWebRoadmapItemAuditRecord resource type"
-description: "**TODO: Add Description**"
-author: "diksha27"
-ms.subservice: compliance
+description: "Represents an audit record for activities related to individual roadmap items in Project for the Web."
+author: "palakagrawaljk"
+ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ---
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents an audit record that captures activities related to individual roadmap items in Project for the Web. This resource tracks actions performed on specific items within a project roadmap, such as item creation, modification, deletion, and status changes. These audit records help organizations monitor detailed roadmap item management activities for security, compliance, and operational oversight purposes.
 
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).

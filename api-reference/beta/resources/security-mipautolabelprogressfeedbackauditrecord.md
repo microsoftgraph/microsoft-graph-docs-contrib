@@ -1,8 +1,8 @@
 ---
 title: "mipAutoLabelProgressFeedbackAuditRecord resource type"
-description: "**TODO: Add Description**"
-author: "diksha27"
-ms.subservice: compliance
+description: "Represents an audit record that captures progress feedback for automatic sensitivity labeling processes."
+author: "palakagrawaljk"
+ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ---
@@ -12,8 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+Represents an audit record that captures progress feedback for automatic sensitivity labeling processes. This record type documents interim status updates and progress metrics during the execution of auto-labeling jobs, providing visibility into the ongoing performance and throughput of content scanning and labeling operations, including statistics about items processed, labels applied, and any issues encountered.
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).
 

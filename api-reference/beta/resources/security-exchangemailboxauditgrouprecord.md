@@ -1,8 +1,8 @@
 ---
 title: "exchangeMailboxAuditGroupRecord resource type"
-description: "**TODO: Add Description**"
-author: "diksha27"
-ms.subservice: compliance
+description: "Represents an audit record that captures group-related mailbox operations in Exchange Online."
+author: "palakagrawaljk"
+ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ---
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents an audit record that captures group-related mailbox operations in Exchange Online. This record type documents actions performed on distribution groups, mail-enabled security groups, and other group objects within Exchange. It tracks activities such as group membership changes, permission modifications, and group property updates. These audit records help organizations monitor group management activities for security and compliance purposes.
 
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).

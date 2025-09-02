@@ -1,8 +1,8 @@
 ---
 title: "enableConsentRecord resource type"
-description: "**TODO: Add Description**"
-author: "diksha27"
-ms.subservice: compliance
+description: "Represents an audit record for operations that enable user consent for applications."
+author: "palakagrawaljk"
+ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ---
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents an audit record for operations that enable user consent for applications. This record type documents when administrators enable the ability for users to grant consent to applications to access organizational data. The record includes details about who made the change, when it occurred, and the scope of the consent permissions allowed. Tracking these events is important for security monitoring and compliance reporting.
 
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).

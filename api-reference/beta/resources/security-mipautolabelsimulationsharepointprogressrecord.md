@@ -1,8 +1,8 @@
 ---
 title: "mipAutoLabelSimulationSharePointProgressRecord resource type"
-description: "**TODO: Add Description**"
-author: "diksha27"
-ms.subservice: compliance
+description: "Represents an audit record that captures progress information for SharePoint auto-labeling simulation runs."
+author: "palakagrawaljk"
+ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ---
@@ -12,8 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+Represents an audit record that captures progress information for SharePoint auto-labeling simulation runs. This record type documents interim status updates and progress metrics during the execution of simulation mode runs for automatic sensitivity labeling in SharePoint, providing visibility into the ongoing performance and throughput of content scanning and simulated labeling operations without actually applying the labels.
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).
 

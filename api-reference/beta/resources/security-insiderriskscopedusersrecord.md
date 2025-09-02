@@ -1,8 +1,8 @@
 ---
 title: "insiderRiskScopedUsersRecord resource type"
-description: "**TODO: Add Description**"
-author: "diksha27"
-ms.subservice: compliance
+description: "Represents an audit record that captures operations related to users scoped for insider risk management."
+author: "palakagrawaljk"
+ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ---
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents an audit record that captures operations related to users scoped for insider risk management. This record type documents when users are added to or removed from insider risk management scoping, including details about who made the change, when it occurred, and the affected users. These audit records help organizations track which users are being monitored for potential insider risks and maintain compliance with internal security policies.
 
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).

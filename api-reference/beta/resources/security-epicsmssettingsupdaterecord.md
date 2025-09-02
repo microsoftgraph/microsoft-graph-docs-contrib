@@ -1,8 +1,8 @@
 ---
 title: "epicSMSSettingsUpdateRecord resource type"
-description: "**TODO: Add Description**"
-author: "diksha27"
-ms.subservice: compliance
+description: "Represents an audit record that captures updates to Epic SMS configuration settings in healthcare environments."
+author: "palakagrawaljk"
+ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ---
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents an audit record that captures updates to Epic SMS configuration settings in healthcare environments. This record type documents when an administrator or authorized user modifies settings related to the SMS messaging service integrated with Epic healthcare systems. The audit information includes details about the specific settings changed, who made the changes, and when they occurred, helping healthcare organizations maintain compliance with security and privacy regulations.
 
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).

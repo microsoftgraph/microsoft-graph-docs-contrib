@@ -1,8 +1,8 @@
 ---
 title: "projectForTheWebProjectAuditRecord resource type"
-description: "**TODO: Add Description**"
-author: "diksha27"
-ms.subservice: compliance
+description: "Represents an audit record for project-level activities in Project for the Web."
+author: "palakagrawaljk"
+ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ---
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents an audit record that captures project-level activities in Project for the Web. This resource tracks actions performed on projects such as project creation, deletion, modification, sharing, and permission changes. These audit records help organizations monitor project management activities for security, compliance, and operational insights specific to the Project for the Web service.
 
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).

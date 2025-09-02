@@ -1,8 +1,8 @@
 ---
 title: "multiStageDispositionAuditRecord resource type"
-description: "**TODO: Add Description**"
-author: "diksha27"
-ms.subservice: compliance
+description: "Represents an audit record that captures information about multi-stage disposition review processes for content."
+author: "palakagrawaljk"
+ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ---
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents an audit record that captures information about multi-stage disposition review processes for content. This resource provides details about the workflow of content disposition decisions that require multiple levels of approval or review before final action is taken. These audit records help organizations track the lifecycle of content disposition processes, including who reviewed content, what decisions were made at each stage, and the final disposition outcomes.
 
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).

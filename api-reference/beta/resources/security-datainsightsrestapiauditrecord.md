@@ -1,8 +1,8 @@
 ---
 title: "dataInsightsRestApiAuditRecord resource type"
-description: "**TODO: Add Description**"
-author: "diksha27"
-ms.subservice: compliance
+description: "Represents an audit record for REST API operations related to data insights services."
+author: "palakagrawaljk"
+ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ---
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents an audit record for REST API operations related to data insights services. This record type captures information about API calls made to data insights endpoints, including the requester, operation details, and response status, to provide accountability and traceability for data access and manipulation through API interfaces.
 
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).

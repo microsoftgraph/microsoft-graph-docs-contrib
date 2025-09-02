@@ -1,8 +1,8 @@
 ---
 title: "labelContentExplorerAuditRecord resource type"
-description: "**TODO: Add Description**"
-author: "diksha27"
-ms.subservice: compliance
+description: "Represents an audit record that captures activities related to using the sensitivity label content explorer."
+author: "palakagrawaljk"
+ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ---
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents an audit record that captures activities related to using the sensitivity label content explorer. This record type documents when administrators or security personnel use the content explorer to search for, view, or analyze content with specific sensitivity labels. These audit records help organizations track who is investigating labeled content and maintain compliance with data governance requirements.
 
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).

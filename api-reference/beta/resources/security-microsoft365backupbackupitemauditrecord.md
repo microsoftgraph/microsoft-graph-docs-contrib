@@ -1,8 +1,8 @@
 ---
 title: "microsoft365BackupBackupItemAuditRecord resource type"
-description: "**TODO: Add Description**"
-author: "diksha27"
-ms.subservice: compliance
+description: "Represents an audit record that captures activities related to individual items being backed up in Microsoft 365 Backup."
+author: "palakagrawaljk"
+ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ---
@@ -12,8 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+Represents an audit record that captures activities related to individual items being backed up in Microsoft 365 Backup. This record type documents events such as backup operations for specific files, emails, SharePoint documents, and other content items within Microsoft 365, including details about backup timing, content type, storage location, and success or failure status.
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).
 

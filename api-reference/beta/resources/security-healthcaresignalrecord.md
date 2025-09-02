@@ -1,8 +1,8 @@
 ---
 title: "healthcareSignalRecord resource type"
-description: "**TODO: Add Description**"
-author: "diksha27"
-ms.subservice: compliance
+description: "Represents an audit record that captures healthcare-related security signals and alerts."
+author: "palakagrawaljk"
+ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ---
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents an audit record that captures healthcare-related security signals and alerts. This record type documents security events specific to healthcare environments, such as potential Protected Health Information (PHI) exposures, suspicious access to patient records, or unusual patterns of healthcare data access. These audit records help healthcare organizations detect and respond to security incidents while maintaining compliance with healthcare regulations like HIPAA and HITECH.
 
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).

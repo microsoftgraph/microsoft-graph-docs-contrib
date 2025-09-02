@@ -1,8 +1,8 @@
 ---
 title: "mailSubmissionData resource type"
-description: "**TODO: Add Description**"
-author: "diksha27"
-ms.subservice: compliance
+description: "Represents data related to email submissions for security review, such as phishing or spam reports from users."
+author: "palakagrawaljk"
+ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ---
@@ -12,8 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+Represents data related to email submissions for security review, such as phishing or spam reports from users. This resource type captures information about emails that have been submitted for analysis, including submission details, sender information, recipient information, and analysis results, providing visibility into user-reported security concerns and their processing.
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).
 

@@ -1,8 +1,8 @@
 ---
 title: "microsoftTeamsAnalyticsAuditRecord resource type"
-description: "**TODO: Add Description**"
-author: "diksha27"
-ms.subservice: compliance
+description: "Represents an audit record that captures analytics-related activities in Microsoft Teams."
+author: "palakagrawaljk"
+ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ---
@@ -12,8 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+Represents an audit record that captures analytics-related activities in Microsoft Teams. This record type documents events such as accessing Teams usage reports, viewing analytics dashboards, exporting analytics data, and configuring analytics settings, providing visibility into how Teams usage and performance data is being accessed and utilized within the organization.
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).
 

@@ -1,8 +1,8 @@
 ---
 title: "powerPlatformLockboxResourceAccessRequestAuditRecord resource type"
-description: "**TODO: Add Description**"
-author: "diksha27"
-ms.subservice: compliance
+description: "Represents an audit record that captures information about Customer Lockbox access requests for Power Platform resources."
+author: "palakagrawaljk"
+ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ---
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents an audit record that captures information about Customer Lockbox access requests for Power Platform resources. This resource provides details about requests made by Microsoft support engineers to access customer data in Power Platform services, the approval workflow for such requests, and the actions taken during the approved access period. These audit records help organizations maintain visibility and control over Microsoft's access to their Power Platform environments and data.
 
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).

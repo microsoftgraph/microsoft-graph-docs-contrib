@@ -1,8 +1,8 @@
 ---
 title: "mapgPolicyAuditRecord resource type"
-description: "**TODO: Add Description**"
-author: "diksha27"
-ms.subservice: compliance
+description: "Represents an audit record that captures activities related to Microsoft Active Protection Gateway (MAPG) policy management."
+author: "palakagrawaljk"
+ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ---
@@ -12,8 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+Represents an audit record that captures activities related to Microsoft Active Protection Gateway (MAPG) policy management. This record type documents events such as policy creation, modification, deletion, assignment, and enforcement actions within the Active Protection Gateway service, providing visibility into the policy governance lifecycle for security controls.
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).
 

@@ -1,8 +1,8 @@
 ---
 title: "projectAuditRecord resource type"
-description: "**TODO: Add Description**"
-author: "diksha27"
-ms.subservice: compliance
+description: "Represents an audit record for activities and changes made within Microsoft Project."
+author: "palakagrawaljk"
+ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ---
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents an audit record that captures activities and changes made within Microsoft Project. This resource tracks actions such as project creation, modification, deletion, sharing, and permission changes. These audit records help organizations monitor project management activities for security, compliance, and operational oversight purposes.
 
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).

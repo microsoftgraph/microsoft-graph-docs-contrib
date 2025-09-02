@@ -1,8 +1,8 @@
 ---
 title: "plannerRosterAuditRecord resource type"
-description: "**TODO: Add Description**"
-author: "diksha27"
-ms.subservice: compliance
+description: "Represents an audit record that captures information about changes to Planner roster membership."
+author: "palakagrawaljk"
+ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ---
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents an audit record that captures information about changes to Planner roster membership. This resource provides details about users being added to or removed from Microsoft Planner rosters, which control access and permissions to plans and tasks. These audit records help organizations track who modified roster membership, when those changes occurred, and which users were affected, supporting security monitoring and access control compliance requirements.
 
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).

@@ -1,8 +1,8 @@
 ---
 title: "officeNativeAuditRecord resource type"
-description: "**TODO: Add Description**"
-author: "diksha27"
-ms.subservice: compliance
+description: "Represents an audit record that captures information about activities within native Office applications."
+author: "palakagrawaljk"
+ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ---
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents an audit record that captures information about activities within native Office applications like Word, Excel, PowerPoint, and Outlook. This resource provides details about user interactions with files and documents in desktop Office applications, including information about security and compliance-related activities such as label applications, content protection events, and policy enforcement actions.
 
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).

@@ -1,8 +1,8 @@
 ---
 title: "microsoft365BackupBackupPolicyAuditRecord resource type"
-description: "**TODO: Add Description**"
-author: "diksha27"
-ms.subservice: compliance
+description: "Represents an audit record that captures activities related to backup policy configuration and management in Microsoft 365 Backup."
+author: "palakagrawaljk"
+ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ---
@@ -12,8 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+Represents an audit record that captures activities related to backup policy configuration and management in Microsoft 365 Backup. This record type documents events such as creating, modifying, or deleting backup policies, changing backup schedules, adjusting retention settings, and modifying the scope of backup protection for Microsoft 365 workloads, providing visibility into how data protection strategies are configured and managed.
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).
 

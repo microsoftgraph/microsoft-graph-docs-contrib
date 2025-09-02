@@ -1,8 +1,8 @@
 ---
 title: "mipLabelAnalyticsAuditRecord resource type"
-description: "**TODO: Add Description**"
-author: "diksha27"
-ms.subservice: compliance
+description: "Represents an audit record that captures analytical information about sensitivity label usage and effectiveness."
+author: "palakagrawaljk"
+ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ---
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents an audit record that captures analytical information about sensitivity label usage and effectiveness across the organization. This resource provides insights into label application patterns, user interactions with labeled content, and the overall effectiveness of the information protection strategy. These analytics help administrators understand how sensitivity labels are being used and identify opportunities to improve information protection policies.
 
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).

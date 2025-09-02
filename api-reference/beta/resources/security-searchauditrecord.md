@@ -1,8 +1,8 @@
 ---
 title: "searchAuditRecord resource type"
-description: "**TODO: Add Description**"
-author: "diksha27"
-ms.subservice: compliance
+description: "Represents an audit record for search activities performed across Microsoft 365 services."
+author: "palakagrawaljk"
+ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ---
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents an audit record that captures search activities performed across Microsoft 365 services. This resource tracks search queries executed by users, including search terms, scope, results, and other relevant metadata. These audit records help organizations monitor search activities for security analysis, data access patterns, and compliance purposes, providing visibility into what information users are actively seeking within the environment.
 
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).

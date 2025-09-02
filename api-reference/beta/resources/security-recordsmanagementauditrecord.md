@@ -1,8 +1,8 @@
 ---
 title: "recordsManagementAuditRecord resource type"
-description: "**TODO: Add Description**"
-author: "diksha27"
-ms.subservice: compliance
+description: "Represents an audit record for records management activities in Microsoft 365."
+author: "palakagrawaljk"
+ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ---
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents an audit record that captures records management activities in Microsoft 365. This resource tracks actions related to the lifecycle management of organizational records, including record creation, modification, disposition, and retention policy application. These audit records help organizations demonstrate compliance with regulatory requirements for records management and provide visibility into records handling across the organization.
 
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).

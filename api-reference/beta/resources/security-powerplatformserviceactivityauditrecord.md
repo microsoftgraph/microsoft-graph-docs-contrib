@@ -1,8 +1,8 @@
 ---
 title: "powerPlatformServiceActivityAuditRecord resource type"
-description: "**TODO: Add Description**"
-author: "diksha27"
-ms.subservice: compliance
+description: "Represents an audit record that captures information about service-level activities in the Power Platform."
+author: "palakagrawaljk"
+ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ---
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents an audit record that captures information about service-level activities in the Power Platform. This resource provides details about background services, system processes, and automated operations performed by the Power Platform infrastructure itself rather than by users or administrators. These audit records help organizations track system-level events, service health indicators, and platform operations that may affect their Power Platform resources.
 
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).

@@ -1,8 +1,8 @@
 ---
 title: "informationWorkerProtectionAuditRecord resource type"
-description: "**TODO: Add Description**"
-author: "diksha27"
-ms.subservice: compliance
+description: "Represents an audit record that captures security events related to information worker protection."
+author: "palakagrawaljk"
+ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ---
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents an audit record that captures security events related to information worker protection. This record type documents activities and operations that affect the security of knowledge workers, including security policy application, threat detection, and protective actions. It helps organizations track how information workers are being protected from security threats such as phishing, malware, account compromise, and data exfiltration attempts.
 
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).

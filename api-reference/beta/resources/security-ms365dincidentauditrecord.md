@@ -1,8 +1,8 @@
 ---
 title: "mS365DIncidentAuditRecord resource type"
-description: "**TODO: Add Description**"
-author: "diksha27"
-ms.subservice: compliance
+description: "Represents an audit record that captures information about security incidents in Microsoft 365 Defender."
+author: "palakagrawaljk"
+ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ---
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents an audit record that captures information about security incidents in Microsoft 365 Defender. This resource provides details about incident creation, modification, assignment, status changes, and resolution activities across the Microsoft 365 Defender platform. These audit records help security teams track the lifecycle of security incidents, understand who took which actions, and maintain a comprehensive audit trail of incident investigation and remediation processes.
 
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).

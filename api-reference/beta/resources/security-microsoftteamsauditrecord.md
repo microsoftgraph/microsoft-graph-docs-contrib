@@ -1,8 +1,8 @@
 ---
 title: "microsoftTeamsAuditRecord resource type"
-description: "**TODO: Add Description**"
-author: "diksha27"
-ms.subservice: compliance
+description: "Represents an audit record that captures user and system activities in Microsoft Teams."
+author: "palakagrawaljk"
+ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ---
@@ -12,8 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+Represents an audit record that captures user and system activities in Microsoft Teams. This record type documents events such as team creation, channel activities, chat messages, file operations, meeting activities, and app usage within Teams, providing visibility into collaboration activities and content sharing across the organization's Teams environment.
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).
 

@@ -1,8 +1,8 @@
 ---
 title: "dlpSensitiveInformationTypeRulePackageCmdletRecord resource type"
-description: "**TODO: Add Description**"
-author: "diksha27"
-ms.subservice: compliance
+description: "Represents an audit record that captures administrative cmdlet operations related to DLP sensitive information type rule packages."
+author: "palakagrawaljk"
+ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ---
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents an audit record that captures administrative cmdlet operations related to DLP sensitive information type rule packages. This record type documents actions taken by administrators when creating, importing, exporting, or managing Data Loss Prevention (DLP) rule packages through PowerShell cmdlets. Rule packages contain collections of sensitive information type definitions and are used to enforce consistent data protection policies across the organization.
 
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).

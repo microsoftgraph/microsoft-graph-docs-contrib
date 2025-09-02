@@ -1,8 +1,8 @@
 ---
 title: "powerAppsAuditAppRecord resource type"
-description: "**TODO: Add Description**"
-author: "diksha27"
-ms.subservice: compliance
+description: "Represents an audit record that captures information about activities related to Power Apps applications."
+author: "palakagrawaljk"
+ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ---
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents an audit record that captures information about activities related to Power Apps applications. This resource provides details about app creation, modification, sharing, permissions changes, and usage events in the Power Apps platform. These audit records help organizations track how low-code applications are being developed, deployed, and accessed across the organization to ensure governance and compliance with organizational policies.
 
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).

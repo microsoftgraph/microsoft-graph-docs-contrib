@@ -1,8 +1,8 @@
 ---
 title: "powerPlatformAdminDlpAuditRecord resource type"
-description: "**TODO: Add Description**"
-author: "diksha27"
-ms.subservice: compliance
+description: "Represents an audit record that captures information about administrative Data Loss Prevention activities in the Power Platform."
+author: "palakagrawaljk"
+ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ---
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents an audit record that captures information about administrative Data Loss Prevention (DLP) activities in the Power Platform. This resource provides details about the creation, modification, and management of DLP policies that govern the use of data connectors, environments, and other resources within Power Apps, Power Automate, and related services. These audit records help organizations track changes to their governance policies for low-code and no-code application development platforms.
 
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).

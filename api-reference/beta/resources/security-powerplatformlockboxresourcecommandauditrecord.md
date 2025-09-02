@@ -1,8 +1,8 @@
 ---
 title: "powerPlatformLockboxResourceCommandAuditRecord resource type"
-description: "**TODO: Add Description**"
-author: "diksha27"
-ms.subservice: compliance
+description: "Represents an audit record that captures information about commands executed during approved Customer Lockbox sessions in Power Platform."
+author: "palakagrawaljk"
+ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ---
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents an audit record that captures information about commands executed during approved Customer Lockbox sessions in Power Platform. This resource provides detailed logging of the specific actions taken by Microsoft support engineers when they access customer data in Power Platform services through the Customer Lockbox process. These audit records enable organizations to review exactly what operations were performed during authorized access sessions, supporting security monitoring and compliance requirements.
 
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).

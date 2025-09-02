@@ -1,8 +1,8 @@
 ---
 title: "purviewInsiderRiskCasesRecord resource type"
-description: "**TODO: Add Description**"
-author: "diksha27"
-ms.subservice: compliance
+description: "Represents an audit record for cases created in Microsoft Purview Insider Risk Management."
+author: "palakagrawaljk"
+ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ---
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents an audit record that captures cases created in Microsoft Purview Insider Risk Management. This resource tracks the lifecycle of insider risk cases, including case creation, updates, assignment, resolution, and other case management activities. These audit records help organizations maintain a record of how insider risk investigations are managed for compliance, governance, and operational purposes.
 
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).

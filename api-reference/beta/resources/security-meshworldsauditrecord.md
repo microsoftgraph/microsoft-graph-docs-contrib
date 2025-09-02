@@ -1,8 +1,8 @@
 ---
 title: "meshWorldsAuditRecord resource type"
-description: "**TODO: Add Description**"
-author: "diksha27"
-ms.subservice: compliance
+description: "Represents an audit record that captures activities related to Microsoft Mesh virtual world environments."
+author: "palakagrawaljk"
+ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ---
@@ -12,8 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+Represents an audit record that captures activities related to Microsoft Mesh virtual world environments. This record type documents events such as virtual space creation, modification, access, and interaction activities within Microsoft Mesh environments, providing visibility into mixed reality collaboration spaces and their usage patterns for security and compliance purposes.
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).
 

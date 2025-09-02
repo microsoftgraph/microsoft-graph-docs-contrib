@@ -1,8 +1,8 @@
 ---
 title: "msdeRolesSettingsAuditRecord resource type"
-description: "**TODO: Add Description**"
-author: "diksha27"
-ms.subservice: compliance
+description: "Represents an audit record that captures information about changes to role-based access control settings in Microsoft Defender for Endpoint."
+author: "palakagrawaljk"
+ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ---
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents an audit record that captures information about changes to role-based access control settings in Microsoft Defender for Endpoint (MDE). This resource provides details about modifications to security roles, permissions assignments, and access controls that determine who can perform specific actions within the MDE portal. These audit records help administrators track changes to the security role structure, understand who made the changes, and maintain a comprehensive audit trail of access control modifications.
 
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).

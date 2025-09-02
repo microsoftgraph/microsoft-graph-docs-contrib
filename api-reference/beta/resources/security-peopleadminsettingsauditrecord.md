@@ -1,8 +1,8 @@
 ---
 title: "peopleAdminSettingsAuditRecord resource type"
-description: "**TODO: Add Description**"
-author: "diksha27"
-ms.subservice: compliance
+description: "Represents an audit record that captures information about changes to people and social settings in Microsoft 365."
+author: "palakagrawaljk"
+ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ---
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents an audit record that captures information about changes to people and social settings in Microsoft 365. This resource provides details about modifications to organizational settings related to people experiences, such as the People Card, social features, insights, and colleague recommendations. These audit records help administrators track changes to user experience configurations that affect how people information is displayed and shared across Microsoft 365 services.
 
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).

@@ -1,8 +1,8 @@
 ---
 title: "microsoftPurviewPolicyOperationRecord resource type"
-description: "**TODO: Add Description**"
-author: "diksha27"
-ms.subservice: compliance
+description: "Represents an audit record that captures activities related to Microsoft Purview policy management operations."
+author: "palakagrawaljk"
+ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ---
@@ -12,8 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+Represents an audit record that captures activities related to Microsoft Purview policy management operations. This record type documents events such as creating, modifying, or deleting information protection, data governance, compliance, and risk management policies within the Microsoft Purview suite, providing visibility into how governance and compliance controls are implemented across the organization.
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).
 

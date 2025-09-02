@@ -1,8 +1,8 @@
 ---
 title: "mdatpAuditRecord resource type"
-description: "**TODO: Add Description**"
-author: "diksha27"
-ms.subservice: compliance
+description: "Represents an audit record that captures activities related to Microsoft Defender for Endpoint (formerly Microsoft Defender ATP)."
+author: "palakagrawaljk"
+ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ---
@@ -12,8 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+Represents an audit record that captures activities related to Microsoft Defender for Endpoint (formerly Microsoft Defender ATP). This record type documents events such as endpoint security policy changes, alert management, investigation actions, and remediation activities performed within the Defender for Endpoint platform, providing visibility into endpoint security management operations.
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).
 

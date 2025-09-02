@@ -1,8 +1,8 @@
 ---
 title: "mipAutoLabelItemAuditRecord resource type"
-description: "**TODO: Add Description**"
-author: "diksha27"
-ms.subservice: compliance
+description: "Represents an audit record that captures automatic sensitivity labeling activities for content items."
+author: "palakagrawaljk"
+ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ---
@@ -12,8 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+Represents an audit record that captures automatic sensitivity labeling activities for content items. This record type documents events related to the automatic application of sensitivity labels to various content types based on content scanning and classification rules, providing a generic record of automated labeling activities across different workloads and content repositories.
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).
 

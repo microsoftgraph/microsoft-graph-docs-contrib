@@ -1,8 +1,8 @@
 ---
 title: "m365ComplianceConnectorAuditRecord resource type"
-description: "**TODO: Add Description**"
-author: "diksha27"
-ms.subservice: compliance
+description: "Represents an audit record that captures activities related to Microsoft 365 compliance connectors that import third-party data for compliance processing."
+author: "palakagrawaljk"
+ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ---
@@ -12,8 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+Represents an audit record that captures activities related to Microsoft 365 compliance connectors that import third-party data for compliance processing. This record type documents events such as connector configuration changes, data import operations, and processing status, providing visibility into how non-Microsoft data sources are being incorporated into the compliance ecosystem.
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).
 

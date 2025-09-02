@@ -1,8 +1,8 @@
 ---
 title: "dataCenterSecurityBaseAuditRecord resource type"
-description: "**TODO: Add Description**"
-author: "diksha27"
-ms.subservice: compliance
+description: "Represents a base type for data center security audit records that capture security-related activities and operations in Microsoft data centers."
+author: "palakagrawaljk"
+ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ---
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents a base type for data center security audit records that capture security-related activities and operations in Microsoft data centers. This resource serves as the foundation for more specific data center security audit record types.
 
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).

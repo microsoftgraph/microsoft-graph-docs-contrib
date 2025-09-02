@@ -1,8 +1,8 @@
 ---
 title: "hrSignalAuditRecord resource type"
-description: "**TODO: Add Description**"
-author: "diksha27"
-ms.subservice: compliance
+description: "Represents an audit record that captures human resources (HR) signals related to security events."
+author: "palakagrawaljk"
+ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ---
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents an audit record that captures human resources (HR) signals related to security events. This record type documents HR-related activities and changes that may have security implications, such as employee status changes, role transitions, performance reviews, or other personnel events that could affect security posture. These audit records help organizations correlate HR data with security monitoring to detect potential insider threats or security risks associated with personnel changes.
 
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).

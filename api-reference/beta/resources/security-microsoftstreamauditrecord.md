@@ -1,8 +1,8 @@
 ---
 title: "microsoftStreamAuditRecord resource type"
-description: "**TODO: Add Description**"
-author: "diksha27"
-ms.subservice: compliance
+description: "Represents an audit record that captures activities related to Microsoft Stream video service operations."
+author: "palakagrawaljk"
+ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ---
@@ -12,8 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+Represents an audit record that captures activities related to Microsoft Stream video service operations. This record type documents events such as video uploads, modifications, sharing, viewing, and permissions changes, providing visibility into video content management and usage within the organization, including details about content creators, viewers, and access settings.
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).
 

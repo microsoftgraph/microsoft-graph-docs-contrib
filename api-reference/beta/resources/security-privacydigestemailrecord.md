@@ -1,8 +1,8 @@
 ---
 title: "privacyDigestEmailRecord resource type"
-description: "**TODO: Add Description**"
-author: "diksha27"
-ms.subservice: compliance
+description: "Represents an audit record that captures information about privacy digest email notifications."
+author: "palakagrawaljk"
+ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ---
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents an audit record that captures information about privacy digest email notifications. This resource provides details about automated email summaries sent to administrators and data privacy officers containing insights about privacy-related events, data subject requests, potential privacy risks, and compliance status. These audit records help organizations track what privacy information was communicated, to whom, and when, supporting governance and oversight of privacy management activities.
 
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).

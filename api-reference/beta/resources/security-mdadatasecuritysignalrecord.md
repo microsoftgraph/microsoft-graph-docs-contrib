@@ -1,8 +1,8 @@
 ---
 title: "mdaDataSecuritySignalRecord resource type"
-description: "**TODO: Add Description**"
-author: "diksha27"
-ms.subservice: compliance
+description: "Represents a record that captures Microsoft Defender for Apps (MDA) data security signals related to potential security threats."
+author: "palakagrawaljk"
+ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ---
@@ -12,8 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+Represents a record that captures Microsoft Defender for Apps (MDA) data security signals related to potential security threats. This record type documents security indicators, anomalies, and risk signals detected in cloud applications and services, providing detailed information about potential security incidents and data protection concerns that may require investigation.
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).
 

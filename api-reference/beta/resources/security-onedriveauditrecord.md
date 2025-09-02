@@ -1,8 +1,8 @@
 ---
 title: "oneDriveAuditRecord resource type"
-description: "**TODO: Add Description**"
-author: "diksha27"
-ms.subservice: compliance
+description: "Represents an audit record that captures information about activities in OneDrive for Business."
+author: "palakagrawaljk"
+ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ---
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents an audit record that captures information about activities in OneDrive for Business. This resource provides details about file operations, sharing events, security-related actions, and compliance activities performed on content stored in OneDrive. These audit records help organizations track who accessed, modified, shared, or deleted files, enabling comprehensive monitoring of cloud storage activity for security and compliance purposes.
 
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).

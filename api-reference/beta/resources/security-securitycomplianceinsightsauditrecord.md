@@ -1,8 +1,8 @@
 ---
 title: "securityComplianceInsightsAuditRecord resource type"
-description: "**TODO: Add Description**"
-author: "diksha27"
-ms.subservice: compliance
+description: "Represents an audit record for security and compliance insight activities in Microsoft 365."
+author: "palakagrawaljk"
+ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ---
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents an audit record that captures security and compliance insight activities in Microsoft 365. This resource tracks interactions with security and compliance analytics, reports, dashboards, and data visualizations within the Security & Compliance Center. These audit records help organizations monitor how security and compliance insights are being accessed and utilized, providing visibility into data-driven security management activities.
 
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).

@@ -1,8 +1,8 @@
 ---
 title: "plannerTenantSettingsAuditRecord resource type"
-description: "**TODO: Add Description**"
-author: "diksha27"
-ms.subservice: compliance
+description: "Represents an audit record that captures information about changes to tenant-level Planner settings."
+author: "palakagrawaljk"
+ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ---
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents an audit record that captures information about changes to tenant-level Planner settings. This resource provides details about modifications to organization-wide configurations for Microsoft Planner, including service enablement, feature toggles, and global policy settings. These audit records help administrators track who modified tenant-wide Planner settings, when those changes occurred, and what specific configurations were affected.
 
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).

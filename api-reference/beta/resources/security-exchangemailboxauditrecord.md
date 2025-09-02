@@ -1,8 +1,8 @@
 ---
 title: "exchangeMailboxAuditRecord resource type"
-description: "**TODO: Add Description**"
-author: "diksha27"
-ms.subservice: compliance
+description: "Represents an audit record that captures user interactions with mailbox content in Exchange Online."
+author: "palakagrawaljk"
+ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ---
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents an audit record that captures user interactions with mailbox content in Exchange Online. This record type documents actions performed on email messages, calendar items, tasks, and other mailbox items. It tracks activities such as message creation, reading, modification, deletion, and folder movements. These audit records help organizations monitor user activities within mailboxes for security monitoring, insider threat detection, and compliance with data protection requirements.
 
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).

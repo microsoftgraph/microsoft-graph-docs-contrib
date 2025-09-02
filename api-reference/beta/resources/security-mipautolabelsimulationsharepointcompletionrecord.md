@@ -1,8 +1,8 @@
 ---
 title: "mipAutoLabelSimulationSharePointCompletionRecord resource type"
-description: "**TODO: Add Description**"
-author: "diksha27"
-ms.subservice: compliance
+description: "Represents an audit record that captures completion information for SharePoint auto-labeling simulation runs."
+author: "palakagrawaljk"
+ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ---
@@ -12,8 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+Represents an audit record that captures completion information for SharePoint auto-labeling simulation runs. This record type documents the final results and summary statistics of simulation mode runs for automatic sensitivity labeling in SharePoint, providing insights into what would happen if auto-labeling policies were applied in production without actually applying the labels, helping administrators evaluate policy effectiveness and potential impact.
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).
 

@@ -1,8 +1,8 @@
 ---
 title: "informationBarrierPolicyApplicationAuditRecord resource type"
-description: "**TODO: Add Description**"
-author: "diksha27"
-ms.subservice: compliance
+description: "Represents an audit record that captures information barrier policy application events."
+author: "palakagrawaljk"
+ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ---
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents an audit record that captures information barrier policy application events. This record type documents when information barrier policies are applied to users or groups, including details about which policies were applied, by whom, and the affected users or segments. Information barriers help organizations restrict communication and collaboration between groups to avoid conflicts of interest or protect sensitive information, and these audit records help track their enforcement.
 
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).

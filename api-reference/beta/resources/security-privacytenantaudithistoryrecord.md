@@ -1,8 +1,8 @@
 ---
 title: "privacyTenantAuditHistoryRecord resource type"
-description: "**TODO: Add Description**"
-author: "diksha27"
-ms.subservice: compliance
+description: "Represents an audit record that tracks tenant-level privacy management activities and configuration changes."
+author: "palakagrawaljk"
+ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ---
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents an audit record that tracks tenant-level privacy management activities and configuration changes. This resource provides details about administrative actions taken to configure privacy settings, policy changes, and other tenant-wide privacy management activities. These audit records help organizations maintain a historical record of privacy management decisions and configurations for compliance and governance purposes.
 
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).

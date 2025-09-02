@@ -1,8 +1,8 @@
 ---
 title: "msdeResponseActionsAuditRecord resource type"
-description: "**TODO: Add Description**"
-author: "diksha27"
-ms.subservice: compliance
+description: "Represents an audit record that captures information about response actions performed in Microsoft Defender for Endpoint."
+author: "palakagrawaljk"
+ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ---
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents an audit record that captures information about response actions performed in Microsoft Defender for Endpoint (MDE). This resource provides details about remediation and containment actions taken on devices, such as isolating machines, collecting investigation packages, running anti-virus scans, or removing files. These audit records help security teams track who initiated specific response actions, when they were performed, and the outcomes of those actions during security incident response.
 
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).

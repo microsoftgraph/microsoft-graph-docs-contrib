@@ -1,8 +1,8 @@
 ---
 title: "powerAppsAuditPlanRecord resource type"
-description: "**TODO: Add Description**"
-author: "diksha27"
-ms.subservice: compliance
+description: "Represents an audit record that captures information about activities related to Power Apps plans and licenses."
+author: "palakagrawaljk"
+ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ---
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents an audit record that captures information about activities related to Power Apps plans and licenses. This resource provides details about subscription management, license assignments, plan purchases, and capacity allocation for the Power Apps platform. These audit records help organizations track changes to their Power Platform licensing structure, understand license usage patterns, and maintain compliance with licensing agreements.
 
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).

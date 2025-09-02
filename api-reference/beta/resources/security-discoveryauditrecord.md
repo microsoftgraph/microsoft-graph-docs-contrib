@@ -1,8 +1,8 @@
 ---
 title: "discoveryAuditRecord resource type"
-description: "**TODO: Add Description**"
-author: "diksha27"
-ms.subservice: compliance
+description: "Represents an audit record that captures eDiscovery-related operations and activities."
+author: "palakagrawaljk"
+ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ---
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents an audit record that captures eDiscovery-related operations and activities. This record type documents actions taken within eDiscovery workflows, including case creation, content searches, legal holds, exports, and reviews. It provides a comprehensive audit trail of all discovery actions for legal compliance, investigation tracking, and regulatory requirements.
 
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).

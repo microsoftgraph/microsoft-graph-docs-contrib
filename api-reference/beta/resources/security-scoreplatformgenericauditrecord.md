@@ -1,8 +1,8 @@
 ---
 title: "scorePlatformGenericAuditRecord resource type"
-description: "**TODO: Add Description**"
-author: "diksha27"
-ms.subservice: compliance
+description: "Represents a generic audit record for activities in security scoring platforms."
+author: "palakagrawaljk"
+ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ---
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents a generic audit record for activities in security scoring platforms. This resource captures various administrative and operational actions performed within security assessment and scoring services, such as Microsoft Secure Score. These audit records help organizations track changes to security scoring configurations, assessments, and recommendations, providing visibility into how security posture evaluations are being managed.
 
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).

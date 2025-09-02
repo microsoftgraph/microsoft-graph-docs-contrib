@@ -1,8 +1,8 @@
 ---
 title: "plannerCopyPlanAuditRecord resource type"
-description: "**TODO: Add Description**"
-author: "diksha27"
-ms.subservice: compliance
+description: "Represents an audit record that captures information about Planner plan copy operations."
+author: "palakagrawaljk"
+ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ---
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents an audit record that captures information about Planner plan copy operations. This resource provides details about when users copy Microsoft Planner plans, including information about the source plan, destination location, user who performed the action, and what content was copied. These audit records help organizations track the duplication and reuse of Planner content across teams and groups for compliance and governance purposes.
 
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).

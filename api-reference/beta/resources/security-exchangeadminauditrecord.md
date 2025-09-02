@@ -1,8 +1,8 @@
 ---
 title: "exchangeAdminAuditRecord resource type"
-description: "**TODO: Add Description**"
-author: "diksha27"
-ms.subservice: compliance
+description: "Represents an audit record that captures administrative activities in Exchange Online."
+author: "palakagrawaljk"
+ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ---
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents an audit record that captures administrative activities in Exchange Online. This record type documents actions performed by administrators in the Exchange Admin Center, Exchange Management Shell, or via Exchange Online PowerShell. The audit information includes details about mailbox configurations, transport rule modifications, permission changes, and other administrative operations that affect the Exchange environment. These records help organizations track administrative changes for security monitoring, compliance, and troubleshooting purposes.
 
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).

@@ -1,8 +1,8 @@
 ---
 title: "fhirBaseUrlApproveRecord resource type"
-description: "**TODO: Add Description**"
-author: "diksha27"
-ms.subservice: compliance
+description: "Represents an audit record that captures FHIR base URL approval operations in healthcare environments."
+author: "palakagrawaljk"
+ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ---
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents an audit record that captures FHIR base URL approval operations in healthcare environments. This record type documents when an administrator or authorized user approves a Fast Healthcare Interoperability Resources (FHIR) base URL for use in the system. The approval process is an important security control for healthcare organizations, and these audit records help track the verification and authorization of FHIR endpoints for compliance with healthcare regulations.
 
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).

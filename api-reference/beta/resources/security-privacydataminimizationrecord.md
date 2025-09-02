@@ -1,8 +1,8 @@
 ---
 title: "privacyDataMinimizationRecord resource type"
-description: "**TODO: Add Description**"
-author: "diksha27"
-ms.subservice: compliance
+description: "Represents an audit record that captures information about data minimization activities for privacy compliance."
+author: "palakagrawaljk"
+ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ---
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents an audit record that captures information about data minimization activities for privacy compliance. This resource provides details about actions taken to minimize the collection, processing, and storage of personal data in accordance with privacy regulations such as GDPR. These audit records help organizations track data retention practices, automatic deletion processes, and other data minimization efforts to demonstrate compliance with the principle of data minimization.
 
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).

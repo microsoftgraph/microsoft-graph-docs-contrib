@@ -1,8 +1,8 @@
 ---
 title: "labelAnalyticsAggregateAuditRecord resource type"
-description: "**TODO: Add Description**"
-author: "diksha27"
-ms.subservice: compliance
+description: "Represents an audit record that captures aggregated analytics data related to sensitivity label usage and application across the organization."
+author: "palakagrawaljk"
+ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ---
@@ -12,8 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+Represents an audit record that captures aggregated analytics data related to sensitivity label usage and application across the organization. This record type provides insights into label distribution, trends, and usage patterns to help administrators evaluate the effectiveness of their information protection policies.
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).
 

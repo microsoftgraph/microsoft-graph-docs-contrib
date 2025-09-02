@@ -1,8 +1,8 @@
 ---
 title: "microsoftGraphDataConnectConsent resource type"
-description: "**TODO: Add Description**"
-author: "diksha27"
-ms.subservice: compliance
+description: "Represents an audit record that captures consent activities related to Microsoft Graph Data Connect operations."
+author: "palakagrawaljk"
+ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ---
@@ -12,8 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+Represents an audit record that captures consent activities related to Microsoft Graph Data Connect operations. This record type documents events such as administrator approval or rejection of data access requests, consent scope changes, and consent review activities for bulk data access through Microsoft Graph Data Connect, providing visibility into data governance decisions for large-scale data extraction.
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).
 

@@ -1,8 +1,8 @@
 ---
 title: "exchangeAggregatedOperationRecord resource type"
-description: "**TODO: Add Description**"
-author: "diksha27"
-ms.subservice: compliance
+description: "Represents an aggregated audit record that summarizes operational activities in Exchange Online."
+author: "palakagrawaljk"
+ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ---
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents an aggregated audit record that summarizes operational activities in Exchange Online. This record type consolidates multiple related Exchange operations into a single audit event, providing a comprehensive view of system activities and actions. The aggregation helps reduce audit log volume while still maintaining visibility into important operational events such as mail flow, configuration changes, and service activities.
 
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).

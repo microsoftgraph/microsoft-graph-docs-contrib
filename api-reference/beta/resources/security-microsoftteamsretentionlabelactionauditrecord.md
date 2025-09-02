@@ -1,8 +1,8 @@
 ---
 title: "microsoftTeamsRetentionLabelActionAuditRecord resource type"
-description: "**TODO: Add Description**"
-author: "diksha27"
-ms.subservice: compliance
+description: "Represents an audit record that captures retention label activities in Microsoft Teams."
+author: "palakagrawaljk"
+ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ---
@@ -12,8 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+Represents an audit record that captures retention label activities in Microsoft Teams. This record type documents events such as applying, modifying, or removing retention labels on Teams content, including messages, files, and other items, providing visibility into content lifecycle management and compliance activities within the Teams environment.
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).
 

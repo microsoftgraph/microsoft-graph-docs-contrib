@@ -1,8 +1,8 @@
 ---
 title: "microsoftFlowAuditRecord resource type"
-description: "**TODO: Add Description**"
-author: "diksha27"
-ms.subservice: compliance
+description: "Represents an audit record that captures activities related to Microsoft Power Automate (formerly Flow) operations."
+author: "palakagrawaljk"
+ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ---
@@ -12,8 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+Represents an audit record that captures activities related to Microsoft Power Automate (formerly Flow) operations. This record type documents events such as flow creation, modification, execution, sharing, and deletion, providing visibility into automated workflows and their operational history within the organization, including information about flow triggers, actions, connections, and permissions.
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).
 

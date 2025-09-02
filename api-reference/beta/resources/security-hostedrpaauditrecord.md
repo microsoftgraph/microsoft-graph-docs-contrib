@@ -1,8 +1,8 @@
 ---
 title: "hostedRpaAuditRecord resource type"
-description: "**TODO: Add Description**"
-author: "diksha27"
-ms.subservice: compliance
+description: "Represents an audit record that captures activities related to hosted Robotic Process Automation (RPA)."
+author: "palakagrawaljk"
+ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ---
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents an audit record that captures activities related to hosted Robotic Process Automation (RPA). This record type documents actions performed by RPA processes and automations, including bot executions, workflow runs, and data processing operations. These audit records help organizations track automated processes for security monitoring, operational oversight, and ensuring that automations are operating within defined parameters and permissions.
 
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).
