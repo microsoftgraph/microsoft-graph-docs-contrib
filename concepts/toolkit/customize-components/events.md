@@ -9,6 +9,9 @@ ms.topic: how-to
 
 # Handle events exposed by Microsoft Graph Toolkit components
 
+> [!CAUTION]
+> The Microsoft Graph CLI (mgcli) is deprecated and will be retired on August 28th, 2026. Users should migrate to the Microsoft Graph PowerShell SDK or other Microsoft Graph SDKs. For more information, see the [Deprecation announcement](https://devblogs.microsoft.com/microsoft365dev/microsoft-graph-cli-retirement/).
+
 Many Microsoft Graph Toolkit components emit custom events. Attaching event handlers to these events allows you to respond to them and control the behavior of your app.
 
 ## Discover which events components emit
