@@ -36,6 +36,7 @@ Inherits from [entity](../resources/entity.md).
 |isBreakglassEnabled|Boolean|Is breakglass property enabled or not|
 |machineName|String|Machine name of sensor|
 |version|String|Version of sensor|
+|status|microsoft.graph.sensorStatus|Status of sensor such as Active or Inactive|
 
 ## Relationships
 None.

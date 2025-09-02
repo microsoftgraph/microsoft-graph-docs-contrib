@@ -66,7 +66,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/onPremisesPublishingProfiles/{onPremisesPublishingProfilesId}/sensors/{privateAccessSensorId}
+GET https://graph.microsoft.com/beta/onPremisesPublishingProfiles/privateAccess/sensors/{privateAccessSensorId}
 ```
 
 
@@ -91,7 +91,8 @@ Content-Type: application/json
     "machineName": "String",
     "externalIp": "String",
     "version": "String",
-    "isBreakglassEnabled": "Boolean"
+    "isBreakglassEnabled": "Boolean",
+    "status": "String"
   }
 }
 ```

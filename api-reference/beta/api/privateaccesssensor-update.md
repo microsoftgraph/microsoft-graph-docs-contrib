@@ -49,13 +49,10 @@ PATCH /onPremisesPublishingProfiles/{onPremisesPublishingProfilesId}/sensors/{pr
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
 
-**TODO: Remove properties that don't apply**
+
 |Property|Type|Description|
 |:---|:---|:---|
-|machineName|String|**TODO: Add Description** Required.|
-|externalIp|String|**TODO: Add Description** Required.|
-|version|String|**TODO: Add Description** Required.|
-|isBreakglassEnabled|Boolean|**TODO: Add Description** Required.|
+|isBreakglassEnabled|Boolean|Indicates whether breakglass mode is enabled or not for the sensor. Required.|
 
 
 
@@ -74,7 +71,7 @@ The following example shows a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/onPremisesPublishingProfiles/{onPremisesPublishingProfilesId}/sensors/{privateAccessSensorId}
+PATCH https://graph.microsoft.com/beta/onPremisesPublishingProfiles/privateAccess/sensors/{privateAccessSensorId}
 Content-Type: application/json
 
 {
@@ -82,7 +79,8 @@ Content-Type: application/json
   "machineName": "String",
   "externalIp": "String",
   "version": "String",
-  "isBreakglassEnabled": "Boolean"
+  "isBreakglassEnabled": "Boolean",
+  "status": "String",
 }
 ```
 

@@ -66,7 +66,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/onPremisesPublishingProfiles/{onPremisesPublishingProfilesId}/sensors
+GET https://graph.microsoft.com/beta/onPremisesPublishingProfiles/privateAccess/sensors
 ```
 
 
@@ -85,16 +85,18 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.privateAccessSensor",
-      "id": "f052d43d-effc-2df0-70a8-5e899d400d42",
-      "machineName": "String",
-      "externalIp": "String",
-      "version": "String",
-      "isBreakglassEnabled": "Boolean"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#onPremisesPublishingProfiles('privateAccess')/sensors",
+    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET onPremisesPublishingProfiles('<key>')/sensors?$select=externalIp,machineName",
+    "value": [
+        {
+          "id": "f052d43d-effc-2df0-70a8-5e899d400d42",
+          "machineName": "String",
+          "externalIp": "String",
+          "version": "String",
+          "isBreakglassEnabled": "Boolean",
+          "status": "String"
+        }
+    ]
 }
 ```
 
