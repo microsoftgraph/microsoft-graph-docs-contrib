@@ -55,12 +55,12 @@ You can specify the following properties when creating a **fraudProtectionProvid
 **TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The unique identifier for this fraud protection provider configuration. Inherited from [entity](../resources/entity.md). Inherits from [entity](../resources/entity.md)|
-|displayName|String|The display name of this fraud protection provider configuration. Inherited from [fraudProtectionProvider](../resources/fraudprotectionprovider.md).|
-|privateKey|String|Log into the Arkose Portal, find the value under Settings>Keys. If you need help with your keys, contact your Arkose Customer Success Manager.|
-|publicKey|String|Log into the Arkose Portal, find the value under Settings>Keys. If you need help with your keys, contact your Arkose Customer Success Manager.|
-|verifySubDomain|String|The verifySubDomain is used to invoke the Arkose service from the Microsoft authentication server. Request from your Arkose Customer Success Manager. Default value: verify-api|
-|clientSubDomain|String|The clientSubDomain is used to invoke the Arkose service from the client application. Request from your Arkose Customer Success Manager. Default value: client-api|
+|id|String|The unique identifier for this fraud protection provider configuration. Required. Inherited from [entity](../resources/entity.md). Inherits from [entity](../resources/entity.md)|
+|displayName|String|The display name of this fraud protection provider configuration. Required. Inherited from [fraudProtectionProvider](../resources/fraudprotectionprovider.md).|
+|privateKey|String|Log into the Arkose Portal, find the value under Settings>Keys. If you need help with your keys, contact your Arkose Customer Success Manager. Required.|
+|publicKey|String|Log into the Arkose Portal, find the value under Settings>Keys. If you need help with your keys, contact your Arkose Customer Success Manager. Required.|
+|verifySubDomain|String|The verifySubDomain is used to invoke the Arkose service from the Microsoft authentication server. Request from your Arkose Customer Success Manager. If Arkose does not provide a custom value, enter: verify-api. Required.|
+|clientSubDomain|String|The clientSubDomain is used to invoke the Arkose service from the client application. Request from your Arkose Customer Success Manager. If Arkose does not provide a custom value, enter: client-api. Required.|
 
 
 

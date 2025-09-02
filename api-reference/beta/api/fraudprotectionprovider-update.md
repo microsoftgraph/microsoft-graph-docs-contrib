@@ -51,11 +51,11 @@ PATCH identity/riskprevention/fraudprotectionproviders/{fraudProtectionProviderI
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|The display name of this Arkose fraud protection provider configuration. Required.|
-|privateKey|String|Log into the Arkose Portal, find the value under Settings>Keys. If you need help with your keys, contact your Arkose Customer Success Manager.|
-|publicKey|String|Log into the Arkose Portal, find the value under Settings>Keys. If you need help with your keys, contact your Arkose Customer Success Manager.|
-|verifySubDomain|String|The verifySubDomain is used to invoke the Arkose service from the Microsoft authentication server. Request from your Arkose Customer Success Manager. Default value: verify-api|
-|clientSubDomain|String|The clientSubDomain is used to invoke the Arkose service from the client application. Request from your Arkose Customer Success Manager. Default value: client-api|
+|displayName|String|The display name of this Arkose fraud protection provider configuration. Optional.|
+|privateKey|String|Log into the Arkose Portal, find the value under Settings>Keys. If you need help with your keys, contact your Arkose Customer Success Manager. Optional.|
+|publicKey|String|Log into the Arkose Portal, find the value under Settings>Keys. If you need help with your keys, contact your Arkose Customer Success Manager. Optional.|
+|verifySubDomain|String|The verifySubDomain is used to invoke the Arkose service from the Microsoft authentication server. Request from your Arkose Customer Success Manager. If Arkose does not provide a custom value, enter: verify-api. Optional.|
+|clientSubDomain|String|The clientSubDomain is used to invoke the Arkose service from the client application. Request from your Arkose Customer Success Manager. If Arkose does not provide a custom value, enter: client-api. Optional.|
 
 
 ## Response

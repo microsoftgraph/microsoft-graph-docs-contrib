@@ -70,7 +70,7 @@ You must specify the **@odata.type** property and the value of the [authenticati
 |handler|[onPhoneMethodLoadStartHandler](../resources/onphonemethodloadstarthandler.md) | The handler to invoke when conditions are met. Can be updated for the **onPhoneMethodStartListener** type. |
 |handler|[onFraudProtectionLoadStartHandler](../resources/onFraudProtectionLoadStartHandler.md) | The handler to invoke when conditions are met. Can be updated for the **onFraudProtectionLoadStartListener** type. |
 |priority|Int32|The priority of this handler. Between 0 (lower priority) and 1000 (higher priority). Required.|
-|displayName|String|The display name of fraud protection provider configuration. Optional.|
+|displayName|String|The display name of the authentication event listener policy. Optional.|
 
 ## Response
 
