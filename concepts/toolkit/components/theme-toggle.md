@@ -9,6 +9,9 @@ ms.topic: article
 
 # Theme toggle component in the Microsoft Graph Toolkit
 
+> [!CAUTION]
+> The Microsoft Graph CLI (mgcli) is deprecated and will be retired on August 28th, 2026. Users should migrate to the Microsoft Graph PowerShell SDK or other Microsoft Graph SDKs. For more information, see the [Deprecation announcement](https://devblogs.microsoft.com/microsoft365dev/microsoft-graph-cli-retirement/).
+
 The theme toggle component allows the user to set or change the document theme from light to dark using a toggle.
 
 A user is able to use the theme toggle component to set the default theme to `light` or `dark`. The user can then toggle these modes using a toggle switch.
