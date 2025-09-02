@@ -50,16 +50,16 @@ If successful, this method returns a `201 Created` response code and a new [work
 
 ### Create a reply of `plain` contentType
 
-The following example shows creating a reply of `plain` contentType.
-
 #### Request
 
+The following example shows a request to create a reply of `plain` contentType.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_workbookcommentreply_from_workbookcomment"
 }-->
 
-# [HTTP](#tab/http)
 ```http
 POST https://graph.microsoft.com/beta/drive/items/{id}/workbook/comments/{id}/replies
 Content-type: application/json
@@ -94,8 +94,11 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/python/create-workbookcommentreply-from-workbookcomment-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 #### Response
+
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -120,9 +123,9 @@ Content-type: application/json
 
 ### Create a reply of `mention` contentType
 
-The following example shows creating a reply of `mention` contentType.
-
 #### Request
+
+The following example shows a request to create a reply of `mention` contentType.
 
 <!-- {
   "blockType": "request",
@@ -144,7 +147,9 @@ Content-type: application/json
 }
 ```
 
-### Response
+#### Response
+
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 

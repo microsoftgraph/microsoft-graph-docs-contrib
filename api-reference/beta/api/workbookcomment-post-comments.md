@@ -50,9 +50,9 @@ If successful, this method returns a `201 Created` response code and a new [work
 
 ### Create a comment of `plain` contentType
 
-The following example shows creating a comment of `plain` contentType.
-
 #### Request
+
+The following example shows a request to create a comment of `plain` contentType.
 
 <!-- {
   "blockType": "request",
@@ -71,6 +71,8 @@ Content-type: application/json
 ```
 
 #### Response
+
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -96,9 +98,9 @@ Content-type: application/json
 
 ### Create a comment of `mention` contentType
 
-The following example shows creating a comment of `mention` contentType.
-
 #### Request
+
+The following example shows a request to create a comment of `mention` contentType.
 
 <!-- {
   "blockType": "request",
@@ -122,6 +124,8 @@ Content-type: application/json
 ```
 
 #### Response
+
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
