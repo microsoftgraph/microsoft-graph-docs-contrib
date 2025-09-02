@@ -9,6 +9,9 @@ ms.topic: article
 
 # Templates in the Microsoft Graph Toolkit
 
+> [!CAUTION]
+> The Microsoft Graph CLI (mgcli) is deprecated and will be retired on August 28th, 2026. Users should migrate to the Microsoft Graph PowerShell SDK or other Microsoft Graph SDKs. For more information, see the [Deprecation announcement](https://devblogs.microsoft.com/microsoft365dev/microsoft-graph-cli-retirement/).
+
 Most Microsoft Graph Toolkit components support the use of custom templates to modify the content of a component.
 
 All web components support templates based on the `<template>` element. For example, to override the template of a component, add a `<template>` element inside a component.
