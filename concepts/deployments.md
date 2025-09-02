@@ -46,7 +46,7 @@ The following table shows the service root endpoints for Microsoft Graph and [Gr
 | National Cloud | Microsoft Graph | Graph Explorer |
 | -------------- | --------------- | -------------- |
 | Microsoft Graph global service | `https://graph.microsoft.com`| [https://developer.microsoft.com/graph/graph-explorer](https://developer.microsoft.com/graph/graph-explorer) |
-| Microsoft Graph for US Government L4 | `https://graph.microsoft.us`| Not supported. |
+| Microsoft Graph for US Government L4 (GCC High) | `https://graph.microsoft.us`| Not supported. |
 | Microsoft Graph for US Government L5 (DOD) | `https://dod-graph.microsoft.us` | Not supported. |
 | Microsoft Graph China operated by 21Vianet | `https://microsoftgraph.chinacloudapi.cn` | Not supported. |
 

@@ -1,21 +1,21 @@
 ---
 title: "Update rules in privileged identity management (PIM)"
-description: "Learn how to update rules in PIM using Microsoft Graph."
+description: "Learn how to update rules in PIM by using Microsoft Graph."
 author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: rianakarim
 ms.localizationpriority: medium
 ms.topic: how-to
 ms.subservice: entra-id-governance
-ms.date: 09/24/2024
+ms.date: 08/29/2025
 #Customer intent: As a developer, I want to update settings and rules in Privileged Identity Management (PIM) using Microsoft Graph APIs, so that I can manage the activation, approval, and expiration settings for different roles and groups in PIM.
 ---
 
-# Update rules in PIM using Microsoft Graph
+# Update rules in PIM by using Microsoft Graph
 
-The following article provides examples for using Microsoft Graph APIs to update different rules that are assigned to Microsoft Entra roles or groups through Privileged Identity Management (PIM). To understand the structure of rules in PIM, see [Working with rules in PIM using Microsoft Graph](identity-governance-pim-rules-overview.md).
+This article provides examples for using Microsoft Graph APIs to update different rules that are assigned to Microsoft Entra roles or groups through Privileged Identity Management (PIM). To understand the structure of rules in PIM, see [Working with rules in PIM using Microsoft Graph](identity-governance-pim-rules-overview.md).
 
-When updating the rules, you must include the `@odata.type` for the derived type in the request body. For example, to update an activation rule of ID `Enablement_EndUser_Assignment`, you must include `"@odata.type": "#microsoft.graph.unifiedRoleManagementPolicyEnablementRule"`.
+When updating the rules, you must include the `@odata.type` for the derived type in the request body. For example, to update an activation rule with the ID `Enablement_EndUser_Assignment`, you must include `"@odata.type": "#microsoft.graph.unifiedRoleManagementPolicyEnablementRule"`.
 
 If successful, all requests return `204 No Content` response codes.
 
@@ -24,7 +24,7 @@ If successful, all requests return `204 No Content` response codes.
 
 ## Prerequisites
 
-+ Have an understanding of [PIM for Microsoft Entra roles APIs](/graph/api/resources/privilegedidentitymanagementv3-overview) or [PIM for groups APIs](/graph/api/resources/privilegedidentitymanagement-for-groups-api-overview).
++ Understand [PIM for Microsoft Entra roles APIs](/graph/api/resources/privilegedidentitymanagementv3-overview) or [PIM for groups APIs](/graph/api/resources/privilegedidentitymanagement-for-groups-api-overview).
   + Understand the [mapping of the rules to the different categories of rules in PIM](identity-governance-pim-rules-overview.md).
 + In this article, you call the APIs in a [delegated scenario](/graph/auth-v2-user).
   + Sign in to an API client such as [Graph Explorer](https://aka.ms/ge) with administrative privileges to manage PIM rules. The *Privileged Role Administrator* role is the least privileged role sufficient to manage PIM rules.
@@ -36,7 +36,7 @@ If successful, all requests return `204 No Content` response codes.
 
 Consider a Microsoft Entra role like *Application Administrator*. The permanent immutable template ID for the role in Microsoft Entra ID is `9b895d92-2cd3-44c7-9d02-a6ac2d5ea5c3`. 
 
-To use the PIM APIs to discover the settings for the *Application Administrator* role, query the role management policy that Microsoft Entra ID has assigned to the role by using the [unifiedRoleManagementPolicyAssignment resource type](/graph/api/resources/unifiedrolemanagementpolicyassignment) as follows:
+To use the PIM APIs to discover the settings for the *Application Administrator* role, query the role management policy that Microsoft Entra ID assigned to the role by using the [unifiedRoleManagementPolicyAssignment resource type](/graph/api/resources/unifiedrolemanagementpolicyassignment) as follows:
 
 # [HTTP](#tab/http)
 <!-- {
@@ -99,7 +99,7 @@ Content-Type: application/json
 
 Use the **policyId** object to query and manage the corresponding rules for the role.
 
-## Example 1: Update the activation maximum duration
+## Example 1: Update the activation maximum duration
 
 + Category of rule: Activation rule
 + Microsoft Graph [rule type](/graph/api/resources/unifiedrolemanagementpolicyrule): [unifiedRoleManagementPolicyExpirationRule](/graph/api/resources/unifiedrolemanagementpolicyexpirationrule)

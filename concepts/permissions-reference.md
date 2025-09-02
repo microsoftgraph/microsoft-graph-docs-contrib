@@ -7,7 +7,7 @@ ms.localizationpriority: high
 ms.topic: reference
 ms.subservice: entra-applications
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.date: 08/18/2025
+ms.date: 09/01/2025
 #Customer intent: As a developer, I want to learn more about the permissions available in Microsoft Graph, so that I understand the impact of granting specific permissions to my app.
 ---
 
@@ -3941,6 +3941,39 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | DisplayText | Access selected Lists without a signed in user. | Access selected Lists, on behalf of the signed-in user |
 | Description | Allow the application to access a subset of lists without a signed in user.  The specific lists and the permissions granted will be configured in SharePoint Online. | Allow the application to access a subset of lists on behalf of the signed in user.  The specific lists and the permissions granted will be configured in SharePoint Online. |
 | AdminConsentRequired | Yes | Yes |
+
+---
+
+### Mail-Advanced.ReadWrite
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | - | f3af82f6-18e0-4a41-8dc8-a03c11854a8d |
+| DisplayText | - | Read and write the user's mail, including modifying existing non-draft mails |
+| Description | - | Allows the app to create, read, update, and delete email, including contents of non-draft emails in user mailboxes, on behalf of the signed-in user. Does not include permission to send mail. |
+| AdminConsentRequired | - | Yes |
+
+---
+
+### Mail-Advanced.ReadWrite.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | e118f1da-5c1c-46cf-bff6-8858d786f46f | - |
+| DisplayText | Read and write mail in all mailboxes, including modifying existing non-draft mails | - |
+| Description | Allows the app to create, read, update, and delete all email, including contents of non-draft emails in user mailboxes, without a signed-in user. Does not include permission to send mail. | - |
+| AdminConsentRequired | Yes | - |
+
+---
+
+### Mail-Advanced.ReadWrite.Shared
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | - | bebf0bb6-2ff3-4295-a17d-f3561da294fb |
+| DisplayText | - | Read and write all mail the user can access, including modifying existing non-draft mails |
+| Description | - | Allows the app to create, read, update, and delete mail including contents of non-draft emails for all mails a user has permission to access, on behalf of the signed-in user. This includes their own and shared mail. Does not include permission to send mail. |
+| AdminConsentRequired | - | Yes |
 
 ---
 

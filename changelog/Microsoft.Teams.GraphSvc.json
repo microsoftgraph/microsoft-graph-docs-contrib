@@ -3,6 +3,50 @@
     {
       "ChangeList": [
         {
+          "Id": "dad933e5-3a75-415d-9f4c-90f57bc5a12b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "adhocCall",
+          "ChangeType": "Addition",
+          "Description": "Added the [adhocCall](https://learn.microsoft.com/en-us/graph/api/resources/adhocCall?view=graph-rest-beta) resource.",
+          "Target": "adhocCall"
+        },
+        {
+          "Id": "dad933e5-3a75-415d-9f4c-90f57bc5a12b",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "adhocCalls",
+          "ChangeType": "Addition",
+          "Description": "Added the **adhocCalls** relationship to the [cloudCommunications](https://learn.microsoft.com/en-us/graph/api/resources/cloudCommunications?view=graph-rest-beta) resource.",
+          "Target": "cloudCommunications"
+        }
+      ],
+      "Id": "dad933e5-3a75-415d-9f4c-90f57bc5a12b",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-08-15T19:29:18.2759291Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "c2fa1f15-405b-4e0f-a659-c6f65827760f",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "adhocCalls",
+          "ChangeType": "Addition",
+          "Description": "Added the **adhocCalls** relationship to the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource.",
+          "Target": "user"
+        }
+      ],
+      "Id": "c2fa1f15-405b-4e0f-a659-c6f65827760f",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-07-04T17:53:59.2006798Z",
+      "WorkloadArea": "Users",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "70a96fe2-cefe-4bf8-bd4b-50d928d86763",
           "ApiChange": "Resource",
           "ChangedApiName": "phoneUserConversationMember",
