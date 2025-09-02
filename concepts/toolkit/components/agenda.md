@@ -9,7 +9,6 @@ ms.topic: article
 
 # Agenda component in Microsoft Graph Toolkit
 
-> [!CAUTION]
 >[!CAUTION]
 > The Microsoft Graph Toolkit is deprecated and will be retired on August 28th, 2026. Developers should migrate to using the Microsoft Graph SDKs or other supported Microsoft Graph tools for building web experiences. For more information, see the [deprecation announcement](https://devblogs.microsoft.com/microsoft365dev/microsoft-graph-toolkit-retirement/).
 
