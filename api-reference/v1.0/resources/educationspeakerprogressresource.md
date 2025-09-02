@@ -16,6 +16,7 @@ Represents a Speaker Progress resource that helps students develop confidence in
 
 > [!NOTE]
 > Getting the latest information for an **educationSpeakerProgressResource** requires the system to call an extra service. If that service is unavailable or no longer has a record for the requested **educationSpeakerProgressResource**, the system returns an object of `@odata.type #microsoft.graph.educationExternalResource` for read requests instead.
+
 Inherits from [educationResource](../resources/educationresource.md).
 
 ## Properties
