@@ -31,7 +31,7 @@ Represents a comment in a workbook.
 |content|String|The content of the comment. It's the string displayed to end-users.|
 |contentType|String|The content type of the comment. The value is `plain` or `mention`.|
 |id|String|The unique identifier of the comment. Read-only.|
-|cellAddress|String|The cell that the comment located. Address value is in A1-style, which contains the sheet reference (for example, Sheet1!A1). Read-only.
+|cellAddress|String|The cell where the comment is located. Address value is in A1-style, which contains the sheet reference (for example, Sheet1!A1). Read-only.
 |richContent|String|The rich content of the comment (for example, comment content with mentions, the first mentioned entity has an ID attribute of 0, and the second mentioned entity has an ID attribute of 1). When contentType is `plain`, this value is empty. Read-only.|
 |mentions|[WorkbookCommentMention](workbookcommentmention.md) collection|An array containing all the people mentioned within the comment. When contentType is `plain`, this value is an empty array. Read-only.|
 
