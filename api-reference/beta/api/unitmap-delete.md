@@ -27,7 +27,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/unitmap-delete-permissions.md)]
 
->**Note**: Exchange Admin role is required to delete a unitmap.
+> [!NOTE]
+> The Exchange Admin role is required to delete a **unitMap**.
 
 ## HTTP request
 
