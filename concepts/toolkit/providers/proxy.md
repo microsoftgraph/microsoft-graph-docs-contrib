@@ -9,6 +9,9 @@ ms.topic: article
 
 # Proxy provider
 
+> [!CAUTION]
+> The Microsoft Graph CLI (mgcli) is deprecated and will be retired on August 28th, 2026. Users should migrate to the Microsoft Graph PowerShell SDK or other Microsoft Graph SDKs. For more information, see the [Deprecation announcement](https://devblogs.microsoft.com/microsoft365dev/microsoft-graph-cli-retirement/).
+
 When you use the proxy provider, you can use your backend authentication (such as Auth2.0 On-Behalf-Of flow) to power the Microsoft Graph Toolkit by routing all calls to Microsoft Graph through your own backend.
 
 Your backend service must expose an API that will be called for every call to Microsoft Graph. For example, when a component attempts to get a resource, the ProxyProvider will instead call your base API and append that resource.
