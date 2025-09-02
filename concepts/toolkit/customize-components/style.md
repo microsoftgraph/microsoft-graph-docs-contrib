@@ -9,6 +9,9 @@ ms.topic: concept-article
 
 # Styling components in the Microsoft Graph Toolkit
 
+> [!CAUTION]
+> The Microsoft Graph CLI (mgcli) is deprecated and will be retired on August 28th, 2026. Users should migrate to the Microsoft Graph PowerShell SDK or other Microsoft Graph SDKs. For more information, see the [Deprecation announcement](https://devblogs.microsoft.com/microsoft365dev/microsoft-graph-cli-retirement/).
+
 Each Microsoft Graph Toolkit component documents a set of [CSS custom properties](https://developer.mozilla.org/docs/Web/CSS/Using_CSS_custom_properties) that you can use to change the look and feel of certain elements. You can find the available custom CSS properties in each component docs. For example:
 
 ```css
