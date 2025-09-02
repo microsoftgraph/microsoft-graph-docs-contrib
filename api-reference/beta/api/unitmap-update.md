@@ -1,6 +1,6 @@
 ---
 title: "Update unitMap"
-description: "Update the properties of an unitMap object in IMDF format on a specified floor."
+description: "Update the properties of an existing unitMap object in IMDF format on a specified floor, or create one if it doesn't exist."
 author: tiwarisakshi02
 ms.date: 06/12/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of an [unitMap](../resources/unitmap.md) object in IMDF format on a specified floor.If the unitMap doesn't exist, will create it.
+Update the properties of an existing [unitMap](../resources/unitmap.md) object in IMDF format on a specified floor, or create one if it doesn't exist.
 
 ## Permissions
 
@@ -62,12 +62,15 @@ PATCH /places/{buildingPlaceId}/microsoft.graph.building/map/levels/{levelImdfID
 
 ## Response
 
-If the update is successful, this method returns a `200 OK` response code and an updated [unitMap](../resources/unitmap.md) object in the response body.
-If the creation is successful, this method returns a `201 Created` response code and a [unitMap](../resources/unitmap.md) object in the response body.
+If the update is successful, this method returns a `200 OK` response code and an updated [unitMap](../resources/unitmap.md) object in the response body. If the creation is successful, this method returns a `201 Created` response code and a [unitMap](../resources/unitmap.md) object in the response body.
 
-## Examples - Update
+## Examples
 
-### Request
+### Example 1: Update an existing unitMap
+
+The following example shows how to update an existing [unitMap](../resources/unitmap.md) object.
+
+#### Request
 
 The following example shows a request.
 <!-- {
@@ -85,7 +88,7 @@ Content-Type: application/json
 }
 ```
 
-### Response
+#### Response
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
@@ -106,10 +109,11 @@ Content-Type: application/json
 }
 ```
 
+### Example 2: Create a unitMap if it doesn't exist
 
-## Examples - Create
+The following example shows how to create a new [unitMap](../resources/unitmap.md) object if it doesn't exist.
 
-### Request
+#### Request
 
 The following example shows a request.
 <!-- {
@@ -120,12 +124,13 @@ The following example shows a request.
 ``` http
 PATCH https://graph.microsoft.com/beta/places/151e85a7-c0b8-4519-997e-1a0858255704/microsoft.graph.building/map/levels/e537d463-475b-43c3-a650-184566c68bc9/units/test0613-c95d-4d35-a8a0-22d3cb4d6542
 Content-Type: application/json
+
 {
   "properties": "{\"id\":\"005eb3b8-c95d-4d35-a8a0-22d3cb4d6996\",\"type\":\"Feature\",\"feature_type\":\"unit\",\"geometry\":{\"type\":\"Polygon\",\"coordinates\":[[[-121.8889415,37.3295396],[-121.8889137,37.329503],[-121.8889082,37.3294956],[-121.888907,37.3294941],[-121.8888551,37.3295189],[-121.8888895,37.3295644],[-121.8889415,37.3295396]]]},\"properties\":{\"name\":{\"en\":\"Test Create room111111111111\"},\"level_id\":\"e537d463-475b-43c3-a650-184566c68bc9\",\"display_point\":{\"type\":\"Point\",\"coordinates\":[-121.8888983,37.3295292]},\"category\":\"room\"}}"
 }
 ```
 
-### Response
+#### Response
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
@@ -138,6 +143,7 @@ The following example shows the response.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
+
 {
   "placeId": null,
   "id": "test0613-c95d-4d35-a8a0-22d3cb4d6542",
