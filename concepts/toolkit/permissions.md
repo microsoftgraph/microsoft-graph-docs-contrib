@@ -9,6 +9,9 @@ ms.topic: article
 
 # Permissions in Microsoft Graph Toolkit
 
+> [!CAUTION]
+> The Microsoft Graph CLI (mgcli) is deprecated and will be retired on August 28th, 2026. Users should migrate to the Microsoft Graph PowerShell SDK or other Microsoft Graph SDKs. For more information, see the [Deprecation announcement](https://devblogs.microsoft.com/microsoft365dev/microsoft-graph-cli-retirement/).
+
 This article provides a summary of how Microsoft Graph Toolkit manages permissions and works with incremental consent to reduce user friction.
 
 ## Incremental consent
