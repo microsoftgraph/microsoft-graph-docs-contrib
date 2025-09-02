@@ -50,6 +50,7 @@ None
 | roleManagementPolicyAssignments           | [unifiedRoleManagementPolicyAssignment](../resources/unifiedrolemanagementpolicyassignment.md) collection | Represents the role management policy assignments.                                                                                                                   |
 | tokenIssuancePolicies                     | [tokenIssuancePolicy](tokenissuancepolicy.md) collection                                                  | The policy that specifies the characteristics of SAML tokens issued by Microsoft Entra ID.                                                                                     |
 | tokenLifetimePolicies                     | [tokenLifetimePolicy](tokenlifetimepolicy.md) collection                                                  | The policy that controls the lifetime of a JWT access token, an ID token, or a SAML 1.1/2.0 token issued by Microsoft Entra ID.                                                |
+| deletedItems                     | [policyDeletableItem](policydeletableitem.md) collection                                                  | Policies that support soft-delete functionality and can be restored within 30 days.                                                |
 
 ## JSON representation
 The following JSON representation shows the resource type.

@@ -4,6 +4,7 @@ description: "The To Do component enables the user to view, add, remove, complet
 ms.localizationpriority: medium
 author: sebastienlevert
 ms.date: 11/07/2024
+ms.topic: article
 ---
 
 # To Do component in Microsoft Graph Toolkit

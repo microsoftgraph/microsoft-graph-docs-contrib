@@ -92,7 +92,7 @@ Use the entire URL in the `@odata.nextLink` property in a GET request to retriev
 
 Paging behavior varies across different Microsoft Graph APIs. Consider the following points when working with paged data:
 
-- A page of results may contain zero or more results.
+- A page of results might contain zero or more results.
 - Different APIs might have different default and maximum page sizes.
 - Different APIs might behave differently if you specify a page size (via the `$top` query parameter) that exceeds the maximum page size for that API. The requested page size might be ignored, it might default to the maximum page size for that API, or Microsoft Graph might return an error.
 - Not all resources or relationships support paging. For example, queries against [directoryRole](/graph/api/resources/directoryrole) don't support paging. This includes reading role objects themselves and role members.

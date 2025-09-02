@@ -4,6 +4,7 @@ description: "The person component is used to display a person or contact by usi
 ms.localizationpriority: medium
 author: sebastienlevert
 ms.date: 11/07/2024
+ms.topic: article
 ---
 
 # Person component in Microsoft Graph Toolkit

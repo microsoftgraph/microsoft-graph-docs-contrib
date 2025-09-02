@@ -4,6 +4,7 @@ description: "Use Microsoft Graph Toolkit to find authentication providers and r
 ms.localizationpriority: medium
 author: sebastienlevert
 ms.date: 11/07/2024
+ms.topic: concept-article
 ---
 
 # Microsoft Graph Toolkit overview

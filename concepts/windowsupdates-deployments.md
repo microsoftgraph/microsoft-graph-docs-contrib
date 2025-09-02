@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: windows-autopatch
 doc_type: conceptualPageType
 ms.date: 11/07/2024
+ms.topic: article
 ---
 
 # Deployments in Windows Autopatch

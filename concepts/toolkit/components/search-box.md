@@ -4,6 +4,7 @@ description: "The Search box component is used to render a search input that can
 ms.localizationpriority: medium
 author: sebastienlevert
 ms.date: 11/07/2024
+ms.topic: article
 ---
 
 # Search box component in the Microsoft Graph Toolkit

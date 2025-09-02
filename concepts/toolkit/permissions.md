@@ -4,6 +4,7 @@ description: "Get an overview of how Microsoft Graph Toolkit manages permissions
 ms.localizationpriority: medium
 author: gavinbarron
 ms.date: 11/07/2024
+ms.topic: article
 ---
 
 # Permissions in Microsoft Graph Toolkit

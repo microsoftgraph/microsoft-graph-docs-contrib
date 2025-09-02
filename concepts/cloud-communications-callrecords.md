@@ -5,6 +5,7 @@ author: "mcm223"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 ms.date: 11/07/2024
+ms.topic: article
 ---
 
 # Call records

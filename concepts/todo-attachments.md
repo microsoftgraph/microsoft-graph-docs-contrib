@@ -5,6 +5,7 @@ author: "avijityadav"
 ms.localizationpriority: high
 ms.subservice: "outlook"
 ms.date: 11/07/2024
+ms.topic: how-to
 ---
 
 # Attach files to a To Do task

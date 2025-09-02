@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: sebastienlevert
 ms.date: 11/07/2024
 ms.custom: sfi-image-nochange
+ms.topic: how-to
 ---
 
 # Display Microsoft Graph Toolkit components right-to-left (rtl)

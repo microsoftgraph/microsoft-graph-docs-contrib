@@ -4,6 +4,7 @@ description: "A Login component is a button and flyout control to facilitate Mic
 ms.localizationpriority: medium
 author: sebastienlevert
 ms.date: 11/07/2024
+ms.topic: article
 ---
 
 # Login component in Microsoft Graph Toolkit

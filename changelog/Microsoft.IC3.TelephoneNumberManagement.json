@@ -1,0 +1,118 @@
+﻿{
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "07e967a6-f053-4c19-be0e-0a8373f072c4",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "activationState",
+          "ChangeType": "Addition",
+          "Description": "Added the **activationState** enumeration type.",
+          "Target": "activationState"
+        },
+        {
+          "Id": "07e967a6-f053-4c19-be0e-0a8373f072c4",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "assignmentStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **assignmentStatus** enumeration type.",
+          "Target": "assignmentStatus"
+        },
+        {
+          "Id": "07e967a6-f053-4c19-be0e-0a8373f072c4",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "customerAction",
+          "ChangeType": "Addition",
+          "Description": "Added the **customerAction** enumeration type.",
+          "Target": "customerAction"
+        },
+        {
+          "Id": "07e967a6-f053-4c19-be0e-0a8373f072c4",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "numberCapability",
+          "ChangeType": "Addition",
+          "Description": "Added the **numberCapability** enumeration type.",
+          "Target": "numberCapability"
+        },
+        {
+          "Id": "07e967a6-f053-4c19-be0e-0a8373f072c4",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "numberSource",
+          "ChangeType": "Addition",
+          "Description": "Added the **numberSource** enumeration type.",
+          "Target": "numberSource"
+        },
+        {
+          "Id": "07e967a6-f053-4c19-be0e-0a8373f072c4",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "numberType",
+          "ChangeType": "Addition",
+          "Description": "Added the **numberType** enumeration type.",
+          "Target": "numberType"
+        },
+        {
+          "Id": "07e967a6-f053-4c19-be0e-0a8373f072c4",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "portInStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **portInStatus** enumeration type.",
+          "Target": "portInStatus"
+        },
+        {
+          "Id": "07e967a6-f053-4c19-be0e-0a8373f072c4",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "reverseNumberLookupOption",
+          "ChangeType": "Addition",
+          "Description": "Added the **reverseNumberLookupOption** enumeration type.",
+          "Target": "reverseNumberLookupOption"
+        },
+        {
+          "Id": "07e967a6-f053-4c19-be0e-0a8373f072c4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "telephoneNumberLongRunningOperationDetails",
+          "ChangeType": "Addition",
+          "Description": "Added the [telephoneNumberLongRunningOperationDetails](https://learn.microsoft.com/en-us/graph/api/resources/teamsAdministration-telephoneNumberLongRunningOperationDetails?view=graph-rest-beta) resource and its methods.",
+          "Target": "telephoneNumberLongRunningOperationDetails"
+        },
+        {
+          "Id": "07e967a6-f053-4c19-be0e-0a8373f072c4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "numberAssignment",
+          "ChangeType": "Addition",
+          "Description": "Added the [numberAssignment](https://learn.microsoft.com/en-us/graph/api/resources/teamsAdministration-numberAssignment?view=graph-rest-beta) resource and its methods.",
+          "Target": "numberAssignment"
+        },
+        {
+          "Id": "07e967a6-f053-4c19-be0e-0a8373f072c4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "telephoneNumberLongRunningOperation",
+          "ChangeType": "Addition",
+          "Description": "Added the [telephoneNumberLongRunningOperation](https://learn.microsoft.com/en-us/graph/api/resources/teamsAdministration-telephoneNumberLongRunningOperation?view=graph-rest-beta) resource and its methods.",
+          "Target": "telephoneNumberLongRunningOperation"
+        }, 
+        {
+          "Id": "07e967a6-f053-4c19-be0e-0a8373f072c4",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "telephoneNumberLongRunningOperation",
+          "ChangeType": "Addition",
+          "Description": "Added the **telephoneNumberLongRunningOperation** relationship to the [teamsAdministration](https://learn.microsoft.com/en-us/graph/api/resources/teamsadministration-teamsadminroot?view=graph-rest-beta) resource.",
+          "Target": "teamsAdministration"
+        },
+        {
+          "Id": "07e967a6-f053-4c19-be0e-0a8373f072c4",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "numberAssignment",
+          "ChangeType": "Addition",
+          "Description": "Added the **numberAssignment** relationship to the [teamsAdministration](https://learn.microsoft.com/en-us/graph/api/resources/teamsadministration-teamsadminroot?view=graph-rest-beta) resource.",
+          "Target": "teamsAdministration"
+        }        
+      ],
+      "Id": "07e967a6-f053-4c19-be0e-0a8373f072c4",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-08-06T18:27:31.5363831Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Teams administration"
+    }
+  ]
+}

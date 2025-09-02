@@ -5,6 +5,7 @@ author: "MSGraphDocsVteam"
 ms.localizationpriority: high
 ms.date: 07/08/2024
 ms.custom: sfi-ga-nochange
+ms.topic: article
 ---
 
 # Changelog for Microsoft Graph (Archive)
@@ -2958,7 +2959,7 @@ Debut of the places API, which provides rich details for locations in apps.
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | v1.0 | Added the **isMultipleDataLocationsForServicesEnabled** property to the [organization](/graph/api/resources/organization?view=graph-rest-beta&preserve-view=true) resource, which allows apps to verify that a tenant is enabled for multi-geo capabilities. Added the **preferredDataLocation** property to the [group](/graph/api/resources/group?view=graph-rest-beta&preserve-view=true) resource, which allows for setting a preferred data location for a group.|
 | Addition | v1.0 | Added  [onPremisesProvisioningErrors](/graph/api/resources/onpremisesprovisioningerror?view=graph-rest-1.0&preserve-view=true) property to the [User](/graph/api/resources/user?view=graph-rest-1.0&preserve-view=true) and [Group](/graph/api/resources/group?view=graph-rest-1.0&preserve-view=true) entities that represents directory synchronization errors when synchronizing on-premises directories to Azure Active Directory when using Microsoft synchronization product (including Azure AD Connect, DirSync and MIM + Connector).|
-| Addition | v1.0 | Added  [onPremisesExtensionAttributes](/graph/api/resources/onpremisesextensionattributes?view=graph-rest-1.0&preserve-view=true) property to the [User](/graph/api/resources/user?view=graph-rest-1.0&preserve-view=true) entity that contains 15 custom extension attribute properties. For an onPremisesSyncEnabled user, this set of properties is mastered in on-premises Active Directory and synchronized to Azure AD, and is read-only. For a cloud-only user (where onPremisesSyncEnabled is false), these properties may be set during creation or update.|
+| Addition | v1.0 | Added  [onPremisesExtensionAttributes](/graph/api/resources/onpremisesextensionattributes?view=graph-rest-1.0&preserve-view=true) property to the [User](/graph/api/resources/user?view=graph-rest-1.0&preserve-view=true) entity that contains 15 custom extension attribute properties. For an onPremisesSyncEnabled user, this set of properties is mastered in on-premises Active Directory and synchronized to Azure AD, and is read-only. For a cloud-only user (where onPremisesSyncEnabled is false), these properties can be set during creation or update.|
 |Addition|v1.0|Added the **onPremisesDomainName**, **onPremisesSamAccountName**, and **onPremisesUserPrincipalName** properties to the [User](/graph/api/resources/user?view=graph-rest-1.0&preserve-view=true) entity|
 
 ### Mail
@@ -4817,7 +4818,7 @@ Debut of the places API, which provides rich details for locations in apps.
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Addition        | Beta        | Introduced the new preview API for Microsoft 365 reports. You can use it to get usage reports of how people in your business are using Microsoft 365 services. For example, you can identify who is using a service a lot and reaching quotas, or who may not need a Microsoft 365 license at all. For more information, see [report](/graph/api/resources/report?view=graph-rest-beta&preserve-view=true). |
+| Addition        | Beta        | Introduced the new preview API for Microsoft 365 reports. You can use it to get usage reports of how people in your business are using Microsoft 365 services. For example, you can identify who is using a service a lot and reaching quotas, or who does not need a Microsoft 365 license at all. For more information, see [report](/graph/api/resources/report?view=graph-rest-beta&preserve-view=true). |
 
 
 ## February 2017

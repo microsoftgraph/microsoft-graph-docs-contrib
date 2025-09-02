@@ -21,7 +21,7 @@ source := "Contoso.AADProcess"
 requestBody.SetSource(&source) 
 type := "microsoft.graph.accessPackageCustomExtensionStage.assignmentRequestCreated"
 requestBody.SetType(&type) 
-data := graphmodels.NewCustomExtensionData()
+data := graphmodels.NewAccessPackageRequestApprovalStageCallbackConfiguration()
 additionalData := map[string]interface{}{
 	"stage" : "assignmentRequestCreated", 
 	"customExtensionStageInstanceId" : "7bf58d34-b3f9-4bae-8deb-abcd25cddea1", 

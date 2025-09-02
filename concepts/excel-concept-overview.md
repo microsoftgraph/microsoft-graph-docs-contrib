@@ -6,6 +6,7 @@ author: "lumine2008"
 ms.subservice: "excel"
 ms.custom: scenarios:getting-started
 ms.date: 11/07/2024
+ms.topic: concept-article
 ---
 
 # Excel workbooks and charts API overview
