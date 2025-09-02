@@ -27,7 +27,7 @@ Inherits from [mailboxRestoreArtifact](../resources/mailboxRestoreArtifact.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|artifactCount|int|This property will be deprecated soon. Don't use.|
+|artifactCount|Int32|This property will be deprecated soon. Don't use.|
 |completionDateTime|DateTimeOffset|The time when the restoration of the artifact is completed. Inherited from [restoreArtifactBase](../resources/restoreartifactbase.md).|
 |destinationType|[destinationType](../resources/mailboxrestoreartifact.md#destinationtype-values)|Indicates the restoration destination. Inherited from [restoreArtifactBase](../resources/restoreartifactbase.md). The possible values are: `new`, `inPlace`, `unknownFutureValue`.|
 |error|[publicError](../resources/publicerror.md)|Contains error details if the restoration of the artifact fails. Inherited from [restoreArtifactBase](../resources/restoreartifactbase.md).|
@@ -57,7 +57,7 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.granularMailboxRestoreArtifact",
-  "artifactCount": "Int",
+  "artifactCount": "Int32",
   "id": "String (identifier)",
   "destinationType": "String",
   "status": "String",
