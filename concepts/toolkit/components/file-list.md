@@ -10,7 +10,7 @@ ms.topic: how-to
 # File list component in Microsoft Graph Toolkit
 
 > [!CAUTION]
-> The Microsoft Graph CLI (mgcli) is deprecated and will be retired on August 28th, 2026. Users should migrate to the Microsoft Graph PowerShell SDK or other Microsoft Graph SDKs. For more information, see the [Deprecation announcement](https://devblogs.microsoft.com/microsoft365dev/microsoft-graph-cli-retirement/).
+> The Microsoft Graph Toolkit is deprecated and will be retired on August 28th, 2026. Developers should migrate to using the Microsoft Graph SDKs or other supported Microsoft Graph tools for building web experiences. For more information, see the [deprecation announcement](https://devblogs.microsoft.com/microsoft365dev/microsoft-graph-toolkit-retirement/).
 
 The File List component displays [a list of multiple folders and files](/graph/api/resources/onedrive) by using the file/folder name, an icon, and other properties that you specify. This component uses the [mgt-file](./file.md) component. You can specify a specific drive or site, display a list of files based on insight type (trending, used, or shared), or provide queries to a custom list of files. The component also provides the option to allow users to upload files to a specified location in OneDrive or SharePoint.
 
