@@ -27,7 +27,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/buildingmap-delete-permissions.md)]
 
->**Note**: Exchange Admin role is required to delete a buildingmap.
+> [!NOTE]
+> The Exchange Admin role is required to delete a **buildingMap**.
 
 ## HTTP request
 
