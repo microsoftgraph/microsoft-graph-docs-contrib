@@ -9,6 +9,9 @@ ms.topic: article
 
 # SharePoint provider
 
+> [!CAUTION]
+> The Microsoft Graph CLI (mgcli) is deprecated and will be retired on August 28th, 2026. Users should migrate to the Microsoft Graph PowerShell SDK or other Microsoft Graph SDKs. For more information, see the [Deprecation announcement](https://devblogs.microsoft.com/microsoft365dev/microsoft-graph-cli-retirement/).
+
 Use the SharePoint provider inside your SharePoint web parts to power the components with Microsoft Graph access.
 
 To learn more about authentication providers, see [Providers](./providers.md).
