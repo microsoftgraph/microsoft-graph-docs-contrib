@@ -9,7 +9,10 @@ ms.topic: article
 
 # Picker component in the Microsoft Graph Toolkit
 
-The Picker component uses `mgt-get` to query the Microsoft Graph API then renders a dropdown control allowing selection of **a single** resource from an array of resources.
+> [!CAUTION]
+> The Microsoft Graph CLI (mgcli) is deprecated and will be retired on August 28th, 2026. Users should migrate to the Microsoft Graph PowerShell SDK or other Microsoft Graph SDKs. For more information, see the [Deprecation announcement](https://devblogs.microsoft.com/microsoft365dev/microsoft-graph-cli-retirement/).
+
+The Picker component uses `mgt-get` to query the Microsoft Graph API, then renders a dropdown control allowing selection of **a single** resource from an array of resources.
 
 ## Example
 
