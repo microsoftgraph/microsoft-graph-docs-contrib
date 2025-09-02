@@ -36,7 +36,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ``` http
 GET /places/{buildingPlaceId}/microsoft.graph.building/map/footprints
 ```
-> **Note:** `{buildingPlaceId}` is the unique **placeId** of the [building](../resources/building.md) linked to this map in Places for which we want to retrieve the foorprint.
+> **Note:** `{buildingPlaceId}` is the unique **placeId** of the [building](../resources/building.md) linked to this map in Places for which we want to retrieve the footprint.
 
 ## Optional query parameters
 

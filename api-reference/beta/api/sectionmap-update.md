@@ -27,7 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/sectionmap-update-permissions.md)]
 
->**Note**: Exchange Admin role is requied to create or update a sectionmap.
+>**Note**: Exchange Admin role is required to create or update a sectionmap.
 
 ## HTTP request
 

@@ -62,7 +62,7 @@ PATCH /places/{buildingPlaceId}/microsoft.graph.building/map/levels/{levelImdfID
 
 ## Response
 
-If the udpate is successful, this method returns a `200 OK` response code and an updated [unitMap](../resources/unitmap.md) object in the response body.
+If the update is successful, this method returns a `200 OK` response code and an updated [unitMap](../resources/unitmap.md) object in the response body.
 If the creation is successful, this method returns a `201 Created` response code and a [unitMap](../resources/unitmap.md) object in the response body.
 
 ## Examples - Update
