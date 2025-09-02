@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the sensorCandidate objects and their properties.
+Get a list of the [sensorCandidate](../resources/security-sensorcandidate.md) objects and their properties.
 
 ## Permissions
 
