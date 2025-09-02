@@ -24,22 +24,24 @@ Place represents different space types within a tenant. A **place** object can b
 |[section](./section.md) |Represents a section within a floor, including properties such as **name**, **parentId**, and **label**. A **floor** is always the parent of a **section**. |
 |[workspace](./workspace.md) |Represents a collection of desks. All workspaces must be associated with Exchange mailboxes. A **workspace** can be added to a **floor** or a **section**. The rich properties of a workspace include an email address for the workspace, mode, accessibility, and capacity. |
 
-The map feature represents the corresponding map of a place. A MapFeature object can be one of the following types.
+The map feature represents the corresponding map of a place. A map feature object can be one of the following types.
 
-|Map Feature type	|Details |
+|Map feature type	|Details|
 |:--|:--|
 |[buildingMap](./buildingmap.md) | Represents a map file associated with a [building](./building.md) in Places. This object is the IMDF-format representation of building.geojson. |
-|[footprintMap ](./footprintmap.md) |Represents a footprint.geojson file in IMDF format that defines the approximate physical extent of a referenced [building](./building.md). |
-|[levelMap](./levelmap.md) |Represents a level.geojson file in IMDF format that defines the physical floor structure within a [building](../resources/building.md). |
-|[unitMap](./unitmap.md) |Represents a unit.geojson file in IMDF format that defines units (such as rooms or offices) on a floor of a [building](../resources/building.md). |
 |[fixtureMap](./fixturemap.md) |Represents a fixture.geojson file in IMDF format that defines movable or semi-permanent physical assets within a space. These assets support utility, service, or aesthetic functions without affecting structural integrity. |
+|[footprintMap](./footprintmap.md) |Represents a footprint.geojson file in IMDF format that defines the approximate physical extent of a referenced [building](./building.md). |
+|[levelMap](./levelmap.md) |Represents a level.geojson file in IMDF format that defines the physical floor structure within a [building](../resources/building.md).|
 |[sectionMap](./sectionmap.md) |Represents a section.geojson file in IMDF format that defines sections (such as zones or partitions) on the floor of a [building](../resources/building.md). |
+|[unitMap](./unitmap.md) |Represents a unit.geojson file in IMDF format that defines units (such as rooms or offices) on a floor of a [building](../resources/building.md). |
 
 ## Using the Places API
 
-The Places API enables applications with appropriate read or write permissions to interact with **place** objects. Every **place** object includes fundamental properties such as **id**, **placeId**, and **displayName**. More advanced types—like rooms, workspaces, and desks—offer additional properties including **mode**, **emailAddress**, and **deviceInformation**. Detailed descriptions of each type are available in their respective documentation sections. 
+The Places API enables applications with appropriate read or write permissions to interact with **place** objects. Every **place** object includes fundamental properties such as **id**, **placeId**, and **displayName**. More advanced types—like rooms, workspaces, and desks—offer additional properties including **mode**, **emailAddress**, and **deviceInformation**. 
 
-The Map API enables applications with appropriate read or write permissions to interact with **mapFeature** objects. Each **mapFeature** object includes fundamental properties like **id**, along with additional properties such as **placeId**, **geometry**, and **display_point**. Detailed descriptions of each type are available in their respective documentation sections.
+The map APIs in Places enable applications with appropriate read or write permissions to interact with map feature objects. Each map feature object includes fundamental properties like **id**, and other properties such as **placeId**, **geometry**, and **display_point**.
+
+Detailed descriptions of each type are available in their respective documentation sections. 
 
 ## Common use cases
 
@@ -49,13 +51,13 @@ The following table lists some of the common uses for the Places API.
 | :--- | :--- | :--- |
 | Create and manage a place  | [place](../resources/place.md) | [place methods](../resources/place.md#methods) |
 | Interact with place spaces such as building, floor, section, room, room list, workspace, or desk | [place](../resources/place.md) |[place methods](../resources/place.md#methods) |
-| Create and a buildingMap  | [buildingMap](../resources/buildingmap.md) | [place methods](../resources/building.md#methods) |
-| List levels in a building  | [levelMap](../resources/levelmap.md) | [place methods](../resources/buildingmap.md#methods) |
-| List footprint in a building  | [footprintMap](../resources/footprintmap.md) | [place methods](../resources/buildingmap.md#methods) |
-| Create and manage a unitMap  | [unitMap](../resources/unitmap.md) | [place methods](../resources/unitmap.md#methods) |
-| Create and manage a fixtureMap  | [fixtureMap](../resources/fixturemap.md) | [place methods](../resources/fixturemap.md#methods) |
-| Create and manage a sectionMap  | [sectionMap](../resources/sectionmap.md) | [place methods](../resources/sectionmap.md#methods) |
-
+| Ingest the map file for a building | [building](../resources/building.md) | [Ingest map file](../api/building-ingestmapfile.md) |
+| List levels in a building  | [levelMap](../resources/levelmap.md) | [List levels](../api/buildingmap-list-levels.md) |
+| List footprints in a building  | [footprintMap](../resources/footprintmap.md) | [List footprints](../api/buildingmap-list-footprints.md) |
+| Get and delete a **buildingMap** | [buildingMap](./buildingmap.md) | [buildingMap methods](../resources/buildingmap.md#methods) |
+| Create and manage a **unitMap**  | [unitMap](../resources/unitmap.md) | [unitMap methods](../resources/unitmap.md#methods) |
+| Create and manage a **fixtureMap**  | [fixtureMap](../resources/fixturemap.md) | [fixtureMap methods](../resources/fixturemap.md#methods) |
+| Create and manage a **sectionMap**  | [sectionMap](../resources/sectionmap.md) | [sectionMap methods](../resources/sectionmap.md#methods) |
 
 ## Comparing Places APIs with findRooms and findRoomLists 
 
