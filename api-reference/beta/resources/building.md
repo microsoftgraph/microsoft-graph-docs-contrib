@@ -44,7 +44,7 @@ For more supported methods, see [place](./place.md).
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|map|[buildingMap](../resources/buildingmap.md)|Map file associated with a building in Places. This object is the IMDF format representation of building.geojson.|
+|map|[buildingMap](../resources/buildingmap.md)|Map file associated with a building in Places. This object is the IMDF-format representation of building.geojson.|
 
 ## JSON representation
 The following JSON representation shows the resource type.
