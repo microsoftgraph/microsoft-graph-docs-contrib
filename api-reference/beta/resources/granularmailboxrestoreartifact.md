@@ -27,11 +27,11 @@ Inherits from [mailboxRestoreArtifact](../resources/mailboxRestoreArtifact.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|artifactCount|int|This property will be deprecated soon, please disregard it|
-|id|String|The unique identifier of the restore artifact.|
+|artifactCount|int|This property will be deprecated soon. Don't use.|
 |completionDateTime|DateTimeOffset|The time when the restoration of the artifact is completed. Inherited from [restoreArtifactBase](../resources/restoreartifactbase.md).|
 |destinationType|[destinationType](../resources/mailboxrestoreartifact.md#destinationtype-values)|Indicates the restoration destination. Inherited from [restoreArtifactBase](../resources/restoreartifactbase.md). The possible values are: `new`, `inPlace`, `unknownFutureValue`.|
 |error|[publicError](../resources/publicerror.md)|Contains error details if the restoration of the artifact fails. Inherited from [restoreArtifactBase](../resources/restoreartifactbase.md).|
+|id|String|The unique identifier of the restore artifact.|
 |restoredFolderId|String|The new restored folder identifier for the user.|
 |restoredFolderName|String|The new restored folder name.|
 |restoredItemCount|Int32|The number of items that are being restored in the folder.|
