@@ -9,7 +9,10 @@ ms.topic: how-to
 
 # File component in Microsoft Graph Toolkit
 
-The File component is used to represent an individual [file/folder from OneDrive or SharePoint](/graph/onedrive-concept-overview). The component displays information such as the file or folder name, the file type icon, and the author and last modified date. You can provide the identifiers for a file and the component generates the query to retrieve the file based on the identifiers provided. This component can be used on its own or as part of the [mgt-file-list](./file-list.md) components.
+> [!CAUTION]
+> The Microsoft Graph CLI (mgcli) is deprecated and will be retired on August 28th, 2026. Users should migrate to the Microsoft Graph PowerShell SDK or other Microsoft Graph SDKs. For more information, see the [Deprecation announcement](https://devblogs.microsoft.com/microsoft365dev/microsoft-graph-cli-retirement/).
+
+The File component is used to represent an individual [file/folder from OneDrive or SharePoint](/graph/onedrive-concept-overview). The component displays information such as the file or folder name, the file type icon, and the author and last modified date. You can provide the identifiers for a file, and the component generates the query to retrieve the file based on the identifiers provided. This component can be used on its own or as part of the [mgt-file-list](./file-list.md) components.
 
 ## Example
 
