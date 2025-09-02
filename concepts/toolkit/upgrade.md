@@ -9,6 +9,9 @@ ms.topic: upgrade-and-migration-article
 
 # Upgrade to the latest version of Microsoft Graph Toolkit
 
+> [!CAUTION]
+> The Microsoft Graph CLI (mgcli) is deprecated and will be retired on August 28th, 2026. Users should migrate to the Microsoft Graph PowerShell SDK or other Microsoft Graph SDKs. For more information, see the [Deprecation announcement](https://devblogs.microsoft.com/microsoft365dev/microsoft-graph-cli-retirement/).
+
 This article provides a summary of the breaking changes introduced in Microsoft Graph Toolkit versions and how these changes might affect your solution.
 
 ## Microsoft Graph Toolkit v4.0
