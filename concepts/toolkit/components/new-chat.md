@@ -9,13 +9,14 @@ ms.topic: article
 
 # New chat component in Microsoft Graph Toolkit
 
-> [!IMPORTANT]
-> This component is in Preview and is subject to change. The use of these components in production applications is not supported.
+> [!CAUTION]
+> The Microsoft Graph CLI (mgcli) is deprecated and will be retired on August 28th, 2026. Users should migrate to the Microsoft Graph PowerShell SDK or other Microsoft Graph SDKs. For more information, see the [Deprecation announcement](https://devblogs.microsoft.com/microsoft365dev/microsoft-graph-cli-retirement/).
 
 > [!NOTE]
+> This component is in Preview and is subject to change. The use of these components in production applications is not supported.
 > This component is currently only available as a React component and doesn't have a web component equivalent.
 
-The new chat component allows user to create new 1:1 or group conversations in Microsoft Teams.
+The new chat component allows users to create new 1:1 or group conversations in Microsoft Teams.
 
 ## Example
 
