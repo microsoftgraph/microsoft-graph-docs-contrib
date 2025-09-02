@@ -9,6 +9,9 @@ ms.topic: article
 
 # Planner component in Microsoft Graph Toolkit
 
+> [!CAUTION]
+> The Microsoft Graph CLI (mgcli) is deprecated and will be retired on August 28th, 2026. Users should migrate to the Microsoft Graph PowerShell SDK or other Microsoft Graph SDKs. For more information, see the [Deprecation announcement](https://devblogs.microsoft.com/microsoft365dev/microsoft-graph-cli-retirement/).
+
 The Planner component enables the user to view, add, remove, complete, or edit tasks from Microsoft Planner.
 
 In addition, a user is able to assign a single or multiple Microsoft Graph users to a task. For more information about Microsoft Graph assignments, see [plannerAssignments](/graph/api/resources/plannerassignments).
