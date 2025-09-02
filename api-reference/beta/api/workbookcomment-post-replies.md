@@ -48,16 +48,18 @@ If successful, this method returns a `201 Created` response code and a new [work
 
 ## Examples
 
-### Request
+### Create a reply of `plain` contentType
 
-The following example shows a request to add a reply of plain type.
+The following example shows creating a reply of `plain` contentType.
 
-# [HTTP](#tab/http)
+#### Request
+
 <!-- {
   "blockType": "request",
   "name": "create_workbookcommentreply_from_workbookcomment"
 }-->
 
+# [HTTP](#tab/http)
 ```http
 POST https://graph.microsoft.com/beta/drive/items/{id}/workbook/comments/{id}/replies
 Content-type: application/json
@@ -92,35 +94,8 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/python/create-workbookcommentreply-from-workbookcomment-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
 
-
-The following example shows a request to add a reply of mention type.
-
-# [HTTP]
-<!-- {
-  "blockType": "request",
-  "name": "create_workbookcommentreply_from_workbookcomment"
-}-->
-
-```http
-POST https://graph.microsoft.com/beta/drive/items/{id}/workbook/comments/{id}/replies
-Content-type: application/json
-
-{
-  "richContent": "<at id=\"0\">Kate Kristensen</at> - Can you take a look?",
-  "mentions": [{
-		"id": 0,
-		"name": "Kate Kristensen",
-		"email": "kakri@contoso.com"
-		}],
-  "contentType": "mention"
-}
-```
-
-### Response
-
-The following example shows the response when the reply is plain type.
+#### Response
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -142,9 +117,34 @@ Content-type: application/json
   "mentions": []
 }
 ```
----
 
-The following example shows the response when the reply is mention type.
+### Create a reply of `mention` contentType
+
+The following example shows creating a reply of `mention` contentType.
+
+#### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "create_workbookcommentreply_from_workbookcomment_mention"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/drive/items/{id}/workbook/comments/{id}/replies
+Content-type: application/json
+
+{
+  "richContent": "<at id=\"0\">Kate Kristensen</at> - Can you take a look?",
+  "mentions": [{
+		"id": 0,
+		"name": "Kate Kristensen",
+		"email": "kakri@contoso.com"
+		}],
+  "contentType": "mention"
+}
+```
+
+### Response
 
 > **Note:** The response object shown here might be shortened for readability.
 

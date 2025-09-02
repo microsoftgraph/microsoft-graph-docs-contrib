@@ -48,11 +48,12 @@ If successful, this method returns a `201 Created` response code and a new [work
 
 ## Examples
 
-### Request
+### Create a comment of `plain` contentType
 
-The following example shows a request to add a comment of plain type.
+The following example shows creating a comment of `plain` contentType.
 
-# [HTTP]
+#### Request
+
 <!-- {
   "blockType": "request",
   "name": "create_workbookcomment_from_workbook"
@@ -68,35 +69,8 @@ Content-type: application/json
   "contentType": "plain"
 }
 ```
----
 
-The following example shows a request to add a comment of mention type.
-
-# [HTTP]
-<!-- {
-  "blockType": "request",
-  "name": "create_workbookcomment_from_workbook"
-}-->
-
-```http
-POST https://graph.microsoft.com/beta/drive/items/{id}/workbook/comments
-Content-type: application/json
-
-{
-  "cellAddress": "Sheet1!A1",
-  "richContent": "<at id=\"0\">Kate Kristensen</at> - This is my comment.",
-  "mentions": [{
-        "id": 0,
-        "name": "Kate Kristensen",
-        "email": "kakri@contoso.com"
-        }],
-  "contentType": "mention"
-}
-```
-
-### Response
-
-The following example shows the response when the reply is plain type.
+#### Response
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -119,9 +93,35 @@ Content-type: application/json
   "mentions": []
 }
 ```
----
 
-The following example shows the response when the comment is mention type.
+### Create a comment of `mention` contentType
+
+The following example shows creating a comment of `mention` contentType.
+
+#### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "create_workbookcomment_from_workbook_mention"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/drive/items/{id}/workbook/comments
+Content-type: application/json
+
+{
+  "cellAddress": "Sheet1!A1",
+  "richContent": "<at id=\"0\">Kate Kristensen</at> - This is my comment.",
+  "mentions": [{
+        "id": 0,
+        "name": "Kate Kristensen",
+        "email": "kakri@contoso.com"
+        }],
+  "contentType": "mention"
+}
+```
+
+#### Response
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -139,7 +139,7 @@ Content-type: application/json
   "content": "@Kate Kristensen - This is my comment.",
   "contentType": "mention",
   "id": "{97A21473-8339-4BF0-BCB6-F55E4909FFB8}",
-  "richContent": "<at id=\"0\">Kate Kristensen</at> - Can you take a look?",
+  "richContent": "<at id=\"0\">Kate Kristensen</at> - This is my comment.",
   "mentions": [{
         "id": 0,
         "name": "Kate Kristensen",
