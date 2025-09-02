@@ -9,6 +9,9 @@ ms.topic: how-to
 
 # People picker component in Microsoft Graph Toolkit
 
+> [!CAUTION]
+> The Microsoft Graph CLI (mgcli) is deprecated and will be retired on August 28th, 2026. Users should migrate to the Microsoft Graph PowerShell SDK or other Microsoft Graph SDKs. For more information, see the [Deprecation announcement](https://devblogs.microsoft.com/microsoft365dev/microsoft-graph-cli-retirement/).
+
 You can use the `mgt-people-picker` web component to search for people, groups, or both. By default, the component searches for all people and users in the organization, but you can change the behavior to also search for groups, or only groups. You can also filter the search to a specific group. You can also allow the user to enter and select any email address.
 
 ## Example
