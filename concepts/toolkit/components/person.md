@@ -9,6 +9,9 @@ ms.topic: article
 
 # Person component in Microsoft Graph Toolkit
 
+> [!CAUTION]
+> The Microsoft Graph CLI (mgcli) is deprecated and will be retired on August 28th, 2026. Users should migrate to the Microsoft Graph PowerShell SDK or other Microsoft Graph SDKs. For more information, see the [Deprecation announcement](https://devblogs.microsoft.com/microsoft365dev/microsoft-graph-cli-retirement/).
+
 The person component is used to display a person or contact by using their photo, name, email address, or any other person details.
 
 The person component also uses the [mgt-person-card](./person-card.md) to display a flyout card with additional information about the user. For details, see the [Person Card](#person-card) section.
