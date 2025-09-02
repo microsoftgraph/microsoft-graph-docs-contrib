@@ -9,6 +9,9 @@ ms.topic: article
 
 # Person-Card component in Microsoft Graph Toolkit
 
+> [!CAUTION]
+> The Microsoft Graph CLI (mgcli) is deprecated and will be retired on August 28th, 2026. Users should migrate to the Microsoft Graph PowerShell SDK or other Microsoft Graph SDKs. For more information, see the [Deprecation announcement](https://devblogs.microsoft.com/microsoft365dev/microsoft-graph-cli-retirement/).
+
 A Person-Card component is a responsive component to display more information related to a person. It's used as a flyout on the `mgt-person` component.
 
 For more information about the `mgt-person` component, see [mgt-person](./person.md).
@@ -67,7 +70,7 @@ The following properties are available.
 
 | Property             | Description                                                                                                                                                    |
 | -------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| useContactApis       | `boolean` - Indicates whether the person card component can use Microsoft Graph Contact API to search for contact details and photos. Default value is `true`. |
+| useContactApis       | `boolean` - Indicates whether the person card component can use the Microsoft Graph Contact API to search for contact details and photos. Default value is `true`. |
 | sections             | `object` - Configures what sections are shown in the person card.                                                                                              |
 | isSendMessageVisible | `boolean` - Indicates whether the send message button is visible. Default value is `true`.                                                                     |
 
@@ -77,8 +80,8 @@ The person card contains several configurable sections for displaying person det
 
 - Contact - Contact information such as email, phone, position, location, and more.
 - Organization - Organizational graph with managers, direct reports, and relevant people.
-- Messages - Most relevant email messages with the current signed in user.
-- Files - Most relevant shared files with the current signed in user.
+- Messages - Most relevant email messages with the current signed-in user.
+- Files - Most relevant shared files with the current signed-in user.
 - Profile - Profile information such as projects, skills, languages, and more.
 
 Sections are loaded by default, but they can be disabled globally via the `MgtPersonCardConfig.sections` object property. The following properties are available.
