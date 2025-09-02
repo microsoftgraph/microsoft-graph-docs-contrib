@@ -52,10 +52,14 @@ To access the team site for a group:
 GET /groups/{group-id}/sites/root
 ```
 
-> [!IMPORTANT]
-> This API has a known issue: when trying to access a group team site using `GET /groups/{group-id}/sites/root`, you may receive a **308 Permanent Redirect** response. If you follow the Location URL in the response header, it will lead to a **401 Unauthorized** error because the redirect targets the SharePoint REST API directly. **This happens when the group team's site has been renamed.**
+> [!NOTE]
+> This API has a [known issue](https://developer.microsoft.com/en-us/graph/known-issues/?search={ID}): accessing a renamed group team site using `GET /groups/{group-id}/sites/root` may return a **308 Permanent Redirect**, which, if followed directly, results in a **401 Unauthorized** error. This happens because the redirect targets the SharePoint REST API directly.
 >
-> As a workaround, you can extract the site domain and relative path from the redirect URL in the response header and then retrieve the SharePoint site by path using `GET /sites/{hostname}:/{relative-path}`. For more information, see: [Get SharePoint site by path](site-getbypath.md).
+> **Workaround:** Extract the site domain and relative path from the redirect URL in the response header, then retrieve the SharePoint site by path using:
+> ```
+> GET /sites/{hostname}:/{relative-path}
+> ```
+> For more information, see [Get SharePoint site by path](site-getbypath.md).
 
 ## Request headers
 
