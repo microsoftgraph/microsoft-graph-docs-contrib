@@ -28,7 +28,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 [!INCLUDE [permissions-table](../includes/permissions/sectionmap-delete-permissions.md)]
 
 > [!NOTE]
-> The Exchange Admin role is required to create or update a **sectionMap**.
+> The Exchange Admin role is required to delete a **sectionMap**.
 
 ## HTTP request
 
