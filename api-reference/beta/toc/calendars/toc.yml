@@ -314,8 +314,6 @@ items:
       href: ../../resources/fixturemap.md
     - name: List
       href: ../../api/levelmap-list-fixtures.md
-    - name: Create
-      href: ../../api/levelmap-post-fixtures.md
     - name: Update
       href: ../../api/fixturemap-update.md
     - name: Delete
@@ -360,8 +358,6 @@ items:
       href: ../../resources/sectionmap.md
     - name: List
       href: ../../api/levelmap-list-sections.md
-    - name: Create
-      href: ../../api/levelmap-post-sections.md
     - name: Update
       href: ../../api/sectionmap-update.md
     - name: Delete
@@ -372,8 +368,6 @@ items:
       href: ../../resources/unitmap.md
     - name: List
       href: ../../api/levelmap-list-units.md
-    - name: Create
-      href: ../../api/levelmap-post-units.md
     - name: Update
       href: ../../api/unitmap-update.md
     - name: Delete
