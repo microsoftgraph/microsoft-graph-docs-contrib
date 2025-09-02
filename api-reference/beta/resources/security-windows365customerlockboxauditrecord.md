@@ -1,8 +1,8 @@
 ---
 title: "windows365CustomerLockboxAuditRecord resource type"
-description: "**TODO: Add Description**"
-author: "diksha27"
-ms.subservice: compliance
+description: "Represents an audit record for Windows 365 Customer Lockbox activities, which control Microsoft engineer access to customer content."
+author: "palakagrawaljk"
+ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ---
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents an audit record for Windows 365 Customer Lockbox activities, which control Microsoft engineer access to customer content. This resource captures events related to access requests, approvals, denials, and expirations for Microsoft support personnel needing access to customer Cloud PC environments to resolve service issues. The audit data provides a complete record of all access requests and their outcomes, helping organizations maintain control over their data and meet compliance requirements for cloud service provider access to customer content.
 
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).

@@ -1,8 +1,8 @@
 ---
 title: "vfamCreatePolicyAuditRecord resource type"
-description: "**TODO: Add Description**"
-author: "diksha27"
-ms.subservice: compliance
+description: "Represents an audit record for the creation of Virtual Filtering Access Management (VFAM) policies."
+author: "palakagrawaljk"
+ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ---
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents an audit record for the creation of Virtual Filtering Access Management (VFAM) policies. This resource captures detailed information about the creation of new VFAM policies, including who created the policy, when it was created, what settings were configured, and the scope of the policy. The audit data helps security administrators track the establishment of new filtering and access control rules that govern network traffic and resource access within the organization.
 
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).

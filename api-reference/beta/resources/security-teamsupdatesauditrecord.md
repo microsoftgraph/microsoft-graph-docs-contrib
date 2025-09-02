@@ -1,8 +1,8 @@
 ---
 title: "teamsUpdatesAuditRecord resource type"
-description: "**TODO: Add Description**"
-author: "diksha27"
-ms.subservice: compliance
+description: "Represents an audit record for update activities in Microsoft Teams."
+author: "palakagrawaljk"
+ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ---
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents an audit record that captures update activities in Microsoft Teams. This resource tracks changes and updates to Teams components, including client updates, service updates, and policy changes. These audit records help organizations monitor the evolution of their Teams environment, providing visibility into version changes, feature updates, and configuration modifications that may affect functionality, security, or compliance.
 
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).

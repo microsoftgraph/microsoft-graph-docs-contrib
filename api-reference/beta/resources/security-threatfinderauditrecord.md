@@ -1,8 +1,8 @@
 ---
 title: "threatFinderAuditRecord resource type"
-description: "**TODO: Add Description**"
-author: "diksha27"
-ms.subservice: compliance
+description: "Represents an audit record for threat finder operations in Microsoft Defender for Office 365."
+author: "palakagrawaljk"
+ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ---
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents an audit record for threat finder operations in Microsoft Defender for Office 365. This resource captures activities related to the detection, analysis, and management of security threats identified by the threat finder capability, helping security administrators track and investigate potential security risks and malicious content within their environment.
 
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).

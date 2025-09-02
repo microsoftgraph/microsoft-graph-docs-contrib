@@ -1,8 +1,8 @@
 ---
 title: "sharePointESignatureAuditRecord resource type"
-description: "**TODO: Add Description**"
-author: "diksha27"
-ms.subservice: compliance
+description: "Represents an audit record for electronic signature activities in SharePoint."
+author: "palakagrawaljk"
+ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ---
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents an audit record that captures electronic signature activities in SharePoint. This resource tracks events related to digital signing processes for documents stored in SharePoint, including signature requests, approvals, rejections, and completions. These audit records help organizations monitor e-signature workflows for compliance with digital signature regulations and provide an audit trail of who signed documents and when.
 
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).

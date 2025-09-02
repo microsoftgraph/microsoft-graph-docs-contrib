@@ -1,8 +1,8 @@
 ---
 title: "uploadCertificateRecord resource type"
-description: "**TODO: Add Description**"
-author: "diksha27"
-ms.subservice: compliance
+description: "Represents an audit record for certificate upload operations in Microsoft security services."
+author: "palakagrawaljk"
+ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ---
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents an audit record for certificate upload operations in Microsoft security services. This resource captures activities related to the uploading of security certificates into the system, including who uploaded certificates, when they were uploaded, certificate properties, and the success or failure status of the upload operation. The audit data helps security administrators track changes to certificate configurations, which are critical components of encryption, authentication, and secure communications infrastructure.
 
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).

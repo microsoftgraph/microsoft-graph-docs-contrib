@@ -1,8 +1,8 @@
 ---
 title: "threatIntelligenceMailData resource type"
-description: "**TODO: Add Description**"
-author: "diksha27"
-ms.subservice: compliance
+description: "Represents threat intelligence data specifically related to email messages analyzed by Microsoft security services."
+author: "palakagrawaljk"
+ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ---
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents threat intelligence data specifically related to email messages analyzed by Microsoft security services. This resource captures detailed information about potential email-based threats, including phishing attempts, spam, malicious attachments, and other email security indicators. The data helps security teams identify, investigate, and remediate email-based security threats within their organization.
 
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).

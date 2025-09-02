@@ -1,8 +1,8 @@
 ---
 title: "unifiedSimulationMatchedItemAuditRecord resource type"
-description: "**TODO: Add Description**"
-author: "diksha27"
-ms.subservice: compliance
+description: "Represents an audit record for matched items in security simulations, such as phishing simulation campaigns."
+author: "palakagrawaljk"
+ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ---
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents an audit record for matched items in security simulations, such as phishing simulation campaigns. This resource captures detailed information about specific items or events that matched criteria within a security simulation, including user interactions with simulated phishing messages, attachment openings, link clicks, and other security-relevant behaviors. The audit data helps security teams evaluate user responses to simulated threats and identify training opportunities to improve organizational security awareness.
 
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).

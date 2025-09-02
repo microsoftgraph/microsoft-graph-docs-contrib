@@ -1,8 +1,8 @@
 ---
 title: "skypeForBusinessBaseAuditRecord resource type"
-description: "**TODO: Add Description**"
-author: "diksha27"
-ms.subservice: compliance
+description: "Represents a base audit record type for Skype for Business activities."
+author: "palakagrawaljk"
+ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ---
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents a base audit record type for Skype for Business activities. This resource serves as the parent type for more specific Skype for Business audit records, providing common properties and structures used across different types of Skype for Business audit events. Specific child types extend this base type to capture particular categories of Skype for Business activities.
 
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).

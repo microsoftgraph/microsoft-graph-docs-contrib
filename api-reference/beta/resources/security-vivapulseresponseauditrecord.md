@@ -1,8 +1,8 @@
 ---
 title: "vivaPulseResponseAuditRecord resource type"
-description: "**TODO: Add Description**"
-author: "diksha27"
-ms.subservice: compliance
+description: "Represents an audit record for response-related activities in Microsoft Viva Pulse surveys."
+author: "palakagrawaljk"
+ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ---
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents an audit record for response-related activities in Microsoft Viva Pulse surveys. This resource captures information about employee feedback submissions in the Viva Pulse platform, including when surveys were completed, anonymized respondent information, and survey completion rates. The audit data helps organizations ensure proper handling of sensitive employee feedback while protecting individual privacy, supporting compliance with privacy regulations governing how employee sentiment data is collected and managed.
 
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).

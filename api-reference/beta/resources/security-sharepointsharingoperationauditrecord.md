@@ -1,8 +1,8 @@
 ---
 title: "sharePointSharingOperationAuditRecord resource type"
-description: "**TODO: Add Description**"
-author: "diksha27"
-ms.subservice: compliance
+description: "Represents an audit record for sharing operations in SharePoint and OneDrive."
+author: "palakagrawaljk"
+ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ---
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents an audit record that captures sharing operations in SharePoint and OneDrive. This resource tracks activities related to content sharing, including creating and modifying sharing links, inviting external users, changing permissions, and access requests. These audit records help organizations monitor how content is being shared both internally and externally, providing visibility into potential data exposure risks and collaboration patterns.
 
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).

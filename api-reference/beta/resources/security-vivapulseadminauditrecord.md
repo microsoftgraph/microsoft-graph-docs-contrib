@@ -1,8 +1,8 @@
 ---
 title: "vivaPulseAdminAuditRecord resource type"
-description: "**TODO: Add Description**"
-author: "diksha27"
-ms.subservice: compliance
+description: "Represents an audit record for administrative activities in Microsoft Viva Pulse."
+author: "palakagrawaljk"
+ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ---
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents an audit record for administrative activities in Microsoft Viva Pulse. This resource captures actions performed by administrators managing the Viva Pulse platform, which is used for gathering employee feedback and sentiment analysis. The audit data includes configuration changes, survey template management, access control modifications, and other administrative operations that affect how employee feedback is collected, processed, and reported within the organization.
 
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).

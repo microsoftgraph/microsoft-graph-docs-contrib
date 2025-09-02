@@ -1,8 +1,8 @@
 ---
 title: "todoAuditRecord resource type"
-description: "**TODO: Add Description**"
-author: "diksha27"
-ms.subservice: compliance
+description: "Represents an audit record for Microsoft To Do activities that may be relevant for security and compliance monitoring."
+author: "palakagrawaljk"
+ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ---
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents an audit record for Microsoft To Do activities that may be relevant for security and compliance monitoring. This resource captures user actions performed in the Microsoft To Do application, such as creating, modifying, or deleting tasks and task lists. The audit data helps organizations track user productivity activities and identify potential security concerns related to task management within their Microsoft 365 environment.
 
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).

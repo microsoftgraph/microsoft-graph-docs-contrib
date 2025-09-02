@@ -1,8 +1,8 @@
 ---
 title: "smsCreatePhoneNumberRecord resource type"
-description: "**TODO: Add Description**"
-author: "diksha27"
-ms.subservice: compliance
+description: "Represents an audit record for SMS phone number creation activities."
+author: "palakagrawaljk"
+ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ---
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents an audit record that captures SMS phone number creation activities. This resource tracks events where phone numbers are registered or provisioned for SMS messaging within Microsoft services, such as for multi-factor authentication, notifications, or alerts. These audit records help organizations monitor the configuration of SMS communication channels for security and authentication purposes, providing visibility into when and how phone numbers are being registered.
 
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).

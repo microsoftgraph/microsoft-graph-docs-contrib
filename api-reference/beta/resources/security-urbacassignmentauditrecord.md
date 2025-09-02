@@ -1,8 +1,8 @@
 ---
 title: "urbacAssignmentAuditRecord resource type"
-description: "**TODO: Add Description**"
-author: "diksha27"
-ms.subservice: compliance
+description: "Represents an audit record for Unified Role-Based Access Control (URBAC) assignment operations in Microsoft security services."
+author: "palakagrawaljk"
+ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ---
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents an audit record for Unified Role-Based Access Control (URBAC) assignment operations in Microsoft security services. This resource captures activities related to the assignment of roles to users, groups, or service principals, including who made the assignment, when it was made, what roles were assigned, and to whom they were assigned. The audit data helps security administrators track changes to role assignments, which are critical for maintaining proper access controls and security boundaries within the organization.
 
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).

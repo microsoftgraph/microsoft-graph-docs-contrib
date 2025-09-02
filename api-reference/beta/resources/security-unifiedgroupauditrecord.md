@@ -1,8 +1,8 @@
 ---
 title: "unifiedGroupAuditRecord resource type"
-description: "**TODO: Add Description**"
-author: "diksha27"
-ms.subservice: compliance
+description: "Represents an audit record for Microsoft 365 Groups (unified groups) operations that are relevant for security monitoring."
+author: "palakagrawaljk"
+ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ---
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents an audit record for Microsoft 365 Groups (unified groups) operations that are relevant for security monitoring. This resource captures activities related to the creation, modification, deletion, and membership management of Microsoft 365 Groups. The audit data helps security administrators track group-related activities to ensure proper access control, detect unauthorized changes to group settings or membership, and maintain compliance with organizational governance policies.
 
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).

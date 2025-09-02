@@ -1,8 +1,8 @@
 ---
 title: "vfamDeletePolicyAuditRecord resource type"
-description: "**TODO: Add Description**"
-author: "diksha27"
-ms.subservice: compliance
+description: "Represents an audit record for the deletion of Virtual Filtering Access Management (VFAM) policies."
+author: "palakagrawaljk"
+ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ---
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents an audit record for the deletion of Virtual Filtering Access Management (VFAM) policies. This resource captures detailed information about the removal of VFAM policies, including who deleted the policy, when it was deleted, and which policy was removed. The audit data helps security administrators track the removal of filtering and access control rules, which is critical for understanding changes to the security posture and ensuring that policy removals are authorized and properly documented.
 
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).

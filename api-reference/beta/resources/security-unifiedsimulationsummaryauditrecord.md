@@ -1,8 +1,8 @@
 ---
 title: "unifiedSimulationSummaryAuditRecord resource type"
-description: "**TODO: Add Description**"
-author: "diksha27"
-ms.subservice: compliance
+description: "Represents a summary audit record for security simulations, providing aggregated information about simulation campaigns."
+author: "palakagrawaljk"
+ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ---
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents a summary audit record for security simulations, providing aggregated information about simulation campaigns. This resource captures high-level metrics and statistics about security simulation activities, such as phishing simulations, including overall participation rates, completion percentages, success metrics, and other aggregated data points. The summary audit data helps security administrators evaluate the effectiveness of security awareness training initiatives and track organizational improvements in security posture over time.
 
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).

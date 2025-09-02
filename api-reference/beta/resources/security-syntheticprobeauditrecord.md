@@ -1,8 +1,8 @@
 ---
 title: "syntheticProbeAuditRecord resource type"
-description: "**TODO: Add Description**"
-author: "diksha27"
-ms.subservice: compliance
+description: "Represents an audit record for synthetic monitoring probe activities in Microsoft services."
+author: "palakagrawaljk"
+ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ---
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents an audit record that captures synthetic monitoring probe activities in Microsoft services. This resource tracks automated testing and monitoring probes that check system health, availability, and performance. These audit records help organizations distinguish between actual user activities and synthetic monitoring activities in their audit logs, providing clarity when analyzing security events and service usage patterns.
 
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).

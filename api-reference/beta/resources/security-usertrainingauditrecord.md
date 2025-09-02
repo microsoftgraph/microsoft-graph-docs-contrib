@@ -1,8 +1,8 @@
 ---
 title: "userTrainingAuditRecord resource type"
-description: "**TODO: Add Description**"
-author: "diksha27"
-ms.subservice: compliance
+description: "Represents an audit record for security awareness training activities in Microsoft security services."
+author: "palakagrawaljk"
+ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ---
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents an audit record for security awareness training activities in Microsoft security services. This resource captures information about user participation in security training, including training assignments, completions, failures, and progress tracking. The audit data helps security administrators monitor the organization's security training program effectiveness, track compliance with required training policies, and identify users who may need additional security education to improve the organization's overall security posture.
 
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).

@@ -1,8 +1,8 @@
 ---
 title: "tenantAllowBlockListAuditRecord resource type"
-description: "**TODO: Add Description**"
-author: "diksha27"
-ms.subservice: compliance
+description: "Represents an audit record for tenant-level allow and block list management."
+author: "palakagrawaljk"
+ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ---
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents an audit record that captures tenant-level allow and block list management. This resource tracks activities related to the configuration and modification of organization-wide allow or block lists for entities such as URLs, domains, file hashes, or IP addresses. These audit records help organizations monitor changes to their security filtering configurations, providing visibility into who is modifying allow/block lists and what specific changes are being made.
 
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).

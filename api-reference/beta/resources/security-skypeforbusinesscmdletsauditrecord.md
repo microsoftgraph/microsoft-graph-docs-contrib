@@ -1,8 +1,8 @@
 ---
 title: "skypeForBusinessCmdletsAuditRecord resource type"
-description: "**TODO: Add Description**"
-author: "diksha27"
-ms.subservice: compliance
+description: "Represents an audit record for Skype for Business PowerShell cmdlet operations."
+author: "palakagrawaljk"
+ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ---
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents an audit record that captures Skype for Business PowerShell cmdlet operations. This resource tracks administrative actions performed through PowerShell cmdlets to configure and manage Skype for Business Online services, including user management, policy configurations, and service settings. These audit records help organizations monitor administrative activities that affect Skype for Business services, providing accountability and traceability for configuration changes.
 
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).

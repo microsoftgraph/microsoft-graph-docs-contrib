@@ -1,8 +1,8 @@
 ---
 title: "vivaGoalsAuditRecord resource type"
-description: "**TODO: Add Description**"
-author: "diksha27"
-ms.subservice: compliance
+description: "Represents an audit record for Microsoft Viva Goals activities that may be relevant for compliance and security monitoring."
+author: "palakagrawaljk"
+ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ---
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents an audit record for Microsoft Viva Goals activities that may be relevant for compliance and security monitoring. This resource captures actions performed within the Viva Goals application, including the creation, modification, and deletion of objectives and key results (OKRs), changes to goal assignments, and modifications to goal permissions and sharing settings. The audit data helps organizations track how strategic information is managed and accessed, ensuring proper governance of potentially sensitive business objectives.
 
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).

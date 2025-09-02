@@ -1,8 +1,8 @@
 ---
 title: "yammerAuditRecord resource type"
-description: "**TODO: Add Description**"
-author: "diksha27"
-ms.subservice: compliance
+description: "Represents an audit record for activities in Microsoft Yammer enterprise social networking service."
+author: "palakagrawaljk"
+ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ---
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents an audit record for activities in Microsoft Yammer enterprise social networking service. This resource captures user and administrative actions within the Yammer platform, including message creation, community management, file sharing, policy changes, and network configuration modifications. The audit data helps organizations monitor Yammer usage, ensure compliance with communication policies, and track the handling of potentially sensitive information shared through enterprise social channels.
 
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).

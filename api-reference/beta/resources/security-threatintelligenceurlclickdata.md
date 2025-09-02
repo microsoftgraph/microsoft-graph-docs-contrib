@@ -1,8 +1,8 @@
 ---
 title: "threatIntelligenceUrlClickData resource type"
-description: "**TODO: Add Description**"
-author: "diksha27"
-ms.subservice: compliance
+description: "Represents data about URL clicks monitored by Microsoft Defender for Office 365 for security threat assessment."
+author: "palakagrawaljk"
+ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ---
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents data about URL clicks monitored by Microsoft Defender for Office 365 for security threat assessment. This resource captures information when users click on URLs in emails and other content, tracking details such as the clicked URL, user information, verdict from Safe Links, timestamp, and device information. This data helps security teams monitor and investigate potential phishing or malicious link threats within their organization.
 
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).

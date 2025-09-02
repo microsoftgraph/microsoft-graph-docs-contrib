@@ -1,8 +1,8 @@
 ---
 title: "teamsEasyApprovalsAuditRecord resource type"
-description: "**TODO: Add Description**"
-author: "diksha27"
-ms.subservice: compliance
+description: "Represents an audit record for approval activities in Microsoft Teams."
+author: "palakagrawaljk"
+ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ---
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents an audit record that captures approval activities in Microsoft Teams. This resource tracks workflows and actions related to approval requests, including creation, submission, approval, rejection, and delegation of approval requests. These audit records help organizations monitor approval processes for security and compliance purposes, providing visibility into decision-making workflows and accountability for approvals.
 
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).
