@@ -29,8 +29,6 @@ The following diagram shows what happens when you make a request through an MCP-
 
 ![MCP Server Workflow](../images/mcp-server-workflow.svg)
 
-Considering the query, "How many users are in my tenant?", these steps happen:
-
 1. **Automatic discovery**: When the AI client starts, it automatically locates the Microsoft Graph MCP Server endpoint at `mcp.graph.microsoft.com` from the list of installed MCP Servers and retrieves the available tools. This process enables the AI client to function as both an MCP client and host.
 
 1. **Input**: A user signed in to the AI client, or an autonomous agent, provides a query or command within the context window in natural language. Natural language in this context includes [any language supported in the latest version of Windows](https://support.microsoft.com/en-us/windows/language-packs-for-windows-a5094319-a92d-18de-5b53-1cfc697cfca8).
