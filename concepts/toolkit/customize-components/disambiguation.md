@@ -10,7 +10,7 @@ ms.topic: article
 # Microsoft Graph Toolkit component disambiguation
 
 > [!CAUTION]
-> The Microsoft Graph CLI (mgcli) is deprecated and will be retired on August 28th, 2026. Users should migrate to the Microsoft Graph PowerShell SDK or other Microsoft Graph SDKs. For more information, see the [Deprecation announcement](https://devblogs.microsoft.com/microsoft365dev/microsoft-graph-cli-retirement/).
+> The Microsoft Graph Toolkit is deprecated. The retirement period begins September 1st, 2025, with full retirement planned for August 28th, 2026. Developers should migrate to using the Microsoft Graph SDKs or other supported Microsoft Graph tools for building web experiences. For more information, see the [deprecation announcement](https://devblogs.microsoft.com/microsoft365dev/microsoft-graph-toolkit-retirement/).
 
 The Microsoft Graph Toolkit is built using [web components](https://developer.mozilla.org/docs/Web/Web_Components). Web components use their tag name as a unique key when registering within a browser. Any attempt to register a component using a previously registered tag name results in an error when calling `CustomElementRegistry.define()`. In scenarios where multiple custom applications can be loaded into a single page, this creates issues for Microsoft Graph Toolkit, most notably when developing solutions using SharePoint Framework.
 

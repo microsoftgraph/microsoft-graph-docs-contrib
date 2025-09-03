@@ -10,7 +10,7 @@ ms.topic: article
 # Person-Card component in Microsoft Graph Toolkit
 
 > [!CAUTION]
-> The Microsoft Graph CLI (mgcli) is deprecated and will be retired on August 28th, 2026. Users should migrate to the Microsoft Graph PowerShell SDK or other Microsoft Graph SDKs. For more information, see the [Deprecation announcement](https://devblogs.microsoft.com/microsoft365dev/microsoft-graph-cli-retirement/).
+> The Microsoft Graph Toolkit is deprecated. The retirement period begins September 1st, 2025, with full retirement planned for August 28th, 2026. Developers should migrate to using the Microsoft Graph SDKs or other supported Microsoft Graph tools for building web experiences. For more information, see the [deprecation announcement](https://devblogs.microsoft.com/microsoft365dev/microsoft-graph-toolkit-retirement/).
 
 A Person-Card component is a responsive component to display more information related to a person. It's used as a flyout on the `mgt-person` component.
 

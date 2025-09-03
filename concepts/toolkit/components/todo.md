@@ -10,7 +10,7 @@ ms.topic: article
 # To Do component in Microsoft Graph Toolkit
 
 > [!CAUTION]
-> The Microsoft Graph CLI (mgcli) is deprecated and will be retired on August 28th, 2026. Users should migrate to the Microsoft Graph PowerShell SDK or other Microsoft Graph SDKs. For more information, see the [Deprecation announcement](https://devblogs.microsoft.com/microsoft365dev/microsoft-graph-cli-retirement/).
+> The Microsoft Graph Toolkit is deprecated. The retirement period begins September 1st, 2025, with full retirement planned for August 28th, 2026. Developers should migrate to using the Microsoft Graph SDKs or other supported Microsoft Graph tools for building web experiences. For more information, see the [deprecation announcement](https://devblogs.microsoft.com/microsoft365dev/microsoft-graph-toolkit-retirement/).
 
 The To Do component is used to enable the signed-in user to view, add, remove, complete, and/or edit tasks from Microsoft To Do using the To Do API in Microsoft Graph.
 
