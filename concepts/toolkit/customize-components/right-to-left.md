@@ -11,7 +11,7 @@ ms.topic: how-to
 # Display Microsoft Graph Toolkit components right-to-left (rtl)
 
 > [!CAUTION]
-> The Microsoft Graph Toolkit is deprecated. The retirement period begins September 1st, 2025, with full retirement planned for August 28th, 2026. Developers should migrate to using the Microsoft Graph SDKs or other supported Microsoft Graph tools for building web experiences. For more information, see the [deprecation announcement](https://devblogs.microsoft.com/microsoft365dev/microsoft-graph-toolkit-retirement/).
+> The Microsoft Graph Toolkit is deprecated. The retirement period begins September 1, 2025, with full retirement planned for August 28, 2026. Developers should migrate to using the Microsoft Graph SDKs or other supported Microsoft Graph tools for building web experiences. For more information, see the [deprecation announcement](https://devblogs.microsoft.com/microsoft365dev/microsoft-graph-toolkit-retirement/).
 
 The Microsoft Graph Toolkit components support bidirectional markup for right-to-left language scripts.
 
