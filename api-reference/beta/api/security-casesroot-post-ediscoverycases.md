@@ -15,9 +15,6 @@ Namespace: microsoft.graph.security
 
 Create a new [ediscoveryCase](../resources/security-ediscoverycase.md) object.
 
->[!NOTE]
-> This API only creates an eDiscovery (Premium) case using the new case format. To learn more about the new case format in eDiscovery, see [Use the new case format in eDiscovery (Premium)](/microsoft-365/compliance/advanced-ediscovery-new-case-format).
-
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions

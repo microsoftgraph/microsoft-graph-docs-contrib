@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-const mobilityManagementPolicy = {
+const mobileDeviceManagementPolicy = {
   '@odata.type': '#microsoft.graph.mobilityManagementPolicy',
   complianceUrl: 'https://portal.uem.contoso.com/?portalAction=Compliance',
   discoveryUrl: 'https://enrollment.uem.contoso.com/enrollmentserver/discovery.svc',
@@ -19,6 +19,6 @@ const mobilityManagementPolicy = {
 
 await client.api('/policies/mobileDeviceManagementPolicies/ab90bacf-55a3-4a3e-839a-aa4b74e4f020')
 	.version('beta')
-	.update(mobilityManagementPolicy);
+	.update(mobileDeviceManagementPolicy);
 
 ```

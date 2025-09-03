@@ -180,6 +180,10 @@ GET https://graph.microsoft.com/beta/subscriptions/getVapidPublicKey
 [!INCLUDE [sample-code](../includes/snippets/php/subscriptionthisgetvapidpublickey-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/subscriptionthisgetvapidpublickey-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/subscriptionthisgetvapidpublickey-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

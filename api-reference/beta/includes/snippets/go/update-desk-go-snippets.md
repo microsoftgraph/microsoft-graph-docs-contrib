@@ -16,11 +16,8 @@ import (
 )
 
 requestBody := graphmodels.NewPlace()
-additionalData := map[string]interface{}{
-mode := graph.New()
-	requestBody.SetMode(mode)
-}
-requestBody.SetAdditionalData(additionalData)
+mode := graphmodels.NewDropInPlaceMode()
+requestBody.SetMode(mode)
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 places, err := graphClient.Places().ByPlaceId("place-id").Patch(context.Background(), requestBody, nil)

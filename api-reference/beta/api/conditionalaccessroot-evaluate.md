@@ -68,6 +68,7 @@ If successful, this action returns a `200 OK` response code and a [whatIfAnalysi
 #### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "conditionalaccessrootthis.evaluate_example1"
@@ -106,6 +107,12 @@ Content-Type: application/json
     "appliedPoliciesOnly": true
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/conditionalaccessrootthisevaluate-example1-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
@@ -265,6 +272,7 @@ Content-Type: application/json
 
 #### Request 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "conditionalaccessrootthis.evaluate_example2"
@@ -301,6 +309,12 @@ Content-Type: application/json
     "appliedPoliciesOnly": true
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/conditionalaccessrootthisevaluate-example2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
@@ -420,6 +434,7 @@ Content-Type: application/json
 #### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "conditionalaccessrootthis.evaluate_example3"
@@ -457,6 +472,12 @@ Content-Type: application/json
     "appliedPoliciesOnly": true
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/conditionalaccessrootthisevaluate-example3-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
@@ -715,6 +736,7 @@ Content-Type: application/json
 
 #### Request 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "conditionalaccessrootthis.evaluate_example4"
@@ -743,6 +765,12 @@ Content-Type: application/json
     "appliedPoliciesOnly": true
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/conditionalaccessrootthisevaluate-example4-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
