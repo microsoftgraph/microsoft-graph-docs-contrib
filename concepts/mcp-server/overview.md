@@ -6,7 +6,7 @@ ms.author: ombongifaith
 ms.reviewr: Licantrop0
 ms.subservice: graph-mcp
 ms.topic: overview
-ms.date: 08/29/2025
+ms.date: 09/03/2025
 
 #customer intent: As a developer, I want to understand the Microsoft Graph MCP Server so that I can effectively integrate it into my AI agents and applications.
 
@@ -27,38 +27,17 @@ This overview explains how Microsoft Graph MCP Server works, helping you get sta
 
 The following diagram shows what happens when you make a request through an MCP-enabled AI agent.
 
-```mermaid
-sequenceDiagram  
-    actor User  
-    participant Client  
-    participant MCPServer as MCP Server  
-
-    rect rgba(50, 100, 150, 0.25)  
-    note over Client,MCPServer: Tool Discovery Phase  
-    Client->>MCPServer: Request available tools  
-    MCPServer-->>Client: Return tool metadata  
-    Client->>Client: Parse and register tools  
-    Client-->>User: Tools are now available for use  
-    end  
-
-    rect rgba(50, 150, 50, 0.25)  
-    note over Client,MCPServer: Tool Usage Phase  
-    User->>Client: Provides prompt  
-    Client->>MCPServer: Invoke selected tool  
-    MCPServer-->>Client: Return tool result  
-    Client-->>User: Present tool output  
-    end  
-```
-
-![MCP Server Workflow](../images/mcp-server-workflow.png)
+![MCP Server Workflow](../images/mcp-server-workflow.svg)
 
 Considering the query, "How many users are in my tenant?", these steps happen:
 
-1. **Input**: A user signed in to an AI client, or an autonomous agent, provides a query or command within the context window in natural language. Natural language in this context includes [any language supported in the latest version of Windows](https://support.microsoft.com/en-us/windows/language-packs-for-windows-a5094319-a92d-18de-5b53-1cfc697cfca8).
-- The AI client uses LLMs and the Microsoft Graph MCP Server endpoint `mcp.graph.microsoft.com`. The Microsoft Graph MCP Server configuration on the AI client lists the available tools. This setup makes the AI client both an MCP client and host.
-- The user enters a query in the LLM's context window. For example, "How many users are in my tenant?"
+1. **Automatic discovery**: When the AI client starts, it automatically locates the Microsoft Graph MCP Server endpoint at `mcp.graph.microsoft.com` from the list of installed MCP Servers and retrieves the available tools. This process enables the AI client to function as both an MCP client and host.
 
-1. **NLP Processing**: The LLM processes the query using Natural Language Processing (NLP) techniques to extract intent, which it might conclude is "count the number of users in the Microsoft Entra ID tenant". From the MCP server connections that run in the agent, it determines which server and tool to use. In this case, it's the **search_for_graph_examples** tool of the Graph MCP Server.
+1. **Input**: A user signed in to the AI client, or an autonomous agent, provides a query or command within the context window in natural language. Natural language in this context includes [any language supported in the latest version of Windows](https://support.microsoft.com/en-us/windows/language-packs-for-windows-a5094319-a92d-18de-5b53-1cfc697cfca8).
+
+   - The user enters a query in the LLM's context window. For example, "*How many users are in my tenant?*"
+
+1. **NLP Processing**: The LLM processes the query using Natural Language Processing (NLP) techniques to extract intent, which it might conclude is *"count the number of users in the Microsoft Entra ID tenant*". From the MCP server connections that run in the agent, it determines which server and tool to use. In this case, it's the **search_for_graph_examples** tool of the Graph MCP Server.
 
 1. **Execution**: The MCP Server executes the query using the tool. It uses Retrieval-Augmented Generation (RAG) to execute a search for relevant Microsoft Graph API calls that match the user's intent and returns this matching list to the LLM.
    1. The MCP Server has a semantic index of example Graph queries in natural language and their corresponding API calls.
@@ -74,20 +53,21 @@ Considering the query, "How many users are in my tenant?", these steps happen:
 
 1. **Natural Language Response Generation**: The LLM interprets the JSON payload and converts it into a natural language response for the user. In this case, it might simply respond: "There are 10,930 users in the directory."
 
-*QQ: How does the AI client know to refresh the list of tools when new tools are available?*
-
 ## Tools
 
 The Microsoft Graph MCP Server exposes the following tools that an AI agent can invoke:
 
 - **search_for_graph_examples** - This tool uses RAG methodologies to search for Microsoft Graph API calls that match the customer intent and returns a list of candidate queries to the LLM.
 - **make_graph_call_readonly** - This tool runs the read-only API call with the highest relevance score and returns the result.
+- *Tool #3???*
 
 ## Usage scenarios
 
 1. **Answer common IT queries:** End users and administrators can ask questions about their tenant in plain language. For instance, an IT admin reporting on license optimization to the leadership could ask "Show me the unassigned licenses in my tenant" and get results, even if they don't know the API for querying license utilization details.
+
 1. **Discover and test APIs for integration scenarios:** If you're building traditional applications, you can use the Microsoft Graph MCP Server to explore and test APIs that power your scenarios before integrating them into your application.
-1. 
+
+1. *More usage scenarios?*
 
 ## Scope of coverage
 
