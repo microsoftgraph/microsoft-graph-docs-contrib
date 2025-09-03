@@ -77,6 +77,7 @@ If successful, this method returns a `200 OK` response code and a [policyDeletab
 #### Request
 
 The following example shows a request for a crossTenantAccessPolicyConfigurationPartner.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_policydeletableitem_crossTenantAccessPolicyConfigurationPartner"
@@ -85,6 +86,12 @@ The following example shows a request for a crossTenantAccessPolicyConfiguration
 ```HTTP
 GET https://graph.microsoft.com/beta/policies/deletedItems/crossTenantPartners/01d0e717-bc90-46ba-94a9-71b4a811fddb
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-policydeletableitem-crosstenantaccesspolicyconfigurationpartner-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 
 #### Response
@@ -137,6 +144,7 @@ Content-Type: application/json
 #### Request
 
 The following example shows a request for a crossTenantIdentitySyncPolicyPartner.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_policydeletableitem_crossTenantIdentitySyncPolicyPartner"
@@ -145,6 +153,12 @@ The following example shows a request for a crossTenantIdentitySyncPolicyPartner
 ```HTTP
 GET https://graph.microsoft.com/beta/policies/deletedItems/crossTenantSyncPolicyPartners/01d0e717-bc90-46ba-94a9-71b4a811fddb
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-policydeletableitem-crosstenantidentitysyncpolicypartner-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 
 #### Response
