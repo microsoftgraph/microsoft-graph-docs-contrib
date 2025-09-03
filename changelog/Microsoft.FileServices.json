@@ -4453,10 +4453,10 @@
         {
           "Id": "d279437f-b07f-4363-99ee-4ce0ba1a8a81",
           "ApiChange": "Resource",
-          "ChangedApiName": "fileStorageContainerAgentSettings",
+          "ChangedApiName": "fileStorageContainerTypeAgentSettings",
           "ChangeType": "Addition",
-          "Description": "Added the [fileStorageContainerAgentSettings](https://learn.microsoft.com/en-us/graph/api/resources/fileStorageContainerAgentSettings?view=graph-rest-beta) resource.",
-          "Target": "fileStorageContainerAgentSettings"
+          "Description": "Added the [fileStorageContainerTypeAgentSettings](https://learn.microsoft.com/en-us/graph/api/resources/fileStorageContainerTypeAgentSettings?view=graph-rest-beta) resource.",
+          "Target": "fileStorageContainerTypeAgentSettings"
         },
         {
           "Id": "d279437f-b07f-4363-99ee-4ce0ba1a8a81",

@@ -22,7 +22,7 @@ Represents the settings associated with a [fileStorageContainerTypeRegistration]
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|agent|[fileStorageContainerAgentSettings](../resources/filestoragecontaineragentsettings.md)|Contains agent related settings.|
+|agent|[fileStorageContainerTypeAgentSettings](../resources/filestoragecontainertypeagentsettings.md)|Contains agent related settings.|
 |isDiscoverabilityEnabled|Boolean|Indicates whether items from containers are surfaced in experiences such as **My Activity** or Microsoft 365.|
 |isItemVersioningEnabled|Boolean|Indicates whether item versioning is enabled.|
 |isSearchEnabled|Boolean|Indicates whether search is enabled.|
@@ -54,7 +54,7 @@ The following JSON representation shows the resource type.
   "sharingCapability": "String",
   "urlTemplate": "String",
   "agent": {
-    "@odata.type": "microsoft.graph.fileStorageContainerAgentSettings"
+    "@odata.type": "microsoft.graph.fileStorageContainerTypeAgentSettings"
   }
 }
 ```
