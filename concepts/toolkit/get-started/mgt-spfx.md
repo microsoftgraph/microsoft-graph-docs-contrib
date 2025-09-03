@@ -66,7 +66,7 @@ export default class MgtWebPart extends BaseClientSideWebPart<IMgtWebPartProps> 
 
 ### React
 
-If you're building a web part using React, you can use the `@microsoft/mgt-react` package and skip the manual registration of components. However, make sure that you lazy load your React component from the web part to make use of disambiguation.
+If you're building a web part using React, you can use the `@microsoft/mgt-react` package and skip the manual registration of components. However, make sure that your lazy-load your React component from the web part to make use of disambiguation.
 
 ```ts
 // [...] trimmed for brevity
@@ -124,7 +124,7 @@ export default class MgtReact extends React.Component<IMgtReactProps, {}> {
 ```
 
 > [!IMPORTANT]
-> Make sure that your root web part class does not import any Microsoft Graph Toolkit resources from `@microsoft/mgt-react`. These should only be imported inside the lazy loaded React components.
+> Make sure that your root web part class doesn't import any Microsoft Graph Toolkit resources from `@microsoft/mgt-react`. These should only be imported inside the lazy-loaded React components.
 
 ## Configure webpack
 
