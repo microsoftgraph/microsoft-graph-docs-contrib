@@ -10,7 +10,7 @@ ms.topic: article
 # MSAL2 Provider
 
 > [!CAUTION]
-> The Microsoft Graph CLI (mgcli) is deprecated and will be retired on August 28th, 2026. Users should migrate to the Microsoft Graph PowerShell SDK or other Microsoft Graph SDKs. For more information, see the [Deprecation announcement](https://devblogs.microsoft.com/microsoft365dev/microsoft-graph-cli-retirement/).
+> The Microsoft Graph Toolkit is deprecated. The retirement period begins September 1, 2025, with full retirement planned for August 28, 2026. Developers should migrate to using the Microsoft Graph SDKs or other supported Microsoft Graph tools for building web experiences. For more information, see the [deprecation announcement](https://devblogs.microsoft.com/microsoft365dev/microsoft-graph-toolkit-retirement/).
 
 The MSAL2 Provider is built on [MSAL-browser](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-browser) that implements the OAuth 2.0 [authorization code flow](https://devblogs.microsoft.com/identity/migrate-to-auth-code-flow) with PKCE. It's used to sign in users and acquire tokens to use with Microsoft Graph.
 
