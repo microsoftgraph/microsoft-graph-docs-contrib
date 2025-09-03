@@ -48,12 +48,12 @@ You can use several attributes to change the behavior of the component. The requ
 | site-id                   | siteId                  | Optional. The ID of the site where the term set is present. If not specified, the term set is assumed to be at the tenant level.                                                                                                                                            | String  |
 | version                   | version                 | Optional. API version to use when making the GET request. Default is `beta`.                                                                                                                                                                                                | String  |
 | placeholder               | placeholder             | Optional. The placeholder to use in the combobox. The default value is `Select a term`.                                                                                                                                                                                         | string  |
-| locale                    | locale                  | Optional. The locale of the terms that need to be displayed. This is useful only when terms have multiple labels in different languages.                                                                                                                               | String  |
-| default-selected-term-id  | defaultSelectedTermId   | Optional. The id of the term that should be selected by default.                                                                                                                                                                                                            | String  |
+| locale                    | locale                  | Optional. The locale of the terms that need to be displayed. It's useful only when terms have multiple labels in different languages.                                                                                                                               | String  |
+| default-selected-term-id  | defaultSelectedTermId   | Optional. The ID of the term that should be selected by default.                                                                                                                                                                                                            | String  |
 | position                  | position                | Optional. The position of the dropdown. Can be 'above' or 'below'. Default is `below`                                                                                                                                                                                       | String  |
 | disabled                  | disabled                | Optional. Sets whether the taxonomy picker is disabled. When disabled, the user isn't able to search or select terms.                                                                                                                                                      | NA      |
-| cache-enabled             | cacheEnabled            | Optional. When set, it indicates that the response from the resource will be cached. Default is `false`.                                                                                                                                                                    | Boolean |
-| cache-invalidation-period | cacheInvalidationPeriod | Optional. (Number of milliseconds) When set in combination with `cacheEnabled`, the delay before the cache reaches its invalidation period will be modified by this value. Default is `0` and will use the default invalidation period.                                     | Number  |
+| cache-enabled             | cacheEnabled            | Optional. When set, it indicates that the response from the resource is cached. Default is `false`.                                                                                                                                                                    | Boolean |
+| cache-invalidation-period | cacheInvalidationPeriod | Optional. (Number of milliseconds) When set in combination with `cacheEnabled`, the delay before the cache reaches its invalidation period is modified by this value. Default is `0` and uses the default invalidation period.                                     | Number  |
 
 The following example changes the behavior of the component to fetch first-level child terms of the specified term set.
 
@@ -127,13 +127,13 @@ To learn more, see [styling components](../customize-components/style.md).
 
 | Method                  | Description                                                                                                                                 |
 | ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
-| refresh(force?:boolean) | Call the method to refresh the data. By default, the UI will only update if the data changes. Pass `true` to force the component to update. |
+| refresh(force?:boolean) | Call the method to refresh the data. By default, the UI only updates if the data changes. Pass `true` to force the component to update. |
 
 ## Events
 
 | Event              | When is it emitted                                               | Custom data                                                                                                          | Cancelable | Bubbles | Works with custom template |
 | ------------------ | ---------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- | :--------: | :-----: | :------------------------: |
-| `selectionChanged` | Fired when the user makes a change in selection in the dropdown. | The selected term that will of the type [`TermStore.Term`](/graph/api/resources/termstore-term#json-representation) |     No     |   Yes   |            Yes             |
+| `selectionChanged` | Fired when the user makes a change in selection in the dropdown. | The selected term that is of the type [`TermStore.Term`](/graph/api/resources/termstore-term#json-representation) |     No     |   Yes   |            Yes             |
 
 For more information about handling events, see [events](../customize-components/events.md).
 
