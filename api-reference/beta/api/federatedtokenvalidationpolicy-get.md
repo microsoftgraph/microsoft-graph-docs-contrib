@@ -1,7 +1,7 @@
 ---
 title: "Get federatedTokenValidationPolicy"
 description: "Read the properties and relationships of a federatedTokenValidationPolicy object."
-author: "rahul-nagraj"
+author: "vimrang"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType

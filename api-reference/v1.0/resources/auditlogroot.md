@@ -1,7 +1,7 @@
 ---
 title: "auditLogRoot resource type"
 description: "Contains different types of audit logs. The auditLogRoot resource returns a singleton auditLog resource. It doesn't contain any usable properties."
-author: "dhanyahk"
+author: "egreenberg14"
 ms.localizationpriority: medium
 ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType

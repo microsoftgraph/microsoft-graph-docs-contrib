@@ -26,14 +26,19 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "authentication-list-externalauthenticationmethods-permissions"
+  "name": "authentication-list-externalauthenticationmethods-permissions",
+  "requestUrls": ["GET /me/authentication/externalAuthenticationMethods"]
 }
 -->
 [!INCLUDE [permissions-table](../includes/permissions/authentication-list-externalauthenticationmethods-permissions.md)]
 
 ### Permissions acting on other users
 
-<!-- { "blockType": "permissions", "name": "authentication_list_externalauthenticationmethods_2" } -->
+<!-- { 
+  "blockType": "permissions", 
+  "name": "authentication_list_externalauthenticationmethods_2",
+  "requestUrls": ["GET /users/{usersId}/authentication/externalAuthenticationMethods"]
+} -->
 [!INCLUDE [permissions-table](../includes/permissions/authentication-list-externalauthenticationmethods-2-permissions.md)]
 
 [!INCLUDE [rbac-authentication-methods-apis-read-others](../includes/rbac-for-apis/rbac-authentication-methods-apis-read-others.md)]
@@ -111,12 +116,15 @@ GET https://graph.microsoft.com/beta/me/authentication/externalAuthenticationMet
 [!INCLUDE [sample-code](../includes/snippets/php/list-externalauthenticationmethod-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-externalauthenticationmethod-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/list-externalauthenticationmethod-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
