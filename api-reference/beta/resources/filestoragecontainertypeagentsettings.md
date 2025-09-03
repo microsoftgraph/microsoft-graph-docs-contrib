@@ -33,7 +33,7 @@ The following JSON representation shows the resource type.
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.fileStorageContainerTypeAgentSettings ",
+  "@odata.type": "#microsoft.graph.fileStorageContainerTypeAgentSettings",
   "chatEmbedAllowedHosts": [
     "String"
   ]
