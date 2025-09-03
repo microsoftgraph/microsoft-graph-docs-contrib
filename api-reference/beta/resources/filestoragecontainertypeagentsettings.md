@@ -1,14 +1,14 @@
 ---
 title: "fileStorageContainerTypeAgentSettings resource type"
-description: "Settings related to the agent used for FileStorageContainerTypes"
+description: "Represents the settings for agents on a SharePoint Embedded application."
 author: "tmarwendo"
-ms.date: 08/13/2025
+ms.date: 09/03/2025
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
 doc_type: resourcePageType
 ---
 
-# fileStorageContainerTypeAgentSettings  resource type
+# fileStorageContainerTypeAgentSettings resource type
 
 Namespace: microsoft.graph
 
@@ -19,7 +19,7 @@ Represents the settings for agents on a SharePoint Embedded application.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|chatEmbedAllowedHosts|String collection|Determine which host URLs are allowed to embed the agent chat experience. Limited to 10 hosts.|
+|chatEmbedAllowedHosts|String collection|Determines which host URLs are allowed to embed the agent chat experience. Limited to 10 hosts.|
 
 ## Relationships
 None.
