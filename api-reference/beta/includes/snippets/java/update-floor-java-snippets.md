@@ -8,12 +8,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-Place place = new Place();
+Floor place = new Floor();
 place.setOdataType("microsoft.graph.floor");
-HashMap<String, Object> additionalData = new HashMap<String, Object>();
-additionalData.put("isWheelChairAccessible", true);
-additionalData.put("sortOrder", 2);
-place.setAdditionalData(additionalData);
+place.setIsWheelChairAccessible(true);
+place.setSortOrder(2);
 Place result = graphClient.places().byPlaceId("{place-id}").patch(place);
 
 

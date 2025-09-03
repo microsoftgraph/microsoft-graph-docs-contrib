@@ -8,11 +8,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-Place place = new Place();
+Section place = new Section();
 place.setOdataType("microsoft.graph.section");
-HashMap<String, Object> additionalData = new HashMap<String, Object>();
-additionalData.put("label", "discuss area");
-place.setAdditionalData(additionalData);
+place.setLabel("discuss area");
 Place result = graphClient.places().byPlaceId("{place-id}").patch(place);
 
 
