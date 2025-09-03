@@ -31,7 +31,7 @@ The following diagram shows what happens when you make a request through an MCP-
 
 1. **Automatic discovery**: When the AI client starts, it automatically locates the Microsoft Graph MCP Server endpoint at `mcp.graph.microsoft.com` from the list of installed MCP Servers and retrieves the available tools. This process enables the AI client to function as both an MCP client and host.
 
-1. **Input**: A user signed in to the AI client, or an autonomous agent, provides a query or command within the context window in natural language. Natural language in this context includes [any language supported in the latest version of Windows](https://support.microsoft.com/en-us/windows/language-packs-for-windows-a5094319-a92d-18de-5b53-1cfc697cfca8).
+1. **Input**: A user signed in to the AI client, or an autonomous agent, provides a query or command within the context window in natural language. Natural language in this context is any language that your choice of Large Language Model (LLM) supports.
 
    - The user enters a query in the LLM's context window. For example, "*How many users are in my tenant?*"
 
@@ -63,7 +63,7 @@ The Microsoft Graph MCP Server exposes the following tools that an AI agent can 
 
 1. **Answer common IT queries:** End users and administrators can ask questions about their tenant in plain language. For instance, an IT admin reporting on license optimization to the leadership could ask "Show me the unassigned licenses in my tenant" and get results, even if they don't know the API for querying license utilization details.
 
-1. **Discover and test APIs for integration scenarios:** If you're building traditional applications, you can use the Microsoft Graph MCP Server to explore and test APIs that power your scenarios before integrating them into your application.
+1. **Discover and test APIs for integration scenarios:** If you're building traditional applications, you can use the Microsoft Graph MCP Server to explore and test APIs that power your scenarios before integrating them into your application. Apart from seeing the API calls, you can ask the LLM to show you the query it ran.
 
 1. *More usage scenarios?*
 
