@@ -20,6 +20,10 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ## September 2025: New and generally available
 
+### Applications
+
+Starting September 2025, the maximum page size for the [List servicePrincipals API](/graph/api/serviceprincipal-list) will be 100 objects from 999 objects.
+
 ### Backup storage
 
 Added a note to the **artifactCount** property of the [granularMailboxRestoreArtifact](/graph/api/resources/granularmailboxrestoreartifact) about its upcoming deprecation.
@@ -32,10 +36,6 @@ Added a note to the **artifactCount** property of the [granularMailboxRestoreArt
   - Use the **friendlyName** property to identify the friendly name of the security group.	
   - Use the **sid** property to get the security identifier of the group.
 - Use the **activeDirectoryObjectGuid** property on [userAccount](/graph/api/resources/security-useraccount) to get the unique user identifier assigned by the on-premises Active Directory.
-
-### Applications
-
-Updated the maximum page size for the [List servicePrincipals API](/graph/api/serviceprincipal-list) from 999 to 100.
 
 ## September 2025: New in preview only
 
