@@ -228,9 +228,9 @@ Content-type: application/json
 - Same Id value across related changes
 
 **Additional Properties:**
-- Correct Cloud values: `Prod`
-- Proper Version: `v1.0` or `beta`
-- Proper UTC DateTime format for CreatedDateTime
+- Allowed **Cloud** values: `Prod`
+- Allowed **Version** values: `v1.0` or `beta`
+- Proper UTC DateTime format for **CreatedDateTime** properties
 
 **Link Format:**
 - Use full HTTP URLs with en-us locale

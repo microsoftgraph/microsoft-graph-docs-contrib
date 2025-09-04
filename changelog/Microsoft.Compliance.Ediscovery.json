@@ -1673,6 +1673,24 @@
       "CreatedDateTime": "2025-07-23T22:41:55.4587083Z",
       "WorkloadArea": "Security",
       "SubArea": "eDiscovery"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "5a189897-82c9-4e1d-91d5-45fccd4f1a0c",
+          "ApiChange": "Method",
+          "ChangedApiName": "retryPolicy",
+          "ChangeType": "Addition",
+          "Description": "Added the [retryPolicy](https://learn.microsoft.com/en-us/graph/api/security-ediscoveryHoldPolicy-retryPolicy?view=graph-rest-beta) method to the [ediscoveryHoldPolicy](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoveryHoldPolicy?view=graph-rest-beta) resource.",
+          "Target": "ediscoveryHoldPolicy"
+        }
+      ],
+      "Id": "5a189897-82c9-4e1d-91d5-45fccd4f1a0c",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-09-04T21:21:47.9769966Z",
+      "WorkloadArea": "Compliance",
+      "SubArea": ""
     }
   ]
 }

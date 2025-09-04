@@ -18,6 +18,8 @@ To add, update, or remove app roles for an application, [update the application]
 
 With [appRoleAssignments](approleassignment.md), app roles can be assigned to users, groups, or other applications' service principals.
 
+See [Example 2: Update the appRoles for an application](../api/application-update.md#example-2-update-the-approles-for-an-application) for a practical example.
+
 ## Properties
 
 | Property   | Type |Description|
