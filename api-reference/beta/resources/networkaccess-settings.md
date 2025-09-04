@@ -31,6 +31,7 @@ None.
 |conditionalAccess|[microsoft.graph.networkaccess.conditionalAccessSettings](../resources/networkaccess-conditionalaccesssettings.md)| Defines whether conditional access settings are enabled for traffic profiles in Global Secure Access. Each tenant has only one conditional access settings object. |
 |crossTenantAccess|[microsoft.graph.networkaccess.crossTenantAccessSettings](../resources/networkaccess-crosstenantaccesssettings.md)| Defines whether the tenant restrictions cross-tenant access settings are enabled for traffic profiles in Global Secure Access. Each tenant has only one cross-tenant access settings object.|
 |forwardingOptions|[microsoft.graph.networkaccess.forwardingOptions](../resources/networkaccess-forwardingOptions.md)| Determines how Microsoft 365 traffic through Global Secure Access is forwarded to Azure Front Door.|
+|customBlockPage|[customBlockPage](../resources/networkaccess-customblockpage.md)|Custom block page settings define the end user experience when Global Secure Access blocks them from accessing a resource on the web.|
 
 ## JSON representation
 The following JSON representation shows the resource type.
