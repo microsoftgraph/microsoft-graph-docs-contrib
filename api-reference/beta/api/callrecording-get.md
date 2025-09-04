@@ -5,7 +5,7 @@ author: "v-sdhakshina"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: apiPageType
-ms.date: 08/20/2025
+ms.date: 09/04/2025
 ---
 
 # Get callRecording
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a [callRecording](../resources/callrecording.md) object associated with a scheduled [online meeting](../resources/onlinemeeting.md) and an [ad hoc call](/graph/api/resources/adhoccall?view=graph-rest-beta). This API supports the retrieval of call recordings from private chat meetings, channel meetings, ad hoc calls, including PSTN, 1:1, and group calls. Private channel meetings are not supported.
+Get a [callRecording](../resources/callrecording.md) object associated with a scheduled [online meeting](../resources/onlinemeeting.md) and an [ad hoc call](../resources/adhoccall.md) This API supports the retrieval of call recordings from private chat meetings, channel meetings, ad hoc calls, including PSTN, 1:1, and group calls. Private channel meetings are not supported.
 
 For a recording, this API returns the metadata of the single recording associated with the online meeting or an ad hoc call. For the content of a recording, this API returns the stream of bytes associated with the recording.
 
@@ -40,7 +40,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 > [!NOTE]
 >
-> * In delegated permission scenarios, [getting callRecording content](#example-2-get-callrecording-content)  is supported only for the meeting organizer. Meeting participants don't have permission to download meeting recordings. For more information, see [permissions or role-based access](/microsoftteams/tmr-meeting-recording-change).  
+> * In delegated permission scenarios, [getting callRecording content](#example-3-get-callRecording-content-for-an-online-meeting)  is supported only for the meeting organizer. Meeting participants don't have permission to download meeting recordings. For more information, see [permissions or role-based access](/microsoftteams/tmr-meeting-recording-change).  
 > * For online meetings, tenant admins can unblock meeting participants to download meeting recordings. For ad hoc calls, tenant admins can grant on behalf of permissions for user making the call. For more information, see [block the download of Teams meeting recording files](/MicrosoftTeams/block-download-meeting-recording).
 > * The application permission `OnlineMeetingRecording.Read.Chat` uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent). This permission applies only to scheduled private chat meetings, not to channel meetings.
 
@@ -117,7 +117,6 @@ The following example shows how to get a single recording of an online meeting.
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_callRecording",
@@ -200,7 +199,6 @@ The following example shows how to get a single recording of an ad hoc call.
 
 #### Request
 
-# [HTTP](#tab/http3)
 <!-- {
   "blockType": "request",
   "name": "get_callRecording_adhoc",
@@ -255,7 +253,6 @@ The following example shows how to get the content of a single recording of an o
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_callRecording_content",
@@ -314,7 +311,6 @@ Content-Type: video/mp4
 
 #### Request
 
-# [HTTP](#tab/http-content1)
 <!-- {
   "blockType": "request",
   "name": "get_callRecording_content_adhoc",
@@ -351,7 +347,6 @@ The following example shows how to get a single recording of an online meeting c
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_callRecording_using_contentCorrelationId",

@@ -5,7 +5,7 @@ author: "mankadnandan"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: apiPageType
-ms.date: 08/20/2025
+ms.date: 09/04/2025
 ---
 
 # Get callTranscript
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a callTranscript object associated with a scheduled [onlineMeeting](../resources/onlinemeeting.md) and an [ad hoc call](/graph/api/resources/adhoccall?view=graph-rest-beta&preserve-view=true). This APIs supports the retrieval of call transcripts from private chat meetings and channel meetings, and ad hoc calls including PSTN, 1:1, and group calls. Private channel meetings are not supported. 
+Retrieve a callTranscript object associated with a scheduled [onlineMeeting](../resources/onlinemeeting.md) and an [ad hoc call](../resources/adhoccall.md). This APIs supports the retrieval of call transcripts from private chat meetings and channel meetings, and ad hoc calls including PSTN, 1:1, and group calls. Private channel meetings are not supported. 
 
 Retrieving the transcript returns the metadata of the single transcript associated with an online meeting or an ad hoc call. Retrieving the content of the transcript returns the stream of text associated with the transcript.
 
@@ -117,7 +117,6 @@ The following example shows how to get a single transcript of an online meeting.
 
 #### Request
 
-# [HTTP](#tab/http2)
 <!-- {
   "blockType": "request",
   "name": "get_callTranscript",
@@ -197,7 +196,6 @@ The following example shows how to get a single transcript of an ad hoc call.
 
 #### Request
 
-# [HTTP](#tab/http3)
 <!-- {
   "blockType": "request",
   "name": "get_callTranscript_adhoc",
@@ -249,7 +247,6 @@ Content-type: application/json
 
 #### Request
 
-# [HTTP](#tab/http-content)
 <!-- {
   "blockType": "request",
   "name": "get_callTranscript_content",
@@ -311,7 +308,6 @@ WEBVTT
 
 #### Request
 
-# [HTTP](#tab/http-content1)
 <!-- {
   "blockType": "request",
   "name": "get_callTranscript_content_adhoc",
@@ -350,7 +346,6 @@ WEBVTT
 
 #### Request
 
-# [HTTP](#tab/http-format)
 <!-- {
   "blockType": "request",
   "name": "get_callTranscript_content_format",
@@ -411,7 +406,6 @@ WEBVTT
 
 #### Request
 
-# [HTTP](#tab/http5)
 <!-- {
   "blockType": "request",
   "name": "get_callTranscript_metadatacontent",
@@ -471,7 +465,6 @@ WEBVTT
 
 #### Request
 
-# [HTTP](#tab/http6)
 <!-- {
   "blockType": "request",
   "name": "get_callTranscript_metadatacontent",
@@ -514,7 +507,6 @@ The following example shows how to get a single transcript of an online meeting 
 
 The following example shows a request.
 
-# [HTTP](#tab/http-correlation)
 <!-- {
   "blockType": "request",
   "name": "get_callTranscript_using_contentCorrelationId",
