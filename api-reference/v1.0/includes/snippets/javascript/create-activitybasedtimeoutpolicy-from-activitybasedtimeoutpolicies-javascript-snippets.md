@@ -11,10 +11,8 @@ const options = {
 const client = Client.init(options);
 
 const activityBasedTimeoutPolicy = {
-  definition: [
-    'definition-value'
-  ],
-  displayName: 'displayName-value',
+  definition: ['{\"ActivityBasedTimeoutPolicy\':{\'Version\':1,\'ApplicationPolicies\':[{\'ApplicationId\':\'default\",\"WebSessionIdleTimeout\':\"00:05:00\"}]}}"],
+  displayName: 'activityBasedTimeoutPolicies test',
   isOrganizationDefault: true
 };
 
