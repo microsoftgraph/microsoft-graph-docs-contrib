@@ -1007,7 +1007,8 @@
       ],
       "complexTypes": [
         "fileStorageContainerTypeRegistrationSettings",
-        "fileStorageContainerTypeSettings"
+        "fileStorageContainerTypeSettings",
+        "fileStorageContainerTypeAgentSettings"
       ]
     },
     {
