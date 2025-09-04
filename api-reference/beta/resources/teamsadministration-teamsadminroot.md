@@ -16,7 +16,7 @@ Namespace: microsoft.graph.teamsAdministration
 
 Represents a collection of user configurations and telephone number administration methods.
 
-Inherits from [microsoft.graph.entity](../resources/entity.md).
+Inherits from [entity](../resources/entity.md).
 
 ## Methods
 
