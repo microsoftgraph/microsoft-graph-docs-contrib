@@ -50,8 +50,6 @@ PATCH /networkAccess/settings/customBlockPage
 
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
-
-**TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
 |state|microsoft.graph.networkaccess.status||The current status of the custom block page. The possible values are: `enabled`, `disabled`, `unknownFutureValue`. Required.|
