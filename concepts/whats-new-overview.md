@@ -24,6 +24,10 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 Added a note to the **artifactCount** property of the [granularMailboxRestoreArtifact](/graph/api/resources/granularmailboxrestoreartifact) about its upcoming deprecation.
 
+### Education
+
+Use the [educationSpeakerProgressResource](/graph/api/resources/educationspeakerprogressresource?view=graph-rest-v1.0&preserve-view=true) to help students gain confidence and reduce anxiety with AI-powered real-time feedback on public speaking skills, such as pace, pitch, and filler words. Speaker Progress also saves educators time and creates more opportunities for independent practice during in-class presentations.
+
 ### Security | Alerts and incidents
 
 - Added the following new properties to the [securityGroupEvidence](/graph/api/resources/security-securitygroupevidence) resource:
