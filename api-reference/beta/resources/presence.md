@@ -16,9 +16,11 @@ Namespace: microsoft.graph
 
 Contains information about a user's presence, including their availability and user activity.
 
-> **Note:** This resource is currently only supported for Microsoft Teams users.
-
 This resource supports subscribing to [change notifications](/graph/changenotifications-for-presence).
+
+## Trusted domains
+
+**Trusted domains for cross-tenant presence visibility and interaction:** Configure Teams **External access** so only the intended partner organizations can **see and act on presence** for your users. In the Teams admin center (**Users > External access**), allow all domains or add specific domains to the **Allow** list under **“Meetings and chat with trusted Microsoft 365 organizations.”** Users in those trusted organizations will be able to view user presence. Cross-tenant presence requires **mutual trust**—the partner must also allow your domain. Domains that aren’t trusted (or are blocked) won’t see presence or be able to initiate presence-driven interactions. For more details visit [the domain configuration site.](microsoftteams/trusted-organizations-external-meetings-chat?tabs=organization-settings#specify-trusted-microsoft-365-organizations)
 
 ## Methods
 
