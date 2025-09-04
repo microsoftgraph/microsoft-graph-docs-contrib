@@ -21,8 +21,8 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[assign](../api/teamsadministration-teamspolicyuserassignment-assign.md)|None|Assign a Teams policy to a user by specifying the user ID, policy type, and policy ID.|
-|[unassign](../api/teamsadministration-teamspolicyuserassignment-unassign.md)|None|Unassign a Teams policy from a user by specifying the user ID, and policy type.|
+|[Assign](../api/teamsadministration-teamspolicyuserassignment-assign.md)|None|Assign a Teams [policy](../resources/teamsadministration-teamspolicyuserassignment.md) to a user using the user ID, policy type, and policy ID.|
+|[Unassign](../api/teamsadministration-teamspolicyuserassignment-unassign.md)|None|Unassign a Teams [policy](../resources/teamsadministration-teamspolicyuserassignment.md) from a user using the user ID and policy type.|
 
 ## Properties
 |Property|Type|Description|
