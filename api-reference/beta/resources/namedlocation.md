@@ -27,7 +27,7 @@ Inherits from [policyDeletableItem](../resources/policydeletableitem.md).
 |[Create](../api/conditionalaccessroot-post-namedlocations.md)|[namedLocation](../resources/namedlocation.md)|Create a new namedLocation object.|
 |[Get](../api/namedlocation-get.md)|[namedLocation](../resources/namedlocation.md)|Read the properties and relationships of [namedLocation](../resources/namedlocation.md) object.|
 |[Update](../api/namedlocation-update.md)|[namedLocation](../resources/namedlocation.md)|Update the properties of a namedLocation object.|
-|[Delete](../api/conditionalaccessroot-delete-namedlocations.md)|None|Delete a namedLocation object.|
+|[Delete](../api/namedlocation-delete.md) | None | Delete a **namedLocation** object.|
 |[Restore](../api/namedlocation-restore.md)|[namedLocation](../resources/namedlocation.md)|Restore a named location object. |
 | [List deleted named locations](../api/policydeletableitem-list.md) | [namedLocation](../resources/namedlocation.md) collection | List all deleted named locations. |
 | [Get deleted named locations](../api/policydeletableitem-get.md) | [namedLocation](../resources/namedlocation.md)| Get a single deleted named location. |
@@ -36,7 +36,6 @@ Inherits from [policyDeletableItem](../resources/policydeletableitem.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-
 |displayName|String|Human-readable name of the location.|
 |id|String|Identifier of a namedLocation object. Read-only.|
 |modifiedDateTime|DateTimeOffset|The Timestamp type represents last modified date and time of the location using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|

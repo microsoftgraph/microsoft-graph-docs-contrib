@@ -1,10 +1,10 @@
 ﻿---
 title: "countryNamedLocation resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+description: "Represents a Microsoft Entra ID named location defined by countries and regions. Named locations are custom rules that define network locations which can then be used in a Conditional Access policy."
+author: "ashyasingh"
 ms.date: 08/11/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -14,8 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+Represents a Microsoft Entra ID named location defined by countries and regions. Named locations are custom rules that define network locations which can then be used in a Conditional Access policy.
 
 Inherits from [namedLocation](../resources/namedlocation.md).
 
@@ -23,23 +22,23 @@ Inherits from [namedLocation](../resources/namedlocation.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/countrynamedlocation-list.md)|[countryNamedLocation](../resources/countrynamedlocation.md) collection|Get a list of the countryNamedLocation objects and their properties.|
+| [List](../api/conditionalaccessroot-list-namedlocations.md) | [countryNamedLocation](countryNamedLocation.md) collection | Get all the **countryNamedLocation** objects in the organization. |
 |[Get](../api/countrynamedlocation-get.md)|[countryNamedLocation](../resources/countrynamedlocation.md)|Read the properties and relationships of [countryNamedLocation](../resources/countrynamedlocation.md) object.|
 |[Update](../api/countrynamedlocation-update.md)|[countryNamedLocation](../resources/countrynamedlocation.md)|Update the properties of a countryNamedLocation object.|
 |[Delete](../api/countrynamedlocation-delete.md)|None|Delete a countryNamedLocation object.|
-|[restore](../api/countrynamedlocation-restore.md)|[namedLocation](../resources/namedlocation.md)|**TODO: Add Description**|
+|[Restore](../api/countrynamedlocation-restore.md)|[countryNamedLocation](../resources/countryNamedLocation.md)|Restore a deleted countryNamedLocation object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|countriesAndRegions|String collection|**TODO: Add Description**|
-|countryLookupMethod|countryLookupMethodType|**TODO: Add Description**. The possible values are: `clientIpAddress`, `authenticatorAppGps`, `unknownFutureValue`.|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [namedLocation](../resources/namedlocation.md).|
-|deletedDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [policyDeletableItem](../resources/policydeletableitem.md).|
-|displayName|String|**TODO: Add Description** Inherited from [namedLocation](../resources/namedlocation.md).|
-|id|String|**TODO: Add Description** Inherited from [namedLocation](../resources/namedlocation.md). Inherits from [entity](../resources/entity.md)|
-|includeUnknownCountriesAndRegions|Boolean|**TODO: Add Description**|
-|modifiedDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [namedLocation](../resources/namedlocation.md).|
+|countriesAndRegions|String collection|List of countries and/or regions in two-letter format specified by ISO 3166-2.|
+|countryLookupMethod|countryLookupMethodType|Determines what method is used to decide which country the user is located in. Possible values are `clientIpAddress` (default) and `authenticatorAppGps`.|
+|createdDateTime|DateTimeOffset|The Timestamp type represents creation date and time of the location using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only. Inherited from [namedLocation](../resources/namedLocation.md).|
+|displayName|String|Human-readable name of the location. Required. Inherited from [namedLocation](../resources/namedLocation.md).|
+|id|String|Identifier of a namedLocation object. Read-only. Inherited from [namedLocation](../resources/namedLocation.md).|
+|includeUnknownCountriesAndRegions|Boolean|`true` if IP addresses that don't map to a country or region should be included in the named location. Optional. Default value is `false`.|
+|modifiedDateTime|DateTimeOffset|The Timestamp type represents last modified date and time of the location using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only. Inherited from [namedLocation](../resources/namedLocation.md).|
+|deletedDateTime|DateTimeOffset|Shows the last date and time the named location was deleted.Inherited from [policyDeletableItem](../resources/policydeletableitem.md).|
 
 ## Relationships
 None.

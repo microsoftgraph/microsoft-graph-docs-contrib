@@ -27,7 +27,7 @@ Inherits from [policyDeletableItem](../resources/policydeletableitem.md).
 |[Create](../api/conditionalaccessroot-post-policies.md)|[conditionalAccessPolicy](../resources/conditionalaccesspolicy.md)|Create a new conditionalAccessPolicy object.|
 |[Get](../api/conditionalaccesspolicy-get.md)|[conditionalAccessPolicy](../resources/conditionalaccesspolicy.md)|Read the properties and relationships of [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md) object.|
 |[Update](../api/conditionalaccesspolicy-update.md)|[conditionalAccessPolicy](../resources/conditionalaccesspolicy.md)|Update the properties of a conditionalAccessPolicy object.|
-|[Delete](../api/conditionalaccessroot-delete-policies.md)|None|Delete a conditionalAccessPolicy object.|
+|[Delete](../api/conditionalaccesspolicy-delete.md)|None|Delete a conditionalAccessPolicy object.|
 |[Restore](../api/conditionalaccesspolicy-restore.md)|[conditionalAccessPolicy](../resources/conditionalaccesspolicy.md)|Restore a conditionalAccessPolicy object.|
 | [List deleted policies](../api/policydeletableitem-list.md) | [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md) collection | List all deleted partner-specific configuration policies. |
 | [Get deleted policy](../api/policydeletableitem-get.md) | [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md) | Get a single deleted conditional acces policy. |

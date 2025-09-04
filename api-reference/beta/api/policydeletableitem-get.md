@@ -89,7 +89,6 @@ Don't supply a request body for this method.
 If successful, this method returns a `200 OK` response code and a [policyDeletableItem](../resources/policydeletableitem.md) object in the response body.
 
 ## Examples
-## Examples
 
 ### Example 1: Retrieve a deleted crossTenantAccessPolicyConfigurationPartner object
 

@@ -25,8 +25,6 @@ This resource is an abstract type from which the following resources inherit:
 Inherits from [entity](../resources/entity.md)
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
 None.
 
 ## Properties
