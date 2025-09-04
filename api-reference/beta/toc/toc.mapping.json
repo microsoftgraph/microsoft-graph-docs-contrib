@@ -2489,7 +2489,8 @@
                 "selfServiceSignUp",
                 "signIn",
                 "signInEventsActivity",
-                "signInEventsAppActivity"
+                "signInEventsAppActivity",
+                "summarizedSignIn"
               ]
             }
           ]

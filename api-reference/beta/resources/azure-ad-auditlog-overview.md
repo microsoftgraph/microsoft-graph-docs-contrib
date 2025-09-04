@@ -21,7 +21,7 @@ Microsoft Entra provides an audit trail of all user and app activity in your ten
 
 ## What are activity reports?
 
-Microsoft Entra provides eight types of activity reports:
+Microsoft Entra provides nine types of activity reports:
 
 - Directory audit logs
 - Custom security attribute audit logs
@@ -31,6 +31,7 @@ Microsoft Entra provides eight types of activity reports:
 - Audit Activity Types
 - Sign In Events App Summary
 - Sign In Events Summary
+- Summarized Sign Ins
 
 ## Available audit logs
 
@@ -80,6 +81,10 @@ The [signInEventsAppActivity](../resources/signineventsappactivity.md) helps you
 
 The [signInEventsActivity](../resources/signineventsactivity.md) helps you see the total number of sign in events that have occurred for a specific day.
 
+### Summarized Sign In Events Summary
+
+The [summarizedSignIn](../resources/summarizedsignin.md) helps you see the summary of sign-in event counts for specific categories grouped by user, application, IP address, and time window.
+
 ## What can I do with activity reports in Microsoft Graph?
 
 Here are popular requests for working with report data:
@@ -94,6 +99,9 @@ Operation | URL
 |GET audit activity types | [https://graph.microsoft.com/beta/auditLogs/auditActivityTypes](https://developer.microsoft.com/graph/graph-explorer?request=auditLogs/auditActivityTypes&version=beta)
 |GET sign in events app summary | [https://graph.microsoft.com/beta/auditLogs/signInEventsAppSummary](https://developer.microsoft.com/graph/graph-explorer?request=auditLogs/signInEventsAppSummary&version=beta)
 |GET sign in events summary | [https://graph.microsoft.com/beta/auditLogs/signInEventsSummary](https://developer.microsoft.com/graph/graph-explorer?request=auditLogs/signInEventsSummary&version=beta)
+|GET summarized service principal sign in evemts summary | [https://graph.microsoft.com/beta/auditLogs/getSummarizedServicePrincipalSignIns](https://developer.microsoft.com/graph/graph-explorer?request=auditLogs/getSummarizedServicePrincipalSignIns&version=beta)
+|GET summarized non-interactive sign in evemts summary | [https://graph.microsoft.com/beta/auditLogs/getSummarizedNonInteractiveSignIns](https://developer.microsoft.com/graph/graph-explorer?request=auditLogs/getSummarizedNonInteractiveSignIns&version=beta)
+|GET summarized MSI sign in evemts summary | [https://graph.microsoft.com/beta/auditLogs/getSummarizedMSISignIns](https://developer.microsoft.com/graph/graph-explorer?request=auditLogs/getSummarizedMSISignIns&version=beta)
 
 ## License requirements
 

@@ -36,6 +36,7 @@ None.
 |signUps|[selfServiceSignUp](../resources/selfservicesignup.md) collection|Represents sign up events in Microsoft Entra External ID. Read-only. Nullable.|
 |signInEventsAppSummary|[signInEventsAppActivity](../resources/signineventsappactivity.md) collection|Represents the number of sign-in events for a specific application.|
 |signInEventsSummary|[signInEventsActivity](../resources/signineventsactivity.md) collection|Represents the total number of sign-in events for a specific day.|
+|summarizedSignIn|[summarizedSignIn](../resources/summarizedsignin.md) collection|Represents the summary of sign in events for a given category.|
 
 ## JSON representation
 

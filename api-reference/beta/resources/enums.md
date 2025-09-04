@@ -5390,3 +5390,12 @@ Possible values for user account types (group membership), per Windows definitio
 |d7|
 |d30|
 |unknownFutureValue|
+
+### aggregationWindow values 
+
+|Member|
+|:---|
+|h1|
+|h6|
+|d1|
+|unknownFutureValue|

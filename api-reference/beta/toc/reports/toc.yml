@@ -396,6 +396,24 @@ items:
         href: ../../resources/signineventsactivity.md
       - name: List
         href: ../../api/auditlogroot-list-signineventssummary.md
+    - name: Summarized Service Principal Sign In Events
+      items:
+      - name: Summarized Service Principal Sign In Events
+        href: ../../resources/summarizedsignin.md
+      - name: List
+        href: ../../api/auditlogroot-getsummarizedserviceprincipalsignins.md
+    - name: Summarized MSI Sign In Events
+      items:
+      - name: Summarized MSI Sign In Events
+        href: ../../resources/summarizedsignin.md
+      - name: List
+        href: ../../api/auditlogroot-getsummarizedmsisignins.md
+    - name: Summarized Non-Interactive Sign In Events
+      items:
+      - name: Summarized Non-Interactive Sign In Events
+        href: ../../resources/summarizedsignin.md
+      - name: List
+        href: ../../api/auditlogroot-getsummarizednoninteractivesignins.md                        
 - name: Microsoft 365 monitoring reports (preview)
   items:
   - name: Overview
