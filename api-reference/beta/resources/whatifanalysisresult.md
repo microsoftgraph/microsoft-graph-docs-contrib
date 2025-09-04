@@ -1,10 +1,11 @@
 ﻿---
 title: "whatIfAnalysisResult resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
-ms.date: 08/11/2025
+toc.title: "What If evaluation"
+description: "Represents the result of a Conditional Access What If evaluation, which indicates the policies that would apply based on the sign-in details you provide."
+author: "kvenkit"
+ms.date: 03/21/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -14,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents the result of a Conditional Access What If evaluation, which indicates the policies that would apply based on the sign-in details you provide. For more information, see the [Conditional Access Policy What If tool](/entra/identity/conditional-access/what-if-tool).
 
 
 Inherits from [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md).
@@ -23,27 +24,24 @@ Inherits from [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md)
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/whatifanalysisresult-list.md)|[whatIfAnalysisResult](../resources/whatifanalysisresult.md) collection|Get a list of the whatIfAnalysisResult objects and their properties.|
-|[Get](../api/whatifanalysisresult-get.md)|[whatIfAnalysisResult](../resources/whatifanalysisresult.md)|Read the properties and relationships of [whatIfAnalysisResult](../resources/whatifanalysisresult.md) object.|
-|[Update](../api/whatifanalysisresult-update.md)|[whatIfAnalysisResult](../resources/whatifanalysisresult.md)|Update the properties of a whatIfAnalysisResult object.|
-|[Delete](../api/whatifanalysisresult-delete.md)|None|Delete a whatIfAnalysisResult object.|
-|[restore](../api/whatifanalysisresult-restore.md)|[conditionalAccessPolicy](../resources/conditionalaccesspolicy.md)|**TODO: Add Description**|
+|[Evaluate](../api/conditionalaccessroot-evaluate.md)|[whatIfAnalysisResult](../resources/whatifanalysisresult.md) collection|List the results of the What If evaluation of Conditional Access Policies targeting a sign-in attempt.|
+
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|analysisReasons|whatIfAnalysisReasons|**TODO: Add Description**. The possible values are: `notSet`, `notEnoughInformation`, `invalidCondition`, `users`, `workloadIdentities`, `application`, `userActions`, `authenticationContext`, `devicePlatform`, `devices`, `clientApps`, `location`, `signInRisk`, `emptyPolicy`, `invalidPolicy`, `policyNotEnabled`, `userRisk`, `time`, `insiderRisk`, `authenticationFlow`, `unknownFutureValue`.|
-|conditions|[conditionalAccessConditionSet](../resources/conditionalaccessconditionset.md)|**TODO: Add Description** Inherited from [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md).|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md).|
-|deletedDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [policyDeletableItem](../resources/policydeletableitem.md).|
-|description|String|**TODO: Add Description** Inherited from [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md).|
-|displayName|String|**TODO: Add Description** Inherited from [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md).|
-|grantControls|[conditionalAccessGrantControls](../resources/conditionalaccessgrantcontrols.md)|**TODO: Add Description** Inherited from [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md).|
-|id|String|**TODO: Add Description** Inherited from [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md). Inherits from [entity](../resources/entity.md)|
-|modifiedDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md).|
-|policyApplies|Boolean|**TODO: Add Description**|
-|sessionControls|[conditionalAccessSessionControls](../resources/conditionalaccesssessioncontrols.md)|**TODO: Add Description** Inherited from [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md).|
-|state|conditionalAccessPolicyState|**TODO: Add Description** Inherited from [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md). The possible values are: `enabled`, `disabled`, `enabledForReportingButNotEnforced`, `partiallyEnabled`, `unknownFutureValue`.|
+|analysisReasons|whatIfAnalysisReasons|Specifies the reasons why a policy didn't apply. `analysisReasons` is set to `notSet` when `policyApplies` is `true` and one of the following values when `policyApplies` is `false`: `notEnoughInformation`, `invalidCondition`, `users`, `workloadIdentities`, `application`, `userActions`, `authenticationContext`, `devicePlatform`, `devices`, `clientApps`, `location`, `signInRisk`, `emptyPolicy`, `invalidPolicy`, `policyNotEnabled`, `userRisk`, `time`, `insiderRisk`, `authenticationFlow`, `unknownFutureValue`.|
+|conditions|[conditionalAccessConditionSet](../resources/conditionalaccessconditionset.md)|Specifies the rules that must be met for the policy to apply. Inherited from [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md).|
+|createdDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md).|
+|description|String|Not used. Inherited from [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md).|
+|displayName|String|Specifies a display name for the conditionalAccessPolicy object. Inherited from [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md).|
+|grantControls|[conditionalAccessGrantControls](../resources/conditionalaccessgrantcontrols.md)|Specifies the grant controls that must be fulfilled to pass the policy. Inherited from [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md).|
+|id|String|Specifies the identifier of a conditionalAccessPolicy object. Inherited from [entity](../resources/entity.md).|
+|modifiedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md).|
+|policyApplies|Boolean|Specifies whether the policy applies to the sign-in properties provided in the request body. If `policyApplies` is `true`, the policy applies to the sign-in based on the sign-in properties provided. If `policyApplies` is `false`, the policy doesn't apply to the sign-in based on the sign-in properties provided and the `analysisReasons` property is populated to show the reason for the policy not applying. |
+|sessionControls|[conditionalAccessSessionControls](../resources/conditionalaccesssessioncontrols.md)|Specifies the session controls that are enforced after sign-in. Inherited from [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md).|
+|state|conditionalAccessPolicyState|Specifies the state of the conditionalAccessPolicy object. Inherited from [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md). The possible values are: `enabled`, `disabled`, `enabledForReportingButNotEnforced`, `unknownFutureValue`.|
+|templateId|String|Specifies the unique identifier of a Conditional Access template. Inherited from [entity](../resources/entity.md).|
 
 ## Relationships
 None.
@@ -61,7 +59,6 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.whatIfAnalysisResult",
-  "deletedDateTime": "String (timestamp)",
   "id": "String (identifier)",
   "createdDateTime": "String (timestamp)",
   "modifiedDateTime": "String (timestamp)",
@@ -81,4 +78,3 @@ The following JSON representation shows the resource type.
   "analysisReasons": "String"
 }
 ```
-
