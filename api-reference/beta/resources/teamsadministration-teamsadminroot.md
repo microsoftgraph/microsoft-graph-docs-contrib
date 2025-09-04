@@ -30,10 +30,10 @@ None.
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|userConfigurations|[microsoft.graph.teamsAdministration.teamsUserConfiguration](../resources/teamsadministration-teamsuserconfiguration.md) collection|Represents the configuration information of users who have accounts hosted on Microsoft Teams.|
 |numberAssignments|[microsoft.graph.teamsAdministration.numberAssignment](../resources/teamsadministration-numberassignment.md) collection|Represents collection of synchronous telephone number management operations.|
 |operations|[microsoft.graph.teamsAdministration.telephoneNumberLongRunningOperation](../resources/teamsadministration-telephonenumberlongrunningoperation.md) collection|Represents asynchronous telephone number management operation.|
-|policy|[microsoft.graph.teamsAdministration.teamsPolicyAssignment](../resources/teamsadministration-teamspolicyassignment.md) collection|Navigation property to the Teams policy assignment object.|
+|policy|[microsoft.graph.teamsAdministration.teamsPolicyAssignment](../resources/teamsadministration-teamspolicyassignment.md)|Represents a navigation property to the Teams policy assignment object.|
+|userConfigurations|[microsoft.graph.teamsAdministration.teamsUserConfiguration](../resources/teamsadministration-teamsuserconfiguration.md) collection|Represents the configuration information of users who have accounts hosted on Microsoft Teams.|
 
 ## JSON representation
 
