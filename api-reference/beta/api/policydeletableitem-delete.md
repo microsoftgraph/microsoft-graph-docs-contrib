@@ -75,6 +75,7 @@ If successful, this method returns a `204 No Content` response code.
 #### Request
 
 The following example shows a request for crossTenantAccessPolicyConfigurationPartner.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_policydeletableitem_crossTenantAccessPolicyConfigurationPartner"
@@ -83,6 +84,12 @@ The following example shows a request for crossTenantAccessPolicyConfigurationPa
 ```HTTP
 DELETE https://graph.microsoft.com/beta/policies/deletedItems/crossTenantPartners/809cbbd2-2325-4c17-bd51-f8f098db19c8
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-policydeletableitem-crosstenantaccesspolicyconfigurationpartner-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 
 #### Response
@@ -102,6 +109,7 @@ HTTP/1.1 204 No Content
 #### Request
 
 The following example shows a request for crossTenantIdentitySyncPolicyPartner.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_policydeletableitem_crossTenantIdentitySyncPolicyPartner"
@@ -110,6 +118,12 @@ The following example shows a request for crossTenantIdentitySyncPolicyPartner.
 ```HTTP
 DELETE https://graph.microsoft.com/beta/policies/deletedItems/crossTenantSyncPolicyPartners/809cbbd2-2325-4c17-bd51-f8f098db19c8
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-policydeletableitem-crosstenantidentitysyncpolicypartner-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 
 #### Response
