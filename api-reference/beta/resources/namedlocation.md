@@ -26,7 +26,6 @@ Inherits from [policyDeletableItem](../resources/policydeletableitem.md).
 |[List](../api/conditionalaccessroot-list-namedlocations.md)|[namedLocation](../resources/namedlocation.md) collection|Get a list of the namedLocation objects and their properties.|
 |[Create](../api/conditionalaccessroot-post-namedlocations.md)|[namedLocation](../resources/namedlocation.md)|Create a new namedLocation object.|
 |[Get](../api/namedlocation-get.md)|[namedLocation](../resources/namedlocation.md)|Read the properties and relationships of [namedLocation](../resources/namedlocation.md) object.|
-|[Update](../api/namedlocation-update.md)|[namedLocation](../resources/namedlocation.md)|Update the properties of a namedLocation object.|
 |[Delete](../api/namedlocation-delete.md) | None | Delete a **namedLocation** object.|
 |[Restore](../api/namedlocation-restore.md)|[namedLocation](../resources/namedlocation.md)|Restore a named location object. |
 | [List deleted named locations](../api/policydeletableitem-list.md) | [namedLocation](../resources/namedlocation.md) collection | List all deleted named locations. |
