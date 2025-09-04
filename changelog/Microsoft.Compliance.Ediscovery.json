@@ -1712,7 +1712,7 @@
       "Id": "a9d63552-3961-4e39-ab11-ffe2f4607ea8",
       "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2025-08-07T22:53:48.8933999Z",
+      "CreatedDateTime": "2025-09-04T22:53:48.8933999Z",
       "WorkloadArea": "Security",
       "SubArea": "eDiscovery"
     },
@@ -1754,9 +1754,27 @@
       "Id": "39c28435-306e-4b4d-9058-3358953936a1",
       "Cloud": "Prod",
       "Version": "v1.0",
-      "CreatedDateTime": "2025-08-07T22:53:48.8936551Z",
+      "CreatedDateTime": "2025-09-04T22:53:48.8936551Z",
       "WorkloadArea": "Security",
       "SubArea": "eDiscovery"
-    } 
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "5a189897-82c9-4e1d-91d5-45fccd4f1a0c",
+          "ApiChange": "Method",
+          "ChangedApiName": "retryPolicy",
+          "ChangeType": "Addition",
+          "Description": "Added the [retryPolicy](https://learn.microsoft.com/en-us/graph/api/security-ediscoveryHoldPolicy-retryPolicy?view=graph-rest-beta) method to the [ediscoveryHoldPolicy](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoveryHoldPolicy?view=graph-rest-beta) resource.",
+          "Target": "ediscoveryHoldPolicy"
+        }
+      ],
+      "Id": "5a189897-82c9-4e1d-91d5-45fccd4f1a0c",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-09-04T21:21:47.9769966Z",
+      "WorkloadArea": "Compliance",
+      "SubArea": ""
+    }
   ]
 }
