@@ -1,10 +1,10 @@
 ﻿---
 title: "Restore a named location"
 description: "Restore a deleted named location object."
-author: "*ashyasingh"
+author: "ashyasingh"
 ms.date: 08/11/2025
 ms.localizationpriority: medium
-ms.subservice: "entra-sign-in
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 

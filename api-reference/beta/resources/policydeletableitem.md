@@ -4,7 +4,7 @@ description: "Represents policy types in Microsoft Entra that support soft-delet
 author: "ashyasingh"
 ms.date: 08/11/2025
 ms.localizationpriority: medium
-ms.subservice: "*entra-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 

@@ -1,7 +1,7 @@
 ﻿---
 title: "Restore a conditional access policy."
 description: "Restore a soft deleted Conditional Access policy object."
-author: "*ashyasingh"
+author: "ashyasingh"
 ms.date: 08/11/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in

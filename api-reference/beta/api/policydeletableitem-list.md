@@ -1,10 +1,10 @@
 ﻿---
 title: "List policyDeletableItem objects"
 description: "Get a list of the policyDeletableItem objects and their properties."
-author: "*ashyasingh"
+author: "ashyasingh"
 ms.date: 08/11/2025
 ms.localizationpriority: medium
-ms.subservice: "entra-sign-in"
+ms.subservice: "entra-sign-in
 doc_type: apiPageType
 ---
 

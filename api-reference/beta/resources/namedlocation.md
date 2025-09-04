@@ -1,10 +1,10 @@
 ﻿---
 title: "namedLocation resource type"
 description: "This is the base class that represents a Microsoft Entra ID named location. Named locations are custom rules that define network locations which can then be used in a Conditional Access policy."
-author: "*ashyasingh"
+author: "ashyasingh"
 ms.date: 08/11/2025
 ms.localizationpriority: medium
-ms.subservice: "entra-sign-in
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
