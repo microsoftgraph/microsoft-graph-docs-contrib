@@ -8,13 +8,13 @@ ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
-# countryNamedLocation: restore
+# Restore countryNamedLocation
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Restore a [countryNamedLocation](../resources/countryNamedLocation.md) object.
 
 ## Permissions
 
@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-POST /countryNamedLocation/restore
+POST /identity/conditionalAccess/namedLocations/{id}
 ```
 
 ## Request headers

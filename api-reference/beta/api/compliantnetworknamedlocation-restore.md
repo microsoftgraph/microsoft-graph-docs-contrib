@@ -8,13 +8,13 @@ ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
-# compliantNetworkNamedLocation: restore
+# Restore compliantNetworkNamedLocation
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Restore a [compliantNetworkNamedLocation](../resources/compliantNetworkNamedLocation.md) object.
 
 ## Permissions
 
@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-POST /compliantNetworkNamedLocation/restore
+POST /identity/conditionalAccess/namedLocations/{id}/restore
 ```
 
 ## Request headers
