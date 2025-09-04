@@ -14,8 +14,7 @@ Namespace: microsoft.graph.teamsAdministration
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a Teams policy assignment object used to either assign or unassign a policy for a specific user. It includes the user's ID, the type of policy (such as TeamsMeetingBroadcastPolicy), and the policy ID being targeted.
-
+Represents a Teams policy assignment object used to either assign or unassign a policy for a specific user. It includes the user's ID, the type of policy (such as TeamsMeetingBroadcastPolicy) and the policy ID being targeted.
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).
 
