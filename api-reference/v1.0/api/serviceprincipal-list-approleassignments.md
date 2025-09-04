@@ -4,7 +4,7 @@ description: "Retrieve the list of app role assignments granted to a service pri
 ms.localizationpriority: high
 doc_type: apiPageType
 ms.subservice: "entra-applications"
-author: "Jackson-Woods"
+author: "eringreenlee"
 ms.date: 10/15/2024
 ---
 
