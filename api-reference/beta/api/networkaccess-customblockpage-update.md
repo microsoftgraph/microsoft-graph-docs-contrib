@@ -52,7 +52,7 @@ PATCH /networkAccess/settings/customBlockPage
 
 |Property|Type|Description|
 |:---|:---|:---|
-|state|microsoft.graph.networkaccess.status||The current status of the custom block page. The possible values are: `enabled`, `disabled`, `unknownFutureValue`. Required.|
+|state|microsoft.graph.networkaccess.status|The current status of the custom block page. The possible values are: `enabled`, `disabled`, `unknownFutureValue`. Required.|
 |configuration|[microsoft.graph.networkaccess.blockPageConfigurationBase](../resources/networkaccess-blockpageconfigurationbase.md)|The current configuration of the customized message. The body can be input in limited markdown language, supporting links via the format: [link](https://example.com). Optional.|
 
 
