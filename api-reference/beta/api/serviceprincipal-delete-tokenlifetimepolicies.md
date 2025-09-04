@@ -1,7 +1,7 @@
 ---
 title: "Remove tokenLifetimePolicies"
 description: "Remove a tokenLifetimePolicy from a service principal."
-author: "Jackson-Woods"
+author: "aricrowe57"
 ms.localizationpriority: medium
 ms.subservice: "entra-applications"
 doc_type: apiPageType
