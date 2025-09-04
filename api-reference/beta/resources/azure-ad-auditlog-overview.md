@@ -75,11 +75,11 @@ The [auditActivityType](../resources/auditactivitytype.md) provide you with a li
 
 ### Sign In Events App Summary
 
-The [signInEventsAppActivity](../resources/signineventsappactivity.md) helps you see the total number of sign in events that have occurred for a specific application in the past 30 days.
+The [signInEventsAppActivity](../resources/signineventsappactivity.md) helps you see the total number of sign in events for a specific application in the past 30 days.
 
 ### Sign In Events Summary
 
-The [signInEventsActivity](../resources/signineventsactivity.md) helps you see the total number of sign in events that have occurred for a specific day.
+The [signInEventsActivity](../resources/signineventsactivity.md) helps you see the total number of sign in events for a specific day.
 
 ### Summarized Sign In Events Summary
 
@@ -99,9 +99,9 @@ Operation | URL
 |GET audit activity types | [https://graph.microsoft.com/beta/auditLogs/auditActivityTypes](https://developer.microsoft.com/graph/graph-explorer?request=auditLogs/auditActivityTypes&version=beta)
 |GET sign in events app summary | [https://graph.microsoft.com/beta/auditLogs/signInEventsAppSummary](https://developer.microsoft.com/graph/graph-explorer?request=auditLogs/signInEventsAppSummary&version=beta)
 |GET sign in events summary | [https://graph.microsoft.com/beta/auditLogs/signInEventsSummary](https://developer.microsoft.com/graph/graph-explorer?request=auditLogs/signInEventsSummary&version=beta)
-|GET summarized service principal sign in evemts summary | [https://graph.microsoft.com/beta/auditLogs/getSummarizedServicePrincipalSignIns](https://developer.microsoft.com/graph/graph-explorer?request=auditLogs/getSummarizedServicePrincipalSignIns&version=beta)
-|GET summarized non-interactive sign in evemts summary | [https://graph.microsoft.com/beta/auditLogs/getSummarizedNonInteractiveSignIns](https://developer.microsoft.com/graph/graph-explorer?request=auditLogs/getSummarizedNonInteractiveSignIns&version=beta)
-|GET summarized MSI sign in evemts summary | [https://graph.microsoft.com/beta/auditLogs/getSummarizedMSISignIns](https://developer.microsoft.com/graph/graph-explorer?request=auditLogs/getSummarizedMSISignIns&version=beta)
+|GET summarized service principal sign in events summary | [https://graph.microsoft.com/beta/auditLogs/getSummarizedServicePrincipalSignIns](https://developer.microsoft.com/graph/graph-explorer?request=auditLogs/getSummarizedServicePrincipalSignIns&version=beta)
+|GET summarized non-interactive sign in events summary | [https://graph.microsoft.com/beta/auditLogs/getSummarizedNonInteractiveSignIns](https://developer.microsoft.com/graph/graph-explorer?request=auditLogs/getSummarizedNonInteractiveSignIns&version=beta)
+|GET summarized managed service identity sign in events summary | [https://graph.microsoft.com/beta/auditLogs/getSummarizedMSISignIns](https://developer.microsoft.com/graph/graph-explorer?request=auditLogs/getSummarizedMSISignIns&version=beta)
 
 ## License requirements
 
