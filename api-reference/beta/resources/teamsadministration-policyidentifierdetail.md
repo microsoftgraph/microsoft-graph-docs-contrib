@@ -1,6 +1,6 @@
 ---
 title: "policyIdentifierDetail resource type"
-description: "Represents policy identifier details such as name and ID of the Teams Policy"
+description: "Represents the identifier details of a Teams policy, including the policy name and its unique ID."
 author: "praspatil05"
 ms.date: 08/14/2025
 ms.localizationpriority: medium
@@ -16,10 +16,9 @@ Namespace: microsoft.graph.teamsAdministration
 
 Represents the identifier details of a Teams policy, including the policy name and its unique ID.
 
-Inherits from [microsoft.graph.entity](../resources/entity.md).
+Inherits from [entity](../resources/entity.md).
 
 ## Methods
-|Method|Return type|Description|
 None.
 
 ## Properties
