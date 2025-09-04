@@ -14,7 +14,7 @@ Namespace: microsoft.graph.teamsAdministration
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Unassigns a Teams policy from a user by specifying the user ID, and policy type.
+Unassigns a Teams policy from a user by specifying the user ID and policy type.
 
 ## Permissions
 
@@ -79,7 +79,7 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.teamsAdministration.teamsPolicyUserAssignment",
       "userId": "5c802b19-3600-83f1-1767-7b9edc7f38ab",
-      "policyType": "TeamsMeetingPolicy",
+      "policyType": "TeamsMeetingPolicy"
     }
   ]
 }
