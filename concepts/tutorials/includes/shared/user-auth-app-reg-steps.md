@@ -38,7 +38,7 @@ Register an application that supports [user authentication](/graph/auth-v2-user)
 
 ### [PowerShell](#tab/powershell)
 
-To use PowerShell, you need the Microsoft Graph PowerShell SDK. If you don't have it, see [Install the Microsoft Graph PowerShell SDK](/graph/powershell/installation) for installation instructions.
+To use PowerShell, you need the Microsoft Graph PowerShell SDK. If you don't have it, see [Install the Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/installation) for installation instructions.
 
 > [!IMPORTANT]
 > The PowerShell script requires a work/school account with the Application administrator, Cloud application administrator, or Global administrator role. If your account has the Application developer role, you can register in the Microsoft Entra admin center.
