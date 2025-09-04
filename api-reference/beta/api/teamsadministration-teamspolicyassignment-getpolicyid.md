@@ -42,8 +42,8 @@ In the request URL, provide the following query parameters with values.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|type|String|The policy type, such as TeamsMeetingBroadcastPolicy, TeamsMeetingPolicy, etc|
-|name|String|The name of the policy instance, such as "AllOn"|
+|type|String|The policy type, such as TeamsMeetingBroadcastPolicy, TeamsMeetingPolicy, etc.|
+|name|String|The name of the policy instance, such as "AllOn".|
 
 
 ## Request headers
