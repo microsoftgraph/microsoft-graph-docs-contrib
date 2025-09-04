@@ -14,7 +14,7 @@ Namespace: microsoft.graph.teamsAdministration
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Assigns a Teams policy to a user by specifying the user ID, policy type, and policy ID
+Assigns a Teams policy to a user by specifying the user ID, policy type, and policy ID.
 
 ## Permissions
 
