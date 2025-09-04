@@ -7,7 +7,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "List",
           "ChangeType": "Change",
-          "Description": "Updated the maximum page size for the [List servicePrincipals](https://learn.microsoft.com/en-us/graph/api/serviceprincipal-list?view=graph-rest-1.0) API from 999 to 100 service principal objects.",
+          "Description": "Starting September 2025, the maximum page size for the [List servicePrincipals](https://learn.microsoft.com/en-us/graph/api/serviceprincipal-list?view=graph-rest-1.0) API will be 100 objects from the previous 999 objects.",
           "Target": "servicePrincipal"
         }
       ],
@@ -25,7 +25,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "List",
           "ChangeType": "Change",
-          "Description": "Updated the maximum page size for the [List servicePrincipals](https://learn.microsoft.com/en-us/graph/api/serviceprincipal-list?view=graph-rest-beta) API from 999 to 100 service principal objects.",
+          "Description": "Starting September 2025, the maximum page size for the [List servicePrincipals](https://learn.microsoft.com/en-us/graph/api/serviceprincipal-list?view=graph-rest-beta) API will be 100 objects from the previous 999 objects.",
           "Target": "servicePrincipal"
         }
       ],
