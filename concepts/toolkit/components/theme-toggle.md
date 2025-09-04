@@ -9,6 +9,9 @@ ms.topic: article
 
 # Theme toggle component in the Microsoft Graph Toolkit
 
+> [!CAUTION]
+> The Microsoft Graph Toolkit is deprecated. The retirement period begins September 1, 2025, with full retirement planned for August 28, 2026. Developers should migrate to using the Microsoft Graph SDKs or other supported Microsoft Graph tools for building web experiences. For more information, see the [deprecation announcement](https://devblogs.microsoft.com/microsoft365dev/microsoft-graph-toolkit-retirement/).
+
 The theme toggle component allows the user to set or change the document theme from light to dark using a toggle.
 
 A user is able to use the theme toggle component to set the default theme to `light` or `dark`. The user can then toggle these modes using a toggle switch.
