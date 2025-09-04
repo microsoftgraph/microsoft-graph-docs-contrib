@@ -16,8 +16,8 @@ Namespace: microsoft.graph
 
 Restore a deleted crossTenantIdentitySyncPolicyPartner object.
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
@@ -62,6 +62,7 @@ If successful, this action returns a `200 OK` response code and a [crossTenantId
 ### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "crosstenantidentitysyncpolicypartnerthis.restore"
@@ -70,6 +71,12 @@ The following example shows a request.
 ``` http
 POST https://graph.microsoft.com/beta/policies/deletedItems/crossTenantSyncPolicyPartners/01d0e717-bc90-46ba-94a9-71b4a811fddb/restore
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/crosstenantidentitysyncpolicypartnerthisrestore-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 
 ### Response

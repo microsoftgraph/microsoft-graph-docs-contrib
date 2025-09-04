@@ -2620,7 +2620,9 @@
             "microsoft.graph.security.incidentTask"
           ],
           "complexTypes": [
-            "microsoft.graph.security.teamsMessageEvidence"
+            "microsoft.graph.security.securityGroupEvidence",
+            "microsoft.graph.security.teamsMessageEvidence",
+            "microsoft.graph.security.userAccount"
           ]
         },
         {
@@ -3118,6 +3120,12 @@
             "outOfOfficeSettings"
           ],
           "childNodes": [
+            {
+              "name": "Ad hoc call",
+              "resources": [
+                "adhocCall"
+              ]
+            },
             {
               "name": "Calls",
               "resources": [

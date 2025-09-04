@@ -210,9 +210,20 @@ Content-Type: application/json
         "referrer": "process",
         "origin": "https://developer.mozilla.org",
         "xForwardedFor": "incentivize"
+      },
+      "cloudApplicationMetadata": {
+        "@odata.type": "microsoft.graph.networkaccess.cloudApplicationMetadata",
+        "cloudApplicationCatalogId": "12345",
+        "name": "ChatGPT",
+        "category": "generativeAi",
+        "generalScore": 85,
+        "riskScore": 15,
+        "complianceScore": 90,
+        "legalScore": 88,
+        "loginUser": "user1@microsoft.com",
+        "securityScore": 92
       }
     }
   ]
 }
 ```
-

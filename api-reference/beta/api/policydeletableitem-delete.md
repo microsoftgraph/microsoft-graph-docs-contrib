@@ -21,6 +21,8 @@ Permanently delete a [policyDeletableItem](../resources/policydeletableitem.md) 
 - [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md)
 - [namedLocation](../resources/namedlocation.md)
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -91,6 +93,7 @@ If successful, this method returns a `204 No Content` response code.
 #### Request
 
 The following example shows a request for crossTenantAccessPolicyConfigurationPartner.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_policydeletableitem_crossTenantAccessPolicyConfigurationPartner"
@@ -99,6 +102,12 @@ The following example shows a request for crossTenantAccessPolicyConfigurationPa
 ```HTTP
 DELETE https://graph.microsoft.com/beta/policies/deletedItems/crossTenantPartners/809cbbd2-2325-4c17-bd51-f8f098db19c8
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-policydeletableitem-crosstenantaccesspolicyconfigurationpartner-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 
 #### Response
@@ -118,6 +127,7 @@ HTTP/1.1 204 No Content
 #### Request
 
 The following example shows a request for crossTenantIdentitySyncPolicyPartner.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_policydeletableitem_crossTenantIdentitySyncPolicyPartner"
@@ -126,6 +136,12 @@ The following example shows a request for crossTenantIdentitySyncPolicyPartner.
 ```HTTP
 DELETE https://graph.microsoft.com/beta/policies/deletedItems/crossTenantSyncPolicyPartners/809cbbd2-2325-4c17-bd51-f8f098db19c8
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-policydeletableitem-crosstenantidentitysyncpolicypartner-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 
 #### Response
