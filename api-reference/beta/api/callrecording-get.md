@@ -53,9 +53,7 @@ To use application permissions for this API, tenant administrators must create a
 
 ## HTTP request
 
-### For an online meeting
-
-Get a single recording:
+To get a single recording for an online meeting
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -71,9 +69,7 @@ GET /me/onlineMeetings/{meetingId}/recordings/{recordingId}/content
 GET /users/{userId}/onlineMeetings/{meetingId}/recordings/{recordingId}/content
 ```
 
-### For an ad hoc call
-
-Get a single recording:
+To get a single recording for an ad hoc call
 
 <!-- { "blockType": "ignored" } -->
 ```http
