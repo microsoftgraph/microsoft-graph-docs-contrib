@@ -1,5 +1,41 @@
 {
   "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "a0f2cefd-9f4c-4d53-a662-2f2ba2202b5d",
+          "ApiChange": "Method",
+          "ChangedApiName": "list",
+          "ChangeType": "Change",
+          "Description": "Updated the maximum page size for the [list servicePrincipals](https://learn.microsoft.com/en-us/graph/api/serviceprincipal-list?view=graph-rest-1.0) API from 999 to 100 service principal objects.",
+          "Target": "servicePrincipal"
+        }
+      ],
+      "Id": "a0f2cefd-9f4c-4d53-a662-2f2ba2202b5d",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-01-27T19:55:00.0000000Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "6660c8ae-bef6-48f8-b2b5-d0c315b9eb43",
+          "ApiChange": "Method",
+          "ChangedApiName": "list",
+          "ChangeType": "Change",
+          "Description": "Updated the maximum page size for the [list servicePrincipals](https://learn.microsoft.com/en-us/graph/api/serviceprincipal-list?view=graph-rest-beta) API from 999 to 100 service principal objects.",
+          "Target": "servicePrincipal"
+        }
+      ],
+      "Id": "6660c8ae-bef6-48f8-b2b5-d0c315b9eb43",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-01-27T19:55:00.0000000Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
         {
       "ChangeList": [
         {
