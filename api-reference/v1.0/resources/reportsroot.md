@@ -26,8 +26,9 @@ None.
 
 |Relationship|Type|Description|
 |:-----------|:---|:----------|
-|readingAssignmentSubmission|[readingAssignmentSubmission](../resources/readingassignmentsubmission.md) collection|The submission details of the reading assignment submitted by a student.|
-|reflectCheckInResponse|[reflectCheckInResponse](../resources/reflectcheckinresponse.md) collection|The response to the Microsoft Reflect check-in.|
+|readingAssignmentSubmissions|[readingAssignmentSubmission](../resources/readingassignmentsubmission.md) collection|Details of submitted reading assignments.|
+|readingCoachPassages|[readingCoachPassage](../resources/readingcoachpassage.md) collection|Details of practiced Reading Coach passages.|
+|reflectCheckInResponses|[reflectCheckInResponse](../resources/reflectcheckinresponse.md) collection|Details of check-in responses.|
 
 The following JSON representation shows the resource type.
 

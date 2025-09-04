@@ -520,6 +520,7 @@
         "educationSubmission",
         "educationSubmissionResource",
         "readingAssignmentSubmission",
+        "readingCoachPassage",
         "reflectCheckInResponse"
       ],
       "complexTypes": [

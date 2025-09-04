@@ -278,6 +278,12 @@ items:
     href: ../../resources/readingassignmentsubmission.md
   - name: List
     href: ../../api/reportsroot-list-readingassignmentsubmissions.md
+- name: Reading coach passage
+  items:
+  - name: Reading coach passage
+    href: ../../resources/readingcoachpassage.md
+  - name: List
+    href: ../../api/reportsroot-list-readingcoachpassages.md
 - name: Reflect check-in response
   items:
   - name: Reflect check-in response
