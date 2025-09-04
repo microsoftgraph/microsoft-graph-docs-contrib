@@ -1,6 +1,6 @@
 ---
 title: "teamsPolicyAssignment resource type"
-description: "Represents the root entity for managing Teams policy assignments. It provides access to user policy assignments and supports resolving policyId."
+description: "Represents the root entity for managing Teams policy assignments."
 author: "praspatil05"
 ms.date: 08/14/2025
 ms.localizationpriority: medium
@@ -14,19 +14,16 @@ Namespace: microsoft.graph.teamsAdministration
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the root entity for managing Teams policy assignments. It provides access to user policy assignments and supports resolving policyId.
+Represents the root entity for managing Teams policy assignments. It provides access to user policy assignments and supports the resolution of **policyId**.
 
-
-Inherits from [microsoft.graph.entity](../resources/entity.md).
-
+Inherits from [entity](../resources/entity.md).
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[getPolicyId](../api/teamsadministration-teamspolicyassignment-getpolicyid.md)|[microsoft.graph.teamsAdministration.policyIdentifierDetail](../resources/teamsadministration-policyidentifierdetail.md) collection|Retrieves policy identifier details such as name and ID of the Teams policy.|
+|[Get policy ID](../api/teamsadministration-teamspolicyassignment-getpolicyid.md)|[microsoft.graph.teamsAdministration.policyIdentifierDetail](../resources/teamsadministration-policyidentifierdetail.md) collection|Get policy identifier details such as name and ID of the Teams policy.|
 
 ## Properties
-|Property|Type|Description|
 None.
 
 ## Relationships
