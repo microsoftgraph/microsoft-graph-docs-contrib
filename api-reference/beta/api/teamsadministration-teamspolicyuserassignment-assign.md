@@ -1,6 +1,6 @@
 ---
 title: "teamsPolicyUserAssignment: assign"
-description: "Assigns a Teams policy to a user by specifying the user ID, policy type, and policy ID"
+description: "Assign a Teams policy to a user using the user ID, policy type, and policy ID."
 author: "praspatil05"
 ms.date: 08/14/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.teamsAdministration
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Assigns a Teams policy to a user by specifying the user ID, policy type, and policy ID.
+Assign a Teams policy to a user using the user ID, policy type, and policy ID.
 
 ## Permissions
 
@@ -52,9 +52,7 @@ The following table lists the parameters that are required when you call this ac
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|value|[microsoft.graph.teamsAdministration.teamsPolicyUserAssignment](../resources/teamsadministration-teamspolicyuserassignment.md) collection|A collection of user-policy assignment objects, specifying the user ID, policy type, and policy ID to assign.|
-
-
+|value|[microsoft.graph.teamsAdministration.teamsPolicyUserAssignment](../resources/teamsadministration-teamspolicyuserassignment.md) collection|A collection of user-policy assignment objects that specify the user ID, policy type, and policy ID to assign.|
 
 ## Response
 
@@ -86,11 +84,9 @@ Content-Type: application/json
 }
 ```
 
-
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true
