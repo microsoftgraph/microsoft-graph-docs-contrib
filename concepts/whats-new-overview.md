@@ -33,6 +33,10 @@ Added a note to the **artifactCount** property of the [granularMailboxRestoreArt
   - Use the **sid** property to get the security identifier of the group.
 - Use the **activeDirectoryObjectGuid** property on [userAccount](/graph/api/resources/security-useraccount) to get the unique user identifier assigned by the on-premises Active Directory.
 
+### Applications
+
+Updated the maximum page size for the [List servicePrincipals API](/graph/api/serviceprincipal-list) from 999 to 100.
+
 ## September 2025: New in preview only
 
 ### Backup storage
