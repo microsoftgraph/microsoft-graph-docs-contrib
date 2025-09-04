@@ -1,6 +1,6 @@
 ---
 title: "teamsPolicyAssignment: getPolicyId"
-description: "Retrieves the policy ID for a given policy name and policy type within Teams administration."
+description: "Get the policy ID for a given policy name and policy type within Teams administration."
 author: "praspatil05"
 ms.date: 08/14/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.teamsAdministration
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieves the policy ID for a given policy name and policy type within Teams administration.
+Get the policy ID for a given policy name and policy type within Teams administration.
 
 ## Permissions
 
@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /admin/teams/policy/getPolicyId
+GET /admin/teams/policy/getPolicyId(type='{policyType}',name='{policyName}')
 ```
 
 ## Function parameters
@@ -42,9 +42,8 @@ In the request URL, provide the following query parameters with values.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|type|String|The policy type, such as TeamsMeetingBroadcastPolicy, TeamsMeetingPolicy, etc.|
-|name|String|The name of the policy instance, such as "AllOn".|
-
+|name|String|The name of the policy instance, such as `AllOn`.|
+|type|String|The policy type, such as `TeamsMeetingBroadcastPolicy` and `TeamsMeetingPolicy`.|
 
 ## Request headers
 
@@ -58,7 +57,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this function returns a `200 OK` response code and a [microsoft.graph.teamsAdministration.policyIdentifierDetail](../resources/teamsadministration-policyidentifierdetail.md) collection in the response body.
+If successful, this function returns a `200 OK` response code and a collection of [microsoft.graph.teamsAdministration.policyIdentifierDetail](../resources/teamsadministration-policyidentifierdetail.md) objects in the response body.
 
 ## Examples
 
@@ -73,7 +72,6 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/beta/admin/teams/policy/getPolicyId(type='TeamsMeetingPolicy',name='AllOn')
 ```
-
 
 ### Response
 
