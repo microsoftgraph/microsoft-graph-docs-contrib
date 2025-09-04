@@ -25,18 +25,16 @@ Inherits from [entity](../resources/entity.md).
 |:---|:---|:---|
 |[List](../api/onpremisespublishingprofile-list-sensors.md)|[privateAccessSensor](../resources/privateaccesssensor.md) collection|Get a list of the privateAccessSensor objects and their properties.|
 |[Get](../api/privateaccesssensor-get.md)|[privateAccessSensor](../resources/privateaccesssensor.md)|Read the properties and relationships of a privateAccessSensor object.|
-|[Update](../api/privateaccesssensor-update.md)|[privateAccessSensor](../resources/privateaccesssensor.md)|Update the properties of a privateAccessSensor object.|
 
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|externalIp|String|External IP of sensor|
-|id|String|Unique Id of the sensor Inherited from [entity](../resources/entity.md). Inherits from [entity](../resources/entity.md)|
-|isBreakglassEnabled|Boolean|Is breakglass property enabled or not|
-|machineName|String|Machine name of sensor|
-|version|String|Version of sensor|
-|status|microsoft.graph.sensorStatus|Status of sensor such as Active or Inactive|
+|externalIp|String|External IP of sensor.|
+|id|String|Unique ID of the sensor. Inherits from [entity](../resources/entity.md)|
+|machineName|String|Machine name of sensor.|
+|version|String|Version of sensor.|
+|status|microsoft.graph.sensorStatus|Status of sensor such as Active or Inactive.|
 
 ## Relationships
 None.

@@ -27,6 +27,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/onpremisespublishingprofile-list-sensors-permissions.md)]
 
+[!INCLUDE [rbac-app-proxy-read](../includes/rbac-for-apis/rbac-app-proxy-read.md)]
+
 ## HTTP request
 
 <!-- {
@@ -34,12 +36,12 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /onPremisesPublishingProfiles/{onPremisesPublishingProfilesId}/sensors
+GET /onPremisesPublishingProfiles/privateAccess/sensors
 ```
 
 ## Optional query parameters
 
-This method supports `$filter`, `$expand`, `$select`, `$count`, `$top`, `$skip` the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports `$filter`, `$select`, `$count`, `$top`, `$skip` the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -88,13 +90,12 @@ Content-Type: application/json
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#onPremisesPublishingProfiles('privateAccess')/sensors",
     "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET onPremisesPublishingProfiles('<key>')/sensors?$select=externalIp,machineName",
     "value": [
-        {
-          "id": "f052d43d-effc-2df0-70a8-5e899d400d42",
-          "machineName": "String",
-          "externalIp": "String",
-          "version": "String",
-          "isBreakglassEnabled": "Boolean",
-          "status": "String"
+    {
+            "id": "7329c088-baef-4424-a354-681fc23c848f",
+            "machineName": "machine.contoso.com",
+            "externalIp": "192.68.16.158",
+            "status": "active",
+            "version": "1.0.0.0"
         }
     ]
 }
