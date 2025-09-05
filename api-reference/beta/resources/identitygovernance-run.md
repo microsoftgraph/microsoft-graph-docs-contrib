@@ -53,6 +53,7 @@ Inherits from [entity](../resources/entity.md).
 
 |Relationship|Type|Description|
 |:---|:---|:---|
+|reprocessedRuns|[microsoft.graph.identityGovernance.run](../resources/identitygovernance-run.md) collection|The related reprocessed workflow run.|
 |userProcessingResults|[microsoft.graph.identityGovernance.userProcessingResult](../resources/identitygovernance-userprocessingresult.md) collection|The associated individual user execution.|
 |taskProcessingResults|[microsoft.graph.identityGovernance.taskProcessingResult](../resources/identitygovernance-taskprocessingresult.md) collection|The related taskProcessingResults.|
 |taskReports|[microsoft.graph.identityGovernance.taskReport](../resources/identitygovernance-taskreport.md) collection|The related taskProcessingReports.|
