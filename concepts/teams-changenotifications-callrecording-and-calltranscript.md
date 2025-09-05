@@ -5,7 +5,7 @@ author: "v-sdhakshina"
 ms.localizationpriority: high
 ms.subservice: "teams"
 ms.custom: scenarios:getting-started
-ms.date: 08/17/2025
+ms.date: 09/05/2025
 ---
 
 # Get change notifications for transcripts and recordings using Microsoft Graph
@@ -83,7 +83,7 @@ One of the following permissions is required to subscribe to `communications/onl
 
 ### **For ad hoc calls**
 
-To get change notifications for any transcript available for a particular ad hoc call, subscribe to `/communications/adhocCalls/{callId}/transcripts`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification. The notification for a transcript is sent only if the subscription happens before the transcription starts. This subscription supports unscheduled [ad hoc calls](/graph/api/resources/adhoccall?view=graph-rest-beta&preserve-view=true).
+To get change notifications for any transcript available for a particular ad hoc call, subscribe to `/communications/adhocCalls/{callId}/transcripts`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification. The notification for a transcript is sent only if the subscription happens before the transcription starts. This subscription supports unscheduled [ad hoc calls](../api-reference/beta/resources/adhoccall.md)
 
 > [!NOTE]
 >
@@ -354,7 +354,6 @@ To get change notifications for any recording available for any ad hoc call in a
 
 > [!NOTE]
 > This resource type is available only on the `/beta` endpoint.
-> This subscription does not support private channel meetings.
 
 #### Permissions
 
@@ -503,7 +502,7 @@ Content-Type: application/json
 
 ## Subscribe to recordings available for a particular ad hoc call
 
-To get change notifications for any recording available for a particular ad hoc call, subscribe to `communications/adhocCalls/{adhocCallId}/recordings`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification. This subscription supports [adhocCalls](/graph/api/resources/adhoccall).
+To get change notifications for any recording available for a particular ad hoc call, subscribe to `communications/adhocCalls/{adhocCallId}/recordings`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification. This subscription supports [ad hoc calls](../api-reference/beta/resources/adhoccall.md).
 
 ### Permissions
 
@@ -553,7 +552,7 @@ One of the following permissions is required to subscribe to `users/{userId}/onl
 
 #### **For ad hoc calls**
 
-To get change notifications for any recording available for a particular adhoc call, subscribe to `users/{userId}/adhocCalls/{callId}/recordings`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification.
+To get change notifications for any recording available for a particular ad hoc call, subscribe to `users/{userId}/adhocCalls/{callId}/recordings`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification.
 
 > [!NOTE]
 > This resource type is available only on the `/beta` endpoint.
@@ -591,7 +590,7 @@ Content-Type: application/json
 
 ## Subscribe to recordings available for ad hoc calls at the user level
 
-To get change notifications for any recording available for any ad hoc call where a specific user initiates transcription, subscribe to `users/{userId}/adhocCalls/getAllRecordings`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification. This subscription supports [adhocCalls](/graph/api/resources/adhoccall).
+To get change notifications for any recording available for any ad hoc call where a specific user initiates transcription, subscribe to `users/{userId}/adhocCalls/getAllRecordings`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification. This subscription supports [ad hoc calls](../api-reference/beta/resources/adhoccall.md).
 
 ### Permissions
 
@@ -740,11 +739,11 @@ For notifications with resource data, the payload looks like the following. This
       "changeType": "created",
       "clientState": "<<--SpecifiedClientState-->>",
       "subscriptionExpirationDateTime": "2023-09-17T08:13:26.3265566+00:00",
-      "resource": "users/{organizer-id}/adhoccalls(GUID)/transcripts('MSM...')",
+      "resource": "users/{user-id}/adhoccalls/1c9ddbc9-82be-46b6-8edd-bf833fe33a03/transcripts('MSM...')",
       "resourceData": {
         "id": "MSM...",
         "@odata.type": "#Microsoft.Graph.callTranscript",
-        "@odata.id": "users/{organizer-id}/adhoccalls(GUID)/transcripts('MSM...')"
+        "@odata.id": "users/{user-id}/adhoccalls/1c9ddbc9-82be-46b6-8edd-bf833fe33a03/transcripts('MSM...')"
       },
       "encryptedContent": {
         "data": "<<--EncryptedContent-->>",
@@ -798,8 +797,8 @@ The decrypted notification payload looks like the following. The payload conform
 {
   "id": "MSM...",
   "meetingId": null,
-  "callId": "af630fe0-04d3-4559-8cf9-91fe45e36296",
-  "transcriptContentUrl": "users/{organizer-id}/adhoccalls/GUID/transcripts/MSM.../content",
+  "callId": "1c9ddbc9-82be-46b6-8edd-bf833fe33a03",
+  "transcriptContentUrl": "users/{user-id}/adhoccalls/1c9ddbc9-82be-46b6-8edd-bf833fe33a03/transcripts/MSM.../content",
   "createdDateTime": null,
   "endDateTime": "2023-04-10T08:27:25.2346000Z",
   "contentCorrelationId": "bc842d7a-2f6e-4b18-a1c7-73ef91d5c8e3",
@@ -865,11 +864,11 @@ For notifications with resource data, the payload looks like the following.
       "tenantId": "2432b57b-0abd-43db-aa7b-16eadd115d34",
       "clientState": "ClientSecret",
       "subscriptionExpirationDateTime": "2025-07-24T18:04:24.3511596+00:00",
-      "resource": "users/cdad9148-d926-4731-8618-371e587dded0/adhocCalls/GUID/transcripts/MyMjMTk6ODA4MTExMTNiYWQzNDNhYzkzNGI2YTVmYzc1ZThmZGJAdGhyZWFkLnYyIyM1MTYwNzQ4MC1kM2FjLTRlZTQtOTQ3NS1lYjM2NTk5MjM4ZDYtMTc1MzM0NTA2OC1UcmFuc2NyaXB0VjI=",
+      "resource": "users/user-id/adhocCalls/1c9ddbc9-82be-46b6-8edd-bf833fe33a03/transcripts/MyMjMTk6ODA4MTExMTNiYWQzNDNhYzkzNGI2YTVmYzc1ZThmZGJAdGhyZWFkLnYyIyM1MTYwNzQ4MC1kM2FjLTRlZTQtOTQ3NS1lYjM2NTk5MjM4ZDYtMTc1MzM0NTA2OC1UcmFuc2NyaXB0VjI=",
       "resourceData": {
         "id": "MyMjMTk6ODA4MTExMTNiYWQzNDNhYzkzNGI2YTVmYzc1ZThmZGJAdGhyZWFkLnYyIyM1MTYwNzQ4MC1kM2FjLTRlZTQtOTQ3NS1lYjM2NTk5MjM4ZDYtMTc1MzM0NTA2OC1UcmFuc2NyaXB0VjI=",
         "@odata.type": "#Microsoft.Graph.callTranscript",
-        "@odata.id": "users/cdad9148-d926-4731-8618-371e587dded0/adhocCalls/GUID/transcripts/MyMjMTk6ODA4MTExMTNiYWQzNDNhYzkzNGI2YTVmYzc1ZThmZGJAdGhyZWFkLnYyIyM1MTYwNzQ4MC1kM2FjLTRlZTQtOTQ3NS1lYjM2NTk5MjM4ZDYtMTc1MzM0NTA2OC1UcmFuc2NyaXB0VjI="
+        "@odata.id": "users/user-id/adhocCalls/1c9ddbc9-82be-46b6-8edd-bf833fe33a03/transcripts/MyMjMTk6ODA4MTExMTNiYWQzNDNhYzkzNGI2YTVmYzc1ZThmZGJAdGhyZWFkLnYyIyM1MTYwNzQ4MC1kM2FjLTRlZTQtOTQ3NS1lYjM2NTk5MjM4ZDYtMTc1MzM0NTA2OC1UcmFuc2NyaXB0VjI="
       }
     }
   ]
@@ -943,11 +942,11 @@ For notifications without resource data, the payload looks like the following. T
   "tenantId": "<<--TenantForWhichNotificationWasSent-->>",
   "clientState": "<<--SpecifiedClientState-->>",
   "subscriptionExpirationDateTime": "2023-09-17T08:29:11.3173971+00:00",
-  "resource": "users/{organizer-id}/adhoccalls/GUID/transcripts('MSM...')",
+  "resource": "users/{user-id}/adhoccalls/1c9ddbc9-82be-46b6-8edd-bf833fe33a03/transcripts('MSM...')",
   "resourceData": {
     "id": "MSM...",
     "@odata.type": "#Microsoft.Graph.callTranscript",
-    "@odata.id": "users/{organizer-id}/adhoccalls/GUID/transcripts('MSM...')"
+    "@odata.id": "users/{user-id}/adhoccalls/1c9ddbc9-82be-46b6-8edd-bf833fe33a03/transcripts('MSM...')"
   }
 }
 ```
@@ -986,11 +985,11 @@ For notifications without resource data, the payload looks like the following.
   "tenantId": "<<--TenantForWhichNotificationWasSent-->>",
   "clientState": "<<--SpecifiedClientState-->>",
   "subscriptionExpirationDateTime": "2023-09-17T08:27:05.0241757+00:00",
-  "resource": "users/{organizer-id}/adhoccalls('Mso...')/recordings('VjI...')",
+  "resource": "users/{user-id}/adhoccalls/1c9ddbc9-82be-46b6-8edd-bf833fe33a03/recordings('VjI...')",
   "resourceData": {
     "id": "VjI...",
     "@odata.type": "#Microsoft.Graph.callRecording",
-    "@odata.id": "users/{organizer-id}/adhoccalls('Mso...')/recordings('VjI...')"
+    "@odata.id": "users/{user-id}/adhoccalls/1c9ddbc9-82be-46b6-8edd-bf833fe33a03/recordings('VjI...')"
   }
 }
 ```

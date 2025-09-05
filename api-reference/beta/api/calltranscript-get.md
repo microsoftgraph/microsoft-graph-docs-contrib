@@ -36,9 +36,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "ignored", "name": "calltranscript_get" } -->
 | Permission type| Least privileged permissions|Higher privileged permissions|
 | :---| :---| :--- |
-|Delegated (work or school account)| **For online meetings**: OnlineMeetingTranscript.Read.All <br> <br> **For adhoc calls**: <br> CallTranscripts.Read.All| Not available.|
+|Delegated (work or school account)| **For online meetings**: OnlineMeetingTranscript.Read.All <br> <br> **For ad hoc calls**: <br> CallTranscripts.Read.All| Not available.|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|**For online meetings**:<br> <ul><li>OnlineMeetingTranscript.Read.All</li> <li> OnlineMeetingTranscript.Read.Chat</li></ul> <br>**For adhoc calls**: <br> <ul><li>CallTranscripts.Read.All</li></ul>| Not available.|
+|Application|**For online meetings**:<br> <ul><li>OnlineMeetingTranscript.Read.All</li> <li> OnlineMeetingTranscript.Read.Chat</li></ul> <br>**For ad hoc calls**: <br> <ul><li>CallTranscripts.Read.All</li></ul>| Not available.|
 
 > [!NOTE]
 
@@ -72,7 +72,7 @@ GET me/onlineMeetings/{meetingId}/transcripts/{transcriptId}/content
 GET users/{userId}/onlineMeetings/{meetingId}/transcripts/{transcriptId}/content
 ```
 
-### For an adhoc call
+### For an ad hoc call
 
 Get a single transcript:
 
