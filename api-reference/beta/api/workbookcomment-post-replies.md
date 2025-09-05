@@ -5,7 +5,7 @@ ms.localizationpriority: medium
 author: "AmandaHan123"
 ms.subservice: "excel"
 doc_type: "apiPageType"
-ms.date: 09/01/2025
+ms.date: 09/05/2025
 ---
 
 # Create workbookCommentReply

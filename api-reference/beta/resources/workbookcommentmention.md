@@ -5,7 +5,7 @@ ms.localizationpriority: medium
 author: "AmandaHan123"
 ms.subservice: "excel"
 doc_type: "resourcePageType"
-ms.date: 09/01/2025
+ms.date: 09/05/2025
 ---
 
 # workbookCommentMention resource type
@@ -19,7 +19,7 @@ Represents the person mentioned in a workbook comment.
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|id|Int|Represents the ID of the person that is mentioned in a comment.|
+|id|Int32|Represents the ID of the person that is mentioned in a comment.|
 |email|String|Represents the email address of the person that is mentioned in a comment.|
 |name|String|Represents the display name of the person that is mentioned in a comment.|
 

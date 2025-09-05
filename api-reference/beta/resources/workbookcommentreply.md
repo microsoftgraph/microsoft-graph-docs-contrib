@@ -6,7 +6,7 @@ author: "AmandaHan123"
 ms.subservice: "excel"
 doc_type: "resourcePageType"
 toc.title: Comment reply
-ms.date: 09/01/2025
+ms.date: 09/05/2025
 ---
 
 # workbookCommentReply resource type
