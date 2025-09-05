@@ -207,3 +207,56 @@ Content-Type: application/json
     "totalUnprocessedTasksCount": 0
 }
 ```
+
+### Example 3: Get activation scope of a run report for a workflow
+
+#### Request
+
+The following example shows a request.
+
+
+<!-- {
+  "blockType": "request",
+  "name": "lifecycleworkflows_get_workflow_run_e3"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/activateRunScope/run
+```
+
+### Response
+
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.identityGovernance.run"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "value": {
+    "@odata.type": "#microsoft.graph.identityGovernance.run",
+    "id": "9947396f-3691-e265-b1e5-2ea86c0c89d6",
+    "completedDateTime": "String (timestamp)",
+    "failedTasksCount": "Integer",
+    "failedUsersCount": "Integer",
+    "lastUpdatedDateTime": "String (timestamp)",
+    "processingStatus": "String",
+    "startedDateTime": "String (timestamp)",
+    "scheduledDateTime": "String (timestamp)",
+    "successfulUsersCount": "Integer",
+    "totalTasksCount": "Integer",
+    "totalUsersCount": "Integer",
+    "totalUnprocessedTasksCount": "Integer",
+    "workflowExecutionType": "String",
+    "activatedOnScope": {
+      "@odata.type": "microsoft.graph.identityGovernance.activationScope"
+    }
+  }
+}
+```
