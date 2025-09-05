@@ -102,4 +102,21 @@ Content-Type: application/json
   ]
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "description": "List fixtures",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+      "Error: microsoft.graph.microsoft.graph/places:
+      /places/{var}/microsoft.graph.building/map/levels/{var}/fixtures
+      Uri path requires navigating into unknown object hierarchy: missing property 'microsoft.graph.building' on 'place'. Possible issues:
+        1) Doc bug where 'microsoft.graph.building' isn't defined on the resource.
+        2) Doc bug where 'microsoft.graph.building' is an example key and should instead be replaced with a placeholder like {item-id} or declared in the sampleKeys annotation.
+        3) Doc bug where 'place' is supposed to be an entity type, but is being treated as a complex because it (and its ancestors) are missing the keyProperty annotation."
+  ]
+}
+-->
 
