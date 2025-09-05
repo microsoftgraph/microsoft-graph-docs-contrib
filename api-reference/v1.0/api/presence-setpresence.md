@@ -27,7 +27,27 @@ The following precedence is used for how session states are aggregated:
 
 > **Note:** When a user presence changes in Microsoft Graph, because the Teams client uses poll mode, it will take a few minutes to update the presence status.
 
+### Presence states permutations
+
+| Teams state              | Graph availability / activity            | Set presence compatible |
+| ------------------------ | ---------------------------------------- |------------------------ |
+| Available                | `Available / Available`                  | **Yes**                 |
+| Available, Out of Office | `Available / OutOfOffice`                | **No** *                |
+| Busy                     | `Busy / Busy`                            | **Yes**                 |
+| In a call                | `Busy / InACall`                         | **Yes**                 |
+| In a meeting             | `Busy / InAMeeting`                      | **No** *                |
+| In a call, out of office | `Busy / InACall + OOF`           m       | **No** *                |
+| Do not disturb           | `DoNotDisturb / DoNotDisturb`            | **Yes**                 |
+| Presenting               | `DoNotDisturb / Presenting`              | **Yes**                 |
+| Focusing                 | `DoNotDisturb / Focusing`                | **No** *                |
+| Away                     | `Away / Away`                            | **Yes**                 |
+| Be right back            | `BeRightBack / BeRightBack`              | **Yes**                 |
+| Appear offline           | `Offline / OffWork`                      | **Yes**                 |
+| Status unknown           | `PresenceUnknown / PresenceUnknown`      | **No** *                |
+| Out of Office            | `OutOfOffice`                            | **No** *                |
+
 > [!NOTE]
+> * Those states are produced as result of shceduled events, you can view [Graph **event** APIs](../resources/event.md).
 > Keep that set the availability **Out of Office (OOF)** and **In a meeting** are **event API only**. Do **not** attempt to set these states via `presence:setPresence`. Use Microsoft [Graph **event** APIs](../resources/event.md) (for example, set an event’s `showAs` to `oof`); Graph will surface OOF via `outOfOfficeSettings`, and Get Presence will reflect **In a meeting** during scheduled events.
 
 ### Timeout, expiration, and keep alive

@@ -34,16 +34,18 @@ This resource supports subscribing to [change notifications](/graph/changenotifi
 
 ## Properties
 
-| Property | Type              | Description                                                                                                                                                                                                                                                                                       |
-| :----------- | :---------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| activity     | String collection | The supplemental information to a user's availability. Possible values are `Available`, `Away`, `BeRightBack`, `Busy`, `DoNotDisturb`, `InACall`, `InAConferenceCall`, `Inactive`, `InAMeeting`, `Offline`, `OffWork`, `OutOfOffice`, `PresenceUnknown`, `Presenting`, `UrgentInterruptionsOnly`. |
-| availability | String collection | The base presence information for a user. Possible values are `Available`, `availableIdle`,  `Away`, `beRightBack`, `Busy`, `busyIdle`, `DoNotDisturb`, `Offline`, `presenceUnknown`.|
-| id           | String            | The unique identifier for the user. |
-| outOfOfficeSettings | [outOfOfficeSettings](outofofficesettings.md) | The user's out-of-office settings. |
-| sequenceNumber | String | The lexicographically sortable string stamp that represents the version of a **presence** object. |
-| statusMessage | [presenceStatusMessage](presencestatusmessage.md) | The presence status message of a user. |
+| Property            | Type               | Description                                     |
+| :------------------ | :------------------| :---------------------------------------        |
+| activity            | String             | The supplemental information to a user's availability. Possible values are `Available`, `Away`, `BeRightBack`, `Busy`, `DoNotDisturb`, `Offline`, `OutOfOffice`, `PresenceUnknown` |
+| availability        | String             | The base presence information for a user. Possible values are `Available`, `Away`, `BeRightBack`, `Busy`, `DoNotDisturb`, `Focusing`, `InACall`, `InAMeeting`, `Offline`, `Presenting`, `PresenceUnknown`.    |
+| id                  | String             | The unique identifier for the user. |
+| outOfOfficeSettings | [outOfOfficeSettings](outofofficesettings.md) | The out of office settings for a user.  |
+| sequenceNumber      | String             | The lexicographically sortable String stamp that represents the version of a **presence** object. |
+| statusMessage       | [presenceStatusMessage](presencestatusmessage.md) | The presence status message of a user. |
 
->**Note:** To learn more about the different presence states, see [User presence in Teams](/microsoftteams/presence-admins). 
+> [!NOTE]
+> To learn more about the different presence states, see [User presence in Teams](/microsoftteams/presence-admins). 
+>Review [Set presence](../api/presence-setpresence.md) compatibility for state permutations.
 
 ## Relationships
 
