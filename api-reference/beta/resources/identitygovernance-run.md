@@ -26,11 +26,15 @@ Inherits from [entity](../resources/entity.md).
 |[Get runs](../api/identitygovernance-run-get.md)|[microsoft.graph.identityGovernance.run](../resources/identitygovernance-run.md)|Read the properties and relationships of a [run](../resources/identitygovernance-run.md) object.|
 |[Get summary](../api/identitygovernance-run-summary.md)|[microsoft.graph.identityGovernance.runSummary](../resources/identitygovernance-runsummary.md)|Get a summary of workflows runs.|
 |[List task processing results](../api/identitygovernance-run-list-taskprocessingresults.md)|[microsoft.graph.identityGovernance.taskReportSummary](../resources/identitygovernance-taskprocessingresult.md)|List task processing results from a run.|
+|[List reprocessedRuns](../api/identitygovernance-run-list-reprocessedruns.md)|[microsoft.graph.identityGovernance.run](../resources/identitygovernance-run.md) collection|Get a list of the workflow's reprocessed runs.|
+|[Add run](../api/identitygovernance-run-post-reprocessedruns.md)|[microsoft.graph.identityGovernance.run](../resources/identitygovernance-run.md)|Add reprocessedRuns by posting to the reprocessedRuns collection.|
+|[Remove reprocessedRuns](../api/identitygovernance-run-delete-reprocessedruns.md)|None|Delete a reprocessed run object.|
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
+|activatedOnScope|[microsoft.graph.identityGovernance.activationScope](../resources/identitygovernance-activationscope.md)|The scope for which the workflow runs.|
 |completedDateTime|DateTimeOffset|The date time that the run completed. Value is `null` if the workflow hasn't completed.<br><br>Supports `$filter`(`lt`, `le`, `gt`, `ge`, `eq`, `ne`) and `$orderby`.|
 |failedTasksCount|Int32|The number of tasks that failed in the run execution.|
 |failedUsersCount|Int32|The number of users that failed in the run execution.|
