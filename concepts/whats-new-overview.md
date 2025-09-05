@@ -20,6 +20,10 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ## September 2025: New and generally available
 
+### Backup storage
+
+Added a note to the **artifactCount** property of the [granularMailboxRestoreArtifact](/graph/api/resources/granularmailboxrestoreartifact) about its upcoming deprecation.
+
 ### Security | Alerts and incidents
 
 - Added the following new properties to the [securityGroupEvidence](/graph/api/resources/security-securitygroupevidence) resource:
@@ -28,6 +32,12 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
   - Use the **friendlyName** property to identify the friendly name of the security group.	
   - Use the **sid** property to get the security identifier of the group.
 - Use the **activeDirectoryObjectGuid** property on [userAccount](/graph/api/resources/security-useraccount) to get the unique user identifier assigned by the on-premises Active Directory.
+
+## September 2025: New in preview only
+
+### Backup storage
+
+Added a note to the **artifactCount** property of the [granularMailboxRestoreArtifact](/graph/api/resources/granularmailboxrestoreartifact?view=graph-rest-beta&preserve-view=true) about its upcoming deprecation.
 
 ## August 2025: New and generally available
 
