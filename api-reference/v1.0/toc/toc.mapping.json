@@ -522,7 +522,6 @@
         "readingAssignmentSubmission",
         "readingCoachPassage",
         "reflectCheckInResponse",
-        "relatedContact",
         "speakerAssignmentSubmission"
       ],
       "complexTypes": [
