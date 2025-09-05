@@ -9,12 +9,15 @@ ms.topic: article
 
 # Login component in Microsoft Graph Toolkit
 
-A Login component is a button and flyout control to facilitate Microsoft identity platform authentication. It provides two states:
+> [!CAUTION]
+> The Microsoft Graph Toolkit is deprecated. The retirement period begins September 1, 2025, with full retirement planned for August 28, 2026. Developers should migrate to using the Microsoft Graph SDKs or other supported Microsoft Graph tools for building web experiences. For more information, see the [deprecation announcement](https://devblogs.microsoft.com/microsoft365dev/microsoft-graph-toolkit-retirement/).
 
-- When user is not signed in, the control is a simple button to initiate the sign in process.
-- When user is signed in, the control displays the current signed in user name, profile image, and email. When clicked, a flyout is opened with a command to sign out.
+A Login component is a button and a flyout control to facilitate Microsoft identity platform authentication. It provides two states:
 
-You can also allow signing in with multiple accounts. This lists all your signed in accounts and give you an option to sign in with other new accounts.
+- When the user is not signed in, the control is a simple button to initiate the sign-in process.
+- When the user is signed in, the control displays the current signed-in user name, profile image, and email. When clicked, a flyout is opened with a command to sign out.
+
+You can also allow signing in with multiple accounts. This lists all your signed-in accounts and gives you an option to sign in with other new accounts.
 
 ## Example
 
@@ -36,15 +39,15 @@ The following example shows the `mgt-login` component with a signed-in user.
 
 ## Using the control without an authentication provider
 
-The component works with a provider and Microsoft Graph out of the box. However, if you want to provide your own logic and authentication, you can use the `userDetails` property to set the signed in user's details.
+The component works with a provider and Microsoft Graph out of the box. However, if you want to provide your own logic and authentication, you can use the `userDetails` property to set the signed-in user's details.
 
 | Attribute     | Property     | Description                                                                                                                                    |
 | ------------- | ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------- |
-| login-view    | loginView    | Determines the view style to apply to the logged in user. Options are 'full', 'compact', 'avatar', defaults to 'full'                          |
+| login-view    | loginView    | Determines the view style to apply to the logged-in user. Options are 'full', 'compact', 'avatar', defaults to 'full'                          |
 | show-presence | showPresence | Determines whether the presence indicator for the current user on the `mgt-person` control is shown with an authenticated user. Default is `false`. |
 | user-details  | userDetails  | Allows setting the user object details that the component will display.                                                                        |
 
-The following example sets the person details.
+The following example sets the person's details.
 
 ```js
 let loginControl = document.getElementById("myLoginControl");
@@ -55,7 +58,7 @@ loginControl.userDetails = {
 };
 ```
 
-Setting `userDetails` to `null` goes to the signed out state.
+Setting `userDetails` to `null` goes to the signed-out state.
 
 ## CSS custom properties
 
@@ -100,7 +103,7 @@ The following events are fired from the control.
 
 | Event             | When is it emitted                                             | Custom data | Cancelable | Bubbles | Works with custom template |
 | ----------------- | -------------------------------------------------------------- | ----------- | :--------: | :-----: | :------------------------: |
-| `loginInitiated`  | The user clicked the sign in button to start the login process | None        |    Yes     |   No    |            Yes             |
+| `loginInitiated`  | The user clicked the sign-in button to start the login process | None        |    Yes     |   No    |            Yes             |
 | `loginCompleted`  | The login process was successful and the user is now signed in | None        |     No     |   No    |            Yes             |
 | `loginFailed`     | The user canceled the login process or was unable to sign in   | None        |     No     |   No    |            Yes             |
 | `logoutInitiated` | The user started to logout                                     | None        |    Yes     |   No    |            Yes             |
@@ -159,7 +162,7 @@ For more complex scenarios or a truly custom UX, this component exposes several 
 
 ### Bring your own flyout
 
-It is possible to use your own flyout component in place of the built-in one, by overriding the `renderFlyout()` method and providing the new flyout.
+It is possible to use your own flyout component in place of the built-in one by overriding the `renderFlyout()` method and providing the new flyout.
 
 In this case, ensure the login component continues to work as expected by overriding the `protected` flyout display methods to update the visibility of your alternative flyout.
 

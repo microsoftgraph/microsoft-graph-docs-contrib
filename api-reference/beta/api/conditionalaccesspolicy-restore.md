@@ -62,7 +62,7 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/identity/conditionalAccess/deletedItems/policies/4fa582af-f900-495c-9772-ccf34d5a95fc/restore
+POST https://graph.microsoft.com/beta/identity/conditionalAccess/deletedItems/policies/59f2aa7a-4c49-4baa-932f-0300792e06c2/restore
 ```
 
 
@@ -81,25 +81,59 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.conditionalAccessPolicy",
-    "deletedDateTime": "String (timestamp)",
-    "id": "String (identifier)",
-    "createdDateTime": "String (timestamp)",
-    "modifiedDateTime": "String (timestamp)",
-    "displayName": "String",
-    "description": "String",
-    "state": "String",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.conditionalAccessPolicy",
+    "id": "59f2aa7a-4c49-4baa-932f-0300792e06c2",
+    "templateId": null,
+    "displayName": "Calvin all users all apps MFA",
+    "createdDateTime": "2025-09-05T22:10:06.334722Z",
+    "modifiedDateTime": null,
+    "state": "disabled",
+    "deletedDateTime": null,
+    "partialEnablementStrategy": null,
+    "sessionControls": null,
     "conditions": {
-      "@odata.type": "microsoft.graph.conditionalAccessConditionSet"
+        "userRiskLevels": [],
+        "signInRiskLevels": [],
+        "clientAppTypes": [
+            "all"
+        ],
+        "platforms": null,
+        "locations": null,
+        "times": null,
+        "deviceStates": null,
+        "devices": null,
+        "clientApplications": null,
+        "applications": {
+            "includeApplications": [
+                "All"
+            ],
+            "excludeApplications": [],
+            "includeUserActions": [],
+            "includeAuthenticationContextClassReferences": [],
+            "applicationFilter": null
+        },
+        "users": {
+            "includeUsers": [
+                "All"
+            ],
+            "excludeUsers": [],
+            "includeGroups": [],
+            "excludeGroups": [],
+            "includeRoles": [],
+            "excludeRoles": [],
+            "includeGuestsOrExternalUsers": null,
+            "excludeGuestsOrExternalUsers": null
+        }
     },
     "grantControls": {
-      "@odata.type": "microsoft.graph.conditionalAccessGrantControls"
-    },
-    "sessionControls": {
-      "@odata.type": "microsoft.graph.conditionalAccessSessionControls"
+        "operator": "OR",
+        "builtInControls": [
+            "mfa"
+        ],
+        "customAuthenticationFactors": [],
+        "termsOfUse": [],
+        "authenticationStrength": null
     }
-  }
 }
 ```
 

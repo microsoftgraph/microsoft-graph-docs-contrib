@@ -62,7 +62,7 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/identity/conditionalAccess/deletedItems/namedLocations/b5b69bc9-3e36-4fa0-bc7f-f0e5fd3aebf1/restore
+POST https://graph.microsoft.com/beta/identity/conditionalAccess/deletedItems/namedLocations/1a4c0633-332f-4691-a27a-fd8334938a62/restore
 ```
 
 ### Response
@@ -80,14 +80,18 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.namedLocation",
-    "deletedDateTime": "String (timestamp)",
-    "id": "String (identifier)",
-    "displayName": "String",
-    "createdDateTime": "String (timestamp)",
-    "modifiedDateTime": "String (timestamp)"
-  }
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.namedLocation",
+    "@odata.type": "#microsoft.graph.countryNamedLocation",
+    "id": "1a4c0633-332f-4691-a27a-fd8334938a62",
+    "displayName": "Calvin Test USA",
+    "modifiedDateTime": "2025-09-05T22:12:01.4444669Z",
+    "createdDateTime": "2025-09-05T22:12:01.4444669Z",
+    "deletedDateTime": null,
+    "countriesAndRegions": [
+        "US"
+    ],
+    "includeUnknownCountriesAndRegions": false,
+    "countryLookupMethod": "clientIpAddress"
 }
 ```
 
