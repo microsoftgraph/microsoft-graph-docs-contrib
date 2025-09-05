@@ -13,6 +13,15 @@ ms.custom: sfi-ropc-nochange
 
 Namespace: microsoft.graph
 
+### readingCoachStoryType values
+
+|Member|
+|:---|
+|aiGenerated|
+|readWorks|
+|userProvided|
+|unknownFutureValue|
+
 ### responseFeedbackType values
 
 | Member |

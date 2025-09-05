@@ -290,6 +290,12 @@ items:
     href: ../../resources/reflectcheckinresponse.md
   - name: List
     href: ../../api/reportsroot-list-reflectcheckinresponses.md
+- name: Speaker assignment submission
+  items:
+  - name: Speaker assignment submission
+    href: ../../resources/speakerassignmentsubmission.md
+  - name: List
+    href: ../../api/reportsroot-list-speakerassignmentsubmissions.md
 - name: Complex types
   items:
   - name: Challenging word

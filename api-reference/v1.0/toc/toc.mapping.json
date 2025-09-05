@@ -521,7 +521,9 @@
         "educationSubmissionResource",
         "readingAssignmentSubmission",
         "readingCoachPassage",
-        "reflectCheckInResponse"
+        "reflectCheckInResponse",
+        "relatedContact",
+        "speakerAssignmentSubmission"
       ],
       "complexTypes": [
         "challengingWord",
