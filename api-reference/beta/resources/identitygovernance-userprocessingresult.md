@@ -26,6 +26,9 @@ Inherits from [entity](../resources/entity.md).
 |[Get user processing result](../api/identitygovernance-userprocessingresult-get.md)|[microsoft.graph.identityGovernance.userProcessingResult](../resources/identitygovernance-userprocessingresult.md)|Get a user processing result.|
 |[Get summary](../api/identitygovernance-userprocessingresult-summary.md)|[microsoft.graph.identityGovernance.userSummary](../resources/identitygovernance-usersummary.md)|Provides a summary of user processing results for a specified time period.|
 |[List task processing results](../api/identitygovernance-userprocessingresult-list-taskprocessingresults.md)|[microsoft.graph.identityGovernance.taskReport](../resources/identitygovernance-taskprocessingresult.md) collection|Get a list of the [taskProcessingResult](../resources/identitygovernance-taskprocessingresult.md) objects and their properties.|
+|[List reprocessedRuns](../api/identitygovernance-run-list-reprocessedruns.md)|[microsoft.graph.identityGovernance.run](../resources/identitygovernance-run.md) collection|Get a list of the workflow's reprocessed runs.|
+|[Add run](../api/identitygovernance-run-post-reprocessedruns.md)|[microsoft.graph.identityGovernance.run](../resources/identitygovernance-run.md)|Add reprocessedRuns by posting to the reprocessedRuns collection.|
+|[Remove reprocessedRuns](../api/identitygovernance-run-delete-reprocessedruns.md)|None|Delete a reprocessed run object.|
 
 ## Properties
 
@@ -39,13 +42,14 @@ Inherits from [entity](../resources/entity.md).
 |startedDateTime|DateTimeOffset|The date time that the workflow execution started. Value is `null` if the workflow execution has not started.<br><br>Supports `$filter`(`lt`, `le`, `gt`, `ge`, `eq`, `ne`) and `$orderby`.|
 |totalTasksCount|Int32|The total number of tasks that in the workflow execution.|
 |totalUnprocessedTasksCount|Int32|The total number of unprocessed tasks for the workflow.|
-|workflowExecutionType|microsoft.graph.identityGovernance.workflowExecutionType|Describes the execution type of the workflow. The possible values are: `scheduled`, `onDemand`, `unknownFutureValue`.<br><br>Supports `$filter`(`lt`, `le`, `gt`, `ge`, `eq`, `ne`) and `$orderby`.|
+|workflowExecutionType|microsoft.graph.identityGovernance.workflowExecutionType|Describes the execution type of the workflow. The possible values are: `scheduled`, `onDemand`, `unknownFutureValue`, `activatedWithScope`.<br><br>Supports `$filter`(`lt`, `le`, `gt`, `ge`, `eq`, `ne`) and `$orderby`.|
 |workflowVersion|Int32|The version of the workflow that was executed.|
 
 ## Relationships
 
 |Relationship|Type|Description|
 |:---|:---|:---|
+|reprocessedRuns|[microsoft.graph.identityGovernance.run](../resources/identitygovernance-run.md) collection|The related reprocessed workflow run.|
 |subject|[user](../resources/user.md)|The unique identifier of the AAD user targeted for the `taskProcessingResult`.<br><br>Supports `$filter`(`eq`, `ne`) and `$expand`.|
 |taskProcessingResults|[microsoft.graph.identityGovernance.taskProcessingResult](../resources/identitygovernance-taskprocessingresult.md) collection|The associated individual task execution.|
 
