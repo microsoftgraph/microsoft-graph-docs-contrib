@@ -1,5 +1,5 @@
 ---
-title: "Update customBlockPage settings"
+title: "Update customBlockPage"
 description: "Update the custom block page settings for web requests blocked by Global Secure Access (GSA)."
 author: fgomulka
 ms.date: 09/04/2025
@@ -8,7 +8,7 @@ ms.subservice: entra-global-secure-access
 doc_type: apiPageType
 ---
 
-# Update customBlockPage settings
+# Update customBlockPage
 
 Namespace: microsoft.graph.networkaccess
 
@@ -53,13 +53,13 @@ PATCH /networkAccess/settings/customBlockPage
 |Property|Type|Description|
 |:---|:---|:---|
 |state|microsoft.graph.networkaccess.status|The current status of the custom block page. The possible values are: `enabled`, `disabled`, `unknownFutureValue`. Required.|
-|configuration|[microsoft.graph.networkaccess.blockPageConfigurationBase](../resources/networkaccess-blockpageconfigurationbase.md)|The current configuration of the customized message. The body can be input in limited markdown language, supporting links via the format: [link](https://example.com). Optional.|
+|configuration|[microsoft.graph.networkaccess.blockPageConfigurationBase](../resources/networkaccess-blockpageconfigurationbase.md)|The current configuration of the customized message. The body can be input in limited markdown language, supporting links via the format: `[link](https://example.com)`. Optional.|
 
 
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [microsoft.graph.networkaccess.customBlockPage](../resources/networkaccess-customblockpage.md) object in the response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
@@ -87,8 +87,6 @@ Content-Type: application/json
 
 ### Response
 
-The following example shows the response.
->
 <!-- {
   "blockType": "response",
   "truncated": true

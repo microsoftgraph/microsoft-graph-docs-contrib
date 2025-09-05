@@ -23,15 +23,15 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get](../api/networkaccess-customblockpage-get.md)|[microsoft.graph.networkaccess.customBlockPage](../resources/networkaccess-customblockpage.md)|Read the properties and relationships of [microsoft.graph.networkaccess.customBlockPage](../resources/networkaccess-customblockpage.md) object.|
-|[Update](../api/networkaccess-customblockpage-update.md)|[microsoft.graph.networkaccess.customBlockPage](../resources/networkaccess-customblockpage.md)|Update the properties of a customBlockPage object.|
+|[Get](../api/networkaccess-customblockpage-get.md)|[microsoft.graph.networkaccess.customBlockPage](../resources/networkaccess-customblockpage.md)|Get [microsoft.graph.networkaccess.customBlockPage](../resources/networkaccess-customblockpage.md) object.|
+|[Update](../api/networkaccess-customblockpage-update.md)|[microsoft.graph.networkaccess.customBlockPage](../resources/networkaccess-customblockpage.md)|Update [microsoft.graph.networkaccess.customBlockPage](../resources/networkaccess-customblockpage.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Identifier. Inherited from [microsoft.graph.entity](../resources/entity.md). Inherits from [entity](../resources/entity.md)|
+|id|String|Identifier. Inherited from [microsoft.graph.entity](../resources/entity.md).|
 |state|microsoft.graph.networkaccess.status|When state is enabled, the custom block page is shown to end users who are blocked from accessing a resource on the web. The possible values are: `enabled`, `disabled`, `unknownFutureValue`.|
-|configuration|[microsoft.graph.networkaccess.blockPageConfigurationBase](../resources/networkaccess-blockpageconfigurationbase.md)|The current configuration of the customized message. The body can be input in limited markdown language, supporting links via the format: [link](https://example.com).|
+|configuration|[microsoft.graph.networkaccess.blockPageConfigurationBase](../resources/networkaccess-blockpageconfigurationbase.md)|The current configuration of the customized message. The body can be input in limited markdown language, supporting links via the format: `[link](https://example.com)`.|
 
 ## Relationships
 None.

@@ -14,12 +14,11 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Configuration for the block page for Global Secure Access policies. This is an abstract type.
+Configuration for the block page for Global Secure Access policies. This is an abstract type from which the [markdownBlockMessageConfiguration](../resources/networkaccess-blockpageconfigurationbase.md) resource type inherits.
 
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+None.
 
 ## Relationships
 None.
