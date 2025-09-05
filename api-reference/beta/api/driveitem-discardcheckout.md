@@ -39,14 +39,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ## HTTP request
 
 ``` http
-POST /drive/root/discardCheckout
-POST /drives/{drivesId}/root/discardCheckout
-POST /shares/{sharesId}/root/discardCheckout
 POST /drive/items/{driveItemId}/discardCheckout
-POST /shares/{sharesId}/driveItem/discardCheckout
-POST /drive/bundles/{driveItemId}/discardCheckout
-POST /drive/special/{driveItemId}/discardCheckout
-POST /drive/following/{driveItemId}/discardCheckout
 ```
 
 ## Request headers
