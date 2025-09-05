@@ -20,8 +20,8 @@ The **sharePointMigrationContainerInfo** type contains the Azure Blob Container 
 |Property|Type|Description|
 |:---|:---|:---|
 |dataContainerUri|String|A valid URL with SAS token for accessing Azure Blob Storage Container, which contains file content. Read-only. Only on OneDrive and SharePoint.|
-|encryptionKey|String|A valid URL with SAS token for accessing Azure Blob Storage Container, which contains file metadata. Read-only. Only on OneDrive and SharePoint.|
-|metadataContainerUri|String|Provides AES-256-CBC encryption key if files stored in Azure Blob Containers are encrypted. The key is base64 encoded. Read-only. Only on OneDrive and SharePoint.|
+|metadataContainerUri|String|A valid URL with SAS token for accessing Azure Blob Storage Container, which contains file metadata. Read-only. Only on OneDrive and SharePoint.|
+|encryptionKey|String|Provides AES-256-CBC encryption key if files stored in Azure Blob Containers are encrypted. The key is base64 encoded. Read-only. Only on OneDrive and SharePoint.|
 
 ## Relationships
 None.

@@ -82,6 +82,6 @@ Content-Type: application/json
   "@odata.type": "#microsoft.graph.migrationContainerInfo",
   "dataContainerUri": "https://spoxxx.blob.core.windows.net/data?sp=rw&sig=",
   "metadataContainerUri": "https://spoxxx.blob.core.windows.net/metadata?sp=rw&sig=",
-  "encryptionKey": "base64 encoded key for AES-256-CBC encryption"
+  "encryptionKey": "r6OV4MtzfG+RGhcHhNNGidShLBgWh2wHvUf2p6E1MCU="
 }
 ```
