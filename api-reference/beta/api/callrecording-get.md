@@ -40,7 +40,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 > [!NOTE]
 >
-> * In delegated permission scenarios, [getting callRecording content](#example-3-get-callRecording-content-for-an-online-meeting)  is supported only for the meeting organizer. Meeting participants don't have permission to download meeting recordings. For more information, see [permissions or role-based access](/microsoftteams/tmr-meeting-recording-change).  
+> * In delegated permission scenarios, [getting callRecording content](#example-3-get-callrecording-content-for-an-online-meeting)  is supported only for the meeting organizer. Meeting participants don't have permission to download meeting recordings. For more information, see [permissions or role-based access](/microsoftteams/tmr-meeting-recording-change).  
 > * For online meetings, tenant admins can unblock meeting participants to download meeting recordings. For ad hoc calls, tenant admins can grant on behalf of permissions for user making the call. For more information, see [block the download of Teams meeting recording files](/MicrosoftTeams/block-download-meeting-recording).
 > * The application permission `OnlineMeetingRecording.Read.Chat` uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent). This permission applies only to scheduled private chat meetings, not to channel meetings.
 
@@ -53,9 +53,7 @@ To use application permissions for this API, tenant administrators must create a
 
 ## HTTP request
 
-### For an online meeting
-
-Get a single recording:
+To get a single recording for an online meeting
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -71,9 +69,7 @@ GET /me/onlineMeetings/{meetingId}/recordings/{recordingId}/content
 GET /users/{userId}/onlineMeetings/{meetingId}/recordings/{recordingId}/content
 ```
 
-### For an ad hoc call
-
-Get a single recording:
+To get a single recording for an ad hoc call
 
 <!-- { "blockType": "ignored" } -->
 ```http
