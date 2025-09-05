@@ -133,7 +133,10 @@ Content-Type: application/json
         "itemMajorVersionLimit": 50,
         "maxStoragePerContainerInBytes": 104857600,
         "isSharingRestricted": false,
-        "consumingTenantOverridables": ""
+        "consumingTenantOverridables": "",
+        "agent": {
+          "chatEmbedAllowedHosts": ["https://contoso.com", "https://localhost:5000"]
+        }
       }
     },
     {

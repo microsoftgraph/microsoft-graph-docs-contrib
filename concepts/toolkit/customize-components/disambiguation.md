@@ -9,6 +9,9 @@ ms.topic: article
 
 # Microsoft Graph Toolkit component disambiguation
 
+> [!CAUTION]
+> The Microsoft Graph Toolkit is deprecated. The retirement period begins September 1, 2025, with full retirement planned for August 28, 2026. Developers should migrate to using the Microsoft Graph SDKs or other supported Microsoft Graph tools for building web experiences. For more information, see the [deprecation announcement](https://devblogs.microsoft.com/microsoft365dev/microsoft-graph-toolkit-retirement/).
+
 The Microsoft Graph Toolkit is built using [web components](https://developer.mozilla.org/docs/Web/Web_Components). Web components use their tag name as a unique key when registering within a browser. Any attempt to register a component using a previously registered tag name results in an error when calling `CustomElementRegistry.define()`. In scenarios where multiple custom applications can be loaded into a single page, this creates issues for Microsoft Graph Toolkit, most notably when developing solutions using SharePoint Framework.
 
 The [`mgt-spfx`](https://github.com/microsoftgraph/microsoft-graph-toolkit/tree/main/packages/mgt-spfx) package helps to mitigate this challenge. By using `mgt-spfx`, you can centralize the registration of Microsoft Graph Toolkit web components across all SPFx solutions deployed on the tenant. By reusing toolkit components from a central location, web parts from different solutions can be loaded into a single page without throwing errors. When you use `mgt-spfx`, all Microsoft Graph Toolkit-based web parts in a SharePoint tenant use the same version of the toolkit.

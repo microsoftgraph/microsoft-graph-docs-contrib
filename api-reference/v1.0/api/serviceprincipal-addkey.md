@@ -2,7 +2,7 @@
 title: "servicePrincipal: addKey"
 description: "Add a key credential to a servicePrincipal."
 ms.localizationpriority: medium
-author: "sureshja"
+author: "Jackson-Woods"
 ms.subservice: "entra-applications"
 doc_type: "apiPageType"
 ms.date: 04/04/2024
