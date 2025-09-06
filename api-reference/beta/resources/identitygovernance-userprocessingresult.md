@@ -27,7 +27,6 @@ Inherits from [entity](../resources/entity.md).
 |[Get summary](../api/identitygovernance-userprocessingresult-summary.md)|[microsoft.graph.identityGovernance.userSummary](../resources/identitygovernance-usersummary.md)|Provides a summary of user processing results for a specified time period.|
 |[List task processing results](../api/identitygovernance-userprocessingresult-list-taskprocessingresults.md)|[microsoft.graph.identityGovernance.taskReport](../resources/identitygovernance-taskprocessingresult.md) collection|Get a list of the [taskProcessingResult](../resources/identitygovernance-taskprocessingresult.md) objects and their properties.|
 |[List reprocessedRuns](../api/identitygovernance-run-list-reprocessedruns.md)|[microsoft.graph.identityGovernance.run](../resources/identitygovernance-run.md) collection|Get a list of the workflow's reprocessed runs.|
-|[Add run](../api/identitygovernance-run-post-reprocessedruns.md)|[microsoft.graph.identityGovernance.run](../resources/identitygovernance-run.md)|Add reprocessedRuns by posting to the reprocessedRuns collection.|
 |[Remove reprocessedRuns](../api/identitygovernance-run-delete-reprocessedruns.md)|None|Delete a reprocessed run object.|
 
 ## Properties
