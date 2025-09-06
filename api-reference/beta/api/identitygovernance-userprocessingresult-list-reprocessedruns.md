@@ -87,6 +87,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://canary.graph.microsoft.com/testprodbetalcwlocalschedel/$metadata#identityGovernance/lifecycleWorkflows/workflows('78799042-265a-4e8f-8d61-94a2dcd2d395')/userProcessingResults",
   "value": [
    {
    "id": "78799042-265a-4e8f-8d61-94a2dcd2d395_638927104150522341",
