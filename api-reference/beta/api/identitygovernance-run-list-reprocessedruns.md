@@ -14,7 +14,7 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the run objects and their properties for a lifecycle workflow.
+Get a list of the reprocessed run objects and their properties for a lifecycle workflow.
 
 ## Permissions
 

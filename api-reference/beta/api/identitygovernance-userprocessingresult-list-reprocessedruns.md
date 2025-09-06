@@ -8,13 +8,13 @@ ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 
-# List Userproscessingresult reprocessedRuns
+# List UserProcessingResult reprocessedRuns
 
 Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get user processing results of a workflow reprocessed run object.
+List user processing results of a workflow reprocessed run object.
 
 ## Permissions
 
