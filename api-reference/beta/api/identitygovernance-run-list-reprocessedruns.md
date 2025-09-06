@@ -66,7 +66,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/deletedItems/workflows/{workflowId}/executionScope/{userProcessingResultId}/reprocessedRuns/{runId}/reprocessedRuns
+GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/deletedItems/workflows/78799042-265a-4e8f-8d61-94a2dcd2d395/executionScope/dad77a47-6eda-4de7-bc37-fe8eb5aaf17d/reprocessedRuns/59e537bd-f960-4bc3-83ad-3de051f4d7f9/reprocessedRuns
 ```
 
 
@@ -85,27 +85,42 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://canary.graph.microsoft.com/testprodbetalcwlocalschedel/$metadata#identityGovernance/lifecycleWorkflows/workflows('78799042-265a-4e8f-8d61-94a2dcd2d395')/runs",
   "value": [
     {
-      "@odata.type": "#microsoft.graph.identityGovernance.run",
-      "id": "9947396f-3691-e265-b1e5-2ea86c0c89d6",
-      "completedDateTime": "String (timestamp)",
-      "failedTasksCount": "Integer",
-      "failedUsersCount": "Integer",
-      "lastUpdatedDateTime": "String (timestamp)",
-      "processingStatus": "String",
-      "startedDateTime": "String (timestamp)",
-      "scheduledDateTime": "String (timestamp)",
-      "successfulUsersCount": "Integer",
-      "totalTasksCount": "Integer",
-      "totalUsersCount": "Integer",
-      "totalUnprocessedTasksCount": "Integer",
-      "workflowExecutionType": "String",
-      "activatedOnScope": {
-        "@odata.type": "microsoft.graph.identityGovernance.activationScope"
-      }
+   "id": "78799042-265a-4e8f-8d61-94a2dcd2d395_638927021459357126",
+   "completedDateTime": "2025-09-05T20:50:16.3660921Z",
+   "failedTasksCount": 1,
+   "failedUsersCount": 0,
+   "lastUpdatedDateTime": "2025-09-05T20:54:48.2113264Z",
+   "processingStatus": "completedWithErrors",
+   "scheduledDateTime": "2025-09-05T20:49:05.9357126Z",
+   "startedDateTime": "2025-09-05T20:49:38.1264771Z",
+   "successfulUsersCount": 0,
+   "totalTasksCount": 1,
+   "totalUsersCount": 1,
+   "totalUnprocessedTasksCount": 0,
+   "workflowExecutionType": "onDemand",
+   "activatedOnScope": null,
+   "reprocessedRuns": [
+    {
+     "id": "78799042-265a-4e8f-8d61-94a2dcd2d395_638927099502974630",
+     "completedDateTime": null,
+     "failedTasksCount": 0,
+     "failedUsersCount": 0,
+     "lastUpdatedDateTime": "2025-09-05T22:59:10.341998Z",
+     "processingStatus": "queued",
+     "scheduledDateTime": "2025-09-05T22:59:10.297463Z",
+     "startedDateTime": null,
+     "successfulUsersCount": 0,
+     "totalTasksCount": 0,
+     "totalUsersCount": 0,
+     "totalUnprocessedTasksCount": 0,
+     "workflowExecutionType": "activatedWithScope",
+     "activatedOnScope": null
     }
-  ]
+   ]
+  }
+ ]
 }
 ```
-
