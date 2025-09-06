@@ -8,7 +8,7 @@ ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 
-# List Userproscessingresult reprocessedRuns
+# List UserProcessingResult reprocessedRuns
 
 Namespace: microsoft.graph.identityGovernance
 
