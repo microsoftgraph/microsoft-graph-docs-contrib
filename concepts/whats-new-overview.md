@@ -43,7 +43,7 @@ Added a note to the **artifactCount** property of the [granularMailboxRestoreArt
 
 Added a note to the **artifactCount** property of the [granularMailboxRestoreArtifact](/graph/api/resources/granularmailboxrestoreartifact?view=graph-rest-beta&preserve-view=true) about its upcoming deprecation.
 
-### Calendars
+### Calendars | Places
 
 The new map APIs in Places enable applications with appropriate read or write permissions to interact with map feature objects. For more information, see [Working with the Places API in Microsoft Graph](/graph/api/resources/places-api-overview?view=graph-rest-beta#map-feature-types).
 
