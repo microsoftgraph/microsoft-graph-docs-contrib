@@ -4487,10 +4487,10 @@
         {
           "Id": "2d8e08bd-cf2f-4c4d-9397-9a39d31e279c",
           "ApiChange": "Method",
-          "ChangedApiName": "POST, GET, DELETE",
+          "ChangedApiName": "discardCheckout",
           "ChangeType": "Addition",
           "Description": "Updated the API paths for the [driveItem: discardCheckout](https://learn.microsoft.com/en-us/graph/api/driveitem-discardcheckout?view=graph-rest-beta) API from `/drive/root/discardCheckout`, `/drives/{drivesId}/root/discardCheckout`, `/shares/{sharesId}/root/discardCheckout`, `/drive/items/{driveItemId}/discardCheckout`, `/shares/{sharesId}/driveItem/discardCheckout`, `/drive/bundles/{driveItemId}/discardCheckout`, `/drive/special/{driveItemId}/discardCheckout`, and `/drive/following/{driveItemId}/discardCheckout` to  `/drives/{driveId}/items/{itemId}/discardCheckout`, `/groups/{groupId}/drive/items/{itemId}/discardCheckout`, `/me/drive/items/{item-id}/discardCheckout`, `/sites/{siteId}/drive/items/{itemId}/discardCheckout`, and `/users/{userId}/drive/items/{itemId}/discardCheckout`.",
-          "Target": "accessPackageAssignmentRequest"
+          "Target": "driveItem"
         }
       ],
       "Id": "2d8e08bd-cf2f-4c4d-9397-9a39d31e279c",
@@ -4505,10 +4505,10 @@
         {
           "Id": "1d4b2265-2518-4bc8-9784-fe9aa2e2017e",
           "ApiChange": "Method",
-          "ChangedApiName": "POST, GET, DELETE",
+          "ChangedApiName": "discardCheckout",
           "ChangeType": "Addition",
           "Description": "Updated the API paths for the [driveItem: discardCheckout](https://learn.microsoft.com/en-us/graph/api/driveitem-discardcheckout?view=graph-rest-1.0) API from `/drive/root/discardCheckout`, `/drives/{drivesId}/root/discardCheckout`, `/shares/{sharesId}/root/discardCheckout`, `/drive/items/{driveItemId}/discardCheckout`, `/shares/{sharesId}/driveItem/discardCheckout`, `/drive/bundles/{driveItemId}/discardCheckout`, `/drive/special/{driveItemId}/discardCheckout`, and `/drive/following/{driveItemId}/discardCheckout` to  `/drives/{driveId}/items/{itemId}/discardCheckout`, `/groups/{groupId}/drive/items/{itemId}/discardCheckout`, `/me/drive/items/{item-id}/discardCheckout`, `/sites/{siteId}/drive/items/{itemId}/discardCheckout`, and `/users/{userId}/drive/items/{itemId}/discardCheckout`.",
-          "Target": "accessPackageAssignmentRequest"
+          "Target": "driveItem"
         }
       ],
       "Id": "1d4b2265-2518-4bc8-9784-fe9aa2e2017e",
