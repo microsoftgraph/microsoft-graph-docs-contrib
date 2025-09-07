@@ -17,6 +17,17 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 > [!IMPORTANT]
 > Features in _preview_ status are subject to change without notice, and might not be promoted to generally available (GA) status. Don't use preview features in production apps.
 
+## September 2025: New in preview only
+
+### Files
+
+Defined the following endpoints as supported for the [driveItem: discardCheckout](/graph/api/driveitem-discardcheckout) API:
+- `/drives/{driveId}/items/{itemId}/discardCheckout`
+- `/groups/{groupId}/drive/items/{itemId}/discardCheckout`
+- `/me/drive/items/{item-id}/discardCheckout`
+- `/sites/{siteId}/drive/items/{itemId}/discardCheckout`
+- `/users/{userId}/drive/items/{itemId}/discardCheckout`
+
 ## June 2025: New and generally available
 
 ### Device and app management | Cloud PC
