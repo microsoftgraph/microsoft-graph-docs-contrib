@@ -21,20 +21,20 @@ Approve or deny an [approvalStage](../resources/approvalstage.md) object in an [
 The following tables show the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 ### For entitlement management
-<!-- { "blockType": "permissions", "name": "approvalstage_get", "requestUrls": ["PATCH /identityGovernance/entitlementManagement/accessPackageAssignmentApprovals/{accessPackageAssignmentRequestId}/stages/{approvalStageId}"] } -->
-|Permission type|Least privileged permissions|Higher privileged permissions|
-|:---|:---|:---|
-|Delegated (work or school account)|EntitlementManagement.ReadWrite.All|Not available.|
-|Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|Not supported.|Not supported.|
+<!-- { 
+  "blockType": "permissions", 
+  "name": "approvalstage_update", 
+  "requestUrls": ["PATCH /identityGovernance/entitlementManagement/accessPackageAssignmentApprovals/{accessPackageAssignmentRequestId}/stages/{approvalStageId}"]
+ } -->
+[!INCLUDE [permissions-table](../includes/permissions/approvalstage-update-permissions.md)]
 
 ### For PIM for Groups
-<!-- { "blockType": "permissions", "name": "approvalstage_get_1", "requestUrls": ["PATCH /identityGovernance/privilegedAccess/group/assignmentApprovals/{privilegedaccessgroupassignmentschedulerequestId}/stages/{approvalStageId}"] } -->
-|Permission type|Least privileged permissions|Higher privileged permissions|
-|:---|:---|:---|
-|Delegated (work or school account)|PrivilegedAssignmentSchedule.ReadWrite.AzureADGroup|Not available.|
-|Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|Not supported.|Not supported.|
+<!-- { 
+  "blockType": "permissions", 
+  "name": "approvalstage_update_2", 
+  "requestUrls": ["PATCH /identityGovernance/privilegedAccess/group/assignmentApprovals/{privilegedaccessgroupassignmentschedulerequestId}/stages/{approvalStageId}"]
+ } -->
+[!INCLUDE [permissions-table](../includes/permissions/approvalstage-update-2-permissions.md)]
 
 ## HTTP request
 

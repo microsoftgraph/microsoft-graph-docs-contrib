@@ -286,7 +286,7 @@ items:
       href: ../../api/place-update.md
     - name: Delete
       href: ../../api/place-delete.md
-    - name: descendants
+    - name: Descendants
       href: ../../api/place-descendants.md
   - name: Building
     items:

@@ -8,7 +8,7 @@ ms.topic: concept-article
 ms.localizationpriority: high
 ms.subservice: entra-applications
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.date: 08/23/2024
+ms.date: 08/29/2025
 #customer intent: As a developer building apps that call Microsoft Entra ID APIs on Microsoft Graph, I want to understand the advanced query capabilities, so that my app can efficiently access and retrieve specific data, and avoid errors.
 ---
 
@@ -16,7 +16,7 @@ ms.date: 08/23/2024
 
 Microsoft Graph supports advanced query capabilities on various Microsoft Entra ID objects, also called *directory objects*, to help you efficiently access data. Examples include the addition of **not** (`not`), **not equals** (`ne`), and **ends with** (`endsWith`) operators on the `$filter` query parameter.
 
-The Microsoft Graph query engine uses an index store to fulfill query requests. To add support for additional query capabilities on some properties, those properties are indexed in a separate store. This separate indexing improves query performance. However, these advanced query capabilities aren't available by default, the requestor must set the **ConsistencyLevel** header to `eventual` *and*, except for `$search`, use the `$count` query parameter. The **ConsistencyLevel** header and `$count` are referred to as *advanced query parameters*.
+The Microsoft Graph query engine uses an index store to fulfill query requests. To add support for extra query capabilities on some properties, those properties are indexed in a separate store. This separate indexing improves query performance. However, these advanced query capabilities aren't available by default. The requestor must set the **ConsistencyLevel** header to `eventual` *and*, except for `$search`, use the `$count` query parameter. The **ConsistencyLevel** header and `$count` are referred to as *advanced query parameters*.
 
 For example, to retrieve only inactive user accounts, you can run either of these queries that use the `$filter` query parameter:
 
@@ -124,7 +124,7 @@ Advanced query capabilities are supported only on directory objects and their re
 
 ## Query scenarios that require advanced query capabilities
 
-The following table lists query scenarios on directory objects that are supported only in advanced queries:
+The following table lists query scenarios on directory objects that advanced queries support:
 
 | Description                                                              | Example                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 | :----------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -143,9 +143,9 @@ The following table lists query scenarios on directory objects that are supporte
 
 > [!NOTE]
 >
-> + Using `$filter` and `$orderby` together is supported only with advanced queries.
-> + `$expand` is not currently supported with advanced queries.
-> + The advanced query capabilities are currently not available for Azure AD B2C tenants.
+> + You can use `$filter` and `$orderby` together only with advanced queries.
+> + Advanced queries don't currently support `$expand`.
+> + Azure AD B2C tenants don't currently support advanced query capabilities.
 > + To use advanced query capabilities in [batch requests](json-batching.md), specify the **ConsistencyLevel** header in the JSON body of the `POST` request.
 
 ## Support for filter by properties of Microsoft Entra ID (directory) objects
@@ -160,7 +160,7 @@ The following table lists query scenarios on directory objects that are supporte
 
 The following section provides examples of common error scenarios when you don't use advanced query parameters where required.
 
-Counting directory objects is only supported using the advanced queries parameters. If the `ConsistencyLevel=eventual` header isn't specified, the request returns an error when the `$count` URL segment (`/$count`) is used or silently ignores the `$count` query parameter (`?$count=true`) if it's used.
+You can count directory objects only by using the advanced queries parameters. If you don't specify the `ConsistencyLevel=eventual` header, the request returns an error when you use the `$count` URL segment (`/$count`) or silently ignores the `$count` query parameter (`?$count=true`) if you use it.
 
 
 # [HTTP](#tab/http)
@@ -221,7 +221,7 @@ GET https://graph.microsoft.com/v1.0/users/$count
 }
 ```
 
-For directory objects, `$search` works only in advanced queries. If the **ConsistencyLevel** header isn't specified, the request returns an error.
+For directory objects, `$search` works only in advanced queries. If you don't specify the **ConsistencyLevel** header, the request returns an error.
 
 
 # [HTTP](#tab/http)
@@ -277,7 +277,7 @@ GET https://graph.microsoft.com/v1.0/applications?$search="displayName:Browser"
 }
 ```
 
-If a property or query parameter in the URL is supported only in advanced queries but either the **ConsistencyLevel** header or the `$count=true` query string is missing, the request returns an error.
+If a property or query parameter in the URL supports only advanced queries but either the **ConsistencyLevel** header or the `$count=true` query string is missing, the request returns an error.
 
 
 # [HTTP](#tab/http)
@@ -390,7 +390,7 @@ ConsistencyLevel: eventual
 }
 ```
 
-However, a request that includes query parameters might fail silently. For example, for unsupported query parameters and for unsupported combinations of query parameters. In these cases, examine the data returned by the request to determine whether the query parameters you specified had the desired effect. For example, in the following example, the `@odata.count` parameter is missing even if the query is successful.
+However, a request that includes query parameters might fail silently. For example, the request might fail for unsupported query parameters and for unsupported combinations of query parameters. In these cases, examine the data returned by the request to determine whether the query parameters you specified had the desired effect. For example, in the following example, the `@odata.count` parameter is missing even if the query is successful.
 
 
 # [HTTP](#tab/http)

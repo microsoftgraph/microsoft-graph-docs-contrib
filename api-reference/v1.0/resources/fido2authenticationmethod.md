@@ -39,6 +39,8 @@ This is a derived type that inherits from the [authenticationMethod](authenticat
 ## Relationships
 None.
 
+## JSON representation
+
 The following JSON representation shows the resource type.
 
 <!-- {

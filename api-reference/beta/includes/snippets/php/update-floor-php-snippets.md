@@ -6,18 +6,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\Beta\GraphServiceClient;
-use Microsoft\Graph\Beta\Generated\Models\Place;
+use Microsoft\Graph\Beta\Generated\Models\Floor;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
-$requestBody = new Place();
+$requestBody = new Floor();
 $requestBody->setOdataType('microsoft.graph.floor');
-$additionalData = [
-	'isWheelChairAccessible' => true,
-	'sortOrder' => 2,
-];
-$requestBody->setAdditionalData($additionalData);
+$requestBody->setIsWheelChairAccessible(true);
+$requestBody->setSortOrder(2);
 
 $result = $graphServiceClient->places()->byPlaceId('place-id')->patch($requestBody)->wait();
 

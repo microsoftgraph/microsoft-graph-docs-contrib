@@ -2671,6 +2671,14 @@ items:
         href: ../../api/crosstenantaccesspolicyconfigurationpartner-update.md
       - name: Delete
         href: ../../api/crosstenantaccesspolicyconfigurationpartner-delete.md
+      - name: List deleted policies
+        href: ../../api/policydeletableitem-list.md
+      - name: Get deleted policy
+        href: ../../api/policydeletableitem-get.md
+      - name: Permanently delete deleted policy
+        href: ../../api/policydeletableitem-delete.md
+      - name: Restore deleted policy
+        href: ../../api/crosstenantaccesspolicyconfigurationpartner-restore.md
     - name: Partner user sync settings
       items:
       - name: Partner user sync settings
@@ -2683,6 +2691,14 @@ items:
         href: ../../api/crosstenantidentitysyncpolicypartner-update.md
       - name: Delete
         href: ../../api/crosstenantidentitysyncpolicypartner-delete.md
+      - name: List deleted policies
+        href: ../../api/policydeletableitem-list.md
+      - name: Get deleted policy
+        href: ../../api/policydeletableitem-get.md
+      - name: Permanently delete deleted policy
+        href: ../../api/policydeletableitem-delete.md
+      - name: Restore deleted policy
+        href: ../../api/crosstenantidentitysyncpolicypartner-restore.md
   - name: Cross-tenant shared user profiles
     items:
     - name: Inbound shared user profile
@@ -4274,6 +4290,8 @@ items:
         href: ../../api/networkaccess-policyrule-get.md
       - name: Update
         href: ../../api/networkaccess-policyrule-update.md
+      - name: Get web category by URL
+        href: ../../api/networkaccess-connectivity-getwebcategorybyurl.md
     - name: Forwarding rule
       href: ../../resources/networkaccess-forwardingrule.md
     - name: M 365 forwarding rule
@@ -4336,6 +4354,8 @@ items:
         href: ../../api/networkaccess-filteringrule-update.md
       - name: Delete
         href: ../../api/networkaccess-filteringrule-delete.md
+      - name: Get web category by URL
+        href: ../../api/networkaccess-connectivity-getwebcategorybyurl.md
     - name: FQDN filtering rule
       href: ../../resources/networkaccess-fqdnfilteringrule.md
     - name: Web category filtering rule

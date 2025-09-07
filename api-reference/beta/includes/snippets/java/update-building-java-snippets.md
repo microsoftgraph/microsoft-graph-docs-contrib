@@ -8,13 +8,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-Place place = new Place();
+Building place = new Building();
 place.setOdataType("microsoft.graph.building");
-HashMap<String, Object> additionalData = new HashMap<String, Object>();
 LinkedList<String> tags = new LinkedList<String>();
 tags.add("most popular building");
-additionalData.put("tags", tags);
-place.setAdditionalData(additionalData);
+place.setTags(tags);
 Place result = graphClient.places().byPlaceId("{place-id}").patch(place);
 
 

@@ -21,22 +21,22 @@ Retrieve the properties of an [approvalStage](../resources/approvalstage.md) obj
 The following tables show the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 ### Permissions required for calling this API for entitlement management
-<!-- { "blockType": "permissions", "name": "approvalstage_get", "requestUrls": ["GET /identityGovernance/entitlementManagement/accessPackageAssignmentApprovals/{accessPackageAssignmentRequestId}/stages/{approvalStageId}"] } -->
-|Permission type|Least privileged permissions|Higher privileged permissions|
-|:---|:---|:---|
-|Delegated (work or school account)|EntitlementManagement.Read.All|EntitlementManagement.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|Not supported.|Not supported.|
+<!-- { 
+  "blockType": "permissions", 
+  "name": "approvalstage_get", 
+  "requestUrls": ["GET /identityGovernance/entitlementManagement/accessPackageAssignmentApprovals/{accessPackageAssignmentRequestId}/stages/{approvalStageId}"]
+ } -->
+[!INCLUDE [permissions-table](../includes/permissions/approvalstage-get-permissions.md)]
 
 [!INCLUDE [rbac-entitlement-catalog-reader](../includes/rbac-for-apis/rbac-entitlement-management-catalog-reader-apis-read.md)]
 
 ### Permissions required for calling this API for PIM for Groups
-<!-- { "blockType": "permissions", "name": "approvalstage_get_1", "requestUrls": ["GET /identityGovernance/privilegedAccess/group/assignmentApprovals/{privilegedaccessgroupassignmentschedulerequestId}/stages/{approvalStageId}"] } -->
-|Permission type|Least privileged permissions|Higher privileged permissions|
-|:---|:---|:---|
-|Delegated (work or school account)|PrivilegedAssignmentSchedule.Read.AzureADGroup|PrivilegedAssignmentSchedule.ReadWrite.AzureADGroup|
-|Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|Not supported.|Not supported.|
+<!-- { 
+  "blockType": "permissions", 
+  "name": "approvalstage_get_2", 
+  "requestUrls": ["GET /identityGovernance/privilegedAccess/group/assignmentApprovals/{privilegedaccessgroupassignmentschedulerequestId}/stages/{approvalStageId}"]
+ } -->
+[!INCLUDE [permissions-table](../includes/permissions/approvalstage-get-2-permissions.md)]
 
 ## HTTP request
 

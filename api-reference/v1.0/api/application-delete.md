@@ -1,7 +1,7 @@
 ---
 title: "Delete application"
 description: "Delete an application object."
-author: "sureshja"
+author: "Jackson-Woods"
 ms.localizationpriority: medium
 ms.subservice: "entra-applications"
 doc_type: apiPageType

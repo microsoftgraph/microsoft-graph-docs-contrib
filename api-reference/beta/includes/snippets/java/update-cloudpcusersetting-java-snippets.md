@@ -29,6 +29,7 @@ crossRegionDisasterRecoverySetting.setDisasterRecoveryNetworkSetting(disasterRec
 crossRegionDisasterRecoverySetting.setDisasterRecoveryType(CloudPcDisasterRecoveryType.Premium);
 crossRegionDisasterRecoverySetting.setUserInitiatedDisasterRecoveryAllowed(true);
 cloudPcUserSetting.setCrossRegionDisasterRecoverySetting(crossRegionDisasterRecoverySetting);
+cloudPcUserSetting.setProvisioningSourceType(CloudPcProvisioningSourceType.Image);
 cloudPcUserSetting.setLocalAdminEnabled(false);
 cloudPcUserSetting.setResetEnabled(true);
 CloudPcUserSetting result = graphClient.deviceManagement().virtualEndpoint().userSettings().byCloudPcUserSettingId("{cloudPcUserSetting-id}").patch(cloudPcUserSetting);
