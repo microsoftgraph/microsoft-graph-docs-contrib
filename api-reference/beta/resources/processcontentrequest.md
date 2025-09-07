@@ -1,5 +1,5 @@
 ---
-title: "processContentRequest resource type (preview)"
+title: "processContentRequest resource type"
 description: "Defines the input payload for the processContent and processContentAsync actions."
 author: "ArunGedela"
 ms.date: 04/08/2025
@@ -8,7 +8,7 @@ ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
-# processContentRequest type
+# processContentRequest resource type
 
 Namespace: microsoft.graph
 

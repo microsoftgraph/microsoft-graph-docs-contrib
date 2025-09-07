@@ -1,7 +1,7 @@
 ---
 title: "Create internalDomainFederation"
 description: "Create a new internalDomainFederation object."
-author: "rahul-nagraj"
+author: "vimrang"
 ms.localizationpriority: medium
 ms.custom: no-azure-ad-ps-ref
 ms.subservice: "entra-sign-in"
@@ -75,7 +75,7 @@ You can specify the following properties when creating an **internalDomainFedera
 | enforceMfaByFederatedIdp | Microsoft Entra ID accepts MFA that's performed by federated identity provider. If the federated identity provider didn't perform MFA, it redirects the request to federated identity provider to perform MFA. |
 | rejectMfaByFederatedIdp | Microsoft Entra ID always performs MFA and rejects MFA that's performed by the federated identity provider. |
 
-**Note:** **federatedIdpMfaBehavior** is an evolved version of the **SupportsMfa** property of the [Set-EntraDomainFederationSettings PowerShell cmdlet](/powershell/module/microsoft.entra/set-entradomainfederationsettings). 
+**Note:** **federatedIdpMfaBehavior** is an evolved version of the **SupportsMfa** property of the [Set-EntraDomainFederationSettings PowerShell cmdlet](/powershell/module/microsoft.entra/set-entradomainfederationsettings).
 + Switching between **federatedIdpMfaBehavior** and **SupportsMfa** isn't supported.
 + Once **federatedIdpMfaBehavior** property is set, Microsoft Entra ID ignores the **SupportsMfa** setting.
 + If the **federatedIdpMfaBehavior** property is never set, Microsoft Entra ID continues to honor the **SupportsMfa** setting.
@@ -122,10 +122,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-internaldomainfederation-from--csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-internaldomainfederation-from--cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -197,10 +193,6 @@ Content-Type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api/domain-post-federationconfiguration.md:
-      Exception processing links.
-      Link Definition was null. Link text: !INCLUDE Azure AD PowerShell deprecation note (Parameter 'Definition')"
-  ]
+  "suppressions": []
 }
 -->

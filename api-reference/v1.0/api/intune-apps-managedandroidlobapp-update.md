@@ -141,10 +141,6 @@ Content-length: 1307
 [!INCLUDE [sample-code](../includes/snippets/csharp/intune-apps-managedandroidlobapp-update-update-managedandroidlobapp-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/intune-apps-managedandroidlobapp-update-update-managedandroidlobapp-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/intune-apps-managedandroidlobapp-update-update-managedandroidlobapp-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

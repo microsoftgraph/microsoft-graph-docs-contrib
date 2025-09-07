@@ -5,7 +5,7 @@ author: "tushar20"
 ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
-doc_type: resourcePageType
+doc_type: apiPageType
 ms.date: 09/10/2024
 ---
 
@@ -13,7 +13,7 @@ ms.date: 09/10/2024
 
 Namespace: microsoft.graph
 
-Get a list of the [restorePoint](../resources/restorepoint.md) objects and their properties. 
+Get a list of the [restorePoint](../resources/restorepoint.md) objects and their properties.
 
 > **Note:** This API returns a maximum of five **restorePoint** objects. If you don't include the `orderBy` parameter, the five most recent restore points are returned.
 
@@ -23,11 +23,8 @@ Get a list of the [restorePoint](../resources/restorepoint.md) objects and their
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Least privileged permission|Higher privileged permissions|
-|:---|:---|:---|
-|Delegated (work or school account)|BackupRestore-Restore.Read.All|BackupRestore-Restore.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|BackupRestore-Restore.Read.All|BackupRestore-Restore.ReadWrite.All|
+<!-- { "blockType": "permissions", "name": "backuprestoreroot_list_restorepoints" } -->
+[!INCLUDE [permissions-table](../includes/permissions/backuprestoreroot-list-restorepoints-permissions.md)]
 
 ## HTTP request
 
@@ -78,10 +75,6 @@ GET https://graph.microsoft.com/v1.0/solutions/backupRestore/restorePoints?$expa
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-restorepoint-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/list-restorepoint-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

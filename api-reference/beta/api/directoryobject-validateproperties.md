@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Validate that a Microsoft 365 group's display name or mail nickname complies with naming policies.  Clients can use this API to determine whether a display name or mail nickname is valid before trying to **create** a Microsoft 365 group. For validating properties of an existing group, use the [validateProperties function](group-validateproperties.md) for groups.
 
-The following validations are performed for the display name and mail nickname properties: 
+The following validations are performed for the display name and mail nickname properties:
 1. Validate the prefix and suffix naming policy
 2. Validate the custom banned words policy
 3. Validate the mail nickname is unique
@@ -94,10 +94,6 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/directoryobject-validateproperties-validrequest-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/directoryobject-validateproperties-validrequest-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/directoryobject-validateproperties-validrequest-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -158,10 +154,6 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/directoryobject-validateproperties-invalidrequest-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/directoryobject-validateproperties-invalidrequest-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/directoryobject-validateproperties-invalidrequest-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -194,7 +186,7 @@ Content-type: application/json
   "truncated": true
 } -->
 ```http
-HTTP/1.1 422 
+HTTP/1.1 422 Unprocessable Entity
 Content-Type: application/json
 
 {
@@ -234,9 +226,7 @@ Content-Type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-      "Error: directoryobjectvalidatepropertiesinvalidrequest:
-      Unable to locate the corresponding response for this method. Missing or incorrect code block annotation.",
-      "Error: directoryobjectvalidatepropertiesinvalidrequest:
+    "Error: directoryobjectvalidatepropertiesinvalidrequest:
       Resource type was null or missing in response metadata, so we assume there is no response to validate."
   ]
 }-->

@@ -63,10 +63,6 @@ GET https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps
 [!INCLUDE [sample-code](../includes/snippets/csharp/intune-apps-managedmobilelobapp-list-list-managedmobilelobapps-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/intune-apps-managedmobilelobapp-list-list-managedmobilelobapps-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/intune-apps-managedmobilelobapp-list-list-managedmobilelobapps-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

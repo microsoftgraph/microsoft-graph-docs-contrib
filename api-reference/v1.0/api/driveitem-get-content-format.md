@@ -25,6 +25,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "driveitem_get_content_format" } -->
 [!INCLUDE [permissions-table](../includes/permissions/driveitem-get-content-format-permissions.md)]
 
+[!INCLUDE [app-permissions](../includes/sharepoint-embedded-app-driveitem-permissions.md)]
+
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
@@ -46,7 +48,7 @@ The following values are valid for the **format** parameter:
 
 | Format value | Description                        | Supported source extensions
 |:-------------|:-----------------------------------|----------------------------
-| pdf          | Converts the item into PDF format. | csv, doc, docx, odp, ods, odt, pot, potm, potx, pps, ppsx, ppsxm, ppt, pptm, pptx, rtf, xls, xlsx
+| pdf          | Converts the item into PDF format. | doc, docx, dot, dotx, dotm, dsn, dwg, eml, epub, fluidframework, form, htm, html, loop, loot, markdown, md, msg, note, odp, ods, odt, page, pps, ppsx, ppt, pptx, pulse, rtf, task, tif, tiff, wbtx, whiteboard, xls, xlsm, xlsx
 | html         | Converts the item into HTML format.| loop, fluid, wbtx
 
 ## Request headers
@@ -67,10 +69,6 @@ GET /me/drive/items/{item-id}/content?format={format}
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/convert-item-content-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/convert-item-content-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -101,11 +99,11 @@ GET /me/drive/items/{item-id}/content?format={format}
 
 ## Response
 
-Returns a `302 Found` response redirecting to a pre-authenticated download URL for the converted file.
+Returns a `302 Found` response redirecting to a preauthenticated download URL for the converted file.
 
 To download the converted file, your app must follow the `Location` header in the response.
 
-Pre-authenticated URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header to access.
+Preauthenticated URLs are only valid for a short period of time (a few minutes) and don't require an `Authorization` header to access.
 
 <!-- { "blockType": "response" } -->
 
@@ -116,7 +114,7 @@ Location: https://b0mpua-by3301.files.1drv.com/y23vmagahszhxzlcvhasdhasghasodfi
 
 ### Error responses
 
-See [Error Responses][error-response] for more information about how errors are returned.
+For more information about how errors are returned, see [Error Responses][error-response].
 
 [error-response]: /graph/errors
 [file-facet]: ../resources/file.md

@@ -61,10 +61,6 @@ DELETE https://graph.microsoft.com/v1.0/identity/authenticationEventsFlows/0313c
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-onauthenticationmethodloadstartexternalusersselfservicesignup-identityproviders-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/delete-onauthenticationmethodloadstartexternalusersselfservicesignup-identityproviders-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-onauthenticationmethodloadstartexternalusersselfservicesignup-identityproviders-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

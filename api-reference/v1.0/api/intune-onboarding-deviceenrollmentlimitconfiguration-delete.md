@@ -63,10 +63,6 @@ DELETE https://graph.microsoft.com/v1.0/deviceManagement/deviceEnrollmentConfigu
 [!INCLUDE [sample-code](../includes/snippets/csharp/intune-onboarding-deviceenrollmentlimitconfiguration-delete-delete-deviceenrollmentlimitconfiguration-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/intune-onboarding-deviceenrollmentlimitconfiguration-delete-delete-deviceenrollmentlimitconfiguration-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/intune-onboarding-deviceenrollmentlimitconfiguration-delete-delete-deviceenrollmentlimitconfiguration-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

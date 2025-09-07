@@ -58,51 +58,16 @@ If successful, this method returns a `200 OK` response code and a [cloudPcGaller
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_cloudpcgalleryimage",
-  "sampleKeys": ["MicrosoftWindowsDesktop_windows-ent-cpc_19h2-ent-cpc-os"]
+  "sampleKeys": ["microsoftwindowsdesktop_windows-ent-cpc_win11-24H2-ent-cpc-m365"]
 }
 -->
 
 ``` http
-GET https://graph.microsoft.com/v1.0/deviceManagement/virtualEndpoint/galleryImages/MicrosoftWindowsDesktop_windows-ent-cpc_19h2-ent-cpc-os
+GET https://graph.microsoft.com/v1.0/deviceManagement/virtualEndpoint/galleryImages/microsoftwindowsdesktop_windows-ent-cpc_win11-24H2-ent-cpc-m365
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-cloudpcgalleryimage-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-cloudpcgalleryimage-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-cloudpcgalleryimage-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-cloudpcgalleryimage-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-cloudpcgalleryimage-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/get-cloudpcgalleryimage-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-cloudpcgalleryimage-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/get-cloudpcgalleryimage-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### Response
 
@@ -121,15 +86,15 @@ Content-Type: application/json
 
 {
   "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#cloudPcGalleryImage",
-  "id": "MicrosoftWindowsDesktop_windows-ent-cpc_19h2-ent-cpc-os",
-  "displayName": "Windows 10 Enterprise + OS Optimizations 1909",
-  "publisherName": "MicrosoftWindowsDesktop",
+  "id": "microsoftwindowsdesktop_windows-ent-cpc_win11-24H2-ent-cpc-m365",
+  "displayName": "Windows 11 Enterprise + Microsoft 365 Apps 24H2",
+  "publisherName": "microsoftwindowsdesktop",
   "offerName": "windows-ent-cpc",
-  "skuName": "19h2-ent-cpc-os",
+  "skuName": "win11-24H2-ent-cpc-m365",
   "status": "supported",
   "sizeInGB": 64,
-  "startDate": "2019-11-12",
-  "endDate": "2022-05-10",
-  "expirationDate": "2022-11-10"
+  "startDate": "2024-9-30",
+  "endDate": "2027-10-11",
+  "expirationDate": "2028-04-11"
 }
 ```

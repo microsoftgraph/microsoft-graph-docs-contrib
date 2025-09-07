@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "preetikr"
 ms.subservice: "security"
 ms.date: 11/07/2024
+ms.topic: how-to
 ---
 
 # Partnering opportunities with the Microsoft Graph Security API
@@ -75,7 +76,7 @@ The Microsoft Graph Security API partnering opportunities are made available via
 Supported entities:
 
 - **Alerts** are "conclusions with a security impact" rather than raw log data or other uncorrelated information. [Learn more](/graph/api/resources/security-api-overview#alerts).
-- **Threat Indicators**, also referred to as indicators of compromise or IoCs, represent data about known threats, such as malicious files, URLs, domains, and IP addresses. Customers may generate indicators through internal threat intelligence gathering or acquire indicators from threat intelligence communities, licensed feeds, and other sources. [Learn more](/graph/api/resources/tiindicator).
+- **Threat Indicators**, also referred to as indicators of compromise or IoCs, represent data about known threats, such as malicious files, URLs, domains, and IP addresses. Customers might generate indicators through internal threat intelligence gathering or acquire indicators from threat intelligence communities, licensed feeds, and other sources. [Learn more](/graph/api/resources/tiindicator).
 - **Security Actions** enable technology partners to expose functional capabilities via the Graph.  For example, if your security solution supports the ability to block IP addresses you can expose “Block IP” as a capability in the Graph. Other Graph Security API products can call your action via the Graph. [Learn more](/graph/api/resources/securityaction).
 - **Secure Score**… [Learn more](/graph/api/resources/securescores).
 

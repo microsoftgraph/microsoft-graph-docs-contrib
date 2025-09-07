@@ -16,8 +16,10 @@ import (
 )
 
 requestBody := graphmodels.NewEngagementRoleMember()
-userId := "String"
-requestBody.SetUserId(&userId) 
+additionalData := map[string]interface{}{
+	"user@odata.bind" : "https://graph.microsoft.com/beta/users('userId')", 
+}
+requestBody.SetAdditionalData(additionalData)
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 members, err := graphClient.EmployeeExperience().Roles().ByEngagementRoleId("engagementRole-id").Members().Post(context.Background(), requestBody, nil)

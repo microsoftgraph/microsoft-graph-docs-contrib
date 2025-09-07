@@ -77,10 +77,6 @@ Content-length: 65
 [!INCLUDE [sample-code](../includes/snippets/csharp/intune-reporting-devicemanagementreports-update-update-devicemanagementreports-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/intune-reporting-devicemanagementreports-update-update-devicemanagementreports-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/intune-reporting-devicemanagementreports-update-update-devicemanagementreports-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

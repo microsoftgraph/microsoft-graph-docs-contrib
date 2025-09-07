@@ -31,6 +31,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "driveitem_createuploadsession" } -->
 [!INCLUDE [permissions-table](../includes/permissions/driveitem-createuploadsession-permissions.md)]
 
+[!INCLUDE [app-permissions](../includes/sharepoint-embedded-app-driveitem-permissions.md)]
+
 ## Create an upload session
 
 To begin a large file upload, your app must first request a new upload session.
@@ -116,9 +118,17 @@ Content-Type: application/json
 
 ### Response
 
-The response to this request, if successful, will provide the details for where the remainder of the requests should be sent as an [UploadSession](../resources/uploadsession.md) resource.
+If successful, the response to this request provides the details of where the remainder of the requests should be sent as an [uploadSession](../resources/uploadsession.md) resource.
 
-This resource provides details about where the byte range of the file should be uploaded and when the upload session expires.
+When a session is created and generates pre-authenticated upload URLs, the upload URL can be used to complete the upload within a time window sufficient for large files. 
+
+The [uploadSession](../resources/uploadsession.md) resource provides details about where each byte range of the file should be uploaded and specifies when the session expires. The **expirationDateTime** property indicates the time at which the current session expires if no further activity occurs. This results in the following:
+
+- You must upload the next fragment or commit the session before the time specified in the **expirationDateTime** property.
+- Each uploaded fragment extends the expiration time, which allows large file uploads to be completed successfully. The updated expiration time is returned in every request to upload a file fragment.
+- If no fragments are received and the session isn't committed, all previously uploaded fragments are discarded.
+
+This process supports large file uploads and ensures that upload sessions are efficiently managed by preventing stale or abandoned data from remaining in the system too long.
 
 If the `fileSize` parameter is specified and exceeds the available quota, a `507 Insufficent Storage` response is returned and the upload session won't be created.
 

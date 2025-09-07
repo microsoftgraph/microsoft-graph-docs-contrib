@@ -7,34 +7,34 @@ ms.reviewer: rianakarim
 ms.localizationpriority: medium
 ms.topic: concept-article
 ms.subservice: entra-id-governance
-ms.date: 09/24/2024
+ms.date: 08/29/2025
 #Customer intent: As a developer, I want to understand how to map PIM settings in the Microsoft Entra admin center to the corresponding rules in Microsoft Graph, so that I can configure and update the rules effectively.
 ---
 
 # Rules in PIM - Mapping guide
 
-Privileged Identity Management (PIM) exposes role settings for the resources that can be managed. In Microsoft Graph, these resources are Microsoft Entra roles and groups and they're managed through [PIM for Microsoft Entra roles](/graph/api/resources/privilegedidentitymanagementv3-overview) and [PIM for groups](/graph/api/resources/privilegedidentitymanagement-for-groups-api-overview) respectively.
+Privileged Identity Management (PIM) exposes role settings for the resources that you can manage. In Microsoft Graph, these resources are Microsoft Entra roles and groups. You manage them through [PIM for Microsoft Entra roles](/graph/api/resources/privilegedidentitymanagementv3-overview) and [PIM for groups](/graph/api/resources/privilegedidentitymanagement-for-groups-api-overview) respectively.
 
-Role settings fall in one of three categories:
+Role settings fall into one of three categories:
 - Activation settings
 - Assignment settings
 - Notification settings
 
-Such settings include whether multifactor authentication (MFA) is required to activate an eligible role or group membership; or whether you can create permanent role assignments, group ownership, or group memberships.
+These settings include whether multifactor authentication (MFA) is required to activate an eligible role or group membership, or whether you can create permanent role assignments, group ownership, or group memberships.
 
-When using the [PIM for Microsoft Entra roles APIs](/graph/api/resources/privilegedidentitymanagementv3-overview) or [PIM for groups APIs](/graph/api/resources/privilegedidentitymanagement-for-groups-api-overview) in Microsoft Graph, these role settings are managed through policies and rules.
+When you use the [PIM for Microsoft Entra roles APIs](/graph/api/resources/privilegedidentitymanagementv3-overview) or [PIM for groups APIs](/graph/api/resources/privilegedidentitymanagement-for-groups-api-overview) in Microsoft Graph, you manage these role settings through policies and rules.
 
 ## Policies
 
-In Microsoft Graph, the role settings are called *rules*. These rules are grouped in, assigned to, and managed for Microsoft Entra roles and groups through containers called *policies*.
+In Microsoft Graph, the role settings are called *rules*. You group these rules in, assign them to, and manage them for Microsoft Entra roles and groups through containers called *policies*.
 
-The policies are defined through the [unifiedRoleManagementPolicy resource type](/graph/api/resources/unifiedrolemanagementpolicy).
+Define the policies through the [unifiedRoleManagementPolicy resource type](/graph/api/resources/unifiedrolemanagementpolicy).
 
 ## Policy rules
 
-Each **unifiedRoleManagementPolicy** object contains 17 predefined rules that can be updated. These rules are managed through the **rules** relationship.
+Each **unifiedRoleManagementPolicy** object contains 17 predefined rules that you can update. Manage these rules through the **rules** relationship.
 
-Microsoft Graph defines the [unifiedRoleManagementPolicyRule resource type](/graph/api/resources/unifiedrolemanagementpolicyrule) abstract type, which is inherited by five resources. The five derived types are used to group the rules into activation, assignment, and notification rules. They define rule configurations that can be one or more of 17 rules that are identified by unique and immutable rule IDs.
+Microsoft Graph defines the [unifiedRoleManagementPolicyRule resource type](/graph/api/resources/unifiedrolemanagementpolicyrule) abstract type, which five resources inherit. Use the five derived types to group the rules into activation, assignment, and notification rules. They define rule configurations that can be one or more of 17 rules that are identified by unique and immutable rule IDs.
 
 This article provides a mapping of settings in PIM on the Microsoft Entra admin center to the corresponding rules in Microsoft Graph.
 
@@ -71,7 +71,7 @@ The following image shows the assignment role settings on the Microsoft Entra ad
 | 5      | Allow permanent eligible assignment<br/><br/>Expire eligible assignments after                                                                                       | `Expiration_Admin_Eligibility` / [unifiedRoleManagementPolicyExpirationRule](/graph/api/resources/unifiedrolemanagementpolicyexpirationrule)  | Admin               |
 | 6      | Allow permanent active assignment<br/><br/>Expire active assignments after                                                                                           | `Expiration_Admin_Assignment` / [unifiedRoleManagementPolicyExpirationRule](/graph/api/resources/unifiedrolemanagementpolicyexpirationrule)   | Admin               |
 | 7      | Require Azure Multi-Factor Authentication on active assignment<br/><br/>Require justification on active assignment | `Enablement_Admin_Assignment` / [unifiedRoleManagementPolicyEnablementRule](/graph/api/resources/unifiedRoleManagementPolicyEnablementRule)   | Admin               |
-| 8      | Does not exist in Microsoft Entra admin center UX | `Enablement_Admin_Eligibility` / [unifiedRoleManagementPolicyEnablementRule](/graph/api/resources/unifiedRoleManagementPolicyEnablementRule) | Admin            |
+| 8       | Not shown in the Microsoft Entra admin center | `Enablement_Admin_Eligibility` / [unifiedRoleManagementPolicyEnablementRule](/graph/api/resources/unifiedRoleManagementPolicyEnablementRule) | Admin            |
 
 ## Notification rules
 

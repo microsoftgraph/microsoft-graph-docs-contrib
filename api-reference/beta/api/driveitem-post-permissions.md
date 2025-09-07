@@ -1,21 +1,26 @@
 ---
 title: "Create permission on a driveItem"
-description: "Create a new permission for a driveItem."
+description: "Create a new permission object for a driveItem."
 author: "BarrySh"
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: apiPageType
-ms.date: 06/17/2024
+ms.date: 07/25/2025
 ---
 
 # Create permission on a driveItem
+
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [permission](../resources/permission.md) object on a [driveItem](../resources/permission.md).
+Create a new [permission](../resources/permission.md) object on a [driveItem](../resources/driveitem.md).
 
->**Note:** You can only use this method to create a new application permission. If you want to create a new user permission in a drive item, see [invite](./driveitem-invite.md).
+> [!IMPORTANT]
+> This API has the following restrictions:
+>
+> - For OneDrive for work or school and SharePoint Online, you can only use this method to create a new application permission. If you want to create a new user permission in a **driveItem**, see [invite](./driveitem-invite.md). For more information on application permissions, see [Overview of Selected permissions in OneDrive and SharePoint](/graph/permissions-selected-overview).
+> - For SharePoint Embedded, you can only use this method to create a new [sharePointGroup](../resources/sharepointgroup.md) permission with app-only access. You can't create a permission on the root item of a container.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -24,6 +29,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "driveitem_post_permissions" } -->
 [!INCLUDE [permissions-table](../includes/permissions/driveitem-post-permissions-permissions.md)]
+
+[!INCLUDE [app-permissions](../includes/sharepoint-embedded-app-driveitem-permissions.md)]
 
 ## HTTP request
 
@@ -54,19 +61,67 @@ If successful, this method returns a `201 Created` response code and a [permissi
 
 ## Examples
 
-### Request
+### Example 1: Add an application permission to a driveItem in OneDrive or SharePoint Online
+
+The following example shows how to add a `write` [permission](../resources/permission.md) for the `Contoso Time Manager App` [application](../resources/identity.md) on a [driveItem](../resources/driveitem.md) identified by `1` in a [drive](../resources/drive.md) identified by `b!s8RqPCGh0ESQS2EYnKM0IKS3lM7GxjdAviiob7oc5pXv_0LiL-62Qq3IXyrXnEop`.
+
+#### Request
 
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_permission_from_"
+  "name": "driveitem-post-permissions-1",
+  "scopes": "filestoragecontainer.selected",
+  "target": "action"
+} -->
+```http
+POST https://graph.microsoft.com/beta/drives/b!s8RqPCGh0ESQS2EYnKM0IKS3lM7GxjdAviiob7oc5pXv_0LiL-62Qq3IXyrXnEop/items/1/permissions
+Content-Type: application/json
+
+{
+  "grantedToIdentitiesV2": {
+    "application": {
+      "id": "89ea5c94-7736-4e25-95ad-3fa95f62b66e",
+      "displayName": "Contoso Time Manager App"
+    }
+  },
+  "roles": ["write"]
 }
--->
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/driveitem-post-permissions-1-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/driveitem-post-permissions-1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/driveitem-post-permissions-1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/driveitem-post-permissions-1-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/driveitem-post-permissions-1-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/driveitem-post-permissions-1-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/driveitem-post-permissions-1-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-### Response
+#### Response
 
 The following example shows the response.
 
@@ -99,6 +154,105 @@ Content-Type: application/json
       "application": {
         "id": "89ea5c94-7736-4e25-95ad-3fa95f62b66e",
         "displayName": "Contoso Time Manager App"
+      }
+    }
+  ]
+}
+```
+
+### Example 2: Add a SharePoint group permission to a driveItem in a SharePoint Embedded container
+
+The following example shows how to add a `write` [permission](../resources/permission.md) for the `Internal Collaborators` [sharePointGroup](../resources/sharepointgroup.md) on a [driveItem](../resources/driveitem.md) identified by `1` in a SharePoint Embedded [fileStorageContainer](../resources/filestoragecontainer.md) identified by `b!s8RqPCGh0ESQS2EYnKM0IKS3lM7GxjdAviiob7oc5pXv_0LiL-62Qq3IXyrXnEop`.
+
+#### Request
+
+The following example shows a request.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "driveitem-post-permissions-2",
+  "scopes": "filestoragecontainer.selected",
+  "target": "action"
+} -->
+```http
+POST https://graph.microsoft.com/beta/drives/b!s8RqPCGh0ESQS2EYnKM0IKS3lM7GxjdAviiob7oc5pXv_0LiL-62Qq3IXyrXnEop/items/1/permissions
+Content-Type: application/json
+
+{
+  "grantedToIdentitiesV2": {
+    "siteGroup": {
+      "id": "10",
+      "displayName": "Internal Collaborators"
+    }
+  },
+  "roles": ["write"]
+}
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/driveitem-post-permissions-2-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/driveitem-post-permissions-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/driveitem-post-permissions-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/driveitem-post-permissions-2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/driveitem-post-permissions-2-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/driveitem-post-permissions-2-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/driveitem-post-permissions-2-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+
+The following example shows the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.permission"
+}
+-->
+``` http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+  "id": "1",
+  "@deprecated.GrantedToIdentities": "GrantedToIdentities has been deprecated. Refer to GrantedToIdentitiesV2",
+  "roles": [
+    "write"
+  ],
+  "grantedToIdentities": [
+    {
+      "siteGroup": {
+        "id": "10",
+        "displayName": "Internal Collaborators"
+      }
+    }
+  ],
+  "grantedToIdentitiesV2": [
+    {
+      "siteGroup": {
+        "id": "10",
+        "displayName": "Internal Collaborators"
       }
     }
   ]

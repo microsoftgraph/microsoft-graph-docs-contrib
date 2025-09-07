@@ -26,7 +26,7 @@ Inherits from [itemFacet](itemfacet.md).
 |[Create](../api/profile-post-accounts.md)|[userAccountInformation](../resources/useraccountinformation.md)|Create a new userAccountInformation object.|
 |[Get](../api/useraccountinformation-get.md)|[userAccountInformation](../resources/useraccountinformation.md)|Read the properties and relationships of a [userAccountInformation](../resources/useraccountinformation.md) object.|
 |[Update](../api/useraccountinformation-update.md)|[userAccountInformation](../resources/useraccountinformation.md)|Update the properties of a [userAccountInformation](../resources/useraccountinformation.md) object.|
-|[Delete](../api/useraccountinformation-delete.md)|None|Deletes a [userAccountInformation](../resources/useraccountinformation.md) object.|
+|[Delete](../api/useraccountinformation-delete.md)|None|Delete a [userAccountInformation](../resources/useraccountinformation.md) object.|
 
 ## Properties
 
@@ -41,8 +41,10 @@ Inherits from [itemFacet](itemfacet.md).
 |inference|[inferenceData](../resources/inferencedata.md)|Contains inference detail if the entity is inferred by the creating or modifying application. Inherited from [itemFacet](../resources/itemfacet.md).|
 |lastModifiedBy|[identitySet](../resources/identityset.md)|Provides the identifier of the user and/or application that last modified the entity. Inherited from [itemFacet](../resources/itemfacet.md).|
 |lastModifiedDateTime|DateTimeOffset|Provides the dateTimeOffset for when the entity was created. Inherited from [itemFacet](../resources/itemfacet.md).|
-|preferredLanguageTag|[localeInfo](../resources/localeinfo.md)|Contains the language the user has associated as preferred for the account.   |
+|originTenantInfo|[originTenantInfo](../resources/origintenantinfo.md)|Contains the identifiers of the user and the origin tenant that provisioned the user. This property is populated when the user is invited as a guest to the host tenant.|
+|preferredLanguageTag|[localeInfo](../resources/localeinfo.md)|Contains the language that the user associated as preferred for their account.  |
 |source|[personDataSource](../resources/persondatasource.md)|Where the values originated if synced from another service. Inherited from [itemFacet](../resources/itemfacet.md).|
+|userPersona|userPersona|Represents the user's persona. The possible values are: `unknown`, `externalMember`, `externalGuest`, `internalMember`, `internalGuest`, `unknownFutureValue`.|
 |userPrincipalName|String|The user principal name (UPN) of the user associated with the account.   |
 
 ## Relationships
@@ -61,27 +63,19 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.userAccountInformation",
-  "id": "String (identifier)",
-  "allowedAudiences": "String",
-  "inference": {
-    "@odata.type": "microsoft.graph.inferenceData"
-  },
-  "createdDateTime": "String (timestamp)",
-  "createdBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
-  "lastModifiedDateTime": "String (timestamp)",
-  "lastModifiedBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
-  "source": {
-    "@odata.type": "microsoft.graph.personDataSource"
-  },
   "ageGroup": "String",
+  "allowedAudiences": "String",
   "countryCode": "String",
-  "preferredLanguageTag": {
-    "@odata.type": "microsoft.graph.localeInfo"
-  },
+  "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
+  "createdDateTime": "String (timestamp)",
+  "id": "String (identifier)",
+  "inference": {"@odata.type": "microsoft.graph.inferenceData"},
+  "lastModifiedBy": {"@odata.type": "microsoft.graph.identitySet"},
+  "lastModifiedDateTime": "String (timestamp)",
+  "originTenantInfo": {"@odata.type": "microsoft.graph.originTenantInfo"},
+  "preferredLanguageTag": {"@odata.type": "microsoft.graph.localeInfo"},
+  "source": {"@odata.type": "microsoft.graph.personDataSource"},
+  "userPersona": "String",
   "userPrincipalName": "String"
 }
 ```

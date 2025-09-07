@@ -64,10 +64,6 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/enterpriseCodeSigningCe
 [!INCLUDE [sample-code](../includes/snippets/csharp/intune-apps-enterprisecodesigningcertificate-get-get-enterprisecodesigningcertificate-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/intune-apps-enterprisecodesigningcertificate-get-get-enterprisecodesigningcertificate-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/intune-apps-enterprisecodesigningcertificate-get-get-enterprisecodesigningcertificate-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

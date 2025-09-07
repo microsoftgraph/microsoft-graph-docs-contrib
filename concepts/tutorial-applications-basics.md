@@ -1,33 +1,26 @@
 ---
-title: "Manage a Microsoft Entra application using Microsoft Graph"
-description: "Learn how to use the applications and service principals APIs in Microsoft Graph to manage your applications."
+title: Programmatically Manage Microsoft Entra Apps Using Microsoft Graph
+description: Learn how to use Microsoft Graph to streamline your app lifecycle.
 author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: sureshja
 ms.localizationpriority: medium
 ms.topic: how-to
 ms.subservice: entra-applications
-ms.date: 07/16/2024
-#Customer intent: As a developer integrating with Microsoft Graph, I want to learn how to programmatically create and manage applications and service principals in my tenant.
+ms.date: 07/03/2025
 ---
 
-# Manage a Microsoft Entra application using Microsoft Graph
+# Manage Microsoft Entra applications using Microsoft Graph
 
-Your app must be registered in Microsoft Entra ID before the Microsoft identity platform can authorize it to access data stored in the Microsoft cloud. This condition applies to apps that you develop yourself, that your tenant owns, or that you access through an active subscription.
-
-Many settings for apps are recorded as objects that can be accessed, updated, or deleted using Microsoft Graph. In this article, you learn how to use Microsoft Graph to manage details of app and service principal objects including the properties, permissions, and role assignments.
+Microsoft Entra applications enable secure access to resources in the Microsoft cloud. Microsoft Graph provides a unified API endpoint that lets you programmatically create, configure, and manage these applications and their associated service principals. This article shows you how for automating common app management tasks with Microsoft Graph, including registering apps, updating properties, assigning permissions, and managing credentials.
 
 ## Prerequisites
 
-To test the API operations, you need the following resources and privileges:
-
-+ A working Microsoft Entra tenant.
-+ Sign in to [Graph Explorer](https://aka.ms/ge) as a user with privileges allowed to create and manage applications in the tenant.
-+ Grant yourself the least privilege delegated permission indicated for the operation.
+- To test the API operations, sign in to [Graph Explorer](https://aka.ms/ge) with an account that lets you create and manage applications in your tenant.
 
 ## Register an application with Microsoft Entra ID
 
-The following request creates an app by specifying only the required **displayName** property. Other properties are assigned the default values.
+Create an app by specifying the required **displayName** property. The request uses default values for other properties.
 
 Least privileged delegated permission: `Application.ReadWrite.All`.
 
@@ -47,10 +40,6 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/v1/tutorial-application-basics-create-app-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/tutorial-application-basics-create-app-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -79,7 +68,7 @@ Content-type: application/json
 
 ---
 
-The request returns a `201 Created` response with the application object in the response body. The application is assigned an **id** that's unique for apps in the tenant, and an **appId** that's globally unique in the Microsoft Entra ID ecosystem.
+The request returns a `201 Created` response with the application object in the response body. The application gets an **id** that's unique for apps in the tenant, and an **appId** that's globally unique in the Microsoft Entra ID ecosystem.
 
 ## Create a service principal for an application
 
@@ -101,10 +90,6 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/v1/tutorial-application-basics-create-sp-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/tutorial-application-basics-create-sp-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -133,28 +118,25 @@ Content-type: application/json
 
 ---
 
-The request returns a `201 Created` response with the service principal object in the response body.
+The request returns a `201 Created` response that includes the service principal object in the response body.
 
 ## Addressing an application or a service principal object
 
-You can address an application or a service principal by its ID or by its **appId**, where ID is referred to as *Object ID* and **appId** is referred to as *Application (client) ID* on the Microsoft Entra admin center. These syntaxes are supported for all HTTP CRUD operations on applications and service principals.
-
-To address an application or a service principal by its ID.
+Reference an application or a service principal by its ID. This syntax supports the GET, PATCH, and DELETE HTTP methods.
 
 ```http
 https://graph.microsoft.com/v1.0/applications/{applicationObjectId}
 https://graph.microsoft.com/v1.0/servicePrincipals/{servicePrincipalObjectId}
 ```
 
-To address an application or a service principal by its **appId**.
+Reference an application or a service principal by its `appId`. This syntax supports the GET, PATCH, and DELETE HTTP methods.
 ```http
 https://graph.microsoft.com/v1.0/applications(appId='appId')
 https://graph.microsoft.com/v1.0/servicePrincipals(appId='appId')
 ```
 
-In addition, you can address an application object unique its **uniqueName**. You can use this property to create an application with the unique name if it doesn't exist, or update it if it exists; an operation referred to as "Upsert".
+Address an application object by its **uniqueName** using the PATCH method. Use this property to create an application with the unique name if it doesn't exist, or update it if it exists. This operation is called *Upsert*.
 
-Create an application with the specified uniqueName if it doesn't exist, otherwise, update it.
 ```http
 PATCH https://graph.microsoft.com/v1.0/applications(uniqueName='{uniqueName}')
 Content-Type: application/json
@@ -169,11 +151,11 @@ Prefer: create-if-missing
 
 Least privileged delegated permission: `Application.ReadWrite.All`.
 
-You configure the following basic properties for the app.
+Set up these basic properties for your app:
 
-+ Add tags for categorization in the organization. Also, use the `HideApp` tag to hide the app from My Apps and the Microsoft 365 Launcher.
-+ Add basic information including the logo, terms of service, and privacy statement.
-+ Store contact information about the application
+- Add tags for categorization (use `HideApp` to hide the app from My Apps and the Microsoft 365 Launcher)
+- Add a logo, terms of service, and privacy statement
+- Store contact information
 
 # [HTTP](#tab/http)
 <!-- {
@@ -185,35 +167,31 @@ PATCH https://graph.microsoft.com/v1.0/applications/0d0021e2-eaab-4b9f-a5ad-38c5
 Content-type: application/json
 
 {
-    "tags": [
-        "HR",
-        "Payroll",
-        "HideApp"
-    ],
-    "info": {
-        "logoUrl": "https://cdn.pixabay.com/photo/2016/03/21/23/25/link-1271843_1280.png",
-        "marketingUrl": "https://www.contoso.com/app/marketing",
-        "privacyStatementUrl": "https://www.contoso.com/app/privacy",
-        "supportUrl": "https://www.contoso.com/app/support",
-        "termsOfServiceUrl": "https://www.contoso.com/app/termsofservice"
-    },
-    "web": {
-        "homePageUrl": "https://www.contoso.com/",
-        "logoutUrl": "https://www.contoso.com/frontchannel_logout",
-        "redirectUris": [
-            "https://localhost"
-        ]
-    },
-    "serviceManagementReference": "Owners aliases: Finance @ contosofinance@contoso.com; The Phone Company HR consulting @ hronsite@thephone-company.com;"
+  "tags": [
+      "HR",
+      "Payroll",
+      "HideApp"
+  ],
+  "info": {
+      "logoUrl": "https://cdn.contoso.com/photo/2016/03/21/23/25/link-1271843_1280.png",
+      "marketingUrl": "https://www.contoso.com/app/marketing",
+      "privacyStatementUrl": "https://www.contoso.com/app/privacy",
+      "supportUrl": "https://www.contoso.com/app/support",
+      "termsOfServiceUrl": "https://www.contoso.com/app/termsofservice"
+  },
+  "web": {
+      "homePageUrl": "https://www.contoso.com/",
+      "logoutUrl": "https://www.contoso.com/frontchannel_logout",
+      "redirectUris": [
+          "https://localhost"
+      ]
+  },
+  "serviceManagementReference": "Owners aliases: Finance @ contosofinance@contoso.com; The Phone Company HR consulting @ hronsite@thephone-company.com;"
 }
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/v1/tutorial-application-basics-update-app-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/tutorial-application-basics-update-app-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -242,9 +220,7 @@ Content-type: application/json
 
 ---
 
-## Limit app sign-in to only assigned identities
-
-The following operation limits the identities that can sign in to an app to only those that are assigned all roles on the app.
+## Restrict sign-in to only users assigned all roles on the app.
 
 Least privileged delegated permission: `Application.ReadWrite.All`.
 
@@ -263,10 +239,6 @@ PATCH https://graph.microsoft.com/v1.0/servicePrincipals/89473e09-0737-41a1-a0c3
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/v1/tutorial-application-basics-grant-approleassignmentrequired-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/tutorial-application-basics-grant-approleassignmentrequired-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -297,9 +269,10 @@ PATCH https://graph.microsoft.com/v1.0/servicePrincipals/89473e09-0737-41a1-a0c3
 
 ## Assign permissions to an app
 
-While you can assign permissions to an app through the Microsoft Entra admin center, you also assign permissions through Microsoft Graph by updating the **requiredResourceAccess** property of the app object. You must pass in both existing and new permissions. Passing in only new permissions overwrites and removes the existing permissions that haven't yet been consented to.
+Assign permissions through Microsoft Graph by updating the **requiredResourceAccess** property of the app object. This method is a programmatic alternative to using the Microsoft Entra admin center. Include both existing and new permissions to avoid removing permissions that are assigned but not granted.
 
-**Assigning** permissions doesn't automatically grant them to the app. You must still grant admin consent using the Microsoft Entra admin center. To grant permissions without interactive consent, see [Grant or revoke API permissions programmatically](permissions-grant-via-msgraph.md).
+
+*Assigning* permissions doesn't *grant* them. Grant admin consent in the Microsoft Entra admin center or [programmatically using Microsoft Graph APIs](permissions-grant-via-msgraph.md).
 
 Least privileged delegated permission: `Application.ReadWrite.All`.
 
@@ -313,30 +286,26 @@ PATCH https://graph.microsoft.com/v1.0/applications/581088ba-83c5-4975-b8af-11d2
 Content-Type: application/json
 
 {
-    "requiredResourceAccess": [
+  "requiredResourceAccess": [
+    {
+      "resourceAppId": "00000002-0000-0000-c000-000000000000",
+      "resourceAccess": [
         {
-            "resourceAppId": "00000002-0000-0000-c000-000000000000",
-            "resourceAccess": [
-                {
-                    "id": "311a71cc-e848-46a1-bdf8-97ff7156d8e6",
-                    "type": "Scope"
-                },
-                {
-                    "id": "3afa6a7d-9b1a-42eb-948e-1650a849e176",
-                    "type": "Role"
-                }
-            ]
+          "id": "311a71cc-e848-46a1-bdf8-97ff7156d8e6",
+          "type": "Scope"
+        },
+        {
+          "id": "3afa6a7d-9b1a-42eb-948e-1650a849e176",
+          "type": "Role"
         }
-    ]
+      ]
+    }
+  ]
 }
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/v1/tutorial-application-basics-assign-permissions-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/tutorial-application-basics-assign-permissions-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -369,7 +338,7 @@ Content-Type: application/json
 
 ### Create app roles on an application object
 
-To keep any existing app roles, include them in the request. Otherwise, they're replaced with the new object.
+To add or update app roles, include all existing roles in your request. If you omit existing roles, they're removed.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -381,29 +350,25 @@ PATCH https://graph.microsoft.com/v1.0/applications/bbd46130-e957-4c38-a116-d4d0
 Content-Type: application/json
 
 {
-    "appRoles": [
-        {
-            "allowedMemberTypes": [
-                "User",
-                "Application"
-            ],
-            "description": "Survey.Read",
-            "displayName": "Survey.Read",
-            "id": "7a9ddfc4-cc8a-48ea-8275-8ecbffffd5a0",
-            "isEnabled": false,
-            "origin": "Application",
-            "value": "Survey.Read"
-        }
-    ]
+  "appRoles": [
+    {
+      "allowedMemberTypes": [
+          "User",
+          "Application"
+      ],
+      "description": "Survey.Read",
+      "displayName": "Survey.Read",
+      "id": "7a9ddfc4-cc8a-48ea-8275-8ecbffffd5a0",
+      "isEnabled": false,
+      "origin": "Application",
+      "value": "Survey.Read"
+    }
+  ]
 }
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/v1/tutorial-application-basics-create-serviceprincipal-approles-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/tutorial-application-basics-create-serviceprincipal-approles-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -434,7 +399,7 @@ Content-Type: application/json
 
 ## Manage owners
 
-### Identify ownerless service principals and service principals with one owner
+### Identify ownerless service principals or those with only one owner
 
 Least privileged delegated permission: `Application.ReadWrite.All`.
 
@@ -455,10 +420,6 @@ ConsistencyLevel: eventual
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/v1/tutorial-application-basics-ownerless-serviceprincipals-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/tutorial-application-basics-ownerless-serviceprincipals-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -512,10 +473,6 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/v1/tutorial-application-basics-assign-app-owner-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/tutorial-application-basics-assign-app-owner-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/v1/tutorial-application-basics-assign-app-owner-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -546,7 +503,7 @@ Content-Type: application/json
 
 Least privileged delegated permission: `Application.ReadWrite.All`.
 
-The following request references the service principal using its **appId**. You can alternatively reference it using the object ID in the pattern `../servicePrincipals/{bject ID}/owners/$ref`. `8afc02cb-4d62-4dba-b536-9f6d73e9be26` is the object ID for a user or service principal.
+The following request references the service principal using its **appId**. You can alternatively reference it using the object ID in the pattern `../servicePrincipals/{object ID}/owners/$ref`. `dddddddd-9999-0000-1111-eeeeeeeeeeee` is the object ID for a user or service principal.
 
 
 <!-- {
@@ -554,17 +511,17 @@ The following request references the service principal using its **appId**. You 
   "name": "tutorial-application-basics-assign-serviceprincipal-owner"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/servicePrincipals(appId='46e6adf4-a9cf-4b60-9390-0ba6fb00bf6b')/owners/$ref
+POST https://graph.microsoft.com/v1.0/servicePrincipals(appId='00001111-aaaa-2222-bbbb-3333cccc4444')/owners/$ref
 Content-Type: application/json
 
 {
-    "@odata.id": "https://graph.microsoft.com/v1.0/directoryObjects/8afc02cb-4d62-4dba-b536-9f6d73e9be26"
+    "@odata.id": "https://graph.microsoft.com/v1.0/directoryObjects/dddddddd-9999-0000-1111-eeeeeeeeeeee"
 }
 ```
 
 ## Lock sensitive properties for service principals
 
-The *app instance lock* feature allows you to protect sensitive properties of your multitenant apps from unauthorized tampering. The following properties of the service principal object can be locked:
+Use the app instance lock feature to protect sensitive properties of service principals from unauthorized changes. Yo can lock the following properties:
 
 - **keyCredentials** where the usage type is `Sign` or `Verify`.
 - **passwordCredentials** where the usage type is `Sign` or `Verify`.
@@ -593,10 +550,6 @@ PATCH https://graph.microsoft.com/beta/applications/a0b7f39e-3139-48aa-9397-f46f
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/beta/tutorial-application-basics-serviceprincipallockconfig-all-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/beta/tutorial-application-basics-serviceprincipallockconfig-all-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -649,10 +602,6 @@ PATCH https://graph.microsoft.com/beta/applications/a0b7f39e-3139-48aa-9397-f46f
 [!INCLUDE [sample-code](../includes/snippets/csharp/beta/tutorial-application-basics-serviceprincipallockconfig-specific-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/beta/tutorial-application-basics-serviceprincipallockconfig-specific-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/beta/tutorial-application-basics-serviceprincipallockconfig-specific-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -681,7 +630,7 @@ PATCH https://graph.microsoft.com/beta/applications/a0b7f39e-3139-48aa-9397-f46f
 
 ## Configure trusted certificate authorities for apps
 
-You can restrict certificate credential usage for apps in your tenant to only the certificates issued by trusted certificate authorities. This policy is enforced when you add a certificate to an app and doesn't affect existing certificates unless they are rotated. When an app tries to rotate its certificate credentials, it goes through the policy evaluation to ensure the credentials being added comply with the trusted certificate authority restriction.
+You can restrict certificate credential usage for apps in your tenant to only the certificates issued by trusted certificate authorities. This policy is enforced when you add a certificate to an app and doesn't affect existing certificates unless they're rotated. When an app tries to rotate its certificate credentials, it goes through the policy evaluation to ensure the credentials being added comply with the trusted certificate authority restriction.
 
 ### Step 1: Create a certificate chain of trust
 
@@ -716,10 +665,6 @@ POST https://graph.microsoft.com/beta/certificateAuthorities/certificateBasedApp
 [!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/beta/tutorial-application-basics-certbasedappconfig-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -746,7 +691,7 @@ POST https://graph.microsoft.com/beta/certificateAuthorities/certificateBasedApp
 
 ---
 
-The request returns a `200 OK` response object. The response includes the ID of the certificate chain of trust object. Assume that the ID is `eec5ba11-2fc0-4113-83a2-ed986ed13743`. 
+The request returns a `200 OK` response object. The response includes the ID of the certificate chain of trust object. Assume that the ID is `eec5ba11-2fc0-4113-83a2-ed986ed13743` used in Step 2.
 
 ### Step 2: Assign the certificate chain of trust to an application management policy
 
@@ -799,10 +744,6 @@ PATCH https://graph.microsoft.com/v1.0/policies/defaultAppManagementPolicy
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/v1/tutorial-application-basics-update-appmanagementpolicy-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/tutorial-application-basics-update-appmanagementpolicy-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

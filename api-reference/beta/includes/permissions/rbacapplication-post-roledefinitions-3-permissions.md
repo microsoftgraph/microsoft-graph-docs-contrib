@@ -6,7 +6,7 @@ ms.localizationpriority: medium
 
 |Permission type|Least privileged permissions|Higher privileged permissions|
 |:---|:---|:---|
-|Delegated (work or school account)|DeviceManagementRBAC.ReadWrite.All|CloudPC.ReadWrite.All, Directory.ReadWrite.All, RoleManagement.ReadWrite.CloudPC, RoleManagement.ReadWrite.Directory|
+|Delegated (work or school account)|RoleManagement.ReadWrite.Directory|Directory.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|DeviceManagementRBAC.ReadWrite.All|CloudPC.ReadWrite.All, Directory.ReadWrite.All, RoleManagement.ReadWrite.CloudPC, RoleManagement.ReadWrite.Directory|
+|Application|RoleManagement.ReadWrite.Directory|Directory.ReadWrite.All|
 

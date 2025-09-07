@@ -1,5 +1,5 @@
 ---
-title: "binaryContent resource type (preview)"
+title: "binaryContent resource type"
 description: "Represents content provided as a Base64 encoded binary data stream."
 author: "ArunGedela"
 ms.date: 04/08/2025
@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents content provided as a Base64-encoded binary data stream.
+
+Inherits from [contentBase](../resources/contentbase.md).
 
 ## Properties
 

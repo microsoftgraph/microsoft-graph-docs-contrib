@@ -16,7 +16,7 @@ request_body = ExportResultPostRequestBody(
 	display_name = "Export 4",
 	export_criteria = ExportCriteria.PartiallyIndexed,
 	export_location = ExportLocation.ResponsiveLocations | ExportLocation.NonresponsiveLocations,
-	additional_options = AdditionalOptions.TeamsAndYammerConversations | AdditionalOptions.CloudAttachments | AdditionalOptions.AllDocumentVersions | AdditionalOptions.SubfolderContents | AdditionalOptions.ListAttachments,
+	additional_options = AdditionalOptions.AdvancedIndexing | AdditionalOptions.SubfolderContents | AdditionalOptions.AllItemsInFolder | AdditionalOptions.ListAttachments | AdditionalOptions.TeamsAndYammerConversations | AdditionalOptions.HtmlTranscripts | AdditionalOptions.CloudAttachments | AdditionalOptions.IncludeFolderAndPath | AdditionalOptions.SplitSource | AdditionalOptions.CondensePaths | AdditionalOptions.FriendlyName | AdditionalOptions.IncludeReport,
 	export_format = ExportFormat.Eml,
 )
 

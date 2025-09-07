@@ -75,10 +75,6 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/deviceImag
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-cloudpcdeviceimages-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/list-cloudpcdeviceimages-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-cloudpcdeviceimages-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -130,14 +126,15 @@ Content-Type: application/json
       "expirationDate": "2024-06-11",
       "osBuildNumber": "21H2",
       "osStatus": "supported",
-      "operatingSystem": "Windows 10 Enterprise",
+      "operatingSystem": "Windows 11 Enterprise",
       "version": "0.0.1",
       "sourceImageResourceId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c58ffff/resourceGroups/Example/providers/Microsoft.Compute/images/exampleImageForDev",
       "lastModifiedDateTime": "2023-11-03T07:03:44.97Z",
       "status": "ready",
       "statusDetails": null,
       "errorCode": null,
-      "osVersionNumber": "10.0.22631.3593"
+      "osVersionNumber": "10.0.22631.3593",
+      "sizeInGB": 64
     }
   ]
 }

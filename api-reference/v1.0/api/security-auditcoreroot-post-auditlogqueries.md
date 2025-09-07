@@ -105,6 +105,7 @@ Content-Type: application/json
   "status": "String"
 }
 ```
+
 ---
 
 ### Response

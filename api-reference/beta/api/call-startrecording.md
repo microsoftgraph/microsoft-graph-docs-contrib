@@ -69,10 +69,6 @@ POST https://graph.microsoft.com/beta/communications/calls/02000980-58ea-4bf2-bb
 [!INCLUDE [sample-code](../includes/snippets/csharp/call-startrecording-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/call-startrecording-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/call-startrecording-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -87,10 +83,6 @@ POST https://graph.microsoft.com/beta/communications/calls/02000980-58ea-4bf2-bb
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/call-startrecording-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/call-startrecording-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

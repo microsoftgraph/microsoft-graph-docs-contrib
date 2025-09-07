@@ -84,10 +84,6 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/calendar-getschedule-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/calendar-getschedule-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/calendar-getschedule-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -127,7 +123,7 @@ Content-type: application/json
     "value": [
         {
             "scheduleId": "adelev@contoso.com",
-            "availabilityView": "000220000",
+            "availabilityView": "000220130",
             "scheduleItems": [
                 {
                     "isPrivate": false,
@@ -140,6 +136,54 @@ Content-type: application/json
                     },
                     "end": {
                         "dateTime": "2019-03-15T14:00:00.0000000",
+                        "timeZone": "Pacific Standard Time"
+                    }
+                },
+                {
+                    "subject": "free is represented by 0 in availabilityView",
+                    "status": "free",
+                    "start": {
+                        "dateTime": "2019-03-15T10:00:00.0000000",
+                        "timeZone": "Pacific Standard Time"
+                    },
+                    "end": {
+                        "dateTime": "2019-03-15T11:00:00.0000000",
+                        "timeZone": "Pacific Standard Time"
+                    }
+                },
+                {
+                    "subject": "workingElsewhere is also represented by 0 in availabilityView",
+                    "status": "workingElsewhere",
+                    "start": {
+                        "dateTime": "2019-03-15T11:00:00.0000000",
+                        "timeZone": "Pacific Standard Time"
+                    },
+                    "end": {
+                        "dateTime": "2019-03-15T12:00:00.0000000",
+                        "timeZone": "Pacific Standard Time"
+                    }
+                },
+                {
+                    "subject": "tentative is represented by 1 in availabilityView",
+                    "status": "tentative",
+                    "start": {
+                        "dateTime": "2019-03-15T15:00:00.0000000",
+                        "timeZone": "Pacific Standard Time"
+                    },
+                    "end": {
+                        "dateTime": "2019-03-15T16:00:00.0000000",
+                        "timeZone": "Pacific Standard Time"
+                    }
+                },
+                {
+                    "subject": "oof is represented by 3 in availabilityView",
+                    "status": "workingElsewhere",
+                    "start": {
+                        "dateTime": "2019-03-15T16:00:00.0000000",
+                        "timeZone": "Pacific Standard Time"
+                    },
+                    "end": {
+                        "dateTime": "2019-03-15T17:00:00.0000000",
                         "timeZone": "Pacific Standard Time"
                     }
                 }
@@ -161,7 +205,7 @@ Content-type: application/json
         },
         {
             "scheduleId": "meganb@contoso.com",
-            "availabilityView": "200220010",
+            "availabilityView": "200120010",
             "scheduleItems": [
                 {
                     "status": "busy",
@@ -175,7 +219,8 @@ Content-type: application/json
                     }
                 },
                 {
-                    "status": "busy",
+                    "subject": "tentative is represented by 1 and overwritten by the busy-appointment (2) starting from 12 to 13.",
+                    "status": "tentative",
                     "start": {
                         "dateTime": "2019-03-15T12:00:00.0000000",
                         "timeZone": "Pacific Standard Time"
@@ -186,7 +231,7 @@ Content-type: application/json
                     }
                 },
                 {
-                    "status": "tentative",
+                    "status": "busy",
                     "start": {
                         "dateTime": "2019-03-15T12:00:00.0000000",
                         "timeZone": "Pacific Standard Time"
@@ -267,4 +312,3 @@ Content-type: application/json
   "tocPath": ""
 }
 -->
-

@@ -1,5 +1,5 @@
 ---
-title: "policyScopeBase resource type (preview)"
+title: "policyScopeBase resource type"
 description: "Abstract base type defining the scope of applicability for a data governance policy, including locations, activities, and execution mode."
 author: "ArunGedela"
 ms.date: 04/08/2025
@@ -16,12 +16,14 @@ Namespace: microsoft.graph
 
 Abstract base type defining the scope of applicability for a data governance policy, including locations, activities, and execution mode.
 
+Used as a base type for more specific policy scopes like [policyTenantScope](../resources/policytenantscope.md) and [policyUserScope](../resources/policyuserscope.md).
+
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
-|activities|microsoft.graph.security.userActivityTypes| Flags specifying the user activities the calling application supports or is interested. Possible values are `none`, `uploadText`, `uploadFile`, `downloadText`, `downloadFile`. Required.|
-|executionMode|microsoft.graph.security.executionMode |Specifies how the policy should be executed. Possible values are `evaluateInline` and `evaluateOffline` Required.|
+|activities|microsoft.graph.security.userActivityTypes| Flags specifying the user activities the calling application supports or is interested. Possible values are `none`, `uploadText`, `uploadFile`, `downloadText`, `downloadFile`, `unknownFutureValue`. Required. This object is a multi-valued enumeration.|
+|executionMode|microsoft.graph.security.executionMode |Specifies how the policy should be executed. Possible values are `evaluateInline`, `evaluateOffline`, `unknownFutureValue`. Required.|
 |locations|Collection([microsoft.graph.policyLocation](../resources/policylocation.md))|The locations (like domains or URLs) to be protected. Required.|
 |policyActions|Collection([microsoft.graph.dlpActionInfo](../resources/dlpactioninfo.md))|The enforcement actions to take if the policy conditions are met within this scope. Required.|
 

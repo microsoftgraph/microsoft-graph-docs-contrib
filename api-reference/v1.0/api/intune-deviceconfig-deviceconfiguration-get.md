@@ -66,10 +66,6 @@ GET https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations/{devi
 [!INCLUDE [sample-code](../includes/snippets/csharp/intune-deviceconfig-deviceconfiguration-get-get-deviceconfiguration-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/intune-deviceconfig-deviceconfiguration-get-get-deviceconfiguration-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/intune-deviceconfig-deviceconfiguration-get-get-deviceconfiguration-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

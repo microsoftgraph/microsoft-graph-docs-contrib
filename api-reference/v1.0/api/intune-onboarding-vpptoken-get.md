@@ -66,10 +66,6 @@ GET https://graph.microsoft.com/v1.0/deviceAppManagement/vppTokens/{vppTokenId}
 [!INCLUDE [sample-code](../includes/snippets/csharp/intune-onboarding-vpptoken-get-get-vpptoken-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/intune-onboarding-vpptoken-get-get-vpptoken-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/intune-onboarding-vpptoken-get-get-vpptoken-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

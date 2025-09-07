@@ -2,7 +2,7 @@
 title: "authorizationPolicy resource type"
 description: "Represents a policy that can control authorization settings of Microsoft Entra ID."
 ms.localizationpriority: medium
-ms.custom: has-azure-ad-ps-ref
+ms.custom: has-azure-ad-ps-ref, sfi-ga-nochange
 author: "DougKirschner"
 ms.reviewer: msodsrbac
 ms.subservice: "entra-sign-in"

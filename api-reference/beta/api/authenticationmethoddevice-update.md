@@ -1,29 +1,36 @@
 ---
-title: "Create one or multiple hardwareOathTokenAuthenticationMethodDevice"
+title: "Create one or more hardwareOathTokenAuthenticationMethodDevice"
 description: "Create a new hardwareOathTokenAuthenticationMethodDevice object. Supports bulk creation."
 author: "luc-msft"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
-ms.date: 12/06/2024
+ms.date: 07/02/2024
 ---
 
-# Create one or multiple hardwareOathTokenAuthenticationMethodDevice
+# Create one or more hardwareOathTokenAuthenticationMethodDevice objects
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new hardwareOathTokenAuthenticationMethodDevice object. Supports bulk creation.
+Create one or more [hardwareOathTokenAuthenticationMethodDevice](../resources/hardwareoathtokenauthenticationmethoddevice.md) objects. This API supports two scenarios:
+- Create the new hardware tokens without assigning to users. You can then [assign to a user](authentication-post-hardwareoathmethods.md).
+- Create and assign any individual hardware tokens to users in the same request.
 
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
-[!INCLUDE [permissions-table](../includes/permissions/authenticationmethoddevice-post-hardwareoathdevices-permissions.md)]
+<!-- { "blockType": "permissions", "name": "authenticationmethoddevice_update" } -->
+[!INCLUDE [permissions-table](../includes/permissions/authenticationmethoddevice-update-permissions.md)]
 
-[!INCLUDE [rbac-authentication-methods-policy-apis-write](../includes/rbac-for-apis/rbac-authentication-methods-policy-apis-write.md)]
+> [!IMPORTANT]
+> When using delegated permissions with work or school accounts, the signed-in user must have an appropriate [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) or a custom role with the necessary permissions. The least privileged built-in role required for this operation is *Authentication Policy Administrator*.
+> 
+> To create and assign a hardware OATH token to a user in a single request, the signed-in user must also have:
+> - The *UserAuthenticationMethod.ReadWrite.All* delegated permission.
+> - Either *Authentication Administrator* (least privileged role for assigning hardware tokens to nonadmin users) or *Privileged Authentication Administrator* (least privileged role for assigning hardware tokens to admin users) role.
 
 ## HTTP request
 
@@ -107,10 +114,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-bulk-hardwareoathtokenauthenticationmethoddevice-from--csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-bulk-hardwareoathtokenauthenticationmethoddevice-from--cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)

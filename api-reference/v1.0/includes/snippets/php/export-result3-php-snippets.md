@@ -5,12 +5,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
-use Microsoft\Graph\Beta\GraphServiceClient;
-use Microsoft\Graph\Beta\Generated\Security\Cases\EdiscoveryCases\Item\Searches\Item\MicrosoftGraphSecurityExportResult\ExportResultPostRequestBody;
-use Microsoft\Graph\Beta\Generated\Models\Security\ExportCriteria;
-use Microsoft\Graph\Beta\Generated\Models\Security\ExportLocation;
-use Microsoft\Graph\Beta\Generated\Models\Security\AdditionalOptions;
-use Microsoft\Graph\Beta\Generated\Models\Security\ExportFormat;
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Security\Cases\EdiscoveryCases\Item\Searches\Item\MicrosoftGraphSecurityExportResult\ExportResultPostRequestBody;
+use Microsoft\Graph\Generated\Models\Security\ExportCriteria;
+use Microsoft\Graph\Generated\Models\Security\ExportLocation;
+use Microsoft\Graph\Generated\Models\Security\AdditionalOptions;
+use Microsoft\Graph\Generated\Models\Security\ExportFormat;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

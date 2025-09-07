@@ -68,6 +68,16 @@ items:
     href: ../../api/sitesettings-get.md
   - name: Get delta
     href: ../../api/site-delta.md
+  - name: Open extensions
+    items:
+    - name: Create open extension
+      href: ../../api/opentypeextension-post-opentypeextension.md
+    - name: Get open extension
+      href: ../../api/opentypeextension-get.md
+    - name: Update open extension
+      href: ../../api/opentypeextension-update.md
+    - name: Delete open extension
+      href: ../../api/opentypeextension-delete.md
 - name: List
   items:
   - name: List

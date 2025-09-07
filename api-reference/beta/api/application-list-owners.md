@@ -1,7 +1,7 @@
 ---
 title: "List owners of an application"
 description: "Retrieve a list of owners for an application."
-author: "sureshja"
+author: "Jackson-Woods"
 ms.localizationpriority: medium
 ms.subservice: "entra-applications"
 doc_type: apiPageType
@@ -25,6 +25,18 @@ Choose the permission or permissions marked as least privileged for this API. Us
 [!INCLUDE [permissions-table](../includes/permissions/application-list-owners-permissions.md)]
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
+
+> [!IMPORTANT]
+> 
+> In delegated scenarios with work or school accounts, the signed-in user must be assigned a supported [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) or a custom role with a supported role permission. The following least privileged roles are supported for this operation.
+> - A non-admin member or guest user with default user permissions
+> - Application Developer - for the application they own
+> - Directory Readers
+> - Global Secure Access Administrator
+> - Global Reader
+> - Hybrid Identity Administrator
+> - Cloud Application Administrator
+> - Application Administrator
 
 ## HTTP request
 
@@ -64,10 +76,6 @@ GET https://graph.microsoft.com/beta/applications/bbec3106-565f-4907-941e-96b4db
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/application-get-owners-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/application-get-owners-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

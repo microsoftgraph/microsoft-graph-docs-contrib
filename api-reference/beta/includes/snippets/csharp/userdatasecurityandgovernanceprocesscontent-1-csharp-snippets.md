@@ -9,7 +9,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 // Dependencies
 using Microsoft.Graph.Beta.Me.DataSecurityAndGovernance.ProcessContent;
 using Microsoft.Graph.Beta.Models;
-using Microsoft.Kiota.Abstractions.Serialization;
 
 var requestBody = new ProcessContentPostRequestBody
 {
@@ -38,6 +37,16 @@ var requestBody = new ProcessContentPostRequestBody
 		{
 			Activity = UserActivityType.UploadText,
 		},
+		DeviceMetadata = new DeviceMetadata
+		{
+			DeviceType = "Unmanaged",
+			OperatingSystemSpecifications = new OperatingSystemSpecifications
+			{
+				OperatingSystemPlatform = "Windows 11",
+				OperatingSystemVersion = "10.0.26100.0",
+			},
+			IpAddress = "127.0.0.1",
+		},
 		ProtectedAppMetadata = new ProtectedApplicationMetadata
 		{
 			Name = "PC Purview API Explorer",
@@ -52,28 +61,6 @@ var requestBody = new ProcessContentPostRequestBody
 		{
 			Name = "PC Purview API Explorer",
 			Version = "0.2",
-		},
-		AdditionalData = new Dictionary<string, object>
-		{
-			{
-				"deviceMetadata" , new UntypedObject(new Dictionary<string, UntypedNode>
-				{
-					{
-						"operatingSystemSpecifications", new UntypedObject(new Dictionary<string, UntypedNode>
-						{
-							{
-								"operatingSystemPlatform", new UntypedString("Windows 11")
-							},
-							{
-								"operatingSystemVersion", new UntypedString("10.0.26100.0")
-							},
-						})
-					},
-					{
-						"ipAddress", new UntypedString("127.0.0.1")
-					},
-				})
-			},
 		},
 	},
 };

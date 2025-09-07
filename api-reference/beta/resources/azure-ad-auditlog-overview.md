@@ -6,6 +6,7 @@ doc_type: conceptualPageType
 ms.subservice: "entra-monitoring-health"
 author: "egreenberg14"
 ms.date: 06/11/2025
+ms.custom: sfi-ga-nochange
 ---
 
 # Audit logs API overview

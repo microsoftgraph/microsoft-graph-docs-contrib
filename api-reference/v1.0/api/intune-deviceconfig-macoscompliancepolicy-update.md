@@ -119,10 +119,6 @@ Content-length: 849
 [!INCLUDE [sample-code](../includes/snippets/csharp/intune-deviceconfig-macoscompliancepolicy-update-update-macoscompliancepolicy-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/intune-deviceconfig-macoscompliancepolicy-update-update-macoscompliancepolicy-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/intune-deviceconfig-macoscompliancepolicy-update-update-macoscompliancepolicy-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

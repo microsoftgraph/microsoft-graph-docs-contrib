@@ -3,8 +3,9 @@ title: "Microsoft Graph Data Connect app authorization"
 description: "Learn how global administrators can authorize Microsoft Graph Data Connect apps in the Microsoft 365 admin center."
 author: "michaelvenables"
 ms.localizationpriority: high
-ms.custom: scenarios:getting-started
+ms.custom: scenarios:getting-started, sfi-image-nochange, sfi-ga-nochange
 ms.date: 11/07/2024
+ms.topic: article
 ---
 
 # Microsoft Graph Data Connect app authorization
@@ -15,7 +16,7 @@ The authorization experience for Microsoft Graph Data Connect apps is built in t
 
 ## App summary view
 
-The landing page of the Data Connect applications portal provides a quick view of all Data Connect applications that you might be interested in, as shown in the following image.
+The landing page of the Data Connect applications portal provides a quick view of all Data Connect applications that you are interested in, as shown in the following image.
 
 ![Screenshot of a quick view of apps in the Data Connect portal.](images/authorization-app-summary-table.png)
 
@@ -24,7 +25,7 @@ You find the following types of applications in the portal:
 - **Single-tenant apps** — Applications that are registered in your tenant, and require access to data. These apps are typically enterprise scenarios.
 - **Multitenant applications** — Applications that are hosted in another tenant, and require access to data from your tenant. These apps are typically independent software vendor (ISV) scenarios. Review these apps carefully. When you authorize multitenant apps, data from your tenant can be migrated to the app developer's tenant.
 
-All single-tenant apps are populated in the table by default. Only approved, denied, or expired multitenant apps are included in the table. Other apps might be shown in the table with the following statuses:
+All single-tenant apps are populated in the table by default. Only approved, denied, or expired multitenant apps are included in the table. Other apps are shown in the table with the following statuses:
 
 - **Pending authorization** — Apps that are pending action. This status is only possible for single-tenant apps. Apps in this state always fail at runtime.
 - **Approved** — Apps that an admin approved to access Microsoft 365 data for your tenant.

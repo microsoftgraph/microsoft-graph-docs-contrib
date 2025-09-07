@@ -5,7 +5,8 @@ author: "sumithra-maran"
 ms.localizationpriority: medium
 ms.subservice: "exchange"
 doc_type: conceptualPageType
-ms.date: 11/07/2024
+ms.date: 07/11/2025
+ms.topic: upgrade-and-migration-article
 ---
 
 # Migrate Exchange Web Services (EWS) apps to Microsoft Graph
@@ -31,9 +32,8 @@ Microsoft Graph offers [Graph Explorer](https://developer.microsoft.com/graph/gr
 
 Microsoft Graph APIs are REST-based, where EWS APIs are SOAP-based. The advantages of using REST-based protocols include faster JSON serialization and lower network usage.
 
-## Next steps
+## Related content
 
-- Learn about [authentication differences](migrate-exchange-web-services-authentication.md) in Microsoft Graph and EWS.
-- Review [API mappings](migrate-exchange-web-services-api-mapping.md) to find Microsoft Graph equivalents for the EWS APIs you currently use.
-- Explore [Microsoft Graph](/graph/overview) concepts and practices.
-- Use [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) to experiment with Microsoft Graph.
+- [Authentication differences between EWS and Microsoft Graph](migrate-exchange-web-services-authentication.md)
+- [EWS to Microsoft Graph API mappings](migrate-exchange-web-services-api-mapping.md)
+- [Migrate from EWS to Microsoft Graph with GitHub Copilot](https://aka.ms/migTut2)

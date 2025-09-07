@@ -83,10 +83,6 @@ Content-length: 193
 [!INCLUDE [sample-code](../includes/snippets/csharp/intune-books-iosvppebookassignment-create-create-iosvppebookassignment-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/intune-books-iosvppebookassignment-create-create-iosvppebookassignment-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/intune-books-iosvppebookassignment-create-create-iosvppebookassignment-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

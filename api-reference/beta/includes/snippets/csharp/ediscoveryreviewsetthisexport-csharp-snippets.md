@@ -14,7 +14,7 @@ var requestBody = new ExportPostRequestBody
 {
 	OutputName = "Export via API",
 	Description = "Export for the Contoso investigation",
-	ExportOptions = ExportOptions.OriginalFiles | ExportOptions.Tags | ExportOptions.SplitSource | ExportOptions.IncludeFolderAndPath | ExportOptions.FriendlyName | ExportOptions.CondensePaths | ExportOptions.OptimizedPartitionSize,
+	ExportOptions = ExportOptions.OriginalFiles | ExportOptions.Tags | ExportOptions.SplitSource | ExportOptions.IncludeFolderAndPath | ExportOptions.FriendlyName | ExportOptions.CondensePaths,
 	ExportStructure = ExportFileStructure.Msg,
 };
 

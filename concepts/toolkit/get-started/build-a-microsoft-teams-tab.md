@@ -4,11 +4,15 @@ description: "Get started building a Microsoft Teams tab using the Microsoft Gra
 ms.localizationpriority: medium
 author: sebastienlevert
 ms.date: 11/07/2024
+ms.topic: how-to
 ---
 
 # Build a Microsoft Teams tab with the Microsoft Graph Toolkit
 
-This topic covers how to get started using the Microsoft Graph Toolkit in a Microsoft Teams solution. This guide is for a single page app without single sign-on (SSO) and does not require a backend. It uses the Teams Toolkit as the scaffolding system.
+> [!CAUTION]
+> The Microsoft Graph Toolkit is deprecated. The retirement period begins September 1, 2025, with full retirement planned for August 28, 2026. Developers should migrate to using the Microsoft Graph SDKs or other supported Microsoft Graph tools for building web experiences. For more information, see the [deprecation announcement](https://devblogs.microsoft.com/microsoft365dev/microsoft-graph-toolkit-retirement/).
+
+This topic covers how to get started using the Microsoft Graph Toolkit in a Microsoft Teams solution. This guide is for a single-page app without single sign-on (SSO) and does not require a backend. It uses the Teams Toolkit as the scaffolding system.
 
 Building a tab involves the following steps:
 
@@ -145,7 +149,7 @@ Add your component between the `<></>` at the bottom of the file:
 1. Select a target Microsoft 365 application where the personal tabs can run: **Debug in Teams**, **Debug in Outlook**, or **Debug in the Microsoft 365 app**, and choose **Run and Debug**.
 
 > **Note**
-> If you receive the HTTPS error when running your tab `It looks like the webpage at **https://localhost:53000/index.html#/tab** might be having issues, or it may have moved permanently to a new web address`, see the following articles:
+> If you receive the HTTPS error when running your tab `It looks like the webpage at **https://localhost:53000/index.html#/tab** might be having issues, or it might have moved permanently to a new web address`, see the following articles:
 >
 > - [What to do if I do not want to install the development certificate?](https://github.com/OfficeDev/TeamsFx/blob/dev/docs/fx-core/localdebug-help.md#what-to-do-if-i-do-not-want-to-install-the-development-certificate) (Windows)
 > - [What to do if I do not want to install the development certificate?](https://github.com/OfficeDev/TeamsFx/blob/dev/docs/fx-core/localdebug-help.md#what-to-do-if-i-do-not-want-to-install-the-development-certificate) (WSL)

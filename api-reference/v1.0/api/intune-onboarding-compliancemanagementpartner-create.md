@@ -119,10 +119,6 @@ Content-length: 1186
 [!INCLUDE [sample-code](../includes/snippets/csharp/intune-onboarding-compliancemanagementpartner-create-create-compliancemanagementpartner-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/intune-onboarding-compliancemanagementpartner-create-create-compliancemanagementpartner-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/intune-onboarding-compliancemanagementpartner-create-create-compliancemanagementpartner-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

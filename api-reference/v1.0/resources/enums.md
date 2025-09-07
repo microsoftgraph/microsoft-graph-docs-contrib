@@ -6,11 +6,88 @@ ms.subservice: "non-product-specific"
 ms.date: 06/23/2025
 author: "MSGraphDocsvTeam"
 doc_type: enumPageType
+ms.custom: sfi-ropc-nochange
 ---
 
 # Enum values
 
 Namespace: microsoft.graph
+
+### responseFeedbackType values
+
+| Member |
+| -------------------- |
+| none |
+| notDetected |
+| veryUnpleasant |
+| unpleasant |
+| neutral |
+| pleasant |
+| veryPleasant |
+| unknownFutureValue |
+
+### responseEmotionType values
+
+| Member |
+| -------------------- |
+| none |
+| confident |
+| excited |
+| happy |
+| motivated |
+| peaceful |
+| ambitious |
+| cheerful |
+| comfortable |
+| creative |
+| determined |
+| energized |
+| focused |
+| fulfilled |
+| grateful |
+| included |
+| inspired |
+| optimistic |
+| proud |
+| successful |
+| valuable |
+| annoyed |
+| bored |
+| calm |
+| confused |
+| glad |
+| content |
+| pensive |
+| reserved |
+| restless |
+| shocked |
+| tired |
+| angry |
+| depressed |
+| exhausted |
+| lonely |
+| nervous |
+| anxious |
+| apathetic |
+| concerned |
+| disappointed |
+| frightened |
+| frustrated |
+| hopeless |
+| hurt |
+| jealous |
+| miserable |
+| overwhelmed |
+| skeptical |
+| stressed |
+| stuck |
+| worthless |
+| awed |
+| ashamed |
+| curious |
+| sensitive |
+| sad |
+| unknownFutureValue |
 
 ### virtualEventRegistrationPredefinedQuestionLabel values
 
@@ -3498,3 +3575,55 @@ Possible values for user account types (group membership), per Windows definitio
 | android |
 | linux   |
 | unknownFutureValue |
+
+### whatIfAnalysisReasons values 
+
+|Member|
+|:---|
+|notSet|
+|notEnoughInformation|
+|invalidCondition|
+|users|
+|workloadIdentities|
+|application|
+|userActions|
+|authenticationContext|
+|devicePlatform|
+|devices|
+|clientApps|
+|location|
+|signInRisk|
+|emptyPolicy|
+|invalidPolicy|
+|policyNotEnabled|
+|userRisk|
+|time|
+|insiderRisk|
+|authenticationFlow|
+|unknownFutureValue|
+
+### insiderRiskLevel values 
+
+|Member|
+|:---|
+|none|
+|minor|
+|moderate|
+|elevated|
+|unknownFutureValue|
+
+### userAction values 
+
+|Member|
+|:---|
+|registerSecurityInformation|
+|registerOrJoinDevices|
+|unknownFutureValue|
+
+### restoreJobType values 
+
+|Member|
+|:---|
+|standard|
+|bulk|
+|unknownFutureValue|

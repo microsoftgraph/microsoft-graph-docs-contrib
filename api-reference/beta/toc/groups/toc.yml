@@ -16,12 +16,12 @@ items:
     href: ../../api/group-get.md
   - name: Update
     href: ../../api/group-update.md
+  - name: Upsert
+    href: ../../api/group-upsert.md
   - name: Delete
     href: ../../api/group-delete.md
   - name: Get delta
     href: ../../api/group-delta.md
-  - name: Upsert
-    href: ../../api/group-upsert.md
   - name: Group management
     items:
     - name: List members
@@ -238,3 +238,11 @@ items:
     href: ../../api/grouplifecyclepolicy-removegroup.md
   - name: Renew group
     href: ../../api/grouplifecyclepolicy-renewgroup.md
+- name: On-premises sync behavior (Source of Authority)
+  items:
+  - name: On-premises sync behavior (Source of Authority)
+    href: ../../resources/onpremisessyncbehavior.md
+  - name: Get
+    href: ../../api/onpremisessyncbehavior-get.md
+  - name: Update
+    href: ../../api/onpremisessyncbehavior-update.md

@@ -63,10 +63,6 @@ GET https://graph.microsoft.com/v1.0/deviceAppManagement/defaultManagedAppProtec
 [!INCLUDE [sample-code](../includes/snippets/csharp/intune-mam-defaultmanagedappprotection-list-list-defaultmanagedappprotections-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/intune-mam-defaultmanagedappprotection-list-list-defaultmanagedappprotections-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/intune-mam-defaultmanagedappprotection-list-list-defaultmanagedappprotections-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

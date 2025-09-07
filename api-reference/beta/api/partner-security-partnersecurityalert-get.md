@@ -16,7 +16,7 @@ Namespace: microsoft.graph.partner.security
 
 Read the properties and relationships of a [partnerSecurityAlert](../resources/partner-security-partnersecurityalert.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -70,10 +70,6 @@ GET https://graph.microsoft.com/beta/security/partner/securityAlerts/d8b202fc-a2
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-partnersecurityalert-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-partnersecurityalert-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

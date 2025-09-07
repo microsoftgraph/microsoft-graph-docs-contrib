@@ -32,6 +32,7 @@ const processContentResponse = {
           activity: 'uploadText'
        },
        deviceMetadata: {
+          deviceType: 'Unmanaged',
           operatingSystemSpecifications: {
              operatingSystemPlatform: 'Windows 11',
              operatingSystemVersion: '10.0.26100.0' 

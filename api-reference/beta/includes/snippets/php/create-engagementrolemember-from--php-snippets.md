@@ -12,8 +12,10 @@ use Microsoft\Graph\Beta\Generated\Models\EngagementRoleMember;
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new EngagementRoleMember();
-$requestBody->setOdataType('#microsoft.graph.engagementrolemember');
-$requestBody->setUserId('String');
+$additionalData = [
+	'user@odata.bind' => 'https://graph.microsoft.com/beta/users(\'userId\')',
+];
+$requestBody->setAdditionalData($additionalData);
 
 $result = $graphServiceClient->employeeExperience()->roles()->byEngagementRoleId('engagementRole-id')->members()->post($requestBody)->wait();
 
