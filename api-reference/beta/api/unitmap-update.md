@@ -161,7 +161,7 @@ Content-Type: application/json
   "tocPath": "",
   "suppressions": [
       "Error: microsoft.graph.microsoft.graph/places:
-      /places/{var}/microsoft.graph.building/map/levels/{var}/units/{var}
+      /places/{var}/microsoft.graph.building/map/levels/{var}/units/test{var}
       Uri path requires navigating into unknown object hierarchy: missing property 'microsoft.graph.building' on 'place'. Possible issues:
   	 1) Doc bug where 'microsoft.graph.building' isn't defined on the resource.
   	 2) Doc bug where 'microsoft.graph.building' is an example key and should instead be replaced with a placeholder like {item-id} or declared in the sampleKeys annotation.
