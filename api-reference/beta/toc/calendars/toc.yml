@@ -294,50 +294,10 @@ items:
       href: ../../resources/building.md
     - name: Ingest map file
       href: ../../api/building-ingestmapfile.md
-  - name: Building map
-    items:
-    - name: Building map
-      href: ../../resources/buildingmap.md
-    - name: Get
-      href: ../../api/buildingmap-get.md
-    - name: Delete
-      href: ../../api/buildingmap-delete.md
-    - name: List footprints
-      href: ../../api/buildingmap-list-footprints.md
-    - name: List levels
-      href: ../../api/buildingmap-list-levels.md
   - name: Desk
     href: ../../resources/desk.md
-  - name: Fixture map
-    items:
-    - name: Fixture map
-      href: ../../resources/fixturemap.md
-    - name: List
-      href: ../../api/levelmap-list-fixtures.md
-    - name: Update
-      href: ../../api/fixturemap-update.md
-    - name: Delete
-      href: ../../api/fixturemap-delete.md
   - name: Floor
     href: ../../resources/floor.md
-  - name: Footprint map
-    items:
-    - name: Footprint map
-      href: ../../resources/footprintmap.md
-    - name: List
-      href: ../../api/buildingmap-list-footprints.md
-  - name: Level map
-    items:
-    - name: Level map
-      href: ../../resources/levelmap.md
-    - name: List
-      href: ../../api/buildingmap-list-levels.md
-    - name: List fixtures
-      href: ../../api/levelmap-list-fixtures.md
-    - name: List sections
-      href: ../../api/levelmap-list-sections.md
-    - name: List units
-      href: ../../api/levelmap-list-units.md
   - name: Room
     href: ../../resources/room.md
   - name: Room list
@@ -352,26 +312,6 @@ items:
       href: ../../api/place-update.md
   - name: Section
     href: ../../resources/section.md
-  - name: Section map
-    items:
-    - name: Section map
-      href: ../../resources/sectionmap.md
-    - name: List
-      href: ../../api/levelmap-list-sections.md
-    - name: Update
-      href: ../../api/sectionmap-update.md
-    - name: Delete
-      href: ../../api/sectionmap-delete.md
-  - name: Unit map
-    items:
-    - name: Unit map
-      href: ../../resources/unitmap.md
-    - name: List
-      href: ../../api/levelmap-list-units.md
-    - name: Update
-      href: ../../api/unitmap-update.md
-    - name: Delete
-      href: ../../api/unitmap-delete.md
   - name: Workspace
     href: ../../resources/workspace.md
   - name: Devices (preview)
@@ -392,14 +332,78 @@ items:
         href: ../../api/workplacesensordevice-delete.md
       - name: Ingest telemetry
         href: ../../api/workplacesensordevice-ingesttelemetry.md
+  - name: Maps (preview)
+    items:
+    - name: Building map
+      items:
+      - name: Building map
+        href: ../../resources/buildingmap.md
+      - name: Get
+        href: ../../api/buildingmap-get.md
+      - name: Delete
+        href: ../../api/buildingmap-delete.md
+      - name: List footprints
+        href: ../../api/buildingmap-list-footprints.md
+      - name: List levels
+        href: ../../api/buildingmap-list-levels.md
+    - name: Fixture map
+      items:
+      - name: Fixture map
+        href: ../../resources/fixturemap.md
+      - name: List
+        href: ../../api/levelmap-list-fixtures.md
+      - name: Update
+        href: ../../api/fixturemap-update.md
+      - name: Delete
+        href: ../../api/fixturemap-delete.md
+    - name: Footprint map
+      items:
+      - name: Footprint map
+        href: ../../resources/footprintmap.md
+      - name: List
+        href: ../../api/buildingmap-list-footprints.md
+    - name: Level map
+      items:
+      - name: Level map
+        href: ../../resources/levelmap.md
+      - name: List
+        href: ../../api/buildingmap-list-levels.md
+      - name: List fixtures
+        href: ../../api/levelmap-list-fixtures.md
+      - name: List sections
+        href: ../../api/levelmap-list-sections.md
+      - name: List units
+        href: ../../api/levelmap-list-units.md
+    - name: Section map
+      items:
+      - name: Section map
+        href: ../../resources/sectionmap.md
+      - name: List
+        href: ../../api/levelmap-list-sections.md
+      - name: Update
+        href: ../../api/sectionmap-update.md
+      - name: Delete
+        href: ../../api/sectionmap-delete.md
+    - name: Unit map
+      items:
+      - name: Unit map
+        href: ../../resources/unitmap.md
+      - name: List
+        href: ../../api/levelmap-list-units.md
+      - name: Update
+        href: ../../api/unitmap-update.md
+      - name: Delete
+        href: ../../api/unitmap-delete.md
+    - name: Complex types
+      items:
+      - name: Import building map setting
+        href: ../../resources/importbuildingmapsetting.md
   - name: Complex types
     items:
     - name: Assigned place mode
       href: ../../resources/assignedplacemode.md
     - name: Drop in place mode
       href: ../../resources/dropinplacemode.md
-    - name: Import building map setting
-      href: ../../resources/importbuildingmapsetting.md
     - name: Mailbox details
       href: ../../resources/mailboxdetails.md
     - name: Offline place mode
