@@ -263,23 +263,16 @@
           "resources": [
             "place",
             "building",
-            "buildingMap",
             "desk",
-            "fixtureMap",
             "floor",
-            "footprintMap",
-            "levelMap",
             "room",
             "roomList",
             "section",
-            "sectionMap",
-            "unitMap",
             "workspace"
           ],
           "complexTypes": [
             "assignedPlaceMode",
             "dropInPlaceMode",
-            "importBuildingMapSetting",
             "mailboxDetails",
             "offlinePlaceMode",
             "placeMode",
@@ -292,7 +285,21 @@
               "resources":[
                 "workplaceSensorDevice"
               ]
-            }
+            },
+            {
+             "name": "Maps (preview)",
+             "resources":[
+               "buildingMap",
+               "fixtureMap",
+               "footprintMap",
+               "levelMap",
+               "sectionMap",
+               "unitMap"
+             ],
+              "complexTypes": [
+                "importBuildingMapSetting"
+              ]
+             }
            ]
          }
       ]
