@@ -38,7 +38,7 @@ The following precedence is used for how session states are aggregated, with "A 
 | Busy                     | `Busy / Busy`                            | **Yes**                 |
 | In a call                | `Busy / InACall`                         | **Yes**                 |
 | In a meeting             | `Busy / InAMeeting`                      | **No** *                |
-| In a call, out of office | `Busy / InACall + OOF`           m       | **No** *                |
+| In a call, out of office | `Busy / InACall + OOF`                   | **No** *                |
 | Do not disturb           | `DoNotDisturb / DoNotDisturb`            | **Yes**                 |
 | Presenting               | `DoNotDisturb / Presenting`              | **Yes**                 |
 | Focusing                 | `DoNotDisturb / Focusing`                | **No** *                |
