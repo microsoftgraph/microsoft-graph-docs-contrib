@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Read the properties and relationships of [fraudProtectionProvider](../resources/fraudprotectionprovider.md) object. The following derived types are currently supported.
 
-- [arkosefraudprotectionprovider](../resources/arkosefraudprotectionprovider.md) resource type
+- [arkoseFraudProtectionProvider](../resources/arkosefraudprotectionprovider.md) resource type
 
 ## Permissions
 
@@ -36,12 +36,12 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET identity/riskprevention/fraudprotectionproviders/{fraudProtectionProviderId}
+GET /identity/riskprevention/fraudprotectionproviders/{fraudProtectionProviderId}
 ```
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -85,19 +85,14 @@ The following example shows the response.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/riskPrevention/fraudProtectionProviders/$entity",
-    "value": [
-        {
-            "@odata.type": "#microsoft.graph.arkoseFraudProtectionProvider",
-            "id": "0bb2618b-51f7-4e83-bcb8-84e70f7cf84d",
-            "displayName": "Arkose Sign-Up Protection",
-            "publicKey": "A1EE42E0-C88B-47FE-A176-5E9FB8F116FB",
-            "clientSubDomain": "client-api",
-            "verifySubDomain": "verify-api"
-        }
-     ]
+    "@odata.type": "#microsoft.graph.arkoseFraudProtectionProvider",
+    "id": "0bb2618b-51f7-4e83-bcb8-84e70f7cf84d",
+    "displayName": "Arkose Sign-Up Protection",
+    "publicKey": "00001111-aaaa-2222-bbbb-3333cccc4444",
+    "clientSubDomain": "client-api",
+    "verifySubDomain": "verify-api"
 }
 ```
 

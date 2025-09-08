@@ -50,23 +50,22 @@ POST /identity/riskPrevention/fraudProtectionProviders
 
 In the request body, supply a JSON representation of the [fraudProtectionProvider](../resources/fraudprotectionprovider.md) object.
 
-You can specify the following properties when creating a **fraudProtectionProvider**.
+You can specify the following properties when creating a **fraudProtectionProvider**.  You must specify the **@odata.type** property to specify the type of **fraudProtectionProvider** to create; for example, `@odata.type": "microsoft.graph.arkoseFraudProtectionProvider"`.
 
-**TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The unique identifier for this fraud protection provider configuration. Required. Inherited from [entity](../resources/entity.md). Inherits from [entity](../resources/entity.md)|
+|id|String|The unique identifier for this fraud protection provider configuration. Inherited from [entity](../resources/entity.md).|
 |displayName|String|The display name of this fraud protection provider configuration. Required. Inherited from [fraudProtectionProvider](../resources/fraudprotectionprovider.md).|
-|privateKey|String|Log into the Arkose Portal, find the value under Settings>Keys. If you need help with your keys, contact your Arkose Customer Success Manager. Required.|
-|publicKey|String|Log into the Arkose Portal, find the value under Settings>Keys. If you need help with your keys, contact your Arkose Customer Success Manager. Required.|
-|verifySubDomain|String|The verifySubDomain is used to invoke the Arkose service from the Microsoft authentication server. Request from your Arkose Customer Success Manager. If Arkose does not provide a custom value, enter: verify-api. Required.|
-|clientSubDomain|String|The clientSubDomain is used to invoke the Arkose service from the client application. Request from your Arkose Customer Success Manager. If Arkose does not provide a custom value, enter: client-api. Required.|
+|privateKey|String|The private key available on the Arkose Portal. Contact your Arkose Customer Success Manager for assistance with your keys. Required.|
+|publicKey|String|The public key available on the Arkose Portal. Contact your Arkose Customer Success Manager for assistance with your keys. Required.|
+|verifySubDomain|String|Used to invoke the Arkose service from the Microsoft authentication server. Request from your Arkose Customer Success Manager or use the default `verify-api` value. Required.|
+|clientSubDomain|String|Used to invoke the Arkose service from the client application. Request from your Arkose Customer Success Manager or use the default `client-api` value. Required.|
 
 
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [fraudProtectionProvider](../resources/fraudprotectionprovider.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [fraudProtectionProvider](../resources/fraudprotectionprovider.md) object in the response body. The **@odata.type** property specifies the type of the created object.
 
 ## Examples
 

@@ -4,7 +4,7 @@ description: "Represents the configuration of a specific third-party fraud prote
 author: "more-rasika"
 ms.date: 08/05/2025
 ms.localizationpriority: medium
-ms.subservice: "identity-and-sign-in
+ms.subservice: "identity-and-sign-in"
 doc_type: resourcePageType
 ---
 

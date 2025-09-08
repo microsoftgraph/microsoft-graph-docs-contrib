@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-PATCH identity/riskprevention/fraudprotectionproviders/{fraudProtectionProviderId}
+PATCH /identity/riskprevention/fraudprotectionproviders/{fraudProtectionProviderId}
 ```
 
 ## Request headers
@@ -47,20 +47,20 @@ PATCH identity/riskprevention/fraudprotectionproviders/{fraudProtectionProviderI
 ## Request body
 
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
-
+You must specify the **@odata.type** property and the value of the [fraudProtectionProvider](../resources/fraudprotectionprovider.md) object type to update. For example, `"@odata.type": "#microsoft.graph.arkoseFraudProtectionProvider"`.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|The display name of this Arkose fraud protection provider configuration. Optional.|
-|privateKey|String|Log into the Arkose Portal, find the value under Settings>Keys. If you need help with your keys, contact your Arkose Customer Success Manager. Optional.|
-|publicKey|String|Log into the Arkose Portal, find the value under Settings>Keys. If you need help with your keys, contact your Arkose Customer Success Manager. Optional.|
-|verifySubDomain|String|The verifySubDomain is used to invoke the Arkose service from the Microsoft authentication server. Request from your Arkose Customer Success Manager. If Arkose does not provide a custom value, enter: verify-api. Optional.|
-|clientSubDomain|String|The clientSubDomain is used to invoke the Arkose service from the client application. Request from your Arkose Customer Success Manager. If Arkose does not provide a custom value, enter: client-api. Optional.|
+|displayName|String|The display name of the fraud protection provider configuration. Optional.|
+|privateKey|String|The private key available on the Arkose Portal. Contact your Arkose Customer Success Manager for assistance with your keys. Optional.|
+|publicKey|String|The public key available on the Arkose Portal. Contact your Arkose Customer Success Manager for assistance with your keys. Optional.|
+|verifySubDomain|String|Used to invoke the Arkose service from the Microsoft authentication server. Request from your Arkose Customer Success Manager or use the default `verify-api` value. Optional.|
+|clientSubDomain|String|Used to invoke the Arkose service from the client application. Request from your Arkose Customer Success Manager or use the default `client-api` value. Optional.|
 
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [fraudProtectionProvider](../resources/fraudprotectionprovider.md) object in the response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 

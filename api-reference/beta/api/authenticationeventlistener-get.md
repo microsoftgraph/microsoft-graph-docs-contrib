@@ -126,7 +126,7 @@ Content-Type: application/json
             "includeApplications@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/authenticationEventListeners('6fc5012e-7665-43d6-9708-4370863f4e6e')/microsoft.graph.onTokenIssuanceStartListener/conditions/applications/includeApplications",
             "includeApplications": [
                 {
-                    "appId": "77552a27-2fbf-4fb0-873e-af165ec071d5"
+                    "appId": "00001111-aaaa-2222-bbbb-3333cccc4444"
                 }
             ]
         }

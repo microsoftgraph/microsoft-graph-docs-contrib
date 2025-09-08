@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A managed handler that defines what third party fraud protection is enabled or disabled in an external identities user flow for Microsoft Entra external tenants.
+A managed handler that defines what third-party fraud protection is enabled or disabled in an external identities user flow for Microsoft Entra ID external tenants.
 
 Inherits from [onFraudProtectionLoadStartHandler](../resources/onfraudprotectionloadstarthandler.md).
 
@@ -22,7 +22,7 @@ Inherits from [onFraudProtectionLoadStartHandler](../resources/onfraudprotection
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|signUp|[fraudProtectionConfiguration](../resources/fraudprotectionconfiguration.md)|Specifies the fraud protection configuration applied|
+|signUp|[fraudProtectionConfiguration](../resources/fraudprotectionconfiguration.md)|Specifies the configuration of the fraud protection configuration for sign-up events.|
 
 ## Relationships
 None.

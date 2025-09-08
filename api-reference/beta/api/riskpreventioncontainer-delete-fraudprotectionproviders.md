@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-DELETE /identity/riskPrevention/fraudProtectionProviders/$ref
+DELETE /identity/riskPrevention/fraudProtectionProviders/{id}
 ```
 
 ## Request headers
