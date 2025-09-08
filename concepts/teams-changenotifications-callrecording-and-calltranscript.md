@@ -19,7 +19,7 @@ This article describes scenarios for the **transcript** and **recording** resour
 
 ## Subscribe to transcripts available at the tenant-level
 
-To get change notifications for any transcript available for any online meeting in a tenant, subscribe to `communications/onlineMeetings/getAllTranscripts`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification. The notification for a transcript is sent only if the subscription happens before the transcription starts. This subscription supports scheduled [onlineMeetings](/graph/api/resources/onlinemeeting).
+To get change notifications for any transcript available for any online meeting in a tenant, subscribe to `communications/onlineMeetings/getAllTranscripts`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification. The notification for a transcript is sent only if the subscription happens before the transcription starts. This subscription supports scheduled [onlineMeetings](../api-reference/v1.0/resources/onlinemeeting.md).
 
 > [!NOTE]
 > This subscription doesn't currently support private channel meetings.
@@ -83,7 +83,7 @@ One of the following permissions is required to subscribe to `communications/onl
 
 ### **For ad hoc calls**
 
-To get change notifications for any transcript available for a particular ad hoc call, subscribe to `/communications/adhocCalls/{callId}/transcripts`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification. The notification for a transcript is sent only if the subscription happens before the transcription starts. This subscription supports unscheduled [ad hoc calls](../api-reference/beta/resources/adhoccall.md)
+To get change notifications for any transcript available for a particular ad hoc call, subscribe to `/communications/adhocCalls/{callId}/transcripts`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification. The notification for a transcript is sent only if the subscription happens before the transcription starts. This subscription supports unscheduled [ad hoc calls](/graph/api/resources/adhoccall?view=graph-rest-beta&preserve-view=true).
 
 > [!NOTE]
 >
@@ -502,7 +502,7 @@ Content-Type: application/json
 
 ## Subscribe to recordings available for a particular ad hoc call
 
-To get change notifications for any recording available for a particular ad hoc call, subscribe to `communications/adhocCalls/{adhocCallId}/recordings`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification. This subscription supports [ad hoc calls](../api-reference/beta/resources/adhoccall.md).
+To get change notifications for any recording available for a particular ad hoc call, subscribe to `communications/adhocCalls/{adhocCallId}/recordings`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification. This subscription supports [ad hoc calls](/graph/api/resources/adhoccall?view=graph-rest-beta&preserve-view=true).
 
 ### Permissions
 
@@ -590,7 +590,7 @@ Content-Type: application/json
 
 ## Subscribe to recordings available for ad hoc calls at the user level
 
-To get change notifications for any recording available for any ad hoc call where a specific user initiates transcription, subscribe to `users/{userId}/adhocCalls/getAllRecordings`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification. This subscription supports [ad hoc calls](../api-reference/beta/resources/adhoccall.md).
+To get change notifications for any recording available for any ad hoc call where a specific user initiates transcription, subscribe to `users/{userId}/adhocCalls/getAllRecordings`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification. This subscription supports [ad hoc calls](/graph/api/resources/adhoccall?view=graph-rest-beta&preserve-view=true).
 
 ### Permissions
 
