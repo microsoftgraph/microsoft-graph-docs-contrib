@@ -3776,7 +3776,144 @@
       "CreatedDateTime": "2025-07-31T14:44:53.5395251Z",
       "WorkloadArea": "Reports",
       "SubArea": "Identity and access reports"
-    }
-
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "32b76580-430d-4775-a058-534fd0c19441",
+          "ApiChange": "Member",
+          "ChangedApiName": "hardwareOneTimePasscode",
+          "ChangeType": "Addition",
+          "Description": "Added the `hardwareOneTimePasscode` member to the **usageAuthMethod** enumeration.",
+          "Target": "usageAuthMethod"
+        },
+        {
+          "Id": "32b76580-430d-4775-a058-534fd0c19441",
+          "ApiChange": "Member",
+          "ChangedApiName": "windowsHelloForBusiness",
+          "ChangeType": "Addition",
+          "Description": "Added the `windowsHelloForBusiness` member to the **usageAuthMethod** enumeration.",
+          "Target": "usageAuthMethod"
+        },
+        {
+          "Id": "32b76580-430d-4775-a058-534fd0c19441",
+          "ApiChange": "Member",
+          "ChangedApiName": "microsoftAuthenticatorPasswordless",
+          "ChangeType": "Addition",
+          "Description": "Added the `microsoftAuthenticatorPasswordless` member to the **usageAuthMethod** enumeration.",
+          "Target": "usageAuthMethod"
+        },
+        {
+          "Id": "32b76580-430d-4775-a058-534fd0c19441",
+          "ApiChange": "Member",
+          "ChangedApiName": "temporaryAccessPass",
+          "ChangeType": "Addition",
+          "Description": "Added the `temporaryAccessPass` member to the **usageAuthMethod** enumeration.",
+          "Target": "usageAuthMethod"
+        },
+        {
+          "Id": "32b76580-430d-4775-a058-534fd0c19441",
+          "ApiChange": "Member",
+          "ChangedApiName": "macOsSecureEnclaveKey",
+          "ChangeType": "Addition",
+          "Description": "Added the `macOsSecureEnclaveKey` member to the **usageAuthMethod** enumeration.",
+          "Target": "usageAuthMethod"
+        },
+        {
+          "Id": "32b76580-430d-4775-a058-534fd0c19441",
+          "ApiChange": "Member",
+          "ChangedApiName": "passKeyDeviceBound",
+          "ChangeType": "Addition",
+          "Description": "Added the `passKeyDeviceBound` member to the **usageAuthMethod** enumeration.",
+          "Target": "usageAuthMethod"
+        },
+        {
+          "Id": "32b76580-430d-4775-a058-534fd0c19441",
+          "ApiChange": "Member",
+          "ChangedApiName": "passKeyDeviceBoundAuthenticator",
+          "ChangeType": "Addition",
+          "Description": "Added the `passKeyDeviceBoundAuthenticator` member to the **usageAuthMethod** enumeration.",
+          "Target": "usageAuthMethod"
+        },
+        {
+          "Id": "32b76580-430d-4775-a058-534fd0c19441",
+          "ApiChange": "Member",
+          "ChangedApiName": "passKeyDeviceBoundWindowsHello",
+          "ChangeType": "Addition",
+          "Description": "Added the `passKeyDeviceBoundWindowsHello` member to the **usageAuthMethod** enumeration.",
+          "Target": "usageAuthMethod"
+        },
+        {
+          "Id": "32b76580-430d-4775-a058-534fd0c19441",
+          "ApiChange": "Member",
+          "ChangedApiName": "softwareOneTimePasscode",
+          "ChangeType": "Addition",
+          "Description": "Added the `softwareOneTimePasscode` member to the **usageAuthMethod** enumeration.",
+          "Target": "usageAuthMethod"
+        },
+        {
+          "Id": "32b76580-430d-4775-a058-534fd0c19441",
+          "ApiChange": "Member",
+          "ChangedApiName": "microsoftAuthenticatorPush",
+          "ChangeType": "Addition",
+          "Description": "Added the `microsoftAuthenticatorPush` member to the **usageAuthMethod** enumeration.",
+          "Target": "usageAuthMethod"
+        },
+        {
+          "Id": "32b76580-430d-4775-a058-534fd0c19441",
+          "ApiChange": "Member",
+          "ChangedApiName": "mobilePhone",
+          "ChangeType": "Addition",
+          "Description": "Added the `mobilePhone` member to the **usageAuthMethod** enumeration.",
+          "Target": "usageAuthMethod"
+        },
+        {
+          "Id": "32b76580-430d-4775-a058-534fd0c19441",
+          "ApiChange": "Member",
+          "ChangedApiName": "sms",
+          "ChangeType": "Addition",
+          "Description": "Added the `sms` member to the **usageAuthMethod** enumeration.",
+          "Target": "usageAuthMethod"
+        },
+        {
+          "Id": "32b76580-430d-4775-a058-534fd0c19441",
+          "ApiChange": "Member",
+          "ChangedApiName": "alternateMobilePhone",
+          "ChangeType": "Addition",
+          "Description": "Added the `alternateMobilePhone` member to the **usageAuthMethod** enumeration.",
+          "Target": "usageAuthMethod"
+        },
+        {
+          "Id": "32b76580-430d-4775-a058-534fd0c19441",
+          "ApiChange": "Member",
+          "ChangedApiName": "fido2SecurityKey",
+          "ChangeType": "Addition",
+          "Description": "Added the `fido2SecurityKey` member to the **usageAuthMethod** enumeration.",
+          "Target": "usageAuthMethod"
+        },
+        {
+          "Id": "32b76580-430d-4775-a058-534fd0c19441",
+          "ApiChange": "Member",
+          "ChangedApiName": "oneTimePasscode",
+          "ChangeType": "Addition",
+          "Description": "Added the `oneTimePasscode` member to the **usageAuthMethod** enumeration.",
+          "Target": "usageAuthMethod"
+        },
+        {
+          "Id": "32b76580-430d-4775-a058-534fd0c19441",
+          "ApiChange": "Member",
+          "ChangedApiName": "passKeySynced",
+          "ChangeType": "Addition",
+          "Description": "Added the `passKeySynced` member to the **usageAuthMethod** enumeration.",
+          "Target": "usageAuthMethod"
+        }
+      ],
+      "Id": "32b76580-430d-4775-a058-534fd0c19441",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-09-03T16:04:05.5304416Z",
+      "WorkloadArea": "Reports",
+      "SubArea": "Identity and access reports"
+    }    
   ]
 }

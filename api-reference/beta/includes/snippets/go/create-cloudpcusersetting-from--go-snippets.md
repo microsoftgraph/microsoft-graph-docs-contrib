@@ -39,6 +39,8 @@ crossRegionDisasterRecoverySetting.SetDisasterRecoveryType(&disasterRecoveryType
 userInitiatedDisasterRecoveryAllowed := true
 crossRegionDisasterRecoverySetting.SetUserInitiatedDisasterRecoveryAllowed(&userInitiatedDisasterRecoveryAllowed) 
 requestBody.SetCrossRegionDisasterRecoverySetting(crossRegionDisasterRecoverySetting)
+provisioningSourceType := graphmodels.IMAGE_CLOUDPCPROVISIONINGSOURCETYPE 
+requestBody.SetProvisioningSourceType(&provisioningSourceType) 
 restorePointSetting := graphmodels.NewCloudPcRestorePointSetting()
 frequencyInHours := int32(16)
 restorePointSetting.SetFrequencyInHours(&frequencyInHours) 

@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 from msgraph_beta import GraphServiceClient
 # To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 
-result = await graph_client.subscriptions.by_subscription_id('subscription-id').get()
+result = await graph_client.subscriptions.get_vapid_public_key.get()
 
 
 ```

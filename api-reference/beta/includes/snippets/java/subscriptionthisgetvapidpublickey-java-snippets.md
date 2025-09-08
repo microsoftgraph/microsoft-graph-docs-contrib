@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-Subscription result = graphClient.subscriptions().bySubscriptionId("{subscription-id}").get();
+var result = graphClient.subscriptions().getVapidPublicKey().get();
 
 
 ```

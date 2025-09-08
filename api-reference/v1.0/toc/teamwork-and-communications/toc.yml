@@ -428,6 +428,10 @@ items:
         href: ../../api/virtualeventwebinar-getbyuseridandrole.md
       - name: Set external event information
         href: ../../api/virtualevent-setexternaleventinformation.md
+  - name: Complex types
+    items:
+    - name: Out of office settings
+      href: ../../resources/outofofficesettings.md
 - name: Employee learning
   displayName: Viva Learning
   items:
