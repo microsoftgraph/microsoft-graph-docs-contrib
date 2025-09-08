@@ -41,7 +41,7 @@ GET /security/identities/sensorCandidates
 
 ## Optional query parameters
 
-This method supports the `$filter`(filter by senseClientVersion), `$orderBy`(order by one of the following properties: senseClientVersion, lastSeenDateTime, computerDnsName) and `$count` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$filter`(filter by senseClientVersion) and `$count` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
