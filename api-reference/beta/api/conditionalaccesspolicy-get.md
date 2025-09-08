@@ -60,6 +60,7 @@ If successful, this method returns a `200 OK` response code and the requested [c
 
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_conditionalaccesspolicy"
@@ -68,6 +69,12 @@ The following example shows a request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/identity/conditionalAccess/policies/10ef4fe6-5e51-4f5e-b5a2-8fed19d0be67
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-conditionalaccesspolicy-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 
