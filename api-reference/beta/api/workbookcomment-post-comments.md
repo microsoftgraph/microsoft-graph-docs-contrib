@@ -32,6 +32,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ```http
 POST /me/drive/items/{id}/workbook/comments
 POST /me/drive/root:/{item-path}:/workbook/comments
+POST /users/{id}/drive/items/{id}/workbook/comments
+POST /users/{id}/drive/root:/{id}:/workbook/comments
 ```
 
 ## Request headers
@@ -63,7 +65,7 @@ The following example shows a request.
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/drive/items/{id}/workbook/comments
+POST /me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/comments
 Content-Type: application/json
 
 {
@@ -111,7 +113,7 @@ The following example shows a request.
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/drive/items/{id}/workbook/comments
+POST /me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/comments
 Content-Type: application/json
 
 {
