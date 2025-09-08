@@ -205,6 +205,40 @@
     {
       "ChangeList": [
         {
+          "Id": "32280a3f-91eb-4985-a879-5cc7096244b7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "iosDdmLobAppAssignmentSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [iosDdmLobAppAssignmentSettings](https://learn.microsoft.com/en-us/graph/api/resources/intune-iosDdmLobAppAssignmentSettings?view=graph-rest-1.0) resource.",
+          "Target": "iosDdmLobAppAssignmentSettings"
+        },
+        {
+          "Id": "32280a3f-91eb-4985-a879-5cc7096244b7",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "mobileAppRelationships",
+          "ChangeType": "Addition",
+          "Description": "Added the **mobileAppRelationships** relationship to the [deviceAppManagement](https://learn.microsoft.com/en-us/graph/api/resources/intune-deviceAppManagement?view=graph-rest-1.0) resource.",
+          "Target": "deviceAppManagement"
+        },
+        {
+          "Id": "32280a3f-91eb-4985-a879-5cc7096244b7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "mobileAppRelationship",
+          "ChangeType": "Addition",
+          "Description": "Added the [mobileAppRelationship](https://learn.microsoft.com/en-us/graph/api/resources/intune-mobileAppRelationship?view=graph-rest-1.0) resource.",
+          "Target": "mobileAppRelationship"
+        }
+      ],
+      "Id": "32280a3f-91eb-4985-a879-5cc7096244b7",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-07-30T21:41:14.1814738Z",
+      "WorkloadArea": "Devices and apps",
+      "SubArea": "Corporate management"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "d93e87e3-7f23-4ab2-b869-40da0b0b27a5",
           "ApiChange": "Property",
           "ChangedApiName": "permissions",
