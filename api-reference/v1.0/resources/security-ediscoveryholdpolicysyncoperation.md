@@ -1,6 +1,6 @@
 ---
 title: "ediscoveryHoldPolicySyncOperation resource type"
-description: "**TODO: Add Description**"
+description: "The operation represents adding or updating of a legal hold policy"
 author: "v-kafeng"
 ms.date: 09/07/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+The operation represents adding or updating of a legal hold policy
 
 Inherits from [microsoft.graph.security.caseOperation](../resources/security-caseoperation.md).
 

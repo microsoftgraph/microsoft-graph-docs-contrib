@@ -61,7 +61,7 @@ Inherits from [entity](../resources/entity.md).
 | purgeData | The operation represents purging content from the source workloads. |
 | exportReport | The operation exports an item report from an estimated search.|
 | exportResult | The operation exports item results from an estimated search. |
-| holdPolicySync | TODO: Description |
+| holdPolicySync | The operation represents adding or updating of a legal hold policy |
 
 ### caseOperationStatus values
 
