@@ -19,8 +19,8 @@ Represents the person mentioned in a workbook comment.
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|id|Int32|Represents the ID of the person that is mentioned in a comment.|
 |email|String|Represents the email address of the person that is mentioned in a comment.|
+|id|Int32|Represents the ID of the person that is mentioned in a comment.|
 |name|String|Represents the display name of the person that is mentioned in a comment.|
 
 ## Relationships
@@ -40,11 +40,10 @@ The following JSON representation shows the resource type.
 
 ```json
 {
-  "id": 0,
   "email": "String",
+  "id": "String (identifier)",
   "name": "String"
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
