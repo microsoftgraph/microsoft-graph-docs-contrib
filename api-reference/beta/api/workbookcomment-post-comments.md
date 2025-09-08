@@ -1,6 +1,6 @@
 ---
 title: "Create workbookComment"
-description: "Create a new workbookComment."
+description: "Create a new workbookComment object."
 ms.localizationpriority: medium
 author: "AmandaHan123"
 ms.subservice: "excel"
@@ -11,6 +11,8 @@ ms.date: 09/05/2025
 # Create workbookComment
 
 Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create a new [workbookComment](../resources/workbookcomment.md) object.
 
@@ -48,12 +50,12 @@ If successful, this method returns a `201 Created` response code and a new [work
 
 ## Examples
 
-### Create a comment of `plain` contentType
+### Example 1: Create a comment of a plain contentType
+
+The following example shows how to create a comment of a `plain` **contentType**.
 
 #### Request
-
-The following example shows a request to create a comment of `plain` contentType.
-
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "create_workbookcomment_from_workbook"
@@ -61,7 +63,7 @@ The following example shows a request to create a comment of `plain` contentType
 
 ```http
 POST https://graph.microsoft.com/beta/drive/items/{id}/workbook/comments
-Content-type: application/json
+Content-Type: application/json
 
 {
   "cellAddress": "Sheet1!A1",
@@ -84,7 +86,7 @@ The following example shows the response.
 
 ```http
 HTTP/1.1 201 Created
-Content-type: application/json
+Content-Type: application/json
 
 {
   "content": "This is my comment.",
@@ -96,12 +98,12 @@ Content-type: application/json
 }
 ```
 
-### Create a comment of `mention` contentType
+### Example 2: Create a comment of a `mention` contentType
+
+The following example shows how to create a comment of a `mention` **contentType**.
 
 #### Request
-
-The following example shows a request to create a comment of `mention` contentType.
-
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "create_workbookcomment_from_workbook_mention"
@@ -109,16 +111,18 @@ The following example shows a request to create a comment of `mention` contentTy
 
 ```http
 POST https://graph.microsoft.com/beta/drive/items/{id}/workbook/comments
-Content-type: application/json
+Content-Type: application/json
 
 {
   "cellAddress": "Sheet1!A1",
   "richContent": "<at id=\"0\">Kate Kristensen</at> - This is my comment.",
-  "mentions": [{
-        "id": 0,
-        "name": "Kate Kristensen",
-        "email": "kakri@contoso.com"
-        }],
+  "mentions": [
+    {
+      "id": 0,
+      "name": "Kate Kristensen",
+      "email": "kakri@contoso.com"
+    }
+  ],
   "contentType": "mention"
 }
 ```
@@ -137,18 +141,20 @@ The following example shows the response.
 
 ```http
 HTTP/1.1 201 Created
-Content-type: application/json
+Content-Type: application/json
 
 {
   "content": "@Kate Kristensen - This is my comment.",
   "contentType": "mention",
   "id": "{97A21473-8339-4BF0-BCB6-F55E4909FFB8}",
   "richContent": "<at id=\"0\">Kate Kristensen</at> - This is my comment.",
-  "mentions": [{
-        "id": 0,
-        "name": "Kate Kristensen",
-        "email": "kakri@contoso.com"
-  }],
+  "mentions": [
+    {
+      "id": 0,
+      "name": "Kate Kristensen",
+      "email": "kakri@contoso.com"
+    }
+  ],
   "cellAddress": "Sheet1!A1"
 }
 ```
