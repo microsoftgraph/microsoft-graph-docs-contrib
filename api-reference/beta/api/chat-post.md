@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Create a new [chat](../resources/chat.md) object.
 
-> **Note:** Only one one-on-one chat can exist between two members. If a one-on-one chat already exists, this operation will return the existing chat and not create a new one.
+> **Note:** Only one one-on-one chat can exist between two members. If a one-on-one chat already exists, this operation returns the existing chat and doesn't create a new one.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -271,8 +271,10 @@ Content-Type: application/json
 
 ### Example 3: Create a one-on-one chat with installed apps
 
-> [!Note]
-> This API supports both one-on-one and group chats, even though the documentation currently focuses on one-on-one scenarios. You can install apps during chat creation for either chat type.
+The following example shows how to create a one-on-one [chat](../resources/chat.md) with installed apps.
+
+> [!NOTE]
+> This API supports both one-on-one and group chats; however, the documentation currently focuses on one-on-one scenarios. You can install apps during chat creation for either chat type.
 
 #### Request
 
@@ -354,10 +356,10 @@ The async operation is initiated, and the response contains a Location header, w
 
 ### Example 4: Create a one-on-one chat with RSC-granted apps
 
-> [!Note]
-> This API supports both one-on-one and group chats, even though the documentation currently focuses on one-on-one scenarios. You can install apps during chat creation for either chat type.
+The following example shows how to create a one-on-one [chat](../resources/chat.md) with installed apps that have resource-specific consent (RSC) permissions.
 
-The following example shows how to create a one-on-one chat with installed apps that have resource-specific consent (RSC) permissions.
+> [!NOTE]
+> This API supports both one-on-one and group chats; however, the documentation currently focuses on one-on-one scenarios. You can install apps during chat creation for either chat type.
 
 #### Request
 
