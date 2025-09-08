@@ -42,7 +42,7 @@ GET https://graph.microsoft.com/beta/applications?$select=id,displayName,appId,a
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/beta/list-applications-authenticationBehaviors-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/beta/list-applications-authenticationbehaviors-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

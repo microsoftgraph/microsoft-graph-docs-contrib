@@ -2,7 +2,7 @@
 title: "application resource type"
 description: "Represents an application."
 ms.localizationpriority: high
-author: "sureshja"
+author: "Jackson-Woods"
 ms.subservice: "entra-applications"
 doc_type: resourcePageType
 ms.date: 08/16/2024
