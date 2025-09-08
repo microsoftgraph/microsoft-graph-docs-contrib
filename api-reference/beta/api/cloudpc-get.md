@@ -172,6 +172,7 @@ The following example shows how to get selected properties of a [cloudPC](../res
 
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_cloudpc_selected_properties"
