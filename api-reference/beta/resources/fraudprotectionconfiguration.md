@@ -17,6 +17,7 @@ Namespace: microsoft.graph
 Represents the configuration settings for a third-party fraud protection provider in Microsoft Entra External ID.
 This is an abstract type.
 
+- [fraudProtectionProviderConfiguration](../resources/fraudProtectionProviderConfiguration.md) resource type
 
 ## Properties
 None.
