@@ -215,6 +215,48 @@
     {
       "ChangeList": [
         {
+          "Id": "2d5c9d9e-4d5a-4c2d-9d2c-9f4e7d4f0f11",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cloudPcEntraGroupDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the [cloudPcEntraGroupDetail](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcEntraGroupDetail?view=graph-rest-beta) resource type.",
+          "Target": "cloudPcEntraGroupDetail"
+        },
+        {
+          "Id": "2d5c9d9e-4d5a-4c2d-9d2c-9f4e7d4f0f11",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cloudPcEntraUserDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the [cloudPcEntraUserDetail](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcEntraUserDetail?view=graph-rest-beta) resource type.",
+          "Target": "cloudPcEntraUserDetail"
+        },
+        {
+          "Id": "2d5c9d9e-4d5a-4c2d-9d2c-9f4e7d4f0f11",
+          "ApiChange": "Property",
+          "ChangedApiName": "groupDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the **groupDetail** property to the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudPC?view=graph-rest-beta) resource.",
+          "Target": "cloudPC"
+        },
+        {
+          "Id": "2d5c9d9e-4d5a-4c2d-9d2c-9f4e7d4f0f11",
+          "ApiChange": "Property",
+          "ChangedApiName": "userDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the **userDetail** property to the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudPC?view=graph-rest-beta) resource.",
+          "Target": "cloudPC"
+        }
+      ],
+      "Id": "2d5c9d9e-4d5a-4c2d-9d2c-9f4e7d4f0f11",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-09-09T00:00:00Z",
+      "WorkloadArea": "Device and app management",
+      "SubArea": "Cloud PC"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "cb667857-143a-4082-af3e-f15d484834ff",
           "ApiChange": "Method",
           "ChangedApiName": "resize",

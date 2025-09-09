@@ -62,6 +62,7 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled in In
 |displayName|String|The display name of the Cloud PC.|
 |frontlineCloudPcAvailability|[frontlineCloudPcAvailability](#frontlinecloudpcavailability-values)|The current availability of a frontline assigned Cloud PC. Possible values: `notApplicable`, `available`,`notAvailable` and `unknownFutureValue`. Default value is `notApplicable`. Read Only.|
 |gracePeriodEndDateTime|DateTimeOffset|The date and time when the grace period ends and reprovisioning or deprovisioning happens. Required only if the status is `inGracePeriod`. The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC). For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+|groupDetail|[cloudPcEntraGroupDetail](../resources/cloudpcentragroupdetail.md)|The Microsoft Entra group details (for example, ID and display name) for the Entra ID group associated with the user's Reserve Cloud PC assignment. Read-only.|
 |id|String|The unique identifier for the Cloud PC. Read-only.|
 |imageDisplayName|String|Name of the OS image that's on the Cloud PC.|
 |lastLoginResult|[cloudPcLoginResult](../resources/cloudpcloginresult.md)|The last login result of the Cloud PC. For example, `{ "time": "2014-01-01T00:00:00Z"}`.|
@@ -87,6 +88,7 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled in In
 |connectionSetting|[cloudPcConnectionSetting](../resources/cloudpcconnectionsetting.md)|The connection setting of the Cloud PC. Possible values: `enableSingleSignOn`. Read Only.|
 |userAccountType|[cloudPcUserAccountType](../resources/cloudpcorganizationsettings.md#cloudpcuseraccounttype-values)|The account type of the user on provisioned Cloud PCs. Possible values are: `standardUser`, `administrator`, `unknownFutureValue`.|
 |userExperienceType|[cloudPcUserExperienceType](../resources/cloudpcprovisioningpolicy.md#cloudpcuserexperiencetype-values)|Specifies the type of cloud object the end user can access. The possible values are: `cloudPc`, `cloudApp`, `unknownFutureValue`. When set to `cloudPc`, it indicates that the end user can access the entire desktop. When set to `cloudApp`, it indicates that the end user can only access cloud apps published under the associated provisioning policy. Since the cloud app experience also creates Cloud PC devices that appear in the Cloud PC device list, this property helps differentiate them. The default value is `cloudPc`. This property is defined in the provisioning policy.|
+|userDetail|[cloudPcEntraUserDetail](../resources/cloudpcentrauserdetail.md)|The user details (for example, ID and display name) for the user associated with a Reserve Cloud PC assignment. Read-only.|
 |userPrincipalName|String|The user principal name (UPN) of the user assigned to the Cloud PC.|
 |statusDetails (deprecated)|[cloudPcStatusDetails](../resources/cloudpcstatusdetails.md)|The details of the Cloud PC status. For example, `{ "code": "internalServerError", "message": "There was an error during the Cloud PC upgrade. Please contact support.", "additionalInformation": null }`. This property is deprecated and will no longer be supported effective August 31, 2024. Use statusDetail instead.|
 
@@ -156,10 +158,10 @@ The following table lists the members of an [evolvable enumeration](/graph/best-
 |:---|:---|
 |enterprise|Default. Indicates the Cloud PC product type for larger businesses that want to deploy Cloud PCs across their organization for an unlimited number of users.|
 |frontline|Indicates the Cloud PC product type for frontline and part-time workers to share devices, allowing them to use Cloud PCs during their shifts.|
-|devBox|Indicates the Cloud PC product type preconfigured with tools, services, and resources for developers, development teams, and IT professionals.| 
+|devBox|Indicates the Cloud PC product type preconfigured with tools, services, and resources for developers, development teams, and IT professionals.|
 |powerAutomate|Indicates the Cloud PC product type for Power Automate customers to run attended and unattended RPAs (robotic process automation) on their Cloud PCs.|
 |business|Indicates the Cloud PC product type for small business customers with up to 300 users.|
-|unknownFutureValue|Evolvable enumeration sentinel value. Don't use.| 
+|unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
 
 ## Relationships
 
@@ -188,6 +190,7 @@ The following JSON representation shows the resource type.
   "diskEncryptionState": "String",
   "displayName": "String",
   "gracePeriodEndDateTime": "String (timestamp)",
+  "groupDetail": {"@odata.type": "microsoft.graph.cloudPcEntraGroupDetail"},
   "id": "String (identifier)",
   "imageDisplayName": "String",
   "lastLoginResult": "String",
@@ -210,6 +213,7 @@ The following JSON representation shows the resource type.
   "status": "String",
   "userAccountType": "String",
   "userExperienceType": "String",
+  "userDetail": {"@odata.type": "microsoft.graph.cloudPcEntraUserDetail"},
   "userPrincipalName": "String"
 }
 ```
