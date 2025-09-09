@@ -14,7 +14,6 @@ Namespace: microsoft.graph.teamsAdministration
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Unassigns a Teams policy from a user by specifying the user ID and policy type.
 Unassign a Teams [policy](../resources/teamsadministration-teamspolicyuserassignment.md) from a user using the user ID and policy type.
 
 ## Permissions
