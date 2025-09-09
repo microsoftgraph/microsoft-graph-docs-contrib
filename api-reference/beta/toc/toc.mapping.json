@@ -263,21 +263,21 @@
           "resources": [
             "place",
             "building",
-            "floor",
-            "section",
             "desk",
+            "floor",
             "room",
-            "workspace",
-            "roomList"
+            "roomList",
+            "section",
+            "workspace"
           ],
           "complexTypes": [
-            "resourceLink",
-            "mailboxDetails",
-            "placeMode",
             "assignedPlaceMode",
             "dropInPlaceMode",
+            "mailboxDetails",
+            "offlinePlaceMode",
+            "placeMode",
             "reservablePlaceMode",
-            "offlinePlaceMode"
+            "resourceLink"
           ],
            "childNodes": [
             {
@@ -285,7 +285,21 @@
               "resources":[
                 "workplaceSensorDevice"
               ]
-            }
+            },
+            {
+             "name": "Maps (preview)",
+             "resources":[
+               "buildingMap",
+               "fixtureMap",
+               "footprintMap",
+               "levelMap",
+               "sectionMap",
+               "unitMap"
+             ],
+              "complexTypes": [
+                "importBuildingMapSetting"
+              ]
+             }
            ]
          }
       ]
@@ -1007,7 +1021,8 @@
       ],
       "complexTypes": [
         "fileStorageContainerTypeRegistrationSettings",
-        "fileStorageContainerTypeSettings"
+        "fileStorageContainerTypeSettings",
+        "fileStorageContainerTypeAgentSettings"
       ]
     },
     {
@@ -2769,7 +2784,9 @@
             "microsoft.graph.security.healthIssue",
             "microsoft.graph.security.sensor",
             "microsoft.graph.security.identityAccounts",
-            "microsoft.graph.security.user"
+            "microsoft.graph.security.user",
+            "microsoft.graph.security.sensorCandidate",
+            "microsoft.graph.security.sensorCandidateActivationConfiguration"
           ],
           "complexTypes": [
             "microsoft.graph.security.deploymentAccessKeyType",

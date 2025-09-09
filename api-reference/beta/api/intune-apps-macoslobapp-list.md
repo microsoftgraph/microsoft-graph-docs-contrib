@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2215
+Content-Length: 2239
 
 {
   "value": [
@@ -114,7 +114,8 @@ Content-Length: 2215
         "v12_0": true,
         "v13_0": true,
         "v14_0": true,
-        "v15_0": true
+        "v15_0": true,
+        "v26_0": true
       },
       "buildNumber": "Build Number value",
       "versionNumber": "Version Number value",

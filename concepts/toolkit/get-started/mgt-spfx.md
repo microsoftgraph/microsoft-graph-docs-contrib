@@ -9,6 +9,9 @@ ms.topic: article
 
 # Microsoft Graph Toolkit in SharePoint Framework solutions
 
+> [!CAUTION]
+> The Microsoft Graph Toolkit is deprecated. The retirement period begins September 1, 2025, with full retirement planned for August 28, 2026. Developers should migrate to using the Microsoft Graph SDKs or other supported Microsoft Graph tools for building web experiences. For more information, see the [deprecation announcement](https://devblogs.microsoft.com/microsoft365dev/microsoft-graph-toolkit-retirement/).
+
 Use Microsoft Graph Toolkit in your SharePoint Framework solutions.
 
 > [!IMPORTANT]
@@ -63,7 +66,7 @@ export default class MgtWebPart extends BaseClientSideWebPart<IMgtWebPartProps> 
 
 ### React
 
-If you're building a web part using React, you can use the `@microsoft/mgt-react` package and skip the manual registration of components. However, make sure that you lazy load your React component from the web part to make use of disambiguation.
+If you're building a web part using React, you can use the `@microsoft/mgt-react` package and skip the manual registration of components. However, make sure that your lazy-load your React component from the web part to make use of disambiguation.
 
 ```ts
 // [...] trimmed for brevity
@@ -121,7 +124,7 @@ export default class MgtReact extends React.Component<IMgtReactProps, {}> {
 ```
 
 > [!IMPORTANT]
-> Make sure that your root web part class does not import any Microsoft Graph Toolkit resources from `@microsoft/mgt-react`. These should only be imported inside the lazy loaded React components.
+> Make sure that your root web part class doesn't import any Microsoft Graph Toolkit resources from `@microsoft/mgt-react`. These should only be imported inside the lazy-loaded React components.
 
 ## Configure webpack
 

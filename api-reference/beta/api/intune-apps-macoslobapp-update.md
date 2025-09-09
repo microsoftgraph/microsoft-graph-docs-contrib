@@ -96,7 +96,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}
 Content-type: application/json
-Content-length: 1754
+Content-length: 1774
 
 {
   "@odata.type": "#microsoft.graph.macOSLobApp",
@@ -142,7 +142,8 @@ Content-length: 1754
     "v12_0": true,
     "v13_0": true,
     "v14_0": true,
-    "v15_0": true
+    "v15_0": true,
+    "v26_0": true
   },
   "buildNumber": "Build Number value",
   "versionNumber": "Version Number value",
@@ -168,7 +169,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1926
+Content-Length: 1946
 
 {
   "@odata.type": "#microsoft.graph.macOSLobApp",
@@ -217,7 +218,8 @@ Content-Length: 1926
     "v12_0": true,
     "v13_0": true,
     "v14_0": true,
-    "v15_0": true
+    "v15_0": true,
+    "v26_0": true
   },
   "buildNumber": "Build Number value",
   "versionNumber": "Version Number value",
