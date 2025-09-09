@@ -14,12 +14,12 @@ Namespace: microsoft.graph.security
 
 An abstract entity that represents a long-running eDiscovery process. It contains a common set of properties that are shared among inheriting entities. Entities that derive from **caseOperation** include:
 
-- [Index operation](../resources/security-ediscoveryindexoperation.md)
-- [Hold operation](../resources/security-ediscoveryholdoperation.md)
-- [Estimate operation](../resources/security-ediscoveryestimateoperation.md)
-- [Add to review set operation](../resources/security-ediscoveryaddtoreviewsetoperation.md)
-- [Tag operation](../resources/security-ediscoverytagoperation.md)
-- [Hold policy sync operation](../resources/security-ediscoveryholdpolicysyncoperation.md)
+- [ediscoveryIndexOperation](../resources/security-ediscoveryindexoperation.md)
+- [ediscoveryHoldOperation](../resources/security-ediscoveryholdoperation.md)
+- [ediscoveryEstimateOperation](../resources/security-ediscoveryestimateoperation.md)
+- [ediscoveryAddToReviewSetOperation](../resources/security-ediscoveryaddtoreviewsetoperation.md)
+- [ediscoveryTagOperation](../resources/security-ediscoverytagoperation.md)
+- [ediscoveryHoldPolicySyncOperation](../resources/security-ediscoveryholdpolicysyncoperation.md)
 
 Inherits from [entity](../resources/entity.md).
 
