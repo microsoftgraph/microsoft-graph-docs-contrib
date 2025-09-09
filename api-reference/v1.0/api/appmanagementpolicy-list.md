@@ -2,7 +2,7 @@
 title: "List appManagementPolicies"
 description: "Get a list of application management policies."
 ms.localizationpriority: medium
-author: "madansr7"
+author: "aricrowe57"
 ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
 ms.date: 09/13/2024

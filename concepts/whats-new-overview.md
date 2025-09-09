@@ -37,16 +37,35 @@ Added a note to the **artifactCount** property of the [granularMailboxRestoreArt
   - Use the **sid** property to get the security identifier of the group.
 - Use the **activeDirectoryObjectGuid** property on [userAccount](/graph/api/resources/security-useraccount) to get the unique user identifier assigned by the on-premises Active Directory.
 
+### Security | eDiscovery
+
+- Use the **caseType** property on [ediscoveryCaseSettings](/graph/api/resources/security-ediscoverycasesettings) to get or set the type of an eDiscovery case.
+- Use the **reviewSetSettings** property on [ediscoveryCaseSettings](/graph/api/resources/security-ediscoverycasesettings) to get or set the review set settings for a case.
+
+### Teamwork and communications | Messaging
+
+- [Create a one-on-one or group chat with installed apps](/graph/api/chat-post#example-3-create-a-one-on-one-chat-with-installed-apps).
+- [Create a one-on-one or group chat with RSC-granted apps](/graph/api/chat-post#example-4-create-a-one-on-one-chat-with-rsc-granted-apps).
+
 ## September 2025: New in preview only
 
 ### Backup storage
 
 Added a note to the **artifactCount** property of the [granularMailboxRestoreArtifact](/graph/api/resources/granularmailboxrestoreartifact?view=graph-rest-beta&preserve-view=true) about its upcoming deprecation.
 
+### Calendars | Places
+
+The new map APIs in Places enable applications with appropriate read or write permissions to interact with map feature objects. For more information, see [Working with the Places API in Microsoft Graph](/graph/api/resources/places-api-overview?view=graph-rest-beta&preserve-view=true#map-feature-types).
+
 ### Device and app management | Cloud PC
 
 - Use the **groupDetail** property on [cloudPC](/graph/api/resources/cloudpc?view=graph-rest-beta&preserve-view=true) to get the Microsoft Entra group details associated with a Reserve Cloud PC assignment.
 - Use the **userDetail** property on [cloudPC](/graph/api/resources/cloudpc?view=graph-rest-beta&preserve-view=true) to get the Microsoft Entra user details associated with a Reserve Cloud PC assignment.
+
+### Teamwork and communications | Messaging
+
+- [Create a one-on-one or group chat with installed apps](/graph/api/chat-post?view=graph-rest-beta&preserve-view=true#example-3-create-a-one-on-one-chat-with-installed-apps).
+- [Create a one-on-one or group chat with RSC-granted apps](/graph/api/chat-post?view=graph-rest-beta&preserve-view=true#example-4-create-a-one-on-one-chat-with-rsc-granted-apps).
 
 ## August 2025: New and generally available
 
@@ -57,6 +76,7 @@ Use the [resize](/graph/api/cloudpc-resize) operation of [cloudPC](/graph/api/re
 ### Sites and lists
 
 Removed support for delegated permissions in the [List sites](/graph/api/site-list) and [site: delta](/graph/api/site-delta) APIs.
+
 
 ### Teamwork and communications | Calls and online meetings
 
