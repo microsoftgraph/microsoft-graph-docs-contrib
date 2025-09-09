@@ -30,6 +30,15 @@ isSharingRestricted := false
 settings.SetIsSharingRestricted(&isSharingRestricted) 
 consumingTenantOverridables := graphmodels.ISSEARCHENABLED,ITEMMAJORVERSIONLIMIT_FILESTORAGECONTAINERTYPESETTINGSOVERRIDE 
 settings.SetConsumingTenantOverridables(&consumingTenantOverridables) 
+additionalData := map[string]interface{}{
+agent := graph.New()
+	chatEmbedAllowedHosts := []string {
+		"https://localhost:3000",
+	}
+	agent.SetChatEmbedAllowedHosts(chatEmbedAllowedHosts)
+	settings.SetAgent(agent)
+}
+settings.SetAdditionalData(additionalData)
 requestBody.SetSettings(settings)
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
