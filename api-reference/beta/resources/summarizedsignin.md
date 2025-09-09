@@ -39,8 +39,8 @@ Inherits from [entity](../resources/entity.md).
 |ipAddress|String|The IP address a user or autonomous agent used to reach a resource provider, used to determine Conditional Access compliance for some policies. For example, when a user interacts with Exchange Online, the IP address that Microsoft Exchange receives from the user can be recorded here. This value is often `null`.|
 |managedServiceIdentity|[managedIdentity](../resources/managedidentity.md)|Contains information about the managed identity used for the sign in, including its type, associated Azure Resource Manager resource ID, and federated token information.|
 |resourceDisplayName|String|The name of the resource that the user signed in to.|
-|resourceId|String|The identifier of the resource that the user signed in to. |
-|servicePrincipalId|String|The application identifier used for sign-in. This field is populated when you're signing in using an application.|
+|resourceId|String|The application identifier of the resource application that the user signed in to. |
+|servicePrincipalId|String|The application identifier of the specific service principal instance of the application identifier used for sign-in. This field is populated when you're signing in using an application and is different than the `appId` property.|
 |servicePrincipalName|String|The application name used for sign-in. This field is populated when you're signing in using an application. |
 |signInCount|Int64|The total number of sign-in events included in the summary.|
 |status|[signInStatus](../resources/signinstatus.md)|The sign-in status. Includes the error code and description of the error (for a sign-in failure).|

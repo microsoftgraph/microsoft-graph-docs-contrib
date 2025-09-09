@@ -26,10 +26,10 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|activity|String|The specific audit activity name.|
-|category|String|The category that an audit activity belongs to.|
+|activity|String|Indicates the activity name or the operation name (for example "Create User", "Add member to group"). For a list of activities logged, refer to [Microsoft Entra audit log categories and activities](/azure/active-directory/reports-monitoring/reference-audit-activities).|
+|category|String|Indicates which resource category that's targeted by the activity. For example: `UserManagement`, `GroupManagement`, `ApplicationManagement`, `RoleManagement`. For a list of categories for activities logged, refer to [Microsoft Entra audit log categories and activities](/azure/active-directory/reports-monitoring/reference-audit-activities).|
 |id|String|The unique ID for the given audit activity type.|
-|service|String|The service that emits the audit log for a given audit activity.|
+|service|String|Indicates information on which service initiated the activity. For example: Self-service Password Management, Core Directory, B2C, Invited Users, Microsoft Identity Manager, Privileged Identity Management.|
 
 ## Relationships
 None.
