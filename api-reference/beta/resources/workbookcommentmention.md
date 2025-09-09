@@ -41,7 +41,7 @@ The following JSON representation shows the resource type.
 ```json
 {
   "email": "String",
-  "id": "String (identifier)",
+  "id": "Int32",
   "name": "String"
 }
 ```
