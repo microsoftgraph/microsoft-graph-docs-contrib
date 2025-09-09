@@ -29,7 +29,7 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|agent|[agentSignIn](../resources/agentic-agentsignin.md)|Represents details about the agentic sign-in. Includes the type of agent as well as parentAppID in some cases|
+|agent|[microsoft.graph.agentic.agentSignIn](../resources/agentic-agentsignin.md)|Represents details about the agentic sign-in. Includes the type of agent as well as parentAppID in some cases|
 |aggregationDateTime|DateTimeOffset|The aggregated day for which the summary applies to. This property always represents the entire day. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |appDisplayName|String|The application name displayed in the Microsoft Entra admin center|
 |appId|String|The application identifier in Microsoft Entra ID.|
@@ -37,7 +37,7 @@ Inherits from [entity](../resources/entity.md).
 |firstSignInDateTime|DateTimeOffset|The earliest sign-in event included in this summary. This property always represents the entire day. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |id|String|The identifier representing the sign-in activity. Inherited from [entity](../resources/entity.md). Inherits from [entity](../resources/entity.md)|
 |ipAddress|String|The IP address a user used to reach a resource provider, used to determine Conditional Access compliance for some policies. For example, when a user interacts with Exchange Online, the IP address that Microsoft Exchange receives from the user can be recorded here. This value is often `null`.|
-|managedServiceIdentity|[managedIdentity](../resources/managedidentity.md)||Contains information about the managed identity used for the sign in, including its type, associated Azure Resource Manager (ARM) resource ID, and federated token information.|
+|managedServiceIdentity|[managedIdentity](../resources/managedidentity.md)|Contains information about the managed identity used for the sign in, including its type, associated Azure Resource Manager (ARM) resource ID, and federated token information.|
 |resourceDisplayName|String|The name of the resource that the user signed in to.|
 |resourceId|String|The identifier of the resource that the user signed in to. |
 |servicePrincipalId|String|The application identifier used for sign-in. This field is populated when you're signing in using an application.|
