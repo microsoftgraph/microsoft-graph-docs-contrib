@@ -22,8 +22,8 @@ An abstract entity that represents a long-running eDiscovery process. It contain
 - [ediscoveryEstimateOperation](../resources/security-ediscoveryestimateoperation.md)
 - [ediscoveryAddToReviewSetOperation](../resources/security-ediscoveryaddtoreviewsetoperation.md)
 - [ediscoveryTagOperation](../resources/security-ediscoverytagoperation.md)
-- [ediscoverySearchExportOperation](../resources/security-ediscoveryexportoperation.md)
-- [ediscoveryExportOperation](../resources/security-ediscoverysearchexportoperation.md)
+- [ediscoveryExportOperation](../resources/security-ediscoveryexportoperation.md)
+- [ediscoverySearchExportOperation](../resources/security-ediscoverysearchexportoperation.md)
 - [ediscoveryHoldPolicySyncOperation](../resources/security-ediscoveryholdpolicysyncoperation.md)
 
 Inherits from [entity](../resources/entity.md).
