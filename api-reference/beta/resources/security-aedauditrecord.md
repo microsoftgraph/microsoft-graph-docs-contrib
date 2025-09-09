@@ -17,7 +17,6 @@ Represents a record related to aedAuditRecord recordType.
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).
 
 ## Properties
-|Property|Type|Description|
 None.
 
 ## Relationships
