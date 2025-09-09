@@ -37,6 +37,7 @@ POST /me/drive/root:/{item-path}:/workbook/comments/{id}/replies
 | Name          | Description   |
 |:--------------|:--------------|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+|Content-Type|application/json. Required.|
 
 ## Request body
 
@@ -85,7 +86,7 @@ The following example shows the response.
 
 ```http
 HTTP/1.1 201 Created
-Content-type: application/json
+Content-Type: application/json
 
 {
   "content": "This is my reply to the comment.",
