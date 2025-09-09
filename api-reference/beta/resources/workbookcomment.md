@@ -27,7 +27,7 @@ Represents a comment in a workbook.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|cellAddress|String|The cell where the comment is located. Address value is in A1-style, which contains the sheet reference (for example, `Sheet1!A1`). Read-only.|
+|cellAddress|String|The cell where the comment is located. The address value is in A1-style, which contains the sheet reference (for example, `Sheet1!A1`). Read-only.|
 |content|String|The content of the comment that is the String displayed to end-users.|
 |contentType|String|The content type of the comment. Supported values are: `plain` or `mention`.|
 |id|String|The unique identifier of the comment. Read-only.|
