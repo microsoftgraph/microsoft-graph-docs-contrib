@@ -57,8 +57,8 @@ The following JSON representation shows the resource type.
   "content": "String",
   "contentType": "String",
   "id": "String (identifier)",
-  "richContent": "String",
-  "mentions": [{ "@odata.type": "microsoft.graph.workbookCommentMention" }]
+  "mentions": [{ "@odata.type": "microsoft.graph.workbookCommentMention" }],
+  "richContent": "String"
 }
 ```
 
