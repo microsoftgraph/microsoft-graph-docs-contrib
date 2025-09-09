@@ -66,7 +66,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2301
+Content-Length: 2735
 
 {
   "value": {
@@ -124,7 +124,16 @@ Content-Length: 2301
     "adminAccountPassword": "Admin Account Password value",
     "hideAdminAccount": true,
     "requestRequiresNetworkTether": true,
-    "autoAdvanceSetupEnabled": true
+    "autoAdvanceSetupEnabled": true,
+    "depProfileAdminAccountPasswordRotationSetting": {
+      "@odata.type": "microsoft.graph.depProfileAdminAccountPasswordRotationSetting",
+      "autoRotationPeriodInDays": 8,
+      "depProfileDelayAutoRotationSetting": {
+        "@odata.type": "microsoft.graph.depProfileDelayAutoRotationSetting",
+        "onRetrievalAutoRotatePasswordEnabled": true,
+        "onRetrievalDelayAutoRotatePasswordInHours": 9
+      }
+    }
   }
 }
 ```
