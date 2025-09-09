@@ -4,7 +4,7 @@ description: "Represents the configuration settings for a third-party fraud prot
 author: "more-rasika"
 ms.date: 08/05/2025
 ms.localizationpriority: medium
-ms.subservice: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 

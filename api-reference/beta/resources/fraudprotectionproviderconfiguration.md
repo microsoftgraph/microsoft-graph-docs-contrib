@@ -4,7 +4,7 @@ description: "Represents the configuration of a specific third-party fraud prote
 author: "more-rasika"
 ms.date: 08/05/2025
 ms.localizationpriority: medium
-ms.subservice: "identity-and-sign-in"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -14,14 +14,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the configuration of a specific third-party fraud protection provider.  
-
+Represents the configuration of a specific third-party fraud protection provider. This is an abstract type.
 Inherits from [fraudProtectionConfiguration](../resources/fraudprotectionconfiguration.md).
 
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+None.
 
 ## Relationships
 |Relationship|Type|Description|
