@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an audit activity type which includes the associated Microsoft Entra service and category for a specific activity. The audit activities in the tenant are available through the [directoryAudit resource type](../resources/directoryaudit.md) and its related APIs.
+Represents an audit activity type that includes the associated Microsoft Entra service and category for a specific activity. The audit activities in the tenant are available through the [directoryAudit resource type](../resources/directoryaudit.md) and its related APIs.
 
 Inherits from [entity](../resources/entity.md).
 
