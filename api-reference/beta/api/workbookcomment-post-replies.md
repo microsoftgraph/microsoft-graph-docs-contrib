@@ -48,7 +48,7 @@ If successful, this method returns a `201 Created` response code and a new [work
 
 ## Examples
 
-### Example 1: Create a comment of a plain contentType
+### Example 1: Create a reply of a plain contentType
 
 The following example shows how to create a reply of a `plain` **contentType**.
 
