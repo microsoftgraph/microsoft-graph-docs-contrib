@@ -1225,6 +1225,96 @@
         "CreatedDateTime": "2025-04-10T07:00:34.5793259Z",
         "WorkloadArea": "Identity and access",
         "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "ac36227e-16bb-4ab3-8776-3a5e5f03d9b9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "fraudProtectionConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [fraudProtectionConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/fraudProtectionConfiguration?view=graph-rest-beta) resource.",
+          "Target": "fraudProtectionConfiguration"
+        },
+        {
+          "Id": "ac36227e-16bb-4ab3-8776-3a5e5f03d9b9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "fraudProtectionProviderConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [fraudProtectionProviderConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/fraudProtectionProviderConfiguration?view=graph-rest-beta) resource.",
+          "Target": "fraudProtectionProviderConfiguration"
+        },
+        {
+          "Id": "ac36227e-16bb-4ab3-8776-3a5e5f03d9b9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onFraudProtectionLoadStartExternalUsersAuthHandler",
+          "ChangeType": "Addition",
+          "Description": "Added the [onFraudProtectionLoadStartExternalUsersAuthHandler](https://learn.microsoft.com/en-us/graph/api/resources/onFraudProtectionLoadStartExternalUsersAuthHandler?view=graph-rest-beta) resource.",
+          "Target": "onFraudProtectionLoadStartExternalUsersAuthHandler"
+        },
+        {
+          "Id": "ac36227e-16bb-4ab3-8776-3a5e5f03d9b9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onFraudProtectionLoadStartHandler",
+          "ChangeType": "Addition",
+          "Description": "Added the [onFraudProtectionLoadStartHandler](https://learn.microsoft.com/en-us/graph/api/resources/onFraudProtectionLoadStartHandler?view=graph-rest-beta) resource.",
+          "Target": "onFraudProtectionLoadStartHandler"
+        },
+        {
+          "Id": "ac36227e-16bb-4ab3-8776-3a5e5f03d9b9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "arkoseFraudProtectionProvider",
+          "ChangeType": "Addition",
+          "Description": "Added the [arkoseFraudProtectionProvider](https://learn.microsoft.com/en-us/graph/api/resources/arkoseFraudProtectionProvider?view=graph-rest-beta) resource.",
+          "Target": "arkoseFraudProtectionProvider"
+        },
+        {
+          "Id": "ac36227e-16bb-4ab3-8776-3a5e5f03d9b9",
+          "ApiChange": "Property",
+          "ChangedApiName": "displayName",
+          "ChangeType": "Addition",
+          "Description": "Added the **displayName** property to the [authenticationEventListener](https://learn.microsoft.com/en-us/graph/api/resources/authenticationEventListener?view=graph-rest-beta) resource.",
+          "Target": "authenticationEventListener"
+        },
+        {
+          "Id": "ac36227e-16bb-4ab3-8776-3a5e5f03d9b9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "fraudProtectionProvider",
+          "ChangeType": "Addition",
+          "Description": "Added the [fraudProtectionProvider](https://learn.microsoft.com/en-us/graph/api/resources/fraudProtectionProvider?view=graph-rest-beta) resource.",
+          "Target": "fraudProtectionProvider"
+        },
+        {
+          "Id": "ac36227e-16bb-4ab3-8776-3a5e5f03d9b9",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "riskPrevention",
+          "ChangeType": "Addition",
+          "Description": "Added the **riskPrevention** relationship to the [identityContainer](https://learn.microsoft.com/en-us/graph/api/resources/identityContainer?view=graph-rest-beta) resource.",
+          "Target": "identityContainer"
+        },
+        {
+          "Id": "ac36227e-16bb-4ab3-8776-3a5e5f03d9b9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onFraudProtectionLoadStartListener",
+          "ChangeType": "Addition",
+          "Description": "Added the [onFraudProtectionLoadStartListener](https://learn.microsoft.com/en-us/graph/api/resources/onFraudProtectionLoadStartListener?view=graph-rest-beta) resource.",
+          "Target": "onFraudProtectionLoadStartListener"
+        },
+        {
+          "Id": "ac36227e-16bb-4ab3-8776-3a5e5f03d9b9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "riskPreventionContainer",
+          "ChangeType": "Addition",
+          "Description": "Added the [riskPreventionContainer](https://learn.microsoft.com/en-us/graph/api/resources/riskPreventionContainer?view=graph-rest-beta) resource.",
+          "Target": "riskPreventionContainer"
+        }
+      ],
+      "Id": "ac36227e-16bb-4ab3-8776-3a5e5f03d9b9",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-08-05T21:32:55.1366384Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
     }
   ]
 }

@@ -1520,8 +1520,15 @@
                 "onInteractiveAuthFlowStartListener",
                 "onTokenIssuanceStartListener",
                 "onUserCreateStartListener",
-                "onPhoneMethodLoadStartListener"
+                "onPhoneMethodLoadStartListener",
+                "onFraudProtectionLoadStartListener"
               ]
+            },
+              {
+                "name": "Fraud protection providers",
+                "resources": [
+                    "fraudprotectionprovider"
+                ]
             },
             {
               "name": "Authentication methods",
