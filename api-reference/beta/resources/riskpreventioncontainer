@@ -1,11 +1,11 @@
 ---
 title: "riskPreventionContainer resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
-ms.date: 08/05/2025
-ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+description: "Represents the entry point for risk prevention features in External Identities."
+ms.localizationpriority: high
 doc_type: resourcePageType
+ms.subservice: "entra-sign-in"
+author: "rasikamore"
+ms.date: 09/09/2025
 ---
 
 # riskPreventionContainer resource type
@@ -14,23 +14,19 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
-Inherits from [entity](../resources/entity.md)
+Represents the entry point for risk prevention features in [External Identities](/azure/active-directory/external-identities/) for Microsoft Entra External ID tenants.
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
+None.
 
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+None.
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|fraudProtectionProviders|[fraudProtectionProvider](../resources/fraudprotectionprovider.md) collection|**TODO: Add Description**|
+|fraudProtectionProviders|[fraudProtectionProvider](../resources/fraudprotectionprovider.md) collection|Represents entry point for fraud protection provider configurations for Microsoft Entra External ID tenants.|
 
 ## JSON representation
 The following JSON representation shows the resource type.
