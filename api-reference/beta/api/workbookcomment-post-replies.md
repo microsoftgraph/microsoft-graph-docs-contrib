@@ -57,12 +57,13 @@ The following example shows a request.
 
 <!-- {
   "blockType": "request",
-  "name": "create_workbookcommentreply_from_workbookcomment"
+  "name": "create_workbookcommentreply_from_workbookcomment",
+  "sampleKeys": ["01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN"]
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/comments/97A21473-8339-4BF0-BCB6-F55E4909FFB8/replies
-Content-type: application/json
+POST https://graph.microsoft.com/beta/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/comments/97A21473-8339-4BF0-BCB6-F55E4909FFB8/replies
+Content-Type: application/json
 
 {
   "content": "This is my reply to the comment.",
@@ -104,11 +105,12 @@ The following example shows a request.
 
 <!-- {
   "blockType": "request",
-  "name": "create_workbookcommentreply_from_workbookcomment_mention"
+  "name": "create_workbookcommentreply_from_workbookcomment_mention",
+  "sampleKeys": ["01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN"]
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/comments/97A21473-8339-4BF0-BCB6-F55E4909FFB8/replies
+POST https://graph.microsoft.com/beta/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/comments/97A21473-8339-4BF0-BCB6-F55E4909FFB8/replies
 Content-Type: application/json
 
 {
