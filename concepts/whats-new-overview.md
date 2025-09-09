@@ -28,6 +28,15 @@ From the end of September 2025, the maximum page size for the [List servicePrinc
 
 Added a note to the **artifactCount** property of the [granularMailboxRestoreArtifact](/graph/api/resources/granularmailboxrestoreartifact) about its upcoming deprecation.
 
+### Files
+
+Defined the following endpoints as supported for the [driveItem: discardCheckout](/graph/api/driveitem-discardcheckout) API:
+- `/drives/{driveId}/items/{itemId}/discardCheckout`
+- `/groups/{groupId}/drive/items/{itemId}/discardCheckout`
+- `/me/drive/items/{item-id}/discardCheckout`
+- `/sites/{siteId}/drive/items/{itemId}/discardCheckout`
+- `/users/{userId}/drive/items/{itemId}/discardCheckout`
+
 ### Security | Alerts and incidents
 
 - Added the following new properties to the [securityGroupEvidence](/graph/api/resources/security-securitygroupevidence) resource:
@@ -52,6 +61,15 @@ Added a note to the **artifactCount** property of the [granularMailboxRestoreArt
 ### Backup storage
 
 Added a note to the **artifactCount** property of the [granularMailboxRestoreArtifact](/graph/api/resources/granularmailboxrestoreartifact?view=graph-rest-beta&preserve-view=true) about its upcoming deprecation.
+
+### Files
+
+Defined the following endpoints as supported for the [driveItem: discardCheckout](/graph/api/driveitem-discardcheckout?view=graph-rest-beta&preserve-view=true) API:
+- `/drives/{driveId}/items/{itemId}/discardCheckout`
+- `/groups/{groupId}/drive/items/{itemId}/discardCheckout`
+- `/me/drive/items/{item-id}/discardCheckout`
+- `/sites/{siteId}/drive/items/{itemId}/discardCheckout`
+- `/users/{userId}/drive/items/{itemId}/discardCheckout`
 
 ### Calendars | Places
 
