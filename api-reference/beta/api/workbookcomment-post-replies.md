@@ -97,7 +97,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: Create a reply of a `mention` contentType
+### Example 2: Create a reply of a mention contentType
 
 The following example shows how to create a reply of a `mention` **contentType**.
 
