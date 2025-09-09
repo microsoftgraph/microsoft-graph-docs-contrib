@@ -16,10 +16,6 @@ Contains information about a user's presence, including their availability and u
 
 This resource supports subscribing to [change notifications](/graph/changenotifications-for-presence).
 
-## Trusted domains
-
-**Trusted domains for cross-tenant presence visibility and interaction:** Configure Teams **External access** so only the intended partner organizations can **see and act on presence** for your users. In the Teams admin center (**Users > External access**), allow all domains or add specific domains to the **Allow** list under **“Meetings and chat with trusted Microsoft 365 organizations.”** Users in those trusted organizations will be able to view user presence. Cross-tenant presence requires **mutual trust**—the partner must also allow your domain. Domains that aren’t trusted (or are blocked) won’t see presence or be able to initiate presence-driven interactions. For more details visit [the domain configuration site.](https://learn.microsoft.com/microsoftteams/trusted-organizations-external-meetings-chat?tabs=organization-settings#specify-trusted-microsoft-365-organizations)
-
 ## Methods
 
 | Method                                                                               | Return Type                                     | Description                                         |
@@ -46,6 +42,10 @@ This resource supports subscribing to [change notifications](/graph/changenotifi
 > [!NOTE]
 > To learn more about the different presence states, see [User presence in Teams](/microsoftteams/presence-admins). 
 >Review [Set presence](../api/presence-setpresence.md) compatibility for state permutations.
+
+## Trusted domains
+
+**Trusted domains for cross-tenant presence visibility and interaction:** Configure **external access** in Teams admin center, so only the intended partner organizations can **see and act on presence** for your users. In the Teams admin center (**Users > External access**), allow all domains or add specific domains to the **Allow** list under **“Meetings and chat with trusted Microsoft 365 organizations.”** Users in those trusted organizations will be able to view user presence. Cross-tenant presence requires **mutual trust**—the partner must also allow your domain. Domains that aren’t trusted (or are blocked) won’t see presence or be able to initiate presence-driven interactions. For more details visit [the domain configuration site.](https://learn.microsoft.com/microsoftteams/trusted-organizations-external-meetings-chat?tabs=organization-settings#specify-trusted-microsoft-365-organizations)
 
 ## Relationships
 

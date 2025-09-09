@@ -31,26 +31,24 @@ The following precedence is used for how session states are aggregated, with "A 
 
 ### Presence states permutations
 
-| Teams state              | Graph availability / activity            | Set presence compatible |
-| ------------------------ | ---------------------------------------- |------------------------ |
-| Available                | `Available / Available`                  | **Yes**                 |
-| Available, Out of Office | `Available / OutOfOffice`                | **No** *                |
-| Busy                     | `Busy / Busy`                            | **Yes**                 |
-| In a call                | `Busy / InACall`                         | **Yes**                 |
-| In a meeting             | `Busy / InAMeeting`                      | **No** *                |
-| In a call, out of office | `Busy / InACall + OOF`                   | **No** *                |
-| Do not disturb           | `DoNotDisturb / DoNotDisturb`            | **Yes**                 |
-| Presenting               | `DoNotDisturb / Presenting`              | **Yes**                 |
-| Focusing                 | `DoNotDisturb / Focusing`                | **No** *                |
-| Away                     | `Away / Away`                            | **Yes**                 |
-| Be right back            | `BeRightBack / BeRightBack`              | **Yes**                 |
-| Appear offline           | `Offline / OffWork`                      | **Yes**                 |
-| Status unknown           | `PresenceUnknown / PresenceUnknown`      | **No** *                |
-| Out of Office            | `OutOfOffice`                            | **No** *                |
+| Teams state              | Graph availability / activity            |
+| ------------------------ | ---------------------------------------- |
+| Available                | `Available / Available`                  |
+| Available, Out of Office | `Available / OutOfOffice`                |
+| Busy                     | `Busy / Busy`                            |
+| In a call                | `Busy / InACall`                         |
+| In a meeting             | `Busy / InAMeeting`                      |
+| In a call, out of office | `Busy / InACall + OOF`                   |
+| Do not disturb           | `DoNotDisturb / DoNotDisturb`            |
+| Presenting               | `DoNotDisturb / Presenting`              |
+| Away                     | `Away / Away`                            |
+| Be right back            | `BeRightBack / BeRightBack`              |
+| Appear offline           | `Offline / OffWork`                      |
+| Out of Office            | `OutOfOffice`                            |
 
 > [!NOTE]
-> * Those states are produced as result of shceduled events, you can view [Graph **event** APIs](../resources/event.md).
-> Keep that set the availability **Out of Office (OOF)** and **In a meeting** are **event API only**. Do **not** attempt to set these states via `presence:setPresence`. Use Microsoft [Graph **event** APIs](../resources/event.md) (for example, set an event’s `showAs` to `oof`); Graph will surface OOF via `outOfOfficeSettings`, and Get Presence will reflect **In a meeting** during scheduled events.
+> 
+> Keep in mind that set the states: **Out of Office (OOF)** and **In a meeting** are not available using `presence:setPresence` method, so do **not** attempt to set these states. You can use [**event** APIs](../resources/event.md) (for example, set an event’s `showAs` to `oof`) or the second way is using [**mailbox settings** APIs](../resources/mailboxsettings.md); `presence:getPresence` will reflect **In a meeting** during scheduled events or **Out of Office** during the configured time or event.
 
 ### Timeout, expiration, and keep alive
 A presence session may **time out** and **expire**, so the application needs to call this API before the **timeout**, to maintain the state for the session; or before the **expiration**, to keep the session alive.
