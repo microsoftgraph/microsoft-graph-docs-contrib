@@ -102,7 +102,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: Create a comment of a `mention` contentType
+### Example 2: Create a comment of a mention contentType
 
 The following example shows how to create a comment of a `mention` **contentType**.
 
