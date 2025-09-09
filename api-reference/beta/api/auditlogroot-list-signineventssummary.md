@@ -27,6 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/auditlogroot-list-signineventssummary-permissions.md)]
 
+[!INCLUDE [rbac-signin-apis-read](../includes/rbac-for-apis/rbac-signin-apis-read.md)]
 ## HTTP request
 
 <!-- {
@@ -43,8 +44,8 @@ This method supports the `$filter` [OData query parameter](/graph/query-paramete
 
 | Property          | Description                                                                                                                     | Example                                                                   |
 |:------------------|:--------------------------------------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------|
-| activityDateTime      | Filter for only sign-in events in a given time frame Supported filter operators: `gt`.| `/auditLogs/signInEventsSummary?$filter=activityDateTime gt '2025-08-18T00:00:00Z'`           |
-| signInCount   | Filter for only days with a specific sign-in count window. Supported filter operators are: `gt`.                                              | `/auditLogs/signInEventsSummary?$filter=signInCount gt 10`        |
+| activityDateTime      | Filter for only sign-in events in a given time frame Supported filter operators: `gt` and `lt`.| `/auditLogs/signInEventsSummary?$filter=activityDateTime gt '2025-08-18T00:00:00Z'`           |
+| signInCount   | Filter for only days with a specific sign-in count window. Supported filter operators are: `gt`, `lt`, and `eq`.                                              | `/auditLogs/signInEventsSummary?$filter=signInCount gt 10`        |
 
 ## Request headers
 

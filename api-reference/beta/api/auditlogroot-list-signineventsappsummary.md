@@ -27,6 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/auditlogroot-list-signineventsappsummary-permissions.md)]
 
+[!INCLUDE [rbac-signin-apis-read](../includes/rbac-for-apis/rbac-signin-apis-read.md)]
 ## HTTP request
 
 <!-- {
@@ -43,8 +44,8 @@ This method supports the `$filter` [OData query parameter](/graph/query-paramete
 
 | Property          | Description                                                                                                                     | Example                                                                   |
 |:------------------|:--------------------------------------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------|
-| appId      | Filter for only sign-in events summary only for a specific application id. Supported filter operators: `eq`.| `/auditLogs/signInEventsAppSummary?$filter=appId eq 'fc7ac587-0824-44b4-9ad5-b51827bafa20'`           |
-| signInCount   | Filter for only applications with a specific sign-in count window. Supported filter operators are: `gt`.                                              | `/auditLogs/signInEventsAppSummary?$filter=signInCount gt 10`        |
+| appId      | 00000000-0000-0000-0000-000000000000 events summary only for a specific application id. Supported filter operators: `eq`.| `/auditLogs/signInEventsAppSummary?$filter=appId eq '00000000-0000-0000-0000-000000000000'`           |
+00000000-0000-0000-0000-000000000000 specific sign-in count window. Supported filter operators are: `gt`.                                              00000000-0000-0000-0000-000000000000 gt 10`        |
 
 ## Request headers
 
@@ -92,24 +93,24 @@ Content-Type: application/json
 {
   "value": [
     {
-      "appId": "b731067b-b2ea-4705-a2d3-3da34cd3a3a7",
+      "appId": "00000000-0000-0000-0000-000000000000",
       "signInCount": 214378,
-      "tenantId": "44bd0483-ed88-4fd7-899a-99f8467ac907"
+      "tenantId": "00000000-0000-0000-0000-000000000000"
     },
     {
-      "appId": "48199228-32b8-45e1-9239-86137b3bf3eb",
+      "appId": "00000000-0000-0000-0000-000000000000",
       "signInCount": 30484,
-      "tenantId": "44bd0483-ed88-4fd7-899a-99f8467ac907"
+      "tenantId": "00000000-0000-0000-0000-000000000000"
     },
     {
-      "appId": "fe13e228-9ef6-4e9d-9277-1ef6206bc500",
+      "appId": "00000000-0000-0000-0000-000000000000",
       "signInCount": 17227,
-      "tenantId": "44bd0483-ed88-4fd7-899a-99f8467ac907"
+      "tenantId": "00000000-0000-0000-0000-000000000000"
     },
     {
-      "appId": "fc7ac587-0824-44b4-9ad5-b51827bafa20",
+      "appId": "00000000-0000-0000-0000-000000000000",
       "signInCount": 10234,
-      "tenantId": "44bd0483-ed88-4fd7-899a-99f8467ac907"
+      "tenantId": "00000000-0000-0000-0000-000000000000"
     }
   ]
 }
