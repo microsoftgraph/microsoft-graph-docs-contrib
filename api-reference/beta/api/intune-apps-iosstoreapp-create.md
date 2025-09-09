@@ -88,7 +88,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 Content-type: application/json
-Content-length: 1317
+Content-length: 1337
 
 {
   "@odata.type": "#microsoft.graph.iosStoreApp",
@@ -134,7 +134,8 @@ Content-length: 1317
     "v15_0": true,
     "v16_0": true,
     "v17_0": true,
-    "v18_0": true
+    "v18_0": true,
+    "v26_0": true
   }
 }
 ```
@@ -144,7 +145,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1489
+Content-Length: 1509
 
 {
   "@odata.type": "#microsoft.graph.iosStoreApp",
@@ -193,7 +194,8 @@ Content-Length: 1489
     "v15_0": true,
     "v16_0": true,
     "v17_0": true,
-    "v18_0": true
+    "v18_0": true,
+    "v26_0": true
   }
 }
 ```

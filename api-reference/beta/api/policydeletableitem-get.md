@@ -77,6 +77,7 @@ If successful, this method returns a `200 OK` response code and a [policyDeletab
 #### Request
 
 The following example shows a request for a crossTenantAccessPolicyConfigurationPartner.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_policydeletableitem_crossTenantAccessPolicyConfigurationPartner"
@@ -86,6 +87,31 @@ The following example shows a request for a crossTenantAccessPolicyConfiguration
 GET https://graph.microsoft.com/beta/policies/deletedItems/crossTenantPartners/01d0e717-bc90-46ba-94a9-71b4a811fddb
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-policydeletableitem-crosstenantaccesspolicyconfigurationpartner-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-policydeletableitem-crosstenantaccesspolicyconfigurationpartner-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-policydeletableitem-crosstenantaccesspolicyconfigurationpartner-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-policydeletableitem-crosstenantaccesspolicyconfigurationpartner-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-policydeletableitem-crosstenantaccesspolicyconfigurationpartner-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-policydeletableitem-crosstenantaccesspolicyconfigurationpartner-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
@@ -137,6 +163,7 @@ Content-Type: application/json
 #### Request
 
 The following example shows a request for a crossTenantIdentitySyncPolicyPartner.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_policydeletableitem_crossTenantIdentitySyncPolicyPartner"
@@ -146,6 +173,31 @@ The following example shows a request for a crossTenantIdentitySyncPolicyPartner
 GET https://graph.microsoft.com/beta/policies/deletedItems/crossTenantSyncPolicyPartners/01d0e717-bc90-46ba-94a9-71b4a811fddb
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-policydeletableitem-crosstenantidentitysyncpolicypartner-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-policydeletableitem-crosstenantidentitysyncpolicypartner-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-policydeletableitem-crosstenantidentitysyncpolicypartner-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-policydeletableitem-crosstenantidentitysyncpolicypartner-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-policydeletableitem-crosstenantidentitysyncpolicypartner-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-policydeletableitem-crosstenantidentitysyncpolicypartner-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
