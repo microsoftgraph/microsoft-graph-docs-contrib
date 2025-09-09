@@ -629,7 +629,7 @@
       "Cloud": "Review",
       "Version": "beta",
       "CreatedDateTime": "2025-05-30T15:58:46.2577191Z",
-      "WorkloadArea": "Microsoft.Intune.AndroidFOTA",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {
