@@ -24,7 +24,7 @@ To learn more about how to use the Microsoft Teams export APIs to export content
 > [!NOTE]
 > This endpoint doesn't support retrieving retained messages from Teams private channels.
 
-[!INCLUDE [national-cloud-support](../../includes/global-china.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
