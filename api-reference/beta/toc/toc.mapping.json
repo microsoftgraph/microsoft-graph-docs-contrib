@@ -2784,7 +2784,9 @@
             "microsoft.graph.security.healthIssue",
             "microsoft.graph.security.sensor",
             "microsoft.graph.security.identityAccounts",
-            "microsoft.graph.security.user"
+            "microsoft.graph.security.user",
+            "microsoft.graph.security.sensorCandidate",
+            "microsoft.graph.security.sensorCandidateActivationConfiguration"
           ],
           "complexTypes": [
             "microsoft.graph.security.deploymentAccessKeyType",
