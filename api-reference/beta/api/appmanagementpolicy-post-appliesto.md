@@ -2,7 +2,7 @@
 title: "Assign appliesTo"
 description: "Assign a policy to application or service principal object."
 ms.localizationpriority: medium
-author: "madansr7"
+author: "aricrowe57"
 ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
 ms.date: 07/29/2024
