@@ -42,6 +42,7 @@ Inherits from [entity](../resources/entity.md).
 | chatInfo              | [chatInfo](chatinfo.md) | The chat information associated with this online meeting.  |
 | chatRestrictions      | [chatRestrictions](../resources/chatrestrictions.md) | Specifies the configuration settings for meeting chat restrictions. |
 | id | String | The default ID associated with the online meeting. Read-only.    |
+| isEndToEndEncryptionEnabled | Boolean | Indicates whether end-to-end encryption (E2EE) is enabled for the online meeting.  |
 | isEntryExitAnnounced  | Boolean | Indicates whether to announce when callers join or leave. |
 | joinInformation | [itemBody](itembody.md) | The join information in the language and locale variant specified in 'Accept-Language' request HTTP header. Read-only. |
 | joinMeetingIdSettings | [joinMeetingIdSettings](joinmeetingidsettings.md) | Specifies the **joinMeetingId**, the meeting passcode, and the requirement for the passcode. Once an **onlineMeeting** is created, the **joinMeetingIdSettings** can't be modified. To make any changes to this property, you must cancel this meeting and create a new one. |
@@ -134,6 +135,7 @@ The following JSON representation shows the resource type.
   "chatInfo": {"@odata.type": "microsoft.graph.chatInfo"},
   "chatRestrictions":{"@odata.type": "microsoft.graph.chatRestrictions"},
   "id": "String (identifier)",  
+  "isEndToEndEncryptionEnabled": "Boolean",
   "isEntryExitAnnounced": "Boolean",
   "joinInformation": {"@odata.type": "microsoft.graph.itemBody"},
   "joinMeetingIdSettings": {"@odata.type": "microsoft.graph.joinMeetingIdSettings"},

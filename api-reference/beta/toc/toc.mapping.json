@@ -222,6 +222,7 @@
       "complexTypes": [
         "artifactQuery",
         "notificationRecipients",
+        "protectionPolicyArtifactCount",
         "restorePointSearchResponse",
         "restorePointSearchResult",
         "retentionSetting",
@@ -262,21 +263,21 @@
           "resources": [
             "place",
             "building",
-            "floor",
-            "section",
             "desk",
+            "floor",
             "room",
-            "workspace",
-            "roomList"
+            "roomList",
+            "section",
+            "workspace"
           ],
           "complexTypes": [
-            "resourceLink",
-            "mailboxDetails",
-            "placeMode",
             "assignedPlaceMode",
             "dropInPlaceMode",
+            "mailboxDetails",
+            "offlinePlaceMode",
+            "placeMode",
             "reservablePlaceMode",
-            "offlinePlaceMode"
+            "resourceLink"
           ],
            "childNodes": [
             {
@@ -284,7 +285,21 @@
               "resources":[
                 "workplaceSensorDevice"
               ]
-            }
+            },
+            {
+             "name": "Maps (preview)",
+             "resources":[
+               "buildingMap",
+               "fixtureMap",
+               "footprintMap",
+               "levelMap",
+               "sectionMap",
+               "unitMap"
+             ],
+              "complexTypes": [
+                "importBuildingMapSetting"
+              ]
+             }
            ]
          }
       ]
@@ -487,6 +502,7 @@
           "resources": [
             "cloudPC",
             "cloudPcAuditEvent",
+            "cloudPcCloudApp",
             "cloudPcCrossCloudGovernmentOrganizationMapping",
             "cloudPcDeviceImage",
             "cloudPcExternalPartnerSetting",
@@ -527,6 +543,7 @@
             "cloudPcBulkRemoteActionResult",
             "cloudPcBulkCreateSnapshot",
             "cloudPcBulkSetReviewStatus",
+            "cloudPcCloudAppDetail",
             "CloudPcConnectionSetting",
             "cloudPcConnectivityEvent",
             "cloudPcConnectivityResult",
@@ -534,6 +551,7 @@
             "cloudPcDisasterRecoveryAzureConnectionSetting",
             "cloudPcDisasterRecoveryMicrosoftHostedNetworkSetting",
             "cloudPcDisasterRecoveryNetworkSetting",
+            "cloudPcDiscoveredApp",
             "cloudPcDomainJoinConfiguration",
             "cloudPcForensicStorageAccount",
             "cloudPcFrontlineSharedDeviceDetail",
@@ -1003,7 +1021,8 @@
       ],
       "complexTypes": [
         "fileStorageContainerTypeRegistrationSettings",
-        "fileStorageContainerTypeSettings"
+        "fileStorageContainerTypeSettings",
+        "fileStorageContainerTypeAgentSettings"
       ]
     },
     {
@@ -2616,7 +2635,9 @@
             "microsoft.graph.security.incidentTask"
           ],
           "complexTypes": [
-            "microsoft.graph.security.teamsMessageEvidence"
+            "microsoft.graph.security.securityGroupEvidence",
+            "microsoft.graph.security.teamsMessageEvidence",
+            "microsoft.graph.security.userAccount"
           ]
         },
         {
@@ -2761,14 +2782,20 @@
           "name": "Identities",
           "resources": [
             "microsoft.graph.security.healthIssue",
-            "microsoft.graph.security.sensor"
+            "microsoft.graph.security.sensor",
+            "microsoft.graph.security.identityAccounts",
+            "microsoft.graph.security.user",
+            "microsoft.graph.security.sensorCandidate",
+            "microsoft.graph.security.sensorCandidateActivationConfiguration"
           ],
           "complexTypes": [
             "microsoft.graph.security.deploymentAccessKeyType",
             "microsoft.graph.security.identityContainer",
             "microsoft.graph.security.networkAdapter",
             "microsoft.graph.security.sensorDeploymentPackage",
-            "microsoft.graph.security.sensorSettings"
+            "microsoft.graph.security.sensorSettings",
+            "microsoft.graph.security.invokeActionResult",
+            "microsoft.graph.security.account"
           ]
         },
         {
@@ -3064,12 +3091,15 @@
         {
           "name": "Administration (preview)",
           "resources": [
-            "microsoft.graph.teamsAdministration.teamsUserConfiguration"
+            "microsoft.graph.teamsAdministration.teamsUserConfiguration",
+            "microsoft.graph.teamsAdministration.numberAssignment",
+            "microsoft.graph.teamsAdministration.telephoneNumberLongRunningOperation"
           ],
           "complexTypes": [
             "microsoft.graph.teamsAdministration.assignedTelephoneNumber",
             "microsoft.graph.teamsAdministration.effectivePolicyAssignment",
-            "microsoft.graph.teamsAdministration.policyAssignment"
+            "microsoft.graph.teamsAdministration.policyAssignment",
+            "microsoft.graph.teamsAdministration.telephoneNumberLongRunningOperationDetails"
           ]
         },
         {
@@ -3107,6 +3137,12 @@
             "outOfOfficeSettings"
           ],
           "childNodes": [
+            {
+              "name": "Ad hoc call",
+              "resources": [
+                "adhocCall"
+              ]
+            },
             {
               "name": "Calls",
               "resources": [

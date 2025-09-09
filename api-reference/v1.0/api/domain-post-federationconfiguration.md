@@ -1,7 +1,7 @@
 ---
 title: "Create internalDomainFederation"
 description: "Create a new internalDomainFederation object."
-author: "rahul-nagraj"
+author: "vimrang"
 ms.localizationpriority: medium
 ms.custom: no-azure-ad-ps-ref
 ms.subservice: "entra-sign-in"

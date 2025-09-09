@@ -47,6 +47,7 @@ Inherits from [onlineMeetingBase](../resources/onlinemeetingbase.md).
 | chatInfo              | [chatInfo](chatinfo.md) | The chat information associated with the virtual event session. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
 | endDateTime           | [DateTimeTimeZone](../resources/datetimetimezone.md) | The virtual event session end time.   |
 | id | String | The unique identifier of the virtual event session. Read-only. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
+| isEndToEndEncryptionEnabled | Boolean | Indicates whether end-to-end encryption (E2EE) is enabled for the virtual event session. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
 | isEntryExitAnnounced  | Boolean | Indicates whether to announce when callers join or leave. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
 | joinInformation | [itemBody](itembody.md) | The join information of the virtual event session. Read-only. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
 | joinMeetingIdSettings | [joinMeetingIdSettings](joinmeetingidsettings.md) | Specifies the **joinMeetingId**, the meeting passcode, and the requirement for the passcode. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
@@ -122,6 +123,7 @@ The following JSON representation shows the resource type.
   "chatRestrictions":{"@odata.type": "microsoft.graph.chatRestrictions"},
   "endDateTime": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
   "id": "String (identifier)",
+  "isEndToEndEncryptionEnabled": "Boolean",
   "isEntryExitAnnounced": "Boolean",
   "joinInformation": {"@odata.type": "microsoft.graph.itemBody"},
   "joinMeetingIdSettings": {"@odata.type": "microsoft.graph.joinMeetingIdSettings"},

@@ -2,7 +2,7 @@
 title: "Create appManagementPolicy"
 description: "Create an application management policy."
 ms.localizationpriority: medium
-author: "madansr7"
+author: "aricrowe57"
 ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
 ms.date: 09/13/2024

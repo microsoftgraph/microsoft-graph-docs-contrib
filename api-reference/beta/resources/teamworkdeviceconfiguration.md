@@ -12,6 +12,8 @@ ms.date: 07/22/2024
 
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-deprecation-disclaimer](../../includes/beta-deprecation-disclaimer.md)]
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents configuration details for a Microsoft Teams-enabled [device](../resources/teamworkdevice.md), including software versions, peripheral device configuration (for example, camera, display, microphone, and speaker), hardware configuration, and Teams client configuration.

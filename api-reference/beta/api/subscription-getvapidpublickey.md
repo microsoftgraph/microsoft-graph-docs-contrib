@@ -190,7 +190,6 @@ GET https://graph.microsoft.com/beta/subscriptions/getVapidPublicKey
 
 ---
 
-
 ### Response
 
 The following example shows the response.
