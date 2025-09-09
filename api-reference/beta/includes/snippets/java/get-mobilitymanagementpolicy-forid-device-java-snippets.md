@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-MobilityManagementPolicy result = graphClient.policies().mobileDeviceManagementPolicies().byMobilityManagementPolicyId("{mobilityManagementPolicy-id}").get();
+MobileDeviceManagementPolicy result = graphClient.policies().mobileDeviceManagementPolicies().byMobileDeviceManagementPolicyId("{mobileDeviceManagementPolicy-id}").get();
 
 
 ```

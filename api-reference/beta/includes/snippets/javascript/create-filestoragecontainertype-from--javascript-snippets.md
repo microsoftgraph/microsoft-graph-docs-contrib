@@ -17,7 +17,10 @@ const fileStorageContainerType = {
   settings: {
     isItemVersioningEnabled: true,
     isSharingRestricted: false,
-    consumingTenantOverridables: 'isSearchEnabled,itemMajorVersionLimit'
+    consumingTenantOverridables: 'isSearchEnabled,itemMajorVersionLimit',
+    agent: {
+      chatEmbedAllowedHosts: ['https://localhost:3000']
+    }
   }
 };
 
