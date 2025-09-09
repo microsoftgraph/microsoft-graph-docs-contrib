@@ -61,7 +61,8 @@ The following example shows how to create a comment of a `plain` **contentType**
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "create_workbookcomment_from_workbook"
+  "name": "create_workbookcomment_from_workbook",
+  "sampleKeys": ["01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN"]
 }-->
 
 ```http
@@ -109,7 +110,8 @@ The following example shows how to create a comment of a `mention` **contentType
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "create_workbookcomment_from_workbook_mention"
+  "name": "create_workbookcomment_from_workbook_mention",
+  "sampleKeys": ["01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN"]
 }-->
 
 ```http
