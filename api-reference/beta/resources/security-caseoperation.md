@@ -16,15 +16,15 @@ Namespace: microsoft.graph.security
 
 An abstract entity that represents a long-running eDiscovery process. It contains a common set of properties that are shared among inheriting entities. Entities that derive from **caseOperation** include:
 
-- [Index operation](../resources/security-ediscoveryindexoperation.md)
-- [Hold operation](../resources/security-ediscoveryholdoperation.md)
-- [Purge data operation](../resources/security-ediscoverypurgedataoperation.md)
-- [Estimate operation](../resources/security-ediscoveryestimateoperation.md)
-- [Add to review set operation](../resources/security-ediscoveryaddtoreviewsetoperation.md)
-- [Tag operation](../resources/security-ediscoverytagoperation.md)
-- [Export operation](../resources/security-ediscoveryexportoperation.md)
-- [Search export operation](../resources/security-ediscoverysearchexportoperation.md)
-- [Hold policy sync operation](../resources/security-ediscoveryholdpolicysyncoperation.md)
+- [ediscoveryIndexOperation](../resources/security-ediscoveryindexoperation.md)
+- [ediscoveryHoldOperation](../resources/security-ediscoveryholdoperation.md)
+- [ediscoveryPurgeDataOperation](../resources/security-ediscoverypurgedataoperation.md)
+- [ediscoveryEstimateOperation](../resources/security-ediscoveryestimateoperation.md)
+- [ediscoveryAddToReviewSetOperation](../resources/security-ediscoveryaddtoreviewsetoperation.md)
+- [ediscoveryTagOperation](../resources/security-ediscoverytagoperation.md)
+- [ediscoverySearchExportOperation](../resources/security-ediscoveryexportoperation.md)
+- [ediscoveryExportOperation](../resources/security-ediscoverysearchexportoperation.md)
+- [ediscoveryHoldPolicySyncOperation](../resources/security-ediscoveryholdpolicysyncoperation.md)
 
 Inherits from [entity](../resources/entity.md).
 
