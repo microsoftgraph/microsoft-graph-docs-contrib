@@ -43,7 +43,7 @@ This method supports the `$filter` [OData query parameter](/graph/query-paramete
 
 | Property          | Description                                                                                                                     | Example                                                                   |
 |:------------------|:--------------------------------------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------|
-| activityDateTime      | Filter for only sign-in events in a given time frame Supported filter operators: `eq`.| `/auditLogs/signInEventsSummary?$filter=activityDateTime gt '2025-08-18T00:00:00Z'`           |
+| activityDateTime      | Filter for only sign-in events in a given time frame Supported filter operators: `gt`.| `/auditLogs/signInEventsSummary?$filter=activityDateTime gt '2025-08-18T00:00:00Z'`           |
 | signInCount   | Filter for only days with a specific sign-in count window. Supported filter operators are: `gt`.                                              | `/auditLogs/signInEventsSummary?$filter=signInCount gt 10`        |
 
 ## Request headers

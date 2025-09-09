@@ -21,17 +21,17 @@ Microsoft Entra provides an audit trail of all user and app activity in your ten
 
 ## What are activity reports?
 
-Microsoft Entra provides nine types of activity reports:
+Microsoft Entra provides the following activity reports:
 
 - Directory audit logs
 - Custom security attribute audit logs
 - Self-service sign-ups (Microsoft Entra External ID)
 - Sign-ins
 - Provisioning
-- Audit Activity Types
-- Sign In Events App Summary
-- Sign In Events Summary
-- Summarized Sign Ins
+- Audit activity types
+- Sign-in events summary per app
+- Sign-in events count per day
+- Summarized sign-ins for a category
 
 ## Available audit logs
 
