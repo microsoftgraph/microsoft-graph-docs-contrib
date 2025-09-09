@@ -59,7 +59,7 @@ The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "create_workbookcommentreply_from_workbookcomment",
-  "sampleKeys": ["01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN"]
+  "sampleKeys": ["01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN","97A21473-8339-4BF0-BCB6-F55E4909FFB8"]
 }-->
 
 ```http
@@ -107,7 +107,7 @@ The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "create_workbookcommentreply_from_workbookcomment_mention",
-  "sampleKeys": ["01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN"]
+  "sampleKeys": ["01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN","97A21473-8339-4BF0-BCB6-F55E4909FFB8"]
 }-->
 
 ```http
