@@ -28,7 +28,7 @@ None.
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|auditActivityTypes|[auditActivityType](../resources/auditactivitytype.md) collection|Represents an audit log activity type that.|
+|auditActivityTypes|[auditActivityType](../resources/auditactivitytype.md) collection|Represents an audit activity type which includes the associated service and category for a specific activity.|
 |customSecurityAttributeAudits|[customSecurityAttributeAudit](../resources/customsecurityattributeaudit.md) collection|Represents a custom security attribute audit log.|
 |directoryAudits|[directoryAudit](../resources/directoryaudit.md) collection|Read-only. Nullable.|
 |provisioning|[provisioningObjectSummary](../resources/provisioningobjectsummary.md) collection|Represents an action performed by the Microsoft Entra provisioning service and its associated properties.|

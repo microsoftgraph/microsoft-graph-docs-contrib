@@ -70,7 +70,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/auditLogs/getSummarizedServicePrincipalSignIns(aggregationWindow='parameterValue')
+GET https://graph.microsoft.com/beta/auditLogs/getSummarizedServicePrincipalSignIns(aggregationWindow='d1')
 ```
 
 

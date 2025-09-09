@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Gets a list of all of the possible audit log types and which services they come from as defined in the [auditActivityType](../resources/auditactivitytype.md) object..
+Gets a list of all of the possible audit log types and which services they come from as defined in the [auditActivityType](../resources/auditactivitytype.md) object.
 
 ## Permissions
 
