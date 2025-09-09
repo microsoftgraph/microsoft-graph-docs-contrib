@@ -18,6 +18,15 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 > [!IMPORTANT]
 > Features in _preview_ status are subject to change without notice, and might not be promoted to generally available (GA) status. Don't use preview features in production apps.
 
+## September 2025: New in preview only
+
+### Workbooks and charts
+
+- Create a new [workbookComment](/graph/api/workbookcomment-post-comments?view=graph-rest-beta&preserve-view=true).
+- Use the **cellAddress** property on [workbookComment](/graph/api/resources/workbookcomment?view=graph-rest-beta&preserve-view=true) to get the cell where the comment is located.
+- Use the **mentions** property on [workbookComment](/graph/api/resources/workbookcomment?view=graph-rest-beta&preserve-view=true) or [workbookCommentReply](/graph/api/resources/workbookcommentreply?view=graph-rest-beta&preserve-view=true) to get all the people mentioned within the comment or reply.
+- Use the **richContent** property on [workbookComment](/graph/api/resources/workbookcomment?view=graph-rest-beta&preserve-view=true) or [workbookCommentReply](/graph/api/resources/workbookcommentreply?view=graph-rest-beta&preserve-view=true) to get the rich content of the comment or reply.
+
 ## August 2025: New and generally available
 
 ### Device and app management | Cloud PC
