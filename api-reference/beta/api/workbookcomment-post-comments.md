@@ -113,7 +113,7 @@ The following example shows a request.
 }-->
 
 ```http
-POST /me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/comments
+POST https://graph.microsoft.com/beta/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/comments
 Content-Type: application/json
 
 {
