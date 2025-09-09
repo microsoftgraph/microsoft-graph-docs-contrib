@@ -6,19 +6,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\Beta\GraphServiceClient;
-use Microsoft\Graph\Beta\Generated\Models\Place;
+use Microsoft\Graph\Beta\Generated\Models\Desk;
+use Microsoft\Graph\Beta\Generated\Models\DropInPlaceMode;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
-$requestBody = new Place();
+$requestBody = new Desk();
 $requestBody->setOdataType('microsoft.graph.desk');
-$additionalData = [
-	'mode' => [
-		'@odata.type' => 'microsoft.graph.dropInPlaceMode',
-	],
-];
-$requestBody->setAdditionalData($additionalData);
+$mode = new DropInPlaceMode();
+$mode->setOdataType('microsoft.graph.dropInPlaceMode');
+$requestBody->setMode($mode);
 
 $result = $graphServiceClient->places()->byPlaceId('place-id')->patch($requestBody)->wait();
 

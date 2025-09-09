@@ -11,14 +11,10 @@ const options = {
 const client = Client.init(options);
 
 const activityBasedTimeoutPolicy = {
-  definition: [
-    'definition-value'
-  ],
-  displayName: 'displayName-value',
-  isOrganizationDefault: true
+displayName: 'Idle timeout for all apps'
 };
 
-await client.api('/policies/activityBasedTimeoutPolicies/{id}')
+await client.api('/policies/activityBasedTimeoutPolicies/cf70ac6c-8a1a-40cd-a523-a2b4a56de0df')
 	.update(activityBasedTimeoutPolicy);
 
 ```

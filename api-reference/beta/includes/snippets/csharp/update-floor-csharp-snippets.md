@@ -9,18 +9,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 // Dependencies
 using Microsoft.Graph.Beta.Models;
 
-var requestBody = new Place
+var requestBody = new Floor
 {
 	OdataType = "microsoft.graph.floor",
-	AdditionalData = new Dictionary<string, object>
-	{
-		{
-			"isWheelChairAccessible" , true
-		},
-		{
-			"sortOrder" , 2
-		},
-	},
+	IsWheelChairAccessible = true,
+	SortOrder = 2,
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp

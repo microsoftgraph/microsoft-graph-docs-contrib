@@ -309,6 +309,8 @@ items:
     href: ../../resources/artifactquery.md
   - name: Notification recipients
     href: ../../resources/notificationrecipients.md
+  - name: Protection policy artifact count
+    href: ../../resources/protectionpolicyartifactcount.md
   - name: Restore point search response
     href: ../../resources/restorepointsearchresponse.md
   - name: Restore point search result

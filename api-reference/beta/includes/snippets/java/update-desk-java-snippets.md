@@ -8,13 +8,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-Place place = new Place();
+Desk place = new Desk();
 place.setOdataType("microsoft.graph.desk");
-HashMap<String, Object> additionalData = new HashMap<String, Object>();
- mode = new ();
+DropInPlaceMode mode = new DropInPlaceMode();
 mode.setOdataType("microsoft.graph.dropInPlaceMode");
-additionalData.put("mode", mode);
-place.setAdditionalData(additionalData);
+place.setMode(mode);
 Place result = graphClient.places().byPlaceId("{place-id}").patch(place);
 
 
