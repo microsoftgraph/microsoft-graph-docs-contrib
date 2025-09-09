@@ -312,6 +312,8 @@ items:
     href: ../../api/sharepointgroup-delete-members.md
 - name: Complex types
   items:
+  - name: File storage container type agent settings
+    href: ../../resources/filestoragecontainertypeagentsettings.md
   - name: File storage container type registration settings
     href: ../../resources/filestoragecontainertyperegistrationsettings.md
   - name: File storage container type settings

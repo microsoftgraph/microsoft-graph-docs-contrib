@@ -1,7 +1,7 @@
 ---
 title: "Upsert application"
 description: "Create a new application object if it doesn't exist, or update the properties of an existing application object."
-author: "sureshja"
+author: "Jackson-Woods"
 ms.localizationpriority: medium
 ms.subservice: "entra-applications"
 doc_type: apiPageType
