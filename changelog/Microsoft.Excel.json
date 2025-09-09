@@ -115,6 +115,14 @@
           "ChangeType": "Addition",
           "Description": "Added the **richContent** property to the [workbookCommentReply](https://learn.microsoft.com/en-us/graph/api/resources/workbookCommentReply?view=graph-rest-beta) resource.",
           "Target": "workbookCommentReply"
+        },
+        {
+          "Id": "ba5054e7-66be-434a-b871-664dbf0b40a9",
+          "ApiChange": "Method",
+          "ChangedApiName": "workbookComment",
+          "ChangeType": "Addition",
+          "Description": "Added the [Create workbookComment](https://learn.microsoft.com/en-us/graph/api/workbookcomment-post-comments?view=graph-rest-beta) operation to the [workbookComment](https://learn.microsoft.com/en-us/graph/api/resources/workbookComment?view=graph-rest-beta) resource.",
+          "Target": "workbookComment"
         }
       ],
       "Id": "ba5054e7-66be-434a-b871-664dbf0b40a9",
