@@ -125,7 +125,9 @@ Content-Type: application/json
         "isEnabled": false,
         "maxImageSize": 24576,
         "timeout": "PT1M"
-    }
+    },
+    "caseType": "standard",
+    "reviewSetSettings": "disableGrouping"
 }
 ```
 

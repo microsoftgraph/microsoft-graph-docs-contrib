@@ -11,6 +11,8 @@ ms.date: 04/04/2024
 # Get teamworkDeviceOperation
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-deprecation-disclaimer](../../includes/beta-deprecation-disclaimer.md)]
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get the details of an async, long-running operation on a Microsoft Teams-enabled [device](../resources/teamworkdeviceoperation.md).

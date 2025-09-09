@@ -17,6 +17,6 @@ $requestBody->setComplianceUrl('https://portal.uem.contoso.com/?portalAction=Com
 $requestBody->setDiscoveryUrl('https://enrollment.uem.contoso.com/enrollmentserver/discovery.svc');
 $requestBody->setTermsOfUseUrl('https://portal.uem.contoso.com/TermsofUse.aspx');
 
-$result = $graphServiceClient->policies()->mobileDeviceManagementPolicies()->byMobilityManagementPolicyId('mobilityManagementPolicy-id')->patch($requestBody)->wait();
+$result = $graphServiceClient->policies()->mobileDeviceManagementPolicies()->byMobileDeviceManagementPolicyId('mobileDeviceManagementPolicy-id')->patch($requestBody)->wait();
 
 ```
