@@ -18,7 +18,7 @@ Inherits from [microsoft.graph.security.auditData](../resources/security-auditda
 
 ## Properties
 |Property|Type|Description|
-|:---|:---|:---|
+None.
 
 ## Relationships
 None.
