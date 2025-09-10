@@ -528,10 +528,12 @@ items:
         href: ../../api/onlinemeeting-list-recordings.md
       - name: Get
         href: ../../api/callrecording-get.md
-      - name: Get delta by organizer
-        href: ../../api/callrecording-delta.md
-      - name: List recordings by organizer
-        href: ../../api/onlinemeeting-getallrecordings.md
+      - name: Get
+        items:
+        - name: Get delta by organizer
+          href: ../../api/callrecording-delta.md
+        - name: List recordings by organizer
+          href: ../../api/onlinemeeting-getallrecordings.md
     - name: Call transcript
       items:
       - name: Call transcript
