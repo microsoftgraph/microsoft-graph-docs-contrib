@@ -22,7 +22,7 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Create](../api/educationassignment-post-gradingscheme.md)|[educationGradingScheme](../resources/educationgradingscheme.md)|Create a new [educationGradingScheme](../resources/educationgradingscheme.md) object.|
+|[Create](../api/educationassignmentsettings-post-gradingscheme.md)|[educationGradingScheme](../resources/educationgradingscheme.md)|Create a new [educationGradingScheme](../resources/educationgradingscheme.md) object.|
 |[Get](../api/educationgradingscheme-get.md)|[educationGradingScheme](../resources/educationgradingscheme.md)|Read the properties and relationships of an [educationGradingScheme](../resources/educationgradingscheme.md) object.|
 |[Update](../api/educationgradingscheme-update.md)|[educationGradingScheme](../resources/educationgradingscheme.md)|Update the properties of an [educationGradingScheme](../resources/educationgradingscheme.md) object.|
 |[Delete](../api/educationgradingscheme-delete.md)|None|Delete an [educationGradingScheme](../resources/educationgradingscheme.md) object.|

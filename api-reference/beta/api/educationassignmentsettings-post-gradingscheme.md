@@ -89,7 +89,7 @@ The following example shows the response.
   "truncated": true,
 } -->
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 Content-type: application/json
 
 {
