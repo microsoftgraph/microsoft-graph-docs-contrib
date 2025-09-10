@@ -1,6 +1,6 @@
 ---
-title: "Create educationGradingScheme"
-description: "Create a new educationGradingScheme object."
+title: "Add educationGradingScheme"
+description: "Add an existing educationGradingScheme object to an existing educationAssignment."
 author: "v-rmanda"
 ms.localizationpriority: medium
 ms.subservice: "education"
@@ -8,13 +8,13 @@ doc_type: apiPageType
 ms.date: 04/05/2024
 ---
 
-# Create educationGradingScheme
+# Add educationGradingScheme
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Add an existing [educationGradingScheme](../resources/educationgradingscheme.md) for an existing assignment.
+Add an existing [educationGradingScheme](../resources/educationgradingscheme.md) to an existing educationAssignment.
 
 ## Permissions
 

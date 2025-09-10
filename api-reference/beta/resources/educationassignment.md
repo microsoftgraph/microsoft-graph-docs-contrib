@@ -51,6 +51,7 @@ Inherits from [entity](../resources/entity.md).
 |[Remove educationGradingCategory](../api/educationassignment-delete-gradingcategory.md)|None|Remove an [educationGradingCategory](../resources/educationgradingcategory.md) object.|
 |[Activate assignment](../api/educationassignment-activate.md) |[educationAssignment](educationassignment.md) | Activate an inactive **educationAssignment** to signal that the assignment has further action items for teachers or students.|
 |[Deactivate assignment](../api/educationassignment-deactivate.md) |[educationAssignment](educationassignment.md) | Mark an assigned **educationAssignment** as inactive to signal that the assignment has no further action items for both teachers and students.|
+|[Add educationGradingScheme](../api/educationassignment-put-gradingscheme.md)|[educationGradingScheme](../resources/educationgradingscheme.md)|Add an existing [educationGradingScheme](../resources/educationgradingscheme.md) object to this **assignment**.|
 
 ## Properties
 | Property	   | Type	|Description|
@@ -89,6 +90,7 @@ Inherits from [entity](../resources/entity.md).
 |categories|[educationCategory](educationcategory.md) collection| When set, enables users to easily find **assignments** of a given type.  Read-only. Nullable.|
 |rubric|[educationRubric](educationrubric.md)|When set, the grading rubric attached to this **assignment**.|
 |gradingCategory|[educationGradingCategory](educationgradingcategory.md) collection| When set, enables users to weight assignments differently when computing a class average grade.|
+|gradingScheme|[educationGradingScheme](educationgradingscheme.md) | When set, enables users to configure custom string grades based on the percentage of total points earned on this assignment.|
 
 ## JSON representation
 

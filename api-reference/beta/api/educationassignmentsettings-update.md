@@ -344,7 +344,7 @@ Content-type: application/json
 }
 ```
 
-### Example 4: Create grading schemas
+### Example 4: Create grading schemes
 
 #### Request
 The following example shows a request.
