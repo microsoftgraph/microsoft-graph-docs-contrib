@@ -2,7 +2,7 @@
 title: "building resource type"
 description: "Represents a building within the tenant."
 author: tiwarisakshi02
-ms.date: 06/11/2025
+ms.date: 06/12/2025
 ms.localizationpriority: medium
 ms.subservice: outlook
 doc_type: resourcePageType
@@ -19,8 +19,11 @@ Represents a building within the tenant.
 Inherits from [place](./place.md).
 
 ## Methods
+|Method|Return type|Description|
+|:---|:---|:---|
+|[Ingest map file](../api/building-ingestmapfile.md)|None|Ingest the map file for a [building](../resources/building.md) in Places.|
 
-For the list of supported methods, see [place](./place.md).
+For more supported methods, see [place](./place.md).
 
 ## Properties
 |Property|Type|Description|
@@ -39,7 +42,9 @@ For the list of supported methods, see [place](./place.md).
 |tags|String collection|Custom tags that are associated with the building for categorization or filtering. Inherited from [place](./place.md). |
 
 ## Relationships
-None.
+|Relationship|Type|Description|
+|:---|:---|:---|
+|map|[buildingMap](../resources/buildingmap.md)|Map file associated with a building in Places. This object is the IMDF-format representation of building.geojson.|
 
 ## JSON representation
 The following JSON representation shows the resource type.

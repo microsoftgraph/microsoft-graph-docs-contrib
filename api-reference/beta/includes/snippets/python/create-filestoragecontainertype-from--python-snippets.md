@@ -19,6 +19,13 @@ request_body = FileStorageContainerType(
 		is_item_versioning_enabled = True,
 		is_sharing_restricted = False,
 		consuming_tenant_overridables = FileStorageContainerTypeSettingsOverride.IsSearchEnabled | FileStorageContainerTypeSettingsOverride.ItemMajorVersionLimit,
+		additional_data = {
+				"agent" : {
+						"chat_embed_allowed_hosts" : [
+							"https://localhost:3000",
+						],
+				},
+		}
 	),
 )
 
