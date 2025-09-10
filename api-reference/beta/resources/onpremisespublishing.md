@@ -34,6 +34,7 @@ For a tutorial about configuring Application Proxy, see [Automate the configurat
 |internalUrl|String| The internal url of the application. For example, `https://intranet/`. |
 |isAccessibleViaZTNAClient|Boolean|Indicates whether the application is accessible via a [Global Secure Access client](/entra/global-secure-access/concept-clients) on a managed device.|
 |isBackendCertificateValidationEnabled|Boolean| Indicates whether backend SSL certificate validation is enabled for the application. For all new Application Proxy apps, the property is set to `true` by default. For all existing apps, the property is set to `false`. |
+|isContinuousAccessEvaluationEnabled|Boolean| Indicates whether [continuous access evaluation](/entra/identity/conditional-access/concept-continuous-access-evaluation) is enabled for Application Proxy application. For all Application Proxy apps, the property is set to `true` by default.|
 |isDnsResolutionEnabled|Boolean|Indicates Microsoft Entra Private Access should handle DNS resolution. `false` by default.|
 |isHttpOnlyCookieEnabled|Boolean| Indicates if the HTTPOnly cookie flag should be set in the HTTP response headers. Set this value to `true` to have Application Proxy cookies include the HTTPOnly flag in the HTTP response headers. If using Remote Desktop Services, set this value to False. Default value is `false`. |
 |isOnPremPublishingEnabled|Boolean| Indicates if the application is currently being published via Application Proxy or not. This is preset by the system. Read-only. |
@@ -76,6 +77,7 @@ The following JSON representation shows the resource type.
   "internalUrl": "String",
   "isAccessibleViaZTNAClient": "Boolean",
   "isBackendCertificateValidationEnabled": true,
+  "isContinuousAccessEvaluationEnabled": "Boolean",
   "isDnsResolutionEnabled": "Boolean",
   "isHttpOnlyCookieEnabled": true,
   "isOnPremPublishingEnabled": true,
