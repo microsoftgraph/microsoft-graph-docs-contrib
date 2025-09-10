@@ -83,7 +83,7 @@ One of the following permissions is required to subscribe to `communications/onl
 
 ### **For ad hoc calls**
 
-To get change notifications for any transcript available for a particular ad hoc call, subscribe to `/communications/adhocCalls/{callId}/transcripts`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification. The notification for a transcript is sent only if the subscription happens before the transcription starts. This subscription supports unscheduled [ad hoc calls](../api-reference/beta/resources/adhoccall.md).
+To get change notifications for any transcript available for a particular ad hoc call, subscribe to `/communications/adhocCalls/{callId}/transcripts`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification. The notification for a transcript is sent only if the subscription happens before the transcription starts. This subscription supports unscheduled [ad hoc calls](/graph/api/resources/adhoccall?view=graph-rest-beta&preserve-view=true).
 
 > [!NOTE]
 >
