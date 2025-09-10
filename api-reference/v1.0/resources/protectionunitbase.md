@@ -18,6 +18,8 @@ Represents a site, drive, or mailbox that's protected by a [protection policy](p
 
 This resource is an abstract type.
 
+Inherits from [entity](entity.md).
+
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
@@ -26,13 +28,14 @@ This resource is an abstract type.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The unique identifier of the protection unit.|
-|policyId|String|The unique identifier of the protection policy based on which protection unit was created.|
 |createdBy|[identitySet](../resources/identityset.md)|The identity of person who created the protection unit.|
 |createdDateTime|DateTimeOffset|The time of creation of the protection unit.|
 |error|[publicError](../resources/publicerror.md)|Contains error details if an error occurred while creating a protection unit.|
+|id|String|The unique identifier of the protection unit. Inherited from [entity](entity.md).|
 |lastModifiedBy|[identitySet](../resources/identityset.md)|The identity of person who last modified the protection unit.|
 |lastModifiedDateTime|DateTimeOffset|Timestamp of the last modification of this protection unit.|
+|policyId|String|The unique identifier of the protection policy based on which protection unit was created.|
+|protectionSources|protectionSource|Indicates the sources by which a protection unit is currently protected. A protection unit protected by multiple sources is indicated by comma-separated values. The possible values are: `none`, `manual`, `dynamicRule`, `unknownFutureValue`.|
 |status|[protectionUnitStatus](../resources/protectionunitbase.md#protectionunitstatus-values)|The status of the protection unit. The possible values are: `protectRequested`, `protected`, `unprotectRequested`, `unprotected`, `removeRequested`, `unknownFutureValue`.|
 
 ### protectionUnitStatus values
@@ -61,20 +64,15 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.protectionUnitBase",
-  "id": "String (identifier)",
-  "policyId": "String",
-  "status": "String",
+  "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
   "createdDateTime": "String (timestamp)",
-  "createdBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
+  "error": {"@odata.type": "microsoft.graph.publicError"},
+  "id": "String (identifier)",
+  "lastModifiedBy": {"@odata.type": "microsoft.graph.identitySet"},
   "lastModifiedDateTime": "String (timestamp)",
-  "lastModifiedBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
-  "error": {
-    "@odata.type": "microsoft.graph.publicError"
-  }
+  "policyId": "String",
+  "protectionSources": "String",
+  "status": "String"
 }
 ```
 
