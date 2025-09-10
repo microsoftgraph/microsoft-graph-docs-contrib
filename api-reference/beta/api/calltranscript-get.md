@@ -36,9 +36,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "ignored", "name": "calltranscript_get" } -->
 | Permission type| Least privileged permissions|Higher privileged permissions|
 | :---| :---| :--- |
-|Delegated (work or school account)| **For online meetings**: OnlineMeetingTranscript.Read.All <br> <br> **For ad hoc calls**: <br> CallTranscripts.Read.All| Not available.|
+|Delegated (work or school account)| OnlineMeetingTranscript.Read.All (for online meetings) <br> <br> CallTranscripts.Read.All (for ad hoc calls)| Not available.|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|**For online meetings**:<br> <ul><li>OnlineMeetingTranscript.Read.All</li> <li> OnlineMeetingTranscript.Read.Chat</li></ul> <br>**For ad hoc calls**: <br> <ul><li>CallTranscripts.Read.All</li></ul>| Not available.|
+|Application| OnlineMeetingTranscript.Read.All, <br> OnlineMeetingTranscript.Read.Chat (for online meetings) <br> CallTranscripts.Read.All (for ad hoc calls)| Not available.|
 
 > [!NOTE]
 
@@ -58,14 +58,14 @@ To use application permissions for this API, tenant administrators must create a
 
 ### For an online meeting
 
-Get a single transcript:
+Get a single transcript
 
 ```http
 GET /me/onlineMeetings/{meetingId}/transcripts/{transcriptId}
 GET /users/{userId}/onlineMeetings/{meetingId}/transcripts/{transcriptId}
 ```
 
-Get the content of a single transcript:
+Get the content of a single transcript
 
 ```http
 GET me/onlineMeetings/{meetingId}/transcripts/{transcriptId}/content
@@ -74,14 +74,14 @@ GET users/{userId}/onlineMeetings/{meetingId}/transcripts/{transcriptId}/content
 
 ### For an ad hoc call
 
-Get a single transcript:
+Get a single transcript
 
 ```http
 GET /me/adhocCalls/{callId}/transcripts/{transcriptId}
 GET /users/{userId}/adhocCalls/{callId}/transcripts/{transcriptId}
 ```
 
-Get the content of a single transcript:
+Get the content of a single transcript
 
 ```http
 GET me/adhocCalls/{callId}/transcripts/{transcriptId}/content
@@ -197,24 +197,24 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "{@odata.context: "https://graph.microsoft.com/beta/$metadata#users('f2e8e111-3887-4936-87f8-639292c70d34')/adhocCalls('5f3640e7-a59c-4bec-82ca-e66251f795b7')/transcripts/$entity}
-    "id": "MSMjMCMjNzU3ODc2ZDYtOTcwMi00MDhkLWFkNDItOTE2ZDNmZjkwZGY4",
-    "callId": "5f3640e7-a59c-4bec-82ca-e66251f795b7",
-    "createdDateTime": "2025-08-11T06:03:42.9757215Z",
-    "endDateTime": "2025-08-11T06:04:21.2551933Z",
-    "contentCorrelationId": "c316fb26-aed9-4476-8827-b5be74f74051-10002",
-    "transcriptContentUrl": "https://graph.microsoft.com/beta/users/f2e8e111-3887-4936-87f8-639292c70d34/adhocCalls/5f3640e7-a59c-4bec-82ca-e66251f795b7/transcripts/MyMjMTk6NWFiOWQ2OGUxNDhlNDgyNThmYmMzOWYwOGUzOTkyN2NAdGhyZWFkLnYyIyM1ZjM2NDBlNy1hNTljLTRiZWMtODJjYS1lNjYyNTFmNzk1YjctMTc1NDg5MjIyMi1UcmFuc2NyaXB0VjIjIzA=/content",
-    "meetingOrganizer": {
-        "application": null,
-        "device": null,
-        "user": {{@odata.type: '#microsoft.graph.teamworkUserIdentity', id: 'f2e8e111-3887-4936-87f8-639292c70d34', displayName: null, userIdentityType: 'aadUser', tenantId: '8393309d-9fb7-4cce-aafb-eedc8c5781e2'}
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('f2e8e111-3887-4936-87f8-639292c70d34')/adhocCalls('5f3640e7-a59c-4bec-82ca-e66251f795b7')/transcripts/$entity",
+  "id": "MyMjMTk6NWFiOWQ2OGUxNDhlNDgyNThmYmMzOWYwOGUzOTkyN2NAdGhyZWFkLnYyIyM1ZjM2NDBlNy1hNTljLTRiZWMtODJjYS1lNjYyNTFmNzk1YjctMTc1NDg5MjIyMi1UcmFuc2NyaXB0VjIjIzA=",
+  "callId": "5f3640e7-a59c-4bec-82ca-e66251f795b7",
+  "createdDateTime": "2025-08-11T06:03:42.9757215Z",
+  "endDateTime": "2025-08-11T06:04:21.2551933Z",
+  "contentCorrelationId": "c316fb26-aed9-4476-8827-b5be74f74051-10002",
+  "transcriptContentUrl": "https://graph.microsoft.com/beta/users/f2e8e111-3887-4936-87f8-639292c70d34/adhocCalls/5f3640e7-a59c-4bec-82ca-e66251f795b7/transcripts/('MyMjMTk6NWFiOWQ2OGUxNDhlNDgyNThmYmMzOWYwOGUzOTkyN2NAdGhyZWFkLnYyIyM1ZjM2NDBlNy1hNTljLTRiZWMtODJjYS1lNjYyNTFmNzk1YjctMTc1NDg5MjIyMi1UcmFuc2NyaXB0VjIjIzA=')/content",
+  "meetingOrganizer": {
+      "application": null,
+      "device": null,
+      "user": {
             "@odata.type": "#microsoft.graph.teamworkUserIdentity",
             "id": "f2e8e111-3887-4936-87f8-639292c70d34",
             "displayName": null,
             "userIdentityType": "aadUser",
-            "tenantId": "cd6cee19-2d76-4ee0-8f47-9ed12ee44331",
-        }
-    }
+            "tenantId": "8393309d-9fb7-4cce-aafb-eedc8c5781e2"
+      }
+   }
 }
 ```
 
@@ -417,8 +417,6 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/beta/me/onlineMeetings/MSoxMjczYTAxNi0yMDFkLTRmOTUtODA4My0xYjdmOTliM2VkZWIqMCoqMTk6bWVldGluZ19OV1EwWm1GbFpEY3RORFJqTmkwMFlXRm1MV0U1WXpBdE9UZzJNMk0yTm1Nd1pERTNAdGhyZWFkLnYy/transcripts?$filter=contentcorrelationId+eq+'e87c8cf8-50f7-4252-8b9c-ad08ac0fa88d-0'
 ```
-
----
 
 #### Response
 
