@@ -60,7 +60,7 @@ Use the **originalSourceMembershipUrl** annotation property to determine whether
 >[!IMPORTANT]
 > Don’t assume one row per user. A single user can appear multiple times when a channel is shared with multiple teams.
 
-See [List members of channel](channel-list-members.md) to learn more on the permissions, HTTP request parameters, and supporting examples.
+See [List allMembers](channel-list-allmembers.md) to learn more on the permissions, HTTP request parameters, and supporting examples.
 
 ## Related content
 
