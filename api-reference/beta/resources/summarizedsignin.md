@@ -22,9 +22,9 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get summarized MSI sign-ins](../api/auditlogroot-getsummarizedmsisignins.md)|[summarizedSignIn](../resources/summarizedsignin.md) collection|Get a list of MSI sign-in event counts grouped by user, application, IP address, and time window, with drill-down capability using individual request IDs via the [/signIns](../api/signin.md) endpoint.|
-|[Get summarized non-interactive sign-ins](../api/auditlogroot-getsummarizednoninteractivesignins.md)|[summarizedSignIn](../resources/summarizedsignin.md) collection|Get a list of non-interactive sign-in event counts grouped by user, application, IP address, and time window, with drill-down capability using individual request IDs via the [/signIns](../api/signin.md) endpoint. |
-|[Get summarized service principal sign-ins](../api/auditlogroot-getsummarizedserviceprincipalsignins.md)|[summarizedSignIn](../resources/summarizedsignin.md) collection|Get a list of service principal sign-in event counts grouped by user, application, IP address, and time window, with drill-down capability using individual request IDs via the [/signIns](../api/signin.md) endpoint.|
+|[Get summarized MSI sign-ins](../api/auditlogroot-getsummarizedmsisignins.md)|[summarizedSignIn](../resources/summarizedsignin.md) collection|Get a list of MSI sign-in event counts grouped by user, application, IP address, and time window, with drill-down capability using individual request IDs via the [/signIns](../resources/signin.md) endpoint.|
+|[Get summarized non-interactive sign-ins](../api/auditlogroot-getsummarizednoninteractivesignins.md)|[summarizedSignIn](../resources/summarizedsignin.md) collection|Get a list of non-interactive sign-in event counts grouped by user, application, IP address, and time window, with drill-down capability using individual request IDs via the [/signIns](../resources/signin.md) endpoint. |
+|[Get summarized service principal sign-ins](../api/auditlogroot-getsummarizedserviceprincipalsignins.md)|[summarizedSignIn](../resources/summarizedsignin.md) collection|Get a list of service principal sign-in event counts grouped by user, application, IP address, and time window, with drill-down capability using individual request IDs via the [/signIns](../resources/signin.md) endpoint.|
 
 ## Properties
 |Property|Type|Description|
