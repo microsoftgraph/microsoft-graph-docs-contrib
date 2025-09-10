@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A listener for fraud protection load start events in Entra External ID. This resource enables you to configure actions and conditions that trigger at the start of a fraud protection check, such as during sign-up scenarios.
+A listener for fraud protection load start events in Microsoft Entra External ID. This resource enables you to configure actions and conditions that trigger at the start of a fraud protection check, such as during sign-up scenarios.
 
 
 Inherits from [authenticationEventListener](../resources/authenticationeventlistener.md).

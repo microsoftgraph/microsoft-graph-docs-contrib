@@ -51,6 +51,7 @@ The following JSON representation shows the resource type.
 {
   "@odata.type": "#microsoft.graph.onUserCreateStartListener",
   "id": "String (identifier)",
+  "displayName": "String",
   "priority": "Integer",
   "conditions": {
     "@odata.type": "microsoft.graph.authenticationConditions"

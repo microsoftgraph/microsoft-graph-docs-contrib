@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the configuration of a specific third-party fraud protection provider. This is an abstract type.
+Represents the configuration of a specific third-party fraud protection provider.
 Inherits from [fraudProtectionConfiguration](../resources/fraudprotectionconfiguration.md).
 
 

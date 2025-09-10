@@ -56,7 +56,6 @@ You can specify the following properties when creating a **fraudProtectionProvid
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The unique identifier for this fraud protection provider configuration. Inherited from [entity](../resources/entity.md).|
 |displayName|String|The display name of this fraud protection provider configuration. Required. Inherited from [fraudProtectionProvider](../resources/fraudprotectionprovider.md).|
 |privateKey|String|The private key available on the Arkose Portal. Contact your Arkose Customer Success Manager for assistance with your keys. Required.|
 |publicKey|String|The public key available on the Arkose Portal. Contact your Arkose Customer Success Manager for assistance with your keys. Required.|
@@ -107,6 +106,7 @@ The following example shows the response.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
+
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/riskPrevention/fraudProtectionProviders/$entity",
     "@odata.type": "#microsoft.graph.arkoseFraudProtectionProvider",
