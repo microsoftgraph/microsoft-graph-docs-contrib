@@ -182,3 +182,4 @@ Content-Type: application/json
   "isAutoApplyEnabled": true,
   "mailboxExpression": "(memberOf -any (group.id -in ['c318eb4a-ea72-42bd-8f0b-d0bbf794bec7']))"
 }
+```
