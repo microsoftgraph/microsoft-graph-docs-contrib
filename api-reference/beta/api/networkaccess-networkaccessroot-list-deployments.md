@@ -94,7 +94,7 @@ Content-Type: application/json
                     "message": null
                 },
                 "configuration": {
-                    "@odata.type": "#microsoft.graph.networkaccess.profileConfiguration",
+                    "@odata.type": "#microsoft.graph.networkaccess.deploymentConfiguration",
                     "operationName": "Redistribute Forwarding Profile",
                     "changeType": "forwardingProfile"
                 }
