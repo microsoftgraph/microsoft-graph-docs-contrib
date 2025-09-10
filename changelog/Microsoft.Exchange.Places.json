@@ -65,7 +65,7 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2022-08-10T18:49:04.1521461Z",
-      "WorkloadArea": "Calendar",
+      "WorkloadArea": "Calendars",
       "SubArea": "Places"
     },
     {
@@ -107,7 +107,7 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2024-02-08T00:26:43.6656685Z",
-      "WorkloadArea": "Calendar",
+      "WorkloadArea": "Calendars",
       "SubArea": "Places"
     },
     {
@@ -165,7 +165,7 @@
       "Cloud": "Review",
       "Version": "beta",
       "CreatedDateTime": "2024-05-10T21:07:51.9198392Z",
-      "WorkloadArea": "Calendar",
+      "WorkloadArea": "Calendars",
       "SubArea": "Places"
     },
     {
@@ -231,7 +231,7 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2024-08-12T10:16:22.3182957Z",
-      "WorkloadArea": "Calendar",
+      "WorkloadArea": "Calendars",
       "SubArea": "Places"
     },
     {
@@ -473,7 +473,97 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2025-08-08T23:36:37.579824Z",
-      "WorkloadArea": "Calendar",
+      "WorkloadArea": "Calendars",
+      "SubArea": "Places"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "7be00093-6bce-4bfd-bbdc-b663ab3fd7c0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "importBuildingMapSetting",
+          "ChangeType": "Addition",
+          "Description": "Added the [importBuildingMapSetting](https://learn.microsoft.com/en-us/graph/api/resources/importBuildingMapSetting?view=graph-rest-beta) resource.",
+          "Target": "importBuildingMapSetting"
+        },
+        {
+          "Id": "7be00093-6bce-4bfd-bbdc-b663ab3fd7c0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "baseMapFeature",
+          "ChangeType": "Addition",
+          "Description": "Added the [baseMapFeature](https://learn.microsoft.com/en-us/graph/api/resources/baseMapFeature?view=graph-rest-beta) resource.",
+          "Target": "baseMapFeature"
+        },
+        {
+          "Id": "7be00093-6bce-4bfd-bbdc-b663ab3fd7c0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "buildingMap",
+          "ChangeType": "Addition",
+          "Description": "Added the [buildingMap](https://learn.microsoft.com/en-us/graph/api/resources/buildingMap?view=graph-rest-beta) resource and associated methods.",
+          "Target": "buildingMap"
+        },
+        {
+          "Id": "7be00093-6bce-4bfd-bbdc-b663ab3fd7c0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "fixtureMap",
+          "ChangeType": "Addition",
+          "Description": "Added the [fixtureMap](https://learn.microsoft.com/en-us/graph/api/resources/fixtureMap?view=graph-rest-beta) resource and associated methods.",
+          "Target": "fixtureMap"
+        },
+        {
+          "Id": "7be00093-6bce-4bfd-bbdc-b663ab3fd7c0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "footprintMap",
+          "ChangeType": "Addition",
+          "Description": "Added the [footprintMap](https://learn.microsoft.com/en-us/graph/api/resources/footprintMap?view=graph-rest-beta) resource and an associated method.",
+          "Target": "footprintMap"
+        },
+        {
+          "Id": "7be00093-6bce-4bfd-bbdc-b663ab3fd7c0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "levelMap",
+          "ChangeType": "Addition",
+          "Description": "Added the [levelMap](https://learn.microsoft.com/en-us/graph/api/resources/levelMap?view=graph-rest-beta) resource and an associated method..",
+          "Target": "levelMap"
+        },
+        {
+          "Id": "7be00093-6bce-4bfd-bbdc-b663ab3fd7c0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sectionMap",
+          "ChangeType": "Addition",
+          "Description": "Added the [sectionMap](https://learn.microsoft.com/en-us/graph/api/resources/sectionMap?view=graph-rest-beta) resource and associated methods.",
+          "Target": "sectionMap"
+        },
+        {
+          "Id": "7be00093-6bce-4bfd-bbdc-b663ab3fd7c0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "unitMap",
+          "ChangeType": "Addition",
+          "Description": "Added the [unitMap](https://learn.microsoft.com/en-us/graph/api/resources/unitMap?view=graph-rest-beta) resource and associated methods.",
+          "Target": "unitMap"
+        },
+        {
+          "Id": "7be00093-6bce-4bfd-bbdc-b663ab3fd7c0",
+          "ApiChange": "Method",
+          "ChangedApiName": "ingestMapFile",
+          "ChangeType": "Addition",
+          "Description": "Added the [ingestMapFile](https://learn.microsoft.com/en-us/graph/api/building-ingestMapFile?view=graph-rest-beta) method to the [building](https://learn.microsoft.com/en-us/graph/api/resources/building?view=graph-rest-beta) resource.",
+          "Target": "building"
+        },
+        {
+          "Id": "7be00093-6bce-4bfd-bbdc-b663ab3fd7c0",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "map",
+          "ChangeType": "Addition",
+          "Description": "Added the **map** relationship to the [building](https://learn.microsoft.com/en-us/graph/api/resources/building?view=graph-rest-beta) resource.",
+          "Target": "building"
+        }
+      ],
+      "Id": "7be00093-6bce-4bfd-bbdc-b663ab3fd7c0",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-09-09T23:36:37.579824Z",
+      "WorkloadArea": "Calendars",
       "SubArea": "Places"
     }
   ]
