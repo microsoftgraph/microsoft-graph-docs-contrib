@@ -270,7 +270,7 @@ GET https://graph.microsoft.com/beta/users/f2e8e111-3887-4936-87f8-639292c70d34/
 
 #### Response
 
-Response contains bytes for the recording in the body. `content-type` header specifies type of the recording content. Negative offsets indicate that the recording began while the conversation was ongoing.
+The response contains bytes for the recording in the body. The `content-type` header specifies the type of the recording content. Negative offsets indicate that the recording began while the conversation was ongoing.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

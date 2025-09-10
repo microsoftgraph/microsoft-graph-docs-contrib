@@ -45,7 +45,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
-**For online meetings:**
+For online meetings
 
 <!-- { "blockType": "ignored" } -->
 ``` http
