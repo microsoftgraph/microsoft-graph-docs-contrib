@@ -34,9 +34,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "ignored", "name": "callrecording_get" } -->
 |Permission type|Least privileged permissions|Higher privileged permissions|
 |:---|:---|:---|
-|Delegated (work or school account)|**For online meetings**: OnlineMeetingRecording.Read.All <br> <br> **For ad hoc calls**: <br> CallRecording.Read.All |Not available.|
+|Delegated (work or school account)|OnlineMeetingRecording.Read.All (for online meetings) <br> CallRecording.Read.All (for ad hoc calls)|Not available.|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|**For online meetings**: <ul><li> OnlineMeetingRecording.Read.All <li> OnlineMeetingRecording.Read.Chat </ul><br> **For ad hoc calls**: <ul><li> CallRecordings.Read.All </ul>|Not available.|
+|Application| OnlineMeetingRecording.Read.All, <br> OnlineMeetingRecording.Read.Chat (for online meetings) <br> CallRecordings.Read.All (for ad hoc calls) |Not available.|
 
 > [!NOTE]
 >
@@ -60,7 +60,7 @@ GET /me/onlineMeetings/{meetingId}/recordings/{recordingId}
 GET /users/{userId}/onlineMeetings/{meetingId}/recordings/{recordingId}
 ```
 
-Get the content of a single recording:
+Get the content of a single recording
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -76,7 +76,7 @@ GET /me/adhocCalls/{callId}/recordings/{recordingId}
 GET /users/{userId}/adhocCalls/{callId}/recordings/{recordingId}
 ```
 
-Get the content of a single recording:
+Get the content of a single recording
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -179,6 +179,7 @@ The following example shows how to get a single recording of an ad hoc call.
 GET https://graph.microsoft.com/beta/users/f2e8e111-3887-4936-87f8-639292c70d34/adhocCalls/1c9ddbc9-82be-46b6-8edd-bf833fe33a03/recordings/VjMjIzE5OjVhYjlkNjhlMTQ4ZTQ4MjU4ZmJjMzlmMDhlMzk5MjdjQHRocmVhZC52MiMjMWM5ZGRiYzktODJiZS00NmI2LThlZGQtYmY4MzNmZTMzYTAzLTE3NTQ4OTU0MzctUmVjb3JkaW5nIyMw
 
 ```
+
 #### Response
 
 > **Note:** The response object shown here might be shortened for readability.
