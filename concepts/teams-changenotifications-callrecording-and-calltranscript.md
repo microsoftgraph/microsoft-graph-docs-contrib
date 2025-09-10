@@ -88,7 +88,7 @@ To get change notifications for any transcript available for a particular ad hoc
 > [!NOTE]
 >
 > - This resource type is available only on the `/beta` endpoint.
-> - Enumeration is not available on ad hocCalls.
+> - Enumeration is not available on ad hoc calls.
 > - Subscribe to the appropriately scoped 2 separate resources (one for online meetings and other for ad hoc calls). These will supply the URLs to use for fetching the data.
 
 #### Permissions
