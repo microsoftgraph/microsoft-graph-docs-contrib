@@ -195,9 +195,9 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "{@odata.context: "https://graph.microsoft.com/beta/$metadata#users('f2e8e111-3887-4936-87f8-639292c70d34')/adhocCalls('1c9ddbc9-82be-46b6-8edd-bf833fe33a03')/recordings/$entity}"
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('f2e8e111-3887-4936-87f8-639292c70d34')/adhocCalls('1c9ddbc9-82be-46b6-8edd-bf833fe33a03')/recordings/$entity",
     "id": "VjMjIzE5OjVhYjlkNjhlMTQ4ZTQ4MjU4ZmJjMzlmMDhlMzk5MjdjQHRocmVhZC52MiMjMWM5ZGRiYzktODJiZS00NmI2LThlZGQtYmY4MzNmZTMzYTAzLTE3NTQ4OTU0MzctUmVjb3JkaW5nIyMw",
-    "callId": "1c9ddbc9-82be-46b6-8edd-bf833fe33a03",
+    "callId": "1c9ddbc9-82be-46b6-8edd-bf833fe33a03",	 
     "createdDateTime": "2025-08-11T06:57:17.4065904Z",
     "endDateTime": "2025-08-11T06:57:28.2265904Z",
     "contentCorrelationId": "58cfc66a-710f-4be7-adc0-1ca5a28f2c0c-0",
@@ -212,7 +212,7 @@ Content-type: application/json
             "userIdentityType": "aadUser",
             "tenantId": "8393309d-9fb7-4cce-aafb-eedc8c5781e2"
         }
-    }
+    }   
 }
 ```
 
