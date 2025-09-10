@@ -87,6 +87,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
+  "@odata.type": "microsoft.graph.educationGradingScheme"
 } -->
 ```http
 HTTP/1.1 201 Created
