@@ -27,6 +27,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/security-autoauditingconfiguration-get-permissions.md)]
 
+[!INCLUDE [rbac-mdi-apis](../includes/rbac-for-apis/rbac-mdi-apis.md)]
+
 ## HTTP request
 
 <!-- {
@@ -39,7 +41,7 @@ GET /security/identities/autoAuditingConfiguration
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+Not supported.
 
 ## Request headers
 
