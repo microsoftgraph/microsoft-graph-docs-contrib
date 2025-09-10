@@ -48,7 +48,11 @@ The following precedence is used for how session states are aggregated, with "A 
 
 > [!NOTE]
 > 
-> Keep in mind that set the states: **Out of Office (OOF)** and **In a meeting** are not available using `presence:setPresence` method, so do **not** attempt to set these states. You can use [**event** APIs](../resources/event.md) (for example, set an event’s `showAs` to `oof`) or the second way is using [**mailbox settings** APIs](../resources/mailboxsettings.md); `presence:getPresence` will reflect **In a meeting** during scheduled events or **Out of Office** during the configured time or event.
+>The `presence:setPresence` method does not support setting the presence states **"Out of Office (OOF)"** or **"In a Meeting"** directly. These states are automatically managed based on calendar events and mailbox configurations, and attempting to set them via `presence:setPresence` will have no effect.
+>
+>To reflect **"Out of Office"** in presence, use the [**Events** API](../resources/event.md) by setting a calendar event’s `showAs` property to `oof`, or configure the user's auto-reply settings using the [**Mailbox Settings** API](../resources/mailboxsettings.md).
+>
+>The **"In a Meeting"** state is automatically reflected during scheduled calendar meeting events and does not require manual presence updates.
 
 ### Timeout, expiration, and keep alive
 A presence session may **time out** and **expire**, so the application needs to call this API before the **timeout**, to maintain the state for the session; or before the **expiration**, to keep the session alive.
