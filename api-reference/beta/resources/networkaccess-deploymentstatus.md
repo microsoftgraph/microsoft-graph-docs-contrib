@@ -1,5 +1,5 @@
 ---
-title: "DeploymentStatus resource type"
+title: "deploymentStatus resource type"
 description: "Represents the status of a deployment performed through the Global Secure Access services"
 author: cagautham
 ms.date: 08/14/2025
@@ -8,7 +8,7 @@ ms.subservice: entra-global-secure-access
 doc_type: resourcePageType
 ---
 
-# DeploymentStatus resource type
+# deploymentStatus resource type
 
 Namespace: microsoft.graph.networkaccess
 
