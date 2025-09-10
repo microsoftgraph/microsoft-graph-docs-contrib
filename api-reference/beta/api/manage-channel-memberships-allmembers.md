@@ -40,14 +40,14 @@ The subscription endpoints for retrieving channel members, based on channel type
 > [!IMPORTANT]
 > When you receive a membership share or unshare notification, refresh the **allMembers** API for shared channels. To handle large indirect membership changes efficiently, call the **sharedWithTeams** and **allowedMembers** APIs.
 
-### Understand membership behavior for shared channels
+## Understand membership behavior for shared channels
 
 You can view all membership instances in a shared channel via the **allMembers** API, which returns the following two membership paths for a user:
 
 * Direct members in the channel
 * Indirect members via each team the channel is shared with
 
-#### Example
+### Example
 
 If a user is a direct member of a shared channel and the channel is shared with **Team A** and **Team B**, then **the user appears three times**:
 
@@ -59,6 +59,8 @@ Use the **originalSourceMembershipUrl** annotation property to determine whether
 
 >[!IMPORTANT]
 > Don’t assume one row per user. A single user can appear multiple times when a channel is shared with multiple teams.
+
+See [List members of channel](channel-list-members.md) to learn more on the permissions, HTTP request parameters, and supporting examples.
 
 ## Related content
 
