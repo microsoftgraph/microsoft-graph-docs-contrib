@@ -27,7 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/auditlogroot-getsummarizedmsisignins-permissions.md)]
 
-[!INCLUDE [rbac-signin-apis-read](../includes/rbac-for-apis/rbac-signin-apis-read.md)]
+[!INCLUDE [rbac-directoryaudit-apis](../includes/rbac-for-apis/rbac-directoryaudit-apis.md)]
 ## HTTP request
 
 <!-- {
@@ -47,24 +47,7 @@ In the request URL, provide the following query parameters with values.
 
 ## Optional query parameters
 
-This method supports the `$filter` [OData query parameter](/graph/query-parameters) to help customize the response. You can apply `$filter` on one or more of the following properties of the [sign-in event](../resources/summarizedsignin.md) resource. You may also apply the `$top` query parameter to limit the number of results returned to a specific number. The default and max `$top` parameter is 1000 records. 
-
-| Property          | Description                                                                                                                     | Example                                                                   |
-|:------------------|:--------------------------------------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------|
-| id      | Filter for sign in events relating to a specific request id. Supported filter operators: `eq`.| `/getSummarizedMSISignIns(aggregationWindow='h1')?$filter=id eq 'e3f5a8c1-7890-1234-cdef-567890123456'`           |
-| userPrincipalName   | Filter for only sign in events relating to a specific user principal name. Supported filter operators are: `eq`.                                              | `/getSummarizedMSISignIns(aggregationWindow='h1')?$filter=userPrincipalName eq 'johndoe@contoso.net'`        |
-| appId     | Filter for events from a specific application ID. Supported filter operators are: `eq`.                                          | `/getSummarizedMSISignIns(aggregationWindow='d1')?$filter=appId eq '00000000-0000-0000-0000-000000000000'`         |
-| appDisplayName  | Filter for events from a specific application display name. Supported filter operators are: `eq`.              | `/getSummarizedMSISignIns(aggregationWindow='h6')?$filter=appDisplayName eq 'Azure Logic Apps'`       |
-| ipAddress   | Filter by IP address. Supported filter operators are: `eq` and `startswith()`. Supports case insensitive.                        | `/getSummarizedMSISignIns(aggregationWindow='h1')?$filter=ipAddress eq '0.0.0.0'`   |
-| conditionalAccessStatus | Filter by conditional access status. Supported filter operators are: `eq`.              | `/getSummarizedMSISignIns(aggregationWindow='d1')?$filter=conditionalAccessStatus eq 'success'` |
-| resourceDisplayName | Filter by resource display name. Supported filter operators are: `eq`.              | `/getSummarizedMSISignIns(aggregationWindow='d1')?$filter=resourceDisplayName eq 'Microsoft Graph API'` |
-| resourceId | Filter by conditional access status. Supported filter operators are: `eq`.              | `/getSummarizedMSISignIns(aggregationWindow='d1')?$filter=resourceId eq '00000003-0000-0000-c000-000000000000'` |
-| tenantId | Filter by tenant ID. Supported filter operators are: `eq`.              | `/getSummarizedMSISignIns(aggregationWindow='h1')?$filter=tenantId eq '00000000-0000-0000-0000-000000000000'` |
-| servicePrincipalName | Filter by service principal name. Supported filter operators are: `eq` and `startswith()`. Supports case insensitive.              | `/getSummarizedMSISignIns(aggregationWindow='h6')?$filter=servicePrincipalName eq 'myServicePrincipal'` |
-| servicePrincipalId | Filter by service principal ID. Supported filter operators are: `eq`.              | `/getSummarizedMSISignIns(aggregationWindow='d1')?$filter=servicePrincipalId eq 'a1b2c3d4-e5f6-7890-abcd-ef1234567890'` |
-| status | Filter by sign-in status error code. Supported filter operators are: `eq`.              | `/getSummarizedMSISignIns(aggregationWindow='h1')?$filter=status/errorCode eq 0` |
-| managedServiceIdentity | Filter by managed service identity type. Supported filter operators are: `eq`.              | `/getSummarizedMSISignIns(aggregationWindow='d1')?$filter=managedServiceIdentity/msiType eq 'systemAssigned'` |
-| agent | Filter by agent type. Supported filter operators are: `eq`.              | `/getSummarizedMSISignIns(aggregationWindow='h6')?$filter=agent/agentType eq 'notAgentic'` |
+This method supports the `$filter` [OData query parameter](/graph/query-parameters) to help customize the response. You can apply `$filter` on one or more of the following properties of the [summarizedSignIn](../resources/summarizedsignin.md) resource. For general information, see [OData query parameters](/graph/query-parameters). You may also apply the `$top` query parameter to limit the number of results returned to a specific number. The default and max `$top` parameter is 1000 records.
 
 ## Request headers
 

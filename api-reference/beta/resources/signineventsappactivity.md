@@ -24,8 +24,8 @@ Represents the total number of sign-in events that have occurred for a specific 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|appId|String|The application ID for the given summary.|
-|signInCount|Int32|The total number of sign-in events for the given application.|
+|appId|String|The application ID for the given summary. Supports `$filter` (`eq`).|
+|signInCount|Int32|The total number of sign-in events for the given application. Supports `$filter` (`gt`).|
 |tenantId|String|The tenant ID where sign-in events occurred.|
 
 ## Relationships

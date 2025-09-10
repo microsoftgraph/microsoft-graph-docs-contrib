@@ -27,7 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/auditlogroot-list-signineventsappsummary-permissions.md)]
 
-[!INCLUDE [rbac-signin-apis-read](../includes/rbac-for-apis/rbac-signin-apis-read.md)]
+[!INCLUDE [rbac-directoryaudit-apis](../includes/rbac-for-apis/rbac-directoryaudit-apis.md)]
 ## HTTP request
 
 <!-- {
@@ -40,12 +40,7 @@ GET /auditLogs/signInEventsAppSummary
 
 ## Optional query parameters
 
-This method supports the `$filter` [OData query parameter](/graph/query-parameters) to help customize the response. You can apply `$filter` on one or more of the following properties of the [signInEventsAppActivity](../resources/signineventsappactivity.md) resource. You may also apply the `$top` query parameter to limit the number of results returned to a specific number. The default and max `$top` parameter is 1,000 records. 
-
-| Property          | Description                                                                                                                     | Example                                                                   |
-|:------------------|:--------------------------------------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------|
-| appId      | 00000000-0000-0000-0000-000000000000 events summary only for a specific application id. Supported filter operators: `eq`.| `/auditLogs/signInEventsAppSummary?$filter=appId eq '00000000-0000-0000-0000-000000000000'`           |
-00000000-0000-0000-0000-000000000000 specific sign-in count window. Supported filter operators are: `gt`.                                              00000000-0000-0000-0000-000000000000 gt 10`        |
+This method supports the `$filter` [OData query parameter](/graph/query-parameters) to help customize the response. You can apply `$filter` on one or more of the following properties of the [signInEventsAppActivity](../resources/signineventsappactivity.md) resource. For general information, see [OData query parameters](/graph/query-parameters). You may also apply the `$top` query parameter to limit the number of results returned to a specific number. The default and max `$top` parameter is 1,000 records.
 
 ## Request headers
 

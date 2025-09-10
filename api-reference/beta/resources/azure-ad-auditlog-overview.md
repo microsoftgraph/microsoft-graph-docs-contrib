@@ -99,9 +99,9 @@ Operation | URL
 |GET audit activity types | [https://graph.microsoft.com/beta/auditLogs/auditActivityTypes](https://developer.microsoft.com/graph/graph-explorer?request=auditLogs/auditActivityTypes&version=beta)
 |GET sign in events app summary | [https://graph.microsoft.com/beta/auditLogs/signInEventsAppSummary](https://developer.microsoft.com/graph/graph-explorer?request=auditLogs/signInEventsAppSummary&version=beta)
 |GET sign in events summary | [https://graph.microsoft.com/beta/auditLogs/signInEventsSummary](https://developer.microsoft.com/graph/graph-explorer?request=auditLogs/signInEventsSummary&version=beta)
-|GET summarized service principal sign in events summary | [https://graph.microsoft.com/beta/auditLogs/getSummarizedServicePrincipalSignIns](https://developer.microsoft.com/graph/graph-explorer?request=auditLogs/getSummarizedServicePrincipalSignIns&version=beta)
-|GET summarized non-interactive sign in events summary | [https://graph.microsoft.com/beta/auditLogs/getSummarizedNonInteractiveSignIns](https://developer.microsoft.com/graph/graph-explorer?request=auditLogs/getSummarizedNonInteractiveSignIns&version=beta)
-|GET summarized managed service identity sign in events summary | [https://graph.microsoft.com/beta/auditLogs/getSummarizedMSISignIns](https://developer.microsoft.com/graph/graph-explorer?request=auditLogs/getSummarizedMSISignIns&version=beta)
+|GET summarized service principal sign in events summary | [https://graph.microsoft.com/beta/auditLogs/getSummarizedServicePrincipalSignIns](https://developer.microsoft.com/graph/graph-explorer?request=auditLogs/getSummarizedServicePrincipalSignIns(aggregationWindow='{aggregationWindow}')&version=beta)
+|GET summarized non-interactive sign in events summary | [https://graph.microsoft.com/beta/auditLogs/getSummarizedNonInteractiveSignIns](https://developer.microsoft.com/graph/graph-explorer?request=auditLogs/getSummarizedNonInteractiveSignIns(aggregationWindow='{aggregationWindow}')&version=beta)
+|GET summarized managed service identity sign in events summary | [https://graph.microsoft.com/beta/auditLogs/getSummarizedMSISignIns](https://developer.microsoft.com/graph/graph-explorer?request=auditLogs/getSummarizedMSISignIns(aggregationWindow='{aggregationWindow}')&version=beta)
 
 ## License requirements
 

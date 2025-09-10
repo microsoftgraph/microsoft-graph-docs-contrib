@@ -27,7 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/auditlogroot-list-auditactivitytypes-permissions.md)]
 
-[!INCLUDE [rbac-signin-apis-read](../includes/rbac-for-apis/rbac-signin-apis-read.md)]
+[!INCLUDE [rbac-directoryaudit-apis](../includes/rbac-for-apis/rbac-directoryaudit-apis.md)]
 ## HTTP request
 
 <!-- {
@@ -40,13 +40,7 @@ GET /auditLogs/auditActivityTypes
 
 ## Optional query parameters
 
-This method supports the `$filter` [OData query parameter](/graph/query-parameters) to help customize the response. You can apply `$filter` on one or more of the following properties of the [auditActivityType](../resources/auditactivitytype.md) resource. You may also apply the `$top` query parameter to limit the number of results returned to a specific number. The default and max `$top` parameter is 1000 records. 
-
-| Property          | Description                                                                                                                     | Example                                                                   |
-|:------------------|:--------------------------------------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------|
-| category      | Filter for only audit activity types belonging to a specific categoy. Supported filter operators: `eq`.| `/auditLogs/auditActivityTypes?$filter=category eq 'Policy'`           |
-| service   | Filter for only audit activity types belonging to a specific service. Supported filter operators are: `eq`.                                              | `/auditLogs/auditActivityTypes?$filter=service eq 'Core Directory'`        |
-| activity     | Filter for only audit activity types belonging to a specific activity. Supported filter operators are: `eq`.                                          | `/auditLogs/auditActivityTypes?$filter=activity eq 'Add policy'`.         |
+This method supports the `$filter` [OData query parameter](/graph/query-parameters) to help customize the response. You can apply `$filter` on one or more of the following properties of the [auditActivityType](../resources/auditactivitytype.md) resource. For general information, see [OData query parameters](/graph/query-parameters). You may also apply the `$top` query parameter to limit the number of results returned to a specific number. The default and max `$top` parameter is 1000 records.
 
 ## Request headers
 
