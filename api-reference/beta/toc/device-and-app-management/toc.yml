@@ -230,6 +230,12 @@ items:
       href: ../../api/virtualendpoint-list-galleryimages.md
     - name: Get
       href: ../../api/cloudpcgalleryimage-get.md
+  - name: Cloud PC managed license
+    items:
+    - name: Cloud PC managed license
+      href: ../../resources/cloudpcmanagedlicense.md
+    - name: List
+      href: ../../api/virtualendpoint-list-managedlicenses.md
   - name: Cloud PC Azure network connection
     items:
     - name: Cloud PC Azure network connection

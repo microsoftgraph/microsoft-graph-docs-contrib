@@ -7370,35 +7370,35 @@
        "ChangeList": [
         {
             "Id": "4a7b1b7c-4a7b-4a7b-4a7b-4a7b1b7c4a7b",
-            "ChangedApiName": "managedLicenses",
+            "ChangedApiName": "cloudPcManagedLicense",
             "ApiChange": "Resource",
             "Target": "cloudPcManagedLicense",
             "ChangeType": "Addition",
-            "Description": "Added the cloudPcManagedLicense resource type to provide the status and details of policy-managed Cloud PC licenses."
+            "Description": "Added the [cloudPcManagedLicense](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcmanagedlicense?view=graph-rest-beta) resource."
         },
         {
             "Id": "4a7b1b7c-4a7b-4a7b-4a7b-4a7b1b7c4a7b",
-            "ChangedApiName": "managedLicenses",
-            "ApiChange": "Enum",
+            "ChangedApiName": "cloudPcManagedLicenseType",
+            "ApiChange": "Enumeration",
             "Target": "cloudPcManagedLicenseType",
             "ChangeType": "Addition",
-            "Description": "Added the cloudPcManagedLicenseType enum to specify the type of license."
+            "Description": "Added the **cloudPcManagedLicenseType** enumeration."
         },
         {
             "Id": "4a7b1b7c-4a7b-4a7b-4a7b-4a7b1b7c4a7b",
-            "ChangedApiName": "managedLicenses",
-            "ApiChange": "Enum",
+            "ChangedApiName": "cloudPcManagedLicenseStatus",
+            "ApiChange": "Enumeration",
             "Target": "cloudPcManagedLicenseStatus",
             "ChangeType": "Addition",
-            "Description": "Added the cloudPcManagedLicenseStatus enum to specify the status of the license."
+            "Description": "Added the **cloudPcManagedLicenseStatus** enumeration."
         },
         {
             "Id": "4a7b1b7c-4a7b-4a7b-4a7b-4a7b1b7c4a7b",
             "ChangedApiName": "managedLicenses",
-            "ApiChange": "Navigation",
-            "Target": "virtualEndpoint.managedLicenses",
+            "ApiChange": "Relationship",
+            "Target": "virtualEndpoint",
             "ChangeType": "Addition",
-            "Description": "Added the managedLicenses navigation property to the virtualEndpoint resource."
+            "Description": "Added the **managedLicenses** navigation property to the [virtualEndpoint](https://learn.microsoft.com/en-us/graph/api/resources/virtualendpoint?view=graph-rest-beta) resource."
         }
       ],
       "Id": "4a7b1b7c-4a7b-4a7b-4a7b-4a7b1b7c4a7b",

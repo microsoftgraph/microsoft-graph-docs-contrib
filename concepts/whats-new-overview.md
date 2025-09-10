@@ -29,6 +29,12 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
   - Use the **sid** property to get the security identifier of the group.
 - Use the **activeDirectoryObjectGuid** property on [userAccount](/graph/api/resources/security-useraccount) to get the unique user identifier assigned by the on-premises Active Directory.
 
+## September 2025: New in preview only
+
+### Device and app management | Cloud PC
+
+Get information about licenses that the Cloud PC service directly manages using the [cloudPcManagedLicense](/graph/api/resources/cloudpcmanagedlicense?view=graph-rest-beta) resource and the [list managedLicenses](/graph/api/virtualendpoint-list-managedlicenses?view=graph-rest-beta) operation. These cloudpc-managed licenses help administrators track license allocation, status, and usage across their Cloud PC deployments.
+
 ## August 2025: New and generally available
 
 ### Device and app management | Cloud PC
