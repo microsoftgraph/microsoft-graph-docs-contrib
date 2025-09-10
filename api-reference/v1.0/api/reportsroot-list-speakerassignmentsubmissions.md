@@ -60,7 +60,6 @@ The following example shows how to get a list of the speaker assignment submissi
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_speakerAssignmentSubmissions_1"
@@ -163,7 +162,6 @@ The following example shows how to get a list of the speaker assignment submissi
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_speakerAssignmentSubmissions_2"
