@@ -206,10 +206,10 @@ Content-type: application/json
         "application": null,
         "device": null,
         "user": {
-            "@odata.type": "#microsoft.graph.teamworkUserIdentity",
-            "id": "f2e8e111-3887-4936-87f8-639292c70d34",
-            "displayName": null,
-            "userIdentityType": "aadUser",
+            "@odata.type":"#microsoft.graph.teamworkUserIdentity",
+            "id":"f2e8e111-3887-4936-87f8-639292c70d34",
+            "displayName":null,
+            "userIdentityType":"aadUser",
             "tenantId": "8393309d-9fb7-4cce-aafb-eedc8c5781e2"
         }
     }   

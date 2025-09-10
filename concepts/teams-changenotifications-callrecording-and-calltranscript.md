@@ -59,7 +59,7 @@ Content-Type: application/json
 
 ## Subscribe to transcripts available for a particular online meeting
 
-### **For online meetings**
+### For online meetings
 
 To get change notifications for any transcript available for a particular online meeting, subscribe to `communications/onlineMeetings/{onlineMeetingId}/transcripts`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification. The notification for a transcript is sent only if the subscription happens before the transcription starts. This subscription supports scheduled [onlineMeetings](/graph/api/resources/onlinemeeting).
 
@@ -81,7 +81,7 @@ One of the following permissions is required to subscribe to `communications/onl
 > - The `OnlineMeetingTranscript.Read.Chat` permission uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent). This permission applies only to scheduled private chat meetings, not to channel meetings.
 > - To subscribe to any transcript available for a particular online meeting by using only required [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent) permissions, use the `useResourceSpecificConsentBasedAuthorization=true` query parameter with your resource string.
 
-### **For ad hoc calls**
+### For ad hoc calls
 
 To get change notifications for any transcript available for a particular ad hoc call, subscribe to `/communications/adhocCalls/{callId}/transcripts`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification. The notification for a transcript is sent only if the subscription happens before the transcription starts. This subscription supports unscheduled [ad hoc calls](/graph/api/resources/adhoccall?view=graph-rest-beta&preserve-view=true).
 
@@ -249,7 +249,7 @@ Content-Type: application/json
 
 This section describes the methods to subscribe to transcripts available for any online meeting where a specific Teams app is installed.
 
-### **For online meetings**
+### For online meetings
 
 To get change notifications for any transcript available for any online meeting where a specific Teams app is installed, subscribe to `appCatalogs/teamsApps/{teams-app-id}/installedToOnlineMeetings/getAllTranscripts`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification. The notification for a transcript is sent only if the subscription happens before the transcription starts. This subscription supports scheduled [onlineMeetings](/graph/api/resources/onlinemeeting) but not channel meetings.
 
@@ -331,7 +331,7 @@ Content-Type: application/json
 
 This section describes the methods to subscribe to recordings available at the tenant level for both online meetings and ad hoc calls.
 
-### **For online meetings**
+### For online meetings
 
 To get change notifications for any recording available for any online meeting in a tenant, subscribe to `communications/onlineMeetings/getAllRecordings`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification. This subscription supports scheduled [onlineMeetings](/graph/api/resources/onlinemeeting).
 
@@ -348,7 +348,7 @@ One of the following permissions is required to subscribe to `communications/onl
 | Delegated (personal Microsoft account) | Not supported.                              |
 | Application                            | OnlineMeetingRecording.Read.All             |
 
-### **For ad hoc calls**
+### For ad hoc calls
 
 To get change notifications for any recording available for any ad hoc call in a tenant, subscribe to `communications/adhocCalls/getAllRecordings`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification.
 
@@ -445,7 +445,7 @@ One of the following permissions is required to subscribe to `communications/onl
 > - The `OnlineMeetingRecording.Read.Chat` permission uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent). This permission applies only to scheduled private chat meetings, not to channel meetings.
 > - To subscribe to any recording available for a particular online meeting using only required [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent) permissions, use the `useResourceSpecificConsentBasedAuthorization=true` query parameter with your resource string.
 
-### **For ad hoc calls**
+### For ad hoc calls
 
 To get change notifications for any recording available for a particular ad hoc call, subscribe to `users/{userId}/adhocCalls/getAllRecordings`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification.
 
@@ -550,7 +550,7 @@ One of the following permissions is required to subscribe to `users/{userId}/onl
 | Delegated (personal Microsoft account) | Not supported.                              |
 | Application                            | OnlineMeetingRecording.Read.All             |
 
-#### **For ad hoc calls**
+#### For ad hoc calls
 
 To get change notifications for any recording available for a particular ad hoc call, subscribe to `users/{userId}/adhocCalls/{callId}/recordings`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification.
 
@@ -696,7 +696,7 @@ For notifications with resource data, the payload looks like the following. This
 > [!NOTE]
 > The payload object shown here is shortened for readability.
 
-#### **For online meetings**
+#### For online meetings
 
 <!-- { "blockType": "ignored" } -->
 ```json
@@ -728,22 +728,22 @@ For notifications with resource data, the payload looks like the following. This
 }
 ```
 
-#### **For ad hoc calls**
+#### For ad hoc calls
 
 <!-- { "blockType": "ignored" } -->
 ```json
 {
   "value": [
     {
-      "subscriptionId": "516220d0-0f88-46cc-ac39-02b687687526",
+      "subscriptionId": "8c0ff21a-ca3b-45db-b570-e589a7d3d02d",
       "changeType": "created",
-      "clientState": "<<--SpecifiedClientState-->>",
-      "subscriptionExpirationDateTime": "2023-09-17T08:13:26.3265566+00:00",
-      "resource": "users/{user-id}/adhoccalls/1c9ddbc9-82be-46b6-8edd-bf833fe33a03/transcripts('MSM...')",
+      "clientState": "null",
+      "subscriptionExpirationDateTime": "2025-08-08T06:29:30.356Z",
+      "resource": "users/f2e8e111-3887-4936-87f8-639292c70d34/adhoccalls/5f3640e7-a59c-4bec-82ca-e66251f795b7/transcripts('MyM...')",
       "resourceData": {
-        "id": "MSM...",
+        "id": "f2e8e111-3887-4936-87f8-639292c70d34",
         "@odata.type": "#Microsoft.Graph.callTranscript",
-        "@odata.id": "users/{user-id}/adhoccalls/1c9ddbc9-82be-46b6-8edd-bf833fe33a03/transcripts('MSM...')"
+        "@odata.id": "users/{user-id}/adhoccalls/5f3640e7-a59c-4bec-82ca-e66251f795b7/transcripts('MyM...')"
       },
       "encryptedContent": {
         "data": "<<--EncryptedContent-->>",
@@ -765,7 +765,7 @@ The decrypted notification payload looks like the following. The payload conform
 > [!NOTE]
 > The payload object shown here is shortened for readability.
 
-#### **For online meetings**
+#### For online meetings
 
 <!-- { "blockType": "ignored" } -->
 ```json
@@ -790,26 +790,26 @@ The decrypted notification payload looks like the following. The payload conform
 }
 ```
 
-#### **For ad hoc calls**
+#### For ad hoc calls
 
 <!-- { "blockType": "ignored" } -->
 ```json
 {
-  "id": "MSM...",
+  "id": "MyM...",
   "meetingId": null,
-  "callId": "1c9ddbc9-82be-46b6-8edd-bf833fe33a03",
-  "transcriptContentUrl": "users/{user-id}/adhoccalls/1c9ddbc9-82be-46b6-8edd-bf833fe33a03/transcripts/MSM.../content",
+  "callId": "5f3640e7-a59c-4bec-82ca-e66251f795b7",
+  "transcriptContentUrl": "users/f2e8e111-3887-4936-87f8-639292c70d34/adhoccalls/5f3640e7-a59c-4bec-82ca-e66251f795b7/transcripts/MyM.../content",
   "createdDateTime": null,
-  "endDateTime": "2023-04-10T08:27:25.2346000Z",
-  "contentCorrelationId": "bc842d7a-2f6e-4b18-a1c7-73ef91d5c8e3",
+  "endDateTime": "2025-08-11T06:57:28.2265904Z",
+  "contentCorrelationId": "58cfc66a-710f-4be7-adc0-1ca5a28f2c0c-0",
   "meetingOrganizer": {
     "application": null,
     "device": null,
     "user": {
       "userIdentityType": "aadUser",
-      "id": "976f4b31-fd01-4e0b-9178-29cc40c14438",
+      "id": "f2e8e111-3887-4936-87f8-639292c70d34",
       "displayName": null,
-      "tenantId": "2432b57b-0abd-43db-aa7b-16eadd115d34"
+      "tenantId": "8393309d-9fb7-4cce-aafb-eedc8c5781e2"
     }
   }
 }
@@ -820,7 +820,7 @@ For notifications with resource data, the payload looks like the following.
 > [!NOTE]
 > The payload object shown here is shortened for readability.
 
-#### **For online meetings**
+#### For online meetings
 
 <!-- { "blockType": "ignored" } -->
 ```json
@@ -852,7 +852,7 @@ For notifications with resource data, the payload looks like the following.
 }
 ```
 
-#### **For ad hoc calls**
+#### For ad hoc calls
 
 <!-- { "blockType": "ignored" } -->
 ```json
@@ -913,7 +913,7 @@ For notifications without resource data, the payload looks like the following.
 > [!NOTE]
 > The payload object shown here is shortened for readability.
 
-#### **For online meetings**
+#### For online meetings
 
 <!-- { "blockType": "ignored" } -->
 ```json
@@ -956,7 +956,7 @@ For notifications without resource data, the payload looks like the following.
 > [!NOTE]
 > The payload object shown here is shortened for readability.
 
-#### **For online meetings**
+#### For online meetings
 
 <!-- { "blockType": "ignored" } -->
 ```json
@@ -975,7 +975,7 @@ For notifications without resource data, the payload looks like the following.
 }
 ```
 
-#### **For ad hoc calls**
+#### For ad hoc calls
 
 <!-- { "blockType": "ignored" } -->
 ```json
