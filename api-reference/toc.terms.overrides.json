@@ -313,6 +313,18 @@
     "override": "SIM"
   },
   {
+    "term": "signin",
+    "override": "Sign-in"
+  },
+  {
+    "term": "SignIn",
+    "override": "Sign-in"
+  },
+  {
+    "term": "Sign In",
+    "override": "Sign-in"
+  },
+  {
     "term": "sku",
     "override": "SKU"
   },
