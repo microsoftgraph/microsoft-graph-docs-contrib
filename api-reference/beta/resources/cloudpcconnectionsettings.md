@@ -42,6 +42,6 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.cloudPcConnectionSettings",
-  "enableSingleSignOn": "false",
+  "enableSingleSignOn": false,
 }
 ```

@@ -6,7 +6,7 @@
           "Id": "ac011bc2-8597-42ee-9690-2445bc0ca2f4",
           "ApiChange": "Resource",
           "ChangedApiName": "cloudPcConnectionSettings",
-          "ChangeType": "Addtion",
+          "ChangeType": "Addition",
           "Description": "Add the **cloudPcConnectionSettings** resource.",
           "Target": "cloudPcConnectionSettings"
         },
