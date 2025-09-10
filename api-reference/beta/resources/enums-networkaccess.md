@@ -588,7 +588,6 @@ Namespace: microsoft.graph.networkaccess
 |succeeded|
 |unknownFutureValue|
 
-=======
 ### cloudApplicationCategory values
 
 |Member|
