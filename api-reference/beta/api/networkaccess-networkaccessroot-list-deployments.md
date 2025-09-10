@@ -8,7 +8,7 @@ ms.subservice: entra-global-secure-access
 doc_type: apiPageType
 ---
 
-# Deployment logs list
+# List deployment logs
 
 Namespace: microsoft.graph.networkaccess
 
@@ -102,5 +102,6 @@ Content-Type: application/json
     ]
 }
 ```
+
 
 
