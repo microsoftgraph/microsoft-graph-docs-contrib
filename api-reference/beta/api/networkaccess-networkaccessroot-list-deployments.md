@@ -1,5 +1,5 @@
 ---
-title: "Deployment logs list"
+title: "List deployment logs"
 description: "Retrieve a list of logs that include the status of deployments performed through the Global Secure Access services."
 author: cagautham
 ms.date: 08/14/2025
@@ -102,6 +102,7 @@ Content-Type: application/json
     ]
 }
 ```
+
 
 
 
