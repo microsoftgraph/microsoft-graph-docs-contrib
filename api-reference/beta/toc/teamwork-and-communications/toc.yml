@@ -232,10 +232,6 @@ items:
       href: ../../api/presence-clearuserpreferredpresence.md
     - name: Set user status message
       href: ../../api/presence-setstatusmessage.md
-  - name: Ad hoc call
-    items:
-    - name: Ad hoc call (preview)
-      href: ../../resources/adhoccall.md
   - name: Calls
     items:
     - name: Call
@@ -831,6 +827,8 @@ items:
       href: ../../api/channel-list-members.md
     - name: List all members
       href: ../../api/channel-list-allmembers.md
+    - name: Manage channel members
+      href: ../../api/manage-channel-memberships-allmembers.md
     - name: Add channel member
       href: ../../api/channel-post-members.md
     - name: Get channel member
