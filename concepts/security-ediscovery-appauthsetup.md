@@ -61,7 +61,7 @@ You need to set the correct API permissions for your application. Expand **Manag
 
 ### Step 4: Set up a service principal
 
-1. Permission assignements for your app come in two parts - graph level permissions which you have already granted, next you will assign Purview level case and role permissions. To do this you need the objectID of your application. Note this is different from the app id, do not use the IDs show in the app creation screen, instead  go back to the Azure portal, and in the **Microsoft Entra ID** section, select **Enterprise Applications** and search for your application by name, within the list result get the **Object ID** associated with your application.
+1. Permission assignments for your app come in two parts - Microsoft Graph-level permissions, which you have already granted, next you will assign Purview level case and role permissions. To do this you need the object ID of your application. This value is different from the **appId** (named **client ID** in the Microsoft Entra admin center). To retrieve the app object ID, open the Azure portal > in the **Microsoft Entra ID** section > select **Enterprise Applications** > search for your application by name and get the **Object ID** associated with your application from the list.
 
 ![Screenshot of the enterprise applications page.](images/security-ediscovery-appauthsetup-step4_1.png)
 
