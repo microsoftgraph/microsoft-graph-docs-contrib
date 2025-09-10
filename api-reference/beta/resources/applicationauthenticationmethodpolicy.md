@@ -2,7 +2,7 @@
 title: "Microsoft Entra application management policy API overview"
 description: "Application management policies allow administrators to set rules on how Entra apps in their tenant can be configured."
 ms.localizationpriority: medium
-author: "madansr7"
+author: "aricrowe57"
 ms.subservice: "entra-sign-in"
 doc_type: "conceptualPageType"
 ms.date: 11/12/2024
@@ -43,7 +43,7 @@ When the tenant default policy and an app management policy define the same rest
 
 ## What restrictions can be managed in Microsoft Graph?
 
-The application authentication methods policy API offers the following restrictions:
+The application authentication methods policy API offers the following restrictions. [Learn more about configuring these restrictions](/entra/identity/enterprise-apps/configure-app-management-policies).
 
 | Restriction name            | Description                                                             | Examples                                                                                                                                      |
 | :-------------------------- | :---------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------- |

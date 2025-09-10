@@ -24,3 +24,5 @@ Windows quality update category
 |all|0|All update type|
 |security|1|Security only update type|
 |nonSecurity|2|Non security only update type|
+|unknownFutureValue|3|Evolvable enumeration sentinel value. Do not use.|
+|quickMachineRecovery|4|Quick machine recovery update type|
