@@ -5,6 +5,7 @@ author: "awang119"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 ms.date: 11/07/2024
+ms.topic: how-to
 ---
 
 # Configure application access to online meetings or virtual events
@@ -15,7 +16,7 @@ The following sections describe the two main scenarios that require an applicati
 
 ## Allow applications to access online meetings on behalf of a user
 
-In some cases, such as background services or daemon apps running on a server without a signed-in user, it is acceptable for an app to call Microsoft Graph and perform actions on behalf of a user. For example, an app may require Microsoft Graph to schedule multiple meetings based on published schedules (like courses) or external scheduling tools. In such situations, the application can act on behalf of any user. Therefore, it is important to make sure that the user possesses the necessary privileges, such as being the organizer or co-organizer, to access the online meeting.
+In some cases, such as background services or daemon apps running on a server without a signed-in user, it is acceptable for an app to call Microsoft Graph and perform actions on behalf of a user. For example, an app might require Microsoft Graph to schedule multiple meetings based on published schedules (like courses) or external scheduling tools. In such situations, the application can act on behalf of any user. Therefore, it is important to make sure that the user possesses the necessary privileges, such as being the organizer or co-organizer, to access the online meeting.
 
 ## Allow applications to access virtual events created by the user
 

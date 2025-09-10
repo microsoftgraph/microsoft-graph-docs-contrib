@@ -4,6 +4,7 @@ description: "Provides instructions for creating Microsoft Graph API requests us
 ms.localizationpriority: medium
 author: DarrelMiller
 ms.date: 11/07/2024
+ms.topic: article
 ---
 
 <!-- markdownlint-disable MD051 -->

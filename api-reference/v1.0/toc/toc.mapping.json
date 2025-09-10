@@ -993,6 +993,7 @@
                 "onAttributeCollectionStartListener",
                 "onAttributeCollectionSubmitListener",
                 "onAuthenticationMethodLoadStartListener",
+                "onEmailOtpSendListener",
                 "onInteractiveAuthFlowStartListener",
                 "onTokenIssuanceStartListener",
                 "onUserCreateStartListener"
@@ -1075,6 +1076,7 @@
                 "customAuthenticationExtension",
                 "onAttributeCollectionStartCustomExtension",
                 "onAttributeCollectionSubmitCustomExtension",
+                "onOtpSendCustomExtension",
                 "onTokenIssuanceStartCustomExtension"
               ]
             },
@@ -1493,7 +1495,9 @@
             "microsoft.graph.security.incident"
           ],
           "complexTypes": [
-            "microsoft.graph.security.teamsMessageEvidence"
+            "microsoft.graph.security.securityGroupEvidence",
+            "microsoft.graph.security.teamsMessageEvidence",
+            "microsoft.graph.security.userAccount"
           ]
         },
         {
@@ -1569,7 +1573,7 @@
               "scopeBase",
               "tenantScope",
               "textContent",
-              "userScope" 
+              "userScope"
             ]
         },
         {
@@ -1846,22 +1850,6 @@
       ],
       "childNodes": [
         {
-          "name": "AI interactions",
-          "resources": [
-            "aiInteractionHistory"
-          ],
-          "complexTypes": [
-            "aiInteraction",
-            "aiInteractionAttachment",
-            "aiInteractionContext",
-            "aiInteractionLink",
-            "aiInteractionMention",
-            "aiInteractionMentionedIdentitySet",
-            "aiUser",
-            "copilotRoot"
-          ]
-        },
-        {
           "name": "Apps",
           "resources": [
             "teamsApp",
@@ -1877,6 +1865,9 @@
           "shouldSort": true,
           "resources": [
             "presence"
+          ],
+          "complexTypes": [
+            "outOfOfficeSettings"
           ],
           "childNodes": [
             {
@@ -1901,17 +1892,6 @@
               ],
               "complexTypes": [
                 "microsoft.graph.callRecords.networkInfo"
-              ]
-            },
-            {
-              "name": "Copilot settings",
-              "resources": [
-                "copilotAdminLimitedMode"
-              ],
-              "complexTypes": [
-                "copilotAdmin",
-                "copilotAdminSetting",
-                "copilotRoot"
               ]
             },
             {

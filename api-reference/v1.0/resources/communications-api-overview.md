@@ -39,7 +39,7 @@ The following table lists some of the common uses for the cloud communications A
 |IVR calls   |  [call](/graph/api/resources/call?view=graph-rest-v1.0&preserve-view=true)   | [Methods for IVR](/graph/api/resources/teams-api-overview#ivr-scenarios?view=graph-rest-v1.0&preserve-view=true)
 | Call controls (participant) | [Participant](/graph/api/resources/participant?view=graph-rest-v1.0&preserve-view=true)   ||
 |Meetings|[onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-v1.0&preserve-view=true)| [Methods for meetings](/graph/api/resources/onlinemeeting?view=graph-rest-v1.0&preserve-view=true#methods)|
-| Retrieving call records | [callRecord](/graph/api/resources/callrecords-callrecord?view=graph-rest-1.0&preserve-view=true) | [Webhook subscriptions](/graph/api/resources/webhooks?view=graph-rest-1.0&preserve-view=true) |
+| Retrieving call records | [callRecord](/graph/api/resources/callrecords-callrecord?view=graph-rest-1.0&preserve-view=true) | [Microsoft Graph API change notifications](/graph/api/resources/change-notifications-api-overview) |
 |Presences|[presence](/graph/api/resources/presence?view=graph-rest-v1.0&preserve-view=true)||
 
 ## Common properties

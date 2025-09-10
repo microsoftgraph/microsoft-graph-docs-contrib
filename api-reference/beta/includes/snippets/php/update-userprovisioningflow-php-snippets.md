@@ -10,6 +10,7 @@ use Microsoft\Graph\Beta\Generated\Models\IndustryData\UserProvisioningFlow;
 use Microsoft\Graph\Beta\Generated\Models\IndustryData\UserManagementOptions;
 use Microsoft\Graph\Beta\Generated\Models\IndustryData\AdditionalUserAttributes;
 use Microsoft\Graph\Beta\Generated\Models\IndustryData\AdditionalUserOptions;
+use Microsoft\Graph\Beta\Generated\Models\IndustryData\StudentAgeGroup;
 use Microsoft\Graph\Beta\Generated\Models\IndustryData\UserCreationOptions;
 use Microsoft\Graph\Beta\Generated\Models\IndustryData\UserConfiguration;
 use Microsoft\Graph\Beta\Generated\Models\IndustryData\SimplePasswordSettings;
@@ -23,11 +24,8 @@ $requestBody->setCreateUnmatchedUsers(true);
 $managementOptions = new UserManagementOptions();
 $managementOptions->setAdditionalAttributes([new AdditionalUserAttributes('userGradeLevel'),	]);
 $managementOptionsAdditionalOptions = new AdditionalUserOptions();
+$managementOptionsAdditionalOptions->setStudentAgeGroup(new StudentAgeGroup('minor'));
 $managementOptionsAdditionalOptions->setAllowStudentContactAssociation(true);
-$additionalData = [
-	'studentAgeGroup' => 'minor',
-];
-$managementOptionsAdditionalOptions->setAdditionalData($additionalData);
 $managementOptions->setAdditionalOptions($managementOptionsAdditionalOptions);
 $requestBody->setManagementOptions($managementOptions);
 $creationOptions = new UserCreationOptions();

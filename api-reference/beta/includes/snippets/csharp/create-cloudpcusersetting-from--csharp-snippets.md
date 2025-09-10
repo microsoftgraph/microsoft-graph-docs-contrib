@@ -34,6 +34,7 @@ var requestBody = new CloudPcUserSetting
 		DisasterRecoveryType = CloudPcDisasterRecoveryType.Premium,
 		UserInitiatedDisasterRecoveryAllowed = true,
 	},
+	ProvisioningSourceType = CloudPcProvisioningSourceType.Image,
 	RestorePointSetting = new CloudPcRestorePointSetting
 	{
 		FrequencyInHours = 16,

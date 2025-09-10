@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Upgrade or downgrade an existing Cloud PC to a configuration with a new virtual CPU (vCPU) and storage size.
+Upgrade or downgrade an existing [Cloud PC](../resources/cloudpc.md) to a configuration with a new virtual CPU (vCPU) and storage size.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 

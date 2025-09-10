@@ -21,13 +21,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { 
   "blockType": "permissions", 
+  "name": "temporaryaccesspassauthenticationmethod_delete", 
   "requestUrls": ["DELETE /users/{id | userPrincipalName}/authentication/temporaryAccessPassMethods/{id}"]
  } -->
-|Permission type|Least privileged permissions|Higher privileged permissions|
-|:---|:---|:---|
-|Delegated (work or school account)|UserAuthenticationMethod.ReadWrite.All|Not available.
-|Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|UserAuthenticationMethod.ReadWrite.All|Not available.|
+[!INCLUDE [permissions-table](../includes/permissions/temporaryaccesspassauthenticationmethod-delete-permissions.md)]
 
 [!INCLUDE [rbac-authentication-methods-apis-write-others](../includes/rbac-for-apis/rbac-authentication-methods-apis-write-others.md)]
 

@@ -180,7 +180,7 @@ For more information about properties stored outside of the main data store, see
 
 Expect varying delays between the time a resource instance changes, and the time the tracked change is reflected in a delta query response.
 
-Sometimes, due to replication delays, the changes to the object might not show up immediately when you select the `@odata.nextLink` or the `@odata.deltaLink`. Retry the `@odata.nextLink` or `@odata.deltaLink` after some time to retrieve the latest changes.
+Sometimes, due to replication delays, the changes to the object do not show up immediately when you select the `@odata.nextLink` or the `@odata.deltaLink`. Retry the `@odata.nextLink` or `@odata.deltaLink` after some time to retrieve the latest changes.
 
 ### Replays
 

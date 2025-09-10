@@ -1,6 +1,6 @@
 ---
 title: "Delete itemPublication"
-description: "Deletes an itemPublication object."
+description: "Delete an itemPublication object."
 ms.localizationpriority: medium
 author: "kevinbellinger"
 ms.subservice: "people"
@@ -12,7 +12,7 @@ ms.date: 06/11/2024
 
 Namespace: microsoft.graph
 
-Deletes an [itemPublication](../resources/itempublication.md) object.
+Delete an [itemPublication](../resources/itempublication.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

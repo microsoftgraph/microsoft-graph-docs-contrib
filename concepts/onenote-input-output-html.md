@@ -5,6 +5,7 @@ author: "jewan-microsoft"
 ms.localizationpriority: high
 ms.subservice: "onenote"
 ms.date: 11/07/2024
+ms.topic: how-to
 ---
 
 # Input and output HTML on OneNote pages
@@ -330,7 +331,7 @@ Paragraphs, headings, and other text containers can contain the following attrib
 | data-id | A reference for the element.<br/><br/>Used to [update page content](onenote-update-page.md). |
 | data-tag | A [note tag](onenote-note-tags.md) on a **p** or **h1** - **h6** element. |
 | id | A unique, generated ID for the element. Returned by [GET requests to a page's *content* endpoint](/graph/api/page-get) when the `includeIDs=true` query option is used.<br/><br/>Used to [update page content](onenote-update-page.md). |
-| style | The CSS [style](#styles) properties of the element. In the output HTML, these values may be returned inline on appropriate child elements or on **span** elements. |
+| style | The CSS [style](#styles) properties of the element. In the output HTML, these values might be returned inline on appropriate child elements or on **span** elements. |
  
 
 The following examples show input HTML that uses different ways to define styles on text containers and the output HTML that's returned.

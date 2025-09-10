@@ -135,7 +135,11 @@ The Microsoft Defender for Identity health issues API allows you to monitor the 
 
 ### Sensors
 
-The Defender for Identity sensors management API allows you to create detailed reports of the sensors in your workspace, including information about the server name, sensor version, type, state, and health status. It also enables you to manage sensor settings, such as adding descriptions, enabling or disabling delayed updates, and specifying the domain controller that the sensor connects to for querying Entra ID.
+The Defender for Identity sensors management APIs allows you to:
+- Create detailed reports of the sensors in your workspace, including information about the server name, sensor version, type, state, and health status.
+- Manage sensor settings, such as adding descriptions, enabling or disabling delayed updates, and specifying the domain controller that the sensor connects to for querying Entra ID.
+- Identify sensors that are ready to be activated.
+- Define whether the sensors in your infrastructure are to be activated automatically or manually.
 
 ## Incidents
 
@@ -213,6 +217,9 @@ The Microsoft Graph threat submission API helps organizations to submit a threat
 ### Sensors
 The Defender for Identity sensors management API allows you to create detailed reports of the sensors in your workspace, including information about the server's name, sensor version, type, state, and health status. It also enables you to manage sensor settings, such as adding descriptions, enabling or disabling delayed updates, and specifying the domain controller that the sensor connects to to query Entra ID.
 
+### identityAccounts
+The [identityAccounts resource and related APIs](../resources/security-identityaccounts.md) allows you to retrieve details of users that are flagged by Microsoft Defender for Identity alerts, and apply actions such as disabling accounts and resetting the user password for the compromised user.
+
 ## Data security and governance (preview)
 Microsoft Purview unifies data governance and compliance across your organization's data estate. It provides centralized controls for data discovery, classification, and protection - integrating directly with Microsoft 365 and third-party data sources. Think of it as a command center for managing sensitive information and ensuring regulatory compliance across all your data, whether it lives in databases, documents, or cloud storage.
 
@@ -287,7 +294,7 @@ The following are some of the most popular requests for working with the Microso
 | Create content activity|[Create content activity](../api/activitiescontainer-post-contentactivities.md)||
 
 
-You can use Microsoft Graph [webhooks](/graph/webhooks) to subscribe to and receive notifications about updates to Microsoft Graph security API entities.
+You can use Microsoft Graph [change notifications](/graph/change-notifications-overview) to subscribe to and receive notifications about updates to Microsoft Graph security API entities.
 
 ## Next steps
 
@@ -295,7 +302,7 @@ The Microsoft Graph security API can open up new ways for you to engage with dif
 
 - Drill down into [alerts](alert.md), [tiIndicator](tiindicator.md) (preview), [securityAction](securityaction.md) (preview), [secureScore](securescore.md), and [secureScoreControlProfiles](securescorecontrolprofiles.md).
 - Try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer). Under **Sample queries**, choose **Show more samples** and set the Security category to **On**.
-- Try [subscribing to and receiving notifications](/graph/webhooks) on entity changes.
+- Try [subscribing to and receiving notifications](/graph/change-notifications-overview) on entity changes.
 
 ## Related content
 

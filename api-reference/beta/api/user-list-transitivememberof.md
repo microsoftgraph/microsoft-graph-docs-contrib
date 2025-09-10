@@ -127,7 +127,7 @@ GET https://graph.microsoft.com/beta/users/{id}/transitiveMemberOf
 
 #### Response
 
-Here's an example  of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -167,7 +167,7 @@ Content-type: application/json
 
 #### Request
 
-Here's an example  of the request.
+The following example shows a request.
 
 <!-- {
   "blockType": "ignored",
@@ -181,7 +181,7 @@ ConsistencyLevel: eventual
 
 #### Response
 
-Here's an example  of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -201,7 +201,7 @@ Content-type: text/plain
 
 #### Request
 
-Here's an example  of the request.
+The following example shows a request.
 
 <!-- {
   "blockType": "ignored",
@@ -215,7 +215,7 @@ ConsistencyLevel: eventual
 
 #### Response
 
-Here's an example  of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -233,7 +233,7 @@ Content-type: text/plain
 
 #### Request
 
-Here's an example  of the request.
+The following example shows a request.
 
 <!-- {
   "blockType": "ignored",
@@ -247,15 +247,14 @@ ConsistencyLevel: eventual
 
 #### Response
 
-Here's an example  of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.group",
-  "isCollection": true
+  "@odata.type": "Collection(microsoft.graph.group)"
 } -->
 
 ```http
@@ -278,7 +277,7 @@ Content-type: application/json
 
 #### Request
 
-Here's an example  of the request.
+The following example shows a request.
 
 <!-- {
   "blockType": "ignored",
@@ -292,7 +291,7 @@ ConsistencyLevel: eventual
 
 #### Response
 
-Here's an example  of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -320,7 +319,6 @@ Content-type: application/json
     }
   ]
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

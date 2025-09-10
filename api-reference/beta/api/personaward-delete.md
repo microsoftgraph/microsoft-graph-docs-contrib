@@ -1,6 +1,6 @@
 ---
 title: "Delete personAward"
-description: "Deletes an personAward object."
+description: "Delete a personAward object from a user's profile."
 ms.localizationpriority: medium
 author: "kevinbellinger"
 ms.subservice: "people"
@@ -12,7 +12,7 @@ ms.date: 06/11/2024
 
 Namespace: microsoft.graph
 
-Deletes a [personAward](../resources/personaward.md) object from a user's [profile](../resources/profile.md).
+Delete a [personAward](../resources/personaward.md) object from a user's [profile](../resources/profile.md).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

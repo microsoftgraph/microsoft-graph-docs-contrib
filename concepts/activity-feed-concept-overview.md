@@ -4,6 +4,7 @@ description: "Using Microsoft Graph, you can enable experiences that flow seamle
 ms.localizationpriority: medium
 ms.subservice: "project-rome"
 ms.date: 11/07/2024
+ms.topic: article
 ---
 
 # Use the activity feed API in Microsoft Graph to enable cross-device experiences

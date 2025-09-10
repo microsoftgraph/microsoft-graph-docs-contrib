@@ -21,9 +21,9 @@ This is a derived type that inherits from the [authenticationMethod](authenticat
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/fido2authenticationmethod-list.md)|[fido2AuthenticationMethod](../resources/fido2authenticationmethod.md) collection|Retrieve a list of a user's fido2AuthenticationMethod objects and their properties.|
-|[Get](../api/fido2authenticationmethod-get.md)|[fido2AuthenticationMethod](../resources/fido2authenticationmethod.md)|Read the properties and relationships of a user's fido2AuthenticationMethod object.|
-|[Delete](../api/fido2authenticationmethod-delete.md)|None|Deletes a user's fido2AuthenticationMethod object.|
+|[List](../api/fido2authenticationmethod-list.md)|[fido2AuthenticationMethod](../resources/fido2authenticationmethod.md) collection|Retrieve a list of a user's **fido2AuthenticationMethod** objects and their properties.|
+|[Get](../api/fido2authenticationmethod-get.md)|[fido2AuthenticationMethod](../resources/fido2authenticationmethod.md)|Read the properties and relationships of a user's **fido2AuthenticationMethod** object.|
+|[Delete](../api/fido2authenticationmethod-delete.md)|None|Delete a user's **fido2AuthenticationMethod** object.|
 
 ## Properties
 |Property|Type|Description|
@@ -38,6 +38,8 @@ This is a derived type that inherits from the [authenticationMethod](authenticat
 
 ## Relationships
 None.
+
+## JSON representation
 
 The following JSON representation shows the resource type.
 

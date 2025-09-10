@@ -2,10 +2,12 @@
 title: "onPremisesSyncBehavior resource type"
 description: "Indicates the state of synchronization for a directory object between the cloud and on-premises Active Directory."
 author: "rubytek-git"
+ms.reviewer: "Darshan.Maiya,rteklemariam"
 ms.date: 06/30/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
+toc.title: "On-premises sync behavior (Source of Authority)"
 ---
 
 # onPremisesSyncBehavior resource type
@@ -15,6 +17,8 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Indicates the state of synchronization for a directory object and its settings between the cloud and on-premises Active Directory. Only the [group](../resources/group.md) resource is supported.
+
+For more information, see [Convert Group Source of Authority to the cloud](/entra/identity/hybrid/concept-source-of-authority-overview).
 
 Inherits from [entity](../resources/entity.md).
 

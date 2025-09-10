@@ -64,7 +64,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1114
+Content-Length: 1164
 
 {
   "value": [
@@ -83,6 +83,7 @@ Content-Length: 1114
         "Role Scope Tag Ids value"
       ],
       "isAssigned": true,
+      "disableEntraGroupPolicyAssignment": true,
       "templateReference": {
         "@odata.type": "microsoft.graph.deviceManagementConfigurationPolicyTemplateReference",
         "templateId": "Template Id value",

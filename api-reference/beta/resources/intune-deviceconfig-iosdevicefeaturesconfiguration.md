@@ -232,68 +232,32 @@ Here is a JSON representation of the resource.
     "value": "binary"
   },
   "singleSignOnExtension": {
-    "@odata.type": "microsoft.graph.iosKerberosSingleSignOnExtension",
-    "realm": "String",
-    "domains": [
-      "String"
+    "@odata.type": "microsoft.graph.iosRedirectSingleSignOnExtension",
+    "extensionIdentifier": "String",
+    "teamIdentifier": "String",
+    "configurations": [
+      {
+        "@odata.type": "microsoft.graph.keyTypedValuePair",
+        "key": "String"
+      }
     ],
-    "blockAutomaticLogin": true,
-    "cacheName": "String",
-    "credentialBundleIdAccessControlList": [
+    "urlPrefixes": [
       "String"
-    ],
-    "domainRealms": [
-      "String"
-    ],
-    "isDefaultRealm": true,
-    "passwordBlockModification": true,
-    "passwordExpirationDays": 1024,
-    "passwordExpirationNotificationDays": 1024,
-    "userPrincipalName": "String",
-    "passwordRequireActiveDirectoryComplexity": true,
-    "passwordPreviousPasswordBlockCount": 1024,
-    "passwordMinimumLength": 1024,
-    "passwordMinimumAgeDays": 1024,
-    "passwordRequirementsDescription": "String",
-    "requireUserPresence": true,
-    "activeDirectorySiteCode": "String",
-    "passwordEnableLocalSync": true,
-    "blockActiveDirectorySiteAutoDiscovery": true,
-    "passwordChangeUrl": "String",
-    "signInHelpText": "String",
-    "managedAppsInBundleIdACLIncluded": true
+    ]
   },
   "iosSingleSignOnExtension": {
-    "@odata.type": "microsoft.graph.iosKerberosSingleSignOnExtension",
-    "realm": "String",
-    "domains": [
-      "String"
+    "@odata.type": "microsoft.graph.iosRedirectSingleSignOnExtension",
+    "extensionIdentifier": "String",
+    "teamIdentifier": "String",
+    "configurations": [
+      {
+        "@odata.type": "microsoft.graph.keyTypedValuePair",
+        "key": "String"
+      }
     ],
-    "blockAutomaticLogin": true,
-    "cacheName": "String",
-    "credentialBundleIdAccessControlList": [
+    "urlPrefixes": [
       "String"
-    ],
-    "domainRealms": [
-      "String"
-    ],
-    "isDefaultRealm": true,
-    "passwordBlockModification": true,
-    "passwordExpirationDays": 1024,
-    "passwordExpirationNotificationDays": 1024,
-    "userPrincipalName": "String",
-    "passwordRequireActiveDirectoryComplexity": true,
-    "passwordPreviousPasswordBlockCount": 1024,
-    "passwordMinimumLength": 1024,
-    "passwordMinimumAgeDays": 1024,
-    "passwordRequirementsDescription": "String",
-    "requireUserPresence": true,
-    "activeDirectorySiteCode": "String",
-    "passwordEnableLocalSync": true,
-    "blockActiveDirectorySiteAutoDiscovery": true,
-    "passwordChangeUrl": "String",
-    "signInHelpText": "String",
-    "managedAppsInBundleIdACLIncluded": true
+    ]
   }
 }
 ```
