@@ -879,9 +879,9 @@ items:
         href: ../../resources/removeaccessapplyaction.md
       - name: Request
         href: ../../resources/request.md
-      - name: User last Sign-in recommendation insight setting
+      - name: User last sign in recommendation insight setting
         href: ../../resources/userlastsignInrecommendationinsightsetting.md
-      - name: User Sign-in insight
+      - name: User sign in insight
         href: ../../resources/usersigninInsight.md
   - name: Access reviews (deprecated)
     items:

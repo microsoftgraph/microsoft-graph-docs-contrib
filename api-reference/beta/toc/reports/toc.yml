@@ -200,9 +200,9 @@ items:
           href: ../../resources/usereventssummary.md
         - name: List
           href: ../../api/authenticationmethodsroot-list-usereventssummary.md
-      - name: User MFA Sign-in summary
+      - name: User MFA sign in summary
         items:
-        - name: User MFA Sign-in summary
+        - name: User MFA sign in summary
           href: ../../resources/usermfasigninsummary.md
         - name: List
           href: ../../api/authenticationmethodsroot-list-usermfasigninsummary.md
@@ -218,9 +218,9 @@ items:
           href: ../../resources/userregistrationactivitysummary.md
         - name: List
           href: ../../api/authenticationmethodsroot-userregistrationactivity.md
-      - name: User Sign-in usage by auth method activity
+      - name: User sign in usage by auth method activity
         items:
-        - name: User Sign-in usage by auth method activity
+        - name: User sign in usage by auth method activity
           href: ../../resources/usersigninusagebyauthmethodactivity.md
         - name: List
           href: ../../api/authenticationmethodsroot-usersigninsbyauthmethodsummary.md
@@ -370,9 +370,9 @@ items:
         href: ../../api/auditlogroot-list-signups.md
       - name: Get
         href: ../../api/selfservicesignup-get.md
-    - name: Sign-in
+    - name: Sign in
       items:
-      - name: Sign-in
+      - name: Sign in
         href: ../../resources/signin.md
       - name: List
         href: ../../api/signin-list.md
@@ -384,21 +384,21 @@ items:
         href: ../../api/signin-confirmsafe.md
       - name: Dismiss
         href: ../../api/signin-dismiss.md
-    - name: Sign-in events activity
+    - name: Sign in events activity
       items:
-      - name: Sign-in events activity
+      - name: Sign in events activity
         href: ../../resources/signineventsactivity.md
       - name: List
         href: ../../api/auditlogroot-list-signineventssummary.md
-    - name: Sign-in events app activity
+    - name: Sign in events app activity
       items:
-      - name: Sign-in events app activity
+      - name: Sign in events app activity
         href: ../../resources/signineventsappactivity.md
       - name: List
         href: ../../api/auditlogroot-list-signineventsappsummary.md
-    - name: Summarized Sign-in
+    - name: Summarized sign in
       items:
-      - name: Summarized Sign-in
+      - name: Summarized sign in
         href: ../../resources/summarizedsignin.md
       - name: Get summarized MSI sign-ins
         href: ../../api/auditlogroot-getsummarizedmsisignins.md
