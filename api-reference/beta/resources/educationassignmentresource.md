@@ -34,8 +34,11 @@ Represents a wrapper object that stores the resources associated with an assignm
 |resource|[educationResource](educationresource.md)|Resource object that is associated with this assignment.|
 
 ## Relationships
-None.
 
+| Relationship | Type |Description|
+|:---------------|:--------|:----------|
+|dependentResources|[educationAssignmentResource] (educationassignmentresource.md) collection|A collection of assignment resources that depend on the parent educationAssignmentResource.|
+|dependentResources|[educationSubmissionResource] (educationsubmissionresource.md) collection|A collection of submission resources that depend on the parent educationSubmissionResource.|
 
 ## JSON representation
 
