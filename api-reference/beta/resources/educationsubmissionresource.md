@@ -39,8 +39,6 @@ A wrapper around a resource for use on a submission. The wrapper adds a pointer 
 |:---------------|:--------|:----------|
 |dependentResources|[educationSubmissionResource] (educationsubmissionresource.md) collection|A collection of submission resources that depend on the parent educationSubmissionResource.|
 
-
-
 ## JSON representation
 
 The following JSON representation shows the resource type.
