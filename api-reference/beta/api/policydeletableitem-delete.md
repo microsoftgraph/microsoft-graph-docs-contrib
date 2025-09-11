@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Permanently delete policyDeletableItem"
 description: "Permanently delete a policyDeletableItem object."
 author: "ashyasingh"
