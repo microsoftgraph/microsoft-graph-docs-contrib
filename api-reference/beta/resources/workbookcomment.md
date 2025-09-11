@@ -29,7 +29,7 @@ Represents a comment in a workbook.
 |:-------------|:------------|:------------|
 |cellAddress|String|The cell where the comment is located. The address value is in A1-style, which contains the sheet reference (for example, `Sheet1!A1`). Read-only.|
 |content|String|The content of the comment that is the String displayed to end-users.|
-|contentType|String|The content type of the comment. Supported values are: `plain` or `mention`.|
+|contentType|String|The content type of the comment. Supported values are: `plain`, `mention`.|
 |id|String|The unique identifier of the comment. Read-only.|
 |mentions|[workbookCommentMention](workbookcommentmention.md) collection|A collection that contains all the people mentioned within the comment. When **contentType** is `plain`, this property is an empty array. Read-only.|
 |richContent|String|The rich content of the comment (for example, comment content with mentions, where the first mentioned entity has an ID attribute of `0` and the second has an ID attribute of `1`). When **contentType** is `plain`, this property is empty. Read-only.|
