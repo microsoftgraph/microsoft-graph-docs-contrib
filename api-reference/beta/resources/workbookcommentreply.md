@@ -27,7 +27,7 @@ Represents a reply to an Excel comment.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|content|String|The content of the reply that is the displayed to end-users..|
+|content|String|The content of the reply that is the displayed to end-users.|
 |contentType|String|The content type for the reply. Supported values are: `plain`, `mention`.|
 |id|String|The unique identifier for the reply. Read-only.|
 |mentions|[workbookCommentMention](workbookcommentmention.md) collection|A collection that contains all the people mentioned within the reply. When **contentType** is `plain`, this property is an empty array. Read-only.|
