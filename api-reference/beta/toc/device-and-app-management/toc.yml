@@ -4745,8 +4745,6 @@ items:
         href: ../../api/intune-raimportcerts-userpfxcertificate-create.md
       - name: Delete userPFXCertificate
         href: ../../api/intune-raimportcerts-userpfxcertificate-delete.md
-      - name: Update userPFXCertificate
-        href: ../../api/intune-raimportcerts-userpfxcertificate-update.md
     - name: VPN configuration
       items:
       - name: VPN configuration

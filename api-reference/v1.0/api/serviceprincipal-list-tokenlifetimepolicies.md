@@ -1,7 +1,7 @@
 ---
 title: "List assigned tokenLifetimePolicies"
 description: "List tokenLifetimePolicies that are assigned to a service principal."
-author: "sureshja"
+author: "aricrowe57"
 ms.localizationpriority: medium
 ms.subservice: "entra-applications"
 doc_type: apiPageType

@@ -4,7 +4,7 @@ description: "Specifies settings for a Web API application."
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "entra-applications"
-author: "sureshja"
+author: "Jackson-Woods"
 ms.date: 11/09/2024
 ---
 

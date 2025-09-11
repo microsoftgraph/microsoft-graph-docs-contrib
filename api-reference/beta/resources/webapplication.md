@@ -4,7 +4,7 @@ description: "Specifies settings for a web application."
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "entra-applications"
-author: "sureshja"
+author: "Jackson-Woods"
 ms.date: 03/21/2024
 ms.custom: sfi-ropc-nochange
 ---
