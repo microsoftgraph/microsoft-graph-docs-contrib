@@ -1,5 +1,5 @@
 ---
-title: "List Userprocessingresult reprocessedRuns"
+title: "List reprocessedRuns for userProcessingResults"
 description: "List user processing results of a workflow reprocessed run."
 author: "AlexFilipin"
 ms.date: 09/04/2025
@@ -8,7 +8,7 @@ ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 
-# List UserProcessingResult reprocessedRuns
+# List reprocessedRuns for userProcessingResults
 
 Namespace: microsoft.graph.identityGovernance
 
