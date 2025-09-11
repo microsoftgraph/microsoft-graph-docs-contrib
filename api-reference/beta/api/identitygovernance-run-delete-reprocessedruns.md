@@ -1,5 +1,5 @@
 ---
-title: "Remove reprocessedRuns"
+title: "Remove reprocessedRuns for a run"
 description: "Remove a reprocessed run object."
 author: "AlexFilipin"
 ms.date: 09/04/2025
@@ -8,7 +8,7 @@ ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 
-# Remove reprocessedRuns
+# Remove reprocessedRuns for a run
 
 Namespace: microsoft.graph.identityGovernance
 
