@@ -117,7 +117,7 @@ Content-Type: application/json
   "includeResourceData": true,
   "encryptionCertificate": "{base64encodedCertificate}",
   "encryptionCertificateId": "{customId}",
-  "expirationDateTime": "2025-03-20T11:00:00.0000000Z",
+  "expirationDateTime": "{expirationDateTime}",
   "clientState": "{secretClientState}"
 }
 ```
