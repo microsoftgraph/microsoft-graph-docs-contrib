@@ -95,7 +95,6 @@ The new map APIs in Places enable applications with appropriate read or write pe
 
 - [Create a one-on-one or group chat with installed apps](/graph/api/chat-post?view=graph-rest-beta&preserve-view=true#example-3-create-a-one-on-one-chat-with-installed-apps).
 - [Create a one-on-one or group chat with RSC-granted apps](/graph/api/chat-post?view=graph-rest-beta&preserve-view=true#example-4-create-a-one-on-one-chat-with-rsc-granted-apps).
->>>>>>> da682f4084d55a5163e60468ef537adb34cf3189
 
 ## August 2025: New and generally available
 
