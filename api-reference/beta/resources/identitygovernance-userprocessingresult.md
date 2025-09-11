@@ -41,7 +41,7 @@ Inherits from [entity](../resources/entity.md).
 |startedDateTime|DateTimeOffset|The date time that the workflow execution started. Value is `null` if the workflow execution hasn't started.<br><br>Supports `$filter`(`lt`, `le`, `gt`, `ge`, `eq`, `ne`) and `$orderby`.|
 |totalTasksCount|Int32|The total number of tasks that in the workflow execution.|
 |totalUnprocessedTasksCount|Int32|The total number of unprocessed tasks for the workflow.|
-|workflowExecutionType|microsoft.graph.identityGovernance.workflowExecutionType|Describes the execution type of the workflow. The possible values are: `scheduled`, `onDemand`, `unknownFutureValue`, `activatedWithScope`.<br><br>Supports `$filter`(`lt`, `le`, `gt`, `ge`, `eq`, `ne`) and `$orderby`.|
+|workflowExecutionType|microsoft.graph.identityGovernance.workflowExecutionType|Describes the execution type of the workflow. The possible values are: `scheduled`, `onDemand`, `unknownFutureValue`, `activatedWithScope`. Use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `activatedWithScope`.<br><br>Supports `$filter`(`lt`, `le`, `gt`, `ge`, `eq`, `ne`) and `$orderby`.|
 |workflowVersion|Int32|The version of the workflow that was executed.|
 
 ## Relationships

@@ -46,7 +46,7 @@ Inherits from [entity](../resources/entity.md).
 |totalUsersCount|Int32|The total number of users in the workflow execution.|
 |totalTasksCounts|Int32|The total number of tasks in the run execution.|
 |totalUnprocessedTasksCount|Int32|The total number of unprocessed tasks in the run execution.|
-|workflowExecutionType|microsoft.graph.identityGovernance.workflowExecutionType|The execution type of the workflows associated with the run. The possible values are: `scheduled`, `onDemand`, `unknownFutureValue`, `activatedWithScope`.<br><br>Supports `$filter`(`eq`, `ne`) and `$orderby`.|
+|workflowExecutionType|microsoft.graph.identityGovernance.workflowExecutionType|The execution type of the workflows associated with the run. The possible values are: `scheduled`, `onDemand`, `unknownFutureValue`, `activatedWithScope`. Use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `activatedWithScope`.<br><br>Supports `$filter`(`eq`, `ne`) and `$orderby`.|
 
 ## Relationships
 
