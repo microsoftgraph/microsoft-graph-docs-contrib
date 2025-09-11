@@ -1,5 +1,5 @@
 ---
-title: "List reprocessedRuns"
+title: "List reprocessedRuns for a run"
 description: "Get a list of the reprocessed run objects and their properties for a lifecycle workflow."
 author: "AlexFilipin"
 ms.date: 09/04/2025
@@ -8,7 +8,7 @@ ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 
-# List reprocessedRuns
+# List reprocessedRuns for a run
 
 Namespace: microsoft.graph.identityGovernance
 
