@@ -14,7 +14,7 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Remove a [microsoft.graph.identityGovernance.run](../resources/identitygovernance-run.md) object.
+Remove the user processing results for a reprocessed [run](../resources/identitygovernance-run.md) object.
 
 ## Permissions
 
