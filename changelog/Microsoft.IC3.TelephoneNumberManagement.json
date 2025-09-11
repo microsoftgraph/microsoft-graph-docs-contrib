@@ -105,6 +105,14 @@
           "ChangeType": "Addition",
           "Description": "Added the **numberAssignment** relationship to the [teamsAdministration](https://learn.microsoft.com/en-us/graph/api/resources/teamsadministration-teamsadminroot?view=graph-rest-beta) resource.",
           "Target": "teamsAdministration"
+        },
+        {
+          "Id": "07e967a6-f053-4c19-be0e-0a8373f072c4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "telephoneNumberManagementRoot",
+          "ChangeType": "Addition",
+          "Description": "Added the [telephoneNumberManagementRoot](https://learn.microsoft.com/en-us/graph/api/resources/teamsAdministration-telephoneNumberManagementRoot?view=graph-rest-beta) resource.",
+          "Target": "telephoneNumberManagementRoot"
         }        
       ],
       "Id": "07e967a6-f053-4c19-be0e-0a8373f072c4",
