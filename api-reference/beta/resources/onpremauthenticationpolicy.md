@@ -1,11 +1,11 @@
 ---
 title: "onPremAuthenticationPolicy resource type"
-description: "Represents the policy to specify the characteristics to support PTA and SSO for hybrid identity scenarios."
+description: "**TODO: Add Description**"
+author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.date: 09/10/2025
 ms.localizationpriority: medium
-author: "maheshwaria"
-ms.subservice: "entra-sign-in"
-doc_type: "resourcePageType"
-ms.date: 08/15/2025
+ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+doc_type: resourcePageType
 ---
 
 # onPremAuthenticationPolicy resource type
@@ -14,85 +14,60 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the policy to specify the characteristics to support Pass-through Authentication (PTA) and Seamless Single Sign-On (SSO) for hybrid identity scenarios.
+**TODO: Add Description**
 
-Inherits from [stsPolicy](stsPolicy.md).
+
+Inherits from [stsPolicy](../resources/stspolicy.md).
+
 
 ## Methods
-
-| Method                                                | Return Type                                                 | Description                                                                |
-| :---------------------------------------------------- | :---------------------------------------------------------- | :------------------------------------------------------------------------- |
-| [Create](../api/onpremauthenticationpolicy-create.md) | [onPremAuthenticationPolicy](onpremauthenticationpolicy.md) | Create an onPremAuthenticationPolicy object.                               |
-| [Get](../api/onpremauthenticationpolicy-get.md)       | [onPremAuthenticationPolicy](onpremauthenticationpolicy.md) | Read properties and relationships of an onPremAuthenticationPolicy object. |
-| [List](../api/onpremauthenticationpolicy-list.md)     | [onPremAuthenticationPolicy](onpremauthenticationpolicy.md) | Read properties and relationships of onPremAuthenticationPolicy objects.   |
-| [Update](../api/onpremauthenticationpolicy-update.md) | None                                                        | Update an onPremAuthenticationPolicy object.                               |
-| [Delete](../api/onpremauthenticationpolicy-delete.md) | None                                                        | Delete an onPremAuthenticationPolicy object.                               |
+|Method|Return type|Description|
+|:---|:---|:---|
+|[List](../api/policyroot-list-onpremauthenticationpolicies.md)|[onPremAuthenticationPolicy](../resources/onpremauthenticationpolicy.md) collection|Get a list of the onPremAuthenticationPolicy objects and their properties.|
+|[Create](../api/policyroot-post-onpremauthenticationpolicies.md)|[onPremAuthenticationPolicy](../resources/onpremauthenticationpolicy.md)|Create a new onPremAuthenticationPolicy object.|
+|[Get](../api/onpremauthenticationpolicy-get.md)|[onPremAuthenticationPolicy](../resources/onpremauthenticationpolicy.md)|Read the properties and relationships of [onPremAuthenticationPolicy](../resources/onpremauthenticationpolicy.md) object.|
+|[Update](../api/onpremauthenticationpolicy-update.md)|[onPremAuthenticationPolicy](../resources/onpremauthenticationpolicy.md)|Update the properties of an onPremAuthenticationPolicy object.|
+|[Delete](../api/policyroot-delete-onpremauthenticationpolicies.md)|None|Delete an onPremAuthenticationPolicy object.|
+|[List appliesTo](../api/onpremauthenticationpolicy-list-appliesto.md)|[directoryObject](../resources/directoryobject.md) collection|**TODO: Add a useful description.**|
+|[Add appliesTo](../api/onpremauthenticationpolicy-post-appliesto.md)|[directoryObject](../resources/directoryobject.md)|Add appliesTo by posting to the appliesTo collection.|
+|[Remove appliesTo](../api/onpremauthenticationpolicy-delete-appliesto.md)|None|Remove a [directoryObject](../resources/directoryobject.md) object.|
 
 ## Properties
-
-| Property              | Type              | Description                                                                                                                                                                     |
-| :-------------------- | :---------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| id                    | String            | Unique identifier for this policy. Read-only.                                                                                                                                   |
-| definition            | String collection | A string collection containing a JSON string that defines the rules and settings for this policy. See below for more details about the JSON schema for this property. Required. |
-| description           | String            | Description for this policy.                                                                                                                                                    |
-| displayName           | String            | Display name for this policy. Required.                                                                                                                                         |
-| isOrganizationDefault | Boolean           | Ignore this property. The onPremAuthentication policy can only be applied to service principals and can't be set globally for the organization.                                 |
-
-### Properties of an onPremAuthentication policy definition
-
-The properties form the JSON object that represents an onPremAuthentication policy. This JSON object must be **converted to a string with quotations escaped** to be inserted into the **definition** property. The following is an example in JSON format:
-
-<!-- {
-  "blockType": "ignored"
-}-->
-
-```json
-"definition": [
-  "{\"OnPremAuthenticationFlowPolicy\": {\"Version\": 2, \"PassthroughAuth\": {\"Enabled\": true, \"ScaleUnit\": \"Test\" }, \"DesktopSSO\": {\"Enabled\": true, \"Secrets\": [{\"Machine\": \"AZUREADSSOACC\", \"Domain\": \"onpremvalidation.onmicrosoft.com\", \"KeyIdentifiers\": [\"...\"]}]}}}"
-]
-```
-
-| Property        | Type    | Description                                                                                                                     |
-| :-------------- | :------ | :------------------------------------------------------------------------------------------------------------------------------ |
-| PassthroughAuth | String  | Enables users to authenticate directly against on-premises Active Directory without syncing passwords to the cloud.             |
-| DesktopSSO      | String  | Allows seamless single sign-on for domain-joined devices, enabling users to sign in automatically without entering credentials. |
-| Version         | Integer | The schema version of the policy configuration. Required.                                                                       |
+|Property|Type|Description|
+|:---|:---|:---|
+|definition|String collection|**TODO: Add Description** Inherited from [stsPolicy](../resources/stspolicy.md).|
+|deletedDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [directoryObject](../resources/directoryobject.md).|
+|description|String|**TODO: Add Description** Inherited from [policyBase](../resources/policybase.md).|
+|displayName|String|**TODO: Add Description** Inherited from [policyBase](../resources/policybase.md).|
+|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md). Inherits from [entity](../resources/entity.md)|
+|isOrganizationDefault|Boolean|**TODO: Add Description** Inherited from [stsPolicy](../resources/stspolicy.md).|
 
 ## Relationships
-
-| Relationship | Type                                             | Description                                                                                           |
-| :----------- | :----------------------------------------------- | :---------------------------------------------------------------------------------------------------- |
-| appliesTo    | [directoryObject](directoryobject.md) collection | The [directoryObject](directoryObject.md) collection that this policy has been applied to. Read-only. |
+|Relationship|Type|Description|
+|:---|:---|:---|
+|appliesTo|[directoryObject](../resources/directoryobject.md) collection|**TODO: Add Description** Inherited from [microsoft.graph.stsPolicy](../resources/stspolicy.md)|
 
 ## JSON representation
-
 The following JSON representation shows the resource type.
-
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.onPremAuthenticationPolicy",
-  "keyProperty": "id"
-}-->
-
-```json
+  "baseType": "microsoft.graph.stsPolicy",
+  "openType": false
+}
+-->
+``` json
 {
-  "definition": ["String"],
+  "@odata.type": "#microsoft.graph.onPremAuthenticationPolicy",
+  "id": "String (identifier)",
+  "deletedDateTime": "String (timestamp)",
   "description": "String",
   "displayName": "String",
-  "id": "String (identifier)",
-  "isOrganizationDefault": true
+  "definition": [
+    "String"
+  ],
+  "isOrganizationDefault": "Boolean"
 }
 ```
 
-<!-- uuid: 35c6eb79-08c2-43ce-b897-949d56d54c5e
-2025-08-15 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "onPremAuthenticationPolicy resource",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->

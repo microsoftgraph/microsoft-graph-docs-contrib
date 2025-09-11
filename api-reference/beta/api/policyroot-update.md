@@ -1,6 +1,6 @@
 ---
-title: "Get onPremAuthenticationPolicy"
-description: "Read the properties and relationships of onPremAuthenticationPolicy object."
+title: "Update policyRoot"
+description: "Update the properties of a policyRoot object."
 author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
 ms.date: 09/10/2025
 ms.localizationpriority: medium
@@ -8,13 +8,13 @@ ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](
 doc_type: apiPageType
 ---
 
-# Get onPremAuthenticationPolicy
+# Update policyRoot
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of [onPremAuthenticationPolicy](../resources/onpremauthenticationpolicy.md) object.
+Update the properties of a policyRoot object.
 
 ## Permissions
 
@@ -22,10 +22,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "onpremauthenticationpolicy-get-permissions"
+  "name": "policyroot-update-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/onpremauthenticationpolicy-get-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/policyroot-update-permissions.md)]
 
 ## HTTP request
 
@@ -34,26 +34,30 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /policies/onPremAuthenticationPolicies/{onPremAuthenticationPolicyId}
+PATCH /policies
 ```
-
-## Optional query parameters
-
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+|Content-Type|application/json. Required.|
 
 ## Request body
 
-Don't supply a request body for this method.
+[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
+
+
+**TODO: Remove properties that don't apply**
+|Property|Type|Description|
+|:---|:---|:---|
+
+
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an [onPremAuthenticationPolicy](../resources/onpremauthenticationpolicy.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [policyRoot](../resources/policyroot.md) object in the response body.
 
 ## Examples
 
@@ -62,11 +66,16 @@ If successful, this method returns a `200 OK` response code and an [onPremAuthen
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "get_onpremauthenticationpolicy"
+  "name": "update_policyroot"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/policies/onPremAuthenticationPolicies/{onPremAuthenticationPolicyId}
+PATCH https://graph.microsoft.com/beta/policies
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.policyRoot"
+}
 ```
 
 
@@ -76,8 +85,7 @@ The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.onPremAuthenticationPolicy"
+  "truncated": true
 }
 -->
 ``` http
@@ -85,17 +93,8 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.onPremAuthenticationPolicy",
-    "id": "2e68a8f2-50ce-b21d-d25d-c34b59675ee2",
-    "deletedDateTime": "String (timestamp)",
-    "description": "String",
-    "displayName": "String",
-    "definition": [
-      "String"
-    ],
-    "isOrganizationDefault": "Boolean"
-  }
+  "@odata.type": "#microsoft.graph.policyRoot",
+  "id": "3dfaad93-e456-c6cf-6109-3c8861cc5132"
 }
 ```
 

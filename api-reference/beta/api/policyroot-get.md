@@ -1,6 +1,6 @@
 ---
-title: "Get onPremAuthenticationPolicy"
-description: "Read the properties and relationships of onPremAuthenticationPolicy object."
+title: "Get policyRoot"
+description: "Read the properties and relationships of policyRoot object."
 author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
 ms.date: 09/10/2025
 ms.localizationpriority: medium
@@ -8,13 +8,13 @@ ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](
 doc_type: apiPageType
 ---
 
-# Get onPremAuthenticationPolicy
+# Get policyRoot
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of [onPremAuthenticationPolicy](../resources/onpremauthenticationpolicy.md) object.
+Read the properties and relationships of [policyRoot](../resources/policyroot.md) object.
 
 ## Permissions
 
@@ -22,10 +22,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "onpremauthenticationpolicy-get-permissions"
+  "name": "policyroot-get-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/onpremauthenticationpolicy-get-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/policyroot-get-permissions.md)]
 
 ## HTTP request
 
@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /policies/onPremAuthenticationPolicies/{onPremAuthenticationPolicyId}
+GET /policies
 ```
 
 ## Optional query parameters
@@ -53,7 +53,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an [onPremAuthenticationPolicy](../resources/onpremauthenticationpolicy.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [policyRoot](../resources/policyroot.md) object in the response body.
 
 ## Examples
 
@@ -62,11 +62,11 @@ If successful, this method returns a `200 OK` response code and an [onPremAuthen
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "get_onpremauthenticationpolicy"
+  "name": "get_policyroot"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/policies/onPremAuthenticationPolicies/{onPremAuthenticationPolicyId}
+GET https://graph.microsoft.com/beta/policies
 ```
 
 
@@ -77,7 +77,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.onPremAuthenticationPolicy"
+  "@odata.type": "microsoft.graph.policyRoot"
 }
 -->
 ``` http
@@ -86,15 +86,8 @@ Content-Type: application/json
 
 {
   "value": {
-    "@odata.type": "#microsoft.graph.onPremAuthenticationPolicy",
-    "id": "2e68a8f2-50ce-b21d-d25d-c34b59675ee2",
-    "deletedDateTime": "String (timestamp)",
-    "description": "String",
-    "displayName": "String",
-    "definition": [
-      "String"
-    ],
-    "isOrganizationDefault": "Boolean"
+    "@odata.type": "#microsoft.graph.policyRoot",
+    "id": "3dfaad93-e456-c6cf-6109-3c8861cc5132"
   }
 }
 ```

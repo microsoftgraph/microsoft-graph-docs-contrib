@@ -1,6 +1,6 @@
 ---
-title: "Get onPremAuthenticationPolicy"
-description: "Read the properties and relationships of onPremAuthenticationPolicy object."
+title: "Add appliesTo"
+description: "Add appliesTo by posting to the appliesTo collection."
 author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
 ms.date: 09/10/2025
 ms.localizationpriority: medium
@@ -8,13 +8,13 @@ ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](
 doc_type: apiPageType
 ---
 
-# Get onPremAuthenticationPolicy
+# Add appliesTo
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of [onPremAuthenticationPolicy](../resources/onpremauthenticationpolicy.md) object.
+Add appliesTo by posting to the appliesTo collection.
 
 ## Permissions
 
@@ -22,10 +22,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "onpremauthenticationpolicy-get-permissions"
+  "name": "onpremauthenticationpolicy-post-appliesto-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/onpremauthenticationpolicy-get-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/onpremauthenticationpolicy-post-appliesto-permissions.md)]
 
 ## HTTP request
 
@@ -34,26 +34,32 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /policies/onPremAuthenticationPolicies/{onPremAuthenticationPolicyId}
+POST /policies/onPremAuthenticationPolicies/{onPremAuthenticationPolicyId}/appliesTo/$ref
 ```
-
-## Optional query parameters
-
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+|Content-Type|application/json. Required.|
 
 ## Request body
 
-Don't supply a request body for this method.
+In the request body, supply a JSON representation of the [directoryObject](../resources/directoryobject.md) object.
+
+You can specify the following properties when creating a **directoryObject**.
+
+**TODO: Remove properties that don't apply**
+|Property|Type|Description|
+|:---|:---|:---|
+|deletedDateTime|DateTimeOffset|**TODO: Add Description** Optional.|
+
+
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an [onPremAuthenticationPolicy](../resources/onpremauthenticationpolicy.md) object in the response body.
+If successful, this method returns a `204 No Content` response code and a [directoryObject](../resources/directoryobject.md) object in the response body.
 
 ## Examples
 
@@ -62,11 +68,17 @@ If successful, this method returns a `200 OK` response code and an [onPremAuthen
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "get_onpremauthenticationpolicy"
+  "name": "create_directoryobject_from_directoryobjects"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/policies/onPremAuthenticationPolicies/{onPremAuthenticationPolicyId}
+POST https://graph.microsoft.com/beta/policies/onPremAuthenticationPolicies/{onPremAuthenticationPolicyId}/appliesTo/$ref
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.directoryObject",
+  "deletedDateTime": "String (timestamp)"
+}
 ```
 
 
@@ -77,25 +89,17 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.onPremAuthenticationPolicy"
+  "@odata.type": "microsoft.graph.directoryObject"
 }
 -->
 ``` http
-HTTP/1.1 200 OK
+HTTP/1.1 204 No Content
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.onPremAuthenticationPolicy",
-    "id": "2e68a8f2-50ce-b21d-d25d-c34b59675ee2",
-    "deletedDateTime": "String (timestamp)",
-    "description": "String",
-    "displayName": "String",
-    "definition": [
-      "String"
-    ],
-    "isOrganizationDefault": "Boolean"
-  }
+  "@odata.type": "#microsoft.graph.directoryObject",
+  "id": "a6c034b8-621b-dee3-6abb-52cbce801fe9",
+  "deletedDateTime": "String (timestamp)"
 }
 ```
 
