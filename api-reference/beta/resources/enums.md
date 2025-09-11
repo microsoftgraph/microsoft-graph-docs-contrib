@@ -1607,6 +1607,22 @@ Namespace: microsoft.graph
 | appPassword |
 | unknownFutureValue |
 | externalAuthMethod |
+| hardwareOneTimePasscode |
+| windowsHelloForBusiness |
+| microsoftAuthenticatorPasswordless |
+| temporaryAccessPass |
+| macOsSecureEnclaveKey |
+| passKeyDeviceBound |
+| passKeyDeviceBoundAuthenticator |
+| passKeyDeviceBoundWindowsHello |
+| softwareOneTimePasscode |
+| microsoftAuthenticatorPush |
+| mobilePhone |
+| sms |
+| alternateMobilePhone |
+| fido2SecurityKey |
+| oneTimePasscode |
+| passKeySynced |
 
 ### authenticationAppAdminConfiguration values
 

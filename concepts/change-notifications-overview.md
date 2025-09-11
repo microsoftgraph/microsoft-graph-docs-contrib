@@ -87,11 +87,9 @@ The following code samples are available on GitHub.
 
 - [Rich notifications (notifications with resource data)](./change-notifications-with-resource-data.md)
 - [Lifecycle notifications](./change-notifications-lifecycle-events.md)
-- Tutorials
-    - [Change notifications for cloud printing](./universal-print-webhook-notifications.md)
-    - [Change notifications for Outlook resources](./outlook-change-notifications-overview.md)
-    - [Change notifications for Microsoft Teams resources](./teams-change-notification-in-microsoft-teams-overview.md)
-    - [Change notifications for Copilot AI interactions](/microsoft-365-copilot/extensibility/api-reference/aiinteraction-changenotifications-overview)
+- [Change notifications for cloud printing](./universal-print-webhook-notifications.md)
+- [Change notifications for Outlook resources](./outlook-change-notifications-overview.md)
+- [Change notifications for Microsoft Teams resources](./teams-change-notification-in-microsoft-teams-overview.md)
 
 
 [contact]: /graph/api/resources/contact
