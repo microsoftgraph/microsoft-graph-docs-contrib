@@ -15,9 +15,9 @@ Change notifications enable you to subscribe to changes to transcripts and recor
 This article describes scenarios for the **transcript** and **recording** resources. For more information, see [Change notifications for Microsoft Teams resources](teams-change-notification-in-microsoft-teams-overview.md).
 
 > [!NOTE]
-> If you request a subscription **expirationDateTime** that is more than 1 hour in the future, you must subscribe to lifecycle notifications by including a **lifecycleNotificationUrl** property in your subscription request. Otherwise, your subscription request will fail with the following error message: *lifecycleNotificationUrl is required for subscription creation on this resource when the expirationDateTime value exceeds 1 hour*.
+> If you request a subscription **expirationDateTime** that is more than 1 hour in the future, you must subscribe to lifecycle notifications by including a **lifecycleNotificationUrl** property in your subscription request. Otherwise, your subscription request fails with the following error message: *lifecycleNotificationUrl is required for subscription creation on this resource when the expirationDateTime value exceeds 1 hour*.
 
-## Subscribe to transcripts available at the tenant-level
+## Subscribe to transcripts available at the tenant level
 
 This section describes the methods to subscribe to transcripts available at the tenant level for both online meetings and ad hoc calls.
 
@@ -366,14 +366,18 @@ Content-Type: application/json
 }
 ```
 
-## Subscribe to recordings available for online meetings at the tenant level
+## Subscribe to recordings available at tenant level
+
+This section describes the methods to subscribe to recordings available at the tenant level for both online meetings and ad hoc calls.
+
+### For online meetings
 
 To get change notifications for any recording available for any online meeting in a tenant, subscribe to `communications/onlineMeetings/getAllRecordings`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification. This subscription supports scheduled [onlineMeetings](/graph/api/resources/onlinemeeting).
 
 > [!NOTE]
-> This subscription does not support private channel meetings.
+> This subscription doesn't support private channel meetings.
 
-### Permissions
+#### Permissions
 
 One of the following permissions is required to subscribe to `communications/onlineMeetings/getAllRecordings`. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -383,7 +387,7 @@ One of the following permissions is required to subscribe to `communications/onl
 | Delegated (personal Microsoft account) | Not supported.                              |
 | Application                            | OnlineMeetingRecording.Read.All             |
 
-### Example
+#### Example
 
 The following example shows how to subscribe to recordings available at the tenant level for online meetings.
 
@@ -404,11 +408,11 @@ Content-Type: application/json
 }
 ```
 
-## Subscribe to recordings available for ad hoc calls at the tenant level
+### For ad hoc calls
 
 To get change notifications for any recording available for any ad hoc call in a tenant, subscribe to `communications/adhocCalls/getAllRecordings`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification. This subscription supports [adhocCalls](/graph/api/resources/adhoccall).
 
-### Permissions
+#### Permissions
 
 One of the following permissions is required to subscribe to `communications/adhocCalls/getAllRecordings`. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -418,7 +422,7 @@ One of the following permissions is required to subscribe to `communications/adh
 | Delegated (personal Microsoft account) | Not supported.                              |
 | Application                            | CallRecordings.Read.All                     |
 
-### Example
+#### Example
 
 The following example shows how to subscribe to recordings available at the tenant level.
 
@@ -533,7 +537,7 @@ Content-Type: application/json
 }
 ```
 
-## Subscribe to recordings available for online meetings at the user level
+## Subscribe to recordings available for online meetings organized by a user
 
 To get change notifications for any recording available for any online meeting organized by a specific user, subscribe to `users/{userId}/onlineMeetings/getAllRecordings`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification. This subscription supports scheduled [onlineMeetings](/graph/api/resources/onlinemeeting).
 
@@ -550,7 +554,7 @@ One of the following permissions is required to subscribe to `users/{userId}/onl
 | Delegated (personal Microsoft account) | Not supported.                              |
 | Application                            | OnlineMeetingRecording.Read.All             |
 
-## Subscribe to recordings available for ad hoc calls at the user level
+## Subscribe to recordings available for ad hoc call where a specific user initiates transcription
 
 To get change notifications for any recording available for any ad hoc call where a specific user initiates transcription, subscribe to `users/{userId}/adhocCalls/getAllRecordings`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification. This subscription supports [ad hoc calls](/graph/api/resources/adhoccall?view=graph-rest-beta&preserve-view=true).
 
@@ -649,12 +653,12 @@ Content-Type: application/json
 
 Depending on your subscription, you can get the notification with or without resource data. Subscribing with resource data allows you to get the [transcript](/graph/api/resources/calltranscript) or [recording](/graph/api/resources/callrecording) metadata along with the notification.
 
-### Notifications with resource data
+### Notifications with resource data for transcripts
 
 For notifications with resource data, the payload looks like the following. This payload is for a transcript available for an online meeting. For ad hoc calls, the **meetingId** is `null`.
 
 > [!NOTE]
-> The payload object shown here is shortened for readability.
+> The payload object shown here's shortened for readability.
 
 #### For online meetings
 
@@ -720,12 +724,12 @@ For notifications with resource data, the payload looks like the following. This
 }
 ```
 
-### Decrypted notifications with resource data
+### Decrypted notifications for transcripts with resource data
 
 The decrypted notification payload looks like the following. The payload conforms to the [transcript](/graph/api/resources/calltranscript) schema. The payload is similar to the ones returned by GET operations.
 
 > [!NOTE]
-> The payload object shown here is shortened for readability.
+> The payload object shown here's shortened for readability.
 
 #### For online meetings
 
@@ -777,10 +781,12 @@ The decrypted notification payload looks like the following. The payload conform
 }
 ```
 
+### Notifications with resource data for recordings 
+
 For notifications with resource data, the payload looks like the following.
 
 > [!NOTE]
-> The payload object shown here is shortened for readability.
+> The payload object shown here's shortened for readability.
 
 #### For online meetings
 
@@ -837,10 +843,12 @@ For notifications with resource data, the payload looks like the following.
 }
 ```
 
+### Decrypted notifications for recordings with resource data
+
 The decrypted notification payload looks like the following. The payload conforms to the [recording](/graph/api/resources/callrecording) schema. The payload is similar to the ones returned by GET operations.
 
 > [!NOTE]
-> The payload object shown here is shortened for readability.
+> The payload object shown here's shortened for readability.
 
 <!-- { "blockType": "ignored" } -->
 ```json
@@ -873,9 +881,9 @@ Notifications without resource data give you the resource ID to make GET calls t
 For notifications without resource data, the payload looks like the following.
 
 > [!NOTE]
-> The payload object shown here is shortened for readability.
+> The payload object shown here's shortened for readability.
 
-#### For online meetings
+#### For online meeting transcripts
 
 <!-- { "blockType": "ignored" } -->
 ```json
@@ -894,21 +902,23 @@ For notifications without resource data, the payload looks like the following.
 }
 ```
 
-For notifications without resource data, the payload looks like the following. This payload is for a recording available for an online meeting. For ad hoc calls, the **meetingId** is `null`.
+#### For ad hoc call transcripts 
+
+For notifications without resource data, the payload looks like the following. This payload is for a transcript available for an ad hoc call. For ad hoc calls, the **meetingId** is `null`.
 
 <!-- { "blockType": "ignored" } -->
 ```json
 {
-  "subscriptionId": "0cc28c98-4d2a-4a34-b850-815d7e6486ea",
+  "subscriptionId": "871b5d27-6f77-4100-b78d-bc443873324e",
   "changeType": "created",
-  "tenantId": "<<--TenantForWhichNotificationWasSent-->>",
+  "tenantId": "2432b57b-0abd-43db-aa7b-16eadd115d34",
   "clientState": "<<--SpecifiedClientState-->>",
-  "subscriptionExpirationDateTime": "2023-09-17T08:29:11.3173971+00:00",
-  "resource": "users/{user-id}/adhoccalls/1c9ddbc9-82be-46b6-8edd-bf833fe33a03/transcripts('MSM...')",
+  "subscriptionExpirationDateTime": "2025-07-24T18:04:24.3511596+00:00",
+  "resource": "users/user-id/adhocCalls/1c9ddbc9-82be-46b6-8edd-bf833fe33a03/transcripts/MyMjMTk6ODA4MTExMTNiYWQzNDNhYzkzNGI2YTVmYzc1ZThmZGJAdGhyZWFkLnYyIyM1MTYwNzQ4MC1kM2FjLTRlZTQtOTQ3NS1lYjM2NTk5MjM4ZDYtMTc1MzM0NTA2OC1UcmFuc2NyaXB0VjI=",
   "resourceData": {
-    "id": "MSM...",
+    "id": "MyM...",
     "@odata.type": "#Microsoft.Graph.callTranscript",
-    "@odata.id": "users/{user-id}/adhoccalls/1c9ddbc9-82be-46b6-8edd-bf833fe33a03/transcripts('MSM...')"
+    "@odata.id": "users/{user-id}/adhoccalls/1c9ddbc9-82be-46b6-8edd-bf833fe33a03/transcripts('MyM...')"
   }
 }
 ```
@@ -916,9 +926,9 @@ For notifications without resource data, the payload looks like the following. T
 For notifications without resource data, the payload looks like the following.
 
 > [!NOTE]
-> The payload object shown here is shortened for readability.
+> The payload object shown here's shortened for readability.
 
-#### For online meetings
+#### For online meeting recordings
 
 <!-- { "blockType": "ignored" } -->
 ```json
@@ -937,21 +947,21 @@ For notifications without resource data, the payload looks like the following.
 }
 ```
 
-#### For ad hoc calls
+#### For ad hoc call recordings
 
 <!-- { "blockType": "ignored" } -->
 ```json
 {
-  "subscriptionId": "6aa5ced2-0a5a-4643-9274-3109c731d986",
+"subscriptionId": "871b5d27-6f77-4100-b78d-bc443873324e",
   "changeType": "created",
-  "tenantId": "<<--TenantForWhichNotificationWasSent-->>",
+  "tenantId": "2432b57b-0abd-43db-aa7b-16eadd115d34",
   "clientState": "<<--SpecifiedClientState-->>",
-  "subscriptionExpirationDateTime": "2023-09-17T08:27:05.0241757+00:00",
-  "resource": "users/{user-id}/adhoccalls/1c9ddbc9-82be-46b6-8edd-bf833fe33a03/recordings('VjI...')",
+  "subscriptionExpirationDateTime": "2025-07-24T18:04:24.3511596+00:00",
+  "resource": "users/{user-id}/adhoccalls/adhocCalls/1c9ddbc9-82be-46b6-8edd-bf833fe33a03/recordings('MyM...')",
   "resourceData": {
     "id": "VjI...",
     "@odata.type": "#Microsoft.Graph.callRecording",
-    "@odata.id": "users/{user-id}/adhoccalls/1c9ddbc9-82be-46b6-8edd-bf833fe33a03/recordings('VjI...')"
+    "@odata.id": "users/{user-id}/adhoccalls/1c9ddbc9-82be-46b6-8edd-bf833fe33a03/recordings('MyM...')"
   }
 }
 ```
