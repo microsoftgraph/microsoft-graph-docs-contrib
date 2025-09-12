@@ -294,6 +294,14 @@ items:
       href: ../../resources/building.md
     - name: Ingest map file
       href: ../../api/building-ingestmapfile.md
+  - name: Check-in claim (preview)
+    items:
+    - name: Check-in claim (preview)
+      href: ../../resources/checkinclaim.md
+    - name: Create
+      href: ../../api/place-post-checkins.md
+    - name: Get
+      href: ../../api/checkinclaim-get.md
   - name: Desk
     href: ../../resources/desk.md
   - name: Floor
