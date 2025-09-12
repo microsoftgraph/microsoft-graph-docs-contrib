@@ -30,7 +30,7 @@ Inherits from [policyDeletableItem](../resources/policydeletableitem.md).
 |[Delete](../api/conditionalaccesspolicy-delete.md)|None|Delete a conditionalAccessPolicy object.|
 |[Restore](../api/conditionalaccesspolicy-restore.md)|[conditionalAccessPolicy](../resources/conditionalaccesspolicy.md)|Restore a conditionalAccessPolicy object.|
 | [List deleted policies](../api/policydeletableitem-list.md) | [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md) collection | List all deleted partner-specific configuration policies. |
-| [Get deleted policy](../api/policydeletableitem-get.md) | [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md) | Get a single deleted conditional acces policy. |
+| [Get deleted policy](../api/policydeletableitem-get.md) | [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md) | Get a single deleted conditional access policy. |
 | [Permanently delete a soft deleted policy](../api/policydeletableitem-delete.md) | None | Permanently delete a soft deleted conditional access policy. |
 
 ## Properties

@@ -69,7 +69,7 @@ Permanently delete a  **namedLocation** object:
 }
 -->
 ``` http
-DELETE identity/conditionalAccess/deletedItems/namedLocations/{id}
+DELETE /identity/conditionalAccess/deletedItems/namedLocations/{id}
 ```
 
 ## Request headers

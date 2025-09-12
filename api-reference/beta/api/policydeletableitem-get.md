@@ -67,7 +67,7 @@ Get a deleted **namedLocation** object:
 }
 -->
 ``` http
-GET identity/conditionalAccess/deletedItems/namedLocations/{id}
+GET /identity/conditionalAccess/deletedItems/namedLocations/{id}
 ```
 
 ## Optional query parameters
