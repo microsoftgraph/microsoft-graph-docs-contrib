@@ -80,28 +80,7 @@ One of the following permissions is required to subscribe to `communications/adh
 
 To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-#### Example 1
-
-The following example shows how to subscribe to **online meeting** transcripts available at the tenant level.
-
-<!-- { "blockType": "ignored" } -->
-```http
-POST https://graph.microsoft.com/v1.0/subscriptions
-Content-Type: application/json
-
-{
-  "changeType": "created",
-  "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
-  "resource": "communications/onlineMeetings/getAllTranscripts",
-  "includeResourceData": true,
-  "encryptionCertificate": "{base64encodedCertificate}",
-  "encryptionCertificateId": "{customId}",
-  "expirationDateTime": "2023-03-20T11:00:00.0000000Z",
-  "clientState": "{secretClientState}"
-}
-```
-
-#### Example 2
+#### Example
 
 The following example shows how to subscribe to **ad hoc call** transcripts available at the tenant level.
 
@@ -329,25 +308,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: Subscribe to transcripts available for any ad hoc call where a specific Teams app is installed using classic permissions
-
-<!-- { "blockType": "ignored" } -->
-```http
-POST https://graph.microsoft.com/beta/subscriptions
-Content-Type: application/json
-{
-  "changeType": "created",
-  "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
-  "resource": "appCatalogs/teamsApps/{teams-app-id}/installedToChats/getAllTranscripts",
-  "includeResourceData": true,
-  "encryptionCertificate": "{base64encodedCertificate}",
-  "encryptionCertificateId": "{customId}",
-  "expirationDateTime": "2023-03-20T11:00:00.0000000Z",
-  "clientState": "{secretClientState}"
-}
-```
-
-### Example 3: Subscribe to transcripts available for any online meeting where a specific Teams app is installed using only resource-specific consent permissions
+### Example 2: Subscribe to transcripts available for any online meeting where a specific Teams app is installed using only resource-specific consent permissions
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -829,16 +790,25 @@ For notifications with resource data, the payload looks like the following.
     {
       "subscriptionId": "871b5d27-6f77-4100-b78d-bc443873324e",
       "changeType": "created",
-      "tenantId": "2432b57b-0abd-43db-aa7b-16eadd115d34",
-      "clientState": "ClientSecret",
+      "clientState": "<<--SpecifiedClientState-->>",
       "subscriptionExpirationDateTime": "2025-07-24T18:04:24.3511596+00:00",
-      "resource": "users/user-id/adhocCalls/1c9ddbc9-82be-46b6-8edd-bf833fe33a03/transcripts/MyMjMTk6ODA4MTExMTNiYWQzNDNhYzkzNGI2YTVmYzc1ZThmZGJAdGhyZWFkLnYyIyM1MTYwNzQ4MC1kM2FjLTRlZTQtOTQ3NS1lYjM2NTk5MjM4ZDYtMTc1MzM0NTA2OC1UcmFuc2NyaXB0VjI=",
+      "resource": "users/{user-id}/adhoccalls('1c9ddbc9-82be-46b6-8edd-bf833fe33a03')/recordings('MyMjMTk6ODA4MTExMTNiYWQzNDNhYzkzNGI2YTVmYzc1ZThmZGJAdGhyZWFkLnYyIyM1MTYwNzQ4MC1kM2FjLTRlZTQtOTQ3NS1lYjM2NTk5MjM4ZDYtMTc1MzM0NTA2OC1UcmFuc2NyaXB0VjI=')",
       "resourceData": {
-        "id": "MyMjMTk6ODA4MTExMTNiYWQzNDNhYzkzNGI2YTVmYzc1ZThmZGJAdGhyZWFkLnYyIyM1MTYwNzQ4MC1kM2FjLTRlZTQtOTQ3NS1lYjM2NTk5MjM4ZDYtMTc1MzM0NTA2OC1UcmFuc2NyaXB0VjI=",
-        "@odata.type": "#Microsoft.Graph.callTranscript",
-        "@odata.id": "users/user-id/adhocCalls/1c9ddbc9-82be-46b6-8edd-bf833fe33a03/transcripts/MyMjMTk6ODA4MTExMTNiYWQzNDNhYzkzNGI2YTVmYzc1ZThmZGJAdGhyZWFkLnYyIyM1MTYwNzQ4MC1kM2FjLTRlZTQtOTQ3NS1lYjM2NTk5MjM4ZDYtMTc1MzM0NTA2OC1UcmFuc2NyaXB0VjI="
-      }
+        "id": "MyM...",
+        "@odata.type": "#Microsoft.Graph.callRecording",
+        "@odata.id": "users/{user-id}/adhoccalls('1c9ddbc9-82be-46b6-8edd-bf833fe33a03')/recordings(MyMjMTk6ODA4MTExMTNiYWQzNDNhYzkzNGI2YTVmYzc1ZThmZGJAdGhyZWFkLnYyIyM1MTYwNzQ4MC1kM2FjLTRlZTQtOTQ3NS1lYjM2NTk5MjM4ZDYtMTc1MzM0NTA2OC1UcmFuc2NyaXB0VjI=)",
+      },
+      "encryptedContent": {
+        "data": "<<--EncryptedContent-->>",
+        "dataKey": "<<--EnryptedDataKeyUsedForEncryptingContent-->>",
+        "encryptionCertificateId": "<<--IdOfTheCertificateUsedForEncryptingDataKey-->>",
+        "encryptionCertificateThumbprint": "<<--ThumbprintOfTheCertificateUsedForEncryptingDataKey-->>"
+      },
+      "tenantId": "<<--TenantForWhichNotificationWasSent-->>"
     }
+  ],
+  "validationTokens": [
+    "<<--ValidationTokens-->>"
   ]
 }
 ```
@@ -914,7 +884,7 @@ For notifications without resource data, the payload looks like the following. T
   "tenantId": "2432b57b-0abd-43db-aa7b-16eadd115d34",
   "clientState": "<<--SpecifiedClientState-->>",
   "subscriptionExpirationDateTime": "2025-07-24T18:04:24.3511596+00:00",
-  "resource": "users/user-id/adhocCalls/1c9ddbc9-82be-46b6-8edd-bf833fe33a03/transcripts/MyMjMTk6ODA4MTExMTNiYWQzNDNhYzkzNGI2YTVmYzc1ZThmZGJAdGhyZWFkLnYyIyM1MTYwNzQ4MC1kM2FjLTRlZTQtOTQ3NS1lYjM2NTk5MjM4ZDYtMTc1MzM0NTA2OC1UcmFuc2NyaXB0VjI=",
+  "resource": "users/{user-id}/adhocCalls/1c9ddbc9-82be-46b6-8edd-bf833fe33a03/transcripts/MyMjMTk6ODA4MTExMTNiYWQzNDNhYzkzNGI2YTVmYzc1ZThmZGJAdGhyZWFkLnYyIyM1MTYwNzQ4MC1kM2FjLTRlZTQtOTQ3NS1lYjM2NTk5MjM4ZDYtMTc1MzM0NTA2OC1UcmFuc2NyaXB0VjI=",
   "resourceData": {
     "id": "MyM...",
     "@odata.type": "#Microsoft.Graph.callTranscript",
@@ -959,7 +929,7 @@ For notifications without resource data, the payload looks like the following.
   "subscriptionExpirationDateTime": "2025-07-24T18:04:24.3511596+00:00",
   "resource": "users/{user-id}/adhoccalls/adhocCalls/1c9ddbc9-82be-46b6-8edd-bf833fe33a03/recordings('MyM...')",
   "resourceData": {
-    "id": "VjI...",
+    "id": "MyM...",
     "@odata.type": "#Microsoft.Graph.callRecording",
     "@odata.id": "users/{user-id}/adhoccalls/1c9ddbc9-82be-46b6-8edd-bf833fe33a03/recordings('MyM...')"
   }
