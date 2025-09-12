@@ -3,6 +3,40 @@
     {
       "ChangeList": [
         {
+          "Id": "a89c4566-5da1-4e24-afb9-58891761ccad",
+          "ApiChange": "Resource",
+          "ChangedApiName": "frontlineCloudPcDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the [frontlineCloudPcDetail](https://learn.microsoft.com/en-us/graph/api/resources/frontlinecloudpcdetail?view=graph-rest-beta) resource.",
+          "Target": "frontlineCloudPcDetail"
+        },
+        {
+          "Id": "a89c4566-5da1-4e24-afb9-58891761ccad",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cloudPC",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the **frontlineCloudPcAvailability** property of the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc) resource.",
+          "Target": "cloudPC"
+        },
+        {
+          "Id": "a89c4566-5da1-4e24-afb9-58891761ccad",
+          "ApiChange": "Method",
+          "ChangedApiName": "retrieveFrontlineCloudPcDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the [retrieveFrontlineCloudPcDetail](https://learn.microsoft.com/en-us/graph/api/cloudpc-retrievefrontlinecloudpcdetail?view=graph-rest-beta) method to the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource.",
+          "Target": "cloudPC"
+        }
+      ],
+      "Id": "a89c4566-5da1-4e24-afb9-58891761ccad",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-09-12T08:21:53.8509284Z",
+      "WorkloadArea": "Devices and apps",
+      "SubArea": "Cloud PC"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "b4e9f351-2a5c-4d3c-a7d3-f598b69ff78d",
           "ApiChange": "Enumeration",
           "ChangedApiName": "cloudPcGeographicLocationType",
