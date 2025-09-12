@@ -1182,14 +1182,6 @@
         },
         {
           "Id": "4688a713-d9d5-4db3-9894-aafdcbe17694",
-          "ApiChange": "Member",
-          "ChangedApiName": "activatedWithScope",
-          "ChangeType": "Deletion",
-          "Description": "Removed the `activatedWithScope` member from the **workflowExecutionType** enumeration.",
-          "Target": "workflowExecutionType"
-        },
-        {
-          "Id": "4688a713-d9d5-4db3-9894-aafdcbe17694",
           "ApiChange": "Property",
           "ChangedApiName": "activatedOnScope",
           "ChangeType": "Addition",
