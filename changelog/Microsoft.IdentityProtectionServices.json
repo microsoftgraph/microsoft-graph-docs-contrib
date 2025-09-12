@@ -1731,32 +1731,6 @@
       "CreatedDateTime": "2025-05-29T19:58:07.5075874Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Identity and sign-in"
-    },
-    {
-      "ChangeList": [
-        {
-          "Id": "8c5c9d2d-ec10-494c-b4b6-79502648c6ad",
-          "ApiChange": "Resource",
-          "ChangedApiName": "policyDeletableItem",
-          "ChangeType": "Addition",
-          "Description": "Added the [policyDeletableItem](https://learn.microsoft.com/en-us/graph/api/resources/policyDeletableItem?view=graph-rest-beta) resource.",
-          "Target": "policyDeletableItem"
-        },
-        {
-          "Id": "8c5c9d2d-ec10-494c-b4b6-79502648c6ad",
-          "ApiChange": "Property",
-          "ChangedApiName": "deletedDateTime",
-          "ChangeType": "Addition",
-          "Description": "Added the **deletedDateTime** property to the [policyDeletableItem](https://learn.microsoft.com/en-us/graph/api/resources/policyDeletableItem?view=graph-rest-beta) resource.",
-          "Target": "policyDeletableItem"
-        }
-      ],
-      "Id": "8c5c9d2d-ec10-494c-b4b6-79502648c6ad",
-      "Cloud": "Prod",
-      "Version": "beta",
-      "CreatedDateTime": "2025-08-11T22:33:36.2300967Z",
-      "WorkloadArea": "Identity and access",
-      "SubArea": "Identity and sign-in"
     }
   ]
 }
