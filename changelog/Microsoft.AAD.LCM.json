@@ -1190,6 +1190,22 @@
         },
         {
           "Id": "4688a713-d9d5-4db3-9894-aafdcbe17694",
+          "ApiChange": "Property",
+          "ChangedApiName": "activatedWithScope",
+          "ChangeType": "Addition",
+          "Description": "Added the **activatedWithScope** property to the [run](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-run?view=graph-rest-beta) resource.",
+          "Target": "run"
+        },
+        {
+          "Id": "4688a713-d9d5-4db3-9894-aafdcbe17694",
+          "ApiChange": "Property",
+          "ChangedApiName": "activatedWithScope",
+          "ChangeType": "Addition",
+          "Description": "Added the **activatedWithScope** property to the [userProcessingResult](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-userProcessingResult?view=graph-rest-beta) resource.",
+          "Target": "userProcessingResult"
+        },
+        {
+          "Id": "4688a713-d9d5-4db3-9894-aafdcbe17694",
           "ApiChange": "Relationship",
           "ChangedApiName": "reprocessedRuns",
           "ChangeType": "Addition",
