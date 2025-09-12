@@ -302,13 +302,74 @@ The following example shows the response.
 ```http
   HTTP/1.1 200 OK 
 {
-    "@odata.nextLink": "https://graph.microsoft.com/beta/identity/conditionalAccess/deletedItems/policies?$skiptoken=RFNwdAIAAQAAAA86MjExNTIwQFRDUy5jb20pVXNlcl84MDhmMDYzYy04MTk4LTQ4N2UtOTlkNC1hM2FmNjg0NjRjNzW5AAAAAAAAAAAAAA",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/deletedItems/policies",
+    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET identity/conditionalAccess/deletedItems/policies?$select=conditions,createdDateTime",
     "value": [
-      {
-        "id": "4fa582af-f900-495c-9772-ccf34d5a95fc",
-        "deletedDateTime": "2024-08-15T04:59:43.250386Z",
-        ... // Rest of the properties defined for the microsoft.graph.conditionalAccessPolicy entity
-      }
+        {
+            "id": "1a71ea59-9583-4f16-9de4-47ecb42adfc6",
+            "templateId": null,
+            "displayName": "Demo",
+            "createdDateTime": "2024-06-26T22:13:41.3634477Z",
+            "modifiedDateTime": "2025-01-22T17:30:09.4040798Z",
+            "state": "disabled",
+            "deletedDateTime": "2025-09-12T17:01:05Z",
+            "partialEnablementStrategy": null,
+            "sessionControls": null,
+            "conditions": {
+                "userRiskLevels": [],
+                "signInRiskLevels": [],
+                "clientAppTypes": [
+                    "all"
+                ],
+                "platforms": null,
+                "times": null,
+                "deviceStates": null,
+                "devices": null,
+                "applications": {
+                    "includeApplications": [
+                        "None"
+                    ],
+                    "excludeApplications": [],
+                    "includeUserActions": [],
+                    "includeAuthenticationContextClassReferences": [],
+                    "applicationFilter": null
+                },
+                "users": {
+                    "includeUsers": [
+                        "None"
+                    ],
+                    "excludeUsers": [],
+                    "includeGroups": [],
+                    "excludeGroups": [],
+                    "includeRoles": [],
+                    "excludeRoles": [],
+                    "includeGuestsOrExternalUsers": null,
+                    "excludeGuestsOrExternalUsers": null
+                },
+                "locations": {
+                    "includeLocations": [
+                        "41f20046-7b5b-4721-b049-eccd63d614ef"
+                    ],
+                    "excludeLocations": []
+                },
+                "clientApplications": {
+                    "includeServicePrincipals": [
+                        "ServicePrincipalsInMyTenant"
+                    ],
+                    "excludeServicePrincipals": []
+                }
+            },
+            "grantControls": {
+                "operator": "OR",
+                "builtInControls": [
+                    "block"
+                ],
+                "customAuthenticationFactors": [],
+                "termsOfUse": [],
+                "authenticationStrength@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/deletedItems/policies('1a71ea59-9583-4f16-9de4-47ecb42adfc6')/grantControls/authenticationStrength/$entity",
+                "authenticationStrength": null
+            }
+        }
     ]
 }
 ```
@@ -341,13 +402,37 @@ The following example shows the response.
 ```http
   HTTP/1.1 200 OK 
 {
-    "@odata.nextLink": "https://graph.microsoft.com/beta/identity/conditionalAccess/deletedItems/namedLocations?$skiptoken=RFNwdAIAAQAAAA86MjExNTIwQFRDUy5jb20pVXNlcl84MDhmMDYzYy04MTk4LTQ4N2UtOTlkNC1hM2FmNjg0NjRjNzW5AAAAAAAAAAAAAA",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/deletedItems/namedLocations",
+    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET identity/conditionalAccess/deletedItems/namedLocations?$select=createdDateTime,displayName",
     "value": [
-      {
-        "id": "b5b69bc9-3e36-4fa0-bc7f-f0e5fd3aebf1",
-        "deletedDateTime": "2024-08-15T04:59:43.250386Z",
-        ... // Rest of the properties defined for the microsoft.graph.namedLocation entity
-      }
+        {
+            "@odata.type": "#microsoft.graph.countryNamedLocation",
+            "id": "1a4c0633-332f-4691-a27a-fd8334938a62",
+            "displayName": "Calvin Test USA",
+            "modifiedDateTime": "2025-09-05T22:12:01.4444669Z",
+            "createdDateTime": "2025-09-05T22:12:01.4444669Z",
+            "deletedDateTime": "2025-09-08T16:03:43Z",
+            "countriesAndRegions": [
+                "US"
+            ],
+            "includeUnknownCountriesAndRegions": false,
+            "countryLookupMethod": "clientIpAddress"
+        },
+        {
+            "@odata.type": "#microsoft.graph.ipNamedLocation",
+            "id": "003fe866-1f11-4356-8ddc-22e52f491cc5",
+            "displayName": "Pallav IP Test",
+            "modifiedDateTime": "2025-09-10T15:36:17.992593Z",
+            "createdDateTime": "2025-09-10T15:35:45.6440841Z",
+            "deletedDateTime": "2025-09-12T16:56:35Z",
+            "isTrusted": false,
+            "ipRanges": [
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "127.30.27.128/30"
+                }
+            ]
+        }
     ]
 }
 ```
