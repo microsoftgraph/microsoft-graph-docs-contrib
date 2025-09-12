@@ -113,7 +113,7 @@
           "Target": "conditionalAccessPolicy"
         },
         {
-          "Id": "676b29b0-571b-418f-885b-90d934345817",
+          "Id": "e2a1c7b2-8f4a-4b7e-9c2d-1a2b3c4d5e6f",
           "ApiChange": "Method",
           "ChangedApiName": "restore",
           "ChangeType": "Addition",
