@@ -1524,12 +1524,6 @@
                 "onFraudProtectionLoadStartListener"
               ]
             },
-              {
-                "name": "Fraud protection providers",
-                "resources": [
-                    "fraudprotectionprovider"
-                ]
-            },
             {
               "name": "Authentication methods",
               "overview": "../../resources/authenticationmethods-overview.md",
@@ -1659,7 +1653,8 @@
                 "riskyUser",
                 "riskyUserHistoryItem",
                 "servicePrincipalRiskDetection",
-                "riskyServicePrincipal"
+                "riskyServicePrincipal",
+                "fraudProtectionProvider"
               ]
             },
             {
