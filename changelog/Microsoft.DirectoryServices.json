@@ -14665,6 +14665,22 @@
           "ApiChange": "Method",
           "ChangedApiName": "restore",
           "ChangeType": "Addition",
+          "Description": "Added the [restore](https://learn.microsoft.com/en-us/graph/api/conditionalAccessPolicy-restore?view=graph-rest-beta) method to the [conditionalAccessPolicy](https://learn.microsoft.com/en-us/graph/api/resources/conditionalaccesspolicy?view=graph-rest-beta) resource.",
+          "Target": "conditionalAccessPolicy"
+        },
+        {
+          "Id": "676b29b0-571b-418f-885b-90d934345817",
+          "ApiChange": "Method",
+          "ChangedApiName": "restore",
+          "ChangeType": "Addition",
+          "Description": "Added the [restore](https://learn.microsoft.com/en-us/graph/api/namedLocation-restore?view=graph-rest-beta) method to the [namedLocation](https://learn.microsoft.com/en-us/graph/api/resources/namedlocation?view=graph-rest-beta) resource.",
+          "Target": "namedLocation"
+        },
+        {
+          "Id": "676b29b0-571b-418f-885b-90d934345817",
+          "ApiChange": "Method",
+          "ChangedApiName": "restore",
+          "ChangeType": "Addition",
           "Description": "Added the [restore](https://learn.microsoft.com/en-us/graph/api/serviceProviderConstraints-restore?view=graph-rest-beta) method to the [serviceProviderConstraints](https://learn.microsoft.com/en-us/graph/api/resources/serviceProviderConstraints?view=graph-rest-beta) resource.",
           "Target": "serviceProviderConstraints"
         }
