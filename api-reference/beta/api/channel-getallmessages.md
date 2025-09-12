@@ -20,7 +20,7 @@ To learn more about using the Microsoft Teams export APIs to export content, see
 
 [!INCLUDE [teams-metered-apis](../../includes/teams-metered-apis.md)]
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 

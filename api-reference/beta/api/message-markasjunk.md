@@ -1,5 +1,5 @@
 ---
-title: "message: markAsJunk"
+title: "message: markAsJunk (deprecated)"
 description: "Mark a message as junk."
 author: "kagunase"
 ms.localizationpriority: medium
@@ -8,11 +8,14 @@ doc_type: apiPageType
 ms.date: 04/04/2024
 ---
 
-# message: markAsJunk
+# message: markAsJunk (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+> [!CAUTION]
+> The **markAsJunk** API is deprecated and will stop returning data on December 30, 2025. Going forward use the [reportMessage](../api/message-reportmessage.md) API.
 
 Mark a [message](../resources/message.md) as junk. This API adds the sender to the list of blocked senders and moves the message to the **Junk Email** folder, when **moveToJunk** is `true`.
 

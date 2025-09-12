@@ -2,7 +2,7 @@
 title: "List appliesTo"
 description: "List application or service principal resources assigned to an application management policy."
 ms.localizationpriority: medium
-author: "madansr7"
+author: "aricrowe57"
 ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
 ms.date: 07/30/2024

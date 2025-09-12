@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Beta.ChangeNotifications
 
-Get-MgBetaSubscription -SubscriptionId $subscriptionId
+Get-MgBetaSubscriptionVapidPublicKey
 
 ```

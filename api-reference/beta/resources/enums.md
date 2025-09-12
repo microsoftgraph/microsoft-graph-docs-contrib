@@ -5,7 +5,7 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.subservice: "non-product-specific"
 author: "MSGraphDocsvTeam"
-ms.date: 07/03/2025
+ms.date: 08/06/2025
 ms.custom: sfi-ropc-nochange
 ---
 
@@ -1607,6 +1607,22 @@ Namespace: microsoft.graph
 | appPassword |
 | unknownFutureValue |
 | externalAuthMethod |
+| hardwareOneTimePasscode |
+| windowsHelloForBusiness |
+| microsoftAuthenticatorPasswordless |
+| temporaryAccessPass |
+| macOsSecureEnclaveKey |
+| passKeyDeviceBound |
+| passKeyDeviceBoundAuthenticator |
+| passKeyDeviceBoundWindowsHello |
+| softwareOneTimePasscode |
+| microsoftAuthenticatorPush |
+| mobilePhone |
+| sms |
+| alternateMobilePhone |
+| fido2SecurityKey |
+| oneTimePasscode |
+| passKeySynced |
 
 ### authenticationAppAdminConfiguration values
 
@@ -5159,6 +5175,16 @@ Possible values for user account types (group membership), per Windows definitio
 |failed|
 |unknownFutureValue|
 
+### reportAction values
+
+|Member|
+|:---|
+|unknown|
+|junk|
+|notJunk|
+|phish|
+|unknownFutureValue|
+
 ### errorCorrectionLevel values 
 
 |Member|
@@ -5288,6 +5314,23 @@ Possible values for user account types (group membership), per Windows definitio
 | tot                | 29    | Indicates the time zone is associated with Tonga Time(UTC+13:00).                                             |
 | lint               | 30    | Indicates the time zone is associated with Line Islands Time(UTC+14:00).                                      |
 | unknownFutureValue | 31    | Evolvable enumeration sentinel value. Do not use.                                                             |
+
+### resourceLinkType values 
+
+|Member|
+|:---|
+|url|
+|unknownFutureValue|
+
+### userPersona values 
+
+|Member|
+|:---|
+|unknown|
+|externalMember|
+|externalGuest|
+|internalMember|
+|internalGuest|
 
 ### fileStorageContainerBillingClassification values 
 

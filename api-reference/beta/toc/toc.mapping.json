@@ -94,7 +94,7 @@
             "publishedResource",
             "ipApplicationSegment",
             "webApplicationSegment",
-            "corsConfiguration_v2"           
+            "corsConfiguration_v2"
           ],
           "complexTypes": [
             "applicationSegment",
@@ -222,6 +222,7 @@
       "complexTypes": [
         "artifactQuery",
         "notificationRecipients",
+        "protectionPolicyArtifactCount",
         "restorePointSearchResponse",
         "restorePointSearchResult",
         "retentionSetting",
@@ -258,10 +259,26 @@
         },
         {
           "name": "Places",
+          "overview": "../../resources/places-api-overview.md",
           "resources": [
             "place",
+            "building",
+            "desk",
+            "floor",
             "room",
-            "roomList"
+            "roomList",
+            "section",
+            "workspace",
+            "checkInClaim"
+          ],
+          "complexTypes": [
+            "assignedPlaceMode",
+            "dropInPlaceMode",
+            "mailboxDetails",
+            "offlinePlaceMode",
+            "placeMode",
+            "reservablePlaceMode",
+            "resourceLink"
           ],
            "childNodes": [
             {
@@ -269,7 +286,21 @@
               "resources":[
                 "workplaceSensorDevice"
               ]
-            }
+            },
+            {
+             "name": "Maps (preview)",
+             "resources":[
+               "buildingMap",
+               "fixtureMap",
+               "footprintMap",
+               "levelMap",
+               "sectionMap",
+               "unitMap"
+             ],
+              "complexTypes": [
+                "importBuildingMapSetting"
+              ]
+             }
            ]
          }
       ]
@@ -472,6 +503,7 @@
           "resources": [
             "cloudPC",
             "cloudPcAuditEvent",
+            "cloudPcCloudApp",
             "cloudPcCrossCloudGovernmentOrganizationMapping",
             "cloudPcDeviceImage",
             "cloudPcExternalPartnerSetting",
@@ -512,6 +544,7 @@
             "cloudPcBulkRemoteActionResult",
             "cloudPcBulkCreateSnapshot",
             "cloudPcBulkSetReviewStatus",
+            "cloudPcCloudAppDetail",
             "CloudPcConnectionSetting",
             "cloudPcConnectivityEvent",
             "cloudPcConnectivityResult",
@@ -519,6 +552,7 @@
             "cloudPcDisasterRecoveryAzureConnectionSetting",
             "cloudPcDisasterRecoveryMicrosoftHostedNetworkSetting",
             "cloudPcDisasterRecoveryNetworkSetting",
+            "cloudPcDiscoveredApp",
             "cloudPcDomainJoinConfiguration",
             "cloudPcForensicStorageAccount",
             "cloudPcFrontlineSharedDeviceDetail",
@@ -988,7 +1022,8 @@
       ],
       "complexTypes": [
         "fileStorageContainerTypeRegistrationSettings",
-        "fileStorageContainerTypeSettings"
+        "fileStorageContainerTypeSettings",
+        "fileStorageContainerTypeAgentSettings"
       ]
     },
     {
@@ -1056,8 +1091,8 @@
             "featureRolloutPolicy",
             "mobilityManagementPolicy",
             "organizationSettings",
-            "uxSetting", 
-            "deviceTemplate", 
+            "uxSetting",
+            "deviceTemplate",
             "mutualTlsOauthConfiguration"
           ],
           "complexTypes": [
@@ -1581,7 +1616,7 @@
                 "whatIfAnalysisResult",
                 "namedLocation",
                 "authenticationContextClassReference",
-                "conditionalAccessTemplate",                
+                "conditionalAccessTemplate",
                 "continuousAccessEvaluationPolicy"
               ],
               "childNodes": [
@@ -1643,7 +1678,7 @@
               "childNodes": [
                 {
                   "name": "External identities",
-                  "resources": [                    
+                  "resources": [
                     "identityProviderBase",
                     "builtInIdentityProvider",
                     "socialIdentityProvider",
@@ -2307,6 +2342,11 @@
             "skillProficiency",
             "webAccount",
             "personWebsite"
+          ],
+          "complexTypes": [
+            "companyDetail",
+            "originTenantInfo",
+            "positionDetail"
           ]
         },
         {
@@ -2596,7 +2636,9 @@
             "microsoft.graph.security.incidentTask"
           ],
           "complexTypes": [
-            "microsoft.graph.security.teamsMessageEvidence"
+            "microsoft.graph.security.securityGroupEvidence",
+            "microsoft.graph.security.teamsMessageEvidence",
+            "microsoft.graph.security.userAccount"
           ]
         },
         {
@@ -2688,7 +2730,7 @@
               "scopeBase",
               "tenantScope",
               "textContent",
-              "userScope" 
+              "userScope"
             ]
           },
         {
@@ -2741,14 +2783,20 @@
           "name": "Identities",
           "resources": [
             "microsoft.graph.security.healthIssue",
-            "microsoft.graph.security.sensor"
+            "microsoft.graph.security.sensor",
+            "microsoft.graph.security.identityAccounts",
+            "microsoft.graph.security.user",
+            "microsoft.graph.security.sensorCandidate",
+            "microsoft.graph.security.sensorCandidateActivationConfiguration"
           ],
           "complexTypes": [
             "microsoft.graph.security.deploymentAccessKeyType",
             "microsoft.graph.security.identityContainer",
             "microsoft.graph.security.networkAdapter",
             "microsoft.graph.security.sensorDeploymentPackage",
-            "microsoft.graph.security.sensorSettings"
+            "microsoft.graph.security.sensorSettings",
+            "microsoft.graph.security.invokeActionResult",
+            "microsoft.graph.security.account"
           ]
         },
         {
@@ -3044,28 +3092,16 @@
         {
           "name": "Administration (preview)",
           "resources": [
-            "microsoft.graph.teamsAdministration.teamsUserConfiguration"
+            "microsoft.graph.teamsAdministration.teamsUserConfiguration",
+            "microsoft.graph.teamsAdministration.numberAssignment",
+            "microsoft.graph.teamsAdministration.telephoneNumberLongRunningOperation"
           ],
           "complexTypes": [
             "microsoft.graph.teamsAdministration.assignedTelephoneNumber",
             "microsoft.graph.teamsAdministration.effectivePolicyAssignment",
-            "microsoft.graph.teamsAdministration.policyAssignment"
+            "microsoft.graph.teamsAdministration.policyAssignment",
+            "microsoft.graph.teamsAdministration.telephoneNumberLongRunningOperationDetails"
           ]
-        },
-        {
-          "name": "AI interactions",
-          "resources": [
-            "aiInteractionHistory"
-          ],
-         "complexTypes": [
-           "aiInteraction",
-           "aiInteractionAttachment",
-           "aiInteractionContext",
-           "aiInteractionLink",
-           "aiInteractionMention",
-           "aiInteractionMentionedIdentitySet",
-           "aiUser"
-         ]
         },
         {
           "name": "Approvals",
@@ -3098,7 +3134,16 @@
           "resources": [
             "presence"
           ],
+          "complexTypes": [
+            "outOfOfficeSettings"
+          ],
           "childNodes": [
+            {
+              "name": "Ad hoc call",
+              "resources": [
+                "adhocCall"
+              ]
+            },
             {
               "name": "Calls",
               "resources": [
@@ -3143,17 +3188,6 @@
               ]
             },
             {
-              "name": "Copilot settings",
-              "resources": [
-                "copilotAdminLimitedMode"
-              ],
-              "complexTypes": [
-                "copilotAdmin",
-                "copilotAdminSetting",
-                "copilotRoot"
-              ]
-            },
-            {
               "name": "Online meetings",
               "resources": [
                 "meetingAttendanceReport",
@@ -3162,7 +3196,6 @@
                 "onlineMeetingEngagementConversation",
                 "externalMeetingRegistration",
                 "meetingRegistration",
-                "callAiInsight",
                 "callRecording",
                 "callTranscript"
               ],
@@ -3188,7 +3221,6 @@
               "complexTypes": [
                 "actionItem",
                 "aiOnlineMeeting",
-                "callAiInsightViewPoint",
                 "meetingNote",
                 "meetingNoteSubpoint",
                 "mentionEvent",

@@ -88,6 +88,10 @@ POST https://graph.microsoft.com/beta/security/incidentTasks/213213/executeRespo
 [!INCLUDE [sample-code](../includes/snippets/php/postincidenttaskexecuteresponseaction-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/postincidenttaskexecuteresponseaction-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/postincidenttaskexecuteresponseaction-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

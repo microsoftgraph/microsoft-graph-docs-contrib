@@ -140,7 +140,9 @@ Content-type: application/json
   "ageGroup": "adult",
   "countryCode": "NO",
   "preferredLanguageTag": null,
-  "userPrincipalName": "innocenty.popov@adventureworks.com"
+  "userPrincipalName": "innocenty.popov@adventureworks.com",
+  "originTenantInfo": null,
+  "userPersona": null
 }
 ```
 
