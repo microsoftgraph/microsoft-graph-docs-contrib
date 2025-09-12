@@ -73,6 +73,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_callRecordings",
@@ -107,6 +108,7 @@ GET  https://graph.microsoft.com/beta/users/b935e675-5e67-48b9-8d45-249d5f88e964
 [!INCLUDE [sample-code](../includes/snippets/python/list-callrecordings-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 ### Response
 
