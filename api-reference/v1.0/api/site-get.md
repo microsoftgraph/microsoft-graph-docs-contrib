@@ -24,8 +24,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 [!INCLUDE [permissions-table](../includes/permissions/site-get-permissions.md)]
 
 > [!NOTE]
-> When a user from one geo location attempts to access a site located in another geo, the request may fail unless the calling user has at least "Limited Access" permission to the root site collection of the target geo. Ensure this access is granted to avoid authorization issues.
->
+> When a user from one geo location attempts to access a site located in another geo, the request may fail unless the calling user has at least "Limited access" permission to the root site collection of the target geo. Make sure the access is granted to avoid authorization issues.
 
 ## HTTP request
 
