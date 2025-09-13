@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 The operation represents adding or updating of a legal hold policy
 
-For more information see [Manage holds in eDiscovery](/purview/edisc-hold-manage).
+For more information, see [Manage holds in eDiscovery](/purview/edisc-hold-manage).
 
 Inherits from [microsoft.graph.security.caseOperation](../resources/security-caseoperation.md).
 
