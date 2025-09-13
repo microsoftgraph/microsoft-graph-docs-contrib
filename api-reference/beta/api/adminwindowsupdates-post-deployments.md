@@ -162,7 +162,7 @@ Content-Type: application/json
       "gradualRollout": {
         "@odata.type": "#microsoft.graph.windowsUpdates.rateDrivenRolloutSettings",
         "durationBetweenOffers": "P1D",
-        "devicePerOffer": 1000
+        "devicesPerOffer": 1000
       }
     },
     "monitoring": {
