@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of [microsoft.graph.security.autoAuditingConfiguration](../resources/security-autoauditingconfiguration.md) object.
+Get the properties and relationships of an [microsoft.graph.security.autoAuditingConfiguration](../resources/security-autoauditingconfiguration.md) object.
 
 ## Permissions
 

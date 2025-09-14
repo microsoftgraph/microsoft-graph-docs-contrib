@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update an [autoAuditingConfiguration](../resources/security-autoauditingconfiguration.md) object.
+Update the properties of an [autoAuditingConfiguration](../resources/security-autoauditingconfiguration.md) object.
 
 ## Permissions
 
