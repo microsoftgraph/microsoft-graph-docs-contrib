@@ -38,18 +38,7 @@ Inherits from [protectionUnitBase](../resources/protectionunitbase.md).
 |siteId|String|Unique identifier of the SharePoint site.|
 |siteName|String|Name of the SharePoint site.|
 |siteWebUrl|String|The web URL of the SharePoint site.|
-|status|[protectionUnitStatus](../resources/protectionunitbase.md#protectionunitstatus-values)|The individual enable, disable, or removal status of the protection unit. Inherited from [protectionUnitBase](../resources/protectionunitbase.md). The possible values are: `protectRequested`, `protected`, `unprotectRequested`, `unprotected`, `removeRequested`, `unknownFutureValue`.|
-
-### protectionUnitStatus values
-
-|Member | Description |
-|:------|:------------|
-|protectRequested | Protection of the unit was requested. Applies when a policy is activated or new units are added to an active policy.|
-|protected | Protection was successfully enabled for the unit.|
-|unprotectRequested |A request was made to deactivate protection for the unit.|
-|unprotected | Protection was successfully disabled for the unit.|
-|removeRequested |A user requested removal of the protected unit from the policy. |
-|unknownFutureValue | Evolvable enumeration sentinel value. Do not use.|
+|status|[protectionUnitStatus](../resources/protectionunitbase.md#protectionunitstatus-values)|The individual enable, disable, or removal status of the protection unit. The possible values are: `protectRequested`, `protected`, `unprotectRequested`, `unprotected`, `removeRequested`, `unknownFutureValue`. Inherited from [protectionUnitBase](../resources/protectionunitbase.md).|
 
 ## Relationships
 
