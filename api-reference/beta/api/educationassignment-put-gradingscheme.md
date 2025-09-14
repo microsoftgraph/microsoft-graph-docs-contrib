@@ -52,7 +52,7 @@ In the request body, supply the odata.id of the existing **gradingScheme** objec
 
 If successful, this method returns a `204 No Content` response code. It doesn't return anything in the response body.
 
-## Example
+## Examples
 
 ### Request
 
