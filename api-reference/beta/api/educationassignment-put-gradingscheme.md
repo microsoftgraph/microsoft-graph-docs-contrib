@@ -22,10 +22,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "educationassignmentsettings-post-gradingschemes-permissions"
+  "name": "educationassignment_put_gradingscheme"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/educationassignmentsettings-post-gradingschemes-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/educationassignment-put-gradingscheme-permissions.md)]
 
 ## HTTP request
 
