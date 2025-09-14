@@ -12,9 +12,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-Update the properties of a [protectionRuleBase](../resources/protectionrulebase.md) object. This method is only supported for the dynamic rules of [exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md) and [onedriveForBusinessProtectionPolicy](../resources/onedriveforbusinessprotectionpolicy.md) objects. After the update is applied, the value of the **status** property of the **protectionRuleBase** object is set `updateRequested`.
+Update the properties of a [protectionRuleBase](../resources/protectionrulebase.md) object. This method is only supported for the dynamic rules of [exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md) and [onedriveForBusinessProtectionPolicy](../resources/onedriveforbusinessprotectionpolicy.md) objects. After the update is applied, the value of the **status** property of the **protectionRuleBase** object is set to `updateRequested`.
 
 ## Permissions
 
@@ -34,7 +32,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-manikantsinghms marked this conversation as resolved.
 PATCH /solutions/backupRestore/oneDriveForBusinessProtectionPolicies/{oneDriveForBusinessProtectionPolicyId}/driveInclusionRules/{driveProtectionRuleId}
 PATCH /solutions/backupRestore/exchangeProtectionPolicies/{exchangeProtectionPolicyId}/mailboxInclusionRules/{mailboxProtectionRuleId}
 ```
@@ -62,7 +59,6 @@ In the request body, provide a JSON representation of one of the following prope
 If successful, this method returns a `200 OK` response code and an updated [protectionRuleBase](../resources/protectionrulebase.md) object in the response body.
 
 ## Examples
-manikantsinghms marked this conversation as resolved.
 
 ### Example 1: Update a driveInclusionRule associated with a onedriveForBusiness protection policy
 
@@ -77,8 +73,9 @@ The following example shows a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/solutions/backupRestore/oneDriveForBusinessProtectionPolicies/e267a763-ca81-4a98-8c1a-f407143cffe1/driveInclusionRules/c31adc5c-b65d-4a85-8eda-976947a24124
+PATCH https://graph.microsoft.com/v1.0/solutions/backupRestore/oneDriveForBusinessProtectionPolicies/e267a763-ca81-4a98-8c1a-f407143cffe1/driveInclusionRules/c31adc5c-b65d-4a85-8eda-976947a24124
 Content-Type: application/json
+
 {
   "driveExpression": "(memberOf -any (group.id -in ['4e8e9b15-bfc8-40a2-aed0-3f65a22e2bd4']))"
 }
@@ -97,8 +94,9 @@ The following example shows the response.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
+
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.driveProtectionRule)",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(microsoft.graph.driveProtectionRule)",
   "id": "c31adc5c-b65d-4a85-8eda-976947a24124",
   "status": "updateRequested",
   "createdDateTime": "2025-01-15T14:42:34.5329239Z",
@@ -137,8 +135,9 @@ The following example shows a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/solutions/backupRestore/exchangeProtectionPolicies/e267a763-ca81-4a98-8c1a-f407143cffe1/mailboxInclionRules/c31adc5c-b65d-4a85-8eda-976947a24124
+PATCH https://graph.microsoft.com/v1.0/solutions/backupRestore/exchangeProtectionPolicies/e267a763-ca81-4a98-8c1a-f407143cffe1/mailboxInclionRules/c31adc5c-b65d-4a85-8eda-976947a24124
 Content-Type: application/json
+
 {
   "mailboxExpression": "(memberOf -any (group.id -in ['c318eb4a-ea72-42bd-8f0b-d0bbf794bec7']))"
 }
@@ -157,8 +156,9 @@ The following example shows the response.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
+
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.mailboxProtectionRule)",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(microsoft.graph.mailboxProtectionRule)",
   "id": "c31adc5c-b65d-4a85-8eda-976947a24124",
   "status": "updateRequested",
   "createdBy": {
