@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [protectionRuleBase](../resources/protectionrulebase.md) object. This method is only supported for the dynamic rules of [exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md) and [onedriveForBusinessProtectionPolicy](../resources/onedriveforbusinessprotectionpolicy.md) objects. After the update is applied, the value of the **status** property of the **protectionRuleBase** object is set `updateRequested`.
+Update the properties of a [protectionRuleBase](../resources/protectionrulebase.md) object. This method is only supported for the dynamic rules of [exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md) and [onedriveForBusinessProtectionPolicy](../resources/onedriveforbusinessprotectionpolicy.md) objects. After the update is applied, the value of the **status** property of the **protectionRuleBase** object is set to `updateRequested`.
 
 ## Permissions
 
