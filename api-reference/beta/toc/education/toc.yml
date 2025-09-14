@@ -136,7 +136,7 @@ items:
     href: ../../api/educationassignment-activate.md
   - name: Deactivate assignment
     href: ../../api/educationassignment-deactivate.md
-  - name: Add grading scheme
+  - name: Add educationGradingScheme
     href: ../../api/educationassignment-put-gradingscheme.md
 - name: Assignment defaults
   items:
@@ -162,7 +162,7 @@ items:
     href: ../../resources/educationassignmentsettings.md
   - name: Get
     href: ../../api/educationassignmentsettings-get.md
-  - name: Update
+  - name: Update grading scheme
     href: ../../api/educationassignmentsettings-update.md
 - name: Category
   items:
