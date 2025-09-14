@@ -1,6 +1,6 @@
 ---
-title: "Set default educationGradingScheme"
-description: "Set the defaultGradingScheme on an assignmentSettings object."
+title: "Add defaultGradingScheme"
+description: "Add the default educationGradingScheme to an educationAssignmentSettings object."
 author: "v-rmanda"
 ms.localizationpriority: medium
 ms.subservice: "education"
@@ -8,13 +8,13 @@ doc_type: apiPageType
 ms.date: 04/05/2024
 ---
 
-# Create educationGradingScheme
+# Add defaultGradingScheme
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Set the default [educationGradingScheme](../resources/educationgradingscheme.md) on an **assignmentSettings** object.
+Add the default [educationGradingScheme](../resources/educationgradingscheme.md) to an **educationAssignmentSettings** object.
 
 ## Permissions
 
@@ -46,11 +46,11 @@ PUT /education/classes/{educationClassId}/assignmentSettings/defaultGradingSchem
 
 ## Request body
 
-In the request body, supply a JSON representation of a structure with the OData id of the existing [gradingScheme](../resources/educationgradingscheme.md) to add to this assignment.
+In the request body, supply a JSON representation of a structure with the OData ID of the existing [educationGradingScheme](../resources/educationgradingscheme.md) to add to this assignment.
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code and an [educationGradingScheme](../resources/educationgradingscheme.md) object in the response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
@@ -81,7 +81,7 @@ Content-Type: application/json
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true  
