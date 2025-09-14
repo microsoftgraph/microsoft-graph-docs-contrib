@@ -68,6 +68,12 @@ Defined the following endpoints as supported for the [driveItem: discardCheckout
 
 Added a note to the **artifactCount** property of the [granularMailboxRestoreArtifact](/graph/api/resources/granularmailboxrestoreartifact?view=graph-rest-beta&preserve-view=true) about its upcoming deprecation.
 
+### Education
+
+- [Create](/graph/api/educationassignmentsettings-post-gradingschemess?view=graph-rest-beta&preserve-view=true) a new [educationGradingScheme](/graph/api/resources/educationgradingschemes?view=graph-rest-beta&preserve-view=true) on an [educationClass](/graph/api/resources/educationclasss?view=graph-rest-beta&preserve-view=true).
+- [Add](/graph/api/educationassignment-put-gradingschemes?view=graph-rest-beta&preserve-view=true) an existing [educationGradingScheme](/graph/api/resources/educationgradingscheme?view=graph-rest-beta&preserve-view=true) to an existing [educationAssignment](/graph/api/resources/educationassignment?view=graph-rest-beta&preserve-view=true).
+- [Add](/graph/api/educationassignmentsettings-put-defaultgradingschemes?view=graph-rest-beta&preserve-view=true) the default [educationGradingScheme](/graph/api/resources/educationgradingscheme?view=graph-rest-beta&preserve-view=true) to an [educationAssignmentSettings](/graph/api/resources/educationassignmentsettings?view=graph-rest-beta&preserve-view=true) object.
+
 ### Files
 
 Defined the following endpoints as supported for the [driveItem: discardCheckout](/graph/api/driveitem-discardcheckout?view=graph-rest-beta&preserve-view=true) API:
