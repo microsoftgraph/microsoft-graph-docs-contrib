@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Delete and unprotect all the artifacts protected by a dynamic rule. This action is only applicable to dynamic rules.
 
-The following points apply when deleting a dynamic rule and unprotecting all artifacts it protects.
+The following points apply when you delete a dynamic rule and unprotect all artifacts it protects.
 - The rule moves to the `deleteRequested` status when this action is performed on a dynamic rule.
 - Unprotecting artifacts and deleting rules are asynchronous operations, and they might not complete immediately. 
 - This action resets the `dynamicRule` protection source. If the artifact is also protected by another protection source, it's only protected by that source afterward.
