@@ -9,6 +9,9 @@ ms.topic: article
 
 # Get component in Microsoft Graph Toolkit
 
+> [!CAUTION]
+> The Microsoft Graph Toolkit is deprecated. The retirement period begins September 1, 2025, with full retirement planned for August 28, 2026. Developers should migrate to using the Microsoft Graph SDKs or other supported Microsoft Graph tools for building web experiences. For more information, see the [deprecation announcement](https://devblogs.microsoft.com/microsoft365dev/microsoft-graph-toolkit-retirement/).
+
 You can use `mgt-get` to make any GET query from Microsoft Graph directly in your HTML. The component doesn't provide a default UI and requires that you write a template.
 
 ## Example

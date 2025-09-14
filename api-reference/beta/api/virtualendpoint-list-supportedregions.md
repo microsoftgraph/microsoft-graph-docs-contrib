@@ -125,6 +125,7 @@ Content-Type: application/json
       "regionStatus": "available",
       "supportedSolution": "windows365",
       "regionGroup": "usCentral",
+      "geographicLocationType": "usCentral",
       "regionRestrictionDetail": {
         "cPURestricted": true,
         "gPURestricted": true,

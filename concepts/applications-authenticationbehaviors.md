@@ -19,7 +19,7 @@ The [**authenticationBehaviors**](/graph/api/resources/authenticationbehaviors?v
 You can configure the following behaviors:
 
 - [Allow or prevent the issuance of email claims with unverified domain owners](#prevent-the-issuance-of-email-claims-with-unverified-domain-owners).
-- [Enable or disable extended Azure AD Graph access until June 30, 2025](#allow-extended-azure-ad-graph-access-until-june-30-2025), when Azure AD Graph is fully retired.
+- [Enable or disable extended Azure AD Graph access until August 31, 2025](#allow-extended-azure-ad-graph-access-until-august-31-2025), when Azure AD Graph is fully retired.
 - Require multitenant applications to have a service principal in the resource tenant as part of authorization checks before they're granted access tokens.
 
 > [!NOTE]
@@ -42,7 +42,7 @@ GET https://graph.microsoft.com/beta/applications?$select=id,displayName,appId,a
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/beta/list-applications-authenticationBehaviors-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/beta/list-applications-authenticationbehaviors-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -432,7 +432,7 @@ Content-Type: application/json
 
 ---
 
-## Allow extended Azure AD Graph access until June 30, 2025
+## Allow extended Azure AD Graph access until August 31, 2025
 
 By default, applications created after August 31, 2024 receive a `403 Unauthorized` error when making requests to Azure AD Graph APIs, unless you configure them to allow extended Azure AD Graph access. Additionally, you must configure existing apps created before August 31, 2024 and making requests to Azure AD Graph APIs to allow extended Azure AD Graph access by February 1, 2025. This extended access is available only until June 30, 2025, when Azure AD Graph is fully retired. After this date, all apps receive a `403 Unauthorized` error when making requests to Azure AD Graph APIs, regardless of their extended access configuration. For more information, see [June 2024 update on Azure AD Graph API retirement](https://techcommunity.microsoft.com/t5/microsoft-entra-blog/june-2024-update-on-azure-ad-graph-api-retirement/ba-p/4094534).
 
