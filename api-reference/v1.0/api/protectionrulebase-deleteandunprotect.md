@@ -135,7 +135,7 @@ The following example shows the response.
 }
 -->
 ``` http
-HTTP/1.1 200 OK
+HTTP/1.1 200 Accepted
 Content-Type: application/json
 
 {
