@@ -33,7 +33,9 @@ Specifies class-level assignments settings.
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
+|defaultGradingScheme|[educationGradingScheme](educationgradingscheme.md)| TODO |
 |gradingCategories|[educationGradingCategory](educationgradingcategory.md) collection| When set, enables users to weight assignments differently when computing a class average grade.|
+|gradingSchemes|[educationGradingScheme](educationgradingscheme.md) collection| TODO |
 
 ## JSON representation
 The following JSON representation shows the resource type.
@@ -47,7 +49,7 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "id": "String (identifier)",
-  "submissionAnimationDisabled": false
+  "submissionAnimationDisabled": "Boolean"
 }
 ```
 
