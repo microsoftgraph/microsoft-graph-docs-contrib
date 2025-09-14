@@ -1,6 +1,6 @@
 ---
 title: "Create educationGradingScheme"
-description: "Create a new educationGradingScheme object."
+description: "Create a new educationGradingScheme on an educationClass."
 ms.localizationpriority: medium
 author: "GatadiMegha"
 ms.subservice: "education"
@@ -47,9 +47,7 @@ If successful, this method returns a `201 Created` response code and an [educati
 
 ## Examples
 
-### Example 1: Add educationGradingScheme
-
-#### Request
+### Request
 
 The following example shows the request.
 
@@ -62,23 +60,23 @@ POST https://graph.microsoft.com/beta/education/classes/de45722a-c202-43a9-9dd5-
 Content-type: application/json
  
 {
-    "displayName": "PassFailScheme",
-    "grades": [
-        {
-            "displayName": "Pass",
-            "minPercentage": 70,
-            "defaultPercentage": 90
-        },
-        {
-            "displayName": "Fail",
-            "minPercentage": 0,
-            "defaultPercentage": 50
-        }
-    ]
+  "displayName": "PassFailScheme",
+  "grades": [
+    {
+      "displayName": "Pass",
+      "minPercentage": 70,
+      "defaultPercentage": 90
+    },
+    {
+      "displayName": "Fail",
+      "minPercentage": 0,
+      "defaultPercentage": 50
+    }
+  ]
 }
 ```
 
-#### Response
+### Response
 
 The following example shows the response.
 
@@ -94,21 +92,21 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('de45722a-c202-43a9-9dd5-d82c45bcef91')/assignmentSettings/gradingSchemes/$entity",
-    "id": "acdbd23c-004e-4965-8e57-fa08c7d2020d",
-    "displayName": "PassFailScheme",
-    "hidePointsDuringGrading": false,
-    "grades": [
-        {
-            "displayName": "Pass",
-            "minPercentage": 70,
-            "defaultPercentage": 90
-        },
-        {
-            "displayName": "Fail",
-            "minPercentage": 0,
-            "defaultPercentage": 50
-        }
-    ]
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('de45722a-c202-43a9-9dd5-d82c45bcef91')/assignmentSettings/gradingSchemes/$entity",
+  "id": "acdbd23c-004e-4965-8e57-fa08c7d2020d",
+  "displayName": "PassFailScheme",
+  "hidePointsDuringGrading": false,
+  "grades": [
+    {
+      "displayName": "Pass",
+      "minPercentage": 70,
+      "defaultPercentage": 90
+    },
+    {
+      "displayName": "Fail",
+      "minPercentage": 0,
+      "defaultPercentage": 50
+    }
+  ]
 }
 ```
