@@ -135,7 +135,7 @@ The following example shows a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/v1.0/solutions/backupRestore/exchangeProtectionPolicies/e267a763-ca81-4a98-8c1a-f407143cffe1/mailboxInclionRules/c31adc5c-b65d-4a85-8eda-976947a24124
+PATCH https://graph.microsoft.com/v1.0/solutions/backupRestore/exchangeProtectionPolicies/e267a763-ca81-4a98-8c1a-f407143cffe1/mailboxInclusionRules/c31adc5c-b65d-4a85-8eda-976947a24124
 Content-Type: application/json
 
 {
