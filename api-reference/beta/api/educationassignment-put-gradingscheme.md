@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Add an existing [educationGradingScheme](../resources/educationgradingscheme.md) to an existing [../resources/educationAssignment](educationassignment.md).
+Add an existing [educationGradingScheme](../resources/educationgradingscheme.md) to an existing [educationAssignment](../resources/educationassignment.md).
 
 ## Permissions
 
