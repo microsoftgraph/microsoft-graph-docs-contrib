@@ -1,6 +1,6 @@
---
+---
 title: "Manage presence state using the Microsoft Graph API"
-description: "Learn how to manage presence states and sessions using Microsoft Graph API."
+description: "Learn how to manage presence states and sessions using the Microsoft Graph API."
 author: "garchiro7"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
@@ -43,20 +43,20 @@ The following precedence is used for how session states are aggregated, with "A 
 
 > [!NOTE]
 > 
->The **presence: setPresence** method doesn't support setting the presence states **Out of office (OOF)** or **In a meeting** directly. These states are automatically managed based on calendar events and mailbox configurations, and attempting to set them via the **presence: setPresence** has no effect.
+> The **presence: setPresence** method doesn't support setting the presence states **Out of office (OOF)** or **In a meeting** directly. These states are automatically managed based on calendar events and mailbox configurations, and attempting to set them via the **presence: setPresence** has no effect.
 >
->To reflect **"Out of office"** in presence, use the [events API](../resources/event.md) by setting the **showAs** property of a calendar event to `oof`, or configure the user's auto-reply settings using [mailboxSettings](../resources/mailboxsettings.md).
+> To reflect **"Out of office"** in presence, use the [events API](../resources/event.md) by setting the **showAs** property of a calendar event to `oof`, or configure the user's autoreply settings using [mailboxSettings](../resources/mailboxsettings.md).
 >
->The **"In a meeting"** state is automatically reflected during scheduled calendar meeting events and doesn't require manual presence updates.
+> The **"In a meeting"** state is automatically reflected during scheduled calendar meeting events and doesn't require manual presence updates.
 
 ## Timeout, expiration, and keep alive
 
 A presence session might **time out** and **expire**, so the application needs to call this API before the **timeout**, to maintain the state for the session; or before the **expiration**, to keep the session alive.
 
-A presence session can time out if the availability is `Available` and the timeout is five minutes. When it times out, the presence state fades in stages. For example, if an application sets the presence session as `Available/Available`, the state would change to `Available/AvailableInactive` in 5 minutes with the first timeout, then `Away/Away` in another 5 minutes with the second timeout.
+A presence session can time out if the availability is `Available` and the timeout is five minutes. When it times out, the presence state fades in stages. For example, if an application sets the presence session as `Available/Available`, the state would change to `Available/AvailableInactive` in five minutes with the first timeout, then `Away/Away` in another five minutes with the second timeout.
 
 Use `expirationDuration` to configure the expiration of a presence session; otherwise, the default expiration is five minutes. Valid values range from five minutes to four hours, after which the session becomes `Offline`.
 
 ## Trusted domains for cross-tenant presence visibility and interaction
 
-Configure **external access** in the Teams admin center, so that only the intended partner organizations can *see and act on presence* for your users. In the Teams admin center (**Users > External access**), allow all domains or add specific domains to the **Allow** list under **Meetings and chat with trusted Microsoft 365 organizations**. Users in those trusted organizations are able to view user presence. Cross-tenant presence requires **mutual trust**, and the partner must also allow your domain. Domains that aren’t trusted (or are blocked) can't see presence or be able to initiate presence-driven interactions. For more details, see [Specify trusted Microsoft 365 organizations](/microsoftteams/trusted-organizations-external-meetings-chat?tabs=organization-settings#specify-trusted-microsoft-365-organizations).
+Configure **external access** in the Teams admin center, so that only the intended partner organizations can *see and act on presence* for your users. In the Teams admin center (**Users > External access**), allow all domains or add specific domains to the **Allow** list under **Meetings and chat with trusted Microsoft 365 organizations**. Users in those trusted organizations are able to view user presence. Cross-tenant presence requires **mutual trust**, and the partner must also allow your domain. Domains that aren’t trusted (or are blocked) can't see presence or be able to initiate presence-driven interactions. For more information, see [Specify trusted Microsoft 365 organizations](/microsoftteams/trusted-organizations-external-meetings-chat?tabs=organization-settings#specify-trusted-microsoft-365-organizations).
