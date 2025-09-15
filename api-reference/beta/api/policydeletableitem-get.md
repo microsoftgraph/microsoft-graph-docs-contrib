@@ -250,7 +250,7 @@ The following example shows a request for a conditionalAccessPolicy.
 }
 -->
 ```HTTP
-https://graph.microsoft.com/beta/identity/conditionalAccess/deletedItems/policies/1a71ea59-9583-4f16-9de4-47ecb42adfc6
+GET https://graph.microsoft.com/beta/identity/conditionalAccess/deletedItems/policies/1a71ea59-9583-4f16-9de4-47ecb42adfc6
 ```
 
 
@@ -339,7 +339,7 @@ The following example shows the response.
 
 #### Request
 
-The following example shows a request for a conditionalAccessPolicy.
+The following example shows a request for a namedLocation.
 <!-- {
   "blockType": "request",
   "name": "get_policydeletableitem_crossTenantIdentitySyncPolicyPartner"
