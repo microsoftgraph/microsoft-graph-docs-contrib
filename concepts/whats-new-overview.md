@@ -36,10 +36,9 @@ Added a note to the **artifactCount** property of the [granularMailboxRestoreArt
 
 ### Education
 
-The assignment service in the education APIs in Microsoft Graph has updated its throttling limits: per app per tenant requests are now limited to 350 per 10 seconds and 10,000 per hour. Per tenant for all apps, the limits are now 700 per 10 seconds and 20,000 per hour. A new limit of 25 requests per 10 seconds is also introduced for POST `/publish` operations.
-
-[Get](/graph/api/reportsroot-list-readingcoachpassages?view=graph-rest-1.0&preserve-view=true) a list of Reading Coach passages that were practiced by a student.
-[Get](/graph/api/reportsroot-list-speakerassignmentsubmissions?view=graph-rest-1.0&preserve-view=true) a list of speaker assignments that were submitted by a student.
+- The assignment service in the education APIs in Microsoft Graph has updated its throttling limits: per app per tenant requests are now limited to 350 per 10 seconds and 10,000 per hour. Per tenant for all apps, the limits are now 700 per 10 seconds and 20,000 per hour. A new limit of 25 requests per 10 seconds is also introduced for POST `/publish` operations.
+- [Get](/graph/api/reportsroot-list-readingcoachpassages) a list of Reading Coach passages that were practiced by a student.
+- [Get](/graph/api/reportsroot-list-speakerassignmentsubmissions) a list of speaker assignments that were submitted by a student.
 
 ### Files
 
