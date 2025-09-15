@@ -14,52 +14,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Set the availability and activity status in a presence session of an application for a user.
+Set the availability and activity status in a presence session of an application for a user. 
+
+For more details about presence sessions, states permutations, and timeouts, see [Manage presence state using the Microsoft Graph API](/graph/manage-presence-state).
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
-
-### Presence sessions
-A user can have multiple presence sessions because the user can be on multiple Teams clients (desktop, mobile, and web). Each Teams client has an independent presence session and the user's presence is an aggregated state from all the sessions behind.
-
-Similarly, an application can have its own presence session for a user and be able to update the state.
-
-The following precedence is used for how session states are aggregated, with "A > B" representing that A has precedence over B:
-* User-preferred state > session-level states (user-preferred state overrides session-level states)
-* Among session-level states: DoNotDisturb > Busy > Available > Away
-
-> **Note:** When a user presence changes in Microsoft Graph, because the Teams client uses poll mode, it takes a few minutes to update the presence status.
-
-### Presence states permutations
-
-| Teams state              | Graph availability / activity            |
-| ------------------------ | ---------------------------------------- |
-| Available                | `Available / Available`                  |
-| Available, out of office | `Available / OutOfOffice`                |
-| Busy                     | `Busy / Busy`                            |
-| In a call                | `Busy / InACall`                         |
-| In a meeting             | `Busy / InAMeeting`                      |
-| In a call, out of office | `Busy / InACall + OOF`                   |
-| Do not disturb           | `DoNotDisturb / DoNotDisturb`            |
-| Presenting               | `DoNotDisturb / Presenting`              |
-| Away                     | `Away / Away`                            |
-| Be right back            | `BeRightBack / BeRightBack`              |
-| Appear offline           | `Offline / OffWork`                      |
-| Out of office            | `OutOfOffice`                            |
-
-> [!NOTE]
-> 
->The **presence: setPresence** method doesn't support setting the presence states **Out of office (OOF)** or **In a meeting** directly. These states are automatically managed based on calendar events and mailbox configurations, and attempting to set them via the **presence: setPresence** has no effect.
->
->To reflect **"Out of office"** in presence, use the [events API](../resources/event.md) by setting the **showAs** property of a calendar event to `oof`, or configure the user's auto-reply settings using [mailboxSettings](../resources/mailboxsettings.md).
->
->The **"In a meeting"** state is automatically reflected during scheduled calendar meeting events and doesn't require manual presence updates.
-
-### Timeout, expiration, and keep alive
-A presence session may **time out** and **expire**, so the application needs to call this API before the **timeout**, to maintain the state for the session; or before the **expiration**, to keep the session alive.
-
-A presence session can time out if the availability is `Available` and the timeout is 5 minutes. When it times out, the presence state fades in stages. For example, if an application sets the presence session as `Available/Available`, the state would change to `Available/AvailableInactive` in 5 minutes with the first timeout, then `Away/Away` in another 5 minutes with the second timeout.
-
-Use `expirationDuration` to configure the expiration of a presence session; otherwise, the default expiration is 5 minutes. Valid values range from 5 minutes to 4 hours, after which the session becomes `Offline`.
 
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
