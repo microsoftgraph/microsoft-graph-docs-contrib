@@ -52,5 +52,11 @@ The following precedence is used for how session states are aggregated, with "A 
 ## Timeout, expiration, and keep alive
 
 A presence session might **time out** and **expire**, so the application needs to call this API before the **timeout**, to maintain the state for the session; or before the **expiration**, to keep the session alive.
+
 A presence session can time out if the availability is `Available` and the timeout is five minutes. When it times out, the presence state fades in stages. For example, if an application sets the presence session as `Available/Available`, the state would change to `Available/AvailableInactive` in 5 minutes with the first timeout, then `Away/Away` in another 5 minutes with the second timeout.
+
 Use `expirationDuration` to configure the expiration of a presence session; otherwise, the default expiration is five minutes. Valid values range from five minutes to four hours, after which the session becomes `Offline`.
+
+## Trusted domains for cross-tenant presence visibility and interaction
+
+Configure **external access** in the Teams admin center, so that only the intended partner organizations can *see and act on presence* for your users. In the Teams admin center (**Users > External access**), allow all domains or add specific domains to the **Allow** list under **Meetings and chat with trusted Microsoft 365 organizations**. Users in those trusted organizations are able to view user presence. Cross-tenant presence requires **mutual trust**, and the partner must also allow your domain. Domains that aren’t trusted (or are blocked) can't see presence or be able to initiate presence-driven interactions. For more details, see [Specify trusted Microsoft 365 organizations](/microsoftteams/trusted-organizations-external-meetings-chat?tabs=organization-settings#specify-trusted-microsoft-365-organizations).
