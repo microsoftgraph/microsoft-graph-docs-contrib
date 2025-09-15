@@ -20,6 +20,7 @@ Represents a deployment event within the Global Secure Access services, includin
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List](../api/networkaccess-networkaccessroot-list-deployments.md)|[microsoft.graph.networkaccess.deployment](../resources/networkaccess-deployment.md) collection|Retrieve a list of logs that include the status of deployments performed through the Global Secure Access services.|
+|[Get](../api/networkaccess-networkaccessroot-list-deployments.md)|[microsoft.graph.networkaccess.deployment](../resources/networkaccess-deployment.md)|Retrieve a specific log entry by deployment ID that include the status of deployment performed through the Global Secure Access services.|
 
 
 ## Properties
@@ -60,4 +61,5 @@ The following JSON representation shows the resource type.
   }
 }
 ```
+
 
