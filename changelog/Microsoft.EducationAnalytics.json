@@ -15,7 +15,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "readingCoachPassage",
           "ChangeType": "Addition",
-          "Description": "Added the [readingCoachPassage](https://learn.microsoft.com/en-us/graph/api/resources/readingCoachPassage?view=graph-rest-1.0) resource.",
+          "Description": "Added the [readingCoachPassage](https://learn.microsoft.com/en-us/graph/api/resources/readingCoachPassage?view=graph-rest-1.0) resource and an associated method.",
           "Target": "readingCoachPassage"
         },
         {
@@ -39,7 +39,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "speakerAssignmentSubmission",
           "ChangeType": "Addition",
-          "Description": "Added the [speakerAssignmentSubmission](https://learn.microsoft.com/en-us/graph/api/resources/speakerAssignmentSubmission?view=graph-rest-1.0) resource.",
+          "Description": "Added the [speakerAssignmentSubmission](https://learn.microsoft.com/en-us/graph/api/resources/speakerAssignmentSubmission?view=graph-rest-1.0) resource and an associated method.",
           "Target": "speakerAssignmentSubmission"
         }
       ],
