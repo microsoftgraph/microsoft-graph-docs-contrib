@@ -22,6 +22,8 @@ Create a copy of a [driveItem][item-resource] asynchronously including child ite
 > File versions are only retained when the `includeAllVersionHistory` parameter is explicitly set to `true`. Otherwise, only the latest version is copied.
 >
 > The copy operation is restricted to 30,000 driveItems. For more information, see [SharePoint limits](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits#moving-and-copying-across-sites).
+>
+> Cross-geo copy is not supported when using App Only authentication.
 
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
