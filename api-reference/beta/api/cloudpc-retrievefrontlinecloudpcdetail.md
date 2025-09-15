@@ -67,7 +67,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/me/cloudPCs/{cloudPCId}/retrieveFrontlineCloudPcDetail
+GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/88019b18-57ae-4973-98c4-3cd728323887/retrieveFrontlineCloudPcDetail
 ```
 
 ### Response
