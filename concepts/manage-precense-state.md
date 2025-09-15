@@ -15,7 +15,9 @@ Microsoft Graph API enables applications to manage user presence states across m
 ## Presence sessions
 
 A user can have multiple presence sessions because the user can be on multiple Teams clients (desktop, mobile, and web). Each Teams client has an independent presence session and the user's presence is an aggregated state from all the sessions behind.
+
 Similarly, an application can have its own presence session for a user and be able to update the state.
+
 The following precedence is used for how session states are aggregated, with "A > B" representing that A has precedence over B:
 * User-preferred state > session-level states (user-preferred state overrides session-level states)
 * Among session-level states: DoNotDisturb > Busy > Available > Away
