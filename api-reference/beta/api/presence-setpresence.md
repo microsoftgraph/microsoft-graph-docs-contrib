@@ -27,14 +27,14 @@ The following precedence is used for how session states are aggregated, with "A 
 * User-preferred state > session-level states (user-preferred state overrides session-level states)
 * Among session-level states: DoNotDisturb > Busy > Available > Away
 
-> **Note:** When a user presence changes in Microsoft Graph, because the Teams client uses poll mode, it will take a few minutes to update the presence status.
+> **Note:** When a user presence changes in Microsoft Graph, because the Teams client uses poll mode, it takes a few minutes to update the presence status.
 
 ### Presence states permutations
 
 | Teams state              | Graph availability / activity            |
 | ------------------------ | ---------------------------------------- |
 | Available                | `Available / Available`                  |
-| Available, Out of Office | `Available / OutOfOffice`                |
+| Available, out of office | `Available / OutOfOffice`                |
 | Busy                     | `Busy / Busy`                            |
 | In a call                | `Busy / InACall`                         |
 | In a meeting             | `Busy / InAMeeting`                      |
@@ -44,20 +44,20 @@ The following precedence is used for how session states are aggregated, with "A 
 | Away                     | `Away / Away`                            |
 | Be right back            | `BeRightBack / BeRightBack`              |
 | Appear offline           | `Offline / OffWork`                      |
-| Out of Office            | `OutOfOffice`                            |
+| Out of office            | `OutOfOffice`                            |
 
 > [!NOTE]
 > 
->The `presence:setPresence` method does not support setting the presence states **"Out of Office (OOF)"** or **"In a Meeting"** directly. These states are automatically managed based on calendar events and mailbox configurations, and attempting to set them via `presence:setPresence` will have no effect.
+>The **presence: setPresence** method doesn't support setting the presence states **Out of office (OOF)** or **In a meeting** directly. These states are automatically managed based on calendar events and mailbox configurations, and attempting to set them via the **presence: setPresence** has no effect.
 >
->To reflect **"Out of Office"** in presence, use the [**Events** API](../resources/event.md) by setting a calendar event’s `showAs` property to `oof`, or configure the user's auto-reply settings using the [**Mailbox Settings** API](../resources/mailboxsettings.md).
+>To reflect **"Out of office"** in presence, use the [events API](../resources/event.md) by setting the **showAs** property of a calendar event to `oof`, or configure the user's auto-reply settings using [mailboxSettings](../resources/mailboxsettings.md).
 >
->The **"In a Meeting"** state is automatically reflected during scheduled calendar meeting events and does not require manual presence updates.
+>The **"In a meeting"** state is automatically reflected during scheduled calendar meeting events and doesn't require manual presence updates.
 
 ### Timeout, expiration, and keep alive
 A presence session may **time out** and **expire**, so the application needs to call this API before the **timeout**, to maintain the state for the session; or before the **expiration**, to keep the session alive.
 
-A presence session can time out if the availability is `Available` and the timeout is 5 minutes. When it times out, the presence state fades in stages. For example, if an application sets the presence session as `Available/Available`, the state would change to `Available/AvailableInactive` in 5 minutes with the first timeout, then `Away/Away` in another 5 minutes with the second timeout.
+A presence session can time out if the availability is `Available` and the timeout is five minutes. When it times out, the presence state fades in stages. For example, if an application sets the presence session as `Available/Available`, the state would change to `Available/AvailableInactive` in 5 minutes with the first timeout, then `Away/Away` in another 5 minutes with the second timeout.
 
 Use `expirationDuration` to configure the expiration of a presence session; otherwise, the default expiration is 5 minutes. Valid values range from 5 minutes to 4 hours, after which the session becomes `Offline`.
 
@@ -107,11 +107,10 @@ Supported combinations of `availability` and `activity` are:
 If successful, this method returns a `200 OK` response code.
 
 ## Examples
-The following request shows the application with ID `22553876-f5ab-4529-bffb-cfe50aa89f87` that sets its presence session for user `fa8bf3dc-eca7-46b7-bad1-db199b62afc3`.
 
 ### Request
 
-
+The following request shows the application with ID `22553876-f5ab-4529-bffb-cfe50aa89f87` that sets its presence session for user `fa8bf3dc-eca7-46b7-bad1-db199b62afc3`.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
