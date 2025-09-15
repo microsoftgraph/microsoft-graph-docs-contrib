@@ -21,7 +21,7 @@ Specifies class-level assignments settings.
 |Method|Return type|Description|
 |:---|:---|:---|
 |[Get](../api/educationassignmentsettings-get.md)|[educationAssignmentSettings](../resources/educationassignmentsettings.md)|Read the properties and relationships of an [educationAssignmentSettings](../resources/educationassignmentsettings.md) object.|
-|[Update grading scheme](../api/educationassignmentsettings-update.md)|[educationAssignmentSettings](../resources/educationassignmentsettings.md)|Update the properties of an [educationAssignmentSettings](../resources/educationassignmentsettings.md) object.|
+|[Update](../api/educationassignmentsettings-update.md)|[educationAssignmentSettings](../resources/educationassignmentsettings.md)|Update the properties of an [educationAssignmentSettings](../resources/educationassignmentsettings.md) object.|
 |[Add default grading scheme](../api/educationassignment-put-gradingscheme.md)|[educationGradingScheme](../resources/educationgradingscheme.md)|Add the default [educationGradingScheme](../resources/educationgradingscheme.md) to an **educationAssignmentSettings** object.|
 
 ## Properties
@@ -33,9 +33,9 @@ Specifies class-level assignments settings.
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|defaultGradingScheme|[educationGradingScheme](educationgradingscheme.md)| TODO |
+|defaultGradingScheme|[educationGradingScheme](educationgradingscheme) |The default grading scheme for assignments created in this class. |
 |gradingCategories|[educationGradingCategory](educationgradingcategory.md) collection| When set, enables users to weight assignments differently when computing a class average grade.|
-|gradingSchemes|[educationGradingScheme](educationgradingscheme.md) collection| TODO |
+|gradingSchemes|[educationGradingScheme](educationgradingscheme.md) collection| The grading schemes that can be attached to assignments created in this class. |
 
 ## JSON representation
 The following JSON representation shows the resource type.
@@ -49,7 +49,7 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "id": "String (identifier)",
-  "submissionAnimationDisabled": "Boolean"
+  "submissionAnimationDisabled": false
 }
 ```
 
