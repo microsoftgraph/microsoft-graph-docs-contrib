@@ -363,64 +363,18 @@ The following example shows the response.
 ```http
   HTTP/1.1 200 OK 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/deletedItems/namedLocations",
-    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET identity/conditionalAccess/deletedItems/namedLocations?$select=createdDateTime,displayName",
-    "value": [
-        {
-            "@odata.type": "#microsoft.graph.countryNamedLocation",
-            "id": "1a4c0633-332f-4691-a27a-fd8334938a62",
-            "displayName": "Calvin Test USA",
-            "modifiedDateTime": "2025-09-05T22:12:01.4444669Z",
-            "createdDateTime": "2025-09-05T22:12:01.4444669Z",
-            "deletedDateTime": "2025-09-08T16:03:43Z",
-            "countriesAndRegions": [
-                "US"
-            ],
-            "includeUnknownCountriesAndRegions": false,
-            "countryLookupMethod": "clientIpAddress"
-        },
-        {
-            "@odata.type": "#microsoft.graph.ipNamedLocation",
-            "id": "003fe866-1f11-4356-8ddc-22e52f491cc5",
-            "displayName": "Pallav IP Test",
-            "modifiedDateTime": "2025-09-10T15:36:17.992593Z",
-            "createdDateTime": "2025-09-10T15:35:45.6440841Z",
-            "deletedDateTime": "2025-09-12T16:56:35Z",
-            "isTrusted": false,
-            "ipRanges": [
-                {
-                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
-                    "cidrAddress": "127.30.27.128/30"
-                }
-            ]
-        },
-        {
-            "@odata.type": "#microsoft.graph.countryNamedLocation",
-            "id": "1af6fe69-61bc-4cc8-b854-b5fe6a09740d",
-            "displayName": "Pallav US location",
-            "modifiedDateTime": "2025-09-12T16:58:52.2956608Z",
-            "createdDateTime": "2025-09-12T16:58:52.2956608Z",
-            "deletedDateTime": "2025-09-12T17:04:05Z",
-            "countriesAndRegions": [
-                "US"
-            ],
-            "includeUnknownCountriesAndRegions": false,
-            "countryLookupMethod": "clientIpAddress"
-        },
-        {
-            "@odata.type": "#microsoft.graph.countryNamedLocation",
-            "id": "1b2eda10-c34b-4056-ada8-b2e3f3f5f165",
-            "displayName": "Pallav Antarctica test",
-            "modifiedDateTime": "2025-09-12T16:59:20.2828197Z",
-            "createdDateTime": "2025-09-12T16:59:20.2828197Z",
-            "deletedDateTime": "2025-09-12T17:03:56Z",
-            "countriesAndRegions": [
-                "AQ"
-            ],
-            "includeUnknownCountriesAndRegions": false,
-            "countryLookupMethod": "clientIpAddress"
-        }
-    ]
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/deletedItems/namedLocations/$entity",
+  "@odata.type": "#microsoft.graph.countryNamedLocation",
+  "id": "1a4c0633-332f-4691-a27a-fd8334938a62",
+  "displayName": "Calvin Test USA",
+  "modifiedDateTime": "2025-09-05T22:12:01.4444669Z",
+  "createdDateTime": "2025-09-05T22:12:01.4444669Z",
+  "deletedDateTime": "2025-09-08T16:03:43Z",
+  "countriesAndRegions": [
+    "US"
+  ],
+  "includeUnknownCountriesAndRegions": false,
+  "countryLookupMethod": "clientIpAddress"
 }
 ```
 
