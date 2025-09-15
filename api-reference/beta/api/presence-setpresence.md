@@ -57,7 +57,7 @@ The following precedence is used for how session states are aggregated, with "A 
 ### Timeout, expiration, and keep alive
 A presence session may **time out** and **expire**, so the application needs to call this API before the **timeout**, to maintain the state for the session; or before the **expiration**, to keep the session alive.
 
-A presence session can time out if the availability is `Available` and the timeout is five minutes. When it times out, the presence state fades in stages. For example, if an application sets the presence session as `Available/Available`, the state would change to `Available/AvailableInactive` in 5 minutes with the first timeout, then `Away/Away` in another 5 minutes with the second timeout.
+A presence session can time out if the availability is `Available` and the timeout is 5 minutes. When it times out, the presence state fades in stages. For example, if an application sets the presence session as `Available/Available`, the state would change to `Available/AvailableInactive` in 5 minutes with the first timeout, then `Away/Away` in another 5 minutes with the second timeout.
 
 Use `expirationDuration` to configure the expiration of a presence session; otherwise, the default expiration is 5 minutes. Valid values range from 5 minutes to 4 hours, after which the session becomes `Offline`.
 
