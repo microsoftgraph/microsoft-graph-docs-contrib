@@ -268,7 +268,8 @@
             "room",
             "roomList",
             "section",
-            "workspace"
+            "workspace",
+            "checkInClaim"
           ],
           "complexTypes": [
             "assignedPlaceMode",
