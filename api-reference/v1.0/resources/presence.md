@@ -32,7 +32,7 @@ This resource supports subscribing to [change notifications](/graph/changenotifi
 
 | Property            | Type               | Description                                     |
 | :------------------ | :------------------| :---------------------------------------        |
-| activity            | String             | The supplemental information to a user's availability. Possible values are `Available`, `Away`, `BeRightBack`, `Busy`, `DoNotDisturb`, `Offline`, `OutOfOffice`, `PresenceUnknown` |
+| activity            | String             | The supplemental information to a user's availability. Possible values are `Available`, `Away`, `BeRightBack`, `Busy`, `DoNotDisturb`, `Offline`, `OutOfOffice`, `PresenceUnknown`. |
 | availability        | String             | The base presence information for a user. Possible values are `Available`, `Away`, `BeRightBack`, `Busy`, `DoNotDisturb`, `Focusing`, `InACall`, `InAMeeting`, `Offline`, `Presenting`, `PresenceUnknown`.    |
 | id                  | String             | The unique identifier for the user. |
 | outOfOfficeSettings | [outOfOfficeSettings](outofofficesettings.md) | The out of office settings for a user.  |
