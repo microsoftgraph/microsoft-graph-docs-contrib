@@ -143,15 +143,6 @@ The following table lists the members of an [evolvable enumeration](/graph/best-
 |standbyMode|Indicates that the frontline Cloud PC is in a standby state before it's shut down and deallocated. A frontline Cloud PC in a standby state is still accessible by the user.|
 |unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
 
-### frontlineCloudPcAvailability values
-
-|Member|Description|
-|:---|:---|
-|notApplicable|Default. The Cloud PC isn't a frontline-assigned type.|
-|available|The current frontline Cloud PC is available and the user is able to connect to it.|
-|notAvailable|The frontline Cloud PC is currently not available and the associated user isn't able to connect to it.|
-|unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
-
 ### cloudPcProductType values
 
 |Member|Description|
