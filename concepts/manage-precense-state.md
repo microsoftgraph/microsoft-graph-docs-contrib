@@ -1,5 +1,5 @@
 --
-title: "Manage precense state using the Microsoft Graph API"
+title: "Manage presence state using the Microsoft Graph API"
 description: "Learn how to manage presence states and sessions using Microsoft Graph API."
 author: "garchiro7"
 ms.localizationpriority: medium
@@ -8,7 +8,7 @@ ms.date: 09/15/2025
 ms.topic: article
 ---
 
-# Manage precense state using the Microsoft Graph API
+# Manage presence state using the Microsoft Graph API
 
 Microsoft Graph API enables applications to manage user presence states across multiple sessions, ensuring accurate and dynamic availability updates.
 
