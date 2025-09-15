@@ -42,6 +42,13 @@ Added a note to the **artifactCount** property of the [granularMailboxRestoreArt
 - Use the **caseType** property on [ediscoveryCaseSettings](/graph/api/resources/security-ediscoverycasesettings) to get or set the type of an eDiscovery case.
 - Use the **reviewSetSettings** property on [ediscoveryCaseSettings](/graph/api/resources/security-ediscoverycasesettings) to get or set the review set settings for a case.
 
+### Teamwork and communications | Calls and online meetings
+
+- Removed `InACall`, `InAConferenceCall`, `Inactive`, `InAMeeting`, `Presenting`, `UrgentInterruptionsOnly`, and `OffWork` as supported values for the **activity** property of [presence](/graph/api/resources/presence).
+- Removed `AvailableIdle` and `BusyIdle` as supported values for the **availability** property of [presence](/graph/api/resources/presence).
+- Added `Focusing`, `InACall`, `InAMeeting`, and `Presenting` as supported values to the **availability** property of [presence](/graph/api/resources/presence).
+- The throttling limit for the [presence](/graph/api/resources/presence) resource increased from 1,500 to 10,000 requests per 30 seconds, per application per tenant.
+
 ### Teamwork and communications | Messaging
 
 - [Create a one-on-one or group chat with installed apps](/graph/api/chat-post#example-3-create-a-one-on-one-chat-with-installed-apps).
@@ -56,6 +63,13 @@ Added a note to the **artifactCount** property of the [granularMailboxRestoreArt
 ### Calendars | Places
 
 The new map APIs in Places enable applications with appropriate read or write permissions to interact with map feature objects. For more information, see [Working with the Places API in Microsoft Graph](/graph/api/resources/places-api-overview?view=graph-rest-beta&preserve-view=true#map-feature-types).
+
+### Teamwork and communications | Calls and online meetings
+
+- Removed `InACall`, `InAConferenceCall`, `Inactive`, `InAMeeting`, `Presenting`, `UrgentInterruptionsOnly`, and `OffWork` as supported values for the **activity** property of [presence](/graph/api/resources/presence).
+- Removed `AvailableIdle` and `BusyIdle` as supported values for the **availability** property of [presence](/graph/api/resources/presence?view=graph-rest-beta&preserve-view=true).
+- Added `Focusing`, `InACall`, `InAMeeting`, and `Presenting` as supported values to the **availability** property of [presence](/graph/api/resources/presence?view=graph-rest-beta&preserve-view=true).
+- The throttling limit for the [presence](/graph/api/resources/presence?view=graph-rest-beta&preserve-view=true) resource increased from 1,500 to 10,000 requests per 30 seconds, per application per tenant.
 
 ### Teamwork and communications | Messaging
 
