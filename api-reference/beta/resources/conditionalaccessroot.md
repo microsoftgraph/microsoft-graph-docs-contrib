@@ -35,6 +35,7 @@ None.
 |authenticationStrength|[authenticationStrengthRoot](authenticationstrengthroot.md)|Defines the authentication strength policies, valid authentication method combinations, and authentication method mode details that can be required by a conditional access policy.|
 |namedLocations|[namedLocation](namedlocation.md) collection| Read-only. Nullable. Returns a collection of the specified named locations.|
 |policies|[conditionalAccessPolicy](conditionalaccesspolicy.md) collection| Read-only. Nullable. Returns a collection of the specified Conditional Access policies.|
+|deletedItems|[caPoliciesDeletableRoot](caPoliciesDeletableRoot.md) collection| Read-only. Nullable. Returns a collection of the deleted Conditional Access objects.|
 |templates|[conditionalAccessTemplate](../resources/conditionalaccesstemplate.md) collection| Read-only. Nullable. Returns a collection of the specified Conditional Access templates.|
 |authenticationStrengths (deprecated)|[authenticationStrengthRoot](authenticationstrengthroot.md)|**DEPRECATED**. See the **authenticationStrength** relationship instead.|
 

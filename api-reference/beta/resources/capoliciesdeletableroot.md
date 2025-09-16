@@ -16,7 +16,6 @@ Namespace: microsoft.graph
 
 Represents a container for conditional access objects in Microsoft Entra that support soft-delete functionality.
 
-
 Inherits from [entity](../resources/entity.md).
 
 
@@ -29,9 +28,8 @@ None.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|crossTenantPartn
-|conditionalAccessPolicy|[conditionalAccessPolicy](../resources/conditionalaccesspolicy.md)|Represents a Microsoft Entra Conditional Access policy. Conditional access policies are custom rules that define an access scenario.|
-|namedLocation|[namedLocation](../resources/namedlocation.md)|This is the base class that represents a Microsoft Entra ID named location. Named locations are custom rules that define network locations which can then be used in a Conditional Access (CA) policy.|
+|namedLocations|[namedLocation](namedlocation.md) collection| Read-only. Nullable. Returns a collection of the specified named locations.|
+|policies|[conditionalAccessPolicy](conditionalaccesspolicy.md) collection| Read-only. Nullable. Returns a collection of the specified Conditional Access policies.|
 
 ## JSON representation
 The following JSON representation shows the resource type.
