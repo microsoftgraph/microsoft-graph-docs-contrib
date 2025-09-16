@@ -65,9 +65,9 @@ In the request body, provide a JSON object with the following parameters.
 | requireSignIn    | Boolean                                         | Specifies where the recipient of the invitation is required to sign-in to view the shared item.            |
 | sendInvitation   | Boolean                                         | Specifies if an email or post is generated (false) or if the permission is recently created (true).            |
 | roles            | Collection(String)                              | Specifies the roles that are granted to the recipients of the sharing invitation.                         |
-| expirationDateTime | DateTimeOffset                       | Specifies the **dateTime** after which the permission expires. For OneDrive for Business and SharePoint, **xpirationDateTime** is only applicable for **sharingLink** permissions. Available on OneDrive for Business, SharePoint, and premium personal OneDrive accounts.
-| password           | String                         | The password set on the invite by the creator. Optional and OneDrive Personal only
-| retainInheritedPermissions | Boolean                        | Optional. If `true` (default), any existing inherited permissions are retained on the shared item when sharing this item for the first time. If `false`, all existing permissions are removed when sharing for the first time.
+| expirationDateTime | DateTimeOffset                       | Specifies the **dateTime** after which the permission expires. For OneDrive for Business and SharePoint, **expirationDateTime** is only applicable for **sharingLink** permissions. Available on OneDrive for Business, SharePoint, and premium personal OneDrive accounts. |
+| password           | String                         | The password set on the invite by the creator. Optional and OneDrive Personal only. |
+| retainInheritedPermissions | Boolean                        | Optional. If `true` (default), any existing inherited permissions are retained on the shared item when sharing this item for the first time. If `false`, all existing permissions are removed when sharing for the first time. |
 
 ## Example
 
@@ -174,6 +174,7 @@ Content-type: application/json
   ]
 }
 ```
+
 ### Partial success response
 
 When inviting multiple recipients, it's possible for the notification to succeed for some and fail for others.
@@ -231,17 +232,19 @@ Content-type: application/json
   ]
 }
 ```
+
 ### SendNotification errors
+
 The following are some other errors that your app might encounter within the nested `innererror` objects when sending notification fails.
 Apps aren't required to handle these errors.
 
 | Code                           | Description                                                                          |
 |:-------------------------------|:--------------------------------------------------------------------------------------
-| accountVerificationRequired    | Account verification is required to unblock sending notifications.
-| hipCheckRequired               | Need to solve HIP (Host Intrusion Prevention) check to unblock sending notifications.
-| exchangeInvalidUser            | Current user's mailbox wasn't found.
+| accountVerificationRequired    | Account verification is required to unblock sending notifications. |
+| hipCheckRequired               | Need to solve HIP (Host Intrusion Prevention) check to unblock sending notifications. |
+| exchangeInvalidUser            | Current user's mailbox wasn't found. |
 | exchangeOutOfMailboxQuota      | Out of quota.
-| exchangeMaxRecipients          | Exceeded maximum number of recipients that can be sent notifications at the same time.
+| exchangeMaxRecipients          | Exceeded maximum number of recipients that can be sent notifications at the same time. |
 
 >**Note:** The service can add new error codes or stop returning old ones at any time.
 
