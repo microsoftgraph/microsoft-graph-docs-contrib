@@ -1193,7 +1193,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "activatedWithScope",
           "ChangeType": "Addition",
-          "Description": "Added the **activatedWithScope** property to the workflowExecutionType property.",
+          "Description": "Added the **activatedWithScope** value to the workflowExecutionType property.",
           "Target": "workflowExecutionType"
         },
         {
