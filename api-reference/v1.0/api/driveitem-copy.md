@@ -1,7 +1,7 @@
 ---
 author: spgraph-docs-team
 description: "Asynchronously create a copy of a driveItem (including any children) under a new parent item or with a new name."
-ms.date: 05/14/2025
+ms.date: 09/23/2025
 title: "driveItem: copy"
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
@@ -22,6 +22,8 @@ The copy operation is restricted to 30,000 driveItems. For more information, see
 
 > [!NOTE]
 > Cross-geo copy is not supported when using App-only authentication.
+>
+> There's a known issue where the `includeAllVersionHistory` request parameter is ignored if the `name` request parameter is also passed. Perform the copy operation without the `name` parameter first, and then rename the target item once the copy completes.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -72,12 +74,10 @@ In the request body, provide a JSON object with the following parameters.
 | parentReference | [ItemReference](../resources/itemreference.md) | Optional. Reference to the parent item the copy is created in.                                         |
 | name            | string                                         | Optional. The new name for the copy. If this information isn't provided, the same name is used as the original.    |
 | childrenOnly    | Boolean                                        | Optional. If set to `true`, the children of the **driveItem** are copied but not the **driveItem** itself. The default value is `false`. Valid _only_ on folder items. |
-| includeAllVersionHistory    | Boolean                            | Optional. If set to `true`, source files version history (major versions and minor versions, if any) should be copied to the destination, within the target version setting limit. If `false`, only the latest major version is copied to the destination. The default value is `false`.   |
+| includeAllVersionHistory    | Boolean                            | Optional. If set to `true`, source files version history (major versions and minor versions, if any) should be copied to the destination, within the target version setting limit. If `false`, only the latest major version is copied to the destination. The default value is `false`. |
 
 >[!NOTE]
 >The `parentReference` parameter should include the `driveId` and `id` parameters for the target folder.
- 
-
 
 ## Response
 
