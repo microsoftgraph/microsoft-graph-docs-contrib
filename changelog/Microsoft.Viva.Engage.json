@@ -343,14 +343,6 @@
         {
           "Id": "0b12a7c2-cdb5-40f7-b6b5-9e1aa66bd953",
           "ApiChange": "Enumeration",
-          "ChangedApiName": "bodyType",
-          "ChangeType": "Addition",
-          "Description": "Added the **bodyType** enumeration type.",
-          "Target": "bodyType"
-        },
-        {
-          "Id": "0b12a7c2-cdb5-40f7-b6b5-9e1aa66bd953",
-          "ApiChange": "Enumeration",
           "ChangedApiName": "engagementConversationMessageReactionType",
           "ChangeType": "Addition",
           "Description": "Added the **engagementConversationMessageReactionType** enumeration type.",
@@ -379,22 +371,6 @@
           "ChangeType": "Addition",
           "Description": "Added the [engagementIdentitySet](https://learn.microsoft.com/en-us/graph/api/resources/engagementIdentitySet?view=graph-rest-1.0) resource.",
           "Target": "engagementIdentitySet"
-        },
-        {
-          "Id": "0b12a7c2-cdb5-40f7-b6b5-9e1aa66bd953",
-          "ApiChange": "Resource",
-          "ChangedApiName": "identity",
-          "ChangeType": "Addition",
-          "Description": "Added the [identity](https://learn.microsoft.com/en-us/graph/api/resources/identity?view=graph-rest-1.0) resource.",
-          "Target": "identity"
-        },
-        {
-          "Id": "0b12a7c2-cdb5-40f7-b6b5-9e1aa66bd953",
-          "ApiChange": "Resource",
-          "ChangedApiName": "identitySet",
-          "ChangeType": "Addition",
-          "Description": "Added the [identitySet](https://learn.microsoft.com/en-us/graph/api/resources/identitySet?view=graph-rest-1.0) resource.",
-          "Target": "identitySet"
         },
         {
           "Id": "0b12a7c2-cdb5-40f7-b6b5-9e1aa66bd953",
@@ -476,7 +452,5 @@
       "WorkloadArea": "Employee experience",
       "SubArea": "Employee engagement"
     }
-
-    
   ]
 }
