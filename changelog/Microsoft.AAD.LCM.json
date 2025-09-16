@@ -1196,6 +1196,14 @@
           "Description": "Added the **activatedWithScope** value to the workflowExecutionType property.",
           "Target": "workflowExecutionType"
         },
+         {
+          "Id": "4688a713-d9d5-4db3-9894-aafdcbe17694",
+          "ApiChange": "Method",
+          "ChangedApiName": "activateWithScope",
+          "ChangeType": "Addition",
+          "Description": "Added the [activateWithScope](https://learn.microsoft.com/en-us/graph/api/identityGovernance-workflow-activateWithScope?view=graph-rest-beta) method to the [workflow](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-workflow?view=graph-rest-beta) resource.",
+          "Target": "workflow"
+        },
         {
           "Id": "4688a713-d9d5-4db3-9894-aafdcbe17694",
           "ApiChange": "Relationship",
