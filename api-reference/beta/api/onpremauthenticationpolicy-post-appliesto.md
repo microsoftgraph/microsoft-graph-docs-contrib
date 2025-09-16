@@ -1,10 +1,10 @@
 ---
 title: "Add appliesTo"
 description: "Add appliesTo by posting to the appliesTo collection."
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+author: "maheshwaria"
 ms.date: 09/10/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -47,14 +47,6 @@ POST /policies/onPremAuthenticationPolicies/{onPremAuthenticationPolicyId}/appli
 ## Request body
 
 In the request body, supply a JSON representation of the [directoryObject](../resources/directoryobject.md) object.
-
-You can specify the following properties when creating a **directoryObject**.
-
-**TODO: Remove properties that don't apply**
-|Property|Type|Description|
-|:---|:---|:---|
-|deletedDateTime|DateTimeOffset|**TODO: Add Description** Optional.|
-
 
 
 ## Response

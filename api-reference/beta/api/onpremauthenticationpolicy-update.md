@@ -1,10 +1,10 @@
 ---
 title: "Update onPremAuthenticationPolicy"
 description: "Update the properties of an onPremAuthenticationPolicy object."
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+author: "maheshwaria"
 ms.date: 09/10/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -48,16 +48,7 @@ PATCH /policies/onPremAuthenticationPolicies/{onPremAuthenticationPolicyId}
 
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
-
-**TODO: Remove properties that don't apply**
-|Property|Type|Description|
-|:---|:---|:---|
-|deletedDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [directoryObject](../resources/directoryobject.md). Optional.|
-|description|String|**TODO: Add Description** Inherited from [policyBase](../resources/policybase.md). Required.|
-|displayName|String|**TODO: Add Description** Inherited from [policyBase](../resources/policybase.md). Required.|
-|definition|String collection|**TODO: Add Description** Inherited from [stsPolicy](../resources/stspolicy.md). Required.|
-|isOrganizationDefault|Boolean|**TODO: Add Description** Inherited from [stsPolicy](../resources/stspolicy.md). Optional.|
-
+In the request body, supply a JSON representation of a [onPremAuthenticationPolicy](../resources/onpremauthenticationpolicy.md) object.
 
 
 ## Response

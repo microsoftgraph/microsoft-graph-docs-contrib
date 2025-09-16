@@ -1,10 +1,10 @@
 ---
 title: "Get onPremAuthenticationPolicy"
 description: "Read the properties and relationships of onPremAuthenticationPolicy object."
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+author: "maheshwaria"
 ms.date: 09/10/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -85,17 +85,15 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.onPremAuthenticationPolicy",
-    "id": "2e68a8f2-50ce-b21d-d25d-c34b59675ee2",
-    "deletedDateTime": "String (timestamp)",
-    "description": "String",
-    "displayName": "String",
-    "definition": [
-      "String"
-    ],
-    "isOrganizationDefault": "Boolean"
-  }
+  "@odata.type": "#microsoft.graph.onPremAuthenticationPolicy",
+  "id": "2e68a8f2-50ce-b21d-d25d-c34b59675ee2",
+  "deletedDateTime": "String (timestamp)",
+  "description": "String",
+  "displayName": "String",
+  "definition": [
+    "String"
+  ],
+  "isOrganizationDefault": "Boolean"
 }
 ```
 
