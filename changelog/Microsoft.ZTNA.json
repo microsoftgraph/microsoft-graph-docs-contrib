@@ -1127,6 +1127,57 @@
       "CreatedDateTime": "2025-08-26T07:42:57.8177927Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Network access"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "ae2295eb-2e29-43b6-8de7-4219db8e9e4c",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "deploymentStage",
+          "ChangeType": "Addition",
+          "Description": "Added the **deploymentStage** enumeration type.",
+          "Target": "deploymentStage"
+        },
+        {
+          "Id": "ae2295eb-2e29-43b6-8de7-4219db8e9e4c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deploymentConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [deploymentConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-deploymentConfiguration?view=graph-rest-beta) resource.",
+          "Target": "deploymentConfiguration"
+        },
+        {
+          "Id": "ae2295eb-2e29-43b6-8de7-4219db8e9e4c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deploymentStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the [deploymentStatus](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-deploymentStatus?view=graph-rest-beta) resource.",
+          "Target": "deploymentStatus"
+        },
+        {
+          "Id": "ae2295eb-2e29-43b6-8de7-4219db8e9e4c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deployment",
+          "ChangeType": "Addition",
+          "Description": "Added the [deployment](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-deployment?view=graph-rest-beta) resource.",
+          "Target": "deployment"
+        },
+        {
+          "Id": "ae2295eb-2e29-43b6-8de7-4219db8e9e4c",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "deployments",
+          "ChangeType": "Addition",
+          "Description": "Added the **deployments** relationship to the [networkAccessRoot](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-networkAccessRoot?view=graph-rest-beta) resource.",
+          "Target": "networkAccessRoot"
+        }
+      ],
+      "Id": "ae2295eb-2e29-43b6-8de7-4219db8e9e4c",
+      "Cloud": "Review",
+      "Version": "beta",
+      "CreatedDateTime": "2025-09-16T18:57:36.187954Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Network access"
     }
+  ]
   ]
 }
