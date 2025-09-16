@@ -6,7 +6,7 @@ ms.localizationpriority: medium
 
 |Permission type|Least privileged permission|Higher privileged permissions|
 |:---|:---|:---|
-|Delegated (work or school account)|EngagementMeetingConversation.Read.All|Not available.|
+|Delegated (work or school account)|Not available.|Not available.|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
 |Application|EngagementMeetingConversation.Read.All|Not available.|
 
