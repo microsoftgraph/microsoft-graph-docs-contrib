@@ -17,6 +17,7 @@ Namespace: microsoft.graph
 Create a new fraudProtectionProvider object. You can create one of the following subtypes that are derived from **fraudProtectionProvider**.
 
 - [arkoseFraudProtectionProvider](../resources/arkoseFraudProtectionProvider.md)
+- [humanSecurityFraudProtectionProvider](../resources/humansecurityfraudprotectionprovider.md) resource type
 
 ## Permissions
 
@@ -56,12 +57,13 @@ You can specify the following properties when creating a **fraudProtectionProvid
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|The display name of this fraud protection provider configuration. Required. Inherited from [fraudProtectionProvider](../resources/fraudprotectionprovider.md).|
-|privateKey|String|The private key available on the Arkose Portal. Contact your Arkose Customer Success Manager for assistance with your keys. Required.|
-|publicKey|String|The public key available on the Arkose Portal. Contact your Arkose Customer Success Manager for assistance with your keys. Required.|
-|verifySubDomain|String|Used to invoke the Arkose service from the Microsoft authentication server. Request from your Arkose Customer Success Manager or use the default `verify-api` value. Required.|
-|clientSubDomain|String|Used to invoke the Arkose service from the client application. Request from your Arkose Customer Success Manager or use the default `client-api` value. Required.|
-
+|displayName|String|The display name of this fraud protection provider configuration. Supported for all providers. Required. Inherited from [fraudProtectionProvider](../resources/fraudprotectionprovider.md).|
+|privateKey|String|The private key available on the Arkose Portal. Contact your Arkose Customer Success Manager for assistance with your keys. Supported for Arkose only. Required.|
+|publicKey|String|The public key available on the Arkose Portal. Contact your Arkose Customer Success Manager for assistance with your keys. Supported for Arkose only. Required.|
+|verifySubDomain|String|Used to invoke the Arkose service from the Microsoft authentication server. Request from your Arkose Customer Success Manager or use the default `verify-api` value. Supported for Arkose only. Required.|
+|clientSubDomain|String|Used to invoke the Arkose service from the client application. Request from your Arkose Customer Success Manager or use the default `client-api` value. Supported for Arkose only. Required.|
+|appId|String|Unique identifier for an individual application. You can retrieve this from the HUMAN Security Admin Console or request it from your HUMAN Security Customer Success Manager. Supported for HUMAN Security only. Required.|
+|serverToken|String| Unique identifier used to authenticate API calls between the Server side integration and the HUMAN platform. You can retrieve this from the HUMAN Security Admin Console or request it from your HUMAN Security Customer Success Manager. Supported for HUMAN Security only. Required.|
 
 
 ## Response

@@ -18,7 +18,7 @@ Represents the configuration details for a third-party fraud protection provider
 This is an abstract type that serves as the base resource for specific provider implementations. The following derived types are currently supported.
 
 - [arkosefraudprotectionprovider](../resources/arkosefraudprotectionprovider.md) resource type
-
+- [humanSecurityFraudProtectionProvider](../resources/humansecurityfraudprotectionprovider.md) resource type
 
 Inherits from [entity](../resources/entity.md).
 
