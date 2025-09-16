@@ -1,6 +1,6 @@
 ---
-title: "engagementConversationSystemMessage resource type"
-description: "Represents an individual system message in a Viva Engage conversation."
+title: "engagementConversationDiscussionMessage resource type"
+description: "Represents a starter message for a discussion post in a Viva Engage conversation."
 author: "aditijha"
 ms.date: 06/16/2025
 ms.localizationpriority: medium
@@ -8,21 +8,22 @@ ms.subservice: "viva-engage"
 doc_type: resourcePageType
 ---
 
-# engagementConversationSystemMessage resource type
+# engagementConversationDiscussionMessage resource type
 
 Namespace: microsoft.graph
 
-Represents an individual system message in a Viva Engage conversation.
+Represents a starter message for a discussion post in a Viva Engage conversation.
 
 Inherits from [engagementConversationMessage](../resources/engagementconversationmessage.md).
 
 ## Methods
+
 None.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|body|[itemBody](../resources/itembody.md)|The main content of the message. Inherited from [engagementConversationMessage](../resources/engagementconversationmessage.md).|
+|body|[itemBody](../resources/itembody.md)|The main content of the discussion post message on Viva Engage. Inherited from [engagementConversationMessage](../resources/engagementconversationmessage.md).|
 |createdDateTime|DateTimeOffset|The date and time when the message was created. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [engagementConversationMessage](../resources/engagementconversationmessage.md).|
 |creationMode|[engagementCreationMode](../resources/engagementconversationmessage.md#engagementcreationmode-values)|Indicates how the message was created. The possible values are: `none`, `migration`, `unknownFutureValue`. Inherited from [engagementConversationMessage](../resources/engagementconversationmessage.md).|
 |from|[engagementIdentitySet](../resources/engagementidentityset.md)|Identity of the sender of the message. Inherited from [engagementConversationMessage](../resources/engagementconversationmessage.md).|
@@ -43,7 +44,7 @@ The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.engagementConversationSystemMessage",
+  "@odata.type": "microsoft.graph.engagementConversationDiscussionMessage",
   "baseType": "microsoft.graph.engagementConversationMessage",
   "openType": false
 }
