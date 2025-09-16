@@ -21,13 +21,18 @@ Read the properties and relationships of a [policyDeletableItem](../resources/po
 - [namedLocation](../resources/namedlocation.md)
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
+## Permissions
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 <!-- {
   "blockType": "permissions",
-  "name": "policydeletableitem-get-permissions"
+  "name": "policydeletableitem-get-permissions",
+  "requestUrls": ["GET /policies/deletedItems/crossTenantPartners/{id}", "GET /policies/deletedItems/crossTenantSyncPolicyPartners/{id}"],
+  "mergePermissions": true 
+  
 }
 -->
 [!INCLUDE [permissions-table](../includes/permissions/policydeletableitem-get-permissions.md)]
@@ -39,7 +44,7 @@ Get a deleted **crossTenantAccessPolicyConfigurationPartner** object:
   "blockType": "ignored"
 }
 -->
-```HTTP
+``` http
 GET /policies/deletedItems/crossTenantPartners/{id}
 ```
 
@@ -48,7 +53,7 @@ Get a deleted **crossTenantIdentitySyncPolicyPartner** object:
   "blockType": "ignored"
 }
 -->
-```HTTP
+``` http
 GET /policies/deletedItems/crossTenantSyncPolicyPartners/{id}
 ```
 
@@ -144,6 +149,7 @@ The following example shows the response.
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
+
 {
   "@odata.context": "https://graph.microsoft-ppe.com/testppebetadeleteapis/$metadata#policies/deletedItems/crossTenantPartners/$entity",
   "tenantId": "01d0e717-bc90-46ba-94a9-71b4a811fddb",
@@ -229,6 +235,7 @@ The following example shows the response.
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
+
 {
   "@odata.context": "https://graph.microsoft-ppe.com/testppebetadeleteapis/$metadata#policies/deletedItems/crossTenantSyncPolicyPartners/$entity",
   "tenantId": "01d0e717-bc90-46ba-94a9-71b4a811fddb",
@@ -238,6 +245,7 @@ Content-Type: application/json
   "userSyncInbound": null
 }
 ```
+
 
 ### Example 3: Retrieve a deleted conditionalAccessPolicy object
 

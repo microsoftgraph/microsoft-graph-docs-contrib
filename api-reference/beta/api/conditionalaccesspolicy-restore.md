@@ -1,6 +1,6 @@
 ﻿---
-title: "Restore conditionalAccessPolicy."
-description: "Restore a deleted conditionalAccessPolicy."
+title: "Restore conditionalAccessPolicy"
+description: "Restore a deleted conditionalAccessPolicy object"
 author: "ashyasingh"
 ms.date: 08/11/2025
 ms.localizationpriority: medium

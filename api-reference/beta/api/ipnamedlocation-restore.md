@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Restore a deleted [ipNamedLocation](../resources/ipNamedLocation.md)  object.
+Restore a deleted [ipNamedLocation](../resources/ipNamedLocation.md) object.
 
 ## Permissions
 
@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-POST /identity/conditionalAccess/deletedItems/namedLocations/{namedLocationId}/restore
+POST /identity/conditionalAccess/deletedItems/namedLocations/{id}/restore
 ```
 
 ## Request headers

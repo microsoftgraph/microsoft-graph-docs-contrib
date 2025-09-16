@@ -29,28 +29,31 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "policydeletableitem-delete-permissions"
+  "name": "policydeletableitem-delete-permissions",
+  "requestUrls": ["DELETE /policies/deletedItems/crossTenantPartners/{id}", "DELETE /policies/deletedItems/crossTenantSyncPolicyPartners/{id}"],
+  "mergePermissions": true 
 }
 -->
 [!INCLUDE [permissions-table](../includes/permissions/policydeletableitem-delete-permissions.md)]
 
 ## HTTP request
 
-Permanently delete a  **crossTenantAccessPolicyConfigurationPartner** object:
+Permanently delete a **crossTenantAccessPolicyConfigurationPartner** object:
 <!-- {
   "blockType": "ignored"
 }
 -->
-```HTTP
+``` http
 DELETE /policies/deletedItems/crossTenantPartners/{id}
 ```
 
-Permanently delete a  **crossTenantIdentitySyncPolicyPartner** object:
+
+Permanently delete a **crossTenantIdentitySyncPolicyPartner** object:
 <!-- {
   "blockType": "ignored"
 }
 -->
-```HTTP
+``` http
 DELETE /policies/deletedItems/crossTenantSyncPolicyPartners/{id}
 ```
 

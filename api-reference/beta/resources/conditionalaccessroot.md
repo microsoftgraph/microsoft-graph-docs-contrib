@@ -19,6 +19,7 @@ The **conditionalAccessRoot** resource is the entry point for the Conditional Ac
 
 For more information on Conditional Access in Microsoft Entra ID, see [What is Conditional Access](/azure/active-directory/conditional-access/overview)?
 
+
 ## Methods
 
 None.

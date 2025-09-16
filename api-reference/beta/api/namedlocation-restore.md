@@ -1,6 +1,6 @@
 ﻿---
-title: "Restore a named location"
-description: "Restore a deleted named location object."
+title: "Restore a namedLocation"
+description: "Restore a deleted namedLocation object."
 author: "ashyasingh"
 ms.date: 08/11/2025
 ms.localizationpriority: medium
@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-POST /identity/conditionalAccess/deletedItems/namedLocations/{namedLocationId}/restore
+POST /identity/conditionalAccess/deletedItems/namedLocations/{id}/restore
 ```
 
 ## Request headers
