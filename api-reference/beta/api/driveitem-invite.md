@@ -1,7 +1,7 @@
 ---
 author: spgraph-docs-team
 description: "Sends a sharing invitation for a DriveItem."
-ms.date: 09/10/2017
+ms.date: 09/16/2025
 title: Send a sharing invitation
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Sends a sharing invitation for a **driveItem**.
-A sharing invitation provides permissions to the recipients and optionally sends an email to the recipients to notify them the item was shared.
+A sharing invitation provides permissions to the recipients and optionally sends an email to the recipients to notify them the item was shared. See the [Remarks](#remarks) section below for restrictions.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -250,7 +250,8 @@ Apps aren't required to handle these errors.
 
 ## Remarks
 
-* [Drives](../resources/drive.md) with a **driveType** of `personal` (OneDrive personal) can't create or modify permissions on the root DriveItem.
+* [Drives](../resources/drive.md) with a **driveType** of `personal` (OneDrive personal) can't create or modify permissions on the root **driveItem**.
+* _New_ guests can't be invited using app-only access. Existing guests can be invited using app-only requests.
 * For a list of available roles, see [roles property values](../resources/permission.md#roles-property-values).
 
 ## Error responses
