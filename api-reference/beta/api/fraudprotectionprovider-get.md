@@ -17,6 +17,7 @@ Namespace: microsoft.graph
 Read the properties and relationships of [fraudProtectionProvider](../resources/fraudprotectionprovider.md) object. The following derived types are currently supported.
 
 - [arkoseFraudProtectionProvider](../resources/arkosefraudprotectionprovider.md) resource type
+- [humanSecurityFraudProtectionProvider](../resources/humansecurityfraudprotectionprovider.md) resource type
 
 ## Permissions
 
@@ -76,7 +77,7 @@ GET https://graph.microsoft.com/beta/identity/riskprevention/fraudprotectionprov
 
 ### Response
 
-The following example shows the response.
+The following example shows the response with Arkose Fraud Protection Provider.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -99,3 +100,24 @@ Content-Type: application/json
 }
 ```
 
+The following example shows the response with HUMAN Security Fraud Protection Provider.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.fraudProtectionProvider"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/riskPrevention/fraudProtectionProviders/$entity",
+    "@odata.type": "#microsoft.graph.humanSecurityFraudProtectionProvider",
+    "id": "0bb2618b-51f7-4e83-bcb8-84e70f7cf84d",
+    "displayName": "HUMAN Security Sign-Up Protection",
+    "appId": "PXabcasdfg",
+    "serverToken": "XabcSadfgb",
+}
+```

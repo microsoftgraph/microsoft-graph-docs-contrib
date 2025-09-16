@@ -1,10 +1,10 @@
 ---
 title: "humanSecurityFraudProtectionProvider resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
-ms.date: 09/15/2025
+description: "Represents the configuration details for fraud protection using HUMAN Security"
+author: "more-rasika"
+ms.date: 08/05/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -14,27 +14,24 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Used to configure fraud protection using HUMAN Security that integrates with Microsoft Entra External ID to help protect against fraudulent activities during user registration (sign-up) events.
 
 
 Inherits from [fraudProtectionProvider](../resources/fraudprotectionprovider.md).
 
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List](../api/humansecurityfraudprotectionprovider-list.md)|[humanSecurityFraudProtectionProvider](../resources/humansecurityfraudprotectionprovider.md) collection|Get a list of the humanSecurityFraudProtectionProvider objects and their properties.|
-|[Get](../api/humansecurityfraudprotectionprovider-get.md)|[humanSecurityFraudProtectionProvider](../resources/humansecurityfraudprotectionprovider.md)|Read the properties and relationships of [humanSecurityFraudProtectionProvider](../resources/humansecurityfraudprotectionprovider.md) object.|
-|[Update](../api/humansecurityfraudprotectionprovider-update.md)|[humanSecurityFraudProtectionProvider](../resources/humansecurityfraudprotectionprovider.md)|Update the properties of a humanSecurityFraudProtectionProvider object.|
-|[Delete](../api/humansecurityfraudprotectionprovider-delete.md)|None|Delete a humanSecurityFraudProtectionProvider object.|
+None.
+
+For the list of API operations for managing this resource type, see the [fraudProtectionProvider](../resources/fraudprotectionprovider.md) resource type.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|appId|String|**TODO: Add Description**|
-|displayName|String|**TODO: Add Description** Inherited from [fraudProtectionProvider](../resources/fraudprotectionprovider.md).|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md). Inherits from [entity](../resources/entity.md)|
-|serverToken|String|**TODO: Add Description**|
+|appId|String|Unique identifier for an individual application. You can retrieve this from the HUMAN Security Admin Console or request it from your HUMAN Security Customer Success Manager.|
+|displayName|String|The display name of this Arkose fraud protection provider configuration. Inherited from [fraudProtectionProvider](../resources/fraudprotectionprovider.md).|
+|id|String|The unique identifier for this HUMAN Security fraud protection provider configuration. Inherited from [entity](../resources/entity.md). Inherits from [entity](../resources/entity.md)|
+|serverToken|String| Unique identifier used to authenticate API calls between the Server side integration and the HUMAN platform. You can retrieve this from the HUMAN Security Admin Console or request it from your HUMAN Security Customer Success Manager.|
 
 ## Relationships
 None.
