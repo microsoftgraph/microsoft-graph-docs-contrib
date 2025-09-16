@@ -1193,7 +1193,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "activatedWithScope",
           "ChangeType": "Addition",
-          "Description": "Added the **activatedWithScope** property to the [run](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-run?view=graph-rest-beta) resource.",
+          "Description": "Added the **activatedWithScope** property to the workflowExecutionType property.",
           "Target": "workflowExecutionType"
         },
         {
