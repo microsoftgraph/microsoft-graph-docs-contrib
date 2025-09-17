@@ -45,3 +45,4 @@ The following JSON representation shows the resource type.
   "enableSingleSignOn": false,
 }
 ```
+
