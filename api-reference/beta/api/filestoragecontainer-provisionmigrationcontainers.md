@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Provision SharePint-managed Azure Blob Containers as temporary storage for migration content and metadata.
+Provision SharePoint-managed Azure Blob Containers as temporary storage for migration content and metadata.
 
 ## Permissions
 

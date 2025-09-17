@@ -4438,7 +4438,7 @@
           "ChangedApiName": "sharePointMigrationContainerInfo",
           "ChangeType": "Addition",
           "Description": "Added the [sharePointMigrationContainerInfo](https://learn.microsoft.com/en-us/graph/api/resources/sharePointMigrationContainerInfo?view=graph-rest-beta) resource.",
-          "Target": "sharePointigrationContainerInfo"
+          "Target": "sharePointMigrationContainerInfo"
         },
         {
           "Id": "cc8159ad-816b-4f42-bd9d-b4f925d909e6",
