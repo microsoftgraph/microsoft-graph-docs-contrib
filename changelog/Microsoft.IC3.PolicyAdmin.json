@@ -1,4 +1,4 @@
-﻿{
+{
   "changelog": [
     {
       "ChangeList": [
@@ -32,7 +32,31 @@
           "ChangedApiName": "policy",
           "ChangeType": "Addition",
           "Description": "Added the **policy** relationship to the [teamsAdminRoot](https://learn.microsoft.com/en-us/graph/api/resources/teamsadministration-teamsAdminRoot?view=graph-rest-beta) resource.",
+          "Target": "teamsAdminRoot"
+        },
+        {
+          "Id": "371175e2-5a48-4494-83f3-88fde874ac7b",
+          "ApiChange": "Method",
+          "ChangedApiName": "assign",
+          "ChangeType": "Addition",
+          "Description": "Added the [assign](https://learn.microsoft.com/en-us/graph/api/teamsAdministration-teamsPolicyUserAssignment-assign?view=graph-rest-beta) method to the [teamsPolicyUserAssignment](https://learn.microsoft.com/en-us/graph/api/resources/teamsAdministration-teamsPolicyUserAssignment?view=graph-rest-beta) resource.",
           "Target": "teamsPolicyUserAssignment"
+        },
+        {
+          "Id": "371175e2-5a48-4494-83f3-88fde874ac7b",
+          "ApiChange": "Method",
+          "ChangedApiName": "unassign",
+          "ChangeType": "Addition",
+          "Description": "Added the [unassign](https://learn.microsoft.com/en-us/graph/api/teamsAdministration-teamsPolicyUserAssignment-unassign?view=graph-rest-beta) method to the [teamsPolicyUserAssignment](https://learn.microsoft.com/en-us/graph/api/resources/teamsAdministration-teamsPolicyUserAssignment?view=graph-rest-beta) resource.",
+          "Target": "teamsPolicyUserAssignment"
+        },
+        {
+          "Id": "371175e2-5a48-4494-83f3-88fde874ac7b",
+          "ApiChange": "Method",
+          "ChangedApiName": "getPolicyId",
+          "ChangeType": "Addition",
+          "Description": "Added the [getPolicyId](https://learn.microsoft.com/en-us/graph/api/teamsAdministration-teamsPolicyAssignment-getPolicyId?view=graph-rest-beta) method to the [teamsPolicyAssignment](https://learn.microsoft.com/en-us/graph/api/resources/teamsAdministration-teamsPolicyAssignment?view=graph-rest-beta) resource.",
+          "Target": "teamsPolicyAssignment"
         }
       ],
       "Id": "371175e2-5a48-4494-83f3-88fde874ac7b",
