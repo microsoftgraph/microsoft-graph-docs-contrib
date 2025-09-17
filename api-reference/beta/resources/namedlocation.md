@@ -23,13 +23,13 @@ Inherits from [policyDeletableItem](../resources/policydeletableitem.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/conditionalaccessroot-list-namedlocations.md)|[namedLocation](../resources/namedlocation.md) collection|Get a list of the namedLocation objects and their properties.|
-|[Get](../api/namedlocation-get.md)|[namedLocation](../resources/namedlocation.md)|Read the properties and relationships of [namedLocation](../resources/namedlocation.md) object.|
-|[Delete](../api/namedlocation-delete.md) | None | Delete a **namedLocation** object.|
-|[Restore](../api/namedlocation-restore.md)|[namedLocation](../resources/namedlocation.md)|Restore a named location object. |
-|[List deleted named locations](../api/policydeletableitem-list.md) | [namedLocation](../resources/namedlocation.md) collection | List all deleted named locations. |
-|[Get deleted named locations](../api/policydeletableitem-get.md) | [namedLocation](../resources/namedlocation.md)| Get a single deleted named location. |
-|[Permanently delete a soft deleted named location](../api/policydeletableitem-delete.md) | None | Permanently delete a soft deleted named location. |
+| [List](../api/conditionalaccessroot-list-namedlocations.md) | [namedLocation](namedLocation.md) collection | Get all the **namedLocation** objects in the organization. |
+| [Get](../api/namedlocation-get.md) | [namedLocation](namedlocation.md) | Read the properties and relationships of a **namedLocation** object. |
+| [Delete](../api/namedlocation-delete.md) | None | Delete a **namedLocation** object. |
+|[Restore](../api/namedlocation-restore.md)|[namedLocation](../resources/namedlocation.md)|Restore a **namedLocation**  object. |
+|[List deleted named locations](../api/policydeletableitem-list.md) | [namedLocation](../resources/namedlocation.md) collection | List all deleted **namedLocation** objects. |
+|[Get deleted named locations](../api/policydeletableitem-get.md) | [namedLocation](../resources/namedlocation.md)| Get a single deleted **namedLocation** object. |
+|[Permanently delete a soft deleted named location](../api/policydeletableitem-delete.md) | None | Permanently delete a deleted **namedLocation** object. |
 
 ## Properties
 |Property|Type|Description|

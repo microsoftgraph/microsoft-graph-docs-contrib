@@ -24,10 +24,11 @@ Inherits from [namedLocation](../resources/namedlocation.md).
 |Method|Return type|Description|
 |:---|:---|:---|
 | [List](../api/conditionalaccessroot-list-namedlocations.md) | [ipNamedLocation](ipNamedLocation.md) collection | Get all the **ipNamedLocation** objects in the organization. |
-|[Get](../api/ipnamedlocation-get.md)|[ipNamedLocation](../resources/ipnamedlocation.md)|Read the properties and relationships of [ipNamedLocation](../resources/ipnamedlocation.md) object.|
-|[Update](../api/ipnamedlocation-update.md)|[ipNamedLocation](../resources/ipnamedlocation.md)|Update the properties of an ipNamedLocation object.|
-|[Delete](../api/ipnamedlocation-delete.md)|None|Delete an ipNamedLocation object.|
-|[Restore](../api/ipnamedlocation-restore.md)|[ipNamedLocation](../resources/ipNamedLocation.md)|Restore a deleted ipNamedLocation object.|
+| [Create](../api/conditionalaccessroot-post-namedlocations.md) | [ipNamedLocation](ipNamedLocation.md) | Create a new **ipNamedLocation** object. |
+| [Get](../api/ipnamedlocation-get.md) | [ipNamedLocation](ipnamedlocation.md) | Read the properties and relationships of an **ipNamedLocation** object. |
+| [Update](../api/ipnamedlocation-update.md) | [ipNamedLocation](ipnamedlocation.md) | Update an **ipNamedLocation** object. |
+| [Delete](../api/ipnamedlocation-delete.md) | None | Delete an **ipNamedLocation** object. |
+|[Restore](../api/ipnamedlocation-restore.md)|[ipNamedLocation](../resources/ipNamedLocation.md)|Restore a deleted **ipNamedLocation** object.|
 
 ## Properties
 |Property|Type|Description|

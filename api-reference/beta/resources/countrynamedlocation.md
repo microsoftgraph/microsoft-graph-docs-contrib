@@ -23,10 +23,11 @@ Inherits from [namedLocation](../resources/namedlocation.md).
 |Method|Return type|Description|
 |:---|:---|:---|
 | [List](../api/conditionalaccessroot-list-namedlocations.md) | [countryNamedLocation](countryNamedLocation.md) collection | Get all the **countryNamedLocation** objects in the organization. |
-|[Get](../api/countrynamedlocation-get.md)|[countryNamedLocation](../resources/countrynamedlocation.md)|Read the properties and relationships of [countryNamedLocation](../resources/countrynamedlocation.md) object.|
-|[Update](../api/countrynamedlocation-update.md)|[countryNamedLocation](../resources/countrynamedlocation.md)|Update the properties of a countryNamedLocation object.|
-|[Delete](../api/countrynamedlocation-delete.md)|None|Delete a countryNamedLocation object.|
-|[Restore](../api/countrynamedlocation-restore.md)|[countryNamedLocation](../resources/countryNamedLocation.md)|Restore a deleted countryNamedLocation object.|
+| [Create](../api/conditionalaccessroot-post-namedlocations.md) | [countryNamedLocation](countryNamedLocation.md) | Create a new **countryNamedLocation** object. |
+| [Get](../api/countrynamedlocation-get.md) | [countryNamedLocation](countrynamedlocation.md) | Read the properties and relationships of a **countryNamedLocation** object. |
+| [Update](../api/countrynamedlocation-update.md) | [countryNamedLocation](countrynamedlocation.md) | Update a **countryNamedLocation** object. |
+| [Delete](../api/countrynamedlocation-delete.md) | None | Delete a **countryNamedLocation** object. |
+|[Restore](../api/countrynamedlocation-restore.md)|[countryNamedLocation](../resources/countryNamedLocation.md)|Restore a deleted **countryNamedLocation** object.|
 
 ## Properties
 |Property|Type|Description|
