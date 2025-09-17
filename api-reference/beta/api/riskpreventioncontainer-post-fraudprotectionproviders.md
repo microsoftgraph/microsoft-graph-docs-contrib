@@ -74,7 +74,7 @@ If successful, this method returns a `201 Created` response code and a [fraudPro
 
 ### Request
 
-The following example shows a request.
+The following example shows a request to create a new Arkose fraudProtectionProvider object.
 <!-- {
   "blockType": "request",
   "name": "create_fraudprotectionprovider_from_"
@@ -97,7 +97,7 @@ Content-Type: application/json
 
 ### Response
 
-The following example shows the response.
+The following example shows the response with Arkose fraudProtectionProvider object.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -121,3 +121,47 @@ Content-Type: application/json
 
 ```
 
+### Request
+
+The following example shows a request  to create a new HUMAN Security fraudProtectionProvider object.
+<!-- {
+  "blockType": "request",
+  "name": "create_fraudprotectionprovider_from_"
+}
+-->
+``` http
+POST https://graph.microsoft.com/beta/identity/riskPrevention/fraudProtectionProviders
+Content-Type: application/json
+
+{
+   "@odata.type": "#microsoft.graph.arkoseFraudProtectionProvider",
+    "displayName": "Arkose Sign-Up Protection",
+    "appId": "PXab4D5AEg",
+    "serverToken": "eyPQstlef3"
+}
+```
+
+
+### Response
+
+The following example shows the response with Human Security fraudProtectionProvider object.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.fraudProtectionProvider"
+}
+-->
+``` http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/riskPrevention/fraudProtectionProviders/$entity",
+    "@odata.type": "#microsoft.graph.humanSecurityFraudProtectionProvider",
+    "id": "6b09e36f-7e92-4448-842a-3959bcbc4f9f",
+    "displayName": "Human security fraud provider",
+    "appId": "PXab4D5AEg"
+}
+
+```
