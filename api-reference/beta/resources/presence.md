@@ -24,7 +24,7 @@ This resource supports subscribing to [change notifications](/graph/changenotifi
 | :----------------------------------------------------------------------------------- | :---------------------------------------------- | :-------------------------------------------------------------------------------- |
 | [Get presence](../api/presence-get.md)                                               | [presence](../resources/presence.md)            | Get a user's presence information.                                                |
 | [Get presence for multiple users](../api/cloudcommunications-getpresencesbyuserid.md) | [presence](../resources/presence.md) collection | Get the presence information for multiple users.                                  |
-| [Set presence](../api/presence-setpresence.md)                                       |                                                 | Set the availability and activity status in a [presence session](/graph/manage-presence-state#presence-sessions) of an application for a user. |
+| [Set presence](../api/presence-setpresence.md)                                       |                                                 | Set the availability and activity status in a [presence session](/graph/cloud-communications-manage-presence-state#presence-sessions) of an application for a user. |
 | [Clear presence](../api/presence-clearpresence.md)                                   |                                                 | Clear a presence session of an application for a user.                                       |
 | [Set user preferred presence](../api/presence-setuserpreferredpresence.md)           |                                                 | Set the preferred availability and activity status for a user.                    |
 | [Clear user preferred presence](../api/presence-clearuserpreferredpresence.md)       |                                                 | Clear the preferred availability and activity status for a user.                  |
@@ -43,7 +43,7 @@ This resource supports subscribing to [change notifications](/graph/changenotifi
 
 > [!NOTE]
 > * To learn more about the different presence states, see [User presence in Teams](/microsoftteams/presence-admins). 
-> * For more details about presence sessions, states permutations, timeouts, and trusted domains, see [Manage presence state using the Microsoft Graph API](/graph/manage-presence-state).
+> * For more details about presence sessions, states permutations, timeouts, and trusted domains, see [Manage presence state using the Microsoft Graph API](/graph/cloud-communications-manage-presence-state).
 
 ## Relationships
 
