@@ -14,8 +14,6 @@ Namespace: microsoft.graph.identityGovernance
 
 ### activationTaskScopeType values 
 
-
-
 |Member|
 |:---|
 |allTasks|
@@ -23,8 +21,6 @@ Namespace: microsoft.graph.identityGovernance
 |unknownFutureValue|
 
 ### activationUserScopeType values 
-
-
 
 |Member|
 |:---|
