@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.me().onenote().pages().byOnenotePageId("{onenotePage-id}").delete();
+CheckInClaim result = graphClient.places().byPlaceId("{place-id}").checkIns().byCheckInClaimCalendarEventId("{checkInClaim-calendarEventId}").get();
 
 
 ```
