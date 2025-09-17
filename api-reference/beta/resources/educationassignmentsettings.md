@@ -49,7 +49,7 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "id": "String (identifier)",
-  "submissionAnimationDisabled": false
+  "submissionAnimationDisabled": "Boolean"
 }
 ```
 
