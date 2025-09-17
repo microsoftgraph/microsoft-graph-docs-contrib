@@ -1,6 +1,6 @@
 ---
-title: "workflow: activate on scope"
-description: "Run a workflow object on demand with a specific scope"
+title: "workflow: activateWithScope"
+description: "Run a workflow object on demand with a specific scope."
 author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
@@ -8,7 +8,7 @@ doc_type: apiPageType
 ms.date: 09/17/2025
 ---
 
-# workflow: activate
+# workflow: activateWithScope
 
 Namespace: microsoft.graph.identityGovernance
 
@@ -82,7 +82,7 @@ Content-Type: application/json
 ```
 
 ### Response
-
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true
