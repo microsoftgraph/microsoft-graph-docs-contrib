@@ -162,10 +162,10 @@ items:
     href: ../../resources/educationassignmentsettings.md
   - name: Get
     href: ../../api/educationassignmentsettings-get.md
-  - name: Update grading scheme
+  - name: Update
     href: ../../api/educationassignmentsettings-update.md
   - name: Add default grading scheme
-    href: ../../api/educationassignment-put-gradingscheme.md
+    href: ../../api/educationassignmentsettings-put-defaultgradingscheme.md
 - name: Category
   items:
   - name: Category
@@ -214,6 +214,8 @@ items:
     href: ../../api/educationgradingscheme-update.md
   - name: Delete
     href: ../../api/educationgradingscheme-delete.md
+  - name: Add grading scheme
+    href: ../../api/educationassignment-put-gradingscheme.md
 - name: Module
   items:
   - name: Module
