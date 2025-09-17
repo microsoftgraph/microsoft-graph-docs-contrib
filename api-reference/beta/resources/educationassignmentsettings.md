@@ -33,7 +33,7 @@ Specifies class-level assignments settings.
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|defaultGradingScheme|[educationGradingScheme](educationgradingscheme) |The default grading scheme for assignments created in this class. |
+|defaultGradingScheme|[educationGradingScheme](educationgradingscheme.md) |The default grading scheme for assignments created in this class. |
 |gradingCategories|[educationGradingCategory](educationgradingcategory.md) collection| When set, enables users to weight assignments differently when computing a class average grade.|
 |gradingSchemes|[educationGradingScheme](educationgradingscheme.md) collection| The grading schemes that can be attached to assignments created in this class. |
 
