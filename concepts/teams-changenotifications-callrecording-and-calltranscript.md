@@ -478,7 +478,6 @@ One of the following permissions is required to subscribe to `communications/adh
 | Delegated (personal Microsoft account) | Not supported.                              |
 | Application                            | CallRecordings.Read.All                     |
 
-
 ### Example: Subscribe to recordings available for a particular ad hoc call using classic permissions
 
 <!-- { "blockType": "ignored" } -->
