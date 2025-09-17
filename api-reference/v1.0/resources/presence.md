@@ -41,7 +41,7 @@ This resource supports subscribing to [change notifications](/graph/changenotifi
 
 > [!NOTE]
 > * To learn more about the different presence states, see [User presence in Teams](/microsoftteams/presence-admins). 
-> * For more details about presence sessions, states permutations, timeouts, and trusted domains, see [Manage presence state using the Microsoft Graph API](/graph/manage-presence-state).
+> * For more details about presence sessions, states permutations, timeouts, and trusted domains, see [Manage presence state using the Microsoft Graph API](/graph/cloud-communications-manage-presence-state).
 
 ## Relationships
 
