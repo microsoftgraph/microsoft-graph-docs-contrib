@@ -57,7 +57,7 @@ The following example shows the request.
 }-->
 ```http
 POST https://graph.microsoft.com/beta/education/classes/de45722a-c202-43a9-9dd5-d82c45bcef91/assignmentSettings/gradingSchemes
-Content-type: application/json
+Content-Type: application/json
  
 {
   "displayName": "PassFailScheme",
