@@ -1,6 +1,6 @@
 ---
 title: "List progressEvents"
-description: "Get a list of the sharePointMigrationEvent objects and their properties."
+description: "Get a list of migration events for a particular job in a fileStorageContainer."
 author: "wenzhou"
 ms.date: 06/04/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the sharePointMigrationEvent objects and their properties. The migration events remain valid for four days and can be queried as frequently as needed within the validity period.
+Get a list of [migration events](../resources/sharepointmigrationevent.md) for a particular job in a [fileStorageContainer](../resources/filestoragecontainer.md). The migration events remain valid for four days and can be queried as frequently as needed within the validity period.
 
 ## Permissions
 
