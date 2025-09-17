@@ -12,23 +12,23 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 
-Create a copy of a [driveItem][item-resource] asynchronously including child items. You can specify a new parent folder, or provide a new name. Once the request is accepted, the operation is queued and processed asynchronously. Use the [monitor URL](/graph/long-running-actions-overview) to track progress until the operation completes.
+Create a copy of a [driveItem][item-resource] asynchronously, including child items. You can specify a new parent folder or provide a new name. Once the request is accepted, the operation is queued and processed asynchronously. Use the [monitor URL](/graph/long-running-actions-overview) to track progress until the operation completes.
+
+The copy operation is restricted to 30,000 driveItems. For more information, see [SharePoint limits](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits#moving-and-copying-across-sites).
 
 > [!IMPORTANT]
 > Metadata is not retained when a driveItem is copied, including system metadata and custom metadata. An entirely new driveItem is created in the target location instead.
->
-> Permissions are not retained when a driveItem is copied. The copied driveItem inherits the permissions of the destination folder.
->
 > File versions are only retained when the `includeAllVersionHistory` parameter is explicitly set to `true`. Otherwise, only the latest version is copied.
->
-> The copy operation is restricted to 30,000 driveItems. For more information, see [SharePoint limits](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits#moving-and-copying-across-sites).
->
-> Cross-geo copy is not supported when using App Only authentication.
 
+> [!NOTE]
+> Cross-geo copy is not supported when using App-only authentication.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
+
+> [!NOTE]
+> Permissions are not retained when a driveItem is copied. The copied driveItem inherits the permissions of the destination folder
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
