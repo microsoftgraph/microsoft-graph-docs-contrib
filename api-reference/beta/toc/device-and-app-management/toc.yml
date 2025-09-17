@@ -160,6 +160,18 @@ items:
       href: ../../api/cloudpcauditevent-get.md
     - name: Get audit activity types
       href: ../../api/cloudpcauditevent-getauditactivitytypes.md
+  - name: Cloud PC bulk action
+    items:
+    - name: Cloud PC bulk action
+      href: ../../resources/cloudpcbulkaction.md
+    - name: List
+      href: ../../api/virtualendpoint-list-bulkactions.md
+    - name: Create
+      href: ../../api/virtualendpoint-post-bulkactions.md
+    - name: Get
+      href: ../../api/cloudpcbulkaction-get.md
+    - name: Retry
+      href: ../../api/cloudpcbulkaction-retry.md
   - name: Cloud PC cloud app
     items:
     - name: Cloud PC cloud app
@@ -406,18 +418,6 @@ items:
       href: ../../api/virtualendpoint-retrievetenantencryptionsetting.md
     - name: List cloud apps
       href: ../../api/virtualendpoint-list-cloudapps.md
-  - name: Cloud PC bulk action
-    items:
-    - name: Cloud PC bulk action
-      href: ../../resources/cloudpcbulkaction.md
-    - name: List
-      href: ../../api/virtualendpoint-list-bulkactions.md
-    - name: Create
-      href: ../../api/virtualendpoint-post-bulkactions.md
-    - name: Get
-      href: ../../api/cloudpcbulkaction-get.md
-    - name: Retry
-      href: ../../api/cloudpcbulkaction-retry.md
   - name: Alert monitoring
     items:
     - name: Monitoring
