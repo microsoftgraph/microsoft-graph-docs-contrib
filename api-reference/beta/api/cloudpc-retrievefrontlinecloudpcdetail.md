@@ -63,7 +63,8 @@ If successful, this function returns a `200 OK` response code and a [frontlineCl
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "cloudpcthis.retrievefrontlinecloudpcdetail"
+  "name": "cloudpcthis.retrievefrontlinecloudpcdetail",
+  "sampleKeys": ["88019b18-57ae-4973-98c4-3cd728323887"]
 }
 -->
 ``` http
