@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Set the state of a user's presence session as an application.
 
-For more information about presence sessions, states permutations, and timeouts, see [Manage presence state using the Microsoft Graph API](/graph/manage-presence-state).
+For more information about presence sessions, states permutations, and timeouts, see [Manage presence state using the Microsoft Graph API](/graph/cloud-communications-manage-presence-state).
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
