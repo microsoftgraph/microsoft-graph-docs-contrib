@@ -28,6 +28,7 @@ The copy operation is restricted to 30,000 driveItems. For more information, see
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
+
 > [!NOTE]
 > Permissions are not retained when a driveItem is copied. The copied driveItem inherits the permissions of the destination folder.
 
