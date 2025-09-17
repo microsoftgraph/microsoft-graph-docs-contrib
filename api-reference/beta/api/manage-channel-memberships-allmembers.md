@@ -12,11 +12,7 @@ ms.date: 12/20/2024
 
 Namespace: microsoft.graph
 
-Use the new **allMembers** API that manages and monitors channel memberships across standard, shared, and private channels. Get a list of all [members](../resources/conversationmember.md) in a [channel](../resources/channel.md). The allMembers API:
-
-* Enhances accuracy by reflecting direct and indirect members correctly
-* Addresses specific file storage and access requirements for apps integrated into channels
-* Supports classical and resource-specific consent (RSC) permissions and notifications for membership changes
+Use the new **allMembers** API that manages and monitors channel memberships across standard, shared, and private channels. It enhances accuracy by reflecting direct and indirect members correctly. Get the list of all [members](../resources/conversationmember.md) in a [channel](../resources/channel.md).
 
 ## Connect users to channels with the annotation property
 
@@ -25,20 +21,7 @@ The new **@microsoft.graph.originalSourceMembershipUrl** property determines how
 * Direct members: The originalSourceMembershipUrl points to channel membership.
 * Indirect members: The originalSourceMembershipUrl points to team membership.
 
-Use the **sharedWithTeams** and **allowedMembers** endpoints to identify which teams grant access to shared channels and to specify eligible members.
-
-## Set up notifications for channel membership changes
-
-Create a subscription on /teams/{team-id}/channels/getAllMembers to set up notification for changes in channel membership, such as users joining or leaving a particular channel.
-The subscription endpoints for retrieving channel members, based on channel type and membership scope are tabulated as follows:
-
-|**Channel Type** |**Membership Scope**  |**Subscribe To**  |
-|---------|---------|---------|
-|Private Channels  | Direct membership only  | /teams/{team-id}/channels/getAllMembers  |
-|Shared Channels | Direct and Indirect membership | /teams/{team-id}/channels/getAllMembers?notifyOnIndirectMembershipUpdate=true&suppressNotificationWhenSharedUnsharedWithTeam=true |
-
-> [!IMPORTANT]
-> When you receive a membership share or unshare notification, refresh the **allMembers** API for shared channels. To handle large indirect membership changes efficiently, call the **sharedWithTeams** and **allowedMembers** APIs.
+Use the [sharedWithChannelTeamInfo resource type](../../v1.0/resources/sharedwithchannelteaminfo.md) API to identify which teams grant access to shared channels and [List allowedMembers](../../v1.0/api/sharedwithchannelteaminfo-list-allowedmembers.md) API to specify eligible members.
 
 ## Understand membership behavior for shared channels
 
@@ -61,6 +44,19 @@ Use the **originalSourceMembershipUrl** annotation property to determine whether
 > Don’t assume one row per user. A single user can appear multiple times when a channel is shared with multiple teams.
 
 See [List allMembers](channel-list-allmembers.md) to learn more on the permissions, HTTP request parameters, and supporting examples.
+
+## Set up notifications for channel membership changes
+
+Create a subscription on /teams/{team-id}/channels/getAllMembers to set up notification for changes in channel membership, such as users joining or leaving a particular channel.
+The subscription endpoints for retrieving channel members, based on channel type and membership scope are tabulated as follows:
+
+|**Channel Type** |**Membership Scope**  |**Subscribe To**  |
+|---------|---------|---------|
+|Private Channels  | Direct membership only  | /teams/{team-id}/channels/getallMembers  |
+|Shared Channels | Direct and Indirect membership | /teams/{team-id}/channels/getallMembers?notifyOnIndirectMembershipUpdate=true&suppressNotificationWhenSharedUnsharedWithTeam=true |
+
+> [!IMPORTANT]
+> When you receive a membership share or unshare notification, refresh the **allMembers** API for shared channels. To handle large indirect membership changes efficiently, call the **sharedWithTeams** and **allowedMembers** APIs.
 
 ## Related content
 
