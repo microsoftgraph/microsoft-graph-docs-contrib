@@ -1,5 +1,5 @@
 ---
-title: "List sharePointMigrationEvent objects"
+title: "List progressEvents"
 description: "Get a list of the sharePointMigrationEvent objects and their properties."
 author: "wenzhou"
 ms.date: 06/04/2025
@@ -8,7 +8,7 @@ ms.subservice: "onedrive"
 doc_type: apiPageType
 ---
 
-# List sharePointMigrationEvent objects
+# List progressEvents
 
 Namespace: microsoft.graph
 
