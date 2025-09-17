@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-POST /identity/conditionalAccess/deletedItems/namedLocations/{id}/restore
+POST /identity/conditionalAccess/deletedItems/namedLocations/{namedLocationId}/restore
 ```
 
 ## Request headers
