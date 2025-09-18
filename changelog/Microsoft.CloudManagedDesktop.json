@@ -7,7 +7,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "cloudPcConnectionSettings",
           "ChangeType": "Addition",
-          "Description": "Add the **cloudPcConnectionSettings** resource.",
+          "Description": "Added the [cloudPcConnectionSettings](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcConnectionSettings?view=graph-rest-beta) resource.",
           "Target": "cloudPcConnectionSettings"
         },
         {
@@ -15,7 +15,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "connectionSettings",
           "ChangeType": "Addition",
-          "Description": "Add the **connectionSettings** property to the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/intune-cloudPC?view=graph-rest-beta) resource.",
+          "Description": "Added the **connectionSettings** property to the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudPC?view=graph-rest-beta) resource.",
           "Target": "cloudPC"
         }
       ],
