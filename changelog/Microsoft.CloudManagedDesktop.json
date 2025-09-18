@@ -6,16 +6,16 @@
           "Id": "ac011bc2-8597-42ee-9690-2445bc0ca2f4",
           "ApiChange": "Resource",
           "ChangedApiName": "cloudPcConnectionSettings",
-          "ChangeType": "Deletion",
-          "Description": "Deleted the **cloudPcConnectionSettings** resource.",
+          "ChangeType": "Addition",
+          "Description": "Add the **cloudPcConnectionSettings** resource.",
           "Target": "cloudPcConnectionSettings"
         },
         {
           "Id": "ac011bc2-8597-42ee-9690-2445bc0ca2f4",
           "ApiChange": "Property",
           "ChangedApiName": "connectionSettings",
-          "ChangeType": "Deletion",
-          "Description": "Deleted the **connectionSettings** property from the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/intune-cloudPC?view=graph-rest-beta) resource.",
+          "ChangeType": "Addition",
+          "Description": "Add the **connectionSettings** property to the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/intune-cloudPC?view=graph-rest-beta) resource.",
           "Target": "cloudPC"
         }
       ],
