@@ -1677,6 +1677,90 @@
     {
       "ChangeList": [
         {
+          "Id": "a9d63552-3961-4e39-ab11-ffe2f4607ea8",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "caseType",
+          "ChangeType": "Addition",
+          "Description": "Added the **caseType** enumeration type.",
+          "Target": "caseType"
+        },
+        {
+          "Id": "a9d63552-3961-4e39-ab11-ffe2f4607ea8",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "reviewSetSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the **reviewSetSettings** enumeration type.",
+          "Target": "reviewSetSettings"
+        },
+        {
+          "Id": "a9d63552-3961-4e39-ab11-ffe2f4607ea8",
+          "ApiChange": "Property",
+          "ChangedApiName": "caseType",
+          "ChangeType": "Addition",
+          "Description": "Added the **caseType** property to the [ediscoveryCaseSettings](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoveryCaseSettings?view=graph-rest-beta) resource.",
+          "Target": "ediscoveryCaseSettings"
+        },
+        {
+          "Id": "a9d63552-3961-4e39-ab11-ffe2f4607ea8",
+          "ApiChange": "Property",
+          "ChangedApiName": "reviewSetSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the **reviewSetSettings** property to the [ediscoveryCaseSettings](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoveryCaseSettings?view=graph-rest-beta) resource.",
+          "Target": "ediscoveryCaseSettings"
+        }
+      ],
+      "Id": "a9d63552-3961-4e39-ab11-ffe2f4607ea8",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-09-09T22:53:48.8933999Z",
+      "WorkloadArea": "Security",
+      "SubArea": "eDiscovery"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "39c28435-306e-4b4d-9058-3358953936a1",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "caseType",
+          "ChangeType": "Addition",
+          "Description": "Added the **caseType** enumeration type.",
+          "Target": "caseType"
+        },
+        {
+          "Id": "39c28435-306e-4b4d-9058-3358953936a1",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "reviewSetSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the **reviewSetSettings** enumeration type.",
+          "Target": "reviewSetSettings"
+        },
+        {
+          "Id": "39c28435-306e-4b4d-9058-3358953936a1",
+          "ApiChange": "Property",
+          "ChangedApiName": "caseType",
+          "ChangeType": "Addition",
+          "Description": "Added the **caseType** property to the [ediscoveryCaseSettings](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoveryCaseSettings?view=graph-rest-1.0) resource.",
+          "Target": "ediscoveryCaseSettings"
+        },
+        {
+          "Id": "39c28435-306e-4b4d-9058-3358953936a1",
+          "ApiChange": "Property",
+          "ChangedApiName": "reviewSetSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the **reviewSetSettings** property to the [ediscoveryCaseSettings](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoveryCaseSettings?view=graph-rest-1.0) resource.",
+          "Target": "ediscoveryCaseSettings"
+        }
+      ],
+      "Id": "39c28435-306e-4b4d-9058-3358953936a1",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-09-09T22:53:48.8936551Z",
+      "WorkloadArea": "Security",
+      "SubArea": "eDiscovery"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "5a189897-82c9-4e1d-91d5-45fccd4f1a0c",
           "ApiChange": "Method",
           "ChangedApiName": "retryPolicy",
