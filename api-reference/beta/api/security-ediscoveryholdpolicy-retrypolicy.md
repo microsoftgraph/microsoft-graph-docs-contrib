@@ -91,7 +91,7 @@ POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/c2940e86-57
 ---
 
 ### Response
-
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true
