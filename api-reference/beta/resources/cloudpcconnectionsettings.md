@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 The connection settings of a Cloud PC. Currently, only **enableSingleSignOn** is supported. IT admins can enable it by updating the provisioning policy and calling [applyConfig](../api/cloudpcprovisioningpolicy-applyconfig.md)/[apply](../api/cloudpcprovisioningpolicy-apply.md) API.
 
 > [!NOTE]
-> This resource type is deprecated and will stop returning data on August 31, 2024. Use [cloudPcConnectionSetting](../resources/cloudpcconnectionsetting.md) instead.
+> This resource type is deprecated and stopped returning data on August 31, 2024. Use [cloudPcConnectionSetting](../resources/cloudpcconnectionsetting.md) instead.
 
 ## Properties
 
