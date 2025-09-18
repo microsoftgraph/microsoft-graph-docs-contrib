@@ -1,0 +1,67 @@
+---
+title: "endUserSettings resource type"
+description: "Settings that control the end user experience for access package suggestions and resource discovery in Microsoft Entra entitlement management."
+ms.localizationpriority: medium
+author: "myra-ramdenbourg"
+ms.subservice: "entra-id-governance"
+doc_type: "resourcePageType"
+ms.date: 09/18/2025
+---
+
+# endUserSettings resource type
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Represents settings that control the end user experience for access package suggestions and resource discovery in [Microsoft Entra entitlement management](entitlementmanagement-overview.md). These settings configure how suggestions are provided to end users and what level of related people insights are shown.
+
+## Methods
+
+| Method       | Return Type | Description |
+|:-------------|:------------|:------------|
+| [Get](../api/endusersettings-get.md) | [endUserSettings](endusersettings.md) | Read the properties and relationships of an **endUserSettings** object. |
+| [Update](../api/endusersettings-update.md) | [endUserSettings](endusersettings.md) | Update the properties of an **endUserSettings** object. |
+
+## Properties
+
+| Property     | Type        | Description |
+|:-------------|:------------|:------------|
+|id|String|The identifier of the end user settings object. Read-only.|
+|isEnabled|Boolean|Indicates whether end user features are enabled. When `false`, end users cannot access the self-service portal.|
+|relatedPeopleInsightLevel|[accessPackageSuggestionRelatedPeopleInsightLevel](accesspackagesuggestionrelatedpeopleinsightlevel.md)|The level of related people insights to show in access package suggestions. The possible values are: `disabled`, `count`, `countAndNames`, `unknownFutureValue`.|
+
+## Relationships
+
+None.
+
+## JSON representation
+
+The following JSON representation shows the resource type.
+
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.endUserSettings",
+  "keyProperty": ""
+}-->
+
+```json
+{
+  "id": "endUserSettings",
+  "isEnabled": true,
+  "relatedPeopleInsightLevel": "String",
+}
+```
+
+<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
+2025-09-18 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "endUserSettings resource",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->

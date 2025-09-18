@@ -1031,6 +1031,16 @@ items:
           href: ../../api/accesspackage-post-incompatiblegroup.md
         - name: Remove group from
           href: ../../api/accesspackage-delete-incompatiblegroup.md
+      - name: Suggestioned access package
+        items:
+        - name: Filter by current user
+          href: ../../api/accesspackagesuggestions-filterbycurrentuser.md
+      - name: Available access packages
+        items:
+        - name: Available access package
+          href: ../../resources/availableaccesspackage.md
+        - name: List resource role scopes
+          href: ../../api/availableaccesspackage-list-resourcerolescopes.md
     - name: Access package assignment
       items:
       - name: Access package assignment
@@ -1243,6 +1253,14 @@ items:
         href: ../../api/entitlementmanagementsettings-get.md
       - name: Update
         href: ../../api/entitlementmanagementsettings-update.md
+    - name: End user settings
+      items:
+      - name: End user settings
+        href: ../../resources/endusersettings.md
+      - name: Get
+        href: ../../api/endusersettings-get.md
+      - name: Update
+        href: ../../api/endusersettings-update.md
     - name: Custom access package workflow extension (deprecated)
       items:
       - name: Custom access package workflow extension (deprecated)
@@ -1287,6 +1305,18 @@ items:
         href: ../../resources/accesspackageresourceattributesource.md
       - name: Access package resource scope
         href: ../../resources/accesspackageresourcescope.md
+      - name: Access package suggestion
+        href: ../../resources/accesspackagesuggestion.md
+      - name: Access package suggestion filter by current user options
+        href: ../../resources/accesspackagesuggestionfilterbycurrentuseroptions.md
+      - name: Access package suggestion reason
+        href: ../../resources/accesspackagesuggestionreason.md
+      - name: Access package suggestion related people based
+        href: ../../resources/accesspackagesuggestionrelatedpeoplebased.md
+      - name: Access package suggestion related people insight level
+        href: ../../resources/accesspackagesuggestionrelatedpeopleinsightlevel.md
+      - name: Access package suggestion self assignment history based
+        href: ../../resources/accesspackagesuggestionselfassignmenthistorybased.md
       - name: Access package text input question
         href: ../../resources/accesspackagetextinputquestion.md
       - name: Access package user directory attribute store
@@ -1297,6 +1327,8 @@ items:
         href: ../../resources/approvalstage.md
       - name: Assignment review settings
         href: ../../resources/assignmentreviewsettings.md
+      - name: Available access package
+        href: ../../resources/availableaccesspackage.md
       - name: Azure active directory tenant
         href: ../../resources/azureactivedirectorytenant.md
       - name: Connected organization members
@@ -1329,6 +1361,8 @@ items:
         href: ../../resources/domainidentitysource.md
       - name: Entitlement management
         href: ../../resources/entitlementmanagement.md
+      - name: End user settings
+        href: ../../resources/endusersettings.md
       - name: Expiration pattern
         href: ../../resources/expirationpattern.md
       - name: External domain federation
