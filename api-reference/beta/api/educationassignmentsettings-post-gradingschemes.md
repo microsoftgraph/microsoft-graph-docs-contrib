@@ -20,8 +20,7 @@ Create a new [educationGradingScheme](../resources/educationgradingscheme.md) on
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "permissions", "name": "educationassignmentsettings-post-gradingschemes-permissions" } -->
-
+<!-- { "blockType": "permissions", "name": "educationassignmentsettings_post_gradingschemes" } -->
 [!INCLUDE [permissions-table](../includes/permissions/educationassignmentsettings-post-gradingschemes-permissions.md)]
 
 ## HTTP request
