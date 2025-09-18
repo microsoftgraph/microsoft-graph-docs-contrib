@@ -1,7 +1,7 @@
 ---
 title: "Upsert servicePrincipal"
 description: "Create a new servicePrincipal object if it doesn't exist, or update the properties of an existing servicePrincipal object."
-author: "sureshja"
+author: "Jackson-Woods"
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.subservice: "entra-applications"
