@@ -21,7 +21,8 @@ The new **@microsoft.graph.originalSourceMembershipUrl** property determines how
 * Direct members: The originalSourceMembershipUrl points to channel membership.
 * Indirect members: The originalSourceMembershipUrl points to team membership.
 
-Use the [sharedWithChannelTeamInfo resource type](../../v1.0/resources/sharedwithchannelteaminfo.md) API to identify which teams grant access to shared channels and [List allowedMembers](../../v1.0/api/sharedwithchannelteaminfo-list-allowedmembers.md) API to specify eligible members.
+Use the [sharedWithChannelTeamInfo resource type](../resources/sharedwithchannelteaminfo.md) API to identify which teams grant access to shared channels and
+[List allowedMembers](../api/sharedwithchannelteaminfo-list-allowedmembers.md) API to specify eligible members.
 
 ## Understand membership behavior for shared channels
 
@@ -57,4 +58,3 @@ The subscription endpoints for retrieving channel members, based on channel type
 
 > [!IMPORTANT]
 > When you receive a membership share or unshare notification, refresh the **allMembers** API for shared channels. To handle large indirect membership changes efficiently, call the **sharedWithTeams** and **allowedMembers** APIs.
-
