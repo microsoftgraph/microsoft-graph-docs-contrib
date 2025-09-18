@@ -5,7 +5,7 @@ author: "v-sdhakshina"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: apiPageType
-ms.date: 08/05/2025
+ms.date: 09/18/2025
 ---
 
 # List recordings

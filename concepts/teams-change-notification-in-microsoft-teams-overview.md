@@ -5,7 +5,7 @@ author: "anandab-msft"
 ms.localizationpriority: high
 ms.subservice: "teams"
 ms.custom: scenarios:getting-started
-ms.date: 08/21/2025
+ms.date: 09/18/2025
 ms.topic: how-to
 ---
 

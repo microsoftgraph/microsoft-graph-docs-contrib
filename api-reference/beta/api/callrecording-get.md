@@ -172,7 +172,7 @@ The following example shows how to get a single recording of an ad hoc call.
 <!-- {
   "blockType": "request",
   "name": "get_callRecording_adhoc",
-  "sampleKeys": ["f2e8e111-3887-4936-87f8-639292c70d34/adhocCalls/1c9ddbc9-82be-46b6-8edd-bf833fe33a03/recordings/VjMjIzE5OjVhYjlkNjhlMTQ4ZTQ4MjU4ZmJjMzlmMDhlMzk5MjdjQHRocmVhZC52MiMjMWM5ZGRiYzktODJiZS00NmI2LThlZGQtYmY4MzNmZTMzYTAzLTE3NTQ4OTU0MzctUmVjb3JkaW5nIyMw"]
+  "sampleKeys": ["f2e8e111-3887-4936-87f8-639292c70d34", "1c9ddbc9-82be-46b6-8edd-bf833fe33a03", VjMjIzE5OjVhYjlkNjhlMTQ4ZTQ4MjU4ZmJjMzlmMDhlMzk5MjdjQHRocmVhZC52MiMjMWM5ZGRiYzktODJiZS00NmI2LThlZGQtYmY4MzNmZTMzYTAzLTE3NTQ4OTU0MzctUmVjb3JkaW5nIyMw"]
 }
 -->
 ``` http
@@ -261,7 +261,7 @@ Content-Type: video/mp4
 <!-- {
   "blockType": "request",
   "name": "get_callRecording_content_adhoc",
-  "sampleKeys": ["f2e8e111-3887-4936-87f8-639292c70d34/adhocCalls/1c9ddbc9-82be-46b6-8edd-bf833fe33a03", "VjMjIzE5OjVhYjlkNjhlMTQ4ZTQ4MjU4ZmJjMzlmMDhlMzk5MjdjQHRocmVhZC52MiMjMWM5ZGRiYzktODJiZS00NmI2LThlZGQtYmY4MzNmZTMzYTAzLTE3NTQ4OTU0MzctUmVjb3JkaW5nIyMw"]
+  "sampleKeys": ["f2e8e111-3887-4936-87f8-639292c70d34", "1c9ddbc9-82be-46b6-8edd-bf833fe33a03", "VjMjIzE5OjVhYjlkNjhlMTQ4ZTQ4MjU4ZmJjMzlmMDhlMzk5MjdjQHRocmVhZC52MiMjMWM5ZGRiYzktODJiZS00NmI2LThlZGQtYmY4MzNmZTMzYTAzLTE3NTQ4OTU0MzctUmVjb3JkaW5nIyMw"]
 }
 -->
 ``` http

@@ -5,7 +5,7 @@ author: "mankadnandan"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: apiPageType
-ms.date: 09/04/2025
+ms.date: 09/18/2025
 ---
 
 # Get callTranscript
@@ -174,7 +174,7 @@ The following example shows how to get a single transcript of an ad hoc call.
 <!-- {
   "blockType": "request",
   "name": "get_callTranscript_adhoc",
-  "sampleKeys": ["f2e8e111-3887-4936-87f8-639292c70d34/adhocCalls/5f3640e7-a59c-4bec-82ca-e66251f795b7", "MyMjMTk6NWFiOWQ2OGUxNDhlNDgyNThmYmMzOWYwOGUzOTkyN2NAdGhyZWFkLnYyIyM1ZjM2NDBlNy1hNTljLTRiZWMtODJjYS1lNjYyNTFmNzk1YjctMTc1NDg5MjIyMi1UcmFuc2NyaXB0VjIjIzA="]
+  "sampleKeys": ["f2e8e111-3887-4936-87f8-639292c70d34", "5f3640e7-a59c-4bec-82ca-e66251f795b7", "MyMjMTk6NWFiOWQ2OGUxNDhlNDgyNThmYmMzOWYwOGUzOTkyN2NAdGhyZWFkLnYyIyM1ZjM2NDBlNy1hNTljLTRiZWMtODJjYS1lNjYyNTFmNzk1YjctMTc1NDg5MjIyMi1UcmFuc2NyaXB0VjIjIzA="]
 }
 -->
 ``` http
@@ -231,6 +231,7 @@ Content-type: application/json
 ``` http
 GET https://graph.microsoft.com/beta/users/ba321e0d-79ee-478d-8e28-85a19507f456/onlineMeetings/MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ/transcripts/MSMjMCMjNzU3ODc2ZDYtOTcwMi00MDhkLWFkNDItOTE2ZDNmZjkwZGY4/content
 ```
+
 ---
 
 #### Response
@@ -369,7 +370,7 @@ WEBVTT
 <!-- {
   "blockType": "request",
   "name": "get_callTranscript_metadatacontent1",
-  "sampleKeys": ["f2e8e111-3887-4936-87f8-639292c70d34/adhocCalls/5f3640e7-a59c-4bec-82ca-e66251f795b7", "MyMjMTk6NWFiOWQ2OGUxNDhlNDgyNThmYmMzOWYwOGUzOTkyN2NAdGhyZWFkLnYyIyM1ZjM2NDBlNy1hNTljLTRiZWMtODJjYS1lNjYyNTFmNzk1YjctMTc1NDg5MjIyMi1UcmFuc2NyaXB0VjIjIzA=/metadataContent"]
+  "sampleKeys": ["f2e8e111-3887-4936-87f8-639292c70d34", "5f3640e7-a59c-4bec-82ca-e66251f795b7", "MyMjMTk6NWFiOWQ2OGUxNDhlNDgyNThmYmMzOWYwOGUzOTkyN2NAdGhyZWFkLnYyIyM1ZjM2NDBlNy1hNTljLTRiZWMtODJjYS1lNjYyNTFmNzk1YjctMTc1NDg5MjIyMi1UcmFuc2NyaXB0VjIjIzA=/metadataContent"]
 }
 -->
 ``` http
