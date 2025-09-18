@@ -1,6 +1,6 @@
 ---
 title: "ediscoveryHoldPolicySyncOperation resource type"
-description: "The operation represents adding or updating of a legal hold policy"
+description: "Represents an asynchronous operation that adds or updates a legal hold policy."
 author: "kylefk"
 ms.date: 09/07/2025
 ms.localizationpriority: medium
@@ -14,9 +14,9 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The operation represents adding or updating of a legal hold policy.
+Represents an asynchronous operation that adds or updates a legal hold policy.
 
-Inherits from [microsoft.graph.security.caseOperation](../resources/security-caseoperation.md).
+Inherits from [caseOperation](../resources/security-caseoperation.md).
 
 ## Methods
 
