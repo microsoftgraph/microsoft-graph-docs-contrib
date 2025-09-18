@@ -38,7 +38,7 @@ Inherits from [entity](../resources/entity.md)
 |id|String|The unique identifier for the CA. Inherits from [entity](../resources/entity.md). Read-only.|
 |name|String|The display name of the CA. Supports `$filter` (`eq`, `ne`, `startsWith`)|
 |organizationName|String|The organization name (OU) field of the certificate. Supports `$filter` (`eq`, `ne`, `startsWith`)|
-|status|microsoft.graph.networkaccess.tlsCertificateStatus|The current status of the certificate. The possible values are: `csrGenerated`, `enrolling`, `active`, `unknownFutureValue`. Read-only. Supports `$filter` (`eq`, `ne`)|
+|status|microsoft.graph.networkaccess.tlsCertificateStatus|The current status of the certificate. The possible values are: `csrGenerated`, `enrolling`, `active`, `unknownFutureValue`, `expiring`, `expired`, `enabled`, `disabled`. Use the `Prefer: include-unknown-enum-members` request header to get the following values from this {evolvable enum}(/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `expiring`, `expired`, `enabled`, `disabled`. Read-only. Supports `$filter` (`eq`, `ne`).|
 |validity|[microsoft.graph.networkaccess.validityDate](../resources/networkaccess-validitydate.md)|The validity period of the certificate, including start and end dates.|
 
 ## Relationships
