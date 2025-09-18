@@ -58,20 +58,3 @@ The subscription endpoints for retrieving channel members, based on channel type
 > [!IMPORTANT]
 > When you receive a membership share or unshare notification, refresh the **allMembers** API for shared channels. To handle large indirect membership changes efficiently, call the **sharedWithTeams** and **allowedMembers** APIs.
 
-## Related content
-
-[List the members of a team](team-list-members.md).
-
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
-<!--
-{
-  "type": "#page.annotation",
-  "description": "channel member list",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-  ]
-}
--->
