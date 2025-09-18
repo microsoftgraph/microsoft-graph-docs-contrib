@@ -134,8 +134,8 @@ POST https://graph.microsoft.com/beta/identity/riskPrevention/fraudProtectionPro
 Content-Type: application/json
 
 {
-   "@odata.type": "#microsoft.graph.arkoseFraudProtectionProvider",
-    "displayName": "Arkose Sign-Up Protection",
+   "@odata.type": "#microsoft.graph.humanSecurityFraudProtectionProvider",
+    "displayName": "HUMAN Security Sign-Up Protection",
     "appId": "PXab4D5AEg",
     "serverToken": "eyPQstlef3"
 }
@@ -160,7 +160,7 @@ Content-Type: application/json
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/riskPrevention/fraudProtectionProviders/$entity",
     "@odata.type": "#microsoft.graph.humanSecurityFraudProtectionProvider",
     "id": "6b09e36f-7e92-4448-842a-3959bcbc4f9f",
-    "displayName": "Human security fraud provider",
+    "displayName": "Human security Sign-Up provider",
     "appId": "PXab4D5AEg"
 }
 
