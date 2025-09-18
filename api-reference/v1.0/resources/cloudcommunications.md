@@ -27,7 +27,6 @@ None.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|adhocCalls|[adhocCall](../resources/adhoccall.md) collection|A collection of ad hoc calls in Teams. |
 |onlineMeetingConversations|[onlineMeetingEngagementConversation](../resources/onlinemeetingengagementconversation.md) collection|A collection of structured question-and-answer (Q&A) threads in Teams directly associated with online meetings.|
 
 ## JSON representation
