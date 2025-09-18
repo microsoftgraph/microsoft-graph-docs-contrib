@@ -29,8 +29,8 @@ For the list of API operations for managing this resource type, see the [fraudPr
 |Property|Type|Description|
 |:---|:---|:---|
 |appId|String|Unique identifier for an individual application. You can retrieve this from the HUMAN Security Admin Console or request it from your HUMAN Security Customer Success Manager.|
-|displayName|String|The display name of this Arkose fraud protection provider configuration. Inherited from [fraudProtectionProvider](../resources/fraudprotectionprovider.md).|
-|id|String|The unique identifier for this HUMAN Security fraud protection provider configuration. Inherited from [entity](../resources/entity.md). Inherits from [entity](../resources/entity.md)|
+|displayName|String|The display name of this HUMAN Security fraud protection provider configuration. Inherited from [fraudProtectionProvider](../resources/fraudprotectionprovider.md).|
+|id|String|The unique identifier for this HUMAN Security fraud protection provider configuration. Inherited from [entity](../resources/entity.md).|
 |serverToken|String| Unique identifier used to authenticate API calls between the Server side integration and the HUMAN platform. You can retrieve this from the HUMAN Security Admin Console or request it from your HUMAN Security Customer Success Manager.|
 
 ## Relationships

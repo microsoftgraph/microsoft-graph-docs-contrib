@@ -118,6 +118,6 @@ Content-Type: application/json
     "id": "0bb2618b-51f7-4e83-bcb8-84e70f7cf84d",
     "displayName": "HUMAN Security Sign-Up Protection",
     "appId": "PXabcasdfg",
-    "serverToken": "XabcSadfgb",
+    "serverToken": "XabcSadfgb"
 }
 ```

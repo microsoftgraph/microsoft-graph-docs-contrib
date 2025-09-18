@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 Create a new fraudProtectionProvider object. You can create one of the following subtypes that are derived from **fraudProtectionProvider**.
 
 - [arkoseFraudProtectionProvider](../resources/arkoseFraudProtectionProvider.md)
-- [humanSecurityFraudProtectionProvider](../resources/humansecurityfraudprotectionprovider.md) resource type
+- [humanSecurityFraudProtectionProvider](../resources/humansecurityfraudprotectionprovider.md)
 
 ## Permissions
 
