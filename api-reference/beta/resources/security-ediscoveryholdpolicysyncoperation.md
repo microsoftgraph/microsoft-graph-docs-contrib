@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an asynchronous operation that adds or updates a legal hold policy.
+Represents an operation that adds or updates a legal hold policy.
 
 Inherits from [caseOperation](../resources/security-caseoperation.md).
 

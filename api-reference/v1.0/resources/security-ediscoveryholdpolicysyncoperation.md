@@ -12,7 +12,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.security
 
-Represents an asynchronous operation that adds or updates a legal hold policy.
+Represents an operation that adds or updates a legal hold policy.
 
 For more information, see [Manage holds in eDiscovery](/purview/edisc-hold-manage).
 
