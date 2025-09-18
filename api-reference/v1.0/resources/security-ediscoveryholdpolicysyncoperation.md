@@ -1,6 +1,6 @@
 ---
 title: "ediscoveryHoldPolicySyncOperation resource type"
-description: "Represents an asynchronous operation that adds or updates a legal hold policy."
+description: "Represents an operation that adds or updates a legal hold policy."
 author: "kylefk"
 ms.date: 09/07/2025
 ms.localizationpriority: medium
