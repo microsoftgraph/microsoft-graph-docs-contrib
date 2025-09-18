@@ -1,6 +1,6 @@
 ---
 title: "sharepointMigrationEvent resource type"
-description: "Basic information of a migration event"
+description: "Represents the common information of a SharePoint migration event."
 author: "wenzhou"
 ms.date: 06/04/2025
 ms.localizationpriority: medium
@@ -14,7 +14,10 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The **sharePointMigrationEvent** resource represents the common information of a SharePoint migration event. All the progress events are inherited from this base event.
+Represents the common information of a SharePoint migration event.
+
+The following progress events are inherited from this base event:
+[TODO]
 
 Inherits from [entity](../resources/entity.md).
 
