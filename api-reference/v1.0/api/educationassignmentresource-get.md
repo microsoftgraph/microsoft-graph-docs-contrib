@@ -56,7 +56,7 @@ The following example shows a request.
   "name": "get_educationassignmentresource"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/1618dfb0-3ff2-4edf-8d5c-b8f81df00e80/resources/fb92ec62-3996-4c3a-ad41-720dd930c834
+GET https://graph.microsoft.com/v1.0/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/1618dfb0-3ff2-4edf-8d5c-b8f81df00e80/resources/fb92ec62-3996-4c3a-ad41-720dd930c834
 ```
 
 # [C#](#tab/csharp)
@@ -561,6 +561,108 @@ Content-type: application/json
             }
         }
     }
+}
+```
+
+### Example 7: Get an educationSpeakerProgressResource
+
+The following example shows how to get an [educationSpeakerProgressResource](../resources/educationspeakerprogressresource.md) assignment resource.
+
+#### Request
+
+The following example shows a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "specific_educationSpeakerProgressResource"
+}
+-->
+``` http
+GET https://graph.microsoft.com/v1.0/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/assignments/fe9c8d6f-baad-4b5e-b9d5-e2bb33e4ed19/resources/af98a1e1-3393-4ee0-8bcc-8b5bb4598d1c
+```
+
+#### Response
+
+The following example shows the response.
+> **Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.educationSpeakerProgressResource"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/assignments('fe9c8d6f-baad-4b5e-b9d5-e2bb33e4ed19')/resources/$entity",
+  "distributeForStudentWork": true,
+  "id": "af98a1e1-3393-4ee0-8bcc-8b5bb4598d1c",
+  "resource": {
+    "@odata.type": "#microsoft.graph.educationSpeakerProgressResource",
+    "displayName": "speakerProgressTestResource",
+    "createdDateTime": "2025-03-17T16:26:03.5530234Z",
+    "lastModifiedDateTime": "2025-03-17T16:26:03.5530384Z",
+    "recordingTimeLimitInMinutes": 5,
+    "showRehearsalReportToStudentBeforeMediaUpload": true,
+    "maxRecordingAttempts": 1,
+    "isVideoRequired": true,
+    "isAiFeedbackEnabled": true,
+    "presentationTitle": "speakerProgressTestResource",
+    "spokenLanguageLocale": "en-US",
+    "createdBy": {
+      "application": null,
+      "device": null,
+      "user": {
+        "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
+        "displayName": null
+      }
+    },
+    "lastModifiedBy": {
+      "application": null,
+      "device": null,
+      "user": {
+        "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
+        "displayName": null
+      }
+    },
+    "speakerCoachSettings": {
+      "deliverySettings": {
+        "isPaceEnabled": false,
+        "areFillerWordsEnabled": false,
+        "isPitchEnabled": false,
+        "isPronunciationEnabled": true
+      },
+      "contentSettings": {
+        "isInclusivenessEnabled": false,
+        "isRepetitiveLanguageEnabled": false
+      },
+      "audienceEngagementSettings": {
+        "isBodyLanguageEnabled": false
+      }
+    },
+    "aiFeedbackCriteria": {
+      "speechType": "informative",
+      "aiFeedbackSettings": {
+        "deliverySettings": {
+          "isLanguageUseEnabled": false,
+          "areRhetoricalTechniquesEnabled": false,
+          "isStyleEnabled": true
+        },
+        "contentSettings": {
+          "isSpeechOrganizationEnabled": false,
+          "isMessageClarityEnabled": false,
+          "isQualityOfInformationEnabled": false
+        },
+        "audienceEngagementSettings": {
+          "areEngagementStrategiesEnabled": false,
+          "isEmotionalAndIntellectualAppealEnabled": false,
+          "isCallToActionEnabled": false
+        }
+      }
+    }
+  }
 }
 ```
 
