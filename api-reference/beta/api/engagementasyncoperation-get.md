@@ -117,8 +117,8 @@ Content-Type: application/json
   "lastActionDateTime": "2023-12-06T09:42:54.367663-08:00",
   "status": "succeeded",
   "statusDetail": null,
-  "resourceLocation": "https://graph.microsoft.com/beta/employeeExperience/communities('eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiI4MzIxMjc1In0')",
+  "resourceLocation": "https://graph.microsoft.com/beta/employeeExperience/communities('eyXxdHlwZSI6Ikdyb3VwIiwiaABCDiI4MzIxMjc1In0')",
   "operationType": "createCommunity",
-  "resourceId": "eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiI4MzIxMjc1In0"
+  "resourceId": "eyXxdHlwZSI6Ikdyb3VwIiwiaABCDiI4MzIxMjc1In0"
 }
 ```
