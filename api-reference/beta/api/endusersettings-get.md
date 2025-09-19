@@ -54,7 +54,6 @@ If successful, this method returns a `200 OK` response code and an [endUserSetti
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_endusersettings"
@@ -64,7 +63,6 @@ The following example shows a request.
 GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/controlConfigurations/endUserSettings
 ```
 
----
 
 ### Response
 
