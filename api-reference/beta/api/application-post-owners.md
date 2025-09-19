@@ -1,7 +1,7 @@
 ---
 title: "Add owner"
 description: "Use this API to add an owner to an application."
-author: "sureshja"
+author: "Jackson-Woods"
 ms.localizationpriority: medium
 ms.subservice: "entra-applications"
 doc_type: apiPageType

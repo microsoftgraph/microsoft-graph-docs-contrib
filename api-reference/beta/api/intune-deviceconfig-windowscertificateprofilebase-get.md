@@ -39,6 +39,8 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsWiredNetworkConfiguration/identityCertificateForClientAuthentication
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsWifiEnterpriseEAPConfiguration/identityCertificateForClientAuthentication
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsWiredNetworkConfiguration/secondaryIdentityCertificateForClientAuthentication
+GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsZtdnsConfiguration/rootCertificatesForServerValidation/{windowsCertificateProfileBaseId}
+GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsZtdnsConfiguration/rootCertificatesForClientAuthentication/{windowsCertificateProfileBaseId}
 ```
 
 ## Optional query parameters

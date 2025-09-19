@@ -13,11 +13,9 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Delete and unprotect all the artifacts protected by a dynamic rule. This action is only applicable to dynamic rules.
 
-The following points apply when deleting a dynamic rule and unprotecting all artifacts it protects.
+The following points apply when you delete a dynamic rule and unprotect all artifacts it protects.
 - The rule moves to the `deleteRequested` status when this action is performed on a dynamic rule.
 - Unprotecting artifacts and deleting rules are asynchronous operations, and they might not complete immediately. 
 - This action resets the `dynamicRule` protection source. If the artifact is also protected by another protection source, it's only protected by that source afterward.
@@ -42,8 +40,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 ``` http
 POST /solutions/backupRestore/oneDriveForBusinessProtectionPolicies/{oneDriveForBusinessProtectionPolicyId}/driveInclusionRules/{driveProtectionRuleId}/deleteAndUnprotect
-manikantsinghms marked this conversation as resolved.
-manikantsinghms marked this conversation as resolved.
 POST /solutions/backupRestore/exchangeProtectionPolicies/{exchangeProtectionPolicyId}/mailboxInclusionRules/{mailboxProtectionRuleId}/deleteAndUnprotect
 ```
 
@@ -76,7 +72,7 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/solutions/backupRestore/oneDriveForBusinessProtectionPolicies/71633878-8321-4950-bfaf-ed285bdd1461/driveInclusionRules/61633878-8321-4950-bfaf-ed285bdd1461/deleteAndUnprotect
+POST https://graph.microsoft.com/v1.0/solutions/backupRestore/oneDriveForBusinessProtectionPolicies/71633878-8321-4950-bfaf-ed285bdd1461/driveInclusionRules/61633878-8321-4950-bfaf-ed285bdd1461/deleteAndUnprotect
 ```
 
 #### Response
@@ -90,11 +86,12 @@ The following example shows the response.
 }
 -->
 ``` http
-HTTP/1.1 200 OK
+HTTP/1.1 202 Accepted
 Content-Type: application/json
+
 {
   "value": {
-    "@odata.type": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.protectionRuleBase",
+    "@odata.type": "https://graph.microsoft.com/v1.0/$metadata#microsoft.graph.protectionRuleBase",
     "id": "61633878-8321-4950-bfaf-ed285bdd1461",
     "status": "deleteRequested",
     "createdDateTime": "2025-01-15T15:07:44.3043505Z",
@@ -124,7 +121,7 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/solutions/backupRestore/exchangeProtectionPolicies/6b0991b9-e7d4-4794-86fa-2a3f2a4e3177/mailboxInclusionRules/52147fb9-2682-47bc-a8f6-6c38c1ff498d/deleteAndUnprotect
+POST https://graph.microsoft.com/v1.0/solutions/backupRestore/exchangeProtectionPolicies/6b0991b9-e7d4-4794-86fa-2a3f2a4e3177/mailboxInclusionRules/52147fb9-2682-47bc-a8f6-6c38c1ff498d/deleteAndUnprotect
 ```
 
 #### Response
@@ -138,11 +135,12 @@ The following example shows the response.
 }
 -->
 ``` http
-HTTP/1.1 200 OK
+HTTP/1.1 200 Accepted
 Content-Type: application/json
+
 {
   "value": {
-    "@odata.type": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.protectionRuleBase",
+    "@odata.type": "https://graph.microsoft.com/v1.0/$metadata#microsoft.graph.protectionRuleBase",
     "id": "52147fb9-2682-47bc-a8f6-6c38c1ff498d",
     "status": "deleteRequested",
     "createdDateTime": "2025-01-15T15:07:44.3043505Z",
