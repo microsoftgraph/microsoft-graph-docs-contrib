@@ -18,14 +18,15 @@ Get a list of the [accessPackageResourceRoleScope](../resources/accesspackageres
 
 ## Permissions This operation allows end users to see the resources and resource roles included in an available access package.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
-
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "permissions", "name": "availableaccesspackage_list_resourcerolescopes" } -->
-[!INCLUDE [permissions-table](../includes/permissions/availableaccesspackage-list-resourcerolescopes-permissions.md)]
+| Permission type                        | Permissions (from least to most privileged)                                                     |
+|:---------------------------------------|:-------------------------------------------------------------------------------------------------|
+| Delegated (work or school account)     | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All                            |
+| Delegated (personal Microsoft account) | Not supported.                                                                                   |
+| Application                            | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All                            |
 
 ## HTTP request
 
@@ -68,34 +69,6 @@ The following example shows a request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/availableAccessPackages/360fa7de-90be-48dc-a2ce-fc40094a93dd/resourceRoleScopes
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/list-availableaccesspackage-resourcerolescopes-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/list-availableaccesspackage-resourcerolescopes-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-availableaccesspackage-resourcerolescopes-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-availableaccesspackage-resourcerolescopes-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/list-availableaccesspackage-resourcerolescopes-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/list-availableaccesspackage-resourcerolescopes-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/list-availableaccesspackage-resourcerolescopes-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
