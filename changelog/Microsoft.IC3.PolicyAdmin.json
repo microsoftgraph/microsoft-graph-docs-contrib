@@ -57,6 +57,14 @@
           "ChangeType": "Addition",
           "Description": "Added the [getPolicyId](https://learn.microsoft.com/en-us/graph/api/teamsAdministration-teamsPolicyAssignment-getPolicyId?view=graph-rest-beta) method to the [teamsPolicyAssignment](https://learn.microsoft.com/en-us/graph/api/resources/teamsAdministration-teamsPolicyAssignment?view=graph-rest-beta) resource.",
           "Target": "teamsPolicyAssignment"
+        },
+        {
+          "Id": "7ac3b00e-b7c0-4d0d-ab38-3f6cd59a3fbd",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "userAssignments",
+          "ChangeType": "Addition",
+          "Description": "Added the **userAssignments** relationship to the [teamsPolicyAssignment](https://learn.microsoft.com/en-us/graph/api/resources/teamsAdministration-teamsPolicyAssignment?view=graph-rest-beta) resource.",
+          "Target": "teamsPolicyAssignment"
         }
       ],
       "Id": "371175e2-5a48-4494-83f3-88fde874ac7b",
