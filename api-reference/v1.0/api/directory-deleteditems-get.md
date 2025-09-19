@@ -23,8 +23,6 @@ Retrieve the properties of a recently deleted directory object from [deleted ite
 - [servicePrincipal](../resources/serviceprincipal.md)
 - [user](../resources/user.md)
 
->**Note:** Deleted security groups are deleted permanently and can't be retrieved through this API.
-
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
@@ -81,10 +79,6 @@ GET https://graph.microsoft.com/v1.0/directory/deletedItems/{object-id}
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-directory-deleteditem-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-directory-deleteditem-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

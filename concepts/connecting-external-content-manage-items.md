@@ -6,6 +6,7 @@ author: mecampos
 doc_type: conceptualPageType
 ms.subservice: search
 ms.date: 11/07/2024
+ms.topic: article
 ---
 <!---<author of this doc: rsamai>--->
 
@@ -74,7 +75,7 @@ Sending activities on the item powers intelligent recommendation experiences acr
 
 To add an item to the index, you [create an externalItem](/graph/api/externalconnectors-externalconnection-put-items). When you create an item, you assign a unique identifier in the URL.
 
-For example, your application may index helpdesk tickets using the ticket number. If a ticket has the ticket number `SR00145`, the request might look like the following:
+For example, your application might index helpdesk tickets using the ticket number. If a ticket has the ticket number `SR00145`, the request might look like the following:
 
 ```http
 PUT /external/connections/contosohelpdesk/items/SR00145

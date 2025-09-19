@@ -68,10 +68,6 @@ POST https://graph.microsoft.com/beta/groups/314ac440-129f-4cb3-ad61-24ef4a7de1d
 [!INCLUDE [sample-code](../includes/snippets/csharp/groupthisgetpasswordsinglesignoncredentials-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/groupthisgetpasswordsinglesignoncredentials-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/groupthisgetpasswordsinglesignoncredentials-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

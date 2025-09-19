@@ -83,10 +83,6 @@ Content-length: 188
 [!INCLUDE [sample-code](../includes/snippets/csharp/intune-books-managedebookassignment-update-update-managedebookassignment-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/intune-books-managedebookassignment-update-update-managedebookassignment-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/intune-books-managedebookassignment-update-update-managedebookassignment-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

@@ -64,10 +64,6 @@ DELETE https://graph.microsoft.com/beta/security/cases/ediscoveryCases/58399dff-
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-parent-from-ediscoveryreviewtag-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/delete-parent-from-ediscoveryreviewtag-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-parent-from-ediscoveryreviewtag-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

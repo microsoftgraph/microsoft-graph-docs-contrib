@@ -63,10 +63,6 @@ DELETE https://graph.microsoft.com/v1.0/deviceAppManagement/mobileAppConfigurati
 [!INCLUDE [sample-code](../includes/snippets/csharp/intune-apps-iosmobileappconfiguration-delete-delete-iosmobileappconfiguration-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/intune-apps-iosmobileappconfiguration-delete-delete-iosmobileappconfiguration-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/intune-apps-iosmobileappconfiguration-delete-delete-iosmobileappconfiguration-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

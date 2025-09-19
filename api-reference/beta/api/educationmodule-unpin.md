@@ -64,10 +64,6 @@ POST https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-
 [!INCLUDE [sample-code](../includes/snippets/csharp/educationmodule-unpin-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/educationmodule-unpin-1-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/educationmodule-unpin-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

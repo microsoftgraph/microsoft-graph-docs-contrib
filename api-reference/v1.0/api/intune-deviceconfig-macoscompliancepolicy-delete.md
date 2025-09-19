@@ -63,10 +63,6 @@ DELETE https://graph.microsoft.com/v1.0/deviceManagement/deviceCompliancePolicie
 [!INCLUDE [sample-code](../includes/snippets/csharp/intune-deviceconfig-macoscompliancepolicy-delete-delete-macoscompliancepolicy-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/intune-deviceconfig-macoscompliancepolicy-delete-delete-macoscompliancepolicy-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/intune-deviceconfig-macoscompliancepolicy-delete-delete-macoscompliancepolicy-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

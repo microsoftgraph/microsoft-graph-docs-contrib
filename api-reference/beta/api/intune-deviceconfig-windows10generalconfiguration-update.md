@@ -12,7 +12,7 @@ ms.date: 08/01/2024
 
 Namespace: microsoft.graph
 
-> **Important:** APIs under the /beta version in Microsoft Graph are subject to change which could break your applications. While Intune /beta APIs are supported by Microsoft, you should use these at your own discretion. In general, /beta APIs are not recommended for use in production applications. To determine whether an API is available in v1.0, use the Version selector.
+> **Important:** Microsoft supports Intune /beta APIs, but they are subject to more frequent change. Microsoft recommends using version v1.0 when possible. Check an API's availability in version v1.0 using the Version selector.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -64,62 +64,17 @@ The following table shows the properties that are required when you create the [
 |description|String|Admin provided description of the Device Configuration. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|taskManagerBlockEndTask|Boolean|Specify whether non-administrators can use Task Manager to end tasks.|
-|energySaverOnBatteryThresholdPercentage|Int32|This setting allows you to specify battery charge level at which Energy Saver is turned on. While on battery, Energy Saver is automatically turned on at (and below) the specified battery charge level. Valid input range (0-100). Valid values 0 to 100|
-|energySaverPluggedInThresholdPercentage|Int32|This setting allows you to specify battery charge level at which Energy Saver is turned on. While plugged in, Energy Saver is automatically turned on at (and below) the specified battery charge level. Valid input range (0-100). Valid values 0 to 100|
-|powerLidCloseActionOnBattery|[powerActionType](../resources/intune-deviceconfig-poweractiontype.md)|This setting specifies the action that Windows takes when a user closes the lid on a mobile PC while on battery. Possible values are: `notConfigured`, `noAction`, `sleep`, `hibernate`, `shutdown`.|
-|powerLidCloseActionPluggedIn|[powerActionType](../resources/intune-deviceconfig-poweractiontype.md)|This setting specifies the action that Windows takes when a user closes the lid on a mobile PC while plugged in. Possible values are: `notConfigured`, `noAction`, `sleep`, `hibernate`, `shutdown`.|
-|powerButtonActionOnBattery|[powerActionType](../resources/intune-deviceconfig-poweractiontype.md)|This setting specifies the action that Windows takes when a user presses the Power button while on battery. Possible values are: `notConfigured`, `noAction`, `sleep`, `hibernate`, `shutdown`.|
-|powerButtonActionPluggedIn|[powerActionType](../resources/intune-deviceconfig-poweractiontype.md)|This setting specifies the action that Windows takes when a user presses the Power button while plugged in. Possible values are: `notConfigured`, `noAction`, `sleep`, `hibernate`, `shutdown`.|
-|powerSleepButtonActionOnBattery|[powerActionType](../resources/intune-deviceconfig-poweractiontype.md)|This setting specifies the action that Windows takes when a user presses the Sleep button while on battery. Possible values are: `notConfigured`, `noAction`, `sleep`, `hibernate`, `shutdown`.|
-|powerSleepButtonActionPluggedIn|[powerActionType](../resources/intune-deviceconfig-poweractiontype.md)|This setting specifies the action that Windows takes when a user presses the Sleep button while plugged in. Possible values are: `notConfigured`, `noAction`, `sleep`, `hibernate`, `shutdown`.|
-|powerHybridSleepOnBattery|[enablement](../resources/intune-shared-enablement.md)|This setting allows you to turn off hybrid sleep while on battery. If you set this setting to disable, a hiberfile is not generated when the system transitions to sleep (Stand By). If you set this setting to enable or do not configure this policy setting, users control this setting. Possible values are: `notConfigured`, `enabled`, `disabled`.|
-|powerHybridSleepPluggedIn|[enablement](../resources/intune-shared-enablement.md)|This setting allows you to turn off hybrid sleep while plugged in. If you set this setting to disable, a hiberfile is not generated when the system transitions to sleep (Stand By). If you set this setting to enable or do not configure this policy setting, users control this setting. Possible values are: `notConfigured`, `enabled`, `disabled`.|
-|windows10AppsForceUpdateSchedule|[windows10AppsForceUpdateSchedule](../resources/intune-deviceconfig-windows10appsforceupdateschedule.md)|Windows 10 force update schedule for Apps.|
-|enableAutomaticRedeployment|Boolean|Allow users with administrative rights to delete all user data and settings using CTRL + Win + R at the device lock screen so that the device can be automatically re-configured and re-enrolled into management.|
+|networkProxyApplySettingsDeviceWide|Boolean|If set, proxy settings will be applied to all processes and accounts in the device. Otherwise, it will be applied to the user account that’s enrolled into MDM.|
+|networkProxyDisableAutoDetect|Boolean|Disable automatic detection of settings. If enabled, the system will try to find the path to a proxy auto-config (PAC) script.|
+|networkProxyAutomaticConfigurationUrl|String|Address to the proxy auto-config (PAC) script you want to use.|
+|networkProxyServer|[windows10NetworkProxyServer](../resources/intune-deviceconfig-windows10networkproxyserver.md)|Specifies manual proxy server settings.|
+|personalizationDesktopImageUrl|String|A http or https Url to a jpg, jpeg or png image that needs to be downloaded and used as the Desktop Image or a file Url to a local image on the file system that needs to used as the Desktop Image.|
+|personalizationLockScreenImageUrl|String|A http or https Url to a jpg, jpeg or png image that neeeds to be downloaded and used as the Lock Screen Image or a file Url to a local image on the file system that needs to be used as the Lock Screen Image.|
 |microsoftAccountSignInAssistantSettings|[signInAssistantOptions](../resources/intune-deviceconfig-signinassistantoptions.md)|Controls the Microsoft Account Sign-In Assistant (wlidsvc) NT service. Possible values are: `notConfigured`, `disabled`.|
+|windows10AppsForceUpdateSchedule|[windows10AppsForceUpdateSchedule](../resources/intune-deviceconfig-windows10appsforceupdateschedule.md)|Windows 10 force update schedule for Apps.|
 |authenticationAllowSecondaryDevice|Boolean|Allows secondary authentication devices to work with Windows.|
 |authenticationWebSignIn|[enablement](../resources/intune-shared-enablement.md)|Indicates whether or not Web Credential Provider will be enabled. Possible values are: `notConfigured`, `enabled`, `disabled`.|
 |authenticationPreferredAzureADTenantDomainName|String|Specifies the preferred domain among available domains in the Azure AD tenant.|
-|cryptographyAllowFipsAlgorithmPolicy|Boolean|Specify whether to allow or disallow the Federal Information Processing Standard (FIPS) policy.|
-|displayAppListWithGdiDPIScalingTurnedOn|String collection|List of legacy applications that have GDI DPI Scaling turned on.|
-|displayAppListWithGdiDPIScalingTurnedOff|String collection|List of legacy applications that have GDI DPI Scaling turned off.|
-|enterpriseCloudPrintDiscoveryEndPoint|String|Endpoint for discovering cloud printers.|
-|enterpriseCloudPrintOAuthAuthority|String|Authentication endpoint for acquiring OAuth tokens.|
-|enterpriseCloudPrintOAuthClientIdentifier|String|GUID of a client application authorized to retrieve OAuth tokens from the OAuth Authority.|
-|enterpriseCloudPrintResourceIdentifier|String|OAuth resource URI for print service as configured in the Azure portal.|
-|enterpriseCloudPrintDiscoveryMaxLimit|Int32|Maximum number of printers that should be queried from a discovery endpoint. This is a mobile only setting. Valid values 1 to 65535|
-|enterpriseCloudPrintMopriaDiscoveryResourceIdentifier|String|OAuth resource URI for printer discovery service as configured in Azure portal.|
-|experienceDoNotSyncBrowserSettings|[browserSyncSetting](../resources/intune-deviceconfig-browsersyncsetting.md)|Allow or prevent the syncing of Microsoft Edge Browser settings. Option for IT admins to prevent syncing across devices, but allow user override. Possible values are: `notConfigured`, `blockedWithUserOverride`, `blocked`.|
-|messagingBlockSync|Boolean|Indicates whether or not to block text message back up and restore and Messaging Everywhere.|
-|messagingBlockMMS|Boolean|Indicates whether or not to block the MMS send/receive functionality on the device.|
-|messagingBlockRichCommunicationServices|Boolean|Indicates whether or not to block the RCS send/receive functionality on the device.|
-|printerNames|String collection|Automatically provision printers based on their names (network host names).|
-|printerDefaultName|String|Name (network host name) of an installed printer.|
-|printerBlockAddition|Boolean|Prevent user installation of additional printers from printers settings.|
-|searchBlockDiacritics|Boolean|Specifies if search can use diacritics.|
-|searchDisableAutoLanguageDetection|Boolean|Specifies whether to use automatic language detection when indexing content and properties.|
-|searchDisableIndexingEncryptedItems|Boolean|Indicates whether or not to block indexing of WIP-protected items to prevent them from appearing in search results for Cortana or Explorer.|
-|searchEnableRemoteQueries|Boolean|Indicates whether or not to block remote queries of this computer’s index.|
-|searchDisableUseLocation|Boolean|Specifies if search can use location information.|
-|searchDisableLocation|Boolean|Specifies if search can use location information.|
-|searchDisableIndexerBackoff|Boolean|Indicates whether or not to disable the search indexer backoff feature.|
-|searchDisableIndexingRemovableDrive|Boolean|Indicates whether or not to allow users to add locations on removable drives to libraries and to be indexed.|
-|searchEnableAutomaticIndexSizeManangement|Boolean|Specifies minimum amount of hard drive space on the same drive as the index location before indexing stops.|
-|searchBlockWebResults|Boolean|Indicates whether or not to block the web search.|
-|findMyFiles|[enablement](../resources/intune-shared-enablement.md)|Controls if the user can configure search to Find My Files mode, which searches files in secondary hard drives and also outside of the user profile. Find My Files does not allow users to search files or locations to which they do not have access. Possible values are: `notConfigured`, `enabled`, `disabled`.|
-|securityBlockAzureADJoinedDevicesAutoEncryption|Boolean|Specify whether to allow automatic device encryption during OOBE when the device is Azure AD joined (desktop only).|
-|diagnosticsDataSubmissionMode|[diagnosticDataSubmissionMode](../resources/intune-deviceconfig-diagnosticdatasubmissionmode.md)|Gets or sets a value allowing the device to send diagnostic and usage telemetry data, such as Watson. Possible values are: `userDefined`, `none`, `basic`, `enhanced`, `full`.|
-|oneDriveDisableFileSync|Boolean|Gets or sets a value allowing IT admins to prevent apps and features from working with files on OneDrive.|
-|systemTelemetryProxyServer|String|Gets or sets the fully qualified domain name (FQDN) or IP address of a proxy server to forward Connected User Experiences and Telemetry requests.|
-|edgeTelemetryForMicrosoft365Analytics|[edgeTelemetryMode](../resources/intune-deviceconfig-edgetelemetrymode.md)|Specifies what type of telemetry data (none, intranet, internet, both) is sent to Microsoft 365 Analytics. Possible values are: `notConfigured`, `intranet`, `internet`, `intranetAndInternet`.|
-|inkWorkspaceAccess|[inkAccessSetting](../resources/intune-deviceconfig-inkaccesssetting.md)|Controls the user access to the ink workspace, from the desktop and from above the lock screen. Possible values are: `notConfigured`, `enabled`, `disabled`.|
-|inkWorkspaceAccessState|[stateManagementSetting](../resources/intune-deviceconfig-statemanagementsetting.md)|Controls the user access to the ink workspace, from the desktop and from above the lock screen. Possible values are: `notConfigured`, `blocked`, `allowed`.|
-|inkWorkspaceBlockSuggestedApps|Boolean|Specify whether to show recommended app suggestions in the ink workspace.|
-|smartScreenEnableAppInstallControl|Boolean|This property will be deprecated in July 2019 and will be replaced by property SmartScreenAppInstallControl. Allows IT Admins to control whether users are allowed to install apps from places other than the Store.|
-|smartScreenAppInstallControl|[appInstallControlType](../resources/intune-deviceconfig-appinstallcontroltype.md)|Added in Windows 10, version 1703. Allows IT Admins to control whether users are allowed to install apps from places other than the Store. Possible values are: `notConfigured`, `anywhere`, `storeOnly`, `recommendations`, `preferStore`.|
-|personalizationDesktopImageUrl|String|A http or https Url to a jpg, jpeg or png image that needs to be downloaded and used as the Desktop Image or a file Url to a local image on the file system that needs to used as the Desktop Image.|
-|personalizationLockScreenImageUrl|String|A http or https Url to a jpg, jpeg or png image that neeeds to be downloaded and used as the Lock Screen Image or a file Url to a local image on the file system that needs to be used as the Lock Screen Image.|
 |bluetoothAllowedServices|String collection|Specify a list of allowed Bluetooth services and profiles in hex formatted strings.|
 |bluetoothBlockAdvertising|Boolean|Whether or not to Block the user from using bluetooth advertising.|
 |bluetoothBlockPromptedProximalConnections|Boolean|Whether or not to block the users from using Swift Pair and other proximity based scenarios.|
@@ -164,6 +119,8 @@ The following table shows the properties that are required when you create the [
 |cellularBlockVpn|Boolean|Whether or not to Block the user from using VPN over cellular.|
 |cellularBlockVpnWhenRoaming|Boolean|Whether or not to Block the user from using VPN when roaming over cellular.|
 |cellularData|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|Whether or not to allow the cellular data channel on the device. If not configured, the cellular data channel is allowed and the user can turn it off. Possible values are: `blocked`, `required`, `allowed`, `notConfigured`.|
+|enableAutomaticRedeployment|Boolean|Allow users with administrative rights to delete all user data and settings using CTRL + Win + R at the device lock screen so that the device can be automatically re-configured and re-enrolled into management.|
+|cryptographyAllowFipsAlgorithmPolicy|Boolean|Specify whether to allow or disallow the Federal Information Processing Standard (FIPS) policy.|
 |defenderRequireRealTimeMonitoring|Boolean|Indicates whether or not to require real time monitoring.|
 |defenderRequireBehaviorMonitoring|Boolean|Indicates whether or not to require behavior monitoring.|
 |defenderRequireNetworkInspectionSystem|Boolean|Indicates whether or not to require network inspection system.|
@@ -199,12 +156,24 @@ The following table shows the properties that are required when you create the [
 |defenderFileExtensionsToExclude|String collection|File extensions to exclude from scans and real time protection.|
 |defenderFilesAndFoldersToExclude|String collection|Files and folder to exclude from scans and real time protection.|
 |defenderProcessesToExclude|String collection|Processes to exclude from scans and real time protection.|
+|displayAppListWithGdiDPIScalingTurnedOn|String collection|List of legacy applications that have GDI DPI Scaling turned on.|
+|displayAppListWithGdiDPIScalingTurnedOff|String collection|List of legacy applications that have GDI DPI Scaling turned off.|
+|enterpriseCloudPrintDiscoveryEndPoint|String|Endpoint for discovering cloud printers.|
+|enterpriseCloudPrintOAuthAuthority|String|Authentication endpoint for acquiring OAuth tokens.|
+|enterpriseCloudPrintOAuthClientIdentifier|String|GUID of a client application authorized to retrieve OAuth tokens from the OAuth Authority.|
+|enterpriseCloudPrintResourceIdentifier|String|OAuth resource URI for print service as configured in the Azure portal.|
+|enterpriseCloudPrintDiscoveryMaxLimit|Int32|Maximum number of printers that should be queried from a discovery endpoint. This is a mobile only setting. Valid values 1 to 65535|
+|enterpriseCloudPrintMopriaDiscoveryResourceIdentifier|String|OAuth resource URI for printer discovery service as configured in Azure portal.|
+|experienceDoNotSyncBrowserSettings|[browserSyncSetting](../resources/intune-deviceconfig-browsersyncsetting.md)|Allow or prevent the syncing of Microsoft Edge Browser settings. Option for IT admins to prevent syncing across devices, but allow user override. Possible values are: `notConfigured`, `blockedWithUserOverride`, `blocked`.|
 |lockScreenAllowTimeoutConfiguration|Boolean|Specify whether to show a user-configurable setting to control the screen timeout while on the lock screen of Windows 10 Mobile devices. If this policy is set to Allow, the value set by lockScreenTimeoutInSeconds is ignored.|
 |lockScreenBlockActionCenterNotifications|Boolean|Indicates whether or not to block action center notifications over lock screen.|
 |lockScreenBlockCortana|Boolean|Indicates whether or not the user can interact with Cortana using speech while the system is locked.|
 |lockScreenBlockToastNotifications|Boolean|Indicates whether to allow toast notifications above the device lock screen.|
 |lockScreenTimeoutInSeconds|Int32|Set the duration (in seconds) from the screen locking to the screen turning off for Windows 10 Mobile devices. Supported values are 11-1800. Valid values 11 to 1800|
 |lockScreenActivateAppsWithVoice|[enablement](../resources/intune-shared-enablement.md)|This policy setting specifies whether Windows apps can be activated by voice while the system is locked. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|messagingBlockSync|Boolean|Indicates whether or not to block text message back up and restore and Messaging Everywhere.|
+|messagingBlockMMS|Boolean|Indicates whether or not to block the MMS send/receive functionality on the device.|
+|messagingBlockRichCommunicationServices|Boolean|Indicates whether or not to block the RCS send/receive functionality on the device.|
 |passwordBlockSimple|Boolean|Specify whether PINs or passwords such as "1111" or "1234" are allowed. For Windows 10 desktops, it also controls the use of picture passwords.|
 |passwordExpirationDays|Int32|The password expiration in days. Valid values 0 to 730|
 |passwordMinimumLength|Int32|The minimum password length. Valid values 4 to 16|
@@ -216,6 +185,19 @@ The following table shows the properties that are required when you create the [
 |passwordRequiredType|[requiredPasswordType](../resources/intune-deviceconfig-requiredpasswordtype.md)|The required password type. Possible values are: `deviceDefault`, `alphanumeric`, `numeric`.|
 |passwordSignInFailureCountBeforeFactoryReset|Int32|The number of sign in failures before factory reset. Valid values 0 to 999|
 |passwordMinimumAgeInDays|Int32|This security setting determines the period of time (in days) that a password must be used before the user can change it. Valid values 0 to 998|
+|energySaverOnBatteryThresholdPercentage|Int32|This setting allows you to specify battery charge level at which Energy Saver is turned on. While on battery, Energy Saver is automatically turned on at (and below) the specified battery charge level. Valid input range (0-100). Valid values 0 to 100|
+|energySaverPluggedInThresholdPercentage|Int32|This setting allows you to specify battery charge level at which Energy Saver is turned on. While plugged in, Energy Saver is automatically turned on at (and below) the specified battery charge level. Valid input range (0-100). Valid values 0 to 100|
+|powerLidCloseActionOnBattery|[powerActionType](../resources/intune-deviceconfig-poweractiontype.md)|This setting specifies the action that Windows takes when a user closes the lid on a mobile PC while on battery. Possible values are: `notConfigured`, `noAction`, `sleep`, `hibernate`, `shutdown`.|
+|powerLidCloseActionPluggedIn|[powerActionType](../resources/intune-deviceconfig-poweractiontype.md)|This setting specifies the action that Windows takes when a user closes the lid on a mobile PC while plugged in. Possible values are: `notConfigured`, `noAction`, `sleep`, `hibernate`, `shutdown`.|
+|powerButtonActionOnBattery|[powerActionType](../resources/intune-deviceconfig-poweractiontype.md)|This setting specifies the action that Windows takes when a user presses the Power button while on battery. Possible values are: `notConfigured`, `noAction`, `sleep`, `hibernate`, `shutdown`.|
+|powerButtonActionPluggedIn|[powerActionType](../resources/intune-deviceconfig-poweractiontype.md)|This setting specifies the action that Windows takes when a user presses the Power button while plugged in. Possible values are: `notConfigured`, `noAction`, `sleep`, `hibernate`, `shutdown`.|
+|powerSleepButtonActionOnBattery|[powerActionType](../resources/intune-deviceconfig-poweractiontype.md)|This setting specifies the action that Windows takes when a user presses the Sleep button while on battery. Possible values are: `notConfigured`, `noAction`, `sleep`, `hibernate`, `shutdown`.|
+|powerSleepButtonActionPluggedIn|[powerActionType](../resources/intune-deviceconfig-poweractiontype.md)|This setting specifies the action that Windows takes when a user presses the Sleep button while plugged in. Possible values are: `notConfigured`, `noAction`, `sleep`, `hibernate`, `shutdown`.|
+|powerHybridSleepOnBattery|[enablement](../resources/intune-shared-enablement.md)|This setting allows you to turn off hybrid sleep while on battery. If you set this setting to disable, a hiberfile is not generated when the system transitions to sleep (Stand By). If you set this setting to enable or do not configure this policy setting, users control this setting. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|powerHybridSleepPluggedIn|[enablement](../resources/intune-shared-enablement.md)|This setting allows you to turn off hybrid sleep while plugged in. If you set this setting to disable, a hiberfile is not generated when the system transitions to sleep (Stand By). If you set this setting to enable or do not configure this policy setting, users control this setting. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|printerNames|String collection|Automatically provision printers based on their names (network host names).|
+|printerDefaultName|String|Name (network host name) of an installed printer.|
+|printerBlockAddition|Boolean|Prevent user installation of additional printers from printers settings.|
 |privacyAdvertisingId|[stateManagementSetting](../resources/intune-deviceconfig-statemanagementsetting.md)|Enables or disables the use of advertising ID. Added in Windows 10, version 1607. Possible values are: `notConfigured`, `blocked`, `allowed`.|
 |privacyAutoAcceptPairingAndConsentPrompts|Boolean|Indicates whether or not to allow the automatic acceptance of the pairing and privacy user consent dialog when launching apps.|
 |privacyDisableLaunchExperience|Boolean|This policy prevents the privacy experience from launching during user logon for new and upgraded users.​|
@@ -223,6 +205,32 @@ The following table shows the properties that are required when you create the [
 |privacyBlockPublishUserActivities|Boolean|Blocks the shared experiences/discovery of recently used resources in task switcher etc.|
 |privacyBlockActivityFeed|Boolean|Blocks the usage of cloud based speech services for Cortana, Dictation, or Store applications.|
 |activateAppsWithVoice|[enablement](../resources/intune-shared-enablement.md)|Specifies if Windows apps can be activated by voice. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|searchBlockDiacritics|Boolean|Specifies if search can use diacritics.|
+|searchDisableAutoLanguageDetection|Boolean|Specifies whether to use automatic language detection when indexing content and properties.|
+|searchDisableIndexingEncryptedItems|Boolean|Indicates whether or not to block indexing of WIP-protected items to prevent them from appearing in search results for Cortana or Explorer.|
+|searchEnableRemoteQueries|Boolean|Indicates whether or not to block remote queries of this computer’s index.|
+|searchDisableUseLocation|Boolean|Specifies if search can use location information.|
+|searchDisableLocation|Boolean|Specifies if search can use location information.|
+|searchDisableIndexerBackoff|Boolean|Indicates whether or not to disable the search indexer backoff feature.|
+|searchDisableIndexingRemovableDrive|Boolean|Indicates whether or not to allow users to add locations on removable drives to libraries and to be indexed.|
+|searchEnableAutomaticIndexSizeManangement|Boolean|Specifies minimum amount of hard drive space on the same drive as the index location before indexing stops.|
+|searchBlockWebResults|Boolean|Indicates whether or not to block the web search.|
+|findMyFiles|[enablement](../resources/intune-shared-enablement.md)|Controls if the user can configure search to Find My Files mode, which searches files in secondary hard drives and also outside of the user profile. Find My Files does not allow users to search files or locations to which they do not have access. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|securityBlockAzureADJoinedDevicesAutoEncryption|Boolean|Specify whether to allow automatic device encryption during OOBE when the device is Azure AD joined (desktop only).|
+|settingsBlockSettingsApp|Boolean|Indicates whether or not to block access to Settings app.|
+|settingsBlockSystemPage|Boolean|Indicates whether or not to block access to System in Settings app.|
+|settingsBlockDevicesPage|Boolean|Indicates whether or not to block access to Devices in Settings app.|
+|settingsBlockNetworkInternetPage|Boolean|Indicates whether or not to block access to Network & Internet in Settings app.|
+|settingsBlockPersonalizationPage|Boolean|Indicates whether or not to block access to Personalization in Settings app.|
+|settingsBlockAccountsPage|Boolean|Indicates whether or not to block access to Accounts in Settings app.|
+|settingsBlockTimeLanguagePage|Boolean|Indicates whether or not to block access to Time & Language in Settings app.|
+|settingsBlockEaseOfAccessPage|Boolean|Indicates whether or not to block access to Ease of Access in Settings app.|
+|settingsBlockPrivacyPage|Boolean|Indicates whether or not to block access to Privacy in Settings app.|
+|settingsBlockUpdateSecurityPage|Boolean|Indicates whether or not to block access to Update & Security in Settings app.|
+|settingsBlockAppsPage|Boolean|Indicates whether or not to block access to Apps in Settings app.|
+|settingsBlockGamingPage|Boolean|Indicates whether or not to block access to Gaming in Settings app.|
+|smartScreenEnableAppInstallControl|Boolean|This property will be deprecated in July 2019 and will be replaced by property SmartScreenAppInstallControl. Allows IT Admins to control whether users are allowed to install apps from places other than the Store.|
+|smartScreenAppInstallControl|[appInstallControlType](../resources/intune-deviceconfig-appinstallcontroltype.md)|Added in Windows 10, version 1703. Allows IT Admins to control whether users are allowed to install apps from places other than the Store. Possible values are: `notConfigured`, `anywhere`, `storeOnly`, `recommendations`, `preferStore`.|
 |startBlockUnpinningAppsFromTaskbar|Boolean|Indicates whether or not to block the user from unpinning apps from taskbar.|
 |startMenuAppListVisibility|[windowsStartMenuAppListVisibilityType](../resources/intune-deviceconfig-windowsstartmenuapplistvisibilitytype.md)|Setting the value of this collapses the app list, removes the app list entirely, or disables the corresponding toggle in the Settings app. Possible values are: `userDefined`, `collapse`, `remove`, `disableSettingsApp`.|
 |startMenuHideChangeAccountSettings|Boolean|Enabling this policy hides the change account setting from appearing in the user tile in the start menu.|
@@ -251,18 +259,14 @@ The following table shows the properties that are required when you create the [
 |startMenuPinnedFolderPictures|[visibilitySetting](../resources/intune-deviceconfig-visibilitysetting.md)|Enforces the visibility (Show/Hide) of the Pictures folder shortcut on the Start menu. Possible values are: `notConfigured`, `hide`, `show`.|
 |startMenuPinnedFolderSettings|[visibilitySetting](../resources/intune-deviceconfig-visibilitysetting.md)|Enforces the visibility (Show/Hide) of the Settings folder shortcut on the Start menu. Possible values are: `notConfigured`, `hide`, `show`.|
 |startMenuPinnedFolderVideos|[visibilitySetting](../resources/intune-deviceconfig-visibilitysetting.md)|Enforces the visibility (Show/Hide) of the Videos folder shortcut on the Start menu. Possible values are: `notConfigured`, `hide`, `show`.|
-|settingsBlockSettingsApp|Boolean|Indicates whether or not to block access to Settings app.|
-|settingsBlockSystemPage|Boolean|Indicates whether or not to block access to System in Settings app.|
-|settingsBlockDevicesPage|Boolean|Indicates whether or not to block access to Devices in Settings app.|
-|settingsBlockNetworkInternetPage|Boolean|Indicates whether or not to block access to Network & Internet in Settings app.|
-|settingsBlockPersonalizationPage|Boolean|Indicates whether or not to block access to Personalization in Settings app.|
-|settingsBlockAccountsPage|Boolean|Indicates whether or not to block access to Accounts in Settings app.|
-|settingsBlockTimeLanguagePage|Boolean|Indicates whether or not to block access to Time & Language in Settings app.|
-|settingsBlockEaseOfAccessPage|Boolean|Indicates whether or not to block access to Ease of Access in Settings app.|
-|settingsBlockPrivacyPage|Boolean|Indicates whether or not to block access to Privacy in Settings app.|
-|settingsBlockUpdateSecurityPage|Boolean|Indicates whether or not to block access to Update & Security in Settings app.|
-|settingsBlockAppsPage|Boolean|Indicates whether or not to block access to Apps in Settings app.|
-|settingsBlockGamingPage|Boolean|Indicates whether or not to block access to Gaming in Settings app.|
+|diagnosticsDataSubmissionMode|[diagnosticDataSubmissionMode](../resources/intune-deviceconfig-diagnosticdatasubmissionmode.md)|Gets or sets a value allowing the device to send diagnostic and usage telemetry data, such as Watson. Possible values are: `userDefined`, `none`, `basic`, `enhanced`, `full`.|
+|oneDriveDisableFileSync|Boolean|Gets or sets a value allowing IT admins to prevent apps and features from working with files on OneDrive.|
+|systemTelemetryProxyServer|String|Gets or sets the fully qualified domain name (FQDN) or IP address of a proxy server to forward Connected User Experiences and Telemetry requests.|
+|edgeTelemetryForMicrosoft365Analytics|[edgeTelemetryMode](../resources/intune-deviceconfig-edgetelemetrymode.md)|Specifies what type of telemetry data (none, intranet, internet, both) is sent to Microsoft 365 Analytics. Possible values are: `notConfigured`, `intranet`, `internet`, `intranetAndInternet`.|
+|taskManagerBlockEndTask|Boolean|Specify whether non-administrators can use Task Manager to end tasks.|
+|inkWorkspaceAccess|[inkAccessSetting](../resources/intune-deviceconfig-inkaccesssetting.md)|Controls the user access to the ink workspace, from the desktop and from above the lock screen. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|inkWorkspaceAccessState|[stateManagementSetting](../resources/intune-deviceconfig-statemanagementsetting.md)|Controls the user access to the ink workspace, from the desktop and from above the lock screen. Possible values are: `notConfigured`, `blocked`, `allowed`.|
+|inkWorkspaceBlockSuggestedApps|Boolean|Specify whether to show recommended app suggestions in the ink workspace.|
 |windowsSpotlightBlockConsumerSpecificFeatures|Boolean|Allows IT admins to block experiences that are typically for consumers only, such as Start suggestions, Membership notifications, Post-OOBE app install and redirect tiles.|
 |windowsSpotlightBlocked|Boolean|Allows IT admins to turn off all Windows Spotlight features|
 |windowsSpotlightBlockOnActionCenter|Boolean|Block suggestions from Microsoft that show after each OS clean install, upgrade or in an on-going basis to introduce users to what is new or changed|
@@ -271,10 +275,6 @@ The following table shows the properties that are required when you create the [
 |windowsSpotlightBlockWelcomeExperience|Boolean|Block Windows Spotlight Windows welcome experience|
 |windowsSpotlightBlockWindowsTips|Boolean|Allows IT admins to turn off the popup of Windows Tips.|
 |windowsSpotlightConfigureOnLockScreen|[windowsSpotlightEnablementSettings](../resources/intune-deviceconfig-windowsspotlightenablementsettings.md)|Specifies the type of Spotlight. Possible values are: `notConfigured`, `disabled`, `enabled`.|
-|networkProxyApplySettingsDeviceWide|Boolean|If set, proxy settings will be applied to all processes and accounts in the device. Otherwise, it will be applied to the user account that’s enrolled into MDM.|
-|networkProxyDisableAutoDetect|Boolean|Disable automatic detection of settings. If enabled, the system will try to find the path to a proxy auto-config (PAC) script.|
-|networkProxyAutomaticConfigurationUrl|String|Address to the proxy auto-config (PAC) script you want to use.|
-|networkProxyServer|[windows10NetworkProxyServer](../resources/intune-deviceconfig-windows10networkproxyserver.md)|Specifies manual proxy server settings.|
 |accountsBlockAddingNonMicrosoftAccountEmail|Boolean|Indicates whether or not to Block the user from adding email accounts to the device that are not associated with a Microsoft account.|
 |antiTheftModeBlocked|Boolean|Indicates whether or not to block the user from selecting an AntiTheft mode preference (Windows 10 Mobile only).|
 |bluetoothBlocked|Boolean|Whether or not to Block the user from using bluetooth.|
@@ -391,73 +391,29 @@ Content-length: 15009
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
-  "taskManagerBlockEndTask": true,
-  "energySaverOnBatteryThresholdPercentage": 7,
-  "energySaverPluggedInThresholdPercentage": 7,
-  "powerLidCloseActionOnBattery": "noAction",
-  "powerLidCloseActionPluggedIn": "noAction",
-  "powerButtonActionOnBattery": "noAction",
-  "powerButtonActionPluggedIn": "noAction",
-  "powerSleepButtonActionOnBattery": "noAction",
-  "powerSleepButtonActionPluggedIn": "noAction",
-  "powerHybridSleepOnBattery": "enabled",
-  "powerHybridSleepPluggedIn": "enabled",
+  "networkProxyApplySettingsDeviceWide": true,
+  "networkProxyDisableAutoDetect": true,
+  "networkProxyAutomaticConfigurationUrl": "https://example.com/networkProxyAutomaticConfigurationUrl/",
+  "networkProxyServer": {
+    "@odata.type": "microsoft.graph.windows10NetworkProxyServer",
+    "address": "Address value",
+    "exceptions": [
+      "Exceptions value"
+    ],
+    "useForLocalAddresses": true
+  },
+  "personalizationDesktopImageUrl": "https://example.com/personalizationDesktopImageUrl/",
+  "personalizationLockScreenImageUrl": "https://example.com/personalizationLockScreenImageUrl/",
+  "microsoftAccountSignInAssistantSettings": "disabled",
   "windows10AppsForceUpdateSchedule": {
     "@odata.type": "microsoft.graph.windows10AppsForceUpdateSchedule",
     "startDateTime": "2016-12-31T23:58:46.7156189-08:00",
     "recurrence": "daily",
     "runImmediatelyIfAfterStartDateTime": true
   },
-  "enableAutomaticRedeployment": true,
-  "microsoftAccountSignInAssistantSettings": "disabled",
   "authenticationAllowSecondaryDevice": true,
   "authenticationWebSignIn": "enabled",
   "authenticationPreferredAzureADTenantDomainName": "Authentication Preferred Azure ADTenant Domain Name value",
-  "cryptographyAllowFipsAlgorithmPolicy": true,
-  "displayAppListWithGdiDPIScalingTurnedOn": [
-    "Display App List With Gdi DPIScaling Turned On value"
-  ],
-  "displayAppListWithGdiDPIScalingTurnedOff": [
-    "Display App List With Gdi DPIScaling Turned Off value"
-  ],
-  "enterpriseCloudPrintDiscoveryEndPoint": "Enterprise Cloud Print Discovery End Point value",
-  "enterpriseCloudPrintOAuthAuthority": "Enterprise Cloud Print OAuth Authority value",
-  "enterpriseCloudPrintOAuthClientIdentifier": "Enterprise Cloud Print OAuth Client Identifier value",
-  "enterpriseCloudPrintResourceIdentifier": "Enterprise Cloud Print Resource Identifier value",
-  "enterpriseCloudPrintDiscoveryMaxLimit": 5,
-  "enterpriseCloudPrintMopriaDiscoveryResourceIdentifier": "Enterprise Cloud Print Mopria Discovery Resource Identifier value",
-  "experienceDoNotSyncBrowserSettings": "blockedWithUserOverride",
-  "messagingBlockSync": true,
-  "messagingBlockMMS": true,
-  "messagingBlockRichCommunicationServices": true,
-  "printerNames": [
-    "Printer Names value"
-  ],
-  "printerDefaultName": "Printer Default Name value",
-  "printerBlockAddition": true,
-  "searchBlockDiacritics": true,
-  "searchDisableAutoLanguageDetection": true,
-  "searchDisableIndexingEncryptedItems": true,
-  "searchEnableRemoteQueries": true,
-  "searchDisableUseLocation": true,
-  "searchDisableLocation": true,
-  "searchDisableIndexerBackoff": true,
-  "searchDisableIndexingRemovableDrive": true,
-  "searchEnableAutomaticIndexSizeManangement": true,
-  "searchBlockWebResults": true,
-  "findMyFiles": "enabled",
-  "securityBlockAzureADJoinedDevicesAutoEncryption": true,
-  "diagnosticsDataSubmissionMode": "none",
-  "oneDriveDisableFileSync": true,
-  "systemTelemetryProxyServer": "System Telemetry Proxy Server value",
-  "edgeTelemetryForMicrosoft365Analytics": "intranet",
-  "inkWorkspaceAccess": "enabled",
-  "inkWorkspaceAccessState": "blocked",
-  "inkWorkspaceBlockSuggestedApps": true,
-  "smartScreenEnableAppInstallControl": true,
-  "smartScreenAppInstallControl": "anywhere",
-  "personalizationDesktopImageUrl": "https://example.com/personalizationDesktopImageUrl/",
-  "personalizationLockScreenImageUrl": "https://example.com/personalizationLockScreenImageUrl/",
   "bluetoothAllowedServices": [
     "Bluetooth Allowed Services value"
   ],
@@ -508,6 +464,8 @@ Content-length: 15009
   "cellularBlockVpn": true,
   "cellularBlockVpnWhenRoaming": true,
   "cellularData": "required",
+  "enableAutomaticRedeployment": true,
+  "cryptographyAllowFipsAlgorithmPolicy": true,
   "defenderRequireRealTimeMonitoring": true,
   "defenderRequireBehaviorMonitoring": true,
   "defenderRequireNetworkInspectionSystem": true,
@@ -555,12 +513,28 @@ Content-length: 15009
   "defenderProcessesToExclude": [
     "Defender Processes To Exclude value"
   ],
+  "displayAppListWithGdiDPIScalingTurnedOn": [
+    "Display App List With Gdi DPIScaling Turned On value"
+  ],
+  "displayAppListWithGdiDPIScalingTurnedOff": [
+    "Display App List With Gdi DPIScaling Turned Off value"
+  ],
+  "enterpriseCloudPrintDiscoveryEndPoint": "Enterprise Cloud Print Discovery End Point value",
+  "enterpriseCloudPrintOAuthAuthority": "Enterprise Cloud Print OAuth Authority value",
+  "enterpriseCloudPrintOAuthClientIdentifier": "Enterprise Cloud Print OAuth Client Identifier value",
+  "enterpriseCloudPrintResourceIdentifier": "Enterprise Cloud Print Resource Identifier value",
+  "enterpriseCloudPrintDiscoveryMaxLimit": 5,
+  "enterpriseCloudPrintMopriaDiscoveryResourceIdentifier": "Enterprise Cloud Print Mopria Discovery Resource Identifier value",
+  "experienceDoNotSyncBrowserSettings": "blockedWithUserOverride",
   "lockScreenAllowTimeoutConfiguration": true,
   "lockScreenBlockActionCenterNotifications": true,
   "lockScreenBlockCortana": true,
   "lockScreenBlockToastNotifications": true,
   "lockScreenTimeoutInSeconds": 10,
   "lockScreenActivateAppsWithVoice": "enabled",
+  "messagingBlockSync": true,
+  "messagingBlockMMS": true,
+  "messagingBlockRichCommunicationServices": true,
   "passwordBlockSimple": true,
   "passwordExpirationDays": 6,
   "passwordMinimumLength": 5,
@@ -572,6 +546,21 @@ Content-length: 15009
   "passwordRequiredType": "alphanumeric",
   "passwordSignInFailureCountBeforeFactoryReset": 12,
   "passwordMinimumAgeInDays": 8,
+  "energySaverOnBatteryThresholdPercentage": 7,
+  "energySaverPluggedInThresholdPercentage": 7,
+  "powerLidCloseActionOnBattery": "noAction",
+  "powerLidCloseActionPluggedIn": "noAction",
+  "powerButtonActionOnBattery": "noAction",
+  "powerButtonActionPluggedIn": "noAction",
+  "powerSleepButtonActionOnBattery": "noAction",
+  "powerSleepButtonActionPluggedIn": "noAction",
+  "powerHybridSleepOnBattery": "enabled",
+  "powerHybridSleepPluggedIn": "enabled",
+  "printerNames": [
+    "Printer Names value"
+  ],
+  "printerDefaultName": "Printer Default Name value",
+  "printerBlockAddition": true,
   "privacyAdvertisingId": "blocked",
   "privacyAutoAcceptPairingAndConsentPrompts": true,
   "privacyDisableLaunchExperience": true,
@@ -579,6 +568,32 @@ Content-length: 15009
   "privacyBlockPublishUserActivities": true,
   "privacyBlockActivityFeed": true,
   "activateAppsWithVoice": "enabled",
+  "searchBlockDiacritics": true,
+  "searchDisableAutoLanguageDetection": true,
+  "searchDisableIndexingEncryptedItems": true,
+  "searchEnableRemoteQueries": true,
+  "searchDisableUseLocation": true,
+  "searchDisableLocation": true,
+  "searchDisableIndexerBackoff": true,
+  "searchDisableIndexingRemovableDrive": true,
+  "searchEnableAutomaticIndexSizeManangement": true,
+  "searchBlockWebResults": true,
+  "findMyFiles": "enabled",
+  "securityBlockAzureADJoinedDevicesAutoEncryption": true,
+  "settingsBlockSettingsApp": true,
+  "settingsBlockSystemPage": true,
+  "settingsBlockDevicesPage": true,
+  "settingsBlockNetworkInternetPage": true,
+  "settingsBlockPersonalizationPage": true,
+  "settingsBlockAccountsPage": true,
+  "settingsBlockTimeLanguagePage": true,
+  "settingsBlockEaseOfAccessPage": true,
+  "settingsBlockPrivacyPage": true,
+  "settingsBlockUpdateSecurityPage": true,
+  "settingsBlockAppsPage": true,
+  "settingsBlockGamingPage": true,
+  "smartScreenEnableAppInstallControl": true,
+  "smartScreenAppInstallControl": "anywhere",
   "startBlockUnpinningAppsFromTaskbar": true,
   "startMenuAppListVisibility": "collapse",
   "startMenuHideChangeAccountSettings": true,
@@ -607,18 +622,14 @@ Content-length: 15009
   "startMenuPinnedFolderPictures": "hide",
   "startMenuPinnedFolderSettings": "hide",
   "startMenuPinnedFolderVideos": "hide",
-  "settingsBlockSettingsApp": true,
-  "settingsBlockSystemPage": true,
-  "settingsBlockDevicesPage": true,
-  "settingsBlockNetworkInternetPage": true,
-  "settingsBlockPersonalizationPage": true,
-  "settingsBlockAccountsPage": true,
-  "settingsBlockTimeLanguagePage": true,
-  "settingsBlockEaseOfAccessPage": true,
-  "settingsBlockPrivacyPage": true,
-  "settingsBlockUpdateSecurityPage": true,
-  "settingsBlockAppsPage": true,
-  "settingsBlockGamingPage": true,
+  "diagnosticsDataSubmissionMode": "none",
+  "oneDriveDisableFileSync": true,
+  "systemTelemetryProxyServer": "System Telemetry Proxy Server value",
+  "edgeTelemetryForMicrosoft365Analytics": "intranet",
+  "taskManagerBlockEndTask": true,
+  "inkWorkspaceAccess": "enabled",
+  "inkWorkspaceAccessState": "blocked",
+  "inkWorkspaceBlockSuggestedApps": true,
   "windowsSpotlightBlockConsumerSpecificFeatures": true,
   "windowsSpotlightBlocked": true,
   "windowsSpotlightBlockOnActionCenter": true,
@@ -627,17 +638,6 @@ Content-length: 15009
   "windowsSpotlightBlockWelcomeExperience": true,
   "windowsSpotlightBlockWindowsTips": true,
   "windowsSpotlightConfigureOnLockScreen": "disabled",
-  "networkProxyApplySettingsDeviceWide": true,
-  "networkProxyDisableAutoDetect": true,
-  "networkProxyAutomaticConfigurationUrl": "https://example.com/networkProxyAutomaticConfigurationUrl/",
-  "networkProxyServer": {
-    "@odata.type": "microsoft.graph.windows10NetworkProxyServer",
-    "address": "Address value",
-    "exceptions": [
-      "Exceptions value"
-    ],
-    "useForLocalAddresses": true
-  },
   "accountsBlockAddingNonMicrosoftAccountEmail": true,
   "antiTheftModeBlocked": true,
   "bluetoothBlocked": true,
@@ -758,73 +758,29 @@ Content-Length: 15181
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
-  "taskManagerBlockEndTask": true,
-  "energySaverOnBatteryThresholdPercentage": 7,
-  "energySaverPluggedInThresholdPercentage": 7,
-  "powerLidCloseActionOnBattery": "noAction",
-  "powerLidCloseActionPluggedIn": "noAction",
-  "powerButtonActionOnBattery": "noAction",
-  "powerButtonActionPluggedIn": "noAction",
-  "powerSleepButtonActionOnBattery": "noAction",
-  "powerSleepButtonActionPluggedIn": "noAction",
-  "powerHybridSleepOnBattery": "enabled",
-  "powerHybridSleepPluggedIn": "enabled",
+  "networkProxyApplySettingsDeviceWide": true,
+  "networkProxyDisableAutoDetect": true,
+  "networkProxyAutomaticConfigurationUrl": "https://example.com/networkProxyAutomaticConfigurationUrl/",
+  "networkProxyServer": {
+    "@odata.type": "microsoft.graph.windows10NetworkProxyServer",
+    "address": "Address value",
+    "exceptions": [
+      "Exceptions value"
+    ],
+    "useForLocalAddresses": true
+  },
+  "personalizationDesktopImageUrl": "https://example.com/personalizationDesktopImageUrl/",
+  "personalizationLockScreenImageUrl": "https://example.com/personalizationLockScreenImageUrl/",
+  "microsoftAccountSignInAssistantSettings": "disabled",
   "windows10AppsForceUpdateSchedule": {
     "@odata.type": "microsoft.graph.windows10AppsForceUpdateSchedule",
     "startDateTime": "2016-12-31T23:58:46.7156189-08:00",
     "recurrence": "daily",
     "runImmediatelyIfAfterStartDateTime": true
   },
-  "enableAutomaticRedeployment": true,
-  "microsoftAccountSignInAssistantSettings": "disabled",
   "authenticationAllowSecondaryDevice": true,
   "authenticationWebSignIn": "enabled",
   "authenticationPreferredAzureADTenantDomainName": "Authentication Preferred Azure ADTenant Domain Name value",
-  "cryptographyAllowFipsAlgorithmPolicy": true,
-  "displayAppListWithGdiDPIScalingTurnedOn": [
-    "Display App List With Gdi DPIScaling Turned On value"
-  ],
-  "displayAppListWithGdiDPIScalingTurnedOff": [
-    "Display App List With Gdi DPIScaling Turned Off value"
-  ],
-  "enterpriseCloudPrintDiscoveryEndPoint": "Enterprise Cloud Print Discovery End Point value",
-  "enterpriseCloudPrintOAuthAuthority": "Enterprise Cloud Print OAuth Authority value",
-  "enterpriseCloudPrintOAuthClientIdentifier": "Enterprise Cloud Print OAuth Client Identifier value",
-  "enterpriseCloudPrintResourceIdentifier": "Enterprise Cloud Print Resource Identifier value",
-  "enterpriseCloudPrintDiscoveryMaxLimit": 5,
-  "enterpriseCloudPrintMopriaDiscoveryResourceIdentifier": "Enterprise Cloud Print Mopria Discovery Resource Identifier value",
-  "experienceDoNotSyncBrowserSettings": "blockedWithUserOverride",
-  "messagingBlockSync": true,
-  "messagingBlockMMS": true,
-  "messagingBlockRichCommunicationServices": true,
-  "printerNames": [
-    "Printer Names value"
-  ],
-  "printerDefaultName": "Printer Default Name value",
-  "printerBlockAddition": true,
-  "searchBlockDiacritics": true,
-  "searchDisableAutoLanguageDetection": true,
-  "searchDisableIndexingEncryptedItems": true,
-  "searchEnableRemoteQueries": true,
-  "searchDisableUseLocation": true,
-  "searchDisableLocation": true,
-  "searchDisableIndexerBackoff": true,
-  "searchDisableIndexingRemovableDrive": true,
-  "searchEnableAutomaticIndexSizeManangement": true,
-  "searchBlockWebResults": true,
-  "findMyFiles": "enabled",
-  "securityBlockAzureADJoinedDevicesAutoEncryption": true,
-  "diagnosticsDataSubmissionMode": "none",
-  "oneDriveDisableFileSync": true,
-  "systemTelemetryProxyServer": "System Telemetry Proxy Server value",
-  "edgeTelemetryForMicrosoft365Analytics": "intranet",
-  "inkWorkspaceAccess": "enabled",
-  "inkWorkspaceAccessState": "blocked",
-  "inkWorkspaceBlockSuggestedApps": true,
-  "smartScreenEnableAppInstallControl": true,
-  "smartScreenAppInstallControl": "anywhere",
-  "personalizationDesktopImageUrl": "https://example.com/personalizationDesktopImageUrl/",
-  "personalizationLockScreenImageUrl": "https://example.com/personalizationLockScreenImageUrl/",
   "bluetoothAllowedServices": [
     "Bluetooth Allowed Services value"
   ],
@@ -875,6 +831,8 @@ Content-Length: 15181
   "cellularBlockVpn": true,
   "cellularBlockVpnWhenRoaming": true,
   "cellularData": "required",
+  "enableAutomaticRedeployment": true,
+  "cryptographyAllowFipsAlgorithmPolicy": true,
   "defenderRequireRealTimeMonitoring": true,
   "defenderRequireBehaviorMonitoring": true,
   "defenderRequireNetworkInspectionSystem": true,
@@ -922,12 +880,28 @@ Content-Length: 15181
   "defenderProcessesToExclude": [
     "Defender Processes To Exclude value"
   ],
+  "displayAppListWithGdiDPIScalingTurnedOn": [
+    "Display App List With Gdi DPIScaling Turned On value"
+  ],
+  "displayAppListWithGdiDPIScalingTurnedOff": [
+    "Display App List With Gdi DPIScaling Turned Off value"
+  ],
+  "enterpriseCloudPrintDiscoveryEndPoint": "Enterprise Cloud Print Discovery End Point value",
+  "enterpriseCloudPrintOAuthAuthority": "Enterprise Cloud Print OAuth Authority value",
+  "enterpriseCloudPrintOAuthClientIdentifier": "Enterprise Cloud Print OAuth Client Identifier value",
+  "enterpriseCloudPrintResourceIdentifier": "Enterprise Cloud Print Resource Identifier value",
+  "enterpriseCloudPrintDiscoveryMaxLimit": 5,
+  "enterpriseCloudPrintMopriaDiscoveryResourceIdentifier": "Enterprise Cloud Print Mopria Discovery Resource Identifier value",
+  "experienceDoNotSyncBrowserSettings": "blockedWithUserOverride",
   "lockScreenAllowTimeoutConfiguration": true,
   "lockScreenBlockActionCenterNotifications": true,
   "lockScreenBlockCortana": true,
   "lockScreenBlockToastNotifications": true,
   "lockScreenTimeoutInSeconds": 10,
   "lockScreenActivateAppsWithVoice": "enabled",
+  "messagingBlockSync": true,
+  "messagingBlockMMS": true,
+  "messagingBlockRichCommunicationServices": true,
   "passwordBlockSimple": true,
   "passwordExpirationDays": 6,
   "passwordMinimumLength": 5,
@@ -939,6 +913,21 @@ Content-Length: 15181
   "passwordRequiredType": "alphanumeric",
   "passwordSignInFailureCountBeforeFactoryReset": 12,
   "passwordMinimumAgeInDays": 8,
+  "energySaverOnBatteryThresholdPercentage": 7,
+  "energySaverPluggedInThresholdPercentage": 7,
+  "powerLidCloseActionOnBattery": "noAction",
+  "powerLidCloseActionPluggedIn": "noAction",
+  "powerButtonActionOnBattery": "noAction",
+  "powerButtonActionPluggedIn": "noAction",
+  "powerSleepButtonActionOnBattery": "noAction",
+  "powerSleepButtonActionPluggedIn": "noAction",
+  "powerHybridSleepOnBattery": "enabled",
+  "powerHybridSleepPluggedIn": "enabled",
+  "printerNames": [
+    "Printer Names value"
+  ],
+  "printerDefaultName": "Printer Default Name value",
+  "printerBlockAddition": true,
   "privacyAdvertisingId": "blocked",
   "privacyAutoAcceptPairingAndConsentPrompts": true,
   "privacyDisableLaunchExperience": true,
@@ -946,6 +935,32 @@ Content-Length: 15181
   "privacyBlockPublishUserActivities": true,
   "privacyBlockActivityFeed": true,
   "activateAppsWithVoice": "enabled",
+  "searchBlockDiacritics": true,
+  "searchDisableAutoLanguageDetection": true,
+  "searchDisableIndexingEncryptedItems": true,
+  "searchEnableRemoteQueries": true,
+  "searchDisableUseLocation": true,
+  "searchDisableLocation": true,
+  "searchDisableIndexerBackoff": true,
+  "searchDisableIndexingRemovableDrive": true,
+  "searchEnableAutomaticIndexSizeManangement": true,
+  "searchBlockWebResults": true,
+  "findMyFiles": "enabled",
+  "securityBlockAzureADJoinedDevicesAutoEncryption": true,
+  "settingsBlockSettingsApp": true,
+  "settingsBlockSystemPage": true,
+  "settingsBlockDevicesPage": true,
+  "settingsBlockNetworkInternetPage": true,
+  "settingsBlockPersonalizationPage": true,
+  "settingsBlockAccountsPage": true,
+  "settingsBlockTimeLanguagePage": true,
+  "settingsBlockEaseOfAccessPage": true,
+  "settingsBlockPrivacyPage": true,
+  "settingsBlockUpdateSecurityPage": true,
+  "settingsBlockAppsPage": true,
+  "settingsBlockGamingPage": true,
+  "smartScreenEnableAppInstallControl": true,
+  "smartScreenAppInstallControl": "anywhere",
   "startBlockUnpinningAppsFromTaskbar": true,
   "startMenuAppListVisibility": "collapse",
   "startMenuHideChangeAccountSettings": true,
@@ -974,18 +989,14 @@ Content-Length: 15181
   "startMenuPinnedFolderPictures": "hide",
   "startMenuPinnedFolderSettings": "hide",
   "startMenuPinnedFolderVideos": "hide",
-  "settingsBlockSettingsApp": true,
-  "settingsBlockSystemPage": true,
-  "settingsBlockDevicesPage": true,
-  "settingsBlockNetworkInternetPage": true,
-  "settingsBlockPersonalizationPage": true,
-  "settingsBlockAccountsPage": true,
-  "settingsBlockTimeLanguagePage": true,
-  "settingsBlockEaseOfAccessPage": true,
-  "settingsBlockPrivacyPage": true,
-  "settingsBlockUpdateSecurityPage": true,
-  "settingsBlockAppsPage": true,
-  "settingsBlockGamingPage": true,
+  "diagnosticsDataSubmissionMode": "none",
+  "oneDriveDisableFileSync": true,
+  "systemTelemetryProxyServer": "System Telemetry Proxy Server value",
+  "edgeTelemetryForMicrosoft365Analytics": "intranet",
+  "taskManagerBlockEndTask": true,
+  "inkWorkspaceAccess": "enabled",
+  "inkWorkspaceAccessState": "blocked",
+  "inkWorkspaceBlockSuggestedApps": true,
   "windowsSpotlightBlockConsumerSpecificFeatures": true,
   "windowsSpotlightBlocked": true,
   "windowsSpotlightBlockOnActionCenter": true,
@@ -994,17 +1005,6 @@ Content-Length: 15181
   "windowsSpotlightBlockWelcomeExperience": true,
   "windowsSpotlightBlockWindowsTips": true,
   "windowsSpotlightConfigureOnLockScreen": "disabled",
-  "networkProxyApplySettingsDeviceWide": true,
-  "networkProxyDisableAutoDetect": true,
-  "networkProxyAutomaticConfigurationUrl": "https://example.com/networkProxyAutomaticConfigurationUrl/",
-  "networkProxyServer": {
-    "@odata.type": "microsoft.graph.windows10NetworkProxyServer",
-    "address": "Address value",
-    "exceptions": [
-      "Exceptions value"
-    ],
-    "useForLocalAddresses": true
-  },
   "accountsBlockAddingNonMicrosoftAccountEmail": true,
   "antiTheftModeBlocked": true,
   "bluetoothBlocked": true,

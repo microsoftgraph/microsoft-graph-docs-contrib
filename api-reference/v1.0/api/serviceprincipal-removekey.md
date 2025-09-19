@@ -2,7 +2,7 @@
 title: "servicePrincipal: removeKey"
 description: "Remove a key credential from a servicePrincipal"
 ms.localizationpriority: medium
-author: "sureshja"
+author: "Jackson-Woods"
 ms.subservice: "entra-applications"
 doc_type: "apiPageType"
 ms.date: 04/04/2024
@@ -88,10 +88,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/serviceprincipal-removekey-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/serviceprincipal-removekey-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

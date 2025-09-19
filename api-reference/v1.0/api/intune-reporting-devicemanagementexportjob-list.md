@@ -63,10 +63,6 @@ GET https://graph.microsoft.com/v1.0/deviceManagement/reports/exportJobs
 [!INCLUDE [sample-code](../includes/snippets/csharp/intune-reporting-devicemanagementexportjob-list-list-devicemanagementexportjobs-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/intune-reporting-devicemanagementexportjob-list-list-devicemanagementexportjobs-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/intune-reporting-devicemanagementexportjob-list-list-devicemanagementexportjobs-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

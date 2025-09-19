@@ -70,10 +70,6 @@ DELETE https://graph.microsoft.com/beta/organization/84841066-274d-4ec0-a5c1-276
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-organizationalbranding-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/delete-organizationalbranding-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-organizationalbranding-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

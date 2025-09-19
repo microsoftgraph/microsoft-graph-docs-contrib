@@ -2,7 +2,7 @@
 title: "Remove tokenLifetimePolicy"
 description: "Remove a tokenLifetimePolicy from an application."
 ms.localizationpriority: medium
-author: "sureshja"
+author: "aricrowe57"
 ms.subservice: "entra-applications"
 doc_type: "apiPageType"
 ms.date: 07/26/2024
@@ -66,10 +66,6 @@ DELETE https://graph.microsoft.com/v1.0/applications/3ccc9971-9ae7-45d6-8de8-263
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-tokenlifetimepolicy-from-application-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/delete-tokenlifetimepolicy-from-application-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

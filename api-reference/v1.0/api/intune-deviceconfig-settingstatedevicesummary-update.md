@@ -96,10 +96,6 @@ Content-length: 360
 [!INCLUDE [sample-code](../includes/snippets/csharp/intune-deviceconfig-settingstatedevicesummary-update-update-settingstatedevicesummary-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/intune-deviceconfig-settingstatedevicesummary-update-update-settingstatedevicesummary-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/intune-deviceconfig-settingstatedevicesummary-update-update-settingstatedevicesummary-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

@@ -1,7 +1,7 @@
 ---
 title: "Upsert servicePrincipal"
 description: "Create a new servicePrincipal object if it doesn't exist, or update the properties of an existing servicePrincipal object."
-author: "sureshja"
+author: "Jackson-Woods"
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.subservice: "entra-applications"
@@ -78,10 +78,6 @@ Prefer: create-if-missing
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/upsert-create-serviceprincipal-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/upsert-create-serviceprincipal-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -193,10 +189,6 @@ Prefer: create-if-missing
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/upsert-update-serviceprincipal-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/upsert-update-serviceprincipal-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

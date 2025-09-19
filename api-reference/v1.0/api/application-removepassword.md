@@ -2,7 +2,7 @@
 title: "application: removePassword"
 description: "Remove a password from an application"
 ms.localizationpriority: medium
-author: "sureshja"
+author: "Jackson-Woods"
 ms.subservice: "entra-applications"
 doc_type: "apiPageType"
 ms.date: 04/04/2024
@@ -77,10 +77,6 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/application-removepassword-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/application-removepassword-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

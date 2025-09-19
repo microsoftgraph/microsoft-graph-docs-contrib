@@ -51,17 +51,14 @@ contentToProcess.SetActivityMetadata(activityMetadata)
 deviceMetadata := graphmodels.NewDeviceMetadata()
 deviceType := "Unmanaged"
 deviceMetadata.SetDeviceType(&deviceType) 
-ipAddress := "127.0.0.1"
-deviceMetadata.SetIpAddress(&ipAddress) 
-additionalData := map[string]interface{}{
-operatingSystemSpecifications := graph.New()
+operatingSystemSpecifications := graphmodels.NewOperatingSystemSpecifications()
 operatingSystemPlatform := "Windows 11"
 operatingSystemSpecifications.SetOperatingSystemPlatform(&operatingSystemPlatform) 
 operatingSystemVersion := "10.0.26100.0"
 operatingSystemSpecifications.SetOperatingSystemVersion(&operatingSystemVersion) 
-	deviceMetadata.SetOperatingSystemSpecifications(operatingSystemSpecifications)
-}
-deviceMetadata.SetAdditionalData(additionalData)
+deviceMetadata.SetOperatingSystemSpecifications(operatingSystemSpecifications)
+ipAddress := "127.0.0.1"
+deviceMetadata.SetIpAddress(&ipAddress) 
 contentToProcess.SetDeviceMetadata(deviceMetadata)
 protectedAppMetadata := graphmodels.NewProtectedApplicationMetadata()
 name := "PC Purview API Explorer"

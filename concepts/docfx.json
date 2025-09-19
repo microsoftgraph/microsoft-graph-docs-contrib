@@ -57,6 +57,13 @@
         ]
       }
     ],
+    "rules": {
+      "learn-site-link-broken": {
+        "exclude": [
+          "concepts/whats-new-earlier.md"
+        ]
+      }
+    },
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {

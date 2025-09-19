@@ -6,6 +6,7 @@ ms.localizationpriority: high
 ms.subservice: "data-connect"
 ms.custom: scenarios:getting-started
 ms.date: 11/07/2024
+ms.topic: article
 ---
 
 # Overview of Microsoft Graph Data Connect

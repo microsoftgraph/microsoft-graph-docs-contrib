@@ -84,10 +84,6 @@ Content-length: 159
 [!INCLUDE [sample-code](../includes/snippets/csharp/intune-mam-managedappoperation-update-update-managedappoperation-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/intune-mam-managedappoperation-update-update-managedappoperation-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/intune-mam-managedappoperation-update-update-managedappoperation-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

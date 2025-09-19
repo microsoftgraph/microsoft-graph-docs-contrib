@@ -67,10 +67,6 @@ GET https://graph.microsoft.com/beta/security/cases/ediscoveryCases/b0073e4e-418
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-ediscoverycasesettings-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-ediscoverycasesettings-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-ediscoverycasesettings-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -129,7 +125,9 @@ Content-Type: application/json
         "isEnabled": false,
         "maxImageSize": 24576,
         "timeout": "PT1M"
-    }
+    },
+    "caseType": "standard",
+    "reviewSetSettings": "disableGrouping"
 }
 ```
 

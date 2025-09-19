@@ -4,9 +4,13 @@ description: "The Search box component is used to render a search input that can
 ms.localizationpriority: medium
 author: sebastienlevert
 ms.date: 11/07/2024
+ms.topic: article
 ---
 
 # Search box component in the Microsoft Graph Toolkit
+
+> [!CAUTION]
+> The Microsoft Graph Toolkit is deprecated. The retirement period begins September 1, 2025, with full retirement planned for August 28, 2026. Developers should migrate to using the Microsoft Graph SDKs or other supported Microsoft Graph tools for building web experiences. For more information, see the [deprecation announcement](https://devblogs.microsoft.com/microsoft365dev/microsoft-graph-toolkit-retirement/).
 
 The Search box component renders an input control allowing searching for capabilities. This component is not connected to Microsoft Graph and should be used in collaboration with the [search results component](search-results.md).
 

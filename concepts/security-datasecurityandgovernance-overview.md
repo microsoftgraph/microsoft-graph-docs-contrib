@@ -5,6 +5,7 @@ author: "kylemar"
 ms.date: 04/08/2025
 ms.localizationpriority: medium
 ms.subservice: "security"
+ms.topic: article
 ---
 
 # Microsoft Purview data security and governance APIs
@@ -19,7 +20,7 @@ Data security and compliance administrators use Microsoft Purview to manage, pro
 
 Collection policies are an event collection and filtering tool in Microsoft Purview that enables monitoring and classifying events from apps and locations that lie inside and beyond your organization's trust boundaries. They let you filter which events from both untrusted and trusted sources are ingested into Purview. Once ingested, that data can be classified and used by various Microsoft Purview signal-consuming solutions, such as Microsoft Purview activity explorer, Microsoft Purview Insider Risk Management, Microsoft Purview eDiscovery, and Microsoft Purview Data Lifecycle Management.
 
-The **Collection** policy is crucial for organizations, particularly those using custom-built **line-of-business (LOB)** applications or third-party vendor applications. These environments can introduce risks where data may not align with organizational standards or could unintentionally breach data boundaries. A Collection policy helps mitigate these risks by ensuring sensitive activities are properly detected and governed, making it a key component in maintaining compliance with data security and governance requirements.
+The **Collection** policy is crucial for organizations, particularly those using custom-built **line-of-business (LOB)** applications or third-party vendor applications. These environments can introduce risks where data might not align with organizational standards or could unintentionally breach data boundaries. A Collection policy helps mitigate these risks by ensuring sensitive activities are properly detected and governed, making it a key component in maintaining compliance with data security and governance requirements.
 
 [Learn more about collection policies](/purview/collection-policies-solution-overview)
 
@@ -85,12 +86,12 @@ The behavior of the `executionMode` field in the response from the [Compute prot
 The following execution modes and their behaviors are expected:
 
 1. **`evaluateInline`**: The application should wait for the [Process content](/graph/api/userdatasecurityandgovernance-processcontent) API to produce results before deciding whether to allow or block the user activity. No action should be taken until the API response is received.
-2. **`evaluateOffline`**: The application should not wait for the [Process content](/graph/api/userdatasecurityandgovernance-processcontent) API's verdict and can take action (e.g., restrict access) immediately without waiting for the API response.
+2. **`evaluateOffline`**: The application should not wait for the [Process content](/graph/api/userdatasecurityandgovernance-processcontent) API's verdict and can take action (for example, restrict access) immediately without waiting for the API response.
 
 | Execution Mode    | Action        | Description                                                                 |
 | ----------------- | ------------ | --------------------------------------------------------------------------- |
 | `evaluateInline`  | None         | The caller should invoke the Process content API and wait for results before allowing user activity to proceed. |
-| `evaluateInline`  | restrictAccess | Not expected. Future actions that do not interfere with user activities may be present (e.g., notify user). |
+| `evaluateInline`  | restrictAccess | Not expected. Future actions that do not interfere with user activities might be present (for example, notify user). |
 | `evaluateOffline` | restrictAccess | The caller should restrict user activity and call the process content API independently of taking action. |
 | `evaluateOffline` | None         | The caller should not restrict user activity and should call the process content API independently. |
 

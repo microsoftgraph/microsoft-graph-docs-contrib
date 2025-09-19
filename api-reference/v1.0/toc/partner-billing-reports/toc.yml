@@ -28,6 +28,12 @@ items:
     href: ../../resources/partners-billing-operation.md
   - name: Get
     href: ../../api/partners-billing-operation-get.md
+- name: Unbilled reconciliation
+  items:
+  - name: Unbilled reconciliation
+    href: ../../resources/partners-billing-unbilledreconciliation.md
+  - name: Export
+    href: ../../api/partners-billing-unbilledreconciliation-export.md
 - name: Unbilled usage
   items:
   - name: Unbilled usage

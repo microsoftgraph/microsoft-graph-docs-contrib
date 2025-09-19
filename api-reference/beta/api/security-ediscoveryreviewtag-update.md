@@ -79,10 +79,6 @@ PATCH https://graph.microsoft.com/beta/security/cases/ediscoveryCases/58399dff-c
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-ediscoveryreviewtag-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/update-ediscoveryreviewtag-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-ediscoveryreviewtag-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

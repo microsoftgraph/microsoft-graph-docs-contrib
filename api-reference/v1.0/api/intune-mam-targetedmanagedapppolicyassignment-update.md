@@ -86,10 +86,6 @@ Content-length: 226
 [!INCLUDE [sample-code](../includes/snippets/csharp/intune-mam-targetedmanagedapppolicyassignment-update-update-targetedmanagedapppolicyassignment-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/intune-mam-targetedmanagedapppolicyassignment-update-update-targetedmanagedapppolicyassignment-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/intune-mam-targetedmanagedapppolicyassignment-update-update-targetedmanagedapppolicyassignment-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

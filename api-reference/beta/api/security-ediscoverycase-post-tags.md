@@ -80,10 +80,6 @@ POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/58399dff-ce
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-ediscoveryreviewtag-selectibility-many-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-ediscoveryreviewtag-selectibility-many-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-ediscoveryreviewtag-selectibility-many-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -167,10 +163,6 @@ POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/58399dff-ce
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-tqag-with-a-parent-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-tqag-with-a-parent-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

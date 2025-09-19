@@ -8,7 +8,7 @@ doc_type: resourcePageType
 ms.date: 11/15/2024
 ---
 
-# reportRoot resource type
+# reportsRoot resource type
 
 Namespace: microsoft.graph
 
@@ -28,8 +28,9 @@ None.
 
 |Relationship|Type|Description|
 |:-----------|:---|:----------|
-|readingAssignmentSubmission|[readingAssignmentSubmission](../resources/readingassignmentsubmission.md) collection|Details of submitted reading assignments.|
-|reflectCheckInResponse|[reflectCheckInResponse](../resources/reflectcheckinresponse.md) collection|Details of check-in responses.|
+|readingAssignmentSubmissions|[readingAssignmentSubmission](../resources/readingassignmentsubmission.md) collection|Details of submitted reading assignments.|
+|readingCoachPassages|[readingCoachPassage](../resources/readingcoachpassage.md) collection|Details of practiced Reading Coach passages.|
+|reflectCheckInResponses|[reflectCheckInResponse](../resources/reflectcheckinresponse.md) collection|Details of check-in responses.|
 |speakerAssignmentSubmissions|[speakerAssignmentSubmission](../resources/speakerassignmentsubmission.md) collection|Details of submitted speaker assignments.|
 
 ## JSON representation

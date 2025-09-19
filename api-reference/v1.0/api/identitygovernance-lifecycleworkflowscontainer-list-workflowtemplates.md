@@ -75,10 +75,6 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/lifecycleWorkflows/workf
 [!INCLUDE [sample-code](../includes/snippets/csharp/lifecycleworkflows-list-workflowtemplate-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/lifecycleworkflows-list-workflowtemplate-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/lifecycleworkflows-list-workflowtemplate-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -449,10 +445,6 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/lifecycleWorkflows/workf
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/lifecycleworkflows-list-workflowtemplate-filter-category-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/lifecycleworkflows-list-workflowtemplate-filter-category-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

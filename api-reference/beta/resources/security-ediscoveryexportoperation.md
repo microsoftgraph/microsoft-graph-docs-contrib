@@ -32,8 +32,8 @@ Inherits from [caseOperation](../resources/security-caseoperation.md).
 |createdDateTime|DateTimeOffset| The date and time the export was created. Inherited from [caseOperation](../resources/security-caseoperation.md).|
 |description|String| The description provided for the export.|
 |exportFileMetadata | [microsoft.graph.security.ediscoveryExportFileMetadata](../resources/security-ediscoveryexportfilemetadata.md)| Contains the properties for an export file metadata, including **downloadUrl**, **fileName**, and **size**. If you export to an Azure storage location, this property returns empty. |
-|exportOptions|[microsoft.graph.security.exportOptions](#exportoptions-values)| The options provided for the export. For more information, see [reviewSet: export](../api/security-ediscoveryreviewset-export.md). The `fileInfo` member is deprecated and stopped returning data on April 30, 2023. Going forward, the summary and load files are always included. Possible values are: `originalFiles`, `text`, `pdfReplacement`, `tags`, `unknownFutureValue`, `splitSource`, `includeFolderAndPath`, `friendlyName`, `condensePaths`, `optimizedPartitionSize`. Use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `splitSource`, `includeFolderAndPath`, `friendlyName`, `condensePaths`, `optimizedPartitionSize`.|
-|exportStructure|[microsoft.graph.security.exportFileStructure](#exportfilestructure-values)|The options that specify the structure of the export. For more information, see [reviewSet: export](../api/security-ediscoveryreviewset-export.md). Possible values are: `none`, `directory`, `pst`, `unknownFutureValue`, `msg`. Use the `Prefer: include-unknown-enum-members` request header to get the following value from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `msg`.|
+|exportOptions|[microsoft.graph.security.exportOptions](#exportoptions-values)| The options provided for the export. For more information, see [reviewSet: export](../api/security-ediscoveryreviewset-export.md). The `fileInfo` member is deprecated and stopped returning data on April 30, 2023. Going forward, the summary and load files are always included. Possible values are: `originalFiles`, `text`, `pdfReplacement`, `tags`, `unknownFutureValue`, `splitSource`, `includeFolderAndPath`, `friendlyName`, `condensePaths`. Use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `splitSource`, `includeFolderAndPath`, `friendlyName`, `condensePaths`.|
+|exportStructure|[microsoft.graph.security.exportFileStructure](#exportfilestructure-values)|The options that specify the structure of the export. For more information, see [reviewSet: export](../api/security-ediscoveryreviewset-export.md). Possible values are: `none`, `directory` (deprecated), `pst`, `unknownFutureValue`, `msg`. Use the `Prefer: include-unknown-enum-members` request header to get the following value from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `msg`. The `directory` member is deprecated. It remains in beta for backward compatibility. Going forward, use either `pst` or `msg`.|
 |id|String| The ID for the operation. Read-only. Inherited from [caseOperation](../resources/security-caseoperation.md).|
 |outputName|String| The name provided for the export.|
 |percentProgress|Int32| The progress of the operation. Inherited from [caseOperation](../resources/security-caseoperation.md).|
@@ -57,17 +57,19 @@ Inherits from [caseOperation](../resources/security-caseoperation.md).
 |includeFolderAndPath|Include folder and path structure of source.|
 |friendlyName|Give each item a friendly name.|
 |condensePaths|Condense paths to fit within 259 characters.|
-|optimizedPartitionSize|Optimize export package partition size.|
 
 ### exportFileStructure values
 
 |Member|Description|
 |:----|-----------|
 |None|Default file structure.|
-|directory|All files in a singe folder called NativeFiles.|
+|directory (deprecated)|All files in a singe folder called NativeFiles.|
 |pst|Mails are grouped in PST format.|
 |unknownFutureValue   | Evolvable enumeration sentinel value. Don't use. |
 |msg|Mails are in MSG format.|
+
+> [!TIP]
+> The `directory` member is deprecated. It remains in beta for backward compatibility. Going forward, use either `pst` or `msg`.
 
 ## Relationships
 |Relationship|Type|Description|

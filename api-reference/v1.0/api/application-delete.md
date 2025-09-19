@@ -1,7 +1,7 @@
 ---
 title: "Delete application"
 description: "Delete an application object."
-author: "sureshja"
+author: "Jackson-Woods"
 ms.localizationpriority: medium
 ms.subservice: "entra-applications"
 doc_type: apiPageType
@@ -62,10 +62,6 @@ DELETE https://graph.microsoft.com/v1.0/applications/{id}
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-application-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/delete-application-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

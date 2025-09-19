@@ -1,5 +1,5 @@
 ---
-description: Automatically generated file. DO NOT MODIFY
+description: "Automatically generated file. DO NOT MODIFY"
 ms.topic: include
 ms.localizationpriority: medium
 ---
@@ -8,6 +8,5 @@ ms.localizationpriority: medium
 |:---|:---|:---|
 |Delegated (work or school account)|VirtualEvent.ReadWrite|Not available.|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|VirtualEvent.ReadWrite.All|Not available.|
-
+|Application|VirtualEventRegistration-Anon.ReadWrite.Chat|Not available.|
 

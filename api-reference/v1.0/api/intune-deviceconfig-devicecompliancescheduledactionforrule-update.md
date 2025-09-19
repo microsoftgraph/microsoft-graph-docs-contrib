@@ -79,10 +79,6 @@ Content-length: 114
 [!INCLUDE [sample-code](../includes/snippets/csharp/intune-deviceconfig-devicecompliancescheduledactionforrule-update-update-devicecompliancescheduledactionforrule-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/intune-deviceconfig-devicecompliancescheduledactionforrule-update-update-devicecompliancescheduledactionforrule-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/intune-deviceconfig-devicecompliancescheduledactionforrule-update-update-devicecompliancescheduledactionforrule-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

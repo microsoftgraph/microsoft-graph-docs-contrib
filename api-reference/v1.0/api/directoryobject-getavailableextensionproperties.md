@@ -20,6 +20,10 @@ Return all directory extension definitions that are registered in a directory, i
 + [device](../resources/device.md)
 + [organization](../resources/organization.md)
 
+> [!IMPORTANT]
+> 
+> This API has a known issue and only processes results for tenants with up to 1,000 service principals; otherwise, it returns an empty response. Use [List extensionProperties (directory extensions)](/graph/api/application-list-extensionproperty) instead.
+
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
@@ -80,10 +84,6 @@ POST https://graph.microsoft.com/v1.0/directoryObjects/getAvailableExtensionProp
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/directoryobject-getavailableextensionproperties-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/directoryobject-getavailableextensionproperties-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

@@ -95,10 +95,6 @@ Content-length: 359
 [!INCLUDE [sample-code](../includes/snippets/csharp/intune-deviceconfig-windows10secureassessmentconfiguration-update-update-windows10secureassessmentconfiguration-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/intune-deviceconfig-windows10secureassessmentconfiguration-update-update-windows10secureassessmentconfiguration-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/intune-deviceconfig-windows10secureassessmentconfiguration-update-update-windows10secureassessmentconfiguration-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

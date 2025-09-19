@@ -32,7 +32,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/contactFolders/{id}/contacts/delta
-GET /users/{id}/contactFolders/{id}/contacts/delta
+GET /users/{id | userPrincipalName}/contactFolders/{id}/contacts/delta
 ```
 
 ## Query parameters
@@ -93,10 +93,6 @@ Prefer: odata.maxpagesize=2
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/contact-delta-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/contact-delta-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

@@ -1,7 +1,7 @@
 ---
 title: "Create serviceprincipal"
 description: "Create a new serviceprincipal object."
-author: "sureshja"
+author: "Jackson-Woods"
 ms.localizationpriority: high
 doc_type: apiPageType
 ms.subservice: "entra-applications"
@@ -68,10 +68,6 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-serviceprincipal-from-serviceprincipals-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-serviceprincipal-from-serviceprincipals-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

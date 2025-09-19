@@ -79,10 +79,6 @@ DELETE https://graph.microsoft.com/beta/drives/22e064df-3562-4a3c-98c3-74721ca06
 [!INCLUDE [sample-code](../includes/snippets/csharp/driveitem-removeretentionlabel-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/driveitem-removeretentionlabel-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/driveitem-removeretentionlabel-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

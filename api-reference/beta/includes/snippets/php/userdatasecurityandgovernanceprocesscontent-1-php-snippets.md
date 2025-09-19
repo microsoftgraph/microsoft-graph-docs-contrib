@@ -14,6 +14,7 @@ use Microsoft\Graph\Beta\Generated\Models\TextContent;
 use Microsoft\Graph\Beta\Generated\Models\ActivityMetadata;
 use Microsoft\Graph\Beta\Generated\Models\UserActivityType;
 use Microsoft\Graph\Beta\Generated\Models\DeviceMetadata;
+use Microsoft\Graph\Beta\Generated\Models\OperatingSystemSpecifications;
 use Microsoft\Graph\Beta\Generated\Models\ProtectedApplicationMetadata;
 use Microsoft\Graph\Beta\Generated\Models\PolicyLocationApplication;
 use Microsoft\Graph\Beta\Generated\Models\IntegratedApplicationMetadata;
@@ -44,14 +45,11 @@ $contentToProcessActivityMetadata->setActivity(new UserActivityType('uploadText'
 $contentToProcess->setActivityMetadata($contentToProcessActivityMetadata);
 $contentToProcessDeviceMetadata = new DeviceMetadata();
 $contentToProcessDeviceMetadata->setDeviceType('Unmanaged');
+$contentToProcessDeviceMetadataOperatingSystemSpecifications = new OperatingSystemSpecifications();
+$contentToProcessDeviceMetadataOperatingSystemSpecifications->setOperatingSystemPlatform('Windows 11');
+$contentToProcessDeviceMetadataOperatingSystemSpecifications->setOperatingSystemVersion('10.0.26100.0');
+$contentToProcessDeviceMetadata->setOperatingSystemSpecifications($contentToProcessDeviceMetadataOperatingSystemSpecifications);
 $contentToProcessDeviceMetadata->setIpAddress('127.0.0.1');
-$additionalData = [
-'operatingSystemSpecifications' => [
-	'operatingSystemPlatform' => 'Windows 11',
-	'operatingSystemVersion' => '10.0.26100.0',
-],
-];
-$contentToProcessDeviceMetadata->setAdditionalData($additionalData);
 $contentToProcess->setDeviceMetadata($contentToProcessDeviceMetadata);
 $contentToProcessProtectedAppMetadata = new ProtectedApplicationMetadata();
 $contentToProcessProtectedAppMetadata->setName('PC Purview API Explorer');

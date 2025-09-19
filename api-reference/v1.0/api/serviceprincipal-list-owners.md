@@ -4,7 +4,7 @@ description: "Retrieve a list of owners of the servicePrincipal."
 ms.localizationpriority: high
 doc_type: apiPageType
 ms.subservice: "entra-applications"
-author: "sureshja"
+author: "Jackson-Woods"
 ms.date: 08/21/2024
 ---
 
@@ -77,10 +77,6 @@ GET https://graph.microsoft.com/v1.0/serviceprincipals/bbec3106-565f-4907-941e-9
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/serviceprincipal-get-owners-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/serviceprincipal-get-owners-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

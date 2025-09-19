@@ -18,15 +18,13 @@ sendActivityNotificationPostRequestBody.setActivityType("announcementPosted");
 ItemBody previewText = new ItemBody();
 previewText.setContent("new announcemnet posted");
 sendActivityNotificationPostRequestBody.setPreviewText(previewText);
+sendActivityNotificationPostRequestBody.setIconId("announcementCreated");
 LinkedList<KeyValuePair> templateParameters = new LinkedList<KeyValuePair>();
 KeyValuePair keyValuePair = new KeyValuePair();
 keyValuePair.setName("deploymentId");
 keyValuePair.setValue("6788662");
 templateParameters.add(keyValuePair);
 sendActivityNotificationPostRequestBody.setTemplateParameters(templateParameters);
-HashMap<String, Object> additionalData = new HashMap<String, Object>();
-additionalData.put("iconId", "announcementCreated");
-sendActivityNotificationPostRequestBody.setAdditionalData(additionalData);
 graphClient.users().byUserId("{user-id}").teamwork().sendActivityNotification().post(sendActivityNotificationPostRequestBody);
 
 

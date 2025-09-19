@@ -76,10 +76,6 @@ GET https://graph.microsoft.com/beta/networkAccess/logs/traffic
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-networkaccesstraffic-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/list-networkaccesstraffic-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-networkaccesstraffic-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -214,9 +210,20 @@ Content-Type: application/json
         "referrer": "process",
         "origin": "https://developer.mozilla.org",
         "xForwardedFor": "incentivize"
+      },
+      "cloudApplicationMetadata": {
+        "@odata.type": "microsoft.graph.networkaccess.cloudApplicationMetadata",
+        "cloudApplicationCatalogId": "12345",
+        "name": "ChatGPT",
+        "category": "generativeAi",
+        "generalScore": 85,
+        "riskScore": 15,
+        "complianceScore": 90,
+        "legalScore": 88,
+        "loginUser": "user1@microsoft.com",
+        "securityScore": 92
       }
     }
   ]
 }
 ```
-

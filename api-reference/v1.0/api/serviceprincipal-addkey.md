@@ -2,7 +2,7 @@
 title: "servicePrincipal: addKey"
 description: "Add a key credential to a servicePrincipal."
 ms.localizationpriority: medium
-author: "sureshja"
+author: "Jackson-Woods"
 ms.subservice: "entra-applications"
 doc_type: "apiPageType"
 ms.date: 04/04/2024
@@ -99,10 +99,6 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/serviceprincipal-addkey-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/serviceprincipal-addkey-1-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/serviceprincipal-addkey-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -180,10 +176,6 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/serviceprincipal-addkey-2-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/serviceprincipal-addkey-2-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

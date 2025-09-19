@@ -91,10 +91,6 @@ GET https://graph.microsoft.com/v1.0/users?$filter=startswith(givenName, 'J')
 [!INCLUDE [sample-code](../includes/snippets/csharp/v1/query-parameters-unencoded-url-example-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/query-parameters-unencoded-url-example-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/v1/query-parameters-unencoded-url-example-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -135,10 +131,6 @@ GET https://graph.microsoft.com/v1.0/users?$filter=startswith(givenName%2C+'J')
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/v1/query-parameters-percentencoded-url-example-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/query-parameters-percentencoded-url-example-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -183,10 +175,6 @@ GET https://graph.microsoft.com/v1.0/users?$filter=startswith%28givenName%2C%20%
 [!INCLUDE [sample-code](../includes/snippets/csharp/v1/query-parameters-doublepercentencoded-url-example-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/query-parameters-doublepercentencoded-url-example-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/v1/query-parameters-doublepercentencoded-url-example-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -229,10 +217,6 @@ GET https://graph.microsoft.com/v1.0/me/messages?$filter=subject eq 'let''s meet
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/v1/query-parameters-escaped-quotes-example-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/query-parameters-escaped-quotes-example-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -289,10 +273,6 @@ GET  https://graph.microsoft.com/v1.0/me/contacts?$count=true
 [!INCLUDE [sample-code](../includes/snippets/csharp/v1/query-parameters-count-example-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/query-parameters-count-example-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/v1/query-parameters-count-example-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -343,10 +323,6 @@ GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children
 [!INCLUDE [sample-code](../includes/snippets/csharp/v1/query-parameters-expand-example-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/query-parameters-expand-example-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/v1/query-parameters-expand-example-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -387,10 +363,6 @@ GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children($select=id,n
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/v1/query-parameters-expand+nestedselect-example-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/query-parameters-expand+nestedselect-example-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -450,10 +422,6 @@ GET https://graph.microsoft.com/v1.0/users?$format=json
 [!INCLUDE [sample-code](../includes/snippets/csharp/v1/query-parameters-format-example-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/query-parameters-format-example-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/v1/query-parameters-format-example-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -481,7 +449,7 @@ GET https://graph.microsoft.com/v1.0/users?$format=json
 ---
 
 > [!NOTE]
-> The `$format` query parameter supports many formats (for example, `atom`, `xml`, and `json`) but results may not be returned in all formats.
+> The `$format` query parameter supports many formats (for example, `atom`, `xml`, and `json`) but results might not be returned in all formats.
 
 ## OrderBy
 
@@ -501,10 +469,6 @@ GET https://graph.microsoft.com/v1.0/users?$orderby=displayName
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/v1/query-parameters-orderby-example-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/query-parameters-orderby-example-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -547,10 +511,6 @@ GET https://graph.microsoft.com/v1.0/me/messages?$orderby=from/emailAddress/addr
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/v1/query-parameters-defaultorderby-collection-example-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/query-parameters-defaultorderby-collection-example-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -597,10 +557,6 @@ GET https://graph.microsoft.com/v1.0/me/mailFolders/Inbox/messages?$orderby=from
 [!INCLUDE [sample-code](../includes/snippets/csharp/v1/query-parameters-descorderby-collection-example-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/query-parameters-descorderby-collection-example-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/v1/query-parameters-descorderby-collection-example-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -645,10 +601,6 @@ GET https://graph.microsoft.com/v1.0/me/messages?$filter=Subject eq 'welcome' an
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/v1/query-parameters-filter+orderby-example-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/query-parameters-filter+orderby-example-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -710,10 +662,6 @@ GET https://graph.microsoft.com/v1.0/me/messages?$select=from,subject
 [!INCLUDE [sample-code](../includes/snippets/csharp/v1/query-parameters-select-example-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/query-parameters-select-example-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/v1/query-parameters-select-example-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -762,10 +710,6 @@ GET  https://graph.microsoft.com/v1.0/me/events?$orderby=createdDateTime&$skip=2
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/v1/query-parameters-skip-example-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/query-parameters-skip-example-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -830,10 +774,6 @@ GET https://graph.microsoft.com/v1.0/me/messages?$top=5
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/v1/query-parameters-top-example-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/query-parameters-top-example-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

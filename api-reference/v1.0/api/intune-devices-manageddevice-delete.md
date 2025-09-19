@@ -65,10 +65,6 @@ DELETE https://graph.microsoft.com/v1.0/deviceManagement/managedDevices/{managed
 [!INCLUDE [sample-code](../includes/snippets/csharp/intune-devices-manageddevice-delete-delete-manageddevice-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/intune-devices-manageddevice-delete-delete-manageddevice-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/intune-devices-manageddevice-delete-delete-manageddevice-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

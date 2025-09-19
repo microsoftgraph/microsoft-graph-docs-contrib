@@ -7,6 +7,7 @@ doc_type: conceptualPageType
 ms.subservice: search
 description: "Learn how to publish the connectors you build using the Copilot connectors SDK to the Microsoft 365 admin center."
 ms.date: 11/07/2024
+ms.topic: how-to
 ---
 
 # Publish custom Copilot connectors to the Microsoft 365 admin center

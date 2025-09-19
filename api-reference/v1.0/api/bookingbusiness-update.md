@@ -14,6 +14,9 @@ Namespace: microsoft.graph
 
 Update the properties of a [bookingBusiness](../resources/bookingbusiness.md) object.
 
+> [!IMPORTANT]
+> Using the PATCH method to set the email or display name isn't supported. To update these properties for a booking business, use the `Set-Mailbox cmdlet` in Exchange Online PowerShell.
+
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
@@ -37,26 +40,24 @@ PATCH /solutions/bookingBusinesses/{id}
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|address|[physicalAddress](../resources/physicaladdress.md)|The street address of the business. The attribute **type** of physicalAddress is not supported in v1.0. Internally we map the addresses to the type `others`.|
+|address|[physicalAddress](../resources/physicaladdress.md)|The street address of the business. The attribute **type** of physicalAddress is not supported in v1.0. Internally, we map the addresses to the type `others`.|
 |businessHours|[bookingWorkHours](../resources/bookingworkhours.md) collection|The hours of operation for the business.|
 |businessType|String|The type of business.|
 |defaultCurrencyIso|String|The code for the currency that the business operates in on Microsoft Bookings.|
-|displayName|String|A name for the business that interfaces with customers.|
-|email|String|The email address for the business.|
 |phone|String|The telephone number for the business.|
 |schedulingPolicy|[bookingSchedulingPolicy](../resources/bookingschedulingpolicy.md)|Specifies how bookings can be created for this business.|
-|webSiteUrl|String|The URL of the business web site.|
+|webSiteUrl|String|The URL of the business website.|
 
 ## Response
 If successful, this method returns a `204 No Content` response code. It doesn't return anything in the response body.
 ## Example
 ### Request
-The following example updates the business email address and scheduling policy, to change the business default booking time slot to an hour, and advance booking up to 30 days.
+The following example updates the business email address and scheduling policy to change the business default booking time slot to an hour, and advance booking up to 30 days.
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name" : "bookingbusinesupdate",
+  "name": "bookingbusinesupdate",
   "sampleKeys": ["fabrikam@contoso.com"]
 }-->
 ```http
@@ -77,10 +78,6 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/bookingbusinesupdate-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/bookingbusinesupdate-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

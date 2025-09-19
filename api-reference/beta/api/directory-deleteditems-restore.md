@@ -26,7 +26,7 @@ Restore a recently deleted directory object from [deleted items](../resources/di
 - [user](../resources/user.md)
 
 
-If an item was accidentally deleted, you can fully restore the item. This isn't applicable to security groups, which are deleted permanently. Also, restoring an application doesn't restore the associated service principal automatically. You must call this API to explicitly restore the deleted service principal.
+If an item is accidentally deleted, you can fully restore it. Additionally, restoring an application doesn't automatically restore the associated service principal. You must call this API to restore the deleted service principal explicitly.
 
 A recently deleted item remains available for up to 30 days. After 30 days, the item is permanently deleted.
 
@@ -93,10 +93,6 @@ POST https://graph.microsoft.com/beta/directory/deleteditems/46cc6179-19d0-473e-
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/restore-directory-deleteditem-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/restore-directory-deleteditem-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -170,10 +166,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/restore-directory-deleteditem-autoreconcileproxyconflict-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/restore-directory-deleteditem-autoreconcileproxyconflict-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -250,10 +242,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/restore-directory-deleteditem-newuserprincipalname-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/restore-directory-deleteditem-newuserprincipalname-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

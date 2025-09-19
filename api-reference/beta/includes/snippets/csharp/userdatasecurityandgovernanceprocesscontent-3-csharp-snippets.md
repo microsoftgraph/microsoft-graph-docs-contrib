@@ -9,7 +9,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 // Dependencies
 using Microsoft.Graph.Beta.Me.DataSecurityAndGovernance.ProcessContent;
 using Microsoft.Graph.Beta.Models;
-using Microsoft.Kiota.Abstractions.Serialization;
 
 var requestBody = new ProcessContentPostRequestBody
 {
@@ -55,19 +54,10 @@ var requestBody = new ProcessContentPostRequestBody
 		DeviceMetadata = new DeviceMetadata
 		{
 			DeviceType = "unmanaged",
-			AdditionalData = new Dictionary<string, object>
+			OperatingSystemSpecifications = new OperatingSystemSpecifications
 			{
-				{
-					"operatingSystemSpecifications" , new UntypedObject(new Dictionary<string, UntypedNode>
-					{
-						{
-							"operatingSystemPlatform", new UntypedString("Windows")
-						},
-						{
-							"operatingSystemVersion", new UntypedString("11.1")
-						},
-					})
-				},
+				OperatingSystemPlatform = "Windows",
+				OperatingSystemVersion = "11.1",
 			},
 		},
 		IntegratedAppMetadata = new IntegratedApplicationMetadata

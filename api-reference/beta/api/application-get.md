@@ -1,7 +1,7 @@
 ---
 title: "Get application"
 description: "Get the properties and relationships of an application object."
-author: "sureshja"
+author: "Jackson-Woods"
 ms.localizationpriority: high
 ms.subservice: "entra-applications"
 doc_type: apiPageType
@@ -74,10 +74,6 @@ GET https://graph.microsoft.com/beta/applications/03ef14b0-ca33-4840-8f4f-d6e919
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-application-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-application-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -209,10 +205,6 @@ GET https://graph.microsoft.com/beta/applications(appId='46e6adf4-a9cf-4b60-9390
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-application-by-appid-select-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-application-by-appid-select-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

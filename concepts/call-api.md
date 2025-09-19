@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "ananmishr"
 ms.subservice: "cloud-communications"
 ms.date: 11/07/2024
+ms.topic: concept-article
 ---
 
 # Calling the Microsoft Graph API

@@ -149,10 +149,6 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/groups-overview-createdynamicgroup-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/groups-overview-createdynamicgroup-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/groups-overview-createdynamicgroup-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -218,6 +214,7 @@ You can configure other settings for groups, such as:
 | [Group expiration](../resources/grouplifecyclepolicy.md) | Microsoft 365 Groups |
 | [Group settings](/graph/group-directory-settings) | Microsoft 365 Groups |
 | [On-premises synchronization settings](../resources/onpremisesdirectorysynchronization.md) | Security and Microsoft 365 Groups |
+| [Source of Authority conversion](../resources/onpremisessyncbehavior.md) | Security and Microsoft 365 Groups |
 
 ## Group search limitations for guests in organizations
 

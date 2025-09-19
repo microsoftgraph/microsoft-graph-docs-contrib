@@ -4,6 +4,7 @@ description: Create a basic application that accesses data via Microsoft Graph i
 author: jasonjoh
 ms.localizationpriority: high
 ms.date: 11/07/2024
+ms.topic: tutorial
 ---
 
 # Microsoft Graph tutorials

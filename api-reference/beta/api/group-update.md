@@ -61,7 +61,9 @@ The following table specifies the properties that can be updated.
 | writebackConfiguration                     | [groupWritebackConfiguration](../resources/groupwritebackconfiguration.md)                                                                  | Specifies whether or not a group is configured to write back group object properties to on-premise Active Directory. These properties are used when group writeback is configured in the [Microsoft Entra Connect](/azure/active-directory/hybrid/how-to-connect-group-writeback-v2) sync client.|  
 
 > [!IMPORTANT]
-> - To update the following properties, you must specify them in their own PATCH request, without including the other properties listed in the previous table: **allowExternalSenders**, **autoSubscribeNewMembers**, **hideFromAddressLists**, **hideFromOutlookClients**, **isSubscribedByMail**, **unseenCount**.
+> - To update these properties (**allowExternalSenders**, **autoSubscribeNewMembers**, **hideFromAddressLists**, **hideFromOutlookClients**, **isSubscribedByMail**, **unseenCount**), you must:
+>    - Specify them in their own PATCH request without including other properties from the previous table
+>    - Have the Group.ReadWrite.All permission (*Directory.ReadWrite.All* is not supported for these properties)
 > - Only a subset of the group API that pertains to core group administration and management supports application and delegated permissions. All other members of the group API, including updating **autoSubscribeNewMembers**, support only delegated permissions.
 > - The rules for updating mail-enabled security groups in Microsoft Exchange Server can be complex; to learn more, see [Manage mail-enabled security groups in Exchange Server](/Exchange/recipients/mail-enabled-security-groups).
 > - Application permissions are not supported when updating assignedLabels.
@@ -104,10 +106,6 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-group-1-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/update-group-1-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -179,10 +177,6 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-group-2-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/update-group-2-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

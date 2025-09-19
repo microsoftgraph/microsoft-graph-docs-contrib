@@ -11,6 +11,8 @@ ms.date: 04/04/2024
 # Get teamworkDeviceConfiguration
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-deprecation-disclaimer](../../includes/beta-deprecation-disclaimer.md)]
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get the [configuration](../resources/teamworkdeviceconfiguration.md) details of a Microsoft Teams-enabled [device](../resources/teamworkdevice.md), including software versions, peripheral device configuration (for example, camera, display, microphone, and speaker), hardware configuration, and Microsoft Teams client configuration.
@@ -68,10 +70,6 @@ GET https://graph.microsoft.com/beta/teamwork/devices/e19229ed-29ed-e192-ed29-92
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-teamworkdeviceconfiguration-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-teamworkdeviceconfiguration-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

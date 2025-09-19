@@ -94,10 +94,6 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/directoryobject-validateproperties-validrequest-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/directoryobject-validateproperties-validrequest-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/directoryobject-validateproperties-validrequest-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -157,10 +153,6 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/directoryobject-validateproperties-invalidrequest-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/directoryobject-validateproperties-invalidrequest-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -234,11 +226,9 @@ Content-Type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [ 
-    "Error: directoryobjectvalidatepropertiesinvalidrequest:
-      Unable to locate the corresponding response for this method. Missing or incorrect code block annotation.",
+  "suppressions": [
     "Error: directoryobjectvalidatepropertiesinvalidrequest:
       Resource type was null or missing in response metadata, so we assume there is no response to validate."
-  ]
+]
 }-->
 

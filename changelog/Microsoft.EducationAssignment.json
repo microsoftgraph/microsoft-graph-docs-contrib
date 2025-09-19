@@ -3,6 +3,104 @@
     {
       "ChangeList": [
         {
+          "Id": "1fcce344-d144-48db-8e31-7f923b7c3585",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "educationSpeechType",
+          "ChangeType": "Addition",
+          "Description": "Added the **educationSpeechType** enumeration type.",
+          "Target": "educationSpeechType"
+        },
+        {
+          "Id": "1fcce344-d144-48db-8e31-7f923b7c3585",
+          "ApiChange": "Resource",
+          "ChangedApiName": "educationAiFeedbackAudienceEngagementSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [educationAiFeedbackAudienceEngagementSettings](https://learn.microsoft.com/en-us/graph/api/resources/educationAiFeedbackAudienceEngagementSettings?view=graph-rest-1.0) resource.",
+          "Target": "educationAiFeedbackAudienceEngagementSettings"
+        },
+        {
+          "Id": "1fcce344-d144-48db-8e31-7f923b7c3585",
+          "ApiChange": "Resource",
+          "ChangedApiName": "educationAiFeedbackContentSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [educationAiFeedbackContentSettings](https://learn.microsoft.com/en-us/graph/api/resources/educationAiFeedbackContentSettings?view=graph-rest-1.0) resource.",
+          "Target": "educationAiFeedbackContentSettings"
+        },
+        {
+          "Id": "1fcce344-d144-48db-8e31-7f923b7c3585",
+          "ApiChange": "Resource",
+          "ChangedApiName": "educationAiFeedbackCriteria",
+          "ChangeType": "Addition",
+          "Description": "Added the [educationAiFeedbackCriteria](https://learn.microsoft.com/en-us/graph/api/resources/educationAiFeedbackCriteria?view=graph-rest-1.0) resource.",
+          "Target": "educationAiFeedbackCriteria"
+        },
+        {
+          "Id": "1fcce344-d144-48db-8e31-7f923b7c3585",
+          "ApiChange": "Resource",
+          "ChangedApiName": "educationAiFeedbackDeliverySettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [educationAiFeedbackDeliverySettings](https://learn.microsoft.com/en-us/graph/api/resources/educationAiFeedbackDeliverySettings?view=graph-rest-1.0) resource.",
+          "Target": "educationAiFeedbackDeliverySettings"
+        },
+        {
+          "Id": "1fcce344-d144-48db-8e31-7f923b7c3585",
+          "ApiChange": "Resource",
+          "ChangedApiName": "educationAiFeedbackSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [educationAiFeedbackSettings](https://learn.microsoft.com/en-us/graph/api/resources/educationAiFeedbackSettings?view=graph-rest-1.0) resource.",
+          "Target": "educationAiFeedbackSettings"
+        },
+        {
+          "Id": "1fcce344-d144-48db-8e31-7f923b7c3585",
+          "ApiChange": "Resource",
+          "ChangedApiName": "educationSpeakerCoachAudienceEngagementSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [educationSpeakerCoachAudienceEngagementSettings](https://learn.microsoft.com/en-us/graph/api/resources/educationSpeakerCoachAudienceEngagementSettings?view=graph-rest-1.0) resource.",
+          "Target": "educationSpeakerCoachAudienceEngagementSettings"
+        },
+        {
+          "Id": "1fcce344-d144-48db-8e31-7f923b7c3585",
+          "ApiChange": "Resource",
+          "ChangedApiName": "educationSpeakerCoachContentSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [educationSpeakerCoachContentSettings](https://learn.microsoft.com/en-us/graph/api/resources/educationSpeakerCoachContentSettings?view=graph-rest-1.0) resource.",
+          "Target": "educationSpeakerCoachContentSettings"
+        },
+        {
+          "Id": "1fcce344-d144-48db-8e31-7f923b7c3585",
+          "ApiChange": "Resource",
+          "ChangedApiName": "educationSpeakerCoachDeliverySettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [educationSpeakerCoachDeliverySettings](https://learn.microsoft.com/en-us/graph/api/resources/educationSpeakerCoachDeliverySettings?view=graph-rest-1.0) resource.",
+          "Target": "educationSpeakerCoachDeliverySettings"
+        },
+        {
+          "Id": "1fcce344-d144-48db-8e31-7f923b7c3585",
+          "ApiChange": "Resource",
+          "ChangedApiName": "educationSpeakerCoachSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [educationSpeakerCoachSettings](https://learn.microsoft.com/en-us/graph/api/resources/educationSpeakerCoachSettings?view=graph-rest-1.0) resource.",
+          "Target": "educationSpeakerCoachSettings"
+        },
+        {
+          "Id": "1fcce344-d144-48db-8e31-7f923b7c3585",
+          "ApiChange": "Resource",
+          "ChangedApiName": "educationSpeakerProgressResource",
+          "ChangeType": "Addition",
+          "Description": "Added the [educationSpeakerProgressResource](https://learn.microsoft.com/en-us/graph/api/resources/educationSpeakerProgressResource?view=graph-rest-1.0) resource.",
+          "Target": "educationSpeakerProgressResource"
+        }
+      ],
+      "Id": "1fcce344-d144-48db-8e31-7f923b7c3585",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-09-18T05:57:03.3571368Z",
+      "WorkloadArea": "Education",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "0ce1153d-f686-4c4a-b738-a7fd92cef9d9",
           "ApiChange": "Property",
           "ChangedApiName": "languageTag",

@@ -76,10 +76,6 @@ GET https://graph.microsoft.com/beta/solutions/backupRestore/emailNotificationsS
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-emailnotificationssetting-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-emailnotificationssetting-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-emailnotificationssetting-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -94,6 +90,10 @@ GET https://graph.microsoft.com/beta/solutions/backupRestore/emailNotificationsS
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-emailnotificationssetting-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-emailnotificationssetting-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -119,9 +119,18 @@ Content-Type: application/json
   "isEnabled": true,
   "additionalEvents": "restoreAndPolicyUpdates",
   "recipients": {
-    "recipients": {
-      "role": "globalAdmins"
-    }
+    "role": "custom",
+    "customRecipients": [
+      {
+        "email": "amala@contoso.com"
+      },
+      {
+        "email": "conrad@contoso.com"
+      },
+      {
+        "email": "lothar@contoso.com"
+      }
+    ]
   }
 }
 ```

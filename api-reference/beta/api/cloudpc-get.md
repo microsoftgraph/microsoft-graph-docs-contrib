@@ -87,10 +87,6 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/9
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-cloudpc-default-properties-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-cloudpc-default-properties-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-cloudpc-default-properties-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -170,6 +166,8 @@ Content-Type: application/json
 
 ### Example 2: Get the selected properties of a Cloud PC
 
+The following example shows how to get selected properties of a [cloudPC](../resources/cloudpc.md) object using the `$select` OData query parameter.
+
 #### Request
 
 The following example shows a request.
@@ -182,15 +180,11 @@ The following example shows a request.
 -->
 
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/40cee9d2-03fb-4066-8d35-dbdf2875c33f?$select=id,displayName,imageDisplayName,lastModifiedDateTime,lastRemoteActionResult,lastLoginResult,connectivityResult,allotmentDisplayName,deviceRegionName,productType
+GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/40cee9d2-03fb-4066-8d35-dbdf2875c33f?$select=id,displayName,imageDisplayName,lastModifiedDateTime,lastRemoteActionResult,lastLoginResult,connectivityResult,allotmentDisplayName,deviceRegionName,productType,provisionedDateTime,sharedDeviceDetail,groupDetail,userDetail
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-cloudpc-selected-properties-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-cloudpc-selected-properties-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -202,7 +196,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/4
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-cloudpc-selected-properties-javascript-snippets.md)]
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
@@ -267,7 +261,19 @@ Content-Type: application/json
     },
     "allotmentDisplayName": null,
     "deviceRegionName": "eastus2",
-    "productType": null
+    "productType": null,
+    "provisionedDateTime": "2025-04-23T10:29:57Z",
+    "sharedDeviceDetail": {
+      "assignedToUserPrincipalName": "john.doe@contoso.onmicrosoft.com"
+    },
+    "groupDetail": {
+        "groupId": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+        "groupDisplayName": "Contoso Cloud PC Users"
+    },
+    "userDetail": {
+        "userId": "e798de27-1806-4433-9ac3-4db7a985a12b",
+        "userDisplayName": "Peter Mitchell"
+    }
 }
 ```
 
@@ -291,10 +297,6 @@ GET https://graph.microsoft.com/beta/me/cloudPCs/36bd4942-0ca8-11ed-861d-0242ac1
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-get-cloudpc-default-properties-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/user-get-cloudpc-default-properties-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

@@ -64,10 +64,6 @@ GET https://graph.microsoft.com/beta/security/cases/ediscoveryCases/58399dff-ceb
 [!INCLUDE [sample-code](../includes/snippets/csharp/ediscoveryreviewtagthisashierarchy-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/ediscoveryreviewtagthisashierarchy-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/ediscoveryreviewtagthisashierarchy-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -214,10 +210,6 @@ GET https://graph.microsoft.com/beta/security/cases/ediscoveryCases/b6f72954-c7d
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/ediscoveryreviewtagthischildtags-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/ediscoveryreviewtagthischildtags-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

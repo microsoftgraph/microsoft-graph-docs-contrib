@@ -3,6 +3,56 @@
     {
         "ChangeList": [
           {
+            "Id": "049f16d5-1009-42de-b1c3-67f2fb51e47f",
+            "ApiChange": "Member",
+            "ChangedApiName": "cloudPcUserSettingsPersistenceScenario",
+            "ChangeType": "Addition",
+            "Description": "Added the `cloudPcUserSettingsPersistenceScenario` member to the **alertRuleTemplate** enumeration.",
+            "Target": "alertRuleTemplate"
+          },
+          {
+            "Id": "049f16d5-1009-42de-b1c3-67f2fb51e47f",
+            "ApiChange": "Member",
+            "ChangedApiName": "cloudPcDeprovisionFailedScenario",
+            "ChangeType": "Addition",
+            "Description": "Added the `cloudPcDeprovisionFailedScenario` member to the **alertRuleTemplate** enumeration.",
+            "Target": "alertRuleTemplate"
+          },
+          {
+            "Id": "049f16d5-1009-42de-b1c3-67f2fb51e47f",
+            "ApiChange": "Member",
+            "ChangedApiName": "cloudPcUserSettingsPersistenceUsageThreshold",
+            "ChangeType": "Addition",
+            "Description": "Added the `cloudPcUserSettingsPersistenceUsageThreshold` member to the **conditionCategory** enumeration.",
+            "Target": "conditionCategory"
+          },
+          {
+            "Id": "049f16d5-1009-42de-b1c3-67f2fb51e47f",
+            "ApiChange": "Member",
+            "ChangedApiName": "cloudPcDeprovisionedThreshold",
+            "ChangeType": "Addition",
+            "Description": "Added the `cloudPcDeprovisionedThreshold` member to the **conditionCategory** enumeration.",
+            "Target": "conditionCategory"
+          },
+          {
+            "Id": "049f16d5-1009-42de-b1c3-67f2fb51e47f",
+            "ApiChange": "Member",
+            "ChangedApiName": "cloudPcReserveDeprovisionFailedThreshold",
+            "ChangeType": "Addition",
+            "Description": "Added the `cloudPcReserveDeprovisionFailedThreshold` member to the **conditionCategory** enumeration.",
+            "Target": "conditionCategory"
+          }
+      ],
+      "Id": "049f16d5-1009-42de-b1c3-67f2fb51e47f",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-09-09T05:00:03.4590295Z",
+      "WorkloadArea": "Device and app management",
+      "SubArea": "Cloud PC"
+    },
+    {
+        "ChangeList": [
+          {
             "Id": "2785679c-6f41-4aae-87cf-41ac2a5ca5ea",
             "ApiChange": "Member",
             "ChangedApiName": "durationInMinutes",

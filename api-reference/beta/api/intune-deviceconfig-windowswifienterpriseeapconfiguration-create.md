@@ -12,7 +12,7 @@ ms.date: 08/01/2024
 
 Namespace: microsoft.graph
 
-> **Important:** APIs under the /beta version in Microsoft Graph are subject to change which could break your applications. While Intune /beta APIs are supported by Microsoft, you should use these at your own discretion. In general, /beta APIs are not recommended for use in production applications. To determine whether an API is available in v1.0, use the Version selector.
+> **Important:** Microsoft supports Intune /beta APIs, but they are subject to more frequent change. Microsoft recommends using version v1.0 when possible. Check an API's availability in version v1.0 using the Version selector.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -63,7 +63,6 @@ The following table shows the properties that are required when you create the w
 |description|String|Admin provided description of the Device Configuration. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|preSharedKey|String|This is the pre-shared key for WPA Personal Wi-Fi network. Inherited from [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|
 |wifiSecurityType|[wiFiSecurityType](../resources/intune-deviceconfig-wifisecuritytype.md)|Specify the Wifi Security Type. Inherited from [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md). Possible values are: `open`, `wpaPersonal`, `wpaEnterprise`, `wep`, `wpa2Personal`, `wpa2Enterprise`.|
 |meteredConnectionLimit|[meteredConnectionLimitType](../resources/intune-deviceconfig-meteredconnectionlimittype.md)|Specify the metered connection limit type for the wifi connection. Inherited from [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md). Possible values are: `unrestricted`, `fixed`, `variable`.|
 |ssid|String|Specify the SSID of the wifi connection. Inherited from [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|
@@ -76,6 +75,7 @@ The following table shows the properties that are required when you create the w
 |proxyManualPort|Int32|Specify the port for the proxy server. Inherited from [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|
 |proxyAutomaticConfigurationUrl|String|Specify the URL for the proxy server configuration script. Inherited from [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|
 |forceFIPSCompliance|Boolean|Specify whether to force FIPS compliance. Inherited from [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|
+|preSharedKey|String|This is the pre-shared key for WPA Personal Wi-Fi network. Inherited from [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|
 |networkSingleSignOn|[networkSingleSignOnType](../resources/intune-deviceconfig-networksinglesignontype.md)|Specify the network single sign on type. Possible values are: `disabled`, `prelogon`, `postlogon`.|
 |maximumAuthenticationTimeoutInSeconds|Int32|Specify maximum authentication timeout (in seconds).  Valid range: 1-120|
 |userBasedVirtualLan|Boolean|Specifiy whether to change the virtual LAN used by the device based on the user’s credentials. Cannot be used when NetworkSingleSignOnType is set to ​Disabled.|
@@ -145,7 +145,6 @@ Content-length: 2695
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
-  "preSharedKey": "Pre Shared Key value",
   "wifiSecurityType": "wpaPersonal",
   "meteredConnectionLimit": "fixed",
   "ssid": "Ssid value",
@@ -158,6 +157,7 @@ Content-length: 2695
   "proxyManualPort": 15,
   "proxyAutomaticConfigurationUrl": "https://example.com/proxyAutomaticConfigurationUrl/",
   "forceFIPSCompliance": true,
+  "preSharedKey": "Pre Shared Key value",
   "networkSingleSignOn": "prelogon",
   "maximumAuthenticationTimeoutInSeconds": 5,
   "userBasedVirtualLan": true,
@@ -227,7 +227,6 @@ Content-Length: 2867
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
-  "preSharedKey": "Pre Shared Key value",
   "wifiSecurityType": "wpaPersonal",
   "meteredConnectionLimit": "fixed",
   "ssid": "Ssid value",
@@ -240,6 +239,7 @@ Content-Length: 2867
   "proxyManualPort": 15,
   "proxyAutomaticConfigurationUrl": "https://example.com/proxyAutomaticConfigurationUrl/",
   "forceFIPSCompliance": true,
+  "preSharedKey": "Pre Shared Key value",
   "networkSingleSignOn": "prelogon",
   "maximumAuthenticationTimeoutInSeconds": 5,
   "userBasedVirtualLan": true,

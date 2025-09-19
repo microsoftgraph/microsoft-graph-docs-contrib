@@ -75,10 +75,6 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/lifecycleWorkflows/workf
 [!INCLUDE [sample-code](../includes/snippets/csharp/lifecycleworkflows-get-run-userprocessingresult-e1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/lifecycleworkflows-get-run-userprocessingresult-e1-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/lifecycleworkflows-get-run-userprocessingresult-e1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -155,10 +151,6 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/lifecycleWorkflows/workf
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/lifecycleworkflows-get-run-userprocessingresult-e2-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/lifecycleworkflows-get-run-userprocessingresult-e2-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

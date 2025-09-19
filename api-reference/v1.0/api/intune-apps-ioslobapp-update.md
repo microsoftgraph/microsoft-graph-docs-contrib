@@ -137,10 +137,6 @@ Content-length: 1269
 [!INCLUDE [sample-code](../includes/snippets/csharp/intune-apps-ioslobapp-update-update-ioslobapp-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/intune-apps-ioslobapp-update-update-ioslobapp-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/intune-apps-ioslobapp-update-update-ioslobapp-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

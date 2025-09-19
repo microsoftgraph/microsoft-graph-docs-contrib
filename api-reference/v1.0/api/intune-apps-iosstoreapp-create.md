@@ -127,10 +127,6 @@ Content-length: 1066
 [!INCLUDE [sample-code](../includes/snippets/csharp/intune-apps-iosstoreapp-create-create-iosstoreapp-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/intune-apps-iosstoreapp-create-create-iosstoreapp-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/intune-apps-iosstoreapp-create-create-iosstoreapp-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

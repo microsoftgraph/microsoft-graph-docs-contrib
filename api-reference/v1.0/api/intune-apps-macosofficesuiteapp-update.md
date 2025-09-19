@@ -105,10 +105,6 @@ Content-length: 584
 [!INCLUDE [sample-code](../includes/snippets/csharp/intune-apps-macosofficesuiteapp-update-update-macosofficesuiteapp-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/intune-apps-macosofficesuiteapp-update-update-macosofficesuiteapp-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/intune-apps-macosofficesuiteapp-update-update-macosofficesuiteapp-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

@@ -101,10 +101,6 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-emailnotificationssetting-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/update-emailnotificationssetting-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-emailnotificationssetting-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -115,6 +111,10 @@ Content-Type: application/json
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/update-emailnotificationssetting-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-emailnotificationssetting-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -141,20 +141,18 @@ Content-Type: application/json
   "isEnabled": true,
   "additionalEvents": "restoreAndPolicyUpdates",
   "recipients": {
-    "recipients": {
-      "role": "custom",
-      "customRecipients": [
-        {
-          "email": "amala@contoso.com"
-        },
-        {
-          "email": "conrad@contoso.com"
-        },
-        {
-          "email": "lothar@contoso.com"
-        }
-      ]
-    }
+    "role": "custom",
+    "customRecipients": [
+      {
+        "email": "amala@contoso.com"
+      },
+      {
+        "email": "conrad@contoso.com"
+      },
+      {
+        "email": "lothar@contoso.com"
+      }
+    ]
   }
 }
 ```

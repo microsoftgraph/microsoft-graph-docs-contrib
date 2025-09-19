@@ -71,10 +71,6 @@ GET https://graph.microsoft.com/v1.0/employeeExperience/engagementAsyncOperation
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-engagementasyncoperation-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-engagementasyncoperation-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-engagementasyncoperation-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -119,8 +115,8 @@ Content-Type: application/json
   "lastActionDateTime": "2023-12-06T09:42:54.367663-08:00",
   "status": "succeeded",
   "statusDetail": null,
-  "resourceLocation": "https://graph.microsoft.com/v1.0/employeeExperience/communities('eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiI4MzIxMjc1In0')",
+  "resourceLocation": "https://graph.microsoft.com/v1.0/employeeExperience/communities('eyXxdHlwZSI6Ikdyb3VwIiwiaABCDiI4MzIxMjc1In0')",
   "operationType": "createCommunity",
-  "resourceId": "eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiI4MzIxMjc1In0"
+  "resourceId": "eyXxdHlwZSI6Ikdyb3VwIiwiaABCDiI4MzIxMjc1In0"
 }
 ```

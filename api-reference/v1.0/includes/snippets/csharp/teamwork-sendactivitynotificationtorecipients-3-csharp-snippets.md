@@ -23,6 +23,7 @@ var requestBody = new SendActivityNotificationToRecipientsPostRequestBody
 	{
 		Content = "new announcemnet posted",
 	},
+	IconId = "announcementCreated",
 	TemplateParameters = new List<KeyValuePair>
 	{
 		new KeyValuePair
@@ -47,12 +48,6 @@ var requestBody = new SendActivityNotificationToRecipientsPostRequestBody
 		{
 			OdataType = "microsoft.graph.aadUserNotificationRecipient",
 			UserId = "01c64f53-69aa-42c7-9b7f-9f75195d6bfc",
-		},
-	},
-	AdditionalData = new Dictionary<string, object>
-	{
-		{
-			"iconId" , "announcementCreated"
 		},
 	},
 };

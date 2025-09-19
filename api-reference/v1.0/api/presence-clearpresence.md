@@ -27,7 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ## HTTP Request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /users/{userId}/presence/clearPresence
+POST /users/{id}/presence/clearPresence
 ```
 
 ## Request headers
@@ -77,10 +77,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/clear--presence-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/clear--presence-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

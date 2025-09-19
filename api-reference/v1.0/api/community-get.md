@@ -57,46 +57,15 @@ If successful, this method returns a `200 OK` response code and a [community](..
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_community",
-  "sampleKeys": ["eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiI4MzIxMjc1In0"]
+  "sampleKeys": ["eyXxdHlwZSI6Ikdyb3VwIiwiaABCDiI4MzIxMjc1In0"]
 }
 -->
 ``` http
-GET https://graph.microsoft.com/v1.0/employeeExperience/communities/eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiI4MzIxMjc1In0
+GET https://graph.microsoft.com/v1.0/employeeExperience/communities/eyXxdHlwZSI6Ikdyb3VwIiwiaABCDiI4MzIxMjc1In0
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-community-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-community-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-community-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-community-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-community-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/get-community-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/get-community-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### Response
 
@@ -116,7 +85,7 @@ Content-Type: application/json
 
 {
   "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#employeeExperience/communities/$entity",
-  "id": "eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiI4MzIxMjc1In0",
+  "id": "eyXxdHlwZSI6Ikdyb3VwIiwiaABCDiI4MzIxMjc1In0",
   "displayName": "Financial Advice for Software Engineers",
   "description": "A community where financial advisors who represent customers from software engineering profession can discuss advice and suggestions for there clients.",
   "privacy": "public",

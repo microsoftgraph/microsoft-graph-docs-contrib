@@ -6,7 +6,7 @@ ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
-ms.date: 08/06/2024
+ms.date: 07/31/2025
 ---
 
 # Create temporaryAccessPassMethod
@@ -20,9 +20,11 @@ Create a new [temporaryAccessPassAuthenticationMethod](../resources/temporaryacc
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-### Permissions acting on other users
-
-<!-- { "blockType": "permissions", "name": "authentication_post_temporaryaccesspassmethods" } -->
+<!-- { 
+  "blockType": "permissions", 
+  "name": "authentication_post_temporaryaccesspassmethods", 
+  "requestUrls": ["GET /users/{id | userPrincipalName}/authentication/temporaryAccessPassMethods"]
+ } -->
 [!INCLUDE [permissions-table](../includes/permissions/authentication-post-temporaryaccesspassmethods-permissions.md)]
 
 [!INCLUDE [rbac-authentication-methods-apis-write-others](../includes/rbac-for-apis/rbac-authentication-methods-apis-write-others.md)]
@@ -81,10 +83,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-temporaryaccesspassauthenticationmethod-from--csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-temporaryaccesspassauthenticationmethod-from--cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

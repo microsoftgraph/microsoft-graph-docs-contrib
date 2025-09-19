@@ -45,11 +45,11 @@ PATCH /security/cases/ediscoveryCases/{ediscoveryCaseId}/settings
 
 |Property|Type|Description|
 |:---|:---|:---|
-|redundancyDetection|[microsoft.graph.security.redundancyDetectionSettings](../resources/security-redundancydetectionsettings.md)|Redundancy (email threading and near duplicate detection) settings for an eDiscovery case. Optional.|
-|topicModeling|[microsoft.graph.security.topicModelingSettings](../resources/security-topicmodelingsettings.md)|Topic modeling (Themes) settings for an eDiscovery case. Optional.|
+|caseType|[microsoft.graph.security.caseType](../resources/security-ediscoverycasesettings.md#casetype-values)|The type of the eDiscovery case. Possible values are: `standard`, `premium`, `unknownFutureValue`.|
 |ocr|[microsoft.graph.security.ocrSettings](../resources/security-ocrsettings.md)|The OCR (Optical Character Recognition) settings for the eDiscovery case. Optional.|
-
-
+|redundancyDetection|[microsoft.graph.security.redundancyDetectionSettings](../resources/security-redundancydetectionsettings.md)|Redundancy (email threading and near duplicate detection) settings for an eDiscovery case. Optional.|
+|reviewSetSettings|[microsoft.graph.security.reviewSetSettings](../resources/security-ediscoverycasesettings.md#reviewsetsettings-values)|The settings of the review set for the case. Possible values are: `none`, `disableGrouping`, `unknownFutureValue`.|
+|topicModeling|[microsoft.graph.security.topicModelingSettings](../resources/security-topicmodelingsettings.md)|Topic modeling (Themes) settings for an eDiscovery case. Optional.|
 
 ## Response
 
@@ -67,29 +67,35 @@ The following example shows a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/security/cases/ediscoveryCases/{ediscoveryCaseId}/settings
+PATCH https://graph.microsoft.com/beta/security/cases/ediscoveryCases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/settings
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.security.ediscoveryCaseSettings",
-  "redundancyDetection": {
-    "@odata.type": "microsoft.graph.security.redundancyDetectionSettings"
-  },
-  "topicModeling": {
-    "@odata.type": "microsoft.graph.security.topicModelingSettings"
-  },
-  "ocr": {
-    "@odata.type": "microsoft.graph.security.ocrSettings"
-  }
+    "@odata.type": "https://graph.microsoft.com/beta/$metadata#security/cases/ediscoveryCases('b0073e4e-4184-41c6-9eb7-8c8cc3e2288b')/settings/$entity",
+    "redundancyDetection": {
+        "isEnabled": true,
+        "similarityThreshold": 65,
+        "minWords": 10,
+        "maxWords": 500000
+    },
+    "topicModeling": {
+        "isEnabled": false,
+        "ignoreNumbers": true,
+        "topicCount": 100,
+        "dynamicallyAdjustTopicCount": true
+    },
+    "ocr": {
+        "isEnabled": false,
+        "maxImageSize": 24576,
+        "timeout": "PT1M"
+    },
+    "caseType": "standard",
+    "reviewSetSettings": "disableGrouping"
 }
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-ediscoverycasesettings-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/update-ediscoverycasesettings-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

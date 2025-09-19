@@ -91,10 +91,6 @@ Content-length: 445
 [!INCLUDE [sample-code](../includes/snippets/csharp/intune-apps-manageddevicemobileappconfigurationdevicestatus-update-update-manageddevicemobileappconfigurationdevicestatus-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/intune-apps-manageddevicemobileappconfigurationdevicestatus-update-update-manageddevicemobileappconfigurationdevicestatus-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/intune-apps-manageddevicemobileappconfigurationdevicestatus-update-update-manageddevicemobileappconfigurationdevicestatus-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

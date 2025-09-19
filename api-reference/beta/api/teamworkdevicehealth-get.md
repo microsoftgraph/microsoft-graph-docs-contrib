@@ -11,6 +11,8 @@ ms.date: 04/04/2024
 # Get teamworkDeviceHealth
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-deprecation-disclaimer](../../includes/beta-deprecation-disclaimer.md)]
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get the [health](../resources/teamworkdevicehealth.md) details of a Microsoft Teams-enabled [device](../resources/teamworkdevice.md). Device health is calculated based on the device configuration and other device parameters.
@@ -68,10 +70,6 @@ GET https://graph.microsoft.com/beta/teamwork/devices/d8214fe3-4fe3-d821-e34f-21
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-teamworkdevicehealth-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-teamworkdevicehealth-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

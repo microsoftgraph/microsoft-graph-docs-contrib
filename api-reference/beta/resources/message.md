@@ -22,7 +22,7 @@ This resource supports:
 
 - Adding your own data as custom Internet message headers. Add custom headers only when creating a message, and name them starting with "x-". After the message is sent, you can't modify the headers. To get the headers of a message, apply the `$select` query parameter in a [get message](../api/message-get.md) operation.
 - Adding your own data as custom properties as [extensions](/graph/extensibility-overview).
-- Subscribing to [change notifications](/graph/webhooks).
+- Subscribing to [change notifications](/graph/change-notifications-overview).
 - Using [delta query](/graph/delta-query-overview) to track incremental additions, deletions, and updates,
 by providing a [delta](../api/message-delta.md) function.
 
@@ -41,8 +41,6 @@ by providing a [delta](../api/message-delta.md) function.
 |[Create draft to reply-all](../api/message-createreplyall.md)|[Message](message.md)|Create a draft of a reply-all message to include a comment or update any message properties, all in one **createReplyAll** call. You can then [update](../api/message-update.md) or [send](../api/message-send.md) the draft.|
 |[Get message delta](../api/message-delta.md)|[message](message.md) collection| Get a set of messages that were added, deleted, or updated in a specified folder.|
 |[Forward message](../api/message-forward.md)|None|Forward a message, add a comment or modify any updateable properties all in one **forward** call. The message is then saved in the Sent Items folder.|
-|[Mark as junk](../api/message-markasjunk.md)|[message](../resources/message.md)|Mark a [message](../resources/message.md) as junk. This API adds the sender to the list of blocked senders and moves the message to the **Junk Email** folder, when **moveToJunk** is `true`.|
-|[Mark as not junk](../api/message-markasnotjunk.md)|[message](../resources/message.md)|Mark a [message](../resources/message.md) as not junk. This API removes the sender from the list of blocked senders and moves the message to the **Inbox** folder, when **moveToInbox** is `true`.|
 |[Move message](../api/message-move.md)|[Message](message.md)|Move the message to a folder. This API creates a new copy of the message in the destination folder.|
 |[Reply to message](../api/message-reply.md)|None|Reply to the sender of a message, add a comment or modify any updateable properties all in one **reply** call. The message is then saved in the Sent Items folder.|
 |[Reply-all to message](../api/message-replyall.md)|None|Reply to all the recipients of a message by specifying a comment and modifying any updateable properties for the reply, all by using the **replyAll** method. The message is then saved in the Sent Items folder.|
@@ -50,6 +48,9 @@ by providing a [delta](../api/message-delta.md) function.
 |[Recall message](../api/message-recall.md)|[message](message.md)|Recall a message in the specified user's mailbox Sent Items folder.|
 |[Unsubscribe](../api/message-unsubscribe.md)|None|Send a message using the data and address specified in the first mailto command in the List-Unsubscribe header.|
 |[Permanently delete](../api/message-permanentdelete.md)|None|Permanently delete a message and place it in the Purges folder in the Recoverable Items folder in the user's mailbox.|
+|[Report message](../api/message-reportmessage.md)|[message](../resources/message.md)|Report a [message](../resources/message.md) as junk, phishing, or not junk, which improves mail filtering.|
+|[Mark as junk (deprecated)](../api/message-markasjunk.md)|[message](../resources/message.md)|Mark a [message](../resources/message.md) as junk. This API adds the sender to the list of blocked senders and moves the message to the **Junk Email** folder, when **moveToJunk** is `true`. This API is deprecated and will stop returning data on December 30, 2025. Going forward use the [reportMessage](../api/message-reportmessage.md) API.|
+|[Mark as not junk (deprecated)](../api/message-markasnotjunk.md)|[message](../resources/message.md)|Mark a [message](../resources/message.md) as not junk. This API removes the sender from the list of blocked senders and moves the message to the **Inbox** folder, when **moveToInbox** is `true`. This API is deprecated and will stop returning data on December 30, 2025. Going forward use the [reportMessage](../api/message-reportmessage.md) API.|
 |**Attachments**| | |
 |[List attachments](../api/message-list-attachments.md) |[Attachment](attachment.md) collection| Get all attachments on a message.|
 |[Add attachment](../api/message-post-attachments.md) |[Attachment](attachment.md)| Add a new attachment to a message by posting to the attachments collection.|

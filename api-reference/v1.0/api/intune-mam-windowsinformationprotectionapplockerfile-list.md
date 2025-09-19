@@ -66,10 +66,6 @@ GET https://graph.microsoft.com/v1.0/deviceAppManagement/windowsInformationProte
 [!INCLUDE [sample-code](../includes/snippets/csharp/intune-mam-windowsinformationprotectionapplockerfile-list-list-windowsinformationprotectionapplockerfiles-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/intune-mam-windowsinformationprotectionapplockerfile-list-list-windowsinformationprotectionapplockerfiles-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/intune-mam-windowsinformationprotectionapplockerfile-list-list-windowsinformationprotectionapplockerfiles-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

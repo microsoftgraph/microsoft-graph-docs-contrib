@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Contains information about a meeting, including the URL used to join a meeting, the attendees list, and the description.
 
-This resource supports subscribing to [change notifications](/graph/webhooks). For more information, see [subscribe to online meetings](/graph/changenotifications-for-onlinemeeting).
+This resource supports subscribing to [change notifications](/graph/change-notifications-overview). For more information, see [subscribe to online meetings](/graph/changenotifications-for-onlinemeeting).
 
 Inherits from [onlineMeetingBase](../resources/onlinemeetingbase.md).
 
@@ -33,14 +33,13 @@ Inherits from [onlineMeetingBase](../resources/onlinemeetingbase.md).
 | [Update](../api/onlinemeeting-update.md) | [onlineMeeting](onlinemeeting.md) | Update the properties of an **onlineMeeting** object. |
 | [Delete](../api/onlinemeeting-delete.md) | None | Delete an **onlineMeeting** object. |
 | [Create or get](../api/onlinemeeting-createorget.md) | [onlineMeeting](onlinemeeting.md) | Create an online meeting with a custom, external ID. If the meeting already exists, retrieve its properties. |
-| [List AI insights](../api/onlinemeeting-list-aiinsights.md) | [callAiInsight](callaiinsight.md) collection | Retrieve the list of [callAiInsight](../resources/callaiinsight.md) objects associated with an [onlineMeeting](../resources/onlinemeeting.md). |
 | [List recordings](../api/onlinemeeting-list-recordings.md) | [callRecording](callrecording.md) collection | Retrieve the list of [callRecording](../resources/callrecording.md) objects associated with an [onlineMeeting](../resources/onlinemeeting.md). |
 | [List transcripts](../api/onlinemeeting-list-transcripts.md) | [callTranscript](calltranscript.md) collection | Retrieve the list of transcripts of an **onlineMeeting**. |
 
 > [!NOTE]
 >
 > - A bearer token is required for the `Authorization` header for all the methods listed in the previous table. For details about how to get the `token` for the `Authorization` header, see [Get access on behalf of a user](/graph/auth-v2-user?tabs=http#3-request-an-access-token).
-> - The expiry time for online meetings is set to 60 days after the meeting's start or end time. If the meeting is updated or activated before it expires, the expiry time will be extended by another 60 days.
+> - The expiry time for online meetings is set to 60 days after the meeting's start or end time. If the meeting is updated or activated before it expires, the expiry time is extended by another 60 days.
 
 ## Properties
 
@@ -66,7 +65,7 @@ Inherits from [onlineMeetingBase](../resources/onlinemeetingbase.md).
 | chatRestrictions      | [chatRestrictions](../resources/chatrestrictions.md) | Specifies the configuration settings for meeting chat restrictions. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
 | creationDateTime      | DateTime | The meeting creation time in UTC. Read-only.     |
 | endDateTime           | DateTime | The meeting end time in UTC. Required when you create an online meeting. |
-| externalId            | String | The external ID. A custom ID. Optional.      |
+| externalId            | String | The external ID that is a custom identifier. Optional. |
 | id | String | The default ID associated with the online meeting. Read-only. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md).    |
 | isEndToEndEncryptionEnabled | Boolean | Indicates whether end-to-end encryption (E2EE) is enabled for the online meeting. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
 | isEntryExitAnnounced  | Boolean | Indicates whether to announce when callers join or leave. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
@@ -125,7 +124,7 @@ Inherits from [onlineMeetingBase](../resources/onlinemeetingbase.md).
 | Value              | Description                                                   |
 | ------------------ | ------------------------------------------------------------- |
 | everyone           | Everyone is a presenter. Default.                             |
-| organization       | Everyone in organizer’s organization is a presenter.          |
+| organization       | Everyone in organizer's organization is a presenter.          |
 | roleIsPresenter    | Only the participants whose role is presenter are presenters. |
 | organizer          | Only the organizer  is a presenter.                           |
 | unknownFutureValue | Evolvable enumeration sentinel value. Don't use.              |
@@ -138,7 +137,7 @@ Inherits from [onlineMeetingBase](../resources/onlinemeetingbase.md).
 
 | Relationship | Type | Description |
 | ------------ | ---- | ----------- |
-| aiInsights | [callAiInsight](callaiinsight.md) collection | The AI insights generated for an online meeting. Read-only. |
+| aiInsights | [callAiInsight](/microsoft-365-copilot/extensibility/api/ai-services/meeting-insights/resources/callaiinsight) collection | The AI insights generated for an online meeting. Read-only. |
 | attendanceReports | [meetingAttendanceReport](meetingattendancereport.md) collection | The attendance reports of an online meeting. Read-only. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
 | recordings | [callRecording](callrecording.md) collection | The recordings of an online meeting. Read-only. |
 | transcripts | [callTranscript](calltranscript.md) collection | The transcripts of an online meeting. Read-only. |
@@ -158,7 +157,7 @@ The following JSON representation shows the resource type.
   "blockType": "resource",
   "keyProperty": "id",
   "optionalProperties": [
-	"externalId"
+    "externalId"
   ],
   "@odata.type": "microsoft.graph.onlineMeeting"
 }-->
@@ -184,6 +183,7 @@ The following JSON representation shows the resource type.
   "chatRestrictions":{"@odata.type": "microsoft.graph.chatRestrictions"},
   "creationDateTime": "String (timestamp)",
   "endDateTime": "String (timestamp)",
+  "externalId": "String",
   "id": "String (identifier)",
   "isEndToEndEncryptionEnabled": "Boolean",
   "isEntryExitAnnounced": "Boolean",
@@ -215,7 +215,9 @@ The following JSON representation shows the resource type.
       Uri path requires navigating into unknown object hierarchy: missing property 'registration' on 'onlineMeeting'. Possible issues:
      1) Doc bug where 'registration' isn't defined on the resource.
      2) Doc bug where 'registration' is an example key and should instead be replaced with a placeholder like {item-id} or declared in the sampleKeys annotation.
-     3) Doc bug where 'onlineMeeting' is supposed to be an entity type, but is being treated as a complex because it (and its ancestors) are missing the keyProperty annotation."
+     3) Doc bug where 'onlineMeeting' is supposed to be an entity type, but is being treated as a complex because it (and its ancestors) are missing the keyProperty annotation.",
+    "Error: microsoft.graph.onlineMeeting/aiInsights:
+      Referenced type microsoft.graph.callAiInsight is not defined in the doc set! Potential suggestion: microsoft.graph.call"
   ]
 }
 -->

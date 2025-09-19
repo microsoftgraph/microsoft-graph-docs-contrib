@@ -128,14 +128,16 @@ items:
     href: ../../api/educationassignment-delete-rubric.md
   - name: Get delta
     href: ../../api/educationassignment-delta.md
-  - name: Add educationGradingCategory
+  - name: Add grading category
     href: ../../api/educationassignment-post-gradingcategory.md
-  - name: Remove educationGradingCategory
+  - name: Remove grading category
     href: ../../api/educationassignment-delete-gradingcategory.md
   - name: Activate assignment
     href: ../../api/educationassignment-activate.md
   - name: Deactivate assignment
     href: ../../api/educationassignment-deactivate.md
+  - name: Add grading scheme
+    href: ../../api/educationassignment-put-gradingscheme.md
 - name: Assignment defaults
   items:
   - name: Assignment defaults
@@ -160,8 +162,10 @@ items:
     href: ../../resources/educationassignmentsettings.md
   - name: Get
     href: ../../api/educationassignmentsettings-get.md
-  - name: Update grading scheme
+  - name: Update
     href: ../../api/educationassignmentsettings-update.md
+  - name: Add default grading scheme
+    href: ../../api/educationassignmentsettings-put-defaultgradingscheme.md
 - name: Category
   items:
   - name: Category
@@ -198,20 +202,20 @@ items:
     href: ../../api/educationassignment-delete-gradingcategory.md
   - name: Update
     href: ../../api/educationgradingcategory-update.md
-- name: Grading schema
+- name: Grading scheme
   items:
-  - name: Grading schema
+  - name: Grading scheme
     href: ../../resources/educationgradingscheme.md
-  - name: List
-    href: ../../api/educationassignmentsettings-get.md
   - name: Create
-    href: ../../api/educationassignment-post-gradingscheme.md
+    href: ../../api/educationassignmentsettings-post-gradingschemes.md
   - name: Get
     href: ../../api/educationgradingscheme-get.md
   - name: Update
     href: ../../api/educationgradingscheme-update.md
   - name: Delete
     href: ../../api/educationgradingscheme-delete.md
+  - name: Add grading scheme
+    href: ../../api/educationassignment-put-gradingscheme.md
 - name: Module
   items:
   - name: Module
@@ -318,14 +322,20 @@ items:
   items:
   - name: Reading assignment submission
     href: ../../resources/readingassignmentsubmission.md
-  - name: Get
-    href: ../../api/readingassignmentsubmission-get.md
+  - name: List
+    href: ../../api/reportsroot-list-readingassignmentsubmissions.md
+- name: Reading coach passage
+  items:
+  - name: Reading coach passage
+    href: ../../resources/readingcoachpassage.md
+  - name: List
+    href: ../../api/reportsroot-list-readingcoachpassages.md
 - name: Reflect check-in response
   items:
   - name: Reflect check-in response
     href: ../../resources/reflectcheckinresponse.md
-  - name: Get
-    href: ../../api/reflectcheckinresponse-get.md
+  - name: List
+    href: ../../api/reportsroot-list-reflectcheckinresponses.md
 - name: Related contact
   items:
   - name: Related contact

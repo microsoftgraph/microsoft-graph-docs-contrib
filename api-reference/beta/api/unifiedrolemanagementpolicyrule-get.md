@@ -95,10 +95,6 @@ GET https://graph.microsoft.com/beta/policies/roleManagementPolicies/DirectoryRo
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-unifiedrolemanagementpolicyrule-directory-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-unifiedrolemanagementpolicyrule-directory-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-unifiedrolemanagementpolicyrule-directory-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -177,10 +173,6 @@ GET https://graph.microsoft.com/beta/policies/roleManagementPolicies/Group_60bba
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-unifiedrolemanagementpolicyrule-azureadgroup-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-unifiedrolemanagementpolicyrule-azureadgroup-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

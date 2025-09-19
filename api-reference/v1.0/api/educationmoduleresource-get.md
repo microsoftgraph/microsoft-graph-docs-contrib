@@ -71,10 +71,6 @@ GET https://graph.microsoft.com/v1.0/education/classes/37d99af7-cfc5-4e3b-8566-f
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-educationmoduleresource-e1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-educationmoduleresource-e1-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-educationmoduleresource-e1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -168,10 +164,6 @@ GET https://graph.microsoft.com/v1.0/education/classes/37d99af7-cfc5-4e3b-8566-f
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-educationlinkresource-from-educationmodule-e2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-educationlinkresource-from-educationmodule-e2-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-educationlinkresource-from-educationmodule-e2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -260,10 +252,6 @@ GET https://graph.microsoft.com/v1.0/education/classes/37d99af7-cfc5-4e3b-8566-f
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-educationexcelresource-from-educationmodule-e3-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-educationexcelresource-from-educationmodule-e3-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -356,10 +344,6 @@ GET https://graph.microsoft.com/v1.0/education/classes/37d99af7-cfc5-4e3b-8566-f
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-educationpowerpointresource-from-educationmodule-e4-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-educationpowerpointresource-from-educationmodule-e4-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-educationpowerpointresource-from-educationmodule-e4-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -448,10 +432,6 @@ GET https://graph.microsoft.com/v1.0/education/classes/37d99af7-cfc5-4e3b-8566-f
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-educationfileresource-from-educationmodule-e5-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-educationfileresource-from-educationmodule-e5-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -544,10 +524,6 @@ GET https://graph.microsoft.com/v1.0/education/classes/37d99af7-cfc5-4e3b-8566-f
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-educationmediaresource-from-educationmodule-e6-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-educationmediaresource-from-educationmodule-e6-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-educationmediaresource-from-educationmodule-e6-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -638,10 +614,6 @@ GET https://graph.microsoft.com/v1.0/education/classes/37d99af7-cfc5-4e3b-8566-f
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-educationchannelresource-from-educationmodule-e6-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-educationchannelresource-from-educationmodule-e6-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-educationchannelresource-from-educationmodule-e6-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -730,10 +702,6 @@ GET https://graph.microsoft.com/v1.0/education/classes/37d99af7-cfc5-4e3b-8566-f
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-educationlinkedassignmentresource-from-educationmodule-e6-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-educationlinkedassignmentresource-from-educationmodule-e6-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

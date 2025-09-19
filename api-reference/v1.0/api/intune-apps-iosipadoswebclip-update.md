@@ -109,10 +109,6 @@ Content-length: 655
 [!INCLUDE [sample-code](../includes/snippets/csharp/intune-apps-iosipadoswebclip-update-update-iosipadoswebclip-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/intune-apps-iosipadoswebclip-update-update-iosipadoswebclip-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/intune-apps-iosipadoswebclip-update-update-iosipadoswebclip-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

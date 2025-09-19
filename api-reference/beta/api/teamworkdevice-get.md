@@ -11,6 +11,8 @@ ms.date: 04/04/2024
 # Get teamworkDevice
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-deprecation-disclaimer](../../includes/beta-deprecation-disclaimer.md)]
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get the properties of a Microsoft Teams-enabled [device](../resources/teamworkdevice.md). For example, you can use this method to get the device type, hardware detail, activity state, and health status information for a device that's enabled for Teams.
@@ -66,10 +68,6 @@ GET https://graph.microsoft.com/beta/teamwork/devices/0f3ce432-e432-0f3c-32e4-3c
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-teamworkdevice-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-teamworkdevice-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

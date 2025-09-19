@@ -15,6 +15,7 @@ from msgraph_beta.generated.models.custom_metadata_dictionary import CustomMetad
 from msgraph_beta.generated.models.activity_metadata import ActivityMetadata
 from msgraph_beta.generated.models.user_activity_type import UserActivityType
 from msgraph_beta.generated.models.device_metadata import DeviceMetadata
+from msgraph_beta.generated.models.operating_system_specifications import OperatingSystemSpecifications
 from msgraph_beta.generated.models.integrated_application_metadata import IntegratedApplicationMetadata
 from msgraph_beta.generated.models.protected_application_metadata import ProtectedApplicationMetadata
 from msgraph_beta.generated.models.policy_location_url import PolicyLocationUrl
@@ -50,12 +51,10 @@ request_body = ProcessContentPostRequestBody(
 		),
 		device_metadata = DeviceMetadata(
 			device_type = "unmanaged",
-			additional_data = {
-					"operating_system_specifications" : {
-							"operating_system_platform" : "Windows",
-							"operating_system_version" : "11.1",
-					},
-			}
+			operating_system_specifications = OperatingSystemSpecifications(
+				operating_system_platform = "Windows",
+				operating_system_version = "11.1",
+			),
 		),
 		integrated_app_metadata = IntegratedApplicationMetadata(
 			name = "Network Proxy App",

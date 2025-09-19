@@ -29,6 +29,8 @@ previewText := graphmodels.NewItemBody()
 content := "new task created"
 previewText.SetContent(&content) 
 requestBody.SetPreviewText(previewText)
+iconId := "taskCreatedIcon"
+requestBody.SetIconId(&iconId) 
 recipient := graphmodels.NewChatMembersNotificationRecipient()
 chatId := "19:1c3af46e9e0f4a5293343c8813c47619@thread.v2"
 recipient.SetChatId(&chatId) 
@@ -45,10 +47,6 @@ templateParameters := []graphmodels.KeyValuePairable {
 	keyValuePair,
 }
 requestBody.SetTemplateParameters(templateParameters)
-additionalData := map[string]interface{}{
-	"iconId" : "taskCreatedIcon", 
-}
-requestBody.SetAdditionalData(additionalData)
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 graphClient.Chats().ByChatId("chat-id").SendActivityNotification().Post(context.Background(), requestBody, nil)

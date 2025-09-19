@@ -6,6 +6,7 @@ ms.subservice: "reports"
 author: "sarahwxy"
 ms.custom: scenarios:getting-started
 ms.date: 11/07/2024
+ms.topic: concept-article
 ---
 
 # Microsoft Graph reports API overview
