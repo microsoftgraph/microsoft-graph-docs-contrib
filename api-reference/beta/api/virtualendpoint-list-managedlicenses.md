@@ -1,5 +1,5 @@
 ---
-title: "List cloudPcManagedLicense objects"
+title: "List managedLicenses"
 description: "Get a list of the cloudPcManagedLicense objects and their properties."
 author: "Yu-Lan"
 ms.date: 09/04/2025
@@ -8,13 +8,13 @@ ms.subservice: "cloud-pc"
 doc_type: apiPageType
 ---
 
-# List cloudPcManagedLicense objects
+# List managedLicenses
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the cloudPcManagedLicense objects and their properties.
+Get a list of the [cloudPcManagedLicense](../resources/cloudpcmanagedlicense.md) objects and their properties.
 
 ## Permissions
 
