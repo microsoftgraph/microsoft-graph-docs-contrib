@@ -89,18 +89,18 @@ Content-type: application/json
   "value": [
     {
       "id": "c8f7be1e-3e35-4c80-b4f1-7c9ec23bbf77_9b5e1b3d-e4c2-4b8a-8f5b-2a3c9d4e5f6b",
-      "accessPackageResourceRole": {
+      "role": {
         "id": "9b5e1b3d-e4c2-4b8a-8f5b-2a3c9d4e5f6b",
         "displayName": "Member",
         "description": "Member role for the resource",
-        "accessPackageResource": {
+        "resource": {
           "id": "c8f7be1e-3e35-4c80-b4f1-7c9ec23bbf77",
           "displayName": "Marketing Team",
           "description": "Marketing team group resource",
           "resourceType": "AadGroup"
         }
       },
-      "accessPackageResourceScope": {
+      "scope": {
         "id": "a2b3c4d5-e6f7-8a9b-0c1d-2e3f4a5b6c7d",
         "displayName": "Marketing Team",
         "description": "Marketing team scope"
