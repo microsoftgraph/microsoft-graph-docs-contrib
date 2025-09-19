@@ -127,10 +127,6 @@ The following JSON representation shows the resource type.
   "microsoftManagedDesktop": {"@odata.type": "microsoft.graph.microsoftManagedDesktop"},
   "onPremisesConnectionId": "String",
   "provisioningType": "String",
-<<<<<<< HEAD
-  "windowsSetting": {"@odata.type": "microsoft.graph.cloudPcWindowsSetting"},
-  "windowsSettings": {"@odata.type": "microsoft.graph.cloudPcWindowsSettings"}
-=======
   "userExperienceType": "String",
   "windowsSetting": {
     "@odata.type": "microsoft.graph.cloudPcWindowsSetting"
@@ -138,6 +134,5 @@ The following JSON representation shows the resource type.
   "windowsSettings": {
     "@odata.type": "microsoft.graph.cloudPcWindowsSettings"
   }
->>>>>>> origin/main
 }
 ```
