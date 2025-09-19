@@ -43,7 +43,7 @@ The following precedence is used for how session states are aggregated, with "A 
 
 > [!NOTE]
 > 
-> The **presence: setPresence** method doesn't support setting the presence states **Out of office (OOF)** or **In a meeting** directly. These states are automatically managed based on calendar events and mailbox configurations, and attempting to set them via the **presence: setPresence** has no effect.
+> The **setPresence** method doesn't support setting the presence states **Out of office (OOF)** or **In a meeting** directly. These states are automatically managed based on calendar events and mailbox configurations, and attempting to set them via the **setPresence** method has no effect.
 >
 > To reflect **"Out of office"** in presence, use the [events API](/graph/api/resources/event) by setting the **showAs** property of a calendar event to `oof`, or configure the user's autoreply settings using [mailboxSettings](/graph/api/resources/mailboxsettings).
 >
