@@ -58,14 +58,14 @@ If successful, this method returns a `201 Created` response code and a [sharePoi
 
 ### Request
 
-The following example shows a request.
+The following example creates a **sharePointMigrationJob** to be running on the **fileStorageContainer** identified by the container ID `b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z`.
 <!-- {
   "blockType": "request",
   "name": "create_migrationjob_from_filestoragecontainer"
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/storage/fileStorage/containers/{fileStorageContainerId}/migrationJobs
+POST https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/migrationJobs
 Content-Type: application/json
 
 {

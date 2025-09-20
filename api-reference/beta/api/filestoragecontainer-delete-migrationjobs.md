@@ -55,14 +55,16 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Request
 
-The following example shows a request.
+The following example deletes a **sharePointMigrationJob** identified by the ID `7b04bfdd-5f8c-4bd9-97fa
+a166a7922c61` running on the **fileStorageContainer** identified by the container ID `b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z`.
 <!-- {
   "blockType": "request",
   "name": "delete_migrationjob"
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/storage/fileStorage/containers/{fileStorageContainerId}/migrationJobs/{migrationJobId}
+DELETE https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/migrationJobs/7b04bfdd-5f8c-4bd9-97fa
+a166a7922c61
 ```
 
 ### Response

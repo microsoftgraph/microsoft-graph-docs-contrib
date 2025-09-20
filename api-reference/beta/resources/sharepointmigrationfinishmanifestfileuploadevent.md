@@ -1,6 +1,6 @@
 ---
 title: "sharepPointMigrationFinishManifestFileUploadEvent resource type"
-description: "Manifest uploaded status event"
+description: "Represents the manifest uploaded status of a SharePoint migration job."
 author: "wenzhou"
 ms.date: 06/04/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The **sharePointMigrationFinishManifestFileUploadEvent** resource represents the manifest uploaded status of a SharePoint migration job.
+Represents the manifest uploaded status of a SharePoint migration job.
 
 Inherits from [sharePointMigrationEvent](../resources/sharepointmigrationevent.md).
 
@@ -28,7 +28,7 @@ Inherits from [sharePointMigrationEvent](../resources/sharepointmigrationevent.m
 |:---|:---|:---|
 |correlationId|String|The correlation ID of a migration job. Read-only. Only on OneDrive and SharePoint. Inherited from [sharePointMigrationEvent](../resources/sharepointmigrationevent.md).|
 |eventDateTime|DateTimeOffset|The UTC time when job status changes to **FinishManifestFileUpload**. Read-only. Only on OneDrive and SharePoint. Inherited from [sharePointMigrationEvent](../resources/sharepointmigrationevent.md).|
-|id|String|The ID of a **FinishManifestFileUpload** event. Read-only. Only on OneDrive and SharePoint. Inherited from [entity](../resources/entity.md).|
+|id|String|The ID of a **FinishManifestFileUpload** event. Read-only. Only on OneDrive and SharePoint. Inherited from [sharePointMigrationEvent](../resources/sharepointmigrationevent.md).|
 |jobId|String|The unique identifier of a migration job. Read-only. Only on OneDrive and SharePoint. Inherited from [sharePointMigrationEvent](../resources/sharepointmigrationevent.md).|
 |manifestFileName|String|The exported manifest file name. Read-only. Only on OneDrive and SharePoint.|
 

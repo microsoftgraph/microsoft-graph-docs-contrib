@@ -62,7 +62,7 @@ The following example shows a request.
 }
 -->
 ``` http
-POST /storage/fileStorage/containers/{fileStorageContainerId}/provisionMigrationContainers
+POST /storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/provisionMigrationContainers
 ```
 
 ### Response
