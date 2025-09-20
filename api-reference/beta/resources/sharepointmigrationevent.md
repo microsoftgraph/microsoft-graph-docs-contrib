@@ -16,8 +16,15 @@ Namespace: microsoft.graph
 
 Represents the common information of a SharePoint migration event.
 
-The following progress events are inherited from this base event:
-[TODO]
+Base event of the following progress events:
+[sharePointMigrationFinishManifestFileUploadEvent](../resources/sharePointMigrationFinishManifestFileUploadEvent.md)
+[sharePointMigrationJobCancelledEvent](../resources/sharePointMigrationJobCancelledEvent.md)
+[sharePointMigrationJobDeletedEvent](../resources/sharePointMigrationJobDeletedEvent.md)
+[sharePointMigrationJobErrorEvent](../resources/sharePointMigrationJobErrorEvent.md)
+[sharePointMigrationJobPostponedEvent](../resources/sharePointMigrationJobPostponedEvent.md)
+[sharePointMigrationJobProgressEvent](../resources/sharePointMigrationJobProgressEvent.md)
+[sharePointMigrationJobQueuedEvent](../resources/sharePointMigrationJobQueuedEvent.md)
+[sharePointMigrationJobStartEvent](../resources/sharePointMigrationJobStartEvent.md)
 
 Inherits from [entity](../resources/entity.md).
 
