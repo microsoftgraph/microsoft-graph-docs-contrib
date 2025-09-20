@@ -1,6 +1,6 @@
 ---
-title: "Create workbookCommentReply"
-description: "Create a new workbookCommentReply."
+title: "Create workbookComment"
+description: "Create a new workbookComment object."
 ms.localizationpriority: medium
 author: "AmandaHan123"
 ms.subservice: "excel"
@@ -8,11 +8,13 @@ doc_type: "apiPageType"
 ms.date: 09/05/2025
 ---
 
-# Create workbookCommentReply
+# Create workbookComment
 
 Namespace: microsoft.graph
 
-Create a new [workbookCommentReply](../resources/workbookcommentreply.md) object.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Create a new [workbookComment](../resources/workbookcomment.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -20,16 +22,18 @@ Create a new [workbookCommentReply](../resources/workbookcommentreply.md) object
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "permissions", "name": "workbookcomment_post_replies" } -->
-[!INCLUDE [permissions-table](../includes/permissions/workbookcomment-post-replies-permissions.md)]
+<!-- { "blockType": "permissions", "name": "workbookcomment-post-comments" } -->
+[!INCLUDE [permissions-table](../includes/permissions/workbookcomment-post-comments-permissions.md)]
 
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /me/drive/items/{id}/workbook/comments/{id}/replies
-POST /me/drive/root:/{item-path}:/workbook/comments/{id}/replies
+POST /me/drive/items/{id}/workbook/comments
+POST /me/drive/root:/{item-path}:/workbook/comments
+POST /users/{id}/drive/items/{id}/workbook/comments
+POST /users/{id}/drive/root:/{id}:/workbook/comments
 ```
 
 ## Request headers
@@ -41,33 +45,33 @@ POST /me/drive/root:/{item-path}:/workbook/comments/{id}/replies
 
 ## Request body
 
-In the request body, supply a JSON representation of a [workbookCommentReply](../resources/workbookcommentreply.md) object.
+In the request body, supply a JSON representation of a [workbookComment](../resources/workbookcomment.md) object.
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a new [workbookCommentReply](../resources/workbookcommentreply.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a new [workbookComment](../resources/workbookcomment.md) object in the response body.
 
 ## Examples
 
-### Example 1: Create a reply of a plain contentType
+### Example 1: Create a comment of a plain contentType
 
-The following example shows how to create a reply of a `plain` **contentType**.
+The following example shows how to create a comment of a `plain` **contentType**.
 
 #### Request
 The following example shows a request.
-
 <!-- {
   "blockType": "request",
-  "name": "create_workbookcommentreply_from_workbookcomment",
-  "sampleKeys": ["01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN","97A21473-8339-4BF0-BCB6-F55E4909FFB8"]
+  "name": "create_workbookcomment_from_workbook",
+  "sampleKeys": ["01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN"]
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/comments/97A21473-8339-4BF0-BCB6-F55E4909FFB8/replies
+POST https://graph.microsoft.com/beta/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/comments
 Content-Type: application/json
 
 {
-  "content": "This is my reply to the comment.",
+  "cellAddress": "Sheet1!A1",
+  "content": "This is my comment.",
   "contentType": "plain"
 }
 ```
@@ -81,7 +85,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.workbookCommentReply"
+  "@odata.type": "microsoft.graph.workbookComment"
 } -->
 
 ```http
@@ -89,33 +93,34 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "content": "This is my reply to the comment.",
+  "content": "This is my comment.",
   "contentType": "plain",
   "id": "{97A21473-8339-4BF0-BCB6-F55E4909FFB8}",
+  "cellAddress": "Sheet1!A1",
   "richContent": "",
   "mentions": []
 }
 ```
 
-### Example 2: Create a reply of a mention contentType
+### Example 2: Create a comment of a mention contentType
 
-The following example shows how to create a reply of a `mention` **contentType**.
+The following example shows how to create a comment of a `mention` **contentType**.
 
 #### Request
 The following example shows a request.
-
 <!-- {
   "blockType": "request",
-  "name": "create_workbookcommentreply_from_workbookcomment_mention",
-  "sampleKeys": ["01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN","97A21473-8339-4BF0-BCB6-F55E4909FFB8"]
+  "name": "create_workbookcomment_from_workbook_mention",
+  "sampleKeys": ["01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN"]
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/comments/97A21473-8339-4BF0-BCB6-F55E4909FFB8/replies
+POST https://graph.microsoft.com/beta/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/comments
 Content-Type: application/json
 
 {
-  "richContent": "<at id=\"0\">Kate Kristensen</at> - Can you take a look?",
+  "cellAddress": "Sheet1!A1",
+  "richContent": "<at id=\"0\">Kate Kristensen</at> - This is my comment.",
   "mentions": [
     {
       "id": 0,
@@ -136,7 +141,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.workbookCommentReply"
+  "@odata.type": "microsoft.graph.workbookComment"
 } -->
 
 ```http
@@ -144,17 +149,18 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "content": "@Kate Kristensen - Can you take a look?",
+  "content": "@Kate Kristensen - This is my comment.",
   "contentType": "mention",
   "id": "{97A21473-8339-4BF0-BCB6-F55E4909FFB8}",
-  "richContent": "<at id=\"0\">Kate Kristensen</at> - Can you take a look?",
+  "richContent": "<at id=\"0\">Kate Kristensen</at> - This is my comment.",
   "mentions": [
     {
       "id": 0,
       "name": "Kate Kristensen",
       "email": "kakri@contoso.com"
     }
-  ]
+  ],
+  "cellAddress": "Sheet1!A1"
 }
 ```
 
@@ -162,7 +168,7 @@ Content-Type: application/json
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Create workbookCommentReply",
+  "description": "Create workbookComment",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
