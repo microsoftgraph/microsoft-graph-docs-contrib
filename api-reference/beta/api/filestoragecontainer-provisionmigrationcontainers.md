@@ -1,6 +1,6 @@
 ---
 title: "fileStorageContainer: provisionMigrationContainers"
-description: "Provision sharePointMigrationContainerInfo"
+description: "Provision SharePoint-managed Azure blob containers as temporary storage for migration content and metadata."
 author: "wenzhou"
 ms.date: 06/04/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Provision SharePint-managed Azure Blob Containers as temporary storage for migration content and metadata.
+Provision SharePoint-managed Azure blob containers as temporary storage for migration content and metadata.
 
 ## Permissions
 
@@ -49,7 +49,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and [sharePointMigrationContainerInfo](../resources/sharepointmigrationcontainerinfo.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [sharePointMigrationContainerInfo](../resources/sharepointmigrationcontainerinfo.md) object in the response body.
 
 ## Examples
 

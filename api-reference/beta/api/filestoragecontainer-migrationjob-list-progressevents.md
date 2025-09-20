@@ -1,6 +1,6 @@
 ---
-title: "List sharePointMigrationEvent objects"
-description: "Get a list of the sharePointMigrationEvent objects and their properties."
+title: "List progressEvents"
+description: "Get a list of migration events for a particular job in a fileStorageContainer."
 author: "wenzhou"
 ms.date: 06/04/2025
 ms.localizationpriority: medium
@@ -8,13 +8,13 @@ ms.subservice: "onedrive"
 doc_type: apiPageType
 ---
 
-# List sharePointMigrationEvent objects
+# List progressEvents
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the sharePointMigrationEvent objects and their properties. The migration events remain valid for 4 days and can be queried as frequently as needed within validity period.
+Get a list of [migration events](../resources/sharepointmigrationevent.md) for a particular job in a [fileStorageContainer](../resources/filestoragecontainer.md). The migration events remain valid for four days and can be queried as frequently as needed within the validity period.
 
 ## Permissions
 
@@ -39,7 +39,7 @@ GET /storage/fileStorage/containers/{fileStorageContainerId}/migrationJobs/{migr
 
 ## Optional query parameters
 
-This method supports `$skipToken` OData query parameter to help paginate results. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$skipToken` OData query parameter to help paginate results. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 

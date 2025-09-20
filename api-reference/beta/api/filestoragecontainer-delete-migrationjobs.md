@@ -1,6 +1,6 @@
 ---
 title: "Delete sharePointMigrationJob"
-description: "Delete a sharePointMigrationJob object."
+description: "Delete a sharePointMigrationJob object from a fileStorageContainer."
 author: "wenzhou"
 ms.date: 06/04/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a [sharePointMigrationJob](../resources/sharepointmigrationjob.md) object.
+Delete a [sharePointMigrationJob](../resources/sharepointmigrationjob.md) object from a [fileStorageContainer](../resources/filestoragecontainer.md).
 
 ## Permissions
 
