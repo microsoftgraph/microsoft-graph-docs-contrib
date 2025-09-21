@@ -25,11 +25,11 @@ For the list of supported methods, see [sharePointMigrationEvent](../resources/s
 |Property|Type|Description|
 |:---|:---|:---|
 |correlationId|String|The correlation ID of a migration job. Read-only. Only on OneDrive and SharePoint. Inherited from [sharePointMigrationEvent](../resources/sharepointmigrationevent.md).|
-|eventDateTime|DateTimeOffset|The UTC time when job status changes to **JobCancelled**. Read-only. Only on OneDrive and SharePoint. Inherited from [sharePointMigrationEvent](../resources/sharepointmigrationevent.md).|
-|id|String|The ID of a **JobCancelled** event. Read-only. Only on OneDrive and SharePoint. Inherited from [sharePointMigrationEvent](../resources/sharepointmigrationevent.md).|
-|isCancelledByUser|Boolean|True when a user cancels the job, and False otherwise. Read-only. Only on OneDrive and SharePoint.|
+|eventDateTime|DateTimeOffset|The date and time when the job status changes to **JobCancelled**. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only. Only on OneDrive and SharePoint. Inherited from [sharePointMigrationEvent](../resources/sharepointmigrationevent.md).|
+|id|String|The unique identifier of a **JobCancelled** event. Read-only. Only on OneDrive and SharePoint. Inherited from [sharePointMigrationEvent](../resources/sharepointmigrationevent.md).|
+|isCancelledByUser|Boolean|`True` when a user cancels the job; otherwise, `false`. Read-only. Only on OneDrive and SharePoint.|
 |jobId|String|The unique identifier of a migration job. Read-only. Only on OneDrive and SharePoint. Inherited from [sharePointMigrationEvent](../resources/sharepointmigrationevent.md).|
-|totalRetryCount|Int32|Current job retry count. Read-only. Only on OneDrive and SharePoint.|
+|totalRetryCount|Int32|The current retry count of the job. Read-only. Only on OneDrive and SharePoint.|
 
 ## Relationships
 None.
