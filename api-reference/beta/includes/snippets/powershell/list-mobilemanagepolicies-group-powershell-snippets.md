@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
-Get-MgBetaPolicyMobileAppManagementPolicyIncludedGroup -MobilityManagementPolicyId $mobilityManagementPolicyId
+Get-MgBetaPolicyMobileAppManagementPolicyIncludedGroup -MobileAppManagementPolicyId $mobileAppManagementPolicyId
 
 ```

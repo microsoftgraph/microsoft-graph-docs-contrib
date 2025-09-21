@@ -24,9 +24,7 @@ request_body = AnswerPostRequestBody(
 		odata_type = "#microsoft.graph.incomingCallOptions",
 		is_content_sharing_notification_enabled = True,
 		is_delta_roster_enabled = True,
-		additional_data = {
-				"is_interactive_roster_enabled" : True,
-		}
+		is_interactive_roster_enabled = True,
 	),
 	participant_capacity = 200,
 )

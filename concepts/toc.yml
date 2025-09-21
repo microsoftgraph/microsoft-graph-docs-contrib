@@ -129,7 +129,7 @@ items:
         href: /powershell/microsoftgraph/navigating?toc=/graph/toc.json
       - name: App-only authentication
         href: /powershell/microsoftgraph/app-only?toc=/graph/toc.json
-  - name: Use the toolkit
+  - name: Use the toolkit (deprecated)
     items:
     - name: Overview
       href: toolkit/overview.md
@@ -500,7 +500,7 @@ items:
         href: embed-teams-app-in-assignment.md
       - name: Work with grading categories
         href: work-with-grading-categories.md
-      - name: Create assignment with Speaker Progress resource (preview)
+      - name: Create assignment with Speaker Progress resource
         href: create-assignment-with-speaker-progress-resource.md
   - name: External data connections
     items:
@@ -1085,8 +1085,6 @@ items:
       href: change-notifications-with-resource-data.md
     - name: Notifications for cloud printing
       href: universal-print-webhook-notifications.md
-    - name: Notifications for Copilot AI interactions
-      href: aiinteraction-changenotifications-overview.md
     - name: Notifications for Microsoft Teams resources
       items:
       - name: Notification types and payloads

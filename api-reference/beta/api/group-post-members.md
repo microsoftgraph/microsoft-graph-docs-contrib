@@ -6,7 +6,7 @@ author: "yuhko-msft"
 ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
 ms.subservice: "entra-groups"
 doc_type: apiPageType
-ms.date: 11/30/2024
+ms.date: 09/09/2025
 ---
 
 # Add members
@@ -27,7 +27,7 @@ The following table shows the least privileged permission that's required by eac
 
 | Supported resource                        | Delegated (work or school account)                      | Delegated (personal Microsoft account) | Application                                             |
 |:------------------------------------------|:--------------------------------------------------------|:---------------------------------------|:--------------------------------------------------------|
-| [device](../resources/device.md)          | GroupMember.ReadWrite.All and Device.ReadWrite.All      | Not supported.                         | GroupMember.ReadWrite.All and Device.ReadWrite.All      |
+| [device](../resources/device.md)          | GroupMember.ReadWrite.All and Device.Read.All           | Not supported.                         | GroupMember.ReadWrite.All and Device.ReadWrite.All      |
 | [group](../resources/group.md)            | GroupMember.ReadWrite.All                               | Not supported.                         | GroupMember.ReadWrite.All       |
 | [orgContact](../resources/device.md)      | GroupMember.ReadWrite.All and OrgContact.Read.All       | Not supported.                         | GroupMember.ReadWrite.All and OrgContact.Read.All       |
 | [servicePrincipal](../resources/group.md) | GroupMember.ReadWrite.All and Application.ReadWrite.All | Not supported.                         | GroupMember.ReadWrite.All and Application.ReadWrite.All |

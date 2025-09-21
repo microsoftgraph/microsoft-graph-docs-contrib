@@ -156,6 +156,8 @@ items:
     href: ../../api/workbook-list-comments.md
   - name: Get
     href: ../../api/workbookcomment-get.md
+  - name: Create
+    href: ../../api/workbookcomment-post-comments.md
 - name: Comment reply
   items:
   - name: Comment reply
@@ -518,6 +520,8 @@ items:
     href: ../../resources/workbookchartseriesformat.md
   - name: Workbook chart title format
     href: ../../resources/workbookcharttitleformat.md
+  - name: Workbook comment mention
+    href: ../../resources/workbookcommentmention.md
   - name: Workbook document task schedule
     href: ../../resources/workbookdocumenttaskschedule.md
   - name: Workbook email identity

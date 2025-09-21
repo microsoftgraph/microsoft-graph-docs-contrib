@@ -1,7 +1,7 @@
 ---
 title: "passwordCredentialConfiguration resource type"
 description: "Password credential configuration complex type to configure password credential restriction, maxLifetime, and enforcement date"
-author: "madansr7"
+author: "Jackson-Woods"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType

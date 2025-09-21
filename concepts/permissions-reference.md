@@ -7,7 +7,7 @@ ms.localizationpriority: high
 ms.topic: reference
 ms.subservice: entra-applications
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.date: 08/25/2025
+ms.date: 09/15/2025
 #Customer intent: As a developer, I want to learn more about the permissions available in Microsoft Graph, so that I understand the impact of granting specific permissions to my app.
 ---
 
@@ -2718,6 +2718,17 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | DisplayText | Read and write all Viva Engage conversations | - |
 | Description | Allows the app to create Viva Engage conversations without a signed-in user. | - |
 | AdminConsentRequired | Yes | - |
+
+---
+
+### EngagementConversation.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 2c495153-cd0e-41b4-9980-3bcecf1ca22f | c55541d9-2cdd-4fad-8ead-0c08fae5b0c8 |
+| DisplayText | Read all Viva Engage conversations | Read all Viva Engage conversations |
+| Description | Allows the app to list Viva Engage conversations, and to read their properties without a signed-in user. | Allows the app to read Viva Engage conversations, and to read their properties on behalf of the signed-in user. |
+| AdminConsentRequired | Yes | Yes |
 
 ---
 
