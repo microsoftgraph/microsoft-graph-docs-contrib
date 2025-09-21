@@ -22,10 +22,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "filestoragecontainer-delete-migrationjobs-permissions"
+  "name": "sharepointmigrationjob_delete"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/filestoragecontainer-delete-migrationjobs-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/sharepointmigrationjob-delete-permissions.md)]
 
 ## HTTP request
 
