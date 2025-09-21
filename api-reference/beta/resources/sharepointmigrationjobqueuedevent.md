@@ -6,7 +6,7 @@ ms.date: 06/04/2025
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
 doc_type: resourcePageType
-toc.title: SharePoint migration queued event
+toc.title: SharePoint migration job queued event
 ---
 
 # sharePointMigrationJobQueuedEvent resource type
