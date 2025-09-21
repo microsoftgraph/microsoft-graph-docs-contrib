@@ -1,6 +1,6 @@
 ---
 title: "sharePointMigrationJobDeletedEvent resource type"
-description: "Migration deleted status event"
+description: "Represents the deleted status of a SharePoint migration job."
 author: "wenzhou"
 ms.date: 06/04/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The **sharePointMigrationJobDeletedEvent** resource represents the deleted status of a SharePoint migration job.
+Represents the deleted status of a SharePoint migration job.
 
 Inherits from [sharePointMigrationEvent](../resources/sharepointmigrationevent.md).
 
@@ -27,8 +27,8 @@ Inherits from [sharePointMigrationEvent](../resources/sharepointmigrationevent.m
 |Property|Type|Description|
 |:---|:---|:---|
 |correlationId|String|The correlation ID of a migration job. Read-only. Only on OneDrive and SharePoint. Inherited from [sharePointMigrationEvent](../resources/sharepointmigrationevent.md).|
-|eventDateTime|DateTimeOffset|The UTC time when job status changes to **JobDeleted**. Read-only. Only on OneDrive and SharePoint.Inherited from [sharePointMigrationEvent](../resources/sharepointmigrationevent.md).|
-|id|String|The ID of a **JobDeleted** event. Read-only. Only on OneDrive and SharePoint. Inherited from [entity](../resources/entity.md).|
+|eventDateTime|DateTimeOffset|The UTC time when job status changes to **JobDeleted**. Read-only. Only on OneDrive and SharePoint. Inherited from [sharePointMigrationEvent](../resources/sharepointmigrationevent.md).|
+|id|String|The ID of a **JobDeleted** event. Read-only. Only on OneDrive and SharePoint. Inherited from [sharePointMigrationEvent](../resources/sharepointmigrationevent.md).|
 |jobId|String|The unique identifier of a migration job. Read-only. Only on OneDrive and SharePoint. Inherited from [sharePointMigrationEvent](../resources/sharepointmigrationevent.md).|
 
 ## Relationships
@@ -47,9 +47,9 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.sharePointMigrationJobDeletedEvent",
-  "id": "String (identifier)",
-  "jobId": "String",
+  "correlationId": "String",
   "eventDateTime": "String (timestamp)",
-  "correlationId": "String"
+  "id": "String (identifier)",
+  "jobId": "String"
 }
 ```
