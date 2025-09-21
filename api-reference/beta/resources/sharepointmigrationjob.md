@@ -58,3 +58,7 @@ The following JSON representation shows the resource type.
   }
 }
 ```
+
+## Related content
+
+For information about the status or progress of a SharePoint migration job, see [sharePointMigrationEvent](../resources/sharepointmigrationevent.md).
