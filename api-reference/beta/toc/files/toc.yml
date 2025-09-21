@@ -320,9 +320,9 @@ items:
     href: ../../resources/sharepointmigrationevent.md
   - name: List progress events
     href: ../../api/sharepointmigrationjob-list-progressevents.md
-- name: Share point migration job
+- name: SharePoint migration job
   items:
-  - name: Share point migration job
+  - name: SharePoint migration job
     href: ../../resources/sharepointmigrationjob.md
   - name: Create
     href: ../../api/filestoragecontainer-post-migrationjobs.md
@@ -332,19 +332,19 @@ items:
     href: ../../api/sharepointmigrationjob-list-progressevents.md
   - name: Provision migration containers
     href: ../../api/filestoragecontainer-provisionmigrationcontainers.md
-- name: Share point migration job cancelled event
+- name: SharePoint migration job cancelled event
   href: ../../resources/sharepointmigrationjobcancelledevent.md
-- name: Share point migration job deleted event
+- name: SharePoint migration job deleted event
   href: ../../resources/sharepointmigrationjobdeletedevent.md
-- name: Share point migration job error event
+- name: SharePoint migration job error event
   href: ../../resources/sharepointmigrationjoberrorevent.md
-- name: Share point migration job postponed event
+- name: SharePoint migration job postponed event
   href: ../../resources/sharepointmigrationjobpostponedevent.md
-- name: Share point migration job progress event
+- name: SharePoint migration job progress event
   href: ../../resources/sharepointmigrationjobprogressevent.md
-- name: Share point migration job queued event
+- name: SharePoint migration job queued event
   href: ../../resources/sharepointmigrationjobqueuedevent.md
-- name: Share point migration job start event
+- name: SharePoint migration job start event
   href: ../../resources/sharepointmigrationjobstartevent.md
 - name: Complex types
   items:
@@ -354,5 +354,5 @@ items:
     href: ../../resources/filestoragecontainertyperegistrationsettings.md
   - name: File storage container type settings
     href: ../../resources/filestoragecontainertypesettings.md
-  - name: Share point migration container info
+  - name: SharePoint migration container info
     href: ../../resources/sharepointmigrationcontainerinfo.md
