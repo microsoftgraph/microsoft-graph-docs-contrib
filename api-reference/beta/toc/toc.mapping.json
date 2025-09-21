@@ -1004,12 +1004,21 @@
         "sharedDriveItem",
         "sharePointGroup",
         "sharePointGroupMember",
+        "sharePointMigrationEvent",
+        "sharePointMigrationFinishManifestFileUploadEvent",
         "sharePointMigrationJob",
-        "sharePointMigrationEvent"
+        "sharePointMigrationJobCancelledEvent",
+        "sharePointMigrationJobDeletedEvent",
+        "sharePointMigrationJobErrorEvent",
+        "sharePointMigrationJobPostponedEvent",
+        "sharePointMigrationJobProgressEvent",
+        "sharePointMigrationJobQueuedEvent",
+        "sharePointMigrationJobStartEvent"
       ],
       "complexTypes": [
         "fileStorageContainerTypeRegistrationSettings",
-        "fileStorageContainerTypeSettings"
+        "fileStorageContainerTypeSettings",
+        "sharePointMigrationContainerInfo"
       ]
     },
     {
