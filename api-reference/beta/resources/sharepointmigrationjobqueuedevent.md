@@ -1,6 +1,6 @@
 ---
 title: "sharePointMigrationJobQueuedEvent resource type"
-description: "Migration queued status event"
+description: "Represents the queued status of a migration job."
 author: "wenzhou"
 ms.date: 06/04/2025
 ms.localizationpriority: medium
@@ -14,21 +14,19 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The **sharePointMigrationJobQueuedEvent** resource represents the queued status of a migration job.
+Represents the queued status of a migration job.
 
 Inherits from [sharePointMigrationEvent](../resources/sharepointmigrationevent.md).
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List progressEvents](../api/filestoragecontainer-migrationjob-list-progressevents.md)|[sharePointMigrationEvent](../resources/sharepointmigrationevent.md) collection|Get a list of the migrationEvent objects and their properties.|
+For the list of supported methods, see [sharePointMigrationEvent](../resources/sharepointmigrationevent.md).
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |correlationId|String|The correlation ID of a migration job. Read-only. Only on OneDrive and SharePoint. Inherited from [sharePointMigrationEvent](../resources/sharepointmigrationevent.md).|
-|eventDateTime|DateTimeOffset|The UTC time when job status changes to **JobQueued**. Read-only. Only on OneDrive and SharePoint. Inherited from [sharePointMigrationEvent](../resources/sharepointmigrationevent.md).|
-|id|String|The ID of a **JobQueued** event. Read-only. Only on OneDrive and SharePoint. Inherited from [entity](../resources/entity.md).|
+|eventDateTime|DateTimeOffset|The date and time when the job status changes to **JobQueued**. Read-only. Only on OneDrive and SharePoint. Inherited from [sharePointMigrationEvent](../resources/sharepointmigrationevent.md).|
+|id|String|The unique identifier of a **JobQueued** event. Read-only. Only on OneDrive and SharePoint. Inherited from [sharePointMigrationEvent](../resources/sharepointmigrationevent.md).|
 |jobId|String|The unique identifier of a migration job. Read-only. Only on OneDrive and SharePoint. Inherited from [sharePointMigrationEvent](../resources/sharepointmigrationevent.md).|
 
 ## Relationships
@@ -47,10 +45,10 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.sharePointMigrationJobQueuedEvent",
-  "id": "String (identifier)",
-  "jobId": "String",
+  "correlationId": "String",
   "eventDateTime": "String (timestamp)",
-  "correlationId": "String"
+  "id": "String (identifier)",
+  "jobId": "String"
 }
 ```
 
