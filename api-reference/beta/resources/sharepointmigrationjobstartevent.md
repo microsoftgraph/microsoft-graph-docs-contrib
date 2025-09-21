@@ -1,6 +1,6 @@
 ---
 title: "sharePointMigrationJobStartEvent resource type"
-description: "Migration start status event"
+description: "Represents the start status of a migration job."
 author: "wenzhou"
 ms.date: 06/04/2025
 ms.localizationpriority: medium
@@ -14,26 +14,22 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The **sharePointMigrationJobStartEvent** resource represents the start status of a migration job.
-
+Represents the start status of a migration job.
 
 Inherits from [sharePointMigrationEvent](../resources/sharepointmigrationevent.md).
 
-
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List progressEvents](../api/filestoragecontainer-migrationjob-list-progressevents.md)|[sharePointMigrationEvent](../resources/sharepointmigrationevent.md) collection|Get a list of the migrationEvent objects and their properties.|
+For the list of supported methods, see [sharePointMigrationEvent](../resources/sharepointmigrationevent.md).
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |correlationId|String|The correlation ID of a migration job. Read-only. Only on OneDrive and SharePoint. Inherited from [sharePointMigrationEvent](../resources/sharepointmigrationevent.md).|
-|eventDateTime|DateTimeOffset|The UTC time when job status changes to **JobStart** or **JobRestart**. Read-only. Only on OneDrive and SharePoint. Inherited from [sharePointMigrationEvent](../resources/sharepointmigrationevent.md).|
-|id|String|The ID of a **JobStart** or **JobRestart** event. Read-only. Only on OneDrive and SharePoint. Inherited from [entity](../resources/entity.md).|
-|isRestarted|Boolean|True if the job is restarted and False if it is the initial start. Read-only. Only on OneDrive and SharePoint.|
+|eventDateTime|DateTimeOffset|The date and time when the job status changes to **JobStart** or **JobRestart**. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only. Only on OneDrive and SharePoint. Inherited from [sharePointMigrationEvent](../resources/sharepointmigrationevent.md). |
+|id|String|The unique identifier of a **JobStart** or **JobRestart** event. Read-only. Only on OneDrive and SharePoint. Inherited from [sharePointMigrationEvent](../resources/sharepointmigrationevent.md).|
+|isRestarted|Boolean|`True` if the job is restarted. `False` if it's the initial start. Read-only. Only on OneDrive and SharePoint.|
 |jobId|String|The unique identifier of a migration job. Read-only. Only on OneDrive and SharePoint. Inherited from [sharePointMigrationEvent](../resources/sharepointmigrationevent.md).|
-|totalRetryCount|Int32|Current job retry count. Read-only. Only on OneDrive and SharePoint.|
+|totalRetryCount|Int32|The current retry count of the job. Read-only. Only on OneDrive and SharePoint.|
 
 ## Relationships
 None.
@@ -51,11 +47,11 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.sharePointMigrationJobStartEvent",
-  "id": "String (identifier)",
-  "jobId": "String",
-  "eventDateTime": "String (timestamp)",
   "correlationId": "String",
+  "eventDateTime": "String (timestamp)",
+  "id": "String (identifier)",
   "isRestarted": "Boolean",
-  "totalRetryCount": "Integer"
+  "jobId": "String",
+  "totalRetryCount": "Int32"
 }
 ```
