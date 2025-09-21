@@ -19,9 +19,9 @@ Contains the Azure blob container URLs and the key for content encryption. The A
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|dataContainerUri|String|A valid URL with SAS token for accessing Azure blob storage container, which contains file content. Read-only. Only on OneDrive and SharePoint.|
-|encryptionKey|String|Provides AES-256-CBC encryption key if files stored in Azure blob containers are encrypted. The key is base64 encoded. Read-only. Only on OneDrive and SharePoint.|
-|metadataContainerUri|String|A valid URL with SAS token for accessing Azure blob storage container, which contains file metadata. Read-only. Only on OneDrive and SharePoint.|
+|dataContainerUri|String|A valid URL with a SAS token for accessing the Azure blob storage container that contains the file content. Read-only. Only on OneDrive and SharePoint.|
+|encryptionKey|String|Provides the AES-256-CBC encryption key if files stored in Azure blob containers are encrypted. The key is Base64-encoded. Read-only. Only on OneDrive and SharePoint.|
+|metadataContainerUri|String|A valid URL with a SAS token for accessing the Azure blob storage container that contains the file metadata. Read-only. Only on OneDrive and SharePoint.|
 
 ## Relationships
 None.
@@ -37,7 +37,7 @@ The following JSON representation shows the resource type.
 {
   "@odata.type": "#microsoft.graph.sharePointMigrationContainerInfo",
   "dataContainerUri": "String",
-  "metadataContainerUri": "String",
-  "encryptionKey": "String"
+  "encryptionKey": "String",
+  "metadataContainerUri": "String"
 }
 ```
