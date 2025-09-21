@@ -1,6 +1,6 @@
 ---
 title: "sharePointMigrationJobErrorEvent resource type"
-description: "Migration error status event"
+description: "Represents the error status of a SharePoint migration job."
 author: "wenzhou"
 ms.date: 06/04/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The **sharePointMigrationJobErrorEvent** resource represents the error status of a SharePoint migration job.
+Represents the error status of a SharePoint migration job.
 
 Inherits from [sharePointMigrationEvent](../resources/sharepointmigrationevent.md).
 
@@ -29,12 +29,12 @@ Inherits from [sharePointMigrationEvent](../resources/sharepointmigrationevent.m
 |correlationId|String|The correlation ID of a migration job. Read-only. Only on OneDrive and SharePoint. Inherited from [sharePointMigrationEvent](../resources/sharepointmigrationevent.md).|
 |error|[publicError](../resources/publicerror.md)|The error code and message. Read-only. Only on OneDrive and SharePoint.|
 |errorLevel|sharePointMigrationJobErrorLevel|The error level. Read-only. Only on OneDrive and SharePoint. The possible values are: `important`, `warning`, `error`, `fatalError`, `unknownFutureValue`.|
-|eventDateTime|DateTimeOffset|The UTC time when job status changes to a certain type of **JobError**. Read-only. Only on OneDrive and SharePoint. Inherited from [sharePointMigrationEvent](../resources/sharepointmigrationevent.md).|
-|id|String|The ID of a **JobError** event. Read-only. Only on OneDrive and SharePoint. Inherited from [entity](../resources/entity.md).|
+|eventDateTime|DateTimeOffset|The date and time when the job status changes to a specific type of **sharePointMigrationJobErrorEvent**. Read-only. Only on OneDrive and SharePoint. Inherited from [sharePointMigrationEvent](../resources/sharepointmigrationevent.md).|
+|id|String|The ID of a **sharePointMigrationJobErrorEvent**. Read-only. Only on OneDrive and SharePoint. Inherited from [sharePointMigrationEvent](../resources/sharepointmigrationevent.md).|
 |jobId|String|The unique identifier of a migration job. Read-only. Only on OneDrive and SharePoint. Inherited from [sharePointMigrationEvent](../resources/sharepointmigrationevent.md).|
-|objectId|String|The object id. Read-only. Only on OneDrive and SharePoint.|
+|objectId|String|The object ID. Read-only. Only on OneDrive and SharePoint.|
 |objectType|sharePointMigrationObjectType|The object type. Read-only. Only on OneDrive and SharePoint. The possible values are: `site`, `web`, `folder`, `list`, `listItem`, `file`, `alert`, `sharedWithObject`, `invalid`, `unknownFutureValue`.|
-|objectUrl|String|The object url. Read-only. Only on OneDrive and SharePoint.|
+|objectUrl|String|The object URL. Read-only. Only on OneDrive and SharePoint.|
 |totalRetryCount|Int32|Current job retry count. Read-only. Only on OneDrive and SharePoint.|
 
 ## Relationships
@@ -53,21 +53,15 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.sharePointMigrationJobErrorEvent",
+  "correlationId": "String",
+  "error": {"@odata.type": "microsoft.graph.publicError"},
+  "errorLevel": {"@odata.type": "microsoft.graph.sharePointMigrationJobErrorLevel"},
+  "eventDateTime": "String (timestamp)",
   "id": "String (identifier)",
   "jobId": "String",
-  "eventDateTime": "String (timestamp)",
-  "correlationId": "String",
-  "errorLevel": {
-    "@odata.type": "microsoft.graph.sharePointMigrationJobErrorLevel"
-  },
-  "totalRetryCount": "Integer",
-  "objectType": {
-    "@odata.type": "microsoft.graph.sharePointMigrationObjectType"
-  },
-  "objectUrl": "String",
   "objectId": "String",
-  "error": {
-    "@odata.type": "microsoft.graph.publicError"
-  }
+  "objectType": {"@odata.type": "microsoft.graph.sharePointMigrationObjectType"},
+  "objectUrl": "String",
+  "totalRetryCount": "Int32"
 }
 ```
