@@ -204,7 +204,7 @@ HTTP/1.1 204 No Content
 The following example shows a request for conditionalAccessPolicy.
 <!-- {
   "blockType": "request",
-  "name": "delete_policydeletableitem_crossTenantIdentitySyncPolicyPartner"
+  "name": "delete_policydeletableitem_conditionalAccessPolicy"
 }
 -->
 ```HTTP
@@ -231,7 +231,7 @@ HTTP/1.1 204 No Content
 The following example shows a request for namedLocation.
 <!-- {
   "blockType": "request",
-  "name": "delete_policydeletableitem_crossTenantIdentitySyncPolicyPartner"
+  "name": "delete_policydeletableitem_namedLocation"
 }
 -->
 ```HTTP
