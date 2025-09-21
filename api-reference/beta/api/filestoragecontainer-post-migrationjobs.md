@@ -1,6 +1,6 @@
 ---
 title: "Create sharePointMigrationJob"
-description: "Create a new sharePointMigrationJob object."
+description: "Create a new sharePointMigrationJob object that is scheduled to run at a later time to migrate content from an intermediary storage to the target fileStorageContainer."
 author: "wenzhou"
 ms.date: 06/04/2025
 ms.localizationpriority: medium
@@ -62,7 +62,8 @@ If successful, this method returns a `201 Created` response code and a [sharePoi
 
 ### Request
 
-The following example creates a **sharePointMigrationJob** to be running on the **fileStorageContainer** identified by the container ID `b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z`.
+The following example shows how to create a **sharePointMigrationJob** that runs on the **fileStorageContainer** identified by the container ID `b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z`.
+
 <!-- {
   "blockType": "request",
   "name": "create_migrationjob_from_filestoragecontainer"
