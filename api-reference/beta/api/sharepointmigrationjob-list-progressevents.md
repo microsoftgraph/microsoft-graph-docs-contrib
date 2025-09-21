@@ -22,10 +22,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "filestoragecontainer-migrationjob-list-progressevents-permissions"
+  "name": "sharepointmigrationjob_list_progressevents"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/filestoragecontainer-migrationjob-list-progressevents-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/sharepointmigrationjob-list-progressevents-permissions.md)]
 
 ## HTTP request
 
