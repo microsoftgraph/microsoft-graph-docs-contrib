@@ -192,14 +192,10 @@ items:
     href: ../../api/filestoragecontainer-lock.md
   - name: Unlock
     href: ../../api/filestoragecontainer-unlock.md
-  - name: Provision migrationContainers
-    href: ../../api/filestoragecontainer-provisionmigrationcontainers.md
-  - name: Create migrationJob
+  - name: Create
     href: ../../api/filestoragecontainer-post-migrationjobs.md
-  - name: Delete migrationJob
-    href: ../../api/filestoragecontainer-delete-migrationjobs.md
-  - name: List progressEvents
-    href: ../../api/filestoragecontainer-migrationjob-list-progressevents.md
+  - name: Provision migration containers
+    href: ../../api/filestoragecontainer-provisionmigrationcontainers.md
 - name: File storage container type
   items:
   - name: File storage container type
@@ -318,12 +314,38 @@ items:
     href: ../../api/sharepointgroupmember-get.md
   - name: Delete
     href: ../../api/sharepointgroup-delete-members.md
-- name: SharePoint migration job
+- name: SharePoint migration event
   items:
-  - name: SharePoint migration job
-    href: ../../resources/sharepointmigrationjob.md
   - name: SharePoint migration event
     href: ../../resources/sharepointmigrationevent.md
+  - name: List progress events
+    href: ../../api/sharepointmigrationjob-list-progressevents.md
+- name: Share point migration job
+  items:
+  - name: Share point migration job
+    href: ../../resources/sharepointmigrationjob.md
+  - name: Create
+    href: ../../api/filestoragecontainer-post-migrationjobs.md
+  - name: Delete
+    href: ../../api/sharepointmigrationjob-delete.md
+  - name: List progress events
+    href: ../../api/sharepointmigrationjob-list-progressevents.md
+  - name: Provision migration containers
+    href: ../../api/filestoragecontainer-provisionmigrationcontainers.md
+- name: Share point migration job cancelled event
+  href: ../../resources/sharepointmigrationjobcancelledevent.md
+- name: Share point migration job deleted event
+  href: ../../resources/sharepointmigrationjobdeletedevent.md
+- name: Share point migration job error event
+  href: ../../resources/sharepointmigrationjoberrorevent.md
+- name: Share point migration job postponed event
+  href: ../../resources/sharepointmigrationjobpostponedevent.md
+- name: Share point migration job progress event
+  href: ../../resources/sharepointmigrationjobprogressevent.md
+- name: Share point migration job queued event
+  href: ../../resources/sharepointmigrationjobqueuedevent.md
+- name: Share point migration job start event
+  href: ../../resources/sharepointmigrationjobstartevent.md
 - name: Complex types
   items:
   - name: File storage container type agent settings
@@ -332,3 +354,5 @@ items:
     href: ../../resources/filestoragecontainertyperegistrationsettings.md
   - name: File storage container type settings
     href: ../../resources/filestoragecontainertypesettings.md
+  - name: Share point migration container info
+    href: ../../resources/sharepointmigrationcontainerinfo.md

@@ -154,10 +154,10 @@ items:
     href: ../../resources/workbookcomment.md
   - name: List
     href: ../../api/workbook-list-comments.md
-  - name: Get
-    href: ../../api/workbookcomment-get.md
   - name: Create
     href: ../../api/workbookcomment-post-comments.md
+  - name: Get
+    href: ../../api/workbookcomment-get.md
 - name: Comment reply
   items:
   - name: Comment reply
