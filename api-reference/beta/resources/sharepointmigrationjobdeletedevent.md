@@ -19,7 +19,7 @@ Represents the deleted status of a SharePoint migration job.
 Inherits from [sharePointMigrationEvent](../resources/sharepointmigrationevent.md).
 
 ## Methods
-For the list of supported methods, see [sharePointMigrationEvent](../resources/sharepointmigrationevent.md).```
+For the list of supported methods, see [sharePointMigrationEvent](../resources/sharepointmigrationevent.md).
 
 ## Properties
 |Property|Type|Description|
