@@ -250,7 +250,7 @@ Content-Type: application/json
 
 #### Request
 
-The following example shows a request for a conditionalAccessPolicy.
+The following example shows a request for a **conditionalAccessPolicy**.
 <!-- {
   "blockType": "request",
   "name": "get_policydeletableitem_crossTenantIdentitySyncPolicyPartner"
@@ -346,7 +346,7 @@ The following example shows the response.
 
 #### Request
 
-The following example shows a request for a namedLocation.
+The following example shows a request for a **namedLocation**.
 <!-- {
   "blockType": "request",
   "name": "get_policydeletableitem_crossTenantIdentitySyncPolicyPartner"
