@@ -24,6 +24,10 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 From the end of September 2025, the maximum page size for the [List servicePrincipals API](/graph/api/serviceprincipal-list) will be 100 objects from 999 objects.
 
+### Files
+
+The new SharePoint migration API for [fileStorageContainer](/graph/api/resources/fileStorageContainer?view=graph-rest-beta&preserve-view=true) enables you to programmatically schedule and manage bulk migrations of content from intermediary Azure blob storage containers to SharePoint or OneDrive.
+
 ## July 2025: New in preview only
 
 ### Device and app management | Cloud PC
