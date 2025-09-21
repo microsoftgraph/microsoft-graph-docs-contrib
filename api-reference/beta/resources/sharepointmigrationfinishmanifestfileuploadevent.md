@@ -25,8 +25,8 @@ For the list of supported methods, see [sharePointMigrationEvent](../resources/s
 |Property|Type|Description|
 |:---|:---|:---|
 |correlationId|String|The correlation ID of a migration job. Read-only. Only on OneDrive and SharePoint. Inherited from [sharePointMigrationEvent](../resources/sharepointmigrationevent.md).|
-|eventDateTime|DateTimeOffset|The UTC time when job status changes to **FinishManifestFileUpload**. Read-only. Only on OneDrive and SharePoint. Inherited from [sharePointMigrationEvent](../resources/sharepointmigrationevent.md).|
-|id|String|The ID of a **FinishManifestFileUpload** event. Read-only. Only on OneDrive and SharePoint. Inherited from [sharePointMigrationEvent](../resources/sharepointmigrationevent.md).|
+|eventDateTime|DateTimeOffset|The date and time when the job status changes to **FinishManifestFileUpload**. Read-only. Only on OneDrive and SharePoint. Inherited from [sharePointMigrationEvent](../resources/sharepointmigrationevent.md).|
+|id|String|The unique identifier of a **FinishManifestFileUpload** event. Read-only. Only on OneDrive and SharePoint. Inherited from [sharePointMigrationEvent](../resources/sharepointmigrationevent.md).|
 |jobId|String|The unique identifier of a migration job. Read-only. Only on OneDrive and SharePoint. Inherited from [sharePointMigrationEvent](../resources/sharepointmigrationevent.md).|
 |manifestFileName|String|The exported manifest file name. Read-only. Only on OneDrive and SharePoint.|
 
@@ -46,10 +46,10 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.sharePointMigrationFinishManifestFileUploadEvent",
+  "correlationId": "String",
+  "eventDateTime": "String (timestamp)",
   "id": "String (identifier)",
   "jobId": "String",
-  "eventDateTime": "String (timestamp)",
-  "correlationId": "String",
   "manifestFileName": "String"
 }
 ```
