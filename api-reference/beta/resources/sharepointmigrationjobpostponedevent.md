@@ -1,6 +1,6 @@
 ---
 title: "sharePointMigrationJobPostponedEvent resource type"
-description: "Migration postponed status event"
+description: "Represents the postponed status of a SharePoint migration job."
 author: "wenzhou"
 ms.date: 06/04/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The **sharePointMigrationJobPostponedEvent** resource represents the postponed status of a SharePoint migration job.
+Represents the postponed status of a SharePoint migration job.
 
 Inherits from [sharePointMigrationEvent](../resources/sharepointmigrationevent.md).
 
@@ -27,13 +27,15 @@ Inherits from [sharePointMigrationEvent](../resources/sharepointmigrationevent.m
 |Property|Type|Description|
 |:---|:---|:---|
 |correlationId|String|The correlation ID of a migration job. Read-only. Only on OneDrive and SharePoint. Inherited from [sharePointMigrationEvent](../resources/sharepointmigrationevent.md).|
-|eventDateTime|DateTimeOffset|The UTC time when job status changes to **JobPostponed**. Read-only. Only on OneDrive and SharePoint. Inherited from [sharePointMigrationEvent](../resources/sharepointmigrationevent.md).|
-|id|String|The ID of a **JobPostponed** event. Read-only. Only on OneDrive and SharePoint. Inherits from [entity](../resources/entity.md).|
+|eventDateTime|DateTimeOffset|The date and time when the job status changes to **sharePointMigrationJobPostponedEvent**. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.
+ Read-only. Only on OneDrive and SharePoint. Inherited from [sharePointMigrationEvent](../resources/sharepointmigrationevent.md).|
+|id|String|The ID of a **sharePointMigrationJobPostponedEvent**. Read-only. Only on OneDrive and SharePoint. Inherited from [sharePointMigrationEvent](../resources/sharepointmigrationevent.md).|
 |jobId|String|The unique identifier of a migration job. Read-only. Only on OneDrive and SharePoint. Inherited from [sharePointMigrationEvent](../resources/sharepointmigrationevent.md).|
-|jobsInQueue|Int64|The number of migration jobs in the queue of current db. Read-only. Only on OneDrive and SharePoint.|
-|nextPickupDateTime|DateTimeOffset|The UTC time indicating when this job will be picked up next time. Read-only. Only on OneDrive and SharePoint.|
-|reason|String|The postponement reason. Read-only. Only on OneDrive and SharePoint.|
-|totalRetryCount|Int32|Current job retry count. Read-only. Only on OneDrive and SharePoint.|
+|jobsInQueue|Int64|The number of migration jobs in the queue of the current database. Read-only. Only on OneDrive and SharePoint.|
+|nextPickupDateTime|DateTimeOffset|The date and time that indicate when this job is picked up next. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.
+ Read-only. Only on OneDrive and SharePoint.|
+|reason|String|The reason for the postponement. Read-only. Only on OneDrive and SharePoint.|
+|totalRetryCount|Int32|The current retry count of the job. Read-only. Only on OneDrive and SharePoint.|
 
 ## Relationships
 None.
@@ -51,13 +53,13 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.sharePointMigrationJobPostponedEvent",
+  "correlationId": "String",
+  "eventDateTime": "String (timestamp)",
   "id": "String (identifier)",
   "jobId": "String",
-  "eventDateTime": "String (timestamp)",
-  "correlationId": "String",
+  "jobsInQueue": "Int64",
   "nextPickupDateTime": "String (timestamp)",
-  "jobsInQueue": "Integer",
-  "totalRetryCount": "Integer",
-  "reason": "String"
+  "reason": "String",
+  "totalRetryCount": "Int32"
 }
 ```
