@@ -19,9 +19,7 @@ Represents the postponed status of a SharePoint migration job.
 Inherits from [sharePointMigrationEvent](../resources/sharepointmigrationevent.md).
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List progressEvents](../api/filestoragecontainer-migrationjob-list-progressevents.md)|[sharePointMigrationEvent](../resources/sharepointmigrationevent.md) collection|Get a list of the migrationEvent objects and their properties.|
+For the list of supported methods, see [sharePointMigrationEvent](../resources/sharepointmigrationevent.md).
 
 ## Properties
 |Property|Type|Description|
