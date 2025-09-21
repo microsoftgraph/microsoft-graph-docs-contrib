@@ -43,7 +43,7 @@ The following precedence is used for how session states are aggregated, with "A 
 
 > [!NOTE]
 > 
-> The **setPresence** method doesn't support setting the presence states **Out of office (OOF)** or **In a meeting** directly. These states are automatically managed based on calendar events and mailbox configurations, and attempting to set them via the **setPresence** method has no effect.
+> The [setPresence](/graph/api/presence-setpresence) method doesn't support setting the presence states **Out of office (OOF)** or **In a meeting** directly. These states are automatically managed based on calendar events and mailbox configurations, and attempting to set them via the [setPresence](/graph/api/presence-setpresence) method has no effect.
 >
 > To reflect **"Out of office"** in presence, use the [events API](/graph/api/resources/event) by setting the **showAs** property of a calendar event to `oof`, or configure the user's autoreply settings using [mailboxSettings](/graph/api/resources/mailboxsettings).
 >
@@ -51,7 +51,7 @@ The following precedence is used for how session states are aggregated, with "A 
 
 ## Timeout, expiration, and keep alive
 
-A presence session might **time out** and **expire**, so the application needs to call the **presence: setPresence** API before the **timeout**, to maintain the state for the session; or before the **expiration**, to keep the session alive.
+A presence session might **time out** and **expire**, so the application needs to call the [presence: setPresence](/graph/api/presence-setpresence) API before the **timeout**, to maintain the state for the session; or before the **expiration**, to keep the session alive.
 
 A presence session can time out if the availability is `Available` and the timeout is five minutes. When it times out, the presence state fades in stages. For example, if an application sets the presence session as `Available/Available`, the state would change to `Available/AvailableInactive` in five minutes with the first timeout, then `Away/Away` in another five minutes with the second timeout.
 
