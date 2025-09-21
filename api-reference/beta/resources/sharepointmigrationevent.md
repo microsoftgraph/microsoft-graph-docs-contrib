@@ -17,14 +17,14 @@ Namespace: microsoft.graph
 Represents the common information of a SharePoint migration event.
 
 Base event of the following progress events:
-[sharePointMigrationFinishManifestFileUploadEvent](../resources/sharePointMigrationFinishManifestFileUploadEvent.md)
-[sharePointMigrationJobCancelledEvent](../resources/sharePointMigrationJobCancelledEvent.md)
-[sharePointMigrationJobDeletedEvent](../resources/sharePointMigrationJobDeletedEvent.md)
-[sharePointMigrationJobErrorEvent](../resources/sharePointMigrationJobErrorEvent.md)
-[sharePointMigrationJobPostponedEvent](../resources/sharePointMigrationJobPostponedEvent.md)
-[sharePointMigrationJobProgressEvent](../resources/sharePointMigrationJobProgressEvent.md)
-[sharePointMigrationJobQueuedEvent](../resources/sharePointMigrationJobQueuedEvent.md)
-[sharePointMigrationJobStartEvent](../resources/sharePointMigrationJobStartEvent.md)
+- [sharePointMigrationFinishManifestFileUploadEvent](../resources/sharepointmigrationfinishmanifestfileuploadevent.md)
+- [sharePointMigrationJobCancelledEvent](../resources/sharepointmigrationjobcancelledevent.md)
+- [sharePointMigrationJobDeletedEvent](../resources/sharepointmigrationjobdeletedevent.md)
+- [sharePointMigrationJobErrorEvent](../resources/sharepointmigrationjoberrorevent.md)
+- [sharePointMigrationJobPostponedEvent](../resources/sharepointmigrationjobpostponedevent.md)
+- [sharePointMigrationJobProgressEvent](../resources/sharepointmigrationjobprogressevent.md)
+- [sharePointMigrationJobQueuedEvent](../resources/sharepointmigrationjobqueuedevent.md)
+- [sharePointMigrationJobStartEvent](../resources/sharepointmigrationjobstartevent.md)
 
 Inherits from [entity](../resources/entity.md).
 
@@ -37,8 +37,8 @@ Inherits from [entity](../resources/entity.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |correlationId|String|The correlation ID of a migration job. Read-only. Only on OneDrive and SharePoint.|
-|eventDateTime|DateTimeOffset|The UTC time when job status changes. Read-only. Only on OneDrive and SharePoint.|
-|id|String| The ID of a migration progress event. Read-only. Only on OneDrive and SharePoint. Inherits from [entity](../resources/entity.md).|
+|eventDateTime|DateTimeOffset|The date and time when the job status changes. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only. Only on OneDrive and SharePoint.|
+|id|String| The unique identifier of a migration progress event. Read-only. Only on OneDrive and SharePoint. Inherits from [entity](../resources/entity.md).|
 |jobId|String|The unique identifier of a migration job. Read-only. Only on OneDrive and SharePoint.|
 
 ## Relationships
@@ -57,9 +57,9 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.sharePointMigrationEvent",
-  "id": "String (identifier)",
-  "jobId": "String",
+  "correlationId": "String",
   "eventDateTime": "String (timestamp)",
-  "correlationId": "String"
+  "id": "String (identifier)",
+  "jobId": "String"
 }
 ```
