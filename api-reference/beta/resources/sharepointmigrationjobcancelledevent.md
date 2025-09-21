@@ -1,6 +1,6 @@
 ---
 title: "sharePointMigrationJobCancelledEvent resource type"
-description: "Migration canceled status event"
+description: "Represents the canceled status of a SharePoint migration job."
 author: "wenzhou"
 ms.date: 06/04/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The **sharePointMigrationJobCancelledEvent** resource represents the canceled status of a SharePoint migration job.
+Represents the canceled status of a SharePoint migration job.
 
 Inherits from [sharePointMigrationEvent](../resources/sharepointmigrationevent.md).
 
@@ -28,7 +28,7 @@ Inherits from [sharePointMigrationEvent](../resources/sharepointmigrationevent.m
 |:---|:---|:---|
 |correlationId|String|The correlation ID of a migration job. Read-only. Only on OneDrive and SharePoint. Inherited from [sharePointMigrationEvent](../resources/sharepointmigrationevent.md).|
 |eventDateTime|DateTimeOffset|The UTC time when job status changes to **JobCancelled**. Read-only. Only on OneDrive and SharePoint. Inherited from [sharePointMigrationEvent](../resources/sharepointmigrationevent.md).|
-|id|String|The ID of a **JobCancelled** event. Read-only. Only on OneDrive and SharePoint. Inherits from [entity](../resources/entity.md).|
+|id|String|The ID of a **JobCancelled** event. Read-only. Only on OneDrive and SharePoint. Inherited from [sharePointMigrationEvent](../resources/sharepointmigrationevent.md).|
 |isCancelledByUser|Boolean|True when a user cancels the job, and False otherwise. Read-only. Only on OneDrive and SharePoint.|
 |jobId|String|The unique identifier of a migration job. Read-only. Only on OneDrive and SharePoint. Inherited from [sharePointMigrationEvent](../resources/sharepointmigrationevent.md).|
 |totalRetryCount|Int32|Current job retry count. Read-only. Only on OneDrive and SharePoint.|
@@ -49,11 +49,11 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.sharePointMigrationJobCancelledEvent",
-  "id": "String (identifier)",
-  "jobId": "String",
-  "eventDateTime": "String (timestamp)",
   "correlationId": "String",
-  "totalRetryCount": "Integer",
-  "isCancelledByUser": "Boolean"
+  "eventDateTime": "String (timestamp)",
+  "id": "String (identifier)",
+  "isCancelledByUser": "Boolean",
+  "jobId": "String",
+  "totalRetryCount": "Int32"
 }
 ```
