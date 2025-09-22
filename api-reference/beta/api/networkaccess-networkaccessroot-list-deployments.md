@@ -14,7 +14,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get list of logs that include the status of deployments performed through the Global Secure Access services.
+Get list of logs that includes the status of deployments performed through the Global Secure Access services.
 
 ## Permissions
 
@@ -102,6 +102,7 @@ Content-Type: application/json
     ]
 }
 ```
+
 
 
 
