@@ -356,9 +356,9 @@ items:
         href: ../../resources/provisioningobjectsummary.md
       - name: List
         href: ../../api/provisioningobjectsummary-list.md
-    - name: Self service sign up
+    - name: Self-service sign-up
       items:
-      - name: Self service sign up
+      - name: Self-service sign-up
         href: ../../resources/selfservicesignup.md
       - name: List
         href: ../../api/auditlogroot-list-signups.md

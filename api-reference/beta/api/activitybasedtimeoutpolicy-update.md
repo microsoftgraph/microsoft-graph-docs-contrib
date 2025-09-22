@@ -46,9 +46,9 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|definition|String collection| A string collection containing a JSON string that defines the rules and settings for this policy.  Required.|
-|displayName|String| Display name for this policy. Required.|
-|isOrganizationDefault|Boolean|If set to true, activates this policy. There can be many policies for the same policy type, but only one can be activated as the organization default. Optional, default value is false.|
+|definition|String collection| A string collection containing a JSON string that defines the rules and settings for this policy.|
+|displayName|String| Display name for this policy.|
+|isOrganizationDefault|Boolean|If set to true, activates this policy. There can be many policies for the same policy type, but only one can be activated as the organization default. Default value is false.|
 
 ## Response
 
@@ -67,15 +67,11 @@ The following example shows a request.
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/beta/policies/activityBasedTimeoutPolicies/{id}
+PATCH https://graph.microsoft.com/beta/policies/activityBasedTimeoutPolicies/cf70ac6c-8a1a-40cd-a523-a2b4a56de0df
 Content-type: application/json
 
 {
-  "definition": [
-    "definition-value"
-  ],
-  "displayName": "displayName-value",
-  "isOrganizationDefault": true
+"displayName": "Idle timeout for all apps"
 }
 ```
 
@@ -117,22 +113,11 @@ The following example shows the response.
 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.activityBasedTimeoutPolicy"
+  "truncated": true
 } -->
 
 ```http
 HTTP/1.1 204 No Content
-Content-type: application/json
-
-{
-  "definition": [
-    "definition-value"
-  ],
-  "displayName": "displayName-value",
-  "isOrganizationDefault": true,
-  "id": "id-value"
-}
 ```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98

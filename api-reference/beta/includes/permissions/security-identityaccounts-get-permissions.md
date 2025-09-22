@@ -1,5 +1,12 @@
-|Permission type|Permissions (least privileged listed first)|
-|:---|:---|
-|Delegated (work or school account)|SecurityIdentitiesAccount.Read.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|SecurityIdentitiesAccount.Read.All|
+---
+description: "Automatically generated file. DO NOT MODIFY"
+ms.topic: include
+ms.localizationpriority: medium
+---
+
+|Permission type|Least privileged permissions|Higher privileged permissions|
+|:---|:---|:---|
+|Delegated (work or school account)|SecurityIdentitiesAccount.Read.All|Not available.|
+|Delegated (personal Microsoft account)|Not supported.|Not supported.|
+|Application|SecurityIdentitiesAccount.Read.All|Not available.|
+

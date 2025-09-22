@@ -94,6 +94,7 @@ The last column indicates whether updating this property will take effect for an
 | allowAttendeeToEnableCamera | Boolean                                                    | Indicates whether attendees can turn on their camera.                               | Yes                                 |
 | allowAttendeeToEnableMic    | Boolean                                                    | Indicates whether attendees can turn on their microphone.                           | Yes                                 |
 | allowBreakoutRooms          | Boolean                                                    | Indicates whether breakout rooms are enabled for the meeting.                       | No                                  |
+| allowCopyingAndSharingMeetingContent             | Boolean                               | Indicates whether the ability to copy and share meeting content is enabled for the meeting.   | Yes                                 |
 | allowedLobbyAdmitters       | [allowedLobbyAdmitterRoles](../resources/onlinemeetingbase.md#allowedlobbyadmitterroles-values) | Specifies the users who can admit from the lobby. Possible values are: `organizerAndCoOrganizersAndPresenters`, `organizerAndCoOrganizers`, `unknownFutureValue`. | Yes                                 |
 | allowedPresenters           | onlineMeetingPresenters                                    | Specifies who can be a presenter in a meeting.                                      | Yes                                 |
 | allowLiveShare              | meetingLiveShareOptions                                    | Indicates whether live share is enabled for the meeting.                            | No                                  |
@@ -336,6 +337,7 @@ The following example shows how to enable end-to-end encryption on an existing o
 
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "enable-encryption-on-existing-online-meeting"
@@ -349,6 +351,36 @@ Content-Type: application/json
   "isEndToEndEncryptionEnabled": true
 }
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/enable-encryption-on-existing-online-meeting-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/enable-encryption-on-existing-online-meeting-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/enable-encryption-on-existing-online-meeting-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/enable-encryption-on-existing-online-meeting-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/enable-encryption-on-existing-online-meeting-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/enable-encryption-on-existing-online-meeting-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/enable-encryption-on-existing-online-meeting-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 

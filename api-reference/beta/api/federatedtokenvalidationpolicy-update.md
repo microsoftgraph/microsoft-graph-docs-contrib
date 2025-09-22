@@ -1,11 +1,11 @@
 ---
 title: "Update federatedTokenValidationPolicy"
 description: "Update the properties of a federatedTokenValidationPolicy object."
-author: "rahul-nagraj"
+author: "vimrang"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
-ms.date: 04/17/2024
+ms.date: 09/09/2025
 ---
 
 # Update federatedTokenValidationPolicy
@@ -46,6 +46,8 @@ PUT /policies/federatedTokenValidationPolicy
 ## Request body
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
+You must specify the `@odata.type` property with the value of the **validatingDomains** subtype in the request body, which might be `@odata.type: "#microsoft.graph.enumeratedDomains"` or `@odata.type: "#microsoft.graph.allDomains"`.
+
 |Property|Type|Description|
 |:---|:---|:---|
 |validatingDomains|[validatingDomains](../resources/validatingdomains.md)|Verified domains that Microsoft Entra validates whether the federated account's root domain matches with the mapped Microsoft Entra account's root domain. Required.|
@@ -74,7 +76,7 @@ Content-Type: application/json
   "@odata.type": "#microsoft.graph.federatedTokenValidationPolicy",
   "deletedDateTime": "String (timestamp)",
   "validatingDomains": {
-    "@odata.type": "microsoft.graph.validatingDomains",
+    "@odata.type": "microsoft.graph.enumeratedDomains",
     "rootDomains": "enumerated",
     "domainNames": ["contoso.com","fabrikam.com"]
   }

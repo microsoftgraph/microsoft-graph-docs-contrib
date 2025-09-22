@@ -34,11 +34,8 @@ endpointConfiguration := graphmodels.NewHttpRequestEndpoint()
 targetUrl := "https://onotpsendcustomextension.b2c.expert/api/OnOTPCodeSendToTeamsDemo"
 endpointConfiguration.SetTargetUrl(&targetUrl) 
 requestBody.SetEndpointConfiguration(endpointConfiguration)
-additionalData := map[string]interface{}{
-behaviorOnError := graph.New()
-	requestBody.SetBehaviorOnError(behaviorOnError)
-}
-requestBody.SetAdditionalData(additionalData)
+behaviorOnError := graphmodels.NewCustomExtensionBehaviorOnError()
+requestBody.SetBehaviorOnError(behaviorOnError)
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 customAuthenticationExtensions, err := graphClient.Identity().CustomAuthenticationExtensions().Post(context.Background(), requestBody, nil)

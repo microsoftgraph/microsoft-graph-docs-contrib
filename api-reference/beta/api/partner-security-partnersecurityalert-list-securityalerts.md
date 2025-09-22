@@ -16,7 +16,7 @@ Namespace: microsoft.graph.partner.security
 
 Get a list of the [partnerSecurityAlert](../resources/partner-security-partnersecurityalert.md) objects and their properties.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

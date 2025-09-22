@@ -8,18 +8,18 @@ ms.topic: how-to
 ms.localizationpriority: high
 ms.custom: scenarios:getting-started
 ms.subservice: entra-applications
-ms.date: 08/16/2024
+ms.date: 08/29/2025
 #customer intent: As a developer, I want to use Microsoft Graph to configure my app's behavior to adopt new breaking changes.
 ---
 
 # Manage application authenticationBehaviors
 
-The [**authenticationBehaviors**](/graph/api/resources/authenticationbehaviors?view=graph-rest-beta&preserve-view=true) property of the [application](/graph/api/resources/application?view=graph-rest-beta&preserve-view=true) object allows you to configure breaking change behaviors related to token issuance. Applications can adopt new breaking changes by enabling a behavior or continue using pre-existing behavior by disabling it.
+The [**authenticationBehaviors**](/graph/api/resources/authenticationbehaviors?view=graph-rest-beta&preserve-view=true) property of the [application](/graph/api/resources/application?view=graph-rest-beta&preserve-view=true) object lets you configure breaking change behaviors related to token issuance. Applications can adopt new breaking changes by enabling a behavior or continue using pre-existing behavior by disabling it.
 
-The following behaviors are configurable:
+You can configure the following behaviors:
 
 - [Allow or prevent the issuance of email claims with unverified domain owners](#prevent-the-issuance-of-email-claims-with-unverified-domain-owners).
-- [Enable or disable extended Azure AD Graph access until June 30, 2025](#allow-extended-azure-ad-graph-access-until-june-30-2025), when Azure AD Graph is fully retired.
+- [Enable or disable extended Azure AD Graph access until August 31, 2025](#allow-extended-azure-ad-graph-access-until-august-31-2025), when Azure AD Graph is fully retired.
 - Require multitenant applications to have a service principal in the resource tenant as part of authorization checks before they're granted access tokens.
 
 > [!NOTE]
@@ -133,7 +133,7 @@ As described in the Microsoft security advisory [Potential Risk of Privilege Esc
 
 For more information about identifying these cases in your tenant, see [Migrate away from using email claims for user identification or authorization](/azure/active-directory/develop/migrate-off-email-claim-authorization).
 
-Today, the default behavior is to remove email addresses with unverified domain owners in claims, except for single-tenant apps and for multitenant apps with previous sign-in activity with unverified emails. If your app falls into either of these exceptions and you wish to remove unverified email addresses, set the **removeUnverifiedEmailClaim** property of [authenticationBehaviors](/graph/api/resources/authenticationbehaviors) to `true` as illustrated in the following examples. The request returns a `204 No Content` response code.
+Today, the default behavior is to remove email addresses with unverified domain owners in claims, except for single-tenant apps and for multitenant apps with previous sign-in activity with unverified emails. If your app falls into either of these exceptions and you want to remove unverified email addresses, set the **removeUnverifiedEmailClaim** property of [authenticationBehaviors](/graph/api/resources/authenticationbehaviors) to `true` as shown in the following examples. The request returns a `204 No Content` response code.
 
 ### Remove email addresses with unverified domain owners from claims
 
@@ -187,7 +187,7 @@ Content-Type: application/json
 
 #### Option 2
 
-This pattern for specifying the property in the request body allows you to update other peer properties in the same request.
+This pattern for specifying the property in the request body lets you update other peer properties in the same request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -432,9 +432,9 @@ Content-Type: application/json
 
 ---
 
-## Allow extended Azure AD Graph access until June 30, 2025
+## Allow extended Azure AD Graph access until August 31, 2025
 
-By default, applications created after August 31, 2024 will receive a `403 Unauthorized` error when making requests to Azure AD Graph APIs, unless they're configured to allow extended Azure AD Graph access. Additionally, existing apps created before August 31, 2024 and making requests to Azure AD Graph APIs must be configured to allow extended Azure AD Graph access by February 1, 2025. This extended access is available only until June 30, 2025, when Azure AD Graph is fully retired. After this date, all apps will receive a `403 Unauthorized` error when making requests to Azure AD Graph APIs, regardless of their extended access configuration. For more information, see [June 2024 update on Azure AD Graph API retirement](https://techcommunity.microsoft.com/t5/microsoft-entra-blog/june-2024-update-on-azure-ad-graph-api-retirement/ba-p/4094534).
+By default, applications created after August 31, 2024 receive a `403 Unauthorized` error when making requests to Azure AD Graph APIs, unless you configure them to allow extended Azure AD Graph access. Additionally, you must configure existing apps created before August 31, 2024 and making requests to Azure AD Graph APIs to allow extended Azure AD Graph access by February 1, 2025. This extended access is available only until June 30, 2025, when Azure AD Graph is fully retired. After this date, all apps receive a `403 Unauthorized` error when making requests to Azure AD Graph APIs, regardless of their extended access configuration. For more information, see [June 2024 update on Azure AD Graph API retirement](https://techcommunity.microsoft.com/t5/microsoft-entra-blog/june-2024-update-on-azure-ad-graph-api-retirement/ba-p/4094534).
 
 The following request shows how to update an app to enable extended Azure AD Graph access. The ID used in this example is the object ID of the application, not the application ID. The request returns a `204 No Content` response code.
 

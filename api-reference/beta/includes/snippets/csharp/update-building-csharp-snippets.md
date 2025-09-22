@@ -9,17 +9,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 // Dependencies
 using Microsoft.Graph.Beta.Models;
 
-var requestBody = new Place
+var requestBody = new Building
 {
 	OdataType = "microsoft.graph.building",
-	AdditionalData = new Dictionary<string, object>
+	Tags = new List<string>
 	{
-		{
-			"tags" , new List<string>
-			{
-				"most popular building",
-			}
-		},
+		"most popular building",
 	},
 };
 

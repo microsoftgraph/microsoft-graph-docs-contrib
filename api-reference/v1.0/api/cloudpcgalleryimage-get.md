@@ -62,12 +62,12 @@ The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "get_cloudpcgalleryimage",
-  "sampleKeys": ["MicrosoftWindowsDesktop_windows-ent-cpc_19h2-ent-cpc-os"]
+  "sampleKeys": ["microsoftwindowsdesktop_windows-ent-cpc_win11-24H2-ent-cpc-m365"]
 }
 -->
 
 ``` http
-GET https://graph.microsoft.com/v1.0/deviceManagement/virtualEndpoint/galleryImages/MicrosoftWindowsDesktop_windows-ent-cpc_19h2-ent-cpc-os
+GET https://graph.microsoft.com/v1.0/deviceManagement/virtualEndpoint/galleryImages/microsoftwindowsdesktop_windows-ent-cpc_win11-24H2-ent-cpc-m365
 ```
 
 # [C#](#tab/csharp)
@@ -117,15 +117,15 @@ Content-Type: application/json
 
 {
   "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#cloudPcGalleryImage",
-  "id": "MicrosoftWindowsDesktop_windows-ent-cpc_19h2-ent-cpc-os",
-  "displayName": "Windows 10 Enterprise + OS Optimizations 1909",
-  "publisherName": "MicrosoftWindowsDesktop",
+  "id": "microsoftwindowsdesktop_windows-ent-cpc_win11-24H2-ent-cpc-m365",
+  "displayName": "Windows 11 Enterprise + Microsoft 365 Apps 24H2",
+  "publisherName": "microsoftwindowsdesktop",
   "offerName": "windows-ent-cpc",
-  "skuName": "19h2-ent-cpc-os",
+  "skuName": "win11-24H2-ent-cpc-m365",
   "status": "supported",
   "sizeInGB": 64,
-  "startDate": "2019-11-12",
-  "endDate": "2022-05-10",
-  "expirationDate": "2022-11-10"
+  "startDate": "2024-9-30",
+  "endDate": "2027-10-11",
+  "expirationDate": "2028-04-11"
 }
 ```
