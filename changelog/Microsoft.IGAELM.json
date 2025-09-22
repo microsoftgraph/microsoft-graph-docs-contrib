@@ -3,120 +3,92 @@
     {
       "ChangeList": [
         {
-          "Id": "2a9f1c3b-7e4d-4f1a-b8a2-1c2d3e4f5a66",
-          "ApiChange": "Method",
-          "ChangedApiName": "filterByCurrentUser",
+          "Id": "65c74f1f-0a09-4a59-902f-982163c355f3",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "accessPackageSuggestionFilterByCurrentUserOptions",
           "ChangeType": "Addition",
-          "Description": "Added the `filterByCurrentUser` operation for accessPackageSuggestions to return suggested access packages for the current end user. This endpoint surfaces availableAccessPackage metadata for suggested packages.",
-          "Target": "accessPackageSuggestions"
+          "Description": "Added the **accessPackageSuggestionFilterByCurrentUserOptions** enumeration type.",
+          "Target": "accessPackageSuggestionFilterByCurrentUserOptions"
         },
         {
-          "Id": "2a9f1c3b-7e4d-4f1a-b8a2-1c2d3e4f5a66",
-          "ApiChange": "Resource",
-          "ChangedApiName": "availableAccessPackage",
-          "ChangeType": "Addition",
-          "Description": "Added the `availableAccessPackage` resource to expose basic access package metadata to end users (id, displayName, description).",
-          "Target": "availableAccessPackage"
-        },
-        {
-          "Id": "2a9f1c3b-7e4d-4f1a-b8a2-1c2d3e4f5a66",
-          "ApiChange": "Property",
-          "ChangedApiName": "endUserSettings.isRelatedPeopleSuggestionEnabled",
-          "ChangeType": "Addition",
-          "Description": "Added the boolean property `isRelatedPeopleSuggestionEnabled` on the endUserSettings resource to allow enabling related-people based suggestions for access packages. (Note: later PR 32038 replaces this boolean with a more expressive enum.)",
-          "Target": "endUserSettings"
-        }
-      ],
-      "Id": "2a9f1c3b-7e4d-4f1a-b8a2-1c2d3e4f5a66",
-      "Cloud": "Prod",
-      "Version": "beta",
-      "CreatedDateTime": "2025-03-15T00:00:00Z",
-      "WorkloadArea": "Microsoft.IGAELM",
-      "SubArea": "EntitlementManagement"
-    },
-    {
-      "ChangeList": [
-        {
-          "Id": "d83f6b6e-9b1a-4b5f-8f2c-1a6d2e0c9a11",
-          "ApiChange": "Property",
-          "ChangedApiName": "endUserSettings.accessPackageRelatedPeopleInsightLevel",
-          "ChangeType": "Addition",
-          "Description": "Added the enum property accessPackageRelatedPeopleInsightLevel to the [endUserSettings](https://learn.microsoft.com/en-us/graph/api/resources/endusersettings?view=graph-rest-beta) resource to replace the previous boolean setting and support insight levels (disabled, count, countAndNames).",
-          "Target": "endUserSettings"
-        },
-        {
-          "Id": "f12a3c8b-4ef4-4d2e-9b9b-2b7a3a5e4c22",
-          "ApiChange": "Property",
-          "ChangedApiName": "endUserSettings.isRelatedPeopleSuggestionEnabled",
-          "ChangeType": "Deletion",
-          "Description": "Removed the boolean property isRelatedPeopleSuggestionEnabled from the [endUserSettings](https://learn.microsoft.com/en-us/graph/api/resources/endusersettings?view=graph-rest-beta) resource (replaced by accessPackageRelatedPeopleInsightLevel).",
-          "Target": "endUserSettings"
-        },
-        {
-          "Id": "ee5b7c9d-3b2f-4a6a-9d6f-3c1e8b0f55d3",
-          "ApiChange": "Enum",
+          "Id": "65c74f1f-0a09-4a59-902f-982163c355f3",
+          "ApiChange": "Enumeration",
           "ChangedApiName": "accessPackageSuggestionRelatedPeopleInsightLevel",
           "ChangeType": "Addition",
-          "Description": "Added enum accessPackageSuggestionRelatedPeopleInsightLevel with members: disabled, count, countAndNames, unknownFutureValue. This enum is used by endUserSettings.accessPackageRelatedPeopleInsightLevel to control the level of related-people information returned for suggestions.",
+          "Description": "Added the **accessPackageSuggestionRelatedPeopleInsightLevel** enumeration type.",
           "Target": "accessPackageSuggestionRelatedPeopleInsightLevel"
         },
         {
-          "Id": "b6c4f1a2-7d5c-4c88-8f6a-5a9d2e7c2b44",
-          "ApiChange": "ComplexType",
-          "ChangedApiName": "identity",
+          "Id": "65c74f1f-0a09-4a59-902f-982163c355f3",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessPackageSuggestionReason",
           "ChangeType": "Addition",
-          "Description": "Added the shared complex type [identity](https://learn.microsoft.com/en-us/graph/api/resources/identity?view=graph-rest-beta) with properties id and displayName to model related people.",
-          "Target": "identity"
+          "Description": "Added the [accessPackageSuggestionReason](https://learn.microsoft.com/en-us/graph/api/resources/accessPackageSuggestionReason?view=graph-rest-beta) resource.",
+          "Target": "accessPackageSuggestionReason"
         },
         {
-          "Id": "a1d2e3f4-6b7c-48d1-9e2f-0b3c4d5e6f77",
-          "ApiChange": "Property",
-          "ChangedApiName": "accessPackageSuggestionRelatedPeopleBased.relatedPeople",
+          "Id": "65c74f1f-0a09-4a59-902f-982163c355f3",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessPackageSuggestionRelatedPeopleBased",
           "ChangeType": "Addition",
-          "Description": "Added a non-nullable collection property relatedPeople (Collection(identity)) to the accessPackageSuggestionRelatedPeopleBased complex type so suggestions can include related user identities (id and displayName).",
+          "Description": "Added the [accessPackageSuggestionRelatedPeopleBased](https://learn.microsoft.com/en-us/graph/api/resources/accessPackageSuggestionRelatedPeopleBased?view=graph-rest-beta) resource.",
           "Target": "accessPackageSuggestionRelatedPeopleBased"
         },
         {
-          "Id": "c9f0e2b3-5a6d-4f7b-8123-9d4a5b6c8e99",
-          "ApiChange": "NavigationProperty",
-          "ChangedApiName": "accessPackage",
-          "ChangeType": "Modification",
-          "Description": "Renamed/adjusted the navigation property previously exposed as availableAccessPackage to accessPackage on the access package entity surface (name change only).",
-          "Target": "accessPackage"
-        }
-      ],
-      "Id": "d83f6b6e-9b1a-4b5f-8f2c-1a6d2e0c9a11",
-      "Cloud": "Prod",
-      "Version": "beta",
-      "CreatedDateTime": "2025-04-28T21:10:42Z",
-      "WorkloadArea": "Microsoft.IGAELM",
-      "SubArea": "EntitlementManagement"
-    },
-    {
-      "ChangeList": [
+          "Id": "65c74f1f-0a09-4a59-902f-982163c355f3",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessPackageSuggestionSelfAssignmentHistoryBased",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessPackageSuggestionSelfAssignmentHistoryBased](https://learn.microsoft.com/en-us/graph/api/resources/accessPackageSuggestionSelfAssignmentHistoryBased?view=graph-rest-beta) resource.",
+          "Target": "accessPackageSuggestionSelfAssignmentHistoryBased"
+        },
         {
-          "Id": "9f4d2a1e-3b2c-4d5e-8f7a-0b1c2d3e4f88",
+          "Id": "65c74f1f-0a09-4a59-902f-982163c355f3",
+          "ApiChange": "Resource",
+          "ChangedApiName": "identity",
+          "ChangeType": "Addition",
+          "Description": "Added the [identity](https://learn.microsoft.com/en-us/graph/api/resources/identity?view=graph-rest-beta) resource.",
+          "Target": "identity"
+        },
+        {
+          "Id": "65c74f1f-0a09-4a59-902f-982163c355f3",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessPackageSuggestion",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessPackageSuggestion](https://learn.microsoft.com/en-us/graph/api/resources/accessPackageSuggestion?view=graph-rest-beta) resource.",
+          "Target": "accessPackageSuggestion"
+        },
+        {
+          "Id": "65c74f1f-0a09-4a59-902f-982163c355f3",
           "ApiChange": "Resource",
           "ChangedApiName": "availableAccessPackage",
           "ChangeType": "Addition",
-          "Description": "Added the `availableAccessPackage` entity to expose basic access package information (id, displayName, description) to end users.",
+          "Description": "Added the [availableAccessPackage](https://learn.microsoft.com/en-us/graph/api/resources/availableAccessPackage?view=graph-rest-beta) resource.",
           "Target": "availableAccessPackage"
         },
         {
-          "Id": "9f4d2a1e-3b2c-4d5e-8f7a-0b1c2d3e4f88",
-          "ApiChange": "Method",
-          "ChangedApiName": "resourceRoleScopes",
+          "Id": "65c74f1f-0a09-4a59-902f-982163c355f3",
+          "ApiChange": "Resource",
+          "ChangedApiName": "endUserSettings",
           "ChangeType": "Addition",
-          "Description": "Added GET /identityGovernance/entitlementManagement/availableAccessPackages/{id}/resourceRoleScopes to retrieve access package resource role scopes and related accessPackageResource details for end users.",
-          "Target": "resourceRoleScopes"
+          "Description": "Added the [endUserSettings](https://learn.microsoft.com/en-us/graph/api/resources/endUserSettings?view=graph-rest-beta) resource.",
+          "Target": "endUserSettings"
+        },
+        {
+          "Id": "65c74f1f-0a09-4a59-902f-982163c355f3",
+          "ApiChange": "Method",
+          "ChangedApiName": "filterByCurrentUser",
+          "ChangeType": "Addition",
+          "Description": "Added the [filterByCurrentUser](https://learn.microsoft.com/en-us/graph/api/accessPackageSuggestion-filterByCurrentUser?view=graph-rest-beta) method to the [accessPackageSuggestion](https://learn.microsoft.com/en-us/graph/api/resources/accessPackageSuggestion?view=graph-rest-beta) resource.",
+          "Target": "accessPackageSuggestion"
         }
       ],
-      "Id": "9f4d2a1e-3b2c-4d5e-8f7a-0b1c2d3e4f88",
+      "Id": "65c74f1f-0a09-4a59-902f-982163c355f3",
       "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2025-06-10T00:00:00Z",
-      "WorkloadArea": "Microsoft.IGAELM",
-      "SubArea": "EntitlementManagement"
+      "CreatedDateTime": "2025-09-13T12:21:36.3896446Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
     },
     {
       "ChangeList": [
