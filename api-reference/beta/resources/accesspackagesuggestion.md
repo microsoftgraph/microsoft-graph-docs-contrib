@@ -21,13 +21,13 @@ Represents a suggested access package with associated suggestion reasons in [Mic
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |accessPackageId|String|The identifier of the suggested access package. Read-only.|
-|accessPackageSuggestionReasons|Collection([accessPackageSuggestionReason](accesspackagesuggestionreason.md))|A collection of reasons why this access package is being suggested to the user.|
+|accessPackageSuggestionReason|Collection([accessPackageSuggestionReason](accesspackagesuggestionreason.md))|A collection of reasons why this access package is being suggested to the user.|
 
 ## Relationships
 
 | Relationship | Type        | Description |
 |:-------------|:------------|:------------|
-|availableAccessPackage|[availableAccessPackage](availableaccesspackage.md)|The basic access package information for the suggested package.|
+|accessPackage|[accessPackage](accesspackage.md)|The access package information for the suggested package.|
 
 ## JSON representation
 
@@ -43,14 +43,13 @@ The following JSON representation shows the resource type.
 
 ```json
 {
-  "accessPackageId": "String",
   "accessPackageSuggestionReasons": [
     {
       "@odata.type": "microsoft.graph.accessPackageSuggestionReason"
     }
   ],
-  "availableAccessPackage": {
-    "@odata.type": "microsoft.graph.availableAccessPackage"
+  "accessPackage": {
+    "@odata.type": "microsoft.graph.accessPackage"
   }
 }
 ```
