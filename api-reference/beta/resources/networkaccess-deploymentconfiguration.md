@@ -19,7 +19,7 @@ Represents the configuration details for a deployment performed through the Glob
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|changeType|microsoft.graph.networkaccess.deploymentConfigurationType|Specifies the type of configuration change being deployed. The possible values are: `remoteNetwork`, `enrichedAuditLogsSetting`, `crossTenantAccessSettings`, `conditionalAccessSettings`, `forwardingOptions`, `forwardingProfile`, `filteringProfile`, `unknownFutureValue`.|
+|changeType|String|Specifies the type of configuration change being deployed. The possible values are: `remoteNetwork`, `enrichedAuditLogsSetting`, `crossTenantAccessSettings`, `conditionalAccessSettings`, `forwardingOptions`, `forwardingProfile`, `filteringProfile`, `unknownFutureValue`.|
 |operationName|String|Indicates the name of the operation being performed as part of the deployment configuration.|
 
 
