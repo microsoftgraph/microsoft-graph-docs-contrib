@@ -22,7 +22,7 @@ This resource provides a simplified view of access packages that can be used in 
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List resourceRoleScopes](../api/availableaccesspackage-list-resourcerolescopes.md) | [accessPackageResourceRoleScope](accesspackageresourcerolescope.md) collection | Retrieve the resource role scopes for an available access package. |
+| [List](../api/availableaccesspackage-list-resourcerolescopes.md) | [accessPackageResourceRoleScope](accesspackageresourcerolescope.md) collection | Retrieve the resource role scopes for an available access package. |
 
 ## Properties
 
