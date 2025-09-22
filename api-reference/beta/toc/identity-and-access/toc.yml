@@ -1031,7 +1031,7 @@ items:
           href: ../../api/accesspackage-post-incompatiblegroup.md
         - name: Remove group from
           href: ../../api/accesspackage-delete-incompatiblegroup.md
-      - name: Suggestioned access package
+      - name: Suggested access package
         items:
         - name: Filter by current user
           href: ../../api/accesspackagesuggestions-filterbycurrentuser.md
