@@ -53,7 +53,7 @@ In the request body, supply a JSON representation of a [onPremAuthenticationPoli
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [onPremAuthenticationPolicy](../resources/onpremauthenticationpolicy.md) object in the response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
@@ -92,19 +92,5 @@ The following example shows the response.
 }
 -->
 ``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.onPremAuthenticationPolicy",
-  "id": "2e68a8f2-50ce-b21d-d25d-c34b59675ee2",
-  "deletedDateTime": "String (timestamp)",
-  "description": "String",
-  "displayName": "String",
-  "definition": [
-    "String"
-  ],
-  "isOrganizationDefault": "Boolean"
-}
+HTTP/1.1 204 No Content
 ```
-
