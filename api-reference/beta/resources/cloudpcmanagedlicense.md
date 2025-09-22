@@ -1,6 +1,6 @@
 ---
 title: "cloudPcManagedLicense resource type"
-description: "Represents a license that the Cloud PC service directly manages. This license is distinct from other license types that can be used in the Cloud PC service but aren't managed by it. This entity provides the status and details of policy-managed Cloud PC licenses to help administrators manage license allocation."
+description: "Represents a license that the Cloud PC service directly manages."
 author: "bchopra"
 ms.date: 09/04/2025
 ms.localizationpriority: medium
@@ -21,7 +21,7 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/virtualendpoint-list-managedlicenses.md)|[cloudPcManagedLicense](../resources/cloudpcmanagedlicense.md) collection|Get a list of the cloudPcManagedLicense objects and their properties.|
+|[List](../api/virtualendpoint-list-managedlicenses.md)|[cloudPcManagedLicense](../resources/cloudpcmanagedlicense.md) collection|Get a list of the [cloudPcManagedLicense](../resources/cloudpcmanagedlicense.md) objects and their properties.|
 
 ## Properties
 |Property|Type|Description|
@@ -42,22 +42,22 @@ Inherits from [entity](../resources/entity.md).
 
 ### cloudPcManagedLicenseType values
 
-|Member|Value|Description|
-|:---|:---|:---|
-|frontline|0|Default. Indicates the Cloud PC license is associated with `frontline` license.|
-|reserve|1|The license is a reserve license.|
-|unknownFutureValue|2|Evolvable enumeration Microsoft Sentinel value. Don't use.|
+|Member|Description|
+|:---|:---|
+|frontline|Default. Indicates the Cloud PC license is associated with `frontline` license.|
+|reserve|The license is a reserve license.|
+|unknownFutureValue|Evolvable enumeration Microsoft Sentinel value. Don't use.|
 
 ### cloudPcManagedLicenseStatus values
 
-|Member|Value|Description|
-|:---|:---|:---|
-|enabled|0|Default. Indicates that the license is active and available for assignment. Cloud PCs can be provisioned or continue to run using this license.|
-|expired|1|The license passes its expiration date and is no longer valid for provisioning or active use.|
-|blocked|2|The license is temporarily suspended, often due to administrative action, a grace period, or billing issues. It can't be used for new provisioning until the block is removed.|
-|deleted|3|The license is permanently removed from the organization's Azure subscription and can't be recovered or used.|
-|unknown|4|The license status couldn't be determined. This status might be a temporary state during license synchronization or indicate an issue with retrieving data from the billing system.|
-|unknownFutureValue|5|Evolvable enumeration Microsoft Sentinel value. Don't use.|
+|Member|Description|
+|:---|:---|
+|enabled|Default. Indicates that the license is active and available for assignment. Cloud PCs can be provisioned or continue to run using this license.|
+|expired|The license passes its expiration date and is no longer valid for provisioning or active use.|
+|blocked|The license is temporarily suspended, often due to administrative action, a grace period, or billing issues. It can't be used for new provisioning until the block is removed.|
+|deleted|The license is permanently removed from the organization's Azure subscription and can't be recovered or used.|
+|unknown|The license status couldn't be determined. This status might be a temporary state during license synchronization or indicate an issue with retrieving data from the billing system.|
+|unknownFutureValue|Evolvable enumeration Microsoft Sentinel value. Don't use.|
 
 ## Relationships
 None.

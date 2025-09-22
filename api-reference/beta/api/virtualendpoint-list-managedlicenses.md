@@ -39,7 +39,7 @@ GET /deviceManagement/virtualEndpoint/managedLicenses
 
 ## Optional query parameters
 
-This method supports the $select and $filter OData query parameters to help customize the response. For general information, see OData query parameters.
+This method supports the `$select` and `$filter` OData query parameters to help customize the response. For general information, see OData query parameters.
 
 ## Request headers
 
@@ -77,7 +77,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.cloudPcManagedLicense"
+  "@odata.type": "Collection(microsoft.graph.cloudPcManagedLicense)"
 }
 -->
 ``` http
