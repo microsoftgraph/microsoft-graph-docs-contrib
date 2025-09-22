@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Indicates the state of synchronization for a directory object and its settings between the cloud and on-premises Active Directory. Only the [group](../resources/group.md) resource is supported.
+Indicates the synchronization settings for a directory object between the cloud and on-premises Active Directory for [group](../resources/group.md), [user](../resources/user.md) and [orgContact](../resources/orgcontact.md) resources.
 
 For more information, see [Convert Group Source of Authority to the cloud](/entra/identity/hybrid/concept-source-of-authority-overview).
 
