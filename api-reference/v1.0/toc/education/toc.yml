@@ -102,6 +102,8 @@ items:
     href: ../../api/educationassignment-post-gradingcategory.md
   - name: Remove gradingCategory
     href: ../../api/educationassignment-delete-gradingcategory.md
+  - name: Update gradingCategory
+    href: ../../api/educationgradingcategory-update.md
   - name: Activate assignment
     href: ../../api/educationassignment-activate.md
   - name: Deactivate assignment
@@ -130,14 +132,10 @@ items:
     href: ../../resources/educationassignmentsettings.md
   - name: Get educationAssignmentSettings
     href: ../../api/educationassignmentsettings-get.md
-  - name: Update educationAssignmentSettings
-    href: ../../api/educationassignmentsettings-update.md
   - name: Update
     href: ../../api/educationassignmentsettings-update.md
   - name: Add default grading scheme
     href: ../../api/educationassignmentsettings-put-defaultgradingscheme.md
-  - name: Update gradingCategory
-    href: ../../api/educationgradingcategory-update.md
 - name: Category
   items:
   - name: Category
