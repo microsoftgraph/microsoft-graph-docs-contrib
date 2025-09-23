@@ -76,11 +76,11 @@ In the request body, provide a JSON object with the following parameters.
 | includeAllVersionHistory    | Boolean                            | Optional. If set to `true`, the source file's version history (major versions and minor versions, if any) should be copied to the destination, within the target version setting limit. If `false`, only the latest major version is copied to the destination. The default value is `false`. |
 
 >[!NOTE]
->The `parentReference` parameter should include the `driveId` and `id` parameters for the target folder.
+>The **parentReference** parameter should include the **driveId** and **id** parameters for the target folder.
 
 ## Response
 
-The response returns details about how to [monitor the progress](/graph/long-running-actions-overview) of the copy, upon accepting the request. The response indicates whether the copy operation was accepted or rejected - for example, if the destination filename is already in use.
+The response returns details about how to [monitor the progress](/graph/long-running-actions-overview) of the copy, upon accepting the request. The response indicates whether the copy operation was accepted or rejected; for example, if the destination filename is already in use.
 
 ## Examples
 
