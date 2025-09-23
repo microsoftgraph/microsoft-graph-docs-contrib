@@ -510,6 +510,7 @@
             "cloudPcExternalPartnerSetting",
             "cloudPcFrontLineServicePlan",
             "cloudPcGalleryImage",
+            "cloudPcManagedLicense",
             "cloudPcOnPremisesConnection",
             "cloudPcOrganizationSettings",
             "cloudPcProvisioningPolicy",
