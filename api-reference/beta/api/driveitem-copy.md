@@ -21,7 +21,7 @@ The copy operation is restricted to 30,000 driveItems. For more information, see
 > [!IMPORTANT]
 > * Metadata isn't retained when a **driveItem** is copied, including system metadata and custom metadata. An entirely new **driveItem** is created in the target location instead.
 > * File versions are only retained when the **includeAllVersionHistory** parameter is explicitly set to `true`. Otherwise, only the latest version is copied.
-> * Cross-geo copy isn't supported when using App-only authentication.
+> * Cross-geo copy isn't supported when using app-only authentication.
 > * A known issue occurs when the **includeAllVersionHistory** request parameter is ignored if the **name** request parameter is also passed. To avoid this issue, perform the copy operation without the **name** parameter first, then rename the target item when the copy completes.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
