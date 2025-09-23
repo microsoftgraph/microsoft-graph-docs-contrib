@@ -69,7 +69,7 @@ In the request body, provide a JSON object with the following parameters.
 | sendInvitation   | Boolean                                         | Specifies if an email or post is generated (`false`) or if the permission is recently created (`true`).            |
 | roles            | String collection                              | Specifies the roles that are granted to the recipients of the sharing invitation.                         |
 | expirationDateTime | DateTimeOffset                       | Specifies the **dateTime** after which the permission expires. For OneDrive for work or school and SharePoint, **expirationDateTime** is only applicable for **sharingLink** permissions. Available on OneDrive for work or school, SharePoint, and premium personal OneDrive accounts. |
-| password           | String                         | The password set on the invite by the creator. Optional and OneDrive for home only. |
+| password           | String                         | The password set on the invite by the creator. Optional, and OneDrive for home only. |
 | retainInheritedPermissions | Boolean                        | Optional. If `true` (default), any existing inherited permissions are retained on the shared item when sharing this item for the first time. If `false`, all existing permissions are removed when sharing for the first time. |
 
 ## HTTP request
@@ -80,11 +80,11 @@ For more information about how errors are returned, see [Error responses](/graph
 
 ### Partial success response
 
-When inviting multiple recipients, it's possible for the notification to succeed for some and fail for others. In this case, the service returns a partial success response with a `207 Multi-Status` response code. When partial success is returned, the response for each failed recipient contains an **error** object with information about what went wrong and how to fix it. For more information, see [Example 2](#example-2-send-sharing-invitation-with-partial-success).
+When inviting multiple recipients, it's possible for the notification to succeed for some and fail for others. In this case, the service returns a partial success response with a `207 Multi-Status` status code. When partial success is returned, the response for each failed recipient contains an **error** object with information about what went wrong and how to fix it. For more information, see [Example 2](#example-2-send-sharing-invitation-with-partial-success).
 
 ### Send invitation notification errors
 
-The following are some other errors that your app might encounter within the nested **innererror** objects when sending notification fails. Apps aren't required to handle these errors.
+The following table shows some other errors that your app might encounter within the nested **innererror** objects when sending notification fails. Apps aren't required to handle these errors.
 
 | Code                           | Description                                                                          |
 |:-------------------------------|:--------------------------------------------------------------------------------------

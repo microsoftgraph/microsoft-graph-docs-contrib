@@ -12,7 +12,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Send a sharing invitation for a [driveItem](../resources/driveitem.md). A sharing invitation provides permissions to the recipients and optionally sends an email to the recipients to notify them the item was shared.
+Send a sharing invitation for a [driveItem](../resources/driveitem.md). A sharing invitation provides permissions to the recipients and, optionally, sends them an email to notify them that the item was shared.
 
 > [!IMPORTANT]
 > * Permissions can’t be created or modified on the root **driveItem** of [drives](../resources/drive.md) with a **driveType** of `personal` (OneDrive for home).
@@ -82,11 +82,11 @@ In the request body, provide a JSON object with the following parameters.
 
 If successful, this method returns a `200 OK` response code and a collection of [permission](../resources/permission.md) objects in the response body.
 
-For more information about how errors are returned, see [Error responses][/graph/errors].
+For more information about how errors are returned, see [Error responses](/graph/errors).
 
 ### Partial success response
 
-When inviting multiple recipients, it's possible for the notification to succeed for some and fail for others. In this case, the service returns a partial success response with a `207 Multi-Status` response code. When partial success is returned, the response for each failed recipient contains an **error** object with information about what went wrong and how to fix it. For more information, see [Example 2](#example-2-send-sharing-invitation-with-partial-success).
+When inviting multiple recipients, it's possible for the notification to succeed for some and fail for others. In this case, the service returns a partial success response with a `207 Multi-Status` status code. When partial success is returned, the response for each failed recipient contains an **error** object with information about what went wrong and how to fix it. For more information, see [Example 2](#example-2-send-sharing-invitation-with-partial-success).
 
 ### Send invitation notification errors
 
@@ -106,7 +106,7 @@ The following table shows some other errors that your app might encounter within
 
 ### Example 1: Send a sharing invitation
 
-The following example shows how to send a sharing invitation to a user with the email address `ryan@contoso.org`, including a message regarding a file under collaboration. The invitation grants Ryan read-write access to the file.
+The following example shows how to send a sharing invitation to a user with the email address `ryan@contoso.com`, including a message regarding a file under collaboration. The invitation grants Ryan read-write access to the file.
 
 #### Request
 
