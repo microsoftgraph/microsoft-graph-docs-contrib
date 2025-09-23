@@ -4,15 +4,19 @@ ms.date: 09/16/2025
 title: Send an invite to access an item
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
-description: "Sends a sharing invitation for a driveItem."
+description: "Send a sharing invitation for a driveItem."
 doc_type: apiPageType
 ---
+
 # Send a sharing invitation
 
 Namespace: microsoft.graph
 
-Sends a sharing invitation for a **driveItem**.
-A sharing invitation provides permissions to the recipients and optionally sends an email to the recipients to notify them the item was shared. See the [Remarks](#remarks) section below for restrictions.
+Send a sharing invitation for a [driveItem](../resources/driveitem.md). A sharing invitation provides permissions to the recipients and optionally sends an email to the recipients to notify them the item was shared.
+
+> [!IMPORTANT]
+> * Permissions can’t be created or modified on the root **driveItem** of [drives](../resources/drive.md) with a **driveType** of `personal` (OneDrive for home).
+> * _New_ guests can't be invited using app-only access. Existing guests can be invited using app-only requests.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -74,14 +78,17 @@ In the request body, provide a JSON object with the following parameters.
 | password           | String                         | The password set on the invite by the creator. Optional and OneDrive Personal only. |
 | retainInheritedPermissions | Boolean                        | Optional. If `true` (default), any existing inherited permissions are retained on the shared item when sharing this item for the first time. If `false`, all existing permissions are removed when sharing for the first time. |
 
-## Example
+## Response
 
-This example sends a sharing invitation to a user with email address "ryan@contoso.org" with a message about a file being collaborated on.
-The invitation grants Ryan read-write access to the file.
+If successful, this method returns a `200 OK` response code and a collection of [permission](../resources/permission.md) objects in the response body.
 
-### HTTP request
+For more information about how errors are returned, see [Error responses][/graph/errors].
 
-If successful, this method returns `200 OK` response code and [permission](../resources/permission.md) collection object in the response body.
+## Examples
+
+### Request
+
+The following example shows how to send a sharing invitation to a user with the email address `ryan@contoso.org`, including a message regarding a file under collaboration. The invitation grants Ryan read-write access to the file.
 
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "send-sharing-invite", "@odata.type": "microsoft.graph.inviteParameters", "scopes": "files.readwrite", "target": "action" } -->
@@ -252,20 +259,11 @@ Apps aren't required to handle these errors.
 
 >**Note:** The service can add new error codes or stop returning old ones at any time.
 
-## Remarks
+## Related content
 
-* [Drives](../resources/drive.md) with a **driveType** of `personal` (OneDrive personal) can't create or modify permissions on the root **driveItem**.
-* _New_ guests can't be invited using app-only access. Existing guests can be invited using app-only requests.
-* For a list of available roles, see [roles property values](../resources/permission.md#roles-property-values).
-
-## Error responses
-
-Read the [Error Responses][error-response] topic for more information about
-how errors are returned.
-
+For a list of available roles, see [roles property values](../resources/permission.md#roles-property-values).
 
 [driveRecipient]: ../resources/driverecipient.md
-[error-response]: /graph/errors
 [sharing link]: ../resources/permission.md#sharing-links
 
 <!-- {
