@@ -76,7 +76,7 @@ GET /identity/conditionalAccess/deletedItems/namedLocations/{id}
 
 ## Optional query parameters
 
-None.
+This method doesn't support OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -250,7 +250,7 @@ Content-Type: application/json
 
 #### Request
 
-The following example shows a request for a conditionalAccessPolicy.
+The following example shows a request for a **conditionalAccessPolicy**.
 <!-- {
   "blockType": "request",
   "name": "get_policydeletableitem_conditionalAccessPolicy"
@@ -347,7 +347,7 @@ The following example shows the response.
 
 #### Request
 
-The following example shows a request for a namedLocation.
+The following example shows a request for a **namedLocation**.
 <!-- {
   "blockType": "request",
   "name": "get_policydeletableitem_namedLocation"
