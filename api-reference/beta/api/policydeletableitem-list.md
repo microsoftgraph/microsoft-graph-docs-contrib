@@ -286,7 +286,7 @@ Content-Type: application/json
 The following example shows a request for a conditionalAccessPolicy.
 <!-- {
   "blockType": "request",
-  "name": "get_policydeletableitem_crossTenantIdentitySyncPolicyPartner"
+  "name": "get_policydeletableitem_conditionalAccessPolicy"
 }
 -->
 ```HTTP
@@ -306,6 +306,7 @@ The following example shows the response.
 -->
 ```http
   HTTP/1.1 200 OK 
+  
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/deletedItems/policies",
     "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET identity/conditionalAccess/deletedItems/policies?$select=conditions,createdDateTime",
@@ -386,7 +387,7 @@ The following example shows the response.
 The following example shows a request for a namedLocation.
 <!-- {
   "blockType": "request",
-  "name": "get_policydeletableitem_crossTenantIdentitySyncPolicyPartner"
+  "name": "get_policydeletableitem_namedLocation"
 }
 -->
 ```HTTP
@@ -406,6 +407,7 @@ The following example shows the response.
 -->
 ```http
   HTTP/1.1 200 OK 
+
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/deletedItems/namedLocations",
     "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET identity/conditionalAccess/deletedItems/namedLocations?$select=createdDateTime,displayName",
