@@ -22,8 +22,8 @@ Inherits from [stsPolicy](../resources/stspolicy.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/onpremauthenticationpolicy-list.md)|[onPremAuthenticationPolicy](../resources/onpremauthenticationpolicy.md) collection|Get a list of the onPremAuthenticationPolicy objects and their properties.|
-|[Create](../api/onpremauthenticationpolicy-create.md)|[onPremAuthenticationPolicy](../resources/onpremauthenticationpolicy.md)|Create a new onPremAuthenticationPolicy object.|
+|[List](../api/policyroot-list-onpremauthenticationpolicies.md)|[onPremAuthenticationPolicy](../resources/onpremauthenticationpolicy.md) collection|Get a list of the onPremAuthenticationPolicy objects and their properties.|
+|[Create](../api/policyroot-post-onpremauthenticationpolicies.md)|[onPremAuthenticationPolicy](../resources/onpremauthenticationpolicy.md)|Create a new onPremAuthenticationPolicy object.|
 |[Get](../api/onpremauthenticationpolicy-get.md)|[onPremAuthenticationPolicy](../resources/onpremauthenticationpolicy.md)|Read the properties and relationships of [onPremAuthenticationPolicy](../resources/onpremauthenticationpolicy.md) object.|
 |[Update](../api/onpremauthenticationpolicy-update.md)|[onPremAuthenticationPolicy](../resources/onpremauthenticationpolicy.md)|Update the properties of an onPremAuthenticationPolicy object.|
 |[Delete](../api/onpremauthenticationpolicy-delete.md)|None|Delete an onPremAuthenticationPolicy object.|
@@ -32,6 +32,7 @@ Inherits from [stsPolicy](../resources/stspolicy.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
+|deletedDateTime|DateTimeOffset|Date and time when this object was deleted. Always `null` when the object isn't deleted. Inherited from [directoryObject](../resources/directoryobject.md). Optional.|
 |definition|String collection|A string collection containing a JSON string that defines the rules and settings for this policy. See below for more details about the JSON schema for this property. Required. Inherited from [stsPolicy](../resources/stspolicy.md).|
 |description|String|Description for this policy. Inherited from [policyBase](../resources/policybase.md).|
 |displayName|String|Display name for this policy. Required. Inherited from [policyBase](../resources/policybase.md).|

@@ -1,5 +1,5 @@
 ---
-title: "Delete onPremAuthenticationPolicy"
+title: "Delete an onPremAuthenticationPolicy"
 description: "Delete onPremAuthenticationPolicy."
 ms.localizationpriority: medium
 author: "maheshwaria"
@@ -8,7 +8,7 @@ doc_type: "apiPageType"
 ms.date: 08/15/2025
 ---
 
-# Delete onPremAuthenticationPolicy
+# Delete an onPremAuthenticationPolicy
 
 Namespace: microsoft.graph
 

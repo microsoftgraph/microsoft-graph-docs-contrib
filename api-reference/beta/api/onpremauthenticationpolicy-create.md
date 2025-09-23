@@ -1,5 +1,5 @@
 ---
-title: "Create onPremAuthenticationPolicy"
+title: "Create new onPremAuthenticationPolicy"
 description: "Create a new onPremAuthenticationPolicy."
 ms.localizationpriority: medium
 author: "maheshwaria"
@@ -8,7 +8,7 @@ doc_type: "apiPageType"
 ms.date: 08/15/2025
 ---
 
-# Create onPremAuthenticationPolicy
+# Create new onPremAuthenticationPolicy
 
 Namespace: microsoft.graph
 
