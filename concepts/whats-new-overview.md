@@ -91,7 +91,7 @@ Added a note to the **artifactCount** property of the [granularMailboxRestoreArt
 
 ### Files
 
-- The new [SharePoint migration API](/graph/api/resources/sharepointmigrationjob?view=graph-rest-beta&preserve-view=true) for [fileStorageContainer](/graph/api/resources/filestoragecontainer?view=graph-rest-beta&preserve-view=true) enables you to programmatically schedule and manage bulk migrations of content from intermediary Azure blob storage containers to SharePoint or OneDrive.
+- The new SharePoint Embedded migration API enables you to programmatically schedule [SharePoint migration jobs](/graph/api/resources/sharepointmigrationjob?view=graph-rest-beta&preserve-view=true) for bulk-migrating content from intermediary Azure blob storage containers to the target [fileStorageContainer](/graph/api/resources/filestoragecontainer?view=graph-rest-beta&preserve-view=true).
 - Defined the following endpoints as supported for the [driveItem: discardCheckout](/graph/api/driveitem-discardcheckout?view=graph-rest-beta&preserve-view=true) API:
   - `/drives/{driveId}/items/{itemId}/discardCheckout`
   - `/groups/{groupId}/drive/items/{itemId}/discardCheckout`
