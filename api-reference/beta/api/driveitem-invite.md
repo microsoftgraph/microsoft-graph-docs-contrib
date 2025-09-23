@@ -72,7 +72,7 @@ In the request body, provide a JSON object with the following parameters.
 | password           | String                         | The password set on the invite by the creator. Optional, and OneDrive for home only. |
 | retainInheritedPermissions | Boolean                        | Optional. If `true` (default), any existing inherited permissions are retained on the shared item when sharing this item for the first time. If `false`, all existing permissions are removed when sharing for the first time. |
 
-## HTTP request
+## Response
 
 If successful, this method returns a `200 OK` response code and a collection of [permission](../resources/permission.md) objects in the response body.
 
