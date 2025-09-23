@@ -58,7 +58,7 @@ If successful, this action returns a `200 OK` response code and a [namedLocation
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "namedlocationthis.restore"
+  "name": "countrynamedlocationthis.restore"
 }
 -->
 ``` http
