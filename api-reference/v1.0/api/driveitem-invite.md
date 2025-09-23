@@ -214,7 +214,7 @@ The following example shows a request that partially succeeds.
 
 #### Request
 The following example shows a request.
-<!-- { "blockType": "request", "name": "send-sharing-invite-partially-success", "@odata.type": "microsoft.graph.inviteParameters", "scopes": "files.readwrite", "target": "action" } -->
+<!-- { "blockType": "request", "name": "send-sharing-invite-with-partial-success", "@odata.type": "microsoft.graph.inviteParameters", "scopes": "files.readwrite", "target": "action" } -->
 
 ```http
 POST https://graph.microsoft.com/v1.0/me/drive/items/{item-id}/invite
