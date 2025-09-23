@@ -33,5 +33,19 @@ None.
 |operations|[microsoft.graph.teamsAdministration.telephoneNumberLongRunningOperation](../resources/teamsadministration-telephonenumberlongrunningoperation.md) collection|Represents a collection of asynchronous telephone number management operations.|
 
 ## JSON representation
-None.
+
+The following JSON representation shows the resource type.
+<!-- {
+  "blockType": "resource",
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.teamsAdministration.telephoneNumberManagementRoot",
+  "baseType": "microsoft.graph.entity",
+  "openType": false
+}
+-->
+``` json
+{
+  "@odata.type": "#microsoft.graph.teamsAdministration.telephoneNumberManagementRoot"
+}
+```
 
