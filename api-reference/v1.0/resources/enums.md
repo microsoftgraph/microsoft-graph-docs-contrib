@@ -796,6 +796,15 @@ Namespace: microsoft.graph
 | draft |
 | published |
 
+### educationSpeechType values
+
+|Member|
+|:---|
+|informative|
+|personal|
+|persuasive|
+|unknownFutureValue|
+
 ### fido2RestrictionEnforcementType values
 
 | Member |
