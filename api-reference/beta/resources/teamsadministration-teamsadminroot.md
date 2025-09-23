@@ -31,7 +31,7 @@ None.
 |Relationship|Type|Description|
 |:---|:---|:---|
 |numberAssignments|[microsoft.graph.teamsAdministration.numberAssignment](../resources/teamsadministration-numberassignment.md) collection|Represents a collection of synchronous telephone number management operations.|
-|operations|[microsoft.graph.teamsAdministration.telephoneNumberLongRunningOperation](../resources/teamsadministration-telephonenumberlongrunningoperation.md) collection|Represents asynchronous telephone number management operation.|
+|operations|[microsoft.graph.teamsAdministration.telephoneNumberLongRunningOperation](../resources/teamsadministration-telephonenumberlongrunningoperation.md) collection|Represents asynchronous telephone number management operations.|
 |telephoneNumberManagement|[microsoft.graph.teamsAdministration.telephoneNumberManagementRoot](../resources/teamsadministration-telephonenumbermanagementroot.md)|Represents a collection of available telephone number management operations.|
 |userConfigurations|[microsoft.graph.teamsAdministration.teamsUserConfiguration](../resources/teamsadministration-teamsuserconfiguration.md) collection|Represents the configuration information of users who have accounts hosted on Microsoft Teams.|
 
