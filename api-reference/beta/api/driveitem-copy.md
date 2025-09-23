@@ -73,7 +73,7 @@ In the request body, provide a JSON object with the following parameters.
 | parentReference | [ItemReference](../resources/itemreference.md) | Optional. Reference to the parent item the copy is created in.                                         |
 | name            | string                                         | Optional. The new name for the copy. If this information isn't provided, the same name is used as the original.    |
 | childrenOnly    | Boolean                                        | Optional. If set to `true`, the children of the **driveItem** are copied but not the **driveItem** itself. The default value is `false`. Valid _only_ on folder items. |
-| includeAllVersionHistory    | Boolean                            | Optional. If set to `true`, source files version history (major versions and minor versions, if any) should be copied to the destination, within the target version setting limit. If `false`, only the latest major version is copied to the destination. The default value is `false`. |
+| includeAllVersionHistory    | Boolean                            | Optional. If set to `true`, the source file's version history (major versions and minor versions, if any) should be copied to the destination, within the target version setting limit. If `false`, only the latest major version is copied to the destination. The default value is `false`. |
 
 >[!NOTE]
 >The `parentReference` parameter should include the `driveId` and `id` parameters for the target folder.
