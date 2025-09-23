@@ -1,22 +1,20 @@
 ---
-title: "List policies"
-description: "Retrieve a list of conditionalAccessPolicy objects."
+title: "List conditionalAccessPolicy objects"
+description: "Get a list of the conditionalAccessPolicy objects and their properties."
+author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.date: 08/11/2025
 ms.localizationpriority: medium
-author: "lisaychuang"
-ms.reviewer: conditionalaccesspm
-ms.subservice: "entra-sign-in"
+ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
 doc_type: apiPageType
-ms.date: 10/17/2024
-ms.custom: sfi-ga-nochange
 ---
 
-# List policies
+# List conditionalAccessPolicy objects
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md) objects.
+Get a list of the conditionalAccessPolicy objects and their properties.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -24,27 +22,34 @@ Retrieve a list of [conditionalAccessPolicy](../resources/conditionalaccesspolic
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "permissions", "name": "conditionalaccessroot_list_policies" } -->
+<!-- {
+  "blockType": "permissions",
+  "name": "conditionalaccessroot-list-policies-permissions"
+}
+-->
 [!INCLUDE [permissions-table](../includes/permissions/conditionalaccessroot-list-policies-permissions.md)]
-
-[!INCLUDE [rbac-conditionalaccess-apis-read](../includes/rbac-for-apis/rbac-conditionalaccess-apis-read.md)]
 
 ## HTTP request
 
-<!-- { "blockType": "ignored" } -->
-
-```http
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+GET /authenticationStrengthUsage/mfa
+GET /authenticationStrengthUsage/none
+GET /policies/conditionalAccessPolicies
 GET /identity/conditionalAccess/policies
 ```
 
 ## Optional query parameters
 
-This method supports the `$skip`, `$top`, `$count`, `$filter`, `$orderby`, and `$select` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
-| Name      |Description|
-|:----------|:----------|
+|Name|Description|
+|:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
@@ -60,243 +65,53 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Request
 
 The following example shows a request.
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_policies"
-}-->
-
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/identity/conditionalAccess/policies?$filter=displayName eq 'SimplePolicy1' or displayName eq 'SimplePolicy2'
+  "name": "list_conditionalaccesspolicy"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/authenticationStrengthUsage/mfa
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-policies-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-policies-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-policies-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-policies-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/get-policies-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/get-policies-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### Response
 
 The following example shows the response.
-
-> **Note:** The response object shown here might be shortened for readability.
-
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": false,
-  "@odata.type": "microsoft.graph.conditionalAccessPolicy",
-  "isCollection": true
-} -->
-
-```http
+  "truncated": true,
+  "@odata.type": "microsoft.graph.conditionalAccessPolicy"
+}
+-->
+``` http
 HTTP/1.1 200 OK
-Content-type: application/json
-
+Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#conditionalAccess/policies",
-    "value": [
-        {
-            "id": "2b31ac51-b855-40a5-a986-0a4ed23e9008",
-            "templateId": null,
-            "displayName": "CA001: Require multi-factor authentication for admins",
-            "createdDateTime": "2021-11-02T14:17:09.1686157Z",
-            "modifiedDateTime": "2024-01-03T20:07:59.0369305Z",
-            "state": "enabled",
-            "sessionControls": null,
-            "conditions": {
-                "userRiskLevels": [],
-                "signInRiskLevels": [],
-                "clientAppTypes": [
-                    "all"
-                ],
-                "servicePrincipalRiskLevels": [],
-                "insiderRiskLevels": null,
-                "platforms": null,
-                "locations": null,
-                "devices": null,
-                "clientApplications": null,
-                "applications": {
-                    "includeApplications": [
-                        "All"
-                    ],
-                    "excludeApplications": [],
-                    "includeUserActions": [],
-                    "includeAuthenticationContextClassReferences": [],
-                    "applicationFilter": null
-                },
-                "users": {
-                    "includeUsers": [],
-                    "excludeUsers": [],
-                    "includeGroups": [],
-                    "excludeGroups": [
-                        "eedad040-3722-4bcb-bde5-bc7c857f4983"
-                    ],
-                    "includeRoles": [
-                        "62e90394-69f5-4237-9190-012177145e10",
-                        "194ae4cb-b126-40b2-bd5b-6091b380977d",
-                        "f28a1f50-f6e7-4571-818b-6a12f2af6b6c",
-                        "29232cdf-9323-42fd-ade2-1d097af3e4de",
-                        "b1be1c3e-b65d-4f19-8427-f6fa0d97feb9",
-                        "729827e3-9c14-49f7-bb1b-9608f156bbb8",
-                        "b0f54661-2d74-4c50-afa3-1ec803f12efe",
-                        "fe930be7-5e62-47db-91af-98c3a49a38b1",
-                        "c4e39bd9-1100-46d3-8c65-fb160da0071f",
-                        "9b895d92-2cd3-44c7-9d02-a6ac2d5ea5c3",
-                        "158c047a-c907-4556-b7ef-446551a6b5f7",
-                        "966707d0-3269-4727-9be2-8c3a10f19b9d",
-                        "7be44c8a-adaf-4e2a-84d6-ab2649e08a13",
-                        "e8611ab8-c189-46e8-94e1-60213ab1f814",
-                        "f2ef992c-3afb-46b9-b7cf-a126ee74c451"
-                    ],
-                    "excludeRoles": [],
-                    "includeGuestsOrExternalUsers": null,
-                    "excludeGuestsOrExternalUsers": null
-                }
-            },
-            "grantControls": {
-                "operator": "OR",
-                "builtInControls": [
-                    "mfa"
-                ],
-                "customAuthenticationFactors": [],
-                "termsOfUse": [],
-                "authenticationStrength@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/conditionalAccessPolicies('2b31ac51-b855-40a5-a986-0a4ed23e9008')/grantControls/authenticationStrength/$entity",
-                "authenticationStrength": null
-            }
-        },
-        {
-            "id": "10ef4fe6-5e51-4f5e-b5a2-8fed19d0be67",
-            "templateId": null,
-            "displayName": "CA008: Require password change for high-risk users",
-            "createdDateTime": "2021-11-02T14:26:29.1005248Z",
-            "modifiedDateTime": "2024-01-30T23:11:08.549481Z",
-            "state": "enabled",
-            "conditions": {
-                "userRiskLevels": [
-                    "high"
-                ],
-                "signInRiskLevels": [],
-                "clientAppTypes": [
-                    "all"
-                ],
-                "servicePrincipalRiskLevels": [],
-                "insiderRiskLevels": null,
-                "platforms": null,
-                "locations": null,
-                "devices": null,
-                "clientApplications": null,
-                "applications": {
-                    "includeApplications": [
-                        "All"
-                    ],
-                    "excludeApplications": [],
-                    "includeUserActions": [],
-                    "includeAuthenticationContextClassReferences": [],
-                    "applicationFilter": null
-                },
-                "users": {
-                    "includeUsers": [
-                        "All"
-                    ],
-                    "excludeUsers": [],
-                    "includeGroups": [],
-                    "excludeGroups": [
-                        "eedad040-3722-4bcb-bde5-bc7c857f4983"
-                    ],
-                    "includeRoles": [],
-                    "excludeRoles": [],
-                    "includeGuestsOrExternalUsers": null,
-                    "excludeGuestsOrExternalUsers": null
-                }
-            },
-            "grantControls": {
-                "operator": "AND",
-                "builtInControls": [
-                    "passwordChange"
-                ],
-                "customAuthenticationFactors": [],
-                "termsOfUse": [],
-                "authenticationStrength@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/conditionalAccessPolicies('10ef4fe6-5e51-4f5e-b5a2-8fed19d0be67')/grantControls/authenticationStrength/$entity",
-                "authenticationStrength": {
-                    "id": "00000000-0000-0000-0000-000000000002",
-                    "createdDateTime": "2021-12-01T08:00:00Z",
-                    "modifiedDateTime": "2021-12-01T08:00:00Z",
-                    "displayName": "Multifactor authentication",
-                    "description": "Combinations of methods that satisfy strong authentication, such as a password + SMS",
-                    "policyType": "builtIn",
-                    "requirementsSatisfied": "mfa",
-                    "allowedCombinations": [
-                        "windowsHelloForBusiness",
-                        "fido2",
-                        "x509CertificateMultiFactor",
-                        "deviceBasedPush",
-                        "temporaryAccessPassOneTime",
-                        "temporaryAccessPassMultiUse",
-                        "password,microsoftAuthenticatorPush",
-                        "password,softwareOath",
-                        "password,hardwareOath",
-                        "password,sms",
-                        "password,voice",
-                        "federatedMultiFactor",
-                        "microsoftAuthenticatorPush,federatedSingleFactor",
-                        "softwareOath,federatedSingleFactor",
-                        "hardwareOath,federatedSingleFactor",
-                        "sms,federatedSingleFactor",
-                        "voice,federatedSingleFactor"
-                    ],
-                    "combinationConfigurations@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/conditionalAccessPolicies('10ef4fe6-5e51-4f5e-b5a2-8fed19d0be67')/grantControls/authenticationStrength/combinationConfigurations",
-                    "combinationConfigurations": []
-                }
-            },
-            "sessionControls": {
-                "disableResilienceDefaults": null,
-                "applicationEnforcedRestrictions": null,
-                "cloudAppSecurity": null,
-                "persistentBrowser": null,
-                "signInFrequency": {
-                    "value": null,
-                    "type": null,
-                    "authenticationType": "primaryAndSecondaryAuthentication",
-                    "frequencyInterval": "everyTime",
-                    "isEnabled": true
-                }
-            }
-        }
-    ]
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.conditionalAccessPolicy",
+      "deletedDateTime": "String (timestamp)",
+      "id": "58d1ad6b-7388-e083-9930-5c1b962bd7f3",
+      "createdDateTime": "String (timestamp)",
+      "modifiedDateTime": "String (timestamp)",
+      "displayName": "String",
+      "description": "String",
+      "state": "String",
+      "conditions": {
+        "@odata.type": "microsoft.graph.conditionalAccessConditionSet"
+      },
+      "grantControls": {
+        "@odata.type": "microsoft.graph.conditionalAccessGrantControls"
+      },
+      "sessionControls": {
+        "@odata.type": "microsoft.graph.conditionalAccessSessionControls"
+      }
+    }
+  ]
 }
 ```
-
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "List policies",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->
 
 
