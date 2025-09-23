@@ -19,13 +19,10 @@ Create a copy of a [driveItem][item-resource] asynchronously. You can optionally
 The copy operation is restricted to 30,000 driveItems. For more information, see [SharePoint limits](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits#moving-and-copying-across-sites).
 
 > [!IMPORTANT]
-> Metadata is not retained when a driveItem is copied, including system metadata and custom metadata. An entirely new driveItem is created in the target location instead.
-> File versions are only retained when the `includeAllVersionHistory` parameter is explicitly set to `true`. Otherwise, only the latest version is copied.
-
-> [!NOTE]
-> Cross-geo copy is not supported when using App-only authentication.
->
-> There's a known issue where the `includeAllVersionHistory` request parameter is ignored if the `name` request parameter is also passed. Perform the copy operation without the `name` parameter first, and then rename the target item once the copy completes.
+> * Metadata isn't retained when a **driveItem** is copied, including system metadata and custom metadata. An entirely new **driveItem** is created in the target location instead.
+> * File versions are only retained when the **includeAllVersionHistory** parameter is explicitly set to `true`. Otherwise, only the latest version is copied.
+> * Cross-geo copy isn't supported when using App-only authentication.
+> * A known issue occurs when the **includeAllVersionHistory** request parameter is ignored if the **name** request parameter is also passed. To avoid this issue, perform the copy operation without the **name** parameter first, then rename the target item once the copy completes.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
