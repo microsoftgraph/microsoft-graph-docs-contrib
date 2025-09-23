@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Send a sharing invitation for a [driveItem](../resources/driveitem.md). A sharing invitation provides permissions to the recipients and optionally sends an email to the recipients to notify them the item was shared.
+Send a sharing invitation for a [driveItem](../resources/driveitem.md). A sharing invitation provides permissions to the recipients and, optionally, sends them an email to notify them that the item was shared.
 
 > [!IMPORTANT]
 > * Permissions can’t be created or modified on the root **driveItem** of [drives](../resources/drive.md) with a **driveType** of `personal` (OneDrive for home).
@@ -66,23 +66,23 @@ In the request body, provide a JSON object with the following parameters.
 | recipients       | Collection([driveRecipient](../resources/driverecipient.md)) | A collection of recipients who receive access and the sharing invitation.                                            |
 | message          | String                                          | A plain text formatted message that is included in the sharing invitation. Maximum length 2,000 characters. |
 | requireSignIn    | Boolean                                         | Specifies where the recipient of the invitation is required to sign-in to view the shared item.            |
-| sendInvitation   | Boolean                                         | Specifies if an email or post is generated (false) or if the permission is recently created (true).            |
-| roles            | Collection(String)                              | Specifies the roles that are granted to the recipients of the sharing invitation.                         |
-| expirationDateTime | DateTimeOffset                       | Specifies the **dateTime** after which the permission expires. For OneDrive for Business and SharePoint, **expirationDateTime** is only applicable for **sharingLink** permissions. Available on OneDrive for Business, SharePoint, and premium personal OneDrive accounts. |
-| password           | String                         | The password set on the invite by the creator. Optional and OneDrive Personal only. |
+| sendInvitation   | Boolean                                         | Specifies if an email or post is generated (`false`) or if the permission is recently created (`true`).            |
+| roles            | String collection                              | Specifies the roles that are granted to the recipients of the sharing invitation.                         |
+| expirationDateTime | DateTimeOffset                       | Specifies the **dateTime** after which the permission expires. For OneDrive for work or school and SharePoint, **expirationDateTime** is only applicable for **sharingLink** permissions. Available on OneDrive for work or school, SharePoint, and premium personal OneDrive accounts. |
+| password           | String                         | The password set on the invite by the creator. Optional and OneDrive for home only. |
 | retainInheritedPermissions | Boolean                        | Optional. If `true` (default), any existing inherited permissions are retained on the shared item when sharing this item for the first time. If `false`, all existing permissions are removed when sharing for the first time. |
 
 ## HTTP request
 
-If successful, this method returns `200 OK` response code and a collection of [permission](../resources/permission.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [permission](../resources/permission.md) objects in the response body.
 
-For more information about how errors are returned, see [Error responses][error-response].
+For more information about how errors are returned, see [Error responses](/graph/errors).
 
 ## Examples
 
 ### Request
 
-The following example shows how to send a sharing invitation to a user with the email address `ryan@contoso.org`, including a message regarding a file under collaboration. The invitation grants Ryan read-write access to the file.
+The following example shows how to send a sharing invitation to a user with the email address `robin@contoso.org`, including a message regarding a file under collaboration. The invitation grants Robin read-write access to the file.
 
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "send-sharing-invite", "@odata.type": "microsoft.graph.inviteParameters", "scopes": "files.readwrite", "target": "action" } -->
@@ -256,8 +256,6 @@ Apps aren't required to handle these errors.
 ## Related content
 
 For a list of available roles, see [roles property values](../resources/permission.md#roles-property-values).
-
-[error-response]: /graph/errors
 
 <!--
 {
