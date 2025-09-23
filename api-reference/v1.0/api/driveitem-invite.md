@@ -74,8 +74,8 @@ In the request body, provide a JSON object with the following parameters.
 | requireSignIn    | Boolean                        | Specifies whether the recipient of the invitation is required to sign-in to view the shared item.
 | sendInvitation   | Boolean                        | If true, a [sharing link][] is sent to the recipient. Otherwise, a permission is granted directly without sending a notification.
 | roles            | String collection             | Specifies the roles that are to be granted to the recipients of the sharing invitation.
-| expirationDateTime | DateTimeOffset                       | Specifies the **dateTime** after which the permission expires. For OneDrive for Business and SharePoint, **expirationDateTime** is only applicable for **sharingLink** permissions. Available on OneDrive for Business, SharePoint, and premium personal OneDrive accounts. |
-| password           | String                         | The password set on the invite by the creator. Optional and OneDrive Personal only. |
+| expirationDateTime | DateTimeOffset                       | Specifies the **dateTime** after which the permission expires. For OneDrive for work or school and SharePoint, **expirationDateTime** is only applicable for **sharingLink** permissions. Available on OneDrive for work or school, SharePoint, and premium personal OneDrive accounts. |
+| password           | String                         | The password set on the invite by the creator. Optional and OneDrive for home only. |
 | retainInheritedPermissions | Boolean                        | Optional. If `true` (default), any existing inherited permissions are retained on the shared item when sharing this item for the first time. If `false`, all existing permissions are removed when sharing for the first time. |
 
 ## Response
@@ -84,11 +84,33 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 For more information about how errors are returned, see [Error responses][/graph/errors].
 
+### Partial success response
+
+When inviting multiple recipients, it's possible for the notification to succeed for some and fail for others. In this case, the service returns a partial success response with an HTTP status code of `207`. When partial success is returned, the response for each failed recipient contains an **error** object with information about what went wrong and how to fix it. For more information, see [Example 2](#example-2-send-sharing-invitation-with-partial-success).
+
+### Send invitation notification errors
+
+The following table shows some other errors that your app might encounter within the nested **innererror** objects when sending notification fails. Apps aren't required to handle these errors.
+
+| Code                           | Description                                                                          |
+|:-------------------------------|:--------------------------------------------------------------------------------------
+| accountVerificationRequired    | Account verification is required to unblock sending notifications. |
+| hipCheckRequired               | Need to solve HIP (Host Intrusion Prevention) check to unblock sending notifications. |
+| exchangeInvalidUser            | Current user's mailbox wasn't found. |
+| exchangeOutOfMailboxQuota      | Out of quota.
+| exchangeMaxRecipients          | Exceeded maximum number of recipients that can be sent notifications at the same time. |
+
+>**Note:** The service can add new error codes or stop returning old ones at any time.
+
 ## Examples
 
-### Request
+### Example 1: Send a sharing invitation
 
 The following example shows how to send a sharing invitation to a user with the email address `ryan@contoso.org`, including a message regarding a file under collaboration. The invitation grants Ryan read-write access to the file.
+
+#### Request
+
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "send-sharing-invite", "@odata.type": "microsoft.graph.inviteParameters", "scopes": "files.readwrite", "target": "action" } -->
@@ -142,7 +164,7 @@ Content-type: application/json
 
 ---
 
-### Response
+#### Response
 
 The following example shows the response.
 
@@ -186,11 +208,37 @@ Content-type: application/json
 }
 ```
 
-### Partial success response
+### Example 2: Send sharing invitation with partial success
 
-When inviting multiple recipients, it's possible for the notification to succeed for some and fail for others.
-In this case, the service returns a partial success response with an HTTP status code of 207.
-When partial success is returned, the response for each failed recipient contains an `error` object with information about what went wrong and how to fix it.
+The following example shows a request that partially succeeds.
+
+#### Request
+The following example shows a request.
+<!-- { "blockType": "request", "name": "send-sharing-invite-partially-success", "@odata.type": "microsoft.graph.inviteParameters", "scopes": "files.readwrite", "target": "action" } -->
+
+```http
+POST https://graph.microsoft.com/v1.0/me/drive/items/{item-id}/invite
+Content-type: application/json
+
+{
+  "recipients": [
+    {
+      "email": "helga@contoso.com"
+    },
+    {
+      "email": "robin@contoso.com"
+    }
+  ],
+  "message": "Here's the file that we're collaborating on.",
+  "requireSignIn": true,
+  "sendInvitation": true,
+  "roles": [ "write" ],
+  "password": "password123",
+  "expirationDateTime": "2018-07-15T14:00:00.000Z"
+}
+```
+
+#### Response
 
 The following example shows the partial response.
 
@@ -243,21 +291,6 @@ Content-type: application/json
   ]
 }
 ```
-
-### SendNotification errors
-
-The following are some other errors that your app might encounter within the nested `innererror` objects when sending notification fails.
-Apps aren't required to handle these errors.
-
-| Code                           | Description                                                                          |
-|:-------------------------------|:--------------------------------------------------------------------------------------
-| accountVerificationRequired    | Account verification is required to unblock sending notifications. |
-| hipCheckRequired               | Need to solve HIP (Host Intrusion Prevention) check to unblock sending notifications. |
-| exchangeInvalidUser            | Current user's mailbox wasn't found. |
-| exchangeOutOfMailboxQuota      | Out of quota.
-| exchangeMaxRecipients          | Exceeded maximum number of recipients that can be sent notifications at the same time. |
-
->**Note:** The service can add new error codes or stop returning old ones at any time.
 
 ## Related content
 
