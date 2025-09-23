@@ -412,6 +412,8 @@ items:
       href: ../../api/virtualendpoint-retrievetenantencryptionsetting.md
     - name: List cloud apps
       href: ../../api/virtualendpoint-list-cloudapps.md
+    - name: List managed licenses
+      href: ../../api/virtualendpoint-list-managedlicenses.md
   - name: Cloud PC bulk action
     items:
     - name: Cloud PC bulk action
