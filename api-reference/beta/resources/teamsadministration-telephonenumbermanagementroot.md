@@ -16,12 +16,12 @@ Namespace: microsoft.graph.teamsAdministration
 
 Represents a collection of available telephone number management operations.
 
-
 Inherits from [entity](../resources/entity.md).
 
-
 ## Methods
-None.
+|Method|Return type|Description|
+|:---|:---|:---|
+|[List number assignments](../api/teamsadministration-telephonenumbermanagementroot-list-numberassignments.md)|[microsoft.graph.teamsAdministration.numberAssignment](../resources/teamsadministration-numberassignment.md) collection|Get a list of the [numberAssignment](../resources/teamsadministration-numberassignment.md) objects and their properties.|
 
 ## Properties
 None.
