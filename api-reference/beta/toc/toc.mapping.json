@@ -268,7 +268,8 @@
             "room",
             "roomList",
             "section",
-            "workspace"
+            "workspace",
+            "checkInClaim"
           ],
           "complexTypes": [
             "assignedPlaceMode",
@@ -502,6 +503,7 @@
           "resources": [
             "cloudPC",
             "cloudPcAuditEvent",
+            "cloudPcBulkAction",
             "cloudPcCloudApp",
             "cloudPcCrossCloudGovernmentOrganizationMapping",
             "cloudPcDeviceImage",
@@ -517,8 +519,7 @@
             "cloudPcSnapshot",
             "cloudPcSupportedRegion",
             "cloudPcUserSetting",
-            "virtualEndpoint",
-            "cloudPcBulkAction"
+            "virtualEndpoint"
           ],
           "complexTypes": [
             "appScope",
@@ -545,7 +546,7 @@
             "cloudPcBulkCreateSnapshot",
             "cloudPcBulkSetReviewStatus",
             "cloudPcCloudAppDetail",
-            "CloudPcConnectionSetting",
+            "cloudPcConnectionSetting",
             "cloudPcConnectivityEvent",
             "cloudPcConnectivityResult",
             "cloudPcCrossRegionDisasterRecoverySetting",
@@ -561,6 +562,7 @@
             "cloudPcLoginResult",
             "cloudPcManagementAssignmentTarget",
             "cloudPcManagementGroupAssignmentTarget",
+            "cloudPcNotificationSetting",
             "cloudPcOnPremisesConnectionStatusDetail",
             "cloudPcOnPremisesConnectionStatusDetails",
             "cloudPcPartnerAgentInstallResult",
@@ -583,8 +585,7 @@
             "cloudPcWindowsSettings",
             "keyValuePair",
             "microsoftManagedDesktop",
-            "unifiedRolePermission",
-            "cloudPcNotificationSetting"
+            "unifiedRolePermission"
           ],
           "childNodes": [
             {
@@ -3470,6 +3471,7 @@
         "workbookChartPointFormat",
         "workbookChartSeriesFormat",
         "workbookChartTitleFormat",
+        "workbookCommentMention",
         "workbookDocumentTaskSchedule",
         "workbookEmailIdentity",
         "workbookFilterCriteria",
