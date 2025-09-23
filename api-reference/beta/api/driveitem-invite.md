@@ -2,12 +2,12 @@
 author: spgraph-docs-team
 description: "Send a sharing invitation for a driveItem."
 ms.date: 09/16/2025
-title: Send a sharing invitation
+title: "driveItem: invite"
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
-# Send a sharing invitation
+# driveItem: invite
 
 Namespace: microsoft.graph
 
@@ -61,13 +61,13 @@ In the request body, provide a JSON object with the following parameters.
 }
 ```
 
-| Parameter        | Type                                            | Description                                                                                                |
-|:-----------------|:------------------------------------------------|:-----------------------------------------------------------------------------------------------------------|
-| recipients       | [driveRecipient](../resources/driverecipient.md) collection | A collection of recipients who receive access and the sharing invitation.                                            |
+| Parameter | Type | Description |
+|:---|:---|:---|
+| recipients       | [driveRecipient](../resources/driverecipient.md) collection | A collection of recipients who receive access and the sharing invitation. |
 | message          | String                                          | A plain text formatted message that is included in the sharing invitation. Maximum length 2,000 characters. |
 | requireSignIn    | Boolean                                         | Specifies where the recipient of the invitation is required to sign-in to view the shared item.            |
 | sendInvitation   | Boolean                                         | Specifies if an email or post is generated (`false`) or if the permission is recently created (`true`).            |
-| roles            | String collection                              | Specifies the roles that are granted to the recipients of the sharing invitation.                         |
+| roles            | String collection                              | Specifies the roles that are granted to the recipients of the sharing invitation. |
 | expirationDateTime | DateTimeOffset                       | Specifies the **dateTime** after which the permission expires. For OneDrive for work or school and SharePoint, **expirationDateTime** is only applicable for **sharingLink** permissions. Available on OneDrive for work or school, SharePoint, and premium personal OneDrive accounts. |
 | password           | String                         | The password set on the invite by the creator. Optional, and OneDrive for home only. |
 | retainInheritedPermissions | Boolean                        | Optional. If `true` (default), any existing inherited permissions are retained on the shared item when sharing this item for the first time. If `false`, all existing permissions are removed when sharing for the first time. |
@@ -91,7 +91,7 @@ The following table shows some other errors that your app might encounter within
 | accountVerificationRequired    | Account verification is required to unblock sending notifications. |
 | hipCheckRequired               | Need to solve HIP (Host Intrusion Prevention) check to unblock sending notifications. |
 | exchangeInvalidUser            | Current user's mailbox wasn't found. |
-| exchangeOutOfMailboxQuota      | Out of quota.
+| exchangeOutOfMailboxQuota      | Out of quota. |
 | exchangeMaxRecipients          | Exceeded maximum number of recipients that can be sent notifications at the same time. |
 
 >**Note:** The service can add new error codes or stop returning old ones at any time.
