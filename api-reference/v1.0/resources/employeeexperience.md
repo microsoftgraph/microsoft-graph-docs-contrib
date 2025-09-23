@@ -18,6 +18,7 @@ Represents a container that exposes navigation properties for employee experienc
 
 |Method|Return type|Description|
 |:---|:---|:---|
+|[List roles](../api/employeeexperience-list-roles.md)|[engagementRole](../resources/engagementrole.md) collection|Get the list of all assignable Viva Engage roles.|
 |[List communities](../api/employeeexperience-list-communities.md)|[community](../resources/community.md) collection|Get a list of the Viva Engage [community](../resources/community.md) objects and their properties.|
 |[Create community](../api/employeeexperience-post-communities.md)|[community](../resources/community.md)|Create a new [community](../resources/community.md) in Viva Engage.|
 |[List learningProviders](../api/employeeexperience-list-learningproviders.md)|[learningProvider](../resources/learningprovider.md) collection|Get a list of the [learningProvider](../resources/learningprovider.md) resources registered in Viva Learning for a tenant.|
@@ -31,6 +32,7 @@ None.
 
 |Relationship|Type|Description|
 |:---|:---|:---|
+|roles|[engagementRole](../resources/engagementrole.md) collection|A collection of roles in Viva Engage.|
 |communities|[community](../resources/community.md) collection| A collection of communities in Viva Engage. |
 |engagementAsyncOperations|[engagementAsyncOperation](../resources/engagementasyncoperation.md) collection| A collection of long-running, asynchronous operations related to Viva Engage. |
 |learningProviders|[learningProvider](../resources/learningprovider.md) collection|A collection of learning providers.|
