@@ -7678,7 +7678,7 @@
             "ApiChange": "Resource",
             "Target": "cloudPcManagedLicense",
             "ChangeType": "Addition",
-            "Description": "Added the [cloudPcManagedLicense](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcmanagedlicense?view=graph-rest-beta) resource."
+            "Description": "Added the [cloudPcManagedLicense](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcmanagedlicense?view=graph-rest-beta) resource and a supported method."
         },
         {
             "Id": "4a7b1b7c-4a7b-4a7b-4a7b-4a7b1b7c4a7b",
@@ -7702,7 +7702,7 @@
             "ApiChange": "Relationship",
             "Target": "virtualEndpoint",
             "ChangeType": "Addition",
-            "Description": "Added the **managedLicenses** navigation property to the [virtualEndpoint](https://learn.microsoft.com/en-us/graph/api/resources/virtualendpoint?view=graph-rest-beta) resource."
+            "Description": "Added the **managedLicenses** relationship to the [virtualEndpoint](https://learn.microsoft.com/en-us/graph/api/resources/virtualendpoint?view=graph-rest-beta) resource."
         }
       ],
       "Id": "4a7b1b7c-4a7b-4a7b-4a7b-4a7b1b7c4a7b",
