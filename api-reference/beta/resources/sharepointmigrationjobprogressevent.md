@@ -36,7 +36,7 @@ For the list of supported methods, see [sharePointMigrationEvent](../resources/s
 |filesProcessedOnlyCurrentVersion|Int64|The number of files processed with version history excluded. Read-only. |
 |id|String|The unique identifier of this event. Read-only. Inherited from [sharePointMigrationEvent](../resources/sharepointmigrationevent.md).|
 |isCompleted|Boolean|`True` if the job status is *End*. `False` if the job is *In progress*. Read-only. |
-|jobId|String|The unique identifier of a migration job. Read-only. Inherited from [sharepointMigrationEvent](../resources/sharepointmigrationevent.md).|
+|jobId|String|The unique identifier of a migration job. Read-only. Inherited from [sharePointMigrationEvent](../resources/sharepointmigrationevent.md).|
 |lastProcessedObjectId|String|The unique identifier of the last object processed. Read-only. |
 |objectsProcessed|Int64|The number of objects processed. Read-only. |
 |sqlDurationMs|Int64|SQL duration in milliseconds. Read-only. |
