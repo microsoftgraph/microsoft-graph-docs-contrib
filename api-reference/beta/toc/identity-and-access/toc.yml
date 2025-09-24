@@ -2560,6 +2560,14 @@ items:
         href: ../../api/conditionalaccesspolicy-update.md
       - name: Delete
         href: ../../api/conditionalaccesspolicy-delete.md
+      - name: Restore
+        href: ../../api/conditionalaccesspolicy-restore.md
+      - name: List deleted policies
+        href: ../../api/policydeletableitem-list.md
+      - name: Get deleted policy
+        href: ../../api/policydeletableitem-get.md
+      - name: Permanently delete a soft deleted policy
+        href: ../../api/policydeletableitem-delete.md
     - name: What If evaluation
       items:
       - name: What If evaluation
@@ -2576,6 +2584,14 @@ items:
         href: ../../api/namedlocation-get.md
       - name: Delete
         href: ../../api/namedlocation-delete.md
+      - name: Restore
+        href: ../../api/namedlocation-restore.md
+      - name: List deleted named locations
+        href: ../../api/policydeletableitem-list.md
+      - name: Get deleted named locations
+        href: ../../api/policydeletableitem-get.md
+      - name: Permanently delete a soft deleted named location
+        href: ../../api/policydeletableitem-delete.md
       - name: Country named location
         items:
         - name: Country named location
@@ -2590,6 +2606,8 @@ items:
           href: ../../api/countrynamedlocation-update.md
         - name: Delete
           href: ../../api/countrynamedlocation-delete.md
+        - name: Restore
+          href: ../../api/countrynamedlocation-restore.md
       - name: IP named location
         items:
         - name: IP named location
@@ -2604,6 +2622,8 @@ items:
           href: ../../api/ipnamedlocation-update.md
         - name: Delete
           href: ../../api/ipnamedlocation-delete.md
+        - name: Restore
+          href: ../../api/ipnamedlocation-restore.md
       - name: Compliant network named location
         items:
         - name: Compliant network named location
