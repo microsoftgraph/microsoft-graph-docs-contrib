@@ -43,14 +43,13 @@ The following JSON representation shows the resource type.
 
 ```json
 {
-  "accessPackageSuggestionReasons": [
+  "@odata.type": "#microsoft.graph.accessPackageSuggestion",
+  "id": "String (identifier)",
+  "reasons": [
     {
       "@odata.type": "microsoft.graph.accessPackageSuggestionReason"
     }
-  ],
-  "accessPackage": {
-    "@odata.type": "microsoft.graph.accessPackage"
-  }
+  ]
 }
 ```
 
