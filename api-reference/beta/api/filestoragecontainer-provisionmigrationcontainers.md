@@ -22,7 +22,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "filestoragecontainer-list-migrationjobs-permissions"
+  "name": "filestoragecontainer-provisionmigrationcontainers-permissions"
 }
 -->
 [!INCLUDE [permissions-table](../includes/permissions/filestoragecontainer-provisionmigrationcontainers-permissions.md)]
