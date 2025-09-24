@@ -1,6 +1,6 @@
 ---
 title: "sharePointMigrationJobProgressEvent resource type"
-description: "Migration progress status event"
+description: "Represents the progress status of a migration job."
 author: "wenzhou"
 ms.date: 06/04/2025
 ms.localizationpriority: medium
