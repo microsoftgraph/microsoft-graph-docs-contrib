@@ -50,7 +50,8 @@ In the request body, supply a JSON representation of the [microsoft.graph.window
 
 You can specify the following properties when creating a **catalogEntry**.
 
-**TODO: Remove properties that don't apply**
+## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|**TODO: Add Description** Optional.|

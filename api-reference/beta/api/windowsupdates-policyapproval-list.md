@@ -1,6 +1,6 @@
 ---
-title: "List catalogEntry"
-description: "Get a list of catalog entry resources from the catalog"
+title: "List policyApproval"
+description: "List all properties and relationships of microsoft.graph.windowsUpdates.policyApproval object. for all policy approvals"
 author: "andredm7"
 ms.date: 09/25/2025
 ms.localizationpriority: medium
@@ -8,13 +8,13 @@ ms.subservice: "windows-autopatch"
 doc_type: apiPageType
 ---
 
-# List catalogEntry
+# List policyApprovals
 
 Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**Get a list of catalog entry resources from the catalog**
+List all properties and relationships of [microsoft.graph.windowsUpdates.policyApproval](../resources/windowsupdates-policyapproval.md) object.
 
 ## Permissions
 
@@ -22,10 +22,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "windowsupdates-policyapproval-list-catalogentry-permissions"
+  "name": "windowsupdates-policyapproval-list-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/windowsupdates-policyapproval-list-catalogentry-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/windowsupdates-policyapproval-list-permissions.md)]
 
 ## HTTP request
 
@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /admin/windows/updates/policies/{policyId}/approvals/{policyApprovalId}/catalogEntry
+GET /admin/windows/updates/policies/{policyId}/approvals/
 ```
 
 ## Optional query parameters
@@ -53,7 +53,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [catalogEntry](../resources/windowsupdates-catalogentry.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a [microsoft.graph.windowsUpdates.policyApproval](../resources/windowsupdates-policyapproval.md) object in the response body.
 
 ## Examples
 
@@ -62,13 +62,13 @@ If successful, this method returns a `200 OK` response code and a collection of 
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "list_catalogentry"
+  "name": "list_policyapproval"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/admin/windows/updates/policies/{policyId}/approvals/{policyApprovalId}/catalogEntry
+GET https://graph.microsoft.com/beta/admin/windows/updates/policies/{policyId}/approvals/
 ```
-
+>**Note:** Do not use `approvalId` if you want to list all policy approvals. The `approvalId` is only used to return a specific policy approval.
 
 ### Response
 
@@ -77,7 +77,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.windowsUpdates.catalogEntry"
+  "@odata.type": "microsoft.graph.windowsUpdates.policyApproval"
 }
 -->
 ``` http
@@ -85,15 +85,14 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.windowsUpdates.catalogEntry",
-      "id": "bc244d32-2f8e-5e34-c27a-746ce1072af2",
-      "displayName": "String",
-      "deployableUntilDateTime": "String (timestamp)",
-      "releaseDateTime": "String (timestamp)"
-    }
-  ]
+  "value": {
+    "@odata.type": "#microsoft.graph.windowsUpdates.policyApproval",
+    "catalogEntryId": "String",
+    "status": "String",
+    "id": "ab3a53f0-f7aa-10b1-04d4-8680584cbbb6",
+    "createdDateTime": "String (timestamp)",
+    "lastModifiedDateTime": "String (timestamp)"
+  }
 }
 ```
 

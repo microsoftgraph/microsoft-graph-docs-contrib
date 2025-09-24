@@ -21,11 +21,11 @@ Inherits from [entity](../resources/entity.md)
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/windowsupdates-qualityupdatepolicy-list-approvals.md)|[microsoft.graph.windowsUpdates.policyApproval](../resources/windowsupdates-policyapproval.md) collection|Get a list of the policyApproval objects and their properties.|
-|[Create](../api/windowsupdates-qualityupdatepolicy-post-approvals.md)|[microsoft.graph.windowsUpdates.policyApproval](../resources/windowsupdates-policyapproval.md)|Create a new policyApproval object.|
-|[Get](../api/windowsupdates-policyapproval-get.md)|[microsoft.graph.windowsUpdates.policyApproval](../resources/windowsupdates-policyapproval.md)|Read the properties and relationships of [microsoft.graph.windowsUpdates.policyApproval](../resources/windowsupdates-policyapproval.md) object.|
+|[List](../api/windowsupdates-policyapproval-list.md)|[microsoft.graph.windowsUpdates.policyApproval](../resources/windowsupdates-policyapproval.md) collection|Get a list of the policyApproval objects and their properties. Use no policyapprovalID to get a list of all policy approvals|
+|[Create](../api/windowsupdates-policyapproval-post.md)|[microsoft.graph.windowsUpdates.policyApproval](../resources/windowsupdates-policyapproval.md)|Create a new policyApproval object.|
+|[Get](../api/windowsupdates-policyapproval-get.md)|[microsoft.graph.windowsUpdates.policyApproval](../resources/windowsupdates-policyapproval.md)|Read the properties and relationships of [microsoft.graph.windowsUpdates.policyApproval](../resources/windowsupdates-policyapproval.md) object. You must use a policyapprovalID to get details.|
 |[Update](../api/windowsupdates-policyapproval-update.md)|[microsoft.graph.windowsUpdates.policyApproval](../resources/windowsupdates-policyapproval.md)|Update the properties of a policyApproval object.|
-|[Delete](../api/windowsupdates-qualityupdatepolicy-delete-approvals.md)|None|Delete a policyApproval object.|
+|[Delete](../api/windowsupdates-policyapproval-delete.md)|None|Delete a policyApproval object.|
 |[List catalogEntry](../api/windowsupdates-policyapproval-list-catalogentry.md)|[microsoft.graph.windowsUpdates.catalogEntry](../resources/windowsupdates-catalogentry.md) collection| Get a list of Catalog Entry resources from the catalog.|
 |[Add catalogEntry](../api/windowsupdates-policyapproval-post-catalogentry.md)|[microsoft.graph.windowsUpdates.catalogEntry](../resources/windowsupdates-catalogentry.md)|Add catalogEntry by posting to the catalogEntry collection.|
 |[Remove catalogEntry](../api/windowsupdates-policyapproval-delete-catalogentry.md)|None|Remove a [microsoft.graph.windowsUpdates.catalogEntry](../resources/windowsupdates-catalogentry.md) object.|

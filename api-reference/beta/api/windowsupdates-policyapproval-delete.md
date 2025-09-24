@@ -1,6 +1,6 @@
 ---
-title: "Update policyApproval"
-description: "Update the properties of a policyApproval object."
+title: "Delete policyApproval"
+description: "Delete a policyApproval object."
 author: "andredm7"
 ms.date: 09/25/2025
 ms.localizationpriority: medium
@@ -8,13 +8,13 @@ ms.subservice: "windows-autopatch"
 doc_type: apiPageType
 ---
 
-# Update policyApproval
+# Delete a policyApproval
 
 Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a policyApproval object.
+Delete a policyApproval object.
 
 ## Permissions
 
@@ -22,10 +22,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "windowsupdates-policyapproval-update-permissions"
+  "name": "windowsupdates-policyapproval-delete-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/windowsupdates-policyapproval-update-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/windowsupdates-policyapproval-delete-permissions.md)]
 
 ## HTTP request
 
@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-PATCH /admin/windows/updates/policies/{policyId}/approvals/{policyApprovalId}
+DELETE /admin/windows/updates/policies/{policyId}/approvals/{policyApprovalId}
 ```
 
 ## Request headers
@@ -54,14 +54,14 @@ PATCH /admin/windows/updates/policies/{policyId}/approvals/{policyApprovalId}
 |Property|Type|Description|
 |:---|:---|:---|
 |catalogEntryId|String|The unique identifier for the catalog entry. Read-only. Required.|
-|status|microsoft.graph.windowsUpdates.approvalStatus|The status of the catalog entry. The possible values are: `approved`, `suspended`, `unknownFutureValue`. Required.|
+|status|microsoft.graph.windowsUpdates.approvalStatus| The status of the catalog entry. The possible values are: `approved`, `suspended`, `unknownFutureValue`. Required.|
 |createdDateTime|DateTimeOffset|The date and time the policy approval is created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, `2014 is 2014-01-01T00:00:00Z`. Optional.|
-|lastModifiedDateTime|DateTimeOffset|The date and time the policy approval was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, `2014 is 2014-01-01T00:00:00Z`. Read-only. Optional.|
+|lastModifiedDateTime|DateTimeOffset| The date and time the policy approval was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, `2014 is 2014-01-01T00:00:00Z`. Read-only. Optional.|
 
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [microsoft.graph.windowsUpdates.policyApproval](../resources/windowsupdates-policyapproval.md) object in the response body.
+If successful, this method returns a `204 No Content` response code and an updated [microsoft.graph.windowsUpdates.policyApproval](../resources/windowsupdates-policyapproval.md) object in the response body.
 
 ## Examples
 
@@ -70,11 +70,11 @@ If successful, this method returns a `200 OK` response code and an updated [micr
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "update_policyapproval"
+  "name": "delete_policyapproval"
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/admin/windows/updates/policies/{policyId}/approvals/{policyApprovalId}
+DELETE https://graph.microsoft.com/beta/admin/windows/updates/policies/{policyId}/approvals/{policyApprovalId}
 Content-Type: application/json
 
 {
@@ -95,7 +95,7 @@ The following example shows the response.
 }
 -->
 ``` http
-HTTP/1.1 200 OK
+HTTP/1.1 204 No Content
 Content-Type: application/json
 
 {
