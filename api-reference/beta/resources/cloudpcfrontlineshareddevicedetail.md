@@ -1,7 +1,7 @@
 ---
 title: "cloudPcFrontlineSharedDeviceDetail resource type"
 description: "Represents the Cloud PC device details associated with Front line Shared service plan, including the user's UPN and session start date/time."
-author: "hwaiyang"
+author: "yanghwai"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: resourcePageType
