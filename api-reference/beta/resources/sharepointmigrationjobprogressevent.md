@@ -1,6 +1,6 @@
 ---
 title: "sharePointMigrationJobProgressEvent resource type"
-description: "Represents the progress status of a migration job, either *in progress* or *end*."
+description: "Represents the progress status of a migration job, either in progress or end."
 author: "wenzhou"
 ms.date: 06/04/2025
 ms.localizationpriority: medium
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the progress status of a migration job, either *in progress* or *end*.
+Represents the progress status of a migration job, either *In progress* or *End*.
 
 Inherits from [sharePointMigrationEvent](../resources/sharepointmigrationevent.md).
 
@@ -31,11 +31,11 @@ For the list of supported methods, see [sharePointMigrationEvent](../resources/s
 |bytesProcessedOnlyCurrentVersion|Int64|The number of bytes processed with version history excluded. Read-only. |
 |correlationId|String|The correlation ID of a migration job. Read-only. Inherited from [sharePointMigrationEvent](../resources/sharepointmigrationevent.md).|
 |cpuDurationMs|Int64|CPU duration in milliseconds. Read-only. |
-|eventDateTime|DateTimeOffset|The date and time when the job status changes to *in progress* or *end*. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only. Inherited from [sharePointMigrationEvent](../resources/sharepointmigrationevent.md).|
+|eventDateTime|DateTimeOffset|The date and time when the job status changes to *In progress* or *End*. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only. Inherited from [sharePointMigrationEvent](../resources/sharepointmigrationevent.md).|
 |filesProcessed|Int64|The number of files processed. Read-only. |
 |filesProcessedOnlyCurrentVersion|Int64|The number of files processed with version history excluded. Read-only. |
 |id|String|The unique identifier of this event. Read-only. Inherited from [sharePointMigrationEvent](../resources/sharepointmigrationevent.md).|
-|isCompleted|Boolean|`True` if the job status is *end*. `False` if the job is *in progress*. Read-only. |
+|isCompleted|Boolean|`True` if the job status is *End*. `False` if the job is *In progress*. Read-only. |
 |jobId|String|The unique identifier of a migration job. Read-only. Inherited from [sharepointMigrationEvent](../resources/sharepointmigrationevent.md).|
 |lastProcessedObjectId|String|The unique identifier of the last object processed. Read-only. |
 |objectsProcessed|Int64|The number of objects processed. Read-only. |
