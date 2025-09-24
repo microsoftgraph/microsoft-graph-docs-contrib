@@ -30,8 +30,7 @@ For the list of supported methods, see [sharePointMigrationEvent](../resources/s
 |id|String|The unique identifier of a **sharePointMigrationJobPostponedEvent**. Read-only. Inherited from [sharePointMigrationEvent](../resources/sharepointmigrationevent.md).|
 |jobId|String|The unique identifier of a migration job. Read-only. Inherited from [sharePointMigrationEvent](../resources/sharepointmigrationevent.md).|
 |jobsInQueue|Int64|The number of migration jobs in the queue of the current database. Read-only.|
-|nextPickupDateTime|DateTimeOffset|The date and time that indicate when this job is picked up next. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.
- Read-only.|
+|nextPickupDateTime|DateTimeOffset|The date and time that indicate when this job is picked up next. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
 |reason|String|The reason for the postponement. Read-only.|
 |totalRetryCount|Int32|The current retry count of the job. Read-only.|
 
