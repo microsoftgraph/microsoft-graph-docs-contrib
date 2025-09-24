@@ -25,12 +25,12 @@ For the list of supported methods, see [sharePointMigrationEvent](../resources/s
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|correlationId|String|The correlation ID of a migration job. Read-only. Only on OneDrive and SharePoint. Inherited from [sharePointMigrationEvent](../resources/sharepointmigrationevent.md).|
-|eventDateTime|DateTimeOffset|The date and time when the job status changes to **JobStart** or **JobRestart**. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only. Only on OneDrive and SharePoint. Inherited from [sharePointMigrationEvent](../resources/sharepointmigrationevent.md). |
-|id|String|The unique identifier of a **JobStart** or **JobRestart** event. Read-only. Only on OneDrive and SharePoint. Inherited from [sharePointMigrationEvent](../resources/sharepointmigrationevent.md).|
-|isRestarted|Boolean|`True` if the job is restarted. `False` if it's the initial start. Read-only. Only on OneDrive and SharePoint.|
-|jobId|String|The unique identifier of a migration job. Read-only. Only on OneDrive and SharePoint. Inherited from [sharePointMigrationEvent](../resources/sharepointmigrationevent.md).|
-|totalRetryCount|Int32|The current retry count of the job. Read-only. Only on OneDrive and SharePoint.|
+|correlationId|String|The correlation ID of a migration job. Read-only. Inherited from [sharePointMigrationEvent](../resources/sharepointmigrationevent.md).|
+|eventDateTime|DateTimeOffset|The date and time when the job status changes to **JobStart** or **JobRestart**. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only. Inherited from [sharePointMigrationEvent](../resources/sharepointmigrationevent.md). |
+|id|String|The unique identifier of a **JobStart** or **JobRestart** event. Read-only. Inherited from [sharePointMigrationEvent](../resources/sharepointmigrationevent.md).|
+|isRestarted|Boolean|`True` if the job is restarted. `False` if it's the initial start. Read-only.|
+|jobId|String|The unique identifier of a migration job. Read-only. Inherited from [sharePointMigrationEvent](../resources/sharepointmigrationevent.md).|
+|totalRetryCount|Int32|The current retry count of the job. Read-only.|
 
 ## Relationships
 None.

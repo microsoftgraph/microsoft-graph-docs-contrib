@@ -37,10 +37,10 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|correlationId|String|The correlation ID of a migration job. Read-only. Only on OneDrive and SharePoint.|
-|eventDateTime|DateTimeOffset|The date and time when the job status changes. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only. Only on OneDrive and SharePoint.|
-|id|String| The unique identifier of a migration progress event. Read-only. Only on OneDrive and SharePoint. Inherits from [entity](../resources/entity.md).|
-|jobId|String|The unique identifier of a migration job. Read-only. Only on OneDrive and SharePoint.|
+|correlationId|String|The correlation ID of a migration job. Read-only.|
+|eventDateTime|DateTimeOffset|The date and time when the job status changes. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
+|id|String| The unique identifier of a migration progress event. Read-only. Inherits from [entity](../resources/entity.md).|
+|jobId|String|The unique identifier of a migration job. Read-only.|
 
 ## Relationships
 None.

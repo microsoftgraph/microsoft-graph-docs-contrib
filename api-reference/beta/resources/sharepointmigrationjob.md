@@ -32,13 +32,13 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|containerInfo|[sharePointMigrationContainerInfo](../resources/sharepointmigrationcontainerinfo.md)|The Azure blob containers associated with the migration job. It contains two container URLs and the key for content encryption. Read-only. Only on OneDrive and SharePoint.|
-|id|String|The unique identifier of the migration job. Read-only. Only on OneDrive and SharePoint. Inherits from [entity](../resources/entity.md).|
+|containerInfo|[sharePointMigrationContainerInfo](../resources/sharepointmigrationcontainerinfo.md)|The Azure blob containers associated with the migration job. It contains two container URLs and the key for content encryption. Read-only.|
+|id|String|The unique identifier of the migration job. Read-only. Inherits from [entity](../resources/entity.md).|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|progressEvents|[sharePointMigrationEvent](../resources/sharepointmigrationevent.md) collection|A collection of migration events that reflects the job status changes. Only on OneDrive and SharePoint.|
+|progressEvents|[sharePointMigrationEvent](../resources/sharepointmigrationevent.md) collection|A collection of migration events that reflects the job status changes.|
 
 ## JSON representation
 The following JSON representation shows the resource type.

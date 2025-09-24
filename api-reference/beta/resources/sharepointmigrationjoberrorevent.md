@@ -25,16 +25,16 @@ For the list of supported methods, see [sharePointMigrationEvent](../resources/s
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|correlationId|String|The correlation ID of a migration job. Read-only. Only on OneDrive and SharePoint. Inherited from [sharePointMigrationEvent](../resources/sharepointmigrationevent.md).|
-|error|[publicError](../resources/publicerror.md)|The error code and message. Read-only. Only on OneDrive and SharePoint.|
-|errorLevel|sharePointMigrationJobErrorLevel|The error level. Read-only. Only on OneDrive and SharePoint. The possible values are: `important`, `warning`, `error`, `fatalError`, `unknownFutureValue`.|
-|eventDateTime|DateTimeOffset|The date and time when the job status changes to a specific type of **JobError**. Read-only. Only on OneDrive and SharePoint. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [sharePointMigrationEvent](../resources/sharepointmigrationevent.md).|
-|id|String|The unique identifier of a **JobError** event. Read-only. Only on OneDrive and SharePoint. Inherited from [sharePointMigrationEvent](../resources/sharepointmigrationevent.md).|
-|jobId|String|The unique identifier of a migration job. Read-only. Only on OneDrive and SharePoint. Inherited from [sharePointMigrationEvent](../resources/sharepointmigrationevent.md).|
-|objectId|String|The object ID. Read-only. Only on OneDrive and SharePoint.|
-|objectType|sharePointMigrationObjectType|The object type. Read-only. Only on OneDrive and SharePoint. The possible values are: `site`, `web`, `folder`, `list`, `listItem`, `file`, `alert`, `sharedWithObject`, `invalid`, `unknownFutureValue`.|
-|objectUrl|String|The object URL. Read-only. Only on OneDrive and SharePoint.|
-|totalRetryCount|Int32|The current retry count of the job. Read-only. Only on OneDrive and SharePoint.|
+|correlationId|String|The correlation ID of a migration job. Read-only. Inherited from [sharePointMigrationEvent](../resources/sharepointmigrationevent.md).|
+|error|[publicError](../resources/publicerror.md)|The error code and message. Read-only.|
+|errorLevel|sharePointMigrationJobErrorLevel|The error level. Read-only. The possible values are: `important`, `warning`, `error`, `fatalError`, `unknownFutureValue`.|
+|eventDateTime|DateTimeOffset|The date and time when the job status changes to a specific type of **JobError**. Read-only. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [sharePointMigrationEvent](../resources/sharepointmigrationevent.md).|
+|id|String|The unique identifier of a **JobError** event. Read-only. Inherited from [sharePointMigrationEvent](../resources/sharepointmigrationevent.md).|
+|jobId|String|The unique identifier of a migration job. Read-only. Inherited from [sharePointMigrationEvent](../resources/sharepointmigrationevent.md).|
+|objectId|String|The object ID. Read-only.|
+|objectType|sharePointMigrationObjectType|The object type. Read-only. The possible values are: `site`, `web`, `folder`, `list`, `listItem`, `file`, `alert`, `sharedWithObject`, `invalid`, `unknownFutureValue`.|
+|objectUrl|String|The object URL. Read-only.|
+|totalRetryCount|Int32|The current retry count of the job. Read-only.|
 
 ## Relationships
 None.
