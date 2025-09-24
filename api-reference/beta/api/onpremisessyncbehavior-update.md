@@ -37,7 +37,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-PATCH /groups/{groupsId}/onPremisesSyncBehavior
+PATCH /contacts/{id}/onPremisesSyncBehavior
+PATCH /groups/{id}/onPremisesSyncBehavior
+PATCH /users/{id}/onPremisesSyncBehavior
 ```
 
 ## Request headers
