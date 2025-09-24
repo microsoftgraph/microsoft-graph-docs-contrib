@@ -72,7 +72,7 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
 | directReports | [directoryObject](directoryobject.md) collection | The contact's direct reports. (The users and contacts that have their manager property set to this contact.) Read-only. Nullable. Supports `$expand`. |
 | manager | [directoryObject](directoryobject.md) | The user or contact that is this contact's manager. Read-only. Supports `$expand` and `$filter` (`eq`) by **id**. |
 | memberOf | [directoryObject](directoryobject.md) collection | Groups that this contact is a member of. Read-only. Nullable. Supports `$expand`. |
-| onPremisesSyncBehavior | [onPremisesSyncBehavior](../resources/onpremisessyncbehavior.md)  | Indicates the state of synchronization for an orgContact between the cloud and on-premises Active Directory. Supports `$filter` only with advanced query capabilities. For example, `$filter=onPremisesSyncBehavior/isCloudManaged eq true&$count=true`.|
+| onPremisesSyncBehavior | [onPremisesSyncBehavior](../resources/onpremisessyncbehavior.md)  | Indicates the state of synchronization for an orgContact between the cloud and on-premises Active Directory. Supports `$filter` only with advanced query capabilities, for example, `$filter=onPremisesSyncBehavior/isCloudManaged eq true&$count=true`.|
 | transitiveReports | [directoryObject](directoryobject.md) collection | The transitive reports for a contact. Read-only. |
 
 ## JSON representation
