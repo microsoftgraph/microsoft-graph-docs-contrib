@@ -21,7 +21,7 @@ Inherits from [sharePointMigrationEvent](../resources/sharepointmigrationevent.m
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List progressEvents](../api/filestoragecontainer-migrationjob-list-progressevents.md)|[sharePointMigrationEvent](../resources/sharepointmigrationevent.md) collection|Get a list of the migrationEvent objects and their properties.|
+|[List progressEvents](../api/sharepointmigrationjob-list-progressevents.md)|[sharePointMigrationEvent](../resources/sharepointmigrationevent.md) collection|Get a list of the migrationEvent objects and their properties.|
 
 ## Properties
 |Property|Type|Description|
