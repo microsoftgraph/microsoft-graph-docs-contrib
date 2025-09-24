@@ -21,7 +21,7 @@ Represents a suggested access package with associated suggestion reasons in [Mic
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |id|String|The identifier of the suggested access package. Read-only.|
-|accessPackageSuggestionReason|Collection([accessPackageSuggestionReason](accesspackagesuggestionreason.md))|A collection of reasons why this access package is being suggested to the user.|
+|reasons|Collection([accessPackageSuggestionReason](accesspackagesuggestionreason.md))|A collection of reasons why this access package is being suggested to the user.|
 
 ## Relationships
 
