@@ -33,7 +33,7 @@ Inherits from [sharePointMigrationEvent](../resources/sharepointmigrationevent.m
 |eventDateTime|DateTimeOffset|The UTC time when job status changes to In-progress or End. Read-only. Inherited from [sharePointMigrationEvent](../resources/sharepointmigrationevent.md).|
 |filesProcessed|Int64|The number of files processed. Read-only.|
 |filesProcessedOnlyCurrentVersion|Int64|The number of files processed exclusive of version history. Read-only.|
-|id|String|The ID of this event. Read-only. Inherits from [entity](../resources/entity.md).|
+|id|String|The ID of this event. Read-only. Inherited from [entity](../resources/entity.md).|
 |isCompleted|Boolean|True if job status is End. False if job status is In-progress. Read-only.|
 |jobId|String|The unique identifier of a migration job. Read-only. Inherited from [sharepointMigrationEvent](../resources/sharepointmigrationevent.md).|
 |lastProcessedObjectId|String|The unique identifier of the last object processed. Read-only.|
