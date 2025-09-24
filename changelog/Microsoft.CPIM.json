@@ -1315,6 +1315,24 @@
       "CreatedDateTime": "2025-08-05T21:32:55.1366384Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "2d4013a1-83b7-4dc8-b33d-9569c146386d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "humanSecurityFraudProtectionProvider",
+          "ChangeType": "Addition",
+          "Description": "Added the [humanSecurityFraudProtectionProvider](https://learn.microsoft.com/en-us/graph/api/resources/humanSecurityFraudProtectionProvider?view=graph-rest-beta) resource.",
+          "Target": "humanSecurityFraudProtectionProvider"
+        }
+      ],
+      "Id": "2d4013a1-83b7-4dc8-b33d-9569c146386d",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-09-15T21:47:14.0595903Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
     }
   ]
 }

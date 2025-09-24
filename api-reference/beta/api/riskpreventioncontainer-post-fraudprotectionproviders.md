@@ -17,6 +17,7 @@ Namespace: microsoft.graph
 Create a new fraudProtectionProvider object. You can create one of the following subtypes that are derived from **fraudProtectionProvider**.
 
 - [arkoseFraudProtectionProvider](../resources/arkoseFraudProtectionProvider.md)
+- [humanSecurityFraudProtectionProvider](../resources/humansecurityfraudprotectionprovider.md)
 
 ## Permissions
 
@@ -56,12 +57,13 @@ You can specify the following properties when creating a **fraudProtectionProvid
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|The display name of this fraud protection provider configuration. Required. Inherited from [fraudProtectionProvider](../resources/fraudprotectionprovider.md).|
-|privateKey|String|The private key available on the Arkose Portal. Contact your Arkose Customer Success Manager for assistance with your keys. Required.|
-|publicKey|String|The public key available on the Arkose Portal. Contact your Arkose Customer Success Manager for assistance with your keys. Required.|
-|verifySubDomain|String|Used to invoke the Arkose service from the Microsoft authentication server. Request from your Arkose Customer Success Manager or use the default `verify-api` value. Required.|
-|clientSubDomain|String|Used to invoke the Arkose service from the client application. Request from your Arkose Customer Success Manager or use the default `client-api` value. Required.|
-
+|displayName|String|The display name of this fraud protection provider configuration. Supported for all providers. Required. Inherited from [fraudProtectionProvider](../resources/fraudprotectionprovider.md).|
+|privateKey|String|The private key available on the Arkose Portal. Contact your Arkose Customer Success Manager for assistance with your keys. Supported for Arkose only. Required.|
+|publicKey|String|The public key available on the Arkose Portal. Contact your Arkose Customer Success Manager for assistance with your keys. Supported for Arkose only. Required.|
+|verifySubDomain|String|Used to invoke the Arkose service from the Microsoft authentication server. Request from your Arkose Customer Success Manager or use the default `verify-api` value. Supported for Arkose only. Required.|
+|clientSubDomain|String|Used to invoke the Arkose service from the client application. Request from your Arkose Customer Success Manager or use the default `client-api` value. Supported for Arkose only. Required.|
+|appId|String|Unique identifier for an individual application. You can retrieve this from the HUMAN Security Admin Console or request it from your HUMAN Security Customer Success Manager. Supported for HUMAN Security only. Required.|
+|serverToken|String| Unique identifier used to authenticate API calls between the Server side integration and the HUMAN platform. You can retrieve this from the HUMAN Security Admin Console or request it from your HUMAN Security Customer Success Manager. Supported for HUMAN Security only. Required.|
 
 
 ## Response
@@ -72,7 +74,7 @@ If successful, this method returns a `201 Created` response code and a [fraudPro
 
 ### Request
 
-The following example shows a request.
+The following example shows a request to create a new Arkose fraudProtectionProvider object.
 <!-- {
   "blockType": "request",
   "name": "create_fraudprotectionprovider_from_"
@@ -95,7 +97,7 @@ Content-Type: application/json
 
 ### Response
 
-The following example shows the response.
+The following example shows the response with Arkose fraudProtectionProvider object.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -119,3 +121,47 @@ Content-Type: application/json
 
 ```
 
+### Request
+
+The following example shows a request  to create a new HUMAN Security fraudProtectionProvider object.
+<!-- {
+  "blockType": "request",
+  "name": "create_fraudprotectionprovider_from_"
+}
+-->
+``` http
+POST https://graph.microsoft.com/beta/identity/riskPrevention/fraudProtectionProviders
+Content-Type: application/json
+
+{
+   "@odata.type": "#microsoft.graph.humanSecurityFraudProtectionProvider",
+    "displayName": "HUMAN Security Sign-Up Protection",
+    "appId": "PXab4D5AEg",
+    "serverToken": "eyPQstlef3"
+}
+```
+
+
+### Response
+
+The following example shows the response with Human Security fraudProtectionProvider object.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.fraudProtectionProvider"
+}
+-->
+``` http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/riskPrevention/fraudProtectionProviders/$entity",
+    "@odata.type": "#microsoft.graph.humanSecurityFraudProtectionProvider",
+    "id": "6b09e36f-7e92-4448-842a-3959bcbc4f9f",
+    "displayName": "Human security Sign-Up provider",
+    "appId": "PXab4D5AEg"
+}
+
+```
