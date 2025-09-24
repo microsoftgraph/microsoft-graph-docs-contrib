@@ -1,6 +1,6 @@
 ---
 title: "List reactions"
-description: "Get a list of the engagementConversationMessageReaction objects and their properties for an engagementConversationMessage in an online meeting."
+description: "Get a list of the engagement conversation message reaction objects and their properties for an engagement conversation message in an online meeting."
 author: "aditijha"
 ms.date: 06/19/2025
 ms.localizationpriority: medium
