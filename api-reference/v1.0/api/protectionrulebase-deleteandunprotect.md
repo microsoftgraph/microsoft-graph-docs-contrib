@@ -146,7 +146,7 @@ Content-Type: application/json
     "createdDateTime": "2025-01-15T15:07:44.3043505Z",
     "lastModifiedDateTime": "2025-01-15T14:42:12.6779064Z",
     "isAutoApplyEnabled": true,
-    "driveExpression": "(memberOf -any (group.id -in ['4e8e9b15-bfc8-40a2-aed0-3f65a22e2bd4']))",
+    "mailboxExpression": "(memberOf -any (group.id -in ['4e8e9b15-bfc8-40a2-aed0-3f65a22e2bd4']))",
     "createdBy": {
         "user": {
             "identity": "8aaaaec3-5dcb-4b47-9ef9-0dda3e95b9f4"
