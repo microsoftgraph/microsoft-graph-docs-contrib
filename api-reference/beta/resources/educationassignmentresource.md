@@ -37,7 +37,7 @@ Represents a wrapper object that stores the resources associated with an assignm
 
 | Relationship | Type |Description|
 |:---------------|:--------|:----------|
-|dependentResources|[educationAssignmentResource] (educationassignmentresource.md) collection|A collection of assignment resources that depend on the parent educationAssignmentResource.|
+|dependentResources|[educationAssignmentResource](educationassignmentresource.md) collection|A collection of assignment resources that depend on the parent educationAssignmentResource.|
 
 ## JSON representation
 
