@@ -1,5 +1,5 @@
 ---
-title: "sharepPointMigrationFinishManifestFileUploadEvent resource type"
+title: "sharePointMigrationFinishManifestFileUploadEvent resource type"
 description: "Represents the manifest uploaded status of a SharePoint migration job."
 author: "wenzhou"
 ms.date: 06/04/2025
