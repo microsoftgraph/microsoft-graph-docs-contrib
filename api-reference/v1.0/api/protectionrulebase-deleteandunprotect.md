@@ -55,7 +55,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this action returns a `202 Accepted` response code and a [protectionRuleBase](../resources/protectionrulebase.md) in the response body.
+If successful, this action returns a `202 Accepted` response code and a [protectionRuleBase](../resources/protectionrulebase.md) object in the response body.
 
 ## Examples
 
@@ -135,7 +135,7 @@ The following example shows the response.
 }
 -->
 ``` http
-HTTP/1.1 200 Accepted
+HTTP/1.1 202 Accepted
 Content-Type: application/json
 
 {
