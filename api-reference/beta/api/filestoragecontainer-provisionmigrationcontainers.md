@@ -79,7 +79,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.migrationContainerInfo",
+  "@odata.type": "#microsoft.graph.sharePointMigrationContainerInfo",
   "dataContainerUri": "https://spoxxx.blob.core.windows.net/data?sp=rw&sig=",
   "metadataContainerUri": "https://spoxxx.blob.core.windows.net/metadata?sp=rw&sig=",
   "encryptionKey": "AES-256-CBC encryption key"
