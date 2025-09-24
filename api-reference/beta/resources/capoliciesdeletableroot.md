@@ -23,7 +23,9 @@ Inherits from [entity](../resources/entity.md).
 None.
 
 ## Properties
-None.
+| Property     | Type        | Description |
+|:-------------|:------------|:------------|
+|id|String|The identifier for a conditional access object that supports soft delete. Inherits from [entity](../resources/entity.md)|
 
 ## Relationships
 |Relationship|Type|Description|
