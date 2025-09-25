@@ -1,5 +1,5 @@
 ---
-title: "Restore by driveItemId from Recycle Bin"
+title: "Restore a recycleBinItem object from the recycleBin of a fileStorageContainer by driveItemId as alternate key."
 description: "Restore recycleBinItem to a fileStorageContainer."
 author: "cindylay"
 ms.localizationpriority: medium
@@ -8,7 +8,7 @@ doc_type: apiPageType
 ms.date: 9/10/2025
 ---
 
-# Restore a fileStorageContainer recycleBinItem by driveItemId as alternate key
+# Restore a recycleBinItem object from the recycleBin of a fileStorageContainer by driveItemId as alternate key.
 
 Namespace: microsoft.graph
 
@@ -40,11 +40,11 @@ POST https://graph.microsoft.com/beta/storage/fileStorage/containers/{containerI
 If successful, this method returns a 200 OK response code with the id of the singular [recycleBinItem](../resources/recyclebinitem.md) that was restored in the response body.
 
 ## Examples
-In this example, the `driveItemId` is passed as a function parameter in the request URL. The response returns the corresponding id of the `recycleBinItem` that was restored.
+In this example, the `driveItemId` is passed as an alternate key in the request URL. The response returns the corresponding id of the `recycleBinItem` that was restored.
 
 ### Request
 ``` http
-POST  POST https://graph.microsoft.com/beta/storage/fileStorage/containers/b!LRJHKCBZQU2fLtv8TzUomsz-OP7yGQRNlugra1iGHqRe5fORWrrHTbh8J8O8qPmx/recycleBin/items(driveItemId='01GC3BS4QFPBCZRLJHJVEYPITEHTDBYHBH')/restore
+POST https://graph.microsoft.com/beta/storage/fileStorage/containers/b!LRJHKCBZQU2fLtv8TzUomsz-OP7yGQRNlugra1iGHqRe5fORWrrHTbh8J8O8qPmx/recycleBin/items(driveItemId='01GC3BS4QFPBCZRLJHJVEYPITEHTDBYHBH')/restore
 Content-Type: application/json
 ```
 
