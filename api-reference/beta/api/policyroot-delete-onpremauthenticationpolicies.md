@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-DELETE /policies/onPremAuthenticationPolicies/{onPremAuthenticationPolicyId}/$ref
+DELETE /policies/onPremAuthenticationPolicies/{onPremAuthenticationPolicyId}
 ```
 
 ## Request headers
@@ -58,7 +58,7 @@ If successful, this method returns a `204 No Content` response code.
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "delete_onpremauthenticationpolicy"
+  "name": "delete_onpremauthenticationpolicy_object"
 }
 -->
 ``` http
