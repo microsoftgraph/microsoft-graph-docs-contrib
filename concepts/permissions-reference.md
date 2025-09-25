@@ -7,7 +7,7 @@ ms.localizationpriority: high
 ms.topic: reference
 ms.subservice: entra-applications
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.date: 09/08/2025
+ms.date: 09/22/2025
 #Customer intent: As a developer, I want to learn more about the permissions available in Microsoft Graph, so that I understand the impact of granting specific permissions to my app.
 ---
 
@@ -290,6 +290,17 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | AdminConsentRequired | Yes | Yes |
 
 ![personal Microsoft accounts][MSA] The *Application.Read.All* delegated permission is available for consent in personal Microsoft accounts.
+
+---
+
+### Application.ReadUpdate.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | fc023787-fd04-4e44-9bc7-d454f00c0f0a | 0586a906-4d89-4de8-b3c8-1aacdcc0c679 |
+| DisplayText | Read and update all apps | Read and update all apps |
+| Description | Allows the app to read and update all apps in your organization, without a signed-in user. | Allows the app to read and update all apps in your organization, on behalf of the signed-in user. |
+| AdminConsentRequired | Yes | Yes |
 
 ---
 
@@ -1002,7 +1013,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Category | Application | Delegated |
 |--|--|--|
 | Identifier | 45bbb07e-7321-4fd7-a8f6-3ff27e6a81c8 | - |
-| DisplayText | Read all call records | - |
+| DisplayText | Read all call records. | - |
 | Description | Allows the app to read call records for all calls and online meetings without a signed-in user. | - |
 | AdminConsentRequired | Yes | - |
 
@@ -1062,17 +1073,6 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | DisplayText | Join group calls and meetings as a guest | - |
 | Description | Allows the app to anonymously join group calls and scheduled meetings in your organization, without a signed-in user.  The app will be joined as a guest to meetings in your organization. | - |
 | AdminConsentRequired | Yes | - |
-
----
-
-### CallTranscripts.Read.All
-
-| Category | Application | Delegated |
-|--|--|--|
-| Identifier | 4cd61b6d-8692-40bf-9d90-7f38db5e5fce | fbace248-5d8e-441c-85ca-cc19221a69a2 |
-| DisplayText | Read all call transcripts | Read all transcripts of calls.  |
-| Description | Allows the app to read call transcripts for all calls without a signed-in user. | Allows the app to read all transcripts of calls, on behalf of the signed-in user. |
-| AdminConsentRequired | Yes | Yes |
 
 ---
 
@@ -5806,6 +5806,17 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 ---
 
+### RealTimeActivityFeed.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | abafe00f-ea87-4c63-b8a8-0e7bb0a88144 | - |
+| DisplayText | Access real-time enriched data in a meeting as an app | - |
+| Description | Allows the app to get direct access to real-time enriched data in a meeting, without a signed-in user. | - |
+| AdminConsentRequired | Yes | - |
+
+---
+
 ### RecordsManagement.Read.All
 
 | Category | Application | Delegated |
@@ -6613,6 +6624,28 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Identifier | 89c8469c-83ad-45f7-8ff2-6e3d4285709e | 7297d82c-9546-4aed-91df-3d4f0a9b3ff0 |
 | DisplayText | Read and update service principal endpoints | Read and update service principal endpoints |
 | Description | Allows the app to update service principal endpoints | Allows the app to update service principal endpoints |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### SharePointCrossTenantMigration.Manage.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | a0521574-fcd8-4742-b29c-f796df57ea70 | c608c170-08b5-466b-a8fe-0b4074b01613 |
+| DisplayText | Read, write and manage SharePoint Cross-Tenant migration settings and tasks | Read, write and manage SharePoint Cross-Tenant migration settings and tasks |
+| Description | Allows the app to read, write and manage your tenant's SharePoint Cross-Tenant migration settings and tasks, without a signed-in user. | Allows the app to read, write and manage your tenant's SharePoint Cross-Tenant migration settings and tasks, on behalf of the signed-in user. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### SharePointCrossTenantMigration.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | f5fa52a5-b9ab-4dc3-885e-9e5b4a67068e | 00dcb678-f9af-4e73-acb1-4f1657364629 |
+| DisplayText | Read SharePoint Cross-Tenant migration settings and tasks | Read SharePoint Cross-Tenant migration settings and tasks |
+| Description | Allows the app to read your tenant's SharePoint Cross-Tenant migration settings and tasks, without a signed-in user. | Allows the app to read your tenant's SharePoint Cross-Tenant migration settings and tasks, on behalf of the signed-in user. |
 | AdminConsentRequired | Yes | Yes |
 
 ---

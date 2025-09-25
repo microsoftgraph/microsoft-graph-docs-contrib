@@ -526,6 +526,11 @@
       ],
       "complexTypes": [
         "challengingWord",
+        "educationAiFeedbackAudienceEngagementSettings",
+        "educationAiFeedbackContentSettings",
+        "educationAiFeedbackCriteria",
+        "educationAiFeedbackDeliverySettings",
+        "educationAiFeedbackSettings",
         "educationAssignmentClassRecipient",
         "educationAssignmentGrade",
         "educationAssignmentGradeType",
@@ -543,6 +548,11 @@
         "educationMediaResource",
         "educationPowerPointResource",
         "educationResource",
+       "educationSpeakerCoachAudienceEngagementSettings",
+        "educationSpeakerCoachContentSettings",
+        "educationSpeakerCoachDeliverySettings",
+        "educationSpeakerCoachSettings",
+        "educationSpeakerProgressResource",
         "educationSubmissionIndividualRecipient",
         "educationSubmissionRecipient",
         "educationTeamsAppResource",
@@ -565,6 +575,9 @@
           "resources": [
             "community",
             "engagementAsyncOperation"
+          ],
+          "complexTypes": [
+            "engagementIdentitySet"
           ]
         }
       ]
@@ -1902,6 +1915,7 @@
                 "meetingAttendanceReport",
                 "attendanceRecord",
                 "onlineMeeting",
+                "onlineMeetingEngagementConversation",
                 "callRecording",
                 "callTranscript"
               ],

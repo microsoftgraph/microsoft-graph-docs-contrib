@@ -300,6 +300,16 @@ items:
   items:
   - name: Challenging word
     href: ../../resources/challengingword.md
+  - name: Education AI feedback audience engagement settings
+    href: ../../resources/educationaifeedbackaudienceengagementsettings.md
+  - name: Education AI feedback content settings
+    href: ../../resources/educationaifeedbackcontentsettings.md
+  - name: Education AI feedback criteria
+    href: ../../resources/educationaifeedbackcriteria.md
+  - name: Education AI feedback delivery settings
+    href: ../../resources/educationaifeedbackdeliverysettings.md
+  - name: Education AI feedback settings
+    href: ../../resources/educationaifeedbacksettings.md
   - name: Education assignment class recipient
     href: ../../resources/educationassignmentclassrecipient.md
   - name: Education assignment grade
@@ -334,6 +344,16 @@ items:
     href: ../../resources/educationpowerpointresource.md
   - name: Education resource
     href: ../../resources/educationresource.md
+  - name: Education speaker coach audience engagement settings
+    href: ../../resources/educationspeakercoachaudienceengagementsettings.md
+  - name: Education speaker coach content settings
+    href: ../../resources/educationspeakercoachcontentsettings.md
+  - name: Education speaker coach delivery settings
+    href: ../../resources/educationspeakercoachdeliverysettings.md
+  - name: Education speaker coach settings
+    href: ../../resources/educationspeakercoachsettings.md
+  - name: Education speaker progress resource
+    href: ../../resources/educationspeakerprogressresource.md
   - name: Education submission individual recipient
     href: ../../resources/educationsubmissionindividualrecipient.md
   - name: Education submission recipient

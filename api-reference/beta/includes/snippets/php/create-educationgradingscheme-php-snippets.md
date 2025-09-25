@@ -13,11 +13,17 @@ use Microsoft\Graph\Beta\Generated\Models\EducationGradingSchemeGrade;
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new EducationGradingScheme();
-$requestBody->setDisplayName('New name 02');
+$requestBody->setDisplayName('PassFailScheme');
 $gradesEducationGradingSchemeGrade1 = new EducationGradingSchemeGrade();
-$gradesEducationGradingSchemeGrade1->setDisplayName('Only grade');
-$gradesEducationGradingSchemeGrade1->setMinPercentage(0);
+$gradesEducationGradingSchemeGrade1->setDisplayName('Pass');
+$gradesEducationGradingSchemeGrade1->setMinPercentage(70);
+$gradesEducationGradingSchemeGrade1->setDefaultPercentage(90);
 $gradesArray []= $gradesEducationGradingSchemeGrade1;
+$gradesEducationGradingSchemeGrade2 = new EducationGradingSchemeGrade();
+$gradesEducationGradingSchemeGrade2->setDisplayName('Fail');
+$gradesEducationGradingSchemeGrade2->setMinPercentage(0);
+$gradesEducationGradingSchemeGrade2->setDefaultPercentage(50);
+$gradesArray []= $gradesEducationGradingSchemeGrade2;
 $requestBody->setGrades($gradesArray);
 
 
