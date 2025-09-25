@@ -520,7 +520,9 @@
         "educationSubmission",
         "educationSubmissionResource",
         "readingAssignmentSubmission",
-        "reflectCheckInResponse"
+        "readingCoachPassage",
+        "reflectCheckInResponse",
+        "speakerAssignmentSubmission"
       ],
       "complexTypes": [
         "challengingWord",
