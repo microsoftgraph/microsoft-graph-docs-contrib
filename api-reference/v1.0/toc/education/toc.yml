@@ -108,6 +108,8 @@ items:
     href: ../../api/educationassignment-activate.md
   - name: Deactivate assignment
     href: ../../api/educationassignment-deactivate.md
+  - name: Add grading scheme
+    href: ../../api/educationassignment-put-gradingscheme.md
 - name: Assignment defaults
   items:
   - name: Assignment defaults
@@ -184,8 +186,6 @@ items:
     href: ../../api/educationgradingscheme-update.md
   - name: Delete
     href: ../../api/educationgradingscheme-delete.md
-  - name: Add grading scheme
-    href: ../../api/educationassignment-put-gradingscheme.md
 - name: Module
   items:
   - name: Module
