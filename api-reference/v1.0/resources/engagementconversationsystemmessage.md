@@ -12,8 +12,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Represents an individual system message in a Viva Engage conversation.
 
 Inherits from [engagementConversationMessage](../resources/engagementconversationmessage.md).
@@ -62,3 +60,4 @@ The following JSON representation shows the resource type.
   "replyToId": "String"
 }
 ```
+
