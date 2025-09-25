@@ -25,7 +25,7 @@ None.
 ## Properties
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|id|String| The identifier for a policy singleton. Inherits from [entity](../resources/entity.md)|
+|id|String| The identifier for a policy singleton. Inherits from [entity](../resources/entity.md).|
 
 ## Relationships
 |Relationship|Type|Description|
