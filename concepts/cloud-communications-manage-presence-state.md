@@ -28,18 +28,18 @@ The following precedence is used for how session states are aggregated, with "A 
 
 | Teams state              | Graph availability / activity            |
 | ------------------------ | ---------------------------------------- |
-| Available                | `available / available`                  |
+| Available                | `available/available`                  |
 | Available, out of office | `available / outOfOffice`                |
-| Busy                     | `Busy / Busy`                            |
-| In a call                | `Busy / InACall`                         |
-| In a meeting             | `Busy / InAMeeting`                      |
-| In a call, out of office | `Busy / InACall + OOF`                   |
-| Do not disturb           | `DoNotDisturb / DoNotDisturb`            |
-| Presenting               | `DoNotDisturb / Presenting`              |
-| Away                     | `Away / Away`                            |
-| Be right back            | `BeRightBack / BeRightBack`              |
-| Appear offline           | `Offline / OffWork`                      |
-| Out of office            | `OutOfOffice`                            |
+| Busy                     | `busy/busy`                            |
+| In a call                | `busy / inACall`                         |
+| In a meeting             | `busy / inAMeeting`                      |
+| In a call, out of office | `busy / inACall + OOF`                   |
+| Do not disturb           | `doNotDisturb / doNotDisturb`            |
+| Presenting               | `doNotDisturb / presenting`              |
+| Away                     | `away / away`                            |
+| Be right back            | `beRightBack / beRightBack`              |
+| Appear offline           | `offline / offWork`                      |
+| Out of office            | `outOfOffice`                            |
 
 > [!NOTE]
 > 
