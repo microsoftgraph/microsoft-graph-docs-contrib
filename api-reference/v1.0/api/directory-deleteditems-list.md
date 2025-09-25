@@ -23,8 +23,6 @@ Retrieve a list of recently deleted directory objects from [deleted items](../re
 - [servicePrincipal](../resources/serviceprincipal.md)
 - [user](../resources/user.md)
 
->**Note:** Deleted security groups are deleted permanently and can't be retrieved through this API.
-
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions

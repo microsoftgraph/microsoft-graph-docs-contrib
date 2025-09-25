@@ -3,6 +3,56 @@
     {
       "ChangeList": [
         {
+          "Id": "9122a8cd-38bb-4ef6-a439-a21957e4673d",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "readingCoachStoryType",
+          "ChangeType": "Addition",
+          "Description": "Added the **readingCoachStoryType** enumeration type.",
+          "Target": "readingCoachStoryType"
+        },
+        {
+          "Id": "9122a8cd-38bb-4ef6-a439-a21957e4673d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "readingCoachPassage",
+          "ChangeType": "Addition",
+          "Description": "Added the [readingCoachPassage](https://learn.microsoft.com/en-us/graph/api/resources/readingCoachPassage?view=graph-rest-1.0) resource and an associated method.",
+          "Target": "readingCoachPassage"
+        },
+        {
+          "Id": "9122a8cd-38bb-4ef6-a439-a21957e4673d",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "readingCoachPassages",
+          "ChangeType": "Addition",
+          "Description": "Added the **readingCoachPassages** relationship to the [reportsRoot](https://learn.microsoft.com/en-us/graph/api/resources/reportsRoot?view=graph-rest-1.0) resource.",
+          "Target": "reportsRoot"
+        },
+        {
+          "Id": "9122a8cd-38bb-4ef6-a439-a21957e4673d",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "speakerAssignmentSubmissions",
+          "ChangeType": "Addition",
+          "Description": "Added the **speakerAssignmentSubmissions** relationship to the [reportsRoot](https://learn.microsoft.com/en-us/graph/api/resources/reportsRoot?view=graph-rest-1.0) resource.",
+          "Target": "reportsRoot"
+        },
+        {
+          "Id": "9122a8cd-38bb-4ef6-a439-a21957e4673d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "speakerAssignmentSubmission",
+          "ChangeType": "Addition",
+          "Description": "Added the [speakerAssignmentSubmission](https://learn.microsoft.com/en-us/graph/api/resources/speakerAssignmentSubmission?view=graph-rest-1.0) resource and an associated method.",
+          "Target": "speakerAssignmentSubmission"
+        }
+      ],
+      "Id": "9122a8cd-38bb-4ef6-a439-a21957e4673d",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-09-24T00:38:30.5375258Z",
+      "WorkloadArea": "Education",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "9f6b31a2-8e3b-495a-b9ec-d2c10271295e",
           "ApiChange": "Enumeration",
           "ChangedApiName": "readingCoachStoryType",
