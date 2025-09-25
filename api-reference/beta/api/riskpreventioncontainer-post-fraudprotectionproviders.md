@@ -126,7 +126,7 @@ Content-Type: application/json
 The following example shows a request  to create a new HUMAN Security fraudProtectionProvider object.
 <!-- {
   "blockType": "request",
-  "name": "create_fraudprotectionprovider_from_"
+  "name": "create_fraudprotectionprovider_from_human"
 }
 -->
 ``` http
