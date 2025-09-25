@@ -98,11 +98,11 @@ items:
     href: ../../api/educationassignment-delete-rubric.md
   - name: Get delta
     href: ../../api/educationassignment-delta.md
-  - name: Add gradingCategory
+  - name: Add grading category
     href: ../../api/educationassignment-post-gradingcategory.md
-  - name: Remove gradingCategory
+  - name: Remove grading category
     href: ../../api/educationassignment-delete-gradingcategory.md
-  - name: Update gradingCategory
+  - name: Update grading category
     href: ../../api/educationgradingcategory-update.md
   - name: Activate assignment
     href: ../../api/educationassignment-activate.md
@@ -138,6 +138,8 @@ items:
     href: ../../api/educationassignmentsettings-update.md
   - name: Add default grading scheme
     href: ../../api/educationassignmentsettings-put-defaultgradingscheme.md
+  - name: Update educationGradingCategory
+    href: ../../api/educationgradingcategory-update.md
 - name: Category
   items:
   - name: Category
