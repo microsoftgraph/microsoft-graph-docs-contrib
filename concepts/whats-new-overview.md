@@ -68,7 +68,11 @@ Defined the following endpoints as supported for the [driveItem: discardCheckout
 
 ### Teamwork and communications | Calls and online meetings
 
-Use the **allowCopyingAndSharingMeetingContent** property on [onlineMeeting](/graph/api/resources/onlinemeeting) and [virtualEventSession](/graph/api/resources/virtualeventsession) to indicate whether the ability to copy and share meeting content is enabled for a meeting or virtual event session.
+- Removed `inACall`, `inAConferenceCall`, `inactive`, `inAMeeting`, `presenting`, `urgentInterruptionsOnly`, and `offWork` as supported values for the **activity** property of [presence](/graph/api/resources/presence).
+- Removed `availableIdle` and `busyIdle` as supported values for the **availability** property of [presence](/graph/api/resources/presence).
+- Added `focusing`, `inACall`, `inAMeeting`, and `presenting` as supported values to the **availability** property of [presence](/graph/api/resources/presence).
+- The throttling limit for the [presence](/graph/api/resources/presence) resource increased from 1,500 to 10,000 requests per 30 seconds, per application per tenant.
+- Use the **allowCopyingAndSharingMeetingContent** property on [onlineMeeting](/graph/api/resources/onlinemeeting) and [virtualEventSession](/graph/api/resources/virtualeventsession) to indicate whether the ability to copy and share meeting content is enabled for a meeting or virtual event session.
 
 ### Teamwork and communications | Messaging
 
@@ -110,6 +114,13 @@ Defined the following endpoints as supported for the [driveItem: discardCheckout
 
 - Use the **groupDetail** property on [cloudPC](/graph/api/resources/cloudpc?view=graph-rest-beta&preserve-view=true) to get the Microsoft Entra group details associated with a Reserve Cloud PC assignment.
 - Use the **userDetail** property on [cloudPC](/graph/api/resources/cloudpc?view=graph-rest-beta&preserve-view=true) to get the Microsoft Entra user details associated with a Reserve Cloud PC assignment.
+
+### Teamwork and communications | Calls and online meetings
+
+- Removed `inACall`, `inAConferenceCall`, `inactive`, `inAMeeting`, `presenting`, `urgentInterruptionsOnly`, and `offWork` as supported values for the **activity** property of [presence](/graph/api/resources/presence).
+- Removed `availableIdle` and `busyIdle` as supported values for the **availability** property of [presence](/graph/api/resources/presence?view=graph-rest-beta&preserve-view=true).
+- Added `focusing`, `inACall`, `inAMeeting`, and `presenting` as supported values to the **availability** property of [presence](/graph/api/resources/presence?view=graph-rest-beta&preserve-view=true).
+- The throttling limit for the [presence](/graph/api/resources/presence?view=graph-rest-beta&preserve-view=true) resource increased from 1,500 to 10,000 requests per 30 seconds, per application per tenant.
 
 ### Teamwork and communications | Messaging
 
