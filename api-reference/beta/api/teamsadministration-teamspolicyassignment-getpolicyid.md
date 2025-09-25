@@ -42,7 +42,7 @@ In the request URL, provide the following query parameters with values.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|name|String|The name of the policy instance, such as `AllOn`.|
+|name|String|The name of the policy instance, such as `allOn`.|
 |type|String|The policy type, such as `teamsMeetingBroadcastPolicy` and `teamsMeetingPolicy`.|
 
 ## Request headers
