@@ -99,6 +99,10 @@ items:
     href: ../../resources/protectionunitbase.md
   - name: Get
     href: ../../api/protectionunitbase-get.md
+  - name: Offboard
+    href: ../../api/protectionunitbase-offboard.md
+  - name: Cancel offboard
+    href: ../../api/protectionunitbase-canceloffboard.md
   - name: Drive protection unit
     items:
     - name: Drive protection unit

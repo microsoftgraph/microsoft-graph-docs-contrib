@@ -138,6 +138,11 @@ Defined the following endpoints as supported for the [driveItem: discardCheckout
 
 ## August 2025: New and generally available
 
+### Backup storage
+
+- Use the **offboardRequestedDateTime** property on [driveProtectionUnit](/graph/api/resources/driveprotectionunit), [mailboxProtectionUnit](/graph/api/resources/mailboxprotectionunit), and [siteProtectionUnit](/graph/api/resources/siteprotectionunit) to get the date and time when protection unit offboard was requested.
+- Added `offboardRequested`, `offboarded`, and `cancelOffboardRequested` as supported values for the **status** property of [driveProtectionUnit](/graph/api/resources/driveprotectionunit), [mailboxProtectionUnit](/graph/api/resources/mailboxprotectionunit), and [siteProtectionUnit](/graph/api/resources/siteprotectionunit).
+
 ### Device and app management | Cloud PC
 
 Use the [resize](/graph/api/cloudpc-resize) operation of [cloudPC](/graph/api/resources/cloudpc) to upgrade or downgrade an existing Cloud PC to a configuration with a new virtual CPU (vCPU) and storage size.
