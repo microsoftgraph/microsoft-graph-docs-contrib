@@ -14,7 +14,7 @@ Namespace: microsoft.graph.teamsAdministration
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the root entity for managing Teams policy assignments. It provides access to user policy assignments and supports the resolution of **policyId**.
+Represents the root entity for managing Teams policy assignments. It provides access to user policy assignments and supports the resolution of policyId.
 
 Inherits from [entity](../resources/entity.md).
 
