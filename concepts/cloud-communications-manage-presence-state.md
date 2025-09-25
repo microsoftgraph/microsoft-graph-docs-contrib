@@ -28,8 +28,8 @@ The following precedence is used for how session states are aggregated, with "A 
 
 | Teams state              | Graph availability / activity            |
 | ------------------------ | ---------------------------------------- |
-| Available                | `Available / Available`                  |
-| Available, out of office | `Available / OutOfOffice`                |
+| Available                | `available / available`                  |
+| Available, out of office | `available / outOfOffice`                |
 | Busy                     | `Busy / Busy`                            |
 | In a call                | `Busy / InACall`                         |
 | In a meeting             | `Busy / InAMeeting`                      |
