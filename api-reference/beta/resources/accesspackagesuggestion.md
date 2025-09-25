@@ -16,6 +16,12 @@ Namespace: microsoft.graph
 
 Represents a suggested access package with associated suggestion reasons in [Microsoft Entra entitlement management](entitlementmanagement-overview.md). Access packages are suggested to end users based on various criteria such as related people insights and assignment history.
 
+## Methods
+
+| Method       | Return Type | Description |
+|:-------------|:------------|:------------|
+| [filterByCurrentUser](../api/accesspackagesuggestions-filterbycurrentuser.md) | [accessPackageSuggestion](accesspackagesuggestion.md) collection | Retrieve suggested access packages for the current end user based on various criteria including related people insights. |
+
 ## Properties
 
 | Property     | Type        | Description |
@@ -27,7 +33,7 @@ Represents a suggested access package with associated suggestion reasons in [Mic
 
 | Relationship | Type        | Description |
 |:-------------|:------------|:------------|
-|accessPackage|[accessPackage](accesspackage.md)|The access package information for the suggested package.|
+|accessPackage|[availableAccessPackage](availableaccesspackage.md)|The access package information for the suggested package.|
 
 ## JSON representation
 
@@ -43,13 +49,15 @@ The following JSON representation shows the resource type.
 
 ```json
 {
-  "@odata.type": "#microsoft.graph.accessPackageSuggestion",
-  "id": "String (identifier)",
+  "id": "String",
   "reasons": [
     {
       "@odata.type": "microsoft.graph.accessPackageSuggestionReason"
     }
-  ]
+  ],
+  "accessPackage": {
+    "@odata.type": "microsoft.graph.availableAccessPackage"
+  }
 }
 ```
 

@@ -20,7 +20,8 @@ Get a list of the [accessPackageResourceRoleScope](../resources/accesspackageres
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "permissions", "name": "availableaccesspackage-list-resourcerolescopes.md" } -->
+<!-- { "blockType": "permissions", "name": "availableaccesspackage_list_resourcerolescopes" } -->
+[!INCLUDE [permissions-table](../includes/permissions/availableaccesspackage-list-resourcerolescopes-permissions.md)]
 
 ## HTTP request
 
@@ -85,18 +86,18 @@ Content-type: application/json
   "value": [
     {
       "id": "c8f7be1e-3e35-4c80-b4f1-7c9ec23bbf77_9b5e1b3d-e4c2-4b8a-8f5b-2a3c9d4e5f6b",
-      "role": {
+      "accessPackageResourceRole": {
         "id": "9b5e1b3d-e4c2-4b8a-8f5b-2a3c9d4e5f6b",
         "displayName": "Member",
         "description": "Member role for the resource",
-        "resource": {
+        "accessPackageResource": {
           "id": "c8f7be1e-3e35-4c80-b4f1-7c9ec23bbf77",
           "displayName": "Marketing Team",
           "description": "Marketing team group resource",
           "resourceType": "AadGroup"
         }
       },
-      "scope": {
+      "accessPackageResourceScope": {
         "id": "a2b3c4d5-e6f7-8a9b-0c1d-2e3f4a5b6c7d",
         "displayName": "Marketing Team",
         "description": "Marketing team scope"
