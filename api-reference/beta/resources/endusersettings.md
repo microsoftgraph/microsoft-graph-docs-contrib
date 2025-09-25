@@ -29,7 +29,7 @@ Represents settings that control the end user experience for access package sugg
 |:-------------|:------------|:------------|
 |id|String|The identifier of the end user settings object. Read-only.|
 |isEnabled|Boolean|Indicates whether end user features are enabled. When `false`, end users cannot access the self-service portal.|
-|relatedPeopleInsightLevel|[accessPackageSuggestionRelatedPeopleInsightLevel](accesspackagesuggestionrelatedpeopleinsightlevel.md)|The level of related people insights to show in access package suggestions. The possible values are: `disabled`, `count`, `countAndNames`, `unknownFutureValue`.|
+|accessPackageRelatedPeopleInsightLevel|[accessPackageSuggestionRelatedPeopleInsightLevel](accesspackagesuggestionrelatedpeopleinsightlevel.md)|The level of related people insights to show in access package suggestions. The possible values are: `disabled`, `count`, `countAndNames`, `unknownFutureValue`.|
 
 ## Relationships
 
@@ -52,7 +52,7 @@ The following JSON representation shows the resource type.
 {
   "id": "endUserSettings",
   "isEnabled": true,
-  "relatedPeopleInsightLevel": "String",
+  "accessPackageRelatedPeopleInsightLevel": "String",
 }
 ```
 

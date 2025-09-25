@@ -22,7 +22,8 @@ The suggestions help end users discover relevant access packages they may need f
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "permissions", "name": "accesspackagesuggestions-filterbycurrentuser" } -->
+<!-- { "blockType": "permissions", "name": "accesspackagesuggestions_filterbycurrentuser" } -->
+[!INCLUDE [permissions-table](../includes/permissions/accesspackagesuggestions-filterbycurrentuser-permissions.md)]
 
 ## HTTP request
 
@@ -92,7 +93,8 @@ Content-type: application/json
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/entitlementManagement/accessPackageSuggestions/filterByCurrentUser(on='all')",
   "value": [
     {
-      "accessPackageSuggestionReasons": [
+      "id": "51b4bd29-cb2d-ef11-8b5f-20c19bd3bce6",
+      "reasons": [
         {
           "@odata.type": "#microsoft.graph.accessPackageSuggestionRelatedPeopleBased",
           "relatedPeopleAssignmentCount": 2
@@ -103,20 +105,21 @@ Content-type: application/json
           "lastAssignmentDateTime": "2024-08-08T19:13:50.023-07:00"
         }
       ],
-      "availableAccessPackage": {
+      "accessPackage": {
         "id": "51b4bd29-cb2d-ef11-8b5f-20c19bd3bce6",
         "displayName": "ap_discoverable",
         "description": "Discoverable package"
       }
     },
     {
-      "accessPackageSuggestionReasons": [
+      "id": "fa6338d0-d12d-ef11-8b5f-20c19bd3bce6",
+      "reasons": [
         {
           "@odata.type": "#microsoft.graph.accessPackageSuggestionRelatedPeopleBased",
           "relatedPeopleAssignmentCount": 3
         }
       ],
-      "availableAccessPackage": {
+      "accessPackage": {
         "id": "fa6338d0-d12d-ef11-8b5f-20c19bd3bce6",
         "displayName": "ap_allMembers",
         "description": "package with all members"
@@ -162,30 +165,30 @@ Content-type: application/json
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/entitlementManagement/accessPackageSuggestions/filterByCurrentUser(on='assignmentHistory')",
   "value": [
     {
-      "accessPackageId": "97ce41d0-fc5c-4e10-a979-1ad18e8242d7",
-      "accessPackageSuggestionReasons": [
+      "id": "97ce41d0-fc5c-4e10-a979-1ad18e8242d7",
+      "reasons": [
         {
           "@odata.type": "#microsoft.graph.accessPackageSuggestionSelfAssignmentHistoryBased",
           "pastAssignmentCount": 3,
           "lastAssignmentDateTime": "2024-11-28T01:28:15.313Z"
         }
       ],
-      "availableAccessPackage": {
+      "accessPackage": {
         "id": "97ce41d0-fc5c-4e10-a979-1ad18e8242d7",
         "displayName": "ap_allDirectoryUsers",
         "description": "All directory users"
       }
     },
     {
-      "accessPackageId": "8a14d3a6-32d0-4681-bbcc-a307d247ed3c",
-      "accessPackageSuggestionReasons": [
+      "id": "8a14d3a6-32d0-4681-bbcc-a307d247ed3c",
+      "reasons": [
         {
           "@odata.type": "#microsoft.graph.accessPackageSuggestionSelfAssignmentHistoryBased",
           "pastAssignmentCount": 2,
           "lastAssignmentDateTime": "2024-11-28T01:08:51.667Z"
         }
       ],
-      "availableAccessPackage": {
+      "accessPackage": {
         "id": "8a14d3a6-32d0-4681-bbcc-a307d247ed3c",
         "displayName": "8/1 first",
         "description": "desc"
