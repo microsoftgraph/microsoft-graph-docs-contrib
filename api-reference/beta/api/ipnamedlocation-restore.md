@@ -1,6 +1,6 @@
 ﻿---
 title: "Restore ipNamedLocation"
-description: "Restore a deleted ipNamedLocation object"
+description: "Restore a deleted IP named location object"
 author: "ashyasingh"
 ms.date: 08/11/2025
 ms.localizationpriority: medium

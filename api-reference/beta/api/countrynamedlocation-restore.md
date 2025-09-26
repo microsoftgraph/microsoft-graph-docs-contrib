@@ -1,6 +1,6 @@
 ﻿---
 title: "Restore countryNamedLocation"
-description: "Restore a deleted countryNamedLocation object"
+description: "Restore a deleted country named location object"
 author: "ashyasingh"
 ms.date: 08/11/2025
 ms.localizationpriority: medium
