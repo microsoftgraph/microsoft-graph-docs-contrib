@@ -521,7 +521,9 @@
         "educationSubmission",
         "educationSubmissionResource",
         "readingAssignmentSubmission",
-        "reflectCheckInResponse"
+        "readingCoachPassage",
+        "reflectCheckInResponse",
+        "speakerAssignmentSubmission"
       ],
       "complexTypes": [
         "challengingWord",
@@ -575,6 +577,9 @@
           "resources": [
             "community",
             "engagementAsyncOperation"
+          ],
+          "complexTypes": [
+            "engagementIdentitySet"
           ]
         }
       ]
