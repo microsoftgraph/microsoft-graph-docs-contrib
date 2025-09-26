@@ -28,7 +28,6 @@ Inherits from [entity](../resources/entity.md)
 |[Delete](../api/windowsupdates-policyapproval-delete.md)|None|Delete a policyApproval object.|
 |[List catalogEntry](../api/windowsupdates-policyapproval-list-catalogentry.md)|[microsoft.graph.windowsUpdates.catalogEntry](../resources/windowsupdates-catalogentry.md) collection| Get a list of Catalog Entry resources from the catalog.|
 |[Add catalogEntry](../api/windowsupdates-policyapproval-post-catalogentry.md)|[microsoft.graph.windowsUpdates.catalogEntry](../resources/windowsupdates-catalogentry.md)|Add catalogEntry by posting to the catalogEntry collection.|
-|[Remove catalogEntry](../api/windowsupdates-policyapproval-delete-catalogentry.md)|None|Remove a [microsoft.graph.windowsUpdates.catalogEntry](../resources/windowsupdates-catalogentry.md) object.|
 
 ## Properties
 |Property|Type|Description|
