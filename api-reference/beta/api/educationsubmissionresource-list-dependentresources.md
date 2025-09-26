@@ -66,7 +66,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.educationSubmissionResource"
+  "@odata.type": "Collection(microsoft.graph.educationSubmissionResource)"
 } -->
 ```http
 HTTP/1.1 200 OK
