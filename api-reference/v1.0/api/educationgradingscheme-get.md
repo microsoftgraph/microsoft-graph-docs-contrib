@@ -66,7 +66,6 @@ The following example shows a request.
 GET https://graph.microsoft.com/v1.0/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/assignmentSettings/gradingSchemes/69911dea-bc5c-406a-8743-81d06225a3a1
 ```
 
-
 ### Response
 
 The following example shows the response.
@@ -82,12 +81,11 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/assignmentSettings/gradingSchemes/$entity",
-    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET education/classes('<guid>')/assignmentSettings/gradingSchemes('<guid>')?$select=displayName,grades",
-    "id": "69911dea-bc5c-406a-8743-81d06225a3a1",
-    "displayName": "New GradingScheme name",
-    "hidePointsDuringGrading": false,
-    "grades": []
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/assignmentSettings/gradingSchemes/$entity",
+  "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET education/classes('<guid>')/assignmentSettings/gradingSchemes('<guid>')?$select=displayName,grades",
+  "id": "69911dea-bc5c-406a-8743-81d06225a3a1",
+  "displayName": "New GradingScheme name",
+  "hidePointsDuringGrading": false,
+  "grades": []
 }
 ```
-
