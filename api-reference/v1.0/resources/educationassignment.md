@@ -84,11 +84,11 @@ Inherits from [entity](../resources/entity.md).
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |categories|[educationCategory](educationcategory.md) collection| When set, enables users to easily find **assignments** of a given type. Read-only. Nullable.|
+|gradingCategory|[educationGradingCategory](educationgradingcategory.md) collection| When set, enables users to weight assignments differently when computing a class average grade.|
+|gradingScheme|[educationGradingScheme](educationgradingscheme.md) | When set, enables users to configure custom string grades based on the percentage of total points earned on this **assignment**.|
 |resources|[educationAssignmentResource](educationassignmentresource.md) collection| Learning objects that are associated with this assignment. Only teachers can modify this list. Nullable.|
 |rubric|[educationRubric](educationrubric.md)|When set, the grading rubric attached to this **assignment**.|
 |submissions|[educationSubmission](educationsubmission.md) collection| Once published, there's a **submission** object for each student representing their work and grade. Read-only. Nullable.|
-|gradingCategory|[educationGradingCategory](educationgradingcategory.md) collection| When set, enables users to weight assignments differently when computing a class average grade.|
-|gradingScheme|[educationGradingScheme](educationgradingscheme.md) | When set, enables users to configure custom string grades based on the percentage of total points earned on this **assignment**.|
 
 ## JSON representation
 
