@@ -46,7 +46,6 @@ The following table shows the properties that are required when you update the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|isEnabled|Boolean|Indicates whether end user features are enabled. When `false`, end users cannot access the self-service portal.|
 |accessPackageRelatedPeopleInsightLevel|accessPackageSuggestionRelatedPeopleInsightLevel|The level of related people insights to show in access package suggestions. The possible values are: `disabled`, `count`, `countAndNames`, `unknownFutureValue`.|
 
 ## Response
@@ -70,9 +69,7 @@ Content-type: application/json
 
 {
   "@odata.type": "#microsoft.graph.endUserSettings",
-  "id": "endUserSettings",
-  "isEnabled": true,
-  "accessPackageRelatedPeopleInsightLevel": "countAndNames",
+  "accessPackageRelatedPeopleInsightLevel": "countAndNames"
 }
 ```
 
@@ -95,8 +92,6 @@ Content-type: application/json
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/entitlementManagement/controlConfigurations/endUserSettings",
-  "id": "endUserSettings",
-  "isEnabled": true,
-  "accessPackageRelatedPeopleInsightLevel": "countAndNames",
+  "accessPackageRelatedPeopleInsightLevel": "countAndNames"
 }
 ```

@@ -1,5 +1,5 @@
 ---
-title: "endUserSettings resource type"
+title: "end user settings resource type"
 description: "Settings that control the end user experience for access package suggestions and resource discovery in Microsoft Entra entitlement management."
 ms.localizationpriority: medium
 author: "myra-ramdenbourg"
@@ -27,8 +27,6 @@ Represents settings that control the end user experience for access package sugg
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|id|String|The identifier of the end user settings object. Read-only.|
-|isEnabled|Boolean|Indicates whether end user features are enabled. When `false`, end users cannot access the self-service portal.|
 |accessPackageRelatedPeopleInsightLevel|accessPackageSuggestionRelatedPeopleInsightLevel|The level of related people insights to show in access package suggestions. The possible values are: `disabled`, `count`, `countAndNames`, `unknownFutureValue`.|
 
 ## Relationships
@@ -50,9 +48,7 @@ The following JSON representation shows the resource type.
 
 ```json
 {
-  "id": "endUserSettings",
-  "isEnabled": true,
-  "accessPackageRelatedPeopleInsightLevel": "String",
+  "accessPackageRelatedPeopleInsightLevel": "String"
 }
 ```
 
