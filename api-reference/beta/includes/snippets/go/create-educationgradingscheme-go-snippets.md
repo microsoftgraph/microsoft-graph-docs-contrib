@@ -16,18 +16,28 @@ import (
 )
 
 requestBody := graphmodels.NewEducationGradingScheme()
-displayName := "New name 02"
+displayName := "PassFailScheme"
 requestBody.SetDisplayName(&displayName) 
 
 
 educationGradingSchemeGrade := graphmodels.NewEducationGradingSchemeGrade()
-displayName := "Only grade"
+displayName := "Pass"
 educationGradingSchemeGrade.SetDisplayName(&displayName) 
-minPercentage := float32(0)
+minPercentage := float32(70)
 educationGradingSchemeGrade.SetMinPercentage(&minPercentage) 
+defaultPercentage := float32(90)
+educationGradingSchemeGrade.SetDefaultPercentage(&defaultPercentage) 
+educationGradingSchemeGrade1 := graphmodels.NewEducationGradingSchemeGrade()
+displayName := "Fail"
+educationGradingSchemeGrade1.SetDisplayName(&displayName) 
+minPercentage := float32(0)
+educationGradingSchemeGrade1.SetMinPercentage(&minPercentage) 
+defaultPercentage := float32(50)
+educationGradingSchemeGrade1.SetDefaultPercentage(&defaultPercentage) 
 
 grades := []graphmodels.EducationGradingSchemeGradeable {
 	educationGradingSchemeGrade,
+	educationGradingSchemeGrade1,
 }
 requestBody.SetGrades(grades)
 

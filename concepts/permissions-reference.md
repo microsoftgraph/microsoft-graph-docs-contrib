@@ -1013,7 +1013,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Category | Application | Delegated |
 |--|--|--|
 | Identifier | 45bbb07e-7321-4fd7-a8f6-3ff27e6a81c8 | - |
-| DisplayText | Read all call records | - |
+| DisplayText | Read all call records. | - |
 | Description | Allows the app to read call records for all calls and online meetings without a signed-in user. | - |
 | AdminConsentRequired | Yes | - |
 
@@ -1073,17 +1073,6 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | DisplayText | Join group calls and meetings as a guest | - |
 | Description | Allows the app to anonymously join group calls and scheduled meetings in your organization, without a signed-in user.  The app will be joined as a guest to meetings in your organization. | - |
 | AdminConsentRequired | Yes | - |
-
----
-
-### CallTranscripts.Read.All
-
-| Category | Application | Delegated |
-|--|--|--|
-| Identifier | 4cd61b6d-8692-40bf-9d90-7f38db5e5fce | fbace248-5d8e-441c-85ca-cc19221a69a2 |
-| DisplayText | Read all call transcripts | Read all transcripts of calls.  |
-| Description | Allows the app to read call transcripts for all calls without a signed-in user. | Allows the app to read all transcripts of calls, on behalf of the signed-in user. |
-| AdminConsentRequired | Yes | Yes |
 
 ---
 
@@ -2604,7 +2593,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 |--|--|--|
 | Identifier | ad248c30-1919-40c8-b3d2-304481894e88 | - |
 | DisplayText | Read all tenant reading assignments submissions data | - |
-| Description | Allows the app to read all tenant users reading assignments submissions data without a signed-in user. | - |
+| Description | Allows the app to read all tenant users reading assignments, speaker assignments, and Reading Coach passages data without a signed-in user. | - |
 | AdminConsentRequired | Yes | - |
 
 ---
@@ -2615,7 +2604,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 |--|--|--|
 | Identifier | 040330d7-be7e-4130-b349-a6eb3a56e2f8 | - |
 | DisplayText | Read all tenant reading assignments submissions data | - |
-| Description | Allows the app to read all tenant users reading assignments submissions data (excludes student-identifying information) without a signed-in user. | - |
+| Description | Allows the app to read all tenant users reading assignments, speaker assignments, and Reading Coach passages data (excludes student-identifying information) without a signed-in user. | - |
 | AdminConsentRequired | Yes | - |
 
 ---
