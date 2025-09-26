@@ -23,6 +23,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "name": "educationassignmentsettings_put_defaultgradingscheme"
 }
 -->
+[!INCLUDE [permissions-table](../includes/permissions/educationassignmentsettings-put-defaultgradingscheme-permissions.md)]
 
 ## HTTP request
 
