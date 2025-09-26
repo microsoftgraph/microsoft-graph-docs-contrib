@@ -66,7 +66,6 @@ The following example shows a request.
 GET https://graph.microsoft.com/v1.0/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/assignmentSettings/gradingSchemes/69911dea-bc5c-406a-8743-81d06225a3a1
 ```
 
----
 
 ### Response
 

@@ -56,8 +56,11 @@ If successful, this method returns a `200 OK` response code and an updated [educ
 
 ## Examples
 
-## Example 1: Update educationGradingScheme
-### Request
+### Example 1: Update educationGradingScheme
+
+The following example shows how to update an [educationGradingScheme](../resources/educationgradingscheme.md) object.
+
+#### Request
 
 The following example shows a request.
 
@@ -75,9 +78,8 @@ Content-Type: application/json
 }
 ```
 
----
 
-### Response
+#### Response
 The following example shows the response.
 
 <!-- {
@@ -115,8 +117,11 @@ Content-Type: application/json
 }
 ```
 
-## Example 2: Update educationGradingScheme by using delta payload
-### Request
+### Example 2: Update educationGradingScheme by using delta payload
+
+The following example shows how to update an [educationGradingScheme](../resources/educationgradingscheme.md) object by using delta payload.
+
+#### Request
 
 The following example shows a request.
 
@@ -164,9 +169,8 @@ Content-Type: application/json
 }
 ```
 
----
 
-### Response
+#### Response
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.

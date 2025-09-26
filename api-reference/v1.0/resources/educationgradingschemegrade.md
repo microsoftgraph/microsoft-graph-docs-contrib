@@ -34,8 +34,8 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.educationGradingSchemeGrade",
+  "defaultPercentage": "Int32",
   "displayName": "String",
-  "minPercentage": "Int32",
-  "defaultPercentage": "Int32"
+  "minPercentage": "Int32"
 }
 ```

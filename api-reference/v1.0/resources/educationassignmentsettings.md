@@ -20,7 +20,7 @@ Specifies class-level assignments settings.
 |:---|:---|:---|
 |[Get](../api/educationassignmentsettings-get.md)|[educationAssignmentSettings](../resources/educationassignmentsettings.md)|Read the properties and relationships of an [educationAssignmentSettings](../resources/educationassignmentsettings.md) object.|
 |[Update](../api/educationassignmentsettings-update.md)|[educationAssignmentSettings](../resources/educationassignmentsettings.md)|Update the properties of an [educationAssignmentSettings](../resources/educationassignmentsettings.md) object.|
-|[Add default grading scheme](../api/educationassignmentsettings-put-defaultgradingscheme.md)|[educationGradingScheme](../resources/educationgradingscheme.md)|Add the default [educationGradingScheme](../resources/educationgradingscheme.md) to an **educationAssignmentSettings** object.|
+|[Add default grading scheme](../api/educationassignmentsettings-put-defaultgradingscheme.md)|[educationGradingScheme](../resources/educationgradingscheme.md)|Add the default [educationGradingScheme](../resources/educationgradingscheme.md) to an [educationAssignmentSettings](../resources/educationassignmentsettings.md) object.|
 |[Update educationGradingCategory](../api/educationgradingcategory-update.md)|[educationGradingCategory](../resources/educationgradingcategory.md)|Update the gradingCategory on the assignment settings.|
 
 ## Properties
@@ -48,6 +48,6 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "id": "String (identifier)",
-"submissionAnimationDisabled": "Boolean"
+  "submissionAnimationDisabled": "Boolean"
 }
 ```

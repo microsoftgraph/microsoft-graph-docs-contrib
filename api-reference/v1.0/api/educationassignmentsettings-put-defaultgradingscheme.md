@@ -12,7 +12,7 @@ ms.date: 09/19/2025
 
 Namespace: microsoft.graph
 
-Add the default [educationGradingScheme](../resources/educationgradingscheme.md) to an **educationAssignmentSettings** object.
+Add the default [educationGradingScheme](../resources/educationgradingscheme.md) to an [educationAssignmentSettings](../resources/educationassignmentsettings.md) object.
 
 ## Permissions
 
