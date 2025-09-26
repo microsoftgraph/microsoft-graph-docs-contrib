@@ -174,6 +174,18 @@ items:
     href: ../../api/educationassignment-delete-gradingcategory.md
   - name: Update
     href: ../../api/educationgradingcategory-update.md
+- name: Grading scheme
+  items:
+  - name: Grading scheme
+    href: ../../resources/educationgradingscheme.md
+  - name: Create
+    href: ../../api/educationassignmentsettings-post-gradingschemes.md
+  - name: Get
+    href: ../../api/educationgradingscheme-get.md
+  - name: Update
+    href: ../../api/educationgradingscheme-update.md
+  - name: Delete
+    href: ../../api/educationgradingscheme-delete.md
 - name: Module
   items:
   - name: Module
@@ -326,6 +338,8 @@ items:
     href: ../../resources/educationfeedback.md
   - name: Education file resource
     href: ../../resources/educationfileresource.md
+  - name: Education grading scheme grade
+    href: ../../resources/educationgradingschemegrade.md
   - name: Education link resource
     href: ../../resources/educationlinkresource.md
   - name: Education linked assignment resource
