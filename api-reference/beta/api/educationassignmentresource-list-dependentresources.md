@@ -1,5 +1,5 @@
 ---
-title: "List dependent educationAssignmentResources"
+title: "List dependentResources"
 description: "List the dependent education assignment resources for a given education assignment resource."
 author: "pateljay-37"
 ms.localizationpriority: medium
@@ -8,7 +8,7 @@ doc_type: apiPageType
 ms.date: 09/17/2025
 ---
 
-# List dependent educationAssignmentResources
+# List dependentResources
 
 Namespace: microsoft.graph
 
@@ -30,6 +30,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 GET /education/classes/{class-id}/assignments/{assignment-id}/resources/{resource-id}/dependentResources
 ```
 
+## Optional query parameters
+TODO
+
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
@@ -42,14 +45,15 @@ Don't supply a request body for this method.
 ## Response
 If successful, this method returns a `200 OK` response code and a collection of [educationAssignmentResource](../resources/educationassignmentresource.md) objects in the response body.
 
-## Example
+## Examples
 
 ### Request
 The following example shows a request.
 
 <!-- {
   "blockType": "request",
-  "name": "list_dependentassignmentresources"
+  "name": "list_dependentassignmentresources",
+  "sampleKeys": ["de45722a-c202-43a9-9dd5-d82c45bcef91","4d1ecd2d-c913-41ba-be3c-d896b65d09f0","ae7beedb-488d-4534-9307-3fbc2fac29b4"]
 }-->
 ```http
 GET https://graph.microsoft.com/beta/education/classes/de45722a-c202-43a9-9dd5-d82c45bcef91/assignments/4d1ecd2d-c913-41ba-be3c-d896b65d09f0/resources/ae7beedb-488d-4534-9307-3fbc2fac29b4/dependentResources 
@@ -70,35 +74,35 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('de45722a-c202-43a9-9dd5-d82c45bcef91')/assignments('4d1ecd2d-c913-41ba-be3c-d896b65d09f0')/resources('ae7beedb-488d-4534-9307-3fbc2fac29b4')/dependentResources",
-    "value": [
-        {
-            "distributeForStudentWork": true,
-            "id": "090d693a-60a1-454e-8bfb-464cea5e796d",
-            "resource": {
-                "@odata.type": "#microsoft.graph.educationExternalResource",
-                "displayName": "A Baby Polar Bear Grows Up (US History)",
-                "createdDateTime": "2025-09-23T23:28:58.0188865Z",
-                "lastModifiedDateTime": "2025-09-23T23:28:58.0188956Z",
-                "webUrl": "https://forms.office.com/Pages/AssignmentsDesignPage.aspx#TopView=Preview&FormId=kowztj5TbU-jJ5lCY3EjmSpyRd4CwqlDndXYLEW875FUQ1lPUUE2NEk0TEMzVlVNRjhGQlgwRTRPSCQlQCN0PWcu",
-                "createdBy": {
-                    "application": null,
-                    "device": null,
-                    "user": {
-                        "id": "7313562f-6ac1-43c0-803e-f345a1792f7b",
-                        "displayName": null
-                    }
-                },
-                "lastModifiedBy": {
-                    "application": null,
-                    "device": null,
-                    "user": {
-                        "id": "7313562f-6ac1-43c0-803e-f345a1792f7b",
-                        "displayName": null
-                    }
-                }
-            }
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('de45722a-c202-43a9-9dd5-d82c45bcef91')/assignments('4d1ecd2d-c913-41ba-be3c-d896b65d09f0')/resources('ae7beedb-488d-4534-9307-3fbc2fac29b4')/dependentResources",
+  "value": [
+    {
+      "distributeForStudentWork": true,
+      "id": "090d693a-60a1-454e-8bfb-464cea5e796d",
+      "resource": {
+        "@odata.type": "#microsoft.graph.educationExternalResource",
+        "displayName": "A Baby Polar Bear Grows Up (US History)",
+        "createdDateTime": "2025-09-23T23:28:58.0188865Z",
+        "lastModifiedDateTime": "2025-09-23T23:28:58.0188956Z",
+        "webUrl": "https://forms.office.com/Pages/AssignmentsDesignPage.aspx#TopView=Preview&FormId=kowztj5TbU-jJ5lCY3EjmSpyRd4CwqlDndXYLEW875FUQ1lPUUE2NEk0TEMzVlVNRjhGQlgwRTRPSCQlQCN0PWcu",
+        "createdBy": {
+          "application": null,
+          "device": null,
+          "user": {
+            "id": "7313562f-6ac1-43c0-803e-f345a1792f7b",
+            "displayName": null
+          }
+        },
+        "lastModifiedBy": {
+          "application": null,
+          "device": null,
+          "user": {
+            "id": "7313562f-6ac1-43c0-803e-f345a1792f7b",
+            "displayName": null
+          }
         }
-    ]
+      }
+    }
+  ]
 }
 ```
