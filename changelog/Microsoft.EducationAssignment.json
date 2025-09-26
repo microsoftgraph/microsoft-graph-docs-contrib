@@ -47,8 +47,24 @@
           "ApiChange": "Resource",
           "ChangedApiName": "educationGradingScheme",
           "ChangeType": "Addition",
-          "Description": "Added the [educationGradingScheme](https://learn.microsoft.com/en-us/graph/api/resources/educationGradingScheme?view=graph-rest-1.0) resource.",
+          "Description": "Added the [educationGradingScheme](https://learn.microsoft.com/en-us/graph/api/resources/educationGradingScheme?view=graph-rest-1.0) resource and associated methods.",
           "Target": "educationGradingScheme"
+        },
+        {
+          "Id": "8e05037c-958b-4ea9-8f44-3e5fbb3c1654",
+          "ApiChange": "Method",
+          "ChangedApiName": "PUT",
+          "ChangeType": "Addition",
+          "Description": "Added the [Add default grading scheme](https://learn.microsoft.com/en-us/graph/api/educationassignmentsettings-put-defaultgradingscheme?view=graph-rest-1.0) to the [educationAssignmentSettings](https://learn.microsoft.com/en-us/graph/api/resources/educationAssignmentSettings?view=graph-rest-1.0) resource.",
+          "Target": "educationAssignmentSettings"
+        },
+        {
+          "Id": "8e05037c-958b-4ea9-8f44-3e5fbb3c1654",
+          "ApiChange": "Method",
+          "ChangedApiName": "PUT",
+          "ChangeType": "Addition",
+          "Description": "Added the [Add grading scheme](https://learn.microsoft.com/en-us/graph/api/educationassignment-put-gradingscheme?view=graph-rest-1.0) to the [educationAssignment](https://learn.microsoft.com/en-us/graph/api/resources/educationAssignment?view=graph-rest-1.0) resource.",
+          "Target": "educationAssignment"
         }
       ],
       "Id": "8e05037c-958b-4ea9-8f44-3e5fbb3c1654",
