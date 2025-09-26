@@ -25,6 +25,7 @@ Represents a wrapper object that stores the resources associated with an assignm
 |[Create](../api/educationassignment-post-resources.md) |[educationAssignmentResource](educationassignmentresource.md)| Create an [assignment resource](../resources/educationassignmentresource.md).|
 |[Get](../api/educationassignmentresource-get.md) | [educationAssignmentResource](educationassignmentresource.md) |Get the properties of an [education assignment resource](../resources/educationassignmentresource.md) associated with an [assignment](../resources/educationassignment.md).|
 |[Delete](../api/educationassignmentresource-delete.md) | None |Delete a specific [educationAssignmentResource](../resources/educationassignmentresource.md) attached to an assignment. |
+|[List dependent resources](../api/educationassignmentresource-list-dependentresources.md) | [educationAssignmentResource](../resources/educationassignmentresource.md) collection |List the dependent [education assignment resources](../resources/educationassignmentresource.md) for a given [education assignment resource](../resources/educationassignmentresource.md).|
 
 ## Properties
 | Property	   | Type	|Description|
