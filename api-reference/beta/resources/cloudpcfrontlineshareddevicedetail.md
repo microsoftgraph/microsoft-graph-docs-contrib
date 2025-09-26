@@ -5,7 +5,7 @@ author: "yanghwai"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: resourcePageType
-ms.date: 08/29/2025
+ms.date: 09/26/2025
 ---
 
 # cloudPcFrontlineSharedDeviceDetail resource type
