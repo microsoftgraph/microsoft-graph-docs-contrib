@@ -74,10 +74,9 @@ PATCH https://graph.microsoft.com/v1.0/education/classes/37d99af7-cfc5-4e3b-8566
 Content-Type: application/json
 
 {
-    "displayName": "New GradingScheme name"
+  "displayName": "New GradingScheme name"
 }
 ```
-
 
 #### Response
 The following example shows the response.
@@ -93,27 +92,27 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/assignmentSettings/gradingSchemes/$entity",
-    "id": "d0c2769f-cd0f-4e30-8d1d-9312270de5c4",
-    "displayName": "New GradingScheme name",
-    "hidePointsDuringGrading": false,
-    "grades": [
-        {
-            "displayName": "Great",
-            "minPercentage": 82,
-            "defaultPercentage": null
-        },
-        {
-            "displayName": "Good",
-            "minPercentage": 70,
-            "defaultPercentage": null
-        },
-        {
-            "displayName": "Okay",
-            "minPercentage": 0,
-            "defaultPercentage": null
-        }
-    ]
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/assignmentSettings/gradingSchemes/$entity",
+  "id": "d0c2769f-cd0f-4e30-8d1d-9312270de5c4",
+  "displayName": "New GradingScheme name",
+  "hidePointsDuringGrading": false,
+  "grades": [
+    {
+      "displayName": "Great",
+      "minPercentage": 82,
+      "defaultPercentage": null
+    },
+    {
+      "displayName": "Good",
+      "minPercentage": 70,
+      "defaultPercentage": null
+    },
+    {
+      "displayName": "Okay",
+      "minPercentage": 0,
+      "defaultPercentage": null
+    }
+  ]
 }
 ```
 
@@ -135,40 +134,39 @@ PATCH https://graph.microsoft.com/v1.0/education/classes/37d99af7-cfc5-4e3b-8566
 Content-Type: application/json
 
 {
-    "@context": "#$delta",
-    "value": [
+  "@context": "#$delta",
+  "value": [
+    {
+      "id": "e445acb2-145e-466f-a070-f677d4178f93",
+      "displayName": "New Pass - fail Scheme created",
+      "hidePointsDuringGrading": true
+    },
+    {
+      "displayName": "New Qualitative Scheme",
+      "grades": [
         {
-            "id": "e445acb2-145e-466f-a070-f677d4178f93",
-            "displayName": "New Pass - fail Scheme created",
-            "hidePointsDuringGrading": true
+          "displayName": "Great",
+          "minPercentage": 82
         },
         {
-            "displayName": "New Qualitative Scheme",
-            "grades": [
-                {
-                    "displayName": "Great",
-                    "minPercentage": 82
-                },
-                {
-                    "displayName": "Good",
-                    "minPercentage": 70
-                },
-                {
-                    "displayName": "Okay",
-                    "minPercentage": 0
-                }
-            ]
-        },        
+          "displayName": "Good",
+          "minPercentage": 70
+        },
         {
-            "@removed": {
-                "reason": "deleted"
-            },
-            "id": "d99ee8a9-a3f2-4f93-9183-4d86b8d4930b"
+          "displayName": "Okay",
+          "minPercentage": 0
         }
-    ]
+      ]
+    },
+    {
+      "@removed": {
+        "reason": "deleted"
+      },
+      "id": "d99ee8a9-a3f2-4f93-9183-4d86b8d4930b"
+    }
+  ]
 }
 ```
-
 
 #### Response
 
@@ -185,52 +183,52 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/assignmentSettings/gradingSchemes/$delta",
-    "value": [
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/assignmentSettings/gradingSchemes/$delta",
+  "value": [
+    {
+      "id": "d0c2769f-cd0f-4e30-8d1d-9312270de5c4",
+      "displayName": "New Qualitative Scheme",
+      "hidePointsDuringGrading": false,
+      "grades": [
         {
-            "id": "d0c2769f-cd0f-4e30-8d1d-9312270de5c4",
-            "displayName": "New Qualitative Scheme",
-            "hidePointsDuringGrading": false,
-            "grades": [
-                {
-                    "displayName": "Great",
-                    "minPercentage": 82,
-                    "defaultPercentage": null
-                },
-                {
-                    "displayName": "Good",
-                    "minPercentage": 70,
-                    "defaultPercentage": null
-                },
-                {
-                    "displayName": "Okay",
-                    "minPercentage": 0,
-                    "defaultPercentage": null
-                }
-            ]
+          "displayName": "Great",
+          "minPercentage": 82,
+          "defaultPercentage": null
         },
         {
-            "id": "e445acb2-145e-466f-a070-f677d4178f93",
-            "displayName": "New Pass - fail Scheme created",
-            "hidePointsDuringGrading": true,
-            "grades": [
-                {
-                    "displayName": "Great",
-                    "minPercentage": 82,
-                    "defaultPercentage": null
-                },
-                {
-                    "displayName": "Good",
-                    "minPercentage": 70,
-                    "defaultPercentage": null
-                },
-                {
-                    "displayName": "Okay",
-                    "minPercentage": 0,
-                    "defaultPercentage": null
-                }
-            ]
+          "displayName": "Good",
+          "minPercentage": 70,
+          "defaultPercentage": null
+        },
+        {
+          "displayName": "Okay",
+          "minPercentage": 0,
+          "defaultPercentage": null
         }
-    ]
+      ]
+    },
+    {
+      "id": "e445acb2-145e-466f-a070-f677d4178f93",
+      "displayName": "New Pass - fail Scheme created",
+      "hidePointsDuringGrading": true,
+      "grades": [
+        {
+          "displayName": "Great",
+          "minPercentage": 82,
+          "defaultPercentage": null
+        },
+        {
+          "displayName": "Good",
+          "minPercentage": 70,
+          "defaultPercentage": null
+        },
+        {
+          "displayName": "Okay",
+          "minPercentage": 0,
+          "defaultPercentage": null
+        }
+      ]
+    }
+  ]
 }
 ```
