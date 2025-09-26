@@ -14,7 +14,7 @@ Namespace: microsoft.graph.teamsAdministration
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the policy ID for a given policy name and policy type within Teams administration. (See [policyIdentifierDetail](../resources/teamsadministration-policyidentifierdetail.md) resource.)
+Get the [policy ID](../resources/teamsadministration-policyidentifierdetail.md) for a given policy name and policy type within Teams administration.
 
 ## Permissions
 
