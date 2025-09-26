@@ -47,7 +47,7 @@ PATCH /education/classes/{educationClassId}/assignmentSettings/gradingSchemes/{e
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|The name of the grading scheme.|
-|grades|[educationGradingSchemeGrade](../resources/educationgradingschemegrade.md) collection|The name of the grading scheme.|
+|grades|[educationGradingSchemeGrade](../resources/educationgradingschemegrade.md) collection|The grades that make up the scheme.|
 |hidePointsDuringGrading|Boolean|The display setting for the UI. Indicates whether teachers can grade with points in addition to letter grades.|
 
 ## Response
