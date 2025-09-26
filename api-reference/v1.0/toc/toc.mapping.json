@@ -520,7 +520,9 @@
         "educationSubmission",
         "educationSubmissionResource",
         "readingAssignmentSubmission",
-        "reflectCheckInResponse"
+        "readingCoachPassage",
+        "reflectCheckInResponse",
+        "speakerAssignmentSubmission"
       ],
       "complexTypes": [
         "challengingWord",
@@ -572,10 +574,10 @@
           "overview": "../../resources/engagement-api-overview.md",
           "resources": [
             "community",
-            "engagementAsyncOperation",
-            "engagementRole",
-            "engagementRoleMember",
-            "employeeExperienceUser"
+            "engagementAsyncOperation"
+          ],
+          "complexTypes": [
+            "engagementIdentitySet"
           ]
         }
       ]
