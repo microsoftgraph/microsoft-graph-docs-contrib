@@ -100,12 +100,13 @@ Added a note to the **artifactCount** property of the [granularMailboxRestoreArt
 
 ### Files
 
-Defined the following endpoints as supported for the [driveItem: discardCheckout](/graph/api/driveitem-discardcheckout?view=graph-rest-beta&preserve-view=true) API:
-- `/drives/{driveId}/items/{itemId}/discardCheckout`
-- `/groups/{groupId}/drive/items/{itemId}/discardCheckout`
-- `/me/drive/items/{item-id}/discardCheckout`
-- `/sites/{siteId}/drive/items/{itemId}/discardCheckout`
-- `/users/{userId}/drive/items/{itemId}/discardCheckout`
+- The new SharePoint Embedded migration API enables you to programmatically schedule [SharePoint migration jobs](/graph/api/resources/sharepointmigrationjob?view=graph-rest-beta&preserve-view=true) for bulk-migrating content from intermediary Azure blob storage containers to the target [fileStorageContainer](/graph/api/resources/filestoragecontainer?view=graph-rest-beta&preserve-view=true).
+- Defined the following endpoints as supported for the [driveItem: discardCheckout](/graph/api/driveitem-discardcheckout?view=graph-rest-beta&preserve-view=true) API:
+  - `/drives/{driveId}/items/{itemId}/discardCheckout`
+  - `/groups/{groupId}/drive/items/{itemId}/discardCheckout`
+  - `/me/drive/items/{item-id}/discardCheckout`
+  - `/sites/{siteId}/drive/items/{itemId}/discardCheckout`
+  - `/users/{userId}/drive/items/{itemId}/discardCheckout`
 
 ### Calendars | Places
 

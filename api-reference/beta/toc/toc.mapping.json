@@ -1018,12 +1018,23 @@
         "recycleBinItem",
         "sharedDriveItem",
         "sharePointGroup",
-        "sharePointGroupMember"
+        "sharePointGroupMember",
+        "sharePointMigrationEvent",
+        "sharePointMigrationFinishManifestFileUploadEvent",
+        "sharePointMigrationJob",
+        "sharePointMigrationJobCancelledEvent",
+        "sharePointMigrationJobDeletedEvent",
+        "sharePointMigrationJobErrorEvent",
+        "sharePointMigrationJobPostponedEvent",
+        "sharePointMigrationJobProgressEvent",
+        "sharePointMigrationJobQueuedEvent",
+        "sharePointMigrationJobStartEvent"
       ],
       "complexTypes": [
         "fileStorageContainerTypeRegistrationSettings",
+        "fileStorageContainerTypeAgentSettings",
         "fileStorageContainerTypeSettings",
-        "fileStorageContainerTypeAgentSettings"
+        "sharePointMigrationContainerInfo"
       ]
     },
     {
