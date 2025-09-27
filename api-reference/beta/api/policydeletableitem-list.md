@@ -1,8 +1,8 @@
----
+﻿---
 title: "List policyDeletableItem objects"
 description: "Get a list of the policyDeletableItem objects and their properties."
 author: "ashyasingh"
-ms.date: 06/18/2025
+ms.date: 08/11/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
@@ -17,6 +17,8 @@ Namespace: microsoft.graph
 Get a list of the [policyDeletableItem](../resources/policydeletableitem.md) objects and their properties, which might be one of the following deleted policy types:
 - [crossTenantAccessPolicyConfigurationPartner](../resources/crosstenantaccesspolicyconfigurationpartner.md)
 - [crossTenantIdentitySyncPolicyPartner](../resources/crosstenantidentitysyncpolicypartner.md)
+- [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md)
+- [namedLocation](../resources/namedlocation.md)
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -53,9 +55,27 @@ List deleted **crossTenantIdentitySyncPolicyPartner** objects:
 GET /policies/deletedItems/crossTenantSyncPolicyPartners/
 ```
 
+List deleted **conditionalAccessPolicy** objects:
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+GET /identity/conditionalAccess/deletedItems/policies
+```
+
+List deleted **namedLocation** objects:
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+GET /identity/conditionalAccess/deletedItems/namedLocations
+```
+
 ## Optional query parameters
 
-Not supported.
+This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -73,7 +93,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Get deleted crossTenantAccessPolicyConfigurationPartner objects
+### Example 1: Get deleted crossTenantAccessPolicyConfigurationPartner objects
 
 #### Request
 
@@ -190,7 +210,7 @@ Content-Type: application/json
 ```
 
 
-### Get deleted crossTenantIdentitySyncPolicyPartner objects
+### Example 2: Get deleted crossTenantIdentitySyncPolicyPartner objects
 
 #### Request
 
@@ -258,3 +278,171 @@ Content-Type: application/json
   ]
 }
 ```
+
+### Example 3: Get deleted conditionalAccessPolicy objects
+
+#### Request
+
+The following example shows a request for a conditionalAccessPolicy.
+<!-- {
+  "blockType": "request",
+  "name": "list_policydeletableitem_conditionalAccessPolicy"
+}
+-->
+```HTTP
+GET https://graph.microsoft.com/beta/identity/conditionalAccess/deletedItems/policies
+```
+
+
+#### Response
+
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.policyDeletableItem"
+}
+-->
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/deletedItems/policies",
+    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET identity/conditionalAccess/deletedItems/policies?$select=conditions,createdDateTime",
+    "value": [
+        {
+            "id": "1a71ea59-9583-4f16-9de4-47ecb42adfc6",
+            "templateId": null,
+            "displayName": "Demo",
+            "createdDateTime": "2024-06-26T22:13:41.3634477Z",
+            "modifiedDateTime": "2025-01-22T17:30:09.4040798Z",
+            "state": "disabled",
+            "deletedDateTime": "2025-09-12T17:01:05Z",
+            "partialEnablementStrategy": null,
+            "sessionControls": null,
+            "conditions": {
+                "userRiskLevels": [],
+                "signInRiskLevels": [],
+                "clientAppTypes": [
+                    "all"
+                ],
+                "platforms": null,
+                "times": null,
+                "deviceStates": null,
+                "devices": null,
+                "applications": {
+                    "includeApplications": [
+                        "None"
+                    ],
+                    "excludeApplications": [],
+                    "includeUserActions": [],
+                    "includeAuthenticationContextClassReferences": [],
+                    "applicationFilter": null
+                },
+                "users": {
+                    "includeUsers": [
+                        "None"
+                    ],
+                    "excludeUsers": [],
+                    "includeGroups": [],
+                    "excludeGroups": [],
+                    "includeRoles": [],
+                    "excludeRoles": [],
+                    "includeGuestsOrExternalUsers": null,
+                    "excludeGuestsOrExternalUsers": null
+                },
+                "locations": {
+                    "includeLocations": [
+                        "41f20046-7b5b-4721-b049-eccd63d614ef"
+                    ],
+                    "excludeLocations": []
+                },
+                "clientApplications": {
+                    "includeServicePrincipals": [
+                        "ServicePrincipalsInMyTenant"
+                    ],
+                    "excludeServicePrincipals": []
+                }
+            },
+            "grantControls": {
+                "operator": "OR",
+                "builtInControls": [
+                    "block"
+                ],
+                "customAuthenticationFactors": [],
+                "termsOfUse": [],
+                "authenticationStrength@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/deletedItems/policies('1a71ea59-9583-4f16-9de4-47ecb42adfc6')/grantControls/authenticationStrength/$entity",
+                "authenticationStrength": null
+            }
+        }
+    ]
+}
+```
+
+### Example 4: Get deleted namedLocation objects
+
+#### Request
+
+The following example shows a request for a namedLocation.
+<!-- {
+  "blockType": "request",
+  "name": "list_policydeletableitem_namedLocation"
+}
+-->
+```HTTP
+GET https://graph.microsoft.com/beta/identity/conditionalAccess/deletedItems/namedLocations
+```
+
+
+#### Response
+
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.policyDeletableItem"
+}
+-->
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/deletedItems/namedLocations",
+    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET identity/conditionalAccess/deletedItems/namedLocations?$select=createdDateTime,displayName",
+    "value": [
+        {
+            "@odata.type": "#microsoft.graph.countryNamedLocation",
+            "id": "1a4c0633-332f-4691-a27a-fd8334938a62",
+            "displayName": "Calvin Test USA",
+            "modifiedDateTime": "2025-09-05T22:12:01.4444669Z",
+            "createdDateTime": "2025-09-05T22:12:01.4444669Z",
+            "deletedDateTime": "2025-09-08T16:03:43Z",
+            "countriesAndRegions": [
+                "US"
+            ],
+            "includeUnknownCountriesAndRegions": false,
+            "countryLookupMethod": "clientIpAddress"
+        },
+        {
+            "@odata.type": "#microsoft.graph.ipNamedLocation",
+            "id": "003fe866-1f11-4356-8ddc-22e52f491cc5",
+            "displayName": "Pallav IP Test",
+            "modifiedDateTime": "2025-09-10T15:36:17.992593Z",
+            "createdDateTime": "2025-09-10T15:35:45.6440841Z",
+            "deletedDateTime": "2025-09-12T16:56:35Z",
+            "isTrusted": false,
+            "ipRanges": [
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "127.30.27.128/30"
+                }
+            ]
+        }
+    ]
+}
+```
+

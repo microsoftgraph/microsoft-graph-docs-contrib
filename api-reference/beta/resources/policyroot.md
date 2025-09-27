@@ -1,29 +1,35 @@
----
+﻿---
 title: "policyRoot resource type"
 description: "Resource type exposing navigation properties for the policies singleton."
-author: "dkershaw10"
+author: "ashyasingh"
+ms.date: 08/11/2025
 ms.localizationpriority: medium
-ms.subservice: "non-product-specific"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
-ms.date: 10/18/2024
 ---
 
 # policyRoot resource type
 
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Resource type exposing navigation properties for the policies singleton.
 
+Inherits from [entity](../resources/entity.md).
+
+
 ## Methods
-None
+None.
 
 ## Properties
-None
+| Property     | Type        | Description |
+|:-------------|:------------|:------------|
+|id|String| The identifier for a policy singleton. Inherits from [entity](../resources/entity.md).|
 
 ## Relationships
-
-| Relationship                              | Type                                                                                                      | Description                                                                                                                                                          |
-|:------------------------------------------|:----------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|Relationship|Type|Description|
+|:---|:---|:---|
 | accessReviewPolicy                        | [accessReviewPolicy](accessreviewpolicy.md)                                                               | The policy that contains directory-level access review settings.                                                                                                     |
 | activityBasedTimeoutPolicies              | [activityBasedTimeoutPolicy](activitybasedtimeoutpolicy.md) collection                                    | The policy that controls the idle time-out for web sessions for applications.                                                                                        |
 | adminConsentRequestPolicy                 | [adminConsentRequestPolicy](adminconsentrequestpolicy.md)                                                 | The policy by which consent requests are created and managed for the entire tenant.                                                                                  |
@@ -58,11 +64,14 @@ The following JSON representation shows the resource type.
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.policyRoot",
+  "baseType": "microsoft.graph.entity",
   "openType": false
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.policyRoot"
+  "@odata.type": "#microsoft.graph.policyRoot",
+  "id": "String (identifier)"
 }
 ```
+

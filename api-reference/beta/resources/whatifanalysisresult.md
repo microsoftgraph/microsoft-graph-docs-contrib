@@ -1,4 +1,4 @@
----
+﻿---
 title: "whatIfAnalysisResult resource type"
 toc.title: "What If evaluation"
 description: "Represents the result of a Conditional Access What If evaluation, which indicates the policies that would apply based on the sign-in details you provide."
@@ -78,4 +78,3 @@ The following JSON representation shows the resource type.
   "analysisReasons": "String"
 }
 ```
-

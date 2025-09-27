@@ -1,8 +1,8 @@
----
+﻿---
 title: "Get policyDeletableItem"
-description: "Read the properties and relationships of a policyDeletableItem object."
+description: "Read the properties and relationships of policyDeletableItem object."
 author: "ashyasingh"
-ms.date: 06/18/2025
+ms.date: 08/11/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
@@ -17,6 +17,8 @@ Namespace: microsoft.graph
 Read the properties and relationships of a [policyDeletableItem](../resources/policydeletableitem.md) object, which might be one of the following deleted policy types:
 - [crossTenantAccessPolicyConfigurationPartner](../resources/crosstenantaccesspolicyconfigurationpartner.md)
 - [crossTenantIdentitySyncPolicyPartner](../resources/crosstenantidentitysyncpolicypartner.md)
+- [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md)
+- [namedLocation](../resources/namedlocation.md)
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -54,15 +56,35 @@ Get a deleted **crossTenantIdentitySyncPolicyPartner** object:
 GET /policies/deletedItems/crossTenantSyncPolicyPartners/{id}
 ```
 
+Get a deleted **conditionalAccessPolicy** object:
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+GET /identity/conditionalAccess/deletedItems/policies/{id}
+```
+
+Get a deleted **namedLocation** object:
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+GET /identity/conditionalAccess/deletedItems/namedLocations/{id}
+```
+
 ## Optional query parameters
 
-Not supported.
+This method doesn't support OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+
+## Request body
 
 Don't supply a request body for this method.
 
@@ -222,3 +244,148 @@ Content-Type: application/json
   "userSyncInbound": null
 }
 ```
+
+
+### Example 3: Retrieve a deleted conditionalAccessPolicy object
+
+#### Request
+
+The following example shows a request for a **conditionalAccessPolicy**.
+<!-- {
+  "blockType": "request",
+  "name": "get_policydeletableitem_conditionalAccessPolicy"
+}
+-->
+```HTTP
+GET https://graph.microsoft.com/beta/identity/conditionalAccess/deletedItems/policies/1a71ea59-9583-4f16-9de4-47ecb42adfc6
+```
+
+
+#### Response
+
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.policyDeletableItem"
+}
+-->
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/deletedItems/policies/$entity",
+    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET identity/conditionalAccess/deletedItems/policies('<guid>')?$select=conditions,createdDateTime",
+    "id": "1a71ea59-9583-4f16-9de4-47ecb42adfc6",
+    "templateId": null,
+    "displayName": "Demo",
+    "createdDateTime": "2024-06-26T22:13:41.3634477Z",
+    "modifiedDateTime": "2025-01-22T17:30:09.4040798Z",
+    "state": "disabled",
+    "deletedDateTime": "2025-09-12T17:01:05Z",
+    "partialEnablementStrategy": null,
+    "sessionControls": null,
+    "conditions": {
+        "userRiskLevels": [],
+        "signInRiskLevels": [],
+        "clientAppTypes": [
+            "all"
+        ],
+        "platforms": null,
+        "times": null,
+        "deviceStates": null,
+        "devices": null,
+        "applications": {
+            "includeApplications": [
+                "None"
+            ],
+            "excludeApplications": [],
+            "includeUserActions": [],
+            "includeAuthenticationContextClassReferences": [],
+            "applicationFilter": null
+        },
+        "users": {
+            "includeUsers": [
+                "None"
+            ],
+            "excludeUsers": [],
+            "includeGroups": [],
+            "excludeGroups": [],
+            "includeRoles": [],
+            "excludeRoles": [],
+            "includeGuestsOrExternalUsers": null,
+            "excludeGuestsOrExternalUsers": null
+        },
+        "locations": {
+            "includeLocations": [
+                "41f20046-7b5b-4721-b049-eccd63d614ef"
+            ],
+            "excludeLocations": []
+        },
+        "clientApplications": {
+            "includeServicePrincipals": [
+                "ServicePrincipalsInMyTenant"
+            ],
+            "excludeServicePrincipals": []
+        }
+    },
+    "grantControls": {
+        "operator": "OR",
+        "builtInControls": [
+            "block"
+        ],
+        "customAuthenticationFactors": [],
+        "termsOfUse": [],
+        "authenticationStrength@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/deletedItems/policies('1a71ea59-9583-4f16-9de4-47ecb42adfc6')/grantControls/authenticationStrength/$entity",
+        "authenticationStrength": null
+    }
+}
+```
+
+### Example 4: Retrieve a deleted namedLocation object
+
+#### Request
+
+The following example shows a request for a **namedLocation**.
+<!-- {
+  "blockType": "request",
+  "name": "get_policydeletableitem_namedLocation"
+}
+-->
+```HTTP
+GET https://graph.microsoft.com/beta/identity/conditionalAccess/deletedItems/namedLocations/1a4c0633-332f-4691-a27a-fd8334938a62
+```
+
+
+#### Response
+
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.policyDeletableItem"
+}
+-->
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/deletedItems/namedLocations/$entity",
+  "@odata.type": "#microsoft.graph.countryNamedLocation",
+  "id": "1a4c0633-332f-4691-a27a-fd8334938a62",
+  "displayName": "Calvin Test USA",
+  "modifiedDateTime": "2025-09-05T22:12:01.4444669Z",
+  "createdDateTime": "2025-09-05T22:12:01.4444669Z",
+  "deletedDateTime": "2025-09-08T16:03:43Z",
+  "countriesAndRegions": [
+    "US"
+  ],
+  "includeUnknownCountriesAndRegions": false,
+  "countryLookupMethod": "clientIpAddress"
+}
+```
+
