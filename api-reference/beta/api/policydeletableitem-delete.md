@@ -1,22 +1,25 @@
 ---
-title: "Permanently delete policyDeletableItem"
+title: "Delete policyDeletableItem"
 description: "Permanently delete a policyDeletableItem object."
 author: "ashyasingh"
-ms.date: 06/18/2025
+ms.date: 08/11/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
-# Permanently delete policyDeletableItem
+# Delete policyDeletableItem
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+
 Permanently delete a [policyDeletableItem](../resources/policydeletableitem.md) object, which might be one of the following deleted policy types:
 - [crossTenantAccessPolicyConfigurationPartner](../resources/crosstenantaccesspolicyconfigurationpartner.md)
 - [crossTenantIdentitySyncPolicyPartner](../resources/crosstenantidentitysyncpolicypartner.md)
+- [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md)
+- [namedLocation](../resources/namedlocation.md)
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -52,6 +55,24 @@ Permanently delete a **crossTenantIdentitySyncPolicyPartner** object:
 -->
 ``` http
 DELETE /policies/deletedItems/crossTenantSyncPolicyPartners/{id}
+```
+
+Permanently delete a  **conditionalAccessPolicy** object:
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+DELETE /identity/conditionalAccess/deletedItems/policies/{id}
+```
+
+Permanently delete a  **namedLocation** object:
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+DELETE /identity/conditionalAccess/deletedItems/namedLocations/{id}
 ```
 
 ## Request headers
@@ -175,3 +196,58 @@ The following example shows the response.
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+### Example 3: Permanently delete a deleted conditionalAccessPolicy object
+
+#### Request
+
+The following example shows a request for conditionalAccessPolicy.
+<!-- {
+  "blockType": "request",
+  "name": "delete_policydeletableitem_conditionalAccessPolicy"
+}
+-->
+```HTTP
+DELETE https://graph.microsoft.com/beta/identity/conditionalAccess/deletedItems/policies/4fa582af-f900-495c-9772-ccf34d5a95fc
+```
+
+
+#### Response
+
+The following example shows the response.
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
+``` http
+HTTP/1.1 204 No Content
+```
+
+### Example 4: Permanently delete a deleted namedLocation object
+
+#### Request
+
+The following example shows a request for namedLocation.
+<!-- {
+  "blockType": "request",
+  "name": "delete_policydeletableitem_namedLocation"
+}
+-->
+```HTTP
+DELETE https://graph.microsoft.com/beta/identity/conditionalAccess/deletedItems/namedLocations/b5b69bc9-3e36-4fa0-bc7f-f0e5fd3aebf1
+```
+
+
+#### Response
+
+The following example shows the response.
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
+``` http
+HTTP/1.1 204 No Content
+```
+
