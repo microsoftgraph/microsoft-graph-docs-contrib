@@ -37,8 +37,16 @@ GET /networkAccess/deployments
 
 ## Optional query parameters
 
-This method does not support any OData query parameters.
+This method supports OData query parameters to help customize the response. You can use the following parameters:
 
+|Parameter|Description|
+|:---|:---|
+|$filter|Filter items by property values (e.g., `status/deploymentStage eq 'succeeded'`).|
+|$top|Show only the first n items.|
+|$skip|Skip the first n items.|
+|$orderby|Order items by property values.|
+
+For more information, see [OData query parameters](/graph/query-parameters).
 ## Request headers
 
 |Name|Description|
