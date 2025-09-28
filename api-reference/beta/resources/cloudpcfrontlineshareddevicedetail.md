@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the Cloud PC device details associated with Front line Shared service plan, including the user's UPN and session start date/time.
+Represents the Cloud PC device details associated with frontline shared service plan, including the user's UPN and session start date/time.
 
 ## Properties
 
