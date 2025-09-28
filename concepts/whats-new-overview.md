@@ -53,7 +53,7 @@ Defined the following endpoints as supported for the [driveItem: discardCheckout
 - Added the following new properties to the [securityGroupEvidence](/graph/api/resources/security-securitygroupevidence) resource:
   - Use the **activeDirectoryObjectGuid** property to get the unique group identifier assigned by the on-premises Active Directory.
   - Use the **distinguishedName** property to identify the distinguished name of the security group.
-  - Use the **friendlyName** property to identify the friendly name of the security group.	
+  - Use the **friendlyName** property to identify the friendly name of the security group.
   - Use the **sid** property to get the security identifier of the group.
 - Use the **activeDirectoryObjectGuid** property on [userAccount](/graph/api/resources/security-useraccount) to get the unique user identifier assigned by the on-premises Active Directory.
 
@@ -178,6 +178,7 @@ Removed support for delegated permissions in the [List sites](/graph/api/site-li
 
 - Deprecated the `/deviceManagement/virtualEndpoint/cloudPCs/{cloudPCId}/getCloudPcLaunchInfo` endpoint in favor of delegated permission requests using either `/me/cloudPCs/{cloudPCId}/getCloudPcLaunchInfo` or `/users/{userId}/cloudPCs/{id}/getCloudPcLaunchInfo` in the [getCloudPcLaunchInfo](/graph/api/cloudpc-getcloudpclaunchinfo) method.
 - Use the **provisioningSourceType** property on [cloudPcUserSetting](/graph/api/resources/cloudpcusersetting?view=graph-rest-beta&preserve-view=true) to indicate the provisioning source of the Cloud PC prepared for an end user.
+- Add v1.0 List for user operation for [cloudPC](/graph/api/resources/cloudpc).
 
 ### Files
 
@@ -193,7 +194,7 @@ Deprecated the [markAsJunk](/graph/api/message-markasjunk?view=graph-rest-beta&p
 
 ### Security | Identities
 
-Added the [identityAccounts](/graph/api/resources/security-identityaccounts?view=graph-rest-beta&preserve-view=true) and its related methods that lets you retrieve details of user accounts observed by Microsoft Defender for Identity and apply response actions such as disabling accounts and forcing password reset. 
+Added the [identityAccounts](/graph/api/resources/security-identityaccounts?view=graph-rest-beta&preserve-view=true) and its related methods that lets you retrieve details of user accounts observed by Microsoft Defender for Identity and apply response actions such as disabling accounts and forcing password reset.
 
 ### Sites and lists
 

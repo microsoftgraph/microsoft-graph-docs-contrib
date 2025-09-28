@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "ad99bb92-c9fc-4ca3-9bf3-c1846433f520",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Addition",
+          "Description": "Added the [list](https://learn.microsoft.com/en-us/graph/api/user-list-cloudpcs?view=graph-rest-1.0) operation to the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-1.0) resource.",
+          "Target": "user"
+        }
+      ],
+      "Id": "ad99bb92-c9fc-4ca3-9bf3-c1846433f520",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-03-22T09:24:41.3424906Z",
+      "WorkloadArea": "Device and app management",
+      "SubArea": "Cloud PC"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "ac011bc2-8597-42ee-9690-2445bc0ca2f4",
           "ApiChange": "Resource",
           "ChangedApiName": "cloudPcConnectionSettings",
@@ -271,7 +289,7 @@
           "ChangeType": "Addition",
           "Description": "Added the **provisioningSourceType** property to the [cloudPcUserSetting](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcusersetting?view=graph-rest-beta) resource.",
           "Target": "cloudPcUserSetting"
-        },          
+        },
         {
           "Id": "f064222f-fcc8-4493-b2ed-43075268f1dd",
           "ApiChange": "Enumeration",
@@ -565,7 +583,7 @@
       "SubArea": "Cloud PC"
     },
         {
-          "ChangeList": [ 
+          "ChangeList": [
             {
               "Id": "b7e8c5a2-1c3d-4e9f-9f2a-8a7e6d2c1f01",
               "ApiChange": "Enumeration",
@@ -1021,7 +1039,7 @@
           "ChangeType": "Addition",
           "Description": "Added the **userInitiatedDisasterRecoveryAllowed** property to the [cloudPcCrossRegionDisasterRecoverySetting](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcCrossRegionDisasterRecoverySetting?view=graph-rest-beta) resource.",
           "Target": "cloudPcCrossRegionDisasterRecoverySetting"
-        },          
+        },
         {
           "Id": "d2fbdff0-4da3-4e94-829b-fcee62ccbb58",
           "ApiChange": "Property",
@@ -1419,7 +1437,7 @@
         "CreatedDateTime": "2024-10-08T05:03:56.9188489Z",
         "WorkloadArea": "Device and app management",
         "SubArea": "Cloud PC"
-      },  
+      },
       {
         "ChangeList": [
           {
@@ -1429,7 +1447,7 @@
             "ChangeType": "Addition",
             "Description": "Added the **disasterRecoveryType** property to the [cloudPcCrossRegionDisasterRecoverySetting](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcCrossRegionDisasterRecoverySetting?view=graph-rest-beta) resource.",
             "Target": "cloudPcCrossRegionDisasterRecoverySetting"
-          },          
+          },
           {
             "Id": "bd01fad1-6432-41fc-86c8-1ffde6fca9f2",
             "ApiChange": "Enumeration",
@@ -1455,7 +1473,7 @@
             "ChangeType": "Addition",
             "Description": "Enabled the `$select` query parameter for the [cloudPC: getProvisionedCloudPCs](https://learn.microsoft.com/en-us/graph/api/cloudpc-getprovisionedcloudpcs?view=graph-rest-beta) method.",
             "Target": "getProvisionedCloudPCs"
-          }            
+          }
         ],
         "Id": "7d6e647c-d72a-462f-b0fa-7a5db736a1f6",
         "Cloud": "Prod",
@@ -1512,7 +1530,7 @@
         "Version": "beta",
         "CreatedDateTime": "2024-09-30T21:56:29.8792314Z",
         "WorkloadArea": "Device and app management",
-        "SubArea": "Cloud PC"   
+        "SubArea": "Cloud PC"
       },
       {
         "ChangeList": [
@@ -1549,7 +1567,7 @@
             "ChangeType": "Addition",
             "Description": "Added the [cloudPcBulkMove](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcbulkmove?view=graph-rest-beta) resource type.",
             "Target": "cloudPcBulkMove"
-          }            
+          }
         ],
         "Id": "4772baa6-0208-4673-8a2f-8eab2f07c400",
         "Cloud": "Prod",
@@ -7362,7 +7380,7 @@
     },
     {
       "ChangeList": [
-        {      
+        {
           "Id": "484a70d1-caaf-4a03-a477-1cbe688304af",
           "ApiChange": "Property",
           "ChangedApiName": "frontlineCloudPcAvailability",
