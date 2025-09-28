@@ -503,6 +503,7 @@
           "resources": [
             "cloudPC",
             "cloudPcAuditEvent",
+            "cloudPcBulkAction",
             "cloudPcCloudApp",
             "cloudPcCrossCloudGovernmentOrganizationMapping",
             "cloudPcDeviceImage",
@@ -517,8 +518,7 @@
             "cloudPcSnapshot",
             "cloudPcSupportedRegion",
             "cloudPcUserSetting",
-            "virtualEndpoint",
-            "cloudPcBulkAction"
+            "virtualEndpoint"
           ],
           "complexTypes": [
             "appScope",
@@ -545,7 +545,7 @@
             "cloudPcBulkCreateSnapshot",
             "cloudPcBulkSetReviewStatus",
             "cloudPcCloudAppDetail",
-            "CloudPcConnectionSetting",
+            "cloudPcConnectionSetting",
             "cloudPcConnectivityEvent",
             "cloudPcConnectivityResult",
             "cloudPcCrossRegionDisasterRecoverySetting",
@@ -561,6 +561,7 @@
             "cloudPcLoginResult",
             "cloudPcManagementAssignmentTarget",
             "cloudPcManagementGroupAssignmentTarget",
+            "cloudPcNotificationSetting",
             "cloudPcOnPremisesConnectionStatusDetail",
             "cloudPcOnPremisesConnectionStatusDetails",
             "cloudPcPartnerAgentInstallResult",
@@ -584,8 +585,7 @@
             "frontlineCloudPcDetail",
             "keyValuePair",
             "microsoftManagedDesktop",
-            "unifiedRolePermission",
-            "cloudPcNotificationSetting"
+            "unifiedRolePermission"
           ],
           "childNodes": [
             {
@@ -1019,12 +1019,23 @@
         "recycleBinItem",
         "sharedDriveItem",
         "sharePointGroup",
-        "sharePointGroupMember"
+        "sharePointGroupMember",
+        "sharePointMigrationEvent",
+        "sharePointMigrationFinishManifestFileUploadEvent",
+        "sharePointMigrationJob",
+        "sharePointMigrationJobCancelledEvent",
+        "sharePointMigrationJobDeletedEvent",
+        "sharePointMigrationJobErrorEvent",
+        "sharePointMigrationJobPostponedEvent",
+        "sharePointMigrationJobProgressEvent",
+        "sharePointMigrationJobQueuedEvent",
+        "sharePointMigrationJobStartEvent"
       ],
       "complexTypes": [
         "fileStorageContainerTypeRegistrationSettings",
+        "fileStorageContainerTypeAgentSettings",
         "fileStorageContainerTypeSettings",
-        "fileStorageContainerTypeAgentSettings"
+        "sharePointMigrationContainerInfo"
       ]
     },
     {
@@ -3093,14 +3104,17 @@
         {
           "name": "Administration (preview)",
           "resources": [
-            "microsoft.graph.teamsAdministration.teamsUserConfiguration",
             "microsoft.graph.teamsAdministration.numberAssignment",
+            "microsoft.graph.teamsAdministration.teamsPolicyAssignment",
+            "microsoft.graph.teamsAdministration.teamsPolicyUserAssignment",
+            "microsoft.graph.teamsAdministration.teamsUserConfiguration",
             "microsoft.graph.teamsAdministration.telephoneNumberLongRunningOperation"
           ],
           "complexTypes": [
             "microsoft.graph.teamsAdministration.assignedTelephoneNumber",
             "microsoft.graph.teamsAdministration.effectivePolicyAssignment",
             "microsoft.graph.teamsAdministration.policyAssignment",
+            "microsoft.graph.teamsAdministration.policyIdentifierDetail",
             "microsoft.graph.teamsAdministration.telephoneNumberLongRunningOperationDetails"
           ]
         },
@@ -3471,6 +3485,7 @@
         "workbookChartPointFormat",
         "workbookChartSeriesFormat",
         "workbookChartTitleFormat",
+        "workbookCommentMention",
         "workbookDocumentTaskSchedule",
         "workbookEmailIdentity",
         "workbookFilterCriteria",

@@ -19,9 +19,8 @@ Represents a container that exposes navigation properties for cloud communicatio
 Inherits from [entity](../resources/entity.md)
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[getAllOnlineMeetingMessages](../api/cloudcommunications-getallonlinemeetingmessages.md)|[engagementConversationMessage](../resources/engagementconversationmessage.md) collection|Get all Teams question and answer (Q&A) conversation messages in a tenant.|
+
+None.
 
 ## Properties
 None.

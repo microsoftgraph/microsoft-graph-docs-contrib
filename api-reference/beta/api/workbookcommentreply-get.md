@@ -106,7 +106,9 @@ Content-type: application/json
 {
   "content": "This is text of comment.",
   "contentType": "Plain",
-  "id": "{97A21473-8339-4BF0-BCB6-F55E4909FFB8}"
+  "id": "{97A21473-8339-4BF0-BCB6-F55E4909FFB8}",
+  "richContent": "",
+  "mentions": []
 }
 ```
 
