@@ -1,6 +1,6 @@
 ---
 title: "accessPackageRequestApprovalStageCallbackConfiguration resource type"
-description: "Callback settings that define how long Microsoft Entra ID can wait for a resume signal for the callout that it made to the logic app."
+description: "Access Package callback settings that define how long Microsoft Entra ID can wait for a resume signal for the callout that it made to the logic app."
 author: "vikama-microsoft"
 ms.date: 09/29/2025
 ms.localizationpriority: medium
