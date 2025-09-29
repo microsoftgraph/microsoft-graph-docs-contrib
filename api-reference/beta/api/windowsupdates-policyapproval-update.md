@@ -2,7 +2,7 @@
 title: "Update policyApproval"
 description: "Update the properties of a policyApproval object."
 author: "andredm7"
-ms.date: 09/25/2025
+ms.date: 09/30/2025
 ms.localizationpriority: medium
 ms.subservice: "windows-autopatch"
 doc_type: apiPageType

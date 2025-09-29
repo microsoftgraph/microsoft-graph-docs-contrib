@@ -2,7 +2,7 @@
 title: "Delete policyApproval"
 description: "Delete a policyApproval object."
 author: "andredm7"
-ms.date: 09/25/2025
+ms.date: 09/30/2025
 ms.localizationpriority: medium
 ms.subservice: "windows-autopatch"
 doc_type: apiPageType
@@ -96,15 +96,5 @@ The following example shows the response.
 -->
 ``` http
 HTTP/1.1 204 No Content
-Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.windowsUpdates.policyApproval",
-  "catalogEntryId": "String",
-  "status": "String",
-  "id": "ab3a53f0-f7aa-10b1-04d4-8680584cbbb6",
-  "createdDateTime": "String (timestamp)",
-  "lastModifiedDateTime": "String (timestamp)"
-}
 ```
 

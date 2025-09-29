@@ -2,7 +2,7 @@
 title: "policyApproval resource type"
 description: "Set of Quality Updates Policy Approval types"
 author: "andredm7"
-ms.date: 09/25/2025
+ms.date: 09/30/2025
 ms.localizationpriority: medium
 ms.subservice: "windows-autopatch"
 doc_type: resourcePageType
@@ -26,8 +26,6 @@ Inherits from [entity](../resources/entity.md)
 |[Get](../api/windowsupdates-policyapproval-get.md)|[microsoft.graph.windowsUpdates.policyApproval](../resources/windowsupdates-policyapproval.md)|Read the properties and relationships of [microsoft.graph.windowsUpdates.policyApproval](../resources/windowsupdates-policyapproval.md) object. You must use a policyapprovalID to get details.|
 |[Update](../api/windowsupdates-policyapproval-update.md)|[microsoft.graph.windowsUpdates.policyApproval](../resources/windowsupdates-policyapproval.md)|Update the properties of a policyApproval object.|
 |[Delete](../api/windowsupdates-policyapproval-delete.md)|None|Delete a policyApproval object.|
-|[List catalogEntry](../api/windowsupdates-policyapproval-list-catalogentry.md)|[microsoft.graph.windowsUpdates.catalogEntry](../resources/windowsupdates-catalogentry.md) collection| Get a list of Catalog Entry resources from the catalog.|
-|[Add catalogEntry](../api/windowsupdates-policyapproval-post-catalogentry.md)|[microsoft.graph.windowsUpdates.catalogEntry](../resources/windowsupdates-catalogentry.md)|Add catalogEntry by posting to the catalogEntry collection.|
 
 ## Properties
 |Property|Type|Description|
