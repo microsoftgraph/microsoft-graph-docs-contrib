@@ -60,6 +60,26 @@ PATCH /security/securityCopilot/workspaces/{workspaceId}/sessions/{sessionId}/pr
 
 If successful, this method returns a `200 OK` response code and an updated [microsoft.graph.security.securityCopilot.prompt](../resources/security.securitycopilot-prompt.md) object in the response body.
 
+``` json
+{
+  "@odata.type": "#microsoft.graph.security.securityCopilot.prompt",
+  "id": "String (identifier)",
+  "type": "String",
+  "createdDateTime": "String (timestamp)",
+  "lastModifiedDateTime": "String (timestamp)",
+  "skillName": "String",
+  "skillInputDescriptors": [
+    {
+      "@odata.type": "microsoft.graph.security.securityCopilot.skillInputDescriptor"
+    }
+  ],
+  "content": "String",
+  "inputs": {
+    "@odata.type": "microsoft.graph.security.securityCopilot.Dictionary"
+  }
+}
+```
+
 ## Examples
 
 ### Request
@@ -85,7 +105,7 @@ Content-Type: application/json
   ],
   "content": "String",
   "inputs": {
-    "@odata.type": "microsoft.graph.security.securityCopilot.Dictionary"
+    "@odata.type": "microsoft.graph.Dictionary"
   }
 }
 ```
@@ -118,7 +138,7 @@ Content-Type: application/json
   ],
   "content": "String",
   "inputs": {
-    "@odata.type": "microsoft.graph.security.securityCopilot.Dictionary"
+    "@odata.type": "microsoft.graph.Dictionary"
   }
 }
 ```

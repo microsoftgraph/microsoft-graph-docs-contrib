@@ -88,7 +88,7 @@ Content-Type: application/json
   ],
   "content": "String",
   "inputs": {
-    "@odata.type": "microsoft.graph.security.securityCopilot.Dictionary"
+    "@odata.type": "microsoft.graph.Dictionary"
   }
 }
 ```
@@ -122,7 +122,7 @@ Content-Type: application/json
   ],
   "content": "String",
   "inputs": {
-    "@odata.type": "microsoft.graph.security.securityCopilot.Dictionary"
+    "@odata.type": "microsoft.graph.Dictionary"
   }
 }
 ```

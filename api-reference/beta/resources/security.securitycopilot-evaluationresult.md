@@ -21,8 +21,8 @@ The Security Copilot Evaluation Result Resource types are available here.
 |Property|Type|Description|
 |:---|:---|:---|
 |content|String|Final Content|
-|previewState|microsoft.graph.security.securityCopilot.skillPreviewState|Evaluation skill release information. The possible values are: `ga`, `public`, `private`, `unknownFutureValue`.|
-|type|microsoft.graph.security.securityCopilot.evaluationResultType|Evaluation Results types. The possible values are: `unknown`, `success`, `error`, `needAdditionalClaims`, `rejected`, `timedOut`, `capacityExceeded`, `unknownFutureValue`.|
+|previewState|microsoft.graph.security.securitycopilot.skillPreviewState|Evaluation skill release information. The possible values are: `ga`, `public`, `private`, `unknownFutureValue`.|
+|type|microsoft.graph.security.securitycopilot.evaluationResultType|Evaluation Results types. The possible values are: `unknown`, `success`, `error`, `needAdditionalClaims`, `rejected`, `timedOut`, `capacityExceeded`, `unknownFutureValue`.|
 
 ## Relationships
 None.

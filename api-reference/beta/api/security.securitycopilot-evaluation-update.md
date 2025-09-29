@@ -60,6 +60,23 @@ PATCH /security/securityCopilot/workspaces/{workspaceId}/sessions/{sessionId}/pr
 
 If successful, this method returns a `200 OK` response code and an updated [microsoft.graph.security.securityCopilot.evaluation](../resources/security.securitycopilot-evaluation.md) object in the response body.
 
+``` json
+{
+  "@odata.type": "#microsoft.graph.security.securityCopilot.evaluation",
+  "id": "String (identifier)",
+  "createdDateTime": "String (timestamp)",
+  "runStartDateTime": "String (timestamp)",
+  "completedDateTime": "String (timestamp)",
+  "lastModifiedDateTime": "String (timestamp)",
+  "executionCount": "Integer",
+  "isCancelled": "Boolean",
+  "result": {
+    "@odata.type": "microsoft.graph.security.securityCopilot.evaluationResult"
+  },
+  "state": "String"
+}
+```
+
 ## Examples
 
 ### Request

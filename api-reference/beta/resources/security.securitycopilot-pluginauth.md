@@ -20,7 +20,7 @@ This describes the set of authorization types available for the plugin.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|authType|microsoft.graph.security.securityCopilot.pluginAuthTypes|Plugin authorization types. The possible values are: `none`, `basic`, `aPIKey`, `oAuthAuthorizationCodeFlow`, `oAuthClientCredentialsFlow`, `aad`, `serviceHttp`, `aadDelegated`, `oAuthPasswordGrantFlow`, `unknownFutureValue`.|
+|authType|microsoft.graph.security.securitycopilot.pluginAuthTypes|Plugin authorization types. The possible values are: `none`, `basic`, `aPIKey`, `oAuthAuthorizationCodeFlow`, `oAuthClientCredentialsFlow`, `aad`, `serviceHttp`, `aadDelegated`, `oAuthPasswordGrantFlow`, `unknownFutureValue`.|
 
 ## Relationships
 None.

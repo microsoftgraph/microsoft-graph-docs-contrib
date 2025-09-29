@@ -23,12 +23,12 @@ Represents the resources related to the Security Copilot Plugin settings
 |acceptableValues|String collection|Acceptable values for plugin type|
 |defaultValue|String|Default value available for the plugin if not configured|
 |description|String|Description of the value requested|
-|displayType|microsoft.graph.security.securityCopilot.pluginSettingDisplayType|Display type available any user experience if required. The possible values are: `none`, `textbox`, `checkbox`, `dropdown`, `unknownFutureValue`.|
+|displayType|microsoft.graph.security.securitycopilot.pluginSettingDisplayType|Display type available any user experience if required. The possible values are: `none`, `textbox`, `checkbox`, `dropdown`, `unknownFutureValue`.|
 |hintText|String|Hint for the plugin|
 |isRequired|Boolean|Setting whether the value is required|
 |label|String|Label for the setting|
 |name|String|Name of the setting|
-|settingValue|microsoft.graph.security.securityCopilot.pluginSettingType|Available setting values. The possible values are: `string`, `bool`, `array`, `enum`, `secretString`, `unknownFutureValue`.|
+|settingValue|microsoft.graph.security.securitycopilot.pluginSettingType|Available setting values. The possible values are: `string`, `bool`, `array`, `enum`, `secretString`, `unknownFutureValue`.|
 |value|String|Value|
 
 ## Relationships

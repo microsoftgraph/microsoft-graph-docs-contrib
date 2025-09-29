@@ -34,11 +34,11 @@ Represents the resources related to the prompt resource.
 |content|String|Input content to the prompt|
 |createdDateTime|DateTimeOffset|Created time|
 |id|String|Prompt identifier|
-|inputs|[microsoft.graph.security.securityCopilot.Dictionary](../resources/securitycopilot-dictionary.md)|Future value|
+|inputs|[microsoft.graph.security.securitycopilot.Dictionary](../resources/securitycopilot-dictionary.md)|Future value|
 |lastModifiedDateTime|DateTimeOffset|Last modified time|
-|skillInputDescriptors|[microsoft.graph.security.securityCopilot.skillInputDescriptor](../resources/security.securitycopilot-skillinputdescriptor.md) collection|Skill Input descriptor|
+|skillInputDescriptors|[microsoft.graph.security.securitycopilot.skillInputDescriptor](../resources/security.securitycopilot-skillinputdescriptor.md) collection|Skill Input descriptor|
 |skillName|String|Skill Name|
-|type|microsoft.graph.security.securityCopilot.promptType|Prompt types. The possible values are: `unknown`, `context`, `prompt`, `skill`, `feedback`, `unknownFutureValue`. Only `prompt` is currently supported.|
+|type|microsoft.graph.security.securitycopilot.promptType|Prompt types. The possible values are: `unknown`, `context`, `prompt`, `skill`, `feedback`, `unknownFutureValue`. Only `prompt` is currently supported.|
 
 ## Relationships
 |Relationship|Type|Description|
