@@ -1,6 +1,6 @@
 ---
-title: "List session objects"
-description: "Get a list of the session objects and their properties."
+title: "Get plugin"
+description: "Read the properties and relationships of microsoft.graph.security.securityCopilot.plugin object."
 author: "spunukol"
 ms.date: 07/17/2025
 ms.localizationpriority: medium
@@ -8,13 +8,13 @@ ms.subservice: "security.securitycopilot"
 doc_type: apiPageType
 ---
 
-# List session objects
+# Get plugin
 
 Namespace: microsoft.graph.security.securityCopilot
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the session objects and their properties.
+Read the properties and relationships of [microsoft.graph.security.securityCopilot.plugin](../resources/security.securitycopilot-plugin.md) object.
 
 ## Permissions
 
@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /security/securityCopilot/workspaces/{workspaceId}/sessions
+GET /security/securityCopilot/workspaces/{workspaceId}/plugins/{pluginId}
 ```
 
 ## Optional query parameters
@@ -53,7 +53,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [session](../resources/security.securitycopilot-session.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a [microsoft.graph.security.securityCopilot.plugin](../resources/security.securitycopilot-plugin.md) object in the response body.
 
 ## Examples
 
@@ -62,11 +62,11 @@ If successful, this method returns a `200 OK` response code and a collection of 
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "list_session"
+  "name": "get_plugin"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/security/securityCopilot/workspaces/{workspaceId}/sessions
+GET https://graph.microsoft.com/beta/security/securityCopilot/workspaces/{workspaceId}/plugins/{pluginId}
 ```
 
 
@@ -77,7 +77,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.security.securityCopilot.session"
+  "@odata.type": "microsoft.graph.security.securityCopilot.plugin"
 }
 -->
 ``` http
@@ -85,15 +85,25 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.security.securityCopilot.session",
-      "id": "12ac07f0-ccc3-0448-1215-6fad6e44263a",
-      "displayName": "String",
-      "lastModifiedDateTime": "String (timestamp)",
-      "createdDateTime": "String (timestamp)"
-    }
-  ]
+  "value": {
+    "@odata.type": "#microsoft.graph.security.securityCopilot.plugin",
+    "name": "5d6c25b4-c6d2-12e1-0310-ec5c6e64d029",
+    "description": "String",
+    "displayName": "String",
+    "category": "String",
+    "catalogScope": "String",
+    "previewState": "String",
+    "isEnabled": "Boolean",
+    "settings": [
+      {
+        "@odata.type": "microsoft.graph.security.securityCopilot.pluginSetting"
+      }
+    ],
+    "authorization": {
+      "@odata.type": "microsoft.graph.security.securityCopilot.pluginAuth"
+    },
+    "supportedAuthTypes": "String"
+  }
 }
 ```
 

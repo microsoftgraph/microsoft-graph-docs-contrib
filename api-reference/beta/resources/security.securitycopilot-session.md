@@ -1,0 +1,63 @@
+---
+title: "session resource type"
+description: "**TODO: Add Description**"
+author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.date: 07/17/2025
+ms.localizationpriority: medium
+ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+doc_type: resourcePageType
+---
+
+# session resource type
+
+Namespace: microsoft.graph.security.securityCopilot
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+**TODO: Add Description**
+
+Inherits from [entity](../resources/entity.md)
+
+## Methods
+|Method|Return type|Description|
+|:---|:---|:---|
+|[List](../api/security.securitycopilot-workspace-list-sessions.md)|[microsoft.graph.security.securityCopilot.session](../resources/security.securitycopilot-session.md) collection|Get a list of the session objects and their properties.|
+|[Create](../api/security.securitycopilot-workspace-post-sessions.md)|[microsoft.graph.security.securityCopilot.session](../resources/security.securitycopilot-session.md)|Create a new session object.|
+|[Get](../api/security.securitycopilot-session-get.md)|[microsoft.graph.security.securityCopilot.session](../resources/security.securitycopilot-session.md)|Read the properties and relationships of [microsoft.graph.security.securityCopilot.session](../resources/security.securitycopilot-session.md) object.|
+|[Update](../api/security.securitycopilot-session-update.md)|[microsoft.graph.security.securityCopilot.session](../resources/security.securitycopilot-session.md)|Update the properties of a session object.|
+|[Delete](../api/security.securitycopilot-workspace-delete-sessions.md)|None|Delete a session object.|
+|[List prompts](../api/security.securitycopilot-session-list-prompts.md)|[microsoft.graph.security.securityCopilot.prompt](../resources/security.securitycopilot-prompt.md) collection|**TODO: Add a useful description.**|
+|[Create prompt](../api/security.securitycopilot-session-post-prompts.md)|[microsoft.graph.security.securityCopilot.prompt](../resources/security.securitycopilot-prompt.md)|Create a new prompt object.|
+
+## Properties
+|Property|Type|Description|
+|:---|:---|:---|
+|createdDateTime|DateTimeOffset|**TODO: Add Description**|
+|displayName|String|**TODO: Add Description**|
+|id|String|**TODO: Add Description** Inherits from [entity](../resources/entity.md)|
+|lastModifiedDateTime|DateTimeOffset|**TODO: Add Description**|
+
+## Relationships
+|Relationship|Type|Description|
+|:---|:---|:---|
+|prompts|[microsoft.graph.security.securityCopilot.prompt](../resources/security.securitycopilot-prompt.md) collection|**TODO: Add Description**|
+
+## JSON representation
+The following JSON representation shows the resource type.
+<!-- {
+  "blockType": "resource",
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.security.securityCopilot.session",
+  "openType": false
+}
+-->
+``` json
+{
+  "@odata.type": "#microsoft.graph.security.securityCopilot.session",
+  "id": "String (identifier)",
+  "displayName": "String",
+  "lastModifiedDateTime": "String (timestamp)",
+  "createdDateTime": "String (timestamp)"
+}
+```
+

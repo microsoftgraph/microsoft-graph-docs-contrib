@@ -1,6 +1,6 @@
 ---
-title: "List session objects"
-description: "Get a list of the session objects and their properties."
+title: "Delete prompt"
+description: "Delete a prompt object."
 author: "spunukol"
 ms.date: 07/17/2025
 ms.localizationpriority: medium
@@ -8,13 +8,13 @@ ms.subservice: "security.securitycopilot"
 doc_type: apiPageType
 ---
 
-# List session objects
+# Delete prompt
 
 Namespace: microsoft.graph.security.securityCopilot
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the session objects and their properties.
+Delete a prompt object.
 
 ## Permissions
 
@@ -34,12 +34,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /security/securityCopilot/workspaces/{workspaceId}/sessions
+DELETE /security/securityCopilot/workspaces/{workspaceId}/sessions/{sessionId}/prompts/{promptId}/$ref
 ```
-
-## Optional query parameters
-
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -53,7 +49,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [session](../resources/security.securitycopilot-session.md) objects in the response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
@@ -62,11 +58,11 @@ If successful, this method returns a `200 OK` response code and a collection of 
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "list_session"
+  "name": "delete_prompt"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/security/securityCopilot/workspaces/{workspaceId}/sessions
+DELETE https://graph.microsoft.com/beta/security/securityCopilot/workspaces/{workspaceId}/sessions/{sessionId}/prompts/{promptId}
 ```
 
 
@@ -76,24 +72,10 @@ The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.security.securityCopilot.session"
+  "truncated": true
 }
 -->
 ``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.security.securityCopilot.session",
-      "id": "12ac07f0-ccc3-0448-1215-6fad6e44263a",
-      "displayName": "String",
-      "lastModifiedDateTime": "String (timestamp)",
-      "createdDateTime": "String (timestamp)"
-    }
-  ]
-}
+HTTP/1.1 204 No Content
 ```
 

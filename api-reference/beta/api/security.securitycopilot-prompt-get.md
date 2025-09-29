@@ -1,6 +1,6 @@
 ---
-title: "List session objects"
-description: "Get a list of the session objects and their properties."
+title: "Get prompt"
+description: "Read the properties and relationships of microsoft.graph.security.securityCopilot.prompt object."
 author: "spunukol"
 ms.date: 07/17/2025
 ms.localizationpriority: medium
@@ -8,13 +8,13 @@ ms.subservice: "security.securitycopilot"
 doc_type: apiPageType
 ---
 
-# List session objects
+# Get prompt
 
 Namespace: microsoft.graph.security.securityCopilot
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the session objects and their properties.
+Read the properties and relationships of [microsoft.graph.security.securityCopilot.prompt](../resources/security.securitycopilot-prompt.md) object.
 
 ## Permissions
 
@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /security/securityCopilot/workspaces/{workspaceId}/sessions
+GET /security/securityCopilot/workspaces/{workspaceId}/sessions/{sessionId}/prompts/{promptId}
 ```
 
 ## Optional query parameters
@@ -53,7 +53,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [session](../resources/security.securitycopilot-session.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a [microsoft.graph.security.securityCopilot.prompt](../resources/security.securitycopilot-prompt.md) object in the response body.
 
 ## Examples
 
@@ -62,11 +62,11 @@ If successful, this method returns a `200 OK` response code and a collection of 
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "list_session"
+  "name": "get_prompt"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/security/securityCopilot/workspaces/{workspaceId}/sessions
+GET https://graph.microsoft.com/beta/security/securityCopilot/workspaces/{workspaceId}/sessions/{sessionId}/prompts/{promptId}
 ```
 
 
@@ -77,7 +77,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.security.securityCopilot.session"
+  "@odata.type": "microsoft.graph.security.securityCopilot.prompt"
 }
 -->
 ``` http
@@ -85,15 +85,23 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.security.securityCopilot.session",
-      "id": "12ac07f0-ccc3-0448-1215-6fad6e44263a",
-      "displayName": "String",
-      "lastModifiedDateTime": "String (timestamp)",
-      "createdDateTime": "String (timestamp)"
+  "value": {
+    "@odata.type": "#microsoft.graph.security.securityCopilot.prompt",
+    "id": "ae13eafb-50c5-1af9-23c2-3b303197f4ce",
+    "type": "String",
+    "createdDateTime": "String (timestamp)",
+    "lastModifiedDateTime": "String (timestamp)",
+    "skillName": "String",
+    "skillInputDescriptors": [
+      {
+        "@odata.type": "microsoft.graph.security.securityCopilot.skillInputDescriptor"
+      }
+    ],
+    "content": "String",
+    "inputs": {
+      "@odata.type": "microsoft.graph.Dictionary"
     }
-  ]
+  }
 }
 ```
 

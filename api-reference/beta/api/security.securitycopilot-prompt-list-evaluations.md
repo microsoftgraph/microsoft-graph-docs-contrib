@@ -1,20 +1,20 @@
 ---
-title: "List session objects"
-description: "Get a list of the session objects and their properties."
-author: "spunukol"
+title: "List evaluation objects"
+description: "Get a list of the evaluation objects and their properties."
+author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
 ms.date: 07/17/2025
 ms.localizationpriority: medium
-ms.subservice: "security.securitycopilot"
+ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
 doc_type: apiPageType
 ---
 
-# List session objects
+# List evaluation objects
 
 Namespace: microsoft.graph.security.securityCopilot
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the session objects and their properties.
+Get a list of the evaluation objects and their properties.
 
 ## Permissions
 
@@ -22,10 +22,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "securitycopilot-permissions"
+  "name": "security-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/securitycopilot-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/security-permissions.md)]
 
 ## HTTP request
 
@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /security/securityCopilot/workspaces/{workspaceId}/sessions
+GET /security/securityCopilot/workspaces/{workspaceId}/sessions/{sessionId}/prompts/{promptId}/evaluations
 ```
 
 ## Optional query parameters
@@ -53,7 +53,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [session](../resources/security.securitycopilot-session.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [evaluation](../resources/evaluation.md) objects in the response body.
 
 ## Examples
 
@@ -62,11 +62,11 @@ If successful, this method returns a `200 OK` response code and a collection of 
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "list_session"
+  "name": "list_evaluation"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/security/securityCopilot/workspaces/{workspaceId}/sessions
+GET https://graph.microsoft.com/beta/security/securityCopilot/workspaces/{workspaceId}/sessions/{sessionId}/prompts/{promptId}/evaluations
 ```
 
 
@@ -77,7 +77,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.security.securityCopilot.session"
+  "@odata.type": "microsoft.graph.security.securityCopilot.evaluation"
 }
 -->
 ``` http
@@ -87,11 +87,18 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.security.securityCopilot.session",
-      "id": "12ac07f0-ccc3-0448-1215-6fad6e44263a",
-      "displayName": "String",
+      "@odata.type": "#microsoft.graph.security.securityCopilot.evaluation",
+      "id": "16cddf73-47ef-4827-4485-152886bb5318",
+      "createdDateTime": "String (timestamp)",
+      "runStartDateTime": "String (timestamp)",
+      "completedDateTime": "String (timestamp)",
       "lastModifiedDateTime": "String (timestamp)",
-      "createdDateTime": "String (timestamp)"
+      "executionCount": "Integer",
+      "isCancelled": "Boolean",
+      "result": {
+        "@odata.type": "microsoft.graph.security.securityCopilot.evaluationResult"
+      },
+      "state": "String"
     }
   ]
 }

@@ -1,6 +1,6 @@
 ---
-title: "List session objects"
-description: "Get a list of the session objects and their properties."
+title: "Create session"
+description: "Create a new session object."
 author: "spunukol"
 ms.date: 07/17/2025
 ms.localizationpriority: medium
@@ -8,13 +8,13 @@ ms.subservice: "security.securitycopilot"
 doc_type: apiPageType
 ---
 
-# List session objects
+# Create session
 
 Namespace: microsoft.graph.security.securityCopilot
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the session objects and their properties.
+Create a new session object.
 
 ## Permissions
 
@@ -22,10 +22,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "securitycopilot-permissions"
+  "name": "securitycopilot-sessions-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/securitycopilot-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/securitycopilot-sessions-permissions.md)]
 
 ## HTTP request
 
@@ -34,26 +34,32 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /security/securityCopilot/workspaces/{workspaceId}/sessions
+POST /security/securityCopilot/workspaces/{workspaceId}/sessions
 ```
-
-## Optional query parameters
-
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+|Content-Type|application/json. Required.|
 
 ## Request body
 
-Don't supply a request body for this method.
+In the request body, supply a JSON representation of the [microsoft.graph.security.securityCopilot.session](../resources/security.securitycopilot-session.md) object.
+
+You can specify the following properties when creating a **session**.
+
+|Property|Type|Description|
+|:---|:---|:---|
+|displayName|String|Display Name of the session. Optional.|
+
+
+
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [session](../resources/security.securitycopilot-session.md) objects in the response body.
+If successful, this method returns a `201 Created` response code and a [microsoft.graph.security.securityCopilot.session](../resources/security.securitycopilot-session.md) object in the response body.
 
 ## Examples
 
@@ -62,11 +68,17 @@ If successful, this method returns a `200 OK` response code and a collection of 
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "list_session"
+  "name": "create_session_from_"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/security/securityCopilot/workspaces/{workspaceId}/sessions
+POST https://graph.microsoft.com/beta/security/securityCopilot/workspaces/{workspaceId}/sessions
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.security.securityCopilot.session",
+  "displayName": "String"
+}
 ```
 
 
@@ -81,19 +93,15 @@ The following example shows the response.
 }
 -->
 ``` http
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.security.securityCopilot.session",
-      "id": "12ac07f0-ccc3-0448-1215-6fad6e44263a",
-      "displayName": "String",
-      "lastModifiedDateTime": "String (timestamp)",
-      "createdDateTime": "String (timestamp)"
-    }
-  ]
+  "@odata.type": "#microsoft.graph.security.securityCopilot.session",
+  "id": "12ac07f0-ccc3-0448-1215-6fad6e44263a",
+  "displayName": "String",
+  "lastModifiedDateTime": "String (timestamp)",
+  "createdDateTime": "String (timestamp)"
 }
 ```
 
