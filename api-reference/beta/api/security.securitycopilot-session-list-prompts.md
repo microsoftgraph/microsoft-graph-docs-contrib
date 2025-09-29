@@ -22,10 +22,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "securitycopilot-prompts-permissions"
+  "name": "securitycopilot-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/securitycopilot-prompts-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/securitycopilot-permissions.md)]
 
 ## HTTP request
 
@@ -53,7 +53,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [prompt](../resources/prompt.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [prompt](../resources/security.securitycopilot-prompt.md) objects in the response body.
 
 ## Examples
 
@@ -100,7 +100,7 @@ Content-Type: application/json
       ],
       "content": "String",
       "inputs": {
-        "@odata.type": "microsoft.graph.Dictionary"
+        "@odata.type": "microsoft.graph.security.securityCopilot.Dictionary"
       }
     }
   ]

@@ -22,10 +22,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "securitycopilot-prompts-permissions"
+  "name": "securitycopilot-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/securitycopilot-prompts-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/securitycopilot-permissions.md)]
 
 ## HTTP request
 
@@ -48,18 +48,14 @@ POST /security/securityCopilot/workspaces/{workspaceId}/sessions/{sessionId}/pro
 
 In the request body, supply a JSON representation of the [microsoft.graph.security.securityCopilot.prompt](../resources/security.securitycopilot-prompt.md) object.
 
-You can specify the following properties when creating a **prompt**.
+<br>You can specify the following properties when creating a **prompt**.  
 
-**NOTE** For beta, only property type supported is "prompt" combined with content.
+**NOTE** For beta, the only property type supported is `prompt` combined with content.
 
-**TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
-|type|microsoft.graph.security.securityCopilot.promptType|The type of input prompts. The possible values are: `unknown`, `context`, `prompt`, `skill`, `feedback`, `unknownFutureValue`. Supported value is `prompt`. Required.|
-|skillName|String|Used in combination with types. Unsupported. Optional.|
-|skillInputDescriptors|[microsoft.graph.security.securityCopilot.skillInputDescriptor](../resources/security.securitycopilot-skillinputdescriptor.md) collection|Unsupported currently Optional.|
-|content|String|Input text when used with type `prompt` for evaluation Optional.|
-|inputs|[microsoft.graph.Dictionary](../resources/dictionary.md)|Unsupported. Optional.|
+|type|microsoft.graph.security.securityCopilot.promptType|The type of input prompts. Supported value is `prompt`. Required. Other possible values (unsupported) are: `unknown`, `context`, `skill`, `feedback`, `unknownFutureValue`. |
+|content|String|Input text when used with type `prompt` for evaluation. Required for AI evaluation.|
 
 
 
@@ -92,7 +88,7 @@ Content-Type: application/json
   ],
   "content": "String",
   "inputs": {
-    "@odata.type": "microsoft.graph.Dictionary"
+    "@odata.type": "microsoft.graph.security.securityCopilot.Dictionary"
   }
 }
 ```
@@ -126,7 +122,7 @@ Content-Type: application/json
   ],
   "content": "String",
   "inputs": {
-    "@odata.type": "microsoft.graph.Dictionary"
+    "@odata.type": "microsoft.graph.security.securityCopilot.Dictionary"
   }
 }
 ```

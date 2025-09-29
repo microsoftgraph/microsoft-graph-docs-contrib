@@ -1,10 +1,10 @@
 ---
 title: "Security.security copilot enum values"
 description: "Microsoft Graph security.security copilot enumeration values"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+author: "spunukol"
 ms.date: 07/17/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice: "security.securitycopilot"
 doc_type: enumTypes
 ---
 
@@ -13,8 +13,6 @@ doc_type: enumTypes
 Namespace: microsoft.graph.security.securitycopilot
 
 ### evaluationResultType values 
-
-
 
 |Member|
 |:---|
@@ -27,13 +25,7 @@ Namespace: microsoft.graph.security.securitycopilot
 |capacityExceeded|
 |unknownFutureValue|
 
-# Microsoft Graph security.security copilot enumeration values
-
-Namespace: microsoft.graph.security.securitycopilot
-
 ### evaluationState values 
-
-
 
 |Member|
 |:---|
@@ -47,13 +39,7 @@ Namespace: microsoft.graph.security.securitycopilot
 |waitingForInput|
 |unknownFutureValue|
 
-# Microsoft Graph security.security copilot enumeration values
-
-Namespace: microsoft.graph.security.securitycopilot
-
 ### pluginAuthTypes values 
-
-
 
 |Member|
 |:---|
@@ -68,13 +54,7 @@ Namespace: microsoft.graph.security.securitycopilot
 |oAuthPasswordGrantFlow|
 |unknownFutureValue|
 
-# Microsoft Graph security.security copilot enumeration values
-
-Namespace: microsoft.graph.security.securitycopilot
-
 ### pluginCatalogScope values 
-
-
 
 |Member|
 |:---|
@@ -87,13 +67,7 @@ Namespace: microsoft.graph.security.securitycopilot
 |userWorkspace|
 |unknownFutureValue|
 
-# Microsoft Graph security.security copilot enumeration values
-
-Namespace: microsoft.graph.security.securitycopilot
-
 ### pluginCategory values 
-
-
 
 |Member|
 |:---|
@@ -106,13 +80,7 @@ Namespace: microsoft.graph.security.securitycopilot
 |plugin|
 |unknownFutureValue|
 
-# Microsoft Graph security.security copilot enumeration values
-
-Namespace: microsoft.graph.security.securitycopilot
-
 ### pluginPreviewStates values 
-
-
 
 |Member|
 |:---|
@@ -121,13 +89,7 @@ Namespace: microsoft.graph.security.securitycopilot
 |private|
 |unknownFutureValue|
 
-# Microsoft Graph security.security copilot enumeration values
-
-Namespace: microsoft.graph.security.securitycopilot
-
 ### pluginSettingDisplayType values 
-
-
 
 |Member|
 |:---|
@@ -137,13 +99,7 @@ Namespace: microsoft.graph.security.securitycopilot
 |dropdown|
 |unknownFutureValue|
 
-# Microsoft Graph security.security copilot enumeration values
-
-Namespace: microsoft.graph.security.securitycopilot
-
 ### pluginSettingType values 
-
-
 
 |Member|
 |:---|
@@ -154,13 +110,7 @@ Namespace: microsoft.graph.security.securitycopilot
 |secretString|
 |unknownFutureValue|
 
-# Microsoft Graph security.security copilot enumeration values
-
-Namespace: microsoft.graph.security.securitycopilot
-
 ### promptType values 
-
-
 
 |Member|
 |:---|
@@ -171,13 +121,7 @@ Namespace: microsoft.graph.security.securitycopilot
 |feedback|
 |unknownFutureValue|
 
-# Microsoft Graph security.security copilot enumeration values
-
-Namespace: microsoft.graph.security.securitycopilot
-
 ### skillPreviewState values 
-
-
 
 |Member|
 |:---|

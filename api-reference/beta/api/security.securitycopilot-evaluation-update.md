@@ -49,10 +49,10 @@ PATCH /security/securityCopilot/workspaces/{workspaceId}/sessions/{sessionId}/pr
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
 
-**TODO: Remove properties that don't apply**
+
 |Property|Type|Description|
 |:---|:---|:---|
-|isCancelled|Boolean|Set to true to cancel a running evaluation. Required.|
+|isCancelled|Boolean|Cancel a running evaluation. Required.|
 
 
 

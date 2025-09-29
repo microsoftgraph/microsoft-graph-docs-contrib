@@ -22,10 +22,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "security-permissions"
+  "name": "securitycopilot-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/security-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/securitycopilot-permissions.md)]
 
 ## HTTP request
 
@@ -49,16 +49,10 @@ PATCH /security/securityCopilot/workspaces/{workspaceId}/sessions/{sessionId}/pr
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
 
-**TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
-|type|microsoft.graph.security.securityCopilot.promptType|**TODO: Add Description**. The possible values are: `unknown`, `context`, `prompt`, `skill`, `feedback`, `unknownFutureValue`. Required.|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Required.|
-|lastModifiedDateTime|DateTimeOffset|**TODO: Add Description** Required.|
-|skillName|String|**TODO: Add Description** Optional.|
-|skillInputDescriptors|[microsoft.graph.security.securityCopilot.skillInputDescriptor](../resources/security.securitycopilot-skillinputdescriptor.md) collection|**TODO: Add Description** Optional.|
-|content|String|**TODO: Add Description** Optional.|
-|inputs|[microsoft.graph.Dictionary](../resources/dictionary.md)|**TODO: Add Description** Optional.|
+|type|microsoft.graph.security.securityCopilot.promptType|Type of input prompts. Supported value is `prompt`. Required. Other possible values (unsupported) are: `unknown`, `context`, `skill`, `feedback`, `unknownFutureValue`.|
+|content|String| Update of value of for prompt type. Required if using `prompt`|
 
 
 
@@ -91,7 +85,7 @@ Content-Type: application/json
   ],
   "content": "String",
   "inputs": {
-    "@odata.type": "microsoft.graph.Dictionary"
+    "@odata.type": "microsoft.graph.security.securityCopilot.Dictionary"
   }
 }
 ```
@@ -124,7 +118,7 @@ Content-Type: application/json
   ],
   "content": "String",
   "inputs": {
-    "@odata.type": "microsoft.graph.Dictionary"
+    "@odata.type": "microsoft.graph.security.securityCopilot.Dictionary"
   }
 }
 ```
