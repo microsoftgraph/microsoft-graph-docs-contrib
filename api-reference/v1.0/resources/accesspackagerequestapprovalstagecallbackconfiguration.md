@@ -12,7 +12,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Callback settings that define how long Microsoft Entra ID can wait for a resume signal for the callout [assignmentRequestApprovalStageCallbackData](../resources/assignmentrequestapprovalstagecallbackdata.md) that comes back from the logic app. Inherits from [customExtensionCallbackConfiguration](../resources/customextensioncallbackconfiguration.md).
+Callback settings that define how long Microsoft Entra ID can wait for a resume signal for the callout [accessPackageRequestApprovalStageCallbackConfiguration](../resources/accesspackagerequestapprovalstagecallbackconfiguration.md) that comes back from the logic app. Inherits from [customExtensionCallbackConfiguration](../resources/customextensioncallbackconfiguration.md).
 
 
 Inherits from [customExtensionCallbackConfiguration](../resources/customextensioncallbackconfiguration.md).
