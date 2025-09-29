@@ -30,11 +30,9 @@ Inherits from [entity](../resources/entity.md)
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|catalogEntryId|String| The unique identifier for the catalog entry. Read-only. |
 |createdDateTime|DateTimeOffset| The date and time the policy approval is created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, `2014 is 2014-01-01T00:00:00Z`. Read-only.|
 |id|String| The unique identifier for the policy approval. Read-only. Inherits from [entity](../resources/entity.md).|
 |lastModifiedDateTime|DateTimeOffset| The date and time the policy approval was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, `2014 is 2014-01-01T00:00:00Z`. Read-only.|
-|status|microsoft.graph.windowsUpdates.approvalStatus| The status of the catalog entry. The possible values are: `approved`, `suspended`, `unknownFutureValue`. Read-only.|
 
 ## Relationships
 |Relationship|Type|Description|

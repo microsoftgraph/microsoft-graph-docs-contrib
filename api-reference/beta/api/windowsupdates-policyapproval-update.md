@@ -53,8 +53,6 @@ PATCH /admin/windows/updates/policies/{policyId}/approvals/{policyApprovalId}
 
 |Property|Type|Description|
 |:---|:---|:---|
-|catalogEntryId|String|The unique identifier for the catalog entry. Read-only. Required.|
-|status|microsoft.graph.windowsUpdates.approvalStatus|The status of the catalog entry. The possible values are: `approved`, `suspended`, `unknownFutureValue`. Required.|
 |createdDateTime|DateTimeOffset|The date and time the policy approval is created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, `2014 is 2014-01-01T00:00:00Z`. Optional.|
 |lastModifiedDateTime|DateTimeOffset|The date and time the policy approval was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, `2014 is 2014-01-01T00:00:00Z`. Read-only. Optional.|
 
