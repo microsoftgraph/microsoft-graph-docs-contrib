@@ -1,7 +1,7 @@
 ---
 title: "List evaluation objects"
 description: "Get a list of the evaluation objects and their properties."
-author: "*spunukol"
+author: "spunukol"
 ms.date: 07/17/2025
 ms.localizationpriority: medium
 ms.subservice: "security.securitycopilot"

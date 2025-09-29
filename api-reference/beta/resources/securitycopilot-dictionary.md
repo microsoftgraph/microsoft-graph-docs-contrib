@@ -1,5 +1,5 @@
 ---
-title: "Dictionary resource type"
+title: "Security Copilot Dictionary resource type"
 description: "*Security Copilot Dictionary"
 author: "spunukol"
 ms.date: 07/17/2025
@@ -8,7 +8,7 @@ ms.subservice: "security.securitycopilot"
 doc_type: resourcePageType
 ---
 
-# Dictionary resource type
+# Security Copilot Dictionary resource type
 
 Namespace: microsoft.graph
 
