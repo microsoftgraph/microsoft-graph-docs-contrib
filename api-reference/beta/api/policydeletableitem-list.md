@@ -1,4 +1,4 @@
-﻿---
+---
 title: "List policyDeletableItem objects"
 description: "Get a list of the policyDeletableItem objects and their properties."
 author: "ashyasingh"
