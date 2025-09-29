@@ -14,14 +14,14 @@ Namespace: microsoft.graph.security.securityCopilot
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This describes the skillVariableDescriptor resource type and the properties.
+Represents the resources related to the skillVariableDescriptor resource type.
 
-**NOTE** This is currently unsupported.
+**NOTE** This is currently unsupported in beta.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|description|String|Unspported|
+|description|String|Unsupported|
 |name|String|Unsupported|
 |type|[microsoft.graph.security.securityCopilot.skillTypeDescriptor](../resources/security.securitycopilot-skilltypedescriptor.md)|Unsupported|
 

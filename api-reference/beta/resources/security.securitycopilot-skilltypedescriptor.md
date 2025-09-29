@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security.securityCopilot
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This describes the skillTypeDescriptor resource type and its properties.
+Represents the resources related to the skillTypeDescriptor resource type.
 
 **NOTE** This is currently unsupported.
 

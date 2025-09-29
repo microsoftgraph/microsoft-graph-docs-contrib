@@ -1,6 +1,6 @@
 ---
 title: "Update evaluation"
-description: "Update the properties of a evaluation object."
+description: "Update the properties of an evaluation object."
 author: "spunukol"
 ms.date: 07/17/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security.securityCopilot
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a evaluation object.
+Update the properties of an evaluation object.
 
 ## Permissions
 

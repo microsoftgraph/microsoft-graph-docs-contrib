@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security.securityCopilot
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This describes the Security Copilot Plugin settings
+Represents the resources related to the Security Copilot Plugin settings
 
 
 ## Properties
@@ -24,7 +24,7 @@ This describes the Security Copilot Plugin settings
 |defaultValue|String|Default value available for the plugin if not configured|
 |description|String|Description of the value requested|
 |displayType|microsoft.graph.security.securityCopilot.pluginSettingDisplayType|Display type available any user experience if required. The possible values are: `none`, `textbox`, `checkbox`, `dropdown`, `unknownFutureValue`.|
-|hintText|String|Hingt for the plugin|
+|hintText|String|Hint for the plugin|
 |isRequired|Boolean|Setting whether the value is required|
 |label|String|Label for the setting|
 |name|String|Name of the setting|

@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This is dictionoary of supported key values supported for inputs
+This is a dictionary of supported key value properties used with prompt inputs.
 
 **NOTE** This is currently marked for future values when supported.
 

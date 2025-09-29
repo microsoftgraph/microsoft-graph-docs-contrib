@@ -1,6 +1,6 @@
 ---
 title: "Delete evaluation"
-description: "Delete a evaluation object."
+description: "Delete an evaluation object."
 author: "spunukol"
 ms.date: 07/17/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security.securityCopilot
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a evaluation object.
+Delete an evaluation object.
 
 ## Permissions
 

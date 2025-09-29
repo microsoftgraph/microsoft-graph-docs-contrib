@@ -1,6 +1,6 @@
 ---
 title: "session resource type"
-description: "**TODO: Add Description**"
+description: "Security Copilot session resource type"
 author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
 ms.date: 07/17/2025
 ms.localizationpriority: medium
@@ -14,9 +14,8 @@ Namespace: microsoft.graph.security.securityCopilot
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents the resources related to the Security Copilot session resource.
 
-Inherits from [entity](../resources/entity.md)
 
 ## Methods
 |Method|Return type|Description|
@@ -26,21 +25,21 @@ Inherits from [entity](../resources/entity.md)
 |[Get](../api/security.securitycopilot-session-get.md)|[microsoft.graph.security.securityCopilot.session](../resources/security.securitycopilot-session.md)|Read the properties and relationships of [microsoft.graph.security.securityCopilot.session](../resources/security.securitycopilot-session.md) object.|
 |[Update](../api/security.securitycopilot-session-update.md)|[microsoft.graph.security.securityCopilot.session](../resources/security.securitycopilot-session.md)|Update the properties of a session object.|
 |[Delete](../api/security.securitycopilot-workspace-delete-sessions.md)|None|Delete a session object.|
-|[List prompts](../api/security.securitycopilot-session-list-prompts.md)|[microsoft.graph.security.securityCopilot.prompt](../resources/security.securitycopilot-prompt.md) collection|**TODO: Add a useful description.**|
+|[List prompts](../api/security.securitycopilot-session-list-prompts.md)|[microsoft.graph.security.securityCopilot.prompt](../resources/security.securitycopilot-prompt.md) collection|Lists the collection of prompts created in each session|
 |[Create prompt](../api/security.securitycopilot-session-post-prompts.md)|[microsoft.graph.security.securityCopilot.prompt](../resources/security.securitycopilot-prompt.md)|Create a new prompt object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|createdDateTime|DateTimeOffset|**TODO: Add Description**|
-|displayName|String|**TODO: Add Description**|
-|id|String|**TODO: Add Description** Inherits from [entity](../resources/entity.md)|
-|lastModifiedDateTime|DateTimeOffset|**TODO: Add Description**|
+|createdDateTime|DateTimeOffset|Created time of the session (UTC)|
+|displayName|String|Display name for the session|
+|id|String|Unique identifier for the sesssion |
+|lastModifiedDateTime|DateTimeOffset|Last modified time of the session (UTC)|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|prompts|[microsoft.graph.security.securityCopilot.prompt](../resources/security.securitycopilot-prompt.md) collection|**TODO: Add Description**|
+|prompts|[microsoft.graph.security.securityCopilot.prompt](../resources/security.securitycopilot-prompt.md) collection|The collection of prompts in the session|
 
 ## JSON representation
 The following JSON representation shows the resource type.

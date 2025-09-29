@@ -14,10 +14,9 @@ Namespace: microsoft.graph.security.securityCopilot
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This is the skillInput Descriptor object and supported properties. 
+Represents the resources related to the skillInput Descriptor resource.
 
 **NOTE** Currently unsupported in beta.
-
 
 Inherits from [microsoft.graph.security.securityCopilot.skillVariableDescriptor](../resources/security.securitycopilot-skillvariabledescriptor.md).
 

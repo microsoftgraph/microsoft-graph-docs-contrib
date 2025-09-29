@@ -1,10 +1,10 @@
 ---
 title: "prompt resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+description: "Security Copilot Prompt Resource Type"
+author: "spunukol"
 ms.date: 07/17/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice: "security.securitycopilot"
 doc_type: resourcePageType
 ---
 
@@ -14,9 +14,8 @@ Namespace: microsoft.graph.security.securityCopilot
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents the resources related to the prompt resource. 
 
-Inherits from [entity](../resources/entity.md)
 
 ## Methods
 |Method|Return type|Description|
@@ -26,25 +25,25 @@ Inherits from [entity](../resources/entity.md)
 |[Get](../api/security.securitycopilot-prompt-get.md)|[microsoft.graph.security.securityCopilot.prompt](../resources/security.securitycopilot-prompt.md)|Read the properties and relationships of [microsoft.graph.security.securityCopilot.prompt](../resources/security.securitycopilot-prompt.md) object.|
 |[Update](../api/security.securitycopilot-prompt-update.md)|[microsoft.graph.security.securityCopilot.prompt](../resources/security.securitycopilot-prompt.md)|Update the properties of a prompt object.|
 |[Delete](../api/security.securitycopilot-session-delete-prompts.md)|None|Delete a prompt object.|
-|[List evaluations](../api/security.securitycopilot-prompt-list-evaluations.md)|[microsoft.graph.security.securityCopilot.evaluation](../resources/security.securitycopilot-evaluation.md) collection|**TODO: Add a useful description.**|
+|[List evaluations](../api/security.securitycopilot-prompt-list-evaluations.md)|[microsoft.graph.security.securityCopilot.evaluation](../resources/security.securitycopilot-evaluation.md) collection|Get a list of the evaluation objects.|
 |[Create evaluation](../api/security.securitycopilot-prompt-post-evaluations.md)|[microsoft.graph.security.securityCopilot.evaluation](../resources/security.securitycopilot-evaluation.md)|Create a new evaluation object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|content|String|**TODO: Add Description**|
-|createdDateTime|DateTimeOffset|**TODO: Add Description**|
-|id|String|**TODO: Add Description** Inherits from [entity](../resources/entity.md)|
-|inputs|[microsoft.graph.Dictionary](../resources/dictionary.md)|**TODO: Add Description**|
-|lastModifiedDateTime|DateTimeOffset|**TODO: Add Description**|
-|skillInputDescriptors|[microsoft.graph.security.securityCopilot.skillInputDescriptor](../resources/security.securitycopilot-skillinputdescriptor.md) collection|**TODO: Add Description**|
-|skillName|String|**TODO: Add Description**|
-|type|microsoft.graph.security.securityCopilot.promptType|**TODO: Add Description**. The possible values are: `unknown`, `context`, `prompt`, `skill`, `feedback`, `unknownFutureValue`.|
+|content|String|Input content to the prompt|
+|createdDateTime|DateTimeOffset|Created time|
+|id|String|Prompt identifier|
+|inputs|[microsoft.graph.security.securityCopilot.Dictionary](../resources/securitycopilot-dictionary.md)|Future value|
+|lastModifiedDateTime|DateTimeOffset|Last modified time|
+|skillInputDescriptors|[microsoft.graph.security.securityCopilot.skillInputDescriptor](../resources/security.securitycopilot-skillinputdescriptor.md) collection|Skill Input descriptor|
+|skillName|String|Skill Name|
+|type|microsoft.graph.security.securityCopilot.promptType|Prompt types. The possible values are: `unknown`, `context`, `prompt`, `skill`, `feedback`, `unknownFutureValue`. Only `prompt` is currently supported.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|evaluations|[microsoft.graph.security.securityCopilot.evaluation](../resources/security.securitycopilot-evaluation.md) collection|**TODO: Add Description**|
+|evaluations|[microsoft.graph.security.securityCopilot.evaluation](../resources/security.securitycopilot-evaluation.md) collection|Evaluations collection
 
 ## JSON representation
 The following JSON representation shows the resource type.
@@ -70,7 +69,7 @@ The following JSON representation shows the resource type.
   ],
   "content": "String",
   "inputs": {
-    "@odata.type": "microsoft.graph.Dictionary"
+    "@odata.type": "microsoft.graph.security.securityCopilot.Dictionary"
   }
 }
 ```
