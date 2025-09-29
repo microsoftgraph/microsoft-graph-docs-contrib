@@ -1,5 +1,5 @@
 ---
-title: "session resource type"
+title: "Security Copilot session resource type"
 description: "Security Copilot session resource type"
 author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
 ms.date: 07/17/2025
@@ -8,7 +8,7 @@ ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](
 doc_type: resourcePageType
 ---
 
-# session resource type
+# Security Copilot session resource type
 
 Namespace: microsoft.graph.security.securityCopilot
 
@@ -33,7 +33,7 @@ Represents the resources related to the Security Copilot session resource.
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|Created time of the session (UTC)|
 |displayName|String|Display name for the session|
-|id|String|Unique identifier for the sesssion |
+|id|String|Unique identifier for the session |
 |lastModifiedDateTime|DateTimeOffset|Last modified time of the session (UTC)|
 
 ## Relationships

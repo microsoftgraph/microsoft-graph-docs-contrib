@@ -1,5 +1,5 @@
 ---
-title: "evaluation resource type"
+title: "Security Copilot evaluation resource type"
 description: "Security Copilot Evaluation Resource Type"
 author: "spunukol"
 ms.date: 07/17/2025
@@ -8,7 +8,7 @@ ms.subservice: "security.securitycopilot"
 doc_type: resourcePageType
 ---
 
-# evaluation resource type
+# Security Copilot evaluation resource type
 
 Namespace: microsoft.graph.security.securityCopilot
 
@@ -33,7 +33,7 @@ Inherits from [entity](../resources/entity.md)
 |completedDateTime|DateTimeOffset|Evaluation completion time*|
 |createdDateTime|DateTimeOffset|Evaluation created time|
 |executionCount|Int64|Evaluation execution count|
-|id|String|Evaluation Identifier Inherits from [entity](../resources/entity.md)|
+|id|String|Unique GUID for evaluation. Inherits from [entity](../resources/entity.md)|
 |isCancelled|Boolean|Evaluation cancellation status|
 |lastModifiedDateTime|DateTimeOffset|Evaluation modified time|
 |result|[microsoft.graph.security.securityCopilot.evaluationResult](../resources/security.securitycopilot-evaluationresult.md)|Evaluation results collection.|
