@@ -36,7 +36,8 @@ GET /education/classes/{class-id}/assignments/{assignment-id}/submissions/{submi
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Optional query parameters
-TODO
+
+This method supports the `$top`, `$filter`, `$orderby`, and `$select` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request body
 
