@@ -51,7 +51,7 @@ PATCH /security/securityCopilot/workspaces/{workspaceId}/sessions/{sessionId}/pr
 
 |Property|Type|Description|
 |:---|:---|:---|
-|type|microsoft.graph.security.securityCopilot.promptType|Type of input prompts. Supported value is `prompt`. Required. Other possible values (unsupported) are: `unknown`, `context`, `skill`, `feedback`, `unknownFutureValue`.|
+|type|microsoft.graph.security.securitycopilot.promptType|Type of input prompts. Supported value is `prompt`. Required. Other possible values (unsupported) are: `unknown`, `context`, `skill`, `feedback`, `unknownFutureValue`.|
 |content|String| Update of value of for prompt type. Required if using `prompt`|
 
 
