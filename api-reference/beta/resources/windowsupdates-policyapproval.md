@@ -37,7 +37,7 @@ Inherits from [entity](../resources/entity.md)
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|catalogEntry|[catalogEntry](../resources/windowsupdates-catalogentry.md)| Lists the content that you can approve for deployment. Read-only.|
+|catalogEntry|[microsoft.graph.windowsUpdates.catalogEntry](../resources/windowsupdates-catalogentry.md)| Lists the content that you can approve for deployment. Read-only.|
 
 ## JSON representation
 The following JSON representation shows the resource type.
