@@ -320,6 +320,8 @@ items:
     href: ../../resources/sharepointmigrationevent.md
   - name: List progress events
     href: ../../api/sharepointmigrationjob-list-progressevents.md
+- name: SharePoint migration finish manifest file upload event
+  href: ../../resources/sharepointmigrationfinishmanifestfileuploadevent.md
 - name: SharePoint migration job
   items:
   - name: SharePoint migration job

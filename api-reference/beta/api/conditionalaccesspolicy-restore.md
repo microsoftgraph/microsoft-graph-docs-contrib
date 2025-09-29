@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Restore conditionalAccessPolicy"
 description: "Restore a deleted conditionalAccessPolicy object"
 author: "ashyasingh"
@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Restore a deleted [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md) object.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
