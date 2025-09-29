@@ -2,7 +2,7 @@
 title: "accessPackageDynamicApprovalStage resource type"
 description: "Specifies a decision stage in an approval in entitlement management."
 author: "vikama-microsoft"
-ms.date: 0/25/2025
+ms.date: 09/25/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
