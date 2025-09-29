@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Get policyDeletableItem"
 description: "Read the properties and relationships of policyDeletableItem object."
 author: "ashyasingh"

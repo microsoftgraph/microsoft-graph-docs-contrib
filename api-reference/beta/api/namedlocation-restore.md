@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Restore a namedLocation"
 description: "Restore a deleted namedLocation object."
 author: "ashyasingh"
@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Restore a deleted [namedLocation](../resources/namedlocation.md) object.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 

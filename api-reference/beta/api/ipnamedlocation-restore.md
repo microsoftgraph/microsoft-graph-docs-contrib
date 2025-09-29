@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Restore ipNamedLocation"
 description: "Restore a deleted IP named location object"
 author: "ashyasingh"
@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Restore a deleted [ipNamedLocation](../resources/ipNamedLocation.md) object.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
