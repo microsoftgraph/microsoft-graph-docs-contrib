@@ -192,7 +192,7 @@ items:
       href: ../../api/sensitivitylabel-computeinheritance.md
     - name: Compute rights and inheritance
       href: ../../api/sensitivitylabel-computerightsandinheritance.md
-    - name: List rights
+    - name: Get usage rights included
       href: ../../api/usagerightsincluded-get.md
   - name: Tenant data security and governance
     items:
