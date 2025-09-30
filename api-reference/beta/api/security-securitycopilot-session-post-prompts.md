@@ -46,7 +46,7 @@ POST /security/securityCopilot/workspaces/{workspaceId}/sessions/{sessionId}/pro
 
 ## Request body
 
-In the request body, supply a JSON representation of the [microsoft.graph.security.securityCopilot.prompt](../resources/security.securitycopilot-prompt.md) object.
+In the request body, supply a JSON representation of the [microsoft.graph.security.securityCopilot.prompt](../resources/security-securitycopilot-prompt.md) object.
 
 <br>You can specify the following properties when creating a **prompt**.  
 
@@ -61,7 +61,7 @@ In the request body, supply a JSON representation of the [microsoft.graph.securi
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [microsoft.graph.security.securityCopilot.prompt](../resources/security.securitycopilot-prompt.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [microsoft.graph.security.securityCopilot.prompt](../resources/security-securitycopilot-prompt.md) object in the response body.
 
 ## Examples
 

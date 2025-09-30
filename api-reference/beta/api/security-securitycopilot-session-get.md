@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security.securityCopilot
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of [microsoft.graph.security.securityCopilot.session](../resources/security.securitycopilot-session.md) object.
+Read the properties and relationships of [microsoft.graph.security.securityCopilot.session](../resources/security-securitycopilot-session.md) object.
 
 ## Permissions
 
@@ -53,7 +53,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [microsoft.graph.security.securityCopilot.session](../resources/security.securitycopilot-session.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [microsoft.graph.security.securityCopilot.session](../resources/security-securitycopilot-session.md) object in the response body.
 
 ## Examples
 

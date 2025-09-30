@@ -23,7 +23,7 @@ Represents the resources related to the skillVariableDescriptor resource type.
 |:---|:---|:---|
 |description|String|Unsupported|
 |name|String|Unsupported|
-|type|[microsoft.graph.security.securityCopilot.skillTypeDescriptor](../resources/security.securitycopilot-skilltypedescriptor.md)|Unsupported|
+|type|[microsoft.graph.security.securityCopilot.skillTypeDescriptor](../resources/security-securitycopilot-skilltypedescriptor.md)|Unsupported|
 
 ## Relationships
 None.

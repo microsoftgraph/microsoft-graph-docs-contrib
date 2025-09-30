@@ -18,18 +18,18 @@ Represents the resources related to the skillInput Descriptor resource.
 
 **NOTE** Currently unsupported in beta.
 
-Inherits from [microsoft.graph.security.securityCopilot.skillVariableDescriptor](../resources/security.securitycopilot-skillvariabledescriptor.md).
+Inherits from [microsoft.graph.security.securityCopilot.skillVariableDescriptor](../resources/security-securitycopilot-skillvariabledescriptor.md).
 
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |defaultValue|String|Unsupported|
-|description|String| Unsupported. Inherited from [microsoft.graph.security.securityCopilot.skillVariableDescriptor](../resources/security.securitycopilot-skillvariabledescriptor.md).|
+|description|String| Unsupported. Inherited from [microsoft.graph.security.securityCopilot.skillVariableDescriptor](../resources/security-securitycopilot-skillvariabledescriptor.md).|
 |isRequired|Boolean|Unsupported|
-|name|String|Unsupported. Inherited from [microsoft.graph.security.securityCopilot.skillVariableDescriptor](../resources/security.securitycopilot-skillvariabledescriptor.md).|
+|name|String|Unsupported. Inherited from [microsoft.graph.security.securityCopilot.skillVariableDescriptor](../resources/security-securitycopilot-skillvariabledescriptor.md).|
 |placeholderValue|String|Unsupported|
-|type|[microsoft.graph.security.securityCopilot.skillTypeDescriptor](../resources/security.securitycopilot-skilltypedescriptor.md)|Unsupported. Inherited from [microsoft.graph.security.securityCopilot.skillVariableDescriptor](../resources/security.securitycopilot-skillvariabledescriptor.md).|
+|type|[microsoft.graph.security.securityCopilot.skillTypeDescriptor](../resources/security-securitycopilot-skilltypedescriptor.md)|Unsupported. Inherited from [microsoft.graph.security.securityCopilot.skillVariableDescriptor](../resources/security-securitycopilot-skillvariabledescriptor.md).|
 
 ## Relationships
 None.

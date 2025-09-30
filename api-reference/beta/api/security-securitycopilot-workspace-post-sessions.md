@@ -46,7 +46,7 @@ POST /security/securityCopilot/workspaces/{workspaceId}/sessions
 
 ## Request body
 
-In the request body, supply a JSON representation of the [microsoft.graph.security.securityCopilot.session](../resources/security.securitycopilot-session.md) object.
+In the request body, supply a JSON representation of the [microsoft.graph.security.securityCopilot.session](../resources/security-securitycopilot-session.md) object.
 
 You can specify the following properties when creating a **session**.
 
@@ -59,7 +59,7 @@ You can specify the following properties when creating a **session**.
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [microsoft.graph.security.securityCopilot.session](../resources/security.securitycopilot-session.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [microsoft.graph.security.securityCopilot.session](../resources/security-securitycopilot-session.md) object in the response body.
 
 ## Examples
 

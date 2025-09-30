@@ -57,7 +57,7 @@ PATCH /security/securityCopilot/workspaces/{workspaceId}/sessions/{sessionId}
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [microsoft.graph.security.securityCopilot.session](../resources/security.securitycopilot-session.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [microsoft.graph.security.securityCopilot.session](../resources/security-securitycopilot-session.md) object in the response body.
 
 ## Examples
 
