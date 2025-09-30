@@ -3,7 +3,7 @@
       {
         "ChangeList": [
           {
-             "Id": "51bec7fb-1c22-4485-bef5-4ac72a4b8258",
+            "Id": "51bec7fb-1c22-4485-bef5-4ac72a4b8258",
             "ApiChange": "Member",
             "ChangedApiName": "updateRequested",
             "ChangeType": "Addition",
@@ -11,7 +11,7 @@
             "Target": "protectionRuleStatus"
           },
           {
-             "Id": "51bec7fb-1c22-4485-bef5-4ac72a4b8258",
+            "Id": "51bec7fb-1c22-4485-bef5-4ac72a4b8258",
             "ApiChange": "Member",
             "ChangedApiName": "deleteRequested",
             "ChangeType": "Addition",
@@ -19,7 +19,7 @@
             "Target": "protectionRuleStatus"
           },
           {
-             "Id": "51bec7fb-1c22-4485-bef5-4ac72a4b8258",
+            "Id": "51bec7fb-1c22-4485-bef5-4ac72a4b8258",
             "ApiChange": "Enumeration",
             "ChangedApiName": "protectionSource",
             "ChangeType": "Addition",
@@ -43,7 +43,7 @@
             "Target": "protectionRuleBase"
           },
           {
-            "Id": "bf9901ad-db21-40ad-8ddc-87e5793679fa",
+            "Id": "51bec7fb-1c22-4485-bef5-4ac72a4b8258",
             "ApiChange": "Method",
             "ChangedApiName": "protectionRuleBase",
             "ChangeType": "Addition",
