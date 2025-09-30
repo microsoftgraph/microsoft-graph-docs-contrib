@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete and unprotect all the artifacts protected by a dynamic rule. This action is only applicable to dynamic rules.
+Delete and unprotect all the artifacts protected by a dynamic [rule](../resources/protectionrulebase.md). This action is only applicable to dynamic rules.
 
 The following points apply when you delete a dynamic rule and unprotect all artifacts it protects.
 - The rule moves to the `deleteRequested` status when this action is performed on a dynamic rule.
