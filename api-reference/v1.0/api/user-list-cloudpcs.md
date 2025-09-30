@@ -12,8 +12,6 @@ ms.date: 09/30/2025
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 List the [cloudPC](../resources/cloudpc.md) devices that are attributed to the signed-in user.
 
 >[!NOTE]
