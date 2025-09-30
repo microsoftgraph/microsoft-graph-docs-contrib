@@ -7,7 +7,15 @@
           "ApiChange": "Method",
           "ChangedApiName": "GET",
           "ChangeType": "Addition",
-          "Description": "Added the operation that [lists](https://learn.microsoft.com/en-us/graph/api/user-list-cloudpcs?view=graph-rest-1.0) Cloud PC devices for a user to the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-1.0) resource.",
+          "Description": "Added the operation that [lists](https://learn.microsoft.com/en-us/graph/api/user-list-cloudpcs?view=graph-rest-1.0) Cloud PC devices for a user to the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-1.0) resource.",
+          "Target": "user"
+        },
+        {
+          "Id": "ad99bb92-c9fc-4ca3-9bf3-c1846433f520",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "cloudPCs",
+          "ChangeType": "Addition",
+          "Description": "Added the **cloudPCs** relationship to the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-1.0) resource.",
           "Target": "user"
         }
       ],
