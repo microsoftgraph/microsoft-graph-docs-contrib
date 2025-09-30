@@ -1,5 +1,5 @@
 ---
-title: "Create fraudProtectionProvider"
+title: "Create fraudProtectionProviders"
 description: "Create a new fraudProtectionProvider object."
 author: "more-rasika"
 ms.date: 08/05/2025
