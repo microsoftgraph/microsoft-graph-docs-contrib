@@ -36,7 +36,7 @@ Represents the resources related to the prompt resource.
 |id|String|Prompt identifier|
 |inputs|[microsoft.graph.Dictionary](../resources/dictionary.md)|Future value|
 |lastModifiedDateTime|DateTimeOffset|Last modified time|
-|skillInputDescriptors|[microsoft.graph.security.securitycopilot.skillInputDescriptor](../resources/security.securitycopilot-skillinputdescriptor.md) collection|Skill Input descriptor|
+|skillInputDescriptors|[microsoft.graph.security.securityCopilot.skillInputDescriptor](../resources/security.securitycopilot-skillinputdescriptor.md) collection|Skill Input descriptor|
 |skillName|String|Skill Name|
 |type|microsoft.graph.security.securitycopilot.promptType|Prompt types. The possible values are: `unknown`, `context`, `prompt`, `skill`, `feedback`, `unknownFutureValue`. Only `prompt` is currently supported.|
 
@@ -69,7 +69,7 @@ The following JSON representation shows the resource type.
   ],
   "content": "String",
   "inputs": {
-    "@odata.type": "microsoft.graph.security.securityCopilot.Dictionary"
+    "@odata.type": "microsoft.graph.Dictionary"
   }
 }
 ```
