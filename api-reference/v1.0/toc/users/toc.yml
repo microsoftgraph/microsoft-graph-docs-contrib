@@ -262,12 +262,6 @@ items:
       href: ../../api/usersettings-get.md
     - name: Update
       href: ../../api/usersettings-update.md
-  - name: Cloud PC
-    items:
-    - name: Cloud PC
-      href: ../../resources/cloudpc.md
-    - name: List
-      href: ../../api/user-list-cloudpcs.md
 - name: Invitation
   items:
   - name: Invitation
