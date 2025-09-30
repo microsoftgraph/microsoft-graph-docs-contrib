@@ -36,7 +36,7 @@ Inherits from [entity](../resources/entity.md)
 |id|String|Unique GUID for evaluation. Inherits from [entity](../resources/entity.md)|
 |isCancelled|Boolean|Evaluation cancellation status|
 |lastModifiedDateTime|DateTimeOffset|Evaluation modified time|
-|result|[microsoft.graph.security.securityCopilot.evaluationResult](../resources/security-securitycopilot-evaluationresult.md)|Evaluation results collection.|
+|result|[microsoft.graph.security.securityCopilot.evaluationResult](../resources/security.securitycopilot-evaluationresult.md)|Evaluation results collection.|
 |runStartDateTime|DateTimeOffset|Evaluation Run start time|
 |state|microsoft.graph.security.securitycopilot.evaluationState|Evaluation state during poll. The possible values are: `unknown`, `created`, `running`, `completed`, `cancelled`, `pending`, `deferred`, `waitingForInput`, `unknownFutureValue`.|
 

@@ -46,7 +46,7 @@ POST /security/securityCopilot/workspaces/{workspaceId}/sessions/{sessionId}/pro
 
 ## Request body
 
-In the request body, supply a JSON representation of the [microsoft.graph.security.securityCopilot.evaluation](../resources/security.securitycopilot-evaluation.md) object.
+In the request body, supply a JSON representation of the [microsoft.graph.security.securityCopilot.evaluation](../resources/security-securitycopilot-evaluation.md) object.
 
 You can specify the following properties when creating a **evaluation**.
 
@@ -60,7 +60,7 @@ You can specify the following properties when creating a **evaluation**.
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [microsoft.graph.security.securityCopilot.evaluation](../resources/security.securitycopilot-evaluation.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [microsoft.graph.security.securityCopilot.evaluation](../resources/security-securitycopilot-evaluation.md) object in the response body.
 
 ## Examples
 

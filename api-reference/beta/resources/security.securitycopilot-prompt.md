@@ -25,8 +25,8 @@ Represents the resources related to the prompt resource.
 |[Get](../api/security.securitycopilot-prompt-get.md)|[microsoft.graph.security.securityCopilot.prompt](../resources/security.securitycopilot-prompt.md)|Read the properties and relationships of [microsoft.graph.security.securityCopilot.prompt](../resources/security.securitycopilot-prompt.md) object.|
 |[Update](../api/security.securitycopilot-prompt-update.md)|[microsoft.graph.security.securityCopilot.prompt](../resources/security.securitycopilot-prompt.md)|Update the properties of a prompt object.|
 |[Delete](../api/security.securitycopilot-session-delete-prompts.md)|None|Delete a prompt object.|
-|[List evaluations](../api/security.securitycopilot-prompt-list-evaluations.md)|[microsoft.graph.security.securityCopilot.evaluation](../resources/security.securitycopilot-evaluation.md) collection|Get a list of the evaluation objects.|
-|[Create evaluation](../api/security.securitycopilot-prompt-post-evaluations.md)|[microsoft.graph.security.securityCopilot.evaluation](../resources/security.securitycopilot-evaluation.md)|Create a new evaluation object.|
+|[List evaluations](../api/security.securitycopilot-prompt-list-evaluations.md)|[microsoft.graph.security.securityCopilot.evaluation](../resources/security-securitycopilot-evaluation.md) collection|Get a list of the evaluation objects.|
+|[Create evaluation](../api/security.securitycopilot-prompt-post-evaluations.md)|[microsoft.graph.security.securityCopilot.evaluation](../resources/security-securitycopilot-evaluation.md)|Create a new evaluation object.|
 
 ## Properties
 |Property|Type|Description|
@@ -43,7 +43,7 @@ Represents the resources related to the prompt resource.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|evaluations|[microsoft.graph.security.securityCopilot.evaluation](../resources/security.securitycopilot-evaluation.md) collection|Evaluations collection
+|evaluations|[microsoft.graph.security.securityCopilot.evaluation](../resources/security-securitycopilot-evaluation.md) collection|Evaluations collection
 
 ## JSON representation
 The following JSON representation shows the resource type.

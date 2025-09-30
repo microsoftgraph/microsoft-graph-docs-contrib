@@ -1,10 +1,10 @@
 ---
 title: "Security Copilot session resource type"
 description: "Security Copilot session resource type"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+author: "spunukol"
 ms.date: 07/17/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice: "security.securitycopilot"
 doc_type: resourcePageType
 ---
 
