@@ -1,0 +1,70 @@
+﻿{
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "45203e80-195f-4090-bfa9-fee7891f4a5e",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "policies",
+          "ChangeType": "Addition",
+          "Description": "Added the **policies** relationship to the [adminWindowsUpdates](https://learn.microsoft.com/en-us/graph/api/resources/intune-adminWindowsUpdates?view=graph-rest-beta) resource.",
+          "Target": "adminWindowsUpdates"
+        },
+        {
+          "Id": "45203e80-195f-4090-bfa9-fee7891f4a5e",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "approvalStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **approvalStatus** enumeration type.",
+          "Target": "approvalStatus"
+        },
+        {
+          "Id": "45203e80-195f-4090-bfa9-fee7891f4a5e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "policy",
+          "ChangeType": "Addition",
+          "Description": "Added the [policy](https://learn.microsoft.com/en-us/graph/api/resources/intune-windowsUpdates-policy?view=graph-rest-beta) resource.",
+          "Target": "policy"
+        },
+        {
+          "Id": "45203e80-195f-4090-bfa9-fee7891f4a5e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "policyApproval",
+          "ChangeType": "Addition",
+          "Description": "Added the [policyApproval](https://learn.microsoft.com/en-us/graph/api/resources/intune-windowsUpdates-policyApproval?view=graph-rest-beta) resource.",
+          "Target": "policyApproval"
+        },
+        {
+          "Id": "45203e80-195f-4090-bfa9-fee7891f4a5e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "qualityUpdatePolicy",
+          "ChangeType": "Addition",
+          "Description": "Added the [qualityUpdatePolicy](https://learn.microsoft.com/en-us/graph/api/resources/intune-windowsUpdates-qualityUpdatePolicy?view=graph-rest-beta) resource.",
+          "Target": "qualityUpdatePolicy"
+        },
+        {
+          "Id": "45203e80-195f-4090-bfa9-fee7891f4a5e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "qualityUpdateRing",
+          "ChangeType": "Addition",
+          "Description": "Added the [qualityUpdateRing](https://learn.microsoft.com/en-us/graph/api/resources/intune-windowsUpdates-qualityUpdateRing?view=graph-rest-beta) resource.",
+          "Target": "qualityUpdateRing"
+        },
+        {
+          "Id": "45203e80-195f-4090-bfa9-fee7891f4a5e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "ring",
+          "ChangeType": "Addition",
+          "Description": "Added the [ring](https://learn.microsoft.com/en-us/graph/api/resources/intune-windowsUpdates-ring?view=graph-rest-beta) resource.",
+          "Target": "ring"
+        }
+      ],
+      "Id": "45203e80-195f-4090-bfa9-fee7891f4a5e",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-09-17T05:53:32.9474232Z",
+      "WorkloadArea": "Devices and apps",
+      "SubArea": "Device updates"
+    }
+  ]
+}
