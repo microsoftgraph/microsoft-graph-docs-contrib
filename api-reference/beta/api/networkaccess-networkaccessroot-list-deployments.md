@@ -41,10 +41,10 @@ This method supports OData query parameters to help customize the response. You 
 
 |Parameter|Description|
 |:---|:---|
-|$filter|Filter items by property values (e.g., `status/deploymentStage eq 'succeeded'`).|
-|$top|Show only the first n items.|
-|$skip|Skip the first n items.|
-|$orderby|Order items by property values.|
+| $filter |Filter items by property values (e.g., `status/deploymentStage eq 'succeeded'`).|
+| $top |Show only the first n items.|
+| $skip |Skip the first n items.|
+| $orderby |Order items by property values.|
 
 For more information, see [OData query parameters](/graph/query-parameters).
 ## Request headers
@@ -110,6 +110,7 @@ Content-Type: application/json
     ]
 }
 ```
+
 
 
 
