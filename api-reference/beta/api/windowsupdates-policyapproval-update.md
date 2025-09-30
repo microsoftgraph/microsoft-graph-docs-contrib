@@ -72,7 +72,7 @@ The following example shows a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/admin/windows/updates/policies/{policyId}/approvals/{policyApprovalId}
+PATCH https://graph.microsoft.com/beta/admin/windows/updates/policies/{policyId}/approvals/{ApprovalId}
 Content-Type: application/json
 
 {
