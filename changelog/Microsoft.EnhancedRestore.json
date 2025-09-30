@@ -45,7 +45,7 @@
           {
             "Id": "bf9901ad-db21-40ad-8ddc-87e5793679fa",
             "ApiChange": "Method",
-            "ChangedApiName": "PATCH",
+            "ChangedApiName": "protectionRuleBase",
             "ChangeType": "Addition",
             "Description": "Added the [update](https://learn.microsoft.com/en-us/graph/api/protectionrulebase-update?view=graph-rest-1.0) operation to the [protectionRuleBase](https://learn.microsoft.com/en-us/graph/api/resources/protectionRuleBase?view=graph-rest-1.0) resource.",
             "Target": "protectionRuleBase"
