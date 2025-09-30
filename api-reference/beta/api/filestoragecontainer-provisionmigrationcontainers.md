@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Provision SharePoint-managed [Azure blob containers](../resources/filestoragecontainer.md) as temporary storage for migration content and metadata.
+Provision SharePoint-managed Azure blob containers as temporary storage for migration content and metadata.
 
 ## Permissions
 
