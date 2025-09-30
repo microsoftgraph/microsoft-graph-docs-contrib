@@ -144,6 +144,10 @@ Content-Type: application/json
   "osStatus": null,
   "expirationDate": null,
   "osVersionNumber": null,
+<<<<<<< HEAD
   "sizeInGB": 64
+=======
+  "osArchitecture": "x64"
+>>>>>>> c9f3dd3b4bd (Add os architecture to both custom and gallery image)
 }
 ```
