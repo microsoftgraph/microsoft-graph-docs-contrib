@@ -1,5 +1,5 @@
 ---
-title: "List fraudProtectionProvider objects"
+title: "List fraudProtectionProviders"
 description: "Get a list of the fraudProtectionProviders and their properties."
 author: "more-rasika"
 ms.date: 08/05/2025
