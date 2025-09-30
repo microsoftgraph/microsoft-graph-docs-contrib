@@ -8,7 +8,7 @@ ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
-# List fraudProtectionProvider objects
+# List fraudProtectionProviders
 
 Namespace: microsoft.graph
 
