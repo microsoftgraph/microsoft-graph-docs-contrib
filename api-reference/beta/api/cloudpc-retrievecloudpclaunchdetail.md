@@ -63,6 +63,7 @@ If successful, this function returns a `200 OK` response code and a [cloudPcLaun
 GET https://graph.microsoft.com/beta/me/cloudPCs/{cloudPCId}/retrieveCloudPcLaunchDetail
 ```
 
+---
 
 ### Response
 <!-- {
