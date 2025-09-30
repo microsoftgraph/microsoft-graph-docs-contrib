@@ -36,6 +36,30 @@
           },
           {
             "Id": "51bec7fb-1c22-4485-bef5-4ac72a4b8258",
+            "ApiChange": "Property",
+            "ChangedApiName": "protectionSources",
+            "ChangeType": "Addition",
+            "Description": "Added the **protectionSources** property to the [driveProtectionUnit](https://learn.microsoft.com/en-us/graph/api/resources/driveProtectionUnit?view=graph-rest-1.0) resource.",
+            "Target": "driveProtectionUnit"
+          },
+          {
+            "Id": "51bec7fb-1c22-4485-bef5-4ac72a4b8258",
+            "ApiChange": "Property",
+            "ChangedApiName": "protectionSources",
+            "ChangeType": "Addition",
+            "Description": "Added the **protectionSources** property to the [mailboxProtectionUnit](https://learn.microsoft.com/en-us/graph/api/resources/mailboxProtectionUnit?view=graph-rest-1.0) resource.",
+            "Target": "mailboxProtectionUnit"
+          },
+          {
+            "Id": "51bec7fb-1c22-4485-bef5-4ac72a4b8258",
+            "ApiChange": "Property",
+            "ChangedApiName": "protectionSources",
+            "ChangeType": "Addition",
+            "Description": "Added the **protectionSources** property to the [siteProtectionUnit](https://learn.microsoft.com/en-us/graph/api/resources/siteProtectionUnit?view=graph-rest-1.0) resource.",
+            "Target": "siteProtectionUnit"
+          },
+          {
+            "Id": "51bec7fb-1c22-4485-bef5-4ac72a4b8258",
             "ApiChange": "Method",
             "ChangedApiName": "deleteAndUnprotect",
             "ChangeType": "Addition",
