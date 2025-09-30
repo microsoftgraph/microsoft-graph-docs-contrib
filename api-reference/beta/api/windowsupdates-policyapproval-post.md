@@ -84,14 +84,12 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
     "@odata.type": "#microsoft.graph.windowsUpdates.policyApproval",
     "catalogEntryId": "String",
     "status": "String",
     "id": "ab3a53f0-f7aa-10b1-04d4-8680584cbbb6",
     "createdDateTime": "String (timestamp)",
     "lastModifiedDateTime": "String (timestamp)"
-  }
 }
 ```
 
