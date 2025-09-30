@@ -1,6 +1,6 @@
 ---
 title: "List fraudProtectionProvider objects"
-description: "Get a list of the fraudProtectionProvider objects and their properties."
+description: "Get a list of the fraudProtectionProviders and their properties."
 author: "more-rasika"
 ms.date: 08/05/2025
 ms.localizationpriority: medium
