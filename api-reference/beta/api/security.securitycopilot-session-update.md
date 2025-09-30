@@ -55,20 +55,9 @@ PATCH /security/securityCopilot/workspaces/{workspaceId}/sessions/{sessionId}
 
 
 
-
 ## Response
 
 If successful, this method returns a `200 OK` response code and an updated [microsoft.graph.security.securityCopilot.session](../resources/security.securitycopilot-session.md) object in the response body.
-
-``` json
-{
-  "@odata.type": "#microsoft.graph.security.securityCopilot.session",
-  "id": "String (identifier)",
-  "displayName": "String",
-  "lastModifiedDateTime": "String (timestamp)",
-  "createdDateTime": "String (timestamp)"
-}
-```
 
 ## Examples
 
