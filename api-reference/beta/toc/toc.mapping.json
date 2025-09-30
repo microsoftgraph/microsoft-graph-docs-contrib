@@ -1023,8 +1023,7 @@
       "complexTypes": [
         "fileStorageContainerTypeRegistrationSettings",
         "fileStorageContainerTypeAgentSettings",
-        "fileStorageContainerTypeSettings",
-        "sharePointMigrationContainerInfo"
+        "fileStorageContainerTypeSettings"
       ],
       "childNodes": [
         {
