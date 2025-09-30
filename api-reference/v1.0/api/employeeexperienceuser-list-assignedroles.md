@@ -66,7 +66,6 @@ The following example shows how to get a list of all the roles assigned to a sig
 #### Request
 
 The following example shows a request.
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_assignedrole_me"
@@ -116,7 +115,6 @@ The following example shows how to get a list of all the roles assigned to a use
 #### Request
 
 The following example shows a request.
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_assignedrole_user"
