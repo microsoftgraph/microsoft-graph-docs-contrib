@@ -23,7 +23,6 @@ Inherits from [entity](../resources/entity.md)
 |:---|:---|:---|
 |[List](../api/security-securitycopilot-prompt-list-evaluations.md)|[microsoft.graph.security.securityCopilot.evaluation](../resources/security-securitycopilot-evaluation.md) collection|Get a list of the evaluation objects and their properties.|
 |[Create](../api/security-securitycopilot-prompt-post-evaluations.md)|[microsoft.graph.security.securityCopilot.evaluation](../resources/security-securitycopilot-evaluation.md)|Create a new evaluation object.|
-|[Update](../api/security-securitycopilot-evaluation-update.md)|[microsoft.graph.security.securityCopilot.evaluation](../resources/security-securitycopilot-evaluation.md)|Update the properties of an evaluation object.|
 
 ## Properties
 |Property|Type|Description|
