@@ -24,29 +24,36 @@ Inherits from [entity](entity.md).
 |Method|Return type|Description|
 |:---|:---|:---|
 |[Get](../api/protectionunitbase-get.md)|[protectionUnitBase](../resources/protectionunitbase.md)|Read the properties and relationships of a [protectionUnitBase](../resources/protectionunitbase.md) object.|
+|[Offboard](../api/protectionunitbase-offboard.md)|[protectionUnitBase](../resources/protectionunitbase.md)|Offboard a [protectionUnitBase](../resources/protectionunitbase.md).|
+|[Cancel offboard](../api/protectionunitbase-canceloffboard.md)|[protectionUnitBase](../resources/protectionunitbase.md)|Cancel the offboarding of a [protectionUnitBase](../resources/protectionunitbase.md).|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|createdBy|[identitySet](../resources/identityset.md)|The identity of person who created the protection unit.|
-|createdDateTime|DateTimeOffset|The time of creation of the protection unit.|
+|createdBy|[identitySet](../resources/identityset.md)|The identity of the person who created the protection unit.|
+|createdDateTime|DateTimeOffset|The time of creation of the protection unit. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |error|[publicError](../resources/publicerror.md)|Contains error details if an error occurred while creating a protection unit.|
-|id|String|The unique identifier of the protection unit. Inherited from [entity](entity.md).|
+|id|String|The unique identifier of the protection unit.
 |lastModifiedBy|[identitySet](../resources/identityset.md)|The identity of person who last modified the protection unit.|
-|lastModifiedDateTime|DateTimeOffset|Timestamp of the last modification of this protection unit.|
+|lastModifiedDateTime|DateTimeOffset|Timestamp of the last modification of this protection unit. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+|offboardRequestedDateTime|DateTimeOffset|The date and time when protection unit offboard was requested. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |policyId|String|The unique identifier of the protection policy based on which protection unit was created.|
+|status|[protectionUnitStatus](../resources/protectionunitbase.md#protectionunitstatus-values)|The status of the protection unit. The possible values are: `protectRequested`, `protected`, `unprotectRequested`, `unprotected`, `removeRequested`, `unknownFutureValue`, `offboardRequested`, `offboarded`, `cancelOffboardRequested`. Use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `offboardRequested`, `offboarded`, `cancelOffboardRequested`.|
 |protectionSources|protectionSource|Indicates the sources by which a protection unit is currently protected. A protection unit protected by multiple sources is indicated by comma-separated values. The possible values are: `none`, `manual`, `dynamicRule`, `unknownFutureValue`.|
 |status|[protectionUnitStatus](../resources/protectionunitbase.md#protectionunitstatus-values)|The status of the protection unit. The possible values are: `protectRequested`, `protected`, `unprotectRequested`, `unprotected`, `removeRequested`, `unknownFutureValue`.|
 
 ### protectionUnitStatus values
 |Member | Description |
 |:------|:------------|
-|protectRequested | Protection of the unit was requested. |
+|protectRequested | Protection of the unit was requested. Applies when a policy is activated or new units are added to an active policy. |
 |protected | The protection unit is successfully enabled.|
 |unprotectRequested | Disabling protection of the unit was requested. |
 |unprotected | The protection unit is successfully disabled.|
 |removeRequested |A request to remove the protected unit from the policy was made. |
 |unknownFutureValue | Evolvable enumeration sentinel value. Don't use.|
+|offboardRequested |A request to offboard the protection unit. |
+|offboarded |The protection unit is successfully offboarded. |
+|cancelOffboardRequested |A request to cancel the offboarding of a protection unit. |
 
 ## Relationships
 None.
@@ -65,11 +72,18 @@ The following JSON representation shows the resource type.
 {
   "@odata.type": "#microsoft.graph.protectionUnitBase",
   "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
+  "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
   "createdDateTime": "String (timestamp)",
   "error": {"@odata.type": "microsoft.graph.publicError"},
   "id": "String (identifier)",
   "lastModifiedBy": {"@odata.type": "microsoft.graph.identitySet"},
+  "error": {"@odata.type": "microsoft.graph.publicError"},
+  "id": "String (identifier)",
+  "lastModifiedBy": {"@odata.type": "microsoft.graph.identitySet"},
   "lastModifiedDateTime": "String (timestamp)",
+  "offboardRequestedDateTime": "String (timestamp)",
+  "policyId": "String",
+  "status": "String"
   "policyId": "String",
   "protectionSources": "String",
   "status": "String"
