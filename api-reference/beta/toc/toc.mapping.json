@@ -1018,23 +1018,34 @@
         "recycleBinItem",
         "sharedDriveItem",
         "sharePointGroup",
-        "sharePointGroupMember",
-        "sharePointMigrationEvent",
-        "sharePointMigrationFinishManifestFileUploadEvent",
-        "sharePointMigrationJob",
-        "sharePointMigrationJobCancelledEvent",
-        "sharePointMigrationJobDeletedEvent",
-        "sharePointMigrationJobErrorEvent",
-        "sharePointMigrationJobPostponedEvent",
-        "sharePointMigrationJobProgressEvent",
-        "sharePointMigrationJobQueuedEvent",
-        "sharePointMigrationJobStartEvent"
+        "sharePointGroupMember"
       ],
       "complexTypes": [
         "fileStorageContainerTypeRegistrationSettings",
         "fileStorageContainerTypeAgentSettings",
         "fileStorageContainerTypeSettings",
         "sharePointMigrationContainerInfo"
+      ],
+      "childNodes": [
+        {
+          "name": "SharePoint migration (preview)",
+          "overview": "../../resources/sharepointmigration-api-overview.md",
+          "resources": [
+            "sharePointMigrationEvent",
+            "sharePointMigrationFinishManifestFileUploadEvent",
+            "sharePointMigrationJob",
+            "sharePointMigrationJobCancelledEvent",
+            "sharePointMigrationJobDeletedEvent",
+            "sharePointMigrationJobErrorEvent",
+            "sharePointMigrationJobPostponedEvent",
+            "sharePointMigrationJobProgressEvent",
+            "sharePointMigrationJobQueuedEvent",
+            "sharePointMigrationJobStartEvent"
+          ],
+          "complexTypes": [
+            "sharePointMigrationContainerInfo"
+          ]
+        }
       ]
     },
     {
