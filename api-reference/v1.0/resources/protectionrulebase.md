@@ -59,7 +59,7 @@ The following limitations apply to this resource:
 |completedWithErrors | The status of the protection rule when the rule ran but encountered errors.|
 |unknownFutureValue | Evolvable enumeration sentinel value. Don't use.    |
 |updateRequested | The status of the protection rule when a patch is requested. This value applies only to dynamic rules.|
-|deleteRequested | The status of the protection rule when the **deleteAndUnprotect** action is performed. This value applies only to dynamic rules.|
+|deleteRequested | The status of the protection rule when the [deleteAndUnprotect](../api/protectionrulebase-deleteandunprotect.md) action is performed. This value applies only to dynamic rules.|
 
 ## Relationships
 

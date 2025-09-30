@@ -75,8 +75,6 @@ The following JSON representation shows the resource type.
   "error": {"@odata.type": "microsoft.graph.publicError"},
   "id": "String (identifier)",
   "lastModifiedBy": {"@odata.type": "microsoft.graph.identitySet"},
-  "error": {"@odata.type": "microsoft.graph.publicError"},
-  "id": "String (identifier)",
   "lastModifiedDateTime": "String (timestamp)",
   "offboardRequestedDateTime": "String (timestamp)",
   "policyId": "String",
