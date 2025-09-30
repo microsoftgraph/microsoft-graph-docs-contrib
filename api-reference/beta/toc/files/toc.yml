@@ -364,5 +364,3 @@ items:
     href: ../../resources/filestoragecontainertyperegistrationsettings.md
   - name: File storage container type settings
     href: ../../resources/filestoragecontainertypesettings.md
-  - name: SharePoint migration container info
-    href: ../../resources/sharepointmigrationcontainerinfo.md
