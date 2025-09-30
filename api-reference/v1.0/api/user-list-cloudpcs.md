@@ -5,7 +5,7 @@ author: "sentry-cy"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: apiPageType
-ms.date: 04/04/2024
+ms.date: 09/30/2025
 ---
 
 # List cloudPCs for user
