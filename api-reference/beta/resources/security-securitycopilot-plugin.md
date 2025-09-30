@@ -20,7 +20,7 @@ Represents the resources related to the Security Copilot plugin resource.
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/security.securitycopilot-workspace-list-plugins.md)|[microsoft.graph.security.securityCopilot.plugin](../resources/security-securitycopilot-plugin.md) collection|Get a list of the plugin objects and their properties.|
+|[List](../api/security-securitycopilot-workspace-list-plugins.md)|[microsoft.graph.security.securityCopilot.plugin](../resources/security-securitycopilot-plugin.md) collection|Get a list of the plugin objects and their properties.|
 
 ## Properties
 |Property|Type|Description|
