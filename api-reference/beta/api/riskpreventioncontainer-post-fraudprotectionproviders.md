@@ -1,6 +1,6 @@
 ---
 title: "Create fraudProtectionProviders"
-description: "Create a new fraudProtectionProvider object."
+description: "Create a new fraudProtectionProvider."
 author: "more-rasika"
 ms.date: 08/05/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new fraudProtectionProvider object. You can create one of the following subtypes that are derived from **fraudProtectionProvider**.
+Create a new fraudProtectionProvider. You can create one of the following subtypes that are derived from **fraudProtectionProvider**.
 
 - [arkoseFraudProtectionProvider](../resources/arkoseFraudProtectionProvider.md)
 - [humanSecurityFraudProtectionProvider](../resources/humansecurityfraudprotectionprovider.md)
@@ -51,7 +51,7 @@ POST /identity/riskPrevention/fraudProtectionProviders
 
 ## Request body
 
-In the request body, supply a JSON representation of the [fraudProtectionProvider](../resources/fraudprotectionprovider.md) object.
+In the request body, supply a JSON representation of the [fraudProtectionProvider](../resources/fraudprotectionprovider.md).
 
 You can specify the following properties when creating a **fraudProtectionProvider**.  You must specify the **@odata.type** property to specify the type of **fraudProtectionProvider** to create; for example, `@odata.type": "microsoft.graph.arkoseFraudProtectionProvider"`.
 

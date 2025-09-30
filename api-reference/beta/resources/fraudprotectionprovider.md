@@ -26,7 +26,7 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/riskpreventioncontainer-list-fraudprotectionproviders.md)|[fraudProtectionProvider](../resources/fraudprotectionprovider.md) collection|Get a list of the fraudProtectionProvider objects and their properties.|
+|[List](../api/riskpreventioncontainer-list-fraudprotectionproviders.md)|[fraudProtectionProvider](../resources/fraudprotectionprovider.md) collection|Get a list of the fraudProtectionProviders and their properties.|
 |[Create](../api/riskpreventioncontainer-post-fraudprotectionproviders.md)|[fraudProtectionProvider](../resources/fraudprotectionprovider.md)|Create a new fraudProtectionProvider object.|
 |[Get](../api/fraudprotectionprovider-get.md)|[fraudProtectionProvider](../resources/fraudprotectionprovider.md)|Read the properties and relationships of [fraudProtectionProvider](../resources/fraudprotectionprovider.md) object.|
 |[Update](../api/fraudprotectionprovider-update.md)|[fraudProtectionProvider](../resources/fraudprotectionprovider.md)|Update the properties of a fraudProtectionProvider object.|
