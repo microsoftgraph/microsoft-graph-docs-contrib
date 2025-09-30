@@ -20,13 +20,13 @@ Represents the resources related to the Security Copilot session resource.
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/security.securitycopilot-workspace-list-sessions.md)|[microsoft.graph.security.securityCopilot.session](../resources/security.securitycopilot-session.md) collection|Get a list of the session objects and their properties.|
-|[Create](../api/security.securitycopilot-workspace-post-sessions.md)|[microsoft.graph.security.securityCopilot.session](../resources/security.securitycopilot-session.md)|Create a new session object.|
-|[Get](../api/security.securitycopilot-session-get.md)|[microsoft.graph.security.securityCopilot.session](../resources/security.securitycopilot-session.md)|Read the properties and relationships of [microsoft.graph.security.securityCopilot.session](../resources/security.securitycopilot-session.md) object.|
-|[Update](../api/security.securitycopilot-session-update.md)|[microsoft.graph.security.securityCopilot.session](../resources/security.securitycopilot-session.md)|Update the properties of a session object.|
-|[Delete](../api/security.securitycopilot-workspace-delete-sessions.md)|None|Delete a session object.|
-|[List prompts](../api/security.securitycopilot-session-list-prompts.md)|[microsoft.graph.security.securityCopilot.prompt](../resources/security.securitycopilot-prompt.md) collection|Lists the collection of prompts created in each session|
-|[Create prompt](../api/security.securitycopilot-session-post-prompts.md)|[microsoft.graph.security.securityCopilot.prompt](../resources/security.securitycopilot-prompt.md)|Create a new prompt object.|
+|[List](../api/security-securitycopilot-workspace-list-sessions.md)|[microsoft.graph.security.securityCopilot.session](../resources/security.securitycopilot-session.md) collection|Get a list of the session objects and their properties.|
+|[Create](../api/security-securitycopilot-workspace-post-sessions.md)|[microsoft.graph.security.securityCopilot.session](../resources/security.securitycopilot-session.md)|Create a new session object.|
+|[Get](../api/security-securitycopilot-session-get.md)|[microsoft.graph.security.securityCopilot.session](../resources/security.securitycopilot-session.md)|Read the properties and relationships of [microsoft.graph.security.securityCopilot.session](../resources/security.securitycopilot-session.md) object.|
+|[Update](../api/security-securitycopilot-session-update.md)|[microsoft.graph.security.securityCopilot.session](../resources/security.securitycopilot-session.md)|Update the properties of a session object.|
+|[Delete](../api/security-securitycopilot-workspace-delete-sessions.md)|None|Delete a session object.|
+|[List prompts](../api/security-securitycopilot-session-list-prompts.md)|[microsoft.graph.security.securityCopilot.prompt](../resources/security.securitycopilot-prompt.md) collection|Lists the collection of prompts created in each session|
+|[Create prompt](../api/security-securitycopilot-session-post-prompts.md)|[microsoft.graph.security.securityCopilot.prompt](../resources/security.securitycopilot-prompt.md)|Create a new prompt object.|
 
 ## Properties
 |Property|Type|Description|

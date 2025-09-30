@@ -21,9 +21,9 @@ Represents the resources related to a Microsoft Security Copilot Workspace.
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List](../api/securitycopilot-list-workspaces.md)|[microsoft.graph.security.securityCopilot.workspace](../resources/security.securitycopilot-workspace.md) collection|Get a list of the workspace objects and their properties.|
-|[List plugins](../api/security.securitycopilot-workspace-list-plugins.md)|[microsoft.graph.security.securityCopilot.plugin](../resources/security.securitycopilot-plugin.md) collection|Get a list of plugins available in the workspace. Plugins are skillsets which are a group of skills (tools)|
-|[List sessions](../api/security.securitycopilot-workspace-list-sessions.md)|[microsoft.graph.security.securityCopilot.session](../resources/security.securitycopilot-session.md) collection|Get a list of sessions in the workspace|
-|[Create session](../api/security.securitycopilot-workspace-post-sessions.md)|[microsoft.graph.security.securityCopilot.session](../resources/security.securitycopilot-session.md)|Create a new session object.|
+|[List plugins](../api/security-securitycopilot-workspace-list-plugins.md)|[microsoft.graph.security.securityCopilot.plugin](../resources/security.securitycopilot-plugin.md) collection|Get a list of plugins available in the workspace. Plugins are skillsets which are a group of skills (tools)|
+|[List sessions](../api/security-securitycopilot-workspace-list-sessions.md)|[microsoft.graph.security.securityCopilot.session](../resources/security.securitycopilot-session.md) collection|Get a list of sessions in the workspace|
+|[Create session](../api/security-securitycopilot-workspace-post-sessions.md)|[microsoft.graph.security.securityCopilot.session](../resources/security.securitycopilot-session.md)|Create a new session object.|
 
 ## Properties
 |Property|Type|Description|
