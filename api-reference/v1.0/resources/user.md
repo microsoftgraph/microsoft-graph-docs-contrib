@@ -308,7 +308,7 @@ For example: Cameron is the administrator of a directory for an elementary schoo
 |calendarGroups|[calendarGroup](calendargroup.md) collection|The user's calendar groups. Read-only. Nullable.|
 |calendars|[calendar](calendar.md) collection|The user's calendars. Read-only. Nullable.|
 |calendarView|[event](event.md) collection|The calendar view for the calendar. Read-only. Nullable.|
-|cloudPCs|[cloudPC](../resources/cloudpc.md) collection|TODO|
+|cloudPCs|[cloudPC](../resources/cloudpc.md) collection|The user's calendars. Read-only. Nullable.|
 |contactFolders|[contactFolder](contactfolder.md) collection|The user's contacts folders. Read-only. Nullable.|
 |contacts|[contact](contact.md) collection|The user's contacts. Read-only. Nullable.|
 |createdObjects|[directoryObject](directoryobject.md) collection|Directory objects that the user created. Read-only. Nullable.|
