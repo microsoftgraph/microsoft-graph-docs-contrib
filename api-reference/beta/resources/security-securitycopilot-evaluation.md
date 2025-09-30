@@ -23,9 +23,7 @@ Inherits from [entity](../resources/entity.md)
 |:---|:---|:---|
 |[List](../api/security-securitycopilot-prompt-list-evaluations.md)|[microsoft.graph.security.securityCopilot.evaluation](../resources/security-securitycopilot-evaluation.md) collection|Get a list of the evaluation objects and their properties.|
 |[Create](../api/security-securitycopilot-prompt-post-evaluations.md)|[microsoft.graph.security.securityCopilot.evaluation](../resources/security-securitycopilot-evaluation.md)|Create a new evaluation object.|
-|[Get](../api/security-securitycopilot-evaluation-get.md)|[microsoft.graph.security.securityCopilot.evaluation](../resources/security-securitycopilot-evaluation.md)|Read the properties and relationships of [microsoft.graph.security.securityCopilot.evaluation](../resources/security-securitycopilot-evaluation.md) object.|
 |[Update](../api/security-securitycopilot-evaluation-update.md)|[microsoft.graph.security.securityCopilot.evaluation](../resources/security-securitycopilot-evaluation.md)|Update the properties of an evaluation object.|
-|[Delete](../api/security-securitycopilot-prompt-delete-evaluations.md)|None|Delete an evaluation object.|
 
 ## Properties
 |Property|Type|Description|

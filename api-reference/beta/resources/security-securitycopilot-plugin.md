@@ -21,7 +21,6 @@ Represents the resources related to the Security Copilot plugin resource.
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List](../api/security.securitycopilot-workspace-list-plugins.md)|[microsoft.graph.security.securityCopilot.plugin](../resources/security.securitycopilot-plugin.md) collection|Get a list of the plugin objects and their properties.|
-|[Get](../api/security.securitycopilot-plugin-get.md)|[microsoft.graph.security.securityCopilot.plugin](../resources/security.securitycopilot-plugin.md)|Read the properties and relationships of [microsoft.graph.security.securityCopilot.plugin](../resources/security.securitycopilot-plugin.md) object.|
 
 ## Properties
 |Property|Type|Description|
