@@ -149,7 +149,8 @@ Added a note to the **artifactCount** property of the [granularMailboxRestoreArt
 
 ### Device and app management | Cloud PC
 
-Use the [resize](/graph/api/cloudpc-resize) operation of [cloudPC](/graph/api/resources/cloudpc) to upgrade or downgrade an existing Cloud PC to a configuration with a new virtual CPU (vCPU) and storage size.
+- Use the [resize](/graph/api/cloudpc-resize) operation of [cloudPC](/graph/api/resources/cloudpc) to upgrade or downgrade an existing Cloud PC to a configuration with a new virtual CPU (vCPU) and storage size.
+- [List](/graph/api/user-list-cloudpcs) the Cloud PC devices that are attributed to the signed-in user.
 
 ### Sites and lists
 
@@ -178,7 +179,6 @@ Removed support for delegated permissions in the [List sites](/graph/api/site-li
 
 - Deprecated the `/deviceManagement/virtualEndpoint/cloudPCs/{cloudPCId}/getCloudPcLaunchInfo` endpoint in favor of delegated permission requests using either `/me/cloudPCs/{cloudPCId}/getCloudPcLaunchInfo` or `/users/{userId}/cloudPCs/{id}/getCloudPcLaunchInfo` in the [getCloudPcLaunchInfo](/graph/api/cloudpc-getcloudpclaunchinfo) method.
 - Use the **provisioningSourceType** property on [cloudPcUserSetting](/graph/api/resources/cloudpcusersetting?view=graph-rest-beta&preserve-view=true) to indicate the provisioning source of the Cloud PC prepared for an end user.
-- Add v1.0 List for user operation for [cloudPC](/graph/api/resources/cloudpc).
 
 ### Files
 
