@@ -36,7 +36,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /groups/{groupsId}/onPremisesSyncBehavior
+GET /contacts/{id}/onPremisesSyncBehavior
+GET /groups/{id}/onPremisesSyncBehavior
+GET /users/{id}/onPremisesSyncBehavior
 ```
 
 ## Optional query parameters

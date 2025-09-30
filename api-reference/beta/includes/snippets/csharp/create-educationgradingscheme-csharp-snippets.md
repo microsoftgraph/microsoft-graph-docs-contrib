@@ -11,13 +11,20 @@ using Microsoft.Graph.Beta.Models;
 
 var requestBody = new EducationGradingScheme
 {
-	DisplayName = "New name 02",
+	DisplayName = "PassFailScheme",
 	Grades = new List<EducationGradingSchemeGrade>
 	{
 		new EducationGradingSchemeGrade
 		{
-			DisplayName = "Only grade",
+			DisplayName = "Pass",
+			MinPercentage = 70f,
+			DefaultPercentage = 90f,
+		},
+		new EducationGradingSchemeGrade
+		{
+			DisplayName = "Fail",
 			MinPercentage = 0f,
+			DefaultPercentage = 50f,
 		},
 	},
 };
