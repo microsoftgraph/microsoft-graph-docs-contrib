@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.sites().bySiteId("{site-id}").pages().byBaseSitePageId("{baseSitePage-id}").delete();
+graphClient.me().onenote().pages().byOnenotePageId("{onenotePage-id}").delete();
 
 
 ```

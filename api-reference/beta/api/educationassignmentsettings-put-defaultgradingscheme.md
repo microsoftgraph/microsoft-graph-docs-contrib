@@ -1,6 +1,6 @@
 ---
-title: "Create educationGradingScheme"
-description: "Create a new educationGradingScheme object."
+title: "Add defaultGradingScheme"
+description: "Add the default educationGradingScheme to an educationAssignmentSettings object."
 author: "v-rmanda"
 ms.localizationpriority: medium
 ms.subservice: "education"
@@ -8,13 +8,13 @@ doc_type: apiPageType
 ms.date: 04/05/2024
 ---
 
-# Create educationGradingScheme
+# Add defaultGradingScheme
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Add an existing [educationGradingScheme](../resources/educationgradingscheme.md) for an existing assignment.
+Add the default [educationGradingScheme](../resources/educationgradingscheme.md) to an **educationAssignmentSettings** object.
 
 ## Permissions
 
@@ -22,10 +22,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "educationassignmentsettings-post-gradingschemes-permissions"
+  "name": "educationassignmentsettings_put_defaultgradingscheme"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/educationassignmentsettings-post-gradingschemes-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/educationassignmentsettings-put-defaultgradingscheme-permissions.md)]
 
 ## HTTP request
 
@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-PUT /education/classes/{educationClassId}/assignments/{assignmentid}/gradingScheme/$ref
+PUT /education/classes/{educationClassId}/assignmentSettings/defaultGradingScheme/$ref
 ```
 
 ## Request headers
@@ -46,13 +46,13 @@ PUT /education/classes/{educationClassId}/assignments/{assignmentid}/gradingSche
 
 ## Request body
 
-In the request body, supply the odata.id of the existing **gradingScheme** object to add to this assignment.
+In the request body, supply a JSON representation of a structure with the OData ID of the existing [educationGradingScheme](../resources/educationgradingscheme.md) to add to this assignment.
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code. It doesn't return anything in the response body.
+If successful, this method returns a `204 No Content` response code.
 
-## Example
+## Examples
 
 ### Request
 
@@ -60,11 +60,11 @@ The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_educationgradingscheme_from_"
+  "name": "set_defaultGradingScheme_using_put"
 }
 -->
 ``` http
-PUT https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/assignments/e98aaae1-7c98-4e65-bb62-1994fe410552/gradingScheme/$ref
+PUT https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/assignmentSettings/defaultGradingScheme/$ref
 Content-Type: application/json
 
 {
@@ -73,12 +73,13 @@ Content-Type: application/json
 ```
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-educationgradingscheme-from--javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/set-defaultgradingscheme-using-put-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 ### Response
+
 The following example shows the response.
 
 <!-- {
@@ -86,6 +87,9 @@ The following example shows the response.
   "truncated": true  
 }
 -->
+
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
