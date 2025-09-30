@@ -67,7 +67,7 @@ The following JSON representation shows the resource type.
   "lastModifiedDateTime": "String (timestamp)",
   "offboardRequestedDateTime": "String (timestamp)",
   "policyId": "String",
-  "protectionSources": String,
+  "protectionSources": "String",
   "siteId": "String",
   "siteName": "String",
   "siteWebUrl": "String",
