@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: resourcePageType
 ms.date: 07/22/2024
+toc.title: "Cloud PC launch info (deprecated)"
 ---
 
 # cloudPcLaunchInfo resource type (deprecated)
