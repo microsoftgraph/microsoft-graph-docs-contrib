@@ -33,6 +33,14 @@
           "ChangeType": "Addition",
           "Description": "Added the [retrieveCloudPcLaunchDetail](https://learn.microsoft.com/en-us/graph/api/cloudpc-retrievecloudpclaunchdetail?view=graph-rest-beta) method to the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource.",
           "Target": "cloudPC"
+        },
+        {
+          "Id": "cb115cfe-1d16-48d9-8d7f-787fa53ddd8b",
+          "ApiChange": "Method",
+          "ChangedApiName": "getCloudPcLaunchInfo",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [getCloudPcLaunchInfo](https://learn.microsoft.com/en-us/graph/api/cloudpc-getCloudPcLaunchInfo?view=graph-rest-beta) method from the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource.",
+          "Target": "cloudPC"
         }
       ],
       "Id": "cb115cfe-1d16-48d9-8d7f-787fa53ddd8b",
