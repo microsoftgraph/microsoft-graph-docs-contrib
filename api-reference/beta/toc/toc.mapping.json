@@ -1018,12 +1018,23 @@
         "recycleBinItem",
         "sharedDriveItem",
         "sharePointGroup",
-        "sharePointGroupMember"
+        "sharePointGroupMember",
+        "sharePointMigrationEvent",
+        "sharePointMigrationFinishManifestFileUploadEvent",
+        "sharePointMigrationJob",
+        "sharePointMigrationJobCancelledEvent",
+        "sharePointMigrationJobDeletedEvent",
+        "sharePointMigrationJobErrorEvent",
+        "sharePointMigrationJobPostponedEvent",
+        "sharePointMigrationJobProgressEvent",
+        "sharePointMigrationJobQueuedEvent",
+        "sharePointMigrationJobStartEvent"
       ],
       "complexTypes": [
         "fileStorageContainerTypeRegistrationSettings",
+        "fileStorageContainerTypeAgentSettings",
         "fileStorageContainerTypeSettings",
-        "fileStorageContainerTypeAgentSettings"
+        "sharePointMigrationContainerInfo"
       ]
     },
     {
@@ -2498,11 +2509,15 @@
               "overview": "../../resources/azure-ad-auditlog-overview.md",
               "shouldSort": true,
               "resources": [
+                "auditActivityType",
                 "customSecurityAttributeAudit",
                 "directoryAudit",
                 "provisioningObjectSummary",
                 "selfServiceSignUp",
-                "signIn"
+                "signIn",
+                "signInEventsActivity",
+                "signInEventsAppActivity",
+                "summarizedSignIn"
               ]
             }
           ]
@@ -3096,11 +3111,16 @@
             "microsoft.graph.teamsAdministration.teamsUserConfiguration",
             "microsoft.graph.teamsAdministration.telephoneNumberLongRunningOperation",
             "microsoft.graph.teamsAdministration.telephoneNumberManagementRoot"
+            "microsoft.graph.teamsAdministration.teamsPolicyAssignment",
+            "microsoft.graph.teamsAdministration.teamsPolicyUserAssignment",
+            "microsoft.graph.teamsAdministration.teamsUserConfiguration",
+            "microsoft.graph.teamsAdministration.telephoneNumberLongRunningOperation"
           ],
           "complexTypes": [
             "microsoft.graph.teamsAdministration.assignedTelephoneNumber",
             "microsoft.graph.teamsAdministration.effectivePolicyAssignment",
             "microsoft.graph.teamsAdministration.policyAssignment",
+            "microsoft.graph.teamsAdministration.policyIdentifierDetail",
             "microsoft.graph.teamsAdministration.telephoneNumberLongRunningOperationDetails"
           ]
         },

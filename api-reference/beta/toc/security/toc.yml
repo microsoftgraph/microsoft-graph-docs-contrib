@@ -258,7 +258,7 @@ items:
       href: ../../api/tenantdatasecurityandgovernance-list-sensitivitylabels.md
     - name: Get a data security and compliance sensitivity label
       href: ../../api/sensitivitylabel-get.md
-    - name: List rights
+    - name: Get usage rights included
       href: ../../api/usagerightsincluded-get.md
   - name: Tenant data security and governance
     items:
@@ -858,7 +858,7 @@ items:
       href: ../../api/tenantdatasecurityandgovernance-list-sensitivitylabels.md
     - name: Get a data security and compliance sensitivity label
       href: ../../api/sensitivitylabel-get.md
-    - name: List rights
+    - name: Get usage rights included
       href: ../../api/usagerightsincluded-get.md
   - name: Information protection policy setting
     items:

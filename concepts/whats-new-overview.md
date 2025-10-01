@@ -28,12 +28,6 @@ From the end of September 2025, the maximum page size for the [List servicePrinc
 
 Added a note to the **artifactCount** property of the [granularMailboxRestoreArtifact](/graph/api/resources/granularmailboxrestoreartifact) about its upcoming deprecation.
 
-### Device and app management | Cloud PC
-
-- Added the `cloudPcUserSettingsPersistenceUsageThreshold`, `cloudPcDeprovisionedThreshold`, and `cloudPcReserveDeprovisionFailedThreshold` as supported values for the **conditionCategory** property of [ruleCondition](/graph/api/resources/devicemanagement-rulecondition?view=graph-rest-beta&preserve-view=true).
-- Added the `cloudPcUserSettingsPersistenceScenario` and `cloudPcDeprovisionFailedScenario` as supported values for the **alertRuleTemplate** properties of [alertRecord](/graph/api/resources/devicemanagement-alertrecord?view=graph-rest-beta&preserve-view=true) and [alertRule](/graph/api/resources/devicemanagement-alertrule?view=graph-rest-beta&preserve-view=true).
-- Use the **provisioningSourceType** property on [cloudPcUserSetting](/graph/api/resources/cloudpcusersetting?view=graph-rest-beta&preserve-view=true) to indicate the provisioning source of the Cloud PC prepared for an end user.
-
 ### Education
 
 - The assignment service in the education APIs in Microsoft Graph has updated its throttling limits: per app per tenant requests are now limited to 350 per 10 seconds and 10,000 per hour. Per tenant for all apps, the limits are now 700 per 10 seconds and 20,000 per hour. A new limit of 25 requests per 10 seconds is also introduced for POST `/publish` operations.
@@ -87,10 +81,20 @@ Defined the following endpoints as supported for the [driveItem: discardCheckout
 
 Added a note to the **artifactCount** property of the [granularMailboxRestoreArtifact](/graph/api/resources/granularmailboxrestoreartifact?view=graph-rest-beta&preserve-view=true) about its upcoming deprecation.
 
+### Calendars | Places
+
+- The new map APIs in Places enable applications with appropriate read or write permissions to interact with map feature objects. For more information, see [Working with the Places API in Microsoft Graph](/graph/api/resources/places-api-overview?view=graph-rest-beta&preserve-view=true#map-feature-types).
+- Use the [checkInClaim](/graph/api/resources/checkinclaim?view=graph-rest-beta&preserve-view=true) resource to represent the check-in status of an Outlook calendar [event](/graph/api/resources/event?view=graph-rest-beta&preserve-view=true) booked at a place. For more information see, [Create checkInClaim](/graph/api/place-post-checkins?view=graph-rest-beta&preserve-view=true) and [Get checkInClaim](/graph/api/checkinclaim-get?view=graph-rest-beta&preserve-view=true).
+
 ### Device and app management | Cloud PC
 
 - Added `reserve` as a supported value for the **provisioningType** property of the [cloudPC](/graph/api/resources/cloudpc?view=graph-rest-beta&preserve-view=true) and [cloudPcServicePlan](/graph/api/resources/cloudpcserviceplan?view=graph-rest-beta&preserve-view=true).
 - Use the **createdBy**, **createdDateTime**, **lastModifiedBy**, and **lastModifiedDateTime** properties to determine when and by whom a [cloudPcProvisioningPolicy](/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-beta&preserve-view=true) was created or modified.
+- Added the `cloudPcUserSettingsPersistenceUsageThreshold`, `cloudPcDeprovisionedThreshold`, and `cloudPcReserveDeprovisionFailedThreshold` as supported values for the **conditionCategory** property of [ruleCondition](/graph/api/resources/devicemanagement-rulecondition?view=graph-rest-beta&preserve-view=true).
+- Added the `cloudPcUserSettingsPersistenceScenario` and `cloudPcDeprovisionFailedScenario` as supported values for the **alertRuleTemplate** properties of [alertRecord](/graph/api/resources/devicemanagement-alertrecord?view=graph-rest-beta&preserve-view=true) and [alertRule](/graph/api/resources/devicemanagement-alertrule?view=graph-rest-beta&preserve-view=true).
+- Use the **provisioningSourceType** property on [cloudPcUserSetting](/graph/api/resources/cloudpcusersetting?view=graph-rest-beta&preserve-view=true) to indicate the provisioning source of the Cloud PC prepared for an end user.
+- Use the **groupDetail** property on [cloudPC](/graph/api/resources/cloudpc?view=graph-rest-beta&preserve-view=true) to get the Microsoft Entra group details associated with a Reserve Cloud PC assignment.
+- Use the **userDetail** property on [cloudPC](/graph/api/resources/cloudpc?view=graph-rest-beta&preserve-view=true) to get the Microsoft Entra user details associated with a Reserve Cloud PC assignment.
 
 ### Education
 
@@ -100,22 +104,19 @@ Added a note to the **artifactCount** property of the [granularMailboxRestoreArt
 
 ### Files
 
-Defined the following endpoints as supported for the [driveItem: discardCheckout](/graph/api/driveitem-discardcheckout?view=graph-rest-beta&preserve-view=true) API:
-- `/drives/{driveId}/items/{itemId}/discardCheckout`
-- `/groups/{groupId}/drive/items/{itemId}/discardCheckout`
-- `/me/drive/items/{item-id}/discardCheckout`
-- `/sites/{siteId}/drive/items/{itemId}/discardCheckout`
-- `/users/{userId}/drive/items/{itemId}/discardCheckout`
+- The new SharePoint Embedded migration API enables you to programmatically schedule [SharePoint migration jobs](/graph/api/resources/sharepointmigrationjob?view=graph-rest-beta&preserve-view=true) for bulk-migrating content from intermediary Azure blob storage containers to the target [fileStorageContainer](/graph/api/resources/filestoragecontainer?view=graph-rest-beta&preserve-view=true).
+- Defined the following endpoints as supported for the [driveItem: discardCheckout](/graph/api/driveitem-discardcheckout?view=graph-rest-beta&preserve-view=true) API:
+  - `/drives/{driveId}/items/{itemId}/discardCheckout`
+  - `/groups/{groupId}/drive/items/{itemId}/discardCheckout`
+  - `/me/drive/items/{item-id}/discardCheckout`
+  - `/sites/{siteId}/drive/items/{itemId}/discardCheckout`
+  - `/users/{userId}/drive/items/{itemId}/discardCheckout`
 
-### Calendars | Places
+### Teamwork and communications | Administration
 
-- The new map APIs in Places enable applications with appropriate read or write permissions to interact with map feature objects. For more information, see [Working with the Places API in Microsoft Graph](/graph/api/resources/places-api-overview?view=graph-rest-beta&preserve-view=true#map-feature-types).
-- Use the [checkInClaim](/graph/api/resources/checkinclaim?view=graph-rest-beta&preserve-view=true) resource to represent the check-in status of an Outlook calendar [event](/graph/api/resources/event?view=graph-rest-beta&preserve-view=true) booked at a place. For more information see, [Create checkInClaim](/graph/api/place-post-checkins?view=graph-rest-beta&preserve-view=true) and [Get checkInClaim](/graph/api/checkinclaim-get?view=graph-rest-beta&preserve-view=true).
-
-### Device and app management | Cloud PC
-
-- Use the **groupDetail** property on [cloudPC](/graph/api/resources/cloudpc?view=graph-rest-beta&preserve-view=true) to get the Microsoft Entra group details associated with a Reserve Cloud PC assignment.
-- Use the **userDetail** property on [cloudPC](/graph/api/resources/cloudpc?view=graph-rest-beta&preserve-view=true) to get the Microsoft Entra user details associated with a Reserve Cloud PC assignment.
+- [Get the policy ID](/graph/api/teamsadministration-teamspolicyassignment-getpolicyid?view=graph-rest-beta&preserve-view=true) for a given policy name and policy type within Teams administration.
+- [Assign a Teams policy](/graph/api/teamsadministration-teamspolicyuserassignment-assign?view=graph-rest-beta&preserve-view=true) to a user using the user ID, policy type, and policy ID.
+- [Unassign a Teams policy](/graph/api/teamsadministration-teamspolicyuserassignment-unassign?view=graph-rest-beta&preserve-view=true) from a user using the user ID and policy type.
 
 
 ### Teamwork and communications | Administration

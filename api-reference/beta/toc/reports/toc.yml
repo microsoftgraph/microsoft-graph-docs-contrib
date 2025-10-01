@@ -334,6 +334,12 @@ items:
     items:
     - name: Overview
       href: ../../resources/azure-ad-auditlog-overview.md
+    - name: Audit activity type
+      items:
+      - name: Audit activity type
+        href: ../../resources/auditactivitytype.md
+      - name: List
+        href: ../../api/auditlogroot-list-auditactivitytypes.md
     - name: Custom security attribute audit (preview)
       items:
       - name: Custom security attribute audit (preview)
@@ -378,6 +384,28 @@ items:
         href: ../../api/signin-confirmsafe.md
       - name: Dismiss
         href: ../../api/signin-dismiss.md
+    - name: Sign in events activity
+      items:
+      - name: Sign in events activity
+        href: ../../resources/signineventsactivity.md
+      - name: List
+        href: ../../api/auditlogroot-list-signineventssummary.md
+    - name: Sign in events app activity
+      items:
+      - name: Sign in events app activity
+        href: ../../resources/signineventsappactivity.md
+      - name: List
+        href: ../../api/auditlogroot-list-signineventsappsummary.md
+    - name: Summarized sign in
+      items:
+      - name: Summarized sign in
+        href: ../../resources/summarizedsignin.md
+      - name: Get summarized MSI sign-ins
+        href: ../../api/auditlogroot-getsummarizedmsisignins.md
+      - name: Get summarized non-interactive sign-ins
+        href: ../../api/auditlogroot-getsummarizednoninteractivesignins.md
+      - name: Get summarized service principal sign-ins
+        href: ../../api/auditlogroot-getsummarizedserviceprincipalsignins.md
 - name: Microsoft 365 monitoring reports (preview)
   items:
   - name: Overview
