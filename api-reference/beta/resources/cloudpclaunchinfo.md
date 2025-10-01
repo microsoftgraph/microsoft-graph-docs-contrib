@@ -1,5 +1,5 @@
 ---
-title: "cloudPcLaunchInfo resource type"
+title: "cloudPcLaunchInfo resource type (deprecated)"
 description: "Contains the information to connect a Cloud PC."
 author: "andrewku0409"
 ms.localizationpriority: medium
@@ -8,13 +8,16 @@ doc_type: resourcePageType
 ms.date: 07/22/2024
 ---
 
-# cloudPcLaunchInfo resource type
+# cloudPcLaunchInfo resource type (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Contains the information to connect a [cloudPC](../resources/cloudpc.md).
+
+> [!CAUTION]
+> The **cloudPcLaunchInfo** resource is deprecated and will stop returning data on October 30, 2026. Going forward, use the [cloudPcLaunchDetail](../resources/cloudpclaunchdetail.md) API.
 
 ## Properties
 |Property|Type|Description|
