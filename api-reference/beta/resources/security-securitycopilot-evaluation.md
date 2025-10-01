@@ -4,7 +4,7 @@ description: "Security Copilot Evaluation Resource Type"
 author: "spunukol"
 ms.date: 07/17/2025
 ms.localizationpriority: medium
-ms.subservice: "security.securitycopilot"
+ms.subservice: "security-copilot"
 doc_type: resourcePageType
 ---
 
