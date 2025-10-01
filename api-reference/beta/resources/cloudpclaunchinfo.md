@@ -14,10 +14,10 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Contains the information to connect a [cloudPC](../resources/cloudpc.md).
-
 > [!CAUTION]
 > The **cloudPcLaunchInfo** resource is deprecated and will stop returning data on October 30, 2026. Going forward, use the [cloudPcLaunchDetail](../resources/cloudpclaunchdetail.md) API.
+
+Contains the information to connect a [cloudPC](../resources/cloudpc.md).
 
 ## Properties
 |Property|Type|Description|
