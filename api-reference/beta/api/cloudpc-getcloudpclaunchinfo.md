@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 > [!CAUTION]
-> This API is deprecated and will stop returning data on October 30, 2026. Going forward, use the [retrieveCloudPcLaunchDetail](../api/cloudpc-retrievecloudpclaunchdetail) API.
+> This API is deprecated and will stop returning data on October 30, 2026. Going forward, use the [retrieveCloudPcLaunchDetail](../api/cloudpc-retrievecloudpclaunchdetail.md) API.
 
 Get the [cloudPCLaunchInfo](../resources/cloudpclaunchinfo.md) for a specific [cloudPC](../resources/cloudpc.md) that belongs to the current signed-in user.
 
