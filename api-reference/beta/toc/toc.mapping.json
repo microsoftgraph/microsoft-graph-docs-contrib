@@ -2509,11 +2509,15 @@
               "overview": "../../resources/azure-ad-auditlog-overview.md",
               "shouldSort": true,
               "resources": [
+                "auditActivityType",
                 "customSecurityAttributeAudit",
                 "directoryAudit",
                 "provisioningObjectSummary",
                 "selfServiceSignUp",
-                "signIn"
+                "signIn",
+                "signInEventsActivity",
+                "signInEventsAppActivity",
+                "summarizedSignIn"
               ]
             }
           ]
