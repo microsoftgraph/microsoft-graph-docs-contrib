@@ -1,6 +1,6 @@
 ---
 title: "cloudPcLaunchDetail resource type"
-description: "Contains the information to connect a Cloud PC."
+description: "Contains the details to connect a Cloud PC."
 author: "sentry-cy"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Contains the information to connect a [Cloud PC](../resources/cloudpc.md).
+Contains the details to connect a [Cloud PC](../resources/cloudpc.md).
 
 ## Properties
 |Property|Type|Description|
