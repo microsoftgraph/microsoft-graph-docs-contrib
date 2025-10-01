@@ -1,6 +1,6 @@
 ---
 title: "cloudPcFrontlineSharedDeviceDetail resource type"
-description: "Represents the Cloud PC device details associated with the frontline shared service plan, including the user's UPN and session start date/time."
+description: "Represents the Cloud PC device details associated with the frontline shared service plan, including the user's UPN and session start date and time."
 author: "yanghwai"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the Cloud PC device details associated with the frontline shared service plan, including the user's UPN and session start date/time.
+Represents the Cloud PC device details associated with the frontline shared service plan, including the user's UPN and session start date and time.
 
 ## Properties
 
