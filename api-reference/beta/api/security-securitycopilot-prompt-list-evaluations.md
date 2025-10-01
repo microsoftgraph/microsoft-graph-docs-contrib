@@ -22,10 +22,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "securitycopilot-permissions"
+  "name": "security-securitycopilot-prompt-list-evaluations-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/securitycopilot-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/security-securitycopilot-prompt-list-evaluations-permissions.md)]
 
 ## HTTP request
 

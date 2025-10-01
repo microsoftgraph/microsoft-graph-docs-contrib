@@ -22,10 +22,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "securitycopilot-permissions"
+  "name": "security-securitycopilot-session-update-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/securitycopilot-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/security-securitycopilot-session-update-permissions.md)]
 
 ## HTTP request
 
