@@ -23,7 +23,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "cloudPcLaunchInfo",
           "ChangeType": "Deprecation",
-          "Description": "Deprecated the [cloudPcLaunchInfo](https://learn.microsoft.com/en-us/graph/api/resources/cloudpclaunchinfo?view=graph-rest-beta) resource type. The **cloudPcLaunchInfo** resource is deprecated and will stop returning data on October 30, 2026. Going forward, use the [cloudPcLaunchDetail](../resources/cloudpclaunchdetail.md) API.",
+          "Description": "Deprecated the [cloudPcLaunchInfo](https://learn.microsoft.com/en-us/graph/api/resources/cloudpclaunchinfo?view=graph-rest-beta) resource type. The **cloudPcLaunchInfo** resource is deprecated and will stop returning data on October 30, 2026. Going forward, use the [cloudPcLaunchDetail](https://learn.microsoft.com/en-us/graph/api/resources/cloudpclaunchdetail?view=graph-rest-beta) API.",
           "Target": "cloudPC"
         },
         {
