@@ -4,6 +4,14 @@
       "ChangeList": [
         {
           "Id": "cb115cfe-1d16-48d9-8d7f-787fa53ddd8b",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "windows365SwitchCompatibilityFailureReasonType",
+          "ChangeType": "Addition",
+          "Description": "Added the **windows365SwitchCompatibilityFailureReasonType** enumeration type.",
+          "Target": "windows365SwitchCompatibilityFailureReasonType"
+        },
+        {
+          "Id": "cb115cfe-1d16-48d9-8d7f-787fa53ddd8b",
           "ApiChange": "Resource",
           "ChangedApiName": "cloudPcLaunchDetail",
           "ChangeType": "Addition",
