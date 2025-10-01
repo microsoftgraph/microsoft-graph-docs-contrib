@@ -1,5 +1,5 @@
 ---
-title: "end user settings resource type"
+title: "endUserSettings resource type"
 description: "Settings that control the end user experience for access package suggestions and resource discovery in Microsoft Entra entitlement management."
 ms.localizationpriority: medium
 author: "myra-ramdenbourg"
