@@ -39,7 +39,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getCloudPcLaunchInfo",
           "ChangeType": "Deprecation",
-          "Description": "Deprecated the [getCloudPcLaunchInfo](https://learn.microsoft.com/en-us/graph/api/cloudpc-getCloudPcLaunchInfo?view=graph-rest-beta) method from the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource.",
+          "Description": "Deprecated the [getCloudPcLaunchInfo](https://learn.microsoft.com/en-us/graph/api/cloudpc-getCloudPcLaunchInfo?view=graph-rest-beta) method of the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource. This API is deprecated and will stop returning data on October 30, 2026. Going forward, use the [retrieveCloudPcLaunchDetail](https://learn.microsoft.com/en-us/graph/api/cloudpc-retrievecloudpclaunchdetail?view=graph-rest-beta) API.",
           "Target": "cloudPC"
         }
       ],
