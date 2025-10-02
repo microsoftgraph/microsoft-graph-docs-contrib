@@ -2,7 +2,7 @@
 title: "accessPackageRequestApprovalStageCallbackConfiguration resource type"
 description: "Access Package callback settings that define how long Microsoft Entra ID can wait for a resume signal for the callout that it made to the logic app."
 author: "vikama-microsoft"
-ms.date: 07/02/2025
+ms.date: 09/29/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
@@ -12,9 +12,10 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+Callback settings that define how long Microsoft Entra ID can wait for a resume signal for the callout [accessPackageRequestApprovalStageCallbackConfiguration](../resources/accesspackagerequestapprovalstagecallbackconfiguration.md) that comes back from the logic app. Inherits from [customExtensionCallbackConfiguration](../resources/customextensioncallbackconfiguration.md).
 
-Callback settings that define how long Microsoft Entra ID can wait for a resume signal for the callout [assignmentRequestApprovalStageCallbackData](../resources/assignmentrequestapprovalstagecallbackdata.md) that comes back from the logic app. Inherits from [customExtensionCallbackConfiguration](../resources/customextensioncallbackconfiguration.md).
+
+Inherits from [customExtensionCallbackConfiguration](../resources/customextensioncallbackconfiguration.md).
 
 
 ## Properties
@@ -38,3 +39,4 @@ The following JSON representation shows the resource type.
   "timeoutDuration": "String (duration)"
 }
 ```
+
