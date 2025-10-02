@@ -3,6 +3,32 @@
     {
       "ChangeList": [
         {
+          "Id": "c9ae0ad0-1dca-4b56-958d-57e90927c64e",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "dependentResources",
+          "ChangeType": "Addition",
+          "Description": "Added the **dependentResources** relationship to the [educationAssignmentResource](https://learn.microsoft.com/en-us/graph/api/resources/educationAssignmentResource?view=graph-rest-1.0) resource.",
+          "Target": "educationAssignmentResource"
+        },
+        {
+          "Id": "c9ae0ad0-1dca-4b56-958d-57e90927c64e",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "dependentResources",
+          "ChangeType": "Addition",
+          "Description": "Added the **dependentResources** relationship to the [educationSubmissionResource](https://learn.microsoft.com/en-us/graph/api/resources/educationSubmissionResource?view=graph-rest-1.0) resource.",
+          "Target": "educationSubmissionResource"
+        }
+      ],
+      "Id": "c9ae0ad0-1dca-4b56-958d-57e90927c64e",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-09-25T00:49:01.4055573Z",
+      "WorkloadArea": "Education",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "d85eaadf-0b79-452e-9e3f-2e9a1fbfe91a",
           "ApiChange": "Relationship",
           "ChangedApiName": "dependentResources",
