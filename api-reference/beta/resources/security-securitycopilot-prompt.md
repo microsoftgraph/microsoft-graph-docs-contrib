@@ -41,7 +41,7 @@ Represents the resources related to the prompt resource.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|evaluations|[microsoft.graph.security.securityCopilot.evaluation](../resources/security-securitycopilot-evaluation.md) collection|Collection of evaluations
+|evaluations|[microsoft.graph.security.securityCopilot.evaluation](../resources/security-securitycopilot-evaluation.md) collection|Collection of evaluations|
 
 ## JSON representation
 The following JSON representation shows the resource type.
