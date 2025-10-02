@@ -1,5 +1,5 @@
 ---
-title: "Security Copilot session resource type"
+title: "session resource type"
 description: "Security Copilot session resource type"
 author: "spunukol"
 ms.date: 07/17/2025
@@ -8,7 +8,7 @@ ms.subservice: "security.securitycopilot"
 doc_type: resourcePageType
 ---
 
-# Security Copilot session resource type
+# session resource type
 
 Namespace: microsoft.graph.security.securityCopilot
 

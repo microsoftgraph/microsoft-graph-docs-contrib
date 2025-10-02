@@ -1,5 +1,5 @@
 ---
-title: "Security Copilot plugin resource type"
+title: "plugin resource type"
 description: "Security Copilot Plugin resource"
 author: "spunukol"
 ms.date: 07/17/2025
@@ -8,7 +8,7 @@ ms.subservice: "security.securitycopilot"
 doc_type: resourcePageType
 ---
 
-# Security Copilot plugin resource type
+# plugin resource type
 
 Namespace: microsoft.graph.security.securityCopilot
 

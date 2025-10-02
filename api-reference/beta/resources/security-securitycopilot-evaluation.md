@@ -1,5 +1,5 @@
 ---
-title: "Security Copilot evaluation resource type"
+title: "evaluation resource type"
 description: "Security Copilot Evaluation Resource Type"
 author: "spunukol"
 ms.date: 07/17/2025
@@ -8,7 +8,7 @@ ms.subservice: "security.securitycopilot"
 doc_type: resourcePageType
 ---
 
-# Security Copilot evaluation resource type
+# evaluation resource type
 
 Namespace: microsoft.graph.security.securityCopilot
 
@@ -23,6 +23,7 @@ Inherits from [entity](../resources/entity.md)
 |:---|:---|:---|
 |[List](../api/security-securitycopilot-prompt-list-evaluations.md)|[microsoft.graph.security.securityCopilot.evaluation](../resources/security-securitycopilot-evaluation.md) collection|Get a list of the evaluation objects and their properties.|
 |[Create](../api/security-securitycopilot-prompt-post-evaluations.md)|[microsoft.graph.security.securityCopilot.evaluation](../resources/security-securitycopilot-evaluation.md)|Create a new evaluation object.|
+|[Get](../api/security-securitycopilot-evaluation-get.md)|[microsoft.graph.security.securityCopilot.evaluation](../resources/security-securitycopilot-evaluation.md)|Read the properties and relationships of [microsoft.graph.security.securityCopilot.evaluation](../resources/security-securitycopilot-evaluation.md) object.|
 
 ## Properties
 |Property|Type|Description|
