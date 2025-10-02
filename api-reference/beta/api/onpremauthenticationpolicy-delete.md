@@ -1,5 +1,5 @@
 ---
-title: "Delete an onPremAuthenticationPolicy"
+title: "Delete onPremAuthenticationPolicy"
 description: "Delete onPremAuthenticationPolicy."
 ms.localizationpriority: medium
 author: "maheshwaria"
@@ -8,7 +8,7 @@ doc_type: "apiPageType"
 ms.date: 08/15/2025
 ---
 
-# Delete an onPremAuthenticationPolicy
+# Delete onPremAuthenticationPolicy
 
 Namespace: microsoft.graph
 
@@ -24,7 +24,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "onpremauthenticationpolicy-delete-permissions"
+  "name": "onpremauthenticationpolicy-update-permissions"
 }
 -->
 [!INCLUDE [permissions-table](../includes/permissions/onpremauthenticationpolicy-update-permissions.md)]
