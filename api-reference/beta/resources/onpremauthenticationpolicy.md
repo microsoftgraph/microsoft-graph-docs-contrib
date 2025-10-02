@@ -22,8 +22,8 @@ Inherits from [stsPolicy](../resources/stspolicy.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/onpremauthenticationpolicy-list.md)|[onPremAuthenticationPolicy](../resources/onpremauthenticationpolicy.md) collection|Get a list of the onPremAuthenticationPolicy objects and their properties.|
-|[Create](../api/onpremauthenticationpolicy-create.md)|[onPremAuthenticationPolicy](../resources/onpremauthenticationpolicy.md)|Create a new onPremAuthenticationPolicy object.|
+|[List](../api/policyroot-list-onpremauthenticationpolicies.md)|[onPremAuthenticationPolicy](../resources/onpremauthenticationpolicy.md) collection|Get a list of the onPremAuthenticationPolicy objects and their properties.|
+|[Create](../api/policyroot-post-onpremauthenticationpolicies.md)|[onPremAuthenticationPolicy](../resources/onpremauthenticationpolicy.md)|Create a new onPremAuthenticationPolicy object.|
 |[Get](../api/onpremauthenticationpolicy-get.md)|[onPremAuthenticationPolicy](../resources/onpremauthenticationpolicy.md)|Read the properties and relationships of [onPremAuthenticationPolicy](../resources/onpremauthenticationpolicy.md) object.|
 |[Update](../api/onpremauthenticationpolicy-update.md)|[onPremAuthenticationPolicy](../resources/onpremauthenticationpolicy.md)|Update the properties of an onPremAuthenticationPolicy object.|
 |[Delete](../api/onpremauthenticationpolicy-delete.md)|None|Delete an onPremAuthenticationPolicy object.|
