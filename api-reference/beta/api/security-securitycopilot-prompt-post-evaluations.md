@@ -46,14 +46,9 @@ POST /security/securityCopilot/workspaces/{workspaceId}/sessions/{sessionId}/pro
 
 ## Request body
 
-In the request body, supply a JSON representation of the [microsoft.graph.security.securityCopilot.evaluation](../resources/security-securitycopilot-evaluation.md) object.
-
-You can specify the following properties when creating a **evaluation**.
-
-**NOTE** The first evaluation here for any prompts is an empty content.
-
-|Property|Type|Description|
-|:---|:---|:---|
+In the request body, supply an empty JSON. 
+<br>
+There are no properties required when creating an **evaluation**. 
 
 
 
