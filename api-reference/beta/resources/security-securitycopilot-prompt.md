@@ -31,7 +31,7 @@ Represents the resources related to the prompt resource.
 |:---|:---|:---|
 |content|String|Input content to the prompt|
 |createdDateTime|DateTimeOffset|Created time|
-|id|String|Prompt identifier|
+|id|String|Represents the unique ID of the Security Copilot prompt. Inherits from [entity](../resources/entity.md)|
 |inputs|[microsoft.graph.Dictionary](../resources/dictionary.md)|Future value|
 |lastModifiedDateTime|DateTimeOffset|Last modified time|
 |skillInputDescriptors|[microsoft.graph.security.securityCopilot.skillInputDescriptor](../resources/security-securitycopilot-skillinputdescriptor.md) collection|Skill Input descriptor|
@@ -41,7 +41,7 @@ Represents the resources related to the prompt resource.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|evaluations|[microsoft.graph.security.securityCopilot.evaluation](../resources/security-securitycopilot-evaluation.md) collection|Evaluations collection
+|evaluations|[microsoft.graph.security.securityCopilot.evaluation](../resources/security-securitycopilot-evaluation.md) collection|Collection of evaluations
 
 ## JSON representation
 The following JSON representation shows the resource type.

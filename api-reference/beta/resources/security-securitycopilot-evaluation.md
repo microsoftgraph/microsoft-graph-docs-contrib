@@ -31,7 +31,7 @@ Inherits from [entity](../resources/entity.md)
 |completedDateTime|DateTimeOffset|Evaluation completion time|
 |createdDateTime|DateTimeOffset|Evaluation created time|
 |executionCount|Int64|Evaluation execution count|
-|id|String|Unique GUID for evaluation. Inherits from [entity](../resources/entity.md)|
+|id|String|Represents the unique ID of the Security Copilot evaluation. Inherits from [entity](../resources/entity.md)|
 |isCancelled|Boolean|Evaluation cancellation status|
 |lastModifiedDateTime|DateTimeOffset|Evaluation modified time|
 |result|[microsoft.graph.security.securityCopilot.evaluationResult](../resources/security-securitycopilot-evaluationresult.md)|Evaluation results collection.|

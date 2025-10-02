@@ -32,7 +32,7 @@ Represents the resources related to the Security Copilot session resource.
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|Created time of the session (UTC)|
 |displayName|String|Display name for the session|
-|id|String|Unique identifier for the session |
+|id|String|Represents the unique ID of the Security Copilot session. Inherits from [entity](../resources/entity.md) |
 |lastModifiedDateTime|DateTimeOffset|Last modified time of the session (UTC)|
 
 ## Relationships

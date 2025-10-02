@@ -26,12 +26,12 @@ Represents the resources related to the Security Copilot plugin resource.
 |Property|Type|Description|
 |:---|:---|:---|
 |authorization|[microsoft.graph.security.securityCopilot.pluginAuth](../resources/security-securitycopilot-pluginauth.md)|Authorization for the plugin|
-|catalogScope|microsoft.graph.security.securitycopilot.pluginCatalogScope|Lists the scope available for the plugin. The possible values are: `none`, `user`, `workspace`, `tenant`, `global`, `geoGlobal`, `userWorkspace`, `unknownFutureValue`.|
+|catalogScope|microsoft.graph.security.securitycopilot.pluginCatalogScope|Lists the scope available for the use of the plugin. The possible values are: `none`, `user`, `workspace`, `tenant`, `global`, `geoGlobal`, `userWorkspace`, `unknownFutureValue`.|
 |category|microsoft.graph.security.securitycopilot.pluginCategory|Category of the plugin. The possible values are: `hidden`, `microsoft`, `microsoftConnectors`, `other`, `web`, `testing`, `plugin`, `unknownFutureValue`.|
 |description|String|Brief description of the plugin|
 |displayName|String|Display name of the plugin|
-|isEnabled|Boolean|Displays whether the plugin is enabled for use within the scope|
-|name|String|Name of plugin. This is unique for the scope|
+|isEnabled|Boolean|Displays whether the plugin is enabled for use within the catalogScope|
+|name|String|Represents the name of the plugin. This value is unique to each catalogScope|
 |previewState|microsoft.graph.security.securitycopilot.pluginPreviewStates|Describes the use and availability of the plugin. The possible values are: `ga`, `public`, `private`, `unknownFutureValue`.|
 |settings|[microsoft.graph.security.securityCopilot.pluginSetting](../resources/security-securitycopilot-pluginsetting.md) collection|Settings for the plugin|
 |supportedAuthTypes|microsoft.graph.security.securitycopilot.pluginAuthTypes|Authorization types used for the plugin. The possible values are: `none`, `basic`, `aPIKey`, `oAuthAuthorizationCodeFlow`, `oAuthClientCredentialsFlow`, `aad`, `serviceHttp`, `aadDelegated`, `oAuthPasswordGrantFlow`, `unknownFutureValue`.|

@@ -1,6 +1,6 @@
 ---
 title: "skillInputDescriptor resource type"
-description: "*Security Copilot Skill Input Descriptor"
+description: "Security Copilot Skill Input Descriptor"
 author: "spunukol"
 ms.date: 07/17/2025
 ms.localizationpriority: medium
@@ -16,7 +16,7 @@ Namespace: microsoft.graph.security.securityCopilot
 
 Represents the resources related to the skillInput Descriptor resource.
 
-**NOTE** Currently unsupported in beta.
+**NOTE** This is currently unsupported.
 
 Inherits from [microsoft.graph.security.securityCopilot.skillVariableDescriptor](../resources/security-securitycopilot-skillvariabledescriptor.md).
 
