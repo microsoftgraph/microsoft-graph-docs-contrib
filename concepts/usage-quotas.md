@@ -13,7 +13,7 @@ ms.date: 05/14/2025
 # Microsoft Graph API usage quotas (preview)
 
 > [!IMPORTANT]
-> This documentation is preliminary and subject to change as more capabilities are released.
+> This documentation is preliminary and subject to change as capabilities are released.
 
 Some areas of Microsoft Graph enforce usage quotas. Usage quotas apply at the tenant level and are based on the number of user licenses active for the relevant Microsoft Graph functionality. By default, an individual application can use up to 20% of the tenant's total quota before being throttled. This application quota prevents any single application from consuming all of the tenant's resources unexpectedly.
 
@@ -51,10 +51,25 @@ The following table lists the quota values for each service area.
 | Microsoft Teams Messaging | 300 API requests / day |
 | Microsoft Teams Presence | 2000 API requests / day |
 
-### Default safe application quota
-
-By default, an application can consume up to 20% of the tenant's total quota. This default protects the tenant from an application consuming all of a tenant's resources unexpectedly. An application can be excluded from this default in order to allow it to use up to the full tenant quota. Because excluding too many applications at once might cause contention for the tenant's resources, it's important to only exclude applications that you know need the extra capacity to meet their goals.
-
 ## Managing quota for a tenant
 
 Users with the Global Reader or a higher privileged admin role can utilize the Microsoft Graph [usage report API](/graph/api/reportroot-getapiusage) to see how the tenant's quota is being used. The usage report API provides visibility into both tenant-level and individual application usage.
+
+## Going beyond your quota
+
+Microsoft 365 APIs Extended Usage allows you to exceed the daily usage quota by paying for the costs associated with additional API usage. You can enable Microsoft 365 APIs Extended Usage in the Microsoft 365 admin center.
+The following table lists the current charges for each service area.
+
+| Service Area | Cost per 1,000 Requests |
+| :------------ | :------------------------ |
+| Microsoft Exchange | $0.002 (USD) |
+| Microsoft Teams Calling | $0.05 (USD) |
+| Microsoft Teams Messaging | $0.01 (USD) |
+| Microsoft Teams Presence | $0.01 (USD) |
+
+## Default safe application quota
+
+[!IMPORTANT]
+> This feature is currently under development. This documentation is included here so that the full view of how the feature will work long term is visible. Feedback is welcome on the preliminary documentation.
+
+By default, an application can consume up to 20% of the tenant's total quota. This default protects the tenant from an application consuming all of a tenant's resources unexpectedly. An application can be excluded from this default in order to allow it to use up to the full tenant quota. Because excluding too many applications at once might cause contention for the tenant's resources, it's important to only exclude applications that you know need the extra capacity to meet their goals.
