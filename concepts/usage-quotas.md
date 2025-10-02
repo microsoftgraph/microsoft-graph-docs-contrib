@@ -6,7 +6,7 @@ author: Jeremyke
 ms.author: jeremyke
 ms.subservice: non-product-specific
 ms.topic: overview
-ms.date: 05/14/2025
+ms.date: 10/08/2025
 #Customer intent: As a developer integrating with Microsoft Graph, or a tenant administrator managing applications in my tenant, I want to understand tenant level usage quotas applied in Microsoft Graph.
 ---
 
@@ -57,7 +57,7 @@ Users with the Global Reader or a higher privileged admin role can utilize the M
 
 ## Going beyond your quota
 
-Microsoft 365 APIs Extended Usage allows you to exceed the daily usage quota by paying for the costs associated with additional API usage. You can enable Microsoft 365 APIs Extended Usage in the Microsoft 365 admin center.
+Microsoft 365 APIs Extended Usage allows you to exceed the daily usage quota by paying for the costs associated with more API usage. You can enable Microsoft 365 APIs Extended Usage in the Microsoft 365 admin center.
 The following table lists the current charges for each service area.
 
 | Service Area | Cost per 1,000 Requests |
