@@ -30,7 +30,7 @@ None.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|workspaces|[workspace](../resources/security.securitycopilot-workspace.md) collection|References the workspace object|
+|workspaces|[workspace](../resources/security-securitycopilot-workspace.md) collection|References the workspace object|
 
 ## JSON representation
 The following JSON representation shows the resource type.
