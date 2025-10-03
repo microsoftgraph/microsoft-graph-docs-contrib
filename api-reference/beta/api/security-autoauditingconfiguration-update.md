@@ -36,7 +36,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-PATCH /security/identities/autoAuditingConfiguration
+POST /security/identities/settings/autoAuditingConfiguration
 ```
 
 ## Request headers
@@ -68,7 +68,7 @@ The following example shows a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/security/identities/autoAuditingConfiguration
+POST https://graph.microsoft.com/beta/security/identities/settings/autoAuditingConfiguration
 Content-Type: application/json
 
 {
