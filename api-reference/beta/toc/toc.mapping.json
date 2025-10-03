@@ -2857,8 +2857,7 @@
             "microsoft.graph.security.securitycopilot.plugin",
             "microsoft.graph.security.securitycopilot.prompt",
             "microsoft.graph.security.securitycopilot.session",
-            "microsoft.graph.security.securitycopilot.workspace",
-            "microsoft.graph.security.securitycopilot.securityCopilot"
+            "microsoft.graph.security.securitycopilot.workspace"
           ]
         },
         {
