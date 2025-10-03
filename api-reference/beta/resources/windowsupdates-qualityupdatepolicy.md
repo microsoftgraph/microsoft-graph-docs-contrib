@@ -35,7 +35,7 @@ Inherits from [microsoft.graph.windowsUpdates.policy](../resources/windowsupdate
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|approvalRules|[microsoft.graph.windowsUpdates.approvalRule](../resources/windowsupdates-approvalrule.md) collection| The policy's approved rule to determine which published content matches the rule on an ongoing basis. Inherited from [microsoft.graph.windowsUpdates.policy](../resources/windowsupdates-policy.md).|
+|approvalRules|[microsoft.graph.windowsUpdates.approvalRule](../resources/windowsupdates-contentapprovalrule.md) collection| The policy's approved rule to determine which published content matches the rule on an ongoing basis. Inherited from [microsoft.graph.windowsUpdates.policy](../resources/windowsupdates-policy.md).|
 |createdDateTime|DateTimeOffset|  The date and time the Quality Update policy is created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, `2014 is 2014-01-01T00:00:00Z`. Read-only. Inherited from [microsoft.graph.windowsUpdates.policy](../resources/windowsupdates-policy.md).|
 |description|String| The Quality Update policy description. Inherited from [microsoft.graph.windowsUpdates.policy](../resources/windowsupdates-policy.md).|
 |displayName|String| The Quality Update policy display name. Inherited from [microsoft.graph.windowsUpdates.policy](../resources/windowsupdates-policy.md).|
