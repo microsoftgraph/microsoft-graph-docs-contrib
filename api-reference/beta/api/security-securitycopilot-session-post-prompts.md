@@ -48,15 +48,12 @@ POST /security/securityCopilot/workspaces/{workspaceId}/sessions/{sessionId}/pro
 
 In the request body, supply a JSON representation of the [microsoft.graph.security.securityCopilot.prompt](../resources/security-securitycopilot-prompt.md) object.
 
-<br>You can specify the following properties when creating a **prompt**.  
-
-**NOTE** For beta, the only property type supported is `prompt` combined with content.
+You can specify the following properties when creating a **prompt**.  
 
 |Property|Type|Description|
 |:---|:---|:---|
-|type|microsoft.graph.security.securitycopilot.promptType|The type of input prompts. Supported value is `prompt`. Required. Other possible values (unsupported) are: `unknown`, `context`, `skill`, `feedback`, `unknownFutureValue`. |
+|type|microsoft.graph.security.securitycopilot.promptType|The type of input prompts. The possible values are: `unknown`, `context`, `prompt`, `skill`, `feedback`, `unknownFutureValue`. **Only `prompt` is currently supported.** |
 |content|String|Input text when used with type `prompt` for evaluation. Required for AI evaluation.|
-
 
 
 ## Response

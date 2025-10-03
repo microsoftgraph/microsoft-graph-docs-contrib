@@ -1,6 +1,6 @@
 ---
 title: "Get session"
-description: "Read the properties and relationships of microsoft.graph.security.securityCopilot.session object."
+description: "Get the details of a microsoft.graph.security.securityCopilot.session object in Security Copilot."
 author: "spunukol"
 ms.date: 07/17/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security.securityCopilot
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of [microsoft.graph.security.securityCopilot.session](../resources/security-securitycopilot-session.md) object.
+Get the details of a [microsoft.graph.security.securityCopilot.session](../resources/security-securitycopilot-session.md) object in Security Copilot.
 
 ## Permissions
 
@@ -39,7 +39,7 @@ GET /security/securityCopilot/workspaces/{workspaceId}/sessions/{sessionId}
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 

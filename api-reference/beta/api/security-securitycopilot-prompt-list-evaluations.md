@@ -39,7 +39,7 @@ GET /security/securityCopilot/workspaces/{workspaceId}/sessions/{sessionId}/prom
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+TThis method supports the `$count`, `$filter`, `$select` and `$top` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 

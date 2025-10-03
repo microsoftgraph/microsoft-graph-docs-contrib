@@ -39,7 +39,7 @@ GET /security/securityCopilot/workspaces/{workspaceId}/sessions
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$count`, `$filter`, `$select` and `$top` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -85,15 +85,23 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.security.securityCopilot.session",
-      "id": "12ac07f0-ccc3-0448-1215-6fad6e44263a",
-      "displayName": "String",
-      "lastModifiedDateTime": "String (timestamp)",
-      "createdDateTime": "String (timestamp)"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#security/securityCopilot/workspaces('default')/sessions",
+    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET security/securityCopilot/workspaces('<key>')/sessions?$select=createdDateTime,displayName",
+    "value": [
+        {
+            "id": "8e95c36e-c9bd-4e14-8317-3cd4332e1e3b",
+            "createdDateTime": "2025-09-17T19:23:41.1506601Z",
+            "lastModifiedDateTime": "2025-09-17T19:28:21.2902705Z",
+            "displayName": "who am i"
+        },
+        {
+            "id": "7ab1e59b-6726-43dd-8493-6b1ef3214da6",
+            "createdDateTime": "2025-09-17T18:11:56.8117974Z",
+            "lastModifiedDateTime": "2025-09-17T19:22:10.9554612Z",
+            "displayName": "who am i"
+        },
+    ]
 }
+
 ```
 

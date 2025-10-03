@@ -1,6 +1,6 @@
 ---
 title: "List prompt objects"
-description: "Get a list of the prompt objects and their properties."
+description: "Get a list of the prompts in a Security Copilot session."
 author: "spunukol"
 ms.date: 07/17/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security.securityCopilot
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the prompt objects and their properties.
+Get a list of the [prompts](../resources/security-securitycopilot-prompt.md) in a Security Copilot session.
 
 ## Permissions
 
@@ -39,7 +39,7 @@ GET /security/securityCopilot/workspaces/{workspaceId}/sessions/{sessionId}/prom
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$count`, `$filter`, `$select` and `$top` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 

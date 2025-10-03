@@ -46,11 +46,7 @@ POST /security/securityCopilot/workspaces/{workspaceId}/sessions/{sessionId}/pro
 
 ## Request body
 
-In the request body, supply an empty JSON. 
-<br>
-There are no properties required when creating an **evaluation**. 
-
-
+In the request body, supply an empty JSON object. No properties are required when creating an **evaluation**. 
 
 
 ## Response

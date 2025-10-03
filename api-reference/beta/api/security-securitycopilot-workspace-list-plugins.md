@@ -39,7 +39,7 @@ GET /security/securityCopilot/workspaces/{workspaceId}/plugins
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$count`, `$filter`, `$select` and `$top`  OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -88,24 +88,20 @@ Content-Type: application/json
   "value": [
     {
       "@odata.type": "#microsoft.graph.security.securityCopilot.plugin",
-      "name": "5d6c25b4-c6d2-12e1-0310-ec5c6e64d029",
-      "description": "String",
-      "displayName": "String",
-      "category": "String",
-      "catalogScope": "String",
-      "previewState": "String",
-      "isEnabled": "Boolean",
-      "settings": [
-        {
-          "@odata.type": "microsoft.graph.security.securityCopilot.pluginSetting"
+      {
+            "name": "Signs of malicious activity",
+            "displayName": "My security KQL: Signs of malicious activity",
+            "description": "Skills that look up signs of malicious activity in my system that can create queries locating for individual malicious activity and then create and run more sophisticated queries to find devices that require immediate attention.",
+            "category": "plugin",
+            "catalogScope": "workspace",
+            "previewState": "ga",
+            "isEnabled": false,
+            "authorization": null,
+            "settings": []
         }
-      ],
-      "authorization": {
-        "@odata.type": "microsoft.graph.security.securityCopilot.pluginAuth"
-      },
-      "supportedAuthTypes": "String"
     }
   ]
 }
+
 ```
 
