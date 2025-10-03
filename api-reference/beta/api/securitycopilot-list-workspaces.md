@@ -89,7 +89,7 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.security.securityCopilot.workspace",
       "id": "17aafe23-ab95-3b37-9546-56dec5ac0218",
-      "displayName": "String"
+      "displayName": "SecurityCopilot_Workspace"
     }
   ]
 }

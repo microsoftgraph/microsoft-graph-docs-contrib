@@ -1,6 +1,6 @@
 ---
 title: "Create session"
-description: "Create a new session object."
+description: "Create a new session in Security Copilot."
 author: "spunukol"
 ms.date: 07/17/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security.securityCopilot
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new session object.
+Create a new [session](../resources/security-securitycopilot-session.md) in Security Copilot.
 
 ## Permissions
 
@@ -52,7 +52,7 @@ You can specify the following properties when creating a **session**.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|Display Name of the session. Optional.|
+|displayName|String|Display Name of the session. Required.|
 
 
 
@@ -77,7 +77,7 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.security.securityCopilot.session",
-  "displayName": "String"
+  "displayName": "Who am I"
 }
 ```
 
@@ -97,11 +97,11 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.security.securityCopilot.session",
-  "id": "12ac07f0-ccc3-0448-1215-6fad6e44263a",
-  "displayName": "String",
-  "lastModifiedDateTime": "String (timestamp)",
-  "createdDateTime": "String (timestamp)"
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#security/securityCopilot/workspaces('default')/sessions/$entity",
+    "id": "71a8abb6-ce18-496c-a8d4-4d0f51986c3e",
+    "createdDateTime": "2025-09-17T01:03:14.07343Z",
+    "lastModifiedDateTime": "2025-09-17T01:03:14.07343Z",
+    "displayName": "Who am I"
 }
 ```
 

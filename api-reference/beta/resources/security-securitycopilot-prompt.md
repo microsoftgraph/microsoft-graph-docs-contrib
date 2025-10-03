@@ -32,7 +32,7 @@ Represents a prompt in a Security Copilot [session](../resources/security-securi
 |content|String|Input content to the prompt|
 |createdDateTime|DateTimeOffset|Created time|
 |id|String|Represents the unique ID of the Security Copilot prompt. Inherits from [entity](../resources/entity.md)|
-|inputs|[microsoft.graph.Dictionary](../resources/dictionary.md)|Future value|
+|inputs|[microsoft.graph.Dictionary](../resources/dictionary.md)|Not implemented.|
 |lastModifiedDateTime|DateTimeOffset|Last modified time|
 |skillInputDescriptors|[microsoft.graph.security.securityCopilot.skillInputDescriptor](../resources/security-securitycopilot-skillinputdescriptor.md) collection|Skill Input descriptor|
 |skillName|String|Skill Name|
