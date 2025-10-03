@@ -33,8 +33,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 
 ```http
-GET /planner/tasks/delta
-GET /me/planner/tasks/delta
+GET /planner/plans/{planId}/tasks/delta
+GET /me/planner/plans/{planId}/tasks/delta
 ```
 
 ## Query parameters
@@ -79,7 +79,7 @@ The following example shows a request.
 -->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/planner/tasks/delta
+GET https://graph.microsoft.com/beta/planner/plans/{planId}/tasks/delta
 ```
 
 # [C#](#tab/csharp)
@@ -246,7 +246,7 @@ The following example shows a request.
 -->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/me/planner/tasks/delta
+GET https://graph.microsoft.com/beta/me/planner/plans/{planId}/tasks/delta
 ```
 
 # [C#](#tab/csharp)
@@ -298,7 +298,7 @@ Content-Type: application/json
 
 {
   "@odata.context":"https://graph.microsoft.com/beta/$metadata#plannerTask",
-  "@odata.deltaLink": "https://graph.microsoft.com/beta/me/planner/tasks/delta?%24expand=details&%24deltatoken=0%257eaa6c4c81-656f-40e8-a2c5-60f4116fa9a4",
+  "@odata.deltaLink": "https://graph.microsoft.com/beta/me/planner/plans/{planId}/tasks/delta?%24expand=details&%24deltatoken=0%257eaa6c4c81-656f-40e8-a2c5-60f4116fa9a4",
   "value": [
     {
       "@odata.etag": "W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBASCc=\"",
