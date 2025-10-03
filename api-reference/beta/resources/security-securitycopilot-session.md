@@ -33,7 +33,7 @@ Represents a session in Security Copilot.
 |createdDateTime|DateTimeOffset|Created time of the session (UTC)|
 |displayName|String|Display name for the session|
 |id|String|Represents the unique ID of the Security Copilot session. Inherits from [entity](../resources/entity.md) |
-|lastModifiedDateTime|DateTimeOffset|Last modified time of the session (UTC). This property is updated when there is a change to displayName.|
+|lastModifiedDateTime|DateTimeOffset|Last modified time of the session (UTC). Updated when displayName changes.|
 
 ## Relationships
 |Relationship|Type|Description|
