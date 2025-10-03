@@ -1,6 +1,6 @@
 ---
-title: "Create quality update applicable content objects"
-description: "Create a new applicableContent object."
+title: "Create quality update applicable content"
+description: "Create a new quality update applicable content object."
 author: "andredm7"
 ms.date: 10/08/2025
 ms.localizationpriority: medium

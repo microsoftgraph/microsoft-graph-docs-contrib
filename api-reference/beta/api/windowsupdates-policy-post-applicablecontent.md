@@ -1,6 +1,6 @@
 ---
-title: "Create applicableContent"
-description: "Create a new applicableContent object."
+title: "Create update applicable content"
+description: "Create a new update applicable content object."
 author: "andredm7"
 ms.date: 10/08/2025
 ms.localizationpriority: medium
@@ -8,7 +8,7 @@ ms.subservice: "windows-autopatch"
 doc_type: apiPageType
 ---
 
-# Create Applicable Content
+# Create new update aplicable content
 
 Namespace: microsoft.graph.windowsUpdates
 

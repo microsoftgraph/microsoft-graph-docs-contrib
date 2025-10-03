@@ -1,6 +1,6 @@
 ---
-title: "Create ring"
-description: "Create a new ring object."
+title: "Create quality update ring deployment"
+description: "Create a new quality update ring object."
 author: "andredm7"
 ms.date: 10/08/2025
 ms.localizationpriority: medium
@@ -8,7 +8,7 @@ ms.subservice: "windows-autopatch"
 doc_type: apiPageType
 ---
 
-# Create ring
+# Create quality update ring deployment object
 
 Namespace: microsoft.graph.windowsUpdates
 

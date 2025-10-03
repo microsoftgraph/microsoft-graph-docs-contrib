@@ -1,6 +1,6 @@
 ---
-title: "Delete policyApproval"
-description: "Delete a policy approval object."
+title: "Delete quality update policy approval"
+description: "Delete a quality update policy approval object."
 author: "andredm7"
 ms.date: 10/08/2025
 ms.localizationpriority: medium
@@ -8,7 +8,7 @@ ms.subservice: "windows-autopatch"
 doc_type: apiPageType
 ---
 
-# Delete an update policy approval
+# Delete Quality update policy approvals
 
 Namespace: microsoft.graph.windowsUpdates
 

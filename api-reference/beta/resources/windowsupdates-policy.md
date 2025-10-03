@@ -1,5 +1,5 @@
 ---
-title: "policy resource type"
+title: "Update deployment policy settings content"
 description: "Represents an entity that governs the update deployment settings content to an associated deployment audience which can be one or more Microsoft Entra groups."
 author: "andredm7"
 ms.date: 10/08/2025
@@ -8,7 +8,7 @@ ms.subservice: "windows-autopatch"
 doc_type: resourcePageType
 ---
 
-# policy resource type
+# Update policy deployment settings content type
 
 Namespace: microsoft.graph.windowsUpdates
 

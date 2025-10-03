@@ -1,6 +1,6 @@
 ---
-title: "Delete policyApproval"
-description: "Delete a policy approval object."
+title: "Delete update policy approval"
+description: "Delete update policy approval object."
 author: "andredm7"
 ms.date: 10/08/2025
 ms.localizationpriority: medium

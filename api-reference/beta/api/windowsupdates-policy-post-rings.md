@@ -1,6 +1,6 @@
 ---
 title: "Create update ring"
-description: "Create a new ring object."
+description: "Create a new update ring object."
 author: "andredm7"
 ms.date: 10/08/2025
 ms.localizationpriority: medium

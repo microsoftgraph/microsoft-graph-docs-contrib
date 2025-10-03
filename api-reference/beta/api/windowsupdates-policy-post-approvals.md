@@ -1,6 +1,6 @@
 ---
-title: "Create policyApproval"
-description: "Create a new policyApproval object."
+title: "Post update policy approval"
+description: "Create a new policy approval object."
 author: "andredm7"
 ms.date: 10/08/2025
 ms.localizationpriority: medium
@@ -8,7 +8,7 @@ ms.subservice: "windows-autopatch"
 doc_type: apiPageType
 ---
 
-# Create Policy Approval
+# Create update policy approval
 
 Namespace: microsoft.graph.windowsUpdates
 
