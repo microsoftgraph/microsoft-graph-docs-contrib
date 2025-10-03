@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security.securityCopilot
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a plugin in Security Copilot. For more information, see [Plugins in Microsoft Security Copilot](/copilot/security/plugin-overview).
+Represents a plugin in Security Copilot. For more information, see [Plugins in Microsoft Security Copilot](https://learn.microsoft.com/en-us/copilot/security/plugin-overview).
 
 
 ## Methods
