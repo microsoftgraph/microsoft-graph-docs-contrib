@@ -12,7 +12,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Get a list of the engagementRoleMember objects and their properties.
+Get a list of the [engagementRoleMember](../resources/engagementrolemember.md) objects and their properties.
 
 ## Permissions
 

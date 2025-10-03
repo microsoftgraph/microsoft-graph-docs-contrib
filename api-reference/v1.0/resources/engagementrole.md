@@ -26,7 +26,7 @@ Inherits from [entity](../resources/entity.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|The name of the role.|
-|id|String|The unique identifier of the role. Read-only. Inherits from [entity](../resources/entity.md)|
+|id|String|The unique identifier of the role. Read-only. Inherited from [entity](../resources/entity.md)|
 
 ## JSON representation
 The following JSON representation shows the resource type.

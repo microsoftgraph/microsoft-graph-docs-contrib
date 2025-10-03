@@ -12,7 +12,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Get a list of all the roles that can be assigned in Viva Engage.
+Get a list of all the [roles](../resources/engagementrole.md) that can be assigned in Viva Engage.
 
 ## Permissions
 
@@ -81,18 +81,17 @@ Content-Type: application/json
   "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#employeeExperience/roles",
   "value": [
     {
-            "id": "ec759127-089f-4f91-8dfc-03a30b51cb38",
-            "displayName": "Network Admin"
-        },
-        {
-            "id": "966b8ec4-6457-4f22-bd3c-5a2520e98f4a",
-            "displayName": "Verified Admin"
-        },
-        {
-            "id": "77aa47ad-96fe-4ecc-8024-fd1ac5e28f17",
-            "displayName": "Corporate Communicator"
-        }
+      "id": "ec759127-089f-4f91-8dfc-03a30b51cb38",
+      "displayName": "Network Admin"
+    },
+    {
+      "id": "966b8ec4-6457-4f22-bd3c-5a2520e98f4a",
+      "displayName": "Verified Admin"
+    },
+    {
+      "id": "77aa47ad-96fe-4ecc-8024-fd1ac5e28f17",
+      "displayName": "Corporate Communicator"
+    }
   ]
 }
- 
 ```

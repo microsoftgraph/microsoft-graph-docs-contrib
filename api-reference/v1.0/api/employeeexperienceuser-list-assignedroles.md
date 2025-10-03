@@ -12,7 +12,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Get a list of all the roles assigned to a user in Viva Engage.
+Get a list of all the [roles](../resources/engagementrole.md) assigned to a user in Viva Engage.
 
 ## Permissions
 
@@ -34,7 +34,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 ``` http
 GET /users/{userId}/employeeExperience/assignedRoles
-
 GET /me/employeeExperience/assignedRoles
 ```
 >**Note:** The `userId` represents the office user ID.
