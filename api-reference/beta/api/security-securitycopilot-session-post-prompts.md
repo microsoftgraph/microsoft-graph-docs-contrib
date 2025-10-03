@@ -1,6 +1,6 @@
 ---
 title: "Create prompt"
-description: "Create a new prompt object."
+description: "Create a new prompt in a Security Copilot session."
 author: "spunukol"
 ms.date: 07/17/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security.securityCopilot
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new prompt object.
+Create a new [prompt](../resources/security-securitycopilot-prompt.md) in a Security Copilot session.
 
 ## Permissions
 

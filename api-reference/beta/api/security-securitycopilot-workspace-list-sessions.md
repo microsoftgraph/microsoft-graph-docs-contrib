@@ -1,6 +1,6 @@
 ---
 title: "List session objects"
-description: "Get a list of the session objects and their properties."
+description: "Get a list of the sessions in Security Copilot.
 author: "spunukol"
 ms.date: 07/17/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security.securityCopilot
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the session objects and their properties.
+Get a list of the [sessions](../resources/security-securitycopilot-session.md) in Security Copilot.
 
 ## Permissions
 
