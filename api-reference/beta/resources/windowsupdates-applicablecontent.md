@@ -1,7 +1,7 @@
 ---
 title: "applicableContent resource type"
 description: "Represents content applicable for offering to the related collection of devices."
-author: "ryan-k-williams"
+author: "andredm7"
 ms.localizationpriority: medium
 ms.subservice: windows-autopatch
 doc_type: resourcePageType
