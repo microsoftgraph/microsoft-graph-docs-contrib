@@ -11,7 +11,7 @@
     "Target": "evaluation"
   },
   {
-    "Id": "a1b2c3d4-0003-4e5f-9012-abcdef123456",
+    "Id": "a1b2c3d4-0002-4e5f-9012-abcdef123456",
     "ApiChange": "Resource",
     "ChangedApiName": "evaluationResult",
     "ChangeType": "Addition",
@@ -19,7 +19,7 @@
     "Target": "evaluationResult"
   },
   {
-    "Id": "a1b2c3d4-0004-4e5f-9012-abcdef123456",
+    "Id": "a1b2c3d4-0002-4e5f-9012-abcdef123456",
     "ApiChange": "Resource",
     "ChangedApiName": "plugin",
     "ChangeType": "Addition",
@@ -27,7 +27,7 @@
     "Target": "plugin"
   },
   {
-    "Id": "a1b2c3d4-0005-4e5f-9012-abcdef123456",
+    "Id": "a1b2c3d4-0002-4e5f-9012-abcdef123456",
     "ApiChange": "Resource",
     "ChangedApiName": "pluginAuth",
     "ChangeType": "Addition",
@@ -35,7 +35,7 @@
     "Target": "pluginAuth"
   },
   {
-    "Id": "a1b2c3d4-0006-4e5f-9012-abcdef123456",
+    "Id": "a1b2c3d4-0002-4e5f-9012-abcdef123456",
     "ApiChange": "Resource",
     "ChangedApiName": "pluginSetting",
     "ChangeType": "Addition",
@@ -43,7 +43,7 @@
     "Target": "pluginSetting"
   },
   {
-    "Id": "a1b2c3d4-0007-4e5f-9012-abcdef123456",
+    "Id": "a1b2c3d4-0002-4e5f-9012-abcdef123456",
     "ApiChange": "Resource",
     "ChangedApiName": "prompt",
     "ChangeType": "Addition",
@@ -51,7 +51,7 @@
     "Target": "prompt"
   },
   {
-    "Id": "a1b2c3d4-0008-4e5f-9012-abcdef123456",
+    "Id": "a1b2c3d4-0002-4e5f-9012-abcdef123456",
     "ApiChange": "Resource",
     "ChangedApiName": "skillInputDescriptor",
     "ChangeType": "Addition",
@@ -59,7 +59,7 @@
     "Target": "skillInputDescriptor"
   },
   {
-    "Id": "a1b2c3d4-0009-4e5f-9012-abcdef123456",
+    "Id": "a1b2c3d4-0002-4e5f-9012-abcdef123456",
     "ApiChange": "Resource",
     "ChangedApiName": "skillTypeDescriptor",
     "ChangeType": "Addition",
@@ -67,7 +67,7 @@
     "Target": "skillTypeDescriptor"
   },
   {
-    "Id": "a1b2c3d4-0010-4e5f-9012-abcdef123456",
+    "Id": "a1b2c3d4-0002-4e5f-9012-abcdef123456",
     "ApiChange": "Resource",
     "ChangedApiName": "skillVariableDescriptor",
     "ChangeType": "Addition",
@@ -75,7 +75,7 @@
     "Target": "skillVariableDescriptor"
   },
   {
-    "Id": "a1b2c3d4-0001-4e5f-9012-abcdef123456",
+    "Id": "a1b2c3d4-0002-4e5f-9012-abcdef123456",
     "ApiChange": "Resource",
     "ChangedApiName": "workspace",
     "ChangeType": "Addition",
@@ -83,7 +83,7 @@
     "Target": "workspace"
   },
   {
-    "Id": "e1f2g3h4-0001-4e5f-9012-abcdef123456",
+    "Id": "a1b2c3d4-0002-4e5f-9012-abcdef123456",
     "ApiChange": "Enumeration",
     "ChangedApiName": "evaluationResultType",
     "ChangeType": "Addition",
@@ -91,7 +91,7 @@
     "Target": "evaluationResultType"
   },
   {
-    "Id": "e1f2g3h4-0002-4e5f-9012-abcdef123456",
+    "Id": "a1b2c3d4-0002-4e5f-9012-abcdef123456",
     "ApiChange": "Enumeration",
     "ChangedApiName": "evaluationState",
     "ChangeType": "Addition",
@@ -99,7 +99,7 @@
     "Target": "evaluationState"
   },
   {
-    "Id": "e1f2g3h4-0003-4e5f-9012-abcdef123456",
+    "Id": "a1b2c3d4-0002-4e5f-9012-abcdef123456",
     "ApiChange": "Enumeration",
     "ChangedApiName": "pluginAuthTypes",
     "ChangeType": "Addition",
@@ -107,7 +107,7 @@
     "Target": "pluginAuthTypes"
   },
   {
-    "Id": "e1f2g3h4-0004-4e5f-9012-abcdef123456",
+    "Id": "a1b2c3d4-0002-4e5f-9012-abcdef123456",
     "ApiChange": "Enumeration",
     "ChangedApiName": "pluginCatalogScope",
     "ChangeType": "Addition",
@@ -115,7 +115,7 @@
     "Target": "pluginCatalogScope"
   },
   {
-    "Id": "e1f2g3h4-0005-4e5f-9012-abcdef123456",
+    "Id": "a1b2c3d4-0002-4e5f-9012-abcdef123456",
     "ApiChange": "Enumeration",
     "ChangedApiName": "pluginCategory",
     "ChangeType": "Addition",
@@ -123,7 +123,7 @@
     "Target": "pluginCategory"
   },
   {
-    "Id": "e1f2g3h4-0006-4e5f-9012-abcdef123456",
+    "Id": "a1b2c3d4-0002-4e5f-9012-abcdef123456",
     "ApiChange": "Enumeration",
     "ChangedApiName": "pluginPreviewStates",
     "ChangeType": "Addition",
@@ -131,7 +131,7 @@
     "Target": "pluginPreviewStates"
   },
   {
-    "Id": "e1f2g3h4-0007-4e5f-9012-abcdef123456",
+    "Id": "a1b2c3d4-0002-4e5f-9012-abcdef123456",
     "ApiChange": "Enumeration",
     "ChangedApiName": "pluginSettingDisplayType",
     "ChangeType": "Addition",
@@ -139,7 +139,7 @@
     "Target": "pluginSettingDisplayType"
   },
   {
-    "Id": "e1f2g3h4-0008-4e5f-9012-abcdef123456",
+    "Id": "a1b2c3d4-0002-4e5f-9012-abcdef123456",
     "ApiChange": "Enumeration",
     "ChangedApiName": "pluginSettingType",
     "ChangeType": "Addition",
@@ -147,7 +147,7 @@
     "Target": "pluginSettingType"
   },
   {
-    "Id": "e1f2g3h4-0009-4e5f-9012-abcdef123456",
+    "Id": "a1b2c3d4-0002-4e5f-9012-abcdef123456",
     "ApiChange": "Enumeration",
     "ChangedApiName": "promptType",
     "ChangeType": "Addition",
@@ -155,7 +155,7 @@
     "Target": "promptType"
   },
   {
-    "Id": "e1f2g3h4-0010-4e5f-9012-abcdef123456",
+    "Id": "a1b2c3d4-0002-4e5f-9012-abcdef123456",
     "ApiChange": "Enumeration",
     "ChangedApiName": "skillPreviewState",
     "ChangeType": "Addition",
@@ -163,7 +163,7 @@
     "Target": "skillPreviewState"
   }
 ],
-    "Id": "e1f2g3h4-0010-4e5f-9012-abcdef123456",
+    "Id": "a1b2c3d4-0002-4e5f-9012-abcdef123456",
     "Cloud": "Prod",
     "Version": "beta",
     "CreatedDateTime": "2025-10-02T14:58:10.5721975Z",
