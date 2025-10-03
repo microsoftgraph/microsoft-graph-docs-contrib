@@ -1,5 +1,5 @@
 ---
-title: "List applicableContent"
+title: "List applicable Content"
 description: "Get a list of the applicableContent objects and their properties."
 author: "andredm7"
 ms.date: 10/08/2025
@@ -8,7 +8,7 @@ ms.subservice: "windows-autopatch"
 doc_type: apiPageType
 ---
 
-# List applicableContent
+# List an applicable content
 
 Namespace: microsoft.graph.windowsUpdates
 

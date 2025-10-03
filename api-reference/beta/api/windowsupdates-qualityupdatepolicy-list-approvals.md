@@ -1,5 +1,5 @@
 ---
-title: "List approvals"
+title: "List quality update approvals"
 description: "Get a list of the policyApproval objects and their properties."
 author: "andredm7"
 ms.date: 10/08/2025
@@ -8,13 +8,13 @@ ms.subservice: "windows-autopatch"
 doc_type: apiPageType
 ---
 
-# List approvals
+# List quality update approvals
 
 Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the policyApproval objects and their properties.
+Get a list of the update policy approval objects and their properties.
 
 ## Permissions
 

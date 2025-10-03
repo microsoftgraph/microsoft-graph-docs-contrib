@@ -1,14 +1,14 @@
 ---
 title: "Delete policyApproval"
-description: "Delete a policyApproval object."
+description: "Delete a policy approval object."
 author: "andredm7"
-ms.date: 09/30/2025
+ms.date: 10/08/2025
 ms.localizationpriority: medium
 ms.subservice: "windows-autopatch"
 doc_type: apiPageType
 ---
 
-# Delete a policyApproval
+# Delete an update policy approval
 
 Namespace: microsoft.graph.windowsUpdates
 
@@ -50,7 +50,6 @@ DELETE /admin/windows/updates/policies/{policyId}/approvals/{policyApprovalId}
 
 
 ## Properties
-
 |Property|Type|Description|
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|The date and time the policy approval is created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, `2014 is 2014-01-01T00:00:00Z`. Optional.|

@@ -1,6 +1,6 @@
 ---
 title: "Delete policyApproval"
-description: "Delete a policyApproval object."
+description: "Delete a policy approval object."
 author: "andredm7"
 ms.date: 10/08/2025
 ms.localizationpriority: medium
@@ -8,13 +8,13 @@ ms.subservice: "windows-autopatch"
 doc_type: apiPageType
 ---
 
-# Delete policyApproval
+# Delete an update policy approval
 
 Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a policyApproval object.
+Delete an update policy approval object.
 
 ## Permissions
 

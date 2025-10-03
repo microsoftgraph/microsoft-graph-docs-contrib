@@ -8,7 +8,7 @@ ms.subservice: "windows-autopatch"
 doc_type: apiPageType
 ---
 
-# List applicableContent
+# List applicable Content
 
 Namespace: microsoft.graph.windowsUpdates
 

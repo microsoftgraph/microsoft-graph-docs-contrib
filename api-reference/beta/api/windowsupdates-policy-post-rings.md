@@ -1,5 +1,5 @@
 ---
-title: "Create ring"
+title: "Create update ring"
 description: "Create a new ring object."
 author: "andredm7"
 ms.date: 10/08/2025
@@ -8,7 +8,7 @@ ms.subservice: "windows-autopatch"
 doc_type: apiPageType
 ---
 
-# Create ring
+# Create update ring object
 
 Namespace: microsoft.graph.windowsUpdates
 
@@ -50,18 +50,17 @@ In the request body, supply a JSON representation of the [microsoft.graph.window
 
 You can specify the following properties when creating a **ring**.
 
-**TODO: Remove properties that don't apply**
+## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|**TODO: Add Description** Required.|
-|description|String|**TODO: Add Description** Required.|
-|includedGroupAssignment|[microsoft.graph.windowsUpdates.includedGroupAssignment](../resources/windowsupdates-includedgroupassignment.md)|**TODO: Add Description** Required.|
-|excludedGroupAssignment|[microsoft.graph.windowsUpdates.excludedGroupAssignment](../resources/windowsupdates-excludedgroupassignment.md)|**TODO: Add Description** Required.|
-|deferralInDays|Int32|**TODO: Add Description** Optional.|
-|isPaused|Boolean|**TODO: Add Description** Required.|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Optional.|
-|lastModifiedDateTime|DateTimeOffset|**TODO: Add Description** Optional.|
-
+|displayName|String| The ring display name. Required.|
+|description|String| The ring description. Required.|
+|includedGroupAssignment|[microsoft.graph.windowsUpdates.includedGroupAssignment](../resources/windowsupdates-includedgroupassignment.md)| Represents an entity that governs the update deployment audience with included groups. Groups are logical containers of devices represented by Microsoft Entra groups. Required.|
+|excludedGroupAssignment|[microsoft.graph.windowsUpdates.excludedGroupAssignment](../resources/windowsupdates-excludedgroupassignment.md)| The date and time the ring was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, `2014 is 2014-01-01T00:00:00Z`. Required.|
+|deferralInDays|Int32| The Quality Update deferral period (days). The value must be between 0 and 30. Optional.|
+|isPaused|Boolean| Represents the pause action for the Quality Update ring policy. Required.|
+|createdDateTime|DateTimeOffset| The date and time the ring is created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, `2014 is 2014-01-01T00:00:00Z`. Optional.|
+|lastModifiedDateTime|DateTimeOffset| The date and time the ring was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, `2014 is 2014-01-01T00:00:00Z`. Optional.|
 
 ## Response
 

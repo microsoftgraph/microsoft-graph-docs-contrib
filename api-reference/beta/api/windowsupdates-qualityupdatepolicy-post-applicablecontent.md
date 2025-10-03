@@ -1,5 +1,5 @@
 ---
-title: "Create applicableContent"
+title: "Create quality update applicable content objects"
 description: "Create a new applicableContent object."
 author: "andredm7"
 ms.date: 10/08/2025
@@ -8,13 +8,13 @@ ms.subservice: "windows-autopatch"
 doc_type: apiPageType
 ---
 
-# Create applicableContent
+# Create quality update applicable content
 
 Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new applicableContent object.
+Create a new quality update applicable content object.
 
 ## Permissions
 

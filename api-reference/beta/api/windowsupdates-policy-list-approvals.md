@@ -1,7 +1,7 @@
 ---
-title: "List approvals"
+title: "List policyapprovals"
 description: " Get a list of the policyApproval objects and their properties."
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+author: "andredm7"
 ms.date: 10/08/2025
 ms.localizationpriority: medium
 ms.subservice: "windows-autopatch"
