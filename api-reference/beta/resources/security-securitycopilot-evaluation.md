@@ -1,6 +1,6 @@
 ---
 title: "evaluation resource type"
-description: "Security Copilot Evaluation Resource Type"
+description: "Represents an evaluation in a Security Copilot prompt."
 author: "spunukol"
 ms.date: 07/17/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security.securityCopilot
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the resources related to the Security Copilot evaluation resource type.
+Represents an evaluation in a Security Copilot [prompt](../resources/security-securitycopilot-prompt.md).
 
 Inherits from [entity](../resources/entity.md)
 

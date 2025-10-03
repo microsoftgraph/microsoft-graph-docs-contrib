@@ -1,6 +1,6 @@
 ---
 title: "skillInputDescriptor resource type"
-description: "Security Copilot Skill Input Descriptor"
+description: "Defines the capabilities of a skill in Security Copilot."
 author: "spunukol"
 ms.date: 07/17/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security.securityCopilot
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the resources related to the skillInput Descriptor resource.
+Defines the capabilities of a skill in Security Copilot. For more information, see the [Security Copilot Agent manifest](/copilot/security/developer/agent-manifest).
 
 **NOTE** This is currently unsupported.
 

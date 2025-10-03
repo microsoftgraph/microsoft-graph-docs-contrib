@@ -1,6 +1,6 @@
 ---
 title: "skillVariableDescriptor resource type"
-description: "Security Copilot Skill Variable Descriptor"
+description: "Defines the capabilities of a skill in Security Copilot."
 author: "spunukol"
 ms.date: 07/17/2025
 ms.localizationpriority: medium
@@ -14,9 +14,9 @@ Namespace: microsoft.graph.security.securityCopilot
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the resources related to the skillVariableDescriptor resource type.
+Defines the capabilities of a skill in Security Copilot. For more information, see the [Security Copilot Agent manifest](/copilot/security/developer/agent-manifest).
 
-**NOTE** This is currently unsupported in beta.
+This entire resource is currently unsupported.
 
 ## Properties
 |Property|Type|Description|

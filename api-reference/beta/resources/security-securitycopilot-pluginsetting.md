@@ -1,5 +1,5 @@
 ---
-title: "pluginSetting resource type"
+title: "Represents the settings for a Security Copilot plugin."
 description: "Plugin Settings"
 author: "spunukol"
 ms.date: 07/17/2025
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security.securityCopilot
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the resources related to the Security Copilot Plugin settings
+Represents the settings for a [plugin](../resources/security-securitycopilot-plugin.md) in Security Copilot. 
 
 
 ## Properties

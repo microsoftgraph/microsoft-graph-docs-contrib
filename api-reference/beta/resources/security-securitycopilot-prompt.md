@@ -1,6 +1,6 @@
 ---
 title: "prompt resource type"
-description: "Security Copilot Prompt Resource Type"
+description: "Represents a prompt in a Security Copilot session."
 author: "spunukol"
 ms.date: 07/17/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security.securityCopilot
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the resources related to the prompt resource. 
+Represents a prompt in a Security Copilot [session](../resources/security-securitycopilot-session.md).
 
 
 ## Methods

@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security.securityCopilot
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The Security Copilot Evaluation Result Resource types are available here.
+The Security Copilot evaluationResult resource types are available here.
 
 
 ## Properties

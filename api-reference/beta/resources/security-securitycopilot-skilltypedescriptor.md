@@ -1,6 +1,6 @@
 ---
 title: "skillTypeDescriptor resource type"
-description: "Security Copilot skillTypeDescriptor"
+description: "Defines the capabilities of a skill in Security Copilot."
 author: "spunukol"
 ms.date: 07/17/2025
 ms.localizationpriority: medium
@@ -14,9 +14,9 @@ Namespace: microsoft.graph.security.securityCopilot
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the resources related to the skillTypeDescriptor resource type.
+Defines the capabilities of a skill in Security Copilot.
 
-**NOTE** This is currently unsupported.
+This entire resource is currently unsupported.
 
 
 ## Properties

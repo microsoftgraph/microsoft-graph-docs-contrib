@@ -1,6 +1,6 @@
 ---
 title: "session resource type"
-description: "Security Copilot session resource type"
+description: "Represents a session in Security Copilot."
 author: "spunukol"
 ms.date: 07/17/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security.securityCopilot
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the resources related to the Security Copilot session resource.
+Represents a session in Security Copilot.
 
 
 ## Methods
@@ -33,7 +33,7 @@ Represents the resources related to the Security Copilot session resource.
 |createdDateTime|DateTimeOffset|Created time of the session (UTC)|
 |displayName|String|Display name for the session|
 |id|String|Represents the unique ID of the Security Copilot session. Inherits from [entity](../resources/entity.md) |
-|lastModifiedDateTime|DateTimeOffset|Last modified time of the session (UTC)|
+|lastModifiedDateTime|DateTimeOffset|Last modified time of the session (UTC). This can happen either through a property update such as displayName or if any prompts have changed in the session.|
 
 ## Relationships
 |Relationship|Type|Description|

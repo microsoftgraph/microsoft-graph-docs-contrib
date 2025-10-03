@@ -20,9 +20,7 @@ This is an abstract type.
 Inherits from [entity](../resources/entity.md)
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List workspaces](../api/securitycopilot-list-workspaces.md)|[workspace](../resources/security-securitycopilot-workspace.md) collection|List all workspaces in security copilot|
+None.
 
 ## Properties
 None.
@@ -30,7 +28,7 @@ None.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|workspaces|[workspace](../resources/security-securitycopilot-workspace.md) collection|References the workspace object|
+|workspaces|[workspace](../resources/security-securitycopilot-workspace.md) collection|References the workspace object.|
 
 ## JSON representation
 The following JSON representation shows the resource type.
