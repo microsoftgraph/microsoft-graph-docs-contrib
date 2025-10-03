@@ -85,10 +85,11 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.security.securityCopilot.plugin",
-      {
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#security/securityCopilot/workspaces('default')/plugins",
+    "@odata.count": 1,
+    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET security/securityCopilot/workspaces('<key>')/plugins?$select=authorization,catalogScope",
+    "value": [
+        {
             "name": "Signs of malicious activity",
             "displayName": "My security KQL: Signs of malicious activity",
             "description": "Skills that look up signs of malicious activity in my system that can create queries locating for individual malicious activity and then create and run more sophisticated queries to find devices that require immediate attention.",
@@ -99,8 +100,7 @@ Content-Type: application/json
             "authorization": null,
             "settings": []
         }
-    }
-  ]
+    ]
 }
 
 ```

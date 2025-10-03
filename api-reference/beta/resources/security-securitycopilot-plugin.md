@@ -4,7 +4,7 @@ description: "Security Copilot Plugin resource"
 author: "spunukol"
 ms.date: 07/17/2025
 ms.localizationpriority: medium
-ms.subservice: "security.securitycopilot"
+ms.subservice: "security-securitycopilot"
 doc_type: resourcePageType
 ---
 
