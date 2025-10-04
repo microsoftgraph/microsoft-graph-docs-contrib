@@ -18,6 +18,12 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 > [!IMPORTANT]
 > Features in _preview_ status are subject to change without notice, and might not be promoted to generally available (GA) status. Don't use preview features in production apps.
 
+## October 2025: New and generally available
+
+### Employee experience
+
+You can use the new Viva Engage role management APIs in Microsoft Graph to assign, list, and remove predefined Viva Engage roles for users. For more information, see [Role management](/graph/api/resources/engagement-api-overview#role-management).
+
 ## September 2025: New and generally available
 
 ### Applications
