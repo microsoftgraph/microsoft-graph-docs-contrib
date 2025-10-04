@@ -12,7 +12,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Assign a Viva Engage role to a user.
+Create a new [engagementRoleMember](../resources/engagementrolemember.md) object. This API assigns a Viva Engage role to a user.
 
 ## Permissions
 
