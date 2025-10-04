@@ -1,6 +1,6 @@
 ---
 title: "List members"
-description: "Get a list of the engagementRoleMember objects and their properties."
+description: "Get a list of users with assigned roles in Viva Engage."
 author: "richafnu"
 ms.date: 09/22/2025
 ms.localizationpriority: medium
@@ -12,7 +12,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Get a list of the [engagementRoleMember](../resources/engagementrolemember.md) objects and their properties.
+Get a list of users with assigned [roles](../resources/engagementrole.md) in Viva Engage.
 
 ## Permissions
 
