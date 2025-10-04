@@ -1,5 +1,5 @@
 ---
-title: "List engagementRoleMember"
+title: "List members"
 description: "Get a list of the engagementRoleMember objects and their properties."
 author: "richafnu"
 ms.date: 03/27/2025
@@ -8,13 +8,13 @@ ms.subservice: "viva-engage"
 doc_type: apiPageType
 ---
 
-# List engagementRoleMember
+# List members
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the engagementRoleMember objects and their properties.
+Get a list of the [engagementRoleMember](../resources/engagementrolemember.md) objects and their properties.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -102,7 +102,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.engagementrolemember"
+  "@odata.type": "Collection(microsoft.graph.engagementRoleMember)"
 }
 -->
 ``` http
