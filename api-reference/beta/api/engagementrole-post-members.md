@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Assign a Viva Engage role to a user.
+Create a new [engagementRoleMember](../resources/engagementrolemember.md) object. This API assigns a Viva Engage role to a user.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -46,12 +46,12 @@ POST /employeeExperience/roles/{engagementRoleId}/members
 
 In the request body, supply a JSON representation of the [engagementRoleMember](../resources/engagementrolemember.md) object.
 
-You can specify the following properties when creating an **engagementRoleMember**.
+You can specify the following properties when you create an **engagementRoleMember**.
 
 |Property|Type|Description|
 |:---|:---|:---|
+|createdDateTime|DateTimeOffset|The date and time when the role was assigned to the user. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |userId|String|The Microsoft Entra ID of the user who has the role assigned.|
-|createdDateTime|DateTimeOffset|The timestamp when the role was assigned to the user.|
 
 ## Response
 
@@ -110,7 +110,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.engagementrolemember"
+  "@odata.type": "microsoft.graph.engagementRoleMember"
 }
 -->
 ``` http
