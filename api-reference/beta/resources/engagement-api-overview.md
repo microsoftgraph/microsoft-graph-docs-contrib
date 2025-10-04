@@ -1,6 +1,6 @@
 ---
 title: "Use the Microsoft Graph API to work with Viva Engage"
-description: "The Microsoft Graph API enables apps to manage communities in Viva Engage."
+description: "Learn how to manage communities and roles in Viva Engage using the Microsoft Graph API."
 ms.localizationpriority: medium
 author: "aditijha4"
 ms.subservice: "viva-engage"
@@ -12,7 +12,7 @@ ms.date: 07/30/2024
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The Microsoft Graph API supports role management in Viva Engage and enables apps to manage its communities. Viva Engage is a social fabric for the Microsoft Viva suite of apps that connects people across the organization to share and learn. It's a place where employees can connect with leaders, coworkers, and communities, share their knowledge and ideas, and find belonging at work. 
+The Microsoft Graph API enables apps to manage communities and roles in Viva Engage. Viva Engage is a social fabric for the Microsoft Viva suite of apps that connects people across the organization to share and learn. It's a place where employees can connect with leaders, coworkers, and communities, share their knowledge and ideas, and find belonging at work. 
 
 > [!IMPORTANT]
 > The Viva Engage API in Microsoft Graph is only supported for Viva Engage networks in [native mode](/viva/engage/overview-native-mode). You can't use this API to manage legacy or external Viva Engage networks.
@@ -75,5 +75,5 @@ For guidance on how to handle throttling in Microsoft Graph, see [Microsoft Grap
 
 ## Next steps
 
-- Use the Microsoft Graph API to manage roles and communities in Viva Engage.
+- Use the Microsoft Graph API to manage communities and roles in Viva Engage.
 - Try the Viva Engage API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
