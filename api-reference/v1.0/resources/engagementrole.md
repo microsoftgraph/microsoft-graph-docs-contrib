@@ -28,6 +28,11 @@ Inherits from [entity](../resources/entity.md).
 |displayName|String|The name of the role.|
 |id|String|The unique identifier of the role. Read-only. Inherited from [entity](../resources/entity.md)|
 
+## Relationships
+| Relationship | Type | Description |
+|:---|:---|:---|
+|members|[engagementRoleMember](../resources/engagementrolemember.md) collection|TODO|
+
 ## JSON representation
 The following JSON representation shows the resource type.
 <!-- {
