@@ -12,7 +12,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Delete a Viva Engage role from a user.
+Delete a Viva Engage [role](../resources/engagementrolemember.md) from a user.
 
 ## Permissions
 
