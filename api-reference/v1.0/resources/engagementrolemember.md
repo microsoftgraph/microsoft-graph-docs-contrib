@@ -28,7 +28,7 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|createdDateTime|DateTimeOffset|The date and time when the role was assigned to the user.|
+|createdDateTime|DateTimeOffset|The date and time when the role was assigned to the user. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |id|String|The unique identifier of the role member resource. Read-only. Inherited from [entity](../resources/entity.md). |
 |userId|String|The Microsoft Entra ID of the user who has the role assigned.|
 
