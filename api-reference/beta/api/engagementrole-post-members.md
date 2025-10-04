@@ -1,6 +1,6 @@
 ---
 title: "Create engagementRoleMember"
-description: "Create a new engagementRoleMember object."
+description: "Create a new engagementRoleMember object that assigns a Viva Engage role to a user."
 author: "richafnu"
 ms.date: 03/27/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [engagementRoleMember](../resources/engagementrolemember.md) object. This API assigns a Viva Engage role to a user.
+Create a new [engagementRoleMember](../resources/engagementrolemember.md) object that assigns a Viva Engage role to a user.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
