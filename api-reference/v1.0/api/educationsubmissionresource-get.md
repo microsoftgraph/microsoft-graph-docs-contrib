@@ -599,7 +599,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.educationSubmissionResource)"
+  "@odata.type": "microsoft.graph.educationSubmissionResource"
 }
 -->
 ``` http
