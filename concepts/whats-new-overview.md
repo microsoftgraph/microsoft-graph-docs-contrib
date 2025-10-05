@@ -22,8 +22,8 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ### Education
 
-- [List the dependent education assignment resources](/graph/api/educationassignmentresource-list-dependentresources?view=graph-rest-1.0&preserve-view=true) for a given education assignment resource.
-- [List the dependent education submission resources](/graph/api/educationsubmissionresource-list-dependentresources?view=graph-rest-1.0&preserve-view=true) for a given education submission resource.
+- [List the dependent education assignment resources](/graph/api/educationassignmentresource-list-dependentresources) for a given education assignment resource.
+- [List the dependent education submission resources](/graph/api/educationsubmissionresource-list-dependentresources) for a given education submission resource.
 
 ## September 2025: New and generally available
 
