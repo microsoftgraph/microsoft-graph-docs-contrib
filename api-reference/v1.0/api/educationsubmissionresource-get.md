@@ -599,12 +599,13 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.educationSubmissionResource"
+  "@odata.type": "Collection(microsoft.graph.educationSubmissionResource)"
 }
 -->
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
+
 {
   "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/classes('de45722a-c202-43a9-9dd5-d82c45bcef91')/assignments('4d1ecd2d-c913-41ba-be3c-d896b65d09f0')/submissions('fd921642-a333-4c4d-9335-2200f36400a9')/resources(dependentResources())",
   "value": [
