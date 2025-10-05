@@ -61,13 +61,13 @@ Content-Type: application/json
   "grades": [
     {
       "displayName": "Pass",
-      "minPercentage": 70,
-      "defaultPercentage": 90
+      "minPercentage": 70.0,
+      "defaultPercentage": 90.0
     },
     {
       "displayName": "Fail",
-      "minPercentage": 0,
-      "defaultPercentage": 50
+      "minPercentage": 0.0,
+      "defaultPercentage": 50.0
     }
   ]
 }
@@ -96,13 +96,13 @@ Content-type: application/json
   "grades": [
     {
       "displayName": "Pass",
-      "minPercentage": 70,
-      "defaultPercentage": 90
+      "minPercentage": 70.0,
+      "defaultPercentage": 90.0
     },
     {
       "displayName": "Fail",
-      "minPercentage": 0,
-      "defaultPercentage": 50
+      "minPercentage": 0.0,
+      "defaultPercentage": 50.0
     }
   ]
 }
