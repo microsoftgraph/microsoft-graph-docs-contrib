@@ -7,7 +7,7 @@ ms.localizationpriority: high
 ms.topic: reference
 ms.subservice: entra-applications
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.date: 09/22/2025
+ms.date: 09/29/2025
 #Customer intent: As a developer, I want to learn more about the permissions available in Microsoft Graph, so that I understand the impact of granting specific permissions to my app.
 ---
 
@@ -1013,7 +1013,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Category | Application | Delegated |
 |--|--|--|
 | Identifier | 45bbb07e-7321-4fd7-a8f6-3ff27e6a81c8 | - |
-| DisplayText | Read all call records. | - |
+| DisplayText | Read all call records | - |
 | Description | Allows the app to read call records for all calls and online meetings without a signed-in user. | - |
 | AdminConsentRequired | Yes | - |
 
@@ -1073,6 +1073,17 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | DisplayText | Join group calls and meetings as a guest | - |
 | Description | Allows the app to anonymously join group calls and scheduled meetings in your organization, without a signed-in user.  The app will be joined as a guest to meetings in your organization. | - |
 | AdminConsentRequired | Yes | - |
+
+---
+
+### CallTranscripts.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 4cd61b6d-8692-40bf-9d90-7f38db5e5fce | fbace248-5d8e-441c-85ca-cc19221a69a2 |
+| DisplayText | Read all call transcripts | Read all transcripts of calls.  |
+| Description | Allows the app to read call transcripts for all calls without a signed-in user. | Allows the app to read all transcripts of calls, on behalf of the signed-in user. |
+| AdminConsentRequired | Yes | Yes |
 
 ---
 
