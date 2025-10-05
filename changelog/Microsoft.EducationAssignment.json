@@ -70,7 +70,33 @@
       "Id": "8e05037c-958b-4ea9-8f44-3e5fbb3c1654",
       "Cloud": "Prod",
       "Version": "v1.0",
-      "CreatedDateTime": "2025-09-22T16:56:37.9719909Z",
+      "CreatedDateTime": "2025-09-22T16:56:37.9719909Z",      
+      "WorkloadArea": "Education",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "d85eaadf-0b79-452e-9e3f-2e9a1fbfe91a",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "dependentResources",
+          "ChangeType": "Addition",
+          "Description": "Added the **dependentResources** relationship to the [educationAssignmentResource](https://learn.microsoft.com/en-us/graph/api/resources/educationAssignmentResource?view=graph-rest-beta) resource.",
+          "Target": "educationAssignmentResource"
+        },
+        {
+          "Id": "d85eaadf-0b79-452e-9e3f-2e9a1fbfe91a",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "dependentResources",
+          "ChangeType": "Addition",
+          "Description": "Added the **dependentResources** relationship to the [educationSubmissionResource](https://learn.microsoft.com/en-us/graph/api/resources/educationSubmissionResource?view=graph-rest-beta) resource.",
+          "Target": "educationSubmissionResource"
+        }
+      ],
+      "Id": "d85eaadf-0b79-452e-9e3f-2e9a1fbfe91a",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-05-21T17:27:44.8501194Z",
       "WorkloadArea": "Education",
       "SubArea": ""
     },
