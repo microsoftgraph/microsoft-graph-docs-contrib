@@ -728,6 +728,7 @@ The following example shows the response.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
+
 {
   "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/classes('de45722a-c202-43a9-9dd5-d82c45bcef91')/assignments('4d1ecd2d-c913-41ba-be3c-d896b65d09f0')/resources(dependentResources())/$entity",
   "distributeForStudentWork": true,
