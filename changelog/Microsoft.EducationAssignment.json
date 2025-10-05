@@ -61,7 +61,7 @@
           "Target": "educationSubmissionResource"
         },
         {
-          "Id": "c9ae0ad0-1dca-4b56-958d-57e90927c64e",
+          "Id": "d85eaadf-0b79-452e-9e3f-2e9a1fbfe91a",
           "ApiChange": "Method",
           "ChangedApiName": "GET",
           "ChangeType": "Addition",
@@ -69,7 +69,7 @@
           "Target": "educationAssignmentResource"
         },
         {
-          "Id": "c9ae0ad0-1dca-4b56-958d-57e90927c64e",
+          "Id": "d85eaadf-0b79-452e-9e3f-2e9a1fbfe91a",
           "ApiChange": "Method",
           "ChangedApiName": "GET",
           "ChangeType": "Addition",
