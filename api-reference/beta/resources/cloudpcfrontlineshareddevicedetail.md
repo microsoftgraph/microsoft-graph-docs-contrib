@@ -1,6 +1,6 @@
 ---
 title: "cloudPcFrontlineSharedDeviceDetail resource type"
-description: "Represents the Cloud PC device details associated with the frontline shared service plan, including the user's UPN and session start date and time."
+description: "Represents the Cloud PC device details associated with the frontline shared service plan, including the user's UPN and the session start date and time."
 author: "yanghwai"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
@@ -14,14 +14,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the Cloud PC device details associated with the frontline shared service plan, including the user's UPN and session start date and time.
+Represents the Cloud PC device details associated with the frontline shared service plan, including the user's UPN and the session start date and time.
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
 |assignedToUserPrincipalName|String|The user principal name (UPN) of the user to whom the device is currently assigned. If no user is assigned, this field remains empty. Example values, `john.doe@contoso.onmicrosoft.com` and ``.|
-|sessionStartDateTime|DateTimeOffset|The date and time when the current user session starts, or null if there's no current user session. This is auto generated and assigned during each session starts. The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC). For example, midnight UTC on Jan 1, 2014 appears as '2014-01-01T00:00:00Z'.|
+|sessionStartDateTime|DateTimeOffset|The date and time when the current user session starts, or `null` if no current user session exists. This value is auto-generated and assigned at the start of each session. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 
 ## Relationships
 
