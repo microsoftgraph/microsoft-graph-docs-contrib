@@ -167,6 +167,15 @@ The  [incident](security-incident.md) resource and its APIs allow you to sort 
 
 > **Note:** We recommend that you use the [threat submission](https://github.com/microsoftgraph/microsoft-graph-docs/pull/16242/files#threat-submission) API instead.
 
+### Microsoft Security Copilot
+
+Microsoft Security Copilot is a generative AI-powered security analysis tool that enables defenders to respond to threats quickly, process signals at machine speed, and assess risk exposure in minutes. It enhances the effectiveness of security professionals across roles and workflows, supporting incident response, threat hunting, intelligence gathering, posture management, and more.
+
+Security Copilot transforms natural language prompts into intelligent, actionable guidance, streamlining complex operations and bridging cybersecurity talent gaps. It allows defenders to complete tasks in minutes instead of hours or days.
+
+The Security Copilot resource and its APIs allow developers to embed Security Copilot experiences into custom portals or applications. It supports creating sessions, prompts, evaluations, and plugins, enabling tailored AI-driven security workflows.
+
+For more information, see [Security Copilot primary use cases](https://learn.microsoft.com/en-us/copilot/security/use-cases) and [Plugins in Microsoft Security Copilot](https://learn.microsoft.com/en-us/copilot/security/plugin-overview).
 
 ## Records management
 
@@ -175,6 +184,7 @@ Most organizations need to manage data to proactively comply with industry regul
 ## Secure Score
 
 [Microsoft Secure Score](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Office-365-Secure-Score-is-now-Microsoft-Secure-Score/ba-p/182358) is a security analytics solution that gives you visibility into your security portfolio and how to improve it. With a single score, you can better understand what you have done to reduce your risk in Microsoft solutions. You can also compare your score with other organizations and see how your score has been trending over time. The [secureScore](securescore.md) and [secureScoreControlProfile](securescorecontrolprofiles.md) entities help you balance your organization's security and productivity needs while enabling the appropriate mix of security features. You can also project what your score will be after you adopt security features.
+
 
 ## Threat intelligence (preview)
 
