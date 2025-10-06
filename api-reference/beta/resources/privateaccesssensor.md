@@ -32,6 +32,8 @@ Inherits from [entity](../resources/entity.md).
 |:---|:---|:---|
 |externalIp|String|External IP of sensor.|
 |id|String|Unique ID of the sensor. Inherits from [entity](../resources/entity.md)|
+|isAuditMode|Boolean|Not Implementated.|
+|isBreakglassEnabled|Boolean|Not Implemented.|
 |machineName|String|Machine name of sensor.|
 |version|String|Version of sensor.|
 |status|microsoft.graph.sensorStatus|The possible values are: `active`, `inactive`, `unknownFutureValue`.|
@@ -56,8 +58,11 @@ The following JSON representation shows the resource type.
   "machineName": "String",
   "externalIp": "String",
   "version": "String",
-  "status": "String"
+  "status": "String",
+  "isBreakglassEnabled": "Boolean",
+  "isAuditMode": "Boolean"
 }
 ```
+
 
 
