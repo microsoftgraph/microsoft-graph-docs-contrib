@@ -13,6 +13,14 @@ ms.custom: sfi-ropc-nochange
 
 Namespace: microsoft.graph
 
+### sensorStatus values 
+
+|Member|
+|:---|
+|active|
+|inactive|
+|unknownFutureValue|
+
 ### readingCoachStoryType values
 
 |Member|
