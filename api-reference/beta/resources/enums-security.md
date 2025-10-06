@@ -1027,6 +1027,25 @@ Namespace: microsoft.graph.security
 |downloadFile|
 |unknownFutureValue|
 
+### resourceAccessStatus values
+
+|Member|
+|:---|
+|none|
+|failure|
+|success|
+|unknownFutureValue|
+
+### resourceAccessType values
+
+|Member|
+|:---|
+|none|
+|read|
+|write|
+|create|
+|unknownFutureValue|
+
 ### labelActionSource values
 
 |Member|

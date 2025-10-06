@@ -1,7 +1,121 @@
 ﻿{
   "changelog": [
     {
-        "ChangeList": [
+      "ChangeList": [
+        {
+          "Id": "e72bfd48-4fdc-4e10-9d29-89785912a3be",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "resourceAccessStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **resourceAccessStatus** enumeration type.",
+          "Target": "resourceAccessStatus"
+        },
+        {
+          "Id": "e72bfd48-4fdc-4e10-9d29-89785912a3be",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "resourceAccessType",
+          "ChangeType": "Addition",
+          "Description": "Added the **resourceAccessType** enumeration type.",
+          "Target": "resourceAccessType"
+        },
+        {
+          "Id": "e72bfd48-4fdc-4e10-9d29-89785912a3be",
+          "ApiChange": "Resource",
+          "ChangedApiName": "aiAgentInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [aiAgentInfo](https://learn.microsoft.com/en-us/graph/api/resources/aiAgentInfo?view=graph-rest-beta) resource.",
+          "Target": "aiAgentInfo"
+        },
+        {
+          "Id": "e72bfd48-4fdc-4e10-9d29-89785912a3be",
+          "ApiChange": "Resource",
+          "ChangedApiName": "aiInteractionEntity",
+          "ChangeType": "Addition",
+          "Description": "Added the [aiInteractionEntity](https://learn.microsoft.com/en-us/graph/api/resources/aiInteractionEntity?view=graph-rest-beta) resource.",
+          "Target": "aiInteractionEntity"
+        },
+        {
+          "Id": "e72bfd48-4fdc-4e10-9d29-89785912a3be",
+          "ApiChange": "Property",
+          "ChangedApiName": "identifier",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **identifier** property from the [aiInteractionPlugin](https://learn.microsoft.com/en-us/graph/api/resources/aiInteractionPlugin?view=graph-rest-beta) resource.",
+          "Target": "aiInteractionPlugin"
+        },
+        {
+          "Id": "e72bfd48-4fdc-4e10-9d29-89785912a3be",
+          "ApiChange": "Property",
+          "ChangedApiName": "name",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **name** property from the [aiInteractionPlugin](https://learn.microsoft.com/en-us/graph/api/resources/aiInteractionPlugin?view=graph-rest-beta) resource.",
+          "Target": "aiInteractionPlugin"
+        },
+        {
+          "Id": "e72bfd48-4fdc-4e10-9d29-89785912a3be",
+          "ApiChange": "Property",
+          "ChangedApiName": "version",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **version** property from the [aiInteractionPlugin](https://learn.microsoft.com/en-us/graph/api/resources/aiInteractionPlugin?view=graph-rest-beta) resource.",
+          "Target": "aiInteractionPlugin"
+        },
+        {
+          "Id": "e72bfd48-4fdc-4e10-9d29-89785912a3be",
+          "ApiChange": "Resource",
+          "ChangedApiName": "contentStoreResourceAccessDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the [contentStoreResourceAccessDetail](https://learn.microsoft.com/en-us/graph/api/resources/contentStoreResourceAccessDetail?view=graph-rest-beta) resource.",
+          "Target": "contentStoreResourceAccessDetail"
+        },
+        {
+          "Id": "e72bfd48-4fdc-4e10-9d29-89785912a3be",
+          "ApiChange": "Resource",
+          "ChangedApiName": "processConversationMetadata",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [processConversationMetadata](https://learn.microsoft.com/en-us/graph/api/resources/processConversationMetadata?view=graph-rest-beta) resource.",
+          "Target": "processConversationMetadata"
+        },
+        {
+          "Id": "e72bfd48-4fdc-4e10-9d29-89785912a3be",
+          "ApiChange": "Property",
+          "ChangedApiName": "accessedResources_v2",
+          "ChangeType": "Addition",
+          "Description": "Added the **accessedResources_v2** property to the [processConversationMetadata](https://learn.microsoft.com/en-us/graph/api/resources/processConversationMetadata?view=graph-rest-beta) resource.",
+          "Target": "processConversationMetadata"
+        },
+        {
+          "Id": "e72bfd48-4fdc-4e10-9d29-89785912a3be",
+          "ApiChange": "Property",
+          "ChangedApiName": "agents",
+          "ChangeType": "Addition",
+          "Description": "Added the **agents** property to the [processConversationMetadata](https://learn.microsoft.com/en-us/graph/api/resources/processConversationMetadata?view=graph-rest-beta) resource.",
+          "Target": "processConversationMetadata"
+        },
+        {
+          "Id": "e72bfd48-4fdc-4e10-9d29-89785912a3be",
+          "ApiChange": "Resource",
+          "ChangedApiName": "resourceAccessDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the [resourceAccessDetail](https://learn.microsoft.com/en-us/graph/api/resources/resourceAccessDetail?view=graph-rest-beta) resource.",
+          "Target": "resourceAccessDetail"
+        },
+        {
+          "Id": "e72bfd48-4fdc-4e10-9d29-89785912a3be",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sharepointResourceAccessDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the [sharepointResourceAccessDetail](https://learn.microsoft.com/en-us/graph/api/resources/sharepointResourceAccessDetail?view=graph-rest-beta) resource.",
+          "Target": "sharepointResourceAccessDetail"
+        }
+      ],
+      "Id": "e72bfd48-4fdc-4e10-9d29-89785912a3be",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-10-03T22:21:11.3484441Z",
+      "WorkloadArea": "Security",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
         {
           "Id": "f772b158-7bd6-4602-8f3d-5cbeca16c806",
           "ApiChange": "Resource",
@@ -606,7 +720,7 @@
       "WorkloadArea": "Identity and access",
       "SubArea": "Directory management"
     },
-        {
+    {
       "ChangeList": [
         {
           "Id": "abaf3cec-126a-4e1d-9630-833b4c693eff",
@@ -696,7 +810,7 @@
           "Description": "Added the [blockAccessAction](https://learn.microsoft.com/en-us/graph/api/resources/blockAccessAction?view=graph-rest-beta) resource.",
           "Target": "blockAccessAction"
         },
-                {
+        {
           "Id": "abaf3cec-126a-4e1d-9630-833b4c693eff",
           "ApiChange": "Resource",
           "ChangedApiName": "classifcationErrorBase",
@@ -704,7 +818,7 @@
           "Description": "Added the [classifcationErrorBase](https://learn.microsoft.com/en-us/graph/api/resources/classifcationErrorBase?view=graph-rest-beta) resource.",
           "Target": "classifcationErrorBase"
         },
-                {
+        {
           "Id": "abaf3cec-126a-4e1d-9630-833b4c693eff",
           "ApiChange": "Resource",
           "ChangedApiName": "classificationError",
@@ -712,7 +826,7 @@
           "Description": "Added the [classificationError](https://learn.microsoft.com/en-us/graph/api/resources/classificationError?view=graph-rest-beta) resource.",
           "Target": "classificationError"
         },
-                {
+        {
           "Id": "abaf3cec-126a-4e1d-9630-833b4c693eff",
           "ApiChange": "Resource",
           "ChangedApiName": "classificationInnerError",
@@ -720,7 +834,7 @@
           "Description": "Added the [classificationInnerError](https://learn.microsoft.com/en-us/graph/api/resources/classificationInnerError?view=graph-rest-beta) resource.",
           "Target": "classificationInnerError"
         },
-                {
+        {
           "Id": "abaf3cec-126a-4e1d-9630-833b4c693eff",
           "ApiChange": "Resource",
           "ChangedApiName": "customMetadataDictionary",
@@ -792,7 +906,7 @@
           "Description": "Added the **isDefault** property to the [sensitivityLabel](https://learn.microsoft.com/en-us/graph/api/resources/security-sensitivitylabel?view=graph-rest-beta) resource.",
           "Target": "sensitivityLabel"
         },
-                {
+        {
           "Id": "abaf3cec-126a-4e1d-9630-833b4c693eff",
           "ApiChange": "Property",
           "ChangedApiName": "isEnabled",
@@ -800,7 +914,7 @@
           "Description": "Added the **isEnabled** property to the [sensitivityLabel](https://learn.microsoft.com/en-us/graph/api/resources/security-sensitivitylabel?view=graph-rest-beta) resource.",
           "Target": "sensitivityLabel"
         },
-                {
+        {
           "Id": "abaf3cec-126a-4e1d-9630-833b4c693eff",
           "ApiChange": "Property",
           "ChangedApiName": "isEndpointProtectionEnabled",
@@ -808,7 +922,7 @@
           "Description": "Added the **isEndpointProtectionEnabled** property to the [sensitivityLabel](https://learn.microsoft.com/en-us/graph/api/resources/security-sensitivitylabel?view=graph-rest-beta) resource.",
           "Target": "sensitivityLabel"
         },
-                {
+        {
           "Id": "abaf3cec-126a-4e1d-9630-833b4c693eff",
           "ApiChange": "Property",
           "ChangedApiName": "labelActions",
@@ -816,7 +930,7 @@
           "Description": "Added the **labelActions** property to the [sensitivityLabel](https://learn.microsoft.com/en-us/graph/api/resources/security-sensitivitylabel?view=graph-rest-beta) resource.",
           "Target": "sensitivityLabel"
         },
-                {
+        {
           "Id": "abaf3cec-126a-4e1d-9630-833b4c693eff",
           "ApiChange": "Property",
           "ChangedApiName": "priority",
