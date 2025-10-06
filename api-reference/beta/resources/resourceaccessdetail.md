@@ -21,18 +21,20 @@ Represents details about resources accessed by AI agents, including identifiers,
 
 | Property                       | Type                 | Description                                                                                                                               |
 | :----------------------------- | :------------------- | :---------------------------------------------------------------------------------------------------------------------------------------- |
-| accessType                     | resourceAccessType   | Indicates the type of access performed on the resource. The possible values are: `none`, `read`, `write`, `create`, `unknownFutureValue`. |
+| accessType                     |  microsoft.graph.security.resourceAccessType | Indicates the type of access performed on the resource. The possible values are: `none`, `read`, `write`, `create`, `unknownFutureValue`. |
 | identifier                     | String               | Unique identifier of the resource accessed.                                                                                               |
 | isCrossPromptInjectionDetected | Boolean              | Indicates whether cross-prompt injection was detected during the access attempt.                                                          |
 | labelId                        | String               | Identifier for the sensitivity label applied to the resource, if any.                                                                     |
 | name                           | String               | Name of the resource accessed.                                                                                                            |
-| status                         | resourceAccessStatus | Indicates the status of the access attempt. The possible values are: `none`, `failure`, `success`, `unknownFutureValue`.                  |
+| status                         | microsoft.graph.security.resourceAccessStatus | Indicates the status of the access attempt. The possible values are: `none`, `failure`, `success`, `unknownFutureValue`.                  |
 | url                            | String               | URL of the resource accessed.                                                                                                             |
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
@@ -51,4 +53,3 @@ The following JSON representation shows the resource type.
   "isCrossPromptInjectionDetected": "Boolean"
 }
 ```
-
