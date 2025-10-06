@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an email sign-in identifier that allows users to authenticate using their email address. This is a built-in sign-in identifier that cannot be created or deleted, but can be enabled or disabled.
+Represents an email sign-in identifier that allows users to authenticate using their email address. This is a built-in sign-in identifier that can't be created or deleted, but can be enabled or disabled.
 
 Inherits from [signInIdentifierBase](../resources/signinidentifierbase.md).
 

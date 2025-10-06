@@ -41,7 +41,7 @@ DELETE /identity/signInIdentifiers/{signInIdentifier-name}
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|signInIdentifier-name|String|The name of the sign-in identifier to delete. Supported values for custom username identifiers: `CustomUsername1`, `CustomUsername2`. **Note**: Built-in identifiers (`Email`, `UPN`, `Username`) cannot be deleted.|
+|signInIdentifier-name|String|The name of the sign-in identifier to delete. Supported values for custom username identifiers: `CustomUsername1`, `CustomUsername2`. **Note**: Built-in identifiers (`Email`, `UPN`, `Username`) can't be deleted.|
 
 ## Request headers
 
