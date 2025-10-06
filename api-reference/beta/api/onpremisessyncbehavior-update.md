@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Update the properties of an [onPremisesSyncBehavior](../resources/onpremisessyncbehavior.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

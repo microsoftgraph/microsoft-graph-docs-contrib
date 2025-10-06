@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 Generate a new deployment access key that can be used to install a [sensor](../resources/security-sensor.md) associated with the workspace.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
