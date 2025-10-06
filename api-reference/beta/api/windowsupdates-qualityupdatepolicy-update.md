@@ -73,7 +73,7 @@ The following example shows a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta** Entity URI for microsoft.graph.windowsUpdates.qualityUpdatePolicy not found
+PATCH https://graph.microsoft.com/beta/admin/windows/updates/policies/{policyId}
 Content-Type: application/json
 
 {
@@ -82,7 +82,7 @@ Content-Type: application/json
   "description": "String",
   "approvalRules": [
     {
-      "@odata.type": "microsoft.graph.windowsUpdates.qualityUpdateApprovalRule"
+      "@odata.type": "microsoft.graph.windowsUpdates.contentApprovalRule"
     }
   ],
   "isAutoEnrollDevices": "Boolean"
@@ -95,7 +95,7 @@ The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
 }
 -->
 ``` http
@@ -108,7 +108,7 @@ Content-Type: application/json
   "description": "String",
   "approvalRules": [
     {
-      "@odata.type": "microsoft.graph.windowsUpdates.qualityUpdateApprovalRule"
+      "@odata.type": "microsoft.graph.windowsUpdates.contentApprovalRule"
     }
   ],
   "isAutoEnrollDevices": "Boolean",

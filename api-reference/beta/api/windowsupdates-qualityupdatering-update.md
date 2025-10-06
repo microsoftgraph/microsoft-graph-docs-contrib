@@ -30,7 +30,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ## HTTP request
 
 <!-- {
-  "blockType": "ignored"
+  "blockType": "ignored",
 }
 -->
 ``` http
@@ -102,7 +102,7 @@ The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
 }
 -->
 ``` http
