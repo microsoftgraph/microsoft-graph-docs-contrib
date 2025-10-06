@@ -54,7 +54,7 @@ PATCH ** Entity URI for microsoft.graph.windowsUpdates.qualityUpdatePolicy not f
 |:---|:---|:---|
 |displayName|String| The Quality Update policy display name. Inherited from [microsoft.graph.windowsUpdates.policy](../resources/windowsupdates-policy.md). Required.|
 |description|String| The Quality Update policy description Inherited from [microsoft.graph.windowsUpdates.policy](../resources/windowsupdates-policy.md). Required.|
-|approvalRules|[microsoft.graph.windowsUpdates.approvalRule](../resources/windowsupdates-contentapprovalrule.md) collection| The policy's approved rule to determine which published content matches the rule on an ongoing basis. Inherited from [microsoft.graph.windowsUpdates.policy](../resources/windowsupdates-policy.md). Required.|
+|approvalRules|[microsoft.graph.windowsUpdates.contentApprovalRule](../resources/windowsupdates-contentapprovalrule.md) collection| The policy's approved rule to determine which published content matches the rule on an ongoing basis. Inherited from [microsoft.graph.windowsUpdates.policy](../resources/windowsupdates-policy.md). Required.|
 |createdDateTime|DateTimeOffset| The date and time the Quality Update policy is created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, `2014 is 2014-01-01T00:00:00Z`. Inherited from [microsoft.graph.windowsUpdates.policy](../resources/windowsupdates-policy.md). Optional.|
 |lastModifiedDateTime|DateTimeOffset| The date and time the Quality Update policy was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, `2014 is 2014-01-01T00:00:00Z`. Inherited from [microsoft.graph.windowsUpdates.policy](../resources/windowsupdates-policy.md). Optional.|
 
@@ -69,7 +69,7 @@ If successful, this method returns a `200 OK` response code and an updated [micr
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "update_qualityupdatepolicy"
+  "name": "update_qualityupdatepolicy",
 }
 -->
 ``` http
