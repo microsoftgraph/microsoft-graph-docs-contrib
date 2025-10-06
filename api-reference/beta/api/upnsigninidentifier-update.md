@@ -1,10 +1,10 @@
 ---
 title: "Update upnSignInIdentifier"
 description: "Update the properties of an upnSignInIdentifier object."
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+author: "Gyanendersinghgithub"
 ms.date: 10/02/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice: "CPIM"
 doc_type: apiPageType
 ---
 
@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-PATCH /upnSignInIdentifier
+PATCH /identity/signInIdentifiers/UPN
 ```
 
 ## Request headers
@@ -49,11 +49,10 @@ PATCH /upnSignInIdentifier
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
 
-**TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
-|name|String|**TODO: Add Description** Inherited from [signInIdentifierBase](../resources/signinidentifierbase.md). Required.|
-|isEnabled|Boolean|**TODO: Add Description** Inherited from [signInIdentifierBase](../resources/signinidentifierbase.md). Required.|
+|name|String|The unique name identifier for this UPN sign-in identifier configuration. Always set to "UPN" for this identifier type. Inherited from [signInIdentifierBase](../resources/signinidentifierbase.md). Required.|
+|isEnabled|Boolean|Indicates whether this UPN sign-in identifier type is enabled for user authentication in the tenant. Inherited from [signInIdentifierBase](../resources/signinidentifierbase.md). Required.|
 
 
 
@@ -72,13 +71,13 @@ The following example shows a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/upnSignInIdentifier
+PATCH https://graph.microsoft.com/beta/identity/signInIdentifiers/UPN
 Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.upnSignInIdentifier",
-  "name": "69314bc1-b86c-3e15-3d1e-05037779af45",
-  "isEnabled": "Boolean"
+  "name": "UPN",
+  "isEnabled": true
 }
 ```
 
@@ -98,8 +97,7 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.upnSignInIdentifier",
-  "name": "69314bc1-b86c-3e15-3d1e-05037779af45",
-  "isEnabled": "Boolean"
+  "name": "UPN",
+  "isEnabled": true
 }
 ```
-

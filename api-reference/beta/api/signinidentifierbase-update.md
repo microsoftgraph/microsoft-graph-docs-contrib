@@ -1,10 +1,10 @@
 ---
 title: "Update signInIdentifierBase"
 description: "Update the properties of a signInIdentifierBase object."
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+author: "Gyanendersinghgithub"
 ms.date: 10/02/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice: "CPIM"
 doc_type: apiPageType
 ---
 
@@ -49,11 +49,10 @@ PATCH /identity/signInIdentifiers/{signInIdentifierBaseId}
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
 
-**TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
-|name|String|**TODO: Add Description** Required.|
-|isEnabled|Boolean|**TODO: Add Description** Required.|
+|name|String|The unique name identifier for this sign-in identifier configuration. Possible values include: `Email`, `UPN`, `Username`, `CustomUsername1`, `CustomUsername2`. Required.|
+|isEnabled|Boolean|Indicates whether this sign-in identifier type is enabled for user authentication in the tenant. Required.|
 
 
 
@@ -77,8 +76,8 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.signInIdentifierBase",
-  "name": "88aec2eb-1195-40f3-9b25-ff4be9ee7a3c",
-  "isEnabled": "Boolean"
+  "name": "Email",
+  "isEnabled": true
 }
 ```
 
@@ -98,8 +97,7 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.signInIdentifierBase",
-  "name": "88aec2eb-1195-40f3-9b25-ff4be9ee7a3c",
-  "isEnabled": "Boolean"
+  "name": "Email",
+  "isEnabled": true
 }
 ```
-

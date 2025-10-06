@@ -1,10 +1,10 @@
 ---
 title: "Update emailSignInIdentifier"
 description: "Update the properties of an emailSignInIdentifier object."
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+author: "Gyanendersinghgithub"
 ms.date: 10/02/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice: "CPIM"
 doc_type: apiPageType
 ---
 
@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-PATCH /emailSignInIdentifier
+PATCH /identity/signInIdentifiers/Email
 ```
 
 ## Request headers
@@ -49,11 +49,10 @@ PATCH /emailSignInIdentifier
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
 
-**TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
-|name|String|**TODO: Add Description** Inherited from [signInIdentifierBase](../resources/signinidentifierbase.md). Required.|
-|isEnabled|Boolean|**TODO: Add Description** Inherited from [signInIdentifierBase](../resources/signinidentifierbase.md). Required.|
+|name|String|The unique name identifier for this email sign-in identifier configuration. Always set to "Email" for this identifier type. Inherited from [signInIdentifierBase](../resources/signinidentifierbase.md). Required.|
+|isEnabled|Boolean|Indicates whether this email sign-in identifier type is enabled for user authentication in the tenant. Inherited from [signInIdentifierBase](../resources/signinidentifierbase.md). Required.|
 
 
 
@@ -72,13 +71,13 @@ The following example shows a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/emailSignInIdentifier
+PATCH https://graph.microsoft.com/beta/identity/signInIdentifiers/Email
 Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.emailSignInIdentifier",
-  "name": "786a7f66-d644-d886-da2e-a06147b19ebd",
-  "isEnabled": "Boolean"
+  "name": "Email",
+  "isEnabled": true
 }
 ```
 
@@ -98,8 +97,7 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.emailSignInIdentifier",
-  "name": "786a7f66-d644-d886-da2e-a06147b19ebd",
-  "isEnabled": "Boolean"
+  "name": "Email",
+  "isEnabled": true
 }
 ```
-
