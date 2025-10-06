@@ -576,9 +576,9 @@ items:
         href: ../../resources/serviceprincipalidentity.md
       - name: User identity
         href: ../../resources/useridentity.md
-      - name: User last Sign-in recommendation insight setting
+      - name: User last sign-in recommendation insight setting
         href: ../../resources/userlastsigninrecommendationinsightsetting.md
-      - name: User Sign-in insight
+      - name: User sign-in insight
         href: ../../resources/usersignininsight.md
   - name: Consent requests
     items:
