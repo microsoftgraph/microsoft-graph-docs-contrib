@@ -25,12 +25,12 @@ Inherits from [microsoft.graph.windowsUpdates.policy](../resources/windowsupdate
 |[Get](../api/windowsupdates-qualityupdatepolicy-get.md)|[microsoft.graph.windowsUpdates.qualityUpdatePolicy](../resources/windowsupdates-qualityupdatepolicy.md)|Read the properties and relationships of [microsoft.graph.windowsUpdates.qualityUpdatePolicy](../resources/windowsupdates-qualityupdatepolicy.md) object.|
 |[Update](../api/windowsupdates-qualityupdatepolicy-update.md)|[microsoft.graph.windowsUpdates.qualityUpdatePolicy](../resources/windowsupdates-qualityupdatepolicy.md)|Update the properties of a qualityUpdatePolicy object.|
 |[Delete](../api/windowsupdates-qualityupdatepolicy-delete.md)|None|Delete a qualityUpdatePolicy object.|
-|[List applicableContent](../api/windowsupdates-qualityupdatepolicy-list-applicablecontent.md)|[microsoft.graph.windowsUpdates.applicableContent](../resources/windowsupdates-applicablecontent.md) collection| Get a list of the applicableContent objects and their properties.|
-|[Create applicableContent](../api/windowsupdates-qualityupdatepolicy-post-applicablecontent.md)|[microsoft.graph.windowsUpdates.applicableContent](../resources/windowsupdates-applicablecontent.md)|Create a new applicableContent object.|
-|[List approvals](../api/windowsupdates-qualityupdatepolicy-list-approvals.md)|[microsoft.graph.windowsUpdates.policyApproval](../resources/windowsupdates-policyapproval.md) collection| Get a list of the policyApproval objects and their properties.|
-|[Create policyApproval](../api/windowsupdates-qualityupdatepolicy-post-approvals.md)|[microsoft.graph.windowsUpdates.policyApproval](../resources/windowsupdates-policyapproval.md)|Create a new policyApproval object.|
-|[List rings](../api/windowsupdates-qualityupdatepolicy-list-rings.md)|[microsoft.graph.windowsUpdates.ring](../resources/windowsupdates-ring.md) collection| Get a list of the ring objects and their properties.|
-|[Create ring](../api/windowsupdates-qualityupdatepolicy-post-rings.md)|[microsoft.graph.windowsUpdates.ring](../resources/windowsupdates-ring.md)|Create a new ring object.|
+|[List applicableContent](../api/windowsupdates-policy-list-applicablecontent.md)|[microsoft.graph.windowsUpdates.applicableContent](../resources/windowsupdates-applicablecontent.md) collection| Get a list of the applicableContent objects and their properties.|
+|[Create applicableContent](../api/windowsupdates-policy-post-applicablecontent.md)|[microsoft.graph.windowsUpdates.applicableContent](../resources/windowsupdates-applicablecontent.md)|Create a new applicableContent object.|
+|[List approvals](../api/windowsupdates-policyapproval-list.md)|[microsoft.graph.windowsUpdates.policyApproval](../resources/windowsupdates-policyapproval.md) collection| Get a list of the policyApproval objects and their properties.|
+|[Create policyApproval](../api/windowsupdates-policyapproval-post.md)|[microsoft.graph.windowsUpdates.policyApproval](../resources/windowsupdates-policyapproval.md)|Create a new policyApproval object.|
+|[List rings](../api/windowsupdates-policy-list-rings.md)|[microsoft.graph.windowsUpdates.ring](../resources/windowsupdates-ring.md) collection| Get a list of the ring objects and their properties.|
+|[Create ring](../api/windowsupdates-policy-post-rings.md)|[microsoft.graph.windowsUpdates.ring](../resources/windowsupdates-ring.md)|Create a new ring object.|
 
 ## Properties
 |Property|Type|Description|
