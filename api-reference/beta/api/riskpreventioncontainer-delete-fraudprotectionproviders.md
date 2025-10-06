@@ -2,7 +2,7 @@
 title: "Delete fraudProtectionProvider"
 description: "Delete a fraudProtectionProvider object."
 author: "more-rasika"
-ms.date: 08/05/2025
+ms.date: 10/06/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a fraudProtectionProvider object.
+Delete a [fraudProtectionProvider](../resources/fraudprotectionprovider.md) object.
 
 ## Permissions
 

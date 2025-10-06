@@ -1,8 +1,8 @@
 ---
-title: "Create fraudProtectionProviders"
+title: "Create fraudProtectionProvider"
 description: "Create a new fraudProtectionProvider."
 author: "more-rasika"
-ms.date: 08/05/2025
+ms.date: 10/06/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new fraudProtectionProvider. You can create one of the following subtypes that are derived from **fraudProtectionProvider**.
+Create a new [fraudProtectionProvider](../resources/fraudprotectionprovider.md) object. You can create one of the following subtypes that are derived from **fraudProtectionProvider**.
 
 - [arkoseFraudProtectionProvider](../resources/arkoseFraudProtectionProvider.md)
 - [humanSecurityFraudProtectionProvider](../resources/humansecurityfraudprotectionprovider.md)

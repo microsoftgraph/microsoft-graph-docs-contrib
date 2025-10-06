@@ -1307,19 +1307,9 @@
           "ChangeType": "Addition",
           "Description": "Added the [riskPreventionContainer](https://learn.microsoft.com/en-us/graph/api/resources/riskPreventionContainer?view=graph-rest-beta) resource.",
           "Target": "riskPreventionContainer"
-        }
-      ],
-      "Id": "ac36227e-16bb-4ab3-8776-3a5e5f03d9b9",
-      "Cloud": "Prod",
-      "Version": "beta",
-      "CreatedDateTime": "2025-09-30T21:32:55.1366384Z",
-      "WorkloadArea": "Identity and access",
-      "SubArea": "Identity and sign-in"
-    },
-    {
-      "ChangeList": [
+        },
         {
-          "Id": "2d4013a1-83b7-4dc8-b33d-9569c146386d",
+          "Id": "ac36227e-16bb-4ab3-8776-3a5e5f03d9b9",
           "ApiChange": "Resource",
           "ChangedApiName": "humanSecurityFraudProtectionProvider",
           "ChangeType": "Addition",
@@ -1327,10 +1317,10 @@
           "Target": "humanSecurityFraudProtectionProvider"
         }
       ],
-      "Id": "2d4013a1-83b7-4dc8-b33d-9569c146386d",
+      "Id": "ac36227e-16bb-4ab3-8776-3a5e5f03d9b9",
       "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2025-09-30T21:47:14.0595903Z",
+      "CreatedDateTime": "2025-09-30T21:32:55.1366384Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Identity and sign-in"
     }

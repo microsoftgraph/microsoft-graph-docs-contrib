@@ -1,8 +1,8 @@
 ---
 title: "List fraudProtectionProviders"
-description: "Get a list of the fraudProtectionProviders and their properties."
+description: "Get a list of the fraudProtectionProvider objects and their properties."
 author: "more-rasika"
-ms.date: 08/05/2025
+ms.date: 10/06/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the fraudProtectionProviders and their properties. The following derived types are supported:
+Get a list of the [fraudProtectionProvider](../resources/fraudprotectionprovider.md) objects and their properties. The following derived types are supported:
 
 - [arkoseFraudProtectionProvider](../resources/arkoseFraudProtectionProvider.md)
 - [humanSecurityFraudProtectionProvider](../resources/humansecurityfraudprotectionprovider.md)
@@ -44,7 +44,7 @@ GET /identity/riskPrevention/fraudProtectionProviders
 
 ## Optional query parameters
 
-This method supports the `$select` and `$filter` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
