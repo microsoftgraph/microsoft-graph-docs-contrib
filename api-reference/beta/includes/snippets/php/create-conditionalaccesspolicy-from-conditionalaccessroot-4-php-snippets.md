@@ -19,7 +19,7 @@ use Microsoft\Graph\Beta\Generated\Models\ConditionalAccessGrantControl;
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new ConditionalAccessPolicy();
-$requestBody->setDisplayName('Require MFA to EXO from non-complaint devices.');
+$requestBody->setDisplayName('Require MFA to EXO from non-compliant devices.');
 $requestBody->setState(new ConditionalAccessPolicyState('enabled'));
 $conditions = new ConditionalAccessConditionSet();
 $conditionsApplications = new ConditionalAccessApplications();
