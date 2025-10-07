@@ -63,7 +63,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "contentStoreResourceAccessDetail",
           "ChangeType": "Addition",
-          "Description": "Added the [contentStoreResourceAccessDetail](https://learn.microsoft.com/en-us/graph/api/resources/contentStoreResourceAccessDetail?view=graph-rest-beta) resource type.",
+          "Description": "Added the [contentStoreResourceAccessDetail](https://learn.microsoft.com/en-us/graph/api/resources/contentstoreresourceaccessdetail?view=graph-rest-beta) resource type.",
           "Target": "contentStoreResourceAccessDetail"
         },
         {
@@ -103,7 +103,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "sharepointResourceAccessDetail",
           "ChangeType": "Addition",
-          "Description": "Added the [sharepointResourceAccessDetail](https://learn.microsoft.com/en-us/graph/api/resources/sharepointResourceAccessDetail?view=graph-rest-beta) resource type.",
+          "Description": "Added the [sharepointResourceAccessDetail](https://learn.microsoft.com/en-us/graph/api/resources/sharepointresourceaccessdetail?view=graph-rest-beta) resource type.",
           "Target": "sharepointResourceAccessDetail"
         }
       ],

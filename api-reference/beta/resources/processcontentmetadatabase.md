@@ -52,15 +52,15 @@ The following JSON representation shows the resource type.
 }-->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.processConversationMetadata",
+  "@odata.type": "#microsoft.graph.processContentMetadataBase",
   "identifier": "String",
   "content": {
     "@odata.type": "microsoft.graph.contentBase"
   },
   "name": "String",
   "correlationId": "String",
-  "sequenceNumber": "Integer",
-  "length": "Integer",
+  "sequenceNumber": "Int64",
+  "length": "Int64",
   "isTruncated": "Boolean",
   "createdDateTime": "String (timestamp)",
   "modifiedDateTime": "String (timestamp)",
