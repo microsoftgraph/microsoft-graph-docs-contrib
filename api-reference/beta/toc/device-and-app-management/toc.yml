@@ -424,7 +424,7 @@ items:
       href: ../../api/virtualendpoint-list-cloudapps.md
     - name: List managed licenses
       href: ../../api/virtualendpoint-list-managedlicenses.md
-    - name: List front line service plans (deprecated)
+    - name: List frontline service plans (deprecated)
       href: ../../api/virtualendpoint-list-frontlineserviceplans.md
   - name: Alert monitoring
     items:
