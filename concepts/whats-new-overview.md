@@ -26,12 +26,13 @@ Use the [resize](/graph/api/cloudpc-resize) operation of [cloudPC](/graph/api/re
 
 ### Identity and access | Directory management
 
-Resolved a known permissions issue for internalDomainFederation WRITE APIs that previously required consenting to the *Directory.AccessAsUser.All* permission for delegated scenarios. The following new permissions are now available as lesser-privileged alternatives for managing internalDomainFederation:
+- Addressed a permissions issue for [internalDomainFederation](/graph/api/resources/internaldomainfederation) write operations. Previously, delegated scenarios required the high-privilege _Directory.AccessAsUser.All_ permission. Two new, lesser-privileged permissions are now available for managing the **internalDomainFederation** resource:
+   - _Domain-InternalFederation.Read.All_ – Read **internalDomainFederation** resources.
+   - _Domain-InternalFederation.ReadWrite.All_ – Read and write **internalDomainFederation** resources.
 
-- **Domain-InternalFederation.Read.All** - Read internalDomainFederation resources
-- **Domain-InternalFederation.ReadWrite.All** - Read and write internalDomainFederation resources
+- Added the _Domain-InternalFederation.ReadWrite.All_ delegated and application permissions as lower-privilege alternatives for updating a [domain](/graph/api/resources/domain). This also enables updating the **authenticationType** property of a domain in both delegated and application contexts, whereas previously only delegated scenarios with _Directory.AccessAsUser.All_ permission were supported.
 
-These permissions provide more granular access control compared to the broader **Domain.Read.All** and **Domain.ReadWrite.All** permissions.
+These new permissions enable more granular access control for managing **internalDomainFederation** and **domain** resources.
 
 ### Sites and lists
 
