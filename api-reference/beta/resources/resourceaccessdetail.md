@@ -17,6 +17,8 @@ Namespace: microsoft.graph
 
 Represents details about resources accessed by AI agents, including identifiers, access type, and status.
 
+Base type of [contentStoreResourceAccessDetail](../resources/contentstoreresourceaccessdetail.md) and [sharepointResourceAccessDetail](../resources/sharepointresourceaccessdetail.md).
+
 ## Properties
 
 | Property | Type | Description |
