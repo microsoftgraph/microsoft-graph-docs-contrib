@@ -60,7 +60,7 @@ items:
       href: ../../api/user-reminderview.md
   - name: Cloud PC
     items:
-    - name: List cloud PCs
+    - name: List Cloud PCs
       href: ../../api/user-list-cloudpcs.md
   - name: Data security and governance
     items:
