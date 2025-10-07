@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 > [!CAUTION]
-> The [cloudPcFrontLineServicePlan](../resources/cloudpcfrontlineserviceplan.md) resource and its APIs are deprecated and will stop returning data on March 31, 2026. Use the [cloudPcManagedLicense](../resources/cloudpcmanagedlicense.md) API instead.
+> The [cloudPcFrontLineServicePlan](../resources/cloudpcfrontlineserviceplan.md) resource and its APIs are deprecated and will stop returning data on March 31, 2026. Going forward, use the [cloudPcManagedLicense](../resources/cloudpcmanagedlicense.md) API instead.
 
 Get the properties and relationships of a [cloudPcFrontLineServicePlan](../resources/cloudpcfrontlineserviceplan.md) object.
 
