@@ -37,7 +37,7 @@ The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.aiAgentInfo",
-  "baseType": "microsoft.graph.aiInteractionEntity",
+  "baseType": "microsoft.graph.aiInteractionEntity"
 }
 -->
 ``` json
