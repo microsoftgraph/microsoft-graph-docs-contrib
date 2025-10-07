@@ -66,10 +66,3 @@ The following table lists the current charges for each service area.
 | Microsoft Teams Calling | $0.05 (USD) |
 | Microsoft Teams Messaging | $0.01 (USD) |
 | Microsoft Teams Presence | $0.01 (USD) |
-
-## Default safe application quota
-
-[!IMPORTANT]
-> This feature is currently under development. This documentation is included here so that the full view of how the feature will work long term is visible. Feedback is welcome on the preliminary documentation.
-
-By default, an application can consume up to 20% of the tenant's total quota. This default protects the tenant from an application consuming all of a tenant's resources unexpectedly. An application can be excluded from this default in order to allow it to use up to the full tenant quota. Because excluding too many applications at once might cause contention for the tenant's resources, it's important to only exclude applications that you know need the extra capacity to meet their goals.
