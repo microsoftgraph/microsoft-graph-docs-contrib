@@ -278,6 +278,10 @@ items:
     items:
     - name: Activity metadata
       href: ../../resources/activitymetadata.md
+    - name: Ai agent info
+      href: ../../resources/aiagentinfo.md
+    - name: Ai interaction entity
+      href: ../../resources/aiinteractionentity.md
     - name: Ai interaction plugin
       href: ../../resources/aiinteractionplugin.md
     - name: Auto labeling
@@ -296,6 +300,8 @@ items:
       href: ../../resources/computerightsandinheritanceresult.md
     - name: Content base
       href: ../../resources/contentbase.md
+    - name: Content store resource access detail
+      href: ../../resources/contentstoreresourceaccessdetail.md
     - name: Custom metadata dictionary
       href: ../../resources/custommetadatadictionary.md
     - name: Device metadata
@@ -348,12 +354,16 @@ items:
       href: ../../resources/protectedapplicationmetadata.md
     - name: Protected content
       href: ../../resources/protectedcontent.md
+    - name: Resource access detail
+      href: ../../resources/resourceaccessdetail.md
     - name: Restrict access action
       href: ../../resources/restrictaccessaction.md
     - name: Restrict access action base
       href: ../../resources/restrictaccessactionbase.md
     - name: Scope base
       href: ../../resources/scopebase.md
+    - name: SharePoint resource access detail
+      href: ../../resources/sharepointresourceaccessdetail.md
     - name: Tenant scope
       href: ../../resources/tenantscope.md
     - name: Text content
