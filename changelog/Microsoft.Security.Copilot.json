@@ -5,6 +5,14 @@
         {
           "Id": "a1b2c3d4-0002-4e5f-9012-abcdef123456",
           "ApiChange": "Resource",
+          "ChangedApiName": "securityCopilot",
+          "ChangeType": "Addition",
+          "Description": "Added the [securityCopilot](https://learn.microsoft.com/en-us/graph/api/resources/securityCopilot?view=graph-rest-beta) resource.",
+          "Target": "securityCopilot"
+        },
+        {
+          "Id": "a1b2c3d4-0002-4e5f-9012-abcdef123456",
+          "ApiChange": "Resource",
           "ChangedApiName": "evaluation",
           "ChangeType": "Addition",
           "Description": "Added the [evaluation](https://learn.microsoft.com/en-us/graph/api/resources/security-securitycopilot-evaluation?view=graph-rest-beta) resource.",
