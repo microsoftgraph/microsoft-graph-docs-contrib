@@ -2,7 +2,7 @@
 title: "Delete policyDeletableItem"
 description: "Permanently delete a policyDeletableItem object."
 author: "ashyasingh"
-ms.date: 08/11/2025
+ms.date: 10/07/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
@@ -27,6 +27,8 @@ Permanently delete a [policyDeletableItem](../resources/policydeletableitem.md) 
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
+### Permissions for restoring cross-tenant access policy objects
+
 <!-- {
   "blockType": "permissions",
   "name": "policydeletableitem-delete-permissions",
@@ -35,6 +37,21 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 [!INCLUDE [permissions-table](../includes/permissions/policydeletableitem-delete-permissions.md)]
+
+[!INCLUDE [rbac-xtap-apis-write](../includes/rbac-for-apis/rbac-xtap-apis-write.md)]
+
+### Permissions for restoring conditional access policy objects
+
+<!-- {
+  "blockType": "permissions",
+  "name": "policydeletableitem-delete-permissions",
+  "requestUrls": ["DELETE /identity/conditionalAccess/deletedItems/policies/{id}", "DELETE /identity/conditionalAccess/deletedItems/namedLocations/{id}"],
+  "mergePermissions": true 
+}
+-->
+[!INCLUDE [permissions-table](../includes/permissions/policydeletableitem-delete-2-permissions.md)]
+
+[!INCLUDE [rbac-conditionalaccess-apis-write](../includes/rbac-for-apis/rbac-conditionalaccess-apis-write.md)]
 
 ## HTTP request
 
