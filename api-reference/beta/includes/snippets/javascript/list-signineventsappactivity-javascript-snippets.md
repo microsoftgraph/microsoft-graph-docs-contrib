@@ -10,7 +10,8 @@ const options = {
 
 const client = Client.init(options);
 
-await client.api('/deviceManagement/telecomExpenseManagementPartners/{telecomExpenseManagementPartnerId}')
-	.delete();
+let signInEventsAppSummary = await client.api('/auditLogs/signInEventsAppSummary')
+	.version('beta')
+	.get();
 
 ```

@@ -238,7 +238,6 @@ DELETE https://graph.microsoft.com/beta/identity/conditionalAccess/deletedItems/
 
 ---
 
-
 #### Response
 
 The following example shows the response.
@@ -291,7 +290,6 @@ DELETE https://graph.microsoft.com/beta/identity/conditionalAccess/deletedItems/
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
