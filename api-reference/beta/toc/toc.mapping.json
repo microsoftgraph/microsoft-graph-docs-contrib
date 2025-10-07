@@ -2713,6 +2713,8 @@
             "userDataSecurityAndGovernance"
            ],
             "complexTypes": [
+              "aiAgentInfo",
+              "aiInteractionEntity",
               "activityMetadata",
               "aiInteractionPlugin",
               "autoLabeling",
@@ -2723,6 +2725,7 @@
               "classificationInnerError",
               "computeRightsAndInheritanceResult",
               "contentBase",
+              "contentStoreResourceAccessDetail",
               "customMetadataDictionary",
               "deviceMetadata",
               "dlpActionInfo",
@@ -2750,9 +2753,11 @@
               "processingError",
               "protectedApplicationMetadata",
               "protectedContent",
+              "resourceAccessDetail",
               "restrictAccessAction",
               "restrictAccessActionBase",
               "scopeBase",
+              "sharepointResourceAccessDetail",
               "tenantScope",
               "textContent",
               "userScope"
