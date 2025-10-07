@@ -1,9 +1,9 @@
 ---
 title: "protectionRuleBase: deleteAndUnprotect"
 description: "Delete and unprotect all the artifacts protected by a dynamic rule."
-author: "manikantsinghms"
-ms.reviewer: "manikantsinghms"
-ms.date: 01/15/2025
+author: "rigera"
+ms.reviewer: "rigera"
+ms.date: 10/09/2025
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
@@ -12,8 +12,6 @@ doc_type: apiPageType
 # protectionRuleBase: deleteAndUnprotect
 
 Namespace: microsoft.graph
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete and unprotect all the artifacts protected by a dynamic [rule](../resources/protectionrulebase.md). This action is only applicable to dynamic rules.
 
@@ -27,7 +25,11 @@ The following points apply when you delete a dynamic rule and unprotect all arti
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "permissions", "name": "protectionrulebase_deleteandunprotect" } -->
+<!-- {
+  "blockType": "permissions",
+  "name": "protectionrulebase-deleteandunprotect-permissions"
+}
+-->
 [!INCLUDE [permissions-table](../includes/permissions/protectionrulebase-deleteandunprotect-permissions.md)]
 
 ## HTTP request
@@ -64,21 +66,14 @@ The following example shows how to delete a **driveInclusionRule** associated wi
 #### Request
 
 The following example shows a request.
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "driveprotectionrulethis.deleteandunprotect"
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/solutions/backupRestore/oneDriveForBusinessProtectionPolicies/71633878-8321-4950-bfaf-ed285bdd1461/driveInclusionRules/61633878-8321-4950-bfaf-ed285bdd1461/deleteAndUnprotect
+POST https://graph.microsoft.com/v1.0/solutions/backupRestore/oneDriveForBusinessProtectionPolicies/71633878-8321-4950-bfaf-ed285bdd1461/driveInclusionRules/61633878-8321-4950-bfaf-ed285bdd1461/deleteAndUnprotect
 ```
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/driveprotectionrulethisdeleteandunprotect-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 #### Response
 
@@ -91,12 +86,12 @@ The following example shows the response.
 }
 -->
 ``` http
-HTTP/1.1 200 OK
+HTTP/1.1 202 Accepted
 Content-Type: application/json
 
 {
   "value": {
-    "@odata.type": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.protectionRuleBase",
+    "@odata.type": "https://graph.microsoft.com/v1.0/$metadata#microsoft.graph.protectionRuleBase",
     "id": "61633878-8321-4950-bfaf-ed285bdd1461",
     "status": "deleteRequested",
     "createdDateTime": "2025-01-15T15:07:44.3043505Z",
@@ -120,21 +115,14 @@ The following example shows how to delete a **mailboxInclusionRule** associated 
 #### Request
 
 The following example shows a request.
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "mailboxprotectionrulethis.deleteandunprotect"
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/solutions/backupRestore/exchangeProtectionPolicies/6b0991b9-e7d4-4794-86fa-2a3f2a4e3177/mailboxInclusionRules/52147fb9-2682-47bc-a8f6-6c38c1ff498d/deleteAndUnprotect
+POST https://graph.microsoft.com/v1.0/solutions/backupRestore/exchangeProtectionPolicies/6b0991b9-e7d4-4794-86fa-2a3f2a4e3177/mailboxInclusionRules/52147fb9-2682-47bc-a8f6-6c38c1ff498d/deleteAndUnprotect
 ```
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/mailboxprotectionrulethisdeleteandunprotect-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 #### Response
 
@@ -152,7 +140,7 @@ Content-Type: application/json
 
 {
   "value": {
-    "@odata.type": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.protectionRuleBase",
+    "@odata.type": "https://graph.microsoft.com/v1.0/$metadata#microsoft.graph.protectionRuleBase",
     "id": "52147fb9-2682-47bc-a8f6-6c38c1ff498d",
     "status": "deleteRequested",
     "createdDateTime": "2025-01-15T15:07:44.3043505Z",
