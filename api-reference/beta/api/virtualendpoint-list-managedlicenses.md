@@ -1,6 +1,6 @@
 ---
 title: "List managedLicenses"
-description: "Get a list of the cloudPcManagedLicense objects and their properties."
+description: "Get information about cloudPcManagedLicense that the Cloud PC service manages directly."
 author: "Yu-Lan"
 ms.date: 09/04/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [cloudPcManagedLicense](../resources/cloudpcmanagedlicense.md) objects and their properties.
+Get information about [cloudPcManagedLicense](../resources/cloudpcmanagedlicense.md) that the Cloud PC service manages directly.
 
 ## Permissions
 
@@ -89,18 +89,18 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.cloudPcManagedLicense",
       "id": "7c3adc13-42ff-14c5-c29f-24fb5528f76b",
-      "licenseType": "String",
-      "status": "String",
-      "displayName": "String",
-      "licensesCount": "Integer",
-      "assignedCount": "Integer",
-      "allotmentLicensesCount": "Integer",
-      "subscriptionId": "String",
-      "servicePlanId": "String",
-      "expirationDateTime": "String (timestamp)",
-      "latestLicenseStartDateTime": "String (timestamp)",
-      "nextBillingDateTime": "String (timestamp)",
-      "activeDateTime": "String (timestamp)"
+      "licenseType": "reserve",
+      "status": "active",
+      "displayName": "Windows 365 Reserve 2 vCPU 8 GB 128 GB",
+      "licensesCount": 100,
+      "assignedCount": 75,
+      "allotmentLicensesCount": 25,
+      "subscriptionId": "12345678-1234-1234-1234-123456789012",
+      "servicePlanId": "beb10e72-c936-4008-a780-146daa26c0c7",
+      "expirationDateTime": "2024-12-31T23:59:59Z",
+      "latestLicenseStartDateTime": "2024-01-01T00:00:00Z",
+      "nextBillingDateTime": "2024-11-01T00:00:00Z",
+      "activeDateTime": "2024-01-01T08:30:00Z"
     }
   ]
 }

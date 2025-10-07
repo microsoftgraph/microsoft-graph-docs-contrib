@@ -3,6 +3,32 @@
     {
       "ChangeList": [
         {
+          "Id": "d85eaadf-0b79-452e-9e3f-2e9a1fbfe91a",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "dependentResources",
+          "ChangeType": "Addition",
+          "Description": "Added the **dependentResources** relationship to the [educationAssignmentResource](https://learn.microsoft.com/en-us/graph/api/resources/educationAssignmentResource?view=graph-rest-beta) resource.",
+          "Target": "educationAssignmentResource"
+        },
+        {
+          "Id": "d85eaadf-0b79-452e-9e3f-2e9a1fbfe91a",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "dependentResources",
+          "ChangeType": "Addition",
+          "Description": "Added the **dependentResources** relationship to the [educationSubmissionResource](https://learn.microsoft.com/en-us/graph/api/resources/educationSubmissionResource?view=graph-rest-beta) resource.",
+          "Target": "educationSubmissionResource"
+        }
+      ],
+      "Id": "d85eaadf-0b79-452e-9e3f-2e9a1fbfe91a",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-05-21T17:27:44.8501194Z",
+      "WorkloadArea": "Education",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "1fcce344-d144-48db-8e31-7f923b7c3585",
           "ApiChange": "Enumeration",
           "ChangedApiName": "educationSpeechType",
