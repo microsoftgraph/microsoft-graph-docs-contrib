@@ -22,7 +22,7 @@ Inherits from [aiInteractionEntity](../resources/aiinteractionentity.md).
 
 | Property    | Type   | Description                                                                                                       |
 | :---------- | :----- | :---------------------------------------------------------------------------------------------------------------- |
-| blueprintId | String | Identifier of the parent agent blueprint that defines the agent’s identity and configuration.                     |
+| blueprintId | String | Identifier of the parent agent blueprint that defines the identity and configuration of the agent. |
 | identifier  | String | The unique identifier of the AI agent. Inherited from [aiInteractionEntity](../resources/aiinteractionentity.md). |
 | name        | String | The display name of the AI agent. [aiInteractionEntity](../resources/aiinteractionentity.md).                     |
 | version     | String | The version of the AI agent used. Inherited from [aiInteractionEntity](../resources/aiinteractionentity.md).      |
@@ -42,9 +42,9 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.aiAgentInfo",
+  "blueprintId": "String",
   "identifier": "String",
   "name": "String",
-  "version": "String",
-  "blueprintId": "String"
+  "version": "String"
 }
 ```
