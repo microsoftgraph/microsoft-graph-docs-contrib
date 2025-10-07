@@ -287,7 +287,6 @@ GET https://graph.microsoft.com/beta/identity/conditionalAccess/deletedItems/pol
 
 ---
 
-
 #### Response
 
 The following example shows the response.
@@ -411,7 +410,6 @@ GET https://graph.microsoft.com/beta/identity/conditionalAccess/deletedItems/nam
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 

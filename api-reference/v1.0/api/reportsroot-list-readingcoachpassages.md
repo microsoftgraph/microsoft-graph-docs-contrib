@@ -61,6 +61,7 @@ The following example shows how to get a list of the Reading Coach passages from
 
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_readingCoachPassages_1"
@@ -69,6 +70,12 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/v1.0/education/reports/readingCoachPassages
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-readingcoachpassages-1-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
@@ -131,6 +138,7 @@ The following example shows how to get the Reading Coach passages for a specific
 
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_readingCoachPassages_2"
@@ -139,6 +147,12 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/v1.0/education/reports/readingCoachPassages?$filter=practicedAtDateTime gt 2025-06-22T00:00:00Z and practicedAtDateTime lt 2025-06-23T00:00:00Z
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-readingcoachpassages-2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 

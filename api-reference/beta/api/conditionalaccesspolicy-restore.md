@@ -94,7 +94,6 @@ POST https://graph.microsoft.com/beta/identity/conditionalAccess/deletedItems/po
 
 ---
 
-
 ### Response
 
 The following example shows the response.

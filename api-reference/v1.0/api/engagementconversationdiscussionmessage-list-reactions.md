@@ -61,6 +61,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Request
 
 The following example shows how to get a list of reactions for a Teams questions and answers message.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_engagementconversationmessagereaction",
@@ -70,6 +71,12 @@ The following example shows how to get a list of reactions for a Teams questions
 ``` http
 GET https://graph.microsoft.com/v1.0/communications/onlineMeetingConversations/eyJfdHlwZSI6IlRocmVhZCIsImlkIjoiMzM0NjU1NTExODA0MzEzNiJ9/messages/eyJfdHlwZSI6Ik1lc3NhZ2UiLCJpZCI6IjMzNDY1NTUxMTgwNDMxMzYifQ/reactions
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-engagementconversationmessagereaction-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 
