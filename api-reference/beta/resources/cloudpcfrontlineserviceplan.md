@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: resourcePageType
 ms.date: 05/23/2024
+toc.title: "Cloud PC frontline service plan (deprecated)"
 ---
 
 # cloudPcFrontLineServicePlan resource type (deprecated)
