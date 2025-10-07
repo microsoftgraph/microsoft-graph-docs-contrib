@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "f008e001-d158-496f-b292-2efc0fb21476",
+          "ApiChange": "Property",
+          "ChangedApiName": "meetingOptionsWebUrl",
+          "ChangeType": "Addition",
+          "Description": "Add the **meetingOptionsWebUrl** property from the [onlineMeetingBase](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeetingBase?view=graph-rest-beta) resource.",
+          "Target": "onlineMeetingBase"
+        }
+      ],
+      "Id": "f008e001-d158-496f-b292-2efc0fb21476",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-08-12T14:50:41.9023303Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "7b3b450f-7d32-4b67-a678-20b186525452",
           "ApiChange": "Property",
           "ChangedApiName": "allowCopyingAndSharingMeetingContent",
