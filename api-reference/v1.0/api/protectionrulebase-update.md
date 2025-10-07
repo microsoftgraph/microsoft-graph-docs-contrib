@@ -18,11 +18,7 @@ Update the properties of a [protectionRuleBase](../resources/protectionrulebase.
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "protectionrulebase-update-permissions"
-}
--->
+<!-- { "blockType": "permissions", "name": "protectionrulebase_update" } -->
 [!INCLUDE [permissions-table](../includes/permissions/protectionrulebase-update-permissions.md)]
 
 ## HTTP request
@@ -67,6 +63,7 @@ The following example shows how to update a **driveInclusionRule** associated wi
 #### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_driveInclusionRule"
@@ -80,6 +77,12 @@ Content-Type: application/json
   "driveExpression": "(memberOf -any (group.id -in ['4e8e9b15-bfc8-40a2-aed0-3f65a22e2bd4']))"
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-driveinclusionrule-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
@@ -129,6 +132,7 @@ The following example shows how to update a **mailboxInclusionRule** associated 
 #### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_mailboxInclusionRule"
@@ -142,6 +146,12 @@ Content-Type: application/json
   "mailboxExpression": "(memberOf -any (group.id -in ['c318eb4a-ea72-42bd-8f0b-d0bbf794bec7']))"
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-mailboxinclusionrule-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 

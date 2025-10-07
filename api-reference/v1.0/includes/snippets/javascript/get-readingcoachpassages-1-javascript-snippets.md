@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let telecomExpenseManagementPartners = await client.api('/deviceManagement/telecomExpenseManagementPartners')
+let readingCoachPassages = await client.api('/education/reports/readingCoachPassages')
 	.get();
 
 ```

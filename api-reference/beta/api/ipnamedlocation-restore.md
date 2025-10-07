@@ -29,6 +29,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/ipnamedlocation-restore-permissions.md)]
 
+[!INCLUDE [rbac-conditionalaccess-apis-write](../includes/rbac-for-apis/rbac-conditionalaccess-apis-write.md)]
+
 ## HTTP request
 
 <!-- {
