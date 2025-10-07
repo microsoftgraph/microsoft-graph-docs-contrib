@@ -40,7 +40,8 @@ None.
 The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.contentStoreResourceAccessDetail"
+  "@odata.type": "microsoft.graph.contentStoreResourceAccessDetail",
+  "baseType": "microsoft.graph.resourceAccessDetail"
 }
 -->
 ``` json
