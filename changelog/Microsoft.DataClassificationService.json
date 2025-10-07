@@ -23,7 +23,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "aiAgentInfo",
           "ChangeType": "Addition",
-          "Description": "Added the [aiAgentInfo](https://learn.microsoft.com/en-us/graph/api/resources/aiAgentInfo?view=graph-rest-beta) resource.",
+          "Description": "Added the [aiAgentInfo](https://learn.microsoft.com/en-us/graph/api/resources/aiAgentInfo?view=graph-rest-beta) resource type.",
           "Target": "aiAgentInfo"
         },
         {
@@ -31,7 +31,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "aiInteractionEntity",
           "ChangeType": "Addition",
-          "Description": "Added the [aiInteractionEntity](https://learn.microsoft.com/en-us/graph/api/resources/aiInteractionEntity?view=graph-rest-beta) resource.",
+          "Description": "Added the [aiInteractionEntity](https://learn.microsoft.com/en-us/graph/api/resources/aiInteractionEntity?view=graph-rest-beta) resource type.",
           "Target": "aiInteractionEntity"
         },
         {
@@ -39,7 +39,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "identifier",
           "ChangeType": "Deletion",
-          "Description": "Removed the **identifier** property from the [aiInteractionPlugin](https://learn.microsoft.com/en-us/graph/api/resources/aiInteractionPlugin?view=graph-rest-beta) resource.",
+          "Description": "Removed the **identifier** property from the [aiInteractionPlugin](https://learn.microsoft.com/en-us/graph/api/resources/aiInteractionPlugin?view=graph-rest-beta) resource in favor of the **identifier** property inherited from its base type.",
           "Target": "aiInteractionPlugin"
         },
         {
@@ -47,7 +47,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "name",
           "ChangeType": "Deletion",
-          "Description": "Removed the **name** property from the [aiInteractionPlugin](https://learn.microsoft.com/en-us/graph/api/resources/aiInteractionPlugin?view=graph-rest-beta) resource.",
+          "Description": "Removed the **name** property from the [aiInteractionPlugin](https://learn.microsoft.com/en-us/graph/api/resources/aiInteractionPlugin?view=graph-rest-beta) resource in favor of the **name** property inherited from its base type.",
           "Target": "aiInteractionPlugin"
         },
         {
@@ -55,7 +55,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "version",
           "ChangeType": "Deletion",
-          "Description": "Removed the **version** property from the [aiInteractionPlugin](https://learn.microsoft.com/en-us/graph/api/resources/aiInteractionPlugin?view=graph-rest-beta) resource.",
+          "Description": "Removed the **version** property from the [aiInteractionPlugin](https://learn.microsoft.com/en-us/graph/api/resources/aiInteractionPlugin?view=graph-rest-beta) resource in favor of the **version** property inherited from its base type.",
           "Target": "aiInteractionPlugin"
         },
         {
@@ -63,15 +63,15 @@
           "ApiChange": "Resource",
           "ChangedApiName": "contentStoreResourceAccessDetail",
           "ChangeType": "Addition",
-          "Description": "Added the [contentStoreResourceAccessDetail](https://learn.microsoft.com/en-us/graph/api/resources/contentStoreResourceAccessDetail?view=graph-rest-beta) resource.",
+          "Description": "Added the [contentStoreResourceAccessDetail](https://learn.microsoft.com/en-us/graph/api/resources/contentStoreResourceAccessDetail?view=graph-rest-beta) resource type.",
           "Target": "contentStoreResourceAccessDetail"
         },
         {
           "Id": "e72bfd48-4fdc-4e10-9d29-89785912a3be",
-          "ApiChange": "Resource",
-          "ChangedApiName": "processConversationMetadata",
+          "ApiChange": "Property",
+          "ChangedApiName": "accessedResources",
           "ChangeType": "Deprecation",
-          "Description": "Deprecated the [processConversationMetadata](https://learn.microsoft.com/en-us/graph/api/resources/processConversationMetadata?view=graph-rest-beta) resource.",
+          "Description": "Deprecated the **accessedResources** property of the [processConversationMetadata](https://learn.microsoft.com/en-us/graph/api/resources/processConversationMetadata?view=graph-rest-beta) resource. The **accessedResources** property is deprecated and stopped returning data on August 20, 2025. Going forward, use the **accessedResources_v2** property.",
           "Target": "processConversationMetadata"
         },
         {
@@ -95,7 +95,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "resourceAccessDetail",
           "ChangeType": "Addition",
-          "Description": "Added the [resourceAccessDetail](https://learn.microsoft.com/en-us/graph/api/resources/resourceAccessDetail?view=graph-rest-beta) resource.",
+          "Description": "Added the [resourceAccessDetail](https://learn.microsoft.com/en-us/graph/api/resources/resourceAccessDetail?view=graph-rest-beta) resource type.",
           "Target": "resourceAccessDetail"
         },
         {
@@ -103,7 +103,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "sharepointResourceAccessDetail",
           "ChangeType": "Addition",
-          "Description": "Added the [sharepointResourceAccessDetail](https://learn.microsoft.com/en-us/graph/api/resources/sharepointResourceAccessDetail?view=graph-rest-beta) resource.",
+          "Description": "Added the [sharepointResourceAccessDetail](https://learn.microsoft.com/en-us/graph/api/resources/sharepointResourceAccessDetail?view=graph-rest-beta) resource type.",
           "Target": "sharepointResourceAccessDetail"
         }
       ],
@@ -112,7 +112,7 @@
       "Version": "beta",
       "CreatedDateTime": "2025-10-03T22:21:11.3484441Z",
       "WorkloadArea": "Security",
-      "SubArea": ""
+      "SubArea": "Data security and compliance"
     },
     {
       "ChangeList": [
