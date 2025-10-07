@@ -51,25 +51,19 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.processConversationMetadata",
-  "identifier": "String",
-  "content": {
-    "@odata.type": "microsoft.graph.contentBase"
-  },
-  "name": "String",
+  "accessedResources": ["String"],
+  "accessedResources_v2": [{"@odata.type": "microsoft.graph.resourceAccessDetail"}],
+  "agents": [{"@odata.type": "microsoft.graph.aiAgentInfo"}],
+  "content": {"@odata.type": "microsoft.graph.contentBase"},
   "correlationId": "String",
-  "sequenceNumber": "Integer",
-  "length": "Integer",
-  "isTruncated": "Boolean",
   "createdDateTime": "String (timestamp)",
+  "identifier": "String",
+  "isTruncated": "Boolean",
+  "length": "Int64",
   "modifiedDateTime": "String (timestamp)",
+  "name": "String",
   "parentMessageId": "String",
-  "accessedResources": [
-    "String"
-  ],
-  "plugins": [
-    {
-      "@odata.type": "microsoft.graph.aiInteractionPlugin"
-    }
-  ]
+  "plugins": [{"@odata.type": "microsoft.graph.aiInteractionPlugin"}],
+  "sequenceNumber": "Int64"
 }
 ```
