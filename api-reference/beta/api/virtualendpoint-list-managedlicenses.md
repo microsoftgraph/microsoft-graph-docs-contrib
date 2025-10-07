@@ -1,6 +1,6 @@
 ---
 title: "List managedLicenses"
-description: "Get information about cloudPcManagedLicense that the Cloud PC service manages directly."
+description: "Get information about cloudPcManagedLicense objects that the Cloud PC service manages directly."
 author: "Yu-Lan"
 ms.date: 09/04/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get information about [cloudPcManagedLicense](../resources/cloudpcmanagedlicense.md) that the Cloud PC service manages directly.
+Get information about [cloudPcManagedLicense](../resources/cloudpcmanagedlicense.md) objects that the Cloud PC service manages directly.
 
 ## Permissions
 
