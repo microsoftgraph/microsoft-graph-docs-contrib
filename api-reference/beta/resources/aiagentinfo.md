@@ -1,6 +1,6 @@
 ---
 title: "aiAgentInfo resource type"
-description: "Represents information about the AI agent that participated in preparing the message."
+description: "Represents information about an AI agent that participated in preparing the message."
 author: "PatilAishwarya95"
 ms.date: 10/05/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents information about the AI agent that participated in preparing the message.
+Represents information about the AI an that participated in preparing the message.
 
 Inherits from [aiInteractionEntity](../resources/aiinteractionentity.md).
 
