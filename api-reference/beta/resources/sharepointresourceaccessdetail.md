@@ -39,7 +39,8 @@ None.
 The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.sharepointResourceAccessDetail"
+  "@odata.type": "microsoft.graph.sharepointResourceAccessDetail",
+  "baseType": "microsoft.graph.resourceAccessDetail",
 }
 -->
 ``` json
