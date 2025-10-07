@@ -7,7 +7,7 @@ ms.author: jeremyke
 ms.subservice: non-product-specific
 ms.topic: overview
 ms.date: 10/08/2025
-#Customer intent: As a developer integrating with Microsoft Graph, or a tenant administrator managing applications in my tenant, I want to understand tenant level usage quotas applied in Microsoft Graph.
+#Customer intent: As a developer integrating with Microsoft Graph, or a tenant administrator managing applications in my tenant, I want to understand tenant-level usage quotas applied in Microsoft Graph.
 ---
 
 # Microsoft Graph API usage quotas (preview)
@@ -21,11 +21,11 @@ Some areas of Microsoft Graph enforce usage quotas. Usage quotas apply at the te
 
 ### Time window
 
-Usage quotas are calculated based on a 24-hour window of usage. When the quota is consumed, Microsoft Graph returns `HTTP 429` error codes for subsequent requests. 1/24th of the quota will be available and API requests will be unblocked after no more than 1 hour.
+Usage quotas are calculated based on a 24-hour window of usage. When the quota is consumed, Microsoft Graph returns `HTTP 429` error codes for subsequent requests. 1/24th of the quota will be available, and API requests will be unblocked after no more than 1 hour.
 
 ### Service areas
 
-Microsoft Graph has a large surface area covering many different APIs, with different calling patterns for different Microsoft services. To offer quotas relevant to such disparate APIs, APIs are grouped into service areas. Service areas represent sets common functionality delivered by Microsoft Graph, mostly aligned to product offerings. The following service areas are currently available:
+Microsoft Graph has a large surface area covering many different APIs, with different calling patterns for different Microsoft services. To offer quotas relevant to such disparate APIs, APIs are grouped into service areas. Service areas represent sets of common functionality delivered by Microsoft Graph, mostly aligned to product offerings. The following service areas are currently available:
 
 - Microsoft Exchange
 - Microsoft Teams Calling
@@ -34,11 +34,11 @@ Microsoft Graph has a large surface area covering many different APIs, with diff
 
 ### Quota calculations
 
-For each service area, quota is calculated based on the number of qualifying user licenses associated with that area. Qualifying user licenses are multiplied by a scaling factor, which determines the number of API calls allowed per 24-hour period. The quota is calculated frequently; as more licenses are purchased or licenses become inactive, the available quota adjusts accordingly. Changes in quota take effect and are reflected in reporting data within 48 hours.
+For each service area, the quota is calculated based on the number of qualifying user licenses associated with that area. Qualifying user licenses are multiplied by a scaling factor, which determines the number of API calls allowed per 24-hour period. The quota is calculated frequently; as more licenses are purchased or licenses become inactive, the available quota adjusts accordingly. Changes in quota take effect and are reflected in reporting data within 48 hours.
 
 #### Qualifying licenses
 
-Qualifying licenses are the licenses that enable the associated functionality for each service area. Quota amounts are basic license counts only; add-ons or higher tier licenses don't add more capacity.
+Qualifying licenses are the licenses that enable the associated functionality for each service area. Quota amounts are basic license counts only; add-ons or higher-tier licenses don't add more capacity.
 
 #### Service area quota values
 
