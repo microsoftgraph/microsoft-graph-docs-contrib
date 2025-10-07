@@ -1,13 +1,12 @@
 ---
 title: "aiInteractionEntity resource type"
-description: "Base type that describes interacting AI entities, including identifier, name, and version."
+description: "Represents the base type for interacting AI entities, providing common properties such as identifier, name, and version."
 author: "PatilAishwarya95"
 ms.date: 10/03/2025
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: resourcePageType
 ---
-
 
 # aiInteractionEntity resource type
 
@@ -16,6 +15,8 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the base type for interacting AI entities, providing common properties such as identifier, name, and version.
+
+Base type of [aiAgentInfo](../resources/aiagentinfo.md) and [aiInteractionPlugin](../resources/aiinteractionplugin.md).
 
 ## Properties
 
