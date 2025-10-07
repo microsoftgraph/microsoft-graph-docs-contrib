@@ -23,13 +23,13 @@ Inherits from [resourceAccessDetail](../resources/resourceaccessdetail.md).
 
 | Property | Type | Description |
 | :--- | :--- | :---|
-| accessType                     | microsoft.graph.security.resourceAccessType   | Indicates the type of access performed on the resource. The possible values are: `none`, `read`, `write`, `create`, `unknownFutureValue`. Inherited from [resourceAccessDetail](../resources/resourceaccessdetail.md). |
+| accessType                     | resourceAccessType   | Indicates the type of access performed on the resource. The possible values are: `none`, `read`, `write`, `create`, `unknownFutureValue`. Inherited from [resourceAccessDetail](../resources/resourceaccessdetail.md). |
 | identifier                     | String                                        | Unique identifier of the resource accessed. Inherited from [resourceAccessDetail](../resources/resourceaccessdetail.md). |
 | isCrossPromptInjectionDetected | Boolean                                       | Indicates whether cross-prompt injection was detected during the access attempt. Inherited from [resourceAccessDetail](../resources/resourceaccessdetail.md). |
 | labelId                        | String                                        | Identifier for the sensitivity label applied to the resource, if any. Inherited from [resourceAccessDetail](../resources/resourceaccessdetail.md). |
 | listItemUniqueId               | String                                        | The unique identifier of the SharePoint list item associated with the resource. |
 | name                           | String                                        | Name of the resource accessed. Inherited from [resourceAccessDetail](../resources/resourceaccessdetail.md). |
-| status                         | microsoft.graph.security.resourceAccessStatus | Indicates the status of the access attempt. The possible values are: `none`, `failure`, `success`, `unknownFutureValue`. Inherited from [resourceAccessDetail](../resources/resourceaccessdetail.md).|
+| status                         | resourceAccessStatus | Indicates the status of the access attempt. The possible values are: `none`, `failure`, `success`, `unknownFutureValue`. Inherited from [resourceAccessDetail](../resources/resourceaccessdetail.md).|
 | url                            | String                                        | URL of the resource accessed. Inherited from [resourceAccessDetail](../resources/resourceaccessdetail.md). |
 
 ## Relationships
