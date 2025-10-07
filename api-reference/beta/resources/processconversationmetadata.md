@@ -20,7 +20,8 @@ Represents metadata for a content entry that is part of a conversation, for exam
 
 |Property|Type|Description|
 |:---|:---|:---|
-|accessedResources|String collection|List of resources (for example, file URLs, web URLs) accessed during the generation of this message (relevant for bot interactions).|
+|accessedResources_v2|[resourceAccessDetail](../resources/resourceaccessdetail.md) collection|TODO|
+|agents|[aiAgentInfo](../resources/aiagentinfo.md) collection|TODO|
 |content| [contentBase](../resources/contentbase.md)| Represents the actual content, either as text (`textContent`) or binary data (`binaryContent`). Optional if metadata alone is sufficient for policy evaluation. **Do not use for [contentActivities](../api/activitiescontainer-post-contentactivities.md)** Inherited from [processContentMetadataBase](../resources/processcontentmetadatabase.md).|
 |correlationId|String|An **GUID** identifier used to group multiple related content entries (for example, different parts of the same file upload, messages in a conversation).|
 |createdDateTime|DateTimeOffset|Required. Timestamp indicating when the original content was created (for example, file creation time, message sent time).|
@@ -32,6 +33,7 @@ Represents metadata for a content entry that is part of a conversation, for exam
 |parentMessageId|String|Identifier of the parent message in a threaded conversation, if applicable.|
 |plugins|[aiInteractionPlugin](../resources/aiinteractionplugin.md) collection|List of plugins used during the generation of this message (relevant for AI/bot interactions).|
 |sequenceNumber|Int64|A sequence number indicating the order in which content was generated or should be processed, required when `correlationId` is used.|
+|accessedResources (deprecated)|String collection|List of resources (for example, file URLs, web URLs) accessed during the generation of this message (relevant for bot interactions). The **accessedResources** property is deprecated and stopped returning data on August 20, 2025. Going forward, use the **accessedResources_v2** property.|
 
 ## Relationships
 
