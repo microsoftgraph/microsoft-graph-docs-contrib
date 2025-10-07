@@ -7703,6 +7703,22 @@
             "Target": "virtualEndpoint",
             "ChangeType": "Addition",
             "Description": "Added the **managedLicenses** relationship to the [virtualEndpoint](https://learn.microsoft.com/en-us/graph/api/resources/virtualendpoint?view=graph-rest-beta) resource."
+        },
+        {
+          "Id": "4a7b1b7c-4a7b-4a7b-4a7b-4a7b1b7c4a7b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cloudPcFrontLineServicePlan",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [cloudPcFrontLineServicePlan](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcfrontlineserviceplan?view=graph-rest-beta) resource. The cloudPcFrontLineServicePlan is deprecated and will not be supported starting March 31, 2026. This entity will not be included in the API response. Use the [cloudPcManagedLicense](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcmanagedlicense?view=graph-rest-beta) resource instead.",
+          "Target": "cloudPcFrontLineServicePlan"
+        },
+        {
+          "Id": "4a7b1b7c-4a7b-4a7b-4a7b-4a7b1b7c4a7b",
+          "ApiChange": "Method",
+          "ChangedApiName": "List frontLineServicePlans",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [List frontLineServicePlans](https://learn.microsoft.com/en-us/graph/api/virtualendpoint-list-frontlineserviceplans?view=graph-rest-beta) method. The cloudPcFrontLineServicePlan resource and its APIs are deprecated and will stop returning data on March 31, 2026. Use the [List managedLicenses](https://learn.microsoft.com/en-us/graph/api/virtualendpoint-list-managedlicenses?view=graph-rest-beta) API instead.",
+          "Target": "virtualEndpoint"
         }
       ],
       "Id": "4a7b1b7c-4a7b-4a7b-4a7b-4a7b1b7c4a7b",
