@@ -1894,6 +1894,13 @@
                 "participant",
                 "addLargeGalleryViewOperation"
               ]
+            },            
+            {
+              "name": "Call events",
+              "resources": [
+                "microsoft.graph.callEvent",
+                "microsoft.graph.emergencyCallEvent"
+              ]
             },
             {
               "name": "Call records",
