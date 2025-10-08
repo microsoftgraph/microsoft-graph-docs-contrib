@@ -14,7 +14,10 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [fraudProtectionProvider](../resources/fraudprotectionprovider.md) object.
+Update the properties of a [fraudProtectionProvider](../resources/fraudprotectionprovider.md) object. The following derived types are currently supported.
+
+- [arkoseFraudProtectionProvider](../resources/arkosefraudprotectionprovider.md) resource type
+- [humanSecurityFraudProtectionProvider](../resources/humansecurityfraudprotectionprovider.md) resource type
 
 ## Permissions
 

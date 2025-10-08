@@ -1,6 +1,6 @@
 ---
-title: "Delete fraudProtectionProvider"
-description: "Delete a fraudProtectionProvider object."
+title: "Delete fraudProtectionProviders"
+description: "Delete a fraudProtectionProviders object."
 author: "more-rasika"
 ms.date: 10/06/2025
 ms.localizationpriority: medium
@@ -8,7 +8,7 @@ ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
-# Delete fraudProtectionProvider
+# Delete fraudProtectionProviders
 
 Namespace: microsoft.graph
 

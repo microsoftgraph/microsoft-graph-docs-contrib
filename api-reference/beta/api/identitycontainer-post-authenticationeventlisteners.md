@@ -23,6 +23,7 @@ Create a new [authenticationEventListener](../resources/authenticationeventliste
 - [onAttributeCollectionStartListener](../resources/onattributecollectionstartlistener.md)
 - [onAttributeCollectionSubmitListener](../resources/onattributecollectionsubmitlistener.md)
 - [onPhoneMethodLoadStartListener](../resources/onphonemethodloadstartlistener.md)
+- [onFraudProtectionLoadStartListener](../resources/onFraudProtectionLoadStartListener.md) resource type
 
 > [!NOTE]
 >
@@ -63,6 +64,7 @@ You can specify the following properties when creating an **authenticationEventL
 |:---|:---|:---|
 |authenticationEventsFlowId|String|The identifier of the authentication events flow. Optional.|
 |conditions|[authenticationConditions](../resources/authenticationconditions.md)|The conditions on which this authenticationEventListener should trigger. Optional.|
+|displayName|String|The display name of the authentication event listener policy. Optional.|
 |handler|[onAttributeCollectionHandler](../resources/ontokenissuancestarthandler.md)|The handler to invoke when conditions are met. Can be set for the **onAttributeCollectionListener** listener type.|
 |handler|[onAttributeCollectionStartListener](../resources/onattributecollectionstartlistener.md)|The handler to invoke when conditions are met. Can be set for the **onAttributeCollectionStartListener** listener type.|
 |handler|[onAttributeCollectionSubmitListener](../resources/onattributecollectionsubmitlistener.md)|The handler to invoke when conditions are met. Can be set for the **onAttributeCollectionSubmitListener** listener type.|
@@ -71,6 +73,7 @@ You can specify the following properties when creating an **authenticationEventL
 |handler|[onTokenIssuanceStartHandler](../resources/ontokenissuancestarthandler.md)|The handler to invoke when conditions are met. Can be set for the **onTokenIssuanceStartListener** listener type.|
 |handler|[onUserCreateStartHandler](../resources/ontokenissuancestarthandler.md)|The handler to invoke when conditions are met. Can be set for the **onUserCreateStartListener** listener type.|
 |handler|[onPhoneMethodLoadStartHandler](../resources/onphonemethodloadstarthandler.md) | The handler to invoke when conditions are met. Can be set for the **onPhoneMethodLoadStartListener** listener type. |
+|handler|[onFraudProtectionLoadStartHandler](../resources/onFraudProtectionLoadStartHandler.md) | The handler to invoke when conditions are met. Can be updated for the **onFraudProtectionLoadStartListener** type. |
 |priority|Int32| The priority of this handler. Between 0 (lower priority) and 1000 (higher priority). Required.|
 
 
@@ -583,5 +586,164 @@ Content-Type: application/json
             "excludeRegions": [1001, 99, 777] 
         }
     }
+}
+```
+
+### Example 5: Enable Fraud Protection during Sign up with Arkose Labs 
+
+#### Request
+The following example shows a request that activates enables fraud prtrotection during sign up using Arkose Labs.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "create_authenticationeventlistener_onFraudProtectionLoadStartListener"
+}
+-->
+```http
+POST https://graph.microsoft.com/v1.0/identity/authenticationEventListeners
+Content-Type: application/json
+
+{   
+  "@odata.type": "#microsoft.graph.onFraudProtectionLoadStartListener", 
+  "conditions": { 
+    "applications": { 
+      "includeApplications": [ 
+        { 
+          "appId": "3dfff01b-0afb-4a07-967f-d1ccbd81102a" 
+        } 
+      ] 
+    } 
+  }, 
+  "handler": { 
+    "@odata.type": 
+"#microsoft.graph.onFraudProtectionLoadStartExternalUsersAuthHandler", 
+    "signUp": { 
+      "@odata.type": "#microsoft.graph.fraudProtectionProviderConfiguration", 
+      "fraudProtectionProvider": { 
+        "@odata.type": "#microsoft.graph.arkoseFraudProtectionProvider", 
+        "id": "6fedd01b-0afb-4a07-967f-d1ccbd81102b" 
+      } 
+    } 
+  } 
+}
+```
+
+#### Response
+
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.authenticationEventListener"
+}
+-->
+``` http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/authenticationEventListeners/$entity",
+  "@odata.type": "#microsoft.graph.onFraudProtectionLoadStartListener",
+  "id": "49eb23d9-998b-47df-a462-aa12a20ae5fb",
+  "conditions": {
+    "applications": {
+      "includeApplications": [
+        {
+          "appId": "3dfff01b-0afb-4a07-967f-d1ccbd81102a"
+        }
+      ]
+    }
+  },
+  "handler": {
+    "@odata.type": "#microsoft.graph.onFraudProtectionLoadStartExternalUsersAuthHandler",
+    "signUp": {
+      "fraudProtectionProvider": {
+        "@odata.type": "#microsoft.graph.arkoseFraudProtectionProvider",
+        "id": "fabe5100-cc02-46c1-bd0e-ce885fe367fd"
+      }
+    }
+  }
+}
+```
+
+### Example 6: Enable Fraud Protection during Sign up with HUMAN Security 
+
+#### Request
+The following example shows a request that activates enables fraud prtrotection during sign up using HUMAN Security.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "create_authenticationeventlistener_onFraudProtectionLoadStartListener"
+}
+-->
+```http
+POST https://graph.microsoft.com/v1.0/identity/authenticationEventListeners
+Content-Type: application/json
+
+{   
+  "@odata.type": "#microsoft.graph.onFraudProtectionLoadStartListener", 
+  "conditions": { 
+    "applications": { 
+      "includeApplications": [ 
+        { 
+          "appId": "3dfff01b-0afb-4a07-967f-d1ccbd81102a" 
+        } 
+      ] 
+    } 
+  }, 
+  "handler": { 
+    "@odata.type": 
+"#microsoft.graph.onFraudProtectionLoadStartExternalUsersAuthHandler", 
+    "signUp": { 
+      "@odata.type": "#microsoft.graph.fraudProtectionProviderConfiguration", 
+      "fraudProtectionProvider": { 
+        "@odata.type": "#microsoft.graph.humanSecurityFraudProtectionProvider", 
+        "id": "fabe5100-cc02-46c1-bd0e-ce885fe367fd" 
+      } 
+    } 
+  } 
+}
+```
+
+#### Response
+
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.authenticationEventListener"
+}
+-->
+``` http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/authenticationEventListeners/$entity",
+  "@odata.type": "#microsoft.graph.onFraudProtectionLoadStartListener",
+  "id": "49eb23d9-998b-47df-a462-aa12a20ae5fb",
+  "conditions": {
+    "applications": {
+      "includeApplications": [
+        {
+          "appId": "3dfff01b-0afb-4a07-967f-d1ccbd81102a"
+        }
+      ]
+    }
+  },
+  "handler": {
+    "@odata.type": "#microsoft.graph.onFraudProtectionLoadStartExternalUsersAuthHandler",
+    "signUp": {
+      "isContinueOnProviderErrorEnabled": false,
+      "fraudProtectionProvider": {
+        "@odata.type": "#microsoft.graph.humanSecurityFraudProtectionProvider",
+        "id": "fabe5100-cc02-46c1-bd0e-ce885fe367fd"
+      }
+    }
+  }
 }
 ```

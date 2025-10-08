@@ -1,14 +1,14 @@
 ---
-title: "Create fraudProtectionProvider"
-description: "Create a new fraudProtectionProvider."
+title: "Create fraudProtectionProviders"
+description: "Create a new fraudProtectionProviders object."
 author: "more-rasika"
-ms.date: 10/06/2025
+ms.date: 08/05/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
-# Create fraudProtectionProvider
+# Create fraudProtectionProviders
 
 Namespace: microsoft.graph
 
@@ -51,7 +51,7 @@ POST /identity/riskPrevention/fraudProtectionProviders
 
 ## Request body
 
-In the request body, supply a JSON representation of the [fraudProtectionProvider](../resources/fraudprotectionprovider.md).
+In the request body, supply a JSON representation of the [fraudProtectionProvider](../resources/fraudprotectionprovider.md) object.
 
 You can specify the following properties when creating a **fraudProtectionProvider**.  You must specify the **@odata.type** property to specify the type of **fraudProtectionProvider** to create; for example, `@odata.type": "microsoft.graph.arkoseFraudProtectionProvider"`.
 
@@ -77,7 +77,7 @@ If successful, this method returns a `201 Created` response code and a [fraudPro
 The following example shows a request to create a new Arkose fraudProtectionProvider object.
 <!-- {
   "blockType": "request",
-  "name": "create_fraudprotectionprovider_from_"
+  "name": "create_fraudprotectionprovider_from_arkose"
 }
 -->
 ``` http
@@ -160,7 +160,7 @@ Content-Type: application/json
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/riskPrevention/fraudProtectionProviders/$entity",
     "@odata.type": "#microsoft.graph.humanSecurityFraudProtectionProvider",
     "id": "6b09e36f-7e92-4448-842a-3959bcbc4f9f",
-    "displayName": "Human security Sign-Up provider",
+    "displayName": "HUMAN security Sign-Up provider",
     "appId": "PXab4D5AEg"
 }
 
