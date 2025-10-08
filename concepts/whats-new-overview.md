@@ -35,7 +35,7 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ### Device and app management | Cloud PC
 
-Deprecated the [cloudPcFrontLineServicePlan](/graph/api/cloudpcfrontlineserviceplan?view=graph-rest-beta&preserve-view=true) resource and its APIs in favor of the [cloudPcManagedLicense](/graph/api/resources/cloudpcmanagedlicense?view=graph-rest-beta&preserve-view=true) resource. You can use this new resource and its [list managedLicenses](/graph/api/virtualendpoint-list-managedlicenses?view=graph-rest-beta&preserve-view=true) operation to get information about licenses that the Cloud PC service directly manages. These cloudpc-managed licenses help administrators track license allocation, status, and usage across their Cloud PC deployments.
+Get information about licenses that the Cloud PC service directly manages using the [cloudPcManagedLicense](/graph/api/resources/cloudpcmanagedlicense?view=graph-rest-beta&preserve-view=true) resource and the [list managedLicenses](/graph/api/virtualendpoint-list-managedlicenses?view=graph-rest-beta&preserve-view=true) operation. These cloudpc-managed licenses help administrators track license allocation, status, and usage across their Cloud PC deployments.
 
 ## September 2025: New and generally available
 

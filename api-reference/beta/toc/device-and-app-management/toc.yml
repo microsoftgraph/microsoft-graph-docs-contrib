@@ -226,9 +226,9 @@ items:
       href: ../../api/cloudpcexternalpartnersetting-get.md
     - name: Update
       href: ../../api/cloudpcexternalpartnersetting-update.md
-  - name: Cloud PC frontline service plan (deprecated)
+  - name: Cloud PC frontline service plan
     items:
-    - name: Cloud PC frontline service plan (deprecated)
+    - name: Cloud PC frontline service plan
       href: ../../resources/cloudpcfrontlineserviceplan.md
     - name: List
       href: ../../api/virtualendpoint-list-frontlineserviceplans.md
@@ -424,7 +424,7 @@ items:
       href: ../../api/virtualendpoint-list-cloudapps.md
     - name: List managed licenses
       href: ../../api/virtualendpoint-list-managedlicenses.md
-    - name: List frontline service plans (deprecated)
+    - name: List frontline service plans
       href: ../../api/virtualendpoint-list-frontlineserviceplans.md
   - name: Alert monitoring
     items:

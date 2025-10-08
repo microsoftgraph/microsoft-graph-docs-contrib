@@ -1,5 +1,5 @@
 ---
-title: "List cloudPcFrontLineServicePlans (deprecated)"
+title: "List cloudPcFrontLineServicePlans"
 description: "Get a list of the cloudPcFrontLineServicePlan objects and their properties."
 author: "Guoan-Tang"
 ms.localizationpriority: medium
@@ -8,14 +8,11 @@ doc_type: apiPageType
 ms.date: 04/04/2024
 ---
 
-# List cloudPcFrontLineServicePlans (deprecated)
+# List cloudPcFrontLineServicePlans
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-> [!CAUTION]
-> The [cloudPcFrontLineServicePlan](../resources/cloudpcfrontlineserviceplan.md) resource and its APIs are deprecated and will stop returning data on March 31, 2026. Going forward, use the [cloudPcManagedLicense](../resources/cloudpcmanagedlicense.md) resource and its associated method instead.
 
 Get a list of the [cloudPcFrontLineServicePlan](../resources/cloudpcfrontlineserviceplan.md) objects and their properties.
 

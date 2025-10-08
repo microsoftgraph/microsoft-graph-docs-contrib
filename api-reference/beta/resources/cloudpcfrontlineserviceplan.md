@@ -1,22 +1,19 @@
 ---
-title: "cloudPcFrontLineServicePlan resource type (deprecated)"
+title: "cloudPcFrontLineServicePlan resource type"
 description: "Represents a service plan that is available for use by up to three users."
 author: "Guoan-Tang"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: resourcePageType
 ms.date: 05/23/2024
-toc.title: "Cloud PC frontline service plan (deprecated)"
+toc.title: "Cloud PC frontline service plan"
 ---
 
-# cloudPcFrontLineServicePlan resource type (deprecated)
+# cloudPcFrontLineServicePlan resource type
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-> [!CAUTION]
-> The [cloudPcFrontLineServicePlan](../resources/cloudpcfrontlineserviceplan.md) resource and its APIs are deprecated and will stop returning data on March 31, 2026. Going forward, use the [cloudPcManagedLicense](../resources/cloudpcmanagedlicense.md) resource and its associated method instead.
 
 Represents a service plan that provides an allotment of three Cloud PCs for the admin to provision for up to three users, but can't be assigned to a specific user. This service plan enables the service to create a concept of a time-share across these provisioned users, where customers can deploy a larger number of users. Windows 365 enforces a limit on active users at a given time, effectively creating an innovative way to provide the personalized experience of a Cloud PC along with the improved economics of sharing.
 
