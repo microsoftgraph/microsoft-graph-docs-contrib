@@ -3,6 +3,268 @@
     {
       "ChangeList": [
         {
+          "Id": "ac011bc2-8597-42ee-9690-2445bc0ca2f4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cloudPcConnectionSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [cloudPcConnectionSettings](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcConnectionSettings?view=graph-rest-beta) resource.",
+          "Target": "cloudPcConnectionSettings"
+        },
+        {
+          "Id": "ac011bc2-8597-42ee-9690-2445bc0ca2f4",
+          "ApiChange": "Property",
+          "ChangedApiName": "connectionSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the **connectionSettings** property to the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudPC?view=graph-rest-beta) resource.",
+          "Target": "cloudPC"
+        }
+      ],
+      "Id": "ac011bc2-8597-42ee-9690-2445bc0ca2f4",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-09-18T21:57:45.6952989Z",
+      "WorkloadArea": "Device and app management",
+      "SubArea": "Cloud PC"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "50dc288e-3984-4bd9-927e-a25508f1eeaa",
+          "ApiChange": "Member",
+          "ChangedApiName": "reserve",
+          "ChangeType": "Addition",
+          "Description": "Added the `reserve` member to the **cloudPcProvisioningType** enumeration.",
+          "Target": "cloudPcProvisioningType"
+        },
+        {
+          "Id": "50dc288e-3984-4bd9-927e-a25508f1eeaa",
+          "ApiChange": "Property",
+          "ChangedApiName": "createdBy",
+          "ChangeType": "Addition",
+          "Description": "Added the **createdBy** property to the [cloudPcProvisioningPolicy](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-beta) resource.",
+          "Target": "cloudPcProvisioningPolicy"
+        },
+        {
+          "Id": "50dc288e-3984-4bd9-927e-a25508f1eeaa",
+          "ApiChange": "Property",
+          "ChangedApiName": "createdDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **createdDateTime** property to the [cloudPcProvisioningPolicy](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-beta) resource.",
+          "Target": "cloudPcProvisioningPolicy"
+        },
+        {
+          "Id": "50dc288e-3984-4bd9-927e-a25508f1eeaa",
+          "ApiChange": "Property",
+          "ChangedApiName": "lastModifiedBy",
+          "ChangeType": "Addition",
+          "Description": "Added the **lastModifiedBy** property to the [cloudPcProvisioningPolicy](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-beta) resource.",
+          "Target": "cloudPcProvisioningPolicy"
+        },
+        {
+          "Id": "50dc288e-3984-4bd9-927e-a25508f1eeaa",
+          "ApiChange": "Property",
+          "ChangedApiName": "lastModifiedDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **lastModifiedDateTime** property to the [cloudPcProvisioningPolicy](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-beta) resource.",
+          "Target": "cloudPcProvisioningPolicy"
+        }
+      ],
+      "Id": "50dc288e-3984-4bd9-927e-a25508f1eeaa",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-09-19T07:09:52.6940623Z",
+      "WorkloadArea": "Device and app management",
+      "SubArea": "Cloud PC"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "b4e9f351-2a5c-4d3c-a7d3-f598b69ff78d",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "cloudPcGeographicLocationType",
+          "ChangeType": "Addition",
+          "Description": "Added the **cloudPcGeographicLocationType** enumeration type.",
+          "Target": "cloudPcGeographicLocationType"
+        },
+        {
+          "Id": "b4e9f351-2a5c-4d3c-a7d3-f598b69ff78d",
+          "ApiChange": "Member",
+          "ChangedApiName": "singapore",
+          "ChangeType": "Addition",
+          "Description": "Added the `singapore` member to the **cloudPcRegionGroup** enumeration.",
+          "Target": "cloudPcRegionGroup"
+        },
+        {
+          "Id": "b4e9f351-2a5c-4d3c-a7d3-f598b69ff78d",
+          "ApiChange": "Member",
+          "ChangedApiName": "hongKong",
+          "ChangeType": "Addition",
+          "Description": "Added the `hongKong` member to the **cloudPcRegionGroup** enumeration.",
+          "Target": "cloudPcRegionGroup"
+        },
+        {
+          "Id": "b4e9f351-2a5c-4d3c-a7d3-f598b69ff78d",
+          "ApiChange": "Member",
+          "ChangedApiName": "ireland",
+          "ChangeType": "Addition",
+          "Description": "Added the `ireland` member to the **cloudPcRegionGroup** enumeration.",
+          "Target": "cloudPcRegionGroup"
+        },
+        {
+          "Id": "b4e9f351-2a5c-4d3c-a7d3-f598b69ff78d",
+          "ApiChange": "Member",
+          "ChangedApiName": "sweden",
+          "ChangeType": "Addition",
+          "Description": "Added the `sweden` member to the **cloudPcRegionGroup** enumeration.",
+          "Target": "cloudPcRegionGroup"
+        },
+        {
+          "Id": "b4e9f351-2a5c-4d3c-a7d3-f598b69ff78d",
+          "ApiChange": "Member",
+          "ChangedApiName": "poland",
+          "ChangeType": "Addition",
+          "Description": "Added the `poland` member to the **cloudPcRegionGroup** enumeration.",
+          "Target": "cloudPcRegionGroup"
+        },
+        {
+          "Id": "b4e9f351-2a5c-4d3c-a7d3-f598b69ff78d",
+          "ApiChange": "Member",
+          "ChangedApiName": "italy",
+          "ChangeType": "Addition",
+          "Description": "Added the `italy` member to the **cloudPcRegionGroup** enumeration.",
+          "Target": "cloudPcRegionGroup"
+        },
+        {
+          "Id": "b4e9f351-2a5c-4d3c-a7d3-f598b69ff78d",
+          "ApiChange": "Member",
+          "ChangedApiName": "spain",
+          "ChangeType": "Addition",
+          "Description": "Added the `spain` member to the **cloudPcRegionGroup** enumeration.",
+          "Target": "cloudPcRegionGroup"
+        },
+        {
+          "Id": "b4e9f351-2a5c-4d3c-a7d3-f598b69ff78d",
+          "ApiChange": "Member",
+          "ChangedApiName": "netherlands",
+          "ChangeType": "Addition",
+          "Description": "Added the `netherlands` member to the **cloudPcRegionGroup** enumeration.",
+          "Target": "cloudPcRegionGroup"
+        },
+        {
+          "Id": "b4e9f351-2a5c-4d3c-a7d3-f598b69ff78d",
+          "ApiChange": "Member",
+          "ChangedApiName": "brazil",
+          "ChangeType": "Addition",
+          "Description": "Added the `brazil` member to the **cloudPcRegionGroup** enumeration.",
+          "Target": "cloudPcRegionGroup"
+        },
+        {
+          "Id": "b4e9f351-2a5c-4d3c-a7d3-f598b69ff78d",
+          "ApiChange": "Member",
+          "ChangedApiName": "israel",
+          "ChangeType": "Addition",
+          "Description": "Added the `israel` member to the **cloudPcRegionGroup** enumeration.",
+          "Target": "cloudPcRegionGroup"
+        },
+        {
+          "Id": "b4e9f351-2a5c-4d3c-a7d3-f598b69ff78d",
+          "ApiChange": "Member",
+          "ChangedApiName": "automatic",
+          "ChangeType": "Addition",
+          "Description": "Added the `automatic` member to the **cloudPcRegionGroup** enumeration.",
+          "Target": "cloudPcRegionGroup"
+        },
+        {
+          "Id": "b4e9f351-2a5c-4d3c-a7d3-f598b69ff78d",
+          "ApiChange": "Member",
+          "ChangedApiName": "indonesia",
+          "ChangeType": "Addition",
+          "Description": "Added the `indonesia` member to the **cloudPcRegionGroup** enumeration.",
+          "Target": "cloudPcRegionGroup"
+        },
+        {
+          "Id": "b4e9f351-2a5c-4d3c-a7d3-f598b69ff78d",
+          "ApiChange": "Member",
+          "ChangedApiName": "taiwan",
+          "ChangeType": "Addition",
+          "Description": "Added the `taiwan` member to the **cloudPcRegionGroup** enumeration.",
+          "Target": "cloudPcRegionGroup"
+        },
+        {
+          "Id": "b4e9f351-2a5c-4d3c-a7d3-f598b69ff78d",
+          "ApiChange": "Member",
+          "ChangedApiName": "malaysia",
+          "ChangeType": "Addition",
+          "Description": "Added the `malaysia` member to the **cloudPcRegionGroup** enumeration.",
+          "Target": "cloudPcRegionGroup"
+        },
+        {
+          "Id": "b4e9f351-2a5c-4d3c-a7d3-f598b69ff78d",
+          "ApiChange": "Member",
+          "ChangedApiName": "newZealand",
+          "ChangeType": "Addition",
+          "Description": "Added the `newZealand` member to the **cloudPcRegionGroup** enumeration.",
+          "Target": "cloudPcRegionGroup"
+        },
+        {
+          "Id": "b4e9f351-2a5c-4d3c-a7d3-f598b69ff78d",
+          "ApiChange": "Member",
+          "ChangedApiName": "austria",
+          "ChangeType": "Addition",
+          "Description": "Added the `austria` member to the **cloudPcRegionGroup** enumeration.",
+          "Target": "cloudPcRegionGroup"
+        },
+        {
+          "Id": "b4e9f351-2a5c-4d3c-a7d3-f598b69ff78d",
+          "ApiChange": "Member",
+          "ChangedApiName": "denmark",
+          "ChangeType": "Addition",
+          "Description": "Added the `denmark` member to the **cloudPcRegionGroup** enumeration.",
+          "Target": "cloudPcRegionGroup"
+        },
+        {
+          "Id": "b4e9f351-2a5c-4d3c-a7d3-f598b69ff78d",
+          "ApiChange": "Member",
+          "ChangedApiName": "belgium",
+          "ChangeType": "Addition",
+          "Description": "Added the `belgium` member to the **cloudPcRegionGroup** enumeration.",
+          "Target": "cloudPcRegionGroup"
+        },
+        {
+          "Id": "b4e9f351-2a5c-4d3c-a7d3-f598b69ff78d",
+          "ApiChange": "Member",
+          "ChangedApiName": "kenya",
+          "ChangeType": "Addition",
+          "Description": "Added the `kenya` member to the **cloudPcRegionGroup** enumeration.",
+          "Target": "cloudPcRegionGroup"
+        },
+        {
+          "Id": "b4e9f351-2a5c-4d3c-a7d3-f598b69ff78d",
+          "ApiChange": "Property",
+          "ChangedApiName": "geographicLocationType",
+          "ChangeType": "Addition",
+          "Description": "Added the **geographicLocationType** property to the [cloudPcDomainJoinConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/intune-cloudPcDomainJoinConfiguration?view=graph-rest-beta) resource.",
+          "Target": "cloudPcDomainJoinConfiguration"
+        },
+        {
+          "Id": "b4e9f351-2a5c-4d3c-a7d3-f598b69ff78d",
+          "ApiChange": "Property",
+          "ChangedApiName": "geographicLocationType",
+          "ChangeType": "Addition",
+          "Description": "Added the **geographicLocationType** property to the [cloudPcSupportedRegion](https://learn.microsoft.com/en-us/graph/api/resources/intune-cloudPcSupportedRegion?view=graph-rest-beta) resource.",
+          "Target": "cloudPcSupportedRegion"
+        }
+      ],
+      "Id": "b4e9f351-2a5c-4d3c-a7d3-f598b69ff78d",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-09-01T00:19:42.0645599Z",
+      "WorkloadArea": "Device and app management",
+      "SubArea": "Cloud PC"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "f064222f-fcc8-4493-b2ed-43075268f1dd",
           "ApiChange": "Property",
           "ChangedApiName": "provisioningSourceType",
@@ -57,6 +319,48 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2025-10-01T10:37:32.228986Z",
+      "WorkloadArea": "Device and app management",
+      "SubArea": "Cloud PC"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "2d5c9d9e-4d5a-4c2d-9d2c-9f4e7d4f0f11",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cloudPcEntraGroupDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the [cloudPcEntraGroupDetail](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcEntraGroupDetail?view=graph-rest-beta) resource type.",
+          "Target": "cloudPcEntraGroupDetail"
+        },
+        {
+          "Id": "2d5c9d9e-4d5a-4c2d-9d2c-9f4e7d4f0f11",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cloudPcEntraUserDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the [cloudPcEntraUserDetail](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcEntraUserDetail?view=graph-rest-beta) resource type.",
+          "Target": "cloudPcEntraUserDetail"
+        },
+        {
+          "Id": "2d5c9d9e-4d5a-4c2d-9d2c-9f4e7d4f0f11",
+          "ApiChange": "Property",
+          "ChangedApiName": "groupDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the **groupDetail** property to the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudPC?view=graph-rest-beta) resource.",
+          "Target": "cloudPC"
+        },
+        {
+          "Id": "2d5c9d9e-4d5a-4c2d-9d2c-9f4e7d4f0f11",
+          "ApiChange": "Property",
+          "ChangedApiName": "userDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the **userDetail** property to the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudPC?view=graph-rest-beta) resource.",
+          "Target": "cloudPC"
+        }
+      ],
+      "Id": "2d5c9d9e-4d5a-4c2d-9d2c-9f4e7d4f0f11",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-09-09T00:00:00Z",
       "WorkloadArea": "Device and app management",
       "SubArea": "Cloud PC"
     },

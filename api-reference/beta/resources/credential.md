@@ -2,7 +2,7 @@
 title: "credential resource type"
 description: "Indicates a single credential used for sign-in to an application."
 ms.localizationpriority: medium
-author: "sureshja"
+author: "Jackson-Woods"
 ms.subservice: "entra-sign-in"
 doc_type: "resourcePageType"
 ms.date: 07/22/2024

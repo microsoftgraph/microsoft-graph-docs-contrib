@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Update the properties of an [onPremisesSyncBehavior](../resources/onpremisessyncbehavior.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -37,7 +37,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-PATCH /groups/{groupsId}/onPremisesSyncBehavior
+PATCH /contacts/{id}/onPremisesSyncBehavior
+PATCH /groups/{id}/onPremisesSyncBehavior
+PATCH /users/{id}/onPremisesSyncBehavior
 ```
 
 ## Request headers
