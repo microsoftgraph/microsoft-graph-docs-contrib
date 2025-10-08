@@ -1,0 +1,41 @@
+---
+title: "onlineMeetingSensitivityLabelAssignment resource type"
+description: Contains information about the sensitivity label applied to the Teams meeting in Graph
+author: garchiro7
+ms.date: 10/08/2025
+ms.localizationpriority: medium
+ms.subservice: "cloud-communications"
+doc_type: resourcePageType
+---
+
+# onlineMeetingSensitivityLabelAssignment resource type
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+This object corresponds to a label that is created and managed by admins in Microsoft Purview and is used to enforce data protection and meeting governance (e.g., external access restrictions, recording/transcription controls) according to organizational policy. For more information visit [the site for Teams meetings with protection for sensitive data.](https://learn.microsoft.com/microsoftteams/configure-meetings-sensitive-protection)
+
+
+## Properties
+|Property|Type|Description|
+|:---|:---|:---|
+|sensitivityLabelId|String|Id of the sensitivity label that is applied to the Teams meeting. |
+
+## Relationships
+None.
+
+## JSON representation
+The following JSON representation shows the resource type.
+<!-- {
+  "blockType": "resource",
+  "@odata.type": "microsoft.graph.onlineMeetingSensitivityLabelAssignment"
+}
+-->
+``` json
+{
+  "@odata.type": "#microsoft.graph.onlineMeetingSensitivityLabelAssignment",
+  "sensitivityLabelId": "String"
+}
+```
+

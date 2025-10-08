@@ -1,9 +1,9 @@
 {
   "changelog": [
-    {
+   {
       "ChangeList": [
         {
-          "Id": "a80cc545-bbce-4982-a996-c53be70c2201",
+          "Id": "55aeecb0-d2cf-48d1-82b2-c42a18084e4e",
           "ApiChange": "Resource",
           "ChangedApiName": "onlineMeetingSensitivityLabelAssignment",
           "ChangeType": "Addition",
@@ -11,17 +11,17 @@
           "Target": "onlineMeetingSensitivityLabelAssignment"
         }
       ],
-      "Id": "a80cc545-bbce-4982-a996-c53be70c2201",
-      "Cloud": "Review",
+      "Id": "55aeecb0-d2cf-48d1-82b2-c42a18084e4e",
+      "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2025-10-07T23:41:44.3095738Z",
+      "CreatedDateTime": "2025-10-08T17:53:57.8764356Z",
       "WorkloadArea": "Cloud communications",
       "SubArea": "Call"
     },
     {
       "ChangeList": [
         {
-          "Id": "c91a17cf-24ff-4a03-8290-10df6a55239b",
+          "Id": "c58e1809-898c-4314-986e-2fb6cd09ab4e",
           "ApiChange": "Property",
           "ChangedApiName": "sensitivityLabelAssignment",
           "ChangeType": "Addition",
@@ -29,10 +29,10 @@
           "Target": "onlineMeeting"
         }
       ],
-      "Id": "c91a17cf-24ff-4a03-8290-10df6a55239b",
-      "Cloud": "Review",
+      "Id": "c58e1809-898c-4314-986e-2fb6cd09ab4e",
+      "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2025-10-07T23:41:44.3098136Z",
+      "CreatedDateTime": "2025-10-08T17:53:57.8766552Z",
       "WorkloadArea": "Cloud communications",
       "SubArea": "Online meeting"
     },
