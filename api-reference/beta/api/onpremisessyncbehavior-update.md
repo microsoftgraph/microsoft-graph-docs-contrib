@@ -25,8 +25,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 | Supported resource | Delegated (work or school account) | Delegated (personal Microsoft account) | Application |
 |:-|:-|:-|:-|
-| [orgContact](../resources/contact.md)| Contacts-OnPremisesSyncBehavior.ReadWrite.All | Not supported. | Contacts-OnPremisesSyncBehavior.ReadWrite.All |
 | [group](../resources/group.md)| Group-OnPremisesSyncBehavior.ReadWrite.All | Not supported. | Group-OnPremisesSyncBehavior.ReadWrite.All |
+| [orgContact](../resources/contact.md)| Contacts-OnPremisesSyncBehavior.ReadWrite.All | Not supported. | Contacts-OnPremisesSyncBehavior.ReadWrite.All |
 | [user](../resources/user.md)| User-OnPremisesSyncBehavior.ReadWrite.All | Not supported. | User-OnPremisesSyncBehavior.ReadWrite.All |
 
 > [!IMPORTANT]
