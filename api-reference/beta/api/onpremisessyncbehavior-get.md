@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Read the properties of an [onPremisesSyncBehavior](../resources/onpremisessyncbehavior.md) object. The **isCloudManaged** property indicates whether the object's source of authority is set to the cloud. If `true`, updates from on-premises Active Directory are blocked in the cloud; if `false`, updates from on-premises Active Directory are allowed in the cloud and the object can be taken over by on-premises Active Directory.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -36,7 +36,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /groups/{groupsId}/onPremisesSyncBehavior
+GET /contacts/{id}/onPremisesSyncBehavior
+GET /groups/{id}/onPremisesSyncBehavior
+GET /users/{id}/onPremisesSyncBehavior
 ```
 
 ## Optional query parameters

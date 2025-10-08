@@ -879,10 +879,10 @@ items:
         href: ../../resources/removeaccessapplyaction.md
       - name: Request
         href: ../../resources/request.md
-      - name: User last sign in recommendation insight setting
-        href: ../../resources/userlastsignInrecommendationinsightsetting.md
-      - name: User sign in insight
-        href: ../../resources/usersigninInsight.md
+      - name: User last sign-in recommendation insight setting
+        href: ../../resources/userlastsigninrecommendationinsightsetting.md
+      - name: User sign-in insight
+        href: ../../resources/usersignininsight.md
   - name: Access reviews (deprecated)
     items:
     - name: Overview
@@ -1406,6 +1406,8 @@ items:
         href: ../../api/identitygovernance-workflow-delete.md
       - name: Activate
         href: ../../api/identitygovernance-workflow-activate.md
+      - name: Activate with scope
+        href: ../../api/identitygovernance-workflow-activatewithscope.md
       - name: List users in scope
         href: ../../api/workflow-list-executionscope.md
       - name: Deleted workflows
@@ -1459,6 +1461,10 @@ items:
             href: ../../api/identitygovernance-userprocessingresult-summary.md
           - name: List task processing results
             href: ../../api/identitygovernance-userprocessingresult-list-taskprocessingresults.md
+          - name: List reprocessedRuns
+            href: ../../api/identitygovernance-userprocessingresult-list-reprocessedruns.md
+          - name: Remove reprocessedRuns
+            href: ../../api/identitygovernance-userprocessingresult-delete-reprocessedruns.md
         - name: Task report
           items:
           - name: Task report
@@ -1481,6 +1487,10 @@ items:
             href: ../../api/identitygovernance-run-summary.md
           - name: List task processing results
             href: ../../api/identitygovernance-run-list-taskprocessingresults.md
+          - name: List reprocessedRuns
+            href: ../../api/identitygovernance-run-list-reprocessedruns.md
+          - name: Remove reprocessedRuns
+            href: ../../api/identitygovernance-run-delete-reprocessedruns.md
         - name: Task processing result
           items:
           - name: Task processing result
@@ -2550,6 +2560,14 @@ items:
         href: ../../api/conditionalaccesspolicy-update.md
       - name: Delete
         href: ../../api/conditionalaccesspolicy-delete.md
+      - name: Restore
+        href: ../../api/conditionalaccesspolicy-restore.md
+      - name: List deleted policies
+        href: ../../api/policydeletableitem-list.md
+      - name: Get deleted policy
+        href: ../../api/policydeletableitem-get.md
+      - name: Permanently delete a soft deleted policy
+        href: ../../api/policydeletableitem-delete.md
     - name: What If evaluation
       items:
       - name: What If evaluation
@@ -2566,6 +2584,14 @@ items:
         href: ../../api/namedlocation-get.md
       - name: Delete
         href: ../../api/namedlocation-delete.md
+      - name: Restore
+        href: ../../api/namedlocation-restore.md
+      - name: List deleted named locations
+        href: ../../api/policydeletableitem-list.md
+      - name: Get deleted named locations
+        href: ../../api/policydeletableitem-get.md
+      - name: Permanently delete a soft deleted named location
+        href: ../../api/policydeletableitem-delete.md
       - name: Country named location
         items:
         - name: Country named location
@@ -2580,6 +2606,8 @@ items:
           href: ../../api/countrynamedlocation-update.md
         - name: Delete
           href: ../../api/countrynamedlocation-delete.md
+        - name: Restore
+          href: ../../api/countrynamedlocation-restore.md
       - name: IP named location
         items:
         - name: IP named location
@@ -2594,6 +2622,8 @@ items:
           href: ../../api/ipnamedlocation-update.md
         - name: Delete
           href: ../../api/ipnamedlocation-delete.md
+        - name: Restore
+          href: ../../api/ipnamedlocation-restore.md
       - name: Compliant network named location
         items:
         - name: Compliant network named location
@@ -2671,6 +2701,14 @@ items:
         href: ../../api/crosstenantaccesspolicyconfigurationpartner-update.md
       - name: Delete
         href: ../../api/crosstenantaccesspolicyconfigurationpartner-delete.md
+      - name: List deleted policies
+        href: ../../api/policydeletableitem-list.md
+      - name: Get deleted policy
+        href: ../../api/policydeletableitem-get.md
+      - name: Permanently delete deleted policy
+        href: ../../api/policydeletableitem-delete.md
+      - name: Restore deleted policy
+        href: ../../api/crosstenantaccesspolicyconfigurationpartner-restore.md
     - name: Partner user sync settings
       items:
       - name: Partner user sync settings
@@ -2683,6 +2721,14 @@ items:
         href: ../../api/crosstenantidentitysyncpolicypartner-update.md
       - name: Delete
         href: ../../api/crosstenantidentitysyncpolicypartner-delete.md
+      - name: List deleted policies
+        href: ../../api/policydeletableitem-list.md
+      - name: Get deleted policy
+        href: ../../api/policydeletableitem-get.md
+      - name: Permanently delete deleted policy
+        href: ../../api/policydeletableitem-delete.md
+      - name: Restore deleted policy
+        href: ../../api/crosstenantidentitysyncpolicypartner-restore.md
   - name: Cross-tenant shared user profiles
     items:
     - name: Inbound shared user profile
@@ -4274,6 +4320,8 @@ items:
         href: ../../api/networkaccess-policyrule-get.md
       - name: Update
         href: ../../api/networkaccess-policyrule-update.md
+      - name: Get web category by URL
+        href: ../../api/networkaccess-connectivity-getwebcategorybyurl.md
     - name: Forwarding rule
       href: ../../resources/networkaccess-forwardingrule.md
     - name: M 365 forwarding rule
@@ -4336,6 +4384,8 @@ items:
         href: ../../api/networkaccess-filteringrule-update.md
       - name: Delete
         href: ../../api/networkaccess-filteringrule-delete.md
+      - name: Get web category by URL
+        href: ../../api/networkaccess-connectivity-getwebcategorybyurl.md
     - name: FQDN filtering rule
       href: ../../resources/networkaccess-fqdnfilteringrule.md
     - name: Web category filtering rule

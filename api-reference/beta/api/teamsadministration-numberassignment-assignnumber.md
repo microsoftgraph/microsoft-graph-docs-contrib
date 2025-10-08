@@ -20,11 +20,7 @@ Creates an asynchronous order to assign a telephone number to a user account.
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "teamsadministration-numberassignment-assignnumber-permissions"
-}
--->
+<!-- { "blockType": "permissions", "name": "teamsadministration_numberassignment_assignnumber" } -->
 [!INCLUDE [permissions-table](../includes/permissions/teamsadministration-numberassignment-assignnumber-permissions.md)]
 
 ## HTTP request
@@ -97,3 +93,4 @@ The following example shows the response.
 HTTP/1.1 202 Accepted
 Location: https://graph.microsoft.com/beta/admin/teams/telephoneNumberManagement/operations('QXNzaWdubWVudHw2Y2E4Yjc0Ni00YzgxLTRhY2EtOTUyNi1jZmNjNGRiYWYyMmI')
 ```
+

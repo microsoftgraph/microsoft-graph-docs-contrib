@@ -3,6 +3,74 @@
     {
       "ChangeList": [
         {
+          "Id": "d57b194a-7833-4390-9d64-ff855119946c",
+          "ApiChange": "Property",
+          "ChangedApiName": "activity",
+          "ChangeType": "Change",
+          "Description": "Removed `InACall`, `InAConferenceCall`, `Inactive`, `InAMeeting`, `Presenting`, `UrgentInterruptionsOnly`, and `OffWork` as supported values for the **activity** property of the [presence](https://learn.microsoft.com/en-us/graph/api/resources/presence?view=graph-rest-1.0) resource.",
+          "Target": "presence"
+        },
+        {
+          "Id": "d57b194a-7833-4390-9d64-ff855119946c",
+          "ApiChange": "Property",
+          "ChangedApiName": "availability",
+          "ChangeType": "Change",
+          "Description": "Removed `AvailableIdle` and `BusyIdle` as supported values for the **availability** property of the [presence](https://learn.microsoft.com/en-us/graph/api/resources/presence?view=graph-rest-1.0) resource.",
+          "Target": "presence"
+        },
+        {
+          "Id": "d57b194a-7833-4390-9d64-ff855119946c",
+          "ApiChange": "Property",
+          "ChangedApiName": "availability",
+          "ChangeType": "Change",
+          "Description": "Added `Focusing`, `InACall`, `InAMeeting`, and `Presenting` as supported values for the **availability** property of the [presence](https://learn.microsoft.com/en-us/graph/api/resources/presence?view=graph-rest-1.0) resource.",
+          "Target": "presence"
+        }
+      ],
+      "Id": "d57b194a-7833-4390-9d64-ff855119946c",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-09-15T15:04:59.427Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "d57b194a-7833-4390-9d64-ff855119946c",
+          "ApiChange": "Property",
+          "ChangedApiName": "activity",
+          "ChangeType": "Change",
+          "Description": "Removed `InACall`, `InAConferenceCall`, `Inactive`, `InAMeeting`, `Presenting`, `UrgentInterruptionsOnly`, and `OffWork` as supported values for the **activity** property of the [presence](https://learn.microsoft.com/en-us/graph/api/resources/presence?view=graph-rest-beta) resource.",
+          "Target": "presence"
+        },
+        {
+          "Id": "d57b194a-7833-4390-9d64-ff855119946c",
+          "ApiChange": "Property",
+          "ChangedApiName": "availability",
+          "ChangeType": "Change",
+          "Description": "Removed `AvailableIdle` and `BusyIdle` as supported values for the **availability** property of the [presence](https://learn.microsoft.com/en-us/graph/api/resources/presence?view=graph-rest-beta) resource.",
+          "Target": "presence"
+        },
+        {
+          "Id": "d57b194a-7833-4390-9d64-ff855119946c",
+          "ApiChange": "Property",
+          "ChangedApiName": "availability",
+          "ChangeType": "Change",
+          "Description": "Added `Focusing`, `InACall`, `InAMeeting`, and `Presenting` as supported values for the **availability** property of the [presence](https://learn.microsoft.com/en-us/graph/api/resources/presence?view=graph-rest-beta) resource.",
+          "Target": "presence"
+        }
+      ],
+      "Id": "d57b194a-7833-4390-9d64-ff855119946c",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-09-19T15:04:59.427Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "698f4470-213e-4165-9992-7115fc691671",
           "ApiChange": "Resource",
           "ChangedApiName": "channel",

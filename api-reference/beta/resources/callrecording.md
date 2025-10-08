@@ -1,11 +1,11 @@
 ---
 title: "callRecording resource type"
-description: "Represents a recording associated with an online meeting."
+description: "Represents a recording associated with an online meeting or an ad hoc call."
 author: "v-sdhakshina"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: resourcePageType
-ms.date: 08/02/2024
+ms.date: 08/06/2025
 ---
 
 # callRecording resource type
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a recording associated with an [online meeting](onlinemeeting.md).
+Represents a recording associated with an [online meeting](onlinemeeting.md) or an [ad hoc call](/graph/api/resources/adhoccall?view=graph-rest-beta&preserve-view=true). 
 
 ## Methods
 
@@ -22,6 +22,7 @@ Represents a recording associated with an [online meeting](onlinemeeting.md).
 |:---------------|:--------|:----------|
 |[List](../api/onlinemeeting-list-recordings.md) | [callRecording](callrecording.md) collection | Get the list of [callRecording](../resources/callrecording.md) objects associated with a scheduled [onlineMeeting](../resources/onlinemeeting.md).|
 |[Get](../api/callrecording-get.md) | [callRecording](callrecording.md) | Get a [callRecording](../resources/callrecording.md) object associated with a scheduled [onlineMeeting](../resources/onlinemeeting.md).|
+|[Get](../api/callrecording-get.md) | [callRecording](../resources/callrecording.md) | Get a [callRecording](../resources/callrecording.md) object associated with a meeting and an ad hoc call after the instance has ended.|
 |[Get delta by organizer](../api/callrecording-delta.md) | [callRecording](callrecording.md) collection | Get a set of [callRecording](../resources/callrecording.md) resources that were added for [onlineMeeting](../resources/onlinemeeting.md) instances organized by the specified user.|
 |[List recordings by organizer](../api/onlinemeeting-getallrecordings.md) | [callRecording](callrecording.md) collection | Get the [callRecording](../resources/callrecording.md) objects for all the [onlineMeeting](../resources/onlinemeeting.md) instances organized by the specified user.|
  
@@ -40,6 +41,7 @@ Represents a recording associated with an [online meeting](onlinemeeting.md).
 | recordingContentUrl| String| The URL that can be used to access the content of the recording. Read-only.|
 
 ## Relationships
+
 None.
 
 ## JSON representation

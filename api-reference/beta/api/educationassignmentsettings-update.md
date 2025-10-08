@@ -344,8 +344,8 @@ Content-type: application/json
 }
 ```
 
-### Example 4: Create grading schemas
-
+### Example 4: Create grading schemes
+The following example shows how to create [educationGradingScheme](../resources/educationgradingscheme.md) objects.
 #### Request
 The following example shows a request.
 

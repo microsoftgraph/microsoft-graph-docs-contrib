@@ -14,7 +14,7 @@ var requestBody = new SearchPostRequestBody
 {
 	ArtifactQuery = new ArtifactQuery
 	{
-		QueryExpression = "(Sender -eq 'abc@contoso.com') -and (Subject -like '*Check email*' -or Subject -like ' Important') -and (HasAttachment -eq 'true') -and (PitrDumpsterActionTriggeredTime -gt '{2024-09-21T08:20:00.0000000Z}')",
+		QueryExpression = "(Sender -like 'abc@contoso.com') -and (Subject -like '*Check email*' -or Subject -like ' Important') -and (HasAttachment -eq 'true') -and (PitrDumpsterActionTriggeredTime -gt '2024-09-21T08:20:00.0000000Z')",
 		ArtifactType = RestorableArtifact.Message,
 	},
 	ProtectionUnitIds = new List<string>
