@@ -22,8 +22,8 @@ Inherits from [processContentMetadataBase](../resources/processcontentmetadataba
 
 |Property|Type|Description|
 |:---|:---|:---|
-|accessedResources_v2|[resourceAccessDetail](../resources/resourceaccessdetail.md) collection| Represents details about resources accessed by AI agents, including identifiers, access type, and status.|
-|agents|[aiAgentInfo](../resources/aiagentinfo.md) collection| Represents information about an AI agent that participated in the preparation of the message.|
+|accessedResources_v2|[resourceAccessDetail](../resources/resourceaccessdetail.md) collection| Indicates the details about resources accessed by AI agents, including identifiers, access type, and status.|
+|agents|[aiAgentInfo](../resources/aiagentinfo.md) collection| Indicates the information about an AI agent that participated in the preparation of the message.|
 |content| [contentBase](../resources/contentbase.md)| Represents the actual content, either as text (`textContent`) or binary data (`binaryContent`). Optional if metadata alone is sufficient for policy evaluation. **Do not use for [contentActivities](../api/activitiescontainer-post-contentactivities.md)** Inherited from [processContentMetadataBase](../resources/processcontentmetadatabase.md).|
 |correlationId|String|A GUID identifier used to group multiple related content entries (for example, different parts of the same file upload, messages in a conversation). Inherited from [processContentMetadataBase](../resources/processcontentmetadatabase.md).|
 |createdDateTime|DateTimeOffset|Required. Timestamp when the original content was created (for example, file creation time, message sent time). Inherited from [processContentMetadataBase](../resources/processcontentmetadatabase.md).|
