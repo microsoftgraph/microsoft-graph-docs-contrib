@@ -3,6 +3,42 @@
     {
       "ChangeList": [
         {
+          "Id": "a80cc545-bbce-4982-a996-c53be70c2201",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onlineMeetingSensitivityLabelAssignment",
+          "ChangeType": "Addition",
+          "Description": "Added the [onlineMeetingSensitivityLabelAssignment](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeetingSensitivityLabelAssignment?view=graph-rest-beta) resource.",
+          "Target": "onlineMeetingSensitivityLabelAssignment"
+        }
+      ],
+      "Id": "a80cc545-bbce-4982-a996-c53be70c2201",
+      "Cloud": "Review",
+      "Version": "beta",
+      "CreatedDateTime": "2025-10-07T23:41:44.3095738Z",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": "Call"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "c91a17cf-24ff-4a03-8290-10df6a55239b",
+          "ApiChange": "Property",
+          "ChangedApiName": "sensitivityLabelAssignment",
+          "ChangeType": "Addition",
+          "Description": "Added the **sensitivityLabelAssignment** property to the [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeeting?view=graph-rest-beta) resource.",
+          "Target": "onlineMeeting"
+        }
+      ],
+      "Id": "c91a17cf-24ff-4a03-8290-10df6a55239b",
+      "Cloud": "Review",
+      "Version": "beta",
+      "CreatedDateTime": "2025-10-07T23:41:44.3098136Z",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": "Online meeting"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "7b3b450f-7d32-4b67-a678-20b186525452",
           "ApiChange": "Property",
           "ChangedApiName": "allowCopyingAndSharingMeetingContent",
