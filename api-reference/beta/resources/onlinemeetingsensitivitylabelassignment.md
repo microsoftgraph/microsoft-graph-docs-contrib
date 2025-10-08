@@ -14,7 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This object corresponds to a label that is created and managed by admins in Microsoft Purview and is used to enforce data protection and meeting governance (e.g., external access restrictions, recording/transcription controls) according to organizational policy. For more information visit [the site for Teams meetings with protection for sensitive data.](https://learn.microsoft.com/microsoftteams/configure-meetings-sensitive-protection)
+This object corresponds to the label that is created and managed by admins in Microsoft Purview and is used to enforce data protection and meeting governance.
+
+For more information, visit [the site for Teams meetings with protection for sensitive data.](https://learn.microsoft.com/microsoftteams/configure-meetings-sensitive-protection)
 
 
 ## Properties
