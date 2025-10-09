@@ -9,6 +9,22 @@
           "ChangeType": "Addition",
           "Description": "Add the **meetingOptionsWebUrl** property from the [onlineMeetingBase](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeetingBase?view=graph-rest-beta) resource.",
           "Target": "onlineMeetingBase"
+        },
+        {
+          "Id": "f008e001-d158-496f-b292-2efc0fb21476",
+          "ApiChange": "Property",
+          "ChangedApiName": "meetingOptionsWebUrl",
+          "ChangeType": "Addition",
+          "Description": "Add the **meetingOptionsWebUrl** property from the [virtualEventSession](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventSession?view=graph-rest-beta) resource.",
+          "Target": "virtualEventSession"
+        },
+        {
+          "Id": "f008e001-d158-496f-b292-2efc0fb21476",
+          "ApiChange": "Property",
+          "ChangedApiName": "meetingOptionsWebUrl",
+          "ChangeType": "Addition",
+          "Description": "Add the **meetingOptionsWebUrl** property from the [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeeting?view=graph-rest-beta) resource.",
+          "Target": "onlineMeeting"
         }
       ],
       "Id": "f008e001-d158-496f-b292-2efc0fb21476",
