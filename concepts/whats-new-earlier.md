@@ -2090,7 +2090,7 @@ List [host pair](/graph/api/resources/security-hostpair?view=graph-rest-beta&pre
 - [List](/graph/api/onlinemeeting-list-recordings?view=graph-rest-beta&preserve-view=true) all recordings of an online meeting for which the specified user is an organizer or participant.
 - [Get all recordings](/graph/api/onlinemeeting-getallrecordings?view=graph-rest-beta&preserve-view=true) from scheduled online meeting instances for which the specified user is the organizer.
 - [Get a set of recording resources that have been added](/graph/api/callrecording-delta?view=graph-rest-beta&preserve-view=true) for online meeting instances organized by the specified user.
-- [List](/graph/api/virtualeventsession-list?view=graph-rest-beta&preserve-view=true) all [virtual event sessions](/graph/api/resources/virtualeventsession?view=graph-rest-beta&preserve-view=true) for a [webinar](/graph/api/resources/virtualeventwebinar?view=graph-rest-beta&preserve-view=true) virtual event.
+- [List](/graph/api/virtualevent-list-sessions?view=graph-rest-1.0) all [virtual event sessions](/graph/api/resources/virtualeventsession?view=graph-rest-beta&preserve-view=true) for a [webinar](/graph/api/resources/virtualeventwebinar?view=graph-rest-beta&preserve-view=true) virtual event.
 - [Get](/graph/api/deletedchat-get?view=graph-rest-beta&preserve-view=true) a [deleted chat](/graph/api/resources/deletedChat?view=graph-rest-beta&preserve-view=true).
 - [Delete](/graph/api/chat-delete?view=graph-rest-beta&preserve-view=true) or [undo a deletion](/graph/api/deletedchat-undodelete?view=graph-rest-beta&preserve-view=true) of a [chat](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true).
 
@@ -2219,7 +2219,7 @@ GA release of the [threat intelligence API](/graph/api/resources/security-threat
 - Track the freeze duration data of a video stream in a [media stream](/graph/api/resources/callRecords-mediaStream).
 - Check whether the forward error correction (FEC) was used at some point during a [session](/graph/api/resources/callrecords-session).
 - Represent CPU capabilities and name of the device used by a caller or callee [participant endpoint](/graph/api/resources/callrecords-participantendpoint) in a [call](/graph/api/resources/call) or [online meeting](/graph/api/resources/onlinemeeting).
-- [Listing](/graph/api/callrecords-session-list) sessions in a [call record](/graph/api/resources/callrecords-callrecord) can now identify those sessions that took place for testing purpose.
+- [Listing](/graph/api/callrecords-callrecord-list-sessions?view=graph-rest-1.0) sessions in a [call record](/graph/api/resources/callrecords-callrecord) can now identify those sessions that took place for testing purpose.
 
 ### Teamwork and communications | Employee learning
 Get or specify whether a [learning provider](/graph/api/resources/learningProvider) can ingest learning course activity records, including [learning activity assigned to a user](/graph/api/resources/learningassignment) and [learning course activity initiated by a user](/graph/api/resources/learningselfinitiatedcourse).
@@ -2280,7 +2280,7 @@ Specify or get [checklist items](/graph/api/resources/plannerchecklistitems?view
 ### Teamwork and communications | Calls and online meetings
 Get information about a [webinar](/graph/api/resources/virtualeventwebinar?view=graph-rest-beta&preserve-view=true) virtual event on Microsoft Teams, including the following:
 - [Presenter](/graph/api/resources/virtualeventpresenter?view=graph-rest-beta&preserve-view=true) information and [details](/graph/api/resources/virtualeventpresenterdetails?view=graph-rest-beta&preserve-view=true).
-- [Registration information](/graph/api/resources/virtualeventregistration?view=graph-rest-beta&preserve-view=true), registration questions, and [registrant information and status](/graph/api/resources/virtualeventregistrant?view=graph-rest-beta&preserve-view=true).
+- [Registration information](/graph/api/resources/virtualeventregistration?view=graph-rest-beta&preserve-view=true), registration questions, and [registrant information and status](/graph/api/resources/virtualeventregistration?view=graph-rest-1.0).
 - [Attendance report](/graph/api/resources/meetingattendancereport?view=graph-rest-beta&preserve-view=true) for a [session](/graph/api/resources/virtualeventsession?view=graph-rest-beta&preserve-view=true) in the webinar.
 - Create an [online meeting](/graph/api/resources/onlineMeeting?view=graph-rest-beta&preserve-view=true) with the option to anonymize attendees' identity in the meeting.
 - From a PSTN call log, [get](/graph/api/callrecords-callrecord-getpstncalls?view=graph-rest-beta&preserve-view=true) the IPv4 or IPv6 of a client's local address, and public IP address that can be used to determine the client's location.

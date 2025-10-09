@@ -18,7 +18,7 @@ import (
 
 requestBody := graphsolutions.NewSearchPostRequestBody()
 artifactQuery := graphmodels.NewArtifactQuery()
-queryExpression := "(Sender -like 'abc@contoso.com') -and (Subject -like '*Check email*' -or Subject -like ' Important') -and (HasAttachment -eq 'true') -and (PitrDumpsterActionTriggeredTime -gt '{2024-09-21T08:20:00.0000000Z}')"
+queryExpression := "(Sender -like 'abc@contoso.com') -and (Subject -like '*Check email*' -or Subject -like ' Important') -and (HasAttachment -eq 'true') -and (PitrDumpsterActionTriggeredTime -gt '2024-09-21T08:20:00.0000000Z')"
 artifactQuery.SetQueryExpression(&queryExpression) 
 artifactType := graphmodels.MESSAGE_RESTORABLEARTIFACT 
 artifactQuery.SetArtifactType(&artifactType) 
