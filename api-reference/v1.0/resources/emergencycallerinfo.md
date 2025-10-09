@@ -7,11 +7,12 @@ ms.subservice: "cloud-communications"
 ms.date: 08/10/2025
 doc_type: resourcePageType
 ---
+
 # emergencyCallerInfo resource type
 
 Namespace: microsoft.graph
 
-Contains information about the emergency caller. 
+Contains information about an emergency caller. 
 
 ## Properties
 |Property|Type|Description|
@@ -36,12 +37,10 @@ The following JSON representation shows the resource type.
 {
   "@odata.type": "#microsoft.graph.emergencyCallerInfo",
   "displayName": "String",
-  "upn": "String",
+  "location": {"@odata.type": "microsoft.graph.location"},
   "phoneNumber": "String",
   "tenantId": "String",
-  "location": {
-    "@odata.type": "microsoft.graph.location"
-  }
+  "upn": "String"
 }
 ```
 
