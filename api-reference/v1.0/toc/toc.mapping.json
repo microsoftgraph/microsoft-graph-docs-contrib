@@ -1902,7 +1902,7 @@
                 "emergencyCallEvent"
               ],
               "complexTypes": [
-                "emergencyCallEvent"
+                "emergencyCallerInfo"
               ]
             },
             {

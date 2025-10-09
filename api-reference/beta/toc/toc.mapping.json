@@ -3204,7 +3204,7 @@
                 "emergencyCallEvent"
               ],
               "complexTypes": [
-                "emergencyCallEvent"
+                "emergencyCallerInfo"
               ]
             },
             {
