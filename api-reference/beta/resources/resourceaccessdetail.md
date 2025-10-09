@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents details about resources accessed by AI agents, including identifiers, access type, and status.
+Represents details about resources accessed by AI agents, including identifiers, access type, and status, recorded in the [processConversationMetadata](../resources/processconversationmetadata.md) object.
 
 Base type of [contentStoreResourceAccessDetail](../resources/contentstoreresourceaccessdetail.md) and [sharepointResourceAccessDetail](../resources/sharepointresourceaccessdetail.md).
 
