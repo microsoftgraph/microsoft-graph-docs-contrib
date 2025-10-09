@@ -4,7 +4,7 @@ description: "Represents the base type for sign-in identifiers that enable users
 author: "Gyanendersinghgithub"
 ms.date: 10/02/2025
 ms.localizationpriority: medium
-ms.subservice: "CPIM"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -23,7 +23,6 @@ This is an abstract type.
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Create](../api/identitycontainer-post-signinidentifiers.md)|[signInIdentifierBase](../resources/signinidentifierbase.md)|Create a new signInIdentifierBase object.|
 |[Get](../api/signinidentifierbase-get.md)|[signInIdentifierBase](../resources/signinidentifierbase.md)|Read the properties and relationships of [signInIdentifierBase](../resources/signinidentifierbase.md) object.|
 |[Update](../api/signinidentifierbase-update.md)|[signInIdentifierBase](../resources/signinidentifierbase.md)|Update the properties of a signInIdentifierBase object.|
 |[Delete](../api/customusernamesigninidentifier-delete.md)|None|Delete a signInIdentifierBase object. Only supported for custom (non-built-in) identifiers.|

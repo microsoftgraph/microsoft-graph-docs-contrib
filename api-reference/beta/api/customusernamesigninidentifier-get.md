@@ -4,7 +4,7 @@ description: "Read the properties and relationships of customUsernameSignInIdent
 author: "Gyanendersinghgithub"
 ms.date: 10/02/2025
 ms.localizationpriority: medium
-ms.subservice: "CPIM"
+ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
@@ -25,7 +25,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "name": "customusernamesigninidentifier-get-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/customusernamesigninidentifier-get-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/signinidentifierbase-get-permissions.md)]
 
 ## HTTP request
 

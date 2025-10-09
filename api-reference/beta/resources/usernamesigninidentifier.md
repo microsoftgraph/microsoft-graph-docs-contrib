@@ -4,7 +4,7 @@ description: "Represents a username sign-in identifier that enables users to aut
 author: "Gyanendersinghgithub"
 ms.date: 10/02/2025
 ms.localizationpriority: medium
-ms.subservice: "CPIM"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -49,3 +49,4 @@ The following JSON representation shows the resource type.
   "name": "String (identifier)",
   "isEnabled": "Boolean"
 }
+```

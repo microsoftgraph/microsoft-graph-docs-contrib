@@ -49,3 +49,4 @@ The following JSON representation shows the resource type.
   "name": "String (identifier)",
   "isEnabled": "Boolean"
 }
+```
