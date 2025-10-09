@@ -18,6 +18,12 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 > [!IMPORTANT]
 > Features in _preview_ status are subject to change without notice, and might not be promoted to generally available (GA) status. Don't use preview features in production apps.
 
+## October 2025: New and generally available
+
+### Teamwork and communications | Calls and online meetings
+
+Added the [callEvent](/graph/api/resources/callevent) and [emergencyCallEvent](/graph/api/resources/emergencycallevent) resource types that provide detailed information about both standard and emergency call events.
+
 ## October 2025: New in preview only
 
 ### Education
