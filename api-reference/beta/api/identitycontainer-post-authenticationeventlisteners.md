@@ -589,15 +589,14 @@ Content-Type: application/json
 }
 ```
 
-### Example 5: Enable Fraud Protection during Sign up with Arkose Labs 
+### Example 5: Enable Fraud Protection during sign-up with Arkose Labs 
 
 #### Request
-The following example shows a request that activates enables fraud prtrotection during sign up using Arkose Labs.
+The following example shows a request that activates enables fraud protection during sign-up using Arkose Labs.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_authenticationeventlistener_onFraudProtectionLoadStartListener"
+  "name": "create_authenticationeventlistener_onFraudProtectionLoadStartListener_Arkose"
 }
 -->
 ```http
@@ -668,15 +667,14 @@ Content-Type: application/json
 }
 ```
 
-### Example 6: Enable Fraud Protection during Sign up with HUMAN Security 
+### Example 6: Enable Fraud Protection during sign-up with HUMAN Security 
 
 #### Request
-The following example shows a request that activates enables fraud prtrotection during sign up using HUMAN Security.
+The following example shows a request that activates enables fraud protection during sign-up using HUMAN Security.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_authenticationeventlistener_onFraudProtectionLoadStartListener"
+  "name": "create_authenticationeventlistener_onFraudProtectionLoadStartListener_HUMANSecurity"
 }
 -->
 ```http
