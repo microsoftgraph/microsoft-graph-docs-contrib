@@ -1556,10 +1556,11 @@
                 "onAttributeCollectionSubmitListener",
                 "onAuthenticationMethodLoadStartListener",
                 "onEmailOtpSendListener",
+                "onFraudProtectionLoadStartListener"
                 "onInteractiveAuthFlowStartListener",
+                "onPhoneMethodLoadStartListener",
                 "onTokenIssuanceStartListener",
                 "onUserCreateStartListener",
-                "onPhoneMethodLoadStartListener"
               ]
             },
             {
@@ -1691,7 +1692,10 @@
                 "riskyUser",
                 "riskyUserHistoryItem",
                 "servicePrincipalRiskDetection",
-                "riskyServicePrincipal"
+                "riskyServicePrincipal",
+                "fraudProtectionProvider",
+                "arkoseFraudProtectionProvider",
+                "humanSecurityFraudProtectionProvider"
               ]
             },
             {
