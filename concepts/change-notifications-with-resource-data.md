@@ -388,7 +388,7 @@ To decrypt resource data, your app should perform the reverse steps, using the p
 
 1. Use the symmetric key to calculate the HMAC-SHA256 signature for the value in **data**. Compare it to the value in **dataSignature**. If they don't match, assume the payload is tampered with, and don't decrypt it.
 
-1. Decrypt the **data** proeprty using the symmetric key with Advanced Encryption Standard (AES), such as the .NET [Aes](/dotnet/api/system.security.cryptography.aes?view=netframework-4.8&preserve-view=true).
+1. Decrypt the **data** property using the symmetric key with Advanced Encryption Standard (AES), such as the .NET [Aes](/dotnet/api/system.security.cryptography.aes?view=netframework-4.8&preserve-view=true).
 
     - Use the following decryption parameters for the AES algorithm:
 
