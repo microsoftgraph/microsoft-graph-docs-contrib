@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents information about an AI agent that participated in the preparation of the message.
+Represents information about an AI agent that participated in the preparation of the message recorded in the [processConversationMetadata](../resources/processconversationmetadata.md) object.
 
 Inherits from [aiInteractionEntity](../resources/aiinteractionentity.md).
 
