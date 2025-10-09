@@ -127,7 +127,7 @@ Content-Type: application/json
 
 #### Request
 
-The following example shows a request  to create a new HUMAN Security fraudProtectionProvider object.
+The following example shows a request to create a new HUMAN Security fraudProtectionProvider object.
 <!-- {
   "blockType": "request",
   "name": "create_fraudprotectionprovider_from_human"
@@ -167,5 +167,4 @@ Content-Type: application/json
     "displayName": "HUMAN security Sign-Up provider",
     "appId": "XXyy1XXXy"
 }
-
 ```
