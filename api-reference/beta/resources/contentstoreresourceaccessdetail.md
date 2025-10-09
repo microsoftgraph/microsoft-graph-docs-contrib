@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents details about resources stored in external content storage systems (such as Box, Dropbox, Exchange, Google Drive) that were accessed by AI agents.
+Represents details about resources stored in external content storage systems (such as Box, Dropbox, Exchange, Google Drive) that were accessed by AI agents, recorded in the [processConversationMetadata](../resources/processconversationmetadata.md) object.
 
 Inherits from [resourceAccessDetail](../resources/resourceaccessdetail.md).
 
