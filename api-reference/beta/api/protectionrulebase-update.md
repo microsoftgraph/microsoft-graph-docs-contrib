@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [protectionRuleBase](../resources/protectionrulebase.md) object. This method is only supported for the dynamic rules of [exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md) and [onedriveForBusinessProtectionPolicy](../resources/onedriveforbusinessprotectionpolicy.md) objects. After the update is applied, the value of the **status** property of the **protectionRuleBase** object is set `updateRequested`.
+Update the properties of a [protectionRuleBase](../resources/protectionrulebase.md) object. This method is only supported for the dynamic rules of [exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md) and [onedriveForBusinessProtectionPolicy](../resources/onedriveforbusinessprotectionpolicy.md) objects. After the update is applied, the value of the **status** property of the **protectionRuleBase** object is set to `updateRequested`.
 
 ## Permissions
 
@@ -134,19 +134,26 @@ The following example shows how to update a **mailboxInclusionRule** associated 
 #### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_mailboxInclusionRule"
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/solutions/backupRestore/exchangeProtectionPolicies/e267a763-ca81-4a98-8c1a-f407143cffe1/mailboxInclionRules/c31adc5c-b65d-4a85-8eda-976947a24124
+PATCH https://graph.microsoft.com/beta/solutions/backupRestore/exchangeProtectionPolicies/e267a763-ca81-4a98-8c1a-f407143cffe1/mailboxInclusionRules/c31adc5c-b65d-4a85-8eda-976947a24124
 Content-Type: application/json
 
 {
   "mailboxExpression": "(memberOf -any (group.id -in ['c318eb4a-ea72-42bd-8f0b-d0bbf794bec7']))"
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-mailboxinclusionrule-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
