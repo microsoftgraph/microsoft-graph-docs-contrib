@@ -58,4 +58,4 @@ The following JSON representation shows the resource type.
 
 ## Related content
 
-[Change notification for emergency call events](/graph/changenotifications-for-emergencycalls)
+[Change notification for emergency call events](/graph/changenotifications-for-emergencycalls).
