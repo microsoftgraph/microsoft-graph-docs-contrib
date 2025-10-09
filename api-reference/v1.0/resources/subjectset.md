@@ -31,10 +31,10 @@ This object is an abstract base type from which the following resources are deri
 |[requestorManager](requestormanager.md) | Entitlement Management | Represents the manager of the requestor as approver for access package assignments. |
 |[ruleBasedSubjectSet](../resources/identitygovernance-ruleBasedSubjectSet.md) | Lifecycle Workflows | Represents the rules to define the subjects for the scope of a lifecycle workflow. |
 |[singleServicePrincipal](singleserviceprincipal.md) | Entitlement Management | Represents a specific service principal in the tenant who will be allowed as a requestor, approver, or reviewer. |
-|[singleUser](singleuser.md) | Entitlement Management | Represents a single user as approver to access . |
+|[singleUser](singleuser.md) | Entitlement Management | Represents a single user as approver to access packages. |
 |[targetApplicationOwners](targetapplicationowners.md) | Entitlement Management | Represents the application owners who can request an access package on behalf of that application. |
 |[targetManager](targetmanager.md) | Entitlement Management | Represents the manager of a user who can request an access package on behalf of that user. |
-|[targetUserSponsors](targetusersponsors.md) | Entitlement Management | Represents another user in the tenant who can approve n access package on behalf of a user. |
+|[targetUserSponsors](targetusersponsors.md) | Entitlement Management | Represents another user in the tenant who can approve an access package on behalf of a user. |
 
 ## Properties
 
