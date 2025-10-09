@@ -4,7 +4,7 @@ description: "Represents a custom username sign-in identifier that allows users 
 author: "Gyanendersinghgithub"
 ms.date: 10/02/2025
 ms.localizationpriority: medium
-ms.subservice: "CPIM"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 

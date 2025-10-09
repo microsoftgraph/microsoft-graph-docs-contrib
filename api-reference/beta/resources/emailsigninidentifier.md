@@ -4,7 +4,7 @@ description: "Represents an email sign-in identifier that allows users to authen
 author: "Gyanendersinghgithub"
 ms.date: 10/02/2025
 ms.localizationpriority: medium
-ms.subservice: "CPIM"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
