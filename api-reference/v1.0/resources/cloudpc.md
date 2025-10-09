@@ -28,7 +28,7 @@ Inherits from [entity](../resources/entity.md).
 |[Resize](../api/cloudpc-resize.md)|None|Upgrade or downgrade an existing [Cloud PC](../resources/cloudpc.md) to a configuration with a new virtual CPU (vCPU) and storage size.|
 |[Restore](../api/cloudpc-restore.md)|None|Restore a specific [cloudPC](../resources/cloudpc.md) object to a previous state from a snapshot.|
 |[Troubleshoot](../api/cloudpc-troubleshoot.md)|None|Troubleshoot a specific [cloudPC](../resources/cloudpc.md) object.|
-|[List for user](../api/user-list-cloudpcs.md)|[cloudPC](../resources/cloudpc.md) collection|List the Cloud PC devices that are attributed to the signed-in user.|
+|[List for user](../api/user-list-cloudpcs.md)|[cloudPC](../resources/cloudpc.md) collection|List the [cloudPC](../resources/cloudpc.md) devices that are attributed to the signed-in user.|
 
 ## Properties
 
