@@ -38,7 +38,7 @@ GET /users/{userId}/cloudPCs/{id}/retrieveCloudPcLaunchDetail
 ```
 
 ## Optional query parameters
-TODO
+This method doesn't support OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -58,11 +58,12 @@ If successful, this function returns a `200 OK` response code and a [cloudPcLaun
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "cloudpc.retrieveCloudPcLaunchDetail"
+  "name": "cloudpc.retrieveCloudPcLaunchDetail",
+  "sampleKeys": ["a20d556d-85f7-88cc-bb9c-08d9902bb7bb"]
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/me/cloudPCs/{cloudPCId}/retrieveCloudPcLaunchDetail
+GET https://graph.microsoft.com/beta/me/cloudPCs/a20d556d-85f7-88cc-bb9c-08d9902bb7bb/retrieveCloudPcLaunchDetail
 ```
 
 ### Response
