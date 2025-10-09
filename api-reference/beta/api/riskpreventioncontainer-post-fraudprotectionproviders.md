@@ -72,7 +72,9 @@ If successful, this method returns a `201 Created` response code and a [fraudPro
 
 ## Examples
 
-### Request
+### Example 1: Create a new arkoseFraudProtectionProvider object
+
+#### Request
 
 The following example shows a request to create a new Arkose fraudProtectionProvider object.
 <!-- {
@@ -95,7 +97,7 @@ Content-Type: application/json
 ```
 
 
-### Response
+#### Response
 
 The following example shows the response with Arkose fraudProtectionProvider object.
 >**Note:** The response object shown here might be shortened for readability.
@@ -121,7 +123,9 @@ Content-Type: application/json
 
 ```
 
-### Request
+### Example 2: Create a new humanSecurityFraudProtectionProvider object
+
+#### Request
 
 The following example shows a request  to create a new HUMAN Security fraudProtectionProvider object.
 <!-- {
@@ -136,13 +140,13 @@ Content-Type: application/json
 {
    "@odata.type": "#microsoft.graph.humanSecurityFraudProtectionProvider",
     "displayName": "HUMAN Security Sign-Up Protection",
-    "appId": "PXab4D5AEg",
-    "serverToken": "eyPQstlef3"
+    "appId": "XXyy1XXXy",
+    "serverToken": "xxYYxxXXX1"
 }
 ```
 
 
-### Response
+#### Response
 
 The following example shows the response with Human Security fraudProtectionProvider object.
 >**Note:** The response object shown here might be shortened for readability.
@@ -161,7 +165,7 @@ Content-Type: application/json
     "@odata.type": "#microsoft.graph.humanSecurityFraudProtectionProvider",
     "id": "6b09e36f-7e92-4448-842a-3959bcbc4f9f",
     "displayName": "HUMAN security Sign-Up provider",
-    "appId": "PXab4D5AEg"
+    "appId": "XXyy1XXXy"
 }
 
 ```
