@@ -192,7 +192,7 @@ items:
     href: ../../api/filestoragecontainer-lock.md
   - name: Unlock
     href: ../../api/filestoragecontainer-unlock.md
-  - name: Create
+  - name: Create migration job
     href: ../../api/filestoragecontainer-post-migrationjobs.md
   - name: Provision migration containers
     href: ../../api/filestoragecontainer-provisionmigrationcontainers.md
@@ -320,6 +320,8 @@ items:
     href: ../../resources/sharepointmigrationevent.md
   - name: List progress events
     href: ../../api/sharepointmigrationjob-list-progressevents.md
+- name: SharePoint migration finish manifest file upload event
+  href: ../../resources/sharepointmigrationfinishmanifestfileuploadevent.md
 - name: SharePoint migration job
   items:
   - name: SharePoint migration job
