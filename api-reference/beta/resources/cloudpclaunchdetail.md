@@ -26,7 +26,7 @@ Contains the details to connect a [Cloud PC](../resources/cloudpc.md).
 
 ### windows365SwitchCompatibilityFailureReasonType values
 
-Defines the reason for switch compatibility failure on the Cloud PC.
+Defines the reason for switch compatibility failure on a Cloud PC.
 
 | Member|Description|
 |:---|:---|
