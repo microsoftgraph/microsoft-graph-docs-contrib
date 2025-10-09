@@ -1654,7 +1654,9 @@
                 "riskyUserHistoryItem",
                 "servicePrincipalRiskDetection",
                 "riskyServicePrincipal",
-                "fraudProtectionProvider"
+                "fraudProtectionProvider",
+                "arkoseFraudProtectionProvider",
+                "humanSecurityFraudProtectionProvider"
               ]
             },
             {
