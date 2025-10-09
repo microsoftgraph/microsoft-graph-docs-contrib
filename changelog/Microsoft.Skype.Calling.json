@@ -15,7 +15,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "emergencyCallerInfo",
           "ChangeType": "Addition",
-          "Description": "Added the [emergencyCallerInfo](https://learn.microsoft.com/en-us/graph/api/resources/emergencyCallerInfo?view=graph-rest-1.0) resource.",
+          "Description": "Added the [emergencyCallerInfo](https://learn.microsoft.com/en-us/graph/api/resources/emergencyCallerInfo?view=graph-rest-1.0) resource type.",
           "Target": "emergencyCallerInfo"
         },
         {
@@ -23,7 +23,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "callEvent",
           "ChangeType": "Addition",
-          "Description": "Added the [callEvent](https://learn.microsoft.com/en-us/graph/api/resources/callEvent?view=graph-rest-1.0) resource.",
+          "Description": "Added the [callEvent](https://learn.microsoft.com/en-us/graph/api/resources/callEvent?view=graph-rest-1.0) resource type.",
           "Target": "callEvent"
         },
         {
@@ -31,7 +31,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "emergencyCallEvent",
           "ChangeType": "Addition",
-          "Description": "Added the [emergencyCallEvent](https://learn.microsoft.com/en-us/graph/api/resources/emergencyCallEvent?view=graph-rest-1.0) resource.",
+          "Description": "Added the [emergencyCallEvent](https://learn.microsoft.com/en-us/graph/api/resources/emergencyCallEvent?view=graph-rest-1.0) resource type.",
           "Target": "emergencyCallEvent"
         }
       ],
