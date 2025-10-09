@@ -70,6 +70,7 @@ If successful, this function returns a `200 OK` response code and a [summarizedS
 ### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "auditlogrootthis.getsummarizedmsisignins"
@@ -78,6 +79,12 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/beta/auditLogs/getSummarizedMSISignIns(aggregationWindow='d1')
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/auditlogrootthisgetsummarizedmsisignins-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 
 ### Response

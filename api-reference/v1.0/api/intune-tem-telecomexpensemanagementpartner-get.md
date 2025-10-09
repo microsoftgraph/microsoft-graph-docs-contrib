@@ -74,10 +74,6 @@ GET https://graph.microsoft.com/v1.0/deviceManagement/telecomExpenseManagementPa
 [!INCLUDE [sample-code](../includes/snippets/java/intune-tem-telecomexpensemanagementpartner-get-get-telecomexpensemanagementpartner-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/intune-tem-telecomexpensemanagementpartner-get-get-telecomexpensemanagementpartner-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/intune-tem-telecomexpensemanagementpartner-get-get-telecomexpensemanagementpartner-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

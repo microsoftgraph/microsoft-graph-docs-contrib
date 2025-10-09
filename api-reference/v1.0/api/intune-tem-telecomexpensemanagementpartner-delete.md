@@ -71,10 +71,6 @@ DELETE https://graph.microsoft.com/v1.0/deviceManagement/telecomExpenseManagemen
 [!INCLUDE [sample-code](../includes/snippets/java/intune-tem-telecomexpensemanagementpartner-delete-delete-telecomexpensemanagementpartner-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/intune-tem-telecomexpensemanagementpartner-delete-delete-telecomexpensemanagementpartner-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/intune-tem-telecomexpensemanagementpartner-delete-delete-telecomexpensemanagementpartner-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

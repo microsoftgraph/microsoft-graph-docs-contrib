@@ -66,6 +66,7 @@ If successful, this function returns a `200 OK` response code and a collection o
 ### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "teamspolicyassignmentthis.getpolicyid"
@@ -74,6 +75,12 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/beta/admin/teams/policy/getPolicyId(type='TeamsMeetingPolicy',name='AllOn')
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/teamspolicyassignmentthisgetpolicyid-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 
