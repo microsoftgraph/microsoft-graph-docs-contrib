@@ -400,7 +400,7 @@ The following example shows a request that activates telecom in region codes 222
 }
 -->
 ```http
-POST https://graph.microsoft.com/v1.0/identity/authenticationEventListeners
+POST https://graph.microsoft.com/beta/identity/authenticationEventListeners
 Content-Type: application/json
 
 {  
@@ -468,7 +468,7 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 { 
-    "@odata.context": "https://microsoft.graph.microsoft.com/v1.0/$metadata#identity/authenticationEventListeners/$entity", 
+    "@odata.context": "https://microsoft.graph.microsoft.com/beta/$metadata#identity/authenticationEventListeners/$entity", 
     "@odata.type": "#microsoft.graph.onPhoneMethodLoadStartListener", 
     "id": "2be3336b-e3b4-44f3-9128-b6fd9ad39bb8", 
     "conditions": {  
@@ -501,7 +501,7 @@ The following example shows a request that deactivates telecom in region codes 1
 }
 -->
 ```http
-POST https://graph.microsoft.com/v1.0/identity/authenticationEventListeners
+POST https://graph.microsoft.com/beta/identity/authenticationEventListeners
 Content-Type: application/json
   
 {  
@@ -569,7 +569,7 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 { 
-    "@odata.context": "https://microsoft.graph.microsoft.com/v1.0/$metadata#identity/authenticationEventListeners/$entity", 
+    "@odata.context": "https://microsoft.graph.microsoft.com/beta/$metadata#identity/authenticationEventListeners/$entity", 
     "@odata.type": "#microsoft.graph.onPhoneMethodLoadStartListener", 
     "id": "2be3336b-e3b4-44f3-9128-b6fd9ad39bb8", 
     "conditions": {  
@@ -600,7 +600,7 @@ The following example shows a request that activates enables fraud protection du
 }
 -->
 ```http
-POST https://graph.microsoft.com/v1.0/identity/authenticationEventListeners
+POST https://graph.microsoft.com/beta/identity/authenticationEventListeners
 Content-Type: application/json
 
 {   
@@ -678,7 +678,7 @@ The following example shows a request that activates enables fraud protection du
 }
 -->
 ```http
-POST https://graph.microsoft.com/v1.0/identity/authenticationEventListeners
+POST https://graph.microsoft.com/beta/identity/authenticationEventListeners
 Content-Type: application/json
 
 {   
