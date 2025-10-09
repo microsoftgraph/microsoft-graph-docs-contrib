@@ -16,15 +16,13 @@ Namespace: microsoft.graph
 
 Provision SharePoint-managed Azure blob containers as temporary storage for migration content and metadata.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "filestoragecontainer-provisionmigrationcontainers-permissions"
-}
--->
+<!-- { "blockType": "permissions", "name": "filestoragecontainer_provisionmigrationcontainers" } -->
 [!INCLUDE [permissions-table](../includes/permissions/filestoragecontainer-provisionmigrationcontainers-permissions.md)]
 
 ## HTTP request
@@ -56,6 +54,7 @@ If successful, this method returns a `200 OK` response code and a [sharePointMig
 ### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "filestoragecontainerthis.provisionmigrationcontainers"
@@ -64,6 +63,32 @@ The following example shows a request.
 ``` http
 POST https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/provisionMigrationContainers
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/filestoragecontainerthisprovisionmigrationcontainers-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/filestoragecontainerthisprovisionmigrationcontainers-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/filestoragecontainerthisprovisionmigrationcontainers-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/filestoragecontainerthisprovisionmigrationcontainers-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/filestoragecontainerthisprovisionmigrationcontainers-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/filestoragecontainerthisprovisionmigrationcontainers-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 

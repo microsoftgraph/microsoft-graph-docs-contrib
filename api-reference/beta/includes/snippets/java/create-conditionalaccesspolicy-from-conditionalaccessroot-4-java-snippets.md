@@ -9,7 +9,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 ConditionalAccessPolicy conditionalAccessPolicy = new ConditionalAccessPolicy();
-conditionalAccessPolicy.setDisplayName("Require MFA to EXO from non-complaint devices.");
+conditionalAccessPolicy.setDisplayName("Require MFA to EXO from non-compliant devices.");
 conditionalAccessPolicy.setState(ConditionalAccessPolicyState.Enabled);
 ConditionalAccessConditionSet conditions = new ConditionalAccessConditionSet();
 ConditionalAccessApplications applications = new ConditionalAccessApplications();

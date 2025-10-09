@@ -65,7 +65,6 @@ The following example shows a common request to require multifactor authenticati
 
 >**Note:** You must set up your trusted locations before using this operation.
 
-
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -139,12 +138,13 @@ Content-type: application/json
 #### Response
 
 The following example shows the response.
-
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": false,
+  "truncated": true,
   "@odata.type": "microsoft.graph.conditionalAccessPolicy"
-} -->
+}
+-->
 
 ```http
 HTTP/1.1 201 Created
@@ -279,12 +279,13 @@ Content-type: application/json
 #### Response
 
 The following example shows the response.
-
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": false,
+  "truncated": true,
   "@odata.type": "microsoft.graph.conditionalAccessPolicy"
-} -->
+}
+-->
 
 ```http
 HTTP/1.1 201 Created
@@ -489,12 +490,13 @@ Content-type: application/json
 #### Response
 
 The following example shows the response.
-
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": false,
+  "truncated": true,
   "@odata.type": "microsoft.graph.conditionalAccessPolicy"
-} -->
+}
+-->
 
 ```http
 HTTP/1.1 201 Created
@@ -628,7 +630,7 @@ POST https://graph.microsoft.com/beta/identity/conditionalAccess/policies
 Content-type: application/json
 
 {
-    "displayName": "Require MFA to EXO from non-complaint devices.",
+    "displayName": "Require MFA to EXO from non-compliant devices.",
     "state": "enabled",
     "conditions": {
         "applications": {
@@ -686,12 +688,13 @@ Content-type: application/json
 #### Response
 
 The following example shows the response.
-
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": false,
+  "truncated": true,
   "@odata.type": "microsoft.graph.conditionalAccessPolicy"
-} -->
+}
+-->
 
 ```http
 HTTP/1.1 201 Created

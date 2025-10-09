@@ -907,6 +907,8 @@ items:
         href: cloud-communications-online-meeting-artifacts.md
       - name: Identify large gallery view participants
         href: cloud-communications-identifylargegalleryview.md
+      - name: Manage presence state
+        href: cloud-communications-manage-presence-state.md
       - name: Manage watermarks for sensitive meetings
         href: cloud-communications-watermark-meeting.md
       - name: Virtual events

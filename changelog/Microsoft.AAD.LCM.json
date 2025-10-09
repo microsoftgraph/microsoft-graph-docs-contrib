@@ -1183,6 +1183,72 @@
     {
       "ChangeList": [
         {
+          "Id": "4688a713-d9d5-4db3-9894-aafdcbe17694",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "activationTaskScopeType",
+          "ChangeType": "Addition",
+          "Description": "Added the **activationTaskScopeType** enumeration type.",
+          "Target": "activationTaskScopeType"
+        },
+        {
+          "Id": "4688a713-d9d5-4db3-9894-aafdcbe17694",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "activationUserScopeType",
+          "ChangeType": "Addition",
+          "Description": "Added the **activationUserScopeType** enumeration type.",
+          "Target": "activationUserScopeType"
+        },
+        {
+          "Id": "4688a713-d9d5-4db3-9894-aafdcbe17694",
+          "ApiChange": "Property",
+          "ChangedApiName": "activatedOnScope",
+          "ChangeType": "Addition",
+          "Description": "Added the **activatedOnScope** property to the [run](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-run?view=graph-rest-beta) resource.",
+          "Target": "run"
+        },
+        {
+          "Id": "4688a713-d9d5-4db3-9894-aafdcbe17694",
+          "ApiChange": "Member",
+          "ChangedApiName": "activatedWithScope",
+          "ChangeType": "Addition",
+          "Description": "Added the **activatedWithScope** member to the **workflowExecutionType** enumeration.",
+          "Target": "workflowExecutionType"
+        },
+         {
+          "Id": "4688a713-d9d5-4db3-9894-aafdcbe17694",
+          "ApiChange": "Method",
+          "ChangedApiName": "activateWithScope",
+          "ChangeType": "Addition",
+          "Description": "Added the [activateWithScope](https://learn.microsoft.com/en-us/graph/api/identityGovernance-workflow-activateWithScope?view=graph-rest-beta) method to the [workflow](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-workflow?view=graph-rest-beta) resource.",
+          "Target": "workflow"
+        },
+        {
+          "Id": "4688a713-d9d5-4db3-9894-aafdcbe17694",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "reprocessedRuns",
+          "ChangeType": "Addition",
+          "Description": "Added the **reprocessedRuns** relationship to the [run](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-run?view=graph-rest-beta) resource.",
+          "Target": "run"
+        },
+        {
+          "Id": "4688a713-d9d5-4db3-9894-aafdcbe17694",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "reprocessedRuns",
+          "ChangeType": "Addition",
+          "Description": "Added the **reprocessedRuns** relationship to the [userProcessingResult](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-userProcessingResult?view=graph-rest-beta) resource.",
+          "Target": "userProcessingResult"
+        }
+      ],
+      "Id": "4688a713-d9d5-4db3-9894-aafdcbe17694",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-09-19T18:43:33.810421Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "c072ab02-1b08-431a-8d73-649b335dc867",
           "ApiChange": "Resource",
           "ChangedApiName": "emailSettings",
