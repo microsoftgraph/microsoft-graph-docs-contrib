@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents details about SharePoint resources accessed by AI agents, including identifiers and list item details.
+Represents details about SharePoint resources accessed by AI agents, including identifiers and list item details, recorded in the [processConversationMetadata](../resources/processconversationmetadata.md) object.
 
 Inherits from [resourceAccessDetail](../resources/resourceaccessdetail.md).
 
