@@ -5,6 +5,7 @@ author: "spgraph-docs-team"
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: resourcePageType
+ms.date: 10/09/2025
 ---
 
 # identityInput resource type
