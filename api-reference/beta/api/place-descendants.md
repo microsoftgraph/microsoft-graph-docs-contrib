@@ -21,8 +21,8 @@ Get all the descendants of a specific type under a [place](../resources/place.md
 
 Before using this API, please ensure that your Places settings are properly configured. Otherwise, you may not be able to see the Places objects. Follow these steps to get started:
 
-1. Download and connect to the MicrosoftPlaces PowerShell module. Refer to [MicrosoftPlaces PowerShell Module Documentation](https://learn.microsoft.com/en-us/microsoft-365/places/powershell/connect-microsoftplaces).
-2. Enable buildings by setting EnableBuildings to true using the following command: (For more information, see [Set-PlacesSettings](https://learn.microsoft.com/en-us/microsoft-365/places/powershell/set-placessettings#-enablebuildings).)
+1. Download and connect to the MicrosoftPlaces PowerShell module. Refer to [MicrosoftPlaces PowerShell Module Documentation](https://learn.microsoft.com/microsoft-365/places/powershell/connect-microsoftplaces).
+2. Enable buildings by setting EnableBuildings to true using the following command: (For more information, see [Set-PlacesSettings](https://learn.microsoft.com/microsoft-365/places/powershell/set-placessettings#-enablebuildings).)
 ```PowerShell
 Set-PlacesSettings -EnableBuildings 'Default:true'
 ```
