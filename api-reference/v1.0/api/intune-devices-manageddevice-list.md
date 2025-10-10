@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 5568
+Content-Length: 5552
 
 {
   "value": [
@@ -82,6 +82,7 @@ Content-Length: 5568
           "lastUpdatedDateTime": "2017-01-01T00:00:56.8321556-08:00"
         }
       ],
+      "managementState": "retirePending",
       "enrolledDateTime": "2016-12-31T23:59:43.797191-08:00",
       "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00",
       "operatingSystem": "Operating System value",
