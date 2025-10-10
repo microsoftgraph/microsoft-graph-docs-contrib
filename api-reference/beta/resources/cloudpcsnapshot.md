@@ -64,6 +64,39 @@ Inherits from [entity](../resources/entity.md).
 | unknownFutureValue | Evolvable enumeration sentinel value. Don't use.     |
 | retention          | Indicates that the snapshot is a retention snapshot. If a Cloud PC is about to be deprovisioned (manually, due to license expiration, and so on), a snapshot of the Cloud PC is taken as a retention snapshot. It's stored in a Microsoft-managed, limited-function storage account for 90 days. During this period, customers can extract the data or use it to provision a new Cloud PC. After the 90-day retention period, Microsoft disables the account and deletes the customer data. |
 
+### cloudPcImportedSnapshotState values
+
+|Member|Description|
+|:---|:---|
+| `notUsed`          | Indicates snapshot is not yet used.        |
+| `inUse`             |  Indicates snapshot is currently in use.            |
+| `expired`             |  Indicates snapshot is expired and can no longer be used.            |
+| `unknownFutureValue` |  Evolvable enumeration sentinel value. Do not use. |
+
+### cloudPcSnapshotImportActionStatus
+
+|Member|Description|
+|:---|:---|
+| `pending`          | Indicates snapshot upload is queued and not yet executed.        |
+| `inProgress`             | Indicates snapshot is currently being uploaded.            |
+| `succeeded`             | Indicates snapshot upload action finished successfully.            |
+| `failed`             | Indicates snapshot upload has failed.            |
+| `unknownFutureValue` | Evolvable enumeration sentinel value. Do not use. |
+
+### cloudPcSnapshotImportSourceType
+|Member|Description|
+|:---|:---|
+| `azureStorageAccount`          | Indicates snapshot is being uploaded from Azure storage account.        |
+| `sasUrl`             | Indicates snapshot is being uploaded via shared access signature url.            |
+| `unknownFutureValue` | Evolvable enumeration sentinel value. Do not use. |
+
+### cloudPcSnapshotImportFileType
+|Member|Description|
+|:---|:---|
+| `dataFile`          |  Indicates the file is serving as a data file.        |
+| `virtualMachineGuestState`             |  Indicates the file is a virtual machine guest state file (VMGS), specific to Trusted Launch VMs. It's a blob managed by Azure and contains the unified extensible firmware interface (UEFI) Secure Boot signature databases and other security information.             |
+| `unknownFutureValue` |  Evolvable enumeration sentinel value. Do not use. |
+
 ## Relationships
 None.
 

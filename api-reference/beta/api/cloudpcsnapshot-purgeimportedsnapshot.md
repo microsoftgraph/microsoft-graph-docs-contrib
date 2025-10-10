@@ -69,6 +69,7 @@ The following example shows a request.
 -->
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/snapshots/purgeImportedSnapshot
+
 {
     "snapshotIds": [ "7e8c3054-bda1-4e37-81c5-7d1b080a8849", "715c8075-6892-42f3-9550-40b4b48e13d2"]
 }
@@ -80,7 +81,12 @@ POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/snapshots
 
 The following example shows the response.
 
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
 ``` http
-HTTP/1.1 204 NO CONTENT
+HTTP/1.1 204 No Content
 ```
 
