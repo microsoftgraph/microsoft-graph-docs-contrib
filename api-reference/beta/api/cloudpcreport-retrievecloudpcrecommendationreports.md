@@ -79,7 +79,7 @@ The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "cloudpcreportthis.retrievecloudpcrecommendationreports"
+  "name": "cloudpcreport_retrievecloudpcrecommendationreports"
 }
 -->
 ``` http
@@ -221,7 +221,7 @@ The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "cloudpcreportthis.retrievecloudpcrecommendationreports_byusagecategory"
+  "name": "cloudpcreport_retrievecloudpcrecommendationreports_byusagecategory"
 }
 -->
 ``` http
