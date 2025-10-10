@@ -1,0 +1,54 @@
+﻿{
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "ea433aa8-04b5-4f99-8057-3d001ff49927",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "claimBindingSource",
+          "ChangeType": "Addition",
+          "Description": "Added the **claimBindingSource** enumeration type.",
+          "Target": "claimBindingSource"
+        },
+        {
+          "Id": "ea433aa8-04b5-4f99-8057-3d001ff49927",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "verifiedIdProfileState",
+          "ChangeType": "Addition",
+          "Description": "Added the **verifiedIdProfileState** enumeration type.",
+          "Target": "verifiedIdProfileState"
+        },
+        {
+          "Id": "ea433aa8-04b5-4f99-8057-3d001ff49927",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "verifiedIdUsageConfigurationPurpose",
+          "ChangeType": "Addition",
+          "Description": "Added the **verifiedIdUsageConfigurationPurpose** enumeration type.",
+          "Target": "verifiedIdUsageConfigurationPurpose"
+        },
+        {
+          "Id": "ea433aa8-04b5-4f99-8057-3d001ff49927",
+          "ApiChange": "Resource",
+          "ChangedApiName": "identityVerifiedIdRoot",
+          "ChangeType": "Addition",
+          "Description": "Added the [identityVerifiedIdRoot](https://learn.microsoft.com/en-us/graph/api/resources/identityVerifiedIdRoot?view=graph-rest-beta) resource.",
+          "Target": "identityVerifiedIdRoot"
+        },
+        {
+          "Id": "ea433aa8-04b5-4f99-8057-3d001ff49927",
+          "ApiChange": "Resource",
+          "ChangedApiName": "verifiedIdProfile",
+          "ChangeType": "Addition",
+          "Description": "Added the [verifiedIdProfile](https://learn.microsoft.com/en-us/graph/api/resources/verifiedIdProfile?view=graph-rest-beta) resource.",
+          "Target": "verifiedIdProfile"
+        }
+      ],
+      "Id": "ea433aa8-04b5-4f99-8057-3d001ff49927",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-10-10T19:06:39.3153588Z",
+      "WorkloadArea": "VerifiedID",
+      "SubArea": ""
+    }
+  ]
+}
