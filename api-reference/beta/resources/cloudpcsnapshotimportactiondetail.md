@@ -1,6 +1,6 @@
 ---
 title: "CloudPcSnapshotImportActionDetail resource type"
-description: "Represents the required detail information to start the snapshot import action. The user must provide either Azure storage information or the shared access signature url for the snapshot file, and the Azure storage information will be prioritized if both provided."
+description: "Represents the required detail information to start the snapshot import action. The user must provide either Azure storage information or the shared access signature URL for the snapshot file, and the Azure storage information is prioritized if both are provided."
 author: "hyc3z"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
@@ -14,11 +14,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the required detail information to start the snapshot import action. The user must provide either Azure storage information or the shared access signature url for the snapshot file, and the Azure storage information will be prioritized if both provided.
+Represents the required detailed information to start the snapshot import action. The user must provide either Azure storage information or the shared access signature URL for the snapshot file, and the Azure storage information is prioritized if both are provided.
 
-Please be noted that this file is`.vhd` virtual hard disk format. The type of file is indicated by `fileType` property, possible types are `dataFile` and `virtualMachineGuestState`.
+This file is a .vhd virtual hard disk format.
 
 ## Properties
+
 | Property           | Type         | Description                   |
 | ------------------ | ------------ | ----------------------------- |
 | `sourceType`   | `microsoft.graph.cloudPcSnapshotImportSourceType` | The source type of the snapshot import action. Possible values: azureStorageAccount, sasUrl. Default is "azureStorageAccount".   |
