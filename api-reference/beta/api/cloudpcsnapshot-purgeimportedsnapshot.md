@@ -61,7 +61,6 @@ If successful, this method returns a `204 NO CONTENT` response code.
 The following example shows a request.
 
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "post_purgeimportedsnapshot"
