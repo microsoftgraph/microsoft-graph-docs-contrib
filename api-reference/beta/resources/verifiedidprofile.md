@@ -1,6 +1,6 @@
 ---
 title: "verifiedIdProfile resource type"
-description: "**TODO: Add Description**"
+description: "Profile containing properties about a Verified ID provider and purpose"
 author: "tilarso"
 ms.date: 10/10/2025
 ms.localizationpriority: medium

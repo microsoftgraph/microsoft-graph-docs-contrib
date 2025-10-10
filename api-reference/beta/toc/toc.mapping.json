@@ -1607,6 +1607,7 @@
                 "temporaryAccessPassAuthenticationMethodConfiguration",
                 "softwareOathAuthenticationMethodConfiguration",
                 "voiceAuthenticationMethodConfiguration",
+                "verifiableCredentialsAuthenticationMethodConfiguration",
                 "x509CertificateAuthenticationMethodConfiguration",
                 "qrCodePinAuthenticationMethodConfiguration"
               ]
@@ -1816,8 +1817,15 @@
                 "identityApiConnector",
                 "identityUserFlow"
               ]
+            }, 
+            {
+              "name": "Verified ID (preview)",
+              "resources": [
+                "verifiedIdProfile"
+              ]
             }
           ]
+        
         },
         {
           "name": "Multicloud permissions management (deprecated)",
