@@ -8,7 +8,7 @@ doc_type: apiPageType
 ms.date: 10/10/2025
 ---
 
-# Import snapshot
+# cloudPCSnapshot: RetrieveSnapshotImportResult
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
