@@ -14,9 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a snapshot of the device settings of a Cloud PC that can be used to restore the device system.The snapshot is taken periodically by background service, or triggered manually by user, for disaster recovery/restore usage. 
+Represents a snapshot of the device settings of a Cloud PC that can be used to restore the device system. The snapshot is taken periodically by a background service or triggered manually by the user, for disaster recovery/restore usage. 
 
-For provisioning new Cloud PC with imported snapshot, please check `importSnapshot` api for more information.
+For provisioning a new Cloud PC with an imported snapshot, please check `importSnapshot` api for more information.
 
 
 Inherits from [entity](../resources/entity.md).
@@ -33,7 +33,7 @@ Inherits from [entity](../resources/entity.md).
 |cloudPcId|String|The unique identifier for the Cloud PC.|
 |createdDateTime|DateTimeOffset|The date and time at which the snapshot was taken. The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC). For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |expirationDateTime|DateTimeOffset| The date and time when the snapshot expires. The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC). For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
-|healthCheckStatus|[cloudPcSnapshotHealthCheckStatus](#cloudpcsnapshothealthcheckstatus-values)|Indicates the health check status of the Cloud PC snapshot. Possible values are, `unknown`, `healthy`, `unhealthy`, `unknownFutureValue`. The default value is `unknown`. Read-only. Nullable.|
+|healthCheckStatus|[cloudPcSnapshotHealthCheckStatus](#cloudpcsnapshothealthcheckstatus-values)|Indicates the health check status of the Cloud PC snapshot. Possible values are `unknown`, `healthy`, `unhealthy`, `unknownFutureValue`. The default value is `unknown`. Read-only. Nullable.|
 |id|String|The unique identifier for the snapshot of the Cloud PC device at a specific point in time. Inherited from [entity](../resources/entity.md).|
 |lastRestoredDateTime|DateTimeOffset|The date and time at which the snapshot was last used to restore the Cloud PC device. The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC). For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |snapshotType| [cloudPcSnapshotType](#cloudpcsnapshottype-values)   | The type of snapshot that indicates how to create the snapshot. Possible values are `automatic`, `manual`, `unknownFutureValue`, `retention`. Use the `Prefer: include-unknown-enum-members` request header to get the following value from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `retention`. The default value is `automatic`.|
@@ -70,8 +70,8 @@ Inherits from [entity](../resources/entity.md).
 |:---|:---|
 | `notUsed`          | Indicates snapshot is not yet used.        |
 | `inUse`             |  Indicates snapshot is currently in use.            |
-| `expired`             |  Indicates snapshot is expired and can no longer be used.            |
-| `unknownFutureValue` |  Evolvable enumeration sentinel value. Do not use. |
+| `expired`             |  Indicates the snapshot has expired and can no longer be used.            |
+| `unknownFutureValue` |  Evolvable enumeration sentinel value. Don't use. |
 
 ### cloudPcSnapshotImportActionStatus
 
@@ -81,21 +81,21 @@ Inherits from [entity](../resources/entity.md).
 | `inProgress`             | Indicates snapshot is currently being uploaded.            |
 | `succeeded`             | Indicates snapshot upload action finished successfully.            |
 | `failed`             | Indicates snapshot upload has failed.            |
-| `unknownFutureValue` | Evolvable enumeration sentinel value. Do not use. |
+| `unknownFutureValue` | Evolvable enumeration sentinel value. Don't use. |
 
 ### cloudPcSnapshotImportSourceType
 |Member|Description|
 |:---|:---|
 | `azureStorageAccount`          | Indicates snapshot is being uploaded from Azure storage account.        |
-| `sasUrl`             | Indicates snapshot is being uploaded via shared access signature url.            |
-| `unknownFutureValue` | Evolvable enumeration sentinel value. Do not use. |
+| `sasUrl`             | Indicates snapshot is being uploaded via shared access signature URL.            |
+| `unknownFutureValue` | Evolvable enumeration sentinel value. Don't use. |
 
 ### cloudPcSnapshotImportFileType
 |Member|Description|
 |:---|:---|
 | `dataFile`          |  Indicates the file is serving as a data file.        |
 | `virtualMachineGuestState`             |  Indicates the file is a virtual machine guest state file (VMGS), specific to Trusted Launch VMs. It's a blob managed by Azure and contains the unified extensible firmware interface (UEFI) Secure Boot signature databases and other security information.             |
-| `unknownFutureValue` |  Evolvable enumeration sentinel value. Do not use. |
+| `unknownFutureValue` |  Evolvable enumeration sentinel value. Don't use. |
 
 ## Relationships
 None.
