@@ -89,7 +89,10 @@ Content-Type: application/json
   "description": "Description of My Application Storage Container",
   "containerTypeId": "91710488-5756-407f-9046-fbe5f0b4de73",
   "settings": {
-    "isOcrEnabled": true
+    "isOcrEnabled": true,
+    "itemMajorVersionLimit": 50,
+    "isItemVersioningEnabled": true,
+    "itemDefaultSensitivityLabelId": "3d8789ae-7375-4ded-8eeb-d6bc226e42fb"
   }
 }
 ```
@@ -142,9 +145,10 @@ Content-type: application/json
   "status": "inactive",
   "createdDateTime": "2021-11-24T15:41:52.347Z",
   "settings": {
-    "isOcrEnabled": false,
+    "isOcrEnabled": true,
     "itemMajorVersionLimit": 50,
-    "isItemVersioningEnabled": true
+    "isItemVersioningEnabled": true,
+    "itemDefaultSensitivityLabelId": "3d8789ae-7375-4ded-8eeb-d6bc226e42fb"
   }
 }
 
