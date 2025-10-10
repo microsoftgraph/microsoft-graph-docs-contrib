@@ -53,7 +53,7 @@ The following table shows the parameters that are required for this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|reportName|cloudPcRecommendationReportType|The report name. Supported value is: `cloudPcUsageCategoryReport`. Required.|
+|reportName|[cloudPcRecommendationReportType](../resources/cloudpcrecommendationreporttype.md)|The report name. Supported value is: `cloudPcUsageCategoryReport`. Required.|
 |filter|String|OData `$filter` syntax. Optional. Supported filters are: `and`, `or`, `lt`, `le`, `gt`, `ge`, and `eq`.|
 |select|String collection|OData `$select` syntax. Optional. The selected columns of the reports.|
 |search|String|Specifies a String to search. Optional.|
