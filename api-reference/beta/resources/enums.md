@@ -5424,3 +5424,27 @@ Possible values for user account types (group membership), per Windows definitio
 |h6|
 |d1|
 |unknownFutureValue|
+
+### webApplicationFirewallDnsRecordType values 
+
+|Member|
+|:---|
+|cname|
+|unknownFutureValue|
+
+### webApplicationFirewallProviderType values 
+
+|Member|
+|:---|
+|akamai|
+|cloudflare|
+|unknownFutureValue|
+
+### webApplicationFirewallVerificationStatus values 
+
+|Member|
+|:---|
+|success|
+|warning|
+|failure|
+|unknownFutureValue|

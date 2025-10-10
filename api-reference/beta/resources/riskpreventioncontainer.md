@@ -1,11 +1,11 @@
 ---
 title: "riskPreventionContainer resource type"
-description: "Represents the entry point for risk prevention features in External Identities."
-ms.localizationpriority: high
+description: "**TODO: Add Description**"
+author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.date: 10/10/2025
+ms.localizationpriority: medium
+ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
 doc_type: resourcePageType
-ms.subservice: "entra-sign-in"
-author: "rasikamore"
-ms.date: 09/09/2025
 ---
 
 # riskPreventionContainer resource type
@@ -14,19 +14,33 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the entry point for risk prevention features in [External Identities](/azure/active-directory/external-identities/) for Microsoft Entra External ID tenants.
+**TODO: Add Description**
+
+Inherits from [entity](../resources/entity.md)
 
 ## Methods
-None.
-
+|Method|Return type|Description|
+|:---|:---|:---|
+|[List](../api/security-identitycontainer-list-riskprevention.md)|[riskPreventionContainer](../resources/riskpreventioncontainer.md) collection|Get a list of the riskPreventionContainer objects and their properties.|
+|[Create](../api/security-identitycontainer-post-riskprevention.md)|[riskPreventionContainer](../resources/riskpreventioncontainer.md)|Create a new riskPreventionContainer object.|
+|[Get](../api/riskpreventioncontainer-get.md)|[riskPreventionContainer](../resources/riskpreventioncontainer.md)|Read the properties and relationships of [riskPreventionContainer](../resources/riskpreventioncontainer.md) object.|
+|[Update](../api/riskpreventioncontainer-update.md)|[riskPreventionContainer](../resources/riskpreventioncontainer.md)|Update the properties of a riskPreventionContainer object.|
+|[Delete](../api/security-identitycontainer-delete-riskprevention.md)|None|Delete a riskPreventionContainer object.|
+|[List webApplicationFirewallProviders](../api/riskpreventioncontainer-list-webapplicationfirewallproviders.md)|[webApplicationFirewallProvider](../resources/webapplicationfirewallprovider.md) collection|**TODO: Add a useful description.**|
+|[Create webApplicationFirewallProvider](../api/riskpreventioncontainer-post-webapplicationfirewallproviders.md)|[webApplicationFirewallProvider](../resources/webapplicationfirewallprovider.md)|Create a new webApplicationFirewallProvider object.|
+|[List webApplicationFirewallVerifications](../api/riskpreventioncontainer-list-webapplicationfirewallverifications.md)|[webApplicationFirewallVerificationModel](../resources/webapplicationfirewallverificationmodel.md) collection|**TODO: Add a useful description.**|
+|[Create webApplicationFirewallVerificationModel](../api/riskpreventioncontainer-post-webapplicationfirewallverifications.md)|[webApplicationFirewallVerificationModel](../resources/webapplicationfirewallverificationmodel.md)|Create a new webApplicationFirewallVerificationModel object.|
 
 ## Properties
-None.
+|Property|Type|Description|
+|:---|:---|:---|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|fraudProtectionProviders|[fraudProtectionProvider](../resources/fraudprotectionprovider.md) collection|Represents entry point for fraud protection provider configurations for Microsoft Entra External ID tenants.|
+|fraudProtectionProviders|[fraudProtectionProvider](../resources/fraudprotectionprovider.md) collection|**TODO: Add Description**|
+|webApplicationFirewallProviders|[webApplicationFirewallProvider](../resources/webapplicationfirewallprovider.md) collection|**TODO: Add Description**|
+|webApplicationFirewallVerifications|[webApplicationFirewallVerificationModel](../resources/webapplicationfirewallverificationmodel.md) collection|**TODO: Add Description**|
 
 ## JSON representation
 The following JSON representation shows the resource type.
