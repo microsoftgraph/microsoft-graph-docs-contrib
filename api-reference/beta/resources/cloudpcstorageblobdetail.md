@@ -1,6 +1,6 @@
 ---
 title: "CloudPcStorageBlobDetail resource type"
-description: "Represents the detailed hierachical resource information of the Azure storage blob, including the storage account and container as parent resource of the blob, and the blob file name."
+description: "Represents the detailed hierarchical resource information of the Azure storage blob, including the storage account and container as the parent resource of the blob, and the blob file name."
 author: "hyc3z"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the detailed hierachical resource information of the Azure storage blob, including the storage account and container as parent resource of the blob, and the blob file name.
+Represents the detailed hierarchical resource information of the Azure storage blob, including the storage account and container as the parent resource of the blob, and the blob file name.
 
 ## Properties
 | Property           | Type         | Description                   |
