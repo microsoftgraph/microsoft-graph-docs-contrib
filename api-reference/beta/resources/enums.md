@@ -5424,3 +5424,27 @@ Possible values for user account types (group membership), per Windows definitio
 |h6|
 |d1|
 |unknownFutureValue|
+
+### claimBindingSource values 
+
+|Member|
+|:---|
+|directory|
+|unknownFutureValue|
+
+### verifiedIdProfileState values 
+
+|Member|
+|:---|
+|enabled|
+|disabled|
+|unknownFutureValue|
+
+### verifiedIdUsageConfigurationPurpose values 
+
+|Member|
+|:---|
+|recovery|
+|onboarding|
+|all|
+|unknownFutureValue|
