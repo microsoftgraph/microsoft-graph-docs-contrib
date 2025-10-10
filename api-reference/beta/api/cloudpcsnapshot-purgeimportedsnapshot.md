@@ -13,11 +13,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete the unused imported snapshot from Windows 365 service managed storage account. 
+Delete the unused imported snapshot from the Windows 365 service-managed storage account. 
 
-For each user, there is only 1 allowed imported snapshot at a time. If there is existing imported snapshot/import record for the user that needs to be updated, admin can use this api to purge previous one and use `importSnapshot` api to import a new one. 
+For each user, there's only one allowed imported snapshot at a time. If there's an existing imported snapshot/import record for the user that needs to be updated, the admin can use this api to purge the previous one and use `importSnapshot` api to import a new one. 
 
-Users can pass snapshot import action ids to designate specified snapshots to be cleaned. When the snapshot import action failed, the import record is able to be deleted via this api.
+Users can pass snapshot import action IDs to designate specified snapshots to be cleaned. When the snapshot import action failed, the import record is able to be deleted via this api.
 
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
