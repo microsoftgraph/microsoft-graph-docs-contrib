@@ -109,27 +109,27 @@ Content-Type: application/json
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/cloudpcreport-retrievecloudpcrecommendationreports-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/cloudpcreportretrievecloudpcrecommendationreports-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/cloudpcreport-retrievecloudpcrecommendationreports-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/cloudpcreportretrievecloudpcrecommendationreports-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/cloudpcreport-retrievecloudpcrecommendationreports-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/cloudpcreportretrievecloudpcrecommendationreports-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/cloudpcreport-retrievecloudpcrecommendationreports-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/cloudpcreportretrievecloudpcrecommendationreports-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/cloudpcreport-retrievecloudpcrecommendationreports-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/cloudpcreportretrievecloudpcrecommendationreports-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/cloudpcreport-retrievecloudpcrecommendationreports-python-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/python/cloudpcreportretrievecloudpcrecommendationreports-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -241,27 +241,27 @@ Content-Type: application/json
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/cloudpcreport-retrievecloudpcrecommendationreports-byusagecategory-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/cloudpcreportretrievecloudpcrecommendationreportsbyusagecategory-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/cloudpcreport-retrievecloudpcrecommendationreports-byusagecategory-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/cloudpcreportretrievecloudpcrecommendationreportsbyusagecategory-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/cloudpcreport-retrievecloudpcrecommendationreports-byusagecategory-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/cloudpcreportretrievecloudpcrecommendationreportsbyusagecategory-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/cloudpcreport-retrievecloudpcrecommendationreports-byusagecategory-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/cloudpcreportretrievecloudpcrecommendationreportsbyusagecategory-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/cloudpcreport-retrievecloudpcrecommendationreports-byusagecategory-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/cloudpcreportretrievecloudpcrecommendationreportsbyusagecategory-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/cloudpcreport-retrievecloudpcrecommendationreports-byusagecategory-python-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/python/cloudpcreportretrievecloudpcrecommendationreportsbyusagecategory-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
