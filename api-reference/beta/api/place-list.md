@@ -31,6 +31,14 @@ By default, this operation returns up to 100 rooms, workspaces, and room lists p
 
 Compared with the [findRooms](../api/user-findrooms.md) and [findRoomLists](../api/user-findroomlists.md) functions, this operation returns a richer payload for rooms and room lists. For details about how they compare, see [Using the places API](../resources/places-api-overview.md#using-the-places-api).
 
+Before using this API, please ensure that your Places settings are properly configured. Otherwise, you may not be able to see the Places objects. Follow these steps to get started:
+
+1. Download and connect to the MicrosoftPlaces PowerShell module. Refer to [MicrosoftPlaces PowerShell Module Documentation](https://learn.microsoft.com/en-us/microsoft-365/places/powershell/connect-microsoftplaces).
+2. Enable buildings by setting EnableBuildings to true using the following command: (For more information, see [Set-PlacesSettings](https://learn.microsoft.com/en-us/microsoft-365/places/powershell/set-placessettings#-enablebuildings).)
+```PowerShell
+Set-PlacesSettings -EnableBuildings 'Default:true'
+```
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).

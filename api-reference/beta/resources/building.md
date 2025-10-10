@@ -35,7 +35,7 @@ For more supported methods, see [place](./place.md).
 |id|String|The unique identifier for the building. Read-only. This identifier isn't immutable and can change if the mailbox or tenant configuration changes. Inherited from [place](./place.md).|
 |isWheelChairAccessible|Boolean|Indicates whether the **building** is wheelchair accessible. Inherited from [place](./place.md). |
 |label |String |User-defined description of the building. Inherited from [place](./place.md). |
-|parentId|String|The ID of a parent [place](../resources/place.md). Inherited from [place](./place.md).|
+|parentId|String|Buildings do not have parent today.|
 |phone|String|The phone number of the **building**. Inherited from [place](./place.md). |
 |placeId|String|An alternate immutable unique identifier of the **building**. Read-only. Inherited from [place](./place.md). |
 |resourceLinks|[resourceLink](./resourcelink.md) collection|A set of links to external resources that are associated with the **building**. Inherited from [place](./place.md). |
@@ -66,7 +66,6 @@ The following JSON representation shows the resource type.
   "id": "String (identifier)",
   "isWheelChairAccessible": "Boolean",
   "label": "String",
-  "parentId": "String",
   "phone": "String",
   "placeId": "String",
   "resourceLinks": [{"@odata.type": "microsoft.graph.resourceLink"}],
