@@ -14,7 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a snapshot of the device settings of a Cloud PC that can be used to restore the device system.
+Represents a snapshot of the device settings of a Cloud PC that can be used to restore the device system.The snapshot is taken periodically by background service, or triggered manually by user, for disaster recovery/restore usage. 
+
+For provisioning new Cloud PC with imported snapshot, please check `importSnapshot` api for more information.
 
 
 Inherits from [entity](../resources/entity.md).
