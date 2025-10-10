@@ -15,11 +15,11 @@ Namespace: microsoft.graph
 
 Import the snapshot from customer customer-managed storage account for the given information, and store it in the Azure storage account in Cloud PC service on behalf of customers. The imported snapshot can be used to provision a new Cloud PC for a specified user with a license assigned.
 
-For each user, there is only 1 imported snapshot allowed to prevent conflict. Implicit overwrite for snapshots is unsafe, so if a user is already assigned a snapshot, please use `purgeImportedSnapshot` api to delete the previous one and redo the import.
+For each user, there's only 1 imported snapshot allowed to prevent conflict. Implicit overwrite for snapshots is unsafe, so if a user is already assigned a snapshot, use `purgeImportedSnapshot` api to delete the previous one and redo the import.
 
-Imported snapshots can be checked through `GET /snapshots/listSnapshotImportResults` api. Note that these will **not** appear along with background taken snapshot lists presented in `GET /snapshots/` api, which are targeted for recovery and restore usage.
+Imported snapshots can be checked through `GET /snapshots/listSnapshotImportResults` api. Note that these don't appear along with background taken snapshot lists presented in `GET /snapshots/` api, which are targeted for recovery and restore usage.
 
-Imported snapshots should also be valid `.vhd` (Virtual Hard Disk) format files, either stored in Azure storage blob or provided by a shared access signature URL. Windows 365 service will store these files and host them on behalf of the user for Cloud PC provision use.
+Imported snapshots should also be valid `.vhd` (Virtual Hard Disk) format files, either stored in Azure storage blob or provided by a shared access signature URL. Windows 365 service stores these files and hosts them on behalf of the user for Cloud PC provision use.
 
 Windows 365 administrators need to prepare the Provisioning Policy and assign it to users as a requirement for snapshot import.
 
@@ -52,7 +52,7 @@ The following table shows the parameters that can be used with this method.
 | Parameter | Type              | Description                                                                                            |
 |:----------|:------------------|:-------------------------------------------------------------------------------------------------------|
 | `sourceFiles`   | `Collection(microsoft.graph.cloudPcSnapshotImportActionDetail)`                                                     | The detailed source information for the files to be imported.                                                                                        |
-| `assignedUserId`     | `Edm.String`   | The unique identifier for the snapshot assigned user, who will be using the imported snapshot to provision new Cloud PC.                                                                            |
+| `assignedUserId`     | `Edm.String`   | The unique identifier for the snapshot assigned user, who uses the imported snapshot to provision a new Cloud PC.                                                                            |
 | `returnType`       | `microsoft.graph.cloudPcSnapshotImportActionResult`                             | The result of the snapshot import action.                                                               |
 
 
