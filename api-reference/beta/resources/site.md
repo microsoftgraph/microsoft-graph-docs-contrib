@@ -20,6 +20,7 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 
 | Method                                            | REST Path                                                   |
 | :------------------------------------------------ | :---------------------------------------------------------- |
+| [Create site](../api/site-post-sites.md)          | POST /sites                                                 |
 | [Get root site][]                                 | GET /sites/root                                             |
 | [Get site][]                                      | GET /sites/{site-id}                                        |
 | [Get site by path][]                              | GET /sites/{hostname}:/{site-path}                          |
@@ -48,6 +49,7 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 | [Create column][]                                 | POST /sites/{site-id}/columns                               |
 | [Create document processing job](../api/site-post-documentprocessingjobs.md)| POST /sites/{site-id}/documentProcessingJobs|
 | [List operations](../api/site-list-operations.md) | GET /sites/{site-id}/operations                             |
+| [Get operation status](../api/site-getoperationstatus.md)| GET /sites/getOperationStatus(operationId={operation-id})|
 | [Get site settings][]                             | GET /sites/{site-id}/settings                               |
 | [Get delta](../api/site-delta.md)                 | GET /sites/delta                                            |
 |**Open extensions**||
@@ -93,10 +95,14 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 | id                   | string             | The [unique identifier](#id-property) of the item. Read-only.                                  |
 | lastModifiedDateTime | DateTimeOffset     | The date and time the item was last modified. Read-only.                                       |
 | name                 | string             | The name/title of the item.                                                                  |
+| locale               | string             | The language settings of the site.                                                             |
+| ownerIdentityToResolve|[identityInput](../resources/identityinput.md)|The site owner to be provided at the time of site creation only.|
 | root                 | [root][]           | If present, provides the root site in the site collection. Read-only.            |
 | settings             | [siteSettings]     | The settings on this site. Read-only.                                |
+| shareByEmailEnabled  | Boolean            | Determines if the site and its content can be shared via email. |
 | sharepointIds        | [sharepointIds][]  | Returns identifiers useful for SharePoint REST compatibility. Read-only.                       |
 | siteCollection       | [siteCollection][] | Provides details about the site's site collection. Available only on the root site. Read-only. |
+| template             | siteTemplateType   | Determines the template that is applied to the site. The possible values are: `sitepagepublishing`, `group`, `sts`, `unknownFutureValue`.|
 | webUrl               | string (url)       | URL that displays the item in the browser. Read-only.                                          |
 
 ### id property
@@ -178,10 +184,14 @@ The **site** resource is derived from [**baseItem**](baseitem.md) and inherits p
 {
   "displayName": "string",
   "id": "string",
+  "locale": "String",
+  "ownerIdentityToResolve": {"@odata.type": "microsoft.graph.identityInput"},
   "root": { "@odata.type": "microsoft.graph.root" },
   "settings": { "@odata.type": "microsoft.graph.sitesettings" },
+  "shareByEmailEnabled": "Boolean",
   "sharepointIds": { "@odata.type": "microsoft.graph.sharepointIds" },
   "siteCollection": {"@odata.type": "microsoft.graph.siteCollection"},
+   "template": "String",
 
   /* relationships */
   "analytics": { "@odata.type": "microsoft.graph.itemAnalytics" },
