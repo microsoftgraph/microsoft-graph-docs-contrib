@@ -1,6 +1,6 @@
 ---
 title: "userExperienceAnalyticsSummarizeWorkFromAnywhereDevices function"
-description: "Not yet documented"
+description: "Intune Devices Devicemanagement Userexperienceanalyticssummarizeworkfromanywheredevices Api ."
 author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Not yet documented
+
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
