@@ -1,0 +1,83 @@
+---
+title: "verifiedIdProfile resource type"
+description: "**TODO: Add Description**"
+author: "tilarso"
+ms.date: 10/10/2025
+ms.localizationpriority: medium
+ms.subservice: "entra-sign-in"
+doc_type: resourcePageType
+---
+
+# verifiedIdProfile resource type
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+**TODO: Add Description**
+
+
+Inherits from [entity](../resources/entity.md).
+
+
+## Methods
+|Method|Return type|Description|
+|:---|:---|:---|
+|[List](../api/identityverifiedidroot-list-profiles.md)|[verifiedIdProfile](../resources/verifiedidprofile.md) collection|Get a list of the verifiedIdProfile objects and their properties.|
+|[Create](../api/identityverifiedidroot-post-profiles.md)|[verifiedIdProfile](../resources/verifiedidprofile.md)|Create a new verifiedIdProfile object.|
+|[Get](../api/verifiedidprofile-get.md)|[verifiedIdProfile](../resources/verifiedidprofile.md)|Read the properties and relationships of [verifiedIdProfile](../resources/verifiedidprofile.md) object.|
+|[Update](../api/verifiedidprofile-update.md)|[verifiedIdProfile](../resources/verifiedidprofile.md)|Update the properties of a verifiedIdProfile object.|
+|[Delete](../api/identityverifiedidroot-delete-profiles.md)|None|Delete a verifiedIdProfile object.|
+
+## Properties
+|Property|Type|Description|
+|:---|:---|:---|
+|id|String| Profile identifier. Inherited from [entity](../resources/entity.md). Inherits from [entity](../resources/entity.md)|
+|name|String| Display name for the verified Id profile. Required.|
+|description|String| Description for the verified Id profile. Required.|
+|lastModifiedDateTime|DateTimeOffset|DateTime the profile was last modified. Optional.|
+|state|verifiedIdProfileState| Enablement state for the profile. The possible values are: `enabled`, `disabled`, `unknownFutureValue`. Required.|
+|verifierDid|String| Decentralized Identifier (DID) string that represents the verifier in the verifiable credential exchange.  Required.|
+|priority|Int32|Defines profile processing priority if multiple profiles are configured.  Optional.|
+|verifiedIdProfileConfiguration|[verifiedIdProfileConfiguration](../resources/verifiedidprofileconfiguration.md)| Set of properties expressing the accepted issuer, claims binding, and credential type. Required.|
+|faceCheckConfiguration|[faceCheckConfiguration](../resources/facecheckconfiguration.md)| Set of properties configuring Entra Verified ID Face Check behavior.  Required.|
+|verifiedIdUsageConfigurations|[verifiedIdUsageConfiguration](../resources/verifiedidusageconfiguration.md) collection| Collection defining the usage purpose for the profile. The possible values are: `recovery`, `onboarding`, `all`, `unknownFutureValue`. Required.|
+
+
+## Relationships
+None.
+
+## JSON representation
+The following JSON representation shows the resource type.
+<!-- {
+  "blockType": "resource",
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.verifiedIdProfile",
+  "baseType": "microsoft.graph.entity",
+  "openType": false
+}
+-->
+``` json
+{
+  "@odata.type": "#microsoft.graph.verifiedIdProfile",
+  "id": "String (identifier)",
+  "name": "String",
+  "description": "String",
+  "lastModifiedDateTime": "String (timestamp)",
+  "state": "String",
+  "verifierDid": "String",
+  "priority": "Integer",
+  "verifiedIdProfileConfiguration": {
+    "@odata.type": "microsoft.graph.verifiedIdProfileConfiguration"
+  },
+  "faceCheckConfiguration": {
+    "@odata.type": "microsoft.graph.faceCheckConfiguration"
+  },
+  "verifiedIdUsageConfigurations": [
+    {
+      "@odata.type": "microsoft.graph.verifiedIdUsageConfiguration"
+    }
+  ]
+}
+```
+
