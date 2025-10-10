@@ -1,6 +1,6 @@
 ---
 title: "cloudPCSnapshot: importSnapshot"
-description: "Import the snapshot from customer managed storage account for the given information, and store in the Azure storage account in Cloud PC service on behalf of customers. The imported snapshot can be used to provision a new Cloud PC for a specified user with license assigned."
+description: "Import the snapshot from customer managed storage account for the given information, and store it in the Azure storage account in the Cloud PC service on behalf of customers. The imported snapshot can be used to provision a new Cloud PC for a specified user with a license assigned."
 author: "hyc3z"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
@@ -13,15 +13,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Import the snapshot from customer managed storage account for the given information, and store in the Azure storage account in Cloud PC service on behalf of customers. The imported snapshot can be used to provision a new Cloud PC for a specified user with license assigned.
+Import the snapshot from customer customer-managed storage account for the given information, and store it in the Azure storage account in Cloud PC service on behalf of customers. The imported snapshot can be used to provision a new Cloud PC for a specified user with a license assigned.
 
-For each user, there is only 1 imported snapshot allowed to prevent conflict. Implicit overwrite for snapshots is unsafe, so if a user is already assigned a snapshot, please use `purgeImportedSnapshot` api to delete previous one and redo import.
+For each user, there is only 1 imported snapshot allowed to prevent conflict. Implicit overwrite for snapshots is unsafe, so if a user is already assigned a snapshot, please use `purgeImportedSnapshot` api to delete the previous one and redo the import.
 
 Imported snapshots can be checked through `GET /snapshots/listSnapshotImportResults` api. Note that these will **not** appear along with background taken snapshot lists presented in `GET /snapshots/` api, which are targeted for recovery and restore usage.
 
-Imported snapshots should also be valid `.vhd` (Virtual Hard Disk) format files, either stored in Azure storage blob or provided by shared access signature url. Windows 365 service will store these files and host on behalf of user for Cloud PC provision use.
+Imported snapshots should also be valid `.vhd` (Virtual Hard Disk) format files, either stored in Azure storage blob or provided by a shared access signature URL. Windows 365 service will store these files and host them on behalf of the user for Cloud PC provision use.
 
-Windows 365 administrators need to prepare Provisioning Policy and assign to users as a requirement for snapshot import.
+Windows 365 administrators need to prepare the Provisioning Policy and assign it to users as a requirement for snapshot import.
 
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
