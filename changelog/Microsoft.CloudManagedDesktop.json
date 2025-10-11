@@ -7703,6 +7703,24 @@
       "CreatedDateTime": "2025-06-17T06:24:53.3809776Z",
       "WorkloadArea": "Device and app management",
       "SubArea": "Cloud PC"
+    },
+    {
+       "ChangeList": [
+        {
+          "Id": "7112629a-9ce9-402f-9fcc-51bc6b127cdc",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cloudPcReport",
+          "ChangeType": "Addition",
+          "Description": "Added the [cloudPcReport](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcReport?view=graph-rest-beta) resource.",
+          "Target": "cloudPcReport"
+        }
+      ],
+      "Id": "7112629a-9ce9-402f-9fcc-51bc6b127cdc",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-10-11T09:38:41.5419514Z",
+      "WorkloadArea": "Device and app management",
+      "SubArea": "Cloud PC"
     }
   ]
 }

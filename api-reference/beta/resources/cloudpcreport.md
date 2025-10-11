@@ -28,6 +28,10 @@ Use a method in the [Methods](#methods) section to get the corresponding report 
 |:---|:---|:---|
 |id|String|The unique identifier for the reports. Read-only. |
 
+## Relationships
+
+None.
+
 ## JSON representation
 
 The following JSON representation shows the resource type.
