@@ -22,11 +22,24 @@ This file is a .vhd virtual hard disk format.
 
 | Property           | Type         | Description                   |
 | ------------------ | ------------ | ----------------------------- |
-| sourceType   | microsoft.graph.cloudPcSnapshotImportSourceType | The source type of the snapshot import action. Possible values: azureStorageAccount, sasUrl. Default is "azureStorageAccount".   |
-| fileType   | microsoft.graph.cloudPcSnapshotImportFileType | The file type of the imported virtual hard disk file. Possible values: dataFile, virtualMachineGuestState. Default is "dataFile".   |
-| `sasUrl` | `Edm.String` | The shared access signature URL of the snapshot import action. |
-| `storageBlobInfo` | `microsoft.graph.cloudPcStorageBlobDetail` | The storage account info of the snapshot import action. |
+| sourceType   | [cloudPcSnapshotImportSourceType](#cloudPcSnapshotImportSourceType-values) | The source type of the snapshot import action. Possible values: azureStorageAccount, sasUrl. Default is "azureStorageAccount".   |
+| fileType   | [cloudPcSnapshotImportFileType](#cloudPcSnapshotImportFileType-values) | The file type of the imported virtual hard disk file. Possible values: dataFile, virtualMachineGuestState. Default is "dataFile".   |
+| sasUrl | String | The shared access signature URL of the snapshot import action. |
+| storageBlobInfo | microsoft.graph.cloudPcStorageBlobDetail | The storage account info of the snapshot import action. |
 
+### cloudPcSnapshotImportSourceType values
+|Member|Description|
+|:---|:---|
+| azureStorageAccount          | Indicates snapshot is being uploaded from Azure storage account.        |
+| sasUrl             | Indicates snapshot is being uploaded via shared access signature URL.            |
+| unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
+
+### cloudPcSnapshotImportFileType values
+|Member|Description|
+|:---|:---|
+| dataFile          |  Indicates the file is serving as a data file.        |
+| virtualMachineGuestState             |  Indicates the file is a virtual machine guest state file (VMGS), specific to Trusted Launch VMs. It's a blob managed by Azure and contains the unified extensible firmware interface (UEFI) Secure Boot signature databases and other security information.             |
+| unknownFutureValue |  Evolvable enumeration sentinel value. Don't use. |
 
 ## Relationships
 None.

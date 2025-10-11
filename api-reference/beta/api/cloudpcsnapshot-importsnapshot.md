@@ -51,9 +51,9 @@ The following table shows the parameters that can be used with this method.
 
 | Parameter | Type              | Description                                                                                            |
 |:----------|:------------------|:-------------------------------------------------------------------------------------------------------|
-| `sourceFiles`   | `Collection(microsoft.graph.cloudPcSnapshotImportActionDetail)`                                                     | The detailed source information for the files to be imported.                                                                                        |
-| `assignedUserId`     | `Edm.String`   | The unique identifier for the snapshot assigned user, who uses the imported snapshot to provision a new Cloud PC.                                                                            |
-| `returnType`       | `microsoft.graph.cloudPcSnapshotImportActionResult`                             | The result of the snapshot import action.                                                               |
+| sourceFiles   | Collection(microsoft.graph.cloudPcSnapshotImportActionDetail)                                                     | The detailed source information for the files to be imported.                                                                                        |
+| assignedUserId     | String   | The unique identifier for the snapshot assigned user, who uses the imported snapshot to provision a new Cloud PC.                                                                            |
+| returnType       | microsoft.graph.cloudPcSnapshotImportActionResult                             | The result of the snapshot import action.                                                               |
 
 
 ## Response

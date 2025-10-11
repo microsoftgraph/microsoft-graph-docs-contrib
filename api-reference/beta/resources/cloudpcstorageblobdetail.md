@@ -19,9 +19,9 @@ Represents the detailed hierarchical resource information of the Azure storage b
 ## Properties
 | Property           | Type         | Description                   |
 | ------------------ | ------------ | ----------------------------- |
-| `storageAccountId`   | `Edm.String` | Indicates the unique identifier of the Azure storage account. Example: `/subscriptions/0231ef39-1113-4772-bffe-26e7d8a15c9e/resourceGroups/myresourcegroup/providers/Microsoft.Storage/storageAccounts/mystorageaccount`.   |
-| `containerName` | `Edm.String` | Indicates the name of the container. Example: `mycontainer` |
-| `fileName` | `Edm.String` | The name of the file stored in container. Example: `myexportedvm.vhd`  | 
+| storageAccountId   | String | Indicates the unique identifier of the Azure storage account. Example: `/subscriptions/0231ef39-1113-4772-bffe-26e7d8a15c9e/resourceGroups/myresourcegroup/providers/Microsoft.Storage/storageAccounts/mystorageaccount`.   |
+| containerName | String | Indicates the name of the container. Example: `mycontainer` |
+| fileName | String | The name of the file stored in container. Example: `myexportedvm.vhd`  | 
 
 
 ## Relationships

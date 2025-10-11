@@ -68,34 +68,34 @@ Inherits from [entity](../resources/entity.md).
 
 |Member|Description|
 |:---|:---|
-| `notUsed`          | Indicates snapshot is not yet used.        |
-| `inUse`             |  Indicates snapshot is currently in use.            |
-| `expired`             |  Indicates the snapshot has expired and can no longer be used.            |
-| `unknownFutureValue` |  Evolvable enumeration sentinel value. Don't use. |
+| notUsed          | Indicates snapshot is not yet used.        |
+| inUse             |  Indicates snapshot is currently in use.            |
+| expired             |  Indicates the snapshot has expired and can no longer be used.            |
+| unknownFutureValue |  Evolvable enumeration sentinel value. Don't use. |
 
 ### cloudPcSnapshotImportActionStatus
 
 |Member|Description|
 |:---|:---|
-| `pending`          | Indicates snapshot upload is queued and not yet executed.        |
-| `inProgress`             | Indicates snapshot is currently being uploaded.            |
-| `succeeded`             | Indicates snapshot upload action finished successfully.            |
-| `failed`             | Indicates snapshot upload has failed.            |
-| `unknownFutureValue` | Evolvable enumeration sentinel value. Don't use. |
+| pending          | Indicates snapshot upload is queued and not yet executed.        |
+| inProgress             | Indicates snapshot is currently being uploaded.            |
+| succeeded             | Indicates snapshot upload action finished successfully.            |
+| failed             | Indicates snapshot upload has failed.            |
+| unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
 
 ### cloudPcSnapshotImportSourceType
 |Member|Description|
 |:---|:---|
-| `azureStorageAccount`          | Indicates snapshot is being uploaded from Azure storage account.        |
-| `sasUrl`             | Indicates snapshot is being uploaded via shared access signature URL.            |
-| `unknownFutureValue` | Evolvable enumeration sentinel value. Don't use. |
+| azureStorageAccount          | Indicates snapshot is being uploaded from Azure storage account.        |
+| sasUrl             | Indicates snapshot is being uploaded via shared access signature URL.            |
+| unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
 
 ### cloudPcSnapshotImportFileType
 |Member|Description|
 |:---|:---|
-| `dataFile`          |  Indicates the file is serving as a data file.        |
-| `virtualMachineGuestState`             |  Indicates the file is a virtual machine guest state file (VMGS), specific to Trusted Launch VMs. It's a blob managed by Azure and contains the unified extensible firmware interface (UEFI) Secure Boot signature databases and other security information.             |
-| `unknownFutureValue` |  Evolvable enumeration sentinel value. Don't use. |
+| dataFile          |  Indicates the file is serving as a data file.        |
+| virtualMachineGuestState             |  Indicates the file is a virtual machine guest state file (VMGS), specific to Trusted Launch VMs. It's a blob managed by Azure and contains the unified extensible firmware interface (UEFI) Secure Boot signature databases and other security information.             |
+| unknownFutureValue |  Evolvable enumeration sentinel value. Don't use. |
 
 ## Relationships
 None.
