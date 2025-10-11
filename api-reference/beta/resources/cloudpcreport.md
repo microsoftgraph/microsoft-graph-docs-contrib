@@ -1,7 +1,7 @@
 ---
 title: "cloudPcReport resource type"
 description: "Represents the Windows 365 Cloud PC-related reports."
-author: "zhuolingli"
+author: "zhuolinglii"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: resourcePageType
