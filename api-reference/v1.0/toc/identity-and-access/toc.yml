@@ -1110,6 +1110,8 @@ items:
         href: ../../api/identitygovernance-insights-workflowsprocessedbycategory.md
     - name: Complex types
       items:
+      - name: attribute Change Trigger
+        href: ../../resources/identitygovernance-attributechangetrigger.md
       - name: Custom callout extension
         href: ../../resources/customcalloutextension.md
       - name: Custom extension authentication configuration
