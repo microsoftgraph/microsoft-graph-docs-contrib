@@ -23,8 +23,8 @@ Windows 365 administrators need to prepare Provisioning Policy and assign to use
 | ------------------ | ------------ | ----------------------------- | 
 | snapshotId   | String | The unique identifier for the imported snapshot. Example: `d09ae73d-b70f-4836-95c1-59652c947e1c`. Read-only.    |
 | filename   | String | The file name for the imported snapshot. Example: `MyCloudPc.vhd`. Read-only.      |
-| importStatus | [cloudPcSnapshotImportActionStatus](#cloudPcSnapshotImportActionStatus-values) | The status of the snapshot import action, Possible values: pending, inProgress, succeeded, failed. Default is "pending". Read-only. |
-| usageStatus | [cloudPcImportedSnapshotState](#cloudPcImportedSnapshotState-values) | The Cloud PC usage status of the imported snapshot. Possible values: notUsed, inUse, expired. Default is "notUsed". Read-only. |
+| importStatus | [cloudPcSnapshotImportActionStatus](#cloudpcsnapshotimportactionstatus-values) | The status of the snapshot import action, Possible values: pending, inProgress, succeeded, failed. Default is "pending". Read-only. |
+| usageStatus | [cloudPcImportedSnapshotState](#cloudpcimportedsnapshotstate-values) | The Cloud PC usage status of the imported snapshot. Possible values: notUsed, inUse, expired. Default is "notUsed". Read-only. |
 | assignedUserPrincipalName   | String | The assigned user's principal name. Example: example@example.com.   |
 | policyName   | String | The assigned Provision policy name of the upload action. This will be the Provision policy that takes effect if a new Cloud PC is going to be provisioned. Example: "MyProvisioningPolicy". Read-only.   |
 | startDateTime | DateTimeOffset                                                 | The start time of the snapshot import action. The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC). For example, midnight UTC on Jan 1, 2014 appear as '2014-01-01T00:00:00Z'. Read-Only.            |

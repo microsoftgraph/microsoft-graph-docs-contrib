@@ -22,8 +22,8 @@ This file is a .vhd virtual hard disk format.
 
 | Property           | Type         | Description                   |
 | ------------------ | ------------ | ----------------------------- |
-| sourceType   | [cloudPcSnapshotImportSourceType](#cloudPcSnapshotImportSourceType-values) | The source type of the snapshot import action. Possible values: azureStorageAccount, sasUrl. Default is "azureStorageAccount".   |
-| fileType   | [cloudPcSnapshotImportFileType](#cloudPcSnapshotImportFileType-values) | The file type of the imported virtual hard disk file. Possible values: dataFile, virtualMachineGuestState. Default is "dataFile".   |
+| sourceType   | [cloudPcSnapshotImportSourceType](#cloudpcsnapshotimportsourcetype-values) | The source type of the snapshot import action. Possible values: azureStorageAccount, sasUrl. Default is "azureStorageAccount".   |
+| fileType   | [cloudPcSnapshotImportFileType](#cloudpcsnapshotimportfiletype-values) | The file type of the imported virtual hard disk file. Possible values: dataFile, virtualMachineGuestState. Default is "dataFile".   |
 | sasUrl | String | The shared access signature URL of the snapshot import action. |
 | storageBlobInfo | microsoft.graph.cloudPcStorageBlobDetail | The storage account info of the snapshot import action. |
 
