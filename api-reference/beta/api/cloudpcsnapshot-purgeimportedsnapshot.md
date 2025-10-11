@@ -47,7 +47,7 @@ The following table shows the parameters that can be used with this method.
 
 | Parameter | Type              | Description                                                                                            |
 |:----------|:------------------|:-------------------------------------------------------------------------------------------------------|
-| `snapshotIds`   | `Collection(Edm.String)`                                                     | The list of unique identifiers for the imported snapshots.             |
+| snapshotIds   | Collection(String)                                                    | The list of unique identifiers for the imported snapshots.             |
 
 
 ## Response
