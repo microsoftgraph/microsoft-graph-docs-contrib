@@ -30,7 +30,7 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ### Calendars | Places
 
-Apply the following [prerequisites for the Places list and descendant APIs](/graph/api/resources/places-api-overview?view=graph-rest-beta&preserve-view=true#prerequisites-for-places-list-and-descendant-apis) before you can use these APIs; otherwise, these APIs don't return any places.
+Apply the following [prerequisites for the Places list and descendant APIs](/graph/api/resources/places-api-overview?view=graph-rest-beta&preserve-view=true#prerequisites-for-places-list-and-descendant-apis) before you can use these APIs; otherwise, they don't return any places.
 
 ### Device and app management | Cloud PC
 
