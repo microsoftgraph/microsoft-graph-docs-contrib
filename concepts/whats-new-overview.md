@@ -28,6 +28,10 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ## October 2025: New in preview only
 
+### Calendars | Places
+
+Apply the following [prerequisites for the Places list and descendant APIs](/graph/api/resources/places-api-overview?view=graph-rest-beta&preserve-view=true#prerequisites-for-places-list-and-descendant-apis) before you can use these APIs; otherwise, these APIs don't return any places.
+
 ### Device and app management | Cloud PC
 
 - Deprecated the [cloudPcExternalPartnerSetting](/graph/api/resources/cloudpcexternalpartnersetting) resource and replaced with the [cloudPcExternalPartner](/graph/api/resources/cloudpcexternalpartner) resource.
