@@ -19,8 +19,7 @@ Represents the Windows 365 Cloud PC-related reports.
 Use a method in the [Methods](#methods) section to get the corresponding report data in the response.
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
+None.
 
 ## Properties
 
@@ -29,7 +28,6 @@ Use a method in the [Methods](#methods) section to get the corresponding report 
 |id|String|The unique identifier for the reports. Read-only. |
 
 ## Relationships
-
 None.
 
 ## JSON representation
