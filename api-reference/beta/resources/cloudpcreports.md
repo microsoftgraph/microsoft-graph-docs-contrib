@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: resourcePageType
 ms.date: 10/21/2024
+toc.title: "Cloud PC reports (deprecated)"
 ---
 
 # cloudPcReports resource type
@@ -15,7 +16,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 > [!CAUTION]
-> The **cloudPcReports** resource is deprecated and and will stop returning data on December 31, 2026. Going forward use the [cloudPcReport](cloudpcreport.md) resource instead.
+> The **cloudPcReports** resource is deprecated and and will stop returning data on December 31, 2026. Going forward, use the [cloudPcReport](cloudpcreport.md) resource instead.
 
 Represents the Windows 365 Cloud PC-related reports, including the Windows 365 Cloud PC remote connections report.
 
