@@ -514,6 +514,7 @@
             "cloudPcOnPremisesConnection",
             "cloudPcOrganizationSettings",
             "cloudPcProvisioningPolicy",
+            "cloudPcReport",
             "cloudPcReports",
             "cloudPcServicePlan",
             "cloudPcSnapshot",
