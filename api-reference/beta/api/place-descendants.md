@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 Get all the descendants of a specific type under a [place](../resources/place.md).
 
 > [!NOTE]
-> * Before you can use this API, ensure that the Places settings are properly configured. For more information, see [Prerequisites for Places list and descendant APIs](../resources/places-api-overview.md).
+> * Before you can use this API, ensure that the Places settings are properly configured. For more information, see [Prerequisites for Places list and descendant APIs](../resources/places-api-overview.md#prerequisites-for-places-list-and-descendant-apis).
 > * This method can't return more than 2,500 places.
 
 ## Permissions
