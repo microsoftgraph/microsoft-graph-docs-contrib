@@ -14,6 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+> [!CAUTION]
+> The **cloudPcReports** resource is deprecated and and will stop returning data on December 31, 2026. Going forward use the [cloudPcReport](cloudpcreport.md) resource instead.
+
 Represents the Windows 365 Cloud PC-related reports, including the Windows 365 Cloud PC remote connections report.
 
 Use a method in the [Methods](#methods) section to get the corresponding report data in the response. Alternatively, you can use the [cloudPCExportJob](cloudpcexportjob.md) resource and specify a storage account URL to download the specific report.
