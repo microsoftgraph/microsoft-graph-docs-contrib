@@ -7711,8 +7711,24 @@
           "ApiChange": "Resource",
           "ChangedApiName": "cloudPcReport",
           "ChangeType": "Addition",
-          "Description": "Added the [cloudPcReport](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcReport?view=graph-rest-beta) resource.",
+          "Description": "Added the [cloudPcReport](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcReport?view=graph-rest-beta) resource type.",
           "Target": "cloudPcReport"
+        },
+        {
+          "Id": "7112629a-9ce9-402f-9fcc-51bc6b127cdc",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cloudPcReports",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [cloudPcReports](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcReports?view=graph-rest-beta) resource type. Starting December 31, 2026, the **cloudPcReports** will stop returning data. Going forward, use the [cloudPcReport](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcReport?view=graph-rest-beta) resource instead.",
+          "Target": "cloudPcReports"
+        },
+        {
+          "Id": "7112629a-9ce9-402f-9fcc-51bc6b127cdc",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "report",
+          "ChangeType": "Addition",
+          "Description": "Added the **report** relationship to the [virtualEndpoint](https://learn.microsoft.com/en-us/graph/api/resources/virtualEndpoint?view=graph-rest-beta) resource.",
+          "Target": "virtualEndpoint"
         }
       ],
       "Id": "7112629a-9ce9-402f-9fcc-51bc6b127cdc",
