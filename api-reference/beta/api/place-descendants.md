@@ -18,14 +18,7 @@ Get all the descendants of a specific type under a [place](../resources/place.md
 
 > **Note:**
 > This method can't return more than 2,500 places.
-
-> **Note:**
-> Before using this API, please ensure that the Places settings are properly configured. Otherwise, this API will not be able to return any places. Follow these steps to get started:
->1. Download and connect to the MicrosoftPlaces PowerShell module. Refer to [MicrosoftPlaces PowerShell Module Documentation](https://learn.microsoft.com/microsoft-365/places/powershell/connect-microsoftplaces).
->2. Make places visible by setting EnableBuildings to true using the following command: (For more information, see [Set-PlacesSettings](https://learn.microsoft.com/microsoft-365/places/powershell/set-placessettings#-enablebuildings).)
->```PowerShell
->Set-PlacesSettings -EnableBuildings 'Default:true'
->```
+> Before you can use this API, ensure that the Places settings are properly configured. For more information, see [Prerequisites for Places list and descendant APIs](../resources/places-api-overview.md).
 
 ## Permissions
 
