@@ -32,12 +32,7 @@ By default, this operation returns up to 100 rooms, workspaces, and room lists p
 Compared with the [findRooms](../api/user-findrooms.md) and [findRoomLists](../api/user-findroomlists.md) functions, this operation returns a richer payload for rooms and room lists. For details about how they compare, see [Using the places API](../resources/places-api-overview.md#using-the-places-api).
 
 > **Note:**
-> Before using this API, please ensure that the Places settings are properly configured. Otherwise, this API will not be able to return any places. Follow these steps to get started:
->1. Download and connect to the MicrosoftPlaces PowerShell module. Refer to [MicrosoftPlaces PowerShell Module Documentation](https://learn.microsoft.com/microsoft-365/places/powershell/connect-microsoftplaces).
->2. Make places visible by setting EnableBuildings to true using the following command: (For more information, see [Set-PlacesSettings](https://learn.microsoft.com/microsoft-365/places/powershell/set-placessettings#-enablebuildings).)
->```PowerShell
->Set-PlacesSettings -EnableBuildings 'Default:true'
->```
+> Before you can use this API, ensure that the Places settings are properly configured. For more information, see [Prerequisites for Places list and descendant APIs](../resources/places-api-overview.md).
 
 ## Permissions
 
