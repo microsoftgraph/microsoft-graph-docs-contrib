@@ -38,6 +38,9 @@ To find out more, see [Major services and features in Microsoft Graph](overview-
 
 ![An image showing the primary resources and relationships that are part of Microsoft Graph](images/microsoft-graph.png)
 
+    > [!NOTE]
+    > If you are looking for a [graph database](https://learn.microsoft.com/en-us/fabric/graph/graph-database) solution, please consider [Graph in Microsoft Fabric](https://learn.microsoft.com/en-us/fabric/graph/overview).
+
 ## What can you do with Microsoft Graph?
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/PI9NO5rayiY]
