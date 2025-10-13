@@ -1,10 +1,10 @@
 ---
 title: "cloudFlareWebApplicationFirewallProvider resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+description: "Represents configuration and credentials for a Cloudflare web application firewall (WAF) provider integration for Entra External ID."
+author: "more-rasika"
 ms.date: 10/10/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -14,8 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+Represents a Cloudflare web application firewall (WAF) provider configuration integrated with Entra External ID. This resource extends the abstract `webApplicationFirewallProvider` with Cloudflare-specific properties such as an API token and the default zone identifier used for operations performed against the Cloudflare account.
 
 Inherits from [webApplicationFirewallProvider](../resources/webapplicationfirewallprovider.md).
 
@@ -31,10 +30,10 @@ Inherits from [webApplicationFirewallProvider](../resources/webapplicationfirewa
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|apiToken|String|**TODO: Add Description**|
-|displayName|String|**TODO: Add Description** Inherited from [webApplicationFirewallProvider](../resources/webapplicationfirewallprovider.md).|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md). Inherits from [entity](../resources/entity.md)|
-|zoneId|String|**TODO: Add Description**|
+|apiToken|String|Cloudflare API token or credential used by Microsoft services to authenticate to the Cloudflare account. Contact your Cloudflare Customer Success Manager for assistance with your apitoken.|
+|displayName|String|The friendly display name of the Cloudflare provider configuration. Inherited from [webApplicationFirewallProvider](../resources/webapplicationfirewallprovider.md).|
+|id|String|Unique identifier for the provider resource. Inherited from [entity](../resources/entity.md). Inherits from [entity](../resources/entity.md)|
+|zoneId|String|Default Cloudflare Zone ID associated with this provider configuration. This ID identifies the DNS zone in Cloudflare that is commonly used for verification and configuration operations for the provider.|
 
 ## Relationships
 None.

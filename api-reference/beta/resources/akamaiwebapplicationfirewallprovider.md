@@ -1,10 +1,10 @@
 ---
 title: "akamaiWebApplicationFirewallProvider resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+description: "Represents configuration and credentials for an Akamai web application firewall (WAF) provider integration."
+author: "more-rasika"
 ms.date: 10/10/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -14,8 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+Represents an Akamai web application firewall (WAF) provider configuration integrated with Microsoft services. This resource extends the abstract `webApplicationFirewallProvider` with Akamai-specific properties such as API credentials and host prefix used for operations performed against the Akamai account.
 
 Inherits from [webApplicationFirewallProvider](../resources/webapplicationfirewallprovider.md).
 
@@ -31,12 +30,12 @@ Inherits from [webApplicationFirewallProvider](../resources/webapplicationfirewa
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|accessToken|String|**TODO: Add Description**|
-|clientSecret|String|**TODO: Add Description**|
-|clientToken|String|**TODO: Add Description**|
-|displayName|String|**TODO: Add Description** Inherited from [webApplicationFirewallProvider](../resources/webapplicationfirewallprovider.md).|
-|hostPrefix|String|**TODO: Add Description**|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md). Inherits from [entity](../resources/entity.md)|
+|accessToken|String|Akamai API access token used to authenticate to the Akamai account. Contact your Akamai Customer Success Manager for assistance with your acessToken.|
+|clientSecret|String|Akamai API client secret used in conjunction with the client token and access token for authentication. Contact your Akamai Customer Success Manager for assistance with this information.|
+|clientToken|String|Akamai API client token used for authentication to the Akamai account. Contact your Akamai Customer Success Manager for assistance with this information.|
+|displayName|String|The friendly display name of the Akamai provider configuration. Inherited from [webApplicationFirewallProvider](../resources/webapplicationfirewallprovider.md).|
+|hostPrefix|String|Prefix used to identify the host or domain in Akamai configuration operations. This value may be required for certain API calls or configuration scenarios.|
+|id|String|Unique identifier for the provider resource. Inherited from [entity](../resources/entity.md). Inherits from [entity](../resources/entity.md)|
 
 ## Relationships
 None.

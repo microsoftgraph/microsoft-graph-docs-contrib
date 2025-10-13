@@ -1,10 +1,10 @@
 ---
 title: "akamaiRapidRulesModel resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
-ms.date: 10/10/2025
+description: "Represents the configuration for Akamai Rapid Rules in a web application firewall (WAF) integration. The resource describes whether Rapid Rules are enabled and the default action applied to matching traffic."
+author: "more-rasika"
+ms.date: 10/13/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -14,14 +14,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents the configuration for Akamai Rapid Rules in a web application firewall (WAF) integration. Rapid Rules are pre-configured rulesets designed to quickly address emerging threats. This resource describes whether Rapid Rules are enabled and the default action applied to traffic that matches these rules.
 
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|defaultAction|String|**TODO: Add Description**|
-|isEnabled|Boolean|**TODO: Add Description**|
+|defaultAction|String|The default action Akamai applies to traffic that matches Rapid Rules. Common values include `block`, `alert`, or provider-specific actions.|
+|isEnabled|Boolean|Indicates whether Akamai Rapid Rules are enabled for the WAF integration. If true, Rapid Rules are active and applied to incoming traffic.|
 
 ## Relationships
 None.

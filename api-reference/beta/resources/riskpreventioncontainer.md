@@ -1,10 +1,10 @@
 ---
 title: "riskPreventionContainer resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+description: "Represents the entry point for risk prevention features in External Identities."
+author: "more-rasika"
 ms.date: 10/10/2025
-ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.localizationpriority: high
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents the entry point for risk prevention features in [External Identities](/azure/active-directory/external-identities/) for Microsoft Entra External ID tenants.
 
 Inherits from [entity](../resources/entity.md)
 
@@ -26,9 +26,9 @@ Inherits from [entity](../resources/entity.md)
 |[Get](../api/riskpreventioncontainer-get.md)|[riskPreventionContainer](../resources/riskpreventioncontainer.md)|Read the properties and relationships of [riskPreventionContainer](../resources/riskpreventioncontainer.md) object.|
 |[Update](../api/riskpreventioncontainer-update.md)|[riskPreventionContainer](../resources/riskpreventioncontainer.md)|Update the properties of a riskPreventionContainer object.|
 |[Delete](../api/security-identitycontainer-delete-riskprevention.md)|None|Delete a riskPreventionContainer object.|
-|[List webApplicationFirewallProviders](../api/riskpreventioncontainer-list-webapplicationfirewallproviders.md)|[webApplicationFirewallProvider](../resources/webapplicationfirewallprovider.md) collection|**TODO: Add a useful description.**|
+|[List webApplicationFirewallProviders](../api/riskpreventioncontainer-list-webapplicationfirewallproviders.md)|[webApplicationFirewallProvider](../resources/webapplicationfirewallprovider.md) collection|List web application firewall provider configurations that are registered under this container.|
 |[Create webApplicationFirewallProvider](../api/riskpreventioncontainer-post-webapplicationfirewallproviders.md)|[webApplicationFirewallProvider](../resources/webapplicationfirewallprovider.md)|Create a new webApplicationFirewallProvider object.|
-|[List webApplicationFirewallVerifications](../api/riskpreventioncontainer-list-webapplicationfirewallverifications.md)|[webApplicationFirewallVerificationModel](../resources/webapplicationfirewallverificationmodel.md) collection|**TODO: Add a useful description.**|
+|[List webApplicationFirewallVerifications](../api/riskpreventioncontainer-list-webapplicationfirewallverifications.md)|[webApplicationFirewallVerificationModel](../resources/webapplicationfirewallverificationmodel.md) collection|List verification records (for example domain verification attempts and results) associated with WAF providers in this container.|
 |[Create webApplicationFirewallVerificationModel](../api/riskpreventioncontainer-post-webapplicationfirewallverifications.md)|[webApplicationFirewallVerificationModel](../resources/webapplicationfirewallverificationmodel.md)|Create a new webApplicationFirewallVerificationModel object.|
 
 ## Properties
@@ -38,9 +38,9 @@ Inherits from [entity](../resources/entity.md)
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|fraudProtectionProviders|[fraudProtectionProvider](../resources/fraudprotectionprovider.md) collection|**TODO: Add Description**|
-|webApplicationFirewallProviders|[webApplicationFirewallProvider](../resources/webapplicationfirewallprovider.md) collection|**TODO: Add Description**|
-|webApplicationFirewallVerifications|[webApplicationFirewallVerificationModel](../resources/webapplicationfirewallverificationmodel.md) collection|**TODO: Add Description**|
+|fraudProtectionProviders|[fraudProtectionProvider](../resources/fraudprotectionprovider.md) collection|Represents entry point for fraud protection provider configurations for Microsoft Entra External ID tenants.|
+|webApplicationFirewallProviders|[webApplicationFirewallProvider](../resources/webapplicationfirewallprovider.md) collection|Collection of WAF provider configurations registered in this container.|
+|webApplicationFirewallVerifications|[webApplicationFirewallVerificationModel](../resources/webapplicationfirewallverificationmodel.md) collection|Collection of verification records documenting verification operations performed for domains or hosts with WAF providers.|
 
 ## JSON representation
 The following JSON representation shows the resource type.

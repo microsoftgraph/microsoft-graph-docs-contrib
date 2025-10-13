@@ -1,10 +1,10 @@
 ---
 title: "akamaiAttackGroupActionModel resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
-ms.date: 10/10/2025
+description: "Represents an Akamai WAF attack group and the action applied to that group. Used to describe how specific categories of attacks are handled by the Akamai integration, such as blocking or alerting."
+author: "more-rasika"
+ms.date: 10/13/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -14,14 +14,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents an Akamai web application firewall (WAF) attack group and the action configured for that group. This resource is used to describe how the Akamai integration handles specific categories of attacks, such as blocking, alerting, or logging.
 
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|action|String|**TODO: Add Description**|
-|group|String|**TODO: Add Description**|
+|action|String|The action Akamai applies to the attack group when a matching threat is detected. Common values include `block`, `alert`, `log`, or provider-specific actions.|
+|group|String|The name or identifier of the attack group. This value categorizes the type of attack the action applies to.|
 
 ## Relationships
 None.
@@ -40,4 +40,3 @@ The following JSON representation shows the resource type.
   "action": "String"
 }
 ```
-

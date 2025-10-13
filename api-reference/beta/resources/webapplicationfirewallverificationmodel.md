@@ -1,10 +1,10 @@
 ---
 title: "webApplicationFirewallVerificationModel resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+description: "Represents a verification operation and result for a domain managed by a web application firewall (WAF) provider."
+author: "more-rasika"
 ms.date: 10/10/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents a verification operation and result for a domain managed by a web application firewall (WAF) provider.
 
 
 Inherits from [entity](../resources/entity.md).
@@ -28,23 +28,23 @@ Inherits from [entity](../resources/entity.md).
 |[Get](../api/webapplicationfirewallverificationmodel-get.md)|[webApplicationFirewallVerificationModel](../resources/webapplicationfirewallverificationmodel.md)|Read the properties and relationships of [webApplicationFirewallVerificationModel](../resources/webapplicationfirewallverificationmodel.md) object.|
 |[Update](../api/webapplicationfirewallverificationmodel-update.md)|[webApplicationFirewallVerificationModel](../resources/webapplicationfirewallverificationmodel.md)|Update the properties of a webApplicationFirewallVerificationModel object.|
 |[Delete](../api/riskpreventioncontainer-delete-webapplicationfirewallverifications.md)|None|Delete a webApplicationFirewallVerificationModel object.|
-|[List webApplicationFirewallProvider](../api/webapplicationfirewallverificationmodel-list-provider.md)|[webApplicationFirewallProvider](../resources/webapplicationfirewallprovider.md) collection|**TODO: Add a useful description.**|
+|[List webApplicationFirewallProvider](../api/webapplicationfirewallverificationmodel-list-provider.md)|[webApplicationFirewallProvider](../resources/webapplicationfirewallprovider.md) collection|List the WAF provider resources associated with this verification model. This returns provider metadata (for example, displayName and id) for providers that were added to the verification model.|
 |[Add webApplicationFirewallProvider](../api/webapplicationfirewallverificationmodel-post-provider.md)|[webApplicationFirewallProvider](../resources/webapplicationfirewallprovider.md)|Add provider by posting to the provider collection.|
 |[Remove webApplicationFirewallProvider](../api/webapplicationfirewallverificationmodel-delete-provider.md)|None|Remove a [webApplicationFirewallProvider](../resources/webapplicationfirewallprovider.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md). Inherits from [entity](../resources/entity.md)|
-|providerType|webApplicationFirewallProviderType|**TODO: Add Description**. The possible values are: `akamai`, `cloudflare`, `unknownFutureValue`.|
-|verificationResult|[webApplicationFirewallVerificationResult](../resources/webapplicationfirewallverificationresult.md)|**TODO: Add Description**|
-|verifiedDetails|[webApplicationFirewallVerifiedDetails](../resources/webapplicationfirewallverifieddetails.md)|**TODO: Add Description**|
-|verifiedHost|String|**TODO: Add Description**|
+|id|String|Unique identifier for the verification model. Inherited from [entity](../resources/entity.md). Inherits from [entity](../resources/entity.md)|
+|providerType|webApplicationFirewallProviderType|Specifies the type of WAF provider used for the verification. The possible values are: `akamai`, `cloudflare`, `unknownFutureValue`.|
+|verificationResult|[webApplicationFirewallVerificationResult](../resources/webapplicationfirewallverificationresult.md)|An object describing the outcome of the verification operation, including status, errors or warnings|
+|verifiedDetails|[webApplicationFirewallVerifiedDetails](../resources/webapplicationfirewallverifieddetails.md)|Details of DNS configuration|
+|verifiedHost|String|The host (domain or subdomain) that was verified as part of this verification operation.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|provider|[webApplicationFirewallProvider](../resources/webapplicationfirewallprovider.md)|**TODO: Add Description**|
+|provider|[webApplicationFirewallProvider](../resources/webapplicationfirewallprovider.md)|Reference to a provider resource associated with this verification model. Represents a WAF provider that can be used to verify or manage the host.|
 
 ## JSON representation
 The following JSON representation shows the resource type.

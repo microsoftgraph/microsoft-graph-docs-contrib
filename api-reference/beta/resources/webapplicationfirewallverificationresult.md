@@ -1,10 +1,10 @@
 ---
 title: "webApplicationFirewallVerificationResult resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+description: "Represents the outcome of a verification operation for a domain managed by a web application firewall (WAF) provider."
+author: "more-rasika"
 ms.date: 10/10/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -14,16 +14,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents the result of a verification operation performed against a host or domain with a web application firewall (WAF) provider.
 
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|errors|[genericError](../resources/genericerror.md) collection|**TODO: Add Description**|
-|status|webApplicationFirewallVerificationStatus|**TODO: Add Description**. The possible values are: `success`, `warning`, `failure`, `unknownFutureValue`.|
-|verifiedOnDateTime|DateTimeOffset|**TODO: Add Description**|
-|warnings|[genericError](../resources/genericerror.md) collection|**TODO: Add Description**|
+|errors|[genericError](../resources/genericerror.md) collection|List of errors encountered during the verification process. |
+|status|webApplicationFirewallVerificationStatus|Overall status of the verification operation. Typical values include `success` (verification passed), `warning` (verification completed with warnings), and `failure` (verification failed). Use `unknownFutureValue` for forward compatibility. The possible values are: `success`, `warning`, `failure`, `unknownFutureValue`.|
+|verifiedOnDateTime|DateTimeOffset|UTC timestamp when the verification was performed or last updated. This indicates when the verification result was produced.|
+|warnings|[genericError](../resources/genericerror.md) collection|List of warnings produced during verification.|
 
 ## Relationships
 None.
@@ -51,5 +51,3 @@ The following JSON representation shows the resource type.
     }
   ]
 }
-```
-

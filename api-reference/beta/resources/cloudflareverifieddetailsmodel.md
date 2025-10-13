@@ -1,10 +1,10 @@
 ---
 title: "cloudFlareVerifiedDetailsModel resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+description: "Represents Cloudflare-specific verification findings for a domain or host after a verification operation with a Cloudflare WAF provider."
+author: "more-rasika"
 ms.date: 10/10/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents the details discovered when verifying a host or domain using a Cloudflare web application firewall (WAF) provider. This resource extends the abstract `webApplicationFirewallVerifiedDetails` type with Cloudflare-specific fields such as the Cloudflare zone identifier, lists of enabled recommended rulesets and custom rules, and any DNS configuration evidence gathered during verification.
 
 
 Inherits from [webApplicationFirewallVerifiedDetails](../resources/webapplicationfirewallverifieddetails.md).
@@ -23,10 +23,10 @@ Inherits from [webApplicationFirewallVerifiedDetails](../resources/webapplicatio
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|dnsConfiguration|[webApplicationFirewallDnsConfiguration](../resources/webapplicationfirewalldnsconfiguration.md)|**TODO: Add Description** Inherited from [webApplicationFirewallVerifiedDetails](../resources/webapplicationfirewallverifieddetails.md).|
-|enabledCustomRules|[cloudFlareRuleModel](../resources/cloudflarerulemodel.md) collection|**TODO: Add Description**|
-|enabledRecommendedRulesets|[cloudFlareRulesetModel](../resources/cloudflarerulesetmodel.md) collection|**TODO: Add Description**|
-|zoneId|String|**TODO: Add Description**|
+|dnsConfiguration|[webApplicationFirewallDnsConfiguration](../resources/webapplicationfirewalldnsconfiguration.md)|DNS-related evidence discovered during verification. Inherited from [webApplicationFirewallVerifiedDetails](../resources/webapplicationfirewallverifieddetails.md).|
+|enabledCustomRules|[cloudFlareRuleModel](../resources/cloudflarerulemodel.md) collection|Collection of Cloudflare custom rules that are currently enabled for the zone or host.|
+|enabledRecommendedRulesets|[cloudFlareRulesetModel](../resources/cloudflarerulesetmodel.md) collection|Collection of Cloudflare recommended rulesets that are enabled for the zone or host.|
+|zoneId|String|Cloudflare-assigned identifier for the DNS zone associated with the verified host (for example, the Cloudflare Zone ID). This ID is used to correlate verification details with the Cloudflare account and to perform configuration operations via the provider's API.|
 
 ## Relationships
 None.

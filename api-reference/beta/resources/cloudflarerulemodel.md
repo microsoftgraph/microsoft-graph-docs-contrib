@@ -1,10 +1,10 @@
 ---
 title: "cloudFlareRuleModel resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+description: "Represents a Cloudflare-managed rule used by a Cloudflare WAF integration."
+author: "more-rasika"
 ms.date: 10/10/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -14,15 +14,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents a Cloudflare WAF rule configuration or mapping that is known to the integration. This resource captures metadata about the rule and the action Cloudflare takes when the rule matches traffic.
 
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|action|String|**TODO: Add Description**|
-|name|String|**TODO: Add Description**|
-|ruleId|String|**TODO: Add Description**|
+|action|String|The action Cloudflare applies when the rule matches traffic. Common values include `allow`, `block`, `challenge`, `js_challenge`, or `log`.|
+|name|String|Friendly name for the rule, used in UIs or logs to help administrators identify the rule.|
+|ruleId|String|Unique identifier assigned to the rule by Cloudflare or the integration.|
 
 ## Relationships
 None.

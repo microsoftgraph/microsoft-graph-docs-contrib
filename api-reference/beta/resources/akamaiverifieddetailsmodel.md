@@ -1,10 +1,10 @@
 ---
 title: "akamaiVerifiedDetailsModel resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+description: "Represents Akamai-specific verification findings for a domain or host after a verification operation with an Akamai web application firewall (WAF) provider."
+author: "more-rasika"
 ms.date: 10/10/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -14,8 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+Represents the details discovered when verifying a host or domain using an Akamai web application firewall (WAF) provider. This resource extends the abstract `webApplicationFirewallVerifiedDetails` type with Akamai-specific fields such as active attack groups, custom rules, Rapid Rules configuration, and DNS configuration evidence.
 
 Inherits from [webApplicationFirewallVerifiedDetails](../resources/webapplicationfirewallverifieddetails.md).
 
@@ -23,10 +22,10 @@ Inherits from [webApplicationFirewallVerifiedDetails](../resources/webapplicatio
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|activeAttackGroups|[akamaiAttackGroupActionModel](../resources/akamaiattackgroupactionmodel.md) collection|**TODO: Add Description**|
-|activeCustomRules|[akamaiCustomRuleModel](../resources/akamaicustomrulemodel.md) collection|**TODO: Add Description**|
-|dnsConfiguration|[webApplicationFirewallDnsConfiguration](../resources/webapplicationfirewalldnsconfiguration.md)|**TODO: Add Description** Inherited from [webApplicationFirewallVerifiedDetails](../resources/webapplicationfirewallverifieddetails.md).|
-|rapidRules|[akamaiRapidRulesModel](../resources/akamairapidrulesmodel.md)|**TODO: Add Description**|
+|activeAttackGroups|[akamaiAttackGroupActionModel](../resources/akamaiattackgroupactionmodel.md) collection|Collection of Akamai attack groups that are currently active for the zone or host, including the action applied to each group (for example, `block` or `alert`).|
+|activeCustomRules|[akamaiCustomRuleModel](../resources/akamaicustomrulemodel.md) collection|Collection of Akamai custom rules that are currently enabled for the zone or host. Each entry includes rule metadata such as the rule identifier, friendly name, and the action taken when the rule matches traffic.|
+|dnsConfiguration|[webApplicationFirewallDnsConfiguration](../resources/webapplicationfirewalldnsconfiguration.md)|DNS-related evidence discovered during verification. Includes the record name, record type and value, whether the record is proxied through Akamai, and whether the domain is verified. Inherited from [webApplicationFirewallVerifiedDetails](../resources/webapplicationfirewallverifieddetails.md).|
+|rapidRules|[akamaiRapidRulesModel](../resources/akamairapidrulesmodel.md)|Configuration for Akamai Rapid Rules, including whether Rapid Rules are enabled and the default action applied to matching traffic.|
 
 ## Relationships
 None.

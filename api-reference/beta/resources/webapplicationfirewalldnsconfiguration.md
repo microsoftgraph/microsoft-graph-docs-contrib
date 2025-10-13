@@ -1,10 +1,10 @@
 ---
 title: "webApplicationFirewallDnsConfiguration resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+description: "Represents DNS configuration for a domain used by a web application firewall (WAF) provider."
+author: "more-rasika"
 ms.date: 10/10/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -14,17 +14,17 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents DNS configuration for a domain used by a web application firewall (WAF) provider. 
 
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|isDomainVerified|Boolean|**TODO: Add Description**|
-|isProxied|Boolean|**TODO: Add Description**|
-|name|String|**TODO: Add Description**|
-|recordType|webApplicationFirewallDnsRecordType|**TODO: Add Description**. The possible values are: `cname`, `unknownFutureValue`.|
-|value|String|**TODO: Add Description**|
+|isDomainVerified|Boolean|Indicates whether the domain owning this DNS record has been verified by the WAF provider.|
+|isProxied|Boolean|Indicates whether traffic for this DNS record is proxied through the WAF provider's network (for example, using a CDN or reverse proxy).|
+|name|String|The DNS record name (for example, `www.contoso.com` or `contoso.com`). This is the host or zone name to which the configuration applies.|
+|recordType|webApplicationFirewallDnsRecordType|Type of DNS record used for verification or routing. The possible values are: `cname`, `unknownFutureValue`.|
+|value|String|The value of the DNS record.|
 
 ## Relationships
 None.

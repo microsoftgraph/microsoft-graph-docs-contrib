@@ -1,10 +1,10 @@
 ---
 title: "cloudFlareRulesetModel resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+description: "Represents a Cloudflare ruleset used by a Cloudflare WAF integration. "
+author: "more-rasika"
 ms.date: 10/10/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -14,15 +14,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents a Cloudflare-managed ruleset or collection of WAF rules that can be applied to traffic. This resource captures ruleset metadata such as a friendly name, the ruleset identifier, and the execution phase where the rules are evaluated (for example, HTTP request phase).
 
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|name|String|**TODO: Add Description**|
-|phaseName|String|**TODO: Add Description**|
-|rulesetId|String|**TODO: Add Description**|
+|name|String|Friendly name for the ruleset, used in UIs and logs to help administrators identify the ruleset.|
+|phaseName|String|Name of the phase during which the ruleset is evaluated (for example, `http_request`, `http_response`, or provider-specific phase names). This indicates when in the request/response lifecycle the rules apply.|
+|rulesetId|String|Unique identifier assigned to the ruleset by Cloudflare or the integration.|
+
 
 ## Relationships
 None.

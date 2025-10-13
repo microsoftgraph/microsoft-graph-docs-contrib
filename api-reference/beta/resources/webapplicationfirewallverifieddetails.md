@@ -1,10 +1,10 @@
 ---
 title: "webApplicationFirewallVerifiedDetails resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+description: "Abstract type that represents detailed findings and evidence produced by a verification operation for a domain managed by a web application firewall (WAF) provider."
+author: "more-rasika"
 ms.date: 10/10/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -14,14 +14,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Abstract type that represents verification findings and evidence for a host or domain after a verification operation with a web application firewall (WAF) provider.
+
 This is an abstract type.
 
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|dnsConfiguration|[webApplicationFirewallDnsConfiguration](../resources/webapplicationfirewalldnsconfiguration.md)|**TODO: Add Description**|
+|dnsConfiguration|[webApplicationFirewallDnsConfiguration](../resources/webapplicationfirewalldnsconfiguration.md)|DNS-related details discovered during verification for the host, such as the DNS record name, record type, record value, whether the record is proxied through the provider, and whether the domain is verified.|
 
 ## Relationships
 None.
@@ -40,5 +41,3 @@ The following JSON representation shows the resource type.
     "@odata.type": "microsoft.graph.webApplicationFirewallDnsConfiguration"
   }
 }
-```
-
