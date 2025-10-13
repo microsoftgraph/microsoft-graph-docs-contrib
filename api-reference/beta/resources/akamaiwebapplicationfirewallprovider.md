@@ -20,12 +20,9 @@ Inherits from [webApplicationFirewallProvider](../resources/webapplicationfirewa
 
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List](../api/akamaiwebapplicationfirewallprovider-list.md)|[akamaiWebApplicationFirewallProvider](../resources/akamaiwebapplicationfirewallprovider.md) collection|Get a list of the akamaiWebApplicationFirewallProvider objects and their properties.|
-|[Get](../api/akamaiwebapplicationfirewallprovider-get.md)|[akamaiWebApplicationFirewallProvider](../resources/akamaiwebapplicationfirewallprovider.md)|Read the properties and relationships of [akamaiWebApplicationFirewallProvider](../resources/akamaiwebapplicationfirewallprovider.md) object.|
-|[Update](../api/akamaiwebapplicationfirewallprovider-update.md)|[akamaiWebApplicationFirewallProvider](../resources/akamaiwebapplicationfirewallprovider.md)|Update the properties of an akamaiWebApplicationFirewallProvider object.|
-|[Delete](../api/akamaiwebapplicationfirewallprovider-delete.md)|None|Delete an akamaiWebApplicationFirewallProvider object.|
+None.
+
+For the list of API operations for managing this resource type, see the [webApplicationFirewallProvider](../resources/webapplicationfirewallprovider.md) resource type.
 
 ## Properties
 |Property|Type|Description|

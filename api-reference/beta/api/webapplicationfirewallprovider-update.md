@@ -49,10 +49,9 @@ PATCH /identity/riskPrevention/webApplicationFirewallProviders/{webApplicationFi
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
 
-**TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|**TODO: Add Description** Required.|
+|displayName|String|The friendly display name of the Web Application Firewall provider configuration. Required.|
 
 
 

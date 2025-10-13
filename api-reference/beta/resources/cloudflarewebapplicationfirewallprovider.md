@@ -20,12 +20,9 @@ Inherits from [webApplicationFirewallProvider](../resources/webapplicationfirewa
 
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List](../api/cloudflarewebapplicationfirewallprovider-list.md)|[cloudFlareWebApplicationFirewallProvider](../resources/cloudflarewebapplicationfirewallprovider.md) collection|Get a list of the cloudFlareWebApplicationFirewallProvider objects and their properties.|
-|[Get](../api/cloudflarewebapplicationfirewallprovider-get.md)|[cloudFlareWebApplicationFirewallProvider](../resources/cloudflarewebapplicationfirewallprovider.md)|Read the properties and relationships of [cloudFlareWebApplicationFirewallProvider](../resources/cloudflarewebapplicationfirewallprovider.md) object.|
-|[Update](../api/cloudflarewebapplicationfirewallprovider-update.md)|[cloudFlareWebApplicationFirewallProvider](../resources/cloudflarewebapplicationfirewallprovider.md)|Update the properties of a cloudFlareWebApplicationFirewallProvider object.|
-|[Delete](../api/cloudflarewebapplicationfirewallprovider-delete.md)|None|Delete a cloudFlareWebApplicationFirewallProvider object.|
+None.
+
+For the list of API operations for managing this resource type, see the [webApplicationFirewallProvider](../resources/webapplicationfirewallprovider.md) resource type.
 
 ## Properties
 |Property|Type|Description|
