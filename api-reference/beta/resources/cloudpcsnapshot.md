@@ -14,9 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a snapshot of the device settings of a Cloud PC that can be used to restore the device system. The snapshot is taken periodically by a background service or triggered manually by the user, for disaster recovery/restore usage. 
+Represents a snapshot of the device settings of a Cloud PC that can be used to restore the device system. The background service takes periodically, or a user triggers manually to take the snapshot, for disaster recovery/restore usage. 
 
-For provisioning a new Cloud PC with an imported snapshot, please check `importSnapshot` api for more information.
+For provisioning a new Cloud PC with an imported snapshot, check `importSnapshot` API for more information.
 
 
 Inherits from [entity](../resources/entity.md).
@@ -59,8 +59,8 @@ Inherits from [entity](../resources/entity.md).
 
 |Member|Description|
 |:---|:---|
-| automatic          | Indicates that the snapshot is created automatically by Windows 365 regularly. |
-| manual             | Indicates that the snapshot is created manually by the customer.               |
+| automatic          | Indicates that Windows 365 regularly creates the snapshot automatically. |
+| manual             | Indicates that customer manually takes the snapshot.               |
 | unknownFutureValue | Evolvable enumeration sentinel value. Don't use.     |
 | retention          | Indicates that the snapshot is a retention snapshot. If a Cloud PC is about to be deprovisioned (manually, due to license expiration, and so on), a snapshot of the Cloud PC is taken as a retention snapshot. It's stored in a Microsoft-managed, limited-function storage account for 90 days. During this period, customers can extract the data or use it to provision a new Cloud PC. After the 90-day retention period, Microsoft disables the account and deletes the customer data. |
 
@@ -68,9 +68,9 @@ Inherits from [entity](../resources/entity.md).
 
 |Member|Description|
 |:---|:---|
-| notUsed          | Indicates snapshot is not yet used.        |
+| notUsed          | Indicates snapshot isn't yet used.        |
 | inUse             |  Indicates snapshot is currently in use.            |
-| expired             |  Indicates the snapshot has expired and can no longer be used.            |
+| expired             |  Indicates the snapshot is expired and can no longer be used.            |
 | unknownFutureValue |  Evolvable enumeration sentinel value. Don't use. |
 
 ### cloudPcSnapshotImportActionStatus
@@ -80,7 +80,7 @@ Inherits from [entity](../resources/entity.md).
 | pending          | Indicates snapshot upload is queued and not yet executed.        |
 | inProgress             | Indicates snapshot is currently being uploaded.            |
 | succeeded             | Indicates snapshot upload action finished successfully.            |
-| failed             | Indicates snapshot upload has failed.            |
+| failed             | Indicates snapshot upload is failed.            |
 | unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
 
 ### cloudPcSnapshotImportSourceType
