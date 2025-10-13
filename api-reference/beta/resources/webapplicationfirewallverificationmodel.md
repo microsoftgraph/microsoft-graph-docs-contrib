@@ -24,13 +24,8 @@ Inherits from [entity](../resources/entity.md).
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List](../api/riskpreventioncontainer-list-webapplicationfirewallverifications.md)|[webApplicationFirewallVerificationModel](../resources/webapplicationfirewallverificationmodel.md) collection|Get a list of the webApplicationFirewallVerificationModel objects and their properties.|
-|[Create](../api/riskpreventioncontainer-post-webapplicationfirewallverifications.md)|[webApplicationFirewallVerificationModel](../resources/webapplicationfirewallverificationmodel.md)|Create a new webApplicationFirewallVerificationModel object.|
 |[Get](../api/webapplicationfirewallverificationmodel-get.md)|[webApplicationFirewallVerificationModel](../resources/webapplicationfirewallverificationmodel.md)|Read the properties and relationships of [webApplicationFirewallVerificationModel](../resources/webapplicationfirewallverificationmodel.md) object.|
-|[Update](../api/webapplicationfirewallverificationmodel-update.md)|[webApplicationFirewallVerificationModel](../resources/webapplicationfirewallverificationmodel.md)|Update the properties of a webApplicationFirewallVerificationModel object.|
 |[Delete](../api/riskpreventioncontainer-delete-webapplicationfirewallverifications.md)|None|Delete a webApplicationFirewallVerificationModel object.|
-|[List webApplicationFirewallProvider](../api/webapplicationfirewallverificationmodel-list-provider.md)|[webApplicationFirewallProvider](../resources/webapplicationfirewallprovider.md) collection|List the WAF provider resources associated with this verification model. This returns provider metadata (for example, displayName and id) for providers that were added to the verification model.|
-|[Add webApplicationFirewallProvider](../api/webapplicationfirewallverificationmodel-post-provider.md)|[webApplicationFirewallProvider](../resources/webapplicationfirewallprovider.md)|Add provider by posting to the provider collection.|
-|[Remove webApplicationFirewallProvider](../api/webapplicationfirewallverificationmodel-delete-provider.md)|None|Remove a [webApplicationFirewallProvider](../resources/webapplicationfirewallprovider.md) object.|
 
 ## Properties
 |Property|Type|Description|

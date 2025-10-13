@@ -85,20 +85,58 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.webApplicationFirewallVerificationModel",
-      "id": "415614ba-471d-daa2-daef-7f89ec73d34c",
-      "verifiedHost": "String",
-      "providerType": "String",
-      "verificationResult": {
-        "@odata.type": "microsoft.graph.webApplicationFirewallVerificationResult"
-      },
-      "verifiedDetails": {
-        "@odata.type": "microsoft.graph.webApplicationFirewallVerifiedDetails"
-      }
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/riskPrevention/webApplicationFirewallVerifications(provider())",
+    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET identity/riskPrevention/webApplicationFirewallVerifications?$select=providerType,verificationResult",
+    "value": [
+        {
+            "id": "00000000-0000-0000-0000-000000000000",
+            "verifiedHost": "www.contoso.com",
+            "providerType": "cloudflare",
+            "verificationResult": {
+                "status": "success",
+                "verifiedOnDateTime": "2025-10-04T00:50:26.4909654Z",
+                "errors": [],
+                "warnings": []
+            },
+            "verifiedDetails": {
+                "@odata.type": "#microsoft.graph.cloudFlareVerifiedDetailsModel",
+                "zoneId": "11111111111111111111111111111111",
+                "dnsConfiguration": {
+                    "name": "www.contoso.com",
+                    "isProxied": true,
+                    "recordType": "cname",
+                    "value": "contoso.azurefd.net",
+                    "isDomainVerified": true
+                },
+                "enabledRecommendedRulesets": [
+                    {
+                        "rulesetId": "22222222222222222222222222222222",
+                        "name": "CloudFlare Managed Ruleset",
+                        "phaseName": "http_request_firewall_managed"
+                    }
+                ],
+                "enabledCustomRules": [
+                    {
+                        "ruleId": "33333333333333333333333333333333",
+                        "name": "Block SQL Injection",
+                        "action": "block"
+                    },
+                    {
+                        "ruleId": "44444444444444444444444444444444",
+                        "name": "Block XSS",
+                        "action": "block"
+                    }
+                ]
+            },
+            "provider@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/riskPrevention/webApplicationFirewallVerifications('00000000-0000-0000-0000-000000000000')/webApplicationFirewallProviders",
+            "provider": {
+                "@odata.type": "#microsoft.graph.cloudFlareWebApplicationFirewallProvider",
+                "id": "55555555-5555-5555-5555-555555555555",
+                "displayName": "CloudFlare Provider Example",
+                "zoneId": "11111111111111111111111111111111"
+            }
+        }
+    ]
 }
 ```
 

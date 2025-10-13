@@ -85,13 +85,28 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.webApplicationFirewallProvider",
-      "id": "4d8ac75a-e882-18c6-8ad4-2ab20c742e52",
-      "displayName": "String"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/riskPrevention/webApplicationFirewallProviders",
+    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET identity/riskPrevention/webApplicationFirewallProviders?$select=displayName",
+    "value": [
+        {
+            "@odata.type": "#microsoft.graph.cloudFlareWebApplicationFirewallProvider",
+            "id": "00000000-0000-0000-0000-000000000001",
+            "displayName": "Cloudflare Provider Example",
+            "zoneId": "11111111111111111111111111111111"
+        },
+        {
+            "@odata.type": "#microsoft.graph.akamaiWebApplicationFirewallProvider",
+            "id": "00000000-0000-0000-0000-000000000002",
+            "displayName": "Akamai Provider Example",
+            "hostPrefix": "akab-exampleprefix"
+        },
+        {
+            "@odata.type": "#microsoft.graph.cloudFlareWebApplicationFirewallProvider",
+            "id": "00000000-0000-0000-0000-000000000003",
+            "displayName": "Cloudflare Provider Secondary",
+            "zoneId": "22222222222222222222222222222222"
+        }
+    ]
 }
 ```
 

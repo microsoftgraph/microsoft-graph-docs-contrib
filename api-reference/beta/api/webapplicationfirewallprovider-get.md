@@ -35,7 +35,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 ``` http
 GET /identity/riskPrevention/webApplicationFirewallProviders/{webApplicationFirewallProviderId}
-GET /identity/riskPrevention/webApplicationFirewallVerifications/{webApplicationFirewallVerificationModelId}/provider
 ```
 
 ## Optional query parameters

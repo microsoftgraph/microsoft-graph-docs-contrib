@@ -19,21 +19,10 @@ Represents the entry point for risk prevention features in [External Identities]
 Inherits from [entity](../resources/entity.md)
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List](../api/security-identitycontainer-list-riskprevention.md)|[riskPreventionContainer](../resources/riskpreventioncontainer.md) collection|Get a list of the riskPreventionContainer objects and their properties.|
-|[Create](../api/security-identitycontainer-post-riskprevention.md)|[riskPreventionContainer](../resources/riskpreventioncontainer.md)|Create a new riskPreventionContainer object.|
-|[Get](../api/riskpreventioncontainer-get.md)|[riskPreventionContainer](../resources/riskpreventioncontainer.md)|Read the properties and relationships of [riskPreventionContainer](../resources/riskpreventioncontainer.md) object.|
-|[Update](../api/riskpreventioncontainer-update.md)|[riskPreventionContainer](../resources/riskpreventioncontainer.md)|Update the properties of a riskPreventionContainer object.|
-|[Delete](../api/security-identitycontainer-delete-riskprevention.md)|None|Delete a riskPreventionContainer object.|
-|[List webApplicationFirewallProviders](../api/riskpreventioncontainer-list-webapplicationfirewallproviders.md)|[webApplicationFirewallProvider](../resources/webapplicationfirewallprovider.md) collection|List web application firewall provider configurations that are registered under this container.|
-|[Create webApplicationFirewallProvider](../api/riskpreventioncontainer-post-webapplicationfirewallproviders.md)|[webApplicationFirewallProvider](../resources/webapplicationfirewallprovider.md)|Create a new webApplicationFirewallProvider object.|
-|[List webApplicationFirewallVerifications](../api/riskpreventioncontainer-list-webapplicationfirewallverifications.md)|[webApplicationFirewallVerificationModel](../resources/webapplicationfirewallverificationmodel.md) collection|List verification records (for example domain verification attempts and results) associated with WAF providers in this container.|
-|[Create webApplicationFirewallVerificationModel](../api/riskpreventioncontainer-post-webapplicationfirewallverifications.md)|[webApplicationFirewallVerificationModel](../resources/webapplicationfirewallverificationmodel.md)|Create a new webApplicationFirewallVerificationModel object.|
+None.
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+None.
 
 ## Relationships
 |Relationship|Type|Description|
