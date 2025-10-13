@@ -1,6 +1,6 @@
 ---
-title: "Delete organizationalBrandingTheme"
-description: "Delete an organizationalBrandingTheme object."
+title: "List organizationalBrandingTheme objects"
+description: "Get a list of the organizationalBrandingTheme objects and their properties."
 author: "AlexanderMars"
 ms.date: 09/25/2025
 ms.localizationpriority: medium
@@ -8,13 +8,13 @@ ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
-# Delete organizationalBrandingTheme
+# List organizationalBrandingTheme objects
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete an organizationalBrandingTheme object.
+Get a list of the organizationalBrandingTheme objects and their properties.
 
 ## Permissions
 
@@ -22,10 +22,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "organizationalbranding-delete-themes-permissions"
+  "name": "organizationalbranding-list-themes-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/organizationalbranding-delete-themes-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/organizationalbranding-list-themes-permissions.md)]
 
 ## HTTP request
 
@@ -34,8 +34,12 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-DELETE /organization/{organizationId}/branding/themes/{organizationalBrandingThemeId}/$ref
+GET /organization/{organizationId}/branding/themes
 ```
+
+## Optional query parameters
+
+This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -49,7 +53,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code.
+If successful, this method returns a `200 OK` response code and a collection of [organizationalBrandingTheme](../resources/organizationalbrandingtheme.md) objects in the response body.
 
 ## Examples
 
@@ -58,11 +62,11 @@ If successful, this method returns a `204 No Content` response code.
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "delete_organizationalbrandingtheme"
+  "name": "list_organizationalbrandingtheme"
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/organization/84841066-274d-4ec0-a5c1-276be684bdd3/branding/themes/931cc1bb-5395-4fd7-aa54-406d793a4b05
+GET https://graph.microsoft.com/beta/organization/84841066-274d-4ec0-a5c1-276be684bdd3/branding/themes
 ```
 
 
@@ -72,10 +76,23 @@ The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.organizationalBrandingTheme"
 }
 -->
 ``` http
-HTTP/1.1 204 No Content
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.organizationalBrandingTheme",
+      "id": "88373343-0336-58fb-427c-003495dcd79d",
+      "name": "String",
+      "isDefaultTheme": "Boolean"
+    }
+  ]
+}
 ```
 

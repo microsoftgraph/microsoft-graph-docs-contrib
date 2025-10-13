@@ -1,20 +1,20 @@
 ---
-title: "Delete organizationalBrandingTheme"
-description: "Delete an organizationalBrandingTheme object."
-author: "AlexanderMars"
+title: "Delete organizationalBrandingThemeLocalization"
+description: "Delete an organizationalBrandingThemeLocalization object."
+author: "AlexanderMars*"
 ms.date: 09/25/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
-# Delete organizationalBrandingTheme
+# Delete organizationalBrandingThemeLocalization
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete an organizationalBrandingTheme object.
+Delete an organizationalBrandingThemeLocalization object.
 
 ## Permissions
 
@@ -22,10 +22,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "organizationalbranding-delete-themes-permissions"
+  "name": "organizationalbrandingtheme-delete-localizations-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/organizationalbranding-delete-themes-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/organizationalbrandingtheme-delete-localizations-permissions.md)]
 
 ## HTTP request
 
@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-DELETE /organization/{organizationId}/branding/themes/{organizationalBrandingThemeId}/$ref
+DELETE /organization/{organizationId}/branding/themes/{organizationalBrandingThemeId}/localizations/{organizationalBrandingThemeLocalizationId}/$ref
 ```
 
 ## Request headers
@@ -58,11 +58,11 @@ If successful, this method returns a `204 No Content` response code.
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "delete_organizationalbrandingtheme"
+  "name": "delete_organizationalbrandingthemelocalization"
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/organization/84841066-274d-4ec0-a5c1-276be684bdd3/branding/themes/931cc1bb-5395-4fd7-aa54-406d793a4b05
+DELETE https://graph.microsoft.com/beta/organization/84841066-274d-4ec0-a5c1-276be684bdd3/branding/themes/931cc1bb-5395-4fd7-aa54-406d793a4b05/localizations/fr-FR
 ```
 
 
