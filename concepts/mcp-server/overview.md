@@ -1,84 +1,95 @@
 ---
-title: Overview of Microsoft Graph MCP Server
-description: "Microsoft Graph MCP Server lets you query Microsoft Graph with natural language through AI agents and Copilots. Learn how to integrate it into your apps."
+title: Overview of Microsoft MCP Server for Enterprise
+description: "Microsoft MCP Server for Enterprise enables AI agents to query enterprise identity and device data using natural language through the Model Context Protocol."
 author: FaithOmbongi
 ms.author: ombongifaith
-ms.reviewr: Licantrop0
-ms.subservice: graph-mcp
+ms.reviewer: Licantrop0
+ms.subservice: enterprise-mcp-server
 ms.topic: overview
-ms.date: 09/03/2025
+ms.date: 10/09/2025
 
-#customer intent: As a developer, I want to understand the Microsoft Graph MCP Server so that I can effectively integrate it into my AI agents and applications.
-
+#customer intent: As a developer or IT administrator, I want to understand the Microsoft MCP Server for Enterprise so that I can effectively use natural language to query and manage my organization's identity and device data.
 ---
 
-# Overview of Microsoft Graph MCP Server (preview)
+# Overview of Microsoft MCP Server for Enterprise (preview)
 
-Microsoft Graph MCP Server is the official programmatic interface for AI agents and Copilots to interact with Microsoft Graph by using natural language. It implements the [Model Context Protocol (MCP)](https://modelcontextprotocol.io/), translates user questions or commands into Microsoft Graph API calls, and gets responses in natural language. The server supports both agents that act on behalf of a signed-in user and autonomous agents.
+The Microsoft MCP Server for Enterprise is the official programmatic interface for AI agents to query enterprise data in your Microsoft Entra tenant by using natural language. Built on the [Model Context Protocol (MCP)](https://modelcontextprotocol.io/), an open standard that standardizes how AI models interact with external tools and services, it translates natural language requests into Microsoft Graph API calls.
 
-This overview explains how Microsoft Graph MCP Server works, helping you get started with integrating it into your applications.
+Focused on enterprise management scenarios, the MCP Server for Enterprise provides secure access to Microsoft Entra data. It enables administrators and developers to interact with organizational data through conversational interfaces while maintaining all existing security, permission, and compliance policies.
+
+This overview explains how Microsoft MCP Server for Enterprise works and how you can integrate it into your AI-powered workflows.
 
 > [!IMPORTANT]
-> Microsoft Graph MCP Server is in PREVIEW. See the [Supplemental Terms of Use for Microsoft Azure Previews](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) for legal terms that apply to Azure features that are in beta, preview, or otherwise not yet released into general availability.
+> Microsoft MCP Server for Enterprise is currently in PREVIEW.
+> This information relates to a prerelease product that may be substantially modified before it's released. Microsoft makes no warranties, expressed or implied, with respect to the information provided here.
 >
-> The Microsoft Graph MCP Server is offered under the [Microsoft APIs Terms of Use](/legal/microsoft-apis/terms-of-use).
+> Microsoft MCP Server for Enterprise is offered under the [Microsoft APIs Terms of Use](/legal/microsoft-apis/terms-of-use).
 
 ## How it works
 
-The following diagram shows what happens when you make a request through an MCP-enabled AI agent.
-
 ![MCP Server Workflow](../images/mcp-server-workflow.svg)
 
-1. **Automatic discovery**: When the AI client starts, it automatically locates the Microsoft Graph MCP Server endpoint at `mcp.graph.microsoft.com` from the list of installed MCP Servers and retrieves the available tools. This process enables the AI client to function as both an MCP client and host.
+When the AI client starts, it automatically locates the Microsoft Graph MCP Server endpoint at `mcp.svc.cloud.microsoft/enterprise` from the list of installed MCP Servers and retrieves the available tools. This step is the **automatic discovery** phase.
 
-1. **Input**: A user signed in to the AI client, or an autonomous agent, provides a query or command within the context window in natural language. Natural language in this context is any language that your choice of Large Language Model (LLM) supports.
+Suppose an administrator asks: "*How many users do we have in our Microsoft Entra tenant?*" Here's an example showing the workflow when you query information through an MCP-enabled AI agent:
 
-   - The user enters a query in the LLM's context window. For example, "*How many users are in my tenant?*"
 
-1. **NLP Processing**: The LLM processes the query using Natural Language Processing (NLP) techniques to extract intent, which it might conclude is *"count the number of users in the Microsoft Entra ID tenant*". From the MCP server connections that run in the agent, it determines which server and tool to use. In this case, it's the **search_for_graph_examples** tool of the Graph MCP Server.
+1. **NLP Processing**: The LLM processes the query by using Natural Language Processing (NLP) techniques to extract intent. It might conclude the intent is "count the number of users in the Microsoft Entra tenant." From the MCP server connections actively running in the agent, it determines to use the `search_for_graph_examples` tool of the Enterprise MCP Server.
 
-1. **Execution**: The MCP Server executes the query using the tool. It uses Retrieval-Augmented Generation (RAG) to execute a search for relevant Microsoft Graph API calls that match the user's intent and returns this matching list to the LLM.
-   1. The MCP Server has a semantic index of example Graph queries in natural language and their corresponding API calls.
-   1. It converts the intent into an embedding, finds the relevant API calls that match the user's intent, and returns this list to the LLM. In our example, it might retrieve stored queries like "count total number of users," "count guest users," "get all users".
+1. **Semantic search**: The `search_for_graph_examples` tool converts the question into an embedding and searches its library of example Graph queries mapped to natural language. It finds matches like "count total number of users," "count guest users," and "get all users" which correspond to the user intent, and returns the corresponding queries to the Large Language Model (LLM).
 
-1. **API Translation**: The LLM evaluates the list of API calls and selects the API call with the highest relevance score as the best fit to fulfill the request. In this case, it identifies that the user wants the total user count that corresponds to the `/users/$count` API call.
+1. **Query selection**: The LLM evaluates the list of API calls and selects the API call with the highest relevance score as the best fit to fulfill the request, which is `GET /users/$count`.
 
-1. **Execution**: Now that it has an API query, the LLM invokes the **make_graph_call_readonly** tool to execute the query.
+1. **Execution**: The LLM determines from the list of running Enterprise MCP Server tools, to use the  `make_graph_call_readonly` tool to execute the `GET /users/$count` call. It honors the user's privileges when making the call.
 
 1. **API Processing**: The MCP Server processes the request and:
-   1. Forwards the request to the Microsoft Graph service to execute the `/users/$count` API call.
-   1. Microsoft Graph returns the results in standard Microsoft Graph response payload format to the MCP Server, which then returns the response to the LLM.
+   - Forwards the request to the Microsoft Graph service to execute the call.
+   - Microsoft Graph returns the results in standard Microsoft Graph response payload format to the MCP Server, which then forwards the response to the LLM.
 
 1. **Natural Language Response Generation**: The LLM interprets the JSON payload and converts it into a natural language response for the user. In this case, it might simply respond: "There are 10,930 users in the directory."
 
 ## Tools
 
-The Microsoft Graph MCP Server exposes the following tools that an AI agent can invoke:
+The Microsoft MCP Server for Enterprise exposes the following tools that an AI agent can invoke:
 
-- **search_for_graph_examples** - This tool uses RAG methodologies to search for Microsoft Graph API calls that match the customer intent and returns a list of candidate queries to the LLM.
-- **make_graph_call_readonly** - This tool runs the read-only API call with the highest relevance score and returns the result.
-- *Tool #3???*
+- **search_for_graph_examples** - Uses retrieval-augmented generation (RAG) methodologies to search for Microsoft Graph API calls that match the user's intent. It has a semantic index of example queries mapped to natural language and returns a list of candidate queries to the AI model.
+
+- **make_graph_call_readonly** - Executes read-only Microsoft Graph API calls and returns the results. This tool respects all existing Microsoft Graph permission models and throttling limits.
+
+- **get_graph_entity_properties** - Retrieves properties of specific Microsoft Graph entities to help the AI model understand the data structure.
 
 ## Usage scenarios
 
-1. **Answer common IT queries:** End users and administrators can ask questions about their tenant in plain language. For instance, an IT admin reporting on license optimization to the leadership could ask "Show me the unassigned licenses in my tenant" and get results, even if they don't know the API for querying license utilization details.
+The Microsoft MCP Server for Enterprise enables several key scenarios:
 
-1. **Discover and test APIs for integration scenarios:** If you're building traditional applications, you can use the Microsoft Graph MCP Server to explore and test APIs that power your scenarios before integrating them into your application. Apart from seeing the API calls, you can ask the LLM to show you the query it ran.
+- **IT helpdesk and support**: Support staff can answer common questions like "*Which users didn't sign in last month?*" or "*Is MFA enabled for all administrators?*" without needing to know specific Graph API endpoints. It can also help to answer more complex queries by combining multiple API calls. For example, "List all inactive user accounts that have Copilot licenses assigned."
 
-1. *More usage scenarios?*
+- **Administrative reporting**: IT administrators can generate reports and insights through conversational queries. For example, "*Show me the unassigned licenses in my tenant*" or "*How many guest users do we have?*"
 
-## Scope of coverage
+- **API discovery and prototyping**: Developers can explore and test Microsoft Graph APIs by using natural language before integrating them into applications. The AI can show you the actual Microsoft Graph queries it executed, helping you understand the underlying API calls. AI can also show you how to script the queries and run them, cutting down your development time.
 
-You can query all Microsoft Graph read-only APIs in public preview and general availability using natural language interactions. Currently, invoking write operations isn't supported.
+- **Automation and scripting**: Integrate the MCP server into scripts, Power Platform flows, or Logic Apps to enable no-code/low-code solutions that query Microsoft Entra data by using natural language instructions.
 
-## License requirements
+## Current scope and capabilities
 
-There is no additional cost or license for using the Microsoft Graph MCP Server. You still need appropriate licenses for the underlying data. For example, a Microsoft Entra P2 license to access user sign-in logs or a Microsoft 365 E5 license to query Microsoft Defender Advanced Threat Protection.
+The Microsoft MCP Server for Enterprise is currently in private preview and supports only read-only enterprise IT scenarios focused on Microsoft Entra ID and device management. For example, identity and directory read-only operations including user management, group management, application management, device information, and administrative actions.
 
-## National cloud support
+All operations respect Microsoft Graph permissions and privileges and security policies.
 
-The Microsoft Graph MCP Server is available in all clouds. The availability of an underlying service depends on whether the API is available in the specified cloud. For example, if the API isn't available in the US Government cloud, the MCP Server can't run requests for that API in that cloud.
+## Licensing and costs
 
-## Next step
+You **don't need an extra cost or separate license** to use the Microsoft MCP Server for Enterprise. 
 
-- [Get started]()
+However, you still need the right licenses for the data you're accessing. For example, you need a Microsoft Entra ID P2 license to access user sign-in logs.
+
+The MCP server follows the same throttling limits as Microsoft Graph APIs.
+
+## Cloud availability
+
+Microsoft MCP Server for Enterprise is available only in the public cloud (global service).
+
+## Next steps
+
+- [Get started with Microsoft MCP Server for Enterprise](./mcp-server/get-started-vscode.md)
+- [Authentication and permissions](./mcp-server/authentication-authorization-permissions.md)
+- [Supported scenarios and examples](./mcp-server/supported-scenarios.md)
