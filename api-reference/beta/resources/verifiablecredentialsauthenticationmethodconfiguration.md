@@ -28,9 +28,7 @@ Inherits from [authenticationMethodConfiguration](../resources/authenticationmet
 |[Get](../api/verifiablecredentialsauthenticationmethodconfiguration-get.md)|[verifiableCredentialsAuthenticationMethodConfiguration](../resources/verifiablecredentialsauthenticationmethodconfiguration.md)|Read the properties and relationships of [verifiableCredentialsAuthenticationMethodConfiguration](../resources/verifiablecredentialsauthenticationmethodconfiguration.md) object.|
 |[Update](../api/verifiablecredentialsauthenticationmethodconfiguration-update.md)|[verifiableCredentialsAuthenticationMethodConfiguration](../resources/verifiablecredentialsauthenticationmethodconfiguration.md)|Update the properties of a verifiableCredentialsAuthenticationMethodConfiguration object.|
 |[Delete](../api/verifiablecredentialsauthenticationmethodconfiguration-delete.md)|None|Delete a verifiableCredentialsAuthenticationMethodConfiguration object.|
-|[List includeTargets](../api/verifiablecredentialsauthenticationmethodconfiguration-list-includetargets.md)|[verifiableCredentialAuthenticationMethodTarget](../resources/verifiablecredentialauthenticationmethodtarget.md) collection| Lists group targets for identity verification profiles|
-|[Add verifiableCredentialAuthenticationMethodTarget](../api/verifiablecredentialsauthenticationmethodconfiguration-post-includetargets.md)|[verifiableCredentialAuthenticationMethodTarget](../resources/verifiablecredentialauthenticationmethodtarget.md)|Add includeTargets by posting to the includeTargets collection.|
-|[Remove includeTargets](../api/verifiablecredentialsauthenticationmethodconfiguration-delete-includetargets.md)|None|Remove a [verifiableCredentialAuthenticationMethodTarget](../resources/verifiablecredentialauthenticationmethodtarget.md) object.|
+
 
 ## Properties
 |Property|Type|Description|

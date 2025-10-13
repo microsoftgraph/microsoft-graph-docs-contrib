@@ -48,8 +48,6 @@ PATCH /verifiableCredentialsAuthenticationMethodConfiguration
 
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
-
-**TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
 |state|authenticationMethodState| Inherited from [authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md). The possible values are: `enabled`, `disabled`. Optional.|
