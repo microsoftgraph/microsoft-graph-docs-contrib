@@ -29,8 +29,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-POST /me/todo/lists/{todoTaskListId}/tasks/{todoTaskId}/singleValueExtendedProperties
-POST /users/{usersId}/todo/lists/{todoTaskListId}/tasks/{todoTaskId}/singleValueExtendedProperties
+POST me/todo/lists/{todoTaskListId}/tasks/{todoTaskId}$expand=singleValueExtendedProperties($filter=id eq 'String 0x3004')
+POST me/todo/lists/{todoTaskListId}/tasks$expand=singleValueExtendedProperties($filter=id eq 'String 0x3004')
 ```
 
 ## Request headers
@@ -42,14 +42,23 @@ POST /users/{usersId}/todo/lists/{todoTaskListId}/tasks/{todoTaskId}/singleValue
 
 ## Request body
 
-In the request body, supply a JSON representation of the [singleValueExtendedProperty](../resources/singlevalueextendedproperty.md) object.
+In the request body, supply a JSON representation of the [singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md) object.
 
-You can specify the following properties when you create a **singleValueExtendedProperty**.
-
-**TODO: Add or remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
-|value|String|**TODO: Add Description** Optional.|
+|id|String||
+|value|String|Set the value of the property. If deleting the property, set this field to null|
+
+```json
+{
+  "singleValueExtendedProperties": [
+    {
+      "id": "String 0x3004",
+      "Value": "newValue"
+    }
+  ]
+}
+```
 
 ## Response
 

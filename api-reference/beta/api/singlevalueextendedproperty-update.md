@@ -29,8 +29,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-PATCH /me/todo/lists/{todoTaskListId}/tasks/{todoTaskId}/singleValueExtendedProperties/{singleValueExtendedPropertyId}
-PATCH /users/{usersId}/todo/lists/{todoTaskListId}/tasks/{todoTaskId}/singleValueExtendedProperties/{singleValueExtendedPropertyId}
+PATCH /me/todo/lists/{todoTaskListId}/tasks$expand=singleValueExtendedProperties($filter=id eq '{singleValueExtendedPropertyId}')
+PATCH /me/todo/lists/{todoTaskListId}/tasks/{todoTaskId}$expand=singleValueExtendedProperties($filter=id eq '{singleValueExtendedPropertyId}')
 ```
 
 ## Request headers
@@ -44,10 +44,23 @@ PATCH /users/{usersId}/todo/lists/{todoTaskListId}/tasks/{todoTaskId}/singleValu
 
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
-**TODO: Add or remove properties that don't apply**
+In the request body, supply a JSON representation of the [singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md) object.
+
 |Property|Type|Description|
 |:---|:---|:---|
-|value|String|**TODO: Add Description** Optional.|
+|id|String||
+|value|String|Set the value of the property. If deleting the property, set this field to null|
+
+```json
+{
+  "singleValueExtendedProperties": [
+    {
+      "id": "String 0x3004",
+      "Value": "newValue"
+    }
+  ]
+}
+```
 
 ## Response
 
@@ -67,13 +80,17 @@ The following example shows a request.
   "name": "update_singlevalueextendedproperty_1"
 }
 -->
-``` http
-PATCH https://graph.microsoft.com/beta/me/todo/lists/{todoTaskListId}/tasks/{todoTaskId}/singleValueExtendedProperties/{singleValueExtendedPropertyId}
+```http
+PATCH https://graph.microsoft.com/beta/me/todo/lists/AAMkAGRkODAyMWY4LThhNDAtNDY5NC04NGZlLTg1MWI3ZjhlNzlkYQAuAAAAAABqWGq8OtNGQZXSxZmlbsdaAQAX-0TLdmcpTbYc7Xjt9MBtAAKE11mZAAA=/tasks$expand=singleValueExtendedProperties($filter=id eq 'String 0x3004')
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.singleValueExtendedProperty",
-  "value": "String"
+  "singleValueExtendedProperties": [
+    {
+      "id": "String 0x3004",
+      "Value": "newValue"
+    }
+  ]
 }
 ```
 
@@ -87,14 +104,33 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.todoTask"
 }
 -->
-``` http
+
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.singleValueExtendedProperty",
-  "id": "bdab0d1a-6ea3-51f3-6aa3-039ecf1765e9",
-  "value": "String"
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('abdfb478-2c62-4af8-8ebd-a1226a051da9')/todo/lists('AAMkAGRkODAyMWY4LThhNDAtNDY5NC04NGZlLTg1MWI3ZjhlNzlkYQAuAAAAAABqWGq8OtNGQZXSxZmlbsdaAQAX-0TLdmcpTbYc7Xjt9MBtAAKE11mZAAA%3D')/tasks/$entity",
+  "@odata.etag": "W/\"F/9Ey3ZnKU22HO147fTAbQACkKtwSA==\"",
+  "importance": "normal",
+  "isReminderOn": false,
+  "status": "notStarted",
+  "title": "sampleTitle",
+  "createdDateTime": "2025-04-15T07:41:19.3936849Z",
+  "lastModifiedDateTime": "2025-04-15T07:41:19.4784861Z",
+  "hasAttachments": false,
+  "categories": [],
+  "id": "AAMkAGRkODAyMWY4LThhNDAtNDY5NC04NGZlLTg1MWI3ZjhlNzlkYQBGAAAAAABqWGq8OtNGQZXSxZmlbsdaBwAX-0TLdmcpTbYc7Xjt9MBtAAKE11mZAAAX-0TLdmcpTbYc7Xjt9MBtAAKUZGaaAAA=",
+  "body": {
+      "content": "",
+      "contentType": "text"
+  },
+  "singleValueExtendedProperties": [
+    {
+      "id": "String 0x3004",
+      "value": "newValue"
+    }
+  ]
 }
 ```
 
@@ -110,13 +146,17 @@ The following example shows a request.
   "name": "update_singlevalueextendedproperty_2"
 }
 -->
-``` http
-PATCH https://graph.microsoft.com/beta/me/todo/lists/{todoTaskListId}/tasks/{todoTaskId}/singleValueExtendedProperties/{singleValueExtendedPropertyId}
+```http
+POST https://graph.microsoft.com/beta/me/todo/lists/AAMkAGRkODAyMWY4LThhNDAtNDY5NC04NGZlLTg1MWI3ZjhlNzlkYQAuAAAAAABqWGq8OtNGQZXSxZmlbsdaAQAX-0TLdmcpTbYc7Xjt9MBtAAKE11mZAAA=/tasks
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.singleValueExtendedProperty",
-  "value": "String"
+  "singleValueExtendedProperties": [
+    {
+      "id": "String 0x3004",
+      "Value": null
+    }
+  ]
 }
 ```
 
@@ -135,9 +175,21 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.singleValueExtendedProperty",
-  "id": "bdab0d1a-6ea3-51f3-6aa3-039ecf1765e9",
-  "value": "String"
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('abdfb478-2c62-4af8-8ebd-a1226a051da9')/todo/lists('AAMkAGRkODAyMWY4LThhNDAtNDY5NC04NGZlLTg1MWI3ZjhlNzlkYQAuAAAAAABqWGq8OtNGQZXSxZmlbsdaAQAX-0TLdmcpTbYc7Xjt9MBtAAKE11mZAAA%3D')/tasks/$entity",
+  "@odata.etag": "W/\"F/9Ey3ZnKU22HO147fTAbQACkKtwSA==\"",
+  "importance": "normal",
+  "isReminderOn": false,
+  "status": "notStarted",
+  "title": "sampleTitle",
+  "createdDateTime": "2025-04-15T07:41:19.3936849Z",
+  "lastModifiedDateTime": "2025-04-15T07:41:19.4784861Z",
+  "hasAttachments": false,
+  "categories": [],
+  "id": "AAMkAGRkODAyMWY4LThhNDAtNDY5NC04NGZlLTg1MWI3ZjhlNzlkYQBGAAAAAABqWGq8OtNGQZXSxZmlbsdaBwAX-0TLdmcpTbYc7Xjt9MBtAAKE11mZAAAX-0TLdmcpTbYc7Xjt9MBtAAKUZGaaAAA=",
+  "body": {
+      "content": "",
+      "contentType": "text"
+  }
 }
 ```
 
