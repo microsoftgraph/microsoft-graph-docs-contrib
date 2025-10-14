@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /sites/getOperationStatus(operationId={siteOperation-id})
+GET /sites/getOperationStatus(operationId='{siteOperation-id}')
 ```
 ## Optional query parameters
 This method supports the $filter and $select OData query parameters to help customize the response.
