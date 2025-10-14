@@ -1,6 +1,6 @@
 ---
 title: "Create site"
-description: "Create a new site object."
+description: "Create a new SharePoint site."
 author: "spgraph-docs-team"
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [site](../resources/site.md) object.
+Create a new SharePoint [site](../resources/site.md).
 
 ## Permissions
 
@@ -53,9 +53,9 @@ You can specify the following properties when you create a **site**.
 |Property|Type|Description|
 |:---|:---|:---|
 |description|String| The descriptive text for the site. Inherited from [baseItem](../resources/baseitem.md).|
-|locale|String|Defines the language and format in which the notification is sent.|
+|locale|String|The language settings of the site.|
 |name|String|The name of the site. Inherited from [baseItem](../resources/baseitem.md). Optional.|
-|ownerIdentityToResolve|[identityInput](../resources/identityinput.md)|The input to resolve identities at the time of creation. Optional.|
+|ownerIdentityToResolve|[identityInput](../resources/identityinput.md)|The site owner to be provided at the time of site creation only. Optional.|
 |shareByEmailEnabled|Boolean|Determines whether the site and its content can be shared via email. Optional.|
 |template|siteTemplateType|Specifies the template applied to the site. The possible values are: `sitepagepublishing`, `group`, `sts`, `unknownFutureValue`. Optional.|
 |webUrl|String|URL that displays the resource in the browser (for Office file formats), or provides a direct link to the file (for other formats). Inherited from [baseItem](../resources/baseitem.md). Optional.|
