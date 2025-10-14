@@ -29,8 +29,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-POST me/todo/lists/{todoTaskListId}/tasks/{todoTaskId}$expand=singleValueExtendedProperties($filter=id eq 'String 0x3004')
-POST me/todo/lists/{todoTaskListId}/tasks$expand=singleValueExtendedProperties($filter=id eq 'String 0x3004')
+POST /me/todo/lists/{todoTaskListId}/tasks/{todoTaskId}$expand=singleValueExtendedProperties($filter=id eq '{singleValueExtendedPropertyId}')
+POST /me/todo/lists/{todoTaskListId}/tasks$expand=singleValueExtendedProperties($filter=id eq '{singleValueExtendedPropertyId}')
 ```
 
 ## Request headers
