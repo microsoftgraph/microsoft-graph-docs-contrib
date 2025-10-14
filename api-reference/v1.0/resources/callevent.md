@@ -1,10 +1,10 @@
 ---
 title: "callEvent resource type"
 description: "Contains information about a call event."
-author: "awang119"
+author: "garchiro7"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
-ms.date: 10/14/2025
+ms.date: 08/10/2025
 doc_type: resourcePageType
 ---
 
@@ -12,12 +12,9 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Contains information about a call event. The call can be a one-on-one or group ad-hoc call, a PSTN or VoIP call, or a scheduled active online meeting. 
 
 ## Methods
-
 None.
 
 ## Properties

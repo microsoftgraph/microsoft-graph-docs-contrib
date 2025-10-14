@@ -1,18 +1,16 @@
 ---
 title: "emergencyCallEvent resource type"
 description: "Contains information about an emergency call event."
-author: "awang119"
+author: "garchiro7"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
-ms.date: 12/03/2024
+ms.date: 08/10/2025
 doc_type: resourcePageType
 ---
 
 # emergencyCallEvent resource type
 
 Namespace: microsoft.graph
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Contains information about an emergency call event.
 
@@ -60,4 +58,4 @@ The following JSON representation shows the resource type.
 
 ## Related content
 
-[Change notification for emergency call events](/graph/changenotifications-for-emergencycalls).
+- [Change notification for emergency call events](/graph/changenotifications-for-emergencycalls)
