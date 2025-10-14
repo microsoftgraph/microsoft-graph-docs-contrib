@@ -20,9 +20,9 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 
 | Method                                            | REST Path                                                   |
 | :------------------------------------------------ | :---------------------------------------------------------- |
-| [Create site](../api/site-post-sites.md)          | POST /sites                                                 |
+| [Create](../api/site-post-sites.md)               | POST /sites                                                 |
+| [Get][]                                           | GET /sites/{site-id}                                        |
 | [Get root site][]                                 | GET /sites/root                                             |
-| [Get site][]                                      | GET /sites/{site-id}                                        |
 | [Get site by path][]                              | GET /sites/{hostname}:/{site-path}                          |
 | [Get site for a group][]                          | GET /groups/{group-id}/sites/root                           |
 | [Get analytics][]                                 | GET /sites/{site-id}/analytics                              |
@@ -49,7 +49,7 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 | [Create column][]                                 | POST /sites/{site-id}/columns                               |
 | [Create document processing job](../api/site-post-documentprocessingjobs.md)| POST /sites/{site-id}/documentProcessingJobs|
 | [List operations](../api/site-list-operations.md) | GET /sites/{site-id}/operations                             |
-| [Get operation status](../api/site-getoperationstatus.md)| GET /sites/getOperationStatus(operationId={operation-id})|
+| [Get operation status](../api/site-getoperationstatus.md)| GET /sites/getOperationStatus(operationId='{siteOperationId}')|
 | [Get site settings][]                             | GET /sites/{site-id}/settings                               |
 | [Get delta](../api/site-delta.md)                 | GET /sites/delta                                            |
 |**Open extensions**||
