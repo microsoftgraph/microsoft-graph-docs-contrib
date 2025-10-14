@@ -82,22 +82,36 @@ POST https://graph.microsoft.com/beta/identity/verifiedId/profiles
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.verifiedIdProfile",
-  "name": "String",
-  "description": "String",
-  "state": "String",
-  "verifierDid": "String",
-  "priority": "Integer",
+  "name": "Contoso Verified ID",
+  "description": "Contoso Verified Identity",
+  "lastModifiedDateTime": null,
+  "state": "enabled",
+  "verifierDid": "did:web:eu.did-dev.contoso.io",
+  "priority": 0,
   "verifiedIdProfileConfiguration": {
-    "@odata.type": "microsoft.graph.verifiedIdProfileConfiguration"
+      "type": "verifiedIdentity",
+      "acceptedIssuer": "did:web:eu.did-dev.contoso.io",
+      "claimBindingSource": "directory",
+      "claimBindings": [
+          {
+              "sourceAttribute": "First name",
+              "verifiedIdClaim": "vc.credentialSubject.firstName"
+          },
+          {
+              "sourceAttribute": "Last name",
+              "verifiedIdClaim": "vc.credentialSubject.lastName"
+          }
+      ]
   },
   "faceCheckConfiguration": {
-    "@odata.type": "microsoft.graph.faceCheckConfiguration"
+      "isEnabled": true,
+      "sourcePhotoClaimName": "portrait"
   },
   "verifiedIdUsageConfigurations": [
-    {
-      "@odata.type": "microsoft.graph.verifiedIdUsageConfiguration"
-    }
+      {
+          "isEnabledForTestOnly": true,
+          "purpose": "recovery"
+      }
   ]
 }
 ```
@@ -118,25 +132,39 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.verifiedIdProfile",
-  "id": "e3f83ec6-d16c-e3e7-2d87-e7562510202c",
-  "name": "String",
-  "description": "String",
-  "lastModifiedDateTime": "String (timestamp)",
-  "state": "String",
-  "verifierDid": "String",
-  "priority": "Integer",
-  "verifiedIdProfileConfiguration": {
-    "@odata.type": "microsoft.graph.verifiedIdProfileConfiguration"
-  },
-  "faceCheckConfiguration": {
-    "@odata.type": "microsoft.graph.faceCheckConfiguration"
-  },
-  "verifiedIdUsageConfigurations": [
-    {
-      "@odata.type": "microsoft.graph.verifiedIdUsageConfiguration"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/verifiedId/profiles/$entity",
+    "id": "ca15ec56-7adf-42ee-847b-00c3008264fb",
+    "name": "Contoso Verified ID",
+    "description": "Contoso Verified ID",
+    "lastModifiedDateTime": null,
+    "state": "enabled",
+    "verifierDid": "did:web:eu.did-dev.contoso.io",
+    "priority": 0,
+    "verifiedIdProfileConfiguration": {
+        "type": "verifiedIdentity",
+        "acceptedIssuer": "did:web:eu.did-dev.contoso.io",
+        "claimBindingSource": "directory",
+        "claimBindings": [
+            {
+                "sourceAttribute": "First name",
+                "verifiedIdClaim": "vc.credentialSubject.firstName"
+            },
+            {
+                "sourceAttribute": "Last name",
+                "verifiedIdClaim": "vc.credentialSubject.lastName"
+            }
+        ]
+    },
+    "faceCheckConfiguration": {
+        "isEnabled": true,
+        "sourcePhotoClaimName": "portrait"
+    },
+    "verifiedIdUsageConfigurations": [
+        {
+            "isEnabledForTestOnly": true,
+            "purpose": "onboarding"
+        }
+    ]
 }
 ```
 

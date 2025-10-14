@@ -74,13 +74,17 @@ PATCH https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/auth
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.verifiableCredentialsAuthenticationMethodConfiguration",
-  "state": "String",
-  "excludeTargets": [
-    {
-      "@odata.type": "microsoft.graph.excludeTarget"
-    }
-  ]
+    "state": "disabled",
+    "excludeTargets": [
+        {
+            "id": "10051f25-53a8-4f81-8a0b-9fc22887e640",
+            "targetType": "group"
+        },
+        {
+            "id": "e2c2244f-66cc-4d5b-9042-686f9fa42986",
+            "targetType": "group"
+        }
+    ]
 }
 ```
 
@@ -94,19 +98,7 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.verifiableCredentialsAuthenticationMethodConfiguration",
-  "id": "2dbf6df8-4622-4fb9-8048-652a97eabfed",
-  "state": "String",
-  "excludeTargets": [
-    {
-      "@odata.type": "microsoft.graph.excludeTarget"
-    }
-  ]
-}
+```http
+HTTP/1.1 204 No Content
 ```
 

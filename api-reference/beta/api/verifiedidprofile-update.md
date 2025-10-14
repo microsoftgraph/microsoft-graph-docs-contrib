@@ -82,24 +82,14 @@ PATCH https://graph.microsoft.com/beta/identity/verifiedId/profiles/{verifiedIdP
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.verifiedIdProfile",
-  "name": "String",
-  "description": "String",
-  "state": "String",
-  "verifierDid": "String",
-  "priority": "Integer",
-  "verifiedIdProfileConfiguration": {
-    "@odata.type": "microsoft.graph.verifiedIdProfileConfiguration"
-  },
-  "faceCheckConfiguration": {
-    "@odata.type": "microsoft.graph.faceCheckConfiguration"
-  },
   "verifiedIdUsageConfigurations": [
-    {
-      "@odata.type": "microsoft.graph.verifiedIdUsageConfiguration"
-    }
+      {
+          "isEnabledForTestOnly": false,
+          "purpose": "recovery"
+      }
   ]
 }
+  
 ```
 
 
@@ -112,30 +102,7 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.verifiedIdProfile",
-  "id": "e3f83ec6-d16c-e3e7-2d87-e7562510202c",
-  "name": "String",
-  "description": "String",
-  "lastModifiedDateTime": "String (timestamp)",
-  "state": "String",
-  "verifierDid": "String",
-  "priority": "Integer",
-  "verifiedIdProfileConfiguration": {
-    "@odata.type": "microsoft.graph.verifiedIdProfileConfiguration"
-  },
-  "faceCheckConfiguration": {
-    "@odata.type": "microsoft.graph.faceCheckConfiguration"
-  },
-  "verifiedIdUsageConfigurations": [
-    {
-      "@odata.type": "microsoft.graph.verifiedIdUsageConfiguration"
-    }
-  ]
-}
+```http
+HTTP/1.1 204 No Content
 ```
 
