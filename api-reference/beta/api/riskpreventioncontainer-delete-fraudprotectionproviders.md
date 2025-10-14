@@ -56,6 +56,7 @@ If successful, this method returns a `204 No Content` response code.
 ### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_fraudprotectionprovider"
@@ -64,6 +65,12 @@ The following example shows a request.
 ``` http
 DELETE https://graph.microsoft.com/beta/identity/riskprevention/fraudprotectionproviders/d474f94f-0fcf-4224-a165-c1c5bad1600f
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-fraudprotectionprovider-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 
 ### Response
