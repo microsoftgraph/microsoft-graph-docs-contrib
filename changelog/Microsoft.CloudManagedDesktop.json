@@ -7753,6 +7753,38 @@
           "ChangeType": "Addition",
           "Description": "Added the [retrieveSnapshotImportResult](https://learn.microsoft.com/en-us/graph/api/cloudpcsnapshot-retrievesnapshotimportresult?view=graph-rest-beta) method to the [cloudPcSnapshot](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcsnapshot?view=graph-rest-beta) resource.",
           "Target": "cloudPcSnapshot"
+        },
+        {
+          "Id": "f119666c-de98-4ff4-95cc-831abb613a7a",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "cloudPcImportedSnapshotState",
+          "ChangeType": "Addition",
+          "Description": "Added the **cloudPcImportedSnapshotState** enumeration type.",
+          "Target": "cloudPcImportedSnapshotState"
+        },
+        {
+          "Id": "f119666c-de98-4ff4-95cc-831abb613a7a",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "cloudPcSnapshotImportActionStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **cloudPcSnapshotImportActionStatus** enumeration type.",
+          "Target": "cloudPcSnapshotImportActionStatus"
+        },
+        {
+          "Id": "f119666c-de98-4ff4-95cc-831abb613a7a",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "cloudPcSnapshotImportSourceType",
+          "ChangeType": "Addition",
+          "Description": "Added the **cloudPcSnapshotImportSourceType** enumeration type.",
+          "Target": "cloudPcSnapshotImportSourceType"
+        },
+        {
+          "Id": "f119666c-de98-4ff4-95cc-831abb613a7a",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "cloudPcSnapshotImportFileType",
+          "ChangeType": "Addition",
+          "Description": "Added the **cloudPcSnapshotImportFileType** enumeration type.",
+          "Target": "cloudPcSnapshotImportFileType"
         }
       ],
       "Id": "f119666c-de98-4ff4-95cc-831abb613a7a",
