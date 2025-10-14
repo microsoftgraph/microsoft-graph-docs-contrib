@@ -370,20 +370,6 @@ items:
         href: ../../api/auditlogroot-list-signups.md
       - name: Get
         href: ../../api/selfservicesignup-get.md
-    - name: Sign in
-      items:
-      - name: Sign in
-        href: ../../resources/signin.md
-      - name: List
-        href: ../../api/signin-list.md
-      - name: Get
-        href: ../../api/signin-get.md
-      - name: Confirm compromised
-        href: ../../api/signin-confirmcompromised.md
-      - name: Confirm safe
-        href: ../../api/signin-confirmsafe.md
-      - name: Dismiss
-        href: ../../api/signin-dismiss.md
     - name: Sign in events activity
       items:
       - name: Sign in events activity
@@ -396,6 +382,20 @@ items:
         href: ../../resources/signineventsappactivity.md
       - name: List
         href: ../../api/auditlogroot-list-signineventsappsummary.md
+    - name: Sign-in
+      items:
+      - name: Sign-in
+        href: ../../resources/signin.md
+      - name: List
+        href: ../../api/signin-list.md
+      - name: Get
+        href: ../../api/signin-get.md
+      - name: Confirm compromised
+        href: ../../api/signin-confirmcompromised.md
+      - name: Confirm safe
+        href: ../../api/signin-confirmsafe.md
+      - name: Dismiss
+        href: ../../api/signin-dismiss.md
     - name: Summarized sign in
       items:
       - name: Summarized sign in

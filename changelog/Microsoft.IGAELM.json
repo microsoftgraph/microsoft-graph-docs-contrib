@@ -838,6 +838,40 @@
       "WorkloadArea": "Identity and access",
       "SubArea": "Governance"
     },
+     {
+      "ChangeList": [
+        {
+          "Id": "78c826f9-c657-4977-b855-0b5f2ea3e7b3",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessPackageDynamicApprovalStage",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessPackageDynamicApprovalStage](https://learn.microsoft.com/en-us/graph/api/resources/accessPackageDynamicApprovalStage?view=graph-rest-1.0) resource.",
+          "Target": "accessPackageDynamicApprovalStage"
+        },
+        {
+          "Id": "78c826f9-c657-4977-b855-0b5f2ea3e7b3",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessPackageRequestApprovalStageCallbackConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessPackageRequestApprovalStageCallbackConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/accessPackageRequestApprovalStageCallbackConfiguration?view=graph-rest-1.0) resource.",
+          "Target": "accessPackageRequestApprovalStageCallbackConfiguration"
+        },
+        {
+          "Id": "78c826f9-c657-4977-b855-0b5f2ea3e7b3",
+          "ApiChange": "Resource",
+          "ChangedApiName": "assignmentRequestApprovalStageCallbackData",
+          "ChangeType": "Addition",
+          "Description": "Added the [assignmentRequestApprovalStageCallbackData](https://learn.microsoft.com/en-us/graph/api/resources/assignmentRequestApprovalStageCallbackData?view=graph-rest-1.0) resource.",
+          "Target": "assignmentRequestApprovalStageCallbackData"
+        }
+      ],
+      "Id": "78c826f9-c657-4977-b855-0b5f2ea3e7b3",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-10-01T17:39:48.4477395Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
     {
       "ChangeList": [
         {

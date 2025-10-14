@@ -7,7 +7,7 @@ ms.localizationpriority: high
 ms.topic: reference
 ms.subservice: entra-applications
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.date: 09/29/2025
+ms.date: 10/13/2025
 #Customer intent: As a developer, I want to learn more about the permissions available in Microsoft Graph, so that I understand the impact of granting specific permissions to my app.
 ---
 
@@ -5821,10 +5821,10 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 | Category | Application | Delegated |
 |--|--|--|
-| Identifier | abafe00f-ea87-4c63-b8a8-0e7bb0a88144 | - |
-| DisplayText | Access real-time enriched data in a meeting as an app | - |
-| Description | Allows the app to get direct access to real-time enriched data in a meeting, without a signed-in user. | - |
-| AdminConsentRequired | Yes | - |
+| Identifier | abafe00f-ea87-4c63-b8a8-0e7bb0a88144 | db5d5bae-0c9e-444e-9390-8a5fea98c253 |
+| DisplayText | Access real-time enriched data in a meeting as an app | Access real-time enriched data in a meeting |
+| Description | Allows the app to get direct access to real-time enriched data in a meeting, without a signed-in user. | Allows the app to get direct access to real-time enriched data in a meeting, on behalf of the signed-in user. |
+| AdminConsentRequired | Yes | Yes |
 
 ---
 
@@ -6398,6 +6398,28 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Identifier | af2bf46f-7bf1-4be3-8bad-e17e279e8462 | 818229ce-20e4-47bd-92f4-bc94dbb37a56 |
 | DisplayText | Read and perform all identity security available actions | Read and perform identity security available actions |
 | Description | Allows the app to read and write identity security available actions without a signed-in user. | Allows the app to read and write identity security available actions on behalf of the signed-in identity. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### SecurityIdentitiesAutoConfig.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 58971758-9844-4fe4-9fba-7e4ce7a659bf | 8ff90903-1ecb-4f3a-b8b2-42120374ecd6 |
+| DisplayText | Read sensors window auditing configuration | Read sensors window auditing configuration |
+| Description | Allows the app to read sensors window auditing configuration without a signed-in user | Allows the app to read the sensors window auditing configuration of the signed in user |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### SecurityIdentitiesAutoConfig.ReadWrite.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 4f1f0deb-08d1-4ffb-8cca-21dfc362b7c0 | b810fdb4-8733-43bd-9b37-fddb7215c69f |
+| DisplayText | Read and write sensors window auditing configuration | Read and write sensors window auditing configuration |
+| Description | Allows the app to read and write sensors window auditing configuration without a signed-in user | Allows the app to read and write the sensors window auditing configuration of the signed in user |
 | AdminConsentRequired | Yes | Yes |
 
 ---
@@ -8259,6 +8281,17 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Identifier | 280d0935-0796-47d1-8d26-273470a3f17a | 6166886a-9576-433b-8544-658177bdef1d |
 | DisplayText | Read and write all secondary mail addresses for users | Read and write secondary mail addresses for users |
 | Description | Allows the app to read and write secondary mail addresses for all users, without a signed-in user. | Allows the app to read and write secondary mail addresses for all users, on behalf of the signed-in user. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### User-OnPremisesSyncBehavior.ReadWrite.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | a94a502d-0281-4d15-8cd2-682ac9362c4c | 7ff9afdd-0cdb-439d-a61c-fea3e9339e89 |
+| DisplayText | Read and update the on-premises sync behavior of users | Read and update the on-premises sync behavior of users |
+| Description | Allows the app to update the on-premises sync behavior of all users without a signed-in user. | Allows the app to read and update the on-premises sync behavior of users on behalf of the signed-in user. |
 | AdminConsentRequired | Yes | Yes |
 
 ---

@@ -507,6 +507,7 @@
             "cloudPcCrossCloudGovernmentOrganizationMapping",
             "cloudPcDeviceImage",
             "cloudPcExternalPartnerSetting",
+            "cloudPcExternalPartner",
             "cloudPcFrontLineServicePlan",
             "cloudPcGalleryImage",
             "cloudPcOnPremisesConnection",
@@ -1017,23 +1018,33 @@
         "recycleBinItem",
         "sharedDriveItem",
         "sharePointGroup",
-        "sharePointGroupMember",
-        "sharePointMigrationEvent",
-        "sharePointMigrationFinishManifestFileUploadEvent",
-        "sharePointMigrationJob",
-        "sharePointMigrationJobCancelledEvent",
-        "sharePointMigrationJobDeletedEvent",
-        "sharePointMigrationJobErrorEvent",
-        "sharePointMigrationJobPostponedEvent",
-        "sharePointMigrationJobProgressEvent",
-        "sharePointMigrationJobQueuedEvent",
-        "sharePointMigrationJobStartEvent"
+        "sharePointGroupMember"
       ],
       "complexTypes": [
         "fileStorageContainerTypeRegistrationSettings",
         "fileStorageContainerTypeAgentSettings",
-        "fileStorageContainerTypeSettings",
-        "sharePointMigrationContainerInfo"
+        "fileStorageContainerTypeSettings"
+      ],
+      "childNodes": [
+        {
+          "name": "SharePoint migration (preview)",
+          "overview": "../../resources/sharepointmigration-api-overview.md",
+          "resources": [
+            "sharePointMigrationEvent",
+            "sharePointMigrationFinishManifestFileUploadEvent",
+            "sharePointMigrationJob",
+            "sharePointMigrationJobCancelledEvent",
+            "sharePointMigrationJobDeletedEvent",
+            "sharePointMigrationJobErrorEvent",
+            "sharePointMigrationJobPostponedEvent",
+            "sharePointMigrationJobProgressEvent",
+            "sharePointMigrationJobQueuedEvent",
+            "sharePointMigrationJobStartEvent"
+          ],
+          "complexTypes": [
+            "sharePointMigrationContainerInfo"
+          ]
+        }
       ]
     },
     {
@@ -1544,10 +1555,11 @@
                 "onAttributeCollectionSubmitListener",
                 "onAuthenticationMethodLoadStartListener",
                 "onEmailOtpSendListener",
+                "onFraudProtectionLoadStartListener"
                 "onInteractiveAuthFlowStartListener",
+                "onPhoneMethodLoadStartListener",
                 "onTokenIssuanceStartListener",
                 "onUserCreateStartListener",
-                "onPhoneMethodLoadStartListener"
               ]
             },
             {
@@ -1679,7 +1691,10 @@
                 "riskyUser",
                 "riskyUserHistoryItem",
                 "servicePrincipalRiskDetection",
-                "riskyServicePrincipal"
+                "riskyServicePrincipal",
+                "fraudProtectionProvider",
+                "arkoseFraudProtectionProvider",
+                "humanSecurityFraudProtectionProvider"
               ]
             },
             {
@@ -3107,6 +3122,9 @@
           "name": "Administration (preview)",
           "resources": [
             "microsoft.graph.teamsAdministration.numberAssignment",
+            "microsoft.graph.teamsAdministration.teamsUserConfiguration",
+            "microsoft.graph.teamsAdministration.telephoneNumberLongRunningOperation",
+            "microsoft.graph.teamsAdministration.telephoneNumberManagementRoot",
             "microsoft.graph.teamsAdministration.teamsPolicyAssignment",
             "microsoft.graph.teamsAdministration.teamsPolicyUserAssignment",
             "microsoft.graph.teamsAdministration.teamsUserConfiguration",
@@ -3519,3 +3537,4 @@
     }
   ]
 }
+
