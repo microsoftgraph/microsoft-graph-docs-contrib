@@ -4,7 +4,7 @@ description: "Contains information about a call event."
 author: "awang119"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
-ms.date: 12/03/2024
+ms.date: 10/14/2025
 doc_type: resourcePageType
 ---
 
@@ -52,4 +52,4 @@ The following JSON representation shows the resource type.
 
 ## Related content
 
-[Change notification for active meeting call events](/graph/changenotifications-for-onlinemeeting).
+- [Change notification for active meeting call events](/graph/changenotifications-for-onlinemeeting)
