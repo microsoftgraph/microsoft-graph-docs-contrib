@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Verified ID profiles defining set of properties and usage patterns. 
 
 
 Inherits from [entity](../resources/entity.md).

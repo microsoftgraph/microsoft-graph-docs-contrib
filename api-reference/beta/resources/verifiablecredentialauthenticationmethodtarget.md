@@ -19,16 +19,6 @@ A collection of groups that are enabled to use a Verifiable Credential authentic
 
 Inherits from [authenticationMethodTarget](../resources/authenticationmethodtarget.md).
 
-
-## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List](../api/verifiablecredentialsauthenticationmethodconfiguration-list-includetargets.md)|[verifiableCredentialAuthenticationMethodTarget](../resources/verifiablecredentialauthenticationmethodtarget.md) collection|Get a list of the verifiableCredentialAuthenticationMethodTarget objects and their properties.|
-|[Create](../api/verifiablecredentialsauthenticationmethodconfiguration-post-includetargets.md)|[verifiableCredentialAuthenticationMethodTarget](../resources/verifiablecredentialauthenticationmethodtarget.md)|Create a new verifiableCredentialAuthenticationMethodTarget object.|
-|[Get](../api/verifiablecredentialauthenticationmethodtarget-get.md)|[verifiableCredentialAuthenticationMethodTarget](../resources/verifiablecredentialauthenticationmethodtarget.md)|Read the properties and relationships of [verifiableCredentialAuthenticationMethodTarget](../resources/verifiablecredentialauthenticationmethodtarget.md) object.|
-|[Update](../api/verifiablecredentialauthenticationmethodtarget-update.md)|[verifiableCredentialAuthenticationMethodTarget](../resources/verifiablecredentialauthenticationmethodtarget.md)|Update the properties of a verifiableCredentialAuthenticationMethodTarget object.|
-|[Delete](../api/verifiablecredentialsauthenticationmethodconfiguration-delete-includetargets.md)|None|Delete a verifiableCredentialAuthenticationMethodTarget object.|
-
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
