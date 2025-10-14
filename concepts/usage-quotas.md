@@ -21,7 +21,7 @@ Some areas of Microsoft Graph enforce usage quotas. Usage quotas apply at the te
 
 ### Time window
 
-Usage quotas are calculated based on a 24-hour window of usage. When the quota is consumed, Microsoft Graph returns `HTTP 429` error codes for subsequent requests. 1/24th of the quota will be available, and API requests will be unblocked after no more than 1 hour.
+Usage quotas are calculated based on a sliding 24-hour window of usage. When the quota is exhausted, Microsoft Graph returns `HTTP 429` error codes for subsequent requests. After no more than 1 hour, up to 1/24th of the quota will be recovered. Making additional API requests while quota is exhausted and the APIs are returning `HTTP 429` responses will continue to consume quota and may result in less than 1/24th being available after the hour has elapsed. The 1 hour enforcement begins when the quota is initially exhausted, so applications may see different `retry-after` values based on when they make requests after the enforcement begins.
 
 ### Service areas
 
@@ -44,7 +44,7 @@ Qualifying licenses are the licenses that enable the associated functionality fo
 
 The following table lists the quota values for each service area.
 
-| Service Area  | API Requests per user license |
+| Service Area  | API requests per user license |
 | :------------ | :------------------------ |
 | Microsoft Exchange | 2000 API requests / day |
 | Microsoft Teams Calling | 30 API requests / day |
@@ -60,7 +60,7 @@ Users with the Global Reader or a higher privileged admin role can utilize the M
 Microsoft 365 APIs Extended Usage allows you to exceed the daily usage quota by paying for the costs associated with more API usage. You can enable Microsoft 365 APIs Extended Usage in the Microsoft 365 admin center.
 The following table lists the current charges for each service area.
 
-| Service Area | Cost per 1,000 Requests |
+| Service Area | Cost per 1,000 requests |
 | :------------ | :------------------------ |
 | Microsoft Exchange | $0.002 (USD) |
 | Microsoft Teams Calling | $0.05 (USD) |
