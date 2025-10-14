@@ -965,6 +965,8 @@ items:
         href: ../../api/intune-apps-win32lobapp-delete.md
       - name: Update win32LobApp
         href: ../../api/intune-apps-win32lobapp-update.md
+      - name: enableApplicableArchitectures action
+        href: ../../api/intune-apps-win32lobapp-enableapplicablearchitectures.md
     - name: Windows AppX
       items:
       - name: Windows AppX
@@ -1229,6 +1231,8 @@ items:
         href: ../../api/intune-enrollment-windowsautopilotdeviceidentity-unassignuserfromdevice.md
       - name: updateDeviceProperties action
         href: ../../api/intune-enrollment-windowsautopilotdeviceidentity-updatedeviceproperties.md
+      - name: deleteDevices action
+        href: ../../api/intune-enrollment-windowsautopilotdeviceidentity-deletedevices.md
     - name: Complex types
       items:
       - name: Imported Windows Autopilot device identity state
