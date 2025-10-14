@@ -151,7 +151,7 @@ The following example shows the response with Cloudflare WAF object.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.fraudProtectionProvider"
+  "@odata.type": "microsoft.graph.cloudFlareWebApplicationFirewallProvider"
 }
 -->
 ``` http
