@@ -60,6 +60,7 @@ The following example shows how to get a list of the speaker assignment submissi
 
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_speakerAssignmentSubmissions_1"
@@ -68,6 +69,12 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/v1.0/education/reports/speakerAssignmentSubmissions
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-speakerassignmentsubmissions-1-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 The following example shows the default response from the last 24 hours.
@@ -162,6 +169,7 @@ The following example shows how to get a list of the speaker assignment submissi
 
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_speakerAssignmentSubmissions_2"
@@ -170,6 +178,12 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/v1.0/education/reports/speakerAssignmentSubmissions?$filter=submissionDateTime gt 2025-05-28T00:00:00Z and submissionDateTime lt 2025-05-29T00:00:00Z
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-speakerassignmentsubmissions-2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 

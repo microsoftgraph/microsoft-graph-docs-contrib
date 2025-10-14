@@ -16,15 +16,13 @@ Namespace: microsoft.graph.teamsAdministration
 
 Assign a Teams [policy](../resources/teamsadministration-teamspolicyuserassignment.md) to a user using the user ID, policy type, and policy ID.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "teamsadministration-teamspolicyuserassignment-assign-permissions"
-}
--->
+<!-- { "blockType": "permissions", "name": "teamsadministration_teamspolicyuserassignment_assign" } -->
 [!INCLUDE [permissions-table](../includes/permissions/teamsadministration-teamspolicyuserassignment-assign-permissions.md)]
 
 ## HTTP request
@@ -63,6 +61,7 @@ If successful, this action returns a `204 No Content` response code.
 ### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "teamspolicyuserassignmentthis.assign"
@@ -83,6 +82,12 @@ Content-Type: application/json
   ]
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/teamspolicyuserassignmentthisassign-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 

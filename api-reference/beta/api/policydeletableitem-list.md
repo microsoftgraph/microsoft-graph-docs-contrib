@@ -1,8 +1,8 @@
-﻿---
+---
 title: "List policyDeletableItem objects"
 description: "Get a list of the policyDeletableItem objects and their properties."
 author: "ashyasingh"
-ms.date: 08/11/2025
+ms.date: 10/07/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
@@ -26,14 +26,33 @@ Get a list of the [policyDeletableItem](../resources/policydeletableitem.md) obj
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
+### Permissions for retrieving cross-tenant access policy objects
+
 <!-- {
   "blockType": "permissions",
   "name": "policydeletableitem-list-permissions",
-  "requestUrls" : ["GET /policies/deletedItems/crossTenantPartners", "GET /policies/deletedItems/crossTenantSyncPolicyPartners"], 
-  "mergePermissions": true
+  "requestUrls": ["GET /policies/deletedItems/crossTenantPartners", "GET /policies/deletedItems/crossTenantSyncPolicyPartners"],
+  "mergePermissions": true 
+  
 }
 -->
 [!INCLUDE [permissions-table](../includes/permissions/policydeletableitem-list-permissions.md)]
+
+[!INCLUDE [rbac-xtap-apis-read](../includes/rbac-for-apis/rbac-xtap-apis-read.md)]
+
+### Permissions for retrieving conditional access policy objects
+
+<!-- {
+  "blockType": "permissions",
+  "name": "policydeletableitem-list-permissions",
+  "requestUrls": ["GET /identity/conditionalAccess/deletedItems/policies", "GET /identity/conditionalAccess/deletedItems/namedLocations"],
+  "mergePermissions": true
+
+}
+-->
+[!INCLUDE [permissions-table](../includes/permissions/policydeletableitem-list-2-permissions.md)]
+
+[!INCLUDE [rbac-conditionalaccess-apis-read](../includes/rbac-for-apis/rbac-conditionalaccess-apis-read.md)]
 
 ## HTTP request
 
@@ -43,7 +62,7 @@ List deleted **crossTenantAccessPolicyConfigurationPartner** objects:
 }
 -->
 ```HTTP
-GET /policies/deletedItems/crossTenantPartners/
+GET /policies/deletedItems/crossTenantPartners
 ```
 
 List deleted **crossTenantIdentitySyncPolicyPartner** objects:
@@ -52,7 +71,7 @@ List deleted **crossTenantIdentitySyncPolicyPartner** objects:
 }
 -->
 ```HTTP
-GET /policies/deletedItems/crossTenantSyncPolicyPartners/
+GET /policies/deletedItems/crossTenantSyncPolicyPartners
 ```
 
 List deleted **conditionalAccessPolicy** objects:
@@ -284,6 +303,7 @@ Content-Type: application/json
 #### Request
 
 The following example shows a request for a conditionalAccessPolicy.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_policydeletableitem_conditionalAccessPolicy"
@@ -293,6 +313,31 @@ The following example shows a request for a conditionalAccessPolicy.
 GET https://graph.microsoft.com/beta/identity/conditionalAccess/deletedItems/policies
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-policydeletableitem-conditionalaccesspolicy-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-policydeletableitem-conditionalaccesspolicy-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-policydeletableitem-conditionalaccesspolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-policydeletableitem-conditionalaccesspolicy-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/list-policydeletableitem-conditionalaccesspolicy-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-policydeletableitem-conditionalaccesspolicy-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
@@ -386,6 +431,7 @@ Content-Type: application/json
 #### Request
 
 The following example shows a request for a namedLocation.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_policydeletableitem_namedLocation"
@@ -395,6 +441,31 @@ The following example shows a request for a namedLocation.
 GET https://graph.microsoft.com/beta/identity/conditionalAccess/deletedItems/namedLocations
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-policydeletableitem-namedlocation-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-policydeletableitem-namedlocation-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-policydeletableitem-namedlocation-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-policydeletableitem-namedlocation-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/list-policydeletableitem-namedlocation-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-policydeletableitem-namedlocation-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
