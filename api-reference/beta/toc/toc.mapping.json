@@ -5,7 +5,8 @@
       "overview": "../../resources/users.md",
       "resources": [
         "user",
-        "invitation"
+        "invitation",
+        "onPremisesSyncBehavior"
       ]
     },
     {
@@ -13,7 +14,8 @@
       "overview": "../../resources/groups-overview.md",
       "resources": [
         "group",
-        "groupLifecyclePolicy"
+        "groupLifecyclePolicy",
+        "onPremisesSyncBehavior"
       ]
     },
     {
@@ -1142,6 +1144,12 @@
               "resources": [
                 "companySubscription",
                 "subscribedSku"
+              ]
+            },
+            {
+              "name": "Org Contact",
+              "resources": [
+                "onPremisesSyncBehavior"
               ]
             },
             {
