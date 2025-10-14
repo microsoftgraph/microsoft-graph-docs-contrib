@@ -21,7 +21,7 @@ Some areas of Microsoft Graph enforce usage quotas. Usage quotas apply at the te
 
 ### Time window
 
-Usage quotas are calculated based on a sliding 24-hour window of usage. When the quota is exhausted, Microsoft Graph returns `HTTP 429` error codes for subsequent requests. After no more than 1 hour, up to 1/24th of the quota will be recovered. Making additional API requests while quota is exhausted and the APIs are returning `HTTP 429` responses will continue to consume quota and may result in less than 1/24th being available after the hour has elapsed. The 1 hour enforcement begins when the quota is initially exhausted, so applications may see different `retry-after` values based on when they make requests after the enforcement begins.
+Usage quotas are calculated based on a sliding 24-hour window of usage. When the quota is exhausted, Microsoft Graph returns `HTTP 429` error codes for subsequent requests. After no more than 1 hour, up to 1/24th of the quota will be recovered. Making more API requests while quota is exhausted and the APIs are returning `HTTP 429` responses will continue to consume quota and may result in less than 1/24th being available after the hour elapses. The 1 hour enforcement begins when the quota is initially exhausted, so applications may see different `retry-after` values based on when they make requests after the enforcement begins.
 
 ### Service areas
 
