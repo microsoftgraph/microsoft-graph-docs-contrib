@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /sites/getOperationStatus(operationId='{siteOperation-id}')
+GET /sites/getOperationStatus(operationId='{siteOperationId}')
 ```
 
 ## Optional query parameters
@@ -76,7 +76,6 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/beta/sites/getOperationStatus(operationId='JXMnaHR0cHMlM0ElMkYlMkZncmFwaC5taWNyb3NvZnQuY29tJTJGc2l0ZXMlMkZ0ZWFtc2l0ZTE=')
 ```
-
 
 ### Response
 
