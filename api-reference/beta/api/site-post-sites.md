@@ -53,12 +53,12 @@ You can specify the following properties when you create a **site**.
 |Property|Type|Description|
 |:---|:---|:---|
 |description|String| The descriptive text for the site. Inherited from [baseItem](../resources/baseitem.md).|
-|locale|String|Defines the language and format in which the notification will be sent.|
-|name|String|The name/title of the item. Inherited from [baseItem](../resources/baseitem.md). Optional.|
+|locale|String|Defines the language and format in which the notification is sent.|
+|name|String|The name or title of the item. Inherited from [baseItem](../resources/baseitem.md). Optional.|
 |ownerIdentityToResolve|[identityInput](../resources/identityinput.md)|To be used as an input for resolving Identities at the time of creation. Optional.|
-|shareByEmailEnabled|Boolean|Determines if site and its content can be shared via email Optional.|
-|template|siteTemplateType|Determines the template that is applied on the site. The possible values are: `sitepagepublishing`, `group`, `sts`, `unknownFutureValue`. Optional.|
-|webUrl|String|URL that either displays the resource in the browser (for Office file formats), or is a direct link to the file (for other formats) Inherited from [baseItem](../resources/baseitem.md). Optional.|
+|shareByEmailEnabled|Boolean|Determines whether the site and its content can be shared via email. Optional.|
+|template|siteTemplateType|Specifies the template applied to the site. The possible values are: `sitepagepublishing`, `group`, `sts`, `unknownFutureValue`. Optional.|
+|webUrl|String|URL that displays the resource in the browser (for Office file formats), or provides a direct link to the file (for other formats). Inherited from [baseItem](../resources/baseitem.md). Optional.|
 
 ## Response
 

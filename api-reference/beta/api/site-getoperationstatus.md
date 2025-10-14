@@ -37,7 +37,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 GET /sites/getOperationStatus(operationId={siteOperation-id})
 ```
 ## Optional query parameters
-This method supports the $filter and $select OData query parameters to help customize the response.
+This method supports the `$filter` and `$select` [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Function parameters
 
@@ -45,7 +45,7 @@ In the request URL, provide the following query parameters with values.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|operationId|Guid| GUID of the operation for which the the site creation operation is done. Required.
+|operationId|Guid| The GUID of the operation for which the the site creation operation is done. Required.
 
 ## Request headers
 
@@ -73,7 +73,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/sites/getOperationStatus(operationId=\'JXMnaHR0cHMlM0ElMkYlMkZncmFwaC5taWNyb3NvZnQuY29tJTJGc2l0ZXMlMkZ0ZWFtc2l0ZTE=\')
+GET https://graph.microsoft.com/beta/sites/getOperationStatus(operationId='JXMnaHR0cHMlM0ElMkYlMkZncmFwaC5taWNyb3NvZnQuY29tJTJGc2l0ZXMlMkZ0ZWFtc2l0ZTE=')
 ```
 
 
