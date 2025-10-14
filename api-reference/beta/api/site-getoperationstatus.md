@@ -1,6 +1,6 @@
 ---
 title: "site: getOperationStatus"
-description: "Get the status of a site creation operation to monitor its progress."
+description: "Get the status of a SharePoint site creation operation to monitor its progress."
 author: "spgraph-docs-team"
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the status of a [site](../resources/site.md) creation operation to monitor its progress.
+Get the status of a SharePoint [site](../resources/site.md) creation operation to monitor its progress.
 
 ## Permissions
 
@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /sites/getOperationStatus(operationId='{siteOperation-id}')
+GET /sites/getOperationStatus(operationId='{siteOperationId}')
 ```
 
 ## Optional query parameters
@@ -76,7 +76,6 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/beta/sites/getOperationStatus(operationId=\'JXMnaHR0cHMlM0ElMkYlMkZncmFwaC5taWNyb3NvZnQuY29tJTJGc2l0ZXMlMkZ0ZWFtc2l0ZTE=\')
 ```
-
 
 ### Response
 

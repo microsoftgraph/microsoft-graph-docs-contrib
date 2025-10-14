@@ -8,11 +8,11 @@ items:
   items:
   - name: Site
     href: ../../resources/site.md
-  - name: Create site
+  - name: Create
     href: ../../api/site-post-sites.md
-  - name: Get root site
+  - name: Get
     href: ../../api/site-get.md
-  - name: Get site
+  - name: Get root site
     href: ../../api/site-get.md
   - name: Get site by path
     href: ../../api/site-getbypath.md
@@ -462,3 +462,7 @@ items:
       href: ../../api/termstore-term-list-relations.md
     - name: Create
       href: ../../api/termstore-relation-post.md
+- name: Complex types
+  items:
+  - name: Identity input
+    href: ../../resources/identityinput.md

@@ -1,6 +1,6 @@
 ---
 title: "identityInput resource type"
-description: "Represents a person, group, or other recipient to be used as an input to resolve identities during creation."
+description: "Represents a person, group, or other recipient used as input to resolve identities during creation."
 author: "spgraph-docs-team"
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a person, group, or other recipient to be used as an input to resolve identities during creation.
+Represents a person, group, or other recipient used as input to resolve identities during creation.
 
 ## Properties
 
@@ -22,7 +22,7 @@ Represents a person, group, or other recipient to be used as an input to resolve
 |:---|:---|:---|
 |alias|String|The alias of the identity.|
 |email|String|The email of the identity.|
-|objectId|String|AAD Object ID of the identity.|
+|objectId|String|The unique object ID assigned to the identity in Microsoft Entra ID.|
 
 ## Relationships
 
