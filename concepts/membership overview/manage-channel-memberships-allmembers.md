@@ -48,7 +48,8 @@ See [List allMembers](channel-list-allmembers.md) to learn more on the permissio
 
 ## Set up notifications for channel membership changes
 
-Create a subscription on /teams/{team-id}/channels/getAllMembers to set up a notification for changes in channel membership, such as users joining or leaving a particular channel.
+Create a subscription on /teams/{team-id}/channels/getAllMembers to set up a notification for changes in channel membership, such as users joining or leaving a particular channel. For more information on channel membership notifications, see [Get change notifications for membership changes in channels using Microsoft Graph](../teams-changenotifications-channelmembership.md).
+
 The subscription endpoints for retrieving channel members, based on channel type and membership scope are tabulated as follows:
 
 |**Channel Type** |**Membership Scope**  |**Subscribe To**  |
