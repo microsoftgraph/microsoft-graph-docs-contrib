@@ -20,10 +20,11 @@ For a recording, this API returns the metadata of the single recording associate
 
 > [!NOTE]
 > For ad hoc calls:
-> New permissions (parallel to `OnlineMeetings`) are required.<br>
-> Subscribe to two separate, appropriately scoped resources (one for `onlineMeetings` and other for `adhocCalls`). These resources supply the URLs to use for fetching the data.<br>
-> Subscribe to [notifications](/graph/teams-changenotifications-callrecording-and-calltranscript) to get access to the call ID.<br>
-> To obtain the call ID while the call is still ongoing, have the app get called through [App-hosted/service-hosted Calls](/graph/api/resources/call?view=graph-rest-1.0&preserve-view=true) and use the `callChainId`.
+>
+> - New permissions (parallel to `OnlineMeetings`) are required.
+> - Subscribe to two separate, appropriately scoped resources (one for `onlineMeetings` and other for `adhocCalls`). These resources supply the URLs to use for fetching the data.
+> - Subscribe to [notifications](/graph/teams-changenotifications-callrecording-and-calltranscript) to get access to the call ID.
+> - To obtain the call ID while the call is still ongoing, have the app get called through [App-hosted/service-hosted Calls](/graph/api/resources/call?view=graph-rest-1.0&preserve-view=true) and use the `callChainId`.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
