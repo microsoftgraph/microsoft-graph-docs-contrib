@@ -73,6 +73,30 @@
           "ChangeType": "Addition",
           "Description": "Added the [filterByCurrentUser](https://learn.microsoft.com/en-us/graph/api/accessPackageSuggestion-filterByCurrentUser?view=graph-rest-beta) method to the [accessPackageSuggestion](https://learn.microsoft.com/en-us/graph/api/resources/accessPackageSuggestion?view=graph-rest-beta) resource.",
           "Target": "accessPackageSuggestion"
+        },
+        {
+          "Id": "750da746-1999-4d5e-b536-21aa47e93207",
+          "ApiChange": "Property",
+          "ChangedApiName": "isApproverInformationVisible",
+          "ChangeType": "Addition",
+          "Description": "Added the **isApproverInformationVisible** property to the [approvalStage](https://learn.microsoft.com/en-us/graph/api/resources/approvalStage?view=graph-rest-beta) resource.",
+          "Target": "approvalStage"
+        },
+        {
+          "Id": "750da746-1999-4d5e-b536-21aa47e93207",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "isApproverInformationVisible",
+          "ChangeType": "Addition",
+          "Description": "Added the **isApproverInformationVisible** enumeration type.",
+          "Target": "isApproverInformationVisible"
+        },
+        {
+          "Id": "750da746-1999-4d5e-b536-21aa47e93207",
+          "ApiChange": "Property",
+          "ChangedApiName": "isApproverInformationVisible",
+          "ChangeType": "Addition",
+          "Description": "Added the **isApproverInformationVisible** property to the [accessPackageApprovalStage](https://learn.microsoft.com/en-us/graph/api/resources/accessPackageApprovalStage?view=graph-rest-beta) resource.",
+          "Target": "accessPackageApprovalStage"
         }
       ],
       "Id": "65c74f1f-0a09-4a59-902f-982163c355f3",
