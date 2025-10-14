@@ -71,9 +71,13 @@ Use a method in the [Methods](#methods) section to get the corresponding report 
 
 ### cloudPcRecommendationReportType values
 
+>[!CAUTION]
+> The `cloudPcUsageCategoryReports` value is deprecated and will stop being supported on July 01, 2025. Going forward, use `cloudPcUsageCategoryReport`.
+
 | Member                        | Description       |
 | :---------------------------- | :---------------- |
-| cloudPcUsageCategoryReports   | Indicates the report that shows the usage of Cloud PCs along with their associated categories. The possible report columns for these categories are `Undersized`, `Oversized`, `Rightsized`, or `Underutilized` based on usage.|
+| cloudPcUsageCategoryReports   | **Deprecated**. Indicates the report that shows the usage of Cloud PCs along with their associated categories. The possible report columns for these categories are `Undersized`, `Oversized`, `Rightsized`, or `Underutilized` based on usage. This value is deprecated and will be removed on July 01, 2025. Use `cloudPcUsageCategoryReport` with the [cloudPcReport](cloudpcreport.md) resource instead.|
+| cloudPcUsageCategoryReport    | Indicates the report that shows the usage of Cloud PCs along with their associated categories. The possible report columns for these categories are `Undersized`, `Oversized`, `Rightsized`, or `Underutilized` based on usage.|
 | unknownFutureValue            | Evolvable enumeration sentinel value. Don't use.|
 
 ## Relationships
