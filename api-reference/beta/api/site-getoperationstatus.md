@@ -1,6 +1,6 @@
 ---
 title: "site: getOperationStatus"
-description: "Get the status of a site creation operation to monitor its progress."
+description: "Get the status of a SharePoint site creation operation to monitor its progress."
 author: "spgraph-docs-team"
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the status of a [site](../resources/site.md) creation operation to monitor its progress.
+Get the status of a SharePoint [site](../resources/site.md) creation operation to monitor its progress.
 
 ## Permissions
 
