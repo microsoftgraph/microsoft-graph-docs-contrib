@@ -58,7 +58,7 @@ You can specify the following properties when creating a **webApplicationFirewal
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|The display name of this WAF provider configuration. Supported for all providers. Required. Inherited from [webApplicationFirewallProvider](../resources/fraudprotectionprovider.md).|
+|displayName|String|The display name of this WAF provider configuration. Supported for all providers. Required. Inherited from [webApplicationFirewallProvider](../resources/webapplicationfirewallprovider.md).|
 |accessToken|String|Akamai API access token used to authenticate to the Akamai account. Contact your Akamai Customer Success Manager for assistance with your acessToken. Supported for Akamai only. Required.|
 |clientSecret|String|Akamai API client secret used in conjunction with the client token and access token for authentication. Contact your Akamai Customer Success Manager for assistance with this information. Supported for Akamai only. Required.|
 |clientToken|String|Akamai API client token used for authentication to the Akamai account. Contact your Akamai Customer Success Manager for assistance with this information. Supported for Akamai only. Required.|
