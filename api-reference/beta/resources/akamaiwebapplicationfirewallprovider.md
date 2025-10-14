@@ -27,7 +27,7 @@ For the list of API operations for managing this resource type, see the [webAppl
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|accessToken|String|Akamai API access token used to authenticate to the Akamai account. Contact your Akamai Customer Success Manager for assistance with your acessToken.|
+|accessToken|String|Akamai API access token used to authenticate to the Akamai account. Contact your Akamai Customer Success Manager for assistance with your accessToken.|
 |clientSecret|String|Akamai API client secret used in conjunction with the client token and access token for authentication. Contact your Akamai Customer Success Manager for assistance with this information.|
 |clientToken|String|Akamai API client token used for authentication to the Akamai account. Contact your Akamai Customer Success Manager for assistance with this information.|
 |displayName|String|The friendly display name of the Akamai provider configuration. Inherited from [webApplicationFirewallProvider](../resources/webapplicationfirewallprovider.md).|
