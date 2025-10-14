@@ -94,15 +94,15 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 | eTag                 | string             | ETag for the item. Read-only.                                                                  |
 | id                   | string             | The [unique identifier](#id-property) of the item. Read-only.                                  |
 | lastModifiedDateTime | DateTimeOffset     | The date and time the item was last modified. Read-only.                                       |
-| name                 | string             | The name/title of the item.                                                                  |
 | locale               | string             | The language settings of the site.                                                             |
+| name                 | string             | The name/title of the item.                                                                  |
 | ownerIdentityToResolve|[identityInput](../resources/identityinput.md)|The site owner to be provided at the time of site creation only.|
 | root                 | [root][]           | If present, provides the root site in the site collection. Read-only.            |
 | settings             | [siteSettings]     | The settings on this site. Read-only.                                |
-| shareByEmailEnabled  | Boolean            | Determines if the site and its content can be shared via email. |
+| shareByEmailEnabled  | Boolean            | Determines whether the site and its content can be shared via email. |
 | sharepointIds        | [sharepointIds][]  | Returns identifiers useful for SharePoint REST compatibility. Read-only.                       |
 | siteCollection       | [siteCollection][] | Provides details about the site's site collection. Available only on the root site. Read-only. |
-| template             | siteTemplateType   | Determines the template that is applied to the site. The possible values are: `sitepagepublishing`, `group`, `sts`, `unknownFutureValue`.|
+| template             | siteTemplateType   | Specifies the template applied to the site. The possible values are: `sitepagepublishing`, `group`, `sts`, `unknownFutureValue`.|
 | webUrl               | string (url)       | URL that displays the item in the browser. Read-only.                                          |
 
 ### id property
@@ -191,7 +191,7 @@ The **site** resource is derived from [**baseItem**](baseitem.md) and inherits p
   "shareByEmailEnabled": "Boolean",
   "sharepointIds": { "@odata.type": "microsoft.graph.sharepointIds" },
   "siteCollection": {"@odata.type": "microsoft.graph.siteCollection"},
-   "template": "String",
+  "template": "String",
 
   /* relationships */
   "analytics": { "@odata.type": "microsoft.graph.itemAnalytics" },
