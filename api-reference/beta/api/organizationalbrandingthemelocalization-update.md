@@ -2,7 +2,7 @@
 title: "Update organizationalBrandingThemeLocalization"
 description: "Update the properties of an organizationalBrandingThemeLocalization object."
 author: "AlexanderMars"
-ms.date: 10/13/2025
+ms.date: 10/14/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
@@ -54,23 +54,23 @@ PUT /organization/{organizationId}/branding/themes/{organizationalBrandingThemeI
 |:---|:---|:---|
 |locale|String|An identifier that represents the locale specified using culture names. Culture names follow the RFC 1766 standard in the format "languagecode2-country/regioncode2". The portion "languagecode2" is a lowercase two-letter code derived from ISO 639-1 and "country/regioncode2" is an uppercase two-letter code derived from ISO 3166. For example, U.S. English is `en-US`. You can't create the default branding by setting the value of **locale** to the String types `0` or `default`.  <br/><br/>**NOTE:** Multiple branding for a single locale are currently not supported.|
 |accountResetCredentials|[loginPageBrandingVisualElement](../resources/loginpagebrandingvisualelement.md)|Represents "Can't access your account?" and "Reset it now" hyperlinks of self-service password reset (SSPR) that can be customized on the sign-in page for a theme. A destination URL can be updated. Optional.|
-|backgroundImage|Stream|**TODO: Add Description** Optional.|
-|backgroundImageRelativeUrl|String|**TODO: Add Description** Optional.|
-|bannerLogo|Stream|**TODO: Add Description** Optional.|
-|bannerLogoRelativeUrl|String|**TODO: Add Description** Optional.|
+|backgroundImage|Stream|Image that appears as the background of the sign-in page. The allowed types are PNG or JPEG not smaller than 300 KB and not larger than 1920 × 1080 pixels. A smaller image will reduce bandwidth requirements and make the page load faster. Optional.|
+|backgroundImageRelativeUrl|String|A relative url for the backgroundImage property that is combined with a CDN base URL from the cdnList to provide the version served by a CDN. Read-only. Optional.|
+|bannerLogo|Stream|A banner version of your company logo that appears on the sign-in page. The allowed types are PNG or JPEG not larger than 245 x 36 pixels. We recommend using a transparent image with no padding around the logo. Optional.|
+|bannerLogoRelativeUrl|String|A relative url for the bannerLogo property that is combined with a CDN base URL from the cdnList to provide the version served by a CDN. Read-only. Optional.|
 |cannotAccessYourAccount|[loginPageBrandingVisualElement](../resources/loginpagebrandingvisualelement.md)|Represents "Can't access your account?" hyperlink of self-service password reset (SSPR) that can be customized on the sign-in page for a theme. A display text can be updated. Optional.|
-|cdnHosts|String collection|**TODO: Add Description** Optional.|
-|contentCustomization|[contentCustomization](../resources/contentcustomization.md)|**TODO: Add Description** Optional.|
-|customCSS|Stream|**TODO: Add Description** Optional.|
-|customCSSRelativeUrl|String|**TODO: Add Description** Optional.|
-|favicon|Stream|**TODO: Add Description** Optional.|
-|faviconRelativeUrl|String|**TODO: Add Description** Optional.|
-|forgotMyPassword|[loginPageBrandingVisualElement](../resources/loginpagebrandingvisualelement.md)|**TODO: Add Description** Optional.|
-|headerBackgroundColor|String|**TODO: Add Description** Optional.|
-|headerLogo|Stream|**TODO: Add Description** Optional.|
-|headerLogoRelativeUrl|String|**TODO: Add Description** Optional.|
-|loginPageLayoutConfiguration|[loginPageLayoutConfiguration](../resources/loginpagelayoutconfiguration.md)|**TODO: Add Description** Optional.|
-|pageBackgroundColor|String|**TODO: Add Description** Optional.|
+|cdnHosts|String collection|A list of available CDN base urls that are serving the assets of the current resource. There are several CDNs used to provide redundancy hence eliminating Single Point of Failure for blob properties of this resource. Read-only. Optional.|
+|contentCustomization|[contentCustomization](../resources/contentcustomization.md)|Represents the various content options to be customized throughout the authentication flow for a tenant. <br/><br/>**NOTE:** Supported by Microsoft Entra ID for customers tenants only. Optional.|
+|customCSS|Stream|CSS styling that appears on the sign-in page. The allowed format is .css format only and not larger than 25KB. Optional.|
+|customCSSRelativeUrl|String|A relative url for the customCSS property that is combined with a CDN base URL from the cdnList to provide the version served by a CDN. Read-only. Optional.|
+|favicon|Stream|A custom icon (favicon) to replace a default Microsoft product favicon on a Microsoft Entra tenant. Optional.|
+|faviconRelativeUrl|String|A relative url for the favicon property that is combined with a CDN base URL from the cdnList to provide the version served by a CDN. Read-only. Optional.|
+|forgotMyPassword|[loginPageBrandingVisualElement](../resources/loginpagebrandingvisualelement.md)|Represents "Forgot my password" hyperlink of self-service password reset (SSPR) that can be customized on the sign-in page for a theme. A display text can be updated. Optional.|
+|headerBackgroundColor|String|The RGB color to apply to customize the color of the header. Optional.|
+|headerLogo|Stream|A company logo that appears in the header of the sign-in page. The allowed types are PNG or JPEG not larger than 245 x 36 pixels. We recommend using a transparent image with no padding around the logo. Optional.|
+|headerLogoRelativeUrl|String|A relative url for the headerLogo property that is combined with a CDN base URL from the cdnList to provide the version served by a CDN. Read-only. Optional.|
+|loginPageLayoutConfiguration|[loginPageLayoutConfiguration](../resources/loginpagelayoutconfiguration.md)|Represents the layout configuration to be displayed on the login page for a tenant. Optional.|
+|pageBackgroundColor|String|Color that appears in place of the background image in low-bandwidth connections. We recommend that you use the primary color of your banner logo or your organization color. Specify this in hexadecimal format, for example, white is `#FFFFFF`. Optional.|
 |privacyAndCookies|[loginPageBrandingVisualElement](../resources/loginpagebrandingvisualelement.md)|Represents "Privacy & cookies" hyperlink in the footer of sign-in page that can be customized for a theme. A destination URL and a display text can be updated. Optional.|
 |resetItNow|[loginPageBrandingVisualElement](../resources/loginpagebrandingvisualelement.md)|Represents "Reset it now" hyperlink of self-service password reset (SSPR) that can be customized on the sign-in page for a theme. A display text can be updated. Optional.|
 |signInPageText|String|Text that appears at the bottom of the sign-in box. Use this to communicate additional information, such as the phone number to your help desk or a legal statement. This text must be in Unicode format and not exceed 1024 characters. Optional.|
