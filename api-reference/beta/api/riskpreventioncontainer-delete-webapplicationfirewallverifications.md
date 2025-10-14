@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-DELETE /identity/riskPrevention/webApplicationFirewallVerifications/{webApplicationFirewallVerificationModelId}/$ref
+DELETE /identity/riskPrevention/webApplicationFirewallVerifications/{webApplicationFirewallVerificationModelId}
 ```
 
 ## Request headers
