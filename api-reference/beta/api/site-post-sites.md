@@ -58,7 +58,7 @@ You can specify the following properties when you create a **site**.
 |ownerIdentityToResolve|[identityInput](../resources/identityinput.md)|To be used as an input for resolving Identities at the time of creation. Optional.|
 |shareByEmailEnabled|Boolean|Determines whether the site and its content can be shared via email. Optional.|
 |template|siteTemplateType|Specifies the template applied to the site. The possible values are: `sitepagepublishing`, `group`, `sts`, `unknownFutureValue`. Optional.|
-|webUrl|String|URL that displays the resource in the browser (for Office file formats), or provides a direct link to the file (for other formats). Inherited from [baseItem](../resources/baseitem.md). Optional.|
+|webUrl|String|The URL for the site that displays the resource in the browser (for Office file formats), or provides a direct link to the file (for other formats). Inherited from [baseItem](../resources/baseitem.md). Optional.|
 
 ## Response
 
@@ -85,7 +85,7 @@ Content-Type: application/json
   "locale": "en-US",
   "shareByEmailEnabled": false,
   "description": "Test Site Description",
-  "template": "SitePublishing",
+  "template": "sitepagepublishing",
   "ownerIdentityToResolve": {
     "email": "ryan@contoso.com"
   }
@@ -102,5 +102,5 @@ The following example shows the response.
 }-->
 ``` http
 HTTP/1.1 202 Accepted
-Location: https://graph.microsoft.com/beta/sites/getOperationStatus(operationId='JXMnaHR0cHMlM0ElMkYlMkZncmFwaC5taWNyb3NvZnQuY29tJTJGc2l0ZXMlMkZ0ZWFtc2l0ZTE=')
+Location: https://graph.microsoft.com/beta/sites/getOperationStatus(operationId=\'JXMnaHR0cHMlM0ElMkYlMkZncmFwaC5taWNyb3NvZnQuY29tJTJGc2l0ZXMlMkZ0ZWFtc2l0ZTE=\')
 ```

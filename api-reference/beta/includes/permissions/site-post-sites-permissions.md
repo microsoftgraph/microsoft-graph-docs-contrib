@@ -6,6 +6,6 @@ ms.localizationpriority: medium
 
 |Permission type|Least privileged permission|Higher privileged permissions|
 |:---|:---|:---|
-|Delegated (work or school account)|Sites.Create.All| Sites.FullControl|
+|Delegated (work or school account)|Sites.Create.All| Sites.FullControl.All|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|Sites.Create.All| Sites.FullControl|
+|Application|Sites.Create.All| Sites.FullControl.All|
