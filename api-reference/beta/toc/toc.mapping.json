@@ -1556,11 +1556,11 @@
                 "onAttributeCollectionSubmitListener",
                 "onAuthenticationMethodLoadStartListener",
                 "onEmailOtpSendListener",
-                "onFraudProtectionLoadStartListener"
+                "onFraudProtectionLoadStartListener",
                 "onInteractiveAuthFlowStartListener",
                 "onPhoneMethodLoadStartListener",
                 "onTokenIssuanceStartListener",
-                "onUserCreateStartListener",
+                "onUserCreateStartListener"
               ]
             },
             {
