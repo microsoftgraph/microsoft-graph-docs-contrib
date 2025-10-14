@@ -212,9 +212,7 @@ The decrypted notification payload looks like the following. The payload conform
 {
    "@microsoft.graph.originalSourceMembershipUrl": "tenants/('10eda0c8-cb50-4390-8751-488c29218b02')teams('1b031a07-f3ad-47bf-a629-81c96ebaad6f')/members/('MCMjMSMjMjQzMmI1N2ItMGFiZC00M2RiLWFhN2ItMTZlYWRkMTE1ZDM0IyMxYjAzMWEwNy1mM2FkLTQ3YmYtYTYyOS04MWM5NmViYWFkNmYjIzEyNzNhMDE2LTIwMWQtNGY5NS04MDgzLTFiN2Y5OWIzZWRlYg==')",
   "id": "MCMjMyMjMjQzMmI1N2ItMGFiZC00M2RiLWFhN2ItMTZlYWRkMTE1ZDM0IyMxOTpsUlpITDVWd3ZaczBYTjJvclRuN0RsaW5KREVUa2dTVlRIWGJETFVFS2YwMUB0aHJlYWQudGFjdjIjIzU5YjViYzY5LWNhNzMtNGZmZC1hMmUwLTg4YTc5MTE1ZDEzYg==",
-  "roles": [
-    "owner"
-  ],
+  "roles": [],
   "displayName": "Test user",
   "userId": "8b081ef6-4792-4def-b2c9-c363a1bf41d5",
   "email": null,
