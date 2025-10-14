@@ -21,7 +21,7 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 | Method                                            | REST Path                                                   |
 | :------------------------------------------------ | :---------------------------------------------------------- |
 | [Create](../api/site-post-sites.md)               | POST /sites                                                 |
-| [Get][]                                           | GET /sites/{site-id}                                        |
+| [Get](../api/site-get.md)                         | GET /sites/{site-id}                                        |
 | [Get root site][]                                 | GET /sites/root                                             |
 | [Get site by path][]                              | GET /sites/{hostname}:/{site-path}                          |
 | [Get site for a group][]                          | GET /groups/{group-id}/sites/root                           |
@@ -58,7 +58,6 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 | [Update open extension](../api/opentypeextension-update.md)                         | PATCH /sites/{site-id}/extensions                        |
 | [Delete open extension](../api/opentypeextension-delete.md)                         | DELETE /sites/{site-id}/extensions                       |
 
-[Get site]: ../api/site-get.md
 [Get root site]: ../api/site-get.md
 [Get site by path]: ../api/site-getbypath.md
 [Get site for a group]: ../api/site-get.md
