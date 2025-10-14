@@ -34,8 +34,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /sites/getOperationStatus(operationId={siteOperation-id})
+GET /sites/getOperationStatus(operationId='{siteOperation-id}')
 ```
+
 ## Optional query parameters
 This method supports the `$filter` and `$select` [OData query parameters](/graph/query-parameters) to help customize the response.
 
@@ -45,7 +46,7 @@ In the request URL, provide the following query parameters with values.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|operationId|Guid| The GUID of the operation for which the the site creation operation is done. Required.
+|operationId|Guid| The GUID of the operation for which the site creation is performed. Required.|
 
 ## Request headers
 
