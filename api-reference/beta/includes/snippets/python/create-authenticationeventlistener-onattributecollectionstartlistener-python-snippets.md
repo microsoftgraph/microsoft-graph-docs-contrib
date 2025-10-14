@@ -21,7 +21,7 @@ request_body = OnAttributeCollectionStartListener(
 			include_all_applications = False,
 			include_applications = [
 				AuthenticationConditionApplication(
-					app_id = "a7eed01f-a333-4983-bc6b-d359ec9e5eef",
+					app_id = "0001111-aaaa-2222-bbbb-3333cccc4444",
 				),
 			],
 		),

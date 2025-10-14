@@ -53,6 +53,16 @@ The map APIs in Places enable applications with appropriate read or write permis
 
 Detailed descriptions of each type are available in their respective documentation sections. 
 
+### Prerequisites for Places list and descendant APIs
+
+Before you can use the [List place objects](../api/place-list.md) or [place: descendants](../api/place-descendants.md) APIs, you must ensure that Places settings are properly configured in your Microsoft 365 environment; otherwise, these APIs do not return any places unless the following setup steps are completed:
+
+1. Download and connect to the *MicrosoftPlaces* PowerShell module. For more information, see [Connect-MicrosoftPlaces](/microsoft-365/places/powershell/connect-microsoftplaces).
+2. Make places visible by enabling buildings with the following command. For more information, see [Set-PlacesSettings](/microsoft-365/places/powershell/set-placessettings#-enablebuildings).
+    ```PowerShell
+    Set-PlacesSettings -EnableBuildings 'Default:true'
+    ```
+
 ## Common use cases
 
 The following table lists some of the common uses for the Places API.

@@ -79,7 +79,6 @@ GET https://graph.microsoft.com/beta/auditLogs/signInEventsSummary
 
 ---
 
-
 ### Response
 
 The following example shows the response.
