@@ -78,3 +78,15 @@ The following JSON representation shows the resource type.
   "additionalDetail": "String"
 }
 ```
+
+<!--
+{
+  "type": "#page.annotation",
+  "description": "cloudPcSnapshotImportActionResult resource",
+  "namespace": "microsoft.graph.cloudPcSnapshotImportActionResult"
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": []
+}
+-->

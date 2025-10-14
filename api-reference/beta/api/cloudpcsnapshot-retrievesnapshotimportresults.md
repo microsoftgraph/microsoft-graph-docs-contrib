@@ -5,6 +5,7 @@ author: "hyc3z"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: apiPageType
+toc.title: Retrieve imported CloudPC Snapshots
 ms.date: 10/10/2025
 ---
 
@@ -19,7 +20,7 @@ Retrieve the result and status of the snapshot importing action.
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 <!-- { "blockType": "permissions", "name": "cloudpcsnapshot_getsubscriptions" } -->
-[!INCLUDE [permissions-table](../includes/permissions/cloudpcsnapshot-getsubscriptions-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/cloudpcsnapshot-retrievesnapshotimportresults-permissions.md)]
 
 ## HTTP request
 

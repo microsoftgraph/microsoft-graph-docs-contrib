@@ -362,12 +362,6 @@ items:
       href: ../../resources/cloudpcsnapshot.md
     - name: Retrieve snapshots
       href: ../../api/cloudpc-retrievesnapshots.md
-    - name: Import snapshot
-      href: ../../api/cloudpcsnapshot-importsnapshot.md
-    - name: Purge imported snapshots
-      href: ../../api/cloudpcsnapshot-purgeimportedsnapshot.md
-    - name: Retrieve snapshots
-      href: ../../api/cloudpcsnapshot-retrievesnapshotimportresults.md
   - name: Cloud PC supported region
     items:
     - name: Cloud PC supported region
@@ -573,12 +567,6 @@ items:
       href: ../../resources/cloudpcstatussummary.md
     - name: Cloud PC subscription
       href: ../../resources/cloudpcsubscription.md
-    - name: Cloud PC snapshot import action detail
-      href: ../../resources/cloudpcsnapshotimportactiondetail.md
-    - name: Cloud PC snapshot import action result
-      href: ../../resources/cloudpcsnapshotimportactionresult.md
-    - name: Cloud PC storage blob detail
-      href: ../../resources/cloudpcstorageblobdetail.md
     - name: Cloud PC supported region restriction detail
       href: ../../resources/cloudpcsupportedregionrestrictiondetail.md
     - name: Cloud PC user role scope tag info

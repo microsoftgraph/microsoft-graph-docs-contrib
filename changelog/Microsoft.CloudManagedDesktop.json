@@ -7708,6 +7708,30 @@
        "ChangeList": [
         {
           "Id": "f119666c-de98-4ff4-95cc-831abb613a7a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cloudPcSnapshotImportActionResult",
+          "ChangeType": "Addition",
+          "Description": "Added the [cloudPcSnapshotImportActionResult](https://learn.microsoft.com/en-us/graph/resources/cloudpcsnapshotimportactionresult?view=graph-rest-beta) resource.",
+          "Target": "cloudPcSnapshotImportActionResult"
+        },
+        {
+          "Id": "f119666c-de98-4ff4-95cc-831abb613a7a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cloudPcSnapshotImportActionDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the [cloudPcSnapshotImportActionDetail](https://learn.microsoft.com/en-us/graph/resources/cloudpcsnapshotimportactiondetail?view=graph-rest-beta) resource.",
+          "Target": "cloudPcSnapshotImportActionDetail"
+        },
+        {
+          "Id": "f119666c-de98-4ff4-95cc-831abb613a7a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cloudPcStorageBlobDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the [cloudPcSnapshotImportActionDetail](https://learn.microsoft.com/en-us/graph/resources/cloudpcstorageblobdetail?view=graph-rest-beta) resource.",
+          "Target": "cloudPcStorageBlobDetail"
+        },
+        {
+          "Id": "f119666c-de98-4ff4-95cc-831abb613a7a",
           "ApiChange": "Method",
           "ChangedApiName": "importSnapshot",
           "ChangeType": "Addition",

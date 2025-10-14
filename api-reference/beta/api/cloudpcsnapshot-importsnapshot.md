@@ -5,6 +5,7 @@ author: "hyc3z"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: apiPageType
+toc.title: Import CloudPC Snapshot
 ms.date: 10/10/2025
 ---
 
@@ -13,21 +14,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Import the snapshot from customer customer-managed storage account for the given information, and store it in the Azure storage account in Cloud PC service on behalf of customers. The imported snapshot can be used to provision a new Cloud PC for a specified user with a license assigned.
-
-For each user, there's only one imported snapshot allowed to prevent conflict. Implicit overwrite for snapshots is unsafe, so if a user is already assigned a snapshot, use `purgeImportedSnapshot` API to delete the previous one and redo the import.
-
-Imported snapshots can be checked through `GET /snapshots/listSnapshotImportResults` API. These don't appear along with background taken snapshot lists presented in `GET /snapshots/` API, which is targeted for recovery and restore usage.
-
-Imported snapshots should also be valid `.vhd` (Virtual Hard Disk) format files, either stored in Azure storage blob or provided by a shared access signature URL. Windows 365 service stores these files and hosts them on behalf of the user for Cloud PC provision use.
-
-Windows 365 administrators need to prepare the Provisioning Policy and assign it to users as a requirement for snapshot import.
+To provision a new Cloud PC for a licensed user, import a valid .vhd snapshot from a customer-managed storage account into the Azure storage account used by the Cloud PC service. 
 
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 <!-- { "blockType": "permissions", "name": "cloudpcsnapshot_getsubscriptions" } -->
-[!INCLUDE [permissions-table](../includes/permissions/cloudpcsnapshot-getsubscriptions-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/cloudpcsnapshot-importsnapshot-permissions.md)]
 
 ## HTTP request
 

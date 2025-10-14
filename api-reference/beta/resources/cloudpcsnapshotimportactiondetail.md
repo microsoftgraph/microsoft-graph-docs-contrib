@@ -62,3 +62,15 @@ The following JSON representation shows the resource type.
   "storageBlobInfo": "#microsoft.graph.cloudPcStorageBlobDetail"
 }
 ```
+
+<!--
+{
+  "type": "#page.annotation",
+  "description": "cloudPcSnapshotImportActionDetail resource",
+  "namespace": "microsoft.graph.cloudPcSnapshotImportActionDetail"
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": []
+}
+-->
