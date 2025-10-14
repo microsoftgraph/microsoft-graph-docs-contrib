@@ -49,4 +49,4 @@ The following JSON representation shows the resource type.
 
 ## Related content
 
-[Change notification for active meeting call events](/graph/changenotifications-for-onlinemeeting).
+- [Change notification for active meeting call events](/graph/changenotifications-for-onlinemeeting)
