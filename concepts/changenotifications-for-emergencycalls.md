@@ -28,7 +28,7 @@ Microsoft Teams supports notifications for emergency calls. These notifications 
 |:---------------------------------------|:---------------------------------------------------------|:-------------------|
 | Delegated (work or school account)     | Not supported.                                           | Not supported.     |
 | Delegated (personal Microsoft account) | Not supported.                                           | Not supported.     |
-| Application                            | CallEvents-Emergency.Read.All                            | v1.0, beta.        |
+| Application                            | CallEvents-Emergency.Read.All                            | beta, v1.0        |
 
 ## Subscribe to emergency call started events
 
