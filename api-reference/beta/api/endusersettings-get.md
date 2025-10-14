@@ -84,5 +84,6 @@ Content-type: application/json
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/entitlementManagement/controlConfigurations/endUserSettings",
   "accessPackageRelatedPeopleInsightLevel": "countAndNames",
+  "showApproverDetailsToMembers": true
 }
 ```

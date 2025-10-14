@@ -28,6 +28,7 @@ Represents settings that control the end user experience for access package sugg
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |accessPackageRelatedPeopleInsightLevel|accessPackageSuggestionRelatedPeopleInsightLevel|The level of related people insights to show in access package suggestions. The possible values are: `disabled`, `count`, `countAndNames`, `unknownFutureValue`.|
+|showApproverDetailsToMembers|Boolean|Indicates whether approver details are shown to end users. When `true`, approver information is visible to members.|
 
 ## Relationships
 
@@ -48,7 +49,8 @@ The following JSON representation shows the resource type.
 
 ```json
 {
-  "accessPackageRelatedPeopleInsightLevel": "String"
+  "accessPackageRelatedPeopleInsightLevel": "String",
+  "showApproverDetailsToMembers": true
 }
 ```
 
