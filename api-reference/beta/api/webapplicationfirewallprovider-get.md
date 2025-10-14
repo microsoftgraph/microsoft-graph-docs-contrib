@@ -66,18 +66,18 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identity/riskPrevention/webApplicationFirewallProviders/{webApplicationFirewallProviderId}
+GET https://graph.microsoft.com/beta/identity/riskPrevention/webApplicationFirewallProviders/0bb2618b-51f7-4e83-bcb8-84e70f7cf84d
 ```
 
 
 ### Response
 
-The following example shows the response.
+The following example shows the response with Cloudflare.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.webApplicationFirewallProvider"
+  "@odata.type": "microsoft.graph.cloudFlareWebApplicationFirewallProvider"
 }
 -->
 ``` http
@@ -85,11 +85,31 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.webApplicationFirewallProvider",
-    "id": "4d8ac75a-e882-18c6-8ad4-2ab20c742e52",
-    "displayName": "String"
-  }
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/riskPrevention/webApplicationFirewallProviders/$entity",
+    "@odata.type": "#microsoft.graph.cloudFlareWebApplicationFirewallProvider",
+    "id": "0bb2618b-51f7-4e83-bcb8-84e70f7cf84d",
+    "displayName": "Cloudflare Provider Example",
+    "zoneId": "11111111111111111111111111111111"
 }
 ```
 
+The following example shows the response with Akamai.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.fraudProtectionProvider"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/riskPrevention/fraudProtectionProviders/$entity",
+    "@odata.type": "#microsoft.graph.akamaiWebApplicationFirewallProvider",
+    "id": "0bb2618b-51f7-4e83-bcb8-84e70f7cf84d",
+    "displayName": "Akamai Provider Example",
+    "hostPrefix: "11111111111111111111111111111111""
+}
+```

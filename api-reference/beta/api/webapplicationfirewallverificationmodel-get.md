@@ -39,7 +39,7 @@ GET /identity/riskPrevention/webApplicationFirewallVerifications/{webApplication
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports some of the OData query parameters, including `$expand` to include related resources. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -56,6 +56,8 @@ Don't supply a request body for this method.
 If successful, this method returns a `200 OK` response code and a [webApplicationFirewallVerificationModel](../resources/webapplicationfirewallverificationmodel.md) object in the response body.
 
 ## Examples
+
+### Example 1: Retrieve a specific webApplicationFirewallVerifications object.
 
 ### Request
 
@@ -96,6 +98,58 @@ Content-Type: application/json
     "verifiedDetails": {
       "@odata.type": "microsoft.graph.webApplicationFirewallVerifiedDetails"
     }
+  }
+}
+```
+
+### Example 2: Retrieve a specific webApplicationFirewallVerifications object along with the details of their associated provider.
+
+### Request
+
+The following example shows a request.
+<!-- {
+  "blockType": "request",
+  "name": "get_webapplicationfirewallverificationmodel"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/identity/riskPrevention/webApplicationFirewallVerifications/{webApplicationFirewallVerificationModelId}?$expand=provider
+```
+
+
+### Response
+
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.webApplicationFirewallVerificationModel"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "value": {
+    "@odata.type": "#microsoft.graph.webApplicationFirewallVerificationModel",
+    "id": "415614ba-471d-daa2-daef-7f89ec73d34c",
+    "verifiedHost": "String",
+    "providerType": "String",
+    "verificationResult": {
+      "@odata.type": "microsoft.graph.webApplicationFirewallVerificationResult"
+    },
+    "verifiedDetails": {
+      "@odata.type": "microsoft.graph.webApplicationFirewallVerifiedDetails"
+    },
+    "provider@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/riskPrevention/webApplicationFirewallVerifications('00000000-0000-0000-0000-000000000000')/webApplicationFirewallProviders",
+      "provider": {
+          "@odata.type": "#microsoft.graph.cloudFlareWebApplicationFirewallProvider",
+          "id": "55555555-5555-5555-5555-555555555555",
+          "displayName": "CloudFlare Provider Example",
+          "zoneId": "11111111111111111111111111111111"
+      }
   }
 }
 ```

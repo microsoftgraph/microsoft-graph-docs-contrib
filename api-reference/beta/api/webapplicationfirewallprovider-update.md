@@ -74,7 +74,7 @@ PATCH https://graph.microsoft.com/beta/identity/riskPrevention/webApplicationFir
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.webApplicationFirewallProvider",
+  "@odata.type": "#microsoft.graph.cloudFlareWebApplicationFirewallProvider",
   "displayName": "String"
 }
 ```
@@ -94,7 +94,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.webApplicationFirewallProvider",
+  "@odata.type": "#microsoft.graph.cloudFlareWebApplicationFirewallProvider",
   "id": "4d8ac75a-e882-18c6-8ad4-2ab20c742e52",
   "displayName": "String"
 }

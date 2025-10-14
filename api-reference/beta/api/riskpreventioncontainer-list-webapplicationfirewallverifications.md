@@ -39,7 +39,7 @@ GET /identity/riskPrevention/webApplicationFirewallVerifications
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports some of the OData query parameters, including `$expand` to include related resources. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -56,6 +56,8 @@ Don't supply a request body for this method.
 If successful, this method returns a `200 OK` response code and a collection of [webApplicationFirewallVerificationModel](../resources/webapplicationfirewallverificationmodel.md) objects in the response body.
 
 ## Examples
+
+### Example 1: Retrieve all webApplicationFirewallVerifications.
 
 ### Request
 
@@ -128,6 +130,84 @@ Content-Type: application/json
                     }
                 ]
             },
+        }
+    ]
+}
+```
+
+### Example 2: Retrieve all webApplicationFirewallVerifications along with the details of their associated provider.
+
+### Request
+
+The following example shows a request.
+<!-- {
+  "blockType": "request",
+  "name": "list_webapplicationfirewallverificationmodel"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/identity/riskPrevention/webApplicationFirewallVerifications?$expand=provider
+```
+
+
+### Response
+
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.webApplicationFirewallVerificationModel"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/riskPrevention/webApplicationFirewallVerifications(provider())",
+    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET identity/riskPrevention/webApplicationFirewallVerifications?$select=providerType,verificationResult",
+    "value": [
+        {
+            "id": "00000000-0000-0000-0000-000000000000",
+            "verifiedHost": "www.contoso.com",
+            "providerType": "cloudflare",
+            "verificationResult": {
+                "status": "success",
+                "verifiedOnDateTime": "2025-10-04T00:50:26.4909654Z",
+                "errors": [],
+                "warnings": []
+            },
+            "verifiedDetails": {
+                "@odata.type": "#microsoft.graph.cloudFlareVerifiedDetailsModel",
+                "zoneId": "11111111111111111111111111111111",
+                "dnsConfiguration": {
+                    "name": "www.contoso.com",
+                    "isProxied": true,
+                    "recordType": "cname",
+                    "value": "contoso.azurefd.net",
+                    "isDomainVerified": true
+                },
+                "enabledRecommendedRulesets": [
+                    {
+                        "rulesetId": "22222222222222222222222222222222",
+                        "name": "CloudFlare Managed Ruleset",
+                        "phaseName": "http_request_firewall_managed"
+                    }
+                ],
+                "enabledCustomRules": [
+                    {
+                        "ruleId": "33333333333333333333333333333333",
+                        "name": "Block SQL Injection",
+                        "action": "block"
+                    },
+                    {
+                        "ruleId": "44444444444444444444444444444444",
+                        "name": "Block XSS",
+                        "action": "block"
+                    }
+                ]
+            },
             "provider@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/riskPrevention/webApplicationFirewallVerifications('00000000-0000-0000-0000-000000000000')/webApplicationFirewallProviders",
             "provider": {
                 "@odata.type": "#microsoft.graph.cloudFlareWebApplicationFirewallProvider",
@@ -139,4 +219,3 @@ Content-Type: application/json
     ]
 }
 ```
-
