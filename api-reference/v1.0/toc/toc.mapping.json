@@ -520,7 +520,9 @@
         "educationSubmission",
         "educationSubmissionResource",
         "readingAssignmentSubmission",
-        "reflectCheckInResponse"
+        "readingCoachPassage",
+        "reflectCheckInResponse",
+        "speakerAssignmentSubmission"
       ],
       "complexTypes": [
         "challengingWord",
@@ -573,6 +575,9 @@
           "resources": [
             "community",
             "engagementAsyncOperation"
+          ],
+          "complexTypes": [
+            "engagementIdentitySet"
           ]
         }
       ]
@@ -1889,6 +1894,16 @@
                 "participant",
                 "addLargeGalleryViewOperation"
               ]
+            },            
+            {
+              "name": "Call events",
+              "resources": [
+                "callEvent",
+                "emergencyCallEvent"
+              ],
+              "complexTypes": [
+                "emergencyCallerInfo"
+              ]
             },
             {
               "name": "Call records",
@@ -1910,6 +1925,7 @@
                 "meetingAttendanceReport",
                 "attendanceRecord",
                 "onlineMeeting",
+                "onlineMeetingEngagementConversation",
                 "callRecording",
                 "callTranscript"
               ],
@@ -2151,3 +2167,5 @@
     }
   ]
 }
+
+

@@ -1,0 +1,62 @@
+---
+title: "Manage presence state using the Microsoft Graph API"
+description: "Learn how to manage presence states and sessions using the Microsoft Graph API."
+author: "garchiro7"
+ms.localizationpriority: medium
+ms.subservice: "cloud-communications"
+ms.date: 09/15/2025
+ms.topic: article
+---
+
+# Manage presence state using the Microsoft Graph API
+
+Microsoft Graph API enables applications to manage user presence states across multiple sessions, ensuring accurate and dynamic availability updates.
+
+## Presence sessions
+
+A user can have multiple presence sessions because the user can be on multiple Teams clients (desktop, mobile, and web). Each Teams client has an independent presence session and the user's presence is an aggregated state from all the sessions behind.
+
+Similarly, an application can have its own presence session for a user and be able to update the state.
+
+The following precedence is used for how session states are aggregated, with "A > B" representing that A has precedence over B:
+* User-preferred state > session-level states (user-preferred state overrides session-level states)
+* Among session-level states: DoNotDisturb > Busy > Available > Away
+
+> **Note:** When a user presence changes in Microsoft Graph, because the Teams client uses poll mode, it takes a few minutes to update the presence status.
+
+## Presence states permutations
+
+| Teams state              | Graph availability / activity            |
+| ------------------------ | ---------------------------------------- |
+| Available                | `available/available`                  |
+| Available, out of office | `available / outOfOffice`                |
+| Busy                     | `busy/busy`                            |
+| In a call                | `busy / inACall`                         |
+| In a meeting             | `busy / inAMeeting`                      |
+| In a call, out of office | `busy / inACall + OOF`                   |
+| Do not disturb           | `doNotDisturb / doNotDisturb`            |
+| Presenting               | `doNotDisturb / presenting`              |
+| Away                     | `away / away`                            |
+| Be right back            | `beRightBack / beRightBack`              |
+| Appear offline           | `offline / offWork`                      |
+| Out of office            | `outOfOffice`                            |
+
+> [!NOTE]
+> 
+> The [setPresence](/graph/api/presence-setpresence) method doesn't support setting the presence states **Out of office (OOF)** or **In a meeting** directly. These states are automatically managed based on calendar events and mailbox configurations, and attempting to set them via the [setPresence](/graph/api/presence-setpresence) method has no effect.
+>
+> To reflect **"Out of office"** in presence, use the [events API](/graph/api/resources/event) by setting the **showAs** property of a calendar event to `oof`, or configure the user's autoreply settings using [mailboxSettings](/graph/api/resources/mailboxsettings).
+>
+> The **"In a meeting"** state is automatically reflected during scheduled calendar meeting events and doesn't require manual presence updates.
+
+## Timeout, expiration, and keep alive
+
+A presence session might **time out** and **expire**, so the application needs to call the [presence: setPresence](/graph/api/presence-setpresence) API before the **timeout**, to maintain the state for the session; or before the **expiration**, to keep the session alive.
+
+A presence session can time out if the availability is `Available` and the timeout is five minutes. When it times out, the presence state fades in stages. For example, if an application sets the presence session as `Available/Available`, the state would change to `Available/AvailableInactive` in five minutes with the first timeout, then `Away/Away` in another five minutes with the second timeout.
+
+Use `expirationDuration` to configure the expiration of a presence session; otherwise, the default expiration is five minutes. Valid values range from five minutes to four hours, after which the session becomes `Offline`.
+
+## Trusted domains for cross-tenant presence visibility and interaction
+
+Configure **external access** in the Teams admin center, so that only the intended partner organizations can *see and act on presence* for your users. In the Teams admin center (**Users > External access**), allow all domains or add specific domains to the **Allow** list under **Meetings and chat with trusted Microsoft 365 organizations**. Users in those trusted organizations are able to view user presence. Cross-tenant presence requires **mutual trust**, and the partner must also allow your domain. Domains that aren’t trusted (or are blocked) can't see presence or be able to initiate presence-driven interactions. For more information, see [Specify trusted Microsoft 365 organizations](/microsoftteams/trusted-organizations-external-meetings-chat?tabs=organization-settings#specify-trusted-microsoft-365-organizations).

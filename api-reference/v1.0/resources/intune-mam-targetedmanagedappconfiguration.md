@@ -5,7 +5,7 @@ author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
-ms.date: 09/13/2024
+ms.date: 08/01/2024
 ---
 
 # targetedManagedAppConfiguration resource type
@@ -27,8 +27,8 @@ Inherits from [managedAppConfiguration](../resources/intune-mam-managedappconfig
 |[Create targetedManagedAppConfiguration](../api/intune-mam-targetedmanagedappconfiguration-create.md)|[targetedManagedAppConfiguration](../resources/intune-mam-targetedmanagedappconfiguration.md)|Create a new [targetedManagedAppConfiguration](../resources/intune-mam-targetedmanagedappconfiguration.md) object.|
 |[Delete targetedManagedAppConfiguration](../api/intune-mam-targetedmanagedappconfiguration-delete.md)|None|Deletes a [targetedManagedAppConfiguration](../resources/intune-mam-targetedmanagedappconfiguration.md).|
 |[Update targetedManagedAppConfiguration](../api/intune-mam-targetedmanagedappconfiguration-update.md)|[targetedManagedAppConfiguration](../resources/intune-mam-targetedmanagedappconfiguration.md)|Update the properties of a [targetedManagedAppConfiguration](../resources/intune-mam-targetedmanagedappconfiguration.md) object.|
-|[assign action](../api/intune-mam-targetedmanagedappconfiguration-assign.md)|None|Not yet documented|
-|[targetApps action](../api/intune-mam-targetedmanagedappconfiguration-targetapps.md)|None|Not yet documented|
+|[assign action](../api/intune-mam-targetedmanagedappconfiguration-assign.md)|None||
+|[targetApps action](../api/intune-mam-targetedmanagedappconfiguration-targetapps.md)|None||
 
 ## Properties
 |Property|Type|Description|

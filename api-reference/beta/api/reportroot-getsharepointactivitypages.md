@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Get the number of unique pages visited by users.
 
-> **Note:** For details about different report views and names, see [Microsoft 365 reports - SharePoint activity](https://support.office.com/client/SharePoint-activity-a91c958f-1279-499d-9959-12f0de08dc8f).
+> **Note:** For details about different report views and names, see [Microsoft 365 reports - SharePoint activity](/microsoft-365/admin/activity-reports/sharepoint-activity-ww).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
