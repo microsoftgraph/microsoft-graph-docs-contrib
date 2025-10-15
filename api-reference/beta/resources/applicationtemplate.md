@@ -33,10 +33,14 @@ Represents an application in the [Microsoft Entra application gallery](/azure/ac
 |configurationUris|[configurationUri](../resources/configurationuri.md) collection|The URIs required for the single sign-on configuration of a preintegrated application.|
 |description|String|A description of the application.|
 |displayName|String|The name of the application.|
+|endpoints|String collection|A collection of string URLs representing various API endpoints available on learn.microsoft.com.|
 |homePageUrl|String|The home page URL of the application.|
 |id|String| Unique identifier for the application. Read-only.|
+|lastModifiedDateTime|DateTimeOffset|The date and time when the data or resource was last updated, in DateTimeOffset format.|
 |logoUrl|String|The URL to get the logo for this application.|
 |publisher|String|The name of the publisher for this application.|
+|riskFactors|[applicationRiskFactors](../resources/applicationriskfactors.md)|General business and operational information about the application provider|
+|riskScore|[applicationRiskScore](../resources/applicationriskscore.md)|Represents the numerical risk score assessment for an application|
 |supportedProvisioningTypes|String collection|The list of provisioning modes supported by this application. The only valid value is `sync`.|
 |supportedSingleSignOnModes|String collection|The list of single sign-on modes supported by this application. The supported values are `oidc`, `password`, `saml`, and `notSupported`.|
 
@@ -59,16 +63,43 @@ The following JSON representation shows the resource type.
 
 ```json
 {
-  "categories": ["String"],
-  "configurationUris": [{"@odata.type": "microsoft.graph.configurationUri"}],
-  "description": "String",
+  "@odata.type": "#microsoft.graph.applicationTemplate",
+  "id": "String (identifier)",
   "displayName": "String",
   "homePageUrl": "String",
-  "id": "String (identifier)",
+  "supportedSingleSignOnModes": [
+    "String"
+  ],
+  "supportedProvisioningTypes": [
+    "String"
+  ],
   "logoUrl": "String",
+  "categories": [
+    "String"
+  ],
   "publisher": "String",
-  "supportedProvisioningTypes": ["String"],
-  "supportedSingleSignOnModes": ["String"]
+  "description": "String",
+  "informationalUrls": {
+    "@odata.type": "microsoft.graph.informationalUrls"
+  },
+  "supportedClaimConfiguration": {
+    "@odata.type": "microsoft.graph.supportedClaimConfiguration"
+  },
+  "configurationUris": [
+    {
+      "@odata.type": "microsoft.graph.configurationUri"
+    }
+  ],
+  "riskScore": {
+    "@odata.type": "microsoft.graph.applicationRiskScore"
+  },
+  "riskFactors": {
+    "@odata.type": "microsoft.graph.applicationRiskFactors"
+  },
+  "endpoints": [
+    "String"
+  ],
+  "lastModifiedDateTime": "String (timestamp)"
 }
 ```
 

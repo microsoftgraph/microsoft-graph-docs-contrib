@@ -13,6 +13,139 @@ ms.custom: sfi-ropc-nochange
 
 Namespace: microsoft.graph
 
+### applicationDataType values 
+
+|Member|
+|:---|
+|none|
+|codingFiles|
+|creditCards|
+|databaseFiles|
+|documents|
+|mediaFiles|
+|unknownFutureValue|
+
+### csaStarLevel values 
+
+|Member|
+|:---|
+|none|
+|attestation|
+|certification|
+|continuousMonitoring|
+|cStarAssessment|
+|selfAssessment|
+|notSupported|
+|unknownFutureValue|
+
+### dataProtection values 
+
+|Member|
+|:---|
+|none|
+|impactAssessments|
+|officers|
+|secureCrossBorderDataTransfer|
+|unknownFutureValue|
+
+### dataRetentionLevel values 
+
+|Member|
+|:---|
+|none|
+|dataRetained|
+|deletedImmediately|
+|deletedWithin1Month|
+|deletedWithin2Weeks|
+|deletedWithin3Months|
+|deletedWithinMoreThan3Months|
+|unknownFutureValue|
+
+### fedRampLevel values 
+
+|Member|
+|:---|
+|none|
+|high|
+|liSaas|
+|low|
+|moderate|
+|notSupported|
+|unknownFutureValue|
+
+### holdType values 
+
+|Member|
+|:---|
+|none|
+|private|
+|public|
+|unknownFutureValue|
+
+### passwordPolicy values 
+
+|Member|
+|:---|
+|none|
+|changePasswordPeriod|
+|charactersCombination|
+|passwordHistoryAndReuse|
+|passwordLengthLimit|
+|personalInformationUse|
+|unknownFutureValue|
+
+### pciVersion values 
+
+|Member|
+|:---|
+|none|
+|v3_2_1|
+|v4|
+|notSupported|
+|unknownFutureValue|
+
+### restEncryptionType values 
+
+|Member|
+|:---|
+|none|
+|aes|
+|bitlocker|
+|blowfish|
+|des|
+|rc4|
+|rsa|
+|notSupported|
+|unknownFutureValue|
+
+### sslVersion values 
+
+|Member|
+|:---|
+|none|
+|ssl3_0|
+|tls1_0|
+|tls1_1|
+|tls1_2|
+|tls1_3|
+|notSupported|
+|unknownFutureValue|
+
+### userOwnership values 
+
+|Member|
+|:---|
+|none|
+|lawfulBasisForProcessing|
+|rightToAccess|
+|rightToBeInformed|
+|rightToDataPortability|
+|rightToObject|
+|rightToRectification|
+|rightToRestrictionOfProcessing|
+|rightsRelatedToAutomatedDecisionMaking|
+|unknownFutureValue|
+
 ### readingCoachStoryType values
 
 |Member|
