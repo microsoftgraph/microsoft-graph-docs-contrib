@@ -87,7 +87,7 @@ Content-Type: application/json
 {
   "value": {
     "@odata.type": "#microsoft.graph.upnSignInIdentifier",
-    "name": "69314bc1-b86c-3e15-3d1e-05037779af45",
+    "name": "UPN",
     "isEnabled": "Boolean"
   }
 }
