@@ -67,7 +67,6 @@ If successful, this method returns a `200 OK` response code and an updated [upnS
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "update_upnsigninidentifier"
 }
 -->
 ``` http

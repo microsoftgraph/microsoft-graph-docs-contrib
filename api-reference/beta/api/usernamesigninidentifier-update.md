@@ -66,8 +66,7 @@ If successful, this method returns a `200 OK` response code and an updated [user
 
 The following example shows a request.
 <!-- {
-  "blockType": "request",
-  "name": "update_usernamesigninidentifier"
+  "blockType": "request"
 }
 -->
 ``` http

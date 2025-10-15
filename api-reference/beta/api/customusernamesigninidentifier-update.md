@@ -22,7 +22,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "customusernamesigninidentifier-update-permissions"
 }
 -->
 [!INCLUDE [permissions-table](../includes/permissions/signinidentifierbase-update-permissions.md)]
