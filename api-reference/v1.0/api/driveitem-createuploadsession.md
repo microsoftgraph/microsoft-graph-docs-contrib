@@ -5,7 +5,7 @@ ms.localizationpriority: high
 ms.subservice: "sharepoint"
 description: "Create an upload session to allow your app to upload files up to the maximum file size."
 doc_type: apiPageType
-ms.date: 04/04/2024
+ms.date: 10/15/2025
 ---
 # driveItem: createUploadSession
 
@@ -78,9 +78,9 @@ For example, the **item** property allows setting the following parameters:
 ```json
 {
   "@microsoft.graph.conflictBehavior": "fail (default) | replace | rename",
-  "description": "description",
+  "description": "description", // only available for OneDrive Personal
   "driveItemSource": { "@odata.type": "microsoft.graph.driveItemSource" },
-  "fileSize": 1234,
+  "fileSize": 1234, // only available for OneDrive Personal
   "name": "filename.txt",
   "mediaSource": { "@odata.type": "microsoft.graph.mediaSource" }
 }

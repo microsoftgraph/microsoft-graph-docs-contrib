@@ -5,7 +5,7 @@ title: "driveItem: createUploadSession"
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: apiPageType
-ms.date: 04/05/2024
+ms.date: 10/15/2025
 ---
 # driveItem: createUploadSession
 
@@ -63,9 +63,9 @@ For example, the `item` property allows setting the following parameters:
 ```json
 {
   "@microsoft.graph.conflictBehavior": "fail (default) | replace | rename",
-  "description": "description",
+  "description": "description", // only available for OneDrive Personal
   "driveItemSource": { "@odata.type": "microsoft.graph.driveItemSource" },
-  "fileSize": 1234,
+  "fileSize": 1234, // only available for OneDrive Personal
   "name": "filename.txt",
   "mediaSource": { "@odata.type": "microsoft.graph.mediaSource" }
 }
