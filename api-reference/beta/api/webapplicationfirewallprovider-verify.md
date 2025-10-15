@@ -1,5 +1,5 @@
 ---
-title: "Verify webApplicationFirewallProvider"
+title: "webApplicationFirewallProvider: verify"
 description: "Verify a webApplicationFirewallProvider object."
 author: "more-rasika"
 ms.date: 10/14/2025
@@ -8,7 +8,7 @@ ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
-# Verify webApplicationFirewallProvider
+# webApplicationFirewallProvider: verify
 
 Namespace: microsoft.graph
 
@@ -50,7 +50,13 @@ This method supports some of the OData query parameters, including `$expand` to 
 
 ## Request body
 
-Don't supply a request body for this method.
+In the request body, supply a JSON representation of the parameters.
+
+The following table lists the parameters that are required when you call this action.
+
+|Parameter|Type|Description|
+|:---|:---|:---|
+|hostName|String|**TODO: Add Description**|
 
 ## Response
 
@@ -65,7 +71,7 @@ If successful, this method returns a `200 OK` response code and a [webApplicatio
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "verify_webapplicationfirewallprovider"
+  "name": "webapplicationfirewallproviderthis.verify"
 }
 -->
 ```http
