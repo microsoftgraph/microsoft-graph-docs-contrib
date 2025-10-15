@@ -1,10 +1,10 @@
 ---
 title: "Manage channel membership across channels with allMembers API in Microsoft Graph"
 description: "Understand the detailed scope of allMembers API and its benefits."
-author: "sumitgupta"
+author: "surbhigupta"
 ms.localizationpriority: high
 ms.subservice: "teams"
-doc_type: apiPageType
+doc_type: conceptType
 ms.date: 09/18/2025
 ---
 
@@ -12,7 +12,7 @@ ms.date: 09/18/2025
 
 Namespace: microsoft.graph
 
-Use the new **allMembers** API that manages and monitors channel memberships across standard, shared, and private channels. It enhances accuracy by reflecting direct and indirect members correctly. Get the list of all [members](../resources/conversationmember.md) in a [channel](../resources/channel.md).
+Use the new **allMembers** API that manages and monitors channel memberships across standard, shared, and private channels. It enhances accuracy by reflecting direct and indirect members correctly. Get the list of all [members](../../api-reference/beta/api/channel-list-members.md) in a [channel](../resources/channel.md).
 
 ## Connect users to channels with the annotation property
 
