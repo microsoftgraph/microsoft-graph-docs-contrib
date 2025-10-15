@@ -87,14 +87,15 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 
 | Property             | Type               | Description                                                                                    |
 | :------------------- | :----------------- | :--------------------------------------------------------------------------------------------- |
-| createdDateTime      | DateTimeOffset     | The date and time when the item was created. Read-only.                                             |
-| description          | string             | The descriptive text for the site.                                                             |
-| displayName          | string             | The full title for the site. Read-only.                                                        |
-| eTag                 | string             | ETag for the item. Read-only.                                                                  |
-| id                   | string             | The [unique identifier](#id-property) of the item. Read-only.                                  |
-| lastModifiedDateTime | DateTimeOffset     | The date and time the item was last modified. Read-only.                                       |
-| locale               | string             | The language settings of the site.                                                             |
-| name                 | string             | The name/title of the item.                                                                  |
+| createdDateTime      | DateTimeOffset     | The date and time when the site was created. Read-only. Inherited from [baseItem](../resources/baseitem.md).                                            |
+| description          | String             | The descriptive text for the site. Inherited from [baseItem](../resources/baseitem.md).                                                            |
+| displayName          | String             | The full title for the site. Read-only.                                                        |
+| eTag                 | String             | ETag for the site. Read-only. Inherited from [baseItem](../resources/baseitem.md).                                                                 |
+| id                   | String             | The [unique identifier](#id-property) of the site. Read-only. Inherited from [baseItem](../resources/baseitem.md).                                 |
+| lastModifiedDateTime | DateTimeOffset     | The date and time the site was last modified. Read-only. Inherited from [baseItem](../resources/baseitem.md).                                      |
+| locale               | String             | The language settings of the site.                                                             |
+| lockState            | siteLockState      | TODO. The possible values are: `unlocked`, `lockedReadOnly`, `lockedNoAccess`, `lockedNoAdditions`, `unknownFutureValue` |
+| name                 | String             | The name of the site. Inherited from [baseItem](../resources/baseitem.md).                                                                 |
 | ownerIdentityToResolve|[identityInput](../resources/identityinput.md)|The site owner to be provided at the time of site creation only.|
 | root                 | [root][]           | If present, provides the root site in the site collection. Read-only.            |
 | settings             | [siteSettings]     | The settings on this site. Read-only.                                |
@@ -102,7 +103,7 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 | sharepointIds        | [sharepointIds][]  | Returns identifiers useful for SharePoint REST compatibility. Read-only.                       |
 | siteCollection       | [siteCollection][] | Provides details about the site's site collection. Available only on the root site. Read-only. |
 | template             | siteTemplateType   | Specifies the template applied to the site. The possible values are: `sitepagepublishing`, `group`, `sts`, `unknownFutureValue`.|
-| webUrl               | string (url)       | URL that displays the item in the browser. Read-only.                                          |
+| webUrl               | String             | The URL for the site. Read-only. Inherited from [baseItem](../resources/baseitem.md).                                         |
 
 ### id property
 
@@ -184,6 +185,7 @@ The **site** resource is derived from [**baseItem**](baseitem.md) and inherits p
   "displayName": "string",
   "id": "string",
   "locale": "String",
+  "lockState": "String",
   "ownerIdentityToResolve": {"@odata.type": "microsoft.graph.identityInput"},
   "root": { "@odata.type": "microsoft.graph.root" },
   "settings": { "@odata.type": "microsoft.graph.sitesettings" },
