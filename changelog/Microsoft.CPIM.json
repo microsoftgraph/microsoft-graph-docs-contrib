@@ -1327,7 +1327,7 @@
     {
       "ChangeList": [
         {
-          "Id": "a49c1cd1-d1c5-46f3-b900-ed748728ee4b",
+          "Id": "961019b3-47c4-407e-ab30-11ffd3e61ddf",
           "ApiChange": "Enumeration",
           "ChangedApiName": "webApplicationFirewallDnsRecordType",
           "ChangeType": "Addition",
@@ -1335,7 +1335,7 @@
           "Target": "webApplicationFirewallDnsRecordType"
         },
         {
-          "Id": "a49c1cd1-d1c5-46f3-b900-ed748728ee4b",
+          "Id": "961019b3-47c4-407e-ab30-11ffd3e61ddf",
           "ApiChange": "Enumeration",
           "ChangedApiName": "webApplicationFirewallProviderType",
           "ChangeType": "Addition",
@@ -1343,7 +1343,7 @@
           "Target": "webApplicationFirewallProviderType"
         },
         {
-          "Id": "a49c1cd1-d1c5-46f3-b900-ed748728ee4b",
+          "Id": "961019b3-47c4-407e-ab30-11ffd3e61ddf",
           "ApiChange": "Enumeration",
           "ChangedApiName": "webApplicationFirewallVerificationStatus",
           "ChangeType": "Addition",
@@ -1351,7 +1351,7 @@
           "Target": "webApplicationFirewallVerificationStatus"
         },
         {
-          "Id": "a49c1cd1-d1c5-46f3-b900-ed748728ee4b",
+          "Id": "961019b3-47c4-407e-ab30-11ffd3e61ddf",
           "ApiChange": "Resource",
           "ChangedApiName": "akamaiAttackGroupActionModel",
           "ChangeType": "Addition",
@@ -1359,7 +1359,7 @@
           "Target": "akamaiAttackGroupActionModel"
         },
         {
-          "Id": "a49c1cd1-d1c5-46f3-b900-ed748728ee4b",
+          "Id": "961019b3-47c4-407e-ab30-11ffd3e61ddf",
           "ApiChange": "Resource",
           "ChangedApiName": "akamaiCustomRuleModel",
           "ChangeType": "Addition",
@@ -1367,7 +1367,7 @@
           "Target": "akamaiCustomRuleModel"
         },
         {
-          "Id": "a49c1cd1-d1c5-46f3-b900-ed748728ee4b",
+          "Id": "961019b3-47c4-407e-ab30-11ffd3e61ddf",
           "ApiChange": "Resource",
           "ChangedApiName": "akamaiRapidRulesModel",
           "ChangeType": "Addition",
@@ -1375,7 +1375,7 @@
           "Target": "akamaiRapidRulesModel"
         },
         {
-          "Id": "a49c1cd1-d1c5-46f3-b900-ed748728ee4b",
+          "Id": "961019b3-47c4-407e-ab30-11ffd3e61ddf",
           "ApiChange": "Resource",
           "ChangedApiName": "akamaiVerifiedDetailsModel",
           "ChangeType": "Addition",
@@ -1383,7 +1383,7 @@
           "Target": "akamaiVerifiedDetailsModel"
         },
         {
-          "Id": "a49c1cd1-d1c5-46f3-b900-ed748728ee4b",
+          "Id": "961019b3-47c4-407e-ab30-11ffd3e61ddf",
           "ApiChange": "Resource",
           "ChangedApiName": "cloudFlareRuleModel",
           "ChangeType": "Addition",
@@ -1391,7 +1391,7 @@
           "Target": "cloudFlareRuleModel"
         },
         {
-          "Id": "a49c1cd1-d1c5-46f3-b900-ed748728ee4b",
+          "Id": "961019b3-47c4-407e-ab30-11ffd3e61ddf",
           "ApiChange": "Resource",
           "ChangedApiName": "cloudFlareRulesetModel",
           "ChangeType": "Addition",
@@ -1399,7 +1399,7 @@
           "Target": "cloudFlareRulesetModel"
         },
         {
-          "Id": "a49c1cd1-d1c5-46f3-b900-ed748728ee4b",
+          "Id": "961019b3-47c4-407e-ab30-11ffd3e61ddf",
           "ApiChange": "Resource",
           "ChangedApiName": "cloudFlareVerifiedDetailsModel",
           "ChangeType": "Addition",
@@ -1407,7 +1407,7 @@
           "Target": "cloudFlareVerifiedDetailsModel"
         },
         {
-          "Id": "a49c1cd1-d1c5-46f3-b900-ed748728ee4b",
+          "Id": "961019b3-47c4-407e-ab30-11ffd3e61ddf",
           "ApiChange": "Resource",
           "ChangedApiName": "webApplicationFirewallDnsConfiguration",
           "ChangeType": "Addition",
@@ -1415,7 +1415,7 @@
           "Target": "webApplicationFirewallDnsConfiguration"
         },
         {
-          "Id": "a49c1cd1-d1c5-46f3-b900-ed748728ee4b",
+          "Id": "961019b3-47c4-407e-ab30-11ffd3e61ddf",
           "ApiChange": "Resource",
           "ChangedApiName": "webApplicationFirewallVerificationResult",
           "ChangeType": "Addition",
@@ -1423,7 +1423,7 @@
           "Target": "webApplicationFirewallVerificationResult"
         },
         {
-          "Id": "a49c1cd1-d1c5-46f3-b900-ed748728ee4b",
+          "Id": "961019b3-47c4-407e-ab30-11ffd3e61ddf",
           "ApiChange": "Resource",
           "ChangedApiName": "webApplicationFirewallVerifiedDetails",
           "ChangeType": "Addition",
@@ -1431,7 +1431,7 @@
           "Target": "webApplicationFirewallVerifiedDetails"
         },
         {
-          "Id": "a49c1cd1-d1c5-46f3-b900-ed748728ee4b",
+          "Id": "961019b3-47c4-407e-ab30-11ffd3e61ddf",
           "ApiChange": "Resource",
           "ChangedApiName": "akamaiWebApplicationFirewallProvider",
           "ChangeType": "Addition",
@@ -1439,7 +1439,7 @@
           "Target": "akamaiWebApplicationFirewallProvider"
         },
         {
-          "Id": "a49c1cd1-d1c5-46f3-b900-ed748728ee4b",
+          "Id": "961019b3-47c4-407e-ab30-11ffd3e61ddf",
           "ApiChange": "Resource",
           "ChangedApiName": "cloudFlareWebApplicationFirewallProvider",
           "ChangeType": "Addition",
@@ -1447,7 +1447,7 @@
           "Target": "cloudFlareWebApplicationFirewallProvider"
         },
         {
-          "Id": "a49c1cd1-d1c5-46f3-b900-ed748728ee4b",
+          "Id": "961019b3-47c4-407e-ab30-11ffd3e61ddf",
           "ApiChange": "Relationship",
           "ChangedApiName": "webApplicationFirewallProviders",
           "ChangeType": "Addition",
@@ -1455,7 +1455,7 @@
           "Target": "riskPreventionContainer"
         },
         {
-          "Id": "a49c1cd1-d1c5-46f3-b900-ed748728ee4b",
+          "Id": "961019b3-47c4-407e-ab30-11ffd3e61ddf",
           "ApiChange": "Relationship",
           "ChangedApiName": "webApplicationFirewallVerifications",
           "ChangeType": "Addition",
@@ -1463,7 +1463,7 @@
           "Target": "riskPreventionContainer"
         },
         {
-          "Id": "a49c1cd1-d1c5-46f3-b900-ed748728ee4b",
+          "Id": "961019b3-47c4-407e-ab30-11ffd3e61ddf",
           "ApiChange": "Resource",
           "ChangedApiName": "webApplicationFirewallProvider",
           "ChangeType": "Addition",
@@ -1471,18 +1471,26 @@
           "Target": "webApplicationFirewallProvider"
         },
         {
-          "Id": "a49c1cd1-d1c5-46f3-b900-ed748728ee4b",
+          "Id": "961019b3-47c4-407e-ab30-11ffd3e61ddf",
           "ApiChange": "Resource",
           "ChangedApiName": "webApplicationFirewallVerificationModel",
           "ChangeType": "Addition",
           "Description": "Added the [webApplicationFirewallVerificationModel](https://learn.microsoft.com/en-us/graph/api/resources/webApplicationFirewallVerificationModel?view=graph-rest-beta) resource.",
           "Target": "webApplicationFirewallVerificationModel"
+        },
+        {
+          "Id": "961019b3-47c4-407e-ab30-11ffd3e61ddf",
+          "ApiChange": "Method",
+          "ChangedApiName": "verify",
+          "ChangeType": "Addition",
+          "Description": "Added the [verify](https://learn.microsoft.com/en-us/graph/api/webApplicationFirewallProvider-verify?view=graph-rest-beta) method to the [webApplicationFirewallProvider](https://learn.microsoft.com/en-us/graph/api/resources/webApplicationFirewallProvider?view=graph-rest-beta) resource.",
+          "Target": "webApplicationFirewallProvider"
         }
       ],
-      "Id": "a49c1cd1-d1c5-46f3-b900-ed748728ee4b",
-      "Cloud": "Review",
+      "Id": "961019b3-47c4-407e-ab30-11ffd3e61ddf",
+      "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2025-10-08T05:34:41.030082Z",
+      "CreatedDateTime": "2025-10-15T17:08:00.4617304Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Identity and sign-in"
     }
