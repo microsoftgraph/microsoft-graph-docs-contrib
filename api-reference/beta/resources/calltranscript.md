@@ -1,11 +1,11 @@
 ---
 title: "callTranscript resource type"
-description: "Represents a transcript associated with an online meeting."
+description: "Represents a transcript associated with an online meeting and ad hoc calls."
 author: "mankadnandan"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: resourcePageType
-ms.date: 08/02/2024
+ms.date: 08/05/2025
 ---
 
 # callTranscript resource type
@@ -14,16 +14,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a transcript associated with an [online meeting](onlinemeeting.md).
+Represents a transcript associated with an [online meeting](onlinemeeting.md) and [ad hoc calls](/graph/api/resources/adhoccall?view=graph-rest-beta&preserve-view=true).
 
 ## Methods
+
 |  Method       |  Return Type  | Description|
 |:---------------|:--------|:----------|
 |[List transcripts](../api/onlinemeeting-list-transcripts.md) | [callTranscript](calltranscript.md) collection | Get the list of [callTranscript](../resources/calltranscript.md) objects associated with an [onlineMeeting](../resources/onlinemeeting.md).|
-|[Get transcript](../api/calltranscript-get.md) | [callTranscript](calltranscript.md) | Get a [callTranscript](../resources/calltranscript.md) object associated with an [onlineMeeting](../resources/onlinemeeting.md).|
+|[Get transcript](../api/calltranscript-get.md) | [callTranscript](calltranscript.md) | Get a [callTranscript](../resources/calltranscript.md) object associated with an [onlineMeeting](../resources/onlinemeeting.md) or an [ad hoc call](/graph/api/resources/adhoccall?view=graph-rest-beta&preserve-view=true).|
 |[Get delta by organizer](../api/calltranscript-delta.md) | [callTranscript](calltranscript.md) collection | Get a set of [callTranscript](../resources/calltranscript.md) resources that were added for [onlineMeeting](../resources/onlinemeeting.md) instances organized by the specified user.|
 |[List transcripts by organizer](../api/onlinemeeting-getalltranscripts.md) | [callTranscript](calltranscript.md) collection | Get the [callTranscript](../resources/calltranscript.md) objects for all the [onlineMeeting](../resources/onlinemeeting.md) instances organized by the specified user.|
-
 
 ## Properties
 
@@ -41,6 +41,7 @@ Represents a transcript associated with an [online meeting](onlinemeeting.md).
 | transcriptContentUrl| String| The URL that can be used to access the content of the transcript. Read-only.|
 
 ## Relationships
+
 None.
 
 ## JSON representation

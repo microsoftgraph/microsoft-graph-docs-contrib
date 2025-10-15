@@ -26,3 +26,7 @@ items:
       href: ../../resources/engagementasyncoperation.md
     - name: Get
       href: ../../api/engagementasyncoperation-get.md
+  - name: Complex types
+    items:
+    - name: Engagement identity set
+      href: ../../resources/engagementidentityset.md

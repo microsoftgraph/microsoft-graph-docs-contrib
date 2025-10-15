@@ -4,7 +4,7 @@ description: "Get newly created, updated, or deleted service principals without 
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.subservice: "entra-applications"
-author: "sureshja"
+author: "Jackson-Woods"
 ms.date: 10/22/2024
 ---
 

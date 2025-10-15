@@ -94,7 +94,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}
 Content-type: application/json
-Content-length: 1866
+Content-length: 1886
 
 {
   "@odata.type": "#microsoft.graph.macOSPkgApp",
@@ -149,7 +149,8 @@ Content-length: 1866
     "v12_0": true,
     "v13_0": true,
     "v14_0": true,
-    "v15_0": true
+    "v15_0": true,
+    "v26_0": true
   },
   "preInstallScript": {
     "@odata.type": "microsoft.graph.macOSAppScript",
@@ -167,7 +168,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2038
+Content-Length: 2058
 
 {
   "@odata.type": "#microsoft.graph.macOSPkgApp",
@@ -225,7 +226,8 @@ Content-Length: 2038
     "v12_0": true,
     "v13_0": true,
     "v14_0": true,
-    "v15_0": true
+    "v15_0": true,
+    "v26_0": true
   },
   "preInstallScript": {
     "@odata.type": "microsoft.graph.macOSAppScript",

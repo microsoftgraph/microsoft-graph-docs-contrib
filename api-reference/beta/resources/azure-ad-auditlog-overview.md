@@ -21,13 +21,17 @@ Microsoft Entra provides an audit trail of all user and app activity in your ten
 
 ## What are activity reports?
 
-Microsoft Entra provides four types of activity reports:
+Microsoft Entra provides the following activity reports:
 
 - Directory audit logs
 - Custom security attribute audit logs
 - Self-service sign-ups (Microsoft Entra External ID)
 - Sign-ins
 - Provisioning
+- Audit activity types
+- Sign-in events summary per app
+- Sign-in events count per day
+- Summarized sign-ins for a category
 
 ## Available audit logs
 
@@ -65,6 +69,22 @@ The [provisioning logs](../resources/provisioningobjectsummary.md) help you see 
 - What roles were imported from Amazon Web Services?
 - What users were unsuccessfully created from Workday?
 
+### Audit Activity Types
+
+The [auditActivityType](../resources/auditactivitytype.md) provide you with a list of all available audit activity types and their corresponding service and category.
+
+### Sign In Events App Summary
+
+The [signInEventsAppActivity](../resources/signineventsappactivity.md) helps you see the total number of sign in events for a specific application in the past 30 days.
+
+### Sign In Events Summary
+
+The [signInEventsActivity](../resources/signineventsactivity.md) helps you see the total number of sign in events for a specific day.
+
+### Summarized Sign In Events Summary
+
+The [summarizedSignIn](../resources/summarizedsignin.md) helps you see the summary of sign-in event counts for specific categories grouped by user, application, IP address, and time window.
+
 ## What can I do with activity reports in Microsoft Graph?
 
 Here are popular requests for working with report data:
@@ -76,7 +96,12 @@ Operation | URL
 |GET tenant user sign-ins | [https://graph.microsoft.com/beta/auditLogs/signIns](https://developer.microsoft.com/graph/graph-explorer?request=auditLogs/signIns&version=beta)
 |GET provisioning logs | [https://graph.microsoft.com/beta/auditLogs/provisioning](https://developer.microsoft.com/graph/graph-explorer?request=auditLogs/Provisioning&version=beta)
 |GET tenant user (self-service) sign-ups | [https://graph.microsoft.com/beta/auditLogs/signUps](https://developer.microsoft.com/graph/graph-explorer?request=auditLogs/signUps&version=beta)
-
+|GET audit activity types | [https://graph.microsoft.com/beta/auditLogs/auditActivityTypes](https://developer.microsoft.com/graph/graph-explorer?request=auditLogs/auditActivityTypes&version=beta)
+|GET sign in events app summary | [https://graph.microsoft.com/beta/auditLogs/signInEventsAppSummary](https://developer.microsoft.com/graph/graph-explorer?request=auditLogs/signInEventsAppSummary&version=beta)
+|GET sign in events summary | [https://graph.microsoft.com/beta/auditLogs/signInEventsSummary](https://developer.microsoft.com/graph/graph-explorer?request=auditLogs/signInEventsSummary&version=beta)
+|GET summarized service principal sign in events summary | [https://graph.microsoft.com/beta/auditLogs/getSummarizedServicePrincipalSignIns](https://developer.microsoft.com/graph/graph-explorer?request=auditLogs/getSummarizedServicePrincipalSignIns(aggregationWindow='{aggregationWindow}')&version=beta)
+|GET summarized non-interactive sign in events summary | [https://graph.microsoft.com/beta/auditLogs/getSummarizedNonInteractiveSignIns](https://developer.microsoft.com/graph/graph-explorer?request=auditLogs/getSummarizedNonInteractiveSignIns(aggregationWindow='{aggregationWindow}')&version=beta)
+|GET summarized managed service identity sign in events summary | [https://graph.microsoft.com/beta/auditLogs/getSummarizedMSISignIns](https://developer.microsoft.com/graph/graph-explorer?request=auditLogs/getSummarizedMSISignIns(aggregationWindow='{aggregationWindow}')&version=beta)
 
 ## License requirements
 

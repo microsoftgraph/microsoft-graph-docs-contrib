@@ -22,6 +22,13 @@ $settings = new FileStorageContainerTypeSettings();
 $settings->setIsItemVersioningEnabled(true);
 $settings->setIsSharingRestricted(false);
 $settings->setConsumingTenantOverridables(new FileStorageContainerTypeSettingsOverride('isSearchEnabled,itemMajorVersionLimit'));
+$additionalData = [
+	'agent' => [
+		'chatEmbedAllowedHosts' => [
+'https://localhost:3000', ],
+	],
+];
+$settings->setAdditionalData($additionalData);
 $requestBody->setSettings($settings);
 
 $result = $graphServiceClient->storage()->fileStorage()->containerTypes()->post($requestBody)->wait();

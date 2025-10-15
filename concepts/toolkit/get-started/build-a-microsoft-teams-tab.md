@@ -9,7 +9,10 @@ ms.topic: how-to
 
 # Build a Microsoft Teams tab with the Microsoft Graph Toolkit
 
-This topic covers how to get started using the Microsoft Graph Toolkit in a Microsoft Teams solution. This guide is for a single page app without single sign-on (SSO) and does not require a backend. It uses the Teams Toolkit as the scaffolding system.
+> [!CAUTION]
+> The Microsoft Graph Toolkit is deprecated. The retirement period begins September 1, 2025, with full retirement planned for August 28, 2026. Developers should migrate to using the Microsoft Graph SDKs or other supported Microsoft Graph tools for building web experiences. For more information, see the [deprecation announcement](https://devblogs.microsoft.com/microsoft365dev/microsoft-graph-toolkit-retirement/).
+
+This topic covers how to get started using the Microsoft Graph Toolkit in a Microsoft Teams solution. This guide is for a single-page app without single sign-on (SSO) and does not require a backend. It uses the Teams Toolkit as the scaffolding system.
 
 Building a tab involves the following steps:
 
