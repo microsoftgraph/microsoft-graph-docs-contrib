@@ -63,8 +63,6 @@ PATCH /domains/{domainsId}/federationConfiguration/{internalDomainFederationId}
 |signingCertificateUpdateStatus|[signingCertificateUpdateStatus](../resources/signingcertificateupdatestatus.md)|Provides status and timestamp of the last update of the signing certificate.|
 |signOutUri|String|URI that clients are redirected to when they sign out of Microsoft Entra services.|
 
-[!INCLUDE [Azure AD PowerShell deprecation note](~/../reusable-content/msgraph-powershell/includes/aad-powershell-deprecation-note.md)]
-
 ### federatedIdpMfaBehavior values
 
 | Member | Description |
