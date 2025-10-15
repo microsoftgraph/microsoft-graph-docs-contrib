@@ -12,7 +12,7 @@ ms.date: 12/10/2024
 
 Namespace: microsoft.graph
 
-Restore a single [recycleBinItem](../resources/recyclebinitem.md) from a [fileStorageContainer](../resources/filestoragecontainer.md) [recycleBin](../resources/recyclebin.md)by using the `driveItemId` as an alternate key. If there is no matching recycleBinItem for the driveItemId, the API will return a 404 (Not Found) response.
+Restore a single [recycleBinItem](../resources/recyclebinitem.md) from a [fileStorageContainer](../resources/filestoragecontainer.md) [recycleBin](../resources/recyclebin.md)by using the `driveItemId` as an alternate key. If there's no matching recycleBinItem for the driveItemId, the API returns a 404 (Not Found) response.
 
 ## Permissions
 
