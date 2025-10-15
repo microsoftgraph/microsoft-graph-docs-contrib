@@ -94,7 +94,7 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 | id                   | String             | The [unique identifier](#id-property) of the site. Read-only. Inherited from [baseItem](../resources/baseitem.md).                                 |
 | lastModifiedDateTime | DateTimeOffset     | The date and time the site was last modified. Read-only. Inherited from [baseItem](../resources/baseitem.md).                                      |
 | locale               | String             | The language settings of the site.                                                             |
-| lockState            | siteLockState      | TODO. The possible values are: `unlocked`, `lockedReadOnly`, `lockedNoAccess`, `lockedNoAdditions`, `unknownFutureValue` |
+| lockState            | siteLockState      | The state of the site. The possible values are: `unlocked`, `lockedReadOnly`, `lockedNoAccess`, `lockedNoAdditions`, `unknownFutureValue` |
 | name                 | String             | The name of the site. Inherited from [baseItem](../resources/baseitem.md).                                                                 |
 | ownerIdentityToResolve|[identityInput](../resources/identityinput.md)|The site owner to be provided at the time of site creation only.|
 | root                 | [root][]           | If present, provides the root site in the site collection. Read-only.            |
