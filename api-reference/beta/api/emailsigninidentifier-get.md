@@ -87,7 +87,7 @@ Content-Type: application/json
 {
   "value": {
     "@odata.type": "#microsoft.graph.emailSignInIdentifier",
-    "name": "786a7f66-d644-d886-da2e-a06147b19ebd",
+    "name": "email",
     "isEnabled": "Boolean"
   }
 }
