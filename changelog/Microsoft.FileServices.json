@@ -29,6 +29,14 @@
         {
           "Id": "6e7a02d3-ce78-484b-8801-c15a835e1e1e",
           "ApiChange": "Property",
+          "ChangedApiName": "lockState",
+          "ChangeType": "Addition",
+          "Description": "Added the **lockState** property to the [site](https://learn.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-beta) resource.",
+          "Target": "site"
+        },
+        {
+          "Id": "6e7a02d3-ce78-484b-8801-c15a835e1e1e",
+          "ApiChange": "Property",
           "ChangedApiName": "ownerIdentityToResolve",
           "ChangeType": "Addition",
           "Description": "Added the **ownerIdentityToResolve** property to the [site](https://learn.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-beta) resource.",
