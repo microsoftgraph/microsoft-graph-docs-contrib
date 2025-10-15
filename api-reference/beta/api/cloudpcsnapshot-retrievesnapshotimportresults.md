@@ -1,15 +1,14 @@
 ---
-title: "cloudPCSnapshot: RetrieveSnapshotImportResult"
+title: "cloudPCSnapshot: retrieveSnapshotImportResult"
 description: "Retrieve the result and status of the snapshot importing action."
 author: "hyc3z"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: apiPageType
-toc.title: Retrieve imported CloudPC Snapshots
 ms.date: 10/10/2025
 ---
 
-# cloudPCSnapshot: RetrieveSnapshotImportResult
+# cloudPCSnapshot: retrieveSnapshotImportResult
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -29,8 +28,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/snapshots/retrieveSnapshotImportResult(snapshotId='7e8c3054-bda1-4e37-81c5-7d1b080a8849')
-
+GET /deviceManagement/virtualEndpoint/snapshots/retrieveSnapshotImportResult(snapshotId='{snapshotId}')
 ```
 
 ## Request headers
@@ -44,7 +42,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and [cloudPcSnapshotImportActionResult](../resources/cloudpcsnapshotimportactionresult.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [cloudPcSnapshotImportActionResult](../resources/cloudpcsnapshotimportactionresult.md) object in the response body.
 
 ## Examples
 

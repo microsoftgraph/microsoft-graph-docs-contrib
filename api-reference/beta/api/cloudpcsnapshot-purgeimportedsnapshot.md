@@ -1,15 +1,14 @@
 ---
-title: "cloudPCSnapshot: PurgeImportedSnapshot"
+title: "cloudPCSnapshot: purgeImportedSnapshot"
 description: "Delete the unused imported snapshot from Windows 365 service managed storage account."
 author: "hyc3z"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: apiPageType
-toc.title: Purge imported CloudPC Snapshot
 ms.date: 10/10/2025
 ---
 
-# cloudPCSnapshot: PurgeImportedSnapshot
+# cloudPCSnapshot: purgeImportedSnapshot
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -29,7 +28,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/snapshots/purgeImportedSnapshot
+POST /deviceManagement/virtualEndpoint/snapshots/purgeImportedSnapshot
 ```
 
 ## Request headers
@@ -44,12 +43,12 @@ The following table shows the parameters that can be used with this method.
 
 | Parameter | Type              | Description                                                                                            |
 |:----------|:------------------|:-------------------------------------------------------------------------------------------------------|
-| snapshotIds   | Collection(String)                                                    | The list of unique identifiers for the imported snapshots.             |
+| snapshotIds   | String collection | The list of unique identifiers for the imported snapshots.             |
 
 
 ## Response
 
-If successful, this method returns a `204 NO CONTENT` response code.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
@@ -67,11 +66,8 @@ The following example shows a request.
 POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/snapshots/purgeImportedSnapshot
 
 {
-    "snapshotIds": [ "7e8c3054-bda1-4e37-81c5-7d1b080a8849", "715c8075-6892-42f3-9550-40b4b48e13d2"]
+  "snapshotIds": [ "7e8c3054-bda1-4e37-81c5-7d1b080a8849", "715c8075-6892-42f3-9550-40b4b48e13d2"]
 }
-```
-
----
 
 ### Response
 
