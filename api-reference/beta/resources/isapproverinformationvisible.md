@@ -1,5 +1,5 @@
 ---
-title: "isApproverInformationVisible enum type"
+title: "approverInformationVisibilityenum type"
 description: "Defines whether approver information is visible to the requestor in approval processes."
 ms.localizationpriority: medium
 author: "myra-ramdenbourg"
@@ -8,7 +8,7 @@ doc_type: "enumPageType"
 ms.date: 10/14/2025
 ---
 
-# isApproverInformationVisible enum type
+# approverInformationVisibilityenum type
 
 Namespace: microsoft.graph
 
@@ -31,11 +31,11 @@ The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.isApproverInformationVisible"
+  "@odata.type": "microsoft.graph.approverInformationVisibility"
 }-->
 
 ```json
 {
-  "@odata.type": "#microsoft.graph.isApproverInformationVisible"
+  "@odata.type": "#microsoft.graph.approverInformationVisibility"
 }
 ```

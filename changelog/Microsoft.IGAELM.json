@@ -77,25 +77,25 @@
         {
           "Id": "750da746-1999-4d5e-b536-21aa47e93207",
           "ApiChange": "Property",
-          "ChangedApiName": "isApproverInformationVisible",
+          "ChangedApiName": "approverInformationVisibility",
           "ChangeType": "Addition",
-          "Description": "Added the **isApproverInformationVisible** property to the [approvalStage](https://learn.microsoft.com/en-us/graph/api/resources/approvalStage?view=graph-rest-beta) resource.",
+          "Description": "Added the **approverInformationVisibility** property to the [approvalStage](https://learn.microsoft.com/en-us/graph/api/resources/approvalStage?view=graph-rest-beta) resource.",
           "Target": "approvalStage"
         },
         {
           "Id": "750da746-1999-4d5e-b536-21aa47e93207",
           "ApiChange": "Enumeration",
-          "ChangedApiName": "isApproverInformationVisible",
+          "ChangedApiName": "approverInformationVisibility",
           "ChangeType": "Addition",
-          "Description": "Added the **isApproverInformationVisible** enumeration type.",
-          "Target": "isApproverInformationVisible"
+          "Description": "Added the **approverInformationVisibility** enumeration type.",
+          "Target": "approverInformationVisibility"
         },
         {
           "Id": "750da746-1999-4d5e-b536-21aa47e93207",
           "ApiChange": "Property",
-          "ChangedApiName": "isApproverInformationVisible",
+          "ChangedApiName": "approverInformationVisibility",
           "ChangeType": "Addition",
-          "Description": "Added the **isApproverInformationVisible** property to the [accessPackageApprovalStage](https://learn.microsoft.com/en-us/graph/api/resources/accessPackageApprovalStage?view=graph-rest-beta) resource.",
+          "Description": "Added the **approverInformationVisibility** property to the [accessPackageApprovalStage](https://learn.microsoft.com/en-us/graph/api/resources/accessPackageApprovalStage?view=graph-rest-beta) resource.",
           "Target": "accessPackageApprovalStage"
         }
       ],

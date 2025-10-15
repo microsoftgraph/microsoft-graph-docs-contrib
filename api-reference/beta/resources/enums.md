@@ -733,7 +733,7 @@ Namespace: microsoft.graph
 | remoteDesktopToken |
 | refreshToken       |
 
-### isApproverInformationVisible values
+### approverInformationVisibilityvalues
 
 | Member |
 | ---- |
