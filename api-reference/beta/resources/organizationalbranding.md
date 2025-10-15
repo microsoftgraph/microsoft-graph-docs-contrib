@@ -1,11 +1,11 @@
 ---
 title: "organizationalBranding resource type"
 description: "Contains details of the organization's default branding."
-author: nanguil
+author: alexanderMars
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
-ms.date: 07/22/2024
+ms.date: 10/14/2025
 ---
 
 # organizationalBranding resource type
@@ -36,6 +36,8 @@ You can't change your original configuration's language. However, companies can 
 | [Get](../api/organizationalbranding-get.md) | [organizationalBranding](../resources/organizationalbranding.md) | Read the properties and relationships of an [organizationalBranding](../resources/organizationalbranding.md) object. |
 | [Update](../api/organizationalbranding-update.md) | None | Update the properties of an [organizationalBranding](../resources/organizationalbranding.md) object. |
 <!--| [Delete organizationalBranding](../api/organizationalbranding-delete.md) | None | Delete an [organizationalBranding](../resources/organizationalbranding.md) object. |-->
+|[List themes](../api/organizationalbranding-list-themes.md)|[organizationalBrandingTheme](../resources/organizationalbrandingtheme.md) collection|Get a list of the organizationalBrandingTheme objects and their properties.|
+|[Create organizationalBrandingTheme](../api/organizationalbranding-post-themes.md)|[organizationalBrandingTheme](../resources/organizationalbrandingtheme.md)|Create a new organizationalBrandingTheme object.|
 
 ## Properties
 
@@ -80,6 +82,7 @@ You can't change your original configuration's language. However, companies can 
 |Relationship|Type|Description|
 |:---|:---|:---|
 | localizations | [organizationalBrandingLocalization](organizationalbrandinglocalization.md) collection | Add different branding based on a locale. |
+|themes|[organizationalBrandingTheme](../resources/organizationalbrandingtheme.md) collection|Create a branding theme.|
 
 ## JSON representation
 The following JSON representation shows the resource type.
@@ -109,14 +112,9 @@ The following JSON representation shows the resource type.
   "squareLogoDark": "Stream",
   "squareLogoDarkRelativeUrl": "String",
   "usernameHintText": "String",
-  "contentCustomization": {
-    "@odata.type": "microsoft.graph.contentCustomization"
-  },  
   "customAccountResetCredentialsUrl": "String",
   "customCannotAccessYourAccountText": "String",
   "customCannotAccessYourAccountUrl": "String",
-  "customCSS": "Stream",
-  "customCSSRelativeUrl": "String",
   "customForgotMyPasswordText": "String",
   "customPrivacyAndCookiesText": "String",
   "customPrivacyAndCookiesUrl": "String",
@@ -125,14 +123,19 @@ The following JSON representation shows the resource type.
   "customTermsOfUseUrl": "String",
   "favicon": "Stream",
   "faviconRelativeUrl": "String",
+  "customCSS": "Stream",
+  "customCSSRelativeUrl": "String",
   "headerBackgroundColor": "String",
+  "loginPageTextVisibilitySettings": {
+    "@odata.type": "microsoft.graph.loginPageTextVisibilitySettings"
+  },
+  "contentCustomization": {
+    "@odata.type": "microsoft.graph.contentCustomization"
+  },
   "headerLogo": "Stream",
   "headerLogoRelativeUrl": "String",
   "loginPageLayoutConfiguration": {
     "@odata.type": "microsoft.graph.loginPageLayoutConfiguration"
-  },
-  "loginPageTextVisibilitySettings": {
-    "@odata.type": "microsoft.graph.loginPageTextVisibilitySettings"
   }
 }
 ```
