@@ -2082,16 +2082,16 @@ items:
       href: ../../resources/onauthenticationmethodloadstartlistener.md
     - name: On email OTP send listener
       href: ../../resources/onemailotpsendlistener.md
+    - name: On fraud protection load start listener
+      href: ../../resources/onfraudprotectionloadstartlistener.md
     - name: On interactive auth flow start listener
       href: ../../resources/oninteractiveauthflowstartlistener.md
+    - name: On phone method load start listener
+      href: ../../resources/onphonemethodloadstartlistener.md
     - name: On token issuance start listener
       href: ../../resources/ontokenissuancestartlistener.md
     - name: On user create start listener
       href: ../../resources/onusercreatestartlistener.md
-    - name: On phone method load start listener
-      href: ../../resources/onphonemethodloadstartlistener.md
-    - name: On fraud protection load start listener
-      href: ../../resources/onfraudprotectionloadstartlistener.md
   - name: Authentication methods
     items:
     - name: Overview
@@ -2867,6 +2867,10 @@ items:
         href: ../../api/fraudprotectionprovider-update.md
       - name: Delete
         href: ../../api/riskpreventioncontainer-delete-fraudprotectionproviders.md
+    - name: Arkose fraud protection provider
+      href: ../../resources/arkosefraudprotectionprovider.md
+    - name: Human security fraud protection provider
+      href: ../../resources/humansecurityfraudprotectionprovider.md
   - name: Identity provider
     items:
     - name: External identities
