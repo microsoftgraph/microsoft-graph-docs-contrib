@@ -79,7 +79,6 @@ GET https://graph.microsoft.com/beta/auditLogs/auditActivityTypes
 
 ---
 
-
 ### Response
 
 The following example shows the response.
