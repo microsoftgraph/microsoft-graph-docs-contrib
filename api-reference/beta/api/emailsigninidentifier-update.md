@@ -25,7 +25,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "name": "emailsigninidentifier-update-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/signinidentifierbase-update-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/emailsigninidentifier-update-permissions.md)]
 
 ## HTTP request
 
@@ -67,6 +67,7 @@ If successful, this method returns a `200 OK` response code and an updated [emai
 The following example shows a request.
 <!-- {
   "blockType": "request",
+  "name": "update_emailsigninidentifier"
 }
 -->
 ``` http

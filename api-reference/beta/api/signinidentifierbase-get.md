@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a signInIdentifierBase object.
+Read the properties and relationships of a [signInIdentifierBase](../resources/signinidentifierbase.md) object.
 
 ## Permissions
 

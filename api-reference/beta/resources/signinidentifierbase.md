@@ -25,7 +25,6 @@ This is an abstract type.
 |:---|:---|:---|
 |[Get](../api/signinidentifierbase-get.md)|[signInIdentifierBase](../resources/signinidentifierbase.md)|Read the properties and relationships of [signInIdentifierBase](../resources/signinidentifierbase.md) object.|
 |[Update](../api/signinidentifierbase-update.md)|[signInIdentifierBase](../resources/signinidentifierbase.md)|Update the properties of a signInIdentifierBase object.|
-|[Delete](../api/customusernamesigninidentifier-delete.md)|None|Delete a signInIdentifierBase object. Only supported for custom (non-built-in) identifiers.|
 
 ## Properties
 

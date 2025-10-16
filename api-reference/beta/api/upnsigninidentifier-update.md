@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of an upnSignInIdentifier object.
+Update the properties of an [upnSignInIdentifier](../resources/upnsigninidentifier.md) object.
 
 ## Permissions
 
@@ -25,7 +25,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "name": "upnsigninidentifier-update-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/signinidentifierbase-update-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/upnsigninidentifier-update-permissions.md)]
 
 ## HTTP request
 
@@ -67,6 +67,7 @@ If successful, this method returns a `200 OK` response code and an updated [upnS
 The following example shows a request.
 <!-- {
   "blockType": "request",
+  "name": "update_upnsigninidentifier"
 }
 -->
 ``` http

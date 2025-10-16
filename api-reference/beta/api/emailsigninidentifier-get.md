@@ -25,7 +25,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "name": "emailsigninidentifier-get-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/signinidentifierbase-get-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/emailsigninidentifier-get-permissions.md)]
 
 ## HTTP request
 

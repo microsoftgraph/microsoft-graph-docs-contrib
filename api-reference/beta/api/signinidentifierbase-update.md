@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-PATCH /identity/signInIdentifiers/{signInIdentifierBaseId}
+PATCH /identity/signInIdentifiers/{signInIdentifier-name}
 ```
 
 ## Request headers
@@ -70,7 +70,7 @@ The following example shows a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/identity/signInIdentifiers/{signInIdentifierBaseId}
+PATCH https://graph.microsoft.com/beta/identity/signInIdentifiers/Email
 Content-Type: application/json
 
 {

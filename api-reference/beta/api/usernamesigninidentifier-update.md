@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a usernameSignInIdentifier object.
+Update the properties of a [usernameSignInIdentifier](../resources/usernamesigninidentifier.md) object.
 
 ## Permissions
 
@@ -25,7 +25,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "name": "usernamesigninidentifier-update-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/signinidentifierbase-update-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/usernamesigninidentifier-update-permissions.md)]
 
 ## HTTP request
 
