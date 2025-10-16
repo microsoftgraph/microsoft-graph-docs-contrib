@@ -376,7 +376,6 @@ The server responds with a list of missing byte ranges that need to be uploaded 
 >
 > - To upload large files using SDKs, see [Upload large files using the Microsoft Graph SDKs](/graph/sdks/large-file-upload).
 
-The server responds with a list of missing byte ranges that need to be uploaded and the expiration time for the upload session.
 
 <!-- { "blockType": "ignored" } -->
 
