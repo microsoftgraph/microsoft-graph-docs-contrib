@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an Akamai web application firewall (WAF) provider configuration integrated with Microsoft services. This resource extends the abstract `webApplicationFirewallProvider` with Akamai-specific properties such as API credentials and host prefix used for operations performed against the Akamai account.
+Represents an Akamai web application firewall (WAF) provider configuration integrated with Entra External ID.
 
 Inherits from [webApplicationFirewallProvider](../resources/webapplicationfirewallprovider.md).
 
