@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ```http
-GET /sites/getOperationStatus(operationId='{siteOperationId}')
+GET /sites/getOperationStatus(operationId={siteOperationId})
 ```
 
 ## Function parameters
@@ -70,11 +70,12 @@ The following example shows a request.
 
 <!-- {
   "blockType": "request",
-  "name": "sitethis.getoperationstatus"
+  "name": "sitethis.getoperationstatus",
+  "sampleKeys": ["JXMnaHR0cHMlM0ElMkYlMkZncmFwaC5taWNyb3NvZnQuY29tJTJGc2l0ZXMlMkZ0ZWFtc2l0ZTE="]
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/sites/getOperationStatus(operationId='JXMnaHR0cHMlM0ElMkYlMkZncmFwaC5taWNyb3NvZnQuY29tJTJGc2l0ZXMlMkZ0ZWFtc2l0ZTE=')
+GET https://graph.microsoft.com/beta/sites/getOperationStatus(operationId=JXMnaHR0cHMlM0ElMkYlMkZncmFwaC5taWNyb3NvZnQuY29tJTJGc2l0ZXMlMkZ0ZWFtc2l0ZTE=)
 ```
 
 ### Response
@@ -103,7 +104,7 @@ Content-Type: application/json
 
 <!-- {
   "type": "#page.annotation",
-  "description": "Site get operation status.",
+  "description": "site: getOperationStatus",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
