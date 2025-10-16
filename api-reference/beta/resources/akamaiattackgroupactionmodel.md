@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an Akamai web application firewall (WAF) attack group and the action configured for that group. This resource is used to describe how the Akamai integration handles specific categories of attacks, such as blocking, alerting, or logging.
+Represents an Akamai web application firewall (WAF) attack group and the action configured for that group, as defined in the **activeAttackGroups** property of the [akamaiVerifiedDetailsModel object](../resources/akamaiverifieddetailsmodel.md). This resource is used to describe how the Akamai integration handles specific categories of attacks, such as blocking, alerting, or logging.
 
 
 ## Properties

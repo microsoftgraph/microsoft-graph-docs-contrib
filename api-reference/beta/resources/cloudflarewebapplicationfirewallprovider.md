@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a Cloudflare web application firewall (WAF) provider configuration integrated with Entra External ID. This resource extends the abstract `webApplicationFirewallProvider` with Cloudflare-specific properties such as an API token and the default zone identifier used for operations performed against the Cloudflare account.
+Represents a Cloudflare web application firewall (WAF) provider configuration integrated with Entra External ID. 
 
 Inherits from [webApplicationFirewallProvider](../resources/webapplicationfirewallprovider.md).
 
@@ -29,7 +29,7 @@ For the list of API operations for managing this resource type, see the [webAppl
 |:---|:---|:---|
 |apiToken|String|Cloudflare API token or credential used by Microsoft services to authenticate to the Cloudflare account. Contact your Cloudflare Customer Success Manager for assistance with your apitoken.|
 |displayName|String|The friendly display name of the Cloudflare provider configuration. Inherited from [webApplicationFirewallProvider](../resources/webapplicationfirewallprovider.md).|
-|id|String|Unique identifier for the provider resource. Inherited from [entity](../resources/entity.md). Inherits from [entity](../resources/entity.md)|
+|id|String|Unique identifier for the provider resource. Inherited from [entity](../resources/entity.md).|
 |zoneId|String|Default Cloudflare Zone ID associated with this provider configuration. This ID identifies the DNS zone in Cloudflare that is commonly used for verification and configuration operations for the provider.|
 
 ## Relationships

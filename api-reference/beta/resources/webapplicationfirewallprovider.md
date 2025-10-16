@@ -1,6 +1,6 @@
 ---
 title: "webApplicationFirewallProvider resource type"
-description: "Represents a web application firewall (WAF) provider configuration."
+description: "Represents the configuration of a web application firewall (WAF) provider in a Microsoft Entra External ID tenant."
 author: "more-rasika"
 ms.date: 10/10/2025
 ms.localizationpriority: medium
@@ -14,9 +14,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a web application firewall (WAF) provider configuration. This abstract resource defines common properties for WAF providers integrated with Microsoft services.
+Represents the configuration of a web application firewall (WAF) provider in a Microsoft Entra External ID tenant. This abstract resource defines common properties for WAF providers integrated with Microsoft services.
 
-
+This resource is an abstract type from which the following WAF provider resources derive:
+- [akamaiWebApplicationFirewallProvider](../resources/akamaiwebapplicationfirewallprovider.md)
+- [cloudFlareWebApplicationFirewallProvider](../resources/cloudflarewebapplicationfirewallprovider.md)
 Inherits from [entity](../resources/entity.md).
 
 
@@ -28,13 +30,12 @@ Inherits from [entity](../resources/entity.md).
 |[Get](../api/webapplicationfirewallprovider-get.md)|[webApplicationFirewallProvider](../resources/webapplicationfirewallprovider.md)|Read the properties and relationships of [webApplicationFirewallProvider](../resources/webapplicationfirewallprovider.md) object.|
 |[Update](../api/webapplicationfirewallprovider-update.md)|[webApplicationFirewallProvider](../resources/webapplicationfirewallprovider.md)|Update the properties of a webApplicationFirewallProvider object.|
 |[Delete](../api/riskpreventioncontainer-delete-webapplicationfirewallproviders.md)|None|Delete a webApplicationFirewallProvider object.|
-|[Verify](../api/webapplicationfirewallprovider-verify.md)|[webApplicationFirewallVerificationModel](../resources/webapplicationfirewallverificationmodel.md)|Initiate a verification operation for the provider and return the verification result.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|The display name of the WAF provider.|
-|id|String|Unique identifier for the provider resource. Inherited from [entity](../resources/entity.md). Inherits from [entity](../resources/entity.md)|
+|id|String|Unique identifier for the provider resource. Inherited from [entity](../resources/entity.md).|
 
 ## Relationships
 None.

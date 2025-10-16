@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the details discovered when verifying a host or domain using a Cloudflare web application firewall (WAF) provider. This resource extends the abstract `webApplicationFirewallVerifiedDetails` type with Cloudflare-specific fields such as the Cloudflare zone identifier, lists of enabled recommended rulesets and custom rules, and any DNS configuration evidence gathered during verification.
+Represents the details discovered when verifying a host or domain using a Cloudflare web application firewall (WAF) provider.
 
 
 Inherits from [webApplicationFirewallVerifiedDetails](../resources/webapplicationfirewallverifieddetails.md).

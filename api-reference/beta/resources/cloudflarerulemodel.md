@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a Cloudflare WAF rule configuration or mapping that is known to the integration. This resource captures metadata about the rule and the action Cloudflare takes when the rule matches traffic.
+Represents a Cloudflare WAF rule configuration or mapping that is known to the integration, as defined in the **enabledCustomRules** property of the [cloudFlareVerifiedDetailsModel object](../resources/cloudflareverifieddetailsmodel.md). This resource captures metadata about the rule and the action Cloudflare takes when the rule matches traffic.
 
 
 ## Properties

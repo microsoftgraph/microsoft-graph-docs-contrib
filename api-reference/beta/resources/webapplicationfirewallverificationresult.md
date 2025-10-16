@@ -14,14 +14,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the result of a verification operation performed against a host or domain with a web application firewall (WAF) provider.
+Represents the result of a [verification](../resources/webApplicationFirewallVerificationModel.md) operation performed against a host or domain with a web application firewall (WAF) provider.
 
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |errors|[genericError](../resources/genericerror.md) collection|List of errors encountered during the verification process. |
-|status|webApplicationFirewallVerificationStatus|Overall status of the verification operation. Typical values include `success` (verification passed), `warning` (verification completed with warnings), and `failure` (verification failed). Use `unknownFutureValue` for forward compatibility. The possible values are: `success`, `warning`, `failure`, `unknownFutureValue`.|
+|status|webApplicationFirewallVerificationStatus|Overall status of the verification operation. The possible values are: `success` (verification passed), `warning` (verification completed with warnings), `failure` (verification failed), `unknownFutureValue`.|
 |verifiedOnDateTime|DateTimeOffset|UTC timestamp when the verification was performed or last updated. This indicates when the verification result was produced.|
 |warnings|[genericError](../resources/genericerror.md) collection|List of warnings produced during verification.|
 

@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents DNS configuration for a domain used by a web application firewall (WAF) provider. 
+Represents DNS configuration for a domain used by a web application firewall (WAF) provider, returned in the **dnsConfiguration** property of the [webApplicationFirewallVerifiedDetails](../resources/webApplicationFirewallVerifiedDetails.md) resource or its subtypes.
 
 
 ## Properties

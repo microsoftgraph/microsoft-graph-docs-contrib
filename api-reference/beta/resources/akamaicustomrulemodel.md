@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a custom rule defined in an Akamai web application firewall (WAF) integration. This resource captures metadata about the rule and the action Akamai takes when the rule matches traffic.
+Represents a custom rule defined in an Akamai web application firewall (WAF) integration, as defined in the **activeCustomRules** property of the [akamaiVerifiedDetailsModel object](../resources/akamaiverifieddetailsmodel.md). This resource captures metadata about the rule and the action Akamai takes when the rule matches traffic.
 
 
 ## Properties

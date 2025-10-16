@@ -28,8 +28,8 @@ None.
 |Relationship|Type|Description|
 |:---|:---|:---|
 |fraudProtectionProviders|[fraudProtectionProvider](../resources/fraudprotectionprovider.md) collection|Represents entry point for fraud protection provider configurations for Microsoft Entra External ID tenants.|
-|webApplicationFirewallProviders|[webApplicationFirewallProvider](../resources/webapplicationfirewallprovider.md) collection|Collection of WAF provider configurations registered in this container.|
-|webApplicationFirewallVerifications|[webApplicationFirewallVerificationModel](../resources/webapplicationfirewallverificationmodel.md) collection|Collection of verification records documenting verification operations performed for domains or hosts with WAF providers.|
+|webApplicationFirewallProviders|[webApplicationFirewallProvider](../resources/webapplicationfirewallprovider.md) collection|Collection of WAF provider configurations registered in the External ID tenant.|
+|webApplicationFirewallVerifications|[webApplicationFirewallVerificationModel](../resources/webapplicationfirewallverificationmodel.md) collection|Collection of verification records of verification operations performed for domains or hosts with WAF providers registered in the External ID tenant.|
 
 ## JSON representation
 The following JSON representation shows the resource type.

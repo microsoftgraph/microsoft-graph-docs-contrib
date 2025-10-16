@@ -112,6 +112,6 @@ Content-Type: application/json
     "@odata.type": "#microsoft.graph.akamaiWebApplicationFirewallProvider",
     "id": "0bb2618b-51f7-4e83-bcb8-84e70f7cf84d",
     "displayName": "Akamai Provider Example",
-    "hostPrefix: "11111111111111111111111111111111""
+    "hostPrefix": "11111111111111111111111111111111"
 }
 ```

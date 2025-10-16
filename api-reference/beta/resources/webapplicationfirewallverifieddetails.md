@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Abstract type that represents verification findings and evidence for a host or domain after a verification operation with a web application firewall (WAF) provider.
+Represents [verification](../resources/webApplicationFirewallVerificationModel.md) findings and evidence for a host or domain after a verification operation with a web application firewall (WAF) provider.
 
 This is an abstract type.
 

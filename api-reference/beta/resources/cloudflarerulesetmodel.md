@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a Cloudflare-managed ruleset or collection of WAF rules that can be applied to traffic. This resource captures ruleset metadata such as a friendly name, the ruleset identifier, and the execution phase where the rules are evaluated (for example, HTTP request phase).
+Represents a Cloudflare-managed ruleset or collection of WAF rules that can be applied to traffic, as defined in the **enabledRecommendedRulesets** property of the [cloudFlareVerifiedDetailsModel object](../resources/cloudflareverifieddetailsmodel.md). This resource captures ruleset metadata such as a friendly name, the ruleset identifier, and the execution phase where the rules are evaluated (for example, HTTP request phase).
 
 
 ## Properties

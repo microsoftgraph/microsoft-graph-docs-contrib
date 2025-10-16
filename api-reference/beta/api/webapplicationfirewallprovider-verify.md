@@ -54,7 +54,7 @@ The following table lists the parameters that are required when you call this ac
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|hostName|String|**TODO: Add Description**|
+|hostName|String|The domain name or host to be verified by the web application firewall provider. Required.|
 
 ## Response
 
@@ -62,7 +62,9 @@ If successful, this method returns a `200 OK` response code and a [webApplicatio
 
 ## Examples
 
-### Example 1: Verfiy a specific webApplicationFirewallProviders object.
+### Example 1: Verify a specific webApplicationFirewallProvider object
+
+The following example shows how to verify a webApplicationFirewallProvider using the hostName only.
 
 #### Request
 
@@ -139,7 +141,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: Verfiy a specific webApplicationFirewallProviders object along with the details of their associated provider.
+### Example 2: Verify a specific webApplicationFirewallProviders object along with the details of their associated provider.
 
 #### Request
 
