@@ -7711,7 +7711,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "cloudPcSnapshotImportActionResult",
           "ChangeType": "Addition",
-          "Description": "Added the [cloudPcSnapshotImportActionResult](https://learn.microsoft.com/en-us/graph/resources/cloudpcsnapshotimportactionresult?view=graph-rest-beta) resource.",
+          "Description": "Added the [cloudPcSnapshotImportActionResult](https://learn.microsoft.com/en-us/graph/resources/cloudpcsnapshotimportactionresult?view=graph-rest-beta) resource type.",
           "Target": "cloudPcSnapshotImportActionResult"
         },
         {
@@ -7719,7 +7719,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "cloudPcSnapshotImportActionDetail",
           "ChangeType": "Addition",
-          "Description": "Added the [cloudPcSnapshotImportActionDetail](https://learn.microsoft.com/en-us/graph/resources/cloudpcsnapshotimportactiondetail?view=graph-rest-beta) resource.",
+          "Description": "Added the [cloudPcSnapshotImportActionDetail](https://learn.microsoft.com/en-us/graph/resources/cloudpcsnapshotimportactiondetail?view=graph-rest-beta) resource type.",
           "Target": "cloudPcSnapshotImportActionDetail"
         },
         {
@@ -7727,7 +7727,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "cloudPcStorageBlobDetail",
           "ChangeType": "Addition",
-          "Description": "Added the [cloudPcSnapshotImportActionDetail](https://learn.microsoft.com/en-us/graph/resources/cloudpcstorageblobdetail?view=graph-rest-beta) resource.",
+          "Description": "Added the [cloudPcSnapshotImportActionDetail](https://learn.microsoft.com/en-us/graph/resources/cloudpcstorageblobdetail?view=graph-rest-beta) resource type.",
           "Target": "cloudPcStorageBlobDetail"
         },
         {
