@@ -29,6 +29,7 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 ### Device and app management | Cloud PC
 
 [List](/graph/api/user-list-cloudpcs) the Cloud PC devices that are attributed to the signed-in user.
+
 ### Identity and access | Directory management
 
 - Addressed a permissions issue for [internalDomainFederation](/graph/api/resources/internaldomainfederation) write operations. Previously, delegated scenarios required the high-privilege _Directory.AccessAsUser.All_ permission. Two new, lesser-privileged permissions are now available for managing the **internalDomainFederation** resource:
