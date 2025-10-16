@@ -1,6 +1,6 @@
 ---
 title: "cloudPCSnapshot: importSnapshot"
-description: "Import the snapshot from customer managed storage account for the given information, and store it in the Azure storage account in the Cloud PC service on behalf of customers. The imported snapshot can be used to provision a new Cloud PC for a specified user with a license assigned."
+description: "Import the snapshot from the customer-managed storage account using the provided information, and store it in the Azure storage account within the Cloud PC service on behalf of the customer."
 author: "hyc3z"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-To provision a new Cloud PC for a licensed user, import a valid .vhd snapshot from a customer-managed storage account into the Azure storage account used by the Cloud PC service. 
+Import the snapshot from the customer-managed storage account using the provided information, and store it in the Azure storage account within the Cloud PC service on behalf of the customer. To provision a new Cloud PC for a licensed user, import a valid .vhd snapshot from a customer-managed storage account into the Azure storage account used by the Cloud PC service.
 
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -28,7 +28,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/snapshots/importSnapshot
+POST /deviceManagement/virtualEndpoint/snapshots/importSnapshot
 ```
 
 ## Request headers
@@ -41,23 +41,20 @@ In the request body, supply a JSON representation of the parameters.
 
 The following table shows the parameters that can be used with this method.
 
-| Parameter | Type              | Description                                                                                            |
-|:----------|:------------------|:-------------------------------------------------------------------------------------------------------|
-| sourceFiles   | Collection(microsoft.graph.cloudPcSnapshotImportActionDetail)                                                     | The detailed source information for the files to be imported.                                                                                        |
-| assignedUserId     | String   | The unique identifier for the snapshot assigned user, who uses the imported snapshot to provision a new Cloud PC.                                                                            |
-| returnType       | microsoft.graph.cloudPcSnapshotImportActionResult                             | The result of the snapshot import action.                                                               |
-
+| Parameter | Type | Description |
+|:---|:---|:---|
+| assignedUserId     | String   | The unique identifier of the user assigned to the snapshot, who uses the imported snapshot to provision a new Cloud PC. |
+| sourceFiles   | [cloudPcSnapshotImportActionDetail](../resources/cloudpcsnapshotimportactiondetail.md) collection  |Detailed source information for the files to be imported. |
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and [cloudPcSnapshotImportActionResult](../resources/cloudpcsnapshotimportactionresult.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [cloudPcSnapshotImportActionResult](../resources/cloudpcsnapshotimportactionresult.md) object in the response body.
 
 ## Examples
 
 ### Request
 
 The following example shows a request.
-
 
 <!-- {
   "blockType": "request",
@@ -67,8 +64,6 @@ The following example shows a request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/snapshots/importSnapshot
 ```
-
----
 
 ### Response
 
@@ -85,15 +80,15 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context":"https://graph.microsoft.com/beta/$metadata#microsoft.graph.cloudPcSnapshotImportActionResult",
-    "filename": "snapshotForCloudPc",
-    "usageStatus": "notUsed",
-    "importStatus": "inProgress",
-    "assignedUserPrincipalName": "snapshot@rplusint.onmicrosoft.com",
-    "policyName": "Test_ProvisioningPolicy",
-    "startDateTime": "2025-01-13T15:13:14Z",
-    "endDateTime": null,
-    "additionalDetail": null,
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.cloudPcSnapshotImportActionResult",
+  "filename": "snapshotForCloudPc",
+  "usageStatus": "notUsed",
+  "importStatus": "inProgress",
+  "assignedUserPrincipalName": "snapshot@rplusint.onmicrosoft.com",
+  "policyName": "Test_ProvisioningPolicy",
+  "startDateTime": "2025-01-13T15:13:14Z",
+  "endDateTime": null,
+  "additionalDetail": null
 }
 ```
 
