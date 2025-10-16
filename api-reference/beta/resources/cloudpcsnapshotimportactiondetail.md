@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the required detailed information to start the snapshot import action. The user must provide either Azure storage information or a shared access signature URL for the snapshot file. If both are provided, Azure storage information takes priority.
+Represents the required detailed information to start the [snapshot](../resources/cloudpcsnapshot.md) import action. The user must provide either Azure storage information or a shared access signature URL for the snapshot file. If both are provided, Azure storage information takes priority.
 
 This file is a .vhd virtual hard disk format.
 
