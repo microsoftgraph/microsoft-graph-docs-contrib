@@ -22,23 +22,23 @@ This file is a .vhd virtual hard disk format.
 
 | Property           | Type         | Description                   |
 | ------------------ | ------------ | ----------------------------- |
-| sourceType   | [cloudPcSnapshotImportSourceType](#cloudpcsnapshotimportsourcetype-values) | The source type of the snapshot import action. Possible values: azureStorageAccount, sasUrl. Default is "azureStorageAccount."   |
-| fileType   | [cloudPcSnapshotImportFileType](#cloudpcsnapshotimportfiletype-values) | The file type of the imported virtual hard disk file. Possible values: dataFile, virtualMachineGuestState. Default is "dataFile."   |
+| fileType   | [cloudPcSnapshotImportFileType](#cloudpcsnapshotimportfiletype-values) | The file type of the imported virtual hard disk file. The possible values are: `dataFile`, `virtualMachineGuestState`, `unknownFutureValue`. The default value is `dataFile`.   |
 | sasUrl | String | The shared access signature URL of the snapshot import action. |
-| storageBlobInfo | microsoft.graph.cloudPcStorageBlobDetail | The storage account info of the snapshot import action. |
+| sourceType   | [cloudPcSnapshotImportSourceType](#cloudpcsnapshotimportsourcetype-values) | The source type of the snapshot import action. The possible values are: `azureStorageAccount`, `sasUrl`, `unknownFutureValue`. The default value is `azureStorageAccount`.   |
+| storageBlobInfo | [cloudPcStorageBlobDetail](../resources/cloudpcstorageblobdetail.md) | The storage account information of the snapshot import action. |
 
 ### cloudPcSnapshotImportSourceType values
 |Member|Description|
 |:---|:---|
-| azureStorageAccount          | Indicates snapshot is being uploaded from Azure storage account.        |
-| sasUrl             | Indicates snapshot is being uploaded via shared access signature URL.            |
+| azureStorageAccount | Indicates that the snapshot uploads from an Azure storage account. |
+| sasUrl             | Indicates that the snapshot uploads via a shared access signature URL. |
 | unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
 
 ### cloudPcSnapshotImportFileType values
 |Member|Description|
 |:---|:---|
-| dataFile          |  Indicates the file is serving as a data file.        |
-| virtualMachineGuestState             |  Indicates the file is a virtual machine guest state file (VMGS), specific to Trusted Launch vms. It's a blob managed by Azure and contains the unified extensible firmware interface (UEFI) Secure Boot signature databases and other security information.             |
+| dataFile          |  Indicates that the file serves as a data file. |
+| virtualMachineGuestState             |  Indicates that the file is a virtual machine guest state file (VMGS), specific to trusted launch VMs. It's a blob managed by Azure and contains the Unified Extensible Firmware Interface (UEFI) secure boot signature databases and other security information. |
 | unknownFutureValue |  Evolvable enumeration sentinel value. Don't use. |
 
 ## Relationships
@@ -56,10 +56,10 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.cloudPcSnapshotImportActionDetail",
-  "sourceType": "#microsoft.graph.cloudPcSnapshotImportSourceType",
-  "fileType": "#microsoft.graph.cloudPcSnapshotImportFileType",
+  "sourceType": "String",
+  "fileType": "String",
   "sasUrl": "String",
-  "storageBlobInfo": "#microsoft.graph.cloudPcStorageBlobDetail"
+  "storageBlobInfo": {"@odata.type": "microsoft.graph.cloudPcStorageBlobDetail"}
 }
 ```
 
