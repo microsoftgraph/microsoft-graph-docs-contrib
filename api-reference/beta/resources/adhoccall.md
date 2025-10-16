@@ -6,7 +6,7 @@ ms.date: 07/04/2025
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: resourcePageType
-toc.title: "Ad hoc call (preview)"
+toc.title: "Overview"
 ---
 
 # adhocCall resource type
@@ -19,11 +19,22 @@ Contains information about an ad hoc call, including PSTN, 1:1, and group calls.
 
 This resource supports subscribing to [change notifications](/graph/change-notifications-overview).
 
+## Methods
+
+| Method | Return Type |Description |
+| :------ | :----------- | :---------- |
+| [Get callRecording](adhoccall-callrecording-get.md)| [adhocCall resource type](adhoccall.md) | Get a single callRecording object for an ad hoc call |
+| [Get callTranscript](adhoccall-calltranscript-get.md) | [adhocCall resource type](adhoccall.md) | Get a single callTranscript object for an ad hoc call |
+| [List recordings](adhoccall-list-recordings.md) | [callRecording](callrecording.md) collection | Retrieve the list of [callRecordings](../resources/callrecording.md) objects associated with an **adhocCall**. |
+| [List transcripts](../api/onlinemeeting-list-transcripts.md) | [callTranscript](calltranscript.md) collection | Retrieve the list of [callTranscripts](calltranscript.md) of an **adhocCall**. |
+
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
+| endDateTime | DateTime | The meeting end time in UTC. Required when an ad hoc call is ended. |
 |id|String|The unique identifier for the ad hoc call, including PSTN, 1:1, and group calls. Read-only.|
+| startDateTime | DateTime | The meeting start time in UTC. Required when an ad hoc call is started. |
 
 ## Relationships
 
@@ -45,7 +56,9 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.adhocCall",
-  "id": "String (identifier)"
+  "endDateTime": "String (timestamp)",
+  "id": "String (identifier)",
+  "startDateTime": "String (timestamp)",
 }
 ```
 
