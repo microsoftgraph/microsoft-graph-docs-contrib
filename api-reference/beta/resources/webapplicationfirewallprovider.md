@@ -1,6 +1,6 @@
 ---
 title: "webApplicationFirewallProvider resource type"
-description: "Represents a web application firewall (WAF) provider configuration."
+description: "Represents the configuration of a web application firewall (WAF) provider in a Microsoft Entra External ID tenant."
 author: "more-rasika"
 ms.date: 10/10/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a web application firewall (WAF) provider configuration. This abstract resource defines common properties for WAF providers integrated with Microsoft services.
+Represents the configuration of a web application firewall (WAF) provider in a Microsoft Entra External ID tenant. This abstract resource defines common properties for WAF providers integrated with Microsoft services.
 
 
 Inherits from [entity](../resources/entity.md).
