@@ -143,7 +143,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: Verfiy a specific webApplicationFirewallProviders object along with the details of their associated provider.
+### Example 2: Verify a specific webApplicationFirewallProviders object along with the details of their associated provider.
 
 ### Request
 
