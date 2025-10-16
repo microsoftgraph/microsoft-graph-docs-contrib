@@ -32,7 +32,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /networkAccess/deployments('id')
+GET /networkAccess/deployments(id)
 ```
 
 ## Request headers
@@ -56,7 +56,7 @@ If successful, this method returns a `200 OK` response code and a [deployment](.
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "list_deploymentLogs"
+  "name": "get_deploymentLog"
 }
 -->
 ``` http
