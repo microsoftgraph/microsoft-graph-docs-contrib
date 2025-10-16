@@ -211,6 +211,48 @@
     {
       "ChangeList": [
         {
+          "Id": "083f8aaf-e649-4f00-9def-f5a7beced1b9",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "roles",
+          "ChangeType": "Addition",
+          "Description": "Added the **roles** relationship to the [employeeExperience](https://learn.microsoft.com/en-us/graph/api/resources/employeeExperience?view=graph-rest-1.0) resource.",
+          "Target": "employeeExperience"
+        },
+        {
+          "Id": "083f8aaf-e649-4f00-9def-f5a7beced1b9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "employeeExperienceUser",
+          "ChangeType": "Addition",
+          "Description": "Added the [employeeExperienceUser](https://learn.microsoft.com/en-us/graph/api/resources/employeeExperienceUser?view=graph-rest-1.0) resource.",
+          "Target": "employeeExperienceUser"
+        },
+        {
+          "Id": "083f8aaf-e649-4f00-9def-f5a7beced1b9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "engagementRole",
+          "ChangeType": "Addition",
+          "Description": "Added the [engagementRole](https://learn.microsoft.com/en-us/graph/api/resources/engagementRole?view=graph-rest-1.0) resource.",
+          "Target": "engagementRole"
+        },
+        {
+          "Id": "083f8aaf-e649-4f00-9def-f5a7beced1b9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "engagementRoleMember",
+          "ChangeType": "Addition",
+          "Description": "Added the [engagementRoleMember](https://learn.microsoft.com/en-us/graph/api/resources/engagementRoleMember?view=graph-rest-1.0) resource.",
+          "Target": "engagementRoleMember"
+        }
+      ],
+      "Id": "083f8aaf-e649-4f00-9def-f5a7beced1b9",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-09-22T22:17:20.5587061Z",
+      "WorkloadArea": "Employee experience",
+      "SubArea": "Employee engagement"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "3da5e266-9b7b-43bd-b536-9388e1a88024",
           "ApiChange": "Enumeration",
           "ChangedApiName": "engagementConversationMessageReactionType",
