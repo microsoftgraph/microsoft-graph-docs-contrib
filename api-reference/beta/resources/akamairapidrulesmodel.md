@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the configuration for Akamai Rapid Rules in a web application firewall (WAF) integration. Rapid Rules are pre-configured rulesets designed to quickly address emerging threats. This resource describes whether Rapid Rules are enabled and the default action applied to traffic that matches these rules.
+Represents the configuration for Akamai Rapid Rules in a web application firewall (WAF) integration, as defined in the **rapidRules** property of the [akamaiVerifiedDetailsModel object](../resources/akamaiverifieddetailsmodel.md). Rapid Rules are pre-configured rulesets designed to quickly address emerging threats. This resource describes whether Rapid Rules are enabled and the default action applied to traffic that matches these rules.
 
 
 ## Properties
