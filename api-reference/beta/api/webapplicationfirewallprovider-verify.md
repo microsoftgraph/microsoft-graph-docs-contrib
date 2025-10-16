@@ -56,7 +56,7 @@ The following table lists the parameters that are required when you call this ac
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|hostName|String|**TODO: Add Description**|
+|hostName|String|The domain name or host to be verified by the web application firewall provider. Required.|
 
 ## Response
 
