@@ -65,6 +65,33 @@ The following example shows a request.
 -->
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/snapshots/importSnapshot
+
+{
+    "sourceFiles":
+    [
+        {
+            "sourceType": "azureStorageAccount",
+            "fileType": "dataFile",
+            "storageBlobInfo": 
+            {
+                "storageAccountId": "/subscriptions/subscription-id/resourceGroups/resource-group-name/providers/Microsoft.Storage/storageAccounts/account-name",
+                "containerName": "myContainer",
+                "blobName": "snapshotForCloudPc.vhd"
+            }
+        },
+        {
+            "sourceType": "azureStorageAccount",
+            "fileType": "virtualMachineGuestState",
+            "storageBlobInfo": 
+            {
+                "storageAccountId": "/subscriptions/subscription-idresourceGroups/resource-group-name/providers/Microsoft.Storage/storageAccounts/account-name",
+                "containerName": "myContainer",
+                "blobName": "virtualMachineGuestState.vhd"
+            }
+        },
+    ],
+    "assignedUserId": "93aff428-61f2-467f-a879-1102af6fd4a8"
+}
 ```
 
 ### Response
