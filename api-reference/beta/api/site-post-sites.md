@@ -102,5 +102,5 @@ The following example shows the response.
 }-->
 ``` http
 HTTP/1.1 202 Accepted
-Location: https://graph.microsoft.com/beta/sites/getOperationStatus(operationId='e00fdda6-0977-490f-bd3b-d9189fbdb579')
+Location: https://graph.microsoft.com/beta/sites/getOperationStatus(operationId='JXMnaHR0cHMlM0ElMkYlMkZncmFwaC5taWNyb3NvZnQuY29tJTJGc2l0ZXMlMkZ0ZWFtc2l0ZTE=')
 ```
