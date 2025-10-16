@@ -1,7 +1,7 @@
 ---
 title: "Get callTranscript"
 description: "Retrieve a single callTranscript associated with a Microsoft Teams ad hoc call."
-author: "v-SukanyaDas"
+author: "sukanya"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: apiPageType
