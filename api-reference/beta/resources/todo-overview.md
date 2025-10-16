@@ -53,6 +53,19 @@ A [linkedResource](linkedresource.md) represents any item from a partner applica
 GET /me/todo/lists/{todoTaskListId}/tasks/{todoTaskId}/linkedresources/{linkedResourceId}
 ```
 
+## SingleValueExtendedProperty
+
+A [singleValueExtendedProperty](linkedresource.md) represents a custom data field that can be created on a task entity. To get Single Value Extended Properties: (See [get singleValueExtendedProperty](../api/singlevaluelegacyextendedproperty-get.md) for more details)
+
+``` http
+GET /me/todo/lists/{todoTaskListId}/tasks/{todoTaskId}?$expand=singleValueExtendedProperties($filter=id eq '{propertyId}')
+```
+
+``` http
+GET /me/todo/lists/{todoTaskListId}/tasks?$expand=singleValueExtendedProperties($filter=id eq '{propertyId}')
+```
+
+
 ## Track changes using delta query
 
 For performance reasons, you may want to maintain a local cache of objects, and periodically synchronize the local cache with the server, using [delta query](/graph/delta-query-overview).
