@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ```http
-GET /sites/getOperationStatus(operationId={siteOperationId})
+GET /sites/getOperationStatus?operationId='{siteOperationId}'
 ```
 
 ## Function parameters
@@ -75,7 +75,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/sites/getOperationStatus(operationId=JXMnaHR0cHMlM0ElMkYlMkZncmFwaC5taWNyb3NvZnQuY29tJTJGc2l0ZXMlMkZ0ZWFtc2l0ZTE=)
+GET https://graph.microsoft.com/beta/sites/getOperationStatus?operationId='JXMnaHR0cHMlM0ElMkYlMkZncmFwaC5taWNyb3NvZnQuY29tJTJGc2l0ZXMlMkZ0ZWFtc2l0ZTE='
 ```
 
 ### Response
@@ -109,5 +109,10 @@ Content-Type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+      Error: microsoft.graph.microsoft.graph/sites/sitethis.getoperationstatus:
+          Malformed function params operationId='JXMnaHR0cHMlM0ElMkYlMkZncmFwaC5taWNyb3NvZnQuY29tJTJGc2l0ZXMlMkZ0ZWFtc2l0ZTE='. Expected key-value params e.g. /function1(key=value). Remove parentheses if no params are expected.
+    
+      Error: sitethis.getoperationstatus:
+          Malformed function params operationId='JXMnaHR0cHMlM0ElMkYlMkZncmFwaC5taWNyb3NvZnQuY29tJTJGc2l0ZXMlMkZ0ZWFtc2l0ZTE='. Expected key-value params e.g. /function1(key=value). Remove parentheses if no params are expected.
   ]
 }-->
