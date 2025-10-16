@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Represents a snapshot of the device settings of a Cloud PC that can be used to restore the device system. The background service takes periodically, or a user triggers manually to take the snapshot, for disaster recovery/restore usage. 
 
-For provisioning a new Cloud PC with an imported snapshot, check `importSnapshot` API for more information.
+For provisioning a new Cloud PC with an imported snapshot, check [Import snapshot](../api/cloudpcsnapshot-importsnapshot.md) API for more information.
 
 
 Inherits from [entity](../resources/entity.md).
