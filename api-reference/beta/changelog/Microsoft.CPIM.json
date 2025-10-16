@@ -20,14 +20,6 @@
         },
         {
           "Id": "39bcf53a-1d2d-4885-9397-94104dc76f6e",
-          "ApiChange": "Relationship",
-          "ChangedApiName": "signInIdentifiers",
-          "ChangeType": "Addition",
-          "Description": "Added the **signInIdentifiers** relationship to the [identityContainer](https://learn.microsoft.com/en-us/graph/api/resources/identityContainer?view=graph-rest-beta) resource.",
-          "Target": "identityContainer"
-        },
-        {
-          "Id": "39bcf53a-1d2d-4885-9397-94104dc76f6e",
           "ApiChange": "Resource",
           "ChangedApiName": "signInIdentifierBase",
           "ChangeType": "Addition",
