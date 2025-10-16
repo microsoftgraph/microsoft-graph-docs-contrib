@@ -34,7 +34,7 @@ Inherits from [entity](../resources/entity.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|The display name of the WAF provider.|
-|id|String|Unique identifier for the provider resource. Inherited from [entity](../resources/entity.md). Inherits from [entity](../resources/entity.md)|
+|id|String|Unique identifier for the provider resource. Inherited from [entity](../resources/entity.md).|
 
 ## Relationships
 None.
