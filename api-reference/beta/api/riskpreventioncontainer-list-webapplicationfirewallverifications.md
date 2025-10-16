@@ -27,6 +27,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/riskpreventioncontainer-list-webapplicationfirewallverifications-permissions.md)]
 
+[!INCLUDE [rbac-fraudprovider-apis-read](../includes/rbac-for-apis/rbac-fraudprovider-apis-read.md)]
+
 ## HTTP request
 
 <!-- {
@@ -59,7 +61,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Example 1: Retrieve all webApplicationFirewallVerifications.
 
-### Request
+#### Request
 
 The following example shows a request.
 <!-- {
@@ -72,7 +74,7 @@ GET https://graph.microsoft.com/beta/identity/riskPrevention/webApplicationFirew
 ```
 
 
-### Response
+#### Response
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
@@ -137,7 +139,7 @@ Content-Type: application/json
 
 ### Example 2: Retrieve all webApplicationFirewallVerifications along with the details of their associated provider.
 
-### Request
+#### Request
 
 The following example shows a request.
 <!-- {
@@ -150,7 +152,7 @@ GET https://graph.microsoft.com/beta/identity/riskPrevention/webApplicationFirew
 ```
 
 
-### Response
+#### Response
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.

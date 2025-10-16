@@ -26,6 +26,7 @@ Inherits from [entity](../resources/entity.md).
 |[List](../api/riskpreventioncontainer-list-webapplicationfirewallverifications.md)|[webApplicationFirewallVerificationModel](../resources/webapplicationfirewallverificationmodel.md) collection|Get a list of the webApplicationFirewallVerificationModel objects and their properties.|
 |[Get](../api/webapplicationfirewallverificationmodel-get.md)|[webApplicationFirewallVerificationModel](../resources/webapplicationfirewallverificationmodel.md)|Read the properties and relationships of [webApplicationFirewallVerificationModel](../resources/webapplicationfirewallverificationmodel.md) object.|
 |[Delete](../api/riskpreventioncontainer-delete-webapplicationfirewallverifications.md)|None|Delete a webApplicationFirewallVerificationModel object.|
+|[Verify](../api/webapplicationfirewallprovider-verify.md)|[webApplicationFirewallVerificationModel](../resources/webapplicationfirewallverificationmodel.md)|Initiate a verification operation for the provider and return the verification result.|
 
 ## Properties
 |Property|Type|Description|

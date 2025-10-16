@@ -27,6 +27,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/riskpreventioncontainer-delete-webapplicationfirewallverifications-permissions.md)]
 
+[!INCLUDE [rbac-fraudprovider-apis-write](../includes/rbac-for-apis/rbac-fraudprovider-apis-write.md)]
+
 ## HTTP request
 
 <!-- {
@@ -69,7 +71,6 @@ DELETE https://graph.microsoft.com/beta/identity/riskPrevention/webApplicationFi
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true

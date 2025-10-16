@@ -27,6 +27,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/webapplicationfirewallprovider-update-permissions.md)]
 
+[!INCLUDE [rbac-fraudprovider-apis-write](../includes/rbac-for-apis/rbac-fraudprovider-apis-write.md)]
+
 ## HTTP request
 
 <!-- {
@@ -51,7 +53,7 @@ PATCH /identity/riskPrevention/webApplicationFirewallProviders/{webApplicationFi
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|The friendly display name of the Web Application Firewall provider configuration. Required.|
+|displayName|String|The friendly display name of the Web Application Firewall provider configuration.|
 
 
 

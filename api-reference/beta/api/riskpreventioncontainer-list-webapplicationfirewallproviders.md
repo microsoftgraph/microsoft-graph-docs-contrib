@@ -27,6 +27,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/riskpreventioncontainer-list-webapplicationfirewallproviders-permissions.md)]
 
+[!INCLUDE [rbac-fraudprovider-apis-read](../includes/rbac-for-apis/rbac-fraudprovider-apis-read.md)]
+
 ## HTTP request
 
 <!-- {
@@ -38,8 +40,7 @@ GET /identity/riskPrevention/webApplicationFirewallProviders
 ```
 
 ## Optional query parameters
-
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+None.
 
 ## Request headers
 

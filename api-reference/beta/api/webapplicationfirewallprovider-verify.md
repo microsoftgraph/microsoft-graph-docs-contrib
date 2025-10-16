@@ -27,6 +27,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/webapplicationfirewallprovider-verify-permissions.md)]
 
+[!INCLUDE [rbac-fraudprovider-apis-write](../includes/rbac-for-apis/rbac-fraudprovider-apis-write.md)]
+
 ## HTTP request
 
 <!-- {
@@ -36,10 +38,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ```http
 POST /identity/riskPrevention/webApplicationFirewallProviders/{webApplicationFirewallProviderId}/verify
 ```
-
-## Optional query parameters
-
-This method supports some of the OData query parameters, including `$expand` to include related resources. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -66,7 +64,7 @@ If successful, this method returns a `200 OK` response code and a [webApplicatio
 
 ### Example 1: Verfiy a specific webApplicationFirewallProviders object.
 
-### Request
+#### Request
 
 The following example shows a request.
 <!-- {
@@ -74,16 +72,16 @@ The following example shows a request.
   "name": "webapplicationfirewallproviderthis.verify"
 }
 -->
-```http
+``` http
 POST https://graph.microsoft.com/beta/identity/riskPrevention/webApplicationFirewallProviders/{webApplicationFirewallProviderId}/verify
 Content-Type: application/json
 
 {
-    "hostName": "www.contoso.com"
+  "hostName": "String"
 }
 ```
 
-### Response
+#### Response
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
@@ -143,7 +141,7 @@ Content-Type: application/json
 
 ### Example 2: Verfiy a specific webApplicationFirewallProviders object along with the details of their associated provider.
 
-### Request
+#### Request
 
 The following example shows a request.
 <!-- {
@@ -154,8 +152,11 @@ The following example shows a request.
 ```http
 POST https://graph.microsoft.com/beta/identity/riskPrevention/webApplicationFirewallProviders/{webApplicationFirewallProviderId}/verify?$expand=provider
 ```
+{
+    hostName: "www.contoso.com"
+}
 
-### Response
+#### Response
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
