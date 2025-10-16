@@ -24,7 +24,7 @@ Inherits from [entity](../resources/entity.md).
 |Method|Return type|Description|
 |:---|:---|:---|
 |[Import snapshot](../api/cloudpcsnapshot-importsnapshot.md)|[cloudPcSnapshotImportActionResult](../resources/cloudpcsnapshotimportactionresult.md)|Import the [snapshot](../resources/cloudpcsnapshot.md) from the customer-managed storage account using the provided information, and store it in the Azure storage account within the Cloud PC service on behalf of the customer.|
-|[Purge imported snapshot](../api/cloudpcsnapshot-purgeimportedsnapshot.md)|None|Delete the unused imported [snapshot](../resources/cloudpcsnapshot.md) from the Windows 365 service-managed storage account.|
+|[Purge imported snapshot](../api/cloudpcsnapshot-purgeimportedsnapshot.md)|None|Purge (delete) the unused imported [snapshot](../resources/cloudpcsnapshot.md) from the Windows 365 service-managed storage account.|
 |[Retrieve imported snapshots](../api/cloudpcsnapshot-retrievesnapshotimportresults.md)|[cloudPcSnapshotImportActionResult](../resources/cloudpcsnapshotimportactionresult.md)|Retrieve the result and status of the [snapshot](../resources/cloudpcsnapshot.md) import action.|
 |[Retrieve snapshots](../api/cloudpc-retrievesnapshots.md)|[cloudPcSnapshot](../resources/cloudpcsnapshot.md) collection|Get a list of [cloudPcSnapshot](../resources/cloudpcsnapshot.md) resources for a Cloud PC.|
 
