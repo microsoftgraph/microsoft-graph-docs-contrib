@@ -189,7 +189,7 @@ Content-Range: bytes 0-25/128
 > [!NOTE]
 >
 > - To upload large files using SDKs, see [Upload large files using the Microsoft Graph SDKs](/graph/sdks/large-file-upload).
-> - Your app must ensure the total file size specified in the **Content-Range** header is the same for all requests. If a byte range declares a different file size, the request fails.
+> - Your app must ensure the total file size specified in the `Content-Range` header is the same for all requests. If a byte range declares a different file size, the request fails.
 
 ### Response
 
@@ -235,7 +235,7 @@ Content-Type: application/json
 - The **nextExpectedRanges** property doesn't always list all of the missing ranges.
 - On successful fragment writes, it returns the next range to start from (for example, `523-`).
 - On failures where the client sent a fragment the server already received, the server responds with `HTTP 416 Requested Range Not Satisfiable`. To get a more detailed list of missing ranges, you can [request upload status](#resuming-an-in-progress-upload).
-If you include the Authorization header when issuing the PUT call, it might result in an `HTTP 401 Unauthorized` response. Only include the Authorization header and bearer token when issuing the POST request during the first step. Don't include it when issuing the PUT call.
+If you include the `Authorization` header when issuing the PUT call, it might result in an `HTTP 401 Unauthorized` response. Only include the `Authorization` header and bearer token when issuing the POST request during the first step. Don't include it when issuing the PUT call.
 
 ## Completing a file
 
