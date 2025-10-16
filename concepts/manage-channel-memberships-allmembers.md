@@ -12,7 +12,7 @@ ms.date: 09/18/2025
 
 Namespace: microsoft.graph
 
-Use the new `allMembers` API that manages and monitors channel memberships across standard, shared, and private channels. It enhances accuracy by reflecting direct and indirect members correctly. Get the list of all [members](../api-reference/v1.0/api/channel-list-members.md) in a [channel](../api-reference/v1.0/resources/channel.md)
+Use the new `allMembers` API that manages and monitors channel memberships across standard, shared, and private channels. It enhances accuracy by reflecting direct and indirect members correctly. Get the list of all [members](/graph/api/channel-list-allmembers) in a [channel](../api-reference/v1.0/resources/channel.md)
 
 ## Connect users to channels with the annotation property
 
