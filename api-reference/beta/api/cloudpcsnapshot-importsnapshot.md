@@ -37,6 +37,7 @@ POST /deviceManagement/virtualEndpoint/snapshots/importSnapshot
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+|Content-Type|application/json. Required.|
 
 ## Request body
 In the request body, supply a JSON representation of the parameters.
@@ -86,7 +87,7 @@ Content-Type: application/json
   "filename": "snapshotForCloudPc",
   "usageStatus": "notUsed",
   "importStatus": "inProgress",
-  "assignedUserPrincipalName": "snapshot@rplusint.onmicrosoft.com",
+  "assignedUserPrincipalName": "snapshot@contoso.com",
   "policyName": "Test_ProvisioningPolicy",
   "startDateTime": "2025-01-13T15:13:14Z",
   "endDateTime": null,
