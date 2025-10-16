@@ -1,7 +1,7 @@
 ---
 title: "cloudPcReport: retrieveCloudPcRecommendationReports"
 description: "Retrieve Cloud PC recommendation reports for usage optimization and cost savings."
-author: "XiaolouT"
+author: "Ward1994"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: apiPageType
@@ -53,7 +53,7 @@ The following table shows the parameters that are required for this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|reportName|[cloudPcRecommendationReportType](../resources/cloudpcreports.md#cloudpcrecommendationreporttype-values)|The report name. Supported value is: `cloudPcUsageCategoryReport`. Required.|
+|reportType|[cloudPcRecommendationReportType](../resources/cloudpcreports.md#cloudpcrecommendationreporttype-values)|The report type. Supported value is: `cloudPcUsageCategoryReport`. Required.|
 |filter|String|OData `$filter` syntax. Optional. Supported filters are: `and`, `or`, `lt`, `le`, `gt`, `ge`, and `eq`.|
 |select|String collection|OData `$select` syntax. Optional. The selected columns of the reports.|
 |search|String|Specifies a String to search. Optional.|
@@ -86,7 +86,7 @@ POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/report/re
 Content-Type: application/json
 
 {
-  "reportName": "cloudPcUsageCategoryReport",
+  "reportType": "cloudPcUsageCategoryReport",
   "select": [
     "ServicePlanId",
     "ServicePlanName",
@@ -182,7 +182,7 @@ POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/report/re
 Content-Type: application/json
 
 {
-  "reportName": "cloudPcUsageCategoryReport",
+  "reportType": "cloudPcUsageCategoryReport",
   "filter": "",
   "select": [
     "CloudPcId",
