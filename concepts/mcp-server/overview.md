@@ -1,21 +1,19 @@
 ---
 title: Overview of Microsoft MCP Server for Enterprise
-description: "Microsoft MCP Server for Enterprise enables AI agents to query enterprise identity and device data using natural language through the Model Context Protocol."
+description: "Microsoft MCP Server for Enterprise enables AI agents to query enterprise identity data using natural language through the Model Context Protocol."
 author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: Licantrop0
 ms.subservice: enterprise-mcp-server
 ms.topic: overview
-ms.date: 10/09/2025
+ms.date: 10/16/2025
 
 #customer intent: As a developer or IT administrator, I want to understand the Microsoft MCP Server for Enterprise so that I can effectively use natural language to query and manage my organization's identity and device data.
 ---
 
 # Overview of Microsoft MCP Server for Enterprise (preview)
 
-The Microsoft MCP Server for Enterprise is the official programmatic interface for AI agents to query enterprise data in your Microsoft Entra tenant by using natural language. Built on the [Model Context Protocol (MCP)](https://modelcontextprotocol.io/), an open standard that standardizes how AI models interact with external tools and services, it translates natural language requests into Microsoft Graph API calls.
-
-Focused on enterprise management scenarios, the MCP Server for Enterprise provides secure access to Microsoft Entra data. It enables administrators and developers to interact with organizational data through conversational interfaces while maintaining all existing security, permission, and compliance policies.
+The Microsoft MCP Server for Enterprise is a programmatic interface for AI agents to query enterprise data in your Microsoft Entra tenant by using natural language. Built on the [Model Context Protocol (MCP)](https://modelcontextprotocol.io/), an open standard that standardizes how AI models interact with external tools and services, it translates natural language requests into Microsoft Graph API calls.
 
 This overview explains how Microsoft MCP Server for Enterprise works and how you can integrate it into your AI-powered workflows.
 
@@ -32,7 +30,6 @@ This overview explains how Microsoft MCP Server for Enterprise works and how you
 When the AI client starts, it automatically locates the Microsoft Graph MCP Server endpoint at `mcp.svc.cloud.microsoft/enterprise` from the list of installed MCP Servers and retrieves the available tools. This step is the **automatic discovery** phase.
 
 Suppose an administrator asks: "*How many users do we have in our Microsoft Entra tenant?*" Here's an example showing the workflow when you query information through an MCP-enabled AI agent:
-
 
 1. **NLP Processing**: The LLM processes the query by using Natural Language Processing (NLP) techniques to extract intent. It might conclude the intent is "count the number of users in the Microsoft Entra tenant." From the MCP server connections actively running in the agent, it determines to use the `search_for_graph_examples` tool of the Enterprise MCP Server.
 
@@ -72,7 +69,7 @@ The Microsoft MCP Server for Enterprise enables several key scenarios:
 
 ## Current scope and capabilities
 
-The Microsoft MCP Server for Enterprise is currently in private preview and supports only read-only enterprise IT scenarios focused on Microsoft Entra ID and device management. For example, identity and directory read-only operations including user management, group management, application management, device information, and administrative actions.
+The Microsoft MCP Server for Enterprise is currently in private preview and supports only read-only enterprise IT scenarios focused on Microsoft Entra identity and directory read-only operations including user management, group management, application management, device information, and administrative actions.
 
 All operations respect Microsoft Graph permissions and privileges and security policies.
 
