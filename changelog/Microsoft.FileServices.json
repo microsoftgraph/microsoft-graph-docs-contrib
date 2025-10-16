@@ -5,14 +5,6 @@
           {
             "Id": "1fd05db7-93bb-4a07-a6fa-0891cc23ee3d",
             "ApiChange": "Header",
-            "ChangedApiName": "if-match",
-            "ChangeType": "Addition",
-            "Description": "Added the `if-match` header to the [driveItem: createUploadSession](https://learn.microsoft.com/en-us/graph/api/driveitem-createuploadsession?view=graph-rest-beta) method.",
-            "Target": "createUploadSession"
-          },
-          {
-            "Id": "1fd05db7-93bb-4a07-a6fa-0891cc23ee3d",
-            "ApiChange": "Header",
             "ChangedApiName": "if-none-match",
             "ChangeType": "Addition",
             "Description": "Added the `if-none-match` header to the [driveItem: createUploadSession](https://learn.microsoft.com/en-us/graph/api/driveitem-createuploadsession?view=graph-rest-beta) method.",
