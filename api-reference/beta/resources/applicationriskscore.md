@@ -8,16 +8,14 @@ ms.subservice: "microsoft-graph"
 doc_type: resourcePageType
 ---
 
-# applicationRiskScore resource type
-
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 General business and operational information about the application provider
 
-
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
 |compliance|Single|Compliance-related risk score based on adherence to regulatory standards and frameworks (0-10 range)|
@@ -27,9 +25,11 @@ General business and operational information about the application provider
 |total|Single|Overall composite risk score calculated from all risk dimensions (0-10 range)|
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
@@ -46,4 +46,3 @@ The following JSON representation shows the resource type.
   "legal": "Single"
 }
 ```
-

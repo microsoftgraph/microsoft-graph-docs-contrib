@@ -9,11 +9,11 @@ ms.date: 08/06/2025
 ms.custom: sfi-ropc-nochange
 ---
 
-# Enum values
+## Enum values
 
 Namespace: microsoft.graph
 
-### applicationDataType values 
+### applicationDataType values
 
 |Member|
 |:---|
@@ -25,7 +25,7 @@ Namespace: microsoft.graph
 |mediaFiles|
 |unknownFutureValue|
 
-### csaStarLevel values 
+### csaStarLevel values
 
 |Member|
 |:---|
@@ -38,7 +38,7 @@ Namespace: microsoft.graph
 |notSupported|
 |unknownFutureValue|
 
-### dataProtection values 
+### dataProtection values
 
 |Member|
 |:---|
@@ -48,7 +48,7 @@ Namespace: microsoft.graph
 |secureCrossBorderDataTransfer|
 |unknownFutureValue|
 
-### dataRetentionLevel values 
+### dataRetentionLevel values
 
 |Member|
 |:---|
@@ -61,7 +61,7 @@ Namespace: microsoft.graph
 |deletedWithinMoreThan3Months|
 |unknownFutureValue|
 
-### fedRampLevel values 
+### fedRampLevel values
 
 |Member|
 |:---|
@@ -73,7 +73,7 @@ Namespace: microsoft.graph
 |notSupported|
 |unknownFutureValue|
 
-### holdType values 
+### holdType values
 
 |Member|
 |:---|
@@ -82,7 +82,7 @@ Namespace: microsoft.graph
 |public|
 |unknownFutureValue|
 
-### passwordPolicy values 
+### passwordPolicy values
 
 |Member|
 |:---|
@@ -94,7 +94,7 @@ Namespace: microsoft.graph
 |personalInformationUse|
 |unknownFutureValue|
 
-### pciVersion values 
+### pciVersion values
 
 |Member|
 |:---|
@@ -104,7 +104,7 @@ Namespace: microsoft.graph
 |notSupported|
 |unknownFutureValue|
 
-### restEncryptionType values 
+### restEncryptionType values
 
 |Member|
 |:---|
@@ -118,7 +118,7 @@ Namespace: microsoft.graph
 |notSupported|
 |unknownFutureValue|
 
-### sslVersion values 
+### sslVersion values
 
 |Member|
 |:---|
@@ -131,7 +131,7 @@ Namespace: microsoft.graph
 |notSupported|
 |unknownFutureValue|
 
-### userOwnership values 
+### userOwnership values
 
 |Member|
 |:---|
@@ -197,7 +197,7 @@ Namespace: microsoft.graph
 | provisioningCompleted |
 | unknownFutureValue |
 
-### oidcResponseType values 
+### oidcResponseType values
 
 |Member|
 |:---|
@@ -980,7 +980,7 @@ Namespace: microsoft.graph
 | trustedCertificateAuthority |
 | unknownFutureValue |
 
-### customSecurityAttributeComparisonOperator values 
+### customSecurityAttributeComparisonOperator values
 
 | Member |
 | ---- |
@@ -3156,8 +3156,7 @@ Possible values for user account types (group membership), per Windows definitio
 | disabled |
 | enabledForReportingButNotEnforced |
 
-
-### privateNetworkDestinationType values 
+### privateNetworkDestinationType values
 
 |Member|
 |:---|
@@ -3168,7 +3167,7 @@ Possible values for user account types (group membership), per Windows definitio
 |dnsSuffix|
 |unknownFutureValue|
 
-### privateNetworkProtocol values 
+### privateNetworkProtocol values
 
 |Member|
 |:---|
@@ -5176,14 +5175,14 @@ Possible values for user account types (group membership), per Windows definitio
 | logoutUrl |
 | unknownFutureValue |
 
-### signUpIdentifierType values 
+### signUpIdentifierType values
 
 |Member|
 |:---|
 |emailAddress|
 |unknownFutureValue|
 
-### signUpStage values 
+### signUpStage values
 
 |Member|
 |:---|
@@ -5204,7 +5203,7 @@ Possible values for user account types (group membership), per Windows definitio
 | all |
 | unknownFutureValue |
 
-### whatIfAnalysisReasons values 
+### whatIfAnalysisReasons values
 
 |Member|
 |:---|
@@ -5230,8 +5229,7 @@ Possible values for user account types (group membership), per Windows definitio
 |authenticationFlow|
 |unknownFutureValue|
 
-### insiderRiskLevel values 
-
+### insiderRiskLevel values
 
 |Member|
 |:---|
@@ -5241,8 +5239,7 @@ Possible values for user account types (group membership), per Windows definitio
 |elevated|
 |unknownFutureValue|
 
-### userAction values 
-
+### userAction values
 
 |Member|
 |:---|
@@ -5259,7 +5256,7 @@ Possible values for user account types (group membership), per Windows definitio
 | unknownFutureValue |
 | rosterUpdated |
 
-### restoreArtifactsBulkRequestStatus values 
+### restoreArtifactsBulkRequestStatus values
 
 |Member|
 |:---|
@@ -5286,7 +5283,7 @@ Possible values for user account types (group membership), per Windows definitio
 |true|
 |unknownFutureValue|
 
-### restoreJobType values 
+### restoreJobType values
 
 |Member|
 |:---|
@@ -5303,7 +5300,7 @@ Possible values for user account types (group membership), per Windows definitio
 |failed|
 |unknownFutureValue|
 
-### mailboxType values 
+### mailboxType values
 
 |Member|
 |:---|
@@ -5312,7 +5309,7 @@ Possible values for user account types (group membership), per Windows definitio
 |shared|
 |unknownFutureValue|
 
-### tlsClientRegistrationMetadata values 
+### tlsClientRegistrationMetadata values
 
 |Member|
 |:---|
@@ -5343,7 +5340,7 @@ Possible values for user account types (group membership), per Windows definitio
 |phish|
 |unknownFutureValue|
 
-### errorCorrectionLevel values 
+### errorCorrectionLevel values
 
 |Member|
 |:---|
@@ -5353,7 +5350,7 @@ Possible values for user account types (group membership), per Windows definitio
 |h|
 |unknownFutureValue|
 
-### protectionSource values 
+### protectionSource values
 
 |Member|
 |:---|
@@ -5362,7 +5359,7 @@ Possible values for user account types (group membership), per Windows definitio
 |dynamicRule|
 |unknownFutureValue|
 
-### organizationAllowedAudiences values 
+### organizationAllowedAudiences values
 
 |Member|
 |:---|
@@ -5372,7 +5369,7 @@ Possible values for user account types (group membership), per Windows definitio
 |everyone|
 |unknownFutureValue|
 
-### educationSpeechType values 
+### educationSpeechType values
 
 |Member|
 |:---|
@@ -5417,7 +5414,7 @@ Possible values for user account types (group membership), per Windows definitio
 | bullseye         |
 | unknownFutureValue |
 
-### notificationEventsType values 
+### notificationEventsType values
 
 |Member|
 |:---|
@@ -5425,7 +5422,7 @@ Possible values for user account types (group membership), per Windows definitio
 |restoreAndPolicyUpdates|
 |unknownFutureValue|
 
-### notificationRecipientsType values 
+### notificationRecipientsType values
 
 |Member|
 |:---|
@@ -5436,7 +5433,7 @@ Possible values for user account types (group membership), per Windows definitio
 |allAdmins|
 |unknownFutureValue|
 
-### cloudPcPolicyTimezone values 
+### cloudPcPolicyTimezone values
 
 | Member             | Value | Description                                                                                                   |
 | ------------------ | ----- | ------------------------------------------------------------------------------------------------------------- |
@@ -5473,14 +5470,14 @@ Possible values for user account types (group membership), per Windows definitio
 | lint               | 30    | Indicates the time zone is associated with Line Islands Time(UTC+14:00).                                      |
 | unknownFutureValue | 31    | Evolvable enumeration sentinel value. Do not use.                                                             |
 
-### resourceLinkType values 
+### resourceLinkType values
 
 |Member|
 |:---|
 |url|
 |unknownFutureValue|
 
-### userPersona values 
+### userPersona values
 
 |Member|
 |:---|
@@ -5490,7 +5487,7 @@ Possible values for user account types (group membership), per Windows definitio
 |internalMember|
 |internalGuest|
 
-### fileStorageContainerBillingClassification values 
+### fileStorageContainerBillingClassification values
 
 |Member|
 |:---|
@@ -5499,7 +5496,7 @@ Possible values for user account types (group membership), per Windows definitio
 |directToCustomer|
 |unknownFutureValue|
 
-### fileStorageContainerBillingStatus values 
+### fileStorageContainerBillingStatus values
 
 |Member|
 |:---|
@@ -5507,7 +5504,7 @@ Possible values for user account types (group membership), per Windows definitio
 |valid|
 |unknownFutureValue|
 
-### fileStorageContainerTypeAppPermission values 
+### fileStorageContainerTypeAppPermission values
 
 |Member|
 |:---|
@@ -5528,7 +5525,7 @@ Possible values for user account types (group membership), per Windows definitio
 |full|
 |unknownFutureValue|
 
-### fileStorageContainerTypeSettingsOverride values 
+### fileStorageContainerTypeSettingsOverride values
 
 |Member|
 |:---|
@@ -5540,7 +5537,7 @@ Possible values for user account types (group membership), per Windows definitio
 |maxStoragePerContainerInBytes|
 |unknownFutureValue|
 
-### aggregationPeriod values 
+### aggregationPeriod values
 
 |Member|
 |:---|
@@ -5549,7 +5546,7 @@ Possible values for user account types (group membership), per Windows definitio
 |d30|
 |unknownFutureValue|
 
-### aggregationWindow values 
+### aggregationWindow values
 
 |Member|
 |:---|
