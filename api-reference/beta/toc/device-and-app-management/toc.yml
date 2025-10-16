@@ -360,6 +360,12 @@ items:
     items:
     - name: Cloud PC snapshot
       href: ../../resources/cloudpcsnapshot.md
+    - name: Import snapshot
+      href: ../../api/cloudpcsnapshot-importsnapshot.md
+    - name: Purge imported snapshot
+      href: ../../api/cloudpcsnapshot-purgeimportedsnapshot.md
+    - name: Retrieve imported snapshots
+      href: ../../api/cloudpcsnapshot-retrievesnapshotimportresults.md
     - name: Retrieve snapshots
       href: ../../api/cloudpc-retrievesnapshots.md
   - name: Cloud PC supported region
@@ -557,6 +563,10 @@ items:
       href: ../../resources/cloudpcreviewstatus.md
     - name: Cloud PC scoped permission
       href: ../../resources/cloudpcscopedpermission.md
+    - name: Cloud PC snapshot import action detail
+      href: ../../resources/cloudpcsnapshotimportactiondetail.md
+    - name: Cloud PC snapshot import action result
+      href: ../../resources/cloudpcsnapshotimportactionresult.md
     - name: Cloud PC source device image
       href: ../../resources/cloudpcsourcedeviceimage.md
     - name: Cloud PC status detail
@@ -565,6 +575,8 @@ items:
       href: ../../resources/cloudpcstatusdetails.md
     - name: Cloud PC status summary
       href: ../../resources/cloudpcstatussummary.md
+    - name: Cloud PC storage blob detail
+      href: ../../resources/cloudpcstorageblobdetail.md
     - name: Cloud PC subscription
       href: ../../resources/cloudpcsubscription.md
     - name: Cloud PC supported region restriction detail
