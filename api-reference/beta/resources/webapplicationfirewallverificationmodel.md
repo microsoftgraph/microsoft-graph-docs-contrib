@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a verification operation and result for a domain managed by a web application firewall (WAF) provider.
+Represents a verification operation and result for a domain managed by a [web application firewall (WAF) provider](../resources/webapplicationfirewallprovider.md).
 
 
 Inherits from [entity](../resources/entity.md).
@@ -30,7 +30,7 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Unique identifier for the verification model. Inherited from [entity](../resources/entity.md). Inherits from [entity](../resources/entity.md)|
+|id|String|Unique identifier for the verification model. Inherited from [entity](../resources/entity.md).|
 |providerType|webApplicationFirewallProviderType|Specifies the type of WAF provider used for the verification. The possible values are: `akamai`, `cloudflare`, `unknownFutureValue`.|
 |verificationResult|[webApplicationFirewallVerificationResult](../resources/webapplicationfirewallverificationresult.md)|An object describing the outcome of the verification operation, including status, errors or warnings|
 |verifiedDetails|[webApplicationFirewallVerifiedDetails](../resources/webapplicationfirewallverifieddetails.md)|Details of DNS configuration|

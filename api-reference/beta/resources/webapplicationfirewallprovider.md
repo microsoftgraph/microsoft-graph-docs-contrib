@@ -16,7 +16,9 @@ Namespace: microsoft.graph
 
 Represents the configuration of a web application firewall (WAF) provider in a Microsoft Entra External ID tenant. This abstract resource defines common properties for WAF providers integrated with Microsoft services.
 
-
+This resource is an abstract type from which the following WAF provider resources derive:
+- [akamaiWebApplicationFirewallProvider](../resources/akamaiwebapplicationfirewallprovider.md)
+- [cloudFlareWebApplicationFirewallProvider](../resources/cloudflarewebapplicationfirewallprovider.md)
 Inherits from [entity](../resources/entity.md).
 
 
@@ -28,7 +30,6 @@ Inherits from [entity](../resources/entity.md).
 |[Get](../api/webapplicationfirewallprovider-get.md)|[webApplicationFirewallProvider](../resources/webapplicationfirewallprovider.md)|Read the properties and relationships of [webApplicationFirewallProvider](../resources/webapplicationfirewallprovider.md) object.|
 |[Update](../api/webapplicationfirewallprovider-update.md)|[webApplicationFirewallProvider](../resources/webapplicationfirewallprovider.md)|Update the properties of a webApplicationFirewallProvider object.|
 |[Delete](../api/riskpreventioncontainer-delete-webapplicationfirewallproviders.md)|None|Delete a webApplicationFirewallProvider object.|
-|[Verify](../api/webapplicationfirewallprovider-verify.md)|[webApplicationFirewallVerificationModel](../resources/webapplicationfirewallverificationmodel.md)|Initiate a verification operation for the provider and return the verification result.|
 
 ## Properties
 |Property|Type|Description|

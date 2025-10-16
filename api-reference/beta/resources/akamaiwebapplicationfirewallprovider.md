@@ -32,7 +32,7 @@ For the list of API operations for managing this resource type, see the [webAppl
 |clientToken|String|Akamai API client token used for authentication to the Akamai account. Contact your Akamai Customer Success Manager for assistance with this information.|
 |displayName|String|The friendly display name of the Akamai provider configuration. Inherited from [webApplicationFirewallProvider](../resources/webapplicationfirewallprovider.md).|
 |hostPrefix|String|Prefix used to identify the host or domain in Akamai configuration operations. This value may be required for certain API calls or configuration scenarios.|
-|id|String|Unique identifier for the provider resource. Inherited from [entity](../resources/entity.md). Inherits from [entity](../resources/entity.md)|
+|id|String|Unique identifier for the provider resource. Inherited from [entity](../resources/entity.md).|
 
 ## Relationships
 None.
