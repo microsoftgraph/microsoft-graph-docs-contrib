@@ -1,7 +1,7 @@
 ---
 title: "Get fido2AuthenticationMethod"
 description: "Read the properties and relationships of a fido2AuthenticationMethod object."
-author: "calvinlui"
+author: "hanki71"
 ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"

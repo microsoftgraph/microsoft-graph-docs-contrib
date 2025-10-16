@@ -1,7 +1,7 @@
 ---
 title: "List fido2AuthenticationMethod"
 description: "Retrieve a list of the fido2AuthenticationMethod objects and their properties."
-author: "calvinlui"
+author: "hanki71"
 ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"

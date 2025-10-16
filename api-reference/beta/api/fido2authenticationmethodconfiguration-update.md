@@ -1,7 +1,7 @@
 ---
 title: "Update fido2AuthenticationMethodConfiguration"
 description: "Update the properties of a fido2AuthenticationMethodConfiguration object."
-author: "calvinlui"
+author: "hanki71"
 ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
@@ -71,8 +71,40 @@ Content-Type: application/json
 
 {
     "@odata.type": "#microsoft.graph.fido2AuthenticationMethodConfiguration",
-    "state": "enabled",
-    "isAttestationEnforced": "true"
+    "id": "Fido2",
+    "state": "disabled",
+    "isSelfServiceRegistrationAllowed": true,
+    "isAttestationEnforced": true,
+    "keyRestrictions": {
+        "isEnforced": false,
+        "enforcementType": "block",
+        "aaGuids": []
+    },
+    "includeTargets": [
+        {
+            "targetType": "group",
+            "id": "all_users",
+            "isRegistrationRequired": false,
+            "allowedPasskeyProfiles": [
+                "00000000-0000-0000-0000-000000000001"
+            ]
+        }
+    ],
+    "excludeTargets": [],
+    "passkeyProfiles": [
+        {
+            "id": "00000000-0000-0000-0000-000000000001",
+            "name": "Default passkey profile",
+            "passkeyTypes": "deviceBound,synced",
+            "attestationEnforcement": "disabled",
+            "keyRestrictions": {
+                "isEnforced": false,
+                "enforcementType": "allow",
+                "aaGuids": [
+                ]
+            }
+        }
+    ]
 }
 ```
 

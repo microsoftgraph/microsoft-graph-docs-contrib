@@ -34,9 +34,9 @@ Inherits from [authenticationMethodConfiguration](../resources/authenticationmet
 |:---|:---|:---|
 |excludeTargets|[excludeTarget](../resources/excludetarget.md) collection|Groups of users that are excluded from the policy.|
 |id|String|The authentication method policy identifier.|
-|isAttestationEnforced|Boolean|Determines whether attestation must be enforced for FIDO2 security key registration.|
-|isSelfServiceRegistrationAllowed|Boolean|Determines if users can register new FIDO2 security keys.|
-|keyRestrictions|[fido2KeyRestrictions](../resources/fido2keyrestrictions.md)|Controls whether key restrictions are enforced on FIDO2 security keys, either allowing or disallowing certain key types as defined by Authenticator Attestation GUID (AAGUID), an identifier that indicates the type (for example, make and model) of the authenticator.|
+|isAttestationEnforced|Boolean|Determines whether attestation must be enforced for FIDO2 passkey registration.|
+|isSelfServiceRegistrationAllowed|Boolean|Determines if users can register new FIDO2 passkeys.|
+|keyRestrictions|[fido2KeyRestrictions](../resources/fido2keyrestrictions.md)|Controls whether key restrictions are enforced on FIDO2 passkeys, either allowing or disallowing certain key types as defined by Authenticator Attestation GUID (AAGUID), an identifier that indicates the type (for example, make and model) of the authenticator.|
 |state|authenticationMethodState|Possible values are: `enabled`, `disabled`.|
 
 ## Relationships

@@ -1,7 +1,7 @@
 ---
 title: "Delete fido2AuthenticationMethodConfiguration"
 description: "Delete a fido2AuthenticationMethodConfiguration object."
-author: "calvinlui"
+author: "hanki71"
 ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
