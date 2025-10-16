@@ -103,7 +103,7 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 | sharepointIds        | [sharepointIds][]  | Returns identifiers useful for SharePoint REST compatibility. Read-only.                       |
 | siteCollection       | [siteCollection][] | Provides details about the site's site collection. Available only on the root site. Read-only. |
 | template             | siteTemplateType   | Specifies the template applied to the site. The possible values are: `sitepagepublishing`, `group`, `sts`, `unknownFutureValue`.|
-| webUrl               | String             | The URL for the site. Read-only. Inherited from [baseItem](../resources/baseitem.md).                                         |
+| webUrl               | String             | The URL for the site that can only be provided at the time of site creation. Read-only. Inherited from [baseItem](../resources/baseitem.md).                                         |
 
 ### id property
 
