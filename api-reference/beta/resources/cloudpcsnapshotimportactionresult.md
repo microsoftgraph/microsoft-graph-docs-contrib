@@ -18,14 +18,6 @@ Represents the result of the snapshot import action. Each action has status and 
 
 Windows 365 administrators need to prepare Provisioning Policy and assign to users as a requirement for snapshot import.
 
-## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[Retrieve snapshots](../api/cloudpc-retrievesnapshots.md)|[cloudPcSnapshot](../resources/cloudpcsnapshot.md) collection|Get a list of [cloudPcSnapshot](../resources/cloudpcsnapshot.md) resources for a Cloud PC.|
-|[Import snapshot](../api/cloudpcsnapshot-importsnapshot.md)|[cloudPcSnapshotImportActionResult](../resources/cloudpcsnapshotimportactionresult.md)|Import the snapshot from customer managed storage account for the given information, and store it in the Azure storage account in the Cloud PC service on behalf of customers.|
-|[Purge imported snapshot](../api/cloudpcsnapshot-purgeimportedsnapshot.md)|None|Delete the unused imported snapshot from Windows 365 service managed storage account.|
-|[Retrieve imported snapshot](../api/cloudpcsnapshot-retrievesnapshotimportresults.md)|[cloudPcSnapshotImportActionResult](../resources/cloudpcsnapshotimportactionresult.md)|Retrieve the result and status of the snapshot importing action.|
-
 ## Properties
 | Property           | Type         | Description                   |
 | ------------------ | ------------ | ----------------------------- | 
