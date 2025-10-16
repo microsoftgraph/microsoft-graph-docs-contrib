@@ -102,6 +102,7 @@ The following example shows the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+```
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('d4220f1b-4c12-436c-8a03-dc3e362f9d54')/adhocCalls",

@@ -31,8 +31,8 @@ This resource supports subscribing to [change notifications](/graph/change-notif
 | :------ | :----------- | :---------- |
 | [Get callRecording](adhoccall-callrecording-get.md)| [adhocCall resource type](adhoccall.md) | Get a single callRecording object for an ad hoc call |
 | [Get callTranscript](adhoccall-calltranscript-get.md) | [adhocCall resource type](adhoccall.md) | Get a single callTranscript object for an ad hoc call |
-| [List recordings](adhoccall-list-recordings.md) | [callRecording](callrecording.md) collection | Retrieve the list of [callRecordings](../resources/callrecording.md) objects associated with an **adhocCall**. |
-| [List transcripts](../api/onlinemeeting-list-transcripts.md) | [callTranscript](calltranscript.md) collection | Retrieve the list of [callTranscripts](calltranscript.md) of an **adhocCall**. |
+| [List recordings](adhoccall-getall-recordings.md) | [callRecording](callrecording.md) collection | Retrieve the list of [callRecordings](../resources/callrecording.md) objects associated with an **adhocCall**. |
+| [List transcripts](adhoccall-getall-transcripts.md) | [callTranscript](calltranscript.md) collection | Retrieve the list of [callTranscripts](calltranscript.md) of an **adhocCall**. |
 
 ## Properties
 

@@ -1,7 +1,7 @@
 ---
 title: "Get callRecording"
 description: "Retrieve a single callRecording associated with a Microsoft Teams ad hoc call."
-author: "v-sukanyadas"
+author: "v-SukanyaDas"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: apiPageType
