@@ -33,21 +33,20 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /sites/getOperationStatus(operationId='{siteOperationId}')
 ```
-
-## Optional query parameters
-This method supports the `$filter` and `$select` [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Function parameters
 
 In the request URL, provide the following query parameters with values.
 
-|Parameter|Type|Description|
-|:---|:---|:---|
+| Parameter | Type | Description |
+| :--- | :--- | :--- |
 |operationId|String| The ID of the operation for which the site creation is performed. Required.|
 
+## Optional query parameters
+This method supports the `$filter` and `$select` [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 
@@ -75,7 +74,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/sites/getOperationStatus(operationId=JXMnaHR0cHMlM0ElMkYlMkZncmFwaC5taWNyb3NvZnQuY29tJTJGc2l0ZXMlMkZ0ZWFtc2l0ZTE=)
+GET https://graph.microsoft.com/beta/sites/getOperationStatus(operationId='JXMnaHR0cHMlM0ElMkYlMkZncmFwaC5taWNyb3NvZnQuY29tJTJGc2l0ZXMlMkZ0ZWFtc2l0ZTE=')
 ```
 
 ### Response
@@ -101,3 +100,13 @@ Content-Type: application/json
   "status": "succeeded"
 }
 ```
+
+<!-- {
+  "type": "#page.annotation",
+  "description": "Site get operation status.",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+  ]
+}-->
