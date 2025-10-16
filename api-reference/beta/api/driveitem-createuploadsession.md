@@ -70,10 +70,10 @@ POST /users/{userId}/drive/items/{itemId}/createUploadSession
 
 ### Request headers
 
-| Name       | Value | Description                                                                                                                                                            |
-|:-----------|:------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| *if-match* | etag  | If this request header is included and the eTag (or cTag) provided doesn't match the current etag on the item, a `412 Precondition Failed` error response is returned. |
-| *if-none-match* | etag | If this request header is included and the eTag (or cTag) provided matches the current etag on the item, a `412 Precondition Failed` error response is returned. |
+| Name | Value | Description |
+|:---|:---|:---|
+| if-match | etag  | If this request header is included and the eTag (or cTag) provided doesn't match the current etag on the item, a `412 Precondition Failed` error response is returned. |
+| if-none-match | etag | If this request header is included and the eTag (or cTag) provided matches the current etag on the item, a `412 Precondition Failed` error response is returned. |
 
 ### Request body
 
@@ -84,15 +84,15 @@ For example, the **item** property allows setting the following parameters:
 ```json
 {
   "@microsoft.graph.conflictBehavior": "fail (default) | replace | rename",
-  "description": "description", // only available for OneDrive Personal
+  "description": "description", // only available for OneDrive (personal)
   "driveItemSource": { "@odata.type": "microsoft.graph.driveItemSource" },
-  "fileSize": 1234, // only available for OneDrive Personal
+  "fileSize": 1234, // only available for OneDrive (personal)
   "name": "filename.txt",
   "mediaSource": { "@odata.type": "microsoft.graph.mediaSource" }
 }
 ```
 
-The following example controls the behavior if the filename is already taken. The example also specifies that the final file shouldn't be created until an explicit completion request is made.
+The following example controls the behavior when the filename is already taken. This example also specifies that the final file shouldn't created until an explicit completion request is made.
 
 <!-- { "blockType": "ignored" } -->
 ```json
@@ -234,18 +234,16 @@ Content-Type: application/json
 
 ## Remarks
 
-- The `nextExpectedRanges` property doesn't always list all of the missing ranges.
-- On successful fragment writes, it will return the next range to start from (for example "523-").
-- On failures when the client sent a fragment the server had already received, the server responds with `HTTP 416 Requested Range Not Satisfiable`.
-  You can [request upload status](#resuming-an-in-progress-upload) to get a more detailed list of missing ranges.
-- If you include the Authorization header when issuing the `PUT` call, it may
--  result in an `HTTP 401 Unauthorized` response. Only send the Authorization header and bearer token when issuing the `POST` during the first step. Don't include it when you issue the `PUT` call.
+- The **nextExpectedRanges** property doesn't always list all of the missing ranges.
+- On successful fragment writes, it returns the next range to start from (for example "523-").
+- On failures where the client sends a fragment the server has already received, the server responds with `HTTP 416 Requested Range Not Satisfiable`. To get a more detailed list of missing ranges, you can [request upload status](#resuming-an-in-progress-upload)
+- If you include the Authorization header when issuing the PUT call, it might result in an `HTTP 401 Unauthorized` response. Only include the Authorization header and bearer token when issuing the POST request during the first step. Don't include it when issuing the PUT call.
 
 ## Completing a file
 
-If `deferCommit` is false or unset, then the upload is automatically completed when the final byte range of the file is PUT to the upload URL.
+If **deferCommit** is `false` or unset, then the upload is automatically completed when the final byte range of the file is PUT to the upload URL.
 
-If `deferCommit` is true, you can explicitly complete the upload in two ways:
+If **deferCommit** is `true`, you can explicitly complete the upload in two ways:
 
 - After the final byte range of the file is PUT to the upload URL, send a final POST request to the upload URL with zero-length content (currently only supported on OneDrive for Business and SharePoint).
 - After the final byte range of the file is PUT to the upload URL, send a final PUT request in the same way that you would [handle upload errors](#handle-upload-errors) (currently only supported on OneDrive Personal).
@@ -425,7 +423,7 @@ If-Match: {etag or ctag}
 
 ### Response
 
-If the file can be committed using the new metadata, an `HTTP 201 Created` or `HTTP 200 OK` response is returned with the Item metadata for the uploaded file.
+If the file can be committed using the new metadata, an `HTTP 201 Created` or `HTTP 200 OK` response is returned with the **driveItem** metadata for the uploaded file.
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
 
@@ -457,12 +455,11 @@ Content-Type: application/json
 
 ## Error responses
 
-See the [Error Responses][error-response] article for details about
-how errors are returned.
+For details about how errors are returned, see [Error responses][error-response].
 
 [error-response]: /graph/errors
 [item-resource]: ../resources/driveitem.md
-[driveItemSource]: ../resources/driveItemSource.md
+[driveItemSource]: ../resources/driveitemsource.md
 [mediaSource]: ../resources/mediaSource.md
 
 ## Related content
