@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Create an upload session to allow your app to upload files up to the maximum file size.
 
-An upload session allows your app to upload ranges of the file in sequential API requests. Upload sessions also allow the transfer to resume if a connection is dropped while the upload is in progress.
+An upload session allows your app to upload ranges of the file in sequential API requests. It also enables the transfer to resume if the connection is dropped during the upload.
 
 To upload a file using an upload session:
 
