@@ -1,6 +1,6 @@
 ---
 title: "cloudPcSnapshotImportActionResult resource type"
-description: "Represents the result of the snapshot import action. Each action has status and can be tracked individually. Once the action returns `succeeded` status, the snapshot is then ready for use in Cloud PC provisioning."
+description: "Represents the result of the snapshot import action."
 author: "hyc3z"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
@@ -14,42 +14,41 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the result of the snapshot import action. Each action has status and can be tracked individually. Once the action returns `succeeded` status, the snapshot is then ready for use in Cloud PC provisioning.
+Represents the result of the [snapshot](../resources/cloudpcsnapshot.md) import action. Each action has a status and can be tracked individually. When the action returns a succeeded status, the snapshot is ready for use in Cloud PC provisioning.
 
-Windows 365 administrators need to prepare Provisioning Policy and assign to users as a requirement for snapshot import.
+Windows 365 administrators must prepare a provisioning policy and assign it to users as a requirement for snapshot import.
 
 ## Properties
 | Property           | Type         | Description                   |
 | ------------------ | ------------ | ----------------------------- | 
-| snapshotId   | String | The unique identifier for the imported snapshot. Example: `d09ae73d-b70f-4836-95c1-59652c947e1c`. Read-only.    |
-| filename   | String | The file name for the imported snapshot. Example: `MyCloudPc.vhd`. Read-only.      |
-| importStatus | [cloudPcSnapshotImportActionStatus](#cloudpcsnapshotimportactionstatus-values) | The status of the snapshot import action, Possible values: pending, inProgress, succeeded, failed. Default is "pending." Read-only. |
-| usageStatus | [cloudPcImportedSnapshotState](#cloudpcimportedsnapshotstate-values) | The Cloud PC usage status of the imported snapshot. Possible values: notUsed, inUse, expired. Default is "notUsed." Read-only. |
-| assignedUserPrincipalName   | String | The assigned user's principal name. Example: example@example.com.   |
-| policyName   | String | The assigned Provision policy name of the upload action. This policy is the Provision policy that takes effect if a new Cloud PC is going to be provisioned. Example: "MyProvisioningPolicy". Read-only.   |
-| startDateTime | DateTimeOffset                                                 | The start time of the snapshot import action. The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC). For example, midnight UTC on Jan 1, 2014 appear as '2014-01-01T00:00:00Z.' Read-Only.            |
-| endDateTime   | DateTimeOffset                                                 | The end time of the snapshot import action. The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC). For example, midnight UTC on Jan 1, 2014 appear as '2014-01-01T00:00:00Z.' Read-Only.  |
-| additionalDetail   | String | More details about the snapshot import action. Example: `The snapshot import has failed because the file format is incorrect.` This property only contains value when errors happen during the process. Read-only.   |
+| additionalDetail   | String | More details about the snapshot import action. For example, `The snapshot import has failed because the file format is incorrect`. This property only contains a value when errors occur during the process. Read-only.   |
+| assignedUserPrincipalName   | String | The assigned user's principal name. For example, `ryan@contoso.com`.   |
+| endDateTime   | DateTimeOffset | The end time of the snapshot import action. The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC). For example, midnight UTC on Jan 1, 2014 appear as `2014-01-01T00:00:00Z`. Read-only.  |
+| filename   | String | The file name for the imported snapshot. For example: `MyCloudPc.vhd`. Read-only.      |
+| importStatus | [cloudPcSnapshotImportActionStatus](#cloudpcsnapshotimportactionstatus-values) | The status of the snapshot import action. The possible values are: `pending`, `inProgress`, `succeeded`, `failed`, `unknownFutureValue`. The default value is `pending`. Read-only. |
+| policyName   | String | The name of the assigned provisioning policy for the upload action. This policy takes effect if a new Cloud PC is provisioned. For example, `MyProvisioningPolicy`. Read-only.   |
+| snapshotId   | String | The unique identifier for the imported snapshot. For example, `d09ae73d-b70f-4836-95c1-59652c947e1c`. Read-only.    |
+| startDateTime | DateTimeOffset | The start time of the snapshot import action. The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC). For example, midnight UTC on Jan 1, 2014 appear as `2014-01-01T00:00:00Z`. Read-only.            |
+| usageStatus | [cloudPcImportedSnapshotState](#cloudpcimportedsnapshotstate-values) | The Cloud PC usage status of the imported snapshot. The possible values are: `notUsed`, `inUse`, `expired`, `unknownFutureValue`. The default value is `notUsed`. Read-only. |
 
 ### cloudPcImportedSnapshotState values
 
 |Member|Description|
 |:---|:---|
-| notUsed          | Indicates snapshot isn't yet used.        |
-| inUse             |  Indicates snapshot is currently in use.            |
-| expired             |  Indicates the snapshot is expired and can no longer be used.            |
+| notUsed          | Indicates that the snapshot isn't yet used.        |
+| inUse             |  Indicates that the snapshot is currently in use.            |
+| expired             |  Indicates that the snapshot is expired and can no longer be used.            |
 | unknownFutureValue |  Evolvable enumeration sentinel value. Don't use. |
 
 ### cloudPcSnapshotImportActionStatus values
 
 |Member|Description|
 |:---|:---|
-| pending          | Indicates snapshot upload is queued and not yet executed.        |
-| inProgress             | Indicates snapshot is currently being uploaded.            |
-| succeeded             | Indicates snapshot upload action finished successfully.            |
-| failed             | Indicates snapshot upload is failed.            |
+| pending          | Indicates that the snapshot upload is queued and yet to start.        |
+| inProgress             | Indicates that the snapshot upload is in progress. |
+| succeeded             | Indicates that the snapshot upload action finished successfully.            |
+| failed             | Indicates that the snapshot upload failed.            |
 | unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
-
 
 ## Relationships
 None.
@@ -60,22 +59,21 @@ The following JSON representation shows the resource type.
   "blockType": "resource",
   "keyProperty": "snapshotId",
   "@odata.type": "microsoft.graph.cloudPcSnapshotImportActionResult",
-  "baseType": "microsoft.graph.entity",
   "openType": false
 }
 -->
 ``` json
 {
   "@odata.type": "#microsoft.graph.cloudPcSnapshotImportActionResult",
-  "snapshotId": "String",
-  "filename": "String",
-  "importStatus": "#microsoft.graph.cloudPcSnapshotImportActionStatus",
-  "usageStatus": "#microsoft.graph.cloudPcImportedSnapshotState",
+  "additionalDetail": "String",
   "assignedUserPrincipalName": "String",
+  "endDateTime": "String (timestamp)",
+  "filename": "String",
+  "importStatus": "String",
   "policyName": "String",
-  "startDateTime": "DateTimeOffset",
-  "endDateTime": "DateTimeOffset",
-  "additionalDetail": "String"
+  "snapshotId": "String",
+  "startDateTime": "String (timestamp)",
+  "usageStatus": "String"
 }
 ```
 
