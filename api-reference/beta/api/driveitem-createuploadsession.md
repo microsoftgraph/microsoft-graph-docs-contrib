@@ -92,7 +92,7 @@ For example, the **item** property allows setting the following parameters:
 }
 ```
 
-The following example controls the behavior when the filename is already taken. This example also specifies that the final file shouldn't created until an explicit completion request is made.
+The following example controls the behavior when the filename is already taken. This example also specifies that the final file shouldn't be created until an explicit completion request is made.
 
 <!-- { "blockType": "ignored" } -->
 ```json
@@ -235,8 +235,8 @@ Content-Type: application/json
 ## Remarks
 
 - The **nextExpectedRanges** property doesn't always list all of the missing ranges.
-- On successful fragment writes, it returns the next range to start from (for example "523-").
-- On failures where the client sends a fragment the server has already received, the server responds with `HTTP 416 Requested Range Not Satisfiable`. To get a more detailed list of missing ranges, you can [request upload status](#resuming-an-in-progress-upload)
+- On successful fragment writes, it returns the next range to start from (for example, `523-`).
+- On failures where the client sent a fragment the server already received, the server responds with `HTTP 416 Requested Range Not Satisfiable`. To get a more detailed list of missing ranges, you can [request upload status](#resuming-an-in-progress-upload).
 - If you include the Authorization header when issuing the PUT call, it might result in an `HTTP 401 Unauthorized` response. Only include the Authorization header and bearer token when issuing the POST request during the first step. Don't include it when issuing the PUT call.
 
 ## Completing a file
@@ -328,7 +328,7 @@ This cleans up the temporary file holding the data previously uploaded.
 This should be used in scenarios where the upload is aborted, for example, if the user cancels the transfer.
 
 Temporary files and their accompanying upload session are automatically cleaned up after the **expirationDateTime** has passed.
-Temporary files might not be deleted immediately after the expiration time has elapsed.
+Temporary files might not be deleted immediately after the expiration time elapsed.
 
 ### Request
 

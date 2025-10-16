@@ -82,9 +82,9 @@ For example, the **item** property allows setting the following parameters:
 ```json
 {
   "@microsoft.graph.conflictBehavior": "fail (default) | replace | rename",
-  "description": "description", // only available for OneDrive Personal
+  "description": "description", // only available for OneDrive (personal)
   "driveItemSource": { "@odata.type": "microsoft.graph.driveItemSource" },
-  "fileSize": 1234, // only available for OneDrive Personal
+  "fileSize": 1234, // only available for OneDrive (personal)
   "name": "filename.txt",
   "mediaSource": { "@odata.type": "microsoft.graph.mediaSource" }
 }
