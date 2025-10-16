@@ -21,7 +21,6 @@ This resource supports subscribing to [change notifications](/graph/change-notif
 
 > [!NOTE]
 > For ad hoc calls:
-
 > - To obtain the call ID while the call is still ongoing, have the app get called through [App-hosted/service-hosted Calls](/graph/api/resources/call?view=graph-rest-1.0&preserve-view=true) and use the `callChainId`.
 > - `getAll` variant is available to get all ad hoc calls for a user.
 > - Enumeration of artifacts for a particular call is not available.
