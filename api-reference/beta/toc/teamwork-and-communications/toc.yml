@@ -792,7 +792,7 @@ items:
   - name: Channel
     items:
     - name: Manage channel membership
-      href: ../../../../concepts/membership-overview/manage-channel-memberships-allmembers.md
+      href: ../../../../concepts/manage-channel-memberships-allmembers.md
     - name: Channel
       href: ../../resources/channel.md
     - name: List channels
