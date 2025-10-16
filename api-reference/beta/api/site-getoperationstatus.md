@@ -46,7 +46,7 @@ In the request URL, provide the following query parameters with values.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|operationId|String| The GUID of the operation for which the site creation is performed. Required.|
+|operationId|String| The ID of the operation for which the site creation is performed. Required.|
 
 
 ## Request headers
