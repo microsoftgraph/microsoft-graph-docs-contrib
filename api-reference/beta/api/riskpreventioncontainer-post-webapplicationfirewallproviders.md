@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Create a new [webApplicationFirewallProvider](../resources/webApplicationFirewallProvider.md) object. You can create one of the following subtypes that are derived from **webApplicationFirewallProvider**.
 
-- [AkamaiWebApplicationFirewallProvider](../resources/AkamaiWebApplicationFirewallProvider.md)
+- [akamaiWebApplicationFirewallProvider](../resources/akamaiWebApplicationFirewallProvider.md)
 - [cloudFlareWebApplicationFirewallProvider](../resources/cloudFlareWebApplicationFirewallProvider.md)
 
 ## Permissions
