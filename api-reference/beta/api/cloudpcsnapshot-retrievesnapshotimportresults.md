@@ -84,7 +84,7 @@ Content-Type: application/json
   "filename": "snapshotForCloudPc",
   "usageStatus": "notUsed",
   "importStatus": "inProgress",
-  "assignedUserPrincipalName": "snapshot@rplusint.onmicrosoft.com",
+  "assignedUserPrincipalName": "snapshot@contoso.com",
   "policyName": "Test_ProvisioningPolicy",
   "startDateTime": "2025-01-13T15:13:14Z",
   "endDateTime": null,
