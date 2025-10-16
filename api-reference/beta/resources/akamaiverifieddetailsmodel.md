@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the details discovered when verifying a host or domain using an Akamai web application firewall (WAF) provider. This resource extends the abstract `webApplicationFirewallVerifiedDetails` type with Akamai-specific fields such as active attack groups, custom rules, Rapid Rules configuration, and DNS configuration evidence.
+Represents the details discovered when verifying a host or domain using an Akamai web application firewall (WAF) provider. 
 
 Inherits from [webApplicationFirewallVerifiedDetails](../resources/webapplicationfirewallverifieddetails.md).
 
