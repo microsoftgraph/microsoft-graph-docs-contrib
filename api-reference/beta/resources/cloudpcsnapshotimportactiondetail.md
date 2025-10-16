@@ -49,16 +49,15 @@ The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.cloudPcSnapshotImportActionDetail",
-  "baseType": "microsoft.graph.entity",
   "openType": false
 }
 -->
 ``` json
 {
   "@odata.type": "#microsoft.graph.cloudPcSnapshotImportActionDetail",
-  "sourceType": "String",
   "fileType": "String",
   "sasUrl": "String",
+  "sourceType": "String",
   "storageBlobInfo": {"@odata.type": "microsoft.graph.cloudPcStorageBlobDetail"}
 }
 ```
