@@ -64,7 +64,9 @@ If successful, this method returns a `200 OK` response code and a [webApplicatio
 
 ## Examples
 
-### Example 1: Verfiy a specific webApplicationFirewallProviders object.
+### Example 1: Verify a specific webApplicationFirewallProvider object
+
+The following example shows how to verify a webApplicationFirewallProvider using the hostName only.
 
 ### Request
 
