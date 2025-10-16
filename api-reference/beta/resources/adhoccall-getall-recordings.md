@@ -24,7 +24,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 |Permission type|Least privileged permissions|Higher privileged permissions|
 |:---|:---|:---|
-|Delegated (work or school account)|Not Applicable|Not Applicable|
+|Delegated (work or school account)|Not Applicable.|Not Applicable.|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
 |Application|CallRecordings.Read.All|CallRecordings.Read.All|
 
@@ -32,7 +32,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "ignored" } -->
 ``` http
-GET users/{userId}/adhocCalls/getAllRecordings,startDateTime={startDateTime},endDateTime={endDateTime}
+GET users/{userId}/adhocCalls/getAllRecordings,
+startDateTime={startDateTime},endDateTime={endDateTime}
 ```
 
 ## Function parameters
