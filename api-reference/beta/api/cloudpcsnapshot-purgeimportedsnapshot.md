@@ -64,6 +64,7 @@ The following example shows a request.
 -->
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/snapshots/purgeImportedSnapshot
+Content-Type: application/json
 
 {
   "snapshotIds": [
