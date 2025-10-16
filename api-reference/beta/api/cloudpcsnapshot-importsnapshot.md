@@ -5,7 +5,6 @@ author: "hyc3z"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: apiPageType
-toc.title: Import CloudPC Snapshot
 ms.date: 10/10/2025
 ---
 
