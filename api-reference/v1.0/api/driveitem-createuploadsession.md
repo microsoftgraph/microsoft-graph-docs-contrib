@@ -232,24 +232,22 @@ Content-Type: application/json
 
 ## Remarks
 
-- The `nextExpectedRanges` property doesn't always list all of the missing ranges.
-- On successful fragment writes, it will return the next range to start from (for example "523-").
-- On failures when the client sent a fragment the server had already received, the server responds with `HTTP 416 Requested Range Not Satisfiable`.
-  You can [request upload status](#resuming-an-in-progress-upload) to get a more detailed list of missing ranges.
-- If you include the Authorization header when issuing the `PUT` call, it may
--  result in an `HTTP 401 Unauthorized` response. Only send the Authorization header and bearer token when issuing the `POST` during the first step. Don't include it when you issue the `PUT` call.
+- The **nextExpectedRanges** property doesn't always list all of the missing ranges.
+- On successful fragment writes, it returns the next range to start from (for example, `523-`).
+- On failures where the client sent a fragment the server already received, the server responds with `HTTP 416 Requested Range Not Satisfiable`. To get a more detailed list of missing ranges, you can [request upload status](#resuming-an-in-progress-upload).
+If you include the Authorization header when issuing the PUT call, it might result in an `HTTP 401 Unauthorized` response. Only include the Authorization header and bearer token when issuing the POST request during the first step. Don't include it when issuing the PUT call.
 
 ## Completing a file
 
-If `deferCommit` is false or unset, then the upload is automatically completed when the final byte range of the file is PUT to the upload URL.
+If **deferCommit** is `false` or unset, then the upload is automatically completed when the final byte range of the file is PUT to the upload URL.
 
-If `deferCommit` is true, you can explicitly complete the upload in two ways:
+If **deferCommit** is `true`, you can explicitly complete the upload in two ways:
 
 - After the final byte range of the file is PUT to the upload URL, send a final POST request to the upload URL with zero-length content (currently only supported on OneDrive for Business and SharePoint).
 - After the final byte range of the file is PUT to the upload URL, send a final PUT request in the same way that you would [handle upload errors](#handle-upload-errors) (currently only supported on OneDrive Personal).
 
 When the upload is completed, the server responds to the final request with an `HTTP 201 Created` or `HTTP 200 OK`.
-The response body also includes the default property set for the **driveItem** representing the completed file.
+The response body also includes the default property set for the **driveItem** that represents the completed file.
 
 <!-- { "blockType": "ignored" } -->
 
@@ -419,7 +417,7 @@ If-Match: {etag or ctag}
 }
 ```
 
-**Note:** You can use the `@microsoft.graph.conflictBehavior` and `if-match` headers as expected in this call.
+>**Note:** You can use the `@microsoft.graph.conflictBehavior` and `if-match` headers as expected in this call.
 
 ### Response
 

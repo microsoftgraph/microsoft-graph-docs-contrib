@@ -249,7 +249,7 @@ If **deferCommit** is `true`, you can explicitly complete the upload in two ways
 - After the final byte range of the file is PUT to the upload URL, send a final PUT request in the same way that you would [handle upload errors](#handle-upload-errors) (currently only supported on OneDrive Personal).
 
 When the upload is completed, the server responds to the final request with an `HTTP 201 Created` or `HTTP 200 OK`.
-The response body also includes the default property set for the **driveItem** representing the completed file.
+The response body also includes the default property set for the **driveItem** that represents the completed file.
 
 <!-- { "blockType": "ignored" } -->
 
