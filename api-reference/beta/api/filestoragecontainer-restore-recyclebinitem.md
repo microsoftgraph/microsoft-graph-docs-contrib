@@ -1,6 +1,6 @@
 ---
-title: "Restore recycleBinItem"
-description: "Restore recycleBinItem by driveItemId as alternate key."
+title: "Restore a recycle bin item by original drive item ID"
+description: "Restore recycleBinItem by usingdriveItemId as alternate key."
 author: "cindylay"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
@@ -8,7 +8,7 @@ doc_type: apiPageType
 ms.date: 12/10/2024
 ---
 
-# recycleBinItem: restore by driveItemId as alternate key
+# Restore a recycle bin item by original driveItem ID
 
 Namespace: microsoft.graph
 
