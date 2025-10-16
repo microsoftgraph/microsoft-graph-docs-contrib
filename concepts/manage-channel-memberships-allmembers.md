@@ -12,7 +12,7 @@ ms.date: 09/18/2025
 
 Namespace: microsoft.graph
 
-Use the new `allMembers` API that manages and monitors channel memberships across standard, shared, and private channels. It enhances accuracy by reflecting direct and indirect members correctly. Get the list of all [members](/graph/api/channel-list-allmembers) in a [channel](graph/api/resources/channel).
+Use the new `allMembers` API that manages and monitors channel memberships across standard, shared, and private channels. It enhances accuracy by reflecting direct and indirect members correctly. Get the list of all [members](/graph/api/channel-list-allmembers) in a [channel](/graph/api/resources/channel).
 
 ## Connect users to channels with the annotation property
 
@@ -21,8 +21,8 @@ The new `@microsoft.graph.originalSourceMembershipUrl` property determines how a
 * Direct members: The originalSourceMembershipUrl points to channel membership.
 * Indirect members: The originalSourceMembershipUrl points to team membership.
 
-Use the [sharedWithChannelTeamInfo resource type](graph/api/resources/sharedwithchannelteaminfo) API to identify which teams grant access to shared channels and
-[List allowedMembers](graph/api/sharedwithchannelteaminfo-list-allowedmembers) API to specify eligible members.
+Use the [sharedWithChannelTeamInfo resource type](/graph/api/resources/sharedwithchannelteaminfo) API to identify which teams grant access to shared channels and
+[List allowedMembers](/graph/api/sharedwithchannelteaminfo-list-allowedmembers) API to specify eligible members.
 
 ## Understand membership behavior for shared channels
 
@@ -44,7 +44,7 @@ Use the `originalSourceMembershipUrl` annotation property to determine whether t
 >[!IMPORTANT]
 > Don’t assume one row per user. A single user can appear multiple times when a channel is shared with multiple teams.
 
-See [List allMembers](graph/api/channel-list-allmembers) to learn more on the permissions, HTTP request parameters, and supporting examples.
+See [List allMembers](/graph/api/channel-list-allmembers) to learn more on the permissions, HTTP request parameters, and supporting examples.
 
 ## Set up notifications for channel membership changes
 
@@ -62,7 +62,7 @@ The subscription endpoints for retrieving channel members, based on channel type
 
 ## Related content
 
-[List the members of a team](graph/api/team-list-members)
+[List the members of a team](/graph/api/team-list-members)
 [Teams connects Shared Channels](/microsoftteams/platform/concepts/build-and-test/shared-channels)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
