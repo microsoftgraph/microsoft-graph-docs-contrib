@@ -3,7 +3,7 @@ title: "What's new in Microsoft Graph"
 description: "Find out what's new in Microsoft Graph APIs, SDKs, documentation, and other resources."
 author: "lauragra"
 ms.localizationpriority: high
-ms.date: 07/03/2025
+ms.date: 10/14/2025
 ms.topic: whats-new
 ---
 
@@ -26,7 +26,25 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 - [Update](/graph/api/protectionrulebase-update) a [driveProtectionRule](/graph/api/resources/driveprotectionrule) or a [mailboxProtectionRule](/graph/api/resources/mailboxprotectionrule).
 - [Delete and unprotect](/graph/api/protectionrulebase-deleteandunprotect) all the artifacts protected by a dynamic rule in a [driveProtectionRule](/graph/api/resources/driveprotectionrule) or a [mailboxProtectionRule](/graph/api/resources/mailboxprotectionrule).
 
+### Identity and access | Directory management
+
+- Addressed a permissions issue for [internalDomainFederation](/graph/api/resources/internaldomainfederation) write operations. Previously, delegated scenarios required the high-privilege _Directory.AccessAsUser.All_ permission. Two new, lesser-privileged permissions are now available for managing the **internalDomainFederation** resource:
+   - _Domain-InternalFederation.Read.All_ – Read **internalDomainFederation** resources.
+   - _Domain-InternalFederation.ReadWrite.All_ – Read and write **internalDomainFederation** resources.
+
+- Added the _Domain-InternalFederation.ReadWrite.All_ delegated and application permissions as lower-privilege alternatives for updating a [domain](/graph/api/resources/domain). This also enables updating the **authenticationType** property of a domain in both delegated and application contexts, whereas previously only delegated scenarios with _Directory.AccessAsUser.All_ permission were supported.
+
+These new permissions enable more granular access control for managing **internalDomainFederation** and **domain** resources.
+
+### Teamwork and communications | Calls and online meetings
+
+Use the [callEvent](/graph/api/resources/callevent) and [emergencyCallEvent](/graph/api/resources/emergencycallevent) resources to provide detailed information about both standard and emergency call events. For more information, see [Change notification for active meeting call events](/graph/changenotifications-for-onlinemeeting) and [change notification for emergency call events](/graph/changenotifications-for-emergencycalls).
+
 ## October 2025: New in preview only
+
+### Calendars | Places
+
+Apply the following [prerequisites for the Places list and descendant APIs](/graph/api/resources/places-api-overview?view=graph-rest-beta&preserve-view=true#prerequisites-for-places-list-and-descendant-apis) before you can use these APIs; otherwise, they don't return any places.
 
 ### Device and app management | Cloud PC
 

@@ -1557,7 +1557,7 @@
                 "onAttributeCollectionSubmitListener",
                 "onAuthenticationMethodLoadStartListener",
                 "onEmailOtpSendListener",
-                "onFraudProtectionLoadStartListener"
+                "onFraudProtectionLoadStartListener",
                 "onInteractiveAuthFlowStartListener",
                 "onPhoneMethodLoadStartListener",
                 "onTokenIssuanceStartListener",
@@ -3206,8 +3206,11 @@
             {
               "name": "Call events",
               "resources": [
-                "microsoft.graph.callEvent",
-                "microsoft.graph.emergencyCallEvent"
+                "callEvent",
+                "emergencyCallEvent"
+              ],
+              "complexTypes": [
+                "emergencyCallerInfo"
               ]
             },
             {
