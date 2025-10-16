@@ -1560,7 +1560,9 @@
                 "onInteractiveAuthFlowStartListener",
                 "onPhoneMethodLoadStartListener",
                 "onTokenIssuanceStartListener",
-                "onUserCreateStartListener"
+                "onUserCreateStartListener",
+                "webApplicationFirewallProviders", 
+                "webApplicationFirewallVerificationModel"
               ]
             },
             {
