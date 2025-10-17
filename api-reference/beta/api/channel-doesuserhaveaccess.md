@@ -60,6 +60,8 @@ If successful, this function returns a `200 OK` response code and a Boolean in t
 
 ### Example 1: Check access for an internal user
 
+The following example shows a request that checks whether an internal user has access to a channel.
+
 #### Request
 
 The following example shows a request.
