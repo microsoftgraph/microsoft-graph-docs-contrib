@@ -1,22 +1,21 @@
 ---
 title: "List cloudPCs for user"
 description: "List the cloudPC devices that are attributed to the signed-in user."
-author: "andrewku0409"
+author: "sentry-cy"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: apiPageType
-ms.date: 04/04/2024
+ms.date: 09/30/2025
 ---
 
 # List cloudPCs for user
+
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-List the [cloudPC](../resources/cloudpc.md) devices that are attributed to the signed-in user. 
+List the [cloudPC](../resources/cloudpc.md) devices that are attributed to the signed-in user.
 
 >[!NOTE]
->This operation returns only the following properties: **id**, **displayName**, **imageDisplayName**, **servicePlanId**, **servicePlanName**, **servicePlanType**, **status**, **lastModifiedDateTime**, **aadDeviceId**, **statusDetails**, **gracePeriodEndDateTime**.
+>This operation returns only the following properties: **id**, **displayName**, **imageDisplayName**, **servicePlanId**, **servicePlanName**, **servicePlanType**, **lastModifiedDateTime**, **aadDeviceId**, **gracePeriodEndDateTime**, **provisioningType**.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -54,42 +53,16 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ## Examples
 
 ### Request
+
 The following example shows a request.
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_cloudpc"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/me/cloudPCs
+GET https://graph.microsoft.com/v1.0/me/cloudPCs
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/list-cloudpc-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/list-cloudpc-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-cloudpc-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-cloudpc-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/list-cloudpc-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/list-cloudpc-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### Response
 The following example shows the response.
@@ -114,12 +87,9 @@ Content-Type: application/json
       "servicePlanId": "dbb9148c-ff83-4a4c-8d7f-28752e93ffff",
       "servicePlanName": "lite",
       "servicePlanType": "enterprise",
-      "status": "provisioned",
       "lastModifiedDateTime": "2020-11-03T10:29:57Z",
-      "statusDetails": null,
-      "gracePeriodEndDateTime": "2020-11-010T20:00:34Z",
-      "provisioningType": "dedicated",
-      "diskEncryptionState": "encryptedUsingPlatformManagedKey"
+      "gracePeriodEndDateTime": "2020-11-01T20:00:34Z",
+      "provisioningType": "dedicated"
     }
   ]
 }

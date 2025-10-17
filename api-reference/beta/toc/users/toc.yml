@@ -86,7 +86,7 @@ items:
       href: ../../api/cloudlicensing-usageright-get.md
   - name: Cloud PC
     items:
-    - name: List cloud PCs
+    - name: List Cloud PCs
       href: ../../api/user-list-cloudpcs.md
     - name: Get launch info
       href: ../../api/cloudpc-getcloudpclaunchinfo.md
