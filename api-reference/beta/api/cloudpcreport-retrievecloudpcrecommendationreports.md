@@ -14,10 +14,10 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the device recommendation reports for Cloud PCs, such as the usage category report. The usage category report categorizes a Cloud PC as `Undersized`, `Oversized`, `Rightsized`, or `Underutilized`, and also provides the recommended SKU when the Cloud PC isn't `Rightsized`.
+Retrieve Cloud PC recommendation [reports](../resources/cloudpcreport.md) for usage optimization and cost savings. The usage category report categorizes a Cloud PC as `Undersized`, `Oversized`, `Rightsized`, or `Underutilized`, and also provides the recommended SKU when the Cloud PC isn't `Rightsized`.
 
 >[!NOTE]
-> This API replaces the deprecated [cloudPcReports: retrieveCloudPcRecommendationReports](../api/cloudpcreports-retrievecloudpcrecommendationreports.md) API, which will stop returning data on December 31, 2025.
+> This API replaces the deprecated [cloudPcReports: retrieveCloudPcRecommendationReports](../api/cloudpcreports-retrievecloudpcrecommendationreports.md) API that will stop returning data on December 31, 2025.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -53,12 +53,12 @@ The following table shows the parameters that are required for this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|reportType|[cloudPcRecommendationReportType](../resources/cloudpcreports.md#cloudpcrecommendationreporttype-values)|The report type. Supported value is: `cloudPcUsageCategoryReport`. Required.|
 |filter|String|OData `$filter` syntax. Optional. Supported filters are: `and`, `or`, `lt`, `le`, `gt`, `ge`, and `eq`.|
-|select|String collection|OData `$select` syntax. Optional. The selected columns of the reports.|
-|search|String|Specifies a String to search. Optional.|
 |groupBy|String collection|Specifies how to group the reports. Optional. If used, must have the same content as the **select** parameter.|
 |orderBy|String collection|Specifies how to sort the reports. Optional.|
+|reportType|[cloudPcRecommendationReportType](../resources/cloudpcreports.md#cloudpcrecommendationreporttype-values)|The report type. The supported value is `cloudPcUsageCategoryReport`. Required.|
+|search|String|Specifies a String to search. Optional.|
+|select|String collection|OData `$select` syntax. Optional. The selected columns of the reports.|
 |skip|Int32|Number of records to skip. Optional.|
 |top|Int32|The number of top records to return. Optional.|
 
@@ -68,7 +68,7 @@ If successful, this action returns a `200 OK` response code and a Stream in the 
 
 ## Examples
 
-### Example 1: Get device recommendation reports grouped by CloudPC size and usage category
+### Example 1: Get device recommendation reports grouped by Cloud PC size and usage category
 
 The following example shows how to get device recommendation reports grouped by service plan and usage category.
 
@@ -164,7 +164,7 @@ Content-Type: application/octet-stream
 }
 ```
 
-### Example 2: Get device usage category reports for CloudPCs
+### Example 2: Get device usage category reports for Cloud PCs
 
 The following example shows how to get detailed usage category reports for individual Cloud PCs.
 
