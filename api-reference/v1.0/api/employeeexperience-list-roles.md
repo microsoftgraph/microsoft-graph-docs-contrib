@@ -33,7 +33,18 @@ GET /employeeExperience/roles
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the following OData query parameters to help customize the response: `$filter` (`eq`), `$select`, and `$count`. Use these parameters to refine and shape the results. For general information, see [OData query parameters](/graph/query-parameters).
+
+You can filter roles by their properties. The following properties support the `$filter` (`eq`) operator:
+
+- `displayName`
+- `id`
+
+Examples:
+
+- List only roles with the display name "Network Admin": `GET /employeeExperience/roles?$filter=displayName eq 'Network Admin'`
+- Return only the `id` and `displayName` properties: `GET /employeeExperience/roles?$select=id,displayName`
+- Get the first 10 roles and include a count of total roles: `GET /employeeExperience/roles?$top=10&$count=true`
 
 ## Request headers
 
