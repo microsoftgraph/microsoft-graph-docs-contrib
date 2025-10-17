@@ -12,6 +12,11 @@ ms.topic: whats-new
 
 Find information about previous additions and updates to Microsoft Graph APIs, documentation, SDKs, and other resources.
 
+### Teamwork and communications | Messaging
+
+- Use the **originalSourceMembershipUrl** annotation with the [List allMembers](/graph/api/channel-list-allmembers?view=graph-rest-beta&preserve-view=true) API to identify the source of a member's membership and distinguish between direct and indirect members.
+
+
 ## August 2025: New and generally available
 
 ### Backup storage
@@ -124,7 +129,6 @@ Added the [resourceAccessEvent](/graph/api/resources/security-resourceaccesseven
 
 ### Teamwork and communications | Messaging
 
-- Use the **originalSourceMembershipUrl** annotation with the [List allMembers](/graph/api/channel-list-allmembers?view=graph-rest-beta&preserve-view=true) API to identify the source of a member's membership and distinguish between direct and indirect members.
 [Send a message with a Loop component](/graph/api/chatmessage-post).
 
 ## July 2025: New in preview only
