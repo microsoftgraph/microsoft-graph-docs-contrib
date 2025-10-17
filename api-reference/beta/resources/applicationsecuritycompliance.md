@@ -33,21 +33,21 @@ Represents the compliance certifications, attestations, and standards that an ap
 |glba|Boolean|Indicates whether the application complies with the Gramm–Leach–Bliley Act (GLBA) for financial data protection.|
 |hipaa|Boolean|Indicates whether the application complies with the Health Insurance Portability and Accountability Act (HIPAA).|
 |hitrust|Boolean|Indicates whether the application holds HITRUST certification, demonstrating alignment with healthcare and data security standards.|
-|isae3402|Boolean|Indicates whether the application complies with International Standard on Assurance Engagements (ISAE) 3402 requirements.|
+|isae3402|Boolean|Indicates whether the application complies with International Standard on Assurance Engagements (ISAE) 3,402 requirements.|
 |iso27001|Boolean|Indicates whether the application is certified against ISO/IEC 27001 for information security management systems (ISMS).|
-|iso27002|Boolean|Indicates whether the application follows ISO/IEC 27002 security control best practices.|
-|iso27017|Boolean|Indicates whether the application complies with ISO/IEC 27017 standards for cloud security controls.|
-|iso27018|Boolean|Indicates whether the application complies with ISO/IEC 27018 standards for protecting personally identifiable information (PII) in cloud environments.|
+|iso27002|Boolean|Indicates whether the application follows ISO/IEC 27,002 security control best practices.|
+|iso27017|Boolean|Indicates whether the application complies with ISO/IEC 27,017 standards for cloud security controls.|
+|iso27018|Boolean|Indicates whether the application complies with ISO/IEC 27,018 standards for protecting personally identifiable information (PII) in cloud environments.|
 |itar|Boolean|Indicates whether the application complies with International Traffic in Arms Regulations (ITAR).|
-|jerichoForumCommandments|Boolean|Indicates whether the application aligns with Jericho Forum security principles for de-perimeterized environments.|
-|pci|pciVersion|Specifies the Payment Card Industry Data Security Standard (PCI DSS) version the application complies with. The possible values are: `none`, `v3_2_1`, `v4`, `notSupported`, `unknownFutureValue`.|
+|jerichoForumCommandments|Boolean|Indicates whether the application aligns with Jericho Forum security principles for deperimeterized environments.|
+|pci|pciVersion|Specifies the Payment Card Industry (PCI) Data Security Standard (DSS) version the application complies with. The possible values are: `none`, `v3_2_1`, `v4`, `notSupported`, `unknownFutureValue`.|
 |privacyShield|Boolean|Indicates whether the application complies with the EU–U.S. Privacy Shield framework for cross-border data transfers.|
 |safeHarbor|Boolean|Indicates whether the application previously adhered to the U.S.–EU Safe Harbor data transfer framework.|
-|soc1|Boolean|Indicates whether the application provider has completed a Service Organization Control (SOC) 1 audit report.|
-|soc2|Boolean|Indicates whether the application provider has completed a Service Organization Control (SOC) 2 audit report.|
-|soc3|Boolean|Indicates whether the application provider has completed a Service Organization Control (SOC) 3 audit report.|
+|soc1|Boolean|Indicates whether the application provider undergoes a Service Organization Control (SOC) one audit report.|
+|soc2|Boolean|Indicates whether the application provider undergoes a Service Organization Control (SOC) two audit report.|
+|soc3|Boolean|Indicates whether the application provider undergoes a Service Organization Control (SOC) three audit report.|
 |sox|Boolean|Indicates whether the application complies with the Sarbanes–Oxley Act (SOX) financial reporting requirements.|
-|sp800_53|Boolean|Indicates whether the application aligns with NIST Special Publication 800-53 security and privacy controls.|
+|sp800_53|Boolean|Indicates whether the application aligns with National Institute of Standards and Technology (NIST) Special Publication 800-53 security and privacy controls.|
 |ssae16|Boolean|Indicates whether the application adheres to Statement on Standards for Attestation Engagements (SSAE) No. 16.|
 |ustr|Boolean|Indicates whether the application complies with U.S. Trade Representative (USTR) data and trade protection requirements.|
 
