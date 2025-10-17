@@ -64,9 +64,11 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Request
+### Example 1: List all application templates
 
-The following example shows a request.
+This example shows how to retrieve all application templates.
+
+#### Request
 
 # [HTTP](#tab/http)
 <!-- {
@@ -109,6 +111,178 @@ GET https://graph.microsoft.com/beta/applicationTemplates
 ---
 
 ### Response
+
+> **Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.applicationTemplate)"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#applicationTemplates",
+  "value": [
+    {
+      "id": "01303a13-8322-4e06-bee5-80d612907131",
+      "displayName": "Google Cloud / G Suite Connector by Microsoft",
+      "publisher": "Microsoft",
+      "categories": ["collaboration", "productivity", "topApps"],
+      "logoUrl": "https://galleryapplogos1.azureedge.net/app-logo/googleapps_CF07EA93_215.png"
+    }
+  ]
+}
+```
+
+### Example 2: Get a single application template by ID
+
+This example shows how to retrieve a specific application template using its ID.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_applicationtemplates_filter_category"
+}-->
+
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/applicationTemplates/60fda14e-f0a4-4fbb-b80a-47f03ffcac6e
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-applicationtemplates-filter-category-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-applicationtemplates-filter-category-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-applicationtemplates-filter-category-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-applicationtemplates-filter-category-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-applicationtemplates-filter-category-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-applicationtemplates-filter-category-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-applicationtemplates-filter-category-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+
+> **Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.applicationTemplate)"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#applicationTemplates/$entity",
+    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET applicationTemplates('<guid>')?$select=categories,configurationUris",
+    "id": "60fda14e-f0a4-4fbb-b80a-47f03ffcac6e",
+    "displayName": "Zillah",
+    "homePageUrl": "https://manage.windowsazure.com/",
+    "supportedSingleSignOnModes": [
+        "external"
+    ],
+    "supportedProvisioningTypes": [
+        "sync"
+    ],
+    "logoUrl": "https://galleryapplogos1.azureedge.net/app-logo/Zillah_400763AD_215.png",
+    "categories": [
+        "Tools"
+    ],
+    "publisher": "Microsoft",
+    "description": "Microsoft Azure is a cloud computing platform operated by Microsoft for application management via Microsoft-managed data centers.",
+    "endpoints": [
+        "portal.azure.net",
+        "portal.azure.com",
+        "portal.azure.us",
+        "portal.azure.cn",
+        "azure-test.net",
+        "onecloud.azure-test.net",
+        "bastion.azure.com",
+        "management.azure.com",
+        "secure.aadcdn.microsoftonline-p.com",
+        "westeurope.cloudapp.azure.com",
+        "https://manage.windowsazure.com/"
+    ],
+    "lastModifiedDateTime": "2025-08-01T21:05:19.522513Z",
+    "supportedClaimConfiguration": null,
+    "informationalUrls": {
+        "singleSignOnDocumentationUrl": "https://go.microsoft.com/fwlink/?linkid=857647",
+        "appSignUpUrl": null
+    },
+    "configurationUris": []
+}
+
+### Example 3: Instantiate an application template
+
+This example shows how to create a new application instance from a template.
+
+#### Request
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "instantiate_applicationtemplate"
+}-->
+
+```msgraph-interactive
+POST https://graph.microsoft.com/beta/applicationTemplates/60fda14e-f0a4-4fbb-b80a-47f03ffcac6e/instantiate
+Content-Type: application/json
+
+{
+    "displayName": "Zillah Dev Instance"
+}
+```
+
+#### Response
+
+> **Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.applicationServicePrincipal"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+    "application": {
+        "id": "f5bd8c67-1b95-4ef5-9e09-12c9478356f8",
+        "appId": "8f7c8c97-0d89-4b5e-94fd-3383869ca2c2",
+        "displayName": "Zillah Dev Instance"
+    },
+    "servicePrincipal": {
+        "id": "df35a17c-21bc-4524-8759-c9c6d89c112a",
+        "appId": "8f7c8c97-0d89-4b5e-94fd-3383869ca2c2",
+        "displayName": "Zillah Dev Instance"
+    }
+}
 
 The following example shows the response.
 
