@@ -43,7 +43,7 @@ Supported `$filter` (`eq`) properties for a role member:
 
 Examples:
 
-- Filter members by user ID: `GET /employeeExperience/roles/{engagementRoleId}/members?$filter=userId eq '{user-id}'`
+- Filter members by user ID: `GET /employeeExperience/roles/{engagementRoleId}/members?$filter=userId eq 'e8d9f6a2-1c34-4b7a-9f11-2a4d8b7c9e01'`
 - Select only member identifiers and creation time: `GET /employeeExperience/roles/{engagementRoleId}/members?$select=id,createdDateTime`
 - Include total count of members: `GET /employeeExperience/roles/{engagementRoleId}/members?$count=true`
 
@@ -94,8 +94,8 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.engagementRoleMember",
       "id": "a40473a5-0fb4-a250-e029-f6fe33d07733",
-      "userId": "String",
-      "createdDateTime": "String (timestamp)"
+      "userId": "e8d9f6a2-1c34-4b7a-9f11-2a4d8b7c9e01",
+      "createdDateTime": "2025-09-22T14:03:00Z"
     }
   ]
 }
