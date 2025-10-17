@@ -97,6 +97,14 @@
           "ChangeType": "Addition",
           "Description": "Added the **approverInformationVisibility** property to the [accessPackageApprovalStage](https://learn.microsoft.com/en-us/graph/api/resources/accessPackageApprovalStage?view=graph-rest-beta) resource.",
           "Target": "accessPackageApprovalStage"
+        },
+        {
+          "Id": "10ad0859-63c2-4da7-a4a0-9745e93f6ca2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "identity",
+          "ChangeType": "Addition",
+          "Description": "Added the [identity](https://learn.microsoft.com/en-us/graph/api/resources/identity?view=graph-rest-beta) resource.",
+          "Target": "identity"
         }
       ],
       "Id": "65c74f1f-0a09-4a59-902f-982163c355f3",
