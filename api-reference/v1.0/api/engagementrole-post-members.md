@@ -68,7 +68,7 @@ POST https://graph.microsoft.com/v1.0/employeeExperience/roles/{engagementRoleId
 Content-Type: application/json
 
 {
-  "user@odata.bind": "https://graph.microsoft.com/v1.0/users('userId')"
+  "user@odata.bind": "https://graph.microsoft.com/v1.0/users('e8d9f6a2-1c34-4b7a-9f11-2a4d8b7c9e01')"
 }
 ```
 
