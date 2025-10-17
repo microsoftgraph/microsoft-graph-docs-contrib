@@ -99,7 +99,17 @@ items:
   - name: Create upload session
     href: ../../api/driveitem-createuploadsession.md
 - name: Drive item version
-  href: ../../resources/driveitemversion.md
+  items:
+  - name: Drive item version
+    href: ../../resources/driveitemversion.md
+  - name: List versions
+    href: ../../api/driveitem-list-versions.md
+  - name: Get version
+    href: ../../api/driveitemversion-get.md
+  - name: Download version
+    href: ../../api/driveitemversion-get-contents.md
+  - name: Restore version
+    href: ../../api/driveitemversion-restore.md
 - name: Bundle
   items:
   - name: Bundle
