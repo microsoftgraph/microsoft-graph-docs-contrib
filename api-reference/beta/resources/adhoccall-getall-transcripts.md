@@ -51,7 +51,7 @@ In the request URL, provide the following query parameters with values.
 This method supports the following OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 | Name           | Description                                                                       |
-| :------------- | :-------------------------------------------------------------------------------- |
+| :------------- |:-------------------------------------------------------------------------------- |
 |  `$top`        | Allows the caller to specify the max number of objects per page as the page size. |
 
 ## Request headers
@@ -81,7 +81,7 @@ The following example shows a request.
   "name": "get_alltranscripts"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/users/d4220f1b-4c12-436c-8a03-dc3e362f9d54/adhocCalls/getAllTranscripts(userId='d4220f1b-4c12-436c-8a03-dc3e362f9d54')
+GET https://graph.microsoft.com/beta/users/d4220f1b-4c12-436c-8a03-dc3e362f9d54/adhocCalls/getAllTranscripts
 ```
 
 # [C#](#tab/csharp)
