@@ -206,7 +206,7 @@ In the previous channel indirect membership notification payload, the **resource
 
 For details about how to validate tokens and decrypt the payload, see [Set up change notifications that include resource data](change-notifications-with-resource-data.md).
 
-The decrypted notification payload looks like the following. The payload conforms to the [aadUserConversationMember](/graph/api/resources/aaduserconversationmember?view=graph-rest-beta&preserve-view=true) schema. The payload is similar to that returned by GET operations. The payload is similar to that returned by the [List allMembers](/graph/api/channel-list-allmembers) endpoint.
+The decrypted notification payload looks like the following. The payload conforms to the [aadUserConversationMember](/graph/api/resources/aaduserconversationmember) schema. The payload is similar to that returned by GET operations. The payload is similar to that returned by the [List allMembers](/graph/api/channel-list-allmembers) endpoint.
 
 ```json
 {
