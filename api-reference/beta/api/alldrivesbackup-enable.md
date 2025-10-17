@@ -1,10 +1,10 @@
 ---
 title: "allDrivesBackup: enable"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+description: "Enable full service backup for OneDriveForBusiness"
+author: "vidula-verma"
 ms.date: 10/15/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
 ---
 
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Enables full service backup for OneDrive for Business. All drives provisioned in OneDrive are protected automatically, without requiring manual policy creation.
 
 ## Permissions
 

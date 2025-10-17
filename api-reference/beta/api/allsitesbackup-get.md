@@ -1,10 +1,10 @@
 ---
 title: "Get allSitesBackup"
 description: "Read the properties and relationships of allSitesBackup object."
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+author: "vidula-verma"
 ms.date: 10/15/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
 ---
 
