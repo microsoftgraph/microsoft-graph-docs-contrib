@@ -35,7 +35,7 @@ Represents the compliance certifications, attestations, and standards that an ap
 |hitrust|Boolean|Indicates whether the application holds HITRUST certification, demonstrating alignment with healthcare and data security standards.|
 |isae3402|Boolean|Indicates whether the application complies with International Standard on Assurance Engagements (ISAE) 3,402 requirements.|
 |iso27001|Boolean|Indicates whether the application is certified against ISO/IEC 27001 for information security management systems (ISMS).|
-|iso27002|Boolean|Indicates whether the application follows ISO/IEC 27,002 security control best practices.|
+|iso27002|Boolean|Indicates whether the application follows ISO/IEC 27002 security control best practices.|
 |iso27017|Boolean|Indicates whether the application complies with ISO/IEC 27,017 standards for cloud security controls.|
 |iso27018|Boolean|Indicates whether the application complies with ISO/IEC 27,018 standards for protecting personally identifiable information (PII) in cloud environments.|
 |itar|Boolean|Indicates whether the application complies with International Traffic in Arms Regulations (ITAR).|
