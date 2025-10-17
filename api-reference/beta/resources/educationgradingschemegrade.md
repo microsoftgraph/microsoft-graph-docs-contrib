@@ -19,9 +19,9 @@ Represents an individual grade range that contributes to a grading scheme.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|defaultPercentage|Single|The midpoint of the grade range. |
+|defaultPercentage|Int32|The midpoint of the grade range. |
 |displayName|String|The name of this individual grade.|
-|minPercentage|Single|The minimum percentage of the total points needed to achieve this grade.|
+|minPercentage|Int32|The minimum percentage of the total points needed to achieve this grade.|
 
 ## Relationships
 None.
@@ -36,8 +36,8 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.educationGradingSchemeGrade",
-  "defaultPercentage": "Single",
+  "defaultPercentage": "Int32",
   "displayName": "String",
-  "minPercentage": "Single"
+  "minPercentage": "Int32"
 }
 ```
