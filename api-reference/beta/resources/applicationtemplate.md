@@ -3,12 +3,12 @@ title: "applicationTemplate resource type"
 description: "Represents an application in the Microsoft Entra application gallery"
 ms.localizationpriority: medium
 author: "HildaK-pm"
-ms.subservice: "entra-applications"
+ms.service: microsoft-graph
 doc_type: "resourcePageType"
 ms.date: 07/16/2024
 ---
 
-## applicationTemplate resource type
+# applicationTemplate resource type
 
 Namespace: microsoft.graph
 
@@ -38,7 +38,7 @@ Represents an application in the [Microsoft Entra application gallery](/azure/ac
 |lastModifiedDateTime|DateTimeOffset|The date and time when the data or resource was last updated, in DateTimeOffset format.|
 |logoUrl|String|The URL to get the logo for this application.|
 |publisher|String|The name of the publisher for this application.|
-|riskFactors|[applicationRiskFactors](../resources/applicationriskfactors.md)|General business and operational information about the application provider|
+|riskFactors|[applicationRiskFactors](applicationriskfactors.md)|General business and operational information about the application provider|
 |riskScore|[applicationRiskScore](../resources/applicationriskscore.md)|Represents the numerical risk score assessment for an application|
 |supportedProvisioningTypes|String collection|The list of provisioning modes supported by this application. The only valid value is `sync`.|
 |supportedSingleSignOnModes|String collection|The list of single sign-on modes supported by this application. The supported values are `oidc`, `password`, `saml`, and `notSupported`.|
