@@ -50,6 +50,8 @@ items:
     href: ../../api/driveitem-get-content-format.md
   - name: Delete item
     href: ../../api/driveitem-delete.md
+  - name: Restore item
+    href: ../../api/driveitem-restore.md
   - name: Permanently delete item
     href: ../../api/driveitem-permanentdelete.md
   - name: Move item
