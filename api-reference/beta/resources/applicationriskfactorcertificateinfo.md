@@ -1,6 +1,6 @@
 ---
 title: "applicationRiskFactorCertificateInfo resource type"
-description: "SSL/TLS certifcate validation and security assessment details."
+description: "SSL/TLS certificate validation and security assessment details."
 author: "HildaK-pm"
 ms.date: 10/13/2025
 ms.localizationpriority: medium
@@ -20,14 +20,14 @@ Provides SSL/TLS certificate validation and risk assessment details for an appli
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|hasBadCommonName|Boolean|Indicates whether the certificate's common name does not match the expected domain name.|
+|hasBadCommonName|Boolean|Indicates whether the certificate's common name doesn't match the expected domain name.|
 |hasInsecureSignature|Boolean|Indicates whether the certificate uses a weak or insecure signature algorithm (for example, MD5 or SHA-1).|
 |hasNoChainOfTrust|Boolean|Indicates whether the certificate chain of trust is incomplete or invalid.|
-|isDenylisted|Boolean|Indicates whether the certificate has been found on a known denylist or associated with compromised issuers.|
-|isHostnameMismatch|Boolean|Indicates whether the certificate's hostname does not match the domain it was issued for.|
-|isNotAfter|Boolean|Indicates whether the certificate has expired and is no longer valid.|
-|isNotBefore|Boolean|Indicates whether the certificate is not yet valid based on its activation date.|
-|isRevoked|Boolean|Indicates whether the certificate has been revoked by the issuing certificate authority.|
+|isDenylisted|Boolean|Indicates whether the certificate is on a known denylist or associated with compromised issuers.|
+|isHostnameMismatch|Boolean|Indicates whether the certificate's hostname doesn't match the domain it was issued for.|
+|isNotAfter|Boolean|Indicates whether the certificate is expired and no longer valid.|
+|isNotBefore|Boolean|Indicates whether the certificate isn't yet valid based on its activation date.|
+|isRevoked|Boolean|Indicates whether the issuing certificate authority revoked the certificate.|
 |isSelfSigned|Boolean|Indicates whether the certificate is self-signed rather than issued by a trusted certificate authority.|
 
 ## Relationships
