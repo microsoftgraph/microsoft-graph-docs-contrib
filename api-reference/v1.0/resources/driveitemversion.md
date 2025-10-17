@@ -14,21 +14,14 @@ Namespace: microsoft.graph
 
 Represents a specific version of a [driveItem](driveitem.md).
 
-The following tasks are available for **driveItemVersion** resources.
+## Methods
 
-|            Common task             |         HTTP method         |
-| :--------------------------------- | :-------------------------- |
-| [List versions][version-list]      | `GET /drive/items/{item-id}/versions`  |
-| [Get version][version-get]         | `GET /drive/items/{item-id}/versions/{version-id}`     |
-| [Get contents][content-get]        | `GET /drive/items/{item-id}/versions/{version-id}/content` |
-| [Restore version][version-restore] | `POST /drive/items/{item-id}/versions/{version-id}/restoreversion` |
-
-[version-list]: ../api/driveitem-list-versions.md
-[version-get]: ../api/driveitemversion-get.md
-[content-get]: ../api/driveitemversion-get-contents.md
-[version-restore]: ../api/driveitemversion-restore.md
-
-In the previous table, the examples use `/drive`, but there are many valid requests.
+| Method                                                                       | Return Type | Description |
+|:-----------------------------------------------------------------------------|:------------|:-------------|
+| [List versions](../api/driveitem-list-versions.md)                           | [driveItemVersion](../resources/driveitemversion.md) collection | Retrieve the versions of a file.|
+| [Get version](../api/driveitemversion-get.md)                                | [driveItemVersion](../resources/driveitemversion.md) | Retrieve the metadata for a **driveItemVersion**.|
+| [Download version](../api/driveitemversion-get-contents.md)                  | download URL | Download content of a **driveItemVersion** |
+| [Restore version](../api/driveitemversion-restore.md)                        | None | Restore a previous version of a **driveItem** to be the current version.|
 
 ## Properties
 
