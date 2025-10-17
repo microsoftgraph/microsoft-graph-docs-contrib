@@ -98,6 +98,8 @@ items:
     href: ../../api/driveitem-lockorunlockrecord.md
   - name: Create upload session
     href: ../../api/driveitem-createuploadsession.md
+- name: Drive item version
+  href: ../../resources/driveitemversion.md
 - name: Bundle
   items:
   - name: Bundle
