@@ -78,7 +78,7 @@ The following example shows a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/identity/verifiedId/profiles/{verifiedIdProfileId}
+PATCH https://graph.microsoft.com/beta/identity/verifiedId/profiles/ca15ec56-7adf-42ee-847b-00c3008264fb
 Content-Type: application/json
 
 {

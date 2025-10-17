@@ -62,7 +62,7 @@ The following example shows a request.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/identity/verifiedId/profiles/{verifiedIdProfileId}
+DELETE https://graph.microsoft.com/beta/identity/verifiedId/profiles/ca15ec56-7adf-42ee-847b-00c3008264fb
 ```
 
 
