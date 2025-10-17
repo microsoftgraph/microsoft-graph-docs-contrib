@@ -199,6 +199,30 @@
           "ChangeType": "Addition",
           "Description": "Added the [list](https://learn.microsoft.com/en-us/graph/api/employeeexperience-list-roles?view=graph-rest-beta) method to the [employeeexperience](https://learn.microsoft.com/en-us/graph/api/resources/employeeexperience.md?view=graph-rest-beta) resource.",
           "Target": "employeeexperience"
+        },
+        {
+          "Id": "da5f6a25-777b-4bfb-8cf1-86d2fe708864",
+          "ApiChange": "Method",
+          "ChangedApiName": "List members",
+          "ChangeType": "Addition",
+          "Description": "Added the [list members](https://learn.microsoft.com/en-us/graph/api/engagementrole-list-members?view=graph-rest-beta) method to the [engagementRole](https://learn.microsoft.com/en-us/graph/api/resources/engagementRole?view=graph-rest-beta) resource.",
+          "Target": "engagementRole"
+        },
+        {
+          "Id": "da5f6a25-777b-4bfb-8cf1-86d2fe708864",
+          "ApiChange": "Method",
+          "ChangedApiName": "Add member",
+          "ChangeType": "Addition",
+          "Description": "Added the [add member](https://learn.microsoft.com/en-us/graph/api/engagementrole-post-members?view=graph-rest-beta) method to the [engagementRole](https://learn.microsoft.com/en-us/graph/api/resources/engagementRole?view=graph-rest-beta) resource.",
+          "Target": "engagementRole"
+        },
+        {
+          "Id": "da5f6a25-777b-4bfb-8cf1-86d2fe708864",
+          "ApiChange": "Method",
+          "ChangedApiName": "Delete member",
+          "ChangeType": "Addition",
+          "Description": "Added the [delete member](https://learn.microsoft.com/en-us/graph/api/engagementrole-delete-members?view=graph-rest-beta) method to the [engagementRole](https://learn.microsoft.com/en-us/graph/api/resources/engagementRole?view=graph-rest-beta) resource.",
+          "Target": "engagementRole"
         }
       ],
       "Id": "da5f6a25-777b-4bfb-8cf1-86d2fe708864",
@@ -241,6 +265,38 @@
           "ChangeType": "Addition",
           "Description": "Added the [engagementRoleMember](https://learn.microsoft.com/en-us/graph/api/resources/engagementRoleMember?view=graph-rest-1.0) resource.",
           "Target": "engagementRoleMember"
+        },
+         {
+          "Id": "da5f6a25-777b-4bfb-8cf1-86d2fe708864",
+          "ApiChange": "Method",
+          "ChangedApiName": "List",
+          "ChangeType": "Addition",
+          "Description": "Added the [list](https://learn.microsoft.com/en-us/graph/api/employeeexperience-list-roles?view=graph-rest-1.0) method to the [employeeexperience](https://learn.microsoft.com/en-us/graph/api/resources/employeeexperience.md?view=graph-rest-1.0) resource.",
+          "Target": "employeeexperience"
+        },
+         {
+          "Id": "083f8aaf-e649-4f00-9def-f5a7beced1b9",
+          "ApiChange": "Method",
+          "ChangedApiName": "List members",
+          "ChangeType": "Addition",
+          "Description": "Added the [list members](https://learn.microsoft.com/en-us/graph/api/engagementrole-list-members?view=graph-rest-1.0) method to the [engagementRole](https://learn.microsoft.com/en-us/graph/api/resources/engagementRole?view=graph-rest-1.0) resource.",
+          "Target": "engagementRole"
+        },
+        {
+          "Id": "083f8aaf-e649-4f00-9def-f5a7beced1b9",
+          "ApiChange": "Method",
+          "ChangedApiName": "Add member",
+          "ChangeType": "Addition",
+          "Description": "Added the [add member](https://learn.microsoft.com/en-us/graph/api/engagementrole-post-members?view=graph-rest-1.0) method to the [engagementRole](https://learn.microsoft.com/en-us/graph/api/resources/engagementRole?view=graph-rest-1.0) resource.",
+          "Target": "engagementRole"
+        },
+        {
+          "Id": "083f8aaf-e649-4f00-9def-f5a7beced1b9",
+          "ApiChange": "Method",
+          "ChangedApiName": "Delete member",
+          "ChangeType": "Addition",
+          "Description": "Added the [delete member](https://learn.microsoft.com/en-us/graph/api/engagementrole-delete-members?view=graph-rest-1.0) method to the [engagementRole](https://learn.microsoft.com/en-us/graph/api/resources/engagementRole?view=graph-rest-1.0) resource.",
+          "Target": "engagementRole"
         }
       ],
       "Id": "083f8aaf-e649-4f00-9def-f5a7beced1b9",
