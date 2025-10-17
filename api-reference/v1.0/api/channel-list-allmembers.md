@@ -116,12 +116,12 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('2ab9c796-2902-45f8-b712-7c5a63cf41c4')/channels('19%3A20bc1df46b1148e9b22539b83bc66809%40thread.skype')/allMembers",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#teams('2ab9c796-2902-45f8-b712-7c5a63cf41c4')/channels('19%3A20bc1df46b1148e9b22539b83bc66809%40thread.skype')/allMembers",
   "@odata.count": 2,
   "value": [
     {
       "@odata.type": "#microsoft.graph.aadUserConversationMember",
-      "@microsoft.graph.originalSourceMembershipUrl": "https://graph.microsoft.com/beta/tenants/2432b57b-0abd-43db-aa7b-16eadd115d34/teams/1e769eab-06a8-4b2e-ac42-1f040a4e52a1/channels/19%3AlRZHL5VwvZs0XN2orTn7DlinJDETkgSVTHXbDLUEKf01%40thread.tacv2/members/MCMjMyMjMjQzMmI1N2ItMGFiZC00M2RiLWFhN2ItMTZlYWRkMTE1ZDM0IyMxOTpsUlpITDVWd3ZaczBYTjJvclRuN0RsaW5KREVUa2dTVlRIWGJETFVFS2YwMUB0aHJlYWQudGFjdjIjIzI4YzEwMjQ0LTRiYWQtNGZkYS05OTNjLWYzMzJmYWVmOTRmMA==",
+      "@microsoft.graph.originalSourceMembershipUrl": "https://graph.microsoft.com/v1.0/tenants/2432b57b-0abd-43db-aa7b-16eadd115d34/teams/1e769eab-06a8-4b2e-ac42-1f040a4e52a1/channels/19%3AlRZHL5VwvZs0XN2orTn7DlinJDETkgSVTHXbDLUEKf01%40thread.tacv2/members/MCMjMyMjMjQzMmI1N2ItMGFiZC00M2RiLWFhN2ItMTZlYWRkMTE1ZDM0IyMxOTpsUlpITDVWd3ZaczBYTjJvclRuN0RsaW5KREVUa2dTVlRIWGJETFVFS2YwMUB0aHJlYWQudGFjdjIjIzI4YzEwMjQ0LTRiYWQtNGZkYS05OTNjLWYzMzJmYWVmOTRmMA==",
       "id": "MmFiOWM3OTYtMjkwMi00NWY4LWI3MTItN2M1YTYzY2Y0MWM0IyNlZWY5Y2IzNi0wNmRlLTQ2OWItODdjZC03MGY0Y2JlMzJkMTQ=",
       "roles": [
         "Owner"
@@ -133,7 +133,7 @@ Content-type: application/json
     },
     {
       "@odata.type": "#microsoft.graph.aadUserConversationMember",
-      "@microsoft.graph.originalSourceMembershipUrl": "https://graph.microsoft.com/beta/tenants/2432b57b-0abd-43db-aa7b-16eadd115d34/teams/1e769eab-06a8-4b2e-ac42-1f040a4e52a1/members/MCMjMSMjMjQzMmI1N2ItMGFiZC00M2RiLWFhN2ItMTZlYWRkMTE1ZDM0IyMxZTc2OWVhYi0wNmE4LTRiMmUtYWM0Mi0xZjA0MGE0ZTUyYTEjIzQ1OTVkMmYyLTdiMzEtNDQ2Yy04NGZkLTliNzk1ZTYzMTE0Yg==",
+      "@microsoft.graph.originalSourceMembershipUrl": "https://graph.microsoft.com/v1.0/tenants/2432b57b-0abd-43db-aa7b-16eadd115d34/teams/1e769eab-06a8-4b2e-ac42-1f040a4e52a1/members/MCMjMSMjMjQzMmI1N2ItMGFiZC00M2RiLWFhN2ItMTZlYWRkMTE1ZDM0IyMxZTc2OWVhYi0wNmE4LTRiMmUtYWM0Mi0xZjA0MGE0ZTUyYTEjIzQ1OTVkMmYyLTdiMzEtNDQ2Yy04NGZkLTliNzk1ZTYzMTE0Yg==",
       "id": "MmFiOWM3OTYtMjkwMi00NWY4LWI3MTItN2M1YTYzY2Y0MWM0IyNiMzI0NmY0NC1jMDkxLTQ2MjctOTZjNi0yNWIxOGZhMmM5MTA=",
       "roles": [ ],
       "displayName": "Eric Solomon",
