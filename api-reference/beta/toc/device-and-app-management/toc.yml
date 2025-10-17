@@ -132,8 +132,10 @@ items:
       href: ../../api/cloudpc-retrievecloudpccountbystatus.md
     - name: List for user
       href: ../../api/user-list-cloudpcs.md
-    - name: Get launch info
+    - name: Get launch info (deprecated)
       href: ../../api/cloudpc-getcloudpclaunchinfo.md
+    - name: Retrieve launch detail
+      href: ../../api/cloudpc-retrievecloudpclaunchdetail.md
     - name: Get connectivity history
       href: ../../api/cloudpc-getcloudpcconnectivityhistory.md
     - name: Get supported remote actions
@@ -527,7 +529,9 @@ items:
       href: ../../resources/cloudpcfrontlineshareddevicedetail.md
     - name: Cloud PC health check item
       href: ../../resources/cloudpchealthcheckitem.md
-    - name: Cloud PC launch info
+    - name: Cloud PC launch detail
+      href: ../../resources/cloudpclaunchdetail.md
+    - name: Cloud PC launch info (deprecated)
       href: ../../resources/cloudpclaunchinfo.md
     - name: Cloud PC login result
       href: ../../resources/cloudpcloginresult.md

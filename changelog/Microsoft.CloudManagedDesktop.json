@@ -3,6 +3,56 @@
     {
       "ChangeList": [
         {
+          "Id": "cb115cfe-1d16-48d9-8d7f-787fa53ddd8b",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "windows365SwitchCompatibilityFailureReasonType",
+          "ChangeType": "Addition",
+          "Description": "Added the **windows365SwitchCompatibilityFailureReasonType** enumeration type.",
+          "Target": "windows365SwitchCompatibilityFailureReasonType"
+        },
+        {
+          "Id": "cb115cfe-1d16-48d9-8d7f-787fa53ddd8b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cloudPcLaunchDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the [cloudPcLaunchDetail](https://learn.microsoft.com/en-us/graph/api/resources/cloudpclaunchdetail?view=graph-rest-beta) resource type.",
+          "Target": "cloudPcLaunchDetail"
+        },
+        {
+          "Id": "cb115cfe-1d16-48d9-8d7f-787fa53ddd8b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cloudPcLaunchInfo",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [cloudPcLaunchInfo](https://learn.microsoft.com/en-us/graph/api/resources/cloudpclaunchinfo?view=graph-rest-beta) resource type. The **cloudPcLaunchInfo** resource is deprecated and will stop returning data on October 30, 2026. Going forward, use the [cloudPcLaunchDetail](https://learn.microsoft.com/en-us/graph/api/resources/cloudpclaunchdetail?view=graph-rest-beta) API.",
+          "Target": "cloudPC"
+        },
+        {
+          "Id": "cb115cfe-1d16-48d9-8d7f-787fa53ddd8b",
+          "ApiChange": "Method",
+          "ChangedApiName": "retrieveCloudPcLaunchDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the [retrieveCloudPcLaunchDetail](https://learn.microsoft.com/en-us/graph/api/cloudpc-retrievecloudpclaunchdetail?view=graph-rest-beta) method to the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource.",
+          "Target": "cloudPC"
+        },
+        {
+          "Id": "cb115cfe-1d16-48d9-8d7f-787fa53ddd8b",
+          "ApiChange": "Method",
+          "ChangedApiName": "getCloudPcLaunchInfo",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [getCloudPcLaunchInfo](https://learn.microsoft.com/en-us/graph/api/cloudpc-getCloudPcLaunchInfo?view=graph-rest-beta) method of the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource. This API is deprecated and will stop returning data on October 30, 2026. Going forward, use the [retrieveCloudPcLaunchDetail](https://learn.microsoft.com/en-us/graph/api/cloudpc-retrievecloudpclaunchdetail?view=graph-rest-beta) API.",
+          "Target": "cloudPC"
+        }
+      ],
+      "Id": "cb115cfe-1d16-48d9-8d7f-787fa53ddd8b",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-10-16T21:57:45.6952989Z",
+      "WorkloadArea": "Device and app management",
+      "SubArea": "Cloud PC"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "ad99bb92-c9fc-4ca3-9bf3-c1846433f520",
           "ApiChange": "Method",
           "ChangedApiName": "GET",
