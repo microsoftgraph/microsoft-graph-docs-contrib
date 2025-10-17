@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
-<!-- { "blockType" : "ignored" } -->
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /teams/{team-id}/channels/{channel-id}/allMembers
 ```
