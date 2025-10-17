@@ -12,8 +12,6 @@ ms.date: 09/23/2025
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 List the dependent [education submission resources](../resources/educationsubmissionresource.md) for a given [education submission resource](../resources/educationsubmissionresource.md).
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
@@ -51,44 +49,13 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Request
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_dependentsubmissionresources"
 }-->
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/education/classes/de45722a-c202-43a9-9dd5-d82c45bcef91/assignments/4d1ecd2d-c913-41ba-be3c-d896b65d09f0/submissions/fd921642-a333-4c4d-9335-2200f36400a9/resources/d927f453-3297-487a-8929-fa1c68f18bf3/dependentResources
+```http
+GET https://graph.microsoft.com/v1.0/education/classes/de45722a-c202-43a9-9dd5-d82c45bcef91/assignments/4d1ecd2d-c913-41ba-be3c-d896b65d09f0/submissions/fd921642-a333-4c4d-9335-2200f36400a9/resources/d927f453-3297-487a-8929-fa1c68f18bf3/dependentResources
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/list-dependentsubmissionresources-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/list-dependentsubmissionresources-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-dependentsubmissionresources-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-dependentsubmissionresources-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/list-dependentsubmissionresources-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/list-dependentsubmissionresources-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/list-dependentsubmissionresources-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### Response
 The following example shows the response.
@@ -105,7 +72,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('de45722a-c202-43a9-9dd5-d82c45bcef91')/assignments('4d1ecd2d-c913-41ba-be3c-d896b65d09f0')/submissions('fd921642-a333-4c4d-9335-2200f36400a9')/resources('d927f453-3297-487a-8929-fa1c68f18bf3')/dependentResources",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/classes('de45722a-c202-43a9-9dd5-d82c45bcef91')/assignments('4d1ecd2d-c913-41ba-be3c-d896b65d09f0')/submissions('fd921642-a333-4c4d-9335-2200f36400a9')/resources('d927f453-3297-487a-8929-fa1c68f18bf3')/dependentResources",
   "value": [
     {
       "assignmentResourceUrl": "https://assignments.edu.cloud.microsoft/api/v1.0/edu/classes/de45722a-c202-43a9-9dd5-d82c45bcef91/assignments/4d1ecd2d-c913-41ba-be3c-d896b65d09f0/resources/090d693a-60a1-454e-8bfb-464cea5e796d",

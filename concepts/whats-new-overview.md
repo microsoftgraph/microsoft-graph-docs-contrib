@@ -20,6 +20,10 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ## October 2025: New and generally available
 
+### Education
+
+- [List the dependent education assignment resources](/graph/api/educationassignmentresource-list-dependentresources) for a given education assignment resource.
+- [List the dependent education submission resources](/graph/api/educationsubmissionresource-list-dependentresources) for a given education submission resource.
 ### Backup storage
 
 - Use the **protectionSources** property on [driveProtectionUnit](/graph/api/resources/driveprotectionunit), [mailboxProtectionUnit](/graph/api/resources/mailboxprotectionunit), and [siteProtectionUnit](/graph/api/resources/siteprotectionunit) to get the sources by which a protection unit is currently protected.
@@ -33,6 +37,10 @@ Added the following new endpoints as supported request URLs for the [driveItem: 
 - `POST /groups/{groupId}/drive/items/{parentItemId}:/{fileName}:/createUploadSession` 
 - `POST /sites/{siteId}/drive/items/{parentItemId}:/{fileName}:/createUploadSession`
 - `POST /users/{userId}/drive/items/{parentItemId}:/{fileName}:/createUploadSession`
+
+### Device and app management | Cloud PC
+
+[List](/graph/api/user-list-cloudpcs) the Cloud PC devices that are attributed to the signed-in user.
 
 ### Identity and access | Directory management
 
@@ -56,6 +64,7 @@ Apply the following [prerequisites for the Places list and descendant APIs](/gra
 
 ### Device and app management | Cloud PC
 
+- Deprecated the [getCloudPcLaunchInfo](/graph/api/cloudpc-getcloudpclaunchinfo?view=graph-rest-beta&preserve-view=true) method in favor of the [retrieveCloudPcLaunchDetail](/graph/api/cloudpc-retrievecloudpclaunchdetail?view=graph-rest-beta&preserve-view=true) API.
 - Deprecated the [cloudPcExternalPartnerSetting](/graph/api/resources/cloudpcexternalpartnersetting) resource and replaced with the [cloudPcExternalPartner](/graph/api/resources/cloudpcexternalpartner) resource.
 - [Create](/graph/api/virtualendpoint-post-externalpartners?view=graph-rest-beta&preserve-view=true), [get](/graph/api/cloudpcexternalpartner-get?view=graph-rest-beta&preserve-view=true), or [update](/graph/api/cloudpcexternalpartner-update?view=graph-rest-beta&preserve-view=true) [an external partner](/graph/api/resources/cloudpcexternalpartner?view=graph-rest-beta&preserve-view=true) of Cloud PC, such as the partner status, and enable or disable the connection.
 
@@ -107,7 +116,7 @@ Defined the following endpoints as supported for the [driveItem: discardCheckout
 - Added the following new properties to the [securityGroupEvidence](/graph/api/resources/security-securitygroupevidence) resource:
   - Use the **activeDirectoryObjectGuid** property to get the unique group identifier assigned by the on-premises Active Directory.
   - Use the **distinguishedName** property to identify the distinguished name of the security group.
-  - Use the **friendlyName** property to identify the friendly name of the security group.	
+  - Use the **friendlyName** property to identify the friendly name of the security group.
   - Use the **sid** property to get the security identifier of the group.
 - Use the **activeDirectoryObjectGuid** property on [userAccount](/graph/api/resources/security-useraccount) to get the unique user identifier assigned by the on-premises Active Directory.
 
