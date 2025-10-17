@@ -1,8 +1,8 @@
 ---
 title: "List applicationTemplates"
-description: "Retrieve a list of applicationtemplate objects."
+description: "Retrieve a list of application template objects."
 ms.localizationpriority: medium
-author: "luleonpla"
+author: "HildaK-pm"
 ms.subservice: "entra-applications"
 doc_type: "apiPageType"
 ms.date: 08/02/2024
