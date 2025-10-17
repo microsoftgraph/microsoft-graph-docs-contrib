@@ -49,14 +49,10 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.educationGradingScheme",
-  "id": "String (identifier)",
   "displayName": "String",
-  "grades": [
-    {
-      "@odata.type": "microsoft.graph.educationGradingSchemeGrade"
-    }
-  ],
-  "hidePointsDuringGrading": "Boolean"
+  "grades": [{"@odata.type": "microsoft.graph.educationGradingSchemeGrade"}],
+  "hidePointsDuringGrading": "Boolean",
+  "id": "String (identifier)"
 }
 ```
 
