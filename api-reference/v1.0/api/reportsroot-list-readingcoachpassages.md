@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 Get a list of [Reading Coach passages](../resources/readingcoachpassage.md) that were practiced by a student.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -59,6 +61,7 @@ The following example shows how to get a list of the Reading Coach passages from
 
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_readingCoachPassages_1"
@@ -67,6 +70,12 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/v1.0/education/reports/readingCoachPassages
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-readingcoachpassages-1-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
@@ -129,6 +138,7 @@ The following example shows how to get the Reading Coach passages for a specific
 
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_readingCoachPassages_2"
@@ -137,6 +147,12 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/v1.0/education/reports/readingCoachPassages?$filter=practicedAtDateTime gt 2025-06-22T00:00:00Z and practicedAtDateTime lt 2025-06-23T00:00:00Z
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-readingcoachpassages-2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 

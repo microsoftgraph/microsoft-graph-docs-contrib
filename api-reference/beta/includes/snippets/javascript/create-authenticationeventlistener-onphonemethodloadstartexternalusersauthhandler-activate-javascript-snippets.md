@@ -30,6 +30,7 @@ const authenticationEventListener = {
 };
 
 await client.api('/identity/authenticationEventListeners')
+	.version('beta')
 	.post(authenticationEventListener);
 
 ```

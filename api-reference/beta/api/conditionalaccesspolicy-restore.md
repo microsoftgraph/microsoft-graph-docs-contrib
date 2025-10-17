@@ -2,7 +2,7 @@
 title: "Restore conditionalAccessPolicy"
 description: "Restore a deleted conditionalAccessPolicy object"
 author: "ashyasingh"
-ms.date: 08/11/2025
+ms.date: 10/07/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
@@ -28,6 +28,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 [!INCLUDE [permissions-table](../includes/permissions/conditionalaccesspolicy-restore-permissions.md)]
+
+[!INCLUDE [rbac-conditionalaccess-apis-write](../includes/rbac-for-apis/rbac-conditionalaccess-apis-write.md)]
 
 ## HTTP request
 
@@ -93,7 +95,6 @@ POST https://graph.microsoft.com/beta/identity/conditionalAccess/deletedItems/po
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
