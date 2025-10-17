@@ -19,23 +19,22 @@ Contains information about an emergency call event.
 Inherits from [callEvent](../resources/callevent.md).
 
 ## Methods
-
 None.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 | callerInfo | [emergencyCallerInfo](../resources/emergencycallerinfo.md)| The information of the emergency caller. |
-| callEventType | callEventType| The event type of the call. Possible values are: `callStarted`, `callEnded`, `unknownFutureValue`, `rosterUpdated`. Use the `Prefer: include-unknown-enum-members` request header to get the following value in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `rosterUpdated`.|
+| callEventType | callEventType| The event type of the call. Possible values are: `callStarted`, `callEnded`, `unknownFutureValue`, `rosterUpdated`. Use the `Prefer: include-unknown-enum-members` request header to get the following value in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `rosterUpdated`. Inherited from [callEvent](../resources/callevent.md). |
 | emergencyNumberDialed | String | The emergency number dialed. |
-| eventDateTime | DateTimeOffset | The time of when event occurred. |
-| id | String | The entity ID. |
-| policyName | String | The policy name for emergency call event. |
+| eventDateTime | DateTimeOffset | The date and time when the event occurred. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [callEvent](../resources/callevent.md). |
+| id | String | The unique identifier of the **emergencyCallEvent** object. Inherited from [callEvent](../resources/callevent.md). |
+| policyName | String | The policy name for the emergency call event. |
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-| participants | [participant](../resources/participant.md) collection| Participants aren't defined for emergency call events. Inherited from [microsoft.graph.callEvent](../resources/callevent.md). |
+| participants | [participant](../resources/participant.md) collection| This navigation property exists for consistency with the base type, but isn't defined for emergency call events. Inherited from [microsoft.graph.callEvent](../resources/callevent.md). |
 
 ## JSON representation
 The following JSON representation shows the resource type.
@@ -50,17 +49,15 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.emergencyCallEvent",
-  "id": "String (identifier)",
+  "callerInfo": {"@odata.type": "microsoft.graph.emergencyCallerInfo"},
   "callEventType": "String",
-  "eventDateTime": "String (timestamp)",
-  "policyName": "String",
   "emergencyNumberDialed": "String",
-  "callerInfo": {
-    "@odata.type": "microsoft.graph.emergencyCallerInfo"
-  }
+  "eventDateTime": "String (timestamp)",
+  "id": "String (identifier)",
+  "policyName": "String"
 }
 ```
 
 ## Related content
 
-[Change notification for emergency call events](/graph/changenotifications-for-emergencycalls)
+[Change notification for emergency call events](/graph/changenotifications-for-emergencycalls).
