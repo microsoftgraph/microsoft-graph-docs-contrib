@@ -45,7 +45,18 @@ GET /me/employeeExperience/assignedRoles
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the following OData query parameters: `$filter` (`eq`), `$select`, and `$count`. For general information, see [OData query parameters](/graph/query-parameters).
+
+Supported `$filter` (`eq`) properties:
+
+- `displayName`
+- `id`
+
+Examples:
+
+- Filter by display name: `GET /me/employeeExperience/assignedRoles?$filter=displayName eq 'Corporate Communicator'`
+- Select only id and displayName: `GET /users/{userId}/employeeExperience/assignedRoles?$select=id,displayName`
+- Include total count: `GET /users/{userId}/employeeExperience/assignedRoles?$count=true`
 
 ## Request headers
 
