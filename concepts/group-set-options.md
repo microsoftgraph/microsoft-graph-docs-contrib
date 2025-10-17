@@ -19,16 +19,17 @@ On the [group](/graph/api/resources/group) resource in Microsoft Graph, you can 
 
 **resourceBehaviorOptions** is a string collection that specifies group behaviors for a Microsoft 365 group. These behaviors can be set only on [group creation](/graph/api/group-post-groups).
 
-| Supported values for resourceBehaviorOptions | Description                                                                                                                                     |
-|:---------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------|
-| `AllowOnlyMembersToPost`                     | Only group _members_ can post conversations to the group; otherwise, any user in the organization can post conversations to the group.          |
-| `CalendarMemberReadOnly`                     | Members can view the group calendar in Outlook but can't make changes; otherwise, members can both view and edit the group calendar in Outlook. |
-| `ConnectorsDisabled`                         | Changes made to the group in Exchange Online aren't synced back to on-premises Active Directory.                                                |
-| `HideGroupInOutlook`                         | This group is hidden in Outlook experiences; otherwise, the group is visible and discoverable in Outlook experiences.                           |
-| `SubscribeMembersToCalendarEventsDisabled`   | Members aren't subscribed to the group's calendar events in Outlook.                                                                            |
-| `SubscribeNewGroupMembers`                   | Group members are subscribed to receive group conversations.                                                                                    |
-| `WelcomeEmailDisabled`                       | Welcome emails aren't sent to new members.                                                                                                      |
-| `SkipExchangeInstantOn`                      | For internal use only. DO NOT USE.                                                                                                              |
+| Supported values for resourceBehaviorOptions | Description                                                                                                                                                                                   |
+|:---------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `AllowOnlyMembersToPost`                     | Only group _members_ can post conversations to the group; otherwise, any user in the organization can post conversations to the group.                                                        |
+| `CalendarMemberReadOnly`                     | Members can view the group calendar in Outlook but can't make changes; otherwise, members can both view and edit the group calendar in Outlook.                                               |
+| `ConnectorsDisabled`                         | Changes made to the group in Exchange Online aren't synced back to on-premises Active Directory.                                                                                              |
+| `HideGroupInOutlook`                         | This group is hidden in Outlook experiences; otherwise, the group is visible and discoverable in Outlook experiences.                                                                         |
+| `SubscribeMembersToCalendarEventsDisabled`   | Members aren't subscribed to the group's calendar events in Outlook.                                                                                                                          |
+| `SubscribeNewGroupMembers`                   | Group members are subscribed to receive group conversations.                                                                                                                                  |
+| `WelcomeEmailDisabled`                       | Welcome emails aren't sent to new members.                                                                                                                                                    |
+| `SkipExchangeInstantOn`                      | For internal use only. DO NOT USE.                                                                                                                                                            |
+| `ProvisionSiteOnDemand`                      | By default, a SharePoint site is automatically provisioned when a Microsoft 365 group is created. Use this option to override the default behavior so that the site is provisioned on demand. |
 
 ## Resource provisioning options
 

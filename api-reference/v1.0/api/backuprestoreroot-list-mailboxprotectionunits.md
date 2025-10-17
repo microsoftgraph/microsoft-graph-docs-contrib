@@ -127,6 +127,7 @@ HTTP/1.1 200 OK
       "displayName": "Emily Braun", // Newly Added
       "email": "emilyb@contoso.com", // Newly Added
       "status": "unprotectRequested",
+      "protectionSources": "none",
       "createdBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -162,6 +163,7 @@ HTTP/1.1 200 OK
       "displayName": "Alex Wilber", // Newly Added
       "email": "alexw@contoso.com", // Newly Added
       "status": "unprotected",
+      "protectionSources": "none",
       "createdBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -197,6 +199,7 @@ HTTP/1.1 200 OK
       "displayName": "Shaun Wong", // Newly Added
       "email": "shaunw@contoso.com", // Newly Added
       "status": "protectRequested",
+      "protectionSources": "manual",
       "createdBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -232,6 +235,7 @@ HTTP/1.1 200 OK
       "displayName": "Janet Green", // Newly Added
       "email": "janetg@contoso.com", // Newly Added
       "status": "protected",
+      "protectionSources": "dynamicRule",
       "createdBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -266,6 +270,7 @@ HTTP/1.1 200 OK
       "displayName": "Eddie Brock ", // Newly Added
       "email": "eddyb@contoso.com", // Newly Added
       "status": "unprotected",
+      "protectionSources": "none",
       "createdBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",

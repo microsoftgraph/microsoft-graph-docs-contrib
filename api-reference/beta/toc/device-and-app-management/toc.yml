@@ -226,6 +226,18 @@ items:
       href: ../../api/cloudpcexternalpartnersetting-get.md
     - name: Update
       href: ../../api/cloudpcexternalpartnersetting-update.md
+  - name: Cloud PC external partner
+    items:
+    - name: Cloud PC external partner
+      href: ../../resources/cloudpcexternalpartner.md
+    - name: List
+      href: ../../api/virtualendpoint-list-externalpartners.md
+    - name: Create
+      href: ../../api/virtualendpoint-post-externalpartners.md
+    - name: Get
+      href: ../../api/cloudpcexternalpartner-get.md
+    - name: Update
+      href: ../../api/cloudpcexternalpartner-update.md
   - name: Cloud PC front line service plan
     items:
     - name: Cloud PC front line service plan
@@ -404,10 +416,14 @@ items:
       href: ../../api/virtualendpoint-list-supportedregions.md
     - name: List service plans
       href: ../../api/virtualendpoint-list-serviceplans.md
-    - name: List external partner settings
+    - name: List external partner settings (deprecated)
       href: ../../api/virtualendpoint-list-externalpartnersettings.md
-    - name: Create external partner setting
+    - name: Create external partner setting (deprecated)
       href: ../../api/virtualendpoint-post-externalpartnersettings.md
+    - name: List external partners
+      href: ../../api/virtualendpoint-list-externalpartners.md
+    - name: Create external partner
+      href: ../../api/virtualendpoint-post-externalpartners.md
     - name: List front line service plans
       href: ../../api/virtualendpoint-list-frontlineserviceplans.md
     - name: List bulk actions

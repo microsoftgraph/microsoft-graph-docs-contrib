@@ -1896,6 +1896,16 @@
                 "participant",
                 "addLargeGalleryViewOperation"
               ]
+            },            
+            {
+              "name": "Call events",
+              "resources": [
+                "callEvent",
+                "emergencyCallEvent"
+              ],
+              "complexTypes": [
+                "emergencyCallerInfo"
+              ]
             },
             {
               "name": "Call records",
