@@ -1359,8 +1359,8 @@ items:
         href: ../../resources/externalsponsors.md
       - name: Group members
         href: ../../resources/groupmembers.md
-      - name: Identity (entitlement management)
-        href: ../../resources/identityentitlementmanagement.md
+      - name: Identity
+        href: ../../resources/identity.md
       - name: Identity source
         href: ../../resources/identitysource.md
       - name: Internal sponsors
