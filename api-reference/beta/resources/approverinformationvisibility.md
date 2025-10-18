@@ -1,5 +1,5 @@
 ---
-title: "approverInformationVisibilityenum type"
+title: "approverInformationVisibility enum type"
 description: "Defines whether approver information is visible to the requestor in approval processes."
 ms.localizationpriority: medium
 author: "myra-ramdenbourg"
@@ -8,7 +8,7 @@ doc_type: "enumPageType"
 ms.date: 10/14/2025
 ---
 
-# approverInformationVisibilityenum type
+# approverInformationVisibility enum type
 
 Namespace: microsoft.graph
 

@@ -1,7 +1,7 @@
 ---
 title: "identity resource type (entitlement management)"
 description: "Represents an identity of a user or other entity in entitlement management scenarios."
-author: "mramdenbourg"
+author: "myra-ramdenbourg"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
