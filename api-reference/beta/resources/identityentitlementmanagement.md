@@ -8,15 +8,13 @@ doc_type: resourcePageType
 ms.date: 10/17/2025
 ---
 
-# identity resource type (Microsoft Graph)
+# Identity resource type
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents an identity of a user or other entity in entitlement management scenarios. This resource is used in contexts such as related people in access package suggestions to provide identifying information about individuals.
-
-This is an open type that can contain additional properties beyond those described below.
 
 ## Properties
 
