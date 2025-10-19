@@ -3219,34 +3219,30 @@
       "SubArea": ""
     },
     {
-      "changelog": [
+      "ChangeList": [
         {
-          "ChangeList": [
-            {
-              "Id": "2d1d8323-7e36-4891-bfd1-b91af452e0b2",
-              "ApiChange": "Enumeration",
-              "ChangedApiName": "investigationState",
-              "ChangeType": "Addition",
-              "Description": "Added the **investigationState** enumeration type.",
-              "Target": "investigationState"
-            },
-            {
-              "Id": "2d1d8323-7e36-4891-bfd1-b91af452e0b2",
-              "ApiChange": "Property",
-              "ChangedApiName": "investigationState",
-              "ChangeType": "Addition",
-              "Description": "Added the **investigationState** property to the [alert](https://learn.microsoft.com/en-us/graph/api/resources/security-alert?view=graph-rest-beta) resource.",
-              "Target": "alert"
-            }
-          ],
           "Id": "2d1d8323-7e36-4891-bfd1-b91af452e0b2",
-          "Cloud": "Review",
-          "Version": "beta",
-          "CreatedDateTime": "2025-10-16T14:39:53.8840974Z",
-          "WorkloadArea": "Security",
-          "SubArea": ""
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "investigationState",
+          "ChangeType": "Addition",
+          "Description": "Added the **investigationState** enumeration type.",
+          "Target": "investigationState"
+        },
+        {
+          "Id": "2d1d8323-7e36-4891-bfd1-b91af452e0b2",
+          "ApiChange": "Property",
+          "ChangedApiName": "investigationState",
+          "ChangeType": "Addition",
+          "Description": "Added the **investigationState** property to the [alert](https://learn.microsoft.com/en-us/graph/api/resources/security-alert?view=graph-rest-beta) resource.",
+          "Target": "alert"
         }
-      ]
+      ],
+      "Id": "2d1d8323-7e36-4891-bfd1-b91af452e0b2",
+      "Cloud": "Review",
+      "Version": "beta",
+      "CreatedDateTime": "2025-10-16T14:39:53.8840974Z",
+      "WorkloadArea": "Security",
+      "SubArea": ""
     }
   ]
 }
