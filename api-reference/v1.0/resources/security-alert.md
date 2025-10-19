@@ -182,27 +182,27 @@ When a security provider detects a threat, it creates an alert in the system. Mi
 
 ### alertInvestigationState values
 
-| Member                             | Description                                                                                                                         |
-| :----------------------------------| :---------------------------------------------------------------------------------------------------------------------------------- |
-| unknown                            | TBD                                                                                                                                 |
-| terminated                         | TBD                                                                                                                                 |
-| successfullyRemediated             | TBD                                                                                                                                 |
-| benign                             | TBD                                                                                                                                 |
-| failed                             | TBD                                                                                                                                 |
-| partiallyRemediated                | TBD                                                                                                                                 |
-| running                            | TBD                                                                                                                                 |
-| pendingApproval                    | TBD                                                                                                                                 |
-| pendingResource                    | TBD                                                                                                                                 |
-| queued                             | TBD                                                                                                                                 |
-| innerFailure                       | TBD                                                                                                                                 |
-| preexistingAlert                   | TBD                                                                                                                                 |
-| unsupportedOs                      | TBD                                                                                                                                 |
-| unsupportedAlertType               | TBD                                                                                                                                 |
-| suppressedAlert                    | TBD                                                                                                                                 |
-| partiallyInvestigated              | TBD                                                                                                                                 |
-| terminatedByUser                   | TBD                                                                                                                                 |
-| terminatedBySystem                 | TBD                                                                                                                                 |
-| unknownFutureValue                 | TBD                                                                                                                                 |
+| Member                     | Description                                                                                                                  |
+| :--------------------------| :--------------------------------------------------------------------------------------------------------------------------- |
+| unknown                    | Unknown investigation state.                                                                                                 |
+| terminated                 | Investigation was terminated before completion.                                                                              |
+| successfullyRemediated     | Investigation completed successfully with all remediation actions executed.                                                  |
+| benign                     | Investigation completed without any remediation attempts.                                                                    |
+| failed                     | A problem interrupted the investigation, preventing it from completing.                                                      |
+| partiallyRemediated        | Investigation completed with some remediation plans executing successfully.                                                  |
+| running                    | Investigation is currently ongoing.                                                                                          |
+| pendingApproval            | Investigation paused; some actions require user review and approval.                                                         |
+| pendingResource            | Investigation is waiting for required resources to become available.                                                         |
+| queued                     | Investigation is queued and waiting to start.                                                                                |
+| innerFailure               | Investigation encountered an internal system failure.                                                                        |
+| preexistingAlert           | Investigation was not started because a similar alert already exists.                                                        |
+| unsupportedOs              | Investigation cannot proceed because the operating system is not supported.                                                  |
+| unsupportedAlertType       | Investigation cannot proceed because the alert type is not supported.                                                        |
+| suppressedAlert            | Investigation was suppressed based on configured rules or policies.                                                          |
+| partiallyInvestigated      | Investigation was partially completed.                                                                                       |
+| terminatedByUser           | Investigation stopped by the user before it could complete.                                                                  |
+| terminatedBySystem         | Investigation stopped by the system before it could complete.                                                                |
+| unknownFutureValue         | Evolvable enumeration sentinel value. Don't use.                                                                             |
 
 ## Relationships
 
