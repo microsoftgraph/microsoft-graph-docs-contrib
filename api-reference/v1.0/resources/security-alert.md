@@ -65,6 +65,7 @@ When a security provider detects a threat, it creates an alert in the system. Mi
 |threatFamilyName|String| Threat family associated with this alert.|
 |title|String| Brief identifying string value describing the alert.|
 |systemTags|String collection| The system tags associated with the alert.|
+|investigationState|[microsoft.graph.security.investigationState](#alertinvestigationstate-values)| Information on the investigation's current status. Possible values are: `unknown`, `terminated`, `successfullyRemediated`, `benign`, `failed`, `partiallyRemediated`, `running`, `pendingApproval`, `pendingResource`, `queued`, `innerFailure`, `preexistingAlert`, `unsupportedOs`, `unsupportedAlertType`, `suppressedAlert`, `partiallyInvestigated`, `terminatedByUser`, `terminatedBySystem`, `unknownFutureValue`.|
 
 ### alertClassification values
 
@@ -179,6 +180,30 @@ When a security provider detects a threat, it creates an alert in the system. Mi
 | microsoftDefenderForAIServices               | Microsoft Defender for AI Services.               |
 | securityCopilot                              | Security Copilot.                                 |
 
+### alertInvestigationState values
+
+| Member                             | Description                                                                                                                         |
+| :----------------------------------| :---------------------------------------------------------------------------------------------------------------------------------- |
+| unknown                            | TBD                                                                                                                                 |
+| terminated                         | TBD                                                                                                                                 |
+| successfullyRemediated             | TBD                                                                                                                                 |
+| benign                             | TBD                                                                                                                                 |
+| failed                             | TBD                                                                                                                                 |
+| partiallyRemediated                | TBD                                                                                                                                 |
+| running                            | TBD                                                                                                                                 |
+| pendingApproval                    | TBD                                                                                                                                 |
+| pendingResource                    | TBD                                                                                                                                 |
+| queued                             | TBD                                                                                                                                 |
+| innerFailure                       | TBD                                                                                                                                 |
+| preexistingAlert                   | TBD                                                                                                                                 |
+| unsupportedOs                      | TBD                                                                                                                                 |
+| unsupportedAlertType               | TBD                                                                                                                                 |
+| suppressedAlert                    | TBD                                                                                                                                 |
+| partiallyInvestigated              | TBD                                                                                                                                 |
+| terminatedByUser                   | TBD                                                                                                                                 |
+| terminatedBySystem                 | TBD                                                                                                                                 |
+| unknownFutureValue                 | TBD                                                                                                                                 |
+
 ## Relationships
 
 None.
@@ -203,6 +228,7 @@ The following JSON representation shows the resource type.
   "incidentId": "String",
   "status": "String",
   "severity": "String",
+  "investigationState": "Queued",
   "classification": "String",
   "determination": "String",
   "serviceSource": "String",
