@@ -70,6 +70,12 @@ Content-Type: application/json
   "description": "Updated Description",
   "settings": {
     "isOcrEnabled": false
+  },
+  "informationBarrier": {
+    "mode": "Explicit",
+    "segmentIds": [
+      "7c94cec9-4ef6-48e4-bb99-9ff01c9b3a79"      
+    ]
   }
 }
 ```
@@ -125,6 +131,12 @@ Content-type: application/json
     "isOcrEnabled": false,
     "itemMajorVersionLimit": 50,
     "isItemVersioningEnabled": true
+  },
+  "informationBarrier": {
+    "mode": "Explicit",
+    "segmentIds": [
+      "7c94cec9-4ef6-48e4-bb99-9ff01c9b3a79"      
+    ]
   }
 }
 ```
