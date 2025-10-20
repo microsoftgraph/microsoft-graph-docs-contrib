@@ -40,8 +40,8 @@ The following table lists common use cases for the Viva Engage API.
 |**Role management**|||
 | Get a static list of role types supported in Viva Engage | [GET /employeeExperience/roles](../api/employeeexperience-list-roles.md) | If successful, this method returns a `200 OK` response code and a list of roles in the response body. |
 | Get a list of users with a specific Viva Engage role | [GET /employeeExperience/roles/{engagementRoleId}/members](../api/engagementrole-list-members.md) | If successful, this method returns a `200 OK` response code and a list of engagement role members in the response body. |
-| Get a list of Viva Engage roles assigned to the signed-in user | [GET /me/employeeExperience/assignedRoles](../api/employeeexperienceuser-list-assignedroles.md) | If successful, this method returns a `200 OK` response code and a list of roles object in the response body. |
-| Get a list of Viva Engage roles assigned to a user  | [GET /users/{userId}/employeeExperience/assignedRoles](../api/employeeexperienceuser-list-assignedroles.md) | If successful, this method returns a `200 OK` response code and a list of roles object in the response body. |
+| Get a list of Viva Engage roles assigned to the signed-in user | [GET /me/employeeExperience/assignedRoles](../api/employeeexperienceuser-list-assignedroles.md) | If successful, this method returns a `200 OK` response code and a list of roles in the response body. |
+| Get a list of Viva Engage roles assigned to a user  | [GET /users/{userId}/employeeExperience/assignedRoles](../api/employeeexperienceuser-list-assignedroles.md) | If successful, this method returns a `200 OK` response code and a list of roles in the response body. |
 | Assign a Viva Engage role to a user | [POST /employeeExperience/roles/{engagementRoleId}/members](../api/engagementrole-post-members.md) | If successful, this method assigns a Viva Engage role to a user.|
 | Delete a Viva Engage role from a user | [DELETE /employeeExperience/roles/{roleId}/members/{userId}](../api/engagementrole-delete-members.md) | If successful, this method revokes a Viva Engage role from a user.|
 
