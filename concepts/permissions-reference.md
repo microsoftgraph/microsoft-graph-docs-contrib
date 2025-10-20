@@ -7,7 +7,7 @@ ms.localizationpriority: high
 ms.topic: reference
 ms.subservice: entra-applications
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.date: 10/13/2025
+ms.date: 10/20/2025
 #Customer intent: As a developer, I want to learn more about the permissions available in Microsoft Graph, so that I understand the impact of granting specific permissions to my app.
 ---
 
@@ -1038,7 +1038,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 |--|--|--|
 | Identifier | 284383ee-7f6e-4e40-a2a8-e85dcb029101 | - |
 | DisplayText | Initiate outgoing 1 to 1 calls from the app | - |
-| Description | Allows the app to place outbound calls to a single user and transfer calls to users in your organization's directory, without a signed-in user. | - |
+| Description | Allows the app to place outbound calls to a single user and transfer calls to users in your organization’s directory, without a signed-in user. | - |
 | AdminConsentRequired | Yes | - |
 
 ---
@@ -2170,7 +2170,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 |--|--|--|
 | Identifier | 243333ab-4d21-40cb-a475-36241daa0842 | 44642bfe-8385-4adc-8fc6-fe3cb2c375c3 |
 | DisplayText | Read and write Microsoft Intune devices | Read and write Microsoft Intune devices |
-| Description | Allows the app to read and write the properties of devices managed by Microsoft Intune, without a signed-in user. Does not allow high impact operations such as remote wipe and password reset on the device's owner | Allows the app to read and write the properties of devices managed by Microsoft Intune. Does not allow high impact operations such as remote wipe and password reset on the device's owner. |
+| Description | Allows the app to read and write the properties of devices managed by Microsoft Intune, without a signed-in user. Does not allow high impact operations such as remote wipe and password reset on the device’s owner | Allows the app to read and write the properties of devices managed by Microsoft Intune. Does not allow high impact operations such as remote wipe and password reset on the device’s owner. |
 | AdminConsentRequired | Yes | Yes |
 
 [!INCLUDE [DeviceManagementManagedDevices.ReadWrite.All](../includes/permissions-notes/devicemanagementmanageddevices.readwrite.all.md)]
@@ -3343,7 +3343,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 |--|--|--|
 | Identifier | e321f0bb-e7f7-481e-bb28-e3b0b32d4bd0 | 43781733-b5a7-4d1b-98f4-e8edff23e1a9 |
 | DisplayText | Read identity providers | Read identity providers |
-| Description | Allows the app to read your organization's identity (authentication) providers' properties without a signed in user. | Allows the app to read your organization's identity (authentication) providers' properties on behalf of the user. |
+| Description | Allows the app to read your organization’s identity (authentication) providers’ properties without a signed in user. | Allows the app to read your organization’s identity (authentication) providers’ properties on behalf of the user. |
 | AdminConsentRequired | Yes | Yes |
 
 ---
@@ -3354,7 +3354,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 |--|--|--|
 | Identifier | 90db2b9a-d928-4d33-a4dd-8442ae3d41e4 | f13ce604-1677-429f-90bd-8a10b9f01325 |
 | DisplayText | Read and write identity providers | Read and write identity providers |
-| Description | Allows the app to read and write your organization's identity (authentication) providers' properties without a signed in user. | Allows the app to read and write your organization's identity (authentication) providers' properties on behalf of the user. |
+| Description | Allows the app to read and write your organization’s identity (authentication) providers’ properties without a signed in user. | Allows the app to read and write your organization’s identity (authentication) providers’ properties on behalf of the user. |
 | AdminConsentRequired | Yes | Yes |
 
 ---
@@ -5026,8 +5026,8 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Category | Application | Delegated |
 |--|--|--|
 | Identifier | b21b72f6-4e6a-4533-9112-47eea9f97b28 | d146432f-b803-4ed4-8d42-ba74193a6ede |
-| DisplayText | Read your organization's identity protection policy | Read your organization's identity protection policy |
-| Description | Allows the app to read your organization's identity protection policy without a signed-in user. | Allows the app to read your organization's identity protection policy on behalf of the signed-in user. |
+| DisplayText | Read your organization’s identity protection policy | Read your organization’s identity protection policy |
+| Description | Allows the app to read your organization’s identity protection policy without a signed-in user. | Allows the app to read your organization’s identity protection policy on behalf of the signed-in user. |
 | AdminConsentRequired | Yes | Yes |
 
 ---
@@ -5193,8 +5193,8 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Category | Application | Delegated |
 |--|--|--|
 | Identifier | 2dcf8603-09eb-4078-b1ec-d30a1a76b873 | 7256e131-3efb-4323-9854-cf41c6021770 |
-| DisplayText | Read and write your organization's identity protection policy  | Read and write your organization's identity protection policy  |
-| Description | Allows the app to read and write your organization's identity protection policy without a signed-in user. | Allows the app to read and write your organization's identity protection policy on behalf of the signed-in user. |
+| DisplayText | Read and write your organization’s identity protection policy  | Read and write your organization’s identity protection policy  |
+| Description | Allows the app to read and write your organization’s identity protection policy without a signed-in user. | Allows the app to read and write your organization’s identity protection policy on behalf of the signed-in user. |
 | AdminConsentRequired | Yes | Yes |
 
 ---
@@ -6363,8 +6363,8 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Category | Application | Delegated |
 |--|--|--|
 | Identifier | bf394140-e372-4bf9-a898-299cfc7564e5 | 64733abd-851e-478a-bffb-e47a14b18235 |
-| DisplayText | Read your organization's security events | Read your organization's security events |
-| Description | Allows the app to read your organization's security events without a signed-in user. | Allows the app to read your organization's security events on behalf of the signed-in user. |
+| DisplayText | Read your organization’s security events | Read your organization’s security events |
+| Description | Allows the app to read your organization’s security events without a signed-in user. | Allows the app to read your organization’s security events on behalf of the signed-in user. |
 | AdminConsentRequired | Yes | Yes |
 
 ---
@@ -6374,8 +6374,8 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Category | Application | Delegated |
 |--|--|--|
 | Identifier | d903a879-88e0-4c09-b0c9-82f6a1333f84 | 6aedf524-7e1c-45a7-bd76-ded8cab8d0fc |
-| DisplayText | Read and update your organization's security events | Read and update your organization's security events |
-| Description | Allows the app to read your organization's security events without a signed-in user. Also allows the app to update editable properties in security events. | Allows the app to read your organization's security events on behalf of the signed-in user. Also allows the app to update editable properties in security events on behalf of the signed-in user. |
+| DisplayText | Read and update your organization’s security events | Read and update your organization’s security events |
+| Description | Allows the app to read your organization’s security events without a signed-in user. Also allows the app to update editable properties in security events. | Allows the app to read your organization’s security events on behalf of the signed-in user. Also allows the app to update editable properties in security events on behalf of the signed-in user. |
 | AdminConsentRequired | Yes | Yes |
 
 ---
@@ -6853,7 +6853,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 |--|--|--|
 | Identifier | - | 258f6531-6087-4cc4-bb90-092c5fb3ed3f |
 | DisplayText | - | Send emails from mailboxes using SMTP AUTH. |
-| Description | - | Allows the app to be able to send emails from the user's mailbox using the SMTP AUTH client submission protocol. |
+| Description | - | Allows the app to be able to send emails from the user’s mailbox using the SMTP AUTH client submission protocol. |
 | AdminConsentRequired | - | No |
 
 ![personal Microsoft accounts][MSA] The *SMTP.Send* delegated permission is available for consent in personal Microsoft accounts.
@@ -6976,7 +6976,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 |--|--|--|
 | Identifier | - | f45671fb-e0fe-4b4b-be20-3d3ce43f1bcb |
 | DisplayText | - | Read user's tasks and task lists |
-| Description | - | Allows the app to read the signed-in user's tasks and task lists, including any shared with the user. Doesn't include permission to create, delete, or update anything. |
+| Description | - | Allows the app to read the signed-in user’s tasks and task lists, including any shared with the user. Doesn't include permission to create, delete, or update anything. |
 | AdminConsentRequired | - | No |
 
 ![personal Microsoft accounts][MSA] The *Tasks.Read* delegated permission is available for consent in personal Microsoft accounts.
@@ -6988,8 +6988,8 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Category | Application | Delegated |
 |--|--|--|
 | Identifier | f10e1f91-74ed-437f-a6fd-d6ae88e26c1f | - |
-| DisplayText | Read all users' tasks and tasklist | - |
-| Description | Allows the app to read all users' tasks and task lists in your organization, without a signed-in user. | - |
+| DisplayText | Read all users’ tasks and tasklist | - |
+| Description | Allows the app to read all users’ tasks and task lists in your organization, without a signed-in user. | - |
 | AdminConsentRequired | Yes | - |
 
 ---
@@ -7010,7 +7010,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Category | Application | Delegated |
 |--|--|--|
 | Identifier | - | 2219042f-cab5-40cc-b0d2-16b1540b4c5f |
-| DisplayText | - | Create, read, update, and delete user's tasks and task lists |
+| DisplayText | - | Create, read, update, and delete user’s tasks and task lists |
 | Description | - | Allows the app to create, read, update, and delete the signed-in user's tasks and task lists, including any shared with the user. |
 | AdminConsentRequired | - | No |
 
@@ -7023,8 +7023,8 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Category | Application | Delegated |
 |--|--|--|
 | Identifier | 44e666d1-d276-445b-a5fc-8815eeb81d55 | - |
-| DisplayText | Read and write all users' tasks and tasklists | - |
-| Description | Allows the app to create, read, update and delete all users' tasks and task lists in your organization, without a signed-in user | - |
+| DisplayText | Read and write all users’ tasks and tasklists | - |
+| Description | Allows the app to create, read, update and delete all users’ tasks and task lists in your organization, without a signed-in user | - |
 | AdminConsentRequired | Yes | - |
 
 ---
@@ -8498,7 +8498,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 |--|--|--|
 | Identifier | 38d9df27-64da-44fd-b7c5-a6fbac20248f | aec28ec7-4d02-4e8c-b864-50163aea77eb |
 | DisplayText | Read all users' authentication methods | Read all users' authentication methods |
-| Description | Allows the app to read authentication methods of all users in your organization, without a signed-in user. Authentication methods include things like a user's phone numbers and Authenticator app settings. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. | Allows the app to read authentication methods of all users in your organization that the signed-in user has access to. Authentication methods include things like a user's phone numbers and Authenticator app settings. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. |
+| Description | Allows the app to read authentication methods of all users in your organization, without a signed-in user. Authentication methods include things like a user’s phone numbers and Authenticator app settings. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. | Allows the app to read authentication methods of all users in your organization that the signed-in user has access to. Authentication methods include things like a user’s phone numbers and Authenticator app settings. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. |
 | AdminConsentRequired | Yes | Yes |
 
 ---
@@ -8520,8 +8520,173 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 |--|--|--|
 | Identifier | 50483e42-d915-4231-9639-7fdb7fd190e5 | b7887744-6746-4312-813d-72daeaee7e2d |
 | DisplayText | Read and write all users' authentication methods  | Read and write all users' authentication methods. |
-| Description | Allows the application to read and write authentication methods of all users in your organization, without a signed-in user.                       Authentication methods include things like a user's phone numbers and Authenticator app settings. This                      does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods |  Allows the app to read and write authentication methods of all users in your organization that the signed-in user has access to.                       Authentication methods include things like a user's phone numbers and Authenticator app settings. This                      does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. |
+| Description | Allows the application to read and write authentication methods of all users in your organization, without a signed-in user.                       Authentication methods include things like a user’s phone numbers and Authenticator app settings. This                      does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods |  Allows the app to read and write authentication methods of all users in your organization that the signed-in user has access to.                       Authentication methods include things like a user’s phone numbers and Authenticator app settings. This                      does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. |
 | AdminConsentRequired | Yes | Yes |
+
+---
+
+### UserAuthMethod-Email.Read
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | - | 12b23cea-90c1-4873-9094-f45c5f290f86 |
+| DisplayText | - | Read the signed-in user's email authentication methods |
+| Description | - | Allows the app to read the signed-in user's email authentication methods. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. |
+| AdminConsentRequired | - | Yes |
+
+---
+
+### UserAuthMethod-Email.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | a1e58be0-1095-422b-b067-73434bd7d40f | 76caaf3a-ebdb-40a3-9299-4196e636f290 |
+| DisplayText | Read all users' email methods | Read all users' email methods |
+| Description | Allows the app to read email methods of all users in your organization, without a signed-in user. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. | Allows the app to read email methods of all users in your organization that the signed-in user has access to. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### UserAuthMethod-Email.ReadWrite.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | e8ecb853-1435-4a49-95ba-ec5b31b11672 | 074f680f-c89e-45be-880e-5d0642860a1c |
+| DisplayText | Read and write all users' email methods | Read and write all users' email methods. |
+| Description | Allows the application to read and write email methods of all users in your organization, without a signed-in user. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. | Allows the app to read and write email methods of all users in your organization that the signed-in user has access to. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### UserAuthMethod-External.Read
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | - | d1739827-146b-4f7f-b52c-1c509253aa57 |
+| DisplayText | - | Read the signed-in user's external authentication methods |
+| Description | - | Allows the app to read the signed-in user's external authentication methods. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. |
+| AdminConsentRequired | - | Yes |
+
+---
+
+### UserAuthMethod-External.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | d2c4289f-9f95-40da-ad43-eeb1506f0db7 | cbca9646-4c34-4cea-8e54-9a7088018820 |
+| DisplayText | Read all users' external authentication methods | Read all users' external authentication methods |
+| Description | Allows the app to read external authentication methods of all users in your organization, without a signed-in user. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. | Allows the app to read external authentication methods of all users in your organization that the signed-in user has access to. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### UserAuthMethod-External.ReadWrite.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | c7a22c2e-5b01-4129-8159-6c8be2c78f16 | 9d91805d-0f53-43e3-a0f3-303ad4f3056f |
+| DisplayText | Read and write all users' external authentication methods | Read and write all users' external methods. |
+| Description | Allows the application to read and write external authentication methods of all users in your organization, without a signed-in user. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. | Allows the app to read and write external authentication methods of all users in your organization that the signed-in user has access to. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### UserAuthMethod-HardwareOATH.Read
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | - | ccd2eb40-8874-44e6-8f96-335908b3cfdb |
+| DisplayText | - | Read the signed-in user's HardwareOATH authentication methods |
+| Description | - | Allows the app to read the signed-in user's HardwareOATH authentication methods. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. |
+| AdminConsentRequired | - | Yes |
+
+---
+
+### UserAuthMethod-HardwareOATH.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 7b544555-7811-49ff-8223-a56be870e33a | acd68c26-c283-4bf4-8b5c-200fc179bdd5 |
+| DisplayText | Read all users' HardwareOATH authentication methods | Read all users' HardwareOATH authentication methods |
+| Description | Allows the app to read HardwareOATH authentication methods of all users in your organization, without a signed-in user. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. | Allows the app to read HardwareOATH authentication methods of all users in your organization that the signed-in user has access to. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### UserAuthMethod-HardwareOATH.ReadWrite
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | - | 147ca97b-6686-4849-b37e-09d9b5ad45fc |
+| DisplayText | - | Read and write the signed-in user's HardwareOATH authentication methods |
+| Description | - | Allows the app to read and write the signed-in user's HardwareOATH authentication methods. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. |
+| AdminConsentRequired | - | Yes |
+
+---
+
+### UserAuthMethod-HardwareOATH.ReadWrite.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 7e9ebcc1-90aa-4471-8051-e68d6b4e9c89 | 480643f2-a162-43c5-a670-dc1494fc911b |
+| DisplayText | Read and write all users' HardwareOATH authentication methods | Read and write all users' HardwareOATH methods. |
+| Description | Allows the application to read and write HardwareOATH authentication methods of all users in your organization, without a signed-in user. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. | Allows the app to read and write HardwareOATH authentication methods of all users in your organization that the signed-in user has access to. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### UserAuthMethod-MicrosoftAuthApp.Read
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | - | f14a567b-3280-4124-95a0-eca86006967e |
+| DisplayText | - | Read the signed-in user's Microsoft Authenticator authentication methods |
+| Description | - | Allows the app to read the signed-in user's Microsoft Authenticator authentication methods. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. |
+| AdminConsentRequired | - | Yes |
+
+---
+
+### UserAuthMethod-MicrosoftAuthApp.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | a9c5f16e-e5ca-4e33-89ad-903fcfc01c23 | 7b627679-e2fd-4bfd-990e-989e2914d4e6 |
+| DisplayText | Read all users' Microsoft authentication methods | Read all users' Microsoft authentication methods |
+| Description | Allows the app to read Microsoft authentication methods of all users in your organization, without a signed-in user. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. | Allows the app to read Microsoft authentication methods of all users in your organization that the signed-in user has access to. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### UserAuthMethod-MicrosoftAuthApp.ReadWrite
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | - | 9f7dfa0c-eb40-42be-8d45-8af4a9219c6f |
+| DisplayText | - | Read and write the signed-in user's Microsoft Authenticator authentication methods |
+| Description | - | Allows the app to read and write the signed-in user's Microsoft Authenticator authentication methods. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. |
+| AdminConsentRequired | - | Yes |
+
+---
+
+### UserAuthMethod-MicrosoftAuthApp.ReadWrite.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | c833c349-a1ab-4b6d-94a2-fa9a8674420c | 1b7322b2-5cb3-4f13-928f-d7ca97c5fba9 |
+| DisplayText | Read and write all users' Microsoft Authentication methods | Read and write all users' Microsoft Authentication methods. |
+| Description | Allows the application to read and write Microsoft Authentication methods of all users in your organization, without a signed-in user. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. | Allows the app to read and write Microsoft Authentication methods of all users in your organization that the signed-in user has access to. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### UserAuthMethod-Passkey.Read
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | - | 828fcbda-0d26-431d-8bfb-83f217224621 |
+| DisplayText | - | Read the signed-in user's passkey authentication methods |
+| Description | - | Allows the app to read the signed-in user's passkey authentication methods. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. |
+| AdminConsentRequired | - | Yes |
 
 ---
 
@@ -8536,6 +8701,17 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 ---
 
+### UserAuthMethod-Passkey.ReadWrite
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | - | b2de7db9-10f7-4800-b04c-b5b91e4891d6 |
+| DisplayText | - | Read and write the signed-in user's passkey authentication methods |
+| Description | - | Allows the app to read and write the signed-in user's passkey authentication methods. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. |
+| AdminConsentRequired | - | Yes |
+
+---
+
 ### UserAuthMethod-Passkey.ReadWrite.All
 
 | Category | Application | Delegated |
@@ -8543,6 +8719,314 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Identifier | 0400e371-7db1-4338-a269-96069eb65227 | 64930478-d0ea-4671-ad72-fe0d9821df09 |
 | DisplayText | Read and write all users' passkey authentication methods | Read and write all users' passkey methods. |
 | Description | Allows the application to read and write passkey authentication methods of all users in your organization, without a signed-in user. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods | Allows the app to read and write passkey authentication methods of all users in your organization that the signed-in user has access to. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### UserAuthMethod-Password.Read
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | - | 7f0f82c3-de19-4ddc-810d-a2206d7637fd |
+| DisplayText | - | Read the signed-in user's password authentication methods |
+| Description | - | Allows the app to read the signed-in user's password authentication methods. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. |
+| AdminConsentRequired | - | No |
+
+---
+
+### UserAuthMethod-Password.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 8d2c17ff-b93d-40d5-9def-d843680509cb | 4f69a4e2-2aa0-43a7-ad6b-98b4cda1f23f |
+| DisplayText | Read all users' password authentication methods | Read all users' password authentication methods |
+| Description | Allows the app to read password authentication methods of all users in your organization, without a signed-in user. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. | Allows the app to read password authentication methods of all users in your organization that the signed-in user has access to. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. |
+| AdminConsentRequired | Yes | No |
+
+---
+
+### UserAuthMethod-Password.ReadWrite
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | - | 60cce20d-d41e-4594-b391-84bbf8cc31f3 |
+| DisplayText | - | Read and write the signed-in user's password authentication methods |
+| Description | - | Allows the app to read and write the signed-in user's password authentication methods. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. |
+| AdminConsentRequired | - | No |
+
+---
+
+### UserAuthMethod-Password.ReadWrite.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | f6d38dfd-ec08-4995-8f07-23e929df0936 | 7f5b683d-df96-4690-a88d-6e336ed6dc7c |
+| DisplayText | Read and write all users' password authentication methods | Read and write all users' password methods. |
+| Description | Allows the application to read and write password authentication methods of all users in your organization, without a signed-in user. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. | Allows the app to read and write password authentication methods of all users in your organization that the signed-in user has access to. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. |
+| AdminConsentRequired | Yes | No |
+
+---
+
+### UserAuthMethod-Phone.Read
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | - | 43dab3b9-e8b4-424d-8e13-6a2ad2a625fa |
+| DisplayText | - | Read the signed-in user's phone authentication methods |
+| Description | - | Allows the app to read the signed-in user's phone authentication methods. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. |
+| AdminConsentRequired | - | No |
+
+---
+
+### UserAuthMethod-Phone.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | f529a223-ea70-43ec-b268-5012de2fbaa2 | 20cf4ae1-09b9-4d29-a6f8-43e1820ce60c |
+| DisplayText | Read all users' phone authentication methods | Read all users' phone authentication methods |
+| Description | Allows the app to read phone authentication methods of all users in your organization, without a signed-in user. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. | Allows the app to read phone authentication methods of all users in your organization that the signed-in user has access to. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. |
+| AdminConsentRequired | Yes | No |
+
+---
+
+### UserAuthMethod-Phone.ReadWrite
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | - | 6c4aad61-f76b-46ad-a22c-57d4d3d962af |
+| DisplayText | - | Read and write the signed-in user's phone authentication methods |
+| Description | - | Allows the app to read and write the signed-in user's phone authentication methods. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. |
+| AdminConsentRequired | - | No |
+
+---
+
+### UserAuthMethod-Phone.ReadWrite.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 6e85d483-7092-4375-babe-0a94a8213a58 | 48c99302-9a24-4f27-a8a7-acef4debba14 |
+| DisplayText | Read and write all users' phone methods | Read and write all users' phone methods. |
+| Description | Allows the application to read and write phone methods of all users in your organization, without a signed-in user. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. | Allows the app to read and write Phone methods of all users in your organization that the signed-in user has access to. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. |
+| AdminConsentRequired | Yes | No |
+
+---
+
+### UserAuthMethod-PlatformCred.Read
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | - | 9c694582-e8f2-40e2-8353-fb43e2e0f12a |
+| DisplayText | - | Read the signed-in user's platform credential authentication methods |
+| Description | - | Allows the app to read the signed-in user's platform credential authentication methods. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. |
+| AdminConsentRequired | - | Yes |
+
+---
+
+### UserAuthMethod-PlatformCred.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 07c0b1e4-15bd-442f-834b-30f8291388d1 | 5936156c-f89b-4850-997d-026c4e6ce529 |
+| DisplayText | Read all users' platform credentials methods | Read all users' platform credentials methods |
+| Description | Allows the app to read platform credentials methods of all users in your organization, without a signed-in user. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. | Allows the app to read platform credentials methods of all users in your organization that the signed-in user has access to. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### UserAuthMethod-PlatformCred.ReadWrite
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | - | 70327f81-b953-43c9-92d3-131c74e4beb8 |
+| DisplayText | - | Read and write the signed-in user's platform credential authentication methods |
+| Description | - | Allows the app to read and write the signed-in user's platform credential authentication methods. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. |
+| AdminConsentRequired | - | Yes |
+
+---
+
+### UserAuthMethod-PlatformCred.ReadWrite.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 1a87acf4-a9ca-4576-a974-452ea265d5f6 | cb11bf8c-dde1-4504-b6a5-31e1562b0749 |
+| DisplayText | Read and write all users' platform credentials methods | Read and write all users' platform credentials methods. |
+| Description | Allows the application to read and write platform credentials methods of all users in your organization, without a signed-in user. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. | Allows the app to read and write platform credentials methods of all users in your organization that the signed-in user has access to. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### UserAuthMethod-QR.Read
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | - | d6893c31-9187-405c-8dfc-f700c8fc161a |
+| DisplayText | - | Read the signed-in user's QR authentication methods |
+| Description | - | Allows the app to read the signed-in user's QR authentication methods. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. |
+| AdminConsentRequired | - | Yes |
+
+---
+
+### UserAuthMethod-QR.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 9a45bc50-cddd-4ebe-bd9c-4f2eacf646ae | e4900dfb-ad17-410d-8ddb-7aebd8a6af1a |
+| DisplayText | Read all users' QR methods | Read all users' QR methods |
+| Description | Allows the app to read QR authentication methods of all users in your organization, without a signed-in user. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. | Allows the app to read QR authentication methods of all users in your organization that the signed-in user has access to. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### UserAuthMethod-QR.ReadWrite
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | - | 651210da-18ce-4e42-b7db-302ff88e9326 |
+| DisplayText | - | Read and write the signed-in user's QR authentication methods |
+| Description | - | Allows the app to read and write the signed-in user's QR authentication methods. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. |
+| AdminConsentRequired | - | Yes |
+
+---
+
+### UserAuthMethod-QR.ReadWrite.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 4869299f-18c3-40c8-98f2-222657e67db1 | db39086a-da7d-4cbd-9ac0-6816f9a80c95 |
+| DisplayText | Read and write all users' QR methods | Read and write all users' QR methods. |
+| Description | Allows the application to read and write QR authentication methods of all users in your organization, without a signed-in user. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. | Allows the app to read and write QR authentication methods of all users in your organization that the signed-in user has access to. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### UserAuthMethod-SoftwareOATH.Read
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | - | 247f2733-6e3d-46ff-a904-f5fd58eb0d97 |
+| DisplayText | - | Read the signed-in user's SoftwareOATH authentication methods |
+| Description | - | Allows the app to read the signed-in user's SoftwareOATH authentication methods. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. |
+| AdminConsentRequired | - | Yes |
+
+---
+
+### UserAuthMethod-SoftwareOATH.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | a6b423df-a0c8-411d-a809-a4a5985d2939 | 3e366fa0-3097-4eb6-8294-3028f77eea6f |
+| DisplayText | Read all users' SoftwareOATH methods | Read all users' SoftwareOATH methods |
+| Description | Allows the app to read SoftwareOATH authentication methods of all users in your organization, without a signed-in user. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. | Allows the app to read SoftwareOATH authentication methods of all users in your organization that the signed-in user has access to. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### UserAuthMethod-SoftwareOATH.ReadWrite
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | - | 16721eb3-4493-4ae1-9542-264d9ffe3ce9 |
+| DisplayText | - | Read and write the signed-in user's SoftwareOATH authentication methods |
+| Description | - | Allows the app to read and write the signed-in user's SoftwareOATH authentication methods. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. |
+| AdminConsentRequired | - | Yes |
+
+---
+
+### UserAuthMethod-SoftwareOATH.ReadWrite.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 787442d4-3c6e-4e99-aa95-8ccca20a48ff | 5b34c8b5-2396-4b35-b284-83fb6a3e73ce |
+| DisplayText | Read and write all users' SoftwareOATH methods | Read and write all users' SoftwareOATH methods. |
+| Description | Allows the application to read and write SoftwareOATH authentication methods of all users in your organization, without a signed-in user. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. | Allows the app to read and write SoftwareOATH authentication methods of all users in your organization that the signed-in user has access to. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### UserAuthMethod-TAP.Read
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | - | 84ded88f-26ba-49d6-b776-efec398de692 |
+| DisplayText | - | Read the signed-in user's Temporary Access Pass authentication methods |
+| Description | - | Allows the app to read the signed-in user's Temporary Access Pass authentication methods. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. |
+| AdminConsentRequired | - | Yes |
+
+---
+
+### UserAuthMethod-TAP.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | bf82209c-b22b-4747-ac88-a68be99032cf | 6976c635-c9c2-41e6-a21d-e6913a155273 |
+| DisplayText | Read all users' Temporary Access Pass methods | Read all users' Temporary Access Pass methods |
+| Description | Allows the app to read Temporary Access Pass authentication methods of all users in your organization, without a signed-in user. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. | Allows the app to read Temporary Access Pass authentication methods of all users in your organization that the signed-in user has access to. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### UserAuthMethod-TAP.ReadWrite
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | - | 2424436d-902f-4651-a1c7-b3b93147c960 |
+| DisplayText | - | Read and write the signed-in user's Temporary Access Pass authentication methods |
+| Description | - | Allows the app to read and write the signed-in user's Temporary Access Pass authentication methods. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. |
+| AdminConsentRequired | - | Yes |
+
+---
+
+### UserAuthMethod-TAP.ReadWrite.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 627169a8-8c15-451c-861a-5b80e383de5c | 05de4a66-e51a-4312-842a-30c8094698d2 |
+| DisplayText | Read and write all users' Temporary Access Pass methods | Read and write all users' Temporary Access Pass methods. |
+| Description | Allows the application to read and write Temporary Access Pass authentication methods of all users in your organization, without a signed-in user. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. | Allows the app to read and write Temporary Access Pass authentication methods of all users in your organization that the signed-in user has access to. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### UserAuthMethod-WindowsHello.Read
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | - | efe2b5aa-3a8e-486c-b0be-cc4d185c1b40 |
+| DisplayText | - | Read the signed-in user's Windows Hello methods |
+| Description | - | Allows the app to read the signed-in user's Windows Hello authentication methods. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. |
+| AdminConsentRequired | - | Yes |
+
+---
+
+### UserAuthMethod-WindowsHello.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 9b8dd4c7-8cca-4ef5-a34a-9c2c75fcc934 | ff37d46d-b88a-4e0c-85ee-7e26c37b18eb |
+| DisplayText | Read all users' Windows Hello methods | Read all users' Windows Hello methods |
+| Description | Allows the app to read Windows Hello authentication methods of all users in your organization, without a signed-in user. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. | Allows the app to read Windows Hello authentication methods of all users in your organization that the signed-in user has access to. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### UserAuthMethod-WindowsHello.ReadWrite
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | - | f11e1db9-d419-4a24-b677-792723ffd727 |
+| DisplayText | - | Read and write the signed-in user's Windows Hello authentication methods |
+| Description | - | Allows the app to read and write the signed-in user's Windows Hello authentication methods. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. |
+| AdminConsentRequired | - | Yes |
+
+---
+
+### UserAuthMethod-WindowsHello.ReadWrite.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | f14eee8a-713e-45aa-8223-2ab74632db1a | 13eae17d-aaa4-47b8-aaee-0eb33c6e2450 |
+| DisplayText | Read and write all users' Windows Hello authentication methods | Read and write all users' Windows Hello methods. |
+| Description | Allows the application to read and write Windows Hello authentication methods of all users in your organization, without a signed-in user. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. | Allows the app to read and write Windows Hello authentication methods of all users in your organization that the signed-in user has access to. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. |
 | AdminConsentRequired | Yes | Yes |
 
 ---
@@ -8564,7 +9048,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 |--|--|--|
 | Identifier | 4e774092-a092-48d1-90bd-baad67c7eb47 | 26e2f3e8-b2a1-47fc-9620-89bb5b042024 |
 | DisplayText | Deliver and manage all user's notifications | Deliver and manage user's notifications |
-| Description | Allows the app to send, read, update and delete user's notifications, without a signed-in user. | Allows the app to send, read, update and delete user's notifications. |
+| Description | Allows the app to send, read, update and delete user’s notifications, without a signed-in user. | Allows the app to send, read, update and delete user’s notifications. |
 | AdminConsentRequired | Yes | No |
 
 ---
@@ -8685,7 +9169,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 |--|--|--|
 | Identifier | d4f67ec2-59b5-4bdc-b4af-d78f6f9c1954 | - |
 | DisplayText | Read all virtual appointments for users, as authorized by online meetings application access policy | - |
-| Description | Allows the application to read virtual appointments for all users, without a signed-in user. The app must also be authorized to access an individual user's data by the online meetings application access policy. | - |
+| Description | Allows the application to read virtual appointments for all users, without a signed-in user. The app must also be authorized to access an individual user’s data by the online meetings application access policy. | - |
 | AdminConsentRequired | Yes | - |
 
 ---
@@ -8707,7 +9191,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 |--|--|--|
 | Identifier | bf46a256-f47d-448f-ab78-f226fff08d40 | - |
 | DisplayText | Read-write all virtual appointments for users, as authorized by online meetings app access policy | - |
-| Description | Allows the application to read and write virtual appointments for all users, without a signed-in user. The app must also be authorized to access an individual user's data by the online meetings application access policy. | - |
+| Description | Allows the application to read and write virtual appointments for all users, without a signed-in user. The app must also be authorized to access an individual user’s data by the online meetings application access policy. | - |
 | AdminConsentRequired | Yes | - |
 
 ---
@@ -8824,9 +9308,9 @@ Learn more about [RSC authorization framework and RSC permissions](/microsofttea
 | ChannelMember.Read.Group | 7e3614f5-3467-419c-9c63-dd0bbd2a88f9 | Read the members of channels of a team | Read the members of channels of a team, without a signed-in user |
 | ChannelMember.ReadWrite.Group | 1342a0fc-cd33-4c75-ad65-d5defcfc7232 | Read and write the members of channels of a team | Read and write the members of channels of a team, without a signed-in user |
 | ChannelMessage.Read.Group | 19103a54-c397-4bcd-be5a-ef111e0406fa | Read this team's channel messages | Allows the app to read this team's channel's messages, without a signed-in user. |
-| ChannelMessage.Send.Group | 3e38d437-815b-4368-9f19-e39dea9a6c7f | Send messages to this team's channels | Allows the app to send messages to this team's channels, without a signed-in user. |
-| ChannelSettings.Read.Group | 0a7b3084-8d18-46f5-8aef-b5b829292c6f | Read the names, descriptions, and settings of this team's channels | Allows the app to read this team's channel names, channel descriptions, and channel settings, without a signed-in user. |
-| ChannelSettings.ReadWrite.Group | d057ad03-b27b-49f7-8219-e0d4a706da55 | Update the names, descriptions, and settings of this team's channels | Allows the app to update and read the names, descriptions, and settings of this team's channels, without a signed-in user. |
+| ChannelMessage.Send.Group | 3e38d437-815b-4368-9f19-e39dea9a6c7f | Send mesages to this team's channels | Allows the app to send messages to this team's channels, without a signed-in user. |
+| ChannelSettings.Read.Group | 0a7b3084-8d18-46f5-8aef-b5b829292c6f | Read the names, descriptions, and settings of this team’s channels | Allows the app to read this team's channel names, channel descriptions, and channel settings, without a signed-in user. |
+| ChannelSettings.ReadWrite.Group | d057ad03-b27b-49f7-8219-e0d4a706da55 | Update the names, descriptions, and settings of this team’s channels | Allows the app to update and read the names, descriptions, and settings of this team’s channels, without a signed-in user. |
 | Chat.Manage.Chat | 4a14842e-6bb6-4088-b21a-7d0a24f835a6 | Manage this chat | Allows the app to manage the chat, the chat's members and grant access to the chat's data, without a signed-in user. |
 | Chat.ManageDeletion.Chat | b827a2af-24b2-4f61-9eb3-8788e66a0d86 | Delete and recover deleted chat | Allows the app to delete and recover deleted chat, without a signed-in user. |
 | ChatMember.Read.Chat | e854bbc6-07e3-45cc-af99-b6e78fab5b80 | Read this chat's members | Allows the app to read the members of this chat, without a signed-in user. |
@@ -8875,4 +9359,3 @@ Learn more about [RSC authorization framework and RSC permissions](/microsofttea
 + [Grant or revoke Microsoft Graph permissions programmatically](permissions-grant-via-msgraph.md)
 
 [MSA]: images/permissions-reference/msa.svg "personal Microsoft accounts (MSA)"
-
