@@ -36,7 +36,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 GET /users/{userId}/employeeExperience/assignedRoles
 GET /me/employeeExperience/assignedRoles
 ```
->**Note:** The `userId` represents the office user ID.
+>**Note:** The `{userId}` represents the office user ID.
 
 ## Optional query parameters
 
@@ -128,7 +128,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/v1.0/users/{user-id}/employeeExperience/assignedRoles
+GET https://graph.microsoft.com/v1.0/users/e8d9f6a2-1c34-4b7a-9f11-2a4d8b7c9e01/employeeExperience/assignedRoles
 ```
 
 #### Response
@@ -146,7 +146,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users/{user-id}/employeeExperience/assignedRoles",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users/e8d9f6a2-1c34-4b7a-9f11-2a4d8b7c9e01/employeeExperience/assignedRoles",
   "value": [
     {
         "id": "ec791927-d09f-4f91-bd76-d3b05e1c1a31",
