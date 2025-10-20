@@ -1,6 +1,6 @@
 ---
 title: "engagementRoleMember resource type"
-description: "Represents the role member management in Viva Engage which involves assigning and managing various administrative roles and corp comm role within the Viva Engage platform."
+description: "Represents the role of member management in Viva Engage, which involves assigning and managing various administrative roles and the corporate communications role within the Viva Engage platform."
 author: "richafnu"
 ms.date: 03/27/2025
 ms.localizationpriority: medium
