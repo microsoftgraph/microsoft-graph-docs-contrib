@@ -511,6 +511,7 @@
             "cloudPcExternalPartner",
             "cloudPcFrontLineServicePlan",
             "cloudPcGalleryImage",
+            "cloudPcManagedLicense",
             "cloudPcOnPremisesConnection",
             "cloudPcOrganizationSettings",
             "cloudPcProvisioningPolicy",
@@ -558,6 +559,7 @@
             "cloudPcForensicStorageAccount",
             "cloudPcFrontlineSharedDeviceDetail",
             "cloudPcHealthCheckItem",
+            "cloudPcLaunchDetail",            
             "cloudPcLaunchInfo",
             "cloudPcLoginResult",
             "cloudPcManagementAssignmentTarget",
@@ -3208,8 +3210,11 @@
             {
               "name": "Call events",
               "resources": [
-                "microsoft.graph.callEvent",
-                "microsoft.graph.emergencyCallEvent"
+                "callEvent",
+                "emergencyCallEvent"
+              ],
+              "complexTypes": [
+                "emergencyCallerInfo"
               ]
             },
             {

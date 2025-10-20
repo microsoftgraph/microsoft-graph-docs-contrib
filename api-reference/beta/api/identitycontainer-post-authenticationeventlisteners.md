@@ -428,7 +428,7 @@ Content-Type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/create-authenticationeventlistener-onphonemethodloadstartexternalusersauthhandler-activate-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -529,7 +529,7 @@ Content-Type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/create-authenticationeventlistener-onphonemethodloadstartexternalusersauthhandler-deactivate-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -594,6 +594,7 @@ Content-Type: application/json
 #### Request
 The following example shows a request that enables fraud protection during sign-up using Arkose Labs.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_authenticationeventlistener_onFraudProtectionLoadStartListener_Arkose"
@@ -627,6 +628,36 @@ Content-Type: application/json
   } 
 }
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-authenticationeventlistener-onfraudprotectionloadstartlistener-arkose-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-authenticationeventlistener-onfraudprotectionloadstartlistener-arkose-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-authenticationeventlistener-onfraudprotectionloadstartlistener-arkose-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-authenticationeventlistener-onfraudprotectionloadstartlistener-arkose-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-authenticationeventlistener-onfraudprotectionloadstartlistener-arkose-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-authenticationeventlistener-onfraudprotectionloadstartlistener-arkose-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-authenticationeventlistener-onfraudprotectionloadstartlistener-arkose-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
@@ -672,6 +703,7 @@ Content-Type: application/json
 #### Request
 The following example shows a request that enables fraud protection during sign-up using HUMAN Security.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_authenticationeventlistener_onFraudProtectionLoadStartListener_HUMANSecurity"
@@ -705,6 +737,36 @@ Content-Type: application/json
   } 
 }
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-authenticationeventlistener-onfraudprotectionloadstartlistener-humansecurity-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-authenticationeventlistener-onfraudprotectionloadstartlistener-humansecurity-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-authenticationeventlistener-onfraudprotectionloadstartlistener-humansecurity-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-authenticationeventlistener-onfraudprotectionloadstartlistener-humansecurity-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-authenticationeventlistener-onfraudprotectionloadstartlistener-humansecurity-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-authenticationeventlistener-onfraudprotectionloadstartlistener-humansecurity-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-authenticationeventlistener-onfraudprotectionloadstartlistener-humansecurity-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
