@@ -16,12 +16,12 @@ Represents a specific version of a [driveItem](driveitem.md).
 
 ## Methods
 
-| Method                                                                       | Return Type | Description |
-|:-----------------------------------------------------------------------------|:------------|:-------------|
-| [List versions](../api/driveitem-list-versions.md)                           | [driveItemVersion](../resources/driveitemversion.md) collection | Retrieve the versions of a file.|
-| [Get version](../api/driveitemversion-get.md)                                | [driveItemVersion](../resources/driveitemversion.md) | Retrieve the metadata for a **driveItemVersion**.|
-| [Download version](../api/driveitemversion-get-contents.md)                  | download URL | Download content of a **driveItemVersion** |
-| [Restore version](../api/driveitemversion-restore.md)                        | None | Restore a previous version of a **driveItem** to be the current version.|
+| Method | Return type | Description |
+|:---|:---|:---|
+| [List](../api/driveitem-list-versions.md)                           | [driveItemVersion](../resources/driveitemversion.md) collection | Retrieve the [versions](../resources/driveitemversion.md) of a [file](../resources/driveitem.md).|
+| [Get](../api/driveitemversion-get.md)                                | [driveItemVersion](../resources/driveitemversion.md) | Retrieve the metadata for a specific [version](../resources/driveitemversion.md) of a [driveItem](../resources/driveitem.md).|
+| [Download version](../api/driveitemversion-get-contents.md)                  | download URL | Retrieve the contents of a specific [version](../resources/driveitemversion.md) of a [driveItem](../resources/driveitem.md). |
+| [Restore version](../api/driveitemversion-restore.md)                        | None | Restore a previous [version](../resources/driveitemversion.md) of a [driveItem](../resources/driveitem.md) to be the current **version**.|
 
 ## Properties
 
