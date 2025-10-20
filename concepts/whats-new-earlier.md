@@ -2443,7 +2443,7 @@ For Microsoft Forms:
 - In addition to existing data in a [direct routing call log row](/graph/api/resources/callrecords-directroutinglogrow?view=graph-rest-beta&preserve-view=true), [get](/graph/api/callrecords-callrecord-getdirectroutingcalls?view=graph-rest-beta&preserve-view=true) the country codes of the two parties in the direct routing call.
 - [Get the join URL](/graph/api/virtualappointment-getvirtualappointmentjoinweburl?view=graph-rest-beta&preserve-view=true) for an appointment on the [Virtual Appointments](https://support.microsoft.com/office/what-is-virtual-appointments-22df0079-e6d9-4225-bc65-22747fb2cb5f) app for Microsoft Teams. Existing customers who use the prior [virtual appointment](/graph/api/resources/virtualappointment?view=graph-rest-beta&preserve-view=true) API in their apps should update their apps to integrate with the Virtual Appointments app before the API stops returning data on June 20, 2023. For more information, see [Virtual Appointments with Microsoft Teams](/microsoft-365/frontline/virtual-appointments?view=o365-worldwide&preserve-view=true).
 - Get or set the option to share the chat history of an [online meeting](/graph/api/resources/onlineMeeting?view=graph-rest-beta&preserve-view=true) with participants.
-- [Listing](/graph/api/callrecords-session-list?view=graph-rest-beta&preserve-view=true) sessions in a [call record](/graph/api/resources/callrecords-callrecord?view=graph-rest-beta&preserve-view=true) can now identify those sessions that took place for testing purpose.
+- [Listing](/graph/api/callrecords-callrecord-list-sessions?view=graph-rest-1.0) sessions in a [call record](/graph/api/resources/callrecords-callrecord?view=graph-rest-beta&preserve-view=true) can now identify those sessions that took place for testing purpose.
 - Represent CPU capabilities of a caller or callee [participant endpoint](/graph/api/resources/callrecords-participantendpoint?view=graph-rest-beta&preserve-view=true) in a [call](/graph/api/resources/call?view=graph-rest-beta&preserve-view=true) or [online meeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true).
 - Track the freeze duration data of a video stream in a [media stream](/graph/api/resources/callRecords-mediaStream?view=graph-rest-beta&preserve-view=true).
 - Communications servers can publish [deltaParticipants](/graph/api/resources/deltaParticipants?view=graph-rest-beta&preserve-view=true) notifications for the creation, update, or deletion of a [participant](/graph/api/resources/participant?view=graph-rest-beta&preserve-view=true) in a [call](/graph/api/resources/call?view=graph-rest-beta&preserve-view=true). For more information, see [JSON payload examples](/graph/api/application-post-calls?view=graph-rest-beta&preserve-view=true#notification---roster) of notifications with delta roster disabled or enabled.
@@ -2601,7 +2601,7 @@ Intune [January updates](https://developer.microsoft.com/en-us/graph/changelog/?
 Get the country code that represents the default service usage location of an [organization](/graph/api/resources/organization).
 
 ### Security | Attack simulation and training
-- [Get](/graph/api/attacksimulationroot-get-simulationautomations) information about an [automated attack simulation](/graph/api/resources/simulationautomation) for a tenant.
+- [Get](/graph/api/simulation-get?view=graph-rest-1.0) information about an [automated attack simulation](/graph/api/resources/simulationautomation) for a tenant.
 - [Get a list](/graph/api/simulationautomation-list-runs) of [automated runs of attack simulation](/graph/api/resources/simulationautomationrun) for a tenant.
 
 ### Tasks and plans
@@ -2634,8 +2634,8 @@ Get or set a display name for a [print job](/graph/api/resources/printjob?view=g
 
 
 ### Security | Attack simulation and training
-- [Create](/graph/api/attacksimulationroot-create-simulation?view=graph-rest-beta&preserve-view=true) or [delete](/graph/api/attacksimulationroot-delete-simulation?view=graph-rest-beta&preserve-view=true) an [attack simulation](/graph/api/resources/simulation?view=graph-rest-beta&preserve-view=true) campaign for a tenant. Prior to this update, apps can only [get](/graph/api/attacksimulationroot-get-simulations?view=graph-rest-beta&preserve-view=true) information about an existing simulation campaign.
-- [Get](/graph/api/attacksimulationroot-get-payload?view=graph-rest-beta&preserve-view=true) information about an attack simulation training. Get further [details](/graph/api/resources/payloaddetail?view=graph-rest-beta&preserve-view=true) such as the content and coachmarks.
+- [Create](/graph/api/contenttype-update?view=graph-rest-1.0) or [delete](/graph/api/simulation-delete?view=graph-rest-1.0) an [attack simulation](/graph/api/resources/simulation?view=graph-rest-beta&preserve-view=true) campaign for a tenant. Prior to this update, apps can only [get](/graph/api/simulationautomation-get?view=graph-rest-1.0) information about an existing simulation campaign.
+- [Get](/graph/api/payload-get?view=graph-rest-1.0) information about an attack simulation training. Get further [details](/graph/api/resources/payloaddetail?view=graph-rest-beta&preserve-view=true) such as the content and coachmarks.
 
 
 ### Tasks and plans | Business scenarios

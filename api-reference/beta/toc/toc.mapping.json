@@ -558,6 +558,7 @@
             "cloudPcForensicStorageAccount",
             "cloudPcFrontlineSharedDeviceDetail",
             "cloudPcHealthCheckItem",
+            "cloudPcLaunchDetail",            
             "cloudPcLaunchInfo",
             "cloudPcLoginResult",
             "cloudPcManagementAssignmentTarget",
@@ -1556,10 +1557,11 @@
                 "onAttributeCollectionSubmitListener",
                 "onAuthenticationMethodLoadStartListener",
                 "onEmailOtpSendListener",
+                "onFraudProtectionLoadStartListener",
                 "onInteractiveAuthFlowStartListener",
+                "onPhoneMethodLoadStartListener",
                 "onTokenIssuanceStartListener",
                 "onUserCreateStartListener",
-                "onPhoneMethodLoadStartListener"
               ]
             },
             {
@@ -1691,7 +1693,10 @@
                 "riskyUser",
                 "riskyUserHistoryItem",
                 "servicePrincipalRiskDetection",
-                "riskyServicePrincipal"
+                "riskyServicePrincipal",
+                "fraudProtectionProvider",
+                "arkoseFraudProtectionProvider",
+                "humanSecurityFraudProtectionProvider"
               ]
             },
             {
@@ -3201,8 +3206,11 @@
             {
               "name": "Call events",
               "resources": [
-                "microsoft.graph.callEvent",
-                "microsoft.graph.emergencyCallEvent"
+                "callEvent",
+                "emergencyCallEvent"
+              ],
+              "complexTypes": [
+                "emergencyCallerInfo"
               ]
             },
             {

@@ -5,7 +5,7 @@ author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
-ms.date: 09/13/2024
+ms.date: 08/01/2024
 ---
 
 # androidWorkProfileCompliancePolicy resource type
@@ -48,13 +48,13 @@ Inherits from [deviceCompliancePolicy](../resources/intune-deviceconfig-deviceco
 |securityRequireVerifyApps|Boolean|Require the Android Verify apps feature is turned on.|
 |deviceThreatProtectionEnabled|Boolean|Require that devices have enabled device threat protection.|
 |deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|Require Mobile Threat Protection minimum risk level to report noncompliance. Possible values are: `unavailable`, `secured`, `low`, `medium`, `high`, `notSet`.|
-|securityBlockJailbrokenDevices|Boolean|Devices must not be jailbroken or rooted.|
+|securityBlockJailbrokenDevices|Boolean|Indicates the device should not be rooted. When TRUE, if the device is detected as rooted it will be reported non-compliant. When FALSE, the device is not reported as non-compliant regardless of device rooted state. Default is FALSE.|
 |osMinimumVersion|String|Minimum Android version.|
 |osMaximumVersion|String|Maximum Android version.|
 |minAndroidSecurityPatchLevel|String|Minimum Android security patch level.|
 |storageRequireEncryption|Boolean|Require encryption on Android devices.|
-|securityRequireSafetyNetAttestationBasicIntegrity|Boolean|Require the device to pass the SafetyNet basic integrity check.|
-|securityRequireSafetyNetAttestationCertifiedDevice|Boolean|Require the device to pass the SafetyNet certified device check.|
+|securityRequireSafetyNetAttestationBasicIntegrity|Boolean|Require the device to pass the Play Integrity basic integrity check.|
+|securityRequireSafetyNetAttestationCertifiedDevice|Boolean|Require the device to pass the Play Integrity device integrity check.|
 |securityRequireGooglePlayServices|Boolean|Require Google Play Services to be installed and enabled on the device.|
 |securityRequireUpToDateSecurityProviders|Boolean|Require the device to have up to date security providers. The device will require Google Play Services to be enabled and up to date.|
 |securityRequireCompanyPortalAppIntegrity|Boolean|Require the device to pass the Company Portal client app runtime integrity check.|

@@ -3,7 +3,7 @@ title: "What's new in Microsoft Graph"
 description: "Find out what's new in Microsoft Graph APIs, SDKs, documentation, and other resources."
 author: "lauragra"
 ms.localizationpriority: high
-ms.date: 07/03/2025
+ms.date: 10/14/2025
 ms.topic: whats-new
 ---
 
@@ -20,17 +20,44 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ## October 2025: New and generally available
 
+### Education
+
+- [List the dependent education assignment resources](/graph/api/educationassignmentresource-list-dependentresources) for a given education assignment resource.
+- [List the dependent education submission resources](/graph/api/educationsubmissionresource-list-dependentresources) for a given education submission resource.
 ### Backup storage
 
 - Use the **protectionSources** property on [driveProtectionUnit](/graph/api/resources/driveprotectionunit), [mailboxProtectionUnit](/graph/api/resources/mailboxprotectionunit), and [siteProtectionUnit](/graph/api/resources/siteprotectionunit) to get the sources by which a protection unit is currently protected.
 - [Update](/graph/api/protectionrulebase-update) a [driveProtectionRule](/graph/api/resources/driveprotectionrule) or a [mailboxProtectionRule](/graph/api/resources/mailboxprotectionrule).
 - [Delete and unprotect](/graph/api/protectionrulebase-deleteandunprotect) all the artifacts protected by a dynamic rule in a [driveProtectionRule](/graph/api/resources/driveprotectionrule) or a [mailboxProtectionRule](/graph/api/resources/mailboxprotectionrule).
 
+### Device and app management | Cloud PC
+
+[List](/graph/api/user-list-cloudpcs) the Cloud PC devices that are attributed to the signed-in user.
+
+### Identity and access | Directory management
+
+- Addressed a permissions issue for [internalDomainFederation](/graph/api/resources/internaldomainfederation) write operations. Previously, delegated scenarios required the high-privilege _Directory.AccessAsUser.All_ permission. Two new, lesser-privileged permissions are now available for managing the **internalDomainFederation** resource:
+   - _Domain-InternalFederation.Read.All_ – Read **internalDomainFederation** resources.
+   - _Domain-InternalFederation.ReadWrite.All_ – Read and write **internalDomainFederation** resources.
+
+- Added the _Domain-InternalFederation.ReadWrite.All_ delegated and application permissions as lower-privilege alternatives for updating a [domain](/graph/api/resources/domain). This also enables updating the **authenticationType** property of a domain in both delegated and application contexts, whereas previously only delegated scenarios with _Directory.AccessAsUser.All_ permission were supported.
+
+These new permissions enable more granular access control for managing **internalDomainFederation** and **domain** resources.
+
+### Teamwork and communications | Calls and online meetings
+
+Use the [callEvent](/graph/api/resources/callevent) and [emergencyCallEvent](/graph/api/resources/emergencycallevent) resources to provide detailed information about both standard and emergency call events. For more information, see [Change notification for active meeting call events](/graph/changenotifications-for-onlinemeeting) and [change notification for emergency call events](/graph/changenotifications-for-emergencycalls).
+
 ## October 2025: New in preview only
+
+### Calendars | Places
+
+Apply the following [prerequisites for the Places list and descendant APIs](/graph/api/resources/places-api-overview?view=graph-rest-beta&preserve-view=true#prerequisites-for-places-list-and-descendant-apis) before you can use these APIs; otherwise, they don't return any places.
 
 ### Device and app management | Cloud PC
 
-- Use the **sessionStartDateTime** property on [cloudPcFrontlineSharedDeviceDetail](/graph/api/resources/cloudpcfrontlineshareddevicedetail?view=graph-rest-beta&preserve-view=true) to get the date and time when the current user session starts, or `null` if no current user session exists. 
+- Use the **sessionStartDateTime** property on [cloudPcFrontlineSharedDeviceDetail](/graph/api/resources/cloudpcfrontlineshareddevicedetail?view=graph-rest-beta&preserve-view=true) to get the date and time when the current user session starts, or `null` if no current user session exists.
+- Deprecated the [getCloudPcLaunchInfo](/graph/api/cloudpc-getcloudpclaunchinfo?view=graph-rest-beta&preserve-view=true) method in favor of the [retrieveCloudPcLaunchDetail](/graph/api/cloudpc-retrievecloudpclaunchdetail?view=graph-rest-beta&preserve-view=true) API.
 - Deprecated the [cloudPcExternalPartnerSetting](/graph/api/resources/cloudpcexternalpartnersetting) resource and replaced with the [cloudPcExternalPartner](/graph/api/resources/cloudpcexternalpartner) resource.
 - [Create](/graph/api/virtualendpoint-post-externalpartners?view=graph-rest-beta&preserve-view=true), [get](/graph/api/cloudpcexternalpartner-get?view=graph-rest-beta&preserve-view=true), or [update](/graph/api/cloudpcexternalpartner-update?view=graph-rest-beta&preserve-view=true) [an external partner](/graph/api/resources/cloudpcexternalpartner?view=graph-rest-beta&preserve-view=true) of Cloud PC, such as the partner status, and enable or disable the connection.
 
@@ -74,12 +101,13 @@ Defined the following endpoints as supported for the [driveItem: discardCheckout
 - Added the following new properties to the [securityGroupEvidence](/graph/api/resources/security-securitygroupevidence) resource:
   - Use the **activeDirectoryObjectGuid** property to get the unique group identifier assigned by the on-premises Active Directory.
   - Use the **distinguishedName** property to identify the distinguished name of the security group.
-  - Use the **friendlyName** property to identify the friendly name of the security group.	
+  - Use the **friendlyName** property to identify the friendly name of the security group.
   - Use the **sid** property to get the security identifier of the group.
 - Use the **activeDirectoryObjectGuid** property on [userAccount](/graph/api/resources/security-useraccount) to get the unique user identifier assigned by the on-premises Active Directory.
 
 ### Security | eDiscovery
 
+- Added `holdPolicySync` as a supported value for the **action** property of the [caseOperation](/graph/resources/security-caseoperation) and its inherited types.
 - Use the **caseType** property on [ediscoveryCaseSettings](/graph/api/resources/security-ediscoverycasesettings) to get or set the type of an eDiscovery case.
 - Use the **reviewSetSettings** property on [ediscoveryCaseSettings](/graph/api/resources/security-ediscoverycasesettings) to get or set the review set settings for a case.
 
@@ -152,6 +180,10 @@ Added the [telephoneNumberManagementRoot](/graph/api/resources/teamsadministrati
 - Added `focusing`, `inACall`, `inAMeeting`, and `presenting` as supported values to the **availability** property of [presence](/graph/api/resources/presence?view=graph-rest-beta&preserve-view=true).
 - The throttling limit for the [presence](/graph/api/resources/presence?view=graph-rest-beta&preserve-view=true) resource increased from 1,500 to 10,000 requests per 30 seconds, per application per tenant.
 
+
+### Security | eDiscovery
+
+Added `holdPolicySync` as a supported value for the **action** property of the [caseOperation](/graph/resources/security-caseoperation?view=graph-rest-beta&preserve-view=true) and its inherited types.
 
 ### Teamwork and communications | Messaging
 
