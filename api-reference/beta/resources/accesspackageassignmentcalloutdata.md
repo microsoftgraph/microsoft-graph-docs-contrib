@@ -24,14 +24,14 @@ Inherits from [customExtensionData](../resources/customextensiondata.md).
 |:---|:---|:---|
 |accessPackageAssignmentRequestId|String|The request ID of the access package assignment.|
 |callbackConfiguration|[customExtensionCallbackConfiguration](../resources/customextensioncallbackconfiguration.md)|The callback configuration for a custom extension.|
-|customExtensionStageInstanceId|String|The instance ID of the custom extension stage.|
+|customExtensionStageInstanceId|String|Unique identifier of the callout to the custom extension.|
 |stage|String|Indicates the stage of the access package assignment request workflow when the access package custom extension runs.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
 |accessPackage|[accessPackage](../resources/accesspackage.md)|The access package where the custom extension call out data to the Azure Logic App is being sent.|
-|accessPackageCatalog|[accessPackageCatalog](../resources/accesspackagecatalog.md)|the catalog that contains the custom extension|
+|accessPackageCatalog|[accessPackageCatalog](../resources/accesspackagecatalog.md)|The catalog that contains the custom extension.|
 |assignment|[accessPackageAssignment](../resources/accesspackageassignment.md)|The specific assignment of the access package.|
 
 ## JSON representation
