@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This resource corresponds to the latest generation of alerts in the Microsoft Graph security API. It represents potential security issues within a customer's tenant. These issues are identified by either Microsoft 365 Defender or a security provider integrated with Microsoft 365 Defender.
+Represents potential security issues within a customer's tenant that Microsoft 365 Defender identified. These issues are identified by either Microsoft 365 Defender or a security provider integrated with Microsoft 365 Defender. This resource corresponds to the latest generation of alerts in the Microsoft Graph security API. 
 
 Security providers create an alert in the system when they detect a threat. Microsoft 365 Defender pulls this alert data from the security provider, and consumes the alert data to return valuable clues in an [alert](security-alert.md) resource about any related attack, impacted assets, and associated [evidence](security-alertevidence.md). It automatically correlates other alerts with the same attack techniques or the same attacker into an [incident](security-incident.md) to provide a broader context of an attack. Aggregating alerts in this manner makes it easy for analysts to collectively investigate and respond to threats.
 
@@ -32,7 +32,7 @@ Security providers create an alert in the system when they detect a threat. Micr
 ## Properties
 
 |Property|Type| Description|
-|:---|:---|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|:---|:---|:---|
 |actorDisplayName|String| The adversary or activity group that is associated with this alert.|
 |additionalData|microsoft.graph.security.dictionary| A collection of other alert properties, including user-defined properties. Any custom details defined in the alert, and any dynamic content in the alert details, are stored here. |
 |alertPolicyId|String| The ID of the policy that generated the alert, and populated when there is a specific policy that generated the alert, whether configured by a customer or a built-in policy.|
@@ -53,6 +53,7 @@ Security providers create an alert in the system when they detect a threat. Micr
 |id|String| Unique identifier to represent the **alert** resource.|
 |incidentId|String| Unique identifier to represent the [incident](security-incident.md) this **alert** resource is associated with.|
 |incidentWebUrl|String| URL for the incident page in the Microsoft 365 Defender portal. |
+|investigationState|[microsoft.graph.security.alertInvestigationState](#alertinvestigationstate-values)| Information on the current status of the investigation. Possible values are: `unknown`, `terminated`, `successfullyRemediated`, `benign`, `failed`, `partiallyRemediated`, `running`, `pendingApproval`, `pendingResource`, `queued`, `innerFailure`, `preexistingAlert`, `unsupportedOs`, `unsupportedAlertType`, `suppressedAlert`, `partiallyInvestigated`, `terminatedByUser`, `terminatedBySystem`, `unknownFutureValue`.|
 |lastActivityDateTime|DateTimeOffset| The oldest activity associated with the alert.|
 |lastUpdateDateTime|DateTimeOffset| Time when the alert was last updated at Microsoft 365 Defender.|
 |mitreTechniques|Collection(Edm.String)| The attack techniques, as aligned with the MITRE ATT&CK framework.|
@@ -67,7 +68,6 @@ Security providers create an alert in the system when they detect a threat. Micr
 |threatFamilyName|String| Threat family associated with this alert.|
 |title|String| Brief identifying string value describing the alert.|
 |systemTags|String collection| The system tags associated with the alert.|
-|investigationState|[microsoft.graph.security.investigationState](#alertinvestigationstate-values)| Information on the investigation's current status. Possible values are: `unknown`, `terminated`, `successfullyRemediated`, `benign`, `failed`, `partiallyRemediated`, `running`, `pendingApproval`, `pendingResource`, `queued`, `innerFailure`, `preexistingAlert`, `unsupportedOs`, `unsupportedAlertType`, `suppressedAlert`, `partiallyInvestigated`, `terminatedByUser`, `terminatedBySystem`, `unknownFutureValue`.|
 
 ### alertClassification values
 
@@ -99,6 +99,30 @@ Security providers create an alert in the system when they detect a threat. Micr
 | confirmedActivity          | The alert caught a true suspicious activity that is considered OK because it's a known user activity.                       |
 | lineOfBusinessApplication  | The alert caught a true suspicious activity that is considered OK because it's a known and confirmed internal application.  |
 | unknownFutureValue         | Evolvable enumeration sentinel value. Don't use.                                                                            |
+
+### alertInvestigationState values
+
+| Member                 | Description                                                                 |
+|:-----------------------|:----------------------------------------------------------------------------|
+| unknown                | Unknown investigation state.                                                |
+| terminated             | Investigation was terminated before completion.                             |
+| successfullyRemediated | Investigation completed successfully with all remediation actions performed. |
+| benign                 | Investigation completed without any remediation attempts.                   |
+| failed                 | A problem interrupted the investigation and now it can't be completed.     |
+| partiallyRemediated    | Investigation completed with some remediation plans successfully performed. |
+| running                | Investigation is currently ongoing.                                         |
+| pendingApproval        | Investigation paused; some actions require user review and approval.        |
+| pendingResource        | Investigation is on hold until required resources are available.        |
+| queued                 | Investigation is queued and on hold until it starts.                               |
+| innerFailure           | Investigation encountered an internal system failure.                       |
+| preexistingAlert       | Investigation wasn't started because a similar alert already exists.       |
+| unsupportedOs          | Investigation can't proceed because the operating system isn't supported. |
+| unsupportedAlertType   | Investigation can't proceed because the alert type isn't supported.       |
+| suppressedAlert        | Investigation was suppressed based on configured rules or policies.         |
+| partiallyInvestigated  | Investigation was partially completed.                                      |
+| terminatedByUser       | Investigation was stopped by the user before it was completed.              |
+| terminatedBySystem     | Investigation was stopped by the system before it was completed.               |
+| unknownFutureValue     | Evolvable enumeration sentinel value. Don't use.                            |
 
 ### alertSeverity values
 
@@ -182,30 +206,6 @@ Security providers create an alert in the system when they detect a threat. Micr
 | microsoftDefenderForAIServices               | Microsoft Defender for AI Services.              |
 | securityCopilot                              | Security Copilot.                                |
 
-### alertInvestigationState values
-
-| Member                     | Description                                                                                                                  |
-| :--------------------------| :--------------------------------------------------------------------------------------------------------------------------- |
-| unknown                    | Unknown investigation state.                                                                                                 |
-| terminated                 | Investigation was terminated before completion.                                                                              |
-| successfullyRemediated     | Investigation completed successfully with all remediation actions executed.                                                  |
-| benign                     | Investigation completed without any remediation attempts.                                                                    |
-| failed                     | A problem interrupted the investigation, preventing it from completing.                                                      |
-| partiallyRemediated        | Investigation completed with some remediation plans executing successfully.                                                  |
-| running                    | Investigation is currently ongoing.                                                                                          |
-| pendingApproval            | Investigation paused; some actions require user review and approval.                                                         |
-| pendingResource            | Investigation is waiting for required resources to become available.                                                         |
-| queued                     | Investigation is queued and waiting to start.                                                                                |
-| innerFailure               | Investigation encountered an internal system failure.                                                                        |
-| preexistingAlert           | Investigation was not started because a similar alert already exists.                                                        |
-| unsupportedOs              | Investigation cannot proceed because the operating system is not supported.                                                  |
-| unsupportedAlertType       | Investigation cannot proceed because the alert type is not supported.                                                        |
-| suppressedAlert            | Investigation was suppressed based on configured rules or policies.                                                          |
-| partiallyInvestigated      | Investigation was partially completed.                                                                                       |
-| terminatedByUser           | Investigation stopped by the user before it could complete.                                                                  |
-| terminatedBySystem         | Investigation stopped by the system before it could complete.                                                                |
-| unknownFutureValue         | Evolvable enumeration sentinel value. Don't use.                                                                             |
-
 ## Relationships
 
 None.
@@ -225,57 +225,40 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.security.alert",
-  "id": "String (identifier)",
-  "providerAlertId": "String",
-  "incidentId": "String",
-  "status": "String",
-  "severity": "String",
-  "investigationState": "Queued",
-  "classification": "String",
-  "determination": "String",
-  "serviceSource": "String",
-  "detectionSource": "String",
-  "productName": "String",
-  "detectorId": "String",
-  "tenantId": "String",
-  "title": "String",
-  "description": "String",
-  "recommendedActions": "String",
-  "category": "String",
-  "assignedTo": "String",
-  "alertWebUrl": "String",
-  "incidentWebUrl": "String",
   "actorDisplayName": "String",
+  "additionalData": {"@odata.type": "microsoft.graph.security.dictionary"},
+  "alertWebUrl": "String",
+  "assignedTo": "String",
+  "category": "String",
+  "classification": "String",
+  "comments": [{"@odata.type": "microsoft.graph.security.alertComment"}],
+  "createdDateTime": "String (timestamp)",
+  "customDetails": {"@odata.type": "microsoft.graph.security.dictionary"},
+  "description": "String",
+  "detectionSource": "String",
+  "detectorId": "String",
+  "determination": "String",
+  "evidence": [{"@odata.type": "microsoft.graph.security.alertEvidence"}],
+  "firstActivityDateTime": "String (timestamp)",
+  "id": "String (identifier)",
+  "incidentId": "String",
+  "incidentWebUrl": "String",
+  "investigationState": "String",
+  "lastActivityDateTime": "String (timestamp)",
+  "lastUpdateDateTime": "String (timestamp)",
+  "mitreTechniques": ["String"],
+  "productName": "String",
+  "providerAlertId": "String",
+  "recommendedActions": "String",
+  "resolvedDateTime": "String (timestamp)",
+  "serviceSource": "String",
+  "severity": "String",
+  "status": "String",
+  "systemTags" : ["String"],
+  "tenantId": "String",
   "threatDisplayName": "String",
   "threatFamilyName": "String",
-  "mitreTechniques": [
-    "String"
-  ],
-  "createdDateTime": "String (timestamp)",
-  "lastUpdateDateTime": "String (timestamp)",
-  "resolvedDateTime": "String (timestamp)",
-  "firstActivityDateTime": "String (timestamp)",
-  "lastActivityDateTime": "String (timestamp)",
-  "comments": [
-    {
-      "@odata.type": "microsoft.graph.security.alertComment"
-    }
-  ],
-  "evidence": [
-    {
-      "@odata.type": "microsoft.graph.security.alertEvidence"
-    }
-  ],
-  "systemTags" : [
-    "String",
-    "String"
-  ],
-  "additionalData": {
-    "@odata.type": "microsoft.graph.security.dictionary"
-  },
-  "customDetails": {
-    "@odata.type": "microsoft.graph.security.dictionary"
-  }
+  "title": "String"
 }
 ```
 
