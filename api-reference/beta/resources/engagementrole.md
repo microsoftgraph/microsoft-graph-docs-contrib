@@ -21,9 +21,9 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List assigned roles](../api/employeeexperienceuser-list-assignedroles.md)|[engagementRole](../resources/engagementrole.md)|Get a list of all the [roles](../resources/engagementrole.md) assigned to a user in Viva Engage.|
+|[List](../api/employeeexperience-list-roles.md)|[engagementRole](../resources/engagementrole.md) collection|Get a list of all the [roles](../resources/engagementrole.md) that can be assigned in Viva Engage.|
 |[List members](../api/engagementrole-list-members.md)|[engagementRoleMember](../resources/engagementrolemember.md) collection|Get a list of users with assigned [roles](../resources/engagementrole.md) in Viva Engage.|
-|[List roles](../api/employeeexperience-list-roles.md)|[engagementRole](../resources/engagementrole.md) collection|Get a list of all the [roles](../resources/engagementrole.md) that can be assigned in Viva Engage.|
+|[List assigned roles](../api/employeeexperienceuser-list-assignedroles.md)|[engagementRole](../resources/engagementrole.md)|Get a list of all the [roles](../resources/engagementrole.md) assigned to a user in Viva Engage.|
 
 ## Properties
 |Property|Type|Description|
