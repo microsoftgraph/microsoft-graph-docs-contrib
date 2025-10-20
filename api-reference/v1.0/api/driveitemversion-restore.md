@@ -1,6 +1,6 @@
 ---
-title: "Restore a previous version of a DriveItem"
-description: "Restore a previous version of a DriveItem to be the current version. This will create a new version with the contents of the previous version, but preserves all existing versions of the file."
+title: "driveItemVersion: restoreVersion"
+description: "Restore a previous version of a driveItem to be the current version."
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 author: "spgraph-docs-team"
@@ -8,11 +8,11 @@ doc_type: apiPageType
 ms.date: 03/14/2024
 ---
 
-# Restore a previous version of a DriveItem
+# driveItemVersion: restoreVersion
 
 Namespace: microsoft.graph
 
-Restore a previous version of a DriveItem to be the current version. This will create a new version with the contents of the previous version, but preserves all existing versions of the file.
+Restore a previous [version](../resources/driveitemversion.md) of a [driveItem](../resources/driveitem.md) to be the current **version**. This operation creates a new version with the contents of the previous version, and it preserves all existing versions of the file.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
