@@ -2,12 +2,12 @@
 author: spgraph-docs-team
 description: "Restore a previous version of a driveItem to be the current version."
 ms.date: 09/10/2017
-title: Restore a previous version
+title: "driveItemVersion: restoreVersion"
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
-# Restore a previous version of a DriveItem
+# driveItemVersion: restoreVersion
 
 Namespace: microsoft.graph
 
