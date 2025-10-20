@@ -30,6 +30,14 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 - [Update](/graph/api/protectionrulebase-update) a [driveProtectionRule](/graph/api/resources/driveprotectionrule) or a [mailboxProtectionRule](/graph/api/resources/mailboxprotectionrule).
 - [Delete and unprotect](/graph/api/protectionrulebase-deleteandunprotect) all the artifacts protected by a dynamic rule in a [driveProtectionRule](/graph/api/resources/driveprotectionrule) or a [mailboxProtectionRule](/graph/api/resources/mailboxprotectionrule).
 
+### Files
+
+Added the following new endpoints as supported request URLs for the [driveItem: createUploadSession](/graph/api/driveitem-createuploadsession) API:
+- `POST /drives/{driveId}/items/{parentItemId}:/{fileName}:/createUploadSession`
+- `POST /groups/{groupId}/drive/items/{parentItemId}:/{fileName}:/createUploadSession` 
+- `POST /sites/{siteId}/drive/items/{parentItemId}:/{fileName}:/createUploadSession`
+- `POST /users/{userId}/drive/items/{parentItemId}:/{fileName}:/createUploadSession`
+
 ### Device and app management | Cloud PC
 
 [List](/graph/api/user-list-cloudpcs) the Cloud PC devices that are attributed to the signed-in user.
@@ -66,6 +74,14 @@ Apply the following [prerequisites for the Places list and descendant APIs](/gra
 
 - [List the dependent education assignment resources](/graph/api/educationassignmentresource-list-dependentresources?view=graph-rest-beta&preserve-view=true) for a given education assignment resource.
 - [List the dependent education submission resources](/graph/api/educationsubmissionresource-list-dependentresources?view=graph-rest-beta&preserve-view=true) for a given education submission resource.
+
+### Files
+
+Added the following new endpoints as supported request URLs for the [driveItem: createUploadSession](/graph/api/driveitem-createuploadsession?view=graph-rest-beta&preserve-view=true) API:
+- `POST /drives/{driveId}/items/{parentItemId}:/{fileName}:/createUploadSession`
+- `POST /groups/{groupId}/drive/items/{parentItemId}:/{fileName}:/createUploadSession` 
+- `POST /sites/{siteId}/drive/items/{parentItemId}:/{fileName}:/createUploadSession`
+- `POST /users/{userId}/drive/items/{parentItemId}:/{fileName}:/createUploadSession`
 
 ## September 2025: New and generally available
 
