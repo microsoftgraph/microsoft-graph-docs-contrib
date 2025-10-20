@@ -34,18 +34,15 @@ GET /employeeExperience/roles/{engagementRoleId}/members
 
 ## Optional query parameters
 
-This method supports the following OData query parameters: `$filter` (`eq`), `$select`, and `$count`. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$filter` (`eq`), `$select`, and `$count` OData query parameters. For general information, see [OData query parameters](/graph/query-parameters). Only the **userId** and **id** properties support the `$filter` parameter.
 
-Supported `$filter` (`eq`) properties for a role member:
+The folowing table shows how you can use OData query parameters with this API. 
 
-- `userId`
-- `id`
-
-Examples:
-
-- Filter members by user ID: `GET /employeeExperience/roles/{engagementRoleId}/members?$filter=userId eq 'e8d9f6a2-1c34-4b7a-9f11-2a4d8b7c9e01'`
-- Select only member identifiers and creation time: `GET /employeeExperience/roles/{engagementRoleId}/members?$select=id,createdDateTime`
-- Include total count of members: `GET /employeeExperience/roles/{engagementRoleId}/members?$count=true`
+| Description | HTTP request |
+|:---|:---|
+| Filter role members by user ID | `GET /employeeExperience/roles/{engagementRoleId}/members?$filter=userId eq 'e8d9f6a2-1c34-4b7a-9f11-2a4d8b7c9e01'` |
+| Include the total count of role members       | `GET /employeeExperience/roles/{engagementRoleId}/members?$count=true` |
+| Get only the **id** and **createdDateTime** properties for a list of role members | `GET /employeeExperience/roles/{engagementRoleId}/members?$select=id,createdDateTime` |
 
 ## Request headers
 
