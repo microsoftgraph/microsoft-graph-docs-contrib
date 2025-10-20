@@ -18,7 +18,7 @@ Represents a specific version of a [driveItem](driveitem.md).
 
 ## Methods
 
-| Method | Return Type | Description |
+| Method | Return type | Description |
 |:---|:---|:---|
 | [List](../api/driveitem-list-versions.md)                           | [driveItemVersion](../resources/driveitemversion.md) collection | Retrieve the [versions](../resources/driveitemversion.md) of a [file](../resources/driveitem.md).|
 | [Get](../api/driveitemversion-get.md)                                | [driveItemVersion](../resources/driveitemversion.md) | Retrieve the metadata for a specific [version](../resources/driveitemversion.md) of a [driveItem](../resources/driveitem.md).|
