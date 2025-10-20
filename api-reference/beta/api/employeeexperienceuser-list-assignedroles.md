@@ -50,9 +50,9 @@ The folowing table shows how you can use OData query parameters with this API.
 
 | Description | HTTP request |
 |:---|:---|
-| Filter by display name | `GET /me/employeeExperience/assignedRoles?$filter=displayName eq 'Corporate Communicator'` |
-| Include total count       | `GET /users/{userId}/employeeExperience/assignedRoles?$count=true` |
-| Select only the **id** and **displayName** properties | `GET /users/{userId}/employeeExperience/assignedRoles?$select=id,displayName` |
+| Filter assigned roles by display name | `GET /users/{userId}/employeeExperience/assignedRoles?$filter=displayName eq 'Corporate Communicator'` |
+| Include a total count       | `GET /users/{userId}/employeeExperience/assignedRoles?$count=true` |
+| Get only the **id** property for a list of assigned roles | `GET /users/{userId}/employeeExperience/assignedRoles?$select=id` |
 
 ## Request headers
 
