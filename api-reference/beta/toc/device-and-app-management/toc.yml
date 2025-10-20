@@ -132,8 +132,6 @@ items:
       href: ../../api/cloudpc-retrievecloudpccountbystatus.md
     - name: List for user
       href: ../../api/user-list-cloudpcs.md
-    - name: Get launch info (deprecated)
-      href: ../../api/cloudpc-getcloudpclaunchinfo.md
     - name: Retrieve launch detail
       href: ../../api/cloudpc-retrievecloudpclaunchdetail.md
     - name: Get connectivity history
@@ -152,6 +150,8 @@ items:
       href: ../../api/cloudpc-retrievesnapshots.md
     - name: Get frontline access state
       href: ../../api/cloudpc-getfrontlinecloudpcaccessstate.md
+    - name: Get launch info (deprecated)
+      href: ../../api/cloudpc-getcloudpclaunchinfo.md
   - name: Cloud PC audit event
     items:
     - name: Cloud PC audit event
@@ -240,7 +240,7 @@ items:
       href: ../../api/cloudpcexternalpartner-get.md
     - name: Update
       href: ../../api/cloudpcexternalpartner-update.md
-  - name: Cloud PC front line service plan
+  - name: Cloud PC frontline service plan
     items:
     - name: Cloud PC frontline service plan
       href: ../../resources/cloudpcfrontlineserviceplan.md
@@ -424,15 +424,11 @@ items:
       href: ../../api/virtualendpoint-list-supportedregions.md
     - name: List service plans
       href: ../../api/virtualendpoint-list-serviceplans.md
-    - name: List external partner settings (deprecated)
-      href: ../../api/virtualendpoint-list-externalpartnersettings.md
-    - name: Create external partner setting (deprecated)
-      href: ../../api/virtualendpoint-post-externalpartnersettings.md
     - name: List external partners
       href: ../../api/virtualendpoint-list-externalpartners.md
     - name: Create external partner
       href: ../../api/virtualendpoint-post-externalpartners.md
-    - name: List front line service plans
+    - name: List frontline service plans
       href: ../../api/virtualendpoint-list-frontlineserviceplans.md
     - name: List bulk actions
       href: ../../api/virtualendpoint-list-bulkactions.md
@@ -444,6 +440,10 @@ items:
       href: ../../api/virtualendpoint-list-cloudapps.md
     - name: List managed licenses
       href: ../../api/virtualendpoint-list-managedlicenses.md
+    - name: List external partner settings (deprecated)
+      href: ../../api/virtualendpoint-list-externalpartnersettings.md
+    - name: Create external partner setting (deprecated)
+      href: ../../api/virtualendpoint-post-externalpartnersettings.md
   - name: Alert monitoring
     items:
     - name: Monitoring
