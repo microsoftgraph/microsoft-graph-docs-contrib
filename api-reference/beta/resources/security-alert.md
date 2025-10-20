@@ -124,17 +124,6 @@ Security providers create an alert in the system when they detect a threat. Micr
 | terminatedBySystem     | Investigation was stopped by the system before it was completed.               |
 | unknownFutureValue     | Evolvable enumeration sentinel value. Don't use.                            |
 
-### alertSeverity values
-
-| Member                     | Description                                                                                                                  |
-| :--------------------------| :--------------------------------------------------------------------------------------------------------------------------- |
-| unknown       | Unknown severity.       |
-| informational   | Alerts that might not be actionable or considered harmful to the network but can drive organizational security awareness on potential security issues.     |
-| low                | Alerts on threats associated with prevalent malware. For example, hack tools, and nonmalware hack tools, such as running exploration commands and clearing logs, that often don't indicate an advanced threat that targets the organization. It can also come from an isolated security tool that a user in your organization is testing.  |
-| medium             | Alerts generated from detections and response post-breach behaviors that might be a part of an advanced persistent threat (APT). These alerts include observed behaviors typical of attack stages, anomalous registry change, execution of suspicious files, and so forth. Although some might be due to internal security testing, they're valid detections and require investigation as they might be a part of an advanced attack. |
-| high               | Alerts commonly seen associated with advanced persistent threats (APT). These alerts indicate a high risk because of the severity of damage they can inflict on assets. Some examples are: credential theft tools activities, ransomware activities not associated with any group, tampering with security sensors, or any malicious activities indicative of a human adversary. |
-| unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
-
 ### alertStatus values
 
 | Member              | Description                                           |
@@ -145,23 +134,16 @@ Security providers create an alert in the system when they detect a threat. Micr
 | resolved            | The alert is in the resolved state.                       |
 | unknownFutureValue  | Evolvable enumeration sentinel value. Don't use.     |
 
-### serviceSource values
+### alertSeverity values
 
-| Value                        | Description                                    |
-| :----------------------------| :----------------------------------------------|
-| unknown                      | Unknown service source.                        |
-| microsoftDefenderForEndpoint | Microsoft Defender for Endpoint.               |
-| microsoftDefenderForIdentity | Microsoft Defender for Identity.               |
-| microsoftDefenderForCloudApps| Microsoft Defender for Cloud Apps.             |
-| microsoftDefenderForOffice365| Microsoft Defender For Office 365.              |
-| microsoft365Defender         | Microsoft 365 Defender.                        |
-| azureAdIdentityProtection    | Microsoft Entra ID Protection.    |
-| microsoftAppGovernance       | Microsoft app governance.                      |
-| dataLossPrevention           | Microsoft Purview Data Loss Prevention.        |
-| unknownFutureValue           | Evolvable enumeration sentinel value. Don't use.|
-| microsoftDefenderForCloud    | Microsoft Defender for Cloud.                  |
-| microsoftSentinel            | Microsoft Sentinel.                            |
-| microsoftThreatIntelligence  | Microsoft Threat Intelligence.                 |
+| Member                     | Description                                                                                                                  |
+| :--------------------------| :--------------------------------------------------------------------------------------------------------------------------- |
+| unknown       | Unknown severity.       |
+| informational   | Alerts that might not be actionable or considered harmful to the network but can drive organizational security awareness on potential security issues.     |
+| low                | Alerts on threats associated with prevalent malware. For example, hack tools, and nonmalware hack tools, such as running exploration commands and clearing logs, that often don't indicate an advanced threat that targets the organization. It can also come from an isolated security tool that a user in your organization is testing.  |
+| medium             | Alerts generated from detections and response post-breach behaviors that might be a part of an advanced persistent threat (APT). These alerts include observed behaviors typical of attack stages, anomalous registry change, execution of suspicious files, and so forth. Although some might be due to internal security testing, they're valid detections and require investigation as they might be a part of an advanced attack. |
+| high               | Alerts commonly seen associated with advanced persistent threats (APT). These alerts indicate a high risk because of the severity of damage they can inflict on assets. Some examples are: credential theft tools activities, ransomware activities not associated with any group, tampering with security sensors, or any malicious activities indicative of a human adversary. |
+| unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
 
 ### detectionSource values
 
@@ -205,6 +187,24 @@ Security providers create an alert in the system when they detect a threat. Micr
 | microsoftThreatIntelligence                  | Microsoft Threat Intelligence.                  |
 | microsoftDefenderForAIServices               | Microsoft Defender for AI Services.              |
 | securityCopilot                              | Security Copilot.                                |
+
+### serviceSource values
+
+| Value                        | Description                                    |
+| :----------------------------| :----------------------------------------------|
+| unknown                      | Unknown service source.                        |
+| microsoftDefenderForEndpoint | Microsoft Defender for Endpoint.               |
+| microsoftDefenderForIdentity | Microsoft Defender for Identity.               |
+| microsoftDefenderForCloudApps| Microsoft Defender for Cloud Apps.             |
+| microsoftDefenderForOffice365| Microsoft Defender For Office 365.              |
+| microsoft365Defender         | Microsoft 365 Defender.                        |
+| azureAdIdentityProtection    | Microsoft Entra ID Protection.    |
+| microsoftAppGovernance       | Microsoft app governance.                      |
+| dataLossPrevention           | Microsoft Purview Data Loss Prevention.        |
+| unknownFutureValue           | Evolvable enumeration sentinel value. Don't use.|
+| microsoftDefenderForCloud    | Microsoft Defender for Cloud.                  |
+| microsoftSentinel            | Microsoft Sentinel.                            |
+| microsoftThreatIntelligence  | Microsoft Threat Intelligence.                 |
 
 ## Relationships
 
