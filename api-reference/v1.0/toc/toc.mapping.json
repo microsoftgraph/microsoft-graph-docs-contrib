@@ -578,7 +578,7 @@
             "engagementAsyncOperation",
             "engagementRole",
             "engagementRoleMember"
-          ]
+          ],
           "complexTypes": [
             "engagementIdentitySet"
           ]
