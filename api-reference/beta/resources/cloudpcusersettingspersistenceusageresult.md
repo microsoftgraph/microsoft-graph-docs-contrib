@@ -1,6 +1,6 @@
 ---
 title: "cloudPCUserSettingsPersistenceUsageResult resource type"
-description: "Describes the cloud profile storage usage status of the speicifc Cloud PC user settings persistence for specific Cloud PC's policy assignment."
+description: "Describes the cloud profile storage usage status of the specific Cloud PC user settings persistence for specific Cloud PC's policy assignment."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Describes the cloud profile storage usage status of the speicifc Cloud PC user settings persistence for specific Cloud PC's policy assignment.
+Describes the cloud profile storage usage status of the specific Cloud PC user settings persistence for specific Cloud PC's policy assignment.
 
 ## Properties
 

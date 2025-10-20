@@ -1,6 +1,6 @@
 ---
 title: "cloudPcProvisioningPolicy: batchCleanupUserSettingsPersistenceProfile"
-description: "Delete a list of selected user settings persistence profiles that are not attached to specific user's Cloud PC in specific Cloud PC's policy assingmnet of user settings persistence."
+description: "Delete a list of selected user settings persistence profiles that are not attached to specific user's Cloud PC in specific Cloud PC's policy assignment of user settings persistence."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
@@ -14,8 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a list of cloud proifles that are not attached to specific user's Cloud PC in specific Cloud PC's policy assingmnet of user settings persistence.
-
+Delete a list of cloud profiles that are not attached to specific user's Cloud PC in specific Cloud PC's policy assignment of user settings persistence
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
