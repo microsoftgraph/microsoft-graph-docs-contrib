@@ -7797,6 +7797,48 @@
       "CreatedDateTime": "2025-06-17T06:24:53.3809776Z",
       "WorkloadArea": "Device and app management",
       "SubArea": "Cloud PC"
+    },
+    {
+       "ChangeList": [
+        {
+            "Id": "4a7b1b7c-4a7b-4a7b-4a7b-4a7b1b7c4a7b",
+            "ChangedApiName": "cloudPcManagedLicense",
+            "ApiChange": "Resource",
+            "Target": "cloudPcManagedLicense",
+            "ChangeType": "Addition",
+            "Description": "Added the [cloudPcManagedLicense](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcmanagedlicense?view=graph-rest-beta) resource and a supported method."
+        },
+        {
+            "Id": "4a7b1b7c-4a7b-4a7b-4a7b-4a7b1b7c4a7b",
+            "ChangedApiName": "cloudPcManagedLicenseType",
+            "ApiChange": "Enumeration",
+            "Target": "cloudPcManagedLicenseType",
+            "ChangeType": "Addition",
+            "Description": "Added the **cloudPcManagedLicenseType** enumeration."
+        },
+        {
+            "Id": "4a7b1b7c-4a7b-4a7b-4a7b-4a7b1b7c4a7b",
+            "ChangedApiName": "cloudPcManagedLicenseStatus",
+            "ApiChange": "Enumeration",
+            "Target": "cloudPcManagedLicenseStatus",
+            "ChangeType": "Addition",
+            "Description": "Added the **cloudPcManagedLicenseStatus** enumeration."
+        },
+        {
+            "Id": "4a7b1b7c-4a7b-4a7b-4a7b-4a7b1b7c4a7b",
+            "ChangedApiName": "managedLicenses",
+            "ApiChange": "Relationship",
+            "Target": "virtualEndpoint",
+            "ChangeType": "Addition",
+            "Description": "Added the **managedLicenses** relationship to the [virtualEndpoint](https://learn.microsoft.com/en-us/graph/api/resources/virtualendpoint?view=graph-rest-beta) resource."
+        }
+      ],
+      "Id": "4a7b1b7c-4a7b-4a7b-4a7b-4a7b1b7c4a7b",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-09-20T00:00:00.000Z",
+      "WorkloadArea": "Device and app management",
+      "SubArea": "Cloud PC"
     }
   ]
 }
