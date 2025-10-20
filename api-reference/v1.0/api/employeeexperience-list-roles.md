@@ -39,9 +39,9 @@ The folowing table shows how you can use OData query parameters with this API.
 
 | Description | HTTP request |
 |:---|:---|
-| Get the first 10 roles and include a count of total roles | `GET /employeeExperience/roles?$top=10&$count=true` |
-| List only roles with the display name `Network Admin` | `GET /employeeExperience/roles?$filter=displayName eq 'Network Admin'` |
-| Select only the **id** and **displayName** properties | `GET /employeeExperience/roles?$select=id,displayName` |
+| Get the first 10 roles and include the count of total roles | `GET /employeeExperience/roles?$top=10&$count=true` |
+| Filter roles by the display name `Network Admin` | `GET /employeeExperience/roles?$filter=displayName eq 'Network Admin'` |
+| Get only the **id** and **displayName** properties for a list of roles | `GET /employeeExperience/roles?$select=id,displayName` |
 
 ## Request headers
 
