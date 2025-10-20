@@ -32,7 +32,7 @@ Inherits from [entity](../resources/entity.md).
 ## Relationships
 | Relationship | Type | Description |
 |:---|:---|:---|
-|members|[engagementRoleMember](../resources/engagementrolemember.md) collection|TODO|
+|members|[engagementRoleMember](../resources/engagementrolemember.md) collection|Users that have this role assigned.|
 
 ## JSON representation
 The following JSON representation shows the resource type.
