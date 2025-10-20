@@ -57,11 +57,11 @@ For tenants that have Information Barriers(IB) enabled, IB is automatically stam
 
 ### Updating Information Barriers
 - Admins can update Information Barriers via Update fileStorageContainerAPI.
-- Container owner and container principal owner can only add segments to a container that already has associated segments. They can't create segments, change the policies for a segment, associate segments with non-segmented sites, or remove segments.
+- Container owner and container principal owner can only add segments to a container that already has associated segments. They can't create segments, change the policies for a segment, associate segments with nonsegmented sites, or remove segments.
 - Existing containers don't get their IB mode and segment automatically updated due to updates of the creating user's IB settings. 
 
 ### Disabling Information Barriers
-If Information Barriers are disabled for the tenant, all IB access enforcement stops, but existing IB settings on containersis retained. If Information Barriers are re-enabled, enforcementresumes based on the existing settings.
+If Information Barriers are disabled for the tenant, all IB access enforcement stops, but existing IB settings on containers are retained. If Information Barriers are re-enabled, enforcement resumes based on the existing settings.
 
 ### Explicit Select
-This property needs to be explicitly selected to be returned. i.e. `?$select=informationBarrier`
+Explicit select this property to return it. i.e. `?$select=informationBarrier`
