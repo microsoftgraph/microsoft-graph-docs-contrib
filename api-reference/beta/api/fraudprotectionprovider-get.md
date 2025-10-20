@@ -19,15 +19,13 @@ Read the properties and relationships of [fraudProtectionProvider](../resources/
 - [arkoseFraudProtectionProvider](../resources/arkosefraudprotectionprovider.md) resource type
 - [humanSecurityFraudProtectionProvider](../resources/humansecurityfraudprotectionprovider.md) resource type
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "fraudprotectionprovider-get-permissions"
-}
--->
+<!-- { "blockType": "permissions", "name": "fraudprotectionprovider_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/fraudprotectionprovider-get-permissions.md)]
 
 [!INCLUDE [rbac-fraudprovider-apis-read](../includes/rbac-for-apis/rbac-fraudprovider-apis-read.md)]
@@ -58,13 +56,14 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [fraudProtectionProvider](../resources/fraudprotectionprovider.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [fraudProtectionProvider](../resources/fraudprotectionprovider.md) object in the response body. The **@odata.type** property in the response object indicates the type of the **fraudProtectionProvider** object.
 
 ## Examples
 
 ### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_fraudprotectionprovider"
@@ -73,6 +72,12 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/beta/identity/riskprevention/fraudprotectionproviders/0bb2618b-51f7-4e83-bcb8-84e70f7cf84d
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-fraudprotectionprovider-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 
 ### Response

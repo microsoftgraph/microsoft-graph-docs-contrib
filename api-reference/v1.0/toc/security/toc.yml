@@ -346,9 +346,9 @@ items:
     items:
     - name: Case operation
       href: ../../resources/security-caseoperation.md
-    - name: List case operations
+    - name: List
       href: ../../api/security-ediscoverycase-list-operations.md
-    - name: Get case operation by ID
+    - name: Get
       href: ../../api/security-caseoperation-get.md
   - name: eDiscovery custodian
     items:
