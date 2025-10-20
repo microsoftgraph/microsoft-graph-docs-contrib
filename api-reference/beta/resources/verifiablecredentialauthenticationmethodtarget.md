@@ -1,6 +1,6 @@
 ---
 title: "verifiableCredentialAuthenticationMethodTarget resource type"
-description: "A collection of groups that are enabled to use a Verifiable Credential authentication method as part of a Verifiable Credential authentication method policy."
+description: "A collection of groups enabled to use Verifiable Credential for identification."
 author: "tilarso"
 ms.date: 10/10/2025
 ms.localizationpriority: medium
@@ -14,8 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A collection of groups that are enabled to use a Verifiable Credential authentication method as part of a Verifiable Credential authentication method policy in Microsoft Entra ID.
-
+A collection of groups enabled to use Verifiable Credential for identification. 
 
 Inherits from [authenticationMethodTarget](../resources/authenticationmethodtarget.md).
 
@@ -24,7 +23,7 @@ Inherits from [authenticationMethodTarget](../resources/authenticationmethodtarg
 |:---|:---|:---|
 |id|String| Object identifier of a Microsoft Entra user or group.| Inherited from [entity](../resources/entity.md). Inherits from [entity](../resources/entity.md)|
 |isRegistrationRequired|Boolean|Indicates whether the user is required to register the authentication method.| Inherited from [authenticationMethodTarget](../resources/authenticationmethodtarget.md).|
-|targetType|authenticationMethodTargetType| The authentication method type.  Inherited from [authenticationMethodTarget](../resources/authenticationmethodtarget.md). The possible values are: `user`, `group`, `unknownFutureValue`, `role`. Use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `role`.|
+|targetType|authenticationMethodTargetType| The authentication method type.| Inherited from [authenticationMethodTarget](../resources/authenticationmethodtarget.md). The possible values are: `user`, `group`, `unknownFutureValue`, `role`. Use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `role`.|
 |verifiedIdProfiles|Guid collection| A collection of Verified ID profiles. 
 
 ## Relationships

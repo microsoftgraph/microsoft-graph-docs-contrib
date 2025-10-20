@@ -33,13 +33,13 @@ Inherits from [entity](../resources/entity.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |description|String| Description for the verified Id profile. Required.|
-|faceCheckConfiguration|[faceCheckConfiguration](../resources/facecheckconfiguration.md)| Set of properties configuring Entra Verified ID Face Check behavior.  Required.|
+|faceCheckConfiguration|[faceCheckConfiguration](../resources/facecheckconfiguration.md)| Set of properties configuring Entra Verified ID Face Check behavior. Required.|
 |id|String| Profile identifier. Inherited from [entity](../resources/entity.md).|
 |lastModifiedDateTime|DateTimeOffset|DateTime the profile was last modified. Optional.|
 |name|String| Display name for the verified Id profile. Required.|
-|priority|Int32|Defines profile processing priority if multiple profiles are configured.  Optional.|
+|priority|Int32|Defines profile processing priority if multiple profiles are configured. Optional.|
 |state|verifiedIdProfileState| Enablement state for the profile. The possible values are: `enabled`, `disabled`, `unknownFutureValue`. Required.|
-|verifierDid|String| Decentralized Identifier (DID) string that represents the verifier in the verifiable credential exchange.  Required.|
+|verifierDid|String| Decentralized Identifier (DID) string that represents the verifier in the verifiable credential exchange. Required.|
 |verifiedIdProfileConfiguration|[verifiedIdProfileConfiguration](../resources/verifiedidprofileconfiguration.md)| Set of properties expressing the accepted issuer, claims binding, and credential type. Required.|
 |verifiedIdUsageConfigurations|[verifiedIdUsageConfiguration](../resources/verifiedidusageconfiguration.md) collection| Collection defining the usage purpose for the profile. The possible values are: `recovery`, `onboarding`, `all`, `unknownFutureValue`. Required.|
 
