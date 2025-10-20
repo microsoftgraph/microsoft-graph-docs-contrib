@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Retrieve a list of [sectionGroup](../resources/sectiongroup.md) objects.
 > [!IMPORTANT]
-> a section group in SharePoint is a folder object. if you request site/siteID/oneNote/sectiongroups you request to list all subfolders in the site root pages folder and it will list all of them including possibly existing none onenote folders. If your goal is to only retrieve noteBooks sectiongroups then you need to add a filter "/sites/{id}/onenote/sectionGroups?$filter=parentNotebook ne null".
+> A section group in SharePoint is a folder object. If you request site/siteID/oneNote/section groups, you request to list all subfolders in the site root pages folder, and it lists all of them, including possibly existing non-OneNote folders. If your goal is to only retrieve noteBooks section groups, add a filter "/sites/{id}/onenote/sectionGroups?$filter=parentNotebook ne null".
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
