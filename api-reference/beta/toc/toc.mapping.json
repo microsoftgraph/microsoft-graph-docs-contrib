@@ -1562,7 +1562,7 @@
                 "onInteractiveAuthFlowStartListener",
                 "onPhoneMethodLoadStartListener",
                 "onTokenIssuanceStartListener",
-                "onUserCreateStartListener",
+                "onUserCreateStartListener"
               ]
             },
             {
