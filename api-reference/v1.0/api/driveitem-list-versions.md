@@ -1,5 +1,5 @@
 ---
-title: "List versions of a driveItem"
+title: "List versions"
 description: "Retrieve the versions of a file."
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
@@ -8,7 +8,7 @@ doc_type: apiPageType
 ms.date: 04/04/2024
 ---
 
-# List versions of a driveItem
+# List versions
 
 Namespace: microsoft.graph
 
