@@ -574,8 +574,11 @@
           "overview": "../../resources/engagement-api-overview.md",
           "resources": [
             "community",
-            "engagementAsyncOperation"
-          ],
+            "employeeExperienceUser",
+            "engagementAsyncOperation",
+            "engagementRole",
+            "engagementRoleMember"
+          ]
           "complexTypes": [
             "engagementIdentitySet"
           ]
