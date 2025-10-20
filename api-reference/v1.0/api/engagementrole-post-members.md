@@ -64,7 +64,7 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/v1.0/employeeExperience/roles/{engagementRoleId}/members
+POST https://graph.microsoft.com/v1.0/employeeExperience/roles/a40473a5-0fb4-a250-e029-f6fe33d07733/members
 Content-Type: application/json
 
 {
@@ -89,7 +89,7 @@ Content-Type: application/json
 {
   "@odata.type": "#microsoft.graph.engagementRoleMember",
   "id": "a40473a5-0fb4-a250-e029-f6fe33d07733",
-  "userId": "String",
-  "createdDateTime": "String (timestamp)"
+  "userId": "e8d9f6a2-1c34-4b7a-9f11-2a4d8b7c9e01",
+  "createdDateTime": "2025-09-22T14:03:00Z"
 }
 ```
