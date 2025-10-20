@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of all the roles assigned to a user in Viva Engage.
+Get a list of all the [roles](../resources/engagementrole.md) assigned to a user in Viva Engage.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -38,25 +38,21 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 ``` http
 GET /users/{userId}/employeeExperience/assignedRoles
-
 GET /me/employeeExperience/assignedRoles
 ```
->**Note:** The `userId` represents the office user ID.
+>**Note:** The `{userId}` represents the office user ID.
 
 ## Optional query parameters
 
-This method supports the following OData query parameters: `$filter` (`eq`), `$select`, and `$count`. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$filter` (`eq`), `$select`, and `$count` OData query parameters. For general information, see [OData query parameters](/graph/query-parameters). Only the **displayName** and **id** properties support the `$filter` parameter.
 
-Supported `$filter` (`eq`) properties:
+The folowing table shows how you can use OData query parameters with this API. 
 
-- `displayName`
-- `id`
-
-Examples:
-
-- Filter by display name: `GET /me/employeeExperience/assignedRoles?$filter=displayName eq 'Corporate Communicator'`
-- Select only id and displayName: `GET /users/{userId}/employeeExperience/assignedRoles?$select=id,displayName`
-- Include total count: `GET /users/{userId}/employeeExperience/assignedRoles?$count=true`
+| Description | HTTP request |
+|:---|:---|
+| Filter by display name | `GET /me/employeeExperience/assignedRoles?$filter=displayName eq 'Corporate Communicator'` |
+| Include total count       | `GET /users/{userId}/employeeExperience/assignedRoles?$count=true` |
+| Select only the **id** and **displayName** properties | `GET /users/{userId}/employeeExperience/assignedRoles?$select=id,displayName` |
 
 ## Request headers
 
