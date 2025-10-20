@@ -40,18 +40,15 @@ GET /me/employeeExperience/assignedRoles
 
 ## Optional query parameters
 
-This method supports the following OData query parameters: `$filter` (`eq`), `$select`, and `$count`. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$filter` (`eq`), `$select`, and `$count` OData query parameters. For general information, see [OData query parameters](/graph/query-parameters). Only the **displayName** and **id** properties support the `$filter` parameter.
 
-Supported `$filter` (`eq`) properties for an assigned role:
+The folowing table shows how you can use OData query parameters with this API. 
 
-- `displayName`
-- `id`
-
-Examples:
-
-- Filter assigned roles by display name: `GET /users/{userId}/employeeExperience/assignedRoles?$filter=displayName eq 'Corporate Communicator'`
-- Select only identifiers: `GET /me/employeeExperience/assignedRoles?$select=id`
-- Include a total count: `GET /me/employeeExperience/assignedRoles?$count=true`
+| Description | HTTP request |
+|:---|:---|
+| Filter assigned roles by display name | `GET /users/{userId}/employeeExperience/assignedRoles?$filter=displayName eq 'Corporate Communicator'` |
+| Include a total count       | `GET /users/{userId}/employeeExperience/assignedRoles?$count=true` |
+| Get only the **id** property for a list of assigned roles | `GET /users/{userId}/employeeExperience/assignedRoles?$select=id` |
 
 ## Request headers
 
