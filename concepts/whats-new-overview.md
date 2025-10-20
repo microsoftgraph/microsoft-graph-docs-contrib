@@ -30,6 +30,14 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 - [Update](/graph/api/protectionrulebase-update) a [driveProtectionRule](/graph/api/resources/driveprotectionrule) or a [mailboxProtectionRule](/graph/api/resources/mailboxprotectionrule).
 - [Delete and unprotect](/graph/api/protectionrulebase-deleteandunprotect) all the artifacts protected by a dynamic rule in a [driveProtectionRule](/graph/api/resources/driveprotectionrule) or a [mailboxProtectionRule](/graph/api/resources/mailboxprotectionrule).
 
+### Files
+
+Added the following new endpoints as supported request URLs for the [driveItem: createUploadSession](/graph/api/driveitem-createuploadsession) API:
+- `POST /drives/{driveId}/items/{parentItemId}:/{fileName}:/createUploadSession`
+- `POST /groups/{groupId}/drive/items/{parentItemId}:/{fileName}:/createUploadSession` 
+- `POST /sites/{siteId}/drive/items/{parentItemId}:/{fileName}:/createUploadSession`
+- `POST /users/{userId}/drive/items/{parentItemId}:/{fileName}:/createUploadSession`
+
 ### Device and app management | Cloud PC
 
 [List](/graph/api/user-list-cloudpcs) the Cloud PC devices that are attributed to the signed-in user.
@@ -56,14 +64,24 @@ Apply the following [prerequisites for the Places list and descendant APIs](/gra
 
 ### Device and app management | Cloud PC
 
+- Use the **sessionStartDateTime** property on [cloudPcFrontlineSharedDeviceDetail](/graph/api/resources/cloudpcfrontlineshareddevicedetail?view=graph-rest-beta&preserve-view=true) to get the date and time when the current user session starts, or `null` if no current user session exists.
 - Deprecated the [getCloudPcLaunchInfo](/graph/api/cloudpc-getcloudpclaunchinfo?view=graph-rest-beta&preserve-view=true) method in favor of the [retrieveCloudPcLaunchDetail](/graph/api/cloudpc-retrievecloudpclaunchdetail?view=graph-rest-beta&preserve-view=true) API.
 - Deprecated the [cloudPcExternalPartnerSetting](/graph/api/resources/cloudpcexternalpartnersetting) resource and replaced with the [cloudPcExternalPartner](/graph/api/resources/cloudpcexternalpartner) resource.
 - [Create](/graph/api/virtualendpoint-post-externalpartners?view=graph-rest-beta&preserve-view=true), [get](/graph/api/cloudpcexternalpartner-get?view=graph-rest-beta&preserve-view=true), or [update](/graph/api/cloudpcexternalpartner-update?view=graph-rest-beta&preserve-view=true) [an external partner](/graph/api/resources/cloudpcexternalpartner?view=graph-rest-beta&preserve-view=true) of Cloud PC, such as the partner status, and enable or disable the connection.
+- Get information about licenses that the Cloud PC service directly manages using the [cloudPcManagedLicense](/graph/api/resources/cloudpcmanagedlicense?view=graph-rest-beta&preserve-view=true) resource and the [list managedLicenses](/graph/api/virtualendpoint-list-managedlicenses?view=graph-rest-beta&preserve-view=true) operation. These cloudpc-managed licenses help administrators track license allocation, status, and usage across their Cloud PC deployments.
 
 ### Education
 
 - [List the dependent education assignment resources](/graph/api/educationassignmentresource-list-dependentresources?view=graph-rest-beta&preserve-view=true) for a given education assignment resource.
 - [List the dependent education submission resources](/graph/api/educationsubmissionresource-list-dependentresources?view=graph-rest-beta&preserve-view=true) for a given education submission resource.
+
+### Files
+
+Added the following new endpoints as supported request URLs for the [driveItem: createUploadSession](/graph/api/driveitem-createuploadsession?view=graph-rest-beta&preserve-view=true) API:
+- `POST /drives/{driveId}/items/{parentItemId}:/{fileName}:/createUploadSession`
+- `POST /groups/{groupId}/drive/items/{parentItemId}:/{fileName}:/createUploadSession` 
+- `POST /sites/{siteId}/drive/items/{parentItemId}:/{fileName}:/createUploadSession`
+- `POST /users/{userId}/drive/items/{parentItemId}:/{fileName}:/createUploadSession`
 
 ## September 2025: New and generally available
 
