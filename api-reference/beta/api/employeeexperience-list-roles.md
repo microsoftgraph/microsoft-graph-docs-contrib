@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of all the roles that can be assigned in Viva Engage.
+Get a list of all the [roles](../resources/engagementrole.md) that can be assigned in Viva Engage.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -37,18 +37,15 @@ GET /employeeExperience/roles
 
 ## Optional query parameters
 
-This method supports the following OData query parameters: `$filter` (`eq`), `$select`, and `$count`. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$filter` (`eq`), `$select`, and `$count` OData query parameters. For general information, see [OData query parameters](/graph/query-parameters). Only the following properties support the `$filter` parameter: **userId** and **id**.
 
-Supported `$filter` (`eq`) properties:
+The folowing table shows how you can use OData query parameters with this API. 
 
-- `userId`
-- `id`
-
-Examples:
-
-- Filter members by user ID: `GET /employeeExperience/roles/{engagementRoleId}/members?$filter=userId eq '{user-id}'`
-- Select only id and userId: `GET /employeeExperience/roles/{engagementRoleId}/members?$select=id,userId`
-- Include total count: `GET /employeeExperience/roles/{engagementRoleId}/members?$count=true`
+| Description | HTTP request |
+|:---|:---|
+| Filter members by user ID | `GET /employeeExperience/roles/{engagementRoleId}/members?$filter=userId eq '{user-id}'` |
+| Include total count       | `GET /employeeExperience/roles/{engagementRoleId}/members?$count=true` |
+| Select only the **id** and **userId** properties | `GET /employeeExperience/roles/{engagementRoleId}/members?$select=id,userId` |
 
 ## Request headers
 
