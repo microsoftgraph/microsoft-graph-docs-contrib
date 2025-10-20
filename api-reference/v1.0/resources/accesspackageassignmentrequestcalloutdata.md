@@ -1,6 +1,6 @@
 ---
 title: "accessPackageAssignmentRequestCalloutData resource type"
-description: "**TODO: Add Description**"
+description: "The data sent to an Azure Lopic App connected to a custom extension within a catalog and used via an access package assignment"
 author: "vikama-microsoft"
 ms.date: 10/18/2025
 ms.localizationpriority: medium
