@@ -43,9 +43,9 @@ The folowing table shows how you can use OData query parameters with this API.
 
 | Description | HTTP request |
 |:---|:---|
-| Filter members by user ID | `GET /employeeExperience/roles/{engagementRoleId}/members?$filter=userId eq '{user-id}'` |
-| Include total count       | `GET /employeeExperience/roles/{engagementRoleId}/members?$count=true` |
-| Select only the **id** and **userId** properties | `GET /employeeExperience/roles/{engagementRoleId}/members?$select=id,userId` |
+| Filter members by user ID | `GET /employeeExperience/roles?$filter=userId eq '{user-id}'` |
+| Include total count       | `GET /employeeExperience/roles?$count=true` |
+| Select only the **id** and **userId** properties | `GET /employeeExperience/roles?$select=id,userId` |
 
 ## Request headers
 
