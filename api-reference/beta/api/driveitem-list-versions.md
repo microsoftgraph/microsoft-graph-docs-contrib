@@ -1,6 +1,6 @@
 ---
 title: "List versions of a driveItem"
-description: "OneDrive and SharePoint can be configured to retain the history for files."
+description: "Retrieve the versions of a file."
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: apiPageType
@@ -14,8 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-OneDrive and SharePoint can be configured to retain the history for files.
-Depending on the service and configuration, a new version can be created for each edit, each time the file is saved, manually, or never.
+Retrieve the [versions](../resources/driveitemversion.md) of a [file](../resources/driveitem.md). 
+
+OneDrive and SharePoint can be configured to retain the history for files. Depending on the service and configuration, a new version can be created for each edit, each time the file is saved, manually, or never.
 
 Previous versions of a document may be retained for a finite period of time depending on admin settings that may be unique per user or location.
 
