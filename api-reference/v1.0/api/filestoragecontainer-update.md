@@ -133,7 +133,7 @@ Content-type: application/json
     "isItemVersioningEnabled": true
   },
   "informationBarrier": {
-    "mode": "Explicit",
+    "mode": "explicit",
     "segmentIds": [
       "7c94cec9-4ef6-48e4-bb99-9ff01c9b3a79"      
     ]
