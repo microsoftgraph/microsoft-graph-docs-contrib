@@ -69,7 +69,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/v1.0/employeeExperience/roles/{engagementRoleId}/members
+GET https://graph.microsoft.com/v1.0/employeeExperience/roles/a40473a5-0fb4-a250-e029-f6fe33d07733/members
 ```
 
 ### Response
