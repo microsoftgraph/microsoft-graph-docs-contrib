@@ -32,6 +32,11 @@ Inherits from [entity](../resources/entity.md).
 |id|String|The unique identifier of the **engagementRoleMember** object. Read-only. Inherited from [entity](../resources/entity.md). |
 |userId|String|The Microsoft Entra ID of the user who has the role assigned.|
 
+## Relationships
+|Relationship|Type|Description|
+|:---|:---|:---|
+|user|[user](../resources/user.md)|The user who has this role assigned.|
+
 ## JSON representation
 The following JSON representation shows the resource type.
 <!-- {
