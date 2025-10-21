@@ -62,14 +62,13 @@ The following example shows a request.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/admin/windows/updates/policies/{policyId}/rings/{ringId}
+DELETE https://graph.microsoft.com/beta/admin/windows/updates/policies//rings/86364b9d-d04a-46f3-b2ee-7ef4157ab6fc
 ```
 
 
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true

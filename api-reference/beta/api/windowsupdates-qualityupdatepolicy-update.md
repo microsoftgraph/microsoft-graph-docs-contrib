@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-PATCH ** Entity URI for microsoft.graph.windowsUpdates.qualityUpdatePolicy not found
+PATCH /admin/windows/updates/policies/f316bfd9-c84e-a334-cebe-071d3c64b2c1
 ```
 
 ## Request headers
@@ -73,7 +73,7 @@ The following example shows a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/admin/windows/updates/policies/{policyId}
+PATCH https://graph.microsoft.com/beta/admin/windows/updates/policies/f316bfd9-c84e-a334-cebe-071d3c64b2c1
 Content-Type: application/json
 
 {
@@ -105,17 +105,16 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.windowsUpdates.qualityUpdatePolicy",
-  "displayName": "String",
-  "description": "String",
+  "displayName": "Patch Tuesday Test",
+  "description": "Quality update policy to test upcoming Patch Tuesday updates",
   "approvalRules": [
     {
       "@odata.type": "microsoft.graph.windowsUpdates.contentApprovalRule"
     }
   ],
-  "isAutoEnrollDevices": "Boolean",
   "id": "f316bfd9-c84e-a334-cebe-071d3c64b2c1",
-  "createdDateTime": "String (timestamp)",
-  "lastModifiedDateTime": "String (timestamp)"
+  "createdDateTime": "2020-06-09T10:00:00Z",
+  "lastModifiedDateTime": "2020-06-09T10:00:00Z"
 }
 ```
 

@@ -2,7 +2,7 @@
 title: "Update ring"
 description: "Update the properties of a ring object."
 author: "andredm7"
-ms.date: 10/08/2025
+ms.date: 10/22/2025
 ms.localizationpriority: medium
 ms.subservice: "windows-autopatch"
 doc_type: apiPageType
@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/admin/windows/updates/policies/{policyId}/rings/{ringId}
+PATCH /admin/windows/updates/policies/{policyId}/rings/{ringId}
 ```
 
 ## Request headers
@@ -47,8 +47,6 @@ PATCH https://graph.microsoft.com/beta/admin/windows/updates/policies/{policyId}
 ## Request body
 
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
-
-## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -110,19 +108,19 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.windowsUpdates.ring",
-  "displayName": "String",
-  "description": "String",
+  "displayName": "Patch Tuesday Test",
+  "description": "Quality update policy to test upcoming Patch Tuesday updates",
   "includedGroupAssignment": {
     "@odata.type": "microsoft.graph.windowsUpdates.includedGroupAssignment"
   },
   "excludedGroupAssignment": {
     "@odata.type": "microsoft.graph.windowsUpdates.excludedGroupAssignment"
   },
-  "deferralInDays": "Integer",
-  "isPaused": "Boolean",
+  "deferralInDays": "5",
+  "isPaused": "false",
   "id": "03f72335-b88c-519e-16e7-039fdab8670f",
-  "createdDateTime": "String (timestamp)",
-  "lastModifiedDateTime": "String (timestamp)"
+  "createdDateTime": "2020-06-09T10:00:00Z",
+  "lastModifiedDateTime": "2020-06-09T10:00:00Z"
 }
 ```
 

@@ -2,7 +2,7 @@
 title: "Get policy"
 description: "Read the properties and relationships of microsoft.graph.windowsUpdates.policy object."
 author: "andredm7"
-ms.date: 10/08/2025
+ms.date: 10/22/2025
 ms.localizationpriority: medium
 ms.subservice: "windows-autopatch"
 doc_type: apiPageType
@@ -39,7 +39,7 @@ GET /admin/windows/updates/policies/{policyId}
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select`, `$filter`, `$count`, and `$top` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -66,7 +66,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/admin/windows/updates/policies/{policyId}
+GET https://graph.microsoft.com/beta/admin/windows/updates/policies/45a01ef3-fb4b-8c1d-2428-1f060464033c
 ```
 
 
@@ -87,17 +87,16 @@ Content-Type: application/json
 {
   "value": {
     "@odata.type": "#microsoft.graph.windowsUpdates.policy",
-    "displayName": "String",
-    "description": "String",
+    "displayName": "Patch Tuesday Test",
+    "description": "Quality update policy to test upcoming Patch Tuesday updates",
     "approvalRules": [
       {
         "@odata.type": "microsoft.graph.windowsUpdates.qualityUpdateApprovalRule"
       }
     ],
-    "isAutoEnrollDevices": "Boolean",
     "id": "45a01ef3-fb4b-8c1d-2428-1f060464033c",
-    "createdDateTime": "String (timestamp)",
-    "lastModifiedDateTime": "String (timestamp)"
+    "createdDateTime": "2020-06-09T10:00:00Z",
+    "lastModifiedDateTime": "2020-06-09T10:00:00Z"
   }
 }
 ```

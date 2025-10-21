@@ -2,7 +2,7 @@
 title: "Update qualityUpdateRing"
 description: "Update the properties of a qualityUpdateRing object."
 author: "andredm7"
-ms.date: 10/08/2025
+ms.date: 10/22/2025
 ms.localizationpriority: medium
 ms.subservice: "windows-autopatch"
 doc_type: apiPageType
@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/admin/windows/updates/policies/{policyId}/rings/{ringId}
+PATCH /admin/windows/updates/policies/{policyId}/rings/{ringId}
 ```
 ## Request headers
 
@@ -76,7 +76,7 @@ The following example shows a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/admin/windows/updates/policies/{policyId}/rings/{ringId}
+PATCH https://graph.microsoft.com/beta/admin/windows/updates/policies/{policyId}/rings/a2c7637a-cda5-e59e-2385-972c4ee528d2
 Content-Type: application/json
 
 {
@@ -112,20 +112,20 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.windowsUpdates.qualityUpdateRing",
-  "displayName": "String",
-  "description": "String",
+  "displayName": "Ring0 - IT devices",
+  "description": "First deployment ring to test updates before going to prod.",
   "includedGroupAssignment": {
     "@odata.type": "microsoft.graph.windowsUpdates.includedGroupAssignment"
   },
   "excludedGroupAssignment": {
     "@odata.type": "microsoft.graph.windowsUpdates.excludedGroupAssignment"
   },
-  "deferralInDays": "Integer",
-  "isPaused": "Boolean",
+  "deferralInDays": "5",
+  "isPaused": "false",
   "id": "a2c7637a-cda5-e59e-2385-972c4ee528d2",
-  "createdDateTime": "String (timestamp)",
-  "lastModifiedDateTime": "String (timestamp)",
-  "isHotpatchEnabled": "Boolean"
+  "createdDateTime": "2020-06-09T10:00:00Z",
+  "lastModifiedDateTime": "2020-06-09T10:00:00Z",
+  "isHotpatchEnabled": "true"
 }
 ```
 

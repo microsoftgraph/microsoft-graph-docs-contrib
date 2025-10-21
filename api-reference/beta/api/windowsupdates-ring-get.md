@@ -2,7 +2,7 @@
 title: "Get ring"
 description: "Read the properties and relationships of microsoft.graph.windowsUpdates.ring object."
 author: "andredm7"
-ms.date: 10/08/2025
+ms.date: 10/22/2025
 ms.localizationpriority: medium
 ms.subservice: "windows-autopatch"
 doc_type: apiPageType
@@ -39,7 +39,7 @@ GET /admin/windows/updates/policies/{policyId}/rings/{ringId}
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select`, `$filter`, `$count`, and `$top` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -66,7 +66,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/admin/windows/updates/policies/{policyId}/rings/{ringId}
+GET https://graph.microsoft.com/beta/admin/windows/updates/policies/{policyId}/rings/03f72335-b88c-519e-16e7-039fdab8670f
 ```
 
 
@@ -87,19 +87,19 @@ Content-Type: application/json
 {
   "value": {
     "@odata.type": "#microsoft.graph.windowsUpdates.ring",
-    "displayName": "String",
-    "description": "String",
+    "displayName": "Ring0 - IT devices",
+    "description": "First deployment ring to test updates before going to prod.",
     "includedGroupAssignment": {
       "@odata.type": "microsoft.graph.windowsUpdates.includedGroupAssignment"
     },
     "excludedGroupAssignment": {
       "@odata.type": "microsoft.graph.windowsUpdates.excludedGroupAssignment"
     },
-    "deferralInDays": "Integer",
-    "isPaused": "Boolean",
+    "deferralInDays": "4",
+    "isPaused": "false",
     "id": "03f72335-b88c-519e-16e7-039fdab8670f",
-    "createdDateTime": "String (timestamp)",
-    "lastModifiedDateTime": "String (timestamp)"
+    "createdDateTime": "2020-06-09T10:00:00Z",
+    "lastModifiedDateTime": "2020-06-09T10:00:00Z"
   }
 }
 ```

@@ -2,7 +2,7 @@
 title: "List applicableContent"
 description: "List applicable update content for offering to the related Microsoft Entra and/or Windows Autopatch Groups."
 author: "andredm7"
-ms.date: 10/08/2025
+ms.date: 10/22/2025
 ms.localizationpriority: medium
 ms.subservice: "windows-autopatch"
 doc_type: apiPageType
@@ -39,7 +39,7 @@ GET /admin/windows/updates/policies/{policyId}/applicableContent
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select`, `$filter`, `$count`, and `$top` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 

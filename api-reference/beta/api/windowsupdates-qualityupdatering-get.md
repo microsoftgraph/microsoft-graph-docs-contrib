@@ -2,7 +2,7 @@
 title: "Get qualityUpdateRing"
 description: "Read the properties and relationships of microsoft.graph.windowsUpdates.qualityUpdateRing object."
 author: "andredm7"
-ms.date: 10/08/2025
+ms.date: 10/22/2025
 ms.localizationpriority: medium
 ms.subservice: "windows-autopatch"
 doc_type: apiPageType
@@ -34,12 +34,12 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/admin/windows/updates/policies/{policyId}/rings/{ringId}
+GET /admin/windows/updates/policies/{policyId}/rings/{ringId}
 ```
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select`, `$filter`, `$count`, and `$top` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -66,7 +66,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/admin/windows/updates/policies/{policyId}/rings/{ringId}
+GET https://graph.microsoft.com/beta/admin/windows/updates/policies/a7aa99c1-34a2-850c-5223-7816fde70713/rings/a2c7637a-cda5-e59e-2385-972c4ee528d2
 ```
 
 ### Response
@@ -86,20 +86,20 @@ Content-Type: application/json
 {
   "value": {
     "@odata.type": "#microsoft.graph.windowsUpdates.qualityUpdateRing",
-    "displayName": "String",
-    "description": "String",
+    "displayName": "IT Test - Ring0",
+    "description": "First deployment ring to test updates with IT devices",
     "includedGroupAssignment": {
       "@odata.type": "microsoft.graph.windowsUpdates.includedGroupAssignment"
     },
     "excludedGroupAssignment": {
       "@odata.type": "microsoft.graph.windowsUpdates.excludedGroupAssignment"
     },
-    "deferralInDays": "Integer",
-    "isPaused": "Boolean",
+    "deferralInDays": "3",
+    "isPaused": "false",
     "id": "a2c7637a-cda5-e59e-2385-972c4ee528d2",
-    "createdDateTime": "String (timestamp)",
-    "lastModifiedDateTime": "String (timestamp)",
-    "isHotpatchEnabled": "Boolean"
+    "createdDateTime": "2020-06-09T10:00:00Z",
+    "lastModifiedDateTime": "2020-06-09T10:00:00Z",
+    "isHotpatchEnabled": "true"
   }
 }
 ```

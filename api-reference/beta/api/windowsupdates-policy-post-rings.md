@@ -2,7 +2,7 @@
 title: "Create update ring"
 description: "Create a new update ring object."
 author: "andredm7"
-ms.date: 10/08/2025
+ms.date: 10/22/2025
 ms.localizationpriority: medium
 ms.subservice: "windows-autopatch"
 doc_type: apiPageType
@@ -77,7 +77,7 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/admin/windows/updates/policies/{policyId}/rings
+POST https://graph.microsoft.com/beta/admin/windows/updates/policies/86364b9d-d04a-46f3-b2ee-7ef4157ab6fc/rings
 Content-Type: application/json
 
 {
@@ -112,19 +112,19 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.windowsUpdates.ring",
-  "displayName": "String",
-  "description": "String",
+  "displayName": "Ring0 - IT devices",
+  "description": "First deployment ring to test updates before going to prod.",
   "includedGroupAssignment": {
     "@odata.type": "microsoft.graph.windowsUpdates.includedGroupAssignment"
   },
   "excludedGroupAssignment": {
     "@odata.type": "microsoft.graph.windowsUpdates.excludedGroupAssignment"
   },
-  "deferralInDays": "Integer",
-  "isPaused": "Boolean",
+  "deferralInDays": "5",
+  "isPaused": "false",
   "id": "03f72335-b88c-519e-16e7-039fdab8670f",
-  "createdDateTime": "String (timestamp)",
-  "lastModifiedDateTime": "String (timestamp)"
+  "createdDateTime": "2020-06-09T10:00:00Z",
+  "lastModifiedDateTime": "2020-06-09T10:00:00Z"
 }
 ```
 

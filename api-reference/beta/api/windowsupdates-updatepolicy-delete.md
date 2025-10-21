@@ -1,11 +1,11 @@
 ---
 title: "Delete updatePolicy"
 description: "Delete an updatePolicy object."
-author: "ryan-k-williams"
+author: "andredm7"
 ms.localizationpriority: medium
 ms.subservice: windows-autopatch
 doc_type: apiPageType
-ms.date: 08/31/2024
+ms.date: 10/22/2025
 ---
 
 # Delete updatePolicy

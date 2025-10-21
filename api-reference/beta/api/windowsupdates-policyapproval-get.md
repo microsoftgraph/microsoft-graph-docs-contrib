@@ -2,7 +2,7 @@
 title: "Get policyApproval"
 description: "Read the properties and relationships of microsoft.graph.windowsUpdates.policyApproval object."
 author: "andredm7"
-ms.date: 09/30/2025
+ms.date: 10/22/2025
 ms.localizationpriority: medium
 ms.subservice: "windows-autopatch"
 doc_type: apiPageType
@@ -39,7 +39,7 @@ GET /admin/windows/updates/policies/{policyId}/approvals/{policyApprovalId}
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select`, `$filter`, `$count`, and `$top` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -66,7 +66,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/admin/windows/updates/policies/{policyId}/approvals/{policyApprovalId}
+GET https://graph.microsoft.com/beta/admin/windows/updates/policies/2d8864c1-531f-4d5b-8225-8653ef4316d4/approvals/ab3a53f0-f7aa-10b1-04d4-8680584cbbb6
 ```
 
 
@@ -87,11 +87,11 @@ Content-Type: application/json
 {
   "value": {
     "@odata.type": "#microsoft.graph.windowsUpdates.policyApproval",
-    "catalogEntryId": "String",
-    "status": "String",
+    "catalogEntryId": "1d8864c1-531f-4d5b-8225-8653ef4316d8",
+    "status": "suspended",
     "id": "ab3a53f0-f7aa-10b1-04d4-8680584cbbb6",
-    "createdDateTime": "String (timestamp)",
-    "lastModifiedDateTime": "String (timestamp)"
+    "createdDateTime": "2020-06-09T10:00:00Z",
+    "lastModifiedDateTime": "2020-06-09T10:00:00Z"
   }
 }
 ```

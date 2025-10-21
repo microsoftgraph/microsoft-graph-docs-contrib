@@ -1,11 +1,11 @@
 ---
 title: "Update updatePolicy"
 description: "Update the properties of an updatePolicy object."
-author: "ryan-k-williams"
+author: "andredm7"
 ms.localizationpriority: medium
 ms.subservice: windows-autopatch
 doc_type: apiPageType
-ms.date: 09/16/2024
+ms.date: 10/22/2025
 ---
 
 # Update updatePolicy

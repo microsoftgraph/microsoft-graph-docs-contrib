@@ -2,7 +2,7 @@
 title: "Delete update policy approval"
 description: "Delete update policy approval object."
 author: "andredm7"
-ms.date: 10/08/2025
+ms.date: 10/22/2025
 ms.localizationpriority: medium
 ms.subservice: "windows-autopatch"
 doc_type: apiPageType
@@ -71,13 +71,13 @@ The following example shows a request.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/admin/windows/updates/policies/{policyId}/approvals/{policyApprovalId}
+DELETE https://graph.microsoft.com/beta/admin/windows/updates/policies/{policyId}/approvals/30d62e80-4028-4b1c-a458-da06c33173b0
 Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.windowsUpdates.policyApproval",
-  "catalogEntryId": "String",
-  "status": "String"
+  "catalogEntryId": "1d8864c1-531f-4d5b-8225-8653ef4316d8",
+  "status": "suspended"
 }
 ```
 
@@ -85,7 +85,6 @@ Content-Type: application/json
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true

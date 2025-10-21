@@ -34,12 +34,12 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/admin/windows/updates/policies?$filter=isof('microsoft.graph.windowsUpdates.qualityUpdatePolicy')
+GET /admin/windows/updates/policies?$filter=isof('microsoft.graph.windowsUpdates.qualityUpdatePolicy')
 ```
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select`, `$filter`, `$count`, and `$top` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -88,17 +88,17 @@ Content-Type: application/json
   "value": [
     {
       "@odata.type": "#microsoft.graph.windowsUpdates.qualityUpdatePolicy",
-      "displayName": "String",
-      "description": "String",
+      "displayName": "Patch Tuesday Test",
+      "description": "Quality update policy to test upcoming Patch Tuesday updates",
       "approvalRules": [
         {
           "@odata.type": "microsoft.graph.windowsUpdates.qualityUpdateApprovalRule"
         }
       ],
-      "isAutoEnrollDevices": "Boolean",
+      "isAutoEnrollDevices": "false",
       "id": "f316bfd9-c84e-a334-cebe-071d3c64b2c1",
-      "createdDateTime": "String (timestamp)",
-      "lastModifiedDateTime": "String (timestamp)"
+      "createdDateTime": "2020-06-09T10:00:00Z",
+      "lastModifiedDateTime": "2020-06-09T10:00:00Z"
     }
   ]
 }

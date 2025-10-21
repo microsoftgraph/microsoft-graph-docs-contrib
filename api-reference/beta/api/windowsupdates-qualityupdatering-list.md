@@ -2,7 +2,7 @@
 title: "List qualityUpdateRing objects"
 description: "Get a list of the qualityUpdateRing objects and their properties."
 author: "andredm7"
-ms.date: 10/08/2025
+ms.date: 10/22/2025
 ms.localizationpriority: medium
 ms.subservice: "windows-autopatch"
 doc_type: apiPageType
@@ -34,12 +34,12 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/admin/windows/updates/policies/{policyId}/rings?$filter=isof('microsoft.graph.windowsUpdates.qualityUpdateRing')
+GET admin/windows/updates/policies/{policyId}/rings?$filter=isof('microsoft.graph.windowsUpdates.qualityUpdateRing')
 ```
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select`, `$filter`, `$count`, and `$top` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -86,20 +86,20 @@ Content-Type: application/json
   "value": [
     {
       "@odata.type": "#microsoft.graph.windowsUpdates.qualityUpdateRing",
-      "displayName": "String",
-      "description": "String",
+      "displayName": "Patch Tuesday Test",
+      "description": "Quality update policy to test upcoming Patch Tuesday updates",
       "includedGroupAssignment": {
         "@odata.type": "microsoft.graph.windowsUpdates.includedGroupAssignment"
       },
       "excludedGroupAssignment": {
         "@odata.type": "microsoft.graph.windowsUpdates.excludedGroupAssignment"
       },
-      "deferralInDays": "Integer",
-      "isPaused": "Boolean",
+      "deferralInDays": "5",
+      "isPaused": "false",
       "id": "a2c7637a-cda5-e59e-2385-972c4ee528d2",
-      "createdDateTime": "String (timestamp)",
-      "lastModifiedDateTime": "String (timestamp)",
-      "isHotpatchEnabled": "Boolean"
+      "createdDateTime": "2020-06-09T10:00:00Z",
+      "lastModifiedDateTime": "2020-06-09T10:00:00Z",
+      "isHotpatchEnabled": "true"
     }
   ]
 }

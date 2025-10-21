@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-DELETE ** Entity URI for microsoft.graph.windowsUpdates.qualityUpdatePolicy not found
+DELETE /admin/windows/updates/policies/7650b117-e3fc-424a-ae94-988104652bdd
 ```
 
 ## Request headers
@@ -62,13 +62,12 @@ The following example shows a request.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta** Entity URI for microsoft.graph.windowsUpdates.qualityUpdatePolicy not found
+DELETE https://graph.microsoft.com/beta/admin/windows/updates/policies/7650b117-e3fc-424a-ae94-988104652bdd
 ```
 
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true
