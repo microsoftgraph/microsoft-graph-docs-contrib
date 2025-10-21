@@ -30,9 +30,6 @@ Inherits from [workflowBase](../resources/identitygovernance-workflowbase.md).
 |[Update](../api/identitygovernance-workflow-update.md)|[microsoft.graph.identityGovernance.workflow](../resources/identitygovernance-workflow.md)|Update the properties of a [workflow](../resources/identitygovernance-workflow.md) object.|
 |[Delete](../api/identitygovernance-workflow-delete.md)|None|Deletes a [workflow](../resources/identitygovernance-workflow.md) object.|
 |[Activate](../api/identitygovernance-workflow-activate.md)|None|Run a workflow on-demand.|
-|[List administrationScopeTargets](../api/identitygovernance-workflow-list-administrationscopetargets.md)|[microsoft.graph.directoryObject](../resources/directoryobject.md) collection|List the administration scope targets of the workflow.|
-|[Add administrationScopeTargets](../api/identitygovernance-workflow-post-administrationscopetargets.md)|[microsoft.graph.directoryObject](../resources/directoryobject.md)|Add administrationScopeTargets by posting to the administrationScopeTargets collection.|
-|[Remove administrationScopeTargets](../api/identitygovernance-workflow-delete-administrationscopetargets.md)|None|Remove a administration scope target.|
 |[Activate with scope](../api/identitygovernance-workflow-activatewithscope.md)|None|Run a workflow on-demand with a specific scope.|
 |[List users in scope](../api/workflow-list-executionscope.md)|[microsoft.graph.user](../resources/user.md) collection|Get a list of users who are in the scope of the execution conditions of a [workflow](../resources/identitygovernance-workflow.md) object.|
 |**Deleted workflows**|:---|:---|
@@ -45,6 +42,7 @@ Inherits from [workflowBase](../resources/identitygovernance-workflowbase.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
+|administrationScopeTargets|[microsoft.graph.directoryObject](../resources/directoryobject.md) collection|The administration scope of the workflow. Inherited from [microsoft.graph.identityGovernance.workflowBase](../resources/identitygovernance-workflowbase.md)|
 |category|microsoft.graph.identityGovernance.lifecycleWorkflowCategory|The category of the HR function supported by the workflows created using this template. A workflow can only belong to one category. The possible values are: `joiner`, `leaver`, `mover`,`unknownFutureValue`. Inherited from [workflowBase](../resources/identitygovernance-workflowbase.md). Required.<br><br>Supports `$filter`(`eq`,`ne`) and `$orderby`|
 |createdDateTime|DateTimeOffset|When the `workflow` was created. Inherited from [workflowBase](../resources/identitygovernance-workflowbase.md).<br><br>Supports `$filter`(`lt`, `le`, `gt`, `ge`, `eq`, `ne`) and `$orderby`.|
 |deletedDateTime|DateTimeOffset|When the workflow was deleted.<br><br>Supports `$filter`(`lt`, `le`, `gt`, `ge`, `eq`, `ne`) and `$orderby`.|
@@ -93,6 +91,12 @@ The following JSON representation shows the resource type.
   "executionConditions": {
     "@odata.type": "microsoft.graph.identityGovernance.workflowExecutionConditions"
   },
+  "administrationScopeTargets": [
+    {
+      "@odata.type": "#microsoft.graph.administrativeUnit",
+      "id": "String"
+    },
+    ],
   "lastModifiedDateTime": "String (timestamp)",
   "deletedDateTime": "String (timestamp)",
   "id": "String (identifier)",
