@@ -63,10 +63,10 @@ Describes the information protection label that details how to properly apply a 
 
 ## Sensitivity Label API Filtering Rules
 
-This section outlines the filtering rules and constraints for various Sensitivity Label APIs.
+This section outlines the filtering rules and constraints that you can apply to various Sensitivity Label API calls.
 
 ### Scenario 1: Return SensitivityLabels (1 or more) 
-The user wants to call the API and pass in one or multiple IDs to filter by.
+The user calls the API and filters by one or more label ID GUIDs.
 
 #### Example
 ``` odata
@@ -107,9 +107,9 @@ $filter=(id eq 'guid1' and ownerEmail eq 'ownerEmail1')
 
 ### Scenario 2.5: Return results for SensitivityLabels using a filter for multiple IDs and user rights
 
-The user wants to call the API and pass in multiple IDs and ownerEmail to filter by. To do this, you must combine both the label ID and ownerEmail in 1 boolean clause.  
+The user wants to call the API and filter by multiple IDs and ownerEmail. To do this, you must combine both the label ID and ownerEmail in 1 boolean clause.  
 
-For example,
+For example:
 
 ``` odata
 $filter=(
@@ -119,34 +119,40 @@ $filter=(
 )
 ```
 
-##### Note:
-This $filter pattern follows an extended OData interpretation. The API evaluates each (id, ownerEmail) pair independently and merges the resulting rights information. 
+This `$filter` pattern follows an extended OData interpretation. The API evaluates each (id, ownerEmail) pair independently and merges the resulting rights information. 
+
+We recommend using filters that use a single call with multiple IDs to retrieve rights for multiple labels because it reduces the number of API calls you need to make from your app.
+
+`ownerEmail` is optional and can be omitted to fetch label-level rights only.
+
 
 #### Rules
 
 1. **Strict OR Pattern**
 
-   - Only the tuple-based or structure as shown above is supported.
+   - Only the tuple-based structure combined by OR operations as shown above is supported.
 
-   - Any other form of or expression or mixing unrelated filters is not allowed and results in ArgumentException.
+   - Any other combination of OR operations or mixing unrelated filters are not allowed and results in an ArgumentException.
 
 2. **ownerEmail Validation**
 
-   - ownerEmail must always appear together with id.
+   - ownerEmail must always appear together with an ID. Using ownerEmail alone will result in an ArgumentException.
 
-   - Supplying ownerEmail alone will trigger ArgumentException.
 
-3. **Inner OR Exception > How to create a subclause
+3. **Inner OR Exception**
 
-    In this example:
+You can combine clauses using subclauses. In this example:
 
+
+```odata
     $filter=( (id eq 'guid1' and ownerEmail eq 'ownerEmail1') or (id eq 'guid2') or (id eq 'guid3' and ownerEmail eq 'ownerEmail2') )
+
 
     There are 3 subclauses. Here is an example of a subclause:
 
     (id eq 'guid1' and ownerEmail eq 'ownerEmail1')
 
-    Important: When combining the ID and ownerEmail, you must use AND. Do not use OR otherwise it will throw an exception
+When combining the ID and ownerEmail, use AND in the subclause. Do not use OR otherwise it will throw an exception.
 
 4. **Prefiltering Behavior**
 
@@ -158,15 +164,10 @@ This $filter pattern follows an extended OData interpretation. The API evaluates
 | --------------------- | ----------------------------------------------- | ------------------------------------------------------------------------------- |
 | Label ID only         | (id eq 'guid1')                                 | Returns static rights defined on the label.                                     |
 | Label ID + ownerEmail | (id eq 'guid1' and ownerEmail eq 'ownerEmail1') | Evaluates rights for the specified user.                                        |
-| Multiple Tuples       | Combine conditions with or                      | Returns a merged list of label–rights results for all matched labels and users. |
+| Multiple Tuples       | (id eq 'guid1' and ownerEmail eq 'ownerEmail1')
+    or (id eq 'guid2')
+    or (id eq 'guid3' and ownerEmail eq 'ownerEmail2')| Combine conditions with OR. Returns a merged list of label & rights for all matched labels and users. |
 
-#### Usage Notes
-
-   - Each (id, ownerEmail) pair is evaluated separately.
-
-   - Use this multi-ID pattern to retrieve rights for multiple labels in a single call, reducing API round trips.
-
-   - ownerEmail is optional; omit it to fetch label-level rights only.
 
 ### Scenario 3: SensitivityLabel Rights /id/rights
 
