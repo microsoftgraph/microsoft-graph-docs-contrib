@@ -464,7 +464,7 @@ Content-Type: application/json
 ```
 
 
-### Example 4: Create a mover workflow with an set target scope
+### Example 4: Create a mover workflow with a set target scope
 
 #### Request
 
