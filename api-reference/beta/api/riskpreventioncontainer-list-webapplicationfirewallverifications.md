@@ -90,7 +90,6 @@ Content-Type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/riskPrevention/webApplicationFirewallVerifications(provider())",
-    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET identity/riskPrevention/webApplicationFirewallVerifications?$select=providerType,verificationResult",
     "value": [
         {
             "id": "00000000-0000-0000-0000-000000000000",
@@ -168,7 +167,6 @@ Content-Type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/riskPrevention/webApplicationFirewallVerifications(provider())",
-    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET identity/riskPrevention/webApplicationFirewallVerifications?$select=providerType,verificationResult",
     "value": [
         {
             "id": "00000000-0000-0000-0000-000000000000",

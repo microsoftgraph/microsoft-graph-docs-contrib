@@ -54,6 +54,12 @@ PATCH /identity/riskPrevention/webApplicationFirewallProviders/{webApplicationFi
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|The friendly display name of the Web Application Firewall provider configuration.|
+|accessToken|String|Akamai API access token used to authenticate to the Akamai account. Contact your Akamai Customer Success Manager for assistance with your accessToken. Supported for Akamai only.|
+|clientSecret|String|Akamai API client secret used in conjunction with the client token and access token for authentication. Contact your Akamai Customer Success Manager for assistance with this information. Supported for Akamai only.|
+|clientToken|String|Akamai API client token used for authentication to the Akamai account. Contact your Akamai Customer Success Manager for assistance with this information. Supported for Akamai only.|
+|hostPrefix|String|Prefix used to identify the host or domain in Akamai configuration operations. This value may be required for certain API calls or configuration scenarios. Supported for Akamai only.|
+|apiToken|String|Cloudflare API token or credential used by Microsoft services to authenticate to the Cloudflare account. Contact your Cloudflare Customer Success Manager for assistance with your apitoken. Supported for Cloudflare only.|
+|zoneId|String|Default Cloudflare Zone ID associated with this provider configuration. This ID identifies the DNS zone in Cloudflare that is commonly used for verification and configuration operations for the provider. Supported for Cloudflare only.|
 
 
 

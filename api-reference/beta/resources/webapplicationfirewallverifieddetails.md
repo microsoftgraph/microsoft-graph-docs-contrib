@@ -16,7 +16,10 @@ Namespace: microsoft.graph
 
 Represents [verification](../resources/webApplicationFirewallVerificationModel.md) findings and evidence for a host or domain after a verification operation with a web application firewall (WAF) provider.
 
-This is an abstract type.
+This is an abstract type. The following types inherit from **webApplicationFirewallVerifiedDetails**:
+
+- [cloudFlareVerifiedDetailsModel](cloudflareverifieddetailsmodel.md)
+- [akamaiVerifiedDetailsModel](akamaiverifieddetailsmodel.md)
 
 
 ## Properties

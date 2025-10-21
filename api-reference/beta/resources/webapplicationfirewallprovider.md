@@ -30,6 +30,7 @@ Inherits from [entity](../resources/entity.md).
 |[Get](../api/webapplicationfirewallprovider-get.md)|[webApplicationFirewallProvider](../resources/webapplicationfirewallprovider.md)|Read the properties and relationships of [webApplicationFirewallProvider](../resources/webapplicationfirewallprovider.md) object.|
 |[Update](../api/webapplicationfirewallprovider-update.md)|[webApplicationFirewallProvider](../resources/webapplicationfirewallprovider.md)|Update the properties of a webApplicationFirewallProvider object.|
 |[Delete](../api/riskpreventioncontainer-delete-webapplicationfirewallproviders.md)|None|Delete a webApplicationFirewallProvider object.|
+|[Verify](../api/webapplicationfirewallprovider-verify.md)|[webApplicationFirewallVerificationModel](../resources/webapplicationfirewallverificationmodel.md)|Initiate a verification operation for the provider and return the verification result.|
 
 ## Properties
 |Property|Type|Description|

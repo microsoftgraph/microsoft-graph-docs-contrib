@@ -20,7 +20,7 @@ Represents the configuration for Akamai Rapid Rules in a web application firewal
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|defaultAction|String|The default action Akamai applies to traffic that matches Rapid Rules. Common values include `block`, `alert`, or provider-specific actions.|
+|defaultAction|String|The default action Akamai applies to traffic that matches Rapid Rules. Common values include `deny`, `none` or `alert`.|
 |isEnabled|Boolean|Indicates whether Akamai Rapid Rules are enabled for the WAF integration. If true, Rapid Rules are active and applied to incoming traffic.|
 
 ## Relationships

@@ -20,7 +20,7 @@ Represents an Akamai web application firewall (WAF) attack group and the action 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|action|String|The action Akamai applies to the attack group when a matching threat is detected. Common values include `block`, `alert`, `log`, or provider-specific actions.|
+|action|String|The action Akamai applies to the attack group when a matching threat is detected. Common values include `deny`, `none` or `alert`.|
 |group|String|The name or identifier of the attack group. This value categorizes the type of attack the action applies to.|
 
 ## Relationships

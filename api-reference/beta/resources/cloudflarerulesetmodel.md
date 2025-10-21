@@ -21,7 +21,7 @@ Represents a Cloudflare-managed ruleset or collection of WAF rules that can be a
 |Property|Type|Description|
 |:---|:---|:---|
 |name|String|Friendly name for the ruleset, used in UIs and logs to help administrators identify the ruleset.|
-|phaseName|String|Name of the phase during which the ruleset is evaluated (for example, `http_request`, `http_response`, or provider-specific phase names). This indicates when in the request/response lifecycle the rules apply.|
+|phaseName|String|Name of the phase during which the ruleset is evaluated (for example, `http_request_firewall_managed`, `http_request_firewall_custom`, or provider-specific phase names). This indicates when in the request/response lifecycle the rules apply.|
 |rulesetId|String|Unique identifier assigned to the ruleset by Cloudflare or the integration.|
 
 

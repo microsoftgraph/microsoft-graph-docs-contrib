@@ -79,9 +79,12 @@ POST https://graph.microsoft.com/beta/identity/riskPrevention/webApplicationFire
 Content-Type: application/json
 
 {
-  "hostName": "String"
+  "hostName": "www.contoso.com"
 }
 ```
+## Optional query parameters
+
+This method supports the `$expand` [OData query parameter](/graph/query-parameters).
 
 #### Response
 

@@ -41,7 +41,7 @@ GET /identity/riskPrevention/webApplicationFirewallProviders
 
 ## Optional query parameters
 
-This method supports the `$select` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$filter` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -88,7 +88,6 @@ Content-Type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/riskPrevention/webApplicationFirewallProviders",
-    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET identity/riskPrevention/webApplicationFirewallProviders?$select=displayName",
     "value": [
         {
             "@odata.type": "#microsoft.graph.cloudFlareWebApplicationFirewallProvider",

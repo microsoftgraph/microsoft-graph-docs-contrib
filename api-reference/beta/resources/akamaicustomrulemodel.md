@@ -20,7 +20,7 @@ Represents a custom rule defined in an Akamai web application firewall (WAF) int
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|action|String|The action Akamai applies when the rule matches traffic. Common values include `allow`, `block`, `alert`, or provider-specific actions.|
+|action|String|The action Akamai applies when the rule matches traffic. Common values include `deny`, `none` or `alert`.|
 |name|String|Friendly name for the rule, used in UIs or logs to help administrators identify the rule (for example, `"Block suspicious user agents"`).|
 |ruleId|String|Unique identifier assigned to the rule by Akamai or the integration. Use this identifier to reference, update, or remove the rule in API requests.|
 
