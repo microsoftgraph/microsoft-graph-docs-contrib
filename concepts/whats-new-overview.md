@@ -20,15 +20,20 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ## October 2025: New and generally available
 
-### Education
-
-- [List the dependent education assignment resources](/graph/api/educationassignmentresource-list-dependentresources) for a given education assignment resource.
-- [List the dependent education submission resources](/graph/api/educationsubmissionresource-list-dependentresources) for a given education submission resource.
 ### Backup storage
 
 - Use the **protectionSources** property on [driveProtectionUnit](/graph/api/resources/driveprotectionunit), [mailboxProtectionUnit](/graph/api/resources/mailboxprotectionunit), and [siteProtectionUnit](/graph/api/resources/siteprotectionunit) to get the sources by which a protection unit is currently protected.
 - [Update](/graph/api/protectionrulebase-update) a [driveProtectionRule](/graph/api/resources/driveprotectionrule) or a [mailboxProtectionRule](/graph/api/resources/mailboxprotectionrule).
 - [Delete and unprotect](/graph/api/protectionrulebase-deleteandunprotect) all the artifacts protected by a dynamic rule in a [driveProtectionRule](/graph/api/resources/driveprotectionrule) or a [mailboxProtectionRule](/graph/api/resources/mailboxprotectionrule).
+
+### Device and app management | Cloud PC
+
+[List](/graph/api/user-list-cloudpcs) the Cloud PC devices that are attributed to the signed-in user.
+
+### Education
+
+- [List the dependent education assignment resources](/graph/api/educationassignmentresource-list-dependentresources) for a given education assignment resource.
+- [List the dependent education submission resources](/graph/api/educationsubmissionresource-list-dependentresources) for a given education submission resource.
 
 ### Files
 
@@ -37,10 +42,6 @@ Added the following new endpoints as supported request URLs for the [driveItem: 
 - `POST /groups/{groupId}/drive/items/{parentItemId}:/{fileName}:/createUploadSession` 
 - `POST /sites/{siteId}/drive/items/{parentItemId}:/{fileName}:/createUploadSession`
 - `POST /users/{userId}/drive/items/{parentItemId}:/{fileName}:/createUploadSession`
-
-### Device and app management | Cloud PC
-
-[List](/graph/api/user-list-cloudpcs) the Cloud PC devices that are attributed to the signed-in user.
 
 ### Identity and access | Directory management
 
@@ -183,12 +184,7 @@ Added a note to the **artifactCount** property of the [granularMailboxRestoreArt
 - [Get the policy ID](/graph/api/teamsadministration-teamspolicyassignment-getpolicyid?view=graph-rest-beta&preserve-view=true) for a given policy name and policy type within Teams administration.
 - [Assign a Teams policy](/graph/api/teamsadministration-teamspolicyuserassignment-assign?view=graph-rest-beta&preserve-view=true) to a user using the user ID, policy type, and policy ID.
 - [Unassign a Teams policy](/graph/api/teamsadministration-teamspolicyuserassignment-unassign?view=graph-rest-beta&preserve-view=true) from a user using the user ID and policy type.
-
-
-### Teamwork and communications | Administration
-
-Added the [telephoneNumberManagementRoot](/graph/api/resources/teamsadministration-telephonenumbermanagementroot?view=graph-rest-beta&preserve-view=true) resource that represents a collection of available telephone number management operations.
-
+- Added the [telephoneNumberManagementRoot](/graph/api/resources/teamsadministration-telephonenumbermanagementroot?view=graph-rest-beta&preserve-view=true) resource that represents a collection of available telephone number management operations.
 
 ### Teamwork and communications | Calls and online meetings
 
@@ -196,7 +192,6 @@ Added the [telephoneNumberManagementRoot](/graph/api/resources/teamsadministrati
 - Removed `availableIdle` and `busyIdle` as supported values for the **availability** property of [presence](/graph/api/resources/presence?view=graph-rest-beta&preserve-view=true).
 - Added `focusing`, `inACall`, `inAMeeting`, and `presenting` as supported values to the **availability** property of [presence](/graph/api/resources/presence?view=graph-rest-beta&preserve-view=true).
 - The throttling limit for the [presence](/graph/api/resources/presence?view=graph-rest-beta&preserve-view=true) resource increased from 1,500 to 10,000 requests per 30 seconds, per application per tenant.
-
 
 ### Security | eDiscovery
 
