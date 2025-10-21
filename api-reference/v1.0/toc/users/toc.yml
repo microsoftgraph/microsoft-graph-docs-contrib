@@ -58,6 +58,10 @@ items:
       href: ../../api/user-list-calendarview.md
     - name: Reminder view
       href: ../../api/user-reminderview.md
+  - name: Cloud PC
+    items:
+    - name: List Cloud PCs
+      href: ../../api/user-list-cloudpcs.md
   - name: Data security and governance
     items:
     - name: Compute protection scopes
