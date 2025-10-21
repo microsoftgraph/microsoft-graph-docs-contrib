@@ -27,6 +27,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/verifiedidprofile-get-permissions.md)]
 
+[!INCLUDE [rbac-verifiedid](../includes/rbac-for-apis/rbac-verifiedid-write.md)]
+
 ## HTTP request
 
 <!-- {
@@ -39,7 +41,7 @@ GET /identity/verifiedId/profiles/{verifiedIdProfileId}
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+None 
 
 ## Request headers
 

@@ -8,13 +8,13 @@ ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
-# List verifiedIdProfile objects
+# List verifiedIdProfile objects    
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the verifiedIdProfile objects and their properties.
+Get a list of the [verifiedIdProfile](../resources/verifiedidprofile.md) objects and their properties.
 
 ## Permissions
 
@@ -26,6 +26,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 [!INCLUDE [permissions-table](../includes/permissions/identityverifiedidroot-list-profiles-permissions.md)]
+
+[!INCLUDE [rbac-verifiedid](../includes/rbac-for-apis/rbac-verifiedid-write.md)]
 
 ## HTTP request
 
@@ -39,7 +41,7 @@ GET /identity/verifiedId/profiles
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+None 
 
 ## Request headers
 
