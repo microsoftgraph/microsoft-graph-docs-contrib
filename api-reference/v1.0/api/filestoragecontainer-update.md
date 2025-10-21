@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-PATCH /storage/fileStorage/containers/{containerId}
+PATCH /storage/fileStorage/containers/{containerId}?$select=id,displayName,description,containerTypeId,status,createdDateTime,settings,informationBarrier
 ```
 
 ## Request headers
