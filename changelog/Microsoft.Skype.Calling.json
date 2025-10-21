@@ -1,6 +1,90 @@
 {
   "changelog": [
-      {
+        {
+      "ChangeList": [
+        {
+          "Id": "331a99c1-b8e7-404f-ad0f-5f257bfae301",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "workLocationSource",
+          "ChangeType": "Addition",
+          "Description": "Added the **workLocationSource** enumeration type.",
+          "Target": "workLocationSource"
+        },
+        {
+          "Id": "331a99c1-b8e7-404f-ad0f-5f257bfae301",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "workLocationType",
+          "ChangeType": "Addition",
+          "Description": "Added the **workLocationType** enumeration type.",
+          "Target": "workLocationType"
+        },
+        {
+          "Id": "331a99c1-b8e7-404f-ad0f-5f257bfae301",
+          "ApiChange": "Resource",
+          "ChangedApiName": "userWorkLocation",
+          "ChangeType": "Addition",
+          "Description": "Added the [userWorkLocation](https://learn.microsoft.com/en-us/graph/api/resources/userWorkLocation?view=graph-rest-beta) resource.",
+          "Target": "userWorkLocation"
+        }
+      ],
+      "Id": "331a99c1-b8e7-404f-ad0f-5f257bfae301",
+      "Cloud": "Review",
+      "Version": "beta",
+      "CreatedDateTime": "2025-10-21T16:02:03.2817777Z",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": "Call"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "3cdabea4-6923-4c02-b014-2c4cdd22dfd4",
+          "ApiChange": "Property",
+          "ChangedApiName": "workLocation",
+          "ChangeType": "Addition",
+          "Description": "Added the **workLocation** property to the [presence](https://learn.microsoft.com/en-us/graph/api/resources/presence?view=graph-rest-beta) resource.",
+          "Target": "presence"
+        },
+        {
+          "Id": "3cdabea4-6923-4c02-b014-2c4cdd22dfd4",
+          "ApiChange": "Method",
+          "ChangedApiName": "clearAutomaticLocation",
+          "ChangeType": "Addition",
+          "Description": "Added the [clearAutomaticLocation](https://learn.microsoft.com/en-us/graph/api/presence-clearAutomaticLocation?view=graph-rest-beta) method to the [presence](https://learn.microsoft.com/en-us/graph/api/resources/presence?view=graph-rest-beta) resource.",
+          "Target": "presence"
+        },
+        {
+          "Id": "3cdabea4-6923-4c02-b014-2c4cdd22dfd4",
+          "ApiChange": "Method",
+          "ChangedApiName": "clearLocation",
+          "ChangeType": "Addition",
+          "Description": "Added the [clearLocation](https://learn.microsoft.com/en-us/graph/api/presence-clearLocation?view=graph-rest-beta) method to the [presence](https://learn.microsoft.com/en-us/graph/api/resources/presence?view=graph-rest-beta) resource.",
+          "Target": "presence"
+        },
+        {
+          "Id": "3cdabea4-6923-4c02-b014-2c4cdd22dfd4",
+          "ApiChange": "Method",
+          "ChangedApiName": "setAutomaticLocation",
+          "ChangeType": "Addition",
+          "Description": "Added the [setAutomaticLocation](https://learn.microsoft.com/en-us/graph/api/presence-setAutomaticLocation?view=graph-rest-beta) method to the [presence](https://learn.microsoft.com/en-us/graph/api/resources/presence?view=graph-rest-beta) resource.",
+          "Target": "presence"
+        },
+        {
+          "Id": "3cdabea4-6923-4c02-b014-2c4cdd22dfd4",
+          "ApiChange": "Method",
+          "ChangedApiName": "setManualLocation",
+          "ChangeType": "Addition",
+          "Description": "Added the [setManualLocation](https://learn.microsoft.com/en-us/graph/api/presence-setManualLocation?view=graph-rest-beta) method to the [presence](https://learn.microsoft.com/en-us/graph/api/resources/presence?view=graph-rest-beta) resource.",
+          "Target": "presence"
+        }
+      ],
+      "Id": "3cdabea4-6923-4c02-b014-2c4cdd22dfd4",
+      "Cloud": "Review",
+      "Version": "beta",
+      "CreatedDateTime": "2025-10-21T16:02:03.2817806Z",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": "Call"
+    },
+    {
       "ChangeList": [
         {
           "Id": "db4cc8dc-1abb-4c2d-a25e-fa9104c0fe9a",
