@@ -1,7 +1,7 @@
 ---
 title: "workplaceSensorDeviceTelemetry resource type"
 description: "Represents the data collected and reported by a sensor on a device, such as occupancy, people count, inferred occupancy, temperature, and more."
-author: "ms-akwasiakosah"
+author: "akwasiakosah_microsoft"
 ms.localizationpriority: medium
 ms.subservice: "outlook"
 doc_type: resourcePageType

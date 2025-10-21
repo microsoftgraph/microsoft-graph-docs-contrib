@@ -1,11 +1,11 @@
 ---
 title: "workplaceSensor resource type"
 description: "Represents a sensor on hardware that collects and reports data on physical or environmental conditions, including occupancy, headcount, inferred occupancy, temperature, wifi, and more."
-author: "ms-akwasiakosah"
+author: "akwasiakosah_microsoft"
 ms.localizationpriority: medium
 ms.subservice: "outlook"
 doc_type: resourcePageType
-ms.date: 08/12/2024
+ms.date: 10/21/2025
 ---
 
 # workplaceSensor resource type
