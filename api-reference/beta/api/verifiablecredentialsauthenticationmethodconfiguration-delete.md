@@ -4,7 +4,8 @@ description: "Delete a verifiableCredentialsAuthenticationMethodConfiguration ob
 author: "tilarso"
 ms.date: 10/10/2025
 ms.localizationpriority: medium
-ms.subservice: "entra-sign-in"doc_type: apiPageType
+ms.subservice: "entra-sign-in"
+doc_type: apiPageType
 ---
 
 # Delete verifiableCredentialsAuthenticationMethodConfiguration
