@@ -2562,12 +2562,12 @@ items:
         href: ../../api/conditionalaccesspolicy-update.md
       - name: Delete
         href: ../../api/conditionalaccesspolicy-delete.md
-      - name: Restore
-        href: ../../api/conditionalaccesspolicy-restore.md
       - name: List deleted policies
         href: ../../api/policydeletableitem-list.md
       - name: Get deleted policy
         href: ../../api/policydeletableitem-get.md
+      - name: Restore
+        href: ../../api/conditionalaccesspolicy-restore.md
       - name: Permanently delete a soft deleted policy
         href: ../../api/policydeletableitem-delete.md
     - name: What If evaluation
@@ -2586,12 +2586,12 @@ items:
         href: ../../api/namedlocation-get.md
       - name: Delete
         href: ../../api/namedlocation-delete.md
-      - name: Restore
-        href: ../../api/namedlocation-restore.md
       - name: List deleted named locations
         href: ../../api/policydeletableitem-list.md
-      - name: Get deleted named locations
+      - name: Get deleted named location
         href: ../../api/policydeletableitem-get.md
+      - name: Restore deleted named location
+        href: ../../api/namedlocation-restore.md
       - name: Permanently delete a soft deleted named location
         href: ../../api/policydeletableitem-delete.md
       - name: Country named location
