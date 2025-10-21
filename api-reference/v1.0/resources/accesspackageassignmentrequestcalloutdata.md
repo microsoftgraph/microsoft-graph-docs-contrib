@@ -1,6 +1,6 @@
 ---
 title: "accessPackageAssignmentRequestCalloutData resource type"
-description: "The data sent to an Azure Lopic App connected to a custom extension within a catalog and used via an access package assignment request."
+description: "The data sent to an Azure Logic App connected to a custom extension within a catalog and used via an access package assignment request."
 author: "vikama-microsoft"
 ms.date: 10/18/2025
 ms.localizationpriority: medium
