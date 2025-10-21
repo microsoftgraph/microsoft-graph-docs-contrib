@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-POST /allDrivesBackup/enable
+POST /solutions/backupRestore/allDrivesBackup/enable
 ```
 
 ## Request headers
@@ -49,7 +49,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this action returns a `200 OK` response code and a [allDrivesBackup](../resources/alldrivesbackup.md) in the response body.
+If successful, this action returns a `202 Accepted` response code and a [allDrivesBackup](../resources/alldrivesbackup.md) in the response body.
 
 ## Examples
 
@@ -62,7 +62,7 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/allDrivesBackup/enable
+POST https://graph.microsoft.com/beta/solutions/backupRestore/allDrivesBackup/enable 
 ```
 
 
@@ -77,22 +77,16 @@ The following example shows the response.
 }
 -->
 ``` http
-HTTP/1.1 200 OK
+HTTP/1.1 202 Accepted
 Content-Type: application/json
 
-{
-  "value": {
-    "@odata.type": "#microsoft.graph.allDrivesBackup",
-    "id": "String (identifier)",
-    "policyId": "String",
-    "status": "String",
-    "actionOnExistingPolicy": "String",
-    "lastRunDateTime": "String (timestamp)",
-    "lastModifiedDateTime": "String (timestamp)",
-    "lastModifiedBy": {
-      "@odata.type": "microsoft.graph.identitySet"
-    }
-  }
-}
+{ 
+     "@odata.context": "/solutions/backupRestore/$metadata#allDrivesBackup/$entity",
+     "policyId": "03c27227-bff5-449d-8886-07b91b1fe8c0",
+     "status": "enabled", 
+     "lastRunDateTime": "0001-01-01T00:00:00Z",
+     "lastModifiedBy": "fb80ea0c-ecbb-4bb2-b484-37d01f2a776f",
+     "lastModifiedDateTime": "2025-09-21T19:09:52.9752849+00:00"
+} 
 ```
 

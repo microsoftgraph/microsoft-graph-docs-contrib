@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /allSitesBackup
+GET /solutions/backupRestore/allSitesBackup
 ```
 
 ## Optional query parameters
@@ -84,19 +84,14 @@ The following example shows the response.
 HTTP/1.1 200 OK
 Content-Type: application/json
 
-{
-  "value": {
-    "@odata.type": "#microsoft.graph.allSitesBackup",
-    "id": "abe126a0-f8e9-6bec-a3d9-2b58a871b341",
-    "policyId": "String",
-    "status": "String",
-    "actionOnExistingPolicy": "String",
-    "lastRunDateTime": "String (timestamp)",
-    "lastModifiedDateTime": "String (timestamp)",
-    "lastModifiedBy": {
-      "@odata.type": "microsoft.graph.identitySet"
-    }
-  }
-}
+{ 
+     "@odata.context": "/solutions/backupRestore/$metadata#allSitesBackup/$entity",
+     "policyId": "89014d8c-71fe-4d00-a01a-31850bc5b32c",
+     "status": "disabled", 
+     "actionOnExistingPolicy": "enableAll",
+     "lastRunDateTime": "2025-02-03T00:00:00Z",
+     "lastModifiedBy": "fb80ea0c-ecbb-4bb2-b484-37d01f2a776f",
+     "lastModifiedDateTime": "2025-09-21T19:09:52.9752849+00:00"
+} 
 ```
 

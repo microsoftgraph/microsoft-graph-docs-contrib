@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-POST /allMailboxesBackup/enable
+POST /solutions/backupRestore/allMailboxesBackup/enable
 ```
 
 ## Request headers
@@ -49,7 +49,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this action returns a `200 OK` response code and a [allMailboxesBackup](../resources/allmailboxesbackup.md) in the response body.
+If successful, this action returns a `202 Accepted` response code and a [allMailboxesBackup](../resources/allmailboxesbackup.md) in the response body.
 
 ## Examples
 
@@ -62,7 +62,7 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/allMailboxesBackup/enable
+POST https://graph.microsoft.com/beta/solutions/backupRestore/allMailboxesBackup/enable 
 ```
 
 
@@ -77,22 +77,16 @@ The following example shows the response.
 }
 -->
 ``` http
-HTTP/1.1 200 OK
+HTTP/1.1 202 Accepted
 Content-Type: application/json
 
-{
-  "value": {
-    "@odata.type": "#microsoft.graph.allMailboxesBackup",
-    "id": "String (identifier)",
-    "policyId": "String",
-    "status": "String",
-    "actionOnExistingPolicy": "String",
-    "lastRunDateTime": "String (timestamp)",
-    "lastModifiedDateTime": "String (timestamp)",
-    "lastModifiedBy": {
-      "@odata.type": "microsoft.graph.identitySet"
-    }
-  }
-}
+{ 
+     "@odata.context": "/solutions/backupRestore/$metadata#allMailboxesBackup/$entity",
+     "policyId": "ee7d9fab-7ce4-4e30-86c0-eac7680d8bca", 
+     "status": "enabled", 
+     "lastRunDateTime": "0001-01-01T00:00:00Z" ,
+     "lastModifiedBy": "fb80ea0c-ecbb-4bb2-b484-37d01f2a776f",
+     "lastModifiedDateTime": "2025-09-21T19:09:52.9752849+00:00"
+} 
 ```
 

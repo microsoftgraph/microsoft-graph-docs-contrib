@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /allMailboxesBackup
+GET /solutions/backupRestore/allMailboxesBackup
 ```
 
 ## Optional query parameters
@@ -66,7 +66,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/allMailboxesBackup
+GET https://graph.microsoft.com/beta/solutions/backupRestore/allMailboxesBackup
 ```
 
 
@@ -84,19 +84,14 @@ The following example shows the response.
 HTTP/1.1 200 OK
 Content-Type: application/json
 
-{
-  "value": {
-    "@odata.type": "#microsoft.graph.allMailboxesBackup",
-    "id": "afd2a6af-8c1a-d076-a0ce-79d399ee5651",
-    "policyId": "String",
-    "status": "String",
-    "actionOnExistingPolicy": "String",
-    "lastRunDateTime": "String (timestamp)",
-    "lastModifiedDateTime": "String (timestamp)",
-    "lastModifiedBy": {
-      "@odata.type": "microsoft.graph.identitySet"
-    }
-  }
-}
+{ 
+     "@odata.context": "/solutions/backupRestore/$metadata#allMailboxesBackup/$entity",
+     "policyId": "ee7d9fab-7ce4-4e30-86c0-eac7680d8bca",
+     "status": "disabled", 
+     "actionOnExistingPolicy": "disableAll", 
+     "lastRunDateTime": "2025-02-11T00:00:00Z",
+     "lastModifiedBy": "fb80ea0c-ecbb-4bb2-b484-37d01f2a776f",
+     "lastModifiedDateTime": "2025-09-21T19:09:52.9752849+00:00"
+} 
 ```
 

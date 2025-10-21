@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /allDrivesBackup
+GET /solutions/backupRestore/allDrivesBackup
 ```
 
 ## Optional query parameters
@@ -84,19 +84,13 @@ The following example shows the response.
 HTTP/1.1 200 OK
 Content-Type: application/json
 
-{
-  "value": {
-    "@odata.type": "#microsoft.graph.allDrivesBackup",
-    "id": "40bf4dc4-0a6c-dd0d-cf64-0b495ddbbbe2",
-    "policyId": "String",
-    "status": "String",
-    "actionOnExistingPolicy": "String",
-    "lastRunDateTime": "String (timestamp)",
-    "lastModifiedDateTime": "String (timestamp)",
-    "lastModifiedBy": {
-      "@odata.type": "microsoft.graph.identitySet"
-    }
-  }
-}
+{ 
+     "@odata.context": "/solutions/backupRestore/$metadata#allDrivesBackup/$entity",
+     "policyId": " 03c27227-bff5-449d-8886-07b91b1fe8c0",  
+     "status": "enabled", 
+     "lastRunDateTime": "2025-02-11T00:00:00Z",
+     "lastModifiedBy": "fb80ea0c-ecbb-4bb2-b484-37d01f2a776f",
+     "lastModifiedDateTime": "2025-09-21T19:09:52.9752849+00:00"
+} 
 ```
 

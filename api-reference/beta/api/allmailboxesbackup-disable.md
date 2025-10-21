@@ -37,7 +37,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-POST /allMailboxesBackup/disable
+POST /solutions/backupRestore/allMailboxesBackup/disable
 ```
 
 ## Request headers
@@ -55,13 +55,13 @@ The following table lists the parameters that are required when you call this ac
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|actionOnExistingPolicy|fullServiceBackupDisableMode|**TODO: Add Description**|
+|actionOnExistingPolicy|fullServiceBackupDisableMode|It determines after disabling fullService backup, in what state does the user wants its policy to be in. Inherited from [fullServiceBackupBase](../resources/fullservicebackupbase.md). The possible values are: `none`, `enableAll`, `disableAll`, `unknownFutureValue`.|
 
 
 
 ## Response
 
-If successful, this action returns a `200 OK` response code and a [allMailboxesBackup](../resources/allmailboxesbackup.md) in the response body.
+If successful, this action returns a `202 Accepted` response code and a [allMailboxesBackup](../resources/allmailboxesbackup.md) in the response body.
 
 ## Examples
 
@@ -74,12 +74,12 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/allMailboxesBackup/disable
+POST https://graph.microsoft.com/beta/solutions/backupRestore/allMailboxesBackup/disable 
 Content-Type: application/json
 
-{
-  "actionOnExistingPolicy": "String"
-}
+{ 
+  "actionOnExistingPolicy": "disableAll" 
+} 
 ```
 
 
@@ -94,22 +94,18 @@ The following example shows the response.
 }
 -->
 ``` http
-HTTP/1.1 200 OK
+HTTP/1.1 202 Accepted
 Content-Type: application/json
 
-{
-  "value": {
-    "@odata.type": "#microsoft.graph.allMailboxesBackup",
-    "id": "String (identifier)",
-    "policyId": "String",
-    "status": "String",
-    "actionOnExistingPolicy": "String",
-    "lastRunDateTime": "String (timestamp)",
-    "lastModifiedDateTime": "String (timestamp)",
-    "lastModifiedBy": {
-      "@odata.type": "microsoft.graph.identitySet"
-    }
-  }
-}
+{ 
+
+     "@odata.context": "/solutions/backupRestore/$metadata#allMailboxesBackup/$entity",
+     "policyId": "ee7d9fab-7ce4-4e30-86c0-eac7680d8bca",
+     "status": "disabled", 
+     "actionOnExistingPolicy": "disableAll", 
+     "lastRunDateTime": "2025-02-11T00:00:00Z",
+     "lastModifiedBy": "fb80ea0c-ecbb-4bb2-b484-37d01f2a776f",
+     "lastModifiedDateTime": "2025-09-21T19:09:52.9752849+00:00"
+} 
 ```
 

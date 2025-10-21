@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-POST /allSitesBackup/enable
+POST /solutions/backupRestore/allSitesBackup/enable 
 ```
 
 ## Request headers
@@ -49,7 +49,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this action returns a `200 OK` response code and a [allSitesBackup](../resources/allsitesbackup.md) in the response body.
+If successful, this action returns a `202 Accepted` response code and a [allSitesBackup](../resources/allsitesbackup.md) in the response body.
 
 ## Examples
 
@@ -62,7 +62,7 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/allSitesBackup/enable
+POST https://graph.microsoft.com/beta/solutions/backupRestore/allSitesBackup/enable 
 ```
 
 
@@ -77,7 +77,7 @@ The following example shows the response.
 }
 -->
 ``` http
-HTTP/1.1 200 OK
+HTTP/1.1 202 Accepted
 Content-Type: application/json
 
 {

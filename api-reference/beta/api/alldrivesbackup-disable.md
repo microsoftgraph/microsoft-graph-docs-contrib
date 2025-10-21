@@ -37,7 +37,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-POST /allDrivesBackup/disable
+POST /solutions/backupRestore/allDrivesBackup/disable
 ```
 
 ## Request headers
@@ -55,13 +55,13 @@ The following table lists the parameters that are required when you call this ac
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|actionOnExistingPolicy|fullServiceBackupDisableMode|**TODO: Add Description**|
+|actionOnExistingPolicy|fullServiceBackupDisableMode|It determines after disabling fullService backup, in what state does the user wants its policy to be in. Inherited from [fullServiceBackupBase](../resources/fullservicebackupbase.md). The possible values are: `none`, `enableAll`, `disableAll`, `unknownFutureValue`.|
 
 
 
 ## Response
 
-If successful, this action returns a `200 OK` response code and a [allDrivesBackup](../resources/alldrivesbackup.md) in the response body.
+If successful, this action returns a `202 Accepted` response code and a [allDrivesBackup](../resources/alldrivesbackup.md) in the response body.
 
 ## Examples
 
@@ -74,12 +74,12 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/allDrivesBackup/disable
+POST https://graph.microsoft.com/beta/solutions/backupRestore/allDrivesBackup/disable 
 Content-Type: application/json
 
-{
-  "actionOnExistingPolicy": "String"
-}
+{ 
+  "actionOnExistingPolicy": "enableAll" 
+} 
 ```
 
 
@@ -94,22 +94,17 @@ The following example shows the response.
 }
 -->
 ``` http
-HTTP/1.1 200 OK
+HTTP/1.1 202 Accepted
 Content-Type: application/json
 
-{
-  "value": {
-    "@odata.type": "#microsoft.graph.allDrivesBackup",
-    "id": "String (identifier)",
-    "policyId": "String",
-    "status": "String",
-    "actionOnExistingPolicy": "String",
-    "lastRunDateTime": "String (timestamp)",
-    "lastModifiedDateTime": "String (timestamp)",
-    "lastModifiedBy": {
-      "@odata.type": "microsoft.graph.identitySet"
-    }
-  }
-}
+{ 
+    "@odata.context": "/solutions/backupRestore/$metadata#allDrivesBackup/$entity",
+    "policyId": "03c27227-bff5-449d-8886-07b91b1fe8c0",
+    "status": "disabled", 
+    "actionOnExistingPolicy": "enableAll",
+    "lastRunDateTime": "2025-02-03T00:00:00Z",
+    "lastModifiedBy": "fb80ea0c-ecbb-4bb2-b484-37d01f2a776f",
+    "lastModifiedDateTime": "2025-09-21T19:09:52.9752849+00:00"
+  } 
 ```
 
