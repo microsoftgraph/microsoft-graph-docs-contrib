@@ -29,12 +29,13 @@ Inherits from [fullServiceBackupBase](../resources/fullservicebackupbase.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|actionOnExistingPolicy|fullServiceBackupDisableMode|**TODO: Add Description** Inherited from [fullServiceBackupBase](../resources/fullservicebackupbase.md). The possible values are: `none`, `enableAll`, `disableAll`, `unknownFutureValue`.|
-|lastModifiedBy|[identitySet](../resources/intune-identityset.md)|**TODO: Add Description** Inherited from [fullServiceBackupBase](../resources/fullservicebackupbase.md).|
-|lastModifiedDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [fullServiceBackupBase](../resources/fullservicebackupbase.md).|
-|lastRunDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [fullServiceBackupBase](../resources/fullservicebackupbase.md).|
-|policyId|String|**TODO: Add Description** Inherited from [fullServiceBackupBase](../resources/fullservicebackupbase.md).|
-|status|fullServiceBackupStatus|**TODO: Add Description** Inherited from [fullServiceBackupBase](../resources/fullservicebackupbase.md). The possible values are: `disabled`, `enabled`, `unknownFutureValue`.|
+|policyId|String|The unique identifier for full service backup policy.  Inherited from [fullServiceBackupBase](../resources/fullservicebackupbase.md).|
+|status|fullServiceBackupStatus|It shows the status of fullServiceBackup. Inherited from [fullServiceBackupBase](../resources/fullservicebackupbase.md). The possible values are: `disabled`, `enabled`, `unknownFutureValue`.|
+|actionOnExistingPolicy|fullServiceBackupDisableMode|It determines after disabling fullService backup, in what state does the user wants its policy to be in. Inherited from [fullServiceBackupBase](../resources/fullservicebackupbase.md). The possible values are: `none`, `enableAll`, `disableAll`, `unknownFutureValue`.|
+|lastRunDateTime|DateTimeOffset|TimeStamp of when the last discovery of artifacts job ran.| Inherited from [fullServiceBackupBase](../resources/fullservicebackupbase.md).|
+|lastModifiedBy|[identitySet](../resources/intune-identityset.md)|Identity of the person who last modified this entity. Inherited from [fullServiceBackupBase](../resources/fullservicebackupbase.md).|
+|lastModifiedDateTime|DateTimeOffset|Timestamp of last modification of this entity. Inherited from [fullServiceBackupBase](../resources/fullservicebackupbase.md).|
+
 
 ## Relationships
 None.

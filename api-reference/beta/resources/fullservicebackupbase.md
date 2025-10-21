@@ -1,10 +1,10 @@
 ---
 title: "fullServiceBackupBase resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+description: "An abstract type that represents full service backup setting."
+author: "vidula-verma"
 ms.date: 10/16/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice: "m365-backup-storage"
 doc_type: resourcePageType
 ---
 
@@ -14,30 +14,22 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+An abstract type that represents full service backup setting.
 
+Base for [allsitesbackup](../resources/allsitesbackup.md), [allmailboxesbackup](../resources/allmailboxesbackup.md) and [alldrivesbackup](../resources/alldrivesbackup.md).
 
 Inherits from [entity](../resources/entity.md).
-
-
-## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List](../api/fullservicebackupbase-list.md)|[fullServiceBackupBase](../resources/fullservicebackupbase.md) collection|Get a list of the fullServiceBackupBase objects and their properties.|
-|[Get](../api/fullservicebackupbase-get.md)|[fullServiceBackupBase](../resources/fullservicebackupbase.md)|Read the properties and relationships of [fullServiceBackupBase](../resources/fullservicebackupbase.md) object.|
-|[Update](../api/fullservicebackupbase-update.md)|[fullServiceBackupBase](../resources/fullservicebackupbase.md)|Update the properties of a fullServiceBackupBase object.|
-|[Delete](../api/fullservicebackupbase-delete.md)|None|Delete a fullServiceBackupBase object.|
-
+                                                                  
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|actionOnExistingPolicy|fullServiceBackupDisableMode|**TODO: Add Description**. The possible values are: `none`, `enableAll`, `disableAll`, `unknownFutureValue`.|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md). Inherits from [entity](../resources/entity.md)|
-|lastModifiedBy|[identitySet](../resources/intune-identityset.md)|**TODO: Add Description**|
-|lastModifiedDateTime|DateTimeOffset|**TODO: Add Description**|
-|lastRunDateTime|DateTimeOffset|**TODO: Add Description**|
-|policyId|String|**TODO: Add Description**|
-|status|fullServiceBackupStatus|**TODO: Add Description**. The possible values are: `disabled`, `enabled`, `unknownFutureValue`.|
+|policyId|String|The unique identifier for full service backup policy.      |
+|status|fullServiceBackupStatus|It shows the status of fullServiceBackup. The possible values are: `disabled`, `enabled`, `unknownFutureValue`.|
+|actionOnExistingPolicy|fullServiceBackupDisableMode|It determines after disabling fullService backup, in what state does the user wants its policy to be in. The possible values are: `none`, `enableAll`, `disableAll`, `unknownFutureValue`.|
+|lastRunDateTime|Edm.DateTimeOffset|TimeStamp of when the last discovery of artifacts job ran.|
+|lastModifiedBy|[identitySet](../resources/intune-identityset.md)|Identity of the person who last modified this entity.|
+|lastModifiedDateTime|DateTimeOffset|Timestamp of last modification of this entity.       |
+
 
 ## Relationships
 None.
@@ -55,7 +47,6 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.fullServiceBackupBase",
-  "id": "String (identifier)",
   "policyId": "String",
   "status": "String",
   "actionOnExistingPolicy": "String",
