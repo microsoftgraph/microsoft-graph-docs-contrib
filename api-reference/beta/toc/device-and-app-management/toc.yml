@@ -242,7 +242,7 @@ items:
       href: ../../api/cloudpcexternalpartner-update.md
   - name: Cloud PC front line service plan
     items:
-    - name: Cloud PC front line service plan
+    - name: Cloud PC frontline service plan
       href: ../../resources/cloudpcfrontlineserviceplan.md
     - name: List
       href: ../../api/virtualendpoint-list-frontlineserviceplans.md
@@ -256,6 +256,12 @@ items:
       href: ../../api/virtualendpoint-list-galleryimages.md
     - name: Get
       href: ../../api/cloudpcgalleryimage-get.md
+  - name: Cloud PC managed license
+    items:
+    - name: Cloud PC managed license
+      href: ../../resources/cloudpcmanagedlicense.md
+    - name: List
+      href: ../../api/virtualendpoint-list-managedlicenses.md
   - name: Cloud PC Azure network connection
     items:
     - name: Cloud PC Azure network connection
@@ -436,6 +442,8 @@ items:
       href: ../../api/virtualendpoint-retrievetenantencryptionsetting.md
     - name: List cloud apps
       href: ../../api/virtualendpoint-list-cloudapps.md
+    - name: List managed licenses
+      href: ../../api/virtualendpoint-list-managedlicenses.md
   - name: Alert monitoring
     items:
     - name: Monitoring
