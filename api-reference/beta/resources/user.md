@@ -127,7 +127,7 @@ This resource supports:
 | **Notes** |||
 | [List notebooks](../api/onenote-list-notebooks.md) | [notebook](notebook.md) collection | Retrieve a list of notebook objects. |
 | [Create notebook](../api/onenote-post-notebooks.md) | [notebook](notebook.md) | Create a new OneNote notebook. |
-| **On-premises sync behavior** |||
+| **On-premises sync behavior (Source of Authority)** |||
 |[Get](../api/onpremisessyncbehavior-get.md)|[onPremisesSyncBehavior](../resources/onpremisessyncbehavior.md)|Check whether the user object's source of authority (SOA) is the cloud or on-premises Active Directory.|
 |[Update](../api/onpremisessyncbehavior-update.md)|[onPremisesSyncBehavior](../resources/onpremisessyncbehavior.md)|Update the user object's source of authority (SOA) to the cloud or on-premises Active Directory.|
 | **Org hierarchy** |||
