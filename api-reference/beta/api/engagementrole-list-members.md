@@ -40,7 +40,7 @@ GET /employeeExperience/roles/{engagementRoleId}/members
 
 This method supports the `$filter` (`eq`), `$select`, and `$count` OData query parameters. For general information, see [OData query parameters](/graph/query-parameters). Only the **userId** and **id** properties support the `$filter` parameter.
 
-The folowing table shows how you can use OData query parameters with this API. 
+The following table shows how you can use OData query parameters with this API. 
 
 | Description | HTTP request |
 |:---|:---|
