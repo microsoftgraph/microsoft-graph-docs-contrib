@@ -65,6 +65,12 @@ The following JSON representation shows the resource type.
   "executionConditions": {
     "@odata.type": "microsoft.graph.identityGovernance.workflowExecutionConditions"
   },
+  "administrationScopeTargets": [
+    {
+      "@odata.type": "#microsoft.graph.administrativeUnit",
+      "id": "String"
+    },
+    ],
   "isEnabled": "Boolean",
   "isSchedulingEnabled": "Boolean",
   "lastModifiedDateTime": "String (timestamp)"
