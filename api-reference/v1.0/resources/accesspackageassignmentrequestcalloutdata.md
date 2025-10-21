@@ -36,7 +36,7 @@ Inherits from [customExtensionData](../resources/customextensiondata.md).
 |accessPackage|[accessPackage](../resources/accesspackage.md)|The access package where the custom extension call out data to the Azure Logic App is being sent.|
 |accessPackageCatalog|[accessPackageCatalog](../resources/accesspackagecatalog.md)|The catalog that contains the custom extension.|
 |assignment|[accessPackageAssignment](../resources/accesspackageassignment.md)|The specific assignment of the access package.|
-|requestor|[accessPackageSubject](../resources/accesspackagesubject.md)|The user requesting the access package assignment|
+|requestor|[accessPackageSubject](../resources/accesspackagesubject.md)|The user requesting the access package assignment.|
 
 ## JSON representation
 The following JSON representation shows the resource type.
