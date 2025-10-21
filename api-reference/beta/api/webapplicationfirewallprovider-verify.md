@@ -39,6 +39,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 POST /identity/riskPrevention/webApplicationFirewallProviders/{webApplicationFirewallProviderId}/verify
 ```
 
+## Optional query parameters
+
+This method supports the `$expand` [OData query parameter](/graph/query-parameters).
+
 ## Request headers
 
 |Name|Description|
@@ -82,9 +86,6 @@ Content-Type: application/json
   "hostName": "www.contoso.com"
 }
 ```
-## Optional query parameters
-
-This method supports the `$expand` [OData query parameter](/graph/query-parameters).
 
 #### Response
 

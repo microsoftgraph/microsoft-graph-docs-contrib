@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Represents the entry point for risk prevention features in [External Identities](/azure/active-directory/external-identities/) for Microsoft Entra External ID tenants.
 
-Inherits from [entity](../resources/entity.md)
+Inherits from [entity](../resources/entity.md).
 
 ## Methods
 None.
@@ -29,7 +29,7 @@ None.
 |:---|:---|:---|
 |fraudProtectionProviders|[fraudProtectionProvider](../resources/fraudprotectionprovider.md) collection|Represents entry point for fraud protection provider configurations for Microsoft Entra External ID tenants.|
 |webApplicationFirewallProviders|[webApplicationFirewallProvider](../resources/webapplicationfirewallprovider.md) collection|Collection of WAF provider configurations registered in the External ID tenant.|
-|webApplicationFirewallVerifications|[webApplicationFirewallVerificationModel](../resources/webapplicationfirewallverificationmodel.md) collection|Collection of verification records of verification operations performed for domains or hosts with WAF providers registered in the External ID tenant.|
+|webApplicationFirewallVerifications|[webApplicationFirewallVerificationModel](../resources/webapplicationfirewallverificationmodel.md) collection|Collection of verification operations performed for domains or hosts with WAF providers registered in the External ID tenant.|
 
 ## JSON representation
 The following JSON representation shows the resource type.

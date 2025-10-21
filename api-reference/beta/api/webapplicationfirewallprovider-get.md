@@ -104,7 +104,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/riskPrevention/fraudProtectionProviders/$entity",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/riskPrevention/webApplicationFirewallProviders/$entity",
     "@odata.type": "#microsoft.graph.akamaiWebApplicationFirewallProvider",
     "id": "0bb2618b-51f7-4e83-bcb8-84e70f7cf84d",
     "displayName": "Akamai Provider Example",
