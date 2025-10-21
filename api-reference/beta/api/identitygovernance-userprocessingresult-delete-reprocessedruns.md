@@ -74,7 +74,6 @@ DELETE https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/de
 
 ---
 
-
 ### Response
 
 The following example shows the response.

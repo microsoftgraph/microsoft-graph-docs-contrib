@@ -5,15 +5,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```python
 
 # Code snippets are only available for the latest version. Current version is 1.x
-from msgraph_beta import GraphServiceClient
-from msgraph_beta.generated.models.security.retention_label import RetentionLabel
-from msgraph_beta.generated.models.behavior_during_retention_period import BehaviorDuringRetentionPeriod
-from msgraph_beta.generated.models.action_after_retention_period import ActionAfterRetentionPeriod
-from msgraph_beta.generated.models.retention_trigger import RetentionTrigger
-from msgraph_beta.generated.models.security.retention_duration_in_days import RetentionDurationInDays
-from msgraph_beta.generated.models.security.disposition_review_stage import DispositionReviewStage
-from msgraph_beta.generated.models.security.file_plan_descriptor import FilePlanDescriptor
-from msgraph_beta.generated.models.default_record_behavior import DefaultRecordBehavior
+from msgraph import GraphServiceClient
+from msgraph.generated.models.security.retention_label import RetentionLabel
+from msgraph.generated.models.behavior_during_retention_period import BehaviorDuringRetentionPeriod
+from msgraph.generated.models.action_after_retention_period import ActionAfterRetentionPeriod
+from msgraph.generated.models.retention_trigger import RetentionTrigger
+from msgraph.generated.models.security.retention_duration_in_days import RetentionDurationInDays
+from msgraph.generated.models.security.disposition_review_stage import DispositionReviewStage
+from msgraph.generated.models.security.file_plan_descriptor import FilePlanDescriptor
+from msgraph.generated.models.default_record_behavior import DefaultRecordBehavior
 # To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = RetentionLabel(
 	odata_type = "#microsoft.graph.security.retentionLabel",

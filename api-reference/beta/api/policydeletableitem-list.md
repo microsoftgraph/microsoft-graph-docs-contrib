@@ -62,7 +62,7 @@ List deleted **crossTenantAccessPolicyConfigurationPartner** objects:
 }
 -->
 ```HTTP
-GET /policies/deletedItems/crossTenantPartners/
+GET /policies/deletedItems/crossTenantPartners
 ```
 
 List deleted **crossTenantIdentitySyncPolicyPartner** objects:
@@ -71,7 +71,7 @@ List deleted **crossTenantIdentitySyncPolicyPartner** objects:
 }
 -->
 ```HTTP
-GET /policies/deletedItems/crossTenantSyncPolicyPartners/
+GET /policies/deletedItems/crossTenantSyncPolicyPartners
 ```
 
 List deleted **conditionalAccessPolicy** objects:

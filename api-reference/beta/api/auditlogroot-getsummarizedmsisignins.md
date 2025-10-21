@@ -86,7 +86,6 @@ GET https://graph.microsoft.com/beta/auditLogs/getSummarizedMSISignIns(aggregati
 
 ---
 
-
 ### Response
 
 The following example shows the response.
