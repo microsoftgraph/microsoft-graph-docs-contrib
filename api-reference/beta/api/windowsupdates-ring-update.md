@@ -116,8 +116,8 @@ Content-Type: application/json
   "excludedGroupAssignment": {
     "@odata.type": "microsoft.graph.windowsUpdates.excludedGroupAssignment"
   },
-  "deferralInDays": "5",
-  "isPaused": "false",
+  "deferralInDays": 5,
+  "isPaused": false,
   "id": "03f72335-b88c-519e-16e7-039fdab8670f",
   "createdDateTime": "2020-06-09T10:00:00Z",
   "lastModifiedDateTime": "2020-06-09T10:00:00Z"

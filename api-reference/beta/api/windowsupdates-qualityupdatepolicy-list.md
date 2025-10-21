@@ -95,7 +95,6 @@ Content-Type: application/json
           "@odata.type": "microsoft.graph.windowsUpdates.qualityUpdateApprovalRule"
         }
       ],
-      "isAutoEnrollDevices": "false",
       "id": "f316bfd9-c84e-a334-cebe-071d3c64b2c1",
       "createdDateTime": "2020-06-09T10:00:00Z",
       "lastModifiedDateTime": "2020-06-09T10:00:00Z"
