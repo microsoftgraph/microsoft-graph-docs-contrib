@@ -5424,3 +5424,28 @@ Possible values for user account types (group membership), per Windows definitio
 |h6|
 |d1|
 |unknownFutureValue|
+
+### fullServiceBackupStatus values
+
+|Member|
+|:---|
+|disabled|
+|enabled|
+|unknownFutureValue|
+
+### fullServiceBackupDisableMode values
+
+|Member|
+|:---|
+|none|
+|enableAll|
+|disableAll|
+|unknownFutureValue|
+
+### backupPolicyProtectionMode values
+
+|Member|
+|:---|
+|standard|
+|fullServiceBackup|
+|unknownFutureValue|

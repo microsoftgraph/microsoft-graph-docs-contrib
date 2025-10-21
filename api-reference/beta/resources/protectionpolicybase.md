@@ -40,6 +40,7 @@ Base type for [sharePointProtectionPolicy](../resources/sharepointprotectionpoli
 |displayName|String|The name of the policy to be created.|
 |id|String|The unique identifier of the protection rule associated with the policy.|
 |isEnabled|Boolean|Indicates whether the policy is enabled.|
+|protectionMode|BackupPolicyProtectionMode|Specifies the method used to protect artifacts within the policy.|
 |lastModifiedBy|[identitySet](../resources/identityset.md)|The identity of the person who last modified the policy.|
 |lastModifiedDateTime|DateTimeOffset|The date and time when the policy was last modified. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |protectionPolicyArtifactCount|[protectionPolicyArtifactCount](../resources/protectionpolicyartifactcount.md)|The count of artifacts in the protection policy by status. Returned only on `$select`.|
