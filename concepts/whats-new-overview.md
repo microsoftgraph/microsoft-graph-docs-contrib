@@ -44,6 +44,10 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 These new permissions enable more granular access control for managing **internalDomainFederation** and **domain** resources.
 
+### Security | Alerts and incidents
+
+Use the **investigationState** property on [alert](/graph/api/resources/security-alert) to get the current status of an investigation.
+
 ### Teamwork and communications | Calls and online meetings
 
 Use the [callEvent](/graph/api/resources/callevent) and [emergencyCallEvent](/graph/api/resources/emergencycallevent) resources to provide detailed information about both standard and emergency call events. For more information, see [Change notification for active meeting call events](/graph/changenotifications-for-onlinemeeting) and [change notification for emergency call events](/graph/changenotifications-for-emergencycalls).
@@ -64,6 +68,10 @@ Apply the following [prerequisites for the Places list and descendant APIs](/gra
 
 - [List the dependent education assignment resources](/graph/api/educationassignmentresource-list-dependentresources?view=graph-rest-beta&preserve-view=true) for a given education assignment resource.
 - [List the dependent education submission resources](/graph/api/educationsubmissionresource-list-dependentresources?view=graph-rest-beta&preserve-view=true) for a given education submission resource.
+
+### Security | Alerts and incidents
+
+Use the **investigationState** property on [alert](/graph/api/resources/security-alert?view=graph-rest-beta&preserve-view=true) to get the current status of an investigation.
 
 ## September 2025: New and generally available
 
