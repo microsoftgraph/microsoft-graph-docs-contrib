@@ -27,7 +27,7 @@ Inherits from [entity](../resources/entity.md).
 |status|fullServiceBackupStatus|It shows the status of fullServiceBackup. The possible values are: `disabled`, `enabled`, `unknownFutureValue`.|
 |actionOnExistingPolicy|fullServiceBackupDisableMode|It determines after disabling fullService backup, in what state does the user wants its policy to be in. The possible values are: `none`, `enableAll`, `disableAll`, `unknownFutureValue`.|
 |lastRunDateTime|Edm.DateTimeOffset|TimeStamp of when the last discovery of artifacts job ran.|
-|lastModifiedBy|[identitySet](../resources/intune-identityset.md)|Identity of the person who last modified this entity.|
+|lastModifiedBy|[identitySet](../resources/identityset.md)|Identity of the person who last modified this entity.|
 |lastModifiedDateTime|DateTimeOffset|Timestamp of last modification of this entity.       |
 
 
