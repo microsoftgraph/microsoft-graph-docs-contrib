@@ -381,3 +381,141 @@ Content-Type: application/json
     }
 }
 ```
+
+
+### Example 3: Create a new version of a task with specific administrative scope
+
+#### Request
+
+The following example shows a request.
+
+
+<!-- {
+  "blockType": "request",
+  "name": "lifecycleworkflows_workflowthis.createnewversion_scope"
+}
+-->
+``` http
+POST https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workflows/{workflowId}/createNewVersion
+
+
+{
+  "workflow": {
+    "category": "mover",
+    "displayName": "On Demand mover workflow",
+    "description": "Execute real-time tasks for employee job changes",
+    "tasks": [
+      {
+        "category": "mover",
+        "continueOnError": false,
+        "description": "Send email to notify user’s manager of user move",
+        "displayName": "Send email to notify manager of user move",
+        "executionSequence": 1,
+        "id": "f09eb640-6c16-4f1a-8b48-6a295a307705",
+        "isEnabled": true,
+        "taskDefinitionId": "aab41899-9972-422a-9d97-f626014578b7",
+        "arguments": []
+      },
+      {
+        "arguments": [
+          {
+            "name": "groupID",
+            "value": "8d1d1deb-2ef0-4f72-a460-729a1cc74e7e"
+          }
+        ],
+        "description": "Add user to selected groups",
+        "displayName": "Add user to groups",
+        "isEnabled": true,
+        "continueOnError": false,
+        "taskDefinitionId": "22085229-5809-45e8-97fd-270d28d66910",
+        "category": "joiner,leaver,mover"
+      }
+    ],
+    "executionConditions": {
+      "@odata.type": "#microsoft.graph.identityGovernance.onDemandExecutionOnly"
+    },
+    "isEnabled": true,
+    "isSchedulingEnabled": false,
+    "administrationScopeTargets": [
+      {
+        "@odata.type": "#microsoft.graph.administrativeUnit",
+        "id": "2ae6f1b1-fcbf-4ad1-9f4f-8c5e48e364c7"
+      }
+    ]
+  }
+}
+```
+
+#### Response
+
+
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.identityGovernance.workflow"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#microsoft.graph.identityGovernance.workflow",
+  "category": "mover",
+  "description": "Execute real-time tasks for employee job changes",
+  "displayName": "On Demand mover workflow",
+  "isEnabled": true,
+  "isSchedulingEnabled": false,
+  "lastModifiedDateTime": "2025-01-09T15:40:14.4514101Z",
+  "createdDateTime": "2025-01-09T15:28:24.0565526Z",
+  "deletedDateTime": null,
+  "id": "394f5831-b1c2-44b3-830d-bbcb88d4ebb0",
+  "nextScheduleRunDateTime": null,
+  "version": 2,
+  "executionConditions": null,
+  "lastModifiedBy": {
+    "id": "03ad19ba-bf80-4900-bee0-7f6813ee6ecf"
+  },
+  "tasks@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/lifecycleWorkflows/workflows('465d0d08-3099-483f-9d93-16aad77bcd22')('465d0d08-3099-483f-9d93-16aad77bcd22')/tasks",
+  "tasks": [
+    {
+      "category": "mover",
+      "continueOnError": false,
+      "description": "Send email to notify user’s manager of user move",
+      "displayName": "Send email to notify manager of user move",
+      "executionSequence": 1,
+      "id": "c070b422-17e3-45a2-82a0-42b5a46c2421",
+      "isEnabled": true,
+      "taskDefinitionId": "aab41899-9972-422a-9d97-f626014578b7",
+      "arguments": []
+    },
+    {
+      "category": "joiner,leaver,mover",
+      "continueOnError": false,
+      "description": "Add user to selected groups",
+      "displayName": "Add user to groups",
+      "executionSequence": 2,
+      "id": "71b576f8-da57-457f-a507-e7b978c56680",
+      "isEnabled": true,
+      "taskDefinitionId": "22085229-5809-45e8-97fd-270d28d66910",
+      "arguments": [
+        {
+          "name": "groupID",
+          "value": "8d1d1deb-2ef0-4f72-a460-729a1cc74e7e"
+        }
+      ]
+    }
+  ],
+  "createdBy": {
+    "id": "03ad19ba-bf80-4900-bee0-7f6813ee6ecf"
+  },
+  "administrationScopeTargets": [
+    {
+      "@odata.type": "#microsoft.graph.administrativeUnit",
+      "id": "2ae6f1b1-fcbf-4ad1-9f4f-8c5e48e364c7"
+    }
+  ]
+}
+```
