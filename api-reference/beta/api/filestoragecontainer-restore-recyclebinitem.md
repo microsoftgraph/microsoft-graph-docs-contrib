@@ -8,7 +8,7 @@ doc_type: apiPageType
 ms.date: 12/10/2024
 ---
 
-# Restore a recycle bin item by original driveItem ID
+# Restore recycleBinItem by original driveItem ID
 
 Namespace: microsoft.graph
 
