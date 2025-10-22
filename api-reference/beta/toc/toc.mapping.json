@@ -516,12 +516,12 @@
             "cloudPcOrganizationSettings",
             "cloudPcProvisioningPolicy",
             "cloudPcReport",
-            "cloudPcReports",
             "cloudPcServicePlan",
             "cloudPcSnapshot",
             "cloudPcSupportedRegion",
             "cloudPcUserSetting",
             "virtualEndpoint"
+            "cloudPcReports",
           ],
           "complexTypes": [
             "appScope",
