@@ -9,17 +9,7 @@
           "ChangeType": "Addition",
           "Description": "Added the [onlineMeetingSensitivityLabelAssignment](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeetingSensitivityLabelAssignment?view=graph-rest-beta) resource.",
           "Target": "onlineMeetingSensitivityLabelAssignment"
-        }
-      ],
-      "Id": "55aeecb0-d2cf-48d1-82b2-c42a18084e4e",
-      "Cloud": "Prod",
-      "Version": "beta",
-      "CreatedDateTime": "2025-10-08T17:53:57.8764356Z",
-      "WorkloadArea": "Cloud communications",
-      "SubArea": "Call"
-    },
-    {
-      "ChangeList": [
+        },
         {
           "Id": "c58e1809-898c-4314-986e-2fb6cd09ab4e",
           "ApiChange": "Property",
@@ -29,12 +19,12 @@
           "Target": "onlineMeeting"
         }
       ],
-      "Id": "c58e1809-898c-4314-986e-2fb6cd09ab4e",
+      "Id": "55aeecb0-d2cf-48d1-82b2-c42a18084e4e",
       "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2025-10-08T17:53:57.8766552Z",
+      "CreatedDateTime": "2025-10-21T17:53:57.8764356Z",
       "WorkloadArea": "Cloud communications",
-      "SubArea": "Online meeting"
+      "SubArea": "Call"
     },
     {
       "ChangeList": [

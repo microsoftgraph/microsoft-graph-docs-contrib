@@ -1,6 +1,6 @@
 ---
 title: "onlineMeetingSensitivityLabelAssignment resource type"
-description: Contains information about the sensitivity label applied to the Teams meeting in Graph
+description: Contains information about the sensitivity label applied to the Teams meeting in Microsoft Graph.
 author: garchiro7
 ms.date: 10/08/2025
 ms.localizationpriority: medium
@@ -14,9 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This object corresponds to the label that is created and managed by admins in Microsoft Purview and is used to enforce data protection and meeting governance.
+Contains information about the sensitivity label applied to the Teams meeting in Microsoft Graph. This object corresponds to the label that is created and managed by admins in Microsoft Purview and is used to enforce data protection and meeting governance.
 
-For more information, visit [the site for Teams meetings with protection for sensitive data.](https://learn.microsoft.com/microsoftteams/configure-meetings-sensitive-protection)
+For more information, see [Teams meetings with protection for sensitive data.](https://learn.microsoft.com/microsoftteams/configure-meetings-sensitive-protection).
 
 
 ## Properties
