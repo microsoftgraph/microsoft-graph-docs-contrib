@@ -1,6 +1,6 @@
 ---
 title: "List policyApproval"
-description: "List all properties and relationships of microsoft.graph.windowsUpdates.policyApproval object. for all policy approvals"
+description: "Get a list of the policyApproval objects and their properties."
 author: "andredm7"
 ms.date: 10/22/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List all properties and relationships of [microsoft.graph.windowsUpdates.policyApproval](../resources/windowsupdates-policyapproval.md) object.
+Get a list of the [policyApproval](../resources/windowsupdates-policyapproval.md) objects and their properties.
 
 ## Permissions
 
@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /admin/windows/updates/policies/{policyId}/approvals/
+GET /admin/windows/updates/policies/{policyId}/approvals
 ```
 
 ## Optional query parameters
@@ -53,7 +53,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [microsoft.graph.windowsUpdates.policyApproval](../resources/windowsupdates-policyapproval.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [microsoft.graph.windowsUpdates.policyApproval](../resources/windowsupdates-policyapproval.md) objects in the response body.
 
 ## Examples
 
@@ -66,9 +66,8 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/admin/windows/updates/policies/{policyId}/approvals/
+GET https://graph.microsoft.com/beta/admin/windows/updates/policies/45a01ef3-fb4b-8c1d-2428-1f060464033c/approvals
 ```
->**Note:** Do not use `approvalId` if you want to list all policy approvals. The `approvalId` is only used to return a specific policy approval.
 
 ### Response
 
@@ -77,7 +76,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.windowsUpdates.policyApproval"
+  "@odata.type": "Collection(microsoft.graph.windowsUpdates.policyApproval)"
 }
 -->
 ``` http
