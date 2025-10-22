@@ -3646,6 +3646,15 @@ Possible values for user account types (group membership), per Windows definitio
 |bulk|
 |unknownFutureValue|
 
+### protectionSource values 
+
+|Member|
+|:---|
+|none|
+|manual|
+|dynamicRule|
+|unknownFutureValue|
+
 ### engagementConversationMessageReactionType values
 
 | Member           |
@@ -3681,3 +3690,12 @@ Possible values for user account types (group membership), per Windows definitio
 | medal            |
 | bullseye         |
 | unknownFutureValue |
+
+### callEventType values
+
+| Member |
+| ------------------ |
+| callStarted |
+| callEnded |
+| unknownFutureValue |
+| rosterUpdated |
