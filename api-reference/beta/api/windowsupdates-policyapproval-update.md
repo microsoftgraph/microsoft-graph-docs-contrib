@@ -14,7 +14,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a policyApproval object.
+Update the properties of a [policyApproval](../resources/windowsupdates-policyapproval.md) object.
 
 ## Permissions
 
@@ -48,14 +48,10 @@ PATCH /admin/windows/updates/policies/{policyId}/approvals/{policyApprovalId}
 
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
-
-## Properties
-
 |Property|Type|Description|
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|The date and time the policy approval is created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, `2014 is 2014-01-01T00:00:00Z`. Optional.|
 |lastModifiedDateTime|DateTimeOffset|The date and time the policy approval was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, `2014 is 2014-01-01T00:00:00Z`. Read-only. Optional.|
-
 
 ## Response
 
@@ -72,7 +68,7 @@ The following example shows a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/admin/windows/updates/policies/{policyId}/approvals/ab3a53f0-f7aa-10b1-04d4-8680584cbbb6
+PATCH https://graph.microsoft.com/beta/admin/windows/updates/policies/45a01ef3-fb4b-8c1d-2428-1f060464033c/approvals/ab3a53f0-f7aa-10b1-04d4-8680584cbbb6
 Content-Type: application/json
 
 {
@@ -82,7 +78,6 @@ Content-Type: application/json
 }
 ```
 
-
 ### Response
 
 The following example shows the response.
@@ -90,7 +85,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.windowsUpdates.policyApproval",
+  "@odata.type": "microsoft.graph.windowsUpdates.policyApproval"
 }
 -->
 ``` http
