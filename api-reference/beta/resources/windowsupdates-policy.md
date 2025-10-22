@@ -1,6 +1,6 @@
 ---
 title: "policy resource type"
-description: "An abstract type that represents an entity that governs the update deployment settings content for an associated deployment audience, which can consist of one or more Microsoft Entra groups."
+description: "An abstract type that governs the update deployment settings content for an associated deployment audience, which can consist of one or more Microsoft Entra groups."
 author: "andredm7"
 ms.date: 10/08/2025
 ms.localizationpriority: medium
@@ -14,9 +14,9 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An abstract type that represents an entity that governs the update deployment settings content for an associated deployment audience, which can consist of one or more Microsoft Entra groups.
+An abstract type that governs the update deployment settings content for an associated deployment audience, which can consist of one or more Microsoft Entra groups.
 
-Base type of [qualityUpdatePolicy](../resources/qualityupdatepolicy.md). 
+Base type of [qualityUpdatePolicy](../resources/windowsupdates-qualityupdatepolicy.md). 
 
 ## Methods
 |Method|Return type|Description|
