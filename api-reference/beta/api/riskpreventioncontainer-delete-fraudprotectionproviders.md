@@ -72,7 +72,6 @@ DELETE https://graph.microsoft.com/beta/identity/riskprevention/fraudprotectionp
 
 ---
 
-
 ### Response
 
 The following example shows the response.
