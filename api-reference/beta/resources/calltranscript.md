@@ -24,7 +24,7 @@ Represents a transcript associated with an [online meeting](onlinemeeting.md) an
 |[Get transcript](../api/calltranscript-get.md) | [callTranscript](calltranscript.md) | Get a [callTranscript](../resources/calltranscript.md) object associated with an [onlineMeeting](../resources/onlinemeeting.md) or an [ad hoc call](/graph/api/resources/adhoccall?view=graph-rest-beta&preserve-view=true).|
 |[Get delta by organizer](../api/calltranscript-delta.md) | [callTranscript](calltranscript.md) collection | Get a set of [callTranscript](../resources/calltranscript.md) resources that were added for [onlineMeeting](../resources/onlinemeeting.md) instances organized by the specified user.|
 |[List transcripts by organizer](../api/onlinemeeting-getalltranscripts.md) | [callTranscript](calltranscript.md) collection | Get the [callTranscript](../resources/calltranscript.md) objects for all the [onlineMeeting](../resources/onlinemeeting.md) instances organized by the specified user.|
-|[List transcripts by initiator](adhoccall-getall-transcripts.md) | [callTranscript](calltranscript.md) collection | Get the [callTranscript](../resources/calltranscript.md) objects for all the [adhocCall](adhoccall.md) instances organized by the specified user initiating the call.|
+|List transcripts by initiator | [callTranscript](calltranscript.md) collection | Get the [callTranscript](../resources/calltranscript.md) objects for all the [adhocCall](adhoccall.md) instances organized by the specified user initiating the call.|
 
 ## Properties
 

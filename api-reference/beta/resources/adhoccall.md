@@ -28,10 +28,10 @@ Contains information about an ad hoc call, including PSTN, 1:1, and group calls.
 
 | Method | Return Type |Description |
 | :------ | :----------- | :---------- |
-| [Get callRecording](adhoccall-callrecording-get.md)| [adhocCall resource type](callrecording.md) | Get a single callRecording object for an ad hoc call |
-| [Get callTranscript](adhoccall-calltranscript-get.md) | [adhocCall resource type](calltranscript.md) | Get a single callTranscript object for an ad hoc call |
-| [List recordings](adhoccall-getall-recordings.md) | [callRecording](callrecording.md) collection | Retrieve the list of [callRecordings](../resources/callrecording.md) objects associated with an adhocCall. |
-| [List transcripts](adhoccall-getall-transcripts.md) | [callTranscript](calltranscript.md) collection | Retrieve the list of [callTranscripts](calltranscript.md) of an adhocCall. |
+| Get callRecording| [adhocCall resource type](callrecording.md) | Get a single callRecording object for an ad hoc call |
+| Get callTranscript | [adhocCall resource type](calltranscript.md) | Get a single callTranscript object for an ad hoc call |
+| List recordings | [callRecording](callrecording.md) collection | Retrieve the list of [callRecordings](../resources/callrecording.md) objects associated with an adhocCall. |
+| List transcripts | [callTranscript](calltranscript.md) collection | Retrieve the list of [callTranscripts](calltranscript.md) of an adhocCall. |
 
 ## Properties
 
