@@ -11,7 +11,7 @@ ms.date: 10/22/2025
 ---
 
 # Manage informationBarrier for fileStorageContainers
-The [informationBarrier](/graph/api/resources/informationBarrier) property of the [fileStorageContainer](/graph/api/resources/filestoragecontainer) object lets you restrict two-way communication and collaboration between users.
+The informationBarrier property of the [fileStorageContainer](/graph/api/resources/filestoragecontainer) object lets you restrict two-way communication and collaboration between users.
 
 ## Stamp informationBarrier on fileStorageContainer creation
 For tenants that have Information Barriers(IB) enabled, IB is automatically stamped on the containers at creation time:
