@@ -1,6 +1,6 @@
 ---
 title: "policyApproval resource type"
-description: "Set of Quality Updates Policy Approval types"
+description: "Represents a set of quality updates policy approval types."
 author: "andredm7"
 ms.date: 09/30/2025
 ms.localizationpriority: medium
@@ -14,9 +14,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Set of Quality Updates policy approval types.
-
-Inherits from [entity](../resources/entity.md)
+Represents a set of quality updates policy approval types.
 
 ## Methods
 |Method|Return type|Description|
