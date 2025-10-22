@@ -70,7 +70,7 @@ items:
     href: toc/external-data-connections/toc.yml
   - name: Files
     href: toc/files/toc.yml
-    displayName: OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint
+    displayName: OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint, SharePoint Embedded
   - name: Identity and access
     href: toc/identity-and-access/toc.yml
     displayName: Azure AD, Microsoft identity platform, Microsoft Entra ID, Identity and access

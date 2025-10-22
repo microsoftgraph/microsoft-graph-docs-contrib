@@ -1,11 +1,11 @@
 ---
 title: "windowsDeviceADAccount resource type"
-description: "Not yet documented"
+description: "Intune Devices Windowsdeviceadaccount Resources ."
 author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
-ms.date: 09/13/2024
+ms.date: 08/01/2024
 ---
 
 # windowsDeviceADAccount resource type
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Not yet documented
+
 
 
 Inherits from [windowsDeviceAccount](../resources/intune-devices-windowsdeviceaccount.md)
@@ -22,9 +22,9 @@ Inherits from [windowsDeviceAccount](../resources/intune-devices-windowsdeviceac
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|password|String|Not yet documented Inherited from [windowsDeviceAccount](../resources/intune-devices-windowsdeviceaccount.md)|
-|domainName|String|Not yet documented|
-|userName|String|Not yet documented|
+|password|String| Inherited from [windowsDeviceAccount](../resources/intune-devices-windowsdeviceaccount.md)|
+|domainName|String||
+|userName|String||
 
 ## Relationships
 None

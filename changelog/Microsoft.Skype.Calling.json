@@ -1,6 +1,6 @@
 {
   "changelog": [
-        {
+    {
       "ChangeList": [
         {
           "Id": "20a311ad-fe97-407a-948c-9a171ad5984e",
@@ -15,6 +15,46 @@
       "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2025-10-21T17:05:23.3008252Z",
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "db4cc8dc-1abb-4c2d-a25e-fa9104c0fe9a",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "callEventType",
+          "ChangeType": "Addition",
+          "Description": "Added the **callEventType** enumeration type.",
+          "Target": "callEventType"
+        },
+        {
+          "Id": "db4cc8dc-1abb-4c2d-a25e-fa9104c0fe9a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "emergencyCallerInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [emergencyCallerInfo](https://learn.microsoft.com/en-us/graph/api/resources/emergencyCallerInfo?view=graph-rest-1.0) resource type.",
+          "Target": "emergencyCallerInfo"
+        },
+        {
+          "Id": "db4cc8dc-1abb-4c2d-a25e-fa9104c0fe9a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "callEvent",
+          "ChangeType": "Addition",
+          "Description": "Added the [callEvent](https://learn.microsoft.com/en-us/graph/api/resources/callEvent?view=graph-rest-1.0) resource type.",
+          "Target": "callEvent"
+        },
+        {
+          "Id": "db4cc8dc-1abb-4c2d-a25e-fa9104c0fe9a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "emergencyCallEvent",
+          "ChangeType": "Addition",
+          "Description": "Added the [emergencyCallEvent](https://learn.microsoft.com/en-us/graph/api/resources/emergencyCallEvent?view=graph-rest-1.0) resource type.",
+          "Target": "emergencyCallEvent"
+        }
+      ],
+      "Id": "db4cc8dc-1abb-4c2d-a25e-fa9104c0fe9a",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-10-14T20:21:16.9977147Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": "Calls and online meetings"
     },
