@@ -1,6 +1,6 @@
 {
   "changelog": [
-   {
+    {
       "ChangeList": [
         {
           "Id": "55aeecb0-d2cf-48d1-82b2-c42a18084e4e",
@@ -25,6 +25,48 @@
       "CreatedDateTime": "2025-10-21T17:53:57.8764356Z",
       "WorkloadArea": "Cloud communications",
       "SubArea": "Call"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "db4cc8dc-1abb-4c2d-a25e-fa9104c0fe9a",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "callEventType",
+          "ChangeType": "Addition",
+          "Description": "Added the **callEventType** enumeration type.",
+          "Target": "callEventType"
+        },
+        {
+          "Id": "db4cc8dc-1abb-4c2d-a25e-fa9104c0fe9a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "emergencyCallerInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [emergencyCallerInfo](https://learn.microsoft.com/en-us/graph/api/resources/emergencyCallerInfo?view=graph-rest-1.0) resource type.",
+          "Target": "emergencyCallerInfo"
+        },
+        {
+          "Id": "db4cc8dc-1abb-4c2d-a25e-fa9104c0fe9a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "callEvent",
+          "ChangeType": "Addition",
+          "Description": "Added the [callEvent](https://learn.microsoft.com/en-us/graph/api/resources/callEvent?view=graph-rest-1.0) resource type.",
+          "Target": "callEvent"
+        },
+        {
+          "Id": "db4cc8dc-1abb-4c2d-a25e-fa9104c0fe9a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "emergencyCallEvent",
+          "ChangeType": "Addition",
+          "Description": "Added the [emergencyCallEvent](https://learn.microsoft.com/en-us/graph/api/resources/emergencyCallEvent?view=graph-rest-1.0) resource type.",
+          "Target": "emergencyCallEvent"
+        }
+      ],
+      "Id": "db4cc8dc-1abb-4c2d-a25e-fa9104c0fe9a",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-10-14T20:21:16.9977147Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
     },
     {
       "ChangeList": [

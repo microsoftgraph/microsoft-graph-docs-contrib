@@ -22,7 +22,7 @@ $conditions = new AuthenticationConditions();
 $conditionsApplications = new AuthenticationConditionsApplications();
 $conditionsApplications->setIncludeAllApplications(false);
 $includeApplicationsAuthenticationConditionApplication1 = new AuthenticationConditionApplication();
-$includeApplicationsAuthenticationConditionApplication1->setAppId('a13d0fc1-04ab-4ede-b215-63de0174cbb4');
+$includeApplicationsAuthenticationConditionApplication1->setAppId('0001111-aaaa-2222-bbbb-3333cccc4444');
 $includeApplicationsArray []= $includeApplicationsAuthenticationConditionApplication1;
 $conditionsApplications->setIncludeApplications($includeApplicationsArray);
 

@@ -49,6 +49,7 @@ Items with the **folder** facet act as containers of items and therefore have a 
 | [Download file](../api/driveitem-get-content.md)                          | download Url | Download content of a **driveItem**.|
 | [Download specific file format][download-format]                             | download Url | Download content of a **driveItem** with a specific format.|
 | [Delete item](../api/driveitem-delete.md)                                    | None | Delete a **driveItem**.|
+| [Restore item](../api/driveitem-restore.md)                                    | [driveItem](../resources/driveitem.md) | Restore a deleted [driveItem](../resources/driveitem.md) that is currently in the [recycle bin](../resources/recyclebin.md).|
 | [Permanently delete item](../api/driveitem-permanentdelete.md)                  | None | Permanently delete a **driveItem** by using its ID. |
 | [Move item](../api/driveitem-move.md)                                        | [driveItem](../resources/driveitem.md) | Move a **driveItem** to a new parent item.|
 | [Copy item](../api/driveitem-copy.md)                                        | details about how to [monitor the progress](/graph/long-running-actions-overview) of the copy | Create a copy of a **driveItem** (including any children).|
