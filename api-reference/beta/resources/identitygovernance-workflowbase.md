@@ -26,7 +26,6 @@ None.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|administrationScopeTargets|[microsoft.graph.directoryObject](../resources/directoryobject.md) collection|The administration scope of the workflow. Optional.|
 |category|microsoft.graph.identityGovernance.lifecycleWorkflowCategory|The category of the workflow. The possible values are: `joiner`, `leaver`, `mover`, `unknownFutureValue`.|
 |createdDateTime|DateTimeOffset|When a workflow was created.|
 |description|String|A string that describes the purpose of the workflow.|
