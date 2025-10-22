@@ -1,5 +1,5 @@
 ---
-title: "List policyApproval"
+title: "List approvals"
 description: "Get a list of the policyApproval objects and their properties."
 author: "andredm7"
 ms.date: 10/22/2025
@@ -8,7 +8,7 @@ ms.subservice: "windows-autopatch"
 doc_type: apiPageType
 ---
 
-# List policyApprovals
+# List approvals
 
 Namespace: microsoft.graph.windowsUpdates
 
@@ -22,10 +22,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "windowsupdates-policyapproval-list-permissions"
+  "name": "windowsupdates-policy-list-approvals-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/windowsupdates-policyapproval-list-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/windowsupdates-policy-list-approvals-permissions.md)]
 
 ## HTTP request
 
@@ -84,14 +84,16 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.windowsUpdates.policyApproval",
-    "catalogEntryId": "1d8864c1-531f-4d5b-8225-8653ef4316d8",
-    "status": "suspended",
-    "id": "ab3a53f0-f7aa-10b1-04d4-8680584cbbb6",
-    "createdDateTime": "2020-06-09T10:00:00Z",
-    "lastModifiedDateTime": "2020-06-09T10:00:00Z"
-  }
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.windowsUpdates.policyApproval",
+      "catalogEntryId": "1d8864c1-531f-4d5b-8225-8653ef4316d8",
+      "status": "suspended",
+      "id": "ab3a53f0-f7aa-10b1-04d4-8680584cbbb6",
+      "createdDateTime": "2020-06-09T10:00:00Z",
+      "lastModifiedDateTime": "2020-06-09T10:00:00Z"
+    }
+  ]
 }
 ```
 
