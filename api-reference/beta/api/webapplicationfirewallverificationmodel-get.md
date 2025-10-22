@@ -139,7 +139,7 @@ Content-Type: application/json
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "get_webapplicationfirewallverificationmodel"
+  "name": "get_webapplicationfirewallverificationmodel_provider"
 }
 -->
 ``` http

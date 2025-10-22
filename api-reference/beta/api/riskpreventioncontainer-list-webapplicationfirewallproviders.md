@@ -2,7 +2,7 @@
 title: "List webApplicationFirewallProvider objects"
 description: "Get a list of the webApplicationFirewallProvider objects and their properties."
 author: "more-rasika"
-ms.date: 10/10/2025
+ms.date: 10/22/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the webApplicationFirewallProvider objects and their properties.
+Get a list of the [webApplicationFirewallProvider](../resources/webapplicationfirewallprovider.md) objects and their properties.
 
 ## Permissions
 

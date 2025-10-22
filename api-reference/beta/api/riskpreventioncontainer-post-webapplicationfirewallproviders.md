@@ -53,7 +53,7 @@ POST /identity/riskPrevention/webApplicationFirewallProviders
 
 In the request body, supply a JSON representation of the [webApplicationFirewallProvider](../resources/webapplicationfirewallprovider.md) object.
 
-You can specify the following properties when creating a **webApplicationFirewallProvider**. You must specify the **@odata.type** property to specify the type of **webApplicationFirewallProvider** to create; for example, `@odata.type": "microsoft.graph.AkamaiWebApplicationFirewallProvider"`.
+You can specify the following properties when creating a **webApplicationFirewallProvider**. You must specify the **@odata.type** property to specify the type of **webApplicationFirewallProvider** to create; for example, `@odata.type": "microsoft.graph.akamaiWebApplicationFirewallProvider"`.
 
 
 |Property|Type|Description|
