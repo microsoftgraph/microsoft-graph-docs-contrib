@@ -530,7 +530,7 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/lifecycleWorkflows/workflows/$entity",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/workflows/$entity",
   "category": "mover",
   "description": "Execute real-time tasks for employee job changes",
   "displayName": "On Demand workflow move",
@@ -559,8 +559,8 @@ Content-Type: application/json
 
 The following example shows a request that creates a workflow with the following configuration:
 + It's a "mover" workflow-enabled and set to run on-demand only.
-+ It runs for users within the set target scope of the administrative units "4f9dc456-0574-4122-9e55-8b4cc494b27d" and "2c987843-e9b1-4b1a-b924-ff1d2a9b054d".
-+ One task is carried out, which is to send an email to notify the user's manager of the move.
++ It runs for users without a set target scope as the adminsitration scope target argument is empty.
++ Two tasks are carried out, which are to send an email to notify the user's manager of the move, and to add a user to a specific group.
 
 <!-- {
   "blockType": "request",
@@ -627,7 +627,7 @@ The following example shows the response.
 HTTP/1.1 201 Created
 Content-Type: application/json
 {
-  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#microsoft.graph.identityGovernance.workflow",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.identityGovernance.workflow",
   "category": "mover",
   "description": "On-demand removal of the target scope of a workflow.",
   "displayName": "Remove existing target scope of a workflow",
@@ -643,7 +643,7 @@ Content-Type: application/json
   "lastModifiedBy": {
     "id": "2355df95-8fd8-499c-adcf-4b5f1acf713d"
   },
-  "tasks@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/lifecycleWorkflows/workflows('e64ec370-8b6c-4eb7-a692-a07ffa26dc1f')('e64ec370-8b6c-4eb7-a692-a07ffa26dc1f')/tasks",
+  "tasks@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/workflows('e64ec370-8b6c-4eb7-a692-a07ffa26dc1f')('e64ec370-8b6c-4eb7-a692-a07ffa26dc1f')/tasks",
   "tasks": [
     {
       "category": "mover",
