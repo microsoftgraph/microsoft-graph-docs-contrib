@@ -1,6 +1,6 @@
 ---
-title: "Create update ring"
-description: "Create a new update ring object."
+title: "Create ring"
+description: "Create a new ring object."
 author: "andredm7"
 ms.date: 10/22/2025
 ms.localizationpriority: medium
@@ -8,13 +8,13 @@ ms.subservice: "windows-autopatch"
 doc_type: apiPageType
 ---
 
-# Create update ring object
+# Create ring
 
 Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new ring object.
+Create a new [ring](../resources/windowsupdates-ring.md) object.
 
 ## Permissions
 
@@ -46,21 +46,20 @@ POST /admin/windows/updates/policies/{policyId}/rings
 
 ## Request body
 
-In the request body, supply a JSON representation of the [microsoft.graph.windowsUpdates.ring](../resources/windowsupdates-ring.md) object.
+In the request body, supply a JSON representation of the [ring](../resources/windowsupdates-ring.md) object.
 
-You can specify the following properties when creating a **ring**.
+You can specify the following properties when you create a **ring** object.
 
-## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String| The ring display name. Required.|
+|createdDateTime|DateTimeOffset| The date and time the ring is created. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Optional.|
+|deferralInDays|Int32| The quality update deferral period in days. The value must be between `0` and `30`. Optional.|
 |description|String| The ring description. Required.|
-|includedGroupAssignment|[microsoft.graph.windowsUpdates.includedGroupAssignment](../resources/windowsupdates-includedgroupassignment.md)| Represents an entity that governs the update deployment audience with included groups. Groups are logical containers of devices represented by Microsoft Entra groups. Required.|
-|excludedGroupAssignment|[microsoft.graph.windowsUpdates.excludedGroupAssignment](../resources/windowsupdates-excludedgroupassignment.md)| The date and time the ring was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, `2014 is 2014-01-01T00:00:00Z`. Required.|
-|deferralInDays|Int32| The Quality Update deferral period (days). The value must be between 0 and 30. Optional.|
-|isPaused|Boolean| Represents the pause action for the Quality Update ring policy. Required.|
-|createdDateTime|DateTimeOffset| The date and time the ring is created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, `2014 is 2014-01-01T00:00:00Z`. Optional.|
-|lastModifiedDateTime|DateTimeOffset| The date and time the ring was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, `2014 is 2014-01-01T00:00:00Z`. Optional.|
+|displayName|String| The ring display name. Required.|
+|excludedGroupAssignment|[microsoft.graph.windowsUpdates.excludedGroupAssignment](../resources/windowsupdates-excludedgroupassignment.md)| Governs the update deployment audience with excluded groups. Groups are logical containers of devices represented by Microsoft Entra groups. Required.|
+|includedGroupAssignment|[microsoft.graph.windowsUpdates.includedGroupAssignment](../resources/windowsupdates-includedgroupassignment.md)| Governs the update deployment audience with included groups. Groups are logical containers of devices represented by Microsoft Entra groups. Required.|
+|isPaused|Boolean| The pause action for the quality update ring policy. Required.|
+|lastModifiedDateTime|DateTimeOffset| The date and time the ring was last modified. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Optional.|
 
 ## Response
 
@@ -94,7 +93,6 @@ Content-Type: application/json
   "isPaused": "Boolean"
 }
 ```
-
 
 ### Response
 
