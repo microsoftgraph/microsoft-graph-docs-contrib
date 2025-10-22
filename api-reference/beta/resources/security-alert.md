@@ -112,8 +112,8 @@ Security providers create an alert in the system when they detect a threat. Micr
 | partiallyRemediated    | Investigation completed with some remediation plans successfully performed. |
 | running                | Investigation is currently ongoing.                                         |
 | pendingApproval        | Investigation paused; some actions require user review and approval.        |
-| pendingResource        | Investigation is on hold until required resources are available.        |
-| queued                 | Investigation is queued and on hold until it starts.                               |
+| pendingResource        | Investigation is paused until required resources are available.        |
+| queued                 | Investigation is queued and waiting to start.                                      |
 | innerFailure           | Investigation encountered an internal system failure.                       |
 | preexistingAlert       | Investigation wasn't started because a similar alert already exists.       |
 | unsupportedOs          | Investigation can't proceed because the operating system isn't supported. |
