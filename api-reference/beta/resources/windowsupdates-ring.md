@@ -16,7 +16,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 An abstract type that governs the update deployment ring.An update deployment ring supports only devices and is used to phase a rollout strategy for Windows updates.
 
-Base type of [qualityUpdateRing](../resources/qualityupdatering.md).
+Base type of [qualityUpdateRing](../resources/windowsupdates-qualityupdatering.md).
 
 ## Methods
 |Method|Return type|Description|
