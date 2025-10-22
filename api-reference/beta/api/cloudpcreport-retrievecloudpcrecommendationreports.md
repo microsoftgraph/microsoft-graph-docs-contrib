@@ -49,16 +49,16 @@ POST /deviceManagement/virtualEndpoint/report/retrieveCloudPcRecommendationRepor
 
 In the request body, supply a JSON representation of the parameters.
 
-The following table shows the parameters that are required for this action.
+The following table shows the parameters that you can use with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|filter|String|OData `$filter` syntax. Optional. Supported filters are: `and`, `or`, `lt`, `le`, `gt`, `ge`, and `eq`.|
-|groupBy|String collection|Specifies how to group the reports. Optional. If used, must have the same content as the **select** parameter.|
+|filter|String|OData `$filter` syntax. Supported filters are: `and`, `or`, `lt`, `le`, `gt`, `ge`, and `eq`. Optional.|
+|groupBy|String collection|Specifies how to group the reports. If used, must have the same content as the **select** parameter. Optional.|
 |orderBy|String collection|Specifies how to sort the reports. Optional.|
-|reportType|[cloudPcRecommendationReportType](../resources/cloudpcreports.md#cloudpcrecommendationreporttype-values)|The report type. The supported value is `cloudPcUsageCategoryReport`. Required.|
+|reportType|[cloudPcRecommendationReportType](../resources/cloudpcreport.md#cloudpcrecommendationreporttype-values)|The report type. Supports a subset of the values for **cloudPcRecommendationReportType**. The supported value is `cloudPcUsageCategoryReport`. Required.|
 |search|String|Specifies a String to search. Optional.|
-|select|String collection|OData `$select` syntax. Optional. The selected columns of the reports.|
+|select|String collection|OData `$select` syntax. The selected columns of the reports. Optional.|
 |skip|Int32|Number of records to skip. Optional.|
 |top|Int32|The number of top records to return. Optional.|
 
@@ -255,7 +255,7 @@ Content-Type: application/octet-stream
     [
       "1f574bb6-ac68-4f27-be1e-b810ae5e3b52",
       "CPC-Test-001",
-      "test001@w365testshself01.onmicrosoft.com",
+      "test001@fabrikam.com",
       "d3468c8c-3545-4f44-a32f-b465934d2498",
       "Cloud PC Enterprise 2vCPU/8GB/256GB",
       "Undersized",
@@ -265,7 +265,7 @@ Content-Type: application/octet-stream
     [
       "37ea6497-83fb-474b-b07b-54f0ac16f3ed",
       "CPC-Test-002",
-      "test002@w365testshself01.onmicrosoft.com",
+      "test002@fabrikam.com",
       "d3468c8c-3545-4f44-a32f-b465934d2498",
       "Cloud PC Enterprise 2vCPU/8GB/256GB",
       "Oversized",
@@ -275,7 +275,7 @@ Content-Type: application/octet-stream
     [
       "4c6a1fb2-1ac7-40fc-a213-fb0eaec872f3",
       "CPC-Test-003",
-      "test003@w365testshself01.onmicrosoft.com",
+      "test003@fabrikam.com",
       "d3468c8c-3545-4f44-a32f-b465934d2498",
       "Cloud PC Enterprise 2vCPU/8GB/256GB",
       "Rightsized",
@@ -285,7 +285,7 @@ Content-Type: application/octet-stream
     [
       "632dbe76-2fe3-4a2f-8b91-8514ecfe9d8c",
       "CPC-Test-004",
-      "test004@w365testshself01.onmicrosoft.com",
+      "test004@fabrikam.com",
       "d3468c8c-3545-4f44-a32f-b465934d2498",
       "Cloud PC Enterprise 2vCPU/8GB/256GB",
       "Underutilized",
