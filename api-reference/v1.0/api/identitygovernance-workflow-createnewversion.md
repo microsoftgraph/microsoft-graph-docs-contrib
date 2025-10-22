@@ -5,7 +5,7 @@ author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: apiPageType
-ms.date: 04/15/2024
+ms.date: 10/22/2025
 ---
 
 # workflow: createNewVersion
