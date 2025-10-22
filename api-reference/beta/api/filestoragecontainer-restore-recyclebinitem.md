@@ -1,6 +1,6 @@
 ---
-title: "Restore a recycle bin item by original drive item ID"
-description: "Restore recycleBinItem by usingdriveItemId as alternate key."
+title: "Restore recycleBinItem by driveItemId"
+description: "Restore recycleBinItem by using driveItemId as alternate key."
 author: "cindylay"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
