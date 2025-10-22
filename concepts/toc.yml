@@ -865,7 +865,7 @@ items:
     - name: Channel
       items:
       - name: Membership overview
-        href: manage-channel-memberships-allmembers.md
+        href: manage-channel-memberships-overview.md
     - name: Messaging APIs
       items:
       - name: Working with Microsoft Teams messaging
