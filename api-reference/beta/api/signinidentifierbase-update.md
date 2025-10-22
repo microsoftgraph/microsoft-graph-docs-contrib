@@ -27,6 +27,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/signinidentifierbase-update-permissions.md)]
 
+> [!IMPORTANT]
+The least privileged built-in role required for this operation is *Authentication Policy Administrator*.
+
 ## HTTP request
 
 <!-- {

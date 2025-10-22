@@ -27,6 +27,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/signinidentifierbase-get-permissions.md)]
 
+> [!IMPORTANT]
+The least privileged built-in role required for this operation is *Authentication Policy Administrator*.
+
 ## HTTP request
 
 <!-- {
@@ -45,7 +48,7 @@ GET /identity/signInIdentifiers/{signInIdentifier-name}
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method doesn't support OData query parameters to help customize the response. The sign-in identifier is retrieved directly through the URL path.
 
 ## Request headers
 
