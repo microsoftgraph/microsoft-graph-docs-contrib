@@ -1,6 +1,6 @@
 ---
-title: "Create update applicable content"
-description: "Create a new update applicable content object."
+title: "Create applicableContent"
+description: "Create a new applicableContent object."
 author: "andredm7"
 ms.date: 10/08/2025
 ms.localizationpriority: medium
@@ -8,13 +8,13 @@ ms.subservice: "windows-autopatch"
 doc_type: apiPageType
 ---
 
-# Create new update aplicable content
+# Create applicableContent
 
 Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new Applicable Content object.
+Create a new [applicableContent](../resources/windowsupdates-applicablecontent.md) object.
 
 ## Permissions
 
@@ -46,16 +46,13 @@ POST /admin/windows/updates/policies/{policyId}/applicableContent
 
 ## Request body
 
-In the request body, supply a JSON representation of the [microsoft.graph.windowsUpdates.applicableContent](../resources/windowsupdates-applicablecontent.md) object.
+In the request body, supply a JSON representation of the [applicableContent](../resources/windowsupdates-applicablecontent.md) object.
 
-You can specify the following properties when creating a **applicableContent**.
-
-## Properties
+You can specify the following properties when you create an **applicableContent** object.
 
 |Property|Type|Description|
 |:---|:---|:---|
 |catalogEntryId|String| ID of the catalog entry for the applicable content. Required.|
-
 
 ## Response
 
@@ -72,7 +69,7 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/admin/windows/updates/policies/{policyId}/applicableContent
+POST https://graph.microsoft.com/beta/admin/windows/updates/policies/45a01ef3-fb4b-8c1d-2428-1f060464033c/applicableContent
 Content-Type: application/json
 
 {
