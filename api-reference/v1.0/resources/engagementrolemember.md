@@ -2,7 +2,7 @@
 title: "engagementRoleMember resource type"
 description: "Represents the role of member management in Viva Engage, which involves assigning and managing various administrative roles and the corporate communications role within the Viva Engage platform."
 author: "richafnu"
-ms.date: 03/27/2025
+ms.date: 09/22/2025
 ms.localizationpriority: medium
 ms.subservice: "viva-engage"
 doc_type: resourcePageType
@@ -11,8 +11,6 @@ doc_type: resourcePageType
 # engagementRoleMember resource type
 
 Namespace: microsoft.graph
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 <!-- Viva Engage handles role member management by assigning and managing various member roles within the platform.  -->
 

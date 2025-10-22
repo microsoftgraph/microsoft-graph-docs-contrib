@@ -2,7 +2,7 @@
 title: "Delete engagementRoleMember"
 description: "Delete a Viva Engage role from a user."
 author: "richafnu"
-ms.date: 03/27/2025
+ms.date: 09/22/2025
 ms.localizationpriority: medium
 ms.subservice: "viva-engage"
 doc_type: apiPageType
@@ -12,11 +12,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-Delete a Viva Engage role from a user.
-
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+Delete a Viva Engage [role](../resources/engagementrolemember.md) from a user.
 
 ## Permissions
 
@@ -60,13 +56,12 @@ The following example shows a request.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/employeeExperience/roles/5f3c2d11-8a9b-4d6e-b214-7c1f2b9a6d55/members/a40473a5-0fb4-a250-e029-f6fe33d07733
+DELETE https://graph.microsoft.com/v1.0/employeeExperience/roles/5f3c2d11-8a9b-4d6e-b214-7c1f2b9a6d55/members/a40473a5-0fb4-a250-e029-f6fe33d07733
 ```
 
 ### Response
 
 The following example shows the response.
-
 <!-- {
   "blockType": "response",
   "truncated": true

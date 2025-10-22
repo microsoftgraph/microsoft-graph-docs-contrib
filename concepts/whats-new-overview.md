@@ -35,6 +35,10 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 - [List the dependent education assignment resources](/graph/api/educationassignmentresource-list-dependentresources) for a given education assignment resource.
 - [List the dependent education submission resources](/graph/api/educationsubmissionresource-list-dependentresources) for a given education submission resource.
 
+### Employee experience | Employee engagement
+
+Viva Engage now supports new APIs for managing roles, allowing you to list, assign, and remove roles for users. For more information, see [Use the Microsoft Graph API to work with Viva Engage](/graph/api/resources/engagement-api-overview#role-management).
+
 ### Files
 
 Added the following new endpoints as supported request URLs for the [driveItem: createUploadSession](/graph/api/driveitem-createuploadsession) API:

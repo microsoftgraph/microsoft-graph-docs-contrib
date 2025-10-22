@@ -2,7 +2,7 @@
 title: "List members"
 description: "Get a list of users with assigned roles in Viva Engage."
 author: "richafnu"
-ms.date: 03/27/2025
+ms.date: 09/22/2025
 ms.localizationpriority: medium
 ms.subservice: "viva-engage"
 doc_type: apiPageType
@@ -12,11 +12,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Get a list of users with assigned [roles](../resources/engagementrole.md) in Viva Engage.
-
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
@@ -47,7 +43,7 @@ The following table shows how you can use OData query parameters with this API.
 | Filter role members by user ID | `GET /employeeExperience/roles/{engagementRoleId}/members?$filter=userId eq 'e8d9f6a2-1c34-4b7a-9f11-2a4d8b7c9e01'` |
 | Include the total count of role members       | `GET /employeeExperience/roles/{engagementRoleId}/members?$count=true` |
 | Get only the **id** and **createdDateTime** properties for a list of role members | `GET /employeeExperience/roles/{engagementRoleId}/members?$select=id,createdDateTime` |
-  
+
 ## Request headers
 
 |Name|Description|
@@ -73,7 +69,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/employeeExperience/roles/a40473a5-0fb4-a250-e029-f6fe33d07733/members
+GET https://graph.microsoft.com/v1.0/employeeExperience/roles/a40473a5-0fb4-a250-e029-f6fe33d07733/members
 ```
 
 ### Response

@@ -2,7 +2,7 @@
 title: "Create engagementRoleMember"
 description: "Create a new engagementRoleMember object that assigns a Viva Engage role to a user."
 author: "richafnu"
-ms.date: 03/27/2025
+ms.date: 09/22/2025
 ms.localizationpriority: medium
 ms.subservice: "viva-engage"
 doc_type: apiPageType
@@ -12,11 +12,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Create a new [engagementRoleMember](../resources/engagementrolemember.md) object that assigns a Viva Engage role to a user.
-
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
@@ -68,11 +64,11 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/employeeExperience/roles/a40473a5-0fb4-a250-e029-f6fe33d07733/members
+POST https://graph.microsoft.com/v1.0/employeeExperience/roles/a40473a5-0fb4-a250-e029-f6fe33d07733/members
 Content-Type: application/json
 
 {
-  "user@odata.bind": "https://graph.microsoft.com/beta/users('e8d9f6a2-1c34-4b7a-9f11-2a4d8b7c9e01')"
+  "user@odata.bind": "https://graph.microsoft.com/v1.0/users('e8d9f6a2-1c34-4b7a-9f11-2a4d8b7c9e01')"
 }
 ```
 
@@ -97,4 +93,3 @@ Content-Type: application/json
   "createdDateTime": "2025-09-22T14:03:00Z"
 }
 ```
-

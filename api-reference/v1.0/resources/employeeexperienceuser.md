@@ -2,7 +2,7 @@
 title: "employeeExperienceUser resource type"
 description: "Represents a container that exposes navigation properties for the employee experience resources of a user."
 author: "richafnu"
-ms.date: 04/29/2025
+ms.date: 09/22/2025
 ms.localizationpriority: medium
 ms.subservice: "viva-engage"
 doc_type: resourcePageType
@@ -11,8 +11,6 @@ doc_type: resourcePageType
 # employeeExperienceUser resource type
 
 Namespace: microsoft.graph
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents a container that exposes navigation properties for the employee experience resources of a user.
 
@@ -24,7 +22,6 @@ Inherits from [entity](../resources/entity.md).
 |[List assigned roles](../api/employeeexperienceuser-list-assignedroles.md)|[engagementRole](../resources/engagementrole.md) collection|Get a list of all the [roles](../resources/engagementrole.md) assigned to a user in Viva Engage.|
 
 ## Properties
-
 None.
 
 ## Relationships

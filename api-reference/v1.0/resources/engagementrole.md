@@ -2,7 +2,7 @@
 title: "engagementRole resource type"
 description: "Represents a predefined Viva Engage role."
 author: "richafnu"
-ms.date: 03/27/2025
+ms.date: 09/22/2025
 ms.localizationpriority: medium
 ms.subservice: "viva-engage"
 doc_type: resourcePageType
@@ -11,8 +11,6 @@ doc_type: resourcePageType
 # engagementRole resource type
 
 Namespace: microsoft.graph
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents a predefined Viva Engage role. Each role includes a unique identifier and display name and can be assigned to one or more users within the platform.
 
@@ -29,7 +27,7 @@ Inherits from [entity](../resources/entity.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|The name of the role.|
-|id|String|The unique identifier of the role. Read-only. Inherits from [entity](../resources/entity.md)|
+|id|String|The unique identifier of the role. Read-only. Inherited from [entity](../resources/entity.md)|
 
 ## Relationships
 | Relationship | Type | Description |
@@ -49,7 +47,7 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.engagementRole",
-  "id": "String (identifier)",
-  "displayName": "String"
+  "displayName": "String",
+  "id": "String (identifier)"
 }
 ```
