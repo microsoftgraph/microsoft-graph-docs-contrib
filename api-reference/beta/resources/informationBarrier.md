@@ -1,7 +1,7 @@
 ---
 title: "informationBarrier resource type"
 description: "Represents informationBarrier of a fileStorageContainer."
-author: "daili"
+author: "lilealdai"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
 doc_type: resourcePageType
