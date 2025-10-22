@@ -1,7 +1,7 @@
 ---
 title: "workplaceSensorDevice resource type"
 description: "Represents hardware capable of hosting multiple sensors that collect and report data on physical or environmental conditions, including occupancy, headcount, inferred occupancy, temperature, and more."
-author: "akwasiakosah_microsoft"
+author: "akwasiakosah101"
 ms.localizationpriority: medium
 ms.subservice: "outlook"
 doc_type: resourcePageType
