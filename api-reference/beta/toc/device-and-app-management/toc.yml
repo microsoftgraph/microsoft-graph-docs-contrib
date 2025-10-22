@@ -132,8 +132,8 @@ items:
       href: ../../api/cloudpc-retrievecloudpccountbystatus.md
     - name: List for user
       href: ../../api/user-list-cloudpcs.md
-    - name: Get launch info
-      href: ../../api/cloudpc-getcloudpclaunchinfo.md
+    - name: Retrieve launch detail
+      href: ../../api/cloudpc-retrievecloudpclaunchdetail.md
     - name: Get connectivity history
       href: ../../api/cloudpc-getcloudpcconnectivityhistory.md
     - name: Get supported remote actions
@@ -150,6 +150,8 @@ items:
       href: ../../api/cloudpc-retrievesnapshots.md
     - name: Get frontline access state
       href: ../../api/cloudpc-getfrontlinecloudpcaccessstate.md
+    - name: Get launch info (deprecated)
+      href: ../../api/cloudpc-getcloudpclaunchinfo.md
   - name: Cloud PC audit event
     items:
     - name: Cloud PC audit event
@@ -238,9 +240,9 @@ items:
       href: ../../api/cloudpcexternalpartner-get.md
     - name: Update
       href: ../../api/cloudpcexternalpartner-update.md
-  - name: Cloud PC front line service plan
+  - name: Cloud PC frontline service plan
     items:
-    - name: Cloud PC front line service plan
+    - name: Cloud PC frontline service plan
       href: ../../resources/cloudpcfrontlineserviceplan.md
     - name: List
       href: ../../api/virtualendpoint-list-frontlineserviceplans.md
@@ -254,6 +256,12 @@ items:
       href: ../../api/virtualendpoint-list-galleryimages.md
     - name: Get
       href: ../../api/cloudpcgalleryimage-get.md
+  - name: Cloud PC managed license
+    items:
+    - name: Cloud PC managed license
+      href: ../../resources/cloudpcmanagedlicense.md
+    - name: List
+      href: ../../api/virtualendpoint-list-managedlicenses.md
   - name: Cloud PC Azure network connection
     items:
     - name: Cloud PC Azure network connection
@@ -360,6 +368,12 @@ items:
     items:
     - name: Cloud PC snapshot
       href: ../../resources/cloudpcsnapshot.md
+    - name: Import snapshot
+      href: ../../api/cloudpcsnapshot-importsnapshot.md
+    - name: Purge imported snapshot
+      href: ../../api/cloudpcsnapshot-purgeimportedsnapshot.md
+    - name: Retrieve imported snapshots
+      href: ../../api/cloudpcsnapshot-retrievesnapshotimportresults.md
     - name: Retrieve snapshots
       href: ../../api/cloudpc-retrievesnapshots.md
   - name: Cloud PC supported region
@@ -416,15 +430,11 @@ items:
       href: ../../api/virtualendpoint-list-supportedregions.md
     - name: List service plans
       href: ../../api/virtualendpoint-list-serviceplans.md
-    - name: List external partner settings (deprecated)
-      href: ../../api/virtualendpoint-list-externalpartnersettings.md
-    - name: Create external partner setting (deprecated)
-      href: ../../api/virtualendpoint-post-externalpartnersettings.md
     - name: List external partners
       href: ../../api/virtualendpoint-list-externalpartners.md
     - name: Create external partner
       href: ../../api/virtualendpoint-post-externalpartners.md
-    - name: List front line service plans
+    - name: List frontline service plans
       href: ../../api/virtualendpoint-list-frontlineserviceplans.md
     - name: List bulk actions
       href: ../../api/virtualendpoint-list-bulkactions.md
@@ -434,6 +444,12 @@ items:
       href: ../../api/virtualendpoint-retrievetenantencryptionsetting.md
     - name: List cloud apps
       href: ../../api/virtualendpoint-list-cloudapps.md
+    - name: List managed licenses
+      href: ../../api/virtualendpoint-list-managedlicenses.md
+    - name: List external partner settings (deprecated)
+      href: ../../api/virtualendpoint-list-externalpartnersettings.md
+    - name: Create external partner setting (deprecated)
+      href: ../../api/virtualendpoint-post-externalpartnersettings.md
   - name: Alert monitoring
     items:
     - name: Monitoring
@@ -527,7 +543,9 @@ items:
       href: ../../resources/cloudpcfrontlineshareddevicedetail.md
     - name: Cloud PC health check item
       href: ../../resources/cloudpchealthcheckitem.md
-    - name: Cloud PC launch info
+    - name: Cloud PC launch detail
+      href: ../../resources/cloudpclaunchdetail.md
+    - name: Cloud PC launch info (deprecated)
       href: ../../resources/cloudpclaunchinfo.md
     - name: Cloud PC login result
       href: ../../resources/cloudpcloginresult.md
@@ -557,6 +575,10 @@ items:
       href: ../../resources/cloudpcreviewstatus.md
     - name: Cloud PC scoped permission
       href: ../../resources/cloudpcscopedpermission.md
+    - name: Cloud PC snapshot import action detail
+      href: ../../resources/cloudpcsnapshotimportactiondetail.md
+    - name: Cloud PC snapshot import action result
+      href: ../../resources/cloudpcsnapshotimportactionresult.md
     - name: Cloud PC source device image
       href: ../../resources/cloudpcsourcedeviceimage.md
     - name: Cloud PC status detail
@@ -565,6 +587,8 @@ items:
       href: ../../resources/cloudpcstatusdetails.md
     - name: Cloud PC status summary
       href: ../../resources/cloudpcstatussummary.md
+    - name: Cloud PC storage blob detail
+      href: ../../resources/cloudpcstorageblobdetail.md
     - name: Cloud PC subscription
       href: ../../resources/cloudpcsubscription.md
     - name: Cloud PC supported region restriction detail

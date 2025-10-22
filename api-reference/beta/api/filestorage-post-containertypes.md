@@ -20,7 +20,7 @@ Create a new [fileStorageContainerType](../resources/filestoragecontainertype.md
 > * The tenant must own the application that is assigned as the owner of the **fileStorageContainerType** (**owningAppId**).
 > * The registration of a container type in a newly created tenant can fail if the tenant isn't yet fully ready. You might need to wait at least an hour before you can register a container type in a new tenant.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

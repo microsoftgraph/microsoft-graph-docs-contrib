@@ -19,15 +19,13 @@ Update the properties of a [fraudProtectionProvider](../resources/fraudprotectio
 - [arkoseFraudProtectionProvider](../resources/arkosefraudprotectionprovider.md) resource type
 - [humanSecurityFraudProtectionProvider](../resources/humansecurityfraudprotectionprovider.md) resource type
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "fraudprotectionprovider-update-permissions"
-}
--->
+<!-- { "blockType": "permissions", "name": "fraudprotectionprovider_update" } -->
 [!INCLUDE [permissions-table](../includes/permissions/fraudprotectionprovider-update-permissions.md)]
 
 [!INCLUDE [rbac-fraudprovider-apis-write](../includes/rbac-for-apis/rbac-fraudprovider-apis-write.md)]
@@ -74,6 +72,7 @@ If successful, this method returns a `204 No Content` response code.
 ### Request
 
 The following example shows a request to update Arkose fraud protection provider.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_fraudprotectionprovider"
@@ -89,6 +88,11 @@ Content-Type: application/json
 }
 ```
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-fraudprotectionprovider-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 

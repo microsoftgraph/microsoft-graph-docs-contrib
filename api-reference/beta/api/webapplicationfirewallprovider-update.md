@@ -2,7 +2,7 @@
 title: "Update webApplicationFirewallProvider"
 description: "Update the properties of a webApplicationFirewallProvider object."
 author: "more-rasika"
-ms.date: 10/10/2025
+ms.date: 10/22/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a webApplicationFirewallProvider object.
+Update the properties of a [webApplicationFirewallProvider](../resources/webapplicationfirewallprovider.md) object.
 
 ## Permissions
 
@@ -50,6 +50,7 @@ PATCH /identity/riskPrevention/webApplicationFirewallProviders/{webApplicationFi
 
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
+You must specify the **@odata.type** property to specify the type of **webApplicationFirewallProvider** to update; for example, `@odata.type": "microsoft.graph.akamaiWebApplicationFirewallProvider"`.
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -83,7 +84,7 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.cloudFlareWebApplicationFirewallProvider",
-  "displayName": "String"
+  "displayName": "cloudFlare"
 }
 ```
 
@@ -94,7 +95,8 @@ The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.webApplicationFirewallProvider"
 }
 -->
 ``` http
@@ -104,7 +106,7 @@ Content-Type: application/json
 {
   "@odata.type": "#microsoft.graph.cloudFlareWebApplicationFirewallProvider",
   "id": "4d8ac75a-e882-18c6-8ad4-2ab20c742e52",
-  "displayName": "String"
+  "displayName": "cloudFlare"
 }
 ```
 

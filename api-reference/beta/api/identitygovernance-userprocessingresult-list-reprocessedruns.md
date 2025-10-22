@@ -79,7 +79,6 @@ GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/delet
 
 ---
 
-
 ### Response
 
 The following example shows the response.

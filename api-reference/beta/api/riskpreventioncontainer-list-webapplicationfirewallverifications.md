@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the webApplicationFirewallVerificationModel objects and their properties.
+Get a list of the [webApplicationFirewallVerificationModel](../resources/webapplicationfirewallverificationmodel.md) objects and their properties.
 
 ## Permissions
 
@@ -143,7 +143,7 @@ Content-Type: application/json
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "list_webapplicationfirewallverificationmodel"
+  "name": "list_webapplicationfirewallverificationmodel_providers"
 }
 -->
 ``` http

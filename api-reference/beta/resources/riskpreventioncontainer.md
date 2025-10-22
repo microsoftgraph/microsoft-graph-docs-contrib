@@ -1,6 +1,6 @@
 ---
 title: "riskPreventionContainer resource type"
-description: "Represents the entry point for risk prevention features in External Identities."
+description: "Represents the entry point for risk prevention features in Microsoft Entra External ID."
 author: "more-rasika"
 ms.date: 10/10/2025
 ms.localizationpriority: high
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the entry point for risk prevention features in [External Identities](/azure/active-directory/external-identities/) for Microsoft Entra External ID tenants.
+Represents the entry point for risk prevention features in [Microsoft Entra External ID](/entra/external-id/external-identities-overview).
 
 Inherits from [entity](../resources/entity.md).
 

@@ -19,6 +19,7 @@ Represents the configuration of a web application firewall (WAF) provider in a M
 This resource is an abstract type from which the following WAF provider resources derive:
 - [akamaiWebApplicationFirewallProvider](../resources/akamaiwebapplicationfirewallprovider.md)
 - [cloudFlareWebApplicationFirewallProvider](../resources/cloudflarewebapplicationfirewallprovider.md)
+
 Inherits from [entity](../resources/entity.md).
 
 

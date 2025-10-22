@@ -3714,3 +3714,12 @@ Possible values for user account types (group membership), per Windows definitio
 |warning|
 |failure|
 |unknownFutureValue|
+
+### callEventType values
+
+| Member |
+| ------------------ |
+| callStarted |
+| callEnded |
+| unknownFutureValue |
+| rosterUpdated |
