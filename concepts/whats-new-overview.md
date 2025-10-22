@@ -57,6 +57,15 @@ Added the following new endpoints as supported request URLs for the [driveItem: 
 
 These new permissions enable more granular access control for managing **internalDomainFederation** and **domain** resources.
 
+### Identity and access | Identity and sign-in
+
+Microsoft Graph now supports new delegated and application permissions scoped to individual authentication methods supported by Microsoft Entra. These permissions provide lesser-privileged alternatives to the more widely scoped UserAuthenticationMethod.ReadWrite.All and UserAuthenticationMethod.Read.All permissions, helping customers improve their security posture by adopting least privilege practices.
+
+| Permission | Applies to resources | Delegated | Application |
+|:---|:---|:---|:---|
+| UserAuthMethod-Passkey.Read.All | FIDO2 security key authentication method | ![Supported](/concepts/images/yesandnosymbols/greencheck.svg) | ![Supported](/concepts/images/yesandnosymbols/greencheck.svg) |
+| UserAuthMethod-Passkey.ReadWrite.All | FIDO2 security key authentication method | ![Supported](/concepts/images/yesandnosymbols/greencheck.svg) | ![Supported](/concepts/images/yesandnosymbols/greencheck.svg) |
+
 ### Teamwork and communications | Calls and online meetings
 
 Use the [callEvent](/graph/api/resources/callevent) and [emergencyCallEvent](/graph/api/resources/emergencycallevent) resources to provide detailed information about both standard and emergency call events. For more information, see [Change notification for active meeting call events](/graph/changenotifications-for-onlinemeeting) and [change notification for emergency call events](/graph/changenotifications-for-emergencycalls).
