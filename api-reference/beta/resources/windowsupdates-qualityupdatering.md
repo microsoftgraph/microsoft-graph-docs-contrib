@@ -1,6 +1,6 @@
 ---
 title: "qualityUpdateRing resource type"
-description: "Represents an entity that governs the update deployment ring specifically for Quality Updates. An update deployment ring supports only devices, and is used to phase a rollout strategy for Quality Updates."
+description: "Represents an entity that governs the update deployment ring specifically for quality updates."
 author: "andredm7"
 ms.date: 10/08/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an entity that governs the update deployment ring specifically for Quality Updates. An update deployment ring supports only devices, and is used to phase a rollout strategy for Quality Updates.
+Represents an entity that governs the update deployment ring specifically for quality updates. An update deployment ring supports only devices and is used to phase the rollout strategy for quality updates.
 
 Inherits from [ring](../resources/windowsupdates-ring.md).
 
