@@ -38,8 +38,8 @@ Contains information about an ad hoc call, including Public Switched Telephone N
 |Property|Type|Description|
 |:---|:---|:---|
 | endDateTime | DateTime | The meeting end time in UTC. Required when an ad hoc call is ended. |
-|id|String|The unique identifier for the ad hoc call, including PSTN, 1:1, and group calls. Read-only.|
-| startDateTime | DateTime | The meeting start time in UTC. Required when an ad hoc call is started. |
+| id | String | The unique identifier for the call, including PSTN, 1:1, and group calls. Read-only. |
+| startDateTime | DateTime | The meeting start time in UTC. Required when the call is started. |
 
 ## Relationships
 
