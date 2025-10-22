@@ -22,10 +22,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "windowsupdates-policyapproval-post-permissions"
+  "name": "windowsupdates-policy-post-approvals-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/windowsupdates-policyapproval-post-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/windowsupdates-policy-post-approvals-permissions.md)]
 
 ## HTTP request
 
