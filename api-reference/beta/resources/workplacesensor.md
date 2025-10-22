@@ -1,7 +1,7 @@
 ---
 title: "workplaceSensor resource type"
 description: "Represents a sensor on hardware that collects and reports data on physical or environmental conditions, including occupancy, headcount, inferred occupancy, temperature, wifi, and more."
-author: "akwasiakosah_microsoft"
+author: "akwasiakosah101"
 ms.localizationpriority: medium
 ms.subservice: "outlook"
 doc_type: resourcePageType
@@ -34,7 +34,7 @@ Represents a sensor on hardware that collects and reports data on physical or en
 | inferredOccupancy  | The sensor estimates the occupancy status of the place based on other clues, such as the presence of a laptop or a backpack. Use it for sensors that don't directly detect motion or people count. |
 | heartbeat          | The sensor reports the heartbeat of the device. It indicates if the device is online or not. Use it for sensors that monitor the status of the device.                                             |
 | badge | The sensor reports badge-swiping events of the people. Use it for sensors that accept active user interactions. |
-| wifi  | The sensor to upload wifi devices for applications such as work location data. |
+| wifi  | The sensor to upload wifi devices for automatic location detection. |
 | unknownFutureValue | Evolvable enumeration sentinel value. Don't use.                                                                                                                                                   |
 
 ## Relationships
