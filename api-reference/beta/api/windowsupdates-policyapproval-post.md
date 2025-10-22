@@ -1,6 +1,6 @@
 ---
-title: "Create a policyApproval"
-description: "Create a microsoft.graph.windowsUpdates.policyApproval object."
+title: "Create policyApproval"
+description: "Create a new policyApproval object."
 author: "andredm7"
 ms.date: 10/22/2025
 ms.localizationpriority: medium
@@ -8,13 +8,13 @@ ms.subservice: "windows-autopatch"
 doc_type: apiPageType
 ---
 
-# Create a policyApproval
+# Create policyApproval
 
 Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a [microsoft.graph.windowsUpdates.policyApproval](../resources/windowsupdates-policyapproval.md) object.
+Create a new [policyApproval](../resources/windowsupdates-policyapproval.md) object.
 
 ## Permissions
 
@@ -34,12 +34,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-POST /admin/windows/updates/policies/{policyId}/approvals/
+POST /admin/windows/updates/policies/{policyId}/approvals
 ```
-
-## Optional query parameters
-
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -66,7 +62,7 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/admin/windows/updates/policies/ab3a53f0-f7aa-10b1-04d4-8680584cbbb6/approvals/
+POST https://graph.microsoft.com/beta/admin/windows/updates/policies/ab3a53f0-f7aa-10b1-04d4-8680584cbbb6/approvals
 ```
 
 ### Response
@@ -84,12 +80,12 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.type": "#microsoft.graph.windowsUpdates.policyApproval",
-    "catalogEntryId": "1d8864c1-531f-4d5b-8225-8653ef4316d8",
-    "status": "suspended",
-    "id": "ab3a53f0-f7aa-10b1-04d4-8680584cbbb6",
-    "createdDateTime": "2020-06-09T10:00:00Z",
-    "lastModifiedDateTime": "2020-06-09T10:00:00Z"
+  "@odata.type": "#microsoft.graph.windowsUpdates.policyApproval",
+  "catalogEntryId": "1d8864c1-531f-4d5b-8225-8653ef4316d8",
+  "status": "suspended",
+  "id": "ab3a53f0-f7aa-10b1-04d4-8680584cbbb6",
+  "createdDateTime": "2020-06-09T10:00:00Z",
+  "lastModifiedDateTime": "2020-06-09T10:00:00Z"
 }
 ```
 
