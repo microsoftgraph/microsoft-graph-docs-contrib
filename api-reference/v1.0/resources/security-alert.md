@@ -50,7 +50,7 @@ When a security provider detects a threat, it creates an alert in the system. Mi
 |id|String| Unique identifier to represent the **alert** resource.|
 |incidentId|String| Unique identifier to represent the [incident](security-incident.md) this **alert** resource is associated with.|
 |incidentWebUrl|String| URL for the incident page in the Microsoft 365 Defender portal.|
-|investigationState|[microsoft.graph.security.alertInvestigationState](#alertinvestigationstate-values)| Information on the current status of the investigation. Possible values are: `unknown`, `terminated`, `successfullyRemediated`, `benign`, `failed`, `partiallyRemediated`, `running`, `pendingApproval`, `pendingResource`, `queued`, `innerFailure`, `preexistingAlert`, `unsupportedOs`, `unsupportedAlertType`, `suppressedAlert`, `partiallyInvestigated`, `terminatedByUser`, `terminatedBySystem`, `unknownFutureValue`.|
+|investigationState|[microsoft.graph.security.investigationState](#investigationstate-values)| Information on the current status of the investigation. Possible values are: `unknown`, `terminated`, `successfullyRemediated`, `benign`, `failed`, `partiallyRemediated`, `running`, `pendingApproval`, `pendingResource`, `queued`, `innerFailure`, `preexistingAlert`, `unsupportedOs`, `unsupportedAlertType`, `suppressedAlert`, `partiallyInvestigated`, `terminatedByUser`, `terminatedBySystem`, `unknownFutureValue`.|
 |lastActivityDateTime|DateTimeOffset| The oldest activity associated with the alert.|
 |lastUpdateDateTime|DateTimeOffset| Time when the alert was last updated at Microsoft 365 Defender.|
 |mitreTechniques|Collection(Edm.String)| The attack techniques, as aligned with the MITRE ATT&CK framework.|
@@ -98,7 +98,7 @@ When a security provider detects a threat, it creates an alert in the system. Mi
 | lineOfBusinessApplication  | The alert caught a true suspicious activity that is considered OK because it's a known and confirmed internal application.  |
 | unknownFutureValue         | Evolvable enumeration sentinel value. Don't use.                                                                            |
 
-### alertInvestigationState values
+### investigationState values
 
 | Member                 | Description                                                                 |
 |:-----------------------|:----------------------------------------------------------------------------|
