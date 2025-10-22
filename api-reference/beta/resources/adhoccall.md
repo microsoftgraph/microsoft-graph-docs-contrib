@@ -15,14 +15,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Contains information about an ad hoc call, including PSTN, 1:1, and group calls.
+Contains information about an ad hoc call, including Public Switched Telephone Network (PSTN), 1:1, and group calls.
 
 > [!NOTE]
 > For ad hoc calls:
 >
 > - To obtain the call ID while the call is still ongoing, have the app get called through [App-hosted/service-hosted Calls](/graph/api/resources/call?view=graph-rest-1.0&preserve-view=true) and use the `callChainId`.
 > - `getAll` variant is available to get all ad hoc calls for a user.
-> - Enumeration of artifacts for a particular call is not available.
+> - Enumeration of artifacts for a particular call isn't available.
 
 ## Methods
 
