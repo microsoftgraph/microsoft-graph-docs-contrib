@@ -115,8 +115,8 @@ The user calls the API and filters by one label ID GUID and one user right.
    ``` odata
    $filter=(
       (id eq 'guid1' and ownerEmail eq 'ownerEmail1')
-      or (id eq 'guid2')
-      or (id eq 'guid3' and ownerEmail eq 'ownerEmail2')
+     or (id eq 'guid2')
+     or (id eq 'guid3' and ownerEmail eq 'ownerEmail2')
    )
    ```
 
@@ -142,17 +142,13 @@ We recommend using filters that use a single call with multiple IDs to retrieve 
 
 3. **Inner OR Exception**
 
-You can combine clauses using subclauses. In this example:
+   - You can combine clauses using subclauses. Here is an example of a subclause: (id eq 'guid1' and ownerEmail eq 'ownerEmail1')
+
+   - In this example, there are 3 subclauses. When combining the ID and ownerEmail, use AND in the subclause. Do not use OR otherwise it will throw an exception.
 
    ```odata
       $filter=( (id eq 'guid1' and ownerEmail eq 'ownerEmail1') or (id eq 'guid2') or (id eq 'guid3' and ownerEmail eq 'ownerEmail2') )
    ```
-
-    There are 3 subclauses. Here is an example of a subclause:
-
-    (id eq 'guid1' and ownerEmail eq 'ownerEmail1')
-
-    When combining the ID and ownerEmail, use AND in the subclause. Do not use OR otherwise it will throw an exception.
 
 4. **Prefiltering Behavior**
 
@@ -160,13 +156,12 @@ You can combine clauses using subclauses. In this example:
 
 #### Behavior Summary
 
-| Case                  | Example                                         | Description                                                                     |
-| --------------------- | ----------------------------------------------- | ------------------------------------------------------------------------------- |
-| Label ID only         | (id eq 'guid1')                                 | Returns rights defined on the label.                                            |
-| Label ID + ownerEmail | (id eq 'guid1' and ownerEmail eq 'ownerEmail1') | Evaluates rights for the specified user.                                        |
-| Multiple Tuples       | (id eq 'guid1' and ownerEmail eq 'ownerEmail1') |                                                                                 |
-|                       |  or (id eq 'guid2')                             |                                                                                 |
-|                       |  or (id eq 'guid3' and ownerEmail eq 'ownerEmail2')| Combine conditions with OR. Returns a merged list of label & rights for all matched labels and users. |
+| Case                  | Example                                                                                                                                         | Description                                                                                                      |
+| --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
+| Label ID only         | `(id eq 'guid1')`                                                                                                                               | Returns rights defined on the label.                                                                             |
+| Label ID + ownerEmail | `(id eq 'guid1' and ownerEmail eq 'ownerEmail1')`                                                                                               | Evaluates rights for the specified user.                                                                         |
+| Multiple Tuples       | `(id eq 'guid1' and ownerEmail eq 'ownerEmail1') `<br>` or (id eq 'guid2') `<br>` or (id eq 'guid3' and ownerEmail eq 'ownerEmail2')`           | Combine conditions with **OR**. Returns a merged list of labels and rights for all matched labels and users.     |
+
 
 
 ### Scenario 3: SensitivityLabel Rights /id/rights
