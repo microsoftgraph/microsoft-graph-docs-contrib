@@ -36,7 +36,7 @@ The following JSON representation shows the resource type.
   "@odata.type": "microsoft.graph.applicationRiskFactors"
 }
 -->
-``` json
+```json
 {
   "@odata.type": "#microsoft.graph.applicationRiskFactors",
   "general": {
@@ -52,3 +52,4 @@ The following JSON representation shows the resource type.
     "@odata.type": "microsoft.graph.applicationRiskFactorLegalInfo"
   }
 }
+```

@@ -4,7 +4,7 @@ description: "Represents the numerical risk score assessment for an application"
 author: "HildaK-pm"
 ms.date: 10/13/2025
 ms.localizationpriority: medium
-ms.service: applications
+ms.subservice: "entra-applications"
 doc_type: resourcePageType
 ---
 
