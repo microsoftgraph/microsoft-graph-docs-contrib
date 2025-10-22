@@ -123,75 +123,64 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#applicationTemplates/$entity",
-  "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET applicationTemplates('<guid>')?$select=appCategory,categories",
-  "id": "006a06ef-9160-42cd-88bf-17a7588fc844",
-  "displayName": "LinkedIn Lookup",
-  "homePageUrl": "www.linkedin.com",
-  "supportedSingleSignOnModes": [
-    "SAML",
-    "Password"
-  ],
-  "supportedProvisioningTypes": [],
-  "logoUrl": "https://images.microsoft.com",
-  "categories": [
-    "collaboration",
-    "social"
-  ],
-  "publisher": "LinkedIn",
-  "description": "LinkedIn Lookup is the easiest way to find coworkers and teams at your company. Lookup is a new people search tool that combines employees' LinkedIn profile information and Active Directory information, allowing you to quickly find and contact your coworkers, on desktop or mobile. Requires an existing Lookup company subscription.",
-  "supportedClaimConfiguration": {
-    "requiredClaims": [
-      {
-        "id": "first_name",
-        "namespace": "",
-        "source": "user",
-        "attribute": "firstname"
-      },
-      {
-        "id": "last_name",
-        "namespace": "",
-        "source": "user",
-        "attribute": "surname"
-      },
-      {
-        "id": "email_address",
-        "namespace": "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/",
-        "source": "user",
-        "attribute": "mail"
-      }
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#applicationTemplates/$entity",
+    "id": "de92ca39-7b85-4b4c-90d8-2885eff5100b",
+    "displayName": "LinkedIn Lookup",
+    "homePageUrl": "www.linkedin.com",
+    "supportedSingleSignOnModes": [
+        "saml",
+        "external"
     ],
-    "groupMembershipClaims": "securityGroup",
-    "nameIdPolicyFormat": "urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress"
-  },
-  "informationalUrls": {
-    "singleSignOnDocumentationUrl": "https://go.microsoft.com/fwlink/?linkid=847714",
-    "provisioningDocumentationUrl": null,
-    "appSignUpUrl": null
-  },
-  "configurationUris": [
-    {
-      "usage": "redirectUri",
-      "examples": [
-        "https://www.linkedin.com/checkpoint/enterprise/<SUBDOMAIN>"
-      ],
-      "values": [
-        "https://www.linkedin.com/checkpoint/enterprise/*"
-      ],
-      "isRequired": false,
-      "appliesToSingleSignOnMode": "saml"
+    "supportedProvisioningTypes": [
+        "sync"
+    ],
+    "logoUrl": "https://galleryapplogos1.azureedge.net/app-logo/linkedinlookup_B8D516A4_215.png",
+    "categories": [
+        "collaboration",
+        "social"
+    ],
+    "publisher": "LinkedIn",
+    "description": "LinkedIn Lookup is the easiest way to find coworkers and teams at your company. Lookup is a new people search tool that combines employees’ LinkedIn profile information and Active Directory information, allowing you to quickly find and contact your coworkers, on desktop or mobile. Requires an existing Lookup company subscription.",
+    "endpoints": [
+        "linkedin.com",
+        "licdn.com",
+        "platform-alib.linkedin.cn",
+        "platform-akam.linkedin.cn",
+        "platform-qtil.linkedin.cn",
+        "www.linkedin.com"
+    ],
+    "lastModifiedDateTime": "2025-08-01T21:05:17.943549Z",
+    "informationalUrls": {
+        "singleSignOnDocumentationUrl": "https://go.microsoft.com/fwlink/?linkid=847714",
+        "appSignUpUrl": null
     },
-    {
-      "usage": "identifierUri",
-      "examples": null,
-      "values": [
-        "linkedinlookup/primary",
-        "https://www.linkedin.com/lookup/*"
-      ],
-      "isRequired": true,
-      "appliesToSingleSignOnMode": "saml"
-    }
-  ]
+    "supportedClaimConfiguration": {
+        "nameIdPolicyFormat": "urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified"
+    },
+    "configurationUris": [
+        {
+            "usage": "identifierUri",
+            "appliesToSingleSignOnMode": "saml",
+            "values": [
+                "https://www.linkedin.com/lookup/*"
+            ],
+            "examples": [
+                "https://www.linkedin.com/lookup/EXAMPLE"
+            ],
+            "isRequired": true
+        },
+        {
+            "usage": "redirectUri",
+            "appliesToSingleSignOnMode": "saml",
+            "values": [
+                "https://www.linkedin.com/checkpoint/enterprise/*"
+            ],
+            "examples": [
+                "https://www.linkedin.com/checkpoint/enterprise/*"
+            ],
+            "isRequired": true
+        }
+    ]
 }
 ```
 
@@ -204,6 +193,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-
-
