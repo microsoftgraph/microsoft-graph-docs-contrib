@@ -1567,7 +1567,7 @@
                 "onPhoneMethodLoadStartListener",
                 "onTokenIssuanceStartListener",
                 "onUserCreateStartListener",
-                "webApplicationFirewallProviders",
+                "webApplicationFirewallProvider",
                 "cloudFlareWebApplicationFirewallProvider",
                 "akamaiWebApplicationFirewallProvider",
                 "webApplicationFirewallVerificationModel"
