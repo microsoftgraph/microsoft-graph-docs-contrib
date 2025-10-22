@@ -1,5 +1,5 @@
 ---
-title: "List ring objects"
+title: "List rings"
 description: "Get a list of the ring objects and their properties."
 author: "andredm7"
 ms.date: 10/08/2025
@@ -8,13 +8,13 @@ ms.subservice: "windows-autopatch"
 doc_type: apiPageType
 ---
 
-# List ring objects
+# List rings
 
 Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the ring objects and their properties.
+Get a list of the [ring](../resources/windowsupdates-ring.md) objects and their properties.
 
 ## Permissions
 
@@ -53,7 +53,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [ring](../resources/windowsupdates-ring.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [microsoft.graph.windowsUpdates.ring](../resources/windowsupdates-ring.md) objects in the response body.
 
 ## Examples
 
@@ -68,7 +68,6 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/beta/admin/windows/updates/policies/{policyId}/rings
 ```
-
 
 ### Response
 
