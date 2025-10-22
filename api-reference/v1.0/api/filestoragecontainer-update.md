@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-PATCH /storage/fileStorage/containers/{containerId}?$select=id,displayName,description,containerTypeId,status,createdDateTime,settings,informationBarrier
+PATCH /storage/fileStorage/containers/{containerId}
 ```
 
 ## Request headers
@@ -70,12 +70,6 @@ Content-Type: application/json
   "description": "Updated Description",
   "settings": {
     "isOcrEnabled": false
-  },
-  "informationBarrier": {
-    "mode": "Explicit",
-    "segmentIds": [
-      "7c94cec9-4ef6-48e4-bb99-9ff01c9b3a79"      
-    ]
   }
 }
 ```
@@ -131,13 +125,6 @@ Content-type: application/json
     "isOcrEnabled": false,
     "itemMajorVersionLimit": 50,
     "isItemVersioningEnabled": true
-  },
-  "informationBarrier": {
-    "mode": "explicit",
-    "segmentIds": [
-      "7c94cec9-4ef6-48e4-bb99-9ff01c9b3a79"      
-    ]
   }
 }
 ```
-
