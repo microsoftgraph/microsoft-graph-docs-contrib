@@ -1,5 +1,5 @@
 ---
-title: "cloudPcReports: retrieveCloudPcRecommendationReports"
+title: "cloudPcReports: retrieveCloudPcRecommendationReports (deprecated)"
 description: "Get the device recommendation reports for Cloud PCs, such as the usage category report."
 author: "Ward1994"
 ms.localizationpriority: medium
@@ -8,11 +8,14 @@ doc_type: apiPageType
 ms.date: 04/01/2025
 ---
 
-# cloudPcReports: retrieveCloudPcRecommendationReports
+# cloudPcReports: retrieveCloudPcRecommendationReports (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+> [!CAUTION]
+> This API is deprecated and will stop returning data on December 31, 2025. Going forward, use the [cloudPcReport: retrieveCloudPcRecommendationReports](../api/cloudpcreport-retrievecloudpcrecommendationreports.md) API.
 
 Get the device recommendation reports for Cloud PCs, such as the usage category report. The usage category report categorizes a Cloud PC as `Undersized`, `Oversized`, `Rightsized`, or `Underutilized`, and also provides the recommended SKU when the Cloud PC isn't `Rightsized`.
 
