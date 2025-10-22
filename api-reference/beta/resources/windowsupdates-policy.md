@@ -1,6 +1,6 @@
 ---
-title: "policy"
-description: "Represents an entity that governs the update deployment settings content to an associated deployment audience which can be one or more Microsoft Entra groups."
+title: "policy resource type"
+description: "An abstract type that represents an entity that governs the update deployment settings content for an associated deployment audience, which can consist of one or more Microsoft Entra groups."
 author: "andredm7"
 ms.date: 10/08/2025
 ms.localizationpriority: medium
@@ -8,15 +8,15 @@ ms.subservice: "windows-autopatch"
 doc_type: resourcePageType
 ---
 
-# policy
+# policy resource type
 
 Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An abstract type that represents an entity that governs the update deployment settings content to an associated deployment audience which can be one or more Microsoft Entra groups.
+An abstract type that represents an entity that governs the update deployment settings content for an associated deployment audience, which can consist of one or more Microsoft Entra groups.
 
-Inherits from [entity](../resources/entity.md)
+Base type of [qualityUpdatePolicy](../resources/qualityupdatepolicy.md). 
 
 ## Methods
 |Method|Return type|Description|
@@ -41,7 +41,7 @@ Inherits from [entity](../resources/entity.md)
 |createdDateTime|DateTimeOffset| The date and time the policy is created. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
 |description|String| The policy description. |
 |displayName|String| The policy display name. |
-|id|String| The policy unique identifier. Inherited from [entity](../resources/entity.md).|
+|id|String| The policy unique identifier.|
 |lastModifiedDateTime|DateTimeOffset|The date and time the policy was last modified. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
 
 ## Relationships
