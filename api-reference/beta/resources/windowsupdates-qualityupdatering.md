@@ -16,7 +16,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 Represents an entity that governs the update deployment ring specifically for Quality Updates. An update deployment ring supports only devices, and is used to phase a rollout strategy for Quality Updates.
 
-Inherits from [microsoft.graph.windowsUpdates.ring](../resources/windowsupdates-ring.md).
+Inherits from [ring](../resources/windowsupdates-ring.md).
 
 ## Methods
 |Method|Return type|Description|
@@ -29,16 +29,16 @@ Inherits from [microsoft.graph.windowsUpdates.ring](../resources/windowsupdates-
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|createdDateTime|DateTimeOffset| The date and time the Quality Updates ring is created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, `2014 is 2014-01-01T00:00:00Z`. Inherited from [microsoft.graph.windowsUpdates.ring](../resources/windowsupdates-ring.md).|
-|deferralInDays|Int32| The Quality Update deferral period (days). The value must be between 0 and 30. Inherited from [microsoft.graph.windowsUpdates.ring](../resources/windowsupdates-ring.md).|
-|description|String| The Quality Update ring description. Inherited from [microsoft.graph.windowsUpdates.ring](../resources/windowsupdates-ring.md).|
-|displayName|String| The Quality Update ring display name. Inherited from [microsoft.graph.windowsUpdates.ring](../resources/windowsupdates-ring.md).|
-|excludedGroupAssignment|[microsoft.graph.windowsUpdates.excludedGroupAssignment](../resources/windowsupdates-excludedgroupassignment.md)| Represents an entity that governs the update deployment audience with excluded groups. Groups are logical containers of devices represented by Microsoft Entra groups. Inherited from [microsoft.graph.windowsUpdates.ring](../resources/windowsupdates-ring.md).|
-|id|String| The unique identifier for the Quality Update ring. Inherited from [microsoft.graph.windowsUpdates.ring](../resources/windowsupdates-ring.md). Inherits from [entity](../resources/entity.md)|
-|includedGroupAssignment|[microsoft.graph.windowsUpdates.includedGroupAssignment](../resources/windowsupdates-includedgroupassignment.md)| Represents an entity that governs the update deployment audience with included groups. Groups are logical containers of devices represented by Microsoft Entra groups. Inherited from [microsoft.graph.windowsUpdates.ring](../resources/windowsupdates-ring.md).|
-|isHotpatchEnabled|Boolean| Identifies whether a hotpatch update is available or not.|
-|isPaused|Boolean| Represents the pause action for the Quality Update ring policy. Inherited from [microsoft.graph.windowsUpdates.ring](../resources/windowsupdates-ring.md).|
-|lastModifiedDateTime|DateTimeOffset| The date and time the Quality Updates ring was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, `2014 is 2014-01-01T00:00:00Z`. Inherited from [microsoft.graph.windowsUpdates.ring](../resources/windowsupdates-ring.md).|
+|createdDateTime|DateTimeOffset| The date and time the quality updates ring is created. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [ring](../resources/windowsupdates-ring.md).|
+|deferralInDays|Int32| The quality update deferral period in days. The value must be between `0` and `30`. Inherited from [ring](../resources/windowsupdates-ring.md).|
+|description|String| The quality update ring description. Inherited from [ring](../resources/windowsupdates-ring.md).|
+|displayName|String| The quality update ring display name. Inherited from [ring](../resources/windowsupdates-ring.md).|
+|excludedGroupAssignment|[microsoft.graph.windowsUpdates.excludedGroupAssignment](../resources/windowsupdates-excludedgroupassignment.md)| Governs the update deployment audience with excluded groups. Groups are logical containers of devices represented by Microsoft Entra groups. Inherited from [ring](../resources/windowsupdates-ring.md).|
+|id|String| The unique identifier for the quality update ring. Inherited from [ring](../resources/windowsupdates-ring.md).|
+|includedGroupAssignment|[microsoft.graph.windowsUpdates.includedGroupAssignment](../resources/windowsupdates-includedgroupassignment.md)| Governs the update deployment audience with included groups. Groups are logical containers of devices represented by Microsoft Entra groups. Inherited from [ring](../resources/windowsupdates-ring.md).|
+|isHotpatchEnabled|Boolean| Identifies whether a hotpatch update is available.|
+|isPaused|Boolean| Represents the pause action for the quality update ring policy. Inherited from [ring](../resources/windowsupdates-ring.md).|
+|lastModifiedDateTime|DateTimeOffset| The date and time the quality updates ring was last modified. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [ring](../resources/windowsupdates-ring.md).|
 
 ## Relationships
 None.
@@ -56,20 +56,16 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.windowsUpdates.qualityUpdateRing",
-  "displayName": "String",
-  "description": "String",
-  "includedGroupAssignment": {
-    "@odata.type": "microsoft.graph.windowsUpdates.includedGroupAssignment"
-  },
-  "excludedGroupAssignment": {
-    "@odata.type": "microsoft.graph.windowsUpdates.excludedGroupAssignment"
-  },
-  "deferralInDays": "Integer",
-  "isPaused": "Boolean",
-  "id": "String (identifier)",
   "createdDateTime": "String (timestamp)",
-  "lastModifiedDateTime": "String (timestamp)",
-  "isHotpatchEnabled": "Boolean"
+  "deferralInDays": "Integer",
+  "description": "String",
+  "displayName": "String",
+  "excludedGroupAssignment": {"@odata.type": "microsoft.graph.windowsUpdates.excludedGroupAssignment"},
+  "id": "String (identifier)",
+  "includedGroupAssignment": {"@odata.type": "microsoft.graph.windowsUpdates.includedGroupAssignment"},
+  "isHotpatchEnabled": "Boolean",
+  "isPaused": "Boolean",
+  "lastModifiedDateTime": "String (timestamp)"
 }
 ```
 
