@@ -1493,6 +1493,184 @@
       "CreatedDateTime": "2025-10-15T17:08:00.4617304Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "371e9265-6a23-403a-a6ae-96dbb8b742ae",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "webApplicationFirewallDnsRecordType",
+          "ChangeType": "Addition",
+          "Description": "Added the **webApplicationFirewallDnsRecordType** enumeration type.",
+          "Target": "webApplicationFirewallDnsRecordType"
+        },
+        {
+          "Id": "371e9265-6a23-403a-a6ae-96dbb8b742ae",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "webApplicationFirewallProviderType",
+          "ChangeType": "Addition",
+          "Description": "Added the **webApplicationFirewallProviderType** enumeration type.",
+          "Target": "webApplicationFirewallProviderType"
+        },
+        {
+          "Id": "371e9265-6a23-403a-a6ae-96dbb8b742ae",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "webApplicationFirewallVerificationStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **webApplicationFirewallVerificationStatus** enumeration type.",
+          "Target": "webApplicationFirewallVerificationStatus"
+        },
+        {
+          "Id": "371e9265-6a23-403a-a6ae-96dbb8b742ae",
+          "ApiChange": "Resource",
+          "ChangedApiName": "akamaiAttackGroupActionModel",
+          "ChangeType": "Addition",
+          "Description": "Added the [akamaiAttackGroupActionModel](https://learn.microsoft.com/en-us/graph/api/resources/akamaiAttackGroupActionModel?view=graph-rest-1.0) resource.",
+          "Target": "akamaiAttackGroupActionModel"
+        },
+        {
+          "Id": "371e9265-6a23-403a-a6ae-96dbb8b742ae",
+          "ApiChange": "Resource",
+          "ChangedApiName": "akamaiCustomRuleModel",
+          "ChangeType": "Addition",
+          "Description": "Added the [akamaiCustomRuleModel](https://learn.microsoft.com/en-us/graph/api/resources/akamaiCustomRuleModel?view=graph-rest-1.0) resource.",
+          "Target": "akamaiCustomRuleModel"
+        },
+        {
+          "Id": "371e9265-6a23-403a-a6ae-96dbb8b742ae",
+          "ApiChange": "Resource",
+          "ChangedApiName": "akamaiRapidRulesModel",
+          "ChangeType": "Addition",
+          "Description": "Added the [akamaiRapidRulesModel](https://learn.microsoft.com/en-us/graph/api/resources/akamaiRapidRulesModel?view=graph-rest-1.0) resource.",
+          "Target": "akamaiRapidRulesModel"
+        },
+        {
+          "Id": "371e9265-6a23-403a-a6ae-96dbb8b742ae",
+          "ApiChange": "Resource",
+          "ChangedApiName": "akamaiVerifiedDetailsModel",
+          "ChangeType": "Addition",
+          "Description": "Added the [akamaiVerifiedDetailsModel](https://learn.microsoft.com/en-us/graph/api/resources/akamaiVerifiedDetailsModel?view=graph-rest-1.0) resource.",
+          "Target": "akamaiVerifiedDetailsModel"
+        },
+        {
+          "Id": "371e9265-6a23-403a-a6ae-96dbb8b742ae",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cloudFlareRuleModel",
+          "ChangeType": "Addition",
+          "Description": "Added the [cloudFlareRuleModel](https://learn.microsoft.com/en-us/graph/api/resources/cloudFlareRuleModel?view=graph-rest-1.0) resource.",
+          "Target": "cloudFlareRuleModel"
+        },
+        {
+          "Id": "371e9265-6a23-403a-a6ae-96dbb8b742ae",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cloudFlareRulesetModel",
+          "ChangeType": "Addition",
+          "Description": "Added the [cloudFlareRulesetModel](https://learn.microsoft.com/en-us/graph/api/resources/cloudFlareRulesetModel?view=graph-rest-1.0) resource.",
+          "Target": "cloudFlareRulesetModel"
+        },
+        {
+          "Id": "371e9265-6a23-403a-a6ae-96dbb8b742ae",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cloudFlareVerifiedDetailsModel",
+          "ChangeType": "Addition",
+          "Description": "Added the [cloudFlareVerifiedDetailsModel](https://learn.microsoft.com/en-us/graph/api/resources/cloudFlareVerifiedDetailsModel?view=graph-rest-1.0) resource.",
+          "Target": "cloudFlareVerifiedDetailsModel"
+        },
+        {
+          "Id": "371e9265-6a23-403a-a6ae-96dbb8b742ae",
+          "ApiChange": "Resource",
+          "ChangedApiName": "webApplicationFirewallDnsConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [webApplicationFirewallDnsConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/webApplicationFirewallDnsConfiguration?view=graph-rest-1.0) resource.",
+          "Target": "webApplicationFirewallDnsConfiguration"
+        },
+        {
+          "Id": "371e9265-6a23-403a-a6ae-96dbb8b742ae",
+          "ApiChange": "Resource",
+          "ChangedApiName": "webApplicationFirewallVerificationResult",
+          "ChangeType": "Addition",
+          "Description": "Added the [webApplicationFirewallVerificationResult](https://learn.microsoft.com/en-us/graph/api/resources/webApplicationFirewallVerificationResult?view=graph-rest-1.0) resource.",
+          "Target": "webApplicationFirewallVerificationResult"
+        },
+        {
+          "Id": "371e9265-6a23-403a-a6ae-96dbb8b742ae",
+          "ApiChange": "Resource",
+          "ChangedApiName": "webApplicationFirewallVerifiedDetails",
+          "ChangeType": "Addition",
+          "Description": "Added the [webApplicationFirewallVerifiedDetails](https://learn.microsoft.com/en-us/graph/api/resources/webApplicationFirewallVerifiedDetails?view=graph-rest-1.0) resource.",
+          "Target": "webApplicationFirewallVerifiedDetails"
+        },
+        {
+          "Id": "371e9265-6a23-403a-a6ae-96dbb8b742ae",
+          "ApiChange": "Resource",
+          "ChangedApiName": "akamaiWebApplicationFirewallProvider",
+          "ChangeType": "Addition",
+          "Description": "Added the [akamaiWebApplicationFirewallProvider](https://learn.microsoft.com/en-us/graph/api/resources/akamaiWebApplicationFirewallProvider?view=graph-rest-1.0) resource.",
+          "Target": "akamaiWebApplicationFirewallProvider"
+        },
+        {
+          "Id": "371e9265-6a23-403a-a6ae-96dbb8b742ae",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cloudFlareWebApplicationFirewallProvider",
+          "ChangeType": "Addition",
+          "Description": "Added the [cloudFlareWebApplicationFirewallProvider](https://learn.microsoft.com/en-us/graph/api/resources/cloudFlareWebApplicationFirewallProvider?view=graph-rest-1.0) resource.",
+          "Target": "cloudFlareWebApplicationFirewallProvider"
+        },
+        {
+          "Id": "371e9265-6a23-403a-a6ae-96dbb8b742ae",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "riskPrevention",
+          "ChangeType": "Addition",
+          "Description": "Added the **riskPrevention** relationship to the [identityContainer](https://learn.microsoft.com/en-us/graph/api/resources/identityContainer?view=graph-rest-1.0) resource.",
+          "Target": "identityContainer"
+        },
+        {
+          "Id": "371e9265-6a23-403a-a6ae-96dbb8b742ae",
+          "ApiChange": "Resource",
+          "ChangedApiName": "riskPreventionContainer",
+          "ChangeType": "Addition",
+          "Description": "Added the [riskPreventionContainer](https://learn.microsoft.com/en-us/graph/api/resources/riskPreventionContainer?view=graph-rest-1.0) resource.",
+          "Target": "riskPreventionContainer"
+        },
+        {
+          "Id": "371e9265-6a23-403a-a6ae-96dbb8b742ae",
+          "ApiChange": "Resource",
+          "ChangedApiName": "webApplicationFirewallProvider",
+          "ChangeType": "Addition",
+          "Description": "Added the [webApplicationFirewallProvider](https://learn.microsoft.com/en-us/graph/api/resources/webApplicationFirewallProvider?view=graph-rest-1.0) resource.",
+          "Target": "webApplicationFirewallProvider"
+        },
+        {
+          "Id": "371e9265-6a23-403a-a6ae-96dbb8b742ae",
+          "ApiChange": "Resource",
+          "ChangedApiName": "webApplicationFirewallVerificationModel",
+          "ChangeType": "Addition",
+          "Description": "Added the [webApplicationFirewallVerificationModel](https://learn.microsoft.com/en-us/graph/api/resources/webApplicationFirewallVerificationModel?view=graph-rest-1.0) resource.",
+          "Target": "webApplicationFirewallVerificationModel"
+        },
+        {
+          "Id": "371e9265-6a23-403a-a6ae-96dbb8b742ae",
+          "ApiChange": "Method",
+          "ChangedApiName": "verify",
+          "ChangeType": "Addition",
+          "Description": "Added the [verify](https://learn.microsoft.com/en-us/graph/api/webApplicationFirewallProvider-verify?view=graph-rest-1.0) method to the [webApplicationFirewallProvider](https://learn.microsoft.com/en-us/graph/api/resources/webApplicationFirewallProvider?view=graph-rest-1.0) resource.",
+          "Target": "webApplicationFirewallProvider"
+        },
+        {
+          "Id": "371e9265-6a23-403a-a6ae-96dbb8b742ae",
+          "ApiChange": "NavigationPropertyBinding",
+          "ChangedApiName": "riskPrevention/webApplicationFirewallVerifications/provider",
+          "ChangeType": "Addition",
+          "Description": "Added the [riskPrevention/webApplicationFirewallVerifications/provider](https://learn.microsoft.com/en-us/?view=graph-rest-1.0) resource.",
+          "Target": "identity"
+        }
+      ],
+      "Id": "371e9265-6a23-403a-a6ae-96dbb8b742ae",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-10-21T19:39:06.5266811Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
     }
   ]
 }
