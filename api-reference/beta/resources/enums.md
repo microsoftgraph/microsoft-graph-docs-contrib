@@ -5448,3 +5448,11 @@ Possible values for user account types (group membership), per Windows definitio
 |warning|
 |failure|
 |unknownFutureValue|
+### siteTemplateType values 
+
+|Member|
+|:---|
+|sitepagepublishing|
+|group|
+|sts|
+|unknownFutureValue|
