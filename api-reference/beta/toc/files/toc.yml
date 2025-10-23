@@ -52,6 +52,8 @@ items:
     href: ../../api/driveitem-get-content-format.md
   - name: Delete item
     href: ../../api/driveitem-delete.md
+  - name: Restore item
+    href: ../../api/driveitem-restore.md
   - name: Permanently delete item
     href: ../../api/driveitem-permanentdelete.md
   - name: Move item
@@ -112,6 +114,18 @@ items:
       href: ../../api/opentypeextension-post-opentypeextension.md
     - name: Get open extension
       href: ../../api/opentypeextension-get.md
+- name: Drive item version
+  items:
+  - name: Drive item version
+    href: ../../resources/driveitemversion.md
+  - name: List
+    href: ../../api/driveitem-list-versions.md
+  - name: Get
+    href: ../../api/driveitemversion-get.md
+  - name: Download version
+    href: ../../api/driveitemversion-get-contents.md
+  - name: Restore version
+    href: ../../api/driveitemversion-restoreversion.md
 - name: Bundle
   items:
   - name: Bundle
@@ -192,7 +206,7 @@ items:
     href: ../../api/filestoragecontainer-lock.md
   - name: Unlock
     href: ../../api/filestoragecontainer-unlock.md
-  - name: Create
+  - name: Create migration job
     href: ../../api/filestoragecontainer-post-migrationjobs.md
   - name: Provision migration containers
     href: ../../api/filestoragecontainer-provisionmigrationcontainers.md
