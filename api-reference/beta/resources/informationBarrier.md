@@ -18,8 +18,8 @@ Represents the information barrier of a [fileStorageContainer](../resources/file
 ## Properties
 | Property             | Type               | Description                              |
 |:---------------------|:-------------------|:-----------------------------------------|
-| `mode`               | [informationBarrierMode](#informationbarriermode-values)            | Enum indicating the information barrier mode. The possible values are:`open`, `ownerModerated`, `explicit`, and `unknownFutureValue`. |
-| `segmentIds` | `Collection(Guid)` | The list of segment IDs associated with the container. |
+| mode               | [informationBarrierMode](#informationbarriermode-values)            | Enum indicating the information barrier mode. The possible values are:`open`, `ownerModerated`, `explicit`, and `unknownFutureValue`. |
+| segmentIds | `Collection(Guid)` | The list of segment IDs associated with the container. |
 
 ### informationBarrierMode values
 |Member             | Description                                                            |
