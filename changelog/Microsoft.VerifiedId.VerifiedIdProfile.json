@@ -29,6 +29,14 @@
         {
           "Id": "ea433aa8-04b5-4f99-8057-3d001ff49927",
           "ApiChange": "Resource",
+          "ChangedApiName": "identityVerifiedIdRoot",
+          "ChangeType": "Addition",
+          "Description": "Added the [identityVerifiedIdRoot](https://learn.microsoft.com/en-us/graph/api/resources/identityVerifiedIdRoot?view=graph-rest-beta) resource.",
+          "Target": "identityVerifiedIdRoot"
+        },
+        {
+          "Id": "ea433aa8-04b5-4f99-8057-3d001ff49927",
+          "ApiChange": "Resource",
           "ChangedApiName": "verifiedIdProfile",
           "ChangeType": "Addition",
           "Description": "Added the [verifiedIdProfile](https://learn.microsoft.com/en-us/graph/api/resources/verifiedIdProfile?view=graph-rest-beta) resource.",

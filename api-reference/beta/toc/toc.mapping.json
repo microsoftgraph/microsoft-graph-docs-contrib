@@ -1550,7 +1550,8 @@
             "dataPolicyOperation",
             "oAuth2PermissionGrant",
             "certificateBasedAuthConfiguration",
-            "externalIdentitiesPolicy"
+            "externalIdentitiesPolicy",
+            "verifiedIdProfile"
           ],
           "childNodes": [
             {
@@ -1828,15 +1829,8 @@
                 "identityApiConnector",
                 "identityUserFlow"
               ]
-            }, 
-            {
-              "name": "Verified ID (preview)",
-              "resources": [
-                "verifiedIdProfile"
-              ]
             }
           ]
-        
         },
         {
           "name": "Multicloud permissions management (deprecated)",
