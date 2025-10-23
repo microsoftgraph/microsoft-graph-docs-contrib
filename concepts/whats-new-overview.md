@@ -142,6 +142,10 @@ Added the following new endpoints as supported request URLs for the [driveItem: 
 - `POST /sites/{siteId}/drive/items/{parentItemId}:/{fileName}:/createUploadSession`
 - `POST /users/{userId}/drive/items/{parentItemId}:/{fileName}:/createUploadSession`
 
+### Sites and lists
+
+[Create](/graph/api/site-post-sites?view=graph-rest-beta&preserve-view=true) a SharePoint site and [monitor](/graph/api/site-getoperationstatus?view=graph-rest-beta&preserve-view=true) its creation status.
+
 ## September 2025: New and generally available
 
 ### Applications
