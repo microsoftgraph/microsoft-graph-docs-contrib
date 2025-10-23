@@ -46,7 +46,7 @@ The following table shows the properties that are required when you update the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|accessPackageRelatedPeopleInsightLevel|accessPackageSuggestionRelatedPeopleInsightLevel|The level of related people insights to show in access package suggestions. The possible values are: `disabled`, `count`, `countAndNames`, `unknownFutureValue`.|
+|relatedPeopleInsightLevel|accessPackageSuggestionRelatedPeopleInsightLevel|The level of related people insights to show in access package suggestions. The possible values are: `disabled`, `count`, `countAndNames`, `unknownFutureValue`.|
 |showApproverDetailsToMembers|Boolean|Indicates whether approver details are shown to members. When `true`, approver information is visible to members.|
 
 ## Response
@@ -70,7 +70,7 @@ Content-type: application/json
 
 {
   "@odata.type": "#microsoft.graph.endUserSettings",
-  "accessPackageRelatedPeopleInsightLevel": "countAndNames",
+  "relatedPeopleInsightLevel": "countAndNames",
   "showApproverDetailsToMembers": true
 }
 ```
@@ -94,7 +94,7 @@ Content-type: application/json
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/entitlementManagement/controlConfigurations/endUserSettings",
-  "accessPackageRelatedPeopleInsightLevel": "countAndNames",
+  "relatedPeopleInsightLevel": "countAndNames",
   "showApproverDetailsToMembers": true
 }
 ```
