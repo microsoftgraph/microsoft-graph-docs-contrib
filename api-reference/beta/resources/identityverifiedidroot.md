@@ -16,16 +16,16 @@ Namespace: microsoft.graph
 
 Represents the root container for managing Verifiable ID profiles in Microsoft Entra.
 
-Inherits from [entity](../resources/entity.md)
+Inherits from [entity](../resources/entity.md).
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
+None.
 
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
+|id        |String | The unique identifier for an entity. Read-only. Inherited from [entity](../resources/entity.md). |
 
 ## Relationships
 |Relationship|Type|Description|

@@ -41,7 +41,7 @@ GET /verifiableCredentialsAuthenticationMethodConfiguration
 
 ## Optional query parameters
 
-None 
+None. 
 
 ## Request headers
 
