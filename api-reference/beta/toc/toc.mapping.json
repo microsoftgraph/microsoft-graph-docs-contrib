@@ -1546,6 +1546,7 @@
           "name": "Identity and sign-in",
           "shouldSort": true,
           "resources": [
+            "appRoleAssignment",            
             "dataPolicyOperation",
             "oAuth2PermissionGrant",
             "certificateBasedAuthConfiguration",
@@ -1555,7 +1556,6 @@
             {
               "name": "Authentication event listeners",
               "resources": [
-                "appRoleAssignment",
                 "authenticationEventListener",
                 "onAttributeCollectionListener",
                 "onAttributeCollectionStartListener",
