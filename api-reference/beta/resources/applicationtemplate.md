@@ -77,13 +77,7 @@ The following JSON representation shows the resource type.
     "String"
   ],
   "publisher": "String",
-  "description": "String",
-  "informationalUrls": {
-    "@odata.type": "microsoft.graph.informationalUrls"
-  },
-  "supportedClaimConfiguration": {
-    "@odata.type": "microsoft.graph.supportedClaimConfiguration"
-  },
+  "description": "String",  
   "configurationUris": [
     {
       "@odata.type": "microsoft.graph.configurationUri"
