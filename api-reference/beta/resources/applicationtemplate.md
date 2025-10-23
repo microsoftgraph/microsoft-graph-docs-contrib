@@ -3,7 +3,7 @@ title: "applicationTemplate resource type"
 description: "Represents an application in the Microsoft Entra application gallery"
 ms.localizationpriority: medium
 author: "HildaK-pm"
-ms.service: microsoft-graph
+ms.subservice: "entra-applications"
 doc_type: "resourcePageType"
 ms.date: 07/16/2024
 ---

@@ -3,7 +3,7 @@ title: "Enum values"
 description: "Microsoft Graph enumeration values."
 doc_type: enumPageType
 ms.localizationpriority: medium
-ms.service: microsoft-graph
+ms.subservice: "non-product-specific"
 author: "MSGraphDocsvTeam"
 ms.date: 08/06/2025
 ms.custom: sfi-ropc-nochange
