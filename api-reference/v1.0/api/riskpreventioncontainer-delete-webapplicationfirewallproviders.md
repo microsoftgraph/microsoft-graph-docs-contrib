@@ -2,7 +2,7 @@
 title: "Delete webApplicationFirewallProvider"
 description: "Delete a webApplicationFirewallProvider object."
 author: "more-rasika"
-ms.date: 10/10/2025
+ms.date: 10/22/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 
 
-Delete a webApplicationFirewallProvider object.
+Delete a [webApplicationFirewallProvider](../resources/webapplicationfirewallprovider.md) object.
 
 ## Permissions
 
@@ -27,7 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/riskpreventioncontainer-delete-webapplicationfirewallproviders-permissions.md)]
 
-[!INCLUDE [rbac-fraudprovider-apis-write](../includes/rbac-for-apis/rbac-fraudprovider-apis-write.md)]
+[!INCLUDE [rbac-risprevention-apis-write](../includes/rbac-for-apis/rbac-risprevention-apis-write.md)]
 
 ## HTTP request
 

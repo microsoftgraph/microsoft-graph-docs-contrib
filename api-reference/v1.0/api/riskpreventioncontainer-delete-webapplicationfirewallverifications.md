@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 
 
-Delete a webApplicationFirewallVerificationModel object.
+Delete a [webApplicationFirewallVerificationModel](../resources/webapplicationfirewallverificationmodel.md) object.
 
 ## Permissions
 
@@ -27,7 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/riskpreventioncontainer-delete-webapplicationfirewallverifications-permissions.md)]
 
-[!INCLUDE [rbac-fraudprovider-apis-write](../includes/rbac-for-apis/rbac-fraudprovider-apis-write.md)]
+[!INCLUDE [rbac-risprevention-apis-write](../includes/rbac-for-apis/rbac-risprevention-apis-write.md)]
 
 ## HTTP request
 

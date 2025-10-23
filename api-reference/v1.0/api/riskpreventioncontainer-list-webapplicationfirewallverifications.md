@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 
 
-Get a list of the webApplicationFirewallVerificationModel objects and their properties.
+Get a list of the [webApplicationFirewallVerificationModel](../resources/webapplicationfirewallverificationmodel.md) objects and their properties.
 
 ## Permissions
 
@@ -27,7 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/riskpreventioncontainer-list-webapplicationfirewallverifications-permissions.md)]
 
-[!INCLUDE [rbac-fraudprovider-apis-read](../includes/rbac-for-apis/rbac-fraudprovider-apis-read.md)]
+[!INCLUDE [rbac-risprevention-apis-read](../includes/rbac-for-apis/rbac-risprevention-apis-read.md)]
 
 ## HTTP request
 
@@ -41,7 +41,7 @@ GET /identity/riskPrevention/webApplicationFirewallVerifications
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters, including `filter` and `$expand` to include related resources. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports some of the OData query parameters, including `$filter` and `$expand` to include related resources. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 

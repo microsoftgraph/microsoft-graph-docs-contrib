@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 
 
-Get a list of the webApplicationFirewallProvider objects and their properties.
+Get a list of the [webApplicationFirewallProvider](../resources/webapplicationfirewallprovider.md) objects and their properties.
 
 ## Permissions
 
@@ -27,7 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/riskpreventioncontainer-list-webapplicationfirewallproviders-permissions.md)]
 
-[!INCLUDE [rbac-fraudprovider-apis-read](../includes/rbac-for-apis/rbac-fraudprovider-apis-read.md)]
+[!INCLUDE [rbac-risprevention-apis-read](../includes/rbac-for-apis/rbac-risprevention-apis-read.md)]
 
 ## HTTP request
 

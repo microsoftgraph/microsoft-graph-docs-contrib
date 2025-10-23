@@ -28,7 +28,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "fraudprotectionprovider_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/fraudprotectionprovider-get-permissions.md)]
 
-[!INCLUDE [rbac-fraudprovider-apis-read](../includes/rbac-for-apis/rbac-fraudprovider-apis-read.md)]
+[!INCLUDE [rbac-risprevention-apis-read](../includes/rbac-for-apis/rbac-risprevention-apis-read.md)]
 
 ## HTTP request
 

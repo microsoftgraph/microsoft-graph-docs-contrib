@@ -27,7 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/webapplicationfirewallprovider-get-permissions.md)]
 
-[!INCLUDE [rbac-fraudprovider-apis-read](../includes/rbac-for-apis/rbac-fraudprovider-apis-read.md)]
+[!INCLUDE [rbac-risprevention-apis-read](../includes/rbac-for-apis/rbac-risprevention-apis-read.md)]
 
 ## HTTP request
 
@@ -96,7 +96,7 @@ The following example shows the response with Akamai.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.fraudProtectionProvider"
+  "@odata.type": "microsoft.graph.akamaiWebApplicationFirewallProvider"
 }
 -->
 ``` http

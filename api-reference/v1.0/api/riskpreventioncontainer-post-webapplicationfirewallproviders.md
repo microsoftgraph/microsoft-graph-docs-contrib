@@ -30,7 +30,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/riskpreventioncontainer-post-webapplicationfirewallproviders-permissions.md)]
 
-[!INCLUDE [rbac-fraudprovider-apis-write](../includes/rbac-for-apis/rbac-fraudprovider-apis-write.md)]
+[!INCLUDE [rbac-risprevention-apis-write](../includes/rbac-for-apis/rbac-risprevention-apis-write.md)]
 
 ## HTTP request
 
@@ -128,7 +128,7 @@ Content-Type: application/json
 The following example shows a request to create a new Cloudflare WAF object.
 <!-- {
   "blockType": "request",
-  "name": "create_fraudprotectionprovider_from_cloudflare"
+  "name": "create_webapplicationfirewallprovider_from_cloudflare"
 }
 -->
 ``` http
