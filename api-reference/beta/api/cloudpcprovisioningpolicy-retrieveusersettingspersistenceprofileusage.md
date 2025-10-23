@@ -1,6 +1,6 @@
 ---
 title: "cloudPcProvisioningPolicy: retrieveusersettingspersistenceprofileusage"
-description: "Retrieve the cloud profile list for the Cloud PC user settings persistence under selected Cloud PC's policy assignment."
+description: "Retrieve the usage of Cloud PC user settings persistence in the selected Cloud PC's policy assignment."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
@@ -76,34 +76,6 @@ Content-Type: application/json
 
 
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/retrieveusersettingspersistenceprofiles-cloudpcprovisioningpolicy-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/retrieveusersettingspersistenceprofiles-cloudpcprovisioningpolicy-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/retrieveusersettingspersistenceprofiles-cloudpcprovisioningpolicy-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/retrieveusersettingspersistenceprofiles-cloudpcprovisioningpolicy-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/retrieveusersettingspersistenceprofiles-cloudpcprovisioningpolicy-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/retrieveusersettingspersistenceprofiles-cloudpcprovisioningpolicy-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/retrieveusersettingspersistenceprofiles-cloudpcprovisioningpolicy-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
