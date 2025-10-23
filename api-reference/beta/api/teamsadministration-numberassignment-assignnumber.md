@@ -16,6 +16,8 @@ Namespace: microsoft.graph.teamsAdministration
 
 Creates an asynchronous order to assign a telephone number to a user account.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -63,6 +65,7 @@ If successful, the method returns a `202 Accepted` response code with the URL in
 ### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "numberassignmentthis.assignnumber"
@@ -79,6 +82,12 @@ Content-Type: application/json
   "assignmentCategory": "primary"
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/numberassignmentthisassignnumber-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 

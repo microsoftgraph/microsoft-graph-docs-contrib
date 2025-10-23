@@ -123,7 +123,8 @@ Content-Type: application/json
   "value": {
     "@odata.type": "#microsoft.graph.softwareOathAuthenticationMethod",
     "id": "b172893e-893e-b172-3e89-72b13e8972b1",
-    "secretKey": "String"
+    "secretKey": "String",
+    "lastUsedDateTime": "2022-11-06T23:16:12Z"
   }
 }
 ```
