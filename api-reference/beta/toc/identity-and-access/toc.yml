@@ -506,6 +506,12 @@ items:
         href: ../../api/orgcontact-retryserviceprovisioning.md
       - name: Get transitive reports
         href: ../../api/orgcontact-get-transitivereports.md
+    - name: On-premises sync behavior (Source of Authority)
+      items:
+      - name: Get
+        href: ../../api/onpremisessyncbehavior-get.md
+      - name: Update
+        href: ../../api/onpremisessyncbehavior-update.md
     - name: Organizational hierarchy
       items:
       - name: Get manager
