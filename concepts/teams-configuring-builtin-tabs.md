@@ -132,10 +132,20 @@ Configuration is not supported.
 For Power BI tabs, the `teamsAppId` is `com.microsoft.teamspace.tab.powerbi`.
 Configuration is not supported.
 
-## SharePoint page and list tabs
+## SharePoint tabs
 
-For SharePoint page and list tabs, the `teamsAppId` is `2a527703-1f6f-4559-a332-d8a7d288cd88`.
+For SharePoint tabs, the `teamsAppId` is `2a527703-1f6f-4559-a332-d8a7d288cd88`.
 Configuration is not supported.
+
+## SharePoint Pages tab
+
+For SharePoint Pages tabs, the `teamsAppId` is `0ae35b36-0fd7-422e-805b-d53af1579093`.
+Configuration is supported.
+
+## Lists tabs
+
+For Lists tabs, the `teamsAppId` is `26bc2873-6023-480c-a11b-76b66605ce8c`.
+Configuration is supported.
 
 ## SharePoint Framework-based tabs
 
