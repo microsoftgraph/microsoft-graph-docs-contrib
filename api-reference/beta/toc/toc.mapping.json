@@ -13,8 +13,7 @@
       "overview": "../../resources/groups-overview.md",
       "resources": [
         "group",
-        "groupLifecyclePolicy",
-        "onPremisesSyncBehavior"
+        "groupLifecyclePolicy"
       ]
     },
     {
@@ -508,8 +507,10 @@
             "cloudPcCrossCloudGovernmentOrganizationMapping",
             "cloudPcDeviceImage",
             "cloudPcExternalPartnerSetting",
+            "cloudPcExternalPartner",
             "cloudPcFrontLineServicePlan",
             "cloudPcGalleryImage",
+            "cloudPcManagedLicense",
             "cloudPcOnPremisesConnection",
             "cloudPcOrganizationSettings",
             "cloudPcProvisioningPolicy",
@@ -557,6 +558,7 @@
             "cloudPcForensicStorageAccount",
             "cloudPcFrontlineSharedDeviceDetail",
             "cloudPcHealthCheckItem",
+            "cloudPcLaunchDetail",            
             "cloudPcLaunchInfo",
             "cloudPcLoginResult",
             "cloudPcManagementAssignmentTarget",
@@ -572,10 +574,13 @@
             "cloudPcRestorePointSetting",
             "cloudPcReviewStatus",
             "cloudPcScopedPermission",
+            "cloudPcSnapshotImportActionDetail",
+            "cloudPcSnapshotImportActionResult",
             "cloudPcSourceDeviceImage",
             "cloudPcStatusDetails",
             "cloudPcStatusDetail",
             "cloudPcStatusSummary",
+            "cloudPcStorageBlobDetail",
             "cloudPcSupportedRegionRestrictionDetail",
             "cloudPcSubscription",
             "cloudPcUserRoleScopeTagInfo",
@@ -928,10 +933,10 @@
           "overview": "../../resources/engagement-api-overview.md",
           "resources": [
             "community",
+            "employeeExperienceUser",
             "engagementAsyncOperation",
             "engagementRole",
-            "engagementRoleMember",
-            "employeeExperienceUser"
+            "engagementRoleMember"
           ],
           "complexTypes": [
             "engagementConversationMessageAttachment",
@@ -1003,11 +1008,13 @@
         "OneDrive for Business",
         "OneDrive business",
         "OneDrive personal",
-        "SharePoint"
+        "SharePoint",
+        "SharePoint Embedded"
       ],
       "resources": [
         "drive",
         "driveItem",
+        "driveItemVersion",
         "bundle",
         "fileStorageContainer",
         "fileStorageContainerType",
@@ -1555,10 +1562,11 @@
                 "onAttributeCollectionSubmitListener",
                 "onAuthenticationMethodLoadStartListener",
                 "onEmailOtpSendListener",
+                "onFraudProtectionLoadStartListener",
                 "onInteractiveAuthFlowStartListener",
+                "onPhoneMethodLoadStartListener",
                 "onTokenIssuanceStartListener",
-                "onUserCreateStartListener",
-                "onPhoneMethodLoadStartListener"
+                "onUserCreateStartListener"
               ]
             },
             {
@@ -1691,7 +1699,10 @@
                 "riskyUser",
                 "riskyUserHistoryItem",
                 "servicePrincipalRiskDetection",
-                "riskyServicePrincipal"
+                "riskyServicePrincipal",
+                "fraudProtectionProvider",
+                "arkoseFraudProtectionProvider",
+                "humanSecurityFraudProtectionProvider"
               ]
             },
             {
@@ -2976,6 +2987,9 @@
         "permission",
         "sharepointSettings"
       ],
+      "complexTypes": [
+        "identityInput"
+      ],
       "childNodes": [
         {
           "name": "Pages",
@@ -3128,7 +3142,7 @@
             "microsoft.graph.teamsAdministration.numberAssignment",
             "microsoft.graph.teamsAdministration.teamsUserConfiguration",
             "microsoft.graph.teamsAdministration.telephoneNumberLongRunningOperation",
-            "microsoft.graph.teamsAdministration.telephoneNumberManagementRoot"
+            "microsoft.graph.teamsAdministration.telephoneNumberManagementRoot",
             "microsoft.graph.teamsAdministration.teamsPolicyAssignment",
             "microsoft.graph.teamsAdministration.teamsPolicyUserAssignment",
             "microsoft.graph.teamsAdministration.teamsUserConfiguration",
@@ -3208,8 +3222,11 @@
             {
               "name": "Call events",
               "resources": [
-                "microsoft.graph.callEvent",
-                "microsoft.graph.emergencyCallEvent"
+                "callEvent",
+                "emergencyCallEvent"
+              ],
+              "complexTypes": [
+                "emergencyCallerInfo"
               ]
             },
             {
@@ -3541,3 +3558,4 @@
     }
   ]
 }
+

@@ -1,11 +1,11 @@
 ---
 title: "appLogCollectionDownloadDetails resource type"
-description: "Not yet documented"
+description: "Intune Devices Applogcollectiondownloaddetails Resources ."
 author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
-ms.date: 09/13/2024
+ms.date: 08/01/2024
 ---
 
 # appLogCollectionDownloadDetails resource type
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Not yet documented
+
 
 ## Properties
 |Property|Type|Description|

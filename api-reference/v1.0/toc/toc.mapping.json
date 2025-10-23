@@ -574,7 +574,10 @@
           "overview": "../../resources/engagement-api-overview.md",
           "resources": [
             "community",
-            "engagementAsyncOperation"
+            "employeeExperienceUser",
+            "engagementAsyncOperation",
+            "engagementRole",
+            "engagementRoleMember"
           ],
           "complexTypes": [
             "engagementIdentitySet"
@@ -637,17 +640,19 @@
         "OneDrive for Business",
         "OneDrive business",
         "OneDrive personal",
-        "SharePoint"
+        "SharePoint",
+        "SharePoint Embedded"
       ],
       "resources": [
         "drive",
         "driveItem",
+        "driveItemVersion",
         "bundle",
-        "permission",
         "fileStorageContainer",
-        "sharedDriveItem",
+        "permission",
         "recycleBin",
-        "recycleBinItem"
+        "recycleBinItem",
+        "sharedDriveItem"
       ]
     },
     {
@@ -1893,6 +1898,16 @@
                 "contentSharingSession",
                 "participant",
                 "addLargeGalleryViewOperation"
+              ]
+            },            
+            {
+              "name": "Call events",
+              "resources": [
+                "callEvent",
+                "emergencyCallEvent"
+              ],
+              "complexTypes": [
+                "emergencyCallerInfo"
               ]
             },
             {

@@ -165,7 +165,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "engagementRole",
           "ChangeType": "Addition",
-          "Description": "Added the [engagementRole](https://learn.microsoft.com/en-us/graph/api/resources/engagementRole?view=graph-rest-beta) resource and its methods.",
+          "Description": "Added the [engagementRole](https://learn.microsoft.com/en-us/graph/api/resources/engagementRole?view=graph-rest-beta) resource and associated methods.",
           "Target": "engagementRole"
         },
         {
@@ -173,16 +173,16 @@
           "ApiChange": "Resource",
           "ChangedApiName": "engagementRoleMember",
           "ChangeType": "Addition",
-          "Description": "Added the [engagementRoleMember](https://learn.microsoft.com/en-us/graph/api/resources/engagementRoleMember?view=graph-rest-beta) resource and its methods.",
+          "Description": "Added the [engagementRoleMember](https://learn.microsoft.com/en-us/graph/api/resources/engagementRoleMember?view=graph-rest-beta) resource and associated methods.",
           "Target": "engagementRoleMember"
         },
         {
           "Id": "da5f6a25-777b-4bfb-8cf1-86d2fe708864",
           "ApiChange": "Resource",
-          "ChangedApiName": "employeeexperienceuser",
+          "ChangedApiName": "employeeExperienceUser",
           "ChangeType": "Addition",
-          "Description": "Added the [employeeexperienceuser](https://learn.microsoft.com/en-us/graph/api/resources/employeeexperienceuser?view=graph-rest-beta) resource and its methods.",
-          "Target": "employeeexperienceuser"
+          "Description": "Added the [employeeExperienceUser](https://learn.microsoft.com/en-us/graph/api/resources/employeeexperienceuser?view=graph-rest-beta) resource.",
+          "Target": "employeeExperienceUser"
         },
         {
           "Id": "da5f6a25-777b-4bfb-8cf1-86d2fe708864",
@@ -191,20 +191,54 @@
           "ChangeType": "Addition",
           "Description": "Added the **assignedRoles** relationship to the [employeeExperienceUser](https://learn.microsoft.com/en-us/graph/api/resources/employeeExperienceUser?view=graph-rest-beta) resource.",
           "Target": "employeeExperienceUser"
-        },
-        {
-          "Id": "da5f6a25-777b-4bfb-8cf1-86d2fe708864",
-          "ApiChange": "Method",
-          "ChangedApiName": "List",
-          "ChangeType": "Addition",
-          "Description": "Added the [list](https://learn.microsoft.com/en-us/graph/api/employeeexperience-list-roles?view=graph-rest-beta) method to the [employeeexperience](https://learn.microsoft.com/en-us/graph/api/resources/employeeexperience.md?view=graph-rest-beta) resource.",
-          "Target": "employeeexperience"
         }
       ],
       "Id": "da5f6a25-777b-4bfb-8cf1-86d2fe708864",
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2025-04-29T19:49:47.6640112Z",
+      "WorkloadArea": "Employee experience",
+      "SubArea": "Employee engagement"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "083f8aaf-e649-4f00-9def-f5a7beced1b9",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "roles",
+          "ChangeType": "Addition",
+          "Description": "Added the **roles** relationship to the [employeeExperience](https://learn.microsoft.com/en-us/graph/api/resources/employeeExperience?view=graph-rest-1.0) resource.",
+          "Target": "employeeExperience"
+        },
+        {
+          "Id": "083f8aaf-e649-4f00-9def-f5a7beced1b9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "employeeExperienceUser",
+          "ChangeType": "Addition",
+          "Description": "Added the [employeeExperienceUser](https://learn.microsoft.com/en-us/graph/api/resources/employeeExperienceUser?view=graph-rest-1.0) resource.",
+          "Target": "employeeExperienceUser"
+        },
+        {
+          "Id": "083f8aaf-e649-4f00-9def-f5a7beced1b9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "engagementRole",
+          "ChangeType": "Addition",
+          "Description": "Added the [engagementRole](https://learn.microsoft.com/en-us/graph/api/resources/engagementRole?view=graph-rest-1.0) resource and associated methods.",
+          "Target": "engagementRole"
+        },
+        {
+          "Id": "083f8aaf-e649-4f00-9def-f5a7beced1b9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "engagementRoleMember",
+          "ChangeType": "Addition",
+          "Description": "Added the [engagementRoleMember](https://learn.microsoft.com/en-us/graph/api/resources/engagementRoleMember?view=graph-rest-1.0) resource and associated methods.",
+          "Target": "engagementRoleMember"
+        }
+      ],
+      "Id": "083f8aaf-e649-4f00-9def-f5a7beced1b9",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-10-20T22:17:20.5587061Z",
       "WorkloadArea": "Employee experience",
       "SubArea": "Employee engagement"
     },

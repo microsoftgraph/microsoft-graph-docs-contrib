@@ -132,6 +132,7 @@ Content-Type: application/json
     "id": "b5e01f81-1f81-b5e0-811f-e0b5811fe0b5",
     "displayName": "Jordan's Surface Book",
     "createdDateTime": "2020-11-27T23:12:49Z",
+    "lastUsedDateTime": null,
     "keyStrength": "normal"
   }
 }

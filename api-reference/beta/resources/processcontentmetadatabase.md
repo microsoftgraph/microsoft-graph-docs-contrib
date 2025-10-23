@@ -16,7 +16,9 @@ Namespace: microsoft.graph
 
 Abstract base type representing metadata for a content entry being processed, including identifiers, content details, and timestamps. Use [processConversationMetadata](./processconversationmetadata.md) for conversation content and [processFileMetadata](./processfilemetadata.md) for file content.
 
->**Note** This is an abstract type and won't be instantiated directly.
+This is an abstract type from which the following resources derive:
+- [processConversationMetadata](../resources/processconversationmetadata.md)
+- [processFileMetadata](../resources/processfilemetadata.md)
 
 ## Properties
 
