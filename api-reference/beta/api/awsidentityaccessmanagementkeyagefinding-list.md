@@ -130,13 +130,13 @@ Content-Type: application/json
           "@odata.type": "graph.awsAuthorizationSystem",
           "id": "{Id}",
           "authorizationSystemId": "956987887735",
-          "authorizationSystemName": "cloudknox-development",
+          "authorizationSystemName": "contoso-development",
           "authorizationSystemType": "aws"
         },
         "owner": {
           "@odata.type": "graph.awsUser",
           "id": "YXJuOmF3czppYW06Ojk1Njk4Nzg4NzczNTp1c2VyL2dlZXRh",
-          "externalId":"arn:aws:iam::956987887735:user/geeta",
+          "externalId":"arn:aws:iam::956987887735:user/contoso",
           "displayName": "geeta",
           "source": {
             "@odata.type": "graph.awsSource",
