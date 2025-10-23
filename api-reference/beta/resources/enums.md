@@ -5424,3 +5424,23 @@ Possible values for user account types (group membership), per Windows definitio
 |h6|
 |d1|
 |unknownFutureValue|
+
+### workLocationSource values 
+
+|Member|
+|:---|
+|none|
+|manual|
+|scheduled|
+|automatic|
+|unknownFutureValue|
+
+### workLocationType values 
+
+|Member|
+|:---|
+|unspecified|
+|office|
+|remote|
+|timeOff|
+|unknownFutureValue|
