@@ -20,6 +20,8 @@ This is an abstract type that serves as the base resource for specific provider 
 - [arkosefraudprotectionprovider](../resources/arkosefraudprotectionprovider.md) resource type
 - [humanSecurityFraudProtectionProvider](../resources/humansecurityfraudprotectionprovider.md) resource type
 
+For more information, see [Integrate Microsoft Entra External ID with Arkose Labs and HUMAN Security for fraud protection (preview)](/entra/external-id/customers/how-to-integrate-fraud-protection).
+
 Inherits from [entity](../resources/entity.md).
 
 

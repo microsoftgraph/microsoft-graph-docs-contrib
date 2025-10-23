@@ -5425,6 +5425,15 @@ Possible values for user account types (group membership), per Windows definitio
 |d1|
 |unknownFutureValue|
 
+### siteTemplateType values 
+
+|Member|
+|:---|
+|sitepagepublishing|
+|group|
+|sts|
+|unknownFutureValue|
+
 ### workLocationSource values 
 
 |Member|
@@ -5443,4 +5452,3 @@ Possible values for user account types (group membership), per Windows definitio
 |office|
 |remote|
 |timeOff|
-|unknownFutureValue|
