@@ -37,7 +37,6 @@
     {
       "ChangeList": [
         {
-          "Id": "ac011bc2-8597-42ee-9690-2445bc0ca2f4",
           "Id": "e5e9c350-a6b9-4e42-9e8f-7d14f2b82db8",
           "ApiChange": "Property",
           "ChangedApiName": "sessionStartDateTime",
