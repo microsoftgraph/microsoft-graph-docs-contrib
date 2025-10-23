@@ -1099,7 +1099,6 @@
           "shouldSort": true,
           "resources": [
             "administrativeUnit",
-            "appRoleAssignment",
             "contract",
             "directory",
             "device",
@@ -1556,6 +1555,7 @@
             {
               "name": "Authentication event listeners",
               "resources": [
+                "appRoleAssignment",
                 "authenticationEventListener",
                 "onAttributeCollectionListener",
                 "onAttributeCollectionStartListener",
