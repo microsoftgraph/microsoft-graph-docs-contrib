@@ -54,6 +54,9 @@ Represents the Microsoft 365 Backup Storage service in a tenant.
 |sharePointRestoreSessions|[sharePointRestoreSession](../resources/sharepointrestoresession.md) collection|The list of SharePoint restore sessions available in the tenant.|
 |siteInclusionRules|[siteProtectionRule](../resources/siteprotectionrule.md) collection|The list of site inclusion rules applied to the tenant.|
 |siteProtectionUnits|[siteProtectionUnit](../resources/siteprotectionunit.md) collection|The list of site protection units in the tenant.|
+|allSitesbackup|[allSitesBackup](../resources/allsitesbackup.md)| Full service backup settings for Sharepoint.|
+|allMailboxesBackup|[allMailboxesBackup](../resources/allmailboxesbackup.md)| Full service backup settings for Exchange.|
+|allDrivesBackup|[allDrivesBackup](../resources//alldrivesbackup.md)| Full service backup settings for Onedrive for Business.|
 
 ## JSON representation
 

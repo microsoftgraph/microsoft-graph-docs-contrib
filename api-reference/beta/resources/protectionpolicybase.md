@@ -45,7 +45,7 @@ Base type for [sharePointProtectionPolicy](../resources/sharepointprotectionpoli
 |protectionMode|backupPolicyProtectionMode|Specifies the method used to protect artifacts within the policy. Possible values are: `standard`, `fullServiceBackup`, `unknownFutureValue`.|
 |protectionPolicyArtifactCount|[protectionPolicyArtifactCount](../resources/protectionpolicyartifactcount.md)|The count of artifacts in the protection policy by status. Returned only on `$select`.|
 |retentionSettings|[retentionSetting](../resources/retentionsetting.md) collection|Contains the retention setting details for the policy.|
-|status|[protectionPolicyStatus](../resources/protectionpolicybase.md#protectionpolicystatus-values)|The aggregated status of the protection units associated with the policy. The possible values are: `inactive`, `activeWithErrors`, `updating`, `active`, `unknownFutureValue`.|
+|status|[protectionPolicyStatus](../resources/protectionpolicybase.md#protectionpolicystatus-values)|The aggregated status of the protection units associated with the policy. The possible values are: `inactive`, `activeWithErrors`, `updating`, `active`, `unknownFutureValue`, `dormant`.|
 
 ### protectionPolicyStatus values
 
@@ -56,6 +56,7 @@ Base type for [sharePointProtectionPolicy](../resources/sharepointprotectionpoli
 |inactive | All units are unprotected.|
 |updating | Some or all units are in a `protectRequested`, `unprotectRequested`, or `removeRequested` state.|
 |unknownFutureValue | Evolvable enumeration sentinel value. Don't use.|
+|dormant| The policy is immutable. Status of units are preserved.|
 
 ## Relationships
 None.
