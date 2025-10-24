@@ -1,6 +1,6 @@
 ---
 title: "applicationRiskFactors resource type"
-description: "Aggregates key risk factor categories for an application, including general, legal, security and compliance-related information used in overall risk scoring and evaluation"
+description: "Represents key risk factor categories for an application, including general, legal, security and compliance-related information used in overall risk scoring and evaluation."
 author: "HildaK-pm"
 ms.date: 10/13/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a collection of risk factor categories that describe different aspects of an application's trust and compliance posture. These factors are used to evaluate the overall security, operational, and legal risk level of the application.
+Represents a collection of risk factor categories that describe different aspects of an [application's](../resources/applicationtemplate.md) trust and compliance posture. These factors are used to evaluate the overall security, operational, and legal risk level of the application.
 
 ## Properties
 |Property|Type|Description|
