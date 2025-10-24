@@ -41,10 +41,10 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.applicationRiskScore",
-  "total": "Single",
-  "security": "Single",
-  "provider": "Single",
-  "compliance": "Single",
-  "legal": "Single"
+  "total": "Double",
+  "security": "Double",
+  "provider": "Double",
+  "compliance": "Double",
+  "legal": "Double"
 }
 ```
