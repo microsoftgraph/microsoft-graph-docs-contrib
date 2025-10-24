@@ -47,7 +47,7 @@ Represents an application in the [Microsoft Entra application gallery](/azure/ac
 
 None.
 
-[!INCLUDE [licensing](../../includes/permissions/application-template-licensing.md)]
+[!INCLUDE [licensing](../includes/permissions/applicationtemplate-licensing.md)]
 
 ## JSON representation
 
