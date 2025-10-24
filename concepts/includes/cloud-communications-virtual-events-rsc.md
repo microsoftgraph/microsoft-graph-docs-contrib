@@ -1,6 +1,6 @@
 ### Resource-Specific Consent (RSC) for Virtual Events
 
-Resource-Specific Consent (RSC) allows apps to request permissions scoped to a specific webinar or town hall instead of requiring global admin privileges. This improves security, simplifies consent flows, and enables developers to build integrations that respect organizational boundaries.
+Resource-Specific Consent (RSC) allows apps to request permissions scoped to a specific webinar or town hall instead of requiring global admin privileges. The RSC permissions improves security, simplifies consent flows, and enables developers to build integrations that respect organizational boundaries.
 
 #### Enabled Graph Virtual Events APIs & RSC Permissions
 
@@ -12,7 +12,7 @@ Resource-Specific Consent (RSC) allows apps to request permissions scoped to a s
 
 
 #### Alternative: Traditional Authentication Flow
-If RSC is not required or feasible, developers can use **traditional OAuth flows**:
+If RSC isn't required or feasible, developers can use **traditional OAuth flows**:
 - **App-only token flow**: Ideal for backend services or automation scenarios where the app acts without user context.
 - **Delegated (user) token flow**: Suitable when actions require user context and consent.
 
@@ -22,7 +22,7 @@ If RSC is not required or feasible, developers can use **traditional OAuth flows
 |----------------------------------------------------|---------------------------|
 | App needs access to a **specific webinar or town hall only** | **RSC** |
 | App requires **tenant-wide access** to multiple events | **App-only token flow** |
-| User-driven actions (e.g., organizer managing events) | **Delegated token flow** |
+| User-driven actions like organizer managing events | **Delegated token flow** |
 | Compliance/security mandates require **least privilege** | **RSC** |
 
 #### Quick Start
