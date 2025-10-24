@@ -35,7 +35,7 @@ Represents a sensor on hardware that collects and reports data on physical or en
 | heartbeat          | The sensor reports the heartbeat of the device. It indicates if the device is online or not. Use it for sensors that monitor the status of the device.                                             |
 | badge | The sensor reports badge-swiping events of the people. Use it for sensors that accept active user interactions. |
 | unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
-| wifi  | The sensor that's used to upload Wi-Fi devices for automatic location detection. |
+| wifi  | The sensor to upload Wi-Fi devices for automatic location detection. |
 
 ## Relationships
 
