@@ -28,6 +28,8 @@ items:
     href: ../../api/plannerplan-list-tasks.md
   - name: Get delta
     href: ../../api/plannerplan-delta.md
+  - name: getUsageRights
+    href: ../../api/plannerplan-getusagerights.md
 - name: Planner task
   items:
   - name: Planner task
