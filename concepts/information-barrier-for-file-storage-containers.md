@@ -1,6 +1,6 @@
 ---
 title: "Information Barrier for fileStorageContainers"
-description: "Manage Information Barrier for fileStorageContainers"
+description: "Manage information barriers for file storage containers"
 author: lilealdai
 ms.author: daili
 ms.topic: how-to
@@ -10,7 +10,7 @@ ms.subservice: "onedrive"
 ms.date: 10/22/2025
 ---
 
-# Manage informationBarrier for fileStorageContainers
+# Manage information barriers for file storage containers
 The informationBarrier property of the [fileStorageContainer](/graph/api/resources/filestoragecontainer) object lets you restrict two-way communication and collaboration between users.
 
 ## Stamp informationBarrier on fileStorageContainer creation
