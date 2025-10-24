@@ -1,35 +1,46 @@
 ---
-title: "Manage information barriers for file storage containers"
-description: "Manage information barriers for file storage containers"
-author: lilealdai
-ms.author: daili
-ms.topic: how-to
+title: "Managing information barriers for file storage containers"
+description: "Learn about the Microsoft Graph API for managing information barriers in file storage containers and how it helps enforce collaboration restrictions."
 ms.localizationpriority: medium
-ms.custom: scenarios:getting-started
 ms.subservice: "onedrive"
-ms.date: 10/22/2025
+ms.custom: scenarios:getting-started
+ms.date: 10/23/2025
+ms.topic: concept-article
 ---
 
-# Manage information barriers for file storage containers
-The informationBarrier property of the [fileStorageContainer](/graph/api/resources/filestoragecontainer) object lets you restrict two-way communication and collaboration between users.
+# Managing information barriers for file storage containers
 
-## Stamp informationBarrier on fileStorageContainer creation
-For tenants that have Information Barriers(IB) enabled, IB is automatically stamped on the containers at creation time:
-- For app-only auth, the container is provisioned to the default IB mode - Open, with no IB segments.
-  - The creating user can specify IB mode and segments in the payload.
-- For delegated auth where a user context is present, the container is provisioned based on the user's IB settings:
-  - Container creating user has a single IB segment:
-    - The container's IB mode is set to Explicit.
-    - The container's IB segments is set to be the sum of the user's IB segments and other compatible segments in the tenant.
-  - Container creating user has multiple IB segments:
-    - The container's IB mode is set to OwnerModerated.
-    - The container's IB segments is empty.
-  - Container creating user has no IB segment:
-    - The container's IB mode is set to Open.
-    - The container's IB segments is empty.
+The Microsoft Graph API for **information barriers** in file storage containers enables organizations to enforce compliance and collaboration restrictions. By applying information barrier (IB) policies, you can prevent communication and sharing between specific user segments, ensuring regulatory or business requirements are met.
 
-### Example
-To specify informationBarrier with App-Only auth when creating a container, run the following sample request:
+## Stamp information barriers during file a storage container creation
+
+When **information barriers (IB)** are enabled for a tenant, the IB settings are automatically applied (or *stamped*) on newly created containers. The behavior depends on the authentication type and the creating user's IB configuration.
+
+### App-only authentication
+
+When using app-only authentication:
+- The container is created in the default **Open** IB mode, with no IB segments.
+- Optionally, the app can specify the IB mode and segments in the request payload.
+
+### Delegated authentication
+
+When a user context is present, the container inherits IB settings based on the creating user's configuration:
+
+- **User has a single IB segment:**
+  - The container’s IB mode is set to **Explicit**.
+  - The container’s IB segments include the user’s IB segment and other compatible segments in the tenant.
+
+- **User has multiple IB segments:**
+  - The container’s IB mode is set to **ownerModerated**.
+  - The container’s IB segments are empty.
+
+- **User has no IB segment:**
+  - The container’s IB mode is set to **Open**.
+  - The container’s IB segments are empty.
+
+### Specify information barriers with app-only authentication
+
+The following example shows how to specify an information barrier with app-only authentication when creating a container.
 
 ```http
 POST https://graph.microsoft.com/beta/storage/fileStorage/containers?$select=id,displayName,informationBarrier
@@ -47,13 +58,12 @@ Content-Type: application/json
   }
 }
 ```
+## Update information barrier
 
-## Update informationBarrier
-- Admins can update Information Barriers via Update fileStorageContainer API.
-- Container owner and container principal owner can only add segments to a container that already has associated segments. They can't create segments, change the policies for a segment, associate segments with nonsegmented sites, or remove segments.
-- Existing containers don't get their IB mode and segment automatically updated due to updates of the creating user's IB settings.
+Admins can update information barriers for a file storage container. Container owners and principal owners can add segments only to containers that already have associated segments. However, they can’t create new segments, modify existing segment policies, associate segments with nonsegmented sites, or remove segments. Additionally, updates to a user’s information barrier settings don’t automatically change the IB mode or segment configuration of existing containers.
 
-### Example
+The following example shows how to update information barriers for a file storage container using the Update fileStorageContainer API.
+
 ```http
 PATCH https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z?$select=id,displayName,informationBarrier
 Content-Type: application/json
@@ -69,9 +79,21 @@ Content-Type: application/json
   }
 }
 ```
+## Disable information barriers
 
-## Disable Information Barriers
-If Information Barriers are disabled for the tenant, all IB access enforcement stops, but existing IB settings on containers are retained. If Information Barriers are re-enabled, enforcement resumes based on the existing settings.
+If information barriers are disabled for a tenant, all IB access enforcement stops. However, the existing IB settings on containers are retained. If information barriers are re-enabled, enforcement resumes based on the previously configured settings.
 
-## Explicit Select
-Explicitly select this property to return it. i.e. `?$select=informationBarrier`
+## Explicit select
+
+Explicitly select this property to include it in the response, for example:  
+`?$select=informationBarrier`
+
+## API reference
+
+- [API reference overview in Microsoft Graph beta](https://learn.microsoft.com/graph/api/resources/filestoragecontainer)
+
+## Related content
+
+- [Information barriers in Microsoft 365](https://learn.microsoft.com/microsoft-365/compliance/information-barriers)
+- [Authentication and authorization basics](/graph/auth/auth-concepts)
+- [Microsoft Graph overview](https://learn.microsoft.com/graph/overview)
