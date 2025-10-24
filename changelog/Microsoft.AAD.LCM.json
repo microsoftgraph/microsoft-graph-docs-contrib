@@ -1209,38 +1209,6 @@
         {
           "Id": "d53f0bcf-c527-4b0f-9705-430fc5fb0dc3",
           "ApiChange": "Resource",
-          "ChangedApiName": "activateGroupScope",
-          "ChangeType": "Addition",
-          "Description": "Added the [activateGroupScope](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-activateGroupScope?view=graph-rest-1.0) resource.",
-          "Target": "activateGroupScope"
-        },
-        {
-          "Id": "d53f0bcf-c527-4b0f-9705-430fc5fb0dc3",
-          "ApiChange": "Resource",
-          "ChangedApiName": "activateProcessingResultScope",
-          "ChangeType": "Addition",
-          "Description": "Added the [activateProcessingResultScope](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-activateProcessingResultScope?view=graph-rest-1.0) resource.",
-          "Target": "activateProcessingResultScope"
-        },
-        {
-          "Id": "d53f0bcf-c527-4b0f-9705-430fc5fb0dc3",
-          "ApiChange": "Resource",
-          "ChangedApiName": "activateRunScope",
-          "ChangeType": "Addition",
-          "Description": "Added the [activateRunScope](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-activateRunScope?view=graph-rest-1.0) resource.",
-          "Target": "activateRunScope"
-        },
-        {
-          "Id": "d53f0bcf-c527-4b0f-9705-430fc5fb0dc3",
-          "ApiChange": "Resource",
-          "ChangedApiName": "activateUserScope",
-          "ChangeType": "Addition",
-          "Description": "Added the [activateUserScope](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-activateUserScope?view=graph-rest-1.0) resource.",
-          "Target": "activateUserScope"
-        },
-        {
-          "Id": "d53f0bcf-c527-4b0f-9705-430fc5fb0dc3",
-          "ApiChange": "Resource",
           "ChangedApiName": "activationScope",
           "ChangeType": "Addition",
           "Description": "Added the [activationScope](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-activationScope?view=graph-rest-1.0) resource.",
@@ -1295,14 +1263,6 @@
           "ChangeType": "Addition",
           "Description": "Added the **activationTaskScopeType** enumeration type.",
           "Target": "activationTaskScopeType"
-        },
-        {
-          "Id": "4688a713-d9d5-4db3-9894-aafdcbe17694",
-          "ApiChange": "Enumeration",
-          "ChangedApiName": "activationUserScopeType",
-          "ChangeType": "Addition",
-          "Description": "Added the **activationUserScopeType** enumeration type.",
-          "Target": "activationUserScopeType"
         },
         {
           "Id": "4688a713-d9d5-4db3-9894-aafdcbe17694",
