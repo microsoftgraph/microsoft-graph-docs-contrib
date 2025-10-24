@@ -32,6 +32,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 Additional permissions aren't required to call this API, as long as your application has a valid access token to call Microsoft Graph.
 
+[!INCLUDE [licensing](../../includes/permissions/application-template-licensing.md)]
+
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
