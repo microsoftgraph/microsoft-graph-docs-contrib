@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 
-``` http
+```http
 DELETE directory/federationConfigurations/{samlOrWsFedExternalDomainFederation ID}
 ```
 
@@ -61,7 +61,7 @@ If successful, this method returns a `204 No Content` response code.
 }
 -->
 
-``` http
+```http
 DELETE https://graph.microsoft.com/beta/directory/federationConfigurations/96db02e2-80c1-5555-bc3a-de92ffb8c5be
 ```
 
@@ -103,6 +103,6 @@ DELETE https://graph.microsoft.com/beta/directory/federationConfigurations/96db0
 }
 -->
 
-``` http
+```http
 HTTP/1.1 204 No Content
 ```

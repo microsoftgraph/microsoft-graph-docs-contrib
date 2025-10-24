@@ -29,7 +29,7 @@ Group members are able to create, edit, resolve, and delete tasks in the plan. G
 
 To [get the plans owned by a group](../api/plannergroup-list-plans.md), make the following HTTP request.
 
-``` http
+```http
 GET /groups/{group-id}/planner/plans
 ```
 
@@ -121,7 +121,7 @@ To [create a task in a plan](../api/planner-post-tasks.md), set the **planId** p
 Tasks currently can't be created without plans.
 To [retrieve the tasks in a plan](../api/plannerplan-list-tasks.md), make the following HTTP request.
 
-``` http
+```http
 GET /planner/plans/{plan-id}/tasks
 ```
 

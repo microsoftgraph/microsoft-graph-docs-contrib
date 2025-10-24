@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 DELETE /networkaccess/forwardingProfiles/{forwardingProfile_id}/policies/{policy_id}
 ```
 
@@ -57,7 +57,7 @@ The following example shows a request.
   "name": "delete_forwardingpolicylink"
 }
 -->
-``` http
+```http
 DELETE https://graph.microsoft.com/beta/networkaccess/forwardingProfiles/{forwardingProfile_id}/policies/{policy_id}
 ```
 
@@ -98,7 +98,7 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 
