@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the compliance certifications, attestations, and standards that an application or service provider meets. These compliance frameworks are used to assess the application's alignment with recognized industry, government, and data protection requirements
+Represents the compliance certifications, attestations, and standards that an [application](../resources/applicationtemplate.md) or service provider meets. These compliance frameworks are used to assess the application's alignment with recognized industry, government, and data protection requirements
 
 
 ## Properties
