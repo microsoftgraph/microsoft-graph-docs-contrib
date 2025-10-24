@@ -1,6 +1,6 @@
 ---
 title: "managedAppDataStorageLocation enum type"
-description: "Storage locations where managed apps can potentially store their data"
+description: "The storage locations where managed apps can potentially store their data."
 author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
@@ -14,12 +14,12 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Storage locations where managed apps can potentially store their data
+The storage locations where managed apps can potentially store their data.
 
 ## Members
 |Member|Value|Description|
 |:---|:---|:---|
-|oneDriveForBusiness|1|OneDrive for business|
-|sharePoint|2|SharePoint|
-|box|3|Box|
-|localStorage|6|Local storage on the device|
+|oneDriveForBusiness|1|Indicates allowed storage location for the managed app to save files is 'OneDrive for Business'.|
+|sharePoint|2|Indicates allowed storage location for the managed app to save files is 'Sharepoint'.|
+|box|3|Indicates that the allowed storage location for a managed app to save files is to 'Box'. Box is a non-Microsoft solution that enables cloud-based file storage capabilities.|
+|localStorage|6|Indicates allowed storage location for the managed app to save files is local storage on the device.|

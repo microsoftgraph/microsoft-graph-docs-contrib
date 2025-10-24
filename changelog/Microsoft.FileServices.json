@@ -1,5 +1,105 @@
 {
   "changelog": [
+     {
+      "ChangeList": [
+        {
+          "Id": "6e7a02d3-ce78-484b-8801-c15a835e1e1e",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "siteTemplateType",
+          "ChangeType": "Addition",
+          "Description": "Added the **siteTemplateType** enumeration type.",
+          "Target": "siteTemplateType"
+        },
+        {
+          "Id": "6e7a02d3-ce78-484b-8801-c15a835e1e1e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "identityInput",
+          "ChangeType": "Addition",
+          "Description": "Added the [identityInput](https://learn.microsoft.com/en-us/graph/api/resources/identityInput?view=graph-rest-beta) resource type.",
+          "Target": "identityInput"
+        },
+        {
+          "Id": "6e7a02d3-ce78-484b-8801-c15a835e1e1e",
+          "ApiChange": "Property",
+          "ChangedApiName": "locale",
+          "ChangeType": "Addition",
+          "Description": "Added the **locale** property to the [site](https://learn.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-beta) resource.",
+          "Target": "site"
+        },
+        {
+          "Id": "6e7a02d3-ce78-484b-8801-c15a835e1e1e",
+          "ApiChange": "Property",
+          "ChangedApiName": "lockState",
+          "ChangeType": "Addition",
+          "Description": "Added the **lockState** property to the [site](https://learn.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-beta) resource.",
+          "Target": "site"
+        },
+        {
+          "Id": "6e7a02d3-ce78-484b-8801-c15a835e1e1e",
+          "ApiChange": "Property",
+          "ChangedApiName": "ownerIdentityToResolve",
+          "ChangeType": "Addition",
+          "Description": "Added the **ownerIdentityToResolve** property to the [site](https://learn.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-beta) resource.",
+          "Target": "site"
+        },
+        {
+          "Id": "6e7a02d3-ce78-484b-8801-c15a835e1e1e",
+          "ApiChange": "Property",
+          "ChangedApiName": "shareByEmailEnabled",
+          "ChangeType": "Addition",
+          "Description": "Added the **shareByEmailEnabled** property to the [site](https://learn.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-beta) resource.",
+          "Target": "site"
+        },
+        {
+          "Id": "6e7a02d3-ce78-484b-8801-c15a835e1e1e",
+          "ApiChange": "Property",
+          "ChangedApiName": "template",
+          "ChangeType": "Addition",
+          "Description": "Added the **template** property to the [site](https://learn.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-beta) resource.",
+          "Target": "site"
+        },
+        {
+          "Id": "6e7a02d3-ce78-484b-8801-c15a835e1e1e",
+          "ApiChange": "Method",
+          "ChangedApiName": "getOperationStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the [getOperationStatus](https://learn.microsoft.com/en-us/graph/api/site-getOperationStatus?view=graph-rest-beta) method to the [site](https://learn.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-beta) resource.",
+          "Target": "site"
+        },
+        {
+          "Id": "6e7a02d3-ce78-484b-8801-c15a835e1e1e",
+          "ApiChange": "Method",
+          "ChangedApiName": "site",
+          "ChangeType": "Addition",
+          "Description": "Added the [create](https://learn.microsoft.com/en-us/graph/api/site-post-sites?view=graph-rest-beta) method to the [site](https://learn.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-beta) resource.",
+          "Target": "site"
+        }
+      ],
+      "Id": "6e7a02d3-ce78-484b-8801-c15a835e1e1e",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-10-23T10:36:47.2630406Z",
+      "WorkloadArea": "Sites and lists",
+      "SubArea": ""
+    },
+    {
+        "ChangeList": [
+          {
+            "Id": "1fd05db7-93bb-4a07-a6fa-0891cc23ee3d",
+            "ApiChange": "Header",
+            "ChangedApiName": "if-none-match",
+            "ChangeType": "Addition",
+            "Description": "Added the `if-none-match` header to the [driveItem: createUploadSession](https://learn.microsoft.com/en-us/graph/api/driveitem-createuploadsession?view=graph-rest-beta) method.",
+            "Target": "createUploadSession"
+          }
+        ],
+        "Id": "1fd05db7-93bb-4a07-a6fa-0891cc23ee3d",
+        "Cloud": "Prod",
+        "Version": "beta",
+        "CreatedDateTime": "2025-10-20T10:30:00.3354597Z",
+        "WorkloadArea": "Files",
+        "SubArea": ""
+      },
       {
       "ChangeList": [
         {

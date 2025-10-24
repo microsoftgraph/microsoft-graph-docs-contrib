@@ -16,6 +16,8 @@ Namespace: microsoft.graph.teamsAdministration
 
 This method is used to update an existing number with optional attributes. Currently supported attributes are `locationId`, `networkSiteId`, and `reverseNumberLookupOptions`.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -64,6 +66,7 @@ If successful, this method returns a `200 OK` response code.
 #### Request
 
 The following example shows a request to update `locationId` of a telephone number.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "post_updateNumber1",
@@ -78,6 +81,12 @@ Content-Type: application/json
   "locationId": "93cb8a70-b4af-41df-9928-d07607e21776",
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/post-updatenumber1-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
@@ -97,6 +106,7 @@ HTTP/1.1 200 OK
 #### Request
 
 The following example shows a request to update `networkSiteId` of a telephone number.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "post_updateNumber2",
@@ -111,6 +121,12 @@ Content-Type: application/json
   "networkSiteId": "fff21455-0f84-4a6b-babd-0a9b46971a62",
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/post-updatenumber2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
@@ -131,6 +147,7 @@ HTTP/1.1 200 OK
 #### Request
 
 The following example shows a request to update `reverseNumberLookupOptions` for telephone number associated with resource account.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "post_updateNumber3",
@@ -145,6 +162,12 @@ Content-Type: application/json
   "reverseNumberLookupOptions": ["skipInternalVoip"],
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/post-updatenumber3-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
@@ -166,6 +189,7 @@ HTTP/1.1 200 OK
 
 The following example shows a request to update `locationId` of a telephone number.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "post_updateNumber4",
@@ -180,6 +204,12 @@ Content-Type: application/json
   "locationId": "",
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/post-updatenumber4-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 

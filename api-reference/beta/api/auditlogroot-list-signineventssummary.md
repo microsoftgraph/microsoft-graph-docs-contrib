@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 
 Get a list of the number of signin events for a specific day as defined in the [signInEventsActivity](../resources/signineventsactivity.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -61,6 +63,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_signineventsactivity"
@@ -70,6 +73,11 @@ The following example shows a request.
 GET https://graph.microsoft.com/beta/auditLogs/signInEventsSummary
 ```
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-signineventsactivity-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 
