@@ -27,8 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/usernamesigninidentifier-update-permissions.md)]
 
-> [!IMPORTANT]
-The least privileged built-in role required for this operation is *Authentication Policy Administrator*.
+[!INCLUDE [rbac-signin-id-apis](../includes/rbac-for-apis/rbac-signin-id-apis.md)]
 
 ## HTTP request
 
@@ -67,7 +66,7 @@ If successful, this method returns a `200 OK` response code and an updated [user
 
 ### Request
 
-The following example shows a request.
+The following example shows a request that enables username as a sign-in identifier.
 <!-- {
   "blockType": "request"
 }

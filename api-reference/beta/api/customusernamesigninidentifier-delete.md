@@ -27,8 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/customusernamesigninidentifier-delete-permissions.md)]
 
-> [!IMPORTANT]
-The least privileged built-in role required for this operation is *Authentication Policy Administrator*.
+[!INCLUDE [rbac-signin-id-apis](../includes/rbac-for-apis/rbac-signin-id-apis.md)]
 
 ## HTTP request
 

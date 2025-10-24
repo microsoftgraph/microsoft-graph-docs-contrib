@@ -16,8 +16,12 @@ Namespace: microsoft.graph
 
 Represents the base type for sign-in identifiers that enable users to authenticate with alternative identifiers such as email addresses, usernames, or custom identifiers like account numbers or employee IDs. This is an abstract type that serves as the foundation for specific sign-in identifier implementations.
 
-This is an abstract type.
+This is an abstract type from which the following types are derived.
 
+- [upnSignInIdentifier](../resources/upnsigninidentifier.md) resource type
+- [emailSignInIdentifier](../resources/emailsigninidentifier.md) resource type
+- [usernameSignInIdentifier](../resources/usernamesigninidentifier.md) resource type
+- [customUsernameSignInIdentifier](../resources/customusernamesigninidentifier.md) resource type
 
 ## Methods
 

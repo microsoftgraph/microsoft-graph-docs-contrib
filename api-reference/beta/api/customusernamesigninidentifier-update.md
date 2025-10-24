@@ -27,8 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/customusernamesigninidentifier-update-permissions.md)]
 
-> [!IMPORTANT]
-The least privileged built-in role required for this operation is *Authentication Policy Administrator*.
+[!INCLUDE [rbac-signin-id-apis](../includes/rbac-for-apis/rbac-signin-id-apis.md)]
 
 ## HTTP request
 
@@ -59,7 +58,6 @@ PATCH /identity/signInIdentifiers/{signInIdentifier-name}
 |validationRegex|String|The regular expression pattern used to validate custom usernames. The pattern must be a valid regex, can't exceed 60 characters in length, and can't be an email-supported regex pattern. Required.|
 
 
-
 ## Response
 
 If successful, this method returns a `200 OK` response code and an updated [customUsernameSignInIdentifier](../resources/customusernamesigninidentifier.md) object in the response body.
@@ -68,7 +66,7 @@ If successful, this method returns a `200 OK` response code and an updated [cust
 
 ### Request
 
-The following example shows a request.
+The following example shows a request that enables CustomUsername1 as a sign-in identifier, with a regex for strings that start with four letters (a-z), followed by one digit (0-9), and ends with five characters.
 <!-- {
   "blockType": "request",
   "name": "update_customusernamesigninidentifier"

@@ -33,7 +33,7 @@ Inherits from [signInIdentifierBase](../resources/signinidentifierbase.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |isEnabled|Boolean|Indicates whether this custom username sign-in identifier type is enabled for user authentication in the tenant. Inherited from [signInIdentifierBase](../resources/signinidentifierbase.md).|
-|name|String|The unique name identifier for this custom username sign-in identifier configuration. Possible values include: `Email`, `UPN`, `Username`, `CustomUsername1`, `CustomUsername2`. Inherited from [signInIdentifierBase](../resources/signinidentifierbase.md).|
+|name|String|The unique name identifier for this custom username sign-in identifier configuration. Possible values include: `CustomUsername1`, `CustomUsername2`. Inherited from [signInIdentifierBase](../resources/signinidentifierbase.md).|
 |validationRegex|String|The regular expression pattern used to validate custom usernames. The pattern must be a valid regex, can't exceed 60 characters in length, and can't be an email-supported regex pattern.|
 
 ## Relationships
