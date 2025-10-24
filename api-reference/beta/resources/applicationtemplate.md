@@ -35,7 +35,7 @@ Represents an application in the [Microsoft Entra application gallery](/azure/ac
 |endpoints|String collection|A collection of string URLs representing various API endpoints available on learn.microsoft.com.|
 |homePageUrl|String|The home page URL of the application.|
 |id|String| Unique identifier for the application. Read-only.|
-|lastModifiedDateTime|DateTimeOffset|The date and time when the data or resource was last updated, in DateTimeOffset format.|
+|lastModifiedDateTime|DateTimeOffset|The date and time when the data for the application was last updated, represented using ISO 8601 format and always in UTC time.|
 |logoUrl|String|The URL to get the logo for this application.|
 |publisher|String|The name of the publisher for this application.|
 |riskFactors|[applicationRiskFactors](applicationriskfactors.md)|General business and operational information about the application provider|
