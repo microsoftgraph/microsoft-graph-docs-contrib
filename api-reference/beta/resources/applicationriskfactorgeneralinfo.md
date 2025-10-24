@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents general information about an application that contributes to its overall risk profile, including its business background, operational resilience, and data handling practices.
+Represents general information about an [application](../resources/applicationtemplate.md) that contributes to its overall risk profile, including its business background, operational resilience, and data handling practices.
 
 
 ## Properties
