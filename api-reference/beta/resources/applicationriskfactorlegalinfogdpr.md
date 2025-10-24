@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents information about how an application complies with the General Data Protection Regulation (GDPR), focusing on user data rights, protection mechanisms, and transparency obligations.
+Represents information about how an [application](../resources/applicationtemplate.md) complies with the General Data Protection Regulation (GDPR), focusing on user data rights, protection mechanisms, and transparency obligations.
 
 
 ## Properties
