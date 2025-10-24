@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of an emailSignInIdentifier object.
+Update the properties of an [emailSignInIdentifier](../resources/emailsigninidentifier.md) object.
 
 ## Permissions
 
