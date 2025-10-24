@@ -1,6 +1,6 @@
 ---
 title: "workplaceSensor resource type"
-description: "Represents a sensor on hardware that collects and reports data on physical or environmental conditions, including occupancy, headcount, inferred occupancy, temperature, wifi, and more."
+description: "Represents a sensor on hardware that collects and reports data on physical or environmental conditions, including occupancy, people count, inferred occupancy, temperature, Wi-Fi, and more."
 author: "akwasiakosah101"
 ms.localizationpriority: medium
 ms.subservice: "outlook"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a sensor on hardware that collects and reports data on physical or environmental conditions, including occupancy, headcount, inferred occupancy, temperature, wifi, and more.
+Represents a sensor on hardware that collects and reports data on physical or environmental conditions, including occupancy, people count, inferred occupancy, temperature, Wi-Fi, and more.
 
 ## Properties
 
