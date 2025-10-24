@@ -14,6 +14,7 @@ Namespace: microsoft.graph
 Create a new [authenticationEventListener](../resources/authenticationeventlistener.md) object. You can create one of the following subtypes that are derived from **authenticationEventListener**.
 
 - [onTokenIssuanceStartListener resource type](../resources/ontokenissuancestartlistener.md)
+- [onFraudProtectionLoadStartListener](../resources/onFraudProtectionLoadStartListener.md) resource type
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -49,7 +50,9 @@ You can specify the following properties when creating an **authenticationEventL
 |Property|Type|Description|
 |:---|:---|:---|
 |conditions|[authenticationConditions](../resources/authenticationconditions.md)|The conditions on which this authenticationEventListener should trigger. Optional.|
+|displayName|String|The display name of the authentication event listener policy. Optional.|
 |handler|[onTokenIssuanceStartHandler](../resources/ontokenissuancestarthandler.md)|The handler to invoke when conditions are met. Can be set for the **onTokenIssuanceStartListener** listener type.|
+|handler|[onFraudProtectionLoadStartHandler](../resources/onFraudProtectionLoadStartHandler.md) | The handler to invoke when conditions are met. Can be updated for the **onFraudProtectionLoadStartListener** type. |
 
 ## Response
 
@@ -157,3 +160,155 @@ Content-Type: application/json
 }
 ```
 
+### Example 5: Enable Fraud Protection during sign-up with Arkose Labs 
+
+#### Request
+The following example shows a request that enables fraud protection during sign-up using Arkose Labs.
+
+<!-- {
+  "blockType": "request",
+  "name": "create_authenticationeventlistener_onFraudProtectionLoadStartListener_Arkose"
+}
+-->
+```http
+POST https://graph.microsoft.com/v1.0/identity/authenticationEventListeners
+Content-Type: application/json
+{   
+  "@odata.type": "#microsoft.graph.onFraudProtectionLoadStartListener", 
+  "conditions": { 
+    "applications": { 
+      "includeApplications": [ 
+        { 
+          "appId": "0001111-aaaa-2222-bbbb-3333cccc4444" 
+        } 
+      ] 
+    } 
+  }, 
+  "handler": { 
+    "@odata.type": 
+"#microsoft.graph.onFraudProtectionLoadStartExternalUsersAuthHandler", 
+    "signUp": { 
+      "@odata.type": "#microsoft.graph.fraudProtectionProviderConfiguration", 
+      "fraudProtectionProvider": { 
+        "@odata.type": "#microsoft.graph.arkoseFraudProtectionProvider", 
+        "id": "6fedd01b-0afb-4a07-967f-d1ccbd81102b" 
+      } 
+    } 
+  } 
+}
+```
+
+#### Response
+
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.authenticationEventListener"
+}
+-->
+``` http
+HTTP/1.1 201 Created
+Content-Type: application/json
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identity/authenticationEventListeners/$entity",
+  "@odata.type": "#microsoft.graph.onFraudProtectionLoadStartListener",
+  "id": "49eb23d9-998b-47df-a462-aa12a20ae5fb",
+  "conditions": {
+    "applications": {
+      "includeApplications": [
+        {
+          "appId": "0001111-aaaa-2222-bbbb-3333cccc4444"
+        }
+      ]
+    }
+  },
+  "handler": {
+    "@odata.type": "#microsoft.graph.onFraudProtectionLoadStartExternalUsersAuthHandler",
+    "signUp": {
+      "fraudProtectionProvider": {
+        "@odata.type": "#microsoft.graph.arkoseFraudProtectionProvider",
+        "id": "fabe5100-cc02-46c1-bd0e-ce885fe367fd"
+      }
+    }
+  }
+}
+```
+
+### Example 6: Enable Fraud Protection during sign-up with HUMAN Security 
+
+#### Request
+The following example shows a request that enables fraud protection during sign-up using HUMAN Security.
+
+<!-- {
+  "blockType": "request",
+  "name": "create_authenticationeventlistener_onFraudProtectionLoadStartListener_HUMANSecurity"
+}
+-->
+```http
+POST https://graph.microsoft.com/v1.0/identity/authenticationEventListeners
+Content-Type: application/json
+{   
+  "@odata.type": "#microsoft.graph.onFraudProtectionLoadStartListener", 
+  "conditions": { 
+    "applications": { 
+      "includeApplications": [ 
+        { 
+          "appId": "0001111-aaaa-2222-bbbb-3333cccc4444" 
+        } 
+      ] 
+    } 
+  }, 
+  "handler": { 
+    "@odata.type": 
+"#microsoft.graph.onFraudProtectionLoadStartExternalUsersAuthHandler", 
+    "signUp": { 
+      "@odata.type": "#microsoft.graph.fraudProtectionProviderConfiguration", 
+      "fraudProtectionProvider": { 
+        "@odata.type": "#microsoft.graph.humanSecurityFraudProtectionProvider", 
+        "id": "fabe5100-cc02-46c1-bd0e-ce885fe367fd" 
+      } 
+    } 
+  } 
+}
+```
+
+#### Response
+
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.authenticationEventListener"
+}
+-->
+``` http
+HTTP/1.1 201 Created
+Content-Type: application/json
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identity/authenticationEventListeners/$entity",
+  "@odata.type": "#microsoft.graph.onFraudProtectionLoadStartListener",
+  "id": "49eb23d9-998b-47df-a462-aa12a20ae5fb",
+  "conditions": {
+    "applications": {
+      "includeApplications": [
+        {
+          "appId": "0001111-aaaa-2222-bbbb-3333cccc4444"
+        }
+      ]
+    }
+  },
+  "handler": {
+    "@odata.type": "#microsoft.graph.onFraudProtectionLoadStartExternalUsersAuthHandler",
+    "signUp": {
+      "isContinueOnProviderErrorEnabled": false,
+      "fraudProtectionProvider": {
+        "@odata.type": "#microsoft.graph.humanSecurityFraudProtectionProvider",
+        "id": "fabe5100-cc02-46c1-bd0e-ce885fe367fd"
+      }
+    }
+  }
+}
+```
