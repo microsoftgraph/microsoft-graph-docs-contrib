@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a customUsernameSignInIdentifier object.
+Update the properties of a [customUsernameSignInIdentifier](../resources/customusernamesigninidentifier.md) object.
 
 ## Permissions
 
