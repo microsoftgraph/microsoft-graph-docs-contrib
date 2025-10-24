@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Provides SSL/TLS certificate validation and risk assessment details for an application, highlighting potential security misconfigurations or trust issues.
+Provides SSL/TLS certificate validation and risk assessment details for an [application](../resources/applicationtemplate.md), highlighting potential security misconfigurations or trust issues.
 
 
 ## Properties
