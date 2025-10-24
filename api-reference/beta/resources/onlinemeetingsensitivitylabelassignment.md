@@ -1,6 +1,6 @@
 ---
 title: "onlineMeetingSensitivityLabelAssignment resource type"
-description: Contains information about the sensitivity label applied to the Teams meeting in Microsoft Graph.
+description: "Contains information about the sensitivity label applied to the Teams meeting in Microsoft Graph."
 author: garchiro7
 ms.date: 10/08/2025
 ms.localizationpriority: medium
