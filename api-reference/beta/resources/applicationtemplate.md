@@ -32,7 +32,7 @@ Represents an application in the [Microsoft Entra application gallery](/azure/ac
 |configurationUris|[configurationUri](../resources/configurationuri.md) collection|The URIs required for the single sign-on configuration of a preintegrated application.|
 |description|String|A description of the application.|
 |displayName|String|The name of the application. Supports `$filter` (`contains`).|
-|endpoints|String collection|A collection of string URLs representing various API endpoints available on learn.microsoft.com.|
+|endpoints|String collection|A collection of string URLs representing various domains that are used by this application.|
 |homePageUrl|String|The home page URL of the application.|
 |id|String| Unique identifier for the application. Read-only.|
 |lastModifiedDateTime|DateTimeOffset|The date and time when the data for the application was last updated, represented using ISO 8601 format and always in UTC time.|

@@ -62,7 +62,9 @@ If successful, this method returns a `200 OK` response code and the requested [a
 
 ## Examples
 
-### Request
+### Example 1: Get application template
+
+#### Request
 
 The following example shows a request.
 
@@ -106,7 +108,7 @@ GET https://graph.microsoft.com/beta/applicationTemplates/006a06ef-9160-42cd-88b
 
 ---
 
-### Response
+#### Response
 
 The following example shows the response.
 
@@ -181,6 +183,98 @@ Content-type: application/json
             "isRequired": true
         }
     ]
+}
+```
+
+### Example 2: Get application template with optional properties
+
+#### Request
+
+The following example shows a request.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_applicationtemplate_with_optional"
+}-->
+
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/applicationTemplates/006a06ef-9160-42cd-88bf-17a7588fc844?$select=id,displayName,riskScore,riskFactors
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-applicationtemplate-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-applicationtemplate-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-applicationtemplate-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-applicationtemplate-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-applicationtemplate-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-applicationtemplate-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-applicationtemplate-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+#### Response
+
+The following example shows the response.
+
+> **Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.applicationTemplate"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#applicationTemplates(id,displayName,riskScore,riskFactors)/$entity",
+    "id": "de92ca39-7b85-4b4c-90d8-2885eff5100b",
+    "displayName": "LinkedIn Lookup",
+    "riskScore": {
+        "total": 9.910557,
+        "security": 9.95,
+        "provider": 9.611832,
+        "compliance": 9.931034,
+        "legal": 10
+    },
+    "riskFactors": {
+        "general": {
+            "hasDisasterRecoveryPlan": true
+            // ... omitted for brewity
+        },
+        "security": {
+            "hasMFA": true
+            // ... omitted for brewity
+        },
+        "compliance": {
+            "cobit": true
+            // ... omitted for brewity
+        },
+        "legal": {
+            "hasDmca": null
+            // ... omitted for brewity
+        }
+    }
 }
 ```
 

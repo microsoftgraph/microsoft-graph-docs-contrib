@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the set of security characteristics used to evaluate the overall security health of an application. It includes details about encryption, authentication, audit logging, SSL/TTLS configuration, and exposure to known vulnerabilities.
+Represents the set of security characteristics used to evaluate the overall security health of an application. It includes details about encryption, authentication, audit logging, SSL/TLS configuration, and exposure to known vulnerabilities.
 
 ## Properties
 

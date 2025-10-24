@@ -43,8 +43,7 @@ GET /applicationTemplates
 
 This method supports some of the OData query parameters to help customize the response. 
 
-- You can use the `$filter` parameter in a limited way. You can only filter by **displayName** or **categories**. For example,  `$filter=contains(displayName, 'salesf')` or `$filter=categories/any(c:contains(c, 'myCategory'))`.
-- You can use `$orderby`, `$top,` and `$skip` query parameters in any GET request.
+- You can use `$filter`, `$orderby`, `$top,` and `$skip` query parameters in any GET request.
 
 For general information, see [OData query parameters](/graph/query-parameters).
 
@@ -53,6 +52,7 @@ For general information, see [OData query parameters](/graph/query-parameters).
 | Name      |Description|
 |:----------|:----------|
 | Authorization | Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+| `Prefer: odata.maxpagesize={int-value}`| Optional. `int-value` is a number up to 2,800 when query parameters are not applied; or up to 200 when query parameters are applied.|
 
 ## Request body
 
@@ -186,6 +186,195 @@ Content-type: application/json
                     "isRequired": true
                 }
             ]
+        }
+    ]
+}
+```
+
+### Example 2: List all application templates with optional properties
+
+This example shows how to retrieve all application templates with optional properties
+
+#### Request
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_applicationtemplates_with_optional"
+}-->
+
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/applicationTemplates/?$select=id,displayName,riskScore,riskFactors
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-applicationtemplates-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-applicationtemplates-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-applicationtemplates-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-applicationtemplates-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-applicationtemplates-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-applicationtemplates-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-applicationtemplates-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+
+> **Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.applicationTemplate)"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#applicationTemplates",
+    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET applicationTemplates?$select=categories,configurationUris",
+    "value": [
+        {
+            "id": "de92ca39-7b85-4b4c-90d8-2885eff5100b",
+            "displayName": "LinkedIn Lookup",
+            "riskScore": {
+                "total": 9.910557,
+                "security": 9.95,
+                "provider": 9.611832,
+                "compliance": 9.931034,
+                "legal": 10
+            },
+            "riskFactors": {
+                "general": {
+                    "hasDisasterRecoveryPlan": true
+                    // ... omitted for brewity
+                },
+                "security": {
+                    "hasMFA": true
+                    // ... omitted for brewity
+                },
+                "compliance": {
+                    "cobit": true
+                    // ... omitted for brewity
+                },
+                "legal": {
+                    "hasDmca": null
+                    // ... omitted for brewity
+                }
+            }
+        }
+    ]
+}
+```
+
+### Example 3: Filtering and ordering
+This example shows how to get top 2 application templates sorted by total risk score which are classified in "contentSharing" category
+
+#### Request
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_applicationtemplates_with_optional"
+}-->
+
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/applicationTemplates/?$select=id,displayName,riskScore,categories&$filter=categories/any(c: c eq 'contentSharing')&$top=2&$orderBy=riskScore/total desc
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-applicationtemplates-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-applicationtemplates-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-applicationtemplates-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-applicationtemplates-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-applicationtemplates-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-applicationtemplates-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-applicationtemplates-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+
+> **Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.applicationTemplate)"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#applicationTemplates",
+    "value": [
+        {
+            "id": "2af39c45-8bb3-5369-9341-696181ebfa55",
+            "displayName": "Contoso network",
+            "categories": [
+                "contentSharing"
+            ],
+            "riskScore": {
+                "total": 9.610546,
+                "security": 9.833333,
+                "provider": 9.475291,
+                "compliance": 9.923077,
+                "legal": 9.142858
+            }
+        },
+        {
+            "id": "e0e5def8-f27e-5445-93f3-02ea8733a811",
+            "displayName": "Fourth Coffee",
+            "categories": [
+                "contentSharing"
+            ],
+            "riskScore": {
+                "total": 8.562663,
+                "security": 8.266666,
+                "provider": 8.833883,
+                "compliance": 8.142858,
+                "legal": 9.142858
+            }
         }
     ]
 }
