@@ -63,7 +63,7 @@ The following example shows a request.
   "name": "update_adminreportsettings"
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/v1.0/admin/reportSettings
 Content-Type: application/json
 Content-length: 37

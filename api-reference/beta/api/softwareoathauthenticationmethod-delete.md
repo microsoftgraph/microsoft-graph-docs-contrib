@@ -76,7 +76,7 @@ If successful, this method returns a `204 No Content` response code.
   "sampleKeys": ["kim@contoso.com", "b172893e-893e-b172-3e89-72b13e8972b1"]
 }
 -->
-``` http
+```http
 DELETE https://graph.microsoft.com/beta/users/kim@contoso.com/authentication/softwareOathMethods/b172893e-893e-b172-3e89-72b13e8972b1
 ```
 
@@ -116,6 +116,6 @@ DELETE https://graph.microsoft.com/beta/users/kim@contoso.com/authentication/sof
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```

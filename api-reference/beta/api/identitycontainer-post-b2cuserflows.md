@@ -74,7 +74,7 @@ Here's an example  of the request.
 }
 -->
 
-``` http
+```http
 POST https://graph.microsoft.com/beta/identity/b2cUserFlows
 Content-type: application/json
 
@@ -156,7 +156,7 @@ Here's an example  of the request.
 }
 -->
 
-``` http
+```http
 POST https://graph.microsoft.com/beta/identity/b2cUserFlows
 Location: https://graph.microsoft.com/beta/identity/b2cUserFlows('B2C_1_Customer')
 Content-type: application/json
@@ -244,7 +244,7 @@ Here's an example  of the request.
 }
 -->
 
-``` http
+```http
 POST https://graph.microsoft.com/beta/identity/b2cUserFlows
 Content-type: application/json
 

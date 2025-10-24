@@ -72,7 +72,7 @@ The following example shows a request.
 }
 -->
 
-``` http
+```http
 POST https://graph.microsoft.com/beta/identity/userFlowAttributes
 Content-type: application/json
 

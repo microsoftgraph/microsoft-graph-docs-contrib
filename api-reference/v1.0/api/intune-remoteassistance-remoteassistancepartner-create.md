@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /deviceManagement/remoteAssistancePartners
 ```
 
@@ -67,7 +67,7 @@ Here is an example of the request.
 
 # [HTTP](#tab/http)
 <!-- { "blockType": "request" , "name" : "intune_remoteassistance_remoteassistancepartner_create_create_remoteassistancepartner" }-->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/deviceManagement/remoteAssistancePartners
 Content-type: application/json
 Content-length: 266
@@ -115,7 +115,7 @@ Content-length: 266
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 
 <!-- { "blockType": "response" , "@odata.type" : "microsoft.graph." }-->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 Content-Length: 315

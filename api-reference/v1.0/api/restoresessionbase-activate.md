@@ -43,7 +43,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /solutions/backupRestore/restoreSessions/{restoreSessionBaseId}/activate
 ```
 
@@ -75,7 +75,7 @@ The following example shows a request.
   "name": "restoresessionbasethis.activate"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/solutions/backupRestore/restoreSessions/61633878-8321-4950-bfaf-ed285bdd1461/activate
 ```
 
@@ -120,7 +120,7 @@ The following example shows the response.
 }
 -->
 
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

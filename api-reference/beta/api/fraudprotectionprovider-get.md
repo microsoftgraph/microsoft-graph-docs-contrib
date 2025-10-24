@@ -36,7 +36,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /identity/riskprevention/fraudprotectionproviders/{fraudProtectionProviderId}
 ```
 
@@ -69,7 +69,7 @@ The following example shows a request.
   "name": "get_fraudprotectionprovider"
 }
 -->
-``` http
+```http
 GET https://graph.microsoft.com/beta/identity/riskprevention/fraudprotectionproviders/0bb2618b-51f7-4e83-bcb8-84e70f7cf84d
 ```
 
@@ -89,7 +89,7 @@ The following example shows the response with Arkose Fraud Protection Provider.
   "@odata.type": "microsoft.graph.fraudProtectionProvider"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -112,7 +112,7 @@ The following example shows the response with HUMAN Security Fraud Protection Pr
   "@odata.type": "microsoft.graph.fraudProtectionProvider"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

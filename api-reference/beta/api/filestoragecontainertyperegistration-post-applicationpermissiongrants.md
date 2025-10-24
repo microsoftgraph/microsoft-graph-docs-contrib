@@ -37,7 +37,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PUT /storage/fileStorage/containerTypeRegistrations/{fileStorageContainerTypeRegistrationId}/applicationPermissionGrants/{appId}
 ```
 
@@ -73,7 +73,7 @@ The following example shows how to add a new permission grant to a registration.
   "name": "create_filestoragecontainertypeapppermissiongrant_from_"
 }
 -->
-``` http
+```http
 PUT https://graph.microsoft.com/beta/storage/fileStorage/containerTypeRegistrations/33225700-9a00-4c00-84dd-0c210f203f01/applicationPermissionGrants/11335700-9a00-4c00-84dd-0c210f203f00
 Content-Type: application/json
 
@@ -98,7 +98,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.fileStorageContainerTypeAppPermissionGrant"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 

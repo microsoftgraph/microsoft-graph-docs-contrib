@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PATCH /networkAccess/tlsInspectionPolicies/{tlsInspectionPolicyId}
 ```
 
@@ -71,7 +71,7 @@ The following example shows a request.
   "sampleKeys": ["b712c469-e7cd-e7cb-738f-94b199570b0d"]
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/networkAccess/tlsInspectionPolicies/b712c469-e7cd-e7cb-738f-94b199570b0d
 Content-Type: application/json
 
@@ -123,6 +123,6 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```

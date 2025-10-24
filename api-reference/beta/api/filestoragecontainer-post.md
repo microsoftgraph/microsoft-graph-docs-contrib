@@ -37,7 +37,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /storage/fileStorage/containers
 ```
 ## Optional query parameters
@@ -80,7 +80,7 @@ The following example shows how to create a **fileStorageContainer**.
   "name": "create_filestoragecontainer"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/storage/fileStorage/containers
 Content-Type: application/json
 
@@ -129,7 +129,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.fileStorageContainer"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 

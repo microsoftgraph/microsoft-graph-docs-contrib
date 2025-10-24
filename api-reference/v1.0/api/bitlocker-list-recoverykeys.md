@@ -46,7 +46,7 @@ To get a list of BitLocker keys within the tenant:
 }
 -->
 
-``` http
+```http
 GET /informationProtection/bitlocker/recoveryKeys
 ```
 
@@ -223,7 +223,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.bitlockerRecoveryKey)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

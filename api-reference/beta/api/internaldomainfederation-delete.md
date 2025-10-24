@@ -35,7 +35,7 @@ The calling user must be assigned one of the following [Microsoft Entra roles](/
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 DELETE /domains/{domainsId}/federationConfiguration/{internalDomainFederationId}
 ```
 
@@ -62,7 +62,7 @@ If successful, this method returns a `204 No Content` response code.
   "sampleKeys": ["contoso.com", "96db02e2-80c1-5555-bc3a-de92ffb8c5be"]
 }
 -->
-``` http
+```http
 DELETE https://graph.microsoft.com/beta/domains/contoso.com/federationConfiguration/96db02e2-80c1-5555-bc3a-de92ffb8c5be
 ```
 
@@ -102,6 +102,6 @@ DELETE https://graph.microsoft.com/beta/domains/contoso.com/federationConfigurat
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```

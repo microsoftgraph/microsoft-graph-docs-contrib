@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /security/subjectRightsRequests
 POST /privacy/subjectRightsRequests
 ```
@@ -78,7 +78,7 @@ If successful, this method returns a `201 Created` response code and a [subjectR
   "name": "create_subjectRightsRequest_from_"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/privacy/subjectRightsRequests
 Content-Type: application/json
 
@@ -152,7 +152,7 @@ Content-Type: application/json
   "@odata.type": "microsoft.graph.subjectRightsRequest"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 

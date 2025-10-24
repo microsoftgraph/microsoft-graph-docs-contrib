@@ -30,7 +30,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PATCH /solutions/virtualEvents/townhalls/{id}
 ```
 
@@ -69,7 +69,7 @@ The following example shows a request.
   "name": "update_virtualeventtownhall"
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/solutions/virtualEvents/townhalls/fc6e8c15-2fd7-1dd5-caa0-87056e6a12be
 Content-Type: application/json
 
@@ -125,7 +125,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.virtualEventTownhall"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

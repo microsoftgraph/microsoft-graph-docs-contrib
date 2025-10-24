@@ -61,7 +61,7 @@ If successful, this method returns a `200 OK` response code and a [identityUserF
 }
 -->
 
-``` http
+```http
 GET https://graph.microsoft.com/beta/identity/userFlowAttributes/{id}
 ```
 

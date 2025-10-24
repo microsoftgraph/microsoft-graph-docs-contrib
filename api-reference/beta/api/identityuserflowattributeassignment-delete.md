@@ -32,7 +32,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 
-``` http
+```http
 DELETE /identity/b2cUserFlows/{id}/userAttributeAssignments/{id}
 DELETE /identity/b2xUserFlows/{id}/userAttributeAssignments/{id}
 ```
@@ -63,7 +63,7 @@ If successful, this method returns a `204 No Content` response code.
 }
 -->
 
-``` http
+```http
 DELETE https://graph.microsoft.com/beta/identity/b2cUserFlows/{id}/userAttributeAssignments/{id}
 ```
 
@@ -105,6 +105,6 @@ DELETE https://graph.microsoft.com/beta/identity/b2cUserFlows/{id}/userAttribute
 }
 -->
 
-``` http
+```http
 HTTP/1.1 204 No Content
 ```

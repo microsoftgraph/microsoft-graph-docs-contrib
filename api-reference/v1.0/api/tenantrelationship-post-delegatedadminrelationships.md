@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /tenantRelationships/delegatedAdminRelationships
 ```
 
@@ -67,7 +67,7 @@ The response contains a **Location** header which contains a URL to the created 
   "name": "create_delegatedadminrelationship_from_"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/tenantRelationships/delegatedAdminRelationships
 Content-Type: application/json
 
@@ -130,7 +130,7 @@ Content-Type: application/json
   "@odata.type": "microsoft.graph.delegatedAdminRelationship"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 Location: https://graph.microsoft.com/v1.0/tenantRelationships/delegatedAdminRelationships/5d027261-d21f-4aa9-b7db-7fa1f56fb163-8777b240-c6f0-4469-9e98-a3205431b836

@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PATCH /admin/forms
 ```
 
@@ -63,7 +63,7 @@ The following example shows a request.
   "name": "update_adminforms"
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/admin/forms
 Content-Type: application/json
 
@@ -116,7 +116,7 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 Content-Type: text/plain
 ```

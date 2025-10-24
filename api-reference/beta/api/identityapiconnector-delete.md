@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 DELETE /identity/apiConnectors/{identityApiConnectorId}
 ```
 
@@ -63,7 +63,7 @@ The following example shows a request.
 }
 -->
 
-``` http
+```http
 DELETE https://graph.microsoft.com/beta/identity/apiConnectors/{id}
 ```
 
@@ -106,6 +106,6 @@ The following example shows the response.
 }
 -->
 
-``` http
+```http
 HTTP/1.1 204 No Content
 ```

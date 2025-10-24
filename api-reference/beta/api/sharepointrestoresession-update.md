@@ -32,7 +32,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PATCH /solutions/backupRestore/sharePointRestoreSessions/{sharePointRestoreSessionId}
 ```
 
@@ -71,7 +71,7 @@ To remove a **siteRestoreArtifact** from a site restore session, specify the @re
   "name": "sharepointrestoresession_update"
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/solutions/backupRestore/sharepointRestoreSessions/845457dc-4bb2-4815-bef3-8628ebd1952
 Content-Type: application/json
 
@@ -151,7 +151,7 @@ The following example shows the response.
 }
 -->
 
-``` http
+```http
 HTTP/1.1 200 OK
 
 {

@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PUT /identityGovernance/entitlementManagement/accessPackageCatalogs/{catalogId}/customAccessPackageWorkflowExtensions/{customAccessPackageWorkflowExtensionId}
 ```
 
@@ -67,7 +67,7 @@ The following example shows a request.
   "name": "update_accesspackageassignmentworkflowextension"
 }
 -->
-``` http
+```http
 PUT https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageCatalogs/32efb28c-9a7a-446c-986b-ca6528c6669d/accessPackageCustomWorkflowExtensions/78ffaec5-ae8e-4902-a434-5ffc5d3d3cd0
 Content-Type: application/json
 
@@ -93,7 +93,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.accessPackageAssignmentWorkflowExtension"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

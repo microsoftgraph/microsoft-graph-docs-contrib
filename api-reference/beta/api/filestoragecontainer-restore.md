@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /storage/fileStorage/deletedContainers/{containerId}/restore
 ```
 
@@ -63,7 +63,7 @@ The following example shows a request.
   "name": "filestoragecontainerthis.restore"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/storage/fileStorage/deletedContainers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/restore
 ```
 
@@ -105,7 +105,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.fileStorageContainer"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

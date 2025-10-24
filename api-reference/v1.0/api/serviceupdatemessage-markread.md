@@ -27,7 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /admin/serviceAnnouncement/messages/markRead
 ```
 
@@ -62,7 +62,7 @@ If successful, this action returns a `200 OK` response code and a Boolean value 
   "name": "serviceupdatemessage_markread"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/admin/serviceAnnouncement/messages/markRead
 Content-Type: application/json
 
@@ -108,7 +108,7 @@ Content-Type: application/json
   "@odata.type": "string"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

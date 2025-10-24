@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /security/dataSecurityAndGovernance/sensitivityLabels/computeRightsAndInheritance
 ```
 
@@ -68,7 +68,7 @@ The following example shows a request.
   "name": "sensitivitylabelthis.computerightsandinheritance"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/security/dataSecurityAndGovernance/sensitivityLabels/computeRightsAndInheritance
 Content-Type: application/json
 
@@ -126,7 +126,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.computeRightsAndInheritanceResult"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

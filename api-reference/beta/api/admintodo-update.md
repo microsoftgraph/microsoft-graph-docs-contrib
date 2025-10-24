@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PATCH /admin/todo
 ```
 
@@ -66,7 +66,7 @@ The following example shows a request.
   "name": "update_admintodo"
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/admin/todo
 Content-Type: application/json
 
@@ -115,7 +115,7 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 Content-Type: text/plain
 

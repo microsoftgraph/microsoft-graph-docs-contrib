@@ -125,7 +125,7 @@ The following example shows the response to the updated roster.
   "@odata.type": "microsoft.graph.plannerRoster"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

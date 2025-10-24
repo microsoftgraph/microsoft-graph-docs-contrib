@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PATCH /me/tasks/lists/{baseTaskListId}
 PATCH /users/{userId|userPrincipalName}/tasks/lists/{baseTaskListId}
 ```
@@ -64,7 +64,7 @@ If successful, this method returns a `200 OK` response code and an updated [base
   "sampleKeys": ["AAMkAGVjMzJmMWZjLTgyYjgtNGIyNi1hOGQ0LWRjMjNmMGRmOWNiYQAuAAAAAAAboFs"]
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/me/tasks/lists/AAMkAGVjMzJmMWZjLTgyYjgtNGIyNi1hOGQ0LWRjMjNmMGRmOWNiYQAuAAAAAAAboFs
 Content-Type: application/json
 Content-length: 82
@@ -89,7 +89,7 @@ Content-length: 82
   "@odata.type": "microsoft.graph.taskList"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

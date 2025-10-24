@@ -29,7 +29,7 @@ To link external town hall event information to a town hall event:
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /solutions/virtualEvents/townhalls/{id}/setExternalEventInformation
 ```
 
@@ -39,7 +39,7 @@ To link external webinar event information to a webinar event:
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /solutions/virtualEvents/webinars/{id}/setExternalEventInformation
 ```
 
@@ -80,7 +80,7 @@ The following example shows a request.
   "sampleKeys": ["a57082a9-7629-4f74-8da0-8d621aab4d2d@4aa05bcc-1cac-4a83-a9ae-0db84b88f4ba"]
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/solutions/virtualEvents/townhalls/a57082a9-7629-4f74-8da0-8d621aab4d2d@4aa05bcc-1cac-4a83-a9ae-0db84b88f4ba/setExternalEventInformation
 Content-Type: application/json
 
@@ -104,7 +104,7 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 
@@ -123,7 +123,7 @@ The following example shows a request.
   "sampleKeys": ["a57082a9-7629-4f74-8da0-8d621aab4d2d@4aa05bcc-1cac-4a83-a9ae-0db84b88f4ba"]
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/solutions/virtualEvents/webinars/a57082a9-7629-4f74-8da0-8d621aab4d2d@4aa05bcc-1cac-4a83-a9ae-0db84b88f4ba/setExternalEventInformation
 Content-Type: application/json
 
@@ -147,6 +147,6 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```

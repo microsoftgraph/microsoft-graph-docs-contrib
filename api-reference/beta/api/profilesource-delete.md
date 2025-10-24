@@ -37,7 +37,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 DELETE /admin/people/profileSources(sourceId='{sourceId}')
 ```
 
@@ -74,7 +74,7 @@ The following example shows a request.
   "name": "delete_profilesource"
 }
 -->
-``` http
+```http
 DELETE https://graph.microsoft.com/beta/admin/people/profileSources(sourceId='bamboohr1')
 ```
 
@@ -113,7 +113,7 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 

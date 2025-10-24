@@ -41,7 +41,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 DELETE /storage/fileStorage/containerTypeRegistrations/{fileStorageContainerTypeRegistrationId}
 ```
 
@@ -71,7 +71,7 @@ The following example shows a request to delete a **fileStorageContainerTypeRegi
   "name": "delete_filestoragecontainertyperegistration"
 }
 -->
-``` http
+```http
 DELETE https://graph.microsoft.com/beta/storage/fileStorage/containerTypeRegistrations/de988700-d700-020e-0a00-0831f3042f00
 ```
 
@@ -108,7 +108,7 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 

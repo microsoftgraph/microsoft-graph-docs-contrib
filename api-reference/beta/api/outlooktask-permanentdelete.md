@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /users/{usersId}/outlook/tasks/{outlookTaskId}/permanentDelete
 POST /users/{usersId}/outlook/taskGroups/{outlookTaskGroupId}/taskFolders/{outlookTaskFolderId}/tasks/{outlookTaskId}/permanentDelete
 ```
@@ -63,7 +63,7 @@ The following example shows a request.
   "name": "outlooktaskthis.permanentdelete"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/users/{usersId}/outlook/tasks/{outlookTaskId}/permanentDelete
 ```
 
@@ -106,7 +106,7 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 <!--

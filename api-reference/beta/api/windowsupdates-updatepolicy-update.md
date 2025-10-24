@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PATCH /admin/windows/updates/updatePolicies/{updatePolicyId}
 ```
 
@@ -65,7 +65,7 @@ The following example shows a request.
   "@odata.type": "microsoft.graph.windowsUpdates.updatePolicy"
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/admin/windows/updates/updatePolicies/a7aa99c1-34a2-850c-5223-7816fde70713
 Content-Type: application/json
 Content-length: 382
@@ -124,7 +124,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.windowsUpdates.updatePolicy"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

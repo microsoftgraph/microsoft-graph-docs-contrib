@@ -37,7 +37,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /identity/conditionalAccess/deletedItems/namedLocations/{namedLocationId}/restore
 ```
 
@@ -66,7 +66,7 @@ The following example shows a request.
   "name": "ipnamedlocationthis.restore"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/identity/conditionalAccess/deletedItems/namedLocations/1a4c0633-332f-4691-a27a-fd8334938a62/restore
 ```
 
@@ -106,7 +106,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.namedLocation"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

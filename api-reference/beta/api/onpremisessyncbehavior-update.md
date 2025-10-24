@@ -39,7 +39,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PATCH /contacts/{id}/onPremisesSyncBehavior
 PATCH /groups/{id}/onPremisesSyncBehavior
 PATCH /users/{id}/onPremisesSyncBehavior
@@ -78,7 +78,7 @@ The following example shows a request.
   "name": "update_onpremisessyncbehavior"
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/groups/e7c2f02a-7a59-40de-8d6e-1e0197b8cfba/onPremisesSyncBehavior
 Content-Type: application/json
 
@@ -123,7 +123,7 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 

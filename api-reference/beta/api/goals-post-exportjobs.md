@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /employeeExperience/goals/exportJobs
 ```
 
@@ -51,7 +51,7 @@ You can specify the following properties when you create a **goalsExportJob** ob
 
 You can get the **goalsOrganizationId** and **explorerViewId** values from the URL of a [Explorer view](/viva/goals/explorer#default-views-in-explorer).
 
-``` http
+```http
 https://goals.microsoft.com/org_uuid/94a356ab-53d5-40e7-8a85-053d6d3b9eb3/objective-explorer?viewId=e5e7a3c1-8cdf-409d-9ce9-ff730d65d95e
 ```
 - The `org_uuid` in the URL, in this example `94a356ab-53d5-40e7-8a85-053d6d3b9eb3`, represents the **goalsOrganizationId**.
@@ -83,7 +83,7 @@ The following example shows a request.
   "name": "create_goalsexportjob_from_1"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/employeeExperience/goals/exportJobs
 Content-Type: application/json
 
@@ -128,7 +128,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.goalsExportJob"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 Location: "https://graph.microsoft.com/beta/employeeexperience/goals/exportJobs/j!uJJZyGd87hGFgvZV8bl-GlCBmj39kL1Cl3clung9SgU"
@@ -151,7 +151,7 @@ The following example shows a request.
   "name": "create_goalsexportjob_from_2"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/employeeExperience/goals/exportJobs
 Content-Type: application/json
 
@@ -196,7 +196,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.goalsExportJob"
 }
 -->
-``` http
+```http
 HTTP/1.1 409 Conflict
 Content-type: application/json
 Location: "https://graph.microsoft.com/beta/employeeexperience/goals/exportJobs/j!uJJZyGd87hGFgvZV8bl-GlCBmj39kL1Cl3clung9SgU"
@@ -228,7 +228,7 @@ The following example shows a request.
   "name": "create_goalsexportjob_from_3"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/employeeExperience/goals/exportJobs
 Content-Type: application/json
 
@@ -273,7 +273,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.goalsExportJob"
 }
 -->
-``` http
+```http
 HTTP/1.1 404 Not Found 
 Content-type: application/json
 
@@ -301,7 +301,7 @@ The following example shows a request.
   "name": "create_goalsexportjob_from_4"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/employeeExperience/goals/exportJobs
 Content-Type: application/json
 
@@ -346,7 +346,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.publicError"
 }
 -->
-``` http
+```http
 HTTP/1.1 400 Bad Request 
 Content-type: application/json
 

@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PUT /servicePrincipals/{servicePrincipalsId}/claimsPolicy
 ```
 
@@ -72,7 +72,7 @@ The following example shows a request.
   "name": "create_customclaimspolicy_from_"
 }
 -->
-``` http
+```http
 PUT https://graph.microsoft.com/beta/servicePrincipals/{servicePrincipalsId}/claimsPolicy
 Content-Type: application/json
 
@@ -129,7 +129,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.customClaimsPolicy"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 

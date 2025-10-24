@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /me/profile/emails
 POST /users/{id | userPrincipalName}/profile/emails
 ```
@@ -70,7 +70,7 @@ If successful, this method returns a `201 Created` response code and an [itemEma
   "name": "create_itememail_from_profile"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/me/profile/emails
 Content-Type: application/json
 
@@ -117,7 +117,7 @@ Content-Type: application/json
   "@odata.type": "microsoft.graph.itemEmail"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 

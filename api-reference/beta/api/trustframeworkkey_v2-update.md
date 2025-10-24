@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PATCH /trustFramework/keySets/{trustFrameworkKeySetId}/keys_v2/{trustFrameworkKey_v2Id}
 ```
 
@@ -64,7 +64,7 @@ The following example shows a request.
   "name": "update_trustframeworkkey_v2"
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/trustFramework/keySets/{trustFrameworkKeySetId}/keys_v2/aTREvwojOB9ph3fr2r6eTf_5eD5fmQsfsapVMwYI3o
 Content-Type: application/json
 
@@ -88,6 +88,6 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```

@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PATCH /sites/{sitesId}/permissions/{permissionId}
 ```
 
@@ -61,7 +61,7 @@ The following example shows a request.
   "sampleKeys": ["f2d90359-865b-4b6c-8848-d2722dd630e5", "2"]
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/sites/f2d90359-865b-4b6c-8848-d2722dd630e5/permissions/2
 Content-Type: application/json
 
@@ -110,7 +110,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.permission"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PATCH /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/fido2
 ```
 
@@ -65,7 +65,7 @@ If successful, this method returns a `204 No Content` response code. It doesn't 
   "name": "update_fido2authenticationmethodconfiguration"
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/fido2
 Content-Type: application/json
 
@@ -112,6 +112,6 @@ Content-Type: application/json
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```

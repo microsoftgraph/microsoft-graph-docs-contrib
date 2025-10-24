@@ -28,7 +28,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 DELETE /security/triggers/retentionEvents/{retentionEventId}
 ```
 
@@ -54,7 +54,7 @@ If successful, this method returns a `204 No Content` response code.
   "name": "delete_retentionevent"
 }
 -->
-``` http
+```http
 DELETE https://graph.microsoft.com/v1.0/security/triggers/retentionEvents/{retentionEventId}
 ```
 
@@ -95,7 +95,7 @@ DELETE https://graph.microsoft.com/v1.0/security/triggers/retentionEvents/{reten
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 

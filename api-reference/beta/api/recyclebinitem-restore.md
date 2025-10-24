@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 
-``` http
+```http
 POST /storage/fileStorage/containers/{containerId}/recycleBin/items/restore
 ```
 
@@ -73,7 +73,7 @@ The following example shows a request.
 }
 -->
 
-``` http
+```http
 POST  https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/recycleBin/items/restore
 Content-Type: application/json
 
@@ -123,7 +123,7 @@ The following example shows the response.
 }
 -->
 
-``` http
+```http
 HTTP/1.1 207 Multi-Status
 Content-Type: application/json
 

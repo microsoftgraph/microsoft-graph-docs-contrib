@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /print/printers/{printerId}/taskTriggers
 ```
 
@@ -55,7 +55,7 @@ If successful, this method returns a `201 Created` response code and a [printTas
   "name": "create_printtasktrigger_from_"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/print/printers/{printerId}/taskTriggers
 Content-Type: application/json
 
@@ -103,7 +103,7 @@ Content-Type: application/json
   "@odata.type": "microsoft.graph.printTaskTrigger"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 

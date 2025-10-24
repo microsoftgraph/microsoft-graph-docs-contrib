@@ -27,7 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /security/triggers/retentionEvents
 ```
 
@@ -64,7 +64,7 @@ If successful, this method returns a `201 Created` response code and a [microsof
   "name": "create_retentionevent_from_"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/security/triggers/retentionEvents
 Content-Type: application/json
 Content-length: 616
@@ -118,7 +118,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.security.retentionEvent"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 

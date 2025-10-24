@@ -25,7 +25,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PATCH /print/settings
 ```
 
@@ -57,7 +57,7 @@ If successful, this method returns a `204 No Content` response code and an empty
   "name": "update_printsettings"
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/v1.0/print/settings
 Content-type: application/json
 
@@ -79,7 +79,7 @@ Content-type: application/json
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 

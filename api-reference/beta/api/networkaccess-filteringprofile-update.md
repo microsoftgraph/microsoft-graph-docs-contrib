@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PATCH /networkAccess/filteringProfiles/{filteringProfileId}
 ```
 
@@ -70,7 +70,7 @@ The following example shows a request.
   "name": "update_filteringprofile"
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/networkAccess/filteringProfiles/{filteringProfileId}
 Content-Type: application/json
 
@@ -114,7 +114,7 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 

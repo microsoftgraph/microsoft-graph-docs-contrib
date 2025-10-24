@@ -41,7 +41,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /identityGovernance/roleManagementAlerts/alerts/{unifiedRoleManagementAlertId}/alertIncidents/{unifiedRoleManagementAlertIncidentId}/remediate
 ```
 
@@ -66,7 +66,7 @@ The following example shows a request.
   "name": "unifiedrolemanagementalertincidentthis.remediate"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/beta/identityGovernance/roleManagementAlerts/alerts/DirectoryRole_67b47f38-0f0b-4e62-a3be-859140c2061f_TooManyGlobalAdminsAssignedToTenantAlert/incident/0645231d-16ba-4ebf-851a-0875df4052bd/remediate
 ```
 
@@ -78,7 +78,7 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 ```
 

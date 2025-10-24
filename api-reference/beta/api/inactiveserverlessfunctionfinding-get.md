@@ -32,7 +32,7 @@ Get AWS inactive serverless functions:
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /identityGovernance/permissionsAnalytics/aws/findings/{id}/microsoft.graph.inactiveServerlessFunctionFinding
 ```
 
@@ -41,7 +41,7 @@ Get Azure inactive serverless functions:
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /identityGovernance/permissionsAnalytics/azure/findings/{id}/microsoft.graph.inactiveServerlessFunctionFinding
 ```
 
@@ -50,7 +50,7 @@ Get GCP inactive serverless functions:
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /identityGovernance/permissionsAnalytics/gcp/findings/{id}/microsoft.graph.inactiveServerlessFunctionFinding
 ```
 

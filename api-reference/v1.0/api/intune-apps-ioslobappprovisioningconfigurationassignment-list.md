@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvisioningConfigurationId}/assignments
 ```
 
@@ -52,7 +52,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 Here is an example of the request.
 
 <!-- { "blockType": "ignored" , "name" : "intune_apps_ioslobappprovisioningconfigurationassignment_list_list_ioslobappprovisioningconfigurationassignments" }-->
-``` http
+```http
 GET https://graph.microsoft.com/beta/deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvisioningConfigurationId}/assignments
 ```
 
@@ -60,7 +60,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/iosLobAppProvisioningCo
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 
 <!-- { "blockType": "response" , "@odata.type" : "microsoft.graph.iosLobAppProvisioningConfigurationAssignment" }-->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 Content-Length: 461

@@ -27,7 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PATCH /me/todo/lists/{todoTaskListId}
 PATCH /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks
 ```
@@ -65,7 +65,7 @@ If successful, this method returns a `200 OK` response code and an updated [todo
   "name": "update_todotasklist"
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/v1.0/me/todo/lists/AAMkADIyAAAhrbPWAAA=
 Content-Type: application/json
 
@@ -112,7 +112,7 @@ Content-Type: application/json
   "@odata.type": "microsoft.graph.todoTaskList"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

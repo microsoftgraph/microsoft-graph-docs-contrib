@@ -39,7 +39,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 DELETE /storage/fileStorage/containerTypeRegistrations/{fileStorageContainerTypeRegistrationId}/applicationPermissionGrants/{appId}
 ```
 
@@ -68,7 +68,7 @@ The following example shows how to delete a permission grant in a storage contai
   "name": "delete_filestoragecontainertypeapppermissiongrant"
 }
 -->
-``` http
+```http
 DELETE https://graph.microsoft.com/beta/storage/fileStorage/containerTypeRegistrations/21b52d99-7114-4c47-80b3-362b6a0bba3a/applicationPermissionGrants/11335700-9a00-4c00-84dd-0c210f203f00
 ```
 
@@ -105,7 +105,7 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 

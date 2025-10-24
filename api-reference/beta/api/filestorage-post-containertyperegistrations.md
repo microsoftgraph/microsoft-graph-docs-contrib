@@ -47,7 +47,7 @@ To register a **fileStorageContainerType** in the current tenant.
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PUT /storage/fileStorage/containerTypeRegistrations/{fileStorageContainerTypeId}
 ```
 
@@ -90,7 +90,7 @@ The following example shows a request.
   "name": "create_filestoragecontainertyperegistration"
 }
 -->
-``` http
+```http
 PUT https://graph.microsoft.com/beta/storage/fileStorage/containerTypeRegistrations/de988700-d700-020e-0a00-0831f3042f00
 Content-Type: application/json
 
@@ -125,7 +125,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.fileStorageContainerTypeRegistration"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 
@@ -177,7 +177,7 @@ The following example shows a request.
   "name": "create_filestoragecontainertyperegistration_no_billing"
 }
 -->
-``` http
+```http
 PUT https://graph.microsoft.com/beta/storage/fileStorage/containerTypeRegistrations/52a2630c-5e6a-41ff-8645-15406bafe66a
 Content-Type: application/json
 
@@ -205,6 +205,6 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 405 Method Not Allowed
 ```

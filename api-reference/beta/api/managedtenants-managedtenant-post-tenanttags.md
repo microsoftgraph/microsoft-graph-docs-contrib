@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /tenantRelationships/managedTenants/tenantTags
 ```
 
@@ -63,7 +63,7 @@ If successful, this method returns a `201 Created` response code and a [tenantTa
   "name": "create_tenanttag_from_"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/tenantRelationships/managedTenants/tenantTags
 Content-Type: application/json
 
@@ -111,7 +111,7 @@ Content-Type: application/json
   "@odata.type": "microsoft.graph.managedTenants.tenantTag"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 

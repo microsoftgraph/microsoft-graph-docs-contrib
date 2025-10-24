@@ -35,7 +35,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 
-``` http
+```http
 POST /directory/inboundSharedUserProfiles/{userId}/exportPersonalData
 ```
 
@@ -70,7 +70,7 @@ If successful, this method returns a `202 Accepted` response code and a **Locati
 }
 -->
 
-``` http
+```http
 POST https://graph.microsoft.com/beta/directory/inboundSharedUserProfiles/c228b2ae-c4fb-4eda-9620-7e73dddd1cac/exportPersonalData
 
 {
@@ -117,7 +117,7 @@ POST https://graph.microsoft.com/beta/directory/inboundSharedUserProfiles/c228b2
 }
 -->
 
-``` http
+```http
 HTTP/1.1 202 Accepted
 
 {

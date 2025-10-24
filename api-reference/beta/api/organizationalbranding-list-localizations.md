@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /organization/{organizationId}/branding/localizations
 ```
 
@@ -103,7 +103,7 @@ GET https://graph.microsoft.com/beta/organization/84841066-274d-4ec0-a5c1-276be6
   "@odata.type": "Collection(microsoft.graph.organizationalBrandingLocalization)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 
-``` http
+```http
 PATCH /policies/mobileDeviceManagementPolicies/{id}
 ```
 
@@ -74,7 +74,7 @@ If successful, this method returns a `200 OK` response code and an updated [mobi
 }
 -->
 
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/policies/mobileDeviceManagementPolicies/ab90bacf-55a3-4a3e-839a-aa4b74e4f020
 Content-Type: application/json
 
@@ -124,6 +124,6 @@ Content-Type: application/json
 }
 -->
 
-``` http
+```http
 HTTP/1.1 204 No Content
 ```

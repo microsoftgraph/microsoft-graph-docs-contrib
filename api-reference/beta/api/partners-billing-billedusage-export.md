@@ -33,7 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /reports/partners/billing/usage/billed/export
 ```
 
@@ -71,7 +71,7 @@ The following example shows a request.
   "name": "billedusagethis.export"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/reports/partners/billing/usage/billed/export
 Content-Type: application/json
 
@@ -120,7 +120,7 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 202 Accepted
 Location: https://graph.microsoft.com/beta/reports/partners/billing/operations/9ab9cb54-d07f-4f52-9ea6-a09d7de52c14
 ```

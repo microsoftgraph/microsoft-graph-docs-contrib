@@ -40,7 +40,7 @@ Enable SMS sign-in for your own mobile phone authentication method.
 [!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
 
 <!-- { "blockType": "ignored" } -->
-``` http
+```http
 POST /me/authentication/phoneMethods/{id}/enableSmsSignIn
 ```
 
@@ -49,7 +49,7 @@ Enable SMS sign-in for your own or another user's mobile phone authentication me
 [!INCLUDE [authentication-methods-apis-users-selfservice](../includes/authentication-methods-apis-users-selfservice.md)]
 
 <!-- { "blockType": "ignored" } -->
-``` http
+```http
 POST /users/{id | userPrincipalName}/authentication/phoneMethods/{id}/enableSmsSignIn
 ```
 

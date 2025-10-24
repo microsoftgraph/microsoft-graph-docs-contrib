@@ -28,7 +28,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 } -->
 
-``` http
+```http
 POST /sites/{site-id}/termStore/sets/{set-id}/children
 POST /sites/{site-id}/termStore/sets/{set-id}/terms/{term-id}/children
 ```
@@ -66,7 +66,7 @@ If successful, this method returns a `201 Created` response code and a [microsof
   "sampleKeys": ["microsoft.sharepoint.com,b9b0bc03-cbc4-40d2-aba9-2c9dd9821ddf,6a742cee-9216-4db5-8046-13a595684e74", "462bd0ae-30bb-4c58-845c-761ff6481ac1"]
 } -->
 
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/sites/microsoft.sharepoint.com,b9b0bc03-cbc4-40d2-aba9-2c9dd9821ddf,6a742cee-9216-4db5-8046-13a595684e74/termStore/sets/462bd0ae-30bb-4c58-845c-761ff6481ac1/children
 Content-Type: application/json
 
@@ -119,7 +119,7 @@ Content-Type: application/json
   "@odata.type": "microsoft.graph.termStore.term"
 }-->
 
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 

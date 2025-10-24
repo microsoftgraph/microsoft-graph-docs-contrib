@@ -47,7 +47,7 @@ Get details of your own or another user's temporary access pass (TAP) authentica
 [!INCLUDE [authentication-methods-apis-users-selfservice](../includes/authentication-methods-apis-users-selfservice.md)]
 
 <!-- { "blockType": "ignored" } -->
-``` http
+```http
 GET /users/{id | userPrincipalName}/authentication/temporaryAccessPassMethods
 ```
 
@@ -119,7 +119,7 @@ GET https://graph.microsoft.com/beta/users/071cc716-8147-4397-a5ba-b2105951cc0b/
   "@odata.type": "Collection(microsoft.graph.temporaryAccessPassAuthenticationMethod)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PATCH /team/{teamId}/schedule/shiftsRoleDefinitions/{roleId}
 ```
 
@@ -85,7 +85,7 @@ The following example shows a request that enables the modification of schedulin
   "name": "patch-shiftsRoleDefinitions-example"
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/team/10c2c1cc-6384-48f6-aeba-ef7486344550/schedule/shiftsRoleDefinitions/scheduleowner
 Content-Type: application/json
 
@@ -110,7 +110,7 @@ The following example shows the response.
   "truncated": false
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 
@@ -124,7 +124,7 @@ The following example shows a request that disables all permissions by passing a
   "name": "patch-shiftsRoleDefinitions-example2"
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/team/10c2c1cc-6384-48f6-aeba-ef7486344550/schedule/shiftsRoleDefinitions/scheduleowner
 Content-Type: application/json
 
@@ -146,6 +146,6 @@ The following example shows the response.
   "truncated": false
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```

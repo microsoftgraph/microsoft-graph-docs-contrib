@@ -91,7 +91,7 @@ The following example shows a request.
 }
 -->
 
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/identityProviders/Amazon-OAuth
 Content-type: application/json
 
@@ -157,7 +157,7 @@ The following example shows a request.
 }
 -->
 
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/identityProviders/OIDC-V1-MyTest-085a8a0c-58cb-4b6d-8e07-1328ea404e1a
 Content-type: application/json
 

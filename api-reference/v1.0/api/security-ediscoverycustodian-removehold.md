@@ -27,7 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/custodians/removeHold
 POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/custodians/{eDiscoveryCustodianId}/removeHold
 ```
@@ -63,7 +63,7 @@ The following example shows a request.
   "name": "ediscoverycustodianthis.removehold_caseID_custodians"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/security/cases/ediscoveryCases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/custodians/removeHold
 Content-Type: application/json
 
@@ -112,7 +112,7 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 202 Accepted
 ```
 
@@ -126,7 +126,7 @@ The following example shows a request.
   "name": "ediscoverycustodianthis.removehold_single_custodian"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/security/cases/ediscoveryCases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/custodians/c25c3914f9f743ee9cbaa25377e0cec6/removeHold
 ```
 
@@ -168,6 +168,6 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 202 Accepted
 ```

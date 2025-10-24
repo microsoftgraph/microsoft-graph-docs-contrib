@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PATCH /security/identities/sensors/{sensorId}
 ```
 
@@ -66,7 +66,7 @@ The following example shows a request.
   "name": "update_sensor"
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/v1.0/security/identities/sensors/d31dd827-92cd-4cd6-b269-c151a0eec55d
 Content-Type: application/json
 
@@ -122,7 +122,7 @@ The following example shows the response.
   "name": "update_sensor"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

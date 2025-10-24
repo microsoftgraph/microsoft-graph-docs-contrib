@@ -216,7 +216,7 @@ Content-type: application/json
 
 ##### Request
 
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignmentDefaults
 Content-Type: application/json
 
@@ -235,7 +235,7 @@ Content-Type: application/json
   "@odata.type": "microsoft.graph.educationAssignmentDefaults"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /identityGovernance/accessReviews/decisions/filterByCurrentUser(on='reviewer')/recordAllDecisions
 ```
 
@@ -69,7 +69,7 @@ If successful, this action returns a `204 No Content` response code.
   "name": "accessreviewinstancedecisionitem-recordalldecisions"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/identityGovernance/accessReviews/decisions/filterByCurrentUser(on='reviewer')/recordAllDecisions
 Content-Type: application/json
 
@@ -94,7 +94,7 @@ Content-Type: application/json
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 

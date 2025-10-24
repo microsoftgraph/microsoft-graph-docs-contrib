@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 
-``` http
+```http
 POST /teamwork/determineIfInteractionIsAllowed
 ```
 
@@ -75,7 +75,7 @@ The following example shows a request.
   "blockType": "request",
   "name": "teamwork_determineIfInteractionIsAllowed_1"
 }-->
-``` http
+```http
 POST https://graph.microsoft.com/beta/teamwork/determineIfInteractionIsAllowed
 
 {
@@ -154,7 +154,7 @@ The following example shows a request.
   "blockType": "request",
   "name": "teamwork_determineIfInteractionIsAllowed_2"
 }-->
-``` http
+```http
 POST https://graph.microsoft.com/beta/teamwork/determineIfInteractionIsAllowed
 
 {
@@ -234,7 +234,7 @@ The following example shows a request.
   "blockType": "request",
   "name": "teamwork_determineIfInteractionIsAllowed_3"
 }-->
-``` http
+```http
 POST https://graph.microsoft.com/beta/teamwork/determineIfInteractionIsAllowed
 
 {
@@ -313,7 +313,7 @@ The following example shows a request.
   "blockType": "request",
   "name": "teamwork_determineIfInteractionIsAllowed_4"
 }-->
-``` http
+```http
 POST https://graph.microsoft.com/beta/teamwork/determineIfInteractionIsAllowed
 
 {
@@ -392,7 +392,7 @@ The following example shows a request.
   "blockType": "request",
   "name": "teamwork_determineIfInteractionIsAllowed_5"
 }-->
-``` http
+```http
 POST https://graph.microsoft.com/beta/teamwork/determineIfInteractionIsAllowed
 
 {

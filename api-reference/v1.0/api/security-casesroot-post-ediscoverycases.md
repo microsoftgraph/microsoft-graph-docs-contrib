@@ -27,7 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /security/cases/ediscoveryCases
 ```
 
@@ -63,7 +63,7 @@ The following example shows a request.
   "name": "create_ediscoverycase_from_"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/security/cases/ediscoveryCases
 Content-Type: application/json
 
@@ -113,7 +113,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.security.ediscoveryCase"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 

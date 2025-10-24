@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /admin/exchange/mailboxes/{mailboxId}/createImportSession
 ```
 
@@ -62,7 +62,7 @@ The following example shows how to create an import session. The opaque URL, ret
   "sampleKeys": ["MBX:e0643f21@a7809c93"]
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/admin/exchange/mailboxes/MBX:e0643f21@a7809c93/createImportSession
 ```
 
@@ -102,7 +102,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.mailboxItemImportSession"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 232

@@ -28,7 +28,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /me/profile/patents
 POST /users/{id | userPrincipalName}/profile/patents
 ```
@@ -69,7 +69,7 @@ If successful, this method returns a `201 Created` response code and an [itemPat
   "name": "create_itempatent_from_profile"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/me/profile/patents
 Content-Type: application/json
 
@@ -120,7 +120,7 @@ Content-Type: application/json
   "@odata.type": "microsoft.graph.itemPatent"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 

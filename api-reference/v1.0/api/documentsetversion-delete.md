@@ -27,7 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 DELETE /sites/{siteId}/lists/{listId}/items/{itemId}/documentSetVersions/{documentSetVersionId}
 ```
 
@@ -58,7 +58,7 @@ The following example shows a request.
   "sampleKeys": ["root", "Documents", "2", "1"]
 }
 -->
-``` http
+```http
 DELETE https://graph.microsoft.com/v1.0/sites/root/lists/Documents/items/2/documentSetVersions/1
 ```
 
@@ -102,7 +102,7 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 

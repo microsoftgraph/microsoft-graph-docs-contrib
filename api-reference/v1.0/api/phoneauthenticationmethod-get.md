@@ -40,7 +40,7 @@ Retrieve details of your own phone authentication method.
 [!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
 
 <!-- { "blockType": "ignored" } -->
-``` http
+```http
 GET /me/authentication/phoneMethods/{phoneMethodId}
 ```
 
@@ -49,7 +49,7 @@ Retrieve details of your own or another user's phone authentication method.
 [!INCLUDE [authentication-methods-apis-users-selfservice](../includes/authentication-methods-apis-users-selfservice.md)]
 
 <!-- { "blockType": "ignored" } -->
-``` http
+```http
 GET /users/{userId | userPrincipalName}/authentication/phoneMethods/{phoneMethodId}
 ```
 

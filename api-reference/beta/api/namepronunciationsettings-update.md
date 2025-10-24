@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
-``` http
+```http
 PATCH /admin/people/namePronunciation
 ```
 
@@ -70,7 +70,7 @@ The following example shows a request.
   "name": "update_namepronunciationsettings"
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/admin/people/namePronunciation
 Content-Type: application/json
 
@@ -120,7 +120,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.namePronunciationSettings"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

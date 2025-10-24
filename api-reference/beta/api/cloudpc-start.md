@@ -34,14 +34,14 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 To start the [cloudPC](../resources/cloudpc.md) of the specified user (who is the signed-in user) in the organization using delegated permission:
 
-``` http
+```http
 POST /me/cloudPCs/{cloudPCId}/start
 POST /users/{userId}/cloudPCs/{id}/start
 ```
 
 To start the specified [cloudPC](../resources/cloudpc.md) in the organization, using either delegated permission (the signed-in user should be the administrator) or application permission:
 
-``` http
+```http
 POST /deviceManagement/virtualEndpoint/cloudPCs/{cloudPCId}/start
 ```
 
@@ -72,7 +72,7 @@ The following example shows a request.
 }
 -->
 
-``` http
+```http
 POST https://graph.microsoft.com/beta/me/cloudPCs/36bd4942-0ca8-11ed-861d-0242ac120002/start
 ```
 
@@ -112,6 +112,6 @@ The following example shows the response.
 }
 -->
 
-``` http
+```http
 HTTP/1.1 204 No Content
 ```

@@ -43,13 +43,13 @@ The [Get namePronunciationSettings](/graph/api/namepronunciationsettings-get?vie
 
 Use the following HTTP request to retrieve all current settings, including those with name pronunciation disabled.
 
-``` http
+```http
 GET https://graph.microsoft.com/beta/admin/people/namePronunciation
 ```
 
 If successful, a `200 OK` response code is returned with a [namePronunciationSettings](/graph/api/namepronunciationsettings-get?view=graph-rest-beta&preserve-view=true) object in the response body, as shown in the following example response.
 
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -64,7 +64,7 @@ Setting the **isEnabledInOrganization** property of the **namePronunciationSetti
 
 Use the [Update namePronunciationSettings](/graph/api/namepronunciationsettings-update?view=graph-rest-beta&preserve-view=true) method to enable name pronunciation, as shown in the following example:
 
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/admin/people/namePronunciation
 Content-Type: application/json
 
@@ -75,7 +75,7 @@ Content-Type: application/json
 
 If successful, a `200 OK` response code is returned with a [namePronunciationSettings](/graph/api/resources/namepronunciationsettings?view=graph-rest-beta&preserve-view=true) object in the response body, as shown in the following example response.
 
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -90,7 +90,7 @@ Setting the **isEnabledInOrganization** property of the **namePronunciationSetti
 
 Use the [Update namePronunciationSettings](/graph/api/namepronunciationsettings-update?view=graph-rest-beta&preserve-view=true) method to disable name pronunciation, as shown in the following example.
 
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/admin/people/namePronunciation
 Content-Type: application/json
 
@@ -101,7 +101,7 @@ Content-Type: application/json
 
 If successful, a `200 OK` response code is returned with a [namePronunciationSettings](/graph/api/resources/namepronunciationsettings?view=graph-rest-beta&preserve-view=true) object in the response body, as shown in the following example response.
 
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

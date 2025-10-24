@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /identityGovernance/privilegedAccess/group/eligibilityScheduleRequests
 ```
 
@@ -74,7 +74,7 @@ The following request creates an eligibility schedule request to make a principa
   "name": "create_request_for_principal_from_admin_beta_e1"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/identityGovernance/privilegedAccess/group/eligibilityScheduleRequests
 Content-Type: application/json
 
@@ -133,7 +133,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.privilegedAccessGroupEligibilityScheduleRequest"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 
@@ -178,7 +178,7 @@ The following request extends an existing eligibility schedule request before it
   "name": "extend_group_membership_for_principal_from_admin_beta_e2"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/identityGovernance/privilegedAccess/group/eligibilityScheduleRequests
 Content-Type: application/json
 
@@ -237,7 +237,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.privilegedAccessGroupEligibilityScheduleRequest"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 

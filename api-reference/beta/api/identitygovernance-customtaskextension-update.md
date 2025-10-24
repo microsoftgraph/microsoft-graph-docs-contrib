@@ -36,7 +36,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PATCH /identityGovernance/lifecycleWorkflows/customTaskExtensions/{customTaskExtensionId}
 ```
 
@@ -76,7 +76,7 @@ The following example shows a request.
   "name": "lifecycleworkflows_update_customtaskextension"
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/customTaskExtensions/ffcc4c85-5a14-448e-a390-77abf2700369
 Content-Type: application/json
 Content-length: 588
@@ -143,6 +143,6 @@ Content-length: 588
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```

@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /external/industryData/inboundFlows
 ```
 
@@ -73,7 +73,7 @@ The following example shows a request.
   "name": "post_inboundapiflow"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/external/industryData/inboundFlows
 Content-Type: application/json
 
@@ -127,7 +127,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.industryData.inboundApiFlow"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 

@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 
-``` http
+```http
 PATCH /termStore/sets/{setId}
 ```
 
@@ -68,7 +68,7 @@ If successful, this method returns a `200 OK` response code and an updated [set]
   "name": "update_set"
 } -->
 
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/termStore/sets/{setId}
 Content-Type: application/json
 
@@ -113,7 +113,7 @@ Content-Type: application/json
   "@odata.type": "microsoft.graph.termStore.set"
 }-->
 
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

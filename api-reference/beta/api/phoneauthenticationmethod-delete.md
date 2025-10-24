@@ -45,7 +45,7 @@ Delete your own phone authentication method.
 [!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
 
 <!-- { "blockType": "ignored" } -->
-``` http
+```http
 DELETE /me/authentication/phoneMethods/{phoneMethodId}
 ```
 
@@ -54,7 +54,7 @@ Delete your own or another user's phone authentication method.
 [!INCLUDE [authentication-methods-apis-users-selfservice](../includes/authentication-methods-apis-users-selfservice.md)]
 
 <!-- { "blockType": "ignored" } -->
-``` http
+```http
 DELETE /users/{id | userPrincipalName}/authentication/phoneMethods/{phoneMethodId}
 ```
 

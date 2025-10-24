@@ -121,7 +121,7 @@ The following example shows a request.
 }
 -->
 
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/identity/identityProviders/Amazon-OAUTH
 Content-type: application/json
 
@@ -189,7 +189,7 @@ The following example shows a request.
 }
 -->
 
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/identity/identityProviders/Apple-Managed-OIDC
 Content-type: application/json
 
@@ -256,7 +256,7 @@ The following example shows a request.
 }
 -->
 
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/identity/identityProviders/Contoso-OIDC-00001111-aaaa-2222-bbbb-3333cccc4444
 Content-type: application/json
 
@@ -323,7 +323,7 @@ The following example shows a request.
 }
 -->
 
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/identity/identityProviders/ContosoOIDCIdentityProvider
 Content-type: application/json
 

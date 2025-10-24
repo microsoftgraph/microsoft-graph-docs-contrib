@@ -27,7 +27,7 @@ Auditing data can be accessed through Microsoft Purview Audit Search API via the
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /security/auditLog/queries
 ```
 
@@ -73,7 +73,7 @@ The following example shows a request.
   "name": "create_auditlogquery_from_"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/security/auditLog/queries
 Content-Type: application/json
 
@@ -117,7 +117,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.security.auditLogQuery"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 

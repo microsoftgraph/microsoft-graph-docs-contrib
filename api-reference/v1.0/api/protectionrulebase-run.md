@@ -30,7 +30,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /solutions/backupRestore/sharePointProtectionPolicies/{sharePointProtectionPolicyId}/siteInclusionRules/{siteProtectionRuleId}/run
 POST /solutions/backupRestore/oneDriveForBusinessProtectionPolicies/{oneDriveForBusinessProtectionPolicyId}/driveInclusionRules/{driveProtectionRuleId}/run
 POST /solutions/backupRestore/exchangeProtectionPolicies/{exchangeProtectionPolicyId}/mailboxInclusionRules/{mailboxProtectionRuleId}/run
@@ -66,7 +66,7 @@ The following example shows a request.
   "name": "siteprotectionrulethis.run"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/solutions/backupRestore/sharePointProtectionPolicies/71633878-8321-4950-bfaf-ed285bdd1461/siteInclusionRules/61633878-8321-4950-bfaf-ed285bdd1461/run
 ```
 
@@ -86,7 +86,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.protectionRuleBase"
 }
 -->
-``` http
+```http
 HTTP/1.1 202 Accepted
 Content-Type: application/json
 Content-Location: https://graph.microsoft.com/v1.0/solutions/backupRestore/sharePointProtectionPolicies/71633878-8321-4950-bfaf-ed285bdd1461/siteInclusionRules('61633878-8321-4950-bfaf-ed285bdd1461')
@@ -131,7 +131,7 @@ The following example shows a request.
   "name": "driveprotectionrulethis_run"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/solutions/backupRestore/oneDriveForBusinessProtectionPolicies/71633878-8321-4950-bfaf-ed285bdd1461/driveInclusionRules/61633878-8321-4950-bfaf-ed285bdd1461/run
 ```
 
@@ -151,7 +151,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.protectionRuleBase"
 }
 -->
-``` http
+```http
 HTTP/1.1 202 Accepted
 Content-Type: application/json
 Content-Location: https://graph.microsoft.com/v1.0/solutions/backupRestore/oneDriveForBusinessProtectionPolicies/71633878-8321-4950-bfaf-ed285bdd1461/driveInclusionRules('61633878-8321-4950-bfaf-ed285bdd1461')
@@ -196,7 +196,7 @@ The following example shows a request.
   "name": "mailboxprotectionrulethis.run"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/solutions/backupRestore/exchangeProtectionPolicies/{exchangeProtectionPolicyId}/mailboxInclusionRules/{mailboxProtectionRuleId}/run
 ```
 
@@ -216,7 +216,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.protectionRuleBase"
 }
 -->
-``` http
+```http
 HTTP/1.1 202 Accepted
 Content-Type: application/json
 Content-Location: https://graph.microsoft.com/v1.0/solutions/backupRestore/exchangeProtectionPolicies/{exchangeProtectionPolicyId}/mailboxInclusionRules/{mailboxProtectionRuleId}

@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PATCH /admin/people/profilePropertySettings/{profilePropertySettingId}
 ```
 
@@ -70,7 +70,7 @@ The following example shows a request.
   "name": "update_profilepropertysetting"
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/admin/people/profilePropertySettings/00000000-0000-0000-0000-000000000001
 Content-Type: application/json
 
@@ -123,7 +123,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.profilePropertySetting"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

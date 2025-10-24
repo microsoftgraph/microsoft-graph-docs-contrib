@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PATCH /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/x509Certificate
 ```
 
@@ -77,7 +77,7 @@ The following is an example of an update request with the following settings:
   "name": "update_x509certificateauthenticationmethodconfiguration"
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/x509Certificate
 Content-Type: application/json
 
@@ -168,6 +168,6 @@ Content-Type: application/json
   "blockType": "response"
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```

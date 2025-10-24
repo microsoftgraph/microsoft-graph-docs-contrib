@@ -42,7 +42,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /identity/customAuthenticationExtensions
 ```
 
@@ -88,7 +88,7 @@ The following example shows a request.
   "name": "create_customauthenticationextension_onTokenIssuanceStartCustomExtension"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/identity/customAuthenticationExtensions
 Content-Type: application/json
 Content-length: 468
@@ -159,7 +159,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.customAuthenticationExtension"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 
@@ -206,7 +206,7 @@ The following example shows a request.
   "name": "create_customauthenticationextension_onAttributeCollectionStartCustomExtension"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/identity/customAuthenticationExtensions
 Content-Type: application/json
 
@@ -269,7 +269,7 @@ The following example shows the response.
 }
 -->
 
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 
@@ -306,7 +306,7 @@ The following example shows a request.
   "name": "create_customauthenticationextension_onAttributeCollectionSubmitCustomExtension"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/identity/customAuthenticationExtensions
 Content-Type: application/json
 
@@ -369,7 +369,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.customAuthenticationExtension"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 
@@ -405,7 +405,7 @@ The following example shows a request.
   "name": "create_customauthenticationextension_onOtpSendCustomExtension"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/identity/customAuthenticationExtensions
 Content-Type: application/json
 
@@ -471,7 +471,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.customAuthenticationExtension"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 

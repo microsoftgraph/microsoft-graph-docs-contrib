@@ -31,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /reports/partners/billing/usage/unbilled/export
 ```
 
@@ -70,7 +70,7 @@ The following example shows a request.
   "name": "unbilledusagethis.export"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/reports/partners/billing/usage/unbilled/export
 Content-Type: application/json
 
@@ -120,7 +120,7 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 202 Accepted
 Content-Type: application/json
 Location: https://graph.microsoft.com/v1.0/reports/partners/billing/operations/9ab9cb54-d07f-4f52-9ea6-a09d7de52c14

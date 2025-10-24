@@ -60,7 +60,7 @@ Permanently delete a **crossTenantAccessPolicyConfigurationPartner** object:
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 DELETE /policies/deletedItems/crossTenantPartners/{id}
 ```
 
@@ -70,7 +70,7 @@ Permanently delete a **crossTenantIdentitySyncPolicyPartner** object:
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 DELETE /policies/deletedItems/crossTenantSyncPolicyPartners/{id}
 ```
 
@@ -79,7 +79,7 @@ Permanently delete a  **conditionalAccessPolicy** object:
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 DELETE /identity/conditionalAccess/deletedItems/policies/{id}
 ```
 
@@ -88,7 +88,7 @@ Permanently delete a  **namedLocation** object:
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 DELETE /identity/conditionalAccess/deletedItems/namedLocations/{id}
 ```
 
@@ -157,7 +157,7 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 
@@ -210,7 +210,7 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 
@@ -263,7 +263,7 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 
@@ -316,7 +316,7 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 

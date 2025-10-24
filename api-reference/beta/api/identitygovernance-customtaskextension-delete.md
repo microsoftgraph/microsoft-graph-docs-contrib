@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 DELETE /identityGovernance/lifecycleWorkflows/customTaskExtensions/{customTaskExtensionId}/
 ```
 
@@ -63,7 +63,7 @@ The following example shows a request.
   "name": "lifecycleworkflows_delete_customtaskextension"
 }
 -->
-``` http
+```http
 DELETE https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/customTaskExtensions/2af4670b-47d3-460f-ad16-fc7d4c511d33
 ```
 
@@ -104,6 +104,6 @@ DELETE https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/cu
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```

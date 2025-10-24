@@ -73,7 +73,7 @@ If successful, this method returns a `204 No Content` response code. It doesn't 
   "sampleKeys": ["kim@contoso.com", "_jpuR-TGZtk6aQCLF3BQjA2"]
 }
 -->
-``` http
+```http
 DELETE https://graph.microsoft.com/beta/users/kim@contoso.com/authentication/fido2Methods/_jpuR-TGZtk6aQCLF3BQjA2
 ```
 
@@ -114,7 +114,7 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 

@@ -114,7 +114,7 @@ GET https://graph.microsoft.com/beta/me/profile/anniversaries
   "@odata.type": "collection(microsoft.graph.personAnniversary)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
