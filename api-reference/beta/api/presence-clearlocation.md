@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Clears all non‑scheduled work location signals for a user—specifically, it clears both the manual and automatic layers. After clearing, UPS re-aggregates the user’s final work location strictly from scheduled (Calendar Working Hours & Location – WHL) if available; otherwise, the final state has source = "none" and workLocationType = "unspecified".
+Clears the work location signals for a user, it clears both the manual and automatic layers for the current date. 
 
 ## Permissions
 
