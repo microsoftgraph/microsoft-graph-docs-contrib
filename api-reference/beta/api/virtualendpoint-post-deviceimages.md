@@ -144,6 +144,7 @@ Content-Type: application/json
   "osStatus": null,
   "expirationDate": null,
   "osVersionNumber": null,
-  "sizeInGB": 64
+  "sizeInGB": 64,
+  "osArchitecture": "x64"
 }
 ```

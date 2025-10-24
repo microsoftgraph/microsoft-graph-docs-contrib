@@ -28,10 +28,10 @@ Represents an application in the [Microsoft Entra application gallery](/azure/ac
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|categories|String collection|The list of categories for the application. Supported values can be: `Collaboration`, `Business Management`, `Consumer`, `Content management`, `CRM`, `Data services`, `Developer services`, `E-commerce`, `Education`, `ERP`, `Finance`, `Health`, `Human resources`, `IT infrastructure`, `Mail`, `Management`, `Marketing`, `Media`, `Productivity`, `Project management`, `Telecommunications`, `Tools`, `Travel`, and `Web design & hosting`.|
+|categories|String collection|The list of categories for the application. Supported values can be: `Collaboration`, `Business Management`, `Consumer`, `Content management`, `CRM`, `Data services`, `Developer services`, `E-commerce`, `Education`, `ERP`, `Finance`, `Health`, `Human resources`, `IT infrastructure`, `Mail`, `Management`, `Marketing`, `Media`, `Productivity`, `Project management`, `Telecommunications`, `Tools`, `Travel`, and `Web design & hosting`. <br/><br/> Supports `$filter` (`contains`).|
 |configurationUris|[configurationUri](../resources/configurationuri.md) collection|The URIs required for the single sign-on configuration of a preintegrated application.|
 |description|String|A description of the application.|
-|displayName|String|The name of the application.|
+|displayName|String|The name of the application. Supports `$filter` (`contains`).|
 |endpoints|String collection|A collection of string URLs representing various API endpoints available on learn.microsoft.com.|
 |homePageUrl|String|The home page URL of the application.|
 |id|String| Unique identifier for the application. Read-only.|
