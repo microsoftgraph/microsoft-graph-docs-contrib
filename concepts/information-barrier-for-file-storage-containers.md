@@ -1,5 +1,5 @@
 ---
-title: "Information Barrier for fileStorageContainers"
+title: "Manage information barriers for file storage containers"
 description: "Manage information barriers for file storage containers"
 author: lilealdai
 ms.author: daili
