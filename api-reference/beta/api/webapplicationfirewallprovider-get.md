@@ -96,7 +96,7 @@ The following example shows the response with Akamai.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.fraudProtectionProvider"
+  "@odata.type": "microsoft.graph.akamaiWebApplicationFirewallProvider"
 }
 -->
 ``` http

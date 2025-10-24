@@ -128,7 +128,7 @@ Content-Type: application/json
 The following example shows a request to create a new Cloudflare WAF object.
 <!-- {
   "blockType": "request",
-  "name": "create_fraudprotectionprovider_from_cloudflare"
+  "name": "create_webapplicationfirewallprovider_from_cloudflare"
 }
 -->
 ``` http
