@@ -38,7 +38,7 @@ Represents an application in the [Microsoft Entra application gallery](/azure/ac
 |lastModifiedDateTime|DateTimeOffset|The date and time when the data for the application was last updated, represented using ISO 8601 format and always in UTC time.|
 |logoUrl|String|The URL to get the logo for this application.|
 |publisher|String|The name of the publisher for this application.|
-|riskFactors|[applicationRiskFactors](applicationriskfactors.md)|General business and operational information about the application provider|
+|riskFactors|[applicationRiskFactors](applicationriskfactors.md)|General business and operational information about the application provider. Returned only when `$select` is used.|
 |riskScore|[applicationRiskScore](../resources/applicationriskscore.md)|Represents the Microsoft-generated numerical risk score assessment for the application. Returned only when `$select` is used.|
 |supportedProvisioningTypes|String collection|The list of provisioning modes supported by this application. The only valid value is `sync`.|
 |supportedSingleSignOnModes|String collection|The list of single sign-on modes supported by this application. The supported values are `oidc`, `password`, `saml`, and `notSupported`.|
