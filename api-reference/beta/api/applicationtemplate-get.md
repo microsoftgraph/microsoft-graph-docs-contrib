@@ -232,6 +232,8 @@ GET https://graph.microsoft.com/beta/applicationTemplates/006a06ef-9160-42cd-88b
 [!INCLUDE [sample-code](../includes/snippets/python/get-applicationtemplate-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
+
 #### Response
 
 The following example shows the response.
@@ -257,7 +259,7 @@ Content-type: application/json
         "security": 9.95,
         "provider": 9.611832,
         "compliance": 9.931034,
-        "legal": 10
+        "legal": 10.0
     },
     "riskFactors": {
         "general": {

@@ -264,7 +264,7 @@ Content-type: application/json
                 "security": 9.95,
                 "provider": 9.611832,
                 "compliance": 9.931034,
-                "legal": 10
+                "legal": 10.0
             },
             "riskFactors": {
                 "general": {
@@ -297,7 +297,7 @@ This example shows how to get top 2 application templates sorted by total risk s
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_applicationtemplates_with_optional"
+  "name": "get_applicationtemplates_with_filter_and_order"
 }-->
 
 ```msgraph-interactive
