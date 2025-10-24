@@ -20,6 +20,8 @@ Create a new [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) object. Up
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
+> **Note:** If you are using application authentication, you need grant image read permission to the win365app in advance.
+
 <!-- { "blockType": "permissions", "name": "virtualendpoint_post_deviceimages" } -->
 [!INCLUDE [permissions-table](../includes/permissions/virtualendpoint-post-deviceimages-permissions.md)]
 
