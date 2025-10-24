@@ -5,7 +5,7 @@ ms.localizationpriority: medium
 author: "TarkanSevilmis"
 ms.subservice: "planner"
 doc_type: resourcePageType
-ms.date: 08/08/2024
+ms.date: 10/23/2025
 ---
 
 # plannerPlan resource type
@@ -30,6 +30,7 @@ Represents a plan in Microsoft 365. Either a [group](group.md) or a [user](user.
 |[List plan buckets](../api/plannerplan-list-buckets.md) |[plannerBucket](plannerbucket.md) collection| Get a **plannerBucket** object collection.|
 |[List plan tasks](../api/plannerplan-list-tasks.md) |[plannerTask](plannertask.md) collection| Get a **plannerTask** object collection.|
 |[Get delta](../api/plannerplan-delta.md) | [plannerPlan](../resources/plannerplan.md) collection | Get newly created, updated, or deleted **plannerPlan** objects in either a **group** or a [plannerRoster](plannerroster.md) type container without having to perform a full read of the entire resource collection. |
+|[getUsageRights](../api/plannerplan-getusagerights.md)|[planUsageRight](../resources/planusageright.md)|Evaluates the usage rights for a specific plan based on its sensitivity label assignment and the requesting user's permissions.|
 
 ## Properties
 | Property	   | Type	|Description|
@@ -45,6 +46,7 @@ Represents a plan in Microsoft 365. Either a [group](group.md) or a [user](user.
 |creationSource|[plannerPlanCreation](plannerplancreation.md)|  Contains information about the origin of the plan.|
 |owner (deprecated) |String| Use the **container** property instead. ID of the [group](group.md) that owns the plan. After it's set, this property can’t be updated. This property doesn't return a valid group ID if the container of the plan isn't a group.|
 |sharedWithContainers|[plannerSharedWithContainer](plannersharedwithcontainer.md) collection|List of containers the plan is shared with.|
+|contentSensitivityLabelAssignment|[contentSensitivityLabelAssignment](contentsensitivitylabelassignment.md)|Optional. The sensitivity label assignment for the plan. Used to classify and protect the plan content based on organizational policies. Null if no sensitivity label is assigned.|
 
 ## Relationships
 | Relationship | Type	|Description|
@@ -96,7 +98,10 @@ The following JSON representation shows the resource type.
       "@odata.type": "microsoft.graph.plannerSharedWithContainer"
     }
   ],
-  "title": "String"
+  "title": "String",
+  "contentSensitivityLabelAssignment": {
+    "@odata.type": "microsoft.graph.contentSensitivityLabelAssignment"
+  }
 }
 ```
 
