@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a signInIdentifierBase object.
+Update the properties of a [signInIdentifierBase](../resources/signinidentifierbase.md) object.
 
 ## Permissions
 
