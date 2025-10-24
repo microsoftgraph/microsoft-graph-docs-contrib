@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a customUsernameSignInIdentifier object.
+Delete a [customUsernameSignInIdentifier](../resources/customusernamesigninidentifier.md) object.
 
 ## Permissions
 
