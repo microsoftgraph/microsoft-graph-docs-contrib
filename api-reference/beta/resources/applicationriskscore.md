@@ -20,11 +20,11 @@ Represents a set of Microsoft-generated numerical scores that quantify the overa
 
 |Property|Type|Description|
 |:---|:---|:---|
-|compliance|Single|Specifies the compliance risk score based on the application's alignment with regulatory standards and industry certifications (0-10 range).|
-|legal|Single|Specifies the legal risk score based on data protection practices, privacy policy transparency, and jurisdictional compliance (0-10 range).|
-|provider|Single|Specifies the provider risk score based on vendor credibility, operational maturity, and trustworthiness (0-10 range).|
-|security|Single|Specifies the security risk score based on authentication strength, encryption, vulnerability management, and overall security hygiene (0-10 range).|
-|total|Single|Represents the overall composite risk score derived from all risk categories (0-10 range).|
+|compliance|Single|Specifies the compliance risk score based on the application's alignment with regulatory standards and industry certifications such as HIPAA, CSA, and PCI-DSS.|
+|legal|Single|Specifies the legal risk score based on data protection practices, privacy policy transparency, and jurisdictional compliance to regulations and policies such as DMCA and data retention policy.|
+|provider|Single|Specifies the provider risk score based on vendor credibility, operational maturity, and trustworthiness.|
+|security|Single|Specifies the security risk score based on authentication strength, encryption, vulnerability management, and overall security hygiene.|
+|total|Single|Represents the composite risk score derived from all risk categories.|
 
 ## Relationships
 
