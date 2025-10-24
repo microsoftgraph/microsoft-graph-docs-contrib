@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents legal compliance information and data management policies for an application, including data retention practices, GDPR alignment, ownership rights, and DMCA adherence.
+Represents legal compliance information and data management policies for an [application](../resources/applicationtemplate.md), including data retention practices, GDPR alignment, ownership rights, and DMCA adherence.
 
 
 ## Properties
