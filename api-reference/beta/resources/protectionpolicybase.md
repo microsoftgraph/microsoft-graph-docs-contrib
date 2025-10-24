@@ -40,9 +40,9 @@ Base type for [sharePointProtectionPolicy](../resources/sharepointprotectionpoli
 |displayName|String|The name of the policy to be created.|
 |id|String|The unique identifier of the protection rule associated with the policy.|
 |isEnabled|Boolean|Indicates whether the policy is enabled.|
-|protectionMode|BackupPolicyProtectionMode|Specifies the method used to protect artifacts within the policy.|
 |lastModifiedBy|[identitySet](../resources/identityset.md)|The identity of the person who last modified the policy.|
 |lastModifiedDateTime|DateTimeOffset|The date and time when the policy was last modified. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+|protectionMode|backupPolicyProtectionMode|Specifies the method used to protect artifacts within the policy. Possible values are: `standard`, `fullServiceBackup`, `unknownFutureValue`.|
 |protectionPolicyArtifactCount|[protectionPolicyArtifactCount](../resources/protectionpolicyartifactcount.md)|The count of artifacts in the protection policy by status. Returned only on `$select`.|
 |retentionSettings|[retentionSetting](../resources/retentionsetting.md) collection|Contains the retention setting details for the policy.|
 |status|[protectionPolicyStatus](../resources/protectionpolicybase.md#protectionpolicystatus-values)|The aggregated status of the protection units associated with the policy. The possible values are: `inactive`, `activeWithErrors`, `updating`, `active`, `unknownFutureValue`.|
@@ -80,6 +80,7 @@ The following JSON representation shows the resource type.
   "isEnabled": "Boolean",
   "lastModifiedBy": {"@odata.type": "microsoft.graph.identitySet"},
   "lastModifiedDateTime": "String (timestamp)",
+  "protectionMode": "String",
   "protectionPolicyArtifactCount": {"@odata.type": "microsoft.graph.protectionPolicyArtifactCount"},
   "retentionSettings": [{"@odata.type": "microsoft.graph.retentionSetting"}],
   "status": "String"
