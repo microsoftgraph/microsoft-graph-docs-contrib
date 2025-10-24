@@ -150,6 +150,8 @@ items:
       href: ../../api/cloudpc-retrievesnapshots.md
     - name: Get frontline access state
       href: ../../api/cloudpc-getfrontlinecloudpcaccessstate.md
+    - name: Retrieve frontline Cloud PC detail
+      href: ../../api/cloudpc-retrievefrontlinecloudpcdetail.md
     - name: Get launch info (deprecated)
       href: ../../api/cloudpc-getcloudpclaunchinfo.md
   - name: Cloud PC audit event
@@ -601,6 +603,8 @@ items:
       href: ../../resources/cloudpcwindowssetting.md
     - name: Cloud PC Windows settings
       href: ../../resources/cloudpcwindowssettings.md
+    - name: Frontline Cloud PC detail
+      href: ../../resources/frontlinecloudpcdetail.md
     - name: Key value pair
       href: ../../resources/keyvaluepair.md
     - name: Microsoft managed desktop
