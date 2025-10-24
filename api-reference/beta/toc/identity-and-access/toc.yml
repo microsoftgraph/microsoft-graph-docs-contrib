@@ -3531,20 +3531,6 @@ items:
         href: ../../api/verifiedidprofile-update.md
       - name: Delete
         href: ../../api/identityverifiedidroot-delete-profiles.md
-  - name: Verified id profile
-    items:
-    - name: Verified id profile
-      href: ../../resources/verifiedidprofile.md
-    - name: List
-      href: ../../api/identityverifiedidroot-list-profiles.md
-    - name: Create
-      href: ../../api/identityverifiedidroot-post-profiles.md
-    - name: Get
-      href: ../../api/verifiedidprofile-get.md
-    - name: Update
-      href: ../../api/verifiedidprofile-update.md
-    - name: Delete
-      href: ../../api/identityverifiedidroot-delete-profiles.md
 - name: Multicloud permissions management (deprecated)
   items:
   - name: Overview
