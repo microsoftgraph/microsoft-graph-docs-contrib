@@ -24,8 +24,8 @@ Inherits from [fullServiceBackupBase](../resources/fullservicebackupbase.md).
 |Method|Return type|Description|
 |:---|:---|:---|
 |[Get](../api/allmailboxesbackup-get.md)|[allMailboxesBackup](../resources/allmailboxesbackup.md)|Read the properties and relationships of [allMailboxesBackup](../resources/allmailboxesbackup.md) object.|
-|[enable](../api/allmailboxesbackup-enable.md)|[allMailboxesBackup](../resources/allmailboxesbackup.md)|**TODO: Add Description**|
-|[disable](../api/allmailboxesbackup-disable.md)|[allMailboxesBackup](../resources/allmailboxesbackup.md)|**TODO: Add Description**|
+|[enable](../api/allmailboxesbackup-enable.md)|[allMailboxesBackup](../resources/allmailboxesbackup.md)|Enable Full Service Backup for Exchange. All the mailboxes in Exchange will be protected automatically without creating a policy.|
+|[disable](../api/allmailboxesbackup-disable.md)|[allMailboxesBackup](../resources/allmailboxesbackup.md)|Disable Full Service Backup for Exchange.|
 
 ## Properties
 |Property|Type|Description|

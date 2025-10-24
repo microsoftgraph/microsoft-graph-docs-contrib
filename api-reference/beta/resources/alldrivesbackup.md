@@ -23,8 +23,8 @@ Inherits from [fullServiceBackupBase](../resources/fullservicebackupbase.md).
 |Method|Return type|Description|
 |:---|:---|:---|
 |[Get](../api/alldrivesbackup-get.md)|[allDrivesBackup](../resources/alldrivesbackup.md)|Read the properties and relationships of [allDrivesBackup](../resources/alldrivesbackup.md) object.|
-|[enable](../api/alldrivesbackup-enable.md)|[allDrivesBackup](../resources/alldrivesbackup.md)|Disable full service backup for OneDriveForBusiness|
-|[disable](../api/alldrivesbackup-disable.md)|[allDrivesBackup](../resources/alldrivesbackup.md)|Enable full service backup for OneDriveForBusiness|
+|[enable](../api/alldrivesbackup-enable.md)|[allDrivesBackup](../resources/alldrivesbackup.md)|Enable Full Service Backup for OneDrive for Business. All the drives in Sharepoint will be protected automatically without creating a policy.|
+|[disable](../api/alldrivesbackup-disable.md)|[allDrivesBackup](../resources/alldrivesbackup.md)|Disable Full Service Backup for Onedrive For Business.|
 
 ## Properties
 |Property|Type|Description|

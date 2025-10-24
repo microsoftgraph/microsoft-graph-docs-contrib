@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Enables full service backup for Exchange. All mailboxes in Exchange are protected automatically, without requiring manual policy creation.
+Enables full service backup for Sharepoint. All sites in Sharepoint are protected automatically, without requiring manual policy creation.
 
 ## Permissions
 
@@ -49,7 +49,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this action returns a `202 Accepted` response code and a [allSitesBackup](../resources/allsitesbackup.md) in the response body.
+If successful, this action returns a `202 Accepted` response code and a [allSitesBackup](../resources/allsitesbackup.md) object in the response body.
 
 ## Examples
 
@@ -81,18 +81,12 @@ HTTP/1.1 202 Accepted
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.allSitesBackup",
-    "id": "String (identifier)",
-    "policyId": "String",
-    "status": "String",
-    "actionOnExistingPolicy": "String",
-    "lastRunDateTime": "String (timestamp)",
-    "lastModifiedDateTime": "String (timestamp)",
-    "lastModifiedBy": {
-      "@odata.type": "microsoft.graph.identitySet"
-    }
-  }
+  "@odata.context": "/solutions/backupRestore/$metadata#allSitesBackup/$entity",
+     "policyId": "89014d8c-71fe-4d00-a01a-31850bc5b32c",
+     "status": "enabled",
+     "lastRunDateTime": "2025-02-03T00:00:00Z",
+     "lastModifiedBy": "fb80ea0c-ecbb-4bb2-b484-37d01f2a776f",
+     "lastModifiedDateTime": "2025-09-21T19:09:52.9752849+00:00"
 }
 ```
 

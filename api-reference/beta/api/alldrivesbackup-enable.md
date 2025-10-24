@@ -49,7 +49,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this action returns a `202 Accepted` response code and a [allDrivesBackup](../resources/alldrivesbackup.md) in the response body.
+If successful, this action returns a `202 Accepted` response code and a [allDrivesBackup](../resources/alldrivesbackup.md) object in the response body.
 
 ## Examples
 

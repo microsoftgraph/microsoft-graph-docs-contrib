@@ -61,7 +61,7 @@ The following table lists the parameters that are required when you call this ac
 
 ## Response
 
-If successful, this action returns a `202 Accepted` response code and a [allMailboxesBackup](../resources/allmailboxesbackup.md) in the response body.
+If successful, this action returns a `202 Accepted` response code and a [allMailboxesBackup](../resources/allmailboxesbackup.md) object in the response body.
 
 ## Examples
 

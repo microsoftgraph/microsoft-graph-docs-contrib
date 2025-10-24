@@ -14,10 +14,10 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Disable full service backup for Exchange. When this action is performed, all mailboxes previously attached to a policy remain in that policy, while other mailboxes transition to the `removed` state. There are two modes for disabling full service backup:
+Disable full service backup for Sharepoint. When this action is performed, all sites previously attached to a policy remain in that policy, while other sites transition to the `removed` state. There are two modes for disabling full service backup:
 
-1. **EnableAll**: All existing policies become `active`, and mailboxes attached to these policies are marked as `protected`.
-2. **DisableAll**: All existing policies become `inactive`, and mailboxes attached to these policies are marked as `unprotected`.
+1. **EnableAll**: All existing policies become `active`, and sites attached to these policies are marked as `protected`.
+2. **DisableAll**: All existing policies become `inactive`, and sites attached to these policies are marked as `unprotected`.
 
 ## Permissions
 
@@ -37,7 +37,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-POST /allSitesBackup/disable
+POST /solutions/backupRestore//allSitesBackup/disable
 ```
 
 ## Request headers
@@ -61,7 +61,7 @@ The following table lists the parameters that are required when you call this ac
 
 ## Response
 
-If successful, this action returns a `202 Accepted response code and a [allSitesBackup](../resources/allsitesbackup.md) in the response body.
+If successful, this action returns a `202 Accepted` response code and an [allSitesBackup](../resources/allsitesbackup.md) object in the response body.
 
 ## Examples
 
