@@ -1571,6 +1571,12 @@
               ]
             },
             {
+              "name": "Verified ID",
+              "resources": [
+                "verifiedIdProfile"                
+              ]
+            },
+            {
               "name": "Authentication methods",
               "overview": "../../resources/authenticationmethods-overview.md",
               "resources": [
