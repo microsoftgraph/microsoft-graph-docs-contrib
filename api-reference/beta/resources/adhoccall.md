@@ -63,7 +63,7 @@ The following JSON representation shows the resource type.
   "@odata.type": "#microsoft.graph.adhocCall",
   "endDateTime": "DateTime (timestamp)",
   "id": "String (identifier)",
-  "startDateTime": "DateTime (timestamp)",
+  "startDateTime": "DateTime (timestamp)"
 }
 ```
 

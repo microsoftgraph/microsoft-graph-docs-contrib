@@ -21,12 +21,11 @@ Represents a recording associated with an [online meeting](onlinemeeting.md) or 
 |  Method       |  Return Type  | Description|
 |:---------------|:--------|:----------|
 |[List](../api/onlinemeeting-list-recordings.md) | [callRecording](callrecording.md) collection | Get the list of [callRecording](../resources/callrecording.md) objects associated with a scheduled [onlineMeeting](../resources/onlinemeeting.md).|
-|[Get](../api/callrecording-get.md) | [callRecording](../resources/callrecording.md) | Get a [callRecording](../resources/callrecording.md) object associated with a scheduled [meeting](../resources/onlinemeeting.md) and an ad hoc call [adhocCall](adhoccall.md) after the instance has ended.|
+|[Get](../api/callrecording-get.md) | [callRecording](../resources/callrecording.md) | Get a [callRecording](../resources/callrecording.md) object associated with a scheduled [meeting](../resources/onlinemeeting.md) and an [ad hoc call](adhoccall.md) after the instance has ended.|
 |[Get delta by organizer](../api/callrecording-delta.md) | [callRecording](callrecording.md) collection | Get a set of [callRecording](../resources/callrecording.md) resources that were added for [onlineMeeting](../resources/onlinemeeting.md) instances organized by the specified user.|
 |[List recordings by organizer](../api/onlinemeeting-getallrecordings.md) | [callRecording](callrecording.md) collection | Get the [callRecording](../resources/callrecording.md) objects for all the [onlineMeeting](../resources/onlinemeeting.md) instances organized by the specified user.|
-|List recordings by initiator | [callRecording](callrecording.md) collection | Get the [callRecording](../resources/callrecording.md) objects for all the [adhocCall](adhoccall.md) instances organized by the specified user initiating the call.|
+|List recordings by initiator | [callRecording](callrecording.md) collection | Get the [callRecording](../resources/callrecording.md) objects for all the [ad hoc call](adhoccall.md) instances organized by the specified user initiating the call.|
 
- 
 ## Properties
 
 | Property   | Type |Description|
