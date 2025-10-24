@@ -110,7 +110,7 @@ GET https://graph.microsoft.com/beta/applicationTemplates
 
 ---
 
-### Response
+#### Response
 
 > **Note:** The response object shown here might be shortened for readability.
 
