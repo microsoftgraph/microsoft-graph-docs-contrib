@@ -68,7 +68,7 @@ If successful, this action returns a `200 OK` response code and a Stream in the 
 
 ## Examples
 
-### Example 1: Get device recommendation reports grouped by Cloud PC size and usage category
+### Example 1: Get device recommendation reports grouped by service plan and usage category
 
 The following example shows how to get device recommendation reports grouped by service plan and usage category.
 
