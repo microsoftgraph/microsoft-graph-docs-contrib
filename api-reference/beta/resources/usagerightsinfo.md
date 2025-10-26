@@ -16,7 +16,6 @@ Namespace: microsoft.graph
 
 Represents the detailed usage rights and permissions that a user has on content protected by a sensitivity label. This resource is based on Rights Management Services (RMS) usage rights evaluation and determines what actions the user can perform on the protected content.
 
-
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
@@ -39,10 +38,10 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.usageRightsInfo",
-  "allowView": "Boolean",
-  "allowEdit": "Boolean",
-  "allowPrint": "Boolean",
   "allowCopy": "Boolean",
-  "allowExport": "Boolean"
+  "allowEdit": "Boolean",
+  "allowExport": "Boolean",
+  "allowPrint": "Boolean",
+  "allowView": "Boolean"
 }
 ```
