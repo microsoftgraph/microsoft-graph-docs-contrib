@@ -30,7 +30,7 @@ Represents a plan in Microsoft 365. Either a [group](group.md) or a [user](user.
 |[List plan buckets](../api/plannerplan-list-buckets.md) |[plannerBucket](plannerbucket.md) collection| Get a **plannerBucket** object collection.|
 |[List plan tasks](../api/plannerplan-list-tasks.md) |[plannerTask](plannertask.md) collection| Get a **plannerTask** object collection.|
 |[Get delta](../api/plannerplan-delta.md) | [plannerPlan](../resources/plannerplan.md) collection | Get newly created, updated, or deleted **plannerPlan** objects in either a **group** or a [plannerRoster](plannerroster.md) type container without having to perform a full read of the entire resource collection. |
-|[Get usage rights](../api/plannerplan-getusagerights.md)|[planUsageRight](../resources/planusageright.md)|Get the usage rights for a specific [plan](../resources/plan.md) based on its sensitivity label assignment and the user's permissions.|
+|[Get usage rights](../api/plannerplan-getusagerights.md)|[planUsageRight](../resources/planusageright.md)|Get the usage rights for a specific [plan](../resources/plan.md) based on its sensitivity label assignment and the requesting user's permissions.|
 
 ## Properties
 | Property	   | Type	|Description|
