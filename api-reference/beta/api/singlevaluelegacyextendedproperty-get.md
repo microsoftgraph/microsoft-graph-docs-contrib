@@ -47,7 +47,7 @@ As well as the following group resources:
 - group [event](../resources/event.md)
 - group [post](../resources/post.md)
 
-For more information about when to use open extensions or extended properties, and how to specify extended properties, see [Extended properties overview](../resources/extended-properties-overview.md) 
+For more information about when to use open extensions or extended properties, and how to specify extended properties, see [Extended properties overview](../resources/extended-properties-overview.md).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

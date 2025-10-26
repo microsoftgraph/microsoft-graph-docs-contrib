@@ -105,8 +105,8 @@ POST /users/{id|userPrincipalName}/outlook/taskFolders
 POST /me/outlook/taskGroups/{id}/taskFolders
 POST /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders
 
-POST /me/todo/lists/{todoTaskListId}/tasks/{todoTaskId}$expand=singleValueExtendedProperties($filter=id eq '{singleValueExtendedPropertyId}')
-POST /me/todo/lists/{todoTaskListId}/tasks$expand=singleValueExtendedProperties($filter=id eq '{singleValueExtendedPropertyId}')
+POST /me/todo/lists/{todoTaskListId}/tasks/{todoTaskId}?$expand=singleValueExtendedProperties($filter=id eq '{singleValueExtendedPropertyId}')
+POST /me/todo/lists/{todoTaskListId}/tasks?$expand=singleValueExtendedProperties($filter=id eq '{singleValueExtendedPropertyId}')
 
 POST /groups/{id}/events
 
@@ -158,8 +158,8 @@ PATCH /users/{id|userPrincipalName}/outlook/taskFolders/{id}
 PATCH /me/outlook/taskGroups/{id}/taskFolders/{id}
 PATCH /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}
 
-PATCH /me/todo/lists/{todoTaskListId}/tasks$expand=singleValueExtendedProperties($filter=id eq '{singleValueExtendedPropertyId}')
-PATCH /me/todo/lists/{todoTaskListId}/tasks/{todoTaskId}$expand=singleValueExtendedProperties($filter=id eq '{singleValueExtendedPropertyId}')
+PATCH /me/todo/lists/{todoTaskListId}/tasks?$expand=singleValueExtendedProperties($filter=id eq '{singleValueExtendedPropertyId}')
+PATCH /me/todo/lists/{todoTaskListId}/tasks/{todoTaskId}?$expand=singleValueExtendedProperties($filter=id eq '{singleValueExtendedPropertyId}')
 
 PATCH /groups/{id}/events/{id}
 ```
