@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 Get the [sensor](../resources/security-sensor.md) deployment package URL and version. You can use this URL to download the installer to install the sensor on a server.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -63,10 +63,6 @@ GET https://graph.microsoft.com/v1.0/security/identities/sensors/getDeploymentPa
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/sensorthisgetdeploymentpackageuri-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/sensorthisgetdeploymentpackageuri-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

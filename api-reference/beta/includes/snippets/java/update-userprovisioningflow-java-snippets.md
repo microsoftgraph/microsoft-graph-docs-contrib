@@ -16,7 +16,7 @@ LinkedList<com.microsoft.graph.beta.models.industrydata.com.microsoft.graph.beta
 additionalAttributes.add(com.microsoft.graph.beta.models.industrydata.AdditionalUserAttributes.UserGradeLevel);
 managementOptions.setAdditionalAttributes(additionalAttributes);
 com.microsoft.graph.beta.models.industrydata.AdditionalUserOptions additionalOptions = new com.microsoft.graph.beta.models.industrydata.AdditionalUserOptions();
-additionalOptions.setMarkAllStudentsAsMinors(true);
+additionalOptions.setStudentAgeGroup(com.microsoft.graph.beta.models.industrydata.StudentAgeGroup.Minor);
 additionalOptions.setAllowStudentContactAssociation(true);
 managementOptions.setAdditionalOptions(additionalOptions);
 provisioningFlow.setManagementOptions(managementOptions);

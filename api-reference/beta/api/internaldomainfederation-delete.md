@@ -1,7 +1,7 @@
 ---
 title: "Delete internalDomainFederation"
 description: "Deletes an internalDomainFederation object."
-author: "rahul-nagraj"
+author: "vimrang"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
@@ -22,9 +22,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "internaldomainfederation_delete" } -->
 [!INCLUDE [permissions-table](../includes/permissions/internaldomainfederation-delete-permissions.md)]
-
-> [!IMPORTANT]
-> This method has a [known permissions issue](https://developer.microsoft.com/en-us/graph/known-issues/?search=21445) and might require consenting to the *Directory.AccessAsUser.All* permission for delegated scenarios.
 
 <!-- Domain Name Administrator and Hybrid Identity Administrator can't delete federated domains -->
 The calling user must be assigned one of the following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json):
@@ -71,10 +68,6 @@ DELETE https://graph.microsoft.com/beta/domains/contoso.com/federationConfigurat
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-internaldomainfederation-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/delete-internaldomainfederation-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

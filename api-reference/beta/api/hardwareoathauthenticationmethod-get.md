@@ -91,10 +91,6 @@ GET https://graph.microsoft.com/beta/me/authentication/hardwareOathMethods/{hard
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-hardwareoathauthenticationmethod-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-hardwareoathauthenticationmethod-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-hardwareoathauthenticationmethod-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -139,6 +135,7 @@ Content-Type: application/json
   "value": {
     "@odata.type": "#microsoft.graph.hardwareOathAuthenticationMethod",
     "id": "aad49556-####-####-####-############",
+    "lastUsedDateTime": "2022-11-06T23:16:12Z",
     "device": {
         "id": "aad49556-####-####-####-############",
         "displayName": "Amy Masters Token",

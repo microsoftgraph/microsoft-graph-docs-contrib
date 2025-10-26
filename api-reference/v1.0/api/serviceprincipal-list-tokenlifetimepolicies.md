@@ -1,7 +1,7 @@
 ---
 title: "List assigned tokenLifetimePolicies"
 description: "List tokenLifetimePolicies that are assigned to a service principal."
-author: "sureshja"
+author: "aricrowe57"
 ms.localizationpriority: medium
 ms.subservice: "entra-applications"
 doc_type: apiPageType
@@ -73,10 +73,6 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals/2a8f9e7a-af01-413a-9592-c
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-tokenlifetimepolicies-on-serviceprincipal-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/list-tokenlifetimepolicies-on-serviceprincipal-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

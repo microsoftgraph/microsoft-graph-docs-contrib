@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Create a new [chat](../resources/chat.md) object.
 
-> **Note:** Only one one-on-one chat can exist between two members. If a one-on-one chat already exists, this operation will return the existing chat and not create a new one.
+> **Note:** Only one one-on-one chat can exist between two members. If a one-on-one chat already exists, this operation returns the existing chat and doesn't create a new one.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -98,10 +98,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-chat-oneonone-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-chat-oneonone-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -209,10 +205,6 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-a-group-chat-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-a-group-chat-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-a-group-chat-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -279,6 +271,11 @@ Content-Type: application/json
 
 ### Example 3: Create a one-on-one chat with installed apps
 
+The following example shows how to create a one-on-one [chat](../resources/chat.md) with installed apps.
+
+> [!NOTE]
+> This API supports both one-on-one and group chats; however, the documentation currently focuses on one-on-one scenarios. You can install apps during chat creation for either chat type.
+
 #### Request
 
 # [HTTP](#tab/http)
@@ -315,10 +312,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-chat-oneonone-with-installed-apps-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-chat-oneonone-with-installed-apps-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -363,7 +356,10 @@ The async operation is initiated, and the response contains a Location header, w
 
 ### Example 4: Create a one-on-one chat with RSC-granted apps
 
-The following example shows how to create a one-on-one chat with installed apps that have resource-specific consent (RSC) permissions.
+The following example shows how to create a one-on-one [chat](../resources/chat.md) with installed apps that have resource-specific consent (RSC) permissions.
+
+> [!NOTE]
+> This API supports both one-on-one and group chats; however, the documentation currently focuses on one-on-one scenarios. You can install apps during chat creation for either chat type.
 
 #### Request
 
@@ -415,10 +411,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-chat-oneonone-with-rsc-granted-apps-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-chat-oneonone-with-rsc-granted-apps-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -493,10 +485,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-chat-oneonone-upn-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-chat-oneonone-upn-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -604,10 +592,6 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-chat-group-with-tenant-guest-user-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-chat-group-with-tenant-guest-user-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-chat-group-with-tenant-guest-user-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -708,10 +692,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-chat-oneonone-federated-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-chat-oneonone-federated-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

@@ -14,7 +14,7 @@ Namespace: microsoft.graph.identityGovernance
 
 Get the user processing result of a user processing result of a [run](../resources/identitygovernance-run.md).
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -73,10 +73,6 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/lifecycleWorkflows/workf
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/lifecycleworkflows-get-run-userprocessingresult-e1-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/lifecycleworkflows-get-run-userprocessingresult-e1-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -155,10 +151,6 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/lifecycleWorkflows/workf
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/lifecycleworkflows-get-run-userprocessingresult-e2-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/lifecycleworkflows-get-run-userprocessingresult-e2-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

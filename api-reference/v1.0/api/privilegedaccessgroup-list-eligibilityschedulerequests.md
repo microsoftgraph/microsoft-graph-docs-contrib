@@ -71,10 +71,6 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/privilegedAccess/group/e
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-privilegedaccessgroup-eligibilityschedulerequest-v1-e1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/list-privilegedaccessgroup-eligibilityschedulerequest-v1-e1-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-privilegedaccessgroup-eligibilityschedulerequest-v1-e1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -132,7 +128,7 @@ Content-Type: application/json
       },
       "action": "adminAssign",
       "isValidationOnly": false,
-      "justification": "Assign eligibility to user for PIM for groups.",
+      "justification": "Assign eligibility to user for PIM for Groups.",
       "scheduleInfo": {
           "startDateTime": "2022-04-12T09:05:41.8532931Z",
           "recurrence": null,
@@ -171,10 +167,6 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/privilegedAccess/group/e
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-privilegedaccessgroup-eligibilityschedulerequest-v1-e2-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/list-privilegedaccessgroup-eligibilityschedulerequest-v1-e2-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

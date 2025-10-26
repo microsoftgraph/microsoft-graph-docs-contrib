@@ -12,7 +12,7 @@ ms.date: 08/21/2024
 
 Namespace: microsoft.graph
 
-Get a [callRecording](../resources/callrecording.md) object associated with a scheduled [onlineMeeting](../resources/onlinemeeting.md). This API supports the retrieval of call transcripts from private chat meetings and channel meetings. However, private channel meetings are not supported at this time.
+Get a [callRecording](../resources/callrecording.md) object associated with a scheduled [onlineMeeting](../resources/onlinemeeting.md). This API supports the retrieval of call recordings from private chat meetings and channel meetings. However, private channel meetings are not supported at this time.
 
 For a recording, this API returns the metadata of the single recording associated with the online meeting. For the content of a recording, this API returns the stream of bytes associated with the recording.
 
@@ -106,10 +106,6 @@ GET https://graph.microsoft.com/v1.0/users/b935e675-5e67-48b9-8d45-249d5f88e964/
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-callrecording-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-callrecording-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-callrecording-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -198,10 +194,6 @@ GET  https://graph.microsoft.com/v1.0/users/b935e675-5e67-48b9-8d45-249d5f88e964
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-callrecording-content-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-callrecording-content-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-callrecording-content-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -267,10 +259,6 @@ GET https://graph.microsoft.com/v1.0/me/onlineMeetings/MSoxMjczYTAxNi0yMDFkLTRmO
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-callrecording-using-contentcorrelationid-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-callrecording-using-contentcorrelationid-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

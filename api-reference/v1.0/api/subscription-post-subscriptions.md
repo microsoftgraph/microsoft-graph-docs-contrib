@@ -14,20 +14,22 @@ Namespace: microsoft.graph
 
 Subscribes a listener application to receive change notifications when the requested type of changes occur to the specified resource in Microsoft Graph.
 
-To identify the resources for which you can create subscriptions and the limitations on subscriptions, see [Set up notifications for changes in resource data: Supported resources](/graph/webhooks#supported-resources).
+To identify the resources for which you can create subscriptions and the limitations on subscriptions, see [Set up notifications for changes in resource data: Supported resources](/graph/change-notifications-overview#supported-resources).
 
-Some resources support rich notifications, that is, notifications that include resource data. For more information about these resources, see [Set up change notifications that include resource data: Supported resources](/graph/webhooks-with-resource-data#supported-resources).
+Some resources support rich notifications, that is, notifications that include resource data. For more information about these resources, see [Set up change notifications that include resource data: Supported resources](/graph/change-notifications-with-resource-data#supported-resources).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
-Creating a subscription requires read scope to the resource. For example, to get change notifications on messages, your app needs the `Mail.Read` permission. 
- 
+To create a subscription, your app must have read permissions for the resource. For example, to get change notifications for messages, your app needs the `Mail.Read` permission.
+
 Depending on the resource and the permission type (delegated or application) requested, the permission specified in the following table is the least privileged required to call this API. To learn more, including [taking caution](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) before choosing the permissions, search for the following permissions in [Permissions](/graph/permissions-reference).
 
 | Supported resource | Delegated (work or school account) | Delegated (personal Microsoft account) | Application |
 |:-----|:-----|:-----|:-----|
+|[aiInteraction](/microsoft-365-copilot/extensibility/api/ai-services/interaction-export/resources/aiinteraction)  <br /> `copilot/users/{userId}/interactionHistory/getAllEnterpriseInteractions`  <br /> Copilot AI interactions that a particular user is part of. | AiEnterpriseInteraction.Read  | Not supported.  | AiEnterpriseInteraction.Read.All, AiEnterpriseInteraction.Read.User  |
+|[aiInteraction](/microsoft-365-copilot/extensibility/api/ai-services/interaction-export/resources/aiinteraction)  <br /> `copilot/interactionHistory/getAllEnterpriseInteractions`  <br /> Copilot AI interactions in an organization. | Not supported.  | Not supported.  | AiEnterpriseInteraction.Read.All  |
 |[callRecord](../resources/callrecords-callrecord.md) (/communications/callRecords) | Not supported | Not supported | CallRecords.Read.All  |
 |[callRecording](../resources/callrecording.md) <br /> `communications/onlineMeetings/getAllRecordings` <br /> All recordings in an organization. | Not supported.  | Not supported.  | OnlineMeetingRecording.Read.All |
 |[callRecording](../resources/callrecording.md) <br /> `communications/onlineMeetings/{onlineMeetingId}/recordings` <br /> All recordings for a specific meeting. | OnlineMeetingRecording.Read.All | Not supported.  | OnlineMeetingRecording.Read.All |
@@ -82,6 +84,9 @@ We recommend that you use the permissions as documented in the previous table. D
 
 [!INCLUDE [teams-subscription-notes](../../includes/teams-subscription-notes.md)]
 
+<!-- ### aiInteraction -->
+[!INCLUDE [copilot-aiinteraction-subscription-notes.md](../../includes/copilot-aiinteraction-subscription-notes.md)]
+
 ### driveItem
 
 Additional limitations apply for subscriptions on OneDrive items. The limitations apply to creating as well as managing (getting, updating, and deleting) subscriptions.
@@ -98,7 +103,7 @@ You can subscribe to changes in Outlook **contact**, **event**, or **message** r
 
 ### presence
 
-Subscriptions on **presence** require any resource data included in a change notification to be encrypted. Always specify the **encryptionCertificate** parameter when [creating a subscription](/graph/webhooks-with-resource-data#creating-a-subscription) to avoid failure. See more information about [setting up change notifications to include resource data](/graph/webhooks-with-resource-data).
+Subscriptions on **presence** require any resource data included in a change notification to be encrypted. Always specify the **encryptionCertificate** parameter when [creating a subscription](/graph/change-notifications-with-resource-data#creating-a-subscription) to avoid failure. See more information about [setting up change notifications to include resource data](/graph/change-notifications-with-resource-data).
 
 ### virtualEventWebinar and virtualEventTownhall
 
@@ -155,10 +160,6 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-subscription-from-subscriptions-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-subscription-from-subscriptions-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -252,7 +253,7 @@ Content-type: application/json
 
 #### Notification endpoint validation
 
-The subscription notification endpoint (specified in the `notificationUrl` property) must be capable of responding to a validation request as described in [Set up notifications for changes in user data](/graph/webhooks#notification-endpoint-validation). If validation fails, the request to create the subscription returns a 400 Bad Request error.
+The subscription notification endpoint (specified in the `notificationUrl` property) must be capable of responding to a validation request as described in [Set up notifications for changes in user data](/graph/change-notifications-overview#notification-endpoint-validation). If validation fails, the request to create the subscription returns a 400 Bad Request error.
 
 
 [error-response]: /graph/errors

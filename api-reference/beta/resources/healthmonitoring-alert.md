@@ -16,6 +16,8 @@ Namespace: microsoft.graph.healthMonitoring
 
 Represents a system-detected health monitoring alert associated with common Microsoft Entra authentication and access management scenarios. Anomaly detection catches unusual patterns in health metrics data streams, for example, unusually high MFA sign-in failures, and surfaces these patterns in the form of alerts in Microsoft Entra Health monitoring.
 
+This resource supports subscribing to [change notifications](/graph/change-notifications-overview).
+
 Inherits from [microsoft.graph.entity](../resources/entity.md).
 
 ## Methods
@@ -29,13 +31,13 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|alertType|microsoft.graph.healthMonitoring.alertType|Indicates which type of scenario an alert is associated with. The possible values are: `unknown`, `mfaSignInFailure`, `managedDeviceSignInFailure`, `compliantDeviceSignInFailure`, `unknownFutureValue`, `conditionalAccessBlockedSignIn`. Use the `Prefer: include-unknown-enum-members` request header to get the following value or values in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `conditionalAccessBlockedSignIn`. Supports `$filter` (`eq`).|
+|alertType|microsoft.graph.healthMonitoring.alertType|Indicates which type of scenario an alert is associated with. The possible values are: `unknown`, `mfaSignInFailure`, `managedDeviceSignInFailure`, `compliantDeviceSignInFailure`, `unknownFutureValue`, `conditionalAccessBlockedSignIn`, `samlSignInFailure`. Use the `Prefer: include-unknown-enum-members` request header to get the following value or values in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `conditionalAccessBlockedSignIn`, `samlSignInFailure`. Supports `$filter` (`eq`).|
 |category|microsoft.graph.healthMonitoring.category|The classification that groups the scenario. The possible values are: `unknown`, `authentication`, `unknownFutureValue`. |
 |createdDateTime|DateTimeOffset|The time when Microsoft Entra Health monitoring generated the alert. Supports `$orderby`.|
 |documentation|[microsoft.graph.healthMonitoring.documentation](../resources/healthmonitoring-documentation.md)|A key-value pair that contains the name of and link to the documentation to aid in investigation of the alert.|
 |enrichment|[microsoft.graph.healthMonitoring.enrichment](../resources/healthmonitoring-enrichment.md)|Investigative information on the alert. This information typically includes counts of impacted objects, which include directory objects such as users, groups, and devices, and a pointer to supporting data.|
 |id|String|The unique GUID identifier of this alert in the associated tenant. Inherited from [microsoft.graph.entity](../resources/entity.md).|
-|scenario|microsoft.graph.healthMonitoring.scenario|The area being monitored on the system that is emitting the source signals. The possible values are: `unknown`, `mfa`, `devices`, `unknownFutureValue`, `conditionalAccess`. Use the `Prefer: include-unknown-enum-members` request header to get the following value or values in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `conditionalAccess`.|
+|scenario|microsoft.graph.healthMonitoring.scenario|The area being monitored on the system that is emitting the source signals. The possible values are: `unknown`, `mfa`, `devices`, `unknownFutureValue`, `conditionalAccess`, `saml`. Use the `Prefer: include-unknown-enum-members` request header to get the following value or values in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `conditionalAccess`, `saml`.|
 |signals|[microsoft.graph.healthMonitoring.signals](../resources/healthmonitoring-signals.md)|The collection of signals that were used in the generation of the alert. These signals are sourced from [serviceActivity APIs](../resources/serviceactivity.md) and are added to the alert as key-value pairs.|
 |state|microsoft.graph.healthMonitoring.alertState|The current lifecycle state of the alert. The possible values are: `active`, `resolved`, `unknownFutureValue`.|
 

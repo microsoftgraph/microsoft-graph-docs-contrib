@@ -10,6 +10,14 @@ items:
     href: ../../api/backuprestoreroot-get.md
   - name: Enable
     href: ../../api/backuprestoreroot-enable.md
+- name: Email notifications setting
+  items:
+  - name: Email notifications setting
+    href: ../../resources/emailnotificationssetting.md
+  - name: Get
+    href: ../../api/emailnotificationssetting-get.md
+  - name: Update
+    href: ../../api/emailnotificationssetting-update.md
 - name: Protection policy
   items:
   - name: Protection policy
@@ -107,6 +115,10 @@ items:
     href: ../../resources/protectionunitbase.md
   - name: Get
     href: ../../api/protectionunitbase-get.md
+  - name: Offboard
+    href: ../../api/protectionunitbase-offboard.md
+  - name: Cancel offboard
+    href: ../../api/protectionunitbase-canceloffboard.md
   - name: Drive protection unit
     items:
     - name: Drive protection unit
@@ -295,6 +307,10 @@ items:
   items:
   - name: Artifact query
     href: ../../resources/artifactquery.md
+  - name: Notification recipients
+    href: ../../resources/notificationrecipients.md
+  - name: Protection policy artifact count
+    href: ../../resources/protectionpolicyartifactcount.md
   - name: Restore point search response
     href: ../../resources/restorepointsearchresponse.md
   - name: Restore point search result

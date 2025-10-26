@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 
 Delete a Viva Engage role from a user.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -58,13 +60,13 @@ The following example shows a request.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/employeeExperience/roles/{engagementRoleId}/members/{engagementRoleMemberId}
+DELETE https://graph.microsoft.com/beta/employeeExperience/roles/5f3c2d11-8a9b-4d6e-b214-7c1f2b9a6d55/members/a40473a5-0fb4-a250-e029-f6fe33d07733
 ```
 
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true

@@ -12,9 +12,10 @@ ms.date: 08/06/2024
 
 Namespace: microsoft.graph
 
-Retrieve the list of [callTranscript](../resources/calltranscript.md) objects associated with a scheduled [onlineMeeting](../resources/onlinemeeting.md). This API supports the retrieval of call recordings from private chat meetings and channel meetings. However, private channel meetings are not supported at this time.
+Retrieve the list of [callTranscript](../resources/calltranscript.md) objects associated with a scheduled [onlineMeeting](../resources/onlinemeeting.md). This API supports the retrieval of call transcripts from private chat meetings and channel meetings. However, private channel meetings are not supported at this time.
 
 > [!NOTE]
+>
 > * This API doesn't support meetings created using the [create onlineMeeting API](/graph/api/application-post-onlinemeetings) that are not associated with an event on the user's calendar.
 > * This API works differently in one or more national clouds. For details, see [Microsoft Teams API implementation differences in national clouds](/graph/teamwork-national-cloud-differences).
 
@@ -68,25 +69,24 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-The following example shows a request.
+The following examples show a request and its response.
+
+<details>
+  <summary>For online meetings</summary>
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_callTranscripts",
   "sampleKeys": ["ba321e0d-79ee-478d-8e28-85a19507f456", "MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ"]
-}
--->
-``` http
+}-->
+
+``` msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users/ba321e0d-79ee-478d-8e28-85a19507f456/onlineMeetings/MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ/transcripts
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-calltranscripts-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/list-calltranscripts-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -198,3 +198,5 @@ Content-Type: application/json
     ]
 }
 ```
+
+</details>

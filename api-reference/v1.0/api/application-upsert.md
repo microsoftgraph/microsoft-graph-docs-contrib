@@ -1,7 +1,7 @@
 ---
 title: "Upsert application"
 description: "Create a new application object if it doesn't exist, or update the properties of an existing application object."
-author: "sureshja"
+author: "Jackson-Woods"
 ms.localizationpriority: medium
 ms.subservice: "entra-applications"
 doc_type: apiPageType
@@ -24,6 +24,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "application_upsert" } -->
 [!INCLUDE [permissions-table](../includes/permissions/application-upsert-permissions.md)]
+
+[!INCLUDE [rbac-application-apis-write](../includes/rbac-for-apis/rbac-application-apis-write.md)]
 
 ## HTTP request
 
@@ -82,10 +84,6 @@ Prefer: create-if-missing
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/upsert-application-create-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/upsert-application-create-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -211,10 +209,6 @@ Prefer: create-if-missing
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/application-upsert-update-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/application-upsert-update-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

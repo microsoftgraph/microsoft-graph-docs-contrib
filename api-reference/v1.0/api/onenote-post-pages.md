@@ -103,10 +103,6 @@ Content-Type:application/pdf
 --MyPartBoundary198374--
 ```
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/onenote-post-pages-v1-e1-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/onenote-post-pages-v1-e1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

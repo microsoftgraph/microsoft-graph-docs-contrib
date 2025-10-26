@@ -13,6 +13,7 @@ var requestBody = new EducationAssignment
 {
 	DueDateTime = DateTimeOffset.Parse("2025-09-16T00:00:00Z"),
 	DisplayName = "Reading test 09.14",
+	LanguageTag = "es-MX",
 	Instructions = new EducationItemBody
 	{
 		ContentType = BodyType.Text,
@@ -29,12 +30,6 @@ var requestBody = new EducationAssignment
 	},
 	Status = EducationAssignmentStatus.Draft,
 	AllowStudentsToAddResourcesToSubmission = true,
-	AdditionalData = new Dictionary<string, object>
-	{
-		{
-			"languageTag" , "es-MX"
-		},
-	},
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp

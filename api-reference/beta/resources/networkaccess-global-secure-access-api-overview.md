@@ -27,7 +27,9 @@ The network access APIs provide a framework to configure how you want to forward
 | [remoteNetwork](../resources/networkaccess-remotenetwork.md) | Represents the physical location from where users and devices connect to access the cloud, public, or private apps. Each remote network comprises devices and the connection of devices in a remote network is maintained via customer-premises equipment (CPE).|
 | [filteringProfile](../resources/networkaccess-filteringprofile.md) | Groups filtering policies, which are then associated with Conditional Access policies in Microsoft Entra to leverage a rich set of user-context conditions.|
 | [filteringPolicy](../resources/networkaccess-filteringpolicy.md) | Encapsulates various policies configured by administrators, such as network filtering policies, data loss prevention, and threat protection.|
+| [tlsInspectionPolicy](../resources/networkaccess-tlsinspectionpolicy.md) | Encapsulates Transport Layer Security inspection configurations that can be linked to filtering profiles in Global Secure Access. See [What is Transport Layer Security inspection?](/entra/global-secure-access/concept-transport-layer-security).|
 | [filteringPolicLink](../resources/networkaccess-filteringpolicylink.md) | Represents the relationship between a filtering profile and a filtering policy, and maintains the current state of the connection.|
+| [tlsInspectionPolicyLink](../resources/networkaccess-tlsinspectionpolicylink.md) | Represents the relationship between a filtering profile and a TLS inspection policy, and maintains the current state of the connection.|
 
 ## Onboard to the service process
 

@@ -72,10 +72,6 @@ GET https://graph.microsoft.com/beta/directory/inboundSharedUserProfiles/c228b2a
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-inboundshareduserprofile-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-inboundshareduserprofile-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-inboundshareduserprofile-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

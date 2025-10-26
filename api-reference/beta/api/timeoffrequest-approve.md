@@ -23,8 +23,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "timeoffrequest_approve" } -->
 [!INCLUDE [permissions-table](../includes/permissions/timeoffrequest-approve-permissions.md)]
 
-> [!NOTE]
-> The Schedule.ReadWrite.All application permission is currently in private preview only and isn't available for public use.
+[!INCLUDE [approveforuser-application-permission](../includes/approveforuser-application-permission.md)]
 
 ## HTTP request
 
@@ -40,7 +39,7 @@ POST /teams/{teamId}/schedule/timeOffRequests/{timeOffRequestId}/approve
 |:--------------|:--------------|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-type | application/json. Required. |
-| MS-APP-ACTS-AS  | A user ID (GUID). Required only if the authorization token is an application token; otherwise, optional. |
+| MS-APP-ACTS-AS (deprecated) | A user ID (GUID). Required only if the authorization token is an application token; otherwise, optional. Until January 1, 2026, this API supports application permissions only when used in combination with the deprecated `MS-APP-ACTS-AS` header.|
 
 ## Request body
 

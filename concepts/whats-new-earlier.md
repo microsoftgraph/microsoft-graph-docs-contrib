@@ -4,11 +4,429 @@ description: "Find information about previous additions and updates to Microsoft
 author: "lauragra"
 ms.localizationpriority: medium
 ms.date: 01/01/2025
+ms.custom: sfi-ga-nochange
+ms.topic: whats-new
 ---
 
 # Microsoft Graph what's new history
 
 Find information about previous additions and updates to Microsoft Graph APIs, documentation, SDKs, and other resources.
+
+## August 2025: New and generally available
+
+### Backup storage
+
+- Use the **offboardRequestedDateTime** property on [driveProtectionUnit](/graph/api/resources/driveprotectionunit), [mailboxProtectionUnit](/graph/api/resources/mailboxprotectionunit), and [siteProtectionUnit](/graph/api/resources/siteprotectionunit) to get the date and time when protection unit offboard was requested.
+- Added `offboardRequested`, `offboarded`, and `cancelOffboardRequested` as supported values for the **status** property of [driveProtectionUnit](/graph/api/resources/driveprotectionunit), [mailboxProtectionUnit](/graph/api/resources/mailboxprotectionunit), and [siteProtectionUnit](/graph/api/resources/siteprotectionunit).
+
+### Device and app management | Cloud PC
+
+Use the [resize](/graph/api/cloudpc-resize) operation of [cloudPC](/graph/api/resources/cloudpc) to upgrade or downgrade an existing Cloud PC to a configuration with a new virtual CPU (vCPU) and storage size.
+
+### Sites and lists
+
+Removed support for delegated permissions in the [List sites](/graph/api/site-list) and [site: delta](/graph/api/site-delta) APIs.
+
+### Teamwork and communications | Calls and online meetings
+
+- Use the **isInteractiveRosterEnabled** property on [incomingCallOptions](/graph/api/resources/incomingcalloptions) and [outgoingCallOptions](/graph/api/resources/outgoingcalloptions) to indicate whether delta roster filtering by participant interactivity is enabled.
+- Use the **outOfOfficeSettings** property on [presence](/graph/api/resources/presence) to get the out-of-office settings for a user.
+- Use the **sequenceNumber** property on [presence](/graph/api/resources/presence) to get the lexicographically sortable String stamp that represents the version of a **presence** object.
+- Use the **isEndToEndEncryptionEnabled** property on [onlineMeeting](/graph/api/resources/onlinemeeting) and [virtualEventSession](/graph/api/resources/virtualeventsession) to indicate whether end-to-end encryption (E2EE) is enabled for a meeting or virtual event session.
+
+## August 2025: New in preview only
+
+### Backup storage
+
+- Use the **isEnabled** property on [exchangeProtectionPolicy](/graph/api/resources/exchangeprotectionpolicy?view=graph-rest-beta&preserve-view=true), [oneDriveForBusinessProtectionPolicy](/graph/api/resources/onedriveforbusinessprotectionpolicy?view=graph-rest-beta&preserve-view=true), and [sharePointProtectionPolicy](/graph/api/resources/sharepointprotectionpolicy?view=graph-rest-beta&preserve-view=true) to get whether the policy is enabled.
+- Use the **protectionPolicyArtifactCount** property on [exchangeProtectionPolicy](/graph/api/resources/exchangeprotectionpolicy?view=graph-rest-beta&preserve-view=true), [oneDriveForBusinessProtectionPolicy](/graph/api/resources/onedriveforbusinessprotectionpolicy?view=graph-rest-beta&preserve-view=true), and [sharePointProtectionPolicy](/graph/api/resources/sharepointprotectionpolicy?view=graph-rest-beta&preserve-view=true) to get the count of artifacts in the protection policy by status.
+
+### Calendars | Places
+
+[Create](/graph/api/place-post?view=graph-rest-beta&preserve-view=true), [get descendants](/graph/api/place-descendants?view=graph-rest-beta&preserve-view=true), and [delete](/graph/api/place-delete?view=graph-rest-beta&preserve-view=true) a [place](/graph/api/resources/place?view=graph-rest-beta&preserve-view=true) and its derived objects (for example, [building](/graph/api/resources/building?view=graph-rest-beta&preserve-view=true), [desk](/graph/api/resources/desk?view=graph-rest-beta&preserve-view=true), [floor](/graph/api/resources/floor?view=graph-rest-beta&preserve-view=true), or [section](/graph/api/resources/section?view=graph-rest-beta&preserve-view=true)). These APIs enable scalable onboarding and management of the Places directory.
+
+### Device and app management | Cloud PC
+
+- Deprecated the `/deviceManagement/virtualEndpoint/cloudPCs/{cloudPCId}/getCloudPcLaunchInfo` endpoint in favor of delegated permission requests using either `/me/cloudPCs/{cloudPCId}/getCloudPcLaunchInfo` or `/users/{userId}/cloudPCs/{id}/getCloudPcLaunchInfo` in the [getCloudPcLaunchInfo](/graph/api/cloudpc-getcloudpclaunchinfo) method.
+- Use the **provisioningSourceType** property on [cloudPcUserSetting](/graph/api/resources/cloudpcusersetting?view=graph-rest-beta&preserve-view=true) to indicate the provisioning source of the Cloud PC prepared for an end user.
+
+### Files
+
+Learn how to [add an application permission to a driveItem in OneDrive or SharePoint Online](/graph/api/driveitem-post-permissions?view=graph-rest-beta&preserve-view=true#example-1-add-an-application-permission-to-a-driveitem-in-onedrive-or-sharepoint-online) and how to [add a SharePoint group permission to a driveItem in a SharePoint Embedded container](/graph/api/driveitem-post-permissions?view=graph-rest-beta&preserve-view=true#example-2-add-a-sharepoint-group-permission-to-a-driveitem-in-a-sharepoint-embedded-container).
+
+### Identity and access | Identity and sign-in
+
+The [federatedTokenValidationPolicy](/graph/api/resources/federatedtokenvalidationpolicy?view=graph-rest-beta&preserve-view=true) APIs now support management by lesser-privileged Microsoft Entra roles including Security Administrator, Hybrid Identity Administrator, and External Identity Provider Administrator roles, removing dependency on the Global Administrator role.
+
+### Mail
+
+Deprecated the [markAsJunk](/graph/api/message-markasjunk?view=graph-rest-beta&preserve-view=true) and [markAsNotJunk](/graph/api/message-markasnotjunk?view=graph-rest-beta&preserve-view=true) actions in favor of the [reportMessage](/graph/api/message-reportmessage?view=graph-rest-beta&preserve-view=true) API.
+
+### Security | Identities
+
+Added the [identityAccounts](/graph/api/resources/security-identityaccounts?view=graph-rest-beta&preserve-view=true) and its related methods that let you retrieve details of user accounts observed by Microsoft Defender for Identity and apply response actions such as disabling accounts and forcing password reset. 
+
+### Sites and lists
+
+Removed support for delegated permissions in the [List sites](/graph/api/site-list?view=graph-rest-beta&preserve-view=true) and [site: delta](/graph/api/site-delta?view=graph-rest-beta&preserve-view=true) APIs.
+
+### Teamwork and communications | Calls and online meetings
+
+Use the [adhocCall](/graph/api/resources/adhoccall?view=graph-rest-beta&preserve-view=true) resource to subscribe to transcripts and recordings at the tenant level, for a specific call, or per user. For more information, see [Get change notifications for transcripts and recordings using Microsoft Graph](/graph/teams-changenotifications-callrecording-and-calltranscript).
+
+### Terraform Templates for Microsoft Graph resources
+
+[Terraform templates for Microsoft Graph resources](/graph/templates/terraform/overview-terraform-for-graph) is now in preview. Using Terraform templates, you can deploy the following Microsoft Graph resources for your infrastructure as code (IaC) projects:
+
+- Applications
+- App role assignments
+- Federated identity credentials
+- Groups
+- OAuth2 permissions grants (delegated permissions grants)
+- Service principals
+- Users
+
+## July 2025: New and generally available
+
+### Bicep Templates for Microsoft Graph resources
+
+[Bicep templates for Microsoft Graph resources](https://aka.ms/graphbicep) is now generally available and supported in production environments, following the Microsoft APIs terms of use. Using Bicep templates, you can deploy the following Microsoft Graph resources for your infrastructure as code (IaC) projects:
+
+- Applications
+- App role assignments
+- Federated identity credentials
+- Groups
+- OAuth2 permissions grants (delegated permissions grants)
+- Service principals
+- Users
+
+### Education
+
+- [Get](/graph/api/reportsroot-list-readingassignmentsubmissions) a list of reading assignments that were submitted by a student.
+- [Get](/graph/api/reportsroot-list-reflectcheckinresponses) a list of Reflect check-ins that were submitted by a student.
+
+### Files
+
+Each fragment uploaded during an [upload session](/graph/api/resources/uploadsession) extends the expiration time.
+
+### Reports | Partner billing reports
+
+[Export](/graph/api/partners-billing-unbilledreconciliation-export) unbilled invoice reconciliation data.
+
+### Security
+
+Added the [resourceAccessEvent](/graph/api/resources/security-resourceaccessevent) resource as a property in [userAccount](/graph/api/resources/security-useraccount).
+
+### Security | eDiscovery
+
+- Added the **itemsToInclude**, **cloudAttachmentVersion**, **documentVersion**, **additionalDataOptions**, and **statisticsOptions** as supported properties and parameters across various resources and actions of the eDiscovery API.
+- Use the **reportFileMetadata** property on [ediscoveryAddToReviewSetOperation](/graph/api/resources/security-ediscoveryaddtoreviewsetoperation) and [ediscoveryEstimateOperation](/graph/api/resources/security-ediscoveryestimateoperation) to get the properties for report file metadata.
+
+### Teamwork and communications | Messaging
+
+[Send a message with a Loop component](/graph/api/chatmessage-post).
+
+## July 2025: New in preview only
+
+### Device and app management | Cloud PC
+
+- Use the **provisionedDateTime** property on [cloudPC](/graph/api/resources/cloudpc?view=graph-rest-beta&preserve-view=true) to get the latest provisioned date time of a Cloud PC or to filter Cloud PCs by the latest provisioned date time.
+- Use the **sharedDeviceDetail** property on [cloudPC](/graph/api/resources/cloudpc?view=graph-rest-beta&preserve-view=true) to get the Cloud PC device details (for example, **assignedToUserPrincipalName**) associated with the frontline shared service plan.
+- [Retrieve the Cloud PC count grouped by status](/graph/api/cloudpc-retrievecloudpccountbystatus?view=graph-rest-beta&preserve-view=true).
+- Enabled `retention` as a supported snapshot type for a [cloudPcSnapshot](/graph/api/resources/cloudpcsnapshot?view=graph-rest-beta&preserve-view=true).
+- Use the **sizeInGB** property on [cloudPcDeviceImage](/graph/api/resources/cloudpcdeviceimage?view=graph-rest-beta&preserve-view=true) to get the size of the image in GB.
+- Added [cloudPcBulkReinstallAgent](/graph/api/resources/cloudpcbulkreinstallagent?view=graph-rest-beta&preserve-view=true) as a new supported type for [cloudPcBulkAction](/graph/api/resources/cloudpcbulkaction?view=graph-rest-beta&preserve-view=true).
+- Added information about the columns in the returned report when you specify `inaccessibleCloudPcReports` or `regionalInaccessibleCloudPcTrendReport` for the **reportName** property in your [cloudPcReports: getInaccessibleCloudPcReports](/graph/api/cloudpcreports-getinaccessiblecloudpcreports?view=graph-rest-beta&preserve-view=true) request.
+- Added information about the columns in the returned report when you specify `regionalConnectionQualityTrendReport` for the **reportName** property in your [cloudPcReports: retrieveConnectionQualityReports](/graph/api/cloudpcreports-retrieveconnectionqualityreports?view=graph-rest-beta&preserve-view=true) request.
+- Use the new [cloudPcCloudApp](/graph/api/resources/cloudpccloudapp?view=graph-rest-beta&preserve-view=true) resource and its supported methods to provide Windows 365 end users with access to app-only sessions rather than a full desktop experience, which is built on frontline shared options.
+
+### Education
+
+- [Get](/graph/api/reportsroot-list-readingcoachpassages?view=graph-rest-beta&preserve-view=true) a list of Reading Coach passages that were practiced by a student.
+- Learn how to use Microsoft Graph to [create an assignment with a Speaker Progress resource](/graph/create-assignment-with-speaker-progress-resource).
+
+### Files
+
+- Each fragment uploaded during an [upload session](/graph/api/resources/uploadsession?view=graph-rest-beta&preserve-view=true) extends the expiration time.
+- Enabled [site](/graph/api/resources/site?view=graph-rest-beta&preserve-view=true) as a supported resource for the [create](/graph/api/opentypeextension-post-opentypeextension?view=graph-rest-beta&preserve-view=true), [get](/graph/api/opentypeextension-get?view=graph-rest-beta&preserve-view=true), [update](/graph/api/opentypeextension-update?view=graph-rest-beta&preserve-view=true), and [delete](/graph/api/opentypeextension-delete?view=graph-rest-beta&preserve-view=true) operations of the [openTypeExtension](/graph/api/resources/opentypeextension?view=graph-rest-beta&preserve-view=true) resource.
+- Use the following new resources and their methods to further support structured file storage in SharePoint Embedded applications:
+  - [fileStorageContainerType](/graph/api/resources/filestoragecontainertype?view=graph-rest-beta&preserve-view=true)
+  - [fileStorageContainerTypeAppPermissionGrant](/graph/api/resources/filestoragecontainertypeapppermissiongrant?view=graph-rest-beta&preserve-view=true)
+  - [fileStorageContainerTypeRegistration](/graph/api/resources/filestoragecontainertyperegistration?view=graph-rest-beta&preserve-view=true)
+
+### Identity and access | Identity and sign-in
+
+Retired the previously deprecated Microsoft Entra lifecycle announcements APIs that stopped returning data in May 2025. Use the [Microsoft Entra release notes RSS feed instead](/entra/fundamentals/whats-new).
+
+### Industry data ETL
+
+Deprecated the **markAllStudentsAsMinors** property on [additionalUserOptions](/graph/api/resources/industrydata-additionaluseroptions?view=graph-rest-beta&preserve-view=true) in favor of the **studentAgeGroup** property.
+
+### People and workplace intelligence | Profile
+
+Added user profile-related properties to the following resources: **costCenter** and **division** to [companyDetail](/graph/api/resources/companydetail?view=graph-rest-beta&preserve-view=true), **employeeId** and **employeeType** to [positionDetail](/graph/api/resources/positiondetail?view=graph-rest-beta&preserve-view=true), and **originTenantInfo** and **userPersona** to [userAccountInformation](/graph/api/resources/useraccountinformation?view=graph-rest-beta&preserve-view=true).
+
+### Security | eDiscovery
+
+Use the **reportFileMetadata** property on [ediscoveryAddToReviewSetOperation](/graph/api/resources/security-ediscoveryaddtoreviewsetoperation?view=graph-rest-beta&preserve-view=true) and [ediscoveryEstimateOperation](/graph/api/resources/security-ediscoveryestimateoperation?view=graph-rest-beta&preserve-view=true) to get the properties for report file metadata.
+
+### Teamwork and communications | Messaging
+
+- Added support for channel membership subscriptions to receive [indirect membership change notifications](../concepts/teams-changenotifications-teammembership.md) for shared channels. 
+- Introduced a new change notification for shared channel membership when a channel is [shared with or unshared from a team](../concepts/teams-changenotifications-teammembership.md).
+- Use the **originalSourceMembershipUrl** annotation with the [List allMembers](/graph/api/channel-list-allmembers?view=graph-rest-beta&preserve-view=true) API to identify the source of a member's membership and distinguish between direct and indirect members.
+
+## June 2025: New and generally available
+
+### Device and app management | Cloud PC
+
+New rate limits apply to Cloud PC APIs. The [List Cloud PCs](/graph/api/virtualendpoint-list-cloudpcs) API is now limited to 180 requests per minute per tenant and 162 requests per minute per app or user. The [Get Cloud PC](/graph/api/cloudpc-get) API is limited to 540 requests per minute per tenant and 486 requests per minute per app or user. For more information, see [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#windows-365-service-limits).
+
+### Identity and access | Directory management
+
+- Use the **isManagementRestricted** property on [device](/graph/api/resources/device), [group](/graph/api/resources/group), and [user](/graph/api/resources/user) resources to indicate  whether a device, group, or user is a member of a restricted management administrative unit.
+- Use the **isMemberManagementRestricted** property on [administrativeUnit](/graph/api/resources/administrativeunit) to indicate whether members of an administrative unit should be treated as sensitive.
+
+### Security | eDiscovery
+
+- Use the **description** property on [ediscoveryReviewSet](/graph/api/resources/security-ediscoveryreviewset) to get or set the eDiscovery review set description.
+- [Update](/graph/api/security-ediscoveryreviewset-update) the **displayName** and **description** of an [ediscoveryReviewSet](/graph/api/resources/security-ediscoveryreviewset).
+
+### Teamwork and communications | Calls and online meetings
+
+- [Get](/graph/api/copilotadminlimitedmode-get) or [set](/graph/api/copilotadminlimitedmode-update) whether users of Microsoft 365 Copilot in Teams meetings can receive responses to sentiment-related prompts.
+- [Get a webinar registration by ID and include sessions](/graph/api/virtualeventregistration-get#example-2-get-a-webinar-registration-by-ID-and-include-sessions)
+- Use the new Teams meeting AI insights APIs to get AI-generated insights for a meeting after it's over. For more information, see [callAiInsight](/graph/api/resources/callaiinsight?view=graph-rest-beta&preserve-view=true).
+- [Get a webinar registration by ID and include sessions](/graph/api/virtualeventregistration-get?view=graph-rest-beta&preserve-view=true#example-2-get-a-webinar-registration-by-ID-and-include-sessions)
+- Use the **videoOnDemandWebUrl** on [virtualEventSession](/graph/api/resources/virtualeventsession) to get the [URL of the video on demand (VOD)](/microsoftteams/manage-vod-publishing) for Microsoft Teams events that allows webinar and town hall organizers to quickly publish and share event recordings.
+
+### Teamwork and communications | Messaging
+
+- Updated the throttling information for [getAllEnterpriseInteractions](/graph/api/aiinteractionhistory-getallenterpriseinteractions). The limit per app per tenant changed from 200 requests per second to 30 requests per second. The limit per app across all tenants increased from 1,000 requests per second to 1,500 requests per second.
+- Use the **iconId** property on the [teamwork: sendActivityNotificationToRecipients](/graph/api/teamwork-sendactivitynotificationtorecipients), [userTeamwork: sendActivityNotification](/graph/api/userteamwork-sendactivitynotification), [chat: sendActivityNotification](/graph/api/chat-sendactivitynotification), and [team: sendActivityNotification](/graph/api/team-sendactivitynotification) to send activity notifications with customized icons.
+
+### Teamwork and communications | Shift management
+
+Deprecated the `MS-APP-ACTS-AS` request header for all operations of the resources: [offerShiftRequest](/graph/api/resources/offershiftrequest), [openShift](/graph/api/resources/openshift), [openShiftChangeRequest](/graph/api/resources/openshiftchangerequest), [schedule](/graph/api/resources/schedule), [schedulingGroup](/graph/api/resources/schedulinggroup), [shift](/graph/api/resources/shift), [shiftPreferences](/graph/api/resources/shiftpreferences), [shiftsRoleDefinition](/graph/api/resources/shiftsroledefinition), [swapShiftsChangeRequest](/graph/api/resources/swapshiftschangerequest), [timeCard](/graph/api/resources/timecard), [timeOff](/graph/api/resources/timeoff), [timeOffReason](/graph/api/resources/timeoffreason), [timeOffRequest](/graph/api/resources/timeoffrequest), and [workforceIntegration](/graph/api/resources/workforceintegration). This header was also deprecated for the [changeTrackedEntity: stageForDeletion](/graph/api/changetrackedentity-stagefordeletion) method.
+
+## June 2025: New in preview only
+
+### Backup storage
+
+[Get](/graph/api/emailnotificationssetting-get?view=graph-rest-beta&preserve-view=true) or [update](/graph/api/emailnotificationssetting-update?view=graph-rest-beta&preserve-view=true) email notification settings in a tenant.
+
+### Device and app management | Device updates
+
+Enabled [remediationUpdateFilter](/graph/api/resources/windowsupdates-remediationupdatefilter?view=graph-rest-beta&preserve-view=true) as a supported value for the **contentFilter** property of the [contentApprovalRule](/graph/api/resources/windowsupdates-contentapprovalrule?view=graph-rest-beta&preserve-view=true) resource. Use the [remediationUpdateFilter](/graph/api/resources/windowsupdates-remediationupdatefilter?view=graph-rest-beta&preserve-view=true) to determine which remediation update content matches the rule continuously.
+
+### Education
+
+[Get](/graph/api/reportsroot-list-speakerassignmentsubmissions?view=graph-rest-beta&preserve-view=true) a list of speaker assignments that were submitted by a student.
+
+### Employee experience | Employee engagement
+
+Use the [onlineMeetingEngagementConversation](/graph/api/resources/onlinemeetingengagementconversation?view=graph-rest-beta&preserve-view=true) APIs to [get all Teams question and answer (Q&A) conversation messages in a tenant](/graph/api/cloudcommunications-getallonlinemeetingmessages?view=graph-rest-beta&preserve-view=true) and [list reactions](/graph/api/engagementconversationdiscussionmessage-list-reactions?view=graph-rest-beta&preserve-view=true) in an online meeting.
+
+### Security | eDiscovery
+
+- Use the **description** property on [ediscoveryReviewSet](/graph/api/resources/security-ediscoveryreviewset?view=graph-rest-beta&preserve-view=true) to get or set the eDiscovery review set description.
+- [Update](/graph/api/security-ediscoveryreviewset-update?view=graph-rest-beta&preserve-view=true) the **displayName** and **description** of an [ediscoveryReviewSet](/graph/api/resources/security-ediscoveryreviewset?view=graph-rest-beta&preserve-view=true).
+
+### Teamwork and communications | Apps
+
+Use the **customAppSettings** property on [teamsAppSettings](/graph/api/resources/teamsappsettings?view=graph-rest-beta&preserve-view=true) to get or set tenant-wide custom app settings for all Microsoft Teams apps.
+
+### Teamwork and communications | Messaging
+
+Added [phoneUserConversationMember](/graph/api/resources/phoneuserconversationmember?view=graph-rest-beta&preserve-view=true) as a supported conversation member type.
+
+### Teamwork and communications | Shift management
+
+Deprecated the `MS-APP-ACTS-AS` request header for all operations of the resources: [offerShiftRequest](/graph/api/resources/offershiftrequest?view=graph-rest-beta&preserve-view=true), [openShift](/graph/api/resources/openshift?view=graph-rest-beta&preserve-view=true), [openShiftChangeRequest](/graph/api/resources/openshiftchangerequest?view=graph-rest-beta&preserve-view=true), [schedule](/graph/api/resources/schedule?view=graph-rest-beta&preserve-view=true), [schedulingGroup](/graph/api/resources/schedulinggroup?view=graph-rest-beta&preserve-view=true), [shift](/graph/api/resources/shift?view=graph-rest-beta&preserve-view=true), [shiftPreferences](/graph/api/resources/shiftpreferences?view=graph-rest-beta&preserve-view=true), [shiftsRoleDefinition](/graph/api/resources/shiftsroledefinition?view=graph-rest-beta&preserve-view=true), [swapShiftsChangeRequest](/graph/api/resources/swapshiftschangerequest?view=graph-rest-beta&preserve-view=true), [timeCard](/graph/api/resources/timecard?view=graph-rest-beta&preserve-view=true), [timeOff](/graph/api/resources/timeoff?view=graph-rest-beta&preserve-view=true), [timeOffReason](/graph/api/resources/timeoffreason?view=graph-rest-beta&preserve-view=true), [timeOffRequest](/graph/api/resources/timeoffrequest?view=graph-rest-beta&preserve-view=true), and [workforceIntegration](/graph/api/resources/workforceintegration?view=graph-rest-beta&preserve-view=true). This header was also deprecated for the [changeTrackedEntity: stageForDeletion](/graph/api/changetrackedentity-stagefordeletion?view=graph-rest-beta&preserve-view=true) method.
+
+## May 2025: New and generally available
+
+### Backup storage
+
+- [Restore sessions](/graph/api/resources/restoresessionbase) and [restore artifacts](/graph/api/resources/restoreartifactbase) that are older than one year and in a terminal state are removed.
+- Use the new restore bulk addition request API for more convenient, efficient, and scalable restore solutions. This API is designed to streamline the restore process by allowing direct submission of restoration resources in a bulk request. The following resources are supported:
+  - [driveRestoreArtifactsBulkAdditionRequest](/graph/api/resources/driverestoreartifactsbulkadditionrequest)
+  - [mailboxRestoreArtifactsBulkAdditionRequest](/graph/api/resources/mailboxrestoreartifactsbulkadditionrequest)
+  - [siteRestoreArtifactsBulkAdditionRequest](/graph/api/resources/siterestoreartifactsbulkadditionrequest)
+
+### Calendars
+
+Use the **cancelledOccurrences** property and **exceptionOccurrences** navigation property on [event](/graph/api/resources/event) to get a list of canceled and exceptional occurrences for a series master.
+
+### Change notifications
+
+Added [video-on-demand publication for all sessions in a webinar](/graph/changenotifications-for-virtualevent) as a subscribable virtual event.
+
+### Security
+
+Added `microsoftThreatIntelligence` as a supported detection source for the **detectionSource** and **serviceSource** properties of the [alert](/graph/api/resources/security-alert) resource.
+
+### Teamwork and communications | AI interactions
+
+Use the [getAllEnterpriseInteractions](/microsoft-365-copilot/extensibility/api/ai-services/interaction-export/aiinteractionhistory-getallenterpriseinteractions?pivots=graph-v1) method to get Microsoft 365 Copilot interaction data, including user prompts to Copilot and Copilot responses.
+
+### Teamwork and communications | Calls and online meetings
+
+- [Get](/graph/api/copilotadminlimitedmode-get) or [set](/graph/api/copilotadminlimitedmode-update) whether users of Microsoft 365 Copilot in Teams meetings can receive responses to sentiment-related prompts.
+- Get [all attendance reports](/graph/api/meetingattendancereport-list#example-3-list-attendance-reports-for-a-town-hall-session) or [an attendance report by ID](/graph/api/meetingattendancereport-get#example-3-get-the-attendance-report-for-a-town-hall-session-by-id) for a town hall session.
+- Get [all attendance records](/graph/api/attendancerecord-list#example-3-list-attendance-records-for-the-attendance-report-of-a-town-hall-session) from the attendance report for a town hall session.
+
+## May 2025: New in preview only
+
+### Backup storage
+
+[Restore sessions](/graph/api/resources/restoresessionbase?view=graph-rest-beta&preserve-view=true) and [restore artifacts](/graph/api/resources/restoreartifactbase?view=graph-rest-beta&preserve-view=true) that are older than one year and in a terminal state are removed.
+
+### Device and app management | Cloud PC
+
+- Added **resourceAvailabilityCheckMissingRegistrationForLocation** as a possible error type for the [cloudPcOnPremisesConnectionHealthCheck](/graph/api/resources/cloudpconpremisesconnectionhealthcheck?view=graph-rest-beta&preserve-view=true).
+- Deprecated the [getCloudPcRecommendationReports](/graph/api/cloudpcreports-getcloudpcrecommendationreports?view=graph-rest-beta&preserve-view=true) method of the [cloudPcReports](/graph/api/resources/cloudpcreports?view=graph-rest-beta&preserve-view=true) resource in favor of the [retrieveCloudPcRecommendationReports](/graph/api/cloudpcreports-retrievecloudpcrecommendationreports?view=graph-rest-beta&preserve-view=true) method.
+
+### Education
+
+- Use the [educationSpeakerProgressResource](/graph/api/resources/educationspeakerprogressresource?view=graph-rest-beta&preserve-view=true) to help students gain confidence and reduce anxiety with AI-powered real-time feedback on public speaking skills, such as pace, pitch, and filler words. Speaker Progress also saves educators time and creates more opportunities for independent practice during in-class presentations.
+- Use the **languageTag** property on [educationAssignment](/graph/api/resources/educationassignment?view=graph-rest-beta&preserve-view=true) and [educationModule](/graph/api/resources/educationModule?view=graph-rest-beta&preserve-view=true) to specify the language in which UI notifications for an assignment are displayed.
+- Use the **grade** property on [educationAssignmentPointsGrade](/graph/api/resources/educationassignmentpointsgrade?view=graph-rest-beta&preserve-view=true) to get the grade letter from the [grading scheme](/graph/api/resources/educationgradingscheme?view=graph-rest-beta&preserve-view=true) that corresponds to the given number of points.
+- Use the [educationSpeakerProgressResource](/graph/api/resources/educationspeakerprogressresource?view=graph-rest-beta&preserve-view=true) to help students gain confidence and reduce anxiety with AI-powered real-time feedback on public speaking skills, such as pace, pitch, and filler words. Speaker Progress also saves educators time and creates more opportunities for independent practice during in-class presentations.
+
+### Files
+
+- [Delete](/graph/api/recyclebinitem-delete?view=graph-rest-beta&preserve-view=true) recycle bin items permanently from the recycle bin of a file storage container.
+- [Restore](/graph/api/recyclebinitem-restore?view=graph-rest-beta&preserve-view=true) recycle bin items from the recycle bin of a file storage container.
+
+### People and workplace intelligence | People admin settings
+
+Use the new [profileSource](/graph/api/resources/profilesource?view=graph-rest-beta&preserve-view=true) APIs to enable administrators to customize the display information of a profile source seen by users across an organization in Microsoft 365 experiences.
+
+### Identity and access | Multicloud permissions management
+
+Effective April 1, 2025, Microsoft Entra Permissions Management APIs are deprecated. On October 1, 2025, we'll retire and discontinue support of the APIs. For more information, see [Important change announcement: Microsoft Entra Permissions Management end of sale and retirement](https://aka.ms/MEPMretire).
+
+### People and workplace intelligence | People admin settings
+
+Use the new [profilePropertySetting](/graph/api/resources/profilepropertysetting?view=graph-rest-beta&preserve-view=true) APIs to configure profile source precedence, ensuring accurate display of profile data across Microsoft 365 experiences based on configured priorities.
+
+### Security
+
+- Added the `aiModelProvider`, `mcpServer`, and `clientAiApp` members as supported values of the **category** property of the [discoveredCloudAppDetail](/graph/api/resources/security-discoveredcloudappdetail?view=graph-rest-beta&preserve-view=true) and [endpointDiscoveredCloudAppDetail](/graph/api/resources/security-endpointdiscoveredcloudappdetail?view=graph-rest-beta&preserve-view=true) resources.
+- Added `microsoftThreatIntelligence` as a supported detection source for the **detectionSource** and **serviceSource** properties of the [alert](/graph/api/resources/security-alert?view=graph-rest-beta&preserve-view=true) resource.
+
+### Teamwork and communications
+
+[Add custom activity icons in activity feed notifications](/graph/teams-send-activityfeednotifications).
+
+### Teamwork and communications | Calls and online meetings
+
+Use the new Teams meeting AI insights APIs to get AI-generated insights for a meeting after it's over. For more information, see [callAiInsight](/graph/api/resources/callaiinsight?view=graph-rest-beta&preserve-view=true).
+
+### Teamwork and communications | Messaging
+
+- Added support for the `$filter` query parameter by Microsoft Entra user ID when you list channel members using the [List allMembers](/graph/api/channel-list-allmembers?view=graph-rest-beta&preserve-view=true) API.
+- [Determine](/graph/api/teamwork-determineifinteractionisallowed?view=graph-rest-beta&preserve-view=true) if a specified Microsoft Teams interaction is allowed between the signed-in user and specified users.
+
+### Teamwork and communications | Shift management
+
+- [Confirm](/graph/api/timecard-confirmforuser?view=graph-rest-beta&preserve-view=true) a specific [timeCard](/graph/api/resources/timecard?view=graph-rest-beta&preserve-view=true) for a user.
+- [Approve](/graph/api/schedulechangerequest-approveforuser?view=graph-rest-beta&preserve-view=true) or [decline](/graph/api/schedulechangerequest-declineforuser?view=graph-rest-beta&preserve-view=true) an [offerShiftRequest](/graph/api/resources/offershiftrequest?view=graph-rest-beta&preserve-view=true), [openShiftChangeRequest](/graph/api//resources/openshiftchangerequest?view=graph-rest-beta&preserve-view=true), [swapShiftsChangeRequest](/graph/api/resources/swapshiftschangerequest?view=graph-rest-beta&preserve-view=true), or [timeOffRequest](/graph/api/resources/timeoffrequest?view=graph-rest-beta&preserve-view=true) object for a user using application permissions.
+
+## April 2025: New and generally available
+
+### Education
+
+[Get submissions modified in the last seven days](/graph/api/educationclass-getrecentlymodifiedsubmissions), which represent students' work for assignments.
+
+### Identity and access | Identity and sign-in
+
+Use the following supported attribute events:
+
+- Authentication event listeners
+  - [onAttributeCollectionStartListener](/graph/api/resources/onattributecollectionstartlistener)
+  - [onAttributeCollectionSubmitListener](/graph/api/resources/onattributecollectionsubmitlistener)
+- Custom authentication extensions
+  - [onAttributeCollectionStartCustomExtension](/graph/api/resources/onattributecollectionstartcustomextension)
+  - [onAttributeCollectionSubmitCustomExtension](/graph/api/resources/onattributecollectionsubmitcustomextension)
+- User flows in external tenants
+  - [onAttributeCollectionStartCustomExtensionHandler](/graph/api/resources/onattributecollectionstartcustomextensionhandler)
+  - [onAttributeCollectionStartHandler](/graph/api/resources/onattributecollectionstarthandler)
+  - [onAttributeCollectionSubmitCustomExtensionHandler](/graph/api/resources/onattributecollectionsubmitcustomextensionhandler)
+  - [onAttributeCollectionSubmitHandler](/graph/api/resources/onattributecollectionsubmithandler)
+
+### Teamwork and communications | Calls and online meetings
+
+- Use the **externalRegistrationInformation** and **registrationId** properties on [attendanceRecord](/graph/api/resources/attendancerecord) to get external information for an event registration and the unique identifier of an event registration that is available to all participants registered for the webinar.
+- Use the **externalEventInformation** on [meetingAttendanceReport](/graph/api/resources/meetingattendancereport) to get the external information of a virtual event.
+- The **basicServiceSetIdentifier** property on [networkInfo](/graph/api/resources/callrecords-networkinfo) isn't available if the user disables precise location sharing in their operating system or Microsoft Teams app settings.
+- Known issues related to application identities and missing participants are associated with [List participants_v2](/graph/api/callrecords-callrecord-list-participants_v2) and [participant](/graph/api/resources/callrecords-participant).
+- Updated the throttling information for [virtualEvent](/graph/api/resources/virtualevent). You can now perform 750 `GET` requests per app across all tenants in a 30-second period, and 15 `Create`, `Update`, and `Delete` requests per app across all tenants in a 30-second period, instead of the 10,000 requests per app each month.
+
+## April 2025: New in preview only
+
+### Cross-device experiences
+
+[Delete](/graph/api/windowssetting-delete?view=graph-rest-beta&preserve-view=true) all [windowsSetting](/graph/api/resources/windowssetting?view=graph-rest-beta&preserve-view=true) objects of a user.
+
+### Device and app management | Cloud licensing
+
+Updated the permissions for the [List usageRights for user](/graph/api/cloudlicensing-groupcloudlicensing-list-usagerights?view=graph-rest-beta&preserve-view=true) and [Get usageRight](/graph/api/cloudlicensing-usageright-get?view=graph-rest-beta&preserve-view=true) APIs.
+
+### Device and app management | Cloud PC
+
+Use the new **groupBy** parameter in the [retrieveCloudPcTroubleshootReports](/graph/api/cloudpcreports-retrievecloudpctroubleshootreports?view=graph-rest-beta&preserve-view=true) method to specify the columns that define how to group the data in the report.
+
+### Files
+
+Added the `forceInfectedDownload` as a supported prefer header to the [Get content](/graph/api/driveitem-get-content?view=graph-rest-beta&preserve-view=true) and [Get contentStream](/graph/api/driveitem-get-contentstream?view=graph-rest-beta&preserve-view=true) methods to enable the download of infected files when specifically requested.
+
+### Identity and access | Identity and sign-in
+
+Added [onAttributeCollectionStartListener](/graph/api/resources/onattributecollectionstartlistener?view=graph-rest-beta&preserve-view=true) and [onAttributeCollectionSubmitListener](/graph/api/resources/onattributecollectionsubmitlistener?view=graph-rest-beta&preserve-view=true) as supported [authenticationEventListener](/graph/api/resources/authenticationeventlistener?view=graph-rest-beta&preserve-view=true).
+
+### Reports | Identity and access reports
+
+Use the [serviceActivity: getMetricsForConditionalAccessBlockedSignIn](/graph/api/serviceactivity-getmetricsforconditionalaccessblockedsignin?view=graph-rest-beta&preserve-view=true) to get the number of user sign-in attempts that were blocked by a Conditional Access policy during a specific period.
+
+### Reports | Microsoft 365 usage reports
+
+Use the [getApiUsage](/graph/api/reportroot-getapiusage?view=graph-rest-beta&preserve-view=true) API to get the tenant-level daily API usage report that provides information about active Microsoft Graph API usage across specific service areas (Microsoft Exchange, Microsoft Teams Messaging, Microsoft Teams Calling, or Microsoft Teams Presence) or all supported service areas.
+
+### Reports | Partner billing reports
+
+[Export](/graph/api/partners-billing-unbilledreconciliation-export?view=graph-rest-beta&preserve-view=true) unbilled invoice reconciliation data.
+
+### Security | Data security and compliance
+
+The data security and governance APIs allow developers to seamlessly incorporate the protection provided by Purview, essential for retrieval-augmented generation (RAG) applications, line of business (LOB) applications, and systems handling sensitive data. These APIs provide programmatic access to the policy evaluation engine of Purview, ensuring consistent data security and governance enforcement across various applications. For more information, see [dataSecurityAndGovernance](/graph/api/resources/userdatasecurityandgovernance).
+
+### Tasks and plans
+
+Use the [plannerTask](/graph/api/resources/planner-overview?view=graph-rest-beta&preserve-view=true#container-type-planner-task) container type to create a new plan in the container of a Planner task.
+
+### Teamwork and communications | Administration
+
+[Get](/graph/api/teamsadministration-teamsuserconfiguration-get?view=graph-rest-beta&preserve-view=true) or [list](/graph/api/teamsadministration-teamsadminroot-list-userconfigurations?view=graph-rest-beta&preserve-view=true) user configurations for users with accounts in the Teams context.
+
+### Teamwork and communications | Calls and online meetings
+
+- The **basicServiceSetIdentifier** property on [networkInfo](/graph/api/resources/callrecords-networkinfo?view=graph-rest-beta&preserve-view=true) isn't available if the user disables precise location sharing in their operating system or Microsoft Teams app settings.
+- Known issues related to application identities and missing participants are associated with [List participants_v2](/graph/api/callrecords-callrecord-list-participants_v2?view=graph-rest-beta&preserve-view=true) and [participant](/graph/api/resources/callrecords-participant?view=graph-rest-beta&preserve-view=true).
+- Updated the throttling information for [virtualEvent](/graph/api/resources/virtualevent?view=graph-rest-beta&preserve-view=true). You can now perform 750 `GET` requests per app across all tenants in a 30-second period, and 15 `Create`, `Update`, and `Delete` requests per app across all tenants in a 30-second period, instead of the 10,000 requests per app each month.
+- Get [all attendance reports](/graph/api/meetingattendancereport-list?view=graph-rest-beta&preserve-view=true#example-3-list-attendance-reports-for-a-town-hall-session) or [an attendance report by ID](/graph/api/meetingattendancereport-get?view=graph-rest-beta&preserve-view=true#example-4-get-the-attendance-report-for-a-town-hall-session-by-id) for a town hall session.
+- Get [all attendance records](/graph/api/attendancerecord-list?view=graph-rest-beta&preserve-view=true#example-4-list-attendance-records-for-the-attendance-report-of-a-town-hall-session) from the attendance report for a town hall session.
+- Use the **isInteractiveRosterEnabled** property on [incomingCallOptions](/graph/api/resources/incomingcalloptions?view=graph-rest-beta&preserve-view=true) and [outgoingCallOptions](/graph/api/resources/outgoingcalloptions?view=graph-rest-beta&preserve-view=true) to indicate whether delta roster filtering by participant interactivity is enabled.
+Use the **videoOnDemandWebUrl** property on [virtualEventSession](/graph/api/resources/virtualeventsession?view=graph-rest-beta&preserve-view=true), which provide the URL of the video on demand (VOD) for Microsoft Teams events that allows webinar and town hall organizers to quickly publish and share event recordings.
+
+### Teamwork and communications | Messaging
+
+Use the **iconId** property on the [teamwork: sendActivityNotificationToRecipients](/graph/api/teamwork-sendactivitynotificationtorecipients?view=graph-rest-beta&preserve-view=true), [userTeamwork: sendActivityNotification](/graph/api/userteamwork-sendactivitynotification?view=graph-rest-beta&preserve-view=true), [chat: sendActivityNotification](/graph/api/chat-sendactivitynotification?view=graph-rest-beta&preserve-view=true), and [team: sendActivityNotification](/graph/api/team-sendactivitynotification?view=graph-rest-beta&preserve-view=true) to send activity notifications with customized icons.
+
+### Security
+
+Added the **customDetails** property to the security alert resource, a dictionary with user-defined key-value pairs. It can be used with the [Get](/graph/api/resources/security-alert) method.
 
 ## March 2025: New and generally available
 
@@ -27,9 +445,9 @@ Use the **autopatch** property on [cloudPcProvisioningPolicy](/graph/api/resourc
 ### Identity and access | Identity and sign-in
 
 - Deprecated the following resources and their associated APIs that support the Microsoft Entra lifecycle announcements APIs. The APIs will stop returning data in May 2025. Use the [Microsoft Entra release notes RSS feed instead](/entra/fundamentals/whats-new).
-  - [announcement](/graph/api/resources/announcement)
-  - [changeItemBase](/graph/api/resources/changeitembase)
-  - [roadmap](/graph/api/resources/roadmap)
+  - **announcement**
+  - **changeItemBase**
+  - **roadmap**
 - Use the **applicationFilter** property on [conditionalAccessApplications](/graph/api/resources/conditionalaccessapplications) to define the dynamic-application-syntax rule to include or exclude cloud applications.
 
 ### Microsoft Graph connector
@@ -68,7 +486,7 @@ Updated the Microsoft Entra built-in role required to [perform a new bulk upload
 - Use the **reportName** parameter on the [cloudPcReports: retrieveCrossRegionDisasterRecoveryReport](/graph/api/cloudpcreports-retrievecrossregiondisasterrecoveryreport?view=graph-rest-beta&preserve-view=true) method to get the name of the Cloud PC disaster recovery report.
 - Added the enabledDRType, dRHealthStatus, and backupCloudPcStatus as supported columns for the [cloudPcReports: retrieveCrossRegionDisasterRecoveryReport](/graph/api/cloudpcreports-retrievecrossregiondisasterrecoveryreport?view=graph-rest-beta&preserve-view=true) method and removed the isCrossRegionEnabled and crossRegionHealthStatus columns from the report.
 - Perform a bulk disaster [recovery](/graph/api/resources/cloudpcbulkdisasterrecovery?view=graph-rest-beta&preserve-view=true) action to initiate the failover or failback process for a Cloud PC.
-- Use the **regionRestrictionDetail** property on [cloudPcSupportedRegion](/graph/api/resources/cloudpcsupportedregion?view=graph-rest-beta&preserve-view=true) to get the restriction status of a Cloud PC supported region, including the CPU provisioning status, GPU provisioning status, and nested virtualization provisioning status. 
+- Use the **regionRestrictionDetail** property on [cloudPcSupportedRegion](/graph/api/resources/cloudpcsupportedregion?view=graph-rest-beta&preserve-view=true) to get the restriction status of a Cloud PC supported region, including the CPU provisioning status, GPU provisioning status, and nested virtualization provisioning status.
 
 ### Files
 
@@ -80,7 +498,7 @@ Updated the Microsoft Entra built-in role required to [perform a new bulk upload
 - [Get](/graph/api/mailfolderoperation-get?view=graph-rest-beta&preserve-view=true) or [list](/graph/api/mailfolder-list-operations?view=graph-rest-beta&preserve-view=true) long-running operations of a [mailFolder](/graph/api/resources/mailfolder?view=graph-rest-beta&preserve-view=true).
 - [Update](/graph/api/mailfolder-updateallmessagesreadstate?view=graph-rest-beta&preserve-view=true) the read state of all messages in a [mailFolder](/graph/api/resources/mailfolder?view=graph-rest-beta&preserve-view=true).
 
-### Reports | Identity and access reports 
+### Reports | Identity and access reports
 
 Use the **linkableIdentifiers** property on [auditActivityInitiator](/graph/api/resources/auditactivityinitiator?view=graph-rest-beta&preserve-view=true) resource to get a set of linkable claims to link together all the authentication artifacts issued from a single interactive root authentication.
 
@@ -109,7 +527,7 @@ Use the **publicationName** property on [plannerTeamsPublicationInfo](/graph/api
   - [chat: sendActivityNotification](/graph/api/chat-sendactivitynotification?view=graph-rest-beta&preserve-view=true)
 - Use the `<codeblock><code></code></codeblock>` tag on the **content** property of the [itemBody](/graph/api/resources/itembody?view=graph-rest-beta&preserve-view=true) resource to represent a code block in the message body in a [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta&preserve-view=true)
 
-## February 2025: New and generally available 
+## February 2025: New and generally available
 
 ### Device and app management | Cloud printing
 
@@ -142,7 +560,7 @@ Enabled the `$filter` query parameter for the [list](/graph/api/listitem-list) o
 - [Create](/graph/api/chat-post#example-4-create-a-one-on-one-chat-with-rsc-granted-apps) a one-on-one chat with RSC-granted apps.
 - [Get](/graph/api/channel-list-allmembers) all members from a channel, including direct and indirect members of a shared channel.
 
-## February 2025: New in preview only 
+## February 2025: New in preview only
 
 ### Backup storage
 
@@ -200,7 +618,7 @@ Enabled the `$filter` query parameter for the [list](/graph/api/listitem-list?vi
   - Use the `ChannelMember.Read.Group` and `ChannelMember.ReadWrite.Group` application permissions for resource-specific consent.
 - [Create](/graph/api/chat-post?view=graph-rest-beta&preserve-view=true#example-4-create-a-one-on-one-chat-with-rsc-granted-apps) a one-on-one chat with RSC-granted apps.
 
-## January 2025: New and generally available 
+## January 2025: New and generally available
 
 ### Files
 
@@ -227,7 +645,7 @@ You can now deploy the user resource in a Bicep template for your infrastructure
 - [Get](/graph/api/chatmessage-get#example-6-get-a-chat-message-with-a-forwarded-message) a chat message that has a forwarded message as an attachment.
 - Use the **isHiddenForAllMembers** property to indicate whether a [chat](/graph/api/resources/chat) is hidden from all its members.
 
-## January 2025: New in preview only 
+## January 2025: New in preview only
 
 ### Change notifications
 
@@ -345,7 +763,7 @@ While [restoring soft-deleted users](/graph/api/directory-deleteditems-restore?v
 
 ### Identity and access | Identity and sign-in
 
-- Use Microsoft Graph APIs to stay informed about the latest [product updates](/graph/api/resources/changeitembase?view=graph-rest-beta&preserve-view=true), including the [product roadmap](/graph/api/resources/roadmap?view=graph-rest-beta&preserve-view=true) and [change announcements](/graph/api/resources/announcement?view=graph-rest-beta&preserve-view=true), the programmatic alternative to the *What's new* tab on the Microsoft Entra admin center.
+- Use Microsoft Graph APIs to stay informed about the latest Microsoft Entra product updates, including the product roadmap and change announcements, the programmatic alternative to the *What's new* tab on the [Microsoft Entra admin center](https://entra.microsoft.com).
 - You can now manage hardware OATH tokens for your organization and users programmatically via the following Microsoft Graph APIs:
   - [hardwareOathTokenAuthenticationMethodDevice resource type and its associated methods](/graph/api/resources/hardwareoathtokenauthenticationmethoddevice?view=graph-rest-beta&preserve-view=true) to manage the hardware tokens in your tenant, including assigning to users
   - [hardwareOathAuthenticationMethod resource type and its associated methods](/graph/api/resources/hardwareoathauthenticationmethod?view=graph-rest-beta&preserve-view=true) to manage tokens that are already assigned to users by activating or deactivating them
@@ -424,7 +842,7 @@ Use the **administrativeUnitInfos** property on [participant](/graph/api/resourc
 
 List, create, get, update, and delete [fqdnFilteringRule](/graph/api/resources/networkaccess-fqdnfilteringrule?view=graph-rest-beta&preserve-view=true) and [webCategoryFilteringRule](/graph/api/resources/networkaccess-webcategoryfilteringrule?view=graph-rest-beta&preserve-view=true) resources that are derived types of [filteringRule](/graph/api/resources/networkaccess-filteringrule?view=graph-rest-beta&preserve-view=true).
 
-### Reports | Identity and access reports 
+### Reports | Identity and access reports
 
 Use the **sessionId** property on [signIn](/graph/api/resources/signin?view=graph-rest-beta&preserve-view=true) to get the identifier of the session that was generated during a sign-in.
 
@@ -446,7 +864,7 @@ Added application authentication for Microsoft Purview eDiscovery Graph APIs. Fo
 
 ### Teamwork and communications | AI interactions
 
-Use the [getAllEnterpriseInteractions](/graph/api/aiinteractionhistory-getallenterpriseinteractions) method to get Microsoft 365 Copilot interaction data, including user prompts to Copilot and Copilot responses. 
+Use the [getAllEnterpriseInteractions](/microsoft-365-copilot/extensibility/api/ai-services/interaction-export/aiinteractionhistory-getallenterpriseinteractions?pivots=graph-preview) method to get Microsoft 365 Copilot interaction data, including user prompts to Copilot and Copilot responses.
 
 ### Teamwork and communications | Calls and online meetings
 
@@ -509,7 +927,7 @@ Added new endpoints for bulk addition of protection units into a protection poli
 
 - [Create mailboxProtectionUnitsBulkAdditionJob](/graph/api/mailboxprotectionunitsbulkadditionjobs-post?view=graph-rest-beta&preserve-view=true)
 - [List mailboxProtectionUnitsBulkAdditionJobs](/graph/api/onedriveforbusinessprotectionpolicy-list-driveprotectionunitsbulkadditionjobs?view=graph-rest-beta&preserve-view=true)
-- [Get mailboxProtectionUnitsBulkAdditionJob](/graph/api/mailboxprotectionunitsbulkadditionjobs-get?view=graph-rest-beta&preserve-view=true) 
+- [Get mailboxProtectionUnitsBulkAdditionJob](/graph/api/mailboxprotectionunitsbulkadditionjobs-get?view=graph-rest-beta&preserve-view=true)
 
 - [Create driveProtectionUnitsBulkAdditionJob](/graph/api/driveprotectionunitsbulkadditionjobs-post?view=graph-rest-beta&preserve-view=true)
 - [List driveProtectionUnitsBulkAdditionJobs](/graph/api/exchangeprotectionpolicy-list-mailboxprotectionunitsbulkadditionjobs?view=graph-rest-beta&preserve-view=true)
@@ -575,7 +993,7 @@ Updated the endpoints of the following methods:
 
 ### Users
 
-Changed the following on-premises synced properties of the [user](/graph/api/resources/user?view=graph-rest-beta&preserve-view=true) resource type that were read-only in Microsoft Graph to be updatable via Microsoft Graph: 
+Changed the following on-premises synced properties of the [user](/graph/api/resources/user?view=graph-rest-beta&preserve-view=true) resource type that were read-only in Microsoft Graph to be updatable via Microsoft Graph:
 - onPremisesDistinguishedName
 - onPremisesDomainName
 - onPremisesSamAccountName
@@ -672,7 +1090,7 @@ Use the **isDeltaRosterEnabled** property on [incomingCallOptions](/graph/api/re
   - [Get educationAssignment](/graph/api/educationassignment-get)
   - [Get educationCategory](/graph/api/educationcategory-get)
   - [Get educationSubmission](/graph/api/educationsubmission-get)
-- Reduced support for the `$orderby` query parameter in the [List assignments of a user](/graph/api/educationuser-list-assignments) method to a subset of the properties in the [educationAssignment](/graph/api/resources/educationassignment) resource.  
+- Reduced support for the `$orderby` query parameter in the [List assignments of a user](/graph/api/educationuser-list-assignments) method to a subset of the properties in the [educationAssignment](/graph/api/resources/educationassignment) resource.
 
 ### Employee experience | Employee engagement
 
@@ -699,7 +1117,7 @@ Introduced the general availability of the Viva Engage API in Microsoft Graph. A
 - Enabled the `$select` query parameter for the [Get callTranscript](/graph/api/calltranscript-get) method.
 - Enabled the `$filter`, `$select`, and `$top` query parameters for the [List recordings](/graph/api/onlinemeeting-list-recordings) method.
 - Enabled the `$filter`, `$select`, and `$top` query parameters for the [List transcripts](/graph/api/onlinemeeting-list-transcripts) method.
-- Get all [recordings](/graph/api/onlinemeeting-getallrecordings) and [transcripts](/graph/api/onlinemeeting-getalltranscripts) from scheduled online meeting instances for which the specified user is the organizer. 
+- Get all [recordings](/graph/api/onlinemeeting-getallrecordings) and [transcripts](/graph/api/onlinemeeting-getalltranscripts) from scheduled online meeting instances for which the specified user is the organizer.
 - Get a set of [recording](/graph/api/callrecording-delta) and [transcript](/graph/api/calltranscript-delta) resources that were added for online meeting instances organized by the specified user.
 
 ### Teamwork and communications | Settings
@@ -723,7 +1141,7 @@ Introduced the [partner security score API](/graph//api/resources/partner-securi
   - [Get educationAssignment](/graph/api/educationassignment-get?view=graph-rest-beta&preserve-view=true)
   - [Get educationCategory](/graph/api/educationcategory-get?view=graph-rest-beta&preserve-view=true)
   - [Get educationSubmission](/graph/api/educationsubmission-get?view=graph-rest-beta&preserve-view=true)
-- Reduced support for the `$orderby` query parameter in the [List assignments of a user](/graph/api/educationuser-list-assignments?view=graph-rest-beta&preserve-view=true) method to a subset of the properties in the [educationAssignment](/graph/api/resources/educationassignment?view=graph-rest-beta&preserve-view=true) resource. 
+- Reduced support for the `$orderby` query parameter in the [List assignments of a user](/graph/api/educationuser-list-assignments?view=graph-rest-beta&preserve-view=true) method to a subset of the properties in the [educationAssignment](/graph/api/resources/educationassignment?view=graph-rest-beta&preserve-view=true) resource.
 
 ### Teamwork and communications | Apps
 
@@ -766,7 +1184,7 @@ The new Microsoft 365 Backup Storage API enables partners to build customized ve
 - Use the **appointmentLabel** property on [bookingAppointment](/graph/api/resources/bookingappointment) to get the custom label that can be stamped on an appointment by users.
 - Use the **customerEmailAddress** property on [bookingAppointment](/graph/api/resources/bookingappointment) to get or set the SMTP address of the [bookingCustomer](/graph/api/resources/bookingcustomer) who books an appointment.
 - Use the **customerName** property on [bookingAppointment](/graph/api/resources/bookingappointment) to get or set the customer's name.
-- Use the **customerNotes** property on [bookingAppointment](/graph/api/resources/bookingappointment) to get or set the notes from the customer associated with an appointment. 
+- Use the **customerNotes** property on [bookingAppointment](/graph/api/resources/bookingappointment) to get or set the notes from the customer associated with an appointment.
 - Use the **customerPhone** property on [bookingAppointment](/graph/api/resources/bookingappointment) to get or set the customer's phone number.
 - Use the **bookingPageSettings** property on [bookingBusiness](/graph/api/resources/bookingbusiness) to get the settings for a published booking page.
 - Use the **customAvailabilities** property on [bookingSchedulingPolicy](/graph/api/resources/bookingschedulingpolicy) to get the custom availability of a service within a given time frame.
@@ -804,7 +1222,7 @@ Use the **configurationUris** property on [applicationTemplate](/graph/api/resou
 ### Education
 
 - Deprecated the **synchronizationProfiles** relationship on the [educationRoot](/graph/api/resources/educationroot?view=graph-rest-beta&preserve-view=true), including all types serviced under this endpoint.
-- Introduced the Reflect API in Microsoft Graph to [get Reflect check-in responses](/graph/api/reflectcheckinresponse-get?view=graph-rest-beta&preserve-view=true) and [get reading assignment submissions](/graph/api/readingassignmentsubmission-get?view=graph-rest-beta&preserve-view=true). [Microsoft Reflect](https://reflect.microsoft.com/) helps you create impactful check-ins to gain insights into your learners' well-being and build a happier and healthier learning community, all within a single, user-friendly app. 
+- Introduced the Reflect API in Microsoft Graph to [get Reflect check-in responses](/graph/api/reflectcheckinresponse-get?view=graph-rest-beta&preserve-view=true) and [get reading assignment submissions](/graph/api/readingassignmentsubmission-get?view=graph-rest-beta&preserve-view=true). [Microsoft Reflect](https://reflect.microsoft.com/) helps you create impactful check-ins to gain insights into your learners' well-being and build a happier and healthier learning community, all within a single, user-friendly app.
 
 ### Identity and access | Directory management
 
@@ -907,7 +1325,7 @@ Use the [relatedHosts](/graph/api/security-sslcertificate-list-relatedhosts?view
 
 Added [content model](/graph/api/resources/contentmodel?view=graph-rest-beta&preserve-view=true) support to sites. You can apply content models to SharePoint document libraries to classify and extract metadata from files. The new APIs enable you to do the following:
 
-- Use [Get model](/graph/api/contentmodel-get?view=graph-rest-beta&preserve-view=true) or [Get model by name](/graph/api/contentmodel-getbyname?view=graph-rest-beta&preserve-view=true) methods to get a [content model](/graph/api/resources/contentmodel?view=graph-rest-beta&preserve-view=true) resource. 
+- Use [Get model](/graph/api/contentmodel-get?view=graph-rest-beta&preserve-view=true) or [Get model by name](/graph/api/contentmodel-getbyname?view=graph-rest-beta&preserve-view=true) methods to get a [content model](/graph/api/resources/contentmodel?view=graph-rest-beta&preserve-view=true) resource.
 - Add a [content model](/graph/api/resources/contentmodel?view=graph-rest-beta&preserve-view=true) to a library by using the [add to drive](/graph/api/contentmodel-addtodrive?view=graph-rest-beta&preserve-view=true) method to make it ready to process files.
 - Remove a [content model](/graph/api/resources/contentmodel?view=graph-rest-beta&preserve-view=true) from a library by using the [remove from drive](/graph/api/contentmodel-removefromdrive?view=graph-rest-beta&preserve-view=true) method.
 - Use [Get applied drives](/graph/api/contentmodel-getapplieddrives?view=graph-rest-beta&preserve-view=true) to list all libraries associated with the content model.
@@ -1047,7 +1465,7 @@ You can now:
 - [Track changes for SharePoint site](/graph/api/site-delta) resources.
 - [Track changes for SharePoint list item](/graph/api/listitem-delta) resources.
 
-Work with [site pages](/graph/api/resources/sitepage) and [horizonal](/graph/api/resources/horizontalsection) and [vertical](/graph/api/resources/verticalsection) sections of pages.  
+Work with [site pages](/graph/api/resources/sitepage) and [horizonal](/graph/api/resources/horizontalsection) and [vertical](/graph/api/resources/verticalsection) sections of pages.
 
 ### Users
 
@@ -1082,7 +1500,7 @@ An outbound provisioning flow set can contain no more than one of each provision
 
 When calling the [industry data ETL API](/graph/api/resources/industrydata-overview?view=graph-rest-beta&preserve-view=true), take advantage of more granular permissions added for reading or writing outbound provisioning flow set data by using the new permissions `IndustryData-OutboundFlow.Read.All` and `IndustryData-OutboundFlow.ReadWrite.All`.
 
-### People and workplace intelligence | People 
+### People and workplace intelligence | People
 
 Deprecated the `/organization/{organizationId}/settings/itemInsights` endpoint in favor of the new [peopleAdminSettings](/graph/api/resources/peopleadminsettings?view=graph-rest-beta&preserve-view=true) resource and introduced the [List](/graph/api/peopleadminsettings-list-iteminsights?view=graph-rest-beta&preserve-view=true) method on the **peopleAdminSettings** resource.
 
@@ -1111,7 +1529,7 @@ For more information about town hall APIs, see [virtualEventTownhall](/graph/api
 
 ### Teamwork and communications | Messaging
 
-[Send chatMessage in a channel or a chat](/graph/api/chatmessage-post?view=graph-rest-beta&preserve-view=true) with a file attachment in it using file share link. 
+[Send chatMessage in a channel or a chat](/graph/api/chatmessage-post?view=graph-rest-beta&preserve-view=true) with a file attachment in it using file share link.
 
 ## March 2024: New and generally available
 
@@ -1139,7 +1557,7 @@ Enabled the `$expand` query parameter for the [Get educationAssignment](/graph/a
 ### Identity and access | Directory management
 
 - The organization entity now returns the `CIAM` **tenantType** to identify tenants that are set up as Microsoft Entra ID for customers tenants, a customer identity & access management (CIAM) solution.
-- New properties set by Intune on the [device](/graph/api/resources/device) resource: **enrollmentType**, **isRooted**, and **managementType**. 
+- New properties set by Intune on the [device](/graph/api/resources/device) resource: **enrollmentType**, **isRooted**, and **managementType**.
 
 ### Reports | Partner billing reports
 
@@ -1162,7 +1580,7 @@ Use the upsert capability to create an [application](/graph/api/resources/applic
 ### Device and app management | Cloud PC
 
 - [Apply](/graph/api/cloudpcprovisioningpolicy-apply?view=graph-rest-beta&preserve-view=true) the current [provisioning policy](/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-beta&preserve-view=true) configuration across all Cloud PC devices under a specified policy.
-- [Update](/graph/api/cloudpcprovisioningpolicy-applyconfig?view=graph-rest-beta&preserve-view=true) the [provisioning policy](/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-beta&preserve-view=true) configuration for a specific set of Cloud PC devices using their IDs. 
+- [Update](/graph/api/cloudpcprovisioningpolicy-applyconfig?view=graph-rest-beta&preserve-view=true) the [provisioning policy](/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-beta&preserve-view=true) configuration for a specific set of Cloud PC devices using their IDs.
 - Added the ability to mark specified **alertRecord** objects as sent via the **isPortalNotificationSent** property.
 - Run bulk [power-off](/graph/api/resources/cloudpcbulkpoweroff?view=graph-rest-beta&preserve-view=true), [power-on](/graph/api/resources/cloudpcbulkpoweron?view=graph-rest-beta&preserve-view=true), [reprovision](/graph/api/resources/cloudpcbulkreprovision?view=graph-rest-beta&preserve-view=true), [resize](/graph/api/resources/cloudpcbulkresize?view=graph-rest-beta&preserve-view=true), [restart](/graph/api/resources/cloudpcbulkrestart?view=graph-rest-beta&preserve-view=true), [restore](/graph/api/resources/cloudpcbulkrestore?view=graph-rest-beta&preserve-view=true), and [troubleshoot](/graph/api/resources/cloudpcbulktroubleshoot?view=graph-rest-beta&preserve-view=true) actions on Cloud PC devices using their IDs.
 
@@ -1514,7 +1932,7 @@ Create and manage a [certificate-based application configuration](/graph/api/res
 - Get or update a setting that requires a user to perform registration after snoozing 3 times, as part of an [authentication methods registration campaign](/graph/api/resources/authenticationMethodsRegistrationCampaign?view=graph-rest-beta&preserve-view=true) to [enforce registration at sign-in time](/graph/api/resources/registrationenforcement?view=graph-rest-beta&preserve-view=true) in an [authentication policy](/graph/api/resources/authenticationmethodspolicy?view=graph-rest-beta&preserve-view=true). _See the [related changelog section](https://developer.microsoft.com/en-us/graph/changelog/?search=bfd0c33a-af94-4b3a-867d-a904d3986b0f)_.
 
 ### Reports and audit | Identity and access reports
-Get Microsoft Entra [service activity](/graph/api/resources/serviceActivity?view=graph-rest-beta&preserve-view=true) reports for sign-in [metrics](/graph/api/resources/serviceActivityValueMetric?view=graph-rest-beta&preserve-view=true) at minute-level granularity on four scenarios: 
+Get Microsoft Entra [service activity](/graph/api/resources/serviceActivity?view=graph-rest-beta&preserve-view=true) reports for sign-in [metrics](/graph/api/resources/serviceActivityValueMetric?view=graph-rest-beta&preserve-view=true) at minute-level granularity on four scenarios:
 - [Get metrics for MFA sign-in success](/graph/api/serviceactivity-getmetricsformfasigninsuccess?view=graph-rest-beta&preserve-view=true) and [get metrics for MFA sign-in failure](/graph/api/serviceactivity-getmetricsformfasigninfailure?view=graph-rest-beta&preserve-view=true)
 - [Get metrics for conditional access managed devices sign-in success](/graph/api/serviceactivity-getmetricsforconditionalaccessmanageddevicessigninsuccess?view=graph-rest-beta&preserve-view=true)
 - [Get metrics for conditional access compliant devices sign-in success](/graph/api/serviceactivity-getmetricsforconditionalaccesscompliantdevicessigninsuccess?view=graph-rest-beta&preserve-view=true)
@@ -1592,13 +2010,13 @@ Create an [attack simulation](/graph/api/resources/simulation?view=graph-rest-be
 ### Security | Records management
 Support app scenarios to read any [retention event](/graph/api/resources/security-retentionevent?view=graph-rest-beta&preserve-view=true), [retention event type](/graph/api/resources/security-retentioneventtype?view=graph-rest-beta&preserve-view=true), and [retention label](/graph/api/resources/security-retentionlabel?view=graph-rest-beta&preserve-view=true) without a signed-in user. _See the [related changelog section](https://developer.microsoft.com/en-us/graph/changelog/?search=a8aa5b98-5fb3-4aba-acec-5e85209a4026)_.
 
-### Teamwork and communications | Calls and online meetings 
-- Get a [call recording](/graph/api/resources/callRecording?view=graph-rest-beta&preserve-view=true) or [call transcript](/graph/api/resources/calltranscript?view=graph-rest-beta&preserve-view=true) that includes more identity information for the organizer, in addition to the existing meeting organizer ID for the [online meeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true). Additional identity information may include data such as user display name, identity type, or tenant ID. _See the [related changelog section](https://developer.microsoft.com/en-us/graph/changelog/?search=8a566519-e115-4081-8f15-bc92112e8d64)_.
+### Teamwork and communications | Calls and online meetings
+- Get a [call recording](/graph/api/resources/callRecording?view=graph-rest-beta&preserve-view=true) or [call transcript](/graph/api/resources/calltranscript?view=graph-rest-beta&preserve-view=true) that includes more identity information for the organizer, in addition to the existing meeting organizer ID for the [online meeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true). Additional identity information might include data such as user display name, identity type, or tenant ID. _See the [related changelog section](https://developer.microsoft.com/en-us/graph/changelog/?search=8a566519-e115-4081-8f15-bc92112e8d64)_.
 - Get the preferred display name of a [participant](/graph/api/resources/participant?view=graph-rest-beta&preserve-view=true) in a [call](/graph/api/resources/call?view=graph-rest-beta&preserve-view=true). _See the [related changelog section](https://developer.microsoft.com/en-us/graph/changelog/?search=840dd994-b26b-48a2-8d7c-1b52ea86a45c)_.
 
 ### Workbooks and charts
 Get tasks that a user has identified in association with a [comment](/graph/api/resources/workbookcomment?view=graph-rest-beta&preserve-view=true) or [reply for a comment](/graph/api/resources/workbookcommentreply?view=graph-rest-beta&preserve-view=true) in a [worksheet](/graph/api/resources/workbookWorksheet?view=graph-rest-beta&preserve-view=true):
-- [List](/graph/api/workbookworksheet-list-tasks?view=graph-rest-beta&preserve-view=true) [document tasks](/graph/api/resources/workbookDocumentTask?view=graph-rest-beta&preserve-view=true) on a worksheet. 
+- [List](/graph/api/workbookworksheet-list-tasks?view=graph-rest-beta&preserve-view=true) [document tasks](/graph/api/resources/workbookDocumentTask?view=graph-rest-beta&preserve-view=true) on a worksheet.
 - [List](/graph/api/workbookdocumenttask-list-changes?view=graph-rest-beta&preserve-view=true) the [changes of a document task](/graph/api/resources/workbookdocumenttaskchange?view=graph-rest-beta&preserve-view=true).
 
 _See the [related changelog section](https://developer.microsoft.com/en-us/graph/changelog/?search=5472d980-5acf-4663-b1af-c7d22e28d1b3)_.
@@ -1606,7 +2024,7 @@ _See the [related changelog section](https://developer.microsoft.com/en-us/graph
 ## August 2023: New and generally available
 
 ### Applications
-Enable or disable the [lock configuration of sensitive properties](/graph/api/resources/serviceprincipallockconfiguration) of a multitenant [application](/graph/api/resources/application) for editing after the application is provisioned in a tenant. 
+Enable or disable the [lock configuration of sensitive properties](/graph/api/resources/serviceprincipallockconfiguration) of a multitenant [application](/graph/api/resources/application) for editing after the application is provisioned in a tenant.
 
 ### Education
 [Create](/graph/api/educationclass-post-assignment) a class assignment using an application permission without a signed-in user present.
@@ -1631,7 +2049,7 @@ Manage additional resources, such as a Kubernetes account or service, or a stora
 Set as part of [authentication behaviors](/graph/api/resources/authenticationBehaviors?view=graph-rest-beta&preserve-view=true) a requirement that a multitenant resource [application](/graph/api/resources/application?view=graph-rest-beta&preserve-view=true) should have a service principal in the resource tenant before the application is granted access tokens.
 
 ### Change notifications
-Subscribe to changes when any [recording](/graph/api/resources/callrecording?view=graph-rest-beta&preserve-view=true) becomes available for a specific meeting, or when any meeting recording becomes available in a tenant. For more information, see [Use the Microsoft Graph API to get change notifications](/graph/api/resources/webhooks?view=graph-rest-beta&preserve-view=true).
+Subscribe to changes when any [recording](/graph/api/resources/callrecording?view=graph-rest-beta&preserve-view=true) becomes available for a specific meeting, or when any meeting recording becomes available in a tenant. For more information, see [Use the Microsoft Graph API to get change notifications](/graph/change-notifications-overview).
 
 ### Device and app management | Cloud PC
 - Set up an [alert rule](/graph/api/resources/devicemanagement-alertrule?view=graph-rest-beta&preserve-view=true) by using a rule template for a grace period scenario. This type of an alert rule triggers an alert on the Microsoft Endpoint Manager admin center when a license or assignment change happens to the user and the Cloud PC enters a grace period. For more information about Cloud PC grace periods, see [Device management overview for Cloud PCs](/windows-365/enterprise/device-management-overview). _See the [related changelog section](https://developer.microsoft.com/en-us/graph/changelog/?search=429c062a-4b3f-4ea1-ab45-d399ff6818cc)_.
@@ -1650,7 +2068,7 @@ Get the license type of a specified managed tenant as part of the Microsoft Entr
 Organize individual learning resources in a systematic way in a [module](/graph/api/resources/educationModule?view=graph-rest-beta&preserve-view=true). Modules contain read-only learning resources and assignments the teacher wants the student to complete. The teacher can [set up a resources folder](/graph/api/educationmodule-setupresourcesfolder?view=graph-rest-beta&preserve-view=true) on SharePoint for a module, [pin](/graph/api/educationmodule-pin?view=graph-rest-beta&preserve-view=true) one module at a time in a classwork list, [unpin](/graph/api/educationmodule-unpin?view=graph-rest-beta&preserve-view=true) a module in a classwork list, and [publish](/graph/api/educationmodule-publish?view=graph-rest-beta&preserve-view=true) a module to a student's classwork list.
 
 ### Identity and access | Directory management
-Identify if a [role](/graph/api/resources/unifiedroledefinition?view=graph-rest-beta&preserve-view=true) or [action](/graph/api/resources/unifiedrbacresourceaction?view=graph-rest-beta&preserve-view=true) supported by a directory RBAC provider is privileged. 
+Identify if a [role](/graph/api/resources/unifiedroledefinition?view=graph-rest-beta&preserve-view=true) or [action](/graph/api/resources/unifiedrbacresourceaction?view=graph-rest-beta&preserve-view=true) supported by a directory RBAC provider is privileged.
 
 ### Identity and access | Identity and sign-in
 - Use a [session control that requires sign-in sessions to be bound to a device](/graph/api/resources/secureSignInSessionControl?view=graph-rest-beta&preserve-view=true).
@@ -1670,9 +2088,9 @@ List [host pair](/graph/api/resources/security-hostpair?view=graph-rest-beta&pre
 ### Teamwork and communications | Calls and online meetings
 - [Get](/graph/api/callrecording-get?view=graph-rest-beta&preserve-view=true) a specific [call recording](/graph/api/resources/callrecording?view=graph-rest-beta&preserve-view=true) for an [online meeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true) for which the specified user is an organizer or participant.
 - [List](/graph/api/onlinemeeting-list-recordings?view=graph-rest-beta&preserve-view=true) all recordings of an online meeting for which the specified user is an organizer or participant.
-- [Get all recordings](/graph/api/onlinemeeting-getallrecordings?view=graph-rest-beta&preserve-view=true) from scheduled online meeting instances for which the specified user is the organizer. 
+- [Get all recordings](/graph/api/onlinemeeting-getallrecordings?view=graph-rest-beta&preserve-view=true) from scheduled online meeting instances for which the specified user is the organizer.
 - [Get a set of recording resources that have been added](/graph/api/callrecording-delta?view=graph-rest-beta&preserve-view=true) for online meeting instances organized by the specified user.
-- [List](/graph/api/virtualeventsession-list?view=graph-rest-beta&preserve-view=true) all [virtual event sessions](/graph/api/resources/virtualeventsession?view=graph-rest-beta&preserve-view=true) for a [webinar](/graph/api/resources/virtualeventwebinar?view=graph-rest-beta&preserve-view=true) virtual event.
+- [List](/graph/api/virtualevent-list-sessions?view=graph-rest-1.0) all [virtual event sessions](/graph/api/resources/virtualeventsession?view=graph-rest-beta&preserve-view=true) for a [webinar](/graph/api/resources/virtualeventwebinar?view=graph-rest-beta&preserve-view=true) virtual event.
 - [Get](/graph/api/deletedchat-get?view=graph-rest-beta&preserve-view=true) a [deleted chat](/graph/api/resources/deletedChat?view=graph-rest-beta&preserve-view=true).
 - [Delete](/graph/api/chat-delete?view=graph-rest-beta&preserve-view=true) or [undo a deletion](/graph/api/deletedchat-undodelete?view=graph-rest-beta&preserve-view=true) of a [chat](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true).
 
@@ -1719,11 +2137,11 @@ Support for granting scoped access (also known as [resource-specific consent](/m
 ## July 2023: New in preview only
 
 ### Applications | Synchronization
-[Perform](/graph/api/synchronization-synchronizationjob-post-bulkupload?view=graph-rest-beta&preserve-view=true) a [bulk upload](/graph/api/resources/synchronization-bulkupload?view=graph-rest-beta&preserve-view=true) as a [synchronization job](/graph/api/resources/synchronization-synchronizationjob?view=graph-rest-beta&preserve-view=true) to ingest data into the Azure AD synchronization service. 
+[Perform](/graph/api/synchronization-synchronizationjob-post-bulkupload?view=graph-rest-beta&preserve-view=true) a [bulk upload](/graph/api/resources/synchronization-bulkupload?view=graph-rest-beta&preserve-view=true) as a [synchronization job](/graph/api/resources/synchronization-synchronizationjob?view=graph-rest-beta&preserve-view=true) to ingest data into the Azure AD synchronization service.
 
 ### Device and app management | Cloud PC
 - [Get a report for inaccessible Cloud PCs](/graph/api/cloudPcReports-getInaccessibleCloudPcReports?view=graph-rest-beta&preserve-view=true) that have failed at least a health check or experienced consecutive user connections failure.
-- Use a [setting on a Cloud PC](/graph/api/resources/cloudpcusersetting?view=graph-rest-beta&preserve-view=true) to allow or disallow an end user to reset their Cloud PC. 
+- Use a [setting on a Cloud PC](/graph/api/resources/cloudpcusersetting?view=graph-rest-beta&preserve-view=true) to allow or disallow an end user to reset their Cloud PC.
 
 ### Device and app management | Corporate management
 Intune [July updates](https://developer.microsoft.com/en-us/graph/changelog/?search=&from=2023-07-01&to=2023-07-31) for the beta version.
@@ -1748,7 +2166,7 @@ Use the APIs for Microsoft Entra Internet Access and Microsoft Entra Private Acc
 - Get all the report components in the Global Secure Access services, including [entities summaries](/graph/api/networkaccess-reports-entitiessummaries?view=graph-rest-beta&preserve-view=true), [cross-tenant summary](/graph/api/networkaccess-reports-getcrosstenantsummary?view=graph-rest-beta&preserve-view=true), [destination summaries](/graph/api/networkaccess-reports-getdestinationsummaries?view=graph-rest-beta&preserve-view=true), [device usage summary](/graph/api/networkaccess-reports-getdeviceusagesummary?view=graph-rest-beta&preserve-view=true), and [transaction summaries](/graph/api/networkaccess-reports-transactionsummaries?view=graph-rest-beta&preserve-view=true).
 
 ### Security | Alerts and incidents
-- When [getting alerts](/graph/api/security-list-alerts_v2?view=graph-rest-beta&preserve-view=true), in addition to the previously supported types of detection technology and services, you can now identify Microsoft Defender for Cloud as the technology that detected a specific [alert](/graph/api/resources/security-alert?view=graph-rest-beta&preserve-view=true), or service that created the alert. 
+- When [getting alerts](/graph/api/security-list-alerts_v2?view=graph-rest-beta&preserve-view=true), in addition to the previously supported types of detection technology and services, you can now identify Microsoft Defender for Cloud as the technology that detected a specific [alert](/graph/api/resources/security-alert?view=graph-rest-beta&preserve-view=true), or service that created the alert.
 - When getting alerts, in addition to previously supported types of [evidence](/graph/api/resources/security-alertevidence?view=graph-rest-beta&preserve-view=true), you can now differentiate evidence resources of the following types: [Amazon resource evidence](/graph/api/resources/security-amazonResourceEvidence?view=graph-rest-beta&preserve-view=true), [Azure resource evidence](/graph/api/resources/security-azureresourceevidence?view=graph-rest-beta&preserve-view=true), or [Google resource evidence](/graph/api/resources/security-googlecloudresourceevidence?view=graph-rest-beta&preserve-view=true).
 
 ### Sites and lists
@@ -1758,7 +2176,7 @@ Use the APIs for Microsoft Entra Internet Access and Microsoft Entra Private Acc
 - In addition to [getting](/graph/api/webpart-get?view=graph-rest-beta&preserve-view=true) or [listing](/graph/api/webpart-list?view=graph-rest-beta&preserve-view=true) one or more [web part](/graph/api/resources/webpart?view=graph-rest-beta&preserve-view=true) resources on a [page](/graph/api/resources/sitepage?view=graph-rest-beta&preserve-view=true), you can now [create](/graph/api/sitepage-create-webpart?view=graph-rest-beta&preserve-view=true), [update](/graph/api/webpart-update?view=graph-rest-beta&preserve-view=true), or [delete](/graph/api/webpart-delete?view=graph-rest-beta&preserve-view=true) a web part.
 
 ### Teamwork and communications | Calls and online meetings
-Subscribe to [change notifications](/graph/api/resources/webhooks?view=graph-rest-beta&preserve-view=true) [for transcripts of a specific online meeting](/graph/teams-changenotifications-callrecording-and-calltranscript?view=graph-rest-beta&preserve-view=true#subscribe-to-transcripts-available-for-a-particular-online-meeting), or [for transcripts of any online meeting in a tenant](/graph/teams-changenotifications-callrecording-and-calltranscript?view=graph-rest-beta&preserve-view=true#subscribe-to-transcripts-available-at-the-tenant-level).
+Subscribe to [change notifications](/graph/change-notifications-overview) [for transcripts of a specific online meeting](/graph/teams-changenotifications-callrecording-and-calltranscript?view=graph-rest-beta&preserve-view=true#subscribe-to-transcripts-available-for-a-particular-online-meeting), or [for transcripts of any online meeting in a tenant](/graph/teams-changenotifications-callrecording-and-calltranscript?view=graph-rest-beta&preserve-view=true#subscribe-to-transcripts-available-at-the-tenant-level).
 
 ### Teamwork and communications | Devices
 [Listing](/graph/api/teamworkdevice-list?view=graph-rest-beta&preserve-view=true) teamwork devices now includes SIP analog devices provisioned for the tenant. These SIP analog devices are legacy endpoints such as elevator phones, parking lot phones, or factory floor devices, registered with Microsoft Teams through the SIP Gateway.
@@ -1779,7 +2197,7 @@ Address an [application](/graph/api/resources/application) by a new alternate ke
 Intune [June updates](https://developer.microsoft.com/en-us/graph/changelog/?search=&from=2023-06-01&to=2023-06-30) for the v1.0 version.
 
 ### Files
-- [Assign a sensitivity label](/graph/api/driveitem-assignsensitivitylabel) to a file in OneDrive or SharePoint. 
+- [Assign a sensitivity label](/graph/api/driveitem-assignsensitivitylabel) to a file in OneDrive or SharePoint.
 - [Extract one or more sensitivity labels](/graph/api/driveitem-extractsensitivitylabels) assigned to a file or folder and update the metadata of that [drive item](/graph/api/resources/driveitem) with the latest details of the assigned label.
 
 ### Identity and access | Governance
@@ -1788,7 +2206,7 @@ Intune [June updates](https://developer.microsoft.com/en-us/graph/changelog/?sea
 
 ### Search | Query
 - Optionally specify the sortable or refinable properties to collapse in the results of a [search request](/graph/api/resources/searchrequest).
-- To include multiple search requests in a single request body in the request body, [use the Microsoft Graph Search API to pass multiple search requests](/graph/search-concept-multiplerequest). 
+- To include multiple search requests in a single request body in the request body, [use the Microsoft Graph Search API to pass multiple search requests](/graph/search-concept-multiplerequest).
 - Guest users can search for items within SharePoint or OneDrive that have been shared with them.
 
 ### Security | eDiscovery
@@ -1801,7 +2219,7 @@ GA release of the [threat intelligence API](/graph/api/resources/security-threat
 - Track the freeze duration data of a video stream in a [media stream](/graph/api/resources/callRecords-mediaStream).
 - Check whether the forward error correction (FEC) was used at some point during a [session](/graph/api/resources/callrecords-session).
 - Represent CPU capabilities and name of the device used by a caller or callee [participant endpoint](/graph/api/resources/callrecords-participantendpoint) in a [call](/graph/api/resources/call) or [online meeting](/graph/api/resources/onlinemeeting).
-- [Listing](/graph/api/callrecords-session-list) sessions in a [call record](/graph/api/resources/callrecords-callrecord) can now identify those sessions that took place for testing purpose.
+- [Listing](/graph/api/callrecords-callrecord-list-sessions?view=graph-rest-1.0) sessions in a [call record](/graph/api/resources/callrecords-callrecord) can now identify those sessions that took place for testing purpose.
 
 ### Teamwork and communications | Employee learning
 Get or specify whether a [learning provider](/graph/api/resources/learningProvider) can ingest learning course activity records, including [learning activity assigned to a user](/graph/api/resources/learningassignment) and [learning course activity initiated by a user](/graph/api/resources/learningselfinitiatedcourse).
@@ -1816,11 +2234,11 @@ Get or specify whether a [learning provider](/graph/api/resources/learningProvid
 
 ### Device and app management | Cloud PC
 - [Running health checks for on premises network connection](/graph/api/cloudpconpremisesconnection-runhealthcheck?view=graph-rest-beta&preserve-view=true) can now identify the following error conditions:
-  - Your current network configuration does not allow the use of UDP direct connect Session Traversal Utilities for NAT (TURN). 
-  - Your current network configuration does not allow the use of UDP direct connect Session Traversal Utilities for NAT (STUN and TURN). 
-  
+  - Your current network configuration does not allow the use of UDP direct connect Session Traversal Utilities for NAT (TURN).
+  - Your current network configuration does not allow the use of UDP direct connect Session Traversal Utilities for NAT (STUN and TURN).
+
   In either case, the condition does not prevent the use of Cloud PCs but can prevent optimal performance. Consider your own network configuration policies before you apply changes.
-- Use a new correlation ID to uniquely identify [health check item-related activities](/graph/api/resources/cloudPcOnPremisesConnectionHealthCheck?view=graph-rest-beta&preserve-view=true), which is part of the [health check status details](/graph/api/resources/cloudpconpremisesconnectionstatusdetails?view=graph-rest-beta&preserve-view=true) returned from getting the [Azure resource information used to establish Azure network connectivity for Cloud PCs](/graph/api/resources/cloudpconpremisesconnection?view=graph-rest-beta&preserve-view=true). 
+- Use a new correlation ID to uniquely identify [health check item-related activities](/graph/api/resources/cloudPcOnPremisesConnectionHealthCheck?view=graph-rest-beta&preserve-view=true), which is part of the [health check status details](/graph/api/resources/cloudpconpremisesconnectionstatusdetails?view=graph-rest-beta&preserve-view=true) returned from getting the [Azure resource information used to establish Azure network connectivity for Cloud PCs](/graph/api/resources/cloudpconpremisesconnection?view=graph-rest-beta&preserve-view=true).
 - [Create](/graph/api/cloudpcreports-post-exportjobs?view=graph-rest-beta&preserve-view=true) or [get](/graph/api/cloudpcexportjob-get?view=graph-rest-beta&preserve-view=true) a report of Cloud PCs that failed to connect because licenses were unavailable.
 - [Get the provisioned Cloud PCs](/graph/api/cloudpc-getprovisionedcloudpcs?view=graph-rest-beta&preserve-view=true) of a specific service plan for users in a certain Azure AD user gorup.
 - [Validate multiple Cloud PCs in bulk](/graph/api/cloudPC-validateBulkResize?view=graph-rest-beta&preserve-view=true), and [resize](/graph/api/cloudPC-bulkResize?view=graph-rest-beta&preserve-view=true) them based on the individual [validation result](/graph/api/resources/cloudPcResizeValidationResult?view=graph-rest-beta&preserve-view=true). For related administrator's information about resizing Cloud PCs using the Mirosoft Intune admin center, see [resize a Cloud PC](/windows-365/enterprise/resize-cloud-pc).
@@ -1840,8 +2258,8 @@ Intune [June updates](https://developer.microsoft.com/en-us/graph/changelog/?sea
 - Use the application permission `RoleManagementPolicy.Read.AzureADGroup` or `RoleManagementPolicy.ReadWrite.AzureADGroup` to read or update policies in [Privileged Identity Management for groups](/graph/api/resources/privilegedidentitymanagement-for-groups-api-overview?view=graph-rest-beta&preserve-view=true), without a signed-in user.
 - Use Privileged Identity Management (PIM) to govern privileged access and limit excessive access to Azure AD roles. See more information on the [governance capabilities of PIM for Azure AD roles APIs in Microsoft Graph](/graph/api/resources/privilegedidentitymanagementv3-overview?view=graph-rest-beta&preserve-view=true).
 - Use security [alerts](/graph/api/resources/unifiedrolemanagementalert?view=graph-rest-beta&preserve-view=true) built into [Privileged Identity Management (PIM) for Azure AD roles](/graph/api/resources/privilegedidentitymanagementv3-overview?view=graph-rest-beta&preserve-view=true) to detect suspicious or unsafe settings for Azure AD roles in your tenant. For more information on the types of security alerts, see [Get security alerts for Azure AD roles](/graph/api/resources/privilegedidentitymanagementv3-overview?view=graph-rest-beta&preserve-view=true#get-security-alerts-for-azure-ad-roles).
-- [Get](/graph/api/accesspackagesubject-get?view=graph-rest-beta&preserve-view=true) information about a [subject](/graph/api/resources/accesspackagesubject?view=graph-rest-beta&preserve-view=true) who requests or is assigned an [access package](/graph/api/resources/accesspackage?view=graph-rest-beta&preserve-view=true); the subject can be a user or some entity from a connected organization who is not yet in the tenant. 
-- [Update](/graph/api/accesspackagesubject-update?view=graph-rest-beta&preserve-view=true) the lifecycle status of a user for an access package, if the user is a guest. 
+- [Get](/graph/api/accesspackagesubject-get?view=graph-rest-beta&preserve-view=true) information about a [subject](/graph/api/resources/accesspackagesubject?view=graph-rest-beta&preserve-view=true) who requests or is assigned an [access package](/graph/api/resources/accesspackage?view=graph-rest-beta&preserve-view=true); the subject can be a user or some entity from a connected organization who is not yet in the tenant.
+- [Update](/graph/api/accesspackagesubject-update?view=graph-rest-beta&preserve-view=true) the lifecycle status of a user for an access package, if the user is a guest.
 
 ### Identity and access | Identity and sign-in
 - Get or update [sign-in preferences](/graph/api/resources/signInPreferences?view=graph-rest-beta&preserve-view=true) for [authentication](/graph/api/resources/authentication?view=graph-rest-beta&preserve-view=true), for the default second-factor method used by the user when signing in.
@@ -1862,7 +2280,7 @@ Specify or get [checklist items](/graph/api/resources/plannerchecklistitems?view
 ### Teamwork and communications | Calls and online meetings
 Get information about a [webinar](/graph/api/resources/virtualeventwebinar?view=graph-rest-beta&preserve-view=true) virtual event on Microsoft Teams, including the following:
 - [Presenter](/graph/api/resources/virtualeventpresenter?view=graph-rest-beta&preserve-view=true) information and [details](/graph/api/resources/virtualeventpresenterdetails?view=graph-rest-beta&preserve-view=true).
-- [Registration information](/graph/api/resources/virtualeventregistration?view=graph-rest-beta&preserve-view=true), registration questions, and [registrant information and status](/graph/api/resources/virtualeventregistrant?view=graph-rest-beta&preserve-view=true).
+- [Registration information](/graph/api/resources/virtualeventregistration?view=graph-rest-beta&preserve-view=true), registration questions, and [registrant information and status](/graph/api/resources/virtualeventregistration?view=graph-rest-1.0).
 - [Attendance report](/graph/api/resources/meetingattendancereport?view=graph-rest-beta&preserve-view=true) for a [session](/graph/api/resources/virtualeventsession?view=graph-rest-beta&preserve-view=true) in the webinar.
 - Create an [online meeting](/graph/api/resources/onlineMeeting?view=graph-rest-beta&preserve-view=true) with the option to anonymize attendees' identity in the meeting.
 - From a PSTN call log, [get](/graph/api/callrecords-callrecord-getpstncalls?view=graph-rest-beta&preserve-view=true) the IPv4 or IPv6 of a client's local address, and public IP address that can be used to determine the client's location.
@@ -1897,18 +2315,18 @@ Get information about a [webinar](/graph/api/resources/virtualeventwebinar?view=
 
 ### Security | Alerts and incidents
 - Manage an Amazon resource, Azure resource such as a VM, Storage, or KeyVault, or Google Cloud resource such as compute or Kubernetes cluster identifier, as specific types of [evidence](/graph/api/resources/security-alertevidence) related to an [alert](/graph/api/resources/security-alert).
-- Support Microsoft Defender for Cloud as a detection source that identifies a notable component or activity, or as a source that creates an [alert](/graph/api/resources/security-alert).  
+- Support Microsoft Defender for Cloud as a detection source that identifies a notable component or activity, or as a source that creates an [alert](/graph/api/resources/security-alert).
 
 ### Sites and lists
 - [Get](/graph/api/sharepointsettings-get) or [update](/graph/api/sharepointsettings-update) tenant-wide [settings](/graph/api/resources/sharepointsettings) for SharePoint and OneDrive, which include a number of settings such as the following:
   - The [idle session sign-out policy settings](/graph/api/resources/idlesessionsignout) for SharePoint.
   - Whether legacy authentication protocols are enabled for the tenant.
   - Whether guests must sign in using the same account to which sharing invitations are sent.
-- [Get all the sites](/graph/api/site-getallsites) across georgraphies in an organization. 
+- [Get all the sites](/graph/api/site-getallsites) across georgraphies in an organization.
 
 ### Teamwork and communications | Calls and online meetings
 - Identify the reasons for shared content or video from an [online meeting](/graph/api/resources/onlineMeeting) [participant](/graph/api/resources/meetingparticipants) being [restricted](/graph/api/resources/onlineMeetingRestricted).
-- [Get a join web URL](/graph/api/virtualappointment-getvirtualappointmentjoinweburl) for a [Microsoft Virtual Appointment](/microsoft-365/frontline/virtual-appointments). This web URL includes enhanced business-to-customer experiences such as mobile browser join and virtual lobby rooms. 
+- [Get a join web URL](/graph/api/virtualappointment-getvirtualappointmentjoinweburl) for a [Microsoft Virtual Appointment](/microsoft-365/frontline/virtual-appointments). This web URL includes enhanced business-to-customer experiences such as mobile browser join and virtual lobby rooms.
 
 
 ## May 2023: New in preview only
@@ -1916,7 +2334,7 @@ Get information about a [webinar](/graph/api/resources/virtualeventwebinar?view=
 ### Device and app management | Cloud PC
 - Get or set a template to name Cloud PCs provisioned by a [Cloud PC provisioning policy](/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-beta&preserve-view=true).
 - Get or set [configuration settings for how a Cloud PC joins Azure Active Directory](/graph/api/resources/cloudpcdomainjoinconfiguration?view=graph-rest-beta&preserve-view=true) in a [Cloud PC provisioning policy](/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-beta&preserve-view=true).
-- Get the [user](/graph/api/resources/user?view=graph-rest-beta&preserve-view=true) resources that are targeted in the [assignment](/graph/api/resources/cloudPcProvisioningPolicyAssignment?view=graph-rest-beta&preserve-view=true) of a [Cloud PC provisioning policy](/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-beta&preserve-view=true). This list of users is computed based on assignments, licenses, group memberships, and policies. 
+- Get the [user](/graph/api/resources/user?view=graph-rest-beta&preserve-view=true) resources that are targeted in the [assignment](/graph/api/resources/cloudPcProvisioningPolicyAssignment?view=graph-rest-beta&preserve-view=true) of a [Cloud PC provisioning policy](/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-beta&preserve-view=true). This list of users is computed based on assignments, licenses, group memberships, and policies.
 
 ### Education
 Get or update from class level [assignment settings](/graph/api/resources/educationassignmentsettings?view=graph-rest-beta&preserve-view=true) any [grading category](/graph/api/resources/educationgradingcategory?view=graph-rest-beta&preserve-view=true) to weight assignments differently when computing a class average grade.
@@ -1946,7 +2364,7 @@ Get or update from class level [assignment settings](/graph/api/resources/educat
 - Get a report that contains [sign-in activity information for a service principal](/graph/api/resources/serviceprincipalsigninactivity?view=graph-rest-beta&preserve-view=true) in an Azure Active Directory tenant.
 
 ### Security | Attack simulation and training
-Get the following additional data from [attack simulation reports](/graph/api/resources/report-m365defender-reports-overview?view=graph-rest-beta&preserve-view=true): 
+Get the following additional data from [attack simulation reports](/graph/api/resources/report-m365defender-reports-overview?view=graph-rest-beta&preserve-view=true):
 - The number of days that an [attack simulation user](/graph/api/resources/attackSimulationUser?view=graph-rest-beta&preserve-view=true) is out of office during an attack simulation and training campaign.
 - The last activity in [a user's detailed online actions](/graph/api/resources/userSimulationDetails?view=graph-rest-beta&preserve-view=true) in an attack simulation and training campaign.
 
@@ -2023,9 +2441,9 @@ For Microsoft Forms:
 - [Get a log of sent or received SMS messages](/graph/api/callrecords-callrecord-getsmslog?view=graph-rest-beta&preserve-view=true).
 - In addition to existing data in a [PSTN call log row](/graph/api/resources/callrecords-pstncalllogrow?view=graph-rest-beta&preserve-view=true), [get](/graph/api/callrecords-callrecord-getpstncalls?view=graph-rest-beta&preserve-view=true) the country code for the second party in the PSTN call.
 - In addition to existing data in a [direct routing call log row](/graph/api/resources/callrecords-directroutinglogrow?view=graph-rest-beta&preserve-view=true), [get](/graph/api/callrecords-callrecord-getdirectroutingcalls?view=graph-rest-beta&preserve-view=true) the country codes of the two parties in the direct routing call.
-- [Get the join URL](/graph/api/virtualappointment-getvirtualappointmentjoinweburl?view=graph-rest-beta&preserve-view=true) for an appointment on the [Virtual Appointments](https://support.microsoft.com/office/what-is-virtual-appointments-22df0079-e6d9-4225-bc65-22747fb2cb5f) app for Microsoft Teams. Existing customers who use the prior [virtual appointment](/graph/api/resources/virtualappointment?view=graph-rest-beta&preserve-view=true) API in their apps should update their apps to integrate with the Virtual Appointments app before the API stops returning data on June 20, 2023. For more information, see [Virtual Appointments with Microsoft Teams](/microsoft-365/frontline/virtual-appointments?view=o365-worldwide&preserve-view=true). 
+- [Get the join URL](/graph/api/virtualappointment-getvirtualappointmentjoinweburl?view=graph-rest-beta&preserve-view=true) for an appointment on the [Virtual Appointments](https://support.microsoft.com/office/what-is-virtual-appointments-22df0079-e6d9-4225-bc65-22747fb2cb5f) app for Microsoft Teams. Existing customers who use the prior [virtual appointment](/graph/api/resources/virtualappointment?view=graph-rest-beta&preserve-view=true) API in their apps should update their apps to integrate with the Virtual Appointments app before the API stops returning data on June 20, 2023. For more information, see [Virtual Appointments with Microsoft Teams](/microsoft-365/frontline/virtual-appointments?view=o365-worldwide&preserve-view=true).
 - Get or set the option to share the chat history of an [online meeting](/graph/api/resources/onlineMeeting?view=graph-rest-beta&preserve-view=true) with participants.
-- [Listing](/graph/api/callrecords-session-list?view=graph-rest-beta&preserve-view=true) sessions in a [call record](/graph/api/resources/callrecords-callrecord?view=graph-rest-beta&preserve-view=true) can now identify those sessions that took place for testing purpose.
+- [Listing](/graph/api/callrecords-callrecord-list-sessions?view=graph-rest-1.0) sessions in a [call record](/graph/api/resources/callrecords-callrecord?view=graph-rest-beta&preserve-view=true) can now identify those sessions that took place for testing purpose.
 - Represent CPU capabilities of a caller or callee [participant endpoint](/graph/api/resources/callrecords-participantendpoint?view=graph-rest-beta&preserve-view=true) in a [call](/graph/api/resources/call?view=graph-rest-beta&preserve-view=true) or [online meeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true).
 - Track the freeze duration data of a video stream in a [media stream](/graph/api/resources/callRecords-mediaStream?view=graph-rest-beta&preserve-view=true).
 - Communications servers can publish [deltaParticipants](/graph/api/resources/deltaParticipants?view=graph-rest-beta&preserve-view=true) notifications for the creation, update, or deletion of a [participant](/graph/api/resources/participant?view=graph-rest-beta&preserve-view=true) in a [call](/graph/api/resources/call?view=graph-rest-beta&preserve-view=true). For more information, see [JSON payload examples](/graph/api/application-post-calls?view=graph-rest-beta&preserve-view=true#notification---roster) of notifications with delta roster disabled or enabled.
@@ -2043,7 +2461,7 @@ Specify if an [application](/graph/api/resources/application) requires [Azure AD
 Use the [Microsoft Purview records management API](/graph/api/resources/security-recordsmanagement-overview) to help organizations manage the retention and deletion of data to meet legal obligations and compliance regulations.
 
 ### Identity and access | Directory management
-[Get](/graph/api/directoryobject-delta) newly created, updated, or deleted directory objects without performing a full read of the entire set of [Active Directory objects](/graph/api/resources/directoryobject) in an organization. 
+[Get](/graph/api/directoryobject-delta) newly created, updated, or deleted directory objects without performing a full read of the entire set of [Active Directory objects](/graph/api/resources/directoryobject) in an organization.
 
 ### Identity and access | Identity and sign-in
 - Enable or disable the following authentication methods for specific users and groups in a tenant:
@@ -2084,7 +2502,7 @@ When [sharing an item on OneDrive for Business](/graph/api/driveitem-createlink?
 - Get and manage the profile data of users from an external Azure AD tenant as [inbound shared user profile](/graph/api/resources/inboundshareduserprofile?view=graph-rest-beta&preserve-view=true), and profile data of users in the current tenant, who have shared their data with an external Azure AD tenant, as [outbound shared user profile](/graph/api/resources/outboundshareduserprofile?view=graph-rest-beta&preserve-view=true). Such capability is part of [Azure Active Directory (Azure AD) B2B direct connect](/azure/active-directory/external-identities/b2b-direct-connect-overview) which enables users from two Azure AD organizations to work together using their home credentials without having to be added to each other's organizations as guests.
 
 ### Industry data ETL
-Debut of the [industry data API](industrydata-concept-overview.md), which is a multi-vertical, cross-industry, ETL (Extract-Transform-Load) platform. Use the API to combine data from multiple sources into a single Azure Data Lake data store, normalize the data, and export it in outbound flows. Use it to assist with monitoring and troubleshooting. Get statistics after the data is processed. 
+Debut of the [industry data API](industrydata-concept-overview.md), which is a multi-vertical, cross-industry, ETL (Extract-Transform-Load) platform. Use the API to combine data from multiple sources into a single Azure Data Lake data store, normalize the data, and export it in outbound flows. Use it to assist with monitoring and troubleshooting. Get statistics after the data is processed.
 
 ### Reports | Azure AD activity reports
 - View in an Azure AD activity report if any [sign-in](/graph/api/resources/signin?view=graph-rest-beta&preserve-view=true) activity in your directory is triggered by a match of a condition about Microsoft admin portals, that is [satisfied in a rule](/graph/api/resources/conditionalaccessrulesatisfied?view=graph-rest-beta&preserve-view=true) in the [applied conditional access policy](/graph/api/resources/appliedconditionalaccesspolicy?view=graph-rest-beta&preserve-view=true).
@@ -2122,7 +2540,7 @@ As part of a [policy for access package assignment](/graph/api/resources/accessp
 Specify in a [cross-tenant access policy](/graph/api/resources/crosstenantaccesspolicy) to enable B2B collaboration across Azure clouds, for example, between tenants in Azure Commercial and Azure Government clouds, and between Azure Commercial and Azure China clouds.
 
 ### Search | Query
-Use application permissions and [search all shared or private content on SharePoint sites](search-concept-searchall.md) that belong to the app owner in a specified region. 
+Use application permissions and [search all shared or private content on SharePoint sites](search-concept-searchall.md) that belong to the app owner in a specified region.
 
 ### Security | Attack simulation and training
 - [Get](/graph/api/simulationautomation-get) information about an [automated attack simulation](/graph/api/resources/simulationautomation) for a tenant.
@@ -2146,15 +2564,15 @@ When calling the [synchronization API](/graph/api/resources/synchronization-over
 Request a lower privileged delegated or application permission, `Calendar.ReadBasic` or `Calendars.ReadBasic.All`, for most read operations for events in calendars, with or without a signed-in user present. These permissions allow an app to read events of all calendars, except for properties such as body, attachments, and extensions. For the exact list of operations that support these permissions, see the [February updates](https://developer.microsoft.com/en-us/graph/changelog/?search=&from=2023-02-01&to=2023-02-28) for **Calendar**.
 
 ### Device and app management | Cloud PC
-- Enable or disable single sign-on as part of a [Cloud PC provisioning policy](/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-beta&preserve-view=true) and of the [tenant-wide organization settings for Cloud PC](/graph/api/resources/cloudpcorganizationsettings?view=graph-rest-beta&preserve-view=true). When single sign-on is enabled, Windows 365 users can use single sign-on to authenticate to Azure Active Directory (Azure AD) with passwordless options (for example, FIDO keys) to access their Cloud PCs. 
+- Enable or disable single sign-on as part of a [Cloud PC provisioning policy](/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-beta&preserve-view=true) and of the [tenant-wide organization settings for Cloud PC](/graph/api/resources/cloudpcorganizationsettings?view=graph-rest-beta&preserve-view=true). When single sign-on is enabled, Windows 365 users can use single sign-on to authenticate to Azure Active Directory (Azure AD) with passwordless options (for example, FIDO keys) to access their Cloud PCs.
 - Organizations with frontline workers can provision Cloud PCs as a shared [type](/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-beta&preserve-view=true#cloudpcprovisioningtype-values) and subscribe to a shared-use service plan for Cloud PCs.
-- Allow a customer to select from a list of [supported region groups](/graph/api/resources/cloudpcsupportedregion?view=graph-rest-beta&preserve-view=true#cloudpcregiongroup-values) when provisioning a Cloud PC, so to put that Cloud PC in one of the regions belonging to that group based on resource status. 
+- Allow a customer to select from a list of [supported region groups](/graph/api/resources/cloudpcsupportedregion?view=graph-rest-beta&preserve-view=true#cloudpcregiongroup-values) when provisioning a Cloud PC, so to put that Cloud PC in one of the regions belonging to that group based on resource status.
 
 ### Device and app management | Device updates
 Use the Windows Update for Business deployment service to manage Windows 11 feature updates and [driver updates](windowsupdates-manage-driver-update.md). When enrolled devices are scanned for updates, the deployment service identifies applicable, better drivers for each device. The service collects such driver information in a [catalog](/graph/api/resources/windowsupdates-catalog?view=graph-rest-beta&preserve-view=true) for [approval](/graph/api/resources/windowsupdates-contentapproval?view=graph-rest-beta&preserve-view=true), and schedules approved [catalog content](/graph/api/resources/windowsupdates-catalogcontent?view=graph-rest-beta&preserve-view=true) for [deployment](/graph/api/resources/windowsupdates-deployment?view=graph-rest-beta&preserve-view=true).
 
 ### Identity and access | Directory management
-Debut of pronouns support for organizations - use [pronouns settings](/graph/api/resources/pronounsSettings?view=graph-rest-beta&preserve-view=true) to _programmatically_ [manage the support of pronouns in an organization](pronouns-configure-pronouns-availability.md). Find out about how _administrators_ can [enable or disable pronouns in the Microsoft 365 admin center](/microsoft-365/admin/add-users/turn-pronouns-on-or-off?view=o365-worldwide&preserve-view=true), and the availability timeline for pronouns on profile cards on the [Microsoft 365 roadmap](https://www.microsoft.com/en-us/microsoft-365/roadmap?filters=&searchterms=pronouns).  
+Debut of pronouns support for organizations - use [pronouns settings](/graph/api/resources/pronounsSettings?view=graph-rest-beta&preserve-view=true) to _programmatically_ [manage the support of pronouns in an organization](pronouns-configure-pronouns-availability.md). Find out about how _administrators_ can [enable or disable pronouns in the Microsoft 365 admin center](/microsoft-365/admin/add-users/turn-pronouns-on-or-off?view=o365-worldwide&preserve-view=true), and the availability timeline for pronouns on profile cards on the [Microsoft 365 roadmap](https://www.microsoft.com/en-us/microsoft-365/roadmap?filters=&searchterms=pronouns).
 
 ### Reports | Identity and access reports
 Use the [recommendation](/graph/api/resources/recommendation?view=graph-rest-beta&preserve-view=true) resource as personalized and actionable insights to implement Azure Active Directory best practices. Recommendations help to ensure your tenant is in a secure and healthy state and maximize the value of the features available in Azure AD. For more information about how recommendations work in Azure AD for administrators, see [What are Azure Active Directory recommendations](/azure/active-directory/reports-monitoring/overview-recommendations).
@@ -2180,10 +2598,10 @@ Support an [Azure Communication Services user](/graph/api/resources/azureCommuni
 Intune [January updates](https://developer.microsoft.com/en-us/graph/changelog/?search=&from=2023-01-01&to=2023-01-31) for the v1.0 version.
 
 ### Identity and access | Directory management
-Get the country code that represents the default service usage location of an [organization](/graph/api/resources/organization). 
+Get the country code that represents the default service usage location of an [organization](/graph/api/resources/organization).
 
 ### Security | Attack simulation and training
-- [Get](/graph/api/attacksimulationroot-get-simulationautomations) information about an [automated attack simulation](/graph/api/resources/simulationautomation) for a tenant.
+- [Get](/graph/api/simulation-get?view=graph-rest-1.0) information about an [automated attack simulation](/graph/api/resources/simulationautomation) for a tenant.
 - [Get a list](/graph/api/simulationautomation-list-runs) of [automated runs of attack simulation](/graph/api/resources/simulationautomationrun) for a tenant.
 
 ### Tasks and plans
@@ -2216,12 +2634,12 @@ Get or set a display name for a [print job](/graph/api/resources/printjob?view=g
 
 
 ### Security | Attack simulation and training
-- [Create](/graph/api/attacksimulationroot-create-simulation?view=graph-rest-beta&preserve-view=true) or [delete](/graph/api/attacksimulationroot-delete-simulation?view=graph-rest-beta&preserve-view=true) an [attack simulation](/graph/api/resources/simulation?view=graph-rest-beta&preserve-view=true) campaign for a tenant. Prior to this update, apps can only [get](/graph/api/attacksimulationroot-get-simulations?view=graph-rest-beta&preserve-view=true) information about an existing simulation campaign.
-- [Get](/graph/api/attacksimulationroot-get-payload?view=graph-rest-beta&preserve-view=true) information about an attack simulation training. Get further [details](/graph/api/resources/payloaddetail?view=graph-rest-beta&preserve-view=true) such as the content and coachmarks.
+- [Create](/graph/api/contenttype-update?view=graph-rest-1.0) or [delete](/graph/api/simulation-delete?view=graph-rest-1.0) an [attack simulation](/graph/api/resources/simulation?view=graph-rest-beta&preserve-view=true) campaign for a tenant. Prior to this update, apps can only [get](/graph/api/simulationautomation-get?view=graph-rest-1.0) information about an existing simulation campaign.
+- [Get](/graph/api/payload-get?view=graph-rest-1.0) information about an attack simulation training. Get further [details](/graph/api/resources/payloaddetail?view=graph-rest-beta&preserve-view=true) such as the content and coachmarks.
 
 
 ### Tasks and plans | Business scenarios
-Debut of the [business scenarios API](/graph/api/resources/businessscenario-overview?view=graph-rest-beta&preserve-view=true) which allows developer customers to [configure plans and tasks](/graph/api/resources/businessscenario-planner-overview?view=graph-rest-beta&preserve-view=true#planner-configuration), and to bring custom scenario data in entities for their Planner-specific scenarios. 
+Debut of the [business scenarios API](/graph/api/resources/businessscenario-overview?view=graph-rest-beta&preserve-view=true) which allows developer customers to [configure plans and tasks](/graph/api/resources/businessscenario-planner-overview?view=graph-rest-beta&preserve-view=true#planner-configuration), and to bring custom scenario data in entities for their Planner-specific scenarios.
 
 
 ## December 2022: New and generally available
@@ -2230,7 +2648,7 @@ Debut of the [business scenarios API](/graph/api/resources/businessscenario-over
 Address a [service principal](/graph/api/resources/serviceprincipal) by a new alternate key, **appId**.
 
 ### Identity and access | Directory management
-- Address an [device](/graph/api/resources/device) by a new alternate key, **deviceId**. 
+- Address an [device](/graph/api/resources/device) by a new alternate key, **deviceId**.
 - Address an [directoryRole](/graph/api/resources/directoryrole) by a new alternate key, **roleTemplateId**.
 
 ### Identity and access | Identity and sign-in
@@ -2263,13 +2681,13 @@ Get additional details about user or application [sign-in](/graph/api/resources/
   - The URL of a thumbnail image for the page.
   - Whether to show comments at the bottom of the page.
   - Whether to show recommended pages at the bottom of the page.
-- Differentiate a [web part](/graph/api/resources/webpart?view=graph-rest-beta&preserve-view=true) as a [standard web part](/graph/api/resources/standardwebpart?view=graph-rest-beta&preserve-view=true) or [text web part](/graph/api/resources/textwebpart?view=graph-rest-beta&preserve-view=true). 
+- Differentiate a [web part](/graph/api/resources/webpart?view=graph-rest-beta&preserve-view=true) as a [standard web part](/graph/api/resources/standardwebpart?view=graph-rest-beta&preserve-view=true) or [text web part](/graph/api/resources/textwebpart?view=graph-rest-beta&preserve-view=true).
 - Get [web part data](/graph/api/resources/webpartdata?view=graph-rest-beta&preserve-view=true) from a [standard web part](/graph/api/resources/standardwebpart?view=graph-rest-beta&preserve-view=true).
 - [Get position information](/graph/api/webpart-getposition?view=graph-rest-beta&preserve-view=true) of a [web part](/graph/api/resources/webpart?view=graph-rest-beta&preserve-view=true).
 - [Get a collection of web parts](/graph/api/sitepage-getwebpartsbyposition?view=graph-rest-beta&preserve-view=true) by providing [web part position](/graph/api/resources/webpartposition?view=graph-rest-beta&preserve-view=true) information.
 
 ### Tasks and plans
-Use an external source to relate a [bucket](/graph/api/resources/plannerbucket?view=graph-rest-beta&preserve-view=true), [task](/graph/api/resources/plannertask?view=graph-rest-beta&preserve-view=true), or [plan](/graph/api/resources/plannerplan?view=graph-rest-beta&preserve-view=true) to a user experience outside of Planner. Surface and sync the bucket, task, or plan in that experience, and track work in the context of that experience. See more information in [external bucket source](/graph/api/resources/plannerexternalbucketsource?view=graph-rest-beta&preserve-view=true), [external task source](/graph/api/resources/plannerexternaltasksource?view=graph-rest-beta&preserve-view=true), and [external plan source](/graph/api/resources/plannerexternalplansource?view=graph-rest-beta&preserve-view=true). 
+Use an external source to relate a [bucket](/graph/api/resources/plannerbucket?view=graph-rest-beta&preserve-view=true), [task](/graph/api/resources/plannertask?view=graph-rest-beta&preserve-view=true), or [plan](/graph/api/resources/plannerplan?view=graph-rest-beta&preserve-view=true) to a user experience outside of Planner. Surface and sync the bucket, task, or plan in that experience, and track work in the context of that experience. See more information in [external bucket source](/graph/api/resources/plannerexternalbucketsource?view=graph-rest-beta&preserve-view=true), [external task source](/graph/api/resources/plannerexternaltasksource?view=graph-rest-beta&preserve-view=true), and [external plan source](/graph/api/resources/plannerexternalplansource?view=graph-rest-beta&preserve-view=true).
 
 
 ### Use SDKs
@@ -2307,14 +2725,14 @@ To get started, see:
 [Delete Microsoft Teams messages](/graph/api/security-ediscoverysearch-purgedata) contained in a eDiscovery search. Specify the purge type to be soft or hard delete, and the scope of the purge action.
 
 ### Teamwork and communications | Messaging
-- Only the tenant admin of the sender of a [chat message](/graph/api/resources/chatmessage) can [update](/graph/api/chatmessage-update) and override a [policy violation](/graph/api/resources/chatmessagepolicyviolation) on the message. Usually, a data loss prevention (DLP) application takes action when a sender violates policy and sends data they should not send. 
+- Only the tenant admin of the sender of a [chat message](/graph/api/resources/chatmessage) can [update](/graph/api/chatmessage-update) and override a [policy violation](/graph/api/resources/chatmessagepolicyviolation) on the message. Usually, a data loss prevention (DLP) application takes action when a sender violates policy and sends data they should not send.
 - [Send activity feed notifications](teams-send-activityfeednotifications.md) to a user, to a user in a chat, or to a user in a team, based on the supported types of [activities](/microsoftteams/platform/resources/schema/manifest-schema#activities) declared in the corresponding app manifest.
 
 
 ## November 2022: New in preview only
 
 ### Applications
-- Enable or disable the [lock configuration of sensitive properties](/graph/api/resources/serviceprincipallockconfiguration?view=graph-rest-beta&preserve-view=true) of a multi-tenant [application](/graph/api/resources/application?view=graph-rest-beta&preserve-view=true) for editing after the application is provisioned in a tenant. 
+- Enable or disable the [lock configuration of sensitive properties](/graph/api/resources/serviceprincipallockconfiguration?view=graph-rest-beta&preserve-view=true) of a multi-tenant [application](/graph/api/resources/application?view=graph-rest-beta&preserve-view=true) for editing after the application is provisioned in a tenant.
 - Address a [service principal](/graph/api/resources/serviceprincipal?view=graph-rest-beta&preserve-view=true) by a new alternate key, **appId**.
 - Address an [application](/graph/api/resources/application?view=graph-rest-beta&preserve-view=true) by a new alternate key, **appId**. The Microsoft Entra admin center app registration refers to **appId** as the application (client) ID.
 
@@ -2381,7 +2799,7 @@ Intune [October updates](https://developer.microsoft.com/en-us/graph/changelog/?
 - Support a status of granular delegated admin privileges (GDAP) or delegated and granular delegated admin privileges relationship between a managing entity and a [managed tenant](/graph/api/resources/managedtenants-tenant?view=graph-rest-beta&preserve-view=true).
 
 ### Identity and access | Governance
-- Enable a [workflow](/graph/api/resources/identitygovernance-workflow?view=graph-rest-beta&preserve-view=true) or its subsequent versions to run on demand, or on schedule by the Lifecycle Workflows engine based on the schedule defined by tenant settings. 
+- Enable a [workflow](/graph/api/resources/identitygovernance-workflow?view=graph-rest-beta&preserve-view=true) or its subsequent versions to run on demand, or on schedule by the Lifecycle Workflows engine based on the schedule defined by tenant settings.
 - [Move](/graph/api/accesspackage-movetocatalog?view=graph-rest-beta&preserve-view=true) an [access package](/graph/api/resources/accesspackage?view=graph-rest-beta&preserve-view=true) to a specified target [access package catalog](/graph/api/resources/accesspackagecatalog?view=graph-rest-beta&preserve-view=true).
 
 ### Identity and access | Identity and sign-in
@@ -2408,9 +2826,9 @@ Create a [comment](/graph/api/resources/security-alertcomment?view=graph-rest-be
 [Get](/graph/api/plannertaskdetails-get?view=graph-rest-beta&preserve-view=true) or [update](/graph/api/plannertaskdetails-update?view=graph-rest-beta&preserve-view=true) rich text description of a Planner [task](/graph/api/resources/plannertask?view=graph-rest-beta&preserve-view=true) intended for HTML-aware clients.
 
 ### Teamwork and communications | Messaging
-- Subscribe to [change notification of membership in all the channels across a tenant](teams-changenotifications-teamMembership.md#subscribe-to-membership-changes-in-all-channels-across-the-tenant-preview). 
+- Subscribe to [change notification of membership in all the channels across a tenant](teams-changenotifications-channelmembership.md#subscribe-to-membership-changes-in-all-channels-across-the-tenant-preview).
 - [Set](/graph/api/chatmessage-setreaction?view=graph-rest-beta&preserve-view=true) or [unset](/graph/api/chatmessage-unsetreaction?view=graph-rest-beta&preserve-view=true) a reaction to a single [message](/graph/api/resources/chatmessage?view=graph-rest-beta&preserve-view=true) or a [message reply](/graph/api/resources/chatmessage?view=graph-rest-beta&preserve-view=true) in a Teams [channel](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true) or a [chat](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true).
-- Only the tenant admin of the sender of a [chat message](/graph/api/resources/chatmessage?view=graph-rest-beta&preserve-view=true) can [update](/graph/api/chatmessage-update?view=graph-rest-beta&preserve-view=true) and override a [policy violation](/graph/api/resources/chatmessagepolicyviolation?view=graph-rest-beta&preserve-view=true) on the message. Usually, a data loss prevention (DLP) application takes action when a sender violates policy and sends data they should not send. 
+- Only the tenant admin of the sender of a [chat message](/graph/api/resources/chatmessage?view=graph-rest-beta&preserve-view=true) can [update](/graph/api/chatmessage-update?view=graph-rest-beta&preserve-view=true) and override a [policy violation](/graph/api/resources/chatmessagepolicyviolation?view=graph-rest-beta&preserve-view=true) on the message. Usually, a data loss prevention (DLP) application takes action when a sender violates policy and sends data they should not send.
 - The [identity](/graph/api/resources/teamworkUserIdentity?view=graph-rest-beta&preserve-view=true) of a user in a Teams chat or online meeting can be an Azure Communication Services user.
 
 ## September 2022: New and generally available
@@ -2443,8 +2861,8 @@ For apps that make multiple requests on Outlook resources in the same mailbox, y
 ### Devices and apps | Corporate management
 Intune [September updates](https://developer.microsoft.com/en-us/graph/changelog/?search=&from=2022-09-01&to=2022-09-30) for the beta version.
 
-### Files 
-[Assign a sensitivity label](/graph/api/driveitem-assignsensitivitylabel?view=graph-rest-beta&preserve-view=true) to a file in OneDrive or SharePoint. 
+### Files
+[Assign a sensitivity label](/graph/api/driveitem-assignsensitivitylabel?view=graph-rest-beta&preserve-view=true) to a file in OneDrive or SharePoint.
 
 ### Identity and access | Governance
 As part of a [policy for access package assignment](/graph/api/resources/accesspackageassignmentpolicy?view=graph-rest-beta&preserve-view=true), you can specify or get the required regex pattern for a requestor to answer an [access package question](/graph/api/resources/accessPackageTextInputQuestion?view=graph-rest-beta&preserve-view=true).
@@ -2485,7 +2903,7 @@ Intune [August updates](https://developer.microsoft.com/en-us/graph/changelog/?s
 Manage a [policy](/graph/api/resources/accessPackageAssignmentPolicy) that assigns an [access package](/graph/api/resources/accesspackage) to a subject automatically, as opposed to assigning on the subject's request.
 
 ### Identity and access | Identity and sign-in
-- GA of [authentication methods](/graph/api/resources/authenticationmethods-overview) including [email](/graph/api/resources/emailauthenticationmethod), [password](/graph/api/resources/passwordauthenticationmethod), [phone](/graph/api/resources/phoneauthenticationmethod), and [software OATH](/graph/api/resources/softwareoathauthenticationmethod). 
+- GA of [authentication methods](/graph/api/resources/authenticationmethods-overview) including [email](/graph/api/resources/emailauthenticationmethod), [password](/graph/api/resources/passwordauthenticationmethod), [phone](/graph/api/resources/phoneauthenticationmethod), and [software OATH](/graph/api/resources/softwareoathauthenticationmethod).
 - [Reset a user password](/graph/api/authenticationmethod-resetpassword) and get the operation status for a [long-running operation](/graph/api/resources/longrunningoperation).
 - Manage [session controls](/graph/api/resources/conditionalaccesssessioncontrols) to enforce sign-in frequency in a [conditional access policy](/graph/api/resources/conditionalaccesspolicy).
 
@@ -2498,8 +2916,8 @@ Manage the [version history of a document set](/graph/api/resources/documentsetv
 - Get a [call record](/graph/api/resources/callrecords-callrecord) of calls or online meetings that use Azure Communication Service as a [client user agent](/graph/api/resources/callrecords-clientuseragent) in an [endpoint](/graph/api/resources/callrecords-endpoint).
 
 ### Teamwork and communications | Messaging
-- Limit a [chat](/graph/api/resources/chat) title to a maximum of 255 characters and characters that are _not_ the colon. 
-- [List](/graph/api/chat-list) the chats of a specific user who may not be signed in or is different from the signed-in user, using application permissions.
+- Limit a [chat](/graph/api/resources/chat) title to a maximum of 255 characters and characters that are _not_ the colon.
+- [List](/graph/api/chat-list) the chats of a specific user who might not be signed in or is different from the signed-in user, using application permissions.
 - [List](/graph/api/chat-list) and sort chats starting with the most recent ones.
 
 
@@ -2568,8 +2986,8 @@ Intune [July updates](https://developer.microsoft.com/en-us/graph/changelog/?sea
 - [Reprocess](/graph/api/accesspackageassignmentrequest-reprocess) an [access package assignment request](/graph/api/resources/accesspackageassignmentrequest) to automatically retry a user's request for access to the package.
 - [Reprocess](/graph/api/accesspackageassignment-reprocess) an [access package assignment](/graph/api/resources/accesspackageassignment) to automatically re-evaluate and enforce a user's assignments to groups, applications, and SharePoint Online sites for internal users as well as users outside your organization
 - [Get](/graph/api/accesspackageassignment-get) an [access package assignment](/graph/api/resources/accesspackageassignment) to help manage access to groups, applications, and SharePoint Online sites for users internal to or outside of an organization.
-- Configure [settings](/graph/api/resources/accessreviewstagesettings) for each [stage](/graph/api/resources/accessreviewstage) in a multi-stage access review. In addition to [get](/graph/api/accessreviewstage-get) or [update](/graph/api/accessreviewstage-update) an access review stage, you can do the following: 
-  - [Stop](/graph/api/accessreviewstage-stop) reviewers from giving more input to a stage and proceed to the next stage if applicable. 
+- Configure [settings](/graph/api/resources/accessreviewstagesettings) for each [stage](/graph/api/resources/accessreviewstage) in a multi-stage access review. In addition to [get](/graph/api/accessreviewstage-get) or [update](/graph/api/accessreviewstage-update) an access review stage, you can do the following:
+  - [Stop](/graph/api/accessreviewstage-stop) reviewers from giving more input to a stage and proceed to the next stage if applicable.
   - [Filter](/graph/api/accessreviewstage-filterbycurrentuser) and get all the stages on an [access review instance](/graph/api/resources/accessreviewinstance) for which the calling user is a reviewer
   - [List decisions](/graph/api/accessreviewstage-list-decisions) from a multi-stage access review.
 
@@ -2592,7 +3010,7 @@ Intune [July updates](https://developer.microsoft.com/en-us/graph/changelog/?sea
 ## July 2022: New in preview only
 
 ### Cloud communications | Call
-- [Join a scheduled call](/graph/api/application-post-calls?view=graph-rest-beta&preserve-view=true) with a join-meeting ID or passcode. 
+- [Join a scheduled call](/graph/api/application-post-calls?view=graph-rest-beta&preserve-view=true) with a join-meeting ID or passcode.
 
 ### Cloud communications | Online meeting
 - [Create](/graph/api/application-post-onlinemeetings?view=graph-rest-beta&preserve-view=true#example-4-create-an-online-meeting-that-requires-a-passcode) an [online meeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true) that requires a passcode.
@@ -2648,7 +3066,7 @@ Get information about the audio codec, video codec, network transport protocol, 
 
 ### Identity and access | Directory management
 - [List the administrative units](/graph/api/device-list-memberOf) that a [device](/graph/api/resources/device) is a member of.
-- Manage devices as members in an [administrative unit](/graph/api/resources/administrativeunit): [list members](/graph/api/administrativeunit-list-members) including devices, and [get](/graph/api/administrativeunit-get-members), [add](/graph/api/administrativeunit-post-members), and [remove](/graph/api/administrativeunit-delete-members) a device as a member. 
+- Manage devices as members in an [administrative unit](/graph/api/resources/administrativeunit): [list members](/graph/api/administrativeunit-list-members) including devices, and [get](/graph/api/administrativeunit-get-members), [add](/graph/api/administrativeunit-post-members), and [remove](/graph/api/administrativeunit-delete-members) a device as a member.
 - [Get](/graph/api/application-get) the status and other details of [security and compliance certification](/graph/api/resources/certification) of an [application](/graph/api/resources/application) to protect customer data.
 - Configure [federation settings with Azure AD](/graph/api/resources/internalDomainFederation).
 
@@ -2718,7 +3136,7 @@ Specify if a [group](/graph/api/resources/group?view=graph-rest-beta&preserve-vi
 Hide self-service password reset (SSPR) links in the [login page text visibility settings](/graph/api/resources/loginpagetextvisibilitysettings?view=graph-rest-beta&preserve-view=true) for a tenant's sign-in page.
 
 ### Teamwork
-- Get the details of [pinning](/graph/api/resources/messagePinnedEventMessageDetail?view=graph-rest-beta&preserve-view=true) or [unpinning](/graph/api/resources/messageUnpinnedEventMessageDetail?view=graph-rest-beta&preserve-view=true) a [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta&preserve-view=true) in a [chat](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true). 
+- Get the details of [pinning](/graph/api/resources/messagePinnedEventMessageDetail?view=graph-rest-beta&preserve-view=true) or [unpinning](/graph/api/resources/messageUnpinnedEventMessageDetail?view=graph-rest-beta&preserve-view=true) a [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta&preserve-view=true) in a [chat](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true).
 - As scenarios supported to export Teams content, you can [list](/graph/api/teamwork-list-deletedteams?view=graph-rest-beta&preserve-view=true) teams that have been deleted, and [get](/graph/api/deletedteam-getallmessages?view=graph-rest-beta&preserve-view=true) 1:1 chats, group chats, meeting chats, and channel messages of a [deleted team](/graph/api/resources/deletedTeam?view=graph-rest-beta&preserve-view=true). For more information, see [Export content with the Microsoft Teams export APIs](/microsoftteams/export-teams-content).
 
 
@@ -2739,8 +3157,8 @@ Allow an Azure Active Directory (Azure AD) tenant to set up [federation with ano
 You can specify up to 1000 search results per page for a [search request](/graph/api/resources/searchrequest).
 
 ### Sites and lists
-- Get a collection of [content type](/graph/api/resources/contentType) resources from the content type hub that are compatible by using the [getCompatibleHubContentTypes](/graph/api/contenttype-getcompatiblehubcontenttypes) action. 
-- Add or synchronize a content type from the content type hub to a [site](/graph/api/resources/site) or [list](/graph/api/resources/list), by using the [addCopyFromContentTypeHub](/graph/api/contenttype-addcopyfromcontenttypehub) action. This makes a content type or its update available to a specific site or list where it is needed. This is an improvement from the legacy sync infrastructure which pushes the content type to all sites across an organization, reducing wait times for the publishing to propagate. 
+- Get a collection of [content type](/graph/api/resources/contentType) resources from the content type hub that are compatible by using the [getCompatibleHubContentTypes](/graph/api/contenttype-getcompatiblehubcontenttypes) action.
+- Add or synchronize a content type from the content type hub to a [site](/graph/api/resources/site) or [list](/graph/api/resources/list), by using the [addCopyFromContentTypeHub](/graph/api/contenttype-addcopyfromcontenttypehub) action. This makes a content type or its update available to a specific site or list where it is needed. This is an improvement from the legacy sync infrastructure which pushes the content type to all sites across an organization, reducing wait times for the publishing to propagate.
 - Get one or more [rich, long-running operations](/graph/api/resources/richlongrunningoperation) occurring on a site or list, which can happen when adding a content type synchronously.
 
 ### Tasks and plans
@@ -2828,7 +3246,7 @@ Use [Privileged Identity Management (PIM)](/graph/api/resources/privilegedidenti
 Configure [federation settings](/graph/api/resources/internalDomainFederation?view=graph-rest-beta&preserve-view=true) to federate domains with Azure Active Directory.
 
 ### Identity and access | Governance
-[Get assignments](/graph/api/accesspackageassignment-additionalaccess?view=graph-rest-beta&preserve-view=true) for which the corresponding user has an incompatible access packages. 
+[Get assignments](/graph/api/accesspackageassignment-additionalaccess?view=graph-rest-beta&preserve-view=true) for which the corresponding user has an incompatible access packages.
 
 ### Reports | Identity and access reports
 Confirm an event is [high-risk and compromised](/graph/api/signin-confirmCompromised?view=graph-rest-beta&preserve-view=true) or is [safe](/graph/api/signin-confirmSafe?view=graph-rest-beta&preserve-view=true) by marking the event in the corresponding Azure Active Directory sign-in logs.
@@ -2865,7 +3283,7 @@ Specify the [inclusion or exclusion of client applications](/graph/api/resources
 ### Use the toolkit
 Celebrate real teamwork with community contributions and try new features in [Microsoft Graph Toolkit v2.4.0](https://github.com/microsoftgraph/microsoft-graph-toolkit/releases/tag/v2.4.0):
 - Optimize refreshing of people's images in the [person](/graph/toolkit/components/person) component by using the `disable-image-fetch` attribute to control unnecessary fetching.
-- Avoid unncessary loading of people's images in the [people picker](/graph/toolkit/components/people-picker) component by using the `disable-images` attribute. 
+- Avoid unncessary loading of people's images in the [people picker](/graph/toolkit/components/people-picker) component by using the `disable-images` attribute.
 - Filter for available users, groups, and list of people in the [people picker](/graph/toolkit/components/people-picker) component by using the `user-filters`, `group-filters`, and `people-filters` attributes.
 
 
@@ -2890,7 +3308,7 @@ Specify one or more [meeting participants](/graph/api/resources/meetingParticipa
 [List](/graph/api/managedtenants-managedtenant-list-auditevents?view=graph-rest-beta&preserve-view=true) and [get](/graph/api/managedtenants-auditevent-get?view=graph-rest-beta&preserve-view=true) audit events for managed tenants in Microsoft 365 Lighthouse.
 
 ### Identity and access | Directory management
-- [List](/graph/api/organizationsettings-list-microsoftapplicationdataaccess?view=graph-rest-beta&preserve-view=true) or [update](/graph/api/microsoftapplicationdataaccesssettings-update?view=graph-rest-beta&preserve-view=true) [settings](/graph/api/resources/microsoftapplicationdataaccesssettings?view=graph-rest-beta&preserve-view=true) that specify access from Microsoft applications to Microsoft 365 data belonging to users in an organization. For example, given the proper authorization, whether only Microsoft 365 apps (such as Word and Excel) can access users' Microsoft 365 data, or whether other Microsoft apps (such as Windows) can access the data as well. By default, all users in an organization can access in a Microsoft app any Microsoft 365 data that the user has been authorized to access. 
+- [List](/graph/api/organizationsettings-list-microsoftapplicationdataaccess?view=graph-rest-beta&preserve-view=true) or [update](/graph/api/microsoftapplicationdataaccesssettings-update?view=graph-rest-beta&preserve-view=true) [settings](/graph/api/resources/microsoftapplicationdataaccesssettings?view=graph-rest-beta&preserve-view=true) that specify access from Microsoft applications to Microsoft 365 data belonging to users in an organization. For example, given the proper authorization, whether only Microsoft 365 apps (such as Word and Excel) can access users' Microsoft 365 data, or whether other Microsoft apps (such as Windows) can access the data as well. By default, all users in an organization can access in a Microsoft app any Microsoft 365 data that the user has been authorized to access.
 - Following the Zero Trust cybersecurity model, Microsoft partners can use [granular delegated admin privileges (GDAP)](/graph/api/resources/delegatedadminrelationships-api-overview?view=graph-rest-beta&preserve-view=true) to carry out administrative tasks with least-privileged access to their customer tenants, to avoid potential security exposures. Instead of requesting Global Administrator role as in the past, partners request specific roles for customer tenant administration for a definite amount of time, and their customers must explicitly grant the least-privileged access to them.
 
 ### Security | Attack simulation and training
@@ -2927,7 +3345,7 @@ Get [details about an online meeting](/graph/api/resources/teamworkOnlineMeeting
 ### Change notifications
 Subscribe to changes of Outlook contacts, events, or messages to receive notifications that include resource data in the payload. For more information, see [Change notifications for Outlook resources in Microsoft Graph](outlook-change-notifications-overview.md).
 
-### Device and app management | Cloud PC 
+### Device and app management | Cloud PC
 - Define [restore point settings](/graph/api/resources/cloudpcrestorepointsetting?view=graph-rest-beta&preserve-view=true), which include the frequency to create a restore point, and whether users can restore their own Cloud PC based on a restore point backup.
 - [Restore](/graph/api/manageddevice-restorecloudpc?view=graph-rest-beta&preserve-view=true) a Cloud PC based on a previous snapshot.
 - [Restore multiple Cloud PCs](/graph/api/manageddevice-bulkrestorecloudpc?view=graph-rest-beta&preserve-view=true) in a single request by specifying their managed device IDs and a date/time range (e.g., before, after) of a restore point.
@@ -2936,8 +3354,8 @@ Subscribe to changes of Outlook contacts, events, or messages to receive notific
 Use application permissions `CustomSecAttributeAssignment.Read.All` to read [custom security attribute definitions](/graph/api/resources/customsecurityattributedefinition?view=graph-rest-beta&preserve-view=true) for an organization without a signed-in user.
 
 ### Identity and access | Governance
-- Configure [settings](/graph/api/resources/accessreviewstagesettings?view=graph-rest-beta&preserve-view=true) for each [stage](/graph/api/resources/accessreviewstage?view=graph-rest-beta&preserve-view=true) in a multi-stage access review. In addition to [get](/graph/api/accessreviewstage-get?view=graph-rest-beta&preserve-view=true) or [update](/graph/api/accessreviewstage-update?view=graph-rest-beta&preserve-view=true) an access review stage, you can do the following: 
-  - [Stop](/graph/api/accessreviewstage-stop?view=graph-rest-beta&preserve-view=true) reviewers from giving more input to a stage and proceed to the next stage if applicable. 
+- Configure [settings](/graph/api/resources/accessreviewstagesettings?view=graph-rest-beta&preserve-view=true) for each [stage](/graph/api/resources/accessreviewstage?view=graph-rest-beta&preserve-view=true) in a multi-stage access review. In addition to [get](/graph/api/accessreviewstage-get?view=graph-rest-beta&preserve-view=true) or [update](/graph/api/accessreviewstage-update?view=graph-rest-beta&preserve-view=true) an access review stage, you can do the following:
+  - [Stop](/graph/api/accessreviewstage-stop?view=graph-rest-beta&preserve-view=true) reviewers from giving more input to a stage and proceed to the next stage if applicable.
   - [Filter](/graph/api/accessreviewstage-filterbycurrentuser?view=graph-rest-beta&preserve-view=true) and get all the stages on an [access review instance](/graph/api/resources/accessreviewinstance?view=graph-rest-beta&preserve-view=true) for which the calling user is a reviewer
   - [List decisions](/graph/api/accessreviewstage-list-decisions?view=graph-rest-beta&preserve-view=true) from a multi-stage access review.
 - Apps can use application permission `EntitlementManagement.ReadWrite.All` to [create an access package resource request](/graph/api/entitlementmanagement-post-accesspackageresourcerequests?view=graph-rest-beta&preserve-view=true) to add or remove a resource to an [access package catalog](/graph/api/resources/accesspackagecatalog?view=graph-rest-beta&preserve-view=true).
@@ -2946,7 +3364,7 @@ Use application permissions `CustomSecAttributeAssignment.Read.All` to read [cus
 - Use a number of new properties to configure an [organization's branding](/graph/api/resources/organizationalbrandingproperties?view=graph-rest-beta&preserve-view=true). For example, a banner version of a company logo for the sign-in page, a custom favicon with a CDN-based URL, and a few other custom properties for users to manage accounts.
 - Include or exclude Linux as one of the [platform conditions](/graph/api/resources/conditionalaccessplatforms?view=graph-rest-beta&preserve-view=true) in a [conditional access policy](/graph/api/resources/conditionalaccesspolicy?view=graph-rest-beta&preserve-view=true).
 - Identify [at-risk service principals](/graph/api/resources/riskyserviceprincipal?view=graph-rest-beta&preserve-view=true) in an organization with Azure AD, which continually [detects and evaluates risks](/graph/api/resources/serviceprincipalriskdetection?view=graph-rest-beta&preserve-view=true) based on various signals and machine learning. You can [confirm](/graph/api/riskyserviceprincipal-confirmcompromised?view=graph-rest-beta&preserve-view=true) if an at-risk service principal is indeed compromised, upon which Microsoft would disable that service principal object. You can [dismiss](/graph/api/riskyserviceprincipal-dismiss?view=graph-rest-beta&preserve-view=true) the risk of an at-risk service principal. And, you can [list the risk history](/graph/api/riskyserviceprincipal-list-history?view=graph-rest-beta&preserve-view=true) of a service principal.
-- Use [cross-tenant access settings](/graph/api/resources/crosstenantaccesspolicy-overview?view=graph-rest-beta&preserve-view=true) to control and manage collaboration between users in your organization and other organizations. They are granular to let you determine the users, groups, and apps, both in your organization and in external organizations, that can participate in Azure AD B2B collaboration and Azure AD B2B direct connect. 
+- Use [cross-tenant access settings](/graph/api/resources/crosstenantaccesspolicy-overview?view=graph-rest-beta&preserve-view=true) to control and manage collaboration between users in your organization and other organizations. They are granular to let you determine the users, groups, and apps, both in your organization and in external organizations, that can participate in Azure AD B2B collaboration and Azure AD B2B direct connect.
 - Enable or disable users and groups in an organization to use the [Azure AD native Certificate-Based Authentication (CBA)](/graph/api/resources/x509CertificateAuthenticationMethodConfiguration?view=graph-rest-beta&preserve-view=true).
 
 ### Search
@@ -2984,12 +3402,12 @@ Get the URL of a custodian's OneDrive for Business site (**siteWebUrl** property
 - Reviewers of an access review can [record](/graph/api/accessreviewinstancedecisionitem-recordalldecisions?view=graph-rest-beta&preserve-view=true) decisions for which the current user is the reviewer.
 - Configure [the last sign-in date and time of a user as an insight](/graph/api/resources/userLastSignInRecommendationInsightSetting?view=graph-rest-beta&preserve-view=true) to aid reviewers in making decisions for an [access review schedule definition](/graph/api/resources/accessreviewscheduledefinition?view=graph-rest-beta&preserve-view=true).
 - Configure [the last sign-in date and time of a user as an insight](/graph/api/resources/userSignInInsight?view=graph-rest-beta&preserve-view=true) for a [decision on a user or principal's access in an instance of an access review](/graph/api/resources/accessreviewinstancedecisionitem?view=graph-rest-beta&preserve-view=true).
-- The requestor of an access package can provide custom information as part of an [access package resource](/graph/api/resources/accesspackageresource?view=graph-rest-beta&preserve-view=true) that may be used to make approval decisions for the access package.
+- The requestor of an access package can provide custom information as part of an [access package resource](/graph/api/resources/accesspackageresource?view=graph-rest-beta&preserve-view=true) that might be used to make approval decisions for the access package.
 - A requestor can edit the answer to a [question](/graph/api/resources/accessPackageQuestion?view=graph-rest-beta&preserve-view=true) in an [access package assignment policy](/graph/api/resources/accesspackageassignmentpolicy?view=graph-rest-beta&preserve-view=true).
 
 ### Reports | Identity and access reports
 - Get details of the [authentication methods registered for a user](/graph/api/resources/userRegistrationDetails?view=graph-rest-beta&preserve-view=true), such as multi-factor authentication, self-service password reset, and passwordless authentication.
-- Get the following properties for a [sign-in](/graph/api/resources/signIn?view=graph-rest-beta&preserve-view=true) event of a user or application in an organization: 
+- Get the following properties for a [sign-in](/graph/api/resources/signIn?view=graph-rest-beta&preserve-view=true) event of a user or application in an organization:
   - Any conditional access [authentication context](/graph/api/resources/authenticationContext?view=graph-rest-beta&preserve-view=true).
   - Any conditional access [session lifetime policy](/graph/api/resources/sessionLifetimePolicy?view=graph-rest-beta&preserve-view=true).
   - The ID of an Azure resource accessed during sign-in.
@@ -3000,9 +3418,9 @@ Get the URL of a custodian's OneDrive for Business site (**siteWebUrl** property
 Get usage reports for Outlook, OneDrive, and SharePoint for Microsoft Cloud for US Government. See summary for [cloud deployments](/graph/api/resources/report?view=graph-rest-beta&preserve-view=true#cloud-deployments).
 
 ### Sites and lists
-- Add or synchronize a content type from the content type hub to a [site](/graph/api/resources/site?view=graph-rest-beta&preserve-view=true) or [list](/graph/api/resources/list?view=graph-rest-beta&preserve-view=true), by using the [addCopyFromContentTypeHub](/graph/api/contenttype-addcopyfromcontenttypehub?view=graph-rest-beta&preserve-view=true) action. This makes a content type or its update available to a specific site or list where it is needed. This is an improvement from the legacy sync infrastructure which pushes the content type to all sites across an organization, reducing wait times for the publishing to propagate. 
+- Add or synchronize a content type from the content type hub to a [site](/graph/api/resources/site?view=graph-rest-beta&preserve-view=true) or [list](/graph/api/resources/list?view=graph-rest-beta&preserve-view=true), by using the [addCopyFromContentTypeHub](/graph/api/contenttype-addcopyfromcontenttypehub?view=graph-rest-beta&preserve-view=true) action. This makes a content type or its update available to a specific site or list where it is needed. This is an improvement from the legacy sync infrastructure which pushes the content type to all sites across an organization, reducing wait times for the publishing to propagate.
 - Get one or more [rich, long-running operations](/graph/api/resources/richlongrunningoperation?view=graph-rest-beta&preserve-view=true) occurring on a site or list, which can happen when adding a content type synchronously.
-- Get a collection of [content type](/graph/api/resources/contentType?view=graph-rest-beta&preserve-view=true) resources from the content type hub that are compatible by using the [getCompatibleHubContentTypes](/graph/api/contenttype-getcompatiblehubcontenttypes?view=graph-rest-beta&preserve-view=true) action. 
+- Get a collection of [content type](/graph/api/resources/contentType?view=graph-rest-beta&preserve-view=true) resources from the content type hub that are compatible by using the [getCompatibleHubContentTypes](/graph/api/contenttype-getcompatiblehubcontenttypes?view=graph-rest-beta&preserve-view=true) action.
 
 ### Teamwork
 - Let users choose **LastModifiedDateTime** or **CreatedDateTime** as the sorting order when [listing messages in a chat](/graph/api/chat-list-messages?view=graph-rest-beta&preserve-view=true).
@@ -3037,7 +3455,7 @@ Use the API for Microsoft Bookings in production apps, and take advantage of the
 ### Education
 - Specify an [assignment](/graph/api/resources/educationassignment) to be added to only students' calendars using the **addToCalendarAction** property.
 - [Reassign](/graph/api/educationsubmission-reassign) a [submitted assignment](/graph/api/resources/educationsubmission) to a student with feedback for review.
-- [List assignments](/graph/api/educationuser-list-assignments) for an [educationUser](/graph/api/resources/educationuser). 
+- [List assignments](/graph/api/educationuser-list-assignments) for an [educationUser](/graph/api/resources/educationuser).
 
 ### Identity and access | Governance
 [Update](/graph/api/accessreviewinstance-update) the reviewers and fall-back reviewers for an [instance of an access review](/graph/api/resources/accessreviewinstance).
@@ -3049,7 +3467,7 @@ Use the API for Microsoft Bookings in production apps, and take advantage of the
 ## December 2021: New in preview only
 
 ### Cloud communications | Online meetings
-Enable registration for an [online meeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true) using an [external registration](/graph/api/resources/externalmeetingregistration?view=graph-rest-beta&preserve-view=true) system. 
+Enable registration for an [online meeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true) using an [external registration](/graph/api/resources/externalmeetingregistration?view=graph-rest-beta&preserve-view=true) system.
 
 ### Cloud communications | Presence
 - Use the [setUserPreferredPresence](/graph/api/presence-setuserpreferredpresence?view=graph-rest-beta&preserve-view=true) action to set the preferred availability and activity status for a user. The user's presence becomes the preferred presence.
@@ -3076,7 +3494,7 @@ Enable registration for an [online meeting](/graph/api/resources/onlinemeeting?v
 Use the [update](/graph/api/externalconnectors-schema-update?view=graph-rest-beta&preserve-view=true) operation to update properties for items in a [connection](/graph/api/resources/externalconnectors-externalconnection?view=graph-rest-beta&preserve-view=true) schema, including their aliases and labels.
 
 ### Identity and access | Directory management
-- [Get](/graph/api/application-get?view=graph-rest-beta&preserve-view=true) the certification details of an [application](/graph/api/resources/application?view=graph-rest-beta&preserve-view=true) through the **certification** property. The property is set only when the application is certified through the Microsoft 365 App Compliance Program.  
+- [Get](/graph/api/application-get?view=graph-rest-beta&preserve-view=true) the certification details of an [application](/graph/api/resources/application?view=graph-rest-beta&preserve-view=true) through the **certification** property. The property is set only when the application is certified through the Microsoft 365 App Compliance Program.
 - [Include](/graph/api/permissiongrantpolicy-post-includes?view=graph-rest-beta&preserve-view=true) or [exclude](/graph/api/permissiongrantpolicy-post-excludes?view=graph-rest-beta&preserve-view=true) certification as a [condition](/graph/api/resources/permissionGrantConditionSet?view=graph-rest-beta&preserve-view=true) in a [permission grant policy](/graph/api/resources/permissiongrantpolicy?view=graph-rest-beta&preserve-view=true), through the **certifiedClientApplicationsOnly** property of [permissionGrantConditionSet](/graph/api/resources/permissionGrantConditionSet?view=graph-rest-beta&preserve-view=true).
 
 ### Teamwork
@@ -3163,7 +3581,7 @@ Enable support for delegated permissions (`Contacts.Read` or `Contacts.ReadWrite
 - Check out the [licensing and payment models](teams-licenses.md) that apply to Microsoft Teams APIs in Microsoft Graph.
 
 ### Users
-User licenses for Azure Active Directory (Azure AD) services now support a timestamp for when the [state of the license assignment](/graph/api/resources/licenseassignmentstate) is last updated. 
+User licenses for Azure Active Directory (Azure AD) services now support a timestamp for when the [state of the license assignment](/graph/api/resources/licenseassignmentstate) is last updated.
 
 ## October 2021: New in preview only
 
@@ -3174,7 +3592,7 @@ Use [federated identity credentials](/graph/api/resources/federatedidentitycrede
 Identify a call [participant](/graph/api/resources/participantInfo?view=graph-rest-beta&preserve-view=true), by using the **participantId** property of the [participantInfo](/graph/api/resources/participantInfo?view=graph-rest-beta&preserve-view=true) resource type.
 
 ### Cloud communications | Online meetings
-Enable [meeting registration](/graph/api/resources/meetingregistration?view=graph-rest-beta&preserve-view=true) and organize online meetings as a [webinar](https://support.microsoft.com/office/get-started-with-teams-webinars-42f3f874-22dc-4289-b53f-bbc1a69013e3). Associate the meeting with a registration page, and choose to enroll everyone or only organization members as [meeting registrants](/graph/api/resources/meetingregistrant?view=graph-rest-beta&preserve-view=true). 
+Enable [meeting registration](/graph/api/resources/meetingregistration?view=graph-rest-beta&preserve-view=true) and organize online meetings as a [webinar](https://support.microsoft.com/office/get-started-with-teams-webinars-42f3f874-22dc-4289-b53f-bbc1a69013e3). Associate the meeting with a registration page, and choose to enroll everyone or only organization members as [meeting registrants](/graph/api/resources/meetingregistrant?view=graph-rest-beta&preserve-view=true).
 
 ### Customer booking
 - Support the following attributes for a [booking service](/graph/api/resources/bookingService?view=graph-rest-beta&preserve-view=true):
@@ -3250,7 +3668,7 @@ Create table rows asynchronously. For better performance, a good practice to cre
 ## September 2021: New in preview only
 
 ### Applications
-Applications that use Security Assertion Markup Language (SAML) single sign-on flows can specify a default redirect URI (**defaultRedirectUri** property of [application](/graph/api/resources/application?view=graph-rest-beta&preserve-view=true)), or identify a specific redirect URI where users are sent to sign in (**redirectUriSettings** property of [webApplication](/graph/api/resources/webapplication?view=graph-rest-beta&preserve-view=true)). 
+Applications that use Security Assertion Markup Language (SAML) single sign-on flows can specify a default redirect URI (**defaultRedirectUri** property of [application](/graph/api/resources/application?view=graph-rest-beta&preserve-view=true)), or identify a specific redirect URI where users are sent to sign in (**redirectUriSettings** property of [webApplication](/graph/api/resources/webapplication?view=graph-rest-beta&preserve-view=true)).
 
 ### Cloud communications | Online meetings
 Get the total participant count in a [meeting attendance report](/graph/api/resources/meetingattendancereport?view=graph-rest-beta&preserve-view=true) of an [online meeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true).
@@ -3369,7 +3787,7 @@ Let a user [change their own password](/graph/api/user-changepassword) without r
 An on-premises connection [health check](/graph/api/cloudpconpremisesconnection-runhealthcheck?view=graph-rest-beta&preserve-view=true) can identify a few more possible health check error types:
 - Cloud PC computer account is not found in the organizational unit (`adJoinCheckComputerObjectAlreadyExists`).
 - Cloud PC object is not found in Azure AD (`azureAdDeviceSyncCheckDeviceNotFound`).
-- Timeout from checking if a cloud PC object has been synchronized to Azure AD (`azureAdDeviceSyncCheckLongSyncCircle`). 
+- Timeout from checking if a cloud PC object has been synchronized to Azure AD (`azureAdDeviceSyncCheckLongSyncCircle`).
 
 See the [reference](/graph/api/resources/cloudpconpremisesconnectionhealthcheck?view=graph-rest-beta&preserve-view=true#cloudpconpremisesconnectionhealthcheckerrortype-values) for details and recommended remedial actions.
 
@@ -3383,7 +3801,7 @@ Debut of the [Microsoft 365 Lighthouse API](managedtenants-concept-overview.md) 
 Get a collection of errors in the lifecycle of an [access review instance](/graph/api/resources/accessreviewinstance?view=graph-rest-beta&preserve-view=true).
 
 ### Search
-- Use the [Microsoft Search API to retrieve information about the people](search-concept-person.md) who are most relevant to a user. Relevance is determined by the user's communication and collaboration patterns and business relationships. 
+- Use the [Microsoft Search API to retrieve information about the people](search-concept-person.md) who are most relevant to a user. Relevance is determined by the user's communication and collaboration patterns and business relationships.
 - Access the [connectors API](/graph/api/resources/connectors-api-overview?view=graph-rest-beta&preserve-view=true) in the microsoft.graph.externalConnectors sub-namespace.
 
 ### Teamwork
@@ -3406,10 +3824,10 @@ Extended the maximum length of a subscription before expiring for the following 
 Removed limitation for tracking changes in non-root folders in OneDrive for Business and SharePoint.
 
 ### Education
-The APIs for the education [assignments service](/graph/api/resources/educationassignment) are now generally available. 
+The APIs for the education [assignments service](/graph/api/resources/educationassignment) are now generally available.
 
 ### Identity and access | Governance
-GA of the [access review](/graph/api/resources/accessreviewsv2-overview) API. Check out the [overview](accessreviews-overview.md) and tutorials to [review access to security groups](tutorial-accessreviews-securitygroup.md) and [access to Microsoft 365 groups](tutorial-accessreviews-m365group.md). Note that the [legacy access review API](/graph/api/resources/accessreviews-root?view=graph-rest-beta&preserve-view=true) is being deprecated and will stop returning data in May 2023.
+GA of the [access review](/graph/api/resources/accessreviewsv2-overview) API. Check out the [overview](/graph/api/resources/accessreviewsv2-overview) and tutorials to [review access to security groups](tutorial-accessreviews-securitygroup.md) and [access to Microsoft 365 groups](tutorial-accessreviews-m365group.md). Note that the [legacy access review API](/graph/api/resources/accessreviews-root?view=graph-rest-beta&preserve-view=true) is being deprecated and will stop returning data in May 2023.
 
 
 ## June 2021: New in preview only
@@ -3427,7 +3845,7 @@ Customize audio and video control in an [onlineMeeting](/graph/api/resources/onl
 - Teachers can now also set a default behavior for a calendar when they publish assignments. Teachers can control the assignment default calendar behavior by using the **addToCalendarAction** property of the [educationAssignmentDefaults](/graph/api/resources/educationAssignmentDefaults?view=graph-rest-beta&preserve-view=true) resource.
 
 ### Groups
-Allow a [group](/graph/api/resources/group?view=graph-rest-beta&preserve-view=true) to be assigned to an Azure AD role on creation by setting the **isAssignableToRole** property. If set, this property makes it convenient to manage roles for individuals - instead of having to assign a role to each individual person, eligible persons can join a group, and assigning the role to the group would by default assign the role to each new person joining the group. 
+Allow a [group](/graph/api/resources/group?view=graph-rest-beta&preserve-view=true) to be assigned to an Azure AD role on creation by setting the **isAssignableToRole** property. If set, this property makes it convenient to manage roles for individuals - instead of having to assign a role to each individual person, eligible persons can join a group, and assigning the role to the group would by default assign the role to each new person joining the group.
 
 ### Identity and access | Governance
 Set users or group members to be notified of the progress of an [access review](/graph/api/resources/accessreviewsv2-overview?view=graph-rest-beta&preserve-view=true), by using the **additionalNotificationRecipients** property of the [schedule definition](/graph/api/resources/accessreviewscheduledefinition?view=graph-rest-beta&preserve-view=true).
@@ -3509,7 +3927,7 @@ Try the preview version of [Microsoft Graph .NET SDK v4](https://www.nuget.org/p
 ### Identity and access | Identity and sign-in
 - Manage an [authentication policy](/graph/api/resources/authenticationflowspolicy) at a tenant level, to enable or disable [self-service sign-up](/graph/api/resources/selfservicesignupauthenticationflowconfiguration) of external users.
 - Administrators can associate user flows with apps that are shared with external users and enable [self-service sign-up](/azure/active-directory/external-identities/self-service-sign-up-overview) on those apps. They can customize a self-service sign-up user flow and create a personalized sign-up experience. Once an application is associated with the user flow, users who go to that application will be able to initiate a sign-up flow that provisions a guest account.
-- Configure [user flow attributes](/graph/api/resources/identityuserflowattribute) in your Azure AD tenant allows you to collect information about a user during sign-up. You can collect a built-in set of attributes, or configure custom user flow attributes to collect information from a user that is not built in to the directory. 
+- Configure [user flow attributes](/graph/api/resources/identityuserflowattribute) in your Azure AD tenant allows you to collect information about a user during sign-up. You can collect a built-in set of attributes, or configure custom user flow attributes to collect information from a user that is not built in to the directory.
 - In an [Azure Active Directory user flow](/graph/api/resources/b2xidentityuserflow), you can manage language defaults and [customize the language and strings displayed to users in the user flow](/graph/api/resources/userflowlanguageconfiguration).
 - Use an [API connector](/graph/api/resources/identityapiconnector) in user flows for Azure AD self-service sign-up and Azure AD B2C sign-up, to call an API at a specific step to affect the execution of the user flow.
 
@@ -3575,7 +3993,7 @@ Administrators can [get](/graph/api/accessreviewpolicy-get?view=graph-rest-beta&
 - Use Azure Active Directory (Azure AD) [consent requests](/graph/api/resources/consentrequests-root) to manage the request workflow for users attempting to access apps that require admin approval. The API makes use of the following resources:
   - The [adminConsentRequestPolicy](/graph/api/resources/adminconsentrequestpolicy) resource for creating and managing requests for app access for the organization.
   - The [appConsentRequest](/graph/api/resources/appconsentrequest) resource for aggregating and managing user requests to access a specific app.
-  - The [userConsentRequest](/graph/api/resources/userConsentRequest) resource for users requesting access to an app which requires admin authorization. 
+  - The [userConsentRequest](/graph/api/resources/userConsentRequest) resource for users requesting access to an app which requires admin authorization.
   - The [accessReviewReviewerScope](/graph/api/resources/accessReviewReviewerScope) resource defines who is specified in the **adminConsentRequestPolicy** to review **appConsentRequest** and **userConsentRequest** objects.
   - The [approval](/graph/api/resources/approval) resource represents an approval decision for a request.
 - GA of the Terms of Use API which supports a tenant's customizable [Terms of Use agreement](/graph/api/resources/agreement) in Azure AD.
@@ -3702,9 +4120,9 @@ Use [educationAssignmentDefaults](/graph/api/resources/educationAssignmentDefaul
 Get more properties included in [detail reports for SharePoint site usage](/graph/api/reportroot-getsharepointsiteusagedetail?view=graph-rest-beta&preserve-view=true): anonymousLinkCount, companyLinkCount, externalSharing, geolocation, secureLinkForGuestCount, secureLinkForMemberCount, siteSensitivityLabelId, and unmanagedDevicePolicy.
 
 ### Tasks and plans
-- Define up to 25 categories in a [plan details](/graph/api/resources/plannerplandetails?view=graph-rest-beta&preserve-view=true) object for a plan. For each category, specify a descriptive label and associate tasks in a plan with one or more of these categories. 
-- Use a [roster](/graph/api/resources/plannerRoster?view=graph-rest-beta&preserve-view=true) to represent a collection of users collaborating on a [plan](/graph/api/resources/plannerplan?view=graph-rest-beta&preserve-view=true). Use the **rosterPlans** relationship to get the rosters of which the user is a [member](/graph/api/resources/plannerrostermember?view=graph-rest-beta&preserve-view=true). 
-- For plans that are surfaced in experiences outside of Planner, such as Microsoft Teams, specify in the [plan context details](/graph/api/resources/plannerplancontextdetails?view=graph-rest-beta&preserve-view=true) how to display the link to the [plan context](/graph/api/resources/plannerPlanContext?view=graph-rest-beta&preserve-view=true). 
+- Define up to 25 categories in a [plan details](/graph/api/resources/plannerplandetails?view=graph-rest-beta&preserve-view=true) object for a plan. For each category, specify a descriptive label and associate tasks in a plan with one or more of these categories.
+- Use a [roster](/graph/api/resources/plannerRoster?view=graph-rest-beta&preserve-view=true) to represent a collection of users collaborating on a [plan](/graph/api/resources/plannerplan?view=graph-rest-beta&preserve-view=true). Use the **rosterPlans** relationship to get the rosters of which the user is a [member](/graph/api/resources/plannerrostermember?view=graph-rest-beta&preserve-view=true).
+- For plans that are surfaced in experiences outside of Planner, such as Microsoft Teams, specify in the [plan context details](/graph/api/resources/plannerplancontextdetails?view=graph-rest-beta&preserve-view=true) how to display the link to the [plan context](/graph/api/resources/plannerPlanContext?view=graph-rest-beta&preserve-view=true).
 
 ### Use SDKs
 Try the preview release of the [Microsoft Graph Java SDK v3](https://github.com/microsoftgraph/msgraph-sdk-java/blob/dev/docs/upgrade-to-v3.md)! For more information, see the related [blog post](https://developer.microsoft.com/graph/blogs/announcing-the-public-preview-of-microsoft-graph-java-sdk-v3/).
@@ -3712,7 +4130,7 @@ Try the preview release of the [Microsoft Graph Java SDK v3](https://github.com/
 ## January 2021: New in preview only
 
 ### Cloud communications
-- Organize a live event as an [onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true) - see an [example](/graph/api/application-post-onlinemeetings?view=graph-rest-beta&preserve-view=true#example-3-create-a-live-event-with-a-user-token). 
+- Organize a live event as an [onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true) - see an [example](/graph/api/application-post-onlinemeetings?view=graph-rest-beta&preserve-view=true#example-3-create-a-live-event-with-a-user-token).
 - Get the content stream of an [attendee report](/graph/api/onlinemeeting-get?view=graph-rest-beta&preserve-view=true#example-4-retrieve-the-attendee-report-of-a-live-event), [recording](/graph/api/onlinemeeting-get?view=graph-rest-beta&preserve-view=true#example-5-retrieve-the-recording-of-a-live-event), or alternative recording of the live event.
 - Get the [presence](/graph/api/resources/presence?view=graph-rest-beta&preserve-view=true) status of a user who is [out-of-office](/graph/api/resources/outofofficesettings?view=graph-rest-beta&preserve-view=true), and any message set for that status.
 
@@ -3736,7 +4154,7 @@ Try the preview release of the [Microsoft Graph Java SDK v3](https://github.com/
 Use class-level [assignment settings](/graph/api/resources/educationAssignmentSettings?view=graph-rest-beta&preserve-view=true) to enable or disable animation to celebrate turning in an assignment.
 
 ### Groups
-Get the processing status of a rule-based dynamic group by using the **membershipRuleProcessingStatus** property. This is useful when an attribute of a user changes, the user's membership in a rule-based [Microsoft 365 group](/graph/api/resources/group?view=graph-rest-beta&preserve-view=true) is re-evaluated based on the group membership rules set for the organization. 
+Get the processing status of a rule-based dynamic group by using the **membershipRuleProcessingStatus** property. This is useful when an attribute of a user changes, the user's membership in a rule-based [Microsoft 365 group](/graph/api/resources/group?view=graph-rest-beta&preserve-view=true) is re-evaluated based on the group membership rules set for the organization.
 
 ### Identity and access | Directory management
 Get the [usage right](/graph/api/resources/UsageRight?view=graph-rest-beta&preserve-view=true) that a user or device has over third-party software built on Power Apps or, usage right of a device over a subscription. Usage right includes identifiers for the corresponding service or product, and the current state of the usage right such as active, inactive, in warning, or suspended.
@@ -3744,7 +4162,7 @@ Get the [usage right](/graph/api/resources/UsageRight?view=graph-rest-beta&prese
 ### Identity and access | Identity and sign-in
 - Apps can use application permissions to let administrators manage [authentication methods](/graph/api/resources/authenticationmethods-overview?view=graph-rest-beta&preserve-view=true) for users.
 - Support [Microsoft Authenticator](/graph/api/resources/microsoftauthenticatorauthenticationmethod?view=graph-rest-beta&preserve-view=true) as an authentication method of a user to sign in or perform multi-factor authentication to Azure AD.
-- Use [Microsoft Authenticator policy](/graph/api/resources/microsoftauthenticatorauthenticationmethodconfiguration?view=graph-rest-beta&preserve-view=true) to define configuration settings and users or groups that are enabled to use Microsoft Authenticator as an authentication method. Use Microsoft Authenticator policy in place of **Microsoft Authenticator passwordless phone sign-in policy** which is deprecated. 
+- Use [Microsoft Authenticator policy](/graph/api/resources/microsoftauthenticatorauthenticationmethodconfiguration?view=graph-rest-beta&preserve-view=true) to define configuration settings and users or groups that are enabled to use Microsoft Authenticator as an authentication method. Use Microsoft Authenticator policy in place of **Microsoft Authenticator passwordless phone sign-in policy** which is deprecated.
 - Support [Windows Hello for Business](/graph/api/resources/windowshelloforbusinessauthenticationmethod?view=graph-rest-beta&preserve-view=true) as an authentication method of a user to sign in on Windows devices without using a password.
 
 ### Reports | Identity and access reports
@@ -3802,7 +4220,7 @@ As part of Azure Active Directory [entitlement management](/graph/api/resources/
 
 ### Teamwork
 - For a [member](/graph/api/resources/conversationmember?view=graph-rest-beta&preserve-view=true) resource in a [team](/graph/api/resources/team?view=graph-rest-beta&preserve-view=true), [channel](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true), or a [chat](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true) context, you can now:
-  - Differentiate a member who is an [Azure AD user](/graph/api/resources/aaduserconversationmember?view=graph-rest-beta&preserve-view=true), noting the user ID, email address, and Azure AD tenant ID. 
+  - Differentiate a member who is an [Azure AD user](/graph/api/resources/aaduserconversationmember?view=graph-rest-beta&preserve-view=true), noting the user ID, email address, and Azure AD tenant ID.
   - [Add multiple users as members of a team](/graph/api/conversationmembers-add?view=graph-rest-beta&preserve-view=true).
 - For a [chat](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true) resource:
   - [Get all the messages in chats that the specified user has participated in](/graph/api/chats-getallmessages?view=graph-rest-beta&preserve-view=true), including one-on-one chats, group chats, and meeting chats.
@@ -3810,7 +4228,7 @@ As part of Azure Active Directory [entitlement management](/graph/api/resources/
   - Use the **chatType** property to distinguish a one-on-one chat from a group chat or from a chat associated with an online meeting.
   - [Create](/graph/api/chat-post?view=graph-rest-beta&preserve-view=true) or [update](/graph/api/chat-patch?view=graph-rest-beta&preserve-view=true) a chat.
   - For a member in a chat context, use the **visibleHistoryStartDateTime** property to set or get a timestamp that represents how far back a conversation's history is shared with that member.
-  - [Create](/graph/api/chat-post-members?view=graph-rest-beta&preserve-view=true) to or [delete](/graph/api/chat-delete-members?view=graph-rest-beta&preserve-view=true) a member from a specified chat. 
+  - [Create](/graph/api/chat-post-members?view=graph-rest-beta&preserve-view=true) to or [delete](/graph/api/chat-delete-members?view=graph-rest-beta&preserve-view=true) a member from a specified chat.
 - For a [channel](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true) resource:
   - [Get all the messages across all the channels in a team](/graph/api/channel-getallmessages).
   - Team owners can turn on [moderation for a channel](/graph/api/resources/channelmoderationsettings?view=graph-rest-beta&preserve-view=true) to control who can start new posts or reply to posts in that channel, using the **moderationSettings** property of the channel.
@@ -3854,7 +4272,7 @@ Debut of the [cloud PC API](/graph/api/resources/virtualendpoint?view=graph-rest
 [Subscribe to change notifications](change-notifications-overview.md) on a [print task definition](/graph/api/resources/printtaskdefinition?view=graph-rest-beta&preserve-view=true).
 
 ### Devices and apps | Corporate management
-Intune [November](changelog.md#november-2020) updates for the beta version.
+Intune [November](https://developer.microsoft.com/graph/changelog#november-2020) updates for the beta version.
 
 ### Identity and access
 - Specify URLs for sending sign-in user tokens, and URIs for authorization codes and access tokens, in the **spa** property of [application](/graph/api/resources/application?view=graph-rest-beta&preserve-view=true).
@@ -3878,14 +4296,14 @@ Production apps can now subscribe to lifecycle notifications of Outlook [message
 ### Identity and access
 - GA of advanced OData system query options (`$count`, `$search`, and `$filter`) on directory objects.
 - Check out examples that show OData cast on directory objects.
-- See the Identity and access section of the [October](changelog.md#october-2020) updates in the changelog for the lists of enhanced APIs.
+- See the Identity and access section of the [October](https://developer.microsoft.com/graph/changelog#october-2020) updates in the changelog for the lists of enhanced APIs.
 
 ### Teamwork
-- GA of the full set of CRUD operations for [conversationMember](/graph/api/resources/conversationmember) and [aadUserConversationMember](/graph/api/resources/aaduserconversationmember). These resources represent a member in a chat or channel conversation, who may or may not be a user in Azure AD.
+- GA of the full set of CRUD operations for [conversationMember](/graph/api/resources/conversationmember) and [aadUserConversationMember](/graph/api/resources/aaduserconversationmember). These resources represent a member in a chat or channel conversation, who might or might not be a user in Azure AD.
 - GA of lifecycle notifications for Teams [chatMessage](/graph/api/resources/chatmessage) resources, to [reduce missing subscriptions and change notifications](change-notifications-lifecycle-events.md).
 
 ### To-do tasks
-GA of the [Microsoft To Do API](/graph/api/resources/todo-overview?view=graph-rest-1.0&preserve-view=true) - use the to-do API in a production app to create and manage tasks that are part of a user's workflow, such as creating a task off an email.  
+GA of the [Microsoft To Do API](/graph/api/resources/todo-overview?view=graph-rest-1.0&preserve-view=true) - use the to-do API in a production app to create and manage tasks that are part of a user's workflow, such as creating a task off an email.
 
 ### Users
 Get new properties applicable to a [user](/graph/api/resources/user) who is corporate employee: hire date, organizational association such as division and cost center, and employee type such as consultant, contractor, or vendor. These properties require specifying the `$select` OData query parameter in the GET operation.
@@ -3902,13 +4320,13 @@ Get new properties applicable to a [user](/graph/api/resources/user) who is corp
 - Deprecate the **configuration** property on [printDocument](/graph/api/resources/printdocument?view=graph-rest-beta&preserve-view=true) in favor of a similar **configuration** property on [printJob](/graph/api/resources/printjob?view=graph-rest-beta&preserve-view=true).
 - Get the source or destination job URL for a **printJob** that is being redirected, by using the **redirectedFrom** or **redirectedTo** property.
 - Get the current status of a **printJob** by using the **state** property and new **details** property.
-- Get the collection of printer shares associated with a [printer](/graph/api/resources/printer?view=graph-rest-beta&preserve-view=true) by using the **shares** relationship. 
+- Get the collection of printer shares associated with a [printer](/graph/api/resources/printer?view=graph-rest-beta&preserve-view=true) by using the **shares** relationship.
 - Deprecate the **processingStateReasons** property of **printer** in favor of the **status** property. The **status** property is of the type [printer status](/graph/api/resources/printerstatus?view=graph-rest-beta&preserve-view=true) and exposes a **details** property. Use the **details** property to identify the reason for a printer to be in the current state.
 - Deprecate the **feedDirections** property on [printerCapabilities](/graph/api/resources/printercapabilities?view=graph-rest-beta&preserve-view=true) in favor of the **feedOrientations** property, to get feed orientations supported by a printer.
-- See the cloud printing section of the [October](changelog.md#october-2020) updates in the changelog for a few renaming of API and properties, and a few other deprecations.
+- See the cloud printing section of the [October](https://developer.microsoft.com/graph/changelog#october-2020) updates in the changelog for a few renaming of API and properties, and a few other deprecations.
 
 ### Devices and apps | Corporate management
-Intune [October](changelog.md#october-2020) updates for the beta version.
+Intune [October](https://developer.microsoft.com/graph/changelog#october-2020) updates for the beta version.
 
 ### Files
 [Revoke](/graph/api/permission-revokegrants?view=graph-rest-beta&preserve-view=true) access to a [listItem](/graph/api/resources/listitem?view=graph-rest-beta&preserve-view=true) or [driveItem](/graph/api/resources/driveitem?view=graph-rest-beta&preserve-view=true) granted via a sharing link.
@@ -3922,7 +4340,7 @@ Intune [October](changelog.md#october-2020) updates for the beta version.
 - Use `Policy.ReadWrite.AuthenticationMethod` to read or write an organization's authentication method policies, as a delegated permission on behalf of a signed-in user, or as an application permission without a signed-in user present.
 - Specify in an [authorization policy](/graph/api/resources/authorizationpolicy?view=graph-rest-beta&preserve-view=true) if and who can invite external users to an organization.
 
-### People and workplace intelligence | Insights 
+### People and workplace intelligence | Insights
 Administrators can see [examples of using PowerShell cmdlets](insights-customize-item-insights-privacy.md#configure-item-insights-settings-via-powershell) to customize item insight settings for an organization.
 
 ### Teamwork
@@ -3938,7 +4356,7 @@ GA of the **transactionId** property of the [event](/graph/api/resources/event) 
 [Delete a participant](/graph/api/participant-delete) from a [call](/graph/api/resources/call). You can use this operation even in situations where it's necessary to delete a participant from an active call.
 
 ### Devices and apps | Corporate management
-Intune [September](changelog.md#september-2020) updates for the v1.0 version.
+Intune [September](https://developer.microsoft.com/graph/changelog#september-2020) updates for the v1.0 version.
 
 ### Identity and access | Directory management
 GA of the [administrative units API](/graph/api/resources/administrativeunit) that allow organizations to subdivide their Azure Active Directory, manage and delegate administrative duties to these subdivisions. These subdivisions can represent regions, departments, cost centers, and so on.
@@ -3948,7 +4366,7 @@ GA of the [administrative units API](/graph/api/resources/administrativeunit) th
 
 ### Teamwork
 - Get the **lastEditedDateTime** property to find out when a sender last edits a [chat message](/graph/api/resources/chatmessage).
-- Get the **lastModifiedDateTime** property to find out when a sender creates a chat message or when anyone modifies it in other ways, including adding or removing a reaction. 
+- Get the **lastModifiedDateTime** property to find out when a sender creates a chat message or when anyone modifies it in other ways, including adding or removing a reaction.
 - [Get notifications on changes](change-notifications-overview.md) in [chat messages](/graph/api/resources/chatmessage).
 - [Update](/graph/api/chatmessage-update?view=graph-rest-beta&preserve-view=true) the **policyViolation** property of a [chatMessage](/graph/api/resources/chatmessage) within a [channel](/graph/api/resources/channel) or [chat](/graph/api/resources/chat), enabling data loss prevention (DLP) apps to monitor [chat message policy violation](/graph/api/resources/chatmessagepolicyviolation) to prevent messages from containing data that users are not supposed to send.
 
@@ -3964,7 +4382,7 @@ Try the new step-by-step getting-started tutorials for Microsoft Graph Toolkit a
 - [Use the toolkit with Angular](./toolkit/get-started/use-toolkit-with-angular.md)
 
 ### Users
-Aside from getting the SMTP address of a [user](/graph/api/resources/user) through the **mail** property, you can now set that property and update the user's email address. 
+Aside from getting the SMTP address of a [user](/graph/api/resources/user) through the **mail** property, you can now set that property and update the user's email address.
 
 ## September 2020: New in preview only
 
@@ -3976,11 +4394,11 @@ Create, list, or delete [classifications of delegated permissions](/graph/api/re
 - Use additional settings about announcing callers joining or leaving an online meeting (**isEntryExitAnnounced** property), and allowing specific presenters in the meeting (**allowedPresenters** property).
 
 ### Devices and apps | Cloud printing
-- [Get the documents for each of the print jobs associated with a printer](/graph/api/printer-list-jobs?view=graph-rest-beta&preserve-view=true), by applying an `$expand` [OData system query option](/graph/api/printer-list-jobs?view=graph-rest-beta&preserve-view=true#optional-query-parameters). 
+- [Get the documents for each of the print jobs associated with a printer](/graph/api/printer-list-jobs?view=graph-rest-beta&preserve-view=true), by applying an `$expand` [OData system query option](/graph/api/printer-list-jobs?view=graph-rest-beta&preserve-view=true#optional-query-parameters).
 - Filter print jobs by the user who created them, by applying a `$filter` [OData system query option](/graph/api/printer-list-jobs?view=graph-rest-beta&preserve-view=true#optional-query-parameters).
 
 ### Devices and apps | Corporate management
-Intune [September](changelog.md#september-2020) updates for the beta version.
+Intune [September](https://developer.microsoft.com/graph/changelog#september-2020) updates for the beta version.
 
 ### Identity and access | Directory management
 - [Get a BitLocker recovery key](/graph/api/bitlockerrecoverykey-get?view=graph-rest-beta&preserve-view=true) on behalf of the signed-in user who's the device owner or in an appropriate role. Getting a recovery key generates an [audit log](/azure/active-directory/reports-monitoring/concept-audit-logs), in parity with the end user experience.
@@ -3994,10 +4412,10 @@ Organizations can [get](/graph/api/continuousaccessevaluationpolicy-get?view=gra
 
 ### Search
 
-- Use additional capabilities in the [Microsoft Search API](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true) for OneDrive, SharePoint, Microsoft Graph connectors: 
+- Use additional capabilities in the [Microsoft Search API](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true) for OneDrive, SharePoint, Microsoft Graph connectors:
 
-  - Get [additional types](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true#scope-search-based-on-entity-types) of content from OneDrive and SharePoint: **drive**, **list**, **listItem**, and **site**. 
-  - Scope properties in search results to [selected properties](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true#get-selected-properties). 
+  - Get [additional types](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true#scope-search-based-on-entity-types) of content from OneDrive and SharePoint: **drive**, **list**, **listItem**, and **site**.
+  - Scope properties in search results to [selected properties](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true#get-selected-properties).
   - Get custom properties on [listItem](/graph/api/resources/listitem?view=graph-rest-beta&preserve-view=true) resources.
   - [Sort](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true#sort-search-results) search results for OneDrive and SharePoint on any sortable property.
   - [Refine results using aggregations](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true#refine-results-using-aggregations) for OneDrive and SharePoint.
@@ -4026,7 +4444,7 @@ Organizations can [get](/graph/api/continuousaccessevaluationpolicy-get?view=gra
 - Use an alternative way to [create a team](/graph/api/team-post) directly without first creating a group.
 - Use the **members** navigation property to add members to a team with increased reliability and lower latency.
 - Get the publishing status of a Microsoft Teams [app](/graph/api/resources/teamsapp) through the **publishingState** property of the [app definition](/graph/api/resources/teamsappdefinition). The possible status values are `submitted`, `published`, and `rejected`. See an [example](/graph/api/appcatalogs-list-teamsapps#example-4-list-applications-with-a-given-id-and-return-the-submission-review-state).
-- Use the `AppCatalog.Submit` delegated permission to allow a user to [submit an app](/graph/api/teamsapp-publish) and request administrator review. Use the same permission for a user to [cancel](/graph/api/teamsapp-delete) an app submitted in the past that has not been published. 
+- Use the `AppCatalog.Submit` delegated permission to allow a user to [submit an app](/graph/api/teamsapp-publish) and request administrator review. Use the same permission for a user to [cancel](/graph/api/teamsapp-delete) an app submitted in the past that has not been published.
 
 
 ## August 2020: New in preview only
@@ -4042,17 +4460,17 @@ Enhance programmatic support for scenarios involving a recurring [event](/graph/
 
 ### Change notifications
 - Use the **includeResourceData** property of a [subscription](/graph/api/resources/subscription?view=graph-rest-beta&preserve-view=true), to [set up change notifications that include resource data](change-notifications-with-resource-data.md). Do not use the **includeProperties** property.
-- Get [change notifications delivered via Event Hub](change-notifications-delivery.md).
+- Get [change notifications delivered via Event Hub](change-notifications-delivery-event-hubs.md).
 
 ### Devices and apps | Cloud printing
 - Grant all users and groups access to a [printer share](/graph/api/resources/printershare?view=graph-rest-beta&preserve-view=true) by using the **allowAllUser** property.
-- Use new delegated and application permissions to access or manage a [print document](/graph/api/resources/printDocument?view=graph-rest-beta&preserve-view=true), [print job](/graph/api/resources/printjob?view=graph-rest-beta&preserve-view=true), [printer](/graph/api/resources/printer?view=graph-rest-beta&preserve-view=true), [printer share](/graph/api/resources/printershare?view=graph-rest-beta&preserve-view=true), or [print task definition](/graph/api/resources/printtaskdefinition?view=graph-rest-beta&preserve-view=true). For details, see cloud printing [August](changelog.md#august-2020) updates.
+- Use new delegated and application permissions to access or manage a [print document](/graph/api/resources/printDocument?view=graph-rest-beta&preserve-view=true), [print job](/graph/api/resources/printjob?view=graph-rest-beta&preserve-view=true), [printer](/graph/api/resources/printer?view=graph-rest-beta&preserve-view=true), [printer share](/graph/api/resources/printershare?view=graph-rest-beta&preserve-view=true), or [print task definition](/graph/api/resources/printtaskdefinition?view=graph-rest-beta&preserve-view=true). For details, see cloud printing [August](https://developer.microsoft.com/graph/changelog#august-2020) updates.
 
 ### Devices and apps | Corporate management
-Intune [August](changelog.md#august-2020) updates in beta.
+Intune [August](https://developer.microsoft.com/graph/changelog#august-2020) updates in beta.
 
 ### Identity and access | Governance
-- Customize a [terms of use agreement](/graph/api/resources/agreement?view=graph-rest-beta&preserve-view=true) to support an agreement expiration date and cadence, require the user to accept the agreement per device, or to re-accept the agreement on a set frequency. 
+- Customize a [terms of use agreement](/graph/api/resources/agreement?view=graph-rest-beta&preserve-view=true) to support an agreement expiration date and cadence, require the user to accept the agreement per device, or to re-accept the agreement on a set frequency.
 - Use the **file** property to navigate to a [custom agreement](/graph/api/resources/agreementfile?view=graph-rest-beta&preserve-view=true) for terms of use. Do not use the **files** property.
 - Add, remove, and list internal or external sponsors who can approve requests from a [connected organization](/graph/api/resources/connectedorganization?view=graph-rest-beta&preserve-view=true) to access a group, application, or SharePoint Online site. See [entitlement management](/graph/api/resources/entitlementmanagement-overview?view=graph-rest-beta&preserve-view=true) for more information.
 
@@ -4130,14 +4548,14 @@ Apps can now [query](/graph/api/resources/ediscovery-reviewsetquery) and cull [r
 - [Redirect a print job](/graph/api/printjob-redirect?view=graph-rest-beta&preserve-view=true) to a different printer, as part of pull printing.
 
 ### Devices and apps | Corporate management
-Intune [July](changelog.md#july-2020) updates in beta.
+Intune [July](https://developer.microsoft.com/graph/changelog#july-2020) updates in beta.
 
 ### Groups
 Use the **isAssignableToRole** property of a Microsoft 365 [group](/graph/api/resources/group?view=graph-rest-beta&preserve-view=true) and set it during group creation to indicate whether the group can be assigned to an Azure AD role. This [helps manage role assignments in Azure AD](/azure/active-directory/users-groups-roles/roles-groups-concept), such that instead of assigning individual users an Azure AD role, a privileged role admin or global admin can create a Microsoft 365 group and assign the group that role, so that when users join the _group_, they are assigned the intended role indirectly.
 
 ### Identity and access
 - [Acquire an access token](/graph/api/synchronization-synchronization-acquireAccessToken?view=graph-rest-beta&preserve-view=true) to authorize the Azure AD provisioning service to provision users into an application.
-- [Get](/graph/api/entitlementmanagementsettings-get?view=graph-rest-beta&preserve-view=true) or [update](/graph/api/entitlementmanagementsettings-update?view=graph-rest-beta&preserve-view=true) entitlement management settings that control access to groups, applications, and SharePoint Online sites for users internal and external to your organization. 
+- [Get](/graph/api/entitlementmanagementsettings-get?view=graph-rest-beta&preserve-view=true) or [update](/graph/api/entitlementmanagementsettings-update?view=graph-rest-beta&preserve-view=true) entitlement management settings that control access to groups, applications, and SharePoint Online sites for users internal and external to your organization.
 
 ### Identity and access | Identity and sign-in
 - Include user risk levels (`low`, `medium`, `high`, `none`) as a consideration for applying a [conditional access policy](/graph/api/resources/conditionalaccesspolicy?view=graph-rest-beta&preserve-view=true).
@@ -4145,7 +4563,7 @@ Use the **isAssignableToRole** property of a Microsoft 365 [group](/graph/api/re
 - Use an [Open ID Connect provider](/graph/api/resources/openidconnectprovider?view=graph-rest-beta&preserve-view=true) (ODIC) as an identity provider in an Azure AD tenant and an Azure AD B2C tenant. Its **claimsMapping** property allows Azure AD to [map the claims](/graph/api/resources/claimsmapping?view=graph-rest-beta&preserve-view=true) from an OIDC provider to the claims that Azure AD recognizes and uses.
 
 ### People and workplace intelligence | Insights
-Use more [granular privacy control](insights-customize-item-insights-privacy.md) over the availability and display of [item insights](/graph/api/resources/iteminsights?view=graph-rest-beta&preserve-view=true) in Microsoft 365. These insights represent the relationships between a user and documents in OneDrive for Business, calculated using advanced analytics and machine learning techniques. 
+Use more [granular privacy control](insights-customize-item-insights-privacy.md) over the availability and display of [item insights](/graph/api/resources/iteminsights?view=graph-rest-beta&preserve-view=true) in Microsoft 365. These insights represent the relationships between a user and documents in OneDrive for Business, calculated using advanced analytics and machine learning techniques.
 
 ### People and workplace intelligence | Profile card customization
 Administrators can [customize the properties exposed on the profile card for their organizations](add-properties-profilecard.md) by using the API for [profile card property](/graph/api/resources/profilecardproperty?view=graph-rest-beta&preserve-view=true).
@@ -4177,7 +4595,7 @@ Access the SharePoint [term store](/graph/api/resources/termstore-store?view=gra
 ### Groups
 Use application permissions `Group.Read.All` and `Group.ReadWrite.All` to get group [conversation](/graph/api/resources/conversation) and [conversation thread](/graph/api/resources/conversationthread) resources.
 
-### Identity and access 
+### Identity and access
 - GA of two sets of API for [identity protection](/graph/api/resources/identityprotectionroot): [risk detection](/graph/api/resources/riskdetection) and [risky user](/graph/api/resources/riskyuser) APIs.
 
 ### Security
@@ -4229,10 +4647,10 @@ In addition to tracking incremental changes on events in a **calendarView** (col
 - Expand documents when [listing pring jobs](/graph/api/printer-list-jobs?view=graph-rest-beta&preserve-view=true).
 - [Register a printer]() and use the [printerCreateOperation](/graph/api/resources/printercreateoperation?view=graph-rest-beta&preserve-view=true) resource to track and verify the registration of the printer.
 - [Get long-running printer registration operation](/graph/api/printoperation-get?view=graph-rest-beta&preserve-view=true) within current user or app's tenant.
-- A few renaming of properties and enum types - see details in the [June](changelog.md#june-2020) changelog updates for cloud printing.
+- A few renaming of properties and enum types - see details in the [June](https://developer.microsoft.com/graph/changelog#june-2020) changelog updates for cloud printing.
 
 ### Devices and apps | Corporate management
-Intune [June](changelog.md#june-2020) updates in beta.
+Intune [June](https://developer.microsoft.com/graph/changelog#june-2020) updates in beta.
 
 ### Education
 - Can use delegated permissions `EduRoster.ReadBasic` to [get](/graph/api/educationuser-get?view=graph-rest-beta&preserve-view=true) the ID of a [teacher](/graph/api/resources/educationteacher?view=graph-rest-beta&preserve-view=true) or [student](/graph/api/resources/educationstudent?view=graph-rest-beta&preserve-view=true) in an external source program, as the **externalId** property.
@@ -4249,7 +4667,7 @@ Intune [June](changelog.md#june-2020) updates in beta.
 - Use [get externalItem](/graph/api/externalitem-get?view=graph-rest-beta&preserve-view=true) for diagnostic purposes.
 
 ### Users
-- Use the **userPurpose** property of [mailboxSettings](/graph/api/resources/mailboxsettings?view=graph-rest-beta&preserve-view=true) to identify and differentiate a mailbox for a single user from a shared mailbox and equipment mailbox in Exchange Online. 
+- Use the **userPurpose** property of [mailboxSettings](/graph/api/resources/mailboxsettings?view=graph-rest-beta&preserve-view=true) to identify and differentiate a mailbox for a single user from a shared mailbox and equipment mailbox in Exchange Online.
 - Use [user settings](/graph/api/resources/usersettings?view=graph-rest-beta&preserve-view=true) to [get](/graph/api/regionalandlanguagesettings-get?view=graph-rest-beta&preserve-view=true) or [update](/graph/api/regionalandlanguagesettings-update?view=graph-rest-beta&preserve-view=true) [preferred languaes and regional settings](/graph/api/resources/regionalandlanguagesettings?view=graph-rest-beta&preserve-view=true).
 - User settings is a relationship accessible through [user](/graph/api/resources/user?view=graph-rest-beta&preserve-view=true) that enables a consistent user experience across apps, by tapping into the Azure AD user profile to reflect the same user preferences. See [how user settings differentiate from mailbox settings](/graph/api/resources/user?view=graph-rest-beta&preserve-view=true#user-preferences-for-languages-and-regional-formats).
 
@@ -4270,7 +4688,7 @@ GA of the [places API](/graph/api/resources/place) in v1.0 - use this API in pro
 - Support for voice mail as a possible type of service-side end point in a communication [segment](/graph/api/resources/callrecords-segment).
 
 ### Devices and apps | Corporate management
-Intune [May](changelog.md#may-2020) updates in v1.0.
+Intune [May](https://developer.microsoft.com/graph/changelog#may-2020) updates in v1.0.
 
 ### Graph Explorer
 Use the many new features of [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer) that enhance learning and prototyping in the sandbox. For example:
@@ -4312,17 +4730,15 @@ GA of the [shifts API](/graph/api/resources/shift?view=graph-rest-1.0&preserve-v
 ## May 2020: New in preview only
 
 ### Change notifications
-- Use formally schematized types [changeNotification](/graph/api/resources/changenotification?view=graph-rest-beta&preserve-view=true) and [changeNotificationCollection](/graph/api/resources/changenotificationcollection?view=graph-rest-beta&preserve-view=true) to process resource change notifications. 
+- Use formally schematized types [changeNotification](/graph/api/resources/changenotification?view=graph-rest-beta&preserve-view=true) and [changeNotificationCollection](/graph/api/resources/changenotificationcollection?view=graph-rest-beta&preserve-view=true) to process resource change notifications.
 - Track if notifications are in sequence or if a notification is missing by using the **sequenceNumber** property on the **changeNotification** resource.
 
 ### Devices and apps | Cloud printing
 - The [printer](/graph/api/resources/printer?view=graph-rest-beta&preserve-view=true) and [printerShare](/graph/api/resources/printershare?view=graph-rest-beta&preserve-view=true) resources are now in parity and have the same properties as each other.
 - Some property and type name clean-up around printer shares:
-  - Use the **shared** navigation property of [print](/graph/api/resources/print?view=graph-rest-beta&preserve-view=true) to get the list of printer shares registered in the tenant. 
-  - See details in the [May](changelog.md#may-2020) changelog.
-
+  - Use the **shared** navigation property of [print](/graph/api/resources/print?view=graph-rest-beta&preserve-view=true) to get the list of printer shares registered in the tenant.
 ### Devices and apps | Corporate management
-Intune [May](changelog.md#may-2020) updates in beta.
+Intune [May](https://developer.microsoft.com/graph/changelog#may-2020) updates in beta.
 
 ### Groups
 - [Evaluate](/graph/api/group-evaluatedynamicmembership?view=graph-rest-beta&preserve-view=true) whether a user or device is or would be a member of a dynamic group, using the existing rule for the [group](/graph/api/resources/group?view=graph-rest-beta&preserve-view=true) or a specified rule. [Rule-based dynamic membership](/azure/active-directory/users-groups-roles/groups-dynamic-membership) reduces administrative overhead of adding and removing members.
@@ -4330,9 +4746,9 @@ Intune [May](changelog.md#may-2020) updates in beta.
 - Specify the resources to provision in the **resourceProvisioningOptions** property that are normally not part of the default [group](/graph/api/resources/group?view=graph-rest-beta&preserve-view=true) creation. Currently supported is provisioning a group as a [team](/graph/api/resources/team?view=graph-rest-beta&preserve-view=true) with Microsoft Teams capabilities.
 
 ### Identity and access
-- Apply OData system query options (`$count`, `$filter`, `$search`) when getting collections of entities that are derived from [directoryObject](/graph/api/resources/directoryObject). 
-You can [search for specific tokens](/graph/search-query-parameter#using-search-on-directory-object-collections) in the **displayName** and **description** properties 
-of these entities, and use OData cast to trim **directoryObject** results to certain derived types. See more details in 
+- Apply OData system query options (`$count`, `$filter`, `$search`) when getting collections of entities that are derived from [directoryObject](/graph/api/resources/directoryObject).
+You can [search for specific tokens](/graph/search-query-parameter#using-search-on-directory-object-collections) in the **displayName** and **description** properties
+of these entities, and use OData cast to trim **directoryObject** results to certain derived types. See more details in
 [Build advanced queries in Microsoft Graph with $count, $filter, $search, and $orderby](https://developer.microsoft.com/en-us/graph/blogs/build-advanced-queries-with-count-filter-search-and-orderby/).
 - As part of the [identity protection API](/graph/api/resources/identityprotection-root?view=graph-rest-beta&preserve-view=true), use the **riskEventType** property to [get the type of risk detected](/graph/api/riskdetection-get?view=graph-rest-beta&preserve-view=true), or [get the type of risk in a user's history](/graph/api/riskyuser-list-history?view=graph-rest-beta&preserve-view=true). Do not use the **riskType** property as it has been deprecated.
 - Specify client application types in the **clientAppTypes** property of the [condition set](/graph/api/resources/conditionalaccessconditionset?view=graph-rest-beta&preserve-view=true) for a [conditional access policy](/graph/api/resources/conditionalaccesspolicy?view=graph-rest-beta&preserve-view=true).
@@ -4349,11 +4765,11 @@ of these entities, and use OData cast to trim **directoryObject** results to cer
 
 ### Calendar
 - [Share or delegate calendars](outlook-share-or-delegate-calendar.md) programmatically, in closer parity with the Outlook user experience. In addition to tracking the current user's permissions and sharing status for a calendar:
-  - For each [calendar](/graph/api/resources/calendar?view=graph-rest-1.0&preserve-view=true), you can now manage the [permissions](/graph/api/resources/calendarpermission?view=graph-rest-1.0&preserve-view=true) of each user with whom the calendar is shared. 
-  - For each [mailbox](/graph/api/resources/mailboxsettings?view=graph-rest-1.0&preserve-view=true), you can now specify whether a delegate, mailbox owner, or both receive meeting messages and meeting responses. 
+  - For each [calendar](/graph/api/resources/calendar?view=graph-rest-1.0&preserve-view=true), you can now manage the [permissions](/graph/api/resources/calendarpermission?view=graph-rest-1.0&preserve-view=true) of each user with whom the calendar is shared.
+  - For each [mailbox](/graph/api/resources/mailboxsettings?view=graph-rest-1.0&preserve-view=true), you can now specify whether a delegate, mailbox owner, or both receive meeting messages and meeting responses.
 - [Create or update an event as an online meeting](outlook-calendar-online-meetings.md):
   - For each **calendar**, specify the allowed and the default online meeting providers.
-  - Create or update an [event](/graph/api/resources/event?view=graph-rest-1.0&preserve-view=true) to be available online, and provide details for attendees to join the meeting online. 
+  - Create or update an [event](/graph/api/resources/event?view=graph-rest-1.0&preserve-view=true) to be available online, and provide details for attendees to join the meeting online.
   - In particular, use the new **onlineMeetingProvider** and **onlineMeeting** properties of **event** to set or identify Microsoft Teams as an online meeting provider, a workaround for a known issue with the **onlineMeetingUrl** property.
 - Add [file attachments up to 150MB](outlook-large-attachments.md) to an [event](/graph/api/resources/event?view=graph-rest-1.0&preserve-view=true).
 
@@ -4362,11 +4778,11 @@ of these entities, and use OData cast to trim **directoryObject** results to cer
 - Apply optional password and expiration date/time as parameters of the [invite](/graph/api/driveitem-invite?view=graph-rest-1.0&preserve-view=true) and [create sharing link](/graph/api/driveitem-createlink?view=graph-rest-1.0&preserve-view=true) actions to share a [driveItem](/graph/api/resources/driveitem?view=graph-rest-1.0&preserve-view=true).
 - Get or set password and expiration date/time of a [permission](/graph/api/resources/permission?view=graph-rest-1.0&preserve-view=true), and track the [identitySet](/graph/api/resources/identityset?view=graph-rest-1.0&preserve-view=true) of users granted the permission to share a **driveItem**.
 - Get the [permission](/graph/api/resources/permission?view=graph-rest-1.0&preserve-view=true) of a [shared drive item](/graph/api/resources/shareddriveitem?view=graph-rest-1.0&preserve-view=true) by using the **permission** navigation property.
-- Limit users with a [sharing link](/graph/api/resources/sharinglink?view=graph-rest-1.0&preserve-view=true) to only view and may not download the contents of a shared**driveItem** on OneDrive for Business or SharePoint.
+- Limit users with a [sharing link](/graph/api/resources/sharinglink?view=graph-rest-1.0&preserve-view=true) to only view and might not download the contents of a shared**driveItem** on OneDrive for Business or SharePoint.
 
 ### Identity and access
 - To manage roles and assign access to resources in role-based access control (RBAC) providers such as Microsoft Intune, use [unifiedRoleAssignmentMultiple](/graph/api/resources/unifiedroleassignmentmultiple?view=graph-rest-1.0&preserve-view=true). The **unifiedRoleAssignmentMultiple** resource supports defining a single role over an array of scopes, and assigning the role to multiple principals (such as users).
-- Access specific types of [policies for an organization](/graph/api/resources/policy-overview?view=graph-rest-1.0&preserve-view=true) using the `/policies` URL segment and specifying the policy type. For example, an organization can enforce a policy to automatically sign a user out from a web session after a period of inactivity; see CRUD operations for instances of [activityBasedTimeoutPolicy](/graph/api/resources/activitybasedtimeoutpolicy?view=graph-rest-1.0&preserve-view=true). This is a breaking change to make it easier to discover all policies, by grouping all typed policies under the `/policies` segment. Access other typed policies in a similar approach: [claimsMappingPolicy](/graph/api/resources/claimsmappingpolicy?view=graph-rest-1.0&preserve-view=true), [homeRealmDiscoveryPolicy](/graph/api/resources/homerealmdiscoverypolicy?view=graph-rest-1.0&preserve-view=true), [tokenLifetimePolicy](/graph/api/resources/tokenlifetimepolicy?view=graph-rest-1.0&preserve-view=true), and [tokenIssuancePolicy](/graph/api/resources/tokenissuancepolicy). 
+- Access specific types of [policies for an organization](/graph/api/resources/policy-overview?view=graph-rest-1.0&preserve-view=true) using the `/policies` URL segment and specifying the policy type. For example, an organization can enforce a policy to automatically sign a user out from a web session after a period of inactivity; see CRUD operations for instances of [activityBasedTimeoutPolicy](/graph/api/resources/activitybasedtimeoutpolicy?view=graph-rest-1.0&preserve-view=true). This is a breaking change to make it easier to discover all policies, by grouping all typed policies under the `/policies` segment. Access other typed policies in a similar approach: [claimsMappingPolicy](/graph/api/resources/claimsmappingpolicy?view=graph-rest-1.0&preserve-view=true), [homeRealmDiscoveryPolicy](/graph/api/resources/homerealmdiscoverypolicy?view=graph-rest-1.0&preserve-view=true), [tokenLifetimePolicy](/graph/api/resources/tokenlifetimepolicy?view=graph-rest-1.0&preserve-view=true), and [tokenIssuancePolicy](/graph/api/resources/tokenissuancepolicy).
 
 ### Mail
 Add [file attachments up to 150MB](outlook-large-attachments.md) to a [message](/graph/api/resources/message?view=graph-rest-1.0&preserve-view=true).
@@ -4383,7 +4799,7 @@ Add [file attachments up to 150MB](outlook-large-attachments.md) to a [message](
 Designate allowed users and groups to use specific [printer shares](/graph/api/resources/printershare?view=graph-rest-beta&preserve-view=true) on Universal Print, the Microsoft 365 cloud-based print infrastructure. To experience robust and centralized print management capabilities, and offer a simple yet rich and secure print experience for print users, see the [Universal Print announcement](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/announcing-universal-print-a-cloud-based-print-solution/ba-p/1204775) and join their preview program.
 
 ### Devices and apps | Corporate management
-Intune [April](changelog.md#april-2020) updates.
+Intune [April](https://developer.microsoft.com/graph/changelog#april-2020) updates.
 
 ### Groups
 Identify the app that created a [group](/graph/api/resources/group?view=graph-rest-beta&preserve-view=true) by its app ID.
@@ -4421,7 +4837,7 @@ View **Meeting Created** and **Meeting Interacted** data in CSV reports for [ema
 - Use the `User.ManageIdentities.All` delegated permission to allow an app to read, update, or delete identities that are associated with a user's account, that the signed-in user has access to. Use that permission at the application-level without a signed-in user present. This allows the app to [manage](/graph/api/user-update?view=graph-rest-1.0&preserve-view=true) which identities a user can sign-in with.
 
 ### Reports
-Use Teams Service Administrator and Teams Communications Administrator as accepted user roles to allow apps to read Microsoft 365 service usage reports on behalf of a user, as [forms of user-delegated authorization](reportroot-authorization.md). 
+Use Teams Service Administrator and Teams Communications Administrator as accepted user roles to allow apps to read Microsoft 365 service usage reports on behalf of a user, as [forms of user-delegated authorization](reportroot-authorization.md).
 
 ### Sites
 - Let users [follow](/graph/api/site-follow?view=graph-rest-1.0&preserve-view=true) or [unfollow](/graph/api/site-unfollow?view=graph-rest-1.0&preserve-view=true) SharePoint sites.
@@ -4439,7 +4855,7 @@ Use Teams Service Administrator and Teams Communications Administrator as accept
 - Use the optional `Accept-Language` HTTP request header to [create](/graph/api/application-post-onlinemeetings?view=graph-rest-beta&preserve-view=true) or [get](/graph/api/onlinemeeting-get?view=graph-rest-beta&preserve-view=true) an instance of online meeting, so that the successful operation displays the content of the **joinInformation** property in the specified language and locale variant.
 
 ### Devices and apps
-Intune [March](changelog.md#march-2020) updates.
+Intune [March](https://developer.microsoft.com/graph/changelog#march-2020) updates.
 
 ### Identity and access
 - Use the `AuditLog.Read.All` permission to list the [sign-in activity](/graph/api/resources/signinactivity?view=graph-rest-beta&preserve-view=true) of a [user](/graph/api/resources/user?view=graph-rest-beta&preserve-view=true).
@@ -4458,7 +4874,7 @@ Intune [March](changelog.md#march-2020) updates.
 Use the `ChannelMessage.Read.All` application-level permission to read [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta&preserve-view=true) instances in channels without a signed-in user.
 
 ### Universal Print
-Debut of the [Universal Print API](universal-print-concept-overview.md) which allows users to print on the web or from an app. The API lets IT administrators manage user and group access to printers in the Microsoft 365 cloud, remote printer sharing to maintain availability, monitor printer status, and report on archived print jobs and usage. 
+Debut of the [Universal Print API](universal-print-concept-overview.md) which allows users to print on the web or from an app. The API lets IT administrators manage user and group access to printers in the Microsoft 365 cloud, remote printer sharing to maintain availability, monitor printer status, and report on archived print jobs and usage.
 
 Note that as of March 2020, the Universal Print _service_ is in private preview. See [Announcing Universal Print: a cloud-based print solution](https://aka.ms/announcinguniversalprint) for information regarding participation.
 
@@ -4487,14 +4903,14 @@ See [tasks supported by preview APIs that manage calendar sharing and delegation
 - For a participant in a meeting, use the **initiator** property to get the identity information of the initiator of a [recording](/graph/api/resources/recordinginfo?view=graph-rest-beta&preserve-view=true), if there is one.
 
 ### Devices and apps
-Intune [February](changelog.md#february-2020) updates.
+Intune [February](https://developer.microsoft.com/graph/changelog#february-2020) updates.
 
 ### Groups
 Use the [assignLicense](/graph/api/group-assignlicense?view=graph-rest-beta&preserve-view=true) method to assign licences for products, such as Microsoft 365 or Enterprise Mobility + Security, to a group. Since Azure AD ensures licences are assigned to members of the group, members joining or leaving a group no longer requires licence management at the individual level.
 
 ### Identity and access
 - Set requestor, approval, and review settings when creating an [access package assignment policy](/graph/api/resources/accesspackageassignmentpolicy?view=graph-rest-beta&preserve-view=true).
-- Access specific types of [policies for an organization](/graph/api/resources/policy-overview?view=graph-rest-beta&preserve-view=true) using the `/policies` URL segment and specifying the policy type. For example, an organization can enforce a policy to automatically sign a user out from a web session after a period of inactivity; see CRUD operations for instances of [activityBasedTimeoutPolicy](/graph/api/resources/activitybasedtimeoutpolicy?view=graph-rest-beta&preserve-view=true). This is a [breaking change](https://devblogs.microsoft.com/microsoft365dev/breaking-changes-policy-api-microsoft-graph-beta) to make it easier to discover all policies, by grouping all typed policies under the `/policies` segment. Access other typed policies in a similar approach: [claimsMappingPolicy](/graph/api/resources/claimsmappingpolicy?view=graph-rest-beta&preserve-view=true), [homeRealmDiscoveryPolicy](/graph/api/resources/homerealmdiscoverypolicy?view=graph-rest-beta&preserve-view=true), [tokenLifetimePolicy](/graph/api/resources/tokenlifetimepolicy?view=graph-rest-beta&preserve-view=true), and [tokenIssuancePolicy](/graph/api/resources/tokenissuancepolicy). 
+- Access specific types of [policies for an organization](/graph/api/resources/policy-overview?view=graph-rest-beta&preserve-view=true) using the `/policies` URL segment and specifying the policy type. For example, an organization can enforce a policy to automatically sign a user out from a web session after a period of inactivity; see CRUD operations for instances of [activityBasedTimeoutPolicy](/graph/api/resources/activitybasedtimeoutpolicy?view=graph-rest-beta&preserve-view=true). This is a [breaking change](https://devblogs.microsoft.com/microsoft365dev/breaking-changes-policy-api-microsoft-graph-beta) to make it easier to discover all policies, by grouping all typed policies under the `/policies` segment. Access other typed policies in a similar approach: [claimsMappingPolicy](/graph/api/resources/claimsmappingpolicy?view=graph-rest-beta&preserve-view=true), [homeRealmDiscoveryPolicy](/graph/api/resources/homerealmdiscoverypolicy?view=graph-rest-beta&preserve-view=true), [tokenLifetimePolicy](/graph/api/resources/tokenlifetimepolicy?view=graph-rest-beta&preserve-view=true), and [tokenIssuancePolicy](/graph/api/resources/tokenissuancepolicy).
 - Use application-level and delegated `Policy.ReadWrite.ApplicationConfiguration` permission for read and write operations on application configuration [policies](/graph/api/resources/policy-overview?view=graph-rest-beta&preserve-view=true) mentioned in the preceding item.
 
 ### Teamwork
@@ -4515,7 +4931,7 @@ Use the **identities** property to access one or more identities that a [user](/
 ## January 2020: New in preview
 
 ### Devices and apps
-Intune [January](changelog.md#january-2020) updates.
+Intune [January](https://developer.microsoft.com/graph/changelog#january-2020) updates.
 
 
 ## December 2019: New and generally available
@@ -4526,7 +4942,7 @@ The cloud communications API has GA'd and APIs for [call](/graph/api/resources/c
 ### Education
 Use the **classSettings** property to manage class-specific settings, such as enabling the sending of weekly assignment digests. This property is available on the [team](/graph/api/resources/team?view=graph-rest-1.0&preserve-view=true) resource when the team represents an [education class](/graph/api/resources/educationclass?view=graph-rest-1.0&preserve-view=true).
 
-### Identity and access 
+### Identity and access
 [Attempting to get container objects with limited permissions returns partial data](permissions-overview.md#limited-information-returned-for-inaccessible-member-objects). An example is a [group](/graph/api/resources/group?view=graph-rest-1.0&preserve-view=true) instance that's associated with a [user](/graph/api/resources/user?view=graph-rest-1.0&preserve-view=true), another **group**, and a [device](/graph/api/resources/device?view=graph-rest-1.0&preserve-view=true). An app having only the permissions User.Read.All and Group.Read.All and attempting to access this **group** instance would get the **user** and **group** objects, but limited data for the **device** object (only data type and object ID and not property values).
 
 ### People and workplace intelligence
@@ -4540,19 +4956,19 @@ The insights API has GA'd. Use the API in production apps to identify the most r
 To get Microsoft 365 usage reports using permissions delegated by a user, administrators must have assigned the user an Azure AD limited administrator role. This can be one of the following roles: company administrator, Exchange administrator, SharePoint administrator, Lync administrator, global reader, or reports reader. See [Authorization for APIs to read Microsoft 365 usage reports](reportroot-authorization.md) for details.
 
 ### Toolkit
-Microsoft Graph Toolkit v1.1 has released. For a list of enhancements and bug fixes, see the [December 2019 section](changelog.md#december-2019) of the changelog.
+Microsoft Graph Toolkit v1.1 has released. For a list of enhancements and bug fixes, see the [December 2019 section](https://developer.microsoft.com/graph/changelog#december-2019) of the changelog.
 
 ## December 2019: New in preview
 
 ### Cloud communications
 - Use the new [presence](/graph/api/resources/presence?view=graph-rest-beta&preserve-view=true) resource to get information about the availability and current activity of one or more users.
 - [Delete](/graph/api/onlinemeeting-delete?view=graph-rest-beta&preserve-view=true) an instance of an [onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true).
-- See the [December 2019 section](changelog.md#december-2019) of the changelog for the renaming and removal of a few members of the [call](/graph/api/resources/call?view=graph-rest-beta&preserve-view=true) and [onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true) resources, to be in parity with the v1 version of these resources.
+- See the [December 2019 section](https://developer.microsoft.com/graph/changelog#december-2019) of the changelog for the renaming and removal of a few members of the [call](/graph/api/resources/call?view=graph-rest-beta&preserve-view=true) and [onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true) resources, to be in parity with the v1 version of these resources.
 
 ### Devices and apps
-Intune [December](changelog.md#december-2019) updates
+Intune [December](https://developer.microsoft.com/graph/changelog#december-2019) updates
 
-### Identity and access 
+### Identity and access
 - Behavior fix to the **appRoleAssignments** and **appRoleAssignedTo** relationships on [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta&preserve-view=true).
 - Use [accessPackageResourceRequest](/graph/api/resources/accesspackageresourcerequest?view=graph-rest-beta&preserve-view=true) in [Azure AD entitlement management](/graph/api/resources/entitlementmanagement-overview?view=graph-rest-beta&preserve-view=true) to request adding a resource to a [catalog](/graph/api/resources/accesspackagecatalog?view=graph-rest-beta&preserve-view=true), so that the roles of that resource can be used in an [access package](/graph/api/resources/accesspackage?view=graph-rest-beta&preserve-view=true).
 - Use the [threat assessment API](/graph/api/resources/threatassessment-api-overview?view=graph-rest-beta&preserve-view=true) to empower administrators to report suspicious emails, phishing URLs, email attachments, or other files. The thread scanning verdict can then inform them to adjust organizational policy appropriately.
@@ -4596,7 +5012,7 @@ The [call](/graph/api/resources/call?view=graph-rest-beta&preserve-view=true) re
 - The ability to [update](/graph/api/call-updaterecordingstatus?view=graph-rest-beta&preserve-view=true) the [recording information](/graph/api/resources/recordinginfo?view=graph-rest-beta&preserve-view=true) for a [participant](/graph/api/resources/participant?view=graph-rest-beta&preserve-view=true)
 
 ### Devices and apps
-Intune [November](changelog.md#november-2019) updates
+Intune [November](https://developer.microsoft.com/graph/changelog#november-2019) updates
 
 ### Education
 Administrators can enable class-wide settings through the **classSettings** property of the [team](/graph/api/resources/team?view=graph-rest-beta&preserve-view=true) associated with the [class](/graph/api/resources/educationclass?view=graph-rest-beta&preserve-view=true). Currently, there is a setting to notify guardians about weekly assignments.
@@ -4610,7 +5026,7 @@ Administrators can enable class-wide settings through the **classSettings** prop
 Use the delegated permission, Mail.ReadBasic, and application permission, Mail.ReadBasic.All, to manage [subscriptions](/graph/api/resources/subscription?view=graph-rest-beta&preserve-view=true) for change notifications on the [message](/graph/api/resources/message?view=graph-rest-beta&preserve-view=true) resource.
 
 ### Notifications
-Use the new light-weight notifications [web SDK](https://aka.ms/GNSDK) in place of the [Project Rome SDK](https://github.com/Microsoft/project-rome), to take advantage of an improved authentication model and support for web apps using web push. 
+Use the new light-weight notifications [web SDK](https://aka.ms/GNSDK) in place of the [Project Rome SDK](https://github.com/Microsoft/project-rome), to take advantage of an improved authentication model and support for web apps using web push.
 
 ### People and workplace intelligence
 Debut of the [profile](/graph/api/resources/profile?view=graph-rest-beta&preserve-view=true) resource which is a rich representation of the next generation of people entities in Microsoft services. This resource relates to common and practical people attributes, including information for any meaningful dates such as [anniversaries](/graph/api/resources/personanniversary?view=graph-rest-beta&preserve-view=true), [education](/graph/api/resources/educationalactivity?view=graph-rest-beta&preserve-view=true), [employment positions](/graph/api/resources/workposition?view=graph-rest-beta&preserve-view=true), [interests](/graph/api/resources/personinterest?view=graph-rest-beta&preserve-view=true), [language](/graph/api/resources/languageproficiency?view=graph-rest-beta&preserve-view=true) and [skill](/graph/api/resources/skillproficiency?view=graph-rest-beta&preserve-view=true) proficiencies, [project participation](/graph/api/resources/projectparticipation?view=graph-rest-beta&preserve-view=true), [web site association](/graph/api/resources/personwebsite?view=graph-rest-beta&preserve-view=true), and other [account](/graph/api/resources/useraccountinformation?view=graph-rest-beta&preserve-view=true) and contact information.
@@ -4640,7 +5056,7 @@ Use the **creationType** property to find how a user account was created, for ex
 Use the new **message** parameter to update any writeable [message](/graph/api/resources/message?view=graph-rest-1.0&preserve-view=true) properties when [replying](/graph/api/message-reply?view=graph-rest-1.0&preserve-view=true) to a message, for example, [adding a recipient to the reply](/graph/api/message-reply#example?view=graph-rest-1.0&preserve-view=true).
 
 ### Microsoft Graph data connect
-Developers and data scientists can now use [tools to translate Office 365 data into Common Data Model format](https://github.com/OfficeDev/MS-Graph-Data-Connect/blob/master/Common-Data-Model/README.md), making it schematically consistent with other Open Data Initiative (ODI)-ready datasets. 
+Developers and data scientists can now use [tools to translate Office 365 data into Common Data Model format](https://github.com/OfficeDev/MS-Graph-Data-Connect/blob/master/Common-Data-Model/README.md), making it schematically consistent with other Open Data Initiative (ODI)-ready datasets.
 
 
 ### Microsoft Graph SDKs
@@ -4648,7 +5064,7 @@ Developers and data scientists can now use [tools to translate Office 365 data i
 - Read about [making API calls using the SDKs](./sdks/create-requests.md).
 
 ### Users
-- [Get](/graph/api/user-get-mailboxsettings?view=graph-rest-1.0&preserve-view=true) or [set](/graph/api/user-update-mailboxsettings?view=graph-rest-1.0&preserve-view=true) a user's preferred date and time format [settings for the user's mailbox](/graph/api/resources/mailboxsettings?view=graph-rest-1.0&preserve-view=true). 
+- [Get](/graph/api/user-get-mailboxsettings?view=graph-rest-1.0&preserve-view=true) or [set](/graph/api/user-update-mailboxsettings?view=graph-rest-1.0&preserve-view=true) a user's preferred date and time format [settings for the user's mailbox](/graph/api/resources/mailboxsettings?view=graph-rest-1.0&preserve-view=true).
 - Track the date/time of the last password change on a [user](/graph/api/resources/user?view=graph-rest-1.0&preserve-view=true).
 
 ## October 2019: New in preview
@@ -4656,15 +5072,15 @@ Developers and data scientists can now use [tools to translate Office 365 data i
 ### Calendar
 - Meeting organizers can [allow invitees to propose alternate meeting times](outlook-calendar-meeting-proposals.md). When receiving a meeting response that includes a proposed alternate time, the organizer can decide to accept the proposal and [update](/graph/api/event-update?view=graph-rest-beta&preserve-view=true) the meeting time.
 - Programmatic calendar sharing is in closer parity with the Outlook user experience. In addition to tracking the current user's permissions and sharing status for a calendar:
-  - For each [calendar](/graph/api/resources/calendar?view=graph-rest-beta&preserve-view=true), you can now manage the [permissions](/graph/api/resources/calendarpermission?view=graph-rest-beta&preserve-view=true) of each user with whom the calendar is shared. 
-  - For each [mailbox](/graph/api/resources/mailboxsettings?view=graph-rest-beta&preserve-view=true), you can now specify whether a delegate, mailbox owner, or both receive meeting messages and meeting responses. 
+  - For each [calendar](/graph/api/resources/calendar?view=graph-rest-beta&preserve-view=true), you can now manage the [permissions](/graph/api/resources/calendarpermission?view=graph-rest-beta&preserve-view=true) of each user with whom the calendar is shared.
+  - For each [mailbox](/graph/api/resources/mailboxsettings?view=graph-rest-beta&preserve-view=true), you can now specify whether a delegate, mailbox owner, or both receive meeting messages and meeting responses.
 - Additional online meeting support:
   - For each **calendar**, specify the allowed and the default online meeting providers.
-  - Create or update an [event](/graph/api/resources/event?view=graph-rest-beta&preserve-view=true) to be available online, and provide details for attendees to join the meeting online. 
+  - Create or update an [event](/graph/api/resources/event?view=graph-rest-beta&preserve-view=true) to be available online, and provide details for attendees to join the meeting online.
   - In particular, use the new **onlineMeetingProvider** and **onlineMeeting** properties of **event** to set or identify Microsoft Teams as an online meeting provider, a workaround for a known issue with the **onlineMeetingUrl** property.
 
 ### Devices and apps
-Intune [October](changelog.md#october-2019) updates
+Intune [October](https://developer.microsoft.com/graph/changelog#october-2019) updates
 
 ### Graph Explorer
 Try the [next version of Graph Explorer](https://developer.microsoft.com/graph/graph-explorer/preview) and see handy contextual information such as permissions, access tokens, and SDK code snippets in the new **Permissions**, **Auth**, and **Snippets** tabs. Use the **Preview** slider to switch between the [production](https://developer.microsoft.com/graph/graph-explorer) and new preview version of Graph Explorer.
@@ -4684,12 +5100,12 @@ Try the [next version of Graph Explorer](https://developer.microsoft.com/graph/g
 
 
 ### Mail
-[Attach large files up to 150MB](outlook-large-attachments.md) to a [message](/graph/api/resources/message?view=graph-rest-beta&preserve-view=true) instance, by creating an [upload session](/graph/api/resources/uploadsession?view=graph-rest-beta&preserve-view=true), and iteratively uploading ranges of the file until all the bytes of the file have been uploaded. 
+[Attach large files up to 150MB](outlook-large-attachments.md) to a [message](/graph/api/resources/message?view=graph-rest-beta&preserve-view=true) instance, by creating an [upload session](/graph/api/resources/uploadsession?view=graph-rest-beta&preserve-view=true), and iteratively uploading ranges of the file until all the bytes of the file have been uploaded.
 
 ### Microsoft Graph Security API
 - Preview integration with RSA NetWitness, ServiceNow, and Splunk, to correlate and synchronize [alerts](/graph/api/resources/security-api-overview?view=graph-rest-beta&preserve-view=true#alerts), and improve threat protection and response.
 - New triggers added to the [Microsoft Graph security connector](/connectors/microsoftgraphsecurity/) and [playbooks](/azure/security-center/security-center-playbooks) for Logic Apps and Flow. See [playbook examples](https://github.com/microsoftgraph/security-api-solutions/tree/master/Playbooks).
-- Support for sending [threat indicators](/graph/api/resources/security-api-overview?view=graph-rest-beta&preserve-view=true#threat-indicators-preview) to Microsoft Defender for Endpoint to block or alert on threats using their own intelligence sources. Integrations with partners like ThreatConnect enable customers to send indicators directly from threat intelligence and automation solutions. 
+- Support for sending [threat indicators](/graph/api/resources/security-api-overview?view=graph-rest-beta&preserve-view=true#threat-indicators-preview) to Microsoft Defender for Endpoint to block or alert on threats using their own intelligence sources. Integrations with partners like ThreatConnect enable customers to send indicators directly from threat intelligence and automation solutions.
 
 ### Notifications
 - [Create and send notifications](/graph/api/user-post-notifications?view=graph-rest-beta&preserve-view=true) to all app clients on all device endpoints that a user is signed in to, without having to manage user-delegated permissions.
@@ -4697,7 +5113,7 @@ Try the [next version of Graph Explorer](https://developer.microsoft.com/graph/g
 - Specify a [fall back policy](/graph/api/resources/fallbackpolicy?view=graph-rest-beta&preserve-view=true) on notifications for iOS endpoints, to send high-priority raw notifications that might not be delivered to devices otherwise due to platform specific restrictions, such as battery saver mode.
 
  
-### PowerShell SDK 
+### PowerShell SDK
 Developers and IT professionals can note the coming of the [Microsoft Graph Powershell SDK](https://github.com/microsoftgraph/msgraph-sdk-powershell), which will generate modules that contain cmdlets to make Microsoft Graph REST API requests.
 
 ## September 2019: New and generally available
@@ -4706,7 +5122,7 @@ Developers and IT professionals can note the coming of the [Microsoft Graph Powe
 [Get the raw content of a file, or the MIME content of an item](/graph/api/attachment-get?view=graph-rest-1.0&preserve-view=true#get-the-raw-contents-of-a-file-or-item-attachment) that has been added as an [attachment](/graph/api/resources/attachment?view=graph-rest-1.0&preserve-view=true) to an [event](/graph/api/resources/event?view=graph-rest-1.0&preserve-view=true), [message](/graph/api/resources/message?view=graph-rest-1.0&preserve-view=true), or group [post](/graph/api/resources/post?view=graph-rest-1.0&preserve-view=true).
 
 ### Calendar, mail, Outlook task, personal contact
-Use the [translateExchangeId](/graph/api/user-translateexchangeids?view=graph-rest-1.0&preserve-view=true) function to convert an Outlook item ID between supported [formats](/graph/api/user-translateexchangeids?view=graph-rest-1.0&preserve-view=true#exchangeidformat-values), including the Microsoft Graph default ID format and immutable ID format. 
+Use the [translateExchangeId](/graph/api/user-translateexchangeids?view=graph-rest-1.0&preserve-view=true) function to convert an Outlook item ID between supported [formats](/graph/api/user-translateexchangeids?view=graph-rest-1.0&preserve-view=true#exchangeidformat-values), including the Microsoft Graph default ID format and immutable ID format.
 
 The following resources support ID format conversion:
 
@@ -4726,16 +5142,16 @@ Use the [Microsoft Graph Toolkit](toolkit/overview.md) to develop production app
 ## September 2019: New in preview
 
 > [!IMPORTANT]
-> Features, including APIs and tools, in _preview_ status may change without notice, and some may never be promoted to GA status. Do not use them in production apps.
+> Features, including APIs and tools, in _preview_ status might change without notice, and some might never be promoted to GA status. Do not use them in production apps.
 
 ### Devices and apps
-Intune [September](changelog.md#september-2019) updates
+Intune [September](https://developer.microsoft.com/graph/changelog#september-2019) updates
 
 ### Files
 - Enhanced synchronization support:
 
-  - Use the new **pendingOperations** property to identify operations that may affect the binary content of a [driveItem](/graph/api/resources/driveitem?view=graph-rest-beta&preserve-view=true).
-  - [Restore](/graph/api/driveitem-restore?view=graph-rest-beta&preserve-view=true) a deleted **driveItem**. 
+  - Use the new **pendingOperations** property to identify operations that might affect the binary content of a [driveItem](/graph/api/resources/driveitem?view=graph-rest-beta&preserve-view=true).
+  - [Restore](/graph/api/driveitem-restore?view=graph-rest-beta&preserve-view=true) a deleted **driveItem**.
 - Use Secure Hash Algorithm (SHA-256) to enhance [file](/graph/api/resources/file?view=graph-rest-beta&preserve-view=true) data security and integrity.
 - Get or set the orientation of a [photo](/graph/api/resources/photo?view=graph-rest-beta&preserve-view=true). Setting is supported on OneDrive Personal.
 
@@ -4754,7 +5170,7 @@ Use the **General** channel of a [team](/graph/api/resources/team?view=graph-res
 - Get or update a user's preferred date and time format [settings for the mailbox](/graph/api/resources/mailboxsettings?view=graph-rest-beta&preserve-view=true).
 
 
-## August 2019: New and generally available 
+## August 2019: New and generally available
 
 ### Reports
 - Get additional [mailbox usage data](/graph/api/reportroot-getmailboxusagedetail?view=graph-rest-1.0&preserve-view=true) about deleted item count and size.
@@ -4763,17 +5179,17 @@ Use the **General** channel of a [team](/graph/api/resources/team?view=graph-res
 - Get the number of active and inactive users on Microsoft 365, when [getting a report on user counts per Microsoft 365 service](/graph/api/reportroot-getoffice365servicesusercounts?view=graph-rest-1.0&preserve-view=true).
 
 ### Security
-- Use the new [Microsoft Graph security API add-on for Splunk](https://aka.ms/graphsecuritysplunkaddon) to stream security alerts and insights from many partner products into Splunk, enabling easier real-time correlation of their security data. See the [announcement](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Introducing-the-new-Microsoft-Graph-Security-API-add-on-for/ba-p/815972) for more information. 
+- Use the new [Microsoft Graph security API add-on for Splunk](https://aka.ms/graphsecuritysplunkaddon) to stream security alerts and insights from many partner products into Splunk, enabling easier real-time correlation of their security data. See the [announcement](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Introducing-the-new-Microsoft-Graph-Security-API-add-on-for/ba-p/815972) for more information.
 - [See a list of other solutions and connectors](security-integration.md) built by Microsoft or by Microsoft partners that connect with the security API and let you work with data in a unified format.
 
 
 ## August 2019: New in preview
 
 > [!IMPORTANT]
-> Features, including APIs and tools, in _preview_ status may change without notice, and some may never be promoted to GA status. Do not use them in production apps.
+> Features, including APIs and tools, in _preview_ status might change without notice, and some might never be promoted to GA status. Do not use them in production apps.
 
 ### Devices and apps
-Intune [August](changelog.md#august-2019) updates
+Intune [August](https://developer.microsoft.com/graph/changelog#august-2019) updates
 
 ### Education
 - Associate a [teacher](/graph/api/resources/educationuser?view=graph-rest-beta&preserve-view=true) or [assignment](/graph/api/resources/educationassignment?view=graph-rest-beta&preserve-view=true) with a [grading rubric](/graph/api/resources/educationrubric?view=graph-rest-beta&preserve-view=true) to account for specific qualities and levels in assignments. An example of a quality is spelling and grammar, and examples of levels are "good" and "poor". You can further associate points and weights to the rubric. For more information, see [education rubric overview](education-rubric-overview.md).
@@ -4787,10 +5203,10 @@ Up until this point, you have been able to [follow](/graph/api/driveitem-follow?
 - Administrators can [list access reviews](/graph/api/accessreview-list?view=graph-rest-beta&preserve-view=true) to efficiently facilitate reviewing group memberships, access to enterprise applications, and role assignments. Regular access reviews make sure only the appropriate people have continued access to resources in specific ways.
 
 ### Social and workplace intelligence
-End users have been able to use the Microsoft 365 [MyAnalytics](social-intel-concept-overview.md#why-integrate-with-document-based-insights) app to get insights on managing time, collaboration at work, and work-life balance. Now, you can use the [analytics API](/graph/api/resources/social-overview?view=graph-rest-beta&preserve-view=true#help-users-gain-insights-into-their-work-patterns) to integrate data on time spent on work activities such as calls, chats, and email, to help improve a user's productivity and wellbeing. 
+End users have been able to use the Microsoft 365 [MyAnalytics](social-intel-concept-overview.md#why-integrate-with-document-based-insights) app to get insights on managing time, collaboration at work, and work-life balance. Now, you can use the [analytics API](/graph/api/resources/social-overview?view=graph-rest-beta&preserve-view=true#help-users-gain-insights-into-their-work-patterns) to integrate data on time spent on work activities such as calls, chats, and email, to help improve a user's productivity and wellbeing.
 
 
-## July 2019: New and generally available 
+## July 2019: New and generally available
 
 ### Example code snippets
 There are now Objective-C code snippets in all API topics in the v1.0 and beta references. See the Objective-C example for [getting an event](/graph/api/event-get?view=graph-rest-1.0&preserve-view=true&tabs=objective-c#example).
@@ -4803,27 +5219,27 @@ There are now Objective-C code snippets in all API topics in the v1.0 and beta r
 - Use [new delegated and application permissions](permissions-reference.md), _Organization.Read.All_ and _Organization.ReadWrite.All_, to access an [organization](/graph/api/resources/organization?view=graph-rest-1.0&preserve-view=true) and related resources such as [subscribed SKUs](/graph/api/resources/subscribedsku?view=graph-rest-1.0&preserve-view=true).
 - Use [new delegated and application permissions](permissions-reference.md), _RoleManagement.Read.Directory_ and _RoleManagement.ReadWrite.Directory_, for role-based access control (RBAC) for your company's directory:
 
-  - Use the read/write permission to first [activate](/graph/api/directoryrole-post-directoryroles?view=graph-rest-1.0&preserve-view=true) a directory role. 
-  - With the role activated, you can use the read permission to [read directory roles](/graph/api/directoryrole-list?view=graph-rest-1.0&preserve-view=true), [list role members](/graph/api/directoryrole-list-members?view=graph-rest-1.0&preserve-view=true), and [list directory role templates](/graph/api/directoryroletemplate-list?view=graph-rest-1.0&preserve-view=true). 
+  - Use the read/write permission to first [activate](/graph/api/directoryrole-post-directoryroles?view=graph-rest-1.0&preserve-view=true) a directory role.
+  - With the role activated, you can use the read permission to [read directory roles](/graph/api/directoryrole-list?view=graph-rest-1.0&preserve-view=true), [list role members](/graph/api/directoryrole-list-members?view=graph-rest-1.0&preserve-view=true), and [list directory role templates](/graph/api/directoryroletemplate-list?view=graph-rest-1.0&preserve-view=true).
   - You can also use the read/write permission to [add](/graph/api/directoryrole-post-members?view=graph-rest-1.0&preserve-view=true) and [remove](/graph/api/directoryrole-delete-member?view=graph-rest-1.0&preserve-view=true) role members.
 
 
 ## July 2019: New in preview
 
 > [!IMPORTANT]
-> Features, including APIs and tools, in _preview_ status may change without notice, and some may never be promoted to GA status. Do not use them in production apps.
+> Features, including APIs and tools, in _preview_ status might change without notice, and some might never be promoted to GA status. Do not use them in production apps.
 
-### Calendar 
+### Calendar
 Use the new [places API](/graph/api/resources/place?view=graph-rest-beta&preserve-view=true) to make use of rich location types such as [room](/graph/api/resources/room?view=graph-rest-beta&preserve-view=true) and [room list](/graph/api/resources/roomlist?view=graph-rest-beta&preserve-view=true), as set up by Exchange Online administrators.
 
 ### Devices and apps
-Intune [July](changelog.md#july-2019) updates
+Intune [July](https://developer.microsoft.com/graph/changelog#july-2019) updates
 
-### Files 
+### Files
 Apply expiration date/time or password when [creating a sharing link](/graph/api/driveitem-createlink?view=graph-rest-beta&preserve-view=true) to a file, folder, or some other [driveItem](/graph/api/resources/driveitem?view=graph-rest-beta&preserve-view=true).
 
 ### Identity and access
-- Use [new application permission](./permissions-reference.md) _AccessReview.ReadWrite.Membership_ for CRUD operations on [access reviews](/graph/api/resources/accessreviews-root?view=graph-rest-beta&preserve-view=true). 
+- Use [new application permission](./permissions-reference.md) _AccessReview.ReadWrite.Membership_ for CRUD operations on [access reviews](/graph/api/resources/accessreviews-root?view=graph-rest-beta&preserve-view=true).
 - Use [new delegated and application permissions](permissions-reference.md), _AdministrativeUnit.Read.All_ and _AdministrativeUnit.ReadWrite.All_, to respectively read or write (including create, update, delete, or manage membership) [administrative unit](/graph/api/resources/administrativeunit?view=graph-rest-beta&preserve-view=true) resources.
 - Use [new delegated and application permissions](permissions-reference.md), _Organization.Read.All_ and _Organization.ReadWrite.All_, to access an [organization](/graph/api/resources/organization?view=graph-rest-beta&preserve-view=true) and related resources such as a [subscribed SKU](/graph/api/resources/subscribedsku?view=graph-rest-beta&preserve-view=true).
 - Use the new [discover](/graph/api/directorydefinition-discover?view=graph-rest-beta&preserve-view=true) function to find the latest directory [synchronization schema](/graph/api/resources/synchronization-synchronizationschema?view=graph-rest-beta&preserve-view=true), so as to sync directory objects, attributes, and their types to an app.
@@ -4851,7 +5267,7 @@ Use [mail search folders](/graph/api/resources/mailsearchfolder?view=graph-rest-
 As an alternative to Graph Explorer, try the Microsoft Graph API on the [Microsoft Graph Postman collection](use-postman.md) to learn the API behavior and speed up app development.
 
 ### Tutorials
-Try the new [tutorial to build a Java console app](/graph/tutorials/java) to get information about a user calendar.
+Try the new [tutorial to build a Java console app](tutorials/java.md) to get information about a user calendar.
 
 ### User
 Administrators or users can [revoke](/graph/api/user-revokesigninsessions?view=graph-rest-1.0&preserve-view=true) all issued refresh tokens for a user. This is usually used to prevent apps on a lost or stolen device from accessing an organization's data.
@@ -4860,18 +5276,18 @@ Administrators or users can [revoke](/graph/api/user-revokesigninsessions?view=g
 ## May - June, 2019: New in preview
 
 > [!IMPORTANT]
-> Features, including APIs and tools, in _preview_ status may change without notice, and some may never be promoted to GA status. Do not use them in production apps.
+> Features, including APIs and tools, in _preview_ status might change without notice, and some might never be promoted to GA status. Do not use them in production apps.
 
 ### Devices and apps
-- Intune [May](changelog.md#may-2019) updates 
-- Intune [June](changelog.md#june-2019) updates
+- Intune [May](https://developer.microsoft.com/graph/changelog#may-2019) updates
+- Intune [June](https://developer.microsoft.com/graph/changelog#june-2019) updates
 
 ### Education
 - Delta query for [educationSchool](/graph/api/resources/educationschool?view=graph-rest-beta&preserve-view=true).
 - Delta query and property additions for [educationClass](/graph/api/resources/educationclass?view=graph-rest-beta&preserve-view=true) and [educationUser](/graph/api/resources/educationuser?view=graph-rest-beta&preserve-view=true).
 
 ### Group
-Get [sensitivity labels](/graph/api/resources/assignedlabel?view=graph-rest-beta&preserve-view=true) to help protect sensitive data of a Microsoft 365 group and meet compliance policies. These labels are [assignedLabel](/graph/api/resources/assignedlabel?view=graph-rest-beta&preserve-view=true) objects, published by administrators in Microsoft 365 Security & Compliance Center, as part of Microsoft Purview Information Protection capabilities. 
+Get [sensitivity labels](/graph/api/resources/assignedlabel?view=graph-rest-beta&preserve-view=true) to help protect sensitive data of a Microsoft 365 group and meet compliance policies. These labels are [assignedLabel](/graph/api/resources/assignedlabel?view=graph-rest-beta&preserve-view=true) objects, published by administrators in Microsoft 365 Security & Compliance Center, as part of Microsoft Purview Information Protection capabilities.
 
 ### Identity and access
 - Get an instance of an [application](/graph/api/resources/applicationtemplate?view=graph-rest-beta&preserve-view=true), or add an instance from the Azure AD application gallery into your directory as a template.
@@ -4925,10 +5341,10 @@ API snippets ([example](/graph/api/user-get?view=graph-rest-1.0&preserve-view=tr
 [Reduce missing change notifications](change-notifications-lifecycle-events.md)
 
 ### Devices and apps
-- Intune [January](changelog.md#january-2019) updates 
-- Intune [February](changelog.md#february-2019) updates
-- Intune [March](changelog.md#march-2019) updates
-- Intune [April](changelog.md#april-2019) updates
+- Intune [January](https://developer.microsoft.com/graph/changelog#january-2019) updates
+- Intune [February](https://developer.microsoft.com/graph/changelog#february-2019) updates
+- Intune [March](https://developer.microsoft.com/graph/changelog#march-2019) updates
+- Intune [April](https://developer.microsoft.com/graph/changelog#april-2019) updates
 
 ### Files
 [Sharing invitation](/graph/api/driveitem-invite?view=graph-rest-beta&preserve-view=true) includes expiration and password
@@ -4959,4 +5375,5 @@ API snippets ([example](/graph/api/user-get?view=graph-rest-1.0&preserve-view=tr
 ## Related content
 - See [what's currently new](whats-new-overview.md) in Microsoft Graph.
 - Check out the [Microsoft Graph developer blog](https://developer.microsoft.com/graph/blogs/) periodically for release announcements and helpful resources.
-- Browse details of Microsoft Graph API additions, and API behavior updates in the [changelog](changelog.md).
+- Browse details of Microsoft Graph API additions, and API behavior updates in the [changelog](https://developer.microsoft.com/graph/changelog).
+

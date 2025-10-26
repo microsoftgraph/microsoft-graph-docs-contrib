@@ -5,6 +5,7 @@ author: "tariq-sharif"
 ms.localizationpriority: high
 ms.subservice: "outlook"
 ms.date: 11/07/2024
+ms.topic: how-to
 ---
 
 # Get free/busy schedule of Outlook calendar users and resources

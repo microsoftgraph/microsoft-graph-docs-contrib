@@ -19,7 +19,7 @@ var requestBody = new Application
 	},
 	Info = new InformationalUrl
 	{
-		LogoUrl = "https://cdn.pixabay.com/photo/2016/03/21/23/25/link-1271843_1280.png",
+		LogoUrl = "https://cdn.contoso.com/photo/2016/03/21/23/25/link-1271843_1280.png",
 		MarketingUrl = "https://www.contoso.com/app/marketing",
 		PrivacyStatementUrl = "https://www.contoso.com/app/privacy",
 		SupportUrl = "https://www.contoso.com/app/support",

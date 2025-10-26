@@ -1,6 +1,16 @@
 {
     "redirections": [
         {
+            "source_path": "api-reference/beta/api/readingassignmentsubmission-get.md",
+            "redirect_url": "api-reference/beta/api/reportsroot-list-readingassignmentsubmissions.md",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "api-reference/beta/api/reflectcheckinresponse-get.md",
+            "redirect_url": "api-reference/beta/api/reportsroot-list-reflectcheckinresponses.md",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "api-reference/v1.0/resources/printreleasemechanism.md",
             "redirect_url": "https://learn.microsoft.com/en-us/graph/api/resources/printer",
             "redirect_document_id": true

@@ -60,48 +60,7 @@ items:
     href: https://developer.microsoft.com/graph/quick-start
     displayName: quickstart
   - name: Tutorials
-    items:
-    - name: Overview
-      href: tutorials.md
-      displayName: tutorials
-    - name: Delegated (user) auth
-      items:
-      - name: .NET
-        href: /graph/tutorials/dotnet
-      - name: Go
-        href: /graph/tutorials/go
-      - name: Java
-        href: /graph/tutorials/java
-      - name: JavaScript
-        href: /graph/tutorials/javascript
-      - name: PHP
-        href: /graph/tutorials/php
-      - name: Power Automate
-        href: /graph/tutorials/power-automate
-      - name: PowerShell
-        href: /graph/tutorials/powershell
-      - name: Python
-        href: /graph/tutorials/python
-      - name: TypeScript
-        href: /graph/tutorials/typescript
-    - name: App-only auth
-      items:
-      - name: .NET
-        href: /graph/tutorials/dotnet-app-only
-      - name: Go
-        href: /graph/tutorials/go-app-only
-      - name: Java
-        href: /graph/tutorials/java-app-only
-      - name: JavaScript
-        href: /graph/tutorials/javascript-app-only
-      - name: PHP
-        href: /graph/tutorials/php-app-only
-      - name: PowerShell
-        href: /graph/tutorials/powershell-app-only
-      - name: Python
-        href: /graph/tutorials/python-app-only
-      - name: TypeScript
-        href: /graph/tutorials/typescript-app-only
+    href: tutorials/toc.yml
   - name: Use SDKs
     items:
     - name: Overview
@@ -170,19 +129,7 @@ items:
         href: /powershell/microsoftgraph/navigating?toc=/graph/toc.json
       - name: App-only authentication
         href: /powershell/microsoftgraph/app-only?toc=/graph/toc.json
-    - name: Use the CLI
-      items:
-      - name: CLI overview
-        href: cli/overview.md
-      - name: Install the CLI
-        href: cli/installation.md
-      - name: Get started
-        href: cli/get-started.md
-      - name: Navigate the CLI
-        href: cli/navigating.md
-      - name: App-only authentication
-        href: cli/app-only.md
-  - name: Use the toolkit
+  - name: Use the toolkit (deprecated)
     items:
     - name: Overview
       href: toolkit/overview.md
@@ -213,7 +160,7 @@ items:
       - name: Build an Electron app
         href: toolkit/get-started/build-an-electron-app.md
       - name: Build a productivity hub app
-        href: /graph/toolkit/get-started/building-one-productivity-hub
+        href: toolkit/get-started/building-one-productivity-hub.md
     - name: Providers
       items:
       - name: Using the providers
@@ -292,7 +239,7 @@ items:
       href: toolkit/permissions.md
     - name: Upgrade to the latest version
       href: toolkit/upgrade.md
-  - name: Deploy with Bicep
+  - name: Deploy in IaC with templates
     href: /graph/templates?toc=/graph/toc.json
 - name: Services and features
   expanded: true
@@ -343,6 +290,8 @@ items:
         href: application-rollkey-prooftoken.md
       - name: Authentication behaviors
         href: applications-authenticationbehaviors.md
+      - name: Customize claims
+        href: how-to-claims-customization.md
     - name: Synchronization
       items:
       - name: Synchronize custom target attributes
@@ -357,7 +306,7 @@ items:
       href: data-connect-concept-overview.md
       displayName: Microsoft Graph Data Connect, access data, bulk data
     - name: Build your Data Connect application
-      href: data-connect-quickstart.yml
+      href: data-connect-quickstart.md
       displayName: Microsoft Graph Data Connect
     - name: Datasets, regions, and sinks
       href: data-connect-datasets.md
@@ -550,7 +499,9 @@ items:
       - name: Share assignments with an embedded Teams application
         href: embed-teams-app-in-assignment.md
       - name: Work with grading categories
-        href: work-with-grading-categories.md  
+        href: work-with-grading-categories.md
+      - name: Create assignment with Speaker Progress resource
+        href: create-assignment-with-speaker-progress-resource.md
   - name: External data connections
     items:
     - name: Connectors overview
@@ -559,37 +510,43 @@ items:
     - name: Connectors experiences
       href: connecting-external-content-experiences.md
       displayName: Microsoft Graph connectors, Microsoft 365 Copilot connectors, Copilot connectors, connect external content with Microsoft 365 experiences
-    - name: Connectors API
-      href: connecting-external-content-connectors-api-overview.md
-      displayName: Microsoft Graph connectors, Microsoft 365 Copilot connectors, Copilot connectors,
     - name: Connectors samples
       href: /samples/browse/?terms=graph%20connectors
     - name: Community connectors samples
       href: https://adoption.microsoft.com/sample-solution-gallery/?product=Microsoft+Graph+connectors
-    - name: Build your first custom connector using SDK
+    - name: Build your first connector
+      items:
+      - name: Build with Agents Toolkit
+        href: /microsoft-365-copilot/extensibility/build-your-first-connector?context=graph/context
+      - name: Build with SDK
+        items:
+        - name: Overview
+          href: custom-connector-sdk-sample-overview.md
+        - name: Build the connector
+          href: custom-connector-sdk-sample-create.md
+        - name: Test the connector
+          href: custom-connector-sdk-sample-test.md
+        - name: Host the connector as a Windows service
+          href: custom-connector-sdk-sample-hosting.md
+        - name: Publish the connector
+          href: custom-connector-sdk-sample-publish.md
+        - name: Surface the data in search
+          href: custom-connector-sdk-sample-search.md
+    - name: Connectors API
       items:
       - name: Overview
-        href: custom-connector-sdk-sample-overview.md
-      - name: Build the connector
-        href: custom-connector-sdk-sample-create.md
-      - name: Test the connector
-        href: custom-connector-sdk-sample-test.md
-      - name: Host the connector as a Windows service
-        href: custom-connector-sdk-sample-hosting.md
-      - name: Publish the connector
-        href: custom-connector-sdk-sample-publish.md
-      - name: Surface the data in search
-        href: custom-connector-sdk-sample-search.md
-    - name: Manage connections
-      href: connecting-external-content-manage-connections.md
-    - name: Manage schema
-      href: connecting-external-content-manage-schema.md
-    - name: Manage items
-      href: connecting-external-content-manage-items.md
-    - name: Use external groups
-      href: connecting-external-content-external-groups.md
-    - name: API limits
-      href: connecting-external-content-api-limits.md
+        href: connecting-external-content-connectors-api-overview.md
+        displayName: Microsoft Graph connectors, Microsoft 365 Copilot connectors, Copilot connectors,
+      - name: Manage connections
+        href: connecting-external-content-manage-connections.md
+      - name: Manage schema
+        href: connecting-external-content-manage-schema.md
+      - name: Manage items
+        href: connecting-external-content-manage-items.md
+      - name: Use external groups
+        href: connecting-external-content-external-groups.md
+      - name: API limits
+        href: connecting-external-content-api-limits.md
   - name: Files
     items:
     - name: Overview
@@ -637,9 +594,9 @@ items:
         - name: Automate employee offboarding
           href: tutorial-lifecycle-workflows-offboard-custom-workflow.md
         - name: Automate employee mover tasks
-          href: tutorial-lifecycle-workflows-mover-custom-workflow.md  
+          href: tutorial-lifecycle-workflows-mover-custom-workflow.md
         - name: Configure employeeLeaveDateTime
-          href: tutorial-lifecycle-workflows-set-employeeleavedatetime.md 
+          href: tutorial-lifecycle-workflows-set-employeeleavedatetime.md
       - name: Manage access to resources
         href: tutorial-access-package-api.md
         displayName: governance, identity
@@ -670,7 +627,7 @@ items:
         - name: Manage security alerts for Microsoft Entra roles (preview)
           href: how-to-pim-alerts.md
           displayName: PIM alerts, privileged identity management
-    - name: Multicloud permissions management (preview)
+    - name: Multicloud permissions management (deprecated)
       items:
       - name: API operations reference
         href: permissions-management-howto.md
@@ -770,6 +727,8 @@ items:
     items:
     - name: Overview
       href: social-intel-concept-overview.md
+    - name: Microsoft 365 Copilot connectors for people data
+      href: peopleconnectors.md
     - name: Configure profile source precedence (preview)
       href: profilepriority-configure-profilepropertysetting.md
     - name: Customize item insights privacy
@@ -868,8 +827,8 @@ items:
       href: security-dataflow.md
     - name: Authorization
       href: security-authorization.md
-    - name: Data security and governance 
-      href: security-datasecurityandgovernance-overview.md 
+    - name: Data security and governance
+      href: security-datasecurityandgovernance-overview.md
     - name: Integrated solutions
       href: security-integration.md
     - name: Information Protection
@@ -882,11 +841,11 @@ items:
         href: security-ediscovery-appauthsetup.md
   - name: Sites and lists
     items:
-      - name: Overview
-        href: sharepoint-concept-overview.md
-        displayName: SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, sites, lists
-      - name: Using app folder in OneDrive and SharePoint
-        href: onedrive-sharepoint-appfolder.md
+    - name: Overview
+      href: sharepoint-concept-overview.md
+      displayName: SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, sites, lists
+    - name: Using app folder in OneDrive and SharePoint
+      href: onedrive-sharepoint-appfolder.md
   - name: Tasks and plans
     items:
     - name: Overview
@@ -905,8 +864,8 @@ items:
       displayName: teams, team, teamwork, Microsoft Teams
     - name: Messaging APIs
       items:
-        - name: Working with Microsoft Teams messaging
-          href: teams-messaging-overview.md
+      - name: Working with Microsoft Teams messaging
+        href: teams-messaging-overview.md
     - name: Activity feed notifications
       items:
       - name: Send activity feed notifications
@@ -948,15 +907,17 @@ items:
         href: cloud-communications-online-meeting-artifacts.md
       - name: Identify large gallery view participants
         href: cloud-communications-identifylargegalleryview.md
+      - name: Manage presence state
+        href: cloud-communications-manage-presence-state.md
       - name: Manage watermarks for sensitive meetings
         href: cloud-communications-watermark-meeting.md
       - name: Virtual events
         items:
-        - name: Choose the right meeting type 
+        - name: Choose the right meeting type
           href: cloud-communications-virtual-events-overview.md
-        - name: Town hall use cases 
+        - name: Town hall use cases
           href: cloud-communications-virtual-events-townhall-usecases.md
-        - name: Webinar use cases 
+        - name: Webinar use cases
           href: cloud-communications-virtual-events-webinar-usecases.md
     - name: Change notifications
       items:
@@ -1053,7 +1014,7 @@ items:
     - name: Manage app access (CSPs)
       href: auth-cloudsolutionprovider.md
     - name: Limit mailbox access
-      href: auth-limit-mailbox-access.md
+      href: /exchange/permissions-exo/application-rbac?toc=/graph/toc.json
     - name: Resolve authorization errors
       href: resolve-auth-errors.md
   - name: Use the API
@@ -1126,8 +1087,6 @@ items:
       href: change-notifications-with-resource-data.md
     - name: Notifications for cloud printing
       href: universal-print-webhook-notifications.md
-    - name: Notifications for Copilot AI interactions
-      href: aiinteraction-changenotifications-overview.md
     - name: Notifications for Microsoft Teams resources
       items:
       - name: Notification types and payloads
@@ -1141,8 +1100,10 @@ items:
         href: teams-changenotifications-chatmessage.md
       - name: Chat membership
         href: teams-changenotifications-chatmembership.md
-      - name: Team and channel membership
+      - name: Team membership
         href: teams-changenotifications-teammembership.md
+      - name: Channel membership
+        href: teams-changenotifications-channelmembership.md
       - name: Teams and channels
         href: teams-changenotifications-team-and-channel.md
       - name: Teams app installation

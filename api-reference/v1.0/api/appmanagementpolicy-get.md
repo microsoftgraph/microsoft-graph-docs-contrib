@@ -2,7 +2,7 @@
 title: "Get appManagementPolicy"
 description: "Get an application management policy."
 ms.localizationpriority: medium
-author: "madansr7"
+author: "aricrowe57"
 ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
 ms.date: 09/13/2024
@@ -51,10 +51,10 @@ If successful, this method returns a `200 OK` response code and a single [appMan
 
 ### Request
 
-The The following example shows a request.  From the response, the app management policy defines the following restrictions for application and service principal objects:
+The following example shows a request.  From the response, the app management policy defines the following restrictions for application and service principal objects:
 
 - Blocks creating of new passwords after 2019-10-19 at 10:37 AM UTC time.
-- Limits password secrets for apps created after 2019-10-19 at 10:37 AM UTC time to less than 4 days, 12 hours, 30 minutes and 5 seconds.
+- Limits password secrets for apps created after 2019-10-19 at 10:37 AM UTC time to less than 4 days, 12 hours, 30 minutes, and 5 seconds.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -68,10 +68,6 @@ GET https://graph.microsoft.com/v1.0/policies/appManagementPolicies/{id}
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-appmanagementpolicy-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-appmanagementpolicy-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

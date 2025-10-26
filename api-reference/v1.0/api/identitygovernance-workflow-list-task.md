@@ -1,20 +1,20 @@
 ---
-title: "List tasks"
+title: "List tasks (in Lifecycle Workflows)"
 description: "Retrieve the details of the built-in tasks in Lifecycle Workflows."
 author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: apiPageType
-ms.date: 04/04/2024
+ms.date: 08/01/2025
 ---
 
-# List tasks
+# List tasks (in Lifecycle Workflows)
 
 Namespace: microsoft.graph.identityGovernance
 
 Retrieve the details of the built-in tasks in Lifecycle Workflows.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -70,10 +70,6 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/lifecycleWorkflows/workf
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/lifecycleworkflows-list-task-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/lifecycleworkflows-list-task-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

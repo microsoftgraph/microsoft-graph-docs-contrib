@@ -5,7 +5,7 @@ author: "soneff"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
-ms.date: 10/17/2024
+ms.date: 07/21/2025
 ---
 
 # Update customAuthenticationExtension
@@ -14,6 +14,9 @@ Namespace: microsoft.graph
 Update the properties of a [customAuthenticationExtension](../resources/customauthenticationextension.md) object. The following derived types are currently supported.
 
 - [onTokenIssuanceStartCustomExtension](../resources/ontokenissuancestartcustomextension.md) resource type.
+- [onAttributeCollectionStartCustomExtension](../resources/onattributecollectionstartcustomextension.md) resource type.
+- [onAttributeCollectionSubmitCustomExtension](../resources/onattributecollectionsubmitcustomextension.md) resource type.
+- [onOtpSendCustomExtension](../resources/onOtpSendCustomExtension.md) resource type.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -51,7 +54,13 @@ You must specify the `@odata.type` property when updating a [customAuthenticatio
 |authenticationConfiguration|[customExtensionAuthenticationConfiguration](../resources/customextensionauthenticationconfiguration.md)|The authentication configuration for this custom extension. Inherited from [customCalloutExtension](../resources/customcalloutextension.md). Optional.|
 |description|String|Description for the custom extension. Inherited from [customCalloutExtension](../resources/customcalloutextension.md). Optional.|
 |displayName|String|Display name for the custom extension. Inherited from [customCalloutExtension](../resources/customcalloutextension.md). Optional.|
+|handler|[onAttributeCollectionStartCustomExtensionHandler](../resources/onattributecollectionstartcustomextensionhandler.md)|The handler to invoke when conditions are met. Can be updated for the **onAttributeCollectionStartCustomExtensionListener** listener type.|
+|handler|[onAttributeCollectionSubmitCustomExtensionHandler](../resources/onattributecollectionsubmitcustomextensionhandler.md)|The handler to invoke when conditions are met. Can be updated for the **onAttributeCollectionSubmitCustomExtensionListener** listener type.|
+|handler|[onOtpSendCustomExtensionHandler](../resources/onOtpSendCustomExtensionHandler.md)|The handler to invoke when conditions are met. Can be updated for the **onOtpSendCustomExtensionListener** listener type.|
+|handler|[onTokenIssuanceStartCustomExtensionHandler](../resources/onTokenIssuanceStartCustomExtensionHandler.md)|The handler to invoke when conditions are met. Can be updated for the **onTokenIssuanceStartCustomExtensionListener** listener type.|
 |endpointConfiguration|[customExtensionEndpointConfiguration](../resources/customextensionendpointconfiguration.md)|Configuration for the API endpoint that the custom extension will call. Inherited from [customCalloutExtension](../resources/customcalloutextension.md). Optional.|
+|behaviorOnError|[customExtensionBehaviorOnError](../resources/customextensionbehavioronerror.md)|Let to configure behavior if the call to custom authentication extension returns error. Optional.|
+
 
 
 ## Response
@@ -62,7 +71,6 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Request
 The following example shows a request.
-
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -99,10 +107,6 @@ Content-length: 468
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-customauthenticationextension-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/update-customauthenticationextension-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

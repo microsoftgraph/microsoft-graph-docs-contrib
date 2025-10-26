@@ -1,7 +1,7 @@
 ---
 title: "Update internalDomainFederation"
 description: "Update the properties of an internalDomainFederation object."
-author: "rahul-nagraj"
+author: "vimrang"
 ms.localizationpriority: medium
 ms.custom: has-azure-ad-ps-ref, azure-ad-ref-level-one-done
 ms.subservice: "entra-sign-in"
@@ -21,9 +21,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "internaldomainfederation_update" } -->
 [!INCLUDE [permissions-table](../includes/permissions/internaldomainfederation-update-permissions.md)]
-
-> [!IMPORTANT]
-> This method has a [known permissions issue](https://developer.microsoft.com/en-us/graph/known-issues/?search=21445) and might require consenting to the *Directory.AccessAsUser.All* permission for delegated scenarios.
 
 [!INCLUDE [rbac-domainfederation-apis-write](../includes/rbac-for-apis/rbac-domainfederation-apis-write.md)]
 
@@ -109,10 +106,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-internaldomainfederation-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/update-internaldomainfederation-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

@@ -35,7 +35,7 @@ In [Microsoft Entra Entitlement Management](entitlementmanagement-overview.md), 
 |id|String|Read-only.|
 |schedule|[entitlementManagementSchedule](../resources/entitlementmanagementschedule.md)|When the access assignment is to be in place. Read-only.|
 |state|accessPackageAssignmentState|The state of the access package assignment. The possible values are: `delivering`, `partiallyDelivered`, `delivered`, `expired`, `deliveryFailed`, `unknownFutureValue`. Read-only. Supports `$filter` (`eq`).|
-|status|String|More information about the assignment lifecycle. Possible values include `Delivering`, `Delivered`, `NearExpiry1DayNotificationTriggered`, or `ExpiredNotificationTriggered`. Read-only.|
+|status|String|More information about the assignment lifecycle. Possible values include `Delivering`, `Delivered`, `AutoAssignmentInGracePeriod`, `NearExpiry1DayNotificationTriggered`, or `ExpiredNotificationTriggered`. Read-only.|
 
 ## Relationships
 |Relationship|Type|Description|

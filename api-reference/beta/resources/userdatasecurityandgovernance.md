@@ -1,8 +1,8 @@
 ---
 title: "userDataSecurityAndGovernance resource type"
 description: "Provides access to data security and governance functionalities specifically scoped to the context of a single user."
-author: "ArunGedela"
-ms.date: 04/08/2025
+author: "kylemar"
+ms.date: 06/19/2025
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: resourcePageType
@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 
 Provides access to data security and governance functionalities specifically scoped to the context of a single user.
 
+Inherits from [dataSecurityAndGovernance](../resources/datasecurityandgovernance.md).
+
 ## Methods
 
 | Method       | Return Type | Description |
@@ -25,7 +27,9 @@ Provides access to data security and governance functionalities specifically sco
 
 ## Properties
 
-None specific to this derived type.
+|Property|Type|Description|
+|:---|:---|:---|
+|id|String|The unique ID of the data security and governance stream. Inherited from [dataSecurityAndGovernance](../resources/datasecurityandgovernance.md).|
 
 ## Relationships
 
@@ -45,5 +49,6 @@ The following JSON representation shows the resource type.
 {
   "@odata.type": "#microsoft.graph.userDataSecurityAndGovernance",
   "activities": { "@odata.type": "microsoft.graph.activitiesContainer" },
+  "id": "String (identifier)"
 }
 ```

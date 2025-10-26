@@ -23,6 +23,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "site_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/site-get-permissions.md)]
 
+> [!NOTE]
+> When a user from one geo location attempts to access a site located in another geo, the request may fail unless the calling user has at least "Limited access" permission to the root site collection of the target geo. Make sure the access is granted to avoid authorization issues.
+
 ## HTTP request
 
 ### Get the tenant's root site
@@ -74,10 +77,6 @@ GET https://graph.microsoft.com/v1.0/sites/contoso.sharepoint.com,2C712604-1370-
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-site-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-site-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -164,10 +163,6 @@ GET https://graph.microsoft.com/v1.0/groups/2C712604-1370-44E7-A1F5-426573FDA80A
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-site-by-group-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-site-by-group-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

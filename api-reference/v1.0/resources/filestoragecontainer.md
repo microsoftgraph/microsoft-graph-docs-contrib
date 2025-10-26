@@ -18,7 +18,7 @@ Represents a location where multiple users or a group of users can store files a
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/filestorage-list-containers.md)|[fileStorageContainer](../resources/filestoragecontainer.md)|Get a list of the [fileStorageContainer](../resources/filestoragecontainer.md) objects and their properties.|
+|[List](../api/filestorage-list-containers.md)|[fileStorageContainer](../resources/filestoragecontainer.md)|Get a list of [fileStorageContainer](../resources/filestoragecontainer.md) objects that are accessible to a caller.|
 |[Create](../api/filestoragecontainer-post.md)|[fileStorageContainer](../resources/filestoragecontainer.md)|Create a new [fileStorageContainer](../resources/filestoragecontainer.md) object.|
 |[Get](../api/filestoragecontainer-get.md)|[fileStorageContainer](../resources/filestoragecontainer.md)|Read the properties and relationships of a [fileStorageContainer](../resources/filestoragecontainer.md) object.|
 |[Update](../api/filestoragecontainer-update.md)|[fileStorageContainer](../resources/filestoragecontainer.md)|Update the properties of a [fileStorageContainer](../resources/filestoragecontainer.md) object.|

@@ -7,6 +7,7 @@ ms.topic: concept-article
 ms.localizationpriority: medium
 ms.subservice: people
 ms.date: 11/07/2024
+ms.custom: sfi-ga-nochange
 ---
 
 # Manage user profile photo settings in Microsoft 365 by using Microsoft Graph

@@ -12,6 +12,7 @@ from msgraph.generated.models.item_body import ItemBody
 from msgraph.generated.models.body_type import BodyType
 # To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = TimeCard(
+	user_id = "d56f3e8a-2b0f-42b1-88b9-e2dbd12a34d2",
 	clock_in_event = TimeCardEvent(
 		date_time = "2025-01-07T21:00:00.000Z",
 		is_at_approved_location = True,

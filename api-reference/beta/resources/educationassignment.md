@@ -29,11 +29,14 @@ Inherits from [entity](../resources/entity.md).
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Create assignment resource](../api/educationassignment-post-resources.md) |[educationAssignmentResource](educationassignmentresource.md)| Create a new **educationAssignmentResource** by posting to the resources collection.|
-|[Get assignment](../api/educationassignment-get.md) | [educationAssignment](educationassignment.md) |Read properties and relationships of an **educationAssignment** object.|
+|[Create](../api/educationclass-post-assignments.md) | [educationAssignment](educationassignment.md) |Create a new [assignment](educationassignment.md).|
+|[Get](../api/educationassignment-get.md) | [educationAssignment](educationassignment.md) |Read properties and relationships of an **educationAssignment** object.|
 |[Update](../api/educationassignment-update.md) | [educationAssignment](educationassignment.md)	|Update an **educationAssignment** object. |
 |[Delete](../api/educationassignment-delete.md) | None |Delete an **educationAssignment** object. |
 |[Publish](../api/educationassignment-publish.md)|[educationAssignment](educationassignment.md)|Change the state of an **educationAssignment** object from draft to published.|
+|[Create assignment resource](../api/educationassignment-post-resources.md) |[educationAssignmentResource](educationassignmentresource.md)|Create an [assignment resource](educationassignmentresource.md). |
+|[Get assignment resource](../api/educationassignmentresource-get.md) |[educationAssignmentResource](educationassignmentresource.md)|Get the properties of an [education assignment resource](educationassignmentresource.md) associated with an [assignment](educationassignment.md).|
+|[Delete assignment resource](../api/educationassignmentresource-delete.md) |None|Delete a specific [education assignment resource](educationassignmentresource.md) attached to an [assignment](educationassignment.md).|
 |[Set up assignment resources folder](../api/educationassignment-setupresourcesfolder.md)| string| Create a SharePoint folder (under a predefined location) to upload files as assignment resources.|
 |[Set up assignment feedback resources folder](../api/educationassignment-setupfeedbackresourcesfolder.md)|[educationAssignment](../resources/educationassignment.md)|Create a SharePoint folder to upload feedback files for a given [educationSubmission](../resources/educationsubmission.md).|
 |[List resources](../api/educationassignment-list-resources.md) |[educationAssignmentResource](educationassignmentresource.md) collection| Get an **educationAssignmentResource** object collection.|
@@ -44,10 +47,11 @@ Inherits from [entity](../resources/entity.md).
 |[Attach rubric](../api/educationassignment-put-rubric.md)|None|Attach an existing **educationRubric** to this **assignment**.|
 |[Remove rubric](../api/educationassignment-delete-rubric.md)|None|Detach the **educationRubric** from this **assignment**.|
 |[Get delta](../api/educationassignment-delta.md)|[educationAssignment](../resources/educationassignment.md) collection|Get a list of newly created or updated **assignments** without having to perform a full read of the collection.|
-|[Add educationGradingCategory](../api/educationassignment-post-gradingcategory.md)|[educationGradingCategory](../resources/educationgradingcategory.md)|Add gradingCategory by posting to the gradingCategory collection.|
-|[Remove educationGradingCategory](../api/educationassignment-delete-gradingcategory.md)|None|Remove an [educationGradingCategory](../resources/educationgradingcategory.md) object.|
+|[Add grading category](../api/educationassignment-post-gradingcategory.md)|[educationGradingCategory](../resources/educationgradingcategory.md)|Add **gradingCategory** by posting to the **gradingCategory** collection.|
+|[Remove grading category](../api/educationassignment-delete-gradingcategory.md)|None|Remove an [educationGradingCategory](../resources/educationgradingcategory.md) object.|
 |[Activate assignment](../api/educationassignment-activate.md) |[educationAssignment](educationassignment.md) | Activate an inactive **educationAssignment** to signal that the assignment has further action items for teachers or students.|
 |[Deactivate assignment](../api/educationassignment-deactivate.md) |[educationAssignment](educationassignment.md) | Mark an assigned **educationAssignment** as inactive to signal that the assignment has no further action items for both teachers and students.|
+|[Add grading scheme](../api/educationassignment-put-gradingscheme.md)|[educationGradingScheme](../resources/educationgradingscheme.md)|Add an existing [educationGradingScheme](../resources/educationgradingscheme.md) to an existing **educationAssignment**.|
 
 ## Properties
 | Property	   | Type	|Description|
@@ -86,6 +90,7 @@ Inherits from [entity](../resources/entity.md).
 |categories|[educationCategory](educationcategory.md) collection| When set, enables users to easily find **assignments** of a given type.  Read-only. Nullable.|
 |rubric|[educationRubric](educationrubric.md)|When set, the grading rubric attached to this **assignment**.|
 |gradingCategory|[educationGradingCategory](educationgradingcategory.md) collection| When set, enables users to weight assignments differently when computing a class average grade.|
+|gradingScheme|[educationGradingScheme](educationgradingscheme.md) | When set, enables users to configure custom string grades based on the percentage of total points earned on this **assignment**.|
 
 ## JSON representation
 
@@ -142,3 +147,4 @@ The following JSON representation shows the resource type.
   "suppressions": []
 }
 -->
+

@@ -2,10 +2,11 @@
 title: "application resource type"
 description: "Represents an application."
 ms.localizationpriority: high
-author: "sureshja"
+author: "Jackson-Woods"
 ms.subservice: "entra-applications"
 doc_type: resourcePageType
-ms.date: 11/26/2024
+ms.date: 09/12/2025
+ms.custom: sfi-ropc-nochange
 ---
 
 # application resource type
@@ -24,7 +25,7 @@ This resource supports:
 
 - Adding your own data to custom properties as [extensions](/graph/extensibility-overview).
 - Using [delta query](/graph/delta-query-overview) to track incremental additions, deletions, and updates, by providing a [delta](../api/user-delta.md) function.
-- Alternate key syntax.  The `appId` property is a supported alternate key.  For more information, see [Get application](../api/application-get.md).
+- Alternate key syntax. The **appId** property is a supported alternate key.  For more information, see [Get application](../api/application-get.md).
 
 ## Methods
 

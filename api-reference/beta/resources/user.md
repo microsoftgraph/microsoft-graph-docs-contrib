@@ -7,6 +7,7 @@ ms.localizationpriority: high
 ms.subservice: entra-users
 doc_type: resourcePageType
 ms.date: 01/10/2025
+ms.custom: sfi-ga-blocked
 ---
 
 # user resource type
@@ -24,7 +25,7 @@ For performance reasons, the [create](../api/user-post-users.md), [get](../api/u
 This resource supports:
 
 - Adding your data to custom properties as [extensions](/graph/extensibility-overview).
-- Subscribing to [change notifications](/graph/webhooks).
+- Subscribing to [change notifications](/graph/change-notifications-overview).
 - Using [delta query](/graph/delta-query-overview) to track incremental additions, deletions, and updates, by providing a [delta](../api/user-delta.md) function.
 
 ## Methods
@@ -44,8 +45,6 @@ This resource supports:
 | [Invalidate all refresh tokens](../api/user-invalidateallrefreshtokens.md) | [user](user.md) | Invalidate all of the user's refresh tokens issued to applications. **DO NOT USE. Use user: revokeSignInSessions method instead.**  |
 | [Revoke sign-in sessions](../api/user-revokesigninsessions.md) | None | Revokes all the user's refresh and session tokens issued to applications by resetting the **signInSessionsValidFromDateTime** user property to the current date-time. This operation forces the user to sign in to those applications again. This method replaces **invalidateAllRefreshTokens**. |
 | [Export personal data](../api/user-exportpersonaldata.md) | None | Submits a data policy operation request made by a company administrator to export an organizational user's data. |
-| **AI interaction**|||
-| [Get all enterprise interactions](../api/aiinteractionhistory-getallenterpriseinteractions.md) |[aiInteraction](../resources/aiinteraction.md) collection|Get all Microsoft 365 Copilot interactions data, including both user prompts to Copilot and Copilot responses. |
 | **App role assignments**|||
 | [List](../api/user-list-approleassignments.md) | [appRoleAssignment](approleassignment.md) collection | Get the apps and app roles that a user has been assigned. |
 | [Add](../api/user-post-approleassignments.md) | [appRoleAssignment](approleassignment.md) | Assign an app role to a user. |
@@ -72,7 +71,7 @@ This resource supports:
 |[List usage rights](../api/cloudlicensing-usercloudlicensing-list-usagerights.md)|[microsoft.graph.cloudLicensing.usageRight](../resources/cloudlicensing-usageright.md) collection|Get a list of the [usageRight](../resources/cloudlicensing-usageright.md) objects granted to a user.|
 |[Get usage right](../api/cloudlicensing-usageright-get.md)|[microsoft.graph.cloudLicensing.usageRight](../resources/cloudlicensing-usageright.md)|Get the properties and relationships of a [usageRight](../resources/cloudlicensing-usageright.md) object granted to a user.|
 | **Cloud PC**|||
-|[List cloud PCs](../api/user-list-cloudpcs.md)|[cloudPC](../resources/cloudpc.md) collection|List the [cloudPC](../resources/cloudpc.md) devices that are attributed to the signed-in user.|
+|[List Cloud PCs](../api/user-list-cloudpcs.md)|[cloudPC](../resources/cloudpc.md) collection|List the [cloudPC](../resources/cloudpc.md) devices that are attributed to the signed-in user.|
 |[Get launch info](../api/cloudpc-getcloudpclaunchinfo.md)|[cloudPCLaunchInfo](../resources/cloudpclaunchinfo.md)|Get the [cloudPCLaunchInfo](../resources/cloudpclaunchinfo.md) for the signed-in user.|
 | **Data security and governance** | | |
 |[Compute protection scopes](../api/userprotectionscopecontainer-compute.md)|[policyUserScope](../resources/policyuserscope.md) collection|Compute the protection scopes for the signed-in user. |
@@ -101,7 +100,9 @@ This resource supports:
 | [Permanently delete item](../api/directory-deleteditems-delete.md) | [directoryObject](directoryobject.md) collection | Permanently delete a deleted user from the tenant. |
 | **Drive** |||
 | [Get drive](../api/drive-get.md) | [drive](drive.md) | Retrieve the properties and relationships of a Drive resource. |
-| [List children](../api/driveitem-list-children.md) | [DriveItems](driveitem.md) | Return a collection of DriveItems in the children relationship of a DriveItem. |
+| [List children](../api/driveitem-list-children.md) | [DriveItems](driveitem.md) | Return a collection of DriveItems in the children relationship of a DriveItem.|
+|**Employee experience**||
+|[List assigned roles](../api/employeeexperienceuser-list-assignedroles.md)|[engagementRole](../resources/engagementrole.md) collection|Get a list of all the [roles](../resources/engagementrole.md) assigned to a user in Viva Engage.|
 | **Groups** |||
 | [List joined teams](../api/user-list-joinedteams.md) | [team](team.md) collection | Get the Microsoft Teams teams that the user is a direct member of from the joinedTeams navigation property. |
 | [List member of](../api/user-list-memberof.md) | [directoryObject](directoryobject.md) collection | Get the groups, directory roles, and administrative units that the user is a direct member of. This operation is not transitive. |
@@ -128,6 +129,9 @@ This resource supports:
 | **Notes** |||
 | [List notebooks](../api/onenote-list-notebooks.md) | [notebook](notebook.md) collection | Retrieve a list of notebook objects. |
 | [Create notebook](../api/onenote-post-notebooks.md) | [notebook](notebook.md) | Create a new OneNote notebook. |
+| **On-premises sync behavior (Source of Authority)** |||
+|[Get](../api/onpremisessyncbehavior-get.md)|[onPremisesSyncBehavior](../resources/onpremisessyncbehavior.md)|Check whether the user object's source of authority (SOA) is the cloud or on-premises Active Directory.|
+|[Update](../api/onpremisessyncbehavior-update.md)|[onPremisesSyncBehavior](../resources/onpremisessyncbehavior.md)|Update the user object's source of authority (SOA) to the cloud or on-premises Active Directory.|
 | **Org hierarchy** |||
 | [Assign manager](../api/user-post-manager.md) | None | Assign a user's manager. |
 | [Get manager](../api/user-list-manager.md) | [directoryObject](directoryobject.md) | Get the user or contact that is this user's manager from the manager navigation property. |
@@ -231,7 +235,7 @@ This resource supports:
 | infoCatalogs | String collection | Identifies the info segments assigned to the user.  Supports `$filter` (`eq`, `not`, `ge`, `le`, `startsWith`). |
 | interests | String collection | A list for users to describe their interests. <br><br>Returned only on `$select`. |
 | isLicenseReconciliationNeeded | Boolean | Indicates whether the user is pending an exchange mailbox license assignment. <br><br> Read-only. <br><br> Supports `$filter` (`eq` where `true` only).  |
-| isManagementRestricted| Boolean | `true` if the user is a member of a restricted management administrative unit. Default value is `false`. Read-only. <br/><br/> To manage a user who is a member of a restricted management administrative unit, the administrator or calling app must be assigned a Microsoft Entra role at the scope of the restricted management administrative unit.|
+| isManagementRestricted| Boolean | `true` if the user is a member of a restricted management administrative unit. If not set, the default value is `null` and the default behavior is false. Read-only. <br/><br/> To manage a user who is a member of a restricted management administrative unit, the administrator or calling app must be assigned a Microsoft Entra role at the scope of the restricted management administrative unit.|
 | isResourceAccount | Boolean | Do not use – reserved for future use. |
 | jobTitle | String | The user's job title. Maximum length is 128 characters. <br><br>Supports `$filter` (`eq`, `ne`, `not` , `ge`, `le`, `in`, `startsWith`, and `eq` on `null` values).|
 | lastPasswordChangeDateTime | DateTimeOffset | When this Microsoft Entra user last changed their password or when their password was created, whichever date the latest action was performed. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only. <br><br>Returned only on `$select`.  |
@@ -347,6 +351,7 @@ For example, Cameron is an administrator of a directory for an elementary school
 | Relationship | Type |Description|
 |:---------------|:--------|:----------|
 |activities|[userActivity](projectrome-activity.md) collection|The user's activities across devices. Read-only. Nullable.|
+|adhocCalls|[adhocCall](../resources/adhoccall.md) collection|Ad hoc calls associated with the user. Read-only. Nullable.|
 |agreementAcceptances|[agreementAcceptance](agreementacceptance.md) collection| The user's terms of use acceptance statuses. Read-only. Nullable.|
 |appRoleAssignments|[appRoleAssignment](approleassignment.md) collection|Represents the app roles a user has been granted for an application. Supports `$expand`. |
 |authentication|[authentication](../resources/authentication.md)|The authentication methods that are supported for the user.|
@@ -354,6 +359,7 @@ For example, Cameron is an administrator of a directory for an elementary school
 |calendarGroups|[calendarGroup](calendargroup.md) collection|The user's calendar groups. Read-only. Nullable.|
 |calendarView|[event](event.md) collection|The calendar view for the calendar. Read-only. Nullable.|
 |calendars|[calendar](calendar.md) collection|The user's calendars. Read-only. Nullable.|
+|cloudPCs|[cloudPC](../resources/cloudpc.md) collection|The user's Cloud PCs. Read-only. Nullable.|
 |communications|[userCloudCommunication](../resources/usercloudcommunication.md)|The user's communications settings on Teams.|
 |contactFolders|[contactFolder](contactfolder.md) collection|The user's contacts folders. Read-only. Nullable.|
 |contacts|[contact](contact.md) collection|The user's contacts. Read-only. Nullable.|
@@ -375,6 +381,7 @@ For example, Cameron is an administrator of a directory for an elementary school
 |messages|[message](message.md) collection|The messages in a mailbox or folder. Read-only. Nullable.|
 |onenote|[onenote](onenote.md)| Read-only.|
 |onlineMeetings|[onlineMeeting](onlinemeeting.md) collection| Information about a meeting, including the URL used to join a meeting, the attendees list, and the description. |
+| onPremisesSyncBehavior | [onPremisesSyncBehavior](../resources/onpremisessyncbehavior.md)  | Indicates the state of synchronization for a user between the cloud and on-premises Active Directory. Supports `$filter` only with advanced query capabilities, for example, `$filter=onPremisesSyncBehavior/isCloudManaged eq true&$count=true`.|
 |outlook|[outlookUser](outlookuser.md)| Selective Outlook services available to the user. Read-only. Nullable.|
 |ownedDevices|[directoryObject](directoryobject.md) collection|Devices owned by the user. Read-only. Nullable. Supports `$expand`.|
 |ownedObjects|[directoryObject](directoryobject.md) collection|Directory objects owned by the user. Read-only. Nullable. Supports `$expand`, `$select` nested in `$expand`, and `$filter` (`/$count eq 0`, `/$count ne 0`, `/$count eq 1`, `/$count ne 1`).|
@@ -441,7 +448,7 @@ The following JSON representation shows the resource type.
 ```json
 {
   "aboutMe": "String",
-  "accountEnabled": true,
+  "accountEnabled": "Boolean",
   "ageGroup": "String",
   "assignedLicenses": [{"@odata.type": "microsoft.graph.assignedLicense"}],
   "assignedPlans": [{"@odata.type": "microsoft.graph.assignedPlan"}],
@@ -480,8 +487,9 @@ The following JSON representation shows the resource type.
   "id": "String (identifier)",
   "identities": [{"@odata.type": "microsoft.graph.objectIdentity"}],
   "interests": ["String"],
-  "isLicenseReconciliationNeeded": false,
-  "isResourceAccount": false,
+  "isLicenseReconciliationNeeded": "Boolean",
+  "isManagementRestricted": "Boolean",
+  "isResourceAccount": "Boolean",
   "jobTitle": "String",
   "legalAgeGroupClassification": "String",
   "licenseAssignmentStates": [{"@odata.type": "microsoft.graph.licenseAssignmentState"}],

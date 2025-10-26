@@ -3,6 +3,80 @@
     {
       "ChangeList": [
         {
+          "Id": "f7f42b47-de0a-4451-9cfa-921aa516932e",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "userPersona",
+          "ChangeType": "Addition",
+          "Description": "Added the **userPersona** enumeration type.",
+          "Target": "userPersona"
+        },
+        {
+          "Id": "f7f42b47-de0a-4451-9cfa-921aa516932e",
+          "ApiChange": "Property",
+          "ChangedApiName": "costCenter",
+          "ChangeType": "Addition",
+          "Description": "Added the **costCenter** property to the [companyDetail](https://learn.microsoft.com/en-us/graph/api/resources/companyDetail?view=graph-rest-beta) resource.",
+          "Target": "companyDetail"
+        },
+        {
+          "Id": "f7f42b47-de0a-4451-9cfa-921aa516932e",
+          "ApiChange": "Property",
+          "ChangedApiName": "division",
+          "ChangeType": "Addition",
+          "Description": "Added the **division** property to the [companyDetail](https://learn.microsoft.com/en-us/graph/api/resources/companyDetail?view=graph-rest-beta) resource.",
+          "Target": "companyDetail"
+        },
+        {
+          "Id": "f7f42b47-de0a-4451-9cfa-921aa516932e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "originTenantInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [originTenantInfo](https://learn.microsoft.com/en-us/graph/api/resources/originTenantInfo?view=graph-rest-beta) resource type.",
+          "Target": "originTenantInfo"
+        },
+        {
+          "Id": "f7f42b47-de0a-4451-9cfa-921aa516932e",
+          "ApiChange": "Property",
+          "ChangedApiName": "employeeId",
+          "ChangeType": "Addition",
+          "Description": "Added the **employeeId** property to the [positionDetail](https://learn.microsoft.com/en-us/graph/api/resources/positionDetail?view=graph-rest-beta) resource.",
+          "Target": "positionDetail"
+        },
+        {
+          "Id": "f7f42b47-de0a-4451-9cfa-921aa516932e",
+          "ApiChange": "Property",
+          "ChangedApiName": "employeeType",
+          "ChangeType": "Addition",
+          "Description": "Added the **employeeType** property to the [positionDetail](https://learn.microsoft.com/en-us/graph/api/resources/positionDetail?view=graph-rest-beta) resource.",
+          "Target": "positionDetail"
+        },
+        {
+          "Id": "f7f42b47-de0a-4451-9cfa-921aa516932e",
+          "ApiChange": "Property",
+          "ChangedApiName": "originTenantInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the **originTenantInfo** property to the [userAccountInformation](https://learn.microsoft.com/en-us/graph/api/resources/userAccountInformation?view=graph-rest-beta) resource.",
+          "Target": "userAccountInformation"
+        },
+        {
+          "Id": "f7f42b47-de0a-4451-9cfa-921aa516932e",
+          "ApiChange": "Property",
+          "ChangedApiName": "userPersona",
+          "ChangeType": "Addition",
+          "Description": "Added the **userPersona** property to the [userAccountInformation](https://learn.microsoft.com/en-us/graph/api/resources/userAccountInformation?view=graph-rest-beta) resource.",
+          "Target": "userAccountInformation"
+        }
+      ],
+      "Id": "f7f42b47-de0a-4451-9cfa-921aa516932e",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-08-07T09:45:31.4250497Z",
+      "WorkloadArea": "People and workplace intelligence",
+      "SubArea": "Profile"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "169d4187-5f10-4a82-8981-c644d541840c",
           "ApiChange": "Resource",
           "ChangedApiName": "profileSourceLocalization",

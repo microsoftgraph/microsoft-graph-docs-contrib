@@ -2,7 +2,7 @@
 title: "List assigned claimsMappingPolicies"
 description: "List claimsMappingPolicies that are assigned to a servicePrincipal."
 ms.localizationpriority: medium
-author: "sureshja"
+author: "vimrang"
 ms.subservice: "entra-applications"
 doc_type: "apiPageType"
 ms.date: 07/26/2024
@@ -65,10 +65,6 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/claimsMappingPolicie
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-claimsmappingpolicies-on-serviceprincipal-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/list-claimsmappingpolicies-on-serviceprincipal-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

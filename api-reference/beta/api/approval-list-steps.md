@@ -18,7 +18,7 @@ List the [approvalStep](../resources/approvalstep.md) objects associated with an
 
 - In [entitlement management](../resources/entitlementmanagement-overview.md), providing the identifier of the [access package assignment request](../resources/accesspackageassignmentrequest.md).
 - In [PIM for Microsoft Entra roles](../resources/privilegedidentitymanagementv3-overview.md), providing the identifier of the [role assignment schedule request](../resources/unifiedroleassignmentschedulerequest.md).
-- In [PIM for groups](../resources/privilegedidentitymanagement-for-groups-api-overview.md), providing the identifier of the [assignment schedule request](../resources/privilegedaccessgroupassignmentschedulerequest.md).
+- In [PIM for Groups](../resources/privilegedidentitymanagement-for-groups-api-overview.md), providing the identifier of the [assignment schedule request](../resources/privilegedaccessgroupassignmentschedulerequest.md).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -28,7 +28,11 @@ The following tables show the least privileged permission or permissions require
 
 ### For entitlement management
 
-<!-- { "blockType": "permissions", "name": "approval_list_steps" } -->
+<!-- { 
+  "blockType": "permissions", 
+  "name": "approval_list_steps", 
+  "requestUrls": ["GET /identityGovernance/entitlementManagement/accessPackageAssignmentApprovals/{id}/steps"]
+ } -->
 [!INCLUDE [permissions-table](../includes/permissions/approval-list-steps-permissions.md)]
 
 [!INCLUDE [rbac-entitlement-catalog-reader](../includes/rbac-for-apis/rbac-entitlement-management-catalog-reader-apis-read.md)]
@@ -37,12 +41,12 @@ The following tables show the least privileged permission or permissions require
 
 ### For PIM for Microsoft Entra roles
 
-<!-- { "blockType": "permissions", "name": "approval_list_steps_2" } -->
+<!-- { "blockType": "permissions", "name": "approval_list_steps_2", "requestUrls": ["PATCH /identityGovernance/privilegedAccess/group/assignmentApprovals/{id}/steps/{id}"] } -->
 [!INCLUDE [permissions-table](../includes/permissions/approval-list-steps-2-permissions.md)]
 
-### For PIM for groups
+### For PIM for Groups
 
-<!-- { "blockType": "permissions", "name": "approval_list_steps_3" } -->
+<!-- { "blockType": "permissions", "name": "approval_list_steps_3", "requestUrls": ["GET /identityGovernance/privilegedAccess/group/assignmentApprovals/{id}/steps"] } -->
 [!INCLUDE [permissions-table](../includes/permissions/approval-list-steps-3-permissions.md)]
 
 ## HTTP request
@@ -61,7 +65,7 @@ To list the approval steps in PIM for Microsoft Entra roles:
 GET /roleManagement/directory/roleAssignmentApprovals/{id}/steps
 ```
 
-To list the approval steps in PIM for groups:
+To list the approval steps in PIM for Groups:
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -100,10 +104,6 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-approvalstep-1-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-approvalstep-1-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

@@ -9,3 +9,4 @@ ms.localizationpriority: medium
 |Delegated (work or school account)|Sites.Archive.All|Sites.FullControl.All|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
 |Application|Sites.Archive.All|Sites.FullControl.All|
+

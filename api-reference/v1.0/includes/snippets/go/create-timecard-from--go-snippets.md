@@ -16,6 +16,8 @@ import (
 )
 
 requestBody := graphmodels.NewTimeCard()
+userId := "d56f3e8a-2b0f-42b1-88b9-e2dbd12a34d2"
+requestBody.SetUserId(&userId) 
 clockInEvent := graphmodels.NewTimeCardEvent()
 dateTime , err := time.Parse(time.RFC3339, "2025-01-07T21:00:00.000Z")
 clockInEvent.SetDateTime(&dateTime) 

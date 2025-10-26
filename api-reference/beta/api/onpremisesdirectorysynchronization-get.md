@@ -2,11 +2,12 @@
 title: "Get onPremisesDirectorySynchronization"
 description: "Read the properties and relationships of an onPremisesDirectorySynchronization object."
 author: dhanyahk
-ms.reviewer: sgupta, abhishek.badjatya, dhanyahk
+ms.reviewer: damaiya,vifernan,awsdev
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ms.date: 10/31/2024
+ms.custom: sfi-ga-blocked
 ---
 
 # Get onPremisesDirectorySynchronization
@@ -75,10 +76,6 @@ GET https://graph.microsoft.com/beta/directory/onPremisesSynchronization/{id}
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-onpremisesdirectorysynchronization-e1-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-onpremisesdirectorysynchronization-e1-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

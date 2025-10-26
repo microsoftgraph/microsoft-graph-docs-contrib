@@ -75,10 +75,6 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/supportedR
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-supportedregions-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/list-supportedregions-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-supportedregions-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -129,6 +125,7 @@ Content-Type: application/json
       "regionStatus": "available",
       "supportedSolution": "windows365",
       "regionGroup": "usCentral",
+      "geographicLocationType": "usCentral",
       "regionRestrictionDetail": {
         "cPURestricted": true,
         "gPURestricted": true,

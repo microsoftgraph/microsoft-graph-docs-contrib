@@ -1,8 +1,8 @@
 ---
-title: "dataSecurityAndGovernance resource type (preview)"
-description: "Abstract base type representing the entry point for data security and governance features, scoped to the tenant."
-author: "ArunGedela"
-ms.date: 04/08/2025
+title: "dataSecurityAndGovernance resource type"
+description: "Abstract base type representing the entry point for Microsoft Purview data security and governance features."
+author: "kylemar"
+ms.date: 06/19/2025
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: resourcePageType
@@ -14,18 +14,20 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Abstract base type representing the entry point for data security and governance features, scoped to the tenant.
+Abstract base type representing the entry point for Microsoft Purview data security and governance features. The following resources inherit from this type:
+
+- [userDataSecurityAndGovernance](../resources/userdatasecurityandgovernance.md)
+- [tenantDataSecurityAndGovernance](../resources/tenantdatasecurityandgovernance.md)
 
 ## Methods
 
-| Method                                  | Return Type                                                                                     | Description                                                                  |
-| :-------------------------------------- | :---------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------- |
-|[Compute protection scopes](../api/tenantprotectionscopecontainer-compute.md)| [policyTenantScope](../resources/policytenantscope.md) collection | Compute the tenant-wide data protection policies and actions, including user/group scoping. |
-|[Process content async](../api/tenantdatasecurityandgovernance-processcontentasync.md)|  [processContentResponses](../resources/processcontentresponses.md) collection | Process content entries asynchronously against data protection policies. |
+None.
 
 ## Properties
 
-None.
+|Property|Type|Description|
+|:---|:---|:---|
+|id|String|The unique ID of the data security and governance stream. Inherited from [entity](../resources/entity.md).|
 
 ## Relationships
 
@@ -42,6 +44,7 @@ The following JSON representation shows the resource type.
 }-->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.dataSecurityAndGovernance"
+  "@odata.type": "#microsoft.graph.dataSecurityAndGovernance",
+  "id": "String (identifier)"
 }
 ```

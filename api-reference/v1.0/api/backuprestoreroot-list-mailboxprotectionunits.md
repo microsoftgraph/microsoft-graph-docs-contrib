@@ -77,10 +77,6 @@ GET https://graph.microsoft.com/v1.0/solutions/backupRestore/protectionUnits/mic
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-all-mailboxprotectionunit-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/list-all-mailboxprotectionunit-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-all-mailboxprotectionunit-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -131,6 +127,7 @@ HTTP/1.1 200 OK
       "displayName": "Emily Braun", // Newly Added
       "email": "emilyb@contoso.com", // Newly Added
       "status": "unprotectRequested",
+      "protectionSources": "none",
       "createdBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -155,7 +152,8 @@ HTTP/1.1 200 OK
         }
       },
       "lastModifiedDateTime": "2015-06-19T12:01:03.45Z",
-      "error": null
+      "error": null,
+      "offboardRequestedDateTime": "0001-01-01T00:00:00.0000000Z"
     },
     {
       "@odata.type": "#microsoft.graph.mailboxProtectionUnit",
@@ -165,6 +163,7 @@ HTTP/1.1 200 OK
       "displayName": "Alex Wilber", // Newly Added
       "email": "alexw@contoso.com", // Newly Added
       "status": "unprotected",
+      "protectionSources": "none",
       "createdBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -189,7 +188,8 @@ HTTP/1.1 200 OK
         }
       },
       "lastModifiedDateTime": "2015-06-19T12:01:03.45Z",
-      "error": null
+      "error": null,
+      "offboardRequestedDateTime": "0001-01-01T00:00:00.0000000Z"
     },
     {
       "@odata.type": "#microsoft.graph.mailboxProtectionUnit",
@@ -199,6 +199,7 @@ HTTP/1.1 200 OK
       "displayName": "Shaun Wong", // Newly Added
       "email": "shaunw@contoso.com", // Newly Added
       "status": "protectRequested",
+      "protectionSources": "manual",
       "createdBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -223,7 +224,8 @@ HTTP/1.1 200 OK
         }
       },
       "lastModifiedDateTime": "2015-06-19T12:01:03.45Z",
-      "error": null
+      "error": null,
+      "offboardRequestedDateTime": "0001-01-01T00:00:00.0000000Z"
     },
     {
       "@odata.type": "#microsoft.graph.mailboxProtectionUnit",
@@ -233,6 +235,7 @@ HTTP/1.1 200 OK
       "displayName": "Janet Green", // Newly Added
       "email": "janetg@contoso.com", // Newly Added
       "status": "protected",
+      "protectionSources": "dynamicRule",
       "createdBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -257,7 +260,8 @@ HTTP/1.1 200 OK
         }
       },
       "lastModifiedDateTime": "2015-06-19T12:01:03.45Z",
-      "error": null
+      "error": null,
+      "offboardRequestedDateTime": "0001-01-01T00:00:00.0000000Z"
     },
     {
       "@odata.type": "#microsoft.graph.mailboxProtectionUnit",
@@ -266,6 +270,7 @@ HTTP/1.1 200 OK
       "displayName": "Eddie Brock ", // Newly Added
       "email": "eddyb@contoso.com", // Newly Added
       "status": "unprotected",
+      "protectionSources": "none",
       "createdBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -290,7 +295,8 @@ HTTP/1.1 200 OK
         }
       },
       "lastModifiedDateTime": "2015-06-19T12:01:03.45Z",
-      "error": null
+      "error": null,
+      "offboardRequestedDateTime": "0001-01-01T00:00:00.0000000Z"
     }
   ]
 }
@@ -357,7 +363,8 @@ HTTP/1.1 200 OK
         }
       },
       "lastModifiedDateTime": "2015-06-19T12:01:03.45Z",
-      "error": null
+      "error": null,
+      "offboardRequestedDateTime": "0001-01-01T00:00:00.0000000Z"
     },
     {
       "@odata.type": "#microsoft.graph.mailboxProtectionUnit",
@@ -391,7 +398,8 @@ HTTP/1.1 200 OK
         }
       },
       "lastModifiedDateTime": "2015-06-19T12:01:03.45Z",
-      "error": null
+      "error": null,
+      "offboardRequestedDateTime": "0001-01-01T00:00:00.0000000Z"
     },
     {
       "@odata.type": "#microsoft.graph.mailboxProtectionUnit",
@@ -425,7 +433,8 @@ HTTP/1.1 200 OK
         }
       },
       "lastModifiedDateTime": "2015-06-19T12:01:03.45Z",
-      "error": null
+      "error": null,
+      "offboardRequestedDateTime": "0001-01-01T00:00:00.0000000Z"
     },
     {
       "@odata.type": "#microsoft.graph.mailboxProtectionUnit",
@@ -459,7 +468,8 @@ HTTP/1.1 200 OK
         }
       },
       "lastModifiedDateTime": "2015-06-19T12:01:03.45Z",
-      "error": null
+      "error": null,
+      "offboardRequestedDateTime": "0001-01-01T00:00:00.0000000Z"
     },
     {
       "@odata.type": "#microsoft.graph.mailboxProtectionUnit",
@@ -493,7 +503,8 @@ HTTP/1.1 200 OK
         }
       },
       "lastModifiedDateTime": "2015-06-19T12:01:03.45Z",
-      "error": null
+      "error": null,
+      "offboardRequestedDateTime": "0001-01-01T00:00:00.0000000Z"
     }
   ]
 }

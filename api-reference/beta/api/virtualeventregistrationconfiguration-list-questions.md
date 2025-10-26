@@ -74,10 +74,6 @@ GET https://graph.microsoft.com/beta/solutions/virtualEvents/webinars/f4b39f1c-5
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-questions-virtualeventregistration-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/list-questions-virtualeventregistration-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-questions-virtualeventregistration-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

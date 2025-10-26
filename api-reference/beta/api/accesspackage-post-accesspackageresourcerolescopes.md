@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Create a new [accessPackageResourceRoleScope](../resources/accesspackageresourcerolescope.md) for adding a resource role to an access package. The access package resource, for a group, an app, or a SharePoint Online site, must already exist in the access package catalog, and the **originId** for the resource role retrieved from the [list of the resource roles](accesspackagecatalog-list-accesspackageresourceroles.md). Once you add the resource role scope to the access package, the user will receive this resource role through any current and future access package assignments.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -83,10 +83,6 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-accesspackageresourcerolescope-from-accesspackage-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-accesspackageresourcerolescope-from-accesspackage-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -180,10 +176,6 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-accesspackageresourcerolescope-from-accesspackage2-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-accesspackageresourcerolescope-from-accesspackage2-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -281,10 +273,6 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-accesspackageresourcerolescope-role-accesspackage-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-accesspackageresourcerolescope-role-accesspackage-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-accesspackageresourcerolescope-role-accesspackage-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -330,5 +318,94 @@ Content-type: application/json
 {
    "id": "ea036095-57a6-4c90-a640-013edf151eb1_c4e39bd9-1100-46d3-8c65-fb160da0071f",
    "createdDateTime": "2023-06-28T01:19:48.4216782Z"
+}
+```
+
+
+### Example 4: Add a PIM-managed group as a resource role to an access package
+
+#### Request
+
+The following example shows a request to add a PIM-managed group as a resource role to an access package. The group's members are eligible to the group. 
+
+Before this request, you must have already added the access package resource `b86a1828-3171-409e-8343-32a224f324a0` for the PIM-managed group `bcfae74a-91a6-46e9-99bf-89d6487cc3f3` to the access package catalog containing this access package. The resource could have been added to the catalog by [creating an access package resource request](entitlementmanagement-post-accesspackageresourcerequests.md).
+
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "create_accesspackageresourcerolescope_from_accesspackage_pim_group"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackages/b86a1828-3171-409e-8343-32a224f324a0/accessPackageResourceRoleScopes
+Content-type: application/json
+
+{
+  "accessPackageResourceRole":{
+    "originId":"EligibleMember_89590e41-f49d-4792-b531-6ed6fe6cfe18",
+    "displayName":"Eligible Member",
+    "originSystem":"AadGroup",
+    "accessPackageResource":{"id":"b86a1828-3171-409e-8343-32a224f324a0","resourceType":"O365 Group","originId":"bcfae74a-91a6-46e9-99bf-89d6487cc3f3","originSystem":"AadGroup"}
+  },
+ "accessPackageResourceScope":{
+   "originId":"bcfae74a-91a6-46e9-99bf-89d6487cc3f3","originSystem":"AadGroup"
+ }
+}
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-accesspackageresourcerolescope-from-accesspackage-pim-group-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-accesspackageresourcerolescope-from-accesspackage-pim-group-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-accesspackageresourcerolescope-from-accesspackage-pim-group-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-accesspackageresourcerolescope-from-accesspackage-pim-group-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-accesspackageresourcerolescope-from-accesspackage-pim-group-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-accesspackageresourcerolescope-from-accesspackage-pim-group-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-accesspackageresourcerolescope-from-accesspackage-pim-group-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+
+The following example shows the response.
+
+> **Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessPackageResourceRoleScope"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#accessPackageResourceRoleScopes/$entity",
+    "id": "ad5c7636-e481-4528-991f-198e3b38dd56_ffd4004a-f4a9-4b22-b027-759e55c0d1db",
+    "createdBy": "admin@example.com",
+    "createdDateTime": "2019-12-11T01:35:26.4754081Z",
+    "modifiedBy": "admin@example.com",
+    "modifiedDateTime": "2019-12-11T01:35:26.4754081Z"
 }
 ```

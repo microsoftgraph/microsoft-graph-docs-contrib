@@ -18,23 +18,23 @@ Approve or deny an [approvalStage](../resources/approvalstage.md) object in an [
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+The following tables show the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-### Permissions required for calling this API for entitlement management
-<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | EntitlementManagement.ReadWrite.All |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+### For entitlement management
+<!-- { 
+  "blockType": "permissions", 
+  "name": "approvalstage_update", 
+  "requestUrls": ["PATCH /identityGovernance/entitlementManagement/accessPackageAssignmentApprovals/{accessPackageAssignmentRequestId}/stages/{approvalStageId}"]
+ } -->
+[!INCLUDE [permissions-table](../includes/permissions/approvalstage-update-permissions.md)]
 
-### Permissions required for calling this API for PIM for groups
-<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | PrivilegedAssignmentSchedule.ReadWrite.AzureADGroup |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+### For PIM for Groups
+<!-- { 
+  "blockType": "permissions", 
+  "name": "approvalstage_update_2", 
+  "requestUrls": ["PATCH /identityGovernance/privilegedAccess/group/assignmentApprovals/{privilegedaccessgroupassignmentschedulerequestId}/stages/{approvalStageId}"]
+ } -->
+[!INCLUDE [permissions-table](../includes/permissions/approvalstage-update-2-permissions.md)]
 
 ## HTTP request
 
@@ -44,7 +44,7 @@ To update an approval decision in entitlement management:
 PATCH /identityGovernance/entitlementManagement/accessPackageAssignmentApprovals/{accessPackageAssignmentRequestId}/stages/{approvalStageId}
 ```
 
-To update an approval decision in PIM for groups:
+To update an approval decision in PIM for Groups:
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /identityGovernance/privilegedAccess/group/assignmentApprovals/{privilegedaccessgroupassignmentschedulerequestId}/stages/{approvalStageId}
@@ -92,10 +92,6 @@ PATCH https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/patch-approvalstage-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/patch-approvalstage-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

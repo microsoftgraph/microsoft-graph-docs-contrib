@@ -4,8 +4,9 @@ description: "Learn how to enable Azure V-net IR to manage private endpoints in 
 author: "michaelvenables"
 ms.localizationpriority: high
 ms.subservice: "data-connect"
-ms.custom: scenarios:getting-started
+ms.custom: scenarios:getting-started, sfi-image-nochange
 ms.date: 11/07/2024
+ms.topic: article
 ---
 
 # Managed private endpoints in Microsoft Graph Data Connect

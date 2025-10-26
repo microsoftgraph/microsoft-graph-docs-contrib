@@ -7,6 +7,7 @@ ms.reviewer: msodsrbac
 ms.subservice: "entra-directory-management"
 doc_type: "apiPageType"
 ms.date: 04/05/2024
+ms.custom: sfi-ga-nochange
 ---
 
 # Get unifiedRoleAssignmentMultiple
@@ -20,6 +21,7 @@ Get the properties and relationships of a [unifiedRoleAssignmentMultiple](../res
 The following RBAC providers are currently supported:
 - Cloud PC 
 - device management (Intune)
+- Defender (Microsoft Defender XDR Unified RBAC)
 
 For other Microsoft 365 applications (like Microsoft Entra ID), use [unifiedRoleAssignment](../resources/unifiedroleassignment.md).
 
@@ -39,7 +41,10 @@ The following tables show the least privileged permission or permissions require
 <!-- { "blockType": "permissions", "name": "unifiedroleassignmentmultiple_get_2" } -->
 [!INCLUDE [permissions-table](../includes/permissions/unifiedroleassignmentmultiple-get-2-permissions.md)]
 
+### For Defender provider
 
+<!-- { "blockType": "permissions", "name": "unifiedroleassignmentmultiple_get_3" } -->
+[!INCLUDE [permissions-table](../includes/permissions/unifiedroleassignmentmultiple-get-3-permissions.md)]
 
 ## HTTP request
 
@@ -95,10 +100,6 @@ GET https://graph.microsoft.com/beta/roleManagement/deviceManagement/roleAssignm
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-unifiedroleassignmentmultiple-intune-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-unifiedroleassignmentmultiple-intune-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -172,10 +173,6 @@ GET https://graph.microsoft.com/beta/roleManagement/deviceManagement/roleAssignm
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-unifiedroleassignmentmultiple-in-intune-provider-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-unifiedroleassignmentmultiple-in-intune-provider-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -262,10 +259,6 @@ GET https://graph.microsoft.com/beta/roleManagement/deviceManagement/roleAssignm
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-unifiedroleassignment-with-expand-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-unifiedroleassignment-with-expand-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -373,10 +366,6 @@ GET https://graph.microsoft.com/beta/roleManagement/cloudPC/roleAssignments/dbe9
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-unifiedroleassignmentmultiple-cloud-pc-provider-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-unifiedroleassignmentmultiple-cloud-pc-provider-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-unifiedroleassignmentmultiple-cloud-pc-provider-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -453,10 +442,6 @@ GET https://graph.microsoft.com/beta/roleManagement/cloudPC/roleAssignments/dbe9
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-unifiedroleassignment-cloud-pc-provider-expand-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-unifiedroleassignment-cloud-pc-provider-expand-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -551,6 +536,79 @@ Content-type: application/json
     }
 }
 ```
+
+### Example 6: Get a roleAssignmentMultiple in a Defender provider
+
+#### Request
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_unifiedroleassignmentmultiple_defender_provider",
+  "sampleKeys": ["dbe9d288-fd87-41f4-b33d-b498ed207096"]
+}-->
+
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/roleManagement/defender/roleAssignments/dbe9d288-fd87-41f4-b33d-b498ed207096
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-unifiedroleassignmentmultiple-defender-provider-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-unifiedroleassignmentmultiple-defender-provider-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-unifiedroleassignmentmultiple-defender-provider-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-unifiedroleassignmentmultiple-defender-provider-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-unifiedroleassignmentmultiple-defender-provider-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-unifiedroleassignmentmultiple-defender-provider-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.unifiedRoleAssignment"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/defender/roleAssignments/$entity",
+    "id": "dbe9d288-fd87-41f4-b33d-b498ed207096",
+    "displayName": "My test role assignment 1",
+    "roleDefinitionId": "b5c08161-a7af-481c-ace2-a20a69a48fb1",
+    "principalIds": [
+        "8e811502-ebda-4782-8f81-071d17f0f892",
+        "30e3492f-964c-4d73-88c6-986a53c6e2a0"
+    ],
+    "appScopeIds": [
+        "Mdi"
+    ]
+}
+```
+
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
 <!-- {

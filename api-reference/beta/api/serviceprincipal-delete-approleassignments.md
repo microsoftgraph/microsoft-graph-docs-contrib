@@ -4,7 +4,7 @@ description: "Delete an appRoleAssignment from a service principal."
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.subservice: "entra-applications"
-author: "sureshja"
+author: "eringreenlee"
 ms.date: 04/19/2024
 ---
 
@@ -73,10 +73,6 @@ DELETE https://graph.microsoft.com/beta/servicePrincipals/{servicePrincipal-id}/
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/serviceprincipal-delete-approleassignment-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/serviceprincipal-delete-approleassignment-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

@@ -8,6 +8,7 @@ ms.subservice: "m365-backup-storage"
 doc_type: resourcePageType
 toc.title: OneDrive for Business protection policy
 ms.date: 05/31/2024
+ms.custom: sfi-ga-nochange
 ---
 
 # oneDriveForBusinessProtectionPolicy resource type
@@ -30,23 +31,16 @@ Inherits from [protectionPolicyBase](../resources/protectionpolicybase.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The unique identifier of the protection rule associated with the policy.|
-|displayName|String|The name of the policy to be created.|
-|createdDateTime|DateTimeOffset|The time of creation of the policy.|
-|createdBy|[identitySet](../resources/identityset.md)|The identity of person who created the policy.|
-|lastModifiedBy|[identitySet](../resources/identityset.md)|The identity of the person who last modified the policy.|
-|lastModifiedDateTime|DateTimeOffset|The timestamp of the last modification of the policy.|
-|status|[protectionPolicyStatus](../resources/onedriveforbusinessprotectionpolicy.md#protectionpolicystatus-values)|Status of the policy. The value is the aggregated status of the protection units. The possible values are: `inactive`, `activeWithErrors`, `updating`, `active`, `unknownFutureValue`.|
-
-### protectionPolicyStatus values
-
-|Member | Description |
-|:------|:------------|
-|active | All units are protected.|
-|activeWithErrors | Some units are protected and others are unprotected.|
-|inactive | All units are unprotected.|
-|updating | Some or all units are in a `protectRequested`, `unprotectRequested`, or `removeRequested` state.|
-|unknownFutureValue | Evolvable enumeration sentinel value. Don't use.|
+|createdBy|[identitySet](../resources/identityset.md)|The identity of the person who created the policy. Inherited from [protectionPolicyBase](../resources/protectionpolicybase.md).|
+|createdDateTime|DateTimeOffset|The date and time when the policy was created. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [protectionPolicyBase](../resources/protectionpolicybase.md).|
+|displayName|String|The name of the policy to be created. Inherited from [protectionPolicyBase](../resources/protectionpolicybase.md).|
+|id|String|The unique identifier of the protection rule associated with the policy. Inherited from [protectionPolicyBase](../resources/protectionpolicybase.md).|
+|isEnabled|Boolean|Indicates whether the policy is enabled. Inherited from [protectionPolicyBase](../resources/protectionpolicybase.md).|
+|lastModifiedBy|[identitySet](../resources/identityset.md)|The identity of the person who last modified the policy. Inherited from [protectionPolicyBase](../resources/protectionpolicybase.md).|
+|lastModifiedDateTime|DateTimeOffset|The date and time when the policy was last modified. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [protectionPolicyBase](../resources/protectionpolicybase.md).|
+|protectionPolicyArtifactCount|[protectionPolicyArtifactCount](../resources/protectionpolicyartifactcount.md)|The count of artifacts in the protection policy by status. Returned only on `$select`. Inherited from [protectionPolicyBase](../resources/protectionpolicybase.md).|
+|retentionSettings|[retentionSetting](../resources/retentionsetting.md) collection|Contains the retention setting details for the policy. Inherited from [protectionPolicyBase](../resources/protectionpolicybase.md).|
+|status|[protectionPolicyStatus](../resources/protectionpolicybase.md#protectionpolicystatus-values)|Status of the policy. The value is the aggregated status of the protection units. The possible values are: `inactive`, `activeWithErrors`, `updating`, `active`, `unknownFutureValue`. Inherited from [protectionPolicyBase](../resources/protectionpolicybase.md).|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -67,17 +61,16 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.oneDriveForBusinessProtectionPolicy",
-  "id": "String (identifier)",
-  "displayName": "String",
-  "status": "String",
+  "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
   "createdDateTime": "String (timestamp)",
-  "createdBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
+  "displayName": "String",
+  "id": "String (identifier)",
+  "isEnabled": "Boolean",
+  "lastModifiedBy": {"@odata.type": "microsoft.graph.identitySet"},
   "lastModifiedDateTime": "String (timestamp)",
-  "lastModifiedBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  }
+  "protectionPolicyArtifactCount": {"@odata.type": "microsoft.graph.protectionPolicyArtifactCount"},
+  "retentionSettings": [{"@odata.type": "microsoft.graph.retentionSetting"}],
+  "status": "String"
 }
 ```
 

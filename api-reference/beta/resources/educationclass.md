@@ -33,7 +33,7 @@ Students are regular members of the class, and Teachers are owners and have appr
 |[Add teacher](../api/educationclass-post-teachers.md)|[educationUser]|Add a new **educationUser** for the class by posting to the teachers navigation property.|
 |[List teachers](../api/educationclass-list-teachers.md)|[educationUser] collection|Get a list of teachers for the class.|
 |[Remove teacher](../api/educationclass-delete-teachers.md)|[educationUser]|Remove an **educationUser** from the class through the teachers navigation property.|
-|[Create](../api/educationclass-post-assignments.md)|[educationAssignment]|Create a new **educationAssignment** by posting to the assignments collection.|
+|[Create assignment](../api/educationclass-post-assignments.md)|[educationAssignment]|Create a new **educationAssignment** by posting to the assignments collection.|
 |[List assignments](../api/educationclass-list-assignments.md)|[educationAssignment] collection|Get an **educationAssignment** object collection.|
 |[List modules](../api/educationclass-list-modules.md)|[educationModule] collection|Get an **educationModule** object collection.|
 |[Get group](../api/educationclass-get-group.md)|[group]|Get the Microsoft 365 **group** that corresponds to this **educationClass**.|

@@ -1,11 +1,12 @@
 ---
 title: "Update application"
 description: "Update the properties of an application object."
-author: "sureshja"
+author: "Jackson-Woods"
 ms.localizationpriority: medium
 ms.subservice: "entra-applications"
 doc_type: apiPageType
 ms.date: 05/23/2025
+ms.custom: sfi-ropc-nochange
 ---
 
 # Update application
@@ -27,6 +28,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "application_update" } -->
 [!INCLUDE [permissions-table](../includes/permissions/application-update-permissions.md)]
+
+[!INCLUDE [rbac-application-apis-write](../includes/rbac-for-apis/rbac-application-apis-write.md)]
 
 ## HTTP request
 
@@ -66,7 +69,7 @@ In the request body, supply the values for relevant fields that should be update
 | keyCredentials          | [keyCredential](../resources/keycredential.md) collection                   | The collection of key credentials associated with the application. Not nullable.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | logo                    | Stream                                                                      | The main logo for the application. Not nullable. Use the PUT method to update the logo.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | nativeAuthenticationApisEnabled | String | Specifies whether the native authentication APIs are enabled so that the application can use them to provide native authentication. The possible values are: `none`, `all`, and `unknownFutureValue`. For more information, see [Native Authentication](/entra/external-id/customers/concept-native-authentication).|
-| onPremisesPublishing    | [onPremisesPublishing](../resources/onpremisespublishing.md)                | Represents the set of properties for configuring [Microsoft Entra application proxy](/azure/active-directory/app-proxy/what-is-application-proxy) for an on-premises application. This property can only be set after the application has been created and cannot be updated in the same request as other application properties.                                                                                                                                                                                                                                                                                                                                                       |
+| onPremisesPublishing    | [onPremisesPublishing](../resources/onpremisespublishing.md)                | Represents the set of properties for configuring [Microsoft Entra application proxy](/entra/identity/app-proxy/overview-what-is-app-proxy) for an on-premises application. This property can only be set after the application has been created and cannot be updated in the same request as other application properties.                                                                                                                                                                                                                                                                                                                                                       |
 | optionalClaims          | optionalClaims                                                              | Application developers can configure optional claims in their Microsoft Entra apps to specify which claims they want in tokens sent to their application by the Microsoft security token service. See [optional claims](/azure/active-directory/develop/active-directory-optional-claims) for more information.                                                                                                                                                                                                                                                               |
 | parentalControlSettings | [parentalControlSettings](../resources/parentalcontrolsettings.md)          | Specifies parental control settings for an application.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 | publicClient            | [publicClientApplication](../resources/publicclientapplication.md)          | Specifies settings for installed clients such as desktop or mobile devices.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
@@ -108,10 +111,6 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-application-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/update-application-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -185,10 +184,6 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-application-approles-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/update-application-approles-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

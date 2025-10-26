@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Represents the approval object for decisions associated with a request.
 
-In [PIM for groups](../resources/privilegedidentitymanagement-for-groups-api-overview.md), the approval object for decisions to approve or deny requests to activate group membership or ownership.
+In [PIM for Groups](../resources/privilegedidentitymanagement-for-groups-api-overview.md), the approval object for decisions to approve or deny requests to activate group membership or ownership.
 
 ## Methods
 |Method|Return type|Description|
@@ -26,7 +26,7 @@ In [PIM for groups](../resources/privilegedidentitymanagement-for-groups-api-ove
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Identifier of the approval decision. <br/><li>In PIM for groups, it's the same identifier as the identifier of the [assignment schedule request](../resources/privilegedaccessgroupassignmentschedulerequest.md).|
+|id|String|Identifier of the approval decision. <br/><li>In PIM for Groups, it's the same identifier as the identifier of the [assignment schedule request](../resources/privilegedaccessgroupassignmentschedulerequest.md).|
 
 ## Relationships
 

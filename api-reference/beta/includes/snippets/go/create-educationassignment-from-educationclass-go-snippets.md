@@ -21,6 +21,8 @@ dueDateTime , err := time.Parse(time.RFC3339, "2025-09-16T00:00:00Z")
 requestBody.SetDueDateTime(&dueDateTime) 
 displayName := "Reading test 09.14"
 requestBody.SetDisplayName(&displayName) 
+languageTag := "es-MX"
+requestBody.SetLanguageTag(&languageTag) 
 instructions := graphmodels.NewEducationItemBody()
 contentType := graphmodels.TEXT_BODYTYPE 
 instructions.SetContentType(&contentType) 
@@ -37,10 +39,6 @@ status := graphmodels.DRAFT_EDUCATIONASSIGNMENTSTATUS
 requestBody.SetStatus(&status) 
 allowStudentsToAddResourcesToSubmission := true
 requestBody.SetAllowStudentsToAddResourcesToSubmission(&allowStudentsToAddResourcesToSubmission) 
-additionalData := map[string]interface{}{
-	"languageTag" : "es-MX", 
-}
-requestBody.SetAdditionalData(additionalData)
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 assignments, err := graphClient.Education().Classes().ByEducationClassId("educationClass-id").Assignments().Post(context.Background(), requestBody, nil)

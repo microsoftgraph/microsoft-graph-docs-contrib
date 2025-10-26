@@ -38,7 +38,8 @@ Inherits from [protectionUnitBase](../resources/protectionunitbase.md).
 |lastModifiedDateTime|DateTimeOffset|The time of last modification of the protection unit. Inherited from [protectionUnitBase](../resources/protectionunitbase.md).|
 |policyId|String|Unique identifier of the protection policy associated with this protection unit. Inherited from [protectionUnitBase](../resources/protectionunitbase.md).|
 |protectionSources|protectionSource|Indicates the sources by which a protection unit is currently protected. A protection unit protected by multiple sources is indicated by comma-separated values. The possible values are: `none`, `manual`, `dynamicRule`, `unknownFutureValue`. Inherited from [protectionUnitBase](../resources/protectionunitbase.md).|
-|status|[protectionUnitStatus](../resources/protectionunitbase.md#protectionunitstatus-values)|The individual enablement/disablement/removal status of the protection unit. Inherited from [protectionUnitBase](../resources/protectionunitbase.md). The possible values are: `protectRequested`, `protected`, `unprotectRequested`, `unprotected`, `removeRequested`, `unknownFutureValue`.|
+|status|[protectionUnitStatus](../resources/protectionunitbase.md#protectionunitstatus-values)|The individual enablement/disablement/removal status of the protection unit. Inherited from [protectionUnitBase](../resources/protectionunitbase.md). The possible values are: `protectRequested`, `protected`, `unprotectRequested`, `unprotected`, `removeRequested`, `unknownFutureValue`, `offboardRequested`, `offboarded`, and `cancelOffboardRequested`. Use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `offboardRequested`, `offboarded`, and `cancelOffboardRequested`.|
+|offboardRequestedDateTime|DateTimeOffset|The time when protection unit offboard was requested. Inherited from [protectionUnitBase](../resources/protectionunitbase.md).|
 
 ## Relationships
 None.
@@ -67,7 +68,8 @@ The following JSON representation shows the resource type.
   "lastModifiedDateTime": "String (timestamp)",
   "policyId": "String",
   "protectionSources": "String",
-  "status": "String"
+  "status": "String",
+  "offboardRequestedDateTime": "String (timestamp)",
 }
 ```
 

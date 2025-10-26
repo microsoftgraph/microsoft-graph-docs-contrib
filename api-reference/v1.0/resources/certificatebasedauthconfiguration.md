@@ -13,16 +13,19 @@ ms.date: 07/22/2024
 
 Namespace: microsoft.graph
 
-Certificate-based authentication enables you to be authenticated by Microsoft Entra ID with a client certificate on a Windows, Android, or iOS device when connecting your Exchange Online account to:
+Microsoft Entra ID authenticates you with a client certificate on a Windows, Android, or iOS device when you connect your Exchange Online account to:
 
 - Microsoft mobile applications such as Outlook and Word
 - Exchange ActiveSync (EAS) clients
 
 Configuring this feature eliminates the need to enter a username and password combination into certain mail and Microsoft Office applications on your mobile device.
 
-Certificate-based authentication configuration is provided through a collection of certificate authorities. The certificate authorities are used to establish a trusted certificate chain which enables clients to be authenticated by Microsoft Entra ID with a client certificate.
+Certificate-based authentication configuration is provided through a collection of certificate authorities. Microsoft Entra ID uses the certificate authorities to establish a trusted certificate chain, which enables it to authenticate clients with a client certificate.
 
 Learn more about [certificate-based authentication in Microsoft Entra ID](/azure/active-directory/authentication/active-directory-certificate-based-authentication-get-started).
+
+>[!NOTE]
+>Administrators are highly recommended to configure the new scalable platform for [PKI (Public Key Infrastructure) based store](certificatebasedauthpki.md). This new PKI-based CA store supports up to 250 certificate authorities. It also allows each CA file to be as large as 8 KB. Additionally, it introduces new features such as issuer hints.
 
 ## Methods
 

@@ -5,14 +5,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```go
 
 
-// Code snippets are only available for the latest major version. Current major version is $v0.*
+// Code snippets are only available for the latest major version. Current major version is $v1.*
 
 // Dependencies
 import (
 	  "context"
-	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphsecurity "github.com/microsoftgraph/msgraph-beta-sdk-go/security"
-	  graphmodelssecurity "github.com/microsoftgraph/msgraph-beta-sdk-go/models/security"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphsecurity "github.com/microsoftgraph/msgraph-sdk-go/security"
+	  graphmodelssecurity "github.com/microsoftgraph/msgraph-sdk-go/models/security"
 	  //other-imports
 )
 

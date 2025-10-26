@@ -5,7 +5,7 @@ ms.localizationpriority: high
 author: "snlraju-msft"
 ms.subservice: "search"
 doc_type: conceptualPageType
-ms.date: 06/04/2024
+ms.date: 05/29/2024
 ---
 
 # Use the Copilot connectors API
@@ -43,17 +43,9 @@ The following table lists common use cases for the Copilot connectors API.
 
 The following are current known limitations:
 
-- Organizations are limited to a maximum of 30 connections. (If you need more connections, complete the [Request form](https://aka.ms/GraphConnectorsHigherCapacity).)
-- You can create up to 25 `externalItem` resources items per second.
 - An application is limited to 25 concurrent operations on a connection.
-- Connections have a capacity limit of 5,000,000 items or ~350 GB of data.
 - Maximum size of an `externalItem` entity is 4 MB.
 
-## Next steps
+## Related content
 
-- See the [Microsoft Search API overview](/graph/search-concept-overview).
-- Drill down on the methods, properties, and relationships of the [externalConnection](externalconnectors-externalconnection.md), [schema](externalconnectors-schema.md), and [externalItem](externalconnectors-externalitem.md) resources.
-- Check out the [Microsoft Graph postman collection](https://www.postman.com/microsoftgraph/workspace/microsoft-graph/folder/455214-66cbb476-ad94-448e-ba5a-ef58e1da7a90?ctx=documentation) ([learn more](https://developer.microsoft.com/en-us/graph/blogs/postman-collections))
-- Check out the [sample search connector](https://github.com/microsoftgraph/msgraph-search-connector-sample) from GitHub.
-
-
+- [Copilot connectors overview](/graph/connecting-external-content-connectors-overview)

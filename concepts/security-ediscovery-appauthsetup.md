@@ -4,8 +4,9 @@ description: "Follow the steps to set up app-only access for eDiscovery Microsof
 author: "pamehra"
 ms.localizationpriority: high
 ms.subservice: "security"
-ms.custom: scenarios:getting-started
+ms.custom: scenarios:getting-started, sfi-image-nochange
 ms.date: 11/14/2024
+ms.topic: how-to
 ---
 
 # Set up app-only access for Microsoft Purview eDiscovery 
@@ -60,7 +61,7 @@ You need to set the correct API permissions for your application. Expand **Manag
 
 ### Step 4: Set up a service principal
 
-1. On the left pane in the Azure portal, in **Microsoft Entra ID**, select **Enterprise Applications** and search for your application by name to get the **Object ID** for your application.
+1. Permission assignments for your app come in two parts - Microsoft Graph-level permissions, which you have already granted, and Purview-level case and role permissions. To do this, you need the object ID of your application. This value is different from the **appId** (named **client ID** in the Microsoft Entra admin center). To retrieve the app object ID, open the Azure portal > in the **Microsoft Entra ID** section > select **Enterprise applications** > search for your application by name and get the **Object ID** associated with your application from the list.
 
 ![Screenshot of the enterprise applications page.](images/security-ediscovery-appauthsetup-step4_1.png)
 

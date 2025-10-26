@@ -2,11 +2,11 @@
 title: "directory resource type (deleted items)"
 description: "Represents a deleted item in the directory."
 ms.localizationpriority: medium
-author: "keylimesoda"
+author: "vimranga"
 ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
 toc.title: Deleted item
-ms.date: 07/08/2024
+ms.date: 06/23/2025
 ---
 
 # directory resource type
@@ -50,6 +50,7 @@ Inherits from [entity](entity.md).
 | deviceLocalCredentials             | [deviceLocalCredential](../resources/devicelocalcredential.md) collection                | The credentials of the device's local administrator account backed up to Microsoft Entra ID.                            |
 | federationConfigurations           | [identityProviderBase](../resources/identityproviderbase.md) collection                  | Configure domain federation with organizations whose identity provider (IdP) supports either the SAML or WS-Fed protocol. |
 | onPremisesSynchronization          | [onPremisesDirectorySynchronization](../resources/onpremisesdirectorysynchronization.md) | A container for on-premises directory synchronization functionalities that are available for the organization.      |
+|publicKeyInfrastructure|[publicKeyInfrastructureRoot](../resources/publickeyinfrastructureroot.md)|The collection of public key infrastructure instances for the certificate-based authentication feature for users in a Microsoft Entra tenant.|
 | subscriptions                      | [companySubscription](companysubscription.md) collection                                 | List of commercial subscriptions that an organization acquired.                                                       |
 
 ## JSON representation

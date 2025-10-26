@@ -5,7 +5,9 @@ description: "Provides details about user or application sign-in activity in you
 author: "egreenberg14"
 ms.localizationpriority: medium
 ms.subservice: "entra-monitoring-health"
-ms.date: 01/23/2025
+ms.date: 08/13/2025
+ms.custom: sfi-ropc-nochange
+toc.title: Sign-in
 ---
 
 
@@ -26,7 +28,8 @@ The [Microsoft Entra data retention policies](/azure/active-directory/reports-mo
 |[List](../api/signin-list.md) | [signIn](signin.md) |Read properties and relationships of signIn objects.|
 |[Get](../api/signin-get.md) | [signIn](signin.md) |Read properties and relationships of a signIn object.|
 |[Confirm compromised](../api/signin-confirmcompromised.md)|None|Mark an event in the Microsoft Entra sign-in logs as risky.|
-|[Confirm safe](../api/signin-confirmsafe.md)|None|mark an event in Microsoft Entra sign-in logs as safe.|
+|[Confirm safe](../api/signin-confirmsafe.md)|None|Mark an event in Microsoft Entra sign-in logs as safe.|
+|[Dismiss](../api/signin-dismiss.md)|None|Dimiss sign-in risk from Microsoft Entra sign-in events|
 
 ## Properties
 
@@ -46,8 +49,8 @@ The [Microsoft Entra data retention policies](/azure/active-directory/reports-mo
 |authenticationDetails|[authenticationDetail](authenticationdetail.md) collection|The result of the authentication attempt and more details on the authentication method.|
 |authenticationMethodsUsed|String collection|The authentication methods used. Possible values: `SMS`, `Authenticator App`, `App Verification code`, `Password`, `FIDO`, `PTA`, or `PHS`.|
 |authenticationProcessingDetails|[keyValue](keyvalue.md) collection|More authentication processing details, such as the agent name for PTA and PHS, or a server or farm name for federated authentication.|
-|authenticationProtocol|protocolType|Lists the protocol type or grant type used in the authentication. The possible values are: `none`, `oAuth2`, `ropc`, `wsFederation`, `saml20`, `deviceCode`, `unknownFutureValue`, `authenticationTransfer`, `nativeAuth`, `implicitAccessTokenAndGetResponseMode`, `implicitIdTokenAndGetResponseMode`, `implicitAccessTokenAndPostResponseMode`, `implicitIdTokenAndPostResponseMode`, `authorizationCodeWithoutPkce`, `authorizationCodeWithPkce`, `clientCredentials`, `refreshTokenGrant`, `encryptedAuthorizeResponse`, `directUserGrant`, `kerberos`, `prtGrant`, `seamlessSso`, `prtBrokerBased`, `prtNonBrokerBased`, `onBehalfOf`, `samlOnBehalfOf`. Use the `Prefer: include-unknown-enum-members` request header to get the following values from this {evolvable enum}(/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `authenticationTransfer` , `nativeAuth` , `implicitAccessTokenAndGetResponseMode` , `implicitIdTokenAndGetResponseMode` , `implicitAccessTokenAndPostResponseMode` , `implicitIdTokenAndPostResponseMode` , `authorizationCodeWithoutPkce` , `authorizationCodeWithPkce` , `clientCredentials` , `refreshTokenGrant` , `encryptedAuthorizeResponse` , `directUserGrant` , `kerberos` , `prtGrant` , `seamlessSso` , `prtBrokerBased` , `prtNonBrokerBased` , `onBehalfOf` , `samlOnBehalfOf`. |
-|authenticationRequirement | String | This holds the highest level of authentication needed through all the sign-in steps, for sign-in to succeed. <br/><br/> Supports `$filter` (`eq`, `startsWith`).|
+|authenticationProtocol|protocolType|Lists the protocol type or grant type used in the authentication. The possible values are: `none`, `oAuth2`, `ropc`, `wsFederation`, `saml20`, `deviceCode`, `unknownFutureValue`, `authenticationTransfer`, `nativeAuth`, `implicitAccessTokenAndGetResponseMode`, `implicitIdTokenAndGetResponseMode`, `implicitAccessTokenAndPostResponseMode`, `implicitIdTokenAndPostResponseMode`, `authorizationCodeWithoutPkce`, `authorizationCodeWithPkce`, `clientCredentials`, `refreshTokenGrant`, `encryptedAuthorizeResponse`, `directUserGrant`, `kerberos`, `prtGrant`, `seamlessSso`, `prtBrokerBased`, `prtNonBrokerBased`, `onBehalfOf`, `samlOnBehalfOf`. Use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `authenticationTransfer` , `nativeAuth` , `implicitAccessTokenAndGetResponseMode` , `implicitIdTokenAndGetResponseMode` , `implicitAccessTokenAndPostResponseMode` , `implicitIdTokenAndPostResponseMode` , `authorizationCodeWithoutPkce` , `authorizationCodeWithPkce` , `clientCredentials` , `refreshTokenGrant` , `encryptedAuthorizeResponse` , `directUserGrant` , `kerberos` , `prtGrant` , `seamlessSso` , `prtBrokerBased` , `prtNonBrokerBased` , `onBehalfOf` , `samlOnBehalfOf`. |
+|authenticationRequirement | String |The authentication stage reached during sign-in. It doesn't account for previously satisfied claims. If primary authentication fails, the sign-in attempt is not evaluated by Conditional Access, so the resulting value is `singleFactorAuthentication`. <br/><br/> Supports `$filter` (`eq`, `startsWith`).|
 |authenticationRequirementPolicies|[authenticationRequirementPolicy](../resources/authenticationrequirementpolicy.md) collection|Sources of authentication requirement, such as conditional access, per-user MFA, identity protection, and security defaults.|
 |autonomousSystemNumber|Int32|The Autonomous System Number (ASN) of the network used by the actor.|
 |azureResourceId|String|Contains a fully qualified Azure Resource Manager ID of an Azure resource accessed during the sign-in.|
@@ -101,7 +104,7 @@ The [Microsoft Entra data retention policies](/azure/active-directory/reports-mo
 |status|[signInStatus](signinstatus.md)|The sign-in status. Includes the error code and description of the error (for a sign-in failure). <br/><br/> Supports `$filter` (`eq`) on **errorCode** property.|
 |tokenIssuerName|String|The name of the identity provider. For example, `sts.microsoft.com`. <br/><br/> Supports `$filter` (`eq`).|
 |tokenIssuerType|tokenIssuerType|The type of identity provider. The possible values are: `AzureAD`, `ADFederationServices`, `UnknownFutureValue`, `AzureADBackupAuth`, `ADFederationServicesMFAAdapter`, `NPSExtension`. Use the `Prefer: include-unknown-enum-members` request header to get the following values in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `AzureADBackupAuth` , `ADFederationServicesMFAAdapter` , `NPSExtension`.|
-|uniqueTokenIdentifier|String|A unique base64 encoded request identifier used to track tokens issued by Microsoft Entra ID as they're redeemed at resource providers. |
+|uniqueTokenIdentifier|String|A unique base64-encoded request identifier used to track tokens issued by Microsoft Entra ID as they're redeemed at resource providers.|
 |userAgent|String|The user agent information related to sign-in. <br/><br/> Supports `$filter` (`eq`, `startsWith`).|
 |userDisplayName|String|The display name of the user. <br/><br/> Supports `$filter` (`eq`, `startsWith`).|
 |userId|String|The identifier of the user. <br/><br/> Supports `$filter` (`eq`).|
@@ -244,6 +247,10 @@ The following JSON representation shows the resource type.
   "userType": "String"
 }
 ```
+
+## Related content
+
+-  [Linkable identifiers in Microsoft Entra](/entra/identity/authentication/how-to-authentication-track-linkable-identifiers).
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

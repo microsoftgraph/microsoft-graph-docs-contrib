@@ -21,8 +21,8 @@ Used in the identity sources of an [connectedOrganization](connectedOrganization
 
 | Property                     | Type                      | Description |
 | :--------------------------- | :------------------------ | :---------- |
-| displayName |String | The name of the identity source, typically also the domain name. Read only. |
-| domainName |String | The domain name. Read only. |
+| displayName |String | The name of the identity source, typically also the domain name. Read-only. |
+| domainName |String | The domain name. Read-only. |
 
 ## Relationships
 
@@ -30,7 +30,7 @@ None.
 
 ## JSON representation
 
-Here's a JSON representation of the type.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

@@ -65,10 +65,6 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/ca
 [!INCLUDE [sample-code](../includes/snippets/csharp/v1/tutorial-entitlementmanagement-get-accesspackagecatalog-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/tutorial-entitlementmanagement-get-accesspackagecatalog-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/v1/tutorial-entitlementmanagement-get-accesspackagecatalog-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -154,10 +150,6 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/v1/tutorial-entitlementmanagement-get-accesspackageresourcerequest-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/tutorial-entitlementmanagement-get-accesspackageresourcerequest-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/v1/tutorial-entitlementmanagement-get-accesspackageresourcerequest-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -225,10 +217,6 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/ca
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/v1/tutorial-entitlementmanagement-get-accesspackageresources-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/tutorial-entitlementmanagement-get-accesspackageresources-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -302,10 +290,6 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/ca
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/v1/tutorial-entitlementmanagement-get-accesspackageresourceroles-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/tutorial-entitlementmanagement-get-accesspackageresourceroles-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -394,10 +378,6 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/v1/tutorial-entitlementmanagement-create-accesspackage-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/tutorial-entitlementmanagement-create-accesspackage-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -546,10 +526,6 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/beta/tutorial-entitlementmanagement-get-accesspackageassignmentpolicy-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/beta/tutorial-entitlementmanagement-get-accesspackageassignmentpolicy-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/beta/tutorial-entitlementmanagement-get-accesspackageassignmentpolicy-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -657,10 +633,6 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/beta/tutorial-entitlementmanagement-create-accesspackageassignmentrequest-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/beta/tutorial-entitlementmanagement-create-accesspackageassignmentrequest-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/beta/tutorial-entitlementmanagement-create-accesspackageassignmentrequest-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -733,10 +705,6 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 [!INCLUDE [sample-code](../includes/snippets/csharp/beta/tutorial-entitlementmanagement-get-accesspackageassignmentrequest-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/beta/tutorial-entitlementmanagement-get-accesspackageassignmentrequest-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/beta/tutorial-entitlementmanagement-get-accesspackageassignmentrequest-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -801,10 +769,6 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/beta/tutorial-entitlementmanagement-get-accesspackageassignment-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/beta/tutorial-entitlementmanagement-get-accesspackageassignment-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -886,10 +850,6 @@ GET https://graph.microsoft.com/v1.0/groups/f4892fac-e81c-4712-bdf2-a4450008a4b0
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/v1/tutorial-entitlementmanagement-get-group-members-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/tutorial-entitlementmanagement-get-group-members-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -987,10 +947,6 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/beta/tutorial-entitlementmanagement-remove-accesspackageassignmentrequest-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/beta/tutorial-entitlementmanagement-remove-accesspackageassignmentrequest-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/beta/tutorial-entitlementmanagement-remove-accesspackageassignmentrequest-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -1055,10 +1011,6 @@ DELETE https://graph.microsoft.com/beta/identityGovernance/entitlementManagement
 [!INCLUDE [sample-code](../includes/snippets/csharp/beta/tutorial-entitlementmanagement-delete-accesspackageassignmentpolicy-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/beta/tutorial-entitlementmanagement-delete-accesspackageassignmentpolicy-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/beta/tutorial-entitlementmanagement-delete-accesspackageassignmentpolicy-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -1102,10 +1054,6 @@ DELETE https://graph.microsoft.com/beta/identityGovernance/entitlementManagement
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/beta/tutorial-entitlementmanagement-delete-accesspackage-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/beta/tutorial-entitlementmanagement-delete-accesspackage-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

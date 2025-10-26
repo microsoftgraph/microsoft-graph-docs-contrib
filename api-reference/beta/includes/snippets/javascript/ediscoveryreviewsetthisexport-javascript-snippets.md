@@ -13,7 +13,7 @@ const client = Client.init(options);
 const _export = {
     outputName: 'Export via API',
     description: 'Export for the Contoso investigation',
-    exportOptions: 'originalFiles, tags, splitSource, includeFolderAndPath, friendlyName, condensePaths, optimizedPartitionSize',
+    exportOptions: 'originalFiles, tags, splitSource, includeFolderAndPath, friendlyName, condensePaths',
     exportStructure: 'msg'
 };
 

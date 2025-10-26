@@ -94,10 +94,6 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/userthisconvertexternaltointernalmemberuser-cloudonly-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/userthisconvertexternaltointernalmemberuser-cloudonly-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/userthisconvertexternaltointernalmemberuser-cloudonly-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -176,10 +172,6 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/userthisconvertexternaltointernalmemberuser-cloudonly-with-mail-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/userthisconvertexternaltointernalmemberuser-cloudonly-with-mail-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/userthisconvertexternaltointernalmemberuser-cloudonly-with-mail-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -246,10 +238,6 @@ POST https://graph.microsoft.com/beta/users/0b8cc234-ef87-4015-9785-cbb42000d41c
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/userthisconvertexternaltointernalmemberuser-synceduser-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/userthisconvertexternaltointernalmemberuser-synceduser-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

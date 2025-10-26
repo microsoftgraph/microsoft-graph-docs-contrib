@@ -18,9 +18,6 @@ Represents a setting that controls whether Microsoft 365 Copilot can use feature
 
 Inherits from [entity](../resources/entity.md).
 
-> [!CAUTION]
-> Disabling enhanced personalization deletes each user's personalized data store for the features associated to it. This can't be recovered. Ensure users don't want the features before disabling and understand re-enabling doesn't restore past data.
-
 ## Methods
 
 |Method|Return type|Description|

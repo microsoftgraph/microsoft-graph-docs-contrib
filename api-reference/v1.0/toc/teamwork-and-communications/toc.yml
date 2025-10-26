@@ -92,6 +92,16 @@ items:
   items:
   - name: Overview
     href: ../../resources/communications-api-overview.md
+  - name: Call events
+    items:
+    - name: Call event
+      href: ../../resources/callevent.md
+    - name: Emergency call event
+      href: ../../resources/emergencycallevent.md
+    - name: Complex types
+      items:
+      - name: Emergency caller info
+        href: ../../resources/emergencycallerinfo.md
   - name: Call records
     items:
     - name: Overview
@@ -246,24 +256,6 @@ items:
         href: ../../resources/addlargegalleryviewoperation.md
       - name: Get large gallery view operation status
         href: ../../api/addlargegalleryviewoperation-get.md
-  - name: Copilot settings
-    items:
-    - name: Copilot admin limited mode
-      items:
-      - name: Copilot admin limited mode
-        href: ../../resources/copilotadminlimitedmode.md
-      - name: Get
-        href: ../../api/copilotadminlimitedmode-get.md
-      - name: Update
-        href: ../../api/copilotadminlimitedmode-update.md
-    - name: Complex types
-      items:
-      - name: Copilot admin
-        href: ../../resources/copilotadmin.md
-      - name: Copilot admin setting
-        href: ../../resources/copilotadminsetting.md
-      - name: Copilot root
-        href: ../../resources/copilotroot.md
   - name: Online meetings
     items:
     - name: Meeting attendance report
@@ -298,6 +290,14 @@ items:
         href: ../../api/onlinemeeting-list-transcripts.md
       - name: List recordings
         href: ../../api/onlinemeeting-list-recordings.md
+    - name: Online meeting engagement conversation
+      items:
+      - name: Online meeting engagement conversation
+        href: ../../resources/onlinemeetingengagementconversation.md
+      - name: Get all online meeting messages
+        href: ../../api/cloudcommunications-getallonlinemeetingmessages.md
+      - name: List reactions
+        href: ../../api/engagementconversationdiscussionmessage-list-reactions.md
     - name: Call recording
       items:
       - name: Call recording
@@ -446,6 +446,10 @@ items:
         href: ../../api/virtualeventwebinar-getbyuseridandrole.md
       - name: Set external event information
         href: ../../api/virtualevent-setexternaleventinformation.md
+  - name: Complex types
+    items:
+    - name: Out of office settings
+      href: ../../resources/outofofficesettings.md
 - name: Employee learning
   displayName: Viva Learning
   items:

@@ -5,6 +5,7 @@ author: "KirtiPereira"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 ms.date: 11/07/2024
+ms.topic: best-practice
 ---
 
 # Best practices for using Microsoft Teams activity feed notifications

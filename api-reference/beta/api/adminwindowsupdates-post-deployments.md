@@ -84,7 +84,7 @@ Content-Type: application/json
             "gradualRollout": {
                 "@odata.type": "#microsoft.graph.windowsUpdates.rateDrivenRolloutSettings",
                 "durationBetweenOffers": "P7D",
-                "devicePerOffer": 100
+                "devicesPerOffer": 100
             }
         },
         "monitoring": {
@@ -103,10 +103,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-deployment-from--csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-deployment-from--cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -166,7 +162,7 @@ Content-Type: application/json
       "gradualRollout": {
         "@odata.type": "#microsoft.graph.windowsUpdates.rateDrivenRolloutSettings",
         "durationBetweenOffers": "P1D",
-        "devicePerOffer": 1000
+        "devicesPerOffer": 1000
       }
     },
     "monitoring": {

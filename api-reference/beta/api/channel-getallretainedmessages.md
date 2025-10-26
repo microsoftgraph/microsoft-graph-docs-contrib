@@ -21,7 +21,10 @@ To learn more about how to use the Microsoft Teams export APIs to export content
 [!INCLUDE [teams-metered-apis](../../includes/teams-metered-apis.md)]
 
 > [!NOTE]  
-> This API requires [Teams retention policies](/purview/create-retention-policies?tabs=teams-retention) to be configured. For more information, see [Manage retention policies for Microsoft Teams](/microsoftteams/retention-policies).
+> This API requires [Teams retention policies](/purview/create-retention-policies?tabs=teams-retention) to be configured. For more information, see [Learn about retention for Microsoft Teams](/purview/retention-policies-teams).
+
+> [!NOTE]
+> This endpoint doesn't support retrieving retained messages from Teams private channels.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -90,10 +93,6 @@ GET https://graph.microsoft.com/beta/teams/8b081ef6-4792-4def-b2c9-c363a1bf41d5/
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/channelthisgetallretainedmessages-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/channelthisgetallretainedmessages-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

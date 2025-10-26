@@ -82,10 +82,6 @@ POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/{ediscovery
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-additional-source-associated-ediscovery-search-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-additional-source-associated-ediscovery-search-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-additional-source-associated-ediscovery-search-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

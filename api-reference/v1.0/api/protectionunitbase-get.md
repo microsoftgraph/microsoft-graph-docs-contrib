@@ -69,10 +69,6 @@ GET https://graph.microsoft.com/v1.0/solutions/backupRestore/protectionUnits/890
 [!INCLUDE [sample-code](../includes/snippets/csharp/protectionunitbase-get-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/protectionunitbase-get-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/protectionunitbase-get-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -116,6 +112,7 @@ HTTP/1.1 200 OK
   "siteId": "contoso-jpn.sharepoint.com,da60e844-ba1d-49bc-b4d4-d5e36bae9019,0271110f-634f-4300-a841-3a8a2e900900",
   "policyId": "845457dc-4bb2-4815-bef3-8628ebd1952e",
   "status": "protectRequested",
+  "protectionSources": "manual",
   "createdBy": {
     "application": {
       "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -140,5 +137,6 @@ HTTP/1.1 200 OK
     }
   },
   "lastModifiedDateTime": "2015-06-19T12:01:03.45Z",
+  "offboardRequestedDateTime": "0001-01-01T00:00:00.0000000Z"
 }
 ```

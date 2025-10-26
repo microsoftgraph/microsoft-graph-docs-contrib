@@ -11,6 +11,7 @@ using Microsoft.Graph.Beta.Models;
 
 var requestBody = new TimeCard
 {
+	UserId = "a3601044-a1b5-438e-b742-f78d01d68a67",
 	ClockInEvent = new TimeCardEvent
 	{
 		DateTime = DateTimeOffset.Parse("2019-03-18T00:00:00.000Z"),
@@ -46,12 +47,6 @@ var requestBody = new TimeCard
 					ContentType = BodyType.Text,
 				},
 			},
-		},
-	},
-	AdditionalData = new Dictionary<string, object>
-	{
-		{
-			"onBehalfOfUserId" , "a3601044-a1b5-438e-b742-f78d01d68a67"
 		},
 	},
 };

@@ -19,9 +19,9 @@ To learn more about how to use the Microsoft Teams export APIs to export content
 [!INCLUDE [teams-metered-apis](../../includes/teams-metered-apis.md)]
 
 > [!NOTE]  
-> This API requires [Teams retention policies](/purview/create-retention-policies?tabs=teams-retention) to be configured. For more information, see [Manage retention policies for Microsoft Teams](/microsoftteams/retention-policies).
+> This API requires [Teams retention policies](/purview/create-retention-policies?tabs=teams-retention) to be configured. For more information, see [Learn about retention for Microsoft Teams](/purview/retention-policies-teams).
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -104,10 +104,6 @@ GET https://graph.microsoft.com/v1.0/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/chatthisgetallretainedmessages-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/chatthisgetallretainedmessages-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

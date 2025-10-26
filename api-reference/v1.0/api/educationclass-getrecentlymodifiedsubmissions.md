@@ -111,10 +111,6 @@ GET https://graph.microsoft.com/v1.0/education/classes/37d99af7-cfc5-4e3b-8566-f
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-educationclass-getrecentlymodifiedsubmissions-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-educationclass-getrecentlymodifiedsubmissions-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-educationclass-getrecentlymodifiedsubmissions-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -129,6 +125,10 @@ GET https://graph.microsoft.com/v1.0/education/classes/37d99af7-cfc5-4e3b-8566-f
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-educationclass-getrecentlymodifiedsubmissions-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-educationclass-getrecentlymodifiedsubmissions-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -242,10 +242,6 @@ GET https://graph.microsoft.com/v1.0/education/classes/37d99af7-cfc5-4e3b-8566-f
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-educationclass-getrecentlymodifiedsubmissions-filter-select-assignmentid-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-educationclass-getrecentlymodifiedsubmissions-filter-select-assignmentid-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-educationclass-getrecentlymodifiedsubmissions-filter-select-assignmentid-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -260,6 +256,10 @@ GET https://graph.microsoft.com/v1.0/education/classes/37d99af7-cfc5-4e3b-8566-f
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-educationclass-getrecentlymodifiedsubmissions-filter-select-assignmentid-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-educationclass-getrecentlymodifiedsubmissions-filter-select-assignmentid-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -347,10 +347,6 @@ GET https://graph.microsoft.com/v1.0/education/classes/37d99af7-cfc5-4e3b-8566-f
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-educationclass-getrecentlymodifiedsubmissions-expand-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-educationclass-getrecentlymodifiedsubmissions-expand-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-educationclass-getrecentlymodifiedsubmissions-expand-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -365,6 +361,10 @@ GET https://graph.microsoft.com/v1.0/education/classes/37d99af7-cfc5-4e3b-8566-f
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-educationclass-getrecentlymodifiedsubmissions-expand-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-educationclass-getrecentlymodifiedsubmissions-expand-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -523,10 +523,6 @@ GET https://graph.microsoft.com/v1.0/education/classes/37d99af7-cfc5-4e3b-8566-f
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-educationclass-getrecentlymodifiedsubmissions-filter-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-educationclass-getrecentlymodifiedsubmissions-filter-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-educationclass-getrecentlymodifiedsubmissions-filter-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -541,6 +537,10 @@ GET https://graph.microsoft.com/v1.0/education/classes/37d99af7-cfc5-4e3b-8566-f
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-educationclass-getrecentlymodifiedsubmissions-filter-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-educationclass-getrecentlymodifiedsubmissions-filter-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -654,10 +654,6 @@ GET https://graph.microsoft.com/v1.0/education/classes/37d99af7-cfc5-4e3b-8566-f
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-educationclass-getrecentlymodifiedsubmissions-orderby-top-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-educationclass-getrecentlymodifiedsubmissions-orderby-top-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-educationclass-getrecentlymodifiedsubmissions-orderby-top-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -672,6 +668,10 @@ GET https://graph.microsoft.com/v1.0/education/classes/37d99af7-cfc5-4e3b-8566-f
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-educationclass-getrecentlymodifiedsubmissions-orderby-top-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-educationclass-getrecentlymodifiedsubmissions-orderby-top-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -786,10 +786,6 @@ GET https://graph.microsoft.com/v1.0/education/classes/37d99af7-cfc5-4e3b-8566-f
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-educationclass-getrecentlymodifiedsubmissions-select-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-educationclass-getrecentlymodifiedsubmissions-select-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-educationclass-getrecentlymodifiedsubmissions-select-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -804,6 +800,10 @@ GET https://graph.microsoft.com/v1.0/education/classes/37d99af7-cfc5-4e3b-8566-f
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-educationclass-getrecentlymodifiedsubmissions-select-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-educationclass-getrecentlymodifiedsubmissions-select-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -853,10 +853,6 @@ GET https://graph.microsoft.com/v1.0/education/classes/bf1f1963-05f6-4cba-903c-5
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-educationclass-getrecentlymodifiedsubmissions-filter-range-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-educationclass-getrecentlymodifiedsubmissions-filter-range-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-educationclass-getrecentlymodifiedsubmissions-filter-range-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -871,6 +867,10 @@ GET https://graph.microsoft.com/v1.0/education/classes/bf1f1963-05f6-4cba-903c-5
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-educationclass-getrecentlymodifiedsubmissions-filter-range-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-educationclass-getrecentlymodifiedsubmissions-filter-range-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -983,10 +983,6 @@ GET https://graph.microsoft.com/v1.0/education/classes/37d99af7-cfc5-4e3b-8566-f
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-educationclass-getrecentlymodifiedsubmissions-filter-lastmodifieddatetime-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-educationclass-getrecentlymodifiedsubmissions-filter-lastmodifieddatetime-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-educationclass-getrecentlymodifiedsubmissions-filter-lastmodifieddatetime-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -1001,6 +997,10 @@ GET https://graph.microsoft.com/v1.0/education/classes/37d99af7-cfc5-4e3b-8566-f
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-educationclass-getrecentlymodifiedsubmissions-filter-lastmodifieddatetime-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-educationclass-getrecentlymodifiedsubmissions-filter-lastmodifieddatetime-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

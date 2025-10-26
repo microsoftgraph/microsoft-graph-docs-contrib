@@ -2,7 +2,7 @@
 title: "Update tenantAppManagementPolicy"
 description: "Update the default tenant policy that applies to applications and service principals objects."
 ms.localizationpriority: medium
-author: "madansr7"
+author: "aricrowe57"
 ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
 ms.date: 08/09/2024
@@ -150,10 +150,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-tenantappmanagementpolicy-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/update-tenantappmanagementpolicy-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

@@ -2,8 +2,8 @@
 title: "Create contentActivity"
 toc.title: "Create contentActivity"
 description: "Create a content activity for the signed-in user."
-author: "ArunGedela"
-ms.date: 04/03/2025
+author: "kylemar"
+ms.date: 06/19/2025
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: apiPageType
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a content activity for the signed-in user.
+Create a [content activity](../resources/contentactivity.md) for the signed-in user.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -38,6 +38,13 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 ``` http
 POST /me/dataSecurityAndGovernance/activities/contentActivities
+```
+
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
+
+<!-- { "blockType": "ignored" } -->
+```http
+POST /users/{userId}/dataSecurityAndGovernance/activities/contentActivities
 ```
 
 ## Request headers
@@ -71,49 +78,47 @@ POST https://graph.microsoft.com/beta/me/dataSecurityAndGovernance/activities/co
 Content-Type: application/json
 
 {
-    "contentMetadata": {
+    "contentToProcess": {
        "contentEntries": [
           {
              "@odata.type": "microsoft.graph.processConversationMetadata",
-             "identifier": "68fa951a-898a-4427-8e9e-6f8c05e9fe2b",
-             "name":"API Explorer message",
-             "correlationId": "559a2343-7aa2-4912-93fe-72c47b2706ed",
-             "sequenceNo": 0, 
+             "identifier": "07785517-9081-4fe7-a9dc-85bcdf5e9075",
+             "name":"PC Purview API Explorer message",
+             "correlationId": "d63eafd2-e3a9-4c1a-b726-a2e9b9d9580d",
+             "sequenceNumber": 0, 
              "isTruncated": false,
-             "createdDateTime": "2025-04-28T20:17:55",
-             "modifiedDateTime": "2025-04-28T20:17:55"
+             "createdDateTime": "2025-05-27T17:23:20",
+             "modifiedDateTime": "2025-05-27T17:23:20"
           }
        ],
        "activityMetadata": { 
           "activity": "uploadText"
        },
        "deviceMetadata": {
-          "deviceType": "unmanaged",
           "operatingSystemSpecifications": {
              "operatingSystemPlatform": "Windows 11",
              "operatingSystemVersion": "10.0.26100.0" 
+          },
+          "ipAddress": "127.0.0.1"
+       },
+       "protectedAppMetadata": {
+          "name": "PC Purview API Explorer",
+          "version": "0.2",
+          "applicationLocation":{
+             "@odata.type": "microsoft.graph.policyLocationApplication",
+             "value": "83ef208a-0396-4893-9d4f-d36efbffc8bd"
           }
        },
        "integratedAppMetadata": {
-          "name": "API Explorer",
-          "version": "0.1" 
-       },
-       "userId":"7c2f8f10-cba8-4a8d-9449-db4b76d17390",
-       "scopeIdentifier":"0"
+          "name": "PC Purview API Explorer",
+          "version": "0.2" 
+       }
     }
 }
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-contentactivity-from--csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-contentactivity-from--cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/create-contentactivity-from--go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
@@ -149,37 +154,37 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.contentActivity",
-  "id": "420c8b9c-f4d7-4aa8-a392-344b3af9aa83",
-  "userId": "7c2f8f10-cba8-4a8d-9449-db4b76d17390",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('7c497f10-cba8-4a8d-9449-db4b76d1ef80')/dataSecurityAndGovernance/activities/contentActivities/$entity",
+  "id": "4c3d1219-b1af-442f-85b5-06b7ef1cf8c8",
+  "userId": "7c497f10-cba8-4a8d-9449-db4b76d1ef80",
   "scopeIdentifier": null,
   "contentMetadata": {
     "protectedAppMetadata": null,
     "contentEntries": [
       {
-        "identifier": "68fa951a-898a-4427-8e9e-6f8c05e9fe2b",
+        "identifier": "d6ab5054-e111-45c3-9fba-9f2a59c9bbf8",
         "content": null,
-        "name": "API Explorer message",
-        "correlationId": "559a2343-7aa2-4912-93fe-72c47b2706ed",
-        "sequenceNumber": null,
+        "name": "CA Purview API Explorer message",
+        "correlationId": "edfb7f88-b963-4ef2-8b30-5cb90f80e01e",
+        "sequenceNumber": 0,
         "length": null,
         "isTruncated": false,
-        "createdDateTime": "2025-04-28T20:17:55Z",
-        "modifiedDateTime": "2025-04-28T20:17:55Z"
+        "createdDateTime": "2025-05-28T20:20:37Z",
+        "modifiedDateTime": "2025-05-28T20:20:37Z"
       }
     ],
     "activityMetadata": {
       "activity": "downloadText"
     },
     "deviceMetadata": {
-      "deviceType": "unmanaged",
+      "deviceType": null,
       "operatingSystemSpecifications": {
         "operatingSystemPlatform": "Windows 11",
         "operatingSystemVersion": "10.0.26100.0"
       }
     },
     "integratedAppMetadata": {
-      "name": "API Explorer",
+      "name": "CA Purview API Explorer",
       "version": "0.1"
     }
   }

@@ -2,7 +2,7 @@
 title: "Get appManagementPolicy"
 description: "Get an application management policy."
 ms.localizationpriority: medium
-author: "madansr7"
+author: "aricrowe57"
 ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
 ms.date: 08/09/2024
@@ -71,10 +71,6 @@ GET https://graph.microsoft.com/beta/policies/appManagementPolicies/{id}
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-appmanagementpolicy-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-appmanagementpolicy-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

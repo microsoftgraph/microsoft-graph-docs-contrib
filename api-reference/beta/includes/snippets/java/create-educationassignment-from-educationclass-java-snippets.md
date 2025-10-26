@@ -12,6 +12,7 @@ EducationAssignment educationAssignment = new EducationAssignment();
 OffsetDateTime dueDateTime = OffsetDateTime.parse("2025-09-16T00:00:00Z");
 educationAssignment.setDueDateTime(dueDateTime);
 educationAssignment.setDisplayName("Reading test 09.14");
+educationAssignment.setLanguageTag("es-MX");
 EducationItemBody instructions = new EducationItemBody();
 instructions.setContentType(BodyType.Text);
 instructions.setContent("Read chapter 4");
@@ -25,9 +26,6 @@ assignTo.setOdataType("#microsoft.graph.educationAssignmentClassRecipient");
 educationAssignment.setAssignTo(assignTo);
 educationAssignment.setStatus(EducationAssignmentStatus.Draft);
 educationAssignment.setAllowStudentsToAddResourcesToSubmission(true);
-HashMap<String, Object> additionalData = new HashMap<String, Object>();
-additionalData.put("languageTag", "es-MX");
-educationAssignment.setAdditionalData(additionalData);
 EducationAssignment result = graphClient.education().classes().byEducationClassId("{educationClass-id}").assignments().post(educationAssignment);
 
 

@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: windows-autopatch
 doc_type: conceptualPageType
 ms.date: 11/07/2024
+ms.topic: install-set-up-deploy
 ---
 
 # Deploy a feature update using Windows Autopatch
@@ -113,7 +114,7 @@ Content-type: application/json
             "gradualRollout": {
                 "@odata.type": "#microsoft.graph.windowsUpdates.rateDrivenRolloutSettings",
                 "durationBetweenOffers": "P7D",
-                "devicePerOffer": 100
+                "devicesPerOffer": 100
             }
         },
         "monitoring": {
@@ -158,7 +159,7 @@ Content-Type: application/json
             "gradualRollout": {
                 "@odata.type": "#microsoft.graph.windowsUpdates.rateDrivenRolloutSettings",
                 "durationBetweenOffers": "P7D",
-                "devicePerOffer": 100
+                "devicesPerOffer": 100
             }
         },
         "monitoring": {

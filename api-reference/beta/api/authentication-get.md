@@ -26,7 +26,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ### Permissions to read system-preferred MFA
 
-<!-- { "blockType": "permissions", "name": "authentication_get" } -->
+<!-- { "blockType": "permissions", "name": "authentication_get", "requestUrls": ["GET /users/{id | userPrincipalName}/authentication/signInPreferences"] } -->
 [!INCLUDE [permissions-table](../includes/permissions/authentication-get-permissions.md)]
 
 [!INCLUDE [rbac-authentication-methods-apis-read-others](../includes/rbac-for-apis/rbac-authentication-methods-apis-read-others.md)]
@@ -35,12 +35,20 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 #### Permissions acting on self
 
-<!-- { "blockType": "permissions", "name": "authentication_get_2" } -->
+<!-- { 
+  "blockType": "permissions", 
+  "name": "authentication_get_2", 
+  "requestUrls": ["GET /me/authentication/requirements"]
+ } -->
 [!INCLUDE [permissions-table](../includes/permissions/authentication-get-2-permissions.md)]
 
-#### Permissions acting on others
+#### Permissions acting on other users
 
-<!-- { "blockType": "permissions", "name": "authentication_get_3" } -->
+<!-- { 
+  "blockType": "permissions", 
+  "name": "authentication_get_3", 
+  "requestUrls": ["GET /users/{id | userPrincipalName}/authentication/requirements"]
+ } -->
 [!INCLUDE [permissions-table](../includes/permissions/authentication-get-3-permissions.md)]
 
 [!INCLUDE [rbac-authentication-methods-policy-apis-read](../includes/rbac-for-apis/rbac-authentication-methods-policy-apis-read.md)]
@@ -107,10 +115,6 @@ GET https://graph.microsoft.com/beta/users/071cc716-8147-4397-a5ba-b2105951cc0b/
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-authentication-signinpreferences-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-authentication-signinpreferences-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-authentication-signinpreferences-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -173,10 +177,6 @@ GET https://graph.microsoft.com/beta/users/071cc716-8147-4397-a5ba-b2105951cc0b/
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-authentication-strongauthenticationrequirements-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-authentication-strongauthenticationrequirements-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

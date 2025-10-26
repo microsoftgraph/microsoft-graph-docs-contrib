@@ -22,6 +22,7 @@ Read the properties and relationships of an [authenticationEventListener](../res
 - [onUserCreateStartListener resource type](../resources/onusercreatestartlistener.md) resource type
 - [onAttributeCollectionStartListener](../resources/onattributecollectionstartlistener.md) resource type
 - [onAttributeCollectionSubmitListener](../resources/onattributecollectionsubmitlistener.md) resource type
+- [onFraudProtectionLoadStartListener](../resources/onFraudProtectionLoadStartListener.md) resource type
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -76,10 +77,6 @@ GET https://graph.microsoft.com/beta/identity/customAuthenticationExtensions/6fc
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-authenticationeventlistener-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-authenticationeventlistener-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-authenticationeventlistener-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -120,29 +117,20 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/customAuthenticationExtensions/$entity",
-    "@odata.type": "#microsoft.graph.onTokenIssuanceStartCustomExtension",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/authenticationEventListeners/$entity",
+    "@odata.type": "#microsoft.graph.onTokenIssuanceStartListener",
     "id": "6fc5012e-7665-43d6-9708-4370863f4e6e",
-    "displayName": "onTokenIssuanceStartCustomExtension",
-    "description": "Fetch additional claims from custom user store",
-    "clientConfiguration": null,
-    "behaviorOnError": null,
-    "authenticationConfiguration": {
-        "@odata.type": "#microsoft.graph.azureAdTokenAuthentication",
-        "resourceId": "api://authenticationeventsAPI.contoso.com/a13d0fc1-04ab-4ede-b215-63de0174cbb4"
-    },
-    "endpointConfiguration": {
-        "@odata.type": "#microsoft.graph.httpRequestEndpoint",
-        "targetUrl": "https://authenticationeventsAPI.contoso.com"
-    },
-    "claimsForTokenConfiguration": [
-        {
-            "claimIdInApiResponse": "DateOfBirth"
-        },
-        {
-            "claimIdInApiResponse": "CustomRoles"
+    "displayName": "Token Issuance listener policy",
+    "conditions": {
+        "applications": {
+            "includeApplications@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/authenticationEventListeners('6fc5012e-7665-43d6-9708-4370863f4e6e')/microsoft.graph.onTokenIssuanceStartListener/conditions/applications/includeApplications",
+            "includeApplications": [
+                {
+                    "appId": "00001111-aaaa-2222-bbbb-3333cccc4444"
+                }
+            ]
         }
-    ]
+    }
 }
 ```
 

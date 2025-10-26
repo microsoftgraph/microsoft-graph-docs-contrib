@@ -36,7 +36,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 [!INCLUDE [rbac-pim-entra-roles-apis](../includes/rbac-for-apis/rbac-pim-entra-roles-apis.md)]
 
-### For PIM for groups
+### For PIM for Groups
 <!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
@@ -46,7 +46,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-To retrieve a rule defined for a policy for either Microsoft Entra roles or PIM for groups membership and ownership:
+To retrieve a rule defined for a policy for either Microsoft Entra roles or PIM for Groups membership and ownership:
 <!-- {
   "blockType": "ignored"
 }
@@ -91,10 +91,6 @@ GET https://graph.microsoft.com/v1.0/policies/roleManagementPolicies/DirectoryRo
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-unifiedrolemanagementpolicyrule-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-unifiedrolemanagementpolicyrule-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -153,7 +149,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: Retrieve a rule defined for a policy in PIM for groups
+### Example 2: Retrieve a rule defined for a policy in PIM for Groups
 
 #### Request
 
@@ -172,10 +168,6 @@ GET https://graph.microsoft.com/v1.0/policies/roleManagementPolicies/Group_60bba
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-unifiedrolemanagementpolicyrule-azureadgroup-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-unifiedrolemanagementpolicyrule-azureadgroup-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

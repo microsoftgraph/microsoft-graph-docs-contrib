@@ -40,7 +40,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 [!INCLUDE [rbac-pim-entra-roles-apis](../includes/rbac-for-apis/rbac-pim-entra-roles-apis.md)]
 
-### For PIM for groups
+### For PIM for Groups
 <!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
@@ -133,10 +133,6 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-unifiedrolemanagementpolicyrule-directory-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/update-unifiedrolemanagementpolicyrule-directory-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-unifiedrolemanagementpolicyrule-directory-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -195,7 +191,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: Update a rule defined for a policy in PIM for groups
+### Example 2: Update a rule defined for a policy in PIM for Groups
 
 #### Request
 
@@ -231,10 +227,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-unifiedrolemanagementpolicyrule-azureadgroup-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/update-unifiedrolemanagementpolicyrule-azureadgroup-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

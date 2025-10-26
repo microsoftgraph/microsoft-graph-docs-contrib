@@ -151,6 +151,14 @@
           ]
         },
         {
+          "name": "Protection units bulk job",
+          "resources": [
+            "driveProtectionUnitsBulkAdditionJob",
+            "mailboxProtectionUnitsBulkAdditionJob",
+            "siteProtectionUnitsBulkAdditionJob"
+          ]
+        },
+        {
           "name": "Restore artifact",
           "resources": [
             "granularMailBoxRestoreArtifact",
@@ -510,9 +518,19 @@
         "educationRubric",
         "educationRubricOutcome",
         "educationSubmission",
-        "educationSubmissionResource"
+        "educationSubmissionResource",
+        "readingAssignmentSubmission",
+        "readingCoachPassage",
+        "reflectCheckInResponse",
+        "speakerAssignmentSubmission"
       ],
       "complexTypes": [
+        "challengingWord",
+        "educationAiFeedbackAudienceEngagementSettings",
+        "educationAiFeedbackContentSettings",
+        "educationAiFeedbackCriteria",
+        "educationAiFeedbackDeliverySettings",
+        "educationAiFeedbackSettings",
         "educationAssignmentClassRecipient",
         "educationAssignmentGrade",
         "educationAssignmentGradeType",
@@ -530,6 +548,11 @@
         "educationMediaResource",
         "educationPowerPointResource",
         "educationResource",
+       "educationSpeakerCoachAudienceEngagementSettings",
+        "educationSpeakerCoachContentSettings",
+        "educationSpeakerCoachDeliverySettings",
+        "educationSpeakerCoachSettings",
+        "educationSpeakerProgressResource",
         "educationSubmissionIndividualRecipient",
         "educationSubmissionRecipient",
         "educationTeamsAppResource",
@@ -551,7 +574,13 @@
           "overview": "../../resources/engagement-api-overview.md",
           "resources": [
             "community",
-            "engagementAsyncOperation"
+            "employeeExperienceUser",
+            "engagementAsyncOperation",
+            "engagementRole",
+            "engagementRoleMember"
+          ],
+          "complexTypes": [
+            "engagementIdentitySet"
           ]
         }
       ]
@@ -611,17 +640,19 @@
         "OneDrive for Business",
         "OneDrive business",
         "OneDrive personal",
-        "SharePoint"
+        "SharePoint",
+        "SharePoint Embedded"
       ],
       "resources": [
         "drive",
         "driveItem",
+        "driveItemVersion",
         "bundle",
-        "permission",
         "fileStorageContainer",
-        "sharedDriveItem",
+        "permission",
         "recycleBin",
-        "recycleBinItem"
+        "recycleBinItem",
+        "sharedDriveItem"
       ]
     },
     {
@@ -639,7 +670,6 @@
           "shouldSort": true,
           "resources": [
             "administrativeUnit",
-            "appRoleAssignment",
             "contract",
             "directory",
             "device",
@@ -969,6 +999,7 @@
           "name": "Identity and sign-in",
           "shouldSort": true,
           "resources": [
+            "appRoleAssignment",
             "dataPolicyOperation",
             "oAuth2PermissionGrant",
             "certificateBasedAuthConfiguration"
@@ -982,6 +1013,7 @@
                 "onAttributeCollectionStartListener",
                 "onAttributeCollectionSubmitListener",
                 "onAuthenticationMethodLoadStartListener",
+                "onEmailOtpSendListener",
                 "onInteractiveAuthFlowStartListener",
                 "onTokenIssuanceStartListener",
                 "onUserCreateStartListener"
@@ -1033,6 +1065,7 @@
               "name": "Conditional access",
               "resources": [
                 "conditionalAccessPolicy",
+                "whatIfAnalysisResult",
                 "namedLocation",
                 "authenticationContextClassReference",
                 "conditionalAccessTemplate"
@@ -1063,6 +1096,7 @@
                 "customAuthenticationExtension",
                 "onAttributeCollectionStartCustomExtension",
                 "onAttributeCollectionSubmitCustomExtension",
+                "onOtpSendCustomExtension",
                 "onTokenIssuanceStartCustomExtension"
               ]
             },
@@ -1147,6 +1181,13 @@
                 "featureRolloutPolicy",
                 "identitySecurityDefaultsEnforcementPolicy"
               ]
+            },
+            {
+              "name": "Public key infrastructure",
+              "resources": [
+                "certificateBasedAuthPki",
+                "certificateAuthorityDetail"
+               ]
             },
             {
               "name": "User flows in external tenants",
@@ -1401,6 +1442,7 @@
             "microsoft.graph.partners.billing.billedUsage",
             "microsoft.graph.partners.billing.manifest",
             "microsoft.graph.partners.billing.operation",
+            "microsoft.graph.partners.billing.unbilledReconciliation",
             "microsoft.graph.partners.billing.unbilledUsage"
           ]
     },
@@ -1473,7 +1515,9 @@
             "microsoft.graph.security.incident"
           ],
           "complexTypes": [
-            "microsoft.graph.security.teamsMessageEvidence"
+            "microsoft.graph.security.securityGroupEvidence",
+            "microsoft.graph.security.teamsMessageEvidence",
+            "microsoft.graph.security.userAccount"
           ]
         },
         {
@@ -1503,6 +1547,56 @@
           ]
         },
         {
+          "name": "Data security and compliance",
+          "resources": [
+            "contentActivity",
+            "microsoft.graph.security.sensitivityLabel",
+            "tenantDataSecurityAndGovernance",
+            "userDataSecurityAndGovernance"
+           ],
+            "complexTypes": [
+              "activityMetadata",
+              "aiInteractionPlugin",
+              "autoLabeling",
+              "binaryContent",
+              "classifcationErrorBase",
+              "classificationError",
+              "classificationInnerError",
+              "computeRightsAndInheritanceResult",
+              "contentBase",
+              "customMetadataDictionary",
+              "deviceMetadata",
+              "dlpActionInfo",
+              "groupScope",
+              "integratedApplicationMetadata",
+              "labelContentRight",
+              "operatingSystemSpecifications",
+              "policyBinding",
+              "policyLocation",
+              "policyLocationApplication",
+              "policyLocationDomain",
+              "policyLocationUrl",
+              "policyScopeBase",
+              "policyTenantScope",
+              "policyUserScope",
+              "processContentBatchRequest",
+              "processContentRequest",
+              "processContentResponse",
+              "processContentResponses",
+              "processConversationMetadata",
+              "processFileMetadata",
+              "processingError",
+              "protectedApplicationMetadata",
+              "protectedContent",
+              "restrictAccessAction",
+              "restrictAccessActionBase",
+              "scopeBase",
+              "tenantScope",
+              "textContent",
+              "userScope"
+            ]
+        },
+        {
           "name": "eDiscovery",
           "overview": "../../resources/security-ediscovery-apioverview.md",
           "resources": [
@@ -1523,6 +1617,11 @@
                 "microsoft.graph.security.ediscoveryReviewSetQuery"
               ]
             }
+          ],
+          "complexTypes": [
+            "microsoft.graph.security.ediscoveryAddToReviewSetOperation",
+            "microsoft.graph.security.ediscoveryEstimateOperation",
+            "microsoft.graph.security.reportFileMetadata"
           ]
         },
         {
@@ -1787,6 +1886,9 @@
           "resources": [
             "presence"
           ],
+          "complexTypes": [
+            "outOfOfficeSettings"
+          ],
           "childNodes": [
             {
               "name": "Calls",
@@ -1796,6 +1898,16 @@
                 "contentSharingSession",
                 "participant",
                 "addLargeGalleryViewOperation"
+              ]
+            },            
+            {
+              "name": "Call events",
+              "resources": [
+                "callEvent",
+                "emergencyCallEvent"
+              ],
+              "complexTypes": [
+                "emergencyCallerInfo"
               ]
             },
             {
@@ -1813,22 +1925,12 @@
               ]
             },
             {
-              "name": "Copilot settings",
-              "resources": [
-                "copilotAdminLimitedMode"
-              ],
-              "complexTypes": [
-                "copilotAdmin",
-                "copilotAdminSetting",
-                "copilotRoot"
-              ]
-            },
-            {
               "name": "Online meetings",
               "resources": [
                 "meetingAttendanceReport",
                 "attendanceRecord",
                 "onlineMeeting",
+                "onlineMeetingEngagementConversation",
                 "callRecording",
                 "callTranscript"
               ],
@@ -2070,3 +2172,5 @@
     }
   ]
 }
+
+

@@ -68,10 +68,6 @@ GET https://graph.microsoft.com/v1.0/solutions/backupRestore/restoreSessions
 [!INCLUDE [sample-code](../includes/snippets/csharp/restoresession-list-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/restoresession-list-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/restoresession-list-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -120,6 +116,13 @@ Content-Type: application/json
       "@odata.type": "#microsoft.graph.sharepointRestoreSession",
       "id": "959ba739-70b5-43c4-8c90-b2c22014f18b",
       "status": "active",
+      "restoreJobType": "standard",
+      "restoreSessionArtifactCount": {
+        "total": 2,
+        "completed": 1,
+        "inProgress": 1,
+        "failed": 0
+      },
       "createdBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -148,6 +151,13 @@ Content-Type: application/json
       "@odata.type": "#microsoft.graph.exchangeRestoreSession",
       "id": "959ba739-70b5-43c4-8c90-b2c22014f18b",
       "status": "active",
+      "restoreJobType": "standard",
+      "restoreSessionArtifactCount": {
+        "total": 2,
+        "completed": 1,
+        "inProgress": 1,
+        "failed": 0
+      },
       "createdBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -176,6 +186,13 @@ Content-Type: application/json
       "@odata.type": "#microsoft.graph.oneDriveForBusinessRestoreSession",
       "id": "959ba739-70b5-43c4-8c90-b2c22014f18b",
       "status": "active",
+      "restoreJobType": "standard",
+      "restoreSessionArtifactCount": {
+        "total": 2,
+        "completed": 1,
+        "inProgress": 1,
+        "failed": 0
+      },
       "createdBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -204,6 +221,13 @@ Content-Type: application/json
       "@odata.type": "#microsoft.graph.sharepointRestoreSession",
       "id": "c86a1eaf-1925-46cc-8ab2-567302dd78a9",
       "status": "failed", // Newly Added
+      "restoreJobType": "standard",
+      "restoreSessionArtifactCount": {
+        "total": 2,
+        "completed": 0,
+        "inProgress": 0,
+        "failed": 2
+      },
       "createdBy": {
         "application": {
           "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",

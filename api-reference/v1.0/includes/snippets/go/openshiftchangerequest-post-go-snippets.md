@@ -24,6 +24,8 @@ configuration := &graphteams.ItemScheduleOpenShiftChangeRequestsRequestBuilderPo
 	Headers: headers,
 }
 requestBody := graphmodels.NewOpenShiftChangeRequest()
+senderUserId := "3fe0bc21-1398-4fd9-9713-52511b434c1e"
+requestBody.SetSenderUserId(&senderUserId) 
 senderMessage := "Can I take this shift?"
 requestBody.SetSenderMessage(&senderMessage) 
 openShiftId := "577b75d2-a927-48c0-a5d1-dc984894e7b8"

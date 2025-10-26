@@ -54,7 +54,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ## Examples
 
 ### Request
-
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -67,10 +67,6 @@ GET https://graph.microsoft.com/beta/me/cloudPCs
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-cloudpc-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/list-cloudpc-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -96,6 +92,7 @@ GET https://graph.microsoft.com/beta/me/cloudPCs
 ---
 
 ### Response
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,

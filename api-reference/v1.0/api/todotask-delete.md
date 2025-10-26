@@ -1,6 +1,6 @@
 ---
 title: "Delete todoTask"
-description: "Deletes a todoTask object."
+description: "Delete a todoTask object."
 author: "avijityadav"
 ms.localizationpriority: medium
 ms.subservice: "outlook"
@@ -11,7 +11,7 @@ ms.date: 04/04/2024
 # Delete todoTask
 Namespace: microsoft.graph
 
-Deletes a [todoTask](../resources/todotask.md) object.
+Delete a [todoTask](../resources/todotask.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -62,10 +62,6 @@ DELETE https://graph.microsoft.com/v1.0/me/todo/lists/AAMkADA1MTHgwAAA=/tasks/72
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-todotask-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/delete-todotask-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

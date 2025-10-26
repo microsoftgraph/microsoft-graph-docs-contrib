@@ -4,9 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.Users
+Import-Module Microsoft.Graph.Users
 
-Get-MgBetaUser -Filter "otherMails/any(x:endswith(x,'.edu'))" -CountVariable CountVar  -ConsistencyLevel eventual 
+Get-MgUser -Filter "otherMails/any(x:endswith(x,'.edu'))" -CountVariable CountVar  -ConsistencyLevel eventual 
 
 
 ```

@@ -23,6 +23,7 @@ Update the properties of an [authenticationEventListener](../resources/authentic
 - [onAttributeCollectionStartListener](../resources/onattributecollectionstartlistener.md) resource type
 - [onAttributeCollectionSubmitListener](../resources/onattributecollectionsubmitlistener.md) resource type
 - [onPhoneMethodLoadStartListener](../resources/onphonemethodloadstartlistener.md) resource type
+- [onFraudProtectionLoadStartListener](../resources/onFraudProtectionLoadStartListener.md) resource type
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -59,6 +60,7 @@ You must specify the **@odata.type** property and the value of the [authenticati
 |:---|:---|:---|
 |authenticationEventsFlowId|String|The identifier of the authentication events flow.  Optional.|
 |conditions|[authenticationConditions](../resources/authenticationconditions.md)|The conditions on which this authenticationEventListener should trigger. Optional.|
+|displayName|String|The display name of the authentication event listener policy. Optional.|
 |handler|[onAttributeCollectionHandler](../resources/ontokenissuancestarthandler.md)|The handler to invoke when conditions are met. Can be updated for the **onAttributeCollectionListener** listener type.|
 |handler|[onAuthenticationMethodLoadStartHandler](../resources/ontokenissuancestarthandler.md)|The handler to invoke when conditions are met. Can be updated for the **onAuthenticationMethodLoadStartListener** listener type.|
 |handler|[onInteractiveAuthFlowStartHandler](../resources/ontokenissuancestarthandler.md)|The handler to invoke when conditions are met. Can be updated for the **onInteractiveAuthFlowStartListener** listener type.|
@@ -67,6 +69,7 @@ You must specify the **@odata.type** property and the value of the [authenticati
 |handler|[onAttributeCollectionStartHandler](../resources/onattributecollectionstarthandler.md)|The handler to invoke when conditions are met. Can be updated for the **onAttributeCollectionStartListener** listener type.|
 |handler|[onAttributeCollectionSubmitHandler](../resources/onattributecollectionsubmithandler.md)|The handler to invoke when conditions are met. Can be updated for the **onAttributeCollectionSubmitListener** listener type.|
 |handler|[onPhoneMethodLoadStartHandler](../resources/onphonemethodloadstarthandler.md) | The handler to invoke when conditions are met. Can be updated for the **onPhoneMethodStartListener** type. |
+|handler|[onFraudProtectionLoadStartHandler](../resources/onFraudProtectionLoadStartHandler.md) | The handler to invoke when conditions are met. Can be updated for the **onFraudProtectionLoadStartListener** type. |
 |priority|Int32|The priority of this handler. Between 0 (lower priority) and 1000 (higher priority). Required.|
 
 ## Response
@@ -102,10 +105,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-authenticationeventlistener-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/update-authenticationeventlistener-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -168,10 +167,6 @@ Content-Type: application/json
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
 [!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

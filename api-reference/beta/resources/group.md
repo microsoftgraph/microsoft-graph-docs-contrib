@@ -24,7 +24,7 @@ For performance reasons, the [create](../api/group-post-groups.md), [get](../api
 This resource supports:
 
 - Adding your data to custom properties as [extensions](/graph/extensibility-overview).
-- Subscribing to [change notifications](/graph/webhooks).
+- Subscribing to [change notifications](/graph/change-notifications-overview).
 - Using [delta query](/graph/delta-query-overview) to track incremental additions, deletions, and updates, by providing a [delta](../api/group-delta.md) function.
 
 > **Microsoft Teams and Microsoft 365 groups support group collaboration**. You can use most of the Microsoft 365 groups API with Microsoft Teams. To create a [team](team.md), first [create group](../api/group-post-groups.md) and then [add a team to it](../api/team-put-teams.md). For details, see the [Microsoft Teams overview](teams-api-overview.md).
@@ -37,9 +37,9 @@ This resource supports:
 | [Create](../api/group-post-groups.md) | [group](group.md) | Create a new group as specified. It can be a Microsoft 365 group, dynamic group, security group, or team. |
 | [Get](../api/group-get.md) | [group](group.md) | Read properties and relationships of group object. |
 | [Update](../api/group-update.md) | None | Update the properties of a group object. |
+| [Upsert](../api/group-upsert.md) | [group](group.md) | Create a new group if it doesn't exist, or update the properties of an existing group. |
 | [Delete](../api/group-delete.md) | None | Delete group object. |
 | [Get delta](../api/group-delta.md) | [group](group.md) collection | Get incremental changes for groups. |
-| [Upsert](../api/group-upsert.md) | [group](group.md) | Create a new group if it doesn't exist, or update the properties of an existing group. |
 | **Group management** |  |  |
 | [List members](../api/group-list-members.md) | [directoryObject](directoryobject.md) collection | Get the users and groups that are direct members of this group from the **members** navigation property. |
 | [Add member](../api/group-post-members.md) | [directoryObject](directoryobject.md) | Add a member to this group by posting to the **members** navigation property (supported for security groups and Microsoft 365 groups only). |
@@ -57,6 +57,8 @@ This resource supports:
 | [Evaluate dynamic membership](../api/group-evaluatedynamicmembership.md) | [evaluateDynamicMembershipResult](evaluatedynamicmembershipresult.md) | Evaluate whether a user or device is or would be a member of a dynamic group. |
 | [Renew](../api/group-renew.md) | Boolean | Renews a group's expiration. When a group is renewed, the group expiration is extended by the number of days defined in the policy. |
 | [Validate properties](../api/group-validateproperties.md) | JSON | Validate a Microsoft 365 group's display name or mail nickname that complies with naming policies. |
+|[Get source of authority (SOA)](../api/onpremisessyncbehavior-get.md)|[onPremisesSyncBehavior](../resources/onpremisessyncbehavior.md)|Check whether the group object's source of authority (SOA) is the cloud or on-premises Active Directory.|
+|[Update source of authority (SOA)](../api/onpremisessyncbehavior-update.md)|[onPremisesSyncBehavior](../resources/onpremisessyncbehavior.md)|Update the group object's source of authority (SOA) to the cloud or on-premises Active Directory.|
 | **App role assignments** |  |  |
 | [List](../api/group-list-approleassignments.md) | [appRoleAssignment](approleassignment.md) collection | Get the apps and app roles to which this group has been assigned. |
 | [Add](../api/group-post-approleassignments.md) | [appRoleAssignment](approleassignment.md) | Assign an app role to this group. |
@@ -168,7 +170,7 @@ name. |
 | isArchived | Boolean | When a group is associated with a team, this property determines whether the team is in read-only mode. <br/>To read this property, use the `/group/{groupId}/team` endpoint or the [Get team](../api/team-get.md) API. To update this property, use the [archiveTeam](../api/team-archive.md) and [unarchiveTeam](../api/team-unarchive.md) APIs. |
 | isAssignableToRole | Boolean | Indicates whether this group can be assigned to a Microsoft Entra role. Optional. <br><br>This property can only be set while creating the group and is immutable. If set to `true`, the **securityEnabled** property must also be set to `true`,  **visibility** must be `Hidden`, and the group cannot be a dynamic group (that is, **groupTypes** can't contain `DynamicMembership`). <br/><br/>Only callers with at least the Privileged Role Administrator role can set this property. The caller must also be assigned the _RoleManagement.ReadWrite.Directory_ permission to set this property or update the membership of such groups. For more, see [Using a group to manage Microsoft Entra role assignments](https://go.microsoft.com/fwlink/?linkid=2103037)<br><br>Using this feature requires a Microsoft Entra ID P1 license. Returned by default. Supports `$filter` (`eq`, `ne`, `not`). |
 | isFavorite | Boolean | Indicates whether the user marked the group as favorite. |
-| isManagementRestricted | Boolean | Indicates whether the group is a member of a restricted management administrative unit. The default value is `false`. Read-only. <br/><br/> To manage a group member of a restricted management administrative unit, the administrator or calling app must be assigned a Microsoft Entra role at the scope of the restricted management administrative unit. |
+| isManagementRestricted | Boolean | Indicates whether the group is a member of a restricted management administrative unit. If not set, the default value is `null` and the default behavior is false. Read-only. <br/><br/> To manage a group member of a restricted management administrative unit, the administrator or calling app must be assigned a Microsoft Entra role at the scope of the restricted management administrative unit. |
 | infoCatalogs | String collection | Identifies the info segments assigned to the group. Returned by default. Supports `$filter` (`eq`, `not`, `ge`, `le`, `startsWith`). |
 | isSubscribedByMail | Boolean | Indicates whether the signed-in user is subscribed to receive email conversations. The default value is `true`. <br><br>Returned only on `$select`. Supported only on the Get group API (`GET /groups/{ID}`). |
 | licenseProcessingState | String | Indicates the status of the group license assignment to all group members. Possible values: `QueuedForProcessing`, `ProcessingInProgress`, and `ProcessingComplete`. <br><br>Returned only on `$select`. Read-only. |
@@ -230,6 +232,7 @@ name. |
 | members | [directoryObject](directoryobject.md) collection | Direct group members, who can be users, devices, other groups, or service principals. Supports the [List members](../api/group-list-members.md), [Add member](../api/group-post-members.md), and [Remove member](../api/group-delete-members.md) operations. Nullable. <br/>Supports `$expand` including nested `$select`. For example, `/groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=members($select=id,userPrincipalName,displayName)`. |
 | membersWithLicenseErrors | [user](user.md) collection | A list of group members with license errors from this group-based license assignment. Read-only. |
 | onenote | [onenote](onenote.md) | Read-only. |
+| onPremisesSyncBehavior  | [onPremisesSyncBehavior](../resources/onpremisessyncbehavior.md)  | Indicates the state of synchronization for a group between the cloud and on-premises Active Directory. Supports `$filter` only with advanced query capabilities. For example, `$filter=onPremisesSyncBehavior/isCloudManaged eq true&$count=true`.|
 | owners | [directoryObject](directoryobject.md) collection | The owners of the group who can be users or service principals. Limited to 100 owners. Nullable. <li>If this property isn't specified when creating a Microsoft 365 group the calling user (admin or non-admin) is automatically assigned as the group owner. <li>A non-admin user can't explicitly add themselves to this collection when they're creating the group. For more information, see the related [known issue](https://developer.microsoft.com/en-us/graph/known-issues/?search=26419). <li>For security groups, the admin user isn't automatically added to this collection. For more information, see the related [known issue](https://developer.microsoft.com/en-us/graph/known-issues/?search=26419).<br/><br/> Supports `$filter` (`/$count eq 0`, `/$count ne 0`, `/$count eq 1`, `/$count ne 1`); Supports `$expand` including nested `$select`. For example, `/groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=owners($select=id,userPrincipalName,displayName)`. |
 | permissionGrants | [resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md) | The permissions granted for a group to a specific application. Supports `$expand`. |
 | photo | [profilePhoto](profilephoto.md) | The group's profile photo. |
@@ -293,8 +296,8 @@ The following JSON representation shows the resource type.
   "accessType": "String",
   "assignedLabels": [{ "@odata.type": "microsoft.graph.assignedLabel" }],
   "assignedLicenses": [{ "@odata.type": "microsoft.graph.assignedLicense" }],
-  "allowExternalSenders": false,
-  "autoSubscribeNewMembers": true,
+  "allowExternalSenders": "Boolean",
+  "autoSubscribeNewMembers": "Boolean",
   "cloudLicensing": { "@odata.type": "microsoft.graph.cloudLicensing.groupCloudLicensing" },
   "createdByAppId": "String",
   "createdDateTime": "String (timestamp)",
@@ -303,16 +306,17 @@ The following JSON representation shows the resource type.
   "displayName": "String",
   "expirationDateTime": "String (timestamp)",
   "groupTypes": ["String"],
-  "hideFromAddressLists": false,
-  "hideFromOutlookClients": false,
+  "hideFromAddressLists": "Boolean",
+  "hideFromOutlookClients": "Boolean",
   "id": "String (identifier)",
-  "isFavorite": true,
-  "isArchived": false,
-  "isAssignableToRole": false,
-  "isSubscribedByMail": true,
+  "isFavorite": "Boolean",
+  "isArchived": "Boolean",
+  "isAssignableToRole": "Boolean",
+  "isManagementRestricted": "Boolean",
+  "isSubscribedByMail": "Boolean",
   "licenseProcessingState": "String",
   "mail": "String",
-  "mailEnabled": true,
+  "mailEnabled": "Boolean",
   "mailNickname": "String",
   "onPremisesDomainName": "String",
   "onPremisesLastSyncDateTime": "String (timestamp)",
@@ -322,21 +326,21 @@ The following JSON representation shows the resource type.
   ],
   "onPremisesSamAccountName": "String",
   "onPremisesSecurityIdentifier": "String",
-  "onPremisesSyncEnabled": true,
+  "onPremisesSyncEnabled": "Boolean",
   "preferredDataLocation": "String",
   "proxyAddresses": ["String"],
   "renewedDateTime": "String (timestamp)",
   "resourceBehaviorOptions": ["String"],
   "resourceProvisioningOptions": ["String"],
-  "securityEnabled": true,
+  "securityEnabled": "Boolean",
   "securityIdentifier": "String",
   "serviceProvisioningErrors": [
     { "@odata.type": "microsoft.graph.serviceProvisioningXmlError" }
   ],
   "uniqueName": "String",
-  "unseenConversationsCount": 1024,
-  "unseenCount": 1024,
-  "unseenMessagesCount": 1024,
+  "unseenConversationsCount": "Int32",
+  "unseenCount": "Int32",
+  "unseenMessagesCount": "Int32",
   "visibility": "String",
   "acceptedSenders": [{ "@odata.type": "microsoft.graph.directoryObject" }],
   "calendar": { "@odata.type": "microsoft.graph.calendar" },
@@ -355,7 +359,7 @@ The following JSON representation shows the resource type.
   "sites": [{ "@odata.type": "microsoft.graph.site" }],
   "threads": [{ "@odata.type": "microsoft.graph.conversationThread" }],
   "classification": "String",
-  "hasMembersWithLicenseErrors": true,
+  "hasMembersWithLicenseErrors": "Boolean",
   "membershipRule": "String",
   "membershipRuleProcessingState": "String",
   "membershipRuleProcessingStatus": {

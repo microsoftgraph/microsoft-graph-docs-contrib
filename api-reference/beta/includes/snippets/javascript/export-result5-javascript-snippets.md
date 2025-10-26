@@ -14,7 +14,7 @@ const exportResult = {
   displayName: 'Export 5',
   exportCriteria: 'partiallyIndexed',
   exportLocation: 'responsiveLocations',
-  additionalOptions: 'cloudAttachments',
+  additionalOptions: 'splitSource, includeFolderAndPath, condensePaths, friendlyName',
   exportFormat: 'eml',
   cloudAttachmentVersion: 'all',
   documentVersion: 'recent100'

@@ -18,11 +18,7 @@ Permanently delete [recycleBinItem](../resources/recyclebinitem.md) objects from
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "filestoragecontainer-delete-recyclebinitem-permissions"
-}
--->
+<!-- { "blockType": "permissions", "name": "filestoragecontainer_delete_recyclebinitem" } -->
 [!INCLUDE [permissions-table](../includes/permissions/filestoragecontainer-delete-recyclebinitem-permissions.md)]
 
 [!INCLUDE [app-permissions](../includes/sharepoint-embedded-app-permissions.md)]

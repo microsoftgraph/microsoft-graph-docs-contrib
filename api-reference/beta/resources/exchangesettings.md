@@ -19,13 +19,11 @@ Represents the Exchange settings for mailbox discovery.
 ## Methods
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[List](../api/usersettings-list-exchange.md)|[exchangeSettings](../resources/exchangesettings.md) collection|Get a list of Exchange settings, including mailboxes that belong to a user.|
+|[List](../api/usersettings-list-exchange.md)|[exchangeSettings](../resources/exchangesettings.md)|Get a list of Exchange mailboxes that belong to a user.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The unique identifier of the **exchangeSettings** of the user.|
-|inPlaceArchiveMailboxId|String|The unique identifier for the user's in-place archive mailbox.|
 |primaryMailboxId|String|The unique identifier for the user's primary mailbox.|
 
 ## JSON representation
@@ -40,8 +38,6 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.exchangeSettings",
-  "id": "String (identifier)",
-  "inPlaceArchiveMailboxId": "String",
   "primaryMailboxId": "String"
 }
 ```

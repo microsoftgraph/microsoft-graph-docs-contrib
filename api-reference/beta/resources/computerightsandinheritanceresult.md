@@ -1,5 +1,5 @@
 ---
-title: "computeRightsAndInheritanceResult resource type (preview)"
+title: "computeRightsAndInheritanceResult resource type"
 description: "Represents the result entity for a compute rights and inheritance operation."
 author: "ArunGedela"
 ms.date: 04/21/2025

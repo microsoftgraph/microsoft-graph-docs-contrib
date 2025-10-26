@@ -42,6 +42,7 @@ Contains information about a meeting, including the URL used to join a meeting, 
 | allowAttendeeToEnableCamera     | Boolean                       | Indicates whether attendees can turn on their camera. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md).                         |
 | allowAttendeeToEnableMic     | Boolean                       | Indicates whether attendees can turn on their microphone. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md).                         |
 | allowBreakoutRooms | Boolean | Indicates whether breakout rooms are enabled for the meeting. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
+| allowCopyingAndSharingMeetingContent | Boolean | Indicates whether the ability to copy and share meeting content is enabled for the meeting. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
 | allowedLobbyAdmitters | [allowedLobbyAdmitterRoles](../resources/onlinemeetingbase.md#allowedlobbyadmitterroles-values) | Specifies the users who can admit from the lobby. Possible values are: `organizerAndCoOrganizersAndPresenters`, `organizerAndCoOrganizers`, `unknownFutureValue`. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
 | allowedPresenters     | [onlineMeetingPresenters](#onlinemeetingpresenters-values)                       | Specifies who can be a presenter in a meeting. Possible values are listed in the following table. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md).                         |
 | allowLiveShare | [meetingLiveShareOptions](../resources/onlinemeetingbase.md#meetingliveshareoptions-values) | Indicates whether live share is enabled for the meeting. Possible values are: `enabled`, `disabled`, `unknownFutureValue`. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
@@ -58,10 +59,12 @@ Contains information about a meeting, including the URL used to join a meeting, 
 | chatRestrictions      | [chatRestrictions](../resources/chatrestrictions.md) | Specifies the configuration settings for meeting chat restrictions. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
 | creationDateTime      | DateTime                                      | The meeting creation time in UTC. Read-only.                                                                               |
 | endDateTime           | DateTime                                      | The meeting end time in UTC. Required when you create an online meeting.                    
+| externalId            | String | The external ID that is a custom identifier. Optional. |
 | joinWebUrl            | String                                        | The join URL of the online meeting. The format of the URL may change; therefore, users shouldn't rely on any information extracted from parsing the URL. Read-only. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
 | participants          | [meetingParticipants](meetingparticipants.md) | The participants associated with the online meeting, including the organizer and the attendees.                       |
 | subject               | String                                        | The subject of the online meeting. Required when you create an online meeting.                                                                                        |
 | id                    | String                                        | The default ID associated with the online meeting. Read-only. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md).                                                             |
+| isEndToEndEncryptionEnabled | Boolean | Indicates whether end-to-end encryption (E2EE) is enabled for the online meeting. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
 | isEntryExitAnnounced  | Boolean                                       | Indicates whether to announce when callers join or leave. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md).                                                                    |
 | joinInformation       | [itemBody](itembody.md)                       | The join information in the language and locale variant specified in the `Accept-Language` request HTTP header. Read-only. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
 | joinMeetingIdSettings | [joinMeetingIdSettings](joinmeetingidsettings.md) | Specifies the **joinMeetingId**, the meeting passcode, and the requirement for the passcode. Once an **onlineMeeting** is created, the **joinMeetingIdSettings** can't be modified. To make any changes to this property, the meeting needs to be canceled and a new one needs to be created. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md).                 |
@@ -132,8 +135,7 @@ The following JSON representation shows the resource type.
   "allowAttendeeToEnableCamera": "Boolean",
   "allowAttendeeToEnableMic": "Boolean",
   "allowBreakoutRooms": "Boolean",
-  "allowMeetingChat": {"@odata.type": "microsoft.graph.meetingChatMode"},
-  "allowTeamworkReactions": "Boolean",
+  "allowCopyingAndSharingMeetingContent": "Boolean",
   "allowedLobbyAdmitters": "String",
   "allowedPresenters": "String",
   "allowLiveShare": "String",
@@ -151,7 +153,9 @@ The following JSON representation shows the resource type.
   "chatRestrictions": {"@odata.type": "microsoft.graph.chatRestrictions"},
   "creationDateTime": "String (timestamp)",
   "endDateTime": "String (timestamp)",
+  "externalId": "String",
   "id": "String (identifier)",
+  "isEndToEndEncryptionEnabled": "Boolean",
   "isBroadcast": "Boolean",
   "isEntryExitAnnounced": "Boolean",
   "joinInformation": {"@odata.type": "microsoft.graph.itemBody"},
