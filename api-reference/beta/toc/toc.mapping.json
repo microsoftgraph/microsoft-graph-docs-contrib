@@ -3306,8 +3306,7 @@
         "todoTask",
         "taskFileAttachment",
         "checklistItem",
-        "linkedResource",
-        "singleValueExtendedProperty"
+        "linkedResource"
       ],
       "childNodes": [
         {
