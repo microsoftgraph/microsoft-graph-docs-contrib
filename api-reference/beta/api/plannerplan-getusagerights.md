@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the usage rights for a specific [plan](../resources/plan.md) based on its sensitivity label assignment and the requesting user's permissions. This method returns information about whether the plan has a sensitivity label applied and which specific actions (view, edit, print, copy, and export) the user is allowed to perform on the plan content, based on Rights Management Services (RMS) evaluation.
+Get the usage rights for a specific [plan](../resources/plannerplan.md) based on its sensitivity label assignment and the requesting user's permissions. This method returns information about whether the plan has a sensitivity label applied and which specific actions (view, edit, print, copy, and export) the user is allowed to perform on the plan content, based on Rights Management Services (RMS) evaluation.
 
 ## Permissions
 
