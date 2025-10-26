@@ -146,6 +146,10 @@ Added the following new endpoints as supported request URLs for the [driveItem: 
 
 [Create](/graph/api/site-post-sites?view=graph-rest-beta&preserve-view=true) a SharePoint site and [monitor](/graph/api/site-getoperationstatus?view=graph-rest-beta&preserve-view=true) its creation status.
 
+### Tasks and plans
+
+[Get](/graph/api/plannerplan-getusagerights?view=graph-rest-beta&preserve-view=true) the usage rights for a specific [plan](/graph/api/resources/plannerplan?view=graph-rest-beta&preserve-view=true) based on its sensitivity label assignment and the requesting user's permissions. 
+
 ## September 2025: New and generally available
 
 ### Applications
