@@ -7,7 +7,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "contentSensitivityLabelAssignment",
           "ChangeType": "Addition",
-          "Description": "Added the [contentSensitivityLabelAssignment](https://learn.microsoft.com/en-us/graph/api/resources/contentSensitivityLabelAssignment?view=graph-rest-beta) resource.",
+          "Description": "Added the [contentSensitivityLabelAssignment](https://learn.microsoft.com/en-us/graph/api/resources/contentSensitivityLabelAssignment?view=graph-rest-beta) resource type.",
           "Target": "contentSensitivityLabelAssignment"
         },
         {
@@ -15,7 +15,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "planUsageRight",
           "ChangeType": "Addition",
-          "Description": "Added the [planUsageRight](https://learn.microsoft.com/en-us/graph/api/resources/planUsageRight?view=graph-rest-beta) resource.",
+          "Description": "Added the [planUsageRight](https://learn.microsoft.com/en-us/graph/api/resources/planUsageRight?view=graph-rest-beta) resource type.",
           "Target": "planUsageRight"
         },
         {
@@ -23,7 +23,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "usageRightsInfo",
           "ChangeType": "Addition",
-          "Description": "Added the [usageRightsInfo](https://learn.microsoft.com/en-us/graph/api/resources/usageRightsInfo?view=graph-rest-beta) resource.",
+          "Description": "Added the [usageRightsInfo](https://learn.microsoft.com/en-us/graph/api/resources/usageRightsInfo?view=graph-rest-beta) resource type.",
           "Target": "usageRightsInfo"
         },
         {
