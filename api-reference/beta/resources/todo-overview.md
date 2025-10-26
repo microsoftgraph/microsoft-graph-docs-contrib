@@ -48,23 +48,14 @@ GET /me/todo/lists/{todoTaskListId}/tasks/{todoTaskId}/checklistItems/{checklist
 
 ## Linked resource
 
-A [linkedResource](linkedresource.md) represents any item from a partner application related to the task, e.g. an item like email from where a task was created. You can use it to store information and the link back to the related item in your app. To get a linked resource from a task, make the following HTTP request:
+A [linkedResource](linkedresource.md) represents any item from a partner application related to the task, for example, an item like email from where a task was created. You can use it to store information and the link back to the related item in your app. To get a linked resource from a task, make the following HTTP request:
 ``` http
 GET /me/todo/lists/{todoTaskListId}/tasks/{todoTaskId}/linkedresources/{linkedResourceId}
 ```
 
-## SingleValueExtendedProperty
+## Single-value extended property
 
-A [singleValueExtendedProperty](linkedresource.md) represents a custom data field that can be created on a task entity. To get Single Value Extended Properties: (See [get singleValueExtendedProperty](../api/singlevaluelegacyextendedproperty-get.md) for more details)
-
-``` http
-GET /me/todo/lists/{todoTaskListId}/tasks/{todoTaskId}?$expand=singleValueExtendedProperties($filter=id eq '{propertyId}')
-```
-
-``` http
-GET /me/todo/lists/{todoTaskListId}/tasks?$expand=singleValueExtendedProperties($filter=id eq '{propertyId}')
-```
-
+A [singleValueExtendedProperty](singlevalueextendedproperty.md) represents a custom data field that can be created on a [todoTask](../resources/todotask.md) entity. To get single-value extended properties, see [Get singleValueLegacyExtendedProperty](../api/singlevaluelegacyextendedproperty-get.md).
 
 ## Track changes using delta query
 
