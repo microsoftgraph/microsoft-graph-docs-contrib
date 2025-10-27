@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**Informs policy evaluation which passkey profiles a user is in scope of.**
+Informs policy evaluation which passkey profiles a user is in scope of.
 
 
 ## Properties
