@@ -62,7 +62,6 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Request
 
-
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -79,7 +78,7 @@ Content-Type: application/json
     "cloudProfileIds":["7e8c3054-bda1-4e37-81c5-7d1b080a8849", "568c3054-bda1-4e37-81c5-7d1b080a8849"],
 }
 ```
----
+
 
 ### Response
 
