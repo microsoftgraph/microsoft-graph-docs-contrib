@@ -25,7 +25,7 @@ None.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id        |String | The unique identifier for an verifiedIdProfile. Read-only. Inherited from [verifiedIdProfile](../resources/verifiedidprofile.md). |
+|id        |String | The unique identifier for an verifiedIdProfile. Read-only. Inherited from [entity](../resources/entity.md). |
 
 ## Relationships
 |Relationship|Type|Description|
