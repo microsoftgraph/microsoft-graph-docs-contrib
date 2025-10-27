@@ -12,8 +12,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.identityGovernance
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Represents activating a user scope for a [run](../resources/identitygovernance-run.md) of a workflow.
 
 Inherits from [microsoft.graph.identityGovernance.activationScope](../resources/identitygovernance-activationscope.md).
