@@ -24,7 +24,7 @@ Describes the cloud profile details for specific Cloud PC user settings persiste
 |userPrincipalName|String| The user principal name of the owner of the cloud profile. For example, the sample user principal name is `connie@contoso.com`. Required. Read-only.  |
 |profileSizeInGB|Int32| Indicates the maximum allowed size in gigabytes of the cloud profile for a specific user. For example, 10 GB of allocated size returns `10` as a response. Required. Read-only.  |
 |lastProfileAttachedDateTime|DateTimeOffset| The last time the user settings persistence profile attaches to the Cloud PC. For example, midnight UTC on Jan 1, 2025 looks like this: '2025-01-01T00:00:00Z'. Read-only. |
-|status|[cloudPCUserSettingsPersistenceProfileStatus](#cloudPCUserSettingsPersistenceProfileStatus-values)| The status of this cloud profile. Possible values: `connected`, `notConnected`, `deleting`. Default: `notConnected`. Required. Read-only.  |
+|status|[cloudPCUserSettingsPersistenceProfileStatus](#cloudpcusersettingspersistenceprofilestatus-values)| The status of this cloud profile. Possible values: `connected`, `notConnected`, `deleting`. Default: `notConnected`. Required. Read-only.  |
 
 ### cloudPCUserSettingsPersistenceProfileStatus values
 
