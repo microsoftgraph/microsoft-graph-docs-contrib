@@ -1327,7 +1327,7 @@
     {
       "ChangeList": [
         {
-          "Id": "ac36227e-16bb-4ab3-8776-3a5e5f03d9b9",
+          "Id": "0c110ad8-0d59-4879-afde-cfcde225ffac",
           "ApiChange": "Resource",
           "ChangedApiName": "fraudProtectionConfiguration",
           "ChangeType": "Addition",
@@ -1335,7 +1335,7 @@
           "Target": "fraudProtectionConfiguration"
         },
         {
-          "Id": "ac36227e-16bb-4ab3-8776-3a5e5f03d9b9",
+          "Id": "0c110ad8-0d59-4879-afde-cfcde225ffac",
           "ApiChange": "Resource",
           "ChangedApiName": "fraudProtectionProviderConfiguration",
           "ChangeType": "Addition",
@@ -1343,7 +1343,7 @@
           "Target": "fraudProtectionProviderConfiguration"
         },
         {
-          "Id": "ac36227e-16bb-4ab3-8776-3a5e5f03d9b9",
+          "Id": "0c110ad8-0d59-4879-afde-cfcde225ffac",
           "ApiChange": "Resource",
           "ChangedApiName": "onFraudProtectionLoadStartExternalUsersAuthHandler",
           "ChangeType": "Addition",
@@ -1351,7 +1351,7 @@
           "Target": "onFraudProtectionLoadStartExternalUsersAuthHandler"
         },
         {
-          "Id": "ac36227e-16bb-4ab3-8776-3a5e5f03d9b9",
+          "Id": "0c110ad8-0d59-4879-afde-cfcde225ffac",
           "ApiChange": "Resource",
           "ChangedApiName": "onFraudProtectionLoadStartHandler",
           "ChangeType": "Addition",
@@ -1359,7 +1359,7 @@
           "Target": "onFraudProtectionLoadStartHandler"
         },
         {
-          "Id": "ac36227e-16bb-4ab3-8776-3a5e5f03d9b9",
+          "Id": "0c110ad8-0d59-4879-afde-cfcde225ffac",
           "ApiChange": "Resource",
           "ChangedApiName": "arkoseFraudProtectionProvider",
           "ChangeType": "Addition",
@@ -1367,7 +1367,7 @@
           "Target": "arkoseFraudProtectionProvider"
         },
         {
-          "Id": "ac36227e-16bb-4ab3-8776-3a5e5f03d9b9",
+          "Id": "0c110ad8-0d59-4879-afde-cfcde225ffac",
           "ApiChange": "Property",
           "ChangedApiName": "displayName",
           "ChangeType": "Addition",
@@ -1375,7 +1375,7 @@
           "Target": "authenticationEventListener"
         },
         {
-          "Id": "ac36227e-16bb-4ab3-8776-3a5e5f03d9b9",
+          "Id": "0c110ad8-0d59-4879-afde-cfcde225ffac",
           "ApiChange": "Resource",
           "ChangedApiName": "fraudProtectionProvider",
           "ChangeType": "Addition",
@@ -1383,15 +1383,15 @@
           "Target": "fraudProtectionProvider"
         },
         {
-          "Id": "ac36227e-16bb-4ab3-8776-3a5e5f03d9b9",
-          "ApiChange": "Relationship",
-          "ChangedApiName": "riskPrevention",
+          "Id": "0c110ad8-0d59-4879-afde-cfcde225ffac",
+          "ApiChange": "Resource",
+          "ChangedApiName": "humanSecurityFraudProtectionProvider",
           "ChangeType": "Addition",
-          "Description": "Added the **riskPrevention** relationship to the [identityContainer](https://learn.microsoft.com/en-us/graph/api/resources/identityContainer?view=graph-rest-1.0) resource.",
-          "Target": "identityContainer"
+          "Description": "Added the [humanSecurityFraudProtectionProvider](https://learn.microsoft.com/en-us/graph/api/resources/humanSecurityFraudProtectionProvider?view=graph-rest-1.0) resource.",
+          "Target": "humanSecurityFraudProtectionProvider"
         },
         {
-          "Id": "ac36227e-16bb-4ab3-8776-3a5e5f03d9b9",
+          "Id": "0c110ad8-0d59-4879-afde-cfcde225ffac",
           "ApiChange": "Resource",
           "ChangedApiName": "onFraudProtectionLoadStartListener",
           "ChangeType": "Addition",
@@ -1399,29 +1399,20 @@
           "Target": "onFraudProtectionLoadStartListener"
         },
         {
-          "Id": "ac36227e-16bb-4ab3-8776-3a5e5f03d9b9",
-          "ApiChange": "Resource",
-          "ChangedApiName": "riskPreventionContainer",
+          "Id": "0c110ad8-0d59-4879-afde-cfcde225ffac",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "fraudProtectionProviders",
           "ChangeType": "Addition",
-          "Description": "Added the [riskPreventionContainer](https://learn.microsoft.com/en-us/graph/api/resources/riskPreventionContainer?view=graph-rest-1.0) resource.",
+          "Description": "Added the **fraudProtectionProviders** relationship to the [riskPreventionContainer](https://learn.microsoft.com/en-us/graph/api/resources/riskPreventionContainer?view=graph-rest-1.0) resource.",
           "Target": "riskPreventionContainer"
-        },
-        {
-          "Id": "ac36227e-16bb-4ab3-8776-3a5e5f03d9b9",
-          "ApiChange": "Resource",
-          "ChangedApiName": "humanSecurityFraudProtectionProvider",
-          "ChangeType": "Addition",
-          "Description": "Added the [humanSecurityFraudProtectionProvider](https://learn.microsoft.com/en-us/graph/api/resources/humanSecurityFraudProtectionProvider?view=graph-rest-1.0) resource.",
-          "Target": "humanSecurityFraudProtectionProvider"
         }
       ],
-      "Id": "ac36227e-16bb-4ab3-8776-3a5e5f03d9b9",
+      "Id": "0c110ad8-0d59-4879-afde-cfcde225ffac",
       "Cloud": "Prod",
-      "Version": "1.0",
-      "CreatedDateTime": "2025-10-10T21:32:55.1366384Z",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-10-27T17:23:49.4323075Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Identity and sign-in"
     }
   ]
 }
-
