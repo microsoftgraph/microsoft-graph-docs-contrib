@@ -43,7 +43,7 @@ PATCH /planner/plans/{plan-id}
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|contentSensitivityLabelAssignment|[contentSensitivityLabelAssignment](contentsensitivitylabelassignment.md)|The sensitivity label assignment for the plan. Used to classify and protect the plan content based on organizational policies. This property is `null` if no sensitivity label is assigned. Optional.|
+|contentSensitivityLabelAssignment|[contentSensitivityLabelAssignment](../resources/contentsensitivitylabelassignment.md)|The sensitivity label assignment for the plan. Used to classify and protect the plan content based on organizational policies. This property is `null` if no sensitivity label is assigned. Optional.|
 |title|String|Title of the plan.|
 
 ## Response
