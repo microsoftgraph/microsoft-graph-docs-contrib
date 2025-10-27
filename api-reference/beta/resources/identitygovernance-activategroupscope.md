@@ -1,6 +1,6 @@
 ---
 title: "activateGroupScope resource type"
-description: "The group scope of a run for a workflow."
+description: "Represents activating a group scope for a run for a workflow."
 author: "AlexFilipin"
 ms.date: 10/22/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a group scope of a [run](../resources/identitygovernance-run.md) for a workflow.
+Represents activating a group scope for a [run](../resources/identitygovernance-run.md) of a workflow.
 
 Inherits from [microsoft.graph.identityGovernance.activationScope](../resources/identitygovernance-activationscope.md).
 

@@ -1,10 +1,10 @@
 ---
 title: "activateUserScope resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+description: "Represents activating a user scope for a run for a workflow."
+author: "AlexFilipin"
 ms.date: 10/22/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 
@@ -14,8 +14,7 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+Represents activating a user scope for a [run](../resources/identitygovernance-run.md) of a workflow.
 
 Inherits from [microsoft.graph.identityGovernance.activationScope](../resources/identitygovernance-activationscope.md).
 
@@ -27,7 +26,7 @@ Inherits from [microsoft.graph.identityGovernance.activationScope](../resources/
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|users|[microsoft.graph.user](../resources/user.md) collection|**TODO: Add Description**|
+|users|[microsoft.graph.user](../resources/user.md) collection|The user scope for the workflow run.|
 
 ## JSON representation
 The following JSON representation shows the resource type.
