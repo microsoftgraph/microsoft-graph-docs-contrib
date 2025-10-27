@@ -20,8 +20,8 @@ Indicates whether Cloud PC user settings persistence is enabled. When enabled, W
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Indicates unique identifier for the Cloud PC user settings persistence configuration for a single policy collection. Required. Read-Only.|
-|gracePeriodEndDateTime|DateTimeOffset| Indicates the grace period end time when user settings persistence exceeds the available quota. If the usage of user settings persistence is over the available quota when the grace period expires, the system will automatically delete the profile with the oldest last attached timestamp. For example, grace period date would look like this '2025-01-01T00:00:00Z'. Read-Only.  |
+|id|String|Indicates unique identifier for the Cloud PC user settings persistence configuration for a single policy collection. Required. Read-only.|
+|gracePeriodEndDateTime|DateTimeOffset| Indicates the grace period end time when user settings persistence exceeds the available quota. If the usage of user settings persistence is over the available quota when the grace period expires, the system will automatically delete the profile with the oldest last attached timestamp. For example, grace period date would look like this '2025-01-01T00:00:00Z'. Read-only.  |
 
 ## Relationships
 
