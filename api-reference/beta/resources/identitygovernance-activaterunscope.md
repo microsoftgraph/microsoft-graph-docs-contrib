@@ -1,10 +1,10 @@
 ---
 title: "activateRunScope resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+description: "Represents activating a run scope for a run for a workflow."
+author: "AlexFilipin"
 ms.date: 10/22/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ---
 
@@ -14,22 +14,20 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+Represents activating a run scope for a [run](../resources/identitygovernance-run.md) of a workflow.
 
 Inherits from [microsoft.graph.identityGovernance.activationScope](../resources/identitygovernance-activationscope.md).
-
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|taskScope|microsoft.graph.identityGovernance.activationTaskScopeType|**TODO: Add Description**. The possible values are: `allTasks`, `failedTasks`, `unknownFutureValue`.|
-|userScope|microsoft.graph.identityGovernance.activationUserScopeType|**TODO: Add Description**. The possible values are: `allUsers`, `failedUsers`, `unknownFutureValue`.|
+|taskScope|microsoft.graph.identityGovernance.activationTaskScopeType|Defines which tasks are in scope for the workflow run. The possible values are: `allTasks`, `failedTasks`, `unknownFutureValue`.|
+|userScope|microsoft.graph.identityGovernance.activationUserScopeType|Defines which users are in scope. The possible values are: `allUsers`, `failedUsers`, `unknownFutureValue`.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|run|[run](../resources/identitygovernance-run.md)|**TODO: Add Description**|
+|run|[run](../resources/identitygovernance-run.md)|The specific run scope for the workflow being run.|
 
 ## JSON representation
 The following JSON representation shows the resource type.
