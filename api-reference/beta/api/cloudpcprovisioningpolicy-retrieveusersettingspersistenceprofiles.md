@@ -62,7 +62,6 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -76,7 +75,7 @@ Content-Type: application/json
 
 
 ```
-
+---
 ### Response
 
 
@@ -91,7 +90,7 @@ Content-Type: application/json
 HTTP/1.1 200 OK
 
 {
-    "@odata.type": "https://graph.microsoft.com/beta/$metadata#cloudpcusersettingspersistenceprofile",
+    "@odata.type": "https://graph.microsoft.com/beta/$metadata#retrieveUserSettingsPersistenceProfiles",
     "value":[
         {
             "profileId": "8fd04a0b-ed49-46c0-a62d-e7980d829058",

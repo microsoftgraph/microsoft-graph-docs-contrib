@@ -54,6 +54,6 @@ The following JSON representation shows the resource type.
   "userPrincipalName": "String",
   "profileSizeInGB": "Int32",
   "lastProfileAttachedDateTime": "String (timestamp)",
-  "status": { "microsoft.graph.cloudPCUserSettingsPersistenceProfileStatus"}
+  "status": "String"
 }
 ```
