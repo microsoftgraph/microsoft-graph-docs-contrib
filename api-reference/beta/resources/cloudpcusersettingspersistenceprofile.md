@@ -24,7 +24,7 @@ Describes the cloud profile detail for specific Cloud PC user settings persisten
 |userPrincipalName|String| The user principal name who owns the cloud profile. For example, the sample user principal name is `connie@contoso.com`. Required. Read-only.  |
 |profileSizeInGB|Int32| Indicates the max allowed size in gigabytes of the cloud profile for a specific user. For example, 10 GB allocated size will return `10` as a response. Required. Read-only.  |
 |lastProfileAttachedDateTime|DateTimeOffset| The last time the user settings persistence profile attached onto the Cloud PC. For example, midnight UTC on Jan 1, 2025 would look like this: '2025-01-01T00:00:00Z'. Read-only. |
-|status|[cloudPCUserSettingsPersistenceProfileStatus]| The status of this cloud profile. Possible values: `connected`, `notConnected`, `deleting`. Default: `notConnected`. Required. Read-only.  |
+|status|[cloudPCUserSettingsPersistenceProfileStatus](#cloudPCUserSettingsPersistenceProfileStatus-values)| The status of this cloud profile. Possible values: `connected`, `notConnected`, `deleting`. Default: `notConnected`. Required. Read-only.  |
 
 ### cloudPCUserSettingsPersistenceProfileStatus values
 
@@ -54,6 +54,6 @@ The following JSON representation shows the resource type.
   "userPrincipalName": "String",
   "profileSizeInGB": "Int32",
   "lastProfileAttachedDateTime": "String (timestamp)",
-  "status": {"@odata.type": "microsoft.graph.cloudPCUserSettingsPersistenceProfileStatus"}
+  "status": { "microsoft.graph.cloudPCUserSettingsPersistenceProfileStatus"}
 }
 ```
