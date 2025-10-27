@@ -56,7 +56,7 @@ The following table shows the parameters that can be used with this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and [cloudpcusersettingspersistenceprofile](../resources/cloudpcusersettingspersistenceprofile.md) in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [cloudpcusersettingspersistenceprofile](../resources/cloudpcusersettingspersistenceprofile.md) objects in the response body.
 
 ## Examples
 
