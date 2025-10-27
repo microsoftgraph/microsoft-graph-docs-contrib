@@ -5424,3 +5424,27 @@ Possible values for user account types (group membership), per Windows definitio
 |h6|
 |d1|
 |unknownFutureValue|
+
+### attestationEnforcement values 
+
+|Member|
+|:---|
+|disabled|
+|registrationOnly|
+|unknownFutureValue|
+
+### passkeyType values 
+
+|Member|
+|:---|
+|deviceBound|
+|synced|
+|unknownFutureValue|
+
+### passkeyTypes values 
+
+|Member|
+|:---|
+|deviceBound|
+|synced|
+|unknownFutureValue|

@@ -32,6 +32,7 @@ Inherits from [authenticationMethodConfiguration](../resources/authenticationmet
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
+|defaultPasskeyProfile|String|The non-deletable baseline passkey profile, within the passkey profile collection. It is automatically created when migrating to passkey profiles and initially mirrors the tenant's legacy global Passkey (FIDO2) authentication methods policy settings.|
 |excludeTargets|[excludeTarget](../resources/excludetarget.md) collection|Groups of users that are excluded from the policy.|
 |id|String|The authentication method policy identifier.|
 |isAttestationEnforced|Boolean|Determines whether attestation must be enforced for FIDO2 passkey registration.|
@@ -43,6 +44,7 @@ Inherits from [authenticationMethodConfiguration](../resources/authenticationmet
 |Relationship|Type|Description|
 |:---|:---|:---|
 |includeTargets|[authenticationMethodTarget](../resources/authenticationmethodtarget.md) collection|A collection of groups that are enabled to use the authentication method.|
+|passkeyProfiles|[passkeyProfile](../resources/passkeyprofile.md) collection|A collection of configuration profiles that control the registration of and authentication with Passkeys (FIDO2).|
 
 ## JSON representation
 
