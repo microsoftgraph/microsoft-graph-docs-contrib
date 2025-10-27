@@ -27,7 +27,7 @@ No methods are supported.
 |Property|Type|Description|
 |:---|:---|:---|
 |attestationEnforcement|attestationEnforcement|Determines whether attestation must be enforced for FIDO2 passkey registration. Required. The possible values are: `disabled`, `registrationOnly`, `unknownFutureValue`.|
-|id|String|The passkey profile identifier. Required. Inherited from [entity](../resources/entity.md). Inherits from [entity](../resources/entity.md)|
+|id|String|The passkey profile identifier. Required. Inherited from [entity](../resources/entity.md). 
 |keyRestrictions|[fido2KeyRestrictions](../resources/fido2keyrestrictions.md)|Controls whether key restrictions are enforced on FIDO2 passkeys, either allowing or disallowing certain key types as defined by Authenticator Attestation GUID (AAGUID), an identifier that indicates the type (for example, make and model) of the authenticator. Required.|
 |name|String|Name of the passkey profile. Required.|
 |passkeyTypes|passkeyTypes|Specifies which types of passkeys are targeted in this passkey profile. Required. The possible values are: `deviceBound`, `synced`, `unknownFutureValue`.|
