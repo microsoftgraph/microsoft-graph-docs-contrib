@@ -20,11 +20,11 @@ Describes the cloud profile detail for specific Cloud PC user settings persisten
 
 |Property|Type|Description|
 |:---|:---|:---|
-|profileId|String|Indicates unique identifier of the Cloud PC user settings persistence specific profile for selected Cloud PC user settings persistence. Required. Read-Only.|
-|userPrincipalName|String| The user principal name who owns the cloud profile. For example, the sample user principal name is `connie@contoso.com`. Required. Read-Only.  |
-|profileSizeInGB|Int32| Indicates the max allowed size in gigabytes of the cloud profile for a specific user. For example, 10 GB allocated size will return `10` as a response. Required. Read-Only.  |
-|lastProfileAttachedDateTime|DateTimeOffset| The last time the user settings persistence profile attached onto the Cloud PC. For example, midnight UTC on Jan 1, 2025 would look like this: '2025-01-01T00:00:00Z'. Read-Only. |
-|status|[cloudPCUserSettingsPersistenceProfileStatus]| The status of this cloud profile. Possible values: `connected`, `notConnected`, `deleting`. Default: `notConnected`. Required. Read-Only.  |
+|profileId|String|Indicates unique identifier of the Cloud PC user settings persistence specific profile for selected Cloud PC user settings persistence. Required. Read-only.|
+|userPrincipalName|String| The user principal name who owns the cloud profile. For example, the sample user principal name is `connie@contoso.com`. Required. Read-only.  |
+|profileSizeInGB|Int32| Indicates the max allowed size in gigabytes of the cloud profile for a specific user. For example, 10 GB allocated size will return `10` as a response. Required. Read-only.  |
+|lastProfileAttachedDateTime|DateTimeOffset| The last time the user settings persistence profile attached onto the Cloud PC. For example, midnight UTC on Jan 1, 2025 would look like this: '2025-01-01T00:00:00Z'. Read-only. |
+|status|[cloudPCUserSettingsPersistenceProfileStatus]| The status of this cloud profile. Possible values: `connected`, `notConnected`, `deleting`. Default: `notConnected`. Required. Read-only.  |
 
 ### cloudPCUserSettingsPersistenceProfileStatus values
 

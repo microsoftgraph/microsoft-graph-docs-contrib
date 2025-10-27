@@ -20,9 +20,9 @@ Describes the cloud profile storage usage status of the specific Cloud PC user s
 
 |Property|Type|Description|
 |:---|:---|:---|
-|totalAllocatedStorageInGB|Int32|The total pre-allocated cloud profile storage for a specific Cloud PC's policy assignment. The total size is calculated by the total licenses assigned to this policy and the size of the Cloud PC's disk. Required. Read-Only.|
-|remainingAvailableStorageInGB|Int32| The remaining available pre-allocated cloud profile storage for specific Cloud PC's policy assignment. This is equal to total pre-allocated storage size minus used pre-allocated storage size. Required. Read-Only.   |
-|usedStorageInGB|Int32| The total used of pre-allocated cloud profile storage for specific Cloud PC's policy assignment. This is the total of allocated size for those ever signed in users. Required. Read-Only.  |
+|totalAllocatedStorageInGB|Int32|The total pre-allocated cloud profile storage for a specific Cloud PC's policy assignment. The total size is calculated by the total licenses assigned to this policy and the size of the Cloud PC's disk. Required. Read-only.|
+|remainingAvailableStorageInGB|Int32| The remaining available pre-allocated cloud profile storage for specific Cloud PC's policy assignment. This is equal to total pre-allocated storage size minus used pre-allocated storage size. Required. Read-only.   |
+|usedStorageInGB|Int32| The total used of pre-allocated cloud profile storage for specific Cloud PC's policy assignment. This is the total of allocated size for those ever signed in users. Required. Read-only.  |
 
 ## Relationships
 

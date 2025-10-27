@@ -5,7 +5,7 @@ author: "AshleyYangSZ"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: apiPageType
-ms.date: 04/05/2024
+ms.date: 10/20/2025
 ---
 
 # cloudPcProvisioningPolicy: retrieveUserSettingsPersistenceProfiles
@@ -56,7 +56,7 @@ The following table shows the parameters that can be used with this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and [cloudpcusersettingspersistenceprofile](../resources/cloudpcusersettingspersistenceprofile.md) in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [cloudpcusersettingspersistenceprofile](../resources/cloudpcusersettingspersistenceprofile.md) objects in the response body.
 
 ## Examples
 
