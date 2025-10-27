@@ -43,11 +43,11 @@ Represents an application in the [Microsoft Entra application gallery](/azure/ac
 |supportedProvisioningTypes|String collection|The list of provisioning modes supported by this application. The only valid value is `sync`.|
 |supportedSingleSignOnModes|String collection|The list of single sign-on modes supported by this application. The supported values are `oidc`, `password`, `saml`, and `notSupported`.|
 
+[!INCLUDE [licensing](../includes/permissions/applicationtemplate-licensing.md)]
+
 ## Relationships
 
 None.
-
-[!INCLUDE [licensing](../includes/permissions/applicationtemplate-licensing.md)]
 
 ## JSON representation
 
