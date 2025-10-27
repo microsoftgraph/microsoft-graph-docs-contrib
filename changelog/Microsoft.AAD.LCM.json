@@ -1258,14 +1258,6 @@
       "ChangeList": [
         {
           "Id": "4688a713-d9d5-4db3-9894-aafdcbe17694",
-          "ApiChange": "Enumeration",
-          "ChangedApiName": "activationTaskScopeType",
-          "ChangeType": "Addition",
-          "Description": "Added the **activationTaskScopeType** enumeration type.",
-          "Target": "activationTaskScopeType"
-        },
-        {
-          "Id": "4688a713-d9d5-4db3-9894-aafdcbe17694",
           "ApiChange": "Property",
           "ChangedApiName": "activatedOnScope",
           "ChangeType": "Addition",
