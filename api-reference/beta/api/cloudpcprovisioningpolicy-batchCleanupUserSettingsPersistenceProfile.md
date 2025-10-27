@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a list of cloud profiles that aren't attached to specific user's Cloud PC in specific Cloud PC's policy assignment of user settings persistence
+Delete a list of user storage that aren't attached to specific user's Cloud PC in specific Cloud PC's policy assignment of user settings persistence
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -60,9 +60,10 @@ If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
-### Request
+### Example 1: Delete a list of user storage profiles in specific Cloud PC's policy assignment of user settings persistence
 
-# [HTTP](#tab/http)
+#### Request
+
 <!-- {
   "blockType": "request",
   "name": "batchcleanupusersettingspersistenceprofile_cloudpcprovisioningpolicy",
@@ -78,8 +79,9 @@ Content-Type: application/json
     "cloudProfileIds":["7e8c3054-bda1-4e37-81c5-7d1b080a8849", "568c3054-bda1-4e37-81c5-7d1b080a8849"],
 }
 ```
+---
 
-### Response
+#### Response
 
 <!-- {
   "blockType": "response",

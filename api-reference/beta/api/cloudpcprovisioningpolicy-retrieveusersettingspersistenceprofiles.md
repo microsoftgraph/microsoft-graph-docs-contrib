@@ -1,6 +1,6 @@
 ---
 title: "cloudPcProvisioningPolicy: retrieveUserSettingsPersistenceProfiles"
-description: "Retrieve the cloud profile list for the Cloud PC user settings persistence under selected Cloud PC's policy assignment."
+description: "Retrieve the user storage list for the Cloud PC user settings persistence under selected Cloud PC's policy assignment."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the cloud profile list for the Cloud PC user settings persistence under selected Cloud PC's policy assignment
+Retrieve the user storage list for the Cloud PC user settings persistence under selected Cloud PC's policy assignment
 
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
@@ -60,9 +60,10 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Request
+### Example 1: Retrieve the user storage list for Cloud PC user settings persistence under selected Cloud PC's assignment
 
-# [HTTP](#tab/http)
+#### Request
+
 <!-- {
   "blockType": "request",
   "name": "retrieveUserSettingsPersistenceProfiles_cloudpcprovisioningpolicy",
@@ -76,7 +77,8 @@ Content-Type: application/json
 
 ```
 ---
-### Response
+
+#### Response
 
 
 <!-- {

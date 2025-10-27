@@ -60,10 +60,10 @@ If successful, this method returns a `200 OK` response code and a [cloudpcuserse
 
 ## Examples
 
-### Request
+### Example 1: Retrive the usage of Cloud PC user settings persistence in the selected Cloud PC's assignment
 
+#### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "retrieveusersettingspersistenceprofileusage_cloudpcprovisioningpolicy",
@@ -78,7 +78,7 @@ Content-Type: application/json
 ```
 ---
 
-### Response
+#### Response
 
 <!-- {
   "blockType": "response",
