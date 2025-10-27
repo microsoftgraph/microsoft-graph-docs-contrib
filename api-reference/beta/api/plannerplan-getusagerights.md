@@ -37,6 +37,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 GET /planner/plans/{plannerPlanId}/getUsageRights
 ```
 
+## Optional query parameters
+
+This method does not support OData query parameters to customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
 ## Request headers
 
 |Name|Description|
