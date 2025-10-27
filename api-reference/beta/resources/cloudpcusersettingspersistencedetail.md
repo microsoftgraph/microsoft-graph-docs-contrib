@@ -1,6 +1,6 @@
 ---
 title: "cloudPCUserSettingsPersistenceDetail resource type"
-description: "Represents if Cloud PC user settings persistence is enabled, Windows 365 will automatically save any user-specific application data in a central cloud storage location and reconnect the user to that storage upon each connection."
+description: "Indicates whether Cloud PC user settings persistence is enabled. When enabled, Windows 365 saves user-specific application data in a central cloud storage location and reconnects the user to that storage upon each connection."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents if Cloud PC user settings persistence is enabled, Windows 365 will automatically save any user-specific application data in a central cloud storage location and reconnect the user to that storage upon each connection.
+Indicates whether Cloud PC user settings persistence is enabled. When enabled, Windows 365 saves user-specific application data in a central cloud storage location and reconnects the user to that storage upon each connection.
 
 ## Properties
 

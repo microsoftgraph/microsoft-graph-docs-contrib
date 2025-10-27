@@ -1,6 +1,6 @@
 ---
 title: "cloudPCUserSettingsPersistenceUsageResult resource type"
-description: "Describes the cloud profile storage usage status of the specific Cloud PC user settings persistence for specific Cloud PC's policy assignment."
+description: "This resource describes the cloud profile storage usage status for a specific Cloud PC user settings persistence configuration and its associated policy assignment."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
@@ -14,15 +14,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Describes the cloud profile storage usage status of the specific Cloud PC user settings persistence for specific Cloud PC's policy assignment.
+This resource describes the cloud profile storage usage status for a specific Cloud PC user settings persistence configuration and its associated policy assignment.
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
-|totalAllocatedStorageInGB|Int32|The total pre-allocated cloud profile storage for a specific Cloud PC's policy assignment. The total size is calculated by the total licenses assigned to this policy and the size of the Cloud PC's disk. Required. Read-only.|
-|remainingAvailableStorageInGB|Int32| The remaining available pre-allocated cloud profile storage for specific Cloud PC's policy assignment. This is equal to total pre-allocated storage size minus used pre-allocated storage size. Required. Read-only.   |
-|usedStorageInGB|Int32| The total used of pre-allocated cloud profile storage for specific Cloud PC's policy assignment. This is the total of allocated size for those ever signed in users. Required. Read-only.  |
+|totalAllocatedStorageInGB|Int32|The total preallocated cloud profile storage for a specific Cloud PC's policy assignment. The system calculates the total size based on the number of licenses assigned to this policy and the size of each Cloud PC's disk. Required. Read-only.|
+|remainingAvailableStorageInGB|Int32|The remaining available preallocated cloud profile storage for a specific Cloud PC's policy assignment. This value equals the total preallocated storage size minus the used preallocated storage size. Required. Read-only.|
+|usedStorageInGB|Int32|The total used preallocated cloud profile storage for a specific Cloud PC's policy assignment. This value represents the total allocated size for users who have signed in. Required. Read-only.|
 
 ## Relationships
 
