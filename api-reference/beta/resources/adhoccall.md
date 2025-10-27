@@ -32,6 +32,8 @@ Contains information about an ad hoc call, including Public Switched Telephone N
 | Get callTranscript | [adhocCall resource type](calltranscript.md) | Get a single callTranscript object for an ad hoc call |
 | List recordings | [callRecording](callrecording.md) collection | Retrieve the list of [callRecordings](callrecording.md) objects associated with an ad hoc call. |
 | List transcripts | [callTranscript](calltranscript.md) collection | Retrieve the list of [callTranscripts](calltranscript.md) of an ad hoc call. |
+|[getAllRecordings](../api/adhoccall-getallrecordings.md)|[callRecording](callrecording.md) collection|**TODO: Add Description**|
+|[getAllTranscripts](../api/adhoccall-getalltranscripts.md)|[callTranscript](calltranscript.md) collection|**TODO: Add Description**|
 
 ## Properties
 
