@@ -27,7 +27,7 @@ Inherits from [microsoft.graph.identityGovernance.activationScope](../resources/
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|run|[run](../resources/identitygovernance-run.md)|The specific run scope for the workflow being run.|
+|run|[microsoft.graph.identityGovernance.run](../resources/identitygovernance-run.md)|The specific run scope for the workflow being run.|
 
 ## JSON representation
 The following JSON representation shows the resource type.
