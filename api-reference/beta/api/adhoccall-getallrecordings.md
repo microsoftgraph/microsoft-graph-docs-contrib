@@ -75,7 +75,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/communications/adhocCalls/getAllRecordings(userId='parameterValue',startDateTime=String (timestamp),endDateTime=String (timestamp))
+GET https://graph.microsoft.com/beta/communications/adhocCalls/getAllRecordings(userId=d4220f1b-4c12-436c-8a03-dc3e362f9d54,startDateTime=2025-10-07T07:25:21.9730833Z,endDateTime=2025-10-07T07:25:52.4130833Z)
 ```
 
 ### Response
@@ -85,8 +85,7 @@ The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true,
-                
+  "truncated": true,              
   "@odata.type": "Collection(Microsoft.Teams.GraphSvc.callRecording)"
 }
 -->
@@ -95,7 +94,6 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 ```
 
-   
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('d4220f1b-4c12-436c-8a03-dc3e362f9d54')/adhocCalls",
   "@odata.count": 2,
@@ -103,7 +101,7 @@ Content-Type: application/json
     {
       ID: "ktVizJvGAAAAnfCMlATZWzE5OmNkYWQ5MTQ4LWQ5MjYtNDczMS04NjE4LTM3MWU1ODdkZGVkMF9kNDIyMGYxYi00YzEyLTQzNmMtOGEwMy1kYzNlMzYyZjlkNTRAdW5xLmdibC5zcGFjZXOg2TlmYjdlNWMxZS04YWI4LTQ2NDctOTdhMS03Mzk5MDhkNDE3YjMtMTc1OTgyMTkyMS1SZWNvcmRpbmc=",
       callID: "fb7e5c1e-8ab8-4647-97a1-739908d417b3",
-      contentCorrelationId: "7cc3ae2a-0aa9-4e47-9d85-e98e607d1af2-20251007_072521",
+      contentCorrelationID: "7cc3ae2a-0aa9-4e47-9d85-e98e607d1af2-20251007_072521",
       createdDateTime: "2025-10-07T07:25:21.9730833Z",
       endDateTime: "2025-10-07T07:25:52.4130833Z",
       recordingContentUrl: "https://graph.microsoft.com/beta/users/d4220f1b-4c12-436c-8a03-dc3e362f9d54/adhocCalls/fb7e5c1e-8ab8-4647-97a1-739908d417b3/recordings/ktVizJvGAAAAnfCMlATZWzE5OmNkYWQ5MTQ4LWQ5MjYtNDczMS04NjE4LTM3MWU1ODdkZGVkMF9kNDIyMGYxYi00YzEyLTQzNmMtOGEwMy1kYzNlMzYyZjlkNTRAdW5xLmdibC5zcGFjZXOg2TlmYjdlNWMxZS04YWI4LTQ2NDctOTdhMS03Mzk5MDhkNDE3YjMtMTc1OTgyMTkyMS1SZWNvcmRpbmc=/content",

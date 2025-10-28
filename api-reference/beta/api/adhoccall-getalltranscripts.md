@@ -75,7 +75,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/communications/adhocCalls/getAllTranscripts(userId='parameterValue',startDateTime=String (timestamp),endDateTime=String (timestamp))
+GET https://graph.microsoft.com/beta/communications/adhocCalls/getAllTranscripts(userId=d4220f1b-4c12-436c-8a03-dc3e362f9d54,startDateTime=2025-10-07T07:25:21.9730833Z,endDateTime=2025-10-07T07:25:52.4130833Z)
 ```
 
 ### Response
