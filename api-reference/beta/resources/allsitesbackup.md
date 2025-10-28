@@ -21,9 +21,9 @@ Inherits from [fullServiceBackupBase](../resources/fullservicebackupbase.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get](../api/allsitesbackup-get.md)|[allSitesBackup](../resources/allsitesbackup.md)|Read the properties and relationships of [allSitesBackup](../resources/allsitesbackup.md) object.|
-|[enable](../api/allsitesbackup-enable.md)|[allSitesBackup](../resources/allsitesbackup.md)|Enable Full Service Backup for Sharepoint. All the sites in Sharepoint will be protected automatically without creating a policy.|
-|[disable](../api/allsitesbackup-disable.md)|[allSitesBackup](../resources/allsitesbackup.md)|Disable Full Service Backup for Sharepoint.|
+|[Get](../api/allsitesbackup-get.md)|[allSitesBackup](../resources/allsitesbackup.md)|Read the properties and relationships of an [allSitesBackup](../resources/allsitesbackup.md) object.|
+|[Enable](../api/allsitesbackup-enable.md)|[allSitesBackup](../resources/allsitesbackup.md)|Enable full-service [backup](../resources/allsitesbackup.md) for SharePoint.|
+|[Disable](../api/allsitesbackup-disable.md)|[allSitesBackup](../resources/allsitesbackup.md)|Disable full-service [backup](../resources/allsitesbackup.md) for SharePoint.|
 
 ## Properties
 |Property|Type|Description|
