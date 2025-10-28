@@ -1,6 +1,6 @@
 ---
 title: "allMailboxesBackup: enable"
-description: "Enable full service backup for Exchange"
+description: "Enable full-service backup for Exchange."
 author: "vidula-verma"
 ms.date: 10/15/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Enables full service backup for Exchange. All mailboxes in Exchange are protected automatically, without requiring manual policy creation.
+Enable full-service backup for Exchange. All mailboxes in Exchange are automatically protected, without requiring manual policy creation.
 
 ## Permissions
 
@@ -49,7 +49,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this action returns a `202 Accepted` response code and a [allMailboxesBackup](../resources/allmailboxesbackup.md) object in the response body.
+If successful, this action returns a `202 Accepted` response code and an [allMailboxesBackup](../resources/allmailboxesbackup.md) object in the response body.
 
 ## Examples
 
@@ -65,7 +65,6 @@ The following example shows a request.
 POST https://graph.microsoft.com/beta/solutions/backupRestore/allMailboxesBackup/enable 
 ```
 
-
 ### Response
 
 The following example shows the response.
@@ -80,13 +79,13 @@ The following example shows the response.
 HTTP/1.1 202 Accepted
 Content-Type: application/json
 
-{ 
-     "@odata.context": "/solutions/backupRestore/$metadata#allMailboxesBackup/$entity",
-     "policyId": "ee7d9fab-7ce4-4e30-86c0-eac7680d8bca", 
-     "status": "enabled", 
-     "lastRunDateTime": "0001-01-01T00:00:00Z" ,
-     "lastModifiedBy": "fb80ea0c-ecbb-4bb2-b484-37d01f2a776f",
-     "lastModifiedDateTime": "2025-09-21T19:09:52.9752849+00:00"
-} 
+{
+  "@odata.context": "/solutions/backupRestore/$metadata#allMailboxesBackup/$entity",
+  "policyId": "ee7d9fab-7ce4-4e30-86c0-eac7680d8bca",
+  "status": "enabled",
+  "lastRunDateTime": "0001-01-01T00:00:00Z",
+  "lastModifiedBy": "fb80ea0c-ecbb-4bb2-b484-37d01f2a776f",
+  "lastModifiedDateTime": "2025-09-21T19:09:52.9752849+00:00"
+}
 ```
 
