@@ -1,6 +1,6 @@
 ---
 title: "Get allDrivesBackup"
-description: "Read the properties of allDrivesBackup object."
+description: "Read the properties and relationships of an allDrivesBackup object."
 author: "vidula-verma"
 ms.date: 10/15/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of [allDrivesBackup](../resources/alldrivesbackup.md) object.
+Read the properties and relationships of an [allDrivesBackup](../resources/alldrivesbackup.md) object.
 
 ## Permissions
 
@@ -39,7 +39,7 @@ GET /solutions/backupRestore/allDrivesBackup
 
 ## Optional query parameters
 
-This method supports the $select, $filter, $count, and $top OData query parameters to help customize the response. For general information, see OData query parameters.
+This method supports the `$select`, `$filter`, `$count`, and `$top` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -69,7 +69,6 @@ The following example shows a request.
 GET https://graph.microsoft.com/beta/solutions/backupRestore/allDrivesBackup
 ```
 
-
 ### Response
 
 The following example shows the response.
@@ -84,13 +83,13 @@ The following example shows the response.
 HTTP/1.1 200 OK
 Content-Type: application/json
 
-{ 
-     "@odata.context": "/solutions/backupRestore/$metadata#allDrivesBackup/$entity",
-     "policyId": " 03c27227-bff5-449d-8886-07b91b1fe8c0",  
-     "status": "enabled", 
-     "lastRunDateTime": "2025-02-11T00:00:00Z",
-     "lastModifiedBy": "fb80ea0c-ecbb-4bb2-b484-37d01f2a776f",
-     "lastModifiedDateTime": "2025-09-21T19:09:52.9752849+00:00"
-} 
+{
+  "@odata.context": "/solutions/backupRestore/$metadata#allDrivesBackup/$entity",
+  "policyId": " 03c27227-bff5-449d-8886-07b91b1fe8c0",
+  "status": "enabled",
+  "lastRunDateTime": "2025-02-11T00:00:00Z",
+  "lastModifiedBy": "fb80ea0c-ecbb-4bb2-b484-37d01f2a776f",
+  "lastModifiedDateTime": "2025-09-21T19:09:52.9752849+00:00"
+}
 ```
 
