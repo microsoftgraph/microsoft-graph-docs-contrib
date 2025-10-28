@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Configuration profile for Passkeys (FIDO2) Authentication Method policy that allows for granular, group-based control over passkey configurations.
+Configuration profile for [Passkeys (FIDO2) Authentication Method policy](../resources/fido2AuthenticationMethodConfiguration.md) that allows for granular, group-based control over passkey configurations.
 
 
 Inherits from [entity](../resources/entity.md).
