@@ -79,7 +79,6 @@ GET https://graph.microsoft.com/beta/identity/riskprevention/fraudprotectionprov
 
 ---
 
-
 ### Response
 
 The following example shows the response with Arkose Fraud Protection Provider.
