@@ -1,6 +1,6 @@
 ---
 title: "Get allMailboxesBackup"
-description: "Read the properties and relationships of allMailboxesBackup object."
+description: "Read the properties and relationships of an allMailboxesBackup object."
 author: "vidula-verma"
 ms.date: 10/15/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of [allMailboxesBackup](../resources/allmailboxesbackup.md) object.
+Read the properties and relationships of an [allMailboxesBackup](../resources/allmailboxesbackup.md) object.
 
 ## Permissions
 
@@ -39,7 +39,7 @@ GET /solutions/backupRestore/allMailboxesBackup
 
 ## Optional query parameters
 
-This method supports the $select, $filter, $count, and $top OData query parameters to help customize the response. For general information, see OData query parameters.
+This method supports the `$select`, `$filter`, `$count`, and `$top` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -69,7 +69,6 @@ The following example shows a request.
 GET https://graph.microsoft.com/beta/solutions/backupRestore/allMailboxesBackup
 ```
 
-
 ### Response
 
 The following example shows the response.
@@ -84,14 +83,14 @@ The following example shows the response.
 HTTP/1.1 200 OK
 Content-Type: application/json
 
-{ 
-     "@odata.context": "/solutions/backupRestore/$metadata#allMailboxesBackup/$entity",
-     "policyId": "ee7d9fab-7ce4-4e30-86c0-eac7680d8bca",
-     "status": "disabled", 
-     "actionOnExistingPolicy": "disableAll", 
-     "lastRunDateTime": "2025-02-11T00:00:00Z",
-     "lastModifiedBy": "fb80ea0c-ecbb-4bb2-b484-37d01f2a776f",
-     "lastModifiedDateTime": "2025-09-21T19:09:52.9752849+00:00"
-} 
+{
+  "@odata.context": "/solutions/backupRestore/$metadata#allMailboxesBackup/$entity",
+  "policyId": "ee7d9fab-7ce4-4e30-86c0-eac7680d8bca",
+  "status": "disabled",
+  "actionOnExistingPolicy": "disableAll",
+  "lastRunDateTime": "2025-02-11T00:00:00Z",
+  "lastModifiedBy": "fb80ea0c-ecbb-4bb2-b484-37d01f2a776f",
+  "lastModifiedDateTime": "2025-09-21T19:09:52.9752849+00:00"
+}
 ```
 
