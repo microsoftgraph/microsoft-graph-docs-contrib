@@ -15,9 +15,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the configuration settings for automatic auditing in Microsoft Defender for Identity. The config activates predefined audit policies that automatically log critical security events in Windows Event Viewer.
-For more information, see [Configure audit policies for Windows event logs](https://learn.microsoft.com/en-us/defender-for-identity/deploy/configure-windows-event-collection).
-
+Represents the configuration settings for automatic auditing in Microsoft Defender for Identity. The config activates predefined audit policies that automatically log critical security events in Windows Event Viewer. For more information, see [Configure audit policies for Windows event logs](/defender-for-identity/deploy/configure-windows-event-collection).
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).
 
