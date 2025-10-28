@@ -1178,7 +1178,9 @@
       "WorkloadArea": "Identity and access",
       "SubArea": "Network access"
     }
-      {
+    {  
+      "ChangeList": [
+        {
         "Id": "6e4d580d-8ec9-4c61-aca3-9ba57418e6df",
         "ApiChange": "Member",
         "ChangedApiName": "enabled",
