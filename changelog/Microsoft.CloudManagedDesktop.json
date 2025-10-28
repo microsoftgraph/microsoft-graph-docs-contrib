@@ -7997,6 +7997,40 @@
       "CreatedDateTime": "2025-09-20T00:00:00.000Z",
       "WorkloadArea": "Device and app management",
       "SubArea": "Cloud PC"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "53afe251-6ff0-403b-823c-37f36e2716f0",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "cloudPcUserSettingsPersistenceStorageSizeCategory",
+          "ChangeType": "Addition",
+          "Description": "Added the **cloudPcUserSettingsPersistenceStorageSizeCategory** enumeration type.",
+          "Target": "cloudPcUserSettingsPersistenceStorageSizeCategory"
+        },
+        {
+          "Id": "53afe251-6ff0-403b-823c-37f36e2716f0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cloudPcUserSettingsPersistenceConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [cloudPcUserSettingsPersistenceConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcusersettingspersistenceconfiguration?view=graph-rest-beta) resource.",
+          "Target": "cloudPcUserSettingsPersistenceConfiguration"
+        },
+        {
+          "Id": "53afe251-6ff0-403b-823c-37f36e2716f0",
+          "ApiChange": "Property",
+          "ChangedApiName": "userSettingsPersistenceConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the **userSettingsPersistenceConfiguration** property to the [cloudPcProvisioningPolicy](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-beta) resource.",
+          "Target": "cloudPcProvisioningPolicy"
+        }
+      ],
+      "Id": "53afe251-6ff0-403b-823c-37f36e2716f0",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-10-24T08:35:01.708544Z",
+      "WorkloadArea": "Device and app management",
+      "SubArea": "Cloud PC"
     }
   ]
 }

@@ -5433,3 +5433,14 @@ Possible values for user account types (group membership), per Windows definitio
 |group|
 |sts|
 |unknownFutureValue|
+
+### cloudPcUserSettingsPersistenceStorageSizeCategory values 
+
+|Member|
+|:---|
+|fourGB|
+|eightGB|
+|sixteenGB|
+|thirtyTwoGB|
+|sixtyFourGB|
+|unknownFutureValue|

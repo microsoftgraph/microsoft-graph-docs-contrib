@@ -590,7 +590,8 @@
             "frontlineCloudPcDetail",
             "keyValuePair",
             "microsoftManagedDesktop",
-            "unifiedRolePermission"
+            "unifiedRolePermission",
+            "cloudPcUserSettingsPersistenceConfiguration"
           ],
           "childNodes": [
             {
