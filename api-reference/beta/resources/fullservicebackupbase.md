@@ -19,7 +19,6 @@ An abstract type that represents a full-service backup setting.
 
 Base type of [allSitesBackup](../resources/allsitesbackup.md), [allMailboxesBackup](../resources/allmailboxesbackup.md), and [allDrivesBackup](../resources/alldrivesbackup.md).
 
-Inherits from [entity](../resources/entity.md).
                                                                   
 ## Properties
 |Property|Type|Description|
