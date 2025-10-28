@@ -3,6 +3,7 @@ title: "verifiedIdProfile resource type"
 description: "Profile containing properties about a Verified ID provider and purpose"
 author: "tilarso"
 ms.date: 10/10/2025
+toc.title: Verified ID profile (preview)
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
