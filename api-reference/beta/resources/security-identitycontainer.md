@@ -33,6 +33,8 @@ None.
 | sensors                                | [microsoft.graph.security.sensor](security-sensor.md) collection                     | Represents a customer's Microsoft Defender for Identity sensors.                                                                               |
 | sensorCandidates                       |[microsoft.graph.security.sensorCandidate](security-sensorcandidate.md) collection| Represents Microsoft Defender for Identity sensors that are ready to be activated.                                                             |
 | sensorCandidateActivationConfiguration |[microsoft.graph.security.sensorCandidateActivationConfiguration](security-sensorcandidateactivationconfiguration.md) collection| Represents the activation mode of a Microsoft Defender for Identity sensor.                                                                    |
+| settings                               | [microsoft.graph.security.settingsContainer](security-settingscontainer.md)                                                      | Represents a container for security identities settings APIs.                                                                                  |
+
 
 ## JSON representation
 
