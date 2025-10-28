@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-AuthenticationEventListener authenticationEventListener = new AuthenticationEventListener();
+OnFraudProtectionLoadStartListener authenticationEventListener = new OnFraudProtectionLoadStartListener();
 authenticationEventListener.setOdataType("#microsoft.graph.onFraudProtectionLoadStartListener");
 AuthenticationConditions conditions = new AuthenticationConditions();
 AuthenticationConditionsApplications applications = new AuthenticationConditionsApplications();
@@ -19,18 +19,16 @@ includeApplications.add(authenticationConditionApplication);
 applications.setIncludeApplications(includeApplications);
 conditions.setApplications(applications);
 authenticationEventListener.setConditions(conditions);
-HashMap<String, Object> additionalData = new HashMap<String, Object>();
- handler = new ();
+OnFraudProtectionLoadStartExternalUsersAuthHandler handler = new OnFraudProtectionLoadStartExternalUsersAuthHandler();
 handler.setOdataType("#microsoft.graph.onFraudProtectionLoadStartExternalUsersAuthHandler");
- signUp = new ();
+FraudProtectionProviderConfiguration signUp = new FraudProtectionProviderConfiguration();
 signUp.setOdataType("#microsoft.graph.fraudProtectionProviderConfiguration");
- fraudProtectionProvider = new ();
+HumanSecurityFraudProtectionProvider fraudProtectionProvider = new HumanSecurityFraudProtectionProvider();
 fraudProtectionProvider.setOdataType("#microsoft.graph.humanSecurityFraudProtectionProvider");
 fraudProtectionProvider.setId("fabe5100-cc02-46c1-bd0e-ce885fe367fd");
 signUp.setFraudProtectionProvider(fraudProtectionProvider);
 handler.setSignUp(signUp);
-additionalData.put("handler", handler);
-authenticationEventListener.setAdditionalData(additionalData);
+authenticationEventListener.setHandler(handler);
 AuthenticationEventListener result = graphClient.identity().authenticationEventListeners().post(authenticationEventListener);
 
 
