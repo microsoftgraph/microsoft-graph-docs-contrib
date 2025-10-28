@@ -1916,7 +1916,7 @@ items:
           href: ../../api/approvalstep-get.md
         - name: Update
           href: ../../api/approvalstep-update.md
-  - name: Privileged Identity Management iteration 2
+  - name: Privileged Identity Management iteration 2 (Deprecated)
     items:
     - name: Overview
       href: ../../resources/privilegedidentitymanagement-root.md
