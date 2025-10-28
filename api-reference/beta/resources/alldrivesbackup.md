@@ -21,9 +21,9 @@ Inherits from [fullServiceBackupBase](../resources/fullservicebackupbase.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get](../api/alldrivesbackup-get.md)|[allDrivesBackup](../resources/alldrivesbackup.md)|Read the properties and relationships of [allDrivesBackup](../resources/alldrivesbackup.md) object.|
-|[enable](../api/alldrivesbackup-enable.md)|[allDrivesBackup](../resources/alldrivesbackup.md)|Enable Full Service Backup for OneDrive for Business. All the drives in Sharepoint will be protected automatically without creating a policy.|
-|[disable](../api/alldrivesbackup-disable.md)|[allDrivesBackup](../resources/alldrivesbackup.md)|Disable Full Service Backup for Onedrive For Business.|
+|[Get](../api/alldrivesbackup-get.md)|[allDrivesBackup](../resources/alldrivesbackup.md)|Read the properties and relationships of an [allDrivesBackup](../resources/alldrivesbackup.md) object.|
+|[Enable](../api/alldrivesbackup-enable.md)|[allDrivesBackup](../resources/alldrivesbackup.md)|Enable full-service [backup](../resources/alldrivesbackup.md) for OneDrive for work or school.|
+|[Disable](../api/alldrivesbackup-disable.md)|[allDrivesBackup](../resources/alldrivesbackup.md)|Disable full-service [backup](../resources/alldrivesbackup.md) for OneDrive for work or school.|
 
 ## Properties
 |Property|Type|Description|
@@ -59,4 +59,3 @@ The following JSON representation shows the resource type.
   "status": "String"
 }
 ```
-
