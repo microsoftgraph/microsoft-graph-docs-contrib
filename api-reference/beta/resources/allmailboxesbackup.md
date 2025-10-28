@@ -1,6 +1,6 @@
 ---
 title: "allMailboxesBackup resource type"
-description: "Represents full service backup settings for Exchange."
+description: "Represents full-service backup settings for Exchange."
 author: "vidula-verma"
 ms.date: 10/16/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents full service backup settings for Exchange.
+Represents full-service backup settings for Exchange.
 
 Inherits from [fullServiceBackupBase](../resources/fullservicebackupbase.md).
 

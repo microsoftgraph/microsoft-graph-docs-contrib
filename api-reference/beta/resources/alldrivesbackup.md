@@ -1,6 +1,6 @@
 ---
 title: "allDrivesBackup resource type"
-description: "Represents full service backup settings for OneDrive for work or school."
+description: "Represents full-service backup settings for OneDrive for work or school."
 author: "vidula-verma"
 ms.date: 10/16/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents full service backup settings for OneDrive for work or school.
+Represents full-service backup settings for OneDrive for work or school.
 
 Inherits from [fullServiceBackupBase](../resources/fullservicebackupbase.md).
 

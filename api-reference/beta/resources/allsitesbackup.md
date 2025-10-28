@@ -1,6 +1,6 @@
 ---
 title: "allSitesBackup resource type"
-description: "Represents full service backup settings for SharePoint."
+description: "Represents full-service backup settings for SharePoint."
 author: "vidula-verma"
 ms.date: 10/16/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents full service backup settings for SharePoint.
+Represents full-service backup settings for SharePoint.
 
 Inherits from [fullServiceBackupBase](../resources/fullservicebackupbase.md).
 
