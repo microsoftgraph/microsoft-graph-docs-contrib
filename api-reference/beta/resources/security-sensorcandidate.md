@@ -1,6 +1,6 @@
 ---
 title: "sensorCandidate resource type"
-description: "Represents a Microsoft Defender for Identity sensor that is ready to be activated."
+description: "Represents a Microsoft Defender for Identity sensor that's ready to be activated."
 author: "SamuelBenichou"
 ms.date: 07/13/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a Microsoft Defender for Identity sensor that is ready to be activated.
+Represents a Microsoft Defender for Identity sensor that's ready to be activated.
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).
 
