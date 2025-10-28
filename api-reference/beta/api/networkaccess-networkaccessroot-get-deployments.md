@@ -60,7 +60,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/networkAccess/deployments('id')
+GET https://graph.microsoft.com/beta/networkAccess/deployments('61addd7c-33ca-4737-93cc-2a3adc933562')
 ```
 
 
