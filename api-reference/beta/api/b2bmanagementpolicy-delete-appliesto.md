@@ -1,20 +1,20 @@
 ---
-title: "Delete b2bManagementPolicy"
-description: "Delete a b2bManagementPolicy object."
-author: "*akshukla"
+title: "Remove appliesTo"
+description: "Remove a directoryObject object."
+author: "akshukla"
 ms.date: 10/27/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
-# Delete b2bManagementPolicy
+# Remove appliesTo
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a b2bManagementPolicy object.
+Remove a [directoryObject](../resources/directoryobject.md) object.
 
 ## Permissions
 
@@ -22,10 +22,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "policyroot-delete-b2bmanagementpolicies-permissions"
+  "name": "b2bmanagementpolicy-delete-appliesto-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/policyroot-delete-b2bmanagementpolicies-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/b2bmanagementpolicy-delete-appliesto-permissions.md)]
 
 ## HTTP request
 
@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-DELETE /policies/b2bManagementPolicies/{b2bManagementPolicyId}/$ref
+DELETE /policies/b2bManagementPolicies/{b2bManagementPolicyId}/appliesTo/{id}/$ref
 ```
 
 ## Request headers
@@ -58,11 +58,11 @@ If successful, this method returns a `204 No Content` response code.
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "delete_b2bmanagementpolicy"
+  "name": "delete_appliesto_from_b2bmanagementpolicy"
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/policies/b2bManagementPolicies/{b2bManagementPolicyId}
+DELETE https://graph.microsoft.com/beta/policies/b2bManagementPolicies/{b2bManagementPolicyId}/appliesTo/{id}/$ref
 ```
 
 

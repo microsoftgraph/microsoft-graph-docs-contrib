@@ -1,20 +1,20 @@
 ---
-title: "Get b2bManagementPolicy"
-description: "Read the properties and relationships of b2bManagementPolicy object."
-author: akshukla
+title: "List appliesTo"
+description: "**TODO: Add a useful description.**"
+author: "akshukla"
 ms.date: 10/27/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
-# Get b2bManagementPolicy
+# List appliesTo
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of [b2bManagementPolicy](../resources/b2bmanagementpolicy.md) object.
+**TODO: Add a useful description.**
 
 ## Permissions
 
@@ -22,10 +22,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "b2bmanagementpolicy-get-permissions"
+  "name": "b2bmanagementpolicy-list-appliesto-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/b2bmanagementpolicy-get-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/b2bmanagementpolicy-list-appliesto-permissions.md)]
 
 ## HTTP request
 
@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /policies/b2bManagementPolicies/{b2bManagementPolicyId}
+GET /policies/b2bManagementPolicies/{b2bManagementPolicyId}/appliesTo
 ```
 
 ## Optional query parameters
@@ -53,7 +53,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [b2bManagementPolicy](../resources/b2bmanagementpolicy.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [directoryObject](../resources/directoryobject.md) objects in the response body.
 
 ## Examples
 
@@ -62,11 +62,11 @@ If successful, this method returns a `200 OK` response code and a [b2bManagement
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "get_b2bmanagementpolicy"
+  "name": "list_directoryobject"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/policies/b2bManagementPolicies/{b2bManagementPolicyId}
+GET https://graph.microsoft.com/beta/policies/b2bManagementPolicies/{b2bManagementPolicyId}/appliesTo
 ```
 
 
@@ -77,7 +77,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.b2bManagementPolicy"
+  "@odata.type": "microsoft.graph.directoryObject"
 }
 -->
 ``` http
@@ -85,17 +85,13 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.b2bManagementPolicy",
-    "id": "f596ef0d-42f9-0359-1aaa-12d02b38802a",
-    "deletedDateTime": "String (timestamp)",
-    "description": "String",
-    "displayName": "String",
-    "definition": [
-      "String"
-    ],
-    "isOrganizationDefault": "Boolean"
-  }
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.directoryObject",
+      "id": "a6c034b8-621b-dee3-6abb-52cbce801fe9",
+      "deletedDateTime": "String (timestamp)"
+    }
+  ]
 }
 ```
 

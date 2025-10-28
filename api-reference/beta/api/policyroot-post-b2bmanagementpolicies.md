@@ -1,10 +1,10 @@
 ---
 title: "Create b2bManagementPolicy"
 description: "Create a new b2bManagementPolicy object."
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+author: "akshukla"
 ms.date: 10/27/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
@@ -50,14 +50,13 @@ In the request body, supply a JSON representation of the [b2bManagementPolicy](.
 
 You can specify the following properties when creating a **b2bManagementPolicy**.
 
-**TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
-|deletedDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [directoryObject](../resources/directoryobject.md). Optional.|
-|description|String|**TODO: Add Description** Inherited from [policyBase](../resources/policybase.md). Required.|
-|displayName|String|**TODO: Add Description** Inherited from [policyBase](../resources/policybase.md). Required.|
-|definition|String collection|**TODO: Add Description** Inherited from [stsPolicy](../resources/stspolicy.md). Required.|
-|isOrganizationDefault|Boolean|**TODO: Add Description** Inherited from [stsPolicy](../resources/stspolicy.md). Optional.|
+|deletedDateTime|DateTimeOffset| Date and Time when the policy object was deleted. Inherited from [directoryObject](../resources/directoryobject.md). Optional.|
+|description|String| Description for this policy. Inherited from [policyBase](../resources/policybase.md). Required.|
+|displayName|String| Display name for this policy. Inherited from [policyBase](../resources/policybase.md). Required.|
+|definition|String collection| A string collection containing a JSON string that defines the rules and settings for a policy. Inherited from [stsPolicy](../resources/stspolicy.md). Required.|
+|isOrganizationDefault|Boolean| If set to true, activates this policy. There can be many policies for the same policy type, but only one can be activated as the organization default. Inherited from [stsPolicy](../resources/stspolicy.md). Optional.|
 
 
 
