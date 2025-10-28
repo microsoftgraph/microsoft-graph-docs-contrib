@@ -1,6 +1,6 @@
 ---
 title: "Get allSitesBackup"
-description: "Read the properties and relationships of allSitesBackup object."
+description: "Read the properties and relationships of an allSitesBackup object."
 author: "vidula-verma"
 ms.date: 10/15/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of [allSitesBackup](../resources/allsitesbackup.md) object.
+Read the properties and relationships of an [allSitesBackup](../resources/allsitesbackup.md) object.
 
 ## Permissions
 
@@ -39,7 +39,7 @@ GET /solutions/backupRestore/allSitesBackup
 
 ## Optional query parameters
 
-This method supports the $select, $filter, $count, and $top OData query parameters to help customize the response. For general information, see OData query parameters.
+This method supports the `$select`, `$filter`, `$count`, and `$top` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -66,9 +66,8 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/allSitesBackup
+GET https://graph.microsoft.com/beta/solutions/backupRestore/allSitesBackup
 ```
-
 
 ### Response
 
@@ -84,14 +83,14 @@ The following example shows the response.
 HTTP/1.1 200 OK
 Content-Type: application/json
 
-{ 
-     "@odata.context": "/solutions/backupRestore/$metadata#allSitesBackup/$entity",
-     "policyId": "89014d8c-71fe-4d00-a01a-31850bc5b32c",
-     "status": "disabled", 
-     "actionOnExistingPolicy": "enableAll",
-     "lastRunDateTime": "2025-02-03T00:00:00Z",
-     "lastModifiedBy": "fb80ea0c-ecbb-4bb2-b484-37d01f2a776f",
-     "lastModifiedDateTime": "2025-09-21T19:09:52.9752849+00:00"
-} 
+{
+  "@odata.context": "/solutions/backupRestore/$metadata#allSitesBackup/$entity",
+  "policyId": "89014d8c-71fe-4d00-a01a-31850bc5b32c",
+  "status": "disabled",
+  "actionOnExistingPolicy": "enableAll",
+  "lastRunDateTime": "2025-02-03T00:00:00Z",
+  "lastModifiedBy": "fb80ea0c-ecbb-4bb2-b484-37d01f2a776f",
+  "lastModifiedDateTime": "2025-09-21T19:09:52.9752849+00:00"
+}
 ```
 
