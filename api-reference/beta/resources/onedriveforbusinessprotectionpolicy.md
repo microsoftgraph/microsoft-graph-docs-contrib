@@ -46,8 +46,8 @@ Inherits from [protectionPolicyBase](../resources/protectionpolicybase.md).
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|driveInclusionRules|[driveProtectionRule](../resources/driveprotectionrule.md) collection|Contains the details of the OneDrive for Work or School protection rule.|
-|driveProtectionUnits|[driveProtectionUnit](../resources/driveprotectionunit.md) collection|Contains the protection units associated with a  OneDrive for Work or School protection policy.|
+|driveInclusionRules|[driveProtectionRule](../resources/driveprotectionrule.md) collection|Contains the details of the OneDrive for work or school protection rule.|
+|driveProtectionUnits|[driveProtectionUnit](../resources/driveprotectionunit.md) collection|Contains the protection units associated with a OneDrive for work or school protection policy.|
 
 ## JSON representation
 The following JSON representation shows the resource type.
