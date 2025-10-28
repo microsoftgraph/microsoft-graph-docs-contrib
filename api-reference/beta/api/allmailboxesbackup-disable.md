@@ -16,8 +16,8 @@ Namespace: microsoft.graph
 
 Disable full-service [backup](../resources/allmailboxesbackup.md) for Exchange. When this action is performed, all mailboxes previously attached to a policy remain in that policy, whereas other mailboxes transition to the `removed` state. Two modes are available for disabling full-service backup:
 
-* **EnableAll**: All existing policies become `active`, and the mailboxes attached to these policies are marked as `protected`.
-* **DisableAll**: All existing policies become `inactive`, and the mailboxes attached to these policies are marked as `unprotected`.
+- **EnableAll**: All existing policies become `active`, and the mailboxes attached to these policies are marked as `protected`.
+- **DisableAll**: All existing policies become `inactive`, and the mailboxes attached to these policies are marked as `unprotected`.
 
 ## Permissions
 
