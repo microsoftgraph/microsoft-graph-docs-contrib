@@ -150,10 +150,10 @@ items:
       href: ../../api/cloudpc-retrievesnapshots.md
     - name: Get frontline access state
       href: ../../api/cloudpc-getfrontlinecloudpcaccessstate.md
-    - name: Retrieve frontline Cloud PC detail
-      href: ../../api/cloudpc-retrievefrontlinecloudpcdetail.md
     - name: Get launch info (deprecated)
       href: ../../api/cloudpc-getcloudpclaunchinfo.md
+    - name: Retrieve frontline Cloud PC detail
+      href: ../../api/cloudpc-retrievefrontlinecloudpcdetail.md
   - name: Cloud PC audit event
     items:
     - name: Cloud PC audit event
