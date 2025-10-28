@@ -16,11 +16,11 @@ Namespace: microsoft.graph
 
 `setAutomaticLocation` updates the automatic work location. The automatic layer participates in the standard precedence model:
 
-- Precedence: manual > automatic > scheduled
-- Precision (within the same layer): more precise wins (e.g., office+building > office)
-- If manual is set, it overrides automatic and scheduled
+- Precedence: manual > automatic > scheduled.
+- Precision (within the same layer): more precise wins (for example, office+building > office).
+- If manual is set, it overrides automatic and scheduled.
 
-Use this operation from clients or services that detect location automatically (Teams, network/location agents, OEM docking apps). It does not clear manual or scheduled signals.
+Use this operation from clients or services that detect location automatically (Teams, network/location agents, OEM docking apps). It doesn't clear manual or scheduled signals.
 
 ## Permissions
 

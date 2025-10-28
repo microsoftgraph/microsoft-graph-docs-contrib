@@ -16,9 +16,9 @@ Namespace: microsoft.graph
 
 `setManualLocation` updates the manual work location signal for a user, the explicit value the user (or an authorized client) chooses to override any automatically detected or scheduled (WHL) location.
 
-- Precedence: manual > automatic > scheduled
-- Precision (within the same layer): more precise wins (e.g., office+building > office)
-- If manual is set, it overrides automatic and scheduled
+- Precedence: manual > automatic > scheduled.
+- Precision (within the same layer): more precise wins (for example, office+building > office).
+- If manual is set, it overrides automatic and scheduled.
 
 ## Permissions
 

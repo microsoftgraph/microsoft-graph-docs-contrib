@@ -148,6 +148,16 @@ Added the following new endpoints as supported request URLs for the [driveItem: 
 
 [Create](/graph/api/site-post-sites?view=graph-rest-beta&preserve-view=true) a SharePoint site and [monitor](/graph/api/site-getoperationstatus?view=graph-rest-beta&preserve-view=true) its creation status.
 
+### Teamwork and communications | Calls and online meetings
+- Added the **workLocationSource** enumeration type.
+- Added the **workLocationType** enumeration type.
+- Added the [userWorkLocation](/graph/api/resources/userWorkLocation?view=graph-rest-beta) resource.
+- Added the **workLocation** property to the [presence](/graph/api/resources/presence?view=graph-rest-beta) resource.
+- Added the [clearAutomaticLocation](/graph/api/presence-clearAutomaticLocation?view=graph-rest-beta) method to the [presence](/graph/api/resources/presence?view=graph-rest-beta) resource.
+- Added the [clearLocation](/graph/api/presence-clearLocation?view=graph-rest-beta) method to the [presence](https://learn.microsoft.com/en-us/graph/api/resources/presence?view=graph-rest-beta) resource.
+- Added the [setAutomaticLocation](/graph/api/presence-setAutomaticLocation?view=graph-rest-beta) method to the [presence](/graph/api/resources/presence?view=graph-rest-beta) resource.
+- Added the [setManualLocation](/graph/api/presence-setManualLocation?view=graph-rest-beta) method to the [presence](/graph/api/resources/presence?view=graph-rest-beta) resource.
+
 ## September 2025: New and generally available
 
 ### Applications
