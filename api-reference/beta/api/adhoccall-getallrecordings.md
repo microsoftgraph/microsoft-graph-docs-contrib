@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get all recordings from [adhoc call](adhoccall.md) instances initiated by a specific user.
+Get all recordings from [adhoc call](../resources/adhoccall.md) instances initiated by a specific user.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -93,6 +93,8 @@ The following example shows the response.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
+```
+
    
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('d4220f1b-4c12-436c-8a03-dc3e362f9d54')/adhocCalls",

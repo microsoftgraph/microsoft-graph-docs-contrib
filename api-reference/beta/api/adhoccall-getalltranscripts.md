@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get all transcripts from [adhoc call](adhoccall.md) instances initiated by a specific user.
+Get all transcripts from [adhoc call](../resources/adhoccall.md) instances initiated by a specific user.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -132,7 +132,7 @@ The following example shows the response.
         },
       },
     },
-  ],
+  ]
 }
 {
   date: "Tue, 07 Oct 2025 12:21:07 GMT",
