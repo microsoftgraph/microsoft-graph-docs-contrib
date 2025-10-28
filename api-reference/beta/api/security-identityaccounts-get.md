@@ -16,7 +16,7 @@ Namespace: microsoft.graph.security
 
 Read the properties and relationships of a single [identity security account](../resources/security-identityaccounts.md) object. This allows retrieving information about available identity accounts.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

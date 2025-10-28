@@ -94,7 +94,6 @@ Content-Type: application/json
 
 ---
 
-
 ### Response
 
 The following example shows the response.
