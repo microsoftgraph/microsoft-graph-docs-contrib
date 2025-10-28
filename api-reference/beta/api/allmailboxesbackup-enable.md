@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Enable full-service backup for Exchange. All mailboxes in Exchange are automatically protected, without requiring manual policy creation.
+Enable full-service [backup](../resources/allmailboxesbackup.md) for Exchange. All mailboxes in Exchange are automatically protected, without requiring manual policy creation.
 
 ## Permissions
 

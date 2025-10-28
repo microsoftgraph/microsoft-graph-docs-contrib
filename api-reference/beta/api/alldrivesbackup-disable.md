@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Disable full-service backup for OneDrive for work or school. When this action is performed, all drives previously attached to a policy remain in that policy, whereas other drives transition to the `removed` state. Two modes are available for disabling full-service backup:
+Disable full-service [backup](../resources/alldrivesbackup.md) for OneDrive for work or school. When this action is performed, all drives previously attached to a policy remain in that policy, whereas other drives transition to the `removed` state. Two modes are available for disabling full-service backup:
 
 * **EnableAll**: All existing policies become `active`, and the drives attached to these policies are marked as `protected`.
 * **DisableAll**: All existing policies become `inactive`, and the drives attached to these policies are marked as `unprotected`.

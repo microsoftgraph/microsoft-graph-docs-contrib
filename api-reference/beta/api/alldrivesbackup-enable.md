@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Enable full-service backup for OneDrive for work or school. All drives provisioned in OneDrive are automatically protected, without requiring manual policy creation.
+Enable full-service [backup](../resources/alldrivesbackup.md) for OneDrive for work or school. All drives provisioned in OneDrive are automatically protected, without requiring manual policy creation.
 
 ## Permissions
 

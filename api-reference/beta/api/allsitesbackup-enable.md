@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Enable full-service backup for SharePoint. All sites in SharePoint are automatically protected, without requiring manual policy creation.
+Enable full-service [backup](../resources/allsitesbackup.md) for SharePoint. All sites in SharePoint are automatically protected, without requiring manual policy creation.
 
 ## Permissions
 
