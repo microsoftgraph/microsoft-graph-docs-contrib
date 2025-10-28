@@ -71,12 +71,11 @@ If successful, this function returns a `200 OK` response code and a [callRecordi
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "adhoccallthis.getallrecordings",
-  "sampleKeys": ["d4220f1b-4c12-436c-8a03-dc3e362f9d54", "ktVizJvGAAAAnfCMlATZWzE5OmNkYWQ5MTQ4LWQ5MjYtNDczMS04NjE4LTM3MWU1ODdkZGVkMF9kNDIyMGYxYi00YzEyLTQzNmMtOGEwMy1kYzNlMzYyZjlkNTRAdW5xLmdibC5zcGFjZXOg2TlmYjdlNWMxZS04YWI4LTQ2NDctOTdhMS03Mzk5MDhkNDE3YjMtMTc1OTgyMTkyMS1SZWNvcmRpbmc="]
+  "name": "adhoccallthis.getallrecordings"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/users/d4220f1b-4c12-436c-8a03-dc3e362f9d54/adhocCalls/getAllRecordings(userId='d4220f1b-4c12-436c-8a03-dc3e362f9d54')(userId=d4220f1b-4c12-436c-8a03-dc3e362f9d54,startDateTime=2025-10-07T07:25:21.9730833Z,endDateTime=2025-10-07T07:25:52.4130833Z)
+GET https://graph.microsoft.com/beta/communications/adhocCalls/getAllRecordings(userId=d4220f1b-4c12-436c-8a03-dc3e362f9d54,startDateTime=2025-10-07T07:25:21.9730833Z,endDateTime=2025-10-07T07:25:52.4130833Z)
 ```
 
 ### Response
@@ -90,7 +89,6 @@ The following example shows the response.
   "@odata.type": "Collection(Microsoft.Teams.GraphSvc.callRecording)"
 }
 -->
-
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

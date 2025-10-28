@@ -75,13 +75,12 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/users/d4220f1b-4c12-436c-8a03-dc3e362f9d54/adhocCalls/getAllTranscripts(userId='d4220f1b-4c12-436c-8a03-dc3e362f9d54')
+GET https://graph.microsoft.com/beta/communications/adhocCalls/getAllTranscripts(userId=d4220f1b-4c12-436c-8a03-dc3e362f9d54,startDateTime=2025-10-07T07:25:21.9730833Z,endDateTime=2025-10-07T07:25:52.4130833Z)
 ```
 
 ### Response
 
 The following example shows the response.
-
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -89,12 +88,6 @@ The following example shows the response.
   "@odata.type": "Collection(Microsoft.Teams.GraphSvc.callTranscript)"
 }
 -->
-
-``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-```
-
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('d4220f1b-4c12-436c-8a03-dc3e362f9d54')/adhocCalls",
   "@odata.count": 2,
