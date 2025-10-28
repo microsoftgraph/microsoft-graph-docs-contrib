@@ -135,7 +135,8 @@ Content-type: application/json
       "attestationCertificates": [
           "dbe793efdf1945e2df25d93653a1e8a3268a9075"
       ],
-      "attestationLevel": "attested"
+      "attestationLevel": "attested",
+      "passkeyType": "deviceBound"
   }
 }
 ```

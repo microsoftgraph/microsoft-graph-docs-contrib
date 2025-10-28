@@ -134,7 +134,8 @@ Content-type: application/json
       "attestationCertificates": [
           "dbe793efdf1945e2df25d93653a1e8a3268a9075"
       ],
-      "attestationLevel": "attested"
+      "attestationLevel": "attested",
+      "passkeyType": "deviceBound"
     },
     {
       "id": "_jpuR-TGZgk6aQCLF3BQjA2",
@@ -145,7 +146,8 @@ Content-type: application/json
       "attestationCertificates": [
           "b479e7652167f574296e76bfa76731b8ccd22ed7"
       ],
-      "attestationLevel": "attested"
+      "attestationLevel": "attested",
+      "passkeyType": "deviceBound"
     }
   ]
 }
