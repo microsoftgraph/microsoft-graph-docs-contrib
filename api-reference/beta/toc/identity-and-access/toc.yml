@@ -3517,9 +3517,9 @@ items:
         href: ../../api/identityuserflow-delete.md
   - name: Verified ID
     items:
-    - name: Verified id profile
+    - name: Verified ID profile (preview)
       items:
-      - name: Verified id profile
+      - name: Verified ID profile (preview)
         href: ../../resources/verifiedidprofile.md
       - name: List
         href: ../../api/identityverifiedidroot-list-profiles.md
