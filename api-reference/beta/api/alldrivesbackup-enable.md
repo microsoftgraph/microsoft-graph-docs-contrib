@@ -1,6 +1,6 @@
 ---
 title: "allDrivesBackup: enable"
-description: "Enable full service backup for OneDriveForBusiness"
+description: "Enable full-service backup for OneDrive for work or school."
 author: "vidula-verma"
 ms.date: 10/15/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Enables full service backup for OneDrive for Business. All drives provisioned in OneDrive are protected automatically, without requiring manual policy creation.
+Enable full-service backup for OneDrive for work or school. All drives provisioned in OneDrive are automatically protected, without requiring manual policy creation.
 
 ## Permissions
 
@@ -49,7 +49,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this action returns a `202 Accepted` response code and a [allDrivesBackup](../resources/alldrivesbackup.md) object in the response body.
+If successful, this action returns a `202 Accepted` response code and an [allDrivesBackup](../resources/alldrivesbackup.md) object in the response body.
 
 ## Examples
 
@@ -65,7 +65,6 @@ The following example shows a request.
 POST https://graph.microsoft.com/beta/solutions/backupRestore/allDrivesBackup/enable 
 ```
 
-
 ### Response
 
 The following example shows the response.
@@ -80,13 +79,13 @@ The following example shows the response.
 HTTP/1.1 202 Accepted
 Content-Type: application/json
 
-{ 
-     "@odata.context": "/solutions/backupRestore/$metadata#allDrivesBackup/$entity",
-     "policyId": "03c27227-bff5-449d-8886-07b91b1fe8c0",
-     "status": "enabled", 
-     "lastRunDateTime": "0001-01-01T00:00:00Z",
-     "lastModifiedBy": "fb80ea0c-ecbb-4bb2-b484-37d01f2a776f",
-     "lastModifiedDateTime": "2025-09-21T19:09:52.9752849+00:00"
-} 
+{
+  "@odata.context": "/solutions/backupRestore/$metadata#allDrivesBackup/$entity",
+  "policyId": "03c27227-bff5-449d-8886-07b91b1fe8c0",
+  "status": "enabled",
+  "lastRunDateTime": "0001-01-01T00:00:00Z",
+  "lastModifiedBy": "fb80ea0c-ecbb-4bb2-b484-37d01f2a776f",
+  "lastModifiedDateTime": "2025-09-21T19:09:52.9752849+00:00"
+}
 ```
 
