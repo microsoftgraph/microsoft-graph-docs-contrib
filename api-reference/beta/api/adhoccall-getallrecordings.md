@@ -1,11 +1,11 @@
 ---
 title: "adhocCall: getAllRecordings"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+description: "Get recordings from all ad hoc calls initiated by a user"
+author: "sukanya"
 ms.date: 10/27/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
-doc_type: apiPageType
+ms.subservice: "teams"
+doc_type: apiPageType		   
 ---
 
 # adhocCall: getAllRecordings
@@ -14,7 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Get all recordings from [adhoc call](adhoccall.md) instances initiated by a specific user.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
@@ -35,18 +37,18 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 ``` http
 GET /communications/adhocCalls/getAllRecordings
-GET /users/{usersId}/adhocCalls/getAllRecordings
+GET /users/{usersId}/adhocCalls/getAllRecordings 
 ```
 
 ## Function parameters
+
 In the request URL, provide the following query parameters with values.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|userId|String|**TODO: Add Description**|
-|startDateTime|DateTimeOffset|**TODO: Add Description**|
-|endDateTime|DateTimeOffset|**TODO: Add Description**|
-
+|userId|String|The user identifier of the meeting organizer to filter for artifacts for meetings organized by the given user identifier.|
+|startDateTime|DateTimeOffset|Optional parameter to filter for artifacts created after the given start date. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2025 is `2025-01-01T00:00:00Z`.|
+|endDateTime|DateTimeOffset|Optional parameter to filter for artifacts created before the given end date. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2025 is `2025-01-01T00:00:00Z`.|
 
 ## Request headers
 
@@ -76,38 +78,76 @@ The following example shows a request.
 GET https://graph.microsoft.com/beta/communications/adhocCalls/getAllRecordings(userId='parameterValue',startDateTime=String (timestamp),endDateTime=String (timestamp))
 ```
 
-
 ### Response
 
 The following example shows the response.
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
+                
   "@odata.type": "Collection(Microsoft.Teams.GraphSvc.callRecording)"
 }
 -->
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-
+   
 {
-  "value": [
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('d4220f1b-4c12-436c-8a03-dc3e362f9d54')/adhocCalls",
+  "@odata.count": 2,
+  value: [
     {
-      "@odata.type": "#Microsoft.Teams.GraphSvc.callRecording",
-      "id": "String (identifier)",
-      "meetingId": "String",
-      "callId": "String",
-      "contentCorrelationId": "String",
-      "meetingOrganizer": {
-        "@odata.type": "microsoft.graph.identitySet"
+      id: "ktVizJvGAAAAnfCMlATZWzE5OmNkYWQ5MTQ4LWQ5MjYtNDczMS04NjE4LTM3MWU1ODdkZGVkMF9kNDIyMGYxYi00YzEyLTQzNmMtOGEwMy1kYzNlMzYyZjlkNTRAdW5xLmdibC5zcGFjZXOg2TlmYjdlNWMxZS04YWI4LTQ2NDctOTdhMS03Mzk5MDhkNDE3YjMtMTc1OTgyMTkyMS1SZWNvcmRpbmc=",
+      callId: "fb7e5c1e-8ab8-4647-97a1-739908d417b3",
+      contentCorrelationId: "7cc3ae2a-0aa9-4e47-9d85-e98e607d1af2-20251007_072521",
+      createdDateTime: "2025-10-07T07:25:21.9730833Z",
+      endDateTime: "2025-10-07T07:25:52.4130833Z",
+      recordingContentUrl: "https://graph.microsoft.com/beta/users/d4220f1b-4c12-436c-8a03-dc3e362f9d54/adhocCalls/fb7e5c1e-8ab8-4647-97a1-739908d417b3/recordings/ktVizJvGAAAAnfCMlATZWzE5OmNkYWQ5MTQ4LWQ5MjYtNDczMS04NjE4LTM3MWU1ODdkZGVkMF9kNDIyMGYxYi00YzEyLTQzNmMtOGEwMy1kYzNlMzYyZjlkNTRAdW5xLmdibC5zcGFjZXOg2TlmYjdlNWMxZS04YWI4LTQ2NDctOTdhMS03Mzk5MDhkNDE3YjMtMTc1OTgyMTkyMS1SZWNvcmRpbmc=/content",
+      meetingOrganizer: {
+        application: null,
+        device: null,
+        user: {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          id: "d4220f1b-4c12-436c-8a03-dc3e362f9d54",
+          displayName: null,
+          userIdentityType: "aadUser",
+          tenantId: "2432b57b-0abd-43db-aa7b-16eadd115d34",
+        },
       },
-      "createdDateTime": "String (timestamp)",
-      "endDateTime": "String (timestamp)",
-      "content": "Stream",
-      "recordingContentUrl": "String"
-    }
-  ]
+    },
+    {
+      id: "ktVizJvGAAAAnfCMlATZWzE5OmNkYWQ5MTQ4LWQ5MjYtNDczMS04NjE4LTM3MWU1ODdkZGVkMF9kNDIyMGYxYi00YzEyLTQzNmMtOGEwMy1kYzNlMzYyZjlkNTRAdW5xLmdibC5zcGFjZXOg2TkwNTQ3ZDUzOS0wNTExLTRiZDEtODRjZi01YTA3M2ZhYjcxMmQtMTc1OTgxODY3My1SZWNvcmRpbmc=",
+      callId: "0547d539-0511-4bd1-84cf-5a073fab712d",
+      contentCorrelationId: "94c3eb48-4271-4b60-b7b7-121b9d798eb3-20251007_063113",
+      createdDateTime: "2025-10-07T06:31:13.1759028Z",
+      endDateTime: "2025-10-07T06:31:26.5759028Z",
+      recordingContentUrl: "https://graph.microsoft.com/beta/users/d4220f1b-4c12-436c-8a03-dc3e362f9d54/adhocCalls/0547d539-0511-4bd1-84cf-5a073fab712d/recordings/ktVizJvGAAAAnfCMlATZWzE5OmNkYWQ5MTQ4LWQ5MjYtNDczMS04NjE4LTM3MWU1ODdkZGVkMF9kNDIyMGYxYi00YzEyLTQzNmMtOGEwMy1kYzNlMzYyZjlkNTRAdW5xLmdibC5zcGFjZXOg2TkwNTQ3ZDUzOS0wNTExLTRiZDEtODRjZi01YTA3M2ZhYjcxMmQtMTc1OTgxODY3My1SZWNvcmRpbmc=/content",
+      meetingOrganizer: {
+        application: null,
+        device: null,
+        user: {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          id: "d4220f1b-4c12-436c-8a03-dc3e362f9d54",
+          displayName: null,
+          userIdentityType: "aadUser",
+          tenantId: "2432b57b-0abd-43db-aa7b-16eadd115d34",
+        },
+      },
+    },
+  ],
 }
-```
-
+{
+  date: "Tue, 07 Oct 2025 12:24:14 GMT",
+  "content-type": "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=false;charset=utf-8",
+  "transfer-encoding": "chunked",
+  connection: "keep-alive",
+  vary: "Accept-Encoding",
+  "strict-transport-security": "max-age=31536000",
+  "request-id": "808c8c75-ad4c-416c-9359-8d8427b86ce8",
+  "client-request-id": "808c8c75-ad4c-416c-9359-8d8427b86ce8",
+  "x-ms-ags-diagnostic": "{\"ServerInfo\":{\"DataCenter\":\"Central India\",\"Slice\":\"E\",\"Ring\":\"3\",\"ScaleUnit\":\"001\",\"RoleInstance\":\"PN3PEPF000002AA\"}}",
+  "odata-version": "4.0",
+  "x-cache": "CONFIG_NOCACHE",
+}
