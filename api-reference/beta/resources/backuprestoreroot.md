@@ -36,7 +36,7 @@ Represents the Microsoft 365 Backup Storage service in a tenant.
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|allDrivesBackup|[allDrivesBackup](../resources//alldrivesbackup.md)| Full-service backup settings for OneDrive for work or school.|
+|allDrivesBackup|[allDrivesBackup](../resources/alldrivesbackup.md)| Full-service backup settings for OneDrive for work or school.|
 |allMailboxesBackup|[allMailboxesBackup](../resources/allmailboxesbackup.md)| Full-service backup settings for Exchange.|
 |allSitesbackup|[allSitesBackup](../resources/allsitesbackup.md)| Full-service backup settings for SharePoint.|
 |driveInclusionRules|[driveProtectionRule](../resources/driveprotectionrule.md) collection|The list of drive inclusion rules applied to the tenant.|
