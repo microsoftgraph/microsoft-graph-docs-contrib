@@ -58,6 +58,7 @@ The following example shows how to offboard a protection unit removed from a pol
 
 #### Request
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "protectionunitbase_offboard_example1"
@@ -66,6 +67,12 @@ The following example shows a request.
 ```
 POST https://graph.microsoft.com/v1.0/solutions/backupRestore/protectionUnits/89014d8c-71fe-4d00-a01a-31850bc5b32c/offboard
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/protectionunitbase-offboard-example1-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
@@ -120,6 +127,7 @@ The following example shows how to offboard a protection unit that is attached t
 
 #### Request
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "protectionunitbase_offboard_example2"
@@ -128,6 +136,12 @@ The following example shows a request.
 ``` http
 POST https://graph.microsoft.com/v1.0/solutions/backupRestore/protectionUnits/89014d8c-71fe-4d00-a01a-31850bc5b32c/offboard
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/protectionunitbase-offboard-example2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
