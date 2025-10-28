@@ -5447,6 +5447,8 @@ Possible values for user account types (group membership), per Windows definitio
 |:---|
 |deviceBound|
 |synced|
+|unknownFutureValue|
+
 ### siteTemplateType values 
 
 |Member|
