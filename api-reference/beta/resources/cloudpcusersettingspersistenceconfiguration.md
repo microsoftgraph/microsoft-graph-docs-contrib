@@ -27,7 +27,7 @@ Indicates the user settings persistence configuration while creating Cloud PCs f
 
 Describes the storage size for user settings persistence.
 
-| Member name         | Description                                                                          |
+| Member              | Description                                                                          |
 |:--------------------|:-------------------------------------------------------------------------------------|
 | fourGB              | Default. Indicates the storage size for persisting user application settings is 4GB. |
 | eightGB             | Indicates the storage size for persisting user application settings is 8GB.          |
