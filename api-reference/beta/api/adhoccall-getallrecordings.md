@@ -101,7 +101,7 @@ Content-Type: application/json
   "@odata.count": 2,
   value: [
     {
-      id: "ktVizJvGAAAAnfCMlATZWzE5OmNkYWQ5MTQ4LWQ5MjYtNDczMS04NjE4LTM3MWU1ODdkZGVkMF9kNDIyMGYxYi00YzEyLTQzNmMtOGEwMy1kYzNlMzYyZjlkNTRAdW5xLmdibC5zcGFjZXOg2TlmYjdlNWMxZS04YWI4LTQ2NDctOTdhMS03Mzk5MDhkNDE3YjMtMTc1OTgyMTkyMS1SZWNvcmRpbmc=",
+      ID: "ktVizJvGAAAAnfCMlATZWzE5OmNkYWQ5MTQ4LWQ5MjYtNDczMS04NjE4LTM3MWU1ODdkZGVkMF9kNDIyMGYxYi00YzEyLTQzNmMtOGEwMy1kYzNlMzYyZjlkNTRAdW5xLmdibC5zcGFjZXOg2TlmYjdlNWMxZS04YWI4LTQ2NDctOTdhMS03Mzk5MDhkNDE3YjMtMTc1OTgyMTkyMS1SZWNvcmRpbmc=",
       callId: "fb7e5c1e-8ab8-4647-97a1-739908d417b3",
       contentCorrelationId: "7cc3ae2a-0aa9-4e47-9d85-e98e607d1af2-20251007_072521",
       createdDateTime: "2025-10-07T07:25:21.9730833Z",
@@ -111,8 +111,8 @@ Content-Type: application/json
         application: null,
         device: null,
         user: {
-          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
-          id: "d4220f1b-4c12-436c-8a03-dc3e362f9d54",
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity,"
+          ID: "d4220f1b-4c12-436c-8a03-dc3e362f9d54",
           displayName: null,
           userIdentityType: "aadUser",
           tenantId: "2432b57b-0abd-43db-aa7b-16eadd115d34",
@@ -120,8 +120,8 @@ Content-Type: application/json
       },
     },
     {
-      id: "ktVizJvGAAAAnfCMlATZWzE5OmNkYWQ5MTQ4LWQ5MjYtNDczMS04NjE4LTM3MWU1ODdkZGVkMF9kNDIyMGYxYi00YzEyLTQzNmMtOGEwMy1kYzNlMzYyZjlkNTRAdW5xLmdibC5zcGFjZXOg2TkwNTQ3ZDUzOS0wNTExLTRiZDEtODRjZi01YTA3M2ZhYjcxMmQtMTc1OTgxODY3My1SZWNvcmRpbmc=",
-      callId: "0547d539-0511-4bd1-84cf-5a073fab712d",
+      ID: "ktVizJvGAAAAnfCMlATZWzE5OmNkYWQ5MTQ4LWQ5MjYtNDczMS04NjE4LTM3MWU1ODdkZGVkMF9kNDIyMGYxYi00YzEyLTQzNmMtOGEwMy1kYzNlMzYyZjlkNTRAdW5xLmdibC5zcGFjZXOg2TkwNTQ3ZDUzOS0wNTExLTRiZDEtODRjZi01YTA3M2ZhYjcxMmQtMTc1OTgxODY3My1SZWNvcmRpbmc=",
+      callID: "0547d539-0511-4bd1-84cf-5a073fab712d",
       contentCorrelationId: "94c3eb48-4271-4b60-b7b7-121b9d798eb3-20251007_063113",
       createdDateTime: "2025-10-07T06:31:13.1759028Z",
       endDateTime: "2025-10-07T06:31:26.5759028Z",
@@ -130,26 +130,26 @@ Content-Type: application/json
         application: null,
         device: null,
         user: {
-          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
-          id: "d4220f1b-4c12-436c-8a03-dc3e362f9d54",
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity,"
+          ID: "d4220f1b-4c12-436c-8a03-dc3e362f9d54",
           displayName: null,
           userIdentityType: "aadUser",
           tenantId: "2432b57b-0abd-43db-aa7b-16eadd115d34",
         },
       },
     },
-  ],
+  ]
 }
 {
   date: "Tue, 07 Oct 2025 12:24:14 GMT",
   "content-type": "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=false;charset=utf-8",
-  "transfer-encoding": "chunked",
-  connection: "keep-alive",
-  vary: "Accept-Encoding",
-  "strict-transport-security": "max-age=31536000",
-  "request-id": "808c8c75-ad4c-416c-9359-8d8427b86ce8",
-  "client-request-id": "808c8c75-ad4c-416c-9359-8d8427b86ce8",
+  "transfer-encoding": "chunked,"
+  connection: "keep-alive,"
+  vary: "Accept-Encoding,"
+  "strict-transport-security": "max-age=31536000,"
+  "request-ID": "808c8c75-ad4c-416c-9359-8d8427b86ce8,"
+  "client-request-ID": "808c8c75-ad4c-416c-9359-8d8427b86ce8,"
   "x-ms-ags-diagnostic": "{\"ServerInfo\":{\"DataCenter\":\"Central India\",\"Slice\":\"E\",\"Ring\":\"3\",\"ScaleUnit\":\"001\",\"RoleInstance\":\"PN3PEPF000002AA\"}}",
-  "odata-version": "4.0",
-  "x-cache": "CONFIG_NOCACHE",
+  "odata-version": "4.0,"
+  "x-cache": "CONFIG_NOCACHE,"
 }
