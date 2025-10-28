@@ -1,6 +1,6 @@
 ---
 title: "Get deployment logs"
-description: "Retrieve a single log by deployment ID that include the status of deployment performed through the Global Secure Access services."
+description: "Retrieve a single log by deployment ID that includes the status of deployment performed through the Global Secure Access services."
 author: cagautham
 ms.date: 10/14/2025
 ms.localizationpriority: medium
