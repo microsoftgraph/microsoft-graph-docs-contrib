@@ -8013,7 +8013,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "cloudPcUserSettingsPersistenceConfiguration",
           "ChangeType": "Addition",
-          "Description": "Added the [cloudPcUserSettingsPersistenceConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcusersettingspersistenceconfiguration?view=graph-rest-beta) resource.",
+          "Description": "Added the [cloudPcUserSettingsPersistenceConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcusersettingspersistenceconfiguration?view=graph-rest-beta) resource type.",
           "Target": "cloudPcUserSettingsPersistenceConfiguration"
         },
         {
