@@ -1,6 +1,6 @@
 ---
 title: "allSitesBackup: disable"
-description: "Disable full service backup for Sharepoint"
+description: "Disable full-service backup for SharePoint."
 author: "vidula-verma"
 ms.date: 10/15/2025
 ms.localizationpriority: medium
@@ -14,10 +14,10 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Disable full service backup for Sharepoint. When this action is performed, all sites previously attached to a policy remain in that policy, while other sites transition to the `removed` state. There are two modes for disabling full service backup:
+Disable full-service backup for SharePoint. When this action is performed, all sites previously attached to a policy remain in that policy, whereas other sites transition to the `removed` state. Two modes are available for disabling full-service backup:
 
-1. **EnableAll**: All existing policies become `active`, and sites attached to these policies are marked as `protected`.
-2. **DisableAll**: All existing policies become `inactive`, and sites attached to these policies are marked as `unprotected`.
+* **EnableAll**: All existing policies become `active`, and the sites attached to these policies are marked as `protected`.
+* **DisableAll**: All existing policies become `inactive`, and the sites attached to these policies are marked as `unprotected`.
 
 ## Permissions
 
@@ -37,7 +37,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-POST /solutions/backupRestore//allSitesBackup/disable
+POST /solutions/backupRestore/allSitesBackup/disable
 ```
 
 ## Request headers
@@ -55,9 +55,7 @@ The following table lists the parameters that are required when you call this ac
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|actionOnExistingPolicy|fullServiceBackupDisableMode|It determines after disabling fullService backup, in what state does the user wants its policy to be in. Inherited from [fullServiceBackupBase](../resources/fullservicebackupbase.md). The possible values are: `none`, `enableAll`, `disableAll`, `unknownFutureValue`.|
-
-
+|actionOnExistingPolicy|fullServiceBackupDisableMode|Determines the desired policy state after disabling full-service backup. The possible values are: `none`, `enableAll`, `disableAll`, `unknownFutureValue`. Inherited from [fullServiceBackupBase](../resources/fullservicebackupbase.md).|
 
 ## Response
 
@@ -82,7 +80,6 @@ Content-Type: application/json
 } 
 ```
 
-
 ### Response
 
 The following example shows the response.
@@ -97,14 +94,14 @@ The following example shows the response.
 HTTP/1.1 202 Accepted
 Content-Type: application/json
 
-{ 
-     "@odata.context": "/solutions/backupRestore/$metadata#allSitesBackup/$entity",
-     "policyId": "89014d8c-71fe-4d00-a01a-31850bc5b32c",
-     "status": "disabled", 
-     "actionOnExistingPolicy": "enableAll", 
-     "lastRunDateTime": "2025-02-03T00:00:00Z",
-     "lastModifiedBy": "fb80ea0c-ecbb-4bb2-b484-37d01f2a776f",
-     "lastModifiedDateTime": "2025-09-21T19:09:52.9752849+00:00"
-} 
+{
+  "@odata.context": "/solutions/backupRestore/$metadata#allSitesBackup/$entity",
+  "policyId": "89014d8c-71fe-4d00-a01a-31850bc5b32c",
+  "status": "disabled",
+  "actionOnExistingPolicy": "enableAll",
+  "lastRunDateTime": "2025-02-03T00:00:00Z",
+  "lastModifiedBy": "fb80ea0c-ecbb-4bb2-b484-37d01f2a776f",
+  "lastModifiedDateTime": "2025-09-21T19:09:52.9752849+00:00"
+}
 ```
 
