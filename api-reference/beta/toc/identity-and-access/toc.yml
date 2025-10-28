@@ -4271,7 +4271,7 @@ items:
     - name: List
       href: ../../api/networkaccess-networkaccessroot-list-deployments.md
     - name: Get
-      href: ../../api/networkaccess-networkaccessroot-list-deployments.md
+      href: ../../api/networkaccess-networkaccessroot-get-deployments.md
   - name: Settings
     items:
     - name: Cross-tenant access settings
