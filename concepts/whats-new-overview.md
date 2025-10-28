@@ -119,9 +119,9 @@ Use the [callEvent](/graph/api/resources/callevent) and [emergencyCallEvent](/gr
 ### Backup storage
 
 Use the new full-service backup APIs to simplify and scale your backup operations. These APIs enable you to back up resources directly from the moment they are created, making the backup process more efficient and convenient. The following resources are supported:
--[allDrivesBackup](/graph/api/resources/alldrivesbackup)
--[allMailboxesBackup](/graph/api/resources/allmailboxesbackup)
--[allSitesBackup](/graph/api/resources/allsitesbackup)
+- [allDrivesBackup](/graph/api/resources/alldrivesbackup)
+- [allMailboxesBackup](/graph/api/resources/allmailboxesbackup)
+- [allSitesBackup](/graph/api/resources/allsitesbackup)
 
 ### Calendars | Places
 
