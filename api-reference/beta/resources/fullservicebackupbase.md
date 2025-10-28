@@ -6,6 +6,7 @@ ms.date: 10/16/2025
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: resourcePageType
+toc.title: "Full-service backup"
 ---
 
 # fullServiceBackupBase resource type
