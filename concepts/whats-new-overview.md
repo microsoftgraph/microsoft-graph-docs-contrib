@@ -149,7 +149,7 @@ Added the following new endpoints as supported request URLs for the [driveItem: 
 
 ### Tasks and plans
 
-Use the extended properties API to store or get custom data in the [todoTask](/graph/api/resources/todotask?view=graph-rest-beta&preserve-view=true) resource.
+Use the extended properties API to store or get custom data in the [todoTask](/graph/api/resources/todotask?view=graph-rest-beta&preserve-view=true#methods) resource.
 
 ## September 2025: New and generally available
 
