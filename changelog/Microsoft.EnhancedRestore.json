@@ -39,7 +39,7 @@
             "ApiChange": "Resource",
             "ChangedApiName": "allDrivesBackup",
             "ChangeType": "Addition",
-            "Description": "Added the [allDrivesBackup](https://learn.microsoft.com/en-us/graph/api/resources/allDrivesBackup?view=graph-rest-beta) resource.",
+            "Description": "Added the [allDrivesBackup](https://learn.microsoft.com/en-us/graph/api/resources/allDrivesBackup?view=graph-rest-beta) resource and a supported method.",
             "Target": "allDrivesBackup"
           },
           {
@@ -47,7 +47,7 @@
             "ApiChange": "Resource",
             "ChangedApiName": "allMailboxesBackup",
             "ChangeType": "Addition",
-            "Description": "Added the [allMailboxesBackup](https://learn.microsoft.com/en-us/graph/api/resources/allMailboxesBackup?view=graph-rest-beta) resource.",
+            "Description": "Added the [allMailboxesBackup](https://learn.microsoft.com/en-us/graph/api/resources/allMailboxesBackup?view=graph-rest-beta) resource and a supported method.",
             "Target": "allMailboxesBackup"
           },
           {
@@ -55,7 +55,7 @@
             "ApiChange": "Resource",
             "ChangedApiName": "allSitesBackup",
             "ChangeType": "Addition",
-            "Description": "Added the [allSitesBackup](https://learn.microsoft.com/en-us/graph/api/resources/allSitesBackup?view=graph-rest-beta) resource.",
+            "Description": "Added the [allSitesBackup](https://learn.microsoft.com/en-us/graph/api/resources/allSitesBackup?view=graph-rest-beta) resource and a supported method.",
             "Target": "allSitesBackup"
           },
           {
@@ -97,6 +97,30 @@
             "ChangeType": "Addition",
             "Description": "Added the **protectionMode** property to the [protectionPolicyBase](https://learn.microsoft.com/en-us/graph/api/resources/protectionPolicyBase?view=graph-rest-beta) resource.",
             "Target": "protectionPolicyBase"
+          },
+          {
+            "Id": "0e09184b-05cc-4833-9306-1d6c82c33826",
+            "ApiChange": "Property",
+            "ChangedApiName": "protectionMode",
+            "ChangeType": "Addition",
+            "Description": "Added the **protectionMode** property to the [exchangeProtectionPolicy](https://learn.microsoft.com/en-us/graph/api/resources/exchangeProtectionPolicy?view=graph-rest-beta) resource.",
+            "Target": "exchangeProtectionPolicy"
+          },
+          {
+            "Id": "0e09184b-05cc-4833-9306-1d6c82c33826",
+            "ApiChange": "Property",
+            "ChangedApiName": "protectionMode",
+            "ChangeType": "Addition",
+            "Description": "Added the **protectionMode** property to the [oneDriveForBusinessProtectionPolicy](https://learn.microsoft.com/en-us/graph/api/resources/oneDriveForBusinessProtectionPolicy?view=graph-rest-beta) resource.",
+            "Target": "oneDriveForBusinessProtectionPolicy"
+          },
+          {
+            "Id": "0e09184b-05cc-4833-9306-1d6c82c33826",
+            "ApiChange": "Property",
+            "ChangedApiName": "protectionMode",
+            "ChangeType": "Addition",
+            "Description": "Added the **protectionMode** property to the [sharePointProtectionPolicy](https://learn.microsoft.com/en-us/graph/api/resources/sharePointProtectionPolicy?view=graph-rest-beta) resource.",
+            "Target": "sharePointProtectionPolicy"
           },
           {
             "Id": "0e09184b-05cc-4833-9306-1d6c82c33826",
