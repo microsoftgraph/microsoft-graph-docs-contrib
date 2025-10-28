@@ -149,6 +149,7 @@
       "resources": [
         "backupRestoreRoot",
         "emailNotificationsSetting",
+        "fullServiceBackupBase",
         "protectionPolicyBase",
         "protectionRuleBase",
         "protectionUnitBase",
@@ -159,6 +160,14 @@
         "serviceApp"
       ],
       "childNodes": [
+        {
+          "name": "Full-service backup",
+          "resources": [
+            "allDrivesBackup",
+            "allMailboxesBackup",
+            "allSitesBackup"
+          ]
+        },
         {
           "name": "Protection policy",
           "resources": [
