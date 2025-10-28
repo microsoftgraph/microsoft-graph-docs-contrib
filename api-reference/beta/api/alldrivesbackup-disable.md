@@ -1,6 +1,6 @@
 ---
 title: "allDrivesBackup: disable"
-description: "Disable full service backup for OneDriveForBusiness"
+description: "Disable full-service backup for OneDrive for work or school."
 author: "vidula-verma"
 ms.date: 10/15/2025
 ms.localizationpriority: medium
@@ -14,10 +14,10 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Disable full service backup for OneDrive for Business. When this action is performed, all drives previously attached to a policy remain in that policy, while other drives transition to the `removed` state. There are two modes for disabling full service backup:
+Disable full-service backup for OneDrive for work or school. When this action is performed, all drives previously attached to a policy remain in that policy, whereas other drives transition to the `removed` state. Two modes are available for disabling full-service backup:
 
-1. **EnableAll**: All existing policies become `active`, and drives attached to these policies are marked as `protected`.
-2. **DisableAll**: All existing policies become `inactive`, and drives attached to these policies are marked as `unprotected`.
+* **EnableAll**: All existing policies become `active`, and the drives attached to these policies are marked as `protected`.
+2. **DisableAll**: All existing policies become `inactive`, and the drives attached to these policies are marked as `unprotected`.
 
 ## Permissions
 
@@ -55,13 +55,11 @@ The following table lists the parameters that are required when you call this ac
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|actionOnExistingPolicy|fullServiceBackupDisableMode|It determines after disabling fullService backup, in what state does the user wants its policy to be in. Inherited from [fullServiceBackupBase](../resources/fullservicebackupbase.md). The possible values are: `none`, `enableAll`, `disableAll`, `unknownFutureValue`.|
-
-
+|actionOnExistingPolicy|fullServiceBackupDisableMode|Determines the desired policy state after disabling full-service backup. The possible values are: `none`, `enableAll`, `disableAll`, `unknownFutureValue`. Inherited from [fullServiceBackupBase](../resources/fullservicebackupbase.md).|
 
 ## Response
 
-If successful, this action returns a `202 Accepted` response code and a [allDrivesBackup](../resources/alldrivesbackup.md) in the response body.
+If successful, this action returns a `202 Accepted` response code and an [allDrivesBackup](../resources/alldrivesbackup.md) object in the response body.
 
 ## Examples
 
@@ -82,7 +80,6 @@ Content-Type: application/json
 } 
 ```
 
-
 ### Response
 
 The following example shows the response.
@@ -97,14 +94,14 @@ The following example shows the response.
 HTTP/1.1 202 Accepted
 Content-Type: application/json
 
-{ 
-    "@odata.context": "/solutions/backupRestore/$metadata#allDrivesBackup/$entity",
-    "policyId": "03c27227-bff5-449d-8886-07b91b1fe8c0",
-    "status": "disabled", 
-    "actionOnExistingPolicy": "enableAll",
-    "lastRunDateTime": "2025-02-03T00:00:00Z",
-    "lastModifiedBy": "fb80ea0c-ecbb-4bb2-b484-37d01f2a776f",
-    "lastModifiedDateTime": "2025-09-21T19:09:52.9752849+00:00"
-  } 
+{
+  "@odata.context": "/solutions/backupRestore/$metadata#allDrivesBackup/$entity",
+  "policyId": "03c27227-bff5-449d-8886-07b91b1fe8c0",
+  "status": "disabled",
+  "actionOnExistingPolicy": "enableAll",
+  "lastRunDateTime": "2025-02-03T00:00:00Z",
+  "lastModifiedBy": "fb80ea0c-ecbb-4bb2-b484-37d01f2a776f",
+  "lastModifiedDateTime": "2025-09-21T19:09:52.9752849+00:00"
+}
 ```
 
