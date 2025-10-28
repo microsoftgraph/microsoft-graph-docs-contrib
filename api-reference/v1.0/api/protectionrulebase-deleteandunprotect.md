@@ -62,6 +62,7 @@ The following example shows how to delete a **driveInclusionRule** associated wi
 #### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "driveprotectionrulethis.deleteandunprotect"
@@ -70,6 +71,12 @@ The following example shows a request.
 ``` http
 POST https://graph.microsoft.com/v1.0/solutions/backupRestore/oneDriveForBusinessProtectionPolicies/71633878-8321-4950-bfaf-ed285bdd1461/driveInclusionRules/61633878-8321-4950-bfaf-ed285bdd1461/deleteAndUnprotect
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/driveprotectionrulethisdeleteandunprotect-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
@@ -111,6 +118,7 @@ The following example shows how to delete a **mailboxInclusionRule** associated 
 #### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "mailboxprotectionrulethis.deleteandunprotect"
@@ -119,6 +127,12 @@ The following example shows a request.
 ``` http
 POST https://graph.microsoft.com/v1.0/solutions/backupRestore/exchangeProtectionPolicies/6b0991b9-e7d4-4794-86fa-2a3f2a4e3177/mailboxInclusionRules/52147fb9-2682-47bc-a8f6-6c38c1ff498d/deleteAndUnprotect
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/mailboxprotectionrulethisdeleteandunprotect-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 

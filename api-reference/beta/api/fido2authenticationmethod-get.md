@@ -129,6 +129,7 @@ Content-type: application/json
       "id": "-2_GRUg2-HYz6_1YG4YRAQ2",
       "displayName": "Red key",
       "createdDateTime": "2020-08-10T06:44:09Z",
+      "lastUsedDateTime": "2022-11-06T23:16:12Z",
       "aaGuid": "2fc0579f-8113-47ea-b116-555a8db9202a",
       "model": "NFC key",
       "attestationCertificates": [

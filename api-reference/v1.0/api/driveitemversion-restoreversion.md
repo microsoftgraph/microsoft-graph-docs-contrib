@@ -1,19 +1,18 @@
 ---
-author: spgraph-docs-team
-description: "Restore a previous version of a DriveItem to be the current version. This will create a new version with the contents of the previous version, but preserves all existing versions of the file."
-ms.date: 09/10/2017
-title: Restore a previous version
+title: "driveItemVersion: restoreVersion"
+description: "Restore a previous version of a driveItem to be the current version."
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
+author: "spgraph-docs-team"
 doc_type: apiPageType
+ms.date: 03/14/2024
 ---
-# Restore a previous version of a DriveItem
+
+# driveItemVersion: restoreVersion
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-Restore a previous version of a DriveItem to be the current version. This will create a new version with the contents of the previous version, but preserves all existing versions of the file.
+Restore a previous [version](../resources/driveitemversion.md) of a [driveItem](../resources/driveitem.md) to be the current **version**. This operation creates a new version with the contents of the previous version, and it preserves all existing versions of the file.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -21,8 +20,8 @@ Restore a previous version of a DriveItem to be the current version. This will c
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "permissions", "name": "driveitemversion_restore" } -->
-[!INCLUDE [permissions-table](../includes/permissions/driveitemversion-restore-permissions.md)]
+<!-- { "blockType": "permissions", "name": "driveitemversion_restoreversion" } -->
+[!INCLUDE [permissions-table](../includes/permissions/driveitemversion-restoreversion-permissions.md)]
 
 [!INCLUDE [app-permissions](../includes/sharepoint-embedded-app-driveitem-permissions.md)]
 
@@ -38,6 +37,13 @@ POST /sites/{siteId}/drive/items/{itemId}/versions/{version-id}/restoreVersion
 POST /users/{userId}/drive/items/{itemId}/versions/{version-id}/restoreVersion
 ```
 
+## Request headers
+
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+|Content-Type|application/json. Required.|
+
 ### Request body
 
 No request body is required.
@@ -51,7 +57,7 @@ This example restores a version of a file identified by `{item-id}` and `{versio
 <!-- { "blockType": "request", "name": "restore-item-version", "scopes": "files.readwrite", "target": "action" } -->
 
 ```http
-POST https://graph.microsoft.com/beta/drives/{drive-id}/items/{item-id}/versions/{version-id}/restoreVersion
+POST https://graph.microsoft.com/v1.0/drives/{drive-id}/items/{item-id}/versions/{version-id}/restoreVersion
 ```
 
 # [C#](#tab/csharp)
@@ -86,18 +92,17 @@ POST https://graph.microsoft.com/beta/drives/{drive-id}/items/{item-id}/versions
 
 ## Response
 
-If successful, the API call returns a `204 No content`.
+If successful, the API call returns a `204 No Content`.
 
 <!-- { "blockType": "response" } -->
 
 ```http
-HTTP/1.1 204 No content
+HTTP/1.1 204 No Content
 ```
 
 [item-resource]: ../resources/driveitem.md
 
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Create a copy of an existing item.",
   "keywords": "copy existing item",
@@ -105,7 +110,5 @@ HTTP/1.1 204 No content
   "tocPath": "Items/Copy",
   "suppressions": [
   ]
-}
--->
-
+} -->
 

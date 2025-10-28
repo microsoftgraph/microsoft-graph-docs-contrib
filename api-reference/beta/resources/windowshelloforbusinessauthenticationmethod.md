@@ -34,6 +34,7 @@ This is a derived type that inherits from the [authenticationMethod](authenticat
 |displayName|String|The name of the device on which Windows Hello for Business is registered|
 |id|String|A unique identifier for this authentication method. Inherited from [authenticationMethod](../resources/authenticationmethod.md)|
 |keyStrength|authenticationMethodKeyStrength|Key strength of this Windows Hello for Business key. Possible values are: `normal`, `weak`, `unknown`.|
+|lastUsedDateTime|DateTimeOffset|The date and time the authentication method was last used by the user. Read-only. Optional. This optional value is `null` if the authentication method doesn't populate it. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [authenticationMethod](../resources/authenticationmethod.md).|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -55,6 +56,7 @@ The following JSON representation shows the resource type.
   "id": "String (Identifier)",
   "displayName": "String",
   "createdDateTime": "String (timestamp)",
-  "keyStrength": {"@odata.type": "microsoft.graph.authenticationMethodKeyStrength"}
+  "keyStrength": {"@odata.type": "microsoft.graph.authenticationMethodKeyStrength"},
+  "lastUsedDateTime": "String (timestamp)",
 }
 ```

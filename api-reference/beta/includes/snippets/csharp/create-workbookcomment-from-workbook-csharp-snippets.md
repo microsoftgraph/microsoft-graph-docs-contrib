@@ -11,14 +11,9 @@ using Microsoft.Graph.Beta.Models;
 
 var requestBody = new WorkbookComment
 {
+	CellAddress = "Sheet1!A1",
 	Content = "This is my comment.",
 	ContentType = "plain",
-	AdditionalData = new Dictionary<string, object>
-	{
-		{
-			"cellAddress" , "Sheet1!A1"
-		},
-	},
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp

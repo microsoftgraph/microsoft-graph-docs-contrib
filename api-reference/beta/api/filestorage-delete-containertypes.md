@@ -18,7 +18,7 @@ Delete a [fileStorageContainerType](../resources/filestoragecontainertype.md) ob
 
 >**Note**: Currently, only trial **fileStorageContainerType** objects can be deleted.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

@@ -1,6 +1,6 @@
 ---
-title: "Get a DriveItemVersion resource (preview)"
-description: "Retrieve the metadata for a specific version of a DriveItem."
+title: "Get driveItemVersion"
+description: "Retrieve the metadata for a specific version of a driveItem."
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: apiPageType
@@ -8,13 +8,13 @@ author: "spgraph-docs-team"
 ms.date: 04/05/2024
 ---
 
-# Get a DriveItemVersion resource (preview)
+# Get driveItemVersion
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the metadata for a specific version of a [DriveItem](../resources/driveitem.md).
+Retrieve the metadata for a specific [version](../resources/driveitemversion.md) of a [driveItem](../resources/driveitem.md).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

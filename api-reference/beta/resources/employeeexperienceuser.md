@@ -21,7 +21,7 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List assignedRoles](../api/employeeexperienceuser-list-assignedroles.md)|[engagementRole](../resources/engagementrole.md) collection|Get the list of Viva Engage roles assigned to a user.|
+|[List assigned roles](../api/employeeexperienceuser-list-assignedroles.md)|[engagementRole](../resources/engagementrole.md) collection|Get a list of all the [roles](../resources/engagementrole.md) assigned to a user in Viva Engage.|
 
 ## Properties
 
@@ -45,7 +45,6 @@ The following JSON representation shows the resource type.
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.employeeExperienceUser",
-  "id": "String (identifier)"
+  "@odata.type": "#microsoft.graph.employeeExperienceUser"
 }
 ```

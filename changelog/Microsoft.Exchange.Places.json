@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "wifi",
+          "ChangeType": "Change",
+          "Description": "Added the `wifi` member to the **workplaceSensorType** enumeration.",
+          "Target": "workplaceSensorType"
+        }
+      ],
+      "Id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-10-27T00:00:00.0000000Z",
+      "WorkloadArea": "Calendars",
+      "SubArea": "Places"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "67d4720a-8fd3-415d-bc76-1f71ca43e1e0",
           "ApiChange": "Enum type",
           "ChangedApiName": "workplaceSensorType",

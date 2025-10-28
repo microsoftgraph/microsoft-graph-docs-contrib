@@ -264,7 +264,8 @@ Content-Type: application/json
     "productType": null,
     "provisionedDateTime": "2025-04-23T10:29:57Z",
     "sharedDeviceDetail": {
-      "assignedToUserPrincipalName": "john.doe@contoso.onmicrosoft.com"
+      "assignedToUserPrincipalName": "john.doe@contoso.onmicrosoft.com",
+      "sessionStartDateTime": "2025-09-08T10:10:00Z"
     },
     "groupDetail": {
         "groupId": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",

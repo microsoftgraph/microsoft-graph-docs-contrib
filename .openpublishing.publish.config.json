@@ -104,47 +104,56 @@
     {
       "path_to_root": "concepts/tutorials/includes/dotnet/src",
       "url": "https://github.com/microsoftgraph/msgraph-training-dotnet",
-      "branch": "main"
+      "branch": "main",
+      "branch_mapping": {}
     },
     {
       "path_to_root": "concepts/tutorials/includes/go/src",
       "url": "https://github.com/microsoftgraph/msgraph-training-go",
-      "branch": "main"
+      "branch": "main",
+      "branch_mapping": {}
     },
     {
       "path_to_root": "concepts/tutorials/includes/java/src",
       "url": "https://github.com/microsoftgraph/msgraph-training-java",
-      "branch": "main"
+      "branch": "main",
+      "branch_mapping": {}
     },
     {
       "path_to_root": "concepts/tutorials/includes/javascript/src",
       "url": "https://github.com/microsoftgraph/msgraph-training-javascript",
-      "branch": "main"
+      "branch": "main",
+      "branch_mapping": {}
     },
     {
       "path_to_root": "concepts/tutorials/includes/php/src",
       "url": "https://github.com/microsoftgraph/msgraph-training-php",
-      "branch": "main"
+      "branch": "main",
+      "branch_mapping": {}
     },
     {
       "path_to_root": "concepts/tutorials/includes/power-automate/src",
       "url": "https://github.com/microsoftgraph/msgraph-training-powerautomate",
-      "branch": "main"
+      "branch": "main",
+      "branch_mapping": {}
     },
     {
       "path_to_root": "concepts/tutorials/includes/powershell/src",
       "url": "https://github.com/microsoftgraph/msgraph-training-powershell",
-      "branch": "main"
+      "branch": "main",
+      "branch_mapping": {}
     },
     {
       "path_to_root": "concepts/tutorials/includes/python/src",
       "url": "https://github.com/microsoftgraph/msgraph-training-python",
-      "branch": "main"
+      "branch": "main",
+      "branch_mapping": {}
     },
     {
       "path_to_root": "concepts/tutorials/includes/typescript/src",
       "url": "https://github.com/microsoftgraph/msgraph-training-typescript",
-      "branch": "main"
+      "branch": "main",
+      "branch_mapping": {}
     },
     {
       "path_to_root": "reusable-content",
@@ -152,7 +161,6 @@
       "branch": "main",
       "branch_mapping": {}
     }
-
   ],
   "branch_target_mapping": {},
   "targets": {},

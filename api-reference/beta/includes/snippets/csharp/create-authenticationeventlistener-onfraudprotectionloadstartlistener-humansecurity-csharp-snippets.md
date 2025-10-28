@@ -8,9 +8,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Dependencies
 using Microsoft.Graph.Beta.Models;
-using Microsoft.Kiota.Abstractions.Serialization;
 
-var requestBody = new AuthenticationEventListener
+var requestBody = new OnFraudProtectionLoadStartListener
 {
 	OdataType = "#microsoft.graph.onFraudProtectionLoadStartListener",
 	Conditions = new AuthenticationConditions
@@ -26,34 +25,17 @@ var requestBody = new AuthenticationEventListener
 			},
 		},
 	},
-	AdditionalData = new Dictionary<string, object>
+	Handler = new OnFraudProtectionLoadStartExternalUsersAuthHandler
 	{
+		OdataType = "#microsoft.graph.onFraudProtectionLoadStartExternalUsersAuthHandler",
+		SignUp = new FraudProtectionProviderConfiguration
 		{
-			"handler" , new UntypedObject(new Dictionary<string, UntypedNode>
+			OdataType = "#microsoft.graph.fraudProtectionProviderConfiguration",
+			FraudProtectionProvider = new HumanSecurityFraudProtectionProvider
 			{
-				{
-					"@odata.type", new UntypedString("#microsoft.graph.onFraudProtectionLoadStartExternalUsersAuthHandler")
-				},
-				{
-					"signUp", new UntypedObject(new Dictionary<string, UntypedNode>
-					{
-						{
-							"@odata.type", new UntypedString("#microsoft.graph.fraudProtectionProviderConfiguration")
-						},
-						{
-							"fraudProtectionProvider", new UntypedObject(new Dictionary<string, UntypedNode>
-							{
-								{
-									"@odata.type", new UntypedString("#microsoft.graph.humanSecurityFraudProtectionProvider")
-								},
-								{
-									"id", new UntypedString("fabe5100-cc02-46c1-bd0e-ce885fe367fd")
-								},
-							})
-						},
-					})
-				},
-			})
+				OdataType = "#microsoft.graph.humanSecurityFraudProtectionProvider",
+				Id = "fabe5100-cc02-46c1-bd0e-ce885fe367fd",
+			},
 		},
 	},
 };

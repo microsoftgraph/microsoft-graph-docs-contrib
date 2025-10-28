@@ -18,7 +18,7 @@ Delete a [fileStorageContainerTypeRegistration](../resources/filestoragecontaine
 
 A registration can only be deleted if it has neither [containers](filestorage-list-containers.md) nor [deleted containers](filestorage-list-deletedcontainers.md)
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

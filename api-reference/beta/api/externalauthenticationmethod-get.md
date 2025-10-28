@@ -35,9 +35,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { 
   "blockType": "permissions", 
-  "name": "externalauthenticationmethod_get_2",
+  "name": "externalauthenticationmethod_get_2", 
   "requestUrls": ["GET /users/{usersId}/authentication/externalAuthenticationMethods/{externalAuthenticationMethodId}"]
-} -->
+ } -->
 [!INCLUDE [permissions-table](../includes/permissions/externalauthenticationmethod-get-2-permissions.md)]
 
 [!INCLUDE [rbac-authentication-methods-apis-read-others](../includes/rbac-for-apis/rbac-authentication-methods-apis-read-others.md)]
@@ -146,7 +146,8 @@ Content-Type: application/json
     "id": "78381c69-811f-51f6-66ec-c2c2aa0e2b46",
     "createdDateTime": "2025-04-01T00:00:00Z",
     "configurationId": "26310fee-860b-4eab-8749-ab730dcf335e",
-    "displayName": "Adatum"
+    "displayName": "Adatum",
+    "lastUsedDateTime": null
   }
 }
 ```

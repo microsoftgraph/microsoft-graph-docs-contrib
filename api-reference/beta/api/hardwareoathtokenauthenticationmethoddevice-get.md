@@ -118,6 +118,7 @@ Content-Type: application/json
   "value": {
     "@odata.type": "#microsoft.graph.hardwareOathTokenAuthenticationMethodDevice",
     "id": "aad49556-####-####-####-############",
+    "lastUsedDateTime": null,
     "displayName": "Amy Masters Token",
     "serialNumber": "TOTP123456",
     "manufacturer": "Contoso",

@@ -144,6 +144,7 @@ Content-type: application/json
   "phoneNumber": "+1 2065555555",
   "phoneType": "mobile",
   "smsSignInState": "ready",
+  "lastUsedDateTime": "2022-11-06T23:16:12Z",
   "id": "3179e48a-750b-4051-897c-87b9720928f7"
 }
 ```

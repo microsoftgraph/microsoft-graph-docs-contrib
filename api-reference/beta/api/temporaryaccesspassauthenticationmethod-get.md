@@ -124,6 +124,7 @@ Content-Type: application/json
     "id": "6f1967b7-15e8-4935-ac26-d50770ed07a7",
     "temporaryAccessPass": null,
     "createdDateTime": "2022-06-02T16:21:09.5893903Z",
+    "lastUsedDateTime": null,
     "startDateTime": "2022-06-05T00:00:00Z",
     "lifetimeInMinutes": 60,
     "isUsableOnce": false,

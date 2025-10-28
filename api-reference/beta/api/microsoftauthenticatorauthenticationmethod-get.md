@@ -131,6 +131,7 @@ Content-Type: application/json
     "deviceTag": "",
     "phoneAppVersion": "6.5.4",
     "createdDateTime": "2020-12-03T23:16:12Z",
+    "lastUsedDateTime": "2022-11-06T23:16:12Z",
     "clientAppName": "microsoftAuthenticator"
   }
 }

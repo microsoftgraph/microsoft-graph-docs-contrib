@@ -23,7 +23,7 @@ Update the properties of a [fileStorageContainerTypeRegistration](../resources/f
 
 ETag is used for optimistic concurrency control. It must match the value from [Create](./filestorage-post-containertyperegistrations.md), [Get](./filestoragecontainertyperegistration-get.md) or the previous Update.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

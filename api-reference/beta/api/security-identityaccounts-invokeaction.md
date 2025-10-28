@@ -16,7 +16,7 @@ Namespace: microsoft.graph.security
 
 Perform actions such as revoking accounts and forcing password reset for [identity accounts](../resources/security-identityaccounts.md) that are observed in Microsoft Defender for Identity. This action allows reading and performing identity security actions on behalf of the signed-in identity.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

@@ -36,9 +36,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { 
   "blockType": "permissions", 
-  "name": "authentication_list_externalauthenticationmethods_2",
+  "name": "authentication_list_externalauthenticationmethods_2", 
   "requestUrls": ["GET /users/{usersId}/authentication/externalAuthenticationMethods"]
-} -->
+ } -->
 [!INCLUDE [permissions-table](../includes/permissions/authentication-list-externalauthenticationmethods-2-permissions.md)]
 
 [!INCLUDE [rbac-authentication-methods-apis-read-others](../includes/rbac-for-apis/rbac-authentication-methods-apis-read-others.md)]

@@ -5448,4 +5448,11 @@ Possible values for user account types (group membership), per Windows definitio
 |:---|
 |standard|
 |fullServiceBackup|
+### siteTemplateType values 
+
+|Member|
+|:---|
+|sitepagepublishing|
+|group|
+|sts|
 |unknownFutureValue|

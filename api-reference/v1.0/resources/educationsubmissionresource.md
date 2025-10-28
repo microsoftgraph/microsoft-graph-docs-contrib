@@ -22,20 +22,23 @@ The wrapper adds a pointer to the assignment resource if the resource was copied
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[List submission resources](../api/educationsubmission-list-resources.md) | [educationSubmissionResource](educationsubmissionresource.md) objects |Returns a list of **educationSubmissionResource** objects.|
-|[Get submission resource](../api/educationsubmissionresource-get.md) | [educationSubmissionResource](educationsubmissionresource.md) |Read properties and relationships of an **educationSubmissionResource** object.|
-|[Delete submission resource](../api/educationsubmissionresource-delete.md) | None |Delete an **educationSubmissionResource** object. |
+|[List](../api/educationsubmission-list-resources.md) | [educationSubmissionResource](educationsubmissionresource.md) objects |Returns a list of **educationSubmissionResource** objects.|
+|[Get](../api/educationsubmissionresource-get.md) | [educationSubmissionResource](educationsubmissionresource.md) |Read properties and relationships of an **educationSubmissionResource** object.|
+|[Delete](../api/educationsubmissionresource-delete.md) | None |Delete an **educationSubmissionResource** object. |
+|[List dependent resources](../api/educationsubmissionresource-list-dependentresources.md) | [educationSubmissionResource](../resources/educationsubmissionresource.md) collection |List the dependent [education submission resources](../resources/educationsubmissionresource.md) for a given [education submission resource](../resources/educationsubmissionresource.md).|
 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|assignmentResourceUrl|String|Pointer to the assignment from which the resource was copied, and if null, the student uploaded the resource.|
+|assignmentResourceUrl|String|Pointer to the assignment from which the resource was copied. If the value is `null`, the student uploaded the resource.|
 |id|String| Read-only.|
 |resource|[educationResource](educationresource.md)|Resource object.|
 
 ## Relationships
-None
 
+| Relationship | Type |Description|
+|:---------------|:--------|:----------|
+|dependentResources|[educationSubmissionResource](educationsubmissionresource.md) collection|A collection of submission resources that depend on the parent **educationSubmissionResource**.|
 
 ## JSON representation
 

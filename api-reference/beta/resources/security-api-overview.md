@@ -140,6 +140,7 @@ The Defender for Identity sensors management APIs allows you to:
 - Identify servers that are ready to be activated with the unified agent.
 - Enable or disable the automatic activation of eligible servers for the unified agent.
 - Activate or deactivate the unified agent on eligible servers.
+- Enable or disable the automatic enabling of the required events auditing configuration during the sensor’s activation.
 
 ## Incidents
 
