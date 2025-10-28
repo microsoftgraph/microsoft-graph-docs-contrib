@@ -36,6 +36,9 @@ Represents the Microsoft 365 Backup Storage service in a tenant.
 
 |Relationship|Type|Description|
 |:---|:---|:---|
+|allDrivesBackup|[allDrivesBackup](../resources//alldrivesbackup.md)| Full-service backup settings for OneDrive for work or school.|
+|allMailboxesBackup|[allMailboxesBackup](../resources/allmailboxesbackup.md)| Full-service backup settings for Exchange.|
+|allSitesbackup|[allSitesBackup](../resources/allsitesbackup.md)| Full-service backup settings for SharePoint.|
 |driveInclusionRules|[driveProtectionRule](../resources/driveprotectionrule.md) collection|The list of drive inclusion rules applied to the tenant.|
 |driveProtectionUnits|[driveProtectionUnit](../resources/driveprotectionunit.md) collection|The list of drive protection units in the tenant.|
 |emailNotificationsSetting|[emailNotificationsSetting](../resources/emailnotificationssetting.md)|The email notification settings in the tenant.|
@@ -54,9 +57,6 @@ Represents the Microsoft 365 Backup Storage service in a tenant.
 |sharePointRestoreSessions|[sharePointRestoreSession](../resources/sharepointrestoresession.md) collection|The list of SharePoint restore sessions available in the tenant.|
 |siteInclusionRules|[siteProtectionRule](../resources/siteprotectionrule.md) collection|The list of site inclusion rules applied to the tenant.|
 |siteProtectionUnits|[siteProtectionUnit](../resources/siteprotectionunit.md) collection|The list of site protection units in the tenant.|
-|allSitesbackup|[allSitesBackup](../resources/allsitesbackup.md)| Full service backup settings for Sharepoint.|
-|allMailboxesBackup|[allMailboxesBackup](../resources/allmailboxesbackup.md)| Full service backup settings for Exchange.|
-|allDrivesBackup|[allDrivesBackup](../resources//alldrivesbackup.md)| Full service backup settings for Onedrive for Business.|
 
 ## JSON representation
 
