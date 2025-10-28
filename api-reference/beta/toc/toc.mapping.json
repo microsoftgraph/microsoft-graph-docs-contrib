@@ -585,13 +585,13 @@
             "cloudPcSubscription",
             "cloudPcUserRoleScopeTagInfo",
             "cloudPcUserSettingAssignment",
+            "cloudPcUserSettingsPersistenceConfiguration",
             "cloudPcWindowsSetting",
             "cloudPcWindowsSettings",
             "frontlineCloudPcDetail",
             "keyValuePair",
             "microsoftManagedDesktop",
-            "unifiedRolePermission",
-            "cloudPcUserSettingsPersistenceConfiguration"
+            "unifiedRolePermission"
           ],
           "childNodes": [
             {
