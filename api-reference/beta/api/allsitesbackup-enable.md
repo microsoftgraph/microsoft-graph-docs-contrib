@@ -1,6 +1,6 @@
 ---
 title: "allSitesBackup: enable"
-description: "Enable full service backup for Sharepoint"
+description: "Enable full-service backup for SharePoint."
 author: "vidula-verma"
 ms.date: 10/15/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Enables full service backup for Sharepoint. All sites in Sharepoint are protected automatically, without requiring manual policy creation.
+Enable full-service backup for SharePoint. All sites in SharePoint are automatically protected, without requiring manual policy creation.
 
 ## Permissions
 
@@ -49,7 +49,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this action returns a `202 Accepted` response code and a [allSitesBackup](../resources/allsitesbackup.md) object in the response body.
+If successful, this action returns a `202 Accepted` response code and an [allSitesBackup](../resources/allsitesbackup.md) object in the response body.
 
 ## Examples
 
@@ -64,7 +64,6 @@ The following example shows a request.
 ``` http
 POST https://graph.microsoft.com/beta/solutions/backupRestore/allSitesBackup/enable 
 ```
-
 
 ### Response
 
@@ -81,12 +80,12 @@ HTTP/1.1 202 Accepted
 Content-Type: application/json
 
 {
-  "@odata.context": "/solutions/backupRestore/$metadata#allSitesBackup/$entity",
-     "policyId": "89014d8c-71fe-4d00-a01a-31850bc5b32c",
-     "status": "enabled",
-     "lastRunDateTime": "2025-02-03T00:00:00Z",
-     "lastModifiedBy": "fb80ea0c-ecbb-4bb2-b484-37d01f2a776f",
-     "lastModifiedDateTime": "2025-09-21T19:09:52.9752849+00:00"
+  "@odata.context": "/solutions/backupRestore/$metadata#allSitesBackup/$entity",
+  "policyId": "89014d8c-71fe-4d00-a01a-31850bc5b32c",
+  "status": "enabled",
+  "lastRunDateTime": "2025-02-03T00:00:00Z",
+  "lastModifiedBy": "fb80ea0c-ecbb-4bb2-b484-37d01f2a776f",
+  "lastModifiedDateTime": "2025-09-21T19:09:52.9752849+00:00"
 }
 ```
 
