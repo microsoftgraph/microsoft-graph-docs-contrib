@@ -144,6 +144,10 @@ Added the following new endpoints as supported request URLs for the [driveItem: 
 - `POST /sites/{siteId}/drive/items/{parentItemId}:/{fileName}:/createUploadSession`
 - `POST /users/{userId}/drive/items/{parentItemId}:/{fileName}:/createUploadSession`
 
+### Identity and access | Governance
+
+Deprecated the [Privileged Identity Management (PIM) iteration 2 APIs](/graph/api/resources/privilegedidentitymanagement-root?view=graph-rest-beta&preserve-view=true) for Azure resources and Microsoft Entra roles. These APIs will stop returning data on October 28, 2026. Migrate to the new [Azure REST PIM API for Azure resources](/rest/api/authorization/role-eligibility-schedule-requests) and [PIM iteration 3 APIs for Microsoft Entra roles](/graph/api/resources/privilegedidentitymanagementv3-overview?view=graph-rest-beta&preserve-view=true).
+
 ### Sites and lists
 
 [Create](/graph/api/site-post-sites?view=graph-rest-beta&preserve-view=true) a SharePoint site and [monitor](/graph/api/site-getoperationstatus?view=graph-rest-beta&preserve-view=true) its creation status.
