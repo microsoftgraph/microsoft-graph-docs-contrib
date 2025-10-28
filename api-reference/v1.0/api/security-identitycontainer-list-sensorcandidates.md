@@ -12,11 +12,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph.security
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Get a list of the [sensorCandidate](../resources/security-sensorcandidate.md) objects and their properties.
-
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
@@ -39,7 +35,7 @@ GET /security/identities/sensorCandidates
 
 ## Optional query parameters
 
-This method supports the `$filter`(filter by senseClientVersion) and `$count` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$filter` (filter by **senseClientVersion**) and `$count` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -67,7 +63,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/security/identities/sensorCandidates
+GET https://graph.microsoft.com/v1.0/security/identities/sensorCandidates
 ```
 
 ### Response

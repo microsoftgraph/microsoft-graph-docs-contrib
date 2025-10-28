@@ -12,8 +12,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph.security
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Update a [sensorCandidateActivationConfiguration](../resources/security-sensorcandidateactivationconfiguration.md) object.
 
 ## Permissions
@@ -71,7 +69,7 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/security/identities/sensorCandidateActivationConfigurations
+POST https://graph.microsoft.com/v1.0/security/identities/sensorCandidateActivationConfigurations
 Content-Type: application/json
 
 {

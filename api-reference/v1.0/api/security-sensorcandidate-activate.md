@@ -12,11 +12,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph.security
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Activate Microsoft Defender for Identity sensors.
-
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
@@ -70,7 +66,7 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/security/identities/sensorCandidates/activate
+POST https://graph.microsoft.com/v1.0/security/identities/sensorCandidates/activate
 Content-Type: application/json
 
 {
