@@ -59,6 +59,7 @@ If successful, this method returns a `200 OK` response code and a [cloudPcSnapsh
 
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "post_importsnapshot"
@@ -92,6 +93,12 @@ Content-Type: application/json
   "assignedUserId": "93aff428-61f2-467f-a879-1102af6fd4a8"
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/post-importsnapshot-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 
