@@ -1,6 +1,6 @@
 ---
-title: "Presence setAutomaticLocation API"
-description: "Set the user’s automatically detected work location"
+title: "presence setAutomaticLocation API"
+description: "Update the automatic work location for a user."
 author: "garchiro7"
 ms.date: 10/23/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-`setAutomaticLocation` updates the automatic work location. The automatic layer participates in the standard precedence model:
+`setAutomaticLocation` updates the automatic work location for a user. The automatic layer participates in the standard precedence model:
 
 - Precedence: manual > automatic > scheduled.
 - Precision (within the same layer): more precise wins (for example, office+building > office).
@@ -84,8 +84,8 @@ POST https://graph.microsoft.com/beta/me/presence/setAutomaticLocation
 Content-Type: application/json
 
 {
-  "workLocationType": "String",
-  "placeId": "String"
+  "workLocationType": "office",
+  "placeId": "eb706f15-137e-4722-b4d1-b601481d9251"
 }
 ```
 
@@ -93,7 +93,6 @@ Content-Type: application/json
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true

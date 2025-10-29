@@ -153,14 +153,15 @@ Added the following new endpoints as supported request URLs for the [driveItem: 
 Use the extended properties API to store or get custom data in the [todoTask](/graph/api/resources/todotask?view=graph-rest-beta&preserve-view=true#methods) resource.
 
 ### Teamwork and communications | Calls and online meetings
-- Added the **workLocationSource** enumeration type.
-- Added the **workLocationType** enumeration type.
-- Added the [userWorkLocation](/graph/api/resources/userWorkLocation?view=graph-rest-beta) resource.
-- Added the **workLocation** property to the [presence](/graph/api/resources/presence?view=graph-rest-beta) resource.
-- Added the [clearAutomaticLocation](/graph/api/presence-clearAutomaticLocation?view=graph-rest-beta) method to the [presence](/graph/api/resources/presence?view=graph-rest-beta) resource.
-- Added the [clearLocation](/graph/api/presence-clearLocation?view=graph-rest-beta) method to the [presence](https://learn.microsoft.com/en-us/graph/api/resources/presence?view=graph-rest-beta) resource.
-- Added the [setAutomaticLocation](/graph/api/presence-setAutomaticLocation?view=graph-rest-beta) method to the [presence](/graph/api/resources/presence?view=graph-rest-beta) resource.
-- Added the [setManualLocation](/graph/api/presence-setManualLocation?view=graph-rest-beta) method to the [presence](/graph/api/resources/presence?view=graph-rest-beta) resource.
+
+- Create the resource to represent a work location under **presence**.
+- The [userWorkLocation](/graph/api/resources/userWorkLocation?view=graph-rest-beta) resource, represent the state of the location.
+
+Added the following new endpoints enabling the management of **work location**:
+- [clearAutomaticLocation](/graph/api/presence-clearAutomaticLocation?view=graph-rest-beta) method to clear the default work location value.
+- [clearLocation](/graph/api/presence-clearLocation?view=graph-rest-beta) method to clear the manual work location value.
+- Added the [setAutomaticLocation](/graph/api/presence-setAutomaticLocation?view=graph-rest-beta) method to setup the default work location value.
+- Added the [setManualLocation](/graph/api/presence-setManualLocation?view=graph-rest-beta) method to setup the manual work location value.
 
 ## September 2025: New and generally available
 

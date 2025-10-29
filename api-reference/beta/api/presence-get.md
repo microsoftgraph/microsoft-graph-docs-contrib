@@ -120,7 +120,7 @@ Content-Length: 1574
     "isOutOfOffice": false
   },
   "workLocation": {
-    "workLocationType": "Office",
+    "workLocationType": "office",
     "source": "Automatic",
     "placeId": "eb706f15-137e-4722-b4d1-b601481d9251"
   },

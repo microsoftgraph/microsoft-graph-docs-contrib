@@ -1,6 +1,6 @@
 ---
 title: "presence: clearLocation"
-description: "Clear all the work location for the user"
+description: "Clears the work location signals for a user, it clears both the manual and automatic layers for the current date. "
 author: "garchiro7"
 ms.date: 10/23/2025
 ms.localizationpriority: medium
@@ -71,7 +71,6 @@ POST https://graph.microsoft.com/beta/me/presence/clearLocation
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true

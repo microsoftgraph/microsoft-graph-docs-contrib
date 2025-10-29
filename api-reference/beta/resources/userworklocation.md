@@ -19,7 +19,7 @@ The `userWorkLocation` resource represents the aggregated work location state fo
 Precedence: manual > automatic > scheduled
 Precision: more granular wins (e.g., office & building > office).
 
-### Aggregation Rules
+**Aggregation Rules**
 
 - If manual location is set → wins immediately.
 - Else if automatic location exists → most precise automatic signal wins.

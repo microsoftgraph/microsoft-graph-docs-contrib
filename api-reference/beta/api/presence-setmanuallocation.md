@@ -80,8 +80,8 @@ POST https://graph.microsoft.com/beta/me/presence/setManualLocation
 Content-Type: application/json
 
 {
-  "workLocationType": "String",
-  "placeId": "String"
+  "workLocationType": "office",
+  "placeId": "eb706f15-137e-4722-b4d1-b601481d9251"
 }
 ```
 
@@ -89,7 +89,6 @@ Content-Type: application/json
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true

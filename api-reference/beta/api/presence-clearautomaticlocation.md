@@ -1,6 +1,6 @@
 ---
 title: "presence: clearAutomaticLocation"
-description: "Clear the automatically detected work location for the user"
+description: "Clear the automatically detected work location for a user"
 author: "garchiro7"
 ms.date: 10/23/2025
 ms.localizationpriority: medium
@@ -78,7 +78,6 @@ POST https://graph.microsoft.com/beta/me/presence/clearAutomaticLocation
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true
