@@ -27,7 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "fraudprotectionprovider_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/fraudprotectionprovider-get-permissions.md)]
 
-[!INCLUDE [rbac-fraudprovider-apis-read](../includes/rbac-for-apis/rbac-fraudprovider-apis-read.md)]
+[!INCLUDE [rbac-riskprevention-apis-read](../includes/rbac-for-apis/rbac-riskprevention-apis-read.md)]
 
 ## HTTP request
 
@@ -62,21 +62,15 @@ If successful, this method returns a `200 OK` response code and a [fraudProtecti
 ### Request
 
 The following example shows a request.
-# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_fraudprotectionprovider"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identity/riskprevention/fraudprotectionproviders/0bb2618b-51f7-4e83-bcb8-84e70f7cf84d
+GET https://graph.microsoft.com/v1.0/identity/riskprevention/fraudprotectionproviders/0bb2618b-51f7-4e83-bcb8-84e70f7cf84d
 ```
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-fraudprotectionprovider-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### Response
 
@@ -93,7 +87,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/riskPrevention/fraudProtectionProviders/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identity/riskPrevention/fraudProtectionProviders/$entity",
     "@odata.type": "#microsoft.graph.arkoseFraudProtectionProvider",
     "id": "0bb2618b-51f7-4e83-bcb8-84e70f7cf84d",
     "displayName": "Arkose Sign-Up Protection",
@@ -116,7 +110,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/riskPrevention/fraudProtectionProviders/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identity/riskPrevention/fraudProtectionProviders/$entity",
     "@odata.type": "#microsoft.graph.humanSecurityFraudProtectionProvider",
     "id": "0bb2618b-51f7-4e83-bcb8-84e70f7cf84d",
     "displayName": "HUMAN Security Sign-Up Protection",

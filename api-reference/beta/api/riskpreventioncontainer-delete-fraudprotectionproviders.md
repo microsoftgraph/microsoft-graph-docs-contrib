@@ -25,7 +25,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "riskpreventioncontainer_delete_fraudprotectionproviders" } -->
 [!INCLUDE [permissions-table](../includes/permissions/riskpreventioncontainer-delete-fraudprotectionproviders-permissions.md)]
 
-[!INCLUDE [rbac-fraudprovider-apis-write](../includes/rbac-for-apis/rbac-fraudprovider-apis-write.md)]
+[!INCLUDE [rbac-riskprevention-apis-write](../includes/rbac-for-apis/rbac-riskprevention-apis-write.md)]
 
 ## HTTP request
 

@@ -2,7 +2,7 @@
 title: "Update fraudProtectionProvider"
 description: "Update the properties of a fraudProtectionProvider object."
 author: "more-rasika"
-ms.date: 10/23id/2025
+ms.date: 10/23/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
@@ -72,7 +72,7 @@ If successful, this method returns a `204 No Content` response code.
 ### Request
 
 The following example shows a request to update Arkose fraud protection provider.
-# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "update_fraudprotectionprovider"
@@ -88,11 +88,6 @@ Content-Type: application/json
 }
 ```
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-fraudprotectionprovider-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### Response
 

@@ -69,7 +69,6 @@ If successful, this method returns a `204 No Content` response code.
 #### Request
 The following example shows a request to update an authentication event listener's trigger conditions.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_authenticationeventlistener"
@@ -139,7 +138,6 @@ HTTP/1.1 204 No Content
 #### Request
 The following example shows a request to add an application to an authentication event listener's trigger conditions.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_authenticationeventlistener_2"

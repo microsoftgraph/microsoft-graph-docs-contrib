@@ -75,7 +75,7 @@ If successful, this method returns a `201 Created` response code and a [fraudPro
 #### Request
 
 The following example shows a request to create a new Arkose fraudProtectionProvider object.
-# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create_fraudprotectionprovider_from_arkose"
@@ -132,7 +132,7 @@ Content-Type: application/json
 #### Request
 
 The following example shows a request to create a new HUMAN Security fraudProtectionProvider object.
-# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create_fraudprotectionprovider_from_human"
@@ -150,11 +150,6 @@ Content-Type: application/json
 }
 ```
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-fraudprotectionprovider-from-human-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 #### Response
 
