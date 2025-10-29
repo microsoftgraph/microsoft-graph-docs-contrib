@@ -97,6 +97,20 @@ Content-Type: application/json
     }
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "description": "Get deployment logs",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+    "Error: get_deploymentLog:
+      Malformed function params '{var}'. Expected key-value params e.g. /function1(key=value). Remove parentheses if no params are expected."
+  ]
+}
+-->
+
 
 
 
