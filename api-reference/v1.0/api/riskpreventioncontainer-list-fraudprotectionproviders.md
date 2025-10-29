@@ -12,7 +12,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get a list of the [fraudProtectionProvider](../resources/fraudprotectionprovider.md) object and their properties. The following derived types are supported:
 
@@ -70,7 +69,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identity/riskprevention/fraudprotectionproviders
+GET https://graph.microsoft.com/v1.0/identity/riskprevention/fraudprotectionproviders
 ```
 
 
@@ -89,7 +88,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/riskPrevention/fraudProtectionProviders",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identity/riskPrevention/fraudProtectionProviders",
     "value": [
         {
             "@odata.type": "#microsoft.graph.arkoseFraudProtectionProvider",

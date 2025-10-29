@@ -12,7 +12,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 A managed handler that defines what third-party fraud protection is enabled or disabled in an external identities user flow for Microsoft Entra External ID tenants.
 

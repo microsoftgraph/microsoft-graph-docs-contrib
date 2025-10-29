@@ -12,7 +12,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents a handler that executes when a fraud protection load start listener is triggered in Microsoft Entra External ID. This abstract resource allows you to define third-party integrations for fraud protection.
 
