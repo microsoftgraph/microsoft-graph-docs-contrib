@@ -18,38 +18,39 @@ import (
 requestBody := graphmodels.NewEducationAssignmentResource()
 distributeForStudentWork := true
 requestBody.SetDistributeForStudentWork(&distributeForStudentWork) 
-resource := graphmodels.NewEducationResource()
+resource := graphmodels.NewEducationSpeakerProgressResource()
 displayName := "speakerProgressTestResource"
 resource.SetDisplayName(&displayName) 
-additionalData := map[string]interface{}{
-	"recordingTimeLimitInMinutes" : int32(5) , 
-	showRehearsalReportToStudentBeforeMediaUpload := true
+recordingTimeLimitInMinutes := int32(5)
+resource.SetRecordingTimeLimitInMinutes(&recordingTimeLimitInMinutes) 
+showRehearsalReportToStudentBeforeMediaUpload := true
 resource.SetShowRehearsalReportToStudentBeforeMediaUpload(&showRehearsalReportToStudentBeforeMediaUpload) 
-	"maxRecordingAttempts" : int32(1) , 
-	isVideoRequired := true
+maxRecordingAttempts := int32(1)
+resource.SetMaxRecordingAttempts(&maxRecordingAttempts) 
+isVideoRequired := true
 resource.SetIsVideoRequired(&isVideoRequired) 
-	isAiFeedbackEnabled := true
+isAiFeedbackEnabled := true
 resource.SetIsAiFeedbackEnabled(&isAiFeedbackEnabled) 
-	"presentationTitle" : "speakerProgressTestResource", 
-	"spokenLanguageLocale" : "en-US", 
-speakerCoachSettings := graph.New()
-deliverySettings := graph.New()
-	isPronunciationEnabled := true
+presentationTitle := "speakerProgressTestResource"
+resource.SetPresentationTitle(&presentationTitle) 
+spokenLanguageLocale := "en-US"
+resource.SetSpokenLanguageLocale(&spokenLanguageLocale) 
+speakerCoachSettings := graphmodels.NewEducationSpeakerCoachSettings()
+deliverySettings := graphmodels.NewEducationSpeakerCoachDeliverySettings()
+isPronunciationEnabled := true
 deliverySettings.SetIsPronunciationEnabled(&isPronunciationEnabled) 
-	speakerCoachSettings.SetDeliverySettings(deliverySettings)
-	resource.SetSpeakerCoachSettings(speakerCoachSettings)
-aiFeedbackCriteria := graph.New()
-speechType := "informative"
+speakerCoachSettings.SetDeliverySettings(deliverySettings)
+resource.SetSpeakerCoachSettings(speakerCoachSettings)
+aiFeedbackCriteria := graphmodels.NewEducationAiFeedbackCriteria()
+speechType := graphmodels.INFORMATIVE_EDUCATIONSPEECHTYPE 
 aiFeedbackCriteria.SetSpeechType(&speechType) 
-aiFeedbackSettings := graph.New()
-deliverySettings := graph.New()
-	isStyleEnabled := true
+aiFeedbackSettings := graphmodels.NewEducationAiFeedbackSettings()
+deliverySettings := graphmodels.NewEducationAiFeedbackDeliverySettings()
+isStyleEnabled := true
 deliverySettings.SetIsStyleEnabled(&isStyleEnabled) 
-	aiFeedbackSettings.SetDeliverySettings(deliverySettings)
-	aiFeedbackCriteria.SetAiFeedbackSettings(aiFeedbackSettings)
-	resource.SetAiFeedbackCriteria(aiFeedbackCriteria)
-}
-resource.SetAdditionalData(additionalData)
+aiFeedbackSettings.SetDeliverySettings(deliverySettings)
+aiFeedbackCriteria.SetAiFeedbackSettings(aiFeedbackSettings)
+resource.SetAiFeedbackCriteria(aiFeedbackCriteria)
 requestBody.SetResource(resource)
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go

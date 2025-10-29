@@ -57,6 +57,7 @@ If successful, this method returns a `204 No Content` response code.
 
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "post_purgeimportedsnapshot"
@@ -73,6 +74,12 @@ Content-Type: application/json
   ]
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/post-purgeimportedsnapshot-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 
