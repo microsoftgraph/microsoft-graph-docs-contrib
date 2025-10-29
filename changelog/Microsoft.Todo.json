@@ -3,6 +3,48 @@
     {
       "ChangeList": [
         {
+          "Id": "64d3c581-528b-4c92-bbb0-c2c7b0458f98",
+          "ApiChange": "Resource",
+          "ChangedApiName": "singleValueExtendedProperty",
+          "ChangeType": "Addition",
+          "Description": "Added the [singleValueExtendedProperty](https://learn.microsoft.com/en-us/graph/api/resources/singleValueExtendedProperty?view=graph-rest-beta) resource type.",
+          "Target": "singleValueExtendedProperty"
+        },
+        {
+          "Id": "64d3c581-528b-4c92-bbb0-c2c7b0458f98",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "singleValueExtendedProperties",
+          "ChangeType": "Addition",
+          "Description": "Added the **singleValueExtendedProperties** relationship to the [todoTask](https://learn.microsoft.com/en-us/graph/api/resources/todoTask?view=graph-rest-beta) resource.",
+          "Target": "todoTask"
+        },
+        {
+          "Id": "64d3c581-528b-4c92-bbb0-c2c7b0458f98",
+          "ApiChange": "Method",
+          "ChangedApiName": "singleValueLegacyExtendedProperty",
+          "ChangeType": "Change",
+          "Description": "Added [todoTask](https://learn.microsoft.com/en-us/graph/api/resources/todoTask?view=graph-rest-beta) as a supported resource for the [Get singleValueLegacyExtendedProperty](https://learn.microsoft.com/en-us/graph/api/singlevaluelegacyextendedproperty-get?view=graph-rest-beta) operation.",
+          "Target": "singleValueLegacyExtendedProperty"
+        },
+        {
+          "Id": "64d3c581-528b-4c92-bbb0-c2c7b0458f98",
+          "ApiChange": "Method",
+          "ChangedApiName": "singleValueLegacyExtendedProperty",
+          "ChangeType": "Change",
+          "Description": "Added [todoTask](https://learn.microsoft.com/en-us/graph/api/resources/todoTask?view=graph-rest-beta) as a supported resource for the [Create singleValueLegacyExtendedProperty](https://learn.microsoft.com/en-us/graph/api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties?view=graph-rest-beta) operation.",
+          "Target": "singleValueLegacyExtendedProperty"
+        }
+      ],
+      "Id": "64d3c581-528b-4c92-bbb0-c2c7b0458f98",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-10-28T09:18:10.9120701Z",
+      "WorkloadArea": "Tasks and plans",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "8261d380-017f-4e23-bc50-34c5b12e5f3a",
           "ApiChange": "Resource",
           "ChangedApiName": "attachmentInfo",

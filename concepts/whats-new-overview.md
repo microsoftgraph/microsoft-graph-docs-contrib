@@ -148,6 +148,10 @@ Added the following new endpoints as supported request URLs for the [driveItem: 
 
 [Create](/graph/api/site-post-sites?view=graph-rest-beta&preserve-view=true) a SharePoint site and [monitor](/graph/api/site-getoperationstatus?view=graph-rest-beta&preserve-view=true) its creation status.
 
+### Tasks and plans
+
+Use the extended properties API to store or get custom data in the [todoTask](/graph/api/resources/todotask?view=graph-rest-beta&preserve-view=true#methods) resource.
+
 ### Teamwork and communications | Calls and online meetings
 - Added the **workLocationSource** enumeration type.
 - Added the **workLocationType** enumeration type.
