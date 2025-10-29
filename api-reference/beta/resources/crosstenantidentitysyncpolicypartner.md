@@ -39,6 +39,7 @@ Inherits from [policyDeletableItem](../resources/policydeletableitem.md).
 |deletedDateTime|DateTimeOffset|Shows the last date and time the policy was deleted.|
 |displayName|String|Display name for the cross-tenant user synchronization policy. Use the name of the partner Microsoft Entra tenant to easily identify the policy. Optional.|
 |tenantId|String|Tenant identifier for the partner Microsoft Entra organization. Read-only.|
+|groupSyncInbound|[crossTenantGroupSyncInbound](../resources/crosstenantgroupsyncinbound.md)|Defines whether groups can be synchronized from the partner tenant. Key. |
 |userSyncInbound|[crossTenantUserSyncInbound](../resources/crosstenantusersyncinbound.md)|Defines whether users can be synchronized from the partner tenant. Key. |
 
 ## Relationships
@@ -62,6 +63,9 @@ The following is a JSON representation of the resource.
   "tenantId": "String (identifier)",
   "displayName": "String",
   "externalCloudAuthorizedApplicationId": "String",
+  "groupSyncInbound": {
+      "@odata.type": "microsoft.graph.crossTenantGroupSyncInbound"
+  },
   "userSyncInbound": {
     "@odata.type": "microsoft.graph.crossTenantUserSyncInbound"
   }
