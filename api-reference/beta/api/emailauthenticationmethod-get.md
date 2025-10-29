@@ -125,6 +125,7 @@ Content-type: application/json
 {
   "value": {
       "id": "3ddfcfc8-9383-446f-83cc-3ab9be4be18f",
+      "lastUsedDateTime": null,
       "emailAddress": "Kim@contoso.com"
   }
 }

@@ -58,6 +58,10 @@ items:
       href: ../../api/user-list-calendarview.md
     - name: Reminder view
       href: ../../api/user-reminderview.md
+  - name: Cloud PC
+    items:
+    - name: List Cloud PCs
+      href: ../../api/user-list-cloudpcs.md
   - name: Data security and governance
     items:
     - name: Compute protection scopes
@@ -108,6 +112,10 @@ items:
       href: ../../api/drive-get.md
     - name: List children
       href: ../../api/driveitem-list-children.md
+  - name: Employee experience
+    items:
+    - name: List assigned roles
+      href: ../../api/employeeexperienceuser-list-assignedroles.md
   - name: Groups
     items:
     - name: List joined teams

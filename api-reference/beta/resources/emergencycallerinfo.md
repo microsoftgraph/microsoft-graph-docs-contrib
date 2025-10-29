@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Contains information about the emergency caller. 
+Contains information about an emergency caller. 
 
 ## Properties
 |Property|Type|Description|
@@ -38,12 +38,10 @@ The following JSON representation shows the resource type.
 {
   "@odata.type": "#microsoft.graph.emergencyCallerInfo",
   "displayName": "String",
-  "upn": "String",
+  "location": {"@odata.type": "microsoft.graph.location"},
   "phoneNumber": "String",
   "tenantId": "String",
-  "location": {
-    "@odata.type": "microsoft.graph.location"
-  }
+  "upn": "String"
 }
 ```
 

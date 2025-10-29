@@ -123,20 +123,20 @@ Content-Type: application/json
       },
       "accessKey": {
         "@odata.type": "graph.awsAccessKey",
-        "id":"QUtJQTU1VUhNS0IzNUJPSUpHUkk=",
-        "externalId":"AKIA55UHMKB35BOIJGRI",
-        "displayName": "AKIA55UHMKB35BOIJGRI",
+        "id":"QUtJQ...UpHUkk=",
+        "externalId":"AKIA...IJGRI",
+        "displayName": "AKIA...IJGRI",
         "authorizationSystem": {
           "@odata.type": "graph.awsAuthorizationSystem",
           "id": "{Id}",
           "authorizationSystemId": "956987887735",
-          "authorizationSystemName": "cloudknox-development",
+          "authorizationSystemName": "contoso-development",
           "authorizationSystemType": "aws"
         },
-        "owner": { // NOTE: Because of a limit in our current data model, we do not have all of the standard identity information
+        "owner": {
           "@odata.type": "graph.awsUser",
           "id": "YXJuOmF3czppYW06Ojk1Njk4Nzg4NzczNTp1c2VyL2dlZXRh",
-          "externalId":"arn:aws:iam::956987887735:user/geeta",
+          "externalId":"arn:aws:iam::956987887735:user/contoso",
           "displayName": "geeta",
           "source": {
             "@odata.type": "graph.awsSource",
