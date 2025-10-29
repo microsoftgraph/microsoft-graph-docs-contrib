@@ -1,6 +1,6 @@
 ---
 title: "serviceActivity: getMetricsForNetworkAccessRemoteNetworkBranchesAlive"
-description: "Retrieve the number of remote networks which are connected. A remote network represents a location such as a branch office where customer premises equipment (CPE) is connected to the nearest deployment of Global Secure Access service though IPsec tunnels."
+description: "Retrieve the number of remote networks which are connected. A remote network represents a location such as a branch office where customer premises equipment (CPE) is connected to the nearest deployment of Global Secure Access service through IPsec tunnels."
 author: "Zacharypeng"
 ms.localizationpriority: medium
 ms.subservice: "entra-monitoring-health"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the number of remote networks which are connected. A remote network represents a location such as a branch office where customer premises equipment (CPE) is connected to the nearest deployment of Global Secure Access service though IPsec tunnels.
+Retrieve the number of remote networks which are connected. A remote network represents a location such as a branch office where customer premises equipment (CPE) is connected to the nearest deployment of Global Secure Access service through IPsec tunnels.
 
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -58,7 +58,6 @@ If successful, this function returns a `200 OK` response code and a [serviceActi
 
 ### Request
 The following example shows a request.
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "serviceactivitythis.getmetricsfornetworkaccessremotenetworkbranchesalive"
@@ -67,7 +66,6 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/beta/reports/serviceActivity/getMetricsForNetworkAccessRemoteNetworkBranchesAlive(inclusiveIntervalStartDateTime=2023-01-01T00:00:00Z,exclusiveIntervalEndDateTime=2023-01-01T00:20:00Z,aggregationIntervalInMinutes=10)
 ```
----
 
 ### Response
 The following example shows the response.
