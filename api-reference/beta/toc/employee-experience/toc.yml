@@ -20,6 +20,12 @@ items:
       href: ../../api/community-update.md
     - name: Delete
       href: ../../api/community-delete.md
+  - name: Employee experience user
+    items:
+    - name: Employee experience user
+      href: ../../resources/employeeexperienceuser.md
+    - name: List assigned roles
+      href: ../../api/employeeexperienceuser-list-assignedroles.md
   - name: Engagement async operation
     items:
     - name: Engagement async operation
@@ -32,7 +38,9 @@ items:
       href: ../../resources/engagementrole.md
     - name: List
       href: ../../api/employeeexperience-list-roles.md
-    - name: List
+    - name: List members
+      href: ../../api/engagementrole-list-members.md
+    - name: List assigned roles
       href: ../../api/employeeexperienceuser-list-assignedroles.md
   - name: Engagement role member
     items:
@@ -44,12 +52,6 @@ items:
       href: ../../api/engagementrole-post-members.md
     - name: Delete
       href: ../../api/engagementrole-delete-members.md
-  - name: Employee experience user
-    items:
-    - name: Employee experience user
-      href: ../../resources/employeeexperienceuser.md
-    - name: List assignedRoles
-      href: ../../api/employeeexperienceuser-list-assignedroles.md
   - name: Complex types
     items:
     - name: Engagement identity set
