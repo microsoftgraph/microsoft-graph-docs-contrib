@@ -10,20 +10,16 @@ ms.date: 10/28/2025
 
 # Manage channel membership across channels with allMembers API in Microsoft Graph
 
-The `allMembers` API in Microsoft Graph provides a unified way to retrieve and manage channel memberships across **standard**, **shared**, and **private channels** in Microsoft Teams. It ensures accurate representation of both **direct** and **indirect** members, helping developers build solutions that respect permissions and membership hierarchies.
+The `allMembers` API in Microsoft Graph provides a unified way to retrieve and manage channel memberships across **standard**, **shared**, and **private** channels in Microsoft Teams. It ensures accurate representation of both **direct** and **indirect** members, helping developers build solutions that respect permissions and membership hierarchies.
 
-For an overview of Microsoft Teams APIs, see [Microsoft Teams in Microsoft Graph](/graph/teams-concept-overview).
-
----
+For an overview of Microsoft Teams APIs, see [Microsoft Graph overview for Teams](/graph/teams-concept-overview).
 
 ## Key capabilities
 
 - Retrieve all members of a channel, including direct and indirect memberships.
 - Identify membership origin using annotation properties.
-- Support for shared channels and cross-team membership scenarios.
+- Support scenarios for shared channels and multi-team access.
 - Enable notifications for membership changes.
-
----
 
 ## How it works
 
@@ -33,21 +29,24 @@ The `allMembers` API returns a comprehensive list of members for a given channel
 - **Indirect members**: Users who gain access through teams that share the channel.
 
 ### Important properties
+
 - **`@microsoft.graph.originalSourceMembershipUrl`**  
   Indicates the source of a user’s membership:
   - Points to channel membership for direct members.
   - Points to team membership for indirect members.
 
-Use the [sharedWithChannelTeamInfo resource type](/graph/api/resources/sharedwithchannelteaminfo) and [allowedMembers API](/graph/api/sharedwithchannelteaminfo-list-allowedmembers) to determine which teams grant access to shared channels.
+Use the [sharedWithChannelTeamInfo resource](/graph/api/resources/sharedwithchannelteaminfo) and [allowedMembers API](/graph/api/sharedwithchannelteaminfo-list-allowedmembers) to determine which teams grant access and which members are eligible.
 
----
 
 ### Behavior in specific scenarios
 
 Shared channels introduce multiple membership paths. For example:
 
 - If a channel is shared with Team A and Team B, and a user is also a direct member:
-  - The user appears **three times**: once as a direct member, and once for each team.
+  - The user appears **three times**:
+    - Once as a direct member.
+    - Once via Team A.
+    - Once via Team B.
 
 > [!IMPORTANT]
 > Do not assume one row per user. Always check `originalSourceMembershipUrl` to determine membership type.
@@ -64,21 +63,21 @@ You can subscribe to membership changes using Microsoft Graph change notificatio
 | Shared channel membership changes | `/teams/{team-id}/channels/getAllMembers?notifyOnIndirectMembershipUpdate=true&suppressNotificationWhenSharedUnsharedWithTeam=true` |
 
 > [!IMPORTANT]
-> When a channel is shared or unshared, refresh the `allMembers` API and use `sharedWithTeams` and `allowedMembers` APIs for large updates.
+> When a channel is shared or unshared, refresh the `allMembers` API and use `sharedWithTeams` and `allowedMembers` APIs for efficient updates.
 
-Learn more: [Get change notifications for membership changes in channels using Microsoft Graph](teams-changenotifications-channelmembership.md).
+Learn more: [Get change notifications for channel membership](/graph/teams-changenotifications-channelmembership).
 
 ---
 
 ## Related APIs and integration
 
-- [List allMembers](/graph/api/channel-list-allmembers)
-- [List team members](/graph/api/team-list-members)
-- [Shared channels overview](/microsoftteams/platform/concepts/build-and-test/shared-channels)
+- [List allMembers in a channel](/graph/api/channel-list-allmembers)
+- [List members of a team](/graph/api/team-list-members)
+- [Shared channels in Teams](/microsoftteams/platform/concepts/build-and-test/shared-channels)
 
 ---
 
 ## Related content
 
-- [Microsoft Teams in Microsoft Graph](/graph/teams-concept-overview)
-- [Change notifications in Microsoft Graph](/graph/webhooks)
+- [Microsoft Graph overview for Teams](/graph/teams-concept-overview)
+- [Change notifications in Microsoft Graph](/graph/api/resources/webhooks)
