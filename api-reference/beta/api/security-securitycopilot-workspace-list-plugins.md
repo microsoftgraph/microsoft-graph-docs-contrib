@@ -66,7 +66,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/security/securityCopilot/workspaces/{workspaceId}/plugins
+GET https://graph.microsoft.com/beta/security/securityCopilot/workspaces/default/plugins?$filter=name+eq+'Entra'
 ```
 
 
@@ -86,17 +86,16 @@ Content-Type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#security/securityCopilot/workspaces('default')/plugins",
-    "@odata.count": 1,
     "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET security/securityCopilot/workspaces('<key>')/plugins?$select=authorization,catalogScope",
     "value": [
         {
-            "name": "Signs of malicious activity",
-            "displayName": "My security KQL: Signs of malicious activity",
-            "description": "Skills that look up signs of malicious activity in my system that can create queries locating for individual malicious activity and then create and run more sophisticated queries to find devices that require immediate attention.",
-            "category": "plugin",
-            "catalogScope": "workspace",
+            "name": "Entra",
+            "displayName": "Microsoft Entra",
+            "description": "Skills that interact with the Microsoft Graph APIs.",
+            "category": "microsoft",
+            "catalogScope": "global",
             "previewState": "ga",
-            "isEnabled": false,
+            "isEnabled": true,
             "authorization": null,
             "settings": []
         }

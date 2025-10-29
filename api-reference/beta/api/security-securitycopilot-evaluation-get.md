@@ -66,7 +66,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/security/securityCopilot/workspaces/{workspaceId}/sessions/{sessionId}/prompts/{promptId}/evaluations/{evaluationId}
+GET https://graph.microsoft.com/beta/security/securityCopilot/workspaces/default/sessions/ecdfb9b3-58f5-457f-a18c-4a477890b252/prompts/76a9b8c6-6656-4ef4-a4c7-7ed07fb93e01/evaluations/5bde1164-29a3-4dfb-84b0-b6c0cf0e23b7
 ```
 
 
@@ -85,20 +85,21 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.security.securityCopilot.evaluation",
-    "id": "16cddf73-47ef-4827-4485-152886bb5318",
-    "createdDateTime": "String (timestamp)",
-    "runStartDateTime": "String (timestamp)",
-    "completedDateTime": "String (timestamp)",
-    "lastModifiedDateTime": "String (timestamp)",
-    "executionCount": "Integer",
-    "isCancelled": "Boolean",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#security/securityCopilot/workspaces('default')/sessions('ecdfb9b3-58f5-457f-a18c-4a477890b252')/prompts('76a9b8c6-6656-4ef4-a4c7-7ed07fb93e01')/evaluations/$entity",
+    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET security/securityCopilot/workspaces('<key>')/sessions('<guid>')/prompts('<guid>')/evaluations('<guid>')?$select=completedDateTime,createdDateTime",
+    "id": "5bde1164-29a3-4dfb-84b0-b6c0cf0e23b7",
+    "createdDateTime": "2025-10-22T22:00:54.7638231Z",
+    "runStartDateTime": "2025-10-22T22:00:55.0719448Z",
+    "completedDateTime": "2025-10-22T22:01:11.2594216Z",
+    "lastModifiedDateTime": "2025-10-22T22:01:11.2594216Z",
+    "state": "completed",
+    "executionCount": 0,
+    "isCancelled": false,
     "result": {
-      "@odata.type": "microsoft.graph.security.securityCopilot.evaluationResult"
-    },
-    "state": "String"
-  }
+        "content": "You are signed in as Lorenz X in this Entra ID tenant. Your User Principal Name (UPN) and email are lfx310@contoso.ms, and your User ID is 50a5fa74-dcbb-4dc3-af3a-4c431b3cb9dd.\n",
+        "type": "success",
+        "previewState": "private"
+    }
 }
 ```
 

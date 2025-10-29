@@ -167,15 +167,22 @@ The  [incident](security-incident.md) resource and its APIs allow you to sort 
 
 > **Note:** We recommend that you use the [threat submission](https://github.com/microsoftgraph/microsoft-graph-docs/pull/16242/files#threat-submission) API instead.
 
-### Microsoft Security Copilot
+## Security Copilot (Preview)
 
 Microsoft Security Copilot is a generative AI-powered security analysis tool that enables defenders to respond to threats quickly, process signals at machine speed, and assess risk exposure in minutes. It enhances the effectiveness of security professionals across roles and workflows, supporting incident response, threat hunting, intelligence gathering, posture management, and more.
 
 Security Copilot transforms natural language prompts into intelligent, actionable guidance, streamlining complex operations and bridging cybersecurity talent gaps. It allows defenders to complete tasks in minutes instead of hours or days.
 
-The Security Copilot resource and its APIs allow developers to embed Security Copilot experiences into custom portals or applications. It supports creating sessions, prompts, evaluations, and plugins, enabling tailored AI-driven security workflows.
+The Security Copilot resource and its APIs allow developers to embed Security Copilot chat experiences into custom portals or applications. It supports creating sessions, prompts, evaluations using the available plugins, enabling tailored AI-driven security workflows.
 
-For more information, see [Security Copilot primary use cases](https://learn.microsoft.com/en-us/copilot/security/use-cases) and [Plugins in Microsoft Security Copilot](https://learn.microsoft.com/en-us/copilot/security/plugin-overview).
+- [sessions](../resources/security-securitycopilot-session.md) API is used to create a session within Security Copilot. Each session will store any AI prompts and evaluation results generated. Sessions can only be viewed by the user who created the session.
+- [prompts](../resources/security-securitycopilot-prompt.md) API is used to create one or more prompts within a session. Creating a prompt does not generate an automatic AI result. The evaluation API is required to start processing the prompt.
+- [evaluations](../resources/security-securitycopilot-evaluation.md) API is used to create an evalation. AI processing begins as soon as an evaluation is created. Creation of an evaluation using the prompt starts the AI reasoning. The API allows you to poll for the intermediary results until the AI evaluation is complete.
+
+For more information, see
+- [Security Copilot primary use cases](https://learn.microsoft.com/en-us/copilot/security/use-cases)
+- [Plugins in Microsoft Security Copilot](https://learn.microsoft.com/en-us/copilot/security/plugin-overview)
+- [Usage and billing in Microsoft Security Copilot](https://learn.microsoft.com/en-us/copilot/security/manage-usage)
 
 ## Records management
 
@@ -267,6 +274,12 @@ The following are some of the most popular requests for working with the Microso
 | **Secure score control profiles**|||
 |List secure score control profiles|[List secureScoreControlProfiles](../api/securescorecontrolprofiles-list.md)|[https://graph.microsoft.com/beta/security/secureScoreControlProfiles](https://developer.microsoft.com/graph/graph-explorer?request=security/secureScoreControlProfiles&method=GET&version=beta&GraphUrl=https://graph.microsoft.com)|
 |Update secure score control profiles|[Update secureScoreControlProfiles](../api/securescorecontrolprofiles-update.md)|[https://graph.microsoft.com/beta/security/secureScoreControlProfiles/{id}](https://developer.microsoft.com/graph/graph-explorer?request=security/secureScoreControlProfiles/{id}&method=PATCH&version=beta&GraphUrl=https://graph.microsoft.com)|
+| **Security Copilot (preview)**|||
+|List sessions|[List sessions](../api/security-securitycopilot-workspace-list-sessions.md)|[https://graph.microsoft.com/beta/security/securityCopilot/workspaces/default/sessions](https://developer.microsoft.com/graph/graph-explorer?request=security/securitycopilot/workspaces/default/sessions&method=GET&version=beta&GraphUrl=https://graph.microsoft.com)|
+|Create session|[Create session](../api/security-securitycopilot-workspace-post-sessions.md)|[https://graph.microsoft.com/beta/security/securityCopilot/workspaces/default/sessions](https://developer.microsoft.com/graph/graph-explorer?request=security/securitycopilot/workspaces/default/sessions&method=POST&version=beta&GraphUrl=https://graph.microsoft.com)|
+|Create prompt|[Create prompt](../api/security-securitycopilot-session-post-prompts.md)| [https://graph.microsoft.com/beta/security/securityCopilot/workspaces/default/sessions/{id}/prompts](https://developer.microsoft.com/graph/graph-explorer?request=security/securitycopilot/workspaces/default/sessions/{id}/prompts&method=POST&version=beta&GraphUrl=https://graph.microsoft.com)|
+|Create evaluation|[Create evaluation](../api/security-securitycopilot-prompt-post-evaluations.md)|[https://graph.microsoft.com/beta/security/securityCopilot/workspaces/default/sessions/{id}/prompts/{id}/evaluations](https://developer.microsoft.com/graph/graph-explorer?request=security/securitycopilot/workspaces/default/sessions/{id}/prompts/{id}/evaluations&method=POST&version=beta&GraphUrl=https://graph.microsoft.com)|
+|Get evaluation|[Get evaluation](../api/security-securitycopilot-evaluation-get.md)| [https://graph.microsoft.com/beta/security/securityCopilot/workspaces/default/sessions/{id}/evaluations{id}](https://developer.microsoft.com/graph/graph-explorer?request=security/securitycopilot/workspaces/default/sessions/{id}/prompts/{id}/evaluations/{id}&method=GET&version=beta&GraphUrl=https://graph.microsoft.com)|
 | **Threat intelligence indications (preview)**|||
 |Get TI indicator|[Get tiIndicator](../api/tiindicator-get.md)| [https://graph.microsoft.com/beta/security/tiIndicators/{id}](https://developer.microsoft.com/graph/graph-explorer?request=security/tiIndicators/{id}&method=GET&version=beta&GraphUrl=https://graph.microsoft.com)|
 |List TI Indicators | [List tiIndicators](../api/tiindicators-list.md) | [https://graph.microsoft.com/beta/security/tiIndicators](https://developer.microsoft.com/graph/graph-explorer?request=security/tiIndicators&method=GET&version=beta&GraphUrl=https://graph.microsoft.com)|

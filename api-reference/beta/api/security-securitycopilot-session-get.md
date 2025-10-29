@@ -66,7 +66,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/security/securityCopilot/workspaces/{workspaceId}/sessions/{sessionId}
+GET https://graph.microsoft.com/beta/security/securityCopilot/workspaces/default/sessions/ecdfb9b3-58f5-457f-a18c-4a477890b252
 ```
 
 
@@ -85,13 +85,12 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.security.securityCopilot.session",
-    "id": "12ac07f0-ccc3-0448-1215-6fad6e44263a",
-    "displayName": "String",
-    "lastModifiedDateTime": "String (timestamp)",
-    "createdDateTime": "String (timestamp)"
-  }
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#security/securityCopilot/workspaces('default')/sessions/$entity",
+    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET security/securityCopilot/workspaces('<key>')/sessions('<guid>')?$select=createdDateTime,displayName",
+    "id": "ecdfb9b3-58f5-457f-a18c-4a477890b252",
+    "createdDateTime": "2025-10-22T20:10:54.4940649Z",
+    "lastModifiedDateTime": "2025-10-22T20:10:54.4940649Z",
+    "displayName": "API: who am I"
 }
 ```
 

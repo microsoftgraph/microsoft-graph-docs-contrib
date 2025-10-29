@@ -66,7 +66,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/security/securityCopilot/workspaces/{workspaceId}/sessions
+GET https://graph.microsoft.com/beta/security/securityCopilot/workspaces/default/sessions
 ```
 
 
@@ -89,17 +89,17 @@ Content-Type: application/json
     "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET security/securityCopilot/workspaces('<key>')/sessions?$select=createdDateTime,displayName",
     "value": [
         {
+            "id": "f0f54c69-8f8a-4f33-b6e3-386d58b408db",
+            "createdDateTime": "2025-10-15T15:54:58.4862768Z",
+            "lastModifiedDateTime": "2025-10-15T15:54:58.4862768Z",
+            "displayName": null
+        },
+        {
             "id": "8e95c36e-c9bd-4e14-8317-3cd4332e1e3b",
             "createdDateTime": "2025-09-17T19:23:41.1506601Z",
             "lastModifiedDateTime": "2025-09-17T19:28:21.2902705Z",
             "displayName": "who am i"
-        },
-        {
-            "id": "7ab1e59b-6726-43dd-8493-6b1ef3214da6",
-            "createdDateTime": "2025-09-17T18:11:56.8117974Z",
-            "lastModifiedDateTime": "2025-09-17T19:22:10.9554612Z",
-            "displayName": "who am i"
-        },
+        }
     ]
 }
 

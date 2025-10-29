@@ -64,7 +64,7 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/security/securityCopilot/workspaces/{workspaceId}/sessions/{sessionId}/prompts/{promptId}/evaluations
+POST https://graph.microsoft.com/beta/security/securityCopilot/workspaces/default/sessions/ecdfb9b3-58f5-457f-a18c-4a477890b252/prompts/76a9b8c6-6656-4ef4-a4c7-7ed07fb93e01/evaluations
 Content-Type: application/json
 
 {}
@@ -86,18 +86,16 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.security.securityCopilot.evaluation",
-  "id": "16cddf73-47ef-4827-4485-152886bb5318",
-  "createdDateTime": "String (timestamp)",
-  "runStartDateTime": "String (timestamp)",
-  "completedDateTime": "String (timestamp)",
-  "lastModifiedDateTime": "String (timestamp)",
-  "executionCount": "Integer",
-  "isCancelled": "Boolean",
-  "result": {
-    "@odata.type": "microsoft.graph.security.securityCopilot.evaluationResult"
-  },
-  "state": "String"
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#security/securityCopilot/workspaces('default')/sessions('ecdfb9b3-58f5-457f-a18c-4a477890b252')/prompts('76a9b8c6-6656-4ef4-a4c7-7ed07fb93e01')/evaluations/$entity",
+    "id": "b2d2c632-e799-4472-9b36-e5c84c065f72",
+    "createdDateTime": "2025-10-22T20:12:57.8667119Z",
+    "runStartDateTime": "0001-01-01T00:00:00Z",
+    "completedDateTime": "0001-01-01T00:00:00Z",
+    "lastModifiedDateTime": "2025-10-22T20:12:57.8667119Z",
+    "state": "created",
+    "executionCount": 0,
+    "isCancelled": false,
+    "result": null
 }
 ```
 

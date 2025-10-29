@@ -72,7 +72,7 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/security/securityCopilot/workspaces/{workspaceId}/sessions
+POST https://graph.microsoft.com/beta/security/securityCopilot/workspaces/default/sessions
 Content-Type: application/json
 
 {

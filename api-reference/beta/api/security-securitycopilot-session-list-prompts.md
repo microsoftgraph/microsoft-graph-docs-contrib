@@ -66,7 +66,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/security/securityCopilot/workspaces/{workspaceId}/sessions/{sessionId}/prompts
+GET https://graph.microsoft.com/beta/security/securityCopilot/workspaces/default/sessions/ecdfb9b3-58f5-457f-a18c-4a477890b252/prompts
 ```
 
 
@@ -85,25 +85,22 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.security.securityCopilot.prompt",
-      "id": "ae13eafb-50c5-1af9-23c2-3b303197f4ce",
-      "type": "String",
-      "createdDateTime": "String (timestamp)",
-      "lastModifiedDateTime": "String (timestamp)",
-      "skillName": "String",
-      "skillInputDescriptors": [
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#security/securityCopilot/workspaces('default')/sessions('ecdfb9b3-58f5-457f-a18c-4a477890b252')/prompts",
+    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET security/securityCopilot/workspaces('<key>')/sessions('<guid>')/prompts?$select=content,createdDateTime",
+    "value": [
         {
-          "@odata.type": "microsoft.graph.security.securityCopilot.skillInputDescriptor"
+            "id": "76a9b8c6-6656-4ef4-a4c7-7ed07fb93e01",
+            "type": "prompt",
+            "createdDateTime": "2025-10-22T20:12:13.759634Z",
+            "lastModifiedDateTime": "2025-10-22T20:12:57.8775792Z",
+            "skillName": null,
+            "content": "who am I",
+            "inputs": {
+                "keyValuePairs": []
+            },
+            "skillInputDescriptors": []
         }
-      ],
-      "content": "String",
-      "inputs": {
-        "@odata.type": "microsoft.graph.Dictionary"
-      }
-    }
-  ]
+    ]
 }
 ```
 

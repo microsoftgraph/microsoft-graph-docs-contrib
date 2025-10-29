@@ -71,22 +71,13 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/security/securityCopilot/workspaces/{workspaceId}/sessions/{sessionId}/prompts
+POST https://graph.microsoft.com/beta/security/securityCopilot/workspaces/default/sessions/ecdfb9b3-58f5-457f-a18c-4a477890b252/prompts
 Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.security.securityCopilot.prompt",
-  "type": "String",
-  "skillName": "String",
-  "skillInputDescriptors": [
-    {
-      "@odata.type": "microsoft.graph.security.securityCopilot.skillInputDescriptor"
-    }
-  ],
-  "content": "String",
-  "inputs": {
-    "@odata.type": "microsoft.graph.Dictionary"
-  }
+  "type": "prompt",
+  "content": "who am I",
 }
 ```
 
@@ -106,21 +97,17 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.security.securityCopilot.prompt",
-  "id": "ae13eafb-50c5-1af9-23c2-3b303197f4ce",
-  "type": "String",
-  "createdDateTime": "String (timestamp)",
-  "lastModifiedDateTime": "String (timestamp)",
-  "skillName": "String",
-  "skillInputDescriptors": [
-    {
-      "@odata.type": "microsoft.graph.security.securityCopilot.skillInputDescriptor"
-    }
-  ],
-  "content": "String",
-  "inputs": {
-    "@odata.type": "microsoft.graph.Dictionary"
-  }
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#security/securityCopilot/workspaces('default')/sessions('ecdfb9b3-58f5-457f-a18c-4a477890b252')/prompts/$entity",
+    "id": "76a9b8c6-6656-4ef4-a4c7-7ed07fb93e01",
+    "type": "prompt",
+    "createdDateTime": "2025-10-22T20:12:13.759634Z",
+    "lastModifiedDateTime": "2025-10-22T20:12:13.759634Z",
+    "skillName": null,
+    "content": "who am I",
+    "inputs": {
+        "keyValuePairs": []
+    },
+    "skillInputDescriptors": []
 }
 ```
 
