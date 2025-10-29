@@ -89,15 +89,14 @@ The following example shows the response.
   "@odata.type": "Collection(Microsoft.Teams.GraphSvc.callRecording)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-```
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('d4220f1b-4c12-436c-8a03-dc3e362f9d54')/adhocCalls",
   "@odata.count": 2,
-  value: [
+  "value": [
     {
       ID: "ktVizJvGAAAAnfCMlATZWzE5OmNkYWQ5MTQ4LWQ5MjYtNDczMS04NjE4LTM3MWU1ODdkZGVkMF9kNDIyMGYxYi00YzEyLTQzNmMtOGEwMy1kYzNlMzYyZjlkNTRAdW5xLmdibC5zcGFjZXOg2TlmYjdlNWMxZS04YWI4LTQ2NDctOTdhMS03Mzk5MDhkNDE3YjMtMTc1OTgyMTkyMS1SZWNvcmRpbmc=",
       callID: "fb7e5c1e-8ab8-4647-97a1-739908d417b3",
@@ -138,16 +137,4 @@ Content-Type: application/json
     },
   ]
 }
-{
-  date: "Tue, 07 Oct 2025 12:24:14 GMT",
-  "content-type": "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=false;charset=utf-8",
-  "transfer-encoding": "chunked,"
-  connection: "keep-alive,"
-  vary: "Accept-Encoding,"
-  "strict-transport-security": "max-age=31536000,"
-  "request-ID": "808c8c75-ad4c-416c-9359-8d8427b86ce8,"
-  "client-request-ID": "808c8c75-ad4c-416c-9359-8d8427b86ce8,"
-  "x-ms-ags-diagnostic": "{\"ServerInfo\":{\"DataCenter\":\"Central India\",\"Slice\":\"E\",\"Ring\":\"3\",\"ScaleUnit\":\"001\",\"RoleInstance\":\"PN3PEPF000002AA\"}}",
-  "odata-version": "4.0,"
-  "x-cache": "CONFIG_NOCACHE,"
-}
+```

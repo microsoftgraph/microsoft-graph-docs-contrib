@@ -88,6 +88,10 @@ The following example shows the response.
   "@odata.type": "Collection(Microsoft.Teams.GraphSvc.callTranscript)"
 }
 -->
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('d4220f1b-4c12-436c-8a03-dc3e362f9d54')/adhocCalls",
   "@odata.count": 2,
@@ -134,16 +138,4 @@ The following example shows the response.
     },
   ]
 }
-{
-  date: "Tue, 07 Oct 2025 12:21:07 GMT",
-  "content-type": "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=false;charset=utf-8",
-  "transfer-encoding": "chunked",
-  connection: "keep-alive",
-  vary: "Accept-Encoding",
-  "strict-transport-security": "max-age=31536000",
-  "request-ID": "655af018-0db2-4b10-b33f-35e2fad0f6d7",
-  "client-request-ID": "655af018-0db2-4b10-b33f-35e2fad0f6d7",
-  "x-ms-ags-diagnostic": "{\"ServerInfo\":{\"DataCenter\":\"Central India\",\"Slice\":\"E\",\"Ring\":\"3\",\"ScaleUnit\":\"001\",\"RoleInstance\":\"PN3PEPF00000712\"}}",
-  "odata-version": "4.0",
-  "x-cache": "CONFIG_NOCACHE",
-}
+```
