@@ -25,6 +25,10 @@ In this tutorial, you learn how to:
 > * Configure a certificate for federated SSO
 > * Retrieve the Microsoft Entra ID SAML metadata for your application that you use to complete the integration
 
+> [!NOTE]
+> The steps to setup SAML applications are for setting up SAML applications with SP initiated flow.
+> IDP initiated flow will require the modification of the SAML application in Entra ID to add the identifier (entity ID)
+
 ## Prerequisites
 
 This tutorial configures SSO for the AWS IAM Identity Center. However, most of the steps on Microsoft Graph apply to any other app that you want to configure SSO.
