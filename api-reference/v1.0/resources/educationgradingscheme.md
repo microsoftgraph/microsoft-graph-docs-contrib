@@ -1,19 +1,17 @@
 ---
 title: "educationGradingScheme resource type"
 description: "Represents a custom scheme for grading."
-author: "v-rmanda"
+author: "GatadiMegha"
 ms.localizationpriority: medium
 ms.subservice: "education"
 doc_type: resourcePageType
 toc.title: Grading scheme
-ms.date: 06/14/2024
+ms.date: 09/19/2025
 ---
 
 # educationGradingScheme resource type
 
 Namespace: microsoft.graph
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents a custom scheme for grading.
 
