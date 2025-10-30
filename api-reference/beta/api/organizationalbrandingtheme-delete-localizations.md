@@ -2,7 +2,7 @@
 title: "Delete organizationalBrandingThemeLocalization"
 description: "Delete an organizationalBrandingThemeLocalization object."
 author: "AlexanderMars*"
-ms.date: 10/27/2025
+ms.date: 10/30/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
@@ -71,7 +71,6 @@ DELETE https://graph.microsoft.com/beta/organization/84841066-274d-4ec0-a5c1-276
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true

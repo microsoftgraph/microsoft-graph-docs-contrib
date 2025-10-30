@@ -20,6 +20,7 @@ You can create up to 5 branding themes to customize the sign-in pages that appea
 
 You can't change your original Theme configuration's language. However, you can add different branding based on locale. For language-specific Theme branding, see the [organizationalBrandingThemeLocalization](organizationalbrandingthemelocalization.md) object.
 
+For more information about app-specific branding in External ID, see Customize the sign-in experience for your application with branding themes (Preview).
 
 ## Methods
 |Method|Return type|Description|

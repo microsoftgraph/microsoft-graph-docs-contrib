@@ -5,7 +5,7 @@ author: alexanderMars
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
-ms.date: 10/14/2025
+ms.date: 10/30/2025
 ---
 
 # organizationalBranding resource type
@@ -36,8 +36,6 @@ You can't change your original configuration's language. However, companies can 
 | [Get](../api/organizationalbranding-get.md) | [organizationalBranding](../resources/organizationalbranding.md) | Read the properties and relationships of an [organizationalBranding](../resources/organizationalbranding.md) object. |
 | [Update](../api/organizationalbranding-update.md) | None | Update the properties of an [organizationalBranding](../resources/organizationalbranding.md) object. |
 <!--| [Delete organizationalBranding](../api/organizationalbranding-delete.md) | None | Delete an [organizationalBranding](../resources/organizationalbranding.md) object. |-->
-|[List themes](../api/organizationalbranding-list-themes.md)|[organizationalBrandingTheme](../resources/organizationalbrandingtheme.md) collection|Get a list of the organizationalBrandingTheme objects and their properties.|
-|[Create organizationalBrandingTheme](../api/organizationalbranding-post-themes.md)|[organizationalBrandingTheme](../resources/organizationalbrandingtheme.md)|Create a new organizationalBrandingTheme object.|
 
 ## Properties
 

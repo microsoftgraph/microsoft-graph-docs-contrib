@@ -2,7 +2,7 @@
 title: "Update organizationalBrandingTheme"
 description: "Update the properties of an organizationalBrandingTheme object."
 author: "AlexanderMars"
-ms.date: 10/28/2025
+ms.date: 10/30/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
@@ -39,7 +39,6 @@ To update String data types, such as signInPageText and usernameHintText, use th
 -->
 ``` http
 PATCH /organization/{organizationId}/branding/themes/{organizationalBrandingThemeId}
-PUT /organization/{organizationId}/branding/themes/{organizationalBrandingThemeId}/localizations/{organizationalBrandingThemeLocalizationId}/{Stream object type such as backgroundImage}
 ```
 
 ## Request headers
