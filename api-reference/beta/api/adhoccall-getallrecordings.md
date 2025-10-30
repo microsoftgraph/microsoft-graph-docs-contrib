@@ -85,8 +85,8 @@ The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true,              
-  "@odata.type": "Collection(Microsoft.Teams.GraphSvc.callRecording)"
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.callRecording)"
 }
 -->
 ```http
