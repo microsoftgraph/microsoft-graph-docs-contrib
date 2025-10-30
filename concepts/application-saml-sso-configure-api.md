@@ -27,7 +27,6 @@ In this tutorial, you learn how to:
 
 > [!NOTE]
 > The steps for setting up SAML applications apply to configurations that use the SP-initiated flow.
-
 >The IDP-initiated flow requires modifying the SAML application in Entra ID to add the identifier (entity ID).
 
 ## Prerequisites
