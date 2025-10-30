@@ -10,7 +10,7 @@ ms.date: 10/28/2025
 
 # Manage channel membership across channels with allMembers API in Microsoft Graph
 
-The `allMembers` API in Microsoft Graph provides a unified way to retrieve and manage channel memberships across **standard**, **shared**, and **private** channels in Microsoft Teams. It ensures accurate representation of both **direct** and **indirect** members, helping developers build solutions that respect permissions and membership hierarchies.
+The allMembers API in Microsoft Graph provides a unified way to retrieve and manage channel memberships across **standard**, **shared**, and **private** channels in Microsoft Teams. It ensures accurate representation of both **direct** and **indirect** members, helping developers build solutions that respect permissions and membership hierarchies.
 
 For an overview of Microsoft Teams APIs, see [Microsoft Graph overview for Teams](/graph/teams-concept-overview).
 
@@ -51,8 +51,6 @@ Shared channels introduce multiple membership paths. For example:
 > [!IMPORTANT]
 > Do not assume one row per user. Always check `originalSourceMembershipUrl` to determine membership type.
 
----
-
 ## Notifications and change tracking
 
 You can subscribe to membership changes using Microsoft Graph change notifications. For example:
@@ -67,15 +65,11 @@ You can subscribe to membership changes using Microsoft Graph change notificatio
 
 Learn more: [Get change notifications for channel membership](/graph/teams-changenotifications-channelmembership).
 
----
-
 ## Related APIs and integration
 
 - [List allMembers in a channel](/graph/api/channel-list-allmembers)
 - [List members of a team](/graph/api/team-list-members)
 - [Shared channels in Teams](/microsoftteams/platform/concepts/build-and-test/shared-channels)
-
----
 
 ## Related content
 
