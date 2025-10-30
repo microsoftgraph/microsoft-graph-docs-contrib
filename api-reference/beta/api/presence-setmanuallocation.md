@@ -1,6 +1,6 @@
 ---
 title: "presence: setManualLocation"
-description: "Set the user’s manual work location"
+description: "Set the user’s manual work location signal."
 author: "garchiro7"
 ms.date: 10/23/2025
 ms.localizationpriority: medium
@@ -14,10 +14,10 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-`setManualLocation` updates the manual work location signal for a user, the explicit value the user (or an authorized client) chooses to override any automatically detected or scheduled (WHL) location.
+Set the user’s manual work location signal. This is the explicit value chosen by a user (or an authorized client) to override any automatically detected or scheduled (WHL) location.
 
-- Precedence: manual > automatic > scheduled.
-- Precision (within the same layer): more precise wins (for example, office+building > office).
+- Precedence: manual > automatic > scheduled
+- Precision (within the same layer): more precise wins (for example, office + building > office)
 - If manual is set, it overrides automatic and scheduled.
 
 ## Permissions
@@ -84,7 +84,6 @@ Content-Type: application/json
   "placeId": "eb706f15-137e-4722-b4d1-b601481d9251"
 }
 ```
-
 
 ### Response
 
