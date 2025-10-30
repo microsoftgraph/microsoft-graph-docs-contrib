@@ -30,3 +30,5 @@ Management agent type.
 |unknown|16|Unknown management agent type.|
 |jamf|32|The device attributes are fetched from Jamf.|
 |googleCloudDevicePolicyController|64|The device is managed by Google's CloudDPC.|
+|msSense|1024|This device is managed by Microsoft Defender for Endpoint.|
+|intuneAosp|2048|This device is managed by Intune's MDM for AOSP (Android Open Source Project) devices|
