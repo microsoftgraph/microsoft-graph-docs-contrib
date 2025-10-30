@@ -1,6 +1,6 @@
 ---
 title: "crossTenantGroupSyncInbound resource type"
-description: "Defines whether groups can be synchronized from the partner tenant."
+description: "Defines whether groups can be synchronized from a partner tenant."
 author: "spasham"
 ms.date: 10/28/2025
 ms.localizationpriority: medium
@@ -14,13 +14,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+Defines whether groups can be synchronized from a partner tenant.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|isSyncAllowed|Boolean|Defines whether group objects should be synchronized from the partner tenant. `false` causes any current group synchronization from the source tenant to the target tenant to stop. This property has no impact on existing groups that have already been synchronized.|
+|isSyncAllowed|Boolean|Defines whether group objects should be synchronized from the partner tenant. `false` stops any current group synchronization from the source tenant to the target tenant. This property has no impact on existing groups that were synchronized.|
 
 ## Relationships
 None.
