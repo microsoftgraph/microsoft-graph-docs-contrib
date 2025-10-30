@@ -1,6 +1,6 @@
 ---
 title: "userWorkLocation resource type"
-description: "**TODO: Add Description**"
+description: "Represents the aggregated work location state for a user, computed from multiple signals: scheduled, automatic, and manual."
 author: "garchiro7"
 ms.date: 10/23/2025
 ms.localizationpriority: medium
@@ -14,23 +14,23 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The `userWorkLocation` resource represents the aggregated work location state for a user, computed from multiple signals: scheduled, automatic, and manual. It provides a consistent, privacy-aware way to expose where a user is working (e.g., office, remote, time off) and the metadata that supports hybrid work scenarios.
+Represents the aggregated work location state for a user, computed from multiple signals: scheduled, automatic, and manual. It provides a consistent, privacy-aware way to indicate where a user works (for example, office, remote, and time off) and includes metadata that supports hybrid work scenarios.
 
-Precedence: manual > automatic > scheduled
-Precision: more granular wins (e.g., office & building > office).
+- Precedence: manual > automatic > scheduled
+- Precision: more granular wins (for example, office + building > office)
 
-**Aggregation Rules**
+### Aggregation rules
 
-- If manual location is set → wins immediately.
-- Else if automatic location exists → most precise automatic signal wins.
-- Else if scheduled location exists → used as fallback.
-- If none → source = none, workLocationType = unspecified.
+- If manual location is set → it takes precedence immediately.
+- Else, if an automatic location exists → the most precise automatic signal wins.
+- Else, if a scheduled location exists → it's used as a fallback.
+- If none → source = none; **workLocationType** = `unspecified`.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |placeId|String| Identifier of the place (when applicable). |
-|source|workLocationSource| Indicates which layer won the aggregation. The possible values are: `none`, `manual`, `scheduled`, `automatic`, `unknownFutureValue`.|
+|source|workLocationSource| Indicates which layer wins the aggregation. The possible values are: `none`, `manual`, `scheduled`, `automatic`, `unknownFutureValue`.|
 |workLocationType|workLocationType| Semantic type of the location. The possible values are: `unspecified`, `office`, `remote`, `timeOff`, `unknownFutureValue`.|
 
 ## Relationships
@@ -46,9 +46,8 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.userWorkLocation",
-  "workLocationType": "String",
+  "placeId": "String",
   "source": "String",
-  "placeId": "String"
+  "workLocationType": "String"
 }
 ```
-
