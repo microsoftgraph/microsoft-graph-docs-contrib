@@ -14,13 +14,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-`setAutomaticLocation` updates the automatic work location for a user. The automatic layer participates in the standard precedence model:
+Update the automatic work location for a user. The automatic layer participates in the standard precedence model:
 
-- Precedence: manual > automatic > scheduled.
-- Precision (within the same layer): more precise wins (for example, office+building > office).
+- Precedence: manual > automatic > scheduled
+- Precision (within the same layer): more precise wins (for example, office + building > office)
 - If manual is set, it overrides automatic and scheduled.
 
-Use this operation from clients or services that detect location automatically (Teams, network/location agents, OEM docking apps). It doesn't clear manual or scheduled signals.
+Use this operation from clients or services that automatically detect location (for example, Teams, network/location agents, or OEM docking apps). It doesn't clear manual or scheduled signals.
 
 ## Permissions
 
@@ -63,8 +63,6 @@ The following table lists the parameters that are required when you call this ac
 |placeId|String| Identifier of the place (when applicable). |
 |workLocationType|workLocationType| Semantic type of the location. The possible values are: `unspecified`, `office`, `remote`, `timeOff`, `unknownFutureValue`.|
 
-
-
 ## Response
 
 If successful, this action returns a `204 No Content` response code.
@@ -88,7 +86,6 @@ Content-Type: application/json
   "placeId": "eb706f15-137e-4722-b4d1-b601481d9251"
 }
 ```
-
 
 ### Response
 
