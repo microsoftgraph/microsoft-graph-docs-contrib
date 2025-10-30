@@ -2,7 +2,7 @@
 title: "Get organizationalBrandingTheme"
 description: "Read the properties and relationships of organizationalBrandingTheme object."
 author: "AlexanderMars"
-ms.date: 09/25/2025
+ms.date: 10/27/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
@@ -27,6 +27,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/organizationalbrandingtheme-get-permissions.md)]
 
+[!INCLUDE [rbac-org-branding-apis-read](../includes/rbac-for-apis/rbac-org-branding-apis-read.md)]
+
 ## HTTP request
 
 <!-- {
@@ -39,7 +41,7 @@ GET /organization/{organizationId}/branding/themes/{organizationalBrandingThemeI
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports only the `$select` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -88,8 +90,8 @@ Content-Type: application/json
   "value": {
     "@odata.type": "#microsoft.graph.organizationalBrandingTheme",
     "id": "88373343-0336-58fb-427c-003495dcd79d",
-    "name": "Contoso",
-    "isDefaultTheme": "True"
+    "name": "ContosoTheme",
+    "isDefaultTheme": true
   }
 }
 ```

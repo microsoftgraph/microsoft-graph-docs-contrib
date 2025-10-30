@@ -2,7 +2,7 @@
 title: "organizationalBrandingThemeLocalization resource type"
 description: "Contains details of the theme's branding localizations."
 author: "AlexanderMars"
-ms.date: 10/14/2025
+ms.date: 10/27/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
@@ -14,10 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Resource that supports managing language-specific theme branding. While you can't change your original configuration's language, this resource allows you to create a new configuration for a different language.
-
-Inherits from [organizationalBrandingProperties](organizationalbrandingproperties.md).
-
+Resource that supports managing language-specific branding for a [organizationalBrandingThemeLocalization  object](../resources/organizationalBrandingThemeLocalization.md). While you can't change your original configuration's language, this resource allows you to create a new configuration for a different language.  
 
 ## Methods
 |Method|Return type|Description|
@@ -38,7 +35,7 @@ Inherits from [organizationalBrandingProperties](organizationalbrandingpropertie
 |bannerLogoRelativeUrl|String|A relative url for the bannerLogo property that is combined with a CDN base URL from the cdnList to provide the version served by a CDN. Read-only. Optional.|
 |cannotAccessYourAccount|[loginPageBrandingVisualElement](../resources/loginpagebrandingvisualelement.md)|Represents "Can't access your account?" hyperlink of self-service password reset (SSPR) that can be customized on the sign-in page for a theme. A display text can be updated. Optional.|
 |cdnHosts|String collection|A list of available CDN base urls that are serving the assets of the current resource. There are several CDNs used to provide redundancy hence eliminating Single Point of Failure for blob properties of this resource. Read-only. Optional.|
-|contentCustomization|[contentCustomization](../resources/contentcustomization.md)|Represents the various content options to be customized throughout the authentication flow for a tenant. <br/><br/>**NOTE:** Supported by Microsoft Entra ID for customers tenants only. Optional.|
+|contentCustomization|[contentCustomization](../resources/contentcustomization.md)|Represents the various content options to be customized throughout the authentication flow for a tenant. <br/><br/>**NOTE:** Supported by Microsoft Entra ID for customer tenants only. Optional.|
 |customCSS|Stream|CSS styling that appears on the sign-in page. The allowed format is .css format only and not larger than 25KB. Optional.|
 |customCSSRelativeUrl|String|A relative url for the customCSS property that is combined with a CDN base URL from the cdnList to provide the version served by a CDN. Read-only. Optional.|
 |favicon|Stream|A custom icon (favicon) to replace a default Microsoft product favicon on a Microsoft Entra tenant. Optional.|
@@ -57,8 +54,8 @@ Inherits from [organizationalBrandingProperties](organizationalbrandingpropertie
 |squareLogoRelativeUrl|String|A relative url for the squareLogo property that is combined with a CDN base URL from the cdnList to provide the version served by a CDN. Read-only. Optional.|
 |squareLogoDark|Stream|A square dark version of your company logo that appears in Windows 10 out-of-box experiences (OOBE) and when Windows Autopilot is enabled for deployment. Allowed types are PNG or JPEG not larger than 240 x 240 pixels and not more than 10 KB in size. We recommend using a transparent image with no padding around the logo. Optional.|
 |squareLogoDarkRelativeUrl|String|A relative url for the squareLogoDark property that is combined with a CDN base URL from the cdnList to provide the version served by a CDN. Read-only. Optional.|
-|termsOfUse|[loginPageBrandingVisualElement](../resources/loginpagebrandingvisualelement.md)|Represents the Term of Use hyperlink that can be customized in the footer of login page for a theme. A destination URL and a display text can be updated. Optional.|
-|usernameHintText|String| A string that shows as the hint in the username textbox on the sign-in screen. This text must be a Unicode, without links or code, and can't exceed 64 characters. Optional.|
+|termsOfUse|[loginPageBrandingVisualElement](../resources/loginpagebrandingvisualelement.md)|Represents the Terms of Use hyperlink that can be customized in the footer of the login page for a theme. A destination URL and a display text can be updated. Optional.|  
+|usernameHintText|String| A string that appears as the hint in the username text box on the sign-in screen. This text must be Unicode, contain no links or code, and can't exceed 64 characters. Optional.|
 
 ## Relationships
 None.

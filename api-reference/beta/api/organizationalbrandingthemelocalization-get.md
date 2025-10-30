@@ -2,7 +2,7 @@
 title: "Get organizationalBrandingThemeLocalization"
 description: "Read the properties and relationships of organizationalBrandingThemeLocalization object."
 author: "AlexanderMars"
-ms.date: 10/13/2025
+ms.date: 10/28/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
@@ -31,8 +31,18 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/organizationalbrandingthemelocalization-get-permissions.md)]
 
-## HTTP request
+[!INCLUDE [rbac-org-branding-apis-read](../includes/rbac-for-apis/rbac-org-branding-apis-read.md)]
 
+## HTTP request
+>**Note:** If the **Accept-Language** header is set to an existing locale identified by the value of its **id**, this method retrieves the branding theme for the specified locale. This method retrieves only non-Stream properties, for example, **usernameHintText**,  and **signInPageText**.
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+GET /organization/{organizationId}/branding/themes/{organizationalBrandingThemeId}/localizations/
+```
+>**Note:** To retrieve Stream types of the default branding, for example, **bannerLogo** and **backgroundImage**, use the [GET organizationalBrandingThemeLocalization](organizationalbrandingthemelocalization-get.md) method.
 <!-- {
   "blockType": "ignored"
 }
@@ -43,7 +53,7 @@ GET /organization/{organizationId}/branding/themes/{organizationalBrandingThemeI
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports only the `$select` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -95,8 +105,6 @@ Content-Type: application/json
       "accountResetCredentials": {
         "@odata.type": "microsoft.graph.loginPageBrandingVisualElement"
       },
-      "backgroundColor": "#FFFF33",
-      "backgroundImage": null,
       "backgroundImageRelativeUrl": null,
       "bannerLogo": null,
       "bannerLogoRelativeUrl": null,
@@ -116,11 +124,11 @@ Content-Type: application/json
       },
       "headerBackgroundColor": "#3377ffff",
       "headerLogo": null,
-      "headerLogoRelativeUrl": #FFFF33,
+      "headerLogoRelativeUrl": null,
       "loginPageLayoutConfiguration": {
         "@odata.type": "microsoft.graph.loginPageLayoutConfiguration"
       },
-      "pageBackgroundColor": null,
+      "pageBackgroundColor": "#FFFF33",
       "privacyAndCookies": {
         "@odata.type": "microsoft.graph.loginPageBrandingVisualElement"
       },
@@ -135,7 +143,7 @@ Content-Type: application/json
       "termsOfUse": {
         "@odata.type": "microsoft.graph.loginPageBrandingVisualElement"
       },
-      "usernameHintText": " "
+      "usernameHintText": "ContosoUsername"
   }
 }
 ```

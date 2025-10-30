@@ -2,7 +2,7 @@
 title: "Create organizationalBrandingThemeLocalization"
 description: "Create a new organizationalBrandingThemeLocalization object."
 author: "AlexanderMars"
-ms.date: 09/25/2025
+ms.date: 10/28/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
@@ -26,6 +26,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 [!INCLUDE [permissions-table](../includes/permissions/organizationalbrandingtheme-post-localizations-permissions.md)]
+
+[!INCLUDE [rbac-org-branding-apis-read](../includes/rbac-for-apis/rbac-org-branding-apis-read.md)]
 
 ## HTTP request
 
@@ -52,7 +54,7 @@ You can specify the following properties when creating an **organizationalBrandi
 
 |Property|Type|Description|
 |:---|:---|:---|
-|locale|String| An identifier that represents the locale specified using culture names. Culture names follow the RFC 1766 standard in the format "languagecode2-country/regioncode2". The portion "languagecode2" is a lowercase two-letter code derived from ISO 639-1 and "country/regioncode2" is an uppercase two-letter code derived from ISO 3166. For example, U.S. English is `en-US`. You can't create the default branding by setting the value of **locale** to the String types `0` or `default`.  <br/><br/>**NOTE:** Multiple branding for a single locale are currently not supported.|
+|locale|String| Required. An identifier that represents the locale specified using culture names. Culture names follow the RFC 1766 standard in the format "languagecode2-country/regioncode2". The portion "languagecode2" is a lowercase two-letter code derived from ISO 639-1 and "country/regioncode2" is an uppercase two-letter code derived from ISO 3166. For example, U.S. English is `en-US`. You can't create the default branding by setting the value of **locale** to the String types `0` or `default`.  <br/><br/>**NOTE:** Multiple branding for a single locale are currently not supported.|
 
 
 ## Response
@@ -79,7 +81,6 @@ Content-Type: application/json
       "accountResetCredentials": {
         "@odata.type": "microsoft.graph.loginPageBrandingVisualElement"
       },
-      "backgroundColor": "#FFFF33",
       "backgroundImage": null,
       "backgroundImageRelativeUrl": null,
       "bannerLogo": null,
@@ -100,11 +101,11 @@ Content-Type: application/json
       },
       "headerBackgroundColor": "#3377ffff",
       "headerLogo": null,
-      "headerLogoRelativeUrl": #FFFF33,
+      "headerLogoRelativeUrl": "#FFFF33",
       "loginPageLayoutConfiguration": {
         "@odata.type": "microsoft.graph.loginPageLayoutConfiguration"
       },
-      "pageBackgroundColor": null,
+      "PageBackgroundColor": "#FFFF33",
       "privacyAndCookies": {
         "@odata.type": "microsoft.graph.loginPageBrandingVisualElement"
       },
@@ -119,7 +120,7 @@ Content-Type: application/json
       "termsOfUse": {
         "@odata.type": "microsoft.graph.loginPageBrandingVisualElement"
       },
-      "usernameHintText": " "
+      "usernameHintText": "ContosoUsername "
 }
 ```
 
@@ -140,52 +141,50 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.organizationalBrandingThemeLocalization",
-  "locale": "73a89ed8-cd09-b6f2-d265-4cb03b747b33",
-  "accountResetCredentials": {
-    "@odata.type": "microsoft.graph.loginPageBrandingVisualElement"
-  },
-  "backgroundImage": "Stream",
-  "backgroundImageRelativeUrl": "String",
-  "bannerLogo": "Stream",
-  "bannerLogoRelativeUrl": "String",
-  "cannotAccessYourAccount": {
-    "@odata.type": "microsoft.graph.loginPageBrandingVisualElement"
-  },
-  "cdnHosts": [
-    "String"
-  ],
-  "contentCustomization": {
-    "@odata.type": "microsoft.graph.contentCustomization"
-  },
-  "customCSS": "Stream",
-  "customCSSRelativeUrl": "String",
-  "favicon": "Stream",
-  "faviconRelativeUrl": "String",
-  "forgotMyPassword": {
-    "@odata.type": "microsoft.graph.loginPageBrandingVisualElement"
-  },
-  "headerBackgroundColor": "String",
-  "headerLogo": "Stream",
-  "headerLogoRelativeUrl": "String",
-  "loginPageLayoutConfiguration": {
-    "@odata.type": "microsoft.graph.loginPageLayoutConfiguration"
-  },
-  "pageBackgroundColor": "String",
-  "privacyAndCookies": {
-    "@odata.type": "microsoft.graph.loginPageBrandingVisualElement"
-  },
-  "resetItNow": {
-    "@odata.type": "microsoft.graph.loginPageBrandingVisualElement"
-  },
-  "signInPageText": "String",
-  "squareLogo": "Stream",
-  "squareLogoRelativeUrl": "String",
-  "squareLogoDark": "Stream",
-  "squareLogoDarkRelativeUrl": "String",
-  "termsOfUse": {
-    "@odata.type": "microsoft.graph.loginPageBrandingVisualElement"
-  },
-  "usernameHintText": "String"
+  "locale": "fr-FR",
+    "accountResetCredentials": {
+      "@odata.type": "microsoft.graph.loginPageBrandingVisualElement"
+    },
+    "backgroundImage": null,
+    "backgroundImageRelativeUrl": null,
+    "bannerLogo": null,
+    "bannerLogoRelativeUrl": null,
+    "cannotAccessYourAccount": {
+      "@odata.type": "microsoft.graph.loginPageBrandingVisualElement"
+    },
+    "cdnHosts": [],
+    "contentCustomization": {
+      "@odata.type": "microsoft.graph.contentCustomization"
+    },
+    "customCSS": null,
+    "customCSSRelativeUrl": null,
+    "favicon": null,
+    "faviconRelativeUrl": null,
+    "forgotMyPassword": {
+      "@odata.type": "microsoft.graph.loginPageBrandingVisualElement"
+    },
+    "headerBackgroundColor": "#3377ffff",
+    "headerLogo": null,
+    "headerLogoRelativeUrl":"#FFFF33",
+    "loginPageLayoutConfiguration": {
+      "@odata.type": "microsoft.graph.loginPageLayoutConfiguration"
+    },
+    "pageBackgroundColor": "#FFFF33",
+    "privacyAndCookies": {
+      "@odata.type": "microsoft.graph.loginPageBrandingVisualElement"
+    },
+    "resetItNow": {
+      "@odata.type": "microsoft.graph.loginPageBrandingVisualElement"
+    },
+    "signInPageText": "Welcome to Contoso",
+    "squareLogo": null,
+    "squareLogoRelativeUrl": null,
+    "squareLogoDark": null,
+    "squareLogoDarkRelativeUrl": null,
+    "termsOfUse": {
+      "@odata.type": "microsoft.graph.loginPageBrandingVisualElement"
+    },
+    "usernameHintText": "ContosoUsername"
 }
 ```
 

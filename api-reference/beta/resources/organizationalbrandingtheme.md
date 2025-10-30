@@ -2,7 +2,7 @@
 title: "organizationalBrandingTheme resource type"
 description: "Contains details of the branding themes."
 author: "AlexanderMars"
-ms.date: 10/14/2025
+ms.date: 10/27/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
@@ -14,11 +14,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Contains details about the organization's branding themes. Inherits from [organizationalBrandingProperties](organizationalbrandingproperties.md).
+Contains details about the organization's branding themes.
 
-Organizations can create up to 5 branding themes and customize their Microsoft Entra sign-in pages which appear when users sign in to their organization's tenant-specific apps, or when Microsoft Entra ID identifies the user's tenant from their username. A developer can also read the branding theme information and customize their app experience to tailor it specifically for the signed-in user using their company's branding.
+You can create up to 5 branding themes to customize the sign-in pages that appear when users sign in to your organization's tenant-specific apps, or when Microsoft Entra External ID identifies the user's tenant from their username. The app can retrieve the branding theme information and customize the signed-in user's app experience to their company's branding. When this custom branding theme isn't available or linked to an app, the default tenant-level [organizationalBranding](../resources/organizationalbranding.md) settings apply.  
 
-You can't change your original configuration's language. However, companies can add different branding based on locale. For language-specific branding, see the [organizationalBrandingLocalization](organizationalbrandingproperties.md) object.
+You can't change your original Theme configuration's language. However, you can add different branding based on locale. For language-specific Theme branding, see the [organizationalBrandingThemeLocalization](organizationalbrandingthemelocalization.md) object.
 
 
 ## Methods
@@ -36,13 +36,13 @@ You can't change your original configuration's language. However, companies can 
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|An identifier that represents the theme created using custom names. Required.|
-|isDefaultTheme|Boolean|Indicates whether the theme is set as the default branding theme for the entire tenant and includes all applications within the tenant. When set to true, this theme is automatically applied to any application that does not have a specific theme assigned. This property is useful for enforcing consistent branding across multiple apps without configuring each one individually. Optional.|
+|isDefaultTheme|Boolean|Indicates whether the theme is set as the default branding theme for the entire tenant and includes all applications within the tenant. When set to `true`, this theme is automatically applied to any application that does not have a specific theme assigned. This property is useful for enforcing consistent branding across multiple apps without configuring each one individually. Optional.|  
 |name|String|The name of the branding theme. Required.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|localizations|[organizationalBrandingThemeLocalization](../resources/organizationalbrandingthemelocalization.md) collection|Add different branding based on a locale.|
+|localizations|[organizationalBrandingThemeLocalization](../resources/organizationalbrandingthemelocalization.md) collection|Represents a locale-based branding theme.|
 
 ## JSON representation
 The following JSON representation shows the resource type.

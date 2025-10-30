@@ -2,7 +2,7 @@
 title: "Update organizationalBrandingThemeLocalization"
 description: "Update the properties of an organizationalBrandingThemeLocalization object."
 author: "AlexanderMars"
-ms.date: 10/14/2025
+ms.date: 10/28/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-To update String data types, such as signInPageText and usernameHintText, use the PATCH method. To update Stream data types, such as backgroundLogo and backgroundImage, use the PUT method. You can't update Stream types with other data types in the same request.
+To update String data types, such as signInPageText and usernameHintText, use the PATCH method. To update Stream data types, such as bannerLogo and pageBackgroundImage, use the PUT method. You can't update Stream types with other data types in the same request.  
 
 ## Permissions
 
@@ -26,6 +26,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 [!INCLUDE [permissions-table](../includes/permissions/organizationalbrandingthemelocalization-update-permissions.md)]
+
+[!INCLUDE [rbac-org-branding-apis-read](../includes/rbac-for-apis/rbac-org-branding-apis-read.md)]
 
 ## HTTP request
 
@@ -53,8 +55,6 @@ PUT /organization/{organizationId}/branding/themes/{organizationalBrandingThemeI
 |Property|Type|Description|
 |:---|:---|:---|
 |accountResetCredentials|[loginPageBrandingVisualElement](../resources/loginpagebrandingvisualelement.md)|Represents "Can't access your account?" and "Reset it now" hyperlinks of self-service password reset (SSPR) that can be customized on the sign-in page for a theme. A destination URL can be updated. Optional.|
-|backgroundImage|Stream|Image that appears as the background of the sign-in page. The allowed types are PNG or JPEG not smaller than 300 KB and not larger than 1920 × 1080 pixels. A smaller image will reduce bandwidth requirements and make the page load faster. Optional.|
-|backgroundImageRelativeUrl|String|A relative url for the backgroundImage property that is combined with a CDN base URL from the cdnList to provide the version served by a CDN. Read-only. Optional.|
 |bannerLogo|Stream|A banner version of your company logo that appears on the sign-in page. The allowed types are PNG or JPEG not larger than 245 x 36 pixels. We recommend using a transparent image with no padding around the logo. Optional.|
 |bannerLogoRelativeUrl|String|A relative url for the bannerLogo property that is combined with a CDN base URL from the cdnList to provide the version served by a CDN. Read-only. Optional.|
 |cannotAccessYourAccount|[loginPageBrandingVisualElement](../resources/loginpagebrandingvisualelement.md)|Represents "Can't access your account?" hyperlink of self-service password reset (SSPR) that can be customized on the sign-in page for a theme. A display text can be updated. Optional.|
@@ -62,6 +62,8 @@ PUT /organization/{organizationId}/branding/themes/{organizationalBrandingThemeI
 |contentCustomization|[contentCustomization](../resources/contentcustomization.md)|Represents the various content options to be customized throughout the authentication flow for a tenant. <br/><br/>**NOTE:** Supported by Microsoft Entra ID for customers tenants only. Optional.|
 |customCSS|Stream|CSS styling that appears on the sign-in page. The allowed format is .css format only and not larger than 25KB. Optional.|
 |customCSSRelativeUrl|String|A relative url for the customCSS property that is combined with a CDN base URL from the cdnList to provide the version served by a CDN. Read-only. Optional.|
+|BackgroundImage|Stream|Image that appears as the background of the sign-in page. The allowed types are PNG or JPEG not smaller than 300 KB and not larger than 1920 × 1080 pixels. A smaller image will reduce bandwidth requirements and make the page load faster. Optional.|
+|BackgroundImageRelativeUrl|String|A relative url for the backgroundImage property that is combined with a CDN base URL from the cdnList to provide the version served by a CDN. Read-only. Optional.|
 |favicon|Stream|A custom icon (favicon) to replace a default Microsoft product favicon on a Microsoft Entra tenant. Optional.|
 |faviconRelativeUrl|String|A relative url for the favicon property that is combined with a CDN base URL from the cdnList to provide the version served by a CDN. Read-only. Optional.|
 |forgotMyPassword|[loginPageBrandingVisualElement](../resources/loginpagebrandingvisualelement.md)|Represents "Forgot my password" hyperlink of self-service password reset (SSPR) that can be customized on the sign-in page for a theme. A display text can be updated. Optional.|
@@ -103,52 +105,50 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.organizationalBrandingThemeLocalization",
-  "locale": "73a89ed8-cd09-b6f2-d265-4cb03b747b33",
+  "locale": "en-US",
   "accountResetCredentials": {
     "@odata.type": "microsoft.graph.loginPageBrandingVisualElement"
   },
-  "backgroundImage": "Stream",
-  "backgroundImageRelativeUrl": "String",
-  "bannerLogo": "Stream",
-  "bannerLogoRelativeUrl": "String",
+  "backgroundImage": null,
+  "backgroundImageRelativeUrl": null,
+  "bannerLogo": null,
+  "bannerLogoRelativeUrl": null,
   "cannotAccessYourAccount": {
     "@odata.type": "microsoft.graph.loginPageBrandingVisualElement"
   },
-  "cdnHosts": [
-    "String"
-  ],
+  "cdnHosts": [],
   "contentCustomization": {
     "@odata.type": "microsoft.graph.contentCustomization"
   },
-  "customCSS": "Stream",
-  "customCSSRelativeUrl": "String",
-  "favicon": "Stream",
-  "faviconRelativeUrl": "String",
+  "customCSS": null,
+  "customCSSRelativeUrl": null,
+  "favicon": null,
+  "faviconRelativeUrl": null,
   "forgotMyPassword": {
     "@odata.type": "microsoft.graph.loginPageBrandingVisualElement"
   },
-  "headerBackgroundColor": "String",
-  "headerLogo": "Stream",
-  "headerLogoRelativeUrl": "String",
+  "headerBackgroundColor": "#3377ffff",
+  "headerLogo": null,
+  "headerLogoRelativeUrl":"#FFFF33",
   "loginPageLayoutConfiguration": {
     "@odata.type": "microsoft.graph.loginPageLayoutConfiguration"
   },
-  "pageBackgroundColor": "String",
+  "pageBackgroundColor": "#FFFF33",
   "privacyAndCookies": {
     "@odata.type": "microsoft.graph.loginPageBrandingVisualElement"
   },
   "resetItNow": {
     "@odata.type": "microsoft.graph.loginPageBrandingVisualElement"
   },
-  "signInPageText": "String",
-  "squareLogo": "Stream",
-  "squareLogoRelativeUrl": "String",
-  "squareLogoDark": "Stream",
-  "squareLogoDarkRelativeUrl": "String",
+  "signInPageText": "Welcome to Contoso",
+  "squareLogo": null,
+  "squareLogoRelativeUrl": null,
+  "squareLogoDark": null,
+  "squareLogoDarkRelativeUrl": null,
   "termsOfUse": {
     "@odata.type": "microsoft.graph.loginPageBrandingVisualElement"
   },
-  "usernameHintText": "String"
+  "usernameHintText": "ContosoUsername"
 }
 ```
 
@@ -172,48 +172,46 @@ Content-Type: application/json
   "accountResetCredentials": {
     "@odata.type": "microsoft.graph.loginPageBrandingVisualElement"
   },
-  "backgroundImage": "Stream",
-  "backgroundImageRelativeUrl": "String",
-  "bannerLogo": "Stream",
-  "bannerLogoRelativeUrl": "String",
+  "backgroundImage": null,
+  "backgroundImageRelativeUrl": null,
+  "bannerLogo": null,
+  "bannerLogoRelativeUrl": null,
   "cannotAccessYourAccount": {
     "@odata.type": "microsoft.graph.loginPageBrandingVisualElement"
   },
-  "cdnHosts": [
-    "String"
-  ],
+  "cdnHosts": [],
   "contentCustomization": {
     "@odata.type": "microsoft.graph.contentCustomization"
   },
-  "customCSS": "Stream",
-  "customCSSRelativeUrl": "String",
-  "favicon": "Stream",
-  "faviconRelativeUrl": "String",
+  "customCSS": null,
+  "customCSSRelativeUrl": null,
+  "favicon": null,
+  "faviconRelativeUrl": null,
   "forgotMyPassword": {
     "@odata.type": "microsoft.graph.loginPageBrandingVisualElement"
   },
-  "headerBackgroundColor": "String",
-  "headerLogo": "Stream",
-  "headerLogoRelativeUrl": "String",
+  "headerBackgroundColor": "#3377ffff",
+  "headerLogo": null,
+  "headerLogoRelativeUrl":"#FFFF33",
   "loginPageLayoutConfiguration": {
     "@odata.type": "microsoft.graph.loginPageLayoutConfiguration"
   },
-  "pageBackgroundColor": "String",
+  "pageBackgroundColor": "#FFFF33",
   "privacyAndCookies": {
     "@odata.type": "microsoft.graph.loginPageBrandingVisualElement"
   },
   "resetItNow": {
     "@odata.type": "microsoft.graph.loginPageBrandingVisualElement"
   },
-  "signInPageText": "String",
-  "squareLogo": "Stream",
-  "squareLogoRelativeUrl": "String",
-  "squareLogoDark": "Stream",
-  "squareLogoDarkRelativeUrl": "String",
+  "signInPageText": "Welcome to Contoso",
+  "squareLogo": null,
+  "squareLogoRelativeUrl": null,
+  "squareLogoDark": null,
+  "squareLogoDarkRelativeUrl": null,
   "termsOfUse": {
     "@odata.type": "microsoft.graph.loginPageBrandingVisualElement"
   },
-  "usernameHintText": "String"
+  "usernameHintText": "ContosoUsername"
 }
 ```
 

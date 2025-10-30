@@ -2,7 +2,7 @@
 title: "Create organizationalBrandingTheme"
 description: "Create a new organizationalBrandingTheme object."
 author: "AlexanderMars"
-ms.date: 09/25/2025
+ms.date: 10/28/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
@@ -26,6 +26,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 [!INCLUDE [permissions-table](../includes/permissions/organizationalbranding-post-themes-permissions.md)]
+
+[!INCLUDE [rbac-org-branding-apis-read](../includes/rbac-for-apis/rbac-org-branding-apis-read.md)]
 
 ## HTTP request
 
@@ -53,7 +55,7 @@ You can specify the following properties when creating an **organizationalBrandi
 |Property|Type|Description|
 |:---|:---|:---|
 |name|String|The name of the branding theme. Required.|
-|isDefaultTheme|Boolean|Indicates whether the theme is set as the default branding theme for the entire tenant and includes all applications within the tenant. When set to true, this theme is automatically applied to any application that does not have a specific theme assigned. This property is useful for enforcing consistent branding across multiple apps without configuring each one individually. Optional.|
+|isDefaultTheme|Boolean|Indicates whether the theme is set as the default branding theme for the entire tenant and includes all applications within the tenant. When set to `true`, this theme is automatically applied to any application that does not have a specific theme assigned. This property is useful for enforcing consistent branding across multiple apps without configuring each one individually. Optional.|  
 
 
 

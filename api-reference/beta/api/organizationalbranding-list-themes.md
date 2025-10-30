@@ -2,7 +2,7 @@
 title: "List organizationalBrandingTheme objects"
 description: "Get a list of the organizationalBrandingTheme objects and their properties."
 author: "AlexanderMars"
-ms.date: 09/25/2025
+ms.date: 10/28/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
@@ -27,6 +27,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/organizationalbranding-list-themes-permissions.md)]
 
+[!INCLUDE [rbac-org-branding-apis-read](../includes/rbac-for-apis/rbac-org-branding-apis-read.md)]
+
 ## HTTP request
 
 <!-- {
@@ -39,7 +41,7 @@ GET /organization/{organizationId}/branding/themes
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports only the `$select` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -89,8 +91,8 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.organizationalBrandingTheme",
       "id": "88373343-0336-58fb-427c-003495dcd79d",
-      "name": "String",
-      "isDefaultTheme": "Boolean"
+      "name": "ContosoTheme",
+      "isDefaultTheme": true 
     }
   ]
 }
