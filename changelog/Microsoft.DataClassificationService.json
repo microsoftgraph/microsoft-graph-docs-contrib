@@ -60,14 +60,6 @@
         },
         {
           "Id": "e72bfd48-4fdc-4e10-9d29-89785912a3be",
-          "ApiChange": "Resource",
-          "ChangedApiName": "contentStoreResourceAccessDetail",
-          "ChangeType": "Addition",
-          "Description": "Added the [contentStoreResourceAccessDetail](https://learn.microsoft.com/en-us/graph/api/resources/contentstoreresourceaccessdetail?view=graph-rest-beta) resource type.",
-          "Target": "contentStoreResourceAccessDetail"
-        },
-        {
-          "Id": "e72bfd48-4fdc-4e10-9d29-89785912a3be",
           "ApiChange": "Property",
           "ChangedApiName": "accessedResources",
           "ChangeType": "Deprecation",
@@ -97,14 +89,6 @@
           "ChangeType": "Addition",
           "Description": "Added the [resourceAccessDetail](https://learn.microsoft.com/en-us/graph/api/resources/resourceAccessDetail?view=graph-rest-beta) resource type.",
           "Target": "resourceAccessDetail"
-        },
-        {
-          "Id": "e72bfd48-4fdc-4e10-9d29-89785912a3be",
-          "ApiChange": "Resource",
-          "ChangedApiName": "sharepointResourceAccessDetail",
-          "ChangeType": "Addition",
-          "Description": "Added the [sharepointResourceAccessDetail](https://learn.microsoft.com/en-us/graph/api/resources/sharepointresourceaccessdetail?view=graph-rest-beta) resource type.",
-          "Target": "sharepointResourceAccessDetail"
         }
       ],
       "Id": "e72bfd48-4fdc-4e10-9d29-89785912a3be",
