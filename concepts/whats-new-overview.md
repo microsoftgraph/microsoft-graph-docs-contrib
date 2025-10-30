@@ -138,6 +138,7 @@ Use the [callEvent](/graph/api/resources/callevent) and [emergencyCallEvent](/gr
 
 ### Files
 
+Use the **itemDefaultSensitivityLabelId** property on [fileStorageContainerSettings](/graph/api/resources/filestoragecontainersettings?view=graph-rest-beta&preserve-view=true) to get or set the ID of the default sensitivity label for items in the container.
 Added the following new endpoints as supported request URLs for the [driveItem: createUploadSession](/graph/api/driveitem-createuploadsession?view=graph-rest-beta&preserve-view=true) API:
 - `POST /drives/{driveId}/items/{parentItemId}:/{fileName}:/createUploadSession`
 - `POST /groups/{groupId}/drive/items/{parentItemId}:/{fileName}:/createUploadSession` 
