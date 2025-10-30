@@ -48,8 +48,6 @@ Content-Type: application/json
 }
 ```
 
----
-
 # [Powershell](#tab/powershell)
 
 ### Step 1: Allow PowerShell to run scripts
@@ -139,7 +137,6 @@ From the service principal object for the MCP Server, you can also query the del
 GET https://graph.microsoft.com/v1.0/servicePrincipals(appId ='e8c77dc2-69b3-43f4-bc51-3213c9d915b4')/oauth2PermissionScopes
 ```
 
----
 
 # [Admin center](#tab/entra-portal)
 
@@ -169,8 +166,6 @@ Content-type: application/json
 
 ```
 
----
-
 # [Admin center](#tab/entra-portal)
 
 1. Sign in to the [Microsoft Entra portal](https://entra.microsoft.com/).
@@ -196,8 +191,6 @@ PATCH https://graph.microsoft.com/v1.0/servicePrincipals/{id}
     "isDisabled": true
 }
 ```
-
----
 
 # [Admin center](#tab/entra-portal)
 
