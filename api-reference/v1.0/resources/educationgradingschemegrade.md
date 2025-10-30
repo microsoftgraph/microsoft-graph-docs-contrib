@@ -1,18 +1,16 @@
 ---
 title: "educationGradingSchemeGrade resource type"
 description: "Represents an individual grade range that contributes to a grading scheme."
-author: "v-rmanda"
+author: "pateljay-37"
 ms.localizationpriority: medium
 ms.subservice: "education"
 doc_type: resourcePageType
-ms.date: 03/12/2024
+ms.date: 09/24/2025
 ---
 
 # educationGradingSchemeGrade resource type
 
 Namespace: microsoft.graph
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents an individual grade range that contributes to a grading scheme.
 

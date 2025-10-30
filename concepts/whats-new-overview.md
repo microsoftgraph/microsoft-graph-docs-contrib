@@ -32,20 +32,12 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ### Education
 
+- [Add](/graph/api/educationassignment-put-gradingscheme) an existing [educationGradingScheme](/graph/api/resources/educationgradingscheme) to an existing [educationAssignment](/graph/api/resources/educationassignment).
+- [Add](/graph/api/educationassignmentsettings-put-defaultgradingscheme) the default [educationGradingScheme](/graph/api/resources/educationgradingscheme) to an [educationAssignmentSettings](/graph/api/resources/educationassignmentsettings) object.
+- Use the **languageTag** property on [educationAssignment](/graph/api/resources/educationassignment) to specify the language in which UI notifications for an assignment are displayed.
+- Create and manage a [custom scheme for grading](/graph/api/resources/educationgradingscheme).
 - [List the dependent education assignment resources](/graph/api/educationassignmentresource-list-dependentresources) for a given education assignment resource.
 - [List the dependent education submission resources](/graph/api/educationsubmissionresource-list-dependentresources) for a given education submission resource.
-
-### Employee experience | Employee engagement
-
-Viva Engage now supports new APIs for managing roles, allowing you to list, assign, and remove roles for users. For more information, see [Use the Microsoft Graph API to work with Viva Engage](/graph/api/resources/engagement-api-overview#role-management).
-
-### Files
-
-Added the following new endpoints as supported request URLs for the [driveItem: createUploadSession](/graph/api/driveitem-createuploadsession) API:
-- `POST /drives/{driveId}/items/{parentItemId}:/{fileName}:/createUploadSession`
-- `POST /groups/{groupId}/drive/items/{parentItemId}:/{fileName}:/createUploadSession` 
-- `POST /sites/{siteId}/drive/items/{parentItemId}:/{fileName}:/createUploadSession`
-- `POST /users/{userId}/drive/items/{parentItemId}:/{fileName}:/createUploadSession`
 
 ### Identity and access | Directory management
 
@@ -138,6 +130,7 @@ Use the [callEvent](/graph/api/resources/callevent) and [emergencyCallEvent](/gr
 
 ### Files
 
+Use the **itemDefaultSensitivityLabelId** property on [fileStorageContainerSettings](/graph/api/resources/filestoragecontainersettings?view=graph-rest-beta&preserve-view=true) to get or set the ID of the default sensitivity label for items in the container.
 Added the following new endpoints as supported request URLs for the [driveItem: createUploadSession](/graph/api/driveitem-createuploadsession?view=graph-rest-beta&preserve-view=true) API:
 - `POST /drives/{driveId}/items/{parentItemId}:/{fileName}:/createUploadSession`
 - `POST /groups/{groupId}/drive/items/{parentItemId}:/{fileName}:/createUploadSession` 
