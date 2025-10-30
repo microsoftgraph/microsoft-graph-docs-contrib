@@ -1,5 +1,5 @@
 ---
-title: "presence setAutomaticLocation API"
+title: "presence: setAutomaticLocation"
 description: "Update the automatic work location for a user."
 author: "garchiro7"
 ms.date: 10/23/2025
