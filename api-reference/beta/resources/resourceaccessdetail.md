@@ -30,6 +30,7 @@ Base type of [contentStoreResourceAccessDetail](../resources/contentstoreresourc
 | name                           | String               | Name of the resource accessed. |
 | status                         | resourceAccessStatus | Indicates the status of the access attempt. The possible values are: `none`, `failure`, `success`, `unknownFutureValue`. |
 | url                            | String               | URL of the resource accessed. |
+| storageId                      | String               | Identifier for the resource in its native storage format. For SharePoint resources, this is the unique identifier of the list item.  For other resources, this is the name of the location, such as Box, Dropbox, Exchange, or Google Drive. |
 
 ## Relationships
 
@@ -52,6 +53,7 @@ The following JSON representation shows the resource type.
   "labelId": "String",
   "name": "String",
   "status": "String",
-  "url": "String"
+  "url": "String",
+  "storageId": "String"
 }
 ```
