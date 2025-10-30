@@ -2737,6 +2737,10 @@ items:
         href: ../../api/policydeletableitem-delete.md
       - name: Restore deleted policy
         href: ../../api/crosstenantidentitysyncpolicypartner-restore.md
+    - name: Complex types
+      items:
+      - name: Cross-tenant group sync inbound
+        href: ../../resources/crosstenantgroupsyncinbound.md
   - name: Cross-tenant shared user profiles
     items:
     - name: Inbound shared user profile
