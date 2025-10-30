@@ -1,6 +1,6 @@
 ---
 title: "presence: clearLocation"
-description: "Clears the work location signals for a user, it clears both the manual and automatic layers for the current date. "
+description: "Clear the work location signals for a user, including both the manual and automatic layers for the current date."
 author: "garchiro7"
 ms.date: 10/23/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Clears the work location signals for a user, it clears both the manual and automatic layers for the current date. 
+Clear the work location signals for a user, including both the manual and automatic layers for the current date.
 
 ## Permissions
 
@@ -66,7 +66,6 @@ The following example shows a request.
 ``` http
 POST https://graph.microsoft.com/beta/me/presence/clearLocation
 ```
-
 
 ### Response
 
