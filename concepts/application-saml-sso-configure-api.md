@@ -26,8 +26,9 @@ In this tutorial, you learn how to:
 > * Retrieve the Microsoft Entra ID SAML metadata for your application that you use to complete the integration
 
 > [!NOTE]
-> The steps to setup SAML applications are for setting up SAML applications with SP initiated flow.
-> IDP initiated flow will require the modification of the SAML application in Entra ID to add the identifier (entity ID)
+> The steps for setting up SAML applications apply to configurations that use the SP-initiated flow.
+
+>The IDP-initiated flow requires modifying the SAML application in Entra ID to add the identifier (entity ID).
 
 ## Prerequisites
 
