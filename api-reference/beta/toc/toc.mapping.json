@@ -2737,7 +2737,6 @@
               "classificationInnerError",
               "computeRightsAndInheritanceResult",
               "contentBase",
-              "contentStoreResourceAccessDetail",
               "customMetadataDictionary",
               "deviceMetadata",
               "dlpActionInfo",
@@ -2769,7 +2768,6 @@
               "restrictAccessAction",
               "restrictAccessActionBase",
               "scopeBase",
-              "sharepointResourceAccessDetail",
               "tenantScope",
               "textContent",
               "userScope"
