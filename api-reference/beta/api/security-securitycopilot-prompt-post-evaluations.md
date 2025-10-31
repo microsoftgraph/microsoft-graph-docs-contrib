@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security.securityCopilot
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new evaluation object.
+Create a new [evaluation](../resources/security-securitycopilot-evaluation.md) object.
 
 ## Permissions
 
@@ -26,6 +26,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 [!INCLUDE [permissions-table](../includes/permissions/security-securitycopilot-prompt-post-evaluations-permissions.md)]
+
+> [!IMPORTANT]
+> In delegated scenarios with work or school accounts, the signed-in user must be assigned a supported [Microsoft Security Copilot role](https://learn.microsoft.com/en-us/copilot/security/authentication). The following least privileged roles are supported for this operation.
+> - Security Copilot Contributor
 
 ## HTTP request
 

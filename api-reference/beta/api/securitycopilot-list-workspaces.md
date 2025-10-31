@@ -27,6 +27,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/securitycopilot-list-workspaces-permissions.md)]
 
+> [!IMPORTANT]
+> In delegated scenarios with work or school accounts, the signed-in user must be assigned a supported [Microsoft Security Copilot role](https://learn.microsoft.com/en-us/copilot/security/authentication). The following least privileged roles are supported for this operation.
+> - Security Copilot Contributor
+
 ## HTTP request
 
 <!-- {

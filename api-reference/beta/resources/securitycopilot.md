@@ -20,10 +20,14 @@ This is an abstract type.
 Inherits from [entity](../resources/entity.md)
 
 ## Methods
-None.
+|Method|Return type|Description|
+|:---|:---|:---|
+|[List workspaces](../api/securitycopilot-list-workspaces.md)|[workspace](../resources/security.securitycopilot-workspace.md) collection|Get a list of the workspace objects and their properties.|
 
 ## Properties
-None.
+|Property|Type|Description|
+|:---|:---|:---|
+|id|String|Represents the unique ID of the Security Copilot workspace. Inherits from [entity](../resources/entity.md)|
 
 ## Relationships
 |Relationship|Type|Description|
