@@ -27,7 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/policyroot-post-b2bmanagementpolicies-permissions.md)]
 
-[!INCLUDE [rbac-b2bManagementPolicy-apis-write](../includes/rbac-for-apis/rbac-b2bManagementPolicy-apis-write.md)]
+[!INCLUDE [rbac-b2bmanagementpolicy-apis-write](../includes/rbac-for-apis/rbac-b2bmanagementpolicy-apis-write.md)]
 
 ## HTTP request
 

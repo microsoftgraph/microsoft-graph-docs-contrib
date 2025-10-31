@@ -27,7 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/b2bmanagementpolicy-get-permissions.md)]
 
-[!INCLUDE [rbac-b2bManagementPolicy-apis-read](../includes/rbac-for-apis/rbac-b2bManagementPolicy-apis-read.md)]
+[!INCLUDE [rbac-b2bmanagementpolicy-apis-read](../includes/rbac-for-apis/rbac-b2bmanagementpolicy-apis-read.md)]
 
 ## HTTP request
 
@@ -95,7 +95,7 @@ Content-Type: application/json
   "definition": [
     "{'B2BManagementPolicy':{'Version':1}}"
   ],
-  "isOrganizationDefault": "true"
+  "isOrganizationDefault": true
 }
 ```
 

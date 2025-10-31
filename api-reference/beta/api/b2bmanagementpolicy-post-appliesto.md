@@ -61,12 +61,13 @@ If successful, this method returns a `201 Created` response code and a [director
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "create_directoryobject_from_directoryobjects"
+  "name": "create_directoryobject_from_b2bmanagement_policies"
 }
 -->
 ``` http
 POST https://graph.microsoft.com/beta/policies/b2bManagementPolicies/f596ef0d-42f9-0359-1aaa-12d02b38802a/appliesTo/$ref
 Content-Type: application/json
+
 {
   "@odata.id": " https://graph.microsoft.com/beta/directoryObjects/a6c034b8-621b-dee3-6abb-52cbce801fe9"
 }
