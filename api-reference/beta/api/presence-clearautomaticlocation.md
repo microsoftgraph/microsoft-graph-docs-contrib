@@ -1,6 +1,6 @@
 ---
 title: "presence: clearAutomaticLocation"
-description: "Clear the automatically detected work location for a user"
+description: "Clear the automatic work location signal for a user."
 author: "garchiro7"
 ms.date: 10/23/2025
 ms.localizationpriority: medium
@@ -15,11 +15,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Clears the user’s automatic work location signal. After clearing, the user’s final aggregated work location is recomputed following the precedence rules:
+Clear the automatic work location signal for a user. After clearing, the user’s final aggregated work location is recomputed according to the precedence rules:
 
 - Precedence: manual > automatic > scheduled.
-- If manual is set, clearing automatic doesn't change the final location (manual still wins).
-- If manual isn't set, the final location falls back to scheduled (Calendar Working Hours & Location – WHL) for the current segment, or to none if there’s no scheduled signal.
+- If a manual location is set, clearing the automatic signal doesn't change the final location (manual still takes precedence).
+- If no manual location is set, the final location falls back to the scheduled signal (calendar working hours and location – WHL) for the current segment, or to none if there's no scheduled signal.
 
 Use this operation when your client needs to remove the current autodetected signal without affecting manual or scheduled layers.
 
