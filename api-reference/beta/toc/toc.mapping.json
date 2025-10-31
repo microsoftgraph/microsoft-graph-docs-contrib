@@ -13,8 +13,7 @@
       "overview": "../../resources/groups-overview.md",
       "resources": [
         "group",
-        "groupLifecyclePolicy",
-        "onPremisesSyncBehavior"
+        "groupLifecyclePolicy"
       ]
     },
     {
@@ -263,21 +262,22 @@
           "resources": [
             "place",
             "building",
-            "floor",
-            "section",
             "desk",
+            "floor",
             "room",
+            "roomList",
+            "section",
             "workspace",
-            "roomList"
+            "checkInClaim"
           ],
           "complexTypes": [
-            "resourceLink",
-            "mailboxDetails",
-            "placeMode",
             "assignedPlaceMode",
             "dropInPlaceMode",
+            "mailboxDetails",
+            "offlinePlaceMode",
+            "placeMode",
             "reservablePlaceMode",
-            "offlinePlaceMode"
+            "resourceLink"
           ],
            "childNodes": [
             {
@@ -285,7 +285,21 @@
               "resources":[
                 "workplaceSensorDevice"
               ]
-            }
+            },
+            {
+             "name": "Maps (preview)",
+             "resources":[
+               "buildingMap",
+               "fixtureMap",
+               "footprintMap",
+               "levelMap",
+               "sectionMap",
+               "unitMap"
+             ],
+              "complexTypes": [
+                "importBuildingMapSetting"
+              ]
+             }
            ]
          }
       ]
@@ -488,12 +502,15 @@
           "resources": [
             "cloudPC",
             "cloudPcAuditEvent",
+            "cloudPcBulkAction",
             "cloudPcCloudApp",
             "cloudPcCrossCloudGovernmentOrganizationMapping",
             "cloudPcDeviceImage",
             "cloudPcExternalPartnerSetting",
+            "cloudPcExternalPartner",
             "cloudPcFrontLineServicePlan",
             "cloudPcGalleryImage",
+            "cloudPcManagedLicense",
             "cloudPcOnPremisesConnection",
             "cloudPcOrganizationSettings",
             "cloudPcProvisioningPolicy",
@@ -502,8 +519,7 @@
             "cloudPcSnapshot",
             "cloudPcSupportedRegion",
             "cloudPcUserSetting",
-            "virtualEndpoint",
-            "cloudPcBulkAction"
+            "virtualEndpoint"
           ],
           "complexTypes": [
             "appScope",
@@ -530,7 +546,7 @@
             "cloudPcBulkCreateSnapshot",
             "cloudPcBulkSetReviewStatus",
             "cloudPcCloudAppDetail",
-            "CloudPcConnectionSetting",
+            "cloudPcConnectionSetting",
             "cloudPcConnectivityEvent",
             "cloudPcConnectivityResult",
             "cloudPcCrossRegionDisasterRecoverySetting",
@@ -542,10 +558,12 @@
             "cloudPcForensicStorageAccount",
             "cloudPcFrontlineSharedDeviceDetail",
             "cloudPcHealthCheckItem",
+            "cloudPcLaunchDetail",            
             "cloudPcLaunchInfo",
             "cloudPcLoginResult",
             "cloudPcManagementAssignmentTarget",
             "cloudPcManagementGroupAssignmentTarget",
+            "cloudPcNotificationSetting",
             "cloudPcOnPremisesConnectionStatusDetail",
             "cloudPcOnPremisesConnectionStatusDetails",
             "cloudPcPartnerAgentInstallResult",
@@ -556,20 +574,23 @@
             "cloudPcRestorePointSetting",
             "cloudPcReviewStatus",
             "cloudPcScopedPermission",
+            "cloudPcSnapshotImportActionDetail",
+            "cloudPcSnapshotImportActionResult",
             "cloudPcSourceDeviceImage",
             "cloudPcStatusDetails",
             "cloudPcStatusDetail",
             "cloudPcStatusSummary",
+            "cloudPcStorageBlobDetail",
             "cloudPcSupportedRegionRestrictionDetail",
             "cloudPcSubscription",
             "cloudPcUserRoleScopeTagInfo",
             "cloudPcUserSettingAssignment",
             "cloudPcWindowsSetting",
             "cloudPcWindowsSettings",
+            "frontlineCloudPcDetail",
             "keyValuePair",
             "microsoftManagedDesktop",
-            "unifiedRolePermission",
-            "cloudPcNotificationSetting"
+            "unifiedRolePermission"
           ],
           "childNodes": [
             {
@@ -913,10 +934,10 @@
           "overview": "../../resources/engagement-api-overview.md",
           "resources": [
             "community",
+            "employeeExperienceUser",
             "engagementAsyncOperation",
             "engagementRole",
-            "engagementRoleMember",
-            "employeeExperienceUser"
+            "engagementRoleMember"
           ],
           "complexTypes": [
             "engagementConversationMessageAttachment",
@@ -988,11 +1009,13 @@
         "OneDrive for Business",
         "OneDrive business",
         "OneDrive personal",
-        "SharePoint"
+        "SharePoint",
+        "SharePoint Embedded"
       ],
       "resources": [
         "drive",
         "driveItem",
+        "driveItemVersion",
         "bundle",
         "fileStorageContainer",
         "fileStorageContainerType",
@@ -1007,7 +1030,29 @@
       ],
       "complexTypes": [
         "fileStorageContainerTypeRegistrationSettings",
+        "fileStorageContainerTypeAgentSettings",
         "fileStorageContainerTypeSettings"
+      ],
+      "childNodes": [
+        {
+          "name": "SharePoint migration (preview)",
+          "overview": "../../resources/sharepointmigration-api-overview.md",
+          "resources": [
+            "sharePointMigrationEvent",
+            "sharePointMigrationFinishManifestFileUploadEvent",
+            "sharePointMigrationJob",
+            "sharePointMigrationJobCancelledEvent",
+            "sharePointMigrationJobDeletedEvent",
+            "sharePointMigrationJobErrorEvent",
+            "sharePointMigrationJobPostponedEvent",
+            "sharePointMigrationJobProgressEvent",
+            "sharePointMigrationJobQueuedEvent",
+            "sharePointMigrationJobStartEvent"
+          ],
+          "complexTypes": [
+            "sharePointMigrationContainerInfo"
+          ]
+        }
       ]
     },
     {
@@ -1055,7 +1100,6 @@
           "shouldSort": true,
           "resources": [
             "administrativeUnit",
-            "appRoleAssignment",
             "contract",
             "directory",
             "device",
@@ -1503,6 +1547,7 @@
           "name": "Identity and sign-in",
           "shouldSort": true,
           "resources": [
+            "appRoleAssignment",            
             "dataPolicyOperation",
             "oAuth2PermissionGrant",
             "certificateBasedAuthConfiguration",
@@ -1518,10 +1563,11 @@
                 "onAttributeCollectionSubmitListener",
                 "onAuthenticationMethodLoadStartListener",
                 "onEmailOtpSendListener",
+                "onFraudProtectionLoadStartListener",
                 "onInteractiveAuthFlowStartListener",
+                "onPhoneMethodLoadStartListener",
                 "onTokenIssuanceStartListener",
-                "onUserCreateStartListener",
-                "onPhoneMethodLoadStartListener"
+                "onUserCreateStartListener"
               ]
             },
             {
@@ -1653,7 +1699,10 @@
                 "riskyUser",
                 "riskyUserHistoryItem",
                 "servicePrincipalRiskDetection",
-                "riskyServicePrincipal"
+                "riskyServicePrincipal",
+                "fraudProtectionProvider",
+                "arkoseFraudProtectionProvider",
+                "humanSecurityFraudProtectionProvider"
               ]
             },
             {
@@ -2482,11 +2531,15 @@
               "overview": "../../resources/azure-ad-auditlog-overview.md",
               "shouldSort": true,
               "resources": [
+                "auditActivityType",
                 "customSecurityAttributeAudit",
                 "directoryAudit",
                 "provisioningObjectSummary",
                 "selfServiceSignUp",
-                "signIn"
+                "signIn",
+                "signInEventsActivity",
+                "signInEventsAppActivity",
+                "summarizedSignIn"
               ]
             }
           ]
@@ -2620,7 +2673,9 @@
             "microsoft.graph.security.incidentTask"
           ],
           "complexTypes": [
-            "microsoft.graph.security.teamsMessageEvidence"
+            "microsoft.graph.security.securityGroupEvidence",
+            "microsoft.graph.security.teamsMessageEvidence",
+            "microsoft.graph.security.userAccount"
           ]
         },
         {
@@ -2767,7 +2822,10 @@
             "microsoft.graph.security.healthIssue",
             "microsoft.graph.security.sensor",
             "microsoft.graph.security.identityAccounts",
-            "microsoft.graph.security.user"
+            "microsoft.graph.security.user",
+            "microsoft.graph.security.sensorCandidate",
+            "microsoft.graph.security.sensorCandidateActivationConfiguration",
+            "microsoft.graph.security.autoAuditingConfiguration"
           ],
           "complexTypes": [
             "microsoft.graph.security.deploymentAccessKeyType",
@@ -2923,6 +2981,9 @@
         "permission",
         "sharepointSettings"
       ],
+      "complexTypes": [
+        "identityInput"
+      ],
       "childNodes": [
         {
           "name": "Pages",
@@ -3072,14 +3133,20 @@
         {
           "name": "Administration (preview)",
           "resources": [
-            "microsoft.graph.teamsAdministration.teamsUserConfiguration",
             "microsoft.graph.teamsAdministration.numberAssignment",
+            "microsoft.graph.teamsAdministration.teamsUserConfiguration",
+            "microsoft.graph.teamsAdministration.telephoneNumberLongRunningOperation",
+            "microsoft.graph.teamsAdministration.telephoneNumberManagementRoot",
+            "microsoft.graph.teamsAdministration.teamsPolicyAssignment",
+            "microsoft.graph.teamsAdministration.teamsPolicyUserAssignment",
+            "microsoft.graph.teamsAdministration.teamsUserConfiguration",
             "microsoft.graph.teamsAdministration.telephoneNumberLongRunningOperation"
           ],
           "complexTypes": [
             "microsoft.graph.teamsAdministration.assignedTelephoneNumber",
             "microsoft.graph.teamsAdministration.effectivePolicyAssignment",
             "microsoft.graph.teamsAdministration.policyAssignment",
+            "microsoft.graph.teamsAdministration.policyIdentifierDetail",
             "microsoft.graph.teamsAdministration.telephoneNumberLongRunningOperationDetails"
           ]
         },
@@ -3149,8 +3216,11 @@
             {
               "name": "Call events",
               "resources": [
-                "microsoft.graph.callEvent",
-                "microsoft.graph.emergencyCallEvent"
+                "callEvent",
+                "emergencyCallEvent"
+              ],
+              "complexTypes": [
+                "emergencyCallerInfo"
               ]
             },
             {
@@ -3450,6 +3520,7 @@
         "workbookChartPointFormat",
         "workbookChartSeriesFormat",
         "workbookChartTitleFormat",
+        "workbookCommentMention",
         "workbookDocumentTaskSchedule",
         "workbookEmailIdentity",
         "workbookFilterCriteria",
@@ -3481,3 +3552,4 @@
     }
   ]
 }
+

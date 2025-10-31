@@ -16,14 +16,16 @@ Namespace: microsoft.graph
 
 Create a new [windowsUniversalAppXContainedApp](../resources/intune-apps-windowsuniversalappxcontainedapp.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementApps.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementApps.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -48,7 +50,7 @@ The following table shows the properties that are required when you create the w
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Key of the entity. Inherited from [mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md)|
+|id|String|Key of the entity. This property is read-only. Inherited from [mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md)|
 |appUserModelId|String|The app user model ID of the contained app of a WindowsUniversalAppX app.|
 
 
@@ -60,8 +62,6 @@ If successful, this method returns a `201 Created` response code and a [windowsU
 
 ### Request
 Here is an example of the request.
-
-<!-- { "blockType": "ignored" , "name" : "intune_apps_windowsuniversalappxcontainedapp_create_create_windowsuniversalappxcontainedapp" }-->
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppContentId}/containedApps
 Content-type: application/json
@@ -75,8 +75,6 @@ Content-length: 122
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-
-<!-- { "blockType": "response" , "@odata.type" : "microsoft.graph.windowsUniversalAppXContainedApp" }-->
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json

@@ -61,8 +61,12 @@ items:
       href: ../../api/protectionrulebase-post.md
     - name: Get
       href: ../../api/protectionrulebase-get.md
+    - name: Update
+      href: ../../api/protectionrulebase-update.md
     - name: Delete
       href: ../../api/protectionrulebase-delete.md
+    - name: Delete and unprotect
+      href: ../../api/protectionrulebase-deleteandunprotect.md
     - name: Run
       href: ../../api/protectionrulebase-run.md
   - name: Mailbox protection rule
@@ -75,8 +79,12 @@ items:
       href: ../../api/protectionrulebase-post.md
     - name: Get
       href: ../../api/protectionrulebase-get.md
+    - name: Update
+      href: ../../api/protectionrulebase-update.md
     - name: Delete
       href: ../../api/protectionrulebase-delete.md
+    - name: Delete and unprotect
+      href: ../../api/protectionrulebase-deleteandunprotect.md
     - name: Run
       href: ../../api/protectionrulebase-run.md
   - name: Site protection rule
@@ -99,6 +107,10 @@ items:
     href: ../../resources/protectionunitbase.md
   - name: Get
     href: ../../api/protectionunitbase-get.md
+  - name: Offboard
+    href: ../../api/protectionunitbase-offboard.md
+  - name: Cancel offboard
+    href: ../../api/protectionunitbase-canceloffboard.md
   - name: Drive protection unit
     items:
     - name: Drive protection unit

@@ -52,9 +52,9 @@ items:
         href: ../../api/directoryaudit-list.md
       - name: Get
         href: ../../api/directoryaudit-get.md
-    - name: Sign in
+    - name: Sign-in
       items:
-      - name: Sign in
+      - name: Sign-in
         href: ../../resources/signin.md
       - name: List
         href: ../../api/signin-list.md

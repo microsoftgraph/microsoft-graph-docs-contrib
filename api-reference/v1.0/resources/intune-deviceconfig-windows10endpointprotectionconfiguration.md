@@ -5,7 +5,7 @@ author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
-ms.date: 09/13/2024
+ms.date: 08/01/2024
 ---
 
 # windows10EndpointProtectionConfiguration resource type
@@ -37,6 +37,27 @@ Inherits from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfi
 |description|String|Admin provided description of the Device Configuration. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|applicationGuardEnabled|Boolean|Enable Windows Defender Application Guard|
+|applicationGuardBlockFileTransfer|[applicationGuardBlockFileTransferType](../resources/intune-deviceconfig-applicationguardblockfiletransfertype.md)|Block clipboard to transfer image file, text file or neither of them. Possible values are: `notConfigured`, `blockImageAndTextFile`, `blockImageFile`, `blockNone`, `blockTextFile`.|
+|applicationGuardBlockNonEnterpriseContent|Boolean|Block enterprise sites to load non-enterprise content, such as third party plug-ins|
+|applicationGuardAllowPersistence|Boolean|Allow persisting user generated data inside the App Guard Containter (favorites, cookies, web passwords, etc.)|
+|applicationGuardForceAuditing|Boolean|Force auditing will persist Windows logs and events to meet security/compliance criteria (sample events are user login-logoff, use of privilege rights, software installation, system changes, etc.)|
+|applicationGuardBlockClipboardSharing|[applicationGuardBlockClipboardSharingType](../resources/intune-deviceconfig-applicationguardblockclipboardsharingtype.md)|Block clipboard to share data from Host to Container, or from Container to Host, or both ways, or neither ways. Possible values are: `notConfigured`, `blockBoth`, `blockHostToContainer`, `blockContainerToHost`, `blockNone`.|
+|applicationGuardAllowPrintToPDF|Boolean|Allow printing to PDF from Container|
+|applicationGuardAllowPrintToXPS|Boolean|Allow printing to XPS from Container|
+|applicationGuardAllowPrintToLocalPrinters|Boolean|Allow printing to Local Printers from Container|
+|applicationGuardAllowPrintToNetworkPrinters|Boolean|Allow printing to Network Printers from Container|
+|appLockerApplicationControl|[appLockerApplicationControlType](../resources/intune-deviceconfig-applockerapplicationcontroltype.md)|Enables the Admin to choose what types of app to allow on devices. Possible values are: `notConfigured`, `enforceComponentsAndStoreApps`, `auditComponentsAndStoreApps`, `enforceComponentsStoreAppsAndSmartlocker`, `auditComponentsStoreAppsAndSmartlocker`.|
+|bitLockerDisableWarningForOtherDiskEncryption|Boolean|Allows the Admin to disable the warning prompt for other disk encryption on the user machines.|
+|bitLockerEnableStorageCardEncryptionOnMobile|Boolean|Allows the admin to require encryption to be turned on using BitLocker. This policy is valid only for a mobile SKU.|
+|bitLockerEncryptDevice|Boolean|Allows the admin to require encryption to be turned on using BitLocker.|
+|bitLockerRemovableDrivePolicy|[bitLockerRemovableDrivePolicy](../resources/intune-deviceconfig-bitlockerremovabledrivepolicy.md)|BitLocker Removable Drive Policy.|
+|defenderAttackSurfaceReductionExcludedPaths|String collection|List of exe files and folders to be excluded from attack surface reduction rules|
+|defenderGuardedFoldersAllowedAppPaths|String collection|List of paths to exe that are allowed to access protected folders|
+|defenderAdditionalGuardedFolders|String collection|List of folder paths to be added to the list of protected folders|
+|defenderExploitProtectionXml|Binary|Xml content containing information regarding exploit protection details.|
+|defenderExploitProtectionXmlFileName|String|Name of the file from which DefenderExploitProtectionXml was obtained.|
+|defenderSecurityCenterBlockExploitProtectionOverride|Boolean|Indicates whether or not to block user from overriding Exploit Protection settings.|
 |firewallBlockStatefulFTP|Boolean|Blocks stateful FTP connections to the device|
 |firewallIdleTimeoutForSecurityAssociationInSeconds|Int32|Configures the idle timeout for security associations, in seconds, from 300 to 3600 inclusive. This is the period after which security associations will expire and be deleted. Valid values 300 to 3600|
 |firewallPreSharedKeyEncodingMethod|[firewallPreSharedKeyEncodingMethodType](../resources/intune-deviceconfig-firewallpresharedkeyencodingmethodtype.md)|Select the preshared key encoding to be used. Possible values are: `deviceDefault`, `none`, `utF8`.|
@@ -50,29 +71,8 @@ Inherits from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfi
 |firewallProfileDomain|[windowsFirewallNetworkProfile](../resources/intune-deviceconfig-windowsfirewallnetworkprofile.md)|Configures the firewall profile settings for domain networks|
 |firewallProfilePublic|[windowsFirewallNetworkProfile](../resources/intune-deviceconfig-windowsfirewallnetworkprofile.md)|Configures the firewall profile settings for public networks|
 |firewallProfilePrivate|[windowsFirewallNetworkProfile](../resources/intune-deviceconfig-windowsfirewallnetworkprofile.md)|Configures the firewall profile settings for private networks|
-|defenderAttackSurfaceReductionExcludedPaths|String collection|List of exe files and folders to be excluded from attack surface reduction rules|
-|defenderGuardedFoldersAllowedAppPaths|String collection|List of paths to exe that are allowed to access protected folders|
-|defenderAdditionalGuardedFolders|String collection|List of folder paths to be added to the list of protected folders|
-|defenderExploitProtectionXml|Binary|Xml content containing information regarding exploit protection details.|
-|defenderExploitProtectionXmlFileName|String|Name of the file from which DefenderExploitProtectionXml was obtained.|
-|defenderSecurityCenterBlockExploitProtectionOverride|Boolean|Indicates whether or not to block user from overriding Exploit Protection settings.|
-|appLockerApplicationControl|[appLockerApplicationControlType](../resources/intune-deviceconfig-applockerapplicationcontroltype.md)|Enables the Admin to choose what types of app to allow on devices. Possible values are: `notConfigured`, `enforceComponentsAndStoreApps`, `auditComponentsAndStoreApps`, `enforceComponentsStoreAppsAndSmartlocker`, `auditComponentsStoreAppsAndSmartlocker`.|
 |smartScreenEnableInShell|Boolean|Allows IT Admins to configure SmartScreen for Windows.|
 |smartScreenBlockOverrideForFiles|Boolean|Allows IT Admins to control whether users can can ignore SmartScreen warnings and run malicious files.|
-|applicationGuardEnabled|Boolean|Enable Windows Defender Application Guard|
-|applicationGuardBlockFileTransfer|[applicationGuardBlockFileTransferType](../resources/intune-deviceconfig-applicationguardblockfiletransfertype.md)|Block clipboard to transfer image file, text file or neither of them. Possible values are: `notConfigured`, `blockImageAndTextFile`, `blockImageFile`, `blockNone`, `blockTextFile`.|
-|applicationGuardBlockNonEnterpriseContent|Boolean|Block enterprise sites to load non-enterprise content, such as third party plug-ins|
-|applicationGuardAllowPersistence|Boolean|Allow persisting user generated data inside the App Guard Containter (favorites, cookies, web passwords, etc.)|
-|applicationGuardForceAuditing|Boolean|Force auditing will persist Windows logs and events to meet security/compliance criteria (sample events are user login-logoff, use of privilege rights, software installation, system changes, etc.)|
-|applicationGuardBlockClipboardSharing|[applicationGuardBlockClipboardSharingType](../resources/intune-deviceconfig-applicationguardblockclipboardsharingtype.md)|Block clipboard to share data from Host to Container, or from Container to Host, or both ways, or neither ways. Possible values are: `notConfigured`, `blockBoth`, `blockHostToContainer`, `blockContainerToHost`, `blockNone`.|
-|applicationGuardAllowPrintToPDF|Boolean|Allow printing to PDF from Container|
-|applicationGuardAllowPrintToXPS|Boolean|Allow printing to XPS from Container|
-|applicationGuardAllowPrintToLocalPrinters|Boolean|Allow printing to Local Printers from Container|
-|applicationGuardAllowPrintToNetworkPrinters|Boolean|Allow printing to Network Printers from Container|
-|bitLockerDisableWarningForOtherDiskEncryption|Boolean|Allows the Admin to disable the warning prompt for other disk encryption on the user machines.|
-|bitLockerEnableStorageCardEncryptionOnMobile|Boolean|Allows the admin to require encryption to be turned on using BitLocker. This policy is valid only for a mobile SKU.|
-|bitLockerEncryptDevice|Boolean|Allows the admin to require encryption to be turned on using BitLocker.|
-|bitLockerRemovableDrivePolicy|[bitLockerRemovableDrivePolicy](../resources/intune-deviceconfig-bitlockerremovabledrivepolicy.md)|BitLocker Removable Drive Policy.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -101,6 +101,38 @@ Here is a JSON representation of the resource.
   "description": "String",
   "displayName": "String",
   "version": 1024,
+  "applicationGuardEnabled": true,
+  "applicationGuardBlockFileTransfer": "String",
+  "applicationGuardBlockNonEnterpriseContent": true,
+  "applicationGuardAllowPersistence": true,
+  "applicationGuardForceAuditing": true,
+  "applicationGuardBlockClipboardSharing": "String",
+  "applicationGuardAllowPrintToPDF": true,
+  "applicationGuardAllowPrintToXPS": true,
+  "applicationGuardAllowPrintToLocalPrinters": true,
+  "applicationGuardAllowPrintToNetworkPrinters": true,
+  "appLockerApplicationControl": "String",
+  "bitLockerDisableWarningForOtherDiskEncryption": true,
+  "bitLockerEnableStorageCardEncryptionOnMobile": true,
+  "bitLockerEncryptDevice": true,
+  "bitLockerRemovableDrivePolicy": {
+    "@odata.type": "microsoft.graph.bitLockerRemovableDrivePolicy",
+    "encryptionMethod": "String",
+    "requireEncryptionForWriteAccess": true,
+    "blockCrossOrganizationWriteAccess": true
+  },
+  "defenderAttackSurfaceReductionExcludedPaths": [
+    "String"
+  ],
+  "defenderGuardedFoldersAllowedAppPaths": [
+    "String"
+  ],
+  "defenderAdditionalGuardedFolders": [
+    "String"
+  ],
+  "defenderExploitProtectionXml": "binary",
+  "defenderExploitProtectionXmlFileName": "String",
+  "defenderSecurityCenterBlockExploitProtectionOverride": true,
   "firewallBlockStatefulFTP": true,
   "firewallIdleTimeoutForSecurityAssociationInSeconds": 1024,
   "firewallPreSharedKeyEncodingMethod": "String",
@@ -156,39 +188,7 @@ Here is a JSON representation of the resource.
     "securedPacketExemptionAllowed": true,
     "policyRulesFromGroupPolicyMerged": true
   },
-  "defenderAttackSurfaceReductionExcludedPaths": [
-    "String"
-  ],
-  "defenderGuardedFoldersAllowedAppPaths": [
-    "String"
-  ],
-  "defenderAdditionalGuardedFolders": [
-    "String"
-  ],
-  "defenderExploitProtectionXml": "binary",
-  "defenderExploitProtectionXmlFileName": "String",
-  "defenderSecurityCenterBlockExploitProtectionOverride": true,
-  "appLockerApplicationControl": "String",
   "smartScreenEnableInShell": true,
-  "smartScreenBlockOverrideForFiles": true,
-  "applicationGuardEnabled": true,
-  "applicationGuardBlockFileTransfer": "String",
-  "applicationGuardBlockNonEnterpriseContent": true,
-  "applicationGuardAllowPersistence": true,
-  "applicationGuardForceAuditing": true,
-  "applicationGuardBlockClipboardSharing": "String",
-  "applicationGuardAllowPrintToPDF": true,
-  "applicationGuardAllowPrintToXPS": true,
-  "applicationGuardAllowPrintToLocalPrinters": true,
-  "applicationGuardAllowPrintToNetworkPrinters": true,
-  "bitLockerDisableWarningForOtherDiskEncryption": true,
-  "bitLockerEnableStorageCardEncryptionOnMobile": true,
-  "bitLockerEncryptDevice": true,
-  "bitLockerRemovableDrivePolicy": {
-    "@odata.type": "microsoft.graph.bitLockerRemovableDrivePolicy",
-    "encryptionMethod": "String",
-    "requireEncryptionForWriteAccess": true,
-    "blockCrossOrganizationWriteAccess": true
-  }
+  "smartScreenBlockOverrideForFiles": true
 }
 ```

@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Get a list of the [fileStorageContainerType](../resources/filestoragecontainertype.md) objects and their properties for the current tenant.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -133,7 +133,10 @@ Content-Type: application/json
         "itemMajorVersionLimit": 50,
         "maxStoragePerContainerInBytes": 104857600,
         "isSharingRestricted": false,
-        "consumingTenantOverridables": ""
+        "consumingTenantOverridables": "",
+        "agent": {
+          "chatEmbedAllowedHosts": ["https://contoso.com", "https://localhost:5000"]
+        }
       }
     },
     {

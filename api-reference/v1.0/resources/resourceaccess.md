@@ -4,7 +4,7 @@ description: "Specifies an OAuth 2.0 permission scope or an app role that an app
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "entra-sign-in"
-author: "psignoret"
+author: "eringreenlee"
 ms.date: 07/22/2024
 ---
 
