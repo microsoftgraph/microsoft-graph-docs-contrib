@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security.securityCopilot
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Defines the capabilities of a skill in Security Copilot. For more information, see the [Security Copilot Agent manifest](https://learn.microsoft.com/en-us/copilot/security/developer/agent-manifest).
+Defines the capabilities of a skill in Security Copilot. For more information, see the [Security Copilot Agent manifest](https://learn.microsoft.com/copilot/security/developer/agent-manifest).
 
 **NOTE** This is currently unsupported.
 
