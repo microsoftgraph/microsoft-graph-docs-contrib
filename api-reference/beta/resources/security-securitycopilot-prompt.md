@@ -1,5 +1,5 @@
 ---
-title: "prompt resource type"
+title: "prompt resource type (for securityCopilot)"
 description: "Represents a prompt in a Security Copilot session."
 author: "spunukol"
 ms.date: 07/17/2025
@@ -8,7 +8,7 @@ ms.subservice: "security-copilot"
 doc_type: resourcePageType
 ---
 
-# prompt resource type
+# prompt resource type (for securityCopilot)
 
 Namespace: microsoft.graph.security.securityCopilot
 

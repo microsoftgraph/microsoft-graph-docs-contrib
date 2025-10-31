@@ -1,5 +1,5 @@
 ---
-title: "workspace resource type"
+title: "workspace resource type (for securityCopilot)"
 description: "Microsoft Security Copilot Workspace"
 author: "spunukol"
 ms.date: 07/17/2025
@@ -8,7 +8,7 @@ ms.subservice: "security-copilot"
 doc_type: resourcePageType
 ---
 
-# workspace resource type
+# workspace resource type (for securityCopilot)
 
 Namespace: microsoft.graph.security.securityCopilot
 
