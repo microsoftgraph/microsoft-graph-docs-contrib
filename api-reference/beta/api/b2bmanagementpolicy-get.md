@@ -1,7 +1,7 @@
 ---
 title: "Get b2bManagementPolicy"
 description: "Read the properties and relationships of b2bManagementPolicy object."
-author: akshukla
+author: "akshukla"
 ms.date: 10/27/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
@@ -27,6 +27,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/b2bmanagementpolicy-get-permissions.md)]
 
+[!INCLUDE [rbac-b2bManagementPolicy-apis-read](../includes/rbac-for-apis/rbac-b2bManagementPolicy-apis-read.md)]
+
 ## HTTP request
 
 <!-- {
@@ -39,7 +41,7 @@ GET /policies/b2bManagementPolicies/{b2bManagementPolicyId}
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+None.
 
 ## Request headers
 
@@ -66,7 +68,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/policies/b2bManagementPolicies/{b2bManagementPolicyId}
+GET https://graph.microsoft.com/beta/policies/b2bManagementPolicies/f596ef0d-42f9-0359-1aaa-12d02b38802a
 ```
 
 
@@ -85,17 +87,15 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.b2bManagementPolicy",
-    "id": "f596ef0d-42f9-0359-1aaa-12d02b38802a",
-    "deletedDateTime": "String (timestamp)",
-    "description": "String",
-    "displayName": "String",
-    "definition": [
-      "String"
-    ],
-    "isOrganizationDefault": "Boolean"
-  }
+  "@odata.type": "#microsoft.graph.b2bManagementPolicy",
+  "id": "f596ef0d-42f9-0359-1aaa-12d02b38802a",
+  "deletedDateTime": null,
+  "description": "Policy used for B2B features",
+  "displayName": "Policy1",
+  "definition": [
+    "{'B2BManagementPolicy':{'Version':1}}"
+  ],
+  "isOrganizationDefault": "true"
 }
 ```
 

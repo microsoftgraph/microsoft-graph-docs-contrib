@@ -1,6 +1,6 @@
 ---
 title: "List appliesTo"
-description: "**TODO: Add a useful description.**"
+description: "Get a list of directoryObject objects that a b2bManagementPolicy object has been applied to."
 author: "akshukla"
 ms.date: 10/27/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add a useful description.**
+Get a list of [directoryObject](../resources/directoryObject.md) objects that a [b2bManagementPolicy](../resources/b2bManagementpolicy.md) object has been applied to. The b2bManagementPolicy can only be applied to [application](../resources/application.md) and [servicePrincipal](../resources/serviceprincipal.md) resources.
 
 ## Permissions
 
@@ -39,7 +39,7 @@ GET /policies/b2bManagementPolicies/{b2bManagementPolicyId}/appliesTo
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+None.
 
 ## Request headers
 
@@ -66,7 +66,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/policies/b2bManagementPolicies/{b2bManagementPolicyId}/appliesTo
+GET https://graph.microsoft.com/beta/policies/b2bManagementPolicies/f596ef0d-42f9-0359-1aaa-12d02b38802a/appliesTo
 ```
 
 

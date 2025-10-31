@@ -1,7 +1,7 @@
 ---
 title: "Delete b2bManagementPolicy"
 description: "Delete a b2bManagementPolicy object."
-author: "*akshukla"
+author: "akshukla"
 ms.date: 10/27/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a b2bManagementPolicy object.
+Delete a [b2bManagementPolicy](../resources/b2bmanagementpolicy.md) object.
 
 ## Permissions
 
@@ -27,6 +27,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/policyroot-delete-b2bmanagementpolicies-permissions.md)]
 
+[!INCLUDE [rbac-b2bManagementPolicy-apis-write](../includes/rbac-for-apis/rbac-b2bmanagementpolicy-apis-write.md)]
+
 ## HTTP request
 
 <!-- {
@@ -34,7 +36,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-DELETE /policies/b2bManagementPolicies/{b2bManagementPolicyId}/$ref
+DELETE /policies/b2bManagementPolicies/{b2bManagementPolicyId}
 ```
 
 ## Request headers
@@ -62,7 +64,7 @@ The following example shows a request.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/policies/b2bManagementPolicies/{b2bManagementPolicyId}
+DELETE https://graph.microsoft.com/beta/policies/b2bManagementPolicies/f596ef0d-42f9-0359-1aaa-12d02b38802a
 ```
 
 

@@ -1,6 +1,6 @@
 ---
-title: "Create b2bManagementPolicy"
-description: "Create a new b2bManagementPolicy object."
+title: "Update b2bManagementPolicy"
+description: "Update the properties of a b2bManagementPolicy object."
 author: "akshukla"
 ms.date: 10/27/2025
 ms.localizationpriority: medium
@@ -8,13 +8,13 @@ ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
-# Create b2bManagementPolicy
+# Update b2bManagementPolicy
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [b2bManagementPolicy](../resources/b2bmanagementpolicy.md) object.
+Update the properties of a [b2bManagementPolicy](../resources/b2bmanagementpolicy.md) object.
 
 ## Permissions
 
@@ -22,10 +22,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "policyroot-post-b2bmanagementpolicies-permissions"
+  "name": "b2bmanagementpolicy-update-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/policyroot-post-b2bmanagementpolicies-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/b2bmanagementpolicy-update-permissions.md)]
 
 [!INCLUDE [rbac-b2bManagementPolicy-apis-write](../includes/rbac-for-apis/rbac-b2bManagementPolicy-apis-write.md)]
 
@@ -36,7 +36,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-POST /policies/b2bManagementPolicies
+PATCH /policies/b2bManagementPolicies/{b2bManagementPolicyId}
 ```
 
 ## Request headers
@@ -48,23 +48,24 @@ POST /policies/b2bManagementPolicies
 
 ## Request body
 
+[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
+
 In the request body, supply a JSON representation of the [b2bManagementPolicy](../resources/b2bmanagementpolicy.md) object.
 
 You can specify the following properties when creating a **b2bManagementPolicy**.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|deletedDateTime|DateTimeOffset| Date and Time when the policy object was deleted. Inherited from [directoryObject](../resources/directoryobject.md). Optional.|
-|definition|String collection| A string collection containing a JSON string that defines the rules and settings for a policy. Inherited from [stsPolicy](../resources/stspolicy.md). Required.|
-|description|String| Description for this policy. Inherited from [policyBase](../resources/policybase.md). Required.|
-|displayName|String| Display name for this policy. Inherited from [policyBase](../resources/policybase.md). Required.|
-|isOrganizationDefault|Boolean| If set to true, activates this policy. There can be many policies for the same policy type, but only one can be activated as the organization default. Inherited from [stsPolicy](../resources/stspolicy.md). Optional.|
-
+|deletedDateTime|DateTimeOffset|Date and Time when the policy object was deleted. Inherited from [directoryObject](../resources/directoryobject.md). Optional.|
+|definition|String collection|A string collection containing a JSON string that defines the rules and settings for a policy. Inherited from [stsPolicy](../resources/stspolicy.md). Required.|
+|description|String|Description for this policy. Inherited from [policyBase](../resources/policybase.md). Required.|
+|displayName|String|Display name for this policy. Inherited from [policyBase](../resources/policybase.md). Required.|
+|isOrganizationDefault|Boolean|If set to true, activates this policy. There can be many policies for the same policy type, but only one can be activated as the organization default. Inherited from [stsPolicy](../resources/stspolicy.md). Optional.|
 
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [b2bManagementPolicy](../resources/b2bmanagementpolicy.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [b2bManagementPolicy](../resources/b2bmanagementpolicy.md) object in the response body.
 
 ## Examples
 
@@ -73,22 +74,21 @@ If successful, this method returns a `201 Created` response code and a [b2bManag
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "create_b2bmanagementpolicy_from_"
+  "name": "update_b2bmanagementpolicy"
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/policies/b2bManagementPolicies
+PATCH https://graph.microsoft.com/beta/policies/b2bManagementPolicies/f596ef0d-42f9-0359-1aaa-12d02b38802a
 Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.b2bManagementPolicy",
-  "deletedDateTime": null,
   "description": "Policy used for B2B features",
   "displayName": "Policy1",
   "definition": [
     "{'B2BManagementPolicy':{'Version':1}}"
   ],
-  "isOrganizationDefault": true
+  "isOrganizationDefault": "true"
 }
 ```
 
@@ -99,12 +99,11 @@ The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.b2bManagementPolicy"
+  "truncated": true
 }
 -->
 ``` http
-HTTP/1.1 201 Created
+HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
@@ -116,7 +115,7 @@ Content-Type: application/json
   "definition": [
     "{'B2BManagementPolicy':{'Version':1}}"
   ],
-  "isOrganizationDefault": true
+  "isOrganizationDefault": "true"
 }
 ```
 

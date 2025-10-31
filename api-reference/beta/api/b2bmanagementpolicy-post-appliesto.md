@@ -1,6 +1,6 @@
 ---
 title: "Add appliesTo"
-description: "Add appliesTo by posting to the appliesTo collection."
+description: "Assign directory objects on which b2bManagementPolicy needs to be applied."
 author: "akshukla"
 ms.date: 10/27/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Add appliesTo by posting to the appliesTo collection.
+Add [directoryObjects](../resources/directoryObject.md) on which [b2bManagementPolicy](../resources/b2bManagementpolicy.md) object needs to be applied. The b2bManagementPolicy can only be applied to [application](../resources/application.md) and [servicePrincipal](../resources/serviceprincipal.md) resources.
 
 ## Permissions
 
@@ -26,6 +26,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 [!INCLUDE [permissions-table](../includes/permissions/b2bmanagementpolicy-post-appliesto-permissions.md)]
+
+[!INCLUDE [rbac-b2bManagementPolicy-apis-write](../includes/rbac-for-apis/rbac-b2bmanagementpolicy-apis-write.md)]
 
 ## HTTP request
 
@@ -48,18 +50,9 @@ POST /policies/b2bManagementPolicies/{b2bManagementPolicyId}/appliesTo/$ref
 
 In the request body, supply a JSON representation of the [directoryObject](../resources/directoryobject.md) object.
 
-You can specify the following properties when creating a **directoryObject**.
-
-**TODO: Remove properties that don't apply**
-|Property|Type|Description|
-|:---|:---|:---|
-|deletedDateTime|DateTimeOffset|**TODO: Add Description** Optional.|
-
-
-
 ## Response
 
-If successful, this method returns a `204 No Content` response code and a [directoryObject](../resources/directoryobject.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [directoryObject](../resources/directoryobject.md) object in the response body.
 
 ## Examples
 
@@ -72,12 +65,10 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/policies/b2bManagementPolicies/{b2bManagementPolicyId}/appliesTo/$ref
+POST https://graph.microsoft.com/beta/policies/b2bManagementPolicies/f596ef0d-42f9-0359-1aaa-12d02b38802a/appliesTo/$ref
 Content-Type: application/json
-
 {
-  "@odata.type": "#microsoft.graph.directoryObject",
-  "deletedDateTime": "String (timestamp)"
+  "@odata.id": " https://graph.microsoft.com/beta/directoryObjects/a6c034b8-621b-dee3-6abb-52cbce801fe9"
 }
 ```
 
@@ -88,18 +79,10 @@ The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.directoryObject"
+  "truncated": false
 }
 -->
 ``` http
 HTTP/1.1 204 No Content
-Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.directoryObject",
-  "id": "a6c034b8-621b-dee3-6abb-52cbce801fe9",
-  "deletedDateTime": "String (timestamp)"
-}
 ```
 

@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the b2bManagementPolicy objects and their properties.
+Get a list of the [b2bManagementPolicy](../resources/b2bmanagementpolicy.md) objects and their properties.
 
 ## Permissions
 
@@ -26,6 +26,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 [!INCLUDE [permissions-table](../includes/permissions/policyroot-list-b2bmanagementpolicies-permissions.md)]
+
+[!INCLUDE [rbac-b2bManagementPolicy-apis-read](../includes/rbac-for-apis/rbac-b2bmanagementpolicy-apis-read.md)]
 
 ## HTTP request
 
@@ -39,7 +41,7 @@ GET /policies/b2bManagementPolicies
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+None.
 
 ## Request headers
 
@@ -89,13 +91,13 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.b2bManagementPolicy",
       "id": "f596ef0d-42f9-0359-1aaa-12d02b38802a",
-      "deletedDateTime": "String (timestamp)",
-      "description": "String",
-      "displayName": "String",
+      "deletedDateTime": null,
+      "description": "Policy used for B2B features",
+      "displayName": "Policy1",
       "definition": [
-        "String"
+        "{'B2BManagementPolicy':{'Version':1}}"
       ],
-      "isOrganizationDefault": "Boolean"
+      "isOrganizationDefault": "true"
     }
   ]
 }
