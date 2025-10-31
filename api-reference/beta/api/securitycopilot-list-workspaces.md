@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security.securityCopilot
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the workspace objects and their properties.
+Get a list of the [workspace](../resources/security-securitycopilot-workspace.md) objects and their properties.
 
 ## Permissions
 
