@@ -154,14 +154,11 @@ Use the extended properties API to store or get custom data in the [todoTask](/g
 
 ### Teamwork and communications | Calls and online meetings
 
-- Create the resource to represent a work location under **presence**.
-- The [userWorkLocation](/graph/api/resources/userWorkLocation?view=graph-rest-beta) resource, represent the state of the location.
-
-Added the following new endpoints enabling the management of **work location**:
-- [clearAutomaticLocation](/graph/api/presence-clearAutomaticLocation?view=graph-rest-beta) method to clear the default work location value.
-- [clearLocation](/graph/api/presence-clearLocation?view=graph-rest-beta) method to clear the manual work location value.
-- Added the [setAutomaticLocation](/graph/api/presence-setAutomaticLocation?view=graph-rest-beta) method to setup the default work location value.
-- Added the [setManualLocation](/graph/api/presence-setManualLocation?view=graph-rest-beta) method to setup the manual work location value.
+Use the following new endpoints to enable the management of work location for a user:
+- [Clear](/graph/api/presence-clearautomaticlocation?view=graph-rest-beta&preserve-view=true) the automatic work location value for a user.
+- [Clear](/graph/api/presence-clearlocation?view=graph-rest-beta&preserve-view=true) the work location signals for a user, including both the manual and automatic layers for the current date.
+- [Update](/graph/api/presence-setautomaticlocation?view=graph-rest-beta&preserve-view=true) the automatic work location for a user.
+- [Set](/graph/api/presence-setmanuallocation?view=graph-rest-beta&preserve-view=true) the user’s manual work location signal.
 
 ## September 2025: New and generally available
 
