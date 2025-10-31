@@ -9,3 +9,4 @@ ms.localizationpriority: medium
 |Delegated (work or school account)|EduAssignments.ReadBasic|EduAssignments.Read, EduAssignments.ReadWrite, EduAssignments.ReadWriteBasic|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
 |Application|Not supported.|Not supported.|
+
