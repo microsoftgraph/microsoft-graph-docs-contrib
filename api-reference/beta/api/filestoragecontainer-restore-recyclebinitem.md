@@ -1,18 +1,18 @@
 ---
-title: "Restore recycleBinItem by driveItemId"
-description: "Restore recycleBinItem by using driveItemId as alternate key."
+title: "Restore recycleBinItem"
+description: "Restore recycleBinItem to a fileStorageContainer."
 author: "cindylay"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
 doc_type: apiPageType
-ms.date: 12/10/2024
+ms.date: 10/31/2025
 ---
 
-# Restore recycleBinItem by driveItemId
+# recycleBinItem: restore
 
 Namespace: microsoft.graph
 
-Restore a single [recycleBinItem](../resources/recyclebinitem.md) from a [fileStorageContainer](../resources/filestoragecontainer.md) [recycleBin](../resources/recyclebin.md)by using the `driveItemId` as an alternate key. If there's no matching recycleBinItem for the driveItemId, the API returns a 404 (Not Found) response.
+Restore [recycleBinItem](../resources/recyclebinitem.md) objects from the [recycleBin](../resources/recyclebin.md) of a [fileStorageContainer](../resources/filestoragecontainer.md). A [recycleBinItem](../resources/recyclebinitem.md) can be restored either by its `id` or using the original [driveItemId](../resources/driveitem) as an alternate key.
 
 ## Permissions
 
@@ -31,6 +31,12 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 
 ``` http
+POST /storage/fileStorage/containers/{containerId}/recycleBin/items/restore
+```
+
+Restore a single [recycleBinItem](../resources/recyclebinitem.md) by using the `driveItemId` as an alternate key. If there's no matching recycleBinItem for the driveItemId, the API returns a 404 (Not Found) response.
+
+``` http
 POST https://graph.microsoft.com/beta/storage/fileStorage/containers/{containerId}/recycleBin/items(driveItemId='{driveItemId}')/restore
 ```
 
@@ -41,11 +47,75 @@ POST https://graph.microsoft.com/beta/storage/fileStorage/containers/{containerI
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
+## Request body
+
+If restoring by `recycleBinItemId`, in the request body, supply a JSON representation of the [recycleBinItem](../resources/recyclebinitem.md) objects to restore. If you are restoring by driveItemId as an alternate key, a request body is not required.
+
 ## Response
 
-If successful, this method returns a 200 OK response code with the id of the singular [recycleBinItem](../resources/recyclebinitem.md) that was restored in the response body.
+If successfully restored by `recycleBinItemId`, this method returns a `207 Multi-Status` response code and the set of restored [recycleBinItem](../resources/recyclebinitem.md) objects in the response body.
 
-## Examples
+If successfully restored with `driveItemId` as an alternate key, this method returns a 200 OK response code with the id of the singular [recycleBinItem](../resources/recyclebinitem.md) that was restored in the response body.
+
+## Example 1: Restore a recycleBinItem 
+
+### Request
+
+The following example shows a request.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "restore_filestoragecontainer_recyclebinitem",
+  "@odata.type": "Collection(microsoft.graph.recycleBinItem)"
+}
+-->
+
+``` http
+POST  https://graph.microsoft.com/v1.0/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/recycleBin/items/restore
+Content-Type: application/json
+
+{
+  "ids": ["5d625d33-338c-4a77-a98a-3e287116440c", "73133853-48f2-4956-bc4a-03f8d1675042"]
+}
+```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/restore-filestoragecontainer-recyclebinitem-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+### Response
+
+The following example shows the response.
+
+>**Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.recycleBinItem)"
+}
+-->
+
+``` http
+HTTP/1.1 207 Multi-Status
+Content-Type: application/json
+
+{
+  "value": [
+    {
+      "id": "5d625d33-338c-4a77-a98a-3e287116440c"
+    },
+    {
+      "id": "73133853-48f2-4956-bc4a-03f8d1675042"
+    }
+  ]
+}
+```
+
+## Example 2: Restore a recycleBinItem by driveItemId as alternate key
 
 In this example, the `driveItemId` is passed as a function parameter in the request URL. The response returns the corresponding id of the `recycleBinItem` that was restored.
 
@@ -65,8 +135,29 @@ Content-Type: application/json
   "id": "bf7ea563-b848-4ec8-9155-b2054564cfe4"
 }
 ```
- 
- 
+
+## Example 3: Failure to restore recycleBinItem by driveItemId as alternate key
+
+In this example, there is no matching recycleBinItem to correlate with the specified driveItemId. The API returns a 404 (Not Found) response.
+
+### Request
+
+``` http
+POST  POST https://graph.microsoft.com/beta/storage/fileStorage/containers/e!JDJHKCBZTU2fLtv8TzUoksz-OP7yGQRNlugra1iGHqRe5fORWrrHTbh8J8O8qPmx/recycleBin/items(driveItemId='01jC3BS4QFPBCZRLGHJVEYPITEHTDBYHBP')/restore
+Content-Type: application/json
+```
 
 
+### Response
 
+```http
+HTTP/1.1 404 Not Found
+Content-Type: application/json
+
+{
+  "error": {
+    "code": "NotFound",
+    "message": "The requested resource could not be found."
+  }
+}
+```
