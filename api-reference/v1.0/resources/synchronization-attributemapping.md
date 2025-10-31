@@ -12,7 +12,7 @@ ms.date: 07/22/2024
 
 Namespace: microsoft.graph
 
-Defines how values for the given target attribute should flow during [synchronization](../resources/synchronizationschema.md).
+Defines how values for the given target attribute should flow during synchronization. This object is defined in the [synchronizationSchema resouurce type](../resources/synchronizationschema.md).
 
 ## Properties
 
