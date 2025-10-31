@@ -146,8 +146,6 @@ We recommend using filters that use a single call with multiple IDs to retrieve 
 
    - In this example, there are 3 subclauses. When combining the ID and ownerEmail, use AND in the subclause. Do not use OR otherwise it will throw an exception.
 
-   ```odata
-      $filter=( (id eq 'guid1' and ownerEmail eq 'ownerEmail1') or (id eq 'guid2') or (id eq 'guid3' and ownerEmail eq 'ownerEmail2') )
    ```
 
 4. **Prefiltering Behavior**
