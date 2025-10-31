@@ -180,9 +180,9 @@ The Security Copilot resource and its APIs allow developers to embed Security Co
 - [evaluations](../resources/security-securitycopilot-evaluation.md) API is used to create an evalation. AI processing begins as soon as an evaluation is created. Creation of an evaluation using the prompt starts the AI reasoning. The API allows you to poll for the intermediary results until the AI evaluation is complete.
 
 For more information, see
-- [Security Copilot primary use cases](https://learn.microsoft.com/en-us/copilot/security/use-cases)
-- [Plugins in Microsoft Security Copilot](https://learn.microsoft.com/en-us/copilot/security/plugin-overview)
-- [Usage and billing in Microsoft Security Copilot](https://learn.microsoft.com/en-us/copilot/security/manage-usage)
+- [Security Copilot primary use cases](https://learn.microsoft.com/copilot/security/use-case-role-overview)
+- [Plugins in Microsoft Security Copilot](https://learn.microsoft.com/copilot/security/plugin-overview)
+- [Usage and billing in Microsoft Security Copilot](https://learn.microsoft.com/copilot/security/manage-usage)
 
 ## Records management
 
