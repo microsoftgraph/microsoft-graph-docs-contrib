@@ -148,7 +148,7 @@ PATCH /subscriptions/{id}
 
 | Name       | Type | Description|
 |:-----------|:------|:----------|
-| expirationDateTime  | DateTimeOffset  | Specifies the date and time in UTC when the subscription expires. For the maximum supported subscription, the length of time varies depending on the resource. |
+| expirationDateTime  | DateTimeOffset  | Specifies the date and time in UTC when the subscription expires. For the maximum supported subscription, the length of time varies depending on the resource. See [Subscription lifetime](../resources/subscription.md#subscription-lifetime) for more information. |
 
 ## Response
 
