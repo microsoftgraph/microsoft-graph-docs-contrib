@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 Represents the configuration details for a third-party fraud protection provider that integrates with Microsoft Entra External ID to help protect against fraudulent activities during authentication events.
 This is an abstract type that serves as the base resource for specific provider implementations. The following derived types are currently supported.
 
-- [arkosefraudprotectionprovider](../resources/arkosefraudprotectionprovider.md) resource type
+- [arkoseFraudProtectionProvider](../resources/arkosefraudprotectionprovider.md) resource type
 - [humanSecurityFraudProtectionProvider](../resources/humansecurityfraudprotectionprovider.md) resource type
 
 For more information, see [Integrate Microsoft Entra External ID with Arkose Labs and HUMAN Security for fraud protection (preview)](/entra/external-id/customers/how-to-integrate-fraud-protection).

@@ -18,7 +18,7 @@ Update the properties of an [authenticationEventListener](../resources/authentic
 - [onAuthenticationMethodLoadStartListener resource type](../resources/onauthenticationmethodloadstartlistener.md) resource type
 - [onAttributeCollectionListener resource type](../resources/onattributecollectionlistener.md) resource type
 - [onUserCreateStartListener resource type](../resources/onusercreatestartlistener.md) resource type
-- [onFraudProtectionLoadStartListener](../resources/onFraudProtectionLoadStartListener.md) resource type
+- [onFraudProtectionLoadStartListener](../resources/onfraudprotectionloadstartlistener.md) resource type
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -56,7 +56,7 @@ You must specify the **@odata.type** property and the value of the [authenticati
 |conditions|[authenticationConditions](../resources/authenticationconditions.md)|The conditions on which this authenticationEventListener should trigger. Optional.|
 |displayName|String|The display name of the authentication event listener policy. Optional.|
 |handler|[onTokenIssuanceStartHandler](../resources/ontokenissuancestarthandler.md)|The handler to invoke when conditions are met. Can be updated for the **onTokenIssuanceStartListener** listener type.|
-|handler|[onFraudProtectionLoadStartHandler](../resources/onFraudProtectionLoadStartHandler.md) | The handler to invoke when conditions are met. Can be updated for the **onFraudProtectionLoadStartListener** type. |
+|handler|[onFraudProtectionLoadStartHandler](../resources/onfraudprotectionloadstarthandler.md) | The handler to invoke when conditions are met. Can be updated for the **onFraudProtectionLoadStartListener** type. |
 
 ## Response
 
@@ -69,6 +69,7 @@ If successful, this method returns a `204 No Content` response code.
 #### Request
 The following example shows a request to update an authentication event listener's trigger conditions.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_authenticationeventlistener"
@@ -138,6 +139,7 @@ HTTP/1.1 204 No Content
 #### Request
 The following example shows a request to add an application to an authentication event listener's trigger conditions.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_authenticationeventlistener_2"

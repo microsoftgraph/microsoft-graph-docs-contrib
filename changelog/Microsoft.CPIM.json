@@ -1331,7 +1331,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "fraudProtectionConfiguration",
           "ChangeType": "Addition",
-          "Description": "Added the [fraudProtectionConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/fraudProtectionConfiguration?view=graph-rest-1.0) resource.",
+          "Description": "Added the [fraudProtectionConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/fraudprotectionconfiguration?view=graph-rest-1.0) resource.",
           "Target": "fraudProtectionConfiguration"
         },
         {
@@ -1339,7 +1339,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "fraudProtectionProviderConfiguration",
           "ChangeType": "Addition",
-          "Description": "Added the [fraudProtectionProviderConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/fraudProtectionProviderConfiguration?view=graph-rest-1.0) resource.",
+          "Description": "Added the [fraudProtectionProviderConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/fraudprotectionproviderconfiguration?view=graph-rest-1.0) resource.",
           "Target": "fraudProtectionProviderConfiguration"
         },
         {
@@ -1347,7 +1347,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "onFraudProtectionLoadStartExternalUsersAuthHandler",
           "ChangeType": "Addition",
-          "Description": "Added the [onFraudProtectionLoadStartExternalUsersAuthHandler](https://learn.microsoft.com/en-us/graph/api/resources/onFraudProtectionLoadStartExternalUsersAuthHandler?view=graph-rest-1.0) resource.",
+          "Description": "Added the [onFraudProtectionLoadStartExternalUsersAuthHandler](https://learn.microsoft.com/en-us/graph/api/resources/onfraudprotectionloadstartexternalusersauthhandler?view=graph-rest-1.0) resource.",
           "Target": "onFraudProtectionLoadStartExternalUsersAuthHandler"
         },
         {
@@ -1355,7 +1355,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "onFraudProtectionLoadStartHandler",
           "ChangeType": "Addition",
-          "Description": "Added the [onFraudProtectionLoadStartHandler](https://learn.microsoft.com/en-us/graph/api/resources/onFraudProtectionLoadStartHandler?view=graph-rest-1.0) resource.",
+          "Description": "Added the [onFraudProtectionLoadStartHandler](https://learn.microsoft.com/en-us/graph/api/resources/onfraudprotectionloadstarthandler?view=graph-rest-1.0) resource.",
           "Target": "onFraudProtectionLoadStartHandler"
         },
         {
@@ -1363,7 +1363,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "arkoseFraudProtectionProvider",
           "ChangeType": "Addition",
-          "Description": "Added the [arkoseFraudProtectionProvider](https://learn.microsoft.com/en-us/graph/api/resources/arkoseFraudProtectionProvider?view=graph-rest-1.0) resource.",
+          "Description": "Added the [arkoseFraudProtectionProvider](https://learn.microsoft.com/en-us/graph/api/resources/arkosefraudprotectionprovider?view=graph-rest-1.0) resource.",
           "Target": "arkoseFraudProtectionProvider"
         },
         {
@@ -1371,7 +1371,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "displayName",
           "ChangeType": "Addition",
-          "Description": "Added the **displayName** property to the [authenticationEventListener](https://learn.microsoft.com/en-us/graph/api/resources/authenticationEventListener?view=graph-rest-1.0) resource.",
+          "Description": "Added the **displayName** property to the [authenticationEventListener](https://learn.microsoft.com/en-us/graph/api/resources/authenticationeventlistener?view=graph-rest-1.0) resource.",
           "Target": "authenticationEventListener"
         },
         {
@@ -1379,7 +1379,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "fraudProtectionProvider",
           "ChangeType": "Addition",
-          "Description": "Added the [fraudProtectionProvider](https://learn.microsoft.com/en-us/graph/api/resources/fraudProtectionProvider?view=graph-rest-1.0) resource.",
+          "Description": "Added the [fraudProtectionProvider](https://learn.microsoft.com/en-us/graph/api/resources/fraudprotectionprovider?view=graph-rest-1.0) resource.",
           "Target": "fraudProtectionProvider"
         },
         {
@@ -1387,7 +1387,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "humanSecurityFraudProtectionProvider",
           "ChangeType": "Addition",
-          "Description": "Added the [humanSecurityFraudProtectionProvider](https://learn.microsoft.com/en-us/graph/api/resources/humanSecurityFraudProtectionProvider?view=graph-rest-1.0) resource.",
+          "Description": "Added the [humanSecurityFraudProtectionProvider](https://learn.microsoft.com/en-us/graph/api/resources/humansecurityfraudprotectionprovider?view=graph-rest-1.0) resource.",
           "Target": "humanSecurityFraudProtectionProvider"
         },
         {
@@ -1395,7 +1395,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "onFraudProtectionLoadStartListener",
           "ChangeType": "Addition",
-          "Description": "Added the [onFraudProtectionLoadStartListener](https://learn.microsoft.com/en-us/graph/api/resources/onFraudProtectionLoadStartListener?view=graph-rest-1.0) resource.",
+          "Description": "Added the [onFraudProtectionLoadStartListener](https://learn.microsoft.com/en-us/graph/api/resources/onfraudprotectionloadstartlistener?view=graph-rest-1.0) resource.",
           "Target": "onFraudProtectionLoadStartListener"
         },
         {
@@ -1403,7 +1403,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "fraudProtectionProviders",
           "ChangeType": "Addition",
-          "Description": "Added the **fraudProtectionProviders** relationship to the [riskPreventionContainer](https://learn.microsoft.com/en-us/graph/api/resources/riskPreventionContainer?view=graph-rest-1.0) resource.",
+          "Description": "Added the **fraudProtectionProviders** relationship to the [riskPreventionContainer](https://learn.microsoft.com/en-us/graph/api/resources/riskpreventioncontainer?view=graph-rest-1.0) resource.",
           "Target": "riskPreventionContainer"
         }
       ],

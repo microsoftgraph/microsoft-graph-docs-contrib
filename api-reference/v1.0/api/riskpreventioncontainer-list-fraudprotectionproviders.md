@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Get a list of the [fraudProtectionProvider](../resources/fraudprotectionprovider.md) object and their properties. The following derived types are supported:
 
-- [arkoseFraudProtectionProvider](../resources/arkoseFraudProtectionProvider.md)
+- [arkoseFraudProtectionProvider](../resources/arkosefraudprotectionprovider.md)
 - [humanSecurityFraudProtectionProvider](../resources/humansecurityfraudprotectionprovider.md)
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]

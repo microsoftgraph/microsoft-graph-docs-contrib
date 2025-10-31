@@ -36,7 +36,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /identity/riskprevention/fraudprotectionproviders/{fraudProtectionProviderId}
+GET /identity/riskPrevention/fraudProtectionProviders/{fraudProtectionProviderId}
 ```
 
 ## Optional query parameters

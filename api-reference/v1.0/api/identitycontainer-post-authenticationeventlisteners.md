@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 Create a new [authenticationEventListener](../resources/authenticationeventlistener.md) object. You can create one of the following subtypes that are derived from **authenticationEventListener**.
 
 - [onTokenIssuanceStartListener resource type](../resources/ontokenissuancestartlistener.md)
-- [onFraudProtectionLoadStartListener](../resources/onFraudProtectionLoadStartListener.md) resource type
+- [onFraudProtectionLoadStartListener](../resources/onfraudprotectionloadstartlistener.md) resource type
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -52,7 +52,7 @@ You can specify the following properties when creating an **authenticationEventL
 |conditions|[authenticationConditions](../resources/authenticationconditions.md)|The conditions on which this authenticationEventListener should trigger. Optional.|
 |displayName|String|The display name of the authentication event listener policy. Optional.|
 |handler|[onTokenIssuanceStartHandler](../resources/ontokenissuancestarthandler.md)|The handler to invoke when conditions are met. Can be set for the **onTokenIssuanceStartListener** listener type.|
-|handler|[onFraudProtectionLoadStartHandler](../resources/onFraudProtectionLoadStartHandler.md) | The handler to invoke when conditions are met. Can be updated for the **onFraudProtectionLoadStartListener** type. |
+|handler|[onFraudProtectionLoadStartHandler](../resources/onfraudprotectionloadstarthandler.md) | The handler to invoke when conditions are met. Can be set for the **onFraudProtectionLoadStartListener** type. |
 
 ## Response
 

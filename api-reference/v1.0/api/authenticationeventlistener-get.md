@@ -18,7 +18,7 @@ Read the properties and relationships of an [authenticationEventListener](../res
 - [onAuthenticationMethodLoadStartListener resource type](../resources/onauthenticationmethodloadstartlistener.md) resource type
 - [onAttributeCollectionListener resource type](../resources/onattributecollectionlistener.md) resource type
 - [onUserCreateStartListener resource type](../resources/onusercreatestartlistener.md) resource type
-- [onFraudProtectionLoadStartListener](../resources/onFraudProtectionLoadStartListener.md) resource type
+- [onFraudProtectionLoadStartListener](../resources/onfraudprotectionloadstartlistener.md) resource type
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -60,6 +60,7 @@ If successful, this method returns a `200 OK` response code and an [authenticati
 ### Request
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_authenticationeventlistener"

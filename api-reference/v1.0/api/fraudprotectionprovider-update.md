@@ -37,7 +37,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-PATCH /identity/riskprevention/fraudprotectionproviders/{fraudProtectionProviderId}
+PATCH /identity/riskPrevention/fraudProtectionProviders/{fraudProtectionProviderId}
 ```
 
 ## Request headers
