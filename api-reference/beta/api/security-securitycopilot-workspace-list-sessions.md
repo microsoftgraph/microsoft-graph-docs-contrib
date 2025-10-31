@@ -1,6 +1,6 @@
 ---
 title: "List session objects"
-description: "Get a list of the sessions in Security Copilot.
+description: "Get a list of the sessions in Security Copilot."
 author: "spunukol"
 ms.date: 07/17/2025
 ms.localizationpriority: medium
