@@ -84,7 +84,7 @@ The user calls the API and filters by one or more label ID GUIDs.
 3. **Inner OR Exception**
    - Inner `or` operations that fall under the parameter tree are permitted
 
-### Scenario 2: SensitivityLabelAndRights APIs expand=Rights (/ and /id) - Single ID
+### Scenario 2: Return results for SensitivityLabels using a filter on a single ID and user right
 
 The user calls the API and filters by one label ID GUID and one user right.
 
