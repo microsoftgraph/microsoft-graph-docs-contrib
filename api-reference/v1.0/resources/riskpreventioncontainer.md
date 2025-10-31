@@ -12,13 +12,10 @@ ms.date: 10/23/2025
 
 Namespace: microsoft.graph
 
-
-
 Represents the entry point for risk prevention features in [External Identities](/azure/active-directory/external-identities/) for Microsoft Entra External ID tenants.
 
 ## Methods
 None.
-
 
 ## Properties
 None.

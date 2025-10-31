@@ -12,17 +12,15 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-
 A listener for fraud protection load start events in Microsoft Entra External ID. This resource enables you to configure actions and conditions that trigger at the start of a fraud protection check, such as during sign-up scenarios.
-
 
 Inherits from [authenticationEventListener](../resources/authenticationeventlistener.md).
 
 
 ## Methods
- None.
+None.
 
-  For the list of API operations for managing this resource type, see the [authenticationEventListener](../resources/authenticationeventlistener.md) resource type.
+For the list of API operations for managing this resource type, see the [authenticationEventListener](../resources/authenticationeventlistener.md) resource type.
 
 ## Properties
 |Property|Type|Description|

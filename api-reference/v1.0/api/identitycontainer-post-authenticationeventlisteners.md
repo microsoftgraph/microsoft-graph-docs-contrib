@@ -60,10 +60,10 @@ If successful, this method returns a `201 Created` response code and an [authent
 
 ## Examples
 
-
 ### Request
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_authenticationeventlistener_onTokenIssuanceStartListener"
@@ -172,6 +172,7 @@ The following example shows a request that enables fraud protection during sign-
 ```http
 POST https://graph.microsoft.com/v1.0/identity/authenticationEventListeners
 Content-Type: application/json
+
 {   
   "@odata.type": "#microsoft.graph.onFraudProtectionLoadStartListener", 
   "conditions": { 
@@ -210,6 +211,7 @@ The following example shows the response.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
+
 {
   "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identity/authenticationEventListeners/$entity",
   "@odata.type": "#microsoft.graph.onFraudProtectionLoadStartListener",
@@ -248,6 +250,7 @@ The following example shows a request that enables fraud protection during sign-
 ```http
 POST https://graph.microsoft.com/v1.0/identity/authenticationEventListeners
 Content-Type: application/json
+
 {   
   "@odata.type": "#microsoft.graph.onFraudProtectionLoadStartListener", 
   "conditions": { 
@@ -286,6 +289,7 @@ The following example shows the response.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
+
 {
   "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identity/authenticationEventListeners/$entity",
   "@odata.type": "#microsoft.graph.onFraudProtectionLoadStartListener",

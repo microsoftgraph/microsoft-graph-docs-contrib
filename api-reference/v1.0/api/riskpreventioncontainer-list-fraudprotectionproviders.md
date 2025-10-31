@@ -2,7 +2,7 @@
 title: "List fraudProtectionProviders"
 description: "Get a list of the fraudProtectionProvider objects and their properties."
 author: "more-rasika"
-ms.date: 10/06/2025
+ms.date: 10/31/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
@@ -11,7 +11,6 @@ doc_type: apiPageType
 # List fraudProtectionProviders
 
 Namespace: microsoft.graph
-
 
 Get a list of the [fraudProtectionProvider](../resources/fraudprotectionprovider.md) object and their properties. The following derived types are supported:
 
@@ -69,7 +68,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/v1.0/identity/riskprevention/fraudprotectionproviders
+GET https://graph.microsoft.com/v1.0/identity/riskPrevention/fraudProtectionProviders
 ```
 
 

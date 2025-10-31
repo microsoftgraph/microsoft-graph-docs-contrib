@@ -1,6 +1,6 @@
 ---
 title: "Delete fraudProtectionProviders"
-description: "Delete a fraudProtectionProviders object."
+description: "Delete a fraudProtectionProvider object."
 author: "more-rasika"
 ms.date: 10/23/2025
 ms.localizationpriority: medium
@@ -11,8 +11,6 @@ doc_type: apiPageType
 # Delete fraudProtectionProviders
 
 Namespace: microsoft.graph
-
-
 
 Delete a [fraudProtectionProvider](../resources/fraudprotectionprovider.md) object.
 
@@ -63,14 +61,13 @@ The following example shows a request.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/v1.0/identity/riskprevention/fraudprotectionproviders/d474f94f-0fcf-4224-a165-c1c5bad1600f
+DELETE https://graph.microsoft.com/v1.0/identity/riskPrevention/fraudProtectionProviders/d474f94f-0fcf-4224-a165-c1c5bad1600f
 ```
 
 
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true

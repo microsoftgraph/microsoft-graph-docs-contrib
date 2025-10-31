@@ -12,11 +12,8 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-
-
 Represents the configuration of a specific third-party fraud protection provider.
 Inherits from [fraudProtectionConfiguration](../resources/fraudprotectionconfiguration.md).
-
 
 ## Properties
 None.

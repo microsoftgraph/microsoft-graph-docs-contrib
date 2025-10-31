@@ -12,8 +12,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-
-
 Represents the configuration settings for a third-party fraud protection provider in Microsoft Entra External ID.
 This is an abstract type from which the following resources derive:
 

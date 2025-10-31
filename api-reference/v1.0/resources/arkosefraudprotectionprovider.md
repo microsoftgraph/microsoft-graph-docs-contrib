@@ -12,10 +12,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-
-
 Used to configure fraud protection using Arkose Labs that integrates with Microsoft Entra External ID to help protect against fraudulent activities during user registration (sign-up) events.
-
 
 Inherits from [fraudProtectionProvider](../resources/fraudprotectionprovider.md).
 

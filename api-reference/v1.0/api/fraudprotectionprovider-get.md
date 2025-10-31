@@ -2,7 +2,7 @@
 title: "Get fraudProtectionProvider"
 description: "Read the properties and relationships of fraudProtectionProvider object."
 author: "more-rasika"
-ms.date: 10/23/2025
+ms.date: 10/31/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
@@ -11,7 +11,6 @@ doc_type: apiPageType
 # Get fraudProtectionProvider
 
 Namespace: microsoft.graph
-
 
 Read the properties and relationships of [fraudProtectionProvider](../resources/fraudprotectionprovider.md) object. The following derived types are currently supported.
 
@@ -69,7 +68,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/v1.0/identity/riskprevention/fraudprotectionproviders/0bb2618b-51f7-4e83-bcb8-84e70f7cf84d
+GET https://graph.microsoft.com/v1.0/identity/riskPrevention/fraudProtectionProviders/0bb2618b-51f7-4e83-bcb8-84e70f7cf84d
 ```
 
 ### Response

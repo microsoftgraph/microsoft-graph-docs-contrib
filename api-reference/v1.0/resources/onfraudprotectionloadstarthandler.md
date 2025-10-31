@@ -1,6 +1,6 @@
 ---
 title: "onFraudProtectionLoadStartHandler resource type"
-description: "Used for configuring the third-party fraud protection provider Microsoft Entra external ID tenants."
+description: "Used for configuring the third-party fraud protection provider for Microsoft Entra external ID tenants."
 author: "more-rasika"
 ms.date: 08/05/2025
 ms.localizationpriority: medium
@@ -11,7 +11,6 @@ doc_type: resourcePageType
 # onFraudProtectionLoadStartHandler resource type
 
 Namespace: microsoft.graph
-
 
 Represents a handler that executes when a fraud protection load start listener is triggered in Microsoft Entra External ID. This abstract resource allows you to define third-party integrations for fraud protection.
 
