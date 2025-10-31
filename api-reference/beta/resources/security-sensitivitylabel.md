@@ -146,7 +146,6 @@ We recommend using filters that use a single call with multiple IDs to retrieve 
 
    - In this example, there are 3 subclauses. When combining the ID and ownerEmail, use AND in the subclause. Do not use OR otherwise it will throw an exception.
 
-   ```
 
 4. **Prefiltering Behavior**
 
