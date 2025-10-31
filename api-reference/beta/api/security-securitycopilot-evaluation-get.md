@@ -27,9 +27,13 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/security-securitycopilot-evaluation-get-permissions.md)]
 
+<<<<<<< HEAD
 > [!IMPORTANT]
 > In delegated scenarios with work or school accounts, the signed-in user must be assigned a supported [Microsoft Security Copilot role](https://learn.microsoft.com/copilot/security/authentication). The following least privileged roles are supported for this operation.
 > - Security Copilot Contributor
+=======
+[!INCLUDE [rbac-security-copilot-apis](../includes/rbac-for-apis/rbac-security-copilot-apis.md)]
+>>>>>>> 7084eb9f64b3dea041223b818a567ee1ebdaffd7
 
 ## HTTP request
 

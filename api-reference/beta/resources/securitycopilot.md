@@ -22,7 +22,7 @@ Inherits from [entity](../resources/entity.md)
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List workspaces](../api/securitycopilot-list-workspaces.md)|[workspace](../resources/security.securitycopilot-workspace.md) collection|Get a list of the workspace objects and their properties.|
+|[List workspaces](../api/securitycopilot-list-workspaces.md)|[workspace](../resources/security-securitycopilot-workspace.md) collection|Get a list of the workspace objects and their properties.|
 
 ## Properties
 |Property|Type|Description|
