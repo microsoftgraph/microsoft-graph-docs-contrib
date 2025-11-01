@@ -19,11 +19,15 @@
           "Target": "cloudPcManagementService"
         }
       ],
-      "Id": "382c3075-26fc-4093-8518-75389ec935f3",
-      "Cloud": "Prod",
-      "Version": "beta",
-      "CreatedDateTime": "2025-10-31T09:55:21.2146082Z",
-      "WorkloadArea": "Devices and apps",
+          "Id": "382c3075-26fc-4093-8518-75389ec935f3",
+          "Cloud": "Prod",
+          "Version": "beta",
+          "CreatedDateTime": "2025-10-31T09:55:21.2146082Z",
+          "WorkloadArea": "Devices and apps",
+      },
+      {
+      "ChangeList": [
+        {
           "Id": "a89c4566-5da1-4e24-afb9-58891761ccad",
           "ApiChange": "Resource",
           "ChangedApiName": "frontlineCloudPcDetail",
