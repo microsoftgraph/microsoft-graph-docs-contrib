@@ -147,6 +147,6 @@ Content-Type: application/json
         ],
         "isDelayedDeploymentEnabled": false
     },
-    "serviceStatus": "String"
+    "serviceStatus": "running"
 }
 ```
