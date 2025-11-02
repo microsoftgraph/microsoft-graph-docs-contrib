@@ -30,18 +30,19 @@ Inherits from [entity](../resources/entity.md).
 |[Regenerate deployment access key](../api/security-sensor-regeneratedeploymentaccesskey.md)|[microsoft.graph.security.deploymentAccessKeyType](../resources/security-deploymentaccesskeytype.md)|Generate a new deployment access key that can be used to install sensors associated with the workspace.|
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|createdDateTime|DateTimeOffset|The date and time when the sensor was generated. The Timestamp represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
-|deploymentStatus|[microsoft.graph.security.deploymentStatus](#deploymentstatus-values)|The deployment status of the sensor. The possible values are: `upToDate`, `outdated`, `updating`, `updateFailed`, `notConfigured`, `unreachable`, `disconnected`, `startFailure`, `syncing`, `unknownFutureValue`.|
-|displayName|String|The display name of the sensor.|
-|domainName|String|The fully qualified domain name of the sensor.|
-|healthStatus|[microsoft.graph.security.sensorHealthStatus](#sensorhealthstatus-values)|The health status of the sensor. The possible values are: `healthy`, `notHealthyLow`, `notHealthyMedium`, `notHealthyHigh`, `unknownFutureValue`.|
-|id|String|Unique identifier to represent the sensor. Inherited from [entity](../resources/entity.md).|
-|openHealthIssuesCount|Int64|This field displays the count of health issues related to this sensor.|
-|sensorType|[microsoft.graph.security.sensorType](#sensortype-values)|The type of the sensor. The possible values are: `adConnectIntegrated`, `adcsIntegrated`, `adfsIntegrated`, `domainControllerIntegrated`, `domainControllerStandalone`, `unknownFutureValue`.|
-|settings|[microsoft.graph.security.sensorSettings](../resources/security-sensorsettings.md)|Sensor settings information.|
-|version|String|The version of the sensor.|
+|Property| Type                                                                               | Description                                                                                                                                                                                                         |
+|:---|:-----------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|createdDateTime| DateTimeOffset                                                                     | The date and time when the sensor was generated. The Timestamp represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. |
+|deploymentStatus| [microsoft.graph.security.deploymentStatus](#deploymentstatus-values)              | The deployment status of the sensor. The possible values are: `upToDate`, `outdated`, `updating`, `updateFailed`, `notConfigured`, `unreachable`, `disconnected`, `startFailure`, `syncing`, `unknownFutureValue`.  |
+|displayName| String                                                                             | The display name of the sensor.                                                                                                                                                                                     |
+|domainName| String                                                                             | The fully qualified domain name of the sensor.                                                                                                                                                                      |
+|healthStatus| [microsoft.graph.security.sensorHealthStatus](#sensorhealthstatus-values)          | The health status of the sensor. The possible values are: `healthy`, `notHealthyLow`, `notHealthyMedium`, `notHealthyHigh`, `unknownFutureValue`.                                                                   |
+|id| String                                                                             | Unique identifier to represent the sensor. Inherited from [entity](../resources/entity.md).                                                                                                                         |
+|openHealthIssuesCount| Int64                                                                              | This field displays the count of health issues related to this sensor.                                                                                                                                              |
+|sensorType| [microsoft.graph.security.sensorType](#sensortype-values)                          | The type of the sensor. The possible values are: `adConnectIntegrated`, `adcsIntegrated`, `adfsIntegrated`, `domainControllerIntegrated`, `domainControllerStandalone`, `unknownFutureValue`.                       |
+|serviceStatus| [microsoft.graph.security.serviceStatus](#serviceStatus-values)                    | The service status. The possible values are: `stopped`, `starting`, `running`, `disabled`, `onboarding`, `unknown`, `unknownFutureValue`.                                                                           |
+|settings| [microsoft.graph.security.sensorSettings](../resources/security-sensorsettings.md) | Sensor settings information.                                                                                                                                                                                        |
+|version| String                                                                             | The version of the sensor.                                                                                                                                                                                          |
 
 ### deploymentStatus values
 
@@ -79,6 +80,18 @@ Inherits from [entity](../resources/entity.md).
 | domainControllerStandalone |Standalone sensor.|
 | unknownFutureValue |Evolvable enumeration sentinel value. Don't use.|
 
+### serviceStatus values
+
+|Member| Description                                      |
+| :--------------------------|:-------------------------------------------------|
+|stopped| Service status is stopped                        |
+|starting| Service status is starting                       |
+|running| Service status is running                        |
+|disabled| Service status is disabled                       |
+|onboarding| Service status is onboarding                     |
+|unknown| Service status is unknown                        |
+|unknownFutureValue| Evolvable enumeration sentinel value. Don't use. |
+
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
@@ -106,6 +119,7 @@ The following JSON representation shows the resource type.
   "openHealthIssuesCount": "Int64",
   "sensorType": "String",
   "settings": {"@odata.type": "microsoft.graph.security.sensorSettings"},
-  "version": "String"
+  "version": "String",
+  "serviceStatus": "String"
 }
 ```
