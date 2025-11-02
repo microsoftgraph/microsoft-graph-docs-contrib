@@ -163,6 +163,90 @@
       "CreatedDateTime": "2024-11-04T05:10:40.1623416Z",
       "WorkloadArea": "Security",
       "SubArea": "Identities"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "e6489c84-2e85-44d7-9a06-65d6a751d1e9",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "action",
+          "ChangeType": "Addition",
+          "Description": "Added the **action** enumeration type.",
+          "Target": "action"
+        },
+        {
+          "Id": "e6489c84-2e85-44d7-9a06-65d6a751d1e9",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "identityProvider",
+          "ChangeType": "Addition",
+          "Description": "Added the **identityProvider** enumeration type.",
+          "Target": "identityProvider"
+        },
+        {
+          "Id": "e6489c84-2e85-44d7-9a06-65d6a751d1e9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "account",
+          "ChangeType": "Addition",
+          "Description": "Added the [account](https://learn.microsoft.com/en-us/graph/api/resources/security-account?view=graph-rest-1.0) resource.",
+          "Target": "account"
+        },
+        {
+          "Id": "e6489c84-2e85-44d7-9a06-65d6a751d1e9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "invokeActionResult",
+          "ChangeType": "Addition",
+          "Description": "Added the [invokeActionResult](https://learn.microsoft.com/en-us/graph/api/resources/security-invokeActionResult?view=graph-rest-1.0) resource.",
+          "Target": "invokeActionResult"
+        },
+        {
+          "Id": "e6489c84-2e85-44d7-9a06-65d6a751d1e9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "identityAccounts",
+          "ChangeType": "Addition",
+          "Description": "Added the [identityAccounts](https://learn.microsoft.com/en-us/graph/api/resources/security-identityAccounts?view=graph-rest-1.0) resource.",
+          "Target": "identityAccounts"
+        },
+        {
+          "Id": "e6489c84-2e85-44d7-9a06-65d6a751d1e9",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "identityAccounts",
+          "ChangeType": "Addition",
+          "Description": "Added the **identityAccounts** relationship to the [identityContainer](https://learn.microsoft.com/en-us/graph/api/resources/security-identityContainer?view=graph-rest-1.0) resource.",
+          "Target": "identityContainer"
+        },
+        {
+          "Id": "e6489c84-2e85-44d7-9a06-65d6a751d1e9",
+          "ApiChange": "Method",
+          "ChangedApiName": "invokeAction",
+          "ChangeType": "Addition",
+          "Description": "Added the [invokeAction](https://learn.microsoft.com/en-us/graph/api/security-identityAccounts-invokeAction?view=graph-rest-1.0) method to the [identityAccounts](https://learn.microsoft.com/en-us/graph/api/resources/security-identityAccounts?view=graph-rest-1.0) resource.",
+          "Target": "identityAccounts"
+        }
+      ],
+      "Id": "e6489c84-2e85-44d7-9a06-65d6a751d1e9",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-11-02T15:17:52.4104503Z",
+      "WorkloadArea": "Security",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "79e93597-d64c-49e3-aae7-4cd13608f015",
+          "ApiChange": "Resource",
+          "ChangedApiName": "user",
+          "ChangeType": "Addition",
+          "Description": "Added the [user](https://learn.microsoft.com/en-us/graph/api/resources/security-user?view=graph-rest-1.0) resource.",
+          "Target": "user"
+        }
+      ],
+      "Id": "79e93597-d64c-49e3-aae7-4cd13608f015",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-11-02T15:17:52.4107125Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
     }
   ]
 }
