@@ -31,7 +31,6 @@ Inherits from [entity](../resources/entity.md).
 |[cancel](../api/crosstenantmigrationjob-cancel.md)|[crossTenantMigrationCancelResponse](../resources/crosstenantmigrationcancelresponse.md)|**TODO: Add Description**|
 |[validate](../api/crosstenantmigrationjob-validate.md)|[crossTenantMigrationJob](../resources/crosstenantmigrationjob.md)|**TODO: Add Description**|
 |[List users](../api/crosstenantmigrationjob-list-users.md)|[crossTenantMigrationTask](../resources/crosstenantmigrationtask.md) collection|**TODO: Add a useful description.**|
-|[Create crossTenantMigrationTask](../api/crosstenantmigrationjob-post-users.md)|[crossTenantMigrationTask](../resources/crosstenantmigrationtask.md)|Create a new crossTenantMigrationTask object.|
 
 ## Properties
 |Property|Type|Description|

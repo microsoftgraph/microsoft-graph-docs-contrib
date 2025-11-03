@@ -24,10 +24,7 @@ Inherits from [entity](../resources/entity.md).
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List](../api/crosstenantmigrationjob-list-users.md)|[crossTenantMigrationTask](../resources/crosstenantmigrationtask.md) collection|Get a list of the crossTenantMigrationTask objects and their properties.|
-|[Create](../api/crosstenantmigrationjob-post-users.md)|[crossTenantMigrationTask](../resources/crosstenantmigrationtask.md)|Create a new crossTenantMigrationTask object.|
 |[Get](../api/crosstenantmigrationtask-get.md)|[crossTenantMigrationTask](../resources/crosstenantmigrationtask.md)|Read the properties and relationships of [crossTenantMigrationTask](../resources/crosstenantmigrationtask.md) object.|
-|[Update](../api/crosstenantmigrationtask-update.md)|[crossTenantMigrationTask](../resources/crosstenantmigrationtask.md)|Update the properties of a crossTenantMigrationTask object.|
-|[Delete](../api/crosstenantmigrationjob-delete-users.md)|None|Delete a crossTenantMigrationTask object.|
 |[cancel](../api/crosstenantmigrationtask-cancel.md)|[crossTenantMigrationCancelResponse](../resources/crosstenantmigrationcancelresponse.md)|**TODO: Add Description**|
 
 ## Properties

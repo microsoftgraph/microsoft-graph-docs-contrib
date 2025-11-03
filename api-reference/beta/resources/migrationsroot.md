@@ -23,11 +23,6 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/solutionsroot-list-migrations.md)|[migrationsRoot](../resources/migrationsroot.md) collection|Get a list of the migrationsRoot objects and their properties.|
-|[Create](../api/solutionsroot-post-migrations.md)|[migrationsRoot](../resources/migrationsroot.md)|Create a new migrationsRoot object.|
-|[Get](../api/migrationsroot-get.md)|[migrationsRoot](../resources/migrationsroot.md)|Read the properties and relationships of [migrationsRoot](../resources/migrationsroot.md) object.|
-|[Update](../api/migrationsroot-update.md)|[migrationsRoot](../resources/migrationsroot.md)|Update the properties of a migrationsRoot object.|
-|[Delete](../api/solutionsroot-delete-migrations.md)|None|Delete a migrationsRoot object.|
 |[List crossTenantMigrationJobs](../api/migrationsroot-list-crosstenantmigrationjobs.md)|[crossTenantMigrationJob](../resources/crosstenantmigrationjob.md) collection|**TODO: Add a useful description.**|
 |[Create crossTenantMigrationJob](../api/migrationsroot-post-crosstenantmigrationjobs.md)|[crossTenantMigrationJob](../resources/crosstenantmigrationjob.md)|Create a new crossTenantMigrationJob object.|
 
