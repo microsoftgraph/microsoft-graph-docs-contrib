@@ -66,7 +66,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/solutions/sharePoint/migrations/crossOrganizationGroupMappings(sourceGroupObjectId='11111111-1111-1111-1111-111111111111')
+GET https://graph.microsoft.com/beta/solutions/sharePoint/migrations/crossOrganizationGroupMappings(sourceGroupObjectId='sourceGroupObjectId')
 ```
 
 

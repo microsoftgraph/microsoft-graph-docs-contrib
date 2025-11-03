@@ -96,6 +96,7 @@ Content-Type: application/json
       }
     },
     {
+      "@odata.type": "#microsoft.graph.sharePointGroupIdentityMapping",
       "@removed": {
         "reason": "deleted"
       },
@@ -140,6 +141,7 @@ Content-Type: application/json
       }
     },
     {
+      "@odata.type": "#microsoft.graph.sharePointGroupIdentityMapping",
       "id": "String (base64-encoded identifier)",
       "sourceGroupIdentity": {
         "@odata.type": "microsoft.graph.identity"
