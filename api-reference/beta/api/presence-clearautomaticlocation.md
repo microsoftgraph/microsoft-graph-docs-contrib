@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Clear the automatic work location signal for a user. After clearing, the user’s final aggregated work location is recomputed according to the precedence rules:
 
-- Precedence: manual > automatic > scheduled.
+- Precedence: manual > automatic > scheduled
 - If a manual location is set, clearing the automatic signal doesn't change the final location (manual still takes precedence).
 - If no manual location is set, the final location falls back to the scheduled signal (calendar working hours and location – WHL) for the current segment, or to none if there's no scheduled signal.
 

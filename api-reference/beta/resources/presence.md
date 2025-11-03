@@ -44,7 +44,7 @@ This resource supports subscribing to [change notifications](/graph/changenotifi
 | outOfOfficeSettings | [outOfOfficeSettings](outofofficesettings.md) | The out of office settings for a user.  |
 | sequenceNumber      | String             | The lexicographically sortable String stamp that represents the version of a **presence** object. |
 | statusMessage       | [presenceStatusMessage](presencestatusmessage.md) | The presence status message of a user. |
-| workLocation        | [userWorkLocation](../resources/userworklocation.md) | Represents the user’s aggregated work location state |
+| workLocation        | [userWorkLocation](../resources/userworklocation.md) | Represents the user’s aggregated work location state. |
 
 > [!NOTE]
 > * To learn more about the different presence states, see [User presence in Teams](/microsoftteams/presence-admins). 
