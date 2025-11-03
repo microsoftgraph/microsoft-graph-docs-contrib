@@ -42,9 +42,10 @@ For the list of supported methods, see [place](./place.md).
 |nickname |String |A short, friendly name for the **room**, often used for easier identification or display in UI. |
 |parentId |String |The ID of a parent [floor](./floor.md) or [section](./section.md). Inherited from [place](../resources/place.md). |
 |phone |String |The phone number of the **room**. Inherited from [place](../resources/place.md).|
-|placeId |String |An alternate immutable unique identifier of the **room**. Read-only. Inherited from [place](../resources/place.md).|
+|placeId |String |An alternate immutable unique identifier of the **room**. Read-only.|
 |tags |String collection |Custom tags that are associated with the **room** for categorization or filtering. Inherited from [place](../resources/place.md).|
 |videoDeviceName |String |The name of the video device that is available in the **room**. |
+|teamsEnabledState |[placeFeatureEnablement](#placeFeatureEnablement-values) |Indicates whether the room is enabled for Microsoft Teams. |
 
 ### bookingType values
 
@@ -53,6 +54,13 @@ For the list of supported methods, see [place](./place.md).
 | unknown  | Unspecified booking behavior. We don't recommend that you use this value. |
 | standard | The room can be reserved based on the other settings in this cmdlet. Default. |
 | reserved | The room is available only on a first-come, first-served basis. It can't be reserved.|
+
+### placeFeatureEnablement values
+| Value        | Description                                               |
+|:-------------|:----------------------------------------------------------|
+| unknown     | Feature state is unknown.                                 |
+| enabled     | Feature is enabled.                                       |
+| disabled    | Feature is disabled.                                      |
 
 ## Relationships
 None.
@@ -90,7 +98,8 @@ The following JSON representation shows the resource type.
   "phone": "String",
   "placeId": "String (alternate identifier)",
   "tags": ["String"],
-  "videoDeviceName": "String"
+  "videoDeviceName": "String",
+  "teamsEnabledState": "String"
 }
 ```
 

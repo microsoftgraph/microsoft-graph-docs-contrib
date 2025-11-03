@@ -323,10 +323,10 @@
         {
           "Id": "3e86af9c-5584-4544-9705-15b97fcd9dd4",
           "ApiChange": "Resource",
-          "ChangedApiName": "offlinePlaceMode",
+          "ChangedApiName": "unavailablePlaceMode",
           "ChangeType": "Addition",
-          "Description": "Added the [offlinePlaceMode](https://learn.microsoft.com/en-us/graph/api/resources/offlinePlaceMode?view=graph-rest-beta) resource type.",
-          "Target": "offlinePlaceMode"
+          "Description": "Added the [unavailablePlaceMode](https://learn.microsoft.com/en-us/graph/api/resources/unavailablePlaceMode?view=graph-rest-beta) resource type.",
+          "Target": "unavailablePlaceMode"
         },
         {
           "Id": "3e86af9c-5584-4544-9705-15b97fcd9dd4",

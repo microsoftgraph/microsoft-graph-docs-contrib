@@ -1,5 +1,5 @@
 ---
-title: "offlinePlaceMode resource type"
+title: "unavailablePlaceMode resource type"
 description: "Describes why a desk or a workspace has been marked as offline and unavailable for booking."
 author: tiwarisakshi02
 ms.date: 06/11/2025
@@ -8,7 +8,7 @@ ms.subservice: outlook
 doc_type: resourcePageType
 ---
 
-# offlinePlaceMode resource type
+# unavailablePlaceMode resource type
 
 Namespace: microsoft.graph
 
@@ -32,12 +32,12 @@ None.
 The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.offlinePlaceMode"
+  "@odata.type": "microsoft.graph.unavailablePlaceMode"
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.offlinePlaceMode",
+  "@odata.type": "#microsoft.graph.unavailablePlaceMode",
   "reason": "String"
 }
 ```
