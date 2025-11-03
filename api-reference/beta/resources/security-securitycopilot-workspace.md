@@ -25,7 +25,7 @@ Represents a Microsoft Security Copilot workspace. For more information, see [Wo
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|Name of the Security Copilot workspace.|
-|id|String|Represents the unique ID of the Security Copilot workspace. Inherits from [entity](../resources/entity.md)|
+|id|String|Represents the unique ID of the Security Copilot workspace or `default` to represent the default workspace that was created as part of the initial onboarding to Security Copilot. Inherits from [entity](../resources/entity.md)|
 
 ## Relationships
 |Relationship|Type|Description|

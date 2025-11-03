@@ -1,6 +1,6 @@
 ---
 title: "pluginAuth resource type"
-description: "SecurityCopilot Plugin Authorization types"
+description: "This describes the set of authorization types available for a Security Copilot plugin."
 author: "spunukol"
 ms.date: 07/17/2025
 ms.localizationpriority: medium
@@ -14,13 +14,13 @@ Namespace: microsoft.graph.security.securityCopilot
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This describes the set of authorization types available for the plugin.
+This describes the set of authorization types available for a Security Copilot [plugin](../resources/security-securitycopilot-plugin.md).
 
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|authType|microsoft.graph.security.securitycopilot.pluginAuthTypes|Plugin authorization types. The possible values are: `none`, `basic`, `aPIKey`, `oAuthAuthorizationCodeFlow`, `oAuthClientCredentialsFlow`, `aad`, `serviceHttp`, `aadDelegated`, `oAuthPasswordGrantFlow`, `unknownFutureValue`.|
+|authType|microsoft.graph.security.securityCopilot.pluginAuthTypes|Plugin authorization types. The possible values are: `none`, `basic`, `aPIKey`, `oAuthAuthorizationCodeFlow`, `oAuthClientCredentialsFlow`, `aad`, `serviceHttp`, `aadDelegated`, `oAuthPasswordGrantFlow`, `unknownFutureValue`.|
 
 ## Relationships
 None.

@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security.securityCopilot
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a plugin in Security Copilot. For more information, see [Plugins in Microsoft Security Copilot](/copilot/security/plugin-overview).
+Represents a plugin scoped to a [workspace](../resources/security-securitycopilot-workspace.md) in Security Copilot. For more information, see [Plugins in Microsoft Security Copilot](/copilot/security/plugin-overview).
 
 
 ## Methods
@@ -25,16 +25,16 @@ Represents a plugin in Security Copilot. For more information, see [Plugins in M
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|authorization|[microsoft.graph.security.securityCopilot.pluginAuth](../resources/security-securitycopilot-pluginauth.md)|Authorization for the plugin|
-|catalogScope|microsoft.graph.security.securitycopilot.pluginCatalogScope|Lists the scope available for the use of the plugin. The possible values are: `none`, `user`, `workspace`, `tenant`, `global`, `geoGlobal`, `userWorkspace`, `unknownFutureValue`.|
-|category|microsoft.graph.security.securitycopilot.pluginCategory|Category of the plugin. The possible values are: `hidden`, `microsoft`, `microsoftConnectors`, `other`, `web`, `testing`, `plugin`, `unknownFutureValue`.|
-|description|String|Brief description of the plugin|
-|displayName|String|Display name of the plugin. <br> <br> Supports $filter (`eq`)|
-|isEnabled|Boolean|Displays whether the plugin is enabled for use within the catalogScope. <br> <br> Supports $filter (`eq`)|
-|name|String|Represents the name of the plugin. This is the primary Key for the catalogScope. <br> <br> Supports $filter (`eq`, `contains`)|
-|previewState|microsoft.graph.security.securitycopilot.pluginPreviewStates|Describes the use and availability of the plugin. The possible values are: `ga`, `public`, `private`, `unknownFutureValue`.|
-|settings|[microsoft.graph.security.securityCopilot.pluginSetting](../resources/security-securitycopilot-pluginsetting.md) collection|Settings for the plugin|
-|supportedAuthTypes|microsoft.graph.security.securitycopilot.pluginAuthTypes|Authorization types used for the plugin. The possible values are: `none`, `basic`, `aPIKey`, `oAuthAuthorizationCodeFlow`, `oAuthClientCredentialsFlow`, `aad`, `serviceHttp`, `aadDelegated`, `oAuthPasswordGrantFlow`, `unknownFutureValue`. Currently unsupported.|
+|authorization|[microsoft.graph.security.securityCopilot.pluginAuth](../resources/security-securitycopilot-pluginauth.md)|Authorization for the plugin.|
+|catalogScope|microsoft.graph.security.securityCopilot.pluginCatalogScope|Lists the scope available for the use of the plugin. The possible values are: `none`, `user`, `workspace`, `tenant`, `global`, `geoGlobal`, `userWorkspace`, `unknownFutureValue`.|
+|category|microsoft.graph.security.securityCopilot.pluginCategory|Category of the plugin. The possible values are: `hidden`, `microsoft`, `microsoftConnectors`, `other`, `web`, `testing`, `plugin`, `unknownFutureValue`.|
+|description|String|Brief description of the plugin.|
+|displayName|String|Display name of the plugin. <br> <br> Supports `$filter` (`eq`).|
+|isEnabled|Boolean|Displays whether the plugin is enabled for use within the catalogScope. <br> <br> Supports `$filter` (`eq`).|
+|name|String|Represents the name of the plugin. Primary key. <br> <br> Supports `$filter` (`eq`, `contains`).|
+|previewState|microsoft.graph.security.securityCopilot.pluginPreviewStates|Describes the use and availability of the plugin. The possible values are: `ga`, `public`, `private`, `unknownFutureValue`.|
+|settings|[microsoft.graph.security.securityCopilot.pluginSetting](../resources/security-securitycopilot-pluginsetting.md) collection|Settings for the plugin.|
+|supportedAuthTypes|microsoft.graph.security.securityCopilot.pluginAuthTypes|Authorization types used for the plugin. The possible values are: `none`, `basic`, `aPIKey`, `oAuthAuthorizationCodeFlow`, `oAuthClientCredentialsFlow`, `aad`, `serviceHttp`, `aadDelegated`, `oAuthPasswordGrantFlow`, `unknownFutureValue`. Currently unsupported.|
 
 ## Relationships
 None.
