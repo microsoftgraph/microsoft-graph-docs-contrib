@@ -3271,27 +3271,6 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 ---
 
-### GroupSettings.Read.All
-
-| Category | Application | Delegated |
-|--|--|--|
-| Identifier | f3c4f514-c65a-43f5-bfce-1735872258dd | 2eb2bc92-94ef-4c6b-b4ab-2a09bc975e0e |
-| DisplayText | Read all group settings | Read all group settings that user can access |
-| Description | Allows the app to read a list of tenant-level or group-specific group settings objects, without a signed-in user. | Allows the app to read a list of tenant-level or group-specific group settings objects, on behalf of the signed-in user. |
-| AdminConsentRequired | Yes | Yes |
-
----
-
-### GroupSettings.ReadWrite.All
-
-| Category | Application | Delegated |
-|--|--|--|
-| Identifier | 546168c3-1183-4281-9491-fafb24dea37e | c1691a6d-99e2-4cfa-b4b5-9e4d67dc0f36 |
-| DisplayText | Read and write all group settings | Read and write all group settings that user can access |
-| Description | Allows the app to create, read, update, and delete on the list of tenant-level or group-specific group settings objects, without a signed-in user. | Allows the app to create, read, update, and delete on the list of tenant-level or group-specific group settings objects that you have access to in the organization, on behalf of the signed-in user. |
-| AdminConsentRequired | Yes | Yes |
-
----
 
 ### HealthMonitoringAlert.Read.All
 
