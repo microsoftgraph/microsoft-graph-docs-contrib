@@ -1,6 +1,6 @@
 ---
 title: "aiAgentEvidence resource type"
-description: "Represents an AI agent entity reported in a security detection alert."
+description: "Represents an AI agent that is reported in the alert as evidence"
 ms.date: 11/02/2025
 author: "ofirBinshtok"
 ms.localizationpriority: medium
