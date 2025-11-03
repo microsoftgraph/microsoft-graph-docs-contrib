@@ -36,7 +36,7 @@ None.
 |incidents | [microsoft.graph.security.incident](security-incident.md) collection | A collection of incidents in Microsoft 365 Defender, each of which is a set of correlated alerts and associated metadata that reflects the story of an attack.|
 |partner| [microsoft.graph.partner.security.partnerSecurity](../resources/partner-security-partnersecurity.md) | A container that safeguards the Microsoft Azure resources of Microsoft Cloud Solution Provider (CSP) partners' customers, including alerts, scores, and all aspects of security. |
 |secureScores | [secureScore](securescore.md) collection | Measurements of tenants' security posture to help protect them from threats. |
-|securityCopilot | [securityCopilot](../resources/security-securitycopilot.md) collection | Represents the resources related to Microsoft Security Copilot. |
+|securityCopilot | [securityCopilot](../resources/securitycopilot.md) collection | Represents the resources related to Microsoft Security Copilot. |
 |securityactions|[securityAction](../resources/securityaction.md) collection|Actions that respond to alerts to block malicious activities.|
 |tiindicators|[tiIndicator](../resources/tiindicator.md) collection|Threat indicators sent to Microsoft that identify malicious activities.|
 |threatSubmission|[security.threatSubmission](../resources/security-threatsubmission.md)|A threat submission sent to Microsoft; for example, a suspicious email threat, URL threat, or file threat.|
