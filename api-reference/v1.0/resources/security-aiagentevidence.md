@@ -30,10 +30,10 @@ Inherits from [alertEvidence](../resources/security-alertevidence.md).
 
 |Member|Description|
 |:-----|:----------|
-|unknown|The plaform value is unknown or not specified.|
-|azureAIFoundry|The plaform value is Azure AI Foundry.|
-|copilotStudio|The plaform value is Copilot Studio.|
-|copilot|The plaform value is Copilot.|
+|unknown|The platform value is unknown or not specified.|
+|azureAIFoundry|The platform value is Azure AI Foundry.|
+|copilotStudio|The platform value is Copilot Studio.|
+|copilot|The platform value is Copilot.|
 |unknownFutureValue|Evolvable enumeration value. Don't use.|
 
 ## Relationships
