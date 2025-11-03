@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the automatic work location for a user. The automatic layer participates in the standard precedence model:
+Update the automatic work location for a [user](../resources/user.md). The automatic layer participates in the standard precedence model:
 
 - Precedence: manual > automatic > scheduled
 - Precision (within the same layer): more precise wins (for example, office + building > office)

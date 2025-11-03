@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Clear the work location signals for a user, including both the manual and automatic layers for the current date.
+Clear the work location signals for a [user](../resources/user.md), including both the manual and automatic layers for the current date.
 
 ## Permissions
 

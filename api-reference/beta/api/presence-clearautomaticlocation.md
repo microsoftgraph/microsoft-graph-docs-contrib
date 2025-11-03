@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Clear the automatic work location signal for a user. After clearing, the user’s final aggregated work location is recomputed according to the precedence rules:
+Clear the automatic work location signal for a [user](../resources/user.md). After clearing, the user’s final aggregated work location is recomputed according to the precedence rules:
 
 - Precedence: manual > automatic > scheduled
 - If a manual location is set, clearing the automatic signal doesn't change the final location (manual still takes precedence).
