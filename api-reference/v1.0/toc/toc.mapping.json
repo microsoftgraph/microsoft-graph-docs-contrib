@@ -1631,8 +1631,7 @@
           "resources": [
             "microsoft.graph.security.healthIssue",
             "microsoft.graph.security.sensor",
-            "microsoft.graph.security.identityAccounts",
-            "microsoft.graph.security.user"
+            "microsoft.graph.security.identityAccounts"
           ],
           "complexTypes": [
             "microsoft.graph.security.deploymentAccessKeyType",
