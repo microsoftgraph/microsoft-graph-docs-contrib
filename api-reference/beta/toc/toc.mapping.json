@@ -1500,7 +1500,7 @@
                     "privilegedAccessGroupAssignmentSchedule",
                     "privilegedAccessGroupAssignmentScheduleInstance",
                     "privilegedAccessGroupEligibilityScheduleRequest",
-                    "privilegedAccessGroupEligibilitySchedule",
+                    "groupResource",
                     "privilegedAccessGroupEligibilityScheduleInstance",
                     "unifiedRoleManagementPolicy",
                     "unifiedRoleManagementPolicyRule",
