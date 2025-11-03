@@ -5433,3 +5433,26 @@ Possible values for user account types (group membership), per Windows definitio
 |group|
 |sts|
 |unknownFutureValue|
+
+### sharePointIdentityMappingGroupType values 
+
+|Member|
+|:---|
+|none|
+|regularGroup|
+|m365Group|
+|unknownFutureValue|
+
+# Microsoft Graph enumeration values
+
+Namespace: microsoft.graph
+
+### sharePointIdentityMappingUserType values 
+
+|Member|
+|:---|
+|none|
+|regularUser|
+|adminUser|
+|guestUser|
+|unknownFutureValue|

@@ -4827,7 +4827,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "solutionsRoot",
           "ChangeType": "Addition",
-          "Description": "Added the [solutionsRoot](https://learn.microsoft.com/en-us/graph/api/resources/solutionsRoot?view=graph-rest-beta) resource.",
+          "Description": "Updated the [solutionsRoot](https://learn.microsoft.com/en-us/graph/api/resources/solutionsRoot?view=graph-rest-beta) resource.",
           "Target": "solutionsRoot"
         }
       ],

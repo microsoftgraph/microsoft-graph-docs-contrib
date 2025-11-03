@@ -1,6 +1,6 @@
 ---
 title: "solutionsRoot resource type"
-description: "The entry point for Microsoft Bookings, virtual event webinar, and business scenario APIs."
+description: "The entry point for Microsoft Bookings, virtual event webinar, business scenario, and SharePoint migration APIs."
 author: "vikailas"
 ms.localizationpriority: medium
 ms.subservice: "non-product-specific"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The entry point for [Microsoft Bookings](booking-api-overview.md), [virtual event](virtualevent.md), and [business scenario](businessscenario-overview.md) APIs.
+The entry point for [Microsoft Bookings](booking-api-overview.md), [virtual event](virtualevent.md), [business scenario](businessscenario-overview.md), and [SharePoint migration](sharepointroot.md) APIs.
 
 All Microsoft Graph calls to resources under `/solutions` use the following service root URL:
 
@@ -64,6 +64,13 @@ To access approval items, use the following syntax:
 https://graph.microsoft.com/{version}/solutions/approval/approvalItems
 ```
 
+To access SharePoint cross-organization migration mappings, use the following syntax:
+
+<!-- { "blockType": "ignored" } -->
+```http
+https://graph.microsoft.com/{version}/solutions/sharePoint/migrations/crossOrganizationGroupMappings
+https://graph.microsoft.com/{version}/solutions/sharePoint/migrations/crossOrganizationUserMappings
+```
 
 ## Methods
 None.
@@ -79,6 +86,7 @@ None.
 |businessScenarios|[businessScenario](businessscenario.md) collection | A collection of scenarios that contain relevant data and configuration information for a specific problem domain.|
 |virtualEvents|[virtualEventsRoot](virtualeventsroot.md) collection | A collection of virtual events.|
 |approvalItems|[approvalItem](approvalitem.md) collection | A collection of approval items.|
+|sharePoint|[sharePointRoot](sharepointroot.md) | Container for SharePoint resources including cross-organization migration operations.|
 
 ## JSON representation
 The following JSON representation shows the resource type.
