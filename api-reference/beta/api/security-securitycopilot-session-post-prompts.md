@@ -54,7 +54,7 @@ You can specify the following properties when creating a **prompt**.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|type|microsoft.graph.security.securitycopilot.promptType|The type of input prompts. The possible values are: `unknown`, `context`, `prompt`, `skill`, `feedback`, `unknownFutureValue`. **Only `prompt` is currently supported.** |
+|type|microsoft.graph.security.securityCopilot.promptType|The type of input prompts. The possible values are: `unknown`, `context`, `prompt`, `skill`, `feedback`, `unknownFutureValue`. **Only `prompt` is currently supported.** |
 |content|String|Input text when used with type `prompt` for evaluation. Required for AI evaluation.|
 
 

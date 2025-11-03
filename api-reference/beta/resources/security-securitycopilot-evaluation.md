@@ -36,7 +36,7 @@ Inherits from [entity](../resources/entity.md)
 |lastModifiedDateTime|DateTimeOffset|Evaluation modified time.|
 |result|[microsoft.graph.security.securityCopilot.evaluationResult](../resources/security-securitycopilot-evaluationresult.md)|Evaluation results collection.|
 |runStartDateTime|DateTimeOffset|Evaluation Run start time.|
-|state|microsoft.graph.security.securitycopilot.evaluationState|Evaluation state during poll. The possible values are: `unknown`, `created`, `running`, `completed`, `cancelled`, `pending`, `deferred`, `waitingForInput`, `unknownFutureValue`.|
+|state|microsoft.graph.security.securityCopilot.evaluationState|Evaluation state during poll. The possible values are: `unknown`, `created`, `running`, `completed`, `cancelled`, `pending`, `deferred`, `waitingForInput`, `unknownFutureValue`.|
 
 ## Relationships
 None.
