@@ -20,19 +20,17 @@ This is an abstract type.
 Inherits from [entity](../resources/entity.md)
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List workspaces](../api/securitycopilot-list-workspaces.md)|[workspace](../resources/security-securitycopilot-workspace.md) collection|Get a list of the workspace objects and their properties.|
+None.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Represents the unique ID of the Security Copilot workspace. Inherits from [entity](../resources/entity.md)|
+|id|String|Represents the unique ID of the Security Copilot workspace. Inherited from [entity](../resources/entity.md)|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|workspaces|[workspace](../resources/security-securitycopilot-workspace.md) collection|References the workspace object.|
+|workspaces|[workspace](../resources/security-securitycopilot-workspace.md) collection|References a workspace in Security Copilot.|
 
 ## JSON representation
 The following JSON representation shows the resource type.
@@ -45,7 +43,8 @@ The following JSON representation shows the resource type.
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.securityCopilot"
+  "@odata.type": "#microsoft.graph.securityCopilot",
+  "id": "String (identifier)"
 }
 ```
 

@@ -1,16 +1,16 @@
 ---
-title: "Security.security copilot enum values"
-description: "Microsoft Graph security.security copilot enumeration values"
+title: "Security.securityCopilot enum values"
+description: "Microsoft Graph security.securityCopilot enumeration values"
 author: "spunukol"
-ms.date: 07/17/2025
+ms.date: 11/03/2025
 ms.localizationpriority: medium
 ms.subservice: "security-copilot"
 doc_type: enumTypes
 ---
 
-# Microsoft Graph security.security copilot enumeration values
+# Microsoft Graph security.securityCopilot enumeration values
 
-Namespace: microsoft.graph.security.securitycopilot
+Namespace: microsoft.graph.security.securityCopilot
 
 ### evaluationResultType values 
 
@@ -132,6 +132,6 @@ Namespace: microsoft.graph.security.securitycopilot
 
 <!-- {
   "type": "#page.annotation",
-  "namespace": "microsoft.graph.security.securitycopilot"
+  "namespace": "microsoft.graph.security.securityCopilot"
 }
 -->

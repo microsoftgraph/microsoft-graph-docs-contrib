@@ -5,7 +5,7 @@ ms.localizationpriority: high
 author: "preetikr"
 doc_type: conceptualPageType
 ms.subservice: "security"
-ms.date: 10/31/2024
+ms.date: 11/03/2025
 ---
 
 # Use the Microsoft Graph security API
@@ -106,7 +106,7 @@ Alerts from the following security providers are available via the legacy **aler
 
 > **Note:** New providers are continuously onboarding to the Microsoft Graph security ecosystem. To request new providers or for extended support from existing providers, [file an issue in the Microsoft Graph security GitHub repo](https://github.com/microsoftgraph/security-api-solutions/issues/new).
 
-\* File issue: Alert status gets updated across Microsoft Graph security API integrated applications but isn't reflected in the provider’s management experience.
+\* File issue: Alert status gets updated across Microsoft Graph security API integrated applications but isn't reflected in the provider's management experience.
 
 \*\* Microsoft Defender for Endpoint requires additional [user roles](/windows/security/threat-protection/microsoft-defender-atp/user-roles) to those required by the Microsoft Graph security API. Only the users in both Microsoft Defender for Endpoint and Microsoft Graph security API roles can have access to the Microsoft Defender for Endpoint data. Because application-only authentication isn't limited by this, we recommend that you use an application-only authentication token.
 
@@ -175,14 +175,13 @@ Security Copilot transforms natural language prompts into intelligent, actionabl
 
 The Security Copilot resource and its APIs allow developers to embed Security Copilot chat experiences into custom portals or applications. It supports creating sessions, prompts, evaluations using the available plugins, enabling tailored AI-driven security workflows.
 
-- [sessions](../resources/security-securitycopilot-session.md) API is used to create a session within Security Copilot. Each session will store any AI prompts and evaluation results generated. Sessions can only be viewed by the user who created the session.
-- [prompts](../resources/security-securitycopilot-prompt.md) API is used to create one or more prompts within a session. Creating a prompt does not generate an automatic AI result. The evaluation API is required to start processing the prompt.
-- [evaluations](../resources/security-securitycopilot-evaluation.md) API is used to create an evalation. AI processing begins as soon as an evaluation is created. Creation of an evaluation using the prompt starts the AI reasoning. The API allows you to poll for the intermediary results until the AI evaluation is complete.
+- A [session](../resources/security-securitycopilot-session.md) in Security Copilot stores any AI prompts and evaluation results generated. Sessions can only be viewed by the user who created the session.
+- You can have one or more [prompt](../resources/security-securitycopilot-prompt.md) objects within a session. Creating a prompt does not generate an automatic AI result. The evaluation API is required to start processing the prompt.
+- AI processing begins as soon as an [evaluation](../resources/security-securitycopilot-evaluation.md) is created. Creation of an evaluation using the prompt starts the AI reasoning. The API allows you to poll for the intermediary results until the AI evaluation is complete.
 
-For more information, see
-- [Security Copilot primary use cases](https://learn.microsoft.com/copilot/security/use-case-role-overview)
-- [Plugins in Microsoft Security Copilot](https://learn.microsoft.com/copilot/security/plugin-overview)
-- [Usage and billing in Microsoft Security Copilot](https://learn.microsoft.com/copilot/security/manage-usage)
+For more information, see:
+- [Security Copilot primary use cases](/copilot/security/use-case-role-overview)
+- [Usage and billing in Microsoft Security Copilot](/copilot/security/manage-usage)
 
 ## Records management
 

@@ -2,7 +2,7 @@
 title: "plugin resource type"
 description: "Represents a plugin in Security Copilot."
 author: "spunukol"
-ms.date: 07/17/2025
+ms.date: 11/03/2025
 ms.localizationpriority: medium
 ms.subservice: "security-copilot"
 doc_type: resourcePageType
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security.securityCopilot
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a plugin in Security Copilot. For more information, see [Plugins in Microsoft Security Copilot](https://learn.microsoft.com/copilot/security/plugin-overview)).
+Represents a plugin in Security Copilot. For more information, see [Plugins in Microsoft Security Copilot](/copilot/security/plugin-overview).
 
 
 ## Methods

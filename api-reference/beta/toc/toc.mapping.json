@@ -2853,11 +2853,11 @@
         {
           "name": "Security Copilot",
           "resources": [
-            "microsoft.graph.security.securitycopilot.evaluation",
-            "microsoft.graph.security.securitycopilot.plugin",
-            "microsoft.graph.security.securitycopilot.prompt",
+            "microsoft.graph.security.securitycopilot.workspace",
             "microsoft.graph.security.securitycopilot.session",
-            "microsoft.graph.security.securitycopilot.workspace"
+            "microsoft.graph.security.securitycopilot.prompt",
+            "microsoft.graph.security.securitycopilot.evaluation",
+            "microsoft.graph.security.securitycopilot.plugin"
           ]
         },
         {
