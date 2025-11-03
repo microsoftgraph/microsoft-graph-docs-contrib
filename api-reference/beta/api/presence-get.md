@@ -121,7 +121,7 @@ Content-Length: 1574
   },
   "workLocation": {
     "workLocationType": "office",
-    "source": "Automatic",
+    "source": "automatic",
     "placeId": "eb706f15-137e-4722-b4d1-b601481d9251"
   },
   "sequenceNumber": "A0129311063"
