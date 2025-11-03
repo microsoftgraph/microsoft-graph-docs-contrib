@@ -14,8 +14,7 @@ Namespace: microsoft.graph.security.securityCopilot
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a session in Security Copilot.
-
+Represents a session within a [workspace](../resources/security-securitycopilot-workspace.md) in Security Copilot.
 
 ## Methods
 |Method|Return type|Description|
@@ -24,8 +23,6 @@ Represents a session in Security Copilot.
 |[Create](../api/security-securitycopilot-workspace-post-sessions.md)|[microsoft.graph.security.securityCopilot.session](../resources/security-securitycopilot-session.md)|Create a new session object.|
 |[Get](../api/security-securitycopilot-session-get.md)|[microsoft.graph.security.securityCopilot.session](../resources/security-securitycopilot-session.md)|Read the properties and relationships of [microsoft.graph.security.securityCopilot.session](../resources/security-securitycopilot-session.md) object.|
 |[Update](../api/security-securitycopilot-session-update.md)|[microsoft.graph.security.securityCopilot.session](../resources/security-securitycopilot-session.md)|Update the properties of a session object.|
-|[List prompts](../api/security-securitycopilot-session-list-prompts.md)|[microsoft.graph.security.securityCopilot.prompt](../resources/security-securitycopilot-prompt.md) collection|Lists the collection of prompts created in each session|
-|[Create prompt](../api/security-securitycopilot-session-post-prompts.md)|[microsoft.graph.security.securityCopilot.prompt](../resources/security-securitycopilot-prompt.md)|Create a new prompt object.|
 
 ## Properties
 |Property|Type|Description|
@@ -33,7 +30,7 @@ Represents a session in Security Copilot.
 |createdDateTime|DateTimeOffset|Created time of the session (UTC)|
 |displayName|String|Display name for the session|
 |id|String|Represents the unique ID of the Security Copilot session. Inherits from [entity](../resources/entity.md) |
-|lastModifiedDateTime|DateTimeOffset|Last modified time of the session (UTC). Updated when displayName changes.|
+|lastModifiedDateTime|DateTimeOffset|Last modified time of the session (UTC). Updated when **displayName** changes.|
 
 ## Relationships
 |Relationship|Type|Description|
