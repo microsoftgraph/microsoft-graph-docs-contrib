@@ -20,6 +20,7 @@ The **alertEvidence** base type and its derived evidence types provide a means t
 - [Mailbox evidence](security-mailboxevidence.md) for the hacked user account with a role of `compromised`.
 
 This resource is the base type for the following evidence types: 
+* [aiAgentEvidence](security-aiagentevidence.md)
 * [amazonResourceEvidence](security-amazonresourceevidence.md)
 * [analyzedMessageEvidence](security-analyzedmessageevidence.md)
 * [azureResourceEvidence](security-azureresourceevidence.md)
@@ -54,7 +55,6 @@ This resource is the base type for the following evidence types:
 * [teamsMessageEvidence](security-teamsmessageevidence.md)
 * [urlEvidence](security-urlevidence.md)
 * [userEvidence](security-userevidence.md)
-* [aiagentEvidence](security-aiagentevidence.md)
 
 ## Properties
 
