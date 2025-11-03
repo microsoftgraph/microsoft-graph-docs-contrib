@@ -1,10 +1,10 @@
 ---
 title: "agentIdentityBlueprintPrincipal resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+description: "Represents an Agent Identity Blueprint principal in a directory. An Agent Identity Blueprint principal is a specialized service principal that serves as the parent blueprint for creating agent identity instances within the Microsoft Entra ID ecosystem."
+author: "zallison22"
 ms.date: 10/27/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice: "entra-applications"
 doc_type: resourcePageType
 ---
 
@@ -14,7 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents an Agent Identity Blueprint principal in a directory. An Agent Identity Blueprint principal is a specialized service principal that serves as the parent blueprint for creating agent identity instances within the Microsoft Entra ID ecosystem. 
+
+This resource enables agentic applications to operate through a 1:N relationship where a single Agent Identity Blueprint can spawn multiple child [agentIdentity](../resources/agentidentity.md) instances, each with properly scoped permissions for autonomous use cases. Agent Identity Blueprint principals facilitate enforcement of least privilege principles, ephemeral consent, and modular permission schemes for agentic workflows.
 
 
 Inherits from [servicePrincipal](../resources/serviceprincipal.md).
@@ -29,184 +31,101 @@ This resource is an open type.
 |[Get](../api/agentidentityblueprintprincipal-get.md)|[agentIdentityBlueprintPrincipal](../resources/agentidentityblueprintprincipal.md)|Read the properties and relationships of [agentIdentityBlueprintPrincipal](../resources/agentidentityblueprintprincipal.md) object.|
 |[Update](../api/agentidentityblueprintprincipal-update.md)|[agentIdentityBlueprintPrincipal](../resources/agentidentityblueprintprincipal.md)|Update the properties of an agentIdentityBlueprintPrincipal object.|
 |[Delete](../api/riskyagentidentityblueprintprincipal-delete-agentidentityblueprintprincipal.md)|None|Delete an agentIdentityBlueprintPrincipal object.|
-|[extendLifetime](../api/agentidentityblueprintprincipal-extendlifetime.md)|[servicePrincipal](../resources/serviceprincipal.md)|**TODO: Add Description**|
-|[createPasswordSingleSignOnCredentials](../api/agentidentityblueprintprincipal-createpasswordsinglesignoncredentials.md)|[passwordSingleSignOnCredentialSet](../resources/passwordsinglesignoncredentialset.md)|**TODO: Add Description**|
-|[getPasswordSingleSignOnCredentials](../api/agentidentityblueprintprincipal-getpasswordsinglesignoncredentials.md)|[passwordSingleSignOnCredentialSet](../resources/passwordsinglesignoncredentialset.md)|**TODO: Add Description**|
-|[deletePasswordSingleSignOnCredentials](../api/agentidentityblueprintprincipal-deletepasswordsinglesignoncredentials.md)|None|**TODO: Add Description**|
-|[updatePasswordSingleSignOnCredentials](../api/agentidentityblueprintprincipal-updatepasswordsinglesignoncredentials.md)|None|**TODO: Add Description**|
-|[addTokenSigningCertificate](../api/agentidentityblueprintprincipal-addtokensigningcertificate.md)|[selfSignedCertificate](../resources/selfsignedcertificate.md)|**TODO: Add Description**|
-|[permanentDelete](../api/agentidentityblueprintprincipal-permanentdelete.md)|None|**TODO: Add Description**|
-|[revokeTokens](../api/agentidentityblueprintprincipal-revoketokens.md)|Boolean|**TODO: Add Description**|
-|[extendLifecycle](../api/agentidentityblueprintprincipal-extendlifecycle.md)|None|**TODO: Add Description**|
-|[List appManagementPolicies](../api/agentidentityblueprintprincipal-list-appmanagementpolicies.md)|[appManagementPolicy](../resources/appmanagementpolicy.md) collection|**TODO: Add a useful description.**|
-|[Add appManagementPolicy](../api/agentidentityblueprintprincipal-post-appmanagementpolicies.md)|[appManagementPolicy](../resources/appmanagementpolicy.md)|Add appManagementPolicies by posting to the appManagementPolicies collection.|
-|[Remove appManagementPolicies](../api/agentidentityblueprintprincipal-delete-appmanagementpolicies.md)|None|Remove an [appManagementPolicy](../resources/appmanagementpolicy.md) object.|
-|[List appRoleAssignedTo](../api/agentidentityblueprintprincipal-list-approleassignedto.md)|[appRoleAssignment](../resources/approleassignment.md) collection|**TODO: Add a useful description.**|
-|[Create appRoleAssignment](../api/agentidentityblueprintprincipal-post-approleassignedto.md)|[appRoleAssignment](../resources/approleassignment.md)|Create a new appRoleAssignment object.|
-|[List appRoleAssignments](../api/agentidentityblueprintprincipal-list-approleassignments.md)|[appRoleAssignment](../resources/approleassignment.md) collection|**TODO: Add a useful description.**|
-|[Create appRoleAssignment](../api/agentidentityblueprintprincipal-post-approleassignments.md)|[appRoleAssignment](../resources/approleassignment.md)|Create a new appRoleAssignment object.|
-|[List servicePrincipalAuthorization](../api/agentidentityblueprintprincipal-list-authorization.md)|[servicePrincipalAuthorization](../resources/serviceprincipalauthorization.md) collection|**TODO: Add a useful description.**|
-|[Create servicePrincipalAuthorization](../api/agentidentityblueprintprincipal-post-authorization.md)|[servicePrincipalAuthorization](../resources/serviceprincipalauthorization.md)|Create a new servicePrincipalAuthorization object.|
-|[List claimsMappingPolicies](../api/agentidentityblueprintprincipal-list-claimsmappingpolicies.md)|[claimsMappingPolicy](../resources/claimsmappingpolicy.md) collection|**TODO: Add a useful description.**|
-|[Add claimsMappingPolicy](../api/agentidentityblueprintprincipal-post-claimsmappingpolicies.md)|[claimsMappingPolicy](../resources/claimsmappingpolicy.md)|Add claimsMappingPolicies by posting to the claimsMappingPolicies collection.|
-|[Remove claimsMappingPolicies](../api/agentidentityblueprintprincipal-delete-claimsmappingpolicies.md)|None|Remove a [claimsMappingPolicy](../resources/claimsmappingpolicy.md) object.|
-|[List customClaimsPolicy](../api/agentidentityblueprintprincipal-list-claimspolicy.md)|[customClaimsPolicy](../resources/customclaimspolicy.md) collection|**TODO: Add a useful description.**|
-|[Create customClaimsPolicy](../api/agentidentityblueprintprincipal-post-claimspolicy.md)|[customClaimsPolicy](../resources/customclaimspolicy.md)|Create a new customClaimsPolicy object.|
-|[List createdObjects](../api/agentidentityblueprintprincipal-list-createdobjects.md)|[directoryObject](../resources/directoryobject.md) collection|**TODO: Add a useful description.**|
-|[Add createdObjects](../api/agentidentityblueprintprincipal-post-createdobjects.md)|[directoryObject](../resources/directoryobject.md)|Add createdObjects by posting to the createdObjects collection.|
-|[Remove createdObjects](../api/agentidentityblueprintprincipal-delete-createdobjects.md)|None|Remove a [directoryObject](../resources/directoryobject.md) object.|
-|[List delegatedPermissionClassifications](../api/agentidentityblueprintprincipal-list-delegatedpermissionclassifications.md)|[delegatedPermissionClassification](../resources/delegatedpermissionclassification.md) collection|**TODO: Add a useful description.**|
-|[Create delegatedPermissionClassification](../api/agentidentityblueprintprincipal-post-delegatedpermissionclassifications.md)|[delegatedPermissionClassification](../resources/delegatedpermissionclassification.md)|Create a new delegatedPermissionClassification object.|
-|[List endpoints](../api/agentidentityblueprintprincipal-list-endpoints.md)|[endpoint](../resources/endpoint.md) collection|**TODO: Add a useful description.**|
-|[Create endpoint](../api/agentidentityblueprintprincipal-post-endpoints.md)|[endpoint](../resources/endpoint.md)|Create a new endpoint object.|
-|[List federatedIdentityCredentials](../api/agentidentityblueprintprincipal-list-federatedidentitycredentials.md)|[federatedIdentityCredential](../resources/federatedidentitycredential.md) collection|**TODO: Add a useful description.**|
-|[Create federatedIdentityCredential](../api/agentidentityblueprintprincipal-post-federatedidentitycredentials.md)|[federatedIdentityCredential](../resources/federatedidentitycredential.md)|Create a new federatedIdentityCredential object.|
-|[List homeRealmDiscoveryPolicies](../api/agentidentityblueprintprincipal-list-homerealmdiscoverypolicies.md)|[homeRealmDiscoveryPolicy](../resources/homerealmdiscoverypolicy.md) collection|**TODO: Add a useful description.**|
-|[Add homeRealmDiscoveryPolicy](../api/agentidentityblueprintprincipal-post-homerealmdiscoverypolicies.md)|[homeRealmDiscoveryPolicy](../resources/homerealmdiscoverypolicy.md)|Add homeRealmDiscoveryPolicies by posting to the homeRealmDiscoveryPolicies collection.|
-|[Remove homeRealmDiscoveryPolicies](../api/agentidentityblueprintprincipal-delete-homerealmdiscoverypolicies.md)|None|Remove a [homeRealmDiscoveryPolicy](../resources/homerealmdiscoverypolicy.md) object.|
-|[List identities](../api/agentidentityblueprintprincipal-list-identities.md)|[agentIdentity](../resources/agentidentity.md) collection|**TODO: Add a useful description.**|
-|[Add agentIdentity](../api/agentidentityblueprintprincipal-post-identities.md)|[agentIdentity](../resources/agentidentity.md)|Add identities by posting to the identities collection.|
-|[Remove identities](../api/agentidentityblueprintprincipal-delete-identities.md)|None|Remove an [agentIdentity](../resources/agentidentity.md) object.|
-|[List licenseDetails](../api/agentidentityblueprintprincipal-list-licensedetails.md)|[licenseDetails](../resources/licensedetails.md) collection|**TODO: Add a useful description.**|
-|[Create licenseDetails](../api/agentidentityblueprintprincipal-post-licensedetails.md)|[licenseDetails](../resources/licensedetails.md)|Create a new licenseDetails object.|
-|[List memberOf](../api/agentidentityblueprintprincipal-list-memberof.md)|[directoryObject](../resources/directoryobject.md) collection|**TODO: Add a useful description.**|
-|[Add memberOf](../api/agentidentityblueprintprincipal-post-memberof.md)|[directoryObject](../resources/directoryobject.md)|Add memberOf by posting to the memberOf collection.|
-|[Remove memberOf](../api/agentidentityblueprintprincipal-delete-memberof.md)|None|Remove a [directoryObject](../resources/directoryobject.md) object.|
-|[List oauth2PermissionGrants](../api/agentidentityblueprintprincipal-list-oauth2permissiongrants.md)|[oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) collection|**TODO: Add a useful description.**|
-|[Add oAuth2PermissionGrant](../api/agentidentityblueprintprincipal-post-oauth2permissiongrants.md)|[oAuth2PermissionGrant](../resources/oauth2permissiongrant.md)|Add oauth2PermissionGrants by posting to the oauth2PermissionGrants collection.|
-|[Remove oauth2PermissionGrants](../api/agentidentityblueprintprincipal-delete-oauth2permissiongrants.md)|None|Remove an [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) object.|
-|[List ownedObjects](../api/agentidentityblueprintprincipal-list-ownedobjects.md)|[directoryObject](../resources/directoryobject.md) collection|**TODO: Add a useful description.**|
-|[Add ownedObjects](../api/agentidentityblueprintprincipal-post-ownedobjects.md)|[directoryObject](../resources/directoryobject.md)|Add ownedObjects by posting to the ownedObjects collection.|
-|[Remove ownedObjects](../api/agentidentityblueprintprincipal-delete-ownedobjects.md)|None|Remove a [directoryObject](../resources/directoryobject.md) object.|
-|[List owners](../api/agentidentityblueprintprincipal-list-owners.md)|[directoryObject](../resources/directoryobject.md) collection|**TODO: Add a useful description.**|
-|[Add owners](../api/agentidentityblueprintprincipal-post-owners.md)|[directoryObject](../resources/directoryobject.md)|Add owners by posting to the owners collection.|
-|[Remove owners](../api/agentidentityblueprintprincipal-delete-owners.md)|None|Remove a [directoryObject](../resources/directoryobject.md) object.|
-|[List permissionGrantPreApprovalPolicies](../api/agentidentityblueprintprincipal-list-permissiongrantpreapprovalpolicies.md)|[permissionGrantPreApprovalPolicy](../resources/permissiongrantpreapprovalpolicy.md) collection|**TODO: Add a useful description.**|
-|[Add permissionGrantPreApprovalPolicy](../api/agentidentityblueprintprincipal-post-permissiongrantpreapprovalpolicies.md)|[permissionGrantPreApprovalPolicy](../resources/permissiongrantpreapprovalpolicy.md)|Add permissionGrantPreApprovalPolicies by posting to the permissionGrantPreApprovalPolicies collection.|
-|[Remove permissionGrantPreApprovalPolicies](../api/agentidentityblueprintprincipal-delete-permissiongrantpreapprovalpolicies.md)|None|Remove a [permissionGrantPreApprovalPolicy](../resources/permissiongrantpreapprovalpolicy.md) object.|
-|[List policies](../api/agentidentityblueprintprincipal-list-policies.md)|[directoryObject](../resources/directoryobject.md) collection|**TODO: Add a useful description.**|
-|[Add policies](../api/agentidentityblueprintprincipal-post-policies.md)|[directoryObject](../resources/directoryobject.md)|Add policies by posting to the policies collection.|
-|[Remove policies](../api/agentidentityblueprintprincipal-delete-policies.md)|None|Remove a [directoryObject](../resources/directoryobject.md) object.|
-|[List remoteDesktopSecurityConfiguration](../api/agentidentityblueprintprincipal-list-remotedesktopsecurityconfiguration.md)|[remoteDesktopSecurityConfiguration](../resources/remotedesktopsecurityconfiguration.md) collection|**TODO: Add a useful description.**|
-|[Create remoteDesktopSecurityConfiguration](../api/agentidentityblueprintprincipal-post-remotedesktopsecurityconfiguration.md)|[remoteDesktopSecurityConfiguration](../resources/remotedesktopsecurityconfiguration.md)|Create a new remoteDesktopSecurityConfiguration object.|
-|[List principalBoundRoleManagement](../api/agentidentityblueprintprincipal-list-rolemanagement.md)|[principalBoundRoleManagement](../resources/principalboundrolemanagement.md) collection|**TODO: Add a useful description.**|
-|[Create principalBoundRoleManagement](../api/agentidentityblueprintprincipal-post-rolemanagement.md)|[principalBoundRoleManagement](../resources/principalboundrolemanagement.md)|Create a new principalBoundRoleManagement object.|
-|[List securedExternalData](../api/agentidentityblueprintprincipal-list-securedexternaldata.md)|[securedExternalData](../resources/securedexternaldata.md) collection|**TODO: Add a useful description.**|
-|[Create securedExternalData](../api/agentidentityblueprintprincipal-post-securedexternaldata.md)|[securedExternalData](../resources/securedexternaldata.md)|Create a new securedExternalData object.|
-|[List sponsors](../api/agentidentityblueprintprincipal-list-sponsors.md)|[directoryObject](../resources/directoryobject.md) collection|**TODO: Add a useful description.**|
+|[createPasswordSingleSignOnCredentials](../api/agentidentityblueprintprincipal-createpasswordsinglesignoncredentials.md)|[passwordSingleSignOnCredentialSet](../resources/passwordsinglesignoncredentialset.md)|Create a credential set for the user or group specified in the body.|
+|[getPasswordSingleSignOnCredentials](../api/agentidentityblueprintprincipal-getpasswordsinglesignoncredentials.md)|[passwordSingleSignOnCredentialSet](../resources/passwordsinglesignoncredentialset.md)|Get a credential set for the user or group specified in the body.|
+|[deletePasswordSingleSignOnCredentials](../api/agentidentityblueprintprincipal-deletepasswordsinglesignoncredentials.md)|None|Delete a credential set for the user or group specified in the body.|
+|[updatePasswordSingleSignOnCredentials](../api/agentidentityblueprintprincipal-updatepasswordsinglesignoncredentials.md)|None|Update a credential set for the user or group specified in the body.|
+|[addTokenSigningCertificate](../api/agentidentityblueprintprincipal-addtokensigningcertificate.md)|[selfSignedCertificate](../resources/selfsignedcertificate.md)|Add a self-signed certificate to the agent identity blueprint principal for token signing.|
+|[List appRoleAssignedTo](../api/agentidentityblueprintprincipal-list-approleassignedto.md)|[appRoleAssignment](../resources/approleassignment.md) collection|Get the users, groups, and agent identities assigned app roles for this agent identity blueprint principal.|
+|[Add appRoleAssignedTo](../api/agentidentityblueprintprincipal-post-approleassignedto.md)|[appRoleAssignment](../resources/approleassignment.md)|Assign an app role for this agent identity blueprint principal to a user, group, or service principal.|
+|[Remove appRoleAssignedTo](../api/agentidentityblueprintprincipal-delete-approleassignedto.md)|None|Remove an app role assignment for this agent identity blueprint principal from a user, group, or service principal.|
+|[List appRoleAssignments](../api/agentidentityblueprintprincipal-list-approleassignments.md)|[appRoleAssignment](../resources/approleassignment.md) collection|Get the app roles that this agent identity blueprint principal is assigned.|
+|[Add appRoleAssignment](../api/agentidentityblueprintprincipal-post-approleassignments.md)|[appRoleAssignment](../resources/approleassignment.md)|Assign an app role to this agent identity blueprint principal.|
+|[Remove appRoleAssignment](../api/agentidentityblueprintprincipal-delete-approleassignments.md)|None|Remove an app role assignment from this agent identity blueprint principal.|
+|[List delegatedPermissionClassifications](../api/agentidentityblueprintprincipal-list-delegatedpermissionclassifications.md)|[delegatedPermissionClassification](../resources/delegatedpermissionclassification.md) collection|Get the permission classifications for delegated permissions exposed by this agent identity blueprint principal.|
+|[Add delegatedPermissionClassification](../api/agentidentityblueprintprincipal-post-delegatedpermissionclassifications.md)|[delegatedPermissionClassification](../resources/delegatedpermissionclassification.md)|Add a permission classification for a delegated permission exposed by this agent identity blueprint principal.|
+|[Remove delegatedPermissionClassification](../api/agentidentityblueprintprincipal-delete-delegatedpermissionclassifications.md)|None|Remove a permission classification for a delegated permission exposed by this agent identity blueprint principal.|
+|[List memberOf](../api/agentidentityblueprintprincipal-list-memberof.md)|[directoryObject](../resources/directoryobject.md) collection|Get the groups that this agent identity blueprint principal is a direct member of.|
+|[List oauth2PermissionGrants](../api/agentidentityblueprintprincipal-list-oauth2permissiongrants.md)|[oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) collection|Get the delegated permission grants authorizing this agent identity blueprint principal to access an API on behalf of a signed-in user.|
+|[List ownedObjects](../api/agentidentityblueprintprincipal-list-ownedobjects.md)|[directoryObject](../resources/directoryobject.md) collection|Get directory objects owned by this agent identity blueprint principal.|
+|[List owners](../api/agentidentityblueprintprincipal-list-owners.md)|[directoryObject](../resources/directoryobject.md) collection|Get the owners of this agent identity blueprint principal.|
+|[Add owners](../api/agentidentityblueprintprincipal-post-owners.md)|[directoryObject](../resources/directoryobject.md)|Assign an owner to this agent identity blueprint principal.|
+|[Remove owners](../api/agentidentityblueprintprincipal-delete-owners.md)|None|Remove an owner from this agent identity blueprint principal.|
+|[List createdObjects](../api/agentidentityblueprintprincipal-list-createdobjects.md)|[directoryObject](../resources/directoryobject.md) collection|Get directory objects created by this agent identity blueprint principal.|
+|[List sponsors](../api/agentidentityblueprintprincipal-list-sponsors.md)|[directoryObject](../resources/directoryobject.md) collection|Get the sponsors for this agent identity blueprint principal.|
 |[Add sponsors](../api/agentidentityblueprintprincipal-post-sponsors.md)|[directoryObject](../resources/directoryobject.md)|Add sponsors by posting to the sponsors collection.|
 |[Remove sponsors](../api/agentidentityblueprintprincipal-delete-sponsors.md)|None|Remove a [directoryObject](../resources/directoryobject.md) object.|
-|[List synchronization](../api/agentidentityblueprintprincipal-list-synchronization.md)|[synchronization](../resources/synchronization.md) collection|**TODO: Add a useful description.**|
-|[Create synchronization](../api/agentidentityblueprintprincipal-post-synchronization.md)|[synchronization](../resources/synchronization.md)|Create a new synchronization object.|
-|[List tokenIssuancePolicies](../api/agentidentityblueprintprincipal-list-tokenissuancepolicies.md)|[tokenIssuancePolicy](../resources/tokenissuancepolicy.md) collection|**TODO: Add a useful description.**|
-|[Add tokenIssuancePolicy](../api/agentidentityblueprintprincipal-post-tokenissuancepolicies.md)|[tokenIssuancePolicy](../resources/tokenissuancepolicy.md)|Add tokenIssuancePolicies by posting to the tokenIssuancePolicies collection.|
-|[Remove tokenIssuancePolicies](../api/agentidentityblueprintprincipal-delete-tokenissuancepolicies.md)|None|Remove a [tokenIssuancePolicy](../resources/tokenissuancepolicy.md) object.|
-|[List tokenLifetimePolicies](../api/agentidentityblueprintprincipal-list-tokenlifetimepolicies.md)|[tokenLifetimePolicy](../resources/tokenlifetimepolicy.md) collection|**TODO: Add a useful description.**|
-|[Add tokenLifetimePolicy](../api/agentidentityblueprintprincipal-post-tokenlifetimepolicies.md)|[tokenLifetimePolicy](../resources/tokenlifetimepolicy.md)|Add tokenLifetimePolicies by posting to the tokenLifetimePolicies collection.|
-|[Remove tokenLifetimePolicies](../api/agentidentityblueprintprincipal-delete-tokenlifetimepolicies.md)|None|Remove a [tokenLifetimePolicy](../resources/tokenlifetimepolicy.md) object.|
-|[List tokenRevocations](../api/agentidentityblueprintprincipal-list-tokenrevocations.md)|[tokenRevocation](../resources/tokenrevocation.md) collection|**TODO: Add a useful description.**|
-|[Create tokenRevocation](../api/agentidentityblueprintprincipal-post-tokenrevocations.md)|[tokenRevocation](../resources/tokenrevocation.md)|Create a new tokenRevocation object.|
-|[List transitiveMemberOf](../api/agentidentityblueprintprincipal-list-transitivememberof.md)|[directoryObject](../resources/directoryobject.md) collection|**TODO: Add a useful description.**|
-|[Add transitiveMemberOf](../api/agentidentityblueprintprincipal-post-transitivememberof.md)|[directoryObject](../resources/directoryobject.md)|Add transitiveMemberOf by posting to the transitiveMemberOf collection.|
-|[Remove transitiveMemberOf](../api/agentidentityblueprintprincipal-delete-transitivememberof.md)|None|Remove a [directoryObject](../resources/directoryobject.md) object.|
-|[List unifiedRoleAssignment](../api/agentidentityblueprintprincipal-list-transitiveroleassignments.md)|[unifiedRoleAssignment](../resources/unifiedroleassignment.md) collection|**TODO: Add a useful description.**|
-|[Add unifiedRoleAssignment](../api/agentidentityblueprintprincipal-post-transitiveroleassignments.md)|[unifiedRoleAssignment](../resources/unifiedroleassignment.md)|Add transitiveRoleAssignments by posting to the transitiveRoleAssignments collection.|
-|[Remove unifiedRoleAssignment](../api/agentidentityblueprintprincipal-delete-transitiveroleassignments.md)|None|Remove an [unifiedRoleAssignment](../resources/unifiedroleassignment.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|accountEnabled|Boolean|**TODO: Add Description** Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
-|addIns|[addIn](../resources/addin.md) collection|**TODO: Add Description** Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
-|alternativeNames|String collection|**TODO: Add Description** Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
-|api|[apiServicePrincipal](../resources/apiserviceprincipal.md)|**TODO: Add Description** Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
-|appCategory|appCategoryState|**TODO: Add Description** Inherited from [servicePrincipal](../resources/serviceprincipal.md). The possible values are: `mdm`, `roamingSettingsSync`, `vpn`, `p2p`, `unknownFutureValue`.|
-|appData|String|**TODO: Add Description** Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
-|appDescription|String|**TODO: Add Description** Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
-|appDisplayName|String|**TODO: Add Description** Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
-|appId|String|**TODO: Add Description** Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
-|applicationTemplateId|String|**TODO: Add Description** Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
-|appMetadata|[appMetadata](../resources/appmetadata.md)|**TODO: Add Description** Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
-|appOwnerOrganizationId|Guid|**TODO: Add Description** Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
-|appRoleAssignmentRequired|Boolean|**TODO: Add Description** Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
-|appRoles|[appRole](../resources/approle.md) collection|**TODO: Add Description** Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
-|assignmentRequiredForPrincipalTypes|assignmentRequiredForPrincipalTypes|**TODO: Add Description** Inherited from [servicePrincipal](../resources/serviceprincipal.md). The possible values are: `none`, `appOnlyClientServicePrincipals`, `usersNotInTenant`, `guestUsers`, `memberUsers`, `unknownFutureValue`.|
-|certification|[certification](../resources/certification.md)|**TODO: Add Description** Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
-|createdByAppId|String|**TODO: Add Description** Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
-|customSecurityAttributes|[customSecurityAttributeValue](../resources/customsecurityattributevalue.md)|**TODO: Add Description** Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
-|deletedDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [directoryObject](../resources/directoryobject.md).|
-|description|String|**TODO: Add Description** Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
-|disabledByMicrosoftStatus|String|**TODO: Add Description** Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
-|displayName|String|**TODO: Add Description** Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
-|errorUrl|String|**TODO: Add Description** Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
-|hasPermissionClassifications|Boolean|**TODO: Add Description** Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
-|homepage|String|**TODO: Add Description** Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md). Inherits from [entity](../resources/entity.md)|
-|info|[informationalUrl](../resources/informationalurl.md)|**TODO: Add Description** Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
-|isManagementRestricted|Boolean|**TODO: Add Description** Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
-|keyCredentials|[keyCredential](../resources/keycredential.md) collection|**TODO: Add Description** Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
-|lifecycle|[lifecycle](../resources/lifecycle.md)|**TODO: Add Description** Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
-|loginUrl|String|**TODO: Add Description** Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
-|logoutUrl|String|**TODO: Add Description** Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
-|managedIdentityResourceId|String|**TODO: Add Description** Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
-|microsoftPolicyGroup|Boolean|**TODO: Add Description** Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
-|notes|String|**TODO: Add Description** Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
-|notificationEmailAddresses|String collection|**TODO: Add Description** Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
-|passwordCredentials|[passwordCredential](../resources/passwordcredential.md) collection|**TODO: Add Description** Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
-|passwordSingleSignOnSettings|[passwordSingleSignOnSettings](../resources/passwordsinglesignonsettings.md)|**TODO: Add Description** Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
-|preferredSingleSignOnMode|String|**TODO: Add Description** Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
-|preferredTokenSigningKeyEndDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
-|preferredTokenSigningKeyThumbprint|String|**TODO: Add Description** Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
-|publishedPermissionScopes|[permissionScope](../resources/permissionscope.md) collection|**TODO: Add Description** Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
-|publisherName|String|**TODO: Add Description** Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
-|replyUrls|String collection|**TODO: Add Description** Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
-|resourceSpecificApplicationPermissions|[resourceSpecificPermission](../resources/resourcespecificpermission.md) collection|**TODO: Add Description** Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
-|samlMetadataUrl|String|**TODO: Add Description** Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
-|samlSingleSignOnSettings|[samlSingleSignOnSettings](../resources/samlsinglesignonsettings.md)|**TODO: Add Description** Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
-|samlSLOBindingType|samlSLOBindingType|**TODO: Add Description** Inherited from [servicePrincipal](../resources/serviceprincipal.md). The possible values are: `httpRedirect`, `httpPost`, `unknownFutureValue`.|
-|servicePrincipalNames|String collection|**TODO: Add Description** Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
-|servicePrincipalType|String|**TODO: Add Description** Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
-|signInAudience|String|**TODO: Add Description** Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
-|tags|String collection|**TODO: Add Description** Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
-|tokenEncryptionKeyId|Guid|**TODO: Add Description** Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
-|tokensRevocationDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
-|verifiedPublisher|[verifiedPublisher](../resources/verifiedpublisher.md)|**TODO: Add Description** Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
+|accountEnabled|Boolean|`true` if the agent identity blueprint principal account is enabled; otherwise, `false`. If set to `false`, then no users are able to sign in to this app, even if they're assigned to it. Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
+|addIns|[addIn](../resources/addin.md) collection|Defines custom behavior that a consuming service can use to call an app in specific contexts. For example, applications that can render file streams may set the addIns property for its "FileHandler" functionality. This lets services like Microsoft 365 call the application in the context of a document the user is working on. Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
+|alternativeNames|String collection|Used to retrieve agent identity blueprint principals by subscription, identify resource group and full resource IDs for managed identities. **Property blocked on Agent Identity Blueprint Principal.** Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
+|appDescription|String|The description exposed by the associated agent identity blueprint. Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
+|appDisplayName|String|The display name exposed by the associated agent identity blueprint. Maximum length is 256 characters. Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
+|appId|String|The unique identifier for the associated agent identity blueprint (its **appId** property). Alternate key. Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
+|applicationTemplateId|String|Unique identifier of the applicationTemplate. Read-only. `null` if the app wasn't created from an application template. **Property blocked on Agent Identity Blueprint Principal.** Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
+|appOwnerOrganizationId|Guid|Contains the tenant ID where the agent identity blueprint is registered. This is applicable only to agent identity blueprint principals backed by applications. Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
+|appRoleAssignmentRequired|Boolean|Specifies whether users or other service principals need to be granted an app role assignment for this agent identity blueprint principal before users can sign in or apps can get tokens. The default value is `false`. Not nullable. Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
+|appRoles|[appRole](../resources/approle.md) collection|The roles exposed by the agent identity blueprintt, which this agent identity blueprint principal represents. For more information, see the **appRoles** property definition on the application entity. Not nullable. Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
+|createdByAppId|String|The unique identifier of the application that created this agent identity blueprint principal. Read-only. Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
+|customSecurityAttributes|[customSecurityAttributeValue](../resources/customsecurityattributevalue.md)|An open complex type that holds the value of a custom security attribute that is assigned to a directory object. Nullable. Returned only on `$select`. Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
+|deletedDateTime|DateTimeOffset|The date and time the agent identity blueprint principal was deleted. Read-only. Inherited from [directoryObject](../resources/directoryobject.md).|
+|description|String|Free text field to provide an internal end-user facing description of the agent identity blueprint principal. End-user portals such MyApps displays the Agent Identity Blueprint description in this field. The maximum allowed size is 1,024 characters. Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
+|disabledByMicrosoftStatus|String|Specifies whether Microsoft has disabled the registered agent identity blueprint. Possible values are: `null` (default value), `NotDisabled`, and `DisabledDueToViolationOfServicesAgreement` (reasons may include suspicious, abusive, or malicious activity, or a violation of the Microsoft Services Agreement). Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
+|displayName|String|The display name for the agent identity blueprint principal. Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
+|errorUrl|String|Deprecated. Don't use. Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
+|homepage|String|Home page or landing page of the agent identity blueprint. Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
+|id|String|The unique identifier for the agent identity blueprint principal. Inherited from [entity](../resources/entity.md). Key. Not nullable. Read-only.|
+|info|[informationalUrl](../resources/informationalurl.md)|Basic profile information of the acquired application such as app's marketing, support, terms of service and privacy statement URLs. The terms of service and privacy statement are surfaced to users through the user consent experience. Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
+|keyCredentials|[keyCredential](../resources/keycredential.md) collection|The collection of key credentials associated with the agent identity blueprint principal. Not nullable. Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
+|loginUrl|String|Specifies the URL where the service provider redirects the user to Microsoft Entra ID to authenticate. Microsoft Entra ID uses the URL to launch the application from Microsoft 365 or the Microsoft Entra My Apps. When blank, Microsoft Entra ID performs IdP-initiated sign-on for applications configured with SAML-based single sign-on. **Property blocked on Agent Identity Blueprint Principal.** Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
+|logoutUrl|String|Specifies the URL that the Microsoft's authorization service uses to sign out a user using OpenId Connect front-channel, back-channel, or SAML sign out protocols. Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
+|notes|String|Free text field to capture information about the agent identity blueprint principal, typically used for operational purposes. Maximum allowed size is 1,024 characters. Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
+|notificationEmailAddresses|String collection|Specifies the list of email addresses where Microsoft Entra ID sends a notification when the active certificate is near the expiration date. This is only for the certificates used to sign the SAML token issued for Microsoft Entra Gallery applications. Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
+|passwordCredentials|[passwordCredential](../resources/passwordcredential.md) collection|The collection of password credentials associated with the agent identity blueprint principal. Not nullable. Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
+|passwordSingleSignOnSettings|[passwordSingleSignOnSettings](../resources/passwordsinglesignonsettings.md)|The collection for settings related to password single sign-on. Use `$select=passwordSingleSignOnSettings` to read the property. Read-only for applicationTemplates except for custom applicationTemplates. Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
+|preferredSingleSignOnMode|String|Specifies the single sign-on mode configured for this agent identity blueprint. Microsoft Entra ID uses the preferred single sign-on mode to launch the agent identity blueprint from Microsoft 365 or the Microsoft Entra My Apps. The supported values are `password`, `saml`, `notSupported`, and `oidc`. Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
+|preferredTokenSigningKeyEndDateTime|DateTimeOffset|Specifies the expiration date of the keyCredential used for token signing, marked by **preferredTokenSigningKeyThumbprint**. Updating this attribute isn't currently supported. Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
+|preferredTokenSigningKeyThumbprint|String|This property can be used on SAML applications (apps that have **preferredSingleSignOnMode** set to `saml`) to control which certificate is used to sign the SAML responses. For applications that aren't SAML, don't write or otherwise rely on this property. **Property blocked on Agent Identity Blueprint Principal.** Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
+|publishedPermissionScopes|[permissionScope](../resources/permissionscope.md) collection|The delegated permissions exposed by the application. For more information, see the **oauth2PermissionScopes** property on the agent identity blueprint entity's **api** property. Not nullable. Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
+|publisherName|String|The name of the Microsoft Entra tenant that published the application. Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
+|replyUrls|String collection|The URLs that user tokens are sent to for sign in with the associated application, or the redirect URIs that OAuth 2.0 authorization codes and access tokens are sent to for the associated application. Not nullable. Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
+|samlMetadataUrl|String|The url where the service exposes SAML metadata for federation. Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
+|samlSingleSignOnSettings|[samlSingleSignOnSettings](../resources/samlsinglesignonsettings.md)|The collection for settings related to saml single sign-on. Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
+|servicePrincipalNames|String collection|Contains the list of **identifiersUris**, copied over from the associated agent identity blueprint. More values can be added to hybrid agent identity blueprint. These values can be used to identify the permissions exposed by this app within Microsoft Entra ID. Not nullable. **Property blocked on Agent Identity Blueprint Principal.** Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
+|servicePrincipalType|String|Identifies if the agent identity blueprint principal represents an application. This is set by Microsoft Entra ID internally. For an agent identity blueprint principal that represents an application this is set as __Application__. Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
+|signInAudience|String|Specifies the Microsoft accounts that are supported for the current agent identity blueprint. Read-only. Supported values are: `AzureADMyOrg`, `AzureADMultipleOrgs`, `AzureADandPersonalMicrosoftAccount`, and `PersonalMicrosoftAccount`. Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
+|tags|String collection|Custom strings that can be used to categorize and identify the agent identity blueprint principal. Not nullable. The value is the union of strings set here and on the associated agent identity blueprint entity's **tags** property. Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
+|tokenEncryptionKeyId|String|Specifies the keyId of a public key from the keyCredentials collection. When configured, Microsoft Entra ID issues tokens for this application encrypted using the key specified by this property. The application code that receives the encrypted token must use the matching private key to decrypt the token before it can be used for the signed-in user. Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
+|verifiedPublisher|[verifiedPublisher](../resources/verifiedpublisher.md)|Specifies the verified publisher of the application that's linked to this agent identity blueprint principal. Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|appManagementPolicies|[appManagementPolicy](../resources/appmanagementpolicy.md) collection|**TODO: Add Description** Inherited from [microsoft.graph.servicePrincipal](../resources/serviceprincipal.md)|
-|appRoleAssignedTo|[appRoleAssignment](../resources/approleassignment.md) collection|**TODO: Add Description** Inherited from [microsoft.graph.servicePrincipal](../resources/serviceprincipal.md)|
-|appRoleAssignments|[appRoleAssignment](../resources/approleassignment.md) collection|**TODO: Add Description** Inherited from [microsoft.graph.servicePrincipal](../resources/serviceprincipal.md)|
-|authorization|[servicePrincipalAuthorization](../resources/serviceprincipalauthorization.md)|**TODO: Add Description** Inherited from [microsoft.graph.servicePrincipal](../resources/serviceprincipal.md)|
-|claimsMappingPolicies|[claimsMappingPolicy](../resources/claimsmappingpolicy.md) collection|**TODO: Add Description** Inherited from [microsoft.graph.servicePrincipal](../resources/serviceprincipal.md)|
-|claimsPolicy|[customClaimsPolicy](../resources/customclaimspolicy.md)|**TODO: Add Description** Inherited from [microsoft.graph.servicePrincipal](../resources/serviceprincipal.md)|
-|createdObjects|[directoryObject](../resources/directoryobject.md) collection|**TODO: Add Description** Inherited from [microsoft.graph.servicePrincipal](../resources/serviceprincipal.md)|
-|delegatedPermissionClassifications|[delegatedPermissionClassification](../resources/delegatedpermissionclassification.md) collection|**TODO: Add Description** Inherited from [microsoft.graph.servicePrincipal](../resources/serviceprincipal.md)|
-|endpoints|[endpoint](../resources/endpoint.md) collection|**TODO: Add Description** Inherited from [microsoft.graph.servicePrincipal](../resources/serviceprincipal.md)|
-|federatedIdentityCredentials|[federatedIdentityCredential](../resources/federatedidentitycredential.md) collection|**TODO: Add Description** Inherited from [microsoft.graph.servicePrincipal](../resources/serviceprincipal.md)|
-|homeRealmDiscoveryPolicies|[homeRealmDiscoveryPolicy](../resources/homerealmdiscoverypolicy.md) collection|**TODO: Add Description** Inherited from [microsoft.graph.servicePrincipal](../resources/serviceprincipal.md)|
-|identities|[agentIdentity](../resources/agentidentity.md) collection|**TODO: Add Description**|
-|licenseDetails|[licenseDetails](../resources/licensedetails.md) collection|**TODO: Add Description** Inherited from [microsoft.graph.servicePrincipal](../resources/serviceprincipal.md)|
-|memberOf|[directoryObject](../resources/directoryobject.md) collection|**TODO: Add Description** Inherited from [microsoft.graph.servicePrincipal](../resources/serviceprincipal.md)|
-|oauth2PermissionGrants|[oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) collection|**TODO: Add Description** Inherited from [microsoft.graph.servicePrincipal](../resources/serviceprincipal.md)|
-|ownedObjects|[directoryObject](../resources/directoryobject.md) collection|**TODO: Add Description** Inherited from [microsoft.graph.servicePrincipal](../resources/serviceprincipal.md)|
-|owners|[directoryObject](../resources/directoryobject.md) collection|**TODO: Add Description** Inherited from [microsoft.graph.servicePrincipal](../resources/serviceprincipal.md)|
-|permissionGrantPreApprovalPolicies|[permissionGrantPreApprovalPolicy](../resources/permissiongrantpreapprovalpolicy.md) collection|**TODO: Add Description** Inherited from [microsoft.graph.servicePrincipal](../resources/serviceprincipal.md)|
-|policies|[directoryObject](../resources/directoryobject.md) collection|**TODO: Add Description** Inherited from [microsoft.graph.servicePrincipal](../resources/serviceprincipal.md)|
-|remoteDesktopSecurityConfiguration|[remoteDesktopSecurityConfiguration](../resources/remotedesktopsecurityconfiguration.md)|**TODO: Add Description** Inherited from [microsoft.graph.servicePrincipal](../resources/serviceprincipal.md)|
-|roleManagement|[principalBoundRoleManagement](../resources/principalboundrolemanagement.md)|**TODO: Add Description** Inherited from [microsoft.graph.servicePrincipal](../resources/serviceprincipal.md)|
-|securedExternalData|[securedExternalData](../resources/securedexternaldata.md) collection|**TODO: Add Description** Inherited from [microsoft.graph.servicePrincipal](../resources/serviceprincipal.md)|
-|sponsors|[directoryObject](../resources/directoryobject.md) collection|**TODO: Add Description**|
-|synchronization|[synchronization](../resources/synchronization.md)|**TODO: Add Description** Inherited from [microsoft.graph.servicePrincipal](../resources/serviceprincipal.md)|
-|tokenIssuancePolicies|[tokenIssuancePolicy](../resources/tokenissuancepolicy.md) collection|**TODO: Add Description** Inherited from [microsoft.graph.servicePrincipal](../resources/serviceprincipal.md)|
-|tokenLifetimePolicies|[tokenLifetimePolicy](../resources/tokenlifetimepolicy.md) collection|**TODO: Add Description** Inherited from [microsoft.graph.servicePrincipal](../resources/serviceprincipal.md)|
-|tokenRevocations|[tokenRevocation](../resources/tokenrevocation.md) collection|**TODO: Add Description** Inherited from [microsoft.graph.servicePrincipal](../resources/serviceprincipal.md)|
-|transitiveMemberOf|[directoryObject](../resources/directoryobject.md) collection|**TODO: Add Description** Inherited from [microsoft.graph.servicePrincipal](../resources/serviceprincipal.md)|
-|transitiveRoleAssignments|[unifiedRoleAssignment](../resources/unifiedroleassignment.md)|**TODO: Add Description** Inherited from [microsoft.graph.servicePrincipal](../resources/serviceprincipal.md)|
+|appManagementPolicies|[appManagementPolicy](../resources/appmanagementpolicy.md) collection|The appManagementPolicy applied to this agent identity blueprint principal. Inherited from [microsoft.graph.servicePrincipal](../resources/serviceprincipal.md)|
+|appRoleAssignedTo|[appRoleAssignment](../resources/approleassignment.md) collection|App role assignments for this agent identity blueprint principal, granted to users, groups, and other service principals. Supports `$expand`. Inherited from [microsoft.graph.servicePrincipal](../resources/serviceprincipal.md)|
+|appRoleAssignments|[appRoleAssignment](../resources/approleassignment.md) collection|App role assignment for another app or service, granted to this agent identity blueprint principal. Supports `$expand`. Inherited from [microsoft.graph.servicePrincipal](../resources/serviceprincipal.md)|
+|claimsMappingPolicies|[claimsMappingPolicy](../resources/claimsmappingpolicy.md) collection|The claimsMappingPolicies assigned to this agent identity blueprint principal. Supports `$expand`. Inherited from [microsoft.graph.servicePrincipal](../resources/serviceprincipal.md)|
+|claimsPolicy|[customClaimsPolicy](../resources/customclaimspolicy.md)|A claims policy that allows application admins to customize the claims that will be emitted in tokens affected by this policy. Inherited from [microsoft.graph.servicePrincipal](../resources/serviceprincipal.md)|
+|createdObjects|[directoryObject](../resources/directoryobject.md) collection|Directory objects created by this agent identity blueprint principal. Read-only. Nullable. Inherited from [microsoft.graph.servicePrincipal](../resources/serviceprincipal.md)|
+|delegatedPermissionClassifications|[delegatedPermissionClassification](../resources/delegatedpermissionclassification.md) collection|The permission classifications for delegated permissions exposed by the app that this agent identity blueprint principal represents. Supports `$expand`. Inherited from [microsoft.graph.servicePrincipal](../resources/serviceprincipal.md)|
+|endpoints|[endpoint](../resources/endpoint.md) collection|Endpoints available for discovery. Services like Sharepoint populate this property with a tenant specific SharePoint endpoints that other applications can discover and use in their experiences. **Property blocked on Agent Identity Blueprint Principal.** Inherited from [microsoft.graph.servicePrincipal](../resources/serviceprincipal.md)|
+|homeRealmDiscoveryPolicies|[homeRealmDiscoveryPolicy](../resources/homerealmdiscoverypolicy.md) collection|The homeRealmDiscoveryPolicies assigned to this agent identity blueprint principal. Supports `$expand`. Inherited from [microsoft.graph.servicePrincipal](../resources/serviceprincipal.md)|
+|identities|[agentIdentity](../resources/agentidentity.md) collection|The collection of agent identity instances created from this agent identity blueprint principal. Each agent identity represents a specific instance with scoped permissions for autonomous use cases.|
+|memberOf|[directoryObject](../resources/directoryobject.md) collection|Roles that this agent identity blueprint principal is a member of. HTTP Methods: GET Read-only. Nullable. Supports `$expand`. Inherited from [microsoft.graph.servicePrincipal](../resources/serviceprincipal.md)|
+|oauth2PermissionGrants|[oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) collection|Delegated permission grants authorizing this agent identity blueprint principal to access an API on behalf of a signed-in user. Read-only. Nullable. Inherited from [microsoft.graph.servicePrincipal](../resources/serviceprincipal.md)|
+|ownedObjects|[directoryObject](../resources/directoryobject.md) collection|Directory objects that are owned by this agent identity blueprint principal. Read-only. Nullable. Supports `$expand` and `$filter` (`/$count eq 0`, `/$count ne 0`, `/$count eq 1`, `/$count ne 1`). Inherited from [microsoft.graph.servicePrincipal](../resources/serviceprincipal.md)|
+|owners|[directoryObject](../resources/directoryobject.md) collection|Directory objects that are owners of this agent identity blueprint principal. The owners are a set of nonadmin users or servicePrincipals who are allowed to modify this object. Supports `$expand` and `$filter` (`/$count eq 0`, `/$count ne 0`, `/$count eq 1`, `/$count ne 1`). Inherited from [microsoft.graph.servicePrincipal](../resources/serviceprincipal.md)|
+|remoteDesktopSecurityConfiguration|[remoteDesktopSecurityConfiguration](../resources/remotedesktopsecurityconfiguration.md)|The remoteDesktopSecurityConfiguration object applied to this agent identity blueprint principal. Supports `$filter` (`eq`) for **isRemoteDesktopProtocolEnabled** property. **Property blocked on Agent Identity Blueprint Principal.** Inherited from [microsoft.graph.servicePrincipal](../resources/serviceprincipal.md)|
+|sponsors|[directoryObject](../resources/directoryobject.md) collection|The sponsors for this agent identity blueprint principal. Sponsors are users or service principals who can authorize and manage the lifecycle of agent identity instances.|
+|synchronization|[synchronization](../resources/synchronization.md)|Represents the capability for Microsoft Entra identity synchronization through the Microsoft Graph API. Inherited from [microsoft.graph.servicePrincipal](../resources/serviceprincipal.md)|
+|tokenIssuancePolicies|[tokenIssuancePolicy](../resources/tokenissuancepolicy.md) collection|The tokenIssuancePolicies assigned to this agent identity blueprint principal. Supports `$expand`. Inherited from [microsoft.graph.servicePrincipal](../resources/serviceprincipal.md)|
+|tokenLifetimePolicies|[tokenLifetimePolicy](../resources/tokenlifetimepolicy.md) collection|The tokenLifetimePolicies assigned to this agent identity blueprint principal. Supports `$expand`. Inherited from [microsoft.graph.servicePrincipal](../resources/serviceprincipal.md)|
 
 ## JSON representation
-The following JSON representation shows the resource type.
+The following JSON representation shows the resource type. Only a subset of all properties are returned by default. All other properies can only be retrieved using $select.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
@@ -219,99 +138,16 @@ The following JSON representation shows the resource type.
 {
   "@odata.type": "#microsoft.graph.agentIdentityBlueprintPrincipal",
   "id": "String (identifier)",
-  "deletedDateTime": "String (timestamp)",
-  "passwordSingleSignOnSettings": {
-    "@odata.type": "microsoft.graph.passwordSingleSignOnSettings"
-  },
   "accountEnabled": "Boolean",
-  "addIns": [
-    {
-      "@odata.type": "microsoft.graph.addIn"
-    }
-  ],
-  "alternativeNames": [
-    "String"
-  ],
-  "api": {
-    "@odata.type": "microsoft.graph.apiServicePrincipal"
-  },
-  "appCategory": "String",
-  "appData": "String",
+  "createdByAppId": "String",
   "appDescription": "String",
   "appDisplayName": "String",
   "appId": "String",
-  "appMetadata": {
-    "@odata.type": "microsoft.graph.appMetadata"
-  },
-  "applicationTemplateId": "String",
   "appOwnerOrganizationId": "Guid",
   "appRoleAssignmentRequired": "Boolean",
-  "assignmentRequiredForPrincipalTypes": "String",
-  "appRoles": [
-    {
-      "@odata.type": "microsoft.graph.appRole"
-    }
-  ],
-  "certification": {
-    "@odata.type": "microsoft.graph.certification"
-  },
-  "createdByAppId": "String",
-  "customSecurityAttributes": {
-    "@odata.type": "microsoft.graph.customSecurityAttributeValue"
-  },
-  "description": "String",
   "disabledByMicrosoftStatus": "String",
   "displayName": "String",
-  "errorUrl": "String",
-  "hasPermissionClassifications": "Boolean",
-  "homepage": "String",
-  "info": {
-    "@odata.type": "microsoft.graph.informationalUrl"
-  },
-  "isManagementRestricted": "Boolean",
-  "keyCredentials": [
-    {
-      "@odata.type": "microsoft.graph.keyCredential"
-    }
-  ],
-  "lifecycle": {
-    "@odata.type": "microsoft.graph.lifecycle"
-  },
-  "loginUrl": "String",
-  "logoutUrl": "String",
-  "managedIdentityResourceId": "String",
-  "microsoftPolicyGroup": "Boolean",
-  "notes": "String",
-  "notificationEmailAddresses": [
-    "String"
-  ],
-  "publishedPermissionScopes": [
-    {
-      "@odata.type": "microsoft.graph.permissionScope"
-    }
-  ],
-  "passwordCredentials": [
-    {
-      "@odata.type": "microsoft.graph.passwordCredential"
-    }
-  ],
-  "preferredTokenSigningKeyEndDateTime": "String (timestamp)",
-  "preferredTokenSigningKeyThumbprint": "String",
-  "preferredSingleSignOnMode": "String",
   "publisherName": "String",
-  "replyUrls": [
-    "String"
-  ],
-  "resourceSpecificApplicationPermissions": [
-    {
-      "@odata.type": "microsoft.graph.resourceSpecificPermission"
-    }
-  ],
-  "samlMetadataUrl": "String",
-  "samlSingleSignOnSettings": {
-    "@odata.type": "microsoft.graph.samlSingleSignOnSettings"
-  },
-  "samlSLOBindingType": "String",
   "servicePrincipalNames": [
     "String"
   ],
@@ -320,8 +156,19 @@ The following JSON representation shows the resource type.
   "tags": [
     "String"
   ],
-  "tokenEncryptionKeyId": "Guid",
-  "tokensRevocationDateTime": "String (timestamp)",
+  "appRoles": [
+    {
+      "@odata.type": "microsoft.graph.appRole"
+    }
+  ],
+  "info": {
+    "@odata.type": "microsoft.graph.informationalUrl"
+  },
+  "publishedPermissionScopes": [
+    {
+      "@odata.type": "microsoft.graph.permissionScope"
+    }
+  ],
   "verifiedPublisher": {
     "@odata.type": "microsoft.graph.verifiedPublisher"
   }
