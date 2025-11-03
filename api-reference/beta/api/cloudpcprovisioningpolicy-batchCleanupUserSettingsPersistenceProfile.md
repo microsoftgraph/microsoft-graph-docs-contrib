@@ -60,10 +60,8 @@ If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
-### Example 1: Delete a list of user storage profiles in specific Cloud PC's policy assignment of user settings persistence
-
 #### Request
-
+The following example shows a reques for deleting a list of user storage profiles in specific Cloud PC's policy assignment of user settings persistence.
 <!-- {
   "blockType": "request",
   "name": "batchcleanupusersettingspersistenceprofile_cloudpcprovisioningpolicy",
@@ -71,7 +69,7 @@ If successful, this method returns a `204 No Content` response code.
 -->
 
 ``` http
-POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/provisioningPolicies/{id}/assignments/{assignment_id}/cloudPCUserSettingsPersistence/batchCleanupUserSettingsPersistenceProfile
+POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/provisioningPolicies/bed92b3e-4b42-4be5-af0d-ebb2d96c432f/assignments/e9d4eb36-7056-4161-93a4-2d6f8d20d6c0/cloudPCUserSettingsPersistence/batchCleanupUserSettingsPersistenceProfile
 Content-Type: application/json
 
 {

@@ -1,5 +1,5 @@
 ---
-title: "cloudPcProvisioningPolicy: retrieveusersettingspersistenceprofileusage"
+title: "cloudPcProvisioningPolicy: retrieveUserSettingsPersistenceProfileUsage"
 description: "Retrieve the usage of Cloud PC user settings persistence in the selected Cloud PC's policy assignment."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
@@ -8,7 +8,7 @@ doc_type: apiPageType
 ms.date: 10/20/2025
 ---
 
-# cloudPcProvisioningPolicy: retrieveusersettingspersistenceprofileusage
+# cloudPcProvisioningPolicy: retrieveUserSettingsPersistenceProfileUsage
 
 Namespace: microsoft.graph
 
@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 
 ``` http
-GET /deviceManagement/virtualEndpoint/provisioningPolicies/{id}/assignments/{assignment_id}/cloudPCUserSettingsPersistence/retrieveusersettingspersistenceprofileusage
+GET /deviceManagement/virtualEndpoint/provisioningPolicies/{id}/assignments/{assignment_id}/cloudPCUserSettingsPersistence/retrieveUserSettingsPersistenceProfileUsage
 ```
 
 ## Request headers
@@ -56,13 +56,12 @@ The following table shows the parameters that can be used with this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [cloudpcusersettingspersistenceusageresult](../resources/cloudpcusersettingspersistenceusageresult.md) in the response body.
+If successful, this method returns a `200 OK` response code and a [cloudPCUserSettingsPersistenceUsageResult](../resources/cloudPCUserSettingsPersistenceUsageResult.md) in the response body.
 
 ## Examples
 
-### Example 1: Retrive the usage of Cloud PC user settings persistence in the selected Cloud PC's assignment
-
 #### Request
+The following example shows a reques for retriving the usage of Cloud PC user settings persistence in the selected Cloud PC's assignment.
 
 <!-- {
   "blockType": "request",
@@ -71,7 +70,7 @@ If successful, this method returns a `200 OK` response code and a [cloudpcuserse
 -->
 
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/provisioningPolicies/{id}/assignments/{assignment_id}/cloudPCUserSettingsPersistence/retrieveUserSettingsPersistenceProfileUsage(configurationId='64ff06de-9c00-4a5a-98b5-7f5abe26bfd9')
+GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/provisioningPolicies/bed92b3e-4b42-4be5-af0d-ebb2d96c432f/assignments/e9d4eb36-7056-4161-93a4-2d6f8d20d6c0/cloudPCUserSettingsPersistence/retrieveUserSettingsPersistenceProfileUsage(configurationId='64ff06de-9c00-4a5a-98b5-7f5abe26bfd9')
 Content-Type: application/json
 
 

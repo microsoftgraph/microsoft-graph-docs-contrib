@@ -50,7 +50,7 @@
           "ChangedApiName": "batchCleanupUserSettingsPersistenceProfile",
           "ChangeType": "Addition",
           "Description": "Added the [batchCleanupUserSettingsPersistenceProfile](https://learn.microsoft.com/en-us/graph/api/cloudpcprovisioningpolicy-batchcleanupusersettingspersistenceprofile?view=graph-rest-beta) method to the [cloudPcProvisioningPolicy](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-beta) resource.",
-          "Target": "cloudPcProvisioningPolicy"
+          "Target": "cloudPCUserSettingsPersistenceDetail"
         },
         {
           "Id": "4052b7de-ca21-43fa-abf6-575fc5686115",
@@ -58,7 +58,7 @@
           "ChangedApiName": "retrieveUserSettingsPersistenceProfiles",
           "ChangeType": "Addition",
           "Description": "Added the [retrieveUserSettingsPersistenceProfiles](https://learn.microsoft.com/en-us/graph/api/cloudpcprovisioningpolicy-retrieveusersettingspersistenceprofiles?view=graph-rest-beta) method to the [cloudPcProvisioningPolicy](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-beta) resource.",
-          "Target": "cloudPcProvisioningPolicy"
+          "Target": "cloudPCUserSettingsPersistenceDetail"
         },
         {
           "Id": "4052b7de-ca21-43fa-abf6-575fc5686115",
@@ -66,11 +66,11 @@
           "ChangedApiName": "retrieveUserSettingsPersistenceProfileUsage",
           "ChangeType": "Addition",
           "Description": "Added the [retrieveUserSettingsPersistenceProfileUsage](https://learn.microsoft.com/en-us/graph/api/cloudpcprovisioningpolicy-retrieveusersettingspersistenceprofileusage?view=graph-rest-beta) method to the [cloudPcProvisioningPolicy](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-beta) resource.",
-          "Target": "cloudPcProvisioningPolicy"
+          "Target": "cloudPCUserSettingsPersistenceDetail"
         },
         {
           "Id": "4052b7de-ca21-43fa-abf6-575fc5686115",
-          "ApiChange": "Property",
+          "ApiChange": "Relationship",
           "ChangedApiName": "userSettingsPersistenceDetail",
           "ChangeType": "Addition",
           "Description": "Added the **userSettingsPersistenceDetail** relationship to the [cloudPcProvisioningPolicyAssignment](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcprovisioningpolicyassignment?view=graph-rest-beta) resource.",

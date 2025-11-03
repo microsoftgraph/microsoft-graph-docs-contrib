@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 
 ``` http
-POST /deviceManagement/virtualEndpoint/provisioningPolicies/{id}/assignments/{assignment_id}/cloudPCUserSettingsPersistence/retrieveusersettingspersistenceprofiles
+POST /deviceManagement/virtualEndpoint/provisioningPolicies/{id}/assignments/{assignment_id}/cloudPCUserSettingsPersistence/retrieveUserSettingsPersistenceProfiles
 ```
 
 ## Request headers
@@ -56,13 +56,12 @@ The following table shows the parameters that can be used with this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [cloudpcusersettingspersistenceprofile](../resources/cloudpcusersettingspersistenceprofile.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [retrieveUserSettingsPersistenceProfile](../resources/cloudPCUserSettingsPersistenceProfile.md) objects in the response body.
 
 ## Examples
 
-### Example 1: Retrieve the user storage list for Cloud PC user settings persistence under selected Cloud PC's assignment
-
 #### Request
+The following example shows a reques for retrieving the user storage list for Cloud PC user settings persistence under selected Cloud PC's assignment.
 
 <!-- {
   "blockType": "request",
@@ -71,7 +70,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 -->
 
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/provisioningPolicies/{id}/assignments/{assignment_id}/cloudPCUserSettingsPersistence/retrieveUserSettingsPersistenceProfiles(configurationId='64ff06de-9c00-4a5a-98b5-7f5abe26bfd9')
+GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/provisioningPolicies/bed92b3e-4b42-4be5-af0d-ebb2d96c432f/assignments/e9d4eb36-7056-4161-93a4-2d6f8d20d6c0/cloudPCUserSettingsPersistence/retrieveUserSettingsPersistenceProfiles(configurationId='64ff06de-9c00-4a5a-98b5-7f5abe26bfd9')
 Content-Type: application/json
 
 
