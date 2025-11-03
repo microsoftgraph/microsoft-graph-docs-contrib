@@ -16,7 +16,7 @@ Namespace: microsoft.graph.security
 
 Activate Microsoft Defender for Identity sensors.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
