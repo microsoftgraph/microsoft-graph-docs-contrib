@@ -32,7 +32,7 @@ This resource supports subscribing to [change notifications](/graph/changenotifi
 | [Set automatic location](../api/presence-setautomaticlocation.md)                    | None                                            | Update the automatic work location for a user.  |
 | [Set manual location](../api/presence-setmanuallocation.md)                          | None                                            | Set the manual work location signal for a user. |
 | [Clear automatic location](../api/presence-clearautomaticlocation.md)                | None                                            | Clear the automatic work location signal for a user. |
-| [Clear location](../api/presence-clearlocation.md)                                   | None                                            | Clear all the work location for the user. |
+| [Clear location](../api/presence-clearlocation.md)                                   | None                                            | Clear the work location signals for a user, including both the manual and automatic layers for the current date. |
 
 ## Properties
 
