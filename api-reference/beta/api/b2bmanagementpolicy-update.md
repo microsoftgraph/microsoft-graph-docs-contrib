@@ -116,7 +116,7 @@ Content-Type: application/json
   "definition": [
     "{'B2BManagementPolicy':{'Version':1}}"
   ],
-  "isOrganizationDefault": "true"
+  "isOrganizationDefault": true
 }
 ```
 
