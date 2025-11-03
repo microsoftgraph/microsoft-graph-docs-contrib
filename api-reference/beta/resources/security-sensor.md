@@ -40,7 +40,7 @@ Inherits from [entity](../resources/entity.md).
 |id| String                                                                             | Unique identifier to represent the sensor. Inherited from [entity](../resources/entity.md).                                                                                                                         |
 |openHealthIssuesCount| Int64                                                                              | This field displays the count of health issues related to this sensor.                                                                                                                                              |
 |sensorType| [microsoft.graph.security.sensorType](#sensortype-values)                          | The type of the sensor. The possible values are: `adConnectIntegrated`, `adcsIntegrated`, `adfsIntegrated`, `domainControllerIntegrated`, `domainControllerStandalone`, `unknownFutureValue`.                       |
-|serviceStatus| [microsoft.graph.security.serviceStatus](#servicestatus-values)                    | The service status. The possible values are: `stopped`, `starting`, `running`, `disabled`, `onboarding`, `unknown`, `unknownFutureValue`.                                                                           |
+|serviceStatus| microsoft.graph.security.serviceStatus                                             | The service status. The possible values are: `stopped`, `starting`, `running`, `disabled`, `onboarding`, `unknown`, `unknownFutureValue`.                                                                           |
 |settings| [microsoft.graph.security.sensorSettings](../resources/security-sensorsettings.md) | Sensor settings information.                                                                                                                                                                                        |
 |version| String                                                                             | The version of the sensor.                                                                                                                                                                                          |
 
@@ -79,18 +79,6 @@ Inherits from [entity](../resources/entity.md).
 | domainControllerIntegrated |Domain controller sensor.|
 | domainControllerStandalone |Standalone sensor.|
 | unknownFutureValue |Evolvable enumeration sentinel value. Don't use.|
-
-### serviceStatus values
-
-|Member| Description                                      |
-| :--------------------------|:-------------------------------------------------|
-|stopped| Service status is stopped                        |
-|starting| Service status is starting                       |
-|running| Service status is running                        |
-|disabled| Service status is disabled                       |
-|onboarding| Service status is onboarding                     |
-|unknown| Service status is unknown                        |
-|unknownFutureValue| Evolvable enumeration sentinel value. Don't use. |
 
 ## Relationships
 |Relationship|Type|Description|
