@@ -12,12 +12,9 @@ use Microsoft\Graph\Beta\Generated\Models\WorkbookComment;
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new WorkbookComment();
+$requestBody->setCellAddress('Sheet1!A1');
 $requestBody->setContent('This is my comment.');
 $requestBody->setContentType('plain');
-$additionalData = [
-	'cellAddress' => 'Sheet1!A1',
-];
-$requestBody->setAdditionalData($additionalData);
 
 $result = $graphServiceClient->drives()->byDriveId('drive-id')->items()->byDriveItemId('driveItem-id')->workbook()->comments()->post($requestBody)->wait();
 
