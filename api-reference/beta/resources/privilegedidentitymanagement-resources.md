@@ -1,5 +1,5 @@
 ---
-title: "Privileged Identity Management - Azure resources"
+title: "Privileged Identity Management - Azure resources (deprecated)"
 description: "APIs for Microsoft Entra Privileged Identity Management to manage Azure resources."
 ms.localizationpriority: high
 author: "rkarim-ms"
@@ -9,7 +9,7 @@ ROBOTS: NOINDEX
 ms.date: 03/08/2024
 ---
 
-# Privileged Identity Management - Azure resources
+# Privileged Identity Management - Azure resources (deprecated)
 
 Namespace: microsoft.graph
 
