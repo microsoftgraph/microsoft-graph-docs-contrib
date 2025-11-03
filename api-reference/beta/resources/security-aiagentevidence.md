@@ -1,11 +1,12 @@
 ---
 title: "aiAgentEvidence resource type"
-description: "Represents an AI agent that is reported in the alert as evidence"
+description: "Represents an AI agent that's reported in the security detection alert."
 ms.date: 11/02/2025
 author: "ofirBinshtok"
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: resourcePageType
+toc.title: AI agent evidence
 ---
 
 # aiAgentEvidence resource type
@@ -14,7 +15,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a aiAgent that is reported in the security detection alert.
+Represents an AI agent that's reported in the security detection alert.
 
 Inherits from [alertEvidence](../resources/security-alertevidence.md).
 
@@ -22,22 +23,20 @@ Inherits from [alertEvidence](../resources/security-alertevidence.md).
 
 |Property|Type|Description|
 |:-------|:---|:----------|
-|AgentName|String|The display name for the AI agent.|
 |agentId|String|The unique identifier for the AI agent.|
-|hostingPlatformType|microsoft.graph.security.aiAgentPlatform|Type of the platform the agent runs on: 'Unknown,' 'AzureAIFoundry', 'CopilotStudio', 'Copilot'.|
+|agentName|String|The display name for the AI agent.|
+|hostingPlatformType|[microsoft.graph.security.aiAgentPlatform](#aiagentplatform-values)|Type of the platform the agent runs on. Possible values are: `unknown`, `azureAIFoundry`, `copilotStudio`, `copilot`, `unknownFutureValue`.|
 |instructions|String|The instructions of the agent.|
-
 
 ### aiAgentPlatform values
 
 |Member|Description|
 |:-----|:----------|
-|unknown|Plaform value is unknown or not specified.|
-|AzureAIFoundry|Plaform value is Azure AI Foundry.|
-|Copilot Studio|Plaform value is Copilot Studio.|
-|Copilot|Plaform value is Azure AI Foundry.|
+|unknown|The plaform value is unknown or not specified.|
+|azureAIFoundry|The plaform value is Azure AI Foundry.|
+|copilotStudio|The plaform value is Copilot Studio.|
+|copilot|The plaform value is Copilot.|
 |unknownFutureValue|Evolvable enumeration value. Don't use.|
-
 
 ## Relationships
 
@@ -55,9 +54,9 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.security.aiAgentEvidence",
-  "AgentName": "String",
   "agentId": "String",
-  "hostingPlatformType": "microsoft.graph.security.aiAgentPlatform",
-  "instructions": "String",
+  "agentName": "String",
+  "hostingPlatformType": "String",
+  "instructions": "String"
 }
 ```
