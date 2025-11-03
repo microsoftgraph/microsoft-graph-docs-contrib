@@ -21,7 +21,7 @@ Clear the automatic work location signal for a user. After clearing, the user’
 - If a manual location is set, clearing the automatic signal doesn't change the final location (manual still takes precedence).
 - If no manual location is set, the final location falls back to the scheduled signal (calendar working hours and location – WHL) for the current segment, or to none if there's no scheduled signal.
 
-Use this operation when your client needs to remove the current autodetected signal without affecting manual or scheduled layers.
+Use this operation when you need to remove the current autodetected signal without affecting manual or scheduled layers.
 
 ## Permissions
 

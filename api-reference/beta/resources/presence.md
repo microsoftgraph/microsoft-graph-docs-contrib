@@ -29,9 +29,9 @@ This resource supports subscribing to [change notifications](/graph/changenotifi
 | [Set user preferred presence](../api/presence-setuserpreferredpresence.md)           |                                                 | Set the preferred availability and activity status for a user.                    |
 | [Clear user preferred presence](../api/presence-clearuserpreferredpresence.md)       |                                                 | Clear the preferred availability and activity status for a user.                  |
 | [Set user status message](../api/presence-setstatusmessage.md)                       |                                                 | Set a presence status message for a user.                                         |
-| [Set automatic location](../api/presence-setautomaticlocation.md)                    | None                                            | Set the user’s automatically detected work location  |
-| [Set manual location](../api/presence-setmanuallocation.md)                          | None                                            | Set the user’s manual work location |
-| [Clear automatic location](../api/presence-clearautomaticlocation.md)                | None                                            | Clear the automatically detected work location for the user. |
+| [Set automatic location](../api/presence-setautomaticlocation.md)                    | None                                            | Update the automatic work location for a user.  |
+| [Set manual location](../api/presence-setmanuallocation.md)                          | None                                            | Set the manual work location signal for a user. |
+| [Clear automatic location](../api/presence-clearautomaticlocation.md)                | None                                            | Clear the automatic work location signal for a user. |
 | [Clear location](../api/presence-clearlocation.md)                                   | None                                            | Clear all the work location for the user. |
 
 ## Properties

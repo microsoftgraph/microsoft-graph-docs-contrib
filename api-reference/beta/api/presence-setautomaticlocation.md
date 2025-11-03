@@ -18,7 +18,7 @@ Update the automatic work location for a user. The automatic layer participates 
 
 - Precedence: manual > automatic > scheduled
 - Precision (within the same layer): more precise wins (for example, office + building > office)
-- If manual is set, it overrides automatic and scheduled.
+- If a manual location is set, it overrides both automatic and scheduled settings.
 
 Use this operation from clients or services that automatically detect location (for example, Teams, network/location agents, or OEM docking apps). It doesn't clear manual or scheduled signals.
 
