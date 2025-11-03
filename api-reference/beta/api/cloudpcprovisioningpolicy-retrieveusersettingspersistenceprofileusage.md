@@ -61,7 +61,7 @@ If successful, this method returns a `200 OK` response code and a [cloudPCUserSe
 ## Examples
 
 #### Request
-The following example shows a reques for retriving the usage of Cloud PC user settings persistence in the selected Cloud PC's assignment.
+The following example shows a reques for retrieving the usage of Cloud PC user settings persistence in the selected Cloud PC's assignment.
 
 <!-- {
   "blockType": "request",

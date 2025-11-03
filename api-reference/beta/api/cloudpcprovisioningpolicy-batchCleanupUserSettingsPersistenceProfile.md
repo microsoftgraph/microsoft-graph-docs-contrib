@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 
 ``` http
-POST /deviceManagement/virtualEndpoint/provisioningPolicies/{id}/assignments/{assignment_id}/cloudPCUserSettingsPersistence/batchCleanupUserSettingsPersistenceProfile
+POST /deviceManagement/virtualEndpoint/provisioningPolicies/b8f4a6d2-3c7e-4e9a-9f1b-2d6c8e1a4f7c/assignments/f3d9c1a8-7b4e-4a2f-8d6e-9c2b7f5a1e3d/cloudPCUserSettingsPersistence/batchCleanupUserSettingsPersistenceProfile
 ```
 
 ## Request headers
@@ -74,7 +74,7 @@ Content-Type: application/json
 
 {
     "configurationId": "64ff06de-9c00-4a5a-98b5-7f5abe26bfd9",
-    "cloudProfileIds":["7e8c3054-bda1-4e37-81c5-7d1b080a8849", "568c3054-bda1-4e37-81c5-7d1b080a8849"],
+    "cloudProfileIds":["7e8c3054-bda1-4e37-81c5-7d1b080a8849", "568c3054-bda1-4e37-81c5-7d1b080a8849"]
 }
 ```
 ---

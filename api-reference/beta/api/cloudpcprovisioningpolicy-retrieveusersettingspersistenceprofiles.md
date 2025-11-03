@@ -98,21 +98,21 @@ HTTP/1.1 200 OK
             "userPrincipalName": "json@contoso.com",
             "profileSizeInGB": 4,
             "lastProfileAttachedDateTime": "2020-06-03T12:43:32Z",
-            "status": "connected",
+            "status": "connected"
         },
         {
             "profileId": "95d04a0b-ed49-46c0-a62d-e7980d829058",
             "userPrincipalName": "json@contoso.com",
             "profileSizeInGB": 4,
             "lastProfileAttachedDateTime": null,
-            "status": "notConnected",
+            "status": "notConnected"
         },
         {
             "profileId": "12d04a0b-ed49-46c0-a62d-e7980d829058",
             "userPrincipalName": "connie@contoso.com",
             "profileSizeInGB": 4,
             "lastProfileAttachedDateTime": "2020-11-03T12:43:32Z",
-            "status": "deleting",
+            "status": "deleting"
         }
     ]
 }
