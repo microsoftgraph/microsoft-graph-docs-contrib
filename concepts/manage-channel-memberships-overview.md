@@ -73,4 +73,4 @@ Learn more: [Get change notifications for channel membership](/graph/teams-chang
 ## Related content
 
 - [Microsoft Graph overview for Teams](/graph/teams-concept-overview)
-- [Change notifications in Microsoft Graph](/graph/api/resources/webhooks)
+- [Set up notifications for changes in resource data](change-notifications-overview.md)
