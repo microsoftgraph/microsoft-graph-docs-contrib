@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the resources related to Microsoft Security Copilot.
-This is an abstract type.
+This resource is an abstract type.
 
 Inherits from [entity](../resources/entity.md)
 
