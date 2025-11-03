@@ -12,7 +12,7 @@
         },
         {
           "Id": "439479a0-083f-497c-a248-be7c89e7f773",
-          "ApiChange": "Property",ai
+          "ApiChange": "Property",
           "ChangedApiName": "distinguishedName",
           "ChangeType": "Addition",
           "Description": "Added the **distinguishedName** property to the [securityGroupEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-securitygroupevidence?view=graph-rest-beta) resource.",
