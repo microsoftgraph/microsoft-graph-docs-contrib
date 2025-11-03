@@ -27,15 +27,15 @@ Represents a session within a [workspace](../resources/security-securitycopilot-
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|createdDateTime|DateTimeOffset|Created time of the session (UTC)|
-|displayName|String|Display name for the session|
-|id|String|Represents the unique ID of the Security Copilot session. Inherits from [entity](../resources/entity.md) |
+|createdDateTime|DateTimeOffset|Created time of the session (UTC).|
+|displayName|String|Display name for the session.|
+|id|String|Represents the unique ID of the Security Copilot session. Inherits from [entity](../resources/entity.md).|
 |lastModifiedDateTime|DateTimeOffset|Last modified time of the session (UTC). Updated when **displayName** changes.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|prompts|[microsoft.graph.security.securityCopilot.prompt](../resources/security-securitycopilot-prompt.md) collection|The collection of prompts in the session|
+|prompts|[microsoft.graph.security.securityCopilot.prompt](../resources/security-securitycopilot-prompt.md) collection|The collection of prompts in the session.|
 
 ## JSON representation
 The following JSON representation shows the resource type.

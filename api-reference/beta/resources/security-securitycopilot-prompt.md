@@ -23,20 +23,18 @@ Represents a prompt in a Security Copilot [session](../resources/security-securi
 |[List](../api/security-securitycopilot-session-list-prompts.md)|[microsoft.graph.security.securityCopilot.prompt](../resources/security-securitycopilot-prompt.md) collection|Get a list of the prompt objects and their properties.|
 |[Create](../api/security-securitycopilot-session-post-prompts.md)|[microsoft.graph.security.securityCopilot.prompt](../resources/security-securitycopilot-prompt.md)|Create a new prompt object.|
 |[Get](../api/security-securitycopilot-prompt-get.md)|[microsoft.graph.security.securityCopilot.prompt](../resources/security-securitycopilot-prompt.md)|Read the properties and relationships of [microsoft.graph.security.securityCopilot.prompt](../resources/security-securitycopilot-prompt.md) object.|
-|[List evaluations](../api/security-securitycopilot-prompt-list-evaluations.md)|[microsoft.graph.security.securityCopilot.evaluation](../resources/security-securitycopilot-evaluation.md) collection|Get a list of the evaluation objects.|
-|[Create evaluation](../api/security-securitycopilot-prompt-post-evaluations.md)|[microsoft.graph.security.securityCopilot.evaluation](../resources/security-securitycopilot-evaluation.md)|Create a new evaluation object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|content|String|Input content to the prompt|
-|createdDateTime|DateTimeOffset|Created time|
-|id|String|Represents the unique ID of the Security Copilot prompt. Inherits from [entity](../resources/entity.md)|
+|content|String|Input content to the prompt.|
+|createdDateTime|DateTimeOffset|Created time.|
+|id|String|Represents the unique ID of the Security Copilot prompt. Inherits from [entity](../resources/entity.md).|
 |inputs|[microsoft.graph.Dictionary](../resources/dictionary.md)|Not implemented.|
-|lastModifiedDateTime|DateTimeOffset|Last modified time|
-|skillInputDescriptors|[microsoft.graph.security.securityCopilot.skillInputDescriptor](../resources/security-securitycopilot-skillinputdescriptor.md) collection|Skill Input descriptor|
-|skillName|String|Skill Name|
-|type|microsoft.graph.security.securitycopilot.promptType|Prompt types. The possible values are: `unknown`, `context`, `prompt`, `skill`, `feedback`, `unknownFutureValue`. Only `prompt` is currently supported.|
+|lastModifiedDateTime|DateTimeOffset|Last modified time.|
+|skillInputDescriptors|[microsoft.graph.security.securityCopilot.skillInputDescriptor](../resources/security-securitycopilot-skillinputdescriptor.md) collection|Skill Input descriptor.|
+|skillName|String|Skill name.|
+|type|microsoft.graph.security.securityCopilot.promptType|Prompt types. The possible values are: `unknown`, `context`, `prompt`, `skill`, `feedback`, `unknownFutureValue`. Only `prompt` is currently supported.|
 
 ## Relationships
 |Relationship|Type|Description|
