@@ -1,6 +1,6 @@
 ---
 title: "groupResource resource type"
-description: "Represents the group resource in Privileged Identity Management (PIM). This extends microsoft.graph.directoryObject entity."
+description: "Represents the group resource in Privileged Identity Management (PIM). This entity extends microsoft.graph.directoryObject entity."
 ms.localizationpriority: medium
 author: "shea3100"
 ms.subservice: "entra-id-governance"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-In [PIM](privilegedaccess.md), a group resource represents the group resource in Privileged Identity Management. This extends [Directory object](directoryobject.md).
+In [PIM](privilegedaccess.md), a group resource represents the group resource in Privileged Identity Management. This entity extends [Directory object](directoryobject.md).
 
 ## Methods
 
