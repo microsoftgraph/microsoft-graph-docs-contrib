@@ -153,6 +153,10 @@ Use the **investigationState** property on [alert](/graph/api/resources/security
 
 Use the extended properties API to store or get custom data in the [todoTask](/graph/api/resources/todotask?view=graph-rest-beta&preserve-view=true#methods) resource.
 
+### Teamwork and communications | Calls and online meetings
+
+- Add the **sensitivityLabelAssignment** property to the [onlineMeeting](/graph/api/resources/onlineMeeting?view=graph-rest-beta), which represent the sensitivity level of the meeting. This id correlated with the identifier configured on Microsoft Purview portal.
+
 ## September 2025: New and generally available
 
 ### Applications
