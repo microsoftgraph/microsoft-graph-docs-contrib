@@ -22,7 +22,7 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 |Method| Return type                                                                                      |Description|
 |:---|:-------------------------------------------------------------------------------------------------|:---|
 |[List](../api/security-identitycontainer-list-sensorcandidates.md)| [microsoft.graph.security.sensorCandidates](../resources/security-sensorcandidate.md) collection |Get a list of the sensorCandidate objects and their properties.|
-|[activate](../api/security-sensorcandidate-activate.md)| None                                                                                             |Activate Microsoft Defender for Identity sensors.|
+|[Activate](../api/security-sensorcandidate-activate.md)| None                                                                                             |Activate Microsoft Defender for Identity sensors.|
 
 ## Properties
 |Property|Type| Description                                                                                                                                                    |
