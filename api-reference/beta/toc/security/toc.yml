@@ -790,7 +790,7 @@ items:
       href: ../../resources/security-sensorcandidate.md
     - name: List
       href: ../../api/security-identitycontainer-list-sensorcandidates.md
-    - name: activate
+    - name: Activate
       href: ../../api/security-sensorcandidate-activate.md
   - name: Sensor candidate activation configuration
     items:
