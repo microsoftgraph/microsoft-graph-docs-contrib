@@ -24,7 +24,7 @@ Inherits from [alertEvidence](../resources/security-alertevidence.md).
 |:-------|:---|:----------|
 |AgentName|String|The display name for the AI agent.|
 |agentId|String|The unique identifier for the AI agent.|
-|hostingPlatformType|[microsoft.graph.security.aiAgentPlatform](#aiAgentPlatform-values)|Type of the platform the agent runs on: 'Unknown,' 'AzureAIFoundry', 'CopilotStudio', 'Copilot'.|
+|hostingPlatformType|microsoft.graph.security.aiAgentPlatform|Type of the platform the agent runs on: 'Unknown,' 'AzureAIFoundry', 'CopilotStudio', 'Copilot'.|
 |instructions|String|The instructions of the agent.|
 
 
