@@ -51,11 +51,11 @@ PATCH /solutions/sharePoint/migrations/crossOrganizationGroupMappings
 
 |Property|Type|Description|
 |:---|:---|:---|
-|sourceOrganizationId|Guid|The unique identifier of the source organization in the migration. Inherited from [sharePointIdentityMapping](../resources/sharepointidentitymapping.md). Required.|
-|groupType|sharePointIdentityMappingGroupType|Indicates the type of group. The possible values are: `none`, `regularGroup`, `m365Group`, `unknownFutureValue`. Required.|
-|sourceGroupIdentity|[identity](../resources/intune-identity.md)|The identity information of the source group. Optional.|
-|targetGroupIdentity|[identity](../resources/intune-identity.md)|The identity information of the target group. Optional.|
-|targetGroupMigrationData|[sharePointIdentityMappingGroupMigrationData](../resources/sharepointidentitymappinggroupmigrationdata.md)|Additional migration-specific data for the target group. Optional.|
+|sourceOrganizationId|Guid|The unique identifier of the source organization in the migration. Inherited from [sharePointIdentityMapping](../resources/sharepointidentitymapping.md).|
+|groupType|sharePointIdentityMappingGroupType|Indicates the type of group. The possible values are: `none`, `regularGroup`, `m365Group`, `unknownFutureValue`.|
+|sourceGroupIdentity|[identity](../resources/identity.md)|The identity information of the source group.|
+|targetGroupIdentity|[identity](../resources/identity.md)|The identity information of the target group.|
+|targetGroupMigrationData|[sharePointIdentityMappingGroupMigrationData](../resources/sharepointidentitymappinggroupmigrationdata.md)|Additional migration-specific data for the target group.|
 
 
 

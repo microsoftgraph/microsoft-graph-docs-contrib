@@ -25,21 +25,18 @@ Inherits from [sharePointIdentityMapping](../resources/sharepointidentitymapping
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/sharepointmigrationsroot-list-crossorganizationgroupmappings.md)|[sharePointGroupIdentityMapping](../resources/sharepointgroupidentitymapping.md) collection|Get a list of the sharePointGroupIdentityMapping objects and their properties.|
-|[Create](../api/sharepointmigrationsroot-post-crossorganizationgroupmappings.md)|[sharePointGroupIdentityMapping](../resources/sharepointgroupidentitymapping.md)|Create a new sharePointGroupIdentityMapping object.|
 |[Get](../api/sharepointgroupidentitymapping-get.md)|[sharePointGroupIdentityMapping](../resources/sharepointgroupidentitymapping.md)|Read the properties and relationships of [sharePointGroupIdentityMapping](../resources/sharepointgroupidentitymapping.md) object.|
 |[Update](../api/sharepointgroupidentitymapping-update.md)|[sharePointGroupIdentityMapping](../resources/sharepointgroupidentitymapping.md)|Update the properties of a sharePointGroupIdentityMapping object.|
-|[Delete](../api/sharepointmigrationsroot-delete-crossorganizationgroupmappings.md)|None|Delete a sharePointGroupIdentityMapping object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |groupType|sharePointIdentityMappingGroupType|Indicates the type of group. The possible values are: `none`, `regularGroup`, `m365Group`, `unknownFutureValue`.|
 |id|String|Unique identifier for the group identity mapping. Base64-encoded string. Generated automatically.|
-|sourceGroupIdentity|[identity](../resources/intune-identity.md)|The identity information of the source group in the originating organization. Contains the source group's ID.|
+|sourceGroupIdentity|[identity](../resources/identity.md)|The identity information of the source group in the originating organization. Contains the source group's ID.|
 |sourceGroupObjectId|String|The Azure AD object ID of the source group. Used as an alternate key for querying. Internal only.|
 |sourceOrganizationId|Guid|The unique identifier of the source organization in the migration. Inherited from [sharePointIdentityMapping](../resources/sharepointidentitymapping.md).|
-|targetGroupIdentity|[identity](../resources/intune-identity.md)|The identity information of the target group in the destination organization. Contains the target group's ID.|
+|targetGroupIdentity|[identity](../resources/identity.md)|The identity information of the target group in the destination organization. Contains the target group's ID.|
 |targetGroupMigrationData|[sharePointIdentityMappingGroupMigrationData](../resources/sharepointidentitymappinggroupmigrationdata.md)|Additional migration-specific data for the target group. Contains mailNickname.|
 
 ## Relationships

@@ -51,11 +51,11 @@ PATCH /solutions/sharePoint/migrations/crossOrganizationUserMappings
 
 |Property|Type|Description|
 |:---|:---|:---|
-|sourceOrganizationId|Guid|The unique identifier of the source organization in the migration. Inherited from [sharePointIdentityMapping](../resources/sharepointidentitymapping.md). Required.|
-|userType|sharePointIdentityMappingUserType|Indicates the type of user. The possible values are: `none`, `regularUser`, `adminUser`, `guestUser`, `unknownFutureValue`. Required.|
-|sourceUserIdentity|[userIdentity](../resources/intune-useridentity.md)|The identity information of the source user. Optional.|
-|targetUserIdentity|[userIdentity](../resources/intune-useridentity.md)|The identity information of the target user. Optional.|
-|targetUserMigrationData|[sharePointIdentityMappingUserMigrationData](../resources/sharepointidentitymappingusermigrationdata.md)|Additional migration-specific data for the target user. Optional.|
+|sourceOrganizationId|Guid|The unique identifier of the source organization in the migration. Inherited from [sharePointIdentityMapping](../resources/sharepointidentitymapping.md).|
+|userType|sharePointIdentityMappingUserType|Indicates the type of user. The possible values are: `none`, `regularUser`, `adminUser`, `guestUser`, `unknownFutureValue`.|
+|sourceUserIdentity|[userIdentity](../resources/useridentity.md)|The identity information of the source user.|
+|targetUserIdentity|[userIdentity](../resources/useridentity.md)|The identity information of the target user.|
+|targetUserMigrationData|[sharePointIdentityMappingUserMigrationData](../resources/sharepointidentitymappingusermigrationdata.md)|Additional migration-specific data for the target user.|
 
 
 
