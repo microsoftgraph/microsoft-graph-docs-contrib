@@ -1,5 +1,5 @@
-
 ---
+
 title: "Manage channel membership across channels with allMembers API in Microsoft Graph"
 description: "Learn how to use the allMembers API in Microsoft Graph to manage and monitor channel memberships across Teams channels."
 ms.localizationpriority: medium
@@ -36,7 +36,6 @@ The `allMembers` API returns a comprehensive list of members for a given channel
   - Points to team membership for indirect members.
 
 Use the [sharedWithChannelTeamInfo resource](/graph/api/resources/sharedwithchannelteaminfo) and [allowedMembers API](/graph/api/sharedwithchannelteaminfo-list-allowedmembers) to determine which teams grant access and which members are eligible.
-
 
 ### Behavior in specific scenarios
 
