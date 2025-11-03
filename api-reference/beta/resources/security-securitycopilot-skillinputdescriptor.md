@@ -14,21 +14,20 @@ Namespace: microsoft.graph.security.securityCopilot
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Defines the capabilities of a skill in Security Copilot. For more information, see the [Security Copilot Agent manifest](https://learn.microsoft.com/copilot/security/developer/agent-manifest).
+Defines the capabilities of a skill in Security Copilot. For more information, see the [Security Copilot Agent manifest](/copilot/security/developer/agent-manifest).
 
-**NOTE** This is currently unsupported.
+**NOTE** This object is currently unsupported.
 
 Inherits from [microsoft.graph.security.securityCopilot.skillVariableDescriptor](../resources/security-securitycopilot-skillvariabledescriptor.md).
-
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|defaultValue|String|Unsupported|
+|defaultValue|String|Unsupported.|
 |description|String| Unsupported. Inherited from [microsoft.graph.security.securityCopilot.skillVariableDescriptor](../resources/security-securitycopilot-skillvariabledescriptor.md).|
-|isRequired|Boolean|Unsupported|
+|isRequired|Boolean|Unsupported.|
 |name|String|Unsupported. Inherited from [microsoft.graph.security.securityCopilot.skillVariableDescriptor](../resources/security-securitycopilot-skillvariabledescriptor.md).|
-|placeholderValue|String|Unsupported|
+|placeholderValue|String|Unsupported.|
 |type|[microsoft.graph.security.securityCopilot.skillTypeDescriptor](../resources/security-securitycopilot-skilltypedescriptor.md)|Unsupported. Inherited from [microsoft.graph.security.securityCopilot.skillVariableDescriptor](../resources/security-securitycopilot-skillvariabledescriptor.md).|
 
 ## Relationships

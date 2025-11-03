@@ -28,14 +28,14 @@ Inherits from [entity](../resources/entity.md)
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|completedDateTime|DateTimeOffset|Evaluation completion time|
-|createdDateTime|DateTimeOffset|Evaluation created time|
-|executionCount|Int64|Evaluation execution count|
-|id|String|Represents the unique ID of the Security Copilot evaluation. Inherits from [entity](../resources/entity.md)|
-|isCancelled|Boolean|Evaluation cancellation status|
-|lastModifiedDateTime|DateTimeOffset|Evaluation modified time|
+|completedDateTime|DateTimeOffset|Evaluation completion time.|
+|createdDateTime|DateTimeOffset|Evaluation created time.|
+|executionCount|Int64|Evaluation execution count.|
+|id|String|Represents the unique ID of the Security Copilot evaluation. Inherits from [entity](../resources/entity.md).|
+|isCancelled|Boolean|Evaluation cancellation status.|
+|lastModifiedDateTime|DateTimeOffset|Evaluation modified time.|
 |result|[microsoft.graph.security.securityCopilot.evaluationResult](../resources/security-securitycopilot-evaluationresult.md)|Evaluation results collection.|
-|runStartDateTime|DateTimeOffset|Evaluation Run start time|
+|runStartDateTime|DateTimeOffset|Evaluation Run start time.|
 |state|microsoft.graph.security.securitycopilot.evaluationState|Evaluation state during poll. The possible values are: `unknown`, `created`, `running`, `completed`, `cancelled`, `pending`, `deferred`, `waitingForInput`, `unknownFutureValue`.|
 
 ## Relationships

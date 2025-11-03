@@ -50,7 +50,6 @@ POST /security/securityCopilot/workspaces/{workspaceId}/sessions/{sessionId}/pro
 
 In the request body, supply an empty JSON object. No properties are required when creating an **evaluation**. 
 
-
 ## Response
 
 If successful, this method returns a `201 Created` response code and a [microsoft.graph.security.securityCopilot.evaluation](../resources/security-securitycopilot-evaluation.md) object in the response body.

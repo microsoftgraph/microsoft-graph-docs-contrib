@@ -18,11 +18,10 @@ Defines the capabilities of a skill in Security Copilot.
 
 This entire resource is currently unsupported.
 
-
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|name|String|Unsupported|
+|name|String|Unsupported.|
 
 ## Relationships
 None.

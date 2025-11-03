@@ -1,6 +1,6 @@
 ---
 title: "evaluationResult resource type"
-description: "Security Copilot Evaluation Result resource type"
+description: "The result from a Security Copilot evaluation."
 author: "spunukol"
 ms.date: 07/17/2025
 ms.localizationpriority: medium
@@ -14,13 +14,12 @@ Namespace: microsoft.graph.security.securityCopilot
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The Security Copilot evaluationResult resource types are available here.
-
+The result from a Security Copilot [evaluation](../resources/security-securitycopilot-evaluation.md).
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|content|String|Final Content|
+|content|String|The final content.|
 |previewState|microsoft.graph.security.securitycopilot.skillPreviewState|Evaluation skill release information. The possible values are: `ga`, `public`, `private`, `unknownFutureValue`.|
 |type|microsoft.graph.security.securitycopilot.evaluationResultType|Evaluation Results types. The possible values are: `unknown`, `success`, `error`, `needAdditionalClaims`, `rejected`, `timedOut`, `capacityExceeded`, `unknownFutureValue`.|
 
