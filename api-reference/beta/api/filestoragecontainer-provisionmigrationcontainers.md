@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Provision SharePoint-managed Azure blob containers as temporary storage for migration content and metadata.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-china.md)]
 
 ## Permissions
 

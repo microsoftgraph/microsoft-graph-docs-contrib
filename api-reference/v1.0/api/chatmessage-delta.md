@@ -61,7 +61,7 @@ In subsequent requests, copy and apply the **@odata.nextLink** or **@odata.delta
 This API supports the following [OData query parameters](/graph/query-parameters):
 - `$top` represents the maximum number of messages to fetch in a call. The upper limit is `50`.
 - `$skip` represents how many messages to skip at the beginning of the list.
-- `$filter` returns messages that meet a certain criteria. The only property that supports filters is **lastModifiedDateTime**`, and only the `gt` operator is supported. For example, `../messages/delta?$filter=lastModifiedDateTime gt 2024-08-27T07:13:28.000z` fetches any message created or changed after the specified date and time.
+- `$filter` returns messages that meet a certain criteria. The only property that supports filters is **lastModifiedDateTime**, and only the `gt` operator is supported. For example, `../messages/delta?$filter=lastModifiedDateTime gt 2024-08-27T07:13:28.000z` fetches any message created or changed after the specified date and time.
  
 ## Request headers
 

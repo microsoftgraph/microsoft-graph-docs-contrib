@@ -1,5 +1,87 @@
 {
   "changelog": [
+     {
+      "ChangeList": [
+        {
+          "Id": "6e7a02d3-ce78-484b-8801-c15a835e1e1e",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "siteTemplateType",
+          "ChangeType": "Addition",
+          "Description": "Added the **siteTemplateType** enumeration type.",
+          "Target": "siteTemplateType"
+        },
+        {
+          "Id": "6e7a02d3-ce78-484b-8801-c15a835e1e1e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "identityInput",
+          "ChangeType": "Addition",
+          "Description": "Added the [identityInput](https://learn.microsoft.com/en-us/graph/api/resources/identityInput?view=graph-rest-beta) resource type.",
+          "Target": "identityInput"
+        },
+        {
+          "Id": "6e7a02d3-ce78-484b-8801-c15a835e1e1e",
+          "ApiChange": "Property",
+          "ChangedApiName": "locale",
+          "ChangeType": "Addition",
+          "Description": "Added the **locale** property to the [site](https://learn.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-beta) resource.",
+          "Target": "site"
+        },
+        {
+          "Id": "6e7a02d3-ce78-484b-8801-c15a835e1e1e",
+          "ApiChange": "Property",
+          "ChangedApiName": "lockState",
+          "ChangeType": "Addition",
+          "Description": "Added the **lockState** property to the [site](https://learn.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-beta) resource.",
+          "Target": "site"
+        },
+        {
+          "Id": "6e7a02d3-ce78-484b-8801-c15a835e1e1e",
+          "ApiChange": "Property",
+          "ChangedApiName": "ownerIdentityToResolve",
+          "ChangeType": "Addition",
+          "Description": "Added the **ownerIdentityToResolve** property to the [site](https://learn.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-beta) resource.",
+          "Target": "site"
+        },
+        {
+          "Id": "6e7a02d3-ce78-484b-8801-c15a835e1e1e",
+          "ApiChange": "Property",
+          "ChangedApiName": "shareByEmailEnabled",
+          "ChangeType": "Addition",
+          "Description": "Added the **shareByEmailEnabled** property to the [site](https://learn.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-beta) resource.",
+          "Target": "site"
+        },
+        {
+          "Id": "6e7a02d3-ce78-484b-8801-c15a835e1e1e",
+          "ApiChange": "Property",
+          "ChangedApiName": "template",
+          "ChangeType": "Addition",
+          "Description": "Added the **template** property to the [site](https://learn.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-beta) resource.",
+          "Target": "site"
+        },
+        {
+          "Id": "6e7a02d3-ce78-484b-8801-c15a835e1e1e",
+          "ApiChange": "Method",
+          "ChangedApiName": "getOperationStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the [getOperationStatus](https://learn.microsoft.com/en-us/graph/api/site-getOperationStatus?view=graph-rest-beta) method to the [site](https://learn.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-beta) resource.",
+          "Target": "site"
+        },
+        {
+          "Id": "6e7a02d3-ce78-484b-8801-c15a835e1e1e",
+          "ApiChange": "Method",
+          "ChangedApiName": "site",
+          "ChangeType": "Addition",
+          "Description": "Added the [create](https://learn.microsoft.com/en-us/graph/api/site-post-sites?view=graph-rest-beta) method to the [site](https://learn.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-beta) resource.",
+          "Target": "site"
+        }
+      ],
+      "Id": "6e7a02d3-ce78-484b-8801-c15a835e1e1e",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-10-23T10:36:47.2630406Z",
+      "WorkloadArea": "Sites and lists",
+      "SubArea": ""
+    },
     {
         "ChangeList": [
           {
@@ -171,6 +253,24 @@
         "CreatedDateTime": "2024-09-26T06:57:37.5509045Z",
         "WorkloadArea": "Files",
         "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "d612afb2-fc58-44bb-b9ea-07f99bde6cfe",
+          "ApiChange": "Property",
+          "ChangedApiName": "itemDefaultSensitivityLabelId",
+          "ChangeType": "Addition",
+          "Description": "Added the **itemDefaultSensitivityLabelId** property to the [fileStorageContainerSettings](https://learn.microsoft.com/en-us/graph/api/resources/fileStorageContainerSettings?view=graph-rest-beta) resource.",
+          "Target": "fileStorageContainerSettings"
+        }
+      ],
+      "Id": "d612afb2-fc58-44bb-b9ea-07f99bde6cfe",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-10-29T22:00:29.1040559Z",
+      "WorkloadArea": "Files",
+      "SubArea": ""
     },
     {
       "ChangeList": [
