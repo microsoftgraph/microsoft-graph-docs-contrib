@@ -3054,6 +3054,7 @@ Possible values for user account types (group membership), per Windows definitio
 | approvedApplication |
 | compliantApplication |
 | passwordChange |
+| riskRemediation |
 | unknownFutureValue |
 
 ### perUserMfaState values
