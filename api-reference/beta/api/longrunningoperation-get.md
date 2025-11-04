@@ -5,7 +5,7 @@ author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: apiPageType
-ms.date: 07/23/2024
+ms.date: 07/29/2025
 ---
 
 # Get longRunningOperation
@@ -27,14 +27,22 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ### For role management alerts
 
-<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
+<!-- { 
+  "blockType": "permissions", 
+  "name": "longrunningoperation_get", 
+  "requestUrls": ["GET /identityGovernance/roleManagementAlerts/operations/{longRunningOperationId}"]
+ } -->
 [!INCLUDE [permissions-table](../includes/permissions/longrunningoperation-get-permissions.md)]
 
 [!INCLUDE [rbac-pim-alerts-apis-read](../includes/rbac-for-apis/rbac-pim-alerts-apis-read.md)]
 
 ### For authentication methods (password reset)
 
-<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
+<!-- { 
+  "blockType": "permissions", 
+  "name": "longrunningoperation_get_2", 
+  "requestUrls": ["GET /users/{id | userPrincipalName}/authentication/operations/{id}"]
+ } -->
 [!INCLUDE [permissions-table](../includes/permissions/longrunningoperation-get-2-permissions.md)]
 
 [!INCLUDE [rbac-authentication-methods-apis-read-others](../includes/rbac-for-apis/rbac-authentication-methods-apis-read-others.md)]

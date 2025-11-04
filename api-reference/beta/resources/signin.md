@@ -5,8 +5,9 @@ description: "Provides details about user or application sign-in activity in you
 author: "egreenberg14"
 ms.localizationpriority: medium
 ms.subservice: "entra-monitoring-health"
-ms.date: 01/23/2025
+ms.date: 08/13/2025
 ms.custom: sfi-ropc-nochange
+toc.title: Sign-in
 ---
 
 
@@ -49,7 +50,7 @@ The [Microsoft Entra data retention policies](/azure/active-directory/reports-mo
 |authenticationMethodsUsed|String collection|The authentication methods used. Possible values: `SMS`, `Authenticator App`, `App Verification code`, `Password`, `FIDO`, `PTA`, or `PHS`.|
 |authenticationProcessingDetails|[keyValue](keyvalue.md) collection|More authentication processing details, such as the agent name for PTA and PHS, or a server or farm name for federated authentication.|
 |authenticationProtocol|protocolType|Lists the protocol type or grant type used in the authentication. The possible values are: `none`, `oAuth2`, `ropc`, `wsFederation`, `saml20`, `deviceCode`, `unknownFutureValue`, `authenticationTransfer`, `nativeAuth`, `implicitAccessTokenAndGetResponseMode`, `implicitIdTokenAndGetResponseMode`, `implicitAccessTokenAndPostResponseMode`, `implicitIdTokenAndPostResponseMode`, `authorizationCodeWithoutPkce`, `authorizationCodeWithPkce`, `clientCredentials`, `refreshTokenGrant`, `encryptedAuthorizeResponse`, `directUserGrant`, `kerberos`, `prtGrant`, `seamlessSso`, `prtBrokerBased`, `prtNonBrokerBased`, `onBehalfOf`, `samlOnBehalfOf`. Use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `authenticationTransfer` , `nativeAuth` , `implicitAccessTokenAndGetResponseMode` , `implicitIdTokenAndGetResponseMode` , `implicitAccessTokenAndPostResponseMode` , `implicitIdTokenAndPostResponseMode` , `authorizationCodeWithoutPkce` , `authorizationCodeWithPkce` , `clientCredentials` , `refreshTokenGrant` , `encryptedAuthorizeResponse` , `directUserGrant` , `kerberos` , `prtGrant` , `seamlessSso` , `prtBrokerBased` , `prtNonBrokerBased` , `onBehalfOf` , `samlOnBehalfOf`. |
-|authenticationRequirement | String |The authentication requirement as explicitly requested by a resource provider. Does not account for previously satisfied claims. If primary authentication fails, the sign-in attempt is not evaluated by Conditional Access, so the resulting value is `SingleFactorAuthentication`. <br/><br/> Supports `$filter` (`eq`, `startsWith`).|
+|authenticationRequirement | String |The authentication stage reached during sign-in. It doesn't account for previously satisfied claims. If primary authentication fails, the sign-in attempt is not evaluated by Conditional Access, so the resulting value is `singleFactorAuthentication`. <br/><br/> Supports `$filter` (`eq`, `startsWith`).|
 |authenticationRequirementPolicies|[authenticationRequirementPolicy](../resources/authenticationrequirementpolicy.md) collection|Sources of authentication requirement, such as conditional access, per-user MFA, identity protection, and security defaults.|
 |autonomousSystemNumber|Int32|The Autonomous System Number (ASN) of the network used by the actor.|
 |azureResourceId|String|Contains a fully qualified Azure Resource Manager ID of an Azure resource accessed during the sign-in.|

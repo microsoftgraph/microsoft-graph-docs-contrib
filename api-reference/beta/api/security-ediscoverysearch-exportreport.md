@@ -355,7 +355,7 @@ Location: https://graph.microsoft.com/beta/security/cases/ediscoverycases('dbc06
 
 ### Example 5: Export a report of partially indexed items in locations with search hits and cloud attachments
 
-The following example shows how to export a report of partially indexed items in locations with search hits and cloud attachments. It specifies how many document and cloud attachment versions to include.
+The following example shows how to export a report of partially indexed items in locations with search hits and cloud attachments, including the number of document and cloud attachment versions.
 
 #### Request
 

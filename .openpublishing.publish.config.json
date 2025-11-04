@@ -104,47 +104,56 @@
     {
       "path_to_root": "concepts/tutorials/includes/dotnet/src",
       "url": "https://github.com/microsoftgraph/msgraph-training-dotnet",
-      "branch": "main"
+      "branch": "main",
+      "branch_mapping": {}
     },
     {
       "path_to_root": "concepts/tutorials/includes/go/src",
       "url": "https://github.com/microsoftgraph/msgraph-training-go",
-      "branch": "main"
+      "branch": "main",
+      "branch_mapping": {}
     },
     {
       "path_to_root": "concepts/tutorials/includes/java/src",
       "url": "https://github.com/microsoftgraph/msgraph-training-java",
-      "branch": "main"
+      "branch": "main",
+      "branch_mapping": {}
     },
     {
       "path_to_root": "concepts/tutorials/includes/javascript/src",
       "url": "https://github.com/microsoftgraph/msgraph-training-javascript",
-      "branch": "main"
+      "branch": "main",
+      "branch_mapping": {}
     },
     {
       "path_to_root": "concepts/tutorials/includes/php/src",
       "url": "https://github.com/microsoftgraph/msgraph-training-php",
-      "branch": "main"
+      "branch": "main",
+      "branch_mapping": {}
     },
     {
       "path_to_root": "concepts/tutorials/includes/power-automate/src",
       "url": "https://github.com/microsoftgraph/msgraph-training-powerautomate",
-      "branch": "main"
+      "branch": "main",
+      "branch_mapping": {}
     },
     {
       "path_to_root": "concepts/tutorials/includes/powershell/src",
       "url": "https://github.com/microsoftgraph/msgraph-training-powershell",
-      "branch": "main"
+      "branch": "main",
+      "branch_mapping": {}
     },
     {
       "path_to_root": "concepts/tutorials/includes/python/src",
       "url": "https://github.com/microsoftgraph/msgraph-training-python",
-      "branch": "main"
+      "branch": "main",
+      "branch_mapping": {}
     },
     {
       "path_to_root": "concepts/tutorials/includes/typescript/src",
       "url": "https://github.com/microsoftgraph/msgraph-training-typescript",
-      "branch": "main"
+      "branch": "main",
+      "branch_mapping": {}
     },
     {
       "path_to_root": "reusable-content",
@@ -152,7 +161,6 @@
       "branch": "main",
       "branch_mapping": {}
     }
-
   ],
   "branch_target_mapping": {},
   "targets": {},
@@ -164,29 +172,5 @@
     "ManagedReference": "Content",
     "RestApi": "Content",
     "Tutorial": "Content"
-  },  
-  "redirection_files": [
-    "redirects/.openpublishing.redirection.0820.json",
-    "redirects/.openpublishing.redirection.0920.json",
-    "redirects/.openpublishing.redirection.1120.json",
-    "redirects/.openpublishing.redirection.0121.json",
-    "redirects/.openpublishing.redirection.0721.json",
-    "redirects/.openpublishing.redirection.0921.json",
-    "redirects/.openpublishing.redirection.1121.json",
-    "redirects/.openpublishing.redirection.1221.json",
-    "redirects/.openpublishing.redirection.0522.json",
-    "redirects/.openpublishing.redirection.0822.json",
-    "redirects/.openpublishing.redirection.0423.json",
-    "redirects/.openpublishing.redirection.0523.json",
-    "redirects/.openpublishing.redirection.0723.json",
-    "redirects/.openpublishing.redirection.0823.json",
-    "redirects/.openpublishing.redirection.1023.json",
-    "redirects/.openpublishing.redirection.1123.json",
-    "redirects/.openpublishing.redirection.0524.json",
-    "redirects/.openpublishing.redirection.1024.json",
-    "redirects/.openpublishing.redirection.1124.json",
-    "redirects/.openpublishing.redirection.0525.json",
-    "redirects/.openpublishing.redirection.0625.json",
-    "redirects/.openpublishing.redirection.changedapi.json"
-  ]
+  }
 }

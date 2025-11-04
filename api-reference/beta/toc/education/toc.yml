@@ -128,14 +128,16 @@ items:
     href: ../../api/educationassignment-delete-rubric.md
   - name: Get delta
     href: ../../api/educationassignment-delta.md
-  - name: Add educationGradingCategory
+  - name: Add grading category
     href: ../../api/educationassignment-post-gradingcategory.md
-  - name: Remove educationGradingCategory
+  - name: Remove grading category
     href: ../../api/educationassignment-delete-gradingcategory.md
   - name: Activate assignment
     href: ../../api/educationassignment-activate.md
   - name: Deactivate assignment
     href: ../../api/educationassignment-deactivate.md
+  - name: Add grading scheme
+    href: ../../api/educationassignment-put-gradingscheme.md
 - name: Assignment defaults
   items:
   - name: Assignment defaults
@@ -154,14 +156,18 @@ items:
     href: ../../api/educationassignmentresource-get.md
   - name: Delete
     href: ../../api/educationassignmentresource-delete.md
+  - name: List dependent resources
+    href: ../../api/educationassignmentresource-list-dependentresources.md
 - name: Assignment settings
   items:
   - name: Assignment settings
     href: ../../resources/educationassignmentsettings.md
   - name: Get
     href: ../../api/educationassignmentsettings-get.md
-  - name: Update grading scheme
+  - name: Update
     href: ../../api/educationassignmentsettings-update.md
+  - name: Add default grading scheme
+    href: ../../api/educationassignmentsettings-put-defaultgradingscheme.md
 - name: Category
   items:
   - name: Category
@@ -198,14 +204,12 @@ items:
     href: ../../api/educationassignment-delete-gradingcategory.md
   - name: Update
     href: ../../api/educationgradingcategory-update.md
-- name: Grading schema
+- name: Grading scheme
   items:
-  - name: Grading schema
+  - name: Grading scheme
     href: ../../resources/educationgradingscheme.md
-  - name: List
-    href: ../../api/educationassignmentsettings-get.md
   - name: Create
-    href: ../../api/educationassignment-post-gradingscheme.md
+    href: ../../api/educationassignmentsettings-post-gradingschemes.md
   - name: Get
     href: ../../api/educationgradingscheme-get.md
   - name: Update
@@ -308,12 +312,14 @@ items:
   items:
   - name: Submission resource
     href: ../../resources/educationsubmissionresource.md
-  - name: List submission resources
+  - name: List
     href: ../../api/educationsubmission-list-resources.md
-  - name: Get submission resource
+  - name: Get
     href: ../../api/educationsubmissionresource-get.md
-  - name: Delete submission resource
+  - name: Delete
     href: ../../api/educationsubmissionresource-delete.md
+  - name: List dependent resources
+    href: ../../api/educationsubmissionresource-list-dependentresources.md
 - name: Reading assignment submission
   items:
   - name: Reading assignment submission

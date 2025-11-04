@@ -32,8 +32,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-POST /users/{usersId}/contacts/{contactId}/permanentDelete
-POST /users/{usersId}/contactFolders/{contactFolderId}/contacts/{contactId}/permanentDelete
+POST /users/{id | userPrincipalName}/contacts/{contactId}/permanentDelete
+POST /users/{id | userPrincipalName}/contactFolders/{contactFolderId}/contacts/{contactId}/permanentDelete
 ```
 
 ## Request headers

@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Clear the application's presence session for a user. If it is the user's only presence session, the user's presence will change to `Offline/Offline`.
 
-For details about presences sessions, see [presence: setPresence](presence-setpresence.md#presence-sessions).
+For details about presences sessions, see [presence: setPresence](/graph/cloud-communications-manage-presence-state#presence-sessions).
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -27,7 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ## HTTP Request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /users/{userId}/presence/clearPresence
+POST /users/{id}/presence/clearPresence
 ```
 
 ## Request headers

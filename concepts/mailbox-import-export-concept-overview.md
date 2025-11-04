@@ -7,6 +7,7 @@ ms.subservice: "outlook"
 ms.custom: scenarios:getting-started
 doc_type: conceptual
 ms.date: 12/06/2024
+ms.topic: concept-article
 ---
 
 # Overview of the mailbox import and export APIs in Microsoft Graph (preview)

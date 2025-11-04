@@ -1,7 +1,7 @@
 ---
 title: "Network Access enum values"
 description: "Microsoft Graph Network Access enumeration values"
-author: "sisharm"
+author: "miritsadon"
 ms.localizationpriority: medium
 ms.subservice: "entra-global-secure-access"
 doc_type: enumTypes
@@ -64,6 +64,52 @@ Namespace: microsoft.graph.networkaccess
 |connected|
 |inactive|
 |error|
+|unknownFutureValue|
+
+### alertSeverity values
+
+|Member|
+|:---|
+|informational|
+|low|
+|medium|
+|high|
+|unknownFutureValue|
+
+### alertType values
+
+|Member|
+|:---|
+|unhealthyRemoteNetworks|
+|unhealthyConnectors|
+|deviceTokenInconsistency|
+|crossTenantAnomaly|
+|suspiciousProcess|
+|threatIntelligenceTransactions|
+|unknownFutureValue|
+|webContentBlocked|
+|malware|
+|patientZero|
+|dlp|
+|fallback|
+
+### algorithm values
+
+|Member|
+|:---|
+|md5|
+|sha1|
+|sha256|
+|sha256ac|
+|unknownFutureValue|
+
+### confidenceLevel values
+
+|Member|
+|:---|
+|unknown|
+|low|
+|high|
 |unknownFutureValue|
 
 ### connectionStatus values
@@ -211,7 +257,84 @@ Namespace: microsoft.graph.networkaccess
 |webCategory|
 |unknownFutureValue|
 
-### networkingProtocol values 
+### intentCategory values
+
+|Member|
+|:---|
+|initialAccess|
+|persistence|
+|privilegeEscalation|
+|defenseEvasion|
+|credentialAccess|
+|discovery|
+|lateralMovement|
+|execution|
+|collection|
+|exfiltration|
+|commandAndControl|
+|impact|
+|impairProcessControl|
+|inhibitResponseFunction|
+|reconnaissance|
+|resourceDevelopment|
+|evasion|
+|unknownFutureValue|
+
+### malwareCategory values
+
+|Member|
+|:---|
+|adware|
+|backdoor|
+|behavior|
+|bot|
+|browserModifier|
+|constructor|
+|cryptojacking|
+|ddos|
+|dropper|
+|dropperMalware|
+|exploit|
+|filelessMalware|
+|hackTool|
+|hybridMalware|
+|joke|
+|keylogger|
+|misleading|
+|monitoringTool|
+|polymorphicMalware|
+|passwordStealer|
+|program|
+|ransomware|
+|remoteAccess|
+|rogue|
+|rootkit|
+|settingsModifier|
+|softwareBundler|
+|spammer|
+|spoofer|
+|spyware|
+|tool|
+|trojan|
+|trojanClicker|
+|trojanDownloader|
+|trojanNotifier|
+|trojanProxy|
+|trojanSpy|
+|virus|
+|wiperMalware|
+|worm|
+|unknownFutureValue|
+|potentiallyUnwantedApplication|
+|infostealer|
+|unknown|
+|phishing|
+|obfuscatedMalware|
+|coinMiner|
+|dialer|
+|grayware|
+
+### networkingProtocol values
 
 |Member|
 |:---|
@@ -403,7 +526,17 @@ Namespace: microsoft.graph.networkaccess
 |alive|
 |unknownFutureValue|
 
-### usageStatus values 
+### threatSeverity values
+
+|Member|
+|:---|
+|low|
+|medium|
+|high|
+|critical|
+|unknownFutureValue|
+
+### usageStatus values
 
 |Member|
 |:---|
@@ -411,7 +544,7 @@ Namespace: microsoft.graph.networkaccess
 |guest|
 |unknownFutureValue|
 
-### policyRule values  
+### policyRule values
 
 |Member|
 |:---|
@@ -445,6 +578,53 @@ Namespace: microsoft.graph.networkaccess
 |reportOnly|
 |unknownFutureValue|
 
+### cloudApplicationCategory values
+
+|Member|
+|:---|
+|hostingServices|
+|itServices|
+|accountingAndFinance|
+|businessManagement|
+|productivity|
+|eCommerce|
+|education|
+|marketing|
+|humanResourceManagement|
+|health|
+|security|
+|generativeAi|
+|newsAndEntertainment|
+|operationsManagement|
+|contentManagement|
+|developmentTools|
+|collaboration|
+|crm|
+|communications|
+|dataAnalytics|
+|advertising|
+|supplyChainAndLogistics|
+|projectManagement|
+|transportationAndTravel|
+|cloudComputingPlatform|
+|businessIntelligence|
+|cloudStorage|
+|propertyManagement|
+|contentSharing|
+|customerSupport|
+|sales|
+|productDesign|
+|socialNetwork|
+|onlineMeetings|
+|webmail|
+|internetOfThings|
+|forums|
+|webAnalytics|
+|websiteMonitoring|
+|vendorManagementSystem|
+|personalInstantMessaging|
+|codeHosting|
+|unknownFutureValue|
 
 <!--
 {

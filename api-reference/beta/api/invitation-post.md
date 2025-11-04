@@ -158,7 +158,8 @@ Content-type: application/json
         ]
     },
     "invitedUser": {
-        "id": "cbb896f9-8306-49d0-b56b-b8e39cd28825"
+        "id": "cbb896f9-8306-49d0-b56b-b8e39cd28825",
+        "userPrincipalName": "admin_fabrikam.com#EXT#@doc.onmicrosoft.com"
     }
 }
 ```
@@ -254,7 +255,8 @@ Content-type: application/json
         ]
     },
     "invitedUser": {
-        "id": "264e6d50-eaec-461e-b187-873b1bcf855f"
+        "id": "264e6d50-eaec-461e-b187-873b1bcf855f",
+        "userPrincipalName": "AdeleV_fabrikam.com#EXT#@doc.onmicrosoft.com"
     }
 }
 ```

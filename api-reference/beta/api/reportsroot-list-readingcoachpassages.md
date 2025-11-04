@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 
 Get a list of [Reading Coach passages](../resources/readingcoachpassage.md) that were practiced by a student.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -89,6 +91,10 @@ GET https://graph.microsoft.com/beta/education/reports/readingCoachPassages
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-readingcoachpassages-1-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-readingcoachpassages-1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -186,6 +192,10 @@ GET https://graph.microsoft.com/beta/education/reports/readingCoachPassages?$fil
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-readingcoachpassages-2-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-readingcoachpassages-2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

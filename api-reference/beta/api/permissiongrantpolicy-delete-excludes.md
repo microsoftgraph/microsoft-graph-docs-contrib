@@ -1,6 +1,6 @@
 ---
 title: "Delete permissionGrantConditionSet from excludes collection of permissionGrantPolicy"
-description: "Deletes an excluded condition set from permission grant policy."
+description: "Delete a permissionGrantConditionSet from the excludes collection of a permissionGrantPolicy."
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.subservice: "entra-sign-in"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Deletes a [permissionGrantConditionSet](../resources/permissiongrantconditionset.md) from the **excludes** collection of a [permissionGrantPolicy](../resources/permissiongrantpolicy.md).
+Delete a [permissionGrantConditionSet](../resources/permissiongrantconditionset.md) from the **excludes** collection of a [permissionGrantPolicy](../resources/permissiongrantpolicy.md).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

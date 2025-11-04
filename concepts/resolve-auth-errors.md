@@ -4,6 +4,7 @@ description: "Find out how to resolve Microsoft Graph 401 and 403 authorization 
 ms.localizationpriority: high
 ms.custom: graphiamtop20
 ms.date: 11/07/2024
+ms.topic: how-to
 ---
 
 # Resolve Microsoft Graph authorization errors
@@ -21,7 +22,7 @@ To resolve common authorization errors, try the steps described for the error th
 
 ### 401 Unauthorized error: Is your token valid?
 
-Make sure that your application is presenting a valid access token to Microsoft Graph as part of the request. This error often means that the access token may be missing in the HTTP authenticate request header or that the token is invalid or is expired. We strongly recommend that you use the [Microsoft Authentication Library (MSAL)](/azure/active-directory/develop/msal-overview) for access token acquisition. Additionally this error may occur, if you try to use a delegated access token granted to a personal Microsoft account, to access an API that only supports work or school accounts (organizational accounts).
+Make sure that your application is presenting a valid access token to Microsoft Graph as part of the request. This error often means that the access token might be missing in the HTTP authenticate request header or that the token is invalid or is expired. We strongly recommend that you use the [Microsoft Authentication Library (MSAL)](/azure/active-directory/develop/msal-overview) for access token acquisition. Additionally this error might occur, if you try to use a delegated access token granted to a personal Microsoft account, to access an API that only supports work or school accounts (organizational accounts).
 
 ### 403 Forbidden error: Have you chosen the right set of permissions?
 

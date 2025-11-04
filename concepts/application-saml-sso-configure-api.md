@@ -25,6 +25,10 @@ In this tutorial, you learn how to:
 > * Configure a certificate for federated SSO
 > * Retrieve the Microsoft Entra ID SAML metadata for your application that you use to complete the integration
 
+> [!NOTE]
+> The steps for setting up SAML applications apply to configurations that use the SP-initiated flow.
+> The IDP-initiated flow requires modifying the SAML application in Entra ID to add the identifier (entity ID).
+
 ## Prerequisites
 
 This tutorial configures SSO for the AWS IAM Identity Center. However, most of the steps on Microsoft Graph apply to any other app that you want to configure SSO.
@@ -570,7 +574,7 @@ In addition to the basic claims, configure the following claims for Microsoft En
 | `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier` | `userprincipalname` |
 
 > [!NOTE]
-> Some keys in the claims mapping policy, such as **Version**, are case sensitive. The error message "Property has an invalid value" might be a case sensitivity issue.
+> Some keys in the claims mapping policy, such as **Version**, are case sensitive. The error message "Property has an invalid value" indicates a case sensitivity issue.
 
 Create the claims mapping policy and record its ID for use later in this tutorial.
 
@@ -1176,7 +1180,7 @@ Use the following URL to get the Microsoft Entra ID SAML metadata for AWS Contos
 
 `https://login.microsoftonline.com/{tenant-id}/federationmetadata/2007-06/federationmetadata.xml?appid={appId}`
 
-The following shows an example of what you might see for your application. Save the data in XML format.
+The following shows an example of what you see for your application. Save the data in XML format.
 
 ```xml
 <EntityDescriptor xmlns="urn:oasis:names:tc:SAML:2.0:metadata" ID="_26313693-22d4-4361-8e48-ea19bb8616e1" entityID="https://sts.windows.net/38d49456-54d4-455d-a8d6-c383c71e0a6d/">

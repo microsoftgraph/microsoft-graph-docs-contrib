@@ -32,7 +32,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/contactFolders/{id}/contacts/delta
-GET /users/{id}/contactFolders/{id}/contacts/delta
+GET /users/{id | userPrincipalName}/contactFolders/{id}/contacts/delta
 ```
 
 ## Query parameters

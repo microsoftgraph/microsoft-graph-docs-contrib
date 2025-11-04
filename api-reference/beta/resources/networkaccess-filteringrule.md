@@ -16,7 +16,7 @@ Namespace: microsoft.graph.networkaccess
 
 An abstract type that represents a rule that filters traffic in Global Secure Access.
 
-Base type of [fqdnFilteringRule](networkaccess-fqdnfilteringrule.md) and [webCategoryFilteringRule](networkaccess-webcategoryfilteringrule.md).
+Base type of [fqdnFilteringRule](networkaccess-fqdnfilteringrule.md), [urlDestinationFilteringRule](networkaccess-urldestinationfilteringrule.md), and [webCategoryFilteringRule](networkaccess-webcategoryfilteringrule.md).
 
 Inherits from [policyRule](../resources/networkaccess-policyrule.md).
 
@@ -28,6 +28,7 @@ Inherits from [policyRule](../resources/networkaccess-policyrule.md).
 |[Get](../api/networkaccess-filteringrule-get.md)|[microsoft.graph.networkaccess.filteringRule](../resources/networkaccess-filteringrule.md)|Get the properties and relationships of an object type that is derived from **filteringRule**.|
 |[Update](../api/networkaccess-filteringrule-update.md)|[microsoft.graph.networkaccess.filteringRule](../resources/networkaccess-filteringrule.md)|Update the properties of an object type that is derived from **filteringRule**.|
 |[Delete](../api/networkaccess-filteringrule-delete.md)|None|Delete an object type that is derived from **filteringRule**.|
+|[Get web category by URL](../api/networkaccess-connectivity-getwebcategorybyurl.md)|[microsoft.graph.networkaccess.webCategory](../resources/networkaccess-webcategory.md)|Check the web category of a given Uniform Resource Locator (URL).|
 
 ## Properties
 |Property|Type|Description|

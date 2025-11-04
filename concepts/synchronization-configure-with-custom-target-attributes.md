@@ -6,6 +6,7 @@ doc_type: conceptualPageType
 author: "ArvindHarinder1"
 ms.subservice: entra-applications
 ms.date: 06/27/2023
+ms.topic: how-to
 ---
 # Configure synchronization with custom target attributes
 

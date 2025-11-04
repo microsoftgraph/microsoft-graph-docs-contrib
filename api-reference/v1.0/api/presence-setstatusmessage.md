@@ -25,7 +25,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ## HTTP Request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /users/{userId}/presence/setStatusMessage
+POST /users/{id}/presence/setStatusMessage
 ```
 
 ## Request headers
@@ -261,6 +261,7 @@ Content-Type: application/json
       "content": "Hey I am available now",
       "contentType": "text"
     }
-  }
+  },
+  "sequenceNumber": "A0129311063"
 }
 ```

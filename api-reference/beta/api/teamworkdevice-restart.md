@@ -11,6 +11,8 @@ ms.date: 04/04/2024
 # teamworkDevice: restart
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-deprecation-disclaimer](../../includes/beta-deprecation-disclaimer.md)]
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Restart the specified Microsoft Teams-enabled [device](../resources/teamworkdevice.md) asynchronously. 

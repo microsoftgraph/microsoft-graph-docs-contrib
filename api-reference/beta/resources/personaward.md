@@ -1,6 +1,6 @@
 ---
 title: "personAward resource type"
-description: "personAward resource type"
+description: "Represents an award that has been associated with a user's profile."
 ms.localizationpriority: medium
 author: "kevinbellinger"
 ms.subservice: "people"
@@ -23,7 +23,7 @@ Inherits from [itemFacet](../resources/itemfacet.md).
 |[Create](../api/profile-post-awards.md)|[personAward](../resources/personaward.md)|Create a new personAward object.|
 |[Get](../api/personaward-get.md)|[personAward](../resources/personaward.md)|Read the properties and relationships of an [personAward](../resources/personaward.md) object.|
 |[Update](../api/personaward-update.md)|[personAward](../resources/personaward.md)|Update the properties of an [personAward](../resources/personaward.md) object.|
-|[Delete](../api/personaward-delete.md)|None|Deletes an [personAward](../resources/personaward.md) object.|
+|[Delete](../api/personaward-delete.md)|None|Delete an [personAward](../resources/personaward.md) object.|
 
 ## Properties
 |Property|Type|Description|
