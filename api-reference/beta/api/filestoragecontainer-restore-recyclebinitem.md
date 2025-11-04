@@ -66,7 +66,7 @@ The following example shows a request.
 
 <!-- {
   "blockType": "request",
-  "name": "restore_filestoragecontainer_recyclebinitem",
+  "name": "restore_filestoragecontainer_recyclebinitem1",
   "@odata.type": "Collection(microsoft.graph.recycleBinItem)"
 }
 -->
@@ -118,7 +118,6 @@ In this example, the `driveItemId` is passed as a function parameter in the requ
 
 ``` http
 POST https://graph.microsoft.com/beta/storage/fileStorage/containers/b!LRJHKCBZQU2fLtv8TzUomsz-OP7yGQRNlugra1iGHqRe5fORWrrHTbh8J8O8qPmx/recycleBin/items(driveItemId='01GC3BS4QFPBCZRLJHJVEYPITEHTDBYHBH')/restore
-Content-Type: application/json
 Content-Type: application/json
 ```
 
