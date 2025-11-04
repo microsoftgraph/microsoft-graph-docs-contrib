@@ -155,7 +155,7 @@ Use the extended properties API to store or get custom data in the [todoTask](/g
 
 ### Teamwork and communications | Calls and online meetings
 
-- Add the **sensitivityLabelAssignment** property to the [onlineMeeting](/graph/api/resources/onlineMeeting?view=graph-rest-beta), which represent the sensitivity level of the meeting. This id correlated with the identifier configured on Microsoft Purview portal.
+- Added the **sensitivityLabelAssignment** property to the [onlineMeeting](/graph/api/resources/onlineMeeting?view=graph-rest-beta), which represents the meeting’s sensitivity level. This ID corresponds to the identifier configured in the Microsoft Purview portal.
 
 ## September 2025: New and generally available
 
