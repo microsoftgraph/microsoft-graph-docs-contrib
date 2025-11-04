@@ -90,10 +90,12 @@ Content-Type: application/json
   "sourceOrganizationId": "Guid",
   "userType": "String",
   "sourceUserIdentity": {
-    "@odata.type": "microsoft.graph.userIdentity"
+    "@odata.type": "microsoft.graph.userIdentity",
+    "userPrincipalName": "String"
   },
   "targetUserIdentity": {
-    "@odata.type": "microsoft.graph.userIdentity"
+    "@odata.type": "microsoft.graph.userIdentity",
+    "userPrincipalName": "String"
   },
   "targetUserMigrationData": {
     "@odata.type": "microsoft.graph.sharePointIdentityMappingUserMigrationData"

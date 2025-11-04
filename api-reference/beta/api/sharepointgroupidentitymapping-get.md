@@ -90,10 +90,12 @@ Content-Type: application/json
   "sourceOrganizationId": "Guid",
   "groupType": "String",
   "sourceGroupIdentity": {
-    "@odata.type": "microsoft.graph.identity"
+    "@odata.type": "microsoft.graph.identity",
+    "id": "String"
   },
   "targetGroupIdentity": {
-    "@odata.type": "microsoft.graph.identity"
+    "@odata.type": "microsoft.graph.identity",
+    "id": "String"
   },
   "targetGroupMigrationData": {
     "@odata.type": "microsoft.graph.sharePointIdentityMappingGroupMigrationData"

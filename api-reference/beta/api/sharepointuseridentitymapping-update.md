@@ -86,10 +86,12 @@ Content-Type: application/json
       "sourceOrganizationId": "Guid",
       "userType": "String",
       "sourceUserIdentity": {
-        "@odata.type": "microsoft.graph.userIdentity"
+        "@odata.type": "microsoft.graph.userIdentity",
+        "userPrincipalName": "String"
       },
       "targetUserIdentity": {
-        "@odata.type": "microsoft.graph.userIdentity"
+        "@odata.type": "microsoft.graph.userIdentity",
+        "userPrincipalName": "String"
       },
       "targetUserMigrationData": {
         "@odata.type": "microsoft.graph.sharePointIdentityMappingUserMigrationData"
@@ -101,7 +103,8 @@ Content-Type: application/json
         "reason": "deleted"
       },
       "sourceUserIdentity": {
-        "@odata.type": "microsoft.graph.userIdentity"
+        "@odata.type": "microsoft.graph.userIdentity",
+        "userPrincipalName": "String"
       }
     }
   ]
@@ -131,10 +134,12 @@ Content-Type: application/json
       "sourceOrganizationId": "Guid",
       "userType": "String",
       "sourceUserIdentity": {
-        "@odata.type": "microsoft.graph.userIdentity"
+        "@odata.type": "microsoft.graph.userIdentity",
+        "userPrincipalName": "String"
       },
       "targetUserIdentity": {
-        "@odata.type": "microsoft.graph.userIdentity"
+        "@odata.type": "microsoft.graph.userIdentity",
+        "userPrincipalName": "String"
       },
       "targetUserMigrationData": {
         "@odata.type": "microsoft.graph.sharePointIdentityMappingUserMigrationData"
@@ -144,7 +149,8 @@ Content-Type: application/json
       "@odata.type": "#microsoft.graph.sharePointUserIdentityMapping",
       "id": "String (base64-encoded identifier)",
       "sourceUserIdentity": {
-        "@odata.type": "microsoft.graph.userIdentity"
+        "@odata.type": "microsoft.graph.userIdentity",
+        "userPrincipalName": "String"
       }
     }
   ]
