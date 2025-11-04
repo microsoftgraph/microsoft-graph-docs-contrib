@@ -1,8 +1,8 @@
----
+﻿---
 title: "policyDeletableItem resource type"
 description: "Represents policy types in Microsoft Entra that support soft-delete functionality."
 author: "ashyasingh"
-ms.date: 06/18/2025
+ms.date: 08/11/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
@@ -19,9 +19,13 @@ Represents policy types in Microsoft Entra that support soft-delete functionalit
 This resource is an abstract type from which the following resources inherit: 
 - [crossTenantAccessPolicyConfigurationPartner](../resources/crosstenantaccesspolicyconfigurationpartner.md)
 - [crossTenantIdentitySyncPolicyPartner](../resources/crosstenantidentitysyncpolicypartner.md)
+- [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md)
+- [namedLocation](../resources/namedlocation.md)
+
+Inherits from [entity](../resources/entity.md)
 
 ## Methods
-None
+None.
 
 ## Properties
 |Property|Type|Description|
@@ -46,3 +50,4 @@ The following JSON representation shows the resource type.
   "deletedDateTime": "String (timestamp)"
 }
 ```
+

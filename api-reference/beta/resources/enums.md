@@ -223,6 +223,31 @@ Namespace: microsoft.graph
 | active |
 | unknownfuturevalue |
 
+### sharePointMigrationJobErrorLevel values
+
+|Member|
+|:---|
+|important|
+|warning|
+|error|
+|fatalError|
+|unknownFutureValue|
+
+### sharePointMigrationObjectType values
+
+|Member|
+|:---|
+|site|
+|web|
+|folder|
+|list|
+|listItem|
+|file|
+|alert|
+|sharedWithObject|
+|invalid|
+|unknownFutureValue|
+
 ### siteLockState values
 
 | Value         |
@@ -5389,4 +5414,22 @@ Possible values for user account types (group membership), per Windows definitio
 |d1|
 |d7|
 |d30|
+|unknownFutureValue|
+
+### aggregationWindow values 
+
+|Member|
+|:---|
+|h1|
+|h6|
+|d1|
+|unknownFutureValue|
+
+### siteTemplateType values 
+
+|Member|
+|:---|
+|sitepagepublishing|
+|group|
+|sts|
 |unknownFutureValue|

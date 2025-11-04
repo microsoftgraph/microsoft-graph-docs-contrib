@@ -156,6 +156,8 @@ items:
     href: ../../api/educationassignmentresource-get.md
   - name: Delete
     href: ../../api/educationassignmentresource-delete.md
+  - name: List dependent resources
+    href: ../../api/educationassignmentresource-list-dependentresources.md
 - name: Assignment settings
   items:
   - name: Assignment settings
@@ -214,8 +216,6 @@ items:
     href: ../../api/educationgradingscheme-update.md
   - name: Delete
     href: ../../api/educationgradingscheme-delete.md
-  - name: Add grading scheme
-    href: ../../api/educationassignment-put-gradingscheme.md
 - name: Module
   items:
   - name: Module
@@ -312,12 +312,14 @@ items:
   items:
   - name: Submission resource
     href: ../../resources/educationsubmissionresource.md
-  - name: List submission resources
+  - name: List
     href: ../../api/educationsubmission-list-resources.md
-  - name: Get submission resource
+  - name: Get
     href: ../../api/educationsubmissionresource-get.md
-  - name: Delete submission resource
+  - name: Delete
     href: ../../api/educationsubmissionresource-delete.md
+  - name: List dependent resources
+    href: ../../api/educationsubmissionresource-list-dependentresources.md
 - name: Reading assignment submission
   items:
   - name: Reading assignment submission

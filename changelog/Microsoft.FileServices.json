@@ -1,5 +1,105 @@
 {
   "changelog": [
+     {
+      "ChangeList": [
+        {
+          "Id": "6e7a02d3-ce78-484b-8801-c15a835e1e1e",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "siteTemplateType",
+          "ChangeType": "Addition",
+          "Description": "Added the **siteTemplateType** enumeration type.",
+          "Target": "siteTemplateType"
+        },
+        {
+          "Id": "6e7a02d3-ce78-484b-8801-c15a835e1e1e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "identityInput",
+          "ChangeType": "Addition",
+          "Description": "Added the [identityInput](https://learn.microsoft.com/en-us/graph/api/resources/identityInput?view=graph-rest-beta) resource type.",
+          "Target": "identityInput"
+        },
+        {
+          "Id": "6e7a02d3-ce78-484b-8801-c15a835e1e1e",
+          "ApiChange": "Property",
+          "ChangedApiName": "locale",
+          "ChangeType": "Addition",
+          "Description": "Added the **locale** property to the [site](https://learn.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-beta) resource.",
+          "Target": "site"
+        },
+        {
+          "Id": "6e7a02d3-ce78-484b-8801-c15a835e1e1e",
+          "ApiChange": "Property",
+          "ChangedApiName": "lockState",
+          "ChangeType": "Addition",
+          "Description": "Added the **lockState** property to the [site](https://learn.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-beta) resource.",
+          "Target": "site"
+        },
+        {
+          "Id": "6e7a02d3-ce78-484b-8801-c15a835e1e1e",
+          "ApiChange": "Property",
+          "ChangedApiName": "ownerIdentityToResolve",
+          "ChangeType": "Addition",
+          "Description": "Added the **ownerIdentityToResolve** property to the [site](https://learn.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-beta) resource.",
+          "Target": "site"
+        },
+        {
+          "Id": "6e7a02d3-ce78-484b-8801-c15a835e1e1e",
+          "ApiChange": "Property",
+          "ChangedApiName": "shareByEmailEnabled",
+          "ChangeType": "Addition",
+          "Description": "Added the **shareByEmailEnabled** property to the [site](https://learn.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-beta) resource.",
+          "Target": "site"
+        },
+        {
+          "Id": "6e7a02d3-ce78-484b-8801-c15a835e1e1e",
+          "ApiChange": "Property",
+          "ChangedApiName": "template",
+          "ChangeType": "Addition",
+          "Description": "Added the **template** property to the [site](https://learn.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-beta) resource.",
+          "Target": "site"
+        },
+        {
+          "Id": "6e7a02d3-ce78-484b-8801-c15a835e1e1e",
+          "ApiChange": "Method",
+          "ChangedApiName": "getOperationStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the [getOperationStatus](https://learn.microsoft.com/en-us/graph/api/site-getOperationStatus?view=graph-rest-beta) method to the [site](https://learn.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-beta) resource.",
+          "Target": "site"
+        },
+        {
+          "Id": "6e7a02d3-ce78-484b-8801-c15a835e1e1e",
+          "ApiChange": "Method",
+          "ChangedApiName": "site",
+          "ChangeType": "Addition",
+          "Description": "Added the [create](https://learn.microsoft.com/en-us/graph/api/site-post-sites?view=graph-rest-beta) method to the [site](https://learn.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-beta) resource.",
+          "Target": "site"
+        }
+      ],
+      "Id": "6e7a02d3-ce78-484b-8801-c15a835e1e1e",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-10-23T10:36:47.2630406Z",
+      "WorkloadArea": "Sites and lists",
+      "SubArea": ""
+    },
+    {
+        "ChangeList": [
+          {
+            "Id": "1fd05db7-93bb-4a07-a6fa-0891cc23ee3d",
+            "ApiChange": "Header",
+            "ChangedApiName": "if-none-match",
+            "ChangeType": "Addition",
+            "Description": "Added the `if-none-match` header to the [driveItem: createUploadSession](https://learn.microsoft.com/en-us/graph/api/driveitem-createuploadsession?view=graph-rest-beta) method.",
+            "Target": "createUploadSession"
+          }
+        ],
+        "Id": "1fd05db7-93bb-4a07-a6fa-0891cc23ee3d",
+        "Cloud": "Prod",
+        "Version": "beta",
+        "CreatedDateTime": "2025-10-20T10:30:00.3354597Z",
+        "WorkloadArea": "Files",
+        "SubArea": ""
+      },
       {
       "ChangeList": [
         {
@@ -153,6 +253,24 @@
         "CreatedDateTime": "2024-09-26T06:57:37.5509045Z",
         "WorkloadArea": "Files",
         "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "d612afb2-fc58-44bb-b9ea-07f99bde6cfe",
+          "ApiChange": "Property",
+          "ChangedApiName": "itemDefaultSensitivityLabelId",
+          "ChangeType": "Addition",
+          "Description": "Added the **itemDefaultSensitivityLabelId** property to the [fileStorageContainerSettings](https://learn.microsoft.com/en-us/graph/api/resources/fileStorageContainerSettings?view=graph-rest-beta) resource.",
+          "Target": "fileStorageContainerSettings"
+        }
+      ],
+      "Id": "d612afb2-fc58-44bb-b9ea-07f99bde6cfe",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-10-29T22:00:29.1040559Z",
+      "WorkloadArea": "Files",
+      "SubArea": ""
     },
     {
       "ChangeList": [
@@ -4395,6 +4513,136 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2025-03-19T18:23:42.5437381Z",
+      "WorkloadArea": "Files",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "cc8159ad-816b-4f42-bd9d-b4f925d909e6",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "migrationJobs",
+          "ChangeType": "Addition",
+          "Description": "Added the **migrationJobs** relationship to the [fileStorageContainer](https://learn.microsoft.com/en-us/graph/api/resources/fileStorageContainer?view=graph-rest-beta) resource.",
+          "Target": "fileStorageContainer"
+        },
+        {
+          "Id": "cc8159ad-816b-4f42-bd9d-b4f925d909e6",
+          "ApiChange": "Method",
+          "ChangedApiName": "provisionMigrationContainers",
+          "ChangeType": "Addition",
+          "Description": "Added the [provisionMigrationContainers](https://learn.microsoft.com/en-us/graph/api/fileStorageContainer-provisionMigrationContainers?view=graph-rest-beta) method to the [fileStorageContainer](https://learn.microsoft.com/en-us/graph/api/resources/fileStorageContainer?view=graph-rest-beta) resource.",
+          "Target": "fileStorageContainer"
+        },
+        {
+          "Id": "cc8159ad-816b-4f42-bd9d-b4f925d909e6",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "sharePointMigrationJobErrorLevel",
+          "ChangeType": "Addition",
+          "Description": "Added the **sharePointMigrationJobErrorLevel** enumeration type.",
+          "Target": "sharePointMigrationJobErrorLevel"
+        },
+        {
+          "Id": "cc8159ad-816b-4f42-bd9d-b4f925d909e6",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "sharePointMigrationObjectType",
+          "ChangeType": "Addition",
+          "Description": "Added the **sharePointMigrationObjectType** enumeration type.",
+          "Target": "sharePointMigrationObjectType"
+        },
+        {
+          "Id": "cc8159ad-816b-4f42-bd9d-b4f925d909e6",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sharePointMigrationContainerInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [sharePointMigrationContainerInfo](https://learn.microsoft.com/en-us/graph/api/resources/sharePointMigrationContainerInfo?view=graph-rest-beta) resource.",
+          "Target": "sharePointMigrationContainerInfo"
+        },
+        {
+          "Id": "cc8159ad-816b-4f42-bd9d-b4f925d909e6",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sharePointMigrationEvent",
+          "ChangeType": "Addition",
+          "Description": "Added the [sharePointMigrationEvent](https://learn.microsoft.com/en-us/graph/api/resources/sharePointMigrationEvent?view=graph-rest-beta) resource.",
+          "Target": "sharePointMigrationEvent"
+        },
+        {
+          "Id": "cc8159ad-816b-4f42-bd9d-b4f925d909e6",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sharePointMigrationFinishManifestFileUploadEvent",
+          "ChangeType": "Addition",
+          "Description": "Added the [sharePointMigrationFinishManifestFileUploadEvent](https://learn.microsoft.com/en-us/graph/api/resources/sharePointMigrationFinishManifestFileUploadEvent?view=graph-rest-beta) resource.",
+          "Target": "sharePointMigrationFinishManifestFileUploadEvent"
+        },
+        {
+          "Id": "cc8159ad-816b-4f42-bd9d-b4f925d909e6",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sharePointMigrationJob",
+          "ChangeType": "Addition",
+          "Description": "Added the [sharePointMigrationJob](https://learn.microsoft.com/en-us/graph/api/resources/sharePointMigrationJob?view=graph-rest-beta) resource.",
+          "Target": "sharePointMigrationJob"
+        },
+        {
+          "Id": "cc8159ad-816b-4f42-bd9d-b4f925d909e6",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sharePointMigrationJobCancelledEvent",
+          "ChangeType": "Addition",
+          "Description": "Added the [sharePointMigrationJobCancelledEvent](https://learn.microsoft.com/en-us/graph/api/resources/sharePointMigrationJobCancelledEvent?view=graph-rest-beta) resource.",
+          "Target": "sharePointMigrationJobCancelledEvent"
+        },
+        {
+          "Id": "cc8159ad-816b-4f42-bd9d-b4f925d909e6",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sharePointMigrationJobDeletedEvent",
+          "ChangeType": "Addition",
+          "Description": "Added the [sharePointMigrationJobDeletedEvent](https://learn.microsoft.com/en-us/graph/api/resources/sharePointMigrationJobDeletedEvent?view=graph-rest-beta) resource.",
+          "Target": "sharePointMigrationJobDeletedEvent"
+        },
+        {
+          "Id": "cc8159ad-816b-4f42-bd9d-b4f925d909e6",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sharePointMigrationJobErrorEvent",
+          "ChangeType": "Addition",
+          "Description": "Added the [sharePointMigrationJobErrorEvent](https://learn.microsoft.com/en-us/graph/api/resources/sharePointMigrationJobErrorEvent?view=graph-rest-beta) resource.",
+          "Target": "sharePointMigrationJobErrorEvent"
+        },
+        {
+          "Id": "cc8159ad-816b-4f42-bd9d-b4f925d909e6",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sharePointMigrationJobPostponedEvent",
+          "ChangeType": "Addition",
+          "Description": "Added the [sharePointMigrationJobPostponedEvent](https://learn.microsoft.com/en-us/graph/api/resources/sharePointMigrationJobPostponedEvent?view=graph-rest-beta) resource.",
+          "Target": "sharePointMigrationJobPostponedEvent"
+        },
+        {
+          "Id": "cc8159ad-816b-4f42-bd9d-b4f925d909e6",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sharePointMigrationJobProgressEvent",
+          "ChangeType": "Addition",
+          "Description": "Added the [sharePointMigrationJobProgressEvent](https://learn.microsoft.com/en-us/graph/api/resources/sharePointMigrationJobProgressEvent?view=graph-rest-beta) resource.",
+          "Target": "sharePointMigrationJobProgressEvent"
+        },
+        {
+          "Id": "cc8159ad-816b-4f42-bd9d-b4f925d909e6",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sharePointMigrationJobQueuedEvent",
+          "ChangeType": "Addition",
+          "Description": "Added the [sharePointMigrationJobQueuedEvent](https://learn.microsoft.com/en-us/graph/api/resources/sharePointMigrationJobQueuedEvent?view=graph-rest-beta) resource.",
+          "Target": "sharePointMigrationJobQueuedEvent"
+        },
+        {
+          "Id": "cc8159ad-816b-4f42-bd9d-b4f925d909e6",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sharePointMigrationJobStartEvent",
+          "ChangeType": "Addition",
+          "Description": "Added the [sharePointMigrationJobStartEvent](https://learn.microsoft.com/en-us/graph/api/resources/sharePointMigrationJobStartEvent?view=graph-rest-beta) resource.",
+          "Target": "sharePointMigrationJobStartEvent"
+        }
+      ],
+      "Id": "cc8159ad-816b-4f42-bd9d-b4f925d909e6",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-10-01T14:50:53.1991698Z",
       "WorkloadArea": "Files",
       "SubArea": ""
     },
