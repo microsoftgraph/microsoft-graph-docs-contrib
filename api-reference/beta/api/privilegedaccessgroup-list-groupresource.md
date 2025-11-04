@@ -53,7 +53,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 #### Request
 The following example shows a request.
-# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "list_privilegedaccessgroupgroupresource"
@@ -62,7 +62,6 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com//beta/identityGovernance/privilegedAccess/group/resources
 ```
----
 
 #### Response
 If successful, this method returns a `200 OK` response code and a collection of [groupResource](../resources/groupResource.md) objects in the response body.
