@@ -1,0 +1,74 @@
+---
+title: "customDataProvidedResourceUploadSession resource type"
+description: "**TODO: Add Description**"
+author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.date: 10/29/2025
+ms.localizationpriority: medium
+ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+doc_type: resourcePageType
+---
+
+# customDataProvidedResourceUploadSession resource type
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Represents an upload session created on a [customDataProvidedResource](../resources/customdataprovidedresource.md)
+
+
+Inherits from [entity](../resources/entity.md).
+
+
+## Methods
+|Method|Return type| Description                                                                                                                                         |
+|:---|:---|:----------------------------------------------------------------------------------------------------------------------------------------------------|
+|[Create](../api/customdataprovidedresourceuploadsession-post.md)|[customDataProvidedResourceUploadSession](../resources/customdataprovidedresourceuploadsession.md)| Create a new customDataProvidedResourceUploadSession object.                                                                                        |
+|[Get](../api/customdataprovidedresourceuploadsession-get.md)|[customDataProvidedResourceUploadSession](../resources/customdataprovidedresourceuploadsession.md)| Read the properties and relationships of [customDataProvidedResourceUploadSession](../resources/customdataprovidedresourceuploadsession.md) object. |
+|[Update](../api/customdataprovidedresourceuploadsession-update.md)|[customDataProvidedResourceUploadSession](../resources/customdataprovidedresourceuploadsession.md)| Update the properties of a customDataProvidedResourceUploadSession object.                                                                          |
+|[uploadFile](../api/customdataprovidedresourceuploadsession-uploadfile.md)|[customDataProvidedResourceUploadSession](../resources/customdataprovidedresourceuploadsession.md)| Upload a file in this upload session.                                                                                                               |
+
+## Properties
+|Property|Type| Description                                                                                                                                                                               |
+|:---|:---|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|createdDateTime|DateTimeOffset| DateTime when the upload session was created. Read-only.                                                                                                                                  |
+|expirationDateTime|DateTimeOffset| DateTime when the session automatically expires. No further file uploads are allowed as part of this session after this time.                                                             |
+|id|String| Unique identifier of the upload session. Read-only.                                                                                                                                       |
+|isUploadDone|Boolean| Indicates if all the necessary files have been uploaded to this session.                                                                                                                  |
+|source|String| The source of the access data.                                                                                                                                                            |
+|stats|[customDataProvidedResourceUploadStats](../resources/customdataprovidedresourceuploadstats.md)| Metadata about the files uploaded in this upload session thus far.                                                                                                                        |
+|status|customDataProvidedResourceUploadStatus| Status of the upload session. The possible values are: `active`, `complete`, `expired`, `unknownFutureValue`.                                                                             |
+|type|String| Schematized form of the expected CSV columns in the uploaded file. The only possible value currently is: "#microsoft.graph.accessReviewDataUploadTriggerCallbackData"                     |
+
+## Relationships
+None.
+
+## JSON representation
+The following JSON representation shows the resource type.
+<!-- {
+  "blockType": "resource",
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.customDataProvidedResourceUploadSession",
+  "baseType": "microsoft.graph.entity",
+  "openType": false
+}
+-->
+``` json
+{
+  "@odata.type": "#microsoft.graph.customDataProvidedResourceUploadSession",
+  "id": "String (identifier)",
+  "status": "String",
+  "isUploadDone": "Boolean",
+  "stats": {
+    "@odata.type": "microsoft.graph.customDataProvidedResourceUploadStats"
+  },
+  "createdDateTime": "String (timestamp)",
+  "expirationDateTime": "String (timestamp)",
+  "source": "String",
+  "type": "String",
+  "data": {
+    "@odata.type": "microsoft.graph.customExtensionData"
+  }
+}
+```
+

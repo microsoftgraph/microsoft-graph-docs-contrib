@@ -1,0 +1,54 @@
+﻿{
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "4df9e300-5aa5-42e3-9006-c118e0a5a2a6",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "customDataProvidedResourceUploadStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **customDataProvidedResourceUploadStatus** enumeration type.",
+          "Target": "customDataProvidedResourceUploadStatus"
+        },
+        {
+          "Id": "4df9e300-5aa5-42e3-9006-c118e0a5a2a6",
+          "ApiChange": "Resource",
+          "ChangedApiName": "customDataProvidedResourceUploadSessionRequest",
+          "ChangeType": "Addition",
+          "Description": "Added the [customDataProvidedResourceUploadSessionRequest](https://learn.microsoft.com/en-us/graph/api/resources/customDataProvidedResourceUploadSessionRequest?view=graph-rest-beta) resource.",
+          "Target": "customDataProvidedResourceUploadSessionRequest"
+        },
+        {
+          "Id": "4df9e300-5aa5-42e3-9006-c118e0a5a2a6",
+          "ApiChange": "Resource",
+          "ChangedApiName": "customDataProvidedResourceFile",
+          "ChangeType": "Addition",
+          "Description": "Added the [customDataProvidedResourceFile](https://learn.microsoft.com/en-us/graph/api/resources/customDataProvidedResourceFile?view=graph-rest-beta) resource.",
+          "Target": "customDataProvidedResourceFile"
+        },
+        {
+          "Id": "4df9e300-5aa5-42e3-9006-c118e0a5a2a6",
+          "ApiChange": "Resource",
+          "ChangedApiName": "customDataProvidedResourceUploadSession",
+          "ChangeType": "Addition",
+          "Description": "Added the [customDataProvidedResourceUploadSession](https://learn.microsoft.com/en-us/graph/api/resources/customDataProvidedResourceUploadSession?view=graph-rest-beta) resource.",
+          "Target": "customDataProvidedResourceUploadSession"
+        },
+        {
+          "Id": "4df9e300-5aa5-42e3-9006-c118e0a5a2a6",
+          "ApiChange": "Method",
+          "ChangedApiName": "uploadFile",
+          "ChangeType": "Addition",
+          "Description": "Added the [uploadFile](https://learn.microsoft.com/en-us/graph/api/customDataProvidedResourceUploadSession-uploadFile?view=graph-rest-beta) method to the [customDataProvidedResourceUploadSession](https://learn.microsoft.com/en-us/graph/api/resources/customDataProvidedResourceUploadSession?view=graph-rest-beta) resource.",
+          "Target": "customDataProvidedResourceUploadSession"
+        }
+      ],
+      "Id": "4df9e300-5aa5-42e3-9006-c118e0a5a2a6",
+      "Cloud": "Review",
+      "Version": "beta",
+      "CreatedDateTime": "2025-10-29T21:42:59.7440681Z",
+      "WorkloadArea": "Microsoft.IdentityGovernance.Insights",
+      "SubArea": ""
+    }
+  ]
+}
