@@ -20,7 +20,7 @@ In [PIM](privilegedaccess.md), a group resource represents the group resource in
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List](../api/privilegedaccessgroup-list-groups.md) | [groupResource](groupResource.md) collection | Retrieve a list of groupResource objects |
+| [List](../api/privilegedaccessgroup-list-groupresource.md) | [groupResource](groupResource.md) collection | Retrieve a list of groupResource objects |
 | [Get](../api/privilegedaccessgroupgroupresource-get.md)|[groupResource](groupResource.md)|Read the properties of a [groupResource](groupResource.md) object.|
 
 ## Properties
