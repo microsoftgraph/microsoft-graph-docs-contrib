@@ -1,7 +1,7 @@
 ---
 title: "chat: removeAllAccessForUser"
 description: "Remove access to a chat for a user."
-author: "Aditya Sharma"
+author: "AdityaSharma6"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: apiPageType
