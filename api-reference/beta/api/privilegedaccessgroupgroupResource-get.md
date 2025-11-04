@@ -8,7 +8,7 @@ doc_type: apiPageType
 ms.date: 11/03/2025
 ---
 
-# Get privilegedAccessGroupGroupResource
+# Get GroupResource
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
