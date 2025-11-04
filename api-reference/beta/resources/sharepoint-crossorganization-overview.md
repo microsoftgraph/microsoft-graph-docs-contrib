@@ -71,9 +71,3 @@ The SharePoint cross-tenant migration APIs support the following key scenarios:
 |:------------|:------------|
 | [sharePointIdentityMappingGroupType](enums.md#sharepointidentitymappinggrouptype-values) | Defines the types of groups that can be mapped |
 | [sharePointIdentityMappingUserType](enums.md#sharepointidentitymappingusertype-values) | Defines the types of users that can be mapped |
-
-## See also
-
-- [SharePoint migration API overview](sharepointmigration-api-overview.md)
-- [Microsoft Graph permissions reference](/graph/permissions-reference)
-- [Microsoft Graph API best practices](/graph/best-practices-concept)
