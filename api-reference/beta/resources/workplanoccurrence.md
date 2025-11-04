@@ -1,0 +1,91 @@
+---
+title: "workPlanOccurrence resource type"
+description: "Represents a specific instance of a work schedule for a particular day."
+author: "emilbekj"
+ms.localizationpriority: medium
+ms.subservice: "outlook"
+doc_type: resourcePageType
+ms.date: 12/20/2024
+---
+
+# workPlanOccurrence resource type
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Represents a specific work schedule instance for a particular day or time period.
+
+Work plan occurrences can be automatically generated from recurring work patterns or manually created for special arrangements. This is useful for handling exceptions to regular schedules, such as working different hours for a specific day, working from a different location, or taking time off.
+
+When a work plan occurrence exists for the same time period as a recurring pattern, the occurrence takes precedence, allowing for flexible schedule adjustments.
+
+## Methods
+
+| Method | Return Type | Description |
+|:-------|:------------|:------------|
+| [occurrencesView](../api/workhoursandlocationssetting-occurrencesview.md) | [workPlanOccurrence](workplanoccurrence.md) collection | Retrieves work plan occurrences within a specified date range. |
+| [Create workPlanOccurrence](../api/workhoursandlocationssetting-post-occurrences.md) | [workPlanOccurrence](workplanoccurrence.md) | Create a new workPlanOccurrence object (time-off only). |
+| [Update workPlanOccurrence](../api/workplanoccurrence-update.md) | [workPlanOccurrence](workplanoccurrence.md) | Update the properties of a workPlanOccurrence object. |
+| [Delete workPlanOccurrence](../api/workplanoccurrence-delete.md) | None | Delete a workPlanOccurrence object (time-off only). |
+
+## Properties
+
+| Property | Type | Description |
+|:---------|:-----|:------------|
+| id | String | Unique identifier for the occurrence. |
+| recurrenceId | String | Identifier of the parent recurrence pattern that generated this occurrence. Will be null for time-off occurrences since they don't have a parent recurrence. |
+| start | [dateTimeTimeZone](datetimetimezone.md) | The start date and time for this occurrence. |
+| end | [dateTimeTimeZone](datetimetimezone.md) | The end date and time for this occurrence. |
+| workLocationType | workLocationType | The type of work location. Possible values are: `unspecified`, `office`, `remote`, `timeOff`, `unknownFutureValue`. |
+| timeOffDetails | [timeOffDetails](timeoffdetails.md) | Details about the time off. Only applicable when workLocationType is timeOff. |
+
+## Relationships
+
+| Relationship | Type | Description |
+|:-------------|:-----|:------------|
+| workLocationDetails | [place](place.md) | Navigation property to a place entity from the Microsoft Graph Places Directory API. Only applicable when workLocationType is office. |
+
+## JSON representation
+
+The following JSON representation shows the resource type.
+
+<!-- {
+  "blockType": "resource",
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.workPlanOccurrence"
+} -->
+
+```json
+{
+  "id": "String (identifier)",
+  "recurrenceId": "String",
+  "start": {
+    "@odata.type": "microsoft.graph.dateTimeTimeZone"
+  },
+  "end": {
+    "@odata.type": "microsoft.graph.dateTimeTimeZone"
+  },
+  "workLocationType": "String",
+  "timeOffDetails": {
+    "@odata.type": "microsoft.graph.timeOffDetails"
+  }
+}
+```
+
+## Remarks
+
+Only time-off occurrences can be deleted. Occurrences generated from recurrences cannot be deleted. Only time-off occurrences can be created directly. Other occurrences are auto-generated from recurrences. Updates require the full occurrence object to be provided (PUT semantics). PATCH is not supported. Reading individual occurrences by ID is not supported. Use the occurrencesView function with date range parameters instead.
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2024-12-20 14:57:30 UTC -->
+<!--
+{
+  "type": "#page.annotation",
+  "description": "workPlanOccurrence resource",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": []
+}
+-->

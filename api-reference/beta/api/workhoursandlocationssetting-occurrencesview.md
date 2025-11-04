@@ -1,0 +1,144 @@
+---
+title: "workHoursAndLocationsSetting: occurrencesView"
+description: "Retrieves work plan occurrences within a specified date range."
+author: "emilbekj"
+ms.localizationpriority: medium
+ms.subservice: "outlook"
+doc_type: apiPageType
+ms.date: 12/20/2024
+---
+
+# workHoursAndLocationsSetting: occurrencesView
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Retrieves work plan occurrences within a specified date range. Similar to calendarView, this function requires startDateTime and endDateTime parameters.
+
+## Permissions
+
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- { "blockType": "permissions", "name": "workhoursandlocationssetting_occurrencesview" } -->
+[!INCLUDE [permissions-table](../includes/permissions/workhoursandlocationssetting-occurrencesview-permissions.md)]
+
+## HTTP request
+
+<!-- {
+  "blockType": "ignored"
+} -->
+
+```http
+GET /me/settings/workHoursAndLocations/occurrencesView(startDateTime='{startDateTime}',endDateTime='{endDateTime}')
+GET /users/{id | userPrincipalName}/settings/workHoursAndLocations/occurrencesView(startDateTime='{startDateTime}',endDateTime='{endDateTime}')
+```
+
+## Function parameters
+
+In the request URL, provide the following required function parameters with values.
+
+| Parameter | Type | Description |
+|:----------|:-----|:------------|
+| startDateTime | String | The start date and time of the time range, represented in ISO 8601 format. |
+| endDateTime | String | The end date and time of the time range, represented in ISO 8601 format. |
+
+## Request headers
+
+| Name | Description |
+|:-----|:------------|
+| Authorization | Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts). |
+
+## Request body
+
+Don't supply a request body for this method.
+
+## Response
+
+If successful, this function returns a `200 OK` response code and a collection of [workPlanOccurrence](../resources/workplanoccurrence.md) objects in the response body.
+
+## Examples
+
+### Request
+
+The following example shows a request.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "workhoursandlocationssetting_occurrencesview"
+} -->
+
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/me/settings/workHoursAndLocations/occurrencesView(startDateTime='2024-01-01T00:00:00Z',endDateTime='2024-01-07T23:59:59Z')
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/workhoursandlocationssetting-occurrencesview-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/workhoursandlocationssetting-occurrencesview-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/workhoursandlocationssetting-occurrencesview-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/workhoursandlocationssetting-occurrencesview-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/workhoursandlocationssetting-occurrencesview-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/workhoursandlocationssetting-occurrencesview-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/workhoursandlocationssetting-occurrencesview-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/workhoursandlocationssetting-occurrencesview-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+### Response
+
+The following example shows the response.
+
+> **Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.workPlanOccurrence)"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.workPlanOccurrence)",
+  "value": [
+    {
+      "id": "AAMkAGVmMDEzMTM4LTZmYWUtNDdkNC1hMDZiLTU1OGY5OTZhYmY4OABGAAAAAAAiQ8W967B7TKBjgx9rVEURBwAiIsqMbYjsT5e-T7KzowPTAAAAAAENAAAiIsqMbYjsT5e-T7KzowPTAAABvv6cAAA=",
+      "recurrenceId": "AAMkAGVmMDEzMTM4LTZmYWUtNDdkNC1hMDZiLTU1OGY5OTZhYmY4OABGAAAAAAAiQ8W967B7TKBjgx9rVEURBwAiIsqMbYjsT5e-T7KzowPTAAAAAAENAAAiIsqMbYjsT5e-T7KzowPTAAABvv6bAAA=",
+      "start": {
+        "dateTime": "2024-01-01T09:00:00.0000000",
+        "timeZone": "UTC"
+      },
+      "end": {
+        "dateTime": "2024-01-01T17:00:00.0000000", 
+        "timeZone": "UTC"
+      },
+      "workLocationType": "office"
+    }
+  ]
+}
+```
