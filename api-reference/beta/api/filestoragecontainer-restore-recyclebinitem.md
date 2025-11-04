@@ -122,7 +122,8 @@ In this example, the `driveItemId` is passed as a function parameter in the requ
 ### Request
 
 ``` http
-POST  POST https://graph.microsoft.com/beta/storage/fileStorage/containers/b!LRJHKCBZQU2fLtv8TzUomsz-OP7yGQRNlugra1iGHqRe5fORWrrHTbh8J8O8qPmx/recycleBin/items(driveItemId='01GC3BS4QFPBCZRLJHJVEYPITEHTDBYHBH')/restore
+POST https://graph.microsoft.com/beta/storage/fileStorage/containers/b!LRJHKCBZQU2fLtv8TzUomsz-OP7yGQRNlugra1iGHqRe5fORWrrHTbh8J8O8qPmx/recycleBin/items(driveItemId='01GC3BS4QFPBCZRLJHJVEYPITEHTDBYHBH')/restore
+Content-Type: application/json
 Content-Type: application/json
 ```
 
@@ -143,7 +144,7 @@ In this example, there is no matching recycleBinItem to correlate with the speci
 ### Request
 
 ``` http
-POST  POST https://graph.microsoft.com/beta/storage/fileStorage/containers/e!JDJHKCBZTU2fLtv8TzUoksz-OP7yGQRNlugra1iGHqRe5fORWrrHTbh8J8O8qPmx/recycleBin/items(driveItemId='01jC3BS4QFPBCZRLGHJVEYPITEHTDBYHBP')/restore
+POST https://graph.microsoft.com/beta/storage/fileStorage/containers/e!JDJHKCBZTU2fLtv8TzUoksz-OP7yGQRNlugra1iGHqRe5fORWrrHTbh8J8O8qPmx/recycleBin/items(driveItemId='01jC3BS4QFPBCZRLGHJVEYPITEHTDBYHBP')/restore
 Content-Type: application/json
 ```
 
