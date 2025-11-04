@@ -2738,14 +2738,14 @@ Possible values for user account types (group membership), per Windows definitio
 
 ### riskLevel values
 
-| Member |
-| ------------------ |
-| low |
-| medium |
-| high |
-| hidden |
-| none |
-| unknownFutureValue |
+|Member|
+|:---|
+|low|
+|medium|
+|high|
+|hidden|
+|none|
+|unknownFutureValue|
 
 ### riskState values
 
@@ -4328,6 +4328,16 @@ Possible values for user account types (group membership), per Windows definitio
 | privateContent |
 | sharedContent |
 | unknownFutureValue |
+
+### purviewInsiderRiskManagementLevel values
+
+|Member|
+|:---|
+|none|
+|minor|
+|moderate|
+|elevated|
+|unknownFutureValue|
 
 ### chatMessageActions values
 
