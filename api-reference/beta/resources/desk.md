@@ -74,7 +74,7 @@ The following JSON representation shows the resource type.
   "parentId": "String",
   "phone": "String",
   "tags": ["String"],
-  "heightAdjustableState": "placeFeatureEnablement"
+  "heightAdjustableState": "Enum"
 }
 ```
 
