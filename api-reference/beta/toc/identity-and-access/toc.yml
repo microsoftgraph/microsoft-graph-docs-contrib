@@ -3235,9 +3235,9 @@ items:
         href: ../../api/authorizationpolicy-get.md
       - name: Update
         href: ../../api/authorizationpolicy-update.md
-    - name: B 2 b management policy
+    - name: B2B management policy
       items:
-      - name: B 2 b management policy
+      - name: B2B management policy
         href: ../../resources/b2bmanagementpolicy.md
       - name: List
         href: ../../api/policyroot-list-b2bmanagementpolicies.md
