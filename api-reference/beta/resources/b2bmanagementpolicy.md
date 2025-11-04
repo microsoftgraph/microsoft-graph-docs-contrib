@@ -3,6 +3,7 @@ title: "b2bManagementPolicy resource type"
 description: "Represents a policy to manage B2B features"
 author: "akshukla"
 ms.date: 10/27/2025
+toc.title: B2B management policy
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
