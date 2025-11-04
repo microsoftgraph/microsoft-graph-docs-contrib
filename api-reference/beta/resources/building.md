@@ -77,7 +77,7 @@ The following JSON representation shows the resource type.
   "phone": "String",
   "resourceLinks": [{"@odata.type": "microsoft.graph.resourceLink"}],
   "tags": ["String"],
-  "wifiState": "Enum"
+  "wifiState": "String"
 }
 ```
 

@@ -80,7 +80,7 @@ The following JSON representation shows the resource type.
   "@odata.type": "#microsoft.graph.room",
   "address": {"@odata.type": "microsoft.graph.physicalAddress"},
   "audioDeviceName": "String",
-  "bookingType": "Enum",
+  "bookingType": "String",
   "building": "String",
   "capacity": "Int32",
   "displayDeviceName": "String",
