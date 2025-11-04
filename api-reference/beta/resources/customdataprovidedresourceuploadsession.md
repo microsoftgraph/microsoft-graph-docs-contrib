@@ -1,6 +1,6 @@
 ---
 title: "customDataProvidedResourceUploadSession resource type"
-description: "**TODO: Add Description**"
+description: "An upload session within which multiple files can be uploaded for this resource."
 author: “pratima-cloudknox”
 ms.date: 10/29/2025
 ms.localizationpriority: medium
