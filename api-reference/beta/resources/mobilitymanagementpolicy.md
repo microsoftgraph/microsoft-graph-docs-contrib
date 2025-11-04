@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-In Microsoft Entra ID, a mobility management policy represents an autoenrollment configuration for a mobility management (MDM or MAM) application. These policies are only applicable to devices based on Windows 10 OS and its derivatives such as Surface Hub and HoloLens. [Autoenrollment](/windows/client-management/azure-ad-and-microsoft-intune-automatic-mdm-enrollment-in-the-new-portal) automatically enrolls Windows 10 devices into mobility management applications during [Microsoft Entra join](/entra/identity/devices/concept-directory-join) or [Microsoft Entra register](/entra/identity/devices/concept-device-registration) processes
+In Microsoft Entra ID, a mobility management policy represents an autoenrollment configuration for a mobility management (MDM or MAM) application. These policies are only applicable to devices based on Windows 10 OS and its derivatives such as Surface Hub and HoloLens. [Autoenrollment](/windows/client-management/azure-ad-and-microsoft-intune-automatic-mdm-enrollment-in-the-new-portal) automatically enrolls Windows 10 devices into mobility management applications during [Microsoft Entra join](/entra/identity/devices/concept-directory-join) or [Microsoft Entra register](/entra/identity/devices/concept-device-registration) processes.
 
 ## Methods
 None
