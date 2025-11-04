@@ -1,6 +1,6 @@
 ---
 title: "customDataProvidedResourceUploadStats resource type"
-description: "**TODO: Add Description**"
+description: "Metadata related to the files that have been uploaded as part of the upload session thus far. "
 author: “pratima-cloudknox”
 ms.date: 10/09/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Metadata related to the files that have been uploaded as part of the upload session thus far. 
 
 
 ## Properties
