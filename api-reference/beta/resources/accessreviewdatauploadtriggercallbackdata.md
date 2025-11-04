@@ -1,6 +1,6 @@
 ---
 title: "accessReviewDataUploadTriggerCallbackData resource type"
-description: "**TODO: Add Description**"
+description: "The schematized representation of the CSV columns expected in the uploaded files."
 author: "pratima-cloudknox"
 ms.date: 10/09/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+This object represents the columns expected in the CSV file that is uploaded in an upload session. 
 
 
 Inherits from [customExtensionData](../resources/customextensiondata.md).
