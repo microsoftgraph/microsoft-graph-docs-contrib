@@ -15,7 +15,7 @@ import (
 	  //other-imports
 )
 
-requestBody := graphmodels.NewMobilityManagementPolicy()
+requestBody := graphmodels.NewMobileDeviceManagementPolicy()
 complianceUrl := "https://portal.uem.contoso.com/?portalAction=Compliance"
 requestBody.SetComplianceUrl(&complianceUrl) 
 discoveryUrl := "https://enrollment.uem.contoso.com/enrollmentserver/discovery.svc"

@@ -18,7 +18,6 @@ In Microsoft Entra ID, a Mobile Device Management (MDM) policy defines the confi
 
 Inherits from [mobilityManagementPolicy](../resources/mobilitymanagementpolicy.md).
 
-
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
@@ -33,6 +32,7 @@ Inherits from [mobilityManagementPolicy](../resources/mobilitymanagementpolicy.m
 |Property|Type|Description|
 |:---|:---|:---|
 |appliesTo|policyScope|Indicates the user scope of the MDM policy. Possible values are: `none`, `all`, `selected`. Inherited from [mobilityManagementPolicy](../resources/mobilitymanagementpolicy.md). The possible values are: `none`, `all`, `selected`, `unknownFutureValue`.|
+|isMdmEnrollmentDuringRegistrationDisabled|Boolean|Controls the option if users in an automatic enrollment configuration on Microsoft Entra registered devices are prompted to MDM enroll their device in the Entra account registration flow|
 |complianceUrl|String| Compliance URL of the mobility management application. Inherited from [mobilityManagementPolicy](../resources/mobilitymanagementpolicy.md).|
 |description|String|Description of the MDM application. Inherited from [mobilityManagementPolicy](../resources/mobilitymanagementpolicy.md).|
 |discoveryUrl|String|Discovery URL of the MDM application. Inherited from [mobilityManagementPolicy](../resources/mobilitymanagementpolicy.md).|
@@ -66,7 +66,7 @@ The following JSON representation shows the resource type.
   "discoveryUrl": "String",
   "displayName": "String",
   "termsOfUseUrl": "String",
-  "isValid": "Boolean"
+  "isValid": "Boolean",
+  "isMdmEnrollmentDuringRegistrationDisabled": "Boolean"
 }
 ```
-

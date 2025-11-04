@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-MobilityManagementPolicy mobilityManagementPolicy = new MobilityManagementPolicy();
+MobilityManagementPolicy mobilityManagementPolicy = new MobileDeviceManagementPolicy();
 mobilityManagementPolicy.setOdataType("#microsoft.graph.mobilityManagementPolicy");
 mobilityManagementPolicy.setComplianceUrl("https://portal.uem.contoso.com/?portalAction=Compliance");
 mobilityManagementPolicy.setDiscoveryUrl("https://enrollment.uem.contoso.com/enrollmentserver/discovery.svc");

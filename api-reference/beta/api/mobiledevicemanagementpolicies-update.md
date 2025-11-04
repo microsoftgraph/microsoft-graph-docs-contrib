@@ -54,6 +54,7 @@ In the request body, supply the values for fields listed below that should be up
 |Property|Type|Description|
 |:---|:---|:---|
 |appliesTo|policyScope|Determines the groups this policy setting applies to. Possible values are: `none`, `all`, `selected` **Important:** `selected` cannot be used when specifying this property. Use [includedGroups](../api/mobiledevicemanagementpolicies-post-includedgroups.md) to add specific groups. Using `all` will remove any existing groups.|
+|isMdmEnrollmentDuringRegistrationDisabled|Boolean|Controls the option if users in an automatic enrollment configuration on Microsoft Entra registered devices are prompted to MDM enroll their device in the Entra account registration flow|
 |complianceUrl|String|Compliance URL of the mobility management application|
 |discoveryUrl|String|Discovery URL of the mobility management application|
 |termsOfUseUrl|String|Terms of Use URL of the mobility management application|
@@ -79,15 +80,28 @@ PATCH https://graph.microsoft.com/beta/policies/mobileDeviceManagementPolicies/a
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.mobilityManagementPolicy",
+  "@odata.type": "#microsoft.graph.mobileDeviceManagementPolicy",
   "complianceUrl": "https://portal.uem.contoso.com/?portalAction=Compliance",
   "discoveryUrl": "https://enrollment.uem.contoso.com/enrollmentserver/discovery.svc",
   "termsOfUseUrl": "https://portal.uem.contoso.com/TermsofUse.aspx"
 }
 ```
 
+# [HTTP](#tab/http)
+
+``` http
+PATCH https://graph.microsoft.com/beta/policies/mobileDeviceManagementPolicies/ab90bacf-55a3-4a3e-839a-aa4b74e4f020
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.mobileDeviceManagementPolicy",
+  "appliesTo": "all",
+  "isMdmEnrollmentDuringRegistrationDisabled": true
+}
+```
+
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-mobilitymanagementpolicy-forid-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-mobiledevicemanagementpolicy-for-id-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
