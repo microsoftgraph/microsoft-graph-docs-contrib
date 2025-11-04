@@ -207,8 +207,6 @@ Content-Type: application/json
   "usernameHintText": "ContosoUsername"
 }
 ```
-## Examples
-
 ### Example 2: Update a stream property for the localized branding theme of the specific locale (fr-FR)
 
 #### Request

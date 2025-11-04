@@ -2,7 +2,7 @@
 title: "loginPageBrandingVisualElement resource type"
 description: "Contains details about customizable properties of elements on the login page of the organization's branding themes."  
 author: "AlexanderMars"  
-ms.date: 11/03/2025  
+ms.date: 11/04/2025  
 ms.localizationpriority: medium  
 ms.subservice: "entra-sign-in"  
 doc_type: resourcePageType  
@@ -12,7 +12,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph  
 
-Contains details about customizable properties of elements on the login page of the [organization's branding themes](.../resources/organizationalbrandingtheme.md).  
+Contains details about customizable properties of elements on the login page of the [organization's branding themes](.../resources/organizationalBrandingTheme).  
 
 
 
