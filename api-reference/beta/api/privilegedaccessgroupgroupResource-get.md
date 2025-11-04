@@ -63,6 +63,7 @@ The following example shows a request.
 GET https://graph.microsoft.com/beta/identityGovernance/privilegedAccess/group/resources/a13fc7b0-a4ff-45fc-82c4-1d31a807426a
 ```
 
+---
 
 #### Response
 The following example shows the response.
@@ -76,6 +77,8 @@ The following example shows the response.
 -->
 ``` http
 HTTP/1.1 200 OK
+Content-type: application/json
+
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/privilegedAccess/group/resources",
   "id": "a13fc7b0-a4ff-45fc-82c4-1d31a807426a"
