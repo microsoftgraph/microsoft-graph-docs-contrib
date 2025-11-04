@@ -1555,6 +1555,16 @@
           ],
           "childNodes": [
             {
+              "name": "Sign-in identifiers",
+              "resources": [
+                "signInIdentifierBase",
+                "customUsernameSignInIdentifier",
+                "emailSignInIdentifier",
+                "upnSignInIdentifier",
+                "usernameSignInIdentifier"
+              ]
+            },
+            {
               "name": "Authentication event listeners",
               "resources": [
                 "authenticationEventListener",
