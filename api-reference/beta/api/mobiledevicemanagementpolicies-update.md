@@ -87,19 +87,6 @@ Content-Type: application/json
 }
 ```
 
-# [HTTP](#tab/http)
-
-``` http
-PATCH https://graph.microsoft.com/beta/policies/mobileDeviceManagementPolicies/ab90bacf-55a3-4a3e-839a-aa4b74e4f020
-Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.mobileDeviceManagementPolicy",
-  "appliesTo": "all",
-  "isMdmEnrollmentDuringRegistrationDisabled": true
-}
-```
-
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-mobiledevicemanagementpolicy-for-id-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
