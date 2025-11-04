@@ -5443,10 +5443,6 @@ Possible values for user account types (group membership), per Windows definitio
 |m365Group|
 |unknownFutureValue|
 
-# Microsoft Graph enumeration values
-
-Namespace: microsoft.graph
-
 ### sharePointIdentityMappingUserType values 
 
 |Member|
