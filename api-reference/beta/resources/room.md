@@ -45,7 +45,7 @@ For the list of supported methods, see [place](./place.md).
 |placeId |String |An alternate immutable unique identifier of the **room**. Read-only.|
 |tags |String collection |Custom tags that are associated with the **room** for categorization or filtering. Inherited from [place](../resources/place.md).|
 |videoDeviceName |String |The name of the video device that is available in the **room**. |
-|teamsEnabledState |[placeFeatureEnablement](#placeFeatureEnablement-values) |Indicates whether the room is enabled for Microsoft Teams. |
+|teamsEnabledState |[placeFeatureEnablement](#placefeatureenablement-values) |A state indicating whether the room is enabled for Microsoft Teams. |
 
 ### bookingType values
 
@@ -80,7 +80,7 @@ The following JSON representation shows the resource type.
   "@odata.type": "#microsoft.graph.room",
   "address": {"@odata.type": "microsoft.graph.physicalAddress"},
   "audioDeviceName": "String",
-  "bookingType": "String",
+  "bookingType": "bookingType",
   "building": "String",
   "capacity": "Int32",
   "displayDeviceName": "String",
@@ -99,7 +99,7 @@ The following JSON representation shows the resource type.
   "placeId": "String (alternate identifier)",
   "tags": ["String"],
   "videoDeviceName": "String",
-  "teamsEnabledState": "String"
+  "teamsEnabledState": "placeFeatureEnablement"
 }
 ```
 

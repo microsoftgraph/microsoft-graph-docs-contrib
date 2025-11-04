@@ -37,7 +37,7 @@ For the list of supported methods, see [place](./place.md).
 |parentId|String|The ID of a parent [section](./section.md). Inherited from [place](./place.md).|
 |phone|String|The phone number of the **desk**. Inherited from [place](./place.md).|
 |tags|String collection|Custom tags that are associated with the **desk** for categorization or filtering. Inherited from [place](./place.md).|
-|heightAdjustableState |[placeFeatureEnablement](#placeFeatureEnablement-values) |Indicates whether the desk is height adjustable. |
+|heightAdjustableState |[placeFeatureEnablement](#placefeatureenablement-values) |A state indicating whether the desk is height adjustable. |
 
 ### placeFeatureEnablement values
 | Value        | Description                                               |
@@ -74,7 +74,7 @@ The following JSON representation shows the resource type.
   "parentId": "String",
   "phone": "String",
   "tags": ["String"],
-  "heightAdjustableState": "String"
+  "heightAdjustableState": "placeFeatureEnablement"
 }
 ```
 
