@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Performs delta patch operations on user identity mappings for cross-organization migration. Supports bulk add, update, and delete operations in a single request.
+Performs delta patch operations on user identity mappings for cross-organization migration. Supports bulk add, update, and delete operations in a single request. Maximum of **50** items allowed in the value array.
 
 ## Permissions
 

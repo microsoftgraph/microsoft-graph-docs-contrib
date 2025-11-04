@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Performs delta patch operations on group identity mappings for cross-organization migration. This operation supports bulk add, update, and delete actions for both Microsoft 365 groups and regular Azure AD groups.
+Performs delta patch operations on group identity mappings for cross-organization migration. This operation supports bulk add, update, and delete actions for both Microsoft 365 groups and regular Azure AD groups. Maximum of **50** items allowed in the value array.
 
 ## Permissions
 
