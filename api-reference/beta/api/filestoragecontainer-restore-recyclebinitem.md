@@ -57,13 +57,13 @@ If successfully restored by `recycleBinItemId`, this method returns a `207 Multi
 
 If successfully restored with `driveItemId` as an alternate key, this method returns a 200 OK response code with the id of the singular [recycleBinItem](../resources/recyclebinitem.md) that was restored in the response body.
 
-## Example 1: Restore a recycleBinItem 
+## Examples
 
-### Request
+### Example 1: Restore a recycleBinItem 
+#### Request
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "restore_filestoragecontainer_recyclebinitem",
@@ -79,14 +79,9 @@ Content-Type: application/json
   "ids": ["5d625d33-338c-4a77-a98a-3e287116440c", "73133853-48f2-4956-bc4a-03f8d1675042"]
 }
 ```
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/restore-filestoragecontainer-recyclebinitem-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
-### Response
+#### Response
 
 The following example shows the response.
 
@@ -115,11 +110,11 @@ Content-Type: application/json
 }
 ```
 
-## Example 2: Restore a recycleBinItem by driveItemId as alternate key
+### Example 2: Restore a recycleBinItem by driveItemId as alternate key
 
 In this example, the `driveItemId` is passed as a function parameter in the request URL. The response returns the corresponding id of the `recycleBinItem` that was restored.
 
-### Request
+#### Request
 
 ``` http
 POST https://graph.microsoft.com/beta/storage/fileStorage/containers/b!LRJHKCBZQU2fLtv8TzUomsz-OP7yGQRNlugra1iGHqRe5fORWrrHTbh8J8O8qPmx/recycleBin/items(driveItemId='01GC3BS4QFPBCZRLJHJVEYPITEHTDBYHBH')/restore
@@ -127,7 +122,7 @@ Content-Type: application/json
 Content-Type: application/json
 ```
 
-### Response
+#### Response
 
 ``` http
 HTTP/1.1 200 Ok
@@ -137,19 +132,17 @@ Content-Type: application/json
 }
 ```
 
-## Example 3: Failure to restore recycleBinItem by driveItemId as alternate key
+### Example 3: Failure to restore recycleBinItem by driveItemId as alternate key
 
 In this example, there is no matching recycleBinItem to correlate with the specified driveItemId. The API returns a 404 (Not Found) response.
 
-### Request
+#### Request
 
 ``` http
 POST https://graph.microsoft.com/beta/storage/fileStorage/containers/e!JDJHKCBZTU2fLtv8TzUoksz-OP7yGQRNlugra1iGHqRe5fORWrrHTbh8J8O8qPmx/recycleBin/items(driveItemId='01jC3BS4QFPBCZRLGHJVEYPITEHTDBYHBP')/restore
 Content-Type: application/json
 ```
-
-
-### Response
+#### Response
 
 ```http
 HTTP/1.1 404 Not Found
