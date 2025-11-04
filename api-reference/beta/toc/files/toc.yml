@@ -370,7 +370,7 @@ items:
     items:
     - name: SharePoint migration container info
       href: ../../resources/sharepointmigrationcontainerinfo.md
-- name: SharePoint cross-tenant migration
+- name: SharePoint cross-tenant migration (preview)
   items:
   - name: Overview
     href: ../../resources/sharepoint-crossorganization-overview.md
@@ -392,20 +392,10 @@ items:
       href: ../../api/sharepointuseridentitymapping-update.md
   - name: Complex types
     items:
-    - name: SharePoint identity mapping
-      href: ../../resources/sharepointidentitymapping.md
     - name: SharePoint identity mapping group migration data
       href: ../../resources/sharepointidentitymappinggroupmigrationdata.md
     - name: SharePoint identity mapping user migration data
       href: ../../resources/sharepointidentitymappingusermigrationdata.md
-    - name: SharePoint migrations root
-      href: ../../resources/sharepointmigrationsroot.md
-  - name: Enumerations
-    items:
-    - name: sharePointIdentityMappingGroupType
-      href: ../../resources/enums.md#sharepointidentitymappinggrouptype-values
-    - name: sharePointIdentityMappingUserType
-      href: ../../resources/enums.md#sharepointidentitymappingusertype-values
 - name: Complex types
   items:
   - name: File storage container type agent settings
