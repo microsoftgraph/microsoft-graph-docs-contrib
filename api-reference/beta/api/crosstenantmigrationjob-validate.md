@@ -1,6 +1,6 @@
 ---
 title: "crossTenantMigrationJob: validate"
-description: "**TODO: Add Description**"
+description: "Validate the configuration of a crossTenantMigrationJob"
 author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
 ms.date: 10/30/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Validate the configuration of a crossTenantMigrationJob.
 
 ## Permissions
 
@@ -52,19 +52,19 @@ The following table lists the parameters that are required when you call this ac
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|displayName|String|**TODO: Add Description**|
-|completeAfterDateTime|String|**TODO: Add Description**|
-|sourceTenantId|String|**TODO: Add Description**|
-|exchangeSettings|[exchangeOnlineCrossTenantMigrationSettings](../resources/exchangeonlinecrosstenantmigrationsettings.md)|**TODO: Add Description**|
-|workloads|String collection|**TODO: Add Description**|
-|resourceType|String|**TODO: Add Description**|
-|resources|String collection|**TODO: Add Description**|
+|displayName|String|Name of the crossTenantMigrationJob to validate the configuratio of.|
+|completeAfterDateTime|String|When the CrossTenantMigrationJob|
+|sourceTenantId|String|Source tenant for the CrossTenantMigrationJob|
+|exchangeSettings|[exchangeOnlineCrossTenantMigrationSettings](../resources/exchangeonlinecrosstenantmigrationsettings.md)|Exchange migration settings for the CrossTenantMigrationJob|
+|workloads|String collection|Workloads to validate for the CrossTenantMigrationJob  |
+|resourceType|String|Type of resource in the CrossTenantMigrationJob.|
+|resources|String collection|Identifiers of the users in the CrossTenantMigrationJob to validate|
 
 
 
 ## Response
 
-If successful, this action returns a `200 OK` response code and a [crossTenantMigrationJob](../resources/crosstenantmigrationjob.md) in the response body.
+If successful, this action returns a `202 ACCEPTED` response code and a [crossTenantMigrationJob](../resources/crosstenantmigrationjob.md) in the response body.
 
 ## Examples
 

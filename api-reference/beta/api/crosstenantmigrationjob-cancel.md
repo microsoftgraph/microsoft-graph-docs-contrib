@@ -1,6 +1,6 @@
 ---
 title: "crossTenantMigrationJob: cancel"
-description: "**TODO: Add Description**"
+description: "Cancel a crossTenantMigrationJob."
 author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
 ms.date: 10/30/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Cancel a crossTenantMigrationJob.
 
 ## Permissions
 
@@ -49,7 +49,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this action returns a `200 OK` response code and a [crossTenantMigrationCancelResponse](../resources/crosstenantmigrationcancelresponse.md) in the response body.
+If successful, this action returns a `202 ACCEPTED` response code and a [crossTenantMigrationCancelResponse](../resources/crosstenantmigrationcancelresponse.md) in the response body.
 
 ## Examples
 

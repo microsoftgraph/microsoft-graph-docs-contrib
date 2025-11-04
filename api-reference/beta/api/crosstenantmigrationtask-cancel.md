@@ -1,6 +1,6 @@
 ---
 title: "crossTenantMigrationTask: cancel"
-description: "**TODO: Add Description**"
+description: "Cancel a specific crossTenantMigrationTask (User within a CrossTenantMigrationJob)"
 author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
 ms.date: 10/30/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Cancel a specific crossTenantMigrationTask (User within a CrossTenantMigrationJob)
 
 ## Permissions
 
