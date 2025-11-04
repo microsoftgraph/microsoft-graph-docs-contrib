@@ -40,9 +40,18 @@ This method supports the `$select`, `$filter`, and `$expand` OData query paramet
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
+## Request body
+Don't supply a request body for this method.
+
+## Response
+
+If successful, this method returns a `200 OK` response code and a collection of [groupResource](../resources/groupResource.md) objects in the response body.
+
 ## Examples
 
-### Request
+### Example 1: Retrieve all groupResource
+
+#### Request
 The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
@@ -53,12 +62,9 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com//beta/identityGovernance/privilegedAccess/group/resources
 ```
+---
 
-## Request body
-Don't supply a request body for this method.
-
-## Response
-
+#### Response
 If successful, this method returns a `200 OK` response code and a collection of [groupResource](../resources/groupResource.md) objects in the response body.
 
 ### Response
