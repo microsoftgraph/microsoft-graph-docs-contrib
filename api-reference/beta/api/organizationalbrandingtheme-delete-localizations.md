@@ -1,7 +1,7 @@
 ---
 title: "Delete organizationalBrandingThemeLocalization"
 description: "Delete an organizationalBrandingThemeLocalization object."
-author: "AlexanderMars*"
+author: "AlexanderMars"
 ms.date: 10/30/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
@@ -27,7 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/organizationalbrandingtheme-delete-localizations-permissions.md)]
 
-[!INCLUDE [rbac-org-branding-apis-read](../includes/rbac-for-apis/rbac-org-branding-apis-read.md)]
+[!INCLUDE [rbac-org-branding-apis-write](../includes/rbac-for-apis/rbac-org-branding-apis-write.md)]
 
 ## HTTP request
 
@@ -64,7 +64,7 @@ The following example shows a request.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/organization/84841066-274d-4ec0-a5c1-276be684bdd3/branding/themes/931cc1bb-5395-4fd7-aa54-406d793a4b05/localizations/fr-FR/$ref
+DELETE https://graph.microsoft.com/beta/organization/aaaabbbb-0000-cccc-1111-dddd2222eeee/branding/themes/931cc1bb-5395-4fd7-aa54-406d793a4b05/localizations/fr-FR/$ref
 ```
 
 

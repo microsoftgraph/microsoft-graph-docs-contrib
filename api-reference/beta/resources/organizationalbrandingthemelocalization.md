@@ -2,7 +2,7 @@
 title: "organizationalBrandingThemeLocalization resource type"
 description: "Contains details of the theme's branding localizations."
 author: "AlexanderMars"
-ms.date: 10/27/2025
+ms.date: 11/04/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
@@ -26,6 +26,8 @@ Resource that supports managing language-specific branding for a [organizational
 |[Delete](../api/organizationalbrandingtheme-delete-localizations.md)|None|Delete an organizationalBrandingThemeLocalization object.|
 
 ## Properties
+This method supports the `$select`, `$filter`, `$orderby`, `$top` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
 |Property|Type|Description|
 |:---|:---|:---|
 |accountResetCredentials|[loginPageBrandingVisualElement](../resources/loginpagebrandingvisualelement.md)|Represents "Can't access your account?" and "Reset it now" hyperlinks of self-service password reset (SSPR) that can be customized on the sign-in page for a theme. A destination URL can be updated. Optional.|

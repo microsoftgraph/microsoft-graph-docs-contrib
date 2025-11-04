@@ -2,7 +2,7 @@
 title: "Get organizationalBrandingThemeLocalization"
 description: "Read the properties and relationships of organizationalBrandingThemeLocalization object."
 author: "AlexanderMars"
-ms.date: 10/28/2025
+ms.date: 11/04/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
@@ -16,9 +16,9 @@ Namespace: microsoft.graph
 
 Read the properties and relationships of [organizationalBrandingThemeLocalization](../resources/organizationalbrandingthemelocalization.md) object.
 
-If the **Accept-Language** header is set to an existing locale identified by the value of its **id**, this method retrieves the branding theme for the specified locale.
+If the **Accept-Language** header is set to an existing **locale**, this method retrieves the branding theme for the specified locale.
 
-This method retrieves only non-Stream properties, for example, **usernameHintText** and **signInPageText**. To retrieve Stream types of the default branding, for example, **bannerLogo** and **backgroundImage**, use the [GET organizationalBrandingThemeLocalization](organizationalbrandingthemelocalization-get.md) method.
+
 
 ## Permissions
 
@@ -34,15 +34,18 @@ Choose the permission or permissions marked as least privileged for this API. Us
 [!INCLUDE [rbac-org-branding-apis-read](../includes/rbac-for-apis/rbac-org-branding-apis-read.md)]
 
 ## HTTP request
->**Note:** If the **Accept-Language** header is set to an existing locale identified by the value of its **id**, this method retrieves the branding theme for the specified locale. This method retrieves only non-Stream properties, for example, **usernameHintText**,  and **signInPageText**.
+
+To retrieve String data types, such as **signInPageText** and **usernameHintText**, use the GET method. To retrieve Stream data types, such as **bannerLogo** and **pageBackgroundImage**, use the GET method and specify a stream object. You can't retrieve Stream types with other data types in the same request.  
+
 <!-- {
   "blockType": "ignored"
 }
 -->
 ``` http
-GET /organization/{organizationId}/branding/themes/{organizationalBrandingThemeId}/localizations/
+GET /organization/{organizationId}/branding/themes/{organizationalBrandingThemeId}/localizations/{organizationalBrandingThemeLocalizationId}
+GET /organization/{organizationId}/branding/themes/{organizationalBrandingThemeId}/localizations/{organizationalBrandingThemeLocalizationId}/{Stream object type such as backgroundImage}
 ```
->**Note:** To retrieve Stream types of the default branding, for example, **bannerLogo** and **backgroundImage**, use the [GET organizationalBrandingThemeLocalization](organizationalbrandingthemelocalization-get.md) method.
+
 <!-- {
   "blockType": "ignored"
 }
@@ -60,6 +63,7 @@ This method supports only the `$select` OData query parameter to help customize 
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+|Accept-language|A valid ISO 639-1 locale. Optional.|
 
 ## Request body
 
@@ -71,7 +75,9 @@ If successful, this method returns a `200 OK` response code and an [organization
 
 ## Examples
 
-### Request
+### Example 1: Get the localized branding theme for a specific locale (fr-FR) 
+
+##### Request
 
 The following example shows a request.
 <!-- {
@@ -105,9 +111,8 @@ Content-Type: application/json
       "accountResetCredentials": {
         "@odata.type": "microsoft.graph.loginPageBrandingVisualElement"
       },
-      "backgroundImageRelativeUrl": null,
-      "bannerLogo": null,
-      "bannerLogoRelativeUrl": null,
+      "backgroundImageRelativeUrl": "c1c6b6c8-urr-dzbkz44n5kuo9kzl1kziuujjcdqonoe2owyacso/logintenantbranding/fr-FR/illustration?ts=637535563816027796",
+      "bannerLogoRelativeUrl": "c1c6b6c8-urr-dzbkz44n5kuo9kzl1kziuujjcdqonoe2owyacso/logintenantbranding/fr-FR/bannerlogo?ts=637535563824629275",
       "cannotAccessYourAccount": {
         "@odata.type": "microsoft.graph.loginPageBrandingVisualElement"
       },
@@ -115,15 +120,12 @@ Content-Type: application/json
       "contentCustomization": {
         "@odata.type": "microsoft.graph.contentCustomization"
       },
-      "customCSS": null,
       "customCSSRelativeUrl": null,
-      "favicon": null,
       "faviconRelativeUrl": null,
       "forgotMyPassword": {
         "@odata.type": "microsoft.graph.loginPageBrandingVisualElement"
       },
       "headerBackgroundColor": "#3377ffff",
-      "headerLogo": null,
       "headerLogoRelativeUrl": null,
       "loginPageLayoutConfiguration": {
         "@odata.type": "microsoft.graph.loginPageLayoutConfiguration"
@@ -136,9 +138,7 @@ Content-Type: application/json
         "@odata.type": "microsoft.graph.loginPageBrandingVisualElement"
       },
       "signInPageText": "Welcome to Contoso",
-      "squareLogo": null,
       "squareLogoRelativeUrl": null,
-      "squareLogoDark": null,
       "squareLogoDarkRelativeUrl": null,
       "termsOfUse": {
         "@odata.type": "microsoft.graph.loginPageBrandingVisualElement"
@@ -148,3 +148,34 @@ Content-Type: application/json
 }
 ```
 
+### Example 2: Get the bannerLogo for the localized branding theme for a specific locale (fr-FR) 
+
+##### Request
+
+The following example shows a request.
+<!-- {
+  "blockType": "request",
+  "name": "get_organizationalbrandingthemelocalization"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/organization/84841066-274d-4ec0-a5c1-276be684bdd3/branding/themes/931cc1bb-5395-4fd7-aa54-406d793a4b05/localizations/fr-FR/bannerLogo
+```
+
+
+### Response
+
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.organizationalBrandingThemeLocalization"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: image/*
+
+<Image>
+```

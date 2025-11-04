@@ -31,7 +31,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
-To update String data types, such as signInPageText and usernameHintText, use the PATCH method. To update Stream data types, such as backgroundLogo and backgroundImage, use the PUT method. You can't update Stream types with other data types in the same request.
 
 <!-- {
   "blockType": "ignored"
@@ -47,7 +46,7 @@ PATCH /organization/{organizationId}/branding/themes/{organizationalBrandingThem
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
-|Accept-Language|A valid ISO 639-1 locale or `0` for the default locale. Required.|
+|Accept-Language|A valid ISO 639-1 locale or `0` for the default locale. Optional.|
 
 ## Request body
 
@@ -76,7 +75,7 @@ The following example shows a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/organization/84841066-274d-4ec0-a5c1-276be684bdd3/branding/themes/931cc1bb-5395-4fd7-aa54-406d793a4b05
+PATCH https://graph.microsoft.com/beta/organization/aaaabbbb-0000-cccc-1111-dddd2222eeee/branding/themes/931cc1bb-5395-4fd7-aa54-406d793a4b05
 Content-Type: application/json
 
 {

@@ -2,7 +2,7 @@
 title: "Update organizationalBrandingThemeLocalization"
 description: "Update the properties of an organizationalBrandingThemeLocalization object."
 author: "AlexanderMars"
-ms.date: 10/28/2025
+ms.date: 11/04/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
@@ -14,7 +14,10 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+Update an [organizationalBrandingThemeLocalization](../resources/organizationalbrandingthemelocalization.md) object.  
+
 To update String data types, such as signInPageText and usernameHintText, use the PATCH method. To update Stream data types, such as bannerLogo and pageBackgroundImage, use the PUT method. You can't update Stream types with other data types in the same request.  
+ 
 
 ## Permissions
 
@@ -27,9 +30,11 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/organizationalbrandingthemelocalization-update-permissions.md)]
 
-[!INCLUDE [rbac-org-branding-apis-read](../includes/rbac-for-apis/rbac-org-branding-apis-read.md)]
+[!INCLUDE [rbac-org-branding-apis-write](../includes/rbac-for-apis/rbac-org-branding-apis-write.md)]
 
 ## HTTP request
+
+To update String data types, such as **signInPageText** and **usernameHintText**, use the PATCH method. To update Stream data types, such as **bannerLogo** and **pageBackgroundImage**, use the PUT method. You can't update Stream types with other data types in the same request.  
 
 <!-- {
   "blockType": "ignored"
@@ -91,7 +96,9 @@ If successful, this method returns a `200 OK` response code and an updated [orga
 
 ## Examples
 
-### Request
+### Example 1: Update string properties for the localized branding theme of the specific locale (fr-FR)
+
+#### Request
 
 The following example shows a request.
 <!-- {
@@ -100,7 +107,7 @@ The following example shows a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/organization/{organizationId}/branding/themes/{organizationalBrandingThemeId}/localizations/{organizationalBrandingThemeLocalizationId}
+PATCH https://graph.microsoft.com/beta/organization/84841066-274d-4ec0-a5c1-276be684bdd3/branding/themes/931cc1bb-5395-4fd7-aa54-406d793a4b05/localizations/fr-FR
 Content-Type: application/json
 
 {
@@ -109,9 +116,7 @@ Content-Type: application/json
   "accountResetCredentials": {
     "@odata.type": "microsoft.graph.loginPageBrandingVisualElement"
   },
-  "backgroundImage": null,
   "backgroundImageRelativeUrl": null,
-  "bannerLogo": null,
   "bannerLogoRelativeUrl": null,
   "cannotAccessYourAccount": {
     "@odata.type": "microsoft.graph.loginPageBrandingVisualElement"
@@ -120,16 +125,13 @@ Content-Type: application/json
   "contentCustomization": {
     "@odata.type": "microsoft.graph.contentCustomization"
   },
-  "customCSS": null,
   "customCSSRelativeUrl": null,
-  "favicon": null,
   "faviconRelativeUrl": null,
   "forgotMyPassword": {
     "@odata.type": "microsoft.graph.loginPageBrandingVisualElement"
   },
   "headerBackgroundColor": "#3377ffff",
-  "headerLogo": null,
-  "headerLogoRelativeUrl":"#FFFF33",
+  "headerLogoRelativeUrl": null,
   "loginPageLayoutConfiguration": {
     "@odata.type": "microsoft.graph.loginPageLayoutConfiguration"
   },
@@ -141,9 +143,7 @@ Content-Type: application/json
     "@odata.type": "microsoft.graph.loginPageBrandingVisualElement"
   },
   "signInPageText": "Welcome to Contoso",
-  "squareLogo": null,
   "squareLogoRelativeUrl": null,
-  "squareLogoDark": null,
   "squareLogoDarkRelativeUrl": null,
   "termsOfUse": {
     "@odata.type": "microsoft.graph.loginPageBrandingVisualElement"
@@ -168,13 +168,11 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.organizationalBrandingThemeLocalization",
-  "locale": "73a89ed8-cd09-b6f2-d265-4cb03b747b33",
+  "locale": "en-US",
   "accountResetCredentials": {
     "@odata.type": "microsoft.graph.loginPageBrandingVisualElement"
   },
-  "backgroundImage": null,
   "backgroundImageRelativeUrl": null,
-  "bannerLogo": null,
   "bannerLogoRelativeUrl": null,
   "cannotAccessYourAccount": {
     "@odata.type": "microsoft.graph.loginPageBrandingVisualElement"
@@ -183,15 +181,12 @@ Content-Type: application/json
   "contentCustomization": {
     "@odata.type": "microsoft.graph.contentCustomization"
   },
-  "customCSS": null,
   "customCSSRelativeUrl": null,
-  "favicon": null,
   "faviconRelativeUrl": null,
   "forgotMyPassword": {
     "@odata.type": "microsoft.graph.loginPageBrandingVisualElement"
   },
   "headerBackgroundColor": "#3377ffff",
-  "headerLogo": null,
   "headerLogoRelativeUrl":"#FFFF33",
   "loginPageLayoutConfiguration": {
     "@odata.type": "microsoft.graph.loginPageLayoutConfiguration"
@@ -204,9 +199,7 @@ Content-Type: application/json
     "@odata.type": "microsoft.graph.loginPageBrandingVisualElement"
   },
   "signInPageText": "Welcome to Contoso",
-  "squareLogo": null,
   "squareLogoRelativeUrl": null,
-  "squareLogoDark": null,
   "squareLogoDarkRelativeUrl": null,
   "termsOfUse": {
     "@odata.type": "microsoft.graph.loginPageBrandingVisualElement"
@@ -214,4 +207,38 @@ Content-Type: application/json
   "usernameHintText": "ContosoUsername"
 }
 ```
+## Examples
 
+### Example 2: Update a stream property for the localized branding theme of the specific locale (fr-FR)
+
+#### Request
+
+The following example shows a request.
+<!-- {
+  "blockType": "request",
+  "name": "update_organizationalbrandingthemelocalization"
+}
+-->
+``` http
+PUT https://graph.microsoft.com/beta/organization/84841066-274d-4ec0-a5c1-276be684bdd3/branding/themes/931cc1bb-5395-4fd7-aa54-406d793a4b05/localizations/fr-FR/bannerLogo
+Content-Type: image/jpeg
+
+<Image>
+```
+
+
+### Response
+
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: image/*
+
+<Image>
+```

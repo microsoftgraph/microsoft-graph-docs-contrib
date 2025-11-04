@@ -2,7 +2,7 @@
 title: "organizationalBrandingTheme resource type"
 description: "Contains details of the branding themes."
 author: "AlexanderMars"
-ms.date: 10/27/2025
+ms.date: 11/04/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
@@ -20,7 +20,9 @@ You can create up to 5 branding themes to customize the sign-in pages that appea
 
 You can't change your original Theme configuration's language. However, you can add different branding based on locale. For language-specific Theme branding, see the [organizationalBrandingThemeLocalization](organizationalbrandingthemelocalization.md) object.
 
-For more information about app-specific branding in External ID, see Customize the sign-in experience for your application with branding themes (Preview).
+For more information about app-specific branding in External ID, see [Customize the sign-in experience for your application with branding themes (Preview)](/entra/external-id/customers/how-to-customize-branding-themes-apps).  
+
+Inherits from [entity](../resources/entity.md).  
 
 ## Methods
 |Method|Return type|Description|
@@ -30,15 +32,16 @@ For more information about app-specific branding in External ID, see Customize t
 |[Get](../api/organizationalbrandingtheme-get.md)|[organizationalBrandingTheme](../resources/organizationalbrandingtheme.md)|Read the properties and relationships of [organizationalBrandingTheme](../resources/organizationalbrandingtheme.md) object.|
 |[Update](../api/organizationalbrandingtheme-update.md)|[organizationalBrandingTheme](../resources/organizationalbrandingtheme.md)|Update the properties of an organizationalBrandingTheme object.|
 |[Delete](../api/organizationalbranding-delete-themes.md)|None|Delete an organizationalBrandingTheme object.|
-|[List localizations](../api/organizationalbrandingtheme-list-localizations.md)|[organizationalBrandingThemeLocalization](../resources/organizationalbrandingthemelocalization.md) collection|Get a list of the organizationalBrandingTheme objects and their properties.|
-|[Create organizationalBrandingThemeLocalization](../api/organizationalbrandingtheme-post-localizations.md)|[organizationalBrandingThemeLocalization](../resources/organizationalbrandingthemelocalization.md)|Create a new organizationalBrandingThemeLocalization object.|
 
 ## Properties
+
+This method supports the `$select`, `$filter`, `$orderby`, `$top` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|An identifier that represents the theme created using custom names. Required.|
 |isDefaultTheme|Boolean|Indicates whether the theme is set as the default branding theme for the entire tenant and includes all applications within the tenant. When set to `true`, this theme is automatically applied to any application that does not have a specific theme assigned. This property is useful for enforcing consistent branding across multiple apps without configuring each one individually. Optional.|  
-|name|String|The name of the branding theme. Required.|
+|name|String|The name of the branding theme. Up to 120 characters. Required.| 
 
 ## Relationships
 |Relationship|Type|Description|

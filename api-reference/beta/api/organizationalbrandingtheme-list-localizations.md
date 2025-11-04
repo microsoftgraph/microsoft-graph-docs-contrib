@@ -2,7 +2,7 @@
 title: "List organizationalBrandingThemeLocalization objects"
 description: "Get a list of the organizationalBrandingThemeLocalization objects and their properties."
 author: "AlexanderMars"
-ms.date: 10/27/2025
+ms.date: 11/04/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
@@ -68,7 +68,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/organization/84841066-274d-4ec0-a5c1-276be684bdd3/branding/themes/931cc1bb-5395-4fd7-aa54-406d793a4b05/localizations
+GET https://graph.microsoft.com/beta/organization/aaaabbbb-0000-cccc-1111-dddd2222eeee/branding/themes/931cc1bb-5395-4fd7-aa54-406d793a4b05/localizations
 ```
 
 
@@ -94,14 +94,18 @@ Content-Type: application/json
       "accountResetCredentials": {
         "@odata.type": "microsoft.graph.loginPageBrandingVisualElement"
       },
-      "backgroundImage": null,
-      "backgroundImageRelativeUrl": null,
-      "bannerLogo": null,
-      "bannerLogoRelativeUrl": null,
+      "backgroundImage": "contosobackground.jpg",
+      "backgroundImageRelativeUrl": "c1c6b6c8-urr-dzbkz44n5kuo9kzl1kziuujjcdqonoe2owyacso/logintenantbranding/fr-FR/illustration?ts=637535563816027796",
+      "bannerLogo": "contosoLogo.jpg",
+      "bannerLogoRelativeUrl": "c1c6b6c8-urr-dzbkz44n5kuo9kzl1kziuujjcdqonoe2owyacso/logintenantbranding/fr-FR/bannerlogo?ts=637535563824629275",
       "cannotAccessYourAccount": {
         "@odata.type": "microsoft.graph.loginPageBrandingVisualElement"
       },
-      "cdnHosts": [],
+      "cdnHosts": [
+        "secure.aadcdn.microsoftonline-p.com",
+        "aadcdn.msftauthimages.net",
+        "aadcdn.msauthimages.net"
+      ],
       "contentCustomization": {
         "@odata.type": "microsoft.graph.contentCustomization"
       },
@@ -114,7 +118,7 @@ Content-Type: application/json
       },
       "headerBackgroundColor": "#3377ffff",
       "headerLogo": null,
-      "headerLogoRelativeUrl":"#FFFF33",
+      "headerLogoRelativeUrl": null,
       "loginPageLayoutConfiguration": {
         "@odata.type": "microsoft.graph.loginPageLayoutConfiguration"
       },
@@ -133,7 +137,7 @@ Content-Type: application/json
       "termsOfUse": {
         "@odata.type": "microsoft.graph.loginPageBrandingVisualElement"
       },
-      "usernameHintText": "CotosoUsername"
+      "usernameHintText": "ContosoUsername"
     }
   ]
 }
