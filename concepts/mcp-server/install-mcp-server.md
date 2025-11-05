@@ -16,10 +16,10 @@ zone_pivot_groups: enterprise-mcp-server-client-setup
 
 This article describes how to configure your Model Context Protocol (MCP) client to connect to the Microsoft MCP Server for Enterprise. After you complete the setup, your AI applications can access enterprise data through Microsoft Graph.
 
-The setup process varies depending on your client. Select your client type at the top of this article to view the relevant instructions.
-
 <!-- Start of the steps applicable to VS Code -->
 :::zone pivot="vs-code"
+
+The following sections describe how to set up the Microsoft MCP Server for Enterprise in Visual Studio Code (VS Code). Select your client type at the top of this article to view the relevant instructions.
 
 ## Prerequisites
 
@@ -73,8 +73,10 @@ Before you begin, make sure you:
 :::zone-end
 <!-- End of the steps applicable to VS Code -->
 
-<!-- Start of the steps applicable to custom LoB AI clients -->
+<!-- Start of the steps applicable to custom applications -->
 :::zone pivot="custom-app"
+
+The following sections describe how to set up the Microsoft MCP Server for Enterprise for a custom application. Select your client type at the top of this article to view the relevant instructions.
 
 1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com) with an account that has privileges to register applications in the tenant. *Application Administrator* or *Cloud Application Administrator* roles are sufficient.
 1. Complete the steps to register an application and consider the following settings:
@@ -91,7 +93,7 @@ Before you begin, make sure you:
 1. Test your MCP client to ensure it can connect to the MCP Server for Enterprise and perform the intended operations.
 
 :::zone-end
-<!-- End of the steps applicable to custom LoB AI clients -->
+<!-- End of the steps applicable to custom applications -->
 
 
 <!-- Start of the steps applicable to Chat GPT -->
