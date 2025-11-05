@@ -1,5 +1,5 @@
 ---
-title: "List group resource"
+title: "List groupResource objects"
 description: "Get a list of the groupResource objects and their properties."
 author: "kwshea"
 ms.localizationpriority: medium
@@ -8,7 +8,7 @@ doc_type: apiPageType
 ms.date: 11/03/2025
 ---
 
-# List GroupResource
+# List groupResource objects
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -29,11 +29,11 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET https://graph.microsoft.com//beta/identityGovernance/privilegedAccess/group/resources
+GET /identityGovernance/privilegedAccess/group/resources
 ```
 
 ## Query parameters
-This method supports the `$select`, `$filter`, and `$expand` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select`, `$filter` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -49,9 +49,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Example 1: Retrieve all groupResource
-
-#### Request
+### Request
 The following example shows a request.
 
 <!-- {
@@ -60,13 +58,12 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com//beta/identityGovernance/privilegedAccess/group/resources
+GET /identityGovernance/privilegedAccess/group/resources
 ```
 
 #### Response
 If successful, this method returns a `200 OK` response code and a collection of [groupResource](../resources/groupResource.md) objects in the response body.
 
-### Response
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

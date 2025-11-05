@@ -1,5 +1,5 @@
 ---
-title: "Get groups"
+title: "Get groupResource"
 description: "Read the properties and relationships of a groupResource object"
 author: "kwshea"
 ms.localizationpriority: medium
@@ -29,11 +29,11 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /beta/identityGovernance/privilegedAccess/group/resources/{groupId}
+GET /identityGovernance/privilegedAccess/group/resources/{groupId}
 ```
 
 ## Optional query parameters
-This method supports the `$select` and `$expand` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -48,8 +48,6 @@ Don't supply a request body for this method.
 If successful, this method returns a `200 OK` response code and a [groupResource](../resources/groupResource.md) object in the response body.
 
 ## Examples
-
-### Example 1: Get all eligibility schedule requests
 
 #### Request
 The following example shows a request.

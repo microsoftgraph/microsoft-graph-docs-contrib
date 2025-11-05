@@ -1,6 +1,6 @@
 ---
 title: "groupResource resource type"
-description: "Represents the group resource in Privileged Identity Management (PIM). This entity extends microsoft.graph.directoryObject entity."
+description: "Represents the group resource in Privileged Identity Management (PIM) for groups."
 ms.localizationpriority: medium
 author: "shea3100"
 ms.subservice: "entra-id-governance"
@@ -14,19 +14,20 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-In [PIM](privilegedaccess.md), a group resource represents the group resource in Privileged Identity Management. This entity extends [Directory object](directoryobject.md).
+Represents the [group](../resources/group) resource in PIM for groups. This entity extends [Directory object](directoryobject.md).
 
 ## Methods
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List](../api/privilegedaccessgroup-list-groupresource.md) | [groupResource](groupResource.md) collection | Retrieve a list of groupResource objects |
-| [Get](../api/privilegedaccessgroupgroupresource-get.md)|[groupResource](groupResource.md)|Read the properties of a [groupResource](groupResource.md) object.|
+| [List](../api/privilegedaccessgroup-list-groupresource.md) | [groupResource](groupResource.md) collection | Retrieve a list of [groupResource](groupResource.md) objects. |
+| [Get](../api/privilegedaccessgroupgroupresource-get.md)|[groupResource](groupResource.md)|Read the properties of a [groupResource](groupResource.md) object. |
 
 ## Properties
 | Property    | Type   | Description |
 | :---------------| :---------- | :---------- |
-| Id | String | Indicates the identifier of the group. |
+| id | String | Indicates the identifier of the group. Inherited from [entity](../resources/entity.md).|
+|deletedDateTime|DateTimeOffset|`null`. Inherited from [directoryObject](../resources/directoryobject.md).|
 
 ## Relationships
 
@@ -44,6 +45,7 @@ The following JSON representation shows the resource type.
 }-->
 ```json
 {
-  "id": "String (identifier)"
+  "id": "String (identifier)",
+  "deletedDateTime": "String (timestamp)"
 }
 ```
