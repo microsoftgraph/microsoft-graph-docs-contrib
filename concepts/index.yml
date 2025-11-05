@@ -113,7 +113,7 @@ tools:
       url: /graph/templates/
       # Card
     - title: MCP Server for Enterprise
-      imageSrc: ./images/hub/icon03-graphexplorer.svg
+      imageSrc: ./images/index/i_backlog.svg
       url: /graph/concepts/mcp-server/overview
 
 additionalContent:
