@@ -23,7 +23,7 @@ highlightedContent:
       itemType: reference
       url: /graph/api/overview?view=graph-rest-1.0&preserve-view=true
     - title: Microsoft MCP Server for Enterprise
-      itemType: concept
+      itemType: whats-new
       url: /graph/mcp-server/overview
     - title: API Changelog
       itemType: whats-new
