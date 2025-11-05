@@ -99,6 +99,8 @@ The following sections describe how to set up the Microsoft MCP Server for Enter
 <!-- Start of the steps applicable to Chat GPT -->
 :::zone pivot="chat-gpt"
 
+The following sections describe how to set up the Microsoft MCP Server for Enterprise for Chat GPT. Select your client type at the top of this article to view the relevant instructions.
+
 1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com) with an account that has privileges to register applications in the tenant. *Application Administrator* or *Cloud Application Administrator* roles are sufficient.
 1. Expand **Entra ID** > **App registrations** > select **New registration**.
 1. Enter a display **Name** for your application.
