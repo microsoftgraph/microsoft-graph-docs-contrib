@@ -19,8 +19,8 @@ Represents a deployment event within the Global Secure Access services, includin
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/networkaccess-networkaccessroot-list-deployments.md)|[microsoft.graph.networkaccess.deployment](../resources/networkaccess-deployment.md) collection|Retrieve a list of logs that include the status of deployments performed through the Global Secure Access services.|
-|[Get](../api/networkaccess-networkaccessroot-get-deployments.md)|[microsoft.graph.networkaccess.deployment](../resources/networkaccess-deployment.md)|Retrieve a specific deployment by filtering the list endpoint with the deployment ID. Individual deployment retrieval is performed by applying a filter to the list deployments API.|
+|[List](../api/networkaccess-deployments-list.md)|[microsoft.graph.networkaccess.deployment](../resources/networkaccess-deployment.md) collection|Retrieve a list of logs that include the status of deployments performed through the Global Secure Access services.|
+|[Get](../api/networkaccess-deployments-get.md)|[microsoft.graph.networkaccess.deployment](../resources/networkaccess-deployment.md)|Retrieve a specific deployment by filtering the list endpoint with the deployment ID. Individual deployment retrieval is performed by applying a filter to the list deployments API.|
 
 
 ## Properties
