@@ -111,6 +111,10 @@ tools:
     - title: IaC templates
       imageSrc: ./images/hub/icon02-quickstart.svg
       url: /graph/templates/
+      # Card
+    - title: MCP Server for Enterprise
+      imageSrc: ./images/hub/icon03-graphexplorer.svg
+      url: /graph/concepts/mcp-server/overview
 
 additionalContent:
   sections:
