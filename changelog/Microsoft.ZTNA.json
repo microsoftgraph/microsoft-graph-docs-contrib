@@ -1164,6 +1164,14 @@
         },
         {
           "Id": "ae2295eb-2e29-43b6-8de7-4219db8e9e4c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "baseEntity",
+          "ChangeType": "Addition",
+          "Description": "Added the [baseEntity](https://learn.microsoft.com/en-us/graph/api/resources/baseentity?view=graph-rest-beta) resource.",
+          "Target": "baseEntity"
+        },
+        {
+          "Id": "ae2295eb-2e29-43b6-8de7-4219db8e9e4c",
           "ApiChange": "Relationship",
           "ChangedApiName": "deployments",
           "ChangeType": "Addition",
