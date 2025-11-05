@@ -34,6 +34,7 @@ Represents the type of conditions that govern when the policy applies.
 |signInRiskLevels|riskLevel collection| Sign-in risk levels included in the policy. Possible values are: `low`, `medium`, `high`, `hidden`, `none`, `unknownFutureValue`. Required.|
 |userRiskLevels|riskLevel collection| User risk levels included in the policy. Possible values are: `low`, `medium`, `high`, `hidden`, `none`, `unknownFutureValue`. Required.|
 |insiderRiskLevels|conditionalAccessInsiderRiskLevels| Insider risk levels included in the policy. The possible values are: `minor`, `moderate`, `elevated`, `unknownFutureValue`.|
+|agentIdRiskLevels|conditionalAccessAgentIdRiskLevels| Agent identity risk levels included in the policy. Possible values are: `low`, `medium`, `high`, `unknownFutureValue`.|
 
 ## Relationships
 
@@ -72,7 +73,8 @@ The following JSON representation shows the resource type.
   "servicePrincipalRiskLevels": ["String"],
   "signInRiskLevels": ["String"],
   "authenticationFlows": {"@odata.type": "microsoft.graph.conditionalAccessAuthenticationFlows"},
-  "insiderRiskLevels": "String"
+  "insiderRiskLevels": "String",
+  "agentIdRiskLevels": "String"
 }
 ```
 
