@@ -61,7 +61,7 @@ If successful, this method returns a `200 OK` response code and a [cloudPCUserSe
 ## Examples
 
 #### Request
-The following example shows a request to delete user storage profiles from a Cloud PC policy assignment's user settings persistence.
+The following example shows a request to retrieve the user settings persistence usage for a Cloud PC policy assignment.
 <!-- {
   "blockType": "request",
   "name": "retrieveusersettingspersistenceprofileusage_cloudpcprovisioningpolicy",
