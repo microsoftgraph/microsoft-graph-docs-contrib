@@ -52,7 +52,7 @@ This resource is an open type.
 |:---|:---|:---|
 |accountEnabled|Boolean|`true` if the agent identity account is enabled; otherwise, `false`. If set to `false`, then no users are able to sign in to this app, even if they're assigned to it. Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
 |agentIdentityBlueprintId|String|The unique identifier of the agent identity blueprint that defines the configuration for this agent identity.|
-|createdByAppId|String|The **appId** of the Application used to create the Agent Identity. Read-only. Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
+|createdByAppId|String|The **appId** of the Application used to create the Agent Identity. Set internally by Microsoft Enctra ID. Read-only. Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
 |createdDateTime|DateTimeOffset|The date and time the agent identity was created. Read-only. Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
 |disabledByMicrosoftStatus|String|Specifies whether Microsoft has disabled the registered Agent Identity Blueprint. Possible values are: `null` (default value), `NotDisabled`, and `DisabledDueToViolationOfServicesAgreement` (reasons may include suspicious, abusive, or malicious activity, or a violation of the Microsoft Services Agreement). Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
 |displayName|String|The display name for the agent identity. Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
