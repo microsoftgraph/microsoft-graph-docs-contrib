@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The request object used to create an upload session.
+The request object used to create an [uploadSession](../resource/uploadsession.md).
 
 
 ## Properties
