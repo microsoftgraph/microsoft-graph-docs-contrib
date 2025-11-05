@@ -10,6 +10,14 @@
           "Description": "Added the **customDataProvidedResourceUploadStatus** enumeration type.",
           "Target": "customDataProvidedResourceUploadStatus"
         },
+         {
+          "Id": "4eed495b-2c70-473d-94bf-54275e48eb5a",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "principalType",
+          "ChangeType": "Addition",
+          "Description": "Added the **principalType** enumeration type.",
+          "Target": "principalType"
+        },
         {
           "Id": "f1cb09f8-0e5b-4fb1-9882-e9017e36754e",
           "ApiChange": "Resource",
