@@ -52,7 +52,7 @@ The following table shows the parameters that can be used with this method.
 
 |Property|Type|Description|
 |:---|:---|:---|
-| configurationid  |String | The unique identifier for the selected Cloud PC user settings persistence.   |
+| configurationId  |String | The unique identifier for the selected Cloud PC user settings persistence.   |
 
 ## Response
 

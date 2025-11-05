@@ -52,7 +52,7 @@ The following table shows the parameters that can be used with this method.
 
 |Property|Type|Description|
 |:---|:---|:---|
-| configurationid  |String | The unique identifier for the selected Cloud PC user settings persistence.   |
+| configurationId  |String | The unique identifier for the selected Cloud PC user settings persistence.   |
 
 ## Response
 
@@ -61,8 +61,7 @@ If successful, this method returns a `200 OK` response code and a [cloudPCUserSe
 ## Examples
 
 #### Request
-The following example shows a request for retrieving the usage of Cloud PC user settings persistence in the selected Cloud PC's assignment.
-
+The following example shows a request to delete user storage profiles from a Cloud PC policy assignment's user settings persistence.
 <!-- {
   "blockType": "request",
   "name": "retrieveusersettingspersistenceprofileusage_cloudpcprovisioningpolicy",
