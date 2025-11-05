@@ -1773,6 +1773,96 @@
       "CreatedDateTime": "2025-05-29T19:58:07.5075874Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Identity and sign-in"
-    }
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "0053d5eb-b2c8-411a-ae1d-a0126ef69070",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "agentIdRiskLevel",
+          "ChangeType": "Addition",
+          "Description": "Added the **agentIdRiskLevel** enumeration type.",
+          "Target": "agentIdRiskLevel"
+        },
+        {
+          "Id": "0053d5eb-b2c8-411a-ae1d-a0126ef69070",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "conditionalAccessAgentIdRiskLevels",
+          "ChangeType": "Addition",
+          "Description": "Added the **conditionalAccessAgentIdRiskLevels** enumeration type.",
+          "Target": "conditionalAccessAgentIdRiskLevels"
+        },
+        {
+          "Id": "0053d5eb-b2c8-411a-ae1d-a0126ef69070",
+          "ApiChange": "Member",
+          "ChangedApiName": "agentIdRisk",
+          "ChangeType": "Deletion",
+          "Description": "Removed the `agentIdRisk` member from the **whatIfAnalysisReasons** enumeration.",
+          "Target": "whatIfAnalysisReasons"
+        },
+        {
+          "Id": "0053d5eb-b2c8-411a-ae1d-a0126ef69070",
+          "ApiChange": "Member",
+          "ChangedApiName": "agentIdentities",
+          "ChangeType": "Addition",
+          "Description": "Added the `agentIdentities` member to the **whatIfAnalysisReasons** enumeration.",
+          "Target": "whatIfAnalysisReasons"
+        },
+        {
+          "Id": "0053d5eb-b2c8-411a-ae1d-a0126ef69070",
+          "ApiChange": "Resource",
+          "ChangedApiName": "agentSignIn",
+          "ChangeType": "Addition",
+          "Description": "Added the [agentSignIn](https://learn.microsoft.com/en-us/graph/api/resources/agentSignIn?view=graph-rest-beta) resource.",
+          "Target": "agentSignIn"
+        },
+        {
+          "Id": "0053d5eb-b2c8-411a-ae1d-a0126ef69070",
+          "ApiChange": "Property",
+          "ChangedApiName": "agentIdServicePrincipalFilter",
+          "ChangeType": "Addition",
+          "Description": "Added the **agentIdServicePrincipalFilter** property to the [conditionalAccessClientApplications](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessClientApplications?view=graph-rest-beta) resource.",
+          "Target": "conditionalAccessClientApplications"
+        },
+        {
+          "Id": "0053d5eb-b2c8-411a-ae1d-a0126ef69070",
+          "ApiChange": "Property",
+          "ChangedApiName": "excludeAgentIdServicePrincipals",
+          "ChangeType": "Addition",
+          "Description": "Added the **excludeAgentIdServicePrincipals** property to the [conditionalAccessClientApplications](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessClientApplications?view=graph-rest-beta) resource.",
+          "Target": "conditionalAccessClientApplications"
+        },
+        {
+          "Id": "0053d5eb-b2c8-411a-ae1d-a0126ef69070",
+          "ApiChange": "Property",
+          "ChangedApiName": "includeAgentIdServicePrincipals",
+          "ChangeType": "Addition",
+          "Description": "Added the **includeAgentIdServicePrincipals** property to the [conditionalAccessClientApplications](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessClientApplications?view=graph-rest-beta) resource.",
+          "Target": "conditionalAccessClientApplications"
+        },
+        {
+          "Id": "0053d5eb-b2c8-411a-ae1d-a0126ef69070",
+          "ApiChange": "Property",
+          "ChangedApiName": "agentIdRiskLevels",
+          "ChangeType": "Addition",
+          "Description": "Added the **agentIdRiskLevels** property to the [conditionalAccessConditionSet](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessConditionSet?view=graph-rest-beta) resource.",
+          "Target": "conditionalAccessConditionSet"
+        },
+        {
+          "Id": "0053d5eb-b2c8-411a-ae1d-a0126ef69070",
+          "ApiChange": "Property",
+          "ChangedApiName": "agentIdRiskLevel",
+          "ChangeType": "Addition",
+          "Description": "Added the **agentIdRiskLevel** property to the [signInConditions](https://learn.microsoft.com/en-us/graph/api/resources/signInConditions?view=graph-rest-beta) resource.",
+          "Target": "signInConditions"
+        }
+      ],
+      "Id": "0053d5eb-b2c8-411a-ae1d-a0126ef69070",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-11-03T21:09:42.1591906Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    }    
   ]
 }
