@@ -79,7 +79,7 @@ The user calls the API and filters by one or more label ID GUIDs.
    - If `isScopedToUser` filter parameter is present, then `or` is not allowed in the filter parameters
 
 2. **Prefiltering Behavior with OR**
-   - If `or` is present in the filter parameters, then `locale` and `contentFormats` filter parameters (if present) will not be used for prefiltering
+   - If `or` is present in the filter parameters, then `locale` and `contentFormats` filter parameters (if present) won't be used for prefiltering
 
 3. **Inner OR Exception**
    - Inner `or` operations that fall under the parameter tree are permitted
@@ -96,10 +96,10 @@ The user calls the API and filters by one label ID GUID and one user right.
 #### Rules
 
 1. **OR Restriction with Multiple Parameters**
-   - If any of the following filter parameters are present: `isScopedToUser`, `id`, or `ownerEmail`, then `or` is not allowed in the filter parameters
+   - If any of the following filter parameters are present: `isScopedToUser`, `id`, or `ownerEmail`, then `or` isn't allowed in the filter parameters
 
 2. **ownerEmail Validation**
-   - `ownerEmail` present without `id` will throw `ArgumentException`
+   - `ownerEmail` present without `id` throws an `ArgumentException`.
 
 3. **Prefiltering Behavior with OR**
    - If `or` is present in the $filter string, then `locale` and `contentFormats` filter parameters are ignored and not used to prefilter the results.
@@ -109,7 +109,7 @@ The user calls the API and filters by one label ID GUID and one user right.
 
 ### Scenario 2.5: Return results for SensitivityLabels using a filter for multiple IDs and user rights
 
-   The user wants to call the API and filter by multiple IDs and ownerEmail. To do this, you must combine both the label ID and ownerEmail in 1 boolean clause.  
+   The user wants to call the API and filter by multiple IDs and ownerEmail. To achieve this outcome, you must combine both the label ID and ownerEmail in one boolean clause.
 
 #### Example
    ``` odata
@@ -133,18 +133,18 @@ We recommend using filters that use a single call with multiple IDs to retrieve 
 
    - Only the tuple-based structure combined by OR operations as shown above is supported.
 
-   - Any other combination of OR operations or mixing unrelated filters are not allowed and results in an ArgumentException.
+   - Any other combination of OR operations or mixing unrelated filters aren't allowed and results in an ArgumentException.
 
 2. **ownerEmail Validation**
 
-   - `ownerEmail` must always appear together with an `id`. Using `ownerEmail` alone will result in an `ArgumentException`.
+   - `ownerEmail` must always appear together with an `id`. Using `ownerEmail` alone results in an `ArgumentException`.
 
 
 3. **Inner OR Exception**
 
-   - You can combine clauses using subclauses. Here is an example of a subclause: (id eq 'guid1' and ownerEmail eq 'ownerEmail1')
+   - You can combine clauses using subclauses. Here's an example of a subclause: (id eq 'guid1' and ownerEmail eq 'ownerEmail1')
 
-   - In this example, there are 3 subclauses. When combining the ID and ownerEmail, use AND in the subclause. Do not use OR otherwise it will throw an exception.
+   - In this example, there are three subclauses. When combining the ID and ownerEmail, use AND in the subclause. Don't use OR otherwise it throws an exception.
 
 
 4. **Prefiltering Behavior**
@@ -166,10 +166,10 @@ We recommend using filters that use a single call with multiple IDs to retrieve 
 #### Rules
 
 1. **OR Restriction with ownerEmail**
-   - `or` operations with filter parameter `ownerEmail` will result in an exception
+   - `or` operations with filter parameter `ownerEmail` results in an exception.
 
 2. **Inner OR Exception**
-   - Inner `or` operations that fall under the parameter tree are permitted
+   - Inner `or` operations that fall under the parameter tree are permitted.
 
 ### isScopedToUser Parameter Rules
 
