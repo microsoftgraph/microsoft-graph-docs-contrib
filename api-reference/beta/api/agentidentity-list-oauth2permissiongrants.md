@@ -1,20 +1,22 @@
 ---
 title: "List oAuth2PermissionGrant objects"
-description: "Get a list of the oAuth2PermissionGrant objects and their properties."
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+description: "Retrieve a list of oAuth2PermissionGrant objects, representing delegated permission grants, granted to a agent identity."
+author: "zallison22"
 ms.date: 10/27/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 
 # List oAuth2PermissionGrant objects
-
+  
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the oAuth2PermissionGrant objects and their properties.
+Retrieve a list of [oAuth2PermissionGrant](../resources/oAuth2PermissionGrant.md) entities, representing delegated permissions granted to the agent identity (representing the client application) to access an API on behalf of a user.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -34,7 +36,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /oauth2PermissionGrants
+GET /servicePrincipals/{id}/Microsoft.Graph.AgentIdentity/oauth2PermissionGrants
 ```
 
 ## Optional query parameters
@@ -66,38 +68,40 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/oauth2PermissionGrants
+GET https://graph.microsoft.com/beta/servicePrincipals/{id}/Microsoft.Graph.AgentIdentity/oauth2PermissionGrants
 ```
 
 
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
+
+> **Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.oAuth2PermissionGrant"
-}
--->
-``` http
+  "@odata.type": "microsoft.graph.oAuth2PermissionGrant",
+  "isCollection": true
+} -->
+
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
+Content-Length: 253
 
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.oAuth2PermissionGrant",
-      "id": "26fb2fff-ab79-75c5-9ec6-936b9fd40aac",
-      "clientId": "String",
-      "consentType": "String",
-      "expiryTime": "String (timestamp)",
-      "principalId": "String",
-      "resourceId": "String",
-      "scope": "String",
-      "startTime": "String (timestamp)"
+      "id": "id-value",
+      "clientId": "clientId-value",
+      "consentType": "consentType-value",
+      "principalId": "principalId-value",
+      "resourceId": "resourceId-value",
+      "scope": "scope-value",
+      "startTime": "datetime-value",
+      "expiryTime": "datetime-value"
     }
   ]
 }
 ```
-

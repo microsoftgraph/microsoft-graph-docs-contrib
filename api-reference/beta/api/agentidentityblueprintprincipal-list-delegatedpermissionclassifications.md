@@ -1,10 +1,10 @@
 ---
 title: "List delegatedPermissionClassifications"
-description: "**TODO: Add a useful description.**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+description: "Retrieve a list of classifications given to delegated permissions exposed by an API's agent identity blueprint."
+author: "zallison22"
 ms.date: 10/27/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 
@@ -14,7 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add a useful description.**
+Retrieve the list of [delegatedPermissionClassification](../resources/delegatedpermissionclassification.md) currently configured for the delegated permissions exposed by an API.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -29,12 +31,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
-<!-- {
-  "blockType": "ignored"
-}
--->
-``` http
-GET /servicePrincipals/{servicePrincipalsId}/delegatedPermissionClassifications
+<!-- { "blockType": "ignored" } -->
+```http
+GET /servicePrincipals/{id}/Microsoft.Graph.AgentIdentityBlueprintPrincipal/delegatedPermissionClassifications
 ```
 
 ## Optional query parameters
@@ -60,40 +59,40 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Request
 
 The following example shows a request.
+
 <!-- {
   "blockType": "request",
-  "name": "list_delegatedpermissionclassification"
-}
--->
-``` http
-GET https://graph.microsoft.com/beta/servicePrincipals/{servicePrincipalsId}/delegatedPermissionClassifications
-```
+  "name": "serviceprincipal_get_delegatedpermissionclassification"
+}-->
 
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/servicePrincipals/{id}/Microsoft.Graph.AgentIdentityBlueprintPrincipal/delegatedPermissionClassifications
+```
 
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
+
+> **Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.delegatedPermissionClassification"
-}
--->
-``` http
+  "@odata.type": "microsoft.graph.delegatedPermissionClassification",
+  "isCollection": true
+} -->
+
+```http
 HTTP/1.1 200 OK
-Content-Type: application/json
+Content-type: application/json
 
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.delegatedPermissionClassification",
-      "id": "c1c96e48-1b5f-80fa-d1ae-713ff66df713",
-      "permissionId": "String",
-      "permissionName": "String",
-      "classification": "String"
+        "id": "2G3-4TG6YU2J54hjnaRoPQE",
+        "permissionId": "e1fe6dd8-ba31-4d61-89e7-88639da4683d",
+        "permissionName": "User.Read",
+        "classification": "low"
     }
   ]
 }
 ```
-

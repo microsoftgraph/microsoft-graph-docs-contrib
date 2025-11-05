@@ -1,10 +1,10 @@
 ---
 title: "List appRoleAssignedTo"
-description: "**TODO: Add a useful description.**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+description: "Retrieve a list of app role assignments granted for a agent identity."
+author: "zallison22"
 ms.date: 10/27/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 
@@ -14,7 +14,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add a useful description.**
+Retrieve all clients (users, groups, or client agent identitys) that have an [appRoleAssignment](../resources/approleassignment.md) for a given resource service principal.
+
+For example, if the resource service principal is the service principal for the Microsoft Graph API, this API returns all service principals that have been granted any app-only permissions to Microsoft Graph. If the resource service principal is an application with app roles granted to users and groups, this API returns all the users and groups assigned app roles for this application.
+
+>**Note** This request might have replication delays for app role assignments that were recently granted or removed.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -29,22 +35,19 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
-<!-- {
-  "blockType": "ignored"
-}
--->
-``` http
-GET /servicePrincipals/{servicePrincipalsId}/appRoleAssignedTo
+<!-- { "blockType": "ignored" } -->
+```http
+GET /servicePrincipals/{id}/Microsoft.Graph.AgentIdentityBlueprintPrincipal/appRoleAssignedTo
 ```
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` and `$filter` (`eq`, `startswith`) [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 
-|Name|Description|
-|:---|:---|
+| Name           | Description                |
+|:---------------|:---------------------------|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
@@ -59,46 +62,52 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-The following example shows a request.
+
+The following example shows a request to retrieve the app roles assignments that have been granted for a given resource agent identity.
+
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_approleassignment"
-}
--->
-``` http
-GET https://graph.microsoft.com/beta/servicePrincipals/{servicePrincipalsId}/appRoleAssignedTo
+  "name": "serviceprincipal_get_approleassignedto"
+}-->
+
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/servicePrincipals/8e881353-1735-45af-af21-ee1344582a4d/Microsoft.Graph.AgentIdentity/appRoleAssignedTo
 ```
 
 
 ### Response
-
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
+
+> **Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.appRoleAssignment"
-}
--->
-``` http
+  "@odata.type": "microsoft.graph.appRoleAssignment",
+  "isCollection": true
+} -->
+
+```http
 HTTP/1.1 200 OK
-Content-Type: application/json
+Content-type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#appRoleAssignments",
   "value": [
     {
-      "@odata.type": "#microsoft.graph.appRoleAssignment",
-      "id": "ff9f3843-845a-c408-508a-687bf19a481f",
-      "deletedDateTime": "String (timestamp)",
-      "appRoleId": "Guid",
-      "creationTimestamp": "String (timestamp)",
-      "principalDisplayName": "String",
-      "principalId": "Guid",
-      "principalType": "String",
-      "resourceDisplayName": "String",
-      "resourceId": "Guid"
+      "id": "41W1zT6z1U-kJxf62svfp1HFE8pMZhxDun-ThPczmJE",
+      "creationTimestamp": "2021-02-02T04:22:45.9480566Z",
+      "appRoleId": "00000000-0000-0000-0000-000000000000",
+      "principalDisplayName": "MOD Administrator",
+      "principalId": "cdb555e3-b33e-4fd5-a427-17fadacbdfa7",
+      "principalType": "User",
+      "resourceDisplayName": "dxprovisioning-graphapi-client",
+      "resourceId": "8e881353-1735-45af-af21-ee1344582a4d"
     }
   ]
 }
 ```
+
 
