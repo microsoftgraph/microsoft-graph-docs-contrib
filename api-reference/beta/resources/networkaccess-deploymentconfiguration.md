@@ -14,7 +14,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the configuration details for a deployment performed through the Global Secure Access services.
+Represents the configuration details for a [deployment](../resource/networkaccess-deployment.md) performed through the Global Secure Access services.
 
 ## Properties
 |Property|Type|Description|
@@ -40,5 +40,6 @@ The following JSON representation shows the resource type.
   "changeType": "String"
 }
 ```
+
 
 
