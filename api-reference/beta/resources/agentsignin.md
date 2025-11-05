@@ -14,7 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Defines details of the agent identity that is signing in, as defined in [Conditional Access What If evaluation](../api/conditionalaccessroot-evaluate.md). Inherits from [signInIdentity](../resources/signinidentity.md).
+Defines details of the agent identity that is signing in, as defined in [Conditional Access What If evaluation](../api/conditionalaccessroot-evaluate.md).
+
+Inherits from [signInIdentity](../resources/signinidentity.md).
 
 
 ## Properties
