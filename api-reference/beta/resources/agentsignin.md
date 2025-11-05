@@ -1,5 +1,5 @@
 ---
-title: "agentSignIn resource type"
+title: "agentSignIn resource type (for conditionalAccess)"
 description: "Defines details of the agent identity that is signing in."
 author: "kvenkit"
 ms.date: 11/03/2025
