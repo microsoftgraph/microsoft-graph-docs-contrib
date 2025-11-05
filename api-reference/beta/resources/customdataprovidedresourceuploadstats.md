@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Metadata related to the files that have been uploaded as part of the upload session thus far. 
+Metadata related to the files that have been uploaded as part of the [uploadSession](../resource/uploadsession.md). thus far. 
 
 
 ## Properties
