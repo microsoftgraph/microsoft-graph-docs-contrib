@@ -33,11 +33,12 @@ The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "baseType": "microsoft.graph.entity"
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.networkaccess.baseEntity"
   }
 -->
 ``` json
-{
+{"@odata.type": "#microsoft.graph.networkaccess.baseEntity",
   "id": "String (identifier)",
   "name": "String"
 }
