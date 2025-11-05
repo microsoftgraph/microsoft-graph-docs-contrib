@@ -12,7 +12,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph  
 
-Contains details about customizable properties of elements on the login page of the [organization's branding themes](.../resources/organizationalBrandingTheme.md).  
+Contains details about customizable properties of elements on the login page of the [organization's branding themes](../resources/organizationalbrandingtheme.md).  
 
 
 
