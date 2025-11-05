@@ -137,7 +137,7 @@ We recommend using filters that use a single call with multiple IDs to retrieve 
 
 2. **ownerEmail Validation**
 
-   - ownerEmail must always appear together with an ID. Using ownerEmail alone will result in an ArgumentException.
+   - `ownerEmail` must always appear together with an `id`. Using `ownerEmail` alone will result in an `ArgumentException`.
 
 
 3. **Inner OR Exception**
