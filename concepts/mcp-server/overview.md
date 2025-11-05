@@ -6,7 +6,7 @@ ms.author: ombongifaith
 ms.reviewer: Licantrop0
 ms.subservice: enterprise-mcp-server
 ms.topic: overview
-ms.date: 10/16/2025
+ms.date: 11/05/2025
 
 #customer intent: As a developer or IT administrator, I want to understand the Microsoft MCP Server for Enterprise so that I can effectively use natural language to query and manage my organization's identity and device data.
 ---
@@ -85,8 +85,22 @@ The MCP server follows the same throttling limits as Microsoft Graph APIs.
 
 Microsoft MCP Server for Enterprise is available only in the public cloud (global service).
 
-## Next steps
+## Logs
+
+To log and monitor usage of Microsoft MCP Server for Enterprise, enable [Microsoft Graph activity logs](../microsoft-graph-activity-logs-overview.md) in your tenant. The MCP server uses Microsoft Graph APIs, so all API calls made through the MCP server are logged in the Microsoft Graph activity logs.
+
+For logs specific to MCP server usage, filter the activity logs by the **appId** (Referred to as "application (client) ID" in the Entra admin center or **AppId** in the Log Analytics schema) of the MCP server: `e8c77dc2-69b3-43f4-bc51-3213c9d915b4`. The following sample Kusto query retrieves these logs:
+
+```kusto
+MicrosoftGraphActivityLogs
+| where TimeGenerated >= ago(30d)
+| where AppId == "e8c77dc2-69b3-43f4-bc51-3213c9d915b4"
+| project RequestId, TimeGenerated, UserId, RequestMethod, RequestUri, ResponseStatusCode
+```
+
+## Next step
 
 - [Get started with Microsoft MCP Server for Enterprise](./mcp-server/get-started-vscode.md)
-- [Authentication and permissions](./mcp-server/authentication-authorization-permissions.md)
+<!--
 - [Supported scenarios and examples](./mcp-server/supported-scenarios.md)
+-->
