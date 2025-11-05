@@ -149,7 +149,7 @@ We recommend using filters that use a single call with multiple IDs to retrieve 
 
 4. **Prefiltering Behavior**
 
-   - When or is used, the locale and contentFormats parameters (if provided) are ignored for prefiltering.
+   - When `or` is used, the `locale` and `contentFormats` parameters (if provided) are ignored for prefiltering.
 
 #### Behavior Summary
 
