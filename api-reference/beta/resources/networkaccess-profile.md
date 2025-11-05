@@ -1,5 +1,5 @@
 ---
-title: profile resource type
+title: profile resource type (for networkAccess)
 description: "Represents a container for forwarding policies."
 author: "Moti-ba"
 ms.localizationpriority: medium
@@ -8,7 +8,7 @@ doc_type: resourcePageType
 ms.date: 04/06/2024
 ---
 
-# profile resource type
+# profile resource type (for networkAccess)
 
 Namespace: microsoft.graph.networkaccess
 
