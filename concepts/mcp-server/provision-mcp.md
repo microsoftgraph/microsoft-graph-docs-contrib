@@ -31,7 +31,7 @@ This article guides you on how to provision and manage the Microsoft MCP Server 
 ## Prerequisites
 
 Before you begin, ensure you have the following:
-- Sign-in to a Microsoft Entra tenant as a user with admin roles to manage applications and consent to permissions in the tenant. The least privileged [Microsoft Entra built-in roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) sufficient for this task are *Application Administrator* and *Cloud Application Administrator*.
+- Sign-in to a Microsoft Entra tenant as a user with admin roles to manage applications and consent to permissions in the tenant. *Application Administrator* and *Cloud Application Administrator* roles are sufficient for this task.
 
 ## Provision the MCP Server
 
@@ -39,6 +39,10 @@ Before you begin, ensure you have the following:
 
 Sign-in to [Graph Explorer](https://aka.ms/ge) using the same admin account you used to run the script, and consent to the *Application.ReadWrite.All* permission.
 
+<!-- {
+  "blockType": "request",
+  "name": "provision-mcp-enterprisemcpserver"
+}-->
 ```http
 POST https://graph.microsoft.com/v1.0/servicePrincipals
 Content-Type: application/json
@@ -70,7 +74,7 @@ In Powershell, navigate to the directory where you saved the script then run the
 .\Enterprise MCP PermissionGrants to VS and VSC.ps1
 ```
 
-You're prompted to sign in with your credentials and consent to the *DelegatedPermissionGrant.ReadWrite.All* and *Application.ReadWrite.All* permissions. The combination of these Microsoft Graph permissions and your admin roles allows you to provision the MCP Server and clients, and grant and revoke scopes to the MCP Clients on behalf of your organization.
+You're prompted to sign in with your credentials and consent to the *DelegatedPermissionGrant.ReadWrite.All* and *Application.ReadWrite.All* permissions. The combination of these Microsoft Graph permissions and your admin permissions allows you to provision the MCP Server and clients, and grant and revoke scopes to the MCP Clients on behalf of your organization.
 
 After signing in, the script does the following during its execution:
 
@@ -111,28 +115,37 @@ To verify that the MCP Server has been successfully provisioned, you can query t
 
 | Name               | Globally unique appId (Client ID)      |
 |--------------------|----------------------------------------|
-| IDNA MCP Service   | `e8c77dc2-69b3-43f4-bc51-3213c9d915b4` |
+| Microsoft MCP Server for Enterprise   | `e8c77dc2-69b3-43f4-bc51-3213c9d915b4` |
 | Visual Studio Code | `aebc6443-996d-45c2-90f0-388ff96faa56` |
 | Visual Studio      | `04f0c124-f2bc-4f59-8241-bf6df9866bbd` |
-
-<!-- TODO: Change MCP Server name -->
 
 # [Microsoft Graph](#tab/http)
 
 Sign in to [Graph Explorer](https://aka.ms/ge) using the same admin account you used to run the script, and execute the following query:
 
 By using the application names:
+<!-- {
+  "blockType": "request",
+  "name": "provision-mcp-verify-provisioning-displayname-filter"
+}-->
 ```http
-GET https://graph.microsoft.com/v1.0/servicePrincipals?$filter=displayName eq 'IDNA MCP Service' OR displayName eq 'Visual Studio Code' OR displayName eq 'Visual Studio'
+GET https://graph.microsoft.com/v1.0/servicePrincipals?$filter=displayName eq 'Microsoft MCP Server for Enterprise' OR displayName eq 'Visual Studio Code' OR displayName eq 'Visual Studio'
 ```
 
 By using the globally unique **appId**:
+<!-- {
+  "blockType": "request",
+  "name": "provision-mcp-verify-provisioning-appid-filter"
+}-->
 ```http
 GET https://graph.microsoft.com/v1.0/servicePrincipals?$filter=appId eq 'e8c77dc2-69b3-43f4-bc51-3213c9d915b4' OR appId eq 'aebc6443-996d-45c2-90f0-388ff96faa56' OR appId eq '04f0c124-f2bc-4f59-8241-bf6df9866bbd'
 ```
 
 From the service principal object for the MCP Server, you can also query the delegated permissions that the server exposes and are available to grant to the MCP Clients.
-
+<!-- {
+  "blockType": "request",
+  "name": "provision-mcp-verify-provisioning-server-oauth2PermissionScopes"
+}-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/servicePrincipals(appId ='e8c77dc2-69b3-43f4-bc51-3213c9d915b4')/oauth2PermissionScopes
 ```
@@ -151,8 +164,12 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId ='e8c77dc2-69b3-43f
 
 # [Microsoft Graph](#tab/http)
 
-The following request returns the list of MCP Clients authorized to call the MCP Server along with the granted scopes.
+The following request returns the list of MCP Clients authorized to call the MCP Server along with the granted scopes. *DelegatedPermissionGrant.Read.All* delegated permission is the least privilege permission supported to perform this action.
 
+<!-- {
+  "blockType": "request",
+  "name": "provision-mcp-verify-provisioning-clients-oauth2permissiongrants"
+}-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/oauth2PermissionGrants
 ```
@@ -163,7 +180,20 @@ The following example shows a response:
 HTTP/1.1 200 OK
 Content-type: application/json
 
-
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#oauth2PermissionGrants",
+    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET oauth2PermissionGrants?$select=clientId,consentType",
+    "value": [
+        {
+            "clientId": "c1f3989b-8221-4b49-93d2-eecb2ee7c105",
+            "consentType": "AllPrincipals",
+            "id": "m5jzwSGCSUuT0u7LLufBBSxlNWs6lExJlpG86CHL1os",
+            "principalId": null,
+            "resourceId": "6b35652c-943a-494c-9691-bce821cbd68b",
+            "scope": "MCP.AccessReview.Read.All MCP.AdministrativeUnit.Read.All MCP.Application.Read.All MCP.AuditLog.Read.All MCP.AuthenticationContext.Read.All MCP.Device.Read.All MCP.DirectoryRecommendations.Read.All MCP.Domain.Read.All MCP.EntitlementManagement.Read.All MCP.GroupMember.Read.All MCP.HealthMonitoringAlert.Read.All MCP.IdentityRiskEvent.Read.All MCP.IdentityRiskyServicePrincipal.Read.All MCP.IdentityRiskyUser.Read.All MCP.LicenseAssignment.Read.All MCP.LifecycleWorkflows.Read.All MCP.LifecycleWorkflows-CustomExt.Read.All MCP.LifecycleWorkflows-Reports.Read.All MCP.LifecycleWorkflows-Workflow.Read.All MCP.LifecycleWorkflows-Workflow.ReadBasic.All MCP.NetworkAccess.Read.All MCP.NetworkAccess-Reports.Read.All MCP.Organization.Read.All MCP.Policy.Read.All MCP.Policy.Read.ConditionalAccess MCP.ProvisioningLog.Read.All MCP.Reports.Read.All MCP.RoleAssignmentSchedule.Read.Directory MCP.RoleEligibilitySchedule.Read.Directory MCP.RoleManagement.Read.Directory MCP.Synchronization.Read.All MCP.User.Read.All MCP.UserAuthenticationMethod.Read.All"
+        }
+    ]
+}
 ```
 
 # [Admin center](#tab/entra-portal)
@@ -182,8 +212,16 @@ To disable the MCP Server for Enterprise, you need to remove the service princip
 
 # [Microsoft Graph](#tab/http)
 
-Sign in to [Graph Explorer](https://aka.ms/ge) using the same admin account you used to run the script, and execute the following query:
+Sign in to [Graph Explorer](https://aka.ms/ge) using the same admin account you used to run the script, and execute the following query, replacing `{id}` with the object ID of MCP Server for Enterprise in your tenant.
 
+<!-- {
+  "blockType": "request",
+  "name": "provision-mcp-delete-enterprisemcpserver"
+}-->
+```http
+DELETE https://graph.microsoft.com/v1.0/servicePrincipals/{id}
+```
+<!-- Disable the SP without deleting; Not live yet.
 ```http
 PATCH https://graph.microsoft.com/v1.0/servicePrincipals/{id}
 
@@ -191,6 +229,7 @@ PATCH https://graph.microsoft.com/v1.0/servicePrincipals/{id}
     "isDisabled": true
 }
 ```
+-->
 
 # [Admin center](#tab/entra-portal)
 
@@ -206,10 +245,12 @@ PATCH https://graph.microsoft.com/v1.0/servicePrincipals/{id}
 
 ### 403 Forbidden error when running the management script in PowerShell
 
-Verify that you signed in with an account that has either required roles and granted the required permissions. Run the `Get-MgContext` command and verify the **account**, **tenantId** and **scopes** properties.
+Verify that you signed in with an account that has either required roles and granted the required permissions. Run the `Get-MgContext` command and verify the values for **Account** and **Scopes**.
 
-## Next step -or- Related content
+<!--
+## Next step
 
 > [!div class="nextstepaction"]
 > [Use Visual Studio Code as an MCP Client](link.md)
+-->
 
