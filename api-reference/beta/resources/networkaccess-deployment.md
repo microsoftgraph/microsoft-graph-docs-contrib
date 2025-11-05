@@ -39,7 +39,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 |deploymentEndDateTime|DateTimeOffset|Indicates the date and time when the deployment was completed.|
 |initiatedBy|String|Identifies the user or system that initiated the deployment.|
 |lastModifiedDateTime|DateTimeOffset|Specifies the date and time when the deployment was last modified.|
-|requestId|String|A unique identifier for the deployment request.|
+|requestId|String|A unique identifier for the deployment request. Primary key.|
 |status|[microsoft.graph.networkaccess.deploymentStatus](../resources/networkaccess-deploymentstatus.md)|Represents the current status of the deployment, including its stage and any related messages.|
 
 

@@ -1,6 +1,6 @@
 ---
-title: "Get deployment logs"
-description: "Retrieve a single log by deployment ID that includes the status of deployment performed through the Global Secure Access services."
+title: "Get deployment objects"
+description: "Retrieve a single deployment log by ID that includes the status of deployment performed through the Global Secure Access services."
 author: cagautham
 ms.date: 10/14/2025
 ms.localizationpriority: medium
@@ -8,13 +8,13 @@ ms.subservice: entra-global-secure-access
 doc_type: apiPageType
 ---
 
-# Get deployment logs
+# Get deployment objects
 
 Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a deployment log by deployment ID that includes the status of deployment performed through the Global Secure Access services.
+Retrieve a [deployment](../resources/networkaccess-deployment.md) log by ID that includes the status of deployment performed through the Global Secure Access services.
 
 ## Permissions
 
@@ -32,7 +32,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /networkAccess/deployments(id)
+GET /networkAccess/deployments('id')
 ```
 
 ## Request headers
