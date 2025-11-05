@@ -1692,26 +1692,19 @@
               ]
             },
             {
-          "name": "Cross-tenant migration",
-          "childNodes": [
-            {
               "name": "Cross-tenant migration",
               "overview": "../../resources/cross-tenant-migration-overview.md",
               "resources":[
-                "microsoft.graph.crossTenantMigrationJob",
-                "microsoft.graph.crossTenantMigrationTask",
-                "microsoft.graph.migrationsRoot",
+                "crossTenantMigrationJob",
+                "crossTenantMigrationTask",
+                "migrationsRoot"
               ],
               "complexTypes":[
-                "microsoft.graph.crossTenantMigrationServiceStatusDetails",
-                "microsoft.graph.error",
-                "microsoft.graph.exchangeOnlineCrossTenantMigrationSettings",
+                "crossTenantMigrationServiceStatusDetails",
+                "error",
+                "exchangeOnlineCrossTenantMigrationSettings"
               ]
-            }
-          ]
-        }
-      ]
-    },
+            },
             {
               "name": "Identity protection",
               "overview": "../../resources/identityprotection-overview.md",
