@@ -1,10 +1,10 @@
 ---
 title: "Remove owners"
-description: "Remove a directoryObject object."
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+description: "Remove an owner from a AgentIdentity."
+author: "zallison22"
 ms.date: 10/27/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 
@@ -14,7 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Remove a [directoryObject](../resources/directoryobject.md) object.
+Remove an owner from a [agentIdentityBlueprintPrincipal](../resources/agentidentityblueprintprincipal.md) object. As a recommended best practice, agent identity blueprint principals should have at least two owners.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -29,53 +31,67 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
-<!-- {
-  "blockType": "ignored"
-}
--->
-``` http
-DELETE /servicePrincipals/{servicePrincipalsId}/owners/{id}/$ref
+<!-- { "blockType": "ignored" } -->
+```http
+DELETE /servicePrincipals/{id}/Microsoft.Graph.AgentIdentityBlueprintPrincipal/owners/{id}/$ref
+
 ```
-
 ## Request headers
-
-|Name|Description|
-|:---|:---|
+| Name | Description|
+|:---- |:---------- |
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
-
-Don't supply a request body for this method.
+In the request body, supply the identifier of the directory object to be assigned as owner.
 
 ## Response
 
 If successful, this method returns a `204 No Content` response code.
 
-## Examples
+## Example
 
 ### Request
 
-The following example shows a request.
+The following example shows the request.
+
 <!-- {
   "blockType": "request",
-  "name": "delete_owners_from_agentidentityblueprintprincipal"
+  "name": "serviceprincipal_delete_owners"
+}-->
+
+```http
+DELETE https://graph.microsoft.com/beta/servicePrincipals/{id}/Microsoft.Graph.AgentIdentityBlueprintPrincipal/owners/{id}/$ref
+Content-type: application/json
+
+{
+    "@odata.id": "https://graph.microsoft.com/v1.0/directoryObjects/{id}"
 }
--->
-``` http
-DELETE https://graph.microsoft.com/beta/servicePrincipals/{servicePrincipalsId}/owners/{id}/$ref
+
 ```
 
 
 ### Response
 
-The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
-  "blockType": "response",
-  "truncated": true
-}
--->
-``` http
+  "blockType": "response"
+} -->
+```http
 HTTP/1.1 204 No Content
 ```
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!--
+{
+  "type": "#page.annotation",
+  "description": "Remove owner",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+  ]
+}
+-->
 

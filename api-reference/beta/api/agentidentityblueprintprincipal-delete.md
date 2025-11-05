@@ -1,39 +1,38 @@
 ---
-title: "Delete servicePrincipal"
-description: "Delete servicePrincipal."
+title: "Delete agentIdentityBlueprintPrincipal"
+description: "Delete agentIdentityBlueprintPrincipal."
+author: "zallison22"
+ms.date: 10/27/2025
 ms.localizationpriority: medium
-doc_type: apiPageType
 ms.subservice: "entra-applications"
-author: "Jackson-Woods"
-ms.date: 04/19/2024
+doc_type: apiPageType
 ---
 
-# Delete servicePrincipal
+# Delete agentIdentityBlueprintPrincipal
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a [servicePrincipal](../resources/serviceprincipal.md) object.
+Delete a [agentIdentityBlueprintPrincipal](../resources/agentidentityblueprintprincipal.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "permissions", "name": "serviceprincipal_delete" } -->
-[!INCLUDE [permissions-table](../includes/permissions/serviceprincipal-delete-permissions.md)]
-
-[!INCLUDE [rbac-serviceprincipal-apis-write](../includes/rbac-for-apis/rbac-serviceprincipal-apis-write.md)]
+<!-- { "blockType": "permissions", "name": "agentidentityblueprintprincipal_delete" } -->
+[!INCLUDE [permissions-table](../includes/permissions/agentidentityblueprintprincipal-delete-permissions.md)]
 
 ## HTTP request
-
-You can address the service principal using either its **id** or **appId**. **id** and **appId** are referred to as the **Object ID** and **Application (Client) ID**, respectively, in app registrations in the Microsoft Entra admin center.
-<!-- { "blockType": "ignored" } -->
+You can address the agent identity blueprint principal using either its **id** or **appId**. **id** and **appId** are referred to as the **Object ID** and **Application (Client) ID**, respectively, in app registrations in the Microsoft Entra admin center.
 ```http
-DELETE /servicePrincipals/{id}
-DELETE /servicePrincipals(appId='{appId}')
+DELETE /servicePrincipals/{id}/Microsoft.Graph.AgentIdentityBlueprintPrincipal
 ```
+```http
+DELETE /servicePrincipals(appId='{appId}')/Microsoft.Graph.AgentIdentityBlueprintPrincipal
+```
+
 ## Request headers
 | Name       | Description|
 |:---------------|:--------|
@@ -51,45 +50,14 @@ If successful, this method returns `204 No Content` response code. It doesn't re
 The following example shows a request.
 
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete_serviceprincipal"
+  "name": "delete_agentIdentityBlueprintPrincipal"
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/beta/servicePrincipals/{id}
+DELETE https://graph.microsoft.com/beta/servicePrincipals/{id}/Microsoft.Graph.AgentIdentityBlueprintPrincipal
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/delete-serviceprincipal-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/delete-serviceprincipal-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/delete-serviceprincipal-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/delete-serviceprincipal-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/delete-serviceprincipal-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/delete-serviceprincipal-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/delete-serviceprincipal-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### Response
 The following example shows the response. 
@@ -107,7 +75,7 @@ HTTP/1.1 204 No Content
 <!--
 {
   "type": "#page.annotation",
-  "description": "Delete servicePrincipal",
+  "description": "Delete agentIdentityBlueprintPrincipal",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",

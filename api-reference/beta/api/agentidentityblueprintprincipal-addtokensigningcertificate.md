@@ -1,10 +1,10 @@
 ---
 title: "agentIdentityBlueprintPrincipal: addTokenSigningCertificate"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+description: "Add a signing certificate to a agentIdentityBlueprintPrincipal."
+author: "zallison22"
 ms.date: 10/27/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 
@@ -14,7 +14,17 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Creates a self-signed signing certificate and returns a [selfSignedCertificate](../resources/selfsignedcertificate.md) object, which is the public part of the generated certificate. The self-signed signing certificate is composed of the following objects which are added to the [servicePrincipal](../resources/serviceprincipal.md): 
++ The [keyCredentials](../resources/keycredential.md) object with the following objects:
+    + A private key object with **usage** set to `Sign`.
+    + A public key object with **usage** set to `Verify`.
++ The [passwordCredentials](../resources/passwordcredential.md) object.
+
+All the objects have the same value of **customKeyIdentifier**.
+
+The **passwordCredential** is used to open the PFX file (private key). It and the associated private key object have the same value of **keyId**. Once set during creation through the **displayName** property, the subject of the certificate cannot be updated. The **startDateTime** is set to the same time the certificate is created using the action. The **endDateTime** can be up to three years after the certificate is created.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -29,12 +39,12 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
-<!-- {
-  "blockType": "ignored"
-}
--->
-``` http
-POST /riskyAgentIdentityBlueprintPrincipal/agentIdentityBlueprintPrincipal/addTokenSigningCertificate
+You can address the service principal using either its **id** or **appId**. **id** and **appId** are referred to as the **Object ID** and **Application (Client) ID**, respectively, in app registrations in the Microsoft Entra admin center.
+<!-- { "blockType": "ignored" } -->
+
+```http
+POST /servicePrincipals/{id}/Microsoft.Graph.AgentIdentityBlueprintPrincipal/addTokenSigningCertificate
+POST /servicePrincipals(appId='{appId}')/Microsoft.Graph.AgentIdentityBlueprintPrincipal/addTokenSigningCertificate
 ```
 
 ## Request headers
@@ -46,16 +56,12 @@ POST /riskyAgentIdentityBlueprintPrincipal/agentIdentityBlueprintPrincipal/addTo
 
 ## Request body
 
-In the request body, supply a JSON representation of the parameters.
+In the request body, provide the following required properties.
 
-The following table lists the parameters that are required when you call this action.
-
-|Parameter|Type|Description|
-|:---|:---|:---|
-|displayName|String|**TODO: Add Description**|
-|endDateTime|DateTimeOffset|**TODO: Add Description**|
-
-
+| Property       | Type    |Description|
+|:---------------|:--------|:----------|
+| displayName | string | Friendly name for the key.  It must start with `CN=`.|
+| endDateTime | DateTimeOffset |The date and time when the credential expires. It can be up to 3 years from the date the certificate is created. If not supplied, the default is three years from the time of creation. The timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 
 ## Response
 
@@ -68,38 +74,54 @@ If successful, this action returns a `200 OK` response code and a [selfSignedCer
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "agentidentityblueprintprincipalthis.addtokensigningcertificate"
-}
--->
-``` http
-POST https://graph.microsoft.com/beta/riskyAgentIdentityBlueprintPrincipal/agentIdentityBlueprintPrincipal/addTokenSigningCertificate
-Content-Type: application/json
+  "name": "serviceprincipal_addtokensigningcertificate"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/servicePrincipals/004375c5-6e2e-4dec-95e3-626838cb9f80/Microsoft.Graph.AgentIdentityBlueprintPrincipal/addTokenSigningCertificate
+Content-type: application/json
 
 {
-  "displayName": "String",
-  "endDateTime": "String (timestamp)"
+    "displayName":"CN=customDisplayName",
+    "endDateTime":"2024-01-25T00:00:00Z"
 }
 ```
-
 
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.selfSignedCertificate"
-}
--->
-``` http
+} -->
+
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "microsoft.graph.selfSignedCertificate"
-  }
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.selfSignedCertificate",
+  "customKeyIdentifier": "2iD8ppbE+D6Kmu1ZvjM2jtQh88E=",
+  "displayName": "CN=customDisplayName",
+  "endDateTime": "2024-01-25T00:00:00Z",
+  "key": "MIICuDCCAaCgAwIBAgIIYXJsNtL4oUMwDQYJKoZIhvcNAQEL...StP8s/w==",
+  "keyId": "93bc223f-7235-4b9c-beea-d66847531c49",
+  "startDateTime": "2021-05-05T18:38:51.8100763Z",
+  "thumbprint": "DA20FCA696C4F83E8A9AED59BE33368ED421F3C1",
+  "type": "AsymmetricX509Cert",
+  "usage": "Verify"
 }
 ```
+<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
+2021-01-15 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "servicePrincipal: selfSignedCertificate",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": []
+} -->
 

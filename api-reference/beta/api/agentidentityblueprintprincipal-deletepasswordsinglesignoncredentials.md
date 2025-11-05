@@ -1,10 +1,10 @@
 ---
 title: "agentIdentityBlueprintPrincipal: deletePasswordSingleSignOnCredentials"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+description: "Delete single sign-on credentials using a password for a user or group."
+author: "zallison22"
 ms.date: 10/27/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 
@@ -14,7 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Delete single sign-on credentials using a password for a user or group.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -29,32 +31,28 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
-<!-- {
-  "blockType": "ignored"
-}
--->
-``` http
-POST /riskyAgentIdentityBlueprintPrincipal/agentIdentityBlueprintPrincipal/deletePasswordSingleSignOnCredentials
+You can address the service principal using either its **id** or **appId**. **id** and **appId** are referred to as the **Object ID** and **Application (Client) ID**, respectively, in app registrations in the Microsoft Entra admin center.
+<!-- { "blockType": "ignored" } -->
+
+```http
+POST /servicePrincipals/{id}/agentIdentityBlueprintPrincipal/deletePasswordSingleSignOnCredentials
+POST /servicePrincipals(appId='{appId}')/agentIdentityBlueprintPrincipal/deletePasswordSingleSignOnCredentials
 ```
 
 ## Request headers
 
-|Name|Description|
-|:---|:---|
+| Name          | Description   |
+|:--------------|:--------------|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
-|Content-Type|application/json. Required.|
+| Content-Type  | application/json. Required.  |
 
 ## Request body
 
-In the request body, supply a JSON representation of the parameters.
+In the request body, provide a JSON object with the following parameters.
 
-The following table lists the parameters that are required when you call this action.
-
-|Parameter|Type|Description|
-|:---|:---|:---|
-|id|String|**TODO: Add Description**|
-
-
+| Parameter    | Type        | Description |
+|:-------------|:------------|:------------|
+|id|String|The ID of the user or group this credential set belongs to.|
 
 ## Response
 
@@ -65,17 +63,18 @@ If successful, this action returns a `204 No Content` response code.
 ### Request
 
 The following example shows a request.
+
 <!-- {
   "blockType": "request",
-  "name": "agentidentityblueprintprincipalthis.deletepasswordsinglesignoncredentials"
-}
--->
-``` http
-POST https://graph.microsoft.com/beta/riskyAgentIdentityBlueprintPrincipal/agentIdentityBlueprintPrincipal/deletePasswordSingleSignOnCredentials
-Content-Type: application/json
+  "name": "serviceprincipal_deletepasswordsinglesignoncredentials"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/servicePrincipals/{id}/Microsoft.Graph.AgentIdentityBlueprintPrincipal/deletePasswordSingleSignOnCredentials
+Content-type: application/json
 
 {
-  "id": "String"
+  "id": "5793aa3b-cca9-4794-679a240f8b58"
 }
 ```
 
