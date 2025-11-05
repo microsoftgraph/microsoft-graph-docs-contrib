@@ -43,13 +43,13 @@ The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "profileId",
-  "@odata.type": "microsoft.graph.cloudpcusersettingspersistenceprofile",
+  "@odata.type": "microsoft.graph.cloudPCUserSettingsPersistenceProfile",
   "openType": false
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.cloudpcusersettingspersistenceprofile",
+  "@odata.type": "#microsoft.graph.cloudPCUserSettingsPersistenceProfile",
   "profileId": "String (identifier)",
   "userPrincipalName": "String",
   "profileSizeInGB": "Int32",

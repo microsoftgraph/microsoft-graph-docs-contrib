@@ -81,7 +81,7 @@ Content-Type: application/json
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.cloudpcusersettingspersistenceusageresult"
+  "@odata.type": "microsoft.graph.cloudPCUserSettingsPersistenceUsageResult"
 }
 -->
 

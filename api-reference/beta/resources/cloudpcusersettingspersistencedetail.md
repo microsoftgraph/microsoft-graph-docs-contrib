@@ -19,8 +19,8 @@ Indicates whether Cloud PC user settings persistence is enabled. When enabled, W
 ## Methods
 |Method|Return Type|Description|
 |:-------------|:------------|:------------|
-|[Retrieve user settings persistence usage](../api/cloudpcprovisioningpolicy-batchcleanupusersettingspersistenceprofile.md)|[cloudPCUserSettingsPersistenceUsageResult](cloudpcusersettingspersistenceusageresult.md) |Retrieve Cloud PC user settings persistence usage **cloudpcusersettingspersistenceusageresult** objects of selected Cloud PC's policy assignment.|
-|[Read Cloud PC user settings persistence user profile](../api/cloudpcprovisioningpolicy-retrieveusersettingspersistenceprofiles.md)|[cloudPCUserSettingsPersistenceDetail](../resources/cloudpcusersettingspersistenceprofile.md) collection|Read Cloud PC user settings persistence user profile list **cloudpcusersettingspersistenceprofile** objects of selected Cloud PC's policy assignment.|
+|[Retrieve user settings persistence usage](../api/cloudpcprovisioningpolicy-batchcleanupusersettingspersistenceprofile.md)|[cloudPCUserSettingsPersistenceUsageResult](cloudpcusersettingspersistenceusageresult.md) |Retrieve Cloud PC user settings persistence usage **cloudPCUserSettingsPersistenceUsageResult** objects of selected Cloud PC's policy assignment.|
+|[Read Cloud PC user settings persistence user profile](../api/cloudpcprovisioningpolicy-retrieveusersettingspersistenceprofiles.md)|[cloudPCUserSettingsPersistenceProfile](../resources/cloudpcusersettingspersistenceprofile.md) collection|Read Cloud PC user settings persistence user profile list **cloudPCUserSettingsPersistenceProfile** objects of selected Cloud PC's policy assignment.|
 |[Batch delete Cloud PC user settings persistence user profile list](../api/cloudpcprovisioningpolicy-retrieveusersettingspersistenceprofileusage.md)||Batch delete Cloud PC user settings persistence user profile list of selected Cloud PC's policy assignment.|
 
 ## Properties
@@ -39,13 +39,13 @@ The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.cloudpcusersettingspersistencedetail",
+  "@odata.type": "microsoft.graph.cloudPCUserSettingsPersistenceDetail",
   "openType": false
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.cloudpcusersettingspersistencedetail",
+  "@odata.type": "#microsoft.graph.cloudPCUserSettingsPersistenceDetail",
   "id": "String (identifier)",
   "gracePeriodEndDateTime": "String (timestamp)"
 }

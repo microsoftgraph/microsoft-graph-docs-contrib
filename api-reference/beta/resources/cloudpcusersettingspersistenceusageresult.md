@@ -32,13 +32,13 @@ None.
 The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.cloudpcusersettingspersistenceusageresult",
+  "@odata.type": "microsoft.graph.cloudPCUserSettingsPersistenceUsageResult",
   "openType": false
 }
 -->
 ``` json
 {
-    "@odata.context":"https://graph.microsoft.com/beta/$metadata#cloudpcusersettingspersistenceusageresult",
+    "@odata.context":"https://graph.microsoft.com/beta/$metadata#cloudPCUserSettingsPersistenceUsageResult",
     "totalAllocatedStorageInGB": 1200,
     "remainingAvailableStorageInGB": 100,
     "usedStorageInGB": 1100
