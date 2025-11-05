@@ -13,7 +13,7 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
- Create an upload session for a "custom data provided resource". 
+ Create an upload session for a [customDataProvidedResource](../resources/customdataprovidedresource.md).
 
 ## Permissions
 
