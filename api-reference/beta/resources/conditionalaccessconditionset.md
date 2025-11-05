@@ -73,6 +73,7 @@ The following JSON representation shows the resource type.
   "platforms": {"@odata.type": "microsoft.graph.conditionalAccessPlatforms"},
   "servicePrincipalRiskLevels": ["String"],
   "signInRiskLevels": ["String"],
+  "userRiskLevels": ["String"],
   "authenticationFlows": {"@odata.type": "microsoft.graph.conditionalAccessAuthenticationFlows"},
   "insiderRiskLevels": "String",
   "agentIdRiskLevels": "String"
