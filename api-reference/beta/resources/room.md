@@ -45,7 +45,7 @@ For the list of supported methods, see [place](./place.md).
 |placeId |String |An alternate immutable unique identifier of the **room**. Read-only.|
 |tags |String collection |Custom tags that are associated with the **room** for categorization or filtering. Inherited from [place](../resources/place.md).|
 |videoDeviceName |String |The name of the video device that is available in the **room**. |
-|teamsEnabledState |[placeFeatureEnablement](#placefeatureenablement-values) |A state indicating whether the room is enabled for Microsoft Teams. |
+|teamsEnabledState |[placeFeatureEnablement](../resources/enums.md) |A state indicating whether the room is enabled for Microsoft Teams. Possible values are: `unknown`, `enabled`, `disabled`, `unknownFutureValue`.|
 
 ### bookingType values
 
@@ -54,13 +54,6 @@ For the list of supported methods, see [place](./place.md).
 | unknown  | Unspecified booking behavior. We don't recommend that you use this value. |
 | standard | The room can be reserved based on the other settings in this cmdlet. Default. |
 | reserved | The room is available only on a first-come, first-served basis. It can't be reserved.|
-
-### placeFeatureEnablement values
-| Value        | Description                                               |
-|:-------------|:----------------------------------------------------------|
-| unknown     | Feature state is unknown.                                 |
-| enabled     | Feature is enabled.                                       |
-| disabled    | Feature is disabled.                                      |
 
 ## Relationships
 None.
@@ -80,7 +73,7 @@ The following JSON representation shows the resource type.
   "@odata.type": "#microsoft.graph.room",
   "address": {"@odata.type": "microsoft.graph.physicalAddress"},
   "audioDeviceName": "String",
-  "bookingType": "Enum",
+  "bookingType": "String",
   "building": "String",
   "capacity": "Int32",
   "displayDeviceName": "String",
@@ -99,7 +92,7 @@ The following JSON representation shows the resource type.
   "placeId": "String (alternate identifier)",
   "tags": ["String"],
   "videoDeviceName": "String",
-  "teamsEnabledState": "Enum"
+  "teamsEnabledState": "String"
 }
 ```
 

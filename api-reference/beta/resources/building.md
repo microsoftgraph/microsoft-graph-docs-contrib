@@ -39,14 +39,7 @@ For more supported methods, see [place](./place.md).
 |phone|String|The phone number of the **building**. Inherited from [place](./place.md). |
 |resourceLinks|[resourceLink](./resourcelink.md) collection|A set of links to external resources that are associated with the **building**. Inherited from [place](./place.md). |
 |tags|String collection|Custom tags that are associated with the building for categorization or filtering. Inherited from [place](./place.md). |
-|wifiState |[placeFeatureEnablement](#placefeatureenablement-values) |A state indicating whether the building has Wi-Fi. |
-
-### placeFeatureEnablement values
-| Value        | Description                                               |
-|:-------------|:----------------------------------------------------------|
-| unknown     | Feature state is unknown.                                 |
-| enabled     | Feature is enabled.                                       |
-| disabled    | Feature is disabled.                                      |
+|wifiState |[placeFeatureEnablement](../resources/enums.md) |A state indicating whether the building has Wi-Fi. Possible values are: `unknown`, `enabled`, `disabled`, `unknownFutureValue`.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -77,7 +70,7 @@ The following JSON representation shows the resource type.
   "phone": "String",
   "resourceLinks": [{"@odata.type": "microsoft.graph.resourceLink"}],
   "tags": ["String"],
-  "wifiState": "Enum"
+  "wifiState": "String"
 }
 ```
 
