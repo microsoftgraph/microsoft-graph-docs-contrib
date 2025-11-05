@@ -31,7 +31,7 @@ Describes the cloud profile details for specific Cloud PC user settings persiste
 | Member             | Description                                                                                                                  |
 |:-------------------|:-----------------------------------------------------------------------------------------------------------------------------|
 | connected        | Indicates the user connects to the user settings persistence profile.              |
-| deleting  | Indicates that the user's cloud profile is in the process of being deleted due to automatic clean-up or manual deletion by an IT admin. |
+| deleting  | Indicates that the user's user settings persistence profile is in the process of being deleted due to automatic clean-up or manual deletion by an IT admin. |
 | notConnected  | Indicates the user doesn't connect to the user settings persistence profile. |
 | unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |     
 
