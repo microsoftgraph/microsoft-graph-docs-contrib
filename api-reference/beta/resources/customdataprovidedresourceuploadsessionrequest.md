@@ -22,7 +22,7 @@ The request object used to create an [uploadSession](../resource/uploadsession.m
 |:---|:---|:---|
 |data|[customExtensionData](./customExtensionData.md)|An object containing the context for which this data is being uploaded. Currently the only allowed value is [accessReviewResourceDataUploadSessionContextData](../resources/accessreviewresourcedatauploadsessioncontextdata.md)|
 |source|String| The name of the CustomDataProvidedResource|
-|type|String| The schema of the data that is expected in the CSV uploads in this session. The only currently supported value is "#microsoft.graph.accessReviewDataUploadTriggerCallbackData"|
+|type|String| The schema of the data that is expected in the CSV uploads in this session. The only currently supported value is `#microsoft.graph.accessReviewDataUploadTriggerCallbackData`|
 
 ## Relationships
 None.
