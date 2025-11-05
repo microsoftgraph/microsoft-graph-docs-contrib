@@ -4,7 +4,7 @@ description: "Read the properties and relationships of customDataProvidedResourc
 author: "pratima-cloudknox"
 ms.date: 10/09/2025
 ms.localizationpriority: medium
-ms.subservice: "entra-id-governance""
+ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 
