@@ -8,7 +8,7 @@ ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ---
 
-# agentSignIn resource type
+# agentSignIn resource type (for conditionalAccess)
 
 Namespace: microsoft.graph
 
