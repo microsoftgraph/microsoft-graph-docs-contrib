@@ -1,6 +1,6 @@
 ---
 title: "customDataProvidedResourceFile resource type"
-description: "**TODO: Add Description**"
+description: "Object containing metadata about files uploaded in an upload session."
 author: "pratima-cloudknox"
 ms.date: 10/29/2025
 ms.localizationpriority: medium

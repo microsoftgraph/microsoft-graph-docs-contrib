@@ -4,7 +4,7 @@ description: "Read the properties and relationships of customDataProvidedResourc
 author: "pratima-cloudknox"
 ms.date: 10/09/2025
 ms.localizationpriority: medium
-ms.subservice: ""entra-id-governance""
+ms.subservice: "entra-id-governance""
 doc_type: apiPageType
 ---
 
@@ -38,9 +38,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ``` http
 GET /identityGovernance/entitlementManagement/accessPackageCatalogs/{accessPackageCatalogId}/accessPackageResources/{accessPackageResourceId}/uploadSessions/{customDataProvidedResourceUploadSessionId}
 ```
-[!INCLUDE [permissions-table](../includes/permissions/accesspackagecatalog-get-permissions.md)]
-
-[!INCLUDE [rbac-entitlement-catalog-reader](../includes/rbac-for-apis/rbac-entitlement-management-catalog-reader-apis-read.md)]
 
 ## Optional query parameters
 

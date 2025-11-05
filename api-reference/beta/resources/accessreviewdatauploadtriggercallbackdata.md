@@ -21,19 +21,14 @@ Inherits from [customExtensionData](../resources/customextensiondata.md).
 
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|permissionDescription|String|**TODO: Add Description**|
-|permissionId|String|**TODO: Add Description**|
-|permissionName|String|**TODO: Add Description**|
-|permissionType|String|**TODO: Add Description**|
-|principalAADId|String|**TODO: Add Description**|
-|resourceDescription|String|**TODO: Add Description**|
-|resourceId|String|**TODO: Add Description**|
-|resourceName|String|**TODO: Add Description**|
-|resourceOwners|String collection|**TODO: Add Description**|
-|resourceType|String|**TODO: Add Description**|
-
+| Property              |Type| Description                                     |
+|:----------------------|:---|:------------------------------------------------|
+| principalId           |String| The id of the principal who has permissions on the custom data provided resource.|
+| principalType         |String| The type of the principal. The allowed values are "EntraIdUser". |
+| permissionId          |String| The id of the permission assigned to this principal.|
+| permissionName        |String| The name of the permission assigned to this principal.|
+| permissionType        |String| The type of the permission assigned to this principal.|
+| permissionDescription |String| A description for the permission.|
 ## Relationships
 None.
 
@@ -47,18 +42,12 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.accessReviewDataUploadTriggerCallbackData",
-  "principalAADId": "String",
-  "resourceId": "String",
-  "resourceName": "String",
-  "resourceDescription": "String",
-  "resourceType": "String",
+  "principalId": "String",
+  "principalType": "String",
   "permissionId": "String",
   "permissionName": "String",
   "permissionDescription": "String",
-  "permissionType": "String",
-  "resourceOwners": [
-    "String"
-  ]
+  "permissionType": "String"
 }
 ```
 

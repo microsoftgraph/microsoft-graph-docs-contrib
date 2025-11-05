@@ -1,6 +1,6 @@
 ---
-title: "Create customDataProvidedResourceFile"
-description: "Create a new customDataProvidedResourceFile object."
+title: "Create customDataProvidedResourceUploadSession"
+description: "Create a new customDataProvidedResourceUploadSession object."
 author: "pratima-cloudknox"
 ms.date: 10/09/2025
 ms.localizationpriority: medium
@@ -36,7 +36,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-POST /identityGovernance/entitlementManagement/accessPackageCatalogs/{accessPackageCatalogId}/accessPackageResources/{accessPackageResourceId}/uploadSessions/{customDataProvidedResourceUploadSessionId}
+POST /identityGovernance/entitlementManagement/accessPackageCatalogs/{accessPackageCatalogId}/accessPackageResources/{accessPackageResourceId}/uploadSessions
 ```
 
 ## Request headers
@@ -44,26 +44,24 @@ POST /identityGovernance/entitlementManagement/accessPackageCatalogs/{accessPack
 |Name|Description|[accesspackageresource-list-uploadsessions.md](accesspackageresource-list-uploadsessions.md)
 |:---|:---|[delete-customdataprovidedresourcefile-update.md](delete-customdataprovidedresourcefile-update.md)
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
-|Content-Type|multipart/form-data. Required.|
+|Content-Type|application/json. Required.|
 
 ## Request body
 
-In the request body, supply a JSON representation of the [customDataProvidedResourceUploadSession](../resources/customdataprovidedresourceuploadsession.md)  object.
+In the request body, supply a JSON representation of the [customDataProvidedResourceUploadSessionRequest](../resources/customdataprovidedresourceuploadsessionrequest.md)  object.
 
 You can specify the following properties when creating a **customDataProvidedResourceUploadSession**.
 
 **TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
-|source|String|Custom Data Provided Resource Name for which the customer is uploading data. Required.|
+|source|String|The name of the Custom Data Provided Resource for which the customer is uploading data. Required.|
 |type|String| The odata type representing the columns of the CSV that are expected to be uploaded in this session. The possible values are: "#microsoft.graph.accessReviewDataUploadTriggerCallbackData". Required.|
-|data|[accessReviewDataUploadSessionContextData](../resources/accessreviewdatauploadsessioncontextdata.md)| Contains information about the access review instance for which the data is being uploaded. Required.|
-
-
+|data|[accessReviewDataUploadSessionContextData](../resources/accessreviewdatauploadsessioncontextdata.md)| Contains information about the access review definition and access review instance for which the data is being uploaded. Required.|
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [customDataProvidedResourceFile](../resources/customdataprovidedresourcefile.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [customDataProvidedResourceUploadSession](../resources/customdataprovidedresourceuploadsession.md) object in the response body.
 
 ## Examples
 
@@ -72,7 +70,7 @@ If successful, this method returns a `201 Created` response code and a [customDa
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "create_customdataprovidedresourcefile_from_"
+  "name": "create_customdataprovidedresourceuploadsession_from_"
 }
 -->
 ``` http
@@ -97,7 +95,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.customDataProvidedResourceFile"
+  "@odata.type": "microsoft.graph.customDataProvidedResourceUploadSession"
 }
 -->
 ``` http

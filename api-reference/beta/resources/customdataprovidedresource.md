@@ -1,6 +1,6 @@
 ---
 title: "customDataProvidedResource resource type"
-description: "**TODO: Add Description**"
+description: "An access package catalog resource that represents an external application."
 author: "pratima-cloudknox"
 ms.date: 10/29/2025
 ms.localizationpriority: medium
@@ -36,8 +36,8 @@ Inherits from [accessPackageResource](../resources/accesspackageresource.md).
 |id|String| Read-only.|
 |isPendingOnboarding|Boolean|`True` if the resource is not yet available for assignment. Read-only. |
 |originId|String|The unique identifier of the resource in the origin system. In the case of a Microsoft Entra group, originId is the identifier of the group. Supports `$filter` (`eq`).|
-|originSystem|String|The type of the resource in the origin system, such as `SharePointOnline`, `AadApplication`, or `AadGroup`. Supports `$filter` (`eq`).|
-|resourceType|String|The type of the resource, such as `Application` if it is a Microsoft Entra connected application, or `SharePoint Online Site` for a SharePoint Online site.|
+|originSystem|String|The type of the resource in the origin system. For a customDataProvidedResource this is always "CustomDataProvidedResource". Supports `$filter` (`eq`).|
+|resourceType|String|The type of the resource.|
 |url|String|A unique resource locator for the resource, such as the URL for signing a user into an application.|
 
 

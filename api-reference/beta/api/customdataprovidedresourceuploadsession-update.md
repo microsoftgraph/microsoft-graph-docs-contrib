@@ -1,6 +1,6 @@
 ---
-title: "Update customDataProvidedResourceFile"
-description: "Update the properties of a customDataProvidedResourceFile object."
+title: "Update customDataProvidedResourceUploadSession"
+description: "Update the properties of a customDataProvidedResourceUploadSession object."
 author: "pratima-cloudknox"
 ms.date: 10/09/2025
 ms.localizationpriority: medium
@@ -59,7 +59,7 @@ PATCH /identityGovernance/entitlementManagement/accessPackageCatalogs/{accessPac
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [uploadSession](../resources/customdataprovidedresourceuploadsession.md) object in the response body. The only allowed update is to set isUploadDone to true.
+If successful, this method returns a `200 OK` response code and an updated [customDataProvidedResourceUploadSession](../resources/customdataprovidedresourceuploadsession.md) object in the response body. The only allowed update is to set isUploadDone to true.
 
 ## Examples
 
@@ -68,7 +68,7 @@ If successful, this method returns a `200 OK` response code and an updated [uplo
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "update_customdataprovidedresourcefile"
+  "name": "update_customdataprovidedresourceuploadsession"
 }
 -->
 ``` http

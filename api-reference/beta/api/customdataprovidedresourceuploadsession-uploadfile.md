@@ -48,7 +48,7 @@ POST /identityGovernance/entitlementManagement/accessPackageCatalogs/{accessPack
 
 ## Request body
 
-The body can contain a multipart message format as shown in the example.
+The body can contain a multipart message as shown in the example.
 The columns in CSV should match the attributes of [accessReviewDataUploadTriggerCallbackData](../resources/accessreviewdatauploadtriggercallbackdata.md) object.
 
 ## Response
