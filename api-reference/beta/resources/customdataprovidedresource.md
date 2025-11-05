@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A customDataProvidedResource is a kind of access package resources that represents an external application. The originSystem of a customDataProvidedResource is always "CustomDataProvidedResource".
+A customDataProvidedResource is a type of [accessPackageResource](../resources/accesspackageresource.md) that represents an external application. The originSystem of a customDataProvidedResource is always `CustomDataProvidedResource`.
 
 
 Inherits from [accessPackageResource](../resources/accesspackageresource.md).
