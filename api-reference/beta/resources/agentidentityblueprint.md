@@ -27,6 +27,7 @@ This resource is an open type.
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List](../api/agentidentityblueprint-list.md)|[agentIdentityBlueprint](../resources/agentidentityblueprint.md) collection|Get a list of the agentIdentityBlueprint objects and their properties.|
+|[Create](../api/agentIdentityblueprint-post.md) | [agentIdentityBlueprint](../resources/agentidentityblueprint.md) | Creates (registers) a new agentIdentityBlueprint.|
 |[Get](../api/agentidentityblueprint-get.md)|[agentIdentityBlueprint](../resources/agentidentityblueprint.md)|Read the properties and relationships of [agentIdentityBlueprint](../resources/agentidentityblueprint.md) object.|
 |[Update](../api/agentidentityblueprint-update.md)|[agentIdentityBlueprint](../resources/agentidentityblueprint.md)|Update the properties of an agentIdentityBlueprint object.|
 |[Delete](../api/agentidentityblueprint-delete.md)|None|Delete an agentIdentityBlueprint object.|

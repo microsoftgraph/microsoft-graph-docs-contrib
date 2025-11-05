@@ -23,8 +23,11 @@ This resource is an open type.
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
+|[List](../api/agentidentity-list.md)|[agentidentity](../resources/agentidentity.md) collection|Get a list of the agentidentity objects and their properties.|
+|[Create](../api/agentidentity-post.md)|[agentidentity](../resources/agentidentity.md)|Create a new agentidentity object.|
 |[Get](../api/agentidentity-get.md)|[agentIdentity](../resources/agentidentity.md)|Read the properties and relationships of [agentIdentity](../resources/agentidentity.md) object.|
 |[Update](../api/agentidentity-update.md)|[agentIdentity](../resources/agentidentity.md)|Update the properties of an agentIdentity object.|
+|[Delete](../api/agentidentity-delete.md)|None|Delete an agentIdentity object.|
 |[createPasswordSingleSignOnCredentials](../api/agentidentity-createpasswordsinglesignoncredentials.md)|[passwordSingleSignOnCredentialSet](../resources/passwordsinglesignoncredentialset.md)|Create a credential set for the user or group specified in the body.|
 |[getPasswordSingleSignOnCredentials](../api/agentidentity-getpasswordsinglesignoncredentials.md)|[passwordSingleSignOnCredentialSet](../resources/passwordsinglesignoncredentialset.md)|Get a credential set for the user or group specified in the body.|
 |[deletePasswordSingleSignOnCredentials](../api/agentidentity-deletepasswordsinglesignoncredentials.md)|None|Delete a credential set for the user or group specified in the body.|

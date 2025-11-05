@@ -26,11 +26,11 @@ This resource is an open type.
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/riskyagentidentityblueprintprincipal-list-agentidentityblueprintprincipal.md)|[agentIdentityBlueprintPrincipal](../resources/agentidentityblueprintprincipal.md) collection|Get a list of the agentIdentityBlueprintPrincipal objects and their properties.|
-|[Create](../api/riskyagentidentityblueprintprincipal-post-agentidentityblueprintprincipal.md)|[agentIdentityBlueprintPrincipal](../resources/agentidentityblueprintprincipal.md)|Create a new agentIdentityBlueprintPrincipal object.|
+|[List](../api/agentidentityblueprintprincipal-list.md)|[agentIdentityBlueprintPrincipal](../resources/agentidentityblueprintprincipal.md) collection|Get a list of the agentIdentityBlueprintPrincipal objects and their properties.|
+|[Create](../api/agentidentityblueprintprincipal-post.md)|[agentIdentityBlueprintPrincipal](../resources/agentidentityblueprintprincipal.md)|Create a new agentIdentityBlueprintPrincipal object.|
 |[Get](../api/agentidentityblueprintprincipal-get.md)|[agentIdentityBlueprintPrincipal](../resources/agentidentityblueprintprincipal.md)|Read the properties and relationships of [agentIdentityBlueprintPrincipal](../resources/agentidentityblueprintprincipal.md) object.|
 |[Update](../api/agentidentityblueprintprincipal-update.md)|[agentIdentityBlueprintPrincipal](../resources/agentidentityblueprintprincipal.md)|Update the properties of an agentIdentityBlueprintPrincipal object.|
-|[Delete](../api/riskyagentidentityblueprintprincipal-delete-agentidentityblueprintprincipal.md)|None|Delete an agentIdentityBlueprintPrincipal object.|
+|[Delete](../api/agentidentityblueprintprincipal-delete.md)|None|Delete an agentIdentityBlueprintPrincipal object.|
 |[createPasswordSingleSignOnCredentials](../api/agentidentityblueprintprincipal-createpasswordsinglesignoncredentials.md)|[passwordSingleSignOnCredentialSet](../resources/passwordsinglesignoncredentialset.md)|Create a credential set for the user or group specified in the body.|
 |[getPasswordSingleSignOnCredentials](../api/agentidentityblueprintprincipal-getpasswordsinglesignoncredentials.md)|[passwordSingleSignOnCredentialSet](../resources/passwordsinglesignoncredentialset.md)|Get a credential set for the user or group specified in the body.|
 |[deletePasswordSingleSignOnCredentials](../api/agentidentityblueprintprincipal-deletepasswordsinglesignoncredentials.md)|None|Delete a credential set for the user or group specified in the body.|
