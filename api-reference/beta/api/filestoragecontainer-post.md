@@ -46,7 +46,7 @@ This method supports the following OData query parameters to help customize the 
 
 | Name      |Description|
 |:----------|:----------|
-| dataLocation |Specifies the desired data location for container creation in Multi-Geo tenants. Omitting the `$dataLocation` parameter in the request creates the container at the tenant's default location. For more information, see [available Multi-Geo regions and their location codes](/microsoft-365/enterprise/microsoft-365-multi-geo?view=o365-worldwide#microsoft-365-multi-geo-availability). |
+| dataLocation |Specifies the desired data location for container creation in Multi-Geo tenants. Omitting the `$dataLocation` parameter in the request creates the container at the tenant's default location. For more information, see [Microsoft 365 Multi-Geo](https://learn.microsoft.com/microsoft-365/enterprise/microsoft-365-multi-geo?view=o365-worldwide&preserve-view=true#microsoft-365-multi-geo-availability).|
 
 ## Request headers
 |Name|Description|
@@ -74,6 +74,7 @@ If successful, this method returns a `201 Created` response code and a [fileStor
 
 ### Request
 The following example shows how to create a **fileStorageContainer**.
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -89,7 +90,10 @@ Content-Type: application/json
   "description": "Description of My Application Storage Container",
   "containerTypeId": "91710488-5756-407f-9046-fbe5f0b4de73",
   "settings": {
-    "isOcrEnabled": true
+    "isOcrEnabled": true,
+    "itemMajorVersionLimit": 50,
+    "isItemVersioningEnabled": true,
+    "itemDefaultSensitivityLabelId": "3d8789ae-7375-4ded-8eeb-d6bc226e42fb"
   }
 }
 ```
@@ -142,11 +146,11 @@ Content-type: application/json
   "status": "inactive",
   "createdDateTime": "2021-11-24T15:41:52.347Z",
   "settings": {
-    "isOcrEnabled": false,
+    "isOcrEnabled": true,
     "itemMajorVersionLimit": 50,
-    "isItemVersioningEnabled": true
+    "isItemVersioningEnabled": true,
+    "itemDefaultSensitivityLabelId": "3d8789ae-7375-4ded-8eeb-d6bc226e42fb"
   }
 }
-
 ```
 

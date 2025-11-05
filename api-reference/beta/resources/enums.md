@@ -5433,3 +5433,11 @@ Possible values for user account types (group membership), per Windows definitio
 |complete|
 |expired|
 |unknownFutureValue|
+### siteTemplateType values 
+
+|Member|
+|:---|
+|sitepagepublishing|
+|group|
+|sts|
+|unknownFutureValue|

@@ -16,6 +16,7 @@ from msgraph.generated.models.education_assignment_status import EducationAssign
 request_body = EducationAssignment(
 	due_date_time = "2022-09-16T00:00:00Z",
 	display_name = "Reading test 09.14",
+	language_tag = "es-MX",
 	instructions = EducationItemBody(
 		content_type = BodyType.Text,
 		content = "Read chapter 4",
