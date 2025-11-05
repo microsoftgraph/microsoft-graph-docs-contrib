@@ -20,7 +20,7 @@ Represents the [group](../resources/group) resource in PIM for groups. This enti
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List](../api/privilegedaccessgroup-list-groupresource.md) | [groupResource](groupResource.md) collection | Retrieve a list of [groupResource](groupResource.md) objects. |
+| [List](../api/privilegedaccessgroup-list-resources.md) | [groupResource](groupResource.md) collection | Retrieve a list of [groupResource](groupResource.md) objects. |
 | [Get](../api/privilegedaccessgroupgroupresource-get.md)|[groupResource](groupResource.md)|Read the properties of a [groupResource](groupResource.md) object. |
 
 ## Properties
