@@ -5,7 +5,7 @@ author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
-ms.date: 03/14/2024
+ms.date: 08/01/2024
 ---
 
 # List deviceManagementTroubleshootingEvents
@@ -52,16 +52,12 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 Here is an example of the request.
-
-<!-- { "blockType": "request" , "name" : "intune_troubleshooting_devicemanagementtroubleshootingevent_list_list_devicemanagementtroubleshootingevents" }-->
 ``` http
-GET https://graph.microsoft.com/v1/deviceManagement/troubleshootingEvents
+GET https://graph.microsoft.com/v1.0/deviceManagement/troubleshootingEvents
 ```
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-
-<!-- { "blockType": "response" , "@odata.type" : "microsoft.graph." }-->
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -78,7 +74,3 @@ Content-Length: 277
   ]
 }
 ```
-
-
-
-

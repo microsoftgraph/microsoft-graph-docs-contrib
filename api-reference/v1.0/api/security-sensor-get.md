@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 Read the properties and relationships of a [sensor](../resources/security-sensor.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

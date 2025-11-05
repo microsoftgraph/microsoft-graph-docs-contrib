@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 Get a list of [healthIssue](../resources/security-healthissue.md) objects and their properties.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

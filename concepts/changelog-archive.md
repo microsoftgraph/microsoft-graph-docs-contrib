@@ -412,7 +412,7 @@ Adding PSTN and Direct Routing call reports to Microsoft Graph (beta).
 | **Change type** | **Version** | **Description**                  |
 |:----------------|:------------|:-----------------------------------------|
 | Addition | beta | Added the **itemInsights** navigation property to the **organizationSettings** entity. |
-| Addition | beta | Added the **itemInsightsSettings** entity and the following operations: <br/> [Get itemInsightSettings](/graph/api/iteminsightssettings-get?view=graph-rest-beta&preserve-view=true) <br/> [Update itemInsightSettings](/graph/api/iteminsightssettings-update?view=graph-rest-beta&preserve-view=true) |
+| Addition | beta | Added the **itemInsightsSettings** entity and the following operations: <br/> [Get itemInsightSettings](/graph/api/organizationsettings-list-iteminsights?view=graph-rest-beta) <br/> [Update itemInsightSettings](/graph/api/iteminsightssettings-update?view=graph-rest-beta&preserve-view=true) |
 
 
 ### People and workplace intelligence | Profile
@@ -1720,7 +1720,7 @@ Microsoft Search is now exposing a way to search and index data in Microsoft Gra
 |:----------------|:------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Addition        | Beta        | Added the [objectIdentity](/graph/api/resources/objectIdentity?view=graph-rest-beta&preserve-view=true) resource that represents an identity used to sign in to a user account.             |
 | Addition        | Beta        | Added **synchronizationJobSettings** property to the [synchronizationJob](/graph/api/resources/synchronization-synchronizationjob?view=graph-rest-beta&preserve-view=true) resource.        |
-| Addition        | Beta        | Added new possible values for the **reason** property in the [synchronizationQuarantine](/graph/api/resources/synchronization-quarantine?view=graph-rest-beta&preserve-view=true) resource. |
+| Addition        | Beta        | Added new possible values for the **reason** property in the [synchronizationQuarantine](/graph/api/resources/synchronization-synchronizationquarantine?view=graph-rest-1.0) resource. |
 | Addition        | Beta        | Added the capability to manage password single sign-on credentials on the [servicePrincipal object](/graph/api/resources/serviceprincipal?view=graph-rest-beta&preserve-view=true).         |
 
 ### Mail
@@ -1814,12 +1814,12 @@ Microsoft Search is now exposing a way to search and index data in Microsoft Gra
 | Addition | Beta | Added these operations to support the unifiedRoleDefinition resource: <br><ul><li>[List unifiedRoleDefinitions](/graph/api/rbacapplication-list-roledefinitions?view=graph-rest-beta&preserve-view=true) - Get a list of unifiedRoleDefinition objects for the provider.</li><li>[Create unifiedRoleDefinition](/graph/api/rbacapplication-post-roledefinitions?view=graph-rest-beta&preserve-view=true) - Create a new unifiedRoleDefinition object.</li><li>[Get unifiedRoleDefinition](/graph/api/unifiedroledefinition-get?view=graph-rest-beta&preserve-view=true) - Retrieve the properties and relationships of a unified role definition object.</li><li>[Update unifiedRoleDefinition](/graph/api/unifiedroledefinition-update?view=graph-rest-beta&preserve-view=true) - Update the properties of a unifiedRoleDefinition object.</li><li>[Delete unifiedRoleDefinition](/graph/api/unifiedroledefinition-delete?view=graph-rest-beta&preserve-view=true) - Delete a unifiedRoleDefinition object.</li></ul> |
 | Addition | Beta | Added these operations to support the unifiedRoleAssignment resource: <br><ul><li>[List unifiedRoleAssignments](/graph/api/rbacapplication-list-roleassignments?view=graph-rest-beta&preserve-view=true) - Get a list of unifiedRoleAssignment objects for the provider.</li><li>[Create unifiedRoleAssignment]() - Create a new unifiedRoleAssignment object.</li><li>[Get unifiedRoleAssignment](/graph/api/unifiedroleassignment-get?view=graph-rest-beta&preserve-view=true) - Retrieve the properties and relationships of a unifiedRoleAssignment object.</li><li>[Delete unifiedRoleAssignment](/graph/api/unifiedroleassignment-delete?view=graph-rest-beta&preserve-view=true) - Delete a unifiedRoleAssignment object. |
 | Addition | Beta | Added the [List accessReviews](/graph/api/accessreview-list?view=graph-rest-beta&preserve-view=true) operation. |
-| Addition | Beta | Added the [checkMemberObjects](/graph/api/device-checkmemberobjects?view=graph-rest-beta&preserve-view=true) operation for the [device](/graph/api/resources/device?view=graph-rest-beta&preserve-view=true) resource. |
+| Addition | Beta | Added the [checkMemberObjects](/graph/api/directoryobject-checkmemberobjects?view=graph-rest-1.0) operation for the [device](/graph/api/resources/device?view=graph-rest-beta&preserve-view=true) resource. |
 | Addition | Beta | Added the [checkMemberObjects](/graph/api/directoryobject-checkmemberobjects?view=graph-rest-beta&preserve-view=true) operation for the [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta&preserve-view=true) resource. |
 | Addition | Beta | Added the **checkMemberObjects** operation for the [directoryRole](/graph/api/resources/directoryrole?view=graph-rest-beta&preserve-view=true) resource. |
-| Addition | Beta | Added the [checkMemberObjects](/graph/api/group-checkmemberobjects?view=graph-rest-beta&preserve-view=true) operation for the [group](/graph/api/resources/group?view=graph-rest-beta&preserve-view=true) resource. |
-| Addition | Beta | Added the [checkMemberObjects](/graph/api/serviceprincipal-checkmemberobjects?view=graph-rest-beta&preserve-view=true) operation for the [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta&preserve-view=true) resource. |
-| Addition | Beta | Added the [checkMemberObjects](/graph/api/user-checkmemberobjects?view=graph-rest-beta&preserve-view=true) operation for the [user](/graph/api/resources/user?view=graph-rest-beta&preserve-view=true) resource. |
+| Addition | Beta | Added the [checkMemberObjects](/graph/api/directoryobject-checkmemberobjects?view=graph-rest-1.0) operation for the [group](/graph/api/resources/group?view=graph-rest-beta&preserve-view=true) resource. |
+| Addition | Beta | Added the [checkMemberObjects](/graph/api/directoryobject-checkmemberobjects?view=graph-rest-1.0) operation for the [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta&preserve-view=true) resource. |
+| Addition | Beta | Added the [checkMemberObjects](/graph/api/directoryobject-checkmemberobjects?view=graph-rest-1.0) operation for the [user](/graph/api/resources/user?view=graph-rest-beta&preserve-view=true) resource. |
 | Addition | Beta | Added delegated and application [permissions for reading organizational contacts](permissions-reference.md): OrgContact.Read.All |
 | Addition | beta | Added new entity [certificateBasedAuthConfiguration](/graph/api/resources/certificatebasedauthconfiguration?view=graph-rest-beta&preserve-view=true). |
 | Addition | beta | Added new complex type [certificateAuthority](/graph/api/resources/certificateauthority?view=graph-rest-beta&preserve-view=true). |
@@ -1917,7 +1917,7 @@ Debut of the places API, which provides rich details for locations in apps.
 | Addition | Beta | Added [new delegated and application permissions](./permissions-reference.md) _Organization.Read.All_ and _Organization.ReadWrite.All_ to get and update the [organization API](/graph/api/resources/organization?view=graph-rest-beta&preserve-view=true) resource and get the [subcribedSku](/graph/api/resources/subscribedSku?view=graph-rest-beta&preserve-view=true) resource. |
 | Addition | v1.0 | Added the [group:validateProperties function](/graph/api/group-validateproperties?view=graph-rest-1.0&preserve-view=true) and [directory object:validateProperties function](/graph/api/group-validateproperties?view=graph-rest-1.0&preserve-view=true) on [groups](/graph/api/group-delta?view=graph-rest-1.0&preserve-view=true), which validates that a Microsoft 365 group's display name or mail nickname complies with naming policies. |
 | Addition | Beta |Added 'version', 'discoveryDateTime', 'discoverabilities' properties to resource type [directoryDefinition](/graph/api/resources/synchronization-directorydefinition?view=graph-rest-beta&preserve-view=true).|
-| Addition | Beta |Added the [directoryDefinition: discover](/graph/api/directorydefinition-discover?view=graph-rest-beta&preserve-view=true) method.|
+| Addition | Beta |Added the [directoryDefinition: discover](/graph/api/synchronization-directorydefinition-discover?view=graph-rest-1.0) method.|
 | Addition | Beta | Added [new delegated and application permissions](./permissions-reference.md) _AdministrativeUnit.Read.All_ and _AdministrativeUnit.ReadWrite.All_ to get and update the [administrative unit API](/graph/api/resources/administrativeunit?view=graph-rest-beta&preserve-view=true) resource. |
 | Addition | v1.0 | Added [new delegated and application permissions](./permissions-reference.md) _RoleManagement.Read.Directory_ and _RoleManagement.ReadWrite.Directory_ to get and update the [directory role API](/graph/api/resources/directoryRole?view=graph-rest-1.0&preserve-view=true) resource and get the [directory role template API](/graph/api/resources/directoryRoleTemplate?view=graph-rest-1.0&preserve-view=true) resource. |
 | Addition | Beta | Added [new application permission](./permissions-reference.md) _AccessReview.ReadWrite.Membership_ to get, create, update and delete in the [access reviews API](/graph/api/resources/accessreviews-root?view=graph-rest-beta&preserve-view=true). |
@@ -3120,7 +3120,7 @@ Debut of the places API, which provides rich details for locations in apps.
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Addition | beta | Added the [access reviews](/graph/api/resources/accessreviews-root?view=graph-rest-beta&preserve-view=true) feature to [Azure AD](/graph/api/resources/azure-ad-overview?view=graph-rest-beta&preserve-view=true). |
+| Addition | beta | Added the [access reviews](/graph/api/resources/accessreviews-root?view=graph-rest-beta&preserve-view=true) feature to [Azure AD](/graph/api/resources/identity-network-access-overview?view=graph-rest-1.0). |
 
 ### Identity and access
 
@@ -3249,8 +3249,8 @@ Debut of the places API, which provides rich details for locations in apps.
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Addition        | v1.0        | Added [List deleted items owned by a user](/graph/api/directory-deleteditems-user-owned?view=graph-rest-1.0&preserve-view=true) action to [directory (deleted items)](/graph/api/resources/directory?view=graph-rest-1.0&preserve-view=true) resource |
-| Addition | beta | Added the [getUserOwnedObjects](/graph/api/directory-deleteditems-user-owned?view=graph-rest-beta&preserve-view=true) function to the [directory](/graph/api/resources/directory?view=graph-rest-beta&preserve-view=true) resource to list the deleted groups owned by a given user. |
+| Addition        | v1.0        | Added [List deleted items owned by a user](/graph/api/directory-deleteditems-getuserownedobjects?view=graph-rest-1.0) action to [directory (deleted items)](/graph/api/resources/directory?view=graph-rest-1.0&preserve-view=true) resource |
+| Addition | beta | Added the [getUserOwnedObjects](/graph/api/directory-deleteditems-getuserownedobjects?view=graph-rest-1.0) function to the [directory](/graph/api/resources/directory?view=graph-rest-beta&preserve-view=true) resource to list the deleted groups owned by a given user. |
 
 ### People and workplace intelligence | Insights
 
@@ -3350,7 +3350,7 @@ Debut of the places API, which provides rich details for locations in apps.
 | Addition        | v1.0        | Added the **privacyProfile** complex type to the [organization](/graph/api/resources/organization?view=graph-rest-1.0&preserve-view=true) entity. |
 | Addition        | v1.0        | Added the **legalAgeGroup, ageGroup and consentProvidedForMinor** complex type to the [user](/graph/api/resources/user?view=graph-rest-1.0&preserve-view=true) entity. |
 | Addition        | v1.0        | Added users and groups support to [webhook](/graph/api/resources/change-notifications-api-overview?view=graph-rest-1.0&preserve-view=true) notification subscriptions. |
-| Addition        | beta        | Added [List deleted items owned by a user](/graph/api/directory-deleteditems-user-owned?view=graph-rest-beta&preserve-view=true) action to [directory (deleted items)](/graph/api/resources/directory?view=graph-rest-beta&preserve-view=true) resource |
+| Addition        | beta        | Added [List deleted items owned by a user](/graph/api/directory-deleteditems-getuserownedobjects?view=graph-rest-1.0) action to [directory (deleted items)](/graph/api/resources/directory?view=graph-rest-beta&preserve-view=true) resource |
 | Addition        | v1.0        | Added the new **masterCategories** navigation property to the [outlookUser](/graph/api/resources/outlookuser?view=graph-rest-1.0&preserve-view=true) entity. **masterCategories** is a collection of [outlookCategory](/graph/api/resources/outlookcategory?view=graph-rest-1.0&preserve-view=true) objects. |
 | Addition        | v1.0        | Added the [outlookCategory](/graph/api/resources/outlookcategory?view=graph-rest-1.0&preserve-view=true) entity. |
 | Addition        | v1.0        | Added the following CRUD operations for [outlookCategory](/graph/api/resources/outlookcategory?view=graph-rest-1.0&preserve-view=true): [create](/graph/api/outlookuser-post-mastercategories?view=graph-rest-1.0&preserve-view=true), [get](/graph/api/outlookcategory-get?view=graph-rest-1.0&preserve-view=true), [update](/graph/api/outlookcategory-update?view=graph-rest-1.0&preserve-view=true), and [delete](/graph/api/outlookcategory-delete?view=graph-rest-1.0&preserve-view=true). |

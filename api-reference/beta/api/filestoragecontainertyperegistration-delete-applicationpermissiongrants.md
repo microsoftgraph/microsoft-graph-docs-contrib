@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Delete a [fileStorageContainerTypeAppPermissionGrant](../resources/filestoragecontainertypeapppermissiongrant.md) object in a [fileStorageContainerTypeRegistration](../resources/filestoragecontainertyperegistration.md).
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
