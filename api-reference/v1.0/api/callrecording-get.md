@@ -317,23 +317,7 @@ Content-Type: video/mp4
 }
 -->
 ``` http
-GET https://graph.microsoft.com/V1.0/users/f2e8e111-3887-4936-87f8-639292c70d34/adhocCalls/1c9ddbc9-82be-46b6-8edd-bf833fe33a03/recordings/VjMjIzE5OjVhYjlkNjhlMTQ4ZTQ4MjU4ZmJjMzlmMDhlMzk5MjdjQHRocmVhZC52MiMjMWM5ZGRiYzktODJiZS00NmI2LThlZGQtYmY4MzNmZTMzYTAzLTE3NTQ4OTU0MzctUmVjb3JkaW5nIyMw/content
-```
-
-The following example shows how to get a single recording of an online meeting corresponding to a transcript using the **contentCorrelationId** property.
-
-#### Request
-
-The following example shows a request.
-
-<!-- {
-  "blockType": "request",
-  "name": "get_callRecording_using_contentCorrelationId",
-  "sampleKeys": ["MSoxMjczYTAxNi0yMDFkLTRmOTUtODA4My0xYjdmOTliM2VkZWIqMCoqMTk6bWVldGluZ19OV1EwWm1GbFpEY3RORFJqTmkwMFlXRm1MV0U1WXpBdE9UZzJNMk0yTm1Nd1pERTNAdGhyZWFkLnYy"]
-}
--->
-``` http
-GET https://graph.microsoft.com/v1.0/me/onlineMeetings/MSoxMjczYTAxNi0yMDFkLTRmOTUtODA4My0xYjdmOTliM2VkZWIqMCoqMTk6bWVldGluZ19OV1EwWm1GbFpEY3RORFJqTmkwMFlXRm1MV0U1WXpBdE9UZzJNMk0yTm1Nd1pERTNAdGhyZWFkLnYy/recordings?$filter=contentCorrelationId+eq+'e87c8cf8-50f7-4252-8b9c-ad08ac0fa88d-0'
+GET https://graph.microsoft.com/v1.0/users/f2e8e111-3887-4936-87f8-639292c70d34/adhocCalls/1c9ddbc9-82be-46b6-8edd-bf833fe33a03/recordings/VjMjIzE5OjVhYjlkNjhlMTQ4ZTQ4MjU4ZmJjMzlmMDhlMzk5MjdjQHRocmVhZC52MiMjMWM5ZGRiYzktODJiZS00NmI2LThlZGQtYmY4MzNmZTMzYTAzLTE3NTQ4OTU0MzctUmVjb3JkaW5nIyMw/content
 ```
 
 #### Response
@@ -341,8 +325,14 @@ GET https://graph.microsoft.com/v1.0/me/onlineMeetings/MSoxMjczYTAxNi0yMDFkLTRmO
 The response contains bytes for the recording in the body. The `content-type` header specifies the type of the recording content. Negative offsets indicate that the recording began while the conversation was ongoing.
 
 > [!NOTE]
-> The response object shown here might be shortened for readability
+> The response object shown here might be shortened for readability.
 
+<!-- {
+  "blockType": "response",
+  "truncated": true, 
+  "@odata.type": "stream"
+}
+-->
 ```http
 HTTP/1.1 200 OK
 Content-Type: video/mp4
@@ -356,6 +346,9 @@ The following example shows how to get a single recording of an online meeting c
 
 #### Request
 
+``` http
+GET https://graph.microsoft.com/v1.0/me/onlineMeetings/MSoxMjczYTAxNi0yMDFkLTRmOTUtODA4My0xYjdmOTliM2VkZWIqMCoqMTk6bWVldGluZ19OV1EwWm1GbFpEY3RORFJqTmkwMFlXRm1MV0U1WXpBdE9UZzJNMk0yTm1Nd1pERTNAdGhyZWFkLnYy/recordings?$filter=contentcorrelationId+eq+'e87c8cf8-50f7-4252-8b9c-ad08ac0fa88d-0'
+
 The following example shows a request.
 
 <!-- {
@@ -364,8 +357,9 @@ The following example shows a request.
   "sampleKeys": ["MSoxMjczYTAxNi0yMDFkLTRmOTUtODA4My0xYjdmOTliM2VkZWIqMCoqMTk6bWVldGluZ19OV1EwWm1GbFpEY3RORFJqTmkwMFlXRm1MV0U1WXpBdE9UZzJNMk0yTm1Nd1pERTNAdGhyZWFkLnYy"]
 }
 -->
+
 ``` http
-GET https://graph.microsoft.com/beta/me/onlineMeetings/MSoxMjczYTAxNi0yMDFkLTRmOTUtODA4My0xYjdmOTliM2VkZWIqMCoqMTk6bWVldGluZ19OV1EwWm1GbFpEY3RORFJqTmkwMFlXRm1MV0U1WXpBdE9UZzJNMk0yTm1Nd1pERTNAdGhyZWFkLnYy/recordings?$filter=contentcorrelationId+eq+'e87c8cf8-50f7-4252-8b9c-ad08ac0fa88d-0'
+GET https://graph.microsoft.com/v1.0/me/onlineMeetings/MSoxMjczYTAxNi0yMDFkLTRmOTUtODA4My0xYjdmOTliM2VkZWIqMCoqMTk6bWVldGluZ19OV1EwWm1GbFpEY3RORFJqTmkwMFlXRm1MV0U1WXpBdE9UZzJNMk0yTm1Nd1pERTNAdGhyZWFkLnYy/recordings?$filter=contentcorrelationId+eq+'e87c8cf8-50f7-4252-8b9c-ad08ac0fa88d-0'
 ```
 
 #### Response
