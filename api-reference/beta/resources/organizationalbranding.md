@@ -80,7 +80,7 @@ You can't change your original configuration's language. However, companies can 
 |Relationship|Type|Description|
 |:---|:---|:---|
 | localizations | [organizationalBrandingLocalization](organizationalbrandinglocalization.md) collection | Add different branding based on a locale. |
-|themes|[organizationalBrandingTheme](../resources/organizationalbrandingtheme.md) collection|Create a branding theme.|
+|themes|[organizationalBrandingTheme](../resources/organizationalbrandingtheme.md) collection|Collection of branding themes for the tenant.|
 
 ## JSON representation
 The following JSON representation shows the resource type.
