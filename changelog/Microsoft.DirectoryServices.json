@@ -14507,6 +14507,184 @@
       "CreatedDateTime": "2024-09-11T18:27:13.3184952Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "97e80cb9-b4af-40a3-94ee-d4d85aabc440",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "rootDomain",
+          "ChangeType": "Addition",
+          "Description": "Added the **rootDomain** relationship to the [domain](https://learn.microsoft.com/en-us/graph/api/resources/domain?view=graph-rest-1.0) resource.",
+          "Target": "domain"
+        },
+        {
+          "Id": "97e80cb9-b4af-40a3-94ee-d4d85aabc440",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Addition",
+          "Description": "Added the [Get rootDomain](https://learn.microsoft.com/en-us/graph/api/domain-get-rootdomain?view=graph-rest-1.0) operation to the [domain](https://learn.microsoft.com/en-us/graph/api/resources/domain?view=graph-rest-1.0) resource.",
+          "Target": "domain"
+        },
+        {
+          "Id": "97e80cb9-b4af-40a3-94ee-d4d85aabc440",
+          "ApiChange": "NavigationPropertyBinding",
+          "ChangedApiName": "rootDomain",
+          "ChangeType": "Addition",
+          "Description": "Added the [rootDomain](https://learn.microsoft.com/en-us/?view=graph-rest-1.0) resource",
+          "Target": "domains"
+        }
+      ],
+      "Id": "97e80cb9-b4af-40a3-94ee-d4d85aabc440",
+      "Cloud": "Review",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-10-09T23:15:04.1920065Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "d1db1b11-d35f-460a-bd3c-3fc694b1407a",
+          "ApiChange": "Property",
+          "ChangedApiName": "keyCredentials",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **keyCredentials** property from the [appManagementConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/appManagementConfiguration?view=graph-rest-beta) resource.",
+          "Target": "appManagementConfiguration"
+        },
+        {
+          "Id": "d1db1b11-d35f-460a-bd3c-3fc694b1407a",
+          "ApiChange": "Property",
+          "ChangedApiName": "passwordCredentials",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **passwordCredentials** property from the [appManagementConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/appManagementConfiguration?view=graph-rest-beta) resource.",
+          "Target": "appManagementConfiguration"
+        },
+        {
+          "Id": "d1db1b11-d35f-460a-bd3c-3fc694b1407a",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "keyCredentials",
+          "ChangeType": "Addition",
+          "Description": "Added the [keyCredentials](https://learn.microsoft.com/en-us/graph/api/resources/appManagementConfiguration?view=graph-rest-beta) resource.",
+          "Target": "appManagementConfiguration"
+        },
+        {
+          "Id": "d1db1b11-d35f-460a-bd3c-3fc694b1407a",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "passwordCredentials",
+          "ChangeType": "Addition",
+          "Description": "Added the [passwordCredentials](https://learn.microsoft.com/en-us/graph/api/resources/appManagementConfiguration?view=graph-rest-beta) resource.",
+          "Target": "appManagementConfiguration"
+        },
+        {
+          "Id": "d1db1b11-d35f-460a-bd3c-3fc694b1407a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "keyCredentialConfiguration",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **keyCredentialConfiguration** resource.",
+          "Target": "keyCredentialConfiguration"
+        },
+        {
+          "Id": "d1db1b11-d35f-460a-bd3c-3fc694b1407a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "passwordCredentialConfiguration",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **passwordCredentialConfiguration** resource.",
+          "Target": "passwordCredentialConfiguration"
+        },
+        {
+          "Id": "d1db1b11-d35f-460a-bd3c-3fc694b1407a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "keyCredentialConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [keyCredentialConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/keyCredentialConfiguration?view=graph-rest-beta) resource.",
+          "Target": "keyCredentialConfiguration"
+        },
+        {
+          "Id": "d1db1b11-d35f-460a-bd3c-3fc694b1407a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "passwordCredentialConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [passwordCredentialConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/passwordCredentialConfiguration?view=graph-rest-beta) resource.",
+          "Target": "passwordCredentialConfiguration"
+        }
+      ],
+      "Id": "d1db1b11-d35f-460a-bd3c-3fc694b1407a",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-01-27T19:34:12.8370904Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "e5bc94bb-0909-4bab-95aa-3e90e117a7cc",
+          "ApiChange": "Property",
+          "ChangedApiName": "isStateSetByMicrosoft",
+          "ChangeType": "Addition",
+          "Description": "Added the **isStateSetByMicrosoft** property to the [identifierUriRestriction](https://learn.microsoft.com/en-us/graph/api/resources/identifierUriRestriction?view=graph-rest-beta) resource.",
+          "Target": "identifierUriRestriction"
+        },
+        {
+          "Id": "e5bc94bb-0909-4bab-95aa-3e90e117a7cc",
+          "ApiChange": "Property",
+          "ChangedApiName": "isStateSetByMicrosoft",
+          "ChangeType": "Addition",
+          "Description": "Added the **isStateSetByMicrosoft** property to the [keyCredentialConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/keyCredentialConfiguration?view=graph-rest-beta) resource.",
+          "Target": "keyCredentialConfiguration"
+        },
+        {
+          "Id": "e5bc94bb-0909-4bab-95aa-3e90e117a7cc",
+          "ApiChange": "Property",
+          "ChangedApiName": "isStateSetByMicrosoft",
+          "ChangeType": "Addition",
+          "Description": "Added the **isStateSetByMicrosoft** property to the [passwordCredentialConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/passwordCredentialConfiguration?view=graph-rest-beta) resource.",
+          "Target": "passwordCredentialConfiguration"
+        }
+      ],
+      "Id": "e5bc94bb-0909-4bab-95aa-3e90e117a7cc",
+      "Cloud": "Review",
+      "Version": "beta",
+      "CreatedDateTime": "2024-12-13T19:46:07.288016Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "8cd03a79-71de-467d-bd73-0b3449a28bfc",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "restore",
+          "ChangeType": "Addition",
+          "Description": "Added the `newUserPrincipalName` parameter to the [restore directoryObject](https://learn.microsoft.com/en-us/graph/api/directory-deleteditems-restore?view=graph-rest-beta) method. Use this property to specify whether Microsoft Entra ID should replace the restored user's previous **userPrincipalName** with a new value.",
+          "Target": "directoryObject"
+        }
+      ],
+      "Id": "8cd03a79-71de-467d-bd73-0b3449a28bfc",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-12-17T00:35:00.3307839Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "3f87e7d3-3a28-46a3-a1b8-da2e6e603267",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "newUserPrincipalName",
+          "ChangeType": "Addition",
+          "Description": "Added the `newUserPrincipalName` parameter to the [restore deleted item](https://learn.microsoft.com/en-us/graph/api/directory-deleteditems-restore?view=graph-rest-1.0&tabs=http) method. Use the property to assign a new **userPrincipalName** as you restore the user object.",
+          "Target": "restore"
+        }
+      ],
+      "Id": "3f87e7d3-3a28-46a3-a1b8-da2e6e603267",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-03-19T03:14:15.5239708Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
     }
-   ]
+  ]
 }
