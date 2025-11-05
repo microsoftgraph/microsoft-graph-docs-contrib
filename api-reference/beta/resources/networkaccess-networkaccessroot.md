@@ -39,7 +39,6 @@ None.
 |tenantStatus|[microsoft.graph.networkaccess.tenantStatus](../resources/networkaccess-tenantstatus.md)|Represents the status of the Global Secure Access services for the tenant.|
 |tls|[microsoft.graph.networkaccess.tlsTermination](../resources/networkaccess-tlstermination.md)|A container for tenant-level TLS inspection settings for Global Secure Access. |
 |tlsInspectionPolicies|[microsoft.graph.networkaccess.tlsInspectionPolicy](../resources/networkaccess-tlsinspectionpolicy.md) collection|Allows you to configure TLS termination for your organization's network traffic through Global Secure Access. |
-|deployments|[microsoft.graph.networkaccess.deployment](../resources/networkaccess-deployment.md) collection|Represents a deployment event within the Global Secure Access services, including its configuration, status, and related data|
 
 
 ## JSON representation
