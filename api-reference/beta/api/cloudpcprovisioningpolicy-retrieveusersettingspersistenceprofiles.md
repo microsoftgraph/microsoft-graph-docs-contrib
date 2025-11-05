@@ -61,7 +61,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ## Examples
 
 #### Request
-The following example shows a reques for retrieving the user storage list for Cloud PC user settings persistence under selected Cloud PC's assignment.
+The following example shows a request to retrieve the user storage list for a Cloud PC assignment's user settings persistence.
 
 <!-- {
   "blockType": "request",
