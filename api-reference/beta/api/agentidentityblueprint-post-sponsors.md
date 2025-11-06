@@ -16,19 +16,6 @@ Namespace: microsoft.graph
 
 Add sponsors by posting to the sponsors collection. Sponsors can include users or groups. Sponsors may not include service principals or agent users.
 
-<!-- uuid: 8d4c7f2a-1e5b-4a9c-b6f3-7e2d8c5a9b4f
-2025-11-06 14:57:30 UTC -->
-<!--
-{
-  "type": "#page.annotation",
-  "description": "Add sponsors to an agentIdentityBlueprint by posting to the sponsors collection.",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-  ]
-}
--->
 
 ## Permissions
 

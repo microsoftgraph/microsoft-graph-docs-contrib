@@ -111,8 +111,7 @@ Content-type: application/json
         },
         {
             "@odata.type": "#microsoft.graph.user",
-            "id": "7585d967-f300-4
-            3de-b817-7119a6404c5e"
+            "id": "7585d967-f300-43de-b817-7119a6404c5e"
         }
     ]
 }
