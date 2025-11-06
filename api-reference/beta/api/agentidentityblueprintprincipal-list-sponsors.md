@@ -1,5 +1,5 @@
 ---
-title: "List sponsors"
+title: "List agentIdentityBlueprintPrincipal sponsors"
 description: "List sponsors for an agent identity blueprint principal."
 author: "zallison22"
 ms.date: 10/27/2025
@@ -9,18 +9,14 @@ doc_type: apiPageType
 ---
 
 
-# List sponsors
+# List sponsors - agentIdentityBlueprintPrincipal
 
 Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<<<<<<< HEAD
-Returns the list of sponsors for this principal.
-=======
 List the sponsors for an [agentIdentityBlueprintPrincipal](../resources/agentidentityblueprintprincipal.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
->>>>>>> 6af290d66a324e1bcf3b433953bbde06e1f8979c
 
 ## Permissions
 

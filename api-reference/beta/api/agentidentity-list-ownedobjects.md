@@ -1,5 +1,5 @@
 ---
-title: "List ownedObjects"
+title: "List agentIdentity ownedObjects"
 description: "Retrieve a list of objects owned by the agentIdentity.  This could include applications or groups."
 author: "zallison22"
 ms.date: 10/27/2025
@@ -8,7 +8,7 @@ ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 
-# List ownedObjects
+# List ownedObjects - agentIdentity
 
 Namespace: microsoft.graph
 

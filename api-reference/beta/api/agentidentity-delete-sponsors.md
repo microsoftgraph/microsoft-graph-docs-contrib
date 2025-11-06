@@ -1,5 +1,5 @@
 ---
-title: "Remove sponsors"
+title: "Remove agentIdentity sponsors"
 description: "Remove a sponsor from an agentIdentity object."
 author: "zallison22"
 ms.date: 10/27/2025
@@ -9,7 +9,7 @@ doc_type: apiPageType
 ---
 
 
-# Remove sponsors
+# Remove agentIdentity sponsors
 
 Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

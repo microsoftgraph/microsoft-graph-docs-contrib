@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
-Create a new [agent identity blueprint principal](../resources/agentidentityblueprintprincipal.md.md) object.
+Create a new [agent identity blueprint principal](../resources/agentidentityblueprintprincipal.md) object.
 
 
 ## Permissions

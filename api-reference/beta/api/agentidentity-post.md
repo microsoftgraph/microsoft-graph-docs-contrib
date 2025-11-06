@@ -17,9 +17,6 @@ Namespace: microsoft.graph
 
 Create a new [agentIdentity](../resources/agentidentity.md) object.
 
-> [!IMPORTANT]
-> Adding [**passwordCredential**](../resources/passwordcredential.md) when creating agentIdentities is not supported. Use the [addPassword](agentidentity-addpassword.md) method to add passwords or secrets for a agentIdentity.
-
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions

@@ -1,6 +1,6 @@
 ---
 title: "Update agentIdentity"
-description: "Update single sign-on credentials using a password for a user or group."
+description: "Update an agent identity ."
 author: "zallison22"
 ms.date: 10/27/2025
 ms.localizationpriority: medium
@@ -18,9 +18,6 @@ Update the properties of an agentIdentity object.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
-> [!IMPORTANT]
-> - Using PATCH to set [**passwordCredential**](../resources/passwordcredential.md) is not supported. Use the [addPassword](./agentidentityblueprintprincipal-addpassword.md) and [removePassword](./agentidentityblueprintprincipal-removepassword.md) methods to update the password or secret for a agent identity blueprint principal.
->
 
 ## Permissions
 

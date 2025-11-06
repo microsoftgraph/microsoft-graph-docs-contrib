@@ -1,5 +1,5 @@
 ---
-title: "List owners"
+title: "List agentIdentityBlueprintPrincipal owners"
 description: "Retrieve a list of owners of the agent identity blueprint principal."
 author: "zallison22"
 ms.date: 10/27/2025
@@ -8,19 +8,15 @@ ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 
-# List owners
+# List owners - agentIdentityBlueprintPrincipal
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<<<<<<< HEAD
-Returns the list of owners of this principal.
-=======
 Retrieve a list of owners of the [agentIdentityBlueprintPrincipal](../resources/agentidentityblueprintprincipal.md).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
->>>>>>> 6af290d66a324e1bcf3b433953bbde06e1f8979c
 
 ## Permissions
 
@@ -40,12 +36,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-<<<<<<< HEAD
-GET /servicePrincipals/{id}/owners
-=======
+
 GET /servicePrincipals/{id}/Microsoft.Graph.AgentIdentityBlueprintPrincipal/owners
->>>>>>> 6af290d66a324e1bcf3b433953bbde06e1f8979c
-```
+
 
 ## Optional query parameters
 
@@ -76,12 +69,9 @@ The following example shows a request.
 }
 -->
 ``` http
-<<<<<<< HEAD
-GET https://graph.microsoft.com/beta/servicePrincipals/{id}/owners
-=======
+
 GET https://graph.microsoft.com/beta/serviceprincipals/bbec3106-565f-4907-941e-96b4dbfef21c/Microsoft.Graph.AgentIdentityBlueprintPrincipal/owners
->>>>>>> 6af290d66a324e1bcf3b433953bbde06e1f8979c
-```
+
 
 
 ### Response
