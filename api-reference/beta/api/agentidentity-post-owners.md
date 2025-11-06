@@ -1,10 +1,10 @@
 ---
 title: "Add owners"
-description: "Add owners by posting to the owners collection."
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+description: "Add an owner for the agent identity."
+author: "zallison22"
 ms.date: 10/27/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 
@@ -14,7 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Add owners by posting to the owners collection.
+Add an owner for the [agentIdentity](../resources/agentIdentity.md). Agent identity owners can be users, the agent identity itself, or other service principals.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -29,12 +31,12 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
-<!-- {
-  "blockType": "ignored"
-}
--->
-``` http
-POST /servicePrincipals/{servicePrincipalsId}/owners/$ref
+
+You can address the agent identity using either its **id** or **appId**. **id** and **appId** are referred to as the **Object ID** and **Application (Client) ID**, respectively, in app registrations in the Microsoft Entra admin center.
+<!-- { "blockType": "ignored" } -->
+```http
+POST /servicePrincipals/{id}/Microsoft.Graph.AgentIdentity/owners/$ref
+POST /servicePrincipals(appId='{appId}')/Microsoft.Graph.AgentIdentity/owners/$ref
 ```
 
 ## Request headers
@@ -48,15 +50,6 @@ POST /servicePrincipals/{servicePrincipalsId}/owners/$ref
 
 In the request body, supply a JSON representation of the [directoryObject](../resources/directoryobject.md) object.
 
-You can specify the following properties when creating a **directoryObject**.
-
-**TODO: Remove properties that don't apply**
-|Property|Type|Description|
-|:---|:---|:---|
-|deletedDateTime|DateTimeOffset|**TODO: Add Description** Optional.|
-
-
-
 ## Response
 
 If successful, this method returns a `204 No Content` response code and a [directoryObject](../resources/directoryobject.md) object in the response body.
@@ -66,40 +59,40 @@ If successful, this method returns a `204 No Content` response code and a [direc
 ### Request
 
 The following example shows a request.
+
 <!-- {
   "blockType": "request",
-  "name": "create_directoryobject_from_directoryobjects"
-}
--->
-``` http
-POST https://graph.microsoft.com/beta/servicePrincipals/{servicePrincipalsId}/owners/$ref
-Content-Type: application/json
+  "name": "create_directoryobject_from_serviceprincipal"
+}-->
+```http
+POST https://graph.microsoft.com/beta/servicePrincipals/{id}/Microsoft.Graph.AgentIdentity/owners/$ref
+Content-type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.directoryObject",
-  "deletedDateTime": "String (timestamp)"
+    "@odata.id": "https://graph.microsoft.com/v1.0/directoryObjects/{id}"
 }
 ```
 
 
 ### Response
-
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.directoryObject"
+  "blockType": "response"
+} -->
+```http
+HTTP/1.1 204 No Content
+```
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!--
+{
+  "type": "#page.annotation",
+  "description": "Create owner",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+  ]
 }
 -->
-``` http
-HTTP/1.1 204 No Content
-Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.directoryObject",
-  "id": "a6c034b8-621b-dee3-6abb-52cbce801fe9",
-  "deletedDateTime": "String (timestamp)"
-}
-```
-

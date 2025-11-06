@@ -1,14 +1,15 @@
 ---
-title: "Create serviceprincipal"
-description: "Create a new serviceprincipal object."
-author: "Jackson-Woods"
-ms.localizationpriority: high
-doc_type: apiPageType
+title: "Create agent identity blueprint principal"
+description: "Create a new agent identity blueprint principal object."
+author: "zallison22"
+ms.date: 10/27/2025
+ms.localizationpriority: medium
 ms.subservice: "entra-applications"
-ms.date: 05/20/2024
+doc_type: apiPageType
 ---
 
-# Create servicePrincipal
+
+# Create agent identity blueprint principal
 
 Namespace: microsoft.graph
 
@@ -31,7 +32,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /servicePrincipals/graph.agentIdentityBlueprintPrincipal
+POST /servicePrincipals/Microsoft.Graph.AgentIdentityBlueprintPrincipal
 ```
 
 ## Request headers
@@ -41,11 +42,11 @@ POST /servicePrincipals/graph.agentIdentityBlueprintPrincipal
 | Content-Type | application/json. Required. |
 
 ## Request body
-In the request body, supply a JSON representation of a [serviceprincipal](../resources/serviceprincipal.md) object. The request body must contain  **appId**.
+In the request body, supply a JSON representation of a [agentIdentityBlueprintPrincipal](../resources/agentidentityblueprintprincipal.md) object. The request body must contain  **appId**.
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [serviceprincipal](../resources/serviceprincipal.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [agentIdentityBlueprintPrincipal](../resources/agentidentityblueprintprincipal.md) object in the response body.
 
 ## Example
 
@@ -53,7 +54,7 @@ If successful, this method returns a `201 Created` response code and a [servicep
 The following example shows a request.
 
 ```http
-POST https://graph.microsoft.com/beta/servicePrincipals/graph.agentIdentityBlueprintPrincipal
+POST https://graph.microsoft.com/beta/servicePrincipals/Microsoft.Graph.AgentIdentityBlueprintPrincipal
 Content-type: application/json
 
 {
@@ -75,48 +76,30 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#servicePrincipals/$entity",
-    "id": "59e617e5-e447-4adc-8b88-00af644d7c92",
-    "deletedDateTime": null,
-    "accountEnabled": true,
-    "appDisplayName": "My App",
-    "appId": "65415bb1-9267-4313-bbf5-ae259732ee12",
-    "applicationTemplateId": null,
-    "appOwnerOrganizationId": "1bc1c026-2f7b-48a5-98da-afa2fd8bc7bc",
-    "appRoleAssignmentRequired": false,
-    "displayName": "foo",
-    "errorUrl": null,
-    "homepage": null,
-    "loginUrl": null,
-    "logoutUrl": null,
-    "notificationEmailAddresses": [],
-    "preferredSingleSignOnMode": null,
-    "preferredTokenSigningKeyEndDateTime": null,
-    "preferredTokenSigningKeyThumbprint": null,
-    "publisherName": "Contoso",
-    "replyUrls": [],
-    "samlMetadataUrl": null,
-    "samlSingleSignOnSettings": null,
-    "servicePrincipalNames": [
-        "f1bd758f-4a1a-4b71-aa20-a248a22a8928"
-    ],
-    "signInAudience": "AzureADandPersonalMicrosoftAccount",
-    "tags": [],
-    "addIns": [],
-    "api": {
-        "resourceSpecificApplicationPermissions": []
-    },
-    "appRoles": [],
-    "info": {
-        "termsOfServiceUrl": null,
-        "supportUrl": null,
-        "privacyStatementUrl": null,
-        "marketingUrl": null,
-        "logoUrl": null
-    },
-    "keyCredentials": [],
-    "publishedPermissionScopes": [],
-    "passwordCredentials": []
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#servicePrincipals/$entity",
+  "@odata.type": "#microsoft.graph.agentIdentityBlueprintPrincipal",
+  "id": "59e617e5-e447-4adc-8b88-00af644d7c92",
+  "accountEnabled": true,
+  "appId": "59e617e5-e447-4adc-8b88-00af644d7c92",
+  "appRoleAssignmentRequired": false,
+  "createdByAppId": "00000003-0000-0000-c000-000000000000",
+  "displayName": "foo",
+  "publisherName": "Contoso",
+  "servicePrincipalNames": [
+      "f1bd758f-4a1a-4b71-aa20-a248a22a8928"
+  ],
+  "signInAudience": "AzureAdMyOrg",
+  "servicePrincipalType": "Application",
+  "tags": [],
+  "appRoles": [],
+  "info": {
+      "termsOfServiceUrl": null,
+      "supportUrl": null,
+      "privacyStatementUrl": null,
+      "marketingUrl": null,
+      "logoUrl": null
+  },
+  "publishedPermissionScopes": []
 }
 ```
 

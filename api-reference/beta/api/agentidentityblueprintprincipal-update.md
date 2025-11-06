@@ -1,10 +1,10 @@
 ---
 title: "Update agentIdentityBlueprintPrincipal"
 description: "Update the properties of an agentIdentityBlueprintPrincipal object."
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+author: "zallison22"
 ms.date: 10/27/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 
@@ -15,6 +15,14 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the properties of an agentIdentityBlueprintPrincipal object.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
+> [!IMPORTANT]
+> - Using PATCH to set [**passwordCredential**](../resources/passwordcredential.md) is not supported. Use the [addPassword](./agentidentityblueprintprincipal-addpassword.md) and [removePassword](./agentidentityblueprintprincipal-removepassword.md) methods to update the password or secret for a agent identity blueprint principal.
+>
+> - Agent identity blueprint principals inherit specific properties from their associated agent identity blueprint registrations. These properties are synchronized from the agent identity blueprint registration, but the synchronization isn't immediate or continuous. Sometimes, updating a agent identity blueprint principal may prompt the directory to refresh properties from the agent identity blueprint registration, causing updates that weren't part of the original request.
+
 
 ## Permissions
 
@@ -27,16 +35,29 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/agentidentityblueprintprincipal-update-permissions.md)]
 
+### Permissions for specific scenarios
+- To update the **customSecurityAttributes** property:
+  - In delegated scenarios, the admin must be assigned the *Attribute Assignment Administrator* role and the app granted the *CustomSecAttributeAssignment.ReadWrite.All* delegated permission.
+  - In app-only scenarios using Microsoft Graph permissions, the app must be granted the *CustomSecAttributeAssignment.ReadWrite.All* application permission.
+
+
 ## HTTP request
 
+<<<<<<< HEAD
 <!-- {
   "blockType": "ignored"
 }
 -->
 ``` http
 PATCH /servicePrincipals/{id}/graph.agentIdentityBlueprintPrincipal
+=======
+You can address the agent identity blueprint principal using either its **id** or **appId**. **id** and **appId** are referred to as the **Object ID** and **Application (Client) ID**, respectively, in app registrations in the Microsoft Entra admin center.
+<!-- { "blockType": "ignored" } -->
+```http
+PATCH /servicePrincipals/{id}/Microsoft.Graph.AgentIdentityBlueprintPrincipal
+PATCH /servicePrincipals(appId='{appId}')/Microsoft.Graph.AgentIdentityBlueprintPrincipal
+>>>>>>> 462eb57f5816309b247c18638035aa28d624127d
 ```
-
 ## Request headers
 
 |Name|Description|
@@ -45,29 +66,30 @@ PATCH /servicePrincipals/{id}/graph.agentIdentityBlueprintPrincipal
 |Content-Type|application/json. Required.|
 
 ## Request body
+In the request body, supply the values for relevant fields that should be updated. Existing properties that aren't included in the request body maintains their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
 
 Provide the updated property values for the agent identity blueprint principal.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [agentIdentityBlueprintPrincipal](../resources/agentidentityblueprintprincipal.md) object in the response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Example
 
 ### Request
 
-The following example shows a request to disable an agent identity blueprint principal.
+The following example shows a request to update an agent identity blueprint principal.
 <!-- {
   "blockType": "request",
   "name": "update_agentidentityblueprintprincipal"
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/servicePrincipals/{id}/graph.agentIdentityBlueprintPrincipal
-Content-Type: application/json
+PATCH https://graph.microsoft.com/beta/servicePrincipals/{id}
+Content-type: application/json
 
 {
-  "accountEnabled": false,
+  "appRoleAssignmentRequired": true
 }
 ```
 
@@ -75,20 +97,6 @@ Content-Type: application/json
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
-<!-- {
-  "blockType": "response",
-  "truncated": true
-}
--->
-``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.agentIdentityBlueprintPrincipal",
-  "id": "4b533f8a-90fa-b3df-a331-c48ebdd7a121",
-  "accountEnabled": false,
-}
+```http
+HTTP/1.1 204 No Content
 ```
-
