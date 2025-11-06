@@ -1,12 +1,13 @@
 ---
-title: "Create application"
-description: "Create a new application."
-author: "Jackson-Woods"
-ms.localizationpriority: high
-doc_type: apiPageType
+title: "Create agent identity blueprint"
+description: "Create a new agent identity blueprint."
+author: "zallison22"
+ms.date: 10/27/2025
+ms.localizationpriority: medium
 ms.subservice: "entra-applications"
-ms.date: 05/14/2024
+doc_type: apiPageType
 ---
+
 
 # Create agent identity blueprint
 

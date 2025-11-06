@@ -8,7 +8,7 @@ ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 
-# Add owners - agentIdentityBlueprintPrincipal
+# agentIdentityBlueprintPrincipal: Add owners
 
 Namespace: microsoft.graph
 

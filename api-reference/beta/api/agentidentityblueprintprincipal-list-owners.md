@@ -8,7 +8,7 @@ ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 
-# List owners - agentIdentityBlueprintPrincipal
+# agentIdentityBlueprintPrincipal: List owners
 
 Namespace: microsoft.graph
 
@@ -38,7 +38,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ``` http
 
 GET /servicePrincipals/{id}/Microsoft.Graph.AgentIdentityBlueprintPrincipal/owners
-
+```
 
 ## Optional query parameters
 

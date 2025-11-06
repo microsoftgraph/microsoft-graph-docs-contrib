@@ -1,5 +1,5 @@
 ---
-title: "Add agentIdentitysponsors sponsors"
+title: "Add agentIdentity sponsors"
 description: "Add sponsors to an agentIdentity by posting to the sponsors collection."
 author: "zallison22"
 ms.date: 10/27/2025
@@ -8,7 +8,7 @@ ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 
-# Add agentIdentity sponsors
+# agentIdentity: Add sponsors
 
 Namespace: microsoft.graph
 

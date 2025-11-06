@@ -1,14 +1,14 @@
 ---
-title: "List sponsors"
-description: "**TODO: Add a useful description.**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+title: "List agentIdentityBlueprint sponsors"
+description: "Returns the current sponsors of an agent identity blueprint."
+author: "zallison22"
 ms.date: 10/27/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 
-# List sponsors
+# agentIdentityBlueprint: List sponsors
 
 Namespace: microsoft.graph
 

@@ -8,13 +8,13 @@ ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 
-# List memberOf - agentIdentity
+# agentIdentity: List memberOf
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the groups and directory roles that this [servicePrincipal](../resources/serviceprincipal.md) is a direct member of. This operation isn't transitive.
+Get the groups and directory roles that this [agentIdentity](../resources/agentidentity.md) is a direct member of. This operation isn't transitive.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

@@ -8,7 +8,7 @@ ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 
-# Remove owners - agentIdentityBlueprintPrincipal
+# agentIdentityBlueprintPrincipal: Remove owners
 
 Namespace: microsoft.graph
 
