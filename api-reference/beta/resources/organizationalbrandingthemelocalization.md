@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Resource that supports managing language-specific branding for a [organizationalBrandingThemeLocalization  object](../resources/organizationalBrandingThemeLocalization.md). While you can't change your original configuration's language, this resource allows you to create a new configuration for a different language.  
+Resource that supports managing language-specific branding for an [organizationalBrandingTheme](../resources/organizationalbrandingtheme.md) object. While you can't change your original configuration's language, this resource allows you to create a new configuration for a different language.  
 
 ## Methods
 |Method|Return type|Description|
