@@ -146,7 +146,7 @@ Content-Type: application/json
     },
     "headerBackgroundColor": "#3377ffff",
     "headerLogo": null,
-    "headerLogoRelativeUrl":"#FFFF33",
+    "headerLogoRelativeUrl": "/images/headerLogo.png",
     "loginPageLayoutConfiguration": {
       "@odata.type": "microsoft.graph.loginPageLayoutConfiguration"
     },
