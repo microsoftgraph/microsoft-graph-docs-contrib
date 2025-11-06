@@ -187,7 +187,7 @@ Content-Type: application/json
     "@odata.type": "microsoft.graph.loginPageBrandingVisualElement"
   },
   "headerBackgroundColor": "#3377ffff",
-  "headerLogoRelativeUrl":"#FFFF33",
+  "headerLogoRelativeUrl": "/branding/logo-header.png",
   "loginPageLayoutConfiguration": {
     "@odata.type": "microsoft.graph.loginPageLayoutConfiguration"
   },
