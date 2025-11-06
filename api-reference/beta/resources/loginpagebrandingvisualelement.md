@@ -17,6 +17,7 @@ Contains details about customizable properties of elements on the login page of 
 
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
 |customText|String|A string to replace the default visual element text that is displayed on the login page. The text must be in Unicode format. Maximum length: 256.|  
