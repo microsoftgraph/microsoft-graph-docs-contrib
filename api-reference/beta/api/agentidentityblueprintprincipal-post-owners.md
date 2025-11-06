@@ -65,7 +65,7 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/servicePrincipals/{id}/owners/$ref
+POST https://graph.microsoft.com/beta/servicePrincipals/{id}/Microsoft.Graph.AgentIdentityBlueprintPrincipal/owners/$ref
 Content-Type: application/json
 
 {
