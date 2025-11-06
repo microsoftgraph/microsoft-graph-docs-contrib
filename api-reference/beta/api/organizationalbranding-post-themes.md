@@ -74,7 +74,7 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/aaaabbbb-0000-cccc-1111-dddd2222eeee/branding/themes
+POST https://graph.microsoft.com/beta/organization/aaaabbbb-0000-cccc-1111-dddd2222eeee/branding/themes
 Content-Type: application/json
 
 {
