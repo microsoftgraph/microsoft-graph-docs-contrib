@@ -27,7 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "serviceprincipal_post_serviceprincipals" } -->
 [!INCLUDE [permissions-table](../includes/permissions/agentidentityblueprintprincipal-post-permissions.md)]
 
-[!INCLUDE [rbac-serviceprincipal-apis-create-update-upsert](../includes/rbac-for-apis/rbac-serviceprincipal-apis-create-update-upsert.md)]
+[!INCLUDE [rbac-agentid-apis-write](../includes/rbac-for-apis/rbac-agentid-apis-write.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
