@@ -1870,6 +1870,8 @@ items:
           href: ../../resources/groupresource.md
         - name: List
           href: ../../api/privilegedaccessgroup-list-resources.md
+        - name: Get
+          href: ../../api/groupresource-get.md
       - name: Policy
         items:
         - name: Policy
