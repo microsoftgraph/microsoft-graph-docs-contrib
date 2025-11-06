@@ -42,7 +42,7 @@ DELETE /servicePrincipals/{id}/Microsoft.Graph.AgentIdentityBlueprintPrincipal/o
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
-In the request body, supply the identifier of the directory object to be assigned as owner.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -61,11 +61,6 @@ The following example shows the request.
 
 ```http
 DELETE https://graph.microsoft.com/beta/servicePrincipals/{id}/Microsoft.Graph.AgentIdentityBlueprintPrincipal/owners/{id}/$ref
-Content-type: application/json
-
-{
-    "@odata.id": "https://graph.microsoft.com/v1.0/directoryObjects/{id}"
-}
 
 ```
 

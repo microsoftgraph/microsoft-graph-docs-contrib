@@ -1,14 +1,15 @@
 ---
-title: "servicePrincipal: updatePasswordSingleSignOnCredentials"
+title: "agentIdentityBlueprintPrincipal: updatePasswordSingleSignOnCredentials"
 description: "Update single sign-on credentials using a password for a user or group."
+author: "zallison22"
+ms.date: 10/27/2025
 ms.localizationpriority: medium
-author: "Jackson-Woods"
 ms.subservice: "entra-applications"
-doc_type: "apiPageType"
-ms.date: 10/15/2024
+doc_type: apiPageType
 ---
 
-# servicePrincipal: updatePasswordSingleSignOnCredentials
+
+# agentIdentityBlueprintPrincipal: updatePasswordSingleSignOnCredentials
 
 Namespace: microsoft.graph
 
@@ -22,19 +23,19 @@ Update single sign-on credentials using a password for a user or group.
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "permissions", "name": "serviceprincipal_updatepasswordsinglesignoncredentials" } -->
-[!INCLUDE [permissions-table](../includes/permissions/serviceprincipal-updatepasswordsinglesignoncredentials-permissions.md)]
+<!-- { "blockType": "permissions", "name": "agentidentityblueprintprincipal_updatepasswordsinglesignoncredentials" } -->
+[!INCLUDE [permissions-table](../includes/permissions/agentidentityblueprintprincipal-updatepasswordsinglesignoncredentials-permissions.md)]
 
 [!INCLUDE [rbac-passwordsinglesignoncredentials-apis](../includes/rbac-for-apis/rbac-passwordsinglesignoncredentials-apis.md)]
 
 ## HTTP request
 
-You can address the service principal using either its **id** or **appId**. **id** and **appId** are referred to as the **Object ID** and **Application (Client) ID**, respectively, in app registrations in the Microsoft Entra admin center.
+You can address the agent identity blueprint principal using either its **id** or **appId**. **id** and **appId** are referred to as the **Object ID** and **Application (Client) ID**, respectively, in app registrations in the Microsoft Entra admin center.
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /servicePrincipals/{id}/updatePasswordSingleSignOnCredentials
-POST /servicePrincipals(appId='{appId}')/updatePasswordSingleSignOnCredentials
+POST /servicePrincipals/{id}/Microsoft.Graph.AgentIdentityBlueprintPrincipal/updatePasswordSingleSignOnCredentials
+POST /servicePrincipals(appId='{appId}')/Microsoft.Graph.AgentIdentityBlueprintPrincipal/updatePasswordSingleSignOnCredentials
 ```
 
 ## Request headers
@@ -66,11 +67,11 @@ The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "serviceprincipal_updatepasswordsinglesignoncredentials"
+  "name": "agentidentityblueprintprincipal_updatepasswordsinglesignoncredentials"
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/servicePrincipals/{id}/updatePasswordSingleSignOnCredentials
+POST https://graph.microsoft.com/beta/servicePrincipals/{id}/Microsoft.Graph.AgentIdentityBlueprintPrincipal/updatePasswordSingleSignOnCredentials
 Content-type: application/json
 
 {
@@ -90,36 +91,6 @@ Content-type: application/json
 }
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/serviceprincipal-updatepasswordsinglesignoncredentials-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/serviceprincipal-updatepasswordsinglesignoncredentials-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/serviceprincipal-updatepasswordsinglesignoncredentials-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/serviceprincipal-updatepasswordsinglesignoncredentials-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/serviceprincipal-updatepasswordsinglesignoncredentials-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/serviceprincipal-updatepasswordsinglesignoncredentials-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/serviceprincipal-updatepasswordsinglesignoncredentials-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 ### Response
 
 The following example shows the response.
@@ -135,7 +106,7 @@ HTTP/1.1 204 No Content
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "servicePrincipal: updatePasswordSingleSignOnCredentials",
+  "description": "agentIdentityBlueprintPrincipal: updatePasswordSingleSignOnCredentials",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

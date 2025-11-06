@@ -1,20 +1,20 @@
 ---
 title: "Create delegatedPermissionClassification"
-description: "Create a new delegatedPermissionClassification object."
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+description: "Classify a permission by adding a delegatedPermissionClassification to the API's agent identity blueprint principal."
+author: "zallison22"
 ms.date: 10/27/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 
 # Create delegatedPermissionClassification
 
-Namespace: microsoft.graph
-
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new delegatedPermissionClassification object.
+Classify a delegated permission by adding a [delegatedPermissionClassification](../resources/delegatedpermissionclassification.md) to the [agentIdentityBlueprintPrincipal](../resources/agentIdentityBlueprintPrincipal.md) representing the API.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -29,12 +29,12 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
-<!-- {
-  "blockType": "ignored"
-}
--->
-``` http
-POST /servicePrincipals/{servicePrincipalsId}/delegatedPermissionClassifications
+You can address the agent identity blueprint principal using either its **id** or **appId**. **id** and **appId** are referred to as the **Object ID** and **Application (Client) ID**, respectively, in app registrations in the Microsoft Entra admin center.
+<!-- { "blockType": "ignored" } -->
+```http
+POST /servicePrincipals/{id}/Microsoft.Graph.AgentIdentityBlueprintPrincipal/delegatedPermissionClassifications
+POST /servicePrincipals(appId='{appId}')/Microsoft.Graph.AgentIdentityBlueprintPrincipal/delegatedPermissionClassifications
+
 ```
 
 ## Request headers
@@ -48,16 +48,6 @@ POST /servicePrincipals/{servicePrincipalsId}/delegatedPermissionClassifications
 
 In the request body, supply a JSON representation of the [delegatedPermissionClassification](../resources/delegatedpermissionclassification.md) object.
 
-You can specify the following properties when creating a **delegatedPermissionClassification**.
-
-**TODO: Remove properties that don't apply**
-|Property|Type|Description|
-|:---|:---|:---|
-|permissionId|String|**TODO: Add Description** Optional.|
-|permissionName|String|**TODO: Add Description** Optional.|
-|classification|permissionClassificationType|**TODO: Add Description**. The possible values are: `low`, `medium`, `high`, `unknownFutureValue`. Optional.|
-
-
 
 ## Response
 
@@ -67,21 +57,23 @@ If successful, this method returns a `201 Created` response code and a [delegate
 
 ### Request
 
-The following example shows a request.
+
+In the following example, the delegated permission "User.Read" is being classified "low".
+
+
 <!-- {
   "blockType": "request",
-  "name": "create_delegatedpermissionclassification_from_"
-}
--->
-``` http
-POST https://graph.microsoft.com/beta/servicePrincipals/{servicePrincipalsId}/delegatedPermissionClassifications
+  "name": "serviceprincipal_create_delegatedpermissionclassification"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/servicePrincipals/{id}/Microsoft.Graph.AgentIdentityBlueprintPrincipal/delegatedPermissionClassifications
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.delegatedPermissionClassification",
-  "permissionId": "String",
-  "permissionName": "String",
-  "classification": "String"
+  "permissionId": "e1fe6dd8-ba31-4d61-89e7-88639da4683d",
+  "permissionName": "User.Read",
+  "classification": "low"
 }
 ```
 
@@ -89,23 +81,25 @@ Content-Type: application/json
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
+
+> **Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
-  "truncated": true,
   "@odata.type": "microsoft.graph.delegatedPermissionClassification"
-}
--->
-``` http
+} -->
+
+```http
 HTTP/1.1 201 Created
-Content-Type: application/json
+Content-type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.delegatedPermissionClassification",
-  "id": "c1c96e48-1b5f-80fa-d1ae-713ff66df713",
-  "permissionId": "String",
-  "permissionName": "String",
-  "classification": "String"
+  "id": "2G3-4TG6YU2J54hjnaRoPQE",
+  "permissionId": "e1fe6dd8-ba31-4d61-89e7-88639da4683d",
+  "permissionName": "User.Read",
+  "classification": "low"
 }
 ```
+
+
 

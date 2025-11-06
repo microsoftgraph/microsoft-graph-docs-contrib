@@ -1,20 +1,24 @@
 ---
 title: "agentIdentity: updatePasswordSingleSignOnCredentials"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+description: "Update single sign-on credentials using a password for a user or group."
+author: "zallison22"
 ms.date: 10/27/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 
+
 # agentIdentity: updatePasswordSingleSignOnCredentials
+
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Update single sign-on credentials using a password for a user or group.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -29,12 +33,12 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
-<!-- {
-  "blockType": "ignored"
-}
--->
-``` http
-POST /riskyAgentIdentity/agentIdentity/updatePasswordSingleSignOnCredentials
+You can address the agent identity using either its **id** or **appId**. **id** and **appId** are referred to as the **Object ID** and **Application (Client) ID**, respectively, in app registrations in the Microsoft Entra admin center.
+<!-- { "blockType": "ignored" } -->
+
+```http
+POST /servicePrincipals/{id}/Microsoft.Graph.AgentIdentity/updatePasswordSingleSignOnCredentials
+POST /servicePrincipals(appId='{appId}')/Microsoft.Graph.AgentIdentity/updatePasswordSingleSignOnCredentials
 ```
 
 ## Request headers
@@ -45,41 +49,46 @@ POST /riskyAgentIdentity/agentIdentity/updatePasswordSingleSignOnCredentials
 |Content-Type|application/json. Required.|
 
 ## Request body
+In the request body, provide a JSON object with the following parameters.
 
-In the request body, supply a JSON representation of the parameters.
-
-The following table lists the parameters that are required when you call this action.
-
-|Parameter|Type|Description|
-|:---|:---|:---|
-|id|String|**TODO: Add Description**|
-|credentials|[credential](../resources/credential.md) collection|**TODO: Add Description**|
+| Parameter    | Type        | Description |
+|:-------------|:------------|:------------|
+|id|String|The ID of the user or group this credential set belongs to.|
+|credentials|[credential](../resources/credential.md) collection|A list of credential objects that define the complete sign in flow.|
 
 
 
 ## Response
 
-If successful, this action returns a `204 No Content` response code.
+If successful, this method returns a `204 No Content` response code. It doesn't return anything in the response body.
 
 ## Examples
 
 ### Request
 
 The following example shows a request.
+
 <!-- {
   "blockType": "request",
-  "name": "agentidentitythis.updatepasswordsinglesignoncredentials"
-}
--->
-``` http
-POST https://graph.microsoft.com/beta/riskyAgentIdentity/agentIdentity/updatePasswordSingleSignOnCredentials
-Content-Type: application/json
+  "name": "agentidentity_updatepasswordsinglesignoncredentials"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/servicePrincipals/{id}/Microsoft.Graph.AgentIdentity/updatePasswordSingleSignOnCredentials
+Content-type: application/json
 
 {
-  "id": "String",
+  "id": "5793aa3b-cca9-4794-679a240f8b58",
   "credentials": [
     {
-      "@odata.type": "microsoft.graph.credential"
+      "fieldId": "param_username",
+      "value": "myusername",
+      "type": "username"
+    },
+    {
+      "fieldId": "param_password",
+      "value": "pa$$w0rd",
+      "type": "password"
     }
   ]
 }
