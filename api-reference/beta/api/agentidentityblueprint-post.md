@@ -25,7 +25,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "application_post_applications" } -->
 [!INCLUDE [permissions-table](../includes/permissions/agentidentityblueprint-post-permissions.md)]
 
-[!INCLUDE [rbac-application-apis-write](../includes/rbac-for-apis/rbac-application-apis-write.md)]
+[!INCLUDE [rbac-agentid-apis-write](../includes/rbac-for-apis/rbac-agentid-apis-write.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

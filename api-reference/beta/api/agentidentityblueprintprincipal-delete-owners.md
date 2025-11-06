@@ -29,6 +29,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/agentidentityblueprintprincipal-delete-owners-permissions.md)]
 
+[!INCLUDE [rbac-agentid-apis-write](../includes/rbac-for-apis/rbac-agentid-apis-write.md)]
+
+
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
@@ -62,10 +65,6 @@ The following example shows the request.
 
 ```http
 DELETE https://graph.microsoft.com/beta/servicePrincipals/{id}/Microsoft.Graph.AgentIdentityBlueprintPrincipal/owners/{id}/$ref
-<<<<<<< HEAD
-=======
-
->>>>>>> 462eb57f5816309b247c18638035aa28d624127d
 ```
 
 

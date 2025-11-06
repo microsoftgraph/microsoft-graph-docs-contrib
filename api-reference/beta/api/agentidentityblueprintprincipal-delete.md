@@ -24,6 +24,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "agentidentityblueprintprincipal_delete" } -->
 [!INCLUDE [permissions-table](../includes/permissions/agentidentityblueprintprincipal-delete-permissions.md)]
 
+[!INCLUDE [rbac-agentid-apis-write](../includes/rbac-for-apis/rbac-agentid-apis-write.md)]
+
 ## HTTP request
 You can address the agent identity blueprint principal using either its **id** or **appId**.
 

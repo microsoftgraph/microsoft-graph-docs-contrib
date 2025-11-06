@@ -29,6 +29,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/agentidentityblueprintprincipal-list-owners-permissions.md)]
 
+[!INCLUDE [rbac-agentid-apis-write](../includes/rbac-for-apis/rbac-agentid-apis-write.md)]
+
 ## HTTP request
 
 <!-- {
@@ -36,9 +38,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-
 GET /servicePrincipals/{id}/Microsoft.Graph.AgentIdentityBlueprintPrincipal/owners
-
+```
 
 ## Optional query parameters
 
