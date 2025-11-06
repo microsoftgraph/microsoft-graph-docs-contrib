@@ -101,10 +101,6 @@ GET https://graph.microsoft.com/beta/sites/getOperationStatus(operationId='JXMna
 [!INCLUDE [sample-code](../includes/snippets/php/sitethisgetoperationstatus-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/sitethisgetoperationstatus-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/sitethisgetoperationstatus-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
