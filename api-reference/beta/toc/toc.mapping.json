@@ -90,6 +90,7 @@
             "onPremisesAgent",
             "onPremisesAgentGroup",
             "onPremisesPublishingProfile",
+            "privateAccessSensor",
             "publishedResource",
             "ipApplicationSegment",
             "webApplicationSegment",
