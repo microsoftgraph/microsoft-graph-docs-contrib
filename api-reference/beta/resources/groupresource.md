@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the [group](../resources/group.md) resource in PIM for groups. This entity extends [Directory object](directoryobject.md).
+Represents the [group](../resources/group.md) resource in PIM for groups. This entity extends [directoryObject](../resources/directoryobject.md).
 
 ## Methods
 

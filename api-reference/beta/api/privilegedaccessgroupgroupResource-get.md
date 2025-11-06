@@ -23,6 +23,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "privilegedaccessgroupgroupresource_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/privilegedaccessgroupgroupresource-get-permissions.md)]
 
+[!INCLUDE [rbac-pim-groups-apis-read-assignmentschedulerequests](../includes/rbac-for-apis/rbac-pim-groups-apis-read-assignmentschedulerequests.md)]
+
 ## HTTP request
 
 <!-- {
@@ -50,7 +52,7 @@ If successful, this method returns a `200 OK` response code and a [groupResource
 
 ## Examples
 
-#### Request
+### Request
 The following example shows a request.
 
 <!-- {
@@ -62,7 +64,7 @@ The following example shows a request.
 GET https://graph.microsoft.com/beta/identityGovernance/privilegedAccess/group/resources/a13fc7b0-a4ff-45fc-82c4-1d31a807426a
 ```
 
-#### Response
+### Response
 The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.

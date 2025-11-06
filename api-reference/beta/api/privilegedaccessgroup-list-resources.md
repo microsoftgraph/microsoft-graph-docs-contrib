@@ -20,8 +20,10 @@ Get a list of the [groupResource](../resources/groupResource.md) objects and the
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "permissions", "name": "privilegedaccessgroupgroupResource_get" } -->
+<!-- { "blockType": "permissions", "name": "privilegedaccessgroup_list_resources" } -->
 [!INCLUDE [permissions-table](../includes/permissions/privilegedaccessgroup-list-resources-permissions.md)]
+
+[!INCLUDE [rbac-pim-groups-apis-read-assignmentschedulerequests](../includes/rbac-for-apis/rbac-pim-groups-apis-read-assignmentschedulerequests.md)]
 
 ## HTTP request
 
@@ -34,7 +36,7 @@ GET /identityGovernance/privilegedAccess/group/resources
 ```
 
 ## Query parameters
-This method supports the `$select`, `$filter` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` and `$filter` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -62,7 +64,7 @@ The following example shows a request.
 GET /identityGovernance/privilegedAccess/group/resources
 ```
 
-#### Response
+### Response
 If successful, this method returns a `200 OK` response code and a collection of [groupResource](../resources/groupResource.md) objects in the response body.
 
 The following example shows the response.
