@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /admin/teams/telephoneNumberManagement/numberAssignments/updateNumber
 ```
 
@@ -72,7 +72,7 @@ The following example shows a request to update `locationId` of a telephone numb
   "name": "post_updateNumber1",
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/admin/teams/telephoneNumberManagement/numberAssignments/updateNumber
 Content-Type: application/json
 
@@ -97,7 +97,7 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 ```
 
@@ -112,7 +112,7 @@ The following example shows a request to update `networkSiteId` of a telephone n
   "name": "post_updateNumber2",
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/admin/teams/telephoneNumberManagement/numberAssignments/updateNumber
 Content-Type: application/json
 
@@ -138,7 +138,7 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 ```
 
@@ -153,7 +153,7 @@ The following example shows a request to update `reverseNumberLookupOptions` for
   "name": "post_updateNumber3",
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/admin/teams/telephoneNumberManagement/numberAssignments/updateNumber
 Content-Type: application/json
 
@@ -179,7 +179,7 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 ```
 
@@ -195,7 +195,7 @@ The following example shows a request to update `locationId` of a telephone numb
   "name": "post_updateNumber4",
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/admin/teams/telephoneNumberManagement/numberAssignments/updateNumber
 Content-Type: application/json
 
@@ -220,7 +220,7 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 ```
 

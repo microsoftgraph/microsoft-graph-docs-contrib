@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /print/printers/{printerId}/jobs
 ```
 
@@ -60,7 +60,7 @@ If successful, this method returns a `201 Created` response code and a [printJob
   "name": "create_printjob_from__1"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/print/printers/{printerId}/jobs
 Content-Type: application/json
 
@@ -139,7 +139,7 @@ Content-Type: application/json
   "@odata.type": "microsoft.graph.printJob"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 

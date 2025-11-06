@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /admin/exchange/mailboxes/{mailboxId}/exportItems
 ```
 
@@ -70,7 +70,7 @@ The following example exports two items present in the user's mailbox. The **ite
   "sampleKeys": ["MBX:e0643f21@a7809c93"]
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/admin/exchange/mailboxes/MBX:e0643f21@a7809c93/exportItems
 Content-type: application/json
 
@@ -118,7 +118,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.exportItemResponse)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 232

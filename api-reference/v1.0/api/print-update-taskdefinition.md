@@ -30,7 +30,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PATCH /print/taskDefinitions/{printTaskDefinitionId}
 ```
 
@@ -62,7 +62,7 @@ If successful, this method returns a `200 OK` response code and an updated [prin
   "name": "update_printtaskdefinition"
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/v1.0/print/taskDefinitions/{printTaskDefinitionId}
 Content-Type: application/json
 
@@ -112,7 +112,7 @@ Content-Type: application/json
   "@odata.type": "microsoft.graph.printTaskDefinition"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

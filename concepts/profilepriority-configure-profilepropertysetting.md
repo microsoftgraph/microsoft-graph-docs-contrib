@@ -33,13 +33,13 @@ Use the [List](/graph/api/peopleadminsettings-list-profilepropertysettings?view=
 
 The following example gets the collection of profile property settings in an organization.
 
-``` http
+```http
 GET https://graph.microsoft.com/beta/admin/people/profilePropertySettings
 ```
 
 If successful, this method returns a `200 OK` response code and a [profilePropertySetting](/graph/api/resources/profilepropertysetting?view=graph-rest-beta&preserve-view=true) object in the response body.
 
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -64,7 +64,7 @@ Use the [Create](/graph/api/peopleadminsettings-post-profilepropertysettings?vie
 
 ### Request
 
-``` http
+```http
 POST https://graph.microsoft.com/beta/admin/people/profilePropertySettings
 Content-Type: application/json
 
@@ -80,7 +80,7 @@ If successful, this method returns a `201 Created` response code and a [profileP
 
 ### Response
 
-``` http
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 
@@ -102,7 +102,7 @@ Use the [Update](/graph/api/profilepropertysetting-update?view=graph-rest-beta&p
 
 ### Request
 
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/admin/people/profilePropertySettings/00000000-0000-0000-0000-000000000001
 Content-Type: application/json
 
@@ -119,7 +119,7 @@ If successful, this method returns a `200 OK` response code and a [profileProper
 
 ### Response
 
-``` http
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -142,7 +142,7 @@ Use the [Delete](/graph/api/profilepropertysetting-delete?view=graph-rest-beta&p
 
 ### Request
 
-``` http
+```http
 DELETE https://graph.microsoft.com/beta/admin/people/profilePropertySettings/00000000-0000-0000-0000-000000000001
 ```
 
@@ -150,7 +150,7 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Response
 
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 
