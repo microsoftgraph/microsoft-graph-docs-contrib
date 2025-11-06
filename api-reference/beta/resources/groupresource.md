@@ -21,7 +21,7 @@ Represents the [group](../resources/group.md) resource in PIM for groups. This e
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
 | [List](../api/privilegedaccessgroup-list-resources.md) | [groupResource](groupResource.md) collection | Retrieve a list of [groupResource](groupResource.md) objects. |
-| [Get](../api/privilegedaccessgroupgroupresource-get.md)|[groupResource](groupResource.md)|Read the properties of a [groupResource](groupResource.md) object. |
+| [Get](../api/groupresource-get.md)|[groupResource](groupResource.md)|Read the properties of a [groupResource](groupResource.md) object. |
 
 ## Properties
 | Property    | Type   | Description |
