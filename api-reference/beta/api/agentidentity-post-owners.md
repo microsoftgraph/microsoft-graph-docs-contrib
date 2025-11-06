@@ -32,11 +32,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ## HTTP request
 
 
-You can address the agent identity using either its **id** or **appId**. **id** and **appId** are referred to as the **Object ID** and **Application (Client) ID**, respectively, in app registrations in the Microsoft Entra admin center.
-<!-- { "blockType": "ignored" } -->
 ```http
 POST /servicePrincipals/{id}/Microsoft.Graph.AgentIdentity/owners/$ref
-POST /servicePrincipals(appId='{appId}')/Microsoft.Graph.AgentIdentity/owners/$ref
 ```
 
 ## Request headers
@@ -48,7 +45,7 @@ POST /servicePrincipals(appId='{appId}')/Microsoft.Graph.AgentIdentity/owners/$r
 
 ## Request body
 
-In the request body, supply a JSON representation of the [directoryObject](../resources/directoryobject.md) object.
+In the request body, supply a reference to the [directoryObject](../resources/directoryobject.md) object to be added as an owner.
 
 ## Response
 
@@ -69,7 +66,7 @@ POST https://graph.microsoft.com/beta/servicePrincipals/{id}/Microsoft.Graph.Age
 Content-type: application/json
 
 {
-    "@odata.id": "https://graph.microsoft.com/v1.0/directoryObjects/{id}"
+    "@odata.id": "https://graph.microsoft.com/v1.0/directoryObjects/{ownerObjectId}"
 }
 ```
 

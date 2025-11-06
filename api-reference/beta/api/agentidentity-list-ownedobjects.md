@@ -36,7 +36,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /servicePrincipals/{servicePrincipalsId}/ownedObjects
+GET /servicePrincipals/{id}/ownedObjects
 ```
 
 ## Optional query parameters
