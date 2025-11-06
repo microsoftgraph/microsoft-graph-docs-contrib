@@ -59,7 +59,7 @@ The following example shows a request.
 
 <!-- {
   "blockType": "request",
-  "name": "create_directoryobject_from_serviceprincipal"
+  "name": "create_agent_identity_owner"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/servicePrincipals/{id}/Microsoft.Graph.AgentIdentity/owners/$ref

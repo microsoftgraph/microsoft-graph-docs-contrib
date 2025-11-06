@@ -64,7 +64,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "list_directoryobject"
+  "name": "list_agent_identity_owners"
 }
 -->
 ``` http
@@ -111,7 +111,8 @@ Content-type: application/json
         },
         {
             "@odata.type": "#microsoft.graph.user",
-            "id": "7585d967-f300-43de-b817-7119a6404c5e"
+            "id": "7585d967-f300-4
+            3de-b817-7119a6404c5e"
         }
     ]
 }

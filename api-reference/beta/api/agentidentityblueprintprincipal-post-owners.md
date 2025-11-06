@@ -61,7 +61,7 @@ If successful, this method returns a `204 No Content` response code and a [direc
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "create_directoryobject_from_directoryobjects"
+  "name": "create_agent_identity_blueprint_principal_owner"
 }
 -->
 ``` http
@@ -85,17 +85,4 @@ The following example shows the response.
 ```http
 HTTP/1.1 204 No Content
 ```
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
-<!--
-{
-  "type": "#page.annotation",
-  "description": "Create owner",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-  ]
-}
--->
 

@@ -65,7 +65,7 @@ The following example shows a request.
 
 <!-- {
   "blockType": "request",
-  "name": "upsert_application_create"
+  "name": "upsert_agent_identity_blueprint_create"
 }
 -->
 
@@ -87,7 +87,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.application"
+  "@odata.type": "microsoft.graph.agentIdentityBlueprint"
 }
 -->
 

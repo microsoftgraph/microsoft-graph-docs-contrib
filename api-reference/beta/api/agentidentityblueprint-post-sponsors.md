@@ -14,7 +14,21 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Add sponsors by posting to the sponsors collection.
+Add sponsors by posting to the sponsors collection. Sponsors can include users or groups. Sponsors may not include service principals or agent users.
+
+<!-- uuid: 8d4c7f2a-1e5b-4a9c-b6f3-7e2d8c5a9b4f
+2025-11-06 14:57:30 UTC -->
+<!--
+{
+  "type": "#page.annotation",
+  "description": "Add sponsors to an agentIdentityBlueprint by posting to the sponsors collection.",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+  ]
+}
+-->
 
 ## Permissions
 
@@ -59,7 +73,7 @@ If successful, this method returns a `204 No Content` response code and a [direc
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "create_directoryobject_from_directoryobjects"
+  "name": "create_agent_identity_blueprint_sponsor"
 }
 -->
 ``` http
@@ -85,4 +99,3 @@ The following example shows the response.
 ``` http
 HTTP/1.1 204 No Content
 ```
-

@@ -59,7 +59,7 @@ If successful, this method returns a `200 OK` response code and collection of [a
 
 <!-- {
   "blockType": "request",
-  "name": "list_serviceprincipal"
+  "name": "list_agent_identity"
 }-->
 
 ```msgraph-interactive
@@ -74,7 +74,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.servicePrincipal",
+  "@odata.type": "microsoft.graph.agentIdentity",
   "isCollection": true
 } -->
 

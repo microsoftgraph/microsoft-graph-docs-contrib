@@ -56,11 +56,11 @@ The following example shows the request.
 
 <!-- {
   "blockType": "request",
-  "name": "serviceprincipal_delete_owners"
+  "name": "agentidentity_delete_owners"
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/beta/servicePrincipals/{id}/Microsoft.Graph.AgentIdentityBlueprintPrincipal/owners/{id}/$ref
+DELETE https://graph.microsoft.com/beta/servicePrincipals/{id}/Microsoft.Graph.AgentIdentity/owners/{id}/$ref
 
 ```
 
