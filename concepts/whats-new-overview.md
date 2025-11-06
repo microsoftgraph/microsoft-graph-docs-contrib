@@ -18,6 +18,12 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 > [!IMPORTANT]
 > Features in _preview_ status are subject to change without notice, and might not be promoted to generally available (GA) status. Don't use preview features in production apps.
 
+## November 2025
+
+### Backup storage
+
+- [driveItem: restore](/graph/api/driveitem-restore) was expanded to enable restoring a **driveItem** deleted from a **fileStorageContainer** without mapping it to a **recycleBinItem**. This complements existing functionality in [recycleBinItem: restore](/graph/api/filestoragecontainer-restore-recyclebinitem) which continues to work as expected.
+
 ## October 2025: New and generally available
 
 ### Backup storage
@@ -102,9 +108,17 @@ Microsoft Graph now supports new delegated and application permissions scoped to
 | UserAuthMethod-WindowsHello.ReadWrite | Windows Hello for Business | ![Available](./images/yesandnosymbols/greencheck.svg) | ![Not available](./images/yesandnosymbols/no.svg) |
 | UserAuthMethod-WindowsHello.ReadWrite.All | Windows Hello for Business | ![Available](./images/yesandnosymbols/greencheck.svg) | ![Available](./images/yesandnosymbols/greencheck.svg) |
 
+### Security | Alerts and incidents
+
+Use the **investigationState** property on [alert](/graph/api/resources/security-alert) to get the current status of an investigation.
+
 ### Teamwork and communications | Calls and online meetings
 
 Use the [callEvent](/graph/api/resources/callevent) and [emergencyCallEvent](/graph/api/resources/emergencycallevent) resources to provide detailed information about both standard and emergency call events. For more information, see [Change notification for active meeting call events](/graph/changenotifications-for-onlinemeeting) and [change notification for emergency call events](/graph/changenotifications-for-emergencycalls).
+
+### Teamwork and communications | Messaging
+
+Use the **originalSourceMembershipUrl** annotation with the [List allMembers](/graph/api/channel-list-allmembers) API to identify the source of a member's membership and distinguish between direct and indirect members.
 
 ## October 2025: New in preview only
 
@@ -136,6 +150,10 @@ Added the following new endpoints as supported request URLs for the [driveItem: 
 - `POST /groups/{groupId}/drive/items/{parentItemId}:/{fileName}:/createUploadSession` 
 - `POST /sites/{siteId}/drive/items/{parentItemId}:/{fileName}:/createUploadSession`
 - `POST /users/{userId}/drive/items/{parentItemId}:/{fileName}:/createUploadSession`
+
+### Security | Alerts and incidents
+
+Use the **investigationState** property on [alert](/graph/api/resources/security-alert?view=graph-rest-beta&preserve-view=true) to get the current status of an investigation.
 
 ### Sites and lists
 
