@@ -210,7 +210,7 @@ Content-Type: application/json
 
 The following example shows a request.
 <!-- {
-  "blockType": "ignore",
+  "blockType": "ignored",
   "name": "update_organizationalbrandingthemelocalization_stream"
 }
 -->
