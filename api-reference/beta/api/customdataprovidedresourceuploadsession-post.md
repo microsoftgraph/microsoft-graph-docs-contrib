@@ -25,7 +25,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }[accesspackageresource-post-uploadsessions.md](accesspackageresource-post-uploadsessions.md)
 -->
 
-[!INCLUDE [permissions-table](../includes/permissions/accesspackagecatalog-update-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/customdataprovidedresourceuploadsession-post-permissions.md)]
 
 [!INCLUDE [rbac-entitlement-catalog-owner-write](../includes/rbac-for-apis/rbac-entitlement-management-catalog-owner-apis-write.md)]
 
