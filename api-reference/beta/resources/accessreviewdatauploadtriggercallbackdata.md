@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This object represents the columns expected in the CSV file that is uploaded in an upload session. 
+This object represents the columns expected in the CSV file that is uploaded in an [uploadSession](../resource/uploadsession.md). 
 
 
 Inherits from [customExtensionData](../resources/customextensiondata.md).
