@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET ** Entity URI for microsoft.graph.agentIdentityBlueprint not found
+GET /applications/{id}/Microsoft.Graph.AgentIdentityBlueprint
 ```
 
 ## Optional query parameters
@@ -66,7 +66,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta** Entity URI for microsoft.graph.agentIdentityBlueprint not found
+GET https://graph.microsoft.com/beta/applications/{id}/Microsoft.Graph.AgentIdentityBlueprint
 ```
 
 
@@ -92,26 +92,12 @@ Content-Type: application/json
     "api": {
       "@odata.type": "microsoft.graph.apiApplication"
     },
-    "appCategory": "String",
-    "appData": "String",
     "appId": "String",
-    "appMetadata": {
-      "@odata.type": "microsoft.graph.appMetadata"
-    },
     "appRoles": [
       {
         "@odata.type": "microsoft.graph.appRole"
       }
     ],
-    "authenticationBehaviors": {
-      "@odata.type": "microsoft.graph.authenticationBehaviors"
-    },
-    "authenticationBehaviorsInternal": {
-      "@odata.type": "microsoft.graph.Dictionary"
-    },
-    "billingInformation": {
-      "@odata.type": "microsoft.graph.billingInformation"
-    },
     "certification": {
       "@odata.type": "microsoft.graph.certification"
     },
@@ -119,91 +105,34 @@ Content-Type: application/json
     "createdDateTime": "String (timestamp)",
     "description": "String",
     "disabledByMicrosoftStatus": "String",
-    "isFallbackPublicClient": "Boolean",
-    "isDisabled": "Boolean",
     "identifierUris": [
       "String"
     ],
-    "defaultRedirectUri": "String",
     "displayName": "String",
-    "expectsForwardableIdTokens": "Boolean",
     "groupMembershipClaims": "String",
     "info": {
       "@odata.type": "microsoft.graph.informationalUrl"
     },
-    "isDeviceOnlyAuthSupported": "Boolean",
-    "isManagementRestricted": "Boolean",
     "keyCredentials": [
       {
         "@odata.type": "microsoft.graph.keyCredential"
       }
     ],
-    "legacyAllowPassthroughUsers": "Boolean",
-    "lifecycle": {
-      "@odata.type": "microsoft.graph.lifecycle"
-    },
-    "logo": "Stream",
-    "managerApplications": [
-      "Guid"
-    ],
-    "microsoftPolicyGroup": "Boolean",
-    "migrationStatus": {
-      "@odata.type": "microsoft.graph.appMigrationStatus"
-    },
-    "msaAppId": "String",
-    "nativeAuthenticationApisEnabled": "String",
-    "notes": "String",
     "optionalClaims": {
       "@odata.type": "microsoft.graph.optionalClaims"
-    },
-    "parentalControlSettings": {
-      "@odata.type": "microsoft.graph.parentalControlSettings"
     },
     "passwordCredentials": [
       {
         "@odata.type": "microsoft.graph.passwordCredential"
       }
     ],
-    "publicClient": {
-      "@odata.type": "microsoft.graph.publicClientApplication"
-    },
     "publisherDomain": "String",
-    "requestSignatureVerification": {
-      "@odata.type": "microsoft.graph.requestSignatureVerification"
-    },
-    "requiredResourceAccess": [
-      {
-        "@odata.type": "microsoft.graph.requiredResourceAccess"
-      }
-    ],
-    "riskLevelThreat": {
-      "@odata.type": "microsoft.graph.applicationRiskLevelThreat"
-    },
-    "samlMetadataUrl": "String",
     "serviceManagementReference": "String",
-    "servicePrincipalLifecyclePolicy": "String",
-    "servicePrincipalLockConfiguration": {
-      "@odata.type": "microsoft.graph.servicePrincipalLockConfiguration"
-    },
-    "serviceTreeId": "String",
-    "serviceType": "String",
     "signInAudience": "String",
-    "signInAudienceRestrictions": {
-      "@odata.type": "microsoft.graph.signInAudienceRestrictionsBase"
-    },
-    "spa": {
-      "@odata.type": "microsoft.graph.spaApplication"
-    },
     "tags": [
       "String"
     ],
-    "targetScope": "String",
     "tokenEncryptionKeyId": "Guid",
-    "trustedSubjectNameAndIssuers": [
-      {
-        "@odata.type": "microsoft.graph.trustedSubjectNameAndIssuer"
-      }
-    ],
     "uniqueName": "String",
     "verifiedPublisher": {
       "@odata.type": "microsoft.graph.verifiedPublisher"
@@ -211,12 +140,6 @@ Content-Type: application/json
     "web": {
       "@odata.type": "microsoft.graph.webApplication"
     },
-    "windows": {
-      "@odata.type": "microsoft.graph.windowsApplication"
-    },
-    "onPremisesPublishing": {
-      "@odata.type": "microsoft.graph.onPremisesPublishing"
-    }
   }
 }
 ```

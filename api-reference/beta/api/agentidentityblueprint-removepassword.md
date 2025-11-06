@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Removes a password from an agent identity blueprint.
 
 ## Permissions
 
@@ -29,12 +29,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
-<!-- {
-  "blockType": "ignored"
-}
--->
 ``` http
-POST ** Entity URI for microsoft.graph.agentIdentityBlueprint not found/removePassword
+POST /applications/{id}/Microsoft.Graph.AgentIdentityBlueprint/removePassword
 ```
 
 ## Request headers
@@ -46,13 +42,9 @@ POST ** Entity URI for microsoft.graph.agentIdentityBlueprint not found/removePa
 
 ## Request body
 
-In the request body, supply a JSON representation of the parameters.
-
-The following table lists the parameters that are required when you call this action.
-
-|Parameter|Type|Description|
-|:---|:---|:---|
-|keyId|Guid|**TODO: Add Description**|
+| Property    | Type | Description|
+|:----------|:-----|:-----------|
+| keyId     | Guid | The unique identifier for the password. Required. |
 
 
 
@@ -62,34 +54,42 @@ If successful, this action returns a `204 No Content` response code.
 
 ## Examples
 
+The following is example shows how to call this API.
+
 ### Request
 
 The following example shows a request.
-<!-- {
-  "blockType": "request",
-  "name": "agentidentityblueprintthis.removepassword"
-}
--->
-``` http
-POST https://graph.microsoft.com/beta** Entity URI for microsoft.graph.agentIdentityBlueprint not found/removePassword
-Content-Type: application/json
+
+```http
+POST https://graph.microsoft.com/beta/applications/{id}/Microsoft.Graph.AgentIdentityBlueprint/removePassword
+Content-type: application/json
 
 {
-  "keyId": "Guid"
+    "keyId": "f0b0b335-1d71-4883-8f98-567911bfdca6"
 }
 ```
-
 
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
-  "blockType": "response",
-  "truncated": true
-}
--->
-``` http
+  "blockType": "response"
+} -->
+
+```http
 HTTP/1.1 204 No Content
 ```
+
+<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
+2019-02-04 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "application: removePassword",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->
+
+
 

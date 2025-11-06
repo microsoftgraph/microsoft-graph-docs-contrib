@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Remove a key credential from an agent identity blueprint. This method along with [addKey](agentidentityblueprint-addkey.md) can be used to automate rolling its expiring keys.
 
 ## Permissions
 
@@ -29,12 +29,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
-<!-- {
-  "blockType": "ignored"
-}
--->
 ``` http
-POST ** Entity URI for microsoft.graph.agentIdentityBlueprint not found/removeKey
+POST /applications/{id}/Microsoft.Graph.AgentIdentityBlueprint/removeKey
 ```
 
 ## Request headers
@@ -46,15 +42,12 @@ POST ** Entity URI for microsoft.graph.agentIdentityBlueprint not found/removeKe
 
 ## Request body
 
-In the request body, supply a JSON representation of the parameters.
+In the request body, provide the following required properties.
 
-The following table lists the parameters that are required when you call this action.
-
-|Parameter|Type|Description|
-|:---|:---|:---|
-|keyId|Guid|**TODO: Add Description**|
-|proof|String|**TODO: Add Description**|
-
+| Property    | Type | Description|
+|:----------|:-----|:-----------|
+| keyId     | Guid | The unique identifier for the password.|
+| proof | String | A self-signed JWT token used as a proof of possession of the existing keys. This JWT token must be signed using the private key of one of the application's existing valid certificates. The token should contain the following claims:<ul><li>**aud**: Audience needs to be `00000002-0000-0000-c000-000000000000`.</li><li>**iss**: Issuer needs to be the ID of the **application** that initiates the request.</li><li>**nbf**: Not before time.</li><li>**exp**: Expiration time should be the value of **nbf** + 10 minutes.</li></ul><br>For steps to generate this proof of possession token, see [Generating proof of possession tokens for rolling keys](/graph/application-rollkey-prooftoken).|
 
 
 ## Response
@@ -72,7 +65,7 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta** Entity URI for microsoft.graph.agentIdentityBlueprint not found/removeKey
+POST https://graph.microsoft.com/beta/applications/{id}/Microsoft.Graph.AgentIdentityBlueprint/removeKey
 Content-Type: application/json
 
 {

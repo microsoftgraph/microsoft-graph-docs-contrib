@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-DELETE ** Entity URI for microsoft.graph.agentIdentityBlueprint not found
+DELETE /applications/{id}/Microsoft.Graph.AgentIdentityBlueprint
 ```
 
 ## Request headers
@@ -62,7 +62,7 @@ The following example shows a request.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta** Entity URI for microsoft.graph.agentIdentityBlueprint not found
+DELETE https://graph.microsoft.com/beta/applications/{id}/Microsoft.Graph.AgentIdentityBlueprint
 ```
 
 

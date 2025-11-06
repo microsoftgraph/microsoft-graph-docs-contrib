@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [application](../resources/application.md) object if it doesn't exist, or update the properties of an existing [application](../resources/application.md) object.
+Create a new [agent identity blueprint](../resources/agentidentityblueprint.md) object if it doesn't exist, or update the properties of an existing object.
 
 > [!IMPORTANT]
 > Using PATCH to set [**passwordCredential**](../resources/passwordcredential.md) is not supported. Use the [addPassword](./application-addpassword.md) and [removePassword](./application-removepassword.md) methods to update the password or secret for an application.
@@ -35,7 +35,7 @@ To create or update an application, specify the **uniqueName** client-provided a
 
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /applications(uniqueName='{uniqueName}')
+PATCH /applications(uniqueName='{uniqueName}')/Microsoft.Graph.AgentIdentityBlueprint
 ```
 
 ## Request headers
@@ -47,27 +47,22 @@ PATCH /applications(uniqueName='{uniqueName}')
 
 ## Request body
 
-In the request body, supply a JSON representation of the [application](../resources/application.md) object. The request body must contain  **displayName**, which is a required property. Specify other writable properties as necessary for your application, for creation or update.
+In the request body, supply a JSON representation of the [agent identity blueprint](../resources/agentidentityblueprint.md) object. The request body must contain  **displayName**, which is a required property. Specify other writable properties as necessary for your application, for creation or update.
 
 ## Response
 
-If an application object with **uniqueName** doesn't exist, this method returns a `201 Created` response code and a new [application](../resources/application.md) object in the response body. The application is assigned the uniqueName value.
+If an object with **uniqueName** doesn't exist, this method returns a `201 Created` response code and a new agent identity blueprint object in the response body. The application is assigned the uniqueName value.
 
-If an application object with **uniqueName** doesn't exist and the `Prefer: create-if-missing` header is *not* specified, this method returns a `404 Not Found` error code.
+If an object with **uniqueName** doesn't exist and the `Prefer: create-if-missing` header is *not* specified, this method returns a `404 Not Found` error code.
 
-If an application object with **uniqueName** already exists, this method updates the [application](../resources/application.md) object and returns a `204 No Content` response code.
+If an application object with **uniqueName** already exists, this method updates the object and returns a `204 No Content` response code.
 
 ## Examples
-
-### Example 1: Create a new application if it doesn't exist
-
-The following example creates an application because an application with the specified **uniqueName** value doesn't exist.
 
 #### Request
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "upsert_application_create"
@@ -75,7 +70,7 @@ The following example shows a request.
 -->
 
 ``` http
-PATCH https://graph.microsoft.com/beta/applications(uniqueName='app-65278')
+PATCH https://graph.microsoft.com/beta/applications(uniqueName='app-65278')/Microsoft.Graph.AgentIdentityBlueprint
 Content-Type: application/json
 Prefer: create-if-missing
 
@@ -83,32 +78,6 @@ Prefer: create-if-missing
   "displayName": "Display name"
 }
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/upsert-application-create-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/upsert-application-create-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/upsert-application-create-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/upsert-application-create-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/upsert-application-create-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/upsert-application-create-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### Response
 
@@ -130,18 +99,13 @@ Content-type: application/json
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#applications/$entity",
     "id": "03ef14b0-ca33-4840-8f4f-d6e91916010e",
     "deletedDateTime": null,
-    "isFallbackPublicClient": null,
     "appId": "631a96bc-a705-4eda-9f99-fdaf9f54f6a2",
-    "applicationTemplateId": null,
     "identifierUris": [],
     "createdDateTime": "2019-09-17T19:10:35.2742618Z",
     "displayName": "Display name",
-    "isDeviceOnlyAuthSupported": null,
     "groupMembershipClaims": null,
     "optionalClaims": null,
-    "addIns": [],
     "publisherDomain": "contoso.onmicrosoft.com",
-    "samlMetadataUrl": "https://graph.microsoft.com/2h5hjaj542de/app",
     "signInAudience": "AzureADandPersonalMicrosoftAccount",
     "tags": [],
     "tokenEncryptionKeyId": null,
@@ -153,9 +117,6 @@ Content-type: application/json
         "preAuthorizedApplications": []
     },
     "appRoles": [],
-    "publicClient": {
-        "redirectUris": []
-    },
     "info": {
         "termsOfServiceUrl": null,
         "supportUrl": null,
@@ -164,12 +125,7 @@ Content-type: application/json
         "logoUrl": null
     },
     "keyCredentials": [],
-    "parentalControlSettings": {
-        "countriesBlockedForMinors": [],
-        "legalAgeGroupRule": "Allow"
-    },
     "passwordCredentials": [],
-    "requiredResourceAccess": [],
     "uniqueName": "app-65278",
     "web": {
         "redirectUris": [],
@@ -180,68 +136,5 @@ Content-type: application/json
             "enableAccessTokenIssuance": false
         }
     }, 
-    "windows" : null
 }
-```
-
-### Example 2: Update an existing application
-
-The following example updates the application because an application with the specified **uniqueName** value exists.
-
-#### Request
-
-The following example shows a request.
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "application_upsert_update"
-}
--->
-
-``` http
-PATCH https://graph.microsoft.com/beta/applications(uniqueName='app-65278')
-Content-Type: application/json
-Prefer: create-if-missing
-
-{
-  "displayName": "Display name"
-}
-```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/application-upsert-update-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/application-upsert-update-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/application-upsert-update-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/application-upsert-update-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/application-upsert-update-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/application-upsert-update-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-#### Response
-
-The following example shows the response.
-<!-- {
-  "blockType": "response"
-}
--->
-
-``` http
-HTTP/1.1 204 No Content
 ```

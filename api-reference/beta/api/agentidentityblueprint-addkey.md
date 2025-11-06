@@ -14,7 +14,17 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Add a key credential to an agent identity blueprint. This method, along with [removeKey](agentidentityblueprint-removekey.md), can be used to automate rolling its expiring keys.
+
+> [!NOTE]
+>
+> You should only provide the public key value when adding a certificate credential to your application. Adding a private key certificate to your application risks compromising the application.
+
+As part of the request validation for this method, a proof of possession of an existing key is verified before the action can be performed. 
+
+Applications that don't have any existing valid certificates (no certificates have been added yet, or all certificates have expired), won't be able to use this service action. You can use the [Update agent identity blueprint](../api/agentidentityblueprint-update.md) operation to perform an update instead.
+
+
 
 ## Permissions
 
@@ -34,7 +44,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-POST ** Entity URI for microsoft.graph.agentIdentityBlueprint not found/addKey
+POST /applications/{id}/Microsoft.Graph.AgentIdentityBlueprint/addKey
 ```
 
 ## Request headers
@@ -46,15 +56,13 @@ POST ** Entity URI for microsoft.graph.agentIdentityBlueprint not found/addKey
 
 ## Request body
 
-In the request body, supply a JSON representation of the parameters.
+In the request body, supply a JSON representation of the parameters. The following table lists the parameters that are required when you call this action.
 
-The following table lists the parameters that are required when you call this action.
-
-|Parameter|Type|Description|
-|:---|:---|:---|
-|keyCredential|[keyCredential](../resources/keycredential.md)|**TODO: Add Description**|
-|passwordCredential|[passwordCredential](../resources/passwordcredential.md)|**TODO: Add Description**|
-|proof|String|**TODO: Add Description**|
+| Property       | Type    |Description|
+|:---------------|:--------|:----------|
+| keyCredential | [keyCredential](../resources/keycredential.md) | The new application key credential to add. The __type__, __usage__ and __key__ are required properties for this usage. Supported key types are:<br><ul><li>`AsymmetricX509Cert`: The usage must be `Verify`.</li><li>`X509CertAndPassword`: The usage must be `Sign`</li></ul>|
+| passwordCredential | [passwordCredential](../resources/passwordcredential.md) | Only __secretText__ is required to be set which should contain the password for the key. This property is required only for keys of type `X509CertAndPassword`. Set it to `null` otherwise.|
+| proof | String | A self-signed JWT token used as a proof of possession of the existing keys. This JWT token must be signed using the private key of one of the application's existing valid certificates. The token should contain the following claims:<ul><li>**aud**: Audience needs to be `00000002-0000-0000-c000-000000000000`.</li><li>**iss**: Issuer needs to be the ID of the **application** that initiates the request.</li><li>**nbf**: Not before time.</li><li>**exp**: Expiration time should be the value of **nbf** + 10 minutes.</li></ul><br>For steps to generate this proof of possession token, see [Generating proof of possession tokens for rolling keys](/graph/application-rollkey-prooftoken). For more information about the claim types, see [Claims payload](/azure/active-directory/develop/active-directory-certificate-credentials).|
 
 
 

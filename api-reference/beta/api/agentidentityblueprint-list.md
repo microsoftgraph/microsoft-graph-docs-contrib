@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the agentIdentityBlueprint objects and their properties.
+Get a list of the agentIdentityBlueprint objects and their properties. Does not return other types of application objects.
 
 ## Permissions
 
@@ -34,12 +34,16 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET ** Collection URI for microsoft.graph.agentIdentityBlueprint not found
+GET /applications/Microsoft.Graph.AgentIdentityBlueprint
 ```
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$count`, `$expand`, `$filter`, `$orderby`, `$search`, `$select`, and `$top` [OData query parameters](/graph/query-parameters) to help customize the response. The default and maximum page size is 100 agent identity objects. Some queries are supported only when you use the **ConsistencyLevel** header set to `eventual` and `$count`. For more information, see [Advanced query capabilities on directory objects](/graph/aad-advanced-queries).
+
+By default, this API doesn't return the value of the **key** thumbprint in the **keyCredentials** property when listing all applications. To retrieve the **key** thumbprint, the **keyCredentials** property must be specified in a `$select` query. For example, `$select=id,appId,keyCredentials`.
+
+The use of `$select` to get **keyCredentials** for applications has a throttling limit of 150 requests per minute for every tenant.
 
 ## Request headers
 
@@ -66,7 +70,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta** Collection URI for microsoft.graph.agentIdentityBlueprint not found
+GET https://graph.microsoft.com/beta/applications/Microsoft.Graph.AgentIdentityBlueprint
 ```
 
 
@@ -93,26 +97,12 @@ Content-Type: application/json
       "api": {
         "@odata.type": "microsoft.graph.apiApplication"
       },
-      "appCategory": "String",
-      "appData": "String",
       "appId": "String",
-      "appMetadata": {
-        "@odata.type": "microsoft.graph.appMetadata"
-      },
       "appRoles": [
         {
           "@odata.type": "microsoft.graph.appRole"
         }
       ],
-      "authenticationBehaviors": {
-        "@odata.type": "microsoft.graph.authenticationBehaviors"
-      },
-      "authenticationBehaviorsInternal": {
-        "@odata.type": "microsoft.graph.Dictionary"
-      },
-      "billingInformation": {
-        "@odata.type": "microsoft.graph.billingInformation"
-      },
       "certification": {
         "@odata.type": "microsoft.graph.certification"
       },
@@ -120,103 +110,41 @@ Content-Type: application/json
       "createdDateTime": "String (timestamp)",
       "description": "String",
       "disabledByMicrosoftStatus": "String",
-      "isFallbackPublicClient": "Boolean",
-      "isDisabled": "Boolean",
       "identifierUris": [
         "String"
       ],
-      "defaultRedirectUri": "String",
       "displayName": "String",
-      "expectsForwardableIdTokens": "Boolean",
       "groupMembershipClaims": "String",
       "info": {
         "@odata.type": "microsoft.graph.informationalUrl"
       },
-      "isDeviceOnlyAuthSupported": "Boolean",
-      "isManagementRestricted": "Boolean",
       "keyCredentials": [
         {
           "@odata.type": "microsoft.graph.keyCredential"
         }
       ],
-      "legacyAllowPassthroughUsers": "Boolean",
-      "lifecycle": {
-        "@odata.type": "microsoft.graph.lifecycle"
-      },
       "logo": "Stream",
-      "managerApplications": [
-        "Guid"
-      ],
-      "microsoftPolicyGroup": "Boolean",
-      "migrationStatus": {
-        "@odata.type": "microsoft.graph.appMigrationStatus"
-      },
-      "msaAppId": "String",
-      "nativeAuthenticationApisEnabled": "String",
-      "notes": "String",
       "optionalClaims": {
         "@odata.type": "microsoft.graph.optionalClaims"
-      },
-      "parentalControlSettings": {
-        "@odata.type": "microsoft.graph.parentalControlSettings"
       },
       "passwordCredentials": [
         {
           "@odata.type": "microsoft.graph.passwordCredential"
         }
       ],
-      "publicClient": {
-        "@odata.type": "microsoft.graph.publicClientApplication"
-      },
       "publisherDomain": "String",
-      "requestSignatureVerification": {
-        "@odata.type": "microsoft.graph.requestSignatureVerification"
-      },
-      "requiredResourceAccess": [
-        {
-          "@odata.type": "microsoft.graph.requiredResourceAccess"
-        }
-      ],
-      "riskLevelThreat": {
-        "@odata.type": "microsoft.graph.applicationRiskLevelThreat"
-      },
-      "samlMetadataUrl": "String",
       "serviceManagementReference": "String",
-      "servicePrincipalLifecyclePolicy": "String",
-      "servicePrincipalLockConfiguration": {
-        "@odata.type": "microsoft.graph.servicePrincipalLockConfiguration"
-      },
-      "serviceTreeId": "String",
-      "serviceType": "String",
       "signInAudience": "String",
-      "signInAudienceRestrictions": {
-        "@odata.type": "microsoft.graph.signInAudienceRestrictionsBase"
-      },
-      "spa": {
-        "@odata.type": "microsoft.graph.spaApplication"
-      },
       "tags": [
         "String"
       ],
-      "targetScope": "String",
       "tokenEncryptionKeyId": "Guid",
-      "trustedSubjectNameAndIssuers": [
-        {
-          "@odata.type": "microsoft.graph.trustedSubjectNameAndIssuer"
-        }
-      ],
       "uniqueName": "String",
       "verifiedPublisher": {
         "@odata.type": "microsoft.graph.verifiedPublisher"
       },
       "web": {
         "@odata.type": "microsoft.graph.webApplication"
-      },
-      "windows": {
-        "@odata.type": "microsoft.graph.windowsApplication"
-      },
-      "onPremisesPublishing": {
-        "@odata.type": "microsoft.graph.onPremisesPublishing"
       }
     }
   ]

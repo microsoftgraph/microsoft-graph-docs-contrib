@@ -66,81 +66,38 @@ If successful, this method returns a `204 No content` response code.
 
 ## Examples
 
-The following is example shows how to call this API.
-
 ### Request
 
 The following example shows a request.
-
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "application_removekey"
-}-->
-
-```http
-POST https://graph.microsoft.com/beta/applications/{id}/removeKey
+  "name": "agentidentityblueprintthis.removekey"
+}
+-->
+``` http
+POST https://graph.microsoft.com/beta** Entity URI for microsoft.graph.agentIdentityBlueprint not found/removeKey
 Content-Type: application/json
 
 {
-    "keyId": "f0b0b335-1d71-4883-8f98-567911bfdca6",
-    "proof":"eyJ0eXAiOiJ..."
+  "keyId": "Guid",
+  "proof": "String"
 }
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/application-removekey-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/application-removekey-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/application-removekey-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/application-removekey-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/application-removekey-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/application-removekey-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/application-removekey-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### Response
 
 The following example shows the response.
-
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true
-} -->
-
-```http
+}
+-->
+``` http
 HTTP/1.1 204 No Content
 ```
 
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "application: removeKey",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->
 
 
 
