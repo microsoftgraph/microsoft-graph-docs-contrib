@@ -137,7 +137,7 @@ Content-Type: application/json
 
 {
   "id": "1",
-  "@deprecated.GrantedToIdentities": "GrantedToIdentities has been deprecated. Refer to GrantedToIdentitiesV2",
+  "@deprecated.GrantedToIdentities": "GrantedToIdentities has been deprecated. Refer to GrantedToV2",
   "roles": [
     "write"
   ],
@@ -149,7 +149,7 @@ Content-Type: application/json
       }
     }
   ],
-  "grantedToIdentitiesV2": [
+  "grantedToV2": [
     {
       "application": {
         "id": "89ea5c94-7736-4e25-95ad-3fa95f62b66e",
@@ -248,7 +248,7 @@ Content-Type: application/json
       }
     }
   ],
-  "grantedToIdentitiesV2": [
+  "grantedToV2": [
     {
       "siteGroup": {
         "id": "10",
