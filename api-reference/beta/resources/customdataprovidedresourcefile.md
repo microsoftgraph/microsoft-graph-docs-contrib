@@ -24,9 +24,9 @@ Represents a file that was uploaded in a [customDataProvidedResourceUploadSessio
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|name|String|**TODO: Add Description**|
-|size|Int64|**TODO: Add Description**|
-|uploadedDateTime|DateTimeOffset|**TODO: Add Description**|
+|name|String|Name of the file that was uploaded.|
+|size|Int64|Size of the uploaded file in bytes.|
+|uploadedDateTime|DateTimeOffset|Time at which the file was uploaded.|
 
 ## Relationships
 None.
