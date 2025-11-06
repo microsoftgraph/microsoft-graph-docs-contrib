@@ -98,8 +98,8 @@ Content-Type: application/json
       "description": "All users at the company",
       "displayName": "All Users",
       "groupTypes": [],
-      "mailEnabled": false,`
-      "securityEnabled": true,
+      "mailEnabled": false,
+      "securityEnabled": true
     }
   ]
 }

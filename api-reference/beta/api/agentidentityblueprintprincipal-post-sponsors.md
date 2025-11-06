@@ -79,18 +79,10 @@ Content-Type: application/json
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.directoryObject"
+  "blockType": "response"
 }
 -->
 ``` http
 HTTP/1.1 204 No Content
-Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.directoryObject",
-  "id": "a6c034b8-621b-dee3-6abb-52cbce801fe9"
-}
 ```
 
