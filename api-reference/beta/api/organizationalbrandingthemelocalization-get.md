@@ -43,6 +43,7 @@ To retrieve String data types, such as **signInPageText** and **usernameHintText
 -->
 ``` http
 GET /organization/{organizationId}/branding/themes/{organizationalBrandingThemeId}/localizations/{organizationalBrandingThemeLocalizationId}
+```
 
 ## Optional query parameters
 
