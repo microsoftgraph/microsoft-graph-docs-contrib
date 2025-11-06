@@ -1,10 +1,10 @@
 ---
 title: "Get agentIdentityBlueprintPrincipal"
 description: "Read the properties and relationships of agentIdentityBlueprintPrincipal object."
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+author: "zallison22"
 ms.date: 10/27/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 
@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Read the properties and relationships of [agentIdentityBlueprintPrincipal](../resources/agentidentityblueprintprincipal.md) object.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -29,23 +31,30 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
-<!-- {
-  "blockType": "ignored"
-}
--->
-``` http
-GET /riskyAgentIdentityBlueprintPrincipal/agentIdentityBlueprintPrincipal
+You can address the agent identity blueprint principal using either its **id** or **appId**.
+<!-- { "blockType": "ignored" } -->
+```http
+GET /servicePrincipals/{id}/Microsoft.Graph.AgentIdentityBlueprintPrincipal
+GET /servicePrincipals(appId='{appId}')/Microsoft.Graph.AgentIdentityBlueprintPrincipal
 ```
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$count`, `$expand`, `$filter`, `$orderby`, `$search`, `$select`, and `$top` [OData query parameters](/graph/query-parameters) to help customize the response. Some queries are supported only when you use the **ConsistencyLevel** header set to `eventual` and `$count`. For more information, see [Advanced query capabilities on directory objects](/graph/aad-advanced-queries).
+
+By default, this API doesn't return the public key value of the **key** in the **keyCredentials** property unless **keyCredentials** is specified in a `$select` query.
+For example, `$select=id,appId,keyCredentials`.
+
+The use of `$select` to get **keyCredentials** for agent blueprint principals has a throttling limit of 150 requests per minute for every tenant.
 
 ## Request headers
 
-|Name|Description|
-|:---|:---|
+| Name           | Description                |
+|:---------------|:---------------------------|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+| Accept-Language| Language code. Optional.   |
+
+Providing the **Accept-Language** header with a supported language code, such as `es-ES` or `de-DE`, will return localized values where available. Note that the header is not supported for [list operations](serviceprincipal-list.md).
 
 ## Request body
 
@@ -66,7 +75,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/riskyAgentIdentityBlueprintPrincipal/agentIdentityBlueprintPrincipal
+GET https://graph.microsoft.com/beta/servicePrincipals/{id}/Microsoft.Graph.AgentIdentityBlueprintPrincipal
 ```
 
 
@@ -85,116 +94,27 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.agentIdentityBlueprintPrincipal",
-    "id": "4b533f8a-90fa-b3df-a331-c48ebdd7a121",
-    "deletedDateTime": "String (timestamp)",
-    "passwordSingleSignOnSettings": {
-      "@odata.type": "microsoft.graph.passwordSingleSignOnSettings"
-    },
-    "accountEnabled": "Boolean",
-    "addIns": [
-      {
-        "@odata.type": "microsoft.graph.addIn"
-      }
-    ],
-    "alternativeNames": [
-      "String"
-    ],
-    "api": {
-      "@odata.type": "microsoft.graph.apiServicePrincipal"
-    },
-    "appCategory": "String",
-    "appData": "String",
-    "appDescription": "String",
-    "appDisplayName": "String",
-    "appId": "String",
-    "appMetadata": {
-      "@odata.type": "microsoft.graph.appMetadata"
-    },
-    "applicationTemplateId": "String",
-    "appOwnerOrganizationId": "Guid",
-    "appRoleAssignmentRequired": "Boolean",
-    "assignmentRequiredForPrincipalTypes": "String",
-    "appRoles": [
-      {
-        "@odata.type": "microsoft.graph.appRole"
-      }
-    ],
-    "certification": {
-      "@odata.type": "microsoft.graph.certification"
-    },
-    "createdByAppId": "String",
-    "customSecurityAttributes": {
-      "@odata.type": "microsoft.graph.customSecurityAttributeValue"
-    },
-    "description": "String",
-    "disabledByMicrosoftStatus": "String",
-    "displayName": "String",
-    "errorUrl": "String",
-    "hasPermissionClassifications": "Boolean",
-    "homepage": "String",
+    "@odata.type": "Microsoft.Graph.AgentIdentityBlueprintPrincipal",
+    "id": "f7c938db-8c3d-4d04-937b-456c3242ed95",
+    "appId": "1d8b4e28-7e5e-4a9f-8e8c-0fa3b7d70e7e",
+    "createdDateTime": "2019-09-17T19:10:35.2742618Z",
+    "accountEnabled": true,
+    "appDisplayName": "My Sample App",
+    "appOwnerOrganizationId": "65415bb1-9267-4313-bbf5-ae259732ee12",
+    "appRoleAssignmentRequired": false,
+    "appRoles": [],
+    "disabledByMicrosoftStatus": null,
     "info": {
-      "@odata.type": "microsoft.graph.informationalUrl"
+        "termsOfServiceUrl": null,
+        "supportUrl": null,
+        "privacyStatementUrl": null,
+        "marketingUrl": null,
+        "logoUrl": null
     },
-    "isManagementRestricted": "Boolean",
-    "keyCredentials": [
-      {
-        "@odata.type": "microsoft.graph.keyCredential"
-      }
-    ],
-    "lifecycle": {
-      "@odata.type": "microsoft.graph.lifecycle"
-    },
-    "loginUrl": "String",
-    "logoutUrl": "String",
-    "managedIdentityResourceId": "String",
-    "microsoftPolicyGroup": "Boolean",
-    "notes": "String",
-    "notificationEmailAddresses": [
-      "String"
-    ],
-    "publishedPermissionScopes": [
-      {
-        "@odata.type": "microsoft.graph.permissionScope"
-      }
-    ],
-    "passwordCredentials": [
-      {
-        "@odata.type": "microsoft.graph.passwordCredential"
-      }
-    ],
-    "preferredTokenSigningKeyEndDateTime": "String (timestamp)",
-    "preferredTokenSigningKeyThumbprint": "String",
-    "preferredSingleSignOnMode": "String",
-    "publisherName": "String",
-    "replyUrls": [
-      "String"
-    ],
-    "resourceSpecificApplicationPermissions": [
-      {
-        "@odata.type": "microsoft.graph.resourceSpecificPermission"
-      }
-    ],
-    "samlMetadataUrl": "String",
-    "samlSingleSignOnSettings": {
-      "@odata.type": "microsoft.graph.samlSingleSignOnSettings"
-    },
-    "samlSLOBindingType": "String",
-    "servicePrincipalNames": [
-      "String"
-    ],
-    "servicePrincipalType": "String",
-    "signInAudience": "String",
-    "tags": [
-      "String"
-    ],
-    "tokenEncryptionKeyId": "Guid",
-    "tokensRevocationDateTime": "String (timestamp)",
-    "verifiedPublisher": {
-      "@odata.type": "microsoft.graph.verifiedPublisher"
-    }
-  }
+    "oauth2PermissionScopes": [],
+    "servicePrincipalType": "Application",
+    "tags": [],
+    "verifiedPublisher": null
 }
 ```
 

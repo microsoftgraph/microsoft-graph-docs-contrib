@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-POST /servicePrincipals/{servicePrincipalsId}/owners/$ref
+POST /servicePrincipals/{id}/owners/$ref
 ```
 
 ## Request headers
@@ -72,7 +72,7 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/servicePrincipals/{servicePrincipalsId}/owners/$ref
+POST https://graph.microsoft.com/beta/servicePrincipals/{id}/owners/$ref
 Content-Type: application/json
 
 {

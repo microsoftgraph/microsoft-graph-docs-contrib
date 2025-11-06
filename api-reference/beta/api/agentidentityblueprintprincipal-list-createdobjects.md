@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add a useful description.**
+Returns the list of directory objects that were created by this agent identity blueprint principal.
 
 ## Permissions
 
@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /servicePrincipals/{servicePrincipalsId}/createdObjects
+GET /servicePrincipals/{id}/createdObjects
 ```
 
 ## Optional query parameters
@@ -66,7 +66,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/servicePrincipals/{servicePrincipalsId}/createdObjects
+GET https://graph.microsoft.com/beta/servicePrincipals/{id}/createdObjects
 ```
 
 

@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-PATCH /riskyAgentIdentityBlueprintPrincipal/agentIdentityBlueprintPrincipal
+PATCH /servicePrincipals/{id}/graph.agentIdentityBlueprintPrincipal
 ```
 
 ## Request headers
@@ -46,195 +46,28 @@ PATCH /riskyAgentIdentityBlueprintPrincipal/agentIdentityBlueprintPrincipal
 
 ## Request body
 
-[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
-
-
-**TODO: Remove properties that don't apply**
-|Property|Type|Description|
-|:---|:---|:---|
-|deletedDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [directoryObject](../resources/directoryobject.md). Optional.|
-|passwordSingleSignOnSettings|[passwordSingleSignOnSettings](../resources/passwordsinglesignonsettings.md)|**TODO: Add Description** Inherited from [servicePrincipal](../resources/serviceprincipal.md). Optional.|
-|accountEnabled|Boolean|**TODO: Add Description** Inherited from [servicePrincipal](../resources/serviceprincipal.md). Optional.|
-|addIns|[addIn](../resources/addin.md) collection|**TODO: Add Description** Inherited from [servicePrincipal](../resources/serviceprincipal.md). Required.|
-|alternativeNames|String collection|**TODO: Add Description** Inherited from [servicePrincipal](../resources/serviceprincipal.md). Required.|
-|api|[apiServicePrincipal](../resources/apiserviceprincipal.md)|**TODO: Add Description** Inherited from [servicePrincipal](../resources/serviceprincipal.md). Optional.|
-|appCategory|appCategoryState|**TODO: Add Description** Inherited from [servicePrincipal](../resources/serviceprincipal.md). The possible values are: `mdm`, `roamingSettingsSync`, `vpn`, `p2p`, `unknownFutureValue`. Optional.|
-|appData|String|**TODO: Add Description** Inherited from [servicePrincipal](../resources/serviceprincipal.md). Optional.|
-|appDescription|String|**TODO: Add Description** Inherited from [servicePrincipal](../resources/serviceprincipal.md). Optional.|
-|appDisplayName|String|**TODO: Add Description** Inherited from [servicePrincipal](../resources/serviceprincipal.md). Optional.|
-|appId|String|**TODO: Add Description** Inherited from [servicePrincipal](../resources/serviceprincipal.md). Optional.|
-|appMetadata|[appMetadata](../resources/appmetadata.md)|**TODO: Add Description** Inherited from [servicePrincipal](../resources/serviceprincipal.md). Optional.|
-|applicationTemplateId|String|**TODO: Add Description** Inherited from [servicePrincipal](../resources/serviceprincipal.md). Optional.|
-|appOwnerOrganizationId|Guid|**TODO: Add Description** Inherited from [servicePrincipal](../resources/serviceprincipal.md). Optional.|
-|appRoleAssignmentRequired|Boolean|**TODO: Add Description** Inherited from [servicePrincipal](../resources/serviceprincipal.md). Required.|
-|assignmentRequiredForPrincipalTypes|assignmentRequiredForPrincipalTypes|**TODO: Add Description** Inherited from [servicePrincipal](../resources/serviceprincipal.md). The possible values are: `none`, `appOnlyClientServicePrincipals`, `usersNotInTenant`, `guestUsers`, `memberUsers`, `unknownFutureValue`. Optional.|
-|appRoles|[appRole](../resources/approle.md) collection|**TODO: Add Description** Inherited from [servicePrincipal](../resources/serviceprincipal.md). Required.|
-|certification|[certification](../resources/certification.md)|**TODO: Add Description** Inherited from [servicePrincipal](../resources/serviceprincipal.md). Optional.|
-|createdByAppId|String|**TODO: Add Description** Inherited from [servicePrincipal](../resources/serviceprincipal.md). Optional.|
-|customSecurityAttributes|[customSecurityAttributeValue](../resources/customsecurityattributevalue.md)|**TODO: Add Description** Inherited from [servicePrincipal](../resources/serviceprincipal.md). Optional.|
-|description|String|**TODO: Add Description** Inherited from [servicePrincipal](../resources/serviceprincipal.md). Optional.|
-|disabledByMicrosoftStatus|String|**TODO: Add Description** Inherited from [servicePrincipal](../resources/serviceprincipal.md). Optional.|
-|displayName|String|**TODO: Add Description** Inherited from [servicePrincipal](../resources/serviceprincipal.md). Optional.|
-|errorUrl|String|**TODO: Add Description** Inherited from [servicePrincipal](../resources/serviceprincipal.md). Optional.|
-|hasPermissionClassifications|Boolean|**TODO: Add Description** Inherited from [servicePrincipal](../resources/serviceprincipal.md). Optional.|
-|homepage|String|**TODO: Add Description** Inherited from [servicePrincipal](../resources/serviceprincipal.md). Optional.|
-|info|[informationalUrl](../resources/informationalurl.md)|**TODO: Add Description** Inherited from [servicePrincipal](../resources/serviceprincipal.md). Optional.|
-|isManagementRestricted|Boolean|**TODO: Add Description** Inherited from [servicePrincipal](../resources/serviceprincipal.md). Optional.|
-|keyCredentials|[keyCredential](../resources/keycredential.md) collection|**TODO: Add Description** Inherited from [servicePrincipal](../resources/serviceprincipal.md). Required.|
-|lifecycle|[lifecycle](../resources/lifecycle.md)|**TODO: Add Description** Inherited from [servicePrincipal](../resources/serviceprincipal.md). Optional.|
-|loginUrl|String|**TODO: Add Description** Inherited from [servicePrincipal](../resources/serviceprincipal.md). Optional.|
-|logoutUrl|String|**TODO: Add Description** Inherited from [servicePrincipal](../resources/serviceprincipal.md). Optional.|
-|managedIdentityResourceId|String|**TODO: Add Description** Inherited from [servicePrincipal](../resources/serviceprincipal.md). Optional.|
-|microsoftPolicyGroup|Boolean|**TODO: Add Description** Inherited from [servicePrincipal](../resources/serviceprincipal.md). Optional.|
-|notes|String|**TODO: Add Description** Inherited from [servicePrincipal](../resources/serviceprincipal.md). Optional.|
-|notificationEmailAddresses|String collection|**TODO: Add Description** Inherited from [servicePrincipal](../resources/serviceprincipal.md). Required.|
-|publishedPermissionScopes|[permissionScope](../resources/permissionscope.md) collection|**TODO: Add Description** Inherited from [servicePrincipal](../resources/serviceprincipal.md). Required.|
-|passwordCredentials|[passwordCredential](../resources/passwordcredential.md) collection|**TODO: Add Description** Inherited from [servicePrincipal](../resources/serviceprincipal.md). Required.|
-|preferredTokenSigningKeyEndDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [servicePrincipal](../resources/serviceprincipal.md). Optional.|
-|preferredTokenSigningKeyThumbprint|String|**TODO: Add Description** Inherited from [servicePrincipal](../resources/serviceprincipal.md). Optional.|
-|preferredSingleSignOnMode|String|**TODO: Add Description** Inherited from [servicePrincipal](../resources/serviceprincipal.md). Optional.|
-|publisherName|String|**TODO: Add Description** Inherited from [servicePrincipal](../resources/serviceprincipal.md). Optional.|
-|replyUrls|String collection|**TODO: Add Description** Inherited from [servicePrincipal](../resources/serviceprincipal.md). Required.|
-|resourceSpecificApplicationPermissions|[resourceSpecificPermission](../resources/resourcespecificpermission.md) collection|**TODO: Add Description** Inherited from [servicePrincipal](../resources/serviceprincipal.md). Required.|
-|samlMetadataUrl|String|**TODO: Add Description** Inherited from [servicePrincipal](../resources/serviceprincipal.md). Optional.|
-|samlSingleSignOnSettings|[samlSingleSignOnSettings](../resources/samlsinglesignonsettings.md)|**TODO: Add Description** Inherited from [servicePrincipal](../resources/serviceprincipal.md). Optional.|
-|samlSLOBindingType|samlSLOBindingType|**TODO: Add Description** Inherited from [servicePrincipal](../resources/serviceprincipal.md). The possible values are: `httpRedirect`, `httpPost`, `unknownFutureValue`. Optional.|
-|servicePrincipalNames|String collection|**TODO: Add Description** Inherited from [servicePrincipal](../resources/serviceprincipal.md). Required.|
-|servicePrincipalType|String|**TODO: Add Description** Inherited from [servicePrincipal](../resources/serviceprincipal.md). Optional.|
-|signInAudience|String|**TODO: Add Description** Inherited from [servicePrincipal](../resources/serviceprincipal.md). Optional.|
-|tags|String collection|**TODO: Add Description** Inherited from [servicePrincipal](../resources/serviceprincipal.md). Required.|
-|tokenEncryptionKeyId|Guid|**TODO: Add Description** Inherited from [servicePrincipal](../resources/serviceprincipal.md). Optional.|
-|tokensRevocationDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [servicePrincipal](../resources/serviceprincipal.md). Optional.|
-|verifiedPublisher|[verifiedPublisher](../resources/verifiedpublisher.md)|**TODO: Add Description** Inherited from [servicePrincipal](../resources/serviceprincipal.md). Optional.|
-
-
+Provide the updated property values for the agent identity blueprint principal.
 
 ## Response
 
 If successful, this method returns a `200 OK` response code and an updated [agentIdentityBlueprintPrincipal](../resources/agentidentityblueprintprincipal.md) object in the response body.
 
-## Examples
+## Example
 
 ### Request
 
-The following example shows a request.
+The following example shows a request to disable an agent identity blueprint principal.
 <!-- {
   "blockType": "request",
   "name": "update_agentidentityblueprintprincipal"
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/riskyAgentIdentityBlueprintPrincipal/agentIdentityBlueprintPrincipal
+PATCH https://graph.microsoft.com/beta/servicePrincipals/{id}/graph.agentIdentityBlueprintPrincipal
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.agentIdentityBlueprintPrincipal",
-  "deletedDateTime": "String (timestamp)",
-  "passwordSingleSignOnSettings": {
-    "@odata.type": "microsoft.graph.passwordSingleSignOnSettings"
-  },
-  "accountEnabled": "Boolean",
-  "addIns": [
-    {
-      "@odata.type": "microsoft.graph.addIn"
-    }
-  ],
-  "alternativeNames": [
-    "String"
-  ],
-  "api": {
-    "@odata.type": "microsoft.graph.apiServicePrincipal"
-  },
-  "appCategory": "String",
-  "appData": "String",
-  "appDescription": "String",
-  "appDisplayName": "String",
-  "appId": "String",
-  "appMetadata": {
-    "@odata.type": "microsoft.graph.appMetadata"
-  },
-  "applicationTemplateId": "String",
-  "appOwnerOrganizationId": "Guid",
-  "appRoleAssignmentRequired": "Boolean",
-  "assignmentRequiredForPrincipalTypes": "String",
-  "appRoles": [
-    {
-      "@odata.type": "microsoft.graph.appRole"
-    }
-  ],
-  "certification": {
-    "@odata.type": "microsoft.graph.certification"
-  },
-  "createdByAppId": "String",
-  "customSecurityAttributes": {
-    "@odata.type": "microsoft.graph.customSecurityAttributeValue"
-  },
-  "description": "String",
-  "disabledByMicrosoftStatus": "String",
-  "displayName": "String",
-  "errorUrl": "String",
-  "hasPermissionClassifications": "Boolean",
-  "homepage": "String",
-  "info": {
-    "@odata.type": "microsoft.graph.informationalUrl"
-  },
-  "isManagementRestricted": "Boolean",
-  "keyCredentials": [
-    {
-      "@odata.type": "microsoft.graph.keyCredential"
-    }
-  ],
-  "lifecycle": {
-    "@odata.type": "microsoft.graph.lifecycle"
-  },
-  "loginUrl": "String",
-  "logoutUrl": "String",
-  "managedIdentityResourceId": "String",
-  "microsoftPolicyGroup": "Boolean",
-  "notes": "String",
-  "notificationEmailAddresses": [
-    "String"
-  ],
-  "publishedPermissionScopes": [
-    {
-      "@odata.type": "microsoft.graph.permissionScope"
-    }
-  ],
-  "passwordCredentials": [
-    {
-      "@odata.type": "microsoft.graph.passwordCredential"
-    }
-  ],
-  "preferredTokenSigningKeyEndDateTime": "String (timestamp)",
-  "preferredTokenSigningKeyThumbprint": "String",
-  "preferredSingleSignOnMode": "String",
-  "publisherName": "String",
-  "replyUrls": [
-    "String"
-  ],
-  "resourceSpecificApplicationPermissions": [
-    {
-      "@odata.type": "microsoft.graph.resourceSpecificPermission"
-    }
-  ],
-  "samlMetadataUrl": "String",
-  "samlSingleSignOnSettings": {
-    "@odata.type": "microsoft.graph.samlSingleSignOnSettings"
-  },
-  "samlSLOBindingType": "String",
-  "servicePrincipalNames": [
-    "String"
-  ],
-  "servicePrincipalType": "String",
-  "signInAudience": "String",
-  "tags": [
-    "String"
-  ],
-  "tokenEncryptionKeyId": "Guid",
-  "tokensRevocationDateTime": "String (timestamp)",
-  "verifiedPublisher": {
-    "@odata.type": "microsoft.graph.verifiedPublisher"
-  }
+  "accountEnabled": false,
 }
 ```
 
@@ -255,112 +88,7 @@ Content-Type: application/json
 {
   "@odata.type": "#microsoft.graph.agentIdentityBlueprintPrincipal",
   "id": "4b533f8a-90fa-b3df-a331-c48ebdd7a121",
-  "deletedDateTime": "String (timestamp)",
-  "passwordSingleSignOnSettings": {
-    "@odata.type": "microsoft.graph.passwordSingleSignOnSettings"
-  },
-  "accountEnabled": "Boolean",
-  "addIns": [
-    {
-      "@odata.type": "microsoft.graph.addIn"
-    }
-  ],
-  "alternativeNames": [
-    "String"
-  ],
-  "api": {
-    "@odata.type": "microsoft.graph.apiServicePrincipal"
-  },
-  "appCategory": "String",
-  "appData": "String",
-  "appDescription": "String",
-  "appDisplayName": "String",
-  "appId": "String",
-  "appMetadata": {
-    "@odata.type": "microsoft.graph.appMetadata"
-  },
-  "applicationTemplateId": "String",
-  "appOwnerOrganizationId": "Guid",
-  "appRoleAssignmentRequired": "Boolean",
-  "assignmentRequiredForPrincipalTypes": "String",
-  "appRoles": [
-    {
-      "@odata.type": "microsoft.graph.appRole"
-    }
-  ],
-  "certification": {
-    "@odata.type": "microsoft.graph.certification"
-  },
-  "createdByAppId": "String",
-  "customSecurityAttributes": {
-    "@odata.type": "microsoft.graph.customSecurityAttributeValue"
-  },
-  "description": "String",
-  "disabledByMicrosoftStatus": "String",
-  "displayName": "String",
-  "errorUrl": "String",
-  "hasPermissionClassifications": "Boolean",
-  "homepage": "String",
-  "info": {
-    "@odata.type": "microsoft.graph.informationalUrl"
-  },
-  "isManagementRestricted": "Boolean",
-  "keyCredentials": [
-    {
-      "@odata.type": "microsoft.graph.keyCredential"
-    }
-  ],
-  "lifecycle": {
-    "@odata.type": "microsoft.graph.lifecycle"
-  },
-  "loginUrl": "String",
-  "logoutUrl": "String",
-  "managedIdentityResourceId": "String",
-  "microsoftPolicyGroup": "Boolean",
-  "notes": "String",
-  "notificationEmailAddresses": [
-    "String"
-  ],
-  "publishedPermissionScopes": [
-    {
-      "@odata.type": "microsoft.graph.permissionScope"
-    }
-  ],
-  "passwordCredentials": [
-    {
-      "@odata.type": "microsoft.graph.passwordCredential"
-    }
-  ],
-  "preferredTokenSigningKeyEndDateTime": "String (timestamp)",
-  "preferredTokenSigningKeyThumbprint": "String",
-  "preferredSingleSignOnMode": "String",
-  "publisherName": "String",
-  "replyUrls": [
-    "String"
-  ],
-  "resourceSpecificApplicationPermissions": [
-    {
-      "@odata.type": "microsoft.graph.resourceSpecificPermission"
-    }
-  ],
-  "samlMetadataUrl": "String",
-  "samlSingleSignOnSettings": {
-    "@odata.type": "microsoft.graph.samlSingleSignOnSettings"
-  },
-  "samlSLOBindingType": "String",
-  "servicePrincipalNames": [
-    "String"
-  ],
-  "servicePrincipalType": "String",
-  "signInAudience": "String",
-  "tags": [
-    "String"
-  ],
-  "tokenEncryptionKeyId": "Guid",
-  "tokensRevocationDateTime": "String (timestamp)",
-  "verifiedPublisher": {
-    "@odata.type": "microsoft.graph.verifiedPublisher"
-  }
+  "accountEnabled": false,
 }
 ```
 

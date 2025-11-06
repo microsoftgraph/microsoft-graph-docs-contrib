@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an agent identity in an Entra ID directory. An agent identity is an account used by AI agents or services to authenticate within the Microsoft Entra ID ecosystem.
+Represents an agent identity in an Entra ID directory. An agent identity is an account used by AI agents to authenticate within the Microsoft Entra ID ecosystem.
 
 Inherits from [servicePrincipal](../resources/serviceprincipal.md).
 
@@ -23,11 +23,13 @@ This resource is an open type.
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
+|[List](../api/agentidentity-list.md)|[agentidentity](../resources/agentidentity.md) collection|Get a list of the agentidentity objects and their properties.|
+|[Create](../api/agentidentity-post.md)|[agentidentity](../resources/agentidentity.md)|Create a new agentidentity object.|
 |[Get](../api/agentidentity-get.md)|[agentIdentity](../resources/agentidentity.md)|Read the properties and relationships of [agentIdentity](../resources/agentidentity.md) object.|
 |[Update](../api/agentidentity-update.md)|[agentIdentity](../resources/agentidentity.md)|Update the properties of an agentIdentity object.|
-|[List appRoleAssignedTo](../api/agentidentity-list-approleassignedto.md)|[appRoleAssignment](../resources/approleassignment.md) collection|Get the users, groups, and agent identities assigned app roles for this agent identity.|
-|[List appRoleAssignments](../api/agentidentity-list-approleassignments.md)|[appRoleAssignment](../resources/approleassignment.md) collection|Get the app roles that this agent identity is assigned.|
-|[Create appRoleAssignment](../api/agentidentity-post-approleassignments.md)|[appRoleAssignment](../resources/approleassignment.md)|Create a new appRoleAssignment object.|
+|[List appRoleAssignedTo](../api/serviceprincipal-list-approleassignedto.md)|[appRoleAssignment](../resources/approleassignment.md) collection|Get the users, groups, and agent identities assigned app roles for this agent identity.|
+|[List appRoleAssignments](../api/serviceprincipal-list-approleassignments.md)|[appRoleAssignment](../resources/approleassignment.md) collection|Get the app roles that this agent identity is assigned.|
+|[Create appRoleAssignment](../api/serviceprincipal-post-approleassignments.md)|[appRoleAssignment](../resources/approleassignment.md)|Create a new appRoleAssignment object.|
 |[List memberOf](../api/agentidentity-list-memberof.md)|[directoryObject](../resources/directoryobject.md) collection|Get the groups that this agent identity is a direct member of.|
 |[List oauth2PermissionGrants](../api/agentidentity-list-oauth2permissiongrants.md)|[oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) collection|Get the delegated permission grants authorizing this agent identity to access an API on behalf of a signed-in user.|
 |[List ownedObjects](../api/agentidentity-list-ownedobjects.md)|[directoryObject](../resources/directoryobject.md) collection|Get directory objects owned by this agent identity.|
@@ -42,11 +44,12 @@ This resource is an open type.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
+|odata.type|String| `#microsoft.graph.agentIdentity`. Distinguishes this object as an agent identity. Can be used to identify this object as an agent identity, instead of another kind of service principal. |
 |accountEnabled|Boolean|`true` if the agent identity account is enabled; otherwise, `false`. If set to `false`, then no users are able to sign in to this app, even if they're assigned to it. Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
 |agentIdentityBlueprintId|String|The unique identifier of the agent identity blueprint that defines the configuration for this agent identity.|
-|createdByAppId|String|The **appId** of the Application used to create the Agent Identity. Read-only. Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
 |customSecurityAttributes|[customSecurityAttributeValue](../resources/customsecurityattributevalue.md)|An open complex type that holds the value of a custom security attribute that is assigned to a directory object. Nullable. Returned only on `$select`. Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
-|deletedDateTime|DateTimeOffset|The date and time the agent identity was deleted. Read-only. Inherited from [directoryObject](../resources/directoryobject.md).|
+|createdByAppId|String|The **appId** of the Application used to create the Agent Identity. Set internally by Microsoft Enctra ID. Read-only. Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
+|createdDateTime|DateTimeOffset|The date and time the agent identity was created. Read-only. Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
 |disabledByMicrosoftStatus|String|Specifies whether Microsoft has disabled the registered Agent Identity Blueprint. Possible values are: `null` (default value), `NotDisabled`, and `DisabledDueToViolationOfServicesAgreement` (reasons may include suspicious, abusive, or malicious activity, or a violation of the Microsoft Services Agreement). Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
 |displayName|String|The display name for the agent identity. Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
 |id|String|The unique identifier for the agent identity. Inherited from [directoryObject](../resources/directoryobject.md). Key. Not nullable. Read-only. Inherited from [entity](../resources/entity.md).|
@@ -80,6 +83,7 @@ The following JSON representation shows the resource type. Only a subset of all 
   "@odata.type": "#microsoft.graph.agentIdentity",
   "id": "String (identifier)",
   "accountEnabled": "Boolean",
+  "agentIdentityBlueprintId": "String",
   "createdByAppId": "String",
   "createdDateTime": "String (timestamp)",
   "disabledByMicrosoftStatus": "String",
@@ -87,8 +91,7 @@ The following JSON representation shows the resource type. Only a subset of all 
   "servicePrincipalType": "String",
   "tags": [
     "String"
-  ],
-  "agentIdentityBlueprintId": "String"
+  ]
 }
 ```
 

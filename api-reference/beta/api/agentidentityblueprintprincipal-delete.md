@@ -1,6 +1,6 @@
 ---
-title: "Remove owners"
-description: "Remove an owner from a AgentIdentity."
+title: "Delete agentIdentityBlueprintPrincipal"
+description: "Delete agentIdentityBlueprintPrincipal."
 author: "zallison22"
 ms.date: 10/27/2025
 ms.localizationpriority: medium
@@ -8,68 +8,65 @@ ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 
-# Remove owners
+# Delete agentIdentityBlueprintPrincipal
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Remove an owner from a [agentIdentityBlueprintPrincipal](../resources/agentidentityblueprintprincipal.md) object. As a recommended best practice, agent identity blueprint principals should have at least two owners.
+Delete a [agentIdentityBlueprintPrincipal](../resources/agentidentityblueprintprincipal.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
-
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "agentidentityblueprintprincipal-delete-owners-permissions"
-}
--->
-[!INCLUDE [permissions-table](../includes/permissions/agentidentityblueprintprincipal-delete-owners-permissions.md)]
+<!-- { "blockType": "permissions", "name": "agentidentityblueprintprincipal_delete" } -->
+[!INCLUDE [permissions-table](../includes/permissions/agentidentityblueprintprincipal-delete-permissions.md)]
 
 ## HTTP request
+You can address the agent identity blueprint principal using either its **id** or **appId**.
 
-<!-- { "blockType": "ignored" } -->
 ```http
-DELETE /servicePrincipals/{id}/Microsoft.Graph.AgentIdentityBlueprintPrincipal/owners/{id}/$ref
+DELETE /servicePrincipals/{id}/Microsoft.Graph.AgentIdentityBlueprintPrincipal
 ```
+```http
+DELETE /servicePrincipals(appId='{appId}')/Microsoft.Graph.AgentIdentityBlueprintPrincipal
+```
+
 ## Request headers
-| Name | Description|
-|:---- |:---------- |
+| Name       | Description|
+|:---------------|:--------|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
-Do not provide a request body.
+Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code.
+If successful, this method returns `204 No Content` response code. It doesn't return anything in the response body.
 
-## Example
-
+## Examples
 ### Request
+The following example shows a request.
 
-The following example shows the request.
 
 <!-- {
   "blockType": "request",
-  "name": "serviceprincipal_delete_owners"
+  "name": "delete_agentIdentityBlueprintPrincipal"
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/beta/servicePrincipals/{id}/Microsoft.Graph.AgentIdentityBlueprintPrincipal/owners/{id}/$ref
+DELETE https://graph.microsoft.com/beta/servicePrincipals/{id}/Microsoft.Graph.AgentIdentityBlueprintPrincipal
 ```
 
-
 ### Response
-
->**Note:** The response object shown here might be shortened for readability.
-
+The following example shows the response. 
 <!-- {
-  "blockType": "response"
+  "blockType": "response",
+  "truncated": true
 } -->
+
 ```http
 HTTP/1.1 204 No Content
 ```
@@ -79,7 +76,7 @@ HTTP/1.1 204 No Content
 <!--
 {
   "type": "#page.annotation",
-  "description": "Remove owner",
+  "description": "Delete agentIdentityBlueprintPrincipal",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
@@ -87,4 +84,6 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+
 

@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add a useful description.**
+Returns the list of sponsors for this principal.
 
 ## Permissions
 
@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET ** Collection URI for microsoft.graph.directoryObject not found
+GET /servicePrincipals/{id}/graph.agentIdentityBlueprintPrincipal/sponsors
 ```
 
 ## Optional query parameters
@@ -66,7 +66,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta** Collection URI for microsoft.graph.directoryObject not found
+GET https://graph.microsoft.com/beta/servicePrincipals/{id}/graph.agentIdentityBlueprintPrincipal/sponsors
 ```
 
 
