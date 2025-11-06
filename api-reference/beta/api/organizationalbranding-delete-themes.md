@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete an organizationalBrandingTheme object.
+Delete an [organizationalBrandingTheme](../resources/organizationalbrandingtheme.md) object.
 
 ## Permissions
 

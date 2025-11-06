@@ -35,7 +35,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
-To retrieve String data types, such as **signInPageText** and **usernameHintText**, use the GET method. To retrieve Stream data types, such as **bannerLogo** and **pageBackgroundImage**, use the GET method and specify a stream object. You can't retrieve Stream types with other data types in the same request.  
+To retrieve String data types, such as **signInPageText** and **usernameHintText**:
 
 <!-- {
   "blockType": "ignored"
@@ -43,16 +43,6 @@ To retrieve String data types, such as **signInPageText** and **usernameHintText
 -->
 ``` http
 GET /organization/{organizationId}/branding/themes/{organizationalBrandingThemeId}/localizations/{organizationalBrandingThemeLocalizationId}
-GET /organization/{organizationId}/branding/themes/{organizationalBrandingThemeId}/localizations/{organizationalBrandingThemeLocalizationId}/{Stream object type such as backgroundImage}
-```
-
-<!-- {
-  "blockType": "ignored"
-}
--->
-``` http
-GET /organization/{organizationId}/branding/themes/{organizationalBrandingThemeId}/localizations/{organizationalBrandingThemeLocalizationId}
-```
 
 ## Optional query parameters
 
@@ -77,7 +67,7 @@ If successful, this method returns a `200 OK` response code and an [organization
 
 ### Example 1: Get the localized branding theme for a specific locale (fr-FR) 
 
-##### Request
+#### Request
 
 The following example shows a request.
 <!-- {
@@ -90,7 +80,7 @@ GET https://graph.microsoft.com/beta/organization/84841066-274d-4ec0-a5c1-276be6
 ```
 
 
-### Response
+#### Response
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
@@ -150,7 +140,7 @@ Content-Type: application/json
 
 ### Example 2: Get the bannerLogo for the localized branding theme for a specific locale (fr-FR) 
 
-##### Request
+#### Request
 
 The following example shows a request.
 <!-- {
@@ -163,7 +153,7 @@ GET https://graph.microsoft.com/beta/organization/84841066-274d-4ec0-a5c1-276be6
 ```
 
 
-### Response
+#### Response
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.

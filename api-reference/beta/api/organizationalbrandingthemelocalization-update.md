@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Update an [organizationalBrandingThemeLocalization](../resources/organizationalbrandingthemelocalization.md) object.  
 
-To update String data types, such as signInPageText and usernameHintText, use the PATCH method. To update Stream data types, such as bannerLogo and pageBackgroundImage, use the PUT method. You can't update Stream types with other data types in the same request.  
+To update String data types, such as **signInPageText** and **usernameHintText**, use the PATCH method. To update Stream data types, such as **bannerLogo** and **pageBackgroundImage**, use the PUT method. You can't update Stream types with other data types in the same request.  
  
 
 ## Permissions
@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
-To update String data types, such as **signInPageText** and **usernameHintText**, use the PATCH method. To update Stream data types, such as **bannerLogo** and **pageBackgroundImage**, use the PUT method. You can't update Stream types with other data types in the same request.  
+To update String data types, such as **signInPageText** and **usernameHintText**:
 
 <!-- {
   "blockType": "ignored"
@@ -42,10 +42,6 @@ To update String data types, such as **signInPageText** and **usernameHintText**
 -->
 ``` http
 PATCH /organization/{organizationId}/branding/themes/{organizationalBrandingThemeId}/localizations/{organizationalBrandingThemeLocalizationId}
-PUT /organization/{organizationId}/branding/themes/{organizationalBrandingThemeId}/localizations/{organizationalBrandingThemeLocalizationId}/{Stream object type such as backgroundImage}
-```
-
-## Request headers
 
 |Name|Description|
 |:---|:---|

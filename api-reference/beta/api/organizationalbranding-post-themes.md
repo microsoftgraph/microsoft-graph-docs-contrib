@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new organizationalBrandingTheme object.
+Create a new [organizationalBrandingTheme](../resources/organizationalbrandingtheme.md) object.
 
 ## Permissions
 
@@ -101,7 +101,7 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.organizationalBrandingTheme",
-  "id": "88373343-0336-58fb-427c-003495dcd79d",
+  "id": "aaaabbbb-0000-cccc-1111-dddd2222eeee",
   "name": "ContosoTheme",
   "isDefaultTheme": true
 }

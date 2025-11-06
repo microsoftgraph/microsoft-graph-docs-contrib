@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new organizationalBrandingThemeLocalization object.
+Create a new [organizationalBrandingThemeLocalization](../resources/organizationalbrandingthemelocalization.md) object.
 
 ## Permissions
 
@@ -99,7 +99,7 @@ Content-Type: application/json
   "@odata.type": "#microsoft.graph.organizationalBrandingThemeLocalization",
       "locale": "fr-FR",
       "headerBackgroundColor": "#3377ffff",
-      "PageBackgroundColor": "#FFFF33",
+      "pageBackgroundColor": "#FFFF33",
       "signInPageText": "Welcome to Contoso",
       "usernameHintText": "ContosoUsername "
 }

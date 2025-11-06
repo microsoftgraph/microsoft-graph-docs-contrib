@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the organizationalBrandingTheme objects and their properties.
+Get a list of the [organizationalBrandingTheme](../resources/organizationalbrandingtheme.md) objects and their properties.
 
 ## Permissions
 
@@ -90,7 +90,7 @@ Content-Type: application/json
   "value": [
     {
       "@odata.type": "#microsoft.graph.organizationalBrandingTheme",
-      "id": "88373343-0336-58fb-427c-003495dcd79d",
+      "id": "aaaabbbb-0000-cccc-1111-dddd2222eeee",
       "name": "ContosoTheme",
       "isDefaultTheme": true 
     }
