@@ -120,7 +120,7 @@ The user calls the API and filters by one label ID GUID and one user right.
    )
    ```
 
-This `$filter` pattern follows an extended OData interpretation. The API evaluates each (id, ownerEmail) pair independently and merges the resulting rights information. 
+This `$filter` pattern is an extension to the standard OData specification. In standard OData, combining multiple tuples with `or` in this way is not typically supported. However, this API allows you to use a tuple-based OR pattern, where each `(id, ownerEmail)` pair is evaluated independently, and the resulting rights information is merged. For more information about standard OData `$filter` behavior, see the [OData specification](https://www.odata.org/documentation/odata-version-2-0/uri-conventions/#FilterSystemQueryOption).
 
 We recommend using filters that use a single call with multiple IDs to retrieve rights for multiple labels because it reduces the number of API calls you need to make from your app.
 
