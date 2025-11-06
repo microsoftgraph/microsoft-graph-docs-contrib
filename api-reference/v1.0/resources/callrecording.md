@@ -12,7 +12,7 @@ ms.date: 11/05/2025
 
 Namespace: microsoft.graph
 
-Represents a recording associated with an [online meeting](onlinemeeting.md) or an [ad hoc call](../../beta/resources/adhoccall.md).
+Represents a recording associated with an [online meeting](onlinemeeting.md) or an [ad hoc call](adhoccall.md).
 
 ## Methods
 

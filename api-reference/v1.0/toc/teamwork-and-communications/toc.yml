@@ -256,6 +256,10 @@ items:
         href: ../../resources/addlargegalleryviewoperation.md
       - name: Get large gallery view operation status
         href: ../../api/addlargegalleryviewoperation-get.md
+  - name: Ad hoc calls
+    items:
+    - name: Ad hoc call (preview)
+      href: ../../resources/adhoccall.md
   - name: Online meetings
     items:
     - name: Meeting attendance report
