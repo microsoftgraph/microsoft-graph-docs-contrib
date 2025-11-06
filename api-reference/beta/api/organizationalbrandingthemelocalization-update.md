@@ -100,7 +100,7 @@ If successful, this method returns a `200 OK` response code and an updated [orga
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "update_organizationalbrandingthemelocalization"
+  "name": "update_organizationalbrandingthemelocalization_string"
 }
 -->
 ``` http
@@ -210,8 +210,8 @@ Content-Type: application/json
 
 The following example shows a request.
 <!-- {
-  "blockType": "request",
-  "name": "update_organizationalbrandingthemelocalization"
+  "blockType": "ignore",
+  "name": "update_organizationalbrandingthemelocalization_stream"
 }
 -->
 ``` http
