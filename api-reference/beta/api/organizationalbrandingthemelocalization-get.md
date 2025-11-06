@@ -145,7 +145,7 @@ Content-Type: application/json
 
 The following example shows a request.
 <!-- {
-  "blockType": "request",
+  "blockType": "ignore",
   "name": "get_organizationalbrandingthemelocalization_stream"
 }
 -->
