@@ -4,10 +4,10 @@ ms.topic: include
 ms.localizationpriority: medium
 ---
 
-|Permission type|Least privileged permissions|Higher privileged permissions|
+|Permission type|Least privileged permission|Higher privileged permissions|
 |:---|:---|:---|
-|Delegated (work or school account)|Application.ReadUpdate.All|Application.ReadWrite.All, Directory.ReadWrite.All|
+|Delegated (work or school account)| AgentIdentityBlueprintPrincipal.ReadWrite.All | Directory.ReadWrite.All <br><br> Note: Directory.AccessAsUser.All cannot be used to perform this operation. |
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|Application.ReadWrite.OwnedBy|MS-Application.Update.All, MS-Application.Update.OwnedBy, ServicePrincipal.Manage.OwnedBy, Application.ReadUpdate.All, Application.ReadWrite.All, Directory.ReadWrite.All|
+|Application|AgentIdentityBlueprintPrincipal.ReadWrite.All|Directory.ReadWrite.All|
 
 
