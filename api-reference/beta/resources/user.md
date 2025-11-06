@@ -6,7 +6,7 @@ ms.reviewer: "iamut"
 ms.localizationpriority: high
 ms.subservice: entra-users
 doc_type: resourcePageType
-ms.date: 01/10/2025
+ms.date: 11/06/2025
 ms.custom: sfi-ga-blocked
 ---
 
@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a Microsoft Entra user account. This resource is an open type that allows other properties to be passed in. Inherits from [directoryObject](directoryobject.md).
+Represents a Microsoft Entra user account. This resource is an open type that allows additional properties beyond those documented here. Inherits from [directoryObject](directoryobject.md).
 
 The **user** resource lets apps specify user preferences for languages and date/time formats for the user's primary Exchange mailboxes and Microsoft Entra profile. For more information, see [user preferences for languages and regional formats](#user-preferences-for-languages-and-regional-formats).
 
@@ -231,6 +231,7 @@ This resource supports:
 | hireDate | DateTimeOffset | The hire date of the user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. <br><br> Returned only on `$select`. <br> **Note:** This property is specific to SharePoint Online. We recommend using the native **employeeHireDate** property to set and update hire date values using Microsoft Graph APIs. |
 | id | String | The unique identifier for the user. It should be treated as an opaque identifier. Inherited from [directoryObject](directoryobject.md). Not nullable. Read-only. <br><br>Supports `$filter` (`eq`, `ne`, `not`, `in`). |
 | identities | [objectIdentity](objectIdentity.md) collection | Represents the identities that can be used to sign in to this user account. An identity can be provided by Microsoft (also known as a local account), by organizations, or by social identity providers such as Facebook, Google, and Microsoft and tied to a user account. It may contain multiple items with the same **signInType** value. <br><br> Supports `$filter` (`eq`) with limitations. <!--Supports `$filter` (`eq`) including on `null` values, only where the **signInType** is not `userPrincipalName`.--> |
+|identityParentId|String|**TODO: Add Description**|
 | imAddresses | String collection | The instant message voice-over IP (VOIP) session initiation protocol (SIP) addresses for the user. Read-only. Supports `$filter` (`eq`, `not`, `ge`, `le`, `startsWith`).|
 | infoCatalogs | String collection | Identifies the info segments assigned to the user.  Supports `$filter` (`eq`, `not`, `ge`, `le`, `startsWith`). |
 | interests | String collection | A list for users to describe their interests. <br><br>Returned only on `$select`. |
@@ -486,6 +487,7 @@ The following JSON representation shows the resource type.
   "hireDate": "String (timestamp)",
   "id": "String (identifier)",
   "identities": [{"@odata.type": "microsoft.graph.objectIdentity"}],
+  "identityParentId": "String",
   "interests": ["String"],
   "isLicenseReconciliationNeeded": "Boolean",
   "isManagementRestricted": "Boolean",
