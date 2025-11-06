@@ -1,6 +1,6 @@
 ---
 title: "cloudPcProvisioningPolicy: batchCleanupUserSettingsPersistenceProfile"
-description: "Delete a list of selected user settings persistence profiles that aren't attached to specific user's Cloud PC in Cloud PC's policy assignment."
+description: "Delete a list of selected user settings persistence profiles that aren't attached to a specific user's Cloud PC in the Cloud PC policy assignment."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a list of selected user settings persistence profiles that aren't attached to specific user's Cloud PC in Cloud PC's policy assignment.
+Delete a list of selected user settings persistence profiles that aren't attached to a specific user's Cloud PC in the [Cloud PC policy](../resources/cloudpcprovisioningpolicy.md) assignment.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 
 ``` http
-POST /deviceManagement/virtualEndpoint/provisioningPolicies/b8f4a6d2-3c7e-4e9a-9f1b-2d6c8e1a4f7c/assignments/f3d9c1a8-7b4e-4a2f-8d6e-9c2b7f5a1e3d/cloudPCUserSettingsPersistence/batchCleanupUserSettingsPersistenceProfile
+POST /deviceManagement/virtualEndpoint/provisioningPolicies/{id}/assignments/{assignment_id}/cloudPCUserSettingsPersistence/batchCleanupUserSettingsPersistenceProfile
 ```
 
 ## Request headers
@@ -51,8 +51,8 @@ The following table shows the parameters that can be used with this method.
 
 |Property|Type|Description|
 |:---|:---|:---|
-| configurationId  |String | The unique identifier for Cloud PC user settings persistence configuration.  |
-| cloudProfileIds  |String Collection| The list of unique identifiers for Cloud PC user settings persistence specific profile.|
+| cloudProfileIds  |String collection| The list of unique identifiers for specific Cloud PC user settings persistence profiles. |
+| configurationId  |String |The unique identifier for the Cloud PC user settings persistence configuration. |
 
 ## Response
 
@@ -60,8 +60,10 @@ If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
-#### Request
-The following example shows a request to delete user storage profiles from a Cloud PC policy assignment's user settings persistence.
+### Request
+
+The following example shows a request to delete user storage profiles from the user settings persistence of a Cloud PC policy assignment.
+
 <!-- {
   "blockType": "request",
   "name": "batchcleanupusersettingspersistenceprofile_cloudpcprovisioningpolicy",
@@ -73,14 +75,13 @@ POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/provision
 Content-Type: application/json
 
 {
-    "configurationId": "64ff06de-9c00-4a5a-98b5-7f5abe26bfd9",
-    "cloudProfileIds":["7e8c3054-bda1-4e37-81c5-7d1b080a8849", "568c3054-bda1-4e37-81c5-7d1b080a8849"]
+  "configurationId": "64ff06de-9c00-4a5a-98b5-7f5abe26bfd9",
+  "cloudProfileIds": ["7e8c3054-bda1-4e37-81c5-7d1b080a8849", "568c3054-bda1-4e37-81c5-7d1b080a8849"]
 }
 ```
----
 
-#### Response
-
+### Response
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true
