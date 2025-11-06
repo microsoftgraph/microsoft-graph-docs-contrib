@@ -31,32 +31,19 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
-You can address the agent identity using either its **id** or **appId**. **id** and **appId** are referred to as the **Object ID** and **Application (Client) ID**, respectively, in app registrations in the Microsoft Entra admin center.
-<!-- { "blockType": "ignored" } -->
 ```http
 GET /servicePrincipals/{id}/Microsoft.Graph.AgentIdentity
-GET /servicePrincipals(appId='{appId}')/Microsoft.Graph.AgentIdentity
 ```
 
 ## Optional query parameters
 
 This method supports the `$select` and `$expand` [OData query parameters](/graph/query-parameters) to help customize the response.
 
-This method supports the `$count`, `$expand`, `$filter`, `$orderby`, `$search`, `$select`, and `$top` [OData query parameters](/graph/query-parameters) to help customize the response. Some queries are supported only when you use the **ConsistencyLevel** header set to `eventual` and `$count`. For more information, see [Advanced query capabilities on directory objects](/graph/aad-advanced-queries).
-
-By default, this API doesn't return the public key value of the **key** in the **keyCredentials** property unless **keyCredentials** is specified in a `$select` query.
-For example, `$select=id,appId,keyCredentials`.
-
-The use of `$select` to get **keyCredentials** for agent identities has a throttling limit of 150 requests per minute for every tenant.
-
 ## Request headers
 
 | Name           | Description                |
 |:---------------|:---------------------------|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
-| Accept-Language| Language code. Optional.   |
-
-Providing the **Accept-Language** header with a supported language code, such as `es-ES` or `de-DE`, will return localized values where available. Note that the header is not supported for [list operations](serviceprincipal-list.md).
 
 ## Request body
 

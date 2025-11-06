@@ -36,7 +36,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-DELETE ** Collection URI for microsoft.graph.directoryObject not found/{id}/$ref
+DELETE /servicePrincipals/{id}/Microsoft.Graph.AgentIdentity/sponsors/{sponsorObjectId}/$ref
 ```
 
 ## Request headers
@@ -64,7 +64,7 @@ The following example shows a request.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta** Collection URI for microsoft.graph.directoryObject not found/{id}/$ref
+DELETE https://graph.microsoft.com/beta/servicePrincipals/{id}/Microsoft.Graph.AgentIdentity/sponsors/{sponsorObjectId}/$ref
 ```
 
 

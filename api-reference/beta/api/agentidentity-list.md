@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of [agentIdentity](../resources/agentidentity.md) objects.
+Retrieve a list of [agentIdentity](../resources/agentidentity.md) objects. Does not return other types of service principal objects.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -38,10 +38,6 @@ GET /servicePrincipals
 
 This method supports the `$count`, `$expand`, `$filter`, `$orderby`, `$search`, `$select`, and `$top` [OData query parameters](/graph/query-parameters) to help customize the response. The default and maximum page size is 100 agent identity objects. Some queries are supported only when you use the **ConsistencyLevel** header set to `eventual` and `$count`. For more information, see [Advanced query capabilities on directory objects](/graph/aad-advanced-queries).
 
-By default, this API doesn't return the value of the **key** in the **keyCredentials** property when listing all agent identities. To retrieve the public key info in **key**, the **keyCredentials** property must be specified in a `$select` query. For example, `$select=id,appId,keyCredentials`.
-
-The use of `$select` to get **keyCredentials** for agent identities has a throttling limit of 150 requests per minute for every tenant.
-
 ## Request headers
 
 | Name | Description |
@@ -58,8 +54,6 @@ Don't supply a request body for this method.
 If successful, this method returns a `200 OK` response code and collection of [agentIdentity](../resources/agentidentity.md) objects in the response body.
 
 ## Examples
-
-### Example 1: Get a list of agent identities
 
 #### Request
 

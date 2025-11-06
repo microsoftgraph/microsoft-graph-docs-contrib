@@ -35,7 +35,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET ** Collection URI for microsoft.graph.directoryObject not found
+GET /servicePrincipals/{id}/Microsoft.Graph.AgentIdentity/sponsors
 ```
 
 ## Optional query parameters
@@ -67,7 +67,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta** Collection URI for microsoft.graph.directoryObject not found
+GET https://graph.microsoft.com/beta/servicePrincipals/{id}/Microsoft.Graph.AgentIdentity/sponsors
 ```
 
 

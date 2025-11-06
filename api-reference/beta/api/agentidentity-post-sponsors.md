@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Add sponsors by posting to the sponsors collection.
+Add sponsors by posting to the sponsors collection. Sponsors can include users or groups. Sponsors may not include service principals or agent users.
 
 ## Permissions
 
@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-POST ** Collection URI for microsoft.graph.directoryObject not found/$ref
+POST /servicePrincipals/{id}/Microsoft.Graph.AgentIdentity/sponsors/$ref
 ```
 
 ## Request headers
@@ -46,16 +46,7 @@ POST ** Collection URI for microsoft.graph.directoryObject not found/$ref
 
 ## Request body
 
-In the request body, supply a JSON representation of the [directoryObject](../resources/directoryobject.md) object.
-
-You can specify the following properties when creating a **directoryObject**.
-
-**TODO: Remove properties that don't apply**
-
-|Property|Type|Description|
-|:---|:---|:---|
-|deletedDateTime|DateTimeOffset|**TODO: Add Description** Optional.|
-
+In the request body, supply a reference to the [directoryObject](../resources/directoryobject.md) object to be added as a sponsor.
 
 
 ## Response
@@ -73,12 +64,11 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta** Collection URI for microsoft.graph.directoryObject not found/$ref
+POST https://graph.microsoft.com/beta/servicePrincipals/{id}/Microsoft.Graph.AgentIdentity/sponsors/$ref
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.directoryObject",
-  "deletedDateTime": "String (timestamp)"
+  "@odata.id": "https://graph.microsoft.com/beta/directoryObjects/{sponsorObjectId}"
 }
 ```
 
@@ -95,12 +85,5 @@ The following example shows the response.
 -->
 ``` http
 HTTP/1.1 204 No Content
-Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.directoryObject",
-  "id": "a6c034b8-621b-dee3-6abb-52cbce801fe9",
-  "deletedDateTime": "String (timestamp)"
-}
 ```
 
