@@ -64,9 +64,10 @@ The following example shows a request.
   "name": "create_customdataprovidedresourcefile_from_"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageCatalogs/73eb2497-3b88-4c0a-8bb3-68ba8162beff/accessPackageResources/99ab2454-3b88-4c0a-8bb3-68ba8162beff/uploadSessions/23f27c15-72f9-45fe-9e9c-e3d8f75bdc44/uploadFile
 Content-Type: Content-Type: multipart/form-data; boundary=------------------------R4TN6uftt24yR3uYqFzjQE
+
 --------------------------R4TN6uftt24yR3uYqFzjQE
 Content-Disposition: form-data; name="file"; filename="valid.csv"
 Content-Type: application/octet-stream
