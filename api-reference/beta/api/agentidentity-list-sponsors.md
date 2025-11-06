@@ -1,5 +1,5 @@
 ---
-title: "List sponsors"
+title: "List agentIdentity sponsors"
 description: "List sponsors for an agent identity."
 author: "zallison22"
 ms.date: 10/27/2025
@@ -8,7 +8,7 @@ ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 
-# List sponsors
+# List sponsors - agentIdentity
 
 Namespace: microsoft.graph
 

@@ -1,5 +1,5 @@
 ---
-title: "List ownedObjects"
+title: "List agentIdentityBlueprintPrincipal ownedObjects"
 description: "Retrieve a list of objects owned by the agent identity blueprint principal.  This could include applications or groups."
 author: "zallison22"
 ms.date: 10/27/2025
@@ -8,7 +8,7 @@ ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 
-# List ownedObjects
+# List ownedObjects - agentIdentityBlueprintPrincipal
 
 Namespace: microsoft.graph
 

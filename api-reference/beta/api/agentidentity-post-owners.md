@@ -1,5 +1,5 @@
 ---
-title: "Add owners"
+title: "Add agentIdentity owners"
 description: "Add an owner for the agent identity."
 author: "zallison22"
 ms.date: 10/27/2025
@@ -8,7 +8,7 @@ ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 
-# Add owners
+# Add owners - agentIdentity
 
 Namespace: microsoft.graph
 

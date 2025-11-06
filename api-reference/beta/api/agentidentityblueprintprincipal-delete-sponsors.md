@@ -1,5 +1,5 @@
 ---
-title: "Remove sponsors"
+title: "Remove agentIdentityBlueprintPrincipal sponsors"
 description: "Remove a sponsor from an agentIdentityBlueprintPrincipal object."
 author: "zallison22"
 ms.date: 10/27/2025
@@ -8,11 +8,10 @@ ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 
-# Remove sponsors
+# Remove agentIdentityBlueprintPrincipal sponsors
 
 Namespace: microsoft.graph
 
-Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Remove a sponsor from a [agentIdentityBlueprintPrincipal](../resources/agentidentityblueprintprincipal.md) object.

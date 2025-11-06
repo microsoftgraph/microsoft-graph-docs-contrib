@@ -1,5 +1,5 @@
 ---
-title: "Remove owners"
+title: "Remove agentIdentity owners"
 description: "Remove an owner from a AgentIdentity."
 author: "zallison22"
 ms.date: 10/27/2025
@@ -8,7 +8,7 @@ ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 
-# Remove owners
+# Remove owners - agentIdentity
 
 Namespace: microsoft.graph
 

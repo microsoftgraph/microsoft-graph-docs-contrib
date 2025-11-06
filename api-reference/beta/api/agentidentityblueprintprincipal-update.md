@@ -19,8 +19,6 @@ Update the properties of an agentIdentityBlueprintPrincipal object.
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 > [!IMPORTANT]
-> - Using PATCH to set [**passwordCredential**](../resources/passwordcredential.md) is not supported. Use the [addPassword](./agentidentityblueprintprincipal-addpassword.md) and [removePassword](./agentidentityblueprintprincipal-removepassword.md) methods to update the password or secret for a agent identity blueprint principal.
->
 > - Agent identity blueprint principals inherit specific properties from their associated agent identity blueprint registrations. These properties are synchronized from the agent identity blueprint registration, but the synchronization isn't immediate or continuous. Sometimes, updating a agent identity blueprint principal may prompt the directory to refresh properties from the agent identity blueprint registration, causing updates that weren't part of the original request.
 
 
@@ -43,20 +41,13 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
-<<<<<<< HEAD
 <!-- {
   "blockType": "ignored"
 }
 -->
 ``` http
 PATCH /servicePrincipals/{id}/graph.agentIdentityBlueprintPrincipal
-=======
-You can address the agent identity blueprint principal using either its **id** or **appId**. **id** and **appId** are referred to as the **Object ID** and **Application (Client) ID**, respectively, in app registrations in the Microsoft Entra admin center.
-<!-- { "blockType": "ignored" } -->
-```http
-PATCH /servicePrincipals/{id}/Microsoft.Graph.AgentIdentityBlueprintPrincipal
-PATCH /servicePrincipals(appId='{appId}')/Microsoft.Graph.AgentIdentityBlueprintPrincipal
->>>>>>> 462eb57f5816309b247c18638035aa28d624127d
+
 ```
 ## Request headers
 

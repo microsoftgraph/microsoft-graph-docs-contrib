@@ -1,5 +1,5 @@
 ---
-title: "List owners"
+title: "List agentIdentity owners"
 description: "Retrieve a list of owners of the agent identity."
 author: "zallison22"
 ms.date: 10/27/2025
@@ -8,7 +8,7 @@ ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 
-# List owners
+# List owners - agentIdentity
 
 Namespace: microsoft.graph
 

@@ -1,5 +1,5 @@
 ---
-title: "List memberOf"
+title: "List agentIdentityBlueprintPrincipal memberOf"
 description: "Get the groups and directory roles that this agent identity blueprint principal is a direct member of."
 author: "zallison22"
 ms.date: 10/27/2025
@@ -8,7 +8,7 @@ ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 
-# List memberOf
+# List memberOf - agentIdentityBlueprintPrincipal
 
 Namespace: microsoft.graph
 

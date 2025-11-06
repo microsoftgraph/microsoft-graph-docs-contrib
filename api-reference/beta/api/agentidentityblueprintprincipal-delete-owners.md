@@ -1,6 +1,6 @@
 ---
-title: "Remove owners"
-description: "Remove an owner from a AgentIdentity."
+title: "Remove agentIdentityBlueprintPrincipal owners"
+description: "Remove an owner from a agentIdentityBlueprintPrincipal."
 author: "zallison22"
 ms.date: 10/27/2025
 ms.localizationpriority: medium
@@ -8,7 +8,7 @@ ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 
-# Remove owners
+# Remove owners - agentIdentityBlueprintPrincipal
 
 Namespace: microsoft.graph
 
@@ -41,11 +41,9 @@ DELETE /servicePrincipals/{id}/Microsoft.Graph.AgentIdentityBlueprintPrincipal/o
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
-<<<<<<< HEAD
-Do not provide a request body.
-=======
+
 Don't supply a request body for this method.
->>>>>>> 462eb57f5816309b247c18638035aa28d624127d
+
 
 ## Response
 

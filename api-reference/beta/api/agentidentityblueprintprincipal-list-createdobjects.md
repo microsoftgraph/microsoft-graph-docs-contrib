@@ -1,14 +1,14 @@
 ---
-title: "List createdObjects"
-description: "**TODO: Add a useful description.**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+title: "List agentIdentityBlueprintPrincipal createdObjects"
+description: "Returns the list of directory objects that were created by this agent identity blueprint principal."
+author: "zallison22"
 ms.date: 10/27/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 
-# List createdObjects
+# List createdObjects - agentIdentityBlueprintPrincipal
 
 Namespace: microsoft.graph
 

@@ -1,20 +1,20 @@
 ---
-title: "Add sponsors"
-description: "Add sponsors by posting to the sponsors collection."
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+title: "Add agentIdentityBlueprintPrincipal sponsors"
+description: "Add sponsors to agentIdentityBlueprintPrincipal sponsors by posting to the sponsors collection."
+author: "zallison22"
 ms.date: 10/27/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 
-# Add sponsors
+# Add agentIdentityBlueprintPrincipal sponsors
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Add sponsors by posting to the sponsors collection.
+Add sponsors to an agent identity blueprint principal by posting to the sponsors collection.
 
 ## Permissions
 

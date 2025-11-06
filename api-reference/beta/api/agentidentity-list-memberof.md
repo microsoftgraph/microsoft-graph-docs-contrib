@@ -1,6 +1,6 @@
 ---
-title: "List memberOf"
-description: "Get the groups and directory roles that this service principal is a direct member of. This operation isn't transitive."
+title: "List agentIdentity memberOf"
+description: "Get the groups and directory roles that this agentIdentity is a direct member of. This operation isn't transitive."
 author: "zallison22"
 ms.date: 10/27/2025
 ms.localizationpriority: medium
@@ -8,7 +8,7 @@ ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 
-# List memberOf
+# List memberOf - agentIdentity
 
 Namespace: microsoft.graph
 

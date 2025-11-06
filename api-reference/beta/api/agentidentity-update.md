@@ -1,6 +1,6 @@
 ---
 title: "Update agentIdentity"
-description: "Update single sign-on credentials using a password for a user or group."
+description: "Update an agent identity ."
 author: "zallison22"
 ms.date: 10/27/2025
 ms.localizationpriority: medium
