@@ -20,8 +20,8 @@ Metadata related to the files that have been uploaded as part of the [uploadSess
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|filesUploaded|Int32|**TODO: Add Description**|
-|totalBytesUploaded|Int64|**TODO: Add Description**|
+|filesUploaded|Int32|Number of files uploaded in this session.|
+|totalBytesUploaded|Int64|total bytes uploaded in this session|
 
 ## Relationships
 None.

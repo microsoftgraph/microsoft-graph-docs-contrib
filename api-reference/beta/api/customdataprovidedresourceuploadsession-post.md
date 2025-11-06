@@ -52,7 +52,6 @@ In the request body, supply a JSON representation of the [customDataProvidedReso
 
 You can specify the following properties when creating a **customDataProvidedResourceUploadSession**.
 
-**TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
 |source|String|The name of the Custom Data Provided Resource for which the customer is uploading data. Required.|
@@ -74,7 +73,7 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageCatalogs/{accessPackageCatalogId}/accessPackageResources/{accessPackageResourceId}/uploadSessions
+POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageCatalogs/6f4b1c6f-2a3d-4f8e-9b7a-5c1e2d3f4a6b/accessPackageResources/7b8a1c6f-2a3d-4f8e-9b7a-5c1e2d3f4a6b/uploadSessions
 Content-Type: application/json
 
 {
