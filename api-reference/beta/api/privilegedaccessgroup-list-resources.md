@@ -61,7 +61,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET /identityGovernance/privilegedAccess/group/resources
+GET https://graph.microsoft.com/beta/identityGovernance/privilegedAccess/group/resources
 ```
 
 ### Response
