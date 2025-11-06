@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the properties and relationships of a user's [workHoursAndLocations](../resources/workhoursandlocationssetting.md) settings. This includes the user's current location, default work hours, location sharing preferences, and associated work plan patterns.
+Get the properties and relationships of a user's [workHoursAndLocationsSetting](../resources/workhoursandlocationssetting.md). This includes the location sharing preferences and navigation properties to work plan recurrences and occurrences.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -27,7 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 |:----------------|:-----------------------------|:------------------------------|
 | Delegated (work or school account) | Calendars.ReadBasic | Calendars.Read, Calendars.ReadWrite |
 | Delegated (personal Microsoft account) | Not supported. | Not supported. |
-| Application | Calendars.ReadBasic | Calendars.Read, Calendars.ReadWrite |
+| Application | Not supported. | Not supported. |
 
 ## HTTP request
 
@@ -45,7 +45,7 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 | Parameter | Description | Example |
 |:----------|:------------|:--------|
 | `$expand` | Expand related entities | `$expand=workPlanRecurrences,workPlanOccurrences` |
-| `$select` | Select specific properties | `$select=timeZone,currentLocation,enableLocationSharing` |
+| `$select` | Select specific properties | `$select=maxSharedWorkLocationDetails` |
 
 ## Request headers
 
@@ -59,7 +59,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [workHoursAndLocations](../resources/workhoursandlocationssetting.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [workHoursAndLocationsSetting](../resources/workhoursandlocationssetting.md) object in the response body.
 
 ## Examples
 
@@ -115,7 +115,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.workHoursAndLocations"
+  "@odata.type": "microsoft.graph.workHoursAndLocationsSetting"
 } -->
 
 ```http
@@ -123,32 +123,9 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('12345678-1234-1234-1234-123456789012')/workHoursAndLocations/$entity",
-  "id": "550e8400-e29b-41d4-a716-446655440000",
-  "timeZone": "America/New_York",
-  "currentLocation": {
-    "locationType": "office",
-    "displayName": "Main Office",
-    "address": {
-      "street": "123 Business Ave",
-      "city": "New York",
-      "state": "NY",
-      "postalCode": "10001",
-      "countryOrRegion": "United States"
-    },
-    "coordinates": {
-      "latitude": 40.7128,
-      "longitude": -74.0060
-    },
-    "description": "Building A, Floor 5",
-    "isDefault": true
-  },
-  "defaultWorkHours": {
-    "start": "09:00:00",
-    "end": "17:00:00"
-  },
-  "enableLocationSharing": true,
-  "allowOverlapBookings": false
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('12345678-1234-1234-1234-123456789012')/settings/workHoursAndLocations/$entity",
+  "@odata.type": "microsoft.graph.workHoursAndLocationsSetting",
+  "maxSharedWorkLocationDetails": "approximate"
 }
 ```
 
@@ -156,7 +133,7 @@ Content-type: application/json
 
 #### Request
 
-The following example shows a request to get work hours and locations with expanded work plan recurrences and occurrences.
+The following example shows a request to get work hours and locations with expanded recurrences and occurrences.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -164,7 +141,7 @@ The following example shows a request to get work hours and locations with expan
   "name": "get_workhoursandlocations_expanded"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/me/settings/workHoursAndLocations?$expand=workPlanRecurrences,workPlanOccurrences
+GET https://graph.microsoft.com/beta/me/settings/workHoursAndLocations?$expand=recurrences,occurrences
 ```
 
 # [C#](#tab/csharp)
@@ -206,7 +183,7 @@ The following example shows the response with expanded relationships.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.workHoursAndLocations"
+  "@odata.type": "microsoft.graph.workHoursAndLocationsSetting"
 } -->
 
 ```http
@@ -214,22 +191,10 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('12345678-1234-1234-1234-123456789012')/workHoursAndLocations/$entity",
-  "id": "550e8400-e29b-41d4-a716-446655440000",
-  "timeZone": "America/New_York",
-  "currentLocation": {
-    "locationType": "remote",
-    "displayName": "Home Office",
-    "description": "Working from home today",
-    "isDefault": false
-  },
-  "defaultWorkHours": {
-    "start": "09:00:00",
-    "end": "17:00:00"
-  },
-  "enableLocationSharing": true,
-  "allowOverlapBookings": false,
-  "workPlanRecurrences": [
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('12345678-1234-1234-1234-123456789012')/settings/workHoursAndLocations/$entity",
+  "@odata.type": "microsoft.graph.workHoursAndLocationsSetting",
+  "maxSharedWorkLocationDetails": "approximate",
+  "recurrences": [
     {
       "id": "recurrence-001",
       "displayName": "Office Days - Mon/Wed/Fri",
@@ -244,20 +209,11 @@ Content-type: application/json
       },
       "workLocation": {
         "locationType": "office",
-        "displayName": "Main Office",
-        "address": {
-          "street": "123 Business Ave",
-          "city": "New York",
-          "state": "NY",
-          "postalCode": "10001",
-          "countryOrRegion": "United States"
-        }
-      },
-      "isActive": true,
-      "priority": 1
+        "displayName": "Main Office"
+      }
     }
   ],
-  "workPlanOccurrences": [
+  "occurrences": [
     {
       "id": "occurrence-001",
       "displayName": "Client Meeting - Downtown",
@@ -265,18 +221,9 @@ Content-type: application/json
       "endDateTime": "2024-12-20T15:00:00-05:00",
       "workLocation": {
         "locationType": "clientSite",
-        "displayName": "Client Office",
-        "address": {
-          "street": "456 Client Street",
-          "city": "New York",
-          "state": "NY",
-          "postalCode": "10002",
-          "countryOrRegion": "United States"
-        }
+        "displayName": "Client Office"
       },
-      "status": "confirmed",
-      "notes": "Quarterly business review meeting",
-      "isAllDay": false
+      "status": "confirmed"
     }
   ]
 }

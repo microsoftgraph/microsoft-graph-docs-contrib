@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a user's [workHoursAndLocations](../resources/workhoursandlocationssetting.md) settings. This includes updating the time zone, default work hours, location sharing preferences, and booking policies.
+Update the properties of a user's [workHoursAndLocationsSetting](../resources/workhoursandlocationssetting.md) settings.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -27,7 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 |:----------------|:-----------------------------|:------------------------------|
 | Delegated (work or school account) | Calendars.ReadWrite | Not applicable. |
 | Delegated (personal Microsoft account) | Not supported. | Not supported. |
-| Application | Calendars.ReadWrite | Not applicable. |
+| Application | Not supported. | Not supported. |
 
 ## HTTP request
 
@@ -51,11 +51,7 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property | Type | Description |
 |:---------|:-----|:------------|
-| timeZone | String | The time zone for the user's work hours using IANA time zone format. |
-| currentLocation | [workLocation](../resources/worklocation.md) | The user's current working location. |
-| defaultWorkHours | [timeRange](../resources/timerange.md) | The user's default working hours when no specific work plan is defined. |
-| enableLocationSharing | Boolean | Indicates whether the user allows their location to be shared with colleagues. |
-| allowOverlapBookings | Boolean | Indicates whether meetings can be scheduled during busy times in the user's work plan. |
+| maxSharedWorkLocationDetails | maxWorkLocationDetails | Controls the level of work location details that can be shared with colleagues. The possible values are: `unknown`, `none`, `approximate`, `specific`, `unknownFutureValue`. |
 
 ## Response
 
@@ -63,56 +59,52 @@ If successful, this method returns a `200 OK` response code and an updated [work
 
 ## Examples
 
-### Example 1: Update time zone and default work hours
+### Example 1: Update shared location details mode
 
 #### Request
 
-The following example shows a request to update the user's time zone and default work hours.
+The following example shows a request to update the maximum level of work location details that can be shared.
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_workhoursandlocations_timezone"
+  "name": "update_workhoursandlocations_maxshareddetails"
 }-->
 ```http
 PATCH https://graph.microsoft.com/beta/me/settings/workHoursAndLocations
 Content-Type: application/json
 
 {
-  "timeZone": "Europe/London",
-  "defaultWorkHours": {
-    "start": "08:30:00",
-    "end": "16:30:00"
-  }
+  "maxSharedWorkLocationDetails": "approximate"
 }
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-workhoursandlocations-timezone-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-workhoursandlocations-maxshareddetails-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/update-workhoursandlocations-timezone-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/update-workhoursandlocations-maxshareddetails-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-workhoursandlocations-timezone-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/update-workhoursandlocations-maxshareddetails-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-workhoursandlocations-timezone-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-workhoursandlocations-maxshareddetails-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/update-workhoursandlocations-timezone-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/update-workhoursandlocations-maxshareddetails-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/update-workhoursandlocations-timezone-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-workhoursandlocations-maxshareddetails-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/update-workhoursandlocations-timezone-python-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/python/update-workhoursandlocations-maxshareddetails-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -124,7 +116,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.workHoursAndLocations"
+  "@odata.type": "microsoft.graph.workHoursAndLocationsSetting"
 } -->
 
 ```http
@@ -132,108 +124,9 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('12345678-1234-1234-1234-123456789012')/workHoursAndLocations/$entity",
-  "id": "550e8400-e29b-41d4-a716-446655440000",
-  "timeZone": "Europe/London",
-  "currentLocation": {
-    "locationType": "office",
-    "displayName": "London Office",
-    "address": {
-      "street": "25 King's Road",
-      "city": "London",
-      "postalCode": "SW3 4RP",
-      "countryOrRegion": "United Kingdom"
-    }
-  },
-  "defaultWorkHours": {
-    "start": "08:30:00",
-    "end": "16:30:00"
-  },
-  "enableLocationSharing": true,
-  "allowOverlapBookings": false
-}
-```
-
-### Example 2: Update location sharing and booking preferences
-
-#### Request
-
-The following example shows a request to update location sharing and booking overlap settings.
-
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "update_workhoursandlocations_preferences"
-}-->
-```http
-PATCH https://graph.microsoft.com/beta/me/settings/workHoursAndLocations
-Content-Type: application/json
-
-{
-  "enableLocationSharing": false,
-  "allowOverlapBookings": true
-}
-```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-workhoursandlocations-preferences-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/update-workhoursandlocations-preferences-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-workhoursandlocations-preferences-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-workhoursandlocations-preferences-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/update-workhoursandlocations-preferences-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/update-workhoursandlocations-preferences-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/update-workhoursandlocations-preferences-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-#### Response
-
-The following example shows the response.
-
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.workHoursAndLocations"
-} -->
-
-```http
-HTTP/1.1 200 OK
-Content-type: application/json
-
-{
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('12345678-1234-1234-1234-123456789012')/workHoursAndLocations/$entity",
-  "id": "550e8400-e29b-41d4-a716-446655440000",
-  "timeZone": "America/New_York",
-  "currentLocation": {
-    "locationType": "remote",
-    "displayName": "Home Office",
-    "description": "Privacy mode enabled - location not shared"
-  },
-  "defaultWorkHours": {
-    "start": "09:00:00",
-    "end": "17:00:00"
-  },
-  "enableLocationSharing": false,
-  "allowOverlapBookings": true
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('12345678-1234-1234-1234-123456789012')/settings/workHoursAndLocations/$entity",
+  "@odata.type": "microsoft.graph.workHoursAndLocationsSetting",
+  "maxSharedWorkLocationDetails": "approximate"
 }
 ```
 
@@ -243,14 +136,12 @@ If the request fails, the API returns standard HTTP error codes. Common error sc
 
 - **400 Bad Request**: Invalid property values or malformed request body
 - **403 Forbidden**: User doesn't have permission to update work hours and locations
-- **422 Unprocessable Entity**: Invalid time zone format or conflicting property values
+- **422 Unprocessable Entity**: Invalid enum value for maxSharedWorkLocationDetails
 
 ## Remarks
 
-- Only properties included in the request body are updated; other properties remain unchanged
-- Time zone changes affect the interpretation of all time-related properties in work plans
-- Location sharing settings control whether the user's location is visible to colleagues and scheduling systems
-- The allowOverlapBookings setting determines meeting scheduling behavior during busy periods defined in work plans
+- Only the maxSharedWorkLocationDetails property can be updated on the workHoursAndLocationsSetting entity
+- Changes to this setting control the level of work location information that can be shared with colleagues
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2024-12-20 14:57:30 UTC -->
