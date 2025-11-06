@@ -120,8 +120,7 @@ Microsoft Graph now supports new delegated and application permissions scoped to
 
 ### Security | Alerts and incidents
 
-- Use the **investigationState** property on [alert](/graph/api/resources/security-alert) to get the current status of an investigation.
-- Use [aiAgentEvidence](/graph/api/resources/security-aiagentevidence) as a newly supported [alertEvidence](/graph/api/resources/security-alertevidence) type.
+Use the **investigationState** property on [alert](/graph/api/resources/security-alert) to get the current status of an investigation.
 
 ### Teamwork and communications | Calls and online meetings
 
@@ -165,8 +164,7 @@ Added the following new endpoints as supported request URLs for the [driveItem: 
 
 ### Security | Alerts and incidents
 
-- Use the **investigationState** property on [alert](/graph/api/resources/security-alert?view=graph-rest-beta&preserve-view=true) to get the current status of an investigation.
-- Use [aiAgentEvidence](/graph/api/resources/security-aiagentevidence?view=graph-rest-beta&preserve-view=true) as a newly supported [alertEvidence](/graph/api/resources/security-alertevidence?view=graph-rest-beta&preserve-view=true) type.
+Use the **investigationState** property on [alert](/graph/api/resources/security-alert?view=graph-rest-beta&preserve-view=true) to get the current status of an investigation.
 
 ### Sites and lists
 
