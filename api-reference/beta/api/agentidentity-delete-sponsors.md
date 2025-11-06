@@ -9,7 +9,7 @@ doc_type: apiPageType
 ---
 
 
-# Remove agentIdentity sponsors
+# agentIdentity: remove sponsors
 
 Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

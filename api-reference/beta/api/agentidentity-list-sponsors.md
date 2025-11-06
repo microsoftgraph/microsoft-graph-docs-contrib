@@ -8,7 +8,7 @@ ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 
-# List sponsors - agentIdentity
+# agentIdentity: List sponsors
 
 Namespace: microsoft.graph
 

@@ -1,14 +1,14 @@
 ---
-title: "Upsert application"
-description: "Create a new application object if it doesn't exist, or update the properties of an existing application object."
-author: "Jackson-Woods"
+title: "Upsert agent identity blueprint"
+description: "Create a new agent identity blueprint object if it doesn't exist, or update the properties of an existing agent identity blueprint object."
+author: "zallison22"
+ms.date: 10/27/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-applications"
 doc_type: apiPageType
-ms.date: 08/22/2024
 ---
 
-# Upsert application
+# Upsert agent identity blueprint
 
 Namespace: microsoft.graph
 
@@ -17,14 +17,14 @@ Namespace: microsoft.graph
 Create a new [agent identity blueprint](../resources/agentidentityblueprint.md) object if it doesn't exist, or update the properties of an existing object.
 
 > [!IMPORTANT]
-> Using PATCH to set [**passwordCredential**](../resources/passwordcredential.md) is not supported. Use the [addPassword](./application-addpassword.md) and [removePassword](./application-removepassword.md) methods to update the password or secret for an application.
+> Using PATCH to set [**passwordCredential**](../resources/passwordcredential.md) is not supported. Use the [addPassword](./application-addpassword.md) and [removePassword](./application-removepassword.md) methods to update the password or secret for an agent identity blueprint.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "permissions", "name": "application_upsert" } -->
+<!-- { "blockType": "permissions", "name": "agentidentityblueprint_upsert" } -->
 [!INCLUDE [permissions-table](../includes/permissions/agentidentityblueprint-upsert-permissions.md)]
 
 [!INCLUDE [rbac-agentid-apis-write](../includes/rbac-for-apis/rbac-agentid-apis-write.md)]
@@ -47,11 +47,11 @@ PATCH /applications(uniqueName='{uniqueName}')/Microsoft.Graph.AgentIdentityBlue
 
 ## Request body
 
-In the request body, supply a JSON representation of the [agent identity blueprint](../resources/agentidentityblueprint.md) object. The request body must contain  **displayName**, which is a required property. Specify other writable properties as necessary for your application, for creation or update.
+In the request body, supply a JSON representation of the [agent identity blueprint](../resources/agentidentityblueprint.md) object. The request body must contain  **displayName**, which is a required property. Specify other writable properties as necessary for your agent identity blueprint, for creation or update.
 
 ## Response
 
-If an object with **uniqueName** doesn't exist, this method returns a `201 Created` response code and a new agent identity blueprint object in the response body. The application is assigned the uniqueName value.
+If an object with **uniqueName** doesn't exist, this method returns a `201 Created` response code and a new agent identity blueprint object in the response body. The agent identity blueprint is assigned the uniqueName value.
 
 If an object with **uniqueName** doesn't exist and the `Prefer: create-if-missing` header is *not* specified, this method returns a `404 Not Found` error code.
 

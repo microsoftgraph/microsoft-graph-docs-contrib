@@ -8,7 +8,7 @@ ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 
-# List owners - agentIdentity
+# agentIdentity: List owners
 
 Namespace: microsoft.graph
 

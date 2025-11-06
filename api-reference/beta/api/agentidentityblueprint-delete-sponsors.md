@@ -9,7 +9,7 @@ doc_type: apiPageType
 ---
 
 
-# Remove sponsors
+# agentIdentityBlueprint: Remove sponsors
 
 Namespace: microsoft.graph
 

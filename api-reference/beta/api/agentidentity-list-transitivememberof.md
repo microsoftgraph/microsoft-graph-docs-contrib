@@ -1,5 +1,5 @@
 ---
-title: "List transitiveMemberOf"
+title: "List agentIdentity transitiveMemberOf"
 description: "Get the groups and directory roles that this agent identity is a member of."
 author: "zallison22"
 ms.date: 10/27/2025
@@ -8,7 +8,7 @@ ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 
-# List transitiveMemberOf
+# agentIdentity: List transitiveMemberOf
 
 Namespace: microsoft.graph
 

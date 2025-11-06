@@ -8,7 +8,7 @@ ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 
-# List ownedObjects - agentIdentity
+# agentIdentity: List ownedObjects
 
 Namespace: microsoft.graph
 
@@ -36,7 +36,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /servicePrincipals/{id}/ownedObjects
+GET /servicePrincipals/{id}/Microsoft.Graph.AgentIdenity/ownedObjects
 ```
 
 ## Optional query parameters

@@ -8,7 +8,7 @@ ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 
-# List createdObjects - agentIdentityBlueprintPrincipal
+# agentIdentityBlueprintPrincipal: List createdObjects
 
 Namespace: microsoft.graph
 

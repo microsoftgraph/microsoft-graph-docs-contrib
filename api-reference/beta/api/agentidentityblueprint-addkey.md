@@ -1,13 +1,12 @@
 ---
 title: "agentIdentityBlueprint: addKey"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+description: "Add a key credential to an agent identity blueprint. This method, along with removeKey, can be used to automate rolling its expiring keys."
+author: "zallison22"
 ms.date: 10/27/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
-
 # agentIdentityBlueprint: addKey
 
 Namespace: microsoft.graph
@@ -22,7 +21,7 @@ Add a key credential to an agent identity blueprint. This method, along with [re
 
 As part of the request validation for this method, a proof of possession of an existing key is verified before the action can be performed. 
 
-Applications that don't have any existing valid certificates (no certificates have been added yet, or all certificates have expired), won't be able to use this service action. You can use the [Update agent identity blueprint](../api/agentidentityblueprint-update.md) operation to perform an update instead.
+Agent identity blueprints that don't have any existing valid certificates (no certificates have been added yet, or all certificates have expired), won't be able to use this service action. You can use the [Update agent identity blueprint](../api/agentidentityblueprint-update.md) operation to perform an update instead.
 
 
 
