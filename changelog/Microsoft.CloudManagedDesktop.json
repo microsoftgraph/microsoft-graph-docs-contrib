@@ -22,6 +22,14 @@
       "ChangeList": [
         {
           "Id": "4052b7de-ca21-43fa-abf6-575fc5686115",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "cloudPCUserSettingsPersistenceProfileStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **cloudPCUserSettingsPersistenceProfileStatus** enumeration type.",
+          "Target": "cloudPCUserSettingsPersistenceProfileStatus"
+        },
+        {
+          "Id": "4052b7de-ca21-43fa-abf6-575fc5686115",
           "ApiChange": "Resource",
           "ChangedApiName": "cloudPCUserSettingsPersistenceDetail",
           "ChangeType": "Addition",
