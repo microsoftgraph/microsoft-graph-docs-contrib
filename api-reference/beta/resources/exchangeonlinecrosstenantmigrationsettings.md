@@ -1,10 +1,10 @@
 ---
 title: "exchangeOnlineCrossTenantMigrationSettings resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+description: "Settings used for Cross Tenant Migrations of Exchange Online resources"
+author: "danguilliams"
 ms.date: 10/30/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice: "t2t-migration"
 doc_type: resourcePageType
 ---
 
@@ -14,14 +14,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Settings used when migrating Exchange Online content during a [crossTenantMigrationJob](../resources/crosstenantmigrationjob.md).
 
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|sourceEndpoint|String|**TODO: Add Description**|
-|targetDeliveryDomain|String|**TODO: Add Description**|
+|sourceEndpoint|String|Name of the Migration Endpoint in the source tenant|
+|targetDeliveryDomain|String|Delivery domain on the target tenant|
 
 ## Relationships
 None.

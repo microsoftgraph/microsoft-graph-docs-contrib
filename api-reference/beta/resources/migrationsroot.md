@@ -1,10 +1,10 @@
 ---
 title: "migrationsRoot resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+description: "Migrations of content"
+author: "danguilliams"
 ms.date: 10/30/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice: "t2t-migration"
 doc_type: resourcePageType
 ---
 
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+The root path from which migration actions are performed.
 
 
 Inherits from [entity](../resources/entity.md).
@@ -23,18 +23,18 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List crossTenantMigrationJobs](../api/migrationsroot-list-crosstenantmigrationjobs.md)|[crossTenantMigrationJob](../resources/crosstenantmigrationjob.md) collection|**TODO: Add a useful description.**|
-|[Create crossTenantMigrationJob](../api/migrationsroot-post-crosstenantmigrationjobs.md)|[crossTenantMigrationJob](../resources/crosstenantmigrationjob.md)|Create a new crossTenantMigrationJob object.|
+|[List crossTenantMigrationJobs](../api/migrationsroot-list-crosstenantmigrationjobs.md)|[crossTenantMigrationJob](../resources/crosstenantmigrationjob.md) collection|List all of the crossTenantMigrationJobs for this tenant|
+|[Create crossTenantMigrationJob](../api/migrationsroot-post-crosstenantmigrationjobs.md)|[crossTenantMigrationJob](../resources/crosstenantmigrationjob.md)|Create a new crossTenantMigrationJob to migrate content to this tenant|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md). Inherits from [entity](../resources/entity.md)|
+|id|String|migrations root id. Inherited from [entity](../resources/entity.md). Inherits from [entity](../resources/entity.md)|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|crossTenantMigrationJobs|[crossTenantMigrationJob](../resources/crosstenantmigrationjob.md) collection|**TODO: Add Description**|
+|crossTenantMigrationJobs|[crossTenantMigrationJob](../resources/crosstenantmigrationjob.md) collection|Migration Jobs associated with this tenant.|
 
 ## JSON representation
 The following JSON representation shows the resource type.

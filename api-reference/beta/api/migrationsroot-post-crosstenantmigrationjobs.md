@@ -1,10 +1,10 @@
 ---
 title: "Create crossTenantMigrationJob"
-description: "Create a new crossTenantMigrationJob object."
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+description: "Create a new crossTenantMigrationJob."
+author: "danguilliams"
 ms.date: 10/30/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice: "t2t-migration"
 doc_type: apiPageType
 ---
 
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new crossTenantMigrationJob object.
+Create a new [crossTenantMigrationJob](../resources/crosstenantmigrationjob.md).
 
 ## Permissions
 
@@ -50,23 +50,15 @@ In the request body, supply a JSON representation of the [crossTenantMigrationJo
 
 You can specify the following properties when creating a **crossTenantMigrationJob**.
 
-**TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|**TODO: Add Description** Required.|
-|jobType|crossTenantMigrationJobType|**TODO: Add Description**. The possible values are: `validate`, `migrate`, `unknownFutureValue`. Required.|
-|sourceTenantId|String|**TODO: Add Description** Required.|
-|targetTenantId|String|**TODO: Add Description** Required.|
-|completeAfterDateTime|DateTimeOffset|**TODO: Add Description** Required.|
-|status|crossTenantMigrationJobStatus|**TODO: Add Description**. The possible values are: `submitted`, `approved`, `processing`, `cuttingOver`, `inProgress`, `completed`, `completedWithErrors`, `failed`, `cancelled`, `pendingCancel`, `adminActionRequired`, `validateSubmitted`, `validateProcessing`, `validateInProgress`, `validatePassed`, `validateFailed`, `pendingDelete`, `deleted`, `unknownFutureValue`. Required.|
-|message|String|**TODO: Add Description** Optional.|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Required.|
-|createdBy|String|**TODO: Add Description** Required.|
-|lastUpdatedDateTime|DateTimeOffset|**TODO: Add Description** Required.|
-|exchangeSettings|[exchangeOnlineCrossTenantMigrationSettings](../resources/exchangeonlinecrosstenantmigrationsettings.md)|**TODO: Add Description** Optional.|
-|workloads|String collection|**TODO: Add Description** Required.|
-|resourceType|String|**TODO: Add Description** Required.|
-|resources|String collection|**TODO: Add Description** Required.|
+|displayName|String|Name of the crossTenantMigrationJob. Must be unique per tenant. Required.|
+|completeAfterDateTime|DateTimeOffset|Time when the migration batch should begin processing.  Required.|
+|sourceTenantId|String|Tenant ID (GUID) of the source tenant for the migration. Required.|
+|exchangeSettings|[exchangeOnlineCrossTenantMigrationSettings](../resources/exchangeonlinecrosstenantmigrationsettings.md)|Settings for Exchange Online migrations. Optional, but required if Exchange is a specfied workload.|
+|workloads|String collection|Workloads to migrate on the resources. Optional. If excluded, all available workloads will be included in the migration.|
+|resourceType|String|Type of resources to migrate. Only `Users` is supported at this time. Required.|
+|resources|String collection|Object IDs (GUID) of the resources to migrate. Limit of 2000 resources per [crossTenantMigrationJob](../resources/crosstenantmigrationjob.md) Required.|
 
 
 
@@ -89,25 +81,23 @@ POST https://graph.microsoft.com/beta/solutions/migrations/crossTenantMigrationJ
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.crossTenantMigrationJob",
-  "displayName": "String",
-  "jobType": "String",
-  "sourceTenantId": "String",
-  "targetTenantId": "String",
-  "completeAfterDateTime": "String (timestamp)",
-  "status": "String",
-  "message": "String",
-  "createdBy": "String",
-  "lastUpdatedDateTime": "String (timestamp)",
+  "displayName": "xtmigration_user_req_1",
+  "completeAfterDateTime": "2024-12-09T22:48:03.092Z",
+  "sourceTenantId": "12345678-1234-1234-1234-123456789012",
   "exchangeSettings": {
-    "@odata.type": "microsoft.graph.exchangeOnlineCrossTenantMigrationSettings"
+    "targetDeliveryDomain": "xtmigration.onmicrosoft.com",
+    "sourceEndpoint": "sampleEndpointText"
   },
-  "workloads": [
-    "String"
-  ],
-  "resourceType": "String",
   "resources": [
-    "String"
+    "4dd550d9-9ea2-4e71-a16b-60b1d1c4f506",
+    "63f15b55-f61a-49cb-a599-2e3d233afb2c",
+    "41d94bac-3a53-47d6-a89e-583830104e15"
+  ],
+  "resourceType": "Users",
+  "workloads": [
+    "Teams",
+    "Exchange",
+    "ODSP"
   ]
 }
 ```
@@ -116,7 +106,7 @@ Content-Type: application/json
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -127,29 +117,25 @@ The following example shows the response.
 HTTP/1.1 201 Created
 Content-Type: application/json
 
+"Location": "https://graph.microsoft.com/beta/solutions/migrations/crosstenantmigrationjobs('add14989-2b21-4001-81bd-a18b0bac1dea')"
 {
-  "@odata.type": "#microsoft.graph.crossTenantMigrationJob",
-  "id": "1a2fbf52-396e-c3ed-6a65-9772e12d8a43",
-  "displayName": "String",
-  "jobType": "String",
-  "sourceTenantId": "String",
-  "targetTenantId": "String",
-  "completeAfterDateTime": "String (timestamp)",
-  "status": "String",
-  "message": "String",
-  "createdDateTime": "String (timestamp)",
-  "createdBy": "String",
-  "lastUpdatedDateTime": "String (timestamp)",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#solutions/migrations/crossTenantMigrationJobs/$entity",
+  "id": "add14989-2b21-4001-81bd-a18b0bac1dea",
+  "displayName": "xtmigration_user_req_1",
+  "jobType" : "migrate",
+  "status": "Submitted",
+  "message": "",
+  "completeAfterDateTime": "2023-12-17T20:38:04.101Z",
+  "sourceTenantId": "12345678-1234-1234-1234-123456789012",
   "exchangeSettings": {
-    "@odata.type": "microsoft.graph.exchangeOnlineCrossTenantMigrationSettings"
+    "targetDeliveryDomain": "xtmigration.onmicrosoft.com",
+    "sourceEndpoint": "sampleEndpointText"
   },
-  "workloads": [
-    "String"
-  ],
-  "resourceType": "String",
-  "resources": [
-    "String"
-  ]
+  "resourceType":"Users",
+  "workloads": ["Teams", "Exchange", "ODSP"],
+  "createdBy": "66055c84-3b6e-4d14-9b9e-4c7f4105962e",
+  "createdDateTime": "2025-11-14T20:55:10.5427196Z",
+  "lastUpdatedDateTime": "2025-11-14T20:55:10.5427196Z"
 }
 ```
 

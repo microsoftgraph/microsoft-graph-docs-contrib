@@ -1,10 +1,10 @@
 ---
 title: "List crossTenantMigrationJob objects"
 description: "Get a list of the crossTenantMigrationJob objects and their properties."
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+author: "danguilliams"
 ms.date: 10/30/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice: "t2t-migration"
 doc_type: apiPageType
 ---
 

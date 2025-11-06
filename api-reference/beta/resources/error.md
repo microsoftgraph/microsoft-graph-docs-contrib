@@ -1,10 +1,10 @@
 ---
 title: "error resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+description: "Error resource"
+author: "danguilliams"
 ms.date: 10/30/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice: "t2t-migration"
 doc_type: resourcePageType
 ---
 
@@ -14,14 +14,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+Represents the details of an error with a message and error code.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|code|String|**TODO: Add Description**|
-|message|String|**TODO: Add Description**|
+|code|String|The error code|
+|message|String|The message for the error|
 
 ## Relationships
 None.

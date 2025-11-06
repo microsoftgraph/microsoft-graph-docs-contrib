@@ -1,10 +1,10 @@
 ---
 title: "crossTenantMigrationTask: cancel"
 description: "Cancel a specific crossTenantMigrationTask (User within a CrossTenantMigrationJob)"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+author: "danguilliams"
 ms.date: 10/30/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice: "t2t-migration"
 doc_type: apiPageType
 ---
 
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Cancel a specific crossTenantMigrationTask (User within a CrossTenantMigrationJob)
+Cancel a specific [crossTenantMigrationTask](../resources/crosstenantmigrationtask.md) (User within a CrossTenantMigrationJob)
 
 ## Permissions
 
@@ -49,7 +49,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this action returns a `200 OK` response code and a [crossTenantMigrationCancelResponse](../resources/crosstenantmigrationcancelresponse.md) in the response body.
+If successful, this action returns a `202 Accepted` response code and a [crossTenantMigrationCancelResponse](../resources/crosstenantmigrationcancelresponse.md) in the response body.
 
 ## Examples
 
@@ -77,13 +77,13 @@ The following example shows the response.
 }
 -->
 ``` http
-HTTP/1.1 200 OK
+HTTP/1.1 202 Accepted
 Content-Type: application/json
 
+"Location": "https://graph.microsoft.com/beta/solutions/migrations/crosstenantmigrationjobs('{crossTenantMigrationJobId}')"
 {
-  "value": {
-    "@odata.type": "microsoft.graph.crossTenantMigrationCancelResponse"
-  }
+  "status": "Accepted",
+  "message": "Cancellation request for user id: {crossTenantMigrationTaskId} from batch: {crossTenantMigrationJobId} was accepted."
 }
 ```
 

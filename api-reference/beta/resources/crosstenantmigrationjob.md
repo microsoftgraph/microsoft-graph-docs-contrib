@@ -1,10 +1,10 @@
 ---
 title: "crossTenantMigrationJob resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+description: "A Cross Tenant Migration Job"
+author: "danguilliams"
 ms.date: 10/30/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice: "t2t-migration"
 doc_type: resourcePageType
 ---
 
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+A Cross Tenant Migration Job. This represents a job that will migrate user data from a source tenant to a target tenant. 
 
 
 Inherits from [entity](../resources/entity.md).
@@ -24,37 +24,37 @@ Inherits from [entity](../resources/entity.md).
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List](../api/migrationsroot-list-crosstenantmigrationjobs.md)|[crossTenantMigrationJob](../resources/crosstenantmigrationjob.md) collection|Get a list of the crossTenantMigrationJob objects and their properties.|
-|[Create](../api/migrationsroot-post-crosstenantmigrationjobs.md)|[crossTenantMigrationJob](../resources/crosstenantmigrationjob.md)|Create a new crossTenantMigrationJob object.|
+|[Create](../api/migrationsroot-post-crosstenantmigrationjobs.md)|[crossTenantMigrationJob](../resources/crosstenantmigrationjob.md)|Create a new crossTenantMigrationJob object|
 |[Get](../api/crosstenantmigrationjob-get.md)|[crossTenantMigrationJob](../resources/crosstenantmigrationjob.md)|Read the properties and relationships of [crossTenantMigrationJob](../resources/crosstenantmigrationjob.md) object.|
-|[Update](../api/crosstenantmigrationjob-update.md)|[crossTenantMigrationJob](../resources/crosstenantmigrationjob.md)|Update the properties of a crossTenantMigrationJob object.|
+|[Update](../api/crosstenantmigrationjob-update.md)|[crossTenantMigrationJob](../resources/crosstenantmigrationjob.md)|Update the properties of a crossTenantMigrationJob object|
 |[Delete](../api/migrationsroot-delete-crosstenantmigrationjobs.md)|None|Delete a crossTenantMigrationJob object.|
-|[cancel](../api/crosstenantmigrationjob-cancel.md)|[crossTenantMigrationCancelResponse](../resources/crosstenantmigrationcancelresponse.md)|**TODO: Add Description**|
-|[validate](../api/crosstenantmigrationjob-validate.md)|[crossTenantMigrationJob](../resources/crosstenantmigrationjob.md)|**TODO: Add Description**|
-|[List users](../api/crosstenantmigrationjob-list-users.md)|[crossTenantMigrationTask](../resources/crosstenantmigrationtask.md) collection|**TODO: Add a useful description.**|
+|[cancel](../api/crosstenantmigrationjob-cancel.md)|[crossTenantMigrationCancelResponse](../resources/crosstenantmigrationcancelresponse.md)|Cancels a Cross tenant Migration Job.|
+|[validate](../api/crosstenantmigrationjob-validate.md)|[crossTenantMigrationJob](../resources/crosstenantmigrationjob.md)|Validate a Cross Tenant Migration Job|
+|[List users](../api/crosstenantmigrationjob-list-users.md)|[crossTenantMigrationTask](../resources/crosstenantmigrationtask.md) collection|List the users being migrated and the status of thier migration|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|completeAfterDateTime|DateTimeOffset|**TODO: Add Description**|
-|createdBy|String|**TODO: Add Description**|
-|createdDateTime|DateTimeOffset|**TODO: Add Description**|
-|displayName|String|**TODO: Add Description**|
-|exchangeSettings|[exchangeOnlineCrossTenantMigrationSettings](../resources/exchangeonlinecrosstenantmigrationsettings.md)|**TODO: Add Description**|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md). Inherits from [entity](../resources/entity.md)|
-|jobType|crossTenantMigrationJobType|**TODO: Add Description**. The possible values are: `validate`, `migrate`, `unknownFutureValue`.|
-|lastUpdatedDateTime|DateTimeOffset|**TODO: Add Description**|
-|message|String|**TODO: Add Description**|
-|resources|String collection|**TODO: Add Description**|
-|resourceType|String|**TODO: Add Description**|
-|sourceTenantId|String|**TODO: Add Description**|
-|status|crossTenantMigrationJobStatus|**TODO: Add Description**. The possible values are: `submitted`, `approved`, `processing`, `cuttingOver`, `inProgress`, `completed`, `completedWithErrors`, `failed`, `cancelled`, `pendingCancel`, `adminActionRequired`, `validateSubmitted`, `validateProcessing`, `validateInProgress`, `validatePassed`, `validateFailed`, `pendingDelete`, `deleted`, `unknownFutureValue`.|
-|targetTenantId|String|**TODO: Add Description**|
-|workloads|String collection|**TODO: Add Description**|
+|completeAfterDateTime|DateTimeOffset|DateTime after which the migration should be performed|
+|createdBy|String|ID of the user that created the job|
+|createdDateTime|DateTimeOffset|When the job what created|
+|displayName|String|Display name of the job. Must be unique per tenant|
+|exchangeSettings|[exchangeOnlineCrossTenantMigrationSettings](../resources/exchangeonlinecrosstenantmigrationsettings.md)|Settings to use for migration of Exchange workload|
+|id|String|ID (GUID) of the mgiration job|
+|jobType|crossTenantMigrationJobType|Type of the migration job. The possible values are: `validate` (only validation is performed, no migration), `migrate` (Content is migrated)|
+|lastUpdatedDateTime|DateTimeOffset|When this migration job was last updated|
+|message|String|Status message of the migration job|
+|resources|String collection|IDs (GUID) of the resources being migrated with the migration job|
+|resourceType|String|Type of resource being migrated. Only `Users` is currently supported|
+|sourceTenantId|String|ID (GUID) of the tenant that content is being migrated from|
+|status|crossTenantMigrationJobStatus|Most recent status of the migration job. The possible values are: `submitted`, `approved`, `processing`, `cuttingOver`, `inProgress`, `completed`, `completedWithErrors`, `failed`, `cancelled`, `pendingCancel`, `adminActionRequired`, `validateSubmitted`, `validateProcessing`, `validateInProgress`, `validatePassed`, `validateFailed`, `pendingDelete`, and `deleted`|
+|targetTenantId|String|ID of the tenant that content is being migrated to|
+|workloads|String collection|Workloads to migrate. Supported workloads are `Teams`, `Exchange`, and `ODSP` (OneDrive/SharePoint)|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|users|[crossTenantMigrationTask](../resources/crosstenantmigrationtask.md) collection|**TODO: Add Description**|
+|users|[crossTenantMigrationTask](../resources/crosstenantmigrationtask.md) collection|Details and status of the users being migrated in this migration job|
 
 ## JSON representation
 The following JSON representation shows the resource type.
