@@ -42,6 +42,7 @@ To update String data types, such as **signInPageText** and **usernameHintText**
 -->
 ``` http
 PATCH /organization/{organizationId}/branding/themes/{organizationalBrandingThemeId}/localizations/{organizationalBrandingThemeLocalizationId}
+```
 
 |Name|Description|
 |:---|:---|
