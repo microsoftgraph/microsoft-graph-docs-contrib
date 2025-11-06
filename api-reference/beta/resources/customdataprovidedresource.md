@@ -34,9 +34,9 @@ Inherits from [accessPackageResource](../resources/accesspackageresource.md).
 |description|String|A description for the resource.|
 |displayName|String|The display name of the resource, such as the application name, group name, or site name.|
 |id|String| Read-only.|
-|isPendingOnboarding|Boolean|`True` if the resource is not yet available for assignment. Read-only. |
-|originId|String|The unique identifier of the resource in the origin system. In the case of a Microsoft Entra group, originId is the identifier of the group. Supports `$filter` (`eq`).|
-|originSystem|String|The type of the resource in the origin system. For a customDataProvidedResource this is always "CustomDataProvidedResource". Supports `$filter` (`eq`).|
+|isPendingOnboarding|Boolean|`True` if the resource isn't yet available for assignment. Read-only. |
+|originId|String|The unique identifier of the resource in the origin system. If the resource is a  Microsoft Entra group, originId is the identifier of the group. Supports `$filter` (`eq`).|
+|originSystem|String|The type of the resource in the origin system. For a customDataProvidedResource, the value of the originSystem should be set to "CustomDataProvidedResource."  Supports `$filter` (`eq`).|
 |resourceType|String|The type of the resource.|
 |url|String|A unique resource locator for the resource, such as the URL for signing a user into an application.|
 
