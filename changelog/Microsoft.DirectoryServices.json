@@ -3,7 +3,7 @@
    {
       "ChangeList": [
         {
-          "Id": "97e80cb9-b4af-40a3-94ee-d4d85aabc440",
+          "Id": "fcda7807-b752-40fb-9a05-786f9ea09f57",
           "ApiChange": "Relationship",
           "ChangedApiName": "themes",
           "ChangeType": "Addition",
@@ -15,7 +15,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "organizationalBrandingTheme",
           "ChangeType": "Addition",
-          "Description": "Added the [organizationalBrandingTheme](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingTheme?view=graph-rest-beta) resource.",
+          "Description": "Added the [organizationalBrandingTheme](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingTheme?view=graph-rest-beta) resource and its associated APIs for managing app-based branding for your tenant.",
           "Target": "organizationalBrandingTheme"
         },
         {
@@ -23,7 +23,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "organizationalBrandingThemeLocalization",
           "ChangeType": "Addition",
-          "Description": "Added the [organizationalBrandingThemeLocalization](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingThemeLocalization?view=graph-rest-beta) resource.",
+          "Description": "Added the [organizationalBrandingThemeLocalization](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingThemeLocalization?view=graph-rest-beta) resource and its associated APIs for managing locale-specific app-based branding for your tenant.",
           "Target": "organizationalBrandingThemeLocalization"
         }
       ],

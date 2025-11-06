@@ -35,7 +35,6 @@ Inherits from [entity](../resources/entity.md).
 
 ## Properties
 
-This method supports the `$select`, `$filter`, `$orderby`, `$top` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 |Property|Type|Description|
 |:---|:---|:---|
