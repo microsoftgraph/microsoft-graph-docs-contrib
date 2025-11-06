@@ -1,10 +1,10 @@
 ---
 title: "List ownedObjects"
-description: "**TODO: Add a useful description.**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+description: "Retrieve a list of objects owned by the agent identity blueprint principal.  This could include applications or groups."
+author: "zallison22"
 ms.date: 10/27/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 
@@ -14,7 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Returns the list of directory objects that are owned by this principal.
+Retrieve a list of objects owned by the [agentIdentityBlueprintPrincipal](../resources/agentidentityblueprintprincipal.md).  This could include applications or groups.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -66,30 +68,29 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/servicePrincipals/{id}/ownedObjects
+GET https://graph.microsoft.com/beta/servicePrincipals/{id}/Microsoft.Graph.AgentIdentityBlueprintPrincipal/ownedObjects
 ```
 
 
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
+>Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.directoryObject"
-}
--->
-``` http
+  "@odata.type": "microsoft.graph.directoryObject",
+  "isCollection": true
+} -->
+
+```http
 HTTP/1.1 200 OK
-Content-Type: application/json
+Content-type: application/json
 
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.directoryObject",
-      "id": "a6c034b8-621b-dee3-6abb-52cbce801fe9",
-      "deletedDateTime": "String (timestamp)"
+      "id": "id-value"
     }
   ]
 }

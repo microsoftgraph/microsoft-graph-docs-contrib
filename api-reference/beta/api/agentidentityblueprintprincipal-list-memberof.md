@@ -1,10 +1,10 @@
 ---
 title: "List memberOf"
-description: "**TODO: Add a useful description.**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+description: "Get the groups and directory roles that this agent identity blueprint principal is a direct member of."
+author: "zallison22"
 ms.date: 10/27/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 
@@ -14,7 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Returns the list of groups and directory roles that this principal is a member of. This operation isn't transitive.
+Get the groups and directory roles that this [servicePrincipal](../resources/serviceprincipal.md) is a direct member of. This operation isn't transitive.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -34,7 +36,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /servicePrincipals/{id}/memberOf
+GET /servicePrincipals/{id}/Microsoft.Graph.AgentIdentityBlueprintPrincipal/memberOf
 ```
 
 ## Optional query parameters
@@ -66,30 +68,36 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/servicePrincipals/{id}/memberOf
+GET https://graph.microsoft.com/beta/servicePrincipals/{id}/Microsoft.Graph.AgentIdentityBlueprintPrincipal/memberOf
 ```
 
 
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
+> **Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.directoryObject"
-}
--->
-``` http
+  "@odata.type": "microsoft.graph.directoryObject",
+  "isCollection": true
+} -->
+```http
 HTTP/1.1 200 OK
-Content-Type: application/json
+Content-type: application/json
 
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.directoryObject",
-      "id": "a6c034b8-621b-dee3-6abb-52cbce801fe9",
-      "deletedDateTime": "String (timestamp)"
+      "@odata.type": "#microsoft.graph.group",
+      "id": "id-value",
+      "createdDateTime": null,
+      "description": "All users at the company",
+      "displayName": "All Users",
+      "groupTypes": [],
+      "mailEnabled": false,
+      "securityEnabled": true,
     }
   ]
 }

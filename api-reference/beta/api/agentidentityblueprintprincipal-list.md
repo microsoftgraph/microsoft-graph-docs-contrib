@@ -1,14 +1,14 @@
 ---
-title: "List servicePrincipals"
-description: "Retrieve a list of servicePrincipal objects."
-ms.localizationpriority: high
-doc_type: apiPageType
+title: "List agentIdentityBlueprintPrincipal"
+description: "Retrieve a list of agentIdentityBlueprintPrincipal objects."
+author: "zallison22"
+ms.date: 10/27/2025
+ms.localizationpriority: medium
 ms.subservice: "entra-applications"
-author: "Jackson-Woods"
-ms.date: 04/19/2024
+doc_type: apiPageType
 ---
 
-# List servicePrincipals
+# List agentIdentityBlueprintPrincipals
 
 Namespace: microsoft.graph
 
@@ -31,12 +31,12 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /servicePrincipals/graph.agentIdentityBlueprintPrincipal
+GET /servicePrincipals/Microsoft.Graph.AgentIdentityBlueprintPrincipal
 ```
 
 ## Optional query parameters
 
-This method supports the `$count`, `$expand`, `$filter`, `$orderby`, `$search`, `$select`, and `$top` [OData query parameters](/graph/query-parameters) to help customize the response. The default and maximum page size is 100 service principal objects. Some queries are supported only when you use the **ConsistencyLevel** header set to `eventual` and `$count`. For more information, see [Advanced query capabilities on directory objects](/graph/aad-advanced-queries).
+This method supports the `$count`, `$expand`, `$filter`, `$orderby`, `$search`, `$select`, and `$top` [OData query parameters](/graph/query-parameters) to help customize the response. The default and maximum page size is 100 agent identity blueprint principal objects. Some queries are supported only when you use the **ConsistencyLevel** header set to `eventual` and `$count`. For more information, see [Advanced query capabilities on directory objects](/graph/aad-advanced-queries).
 
 ## Request headers
 
@@ -51,16 +51,21 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and collection of [servicePrincipal](../resources/serviceprincipal.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and collection of [agentIdentityBlueprintPrincipal](../resources/agentidentityblueprintprincipal.md) objects in the response body.
 
 ## Example
 
 #### Request
 
-```http
-GET https://graph.microsoft.com/beta/servicePrincipals/graph.agentIdentityBlueprintPrincipal
-```
 
+<!-- {
+  "blockType": "request",
+  "name": "list_serviceprincipal"
+}-->
+
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/servicePrincipals/Microsoft.Graph.AgentIdentityBlueprintPrincipal
+```
 
 #### Response
 
@@ -81,9 +86,45 @@ Content-type: application/json
 {
   "value": [
     {
-      "accountEnabled":true,
-      "displayName":"amasf",
+      "@odata.type": "#microsoft.graph.agentIdentityBlueprintPrincipal",
+      "id": "String (identifier)",
+      "accountEnabled": "Boolean",
+      "createdByAppId": "String",
+      "appDescription": "String",
+      "appDisplayName": "String",
+      "appId": "String",
+      "appOwnerOrganizationId": "Guid",
+      "appRoleAssignmentRequired": "Boolean",
+      "disabledByMicrosoftStatus": "String",
+      "displayName": "String",
+      "publisherName": "String",
+      "servicePrincipalNames": [
+        "String"
+      ],
+      "servicePrincipalType": "String",
+      "signInAudience": "String",
+      "tags": [
+        "String"
+      ],
+      "appRoles": [
+        {
+          "@odata.type": "microsoft.graph.appRole"
+        }
+      ],
+      "info": {
+        "@odata.type": "microsoft.graph.informationalUrl"
+      },
+      "publishedPermissionScopes": [
+        {
+          "@odata.type": "microsoft.graph.permissionScope"
+        }
+      ],
+      "verifiedPublisher": {
+        "@odata.type": "microsoft.graph.verifiedPublisher"
+      }
     }
   ]
 }
 ```
+
+

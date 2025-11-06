@@ -1,10 +1,10 @@
 ---
 title: "List owners"
-description: "**TODO: Add a useful description.**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+description: "Retrieve a list of owners of the agent identity."
+author: "zallison22"
 ms.date: 10/27/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 
@@ -14,7 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add a useful description.**
+Retrieve a list of owners of the [agentIdentity](../resources/agentidentity.md).
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -34,7 +36,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /servicePrincipals/{servicePrincipalsId}/owners
+GET /servicePrincipals/{id}/Microsoft.Graph.AgentIdentity/owners
 ```
 
 ## Optional query parameters
@@ -66,7 +68,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/servicePrincipals/{servicePrincipalsId}/owners
+GET https://graph.microsoft.com/beta/serviceprincipals/bbec3106-565f-4907-941e-96b4dbfef21c/Microsoft.Graph.AgentIdentity/owners
 ```
 
 
@@ -80,18 +82,37 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.directoryObject"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
-Content-Type: application/json
+Content-type: application/json
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.directoryObject",
-      "id": "a6c034b8-621b-dee3-6abb-52cbce801fe9",
-      "deletedDateTime": "String (timestamp)"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#directoryObjects",
+    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET servicePrincipals(appId=<key>)/owners?$select=deletedDateTime",
+    "value": [
+        {
+            "@odata.type": "#microsoft.graph.user",
+            "id": "ce4770b3-70b2-4a38-a242-76631e9f7408",
+            "accountEnabled": null,
+            "city": null,
+            "createdDateTime": null,
+            "displayName": null,
+            "mail": null,
+            "mailNickname": null,
+            "otherMails": [],
+            "proxyAddresses": [],
+            "surname": null,
+            "userPrincipalName": null,
+            "userType": null
+        },
+        {
+            "@odata.type": "#microsoft.graph.user",
+            "id": "858a9c90-38b3-4e78-b915-234aece712c4"
+        },
+        {
+            "@odata.type": "#microsoft.graph.user",
+            "id": "7585d967-f300-43de-b817-7119a6404c5e"
+        }
+    ]
 }
 ```
-
