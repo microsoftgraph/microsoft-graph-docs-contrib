@@ -80,8 +80,6 @@ Content-type: application/json
 }
 ```
 
-
-
 #### Response
 
 The following example shows the response.
@@ -116,8 +114,6 @@ Content-type: application/json
   "workLocationType": "remote"
 }
 ```
-
-
 
 #### Response
 

@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a workPlanOccurrence object. Updates require the full occurrence object to be provided (PUT semantics). PATCH is not supported.
+Update the properties of a workPlanOccurrence object. Updates require the full occurrence object to be provided (PUT semantics). PATCH isn't supported.
 
 ## Permissions
 
@@ -81,8 +81,6 @@ Content-type: application/json
   }
 }
 ```
-
-
 
 ### Response
 

@@ -20,7 +20,7 @@ Defines the possible types of work locations.
 
 | Member | Value | Description |
 |:-------|:------|:------------|
-| unspecified | 0 | Indicates the user has not specified the location. |
+| unspecified | 0 | Indicates the user didn't specify the location. |
 | office | 1 | Indicates the user is working from an office location. |
 | remote | 2 | Indicates the user is working remotely. |
 | timeOff | 3 | Indicates the user is on time off. |

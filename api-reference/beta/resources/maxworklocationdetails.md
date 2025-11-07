@@ -21,7 +21,7 @@ Controls the level of location detail that can be shared.
 | Member | Value | Description |
 |:-------|:------|:------------|
 | unknown | 0 | The maximum level of location details to share is unknown. |
-| none | 1 | Do not share any location details. |
+| none | 1 | Don't share any location details. |
 | approximate | 2 | Share approximate location details only. |
 | specific | 3 | Share specific location details. |
 | unknownFutureValue | 4 | Reserved for future use. |

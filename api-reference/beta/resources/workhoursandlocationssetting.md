@@ -18,7 +18,7 @@ Represents a user's working hours and location preferences for modern hybrid wor
 
 Having access to a user's work hours and location information is useful in scenarios that handle activity planning, resource allocation, and meeting scheduling. You can [get](../api/workhoursandlocationssetting-get.md) and [update](../api/workhoursandlocationssetting-update.md) a user's work hours and locations as part of their personal work planning.
 
-You can set different work locations and schedules to accommodate flexible work arrangements. This is particularly useful for hybrid work scenarios where you may work from the office some days and remotely on others. You can set recurring patterns for regular schedules and create specific occurrences for exceptions or special arrangements.
+You can set different work locations and schedules to accommodate flexible work arrangements. These settings are useful for hybrid work scenarios where you may work from the office some days and remotely on others. You can set recurring patterns for regular schedules and create specific occurrences for exceptions or special arrangements.
 
 ## Methods
 

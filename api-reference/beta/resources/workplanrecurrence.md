@@ -14,11 +14,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a recurring work schedule pattern that defines when and where a user works on a regular basis.
+Represents a recurring work schedule pattern that defines when and where a user works regularly.
 
-A work plan recurrence allows users to establish repeating weekly work schedules, such as working in the office every Monday, Wednesday, and Friday from 9 AM to 5 PM, or working remotely on Tuesdays and Thursdays. You can create multiple recurrences to accommodate different work patterns throughout the week.
+A work plan recurrence allows users to establish repeating weekly work schedules. Examples include:
 
-Time-off entries cannot be set as recurring patterns and must be added as individual [workPlanOccurrence](workplanoccurrence.md) objects.
+- Office work every Monday, Wednesday, and Friday from 9 AM to 5 PM
+- Remote work on Tuesdays and Thursdays
+
+You can create multiple recurrences to accommodate different work patterns throughout the week.
+
+Time-off entries can't be set as recurring patterns and must be added as individual [workPlanOccurrence](workplanoccurrence.md) objects.
 
 ## Methods
 
@@ -36,7 +41,7 @@ Time-off entries cannot be set as recurring patterns and must be added as indivi
 | id | String | Unique identifier for the recurrence. |
 | start | [dateTimeTimeZone](datetimetimezone.md) | The start date and time for the recurring work plan. |
 | end | [dateTimeTimeZone](datetimetimezone.md) | The end date and time for the recurring work plan. |
-| workLocationType | workLocationType | The type of work location. Possible values are: `unspecified`, `office`, `remote`, `timeOff`, `unknownFutureValue`. Cannot be set to `timeOff`. |
+| workLocationType | workLocationType | The type of work location. Possible values are: `unspecified`, `office`, `remote`, `timeOff`, `unknownFutureValue`. Can't be set to `timeOff`. |
 | recurrence | [patternedRecurrence](patternedrecurrence.md) | The recurrence pattern defining when this work plan repeats. |
 
 ## Relationships
@@ -73,7 +78,7 @@ The following JSON representation shows the resource type.
 
 ## Remarks
 
-Individual recurrences cannot be accessed by ID. Use the recurrences collection endpoint instead. Updates require the full recurrence object to be provided (PUT semantics). PATCH is not supported.
+You can't access individual recurrences by ID. Use the recurrences collection endpoint instead. Updates require the full recurrence object to be provided (PUT semantics). PATCH isn't supported.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2024-12-20 14:57:30 UTC -->

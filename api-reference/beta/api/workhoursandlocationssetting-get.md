@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the properties and relationships of a user's [workHoursAndLocationsSetting](../resources/workhoursandlocationssetting.md). This includes the location sharing preferences and navigation properties to work plan recurrences and occurrences.
+Get the properties and relationships of a user's [workHoursAndLocationsSetting](../resources/workhoursandlocationssetting.md). The settings include the location sharing preferences and navigation properties to work plan recurrences and occurrences.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 

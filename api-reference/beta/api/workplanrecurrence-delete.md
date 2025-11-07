@@ -64,8 +64,6 @@ The following example shows a request.
 DELETE https://graph.microsoft.com/beta/me/settings/workHoursAndLocations/recurrences/{id}
 ```
 
-
-
 ### Response
 
 The following example shows the response.

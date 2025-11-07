@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a workPlanOccurrence object. Only time-off occurrences can be deleted. Occurrences generated from recurrences cannot be deleted.
+Delete a workPlanOccurrence object. Only time-off occurrences can be deleted. Occurrences generated from recurrences can't be deleted.
 
 ## Permissions
 
@@ -63,8 +63,6 @@ The following example shows a request.
 ```http
 DELETE https://graph.microsoft.com/beta/me/settings/workHoursAndLocations/occurrences/{id}
 ```
-
-
 
 ### Response
 
