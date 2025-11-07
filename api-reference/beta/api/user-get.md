@@ -1,6 +1,6 @@
 ---
-title: "Get user"
-description: "Retrieve the properties and relationships of user object."
+title: "Get user or agentUser"
+description: "Retrieve the properties and relationships of user or agentUser object."
 author: "yyuank"
 ms.reviewer: "iamut"
 ms.localizationpriority: high
@@ -9,15 +9,15 @@ doc_type: apiPageType
 ms.date: 12/23/2024
 ---
 
-# Get user
+# Get user or agentUser
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of [user](../resources/user.md) object.
+Retrieve the properties and relationships of [user](../resources/user.md) or [agentUser](../resources/agentuser.md) object.
 
-This operation returns by default only a subset of the more commonly used properties for each user. These _default_ properties are noted in the [Properties](../resources/user.md#properties) section. To get properties that are _not_ returned by default, do a [GET operation](user-get.md) for the user and specify the properties in a `$select` OData query option. Because the **user** resource supports [extensions](/graph/extensibility-overview), you can also use the `GET` operation to get custom properties and extension data in a **user** instance.
+This operation returns by default only a subset of the more commonly used properties. These _default_ properties are noted in the [Properties](../resources/user.md#properties) section. To get properties that are _not_ returned by default, do a [GET operation](user-get.md) and specify the properties in a `$select` OData query option. Because the **user** resource supports [extensions](/graph/extensibility-overview), you can also use the `GET` operation to get custom properties and extension data in a **user** instance.
 
 Customers through Microsoft Entra ID for customers can also use this API operation to retrieve their details.
 
@@ -26,13 +26,14 @@ Customers through Microsoft Entra ID for customers can also use this API operati
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
+### Permissions to get a user
 <!-- { "blockType": "ignored", "name": "user_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/user-get-permissions.md)]
 
 >[!NOTE]
 > The `User.Read` permission allows the app to read the profile, and discover relationships such as the group membership, reports, and manager of the signed-in user only.
 
-### Permissions for specific scenarios
+#### Permissions for specific scenarios
 - To read the **employeeLeaveDateTime** property:
   - In delegated scenarios, the signed-in user needs at least one of the following Microsoft Entra roles: *Lifecycle Workflows Administrator* (least privilege), *Global Reader*; the app must be granted the *User-LifeCycleInfo.Read.All* delegated permission.
   - In app-only scenarios with Microsoft Graph permissions, the app must be granted the *User-LifeCycleInfo.Read.All* permission.
@@ -44,21 +45,16 @@ Choose the permission or permissions marked as least privileged for this API. Us
 - *User-Phone.ReadWrite.All* is the least privileged permission to read and write the **businessPhones** and **mobilePhone** properties; also allows to read some identifier-related properties on the user object.
 - *User.EnableDisableAccount.All* + *User.Read.All* is the least privileged combination of permissions to read and write the **accountEnabled** property.
 
+### Permissions to get an agentUser
+
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
+|Permission type      | Least privileged permission | Higher privileged permissions |
+|:--------------------|:---------------------------|:-----------------------------|
+|Delegated (work or school account) | User.ReadWrite.All | Not available. |
+|Delegated (personal Microsoft account) | Not supported. | Not supported.|
+|Application | User.ReadWrite.All | Not available. |
+
 ## HTTP request
-
-For a specific user:
-<!-- { "blockType": "ignored" } -->
-```http
-GET /me
-GET /users/{id | userPrincipalName}
-```
-
-[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
-
-> [!TIP]
->
-> + When the **userPrincipalName** begins with a `$` character, the GET request URL syntax `/users/$x@y.com` fails with a `400 Bad Request` error code. The request fails because the URL violates the OData URL convention, which expects only system query options to be prefixed with a `$` character. Remove the slash (/) after `/users` and enclose the **userPrincipalName** in parentheses and single quotes, as follows: `/users('$x@y.com')`. For example, `/users('$AdeleVance@contoso.com')`.
-> + To query a B2B user using the **userPrincipalName**, encode the hash (#) character. That is, replace the `#` symbol with `%23`. For example, `/users/AdeleVance_adatum.com%23EXT%23@contoso.com`.
 
 For the signed-in user:
 <!-- { "blockType": "ignored" } -->
@@ -68,16 +64,26 @@ GET /me
 
 [!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
 
+For a specified user or agentUser:
+```
+GET /users/{id | userPrincipalName}
+```
+
+> [!TIP]
+>
+> + When the **userPrincipalName** begins with a `$` character, the GET request URL syntax `/users/$x@y.com` fails with a `400 Bad Request` error code. The request fails because the URL violates the OData URL convention, which expects only system query options to be prefixed with a `$` character. Remove the slash (/) after `/users` and enclose the **userPrincipalName** in parentheses and single quotes, as follows: `/users('$x@y.com')`. For example, `/users('$AdeleVance@contoso.com')`.
+> + To query a B2B user using the **userPrincipalName**, encode the hash (#) character. That is, replace the `#` symbol with `%23`. For example, `/users/AdeleVance_adatum.com%23EXT%23@contoso.com`.
+
 ## Optional query parameters
 
-This method supports the `$select` [OData query parameter](/graph/query-parameters) to retrieve specific user properties, including those not returned by default. Extension properties also support query parameters as follows:
+This method supports the `$select` [OData query parameter](/graph/query-parameters) to retrieve specific properties, including those not returned by default. Extension properties also support query parameters as follows:
 
-| Extension type                     | Comments                                                                            |
-|------------------------------------|-------------------------------------------------------------------------------------|
-| onPremisesExtensionAttributes 1-15 | Returned only with `$select`.                                                       |
-| Schema extensions                  | Returned only with `$select`.                                                       |
-| Open extensions                    | Returned only through the [Get open extension](opentypeextension-get.md) operation. |
-| Directory extensions               | Returned only with `$select`.                                                       |
+| Extension type | Comments |
+|--|--|
+| onPremisesExtensionAttributes 1-15 | Returned only with `$select`. |
+| Schema extensions | Returned only with `$select`. |
+| Open extensions | Returned only through the [Get open extension](opentypeextension-get.md) operation. |
+| Directory extensions | Returned only with `$select`. |
 
 ## Request headers
 
@@ -91,13 +97,13 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and [user](../resources/user.md) object in the response body. It returns the default properties unless you use `$select` to specify specific properties. This method returns `202 Accepted` when the request has been processed successfully but the server requires more time to complete related background operations.
+If successful, this method returns a `200 OK` response code and [user](../resources/user.md) or [agentUser](../resources/agentuser.md) object in the response body. It returns the default properties unless you use `$select` to specify specific properties. This method returns `202 Accepted` when the request has been processed successfully but the server requires more time to complete related background operations.
 
-If a user with the ID doesn't exist, this method returns a `404 Not Found` error code.
+If an object with the ID doesn't exist, this method returns a `404 Not Found` error code.
 
 ## Example
 
-### Example 1: Get the properties of the signed-in user
+### Example 1: Get the properties of the signed-in user or authenticated agentUser
 
 #### Request
 
@@ -167,12 +173,11 @@ Content-type: application/json
 }
 ```
 
-### Example 2: Get the properties of the specified user
+### Example 2: Get the properties of the specified user or agentUser by their ID
 
 #### Request
 
 The following example shows a request.
-
 
 # [HTTP](#tab/http)
 <!-- {

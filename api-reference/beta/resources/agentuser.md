@@ -3,7 +3,7 @@ title: "agentUser resource type"
 description: "Represents a specialized subtype of user identity in Microsoft Entra ID designed for AI-powered applications (agents) that need to function as digital workers."
 author: "yyuank"
 ms.reviewer: "iamut"
-ms.date: 11/06/2025
+ms.date: 11/07/2025
 ms.localizationpriority: medium
 ms.subservice: entra-users
 doc_type: resourcePageType
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a specialized subtype of [user](../resources/user.md) identity in Microsoft Entra ID designed for AI-powered applications (agents) that need to function as digital workers. Agent users enable agents to access APIs and services that specifically require user identities, receiving tokens with `idtyp=user` claims.
+Represents a specialized subtype of user identity in Microsoft Entra ID designed for AI-powered applications (agents) that need to function as digital workers. Agent users enable agents to access APIs and services that specifically require user identities, receiving tokens with `idtyp=user` claims. Agent users are distinct from human [users](../resources/user.md) and they only interlinked to users through relationships such as owner, sponsor, and manager.
 
 Each agent user maintains a one-to-one relationship with a parent agent identity and is authenticated through that parent's credentials. Agent users have user-like capabilities such as being added to groups, assigned licenses, and accessing collaborative features like mailboxes and chat, while operating under security constraints including no password authentication, no privileged admin role assignments, and permissions similar to guest users.
 
@@ -24,23 +24,30 @@ Inherits from [user](../resources/user.md).
 This resource is an open type that allows additional properties beyond those documented here.
 
 ## Methods
-None.
+
+| Method | Return Type | Description |
+|:------ |:----------- |:----------- |
+| [List](../api/user-list.md) | [user](user.md) collection | Get a list of **agentUser** objects. |
+| [Create](../api/user-post-users.md) | [user](user.md) | Create a new **agentUser** object. |
+| [Get](../api/user-get.md) | [user](user.md) | Read properties and relationships of **agentUser** object. |
+| [Update](../api/user-update.md) | [user](user.md) | Update **agentUser** object. |
+| [Delete](../api/user-delete.md) | None | Delete **agentUser** object. |
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|accountEnabled|Boolean|`true` if the account is enabled; otherwise, `false`. This property is required when a user is created. Inherited from [user](../resources/user.md).|
+|accountEnabled|Boolean|`true` if the account is enabled; otherwise, `false`. This property is required when creating the object. Inherited from [user](../resources/user.md).|
 |ageGroup|String|Not applicable for agent users. Inherited from [user](../resources/user.md).|
-|assignedLicenses|[assignedLicense](../resources/assignedlicense.md) collection|The licenses that are assigned to the user, including inherited (group-based) licenses. This property doesn't differentiate between directly assigned and inherited licenses. Use the **licenseAssignmentStates** property to identify the directly assigned and inherited licenses. Not nullable. Inherited from [user](../resources/user.md).|
-|assignedPlans|[assignedPlan](../resources/assignedplan.md) collection|The plans that are assigned to the user. Read-only. Not nullable. Inherited from [user](../resources/user.md).|
+|assignedLicenses|[assignedLicense](../resources/assignedlicense.md) collection|The licenses that are assigned to the agent user, including inherited (group-based) licenses. This property doesn't differentiate between directly assigned and inherited licenses. Use the **licenseAssignmentStates** property to identify the directly assigned and inherited licenses. Not nullable. Inherited from [user](../resources/user.md).|
+|assignedPlans|[assignedPlan](../resources/assignedplan.md) collection|The plans that are assigned to the agent user. Read-only. Not nullable. Inherited from [user](../resources/user.md).|
 |authorizationInfo|[authorizationInfo](../resources/authorizationinfo.md)|Not applicable for agent users. Inherited from [user](../resources/user.md).|
-|businessPhones|String collection|The telephone numbers for the user. Only one number can be set for this property. Read-only for users synced from on-premises directory. Inherited from [user](../resources/user.md).|
-|city|String|The city where the user is located. Maximum length is 128 characters. Inherited from [user](../resources/user.md).|
-|cloudRealtimeCommunicationInfo|[cloudRealtimeCommunicationInfo](../resources/cloudrealtimecommunicationinfo.md)|Microsoft realtime communication information related to the user. Inherited from [user](../resources/user.md).|
-|companyName|String|The name of the company the user is associated with. This property can be useful for describing the company that an external user comes from. The maximum length is 64 characters. Inherited from [user](../resources/user.md).|
+|businessPhones|String collection|The telephone numbers for the agent user. Only one number can be set for this property. Read-only for users synced from on-premises directory. Inherited from [user](../resources/user.md).|
+|city|String|The city where the agent user is located. Maximum length is 128 characters. Inherited from [user](../resources/user.md).|
+|cloudRealtimeCommunicationInfo|[cloudRealtimeCommunicationInfo](../resources/cloudrealtimecommunicationinfo.md)|Microsoft realtime communication information related to the agent user. Inherited from [user](../resources/user.md).|
+|companyName|String|The name of the company the agent user is associated with. This property can be useful for describing the company that an external user comes from. The maximum length is 64 characters. Inherited from [user](../resources/user.md).|
 |consentProvidedForMinor|String|Not applicable for agent users. Inherited from [user](../resources/user.md).|
-|country|String|The country or region where the user is located; for example, `US` or `UK`. Maximum length is 128 characters. Inherited from [user](../resources/user.md).|
-|createdDateTime|DateTimeOffset|The date and time the user was created in ISO 8601 format and UTC. The value cannot be modified and is automatically populated when the entity is created. Nullable. For on-premises users, the value represents when they were first created in Microsoft Entra ID. Property is `null` for some users created before June 2018 and on-premises users synced to Microsoft Entra ID before June 2018. Read-only. Inherited from [user](../resources/user.md).|
+|country|String|The country or region where the agent user is located; for example, `US` or `UK`. Maximum length is 128 characters. Inherited from [user](../resources/user.md).|
+|createdDateTime|DateTimeOffset|The date and time the agent user was created in ISO 8601 format and UTC. The value cannot be modified and is automatically populated when the entity is created. Nullable. For on-premises users, the value represents when they were first created in Microsoft Entra ID. Property is `null` for some users created before June 2018 and on-premises users synced to Microsoft Entra ID before June 2018. Read-only. Inherited from [user](../resources/user.md).|
 |creationType|String| Read-only. Null. Inherited from [user](../resources/user.md).|
 |customSecurityAttributes|[customSecurityAttributeValue](../resources/customsecurityattributevalue.md)|An open complex type that holds the value of a custom security attribute that is assigned to a directory object. Nullable. Inherited from [user](../resources/user.md).|
 |deletedDateTime|DateTimeOffset|The date and time the user was deleted. Inherited from [directoryObject](../resources/directoryobject.md).|
@@ -57,7 +64,7 @@ None.
 |givenName|String|The given name (first name) of the user. Maximum length is 64 characters. Inherited from [user](../resources/user.md).|
 |id|String|The unique identifier for the user. It should be treated as an opaque identifier. Inherited from [directoryObject](../resources/directoryobject.md). Not nullable. Read-only. Inherits from [entity](../resources/entity.md)|
 |identities|[objectIdentity](../resources/objectidentity.md) collection|Not applicable for agent users. Inherited from [user](../resources/user.md).|
-|identityParentId|String|Application id of the agent identity associated with the agent user. Inherited from [user](../resources/user.md).|
+|identityParentId|String|References the object ID of the associated agent identity. This property is required when creating the object, and it can't be cleared during updates. Inherited from [user](../resources/user.md).|
 |imAddresses|String collection|The instant message voice-over IP (VOIP) session initiation protocol (SIP) addresses for the user. Read-only. Inherited from [user](../resources/user.md).|
 |infoCatalogs|String collection|Identifies the info segments assigned to the user. Inherited from [user](../resources/user.md).|
 |isLicenseReconciliationNeeded|Boolean|Indicates whether the user is pending an exchange mailbox license assignment. Read-only. Inherited from [user](../resources/user.md).|
@@ -90,30 +97,30 @@ None.
 |refreshTokensValidFromDateTime|DateTimeOffset|Any refresh tokens or sessions tokens (session cookies) issued before this time are invalid, and applications get an error when using an invalid refresh or sessions token to acquire a delegated access token (to access APIs such as Microsoft Graph). If it happens, the application must acquire a new refresh token by requesting the authorized endpoint. Read-only. Use [invalidateAllRefreshTokens](../api/user-invalidateallrefreshtokens.md) to reset. Inherited from [user](../resources/user.md).|
 |securityIdentifier|String|Security identifier (SID) of the user, used in Windows scenarios. Read-only. Returned by default. Inherited from [user](../resources/user.md).|
 |serviceProvisioningErrors|[serviceProvisioningError](../resources/serviceprovisioningerror.md) collection|Not applicable for agent users. Inherited from [user](../resources/user.md).|
-|showInAddressList|Boolean|**Do not use in Microsoft Graph. Manage this property through the Microsoft 365 admin center instead.** Represents whether the user should be included in the Outlook global address list. See [Known issue](https://developer.microsoft.com/en-us/graph/known-issues/?search=14972). Inherited from [user](../resources/user.md).|
+|showInAddressList|Boolean|**Do not use in Microsoft Graph. Manage this property through the Microsoft 365 admin center instead.** Represents whether the agent user should be included in the Outlook global address list. See [Known issue](https://developer.microsoft.com/en-us/graph/known-issues/?search=14972). Inherited from [user](../resources/user.md).|
 |signInSessionsValidFromDateTime|DateTimeOffset|Any refresh tokens or sessions tokens (session cookies) issued before this time are invalid, and applications get an error when using an invalid refresh or sessions token to acquire a delegated access token (to access APIs such as Microsoft Graph). If this happens, the application must acquire a new refresh token by requesting the authorized endpoint. Read-only. Use [revokeSignInSessions](../api/user-revokesigninsessions.md) to reset. Inherited from [user](../resources/user.md).|
-|state|String|The state or province in the user's address. Maximum length is 128 characters. Inherited from [user](../resources/user.md).|
-|streetAddress|String|The street address of the user's place of business. Maximum length is 1024 characters. Inherited from [user](../resources/user.md).|
+|state|String|The state or province in the agent user's address. Maximum length is 128 characters. Inherited from [user](../resources/user.md).|
+|streetAddress|String|The street address of the agent user's place of business. Maximum length is 1024 characters. Inherited from [user](../resources/user.md).|
 |surname|String|The user's surname (family name or last name). Maximum length is 64 characters. Inherited from [user](../resources/user.md).|
-|usageLocation|String|A two-letter country code (ISO standard 3166). Required for users that are assigned licenses due to legal requirements to check for availability of services in countries. Examples include: `US`, `JP`, and `GB`. Not nullable. Inherited from [user](../resources/user.md).|
-|userPrincipalName|String|The user principal name (UPN) of the user. The UPN is an Internet-style sign-in name for the user based on the Internet standard RFC 822. By convention, this should map to the user's email name. The general format is alias@domain, where the domain must be present in the tenant's verified domain collection. This property is required when a user is created. The verified domains for the tenant can be accessed from the **verifiedDomains** property of [organization](organization.md). NOTE: This property can't contain accent characters. Only the following characters are allowed `A - Z`, `a - z`, `0 - 9`, `' . - _ ! # ^ ~`. For the complete list of allowed characters, see [username policies](/azure/active-directory/authentication/concept-sspr-policy#userprincipalname-policies-that-apply-to-all-user-accounts). Inherited from [user](../resources/user.md).|
-|userType|String|A String value that can be used to classify user types in your directory. The possible values are `Member` and `Guest`. **NOTE:** For more information about the permissions for member and guest users, see [What are the default user permissions in Microsoft Entra ID?](/azure/active-directory/fundamentals/users-default-permissions?context=graph/context#member-and-guest-users) Inherited from [user](../resources/user.md).|
+|usageLocation|String|A two-letter country code (ISO standard 3166). Required for agent users that are assigned licenses due to legal requirements to check for availability of services in countries. Examples include: `US`, `JP`, and `GB`. Not nullable. Inherited from [user](../resources/user.md).|
+|userPrincipalName|String|The user principal name (UPN) of the agent user. The UPN is an Internet-style sign-in name for the user based on the Internet standard RFC 822. By convention, this should map to the agent user's email name. The general format is alias@domain, where the domain must be present in the tenant's verified domain collection. This property is required when a user is created. The verified domains for the tenant can be accessed from the **verifiedDomains** property of [organization](organization.md). NOTE: This property can't contain accent characters. Only the following characters are allowed `A - Z`, `a - z`, `0 - 9`, `' . - _ ! # ^ ~`. For the complete list of allowed characters, see [username policies](/azure/active-directory/authentication/concept-sspr-policy#userprincipalname-policies-that-apply-to-all-user-accounts). Inherited from [user](../resources/user.md).|
+|userType|String|A String value that can be used to classify agent user types in your directory. The possible values are `Member` and `Guest`. **NOTE:** For more information about the permissions for member and guest users, see [What are the default user permissions in Microsoft Entra ID?](/azure/active-directory/fundamentals/users-default-permissions?context=graph/context#member-and-guest-users) Inherited from [user](../resources/user.md).|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|appRoleAssignments|[appRoleAssignment](../resources/approleassignment.md) collection|Represents the app roles a user has been granted for an application. Inherited from [Microsoft.DirectoryServices.user](../resources/user.md)|
-|createdObjects|[directoryObject](../resources/directoryobject.md) collection|Directory objects that the user created. Read-only. Nullable. Inherited from [Microsoft.DirectoryServices.user](../resources/user.md)|
-|directReports|[directoryObject](../resources/directoryobject.md) collection|The users and contacts that report to the user. (The users and contacts with their manager property set to this user.) Read-only. Nullable. Inherited from [Microsoft.DirectoryServices.user](../resources/user.md)|
-|manager|[directoryObject](../resources/directoryobject.md)|The user or contact that is this user's manager. Read-only. Inherited from [Microsoft.DirectoryServices.user](../resources/user.md)|
-|memberOf|[directoryObject](../resources/directoryobject.md) collection|The groups, directory roles, and administrative units that the user is a member of. Read-only. Nullable. Inherited from [Microsoft.DirectoryServices.user](../resources/user.md)|
-|ownedDevices|[directoryObject](../resources/directoryobject.md) collection|Devices owned by the user. Read-only. Nullable. Inherited from [Microsoft.DirectoryServices.user](../resources/user.md)|
-|ownedObjects|[directoryObject](../resources/directoryobject.md) collection|Directory objects owned by the user. Read-only. Nullable. Inherited from [Microsoft.DirectoryServices.user](../resources/user.md)|
-|registeredDevices|[directoryObject](../resources/directoryobject.md) collection|Devices that are registered for the user. Read-only. Nullable. Inherited from [Microsoft.DirectoryServices.user](../resources/user.md)|
-|scopedRoleMemberOf|[scopedRoleMembership](../resources/scopedrolemembership.md) collection|The scoped-role administrative unit memberships for this user. Read-only. Nullable. Inherited from [Microsoft.DirectoryServices.user](../resources/user.md)|
-|sponsors|[directoryObject](../resources/directoryobject.md) collection|The users and groups responsible for this guest user's privileges in the tenant and keep the guest user's information and access updated. (HTTP Methods: GET, POST, DELETE.). Inherited from [Microsoft.DirectoryServices.user](../resources/user.md)|
-|transitiveMemberOf|[directoryObject](../resources/directoryobject.md) collection|The groups, including nested groups and directory roles that a user is a member of. Nullable. Inherited from [Microsoft.DirectoryServices.user](../resources/user.md)|
-|transitiveReports|[directoryObject](../resources/directoryobject.md) collection|The transitive reports for a user. Read-only. Inherited from [Microsoft.DirectoryServices.user](../resources/user.md)|
+|appRoleAssignments|[appRoleAssignment](../resources/approleassignment.md) collection|Represents the app roles an agent user has been granted for an application. Inherited from [Microsoft.DirectoryServices.user](../resources/user.md)|
+|createdObjects|[directoryObject](../resources/directoryobject.md) collection|Directory objects that the agent user created. Read-only. Nullable. Inherited from [Microsoft.DirectoryServices.user](../resources/user.md)|
+|directReports|[directoryObject](../resources/directoryobject.md) collection|The users and contacts that report to the agent user. (The users and contacts with their manager property set to this user.) Read-only. Nullable. Inherited from [Microsoft.DirectoryServices.user](../resources/user.md)|
+|manager|[directoryObject](../resources/directoryobject.md)|The user or contact that is this agent user's manager. Read-only. Inherited from [Microsoft.DirectoryServices.user](../resources/user.md)|
+|memberOf|[directoryObject](../resources/directoryobject.md) collection|The groups, directory roles, and administrative units that the agent user is a member of. Read-only. Nullable. Inherited from [Microsoft.DirectoryServices.user](../resources/user.md)|
+|ownedDevices|[directoryObject](../resources/directoryobject.md) collection|Devices owned by the agent user. Read-only. Nullable. Inherited from [Microsoft.DirectoryServices.user](../resources/user.md)|
+|ownedObjects|[directoryObject](../resources/directoryobject.md) collection|Directory objects owned by the agent user. Read-only. Nullable. Inherited from [Microsoft.DirectoryServices.user](../resources/user.md)|
+|registeredDevices|[directoryObject](../resources/directoryobject.md) collection|Devices that are registered for the agent user. Read-only. Nullable. Inherited from [Microsoft.DirectoryServices.user](../resources/user.md)|
+|scopedRoleMemberOf|[scopedRoleMembership](../resources/scopedrolemembership.md) collection|The scoped-role administrative unit memberships for this agent user. Read-only. Nullable. Inherited from [Microsoft.DirectoryServices.user](../resources/user.md)|
+|sponsors|[directoryObject](../resources/directoryobject.md) collection|The [users](../resources/user.md) and [groups](../resources/group.md) responsible for this agent user's privileges in the tenant and keep the agent user's information and access updated. (HTTP Methods: GET, POST, DELETE.). Inherited from [Microsoft.DirectoryServices.user](../resources/user.md)|
+|transitiveMemberOf|[directoryObject](../resources/directoryobject.md) collection|The groups, including nested groups and directory roles that the agent user is a member of. Nullable. Inherited from [Microsoft.DirectoryServices.user](../resources/user.md)|
+|transitiveReports|[directoryObject](../resources/directoryobject.md) collection|The transitive reports for an agent user. Read-only. Inherited from [Microsoft.DirectoryServices.user](../resources/user.md)|
 
 ## JSON representation
 The following JSON representation shows the resource type.

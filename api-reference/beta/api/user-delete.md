@@ -1,5 +1,5 @@
 ---
-title: "Delete a user - Microsoft Graph API"
+title: "Delete a user or agentUser"
 description: "Describes the delete method of the user resource (entity) of the Microsoft Graph API (REST)."
 author: "yyuank"
 ms.reviewer: "iamut"
@@ -9,13 +9,13 @@ doc_type: apiPageType
 ms.date: 07/25/2024
 ---
 
-# Delete a user
+# Delete a user or agentUser
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a [user](../resources/user.md) object.  
+Delete a [user](../resources/user.md) or [agentUser](../resources/agentuser.md) object.
 
 When deleted, user resources, including their mailbox and license assignments, are moved to a temporary container and if the user is restored within 30 days, these objects are restored to them. The user is also restored to any groups they were a member of. After 30 days and if not restored, the user object is permanently deleted and their assigned resources freed. To manage the deleted user object, see [deletedItems](../resources/directory.md).
 
@@ -24,6 +24,8 @@ When deleted, user resources, including their mailbox and license assignments, a
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+### Permissions to delete a user
 
 <!-- { "blockType": "ignored", "name": "user_delete" } -->
 [!INCLUDE [permissions-table](../includes/permissions/user-delete-permissions.md)]
@@ -36,6 +38,15 @@ The calling user must be assigned at least one of the following [Microsoft Entra
 To delete users with privileged administrator roles in delegated scenarios, the app must be assigned the *Directory.AccessAsUser.All* delegated permission, and the calling user must have a higher privileged administrator role as indicated in [Who can perform sensitive actions](../resources/users.md#who-can-perform-sensitive-actions).
 
 In app-only scenarios, the *User.ReadWrite.All* application permission isn't enough privilege to delete users with privileged administrative roles. The app must be assigned a higher privileged administrator role as indicated in [Who can perform sensitive actions](../resources/users.md#who-can-perform-sensitive-actions).
+
+### Permissions to delete an agentUser
+
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
+|Permission type|Least privileged permissions|Higher privileged permissions|
+|:---|:---|:---|
+|Delegated (work or school account)|User.ReadWrite.All|Not available.|
+|Delegated (personal Microsoft account)|User.ReadWrite.All|Not supported.|
+|Application|User.ReadWrite.All|Not available.|
 
 ## HTTP request
 
