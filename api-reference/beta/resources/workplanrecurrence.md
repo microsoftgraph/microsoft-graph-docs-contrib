@@ -78,7 +78,8 @@ The following JSON representation shows the resource type.
 
 ## Remarks
 
-You can't access individual recurrences by ID. Use the recurrences collection endpoint instead. Updates require the full recurrence object to be provided (PUT semantics). PATCH isn't supported.
+- You can't access individual recurrences by ID. Use the recurrences collection endpoint instead.
+- Updates require the full recurrence object to be provided (PUT semantics). PATCH isn't supported.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2024-12-20 14:57:30 UTC -->
