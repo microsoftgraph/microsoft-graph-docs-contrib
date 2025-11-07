@@ -3,6 +3,48 @@
     {
       "ChangeList": [
         {
+          "Id": "5be1f640-5b61-49aa-92b3-8a3e153d8838",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Domain-InternalFederation.Read.All",
+          "ChangeType": "Addition",
+          "Description": "Added the **Domain-InternalFederation.Read.All** application and delegated permission for reading [internalDomainFederation](https://learn.microsoft.com/en-us/graph/api/resources/internaldomainfederation?view=graph-rest-1.0) resources.",
+          "Target": "internalDomainFederation"
+        },
+        {
+          "Id": "5be1f640-5b61-49aa-92b3-8a3e153d8838",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Domain-InternalFederation.ReadWrite.All",
+          "ChangeType": "Addition",
+          "Description": "Added the **Domain-InternalFederation.ReadWrite.All** application and delegated permission for reading and writing [internalDomainFederation](https://learn.microsoft.com/en-us/graph/api/resources/internaldomainfederation?view=graph-rest-1.0) resources.",
+          "Target": "internalDomainFederation"
+        },
+        {
+          "Id": "5be1f640-5b61-49aa-92b3-8a3e153d8838",
+          "ApiChange": "Method",
+          "ChangedApiName": "PATCH",
+          "ChangeType": "Addition",
+          "Description": "Added the **Domain-InternalFederation.ReadWrite.All** application and delegated permission for updating the [domain](https://learn.microsoft.com/en-us/graph/api/domain-update?view=graph-rest-1.0) resource. The delegated permission is the lesser-privileged higher-privileged alternative to *Directory.AccessAsUser.All* delegated permission while the application permission allows applications to update domains with their own identity without a signed-in user.",
+          "Target": "domain"
+        },
+        {
+          "Id": "5be1f640-5b61-49aa-92b3-8a3e153d8838",
+          "ApiChange": "Permission",
+          "ChangedApiName": "internalDomainFederation APIs",
+          "ChangeType": "Change",
+          "Description": "Resolved a known permissions issue for [internalDomainFederation](https://learn.microsoft.com/en-us/graph/api/resources/internaldomainfederation?view=graph-rest-1.0) WRITE APIs that previously required consenting to the *Directory.AccessAsUser.All* permission for delegated scenarios. Apps can now use the new *Domain-InternalFederation.ReadWrite.All* permission as a lesser-privileged alternative.",
+          "Target": "internalDomainFederation"
+        }
+      ],
+      "Id": "5be1f640-5b61-49aa-92b3-8a3e153d8838",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-10-10T07:26:09.529Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "c38d1210-4dc9-4e1f-a2f0-2c8650451536",
           "ApiChange": "Property",
           "ChangedApiName": "isContinuousAccessEvaluationEnabled",

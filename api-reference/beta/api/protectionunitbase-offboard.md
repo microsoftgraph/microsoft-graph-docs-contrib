@@ -1,6 +1,6 @@
 ---
 title: "protectionUnitBase: offboard"
-description: "Offboard a protection unit"
+description: "Offboard a protectionUnitBase."
 author: "haputta"
 ms.reviewer: "manikantsinghms"
 ms.localizationpriority: medium
@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /solutions/backupRestore/protectionUnits/{protectionUnitBaseId}/offboard
 ```
 
@@ -53,11 +53,12 @@ For a list of possible error responses, see [Backup Storage API error responses]
 
 ## Examples
 
-### Example 1: offboard a removed protection unit
+### Example 1: Offboard a removed protection unit
 
-The following example shows a request to offboard a protection unit removed from a policy.
+The following example shows how to offboard a protection unit removed from a policy.
 
 #### Request
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -107,8 +108,9 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.protectionUnitBase"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
+Content-Type: application/json
 
 {
   "id": "89014d8c-71fe-4d00-a01a-31850bc5b32c",
@@ -143,18 +145,20 @@ HTTP/1.1 200 OK
   "offboardRequestedDateTime": "2015-07-19T12:01:03.45Z"
 }
 ```
-### Example 2: offboard a protection unit attached to a policy
 
-The following example shows a request to offboard a protection unit that is attached to a policy.
+### Example 2: Offboard a protection unit attached to a policy
+
+The following example shows how to offboard a protection unit that is attached to a policy.
 
 #### Request
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "protectionunitbase_offboard_example2"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/solutions/backupRestore/protectionUnits/89014d8c-71fe-4d00-a01a-31850bc5b32c/offboard
 ```
 
@@ -199,8 +203,9 @@ The following example shows the response.
 }
 -->
 
-``` http
+```http
 HTTP/1.1 403 Operation Not Allowed
+Content-Type: application/json
 
 {
   "error": {

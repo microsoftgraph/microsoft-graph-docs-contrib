@@ -6,14 +6,6 @@ items:
   href: ../../resources/teams-api-overview.md
 - name: Administration (preview)
   items:
-  - name: Teams user configuration
-    items:
-    - name: Teams user configuration
-      href: ../../resources/teamsadministration-teamsuserconfiguration.md
-    - name: List
-      href: ../../api/teamsadministration-teamsadminroot-list-userconfigurations.md
-    - name: Get
-      href: ../../api/teamsadministration-teamsuserconfiguration-get.md
   - name: Number assignment
     items:
     - name: Number assignment
@@ -28,6 +20,48 @@ items:
       href: ../../api/teamsadministration-numberassignment-unassignnumber.md
     - name: updateNumber
       href: ../../api/teamsadministration-numberassignment-updatenumber.md
+  - name: Teams user configuration
+    items:
+    - name: Teams user configuration
+      href: ../../resources/teamsadministration-teamsuserconfiguration.md
+    - name: List
+      href: ../../api/teamsadministration-teamsadminroot-list-userconfigurations.md
+    - name: Get
+      href: ../../api/teamsadministration-teamsuserconfiguration-get.md
+  - name: Telephone number long running operation
+    items:
+    - name: Telephone number long running operation
+      href: ../../resources/teamsadministration-telephonenumberlongrunningoperation.md
+    - name: Get
+      href: ../../api/teamsadministration-telephonenumberlongrunningoperation-get.md
+  - name: Telephone number management root
+    items:
+    - name: Telephone number management root
+      href: ../../resources/teamsadministration-telephonenumbermanagementroot.md
+    - name: List number assignments
+      href: ../../api/teamsadministration-telephonenumbermanagementroot-list-numberassignments.md
+  - name: Teams policy assignment
+    items:
+    - name: Teams policy assignment
+      href: ../../resources/teamsadministration-teamspolicyassignment.md
+    - name: Get policy ID
+      href: ../../api/teamsadministration-teamspolicyassignment-getpolicyid.md
+  - name: Teams policy user assignment
+    items:
+    - name: Teams policy user assignment
+      href: ../../resources/teamsadministration-teamspolicyuserassignment.md
+    - name: Assign
+      href: ../../api/teamsadministration-teamspolicyuserassignment-assign.md
+    - name: Unassign
+      href: ../../api/teamsadministration-teamspolicyuserassignment-unassign.md
+  - name: Teams user configuration
+    items:
+    - name: Teams user configuration
+      href: ../../resources/teamsadministration-teamsuserconfiguration.md
+    - name: List
+      href: ../../api/teamsadministration-teamsadminroot-list-userconfigurations.md
+    - name: Get
+      href: ../../api/teamsadministration-teamsuserconfiguration-get.md
   - name: Telephone number long running operation
     items:
     - name: Telephone number long running operation
@@ -42,6 +76,8 @@ items:
       href: ../../resources/teamsadministration-effectivepolicyassignment.md
     - name: Policy assignment
       href: ../../resources/teamsadministration-policyassignment.md
+    - name: Policy identifier detail
+      href: ../../resources/teamsadministration-policyidentifierdetail.md
     - name: Telephone number long running operation details
       href: ../../resources/teamsadministration-telephonenumberlongrunningoperationdetails.md
 - name: Approvals
@@ -392,6 +428,10 @@ items:
       href: ../../resources/callevent.md
     - name: Emergency call event
       href: ../../resources/emergencycallevent.md
+    - name: Complex types
+      items:
+      - name: Emergency caller info
+        href: ../../resources/emergencycallerinfo.md
   - name: Call records
     items:
     - name: Overview
@@ -526,6 +566,8 @@ items:
         href: ../../resources/callrecording.md
       - name: List
         href: ../../api/onlinemeeting-list-recordings.md
+      - name: Get
+        href: ../../api/callrecording-get.md
       - name: Get
         href: ../../api/callrecording-get.md
       - name: Get delta by organizer

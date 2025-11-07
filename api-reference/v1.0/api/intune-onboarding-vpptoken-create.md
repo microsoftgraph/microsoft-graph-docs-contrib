@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /deviceAppManagement/vppTokens
 ```
 
@@ -61,6 +61,7 @@ The following table shows the properties that are required when you create the v
 |lastSyncStatus|[vppTokenSyncStatus](../resources/intune-onboarding-vpptokensyncstatus.md)|Current sync status of the last application sync which was triggered using the Apple Volume Purchase Program Token. Possible values are: `none`, `inProgress`, `completed`, `failed`. Possible values are: `none`, `inProgress`, `completed`, `failed`.|
 |automaticallyUpdateApps|Boolean|Whether or not apps for the VPP token will be automatically updated.|
 |countryOrRegion|String|Whether or not apps for the VPP token will be automatically updated.|
+|lastAppCount|Int32|The number of apps under the Apple Volume Purchase Program Token since the last token sync.|
 
 
 
@@ -71,13 +72,10 @@ If successful, this method returns a `201 Created` response code and a [vppToken
 
 ### Request
 Here is an example of the request.
-
-# [HTTP](#tab/http)
-<!-- { "blockType": "request" , "name" : "intune_onboarding_vpptoken_create_create_vpptoken" }-->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/deviceAppManagement/vppTokens
 Content-type: application/json
-Content-length: 461
+Content-length: 484
 
 {
   "@odata.type": "#microsoft.graph.vppToken",
@@ -90,48 +88,17 @@ Content-length: 461
   "state": "valid",
   "lastSyncStatus": "inProgress",
   "automaticallyUpdateApps": true,
-  "countryOrRegion": "Country Or Region value"
+  "countryOrRegion": "Country Or Region value",
+  "lastAppCount": 12
 }
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/intune-onboarding-vpptoken-create-create-vpptoken-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/intune-onboarding-vpptoken-create-create-vpptoken-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/intune-onboarding-vpptoken-create-create-vpptoken-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/intune-onboarding-vpptoken-create-create-vpptoken-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/intune-onboarding-vpptoken-create-create-vpptoken-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/intune-onboarding-vpptoken-create-create-vpptoken-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/intune-onboarding-vpptoken-create-create-vpptoken-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-
-<!-- { "blockType": "response" , "@odata.type" : "microsoft.graph.vppToken" }-->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 574
+Content-Length: 597
 
 {
   "@odata.type": "#microsoft.graph.vppToken",
@@ -146,6 +113,7 @@ Content-Length: 574
   "state": "valid",
   "lastSyncStatus": "inProgress",
   "automaticallyUpdateApps": true,
-  "countryOrRegion": "Country Or Region value"
+  "countryOrRegion": "Country Or Region value",
+  "lastAppCount": 12
 }
 ```

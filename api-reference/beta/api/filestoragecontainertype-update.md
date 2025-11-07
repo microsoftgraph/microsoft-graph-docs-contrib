@@ -20,7 +20,7 @@ Update the properties of a [fileStorageContainerType](../resources/filestorageco
 
 ETag is used for optimistic concurrency control. It must match the value from [Create](./filestorage-post-containertypes.md), [Get](./filestoragecontainertype-get.md) or the previous Update.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -39,7 +39,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PATCH /storage/fileStorage/containerTypes/{fileStorageContainerTypeId}
 ```
 
@@ -76,7 +76,7 @@ The following example shows a request.
   "name": "update_filestoragecontainertype"
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/storage/fileStorage/containerTypes/de988700-d700-020e-0a00-0831f3042f00
 Content-Type: application/json
 
@@ -125,7 +125,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.fileStorageContainerType"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -162,7 +162,7 @@ The following example shows a request.
   "name": "update_filestoragecontainertype_no_etag"
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/storage/fileStorage/containerTypes/de988700-d700-020e-0a00-0831f3042f00
 Content-Type: application/json
 
@@ -209,6 +209,6 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 400 Bad Request
 ```

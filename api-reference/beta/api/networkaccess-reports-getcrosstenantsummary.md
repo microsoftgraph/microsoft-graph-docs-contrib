@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /networkAccess/reports/getCrossTenantSummary(startDateTime={startDateTime},endDateTime={endDateTime},discoveryPivotDateTime={discoveryPivotDateTime})
 ```
 
@@ -67,7 +67,7 @@ The following example shows a request.
   "name": "reportsthis.getcrosstenantsummary"
 }
 -->
-``` http
+```http
 GET https://graph.microsoft.com/beta/networkAccess/reports/getCrossTenantSummary (startDateTime=2023-01-01T00:00:00Z,endDateTime=2023-01-31T00:00:00Z, discoveryPivotDateTime=2023-01-30T00:00:00Z)
 ```
 
@@ -81,7 +81,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.networkaccess.crossTenantSummary"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

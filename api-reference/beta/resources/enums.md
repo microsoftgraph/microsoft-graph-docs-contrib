@@ -13,6 +13,14 @@ ms.custom: sfi-ropc-nochange
 
 Namespace: microsoft.graph
 
+### sensorStatus values 
+
+|Member|
+|:---|
+|active|
+|inactive|
+|unknownFutureValue|
+
 ### readingCoachStoryType values
 
 |Member|
@@ -222,6 +230,31 @@ Namespace: microsoft.graph
 | inactive |
 | active |
 | unknownfuturevalue |
+
+### sharePointMigrationJobErrorLevel values
+
+|Member|
+|:---|
+|important|
+|warning|
+|error|
+|fatalError|
+|unknownFutureValue|
+
+### sharePointMigrationObjectType values
+
+|Member|
+|:---|
+|site|
+|web|
+|folder|
+|list|
+|listItem|
+|file|
+|alert|
+|sharedWithObject|
+|invalid|
+|unknownFutureValue|
 
 ### siteLockState values
 
@@ -1105,6 +1138,7 @@ Namespace: microsoft.graph
 | intunePfx |
 | oflineDomainJoin |
 | unknownFutureValue |
+|privateAccess|
 
 ### agentStatus values
 
@@ -3009,6 +3043,7 @@ Possible values for user account types (group membership), per Windows definitio
 |fqdn|
 |dnsSuffix|
 |unknownFutureValue|
+|servicePrincipalName|
 
 ### privateNetworkProtocol values 
 
@@ -5389,4 +5424,22 @@ Possible values for user account types (group membership), per Windows definitio
 |d1|
 |d7|
 |d30|
+|unknownFutureValue|
+
+### aggregationWindow values 
+
+|Member|
+|:---|
+|h1|
+|h6|
+|d1|
+|unknownFutureValue|
+
+### siteTemplateType values 
+
+|Member|
+|:---|
+|sitepagepublishing|
+|group|
+|sts|
 |unknownFutureValue|

@@ -18,7 +18,7 @@ Delete a [fileStorageContainerType](../resources/filestoragecontainertype.md) ob
 
 >**Note**: Currently, only trial **fileStorageContainerType** objects can be deleted.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -40,7 +40,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 DELETE /storage/fileStorage/containerTypes/{fileStorageContainerTypeId}
 ```
 
@@ -72,7 +72,7 @@ The following example shows how to delete a **fileStorageContainerType**.
   "name": "delete_filestoragecontainertype"
 }
 -->
-``` http
+```http
 DELETE https://graph.microsoft.com/beta/storage/fileStorage/containerTypes/de988700-d700-020e-0a00-0831f3042f00
 ```
 
@@ -109,6 +109,6 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```

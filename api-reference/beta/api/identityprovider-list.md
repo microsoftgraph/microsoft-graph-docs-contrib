@@ -63,7 +63,7 @@ The following example shows a request.
 }
 -->
 
-``` http
+```http
 GET https://graph.microsoft.com/beta/identityProviders
 ```
 
