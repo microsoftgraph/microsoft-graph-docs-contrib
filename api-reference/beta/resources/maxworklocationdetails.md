@@ -24,7 +24,7 @@ Controls the level of work location detail that can be shared with colleagues.
 | none | 1 | No location details are shared. |
 | approximate | 2 | Only general work location type is shared, such as "Office" or "Remote." |
 | specific | 3 | Detailed location information is shared, such as building and desk information. |
-| unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
+| unknownFutureValue | 4 | Evolvable enumeration sentinel value. Don't use. |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2024-12-20 14:57:30 UTC -->
