@@ -47,7 +47,7 @@ PATCH /users/{id | userPrincipalName}/settings/workHoursAndLocations
 
 ## Request body
 
-In the request body, supply the values for relevant fields that should be updated. Existing properties that aren't included in the request body maintain their previous values or are recalculated based on changes to other property values. For best performance, don't include existing values that have not changed.
+In the request body, supply the values for relevant fields that should be updated. Existing properties that aren't included in the request body maintain their previous values or are recalculated based on changes to other property values. For best performance, don't include existing values that didn't change.
 
 | Property | Type | Description |
 |:---------|:-----|:------------|
