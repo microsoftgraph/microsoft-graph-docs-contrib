@@ -23,6 +23,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "endusersettings_update" } -->
 [!INCLUDE [permissions-table](../includes/permissions/endusersettings-update-permissions.md)]
 
+[!INCLUDE [rbac-entitlement-identity-governance-read](../includes/rbac-for-apis/rbac-entitlement-identity-governance-admin-apis-read.md)]
+
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
