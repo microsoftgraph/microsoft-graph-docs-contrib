@@ -1,6 +1,6 @@
 ---
 title: "insiderRiskyUserApproval resource type"
-description: "Defines a risku user approval object"
+description: "**TODO: Add Description**"
 author: "markwahl-msft"
 ms.date: 11/06/2025
 ms.localizationpriority: medium
