@@ -12,7 +12,7 @@ use Microsoft\Graph\Beta\Generated\Models\MobilityManagementPolicy;
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new MobilityManagementPolicy();
-$requestBody->setOdataType('#microsoft.graph.mobileDeviceManagementPolicy');
+$requestBody->setOdataType('#microsoft.graph.mobilityManagementPolicy');
 $requestBody->setComplianceUrl('https://portal.uem.contoso.com/?portalAction=Compliance');
 $requestBody->setDiscoveryUrl('https://enrollment.uem.contoso.com/enrollmentserver/discovery.svc');
 $requestBody->setTermsOfUseUrl('https://portal.uem.contoso.com/TermsofUse.aspx');

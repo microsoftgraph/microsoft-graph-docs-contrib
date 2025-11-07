@@ -11,7 +11,7 @@ const options = {
 const client = Client.init(options);
 
 const mobileDeviceManagementPolicy = {
-  '@odata.type': '#microsoft.graph.mobileDeviceManagementPolicy',
+  '@odata.type': '#microsoft.graph.mobilityManagementPolicy',
   complianceUrl: 'https://portal.uem.contoso.com/?portalAction=Compliance',
   discoveryUrl: 'https://enrollment.uem.contoso.com/enrollmentserver/discovery.svc',
   termsOfUseUrl: 'https://portal.uem.contoso.com/TermsofUse.aspx'
