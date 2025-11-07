@@ -33,7 +33,7 @@ This request creates a new localization branding and a default branding if one d
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /organization/{organizationId}/branding/localizations
 ```
 

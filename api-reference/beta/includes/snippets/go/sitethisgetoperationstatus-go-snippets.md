@@ -16,7 +16,8 @@ import (
 
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
-sites, err := graphClient.Sites().BySiteId("site-id").Get(context.Background(), nil)
+operationId := "{operationId}"
+getOperationStatus, err := graphClient.Sites().GetOperationStatusWithOperationId(&operationId).Get(context.Background(), nil)
 
 
 ```

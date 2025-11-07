@@ -4458,6 +4458,8 @@ items:
         href: ../../api/networkaccess-connectivity-getwebcategorybyurl.md
     - name: FQDN filtering rule
       href: ../../resources/networkaccess-fqdnfilteringrule.md
+    - name: URL filtering rule
+      href: ../../resources/networkaccess-urldestinationfilteringrule.md
     - name: Web category filtering rule
       href: ../../resources/networkaccess-webcategoryfilteringrule.md
     - name: Threat intelligence policy
