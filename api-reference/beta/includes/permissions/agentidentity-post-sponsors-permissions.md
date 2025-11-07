@@ -6,7 +6,7 @@ ms.localizationpriority: medium
 
 |Permission type|Least privileged permission|Higher privileged permissions|
 |:---|:---|:---|
-| Delegated (work or school account)| AgentIdentity.UpdateSponsors.All | Directory.ReadWrite.All <br><br> Note: Directory.AccessAsUser.All cannot be used to perform this operation. |
+| Delegated (work or school account)| AgentIdentity.ReadWrite.All | Directory.ReadWrite.All <br><br> Note: Directory.AccessAsUser.All cannot be used to perform this operation. |
  |Delegated (personal Microsoft account) | Not supported.| Not supported.|
-|Application| AgentIdentity.UpdateSponsors.All, AgentIdentity.CreateAsManager | Directory.ReadWrite.All |
+|Application| AgentIdentity.ReadWrite.All, AgentIdentity.CreateAsManager | Directory.ReadWrite.All |
 
