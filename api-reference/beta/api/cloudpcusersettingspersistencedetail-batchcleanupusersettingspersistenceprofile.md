@@ -1,5 +1,5 @@
 ---
-title: "cloudPcProvisioningPolicy: batchCleanupUserSettingsPersistenceProfile"
+title: "cloudPCUserSettingsPersistenceDetail: batchCleanupUserSettingsPersistenceProfile"
 description: "Delete a list of selected user settings persistence profiles that aren't attached to a specific user's Cloud PC in the Cloud PC policy assignment."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
@@ -8,13 +8,13 @@ doc_type: apiPageType
 ms.date: 10/20/2025
 ---
 
-# cloudPcProvisioningPolicy: batchCleanupUserSettingsPersistenceProfile
+# cloudPCUserSettingsPersistenceDetail: batchCleanupUserSettingsPersistenceProfile
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a list of selected user settings persistence profiles that aren't attached to a specific user's Cloud PC in the [Cloud PC policy](../resources/cloudpcprovisioningpolicy.md) assignment.
+Delete a list of selected [user settings persistence](../resources/cloudpcusersettingspersistencedetail.md) profiles that aren't attached to a specific user's Cloud PC in the Cloud PC policy assignment.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -22,8 +22,8 @@ Delete a list of selected user settings persistence profiles that aren't attache
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "permissions", "name": "cloudpcprovisioningpolicy_batchcleanupusersettingspersistenceprofile" } -->
-[!INCLUDE [permissions-table](../includes/permissions/cloudpcprovisioningpolicy-batchcleanupusersettingspersistenceprofile-permissions.md)]
+<!-- { "blockType": "permissions", "name": "cloudpcusersettingspersistencedetail_batchcleanupusersettingspersistenceprofile" } -->
+[!INCLUDE [permissions-table](../includes/permissions/cloudpcusersettingspersistencedetail-batchcleanupusersettingspersistenceprofile-permissions.md)]
 
 ## HTTP request
 
@@ -66,7 +66,7 @@ The following example shows a request to delete user storage profiles from the u
 
 <!-- {
   "blockType": "request",
-  "name": "batchcleanupusersettingspersistenceprofile_cloudpcprovisioningpolicy",
+  "name": "batchcleanupusersettingspersistenceprofile_cloudpcusersettingspersistencedetail",
 }
 -->
 

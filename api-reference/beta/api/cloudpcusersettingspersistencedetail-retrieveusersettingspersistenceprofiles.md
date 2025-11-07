@@ -1,5 +1,5 @@
 ---
-title: "cloudPcProvisioningPolicy: retrieveUserSettingsPersistenceProfiles"
+title: "cloudPCUserSettingsPersistenceDetail: retrieveUserSettingsPersistenceProfiles"
 description: "Retrieve the user storage list for Cloud PC user settings persistence under the selected Cloud PC policy assignment."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
@@ -8,7 +8,7 @@ doc_type: apiPageType
 ms.date: 10/20/2025
 ---
 
-# cloudPcProvisioningPolicy: retrieveUserSettingsPersistenceProfiles
+# cloudPCUserSettingsPersistenceDetail: retrieveUserSettingsPersistenceProfiles
 
 Namespace: microsoft.graph
 
@@ -22,8 +22,8 @@ Retrieve the user storage list for Cloud PC user settings persistence under the 
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "permissions", "name": "cloudpcprovisioningpolicy_retrieveusersettingspersistenceprofiles" } -->
-[!INCLUDE [permissions-table](../includes/permissions/cloudpcprovisioningpolicy-retrieveusersettingspersistenceprofiles-permissions.md)]
+<!-- { "blockType": "permissions", "name": "cloudpcusersettingspersistencedetail_retrieveusersettingspersistenceprofiles" } -->
+[!INCLUDE [permissions-table](../includes/permissions/cloudpcusersettingspersistencedetail-retrieveusersettingspersistenceprofiles-permissions.md)]
 
 ## HTTP request
 
@@ -61,11 +61,11 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-The following example shows a request to retrieve the user storage list for the user settings persistence of a Cloud PC assignment.
+The following example shows a request to retrieve the user storage list for the specific [user settings persistence](../resources/cloudpcusersettingspersistencedetail.md) of a Cloud PC assignment.
 
 <!-- {
   "blockType": "request",
-  "name": "retrieveUserSettingsPersistenceProfiles_cloudpcprovisioningpolicy",
+  "name": "retrieveUserSettingsPersistenceProfiles_cloudpcusersettingspersistencedetail",
 }
 -->
 

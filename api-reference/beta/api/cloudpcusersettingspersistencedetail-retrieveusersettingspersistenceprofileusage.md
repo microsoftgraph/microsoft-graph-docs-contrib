@@ -1,5 +1,5 @@
 ---
-title: "cloudPcProvisioningPolicy: retrieveUserSettingsPersistenceProfileUsage"
+title: "cloudPCUserSettingsPersistenceDetail: retrieveUserSettingsPersistenceProfileUsage"
 description: "Retrieve the usage of Cloud PC user settings persistence in the selected Cloud PC policy assignment."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
@@ -8,7 +8,7 @@ doc_type: apiPageType
 ms.date: 10/20/2025
 ---
 
-# cloudPcProvisioningPolicy: retrieveUserSettingsPersistenceProfileUsage
+# cloudPCUserSettingsPersistenceDetail: retrieveUserSettingsPersistenceProfileUsage
 
 Namespace: microsoft.graph
 
@@ -22,8 +22,8 @@ Retrieve the usage of Cloud PC user settings persistence in the selected [Cloud 
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "permissions", "name": "cloudpcprovisioningpolicy_retrieveusersettingspersistenceprofileusage" } -->
-[!INCLUDE [permissions-table](../includes/permissions/cloudpcprovisioningpolicy-retrieveusersettingspersistenceprofileusage-permissions.md)]
+<!-- { "blockType": "permissions", "name": "cloudpcusersettingspersistencedetail_retrieveusersettingspersistenceprofileusage" } -->
+[!INCLUDE [permissions-table](../includes/permissions/cloudpcusersettingspersistencedetail-retrieveusersettingspersistenceprofileusage-permissions.md)]
 
 ## HTTP request
 
@@ -60,10 +60,10 @@ If successful, this method returns a `200 OK` response code and a [cloudPCUserSe
 ## Examples
 
 ### Request
-The following example shows a request to retrieve the user settings persistence usage for a Cloud PC policy assignment.
+The following example shows a request to retrieve the specific [user settings persistence](../resources/cloudpcusersettingspersistencedetail.md) usage for a Cloud PC policy assignment.
 <!-- {
   "blockType": "request",
-  "name": "retrieveusersettingspersistenceprofileusage_cloudpcprovisioningpolicy",
+  "name": "retrieveusersettingspersistenceprofileusage_cloudpcusersettingspersistencedetail",
 }
 -->
 
