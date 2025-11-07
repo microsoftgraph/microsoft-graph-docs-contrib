@@ -57,7 +57,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "batchCleanupUserSettingsPersistenceProfile",
           "ChangeType": "Addition",
-          "Description": "Added the [batchCleanupUserSettingsPersistenceProfile](https://learn.microsoft.com/en-us/graph/api/cloudpcprovisioningpolicy-batchcleanupusersettingspersistenceprofile?view=graph-rest-beta) method to the [cloudPcProvisioningPolicy](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-beta) resource.",
+          "Description": "Added the [batchCleanupUserSettingsPersistenceProfile](https://learn.microsoft.com/en-us/graph/api/cloudpcprovisioningpolicy-batchcleanupusersettingspersistenceprofile?view=graph-rest-beta) method to the [cloudPCUserSettingsPersistenceDetail](https://learn.microsoft.com/en-us/graph/api/resources/cloudPCUserSettingsPersistenceDetail?view=graph-rest-beta) resource.",
           "Target": "cloudPCUserSettingsPersistenceDetail"
         },
         {
@@ -65,7 +65,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "retrieveUserSettingsPersistenceProfiles",
           "ChangeType": "Addition",
-          "Description": "Added the [retrieveUserSettingsPersistenceProfiles](https://learn.microsoft.com/en-us/graph/api/cloudpcprovisioningpolicy-retrieveusersettingspersistenceprofiles?view=graph-rest-beta) method to the [cloudPcProvisioningPolicy](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-beta) resource.",
+          "Description": "Added the [retrieveUserSettingsPersistenceProfiles](https://learn.microsoft.com/en-us/graph/api/cloudpcprovisioningpolicy-retrieveusersettingspersistenceprofiles?view=graph-rest-beta) method to the [cloudPCUserSettingsPersistenceDetail](https://learn.microsoft.com/en-us/graph/api/resources/cloudPCUserSettingsPersistenceDetail?view=graph-rest-beta) resource.",
           "Target": "cloudPCUserSettingsPersistenceDetail"
         },
         {
@@ -73,7 +73,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "retrieveUserSettingsPersistenceProfileUsage",
           "ChangeType": "Addition",
-          "Description": "Added the [retrieveUserSettingsPersistenceProfileUsage](https://learn.microsoft.com/en-us/graph/api/cloudpcprovisioningpolicy-retrieveusersettingspersistenceprofileusage?view=graph-rest-beta) method to the [cloudPcProvisioningPolicy](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-beta) resource.",
+          "Description": "Added the [retrieveUserSettingsPersistenceProfileUsage](https://learn.microsoft.com/en-us/graph/api/cloudpcprovisioningpolicy-retrieveusersettingspersistenceprofileusage?view=graph-rest-beta) method to the [cloudPCUserSettingsPersistenceDetail](https://learn.microsoft.com/en-us/graph/api/resources/cloudPCUserSettingsPersistenceDetail?view=graph-rest-beta) resource.",
           "Target": "cloudPCUserSettingsPersistenceDetail"
         },
         {
