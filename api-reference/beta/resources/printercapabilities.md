@@ -422,8 +422,6 @@ Represents the capabilities reported by a printer.
 |PRC 8|
 |PRC 16K|
 |PRC 32K|
-|ROC 8K|
-|ROC 16K|
 |Small Photo|
 |Square Photo|
 |Wide Photo|
