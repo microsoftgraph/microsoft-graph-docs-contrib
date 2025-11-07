@@ -14733,6 +14733,40 @@
       "CreatedDateTime": "2025-11-04T23:52:29.3280091Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "589a5b1f-be47-4d5f-959a-4d9864a51e5d",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "sponsors",
+          "ChangeType": "Addition",
+          "Description": "Added the **sponsors** relationship to the [agentIdentity](https://learn.microsoft.com/en-us/graph/api/resources/agentIdentity?view=graph-rest-beta) resource.",
+          "Target": "agentIdentity"
+        },
+        {
+          "Id": "589a5b1f-be47-4d5f-959a-4d9864a51e5d",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "sponsors",
+          "ChangeType": "Addition",
+          "Description": "Added the **sponsors** relationship to the [agentIdentityBlueprint](https://learn.microsoft.com/en-us/graph/api/resources/agentIdentityBlueprint?view=graph-rest-beta) resource.",
+          "Target": "agentIdentityBlueprint"
+        },
+        {
+          "Id": "589a5b1f-be47-4d5f-959a-4d9864a51e5d",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "sponsors",
+          "ChangeType": "Addition",
+          "Description": "Added the **sponsors** relationship to the [agentIdentityBlueprintPrincipal](https://learn.microsoft.com/en-us/graph/api/resources/agentIdentityBlueprintPrincipal?view=graph-rest-beta) resource.",
+          "Target": "agentIdentityBlueprintPrincipal"
+        }
+      ],
+      "Id": "589a5b1f-be47-4d5f-959a-4d9864a51e5d",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-11-07T19:11:53.7557907Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
     }
   ]
 }
