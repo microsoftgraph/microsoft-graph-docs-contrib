@@ -99,6 +99,7 @@ Content-type: application/json
         "timeZone": "UTC"
       },
       "workLocationType": "office",
+      "workLocationDetails@odata.id": "https://graph.microsoft.com/beta/places/12345678-1234-1234-1234-123456789",
       "recurrence": {
         "pattern": {
           "type": "weekly",
