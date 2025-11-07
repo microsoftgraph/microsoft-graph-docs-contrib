@@ -519,6 +519,7 @@
             "cloudPcSnapshot",
             "cloudPcSupportedRegion",
             "cloudPcUserSetting",
+            "cloudPCUserSettingsPersistenceDetail",
             "virtualEndpoint"
           ],
           "complexTypes": [
@@ -585,6 +586,8 @@
             "cloudPcSubscription",
             "cloudPcUserRoleScopeTagInfo",
             "cloudPcUserSettingAssignment",
+            "cloudPCUserSettingsPersistenceProfile",
+            "cloudPCUserSettingsPersistenceUsageResult",
             "cloudPcWindowsSetting",
             "cloudPcWindowsSettings",
             "keyValuePair",
