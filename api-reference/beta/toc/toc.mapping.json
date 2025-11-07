@@ -17,6 +17,12 @@
       ]
     },
     {
+      "name": "Agents",
+      "resources": [
+        "agentUser"
+      ]
+    },
+    {
       "name": "Applications",
       "overview": "../../resources/applications-api-overview.md",
       "shouldSort": true,
