@@ -29,6 +29,7 @@ For the list of supported methods, see [place](./place.md).
 |displayDeviceName |String |The name of the display device (for example, `monitor` or `projector`) that is available at the **desk**. |
 |displayName|String|The name that is associated with the **desk**. Inherited from [place](./place.md).|
 |geoCoordinates|[outlookGeoCoordinates](./outlookgeocoordinates.md)|Specifies the **desk** location in latitude, longitude, and (optionally) altitude coordinates. Inherited from [place](./place.md).|
+|heightAdjustableState |placeFeatureEnablement|A state that indicates whether the desk is height adjustable. The possible values are: `unknown`, `enabled`, `disabled`, `unknownFutureValue`.|
 |id|String|The unique identifier for the **desk**. Read-only. This identifier isn't immutable and can change if the mailbox or tenant configuration changes. Inherited from [place](./place.md). |
 |isWheelChairAccessible|Boolean|Indicates whether the **desk** is wheelchair accessible. Inherited from [place](./place.md).|
 |label |String |User-defined description of the **desk**. Inherited from [place](../resources/place.md).|
@@ -37,7 +38,6 @@ For the list of supported methods, see [place](./place.md).
 |parentId|String|The ID of a parent [section](./section.md). Inherited from [place](./place.md).|
 |phone|String|The phone number of the **desk**. Inherited from [place](./place.md).|
 |tags|String collection|Custom tags that are associated with the **desk** for categorization or filtering. Inherited from [place](./place.md).|
-|heightAdjustableState |[placeFeatureEnablement](../resources/enums.md) |A state indicating whether the desk is height adjustable. Possible values are: `unknown`, `enabled`, `disabled`, `unknownFutureValue`.|
 
 ## Relationships
 None.
@@ -59,6 +59,7 @@ The following JSON representation shows the resource type.
   "displayDeviceName": "String",
   "displayName": "String",
   "geoCoordinates": {"@odata.type": "microsoft.graph.outlookGeoCoordinates"},
+  "heightAdjustableState": "String",
   "id": "String (identifier)",
   "isWheelChairAccessible": "Boolean",
   "label": "String",
@@ -66,8 +67,7 @@ The following JSON representation shows the resource type.
   "mode": {"@odata.type": "microsoft.graph.placeMode"},
   "parentId": "String",
   "phone": "String",
-  "tags": ["String"],
-  "heightAdjustableState": "String"
+  "tags": ["String"]
 }
 ```
 
