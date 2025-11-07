@@ -55,7 +55,7 @@ The following table shows the parameters that can be used with this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [cloudPCUserSettingsPersistenceUsageResult](../resources/cloudPCUserSettingsPersistenceUsageResult.md) in the response body.
+If successful, this method returns a `200 OK` response code and a [cloudPCUserSettingsPersistenceUsageResult](../resources/cloudpcusersettingspersistenceusageresult.md) in the response body.
 
 ## Examples
 
