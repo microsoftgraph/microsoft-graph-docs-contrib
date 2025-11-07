@@ -1,6 +1,6 @@
 ---
 title: "workHoursAndLocationsSetting: occurrencesView"
-description: "Retrieves work plan occurrences within a specified date range."
+description: "Retrieves work plan occurrences from your own work plan within a specified date range."
 author: "emilbekj"
 ms.localizationpriority: medium
 ms.subservice: "outlook"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieves work plan occurrences within a specified date range. Similar to calendarView, this function requires startDateTime and endDateTime parameters.
+Retrieves work plan occurrences from your own work plan within a specified date range. This function requires startDateTime and endDateTime parameters.
 
 ## Permissions
 
@@ -31,6 +31,13 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ```http
 GET /me/settings/workHoursAndLocations/occurrencesView(startDateTime='{startDateTime}',endDateTime='{endDateTime}')
+```
+
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
+
+When using the `/users/{id}` endpoint, the ID must be your own user ID.
+
+```http
 GET /users/{id | userPrincipalName}/settings/workHoursAndLocations/occurrencesView(startDateTime='{startDateTime}',endDateTime='{endDateTime}')
 ```
 

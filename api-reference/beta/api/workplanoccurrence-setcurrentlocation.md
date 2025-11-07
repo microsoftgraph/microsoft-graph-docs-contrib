@@ -1,6 +1,6 @@
 ---
 title: "workPlanOccurrence: setCurrentLocation"
-description: "Updates the work location for the current day or current active segment."
+description: "Updates your work location for the current day or current active segment."
 author: "emilbekj"
 ms.localizationpriority: medium
 ms.subservice: "outlook"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Updates the work location for the current day or current active segment. This action allows users to quickly update their work location without modifying individual occurrences.
+Updates your work location for the current day or current active segment. This action allows you to quickly update your work location without modifying individual occurrences.
 
 ## Permissions
 
@@ -25,12 +25,15 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
-<!-- {
-  "blockType": "ignored"
-} -->
-
 ```http
 POST /me/settings/workHoursAndLocations/occurrences/setCurrentLocation
+```
+
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
+
+When using the `/users/{id}` endpoint, the ID must be your own user ID.
+
+```http
 POST /users/{id | userPrincipalName}/settings/workHoursAndLocations/occurrences/setCurrentLocation
 ```
 

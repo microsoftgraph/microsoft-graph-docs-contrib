@@ -1,20 +1,22 @@
 ---
-title: "Update workHoursAndLocations"
-description: "Update the properties of a user's work hours and location settings."
+title: "Update workHoursAndLocationsSetting"
+description: "Update the properties of your own work hours and location settings."
 author: "emilbekj"
 ms.localizationpriority: medium
 ms.subservice: "outlook"
 doc_type: apiPageType
-ms.date: 12/20/2024
+ms.date: 11/07/2025
 ---
 
-# Update workHoursAndLocations
+# Update workHoursAndLocationsSetting
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a user's [workHoursAndLocationsSetting](../resources/workhoursandlocationssetting.md) settings.
+Update the properties of your own [workHoursAndLocationsSetting](../resources/workhoursandlocationssetting.md) settings.
+
+This API allows you to update your own work hours and location settings. When using the `/users/{id}` endpoint, the ID must be your own user ID.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -27,10 +29,15 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
-<!-- { "blockType": "ignored" } -->
-
 ```http
 PATCH /me/settings/workHoursAndLocations
+```
+
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
+
+When using the `/users/{id}` endpoint, the ID must be your own user ID.
+
+```http
 PATCH /users/{id | userPrincipalName}/settings/workHoursAndLocations
 ```
 
@@ -51,7 +58,7 @@ In the request body, supply the values for relevant fields that should be update
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [workHoursAndLocations](../resources/workhoursandlocationssetting.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [workHoursAndLocationsSetting](../resources/workhoursandlocationssetting.md) object in the response body.
 
 ## Examples
 
@@ -109,7 +116,7 @@ If the request fails, the API returns standard HTTP error codes. Common error sc
 <!--
 {
   "type": "#page.annotation",
-  "description": "Update workHoursAndLocations",
+  "description": "Update workHoursAndLocationsSetting",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",

@@ -1,6 +1,6 @@
 ---
 title: "Delete workPlanOccurrence"
-description: "Delete a workPlanOccurrence object."
+description: "Delete a workPlanOccurrence object from your own work plan."
 author: "emilbekj"
 ms.localizationpriority: medium
 ms.subservice: "outlook"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a workPlanOccurrence object. Only time-off occurrences can be deleted. Occurrences generated from recurrences can't be deleted.
+Delete a workPlanOccurrence object from your own work plan. Only time-off occurrences can be deleted. Occurrences generated from recurrences can't be deleted.
 
 ## Permissions
 
@@ -25,12 +25,15 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
-<!-- {
-  "blockType": "ignored"
-} -->
-
 ```http
 DELETE /me/settings/workHoursAndLocations/occurrences/{id}
+```
+
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
+
+When using the `/users/{id}` endpoint, the ID must be your own user ID.
+
+```http
 DELETE /users/{id | userPrincipalName}/settings/workHoursAndLocations/occurrences/{id}
 ```
 

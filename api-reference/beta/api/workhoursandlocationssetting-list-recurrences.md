@@ -1,6 +1,6 @@
 ---
 title: "List recurrences"
-description: "Get the workPlanRecurrence resources from the recurrences navigation property."
+description: "Get the workPlanRecurrence resources from your own work plan's recurrences navigation property."
 author: "emilbekj"
 ms.localizationpriority: medium
 ms.subservice: "outlook"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the recurrences from the recurrences navigation property.
+Get the recurrences from your own work plan via the recurrences navigation property.
 
 ## Permissions
 
@@ -31,6 +31,13 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ```http
 GET /me/settings/workHoursAndLocations/recurrences
+```
+
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
+
+When using the `/users/{id}` endpoint, the ID must be your own user ID.
+
+```http
 GET /users/{id | userPrincipalName}/settings/workHoursAndLocations/recurrences
 ```
 

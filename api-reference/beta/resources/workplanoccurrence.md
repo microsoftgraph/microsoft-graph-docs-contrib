@@ -1,6 +1,6 @@
 ---
 title: "workPlanOccurrence resource type"
-description: "Represents a specific instance of a work schedule for a particular day."
+description: "Represents a specific instance of your work schedule for a particular day."
 author: "emilbekj"
 ms.localizationpriority: medium
 ms.subservice: "outlook"
@@ -14,9 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a specific work schedule instance for a particular day or time period.
+Represents a specific work schedule instance for a particular day or time period in your work plan.
 
-Work plan occurrences can be automatically generated from recurring work patterns or manually created for special arrangements. These occurrences are useful for handling exceptions to regular schedules. Examples include:
+Your work plan occurrences can be automatically generated from recurring work patterns or manually created for special arrangements. These occurrences are useful for handling exceptions to your regular schedules. Examples include:
 
 - Working different hours for a specific day
 - Working from a different location 

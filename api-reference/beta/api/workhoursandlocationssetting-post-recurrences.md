@@ -1,6 +1,6 @@
 ---
 title: "Create workPlanRecurrence"
-description: "Create a new workPlanRecurrence object."
+description: "Create a new workPlanRecurrence object in your own work plan."
 author: "emilbekj"
 ms.localizationpriority: medium
 ms.subservice: "outlook"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new workPlanRecurrence object.
+Create a new workPlanRecurrence object in your own work plan.
 
 ## Permissions
 
@@ -31,6 +31,13 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ```http
 POST /me/settings/workHoursAndLocations/recurrences
+```
+
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
+
+When using the `/users/{id}` endpoint, the ID must be your own user ID.
+
+```http
 POST /users/{id | userPrincipalName}/settings/workHoursAndLocations/recurrences
 ```
 

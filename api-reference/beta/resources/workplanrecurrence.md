@@ -1,6 +1,6 @@
 ---
 title: "workPlanRecurrence resource type"
-description: "Represents a recurring work schedule pattern."
+description: "Represents a recurring work schedule pattern in your work plan."
 author: "emilbekj"
 ms.localizationpriority: medium
 ms.subservice: "outlook"
@@ -14,9 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a recurring work schedule pattern that defines when and where a user works regularly.
+Represents a recurring work schedule pattern that defines when and where you work regularly in your work plan.
 
-A work plan recurrence allows users to establish repeating weekly work schedules. Examples include:
+Your work plan recurrence allows you to establish repeating weekly work schedules. Examples include:
 
 - Office work every Monday, Wednesday, and Friday from 9 AM to 5 PM
 - Remote work on Tuesdays and Thursdays

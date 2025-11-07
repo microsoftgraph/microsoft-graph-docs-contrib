@@ -1,6 +1,6 @@
 ---
 title: "Update workPlanRecurrence"
-description: "Update the properties of a workPlanRecurrence object."
+description: "Update the properties of a workPlanRecurrence object in your own work plan."
 author: "emilbekj"
 ms.localizationpriority: medium
 ms.subservice: "outlook"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a workPlanRecurrence object. Updates require the full recurrence object to be provided (PUT semantics). PATCH isn't supported.
+Update the properties of a workPlanRecurrence object in your own work plan. Updates require the full recurrence object to be provided (PUT semantics). PATCH isn't supported.
 
 ## Permissions
 
@@ -25,12 +25,15 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
-<!-- {
-  "blockType": "ignored"
-} -->
-
 ```http
 PUT /me/settings/workHoursAndLocations/recurrences/{id}
+```
+
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
+
+When using the `/users/{id}` endpoint, the ID must be your own user ID.
+
+```http
 PUT /users/{id | userPrincipalName}/settings/workHoursAndLocations/recurrences/{id}
 ```
 

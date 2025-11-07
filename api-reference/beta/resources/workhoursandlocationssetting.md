@@ -1,6 +1,6 @@
 ---
 title: "workHoursAndLocationsSetting resource type"
-description: "Represents a user's working hours and location preferences for effective scheduling and availability management."
+description: "Represents your working hours and location preferences for effective scheduling and availability management."
 author: "emilbekj"
 ms.localizationpriority: medium
 ms.subservice: "outlook"
@@ -14,11 +14,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a user's working hours and location preferences for modern hybrid work scenarios.
+Represents your working hours and location preferences for modern hybrid work scenarios.
 
-Having access to a user's work hours and location information is useful in scenarios that handle activity planning, resource allocation, and meeting scheduling. You can [get](../api/workhoursandlocationssetting-get.md) and [update](../api/workhoursandlocationssetting-update.md) a user's work hours and locations as part of their personal work planning.
+Having access to your work hours and location information is useful in scenarios that handle activity planning, resource allocation, and meeting scheduling. You can [get](../api/workhoursandlocationssetting-get.md) and [update](../api/workhoursandlocationssetting-update.md) your work hours and locations as part of your personal work planning.
 
-You can set different work locations and schedules to accommodate flexible work arrangements. These settings are useful for hybrid work scenarios where you may work from the office some days and remotely on others. You can set recurring patterns for regular schedules and create specific occurrences for exceptions or special arrangements.
+You can set different work locations and schedules to accommodate your flexible work arrangements. These settings are useful for hybrid work scenarios where you may work from the office some days and remotely on others. You can set recurring patterns for regular schedules and create specific occurrences for exceptions or special arrangements.
 
 ## Methods
 
