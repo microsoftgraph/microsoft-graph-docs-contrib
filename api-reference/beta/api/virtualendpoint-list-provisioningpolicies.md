@@ -154,7 +154,11 @@ Content-Type: application/json
           "locale": "en-US"
       },
       "managedBy": "windows365",
-      "provisioningType": "dedicated"
+      "provisioningType": "dedicated",
+      "userSettingsPersistenceConfiguration": {
+          "userSettingsPersistenceEnabled": true,
+          "userSettingsPersistenceStorageSizeCategory": "fourGB"
+      }
     }
   ]
 }

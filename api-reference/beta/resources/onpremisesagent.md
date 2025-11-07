@@ -2,7 +2,7 @@
 title: "onPremisesAgent resource type"
 description: "onPremisesAgent resource type."
 ms.localizationpriority: medium
-author: "dhruvinrshah"
+author: "shahzad-khalid"
 ms.subservice: "entra-applications"
 doc_type: "resourcePageType"
 ms.date: 05/23/2024
@@ -33,7 +33,8 @@ Represents on-premises agent. On-premises agents installed by a tenant administr
 |id|String| The object id of the onPremisesAgent. Read-only.|
 |machineName|String|The name of the machine that the agent is running on. Read-only|
 |status|agentStatus| Possible values are: `active`, `inactive`.|
-|supportedPublishingTypes|String collection| Possible values are: `applicationProxy`, `exchangeOnline`, `authentication`, `provisioning`, `adAdministration`.|
+|supportedPublishingTypes|onPremisesPublishingType collection| Possible values are: `applicationProxy`, `exchangeOnline`, `authentication`, `provisioning`, `intunePfx`, `oflineDomainJoin`, `unknownFutureValue`, `privateAccess`. Use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `privateAccess`.|
+
 
 ## Relationships
 
