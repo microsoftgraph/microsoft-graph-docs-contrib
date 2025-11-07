@@ -1,6 +1,6 @@
 ---
 title: "cloudPcProvisioningPolicy: retrieveUserSettingsPersistenceProfiles"
-description: "Retrieve the user storage list for the Cloud PC user settings persistence under selected Cloud PC's policy assignment."
+description: "Retrieve the user storage list for Cloud PC user settings persistence under the selected Cloud PC policy assignment."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
@@ -14,8 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the user storage list for the Cloud PC user settings persistence under selected Cloud PC's policy assignment
-
+Retrieve the user storage list for Cloud PC user settings persistence under the selected [Cloud PC policy](../resources/cloudpcprovisioningpolicy.md) assignment.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -52,16 +51,17 @@ The following table shows the parameters that can be used with this method.
 
 |Property|Type|Description|
 |:---|:---|:---|
-| configurationId  |String | The unique identifier for the selected Cloud PC user settings persistence.   |
+| configurationId |String | The unique identifier for the selected Cloud PC user's settings persistence. |
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [retrieveUserSettingsPersistenceProfile](../resources/cloudPCUserSettingsPersistenceProfile.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [retrieveUserSettingsPersistenceProfile](../resources/cloudpcusersettingspersistenceprofile.md) objects in the response body.
 
 ## Examples
 
-#### Request
-The following example shows a request to retrieve the user storage list for a Cloud PC assignment's user settings persistence.
+### Request
+
+The following example shows a request to retrieve the user storage list for the user settings persistence of a Cloud PC assignment.
 
 <!-- {
   "blockType": "request",
@@ -72,14 +72,10 @@ The following example shows a request to retrieve the user storage list for a Cl
 ``` http
 GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/provisioningPolicies/bed92b3e-4b42-4be5-af0d-ebb2d96c432f/assignments/e9d4eb36-7056-4161-93a4-2d6f8d20d6c0/cloudPCUserSettingsPersistence/retrieveUserSettingsPersistenceProfiles(configurationId='64ff06de-9c00-4a5a-98b5-7f5abe26bfd9')
 Content-Type: application/json
-
-
 ```
----
 
-#### Response
-
-
+### Response
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -91,29 +87,29 @@ Content-Type: application/json
 HTTP/1.1 200 OK
 
 {
-    "@odata.type": "https://graph.microsoft.com/beta/$metadata#retrieveUserSettingsPersistenceProfiles",
-    "value":[
-        {
-            "profileId": "8fd04a0b-ed49-46c0-a62d-e7980d829058",
-            "userPrincipalName": "json@contoso.com",
-            "profileSizeInGB": 4,
-            "lastProfileAttachedDateTime": "2020-06-03T12:43:32Z",
-            "status": "connected"
-        },
-        {
-            "profileId": "95d04a0b-ed49-46c0-a62d-e7980d829058",
-            "userPrincipalName": "json@contoso.com",
-            "profileSizeInGB": 4,
-            "lastProfileAttachedDateTime": null,
-            "status": "notConnected"
-        },
-        {
-            "profileId": "12d04a0b-ed49-46c0-a62d-e7980d829058",
-            "userPrincipalName": "connie@contoso.com",
-            "profileSizeInGB": 4,
-            "lastProfileAttachedDateTime": "2020-11-03T12:43:32Z",
-            "status": "deleting"
-        }
-    ]
+  "@odata.type": "https://graph.microsoft.com/beta/$metadata#retrieveUserSettingsPersistenceProfiles",
+  "value": [
+    {
+      "profileId": "8fd04a0b-ed49-46c0-a62d-e7980d829058",
+      "userPrincipalName": "json@contoso.com",
+      "profileSizeInGB": 4,
+      "lastProfileAttachedDateTime": "2020-06-03T12:43:32Z",
+      "status": "connected"
+    },
+    {
+      "profileId": "95d04a0b-ed49-46c0-a62d-e7980d829058",
+      "userPrincipalName": "json@contoso.com",
+      "profileSizeInGB": 4,
+      "lastProfileAttachedDateTime": null,
+      "status": "notConnected"
+    },
+    {
+      "profileId": "12d04a0b-ed49-46c0-a62d-e7980d829058",
+      "userPrincipalName": "connie@contoso.com",
+      "profileSizeInGB": 4,
+      "lastProfileAttachedDateTime": "2020-11-03T12:43:32Z",
+      "status": "deleting"
+    }
+  ]
 }
 ```
