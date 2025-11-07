@@ -18,6 +18,15 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 > [!IMPORTANT]
 > Features in _preview_ status are subject to change without notice, and might not be promoted to generally available (GA) status. Don't use preview features in production apps.
 
+## November 2025: New in preview only
+
+### Device and app management | Cloud PC
+
+- Use the **cloudPCUserSettingsPersistenceDetail** resource and its associated methods to determine whether Cloud PC user settings persistence is enabled. When enabled, Windows 365 saves user-specific application data in a central location and reconnects users to their storage during each session:
+  - [Batch delete user settings persistence profile](/graph/api/cloudpcprovisioningpolicy-batchcleanupusersettingspersistenceprofile?view=graph-rest-beta&preserve-view=true).
+  - [Retrieve user settings persistence profiles](/graph/api/cloudpcprovisioningpolicy-retrieveusersettingspersistenceprofiles?view=graph-rest-beta&preserve-view=true).
+  - [Retrieve user settings persistence usage](/graph/api/cloudpcprovisioningpolicy-retrieveusersettingspersistenceprofileusage?view=graph-rest-beta&preserve-view=true)
+
 ## October 2025: New and generally available
 
 ### Backup storage
