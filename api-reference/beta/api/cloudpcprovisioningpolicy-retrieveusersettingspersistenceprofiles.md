@@ -71,7 +71,6 @@ The following example shows a request to retrieve the user storage list for the 
 
 ``` http
 GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/provisioningPolicies/bed92b3e-4b42-4be5-af0d-ebb2d96c432f/assignments/e9d4eb36-7056-4161-93a4-2d6f8d20d6c0/cloudPCUserSettingsPersistence/retrieveUserSettingsPersistenceProfiles(configurationId='64ff06de-9c00-4a5a-98b5-7f5abe26bfd9')
-Content-Type: application/json
 ```
 
 ### Response
