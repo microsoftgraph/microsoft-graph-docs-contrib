@@ -84,17 +84,15 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.userConfiguration",
-    "id": "a10e39d7-5dd4-6dbf-42b0-794e8429ed0f",
-    "binaryData": "Binary",
-    "xmlData": "Binary",
-    "structuredData": [
-      {
-        "@odata.type": "microsoft.graph.structuredDataEntry"
-      }
-    ]
-  }
+  "@odata.type": "#microsoft.graph.userConfiguration",
+  "id": "a10e39d7-5dd4-6dbf-42b0-794e8429ed0f",
+  "binaryData": "Binary",
+  "xmlData": "Binary",
+  "structuredData": [
+    {
+      "@odata.type": "microsoft.graph.structuredDataEntry"
+    }
+  ]
 }
 ```
 
