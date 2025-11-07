@@ -25,7 +25,7 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 - Use the [cloudPCUserSettingsPersistenceDetail](/graph/api/resources/cloudpcusersettingspersistencedetail?view=graph-rest-beta&preserve-view=true) resource and its associated methods to determine whether Cloud PC user settings persistence is enabled. When enabled, Windows 365 saves user-specific application data in a central location and reconnects users to their storage during each session:
   - [Batch delete user settings persistence profile](/graph/api/cloudpcprovisioningpolicy-batchcleanupusersettingspersistenceprofile?view=graph-rest-beta&preserve-view=true).
   - [Retrieve user settings persistence profiles](/graph/api/cloudpcprovisioningpolicy-retrieveusersettingspersistenceprofiles?view=graph-rest-beta&preserve-view=true).
-  - [Retrieve user settings persistence usage](/graph/api/cloudpcprovisioningpolicy-retrieveusersettingspersistenceprofileusage?view=graph-rest-beta&preserve-view=true)
+  - [Retrieve user settings persistence usage](/graph/api/cloudpcprovisioningpolicy-retrieveusersettingspersistenceprofileusage?view=graph-rest-beta&preserve-view=true).
 
 ## October 2025: New and generally available
 
