@@ -93,7 +93,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.organizationalBrandingThemeLocalization"
+  "@odata.type": "microsoft.graph.organizationalBrandingTheme"
 }
 -->
 ``` http
