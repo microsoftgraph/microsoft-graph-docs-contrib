@@ -23,7 +23,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "groupresource_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/privilegedaccessgroupgroupresource-get-permissions.md)]
 
-[!INCLUDE [rbac-pim-groups-apis-read-assignmentschedulerequests](../includes/rbac-for-apis/rbac-pim-groups-apis-read-assignmentschedulerequests.md)]
+> [!NOTE]
+> In delegated scenarios that use work or school accounts, any Microsoft Entra ID member user can call this API if the required permissions are granted."
 
 ## HTTP request
 
