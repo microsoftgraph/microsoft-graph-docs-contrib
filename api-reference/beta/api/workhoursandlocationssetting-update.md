@@ -54,7 +54,7 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property | Type | Description |
 |:---------|:-----|:------------|
-| maxSharedWorkLocationDetails | maxWorkLocationDetails | Controls the level of work location details that can be shared with colleagues. The possible values are: `unknown`, `none`, `approximate`, `specific`, `unknownFutureValue`. |
+| maxSharedWorkLocationDetails | [maxWorkLocationDetails](../resources/maxworklocationdetails.md) | Controls the level of work location details that can be shared with colleagues. |
 
 ## Response
 

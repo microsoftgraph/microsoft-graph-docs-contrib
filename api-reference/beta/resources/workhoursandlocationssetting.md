@@ -32,7 +32,7 @@ You can set different work locations and schedules to accommodate your flexible 
 
 | Property | Type | Description |
 |:---------|:-----|:------------|
-| maxSharedWorkLocationDetails | maxWorkLocationDetails | Controls the level of location detail that can be shared with colleagues. Possible values are: `unknown`, `none`, `approximate`, `specific`, `unknownFutureValue`. |
+| maxSharedWorkLocationDetails | [maxWorkLocationDetails](maxworklocationdetails.md) | Controls the level of location detail that can be shared with colleagues. |
 
 ## Relationships
 
