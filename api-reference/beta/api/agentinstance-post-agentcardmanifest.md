@@ -4,7 +4,7 @@ description: "Add agentCardManifest by posting to the agentCardManifest collecti
 author: "jasondou"
 ms.date: 11/06/2025
 ms.localizationpriority: medium
-ms.subservice: "entra"
+ms.subservice: "entra-id"
 doc_type: apiPageType
 ---
 

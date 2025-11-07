@@ -4,7 +4,7 @@ description: "Update the properties of an agentInstance object."
 author: "jasondou"
 ms.date: 11/06/2025
 ms.localizationpriority: medium
-ms.subservice: "entra"
+ms.subservice: "entra-id"
 doc_type: apiPageType
 ---
 
