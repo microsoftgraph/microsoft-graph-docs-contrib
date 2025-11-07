@@ -1,0 +1,18 @@
+#
+# GENERATED FILE - DO NOT EDIT
+#
+items:
+- name: Agent user
+  items:
+  - name: Agent user
+    href: ../../resources/agentuser.md
+  - name: List
+    href: ../../api/user-list.md
+  - name: Create
+    href: ../../api/user-post-users.md
+  - name: Get
+    href: ../../api/user-get.md
+  - name: Update
+    href: ../../api/user-update.md
+  - name: Delete
+    href: ../../api/user-delete.md
