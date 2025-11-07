@@ -1,6 +1,6 @@
 ---
 title: "cloudPcProvisioningPolicy: retrieveUserSettingsPersistenceProfileUsage"
-description: "Retrieve the usage of Cloud PC user settings persistence in the selected Cloud PC's policy assignment."
+description: "Retrieve the usage of Cloud PC user settings persistence in the selected Cloud PC policy assignment."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
@@ -14,8 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the usage of Cloud PC user settings persistence in the selected Cloud PC's policy assignment.
-
+Retrieve the usage of Cloud PC user settings persistence in the selected [Cloud PC policy](../resources/cloudpcprovisioningpolicy.md) assignment.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -52,7 +51,7 @@ The following table shows the parameters that can be used with this method.
 
 |Property|Type|Description|
 |:---|:---|:---|
-| configurationId  |String | The unique identifier for the selected Cloud PC user settings persistence.   |
+| configurationId  |String | The unique identifier for the selected Cloud PC user's settings persistence. |
 
 ## Response
 
@@ -60,7 +59,7 @@ If successful, this method returns a `200 OK` response code and a [cloudPCUserSe
 
 ## Examples
 
-#### Request
+### Request
 The following example shows a request to retrieve the user settings persistence usage for a Cloud PC policy assignment.
 <!-- {
   "blockType": "request",
@@ -70,14 +69,10 @@ The following example shows a request to retrieve the user settings persistence 
 
 ``` http
 GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/provisioningPolicies/bed92b3e-4b42-4be5-af0d-ebb2d96c432f/assignments/e9d4eb36-7056-4161-93a4-2d6f8d20d6c0/cloudPCUserSettingsPersistence/retrieveUserSettingsPersistenceProfileUsage(configurationId='64ff06de-9c00-4a5a-98b5-7f5abe26bfd9')
-Content-Type: application/json
-
-
 ```
----
 
-#### Response
-
+### Response
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -89,9 +84,10 @@ Content-Type: application/json
 HTTP/1.1 200 OK
 
 {
-    "@odata.context":"https://graph.microsoft.com/beta/$metadata#retrieveUserSettingsPersistenceProfileUsage",
-    "totalAllocatedStorageInGB": 1200,
-    "remainingAvailableStorageInGB": 100,
-    "usedStorageInGB": 1100
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#retrieveUserSettingsPersistenceProfileUsage",
+  "totalAllocatedStorageInGB": 1200,
+  "remainingAvailableStorageInGB": 100,
+  "usedStorageInGB": 1100
 }
 ```
+
