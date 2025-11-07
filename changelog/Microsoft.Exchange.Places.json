@@ -36,11 +36,35 @@
         },
         {
           "Id": "9f8e7d6c-5b4a-3210-fedc-ba9876543210",
+          "ApiChange": "Property",
+          "ChangedApiName": "placeId",
+          "ChangeType": "Addition",
+          "Description": "Added the **placeId** property to the [room](https://learn.microsoft.com/en-us/graph/api/resources/room?view=graph-rest-beta) resource.",
+          "Target": "room"
+        },
+        {
+          "Id": "9f8e7d6c-5b4a-3210-fedc-ba9876543210",
+          "ApiChange": "Property",
+          "ChangedApiName": "placeId",
+          "ChangeType": "Addition",
+          "Description": "Added the **placeId** property to the [workspace](https://learn.microsoft.com/en-us/graph/api/resources/workspace?view=graph-rest-beta) resource.",
+          "Target": "workspace"
+        },
+        {
+          "Id": "9f8e7d6c-5b4a-3210-fedc-ba9876543210",
           "ApiChange": "Resource",
           "ChangedApiName": "offlinePlaceMode",
           "ChangeType": "Deletion",
           "Description": "Removed the [offlinePlaceMode](https://learn.microsoft.com/en-us/graph/api/resources/offlinePlaceMode?view=graph-rest-beta) resource type.",
           "Target": "offlinePlaceMode"
+        },
+        {
+          "Id": "9f8e7d6c-5b4a-3210-fedc-ba9876543210",
+          "ApiChange": "Property",
+          "ChangedApiName": "placeId",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **placeId** property from the [place](https://learn.microsoft.com/en-us/graph/api/resources/place?view=graph-rest-beta) resource and its derived types.",
+          "Target": "place"
         },
         {
           "Id": "9f8e7d6c-5b4a-3210-fedc-ba9876543210",
