@@ -14,10 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a user configuration object. User configuration objects are also known as Folder Associated Items (FAIs). It is an item associated to a folder. User configuration objects within a folder are distinguished by their unique keys.
+Represents a user configuration object. User configuration objects are also known as Folder Associated Items (FAIs). It's an item associated to a folder. Each user configuration object within a folder must have a unique key.
 
 Inherits from [entity](../resources/entity.md).
-
 
 ## Methods
 |Method|Return type|Description|
@@ -61,4 +60,3 @@ The following JSON representation shows the resource type.
   ]
 }
 ```
-
