@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 Indicates whether Cloud PC user settings persistence is enabled. When enabled, Windows 365 saves user-specific application data in a central cloud storage location and reconnects the user to that storage upon each connection.
 
 ## Methods
-|Method|Return Type|Description|
+|Method|Return type|Description|
 |:-------------|:------------|:------------|
 |[Batch delete user settings persistence profile](../api/cloudpcprovisioningpolicy-batchcleanupusersettingspersistenceprofile.md)|None|Delete a list of selected [user settings persistence](../resources/cloudpcusersettingspersistencedetail.md) profiles that aren't attached to a specific user's Cloud PC in the Cloud PC policy assignment.|
 |[Retrieve user settings persistence profiles](../api/cloudpcprovisioningpolicy-retrieveusersettingspersistenceprofiles.md)|[cloudPCUserSettingsPersistenceProfile](../resources/cloudpcusersettingspersistenceprofile.md) collection|Retrieve the user storage list for Cloud PC [user settings persistence](../resources/cloudpcusersettingspersistencedetail.md) under the selected Cloud PC policy assignment.|
