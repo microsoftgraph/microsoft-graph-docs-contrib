@@ -24,10 +24,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "onpremauthenticationpolicy-update-permissions"
+  "name": "onpremauthenticationpolicy-delete-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/onpremauthenticationpolicy-update-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/onpremauthenticationpolicy-delete-permissions.md)]
 
 
 ## HTTP request
