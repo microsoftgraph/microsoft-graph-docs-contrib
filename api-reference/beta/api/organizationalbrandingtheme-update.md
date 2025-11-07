@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of an organizationalBrandingTheme object.
+Update the properties of an [organizationalBrandingTheme](../resources/organizationalbrandingtheme.md) object.
 
 ## Permissions
 
@@ -92,7 +92,8 @@ The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.organizationalBrandingThemeLocalization"
 }
 -->
 ``` http
