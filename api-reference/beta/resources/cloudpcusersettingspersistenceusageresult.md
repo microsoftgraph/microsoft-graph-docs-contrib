@@ -1,6 +1,6 @@
 ---
 title: "cloudPCUserSettingsPersistenceUsageResult resource type"
-description: "This resource describes the user settings persistence storage usage status for a specific Cloud PC user settings persistence configuration and its associated policy assignment."
+description: "Represents the storage usage status of user settings persistence for a specific Cloud PC user settings persistence configuration and its associated policy assignment."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
@@ -14,15 +14,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This resource describes the user settings persistence storage usage status for a specific Cloud PC user settings persistence configuration and its associated policy assignment.
+Represents the storage usage status of user settings persistence for a specific Cloud PC user settings persistence configuration and its associated policy assignment.
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
-|remainingAvailableStorageInGB|Int32|The remaining available preallocated user settings persistence profile storage for a specific Cloud PC's policy assignment. This value equals the total preallocated storage size minus the used preallocated storage size. Required. Read-only.|
-|totalAllocatedStorageInGB|Int32|The total preallocated user settings persistence profile storage for a specific Cloud PC's policy assignment. The system calculates the total size based on the number of licenses assigned to this policy and the size of each Cloud PC's disk. Required. Read-only.|
-|usedStorageInGB|Int32|The total used preallocated user settings persistence storage for a specific Cloud PC's policy assignment. This value represents the total allocated size for users who have signed in. Required. Read-only.|
+|remainingAvailableStorageInGB|Int32|The remaining available preallocated user settings persistence profile storage for a specific Cloud PC policy assignment. This value equals the total preallocated storage size minus the used preallocated storage size. Required. Read-only.|
+|totalAllocatedStorageInGB|Int32|The total preallocated user settings persistence profile storage for a specific Cloud PC policy assignment. The system calculates the total size based on the number of licenses assigned to this policy and the size of each Cloud PC disk. Required. Read-only.|
+|usedStorageInGB|Int32|The total used preallocated user settings persistence storage for a specific Cloud PC policy assignment. This value represents the total allocated size for users who signed in. Required. Read-only.|
 
 ## Relationships
 
@@ -38,10 +38,9 @@ The following JSON representation shows the resource type.
 -->
 ``` json
 {
-    "@odata.context":"https://graph.microsoft.com/beta/$metadata#cloudPCUserSettingsPersistenceUsageResult",
-    "totalAllocatedStorageInGB": 1200,
-    "remainingAvailableStorageInGB": 100,
-    "usedStorageInGB": 1100
+  "@odata.type": "#microsoft.graph.cloudPCUserSettingsPersistenceUsageResult",
+  "remainingAvailableStorageInGB": "Int32",
+  "totalAllocatedStorageInGB": "Int32",
+  "usedStorageInGB": "Int32"
 }
-
 ```
