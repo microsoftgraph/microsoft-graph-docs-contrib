@@ -1,0 +1,65 @@
+---
+title: "controlConfiguration resource type"
+description: "Defines the lifecycle and access policies of Entitlement Management within a tenant."
+author: "markwahl-msft"
+ms.date: 11/06/2025
+ms.localizationpriority: medium
+ms.subservice: "entra-id-governance"
+doc_type: resourcePageType
+---
+
+# controlConfiguration resource type
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Defines the lifecycle and access policies of Entitlement Management within a tenant.
+
+Inherits from [entity](../resources/entity.md).
+
+
+## Methods
+|Method|Return type|Description|
+|:---|:---|:---|
+|[List](../api/entitlementmanagement-list-controlconfigurations.md)|[controlConfiguration](../resources/controlconfiguration.md) collection|Get a list of the controlConfiguration objects and their properties.|
+|[Create](../api/entitlementmanagement-post-controlconfigurations.md)|[controlConfiguration](../resources/controlconfiguration.md)|Create a new controlConfiguration object.|
+|[Get](../api/controlconfiguration-get.md)|[controlConfiguration](../resources/controlconfiguration.md)|Read the properties and relationships of [controlConfiguration](../resources/controlconfiguration.md) object.|
+|[Update](../api/controlconfiguration-update.md)|[controlConfiguration](../resources/controlconfiguration.md)|Update the properties of a controlConfiguration object.|
+|[Delete](../api/entitlementmanagement-delete-controlconfigurations.md)|None|Delete a controlConfiguration object.|
+
+## Properties
+|Property|Type|Description|
+|:---|:---|:---|
+|createdBy|String|The userPrincipalName of the user or identity that created the control configuration.|
+|createdDateTime|DateTimeOffset|The date and time the control configuration was created.|
+|id|String|The unique identifier for the control configuration. Inherited from [entity](../resources/entity.md). Inherits from [entity](../resources/entity.md)|
+|isEnabled|Boolean|Determines whether or not the control configuration is enabled.|
+|modifiedBy|String|The userPrincipalName of the user or identity that modified the control configuration.|
+|modifiedDateTime|DateTimeOffset|The date and time the control configuration was modified.|
+
+## Relationships
+None.
+
+## JSON representation
+The following JSON representation shows the resource type.
+<!-- {
+  "blockType": "resource",
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.controlConfiguration",
+  "baseType": "microsoft.graph.entity",
+  "openType": false
+}
+-->
+``` json
+{
+  "@odata.type": "#microsoft.graph.controlConfiguration",
+  "id": "String (identifier)",
+  "isEnabled": "Boolean",
+  "createdBy": "String",
+  "createdDateTime": "String (timestamp)",
+  "modifiedBy": "String",
+  "modifiedDateTime": "String (timestamp)"
+}
+```
+
