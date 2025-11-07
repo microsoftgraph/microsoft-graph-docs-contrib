@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /teams/{teamsId}/schedule/dayNotes
 ```
 
@@ -60,7 +60,7 @@ If successful, this method returns a `200 OK` response code and a [dayNote](../r
 ### Request
 The following example shows a request.
 
-``` http
+```http
 POST /teams/d72f9b8e-4c76-4f50-bf93-51b17aab0cd9/schedule/dayNotes
 Content-Type: application/json
 
@@ -79,7 +79,7 @@ Content-Type: application/json
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

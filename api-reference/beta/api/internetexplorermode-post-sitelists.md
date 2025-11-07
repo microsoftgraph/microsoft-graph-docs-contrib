@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /admin/edge/internetExplorerMode/siteLists
 ```
 
@@ -65,7 +65,7 @@ The following example shows a request.
   "name": "create_browsersitelist_from_"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/admin/edge/internetExplorerMode/siteLists
 Content-Type: application/json
 Content-length: 283
@@ -115,7 +115,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.browserSiteList"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 

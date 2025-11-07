@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 
-``` http
+```http
 DELETE /policies/mobileAppManagementPolicies/{id}/includedGroups/{id}/$ref
 ```
 
@@ -102,6 +102,6 @@ DELETE https://graph.microsoft.com/beta/policies/mobileAppManagementPolicies/ab9
 }
 -->
 
-``` http
+```http
 HTTP/1.1 204 No Content
 ```

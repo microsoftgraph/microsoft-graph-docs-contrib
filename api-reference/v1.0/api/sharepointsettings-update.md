@@ -29,7 +29,7 @@ When calling on behalf of a user, the user needs to belong to the SharePoint Adm
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PATCH /admin/sharepoint/settings
 ```
 
@@ -91,7 +91,7 @@ The following example shows a request.
   "name": "update_tenant_settings"
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/v1.0/admin/sharepoint/settings
 Content-Type: application/json
 Content-length: 1323
@@ -149,7 +149,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.sharepointSettings"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

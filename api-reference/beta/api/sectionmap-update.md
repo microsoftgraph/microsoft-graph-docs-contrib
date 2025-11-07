@@ -32,7 +32,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PATCH /places/{buildingPlaceId}/microsoft.graph.building/map/levels/{levelImdfID}/sections/{sectionImdfID}
 ```
 
@@ -75,7 +75,7 @@ The following example shows a request.
   "name": "update_sectionmap"
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/places/151e85a7-c0b8-4519-997e-1a0858255704/microsoft.graph.building/map/levels/e537d463-475b-43c3-a650-184566c68bc9/sections/005eb3b8-c95d-4d35-a8a0-22d6nb4d6003
 Content-Type: application/json
 
@@ -95,7 +95,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.sectionMap"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -118,7 +118,7 @@ The following example shows a request.
   "name": "create_sectionmap_from_"
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/places/151e85a7-c0b8-4519-997e-1a0858255704/microsoft.graph.building/map/levels/e537d463-475b-43c3-a650-184566c68bc9/sections/005eb3b8-c95d-4d35-a8a0-22d6nb4d6003
 Content-Type: application/json
 
@@ -138,7 +138,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.sectionMap"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 
