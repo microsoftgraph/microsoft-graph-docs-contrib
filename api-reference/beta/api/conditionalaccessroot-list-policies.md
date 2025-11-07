@@ -292,7 +292,7 @@ Content-type: application/json
 The following example shows a request to list all enabled policies scoped to agents (where agents are the actors). The response will list all CA policies scoped to agent identities and agent users.
 
 ```http
-GET https://graph.microsoft.com/beta/identity/conditionalAccess/policies?$count=true&$select=id&… eq 'enabled') and (conditions/clientApplications/includeAgentIdServicePrincipals/any() or conditions/clientApplications/excludeAgentIdServicePrincipals/any() or conditions/clientApplications/agentIdServicePrincipalFilter ne null or conditions/users/includeUsers/any(includeUsers:includeUsers in ('AllAgentIdUsers')))
+GET https://graph.microsoft.com/beta/identity/conditionalAccess/policies?$count=true&$filter=state eq 'enabled' and (conditions/clientApplications/includeAgentIdServicePrincipals/any() or conditions/clientApplications/excludeAgentIdServicePrincipals/any() or conditions/clientApplications/agentIdServicePrincipalFilter ne null or conditions/users/includeUsers/any(includeUsers:includeUsers in ('AllAgentIdUsers')))
 ```
 
 ### Response
