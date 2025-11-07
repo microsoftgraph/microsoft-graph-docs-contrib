@@ -253,7 +253,7 @@ Content-Type: application/json
   "displayName": "Desk6",
   "parentId": "ca163ae1-14a3-4e2a-8a97-5f82d672186f",
   "mode": {
-    "@odata.type": "#microsoft.graph.offlinePlaceMode",
+    "@odata.type": "#microsoft.graph.unavailablePlaceMode",
     "reason": "New"
   }
 }
