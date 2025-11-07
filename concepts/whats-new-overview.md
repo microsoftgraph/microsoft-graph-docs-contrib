@@ -24,6 +24,16 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 The [driveItem: restore](/graph/api/driveitem-restore) method was expanded to enable restoring a **driveItem** deleted from a **fileStorageContainer** without mapping it to a **recycleBinItem**. This complements existing functionality in [recycleBinItem: restore](/graph/api/filestoragecontainer-restore-recyclebinitem) which continues to work as expected.
 
+## November 2025: New in preview only
+
+### Calendars | Places
+
+- Use the **wifiState** property on [building](/graph/api/resources/building?view=graph-rest-beta&preserve-view=true) to indicate whether a building has Wi-Fi.
+- Use the **heightAdjustableState** property on [desk](/graph/api/resources/desk?view=graph-rest-beta&preserve-view=true) to indicate whether a desk is height adjustable.
+- Use the **teamsEnabledState** property on [room](/graph/api/resources/room?view=graph-rest-beta&preserve-view=true) to indicate whether a room is enabled for Microsoft Teams.
+- Removed the **placeId** property from the [place](/graph/api/resources/place?view=graph-rest-beta&preserve-view=true) resource and its derived types. Going forward only the following derived types of **place** have the **placeId** property: [room](/graph/api/resources/room?view=graph-rest-beta&preserve-view=true) and [workspace](/graph/api/resources/workspace?view=graph-rest-beta&preserve-view=true).
+- Removed the [offlinePlaceMode](/graph/api/resources/offlineplacemode?view=graph-rest-beta&preserve-view=true) resource in favor of the [unavailablePlaceMode](/graph/api/resources/unavailableplacemode?view=graph-rest-beta&preserve-view=true) resource.
+
 ## October 2025: New and generally available
 
 ### Backup storage
@@ -123,11 +133,7 @@ Use the **originalSourceMembershipUrl** annotation with the [List allMembers](/g
 ## October 2025: New in preview only
 
 ### Calendars | Places
-- Removed "placeId" from the [Place](/api-reference/beta/resources/place.md), now scoped to [Room](/api-reference/beta/resources/room.md) and [Workplace](/api-reference/beta/resources/workplace.md) only.
-- Added a new property heightAdjustableState in [Desk](/api-reference/beta/resources/desk.md).
-- Added a new property wifiState in [Building](/api-reference/beta/resources/building.md).
-- Added a new property teamsEnabledState in [Room](/api-reference/beta/resources/room.md).
-- Renamed the offlinePlaceMode to [unavailablePlaceMode](/api-reference/beta/resources/unavailableplacemode.md) to better reflect its purpose.
+
 - Applied the following [prerequisites for the Places list and descendant APIs](/graph/api/resources/places-api-overview?view=graph-rest-beta&preserve-view=true#prerequisites-for-places-list-and-descendant-apis) before you can use these APIs; otherwise, they don't return any places.
 - Added `wifi` as a new supported value for the **sensorType** property of the [workplaceSensor](/graph/api/resources/workplacesensor?view=graph-rest-beta&preserve-view=true) and [workplaceSensorDeviceTelemetry](/graph/api/resources/workplacesensordevicetelemetry?view=graph-rest-beta&preserve-view=true) resources.
 
