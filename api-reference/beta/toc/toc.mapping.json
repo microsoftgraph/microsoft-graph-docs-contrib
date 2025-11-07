@@ -90,6 +90,7 @@
             "onPremisesAgent",
             "onPremisesAgentGroup",
             "onPremisesPublishingProfile",
+            "privateAccessSensor",
             "publishedResource",
             "ipApplicationSegment",
             "webApplicationSegment",
@@ -585,6 +586,7 @@
             "cloudPcSubscription",
             "cloudPcUserRoleScopeTagInfo",
             "cloudPcUserSettingAssignment",
+            "cloudPcUserSettingsPersistenceConfiguration",
             "cloudPcWindowsSetting",
             "cloudPcWindowsSettings",
             "frontlineCloudPcDetail",
@@ -1555,6 +1557,16 @@
           ],
           "childNodes": [
             {
+              "name": "Sign-in identifiers",
+              "resources": [
+                "signInIdentifierBase",
+                "customUsernameSignInIdentifier",
+                "emailSignInIdentifier",
+                "upnSignInIdentifier",
+                "usernameSignInIdentifier"
+              ]
+            },
+            {
               "name": "Authentication event listeners",
               "resources": [
                 "authenticationEventListener",
@@ -2054,6 +2066,7 @@
                 "microsoft.graph.networkaccess.filteringPolicyLink",
                 "microsoft.graph.networkaccess.filteringRule",
                 "microsoft.graph.networkaccess.fqdnFilteringRule",
+                "microsoft.graph.networkaccess.urlDestinationFilteringRule",
                 "microsoft.graph.networkaccess.webCategoryFilteringRule",
                 "microsoft.graph.networkAccess.threatIntelligencePolicy",
                 "microsoft.graph.networkAccess.threatIntelligencePolicyLink",
