@@ -22,6 +22,7 @@ Settings that represent a user’s preferences for the following:
 - [Regional locale and languages](../resources/regionalandlanguagesettings.md)
 - [Shift scheduling](../resources/shiftpreferences.md)
 - [Suggestions to merge duplicate contacts](../resources/contactmergesuggestions.md)
+- [Work hours and locations](../resources/workhoursandlocationssetting.md)
 
 This resource type provides access to the following operations.
 
@@ -53,6 +54,10 @@ Export users' Windows settings and values stored in a cloud:
     - [windowsSettingType](../resources/enums.md#windowssettingtype-values)
     - [windowsDeviceId](../resources/windowssetting.md#properties)
 
+Manage work hours and location settings:
+  - Get and update a user's work hours and location preferences for scheduling and availability management.
+  - Access work plan recurrences and occurrences for flexible work arrangements.
+
 Inherits from [entity](entity.md).
 
 > [!NOTE]
@@ -65,6 +70,7 @@ Inherits from [entity](entity.md).
 |[Update](../api/usersettings-update.md) |[userSettings](../resources/usersettings.md)| Update the user current settings. |
 |[List Exchange settings](../api/usersettings-list-exchange.md)|[exchangeSettings](../resources/exchangesettings.md) collection|Get a list of Exchange settings, including mailboxes that belong to a user.|
 |[List Windows settings](../api/usersettings-list-windows.md)|[windowsSetting](../resources/windowssetting.md) collection|Get the **windowsSetting** objects and their properties for the signed in user.|
+|[Get work hours and locations](../api/workhoursandlocationssetting-get.md)|[workHoursAndLocationsSetting](workhoursandlocationssetting.md)|Get the user's work hours and location settings.|
 
 ## Properties
 
@@ -84,6 +90,7 @@ Inherits from [entity](entity.md).
 |regionalAndLanguageSettings|[regionalAndLanguageSettings](regionalandlanguagesettings.md)| The user's preferences for languages, regional locale and date/time formatting. |
 |shiftPreferences|[shiftPreferences](shiftpreferences.md)| The shift preferences for the user. |
 |windows|[windowsSetting](../resources/windowssetting.md) collection|The Windows settings of the user stored in the cloud.|
+|workHoursAndLocations|[workHoursAndLocationsSetting](workhoursandlocationssetting.md)| The user's settings for work hours and location preferences for scheduling and availability management. |
 
 
 ## JSON representation

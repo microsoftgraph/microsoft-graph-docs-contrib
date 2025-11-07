@@ -100,7 +100,6 @@ Content-type: application/json
 
 The following example shows a request to get work hours and locations with expanded recurrences and occurrences.
 
-# [HTTP](#tab/http)
 ```http
 GET https://graph.microsoft.com/beta/me/settings/workHoursAndLocations?$expand=recurrences,occurrences
 ```

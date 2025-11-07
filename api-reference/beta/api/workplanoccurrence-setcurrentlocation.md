@@ -63,7 +63,6 @@ If successful, this action returns a `204 No Content` response code.
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "workplanoccurrence_setcurrentlocation_office"
@@ -99,7 +98,6 @@ HTTP/1.1 204 No Content
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "workplanoccurrence_setcurrentlocation_remote"
