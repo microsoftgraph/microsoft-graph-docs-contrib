@@ -8,5 +8,5 @@ ms.localizationpriority: medium
 |:---|:---|:---|
 |Delegated (work or school account)|Policy.ReadWrite.OnPremAuthenticationPolicy|Not supported.|
 |Delegated (personal Microsoft account)|Policy.ReadWrite.OnPremAuthenticationPolicy|Not supported.|
-|Application|Policy.ReadWrite.OnPremAuthenticationPolicy|Not supported.|
+|Application|Not supported.|Not supported.|
 
