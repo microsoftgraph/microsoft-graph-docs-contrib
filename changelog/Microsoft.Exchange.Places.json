@@ -55,7 +55,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "offlinePlaceMode",
           "ChangeType": "Deletion",
-          "Description": "Removed the [offlinePlaceMode](https://learn.microsoft.com/en-us/graph/api/resources/offlinePlaceMode?view=graph-rest-beta) resource type.",
+          "Description": "Removed the [offlinePlaceMode](https://learn.microsoft.com/en-us/graph/api/resources/offlinePlaceMode?view=graph-rest-beta) resource type. Going forward, use the [unavailablePlaceMode](https://learn.microsoft.com/en-us/graph/api/resources/unavailablePlaceMode?view=graph-rest-beta) resource instead.",
           "Target": "offlinePlaceMode"
         },
         {
@@ -407,7 +407,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "offlinePlaceMode",
           "ChangeType": "Addition",
-          "Description": "Added the [offlinePlaceMode](https://learn.microsoft.com/en-us/graph/api/resources/offlinePlaceMode?view=graph-rest-beta) resource type.",
+          "Description": "Added the **offlinePlaceMode** resource type.",
           "Target": "offlinePlaceMode"
         },
         {
