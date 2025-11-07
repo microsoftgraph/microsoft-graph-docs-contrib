@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of [crossTenantMigrationJob](../resources/crosstenantmigrationjob.md) object.
+Read the properties and relationships of [crossTenantMigrationJob](../resources/crosstenantmigrationjob.md) object. Includes details of the [crossTenantMigrationJob](../resources/crosstenantmigrationjob.md) , but not details of the individual [crossTenantMigrationTasks](../resources/crosstenantmigrationtask.md) of the [crossTenantMigrationJob](../resources/crosstenantmigrationjob.md).
 
 ## Permissions
 
@@ -66,14 +66,13 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/solutions/migrations/crossTenantMigrationJobs/{crossTenantMigrationJobId}
+GET https://graph.microsoft.com/beta/solutions/migrations/crossTenantMigrationJobs/012ec4f4-df7e-41ae-ba95-6d7ccb8f74a1
 ```
 
 
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -85,29 +84,24 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.crossTenantMigrationJob",
-    "id": "1a2fbf52-396e-c3ed-6a65-9772e12d8a43",
-    "displayName": "String",
-    "jobType": "String",
-    "sourceTenantId": "String",
-    "targetTenantId": "String",
-    "completeAfterDateTime": "String (timestamp)",
-    "status": "String",
-    "message": "String",
-    "createdDateTime": "String (timestamp)",
-    "createdBy": "String",
-    "lastUpdatedDateTime": "String (timestamp)",
-    "exchangeSettings": {
-      "@odata.type": "microsoft.graph.exchangeOnlineCrossTenantMigrationSettings"
-    },
-    "workloads": [
-      "String"
-    ],
-    "resourceType": "String",
-    "resources": [
-      "String"
-    ]
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#solutions/migrations/crossTenantMigrationJobs/$entity",
+  "id": "012ec4f4-df7e-41ae-ba95-6d7ccb8f74a1",
+  "displayName": "Contoso_user_migration",
+  "status": "completed",
+  "jobType": "migrate",
+  "message": "The batch and all of its users have been successfully migrated with no failures.",
+  "completeAfterDateTime": "2025-11-06T09:11:33.2115505Z",
+  "sourceTenantId": "12345678-1234-1234-1234-123456789012",
+  "targetTenantId": "87654321-4321-4321-4321-210987654321",
+  "resourceType": "users",
+  "resources": [],
+  "workloads": [],
+  "createdBy": "a0d9fdb1-171f-4e2b-8a82-06775ad24790",
+  "createdDateTime": "2025-11-06T09:06:34.4773205Z",
+  "lastUpdatedDateTime": "2025-11-06T11:26:00Z",
+  "exchangeSettings": {
+    "targetDeliveryDomain": "contoso.onmicrosoft.com",
+    "sourceEndpoint": "EXOHandler"
   }
 }
 ```

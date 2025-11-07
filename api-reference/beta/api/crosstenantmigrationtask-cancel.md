@@ -14,7 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Cancel a specific [crossTenantMigrationTask](../resources/crosstenantmigrationtask.md) (User within a CrossTenantMigrationJob)
+Cancel a specific [crossTenantMigrationTask](../resources/crosstenantmigrationtask.md) for a User within a CrossTenantMigrationJob. 
+
+If the User migration cannot be cancelled or is in a terminal state, a a `409 CONFLICT` response code is returned, and the migration will continue.
 
 ## Permissions
 
@@ -51,6 +53,8 @@ Don't supply a request body for this method.
 
 If successful, this action returns a `202 Accepted` response code and a [crossTenantMigrationCancelResponse](../resources/crosstenantmigrationcancelresponse.md) in the response body.
 
+If not successful, a `409 CONFLICT` response code is returned, and the migration will continue.
+
 ## Examples
 
 ### Request
@@ -62,7 +66,7 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/solutions/migrations/crossTenantMigrationJobs/{crossTenantMigrationJobId}/users/{crossTenantMigrationTaskId}/cancel
+POST https://graph.microsoft.com/beta/solutions/migrations/crossTenantMigrationJobs/add14989-2b21-4001-81bd-a18b0bac1dea/users/6a88de8d-7027-44c1-8674-03f826aa1704/cancel
 ```
 
 
@@ -80,10 +84,9 @@ The following example shows the response.
 HTTP/1.1 202 Accepted
 Content-Type: application/json
 
-"Location": "https://graph.microsoft.com/beta/solutions/migrations/crosstenantmigrationjobs('{crossTenantMigrationJobId}')"
 {
   "status": "Accepted",
-  "message": "Cancellation request for user id: {crossTenantMigrationTaskId} from batch: {crossTenantMigrationJobId} was accepted."
+  "message": "Cancellation request for user id: 6a88de8d-7027-44c1-8674-03f826aa1704 from batch: add14989-2b21-4001-81bd-a18b0bac1dea was accepted."
 }
 ```
 

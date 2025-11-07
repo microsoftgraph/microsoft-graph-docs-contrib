@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of [crossTenantMigrationTask](../resources/crosstenantmigrationtask.md) object.
+Read the properties and relationships of [crossTenantMigrationTask](../resources/crosstenantmigrationtask.md). This shows the details of the migration task for a single user of a [crossTenantMigrationJob](../resources/crosstenantmigrationjob.md). The [crossTenantMigrationTask](../resources/crosstenantmigrationtask.md) contains the [status details](../resources/crosstenantmigrationservicestatusdetails.md) of migrations for the workloads specified in the crossTenantMigrationJob. 
 
 ## Permissions
 
@@ -66,7 +66,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/solutions/migrations/crossTenantMigrationJobs/{crossTenantMigrationJobId}/users/{crossTenantMigrationTaskId}
+GET https://graph.microsoft.com/beta/solutions/migrations/crossTenantMigrationJobs/012ec4f4-df7e-41ae-ba95-6d7ccb8f74a1/users/6a88de8d-7027-44c1-8674-03f826aa1704
 ```
 
 
@@ -85,17 +85,35 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.crossTenantMigrationTask",
-    "id": "5c316328-abcb-31a2-2bb7-53f15eea730c",
-    "taskType": "String",
-    "lastUpdatedDateTime": "String (timestamp)",
-    "currentStatus": [
-      {
-        "@odata.type": "microsoft.graph.crossTenantMigrationServiceStatusDetails"
-      }
-    ]
-  }
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#solutions/migrations/crossTenantMigrationJobs('012ec4f4-df7e-41ae-ba95-6d7ccb8f74a1')/users/$entity",
+  "id": "6a88de8d-7027-44c1-8674-03f826aa1704",
+  "lastUpdatedDateTime": "2025-11-06T11:25:36Z",
+  "currentStatus": [
+    {
+      "service": "ODSP",
+      "status": "completed",
+      "message": "",
+      "errors": []
+    },
+    {
+      "service": "Meeting",
+      "status": "completed",
+      "message": "",
+      "errors": []
+    },
+    {
+      "service": "Teams",
+      "status": "completed",
+      "message": "",
+      "errors": []
+    },
+    {
+      "service": "Exchange",
+      "status": "completed",
+      "message": "",
+      "errors": []
+    }
+  ]
 }
 ```
 

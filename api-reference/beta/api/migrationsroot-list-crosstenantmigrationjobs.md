@@ -1,5 +1,5 @@
 ---
-title: "List crossTenantMigrationJob objects"
+title: "List crossTenantMigrationJobs"
 description: "Get a list of the crossTenantMigrationJob objects and their properties."
 author: "danguilliams"
 ms.date: 10/30/2025
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the crossTenantMigrationJob objects and their properties.
+Get a list of the [crossTenantMigrationJob](../resources/crosstenantmigrationjob.md) objects and their properties. By default 20 objects are returned. More can be retrieved by querying the url of the `@odata.nextLink` provided in the response.
 
 ## Permissions
 
@@ -85,30 +85,50 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#solutions/migrations/crossTenantMigrationJobs",
+  "@odata.nextLink": "https://graph.microsoft.com/beta/solutions/migrations/CrossTenantMigrationJobs?$skiptoken=%5b%7B%22compositeToken%22%3a%7B%22token%22%3a%22%2bRID%3a~q1NPAJxLNS1QBAAAAAAAAA%3d%3d%23RT%3a1%23TRC%3a20%23RTD%3aHPJJmKT1uZqlBBnGyNSOBMHbIcd%5d",
   "value": [
     {
-      "@odata.type": "#microsoft.graph.crossTenantMigrationJob",
-      "id": "1a2fbf52-396e-c3ed-6a65-9772e12d8a43",
-      "displayName": "String",
-      "jobType": "String",
-      "sourceTenantId": "String",
-      "targetTenantId": "String",
-      "completeAfterDateTime": "String (timestamp)",
-      "status": "String",
-      "message": "String",
-      "createdDateTime": "String (timestamp)",
-      "createdBy": "String",
-      "lastUpdatedDateTime": "String (timestamp)",
+      "id": "012ec4f4-df7e-41ae-ba95-6d7ccb8f74a1",
+      "displayName": "Contoso_migration_job",
+      "status": "completed",
+      "jobType": "migrate",
+      "message": "The batch and all of its users have been successfully migrated with no failures.",
+      "completeAfterDateTime": "2025-11-06T09:11:33.2115505Z",
+      "sourceTenantId": "12345678-1234-1234-1234-123456789012",
+      "targetTenantId": "87654321-4321-4321-4321-210987654321",
+      "resourceType": "users",
+      "resources": [],
+      "workloads": [],
+      "createdBy": "a0d9fdb1-171f-4e2b-8a82-06775ad24790",
+      "createdDateTime": "2025-11-06T09:06:34.4773205Z",
+      "lastUpdatedDateTime": "2025-11-06T11:26:00Z",
       "exchangeSettings": {
-        "@odata.type": "microsoft.graph.exchangeOnlineCrossTenantMigrationSettings"
-      },
+        "targetDeliveryDomain": "fabrikam.onmicrosoft.com",
+        "sourceEndpoint": "EXOHandler"
+      }
+    },
+    {
+      "id": "0d1d9dbb-7676-4731-a601-5e8406fd7bcf",
+      "displayName": "Contoso_validation_job",
+      "status": "validatePassed",
+      "jobType": "validate",
+      "message": "Validation has completed successfully with no failures.",
+      "completeAfterDateTime": "2025-05-22T17:14:52Z",
+      "sourceTenantId": "12345678-1234-1234-1234-123456789012",
+      "targetTenantId": "87654321-4321-4321-4321-210987654321",
+      "resourceType": "users",
+      "resources": [],
       "workloads": [
-        "String"
+        "teams"
       ],
-      "resourceType": "String",
-      "resources": [
-        "String"
-      ]
+      "createdBy": "a0d9fdb1-171f-4e2b-8a82-06775ad24790",
+      "createdDateTime": "2025-11-07T00:19:21.4810014Z",
+      "lastUpdatedDateTime": "2025-11-07T00:22:03Z",
+      "exchangeSettings": {
+        "targetDeliveryDomain": "fabrikam.onmicrosoft.com",
+        "sourceEndpoint": "EXOHandler"
+      }
     }
   ]
 }

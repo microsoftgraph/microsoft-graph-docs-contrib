@@ -1,5 +1,4 @@
-
---
+---
 title: Cross-tenant migration API overview
 description: Learn about the Microsoft Graph cross-tenant migration API, which enables tenant administrators to migrate user content across Microsoft 365 tenants.
 author: danipocket

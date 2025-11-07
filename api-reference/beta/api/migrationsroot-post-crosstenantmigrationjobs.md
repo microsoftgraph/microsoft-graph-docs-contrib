@@ -117,18 +117,17 @@ The following example shows the response.
 HTTP/1.1 201 Created
 Content-Type: application/json
 
-"Location": "https://graph.microsoft.com/beta/solutions/migrations/crosstenantmigrationjobs('add14989-2b21-4001-81bd-a18b0bac1dea')"
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#solutions/migrations/crossTenantMigrationJobs/$entity",
   "id": "add14989-2b21-4001-81bd-a18b0bac1dea",
-  "displayName": "xtmigration_user_req_1",
+  "displayName": "Contoso_migration_job",
   "jobType" : "migrate",
   "status": "Submitted",
   "message": "",
   "completeAfterDateTime": "2023-12-17T20:38:04.101Z",
   "sourceTenantId": "12345678-1234-1234-1234-123456789012",
   "exchangeSettings": {
-    "targetDeliveryDomain": "xtmigration.onmicrosoft.com",
+    "targetDeliveryDomain": "fabirkam.onmicrosoft.com",
     "sourceEndpoint": "sampleEndpointText"
   },
   "resourceType":"Users",

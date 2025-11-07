@@ -14,7 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a crossTenantMigrationJob object.
+Delete a [crossTenantMigrationJob](../resources/crosstenantmigrationjob.md) object. Delete requests are long running but will be completed within 48 hours. 
+
+A [crossTenantMigrationJob](../resources/crosstenantmigrationjob.md) that is currently in progress cannot be deleted. The [crossTenantMigrationJob](../resources/crosstenantmigrationjob.md) must reach a final state before deletion can be performed. If a [crossTenantMigrationJob](../resources/crosstenantmigrationjob.md) is not in a final state, a `409 Conflict` response is returned.
 
 ## Permissions
 
@@ -34,7 +36,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-DELETE /solutions/migrations/crossTenantMigrationJobs/{crossTenantMigrationJobId}/$ref
+DELETE /solutions/migrations/crossTenantMigrationJobs/{crossTenantMigrationJobId}
 ```
 
 ## Request headers
@@ -49,7 +51,9 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code.
+If successful, this method returns a `202 Accepted` response code.
+
+If the [crossTenantMigrationJob](../resources/crosstenantmigrationjob.md) is not in a terminal or final state, a `409 Conflict` response is returned. 
 
 ## Examples
 
@@ -62,7 +66,7 @@ The following example shows a request.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/solutions/migrations/crossTenantMigrationJobs/{crossTenantMigrationJobId}
+DELETE https://graph.microsoft.com/beta/solutions/migrations/crosstenantmigrationjobs/add14989-2b21-4001-81bd-a18b0bac1dea
 ```
 
 
@@ -76,6 +80,11 @@ The following example shows the response.
 }
 -->
 ``` http
-HTTP/1.1 204 No Content
+HTTP/1.1 202 Accepted
+
+{
+  "@odata.context": " https://graph.microsoft.com/beta/$metadata#Edm.String",
+  "value": "Delete in progress."
+}
 ```
 

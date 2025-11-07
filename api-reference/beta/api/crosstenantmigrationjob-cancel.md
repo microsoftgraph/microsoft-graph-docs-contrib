@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Cancel a crossTenantMigrationJob.
+Cancel a [crossTenantMigrationJob](../resources/crosstenantmigrationjob.md). All tasks within the job which were in a sync state will be cancelled. If the job cannot be cancelled, a `409 Conflict` response will be returned and the migrations will continue. This happens when a migration has already begun or reached a terminal state.
 
 ## Permissions
 
@@ -49,7 +49,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this action returns a `202 ACCEPTED` response code and a [crossTenantMigrationCancelResponse](../resources/crosstenantmigrationcancelresponse.md) in the response body.
+If successful, this action returns a `202 ACCEPTED` response code and a [crossTenantMigrationCancelResponse](../resources/crosstenantmigrationcancelresponse.md) in the response body. If not successful, a `409 CONFLICT` response code is returned, and the migration will continue.
 
 ## Examples
 
@@ -62,9 +62,8 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/solutions/migrations/crossTenantMigrationJobs/{crossTenantMigrationJobId}/cancel
+POST https://graph.microsoft.com/beta/solutions/migrations/crossTenantMigrationJobs/add14989-2b21-4001-81bd-a18b0bac1dea/cancel
 ```
-
 
 ### Response
 
@@ -77,13 +76,14 @@ The following example shows the response.
 }
 -->
 ``` http
-HTTP/1.1 200 OK
+HTTP/1.1 202 Accepted
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "microsoft.graph.crossTenantMigrationCancelResponse"
-  }
+  "id": "add14989-2b21-4001-81bd-a18b0bac1dea",
+  "displayName": "Contoso_migration_job",
+  "status": "pendingCancel",
+  "message": "cancellation request has been accepted for the migration job"
 }
 ```
 

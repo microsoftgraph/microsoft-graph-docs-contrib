@@ -67,11 +67,11 @@ The following example shows a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/solutions/migrations/crossTenantMigrationJobs/{crossTenantMigrationJobId}
+PATCH https://graph.microsoft.com/beta/solutions/migrations/crossTenantMigrationJobs/add14989-2b21-4001-81bd-a18b0bac1dea
 Content-Type: application/json
 
 {
-  "completeAfterDateTime": "String (timestamp)"
+  "completeAfterDateTime": "2025-05-22T17:14:52Z"
 }
 ```
 

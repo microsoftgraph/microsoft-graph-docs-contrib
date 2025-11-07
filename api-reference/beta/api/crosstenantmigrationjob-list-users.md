@@ -14,7 +14,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the crossTenantMigrationTask objects and their properties.
+Get a list of the [crossTenantMigrationTasks](../resources/crosstenantmigrationtask.md) for users in a [crossTenantMigrationJob](../resources/crosstenantmigrationjob.md). 
+
 
 ## Permissions
 
@@ -66,7 +67,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/solutions/migrations/crossTenantMigrationJobs/{crossTenantMigrationJobId}/users
+GET https://graph.microsoft.com/beta/solutions/migrations/crossTenantMigrationJobs/012ec4f4-df7e-41ae-ba95-6d7ccb8f74a1/users
 ```
 
 
@@ -85,15 +86,95 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#solutions/migrations/crossTenantMigrationJobs('012ec4f4-df7e-41ae-ba95-6d7ccb8f74a1')/users",
   "value": [
     {
-      "@odata.type": "#microsoft.graph.crossTenantMigrationTask",
-      "id": "5c316328-abcb-31a2-2bb7-53f15eea730c",
-      "taskType": "String",
-      "lastUpdatedDateTime": "String (timestamp)",
+      "id": "6a88de8d-7027-44c1-8674-03f826aa1704",
+      "lastUpdatedDateTime": "2025-11-06T11:25:36Z",
       "currentStatus": [
         {
-          "@odata.type": "microsoft.graph.crossTenantMigrationServiceStatusDetails"
+          "service": "ODSP",
+          "status": "completed",
+          "message": "",
+          "errors": []
+        },
+        {
+          "service": "Meeting",
+          "status": "completed",
+          "message": "",
+          "errors": []
+        },
+        {
+          "service": "Teams",
+          "status": "completed",
+          "message": "",
+          "errors": []
+        },
+        {
+          "service": "Exchange",
+          "status": "completed",
+          "message": "",
+          "errors": []
+        }
+      ]
+    },
+    {
+      "id": "c2985880-2540-49ba-80fa-6ae6bf54dd5e",
+      "lastUpdatedDateTime": "2025-11-06T11:25:24Z",
+      "currentStatus": [
+        {
+          "service": "ODSP",
+          "status": "completed",
+          "message": "",
+          "errors": []
+        },
+        {
+          "service": "Meeting",
+          "status": "completed",
+          "message": "",
+          "errors": []
+        },
+        {
+          "service": "Teams",
+          "status": "completed",
+          "message": "",
+          "errors": []
+        },
+        {
+          "service": "Exchange",
+          "status": "completed",
+          "message": "",
+          "errors": []
+        }
+      ]
+    },
+    {
+      "id": "0d80f95f-c58b-47f6-97f1-cef88eea6909",
+      "lastUpdatedDateTime": "2025-11-06T11:23:24Z",
+      "currentStatus": [
+        {
+          "service": "ODSP",
+          "status": "completed",
+          "message": "",
+          "errors": []
+        },
+        {
+          "service": "Meeting",
+          "status": "completed",
+          "message": "",
+          "errors": []
+        },
+        {
+          "service": "Teams",
+          "status": "completed",
+          "message": "",
+          "errors": []
+        },
+        {
+          "service": "Exchange",
+          "status": "completed",
+          "message": "",
+          "errors": []
         }
       ]
     }
