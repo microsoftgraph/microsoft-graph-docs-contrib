@@ -1810,12 +1810,77 @@ Content-type: application/json
 
 The following example shows how to send a message with a code block.
 
+
+#### Code block syntax
+
+To specify a language for syntax highlighting in a code block, use the `class` attribute in the `<codeblock>` HTML element:
+
+```html
+<codeblock class="{language}">
+    <code>YOUR_CODE_HERE</code>
+</codeblock>
+```
+
+#### Supported languages
+
+The following languages are supported for syntax highlighting in code blocks:
+
+| Language | Class value |
+|----------|------------|
+| Bash | `bash` |
+| C | `c` |
+| C++ | `cpp` |
+| C# | `csharp` |
+| CSS | `css` |
+| Dart | `dart` |
+| Dockerfile | `dockerfile` |
+| DOS | `dos` |
+| Go | `go` |
+| GraphQL | `graphql` |
+| HTML | `html` |
+| HTTP | `http` |
+| Java | `java` |
+| JavaScript | `javascript` |
+| JSON | `json` |
+| JSP | `jsp` |
+| JSX | `jsx` |
+| Kotlin | `kotlin` |
+| Markdown | `markdown` |
+| Objective-C | `objectivec` |
+| Octave | `octave` |
+| Perl | `perl` |
+| PHP | `php` |
+| PowerShell | `powershell` |
+| Python | `python` |
+| R | `r` |
+| Ruby | `ruby` |
+| Rust | `rust` |
+| Scala | `scala` |
+| SCSS | `scss` |
+| Shell | `shell` |
+| SQL | `sql` |
+| Swift | `swift` |
+| TypeScript | `typescript` |
+| VB.NET | `vbnet` |
+| VBScript | `vbscript` |
+| Verilog | `verilog` |
+| VHDL | `vhdl` |
+| XML | `xml` |
+| YAML | `yaml` |
+| Plain text | `plaintext` |
+
+> [!NOTE]
+> - If no language is specified, the code block defaults to plaintext formatting
+> - Highlighted code isn't supported when sending chat messages with code blocks
+
+
+
 #### Request
 
 The following example shows a request.
 
 > [!NOTE]
-> The highlighted code isn't supported for code blocks when sending a chat message with a code block.
+> The highlighted code isn't supported for code blocks when sending a chat message with a code block. 
 
 # [HTTP](#tab/http)
 <!-- {
@@ -1831,7 +1896,7 @@ Content-type: application/json
 {
   "body": {
     "contentType": "html",
-    "content": "<codeblock><code>Hello world</code></codeblock>"
+    "content": "<codeblock class=\"plaintext\"><code>Hello world</code></codeblock>"
   }
 }
 ```
@@ -1914,13 +1979,14 @@ Content-type: application/json
   },
   "body": {
     "contentType": "html",
-    "content": "\n<codeblock class=\"\"><code>Hello world</code></codeblock>"
+    "content": "\n<codeblock class=\"plaintext\"><code>Hello world</code></codeblock>"
   },
   "attachments": [],
   "mentions": [],
   "reactions": []
 }
 ```
+
 ### Example 15: Send a message with a Loop component
 
 The following example shows how to send a message with an embedded Loop component. The Loop component is a special type of message that allows users to collaborate in real-time on a shared task or project. It can be used to create a collaborative workspace within a chat or channel.
