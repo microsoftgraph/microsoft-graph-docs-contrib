@@ -40,7 +40,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 DELETE /identity/authenticationEventListeners/{authenticationEventListenerId}
 ```
 
@@ -66,7 +66,7 @@ The following example shows a request.
   "name": "delete_authenticationeventlistener"
 }
 -->
-``` http
+```http
 DELETE https://graph.microsoft.com/beta/identity/authenticationEventListeners/c7a1f2c5-3d36-4b3f-b75c-143af30a5246
 ```
 
@@ -107,7 +107,7 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 

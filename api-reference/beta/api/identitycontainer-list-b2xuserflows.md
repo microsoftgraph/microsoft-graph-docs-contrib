@@ -71,7 +71,7 @@ The following example shows a request.
 }
 -->
 
-``` http
+```http
 GET https://graph.microsoft.com/beta/identity/b2xUserFlows
 ```
 
@@ -153,7 +153,7 @@ The following example shows a request.
 }
 -->
 
-``` http
+```http
 GET https://graph.microsoft.com/beta/identity/b2xUserFlows?$expand=identityProviders
 ```
 
