@@ -27,6 +27,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/agentidentityblueprint-get-permissions.md)]
 
+[!INCLUDE [rbac-agentid-apis-write](../includes/rbac-for-apis/rbac-agentid-apis-write.md)]
+
 ## HTTP request
 
 <!-- {
@@ -34,12 +36,12 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /applications/{id}/Microsoft.Graph.AgentIdentityBlueprint
+GET /applications/{id}/microsoft.graph.agentIdentityBlueprint
 ```
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` and `$expand` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -66,7 +68,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/applications/{id}/Microsoft.Graph.AgentIdentityBlueprint
+GET https://graph.microsoft.com/beta/applications/{id}/microsoft.graph.agentIdentityBlueprint
 ```
 
 

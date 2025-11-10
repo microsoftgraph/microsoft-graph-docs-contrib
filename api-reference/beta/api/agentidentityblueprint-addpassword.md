@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Adds a strong password to an agent identity blueprint. You can also add passwords while creating the blueprint.
+Adds a strong password to an [agentIdentityBlueprint](../resources/agentidentityblueprint.md). You can also add passwords while creating the blueprint by posting to the **passwordCredentials** collection.
 
 ## Permissions
 
@@ -36,7 +36,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-POST /applications/{id}/Microsoft.Graph.AgentIdentityBlueprint/addPassword
+POST /applications/{id}/microsoft.graph.agentIdentityBlueprint/addPassword
 ```
 
 ## Request headers
@@ -67,7 +67,7 @@ The following example shows how to call this API.
 ### Request
 
 ```http
-POST https://graph.microsoft.com/beta/applications/{id}/Microsoft.Graph.AgentIdentityBlueprint/addPassword
+POST https://graph.microsoft.com/beta/applications/{id}/microsoft.graph.agentIdentityBlueprint/addPassword
 Content-type: application/json
 
 {
@@ -90,7 +90,7 @@ Content-type: application/json
     "endDateTime": "2021-09-09T19:50:29.3086381Z",
     "keyId": "f0b0b335-1d71-4883-8f98-567911bfdca6",
     "startDateTime": "2019-09-09T19:50:29.3086381Z",
-    "secretText": "[6gyXA5S20@MN+WRXAJ]I-TO7g1:h2P8",
+    "secretText": "[6gyXA5...-TO7g1:h2P8",
     "hint": "[6g",
     "displayName": "Password friendly name"
 }

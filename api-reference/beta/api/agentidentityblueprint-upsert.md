@@ -1,6 +1,6 @@
 ---
-title: "Upsert agent identity blueprint"
-description: "Create a new agent identity blueprint object if it doesn't exist, or update the properties of an existing agent identity blueprint object."
+title: "Upsert agentIdentityBlueprint"
+description: "Create a new agentIdentityBlueprint object if it doesn't exist, or update the properties of an existing agentIdentityBlueprint object."
 author: "zallison22"
 ms.date: 10/27/2025
 ms.localizationpriority: medium
@@ -8,7 +8,7 @@ ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 
-# Upsert agent identity blueprint
+# Upsert agentIdentityBlueprint
 
 Namespace: microsoft.graph
 
@@ -35,7 +35,7 @@ To create or update an application, specify the **uniqueName** client-provided a
 
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /applications(uniqueName='{uniqueName}')/Microsoft.Graph.AgentIdentityBlueprint
+PATCH /applications(uniqueName='{uniqueName}')/microsoft.graph.agentIdentityBlueprint
 ```
 
 ## Request headers
@@ -47,7 +47,7 @@ PATCH /applications(uniqueName='{uniqueName}')/Microsoft.Graph.AgentIdentityBlue
 
 ## Request body
 
-In the request body, supply a JSON representation of the [agent identity blueprint](../resources/agentidentityblueprint.md) object. The request body must contain  **displayName**, which is a required property. Specify other writable properties as necessary for your agent identity blueprint, for creation or update.
+In the request body, supply a JSON representation of the [agentIdentityBlueprint](../resources/agentidentityblueprint.md) object. The request body must contain  **displayName**, which is a required property. Specify other writable properties as necessary for your agentIdentityBlueprint, for creation or update.
 
 ## Response
 
@@ -70,7 +70,7 @@ The following example shows a request.
 -->
 
 ``` http
-PATCH https://graph.microsoft.com/beta/applications(uniqueName='app-65278')/Microsoft.Graph.AgentIdentityBlueprint
+PATCH https://graph.microsoft.com/beta/applications(uniqueName='app-65278')/microsoft.graph.agentIdentityBlueprint
 Content-Type: application/json
 Prefer: create-if-missing
 

@@ -8,13 +8,13 @@ ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 
-# agentIdentityBlueprint: List sponsors
+# List agentIdentityBlueprint sponsors
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Returns the current sponsors of an agent identity blueprint.
+Returns the current sponsors of an [agentIdentityBlueprint](../resources/agentidentityblueprint.md). Sponsors are users or service principals who can authorize and manage the lifecycle of agent identity instances.
 
 ## Permissions
 
@@ -27,6 +27,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/agentidentityblueprint-list-sponsors-permissions.md)]
 
+[!INCLUDE [rbac-agentid-apis-write](../includes/rbac-for-apis/rbac-agentid-apis-write.md)]
+
 ## HTTP request
 
 <!-- {
@@ -34,12 +36,12 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /applications/{id}/Microsoft.Graph.AgentIdentityBlueprint/sponsors
+GET /applications/{id}/microsoft.graph.agentIdentityBlueprint/sponsors
 ```
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$filter` and `$select` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 

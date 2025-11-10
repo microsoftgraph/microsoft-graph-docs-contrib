@@ -1,5 +1,5 @@
 ---
-title: "Remove sponsors"
+title: "Remove agentIdentityBlueprint sponsors"
 description: "Remove a sponsor from an agentIdentityBlueprint object."
 author: "zallison22"
 ms.date: 10/27/2025
@@ -9,13 +9,13 @@ doc_type: apiPageType
 ---
 
 
-# agentIdentityBlueprint: Remove sponsors
+# Remove agentIdentityBlueprint sponsors
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Remove a [directoryObject](../resources/directoryobject.md) object.
+Remove a sponsor from an [agentIdentityBlueprint](../resources/agentidentityblueprint.md) object.
 
 ## Permissions
 
@@ -37,7 +37,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-DELETE /applications/{id}/Microsoft.Graph.AgentIdentityBlueprint/sponsors/{sponsorObjectId}/$ref
+DELETE /applications/{id}/microsoft.graph.agentIdentityBlueprint/sponsors/{sponsorObjectId}/$ref
 ```
 
 ## Request headers
@@ -65,14 +65,13 @@ The following example shows a request.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/applications/{id}/Microsoft.Graph.AgentIdentityBlueprint/sponsors/{sponsorObjectId}/$ref
+DELETE https://graph.microsoft.com/beta/applications/{id}/microsoft.graph.agentIdentityBlueprint/sponsors/{sponsorObjectId}/$ref
 ```
 
 
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true

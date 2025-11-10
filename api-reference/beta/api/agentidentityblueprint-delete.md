@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete an agentIdentityBlueprint object.
+Delete an [agentIdentityBlueprint](../resources/agentidentityblueprint.md) object.
 
 ## Permissions
 
@@ -36,7 +36,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-DELETE /applications/{id}/Microsoft.Graph.AgentIdentityBlueprint
+DELETE /applications/{id}/microsoft.graph.agentIdentityBlueprint
 ```
 
 ## Request headers
@@ -64,14 +64,13 @@ The following example shows a request.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/applications/{id}/Microsoft.Graph.AgentIdentityBlueprint
+DELETE https://graph.microsoft.com/beta/applications/{id}/microsoft.graph.agentIdentityBlueprint
 ```
 
 
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true

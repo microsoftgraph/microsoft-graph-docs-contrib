@@ -7,13 +7,14 @@ ms.localizationpriority: medium
 ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
+
 # agentIdentityBlueprint: addKey
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Add a key credential to an agent identity blueprint. This method, along with [removeKey](agentidentityblueprint-removekey.md), can be used to automate rolling its expiring keys.
+Add a key credential to an [agentIdentityBlueprint](../resources/agentidentityblueprint.md). This method, along with [removeKey](agentidentityblueprint-removekey.md), can be used to automate rolling its expiring keys.
 
 > [!NOTE]
 >
@@ -45,7 +46,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-POST /applications/{id}/Microsoft.Graph.AgentIdentityBlueprint/addKey
+POST /applications/{id}/microsoft.graph.agentIdentityBlueprint/addKey
 ```
 
 ## Request headers
@@ -82,7 +83,7 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta** Entity URI for microsoft.graph.agentIdentityBlueprint not found/addKey
+POST https://graph.microsoft.com/beta/applications/{id}/microsoft.graph.agentIdentityBlueprint/addKey
 Content-Type: application/json
 
 {

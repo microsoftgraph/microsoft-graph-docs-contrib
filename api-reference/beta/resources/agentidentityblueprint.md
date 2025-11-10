@@ -1,8 +1,8 @@
 ---
 title: "agentIdentityBlueprint resource type"
-description: "An Agent Identity Blueprint application is a specialized application type that serves as the template for creating agent identity instances within the Microsoft Entra ID ecosystem."
+description: "An agent identity blueprint is a specialized application type that serves as the template for creating agent identity instances within the Microsoft Entra ID ecosystem."
 author: "zallison22"
-ms.date: 10/27/2025
+ms.date: 11/10/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-applications"
 doc_type: resourcePageType
@@ -16,16 +16,15 @@ Namespace: microsoft.graph
 
 An agent identity blueprint serves as a template for creating agent identities within the Microsoft Entra ID ecosystem.
 
-
 Inherits from [application](../resources/application.md).
 
-This resource is an open type.
+This resource is an open type that allows additional properties beyond those documented here.
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List](../api/agentidentityblueprint-list.md)|[agentIdentityBlueprint](../resources/agentidentityblueprint.md) collection|Get a list of the agentIdentityBlueprint objects and their properties.|
-|[Create](../api/agentIdentityblueprint-post.md) | [agentIdentityBlueprint](../resources/agentidentityblueprint.md) | Creates (registers) a new agentIdentityBlueprint.|
+|[Create](../api/agentIdentityblueprint-post.md) | [agentIdentityBlueprint](../resources/agentidentityblueprint.md) | Create (register) a new agentIdentityBlueprint.|
 |[Get](../api/agentidentityblueprint-get.md)|[agentIdentityBlueprint](../resources/agentidentityblueprint.md)|Read the properties and relationships of [agentIdentityBlueprint](../resources/agentidentityblueprint.md) object.|
 |[Update](../api/agentidentityblueprint-update.md)|[agentIdentityBlueprint](../resources/agentidentityblueprint.md)|Update the properties of an agentIdentityBlueprint object.|
 |[Upsert](../api/agentidentityblueprint-upsert.md) | [agentIdentityBlueprint](../resources/agentidentityblueprint.md) | Create a new agent identity blueprint if it doesn't exist, or update the properties of an existing blueprint.|
@@ -50,6 +49,7 @@ This resource is an open type.
 |certification|[certification](../resources/certification.md)|Specifies the certification status of the agent identity blueprint. Inherited from [application](../resources/application.md).|
 |createdByAppId|String|The unique identifier of the application that created this agent identity blueprint. Set internally by Microsoft Enctra ID. Read-only. Inherited from [application](../resources/application.md).|
 |createdDateTime|DateTimeOffset|The date and time the agent identity blueprint was registered. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. Read-only. Inherited from [application](../resources/application.md).|
+|createdByAppId|String|The **appId** (called **Application (client) ID** on the Microsoft Entra admin center) of the application that created this agent identity blueprint. Set internally by Microsoft Entra ID. Read-only. Inherited from [application](../resources/application.md).|
 |description|String|Free text field to provide a description of the agent identity blueprint to end users. The maximum allowed size is 1,024 characters. Inherited from [application](../resources/application.md).|
 |disabledByMicrosoftStatus|String|Specifies whether Microsoft has disabled the registered agent identity blueprint. Possible values are: `null` (default value), `NotDisabled`, and `DisabledDueToViolationOfServicesAgreement` (reasons may include suspicious, abusive, or malicious activity, or a violation of the Microsoft Services Agreement). Inherited from [application](../resources/application.md).|
 |displayName|String|The display name for the agent identity blueprint. Maximum length is 256 characters. Inherited from [application](../resources/application.md).|
@@ -59,7 +59,7 @@ This resource is an open type.
 |info|[informationalUrl](../resources/informationalurl.md)|Basic profile information of the agent identity blueprint, such as it's marketing, support, terms of service, and privacy statement URLs. The terms of service and privacy statement are surfaced to users through the user consent experience. Inherited from [application](../resources/application.md).|
 |keyCredentials|[keyCredential](../resources/keycredential.md) collection|The collection of key credentials associated with the agent identity blueprint. Not nullable. Inherited from [application](../resources/application.md).|
 |optionalClaims|[optionalClaims](../resources/optionalclaims.md)|Application developers can configure optional claims in their Microsoft Entra agent identity blueprints to specify the claims that are sent to their application by the Microsoft security token service. Inherited from [application](../resources/application.md).|
-|passwordCredentials|[passwordCredential](../resources/passwordcredential.md) collection|The collection of password credentials associated with the agent identity blueprint. Not nullable. Inherited from [application](../resources/application.md).|
+|passwordCredentials|[passwordCredential](../resources/passwordcredential.md) collection|The collection of password credentials associated with the agent identity blueprint. Not nullable. Inherited from [application](../resources/application.md).<br/><br/>You can also add passwords after creating the agent identity blueprint by calling the [Add password](../api/agentidentityblueprint-addpassword.md) API.|
 |publisherDomain|String|The verified publisher domain for the agent identity blueprint. Read-only. Inherited from [application](../resources/application.md).|
 |serviceManagementReference|String|References application or service contact information from a Service or Asset Management database. Nullable. Inherited from [application](../resources/application.md).|
 |signInAudience|String|Specifies the Microsoft accounts that are supported for the current agent identity blueprint. The possible values are: `AzureADMyOrg` (default), `AzureADMultipleOrgs`, `AzureADandPersonalMicrosoftAccount`, and `PersonalMicrosoftAccount`. Inherited from [application](../resources/application.md).|
@@ -78,7 +78,7 @@ This resource is an open type.
 |sponsors|[directoryObject](../resources/directoryobject.md) collection|The sponsors for this agent identity blueprint. Sponsors are users or service principals who can authorize and manage the lifecycle of agent identity instances.|
 
 ## JSON representation
-The following JSON representation shows the resource type. Only a subset of all properties are returned by default. All other properies can only be retrieved using $select.
+The following JSON representation shows the resource type. Only a subset of all properties are returned by default. All other properties can only be retrieved using $select.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

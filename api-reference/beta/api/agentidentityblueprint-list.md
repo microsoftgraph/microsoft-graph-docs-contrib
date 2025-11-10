@@ -2,7 +2,7 @@
 title: "List agentIdentityBlueprint objects"
 description: "Get a list of the agentIdentityBlueprint objects and their properties."
 author: "zallison22"
-ms.date: 10/27/2025
+ms.date: 11/10/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-applications"
 doc_type: apiPageType
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the agentIdentityBlueprint objects and their properties. Does not return other types of application objects.
+Get a list of the [agentIdentityBlueprint](../resources/agentidentityblueprint.md) objects and their properties. Does not return other types of application objects.
 
 ## Permissions
 
@@ -27,6 +27,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/agentidentityblueprint-list-permissions.md)]
 
+[!INCLUDE [rbac-agentid-apis-write](../includes/rbac-for-apis/rbac-agentid-apis-write.md)]
+
 ## HTTP request
 
 <!-- {
@@ -34,7 +36,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /applications/Microsoft.Graph.AgentIdentityBlueprint
+GET /applications/microsoft.graph.agentIdentityBlueprint
 ```
 
 ## Optional query parameters
@@ -70,7 +72,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/applications/Microsoft.Graph.AgentIdentityBlueprint
+GET https://graph.microsoft.com/beta/applications/microsoft.graph.agentIdentityBlueprint
 ```
 
 

@@ -8,14 +8,13 @@ ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 
-# agentIdentityBlueprint: Add sponsors
+# Add agentIdentityBlueprint sponsors
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Add sponsors by posting to the sponsors collection. Sponsors can include users or groups. Sponsors may not include service principals or agent users.
-
+Add a sponsor to an [agentIdentityBlueprint](../resources/agentidentityblueprint.md) object. Sponsors can include users or groups. Sponsors may not include service principals or agent users.
 
 ## Permissions
 
@@ -37,7 +36,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-POST /applications/{id}/Microsoft.Graph.AgentIdentityBlueprint/sponsors/$ref
+POST /applications/{id}/microsoft.graph.agentIdentityBlueprint/sponsors/$ref
 ```
 
 ## Request headers
@@ -53,7 +52,7 @@ In the request body, supply a reference to the [directoryObject](../resources/di
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code and a [directoryObject](../resources/directoryobject.md) object in the response body.
+If successful, this method returns a `204 No Content` response code and a supported [directoryObject](../resources/directoryobject.md) object in the response body.
 
 ## Examples
 
@@ -66,7 +65,7 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/applications/{id}/Microsoft.Graph.AgentIdentityBlueprint/sponsors/$ref
+POST https://graph.microsoft.com/beta/applications/{id}/microsoft.graph.agentIdentityBlueprint/sponsors/$ref
 Content-Type: application/json
 
 {
@@ -78,7 +77,6 @@ Content-Type: application/json
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response"
 }

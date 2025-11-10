@@ -15,9 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
-Create a new agent identity blueprint object.
+Create a new [agent identity blueprint](../resources/agentidentityblueprint.md) object.
 
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -31,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /applications/Microsoft.Graph.AgentIdentityBlueprint
+POST /applications/microsoft.graph.agentIdentityBlueprint
 ```
 
 ## Request headers
@@ -53,7 +51,7 @@ If successful, this method returns `201 Created` response code and an [agent ide
 The following example shows a request.
 
 ```http
-POST https://graph.microsoft.com/beta/applications/Microsoft.AgentIdentity.Blueprint
+POST https://graph.microsoft.com/beta/applications/microsoft.graph.agentIdentityBlueprint
 Content-type: application/json
 
 {

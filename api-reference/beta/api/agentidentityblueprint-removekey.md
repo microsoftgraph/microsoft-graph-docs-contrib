@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Remove a key credential from an agent identity blueprint. This method along with [addKey](agentidentityblueprint-addkey.md) can be used to automate rolling its expiring keys.
+Remove a key credential from an [agentIdentityBlueprint](../resources/agentidentityblueprint.md). This method along with [addKey](agentidentityblueprint-addkey.md) can be used to automate rolling its expiring keys.
 
 ## Permissions
 
@@ -32,7 +32,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ## HTTP request
 
 ``` http
-POST /applications/{id}/Microsoft.Graph.AgentIdentityBlueprint/removeKey
+POST /applications/{id}/microsoft.graph.agentIdentityBlueprint/removeKey
 ```
 
 ## Request headers
@@ -48,7 +48,7 @@ In the request body, provide the following required properties.
 
 | Property    | Type | Description|
 |:----------|:-----|:-----------|
-| keyId     | Guid | The unique identifier for the password.|
+| keyId     | Guid | The unique identifier for the key.|
 | proof | String | A self-signed JWT token used as a proof of possession of the existing keys. This JWT token must be signed using the private key of one of the application's existing valid certificates. The token should contain the following claims:<ul><li>**aud**: Audience needs to be `00000002-0000-0000-c000-000000000000`.</li><li>**iss**: Issuer needs to be the ID of the **application** that initiates the request.</li><li>**nbf**: Not before time.</li><li>**exp**: Expiration time should be the value of **nbf** + 10 minutes.</li></ul><br>For steps to generate this proof of possession token, see [Generating proof of possession tokens for rolling keys](/graph/application-rollkey-prooftoken).|
 
 
@@ -67,7 +67,7 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/applications/{id}/Microsoft.Graph.AgentIdentityBlueprint/removeKey
+POST https://graph.microsoft.com/beta/applications/{id}/microsoft.graph.agentIdentityBlueprint/removeKey
 Content-Type: application/json
 
 {

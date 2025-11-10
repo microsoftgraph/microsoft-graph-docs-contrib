@@ -1,6 +1,6 @@
 ---
 title: "agentIdentityBlueprint: removePassword"
-description: "Removes a password from an agent identity blueprint."
+description: "Remove a password from an agent identity blueprint."
 author: "zallison22"
 ms.date: 10/27/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Removes a password from an agent identity blueprint.
+Remove a password from an [agentIdentityBlueprint](../resources/agentidentityblueprint.md).
 
 ## Permissions
 
@@ -32,7 +32,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ## HTTP request
 
 ``` http
-POST /applications/{id}/Microsoft.Graph.AgentIdentityBlueprint/removePassword
+POST /applications/{id}/microsoft.graph.agentIdentityBlueprint/removePassword
 ```
 
 ## Request headers
@@ -63,7 +63,7 @@ The following is example shows how to call this API.
 The following example shows a request.
 
 ```http
-POST https://graph.microsoft.com/beta/applications/{id}/Microsoft.Graph.AgentIdentityBlueprint/removePassword
+POST https://graph.microsoft.com/beta/applications/{id}/microsoft.graph.agentIdentityBlueprint/removePassword
 Content-type: application/json
 
 {

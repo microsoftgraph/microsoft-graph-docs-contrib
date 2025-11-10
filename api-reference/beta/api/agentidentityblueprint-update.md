@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of an agentIdentityBlueprint object.
+Update the properties of an [agentIdentityBlueprint](../resources/agentidentityblueprint.md) object.
 
 ## Permissions
 
@@ -36,7 +36,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-PATCH /applications/{id}/Microsoft.Graph.AgentIdentityBlueprint
+PATCH /applications/{id}/microsoft.graph.agentIdentityBlueprint
 ```
 
 ## Request headers
@@ -66,7 +66,7 @@ The following example shows a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/applications/{id}/Microsoft.Graph.AgentIdentityBlueprint
+PATCH https://graph.microsoft.com/beta/applications/{id}/microsoft.graph.agentIdentityBlueprint
 Content-Type: application/json
 
 {
