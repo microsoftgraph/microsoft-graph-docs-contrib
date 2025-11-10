@@ -52,18 +52,16 @@ The following JSON representation shows the resource type.
 ```json
 {
   "aliases": [ "String" ],
-  "isQueryable": true,
-  "isRefinable": true,
-  "isRetrievable": true,
-  "isSearchable": false,
-  "isExactMatchRequired": true,
+  "description": "String",
+  "isExactMatchRequired": "Boolean",
+  "isQueryable": "Boolean",
+  "isRefinable": "Boolean",
+  "isRetrievable": "Boolean",
+  "isSearchable": "Boolean",
   "labels": [ "string" ],
   "name": "string",
-  "description": "string",
-  "type": "string",
-  "rankingHint": { 
-    "importanceScore": "string" 
-  }
+  "rankingHint": {"importanceScore": "string"},
+  "type": "string"
 }
 ```
 
