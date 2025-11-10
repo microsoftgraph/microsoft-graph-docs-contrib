@@ -1869,18 +1869,13 @@ The following languages are supported for syntax highlighting in code blocks:
 | YAML | `yaml` |
 | Plain text | `plaintext` |
 
-> [!NOTE]
-> - If no language is specified, the code block defaults to plaintext formatting
-> - Highlighted code isn't supported when sending chat messages with code blocks
-
-
-
 #### Request
 
 The following example shows a request.
 
 > [!NOTE]
-> The highlighted code isn't supported for code blocks when sending a chat message with a code block. 
+> - If no language is specified, the code block defaults to plaintext formatting
+> - Highlighted code isn't supported when sending chat messages with code blocks
 
 # [HTTP](#tab/http)
 <!-- {
