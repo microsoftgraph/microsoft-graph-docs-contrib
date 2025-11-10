@@ -1,0 +1,124 @@
+#
+# GENERATED FILE - DO NOT EDIT
+#
+items:
+- name: Agent identities
+  items:
+  - name: Agent identity blueprint
+    items:
+    - name: Agent identity blueprint
+      href: ../../resources/agentidentityblueprint.md
+    - name: List
+      href: ../../api/agentidentityblueprint-list.md
+    - name: Get
+      href: ../../api/agentidentityblueprint-get.md
+    - name: Update
+      href: ../../api/agentidentityblueprint-update.md
+    - name: Upsert
+      href: ../../api/agentidentityblueprint-upsert.md
+    - name: Delete
+      href: ../../api/agentidentityblueprint-delete.md
+    - name: Add password
+      href: ../../api/agentidentityblueprint-addpassword.md
+    - name: Remove password
+      href: ../../api/agentidentityblueprint-removepassword.md
+    - name: Add key
+      href: ../../api/agentidentityblueprint-addkey.md
+    - name: Remove key
+      href: ../../api/agentidentityblueprint-removekey.md
+    - name: List sponsors
+      href: ../../api/agentidentityblueprint-list-sponsors.md
+    - name: Add sponsors
+      href: ../../api/agentidentityblueprint-post-sponsors.md
+    - name: Remove sponsors
+      href: ../../api/agentidentityblueprint-delete-sponsors.md
+    - name: List owners
+      href: ../../api/agentidentityblueprintprincipal-list-owners.md
+    - name: Add owners
+      href: ../../api/agentidentityblueprintprincipal-post-owners.md
+    - name: Remove owners
+      href: ../../api/agentidentityblueprintprincipal-delete-owners.md
+  - name: Agent identity blueprint principal
+    items:
+    - name: Agent identity blueprint principal
+      href: ../../resources/agentidentityblueprintprincipal.md
+    - name: List
+      href: ../../api/agentidentityblueprintprincipal-list.md
+    - name: Create
+      href: ../../api/agentidentityblueprintprincipal-post.md
+    - name: Get
+      href: ../../api/agentidentityblueprintprincipal-get.md
+    - name: Update
+      href: ../../api/agentidentityblueprintprincipal-update.md
+    - name: Delete
+      href: ../../api/agentidentityblueprintprincipal-delete.md
+    - name: List appRoleAssignedTo
+      href: ../../api/serviceprincipal-list-approleassignedto.md
+    - name: Add appRoleAssignedTo
+      href: ../../api/serviceprincipal-post-approleassignedto.md
+    - name: Remove appRoleAssignedTo
+      href: ../../api/serviceprincipal-delete-approleassignedto.md
+    - name: List appRoleAssignments
+      href: ../../api/serviceprincipal-list-approleassignments.md
+    - name: Add appRoleAssignment
+      href: ../../api/serviceprincipal-post-approleassignments.md
+    - name: Remove appRoleAssignment
+      href: ../../api/serviceprincipal-delete-approleassignments.md
+    - name: List memberOf
+      href: ../../api/agentidentityblueprintprincipal-list-memberof.md
+    - name: List oauth2PermissionGrants
+      href: ../../api/serviceprincipal-list-oauth2permissiongrants.md
+    - name: List ownedObjects
+      href: ../../api/agentidentityblueprintprincipal-list-ownedobjects.md
+    - name: List owners
+      href: ../../api/agentidentityblueprintprincipal-list-owners.md
+    - name: Add owners
+      href: ../../api/agentidentityblueprintprincipal-post-owners.md
+    - name: Remove owners
+      href: ../../api/agentidentityblueprintprincipal-delete-owners.md
+    - name: List createdObjects
+      href: ../../api/agentidentityblueprintprincipal-list-createdobjects.md
+    - name: List sponsors
+      href: ../../api/agentidentityblueprintprincipal-list-sponsors.md
+    - name: Add sponsors
+      href: ../../api/agentidentityblueprintprincipal-post-sponsors.md
+    - name: Remove sponsors
+      href: ../../api/agentidentityblueprintprincipal-delete-sponsors.md
+  - name: Agent identity
+    items:
+    - name: Agent identity
+      href: ../../resources/agentidentity.md
+    - name: List
+      href: ../../api/agentidentity-list.md
+    - name: Create
+      href: ../../api/agentidentity-post.md
+    - name: Get
+      href: ../../api/agentidentity-get.md
+    - name: Update
+      href: ../../api/agentidentity-update.md
+    - name: List appRoleAssignedTo
+      href: ../../api/serviceprincipal-list-approleassignedto.md
+    - name: List appRoleAssignments
+      href: ../../api/serviceprincipal-list-approleassignments.md
+    - name: Create appRoleAssignment
+      href: ../../api/serviceprincipal-post-approleassignments.md
+    - name: List memberOf
+      href: ../../api/agentidentity-list-memberof.md
+    - name: List oauth2PermissionGrants
+      href: ../../api/serviceprincipal-list-oauth2permissiongrants.md
+    - name: List ownedObjects
+      href: ../../api/agentidentity-list-ownedobjects.md
+    - name: List owners
+      href: ../../api/agentidentity-list-owners.md
+    - name: Add owners
+      href: ../../api/agentidentity-post-owners.md
+    - name: Remove owners
+      href: ../../api/agentidentity-delete-owners.md
+    - name: List sponsors
+      href: ../../api/agentidentity-list-sponsors.md
+    - name: Add sponsors
+      href: ../../api/agentidentity-post-sponsors.md
+    - name: Remove sponsors
+      href: ../../api/agentidentity-delete-sponsors.md
+    - name: List transitiveMemberOf
+      href: ../../api/agentidentity-list-transitivememberof.md
