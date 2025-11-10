@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Remove a sponsor from a [agentIdentity](../resources/agentidentity.md) object.
+Remove a sponsor from a [agentIdentity](../resources/agentidentity.md) object. AgentIdentities require at least one sponsor to manage the agent identity.
 
 ## Permissions
 

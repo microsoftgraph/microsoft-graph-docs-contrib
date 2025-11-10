@@ -27,11 +27,11 @@ This resource is an open type that allows additional properties beyond those doc
 |[Create](../api/agentidentity-post.md)|[agentidentity](../resources/agentidentity.md)|Create a new agentidentity object.|
 |[Get](../api/agentidentity-get.md)|[agentIdentity](../resources/agentidentity.md)|Read the properties and relationships of [agentIdentity](../resources/agentidentity.md) object.|
 |[Update](../api/agentidentity-update.md)|[agentIdentity](../resources/agentidentity.md)|Update the properties of an agentIdentity object.|
-|[List appRoleAssignedTo](../api/serviceprincipal-list-approleassignedto.md)|[appRoleAssignment](../resources/approleassignment.md) collection|Get the users, groups, and agent identities assigned app roles for this agent identity.|
-|[List appRoleAssignments](../api/serviceprincipal-list-approleassignments.md)|[appRoleAssignment](../resources/approleassignment.md) collection|Get the app roles that this agent identity is assigned.|
-|[Create appRoleAssignment](../api/serviceprincipal-post-approleassignments.md)|[appRoleAssignment](../resources/approleassignment.md)|Create a new appRoleAssignment object.|
+|[List appRoleAssignedTo](../api/agentidentity-list-approleassignedto.md)|[appRoleAssignment](../resources/approleassignment.md) collection|Get the users, groups, and agent identities assigned app roles for this agent identity.|
+|[List appRoleAssignments](../api/agentidentity-list-approleassignments.md)|[appRoleAssignment](../resources/approleassignment.md) collection|Get the app roles that this agent identity is assigned.|
+|[Create appRoleAssignment](../api/agentidentity-post-approleassignments.md)|[appRoleAssignment](../resources/approleassignment.md)|Create a new appRoleAssignment object.|
 |[List memberOf](../api/agentidentity-list-memberof.md)|[directoryObject](../resources/directoryobject.md) collection|Get the groups that this agent identity is a direct member of.|
-|[List oauth2PermissionGrants](../api/serviceprincipal-list-oauth2permissiongrants.md)|[oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) collection|Get the delegated permission grants authorizing this agent identity to access an API on behalf of a signed-in user.|
+|[List oauth2PermissionGrants](../api/agentidentity-list-oauth2permissiongrants.md)|[oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) collection|Get the delegated permission grants authorizing this agent identity to access an API on behalf of a signed-in user.|
 |[List ownedObjects](../api/agentidentity-list-ownedobjects.md)|[directoryObject](../resources/directoryobject.md) collection|Get directory objects owned by this agent identity.|
 |[List owners](../api/agentidentity-list-owners.md)|[directoryObject](../resources/directoryobject.md) collection|Get the owners of this agent identity.|
 |[Add owners](../api/agentidentity-post-owners.md)|[directoryObject](../resources/directoryobject.md)|Add owners by posting to the owners collection.|
@@ -46,7 +46,7 @@ This resource is an open type that allows additional properties beyond those doc
 |:---|:---|:---|
 |odata.type|String| `#microsoft.graph.agentIdentity`. Distinguishes this object as an agent identity. Can be used to identify this object as an agent identity, instead of another kind of service principal. |
 |accountEnabled|Boolean|`true` if the agent identity account is enabled; otherwise, `false`. If set to `false`, then no users are able to sign in to this app, even if they're assigned to it. Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
-|agentIdentityBlueprintId|String|The unique identifier of the agent identity blueprint that defines the configuration for this agent identity.|
+|agentIdentityBlueprintId|String|The **appId** of the agent identity blueprint that defines the configuration for this agent identity.|
 |customSecurityAttributes|[customSecurityAttributeValue](../resources/customsecurityattributevalue.md)|An open complex type that holds the value of a custom security attribute that is assigned to a directory object. Nullable. Returned only on `$select`. Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
 |createdByAppId|String|The **appId** of the application used to create the agent identity. Set internally by Microsoft Entra ID. Read-only. Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
 |createdDateTime|DateTimeOffset|The date and time the agent identity was created. Read-only. Inherited from [servicePrincipal](../resources/serviceprincipal.md).|

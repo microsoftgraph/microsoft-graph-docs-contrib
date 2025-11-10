@@ -89,59 +89,64 @@ Content-Type: application/json
 {
   "value": {
     "@odata.type": "#microsoft.graph.agentIdentityBlueprint",
-    "id": "ff2a4f4e-945d-6918-40a8-844dcdc2d315",
-    "deletedDateTime": "String (timestamp)",
-    "api": {
-      "@odata.type": "microsoft.graph.apiApplication"
-    },
-    "appId": "String",
-    "appRoles": [
-      {
-        "@odata.type": "microsoft.graph.appRole"
-      }
-    ],
-    "certification": {
-      "@odata.type": "microsoft.graph.certification"
-    },
-    "createdByAppId": "String",
-    "createdDateTime": "String (timestamp)",
-    "description": "String",
-    "disabledByMicrosoftStatus": "String",
+    "id": "08be1f79-37a1-49c0-b444-3075e74d1e8c",
+    "appId": "11f8f3e9-97df-4bef-84a8-1aa86d5dbc3f",
     "identifierUris": [
-      "String"
+        "api://11f8f3e9-97df-4bef-84a8-1aa86d5dbc3f"
     ],
-    "displayName": "String",
-    "groupMembershipClaims": "String",
+    "createdByAppId": "14d82eec-204b-4c2f-b7e8-296a70dab67e",
+    "createdDateTime": "2025-09-10T17:04:20Z",
+    "description": null,
+    "disabledByMicrosoftStatus": null,
+    "displayName": "My Agent Blueprint",
+    "groupMembershipClaims": null,
+    "publisherDomain": "contoso.onmicrosoft.com",
+    "signInAudience": "AzureADMyOrg",
+    "tags": [],
+    "tokenEncryptionKeyId": null,
+    "uniqueName": null,
+    "serviceManagementReference": null,
+    "optionalClaims": null,
+    "api": {
+        "requestedAccessTokenVersion": 2,
+        "acceptMappedClaims": null,
+        "knownClientApplications": [],
+        "oauth2PermissionScopes": [],
+        "preAuthorizedApplications": [],
+        "tokenEncryptionSetting": {
+            "scheme": null,
+            "audience": null,
+            "automatedTokenVersion": {
+                "current": null,
+                "available": []
+            }
+        }
+    },
+    "appRoles": [],
     "info": {
-      "@odata.type": "microsoft.graph.informationalUrl"
+        "termsOfServiceUrl": null,
+        "supportUrl": null,
+        "privacyStatementUrl": null,
+        "marketingUrl": null,
+        "logoUrl": null
     },
-    "keyCredentials": [
-      {
-        "@odata.type": "microsoft.graph.keyCredential"
-      }
-    ],
-    "optionalClaims": {
-      "@odata.type": "microsoft.graph.optionalClaims"
-    },
-    "passwordCredentials": [
-      {
-        "@odata.type": "microsoft.graph.passwordCredential"
-      }
-    ],
-    "publisherDomain": "String",
-    "serviceManagementReference": "String",
-    "signInAudience": "String",
-    "tags": [
-      "String"
-    ],
-    "tokenEncryptionKeyId": "Guid",
-    "uniqueName": "String",
+    "keyCredentials": [],
+    "passwordCredentials": [],
     "verifiedPublisher": {
-      "@odata.type": "microsoft.graph.verifiedPublisher"
+        "displayName": null,
+        "verifiedPublisherId": null,
+        "addedDateTime": null
     },
     "web": {
-      "@odata.type": "microsoft.graph.webApplication"
-    },
+        "redirectUris": [],
+        "homePageUrl": null,
+        "logoutUrl": null,
+        "redirectUriSettings": [],
+        "implicitGrantSettings": {
+            "enableIdTokenIssuance": false,
+            "enableAccessTokenIssuance": false
+        }
+    }
   }
 }
 ```

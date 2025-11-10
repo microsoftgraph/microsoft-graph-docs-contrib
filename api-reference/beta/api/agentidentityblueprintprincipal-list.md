@@ -85,41 +85,27 @@ Content-type: application/json
   "value": [
     {
       "@odata.type": "#microsoft.graph.agentIdentityBlueprintPrincipal",
-      "id": "String (identifier)",
-      "accountEnabled": "Boolean",
-      "createdByAppId": "String",
-      "appDescription": "String",
-      "appDisplayName": "String",
-      "appId": "String",
-      "appOwnerOrganizationId": "Guid",
-      "appRoleAssignmentRequired": "Boolean",
-      "disabledByMicrosoftStatus": "String",
-      "displayName": "String",
-      "publisherName": "String",
-      "servicePrincipalNames": [
-        "String"
-      ],
-      "servicePrincipalType": "String",
-      "signInAudience": "String",
-      "tags": [
-        "String"
-      ],
-      "appRoles": [
-        {
-          "@odata.type": "microsoft.graph.appRole"
-        }
-      ],
+      "id": "f7c938db-8c3d-4d04-937b-456c3242ed95",
+      "appId": "1d8b4e28-7e5e-4a9f-8e8c-0fa3b7d70e7e",
+      "createdDateTime": "2019-09-17T19:10:35.2742618Z",
+      "createdByAppId": "1cc9739b-9dcd-4d1e-89ed-783005d571b8",
+      "accountEnabled": true,
+      "appDisplayName": "My Sample App",
+      "appOwnerOrganizationId": "65415bb1-9267-4313-bbf5-ae259732ee12",
+      "appRoleAssignmentRequired": false,
+      "appRoles": [],
+      "disabledByMicrosoftStatus": null,
       "info": {
-        "@odata.type": "microsoft.graph.informationalUrl"
+        "termsOfServiceUrl": null,
+        "supportUrl": null,
+        "privacyStatementUrl": null,
+        "marketingUrl": null,
+        "logoUrl": null
       },
-      "publishedPermissionScopes": [
-        {
-          "@odata.type": "microsoft.graph.permissionScope"
-        }
-      ],
-      "verifiedPublisher": {
-        "@odata.type": "microsoft.graph.verifiedPublisher"
-      }
+      "oauth2PermissionScopes": [],
+      "servicePrincipalType": "Application",
+      "tags": [],
+      "verifiedPublisher": null
     }
   ]
 }
