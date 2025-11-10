@@ -10,6 +10,8 @@ items:
       href: ../../resources/agentidentityblueprint.md
     - name: List
       href: ../../api/agentidentityblueprint-list.md
+    - name: Create
+      href: ../../api/agentidentityblueprint-post.md
     - name: Get
       href: ../../api/agentidentityblueprint-get.md
     - name: Update
