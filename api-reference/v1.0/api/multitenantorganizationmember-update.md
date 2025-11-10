@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PATCH /tenantRelationships/multiTenantOrganization/tenants/{tenantId}
 ```
 
@@ -63,7 +63,7 @@ The following example changes the role of a tenant in a multitenant organization
   "name": "update_multitenantorganizationmember"
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/v1.0/tenantRelationships/multiTenantOrganization/tenant/5036a0a0-a7a4-4933-9086-5dd54535dd6e
 Content-Type: application/json
 
@@ -80,7 +80,7 @@ Content-Type: application/json
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 

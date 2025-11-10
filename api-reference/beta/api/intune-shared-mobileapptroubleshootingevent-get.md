@@ -38,7 +38,7 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /deviceManagement/mobileAppTroubleshootingEvents/{mobileAppTroubleshootingEventId}
 GET /users/{usersId}/mobileAppTroubleshootingEvents/{mobileAppTroubleshootingEventId}
 ```
@@ -62,13 +62,13 @@ If successful, this method returns a `200 OK` response code and [mobileAppTroubl
 
 ### Request
 Here is an example of the request.
-``` http
+```http
 GET https://graph.microsoft.com/beta/deviceManagement/mobileAppTroubleshootingEvents/{mobileAppTroubleshootingEventId}
 ```
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 Content-Length: 143

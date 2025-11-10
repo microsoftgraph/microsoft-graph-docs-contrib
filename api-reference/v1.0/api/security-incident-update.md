@@ -28,7 +28,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PATCH /security/incidents/{incidentId}
 ```
 
@@ -71,7 +71,7 @@ The following example shows a request.
   "name": "update_incident"
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/v1.0/security/incidents/2972395
 Content-Type: application/json
 
@@ -123,7 +123,7 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
