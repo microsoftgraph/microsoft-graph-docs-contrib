@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of an onPremAuthenticationPolicy object.
+Update the properties of an [onPremAuthenticationPolicy](../resources/onpremauthenticationpolicy.md) object.
 
 ## Permissions
 
