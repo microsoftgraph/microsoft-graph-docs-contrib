@@ -2,6 +2,14 @@
   "changelog": [
     {
       "ChangeList": [
+       {
+          "Id": "f9a8c221-8738-4628-bd68-1984c6ad6934",
+          "ApiChange": "Property",
+          "ChangedApiName": "externalconnectors-schema",
+          "ChangeType": "Addition",
+          "Description": "Added more values for the label property in [externalconnectors-property](https://learn.microsoft.com/en-us/graph/api/resources/externalconnectors-property?view=graph-rest-beta) resource.",
+          "Target": "externalconnectors-property"
+        },
         {
           "Id": "f9a8c221-8738-4628-bd68-1984c6ad6934",
           "ApiChange": "Property",
