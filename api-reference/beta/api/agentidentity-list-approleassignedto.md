@@ -1,6 +1,6 @@
 ---
-title: "List appRoleAssignments granted for an agent identity blueprint principal"
-description: "Retrieve a list of app role assignments granted for an agent identity blueprint principal."
+title: "List appRoleAssignments granted for an agent identity"
+description: "Retrieve a list of app role assignments granted for an agent identity."
 author: "zallison22"
 ms.date: 10/27/2025
 ms.localizationpriority: medium
@@ -8,15 +8,13 @@ ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 
-# List agentIdentityBlueprintPrincipal appRoleAssignments
+# List agentIdentity appRoleAssignments
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve all clients (users, groups, or client service principals) that have an [appRoleAssignment](../resources/approleassignment.md) for a given resource agent identity blueprint principal.
-
-For example, if the resource service principal is the service principal for the Microsoft Graph API, this API returns all service principals that have been granted any app-only permissions to Microsoft Graph. If the resource agent identity blueprint principal is an agent identity blueprint with app roles granted to users and groups, this API returns all the users and groups assigned app roles for this application.
+Retrieve all clients (users, groups, or client service principals) that have an [appRoleAssignment](../resources/approleassignment.md) for a given resource agent identity.
 
 >**Note** This request might have replication delays for app role assignments that were recently granted or removed.
 
@@ -26,8 +24,8 @@ For example, if the resource service principal is the service principal for the 
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "permissions", "name": "agentidentityblueprintprincipal_list_approleassignedto" } -->
-[!INCLUDE [permissions-table](../includes/permissions/agentidentityblueprintprincipal-list-approleassignedto-permissions.md)]
+<!-- { "blockType": "permissions", "name": "agentidentity_list_approleassignedto" } -->
+[!INCLUDE [permissions-table](../includes/permissions/agentidentity-list-approleassignedto-permissions.md)]
 
 [!INCLUDE [rbac-approleassignments-apis-read](../includes/rbac-for-apis/rbac-approleassignments-apis-read.md)]
 
@@ -36,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /servicePrincipals/{id}/Microsoft.Graph.AgentIdentityBlueprintPrincipal/appRoleAssignedTo
+GET /servicePrincipals/{id}/Microsoft.Graph.AgentIdentity/appRoleAssignedTo
 ```
 
 ## Optional query parameters
@@ -66,11 +64,11 @@ The following example shows a request to retrieve the app roles assignments that
 
 <!-- {
   "blockType": "request",
-  "name": "agentidentityblueprintprincipal_get_approleassignedto"
+  "name": "agentidentity_get_approleassignedto"
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/servicePrincipals/8e881353-1735-45af-af21-ee1344582a4d/Microsoft.Graph.AgentIdentityBlueprintPrincipal/appRoleAssignedTo
+GET https://graph.microsoft.com/beta/servicePrincipals/8e881353-1735-45af-af21-ee1344582a4d/Microsoft.Graph.AgentIdentity/appRoleAssignedTo
 ```
 
 ### Response

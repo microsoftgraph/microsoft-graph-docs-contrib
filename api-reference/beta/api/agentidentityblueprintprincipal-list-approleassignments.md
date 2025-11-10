@@ -1,22 +1,22 @@
 ---
-title: "List appRoleAssignments granted to a service principal"
-description: "Retrieve the list of app role assignments granted to a service principal."
-ms.localizationpriority: high
-doc_type: apiPageType
+title: "List appRoleAssignments granted to a agent identity blueprint principal"
+description: "Retrieve the list of app role assignments granted to a agent identity blueprint principal."
+author: "zallison22"
+ms.date: 10/27/2025
+ms.localizationpriority: medium
 ms.subservice: "entra-applications"
-author: "eringreenlee"
-ms.date: 10/15/2024
+doc_type: apiPageType
 ---
 
-# List appRoleAssignments granted to a service principal
+# List appRoleAssignments granted to a agent identity blueprint principal
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the list of [appRoleAssignment](../resources/approleassignment.md) that have been granted to a service principal.
+Retrieve the list of [appRoleAssignment](../resources/approleassignment.md) that have been granted to a agent identity blueprint principal.
 
-App roles that are assigned to service principals are also known as [application permissions](/azure/active-directory/develop/v2-permissions-and-consent#permission-types). Application permissions can be granted directly by creating app role assignments, or through a [consent experience](/azure/active-directory/develop/application-consent-experience).
+App roles that are assigned to agent identity blueprint principals are also known as [application permissions](/azure/active-directory/develop/v2-permissions-and-consent#permission-types). Application permissions can be granted directly by creating app role assignments, or through a [consent experience](/azure/active-directory/develop/application-consent-experience).
 
 
 >**Note** This request might have replication delays for app role assignments that were recently granted or removed.
@@ -27,8 +27,8 @@ App roles that are assigned to service principals are also known as [application
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "permissions", "name": "serviceprincipal_list_approleassignments" } -->
-[!INCLUDE [permissions-table](../includes/permissions/serviceprincipal-list-approleassignments-permissions.md)]
+<!-- { "blockType": "permissions", "name": "agentidentityblueprintprincipal_list_approleassignments" } -->
+[!INCLUDE [permissions-table](../includes/permissions/agentidentityblueprintprincipal-list-approleassignments-permissions.md)]
 
 
 
@@ -39,7 +39,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /servicePrincipals/{id}/appRoleAssignments
+GET /servicePrincipals/{id}/Microsoft.Graph.AgentIdentityBlueprintPrincipal/appRoleAssignments
 ```
 
 ## Optional query parameters
@@ -64,48 +64,17 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-The following example shows a request to retrieve the app roles that have been assigned to a service principal.
+The following example shows a request to retrieve the app roles that have been assigned to a agent identity blueprint principal.
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "serviceprincipal_get_approleassignments"
+  "name": "agentidentityblueprintprincipal_get_approleassignments"
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/servicePrincipals/8e881353-1735-45af-af21-ee1344582a4d/appRoleAssignments
+GET https://graph.microsoft.com/beta/servicePrincipals/8e881353-1735-45af-af21-ee1344582a4d/Microsoft.Graph.AgentIdentityBlueprintPrincipal/appRoleAssignments
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/serviceprincipal-get-approleassignments-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/serviceprincipal-get-approleassignments-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/serviceprincipal-get-approleassignments-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/serviceprincipal-get-approleassignments-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/serviceprincipal-get-approleassignments-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/serviceprincipal-get-approleassignments-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/serviceprincipal-get-approleassignments-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### Response
 
@@ -140,17 +109,3 @@ Content-type: application/json
   ]
 }
 ```
-
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
-<!--
-{
-  "type": "#page.annotation",
-  "description": "List appRoleAssignments",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-  ]
-}
--->

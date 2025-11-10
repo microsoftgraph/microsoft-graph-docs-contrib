@@ -1,28 +1,28 @@
 ---
-title: "Grant an appRoleAssignment to a service principal"
-description: "Grant an app role assignment to a service principal."
-ms.localizationpriority: high
-doc_type: apiPageType
+title: "Grant an appRoleAssignment to a agent identity blueprint principal"
+description: "Grant an app role assignment to a agent identity blueprint principal."
+author: "zallison22"
+ms.date: 10/27/2025
+ms.localizationpriority: medium
 ms.subservice: "entra-applications"
-author: "psignoret"
-ms.date: 07/26/2024
+doc_type: apiPageType
 ---
 
-# Grant an appRoleAssignment to a service principal
+# Grant an appRoleAssignment to an agent identity blueprint principal
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Assign an app role to a client service principal.
+Assign an app role to a client agent identity blueprint principal.
 
-App roles that are assigned to service principals are also known as [application permissions](/azure/active-directory/develop/v2-permissions-and-consent#permission-types). Application permissions can be granted directly with app role assignments, or through a [consent experience](/azure/active-directory/develop/application-consent-experience).
+App roles that are assigned to agent identity blueprint principals are also known as [application permissions](/azure/active-directory/develop/v2-permissions-and-consent#permission-types). Application permissions can be granted directly with app role assignments, or through a [consent experience](/azure/active-directory/develop/application-consent-experience).
 
-To grant an app role assignment to a client service principal, you need three identifiers:
+To grant an app role assignment to a client agent identity blueprint principal, you need three identifiers:
 
-- `principalId`: The `id` of the client service principal to which you are assigning the app role.
+- `principalId`: The `id` of the client agent identity blueprint principal to which you are assigning the app role.
 - `resourceId`: The `id` of the resource `servicePrincipal` (the API) which has defined the app role (the application permission).
-- `appRoleId`: The `id` of the `appRole` (defined on the resource service principal) to assign to the client service principal.
+- `appRoleId`: The `id` of the `appRole` (defined on the resource service principal) to assign to the client agent identity blueprint principal.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -30,19 +30,16 @@ To grant an app role assignment to a client service principal, you need three id
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "permissions", "name": "serviceprincipal_post_approleassignments" } -->
-[!INCLUDE [permissions-table](../includes/permissions/serviceprincipal-post-approleassignments-permissions.md)]
+<!-- { "blockType": "permissions", "name": "agentidentityblueprintprincipal_post_approleassignments" } -->
+[!INCLUDE [permissions-table](../includes/permissions/agentidentityblueprint-post-approleassignments-permissions.md)]
 
 [!INCLUDE [rbac-approleassignments-apis-write](../includes/rbac-for-apis/rbac-approleassignments-apis-write.md)]
 
 ## HTTP request
 
-You can address the service principal using either its **id** or **appId**. **id** and **appId** are referred to as the **Object ID** and **Application (Client) ID**, respectively, in app registrations in the Microsoft Entra admin center.
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /servicePrincipals/{id}/appRoleAssignments
-POST /servicePrincipals(appId='{appId}')/appRoleAssignments
-
 ```
 
 > [!NOTE]
@@ -70,14 +67,13 @@ If successful, this method returns a `201 Created` response code and an [appRole
 The following example shows a request.
 
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "serviceprincipal_create_approleassignment"
+  "name": "agentidentityblueprintprincipal_create_approleassignment"
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/servicePrincipals/9028d19c-26a9-4809-8e3f-20ff73e2d75e/appRoleAssignments
+POST https://graph.microsoft.com/beta/servicePrincipals/9028d19c-26a9-4809-8e3f-20ff73e2d75e/Microsoft.Graph.AgentIdentityBlueprintPrincipal/appRoleAssignments
 Content-Type: application/json
 
 {
@@ -87,37 +83,7 @@ Content-Type: application/json
 }
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/serviceprincipal-create-approleassignment-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/serviceprincipal-create-approleassignment-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/serviceprincipal-create-approleassignment-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/serviceprincipal-create-approleassignment-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/serviceprincipal-create-approleassignment-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/serviceprincipal-create-approleassignment-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/serviceprincipal-create-approleassignment-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-In this example, note that the value used as the service principal **id** in the request URL (`9028d19c-26a9-4809-8e3f-20ff73e2d75e`) is the same as the **principalId** property in the body. The **resourceId** value is the **id** of the resource service principal (the API).
+In this example, note that the value used as the agent identity blueprint principal **id** in the request URL (`9028d19c-26a9-4809-8e3f-20ff73e2d75e`) is the same as the **principalId** property in the body. The **resourceId** value is the **id** of the resource service principal (the API).
 
 ### Response
 
@@ -147,17 +113,3 @@ Content-type: application/json
   "resourceId": "8fce32da-1246-437b-99cd-76d1d4677bd5"
 }
 ```
-
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
-<!--
-{
-  "type": "#page.annotation",
-  "description": "Create appRoleAssignment",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-  ]
-}
--->
