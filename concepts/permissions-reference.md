@@ -93,28 +93,6 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 ---
 
-### AgentApplication.Create
-
-| Category | Application | Delegated |
-|--|--|--|
-| Identifier | 2f479c7e-27df-4053-826b-57d8ce55be3e | - |
-| DisplayText | Create agent applications. | - |
-| Description | Allows creating new agent applications and their associated service principals. | - |
-| AdminConsentRequired | Yes | - |
-
----
-
-### AgentIdentity.Create
-
-| Category | Application | Delegated |
-|--|--|--|
-| Identifier | 2c4c43c7-1903-4658-a911-b8f2bb31e32e | - |
-| DisplayText | Create agent identities linked to itself. | - |
-| Description | Allows the app to create linked agent identities without a signed-in user. | - |
-| AdminConsentRequired | Yes | - |
-
----
-
 ### Agreement.Read.All
 
 | Category | Application | Delegated |
