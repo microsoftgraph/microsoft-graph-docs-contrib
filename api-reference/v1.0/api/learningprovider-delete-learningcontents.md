@@ -29,13 +29,13 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 For a specific learning content based on its ID (primary key):
 
-``` http
+```http
 DELETE /employeeExperience/learningProviders/{learningProviderId}/learningContents/{learningContentId}/$ref
 ```
 
 For a specific learning content based on its external ID (secondary key):
 
-``` http
+```http
 DELETE /employeeExperience/learningProviders/{learningProviderId}/learningContents(externalId='{externalId}')/$ref
 ```
 
@@ -70,7 +70,7 @@ The following example shows the request.
   "sampleKeys": ["13727311-e7bb-470d-8b20-6a23d9030d70", "77029588-a660-46b6-ba58-3ce4d21d5678"]
 }
 -->
-``` http
+```http
 DELETE https://graph.microsoft.com/v1.0/employeeExperience/learningProviders/13727311-e7bb-470d-8b20-6a23d9030d70/learningContents/77029588-a660-46b6-ba58-3ce4d21d5678/$ref
 ```
 
@@ -89,7 +89,7 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 
@@ -107,7 +107,7 @@ The following example shows the request.
   "sampleKeys": ["13727311-e7bb-470d-8b20-6a23d9030d70", "27rg2ifb28gf28"]
 }
 -->
-``` http
+```http
 DELETE https://graph.microsoft.com/v1.0/employeeExperience/learningProviders/13727311-e7bb-470d-8b20-6a23d9030d70/learningContents(externalId='27rg2ifb28gf28')/$ref
 ```
 
@@ -120,6 +120,6 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```

@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PATCH /storage/fileStorage/containers/{containerId}/columns/{column-id}
 ```
 
@@ -64,7 +64,7 @@ The following example shows a request.
   "name": "update_columndefinition_for_fileStorageContainer"
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/columns/11dfef35-e2f7-4f17-82b0-6fba34445103
 Content-Type: application/json
 
@@ -112,7 +112,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.columnDefinition"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
