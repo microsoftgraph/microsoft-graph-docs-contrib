@@ -8,7 +8,7 @@ ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 
-# agentIdentityBlueprintPrincipal: List owners
+# List agentIdentityBlueprintPrincipal owners
 
 Namespace: microsoft.graph
 
@@ -38,12 +38,12 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /servicePrincipals/{id}/Microsoft.Graph.AgentIdentityBlueprintPrincipal/owners
+GET /servicePrincipals/{id}/microsoft.graph.agentIdentityBlueprintPrincipal/owners
 ```
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` and `$filter` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -70,10 +70,8 @@ The following example shows a request.
 }
 -->
 ``` http
-
-GET https://graph.microsoft.com/beta/serviceprincipals/bbec3106-565f-4907-941e-96b4dbfef21c/Microsoft.Graph.AgentIdentityBlueprintPrincipal/owners
-
-
+GET https://graph.microsoft.com/beta/serviceprincipals/bbec3106-565f-4907-941e-96b4dbfef21c/microsoft.graph.agentIdentityBlueprintPrincipal/owners
+```
 
 ### Response
 

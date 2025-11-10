@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Add sponsors to an agent identity blueprint principal by posting to the sponsors collection.
+Add sponsors to an [agent identity blueprint principal](../resources/agentidentityblueprintprincipal.md) by posting to the sponsors collection.
 
 ## Permissions
 
@@ -36,7 +36,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-POST /servicePrincipals/{id}/graph.agentIdentityBlueprintPrincipal/sponsors/$ref
+POST /servicePrincipals/{id}/microsoft.graph.agentIdentityBlueprintPrincipal/sponsors/$ref
 ```
 
 ## Request headers
@@ -65,7 +65,7 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/servicePrincipals/{id}/graph.agentIdentityBlueprintPrincipal/sponsors/$ref
+POST https://graph.microsoft.com/beta/servicePrincipals/{id}/microsoft.graph.agentIdentityBlueprintPrincipal/sponsors/$ref
 Content-Type: application/json
 
 {
@@ -77,7 +77,6 @@ Content-Type: application/json
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response"
 }

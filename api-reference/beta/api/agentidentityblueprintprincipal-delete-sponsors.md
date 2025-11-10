@@ -16,8 +16,6 @@ Namespace: microsoft.graph
 
 Remove a sponsor from a [agentIdentityBlueprintPrincipal](../resources/agentidentityblueprintprincipal.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -38,7 +36,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-DELETE /servicePrincipals/{id}/graph.agentIdentityBlueprintPrincipal/sponsors/{sponsorObjectId}/$ref
+DELETE /servicePrincipals/{id}/microsoft.graph.agentIdentityBlueprintPrincipal/sponsors/{sponsorObjectId}/$ref
 ```
 
 ## Request headers
@@ -73,7 +71,6 @@ DELETE https://graph.microsoft.com/beta/servicePrincipals/{id}/graph.agentIdenti
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true

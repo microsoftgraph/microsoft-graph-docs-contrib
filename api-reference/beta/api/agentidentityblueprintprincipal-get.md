@@ -16,8 +16,6 @@ Namespace: microsoft.graph
 
 Read the properties and relationships of [agentIdentityBlueprintPrincipal](../resources/agentidentityblueprintprincipal.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -29,13 +27,15 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/agentidentityblueprintprincipal-get-permissions.md)]
 
+[!INCLUDE [rbac-agentid-apis-write](../includes/rbac-for-apis/rbac-agentid-apis-write.md)]
+
 ## HTTP request
 
 You can address the agent identity blueprint principal using either its **id** or **appId**.
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /servicePrincipals/{id}/Microsoft.Graph.AgentIdentityBlueprintPrincipal
-GET /servicePrincipals(appId='{appId}')/Microsoft.Graph.AgentIdentityBlueprintPrincipal
+GET /servicePrincipals/{id}/microsoft.graph.agentIdentityBlueprintPrincipal
+GET /servicePrincipals(appId='{appId}')/microsoft.graph.agentIdentityBlueprintPrincipal
 ```
 
 ## Optional query parameters
@@ -54,7 +54,7 @@ The use of `$select` to get **keyCredentials** for agent blueprint principals ha
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Accept-Language| Language code. Optional.   |
 
-Providing the **Accept-Language** header with a supported language code, such as `es-ES` or `de-DE`, will return localized values where available. Note that the header is not supported for [list operations](serviceprincipal-list.md).
+Providing the **Accept-Language** header with a supported language code, such as `es-ES` or `de-DE`, returns localized values where available.
 
 ## Request body
 
@@ -75,7 +75,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/servicePrincipals/{id}/Microsoft.Graph.AgentIdentityBlueprintPrincipal
+GET https://graph.microsoft.com/beta/servicePrincipals/{id}/microsoft.graph.agentIdentityBlueprintPrincipal
 ```
 
 

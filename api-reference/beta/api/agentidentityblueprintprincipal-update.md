@@ -14,13 +14,10 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of an agentIdentityBlueprintPrincipal object.
-
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+Update the properties of an [agentIdentityBlueprintPrincipal](../resources/agentidentityblueprintprincipal.md) object.
 
 > [!IMPORTANT]
 > - Agent identity blueprint principals inherit specific properties from their associated agent identity blueprint registrations. These properties are synchronized from the agent identity blueprint registration, but the synchronization isn't immediate or continuous. Sometimes, updating a agent identity blueprint principal may prompt the directory to refresh properties from the agent identity blueprint registration, causing updates that weren't part of the original request.
-
 
 ## Permissions
 
@@ -39,7 +36,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 - To update the **customSecurityAttributes** property:
   - In delegated scenarios, the admin must be assigned the *Attribute Assignment Administrator* role and the app granted the *CustomSecAttributeAssignment.ReadWrite.All* delegated permission.
   - In app-only scenarios using Microsoft Graph permissions, the app must be granted the *CustomSecAttributeAssignment.ReadWrite.All* application permission.
-
 
 ## HTTP request
 

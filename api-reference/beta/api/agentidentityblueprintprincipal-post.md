@@ -1,5 +1,5 @@
 ---
-title: "Create agent identity blueprint principal"
+title: "Create agentIdentityBlueprintPrincipal object"
 description: "Create a new agent identity blueprint principal object."
 author: "zallison22"
 ms.date: 10/27/2025
@@ -9,22 +9,19 @@ doc_type: apiPageType
 ---
 
 
-# Create agent identity blueprint principal
+# Create agentIdentityBlueprintPrincipal object
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
-Create a new [agent identity blueprint principal](../resources/agentidentityblueprintprincipal.md) object.
-
+Create a new [agentIdentityBlueprintPrincipal](../resources/agentidentityblueprintprincipal.md) object.
 
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 
-<!-- { "blockType": "permissions", "name": "serviceprincipal_post_serviceprincipals" } -->
+<!-- { "blockType": "permissions", "name": "agentidentityblueprintprincipal_post" } -->
 [!INCLUDE [permissions-table](../includes/permissions/agentidentityblueprintprincipal-post-permissions.md)]
 
 [!INCLUDE [rbac-agentid-apis-write](../includes/rbac-for-apis/rbac-agentid-apis-write.md)]
@@ -32,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /servicePrincipals/Microsoft.Graph.AgentIdentityBlueprintPrincipal
+POST /servicePrincipals/microsoft.graph.agentIdentityBlueprintPrincipal
 ```
 
 ## Request headers
@@ -42,7 +39,7 @@ POST /servicePrincipals/Microsoft.Graph.AgentIdentityBlueprintPrincipal
 | Content-Type | application/json. Required. |
 
 ## Request body
-In the request body, supply a JSON representation of a [agentIdentityBlueprintPrincipal](../resources/agentidentityblueprintprincipal.md) object. The request body must contain  **appId**.
+In the request body, supply a JSON representation of a [agentIdentityBlueprintPrincipal](../resources/agentidentityblueprintprincipal.md) object. The request body must contain  **appId** of the [agentIdentityBlueprint](../resources/agentidentityblueprint.md) object.
 
 ## Response
 
@@ -54,7 +51,7 @@ If successful, this method returns a `201 Created` response code and a [agentIde
 The following example shows a request.
 
 ```http
-POST https://graph.microsoft.com/beta/servicePrincipals/Microsoft.Graph.AgentIdentityBlueprintPrincipal
+POST https://graph.microsoft.com/beta/servicePrincipals/microsoft.graph.agentIdentityBlueprintPrincipal
 Content-type: application/json
 
 {
@@ -102,17 +99,3 @@ Content-type: application/json
   "publishedPermissionScopes": []
 }
 ```
-
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
-<!--
-{
-  "type": "#page.annotation",
-  "description": "Create serviceprincipal",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-  ]
-}
--->

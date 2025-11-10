@@ -1,5 +1,5 @@
 ---
-title: "List agentIdentityBlueprintPrincipal memberOf"
+title: "List agentIdentityBlueprintPrincipal direct memberships"
 description: "Get the groups and directory roles that this agent identity blueprint principal is a direct member of."
 author: "zallison22"
 ms.date: 10/27/2025
@@ -8,15 +8,13 @@ ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 
-# agentIdentityBlueprintPrincipal: List memberOf
+# List agentIdentityBlueprintPrincipal direct memberships
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the groups and directory roles that this [servicePrincipal](../resources/serviceprincipal.md) is a direct member of. This operation isn't transitive.
-
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+Get the groups and directory roles that this [agentIdentityBlueprintPrincipal](../resources/agentidentityblueprintprincipal.md) is a direct member of. This operation isn't transitive.
 
 ## Permissions
 
@@ -29,6 +27,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/agentidentityblueprintprincipal-list-memberof-permissions.md)]
 
+[!INCLUDE [rbac-agentid-apis-write](../includes/rbac-for-apis/rbac-agentid-apis-write.md)]
+
 ## HTTP request
 
 <!-- {
@@ -36,12 +36,12 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /servicePrincipals/{id}/Microsoft.Graph.AgentIdentityBlueprintPrincipal/memberOf
+GET /servicePrincipals/{id}/microsoft.graph.agentIdentityBlueprintPrincipal/memberOf
 ```
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` and `$filter` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -68,7 +68,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/servicePrincipals/{id}/Microsoft.Graph.AgentIdentityBlueprintPrincipal/memberOf
+GET https://graph.microsoft.com/beta/servicePrincipals/{id}/microsoft.graph.agentIdentityBlueprintPrincipal/memberOf
 ```
 
 

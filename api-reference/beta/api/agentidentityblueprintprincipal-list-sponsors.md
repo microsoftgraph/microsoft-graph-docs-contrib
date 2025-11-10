@@ -9,14 +9,13 @@ doc_type: apiPageType
 ---
 
 
-# agentIdentityBlueprintPrincipal: List sponsors
+# List agentIdentityBlueprintPrincipal sponsors
 
 Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 List the sponsors for an [agentIdentityBlueprintPrincipal](../resources/agentidentityblueprintprincipal.md) object.
-
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -31,7 +30,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 [!INCLUDE [rbac-agentid-apis-write](../includes/rbac-for-apis/rbac-agentid-apis-write.md)]
 
-
 ## HTTP request
 
 <!-- {
@@ -39,12 +37,12 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /servicePrincipals/{id}/graph.agentIdentityBlueprintPrincipal/sponsors
+GET /servicePrincipals/{id}/microsoft.graph.agentIdentityBlueprintPrincipal/sponsors
 ```
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` and `filter` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -71,7 +69,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/servicePrincipals/{id}/graph.agentIdentityBlueprintPrincipal/sponsors
+GET https://graph.microsoft.com/beta/servicePrincipals/{id}/microsoft.graph.agentIdentityBlueprintPrincipal/sponsors
 ```
 
 

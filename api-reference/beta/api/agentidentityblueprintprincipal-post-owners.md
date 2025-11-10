@@ -8,15 +8,13 @@ ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 
-# agentIdentityBlueprintPrincipal: Add owners
+# Add agentIdentityBlueprintPrincipal owners
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Add an owner for the [agentIdentityBlueprintPrincipal](../resources/agentIdentityBlueprintPrincipal.md). Agent identity blueprint principal owners can be users, the agent identity blueprint principal itself, or other service principals.
-
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -36,8 +34,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 You can address the agent identity blueprint principal using either its **id** or **appId**. **id** and **appId** are referred to as the **Object ID** and **Application (Client) ID**, respectively, in app registrations in the Microsoft Entra admin center.
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /servicePrincipals/{id}/Microsoft.Graph.AgentIdentityBlueprintPrincipal/owners/$ref
-POST /servicePrincipals(appId='{appId}')/Microsoft.Graph.AgentIdentityBlueprintPrincipal/owners/$ref
+POST /servicePrincipals/{id}/microsoft.graph.agentIdentityBlueprintPrincipal/owners/$ref
+POST /servicePrincipals(appId='{appId}')/microsoft.graph.agentIdentityBlueprintPrincipal/owners/$ref
 ```
 
 ## Request headers
@@ -67,7 +65,7 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/servicePrincipals/{id}/Microsoft.Graph.AgentIdentityBlueprintPrincipal/owners/$ref
+POST https://graph.microsoft.com/beta/servicePrincipals/{id}/microsoft.graph.agentIdentityBlueprintPrincipal/owners/$ref
 Content-Type: application/json
 
 {

@@ -1,5 +1,5 @@
 ---
-title: "List agentIdentityBlueprintPrincipal"
+title: "List agentIdentityBlueprintPrincipal objects"
 description: "Retrieve a list of agentIdentityBlueprintPrincipal objects."
 author: "zallison22"
 ms.date: 10/27/2025
@@ -8,30 +8,28 @@ ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 
-# List agentIdentityBlueprintPrincipals
+# List agentIdentityBlueprintPrincipal objects
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
-Retrieve a list of [agent identity blueprint principal](../resources/serviceprincipal.md) objects.
+Retrieve a list of [agentIdentityBlueprintPrincipal](../resources/agentidentityblueprintprincipal.md) objects.
 
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "permissions", "name": "serviceprincipal_list" } -->
-[!INCLUDE [permissions-table](../includes/permissions/serviceprincipal-list-permissions.md)]
+<!-- { "blockType": "permissions", "name": "agentidentityblueprintprincipal_list" } -->
+[!INCLUDE [permissions-table](../includes/permissions/agentidentityblueprintprincipal-list-permissions.md)]
 
-[!INCLUDE [rbac-serviceprincipal-apis-read](../includes/rbac-for-apis/rbac-serviceprincipal-apis-read.md)]
+[!INCLUDE [rbac-agentid-apis-write](../includes/rbac-for-apis/rbac-agentid-apis-write.md)]
 
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /servicePrincipals/Microsoft.Graph.AgentIdentityBlueprintPrincipal
+GET /servicePrincipals/microsoft.graph.agentIdentityBlueprintPrincipal
 ```
 
 ## Optional query parameters
@@ -64,7 +62,7 @@ If successful, this method returns a `200 OK` response code and collection of [a
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/servicePrincipals/Microsoft.Graph.AgentIdentityBlueprintPrincipal
+GET https://graph.microsoft.com/beta/servicePrincipals/microsoft.graph.agentIdentityBlueprintPrincipal
 ```
 
 #### Response

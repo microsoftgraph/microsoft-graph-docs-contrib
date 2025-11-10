@@ -1,6 +1,6 @@
 ---
 title: "agentIdentityBlueprintPrincipal resource type"
-description: "Represents an Agent Identity Blueprint principal in a directory. An Agent Identity Blueprint principal is a specialized service principal that serves as the parent blueprint for creating agent identity instances within the Microsoft Entra ID ecosystem."
+description: "Represents an agent identity blueprint principal in a directory. An Agent Identity Blueprint principal is a specialized service principal that serves as the parent blueprint for creating agent identity instances within the Microsoft Entra ID ecosystem."
 author: "zallison22"
 ms.date: 10/27/2025
 ms.localizationpriority: medium
@@ -14,11 +14,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an agent identity blueprint principal in a tenant. An agent identity blueprint principal is used to create agent identities within a Microsoft Entra ID tenant, and perform various identity management operations that affect all agent identities created.
+Represents an agent identity blueprint principal in a tenant. An agent identity blueprint principal is instantiated from an [agentIdentityBlueprintPrincipal](../resources/agentidentityblueprintprincipal.md) object and is used to create [agent identities](../resources/agentidentity.md) within a Microsoft Entra ID tenant, and perform various identity management operations that affect all agent identities created.
 
 Inherits from [servicePrincipal](../resources/serviceprincipal.md).
 
-This resource is an open type.
+This resource is an open type that allows additional properties beyond those documented here.
 
 ## Methods
 |Method|Return type|Description|
@@ -54,8 +54,8 @@ This resource is an open type.
 |appId|String|The unique identifier for the associated agent identity blueprint (its **appId** property). Alternate key. Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
 |appOwnerOrganizationId|Guid|Contains the tenant ID where the agent identity blueprint is registered. This is applicable only to agent identity blueprint principals backed by applications. Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
 |appRoleAssignmentRequired|Boolean|Specifies whether users or other service principals need to be granted an app role assignment for this agent identity blueprint principal before users can sign in or apps can get tokens. The default value is `false`. Not nullable. Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
-|appRoles|[appRole](../resources/approle.md) collection|The roles exposed by the agent identity blueprintt, which this agent identity blueprint principal represents. For more information, see the **appRoles** property definition on the application entity. Not nullable. Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
-|createdByAppId|String|The unique identifier of the application that created this agent identity blueprint principal. Set internally by Microsoft Enctra ID. Read-only. Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
+|appRoles|[appRole](../resources/approle.md) collection|The roles exposed by the agent identity blueprint, which this agent identity blueprint principal represents. For more information, see the **appRoles** property definition on the application entity. Not nullable. Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
+|createdByAppId|String|The **appId** (called **Application (client) ID** on the Microsoft Entra admin center) of the application that created this agent identity blueprint principal. Set internally by Microsoft Entra ID. Read-only. Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
 |disabledByMicrosoftStatus|String|Specifies whether Microsoft has disabled the registered agent identity blueprint. Possible values are: `null` (default value), `NotDisabled`, and `DisabledDueToViolationOfServicesAgreement` (reasons may include suspicious, abusive, or malicious activity, or a violation of the Microsoft Services Agreement). Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
 |displayName|String|The display name for the agent identity blueprint principal. Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
 |id|String|The unique identifier for the agent identity blueprint principal. Inherited from [entity](../resources/entity.md). Key. Not nullable. Read-only.|
@@ -82,7 +82,7 @@ This resource is an open type.
 |sponsors|[directoryObject](../resources/directoryobject.md) collection|The sponsors for this agent identity blueprint principal. Sponsors are users or service principals who can authorize and manage the lifecycle of agent identity instances.|
 
 ## JSON representation
-The following JSON representation shows the resource type. Only a subset of all properties are returned by default. All other properies can only be retrieved using $select.
+The following JSON representation shows the resource type. Only a subset of all properties are returned by default. All other properties can only be retrieved using `$select`.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

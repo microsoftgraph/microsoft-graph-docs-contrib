@@ -16,8 +16,6 @@ Namespace: microsoft.graph
 
 Remove an owner from a [agentIdentityBlueprintPrincipal](../resources/agentidentityblueprintprincipal.md) object. As a recommended best practice, agent identity blueprint principals should have at least two owners.
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -36,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /servicePrincipals/{id}/Microsoft.Graph.AgentIdentityBlueprintPrincipal/owners/{id}/$ref
+DELETE /servicePrincipals/{id}/microsoft.graph.agentIdentityBlueprintPrincipal/owners/{id}/$ref
 ```
 ## Request headers
 | Name | Description|
@@ -64,13 +62,11 @@ The following example shows the request.
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/beta/servicePrincipals/{id}/Microsoft.Graph.AgentIdentityBlueprintPrincipal/owners/{id}/$ref
+DELETE https://graph.microsoft.com/beta/servicePrincipals/{id}/microsoft.graph.agentIdentityBlueprintPrincipal/owners/{id}/$ref
 ```
 
 
 ### Response
-
->**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response"
