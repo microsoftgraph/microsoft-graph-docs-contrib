@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new onPremAuthenticationPolicy object.
+Create a new [onPremAuthenticationPolicy](../resources/onpremauthenticationpolicy.md) object.
 
 ## Permissions
 
