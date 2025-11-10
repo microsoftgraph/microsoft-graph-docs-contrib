@@ -201,7 +201,8 @@
       "CreatedDateTime": "2025-10-13T09:17:12.3788634Z",
       "WorkloadArea": "Applications",
       "SubArea": "Service principal"
-        },{
+        },
+      {
       "ChangeList": [
         {
           "Id": "1416cd4d-87dd-43c5-93c1-2f9fac460404",

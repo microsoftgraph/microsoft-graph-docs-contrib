@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties of an [applicationTemplate](../resources/applicationtemplate.md) object.
+Retrieve the properties of an [applicationTemplate](../resources/applicationtemplate.md) object. Details about optional risk properties such as **riskScore** and **riskFactors** are available with either the Microsoft Entra Suite or Microsoft Entra Internet Access license.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -31,8 +31,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 [!INCLUDE [permissions-table](../includes/permissions/applicationtemplate-get-permissions.md)]
 
 Additional permissions aren't required to call this API, as long as your application has a valid access token to call Microsoft Graph.
-
-[!INCLUDE [licensing](../includes/permissions/applicationtemplate-licensing.md)]
 
 ## HTTP request
 
@@ -144,7 +142,7 @@ Content-type: application/json
         "social"
     ],
     "publisher": "LinkedIn",
-    "description": "LinkedIn Lookup is the easiest way to find coworkers and teams at your company. Lookup is a new people search tool that combines employees’ LinkedIn profile information and Active Directory information, allowing you to quickly find and contact your coworkers, on desktop or mobile. Requires an existing Lookup company subscription.",
+    "description": "LinkedIn Lookup is the easiest way to find coworkers and teams at your company. Lookup is a new people search tool that combines employees' LinkedIn profile information and Active Directory information, allowing you to quickly find and contact your coworkers, on desktop or mobile. Requires an existing Lookup company subscription.",
     "endpoints": [
         "linkedin.com",
         "licdn.com",
