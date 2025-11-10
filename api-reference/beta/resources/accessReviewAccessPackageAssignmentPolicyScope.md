@@ -25,13 +25,13 @@ Inherits from [accessReviewResourceScope](../resources/accessreviewresourcescope
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|accessPackageDisplayName|String| The display nameo of the access package. |
+|accessPackageDisplayName|String| The display name of the access package. |
 |accessPackageId|String| The access package identifier. |
 |catalogDisplayName|String| The display name of the catalog. |
 |catalogId|String| The catalog identifier. |
 |displayName|String| The display name of the access package. Inherited from [accessReviewResourceScope](../resources/accessreviewresourcescope.md).|
 |resourceId|String| The identifier of the access package assignment policy. Inherited from [accessReviewResourceScope](../resources/accessreviewresourcescope.md).|
-|scopeType|accessReviewResourceScopeType|The scope type Inherited from [accessReviewResourceScope](../resources/accessreviewresourcescope.md). The value is `accessPackageAssignmentPolicy`.|
+|scopeType|accessReviewResourceScopeType|The scope type. Inherited from [accessReviewResourceScope](../resources/accessreviewresourcescope.md). The value is `accessPackageAssignmentPolicy`.|
 
 ## Relationships
 None.

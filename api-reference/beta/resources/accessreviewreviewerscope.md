@@ -28,7 +28,7 @@ Inherits from [accessReviewScope](../resources/accessreviewscope.md).
 | query | String | The query specifying who will be the reviewer. |
 | queryType | String | The type of query. Examples include `MicrosoftGraph` and `ARM`. |
 | queryRoot | String | In the scenario where reviewers need to be specified dynamically, this property is used to indicate the relative source of the query. This property is only required if a relative query, for example, `./manager`, is specified. Possible value: `decisions`. |
-`reviewerId` | String | The identifier of the reviewer. |
+reviewerId | String | The identifier of the reviewer. |
 |scopeType|accessReviewReviewerScopeType| The type of the reviewer scope. The possible values are: `user`, `group`, `self`, `manager`, `sponsor`, `resourceOwner`, `managerOrSponsor`, `unknownFutureValue`.|
 
 For more about configuration options for **reviewers**, see [Assign reviewers to your access review definition using the Microsoft Graph API](/graph/accessreviews-reviewers-concept).

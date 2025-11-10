@@ -461,7 +461,7 @@ Content-Type: application/json
     "value": [
         {
             "principal": {
-                "displayName": "Jone Doe",
+                "displayName": "John Doe",
                 "id": "c1dc83de-40f6-4ff8-999f-7597bd036fb3"
             }
         }
