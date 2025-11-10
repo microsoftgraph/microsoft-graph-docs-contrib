@@ -1,8 +1,10 @@
-## Licensing requirements
+---
+author: HildaK-pm
+ms.topic: include
+---
 
-To access optional risk properties such as `riskScore` and `riskFactors`, your organization must have one of the following licenses:
-
-* Microsoft Entra Suite
-* Microsoft Entra Internet Access
-
-For more details, see [available Microsoft Entra plans](https://learn.microsoft.com/entra/fundamentals/licensing-options).
+> [!IMPORTANT]
+> To access optional risk properties such as **riskScore** and **riskFactors**, your organization must have one of the following licenses:
+>  - Microsoft Entra Suite
+>  - Microsoft Entra Internet Access
+> For more details, see [available Microsoft Entra plans](/entra/fundamentals/licensing-options).
