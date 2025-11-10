@@ -41,8 +41,6 @@ GET /deviceManagement/virtualEndpoint/provisioningPolicies/{id}/assignments/{ass
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
-|Content-Type|application/json. Required.|
-
 ## Request body
 
 In the request body, supply a JSON representation of the parameters.

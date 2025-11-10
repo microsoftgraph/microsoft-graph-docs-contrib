@@ -587,7 +587,7 @@
             "cloudPcSubscription",
             "cloudPcUserRoleScopeTagInfo",
             "cloudPcUserSettingAssignment",
-            "cloudPcUserSettingsPersistenceConfiguration"
+            "cloudPcUserSettingsPersistenceConfiguration",
             "cloudPCUserSettingsPersistenceProfile",
             "cloudPCUserSettingsPersistenceUsageResult",
             "cloudPcWindowsSetting",
