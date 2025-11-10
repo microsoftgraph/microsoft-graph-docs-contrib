@@ -14,11 +14,20 @@ ms.custom: sfi-ropc-nochange
 Namespace: microsoft.graph
 
 ### placeFeatureEnablement values
+
 |Member|
 |:---|
 |unknown|
 |enabled|
 |disabled|
+|unknownFutureValue|
+
+### sensorStatus values 
+
+|Member|
+|:---|
+|active|
+|inactive|
 |unknownFutureValue|
 
 ### readingCoachStoryType values
@@ -1138,6 +1147,7 @@ Namespace: microsoft.graph
 | intunePfx |
 | oflineDomainJoin |
 | unknownFutureValue |
+|privateAccess|
 
 ### agentStatus values
 
@@ -3042,6 +3052,7 @@ Possible values for user account types (group membership), per Windows definitio
 |fqdn|
 |dnsSuffix|
 |unknownFutureValue|
+|servicePrincipalName|
 
 ### privateNetworkProtocol values 
 
