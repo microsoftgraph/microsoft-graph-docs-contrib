@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents Microsoft Entra agents that are at risk. Microsoft Entra ID Protection continually evaluates agentic risk based on various signals and machine learning. This API provides programmatic access to all at-risk aagents in your Microsoft Entra tenant.
+Represents Microsoft Entra agents that are at risk. Microsoft Entra ID Protection continually evaluates agentic risk based on various signals and machine learning. This API provides programmatic access to all at-risk agents in your Microsoft Entra tenant.
 
 Inherits from [entity](../resources/entity.md).
 
@@ -35,7 +35,7 @@ Inherits from [entity](../resources/entity.md).
 |id|String|Unique ID of the agent. Inherited from [entity](../resources/entity.md). Inherits from [entity](../resources/entity.md)|
 |isDeleted|Boolean|Indicates whether the agent is deleted.|
 |isEnabled|Boolean|Indicates whether the agent is enabled.|
-|isProcessing|Boolean|Indicates whether an agent's risky state is being processed by the backend.|
+|isProcessing|Boolean|Indicates whether an agent's risky state is processing in the backend.|
 |riskDetail|riskDetail|Details of the detected risk of the agent. The possible values are: `none`, `adminConfirmedAgentSafe`, `adminConfirmedAgentCompromised`, `adminDismissedRiskForAgent`.|
 |riskLastModifiedDateTime|DateTimeOffset|The date and time that the risky agent was last updated. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.|
 |riskLevel|riskLevel|Level of the detected risky agent. The possible values are: `low`, `medium`, `high`, `hidden`, `none`, `unknownFutureValue`.|

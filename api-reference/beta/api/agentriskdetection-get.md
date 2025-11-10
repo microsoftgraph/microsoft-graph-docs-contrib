@@ -1,6 +1,6 @@
 ---
-title: "Get riskyAgent"
-description: 'Identity Protection of agents - get a riskyAgent'
+title: "Get agentRiskDetection"
+description: 'Identity Protection of agents - get an agentRiskDetection'
 author: jiayle27
 ms.date: 10/24/2025
 ms.localizationpriority: medium
@@ -8,13 +8,13 @@ ms.subservice: entra-sign-in
 doc_type: apiPageType
 ---
 
-# Get riskyAgent
+# Get agentRiskDetection
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of [riskyAgent](../resources/riskyagent.md) object.
+Read the properties and relationships of [agentRiskDetection](../resources/agentriskdetection.md) object.
 
 ## Permissions
 
@@ -22,10 +22,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "riskyagent-get-permissions"
+  "name": "agentriskdetection-get-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/riskyagent-get-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/agentriskdetection-get-permissions.md)]
 
 ## HTTP request
 
@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /identityProtection/riskyAgents/{riskyAgentId}
+GET /identityProtection/agentRiskDetections/{agentRiskDetectionId}
 ```
 
 ## Optional query parameters
@@ -53,7 +53,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [riskyAgent](../resources/riskyagent.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an [agentRiskDetection](../resources/agentriskdetection.md) object in the response body.
 
 ## Examples
 
@@ -62,11 +62,11 @@ If successful, this method returns a `200 OK` response code and a [riskyAgent](.
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "get_riskyagent"
+  "name": "get_agentriskdetection"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityProtection/riskyAgents/{riskyAgentId}
+GET https://graph.microsoft.com/beta/identityProtection/agentRiskDetections/{agentRiskDetectionId}
 ```
 
 
@@ -77,7 +77,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.riskyAgent"
+  "@odata.type": "microsoft.graph.agentRiskDetection"
 }
 -->
 ``` http
@@ -86,16 +86,20 @@ Content-Type: application/json
 
 {
   "value": {
-    "@odata.type": "#microsoft.graph.riskyAgent",
-    "id": "ccdc88ee-d0bb-86b5-3500-1d38195c4d6f",
+    "@odata.type": "#microsoft.graph.agentRiskDetection",
+    "id": "0a2e6958-46cc-353d-8a02-5fe656267792",
+    "agentId": "String",
     "agentDisplayName": "String",
-    "isDeleted": "Boolean",
-    "isEnabled": "Boolean",
-    "isProcessing": "Boolean",
-    "riskLastModifiedDateTime": "String (timestamp)",
+    "activityDateTime": "String (timestamp)",
+    "detectedDateTime": "String (timestamp)",
+    "detectionTimingType": "String",
+    "lastModifiedDateTime": "String (timestamp)",
     "riskDetail": "String",
     "riskLevel": "String",
-    "riskState": "String"
+    "riskState": "String",
+    "riskEventType": "String",
+    "riskEvidence": "String",
+    "additionalInfo": "String"
   }
 }
 ```
