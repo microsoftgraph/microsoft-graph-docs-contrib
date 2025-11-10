@@ -27,6 +27,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/onpremauthenticationpolicy-get-permissions.md)]
 
+[!INCLUDE [onpremauthenticationpolicy-entra-roles-write](../includes/permissions/onpremauthenticationpolicy-entra-roles-write.md)]
+
 ## HTTP request
 
 <!-- {
@@ -39,7 +41,7 @@ GET /policies/onPremAuthenticationPolicies/{onPremAuthenticationPolicyId}
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select`, `$filter`, and `$expand` OData query parameters to customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -66,7 +68,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/policies/onPremAuthenticationPolicies/{onPremAuthenticationPolicyId}
+GET https://graph.microsoft.com/beta/policies/onPremAuthenticationPolicies/2e68a8f2-50ce-b21d-d25d-c34b59675ee2
 ```
 
 
@@ -87,13 +89,13 @@ Content-Type: application/json
 {
   "@odata.type": "#microsoft.graph.onPremAuthenticationPolicy",
   "id": "2e68a8f2-50ce-b21d-d25d-c34b59675ee2",
-  "deletedDateTime": "String (timestamp)",
-  "description": "String",
-  "displayName": "String",
+  "deletedDateTime": null,
+  "description": "Policy definition to manage and control authentication settings.",
+  "displayName": "Demo policy name",
   "definition": [
-    "String"
+    "{\"Version\":0,\"LastUpdatedTimestamp\":\"2025-01-28T22:47:12.7764932Z\", \"Key1\": \"Value1\", \"Key2\": {\"SubKey1\": \"SubValue1\"}}"
   ],
-  "isOrganizationDefault": "Boolean"
+  "isOrganizationDefault": true
 }
 ```
 

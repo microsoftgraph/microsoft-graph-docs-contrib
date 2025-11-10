@@ -27,6 +27,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/policyroot-post-onpremauthenticationpolicies-permissions.md)]
 
+[!INCLUDE [onpremauthenticationpolicy-entra-roles-write](../includes/permissions/onpremauthenticationpolicy-entra-roles-write.md)]
+
 ## HTTP request
 
 <!-- {
@@ -79,14 +81,12 @@ POST https://graph.microsoft.com/beta/policies/onPremAuthenticationPolicies
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.onPremAuthenticationPolicy",
-  "deletedDateTime": "String (timestamp)",
-  "description": "String",
-  "displayName": "String",
+  "description": "Policy definition to manage and control authentication settings.",
+  "displayName": "Policy name",
   "definition": [
-    "String"
+    "{\"Version\":1,\"LastUpdatedTimestamp\":\"2025-02-29T22:47:12.7764932Z\", \"Key1\": \"Value1\", \"Key2\": {\"SubKey1\": \"SubValue1\"}}"
   ],
-  "isOrganizationDefault": "Boolean"
+  "isOrganizationDefault": true
 }
 ```
 
@@ -107,13 +107,12 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.onPremAuthenticationPolicy",
-  "id": "2e68a8f2-50ce-b21d-d25d-c34b59675ee2",
-  "deletedDateTime": "String (timestamp)",
-  "description": "String",
-  "displayName": "String",
+  "deletedDateTime": null,
+  "description": "Updates to policy definition to manage and control authentication settings.",
+  "displayName": "Update policy name",
   "definition": [
-    "String"
+    "{\"Version\":1,\"LastUpdatedTimestamp\":\"2025-02-29T22:47:12.7764932Z\", \"Key1\": \"Value1\", \"Key2\": {\"SubKey1\": \"SubValue1\"}}"
   ],
-  "isOrganizationDefault": "Boolean"
+  "isOrganizationDefault": true
 }
 ```
