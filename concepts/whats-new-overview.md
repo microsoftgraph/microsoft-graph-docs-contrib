@@ -28,7 +28,7 @@ The [driveItem: restore](/graph/api/driveitem-restore) method was expanded to en
 
 ### Device and app management | Cloud PC
 
-- Use the [cloudPCUserSettingsPersistenceDetail](/graph/api/resources/cloudpcusersettingspersistencedetail?view=graph-rest-beta&preserve-view=true) resource and its associated methods to determine whether Cloud PC user settings persistence is enabled. When enabled, Windows 365 saves user-specific application data in a central location and reconnects users to their storage during each session:
+- Use the [cloudPCUserSettingsPersistenceDetail](/graph/api/resources/cloudpcusersettingspersistencedetail?view=graph-rest-beta&preserve-view=true) resource and its associated methods to determine whether Cloud PC user settings persistence is enabled. When enabled, Windows 365 saves user-specific application data in a central location and reconnects users to their storage during each session. The following methods are supported:
   - [Batch delete user settings persistence profile](/graph/api/cloudpcusersettingspersistencedetail-batchcleanupusersettingspersistenceprofile?view=graph-rest-beta&preserve-view=true).
   - [Retrieve user settings persistence profiles](/graph/api/cloudpcusersettingspersistencedetail-retrieveusersettingspersistenceprofiles?view=graph-rest-beta&preserve-view=true).
   - [Retrieve user settings persistence usage](/graph/api/cloudpcusersettingspersistencedetail-retrieveusersettingspersistenceprofileusage?view=graph-rest-beta&preserve-view=true).
