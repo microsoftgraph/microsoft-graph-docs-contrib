@@ -30,7 +30,7 @@ Represents the capabilities reported by a printer/printerShare.
 |isColorPrintingSupported|Boolean|True if color printing is supported by the printer; false otherwise. Read-only.|
 |isPageRangeSupported|Boolean|True if the printer supports printing by page ranges; false otherwise.|
 |leftMargins|Int32 collection|A list of supported left margins(in microns) for the printer.|
-|mediaColors|String collection|The media (for example, `paper`) colors supported by the printer.|
+|mediaColors|String collection|The media (for example, paper) colors supported by the printer.|
 |mediaSizes|String collection|The media sizes supported by the printer. Supports standard size names for ISO and ANSI media sizes. For the list of supported values, see [mediaSizes values](#mediasizes-values).|
 |mediaTypes|String collection|The media types supported by the printer. |
 |multipageLayouts|[printMultipageLayout](enums.md#printmultipagelayout-values) collection|The presentation directions supported by the printer. Supported values are described in the following table.|
