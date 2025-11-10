@@ -21,7 +21,7 @@ Represents the location attributes of an [application](../resources/applicationt
 |Property|Type|Description|
 |:---|:---|:---|
 |dataCenter|String|Specifies the region or physical location where the application's primary data center is hosted.|
-|headquarters|String|Specifies the city or country where the application's owning organization is headquartered.|
+|headquarters|String|Specifies the city, country or region where the application's owning organization is headquartered.|
 
 ## Relationships
 None.
