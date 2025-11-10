@@ -32,7 +32,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 
-``` http
+```http
 DELETE /external/connections/{connectionId}/groups/{externalGroupId}
 ```
 
@@ -63,7 +63,7 @@ If successful, this method returns a `204 No Content` response code.
 }
 -->
 
-``` http
+```http
 DELETE https://graph.microsoft.com/beta/external/connections/contosohr/groups/31bea3d537902000
 ```
 
@@ -106,6 +106,6 @@ DELETE https://graph.microsoft.com/beta/external/connections/contosohr/groups/31
 }
 -->
 
-``` http
+```http
 HTTP/1.1 204 No Content
 ```

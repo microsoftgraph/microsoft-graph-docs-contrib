@@ -144,6 +144,13 @@ Namespace: microsoft.graph
 |rightToRectification|
 |rightToRestrictionOfProcessing|
 |rightsRelatedToAutomatedDecisionMaking|
+
+### sensorStatus values 
+
+|Member|
+|:---|
+|active|
+|inactive|
 |unknownFutureValue|
 
 ### readingCoachStoryType values
@@ -1263,6 +1270,7 @@ Namespace: microsoft.graph
 | intunePfx |
 | oflineDomainJoin |
 | unknownFutureValue |
+|privateAccess|
 
 ### agentStatus values
 
@@ -3166,6 +3174,7 @@ Possible values for user account types (group membership), per Windows definitio
 |fqdn|
 |dnsSuffix|
 |unknownFutureValue|
+|servicePrincipalName|
 
 ### privateNetworkProtocol values
 
