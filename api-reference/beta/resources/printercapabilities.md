@@ -29,7 +29,7 @@ Represents the capabilities reported by a printer.
 |queueBufferSizeInBytes|Int32|The maximum print job queue size that can be stored by the printer.|
 |copiesPerJob|[integerRange](integerrange.md)|The range of copies per job supported by the printer.|
 |finishings|printFinishing collection|Finishing processes the printer supports for a printed document.|
-|mediaColors|String collection|The media (that is, paper) colors supported by the printer.|
+|mediaColors|String collection|The media (for example, paper) colors supported by the printer.|
 |mediaTypes|String collection|The media types supported by the printer.|
 |mediaSizes|String collection|The media sizes supported by the printer. Supports standard size names for ISO and ANSI media sizes. For the list of supported values, see [mediaSizes values](#mediasizes-values).|
 |pagesPerSheet|Int32 collection|Supported number of Input Pages to impose upon a single Impression.|
