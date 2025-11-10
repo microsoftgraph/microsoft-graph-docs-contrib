@@ -55,7 +55,9 @@ For the list of supported methods, see [place](./place.md).
 | reserved | The room is available only on a first-come, first-served basis. It can't be reserved.|
 
 ## Relationships
-None.
+|Relationship|Type|Description|
+|:---|:---|:---|
+|children|[place](../resources/place.md) collection|A collection of children places, which is only used in bulk upsert API. Inherited from [microsoft.graph.place](../resources/place.md). A room cannot have children.|
 
 ## JSON representation
 The following JSON representation shows the resource type.

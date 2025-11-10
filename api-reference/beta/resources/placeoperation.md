@@ -1,0 +1,64 @@
+---
+title: "placeOperation resource type"
+description: "Represents a place bulk upsert operation"
+author: "Dongjing-MSIT"
+ms.date: 11/10/2025
+ms.localizationpriority: medium
+ms.subservice: "outlook"
+doc_type: resourcePageType
+---
+
+# placeOperation resource type
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Represents a place bulk upsert operation
+
+
+Inherits from [entity](../resources/entity.md).
+
+
+## Methods
+|Method|Return type|Description|
+|:---|:---|:---|
+|[List](../api/placeoperation-list.md)|[placeOperation](../resources/placeoperation.md) collection|Get a list of the placeOperation objects and their properties.|
+|[Get](../api/placeoperation-get.md)|[placeOperation](../resources/placeoperation.md)|Read the properties and relationships of [placeOperation](../resources/placeoperation.md) object.|
+
+## Properties
+|Property|Type|Description|
+|:---|:---|:---|
+|details|[placeExecutionResult](../resources/placeexecutionresult.md) collection|The detailed execution result of the operation, including errors and succeeded places.|
+|id|String|The id of the operation. Inherited from [entity](../resources/entity.md). Inherits from [entity](../resources/entity.md)|
+|progress|[placeOperationProgress](../resources/placeoperationprogress.md)|The progress of the operation, like how many places have succeeded and how many places have failed.|
+|status|placeOperationStatus|The status of the operation. The possible values are: `created`, `inProgress`, `succeeded`, `failed`, `partiallySucceeded`, `expired`, `unknownFutureValue`.|
+
+## Relationships
+None.
+
+## JSON representation
+The following JSON representation shows the resource type.
+<!-- {
+  "blockType": "resource",
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.placeOperation",
+  "baseType": "microsoft.graph.entity",
+  "openType": false
+}
+-->
+``` json
+{
+  "@odata.type": "#microsoft.graph.placeOperation",
+  "id": "String (identifier)",
+  "status": "String",
+  "progress": {
+    "@odata.type": "microsoft.graph.placeOperationProgress"
+  },
+  "details": [
+    {
+      "@odata.type": "microsoft.graph.placeExecutionResult"
+    }
+  ]
+}
+```

@@ -5443,3 +5443,15 @@ Possible values for user account types (group membership), per Windows definitio
 |group|
 |sts|
 |unknownFutureValue|
+
+### placeOperationStatus values 
+
+|Member|
+|:---|
+|created|
+|inProgress|
+|succeeded|
+|failed|
+|partiallySucceeded|
+|expired|
+|unknownFutureValue|

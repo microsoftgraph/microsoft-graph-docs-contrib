@@ -29,6 +29,8 @@ Base type of [building](../resources/building.md), [desk](../resources/desk.md),
 |[Delete](../api/place-delete.md) |None |Delete a [place](../resources/place.md) object. |
 |[Descendants](../api/place-descendants.md) |[place](./place.md) collection|Get all the descendants of a specific type under a [place](../resources/place.md). | 
 |[Create check-in claim](../api/place-post-checkins.md)|[checkInClaim](../resources/checkinclaim.md)|Create a new [checkInClaim](../resources/checkinclaim.md) object to record the check-in status for a specific place, such as a [desk](../resources/desk.md), [room](../resources/room.md), or [workspace](../resources/workspace.md), associated with a specific calendar reservation.|
+|[getOperation](../api/place-getoperation.md)|[placeOperation](../resources/placeoperation.md)|Get a [placeOperation](../resources/placeoperation.md) by id.|
+|[listOperations](../api/place-listoperations.md)|[placeOperation](../resources/placeoperation.md) collection|List all existing [placeOperation](../resources/placeoperation.md). The operations have retention of 28 days.|
 
 ## Properties
 
@@ -50,6 +52,7 @@ Base type of [building](../resources/building.md), [desk](../resources/desk.md),
 |Relationship|Type|Description|
 |:---|:---|:---|
 |checkIns| [checkInClaim](../resources/checkinclaim.md) collection | A subresource of a **place** object that indicates the check-in status of an Outlook calendar event booked at the place. |
+|children|[place](../resources/place.md) collection|A collection of children places, which is only used in bulk upsert API.|
 
 ## JSON representation
 The following JSON representation shows the resource type.

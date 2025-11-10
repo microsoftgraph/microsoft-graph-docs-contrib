@@ -37,7 +37,9 @@ For the list of supported methods, see [place](./place.md).
 |tags|String collection|Custom tags that are associated with the **floor** for categorization or filtering. Inherited from [place](./place.md).|
 
 ## Relationships
-None.
+|Relationship|Type|Description|
+|:---|:---|:---|
+|children|[place](../resources/place.md) collection|A collection of children places, which is only used in bulk upsert API. Inherited from [microsoft.graph.place](../resources/place.md). The children of a floor should be of type [Section](../resources/section.md).|
 
 ## JSON representation
 The following JSON representation shows the resource type.
