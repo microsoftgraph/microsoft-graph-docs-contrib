@@ -1,6 +1,6 @@
 ---
 title: "agentRiskDetection resource type"
-description: 'Identity Protection of agents - agentRiskDetection resource type'
+description: Represents the agentic risk detections as evaluated by Microsoft Entra ID Protection based on various signals and machine learning.
 author: jiayle27
 ms.date: 10/24/2025
 ms.localizationpriority: medium
@@ -14,10 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Microsoft Entra ID Protection continually evaluates agent risks based on various signals and machine learning. This API provides programmatic access to all agentic risk detections in your Microsoft Entra environment.
+Represents the agentic risk detections as evaluated by Microsoft Entra ID Protection based on various signals and machine learning.
 
 Inherits from [entity](../resources/entity.md).
-
 
 ## Methods
 |Method|Return type|Description|
@@ -34,7 +33,7 @@ Inherits from [entity](../resources/entity.md).
 |agentId|String|Unique ID of the agent.|
 |detectedDateTime|DateTimeOffset|Date and time that the risk was detected. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z|
 |detectionTimingType|riskDetectionTimingType|Timing of the detected risk (real-time/offline). The possible values are: `notDefined`, `realtime`, `nearRealtime`, `offline`, `unknownFutureValue`.|
-|id|String|	Unique ID of the risk detection. Inherited from [entity](../resources/entity.md). Inherits from [entity](../resources/entity.md)|
+|id|String| Unique ID of the risk detection. Inherited from [entity](../resources/entity.md).|
 |lastModifiedDateTime|DateTimeOffset|Date and time that the risk detection was last updated.|
 |riskDetail|riskDetail|Details of the detected risk. The possible values are: `none`, `adminConfirmedAgentSafe`, `adminConfirmedAgentCompromised`, `adminDismissedRiskForAgent`.|
 |riskEventType|String|The type of risk event detected. |

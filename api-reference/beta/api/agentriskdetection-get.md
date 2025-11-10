@@ -1,6 +1,6 @@
 ---
 title: "Get agentRiskDetection"
-description: 'Identity Protection of agents - get an agentRiskDetection'
+description: Read the properties and relationships of agentRiskDetection object.
 author: jiayle27
 ms.date: 10/24/2025
 ms.localizationpriority: medium
@@ -39,7 +39,7 @@ GET /identityProtection/agentRiskDetections/{agentRiskDetectionId}
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 

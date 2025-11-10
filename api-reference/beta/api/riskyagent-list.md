@@ -1,6 +1,6 @@
 ---
-title: "List riskyAgent"
-description: 'Identity Protection of agents - list riskyAgent'
+title: "List riskyAgents"
+description: Retrieve the properties and relationships of a collection of riskyAgent objects.
 author: jiayle27
 ms.date: 10/24/2025
 ms.localizationpriority: medium
@@ -8,7 +8,7 @@ ms.subservice: entra-sign-in
 doc_type: apiPageType
 ---
 
-# List riskyAgent
+# List riskyAgents
 
 Namespace: microsoft.graph
 
@@ -39,7 +39,7 @@ GET /identityProtection/riskyAgents
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select`, `$count`, and `$filter` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -53,7 +53,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [riskyAgent](../resources/riskyagent.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [riskyAgent](../resources/riskyagent.md) objects in the response body.
 
 ## Examples
 

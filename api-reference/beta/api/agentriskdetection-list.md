@@ -1,6 +1,6 @@
 ---
-title: "List agentRiskDetection"
-description: 'Identity Protection of agents - list agentRiskDetection'
+title: "List agentRiskDetections"
+description: Retrieve the properties of a collection of agentRiskDetection objects.
 author: jiayle27
 ms.date: 10/24/2025
 ms.localizationpriority: medium
@@ -8,7 +8,7 @@ ms.subservice: entra-sign-in
 doc_type: apiPageType
 ---
 
-# List agentRiskDetection
+# List agentRiskDetections
 
 Namespace: microsoft.graph
 

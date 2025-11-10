@@ -1,6 +1,6 @@
 ---
 title: "riskyAgent: confirmCompromised"
-description: 'Identity Protection of agents - confirmCompromised of a riskyAgent'
+description: Confirm one or more riskyAgent objects as compromised.
 author: jiayle27
 ms.date: 10/24/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Confirm one or more [riskyAgent](../resources/riskyagent.md) objects as compromised. This action sets the targeted agent's risk level to high.
+Confirm one or more [riskyAgent](../resources/riskyagent.md) objects as compromised. This action sets the targeted agent's **riskLevel** to `high`.
 
 ## Permissions
 
@@ -54,8 +54,6 @@ The following table lists the parameters that are required when you call this ac
 |:---|:---|:---|
 |agentIds|String collection| Specify the risky agent IDs to mark as high risk.|
 
-
-
 ## Response
 
 If successful, this action returns a `204 No Content` response code.
@@ -86,7 +84,6 @@ Content-Type: application/json
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true
