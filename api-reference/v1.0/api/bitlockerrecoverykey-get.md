@@ -39,7 +39,7 @@ To get the specified BitLocker key without returning the **key** property:
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /informationProtection/bitlocker/recoveryKeys/{bitlockeryRecoveryKeyId}
 ```
 
@@ -48,7 +48,7 @@ To get the specified BitLocker key including its **key** property:
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /informationProtection/bitlocker/recoveryKeys/{bitlockeryRecoveryKeyId}?$select=key
 ```
 
@@ -209,7 +209,7 @@ The following example shows the response.
 }
 -->
 
-``` http
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 

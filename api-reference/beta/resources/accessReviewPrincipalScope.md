@@ -1,6 +1,6 @@
 ---
 title: "accessReviewPrincipalScope resource type"
-description: " Defines the type of users that will be reviewed in an access review."
+description: " Defines the type of users that are reviewed in an access review."
 author: "dotnet-enthusiast"
 ms.date: 11/05/2025
 ms.localizationpriority: medium
