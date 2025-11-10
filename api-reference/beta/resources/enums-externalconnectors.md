@@ -130,6 +130,22 @@ Namespace: microsoft.graph.externalConnectors
 | iconUrl
 | containerName
 | containerUrl
+| assignedTo
+| dueDate
+| closedDate
+| closedBy
+| reportedBy
+| sprintName
+| severity
+| state
+| priority
+| secondaryId
+| itemParentId
+| parentUrl
+| tags
+| itemType
+| itemPath
+| numReactions
 
 
 ### propertyType values
