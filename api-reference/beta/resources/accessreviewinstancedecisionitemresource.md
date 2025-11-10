@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
-Every decision item in an access review represents a principal's access to a resource. The resource is identified by an accessReviewInstanceDecisionItemResource object.
+Every decision item in an access review represents a principal's access to a resource. An **accessReviewInstanceDecisionItemResource** object identifies the resource.
 
 [accessReviewInstanceDecisionItemResource](accessreviewinstancedecisionitemresource.md) is an open type that allows for other properties to be passed in and is the base type for the following resources: [accessReviewInstanceDecisionItemAccessPackageAssignmentPolicyResource](accessreviewinstancedecisionitemaccesspackageassignmentpolicyresource.md), [accessReviewInstanceDecisionItemAzureRoleResource](accessreviewinstancedecisionitemazureroleresource.md), [accessReviewInstanceDecisionItemServicePrincipalResource](accessreviewinstancedecisionitemserviceprincipalresource.md), and [accessReviewInstanceDecisionItemCustomDataProvidedResource](accessReviewInstanceDecisionItemCustomDataProvidedResource.md).
 
@@ -26,7 +26,7 @@ Every decision item in an access review represents a principal's access to a res
 |description|String| Description of the resource |
 |displayName|String|Display name of the resource|
 |id|String|Resource ID|
-|type|String|Type of resource. Types include: `Group`, `ServicePrincipal`, `DirectoryRole`, `AzureRole`, `AccessPackageAssignmentPolicy` and `CustomDataProvidedResource`.|
+|type|String|Type of resource. Types include: `Group`, `ServicePrincipal`, `DirectoryRole`, `AzureRole`, `AccessPackageAssignmentPolicy`, and `CustomDataProvidedResource`.|
 
 ## Relationships
 None.
