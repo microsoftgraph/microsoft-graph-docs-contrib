@@ -36,7 +36,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-PATCH /verifiableCredentialsAuthenticationMethodConfiguration
+PATCH /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/VerifiableCredentials/{id}
 ```
 
 ## Request headers
@@ -59,7 +59,7 @@ PATCH /verifiableCredentialsAuthenticationMethodConfiguration
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [verifiableCredentialsAuthenticationMethodConfiguration](../resources/verifiablecredentialsauthenticationmethodconfiguration.md) object in the response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
@@ -72,7 +72,7 @@ The following example shows a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/VerifiableCredentials/
+PATCH https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/VerifiableCredentials/{id}
 Content-Type: application/json
 
 {
@@ -94,7 +94,6 @@ Content-Type: application/json
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true

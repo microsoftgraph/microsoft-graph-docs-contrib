@@ -17,7 +17,6 @@ Namespace: microsoft.graph
 
 Verified ID profiles defining set of properties and usage patterns. 
 
-
 Inherits from [entity](../resources/entity.md).
 
 
@@ -33,11 +32,11 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|description|String| Description for the verified Id profile. Required.|
+|description|String| Description for the verified ID profile. Required.|
 |faceCheckConfiguration|[faceCheckConfiguration](../resources/facecheckconfiguration.md)| Set of properties configuring Entra Verified ID Face Check behavior. Required.|
 |id|String| Profile identifier. Inherited from [entity](../resources/entity.md).|
 |lastModifiedDateTime|DateTimeOffset|DateTime the profile was last modified. Optional.|
-|name|String| Display name for the verified Id profile. Required.|
+|name|String| Display name for the verified ID profile. Required.|
 |priority|Int32|Defines profile processing priority if multiple profiles are configured. Optional.|
 |state|verifiedIdProfileState| Enablement state for the profile. The possible values are: `enabled`, `disabled`, `unknownFutureValue`. Required.|
 |verifierDid|String| Decentralized Identifier (DID) string that represents the verifier in the verifiable credential exchange. Required.|

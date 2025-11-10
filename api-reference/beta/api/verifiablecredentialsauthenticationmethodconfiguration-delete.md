@@ -36,7 +36,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-DELETE /verifiableCredentialsAuthenticationMethodConfiguration
+DELETE /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/VerifiableCredentials/{id}
 ```
 
 ## Request headers
@@ -71,7 +71,6 @@ DELETE https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/aut
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true

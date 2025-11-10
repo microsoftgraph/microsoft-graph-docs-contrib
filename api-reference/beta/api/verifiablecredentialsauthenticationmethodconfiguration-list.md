@@ -36,7 +36,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /verifiableCredentialsAuthenticationMethodConfiguration
+GET /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/VerifiableCredentials
 ```
 
 ## Optional query parameters

@@ -36,7 +36,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /verifiableCredentialsAuthenticationMethodConfiguration
+GET /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/VerifiableCredentials/{id}
 ```
 
 ## Optional query parameters
@@ -68,7 +68,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/VerifiableCredentials
+GET https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/VerifiableCredentials/{id}
 ```
 
 

@@ -16,14 +16,13 @@ Namespace: microsoft.graph
 
 Verified ID profile configuration defining set of properties of a specific Verified ID credential. 
 
-
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|acceptedIssuer|String|Trusted Verified ID issuer|
-|claimBindings|[claimBinding](../resources/claimbinding.md) collection| Claim bindings from Verified ID to source attributes|
+|acceptedIssuer|String|Trusted Verified ID issuer.|
+|claimBindings|[claimBinding](../resources/claimbinding.md) collection| Claim bindings from Verified ID to source attributes.|
 |claimBindingSource|claimBindingSource| Source to validate against Verified ID claims. The possible values are: `directory`, `unknownFutureValue`.|
-|type|String|Verified ID type|
+|type|String|Verified ID type.|
 
 ## Relationships
 None.

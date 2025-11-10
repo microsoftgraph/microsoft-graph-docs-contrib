@@ -67,7 +67,7 @@ PATCH /identity/verifiedId/profiles/{verifiedIdProfileId}
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [verifiedIdProfile](../resources/verifiedidprofile.md) object in the response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
@@ -98,7 +98,6 @@ Content-Type: application/json
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true

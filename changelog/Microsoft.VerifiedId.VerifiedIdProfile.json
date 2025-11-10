@@ -79,8 +79,8 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2025-11-10T19:06:39.3153588Z",
-      "WorkloadArea": "VerifiedID",
-      "SubArea": ""
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
     }
   ]
 }
