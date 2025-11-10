@@ -24,7 +24,7 @@ This resource is an open type that allows additional properties beyond those doc
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List](../api/agentidentityblueprint-list.md)|[agentIdentityBlueprint](../resources/agentidentityblueprint.md) collection|Get a list of the agentIdentityBlueprint objects and their properties.|
-|[Create](../api/agentIdentityblueprint-post.md) | [agentIdentityBlueprint](../resources/agentidentityblueprint.md) | Create (register) a new agentIdentityBlueprint.|
+|[Create](../api/agentidentityblueprint-post.md) | [agentIdentityBlueprint](../resources/agentidentityblueprint.md) | Create (register) a new agentIdentityBlueprint.|
 |[Get](../api/agentidentityblueprint-get.md)|[agentIdentityBlueprint](../resources/agentidentityblueprint.md)|Read the properties and relationships of [agentIdentityBlueprint](../resources/agentidentityblueprint.md) object.|
 |[Update](../api/agentidentityblueprint-update.md)|[agentIdentityBlueprint](../resources/agentidentityblueprint.md)|Update the properties of an agentIdentityBlueprint object.|
 |[Upsert](../api/agentidentityblueprint-upsert.md) | [agentIdentityBlueprint](../resources/agentidentityblueprint.md) | Create a new agent identity blueprint if it doesn't exist, or update the properties of an existing blueprint.|
