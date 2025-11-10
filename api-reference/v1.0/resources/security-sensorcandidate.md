@@ -2,7 +2,7 @@
 title: "sensorCandidate resource type"
 description: "Represents a Microsoft Defender for Identity sensor that's ready to be activated."
 author: "SamuelBenichou"
-ms.date: 07/13/2025
+ms.date: 10/22/2025
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: resourcePageType
@@ -12,17 +12,15 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.security
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Represents a Microsoft Defender for Identity sensor that's ready to be activated.
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).
 
 ## Methods
-|Method| Return type                                                                                      |Description|
-|:---|:-------------------------------------------------------------------------------------------------|:---|
-|[List](../api/security-identitycontainer-list-sensorcandidates.md)| [microsoft.graph.security.sensorCandidates](../resources/security-sensorcandidate.md) collection |Get a list of the sensorCandidate objects and their properties.|
-|[Activate](../api/security-sensorcandidate-activate.md)| None                                                                                             |Activate Microsoft Defender for Identity sensors.|
+| Method                                                             | Return type                                                                                      |Description|
+|:-------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------|:---|
+| [List](../api/security-identitycontainer-list-sensorcandidates.md) | [microsoft.graph.security.sensorCandidates](../resources/security-sensorcandidate.md) collection |Get a list of the sensorCandidate objects and their properties.|
+| [Activate](../api/security-sensorcandidate-activate.md)            | None                                                                                             |Activate Microsoft Defender for Identity sensors.|
 
 ## Properties
 |Property|Type| Description                                                                                                                                                    |
