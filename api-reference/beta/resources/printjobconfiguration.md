@@ -32,7 +32,7 @@ A group of settings that a printer should use to print a job.
 |mediaSize|String|The media sizeto use when printing. Supports standard size names for ISO and ANSI media sizes. Valid values are listed in the [printerCapabilities](printercapabilities.md#mediasizes-values) topic.|
 |margin|[printMargin](printmargin.md)|The margin settings to use when printing.|
 |mediaType|String|The default media (such as paper) type to print the document on.|
-|finishings|printFinishing collection|Finishing processes to use when printing.|
+| finishings | [printFinishing](#printfinishing-values) collection | Finishing processes to use when printing. Possible values are: `none`, `staple`, `punch`, `cover`, `bind`, `saddleStitch`, `stitchEdge`, `stapleTopLeft`, `stapleBottomLeft`, `stapleTopRight`, `stapleBottomRight`, `stitchLeftEdge`, `stitchTopEdge`, `stitchRightEdge`, `stitchBottomEdge`, `stapleDualLeft`, `stapleDualTop`, `stapleDualRight`, `stapleDualBottom`, `unknownFutureValue`. You must use the `Prefer: include-unknown-enum-members` request header to get the following values in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerottom`, `bindLeft`, `bindTop`, `bindRight`, `bindBottom`, `foldAccordion`, `foldDoubleGate`, `foldGate`, `foldHalf`, `foldHalfZ`, `foldLeftGate`, `foldLetter`, `foldParallel`, `foldPoster`, `foldRightGate`, `foldZ`, `foldEngineeringZ`, `punchTopLeft`, `punchBottomLeft`, `punchTopRight`, `punchBottomRight`, `punchDualLeft`, `punchDualTop`, `punchDualRight`, `punchDualBottom`, `punchTripleLeft`, `punchTripleTop`, `punchTripleRight`, `punchTripleBottom`, `punchQuadLeft`, `punchQuadTop`, `punchQuadRight`, `punchQuadBottom`, `fold`, `trim`, `bale`, `bookletMaker`, `coat`, `laminate`, `trimAfterPages`, `trimAfterDocuments`, `trimAfterCopies`, `trimAfterJob`.|
 |pagesPerSheet|Int32|The number of document pages to print on each sheet.
 |multipageLayout|printMultipageLayout|The direction to lay out pages when multiple pages are being printed per sheet. Valid values are described in the following table.|
 |collate|Boolean|Whether the printer should collate pages when printing multiple copies of a multi-page document.|
@@ -83,74 +83,74 @@ A group of settings that a printer should use to print a job.
 
 ### printFinishing values
 
-|Member|Value|Description|
-|:---|:---|:---|
-|none|3|No finishings. Including this value is equivalent to providing an empty collection of finishings.|
-|staple|4|Staple the document using the printer's default stapling configuration.|
-|punch|5|Hole punches the document using the printer's default hole punch configuration.|
-|cover|6|Apply a cover to the document.|
-|bind|7|Bind the document using the printer's default binding configuration.|
-|saddleStitch|8|Saddle-stich the document using the printer's default stitching configuration.|
-|stitchEdge|9|Edge-stitch the document using the printer's default stitching configuration.|
-|stapleTopLeft|20|Staple the document in the top-left corner.|
-|stapleBottomLeft|21|Staple the document in the bottom-left corner.|
-|stapleTopRight|22|Staple the document in the top-right corner.|
-|stapleBottomRight|23|Staple the document in the bottom-right corner.|
-|stitchLeftEdge|24|Edge-stitch the document along the left edge.|
-|stitchTopEdge|25|Edge-stitch the document along the top edge.|
-|stitchRightEdge|26|Edge-stitch the document along the right edge.|
-|stitchBottomEdge|27|Edge-stitch the document along the bottom edge.|
-|stapleDualLeft|28|Staple the document twice along the left edge.|
-|stapleDualTop|29|Staple the document twice along the top edge.|
-|stapleDualRight|30|Staple the document twice along the right edge.|
-|stapleDualBottom|31|Staple the document twice along the bottom edge.|
-|unknownFutureValue|32|Evolvable enumeration sentinel value. Don't use.|
-|stapleTripleLeft|33| Bind the Document(s) with three staples (wire stitches) along the left edge.|
-|stapleTripleTop|34| Bind the Document(s) with three staples (wire stitches) along the top edge.|
-|stapleTripleRight|35| Bind the Document(s) with three staples (wire stitches) along the right edge.|
-|stapleTripleBottom|36| Bind the Document(s) with three staples (wire stitches) along the bottom edge.|
-|bindLeft|37| Bind the Document(s) along the left edge; the type of the binding is site defined. |
-|bindTop|38| Bind the Document(s) along the top edge; the type of the binding is site defined.|
-|bindRight|39| Bind the Document(s) along the right edge; the type of the binding is site defined.|
-|bindBottom|40| Bind the Document(s) along the bottom edge; the type of the binding is site defined. |
-|foldAccordion|41| Accordion-fold the hardcopy output vertically into four sections.|
-|foldDoubleGate|42| Fold the top and bottom quarters of the hardcopy output towards the midline, then fold in half vertically.|
-|foldGate|43| Fold the top and bottom quarters of the hardcopy output towards the midline.|
-|foldHalf|44| Fold the hardcopy output in half vertically.|
-|foldHalfZ|45| Fold the hardcopy output in half horizontally, then Z-fold the paper vertically into three sections.|
-|foldLeftGate|46| Fold the top quarter of the hardcopy output towards the midline.|
-|foldLetter|47| Fold the hardcopy output into three sections vertically; sometimes also known as a C fold. |
-|foldParallel|48| Fold the hardcopy output in half vertically two times, yielding four sections.|
-|foldPoster|49| Fold the hardcopy output in half horizontally and vertically; sometimes also called a cross fold.|
-|foldRightGate|50| Fold the bottom quarter of the hardcopy output towards the midline.|
-|foldZ|51| Fold the hardcopy output vertically into three sections, forming a Z.|
-|foldEngineeringZ|52| Fold the hardcopy output vertically into three sections, forming a Z but leaving room for binding, punching, or stapling along the top edge.|
-|punchTopLeft|53| Punch a single hole in the top left of the hardcopy output.|
-|punchBottomLeft|54| Punch a single hole in the bottom left of the hardcopy output.|
-|punchTopRight|55| Punch a single hole in the top right of the hardcopy output.|
-|punchBottomRight|56| Punch a single hole in the bottom right of the hardcopy output.|
-|punchDualLeft|57| Punch two holes on the left side of the hardcopy output.|
-|punchDualTop|58| Punch two holes on the top side of the hardcopy output.|
-|punchDualRight|59| Punch two holes on the right side of the hardcopy output.|
-|punchDualBottom|60| Punch two holes on the bottom side of the hardcopy output.|
-|punchTripleLeft|61| Punch three holes on the left side of the hardcopy output.|
-|punchTripleTop|62| Punch three holes on the top side of the hardcopy output.|
-|punchTripleRight|63| Punch three holes on the right side of the hardcopy output.|
-|punchTripleBottom|64| Punch three holes on the bottom side of the hardcopy output.|
-|punchQuadLeft|65| Punch four holes on the left side of the hardcopy output.|
-|punchQuadTop|66| Punch four holes on the top side of the hardcopy output.|
-|punchQuadRight|67| Punch four holes on the right side of the hardcopy output.|
-|punchQuadBottom|68| Punch four holes on the bottom side of the hardcopy output.|
-|fold|69|  Fold the hardcopy output.|
-|trim|70|  Trim the hardcopy output on one or more edges. |
-|bale|71|  Bale the set(s). |
-|bookletMaker|72|  Deliver the set(s) to the signature booklet maker. |
-|coat|73|  Apply a protective liquid or powdered coating to each sheet. |
-|laminate|74|  Apply a protective (solid) material to each sheet. |
-|trimAfterPages|75|  Trim output after each page. |
-|trimAfterDocuments|76|  Trim output after each document. |
-|trimAfterCopies|77|  Trim output after each set. |
-|trimAfterJob|78|  Trim output after job. |
+|Member|Description|
+|:---|:---|
+|none|No finishings. Including this value is equivalent to providing an empty collection of finishings.|
+|staple|Staple the document using the printer's default stapling configuration.|
+|punch|Hole punches the document using the printer's default hole punch configuration.|
+|cover|Apply a cover to the document.|
+|bind|Bind the document using the printer's default binding configuration.|
+|saddleStitch|Saddle-stich the document using the printer's default stitching configuration.|
+|stitchEdge|Edge-stitch the document using the printer's default stitching configuration.|
+|stapleTopLeft|Staple the document in the top-left corner.|
+|stapleBottomLeft|Staple the document in the bottom-left corner.|
+|stapleTopRight|Staple the document in the top-right corner.|
+|stapleBottomRight|Staple the document in the bottom-right corner.|
+|stitchLeftEdge|Edge-stitch the document along the left edge.|
+|stitchTopEdge|Edge-stitch the document along the top edge.|
+|stitchRightEdge|Edge-stitch the document along the right edge.|
+|stitchBottomEdge|Edge-stitch the document along the bottom edge.|
+|stapleDualLeft|Staple the document twice along the left edge.|
+|stapleDualTop|Staple the document twice along the top edge.|
+|stapleDualRight|Staple the document twice along the right edge.|
+|stapleDualBottom|Staple the document twice along the bottom edge.|
+|unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
+|stapleTripleLeft|Bind the document or documents with three staples (wire stitches) along the left edge.|
+|stapleTripleTop|Bind the document or documents with three staples (wire stitches) along the top edge.|
+|stapleTripleRight|Bind the document or documents with three staples (wire stitches) along the right edge.|
+|stapleTripleBottom|Bind the document or documents with three staples (wire stitches) along the bottom edge.|
+|bindLeft|Bind the document or documents along the left edge; the type of the binding is site-defined.|
+|bindTop|Bind the document or documents along the top edge; the type of the binding is site-defined.|
+|bindRight|Bind the document or documents along the right edge; the type of the binding is site-defined.|
+|bindBottom|Bind the document or documents along the bottom edge; the type of the binding is site-defined.|
+|foldAccordion|Accordion-fold the hardcopy output vertically into four sections.|
+|foldDoubleGate|Fold the top and bottom quarters of the hardcopy output towards the midline, then fold in half vertically.|
+|foldGate|Fold the top and bottom quarters of the hardcopy output towards the midline.|
+|foldHalf|Fold the hardcopy output in half vertically.|
+|foldHalfZ|Fold the hardcopy output in half horizontally, then Z-fold the paper vertically into three sections.|
+|foldLeftGate|Fold the top quarter of the hardcopy output towards the midline.|
+|foldLetter|Fold the hardcopy output into three sections vertically; sometimes also known as a C fold.|
+|foldParallel|Fold the hardcopy output in half vertically two times, yielding four sections.|
+|foldPoster|Fold the hardcopy output in half horizontally and vertically; sometimes also called a cross fold.|
+|foldRightGate|Fold the bottom quarter of the hardcopy output towards the midline.|
+|foldZ|Fold the hardcopy output vertically into three sections, forming a Z.|
+|foldEngineeringZ|Fold the hardcopy output vertically into three sections, forming a Z but leaving room for binding, punching, or stapling along the top edge.|
+|punchTopLeft|Punch a single hole in the top left of the hardcopy output.|
+|punchBottomLeft|Punch a single hole in the bottom left of the hardcopy output.|
+|punchTopRight|Punch a single hole in the top right of the hardcopy output.|
+|punchBottomRight|Punch a single hole in the bottom right of the hardcopy output.|
+|punchDualLeft|Punch two holes on the left side of the hardcopy output.|
+|punchDualTop|Punch two holes on the top side of the hardcopy output.|
+|punchDualRight|Punch two holes on the right side of the hardcopy output.|
+|punchDualBottom|Punch two holes on the bottom side of the hardcopy output.|
+|punchTripleLeft|Punch three holes on the left side of the hardcopy output.|
+|punchTripleTop|Punch three holes on the top side of the hardcopy output.|
+|punchTripleRight|Punch three holes on the right side of the hardcopy output.|
+|punchTripleBottom|Punch three holes on the bottom side of the hardcopy output.|
+|punchQuadLeft|Punch four holes on the left side of the hardcopy output.|
+|punchQuadTop|Punch four holes on the top side of the hardcopy output.|
+|punchQuadRight|Punch four holes on the right side of the hardcopy output.|
+|punchQuadBottom|Punch four holes on the bottom side of the hardcopy output.|
+|fold|Fold the hardcopy output.|
+|trim|Trim the hardcopy output on one or more edges.|
+|bale|Bale the set or sets.|
+|bookletMaker|Deliver the set or sets to the signature booklet maker.|
+|coat|Apply a protective liquid or powdered coating to each sheet.|
+|laminate|Apply a protective (solid) material to each sheet.|
+|trimAfterPages|Trim output after each page.|
+|trimAfterDocuments|Trim output after each document.|
+|trimAfterCopies|Trim output after each set.|
+|trimAfterJob|Trim output after the job.|
 
 ### printMultipageLayout values
 
@@ -207,7 +207,7 @@ The following JSON representation shows the resource type.
   "mediaSize": "",
   "margin": {"@odata.type": "microsoft.graph.printMargin"},
   "mediaType": "",
-  "finishings": [{"@odata.type": "microsoft.graph.printFinishing"}],
+  "finishings": String collection,
   "pagesPerSheet": 12345,
   "multipageLayout": {"@odata.type": "microsoft.graph.printMultipageLayout"},
   "collate": true,
