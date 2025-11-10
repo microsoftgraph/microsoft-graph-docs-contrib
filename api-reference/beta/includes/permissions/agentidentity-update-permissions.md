@@ -8,5 +8,5 @@ ms.localizationpriority: medium
 |:---|:---|:---|
 |Delegated (work or school account)| AgentIdentity.EnableDiable.All | AgentIdentity.ReadWrite.All, Directory.ReadWrite.All  <br><br> Note: Directory.AccessAsUser.All cannot be used to perform this operation.|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|AgentIdentity.EnableDiable.All, AgentIdentity.CreateAsManager | AgentIdentity.ReadWrite.All, Directory.ReadWrite.All |
+|Application|AgentIdentity.EnableDisable.All, AgentIdentity.CreateAsManager | AgentIdentity.ReadWrite.All, Directory.ReadWrite.All |
 

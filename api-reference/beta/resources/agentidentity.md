@@ -48,12 +48,12 @@ This resource is an open type that allows additional properties beyond those doc
 |accountEnabled|Boolean|`true` if the agent identity account is enabled; otherwise, `false`. If set to `false`, then no users are able to sign in to this app, even if they're assigned to it. Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
 |agentIdentityBlueprintId|String|The unique identifier of the agent identity blueprint that defines the configuration for this agent identity.|
 |customSecurityAttributes|[customSecurityAttributeValue](../resources/customsecurityattributevalue.md)|An open complex type that holds the value of a custom security attribute that is assigned to a directory object. Nullable. Returned only on `$select`. Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
-|createdByAppId|String|The **appId** of the Application used to create the Agent Identity. Set internally by Microsoft Entra ID. Read-only. Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
+|createdByAppId|String|The **appId** of the application used to create the agent identity. Set internally by Microsoft Entra ID. Read-only. Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
 |createdDateTime|DateTimeOffset|The date and time the agent identity was created. Read-only. Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
 |disabledByMicrosoftStatus|String|Specifies whether Microsoft has disabled the registered Agent Identity Blueprint. Possible values are: `null` (default value), `NotDisabled`, and `DisabledDueToViolationOfServicesAgreement` (reasons may include suspicious, abusive, or malicious activity, or a violation of the Microsoft Services Agreement). Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
 |displayName|String|The display name for the agent identity. Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
 |id|String|The unique identifier for the agent identity. Inherited from [directoryObject](../resources/directoryobject.md). Key. Not nullable. Read-only. Inherited from [entity](../resources/entity.md).|
-|servicePrincipalType|String|Set to __ServiceIdentity__ for all Agent Identities. Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
+|servicePrincipalType|String|Set to __ServiceIdentity__ for all agent identities. Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
 |tags|String collection|Custom strings that can be used to categorize and identify the agent identity. Not nullable. The value is the union of strings set here and on the associated Agent Identity Blueprint entity's **tags** property. Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
 
 ## Relationships
