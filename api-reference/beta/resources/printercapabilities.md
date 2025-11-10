@@ -31,7 +31,7 @@ Represents the capabilities reported by a printer.
 |finishings|printFinishing collection|Finishing processes the printer supports for a printed document.|
 |mediaColors|String collection|The media (that is, paper) colors supported by the printer.|
 |mediaTypes|String collection|The media types supported by the printer.|
-|mediaSizes|String collection|The media sizes supported by the printer. Supports standard size names for ISO and ANSI media sizes. Valid values are in the following [table](#mediasizes-values).|
+|mediaSizes|String collection|The media sizes supported by the printer. Supports standard size names for ISO and ANSI media sizes. For the list of supported values, see [mediaSizes values](#mediasizes-values).|
 |pagesPerSheet|Int32 collection|Supported number of Input Pages to impose upon a single Impression.|
 |orientations|printOrientation collection|The print orientations supported by the printer. Valid values are described in the following table.|
 |inputBins|String collection|Supported input bins for the printer.|
