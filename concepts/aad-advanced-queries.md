@@ -147,6 +147,7 @@ The following table lists query scenarios on directory objects that advanced que
 > + Advanced queries don't currently support `$expand`.
 > + Azure AD B2C tenants don't currently support advanced query capabilities.
 > + To use advanced query capabilities in [batch requests](json-batching.md), specify the **ConsistencyLevel** header in the JSON body of the `POST` request.
+> + Using a mix of native and dynamic files is not supported.  For example:  /drives/{{ContainerID}}/items?$filter=listitem/fields/{{columnName}} eq '{{ColumnValue}}' AND name eq '{{DocumentName}}' should be formatted as:  /drives/{{ContainerID}}/items?$filter=listitem/fields/{{columnName}} eq '{{ColumnValue}}' AND listitem/fields/FileLeafRef eq '{{DocumentName}}'
 
 ## Support for filter by properties of Microsoft Entra ID (directory) objects
 
