@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PATCH /solutions/businessScenarios/{businessScenarioId}/planner/taskConfiguration
 ```
 
@@ -68,7 +68,7 @@ The following example shows a request.
   "sampleKeys": ["c5d514e6c6864911ac46c720affb6e4d"]
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/solutions/businessScenarios/c5d514e6c6864911ac46c720affb6e4d/planner/taskConfiguration
 Content-Type: application/json
 If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="

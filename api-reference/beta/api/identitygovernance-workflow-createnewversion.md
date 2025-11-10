@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /identityGovernance/lifecycleWorkflows/workflows/{workflowId}/createNewVersion
 
 ```
@@ -73,7 +73,7 @@ The following example shows a request.
   "name": "lifecycleworkflows_workflowthis.createnewversion"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workflows/{workflowId}/createNewVersion
 Content-Type: application/json
 Content-length: 631
@@ -159,7 +159,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.identityGovernance.workflow"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -217,7 +217,7 @@ The following example shows a request.
   "name": "lifecycleworkflows_workflowthis.createnewversion_customemail"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workflows/{workflowId}/createNewVersion
 Content-Type: application/json
 Content-length: 631
@@ -320,7 +320,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.identityGovernance.workflow"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
