@@ -3,7 +3,7 @@
     {
       "ChangeList": [
         {
-          "Id": "9f8e7d6c-5b4a-3210-fedc-ba9876543210",
+          "Id": "3e208e74-be6b-42e8-bf4c-837f11af3f48",
           "ApiChange": "Enumeration",
           "ChangedApiName": "placeFeatureEnablement",
           "ChangeType": "Addition",
@@ -11,7 +11,23 @@
           "Target": "placeFeatureEnablement"
         },
         {
-          "Id": "9f8e7d6c-5b4a-3210-fedc-ba9876543210",
+          "Id": "3e208e74-be6b-42e8-bf4c-837f11af3f48",
+          "ApiChange": "Resource",
+          "ChangedApiName": "offlinePlaceMode",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **offlinePlaceMode** resource.",
+          "Target": "offlinePlaceMode"
+        },
+        {
+          "Id": "3e208e74-be6b-42e8-bf4c-837f11af3f48",
+          "ApiChange": "Resource",
+          "ChangedApiName": "unavailablePlaceMode",
+          "ChangeType": "Addition",
+          "Description": "Added the [unavailablePlaceMode](https://learn.microsoft.com/en-us/graph/api/resources/unavailablePlaceMode?view=graph-rest-beta) resource.",
+          "Target": "unavailablePlaceMode"
+        },
+        {
+          "Id": "3e208e74-be6b-42e8-bf4c-837f11af3f48",
           "ApiChange": "Property",
           "ChangedApiName": "wifiState",
           "ChangeType": "Addition",
@@ -19,7 +35,7 @@
           "Target": "building"
         },
         {
-          "Id": "9f8e7d6c-5b4a-3210-fedc-ba9876543210",
+          "Id": "3e208e74-be6b-42e8-bf4c-837f11af3f48",
           "ApiChange": "Property",
           "ChangedApiName": "heightAdjustableState",
           "ChangeType": "Addition",
@@ -27,7 +43,23 @@
           "Target": "desk"
         },
         {
-          "Id": "9f8e7d6c-5b4a-3210-fedc-ba9876543210",
+          "Id": "3e208e74-be6b-42e8-bf4c-837f11af3f48",
+          "ApiChange": "Property",
+          "ChangedApiName": "placeId",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **placeId** property from the [place](https://learn.microsoft.com/en-us/graph/api/resources/place?view=graph-rest-beta) resource.",
+          "Target": "place"
+        },
+        {
+          "Id": "3e208e74-be6b-42e8-bf4c-837f11af3f48",
+          "ApiChange": "Property",
+          "ChangedApiName": "placeId",
+          "ChangeType": "Addition",
+          "Description": "Added the **placeId** property to the [room](https://learn.microsoft.com/en-us/graph/api/resources/room?view=graph-rest-beta) resource.",
+          "Target": "room"
+        },
+        {
+          "Id": "3e208e74-be6b-42e8-bf4c-837f11af3f48",
           "ApiChange": "Property",
           "ChangedApiName": "teamsEnabledState",
           "ChangeType": "Addition",
@@ -35,27 +67,19 @@
           "Target": "room"
         },
         {
-          "Id": "9f8e7d6c-5b4a-3210-fedc-ba9876543210",
-          "ApiChange": "Resource",
-          "ChangedApiName": "offlinePlaceMode",
-          "ChangeType": "Deletion",
-          "Description": "Removed the [offlinePlaceMode](https://learn.microsoft.com/en-us/graph/api/resources/offlinePlaceMode?view=graph-rest-beta) resource type.",
-          "Target": "offlinePlaceMode"
-        },
-        {
-          "Id": "9f8e7d6c-5b4a-3210-fedc-ba9876543210",
-          "ApiChange": "Resource",
-          "ChangedApiName": "unavailablePlaceMode",
+          "Id": "3e208e74-be6b-42e8-bf4c-837f11af3f48",
+          "ApiChange": "Property",
+          "ChangedApiName": "placeId",
           "ChangeType": "Addition",
-          "Description": "Added the [unavailablePlaceMode](https://learn.microsoft.com/en-us/graph/api/resources/unavailablePlaceMode?view=graph-rest-beta) resource type.",
-          "Target": "unavailablePlaceMode"
+          "Description": "Added the **placeId** property to the [workspace](https://learn.microsoft.com/en-us/graph/api/resources/workspace?view=graph-rest-beta) resource.",
+          "Target": "workspace"
         }
       ],
-      "Id": "9f8e7d6c-5b4a-3210-fedc-ba9876543210",
-      "Cloud": "Prod",
+      "Id": "3e208e74-be6b-42e8-bf4c-837f11af3f48",
+      "Cloud": "Review",
       "Version": "beta",
-      "CreatedDateTime": "2025-11-05T00:00:00.0000000Z",
-      "WorkloadArea": "Calendars",
+      "CreatedDateTime": "2025-10-31T02:12:56.5153318Z",
+      "WorkloadArea": "Calendar",
       "SubArea": "Places"
     },
     {
