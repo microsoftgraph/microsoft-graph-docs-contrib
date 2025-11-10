@@ -77,6 +77,13 @@ GET https://graph.microsoft.com/beta/serviceprincipals/bbec3106-565f-4907-941e-9
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.directoryObject"
+}
+-->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json

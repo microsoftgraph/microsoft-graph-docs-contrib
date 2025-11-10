@@ -8,7 +8,7 @@ ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 
-# agentIdentity: remove sponsors
+# Remove agentIdentity sponsors
 
 Namespace: microsoft.graph
 

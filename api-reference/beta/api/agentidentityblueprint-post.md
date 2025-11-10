@@ -1,5 +1,5 @@
 ---
-title: "Create agent identity blueprint"
+title: "Create agentIdentityBlueprint"
 description: "Create a new agent identity blueprint."
 author: "zallison22"
 ms.date: 10/27/2025
@@ -9,7 +9,7 @@ doc_type: apiPageType
 ---
 
 
-# Create agent identity blueprint
+# Create agentIdentityBlueprint
 
 Namespace: microsoft.graph
 

@@ -1,5 +1,5 @@
 ---
-title: "Create agent identity"
+title: "Create agentIdentity"
 description: "Create a new agent identity object."
 author: "zallison22"
 ms.date: 10/27/2025
@@ -9,7 +9,7 @@ doc_type: apiPageType
 ---
 
 
-# Create agent identity
+# Create agentIdentity
 
 Namespace: microsoft.graph
 

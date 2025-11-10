@@ -8,7 +8,7 @@ ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 
-# agentIdentityBlueprintPrincipal: Add sponsors
+# Add agentIdentityBlueprintPrincipal sponsors
 
 Namespace: microsoft.graph
 
