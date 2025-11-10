@@ -69,8 +69,7 @@ POST https://graph.microsoft.com/beta/servicePrincipals/{id}/microsoft.graph.age
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.directoryObject",
-  "deletedDateTime": "String (timestamp)"
+    "@odata.id": "https://graph.microsoft.com/v1.0/directoryObjects/{id}"
 }
 ```
 
