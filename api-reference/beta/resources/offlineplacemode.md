@@ -1,6 +1,6 @@
 ---
-title: "unavailablePlaceMode resource type"
-description: "Describes why a desk or a workspace has been marked as unavailable for booking."
+title: "offlinePlaceMode resource type"
+description: "Describes why a desk or a workspace has been marked as offline and unavailable for booking."
 author: tiwarisakshi02
 ms.date: 06/11/2025
 ms.localizationpriority: medium
