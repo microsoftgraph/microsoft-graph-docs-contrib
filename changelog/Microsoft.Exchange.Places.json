@@ -407,7 +407,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "offlinePlaceMode",
           "ChangeType": "Addition",
-          "Description": "Added the **offlinePlaceMode** resource type.",
+          "Description": "Added the [offlinePlaceMode](https://learn.microsoft.com/en-us/graph/api/resources/offlinePlaceMode?view=graph-rest-beta) resource type.",
           "Target": "offlinePlaceMode"
         },
         {
