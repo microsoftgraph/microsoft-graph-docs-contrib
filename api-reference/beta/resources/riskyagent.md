@@ -22,7 +22,7 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/identityprotectionroot-list-riskyagent.md)|[riskyAgent](../resources/riskyagent.md) collection|Get a list of the riskyAgent objects and their properties.|
+|[List](../api/riskyagent-list.md)|[riskyAgent](../resources/riskyagent.md) collection|Get a list of the riskyAgent objects and their properties.|
 |[Get](../api/riskyagent-get.md)|[riskyAgent](../resources/riskyagent.md)|Read the properties and relationships of [riskyAgent](../resources/riskyagent.md) object.|
 |[dismiss](../api/riskyagent-dismiss.md)|None|Dismiss the risk of one or more riskyAgent objects.|
 |[confirmCompromised](../api/riskyagent-confirmcompromised.md)|None|Confirm one or more riskyAgent objects as compromised.|
