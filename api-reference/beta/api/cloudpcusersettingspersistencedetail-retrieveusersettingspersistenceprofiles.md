@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the user storage list for Cloud PC user settings persistence under the selected [Cloud PC policy](../resources/cloudpcprovisioningpolicy.md) assignment.
+Retrieve the user storage list for Cloud PC [user settings persistence](../resources/cloudpcusersettingspersistencedetail.md) under the selected Cloud PC policy assignment.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -55,7 +55,7 @@ The following table shows the parameters that can be used with this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [retrieveUserSettingsPersistenceProfile](../resources/cloudpcusersettingspersistenceprofile.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [cloudPCUserSettingsPersistenceProfile](../resources/cloudpcusersettingspersistenceprofile.md) objects in the response body.
 
 ## Examples
 

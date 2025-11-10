@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the usage of Cloud PC user settings persistence in the selected [Cloud PC policy](../resources/cloudpcprovisioningpolicy.md) assignment.
+Retrieve the usage of Cloud PC [user settings persistence](../resources/cloudpcusersettingspersistencedetail.md) in the selected Cloud PC policy assignment.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
