@@ -3,7 +3,7 @@
     {
       "ChangeList": [
         {
-          "Id": "3e208e74-be6b-42e8-bf4c-837f11af3f48",
+          "Id": "32395157-c113-44fb-8f3c-80f8da0f2c3f",
           "ApiChange": "Enumeration",
           "ChangedApiName": "placeFeatureEnablement",
           "ChangeType": "Addition",
@@ -11,7 +11,7 @@
           "Target": "placeFeatureEnablement"
         },
         {
-          "Id": "3e208e74-be6b-42e8-bf4c-837f11af3f48",
+          "Id": "32395157-c113-44fb-8f3c-80f8da0f2c3f",
           "ApiChange": "Resource",
           "ChangedApiName": "offlinePlaceMode",
           "ChangeType": "Deletion",
@@ -19,7 +19,7 @@
           "Target": "offlinePlaceMode"
         },
         {
-          "Id": "3e208e74-be6b-42e8-bf4c-837f11af3f48",
+          "Id": "32395157-c113-44fb-8f3c-80f8da0f2c3f",
           "ApiChange": "Resource",
           "ChangedApiName": "unavailablePlaceMode",
           "ChangeType": "Addition",
@@ -27,7 +27,7 @@
           "Target": "unavailablePlaceMode"
         },
         {
-          "Id": "3e208e74-be6b-42e8-bf4c-837f11af3f48",
+          "Id": "32395157-c113-44fb-8f3c-80f8da0f2c3f",
           "ApiChange": "Property",
           "ChangedApiName": "wifiState",
           "ChangeType": "Addition",
@@ -35,7 +35,7 @@
           "Target": "building"
         },
         {
-          "Id": "3e208e74-be6b-42e8-bf4c-837f11af3f48",
+          "Id": "32395157-c113-44fb-8f3c-80f8da0f2c3f",
           "ApiChange": "Property",
           "ChangedApiName": "heightAdjustableState",
           "ChangeType": "Addition",
@@ -43,7 +43,7 @@
           "Target": "desk"
         },
         {
-          "Id": "3e208e74-be6b-42e8-bf4c-837f11af3f48",
+          "Id": "32395157-c113-44fb-8f3c-80f8da0f2c3f",
           "ApiChange": "Property",
           "ChangedApiName": "placeId",
           "ChangeType": "Deletion",
@@ -51,7 +51,7 @@
           "Target": "place"
         },
         {
-          "Id": "3e208e74-be6b-42e8-bf4c-837f11af3f48",
+          "Id": "32395157-c113-44fb-8f3c-80f8da0f2c3f",
           "ApiChange": "Property",
           "ChangedApiName": "placeId",
           "ChangeType": "Addition",
@@ -59,7 +59,7 @@
           "Target": "room"
         },
         {
-          "Id": "3e208e74-be6b-42e8-bf4c-837f11af3f48",
+          "Id": "32395157-c113-44fb-8f3c-80f8da0f2c3f",
           "ApiChange": "Property",
           "ChangedApiName": "teamsEnabledState",
           "ChangeType": "Addition",
@@ -67,7 +67,7 @@
           "Target": "room"
         },
         {
-          "Id": "3e208e74-be6b-42e8-bf4c-837f11af3f48",
+          "Id": "32395157-c113-44fb-8f3c-80f8da0f2c3f",
           "ApiChange": "Property",
           "ChangedApiName": "placeId",
           "ChangeType": "Addition",
@@ -75,10 +75,10 @@
           "Target": "workspace"
         }
       ],
-      "Id": "3e208e74-be6b-42e8-bf4c-837f11af3f48",
-      "Cloud": "Review",
+      "Id": "32395157-c113-44fb-8f3c-80f8da0f2c3f",
+      "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2025-10-31T02:12:56.5153318Z",
+      "CreatedDateTime": "2025-11-10T04:28:14.4935787Z",
       "WorkloadArea": "Calendar",
       "SubArea": "Places"
     },
