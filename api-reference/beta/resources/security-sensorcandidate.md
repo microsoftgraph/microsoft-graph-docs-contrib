@@ -1,6 +1,6 @@
 ---
 title: "sensorCandidate resource type"
-description: "Represents a Microsoft Defender for Identity sensor that is ready to be activated."
+description: "Represents a Microsoft Defender for Identity sensor that's ready to be activated."
 author: "SamuelBenichou"
 ms.date: 07/13/2025
 ms.localizationpriority: medium
@@ -30,7 +30,7 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 |computerDnsName|String| The DNS name of the computer associated with the sensor.                                                                                                       |
 |id|String| The unique identifier for the sensor candidate. Inherited from [microsoft.graph.entity](../resources/entity.md). Inherits from [entity](../resources/entity.md)|
 |lastSeenDateTime|DateTimeOffset| The date and time when the sensor was last seen.                                                                                                               |
-|senseClientVersion|String| The version of the Defender for Identity sensor client.                                                                                                        |
+|senseClientVersion|String| The version of the Defender for Identity sensor client. Supports `$filter` (`eq`).                                                                                                       |
 
 ## Relationships
 None.
