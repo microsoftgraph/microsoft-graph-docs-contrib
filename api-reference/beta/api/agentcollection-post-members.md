@@ -46,30 +46,7 @@ POST /agentRegistry/agentInstances/{agentInstanceId}/collections/{agentCollectio
 
 ## Request body
 
-In the request body, supply a JSON representation of the [agentInstance](../resources/agentinstance.md) object.
-
-You can specify the following properties when creating an **agentInstance**.
-
-**TODO: Remove properties that don't apply**
-|Property|Type|Description|
-|:---|:---|:---|
-|ownerIds|String collection|**TODO: Add Description** Required.|
-|managedBy|String|**TODO: Add Description** Optional.|
-|originatingStore|String|**TODO: Add Description** Optional.|
-|createdBy|String|**TODO: Add Description** Optional.|
-|displayName|String|**TODO: Add Description** Required.|
-|sourceAgentId|String|**TODO: Add Description** Optional.|
-|agentIdentityBlueprintId|String|**TODO: Add Description** Optional.|
-|agentIdentityId|String|**TODO: Add Description** Optional.|
-|agentUserId|String|**TODO: Add Description** Optional.|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Optional.|
-|lastModifiedDateTime|DateTimeOffset|**TODO: Add Description** Optional.|
-|url|String|**TODO: Add Description** Optional.|
-|preferredTransport|String|**TODO: Add Description** Optional.|
-|additionalInterfaces|[agentInterface](../resources/agentinterface.md) collection|**TODO: Add Description** Optional.|
-|signatures|[agentCardSignature](../resources/agentcardsignature.md) collection|**TODO: Add Description** Optional.|
-
-
+In the request body, supply a JSON object that contains a **@odata.id** property with a reference by ID to an agent instance.
 
 ## Response
 
@@ -90,30 +67,7 @@ POST https://graph.microsoft.com/beta/agentRegistry/agentInstances/{agentInstanc
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.agentInstance",
-  "ownerIds": [
-    "String"
-  ],
-  "managedBy": "String",
-  "originatingStore": "String",
-  "createdBy": "String",
-  "displayName": "String",
-  "sourceAgentId": "String",
-  "agentIdentityBlueprintId": "String",
-  "agentIdentityId": "String",
-  "agentUserId": "String",
-  "url": "String",
-  "preferredTransport": "String",
-  "additionalInterfaces": [
-    {
-      "@odata.type": "microsoft.graph.agentInterface"
-    }
-  ],
-  "signatures": [
-    {
-      "@odata.type": "microsoft.graph.agentCardSignature"
-    }
-  ]
+  "@odata.id": "https://graph.microsoft.com/beta/agentRegistry/agentInstances('agent-instance-id')"
 }
 ```
 
@@ -130,36 +84,5 @@ The following example shows the response.
 -->
 ``` http
 HTTP/1.1 204 No Content
-Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.agentInstance",
-  "id": "3d562f1c-8afe-22af-1edb-f273075e268e",
-  "ownerIds": [
-    "String"
-  ],
-  "managedBy": "String",
-  "originatingStore": "String",
-  "createdBy": "String",
-  "displayName": "String",
-  "sourceAgentId": "String",
-  "agentIdentityBlueprintId": "String",
-  "agentIdentityId": "String",
-  "agentUserId": "String",
-  "createdDateTime": "String (timestamp)",
-  "lastModifiedDateTime": "String (timestamp)",
-  "url": "String",
-  "preferredTransport": "String",
-  "additionalInterfaces": [
-    {
-      "@odata.type": "microsoft.graph.agentInterface"
-    }
-  ],
-  "signatures": [
-    {
-      "@odata.type": "microsoft.graph.agentCardSignature"
-    }
-  ]
-}
 ```
 

@@ -89,16 +89,10 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.agentCollection",
       "id": "c2d9e3ff-01a4-890c-f2bc-8edd3bc2eb24",
-      "ownerIds": [
-        "String"
-      ],
       "managedBy": "String",
       "originatingStore": "String",
-      "createdBy": "String",
       "displayName": "String",
-      "description": "String",
-      "createdDateTime": "String (timestamp)",
-      "lastModifiedDateTime": "String (timestamp)"
+      "description": "String"
     }
   ]
 }

@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add a useful description.**
+Returns the list of agent instance members for the specified collection.
 
 ## Permissions
 
@@ -89,31 +89,11 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.agentInstance",
       "id": "3d562f1c-8afe-22af-1edb-f273075e268e",
-      "ownerIds": [
-        "String"
-      ],
-      "managedBy": "String",
       "originatingStore": "String",
-      "createdBy": "String",
       "displayName": "String",
-      "sourceAgentId": "String",
       "agentIdentityBlueprintId": "String",
       "agentIdentityId": "String",
-      "agentUserId": "String",
-      "createdDateTime": "String (timestamp)",
-      "lastModifiedDateTime": "String (timestamp)",
-      "url": "String",
-      "preferredTransport": "String",
-      "additionalInterfaces": [
-        {
-          "@odata.type": "microsoft.graph.agentInterface"
-        }
-      ],
-      "signatures": [
-        {
-          "@odata.type": "microsoft.graph.agentCardSignature"
-        }
-      ]
+      "agentUserId": "String"
     }
   ]
 }

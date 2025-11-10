@@ -49,17 +49,16 @@ PATCH /agentRegistry/agentCollections/{agentCollectionId}
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
 
-**TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
-|ownerIds|String collection|**TODO: Add Description** Required.|
-|managedBy|String|**TODO: Add Description** Optional.|
-|originatingStore|String|**TODO: Add Description** Optional.|
-|createdBy|String|**TODO: Add Description** Optional.|
-|displayName|String|**TODO: Add Description** Required.|
-|description|String|**TODO: Add Description** Optional.|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Optional.|
-|lastModifiedDateTime|DateTimeOffset|**TODO: Add Description** Optional.|
+|ownerIds|String collection|IDs of owners allowed to manage the collection. Required.|
+|managedBy|String|Application (service principal) id managing the collection. Optional.|
+|originatingStore|String| Source system/store where the collection originated. Optional.|
+|createdBy|String|User who created the collection. Optional.|
+|displayName|String|Friendly name of the collection. Required.|
+|description|String|Description / purpose of the collection. Optional.|
+|createdDateTime|DateTimeOffset|Timestamp when created. Optional.|
+|lastModifiedDateTime|DateTimeOffset|Timestamp of last update. Optional.|
 
 
 

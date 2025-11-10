@@ -49,29 +49,25 @@ PATCH /agentRegistry/agentCardManifests/{agentCardManifestId}
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
 
-**TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
-|ownerIds|String collection|**TODO: Add Description** Required.|
-|managedBy|String|**TODO: Add Description** Optional.|
-|originatingStore|String|**TODO: Add Description** Optional.|
-|createdBy|String|**TODO: Add Description** Optional.|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Optional.|
-|lastModifiedDateTime|DateTimeOffset|**TODO: Add Description** Optional.|
-|protocolVersion|String|**TODO: Add Description** Required.|
-|displayName|String|**TODO: Add Description** Required.|
-|description|String|**TODO: Add Description** Required.|
-|iconUrl|String|**TODO: Add Description** Optional.|
-|provider|[agentProvider](../resources/agentprovider.md)|**TODO: Add Description** Optional.|
-|version|String|**TODO: Add Description** Required.|
-|documentationUrl|String|**TODO: Add Description** Optional.|
-|capabilities|[agentCapabilities](../resources/agentcapabilities.md)|**TODO: Add Description** Required.|
-|securitySchemes|[securitySchemes](../resources/securityschemes.md)|**TODO: Add Description** Optional.|
-|security|[securityRequirement](../resources/securityrequirement.md) collection|**TODO: Add Description** Optional.|
-|defaultInputModes|String collection|**TODO: Add Description** Required.|
-|defaultOutputModes|String collection|**TODO: Add Description** Required.|
-|skills|[agentSkill](../resources/agentskill.md) collection|**TODO: Add Description** Required.|
-|supportsAuthenticatedExtendedCard|Boolean|**TODO: Add Description** Required.|
+|displayName|String|Display name of the agent. Optional.|
+|description|String|Description of the agent's purpose. Optional.|
+|iconUrl|String|URL to agent's icon image. Optional.|
+|protocolVersion|String|Protocol version supported by the agent. Optional.|
+|version|String|Version of the agent implementation. Optional.|
+|documentationUrl|String|URL to agent's documentation. Optional.|
+|defaultInputModes|String collection|Default input modes supported. Optional.|
+|defaultOutputModes|String collection|Default output modes supported. Optional.|
+|provider|[agentProvider](../resources/agentprovider.md)|Information about the organization providing the agent. Optional.|
+|securitySchemes|[securitySchemes](../resources/securityschemes.md)|Dictionary of security scheme definitions keyed by scheme name. Optional.|
+|security|[securityRequirement](../resources/securityrequirement.md) collection|Security requirements - array of security scheme references. Optional.|
+|capabilities|[agentCapabilities](../resources/agentcapabilities.md)|Specific capabilities supported by the agent. Optional.|
+|skills|[agentSkill](../resources/agentskill.md) collection|Skills/capabilities that the agent can perform. Optional.|
+|supportsAuthenticatedExtendedCard|Boolean|Whether agent supports authenticated extended card retrieval. Optional.|
+|ownerIds|String collection|List of owner identifiers. Optional.|
+|managedBy|String|Application identifier managing this manifest. Optional.|
+|originatingStore|String|Name of the store/system where agent originated. Optional.|
 
 
 
@@ -195,4 +191,3 @@ Content-Type: application/json
   "supportsAuthenticatedExtendedCard": "Boolean"
 }
 ```
-
