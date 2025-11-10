@@ -8,15 +8,13 @@ ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 
-# agentIdentity: Add owners
+# Add agentIdentity owners
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Add an owner for the [agentIdentity](../resources/agentIdentity.md). Agent identity owners can be users, the agent identity itself, or other service principals.
-
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -35,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 
 ```http
-POST /servicePrincipals/{id}/Microsoft.Graph.AgentIdentity/owners/$ref
+POST /servicePrincipals/{id}/microsoft.graph.agentIdentity/owners/$ref
 ```
 
 ## Request headers
@@ -64,7 +62,7 @@ The following example shows a request.
   "name": "create_agent_identity_owner"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/servicePrincipals/{id}/Microsoft.Graph.AgentIdentity/owners/$ref
+POST https://graph.microsoft.com/beta/servicePrincipals/{id}/microsoft.graph.agentIdentity/owners/$ref
 Content-type: application/json
 
 {

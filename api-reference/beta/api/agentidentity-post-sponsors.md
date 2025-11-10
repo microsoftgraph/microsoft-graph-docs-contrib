@@ -8,13 +8,13 @@ ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 
-# agentIdentity: Add sponsors
+# Add agentIdentity sponsors
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Add sponsors by posting to the sponsors collection. Sponsors can include users or groups. Sponsors may not include service principals or agent users.
+Add sponsors to an [agentIdentity](../resources/agentidentity.md). Sponsors can include users or groups. Sponsors may not include service principals or agent users.
 
 ## Permissions
 
@@ -36,7 +36,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-POST /servicePrincipals/{id}/Microsoft.Graph.AgentIdentity/sponsors/$ref
+POST /servicePrincipals/{id}/microsoft.graph.agentIdentity/sponsors/$ref
 ```
 
 ## Request headers
@@ -66,7 +66,7 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/servicePrincipals/{id}/Microsoft.Graph.AgentIdentity/sponsors/$ref
+POST https://graph.microsoft.com/beta/servicePrincipals/{id}/microsoft.graph.agentIdentity/sponsors/$ref
 Content-Type: application/json
 
 {
@@ -78,7 +78,6 @@ Content-Type: application/json
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response"
 }

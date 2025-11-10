@@ -1,6 +1,6 @@
 ---
 title: "List agentIdentity ownedObjects"
-description: "Retrieve a list of objects owned by the agentIdentity.  This could include applications or groups."
+description: "Retrieve a list of objects owned by the agentIdentity. This could include applications or groups."
 author: "zallison22"
 ms.date: 10/27/2025
 ms.localizationpriority: medium
@@ -8,15 +8,13 @@ ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 
-# agentIdentity: List ownedObjects
+# List agentIdentity ownedObjects
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of objects owned by the [agentIdentity](../resources/agentidentity.md).  This could include applications or groups.
-
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+Retrieve a list of objects owned by the [agentIdentity](../resources/agentidentity.md). This could include applications or groups.
 
 ## Permissions
 
@@ -29,6 +27,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/agentidentity-list-ownedobjects-permissions.md)]
 
+[!INCLUDE [rbac-serviceprincipal-apis-read](../includes/rbac-for-apis/rbac-serviceprincipal-apis-read.md)]
+
 ## HTTP request
 
 <!-- {
@@ -36,12 +36,12 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /servicePrincipals/{id}/Microsoft.Graph.AgentIdenity/ownedObjects
+GET /servicePrincipals/{id}/microsoft.graph.agentIdentity/ownedObjects
 ```
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select`, `$filter`, and `$expand` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -68,7 +68,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/servicePrincipals/{id}/Microsoft.Graph.AgentIdentity/ownedObjects
+GET https://graph.microsoft.com/beta/servicePrincipals/{id}/microsoft.graph.agentIdentity/ownedObjects
 ```
 
 

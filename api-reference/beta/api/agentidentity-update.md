@@ -16,8 +16,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
-Update the properties of an agentIdentity object.
-
+Update the properties of an [agentIdentity](../resources/agentidentity.md) object.
 
 ## Permissions
 
@@ -37,11 +36,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
   - In delegated scenarios, the admin must be assigned the *Attribute Assignment Administrator* role and the app granted the *CustomSecAttributeAssignment.ReadWrite.All* and *AgentIdentity.ReadWrite.All* delegated permissions.
   - In app-only scenarios using Microsoft Graph permissions, the app must be granted the *CustomSecAttributeAssignment.ReadWrite.All* application permission.
 
-
 ## HTTP request
 
 ```http
-PATCH /servicePrincipals/{id}/Microsoft.Graph.AgentIdentity
+PATCH /servicePrincipals/{id}/microsoft.graph.agentIdentity
 ```
 
 ## Request headers
@@ -64,7 +62,7 @@ If successful, this method returns a `204 No Content` response code.
 The following example shows a request.
 
 ```http
-PATCH https://graph.microsoft.com/beta/servicePrincipals/{id}
+PATCH https://graph.microsoft.com/beta/servicePrincipals/{id}/microsoft.graph.agentIdentity
 Content-type: application/json
 
 {
@@ -74,7 +72,7 @@ Content-type: application/json
 
 
 ### Response
-The following example shows the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response.
 <!-- {
   "blockType": "response"
 } -->

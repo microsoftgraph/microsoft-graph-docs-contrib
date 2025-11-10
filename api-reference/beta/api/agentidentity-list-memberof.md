@@ -1,5 +1,5 @@
 ---
-title: "List agentIdentity memberOf"
+title: "List agentIdentity direct memberships"
 description: "Get the groups and directory roles that this agentIdentity is a direct member of. This operation isn't transitive."
 author: "zallison22"
 ms.date: 10/27/2025
@@ -8,15 +8,13 @@ ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 
-# agentIdentity: List memberOf
+# List agentIdentity direct memberships
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get the groups and directory roles that this [agentIdentity](../resources/agentidentity.md) is a direct member of. This operation isn't transitive.
-
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -36,12 +34,12 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /servicePrincipals/{id}/Microsoft.Graph.AgentIdentity/memberOf
+GET /servicePrincipals/{id}/microsoft.graph.agentIdentity/memberOf
 ```
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select`, `$filter`, and `$expand` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -68,7 +66,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/servicePrincipals/{id}/Microsoft.Graph.AgentIdentity/memberOf
+GET https://graph.microsoft.com/beta/servicePrincipals/{id}/microsoft.graph.agentIdentity/memberOf
 ```
 
 

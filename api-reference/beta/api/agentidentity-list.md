@@ -1,6 +1,6 @@
 ---
-title: "List agentIdentities"
-description: "Retrieve a list of agentIdentities objects."
+title: "List agentIdentity objects"
+description: "Retrieve a list of agentIdentity objects."
 author: "zallison22"
 ms.date: 10/27/2025
 ms.localizationpriority: medium
@@ -8,15 +8,13 @@ ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 
-# List agentIdentities
+# List agentIdentity objects
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve a list of [agentIdentity](../resources/agentidentity.md) objects. Does not return other types of service principal objects.
-
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -31,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /servicePrincipals
+GET /servicePrincipals/microsoft.graph.agentIdentity
 ```
 
 ## Optional query parameters
@@ -63,7 +61,7 @@ If successful, this method returns a `200 OK` response code and collection of [a
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/servicePrincipals/Microsoft.Graph.AgentIdentity
+GET https://graph.microsoft.com/beta/servicePrincipals/microsoft.graph.agentIdentity
 ```
 
 #### Response

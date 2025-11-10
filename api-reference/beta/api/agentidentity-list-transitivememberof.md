@@ -1,5 +1,5 @@
 ---
-title: "List agentIdentity transitiveMemberOf"
+title: "List agentIdentity transitive memberships"
 description: "Get the groups and directory roles that this agent identity is a member of."
 author: "zallison22"
 ms.date: 10/27/2025
@@ -8,7 +8,7 @@ ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 
-# agentIdentity: List transitiveMemberOf
+# List agentIdentity transitive memberships
 
 Namespace: microsoft.graph
 
@@ -16,7 +16,6 @@ Namespace: microsoft.graph
 
 Get the groups and directory roles that this [agentIdentity](../resources/agentidentity.md) is a member of. This operation is transitive and will include all groups that this agent identity is a nested member of.
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -28,6 +27,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/agentidentity-list-transitivememberof-permissions.md)]
 
+[!INCLUDE [rbac-agentid-apis-write](../includes/rbac-for-apis/rbac-agentid-apis-write.md)]
+
 ## HTTP request
 
 <!-- {
@@ -35,7 +36,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /servicePrincipals/{id}/Microsoft.Graph.AgentIdentity/transitiveMemberOf
+GET /servicePrincipals/{id}/microsoft.graph.agentIdentity/transitiveMemberOf
 ```
 
 ## Optional query parameters
@@ -71,7 +72,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/servicePrincipals/{id}/Microsoft.Graph.AgentIdentity/transitiveMemberOf
+GET https://graph.microsoft.com/beta/servicePrincipals/{id}/microsoft.graph.agentIdentity/transitiveMemberOf
 ```
 
 

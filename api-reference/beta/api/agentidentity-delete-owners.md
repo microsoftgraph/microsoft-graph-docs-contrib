@@ -1,6 +1,6 @@
 ---
 title: "Remove agentIdentity owners"
-description: "Remove an owner from a AgentIdentity."
+description: "Remove an owner from a agentIdentity."
 author: "zallison22"
 ms.date: 10/27/2025
 ms.localizationpriority: medium
@@ -15,8 +15,6 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Remove an owner from a [agentIdentity](../resources/agentidentity.md) object. As a recommended best practice, agent identities should have at least two owners.
-
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -36,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /servicePrincipals/{id}/Microsoft.Graph.AgentIdentity/owners/{id}/$ref
+DELETE /servicePrincipals/{id}/microsoft.graph.agentIdentity/owners/{id}/$ref
 
 ```
 ## Request headers
@@ -70,7 +68,6 @@ DELETE https://graph.microsoft.com/beta/servicePrincipals/{id}/Microsoft.Graph.A
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true

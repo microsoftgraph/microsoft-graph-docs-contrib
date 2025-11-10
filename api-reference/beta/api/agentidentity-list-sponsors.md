@@ -8,7 +8,7 @@ ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 
-# agentIdentity: List sponsors
+# List agentIdentity sponsors
 
 Namespace: microsoft.graph
 
@@ -16,7 +16,6 @@ Namespace: microsoft.graph
 
 List the sponsors for an [agentIdentity](../resources/agentidentity.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -28,6 +27,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/agentidentity-list-sponsors-permissions.md)]
 
+[!INCLUDE [rbac-serviceprincipal-apis-read](../includes/rbac-for-apis/rbac-serviceprincipal-apis-read.md)]
+
 ## HTTP request
 
 <!-- {
@@ -35,12 +36,12 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /servicePrincipals/{id}/Microsoft.Graph.AgentIdentity/sponsors
+GET /servicePrincipals/{id}/microsoft.graph.agentIdentity/sponsors
 ```
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select`, `$filter`, and `$expand` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -67,7 +68,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/servicePrincipals/{id}/Microsoft.Graph.AgentIdentity/sponsors
+GET https://graph.microsoft.com/beta/servicePrincipals/{id}/microsoft.graph.agentIdentity/sponsors
 ```
 
 
