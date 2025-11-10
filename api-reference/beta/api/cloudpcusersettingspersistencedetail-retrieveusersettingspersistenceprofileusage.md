@@ -33,23 +33,22 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 
 ``` http
-GET /deviceManagement/virtualEndpoint/provisioningPolicies/{id}/assignments/{assignment_id}/cloudPCUserSettingsPersistence/retrieveUserSettingsPersistenceProfileUsage
+GET /deviceManagement/virtualEndpoint/provisioningPolicies/{id}/assignments/{assignment_id}/cloudPCUserSettingsPersistence/retrieveUserSettingsPersistenceProfileUsage(configurationId='{value}')
 ```
+
+## Function parameters
+
+In the request URL, provide the following function parameters with values.
+
+| Parameter	   | Type	|Description|
+|:---------------|:--------|:----------|
+| configurationId |String | The unique identifier for the selected Cloud PC user's settings persistence. |
 
 ## Request headers
 
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
-## Request body
-
-In the request body, supply a JSON representation of the parameters.
-
-The following table shows the parameters that can be used with this method.
-
-|Property|Type|Description|
-|:---|:---|:---|
-| configurationId  |String | The unique identifier for the selected Cloud PC user's settings persistence. |
 
 ## Response
 
