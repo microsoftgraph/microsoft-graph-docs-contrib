@@ -24,6 +24,15 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 The [driveItem: restore](/graph/api/driveitem-restore) method was expanded to enable restoring a **driveItem** deleted from a **fileStorageContainer** without mapping it to a **recycleBinItem**. This complements existing functionality in [recycleBinItem: restore](/graph/api/filestoragecontainer-restore-recyclebinitem) which continues to work as expected.
 
+## November 2025: New in preview only
+
+### Backup storage
+
+Use the new full-service backup APIs to simplify and scale your backup operations. These APIs enable you to back up resources directly from the moment they are created, making the backup process more efficient and convenient. The following resources are supported:
+- [allDrivesBackup](/graph/api/resources/alldrivesbackup)
+- [allMailboxesBackup](/graph/api/resources/allmailboxesbackup)
+- [allSitesBackup](/graph/api/resources/allsitesbackup)
+
 ## October 2025: New and generally available
 
 ### Backup storage
@@ -121,13 +130,6 @@ Use the [callEvent](/graph/api/resources/callevent) and [emergencyCallEvent](/gr
 Use the **originalSourceMembershipUrl** annotation with the [List allMembers](/graph/api/channel-list-allmembers) API to identify the source of a member's membership and distinguish between direct and indirect members.
 
 ## October 2025: New in preview only
-
-### Backup storage
-
-Use the new full-service backup APIs to simplify and scale your backup operations. These APIs enable you to back up resources directly from the moment they are created, making the backup process more efficient and convenient. The following resources are supported:
-- [allDrivesBackup](/graph/api/resources/alldrivesbackup)
-- [allMailboxesBackup](/graph/api/resources/allmailboxesbackup)
-- [allSitesBackup](/graph/api/resources/allsitesbackup)
 
 ### Calendars | Places
 
