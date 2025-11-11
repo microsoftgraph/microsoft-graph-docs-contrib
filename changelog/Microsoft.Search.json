@@ -156,7 +156,7 @@
           "Description": "Added the `numReactions` member to the **label** enumeration.",
           "Target": "label"
         }
-      ]
+      ],
       "Id": "fd3b880d-ea39-4b1e-8c19-35fb8fb0c26d",
       "Cloud": "Prod",
       "Version": "beta",
