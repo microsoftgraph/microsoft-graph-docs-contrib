@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a userConfiguration object.
+Delete a [userConfiguration](../resources/userconfiguration.md) object.
 
 ## Permissions
 
@@ -34,8 +34,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-DELETE /me/mailFolders/{mailFolderId}/userConfigurations/{userConfigurationId}/$ref
-DELETE /users/{usersId}/mailFolders/{mailFolderId}/userConfigurations/{userConfigurationId}/$ref
+DELETE /me/mailFolders/{mailFolderId}/userConfigurations/{userConfigurationId}
+DELETE /users/{usersId}/mailFolders/{mailFolderId}/userConfigurations/{userConfigurationId}
 ```
 
 ## Request headers
@@ -66,11 +66,10 @@ The following example shows a request.
 DELETE https://graph.microsoft.com/beta/me/mailFolders/{mailFolderId}/userConfigurations/{userConfigurationId}
 ```
 
-
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true
