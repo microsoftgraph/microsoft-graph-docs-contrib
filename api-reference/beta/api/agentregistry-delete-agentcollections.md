@@ -1,6 +1,6 @@
 ---
-title: "Delete agentInstance"
-description: "Delete an agentInstance object."
+title: "Delete agentCollection"
+description: "Delete an agentCollection object."
 author: "jasondou"
 ms.date: 11/06/2025
 ms.localizationpriority: medium
@@ -8,13 +8,13 @@ ms.subservice: "entra-id"
 doc_type: apiPageType
 ---
 
-# Delete agentInstance
+# Delete agentCollection
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete an agentInstance object.
+Delete an agentCollection object.
 
 ## Permissions
 
@@ -22,10 +22,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "agentregistry-delete-agentinstances-permissions"
+  "name": "agentregistry-delete-agentcollections-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/agentregistry-delete-agentinstances-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/agentregistry-delete-agentcollections-permissions.md)]
 
 ## HTTP request
 
@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-DELETE /agentRegistry/agentInstances/{agentInstanceId}
+DELETE /agentRegistry/agentCollections/{agentCollectionId}
 ```
 
 ## Request headers
@@ -58,11 +58,11 @@ If successful, this method returns a `204 No Content` response code.
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "delete_agentinstance"
+  "name": "delete_agentcollection"
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/agentRegistry/agentInstances/{agentInstanceId}
+DELETE https://graph.microsoft.com/beta/agentRegistry/agentCollections/{agentCollectionId}
 ```
 
 

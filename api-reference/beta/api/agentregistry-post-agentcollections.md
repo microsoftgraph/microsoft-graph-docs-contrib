@@ -50,17 +50,15 @@ In the request body, supply a JSON representation of the [agentCollection](../re
 
 You can specify the following properties when creating an **agentCollection**.
 
-**TODO: Remove properties that don't apply**
+
 |Property|Type|Description|
 |:---|:---|:---|
-|ownerIds|String collection|**TODO: Add Description** Required.|
-|managedBy|String|**TODO: Add Description** Optional.|
-|originatingStore|String|**TODO: Add Description** Optional.|
-|createdBy|String|**TODO: Add Description** Optional.|
-|displayName|String|**TODO: Add Description** Required.|
-|description|String|**TODO: Add Description** Optional.|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Optional.|
-|lastModifiedDateTime|DateTimeOffset|**TODO: Add Description** Optional.|
+|ownerIds|String collection|IDs of owners allowed to manage the collection. Required.|
+|managedBy|String|Application (service principal) id managing the collection. Optional.|
+|originatingStore|String|Source system/store where the collection originated. Optional.|
+|createdBy|String|User who created the collection. Optional.|
+|displayName|String|Friendly name of the collection. Required.|
+|description|String|Description / purpose of the collection. Optional.|
 
 
 

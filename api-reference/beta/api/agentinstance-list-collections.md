@@ -1,6 +1,6 @@
 ---
 title: "List collections"
-description: "**TODO: Add a useful description.**"
+description: "List the collections that the agent instance is a member of."
 author: "jasondou"
 ms.date: 11/06/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add a useful description.**
+List the collections that the agent instance is a member of.
 
 ## Permissions
 

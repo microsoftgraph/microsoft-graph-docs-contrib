@@ -1,6 +1,6 @@
 ---
 title: "List agentCardManifest"
-description: "**TODO: Add a useful description.**"
+description: "List the agent card manifest referenced by the agent instance."
 author: "jasondou"
 ms.date: 11/06/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add a useful description.**
+List the agent card manifest referenced by the agent instance.
 
 ## Permissions
 

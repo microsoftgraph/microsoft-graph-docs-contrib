@@ -1,6 +1,6 @@
 ---
 title: "List agentCardManifests"
-description: "**TODO: Add a useful description.**"
+description: "List all agent card manifests in the agent registry"
 author: "jasondou"
 ms.date: 11/06/2025
 ms.localizationpriority: medium

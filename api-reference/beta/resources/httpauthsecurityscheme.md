@@ -44,3 +44,4 @@ The following JSON representation shows the resource type.
   "scheme": "String",
   "bearerFormat": "String"
 }
+```

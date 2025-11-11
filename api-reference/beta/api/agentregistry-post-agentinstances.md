@@ -50,24 +50,20 @@ In the request body, supply a JSON representation of the [agentInstance](../reso
 
 You can specify the following properties when creating an **agentInstance**.
 
-**TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
-|ownerIds|String collection|**TODO: Add Description** Required.|
-|managedBy|String|**TODO: Add Description** Optional.|
-|originatingStore|String|**TODO: Add Description** Optional.|
-|createdBy|String|**TODO: Add Description** Optional.|
-|displayName|String|**TODO: Add Description** Required.|
-|sourceAgentId|String|**TODO: Add Description** Optional.|
-|agentIdentityBlueprintId|String|**TODO: Add Description** Optional.|
-|agentIdentityId|String|**TODO: Add Description** Optional.|
-|agentUserId|String|**TODO: Add Description** Optional.|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Optional.|
-|lastModifiedDateTime|DateTimeOffset|**TODO: Add Description** Optional.|
-|url|String|**TODO: Add Description** Optional.|
-|preferredTransport|String|**TODO: Add Description** Optional.|
-|additionalInterfaces|[agentInterface](../resources/agentinterface.md) collection|**TODO: Add Description** Optional.|
-|signatures|[agentCardSignature](../resources/agentcardsignature.md) collection|**TODO: Add Description** Optional.|
+|ownerIds|String collection|List of owner identifiers for the agent instance. Required.|
+|managedBy|String|Application identifier managing this agent. Optional.|
+|originatingStore|String|Name of the store/system where agent originated. Optional.|
+|displayName|String|Display name for the agent instance. Required.|
+|sourceAgentId|String|Original agent identifier from source system. Optional.|
+|agentIdentityBlueprintId|String|Agent identity blueprint identifier. Optional.|
+|agentIdentityId|String|Entra agent identity identifier. Optional.|
+|agentUserId|String|User identifier associated with the agent. Optional.|
+|url|String|Endpoint URL for the agent instance. Optional.|
+|preferredTransport|String|Preferred transport protocol (JSONRPC, GRPC, HTTP+JSON). Optional.|
+|additionalInterfaces|[agentInterface](../resources/agentinterface.md) collection|Additional interfaces/transports supported by the agent (url, transport). Optional.|
+|signatures|[agentCardSignature](../resources/agentcardsignature.md) collection|Digital signatures for the agent instance (protected, signature, header). Optional.|
 
 
 
@@ -96,7 +92,6 @@ Content-Type: application/json
   ],
   "managedBy": "String",
   "originatingStore": "String",
-  "createdBy": "String",
   "displayName": "String",
   "sourceAgentId": "String",
   "agentIdentityBlueprintId": "String",

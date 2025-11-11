@@ -24,10 +24,10 @@ Inherits from [entity](../resources/entity.md).
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List](../api/agentinstance-list-collections.md)|[agentCollection](../resources/agentcollection.md) collection|Get a list of the agentCollection objects and their properties.|
-|[Create](../api/agentinstance-post-collections.md)|[agentCollection](../resources/agentcollection.md)|Create a new agentCollection object.|
+|[Create](../api/agentregistry-post-agentcollections.md)|[agentCollection](../resources/agentcollection.md)|Create a new agentCollection object.|
 |[Get](../api/agentcollection-get.md)|[agentCollection](../resources/agentcollection.md)|Read the properties and relationships of [agentCollection](../resources/agentcollection.md) object.|
 |[Update](../api/agentcollection-update.md)|[agentCollection](../resources/agentcollection.md)|Update the properties of an agentCollection object.|
-|[Delete](../api/agentinstance-delete-collections.md)|None|Delete an agentCollection object.|
+|[Delete](../api/agentregistry-delete-collections.md)|None|Delete an agentCollection object.|
 |[List members](../api/agentcollection-list-members.md)|[agentInstance](../resources/agentinstance.md) collection|**TODO: Add a useful description.**|
 |[Add agentInstance](../api/agentcollection-post-members.md)|[agentInstance](../resources/agentinstance.md)|Add members by posting to the members collection.|
 |[Remove members](../api/agentcollection-delete-members.md)|None|Remove an [agentInstance](../resources/agentinstance.md) object.|

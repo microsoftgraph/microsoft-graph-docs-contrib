@@ -1,6 +1,6 @@
 ---
 title: "List agentCollections"
-description: "**TODO: Add a useful description.**"
+description: "Retrieves all agent collections in the agent registry for the tenant."
 author: "jasondou"
 ms.date: 11/06/2025
 ms.localizationpriority: medium

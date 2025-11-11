@@ -9,4 +9,3 @@ ms.localizationpriority: medium
 |Delegated (work or school account)|AgentCollection.ReadWrite.All; for Global collection: AgentCollection.ReadWrite.Global; for Quarantined collection: AgentCollection.ReadWrite.Quarantined|AgentCollection.ReadWrite.All; for Global collection: AgentCollection.ReadWrite.Global; for Quarantined collection: AgentCollection.ReadWrite.Quarantined|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
 |Application|AgentCollection.ReadWrite.ManagedBy|AgentCollection.ReadWrite.All|
-
