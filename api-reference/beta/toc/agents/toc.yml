@@ -7,12 +7,56 @@ items:
   - name: Agent user
     href: ../../resources/agentuser.md
   - name: List
-    href: ../../api/user-list.md
+    href: ../../api/agentuser-list.md
   - name: Create
-    href: ../../api/user-post-users.md
+    href: ../../api/agentuser-post.md
   - name: Get
-    href: ../../api/user-get.md
+    href: ../../api/agentuser-get.md
   - name: Update
-    href: ../../api/user-update.md
+    href: ../../api/agentuser-update.md
   - name: Delete
-    href: ../../api/user-delete.md
+    href: ../../api/agentuser-delete.md
+  - name: App role assignments
+    items:
+    - name: List appRoleAssignments
+      href: ../../api/agentuser-list-approleassignments.md
+    - name: Create appRoleAssignment
+      href: ../../api/agentuser-post-approleassignments.md
+  - name: Organizational relationships
+    items:
+    - name: List createdObjects
+      href: ../../api/agentuser-list-createdobjects.md
+    - name: List directReports
+      href: ../../api/agentuser-list-directreports.md
+    - name: List manager
+      href: ../../api/agentuser-list-manager.md
+    - name: Add manager
+      href: ../../api/agentuser-post-manager.md
+    - name: Remove manager
+      href: ../../api/agentuser-delete-manager.md
+    - name: List memberOf
+      href: ../../api/agentuser-list-memberof.md
+    - name: List transitiveMemberOf
+      href: ../../api/agentuser-list-transitivememberof.md
+    - name: List transitiveReports
+      href: ../../api/agentuser-list-transitivereports.md
+  - name: Devices
+    items:
+    - name: List ownedDevices
+      href: ../../api/agentuser-list-owneddevices.md
+    - name: List ownedObjects
+      href: ../../api/agentuser-list-ownedobjects.md
+    - name: List registeredDevices
+      href: ../../api/agentuser-list-registereddevices.md
+  - name: Roles
+    items:
+    - name: List scopedRoleMemberOf
+      href: ../../api/agentuser-list-scopedrolememberof.md
+  - name: Sponsors
+    items:
+    - name: List sponsors
+      href: ../../api/agentuser-list-sponsors.md
+    - name: Add sponsors
+      href: ../../api/agentuser-post-sponsors.md
+    - name: Remove sponsors
+      href: ../../api/agentuser-delete-sponsors.md
