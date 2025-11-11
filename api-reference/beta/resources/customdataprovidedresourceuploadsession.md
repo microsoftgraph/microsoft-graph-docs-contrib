@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a[customDataProvidedResourceUploadSession](../resources/customdataprovidedresourceuploadsession.md) created on a [customDataProvidedResource](../resources/customdataprovidedresource.md)
+Represents a [customDataProvidedResourceUploadSession](../resources/customdataprovidedresourceuploadsession.md) created on a [customDataProvidedResource](../resources/customdataprovidedresource.md)
 
 
 Inherits from [entity](../resources/entity.md).
