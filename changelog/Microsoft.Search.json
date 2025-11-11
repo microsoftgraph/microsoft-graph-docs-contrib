@@ -3,6 +3,14 @@
    {
       "ChangeList": [
         {
+          "Id": "4643379c-280b-4890-ab25-49b35e1ab03a",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "contentCategory",
+          "ChangeType": "Addition",
+          "Description": "Added the **contentCategory** enumeration type.",
+          "Target": "contentCategory"
+        },
+        {
           "Id": "fd3b880d-ea39-4b1e-8c19-35fb8fb0c26d",
           "ApiChange": "Property",
           "ChangedApiName": "contentCategory",
@@ -29,7 +37,7 @@
           "Target": "property"
         },
         {
-          "Id": "f9a8c221-8738-4628-bd68-1984c6ad6934",
+          "Id": "4643379c-280b-4890-ab25-49b35e1ab03a",
           "ApiChange": "Member",
           "ChangedApiName": "assignedToPeople",
           "ChangeType": "Addition",
@@ -37,23 +45,7 @@
           "Target": "label"
         },
         {
-          "Id": "f9a8c221-8738-4628-bd68-1984c6ad6934",
-          "ApiChange": "Member",
-          "ChangedApiName": "dueDate",
-          "ChangeType": "Addition",
-          "Description": "Added the `dueDate` member to the **label** enumeration.",
-          "Target": "label"
-        },
-        {
-          "Id": "f9a8c221-8738-4628-bd68-1984c6ad6934",
-          "ApiChange": "Member",
-          "ChangedApiName": "closedDate",
-          "ChangeType": "Addition",
-          "Description": "Added the `closedDate` member to the **label** enumeration.",
-          "Target": "label"
-        },
-        {
-          "Id": "f9a8c221-8738-4628-bd68-1984c6ad6934",
+          "Id": "4643379c-280b-4890-ab25-49b35e1ab03a",
           "ApiChange": "Member",
           "ChangedApiName": "closedBy",
           "ChangeType": "Addition",
@@ -61,39 +53,15 @@
           "Target": "label"
         },
         {
-          "Id": "f9a8c221-8738-4628-bd68-1984c6ad6934",
+          "Id": "4643379c-280b-4890-ab25-49b35e1ab03a",
           "ApiChange": "Member",
-          "ChangedApiName": "reportedBy",
+          "ChangedApiName": "closedDate",
           "ChangeType": "Addition",
-          "Description": "Added the `reportedBy` member to the **label** enumeration.",
+          "Description": "Added the `closedDate` member to the **label** enumeration.",
           "Target": "label"
         },
         {
-          "Id": "f9a8c221-8738-4628-bd68-1984c6ad6934",
-          "ApiChange": "Member",
-          "ChangedApiName": "sprintName",
-          "ChangeType": "Addition",
-          "Description": "Added the `sprintName` member to the **label** enumeration.",
-          "Target": "label"
-        },
-        {
-          "Id": "f9a8c221-8738-4628-bd68-1984c6ad6934",
-          "ApiChange": "Member",
-          "ChangedApiName": "severity",
-          "ChangeType": "Addition",
-          "Description": "Added the `severity` member to the **label** enumeration.",
-          "Target": "label"
-        },
-        {
-          "Id": "f9a8c221-8738-4628-bd68-1984c6ad6934",
-          "ApiChange": "Member",
-          "ChangedApiName": "state",
-          "ChangeType": "Addition",
-          "Description": "Added the `state` member to the **label** enumeration.",
-          "Target": "label"
-        },
-        {
-          "Id": "f9a8c221-8738-4628-bd68-1984c6ad6934",
+          "Id": "4643379c-280b-4890-ab25-49b35e1ab03a",
           "ApiChange": "Member",
           "ChangedApiName": "priority",
           "ChangeType": "Addition",
@@ -101,31 +69,15 @@
           "Target": "label"
         },
         {
-          "Id": "f9a8c221-8738-4628-bd68-1984c6ad6934",
+          "Id": "4643379c-280b-4890-ab25-49b35e1ab03a",
           "ApiChange": "Member",
-          "ChangedApiName": "secondaryId",
+          "ChangedApiName": "sprintName",
           "ChangeType": "Addition",
-          "Description": "Added the `secondaryId` member to the **label** enumeration.",
+          "Description": "Added the `sprintName` member to the **label** enumeration.",
           "Target": "label"
         },
         {
-          "Id": "f9a8c221-8738-4628-bd68-1984c6ad6934",
-          "ApiChange": "Member",
-          "ChangedApiName": "itemParentId",
-          "ChangeType": "Addition",
-          "Description": "Added the `itemParentId` member to the **label** enumeration.",
-          "Target": "label"
-        },
-        {
-          "Id": "f9a8c221-8738-4628-bd68-1984c6ad6934",
-          "ApiChange": "Member",
-          "ChangedApiName": "parentUrl",
-          "ChangeType": "Addition",
-          "Description": "Added the `parentUrl` member to the **label** enumeration.",
-          "Target": "label"
-        },
-        {
-          "Id": "f9a8c221-8738-4628-bd68-1984c6ad6934",
+          "Id": "4643379c-280b-4890-ab25-49b35e1ab03a",
           "ApiChange": "Member",
           "ChangedApiName": "tags",
           "ChangeType": "Addition",
@@ -133,15 +85,39 @@
           "Target": "label"
         },
         {
-          "Id": "f9a8c221-8738-4628-bd68-1984c6ad6934",
+          "Id": "4643379c-280b-4890-ab25-49b35e1ab03a",
           "ApiChange": "Member",
-          "ChangedApiName": "itemType",
+          "ChangedApiName": "severity",
           "ChangeType": "Addition",
-          "Description": "Added the `itemType` member to the **label** enumeration.",
+          "Description": "Added the `severity` member to the **label** enumeration.",
           "Target": "label"
         },
         {
-          "Id": "f9a8c221-8738-4628-bd68-1984c6ad6934",
+          "Id": "4643379c-280b-4890-ab25-49b35e1ab03a",
+          "ApiChange": "Member",
+          "ChangedApiName": "state",
+          "ChangeType": "Addition",
+          "Description": "Added the `state` member to the **label** enumeration.",
+          "Target": "label"
+        },
+        {
+          "Id": "4643379c-280b-4890-ab25-49b35e1ab03a",
+          "ApiChange": "Member",
+          "ChangedApiName": "dueDate",
+          "ChangeType": "Addition",
+          "Description": "Added the `dueDate` member to the **label** enumeration.",
+          "Target": "label"
+        },
+        {
+          "Id": "4643379c-280b-4890-ab25-49b35e1ab03a",
+          "ApiChange": "Member",
+          "ChangedApiName": "itemParentId",
+          "ChangeType": "Addition",
+          "Description": "Added the `itemParentId` member to the **label** enumeration.",
+          "Target": "label"
+        },
+        {
+          "Id": "4643379c-280b-4890-ab25-49b35e1ab03a",
           "ApiChange": "Member",
           "ChangedApiName": "itemPath",
           "ChangeType": "Addition",
@@ -149,12 +125,60 @@
           "Target": "label"
         },
         {
-          "Id": "f9a8c221-8738-4628-bd68-1984c6ad6934",
+          "Id": "4643379c-280b-4890-ab25-49b35e1ab03a",
+          "ApiChange": "Member",
+          "ChangedApiName": "itemType",
+          "ChangeType": "Addition",
+          "Description": "Added the `itemType` member to the **label** enumeration.",
+          "Target": "label"
+        },
+        {
+          "Id": "4643379c-280b-4890-ab25-49b35e1ab03a",
           "ApiChange": "Member",
           "ChangedApiName": "numberOfReactions",
           "ChangeType": "Addition",
           "Description": "Added the `numberOfReactions` member to the **label** enumeration.",
           "Target": "label"
+        },
+        {
+          "Id": "4643379c-280b-4890-ab25-49b35e1ab03a",
+          "ApiChange": "Member",
+          "ChangedApiName": "parentUrl",
+          "ChangeType": "Addition",
+          "Description": "Added the `parentUrl` member to the **label** enumeration.",
+          "Target": "label"
+        },
+        {
+          "Id": "4643379c-280b-4890-ab25-49b35e1ab03a",
+          "ApiChange": "Member",
+          "ChangedApiName": "priorityNormalized",
+          "ChangeType": "Addition",
+          "Description": "Added the `priorityNormalized` member to the **label** enumeration.",
+          "Target": "label"
+        },
+        {
+          "Id": "4643379c-280b-4890-ab25-49b35e1ab03a",
+          "ApiChange": "Member",
+          "ChangedApiName": "reportedBy",
+          "ChangeType": "Addition",
+          "Description": "Added the `reportedBy` member to the **label** enumeration.",
+          "Target": "label"
+        },
+        {
+          "Id": "4643379c-280b-4890-ab25-49b35e1ab03a",
+          "ApiChange": "Member",
+          "ChangedApiName": "secondaryId",
+          "ChangeType": "Addition",
+          "Description": "Added the `secondaryId` member to the **label** enumeration.",
+          "Target": "label"
+        },
+        {
+          "Id": "4643379c-280b-4890-ab25-49b35e1ab03a",
+          "ApiChange": "Member",
+          "ChangedApiName": "principal",
+          "ChangeType": "Addition",
+          "Description": "Added the `principal` member to the **propertyType** enumeration.",
+          "Target": "propertyType"
         }
       ],
       "Id": "fd3b880d-ea39-4b1e-8c19-35fb8fb0c26d",
