@@ -100,6 +100,7 @@ The following example shows the response.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
+
 {
     "id": "23f27c15-72f9-45fe-9e9c-e3d8f75bdc44",
     "status": "Active",
