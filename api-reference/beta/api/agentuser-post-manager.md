@@ -1,10 +1,11 @@
 ---
 title: "Add manager"
-description: "Add manager by posting to the manager collection."
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+description: "Assign an agent user's manager."
+author: "yyuank"
+ms.reviewer: "iamut"
 ms.date: 11/06/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice: entra-id
 doc_type: apiPageType
 ---
 
@@ -14,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Add manager by posting to the manager collection.
+Assign an [agentUser's](../resources/agentuser.md) manager.
 
 ## Permissions
 

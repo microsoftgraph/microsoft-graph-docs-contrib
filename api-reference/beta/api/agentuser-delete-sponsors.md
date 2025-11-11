@@ -1,10 +1,11 @@
 ---
-title: "Remove sponsors"
-description: "Remove a directoryObject object."
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+title: "Remove sponsor"
+description: "Remove an agent user's sponsor."
+author: "yyuank"
+ms.reviewer: "iamut"
 ms.date: 11/06/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice: entra-id
 doc_type: apiPageType
 ---
 
@@ -14,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Remove a [directoryObject](../resources/directoryobject.md) object.
+Remove an [agentUser's](../resources/agentuser.md) sponsor.
 
 ## Permissions
 

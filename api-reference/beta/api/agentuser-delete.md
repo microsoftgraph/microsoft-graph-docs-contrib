@@ -1,10 +1,11 @@
 ---
 title: "Delete agentUser"
 description: "Delete an agentUser object."
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+author: "yyuank"
+ms.reviewer: "iamut"
 ms.date: 11/11/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice: entra-id
 doc_type: apiPageType
 ---
 
@@ -14,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete an agentUser object.
+Delete an [agentUser](../resources/agentuser.md) object.
 
 ## Permissions
 

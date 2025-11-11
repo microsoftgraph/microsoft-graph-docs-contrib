@@ -1,10 +1,11 @@
 ---
-title: "List scopedRoleMemberOf"
-description: "**TODO: Add a useful description.**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+title: "List scopedAdministratorOf"
+description: "Retrieve a list of scopedRoleMembership for the agent user."
+author: "yyuank"
+ms.reviewer: "iamut"
 ms.date: 11/06/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice: entra-id
 doc_type: apiPageType
 ---
 
@@ -14,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add a useful description.**
+Retrieve a list of [scopedRoleMembership](../resources/scopedrolemembership.md) for the [agentUser](../resources/agentuser.md).
 
 ## Permissions
 
