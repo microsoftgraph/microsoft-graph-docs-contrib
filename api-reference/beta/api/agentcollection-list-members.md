@@ -1,5 +1,5 @@
 ---
-title: "List members"
+title: "List agent collection members"
 description: "Returns the list of agent instance members for the specified collection."
 author: "jasondou"
 ms.date: 11/06/2025
@@ -8,7 +8,7 @@ ms.subservice: "entra-id"
 doc_type: apiPageType
 ---
 
-# List members
+# List agent collection members
 
 Namespace: microsoft.graph
 
