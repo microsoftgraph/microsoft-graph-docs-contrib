@@ -35,7 +35,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-PATCH /riskyAgentUser/agentUser
+PATCH /agentUser/agentUser
 ```
 
 ## Request headers
@@ -109,171 +109,54 @@ The following example shows a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/riskyAgentUser/agentUser
+PATCH https://graph.microsoft.com/beta/agentuser/agentuser
 Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.agentUser",
-  "deletedDateTime": "String (timestamp)",
-  "signInActivity": {
-    "@odata.type": "microsoft.graph.signInActivity"
-  },
-  "cloudLicensing": {
-    "@odata.type": "microsoft.graph.cloudLicensing.userCloudLicensing"
-  },
-  "accountEnabled": "Boolean",
-  "ageGroup": "String",
+  "accountEnabled": true,
   "assignedLicenses": [
     {
       "@odata.type": "microsoft.graph.assignedLicense"
     }
   ],
-  "assignedPlans": [
-    {
-      "@odata.type": "microsoft.graph.assignedPlan"
-    }
-  ],
-  "authorizationInfo": {
-    "@odata.type": "microsoft.graph.authorizationInfo"
-  },
   "businessPhones": [
-    "String"
+    "+1 425 555 0109"
   ],
-  "city": "String",
-  "cloudRealtimeCommunicationInfo": {
-    "@odata.type": "microsoft.graph.cloudRealtimeCommunicationInfo"
-  },
-  "companyName": "String",
-  "consentProvidedForMinor": "String",
-  "country": "String",
-  "creationType": "String",
+  "city": "Seattle",
+  "companyName": "Contoso",
+  "country": "United States",
   "customSecurityAttributes": {
     "@odata.type": "microsoft.graph.customSecurityAttributeValue"
   },
-  "department": "String",
-  "deviceKeys": [
-    {
-      "@odata.type": "microsoft.graph.deviceKey"
-    }
-  ],
-  "displayName": "String",
-  "employeeHireDate": "String (timestamp)",
-  "employeeId": "String",
+  "department": "Sales",
+  "displayName": "Sales Agent",
+  "employeeId": "12345",
+  "employeeType": "Agent",
+  "givenName": "Sales",
+  "employeeHireDate": "2024-01-15T00:00:00Z",
+  "employeeLeaveDateTime": null,
   "employeeOrgData": {
-    "@odata.type": "microsoft.graph.employeeOrgData"
+    "@odata.type": "microsoft.graph.employeeOrgData",
+    "division": "Sales Division",
+    "costCenter": "1234"
   },
-  "employeeType": "String",
-  "employeeLeaveDateTime": "String (timestamp)",
-  "faxNumber": "String",
-  "givenName": "String",
-  "identities": [
-    {
-      "@odata.type": "microsoft.graph.objectIdentity"
-    }
-  ],
-  "imAddresses": [
-    "String"
-  ],
-  "infoCatalogs": [
-    "String"
-  ],
-  "isLicenseReconciliationNeeded": "Boolean",
-  "isManagementRestricted": "Boolean",
-  "isResourceAccount": "Boolean",
-  "jobTitle": "String",
-  "lastPasswordChangeDateTime": "String (timestamp)",
-  "legalAgeGroupClassification": "String",
-  "licenseAssignmentStates": [
-    {
-      "@odata.type": "microsoft.graph.licenseAssignmentState"
-    }
-  ],
-  "mail": "String",
-  "mailNickname": "String",
-  "mobilePhone": "String",
-  "onPremisesDistinguishedName": "String",
-  "onPremisesExtensionAttributes": {
-    "@odata.type": "microsoft.graph.onPremisesExtensionAttributes"
-  },
-  "onPremisesImmutableId": "String",
-  "onPremisesLastSyncDateTime": "String (timestamp)",
-  "onPremisesProvisioningErrors": [
-    {
-      "@odata.type": "microsoft.graph.onPremisesProvisioningError"
-    }
-  ],
-  "onPremisesSecurityIdentifier": "String",
-  "onPremisesSipInfo": {
-    "@odata.type": "microsoft.graph.onPremisesSipInfo"
-  },
-  "onPremisesSyncEnabled": "Boolean",
-  "onPremisesDomainName": "String",
-  "onPremisesSamAccountName": "String",
-  "onPremisesUserPrincipalName": "String",
+  "jobTitle": "Sales Agent",
+  "mail": "salesagent@contoso.com",
+  "mailNickname": "SalesAgent",
+  "mobilePhone": "+1 425 555 0110",
+  "officeLocation": "18/2111",
   "otherMails": [
-    "String"
+    "salesagent@contoso.com"
   ],
-  "passwordPolicies": "String",
-  "passwordProfile": {
-    "@odata.type": "microsoft.graph.passwordProfile"
-  },
-  "officeLocation": "String",
-  "postalCode": "String",
-  "preferredDataLocation": "String",
-  "preferredLanguage": "String",
-  "provisionedPlans": [
-    {
-      "@odata.type": "microsoft.graph.provisionedPlan"
-    }
-  ],
-  "proxyAddresses": [
-    "String"
-  ],
-  "refreshTokensValidFromDateTime": "String (timestamp)",
-  "securityIdentifier": "String",
-  "serviceProvisioningErrors": [
-    {
-      "@odata.type": "microsoft.graph.serviceProvisioningXmlError"
-    }
-  ],
-  "showInAddressList": "Boolean",
-  "signInSessionsValidFromDateTime": "String (timestamp)",
-  "state": "String",
-  "streetAddress": "String",
-  "surname": "String",
-  "usageLocation": "String",
-  "userPrincipalName": "String",
-  "externalUserState": "String",
-  "externalUserStateChangeDateTime": "String",
-  "userType": "String",
-  "identityParentId": "String",
-  "mailboxSettings": {
-    "@odata.type": "microsoft.graph.mailboxSettings"
-  },
-  "deviceEnrollmentLimit": "Integer",
-  "print": {
-    "@odata.type": "microsoft.graph.userPrint"
-  },
-  "aboutMe": "String",
-  "birthday": "String (timestamp)",
-  "hireDate": "String (timestamp)",
-  "interests": [
-    "String"
-  ],
-  "mySite": "String",
-  "pastProjects": [
-    "String"
-  ],
-  "preferredName": "String",
-  "responsibilities": [
-    "String"
-  ],
-  "schools": [
-    "String"
-  ],
-  "skills": [
-    "String"
-  ]
+  "postalCode": "98052",
+  "preferredLanguage": "en-US",
+  "state": "WA",
+  "streetAddress": "9256 Towne Center Dr., Suite 400",
+  "surname": "Agent",
+  "usageLocation": "US",
+  "userPrincipalName": "salesagent@contoso.com",
+  "userType": "Member"
 }
 ```
 

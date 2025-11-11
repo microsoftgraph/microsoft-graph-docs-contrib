@@ -35,7 +35,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-DELETE ** Entity URI for Microsoft.DirectoryServices.agentUser not found
+DELETE /agentUsers/{id | userPrincipalName}
 ```
 
 ## Request headers
@@ -63,7 +63,7 @@ The following example shows a request.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta** Entity URI for Microsoft.DirectoryServices.agentUser not found
+DELETE https://graph.microsoft.com/beta/agentuser/ba9a3254-9f18-4209-aeb3-9e42a35b5be4 
 ```
 
 
