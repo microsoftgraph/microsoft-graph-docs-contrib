@@ -6,7 +6,7 @@ ms.author: ombongifaith
 ms.reviewer: Licantrop0
 ms.subservice: enterprise-mcp-server
 ms.topic: overview
-ms.date: 11/05/2025
+ms.date: 11/11/2025
 
 #customer intent: As a developer or IT administrator, I want to understand the Microsoft MCP Server for Enterprise so that I can effectively use natural language to query and manage my organization's identity and device data.
 ---
@@ -100,7 +100,4 @@ MicrosoftGraphActivityLogs
 
 ## Next step
 
-- [Get started with Microsoft MCP Server for Enterprise](./mcp-server/get-started-vscode.md)
-<!--
-- [Supported scenarios and examples](./mcp-server/supported-scenarios.md)
--->
+- [Provision the MCP Server for Enterprise](/mcp-server/provision-mcp.md)
