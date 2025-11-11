@@ -25,7 +25,7 @@ Inherits from [entity](../resources/entity.md).
 |[Create](../api/mailsearchfolder-post-userconfigurations.md)|[userConfiguration](../resources/userconfiguration.md)|Create a new [userConfiguration](../resources/userconfiguration.md) object.|
 |[Get](../api/userconfiguration-get.md)|[userConfiguration](../resources/userconfiguration.md)|Read the properties and relationships of a [userConfiguration](../resources/userconfiguration.md) object.|
 |[Update](../api/userconfiguration-update.md)|[userConfiguration](../resources/userconfiguration.md)|Update the properties of a [userConfiguration](../resources/userconfiguration.md) object.|
-|[Delete](../api/mailsearchfolder-delete-userconfigurations.md)|None|Delete a [userConfiguration](../resources/userconfiguration.md) object.|
+|[Delete](../api/userconfiguration-delete.md)|None|Delete a [userConfiguration](../resources/userconfiguration.md) object.|
 
 ## Properties
 |Property|Type|Description|
