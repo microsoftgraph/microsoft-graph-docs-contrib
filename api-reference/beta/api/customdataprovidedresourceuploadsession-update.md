@@ -8,13 +8,13 @@ ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 
-# Update customDataProvidedResourceFile
+# Update customDataProvidedResourceUploadSession
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the status of an [customDataProvidedResourceUploadSession](../resources/customdataprovidedresourceuploadsession.md) created for a [customDataProvidedResource](../resources/customdataprovidedresource.md) object.
+Update the properties of a [customDataProvidedResourceUploadSession](../resources/customdataprovidedresourceuploadsession.md) created for a [customDataProvidedResource](../resources/customdataprovidedresource.md) object.
 
 ## Permissions
 
@@ -51,7 +51,6 @@ PATCH /identityGovernance/entitlementManagement/accessPackageCatalogs/{accessPac
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
 
-**TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
 |isUploadDone|Boolean|Whether the upload session is completed. Required.|
