@@ -20,7 +20,7 @@ Represents a place bulk upsert operation.
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/place-listoperations.md)|[placeOperation](../resources/placeoperation.md) collection|Get a list of the placeOperation objects and their properties. Details are not listed.|
+|[List](../api/place-listoperations.md)|[placeOperation](../resources/placeoperation.md) collection|Get a list of the placeOperation objects and their properties. Details aren't listed.|
 |[Get](../api/place-getoperation.md)|[placeOperation](../resources/placeoperation.md)|Read the properties and relationships of [placeOperation](../resources/placeoperation.md) object.|
 
 ## Properties
@@ -28,7 +28,7 @@ Represents a place bulk upsert operation.
 |:---|:---|:---|
 |details|[placeExecutionResult](../resources/placeexecutionresult.md) collection|The detailed execution result of the operation, including errors and succeeded places.|
 |id|String|The id of the operation.|
-|progress|[placeOperationProgress](../resources/placeoperationprogress.md)|The progress of the operation, like how many places have succeeded and how many places have failed.|
+|progress|[placeOperationProgress](../resources/placeoperationprogress.md)|The progress of the operation.|
 |status|placeOperationStatus|The status of the operation. The possible values are: `created`, `inProgress`, `succeeded`, `failed`, `partiallySucceeded`, `expired`, `unknownFutureValue`.|
 
 ## Relationships

@@ -1,5 +1,5 @@
 ---
-title: "place: getOperation"
+title: "Place: getOperation"
 description: "Get a place operation by id"
 author: "Dongjing-MSIT"
 ms.date: 11/10/2025
@@ -8,7 +8,7 @@ ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
-# place: getOperation
+# Place: getOperation
 
 Namespace: microsoft.graph
 
