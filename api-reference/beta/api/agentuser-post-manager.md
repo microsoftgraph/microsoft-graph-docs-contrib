@@ -1,6 +1,6 @@
 ---
-title: "Add manager"
-description: "Assign an agent user's manager."
+title: "Add manager (for agentUser)"
+description: "Assign the agent user's manager."
 author: "yyuank"
 ms.reviewer: "iamut"
 ms.date: 11/06/2025
@@ -9,7 +9,7 @@ ms.subservice: entra-id
 doc_type: apiPageType
 ---
 
-# Add manager
+# Add manager (for agentUser)
 
 Namespace: microsoft.graph
 

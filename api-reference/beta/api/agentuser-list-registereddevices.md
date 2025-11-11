@@ -1,6 +1,6 @@
 ---
-title: "List registeredDevices"
-description: "Get the list of agent user's registered devices."
+title: "List registeredDevices (for agentUser)"
+description: "Get the list of devices registered to the agent user."
 author: "yyuank"
 ms.reviewer: "iamut"
 ms.date: 11/06/2025
@@ -9,7 +9,7 @@ ms.subservice: entra-id
 doc_type: apiPageType
 ---
 
-# List registeredDevices
+# List registeredDevices (for agentUser)
 
 Namespace: microsoft.graph
 

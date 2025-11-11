@@ -1,6 +1,6 @@
 ---
-title: "Remove sponsor"
-description: "Remove an agent user's sponsor."
+title: "Remove sponsor (for agentUser)"
+description: "Remove a user or group from the sponsors of an agent user."
 author: "yyuank"
 ms.reviewer: "iamut"
 ms.date: 11/06/2025
@@ -9,7 +9,7 @@ ms.subservice: entra-id
 doc_type: apiPageType
 ---
 
-# Remove sponsors
+# Remove sponsor (for agentUser)
 
 Namespace: microsoft.graph
 

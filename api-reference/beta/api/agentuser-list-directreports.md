@@ -1,5 +1,5 @@
 ---
-title: "List directReports"
+title: "List directReports (for agentUser)"
 description: "Get an agent user's direct reports."
 author: "yyuank"
 ms.reviewer: "iamut"
@@ -9,7 +9,7 @@ ms.subservice: entra-id
 doc_type: apiPageType
 ---
 
-# List directReports
+# List directReports (for agentUser)
 
 Namespace: microsoft.graph
 

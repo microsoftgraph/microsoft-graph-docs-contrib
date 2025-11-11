@@ -1,5 +1,5 @@
 ---
-title: "Add sponsor"
+title: "Add sponsor (for agentUser)"
 description: "Assign an agent user a sponsor."
 author: "yyuank"
 ms.reviewer: "iamut"
@@ -9,7 +9,7 @@ ms.subservice: entra-id
 doc_type: apiPageType
 ---
 
-# Add sponsors
+# Add sponsors (for agentUser)
 
 Namespace: microsoft.graph
 

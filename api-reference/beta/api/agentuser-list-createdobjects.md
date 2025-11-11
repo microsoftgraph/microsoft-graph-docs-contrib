@@ -1,5 +1,5 @@
 ---
-title: "List createdObjects"
+title: "List createdObjects (for agentUser)"
 description: "Get a list of directory objects that were created by the agent user."
 author: "yyuank"
 ms.reviewer: "iamut"
@@ -9,7 +9,7 @@ ms.subservice: entra-id
 doc_type: apiPageType
 ---
 
-# List createdObjects
+# List createdObjects (for agentUser)
 
 Namespace: microsoft.graph
 

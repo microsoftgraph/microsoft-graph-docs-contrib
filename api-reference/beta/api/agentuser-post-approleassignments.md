@@ -1,5 +1,5 @@
 ---
-title: "Create appRoleAssignment"
+title: "Create appRoleAssignment (for agentUser)"
 description: "Grant an app role assignment to an agent user."
 author: "yyuank"
 ms.reviewer: "iamut"
@@ -9,7 +9,7 @@ ms.subservice: entra-id
 doc_type: apiPageType
 ---
 
-# Create appRoleAssignment
+# Create appRoleAssignment (for agentUser)
 
 Namespace: microsoft.graph
 

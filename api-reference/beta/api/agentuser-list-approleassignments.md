@@ -1,5 +1,5 @@
 ---
-title: "List appRoleAssignments"
+title: "List appRoleAssignments (for agentUser)"
 description: "Retrieve the list of app role assignments granted to an agent user."
 author: "yyuank"
 ms.reviewer: "iamut"
@@ -9,7 +9,7 @@ ms.subservice: entra-id
 doc_type: apiPageType
 ---
 
-# List appRoleAssignments
+# List appRoleAssignments (for agentUser)
 
 Namespace: microsoft.graph
 

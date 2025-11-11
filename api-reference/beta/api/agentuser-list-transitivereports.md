@@ -1,5 +1,5 @@
 ---
-title: "List transitiveReports"
+title: "List transitiveReports (for agentUser)"
 description: "Get the transitive reports for an agent user."
 author: "yyuank"
 ms.reviewer: "iamut"
@@ -9,7 +9,7 @@ ms.subservice: entra-id
 doc_type: apiPageType
 ---
 
-# List transitiveReports
+# List transitiveReports (for agentUser)
 
 Namespace: microsoft.graph
 

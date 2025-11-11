@@ -1,6 +1,6 @@
 ---
-title: "List ownedDevices"
-description: "Get the list of devices that are owned by the agent user."
+title: "List ownedDevices (for agentUser)"
+description: "Get the list of devices owned by the agent user."
 author: "yyuank"
 ms.reviewer: "iamut"
 ms.date: 11/06/2025
@@ -9,7 +9,7 @@ ms.subservice: entra-id
 doc_type: apiPageType
 ---
 
-# List ownedDevices
+# List ownedDevices (for agentUser)
 
 Namespace: microsoft.graph
 

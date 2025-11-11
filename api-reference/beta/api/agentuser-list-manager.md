@@ -1,6 +1,6 @@
 ---
-title: "List manager"
-description: "Get agent user's manager. Returns the user or contact assigned as the agent user's manager."
+title: "List manager (for agentUser)"
+description: "Get the user or contact assigned as the agent user's manager."
 author: "yyuank"
 ms.reviewer: "iamut"
 ms.date: 11/06/2025
@@ -9,7 +9,7 @@ ms.subservice: entra-id
 doc_type: apiPageType
 ---
 
-# List manager
+# List manager (for agentUser)
 
 Namespace: microsoft.graph
 

@@ -1,5 +1,5 @@
 ---
-title: "List scopedAdministratorOf"
+title: "List scopedAdministratorOf (for agentUser)"
 description: "Retrieve a list of scopedRoleMembership for the agent user."
 author: "yyuank"
 ms.reviewer: "iamut"
@@ -9,7 +9,7 @@ ms.subservice: entra-id
 doc_type: apiPageType
 ---
 
-# List scopedRoleMemberOf
+# List scopedAdministratorOf (for agentUser)
 
 Namespace: microsoft.graph
 

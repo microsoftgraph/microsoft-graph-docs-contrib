@@ -1,5 +1,5 @@
 ---
-title: "List sponsors"
+title: "List sponsors (for agentUser)"
 description: "Get an agent user's sponsors."
 author: "yyuank"
 ms.reviewer: "iamut"
@@ -9,7 +9,7 @@ ms.subservice: entra-id
 doc_type: apiPageType
 ---
 
-# List sponsors
+# List sponsors (for agentUser)
 
 Namespace: microsoft.graph
 

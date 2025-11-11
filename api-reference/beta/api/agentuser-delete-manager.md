@@ -1,5 +1,5 @@
 ---
-title: "Remove manager"
+title: "Remove manager (for agentUser)"
 description: "Remove an agent user's manager."
 author: "yyuank"
 ms.reviewer: "iamut"
@@ -9,7 +9,7 @@ ms.subservice: entra-id
 doc_type: apiPageType
 ---
 
-# Remove manager
+# Remove manager (for agentUser)
 
 Namespace: microsoft.graph
 
