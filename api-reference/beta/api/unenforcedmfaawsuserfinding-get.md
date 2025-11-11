@@ -59,7 +59,7 @@ The following example shows a request.
   "name": "get_unenforcedmfaawsuserfinding"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/MSxVbmVuZm9yY2VkTWZhQXdzVXNlckZpbmRpbmcsNjUzMjU/microsoft.graph.unenforcedMfaAwsUserFinding
 ```
 

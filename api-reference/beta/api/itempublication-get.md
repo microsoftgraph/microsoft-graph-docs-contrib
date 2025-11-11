@@ -59,7 +59,7 @@ If successful, this method returns a `200 OK` response code and an [itemPublicat
   "name": "get_itempublication"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/profile/publications/{id}
 ```
 

@@ -59,7 +59,7 @@ Returns all review definitions where the calling user is a reviewer.
   "name": "accessreviewscheduledefinition_filterbycurrentuser"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitions/filterByCurrentUser(on='reviewer')
 ```
 

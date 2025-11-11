@@ -58,7 +58,7 @@ The following example shows a request.
   "name": "get_admindynamics"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/admin/dynamics
 ```
 

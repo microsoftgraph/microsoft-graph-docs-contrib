@@ -65,7 +65,7 @@ The following example shows a request.
   "name": "list_acronym"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/search/acronyms
 ```
 

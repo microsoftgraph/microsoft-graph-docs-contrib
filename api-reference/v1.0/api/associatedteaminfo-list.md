@@ -67,7 +67,7 @@ The following example shows a request.
   "name": "list_associatedteaminfo"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/teamwork/associatedTeams
 ```
 

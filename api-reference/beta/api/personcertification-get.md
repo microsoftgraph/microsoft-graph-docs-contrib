@@ -58,7 +58,7 @@ If successful, this method returns a `200 OK` response code and an [personCertif
   "name": "get_personCertification"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/profile/certifications/{id}
 ```
 

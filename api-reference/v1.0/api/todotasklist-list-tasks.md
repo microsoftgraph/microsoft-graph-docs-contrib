@@ -59,7 +59,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
   "name": "get_todotask_2"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/todo/lists/35e2-35e2-721a-e235-1a72e2351a7/tasks
 ```
 

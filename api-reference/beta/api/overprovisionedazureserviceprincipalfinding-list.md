@@ -64,7 +64,7 @@ The following example shows a request.
   "name": "list_overprovisionedazureserviceprincipalfinding"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/azure/findings/overprovisionedAzureServicePrincipalFinding
 ```
 

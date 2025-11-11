@@ -60,7 +60,7 @@ The following example shows a request.
   "name": "list_monthlyauthenticationsmetric"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/reports/userInsights/monthly/authentications
 ```
 

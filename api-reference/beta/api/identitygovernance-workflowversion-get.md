@@ -70,7 +70,7 @@ The following example shows a request.
   "sampleKeys": ["156ce798-1eb6-4e0a-8515-e79f54d04390", "3"]
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workflows/156ce798-1eb6-4e0a-8515-e79f54d04390/versions/3
 ```
 
@@ -203,7 +203,7 @@ The following example shows a request.
   "sampleKeys": ["15239232-66ed-445b-8292-2f5bbb2eb833", "2"]
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workflows/15239232-66ed-445b-8292-2f5bbb2eb833/versions/2?$select=category,displayName,versionNumber,executionConditions&$expand=tasks
 ```
 
