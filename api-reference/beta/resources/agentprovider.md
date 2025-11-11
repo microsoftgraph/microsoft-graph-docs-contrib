@@ -1,6 +1,6 @@
 ---
 title: "agentProvider resource type"
-description: "**TODO: Add Description**"
+description: "Represents the service provider of an agent."
 author: "jasondou"
 ms.date: 11/06/2025
 ms.localizationpriority: medium
@@ -14,14 +14,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents the service provider of an agent.
 
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|organization|String|**TODO: Add Description**|
-|url|String|**TODO: Add Description**|
+|organization|String| The name of the agent provider's organization.|
+|url|String|A URL for the agent provider's website or relevant documentation.|
 
 ## Relationships
 None.

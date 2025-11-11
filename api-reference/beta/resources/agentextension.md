@@ -1,6 +1,6 @@
 ---
 title: "agentExtension resource type"
-description: "**TODO: Add Description**"
+description: "A declaration of a protocol extension supported by an Agent."
 author: "jasondou"
 ms.date: 11/06/2025
 ms.localizationpriority: medium
@@ -14,16 +14,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+A declaration of a protocol extension supported by an Agent.
 
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|description|String|**TODO: Add Description**|
-|params|[agentExtensionParams](../resources/agentextensionparams.md)|**TODO: Add Description**|
-|required|Boolean|**TODO: Add Description**|
-|uri|String|**TODO: Add Description**|
+|description|String|A human-readable description of how this agent uses the extension.|
+|params|[agentExtensionParams](../resources/agentextensionparams.md)| Extension-specific configuration parameters.|
+|required|Boolean|If true, the client must understand and comply with the extension's requirements to interact with the agent.|
+|uri|String|The unique URI identifying the extension.|
 
 ## Relationships
 None.

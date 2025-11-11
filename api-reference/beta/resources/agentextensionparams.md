@@ -1,6 +1,6 @@
 ---
 title: "agentExtensionParams resource type"
-description: "**TODO: Add Description**"
+description: "Extension-specific configuration parameters."
 author: "jasondou"
 ms.date: 11/06/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Extension-specific configuration parameters.
 
 This resource is an open type.
 

@@ -1,6 +1,6 @@
 ---
 title: "oAuthFlow resource type"
-description: "**TODO: Add Description**"
+description: "An object containing configuration information for a supported OAuth flow."
 author: "jasondou"
 ms.date: 11/06/2025
 ms.localizationpriority: medium
@@ -14,16 +14,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+An object containing configuration information for a supported OAuth flow.
 
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|authorizationUrl|String|**TODO: Add Description**|
-|refreshUrl|String|**TODO: Add Description**|
-|scopes|[oAuthScopeDictionary](../resources/oauthscopedictionary.md)|**TODO: Add Description**|
-|tokenUrl|String|**TODO: Add Description**|
+|authorizationUrl|String|The authorization URL to be used for this flow. This MUST be in the form of a URL. The OAuth2 standard requires the use of TLS.|
+|refreshUrl|String|The URL to be used for obtaining refresh tokens. This MUST be in the form of a URL. The OAuth2 standard requires the use of TLS.|
+|scopes|[oAuthScopeDictionary](../resources/oauthscopedictionary.md)|The available scopes for the OAuth2 security scheme. A map between the scope name and a short description for it. The map MAY be empty.|
+|tokenUrl|String|The token URL to be used for this flow. This MUST be in the form of a URL. The OAuth2 standard requires the use of TLS.|
 
 ## Relationships
 None.

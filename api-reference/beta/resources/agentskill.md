@@ -1,6 +1,6 @@
 ---
 title: "agentSkill resource type"
-description: "**TODO: Add Description**"
+description: "Represents a distinct capability or function that an agent can perform."
 author: "jasondou"
 ms.date: 11/06/2025
 ms.localizationpriority: medium
@@ -14,20 +14,20 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents a distinct capability or function that an agent can perform.
 
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|description|String|**TODO: Add Description**|
-|displayName|String|**TODO: Add Description**|
-|examples|String collection|**TODO: Add Description**|
-|id|String|**TODO: Add Description**|
-|inputModes|String collection|**TODO: Add Description**|
-|outputModes|String collection|**TODO: Add Description**|
-|security|[securityRequirement](../resources/securityrequirement.md) collection|**TODO: Add Description**|
-|tags|String collection|**TODO: Add Description**|
+|description|String|A detailed description of the skill, intended to help clients or users understand its purpose and functionality.|
+|displayName|String|A human-readable name for the skill.|
+|examples|String collection|Example prompts or scenarios that this skill can handle. Provides a hint to the client on how to use the skill.|
+|id|String|A unique identifier for the agent's skill.|
+|inputModes|String collection|The set of supported input MIME types for this skill, overriding the agent's defaults.
+|outputModes|String collection|The set of supported output MIME types for this skill, overriding the agent's defaults.|
+|security|[securityRequirement](../resources/securityrequirement.md) collection|Security schemes necessary for the agent to leverage this skill.|
+|tags|String collection|A set of keywords describing the skill's capabilities.|
 
 ## Relationships
 None.

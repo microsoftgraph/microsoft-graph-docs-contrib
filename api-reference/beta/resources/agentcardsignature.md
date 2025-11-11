@@ -1,6 +1,6 @@
 ---
 title: "agentCardSignature resource type"
-description: "**TODO: Add Description**"
+description: "AgentCardSignature represents a JWS signature of an AgentCard. This follows the JSON format of an RFC 7515 JSON Web Signature (JWS)."
 author: "jasondou"
 ms.date: 11/06/2025
 ms.localizationpriority: medium
@@ -14,15 +14,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+AgentCardSignature represents a JWS signature of an AgentCard. This follows the JSON format of an RFC 7515 JSON Web Signature (JWS).
 
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|header|[jwsHeader](../resources/jwsheader.md)|**TODO: Add Description**|
-|protected|String|**TODO: Add Description**|
-|signature|String|**TODO: Add Description**|
+|header|[jwsHeader](../resources/jwsheader.md)| The unprotected JWS header values.|
+|protected|String|The protected JWS header for the signature. This is a Base64url-encoded JSON object, as per RFC 7515.|
+|signature|String|The computed signature, Base64url-encoded.|
 
 ## Relationships
 None.

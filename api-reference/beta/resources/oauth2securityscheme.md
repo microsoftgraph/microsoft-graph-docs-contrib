@@ -1,6 +1,6 @@
 ---
 title: "oAuth2SecurityScheme resource type"
-description: "**TODO: Add Description**"
+description: "Represents an OAuth 2.0 security scheme used for authenticating API requests."
 author: "jasondou"
 ms.date: 11/06/2025
 ms.localizationpriority: medium
@@ -14,18 +14,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+Represents an OAuth 2.0 security scheme used for authenticating API requests.
 
 Inherits from [securityScheme](../resources/securityscheme.md).
-
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|description|String|**TODO: Add Description** Inherited from [securityScheme](../resources/securityscheme.md).|
-|flows|[oAuthFlows](../resources/oauthflows.md)|**TODO: Add Description**|
-|type|String|**TODO: Add Description** Inherited from [securityScheme](../resources/securityscheme.md).|
+|description|String|A description of the security scheme. Inherited from [securityScheme](../resources/securityscheme.md).|
+|flows|[oAuthFlows](../resources/oauthflows.md)|The OAuth 2.0 flows (grant types) supported by this security scheme, such as authorization code, client credentials, implicit, and password flows.|
+|type|String|The type of the security scheme. Inherited from [securityScheme](../resources/securityscheme.md).|
 
 ## Relationships
 None.
@@ -46,5 +44,3 @@ The following JSON representation shows the resource type.
     "@odata.type": "microsoft.graph.oAuthFlows"
   }
 }
-```
-

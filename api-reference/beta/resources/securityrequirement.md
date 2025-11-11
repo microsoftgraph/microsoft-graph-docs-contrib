@@ -1,6 +1,6 @@
 ---
 title: "securityRequirement resource type"
-description: "**TODO: Add Description**"
+description: "Lists the required security schemes to execute this operation."
 author: "jasondou"
 ms.date: 11/06/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Lists the required security schemes to execute this operation. 
 
 This resource is an open type.
 

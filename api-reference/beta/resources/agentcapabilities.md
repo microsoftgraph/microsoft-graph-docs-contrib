@@ -1,6 +1,6 @@
 ---
 title: "agentCapabilities resource type"
-description: "**TODO: Add Description**"
+description: "Defines optional capabilities supported by an agent."
 author: "jasondou"
 ms.date: 11/06/2025
 ms.localizationpriority: medium
@@ -14,16 +14,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Defines optional capabilities supported by an agent.
 
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|extensions|[agentExtension](../resources/agentextension.md) collection|**TODO: Add Description**|
-|pushNotifications|Boolean|**TODO: Add Description**|
-|stateTransitionHistory|Boolean|**TODO: Add Description**|
-|streaming|Boolean|**TODO: Add Description**|
+|extensions|[agentExtension](../resources/agentextension.md) collection|A list of protocol extensions supported by the agent.|
+|pushNotifications|Boolean|Indicates if the agent supports sending push notifications for asynchronous task updates.|
+|stateTransitionHistory|Boolean|Indicates if the agent provides a history of state transitions for a task.|
+|streaming|Boolean|Indicates if the agent supports Server-Sent Events (SSE) for streaming responses.|
 
 ## Relationships
 None.

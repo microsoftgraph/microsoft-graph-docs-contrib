@@ -1,6 +1,6 @@
 ---
 title: "openIdConnectSecurityScheme resource type"
-description: "**TODO: Add Description**"
+description: "Represents an OpenID Connect security scheme used for authenticating API requests."
 author: "jasondou"
 ms.date: 11/06/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents an OpenID Connect security scheme used for authenticating API requests.
 
 
 Inherits from [securityScheme](../resources/securityscheme.md).
@@ -23,9 +23,9 @@ Inherits from [securityScheme](../resources/securityscheme.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|description|String|**TODO: Add Description** Inherited from [securityScheme](../resources/securityscheme.md).|
-|openIdConnectUrl|String|**TODO: Add Description**|
-|type|String|**TODO: Add Description** Inherited from [securityScheme](../resources/securityscheme.md).|
+|description|String|A description of the security scheme. Inherited from [securityScheme](../resources/securityscheme.md).|
+|openIdConnectUrl|String|The URL to the OpenID Connect discovery endpoint, which provides metadata about the OpenID Connect provider's configuration.|
+|type|String|The type of the security scheme. Inherited from [securityScheme](../resources/securityscheme.md).|
 
 ## Relationships
 None.
@@ -45,4 +45,3 @@ The following JSON representation shows the resource type.
   "openIdConnectUrl": "String"
 }
 ```
-

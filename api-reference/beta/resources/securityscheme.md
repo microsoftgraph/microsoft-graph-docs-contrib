@@ -1,6 +1,6 @@
 ---
 title: "securityScheme resource type"
-description: "**TODO: Add Description**"
+description: "Defines a security scheme that can be used by the operations."
 author: "jasondou"
 ms.date: 11/06/2025
 ms.localizationpriority: medium
@@ -14,15 +14,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Defines a security scheme that can be used by the operations.
 This is an abstract type.
 
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|description|String|**TODO: Add Description**|
-|type|String|**TODO: Add Description**|
+|description|String|A description for security scheme.|
+|type|String|The type of the security scheme. Valid values are "apiKey", "http", "mutualTLS", "oauth2", "openIdConnect".|
 
 ## Relationships
 None.

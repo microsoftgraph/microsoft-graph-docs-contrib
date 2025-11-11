@@ -1,6 +1,6 @@
 ---
 title: "agentInterface resource type"
-description: "**TODO: Add Description**"
+description: "Declares a combination of a target URL and a transport protocol for interacting with the agent."
 author: "jasondou"
 ms.date: 11/06/2025
 ms.localizationpriority: medium
@@ -14,14 +14,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Declares a combination of a target URL and a transport protocol for interacting with the agent. This allows agents to expose the same functionality over multiple transport mechanisms.
 
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|transport|String|**TODO: Add Description**|
-|url|String|**TODO: Add Description**|
+|transport|String|The transport protocol supported at this URL.|
+|url|String|The URL where this interface is available. Must be a valid absolute HTTPS URL in production.|
 
 ## Relationships
 None.

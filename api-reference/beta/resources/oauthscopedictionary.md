@@ -1,6 +1,6 @@
 ---
 title: "oAuthScopeDictionary resource type"
-description: "**TODO: Add Description**"
+description: "The available scopes for the OAuth2 security scheme. A map between the scope name and a short description for it. The map MAY be empty."
 author: "jasondou"
 ms.date: 11/06/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+The available scopes for the OAuth2 security scheme. A map between the scope name and a short description for it. The map MAY be empty.
 
 This resource is an open type.
 

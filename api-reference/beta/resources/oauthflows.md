@@ -1,6 +1,6 @@
 ---
 title: "oAuthFlows resource type"
-description: "**TODO: Add Description**"
+description: "Allows configuration of the supported OAuth Flows."
 author: "jasondou"
 ms.date: 11/06/2025
 ms.localizationpriority: medium
@@ -14,16 +14,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Allows configuration of the supported OAuth Flows.
 
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|authorizationCode|[oAuthFlow](../resources/oauthflow.md)|**TODO: Add Description**|
-|clientCredentials|[oAuthFlow](../resources/oauthflow.md)|**TODO: Add Description**|
-|implicit|[oAuthFlow](../resources/oauthflow.md)|**TODO: Add Description**|
-|password|[oAuthFlow](../resources/oauthflow.md)|**TODO: Add Description**|
+|authorizationCode|[oAuthFlow](../resources/oauthflow.md)|Configuration for the OAuth Authorization Code flow.|
+|clientCredentials|[oAuthFlow](../resources/oauthflow.md)|Configuration for the OAuth Client Credentials flow.|
+|implicit|[oAuthFlow](../resources/oauthflow.md)|Configuration for the OAuth Implicit flow|
+|password|[oAuthFlow](../resources/oauthflow.md)|Configuration for the OAuth Resource Owner Password flow|
 
 ## Relationships
 None.

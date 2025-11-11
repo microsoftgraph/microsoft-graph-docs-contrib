@@ -1,6 +1,6 @@
 ---
 title: "agentCollection resource type"
-description: "**TODO: Add Description**"
+description: "Represents a collection of agent instances."
 author: "jasondou"
 ms.date: 11/06/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents a collection of agent instances. Agent collections provide a way to organize and group related agent instances for management and organizational purposes.
 
 
 Inherits from [entity](../resources/entity.md).
@@ -35,20 +35,20 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|createdBy|String|**TODO: Add Description**|
-|createdDateTime|DateTimeOffset|**TODO: Add Description**|
-|description|String|**TODO: Add Description**|
-|displayName|String|**TODO: Add Description**|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md). Inherits from [entity](../resources/entity.md)|
-|lastModifiedDateTime|DateTimeOffset|**TODO: Add Description**|
-|managedBy|String|**TODO: Add Description**|
-|originatingStore|String|**TODO: Add Description**|
-|ownerIds|String collection|**TODO: Add Description**|
+|createdBy|String|User who created the agent instance|
+|createdDateTime|DateTimeOffset|Timestamp when agent collection was created|
+|description|String|Description / purpose of the collection|
+|displayName|String|Friendly name of the collection|
+|id|String|Unique identifier for the collection. Inherited from [entity](../resources/entity.md). Inherits from [entity](../resources/entity.md)|
+|lastModifiedDateTime|DateTimeOffset|Timestamp of last update|
+|managedBy|String|Application (service principal) id managing the collection|
+|originatingStore|String|Source system/store where the collection originated|
+|ownerIds|String collection|IDs of owners allowed to manage the collection|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|members|[agentInstance](../resources/agentinstance.md) collection|**TODO: Add Description**|
+|members|[agentInstance](../resources/agentinstance.md) collection|List of agent instance members|
 
 ## JSON representation
 The following JSON representation shows the resource type.
@@ -76,4 +76,3 @@ The following JSON representation shows the resource type.
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
-

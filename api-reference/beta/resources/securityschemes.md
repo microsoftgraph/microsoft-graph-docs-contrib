@@ -1,6 +1,6 @@
 ---
 title: "securitySchemes resource type"
-description: "**TODO: Add Description**"
+description: "Defines a list of security schemes that can be used by the operations."
 author: "jasondou"
 ms.date: 11/06/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Defines a list of security schemes that can be used by the operations.
 
 This resource is an open type.
 
