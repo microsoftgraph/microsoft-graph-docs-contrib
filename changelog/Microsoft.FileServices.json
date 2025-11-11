@@ -4803,9 +4803,9 @@
         {
           "Id": "b8a1c32f-bb82-4b0b-9398-e95488659404",
           "ApiChange": "Method",
-          "ChangedApiName": "getBySourceSiteUr",
+          "ChangedApiName": "getBySourceSiteUrl",
           "ChangeType": "Addition",
-          "Description": "Added the [getBySourceSiteUr](https://learn.microsoft.com/en-us/graph/api/sharepointmigrationtask-getbysourcesiteurl?view=graph-rest-beta) method to the [sharePointMigrationTask](https://learn.microsoft.com/en-us/graph/api/resources/sharepointmigrationtask?view=graph-rest-beta) resource.",
+          "Description": "Added the [getBySourceSiteUrl](https://learn.microsoft.com/en-us/graph/api/sharepointmigrationtask-getbysourcesiteurl?view=graph-rest-beta) method to the [sharePointMigrationTask](https://learn.microsoft.com/en-us/graph/api/resources/sharepointmigrationtask?view=graph-rest-beta) resource.",
           "Target": "sharePointMigrationTask"
         },
         {
