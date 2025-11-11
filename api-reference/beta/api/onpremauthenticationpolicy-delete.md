@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a [onPremAuthenticationPolicy](../resources/onpremauthenticationpolicy.md) object.
+Delete an [onPremAuthenticationPolicy](../resources/onpremauthenticationpolicy.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
