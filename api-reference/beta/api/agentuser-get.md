@@ -24,9 +24,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 |Permission type      | Least privileged permission | Higher privileged permissions |
 |:--------------------|:---------------------------|:-----------------------------|
-|Delegated (work or school account) | User.ReadWrite.All | Not available. |
+|Delegated (work or school account) | User.ReadBasic.All | User.Read.All, AgentIdUser.ReadWrite.IdentityParentedBy, AgentIdUser.ReadWrite.All, User.ReadWrite.All |
 |Delegated (personal Microsoft account) | Not supported. | Not supported.|
-|Application | User.ReadWrite.All | Not available. |
+|Application | User.ReadBasic.All | User.Read.All, AgentIdUser.ReadWrite.IdentityParentedBy, AgentIdUser.ReadWrite.All, User.ReadWrite.All |
+
 
 ## HTTP request
 
@@ -35,7 +36,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /riskyAgentUser/agentUser
+GET /user/id
 ```
 
 ## Optional query parameters
@@ -63,11 +64,11 @@ If successful, this method returns a `200 OK` response code and an [agentUser](.
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "get_agentuser"
+  "name": "get_user"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/riskyAgentUser/agentUser
+GET https://graph.microsoft.com/beta/users/929393ae-1e1d-159f-0d83-29f7df42e7b9
 ```
 
 
@@ -97,7 +98,7 @@ Content-Type: application/json
       "@odata.type": "microsoft.graph.cloudLicensing.userCloudLicensing"
     },
     "accountEnabled": "Boolean",
-    "ageGroup": "String",
+    "ageGroup": null,
     "assignedLicenses": [
       {
         "@odata.type": "microsoft.graph.assignedLicense"
@@ -108,9 +109,7 @@ Content-Type: application/json
         "@odata.type": "microsoft.graph.assignedPlan"
       }
     ],
-    "authorizationInfo": {
-      "@odata.type": "microsoft.graph.authorizationInfo"
-    },
+    "authorizationInfo": null,
     "businessPhones": [
       "String"
     ],
@@ -119,19 +118,11 @@ Content-Type: application/json
       "@odata.type": "microsoft.graph.cloudRealtimeCommunicationInfo"
     },
     "companyName": "String",
-    "consentProvidedForMinor": "String",
+    "consentProvidedForMinor": null,
     "country": "String",
     "createdDateTime": "String (timestamp)",
     "creationType": "String",
-    "customSecurityAttributes": {
-      "@odata.type": "microsoft.graph.customSecurityAttributeValue"
-    },
     "department": "String",
-    "deviceKeys": [
-      {
-        "@odata.type": "microsoft.graph.deviceKey"
-      }
-    ],
     "displayName": "String",
     "employeeHireDate": "String (timestamp)",
     "employeeId": "String",
@@ -157,8 +148,8 @@ Content-Type: application/json
     "isManagementRestricted": "Boolean",
     "isResourceAccount": "Boolean",
     "jobTitle": "String",
-    "lastPasswordChangeDateTime": "String (timestamp)",
-    "legalAgeGroupClassification": "String",
+    "lastPasswordChangeDateTime": null,
+    "legalAgeGroupClassification": null,
     "licenseAssignmentStates": [
       {
         "@odata.type": "microsoft.graph.licenseAssignmentState"
@@ -167,32 +158,22 @@ Content-Type: application/json
     "mail": "String",
     "mailNickname": "String",
     "mobilePhone": "String",
-    "onPremisesDistinguishedName": "String",
-    "onPremisesExtensionAttributes": {
-      "@odata.type": "microsoft.graph.onPremisesExtensionAttributes"
-    },
-    "onPremisesImmutableId": "String",
-    "onPremisesLastSyncDateTime": "String (timestamp)",
-    "onPremisesProvisioningErrors": [
-      {
-        "@odata.type": "microsoft.graph.onPremisesProvisioningError"
-      }
-    ],
-    "onPremisesSecurityIdentifier": "String",
-    "onPremisesSipInfo": {
-      "@odata.type": "microsoft.graph.onPremisesSipInfo"
-    },
-    "onPremisesSyncEnabled": "Boolean",
-    "onPremisesDomainName": "String",
-    "onPremisesSamAccountName": "String",
-    "onPremisesUserPrincipalName": "String",
+    "onPremisesDistinguishedName": null,
+    "onPremisesExtensionAttributes": null,
+    "onPremisesImmutableId": null,
+    "onPremisesLastSyncDateTime": null,
+    "onPremisesProvisioningErrors": null,
+    "onPremisesSecurityIdentifier": null,
+    "onPremisesSipInfo": null,
+    "onPremisesSyncEnabled": null,
+    "onPremisesDomainName": null,
+    "onPremisesSamAccountName": null,
+    "onPremisesUserPrincipalName": null,
     "otherMails": [
       "String"
     ],
-    "passwordPolicies": "String",
-    "passwordProfile": {
-      "@odata.type": "microsoft.graph.passwordProfile"
-    },
+    "passwordPolicies": null,
+    "passwordProfile": null,
     "officeLocation": "String",
     "postalCode": "String",
     "preferredDataLocation": "String",
@@ -219,20 +200,15 @@ Content-Type: application/json
     "surname": "String",
     "usageLocation": "String",
     "userPrincipalName": "String",
-    "externalUserState": "String",
-    "externalUserStateChangeDateTime": "String",
+    "externalUserState": null,
+    "externalUserStateChangeDateTime": null,
     "userType": "String",
     "identityParentId": "String",
     "mailboxSettings": {
       "@odata.type": "microsoft.graph.mailboxSettings"
     },
-    "deviceEnrollmentLimit": "Integer",
-    "print": {
-      "@odata.type": "microsoft.graph.userPrint"
-    },
     "aboutMe": "String",
     "birthday": "String (timestamp)",
-    "hireDate": "String (timestamp)",
     "interests": [
       "String"
     ],
