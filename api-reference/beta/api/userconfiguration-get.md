@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of [userConfiguration](../resources/userconfiguration.md) object.
+Read the properties and relationships of a [userConfiguration](../resources/userconfiguration.md) object.
 
 ## Permissions
 
@@ -69,6 +69,7 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/beta/me/mailFolders/{mailFolderId}/userConfigurations/{userConfigurationId}
 ```
+
 ### Response
 
 The following example shows the response.
@@ -95,4 +96,3 @@ Content-Type: application/json
   ]
 }
 ```
-
