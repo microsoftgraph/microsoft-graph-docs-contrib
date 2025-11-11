@@ -23,14 +23,14 @@ Inherits from [accessPackageResource](../resources/accesspackageresource.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Create customDataProvidedResourceUploadSession](../api/customdataprovidedresourceuploadsession-post.md)|[customDataProvidedResourceUploadSession](../resources/customdataprovidedresourceuploadsession.md)|Create a new customDataProvidedResourceUploadSession object.|
+|[Create](../api/customdataprovidedresource-post-uploadsessions.md)|[customDataProvidedResourceUploadSession](../resources/customdataprovidedresourceuploadsession.md)|Create a new customDataProvidedResourceUploadSession object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|attributes|[accessPackageResourceAttribute](../resources/accesspackageresourceattribute.md) collection| Contains information about the attributes to be collected from the requestor and sent to the resource application. |
 |addedBy|String|The name of the user or application that first added this resource. Read-only.|
 |addedOn|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only. |
+|attributes|[accessPackageResourceAttribute](../resources/accesspackageresourceattribute.md) collection| Contains information about the attributes to be collected from the requestor and sent to the resource application. |
 |description|String|A description for the resource.|
 |displayName|String|The display name of the resource, such as the application name, group name, or site name.|
 |id|String| Read-only.|
