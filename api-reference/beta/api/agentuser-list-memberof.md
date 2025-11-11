@@ -9,7 +9,7 @@ ms.subservice: entra-id
 doc_type: apiPageType
 ---
 
-# List memberOf
+# List memberOf (for agentUser)
 
 Namespace: microsoft.graph
 
