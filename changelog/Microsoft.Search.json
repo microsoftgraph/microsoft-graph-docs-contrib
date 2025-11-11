@@ -13,9 +13,9 @@
         {
           "Id": "f9a8c221-8738-4628-bd68-1984c6ad6934",
           "ApiChange": "Member",
-          "ChangedApiName": "assignedTo",
+          "ChangedApiName": "assignedToPeople",
           "ChangeType": "Addition",
-          "Description": "Added the `assignedTo` member to the **label** enumeration.",
+          "Description": "Added the `assignedToPeople` member to the **label** enumeration.",
           "Target": "label"
         },
         {
