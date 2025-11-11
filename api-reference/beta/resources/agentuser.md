@@ -3,7 +3,7 @@ title: "agentUser resource type"
 description: "Represents a specialized subtype of user identity in Microsoft Entra ID designed for AI-powered applications (agents) that need to function as digital workers."
 author: "yyuank"
 ms.reviewer: "iamut"
-ms.date: 11/07/2025
+ms.date: 11/11/2025
 ms.localizationpriority: medium
 ms.subservice: entra-users
 doc_type: resourcePageType
@@ -34,6 +34,10 @@ This resource is an open type that allows additional properties beyond those doc
 | [Delete](../api/user-delete.md) | None | Delete **agentUser** object. |
 
 ## Properties
+
+> [!IMPORTANT]
+> While this resource type inherits many properties from the **user** resource type, some properties are not applicable to agent users and will always return `null` or default values. These properties are excluded from the table below for clarity.
+
 |Property|Type|Description|
 |:---|:---|:---|
 |accountEnabled|Boolean|`true` if the account is enabled; otherwise, `false`. This property is required when creating the object. Inherited from [user](../resources/user.md).|
@@ -109,18 +113,18 @@ This resource is an open type that allows additional properties beyond those doc
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|appRoleAssignments|[appRoleAssignment](../resources/approleassignment.md) collection|Represents the app roles an agent user has been granted for an application. Inherited from [Microsoft.DirectoryServices.user](../resources/user.md)|
-|createdObjects|[directoryObject](../resources/directoryobject.md) collection|Directory objects that the agent user created. Read-only. Nullable. Inherited from [Microsoft.DirectoryServices.user](../resources/user.md)|
-|directReports|[directoryObject](../resources/directoryobject.md) collection|The users and contacts that report to the agent user. (The users and contacts with their manager property set to this user.) Read-only. Nullable. Inherited from [Microsoft.DirectoryServices.user](../resources/user.md)|
-|manager|[directoryObject](../resources/directoryobject.md)|The user or contact that is this agent user's manager. Read-only. Inherited from [Microsoft.DirectoryServices.user](../resources/user.md)|
-|memberOf|[directoryObject](../resources/directoryobject.md) collection|The groups, directory roles, and administrative units that the agent user is a member of. Read-only. Nullable. Inherited from [Microsoft.DirectoryServices.user](../resources/user.md)|
-|ownedDevices|[directoryObject](../resources/directoryobject.md) collection|Devices owned by the agent user. Read-only. Nullable. Inherited from [Microsoft.DirectoryServices.user](../resources/user.md)|
-|ownedObjects|[directoryObject](../resources/directoryobject.md) collection|Directory objects owned by the agent user. Read-only. Nullable. Inherited from [Microsoft.DirectoryServices.user](../resources/user.md)|
-|registeredDevices|[directoryObject](../resources/directoryobject.md) collection|Devices that are registered for the agent user. Read-only. Nullable. Inherited from [Microsoft.DirectoryServices.user](../resources/user.md)|
-|scopedRoleMemberOf|[scopedRoleMembership](../resources/scopedrolemembership.md) collection|The scoped-role administrative unit memberships for this agent user. Read-only. Nullable. Inherited from [Microsoft.DirectoryServices.user](../resources/user.md)|
-|sponsors|[directoryObject](../resources/directoryobject.md) collection|The [users](../resources/user.md) and [groups](../resources/group.md) responsible for this agent user's privileges in the tenant and keep the agent user's information and access updated. (HTTP Methods: GET, POST, DELETE.). Inherited from [Microsoft.DirectoryServices.user](../resources/user.md)|
-|transitiveMemberOf|[directoryObject](../resources/directoryobject.md) collection|The groups, including nested groups and directory roles that the agent user is a member of. Nullable. Inherited from [Microsoft.DirectoryServices.user](../resources/user.md)|
-|transitiveReports|[directoryObject](../resources/directoryobject.md) collection|The transitive reports for an agent user. Read-only. Inherited from [Microsoft.DirectoryServices.user](../resources/user.md)|
+|appRoleAssignments|[appRoleAssignment](../resources/approleassignment.md) collection|Represents the app roles an agent user has been granted for an application. Inherited from [user](../resources/user.md)|
+|createdObjects|[directoryObject](../resources/directoryobject.md) collection|Directory objects that the agent user created. Read-only. Nullable. Inherited from [user](../resources/user.md)|
+|directReports|[directoryObject](../resources/directoryobject.md) collection|The users and contacts that report to the agent user. (The users and contacts with their manager property set to this user.) Read-only. Nullable. Inherited from [user](../resources/user.md)|
+|manager|[directoryObject](../resources/directoryobject.md)|The user or contact that is this agent user's manager. Read-only. Inherited from [user](../resources/user.md)|
+|memberOf|[directoryObject](../resources/directoryobject.md) collection|The groups, directory roles, and administrative units that the agent user is a member of. Read-only. Nullable. Inherited from [user](../resources/user.md)|
+|ownedDevices|[directoryObject](../resources/directoryobject.md) collection|Devices owned by the agent user. Read-only. Nullable. Inherited from [user](../resources/user.md)|
+|ownedObjects|[directoryObject](../resources/directoryobject.md) collection|Directory objects owned by the agent user. Read-only. Nullable. Inherited from [user](../resources/user.md)|
+|registeredDevices|[directoryObject](../resources/directoryobject.md) collection|Devices that are registered for the agent user. Read-only. Nullable. Inherited from [user](../resources/user.md)|
+|scopedRoleMemberOf|[scopedRoleMembership](../resources/scopedrolemembership.md) collection|The scoped-role administrative unit memberships for this agent user. Read-only. Nullable. Inherited from [user](../resources/user.md)|
+|sponsors|[directoryObject](../resources/directoryobject.md) collection|The [users](../resources/user.md) and [groups](../resources/group.md) responsible for this agent user's privileges in the tenant and keep the agent user's information and access updated. (HTTP Methods: GET, POST, DELETE.). Inherited from [user](../resources/user.md)|
+|transitiveMemberOf|[directoryObject](../resources/directoryobject.md) collection|The groups, including nested groups and directory roles that the agent user is a member of. Nullable. Inherited from [user](../resources/user.md)|
+|transitiveReports|[directoryObject](../resources/directoryobject.md) collection|The transitive reports for an agent user. Read-only. Inherited from [user](../resources/user.md)|
 
 ## JSON representation
 The following JSON representation shows the resource type.
