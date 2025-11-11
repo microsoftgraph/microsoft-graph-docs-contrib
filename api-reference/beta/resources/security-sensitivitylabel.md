@@ -63,9 +63,9 @@ Describes the information protection label that details how to properly apply a 
 
 ## Sensitivity label API filtering rules
 
-This section outlines the filtering rules and constraints available to apply to various sensitivityLabel API calls.
+This section outlines the filtering rules and constraints available to apply to various sensitivity label API calls.
 
-### Scenario 1: Return sensitivityLabels (1 or more) 
+### Scenario 1: Return sensitivity labels (1 or more) 
 The user calls the API and filters by one or more label ID GUIDs.
 
 #### Example
@@ -84,7 +84,7 @@ The user calls the API and filters by one or more label ID GUIDs.
 3. **Inner OR exception**
    - Inner `or` operations that fall under the parameter tree are permitted
 
-### Scenario 2: Return results for sensitivityLabels using a filter on a single ID and user right
+### Scenario 2: Return results for sensitivity labels using a filter on a single ID and user right
 
 The user calls the API and filters by one label ID GUID and one user right.
 
@@ -107,7 +107,7 @@ The user calls the API and filters by one label ID GUID and one user right.
 4. **Inner OR exception**
    - You can use inner `or` operations between individual clauses.
 
-### Scenario 2.5: Return results for sensitivityLabels using a filter for multiple IDs and user rights
+### Scenario 2.5: Return results for sensitivity labels using a filter for multiple IDs and user rights
 
    The user wants to call the API and filter by multiple IDs and ownerEmail. To achieve this outcome, you must combine both the label ID and ownerEmail in one boolean clause.
 
@@ -161,7 +161,7 @@ We recommend using filters that use a single call with multiple IDs to retrieve 
 
 
 
-### Scenario 3: sensitivityLabel rights /id/rights
+### Scenario 3: Sensitivity label rights /id/rights
 
 #### Rules
 
