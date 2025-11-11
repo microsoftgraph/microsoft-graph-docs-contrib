@@ -24,9 +24,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 |Permission type      | Least privileged permission | Higher privileged permissions |
 |:--------------------|:---------------------------|:-----------------------------|
-|Delegated (work or school account) | User.ReadWrite.All | Not available. |
+|Delegated (work or school account) | AgentIdUser.ReadWrite.IdentityParentedBy | AgentIdUser.ReadWrite.All, User.DeleteRestore.All, User.ReadWrite.All |
 |Delegated (personal Microsoft account) | Not supported. | Not supported.|
-|Application | User.ReadWrite.All | Not available. |
+|Application | AgentIdUser.ReadWrite.IdentityParentedBy | AgentIdUser.ReadWrite.All, User.DeleteRestore.All, User.ReadWrite.All |
+
 
 ## HTTP request
 
@@ -35,7 +36,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-DELETE /agentUsers/{id | userPrincipalName}
+DELETE /users/{id | userPrincipalName}
 ```
 
 ## Request headers
@@ -59,11 +60,11 @@ If successful, this method returns a `204 No Content` response code.
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "delete_agentuser"
+  "name": "delete_user"
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/agentuser/ba9a3254-9f18-4209-aeb3-9e42a35b5be4 
+DELETE https://graph.microsoft.com/beta/users/ba9a3254-9f18-4209-aeb3-9e42a35b5be4 
 ```
 
 
