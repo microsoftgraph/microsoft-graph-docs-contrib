@@ -1,7 +1,7 @@
 ---
 title: "customDataProvidedResourceUploadStats resource type"
 description: "Metadata related to the files that have been uploaded as part of a customDataProvidedResourceUploadSession. "
-author: “pratima-cloudknox”
+author: "pratima-cloudknox"
 ms.date: 10/09/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
