@@ -22,10 +22,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "mailsearchfolder-delete-userconfigurations-permissions"
+  "name": "userconfiguration-delete-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/mailsearchfolder-delete-userconfigurations-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/userconfiguration-delete-permissions.md)]
 
 ## HTTP request
 
