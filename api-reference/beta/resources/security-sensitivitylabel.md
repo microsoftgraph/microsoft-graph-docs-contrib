@@ -63,7 +63,7 @@ Describes the information protection label that details how to properly apply a 
 
 ## Sensitivity label API filtering rules
 
-This section outlines the filtering rules and constraints available to apply to various Sensitivity Label API calls.
+This section outlines the filtering rules and constraints available to apply to various sensitivityLabel API calls.
 
 ### Scenario 1: Return sensitivityLabels (1 or more) 
 The user calls the API and filters by one or more label ID GUIDs.
