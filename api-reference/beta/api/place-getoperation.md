@@ -1,6 +1,6 @@
 ---
-title: "Place: getOperation"
-description: "Get a place operation by id"
+title: "place: getOperation"
+description: "Get a placeOperation by ID"
 author: "Dongjing-MSIT"
 ms.date: 11/10/2025
 ms.localizationpriority: medium
@@ -8,13 +8,13 @@ ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
-# Place: getOperation
+# place: getOperation
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a place operation by id.
+Get a [placeOperation](../resources/placeoperation.md) by ID.
 
 ## Permissions
 
@@ -42,8 +42,7 @@ In the request URL, provide the following query parameters with values.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|id|String|The id of the place operation. Required.|
-
+|id|String|The ID of the place operation. Required.|
 
 ## Request headers
 
@@ -72,7 +71,6 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/beta/places/getOperation(id='35842361-d2dd-479f-9f4d-8889a4b0d317')
 ```
-
 
 ### Response
 
