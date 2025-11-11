@@ -1,6 +1,6 @@
 ---
 title: "customDataProvidedResourceFile resource type"
-description: "Object containing metadata about files uploaded in an upload session."
+description: "Represents a file that is uploaded in a customDataProvidedResourceUploadSession"
 author: "pratima-cloudknox"
 ms.date: 10/29/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a file that was uploaded in a [customDataProvidedResourceUploadSession](../resources/customdataprovidedresourceuploadsession.md).
+Represents a file that is uploaded in a [customDataProvidedResourceUploadSession](../resources/customdataprovidedresourceuploadsession.md).
 
 
 ## Methods
