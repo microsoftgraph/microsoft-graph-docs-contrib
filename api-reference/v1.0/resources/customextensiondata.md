@@ -16,7 +16,7 @@ This is an abstract type noting the data being sent and received as part of exte
 
 - [accessPackageAssignmentRequestCallbackData](../resources/accesspackageassignmentrequestcallbackdata.md)
 - [accessPackageAssignmentRequestCalloutData](../resources/accesspackageassignmentrequestcalloutdata.md)
-- [accessPackageAssignmentRequestCallbackData](../resources/accesspackageassignmentcalloutdata.md)
+- [accessPackageAssignmentCalloutData](../resources/accesspackageassignmentcalloutdata.md)
 - [customTaskExtensionCalloutData](../resources/identitygovernance-customtaskextensioncalloutdata.md)
 - [customTaskExtensionCallbackData](../resources/identitygovernance-customtaskextensioncallbackdata.md)
 
