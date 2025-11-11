@@ -130,7 +130,7 @@ Namespace: microsoft.graph.externalConnectors
 | iconUrl
 | containerName
 | containerUrl
-| assignedTo
+| assignedToPeople
 | dueDate
 | closedDate
 | closedBy
