@@ -7,7 +7,7 @@ ms.localizationpriority: high
 ms.topic: reference
 ms.subservice: entra-applications
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.date: 11/03/2025
+ms.date: 11/10/2025
 #Customer intent: As a developer, I want to learn more about the permissions available in Microsoft Graph, so that I understand the impact of granting specific permissions to my app.
 ---
 
@@ -90,28 +90,6 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | DisplayText | Read and write all administrative units | Read and write administrative units |
 | Description | Allows the app to create, read, update, and delete administrative units and manage administrative unit membership without a signed-in user. | Allows the app to create, read, update, and delete administrative units and manage administrative unit membership on behalf of the signed-in user. |
 | AdminConsentRequired | Yes | Yes |
-
----
-
-### AgentApplication.Create
-
-| Category | Application | Delegated |
-|--|--|--|
-| Identifier | 2f479c7e-27df-4053-826b-57d8ce55be3e | - |
-| DisplayText | Create agent applications. | - |
-| Description | Allows creating new agent applications and their associated service principals. | - |
-| AdminConsentRequired | Yes | - |
-
----
-
-### AgentIdentity.Create
-
-| Category | Application | Delegated |
-|--|--|--|
-| Identifier | 2c4c43c7-1903-4658-a911-b8f2bb31e32e | - |
-| DisplayText | Create agent identities linked to itself. | - |
-| Description | Allows the app to create linked agent identities without a signed-in user. | - |
-| AdminConsentRequired | Yes | - |
 
 ---
 
