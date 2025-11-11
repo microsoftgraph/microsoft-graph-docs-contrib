@@ -27,6 +27,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/onpremauthenticationpolicy-update-permissions.md)]
 
+[!INCLUDE [onpremauthenticationpolicy-entra-roles-write](../includes/rbac-for-apis/onpremauthenticationpolicy-entra-roles-write.md)]
+
 ## HTTP request
 
 <!-- {

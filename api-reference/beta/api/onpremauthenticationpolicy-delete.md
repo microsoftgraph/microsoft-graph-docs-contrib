@@ -29,6 +29,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/onpremauthenticationpolicy-delete-permissions.md)]
 
+[!INCLUDE [onpremauthenticationpolicy-entra-roles-write](../includes/rbac-for-apis/onpremauthenticationpolicy-entra-roles-write.md)]
+
 
 ## HTTP request
 
@@ -65,7 +67,7 @@ The following example shows a request.
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/beta/policies/onPremAuthenticationPolicies/{id}
+DELETE https://graph.microsoft.com/beta/policies/onPremAuthenticationPolicies/2e68a8f2-50ce-b21d-d25d-c34b59675ee2
 ```
 
 
