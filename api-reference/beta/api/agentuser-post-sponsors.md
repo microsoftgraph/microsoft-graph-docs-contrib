@@ -60,7 +60,7 @@ If successful, this method returns a `204 No Content` response code. It doesn't 
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "create_directoryobject_from_directoryobjects"
+  "name": "create_sponsor_agentuser"
 }
 -->
 ``` http
