@@ -14,10 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a place bulk upsert operation
-
-
-Inherits from [entity](../resources/entity.md).
+Represents a place bulk upsert operation.
 
 
 ## Methods
@@ -30,7 +27,7 @@ Inherits from [entity](../resources/entity.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |details|[placeExecutionResult](../resources/placeexecutionresult.md) collection|The detailed execution result of the operation, including errors and succeeded places.|
-|id|String|The id of the operation. Inherited from [entity](../resources/entity.md). Inherits from [entity](../resources/entity.md)|
+|id|String|The id of the operation.|
 |progress|[placeOperationProgress](../resources/placeoperationprogress.md)|The progress of the operation, like how many places have succeeded and how many places have failed.|
 |status|placeOperationStatus|The status of the operation. The possible values are: `created`, `inProgress`, `succeeded`, `failed`, `partiallySucceeded`, `expired`, `unknownFutureValue`.|
 

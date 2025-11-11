@@ -1,6 +1,6 @@
 ---
 title: "Bulk upsert places"
-description: "Create or update places in bulk in async mode"
+description: "Bulk upsert places in async mode"
 author: "Dongjing-MSIT"
 ms.date: 11/10/2025
 ms.localizationpriority: medium
@@ -8,13 +8,13 @@ ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
-# Create place
+# Bulk upsert places
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create or update places in bulk in async mode.
+Bulk upsert places in async mode.
 
 ## Permissions
 
@@ -52,7 +52,7 @@ The same properties can be specified as when [creating](../api/place-post.md) or
 
 ## Response
 
-If successful, this method returns a `202 Accepted` response code and a operation id in the location response header, which can be used to [get operation](../api/place-getoperation.md).
+If successful, this method returns a `202 Accepted` response code and an operation id in the location response header, which can be used to [get operation](../api/place-getoperation.md).
 
 ## Examples
 
@@ -106,6 +106,6 @@ The following example shows the response.
 -->
 ``` http
 HTTP/1.1 202 Accepted
-Location：/places/getOperation(id='882a6bfd-45d1-4d4b-a382-6db80a249b61')
+Location: /places/getOperation(id='882a6bfd-45d1-4d4b-a382-6db80a249b61')
 ```
 

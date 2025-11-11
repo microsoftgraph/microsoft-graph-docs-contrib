@@ -14,15 +14,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the progress of an operation
+Represents the progress of an operation.
 
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|failedPlaceCount|Int32|The count of places failed to upsert|
-|succeededPlaceCount|Int32|The count of places succeeded to upsert|
-|totalPlaceCount|Int32|The total count of places in the request|
+|failedPlaceCount|Int32|The count of places failed to upsert.|
+|succeededPlaceCount|Int32|The count of places succeeded to upsert.|
+|totalPlaceCount|Int32|The total count of places in the request.|
 
 ## Relationships
 None.

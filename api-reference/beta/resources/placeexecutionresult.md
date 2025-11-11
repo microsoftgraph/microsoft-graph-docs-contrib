@@ -14,14 +14,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the upsert result of a place
+Represents the upsert result of a place.
 
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|children|[placeExecutionResult](../resources/placeexecutionresult.md) collection|The upsert results of children places of the place. |
-|error|[publicError](../resources/publicerror.md)|Error happended during upsert of the place.|
+|children|[placeExecutionResult](../resources/placeexecutionresult.md) collection|The upsert results of children places of the place.|
+|error|[publicError](../resources/publicerror.md)|Error happened during upsert of the place.|
 
 ## Relationships
 |Relationship|Type|Description|

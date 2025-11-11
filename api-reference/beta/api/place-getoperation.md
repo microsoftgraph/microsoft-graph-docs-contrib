@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a place operation by id
+Get a place operation by id.
 
 ## Permissions
 
@@ -42,7 +42,7 @@ In the request URL, provide the following query parameters with values.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|id|String|The id of the place operation|
+|id|String|The id of the place operation. Required.|
 
 
 ## Request headers
