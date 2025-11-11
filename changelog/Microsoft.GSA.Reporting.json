@@ -147,7 +147,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "categories",
           "ChangeType": "Addition",
-          "Description": "Added the **categories** property to the [cloudApplicationMetadata](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-cloudApplicationMetadata?view=graph-rest-beta) resource.",
+          "Description": "Added the **categories** property to the [cloudApplicationMetadata](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-cloudapplicationmetadata?view=graph-rest-beta) resource.",
           "Target": "cloudApplicationMetadata"
         },
         {
@@ -155,7 +155,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "category",
           "ChangeType": "Deletion",
-          "Description": "Removed the **category** property from the [cloudApplicationMetadata](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-cloudApplicationMetadata?view=graph-rest-beta) resource.",
+          "Description": "Removed the **category** property from the [cloudApplicationMetadata](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-cloudapplicationmetadata?view=graph-rest-beta) resource.",
           "Target": "cloudApplicationMetadata"
         },
         {
@@ -163,7 +163,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "categories",
           "ChangeType": "Addition",
-          "Description": "Added the **categories** property to the [cloudApplicationReport](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-cloudApplicationReport?view=graph-rest-beta) resource.",
+          "Description": "Added the **categories** property to the [cloudApplicationReport](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-cloudapplicationreport?view=graph-rest-beta) resource.",
           "Target": "cloudApplicationReport"
         },
         {
@@ -171,7 +171,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "category",
           "ChangeType": "Deletion",
-          "Description": "Removed the **category** property from the [cloudApplicationReport](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-cloudApplicationReport?view=graph-rest-beta) resource.",
+          "Description": "Removed the **category** property from the [cloudApplicationReport](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-cloudapplicationreport?view=graph-rest-beta) resource.",
           "Target": "cloudApplicationReport"
         }
       ],
