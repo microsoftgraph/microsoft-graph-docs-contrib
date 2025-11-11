@@ -1,5 +1,23 @@
 {
   "changelog": [
+   {
+      "ChangeList": [
+        {
+          "Id": "fd3b880d-ea39-4b1e-8c19-35fb8fb0c26d",
+          "ApiChange": "Property",
+          "ChangedApiName": "contentCategory",
+          "ChangeType": "Addition",
+          "Description": "Added the **contentCategory** property to the [externalConnection](https://learn.microsoft.com/en-us/graph/api/resources/externalconnectors-externalconnection?view=graph-rest-beta) resource.",
+          "Target": "externalConnection"
+        }
+      ],
+      "Id": "fd3b880d-ea39-4b1e-8c19-35fb8fb0c26d",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-09-01T00:00:00",
+      "WorkloadArea": "Search",
+      "SubArea": ""
+    },
     {
       "ChangeList": [
         {
@@ -139,6 +157,12 @@
           "Target": "label"
         }
       ]
+      "Id": "fd3b880d-ea39-4b1e-8c19-35fb8fb0c26d",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-09-01T00:00:00",
+      "WorkloadArea": "Search",
+      "SubArea": ""
     },
     {
       "ChangeList": [        
