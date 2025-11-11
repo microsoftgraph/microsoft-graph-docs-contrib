@@ -23,8 +23,8 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/placeoperation-list.md)|[placeOperation](../resources/placeoperation.md) collection|Get a list of the placeOperation objects and their properties.|
-|[Get](../api/placeoperation-get.md)|[placeOperation](../resources/placeoperation.md)|Read the properties and relationships of [placeOperation](../resources/placeoperation.md) object.|
+|[List](../api/place-listoperations.md)|[placeOperation](../resources/placeoperation.md) collection|Get a list of the placeOperation objects and their properties. Details are not listed.|
+|[Get](../api/place-getoperation.md)|[placeOperation](../resources/placeoperation.md)|Read the properties and relationships of [placeOperation](../resources/placeoperation.md) object.|
 
 ## Properties
 |Property|Type|Description|
