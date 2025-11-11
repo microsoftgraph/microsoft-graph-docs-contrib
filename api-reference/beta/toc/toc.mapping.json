@@ -2251,11 +2251,12 @@
         "mailFolder",
         "mailFolderOperation",
         "mailSearchFolder",
-        "messageRule"
+        "messageRule",
+        "userConfiguration"
       ],
       "childNodes": [
         {
-          "name": "Focused Inbox",
+          "name": "Focused inbox",
           "overview": "../../resources/manage-focused-inbox.md",
           "resources": [
             "inferenceClassificationOverride"
@@ -2271,6 +2272,8 @@
         }
       ],
       "complexTypes":[
+        "structuredDataEntry",
+        "structuredDataEntryTypedValue",
         "updateAllMessagesReadStateOperation"
       ]
     },
