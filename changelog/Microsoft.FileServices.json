@@ -4871,6 +4871,14 @@
           "ChangeType": "Addition",
           "Description": "Added the [groupIdentity](https://learn.microsoft.com/en-us/graph/api/resources/groupidentity?view=graph-rest-beta) resource type.",
           "Target": "groupIdentity"
+        },
+        {
+          "Id": "b8a1c32f-bb82-4b0b-9398-e95488659404",
+          "ApiChange": "Property",
+          "ChangedApiName": "crossOrganizationMigrationTasks",
+          "ChangeType": "Addition",
+          "Description": "Added the **crossOrganizationMigrationTasks** property",
+          "Target": "crossOrganizationMigrationTasks"
         }
       ],
       "Id": "b8a1c32f-bb82-4b0b-9398-e95488659404",
