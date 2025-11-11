@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the information about a [customDataProvidedResourceUploadSession](../resources/customdataprovidedresourceuploadsession.md) object.
+Read the properties and relationships of a [customDataProvidedResourceUploadSession](../resources/customdataprovidedresourceuploadsession.md) object.
 
 ## Permissions
 
