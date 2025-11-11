@@ -41,8 +41,8 @@ POST /identityGovernance/entitlementManagement/accessPackageCatalogs/{accessPack
 
 ## Request headers
 
-|Name|Description|[accesspackageresource-list-uploadsessions.md](accesspackageresource-list-uploadsessions.md)
-|:---|:---|[delete-customdataprovidedresourcefile-update.md](delete-customdataprovidedresourcefile-update.md)
+|Header|Value|
+|:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
