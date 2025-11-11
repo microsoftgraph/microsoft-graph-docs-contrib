@@ -1,6 +1,6 @@
 ---
-title: "Add agentIdentityBlueprintPrincipal owners"
-description: "Add an owner for the agent identity blueprint principal."
+title: "Add agentIdentityBlueprint owners"
+description: "Add an owner for the agent identity blueprint."
 author: "zallison22"
 ms.date: 10/27/2025
 ms.localizationpriority: medium
@@ -8,13 +8,13 @@ ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 
-# Add agentIdentityBlueprintPrincipal owners
+# Add agentIdentityBlueprint owners
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Add an owner for the [agentIdentityBlueprintPrincipal](../resources/agentIdentityBlueprintPrincipal.md). Agent identity blueprint principal owners can be users, the agent identity blueprint principal itself, or other service principals.
+Add an owner for the [agentIdentityBlueprint](../resources/agentIdentityBlueprint.md).Application owners can be individual users, the associated service principal, or another service principal.
 
 ## Permissions
 
@@ -22,20 +22,18 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "agentidentityblueprintprincipal-post-owners-permissions"
+  "name": "agentidentityblueprint-post-owners-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/agentidentityblueprintprincipal-post-owners-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/agentidentityblueprint-post-owners-permissions.md)]
 
 [!INCLUDE [rbac-agentid-apis-write](../includes/rbac-for-apis/rbac-agentid-apis-write.md)]
 
 ## HTTP request
 
-You can address the agent identity blueprint principal using either its **id** or **appId**. **id** and **appId** are referred to as the **Object ID** and **Application (Client) ID**, respectively, in app registrations in the Microsoft Entra admin center.
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /servicePrincipals/{id}/microsoft.graph.agentIdentityBlueprintPrincipal/owners/$ref
-POST /servicePrincipals(appId='{appId}')/microsoft.graph.agentIdentityBlueprintPrincipal/owners/$ref
+POST /applications/{id}/microsoft.graph.agentIdentityBlueprint/owners/$ref
 ```
 
 ## Request headers
@@ -61,11 +59,11 @@ If successful, this method returns a `204 No Content` response code and a [direc
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "create_agent_identity_blueprint_principal_owner"
+  "name": "create_agent_identity_blueprint_owner"
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/servicePrincipals/{id}/microsoft.graph.agentIdentityBlueprintPrincipal/owners/$ref
+POST https://graph.microsoft.com/beta/applications/{id}/microsoft.graph.agentIdentityBlueprint/owners/$ref
 Content-Type: application/json
 
 {

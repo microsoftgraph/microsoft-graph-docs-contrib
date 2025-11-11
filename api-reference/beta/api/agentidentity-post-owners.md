@@ -66,7 +66,7 @@ POST https://graph.microsoft.com/beta/servicePrincipals/{id}/microsoft.graph.age
 Content-type: application/json
 
 {
-    "@odata.id": "https://graph.microsoft.com/v1.0/directoryObjects/{ownerObjectId}"
+    "@odata.id": "https://graph.microsoft.com/v1.0/directoryObjects/1511d5e7-c324-4362-ad4b-16c20076e5aa"
 }
 ```
 

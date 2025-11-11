@@ -27,9 +27,9 @@ This resource is an open type that allows additional properties beyond those doc
 |[Create](../api/agentidentity-post.md)|[agentidentity](../resources/agentidentity.md)|Create a new agentidentity object.|
 |[Get](../api/agentidentity-get.md)|[agentIdentity](../resources/agentidentity.md)|Read the properties and relationships of [agentIdentity](../resources/agentidentity.md) object.|
 |[Update](../api/agentidentity-update.md)|[agentIdentity](../resources/agentidentity.md)|Update the properties of an agentIdentity object.|
-|[List appRoleAssignedTo](../api/agentidentity-list-approleassignedto.md)|[appRoleAssignment](../resources/approleassignment.md) collection|Get the users, groups, and agent identities assigned app roles for this agent identity.|
-|[List appRoleAssignments](../api/agentidentity-list-approleassignments.md)|[appRoleAssignment](../resources/approleassignment.md) collection|Get the app roles that this agent identity is assigned.|
-|[Create appRoleAssignment](../api/agentidentity-post-approleassignments.md)|[appRoleAssignment](../resources/approleassignment.md)|Create a new appRoleAssignment object.|
+|[List appRoleAssignedTo](../api/serviceprincipal-list-approleassignedto.md)|[appRoleAssignment](../resources/approleassignment.md) collection|Get the users, groups, and agent identities assigned app roles for this agent identity.|
+|[List appRoleAssignments](../api/serviceprincipal-list-approleassignments.md)|[appRoleAssignment](../resources/approleassignment.md) collection|Get the app roles that this agent identity is assigned.|
+|[Create appRoleAssignment](../api/serviceprincipal-post-approleassignments.md)|[appRoleAssignment](../resources/approleassignment.md)|Create a new appRoleAssignment object.|
 |[List memberOf](../api/agentidentity-list-memberof.md)|[directoryObject](../resources/directoryobject.md) collection|Get the groups that this agent identity is a direct member of.|
 |[List oauth2PermissionGrants](../api/agentidentity-list-oauth2permissiongrants.md)|[oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) collection|Get the delegated permission grants authorizing this agent identity to access an API on behalf of a signed-in user.|
 |[List ownedObjects](../api/agentidentity-list-ownedobjects.md)|[directoryObject](../resources/directoryobject.md) collection|Get directory objects owned by this agent identity.|
