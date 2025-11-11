@@ -15,7 +15,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "structuredDataEntry",
           "ChangeType": "Addition",
-          "Description": "Added the [structuredDataEntry](https://learn.microsoft.com/en-us/graph/api/resources/structuredDataEntry?view=graph-rest-beta) resource.",
+          "Description": "Added the [structuredDataEntry](https://learn.microsoft.com/en-us/graph/api/resources/structuredDataEntry?view=graph-rest-beta) resource type.",
           "Target": "structuredDataEntry"
         },
         {
@@ -23,23 +23,23 @@
           "ApiChange": "Resource",
           "ChangedApiName": "structuredDataEntryTypedValue",
           "ChangeType": "Addition",
-          "Description": "Added the [structuredDataEntryTypedValue](https://learn.microsoft.com/en-us/graph/api/resources/structuredDataEntryTypedValue?view=graph-rest-beta) resource.",
+          "Description": "Added the [structuredDataEntryTypedValue](https://learn.microsoft.com/en-us/graph/api/resources/structuredDataEntryTypedValue?view=graph-rest-beta) resource type.",
           "Target": "structuredDataEntryTypedValue"
         },
         {
           "Id": "d53c79c3-526c-4ee6-a847-40b4868374fb",
           "ApiChange": "Property",
-          "ChangedApiName": "structuredData",
+          "ChangedApiName": "userConfiguration",
           "ChangeType": "Addition",
-          "Description": "Added the **structuredData** property to the [userConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/userConfiguration?view=graph-rest-beta) resource.",
+          "Description": "Added the [userConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/userConfiguration?view=graph-rest-beta) resource and associated methods.",
           "Target": "userConfiguration"
         },
         {
           "Id": "d53c79c3-526c-4ee6-a847-40b4868374fb",
-          "ApiChange": "Property",
-          "ChangedApiName": "xmlData",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "userConfigurations",
           "ChangeType": "Addition",
-          "Description": "Added the **xmlData** property to the [userConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/userConfiguration?view=graph-rest-beta) resource.",
+          "Description": "Added the **userConfigurations** relationship to the [mailFolder](https://learn.microsoft.com/en-us/graph/api/resources/mailFolder?view=graph-rest-beta) resource.",
           "Target": "userConfiguration"
         }
       ],
@@ -47,7 +47,7 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2025-11-05T02:37:14.0811605Z",
-      "WorkloadArea": "User configuration objects",
+      "WorkloadArea": "Mail",
       "SubArea": ""
     },
     {
