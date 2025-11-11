@@ -30,7 +30,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 } -->
 
-``` http
+```http
 POST /termStore/sets/{setId}/children
 POST /termStore/sets/{setId}/terms/{termId}/children
 ```
@@ -66,7 +66,7 @@ If successful, this method returns a `201 Created` response code and a [term](..
   "name": "create_term_from_"
 } -->
 
-``` http
+```http
 POST https://graph.microsoft.com/beta/termStore/sets/{setId}/children
 Content-Type: application/json
 
@@ -115,7 +115,7 @@ Content-Type: application/json
   "@odata.type": "microsoft.graph.termStore.term"
 }-->
 
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 

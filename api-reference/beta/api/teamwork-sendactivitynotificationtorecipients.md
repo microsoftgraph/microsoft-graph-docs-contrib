@@ -36,7 +36,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 
-``` http
+```http
 POST /teamwork/sendActivityNotificationToRecipients
 ```
 
@@ -91,7 +91,7 @@ The following example shows how to send an activity feed notification to multipl
 }
 -->
 
-``` http
+```http
 POST https://graph.microsoft.com/beta/teamwork/sendActivityNotificationToRecipients
 Content-Type: application/json
 
@@ -165,7 +165,7 @@ Content-Type: application/json
 }
 -->
 
-``` http
+```http
 HTTP/1.1 202 Accepted
 ```
 
@@ -183,7 +183,7 @@ If you want to link an aspect that Microsoft Graph doesn't represent, or you wan
 }
 -->
 
-``` http
+```http
 POST https://graph.microsoft.com/beta/teamwork/sendActivityNotificationToRecipients
 Content-Type: application/json
 
@@ -257,7 +257,7 @@ Content-Type: application/json
   "truncated": false
 }
 -->
-``` http
+```http
 HTTP/1.1 202 Accepted
 ```
 
@@ -352,6 +352,6 @@ The following example shows the response.
   "truncated": false
 }
 -->
-``` http
+```http
 HTTP/1.1 202 Accepted
 ```

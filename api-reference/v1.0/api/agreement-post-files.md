@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /agreements/{agreementsId}/files
 ```
 
@@ -69,7 +69,7 @@ If successful, this method returns a `200 OK` response code and an [agreementFil
   "name": "create_agreementfilelocalization_from_"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/identityGovernance/termsOfUse/agreements/94410bbf-3d3e-4683-8149-f034e55c39dd/files
 Content-Type: application/json
 
@@ -124,7 +124,7 @@ Content-Type: application/json
 }
 -->
 
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

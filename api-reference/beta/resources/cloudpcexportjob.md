@@ -64,7 +64,7 @@ Represents the export job for downloading a specified Cloud PC report.
 | inaccessibleCloudPcReports             | The Cloud PCs that are inaccessible. |
 | actionStatusReport                          | The actions status report for the Cloud PCs.                                  |
 | rawRemoteConnectionReports             | The raw real-time remote connection report.                         |
-| cloudPcUsageCategoryReports                 | The usage category reports of Cloud PCs.                                 |
+| cloudPcUsageCategoryReports (deprecated)  | The usage category reports of Cloud PCs. The `cloudPcUsageCategoryReports` member is deprecated and will stop returning on December 31, 2025. Going forward, use the `cloudPcUsageCategoryReport` member with the [cloudPcReport](cloudpcreport.md) resource instead. |
 | crossRegionDisasterRecoveryReport                 | The cross-region disaster recovery status for Cloud PCs.                                 |
 | performanceTrendReport                 | The daily aggregated report that provides a list of connection quality metrics for Cloud PCs over the past seven days within a tenant. The metrics include `SlowRoundTripTimeCloudPcCount`, `LowUdpConnectionPercentageCount`, `NoTimeConnectedCloudPcCount`, and `LowTimeConnectedCloudPcCount`. Each daily report is an aggregation of the previous 28 days, counted back from the trigger time. |
 | inaccessibleCloudPcTrendReport         | The daily aggregated report for a specified period that contains details of Cloud PCs that are inaccessible, including those with consecutive connection failures or in an unavailable state. |
@@ -78,6 +78,7 @@ Represents the export job for downloading a specified Cloud PC report.
 | troubleshootIssueCountReport |The aggregated report that shows the number of performance issues, network issues, and reliability issues for 28 days.|
 | cloudPcInsightReport                     | Indicates Cloud PC-level configuration data and troubleshooting data with insights, including client version, client operating system, host region, Teams media, error source, error code symbolic, and error message. |
 | regionalInaccessibleCloudPcTrendReport      | The weekly regional aggregated report of inaccessible Cloud PC trends.    |
+| cloudPcUsageCategoryReport | The usage category reports of Cloud PCs. |
 
 ## Relationships
 

@@ -74,7 +74,7 @@ The following example shows a request.
   "name": "upsert_federatedidentitycredential_create"
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/applications(uniqueName='app-65278')/federatedIdentityCredentials(name='fic01-app-65278')
 Content-Type: application/json
 
@@ -98,7 +98,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.federatedIdentityCredential"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 
@@ -128,7 +128,7 @@ The following example shows a request.
 }
 -->
 
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/applications(uniqueName='app-65278')/federatedIdentityCredentials(name='fic01-app-65278')
 Content-Type: application/json
 Prefer: create-if-missing
@@ -150,6 +150,6 @@ The following example shows the response.
 }
 -->
 
-``` http
+```http
 HTTP/1.1 204 No Content
 ```

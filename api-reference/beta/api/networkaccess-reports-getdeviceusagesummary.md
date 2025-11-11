@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /networkAccess/reports/getDeviceUsageSummary(startDateTime={startDateTime},endDateTime={endDateTime},activityPivotDateTime={activityPivotDateTime})
 ```
 
@@ -67,7 +67,7 @@ The following example shows a request.
   "name": "reportsthis.getdeviceusagesummary"
 }
 -->
-``` http
+```http
 GET https://graph.microsoft.com/beta/networkAccess/reports/getDeviceUsageSummary (startDateTime=2023-01-29T00:00:00Z,endDateTime=2023-01-31T00:00:00Z, activityPivotDateTime=2023-01-30T00:00:00Z)
 ```
 
@@ -81,7 +81,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.networkaccess.deviceUsageSummary"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

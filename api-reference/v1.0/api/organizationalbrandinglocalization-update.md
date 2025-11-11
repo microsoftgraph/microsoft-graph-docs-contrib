@@ -36,7 +36,7 @@ To update String data types, such as signInPageText and usernameHintText, use th
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PATCH /organization/{organizationId}/branding/localizations/{organizationalBrandingLocalizationId}
 
 PUT /organization/{organizationId}/branding/localizations/{organizationalBrandingLocalizationId}/{Stream object type such as backgroundImage}

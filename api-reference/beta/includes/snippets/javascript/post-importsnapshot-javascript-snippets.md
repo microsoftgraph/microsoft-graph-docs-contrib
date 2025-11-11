@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-const cloudPcSnapshot = {
+const cloudPcSnapshotImportActionResult = {
   sourceFiles: [
     {
       sourceType: 'azureStorageAccount',
@@ -36,6 +36,6 @@ const cloudPcSnapshot = {
 
 await client.api('/deviceManagement/virtualEndpoint/snapshots/importSnapshot')
 	.version('beta')
-	.post(cloudPcSnapshot);
+	.post(cloudPcSnapshotImportActionResult);
 
 ```

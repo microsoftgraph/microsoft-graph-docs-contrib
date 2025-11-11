@@ -28,7 +28,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /me/profile/notes
 POST /users/{id | userPrincipalName}/profile/notes
 ```
@@ -64,7 +64,7 @@ If successful, this method returns a `201 Created` response code and a [personAn
   "name": "create_personannotation_from_"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/me/profile/notes
 Content-Type: application/json
 
@@ -115,7 +115,7 @@ Content-Type: application/json
   "@odata.type": "microsoft.graph.personAnnotation"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 

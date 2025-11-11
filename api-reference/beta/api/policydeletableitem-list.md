@@ -79,7 +79,7 @@ List deleted **conditionalAccessPolicy** objects:
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /identity/conditionalAccess/deletedItems/policies
 ```
 
@@ -88,7 +88,7 @@ List deleted **namedLocation** objects:
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /identity/conditionalAccess/deletedItems/namedLocations
 ```
 

@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /tenantRelationships/managedTenants/managementActionTenantDeploymentStatuses/changeDeploymentStatus
 ```
 
@@ -66,7 +66,7 @@ If successful, this action returns a `200 OK` response code and a [managementAct
   "name": "managementactiontenantdeploymentstatus_changedeploymentstatus"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/tenantRelationships/managedTenants/managementActionTenantDeploymentStatuses/changeDeploymentStatus
 Content-Type: application/json
 
@@ -113,7 +113,7 @@ Content-Type: application/json
   "@odata.type": "microsoft.graph.managedTenants.managementActionDeploymentStatus"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

@@ -32,7 +32,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /chats/{chatId}/sendActivityNotification
 ```
 
@@ -85,7 +85,7 @@ The following example shows the request.
   "name": "chat_sendactivitynotification_1"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/chats/{chatId}/sendActivityNotification
 Content-Type: application/json
 
@@ -150,7 +150,7 @@ The following example shows the response.
   "truncated": false
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 
@@ -168,7 +168,7 @@ The following example shows the request.
   "name": "chat_sendactivitynotification_2"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/chats/{chatId}/sendActivityNotification
 Content-Type: application/json
 
@@ -233,7 +233,7 @@ The following example shows the response.
   "truncated": false
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 
@@ -251,7 +251,7 @@ The following example shows the request.
   "name": "chat_sendactivitynotification_upn"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/chats/{chatId}/sendActivityNotification
 Content-Type: application/json
 
@@ -316,7 +316,7 @@ The following example shows the response.
   "truncated": false
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 
@@ -334,7 +334,7 @@ The following example shows the request.
   "name": "chat_sendactivitynotification_3"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/chats/{chatId}/sendActivityNotification
 Content-Type: application/json
 
@@ -400,7 +400,7 @@ The following example shows the response.
   "truncated": false
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 
@@ -420,7 +420,7 @@ The following example shows the request.
 }
 -->
 
-``` http
+```http
 POST https://graph.microsoft.com/beta/chats/19:1c3af46e9e0f4a5293343c8813c47619@thread.v2/sendActivityNotification
 Content-Type: application/json
 
@@ -485,7 +485,7 @@ The following example shows the response.
   "truncated": false
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 
@@ -570,7 +570,7 @@ The following example shows the response.
   "truncated": false
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 

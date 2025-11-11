@@ -32,7 +32,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 
-``` http
+```http
 POST /external/connections/{connectionsId}/groups/{externalGroupId}/members
 ```
 
@@ -76,7 +76,7 @@ If successful, this method returns a `201 Created` response code and an **extern
 }
 -->
 
-``` http
+```http
 POST https://graph.microsoft.com/beta/external/connections/contosohr/groups/31bea3d537902000/members
 Content-Type: application/json
 
@@ -127,7 +127,7 @@ Content-Type: application/json
 }
 -->
 
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 
@@ -152,7 +152,7 @@ Content-Type: application/json
 }
 -->
 
-``` http
+```http
 POST https://graph.microsoft.com/beta/external/connections/contosohr/groups/31bea3d537902000/members
 Content-Type: application/json
 
@@ -202,7 +202,7 @@ Content-Type: application/json
 }
 -->
 
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 
@@ -225,7 +225,7 @@ Content-Type: application/json
 }
 -->
 
-``` http
+```http
 POST https://graph.microsoft.com/beta/external/connections/contosohr/groups/31bea3d537902000/members
 Content-Type: application/json
 
@@ -275,7 +275,7 @@ Content-Type: application/json
 }
 -->
 
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 

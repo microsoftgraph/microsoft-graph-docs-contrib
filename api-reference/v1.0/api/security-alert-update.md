@@ -27,7 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PATCH /security/alerts_v2/{alertId}
 ```
 
@@ -66,7 +66,7 @@ The following example shows a request.
   "name": "update_alert_v2"
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/v1.0/security/alerts_v2/da637551227677560813_-961444813
 Content-Type: application/json
 Content-length: 2450
@@ -119,7 +119,7 @@ The following example shows the response.
 }
 -->
 
-``` http
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 

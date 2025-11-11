@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PATCH /me/profile/emails/{id}
 PATCH /users/{id | userPrincipalName}/profile/emails/{id}
 ```
@@ -70,7 +70,7 @@ If successful, this method returns a `200 OK` response code and an updated [item
   "name": "update_itememail"
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/users/{userId}/profile/emails/{id}
 Content-Type: application/json
 
@@ -118,7 +118,7 @@ Content-Type: application/json
   "@odata.type": "microsoft.graph.itemEmail"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

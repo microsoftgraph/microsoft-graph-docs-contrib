@@ -37,7 +37,7 @@ Reset your PIN and generate a new temporary PIN.
 [!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
 
 <!-- { "blockType": "ignored" } -->
-``` http
+```http
 PATCH /me/authentication/qrCodePinMethod/pin
 ```
 
@@ -46,7 +46,7 @@ Reset another user's PIN and generate a new temporary PIN.
 [!INCLUDE [authentication-methods-apis-users-selfservice](../includes/authentication-methods-apis-users-selfservice.md)]
 
 <!-- { "blockType": "ignored" } -->
-``` http
+```http
 PATCH /users/{id}/authentication/qrCodePinMethod/pin
 ```
 
@@ -83,7 +83,7 @@ The following example shows a request.
   "name": "create_qrpin_from_"
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/users/7c4999f7-9c25-4f8e-8b84-766eb28a1b49/authentication/qrCodePinMethod/pin
 Content-Type: application/json
 
@@ -133,7 +133,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.qrPin"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 

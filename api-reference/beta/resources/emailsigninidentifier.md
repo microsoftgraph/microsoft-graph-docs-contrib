@@ -1,0 +1,52 @@
+---
+title: "emailSignInIdentifier resource type"
+description: "Represents an email sign-in identifier that allows users to authenticate using their email address."
+author: "Gyanendersinghgithub"
+ms.date: 10/02/2025
+ms.localizationpriority: medium
+ms.subservice: "entra-sign-in"
+doc_type: resourcePageType
+---
+
+# emailSignInIdentifier resource type
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Represents an email sign-in identifier that allows users to authenticate using their email address. This is a built-in sign-in identifier that can't be created or deleted, but can be enabled or disabled.
+
+Inherits from [signInIdentifierBase](../resources/signinidentifierbase.md).
+
+## Methods
+|Method|Return type|Description|
+|:---|:---|:---|
+|[Get](../api/emailsigninidentifier-get.md)|[emailSignInIdentifier](../resources/emailsigninidentifier.md)|Read the properties and relationships of emailSignInIdentifier object.|
+|[Update](../api/emailsigninidentifier-update.md)|[emailSignInIdentifier](../resources/emailsigninidentifier.md)|Update the properties of an emailSignInIdentifier object.|
+
+## Properties
+|Property|Type|Description|
+|:---|:---|:---|
+|isEnabled|Boolean|Indicates whether this email sign-in identifier type is enabled for user authentication in the tenant. Inherited from [signInIdentifierBase](../resources/signinidentifierbase.md).|
+|name|String|The unique name identifier for this email sign-in identifier configuration. Always set to "Email" for this identifier type. Inherited from [signInIdentifierBase](../resources/signinidentifierbase.md).|
+
+## Relationships
+None.
+
+## JSON representation
+The following JSON representation shows the resource type.
+<!-- {
+  "blockType": "resource",
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.emailSignInIdentifier",
+  "baseType": "microsoft.graph.signInIdentifierBase",
+  "openType": false
+}
+-->
+``` json
+{
+  "@odata.type": "#microsoft.graph.emailSignInIdentifier",
+  "name": "String (identifier)",
+  "isEnabled": "Boolean"
+}
+```

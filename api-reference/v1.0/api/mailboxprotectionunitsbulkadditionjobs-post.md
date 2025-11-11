@@ -32,7 +32,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST   /solutions/backupRestore/exchangeProtectionPolicies/{exchangeProtectionPolicyId}/mailboxProtectionUnitsBulkAdditionJobs
 ```
 
@@ -90,7 +90,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.mailboxProtectionUnitsBulkAdditionJob"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 

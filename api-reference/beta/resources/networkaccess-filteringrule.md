@@ -16,7 +16,7 @@ Namespace: microsoft.graph.networkaccess
 
 An abstract type that represents a rule that filters traffic in Global Secure Access.
 
-Base type of [fqdnFilteringRule](networkaccess-fqdnfilteringrule.md) and [webCategoryFilteringRule](networkaccess-webcategoryfilteringrule.md).
+Base type of [fqdnFilteringRule](networkaccess-fqdnfilteringrule.md), [urlDestinationFilteringRule](networkaccess-urldestinationfilteringrule.md), and [webCategoryFilteringRule](networkaccess-webcategoryfilteringrule.md).
 
 Inherits from [policyRule](../resources/networkaccess-policyrule.md).
 

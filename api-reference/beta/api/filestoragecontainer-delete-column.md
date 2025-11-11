@@ -36,7 +36,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 DELETE /storageContainers/{containerId}/columns/{columnId}
 ```
 
@@ -65,7 +65,7 @@ The following example shows a request.
   "name": "delete_columndefinition_for_fileStorageContainer"
 }
 -->
-``` http
+```http
 DELETE https://graph.microsoft.com/bet/storageContainers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/columns/99ddcf45-e2f7-4f17-82b0-6fba34445103
 Content-Type: application/json
 
@@ -96,7 +96,7 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 

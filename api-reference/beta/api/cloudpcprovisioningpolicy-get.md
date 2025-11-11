@@ -155,7 +155,11 @@ Content-Type: application/json
         "locale": "en-US"
     },
     "managedBy": "windows365",
-    "provisioningType": "dedicated"
+    "provisioningType": "dedicated",
+    "userSettingsPersistenceConfiguration": {
+        "userSettingsPersistenceEnabled": false,
+        "userSettingsPersistenceStorageSizeCategory": "fourGB"
+    }
 }
 ```
 
@@ -267,7 +271,11 @@ Content-Type: application/json
       }
     ],
     "managedBy": "windows365",
-    "provisioningType": "dedicated"
+    "provisioningType": "dedicated",
+    "userSettingsPersistenceConfiguration": {
+        "userSettingsPersistenceEnabled": false,
+        "userSettingsPersistenceStorageSizeCategory": "fourGB"
+    }
 }
 ```
 
@@ -364,6 +372,10 @@ Content-Type: application/json
     "windowsSetting": {
         "locale": "en-US"
     },
-    "provisioningType": "dedicated"
+    "provisioningType": "dedicated",
+    "userSettingsPersistenceConfiguration": {
+        "userSettingsPersistenceEnabled": false,
+        "userSettingsPersistenceStorageSizeCategory": "fourGB"
+    }
 }
 ```

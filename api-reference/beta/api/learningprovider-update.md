@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PATCH /employeeExperience/learningProviders/{learningProviderId}
 ```
 
@@ -68,7 +68,7 @@ The following example shows a request.
   "name": "update_learningprovider"
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/employeeExperience/learningProviders/13727311-e7bb-470d-8b20-6a23d9030d70
 Content-Type: application/json
 
@@ -116,7 +116,7 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 

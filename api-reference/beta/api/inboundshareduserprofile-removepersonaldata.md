@@ -35,7 +35,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 
-``` http
+```http
 POST /directory/inboundSharedUserProfiles/{userId}/removePersonalData
 ```
 
@@ -64,7 +64,7 @@ If successful, this method returns a `204 No Content` response code.
 }
 -->
 
-``` http
+```http
 POST https://graph.microsoft.com/beta/directory/inboundSharedUserProfiles/c228b2ae-c4fb-4eda-9620-7e73dddd1cac/removePersonalData
 ```
 
@@ -106,6 +106,6 @@ POST https://graph.microsoft.com/beta/directory/inboundSharedUserProfiles/c228b2
 }
 -->
 
-``` http
+```http
 HTTP/1.1 204 No Content
 ```

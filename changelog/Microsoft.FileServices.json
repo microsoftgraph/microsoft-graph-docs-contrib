@@ -257,6 +257,24 @@
     {
       "ChangeList": [
         {
+          "Id": "d612afb2-fc58-44bb-b9ea-07f99bde6cfe",
+          "ApiChange": "Property",
+          "ChangedApiName": "itemDefaultSensitivityLabelId",
+          "ChangeType": "Addition",
+          "Description": "Added the **itemDefaultSensitivityLabelId** property to the [fileStorageContainerSettings](https://learn.microsoft.com/en-us/graph/api/resources/fileStorageContainerSettings?view=graph-rest-beta) resource.",
+          "Target": "fileStorageContainerSettings"
+        }
+      ],
+      "Id": "d612afb2-fc58-44bb-b9ea-07f99bde6cfe",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-10-29T22:00:29.1040559Z",
+      "WorkloadArea": "Files",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "d4cad5ca-ea99-4c26-bb63-35d74f43babe",
           "ApiChange": "Method",
           "ChangedApiName": "pageTemplate",

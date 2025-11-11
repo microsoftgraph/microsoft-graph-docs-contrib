@@ -30,7 +30,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /solutions/backupRestore/enable
 ```
 
@@ -64,7 +64,7 @@ The following example shows a request.
   "name": "backuprestoreroot_enable"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/solutions/backupRestore/enable
 
 {
@@ -112,7 +112,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.serviceStatus"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 
 {

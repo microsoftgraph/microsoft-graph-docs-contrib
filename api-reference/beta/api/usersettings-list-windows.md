@@ -37,7 +37,7 @@ For a specific user:
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /users/{user-id}@{tenant-id}/settings/windows
 ````
 

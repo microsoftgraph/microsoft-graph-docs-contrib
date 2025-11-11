@@ -36,7 +36,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /identityGovernance/lifecycleWorkflows/customTaskExtensions
 ```
 
@@ -78,7 +78,7 @@ The following example shows a request.
   "name": "lifecycleworkflows_create_customtaskextension_from_"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/customTaskExtensions
 Content-Type: application/json
 Content-length: 588
@@ -148,7 +148,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.identityGovernance.customTaskExtension"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 

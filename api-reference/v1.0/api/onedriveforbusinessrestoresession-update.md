@@ -30,7 +30,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PATCH /solutions/backupRestore/oneDriveForBusinessRestoreSessions/{oneDriveForBusinessRestoreSessionId}
 ```
 
@@ -69,7 +69,7 @@ The following example shows a request.
   "name": "onedriveforbusinessrestoresession_update"
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/v1.0/solutions/backupRestore/oneDriveForBusinessRestoreSessions/1b014d8c-71fe-4d00-8ab2-31850bc5b32c
 
 {
@@ -148,7 +148,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.oneDriveForBusinessRestoreSession"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 
 {

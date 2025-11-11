@@ -26,7 +26,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 DELETE /me/responsibilities/{id}
 DELETE /users/{id | userPrincipalName}/responsibilities/{id}
 ```
@@ -52,7 +52,7 @@ If successful, this method returns a `204 No Content` response code.
   "name": "delete_personresponsibility"
 }
 -->
-``` http
+```http
 DELETE https://graph.microsoft.com/beta/me/responsibilities/0fb4c1e3-c1e3-0fb4-e3c1-b40fe3c1b40f
 ```
 
@@ -63,7 +63,7 @@ DELETE https://graph.microsoft.com/beta/me/responsibilities/0fb4c1e3-c1e3-0fb4-e
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 

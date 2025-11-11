@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /policies/permissionGrantPreApprovalPolicies
 ```
 
@@ -76,7 +76,7 @@ In the following example:
   "name": "create_permissiongrantpreapprovalpolicy"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/policies/permissionGrantPreApprovalPolicies
 Content-Type: application/json
 
@@ -158,7 +158,7 @@ Content-Type: application/json
   "@odata.type": "microsoft.graph.permissionGrantPreApprovalPolicy"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 
@@ -213,7 +213,7 @@ Content-Type: application/json
   "name": "create_permissiongrantpreapprovalpolicy_only_group"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/policies/permissionGrantPreApprovalPolicies
 Content-Type: application/json
 
@@ -274,7 +274,7 @@ Content-Type: application/json
   "@odata.type": "microsoft.graph.permissionGrantPreApprovalPolicy"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 

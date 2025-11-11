@@ -32,7 +32,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 
-``` http
+```http
 PATCH /identity/b2cUserFlows/{id}/userAttributeAssignments/{id}
 PATCH /identity/b2xUserFlows/{id}/userAttributeAssignments/{id}
 ```
@@ -74,7 +74,7 @@ If successful, this method returns a `200 OK` response code and an updated [iden
 }
 -->
 
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/identity/b2cUserFlows/{b2cIdentityUserFlowId}/userAttributeAssignments/{id}
 Content-Type: application/json
 
@@ -121,6 +121,6 @@ Content-Type: application/json
 }
 -->
 
-``` http
+```http
 HTTP/1.1 204 No Content
 ```

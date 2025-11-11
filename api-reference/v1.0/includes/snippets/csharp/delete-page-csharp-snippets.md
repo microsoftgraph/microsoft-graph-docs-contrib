@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 // Code snippets are only available for the latest version. Current version is 5.x
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
-await graphClient.Me.Onenote.Pages["{onenotePage-id}"].DeleteAsync();
+await graphClient.Sites["{site-id}"].Pages["{baseSitePage-id}"].DeleteAsync();
 
 
 ```

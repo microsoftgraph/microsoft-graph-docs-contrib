@@ -34,14 +34,14 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 To reprovision the [cloudPC](../resources/cloudpc.md) of the specified user (who is the signed-in user) in the organization using delegated permission:
 
-``` http
+```http
 POST /me/cloudPCs/{id}/reprovision
 POST /users/{userId}/cloudPCs/{id}/reprovision
 ```
 
 To reprovision the specified [cloudPC](../resources/cloudpc.md) in the organization, using either delegated permission (the signed-in user should be the administrator) or application permission:
 
-``` http
+```http
 POST /deviceManagement/virtualEndpoint/cloudPCs/{id}/reprovision
 ```
 
@@ -83,7 +83,7 @@ If successful, this method returns a `204 No Content` response code.
 }
 -->
 
-``` http
+```http
 POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/4b5ad5e0-6a0b-4ffc-818d-36bb23cf4dbd/reprovision
 Content-Type: application/json
 Content-length: 61
@@ -128,7 +128,7 @@ Content-length: 61
 }
 -->
 
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 
@@ -144,7 +144,7 @@ HTTP/1.1 204 No Content
 }
 -->
 
-``` http
+```http
 POST https://graph.microsoft.com/beta/me/cloudPCs/36bd4942-0ca8-11ed-861d-0242ac120002/reprovision
 ```
 
@@ -182,6 +182,6 @@ POST https://graph.microsoft.com/beta/me/cloudPCs/36bd4942-0ca8-11ed-861d-0242ac
 }
 -->
 
-``` http
+```http
 HTTP/1.1 204 No Content
 ```

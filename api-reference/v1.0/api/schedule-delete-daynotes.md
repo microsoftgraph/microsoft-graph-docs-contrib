@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 DELETE /teams/{teamsId}/schedule/dayNotes/{dayNoteId}
 ```
 
@@ -52,13 +52,13 @@ If successful, this method returns a `204 No Content` response code.
 ### Request
 The following example shows a request.
 
-``` http
+```http
 DELETE /teams/d72f9b8e-4c76-4f50-bf93-51b17aab0cd9/schedule/dayNotes/NOTE_ff2194ab-0ae5-43e3-acb4-ec2654927213
 ```
 
 ### Response
 
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 

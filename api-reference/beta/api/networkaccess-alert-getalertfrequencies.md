@@ -35,7 +35,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /networkAccessRoot/alerts/getAlertFrequencies(startDateTime={startDateTime},endDateTime={endDateTime})
 ```
 
@@ -71,7 +71,7 @@ The following example shows a request.
   "name": "alertthis.getalertfrequencies"
 }
 -->
-``` http
+```http
 GET https://graph.microsoft.com/beta/networkAccessRoot/alerts/getAlertFrequencies(startDateTime='2024-04-01T00:00:00Z',endDateTime='2024-04-21T23:59:59Z')
 ```
 
@@ -85,7 +85,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.networkaccess.alertFrequencyPoint)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

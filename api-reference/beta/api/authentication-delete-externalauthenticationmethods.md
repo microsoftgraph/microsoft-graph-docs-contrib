@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 To delete another user's external authentication method:
 <!-- { "blockType": "ignored" } -->
-``` http
+```http
 DELETE /users/{usersId}/authentication/externalAuthenticationMethods/{externalAuthenticationMethodId}/$ref
 ```
 
@@ -58,7 +58,7 @@ The following example shows a request.
   "name": "delete_externalauthenticationmethod"
 }
 -->
-``` http
+```http
 DELETE https://graph.microsoft.com/beta/users/{id}/authentication/externalAuthenticationMethods/{externalAuthenticationMethodId}/$ref
 ```
 
@@ -76,7 +76,7 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 

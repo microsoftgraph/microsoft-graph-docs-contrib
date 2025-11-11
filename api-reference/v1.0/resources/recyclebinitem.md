@@ -22,7 +22,7 @@ Inherits from [baseItem](baseitem.md).
 |:----------------------------------|:------------------------------------------|:---------------------------------------------------|
 | [List](../api/recyclebin-list-items.md) | [recycleBinItem](../resources/recyclebinitem.md) collection |Get a collection of [recycleBinItem](../resources/recyclebinitem.md) resources in the [recycleBin](../resources/recyclebin.md) of the specified SharePoint Embedded [fileStorageContainer](../resources/filestoragecontainer.md).|
 |[Delete](../api/filestoragecontainer-delete-recyclebinitem.md)|None.|Permanently delete **recycleBinItem** objects from the [recycleBin](../resources/recyclebin.md) of a **fileStorageContainer**.|
-|[Restore](../api/filestoragecontainer-restore-recyclebinitem.md)|[recycleBinItem](../resources/recyclebinitem.md) collection|Restore **recycleBinItem** objects from the [recycleBin](../resources/recyclebin.md) of a **fileStorageContainer**.|
+|[Restore recycleBinItem by driveItemId](../api/filestoragecontainer-restore-recyclebinitem.md) Restore recycle bin items by driveItemId.|
 
 ## Properties
 

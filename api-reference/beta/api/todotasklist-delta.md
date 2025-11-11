@@ -77,7 +77,7 @@ To track changes in the **todoTaskList**, you would make one or more **delta** f
 The main differences between tracking **todoTaskList** and tracking **todoTask** resources in a list are in the delta query request URLs, and the query responses returning **todoTaskList** rather than **todoTask** collections.
 
 <!-- { "blockType": "ignored" } -->
-``` http
+```http
 GET https://graph.microsoft.com/beta/me/todo/lists/delta
 Prefer: odata.maxpagesize=12
 ```

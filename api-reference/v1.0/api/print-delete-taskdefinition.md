@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 DELETE /print/taskDefinitions/{printTaskDefinitionId}
 ```
 
@@ -54,7 +54,7 @@ If successful, this method returns a `204 No Content` response code. It doesn't 
   "name": "delete_printtaskdefinition"
 }
 -->
-``` http
+```http
 DELETE https://graph.microsoft.com/v1.0/print/taskDefinitions/{printTaskDefinitionId}
 ```
 
@@ -95,7 +95,7 @@ DELETE https://graph.microsoft.com/v1.0/print/taskDefinitions/{printTaskDefiniti
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 

@@ -81,7 +81,7 @@ The following example shows a request.
   "name": "userdatasecurityandgovernance.processcontent_1"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/me/dataSecurityAndGovernance/processContent
 Content-Type: application/json
 
@@ -166,7 +166,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.processContentResponse"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -189,7 +189,7 @@ The following example shows a request.
   "name": "userdatasecurityandgovernance.processcontent_2"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/users/{5def8f26-aff8-4db6-a08c-0fcf8f1aa2ba}/dataSecurityAndGovernance/processContent
 Content-Type: application/json
 
@@ -272,7 +272,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.processContentResponse"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -301,7 +301,7 @@ The following example shows a request.
   "name": "userdatasecurityandgovernance.processcontent_3"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/me/dataSecurityAndGovernance/processContent
 Content-Type: application/json
 
@@ -391,7 +391,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.processContentResponse"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

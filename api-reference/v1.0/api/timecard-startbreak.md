@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /teams/{teamsId}/schedule/timeCards/{timeCardId}/startBreak
 ```
 
@@ -65,7 +65,7 @@ The following example shows a request.
   "name": "timecardthis.startbreak"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/teams/871dbd5c-3a6a-4392-bfe1-042452793a50/schedule/timeCards/TCK_29ad0a09-b97a-49a2-9490-141cb7602540/startbreak
 
 {

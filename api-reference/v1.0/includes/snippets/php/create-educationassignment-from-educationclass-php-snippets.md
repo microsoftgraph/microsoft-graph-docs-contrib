@@ -19,6 +19,7 @@ $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 $requestBody = new EducationAssignment();
 $requestBody->setDueDateTime(new \DateTime('2022-09-16T00:00:00Z'));
 $requestBody->setDisplayName('Reading test 09.14');
+$requestBody->setLanguageTag('es-MX');
 $instructions = new EducationItemBody();
 $instructions->setContentType(new BodyType('text'));
 $instructions->setContent('Read chapter 4');

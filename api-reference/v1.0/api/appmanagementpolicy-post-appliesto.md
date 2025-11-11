@@ -127,7 +127,7 @@ The following example shows a request to assign an appManagementPolicy to a serv
   "name": "assign_appliesTo_ex2"
 }-->
 
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/servicePrincipals/{id}/appManagementPolicies/$ref
 
 {

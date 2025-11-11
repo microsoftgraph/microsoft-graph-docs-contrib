@@ -34,7 +34,7 @@ To reference the content within the object, you must use `$value`. This returns 
 }
 -->
 
-``` http
+```http
 PUT /identity/b2cUserFlows/{id}/languages/{id}/overridesPages/{id}/$value
 PUT /identity/b2xUserFlows/{id}/languages/{id}/overridesPages/{id}/$value
 ```
@@ -69,7 +69,7 @@ The following example shows a request.
 }
 -->
 
-``` http
+```http
 PUT https://graph.microsoft.com/beta/identity/b2cUserFlows/B2C_1_Customer/languages/en/overridesPages/phonefactor/$value
 Content-Type: application/json
 
@@ -123,6 +123,6 @@ The following example shows the response.
 }
 -->
 
-``` http
+```http
 HTTP/1.1 204 No Content
 ```

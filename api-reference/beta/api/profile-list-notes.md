@@ -28,7 +28,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /me/profile/notes
 GET /users/{id | userPrincipalName}/profile/notes
 ```
@@ -107,7 +107,7 @@ GET https://graph.microsoft.com/beta/me/profile/notes
   "@odata.type": "collection(microsoft.graph.personAnnotation)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

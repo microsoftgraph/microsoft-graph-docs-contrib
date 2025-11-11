@@ -56,7 +56,7 @@ To update a rule defined for a policy for either Microsoft Entra roles or groups
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PATCH /policies/roleManagementPolicies/{unifiedRoleManagementPolicyId}/rules/{unifiedRoleManagementPolicyRuleId}
 ```
 
@@ -108,7 +108,7 @@ The following example updates a role management policy rule of type **unifiedRol
   "sampleKeys": ["DirectoryRole_84841066-274d-4ec0-a5c1-276be684bdd3_200ec19a-09e7-4e7a-9515-cf1ee64b96f9", "Expiration_EndUser_Assignment"]
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/v1.0/policies/roleManagementPolicies/DirectoryRole_84841066-274d-4ec0-a5c1-276be684bdd3_200ec19a-09e7-4e7a-9515-cf1ee64b96f9/rules/Expiration_EndUser_Assignment
 Content-Type: application/json
 
@@ -167,7 +167,7 @@ Content-Type: application/json
   "@odata.type": "microsoft.graph.unifiedRoleManagementPolicyRule"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -207,7 +207,7 @@ The following example updates a role management policy rule with ID `Expiration_
   "sampleKeys": ["Group_60bba733-f09d-49b7-8445-32369aa066b3_f21b26d9-9ff9-4af1-b1d4-bddf28591369", "Expiration_EndUser_Assignment"]
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/v1.0/policies/roleManagementPolicies/Group_60bba733-f09d-49b7-8445-32369aa066b3_f21b26d9-9ff9-4af1-b1d4-bddf28591369/rules/Expiration_EndUser_Assignment
 Content-Type: application/json
 
@@ -268,7 +268,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.unifiedRoleManagementPolicyRule"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

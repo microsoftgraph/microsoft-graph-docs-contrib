@@ -37,7 +37,7 @@ GET /policies/appManagementPolicies/{id}/appliesTo
 
 This method supports the `$select`, `$filter`, and `$top` OData query parameters to help customize the response. You can apply `$filter` on properties of [application](../resources/application.md) or [servicePrincipal](../resources/serviceprincipal.md) objects that support `$filter`. For example, the following query retrieves the **appId** and **displayName** of applications or service principals that are assigned the policy.
 
-``` http
+```http
 https://graph.microsoft.com/v1.0/policies/appManagementPolicies/{id}/appliesTo?$select=appId,displayName
 ```
 

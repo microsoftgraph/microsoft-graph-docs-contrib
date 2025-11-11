@@ -3,6 +3,80 @@
     {
       "ChangeList": [
         {
+          "Id": "8e05037c-958b-4ea9-8f44-3e5fbb3c1654",
+          "ApiChange": "Resource",
+          "ChangedApiName": "educationGradingSchemeGrade",
+          "ChangeType": "Addition",
+          "Description": "Added the [educationGradingSchemeGrade](https://learn.microsoft.com/en-us/graph/api/resources/educationGradingSchemeGrade?view=graph-rest-1.0) resource.",
+          "Target": "educationGradingSchemeGrade"
+        },
+        {
+          "Id": "8e05037c-958b-4ea9-8f44-3e5fbb3c1654",
+          "ApiChange": "Property",
+          "ChangedApiName": "languageTag",
+          "ChangeType": "Addition",
+          "Description": "Added the **languageTag** property to the [educationAssignment](https://learn.microsoft.com/en-us/graph/api/resources/educationAssignment?view=graph-rest-1.0) resource.",
+          "Target": "educationAssignment"
+        },
+        {
+          "Id": "8e05037c-958b-4ea9-8f44-3e5fbb3c1654",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "gradingScheme",
+          "ChangeType": "Addition",
+          "Description": "Added the **gradingScheme** relationship to the [educationAssignment](https://learn.microsoft.com/en-us/graph/api/resources/educationAssignment?view=graph-rest-1.0) resource.",
+          "Target": "educationAssignment"
+        },
+        {
+          "Id": "8e05037c-958b-4ea9-8f44-3e5fbb3c1654",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "defaultGradingScheme",
+          "ChangeType": "Addition",
+          "Description": "Added the **defaultGradingScheme** relationship to the [educationAssignmentSettings](https://learn.microsoft.com/en-us/graph/api/resources/educationAssignmentSettings?view=graph-rest-1.0) resource.",
+          "Target": "educationAssignmentSettings"
+        },
+        {
+          "Id": "8e05037c-958b-4ea9-8f44-3e5fbb3c1654",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "gradingSchemes",
+          "ChangeType": "Addition",
+          "Description": "Added the **gradingSchemes** relationship to the [educationAssignmentSettings](https://learn.microsoft.com/en-us/graph/api/resources/educationAssignmentSettings?view=graph-rest-1.0) resource.",
+          "Target": "educationAssignmentSettings"
+        },
+        {
+          "Id": "8e05037c-958b-4ea9-8f44-3e5fbb3c1654",
+          "ApiChange": "Resource",
+          "ChangedApiName": "educationGradingScheme",
+          "ChangeType": "Addition",
+          "Description": "Added the [educationGradingScheme](https://learn.microsoft.com/en-us/graph/api/resources/educationGradingScheme?view=graph-rest-1.0) resource and associated methods.",
+          "Target": "educationGradingScheme"
+        },
+        {
+          "Id": "8e05037c-958b-4ea9-8f44-3e5fbb3c1654",
+          "ApiChange": "Method",
+          "ChangedApiName": "PUT",
+          "ChangeType": "Addition",
+          "Description": "Added the [Add default grading scheme](https://learn.microsoft.com/en-us/graph/api/educationassignmentsettings-put-defaultgradingscheme?view=graph-rest-1.0) to the [educationAssignmentSettings](https://learn.microsoft.com/en-us/graph/api/resources/educationAssignmentSettings?view=graph-rest-1.0) resource.",
+          "Target": "educationAssignmentSettings"
+        },
+        {
+          "Id": "8e05037c-958b-4ea9-8f44-3e5fbb3c1654",
+          "ApiChange": "Method",
+          "ChangedApiName": "PUT",
+          "ChangeType": "Addition",
+          "Description": "Added the [Add grading scheme](https://learn.microsoft.com/en-us/graph/api/educationassignment-put-gradingscheme?view=graph-rest-1.0) to the [educationAssignment](https://learn.microsoft.com/en-us/graph/api/resources/educationAssignment?view=graph-rest-1.0) resource.",
+          "Target": "educationAssignment"
+        }
+      ],
+      "Id": "8e05037c-958b-4ea9-8f44-3e5fbb3c1654",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-10-29T16:56:37.9719909Z",
+      "WorkloadArea": "Education",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "c9ae0ad0-1dca-4b56-958d-57e90927c64e",
           "ApiChange": "Relationship",
           "ChangedApiName": "dependentResources",

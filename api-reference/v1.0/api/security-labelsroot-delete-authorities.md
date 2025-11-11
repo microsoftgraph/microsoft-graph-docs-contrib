@@ -25,7 +25,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 DELETE /security/labels/authorities/{authorityTemplateId}/$ref
 DELETE /security/labels/retentionLabels/{retentionLabelId}/descriptors/authorityTemplate/$ref
 ```
@@ -53,7 +53,7 @@ Here's an example of a request.
   "name": "delete_authoritytemplate"
 }
 -->
-``` http
+```http
 DELETE https://graph.microsoft.com/v1.0/security/labels/authorities/6cf65e55-6baf-44ff-5dcc-08d8de97b1d5
 ```
 
@@ -95,7 +95,7 @@ Here's an example of the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 

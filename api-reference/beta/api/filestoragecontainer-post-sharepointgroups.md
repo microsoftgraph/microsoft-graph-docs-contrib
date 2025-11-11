@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /storage/fileStorage/containers/{fileStorageContainerId}/sharePointGroups
 ```
 
@@ -72,7 +72,7 @@ The following example shows a request that creates a new **sharePointGroup** tha
   "name": "create_sharePointGroup",
   "@odata.type": "microsoft.graph.sharePointGroup"
 } -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/sharePointGroups
 Content-Type: application/json
 
@@ -120,7 +120,7 @@ The following example shows the response. The group is successfully created with
   "truncated": true,
   "@odata.type": "microsoft.graph.sharePointGroup"
 } -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 

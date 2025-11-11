@@ -13,6 +13,7 @@ const client = Client.init(options);
 const educationAssignment = {
     dueDateTime: '2022-09-16T00:00:00Z',
     displayName: 'Reading test 09.14',
+    languageTag: 'es-MX',
     instructions: {
         contentType: 'text',
         content: 'Read chapter 4'

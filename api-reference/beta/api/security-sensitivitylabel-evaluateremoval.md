@@ -42,14 +42,14 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 To evaluate removal as the signed-in user (delegated permission) or a specified user (application permission):
 
-``` http
+```http
 POST /users/{usersId}/security/informationProtection/sensitivityLabels/evaluateRemoval
 POST /users/me/security/informationProtection/sensitivityLabels/evaluateRemoval
 ```
 
 To evaluate removal as a service principal (application permission):
 
-``` http
+```http
 POST /users/security/informationProtection/sensitivityLabels/evaluateRemoval
 ```
 

@@ -8,32 +8,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Dependencies
 using Microsoft.Graph.Beta.Models;
-using Microsoft.Kiota.Abstractions.Serialization;
 
 var requestBody = new Site
 {
 	Name = "Communication Site Test",
 	WebUrl = "https://contoso.sharepoint.com/sites/commsite1",
+	Locale = "en-US",
+	ShareByEmailEnabled = false,
 	Description = "Test Site Description",
-	AdditionalData = new Dictionary<string, object>
+	Template = SiteTemplateType.Sitepagepublishing,
+	OwnerIdentityToResolve = new IdentityInput
 	{
-		{
-			"locale" , "en-US"
-		},
-		{
-			"shareByEmailEnabled" , false
-		},
-		{
-			"template" , "sitepagepublishing"
-		},
-		{
-			"ownerIdentityToResolve" , new UntypedObject(new Dictionary<string, UntypedNode>
-			{
-				{
-					"email", new UntypedString("ryan@contoso.com")
-				},
-			})
-		},
+		Email = "ryan@contoso.com",
 	},
 };
 

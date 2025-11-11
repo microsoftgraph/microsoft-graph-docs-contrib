@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /me/messages/{messageId}/reportMessage
 POST /users/{userId}/messages/{messageId}/reportMessage
 ```
@@ -70,7 +70,7 @@ The following example shows a request.
   "name": "messagethis.reportmessage"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/me/messages/AAMkADhAAATs28OAAA=/reportMessage
 Content-Type: application/json
 
@@ -116,7 +116,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.message"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

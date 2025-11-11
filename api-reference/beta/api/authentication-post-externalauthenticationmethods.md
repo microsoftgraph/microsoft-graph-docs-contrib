@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 Assign an external authentication method to another user. This API doesn't support self-service operations.
 <!-- { "blockType": "ignored" } -->
-``` http
+```http
 POST /users/{usersId}/authentication/externalAuthenticationMethods
 ```
 
@@ -70,7 +70,7 @@ The following example shows a request.
   "name": "create_externalauthenticationmethod_from_"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/users/{id}/authentication/externalAuthenticationMethods
 Content-Type: application/json
 
@@ -121,7 +121,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.externalAuthenticationMethod"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 

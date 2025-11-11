@@ -206,15 +206,13 @@ In the previous channel indirect membership notification payload, the **resource
 
 For details about how to validate tokens and decrypt the payload, see [Set up change notifications that include resource data](change-notifications-with-resource-data.md).
 
-The decrypted notification payload looks like the following. The payload conforms to the [aadUserConversationMember](/graph/api/resources/aaduserconversationmember?view=graph-rest-beta&preserve-view=true) schema. The payload is similar to that returned by GET operations. The payload is similar to that returned by the [List allMembers](/graph/api/channel-list-allmembers) endpoint.
+The decrypted notification payload looks like the following. The payload conforms to the [aadUserConversationMember](/graph/api/resources/aaduserconversationmember) schema. The payload is similar to that returned by GET operations. The payload is similar to that returned by the [List allMembers](/graph/api/channel-list-allmembers) endpoint.
 
 ```json
 {
    "@microsoft.graph.originalSourceMembershipUrl": "tenants/('10eda0c8-cb50-4390-8751-488c29218b02')teams('1b031a07-f3ad-47bf-a629-81c96ebaad6f')/members/('MCMjMSMjMjQzMmI1N2ItMGFiZC00M2RiLWFhN2ItMTZlYWRkMTE1ZDM0IyMxYjAzMWEwNy1mM2FkLTQ3YmYtYTYyOS04MWM5NmViYWFkNmYjIzEyNzNhMDE2LTIwMWQtNGY5NS04MDgzLTFiN2Y5OWIzZWRlYg==')",
   "id": "MCMjMyMjMjQzMmI1N2ItMGFiZC00M2RiLWFhN2ItMTZlYWRkMTE1ZDM0IyMxOTpsUlpITDVWd3ZaczBYTjJvclRuN0RsaW5KREVUa2dTVlRIWGJETFVFS2YwMUB0aHJlYWQudGFjdjIjIzU5YjViYzY5LWNhNzMtNGZmZC1hMmUwLTg4YTc5MTE1ZDEzYg==",
-  "roles": [
-    "owner"
-  ],
+  "roles": [],
   "displayName": "Test user",
   "userId": "8b081ef6-4792-4def-b2c9-c363a1bf41d5",
   "email": null,

@@ -63,7 +63,7 @@ If successful, this method returns a `204 No Content` response code.
   "name": "update_accesspackage"
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackages/{accessPackageId}
 Content-Type: application/json
 
@@ -109,7 +109,7 @@ Content-Type: application/json
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 Content-Type: application/json
 ```

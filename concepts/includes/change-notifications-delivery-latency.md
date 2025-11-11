@@ -28,11 +28,11 @@ The following table lists the latency to expect between an event happening in th
 | [contact][]             | Less than 1 minute   | 3 minutes       |
 | [conversation][]        | Unknown              | Unknown         |
 | [conversationMember][]  | Less than 10 seconds | 60 minutes      |
-| [driveItem][]           | Less than 1 minute   | 5 minutes       |
+| [driveItem][]           | Less than 1 minute   | 60 minutes      |
 | [event][]               | Unknown              | Unknown         |
 | [group][]               | Unknown              | Unknown         |
 | [health monitoring alert][] | Unknown           | Unknown         |
-| [list][]                | Less than 1 minute   | 5 minutes       |
+| [list][]                | Less than 1 minute   | 60 minutes      |
 | [message][]             | Less than 1 minute   | 3 minutes       |
 | [offerShiftRequest][]   | Less than 1 minute   | 60 minutes      |
 | [onlineMeeting][]       | Less than 10 seconds | 1 minute        |

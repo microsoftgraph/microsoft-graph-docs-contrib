@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PATCH /servicePrincipals/{servicePrincipalsId}/remoteDesktopSecurityConfiguration/targetDeviceGroups/{targetDeviceGroupId}
 ```
 
@@ -65,7 +65,7 @@ The following example shows a request.
   "name": "update_targetdevicegroup"
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/servicePrincipals/00af5dfb-85da-4b41-a677-0c6b86dd34f8/remoteDesktopSecurityConfiguration/targetDeviceGroups/b9e4eae4-b781-45a1-ce65-f2dd8ac3b696
 Content-Type: application/json
 
@@ -114,7 +114,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.targetDeviceGroup"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

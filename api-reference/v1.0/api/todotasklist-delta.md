@@ -78,7 +78,7 @@ The main differences between tracking **todoTaskList** and tracking **todoTask**
   "name": "todotasklistdelta"
 }-->
 
-``` http
+```http
 GET https://graph.microsoft.com/v1.0/me/todo/lists/delta
 ```
 

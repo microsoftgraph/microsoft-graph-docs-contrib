@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PATCH /identityGovernance/lifecycleWorkflows/workflows/{workflowId}
 ```
 
@@ -74,7 +74,7 @@ The following example shows a request.
   "name": "lifecycleworkflows_update_workflow"
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workflows/156ce798-1eb6-4e0a-8515-e79f54d04390
 Content-Type: application/json
 Content-length: 454
@@ -125,6 +125,6 @@ Content-length: 454
 
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```

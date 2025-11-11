@@ -32,7 +32,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 
-``` http
+```http
 GET /deviceManagement/virtualEndpoint/retrieveScopedPermissions
 ```
 
@@ -70,7 +70,7 @@ The following example shows the request.
 }
 -->
 
-``` http
+```http
 GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/retrieveScopedPermissions
 ```
 
@@ -154,7 +154,7 @@ The following example shows a request with a filter.
 }
 -->
 
-``` http
+```http
 GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/retrieveScopedPermissions?$filter=permission in ('Microsoft.CloudPC/ProvisioningPolicies/Update','Microsoft.CloudPC/ProvisioningPolicies/Create')
 ```
 
@@ -229,7 +229,7 @@ When the signed-in user has an admin role such as the Intune admin or the Window
 }
 -->
 
-``` http
+```http
 GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/retrieveScopedPermissions
 ```
 

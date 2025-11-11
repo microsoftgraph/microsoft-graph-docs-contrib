@@ -45,7 +45,7 @@ To update the details of a role management policy for either Microsoft Entra rol
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PATCH /policies/roleManagementPolicies/{unifiedRoleManagementPolicyId}
 ```
 
@@ -82,7 +82,7 @@ The following example shows a request.
   "name": "update_unifiedrolemanagementpolicy_directory"
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/v1.0/policies/roleManagementPolicies/DirectoryRole_2132228a-d66e-401c-ab8a-a8ae31254a36_0f8c4bbc-4f1a-421c-b63d-a68f571b7fab
 Content-Type: application/json
 
@@ -223,7 +223,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.unifiedRoleManagementPolicy"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -255,7 +255,7 @@ The following example shows a request.
   "name": "update_unifiedrolemanagementpolicy_azureADGroup"
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/v1.0/policies/roleManagementPolicies/Group_60bba733-f09d-49b7-8445-32369aa066b3_f21b26d9-9ff9-4af1-b1d4-bddf28591369
 Content-Type: application/json
 
@@ -403,7 +403,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.unifiedRoleManagementPolicy"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

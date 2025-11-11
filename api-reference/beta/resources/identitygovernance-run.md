@@ -33,7 +33,7 @@ Inherits from [entity](../resources/entity.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|activatedOnScope|microsoft.graph.identityGovernance.activationUserScopeType|The scope for which users the workflow runs. The possible values are: `allUsers`, `failedUsers`, `unknownFutureValue`.|
+|activatedOnScope|[microsoft.graph.identityGovernance.activationScope](../resources/identitygovernance-activationscope.md)|The scope for which the workflow runs.|
 |completedDateTime|DateTimeOffset|The date time that the run completed. Value is `null` if the workflow hasn't completed.<br><br>Supports `$filter`(`lt`, `le`, `gt`, `ge`, `eq`, `ne`) and `$orderby`.|
 |failedTasksCount|Int32|The number of tasks that failed in the run execution.|
 |failedUsersCount|Int32|The number of users that failed in the run execution.|

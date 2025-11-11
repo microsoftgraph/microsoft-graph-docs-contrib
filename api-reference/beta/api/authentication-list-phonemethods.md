@@ -42,7 +42,7 @@ List your own phone authentication methods.
 [!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
 
 <!-- { "blockType": "ignored" } -->
-``` http
+```http
 GET /me/authentication/phoneMethods
 ```
 
@@ -51,7 +51,7 @@ List your own or another user's phone authentication methods.
 [!INCLUDE [authentication-methods-apis-users-selfservice](../includes/authentication-methods-apis-users-selfservice.md)]
 
 <!-- { "blockType": "ignored" } -->
-``` http
+```http
 GET /users/{id | userPrincipalName}/authentication/phoneMethods
 ```
 

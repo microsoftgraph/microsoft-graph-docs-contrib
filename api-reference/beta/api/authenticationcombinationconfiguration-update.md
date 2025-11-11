@@ -35,7 +35,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PATCH /identity/conditionalAccess/authenticationStrength/policies/{authenticationStrengthPolicyId}/combinationConfigurations/{authenticationCombinationConfigurationId}
 ```
 
@@ -68,7 +68,7 @@ The following example shows a request.
   "name": "update_authenticationcombinationconfiguration"
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/identity/conditionalAccess/authenticationStrength/policies/0e371351-6419-4c8a-8047-61eef0212ffb/combinationConfigurations/4643f174-fe85-42b8-8b84-516775750a30
 Content-Type: application/json
 Content-length: 130
@@ -111,7 +111,7 @@ The following example shows the response.
   "truncated": true,
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 

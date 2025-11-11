@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-Site result = graphClient.sites().bySiteId("{site-id}").get();
+var result = graphClient.sites().getOperationStatusWithOperationId("{operationId}").get();
 
 
 ```

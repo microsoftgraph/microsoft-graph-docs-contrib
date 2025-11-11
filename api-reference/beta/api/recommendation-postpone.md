@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /directory/recommendations/{recommendationId}/postpone
 ```
 
@@ -67,7 +67,7 @@ The following example shows a request.
   "sampleKeys": ["0cb31920-84b9-471f-a6fb-468c1a847088_Microsoft.Identity.IAM.Insights.TurnOffPerUserMFA"]
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/directory/recommendations/0cb31920-84b9-471f-a6fb-468c1a847088_Microsoft.Identity.IAM.Insights.TurnOffPerUserMFA/postpone
 Content-Type: application/json
 
@@ -115,7 +115,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.recommendation"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

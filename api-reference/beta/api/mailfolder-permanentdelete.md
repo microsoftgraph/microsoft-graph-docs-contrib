@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /users/{usersId}/mailFolders/{mailFolderId}/permanentDelete
 POST /users/{usersId}/mailFolders/{mailFolderId}/childFolders/{mailFolderId}/permanentDelete
 ```
@@ -64,7 +64,7 @@ The following example shows a request.
   "name": "mailfolderthis.permanentdelete"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/users/{usersId}/mailFolders/{mailFolderId}/permanentDelete
 ```
 
@@ -107,7 +107,7 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 

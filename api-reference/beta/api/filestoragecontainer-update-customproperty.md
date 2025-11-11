@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PATCH /storage/fileStorage/containers/{containerId}/customProperties
 ```
 
@@ -68,7 +68,7 @@ The following example updates the `value` property of the custom properties `cli
   "name": "update_filestoragecontainer_customproperty"
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/customProperties
 Content-type: application/json
 
@@ -96,7 +96,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.fileStorageContainerCustomPropertyDictionary"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 Ok
 
 {

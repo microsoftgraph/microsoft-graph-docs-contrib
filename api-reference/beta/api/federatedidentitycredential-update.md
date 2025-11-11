@@ -77,7 +77,7 @@ If successful, this method returns a `204 No Content` response code.
   "name": "update_federatedidentitycredential"
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/applications/bcd7c908-1c4d-4d48-93ee-ff38349a75c8/federatedIdentityCredentials/15be77d1-1940-43fe-8aae-94a78e078da0
 Content-Type: application/json
 
@@ -128,6 +128,6 @@ Content-Type: application/json
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```

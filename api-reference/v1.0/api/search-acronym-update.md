@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PATCH /search/acronyms/{acronymsId}
 ```
 
@@ -68,7 +68,7 @@ The following example shows a request.
   "name": "update_acronym"
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/v1.0/search/acronyms/733b26d5-af76-4eea-ac69-1a0ce8716897
 Content-Type: application/json
 
@@ -116,6 +116,6 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```

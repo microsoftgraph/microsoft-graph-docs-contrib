@@ -174,10 +174,10 @@ items:
     href: ../../api/filestoragecontainer-delete-customproperty.md
   - name: Update recycle bin settings
     href: ../../api/filestoragecontainer-update-recyclebinsettings.md
-  - name: Restore recycle bin items
-    href: ../../api/filestoragecontainer-restore-recyclebinitem.md
   - name: Delete recycle bin items
     href: ../../api/filestoragecontainer-delete-recyclebinitem.md
+  - name: Restore recycle bin items
+    href: ../../api/filestoragecontainer-restore-recyclebinitem.md
   - name: Get recycle bin items
     href: ../../api/filestoragecontainer-list-recyclebinitem.md
   - name: Lock
@@ -214,7 +214,7 @@ items:
     href: ../../api/recyclebin-list-items.md
   - name: Delete
     href: ../../api/filestoragecontainer-delete-recyclebinitem.md
-  - name: Restore
+  - name: Restore recycleBinItem by driveItemId
     href: ../../api/filestoragecontainer-restore-recyclebinitem.md
 - name: Shared drive item
   items:

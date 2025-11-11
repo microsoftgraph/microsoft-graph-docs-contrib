@@ -27,7 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 DELETE /security/labels/retentionLabels/{retentionLabelId}
 
 ```
@@ -55,7 +55,7 @@ Here's an example of a request.
   "name": "delete_retentionlabel"
 }
 -->
-``` http
+```http
 DELETE https://graph.microsoft.com/v1.0/security/labels/retentionLabels/9563a605-e827-4324-a5a9-09efddff1e50
 ```
 
@@ -97,7 +97,7 @@ Here's an example of the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 

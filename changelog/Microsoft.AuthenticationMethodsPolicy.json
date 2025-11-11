@@ -917,6 +917,32 @@
       "CreatedDateTime": "2025-04-24T21:15:06.8370991Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "6ce1df57-2f89-4556-b0f0-f99d3429cf83",
+          "ApiChange": "Resource",
+          "ChangedApiName": "verifiableCredentialAuthenticationMethodTarget",
+          "ChangeType": "Addition",
+          "Description": "Added the [verifiableCredentialAuthenticationMethodTarget](https://learn.microsoft.com/en-us/graph/api/resources/verifiableCredentialAuthenticationMethodTarget?view=graph-rest-beta) resource.",
+          "Target": "verifiableCredentialAuthenticationMethodTarget"
+        },
+        {
+          "Id": "6ce1df57-2f89-4556-b0f0-f99d3429cf83",
+          "ApiChange": "Resource",
+          "ChangedApiName": "verifiableCredentialsAuthenticationMethodConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [verifiableCredentialsAuthenticationMethodConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/verifiableCredentialsAuthenticationMethodConfiguration?view=graph-rest-beta) resource.",
+          "Target": "verifiableCredentialsAuthenticationMethodConfiguration"
+        }
+      ],
+      "Id": "6ce1df57-2f89-4556-b0f0-f99d3429cf83",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-11-10T17:22:50.6059662Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
     }
   ]
 }

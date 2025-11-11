@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 
-``` http
+```http
 PATCH /identity/apiConnectors/{identityApiConnectorId}
 ```
 
@@ -75,7 +75,7 @@ The following example shows a request.
 }
 -->
 
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/identity/apiConnectors/{identityApiConnectorId}
 Content-Type: application/json
 
@@ -129,7 +129,7 @@ The following example shows the response.
 }
 -->
 
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 
@@ -149,7 +149,7 @@ The following example shows a request.
 }
 -->
 
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/identity/apiConnectors/{identityApiConnectorId}
 Content-Type: application/json
 
@@ -201,6 +201,6 @@ The following example shows the response.
 }
 -->
 
-``` http
+```http
 HTTP/1.1 204 No Content
 ```

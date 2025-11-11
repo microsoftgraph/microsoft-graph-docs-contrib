@@ -48,7 +48,7 @@ To approve an [offerShiftRequest](../resources/offershiftrequest.md) object for 
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /teams/{teamsId}/schedule/offerShiftRequests/{offerShiftRequestId}/approveForUser
 ```
 
@@ -58,7 +58,7 @@ To approve an [openShiftChangeRequest](../resources/openshiftchangerequest.md) o
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /teams/{teamsId}/schedule/openShiftChangeRequests/{openShiftChangeRequestId}/approveForUser
 ```
 
@@ -68,7 +68,7 @@ To approve a [swapShiftsChangeRequest](../resources/swapshiftschangerequest.md) 
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /teams/{teamId}/schedule/swapShiftsChangeRequests/{swapShiftChangeRequestId}/approveForUser
 ```
 
@@ -78,7 +78,7 @@ To approve a [timeOffRequest](../resources/timeoffrequest.md) object for a user.
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /teams/{teamsId}/schedule/timeOffRequests/{timeOffRequestId}/approveForUser
 ```
 
@@ -117,7 +117,7 @@ The following example shows a request.
   "name": "offershiftrequestthis.approveforuser"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/teams/8f23a3b1-b87f-4a62-b38f-24a5fa83fa29/schedule/offerShiftRequests/SREQ_bb7af804-9ca1-48d7-9a0c-aa5a9f447d3c/approveForUser
 Content-Type: application/json
 
@@ -141,7 +141,7 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 
@@ -158,7 +158,7 @@ The following example shows a request.
   "name": "openshiftchangerequestthis.approveforuser"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/teams/8f23a3b1-b87f-4a62-b38f-24a5fa83fa29/schedule/openShiftChangeRequests/SREQ_8f23a3b1-b87f-4a62-b38f-24a5fa83fa29/approveForUser
 Content-Type: application/json
 
@@ -182,7 +182,7 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 
@@ -199,7 +199,7 @@ The following example shows a request.
   "name": "swapShiftsChangeRequestthis.approveforuser"
 }
 -->
-``` http
+```http
 POST /teams/8f23a3b1-b87f-4a62-b38f-24a5fa83fa29/schedule/swapShiftsChangeRequests/SREQ_8f23a3b1-b87f-4a62-b38f-24a5fa83fa29/approveForUser
 Content-Type: application/json
 
@@ -223,7 +223,7 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 
@@ -240,7 +240,7 @@ The following example shows a request.
   "name": "timeoffrequestthis.approveforuser"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/teams/8f23a3b1-b87f-4a62-b38f-24a5fa83fa29/schedule/timeOffRequests/SREQ_bb7af804-9ca1-48d7-9a0c-aa5a9f447d3c/approveForUser
 Content-Type: application/json
 
@@ -264,6 +264,6 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```

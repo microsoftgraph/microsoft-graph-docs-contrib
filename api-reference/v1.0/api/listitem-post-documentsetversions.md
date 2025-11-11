@@ -27,7 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /sites/{siteId}/lists/{listId}/items/{itemId}/documentSetVersions
 ```
 
@@ -68,7 +68,7 @@ The following example shows a request.
   "sampleKeys": ["root", "Documents", "2"]
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/sites/root/lists/Documents/items/2/documentSetVersions
 Content-Type: application/json
 Content-length: 70
@@ -121,7 +121,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.documentSetVersion"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 

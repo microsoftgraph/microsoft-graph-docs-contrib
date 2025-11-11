@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /admin/teams/telephoneNumberManagement/operations/{telephoneNumberLongRunningOperationId}
 ```
 
@@ -63,7 +63,7 @@ The following example shows a request.
   "name": "get_telephonenumberlongrunningoperation"
 }
 -->
-``` http
+```http
 GET https://graph.microsoft.com/beta/admin/teams/telephoneNumberManagement/operations{'QXNzaWdubWVudHw2Y2E4Yjc0Ni00YzgxLTRhY2EtOTUyNi1jZmNjNGRiYWYyMmI'}
 ```
 
@@ -77,7 +77,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.teamsAdministration.telephoneNumberLongRunningOperation"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

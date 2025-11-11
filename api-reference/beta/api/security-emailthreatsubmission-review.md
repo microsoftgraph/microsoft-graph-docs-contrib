@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /security/threatSubmission/emailThreats/{emailThreatsId}/review
 ```
 
@@ -65,7 +65,7 @@ The following example shows a request.
   "name": "emailthreatsubmissionthis.review"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/security/threatSubmission/emailThreats/49c5ef5b-1f65-444a-e6b9-08d772ea2059/review
 Content-type: application/json
 
@@ -88,7 +88,7 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 

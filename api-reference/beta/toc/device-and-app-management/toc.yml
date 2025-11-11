@@ -599,6 +599,8 @@ items:
       href: ../../resources/cloudpcuserrolescopetaginfo.md
     - name: Cloud PC user setting assignment
       href: ../../resources/cloudpcusersettingassignment.md
+    - name: Cloud PC user settings persistence configuration
+      href: ../../resources/cloudpcusersettingspersistenceconfiguration.md
     - name: Cloud PC Windows setting
       href: ../../resources/cloudpcwindowssetting.md
     - name: Cloud PC Windows settings

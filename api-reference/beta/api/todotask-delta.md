@@ -78,7 +78,7 @@ To track changes in the **todoTask** resources in a **todoTaskList** since the l
 
 ### HTTP Request
 <!-- { "blockType": "ignored" } -->
-``` http
+```http
 GET https://graph.microsoft.com/beta/me/todo/lists/gDbc8U7HGwADDZocJgAAAA==/tasks/delta?$deltatoken=w0vf2jHg2mBXU-I2AK0FSWl0dopNtG8u5YoM
 Prefer: odata.maxpagesize=2
 ```

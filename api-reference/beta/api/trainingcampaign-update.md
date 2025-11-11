@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PATCH /security/attackSimulation/trainingCampaigns/{trainingCampaignId}
 ```
 
@@ -75,7 +75,7 @@ The following example shows how to update the status of the training campaign. I
   "name": "update_trainingcampaign"
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/security/attackSimulation/trainingCampaigns/{trainingCampaignId}
 Content-Type: application/json
 

@@ -26,7 +26,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
-``` http
+```http
 POST /planner/plans
 ```
 
@@ -67,7 +67,7 @@ The following example shows a request.
   "blockType": "request",
   "name": "create_plannerplan_from_planner"
 }-->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/planner/plans
 Content-type: application/json
 
@@ -119,7 +119,7 @@ The following example shows the response.
   "truncated": true,
   "@odata.type": "microsoft.graph.plannerPlan"
 } -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 

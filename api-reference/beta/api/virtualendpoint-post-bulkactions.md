@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /deviceManagement/virtualEndpoint/bulkActions
 ```
 
@@ -65,7 +65,7 @@ The following example shows a request.
   "name": "create_cloudpcbulkaction_from_"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/bulkActions
 Content-type: application/json
 
@@ -119,7 +119,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.cloudPcBulkAction"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 

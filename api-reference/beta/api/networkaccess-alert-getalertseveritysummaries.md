@@ -35,7 +35,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /networkAccessRoot/alerts/getAlertSeveritySummaries(startDateTime={startDateTime},endDateTime={endDateTime})
 ```
 
@@ -71,7 +71,7 @@ The following example shows a request.
   "name": "alertthis.getalertseveritysummaries"
 }
 -->
-``` http
+```http
 GET https://graph.microsoft.com/beta/networkAccessRoot/alerts/getAlertSeveritySummaries(startDateTime='2025-04-19T00:00:00Z',endDateTime='2025-04-20T00:00:00Z')
 ```
 
@@ -85,7 +85,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.networkaccess.alertSeveritySummary)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

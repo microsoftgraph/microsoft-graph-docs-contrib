@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 
-``` http
+```http
 POST /solutions/virtualEvents/townhalls/{townhallId}/presenters
 POST /solutions/virtualEvents/webinars/{webinarId}/presenters
 ```
@@ -84,7 +84,7 @@ The following example shows a request.
   "sampleKeys": ["502dadea-b5d8-44aa-a851-a0ac496a36bf@09a21d49-f0f3-4b3f-96b6-f381e9430742"]
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/solutions/virtualEvents/townhalls/502dadea-b5d8-44aa-a851-a0ac496a36bf@09a21d49-f0f3-4b3f-96b6-f381e9430742/presenters
 Content-Type: application/json
 
@@ -137,7 +137,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.virtualEventPresenter"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 
@@ -169,7 +169,7 @@ The following example shows a request.
   "sampleKeys": ["502dadea-b5d8-44aa-a851-a0ac496a36bf@09a21d49-f0f3-4b3f-96b6-f381e9430742"]
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/solutions/virtualEvents/townhalls/502dadea-b5d8-44aa-a851-a0ac496a36bf@09a21d49-f0f3-4b3f-96b6-f381e9430742/presenters
 Content-Type: application/json
 
@@ -223,7 +223,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.virtualEventPresenter"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 
