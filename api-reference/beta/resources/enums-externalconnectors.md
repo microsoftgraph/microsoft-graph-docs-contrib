@@ -139,13 +139,14 @@ Namespace: microsoft.graph.externalConnectors
 | severity
 | state
 | priority
+| priorityNormalized
 | secondaryId
 | itemParentId
 | parentUrl
 | tags
 | itemType
 | itemPath
-| numReactions
+| numberOfReactions
 
 
 ### propertyType values
