@@ -8,12 +8,13 @@ ms.subservice: "entra-id-governance"
 doc_type: apiPageType
 ---
 
-# Create customDataProvidedResourceFile
+# Create customDataProvidedResourceUploadSession
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
- Create an upload session for a [customDataProvidedResource](../resources/customdataprovidedresource.md).
+
+Create Create a new [customDataProvidedResourceUploadSession](../resources/customdataprovidedresourceuploadsession.md) object.
 
 ## Permissions
 
@@ -21,11 +22,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "customdataprovidedresourceuploadsession-post-files-permissions"
-}[accesspackageresource-post-uploadsessions.md](accesspackageresource-post-uploadsessions.md)
+  "name": "customdataprovidedresource-post-uploadsessions-permissions"
+}
 -->
-
-[!INCLUDE [permissions-table](../includes/permissions/customdataprovidedresourceuploadsession-post-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/customdataprovidedresource-post-uploadsessions-permissions.md)]
 
 [!INCLUDE [rbac-entitlement-catalog-owner-write](../includes/rbac-for-apis/rbac-entitlement-management-catalog-owner-apis-write.md)]
 
