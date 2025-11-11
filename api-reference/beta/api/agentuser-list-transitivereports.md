@@ -35,7 +35,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /users/{usersId}/transitiveReports
+GET /users/{usersId}/transitiveReports/$count
 ```
 
 ## Optional query parameters
