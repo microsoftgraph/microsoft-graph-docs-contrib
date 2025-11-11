@@ -1,6 +1,6 @@
 ---
 title: "customDataProvidedResourceUploadStats resource type"
-description: "Metadata related to the files that have been uploaded as part of the upload session thus far. "
+description: "Metadata related to the files that have been uploaded as part of a customDataProvidedResourceUploadSession. "
 author: “pratima-cloudknox”
 ms.date: 10/09/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Metadata related to the files that were uploaded as part of the [uploadSession](../resource/uploadsession.md). 
+Metadata related to the files that were uploaded as part of a [customDataProvidedResourceUploadSession](../resources/customdataprovidedresourceuploadsession.md). 
 
 
 ## Properties
