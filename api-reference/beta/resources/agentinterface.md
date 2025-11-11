@@ -4,7 +4,7 @@ description: "Declares a combination of a target URL and a transport protocol fo
 author: "jasondou"
 ms.date: 11/06/2025
 ms.localizationpriority: medium
-ms.subservice: "entra"
+ms.subservice: "entra-id"
 doc_type: resourcePageType
 ---
 

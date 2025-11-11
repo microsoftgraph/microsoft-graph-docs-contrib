@@ -1,6 +1,6 @@
 ---
 title: "List members"
-description: "**TODO: Add a useful description.**"
+description: "Returns the list of agent instance members for the specified collection."
 author: "jasondou"
 ms.date: 11/06/2025
 ms.localizationpriority: medium

@@ -4,7 +4,7 @@ description: "Represents a distinct capability or function that an agent can per
 author: "jasondou"
 ms.date: 11/06/2025
 ms.localizationpriority: medium
-ms.subservice: "entra"
+ms.subservice: "entra-id"
 doc_type: resourcePageType
 ---
 

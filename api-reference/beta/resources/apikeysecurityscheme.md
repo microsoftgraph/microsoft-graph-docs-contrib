@@ -4,7 +4,7 @@ description: "Represents an API key security scheme used for authenticating API 
 author: "jasondou"
 ms.date: 11/06/2025
 ms.localizationpriority: medium
-ms.subservice: "entra"
+ms.subservice: "entra-id"
 doc_type: resourcePageType
 ---
 
