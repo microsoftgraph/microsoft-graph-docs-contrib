@@ -49,97 +49,48 @@ PATCH /riskyAgentUser/agentUser
 
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
+You must specify the **@odata.type** as `#microsoft.graph.agentUser` in the request body when updating an agentUser.
 
-**TODO: Remove properties that don't apply**
-|Property|Type|Description|
-|:---|:---|:---|
-|deletedDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [directoryObject](../resources/directoryobject.md). Optional.|
-|signInActivity|[signInActivity](../resources/signinactivity.md)|**TODO: Add Description** Inherited from [user](../resources/user.md). Optional.|
-|cloudLicensing|[userCloudLicensing](../resources/cloudlicensing-usercloudlicensing.md)|**TODO: Add Description** Inherited from [user](../resources/user.md). Optional.|
-|accountEnabled|Boolean|**TODO: Add Description** Inherited from [user](../resources/user.md). Optional.|
-|ageGroup|String|**TODO: Add Description** Inherited from [user](../resources/user.md). Optional.|
-|assignedLicenses|[assignedLicense](../resources/assignedlicense.md) collection|**TODO: Add Description** Inherited from [user](../resources/user.md). Required.|
-|assignedPlans|[assignedPlan](../resources/assignedplan.md) collection|**TODO: Add Description** Inherited from [user](../resources/user.md). Required.|
-|authorizationInfo|[authorizationInfo](../resources/authorizationinfo.md)|**TODO: Add Description** Inherited from [user](../resources/user.md). Optional.|
-|businessPhones|String collection|**TODO: Add Description** Inherited from [user](../resources/user.md). Required.|
-|city|String|**TODO: Add Description** Inherited from [user](../resources/user.md). Optional.|
-|cloudRealtimeCommunicationInfo|[cloudRealtimeCommunicationInfo](../resources/cloudrealtimecommunicationinfo.md)|**TODO: Add Description** Inherited from [user](../resources/user.md). Optional.|
-|companyName|String|**TODO: Add Description** Inherited from [user](../resources/user.md). Optional.|
-|consentProvidedForMinor|String|**TODO: Add Description** Inherited from [user](../resources/user.md). Optional.|
-|country|String|**TODO: Add Description** Inherited from [user](../resources/user.md). Optional.|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [user](../resources/user.md). Optional.|
-|creationType|String|**TODO: Add Description** Inherited from [user](../resources/user.md). Optional.|
-|customSecurityAttributes|[customSecurityAttributeValue](../resources/customsecurityattributevalue.md)|**TODO: Add Description** Inherited from [user](../resources/user.md). Optional.|
-|department|String|**TODO: Add Description** Inherited from [user](../resources/user.md). Optional.|
-|deviceKeys|[deviceKey](../resources/devicekey.md) collection|**TODO: Add Description** Inherited from [user](../resources/user.md). Required.|
-|displayName|String|**TODO: Add Description** Inherited from [user](../resources/user.md). Optional.|
-|employeeHireDate|DateTimeOffset|**TODO: Add Description** Inherited from [user](../resources/user.md). Optional.|
-|employeeId|String|**TODO: Add Description** Inherited from [user](../resources/user.md). Optional.|
-|employeeOrgData|[employeeOrgData](../resources/employeeorgdata.md)|**TODO: Add Description** Inherited from [user](../resources/user.md). Optional.|
-|employeeType|String|**TODO: Add Description** Inherited from [user](../resources/user.md). Optional.|
-|employeeLeaveDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [user](../resources/user.md). Optional.|
-|faxNumber|String|**TODO: Add Description** Inherited from [user](../resources/user.md). Optional.|
-|givenName|String|**TODO: Add Description** Inherited from [user](../resources/user.md). Optional.|
-|identities|[objectIdentity](../resources/objectidentity.md) collection|**TODO: Add Description** Inherited from [user](../resources/user.md). Optional.|
-|imAddresses|String collection|**TODO: Add Description** Inherited from [user](../resources/user.md). Optional.|
-|infoCatalogs|String collection|**TODO: Add Description** Inherited from [user](../resources/user.md). Required.|
-|isLicenseReconciliationNeeded|Boolean|**TODO: Add Description** Inherited from [user](../resources/user.md). Optional.|
-|isManagementRestricted|Boolean|**TODO: Add Description** Inherited from [user](../resources/user.md). Optional.|
-|isResourceAccount|Boolean|**TODO: Add Description** Inherited from [user](../resources/user.md). Optional.|
-|jobTitle|String|**TODO: Add Description** Inherited from [user](../resources/user.md). Optional.|
-|lastPasswordChangeDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [user](../resources/user.md). Optional.|
-|legalAgeGroupClassification|String|**TODO: Add Description** Inherited from [user](../resources/user.md). Optional.|
-|licenseAssignmentStates|[licenseAssignmentState](../resources/licenseassignmentstate.md) collection|**TODO: Add Description** Inherited from [user](../resources/user.md). Optional.|
-|mail|String|**TODO: Add Description** Inherited from [user](../resources/user.md). Optional.|
-|mailNickname|String|**TODO: Add Description** Inherited from [user](../resources/user.md). Optional.|
-|mobilePhone|String|**TODO: Add Description** Inherited from [user](../resources/user.md). Optional.|
-|onPremisesDistinguishedName|String|**TODO: Add Description** Inherited from [user](../resources/user.md). Optional.|
-|onPremisesExtensionAttributes|[onPremisesExtensionAttributes](../resources/onpremisesextensionattributes.md)|**TODO: Add Description** Inherited from [user](../resources/user.md). Optional.|
-|onPremisesImmutableId|String|**TODO: Add Description** Inherited from [user](../resources/user.md). Optional.|
-|onPremisesLastSyncDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [user](../resources/user.md). Optional.|
-|onPremisesProvisioningErrors|[onPremisesProvisioningError](../resources/onpremisesprovisioningerror.md) collection|**TODO: Add Description** Inherited from [user](../resources/user.md). Optional.|
-|onPremisesSecurityIdentifier|String|**TODO: Add Description** Inherited from [user](../resources/user.md). Optional.|
-|onPremisesSipInfo|[onPremisesSipInfo](../resources/onpremisessipinfo.md)|**TODO: Add Description** Inherited from [user](../resources/user.md). Optional.|
-|onPremisesSyncEnabled|Boolean|**TODO: Add Description** Inherited from [user](../resources/user.md). Optional.|
-|onPremisesDomainName|String|**TODO: Add Description** Inherited from [user](../resources/user.md). Optional.|
-|onPremisesSamAccountName|String|**TODO: Add Description** Inherited from [user](../resources/user.md). Optional.|
-|onPremisesUserPrincipalName|String|**TODO: Add Description** Inherited from [user](../resources/user.md). Optional.|
-|otherMails|String collection|**TODO: Add Description** Inherited from [user](../resources/user.md). Required.|
-|passwordPolicies|String|**TODO: Add Description** Inherited from [user](../resources/user.md). Optional.|
-|passwordProfile|[passwordProfile](../resources/passwordprofile.md)|**TODO: Add Description** Inherited from [user](../resources/user.md). Optional.|
-|officeLocation|String|**TODO: Add Description** Inherited from [user](../resources/user.md). Optional.|
-|postalCode|String|**TODO: Add Description** Inherited from [user](../resources/user.md). Optional.|
-|preferredDataLocation|String|**TODO: Add Description** Inherited from [user](../resources/user.md). Optional.|
-|preferredLanguage|String|**TODO: Add Description** Inherited from [user](../resources/user.md). Optional.|
-|provisionedPlans|[provisionedPlan](../resources/provisionedplan.md) collection|**TODO: Add Description** Inherited from [user](../resources/user.md). Required.|
-|proxyAddresses|String collection|**TODO: Add Description** Inherited from [user](../resources/user.md). Required.|
-|refreshTokensValidFromDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [user](../resources/user.md). Optional.|
-|securityIdentifier|String|**TODO: Add Description** Inherited from [user](../resources/user.md). Optional.|
-|serviceProvisioningErrors|[serviceProvisioningError](../resources/serviceprovisioningerror.md) collection|**TODO: Add Description** Inherited from [user](../resources/user.md). Optional.|
-|showInAddressList|Boolean|**TODO: Add Description** Inherited from [user](../resources/user.md). Optional.|
-|signInSessionsValidFromDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [user](../resources/user.md). Optional.|
-|state|String|**TODO: Add Description** Inherited from [user](../resources/user.md). Optional.|
-|streetAddress|String|**TODO: Add Description** Inherited from [user](../resources/user.md). Optional.|
-|surname|String|**TODO: Add Description** Inherited from [user](../resources/user.md). Optional.|
-|usageLocation|String|**TODO: Add Description** Inherited from [user](../resources/user.md). Optional.|
-|userPrincipalName|String|**TODO: Add Description** Inherited from [user](../resources/user.md). Optional.|
-|externalUserState|String|**TODO: Add Description** Inherited from [user](../resources/user.md). Optional.|
-|externalUserStateChangeDateTime|String|**TODO: Add Description** Inherited from [user](../resources/user.md). Optional.|
-|userType|String|**TODO: Add Description** Inherited from [user](../resources/user.md). Optional.|
-|identityParentId|String|**TODO: Add Description** Inherited from [user](../resources/user.md). Optional.|
-|mailboxSettings|[mailboxSettings](../resources/mailboxsettings.md)|**TODO: Add Description** Inherited from [user](../resources/user.md). Optional.|
-|deviceEnrollmentLimit|Int32|**TODO: Add Description** Inherited from [user](../resources/user.md). Required.|
-|print|[userPrint](../resources/intune-userprint.md)|**TODO: Add Description** Inherited from [user](../resources/user.md). Optional.|
-|aboutMe|String|**TODO: Add Description** Inherited from [user](../resources/user.md). Optional.|
-|birthday|DateTimeOffset|**TODO: Add Description** Inherited from [user](../resources/user.md). Required.|
-|hireDate|DateTimeOffset|**TODO: Add Description** Inherited from [user](../resources/user.md). Required.|
-|interests|String collection|**TODO: Add Description** Inherited from [user](../resources/user.md). Optional.|
-|mySite|String|**TODO: Add Description** Inherited from [user](../resources/user.md). Optional.|
-|pastProjects|String collection|**TODO: Add Description** Inherited from [user](../resources/user.md). Optional.|
-|preferredName|String|**TODO: Add Description** Inherited from [user](../resources/user.md). Optional.|
-|responsibilities|String collection|**TODO: Add Description** Inherited from [user](../resources/user.md). Optional.|
-|schools|String collection|**TODO: Add Description** Inherited from [user](../resources/user.md). Optional.|
-|skills|String collection|**TODO: Add Description** Inherited from [user](../resources/user.md). Optional.|
+| Property       | Type    |Description|
+|:---------------|:--------|:----------|
+|accountEnabled|Boolean| `true` if the account is enabled; otherwise, `false`. This property is required when an agent user is created.|
+|assignedLicenses|[assignedLicense](../resources/assignedlicense.md) collection|The licenses that are assigned to the agent user. Not nullable.|
+|businessPhones| String collection | The telephone numbers for the agent user. **NOTE:** Although this is a string collection, only one number can be set for this property.|
+|city|String|The city in which the agent user is located.|
+| companyName | String | The name of the company that the agent user is associated with. This property can be useful for describing the company that an external agent user comes from. The maximum length is 64 characters. |
+|country|String|The country/region in which the agent user is located; for example, `US` or `UK`.|
+|customSecurityAttributes|[customSecurityAttributeValue](../resources/customsecurityattributevalue.md)|An open complex type that holds the value of a custom security attribute that is assigned to a directory object.|
+|department|String|The name for the department in which the agent user works.|
+|displayName|String|The name displayed in the address book for the agent user. This property is required when an agent user is created and it can't be cleared during updates.|
+|employeeId|String|The employee identifier assigned to the agent user by the organization. The maximum length is 16 characters.|
+| employeeType | String | Captures enterprise worker type. For example, `Employee`, `Contractor`, `Consultant`, or `Vendor`.|
+|givenName|String|The given name (first name) of the agent user.|
+|employeeHireDate|DateTimeOffset|The hire date of the agent user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+|employeeLeaveDateTime|DateTimeOffset|The date and time when the agent user left or will leave the organization. The timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+|employeeOrgData|[employeeOrgData](../resources/employeeorgdata.md) |Represents organization data (for example, division and costCenter) associated with the agent user. Include both property values when updating **employeeOrgData**; if you omit any, the system sets them to `null`.|
+|jobTitle|String|The agent user's job title.|
+|mail|String|The SMTP address for the agent user, for example, `salesagent@contoso.com`. Changes to this property also updates the agent user's **proxyAddresses** collection to include the value as an SMTP address. Can't be updated to `null`.|
+|mailNickname|String|The mail alias for the agent user. This property must be specified when an agent user is created.|
+|mobilePhone|String|The primary cellular telephone number for the agent user.|
+|officeLocation|String|The office location in the agent user's place of business.|
+|otherMails|String collection|A list of additional email addresses for the agent user; for example: `["salesagent@contoso.com", "agentsales@fabrikam.com"]`. To update this property, pass in all the email addresses that you want the agent user to have; otherwise, existing values get overwritten by the values you specify. Can store up to 250 values, each with a limit of 250 characters.|
+|postalCode|String|The postal code for the agent user's postal address. The postal code is specific to the agent user's country/region. In the United States of America, this attribute contains the ZIP code.|
+|preferredLanguage|String|The preferred language for the agent user. Should follow ISO 639-1 Code; for example, `en-US`.|
+|state|String|The state or province in the agent user's address.|
+|streetAddress|String|The street address of the agent user's place of business.|
+|surname|String|The agent user's surname (family name or last name).|
+|usageLocation|String|A two letter country code (ISO standard 3166). Required for agent users that will be assigned licenses due to legal requirement to check for availability of services in countries/regions.  Examples include: `US`, `JP`, and `GB`. Not nullable.|
+|userPrincipalName|String|The user principal name (UPN) of the agent user. The UPN is an Internet-style sign-in name for the agent user based on the Internet standard RFC 822. By convention, this should map to the agent user's email name. The general format is alias@domain, where domain must be present in the tenant's collection of verified domains. The verified domains for the tenant can be accessed from the **verifiedDomains** property of [organization](../resources/organization.md). <br>NOTE: This property can't contain accent characters. Only the following characters are allowed `A - Z`, `a - z`, `0 - 9`, ` ' . - _ ! # ^ ~`. For the complete list of allowed characters, see [username policies](/azure/active-directory/authentication/concept-sspr-policy#userprincipalname-policies-that-apply-to-all-user-accounts).|
+|userType|String|A string value that can be used to classify user types in your directory, such as `Member` and `Guest`.|
+
+Because the **agentUser** resource supports [extensions](/graph/extensibility-overview), you can use the `PATCH` operation to add, update, or delete your own app-specific data in custom properties of an extension in an existing **agentUser** instance.
+
+### Manage extensions and associated data
+
+Use this API to manage the directory, schema, and open extensions and their data for agent users, as follows:
+
++ Add, update, and store data in the extensions for an existing agent user
++ For directory and schema extensions, remove any stored data by setting the value of the custom extension property to `null`. For open extensions, use the [Delete open extension](/graph/api/opentypeextension-delete) API.
 
 
 
@@ -333,7 +284,8 @@ The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.agentUser"
 }
 -->
 ``` http

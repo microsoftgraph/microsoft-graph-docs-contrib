@@ -80,7 +80,7 @@ The following example shows a request.
 
 <!-- {
   "blockType": "request",
-  "name": "create_agentuser"
+  "name": "create_agentuser_agentuser"
 }-->
 
 ```http
