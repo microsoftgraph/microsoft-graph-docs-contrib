@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /solutions/backupRestore/oneDriveForBusinessProtectionPolicies/{oneDriveForBusinessProtectionPolicyId}/driveInclusionRules/{driveProtectionRuleId}/deleteAndUnprotect
 POST /solutions/backupRestore/exchangeProtectionPolicies/{exchangeProtectionPolicyId}/mailboxInclusionRules/{mailboxProtectionRuleId}/deleteAndUnprotect
 ```
@@ -68,7 +68,7 @@ The following example shows a request.
   "name": "driveprotectionrulethis.deleteandunprotect"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/solutions/backupRestore/oneDriveForBusinessProtectionPolicies/71633878-8321-4950-bfaf-ed285bdd1461/driveInclusionRules/61633878-8321-4950-bfaf-ed285bdd1461/deleteAndUnprotect
 ```
 
@@ -88,7 +88,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.protectionRuleBase"
 }
 -->
-``` http
+```http
 HTTP/1.1 202 Accepted
 Content-Type: application/json
 
@@ -124,7 +124,7 @@ The following example shows a request.
   "name": "mailboxprotectionrulethis.deleteandunprotect"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/solutions/backupRestore/exchangeProtectionPolicies/6b0991b9-e7d4-4794-86fa-2a3f2a4e3177/mailboxInclusionRules/52147fb9-2682-47bc-a8f6-6c38c1ff498d/deleteAndUnprotect
 ```
 
@@ -144,7 +144,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.protectionRuleBase"
 }
 -->
-``` http
+```http
 HTTP/1.1 202 Accepted
 Content-Type: application/json
 

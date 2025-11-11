@@ -31,13 +31,13 @@ Use the [List](/graph/api/peopleadminsettings-list-profilesources?view=graph-res
 
 The following example gets the collection of profile sources in an organization.
 
-``` http
+```http
 GET https://graph.microsoft.com/beta/admin/people/profileSources
 ```
 
 If successful, the response returns a `200 OK` response code and a [profileSource](/graph/api/resources/profilesource?view=graph-rest-beta&preserve-view=true) object in the response body.
 
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -86,7 +86,7 @@ Use the [Create](/graph/api/peopleadminsettings-post-profilesources?view=graph-r
 
 #### Request
 
-``` http
+```http
 POST https://graph.microsoft.com/beta/admin/people/profileSources
 Content-Type: application/json
 
@@ -109,7 +109,7 @@ If successful, this method returns a `201 Created` response code and a [profileS
 
 #### Response
 
-``` http
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 
@@ -135,7 +135,7 @@ Use the [Update](/graph/api/profilesource-update?view=graph-rest-beta&preserve-v
 
 #### Request
 
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/admin/people/profileSources(sourceId='bamboohr1')
 Content-Type: application/json
 
@@ -160,7 +160,7 @@ If successful, this method returns a `200 OK` response code and a [profileSource
 
 #### Response
 
-``` http
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -191,7 +191,7 @@ Use the [Delete](/graph/api/profilesource-delete?view=graph-rest-beta&preserve-v
 
 #### Request
 
-``` http
+```http
 DELETE https://graph.microsoft.com/beta/admin/people/profileSources(sourceId='bamboohr1')
 ```
 
@@ -199,7 +199,7 @@ If successful, this method returns a `204 No Content` response code.
 
 #### Response
 
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 

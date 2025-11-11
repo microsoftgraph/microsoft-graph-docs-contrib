@@ -2,7 +2,7 @@
 title: "publishedResource resource type"
 description: "publishedResource resource type."
 ms.localizationpriority: medium
-author: "dhruvinrshah"
+author: "shahzad-khalid"
 ms.subservice: "entra-applications"
 doc_type: "resourcePageType"
 ms.date: 07/22/2024
@@ -34,7 +34,7 @@ Represents on-premises published resource. A tenant administrator can publish va
 |:-------------|:------------|:------------|
 |displayName|String| Display Name of the publishedResource.|
 |id|String| The object id of the publishedResource. Read-only.|
-|publishingType|String| Possible values are: `applicationProxy`, `exchangeOnline`, `authentication`, `provisioning`, `adAdministration`.|
+|publishingType|onPremisesPublishingType| Possible values are: `applicationProxy`, `exchangeOnline`, `authentication`, `provisioning`, `intunePfx`, `oflineDomainJoin`, `unknownFutureValue`, `privateAccess`. Use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `privateAccess`.|
 |resourceName|String|Name of the publishedResource.|
 
 ## Relationships
