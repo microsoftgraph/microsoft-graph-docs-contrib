@@ -241,6 +241,14 @@ items:
       href: toolkit/upgrade.md
   - name: Deploy in IaC with templates
     href: /graph/templates?toc=/graph/toc.json
+  - name: Use the MCP Server for Enterprise
+    items:
+    - name: Overview
+      href: /graph/mcp-server/overview.md
+    - name: Provision the MCP Server
+      href: /graph/mcp-server/provision-mcp.md
+    - name: Get started
+      href: /graph/mcp-server/install-mcp-server.md
 - name: Services and features
   expanded: true
   items:
