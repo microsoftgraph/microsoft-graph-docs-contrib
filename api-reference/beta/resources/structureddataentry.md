@@ -1,6 +1,6 @@
 ---
 title: "structuredDataEntry resource type"
-description: "Represents the key-value pair of UserConfiguration objects."
+description: "Represents a single key-value pair of userConfiguration objects."
 author: "daiyue-microsoft"
 ms.date: 11/05/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a single key-value pair of User Configuration objects. Both `keyEntry` and `valueEntry` are of type [structuredDataEntryTypedValue](../resources/structureddataentrytypedvalue.md).
+Represents a single key-value pair of [userConfiguration](../resources/userconfiguration.md) objects.
 
 ## Properties
 |Property|Type|Description|
