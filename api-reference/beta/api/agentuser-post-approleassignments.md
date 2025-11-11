@@ -47,23 +47,7 @@ POST /users/{usersId}/appRoleAssignments
 
 ## Request body
 
-In the request body, supply a JSON representation of the [appRoleAssignment](../resources/approleassignment.md) object.
-
-You can specify the following properties when creating an **appRoleAssignment**.
-
-**TODO: Remove properties that don't apply**
-|Property|Type|Description|
-|:---|:---|:---|
-|deletedDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [directoryObject](../resources/directoryobject.md). Optional.|
-|appRoleId|Guid|**TODO: Add Description** Required.|
-|creationTimestamp|DateTimeOffset|**TODO: Add Description** Optional.|
-|principalDisplayName|String|**TODO: Add Description** Optional.|
-|principalId|Guid|**TODO: Add Description** Optional.|
-|principalType|String|**TODO: Add Description** Optional.|
-|resourceDisplayName|String|**TODO: Add Description** Optional.|
-|resourceId|Guid|**TODO: Add Description** Optional.|
-
-
+In the request body, supply a JSON representation of an [appRoleAssignment](../resources/approleassignment.md) object.
 
 ## Response
 

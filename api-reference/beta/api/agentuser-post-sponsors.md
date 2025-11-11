@@ -47,20 +47,11 @@ POST /users/{usersId}/sponsors/$ref
 
 ## Request body
 
-In the request body, supply a JSON representation of the [directoryObject](../resources/directoryobject.md) object.
-
-You can specify the following properties when creating a **directoryObject**.
-
-**TODO: Remove properties that don't apply**
-|Property|Type|Description|
-|:---|:---|:---|
-|deletedDateTime|DateTimeOffset|**TODO: Add Description** Optional.|
-
-
+In the request body, supply a JSON object and pass an `@odata.id` parameter with the read URL of the [user](../resources/user.md) or [group](../resources/group.md) object to be added.
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code and a [directoryObject](../resources/directoryobject.md) object in the response body.
+If successful, this method returns a `204 No Content` response code. It doesn't return anything in the response body.
 
 ## Examples
 
