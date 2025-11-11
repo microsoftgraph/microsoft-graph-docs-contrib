@@ -24,10 +24,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 |Permission type      | Least privileged permission | Higher privileged permissions |
 |:--------------------|:---------------------------|:-----------------------------|
-|Delegated (work or school account) | User.ReadWrite.All | Not available. |
+|Delegated (work or school account) | User.ReadBasic.All | User.Read.All, AgentIdUser.ReadWrite.IdentityParentedBy, AgentIdUser.ReadWrite.All, User.ReadWrite.All |
 |Delegated (personal Microsoft account) | Not supported. | Not supported.|
-|Application | User.ReadWrite.All | Not available. |
-
+|Application | User.ReadBasic.All | User.Read.All, AgentIdUser.ReadWrite.IdentityParentedBy, AgentIdUser.ReadWrite.All, User.ReadWrite.All |
 ## HTTP request
 
 <!-- {
@@ -89,8 +88,7 @@ Content-Type: application/json
   "value": [
     {
       "@odata.type": "#microsoft.graph.directoryObject",
-      "id": "a6c034b8-621b-dee3-6abb-52cbce801fe9",
-      "deletedDateTime": "String (timestamp)"
+      "id": "a6c034b8-621b-dee3-6abb-52cbce801fe9"
     }
   ]
 }
