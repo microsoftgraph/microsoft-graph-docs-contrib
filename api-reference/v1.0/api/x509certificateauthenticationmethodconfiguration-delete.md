@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 DELETE /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/x509Certificate
 ```
 
@@ -55,7 +55,7 @@ If successful, this method returns a `204 No Content` response code.
   "name": "delete_x509certificateauthenticationmethodconfiguration"
 }
 -->
-``` http
+```http
 DELETE https://graph.microsoft.com/v1.0/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/x509Certificate
 ```
 
@@ -94,7 +94,7 @@ DELETE https://graph.microsoft.com/v1.0/policies/authenticationMethodsPolicy/aut
   "blockType": "response"
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 

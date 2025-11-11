@@ -511,6 +511,7 @@
         "educationFeedbackOutcome",
         "educationFeedbackResourceOutcome",
         "educationGradingCategory",
+        "educationGradingScheme",
         "educationModule",
         "educationModuleResource",
         "educationOutcome",
@@ -543,6 +544,7 @@
         "educationExternalResource",
         "educationFeedback",
         "educationFileResource",
+        "educationGradingSchemeGrade",
         "educationLinkResource",
         "educationLinkedAssignmentResource",
         "educationMediaResource",
@@ -1628,7 +1630,9 @@
           "name": "Identities",
           "resources": [
             "microsoft.graph.security.healthIssue",
-            "microsoft.graph.security.sensor"
+            "microsoft.graph.security.sensor",
+            "microsoft.graph.security.sensorCandidate",
+            "microsoft.graph.security.sensorCandidateActivationConfiguration"
           ],
           "complexTypes": [
             "microsoft.graph.security.deploymentAccessKeyType",
