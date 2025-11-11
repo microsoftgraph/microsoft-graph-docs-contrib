@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new userConfiguration object.
+Create a new [userConfiguration](../resources/userconfiguration.md) object.
 
 ## Permissions
 
@@ -49,13 +49,13 @@ POST /users/{usersId}/mailFolders/{mailFolderId}/userConfigurations
 
 In the request body, supply a JSON representation of the [userConfiguration](../resources/userconfiguration.md) object.
 
-You can specify the following properties when creating a **userConfiguration**.
+You can specify the following properties when you create a **userConfiguration**.
 
 |Property|Type|Description|
 |:---|:---|:---|
 |binaryData|Binary|Arbitrary binary data. Optional.|
-|xmlData|Binary|Binary data. Suggested for storing serialized XML. Optional.|
 |structuredData|[structuredDataEntry](../resources/structureddataentry.md) collection|Key-value pairs of supported data types. Optional.|
+|xmlData|Binary|Binary data for storing serialized XML. Optional.|
 
 ## Response
 
