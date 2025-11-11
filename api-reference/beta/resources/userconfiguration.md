@@ -6,6 +6,7 @@ ms.date: 11/05/2025
 ms.localizationpriority: medium
 ms.subservice: "exchange"
 doc_type: resourcePageType
+toc.title: User configuration (preview)
 ---
 
 # userConfiguration resource type
