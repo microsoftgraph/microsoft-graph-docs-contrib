@@ -1,7 +1,7 @@
 ---
 title: "customDataProvidedResourceUploadSession resource type"
 description: "An upload session within which multiple files can be uploaded for this resource."
-author: “pratima-cloudknox”
+author: "pratima-cloudknox"
 ms.date: 10/29/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
