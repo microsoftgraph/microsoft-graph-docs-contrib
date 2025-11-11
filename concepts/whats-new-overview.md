@@ -18,13 +18,6 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 > [!IMPORTANT]
 > Features in _preview_ status are subject to change without notice, and might not be promoted to generally available (GA) status. Don't use preview features in production apps.
 
-## November 2025: New in preview only
-
-### Search
-
-Added the **contentCategory** to the [externalConnection](/graph/api/resources/externalconnectors-externalconnection?view=graph-rest-beta&preserve-view=true) to specify the domain category of the content associated with the external connection
-
-Added the **description** and additional labels to the [externalConnection](https://learn.microsoft.com/en-us/graph/api/resources/externalconnectors-property?view=graph-rest-beta) to specify the property descriptions, labels and property type of the schema attributes associated with the external connection
 
 ## October 2025: New and generally available
 
