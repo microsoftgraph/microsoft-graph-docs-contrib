@@ -1,6 +1,6 @@
 ---
 title: "customDataProvidedResourceUploadSession: uploadFile"
-description: "Upload a file in the Upload Session"
+description: "Upload a file in a customDataProvidedResourceUploadSession"
 author: "pratima-cloudknox"
 ms.date: 10/29/2025
 ms.localizationpriority: medium
