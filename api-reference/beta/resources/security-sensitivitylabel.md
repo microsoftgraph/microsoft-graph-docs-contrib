@@ -157,7 +157,7 @@ We recommend using filters that use a single call with multiple IDs to retrieve 
 | --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
 | Label ID only         | `(id eq 'guid1')`                                                                                                                               | Returns rights defined on the label.                                                                             |
 | Label ID + ownerEmail | `(id eq 'guid1' and ownerEmail eq 'ownerEmail1')`                                                                                               | Evaluates rights for the specified user.                                                                         |
-| Multiple Tuples       | `(id eq 'guid1' and ownerEmail eq 'ownerEmail1') or (id eq 'guid2') or (id eq 'guid3' and ownerEmail eq 'ownerEmail2')`           | Combine conditions with **OR**. Returns a merged list of labels and rights for all matched labels and users.     |
+| Multiple tuples       | `(id eq 'guid1' and ownerEmail eq 'ownerEmail1') or (id eq 'guid2') or (id eq 'guid3' and ownerEmail eq 'ownerEmail2')`           | Combine conditions with **OR**. Returns a merged list of labels and rights for all matched labels and users.     |
 
 
 
@@ -179,17 +179,17 @@ This section outlines the behavior and constraints for the `isScopedToUser` para
 
 ##### isScopedToUser = true
 - **Result**: Shows enabled labels only
-- **Use Case**: Standard filtering for active/enabled labels
+- **Use case**: Standard filtering for active/enabled labels
 - **Status**: Recommended usage
 
 ##### isScopedToUser = false
 - **Result**: Shows disabled labels only
-- **Use Case**: Limited - ideally not used with this value
+- **Use case**: Limited - ideally not used with this value
 - **Status**: Not recommended for typical operations
 
 ##### isScopedToUser not passed
 - **Result**: Shows all labels (both enabled and disabled)
-- **Use Case**: Comprehensive label retrieval
+- **Use case**: Comprehensive label retrieval
 - **Status**: Default behavior when parameter is omitted
 
 #### Restrictions
