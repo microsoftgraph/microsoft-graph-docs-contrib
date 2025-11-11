@@ -24,9 +24,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 |Permission type      | Least privileged permission | Higher privileged permissions |
 |:--------------------|:---------------------------|:-----------------------------|
-|Delegated (work or school account) | User.ReadWrite.All | Not available. |
+|Delegated (work or school account) | User.Read.All | AgentIdUser.ReadWrite.IdentityParentedBy, AgentIdUser.ReadWrite.All, User.ReadWrite.All |
 |Delegated (personal Microsoft account) | Not supported. | Not supported.|
-|Application | User.ReadWrite.All | Not available. |
+|Application | User.Read.All | AgentIdUser.ReadWrite.IdentityParentedBy, AgentIdUser.ReadWrite.All, User.ReadWrite.All |
 
 ## HTTP request
 
@@ -47,6 +47,7 @@ This method supports some of the OData query parameters to help customize the re
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+|ConsistencyLevel|eventual. Required.|
 
 ## Request body
 
@@ -67,7 +68,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/users/{usersId}/transitiveReports
+GET https://graph.microsoft.com/beta/users/{usersId}/transitiveReports/$count
 ```
 
 
@@ -89,8 +90,7 @@ Content-Type: application/json
   "value": [
     {
       "@odata.type": "#microsoft.graph.directoryObject",
-      "id": "a6c034b8-621b-dee3-6abb-52cbce801fe9",
-      "deletedDateTime": "String (timestamp)"
+      "id": "a6c034b8-621b-dee3-6abb-52cbce801fe9"
     }
   ]
 }
