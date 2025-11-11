@@ -32,7 +32,7 @@ To refresh incidents on all alerts, use the following request.
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /identityGovernance/roleManagementAlerts/alerts/refresh
 ```
 
@@ -41,7 +41,7 @@ To refresh a single alert, use the below request.
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /identityGovernance/roleManagementAlerts/alerts/{alertId}/refresh
 ```
 
@@ -80,7 +80,7 @@ The following example shows a request.
   "name": "unifiedrolemanagementalert_refresh_all"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/identityGovernance/roleManagementAlerts/alerts/refresh
 Content-Type: application/json
 
@@ -127,7 +127,7 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 202 Accepted
 Content-Type: application/json
 Location: https://graph.microsoft.com/beta/identityGovernance/roleManagementAlerts/operations/5c5670d6-a2c0-a394-ef42-882954856de5
@@ -144,7 +144,7 @@ The following example shows a request.
   "name": "unifiedrolemanagementalert_refresh_single"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/identityGovernance/roleManagementAlerts/alerts/DirectoryRole_19356be4-7e93-4ed6-a7c6-0ae28454d125_TooManyGlobalAdminsAssignedToTenantAlert/refresh
 
 ```
@@ -186,7 +186,7 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 202 Accepted
 Location: https://graph.microsoft.com/beta/identityGovernance/roleManagementAlerts/operations/7d6771e9-e1d0-a344-fg41-882954856ed7
 ```
