@@ -1,6 +1,6 @@
 ---
 title: "place: listOperations"
-description: "List all existing place operations"
+description: "List all existing placeOperation objects."
 author: "Dongjing-MSIT"
 ms.date: 11/10/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List all existing place operations. Operation details are not returned in this list API.
+List all existing [placeOperation](../resources/placeoperation.md) objects. This API doesn't return operation details.
 
 ## Permissions
 
@@ -64,7 +64,6 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/beta/places/listOperations
 ```
-
 
 ### Response
 
