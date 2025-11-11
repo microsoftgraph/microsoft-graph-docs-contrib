@@ -21,12 +21,12 @@ Remove an [agentUser's](../resources/agentuser.md) sponsor.
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "agentuser-delete-sponsors-permissions"
-}
--->
-[!INCLUDE [permissions-table](../includes/permissions/agentuser-delete-sponsors-permissions.md)]
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
+|Permission type      | Least privileged permission | Higher privileged permissions |
+|:--------------------|:---------------------------|:-----------------------------|
+|Delegated (work or school account) | User.ReadWrite.All | Not available. |
+|Delegated (personal Microsoft account) | Not supported. | Not supported.|
+|Application | User.ReadWrite.All | Not available. |
 
 ## HTTP request
 

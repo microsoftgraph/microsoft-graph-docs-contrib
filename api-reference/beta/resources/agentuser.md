@@ -28,7 +28,7 @@ This resource is an open type that allows additional properties beyond those doc
 | Method | Return Type | Description |
 |:------ |:----------- |:----------- |
 | [List](../api/agentuser-list.md) | [agentUser](agentuser.md) collection | Get a list of **agentUser** objects. |
-| [Create](../api/user-post-users.md) | [agentUser](agentuser.md) | Create a new **agentUser** object. |
+| [Create](../api/agentuser-post.md) | [agentUser](agentuser.md) | Create a new **agentUser** object. |
 | [Get](../api/agentuser-get.md) | [agentUser](agentuser.md) | Read properties and relationships of **agentUser** object. |
 | [Update](../api/agentuser-update.md) | [agentUser](agentuser.md) | Update **agentUser** object. |
 | [Delete](../api/agentuser-delete.md) | None | Delete **agentUser** object. |
