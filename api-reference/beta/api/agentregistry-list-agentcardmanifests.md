@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieves all agent card manifests for the tenant.
+Retrieve all [agent card manifests](../resources/agentcardmanifest.md) for the tenant.
 
 ## Permissions
 
@@ -41,7 +41,7 @@ GET /agentRegistry/agentCardManifests
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` and `$filter` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 

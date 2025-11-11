@@ -1,6 +1,6 @@
 ---
-title: "Add agentInstance"
-description: "Add members by posting to the members collection."
+title: "Add agentInstance to agentCollection"
+description: "Add an agentInstance to an agentCollection."
 author: "jasondou"
 ms.date: 11/06/2025
 ms.localizationpriority: medium
@@ -8,13 +8,13 @@ ms.subservice: "entra-id"
 doc_type: apiPageType
 ---
 
-# Add agentInstance
+# Add agentInstance to agentCollection
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Add members by posting to the members collection.
+Add an [agentInstance](../resources/agentinstance.md) to an [agentCollection](../resources/agentcollection.md). An agent collection can contain up to 100 agent instances.
 
 ## Permissions
 
@@ -52,7 +52,7 @@ In the request body, supply a JSON object that contains a **@odata.id** property
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code and an [agentInstance](../resources/agentinstance.md) object in the response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
@@ -77,7 +77,6 @@ Content-Type: application/json
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

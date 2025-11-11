@@ -14,8 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A declaration of a protocol extension supported by an Agent.
-
+A declaration of a protocol extension supported by an agent, as defined in the **extensions** property of [agentCapabilities](../resources/agentcapabilities.md).
 
 ## Properties
 |Property|Type|Description|

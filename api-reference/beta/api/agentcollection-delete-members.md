@@ -1,6 +1,6 @@
 ---
-title: "Remove members"
-description: "Remove an agentInstance object."
+title: "Remove agentInstance from agentCollection"
+description: "Remove an agentInstance object from an agentCollection."
 author: "jasondou"
 ms.date: 11/06/2025
 ms.localizationpriority: medium
@@ -8,13 +8,13 @@ ms.subservice: "entra-id"
 doc_type: apiPageType
 ---
 
-# Remove members
+# Remove agentInstance from agentCollection
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Remove an [agentInstance](../resources/agentinstance.md) object.
+Remove an [agentInstance](../resources/agentinstance.md) object from an [agentCollection](../resources/agentcollection.md).
 
 ## Permissions
 
@@ -71,7 +71,6 @@ DELETE https://graph.microsoft.com/beta/agentRegistry/agentInstances/{agentInsta
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true

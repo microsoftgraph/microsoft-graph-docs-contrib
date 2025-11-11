@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List the collections that the [agent instance](../resources/agentinstance.md) is a member of.
+List the [collections](../resources/agentcollection.md) that the [agent instance](../resources/agentinstance.md) is a member of.
 
 ## Permissions
 
@@ -41,7 +41,7 @@ GET /agentRegistry/agentInstances/{agentInstanceId}/collections
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$filter`, `$select`, and `$expand` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -70,7 +70,6 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/beta/agentRegistry/agentInstances/{agentInstanceId}/collections
 ```
-
 
 ### Response
 

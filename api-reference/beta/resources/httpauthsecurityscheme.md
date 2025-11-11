@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an HTTP authentication security scheme used for authenticating API requests. HTTP authentication allows various authentication methods to be used via the HTTP Authorization header, such as Bearer tokens, Basic authentication, and other custom schemes.
+Represents an HTTP authentication security scheme used for authenticating API requests. HTTP authentication allows various authentication methods to be used via the HTTP Authorization header, such as Bearer tokens, Basic authentication, and other custom schemes. This resource is configured in the **securitySchemes** property of the [agentCardManifest](../resources/agentcardmanifest.md).
 
 Inherits from [securityScheme](../resources/securityscheme.md).
 

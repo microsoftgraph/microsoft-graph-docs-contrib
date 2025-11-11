@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of an agentCardManifest object.
+Update the properties of an [agentCardManifest](../resources/agentcardmanifest.md) object.
 
 ## Permissions
 

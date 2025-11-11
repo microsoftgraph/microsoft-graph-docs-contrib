@@ -14,8 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An object containing configuration information for a supported OAuth flow.
-
+An object containing configuration information for a supported [OAuth flow](../resources/oauthflows.md) in an [oAuth2SecurityScheme](../resources/oauth2securityscheme.md).
 
 ## Properties
 |Property|Type|Description|

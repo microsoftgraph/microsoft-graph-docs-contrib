@@ -14,13 +14,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Defines a list of security schemes that can be used by the operations.
+Defines a list of security schemes that can be used by the operations, as defined in the [agentCardManifest](../resources/agentcardmanifest.md).
 
-This resource is an open type.
+This resource is an open type that allows additional properties beyond those documented here.
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+None.
 
 ## Relationships
 None.

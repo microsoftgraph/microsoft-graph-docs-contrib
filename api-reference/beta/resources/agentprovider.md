@@ -14,8 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the service provider of an agent.
-
+Represents the service provider of an agent, as defined in the [agentCardManifest](../resources/agentcardmanifest.md).
 
 ## Properties
 |Property|Type|Description|

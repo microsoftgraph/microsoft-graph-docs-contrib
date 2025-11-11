@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List the agent card manifest referenced by the [agent instance](../resources/agentinstance.md).
+List the [agent card manifest](../resources/agentcardmanifest.md) referenced by the [agent instance](../resources/agentinstance.md).
 
 ## Permissions
 
@@ -41,7 +41,7 @@ GET /agentRegistry/agentInstances/{agentInstanceId}/agentCardManifest
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` and `$filter` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 

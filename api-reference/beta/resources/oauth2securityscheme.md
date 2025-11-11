@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an OAuth 2.0 security scheme used for authenticating API requests.
+Represents an OAuth 2.0 security scheme used for authenticating API requests. This resource is configured in the **securitySchemes** property of the [agentCardManifest](../resources/agentcardmanifest.md).
 
 Inherits from [securityScheme](../resources/securityscheme.md).
 

@@ -14,8 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Defines optional capabilities supported by an agent.
-
+Defines optional capabilities supported by an agent, as defined in the [agent card manifest](../resources/agentcardmanifest.md).
 
 ## Properties
 |Property|Type|Description|

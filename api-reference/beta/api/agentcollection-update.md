@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of an agentCollection object.
+Update the properties of an [agentCollection](../resources/agentcollection.md) object.
 
 ## Permissions
 

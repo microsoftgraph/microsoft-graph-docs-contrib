@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the manifest definition for an AI agent, including its capabilities, skills, security requirements, and metadata. An agent card manifest defines how an agent presents itself to users and systems. This resource is associated with agent instances through the agent registry.
+Represents the manifest definition for an AI agent, including its capabilities, skills, security requirements, and metadata. An agent card manifest defines how an agent presents itself to users and systems. This resource is associated with [agent instances](../resources/agentinstance.md) through the agent registry.
 
 Inherits from [entity](../resources/entity.md).
 
@@ -29,19 +29,19 @@ Inherits from [entity](../resources/entity.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |capabilities|[agentCapabilities](../resources/agentcapabilities.md)| A declaration of optional capabilities supported by the agent.|
-|createdBy|String|**TODO: Add Description**|
-|createdDateTime|DateTimeOffset|Datetime created.|
+|createdBy|String|Object ID of the user or application that created the agent card manifest. Read-only.|
+|createdDateTime|DateTimeOffset|When this agent card manifest was created.|
 |defaultInputModes|String collection| Default set of supported input MIME types for all skills, which can be overridden on a per-skill basis.|
 |defaultOutputModes|String collection|Default set of supported output MIME types for all skills, which can be overridden on a per-skill basis.|
 |description|String|A human-readable description of the agent.|
 |displayName|String|A human-readable display name of the agent.|
 |documentationUrl|String|URL to agent's documentation.|
 |iconUrl|String|URL to agent's icon image.|
-|id|String|ID of the agent card manifest. Inherited from [entity](../resources/entity.md). Inherits from [entity](../resources/entity.md)|
-|lastModifiedDateTime|DateTimeOffset|Datetime when last modified.|
-|managedBy|String|Application identifier managing this manifest.|
-|originatingStore|String|Name of the store/system where agent originated|
-|ownerIds|String collection|List of owner identifiers.|
+|id|String|ID of the agent card manifest. Inherited from [entity](../resources/entity.md). Key.|
+|lastModifiedDateTime|DateTimeOffset|When this agent card manifest was last modified.|
+|managedBy|String|**appId** (referred to as **Application (client) ID** on the Microsoft Entra admin center) of the application managing this agent manifest.|
+|originatingStore|String|Name of the store/system where agent originated. For example `Copilot Studio`.|
+|ownerIds|String collection|List of object IDs for the owners of the agent card manifest.|
 |protocolVersion|String|Protocol version supported by the agent.|
 |provider|[agentProvider](../resources/agentprovider.md)|Information about the organization providing the agent.|
 |security|[securityRequirement](../resources/securityrequirement.md) collection|Security requirements - array of security scheme references.|

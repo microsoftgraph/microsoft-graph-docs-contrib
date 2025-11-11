@@ -14,13 +14,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the unprotected header values in a JSON Web Signature (JWS) as defined in RFC 7515.
+Represents the unprotected header values in a JSON Web Signature (JWS) as defined in RFC 7515. This resource is used to configure the **header** property of the [agentCardSignature](../resources/agentcardsignature.md) object.
 
-This resource is an open type.
+This resource is an open type that allows additional properties beyond those documented here.
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+None.
 
 ## Relationships
 None.

@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new agentCollection object.
+Create a new [agentCollection](../resources/agentcollection.md) object.
 
 ## Permissions
 
