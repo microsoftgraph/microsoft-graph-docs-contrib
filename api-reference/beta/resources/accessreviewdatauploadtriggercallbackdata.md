@@ -21,14 +21,15 @@ Inherits from [customExtensionData](../resources/customextensiondata.md).
 
 
 ## Properties
-| Property              |Type| Description                                     |
-|:----------------------|:---|:------------------------------------------------|
-| principalId           |String| The id of the principal who has permissions on the custom data provided resource.|
-| principalType         |String| The type of the principal. The allowed values are "EntraIdUser". |
+| Property              |Type| Description |
+|:----------------------|:---|:-----------------------|
+| permissionDescription |String| A description for the permission.|
 | permissionId          |String| The id of the permission assigned to this principal.|
 | permissionName        |String| The name of the permission assigned to this principal.|
 | permissionType        |String| The type of the permission assigned to this principal.|
-| permissionDescription |String| A description for the permission.|
+| principalId           |String| The id of the principal who has permissions on the custom data provided resource.|
+| principalType         |String| The type of the principal. The allowed values are "EntraIdUser". |
+
 ## Relationships
 None.
 
