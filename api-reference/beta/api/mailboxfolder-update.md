@@ -32,7 +32,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PATCH /admin/exchange/mailboxes/{mailboxId}/folders/{mailboxFolderId}
 PATCH /admin/exchange/mailboxes/{mailboxId}/folders/{mailboxFolderId}/childFolders/{mailboxFolderId}
 ```
@@ -68,7 +68,7 @@ The following example shows how to update certain folder properties of a mailbox
   "sampleKeys": ["MBX:e0648f21@aab09c93", "AAMkAGVmMDEzM"]
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/admin/exchange/mailboxes/MBX:e0648f21@aab09c93/folders/AAMkAGVmMDEzM
 
 {
@@ -98,7 +98,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.mailboxFolder"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 179

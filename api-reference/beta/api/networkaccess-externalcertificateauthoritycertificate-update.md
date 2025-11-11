@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PATCH /networkAccess/tls/externalCertificateAuthorityCertificates/{externalCertificateAuthorityCertificateId}
 ```
 
@@ -67,7 +67,7 @@ The following example shows a request.
   "sampleKeys": ["365da4f6-6194-401d-b787-b09815be36e3"]
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/networkAccess/tls/externalCertificateAuthorityCertificates/365da4f6-6194-401d-b787-b09815be36e3
 Content-Type: application/json
 
@@ -115,7 +115,7 @@ The following example shows the response.
   "blockType": "response"
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 
