@@ -39,7 +39,7 @@ POST /servicePrincipals/microsoft.graph.agentIdentity
 | Content-Type | application/json. Required. |
 
 ## Request body
-In the request body, supply a JSON representation of a [agentIdentity](../resources/agentidentity.md) object. The request body must contain  **displayName** and **agentIdentityBlueprintAppId**.
+In the request body, supply a JSON representation of a [agentIdentity](../resources/agentidentity.md) object. The request body must contain  **displayName**, **agentIdentityBlueprintAppId**, and a valid **sponsor** reference.
 
 ## Response
 
@@ -55,7 +55,11 @@ Content-type: application/json
 
 {
   "displayName": "My Agent Identity",
-  "agentIdentityBlueprintId": "65415bb1-9267-4313-bbf5-ae259732ee12"
+  "agentIdentityBlueprintId": "65415bb1-9267-4313-bbf5-ae259732ee12",
+  "sponsors@odata.bind": [
+    "https://graph.microsoft.com/v1.0/users/acc9f0a1-9075-464f-9fe7-049bf1ae6481",
+    "https://graph.microsoft.com/v1.0/groups/47309f33-e0ff-7be6-defe-28b504c8cd2e"
+  ]
 }
 ```
 
@@ -83,17 +87,3 @@ Content-type: application/json
     "agentIdentityBlueprintId": "65415bb1-9267-4313-bbf5-ae259732ee12"
 }
 ```
-
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
-<!--
-{
-  "type": "#page.annotation",
-  "description": "Create serviceprincipal",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-  ]
-}
--->
