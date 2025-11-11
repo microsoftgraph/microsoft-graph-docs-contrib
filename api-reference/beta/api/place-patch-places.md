@@ -108,4 +108,16 @@ The following example shows the response.
 HTTP/1.1 202 Accepted
 Location: /places/getOperation(id='882a6bfd-45d1-4d4b-a382-6db80a249b61')
 ```
-
+<!--
+{
+  "type": "#page.annotation",
+  "description": "Bulk upsert places in async mode",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+      "Error: createplacefrom_places:
+      Body missing from response (expected response includes a body or a response type was provided)."
+  ]
+}
+-->
