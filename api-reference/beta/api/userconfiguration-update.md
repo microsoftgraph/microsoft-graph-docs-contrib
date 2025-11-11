@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a userConfiguration object.
+Update the properties of a [userConfiguration](../resources/userconfiguration.md) object.
 
 ## Permissions
 
@@ -52,8 +52,8 @@ PATCH /users/{usersId}/mailFolders/{mailFolderId}/userConfigurations/{userConfig
 |Property|Type|Description|
 |:---|:---|:---|
 |binaryData|Binary|Arbitrary binary data. Optional.|
-|xmlData|Binary|Binary data. Suggested for storing serialized XML. Optional.|
 |structuredData|[structuredDataEntry](../resources/structureddataentry.md) collection|Key-value pairs of supported data types. Optional.|
+|xmlData|Binary|Binary data for storing serialized XML. Optional.|
 
 ## Response
 
