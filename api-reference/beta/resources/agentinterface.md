@@ -14,8 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Declares a combination of a target URL and a transport protocol for interacting with the agent. This allows agents to expose the same functionality over multiple transport mechanisms.
-
+Declares a combination of a target URL and a transport protocol for interacting with the agent, as defined in the [agentInstance object](../resources/agentinstance.md). This allows agents to expose the same functionality over multiple transport mechanisms.
 
 ## Properties
 |Property|Type|Description|

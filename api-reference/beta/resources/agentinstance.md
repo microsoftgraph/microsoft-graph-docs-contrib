@@ -1,8 +1,8 @@
 ---
 title: "agentInstance resource type"
-description: "Represents a specific deployed instance of an AI agent in the agent registry."
+description: "Represents a specific deployed instance of an AI agent in the Microsoft Entra Agent Registry."
 author: "jasondou"
-ms.date: 11/06/2025
+ms.date: 11/11/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-id"
 doc_type: resourcePageType
@@ -14,11 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a specific deployed instance of an AI agent in the agent registry. An agent instance can be associated with an agent card manifest that defines its capabilities, skills, and metadata. Agent instances can be organized into collections and are managed through the agent registry.
-
+Represents a specific deployed instance of an AI agent in the Microsoft Entra Agent Registry. An agent instance is associated with an agent card manifest that defines its capabilities, skills, and metadata. Agent instances can be organized into collections and are managed through the Agent Registry.
 
 Inherits from [entity](../resources/entity.md).
-
 
 ## Methods
 |Method|Return type|Description|
@@ -28,34 +26,32 @@ Inherits from [entity](../resources/entity.md).
 |[Get](../api/agentinstance-get.md)|[agentInstance](../resources/agentinstance.md)|Read the properties and relationships of [agentInstance](../resources/agentinstance.md) object.|
 |[Update](../api/agentinstance-update.md)|[agentInstance](../resources/agentinstance.md)|Update the properties of an agentInstance object.|
 |[Delete](../api/agentregistry-delete-agentinstances.md)|None|Delete an agentInstance object.|
-|[List agentCardManifest](../api/agentinstance-list-agentcardmanifest.md)|[agentCardManifest](../resources/agentcardmanifest.md) collection|Get the agent card manifest referenced by the agent instance.|
-|[List collections](../api/agentinstance-list-collections.md)|[agentCollection](../resources/agentcollection.md) collection|List the collections that the agent instance is a member of.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|additionalInterfaces|[agentInterface](../resources/agentinterface.md) collection|Additional interfaces/transports supported by the agent (url, transport)|
-|agentIdentityBlueprintId|String|Agent identity blueprint identifier|
-|agentIdentityId|String|Entra agent identity identifier|
-|agentUserId|String|User identifier associated with the agent|
-|createdBy|String|User who created the agent instance|
-|createdDateTime|DateTimeOffset|Timestamp when agent instance was created|
-|displayName|String|Display name for the agent instance|
-|id|String|Unique identifier for the agent instance. Inherited from [entity](../resources/entity.md). Inherits from [entity](../resources/entity.md)|
-|lastModifiedDateTime|DateTimeOffset|Timestamp of last modification|
-|managedBy|String|Application identifier managing this agent|
-|originatingStore|String|Name of the store/system where agent originated|
-|ownerIds|String collection|List of owner identifiers for the agent instance|
-|preferredTransport|String|Preferred transport protocol (JSONRPC, GRPC, HTTP+JSON)|
-|signatures|[agentCardSignature](../resources/agentcardsignature.md) collection|Digital signatures for the agent instance (protected, signature, header)|
-|sourceAgentId|String|Original agent identifier from source system
-|url|String|Endpoint URL for the agent instance|
+|additionalInterfaces|[agentInterface](../resources/agentinterface.md) collection|Additional interfaces/transports supported by the agent.|
+|agentIdentityBlueprintId|String|Object ID of the [agentIdentityBlueprint](../resources/agentidentityblueprint.md) object.|
+|agentIdentityId|String|Object ID of the [agentIdentity](../resources/agentidentity.md) object.|
+|agentUserId|String|Object ID of the [agentUser](../resources/agentuser.md) associated with the agent. Read-only.|
+|createdBy|String|Object ID of the user or application that created the agent instance. Read-only.|
+|createdDateTime|DateTimeOffset|Timestamp when agent instance was created. Read-only.|
+|displayName|String|Display name for the agent instance.|
+|id|String|Unique identifier for the agent instance. Key. Inherited from [entity](../resources/entity.md).|
+|lastModifiedDateTime|DateTimeOffset|Timestamp of last modification.|
+|managedBy|String|**appId** (referred to as **Application (client) ID** on the Microsoft Entra admin center) of the application managing this agent.|
+|originatingStore|String|Name of the store/system where agent originated. For example `Copilot Studio`.|
+|ownerIds|String collection|List of object IDs for the owners of the agent instance.|
+|preferredTransport|String|Preferred transport protocol. The possible values are `JSONRPC`, `GRPC`, and `HTTP+JSON`.|
+|signatures|[agentCardSignature](../resources/agentcardsignature.md) collection|Digital signatures for the agent instance.|
+|sourceAgentId|String|Identifier of the agent in the original source system.|
+|url|String|Endpoint URL for the agent instance.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|agentCardManifest|[agentCardManifest](../resources/agentcardmanifest.md)|Agent card manifest referenced by the agent instance|
-|collections|[agentCollection](../resources/agentcollection.md) collection|Agent collections that the agent instance is a member of|
+|agentCardManifest|[agentCardManifest](../resources/agentcardmanifest.md)|The agent card manifest of the agent instance.|
+|collections|[agentCollection](../resources/agentcollection.md) collection|The agent collections that the agent instance is a member of.|
 
 ## JSON representation
 The following JSON representation shows the resource type.

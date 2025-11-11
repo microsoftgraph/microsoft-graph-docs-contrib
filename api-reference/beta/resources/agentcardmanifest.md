@@ -16,9 +16,7 @@ Namespace: microsoft.graph
 
 Represents the manifest definition for an AI agent, including its capabilities, skills, security requirements, and metadata. An agent card manifest defines how an agent presents itself to users and systems. This resource is associated with agent instances through the agent registry.
 
-
 Inherits from [entity](../resources/entity.md).
-
 
 ## Methods
 |Method|Return type|Description|

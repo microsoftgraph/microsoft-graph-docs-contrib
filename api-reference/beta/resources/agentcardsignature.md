@@ -14,8 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-AgentCardSignature represents a JWS signature of an AgentCard. This follows the JSON format of an RFC 7515 JSON Web Signature (JWS).
-
+Represents a JWS signature of an agent card, as defined in the [agentInstance](../resources/agentinstance.md) object. This follows the JSON format of an RFC 7515 JSON Web Signature (JWS).
 
 ## Properties
 |Property|Type|Description|

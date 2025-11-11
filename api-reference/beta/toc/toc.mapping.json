@@ -140,6 +140,21 @@
       ]
     },
     {
+      "name": "Agents",
+      "overview": "",
+      "resources": [],
+      "childNodes": [
+          {
+            "name": "Agent registry",
+            "resources": [
+              "agentInstance",
+              "agentCardManifest",
+              "agentCollection"
+            ]
+          }
+      ]
+    },
+    {
       "name": "Backup storage",
       "shouldSort": true,
       "keywords": [
