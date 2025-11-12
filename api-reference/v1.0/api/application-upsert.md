@@ -72,7 +72,7 @@ The following example shows a request.
 }
 -->
 
-``` http
+```http
 PATCH https://graph.microsoft.com/v1.0/applications(uniqueName='app-65278')
 Content-Type: application/json
 Prefer: create-if-missing
@@ -197,7 +197,7 @@ The following example shows a request.
 }
 -->
 
-``` http
+```http
 PATCH https://graph.microsoft.com/v1.0/applications(uniqueName='app-65278')
 Content-Type: application/json
 Prefer: create-if-missing
@@ -241,6 +241,6 @@ The following example shows the response.
 }
 -->
 
-``` http
+```http
 HTTP/1.1 204 No Content
 ```

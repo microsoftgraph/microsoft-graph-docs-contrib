@@ -949,6 +949,8 @@ items:
         href: ../../api/identitygovernance-workflow-delete.md
       - name: Activate
         href: ../../api/identitygovernance-workflow-activate.md
+      - name: Activate with scope
+        href: ../../api/identitygovernance-workflow-activatewithscope.md
       - name: List users in scope
         href: ../../api/workflow-list-executionscope.md
       - name: Deleted workflows
@@ -1000,6 +1002,10 @@ items:
             href: ../../api/identitygovernance-userprocessingresult-summary.md
           - name: List task processing results
             href: ../../api/identitygovernance-userprocessingresult-list-taskprocessingresults.md
+          - name: List reprocessedRuns
+            href: ../../api/identitygovernance-userprocessingresult-list-reprocessedruns.md
+          - name: Remove reprocessedRuns
+            href: ../../api/identitygovernance-userprocessingresult-delete-reprocessedruns.md
         - name: Task report
           items:
           - name: Task report
@@ -1022,6 +1028,10 @@ items:
             href: ../../api/identitygovernance-run-summary.md
           - name: List task processing results
             href: ../../api/identitygovernance-run-list-taskprocessingresults.md
+          - name: List reprocessedRuns
+            href: ../../api/identitygovernance-run-list-reprocessedruns.md
+          - name: Remove reprocessedRuns
+            href: ../../api/identitygovernance-run-delete-reprocessedruns.md
         - name: Task processing result
           items:
           - name: Task processing result

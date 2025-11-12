@@ -39,7 +39,7 @@ Unassign yourself a hardware OATH authentication method.
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 DELETE /me/authentication/hardwareOathMethods/{hardwareOathAuthenticationMethodId}
 ```
 
@@ -50,7 +50,7 @@ Unassign another user their hardware OATH authentication method.
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 DELETE /users/{usersId}/authentication/hardwareOathMethods/{hardwareOathAuthenticationMethodId}
 ```
 
@@ -79,7 +79,7 @@ The following example shows a request.
   "name": "delete_hardwareoathauthenticationmethod"
 }
 -->
-``` http
+```http
 DELETE https://graph.microsoft.com/beta/me/authentication/hardwareOathMethods/{hardwareOathAuthenticationMethodId}
 ```
 
@@ -121,7 +121,7 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 

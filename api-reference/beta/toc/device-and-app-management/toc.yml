@@ -152,6 +152,8 @@ items:
       href: ../../api/cloudpc-getfrontlinecloudpcaccessstate.md
     - name: Get launch info (deprecated)
       href: ../../api/cloudpc-getcloudpclaunchinfo.md
+    - name: Retrieve frontline Cloud PC detail
+      href: ../../api/cloudpc-retrievefrontlinecloudpcdetail.md
   - name: Cloud PC audit event
     items:
     - name: Cloud PC audit event
@@ -597,10 +599,14 @@ items:
       href: ../../resources/cloudpcuserrolescopetaginfo.md
     - name: Cloud PC user setting assignment
       href: ../../resources/cloudpcusersettingassignment.md
+    - name: Cloud PC user settings persistence configuration
+      href: ../../resources/cloudpcusersettingspersistenceconfiguration.md
     - name: Cloud PC Windows setting
       href: ../../resources/cloudpcwindowssetting.md
     - name: Cloud PC Windows settings
       href: ../../resources/cloudpcwindowssettings.md
+    - name: Frontline Cloud PC detail
+      href: ../../resources/frontlinecloudpcdetail.md
     - name: Key value pair
       href: ../../resources/keyvaluepair.md
     - name: Microsoft managed desktop

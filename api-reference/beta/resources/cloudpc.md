@@ -49,7 +49,7 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled in In
 |[Retrieve snapshots](../api/cloudpc-retrievesnapshots.md)|[cloudPcSnapshot](../resources/cloudpcsnapshot.md) collection|Get a list of [cloudPcSnapshot](../resources/cloudpcsnapshot.md) resources for a Cloud PC.|
 |[Get frontline access state](../api/cloudpc-getfrontlinecloudpcaccessstate.md)|[frontlineCloudPcAccessState](#frontlinecloudpcaccessstate-values)|Get the access state of the frontline Cloud PC. The possible values are: `unassigned`, `noLicensesAvailable`, `activationFailed`, `active`, `activating`, `standbyMode`, `unknownFutureValue`. The `noLicensesAvailable` member is deprecated and stopped returning on September 30, 2024.|
 |[Get launch info (deprecated)](../api/cloudpc-getcloudpclaunchinfo.md)|[cloudPcLaunchInfo](../resources/cloudpclaunchinfo.md)|Get the [cloudPCLaunchInfo](../resources/cloudpclaunchinfo.md) for a specific Cloud PC that belongs to the current signed-in user. This API is deprecated and will stop returning data on October 30, 2026. Going forward, use the [Retrieve launch detail](../api/cloudpc-retrievecloudpclaunchdetail.md) API.|
-
+|[Retrieve frontline Cloud PC detail](../api/cloudpc-retrievefrontlinecloudpcdetail.md)|[frontlineCloudPcDetail](../resources/frontlinecloudpcdetail.md)|Get the [frontlineCloudPcDetail](../resources/frontlinecloudpcdetail.md) of a frontline [Cloud PC](../resources/cloudpc.md).
 ## Properties
 
 |Property|Type|Description|
@@ -61,7 +61,6 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled in In
 |disasterRecoveryCapability|[cloudPcDisasterRecoveryCapability](../resources/cloudpcdisasterrecoverycapability.md)|The disaster recovery status of the Cloud PC, including the primary region, secondary region, and capability type. The default value is `null` that indicates that the disaster recovery setting is disabled. To receive a response with the **disasterRecoveryCapability** property, `$select` and `$filter` it by `disasterRecoveryCapability/{subProperty}` in the request URL. For more information, see [Example 3: List Cloud PCs filtered by disaster recovery capability type](../api/virtualendpoint-list-cloudpcs.md#example-3-list-cloud-pcs-filtered-by-disaster-recovery-capability-type). Read-only. |
 |diskEncryptionState|[cloudPcDiskEncryptionState](#cloudpcdiskencryptionstate-values)|The disk encryption applied to the Cloud PC. Possible values: `notAvailable`, `notEncrypted`, `encryptedUsingPlatformManagedKey`, `encryptedUsingCustomerManagedKey`, and `unknownFutureValue`.|
 |displayName|String|The display name of the Cloud PC.|
-|frontlineCloudPcAvailability|[frontlineCloudPcAvailability](#frontlinecloudpcavailability-values)|The current availability of a frontline assigned Cloud PC. Possible values: `notApplicable`, `available`,`notAvailable` and `unknownFutureValue`. Default value is `notApplicable`. Read Only.|
 |gracePeriodEndDateTime|DateTimeOffset|The date and time when the grace period ends and reprovisioning or deprovisioning happens. Required only if the status is `inGracePeriod`. The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC). For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |groupDetail|[cloudPcEntraGroupDetail](../resources/cloudpcentragroupdetail.md)|The Microsoft Entra group details (for example, ID and display name) for the Entra ID group associated with the user's Reserve Cloud PC assignment. Read-only.|
 |id|String|The unique identifier for the Cloud PC. Read-only.|
@@ -92,6 +91,7 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled in In
 |userDetail|[cloudPcEntraUserDetail](../resources/cloudpcentrauserdetail.md)|The user details (for example, ID and display name) for the user associated with a Reserve Cloud PC assignment. Read-only.|
 |userPrincipalName|String|The user principal name (UPN) of the user assigned to the Cloud PC.|
 |connectionSettings (deprecated)|[cloudPcConnectionSettings](../resources/cloudpcconnectionsettings.md)|The connection settings of the Cloud PC. Possible values: `enableSingleSignOn`. Read-only. This property is deprecated and stopped retuning data on August 31, 2024. Going forward, use the **connectionSetting** property. |
+|frontlineCloudPcAvailability (deprecated)|[frontlineCloudPcAvailability](../resources/frontlinecloudpcdetail.md#frontlinecloudpcavailability-values)|The current availability of a frontline assigned Cloud PC. Possible values: `notApplicable`, `available`, `notAvailable`, and `unknownFutureValue`. Default value is `notApplicable`. Read-only. This property is deprecated and will stop returning data on October 30, 2025. Going forward use the [retrieveFrontlineCloudPcDetail](../api/cloudpc-retrievefrontlinecloudpcdetail.md) API.|
 |statusDetails (deprecated)|[cloudPcStatusDetails](../resources/cloudpcstatusdetails.md)|The details of the Cloud PC status. For example, `{ "code": "internalServerError", "message": "There was an error during the Cloud PC upgrade. Please contact support.", "additionalInformation": null }`. This property is deprecated and will no longer be supported effective August 31, 2024. Use statusDetail instead.|
 
 ### cloudPcDiskEncryptionState values
@@ -143,15 +143,6 @@ The following table lists the members of an [evolvable enumeration](/graph/best-
 |active|Indicates that the frontline Cloud PC is in an active state with a shared-use license assigned, and the user can connect to the Cloud PC.|
 |activating|Indicates that a user requested to connect the Cloud PC and the service is starting.|
 |standbyMode|Indicates that the frontline Cloud PC is in a standby state before it's shut down and deallocated. A frontline Cloud PC in a standby state is still accessible by the user.|
-|unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
-
-### frontlineCloudPcAvailability values
-
-|Member|Description|
-|:---|:---|
-|notApplicable|Default. The Cloud PC isn't a frontline-assigned type.|
-|available|The current frontline Cloud PC is available and the user is able to connect to it.|
-|notAvailable|The frontline Cloud PC is currently not available and the associated user isn't able to connect to it.|
 |unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
 
 ### cloudPcProductType values

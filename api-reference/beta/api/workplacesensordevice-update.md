@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PATCH /workplace/sensorDevices/{id}
 ```
 
@@ -80,7 +80,7 @@ The following example shows a request.
   "name": "update_workplacesensordevice_tags"
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/workplace/sensorDevices/ade7078f-4bf5-4239-bfde-95a7c4225df7
 Content-Type: application/json
 
@@ -145,7 +145,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.workplaceSensorDevice"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -196,7 +196,7 @@ The following example shows a request.
   "name": "update_workplacesensordevice_new_sensor"
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/workplace/sensorDevices/ade7078f-4bf5-4239-bfde-95a7c4225df7
 Content-Type: application/json
 
@@ -263,7 +263,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.workplaceSensorDevice"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -319,7 +319,7 @@ The following example shows a request.
   "name": "update_workplacesensordevice_remove_sensor"
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/workplace/sensorDevices/ade7078f-4bf5-4239-bfde-95a7c4225df7
 Content-Type: application/json
 
@@ -380,7 +380,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.workplaceSensorDevice"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

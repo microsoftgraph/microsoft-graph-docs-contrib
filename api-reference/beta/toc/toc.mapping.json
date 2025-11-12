@@ -90,6 +90,7 @@
             "onPremisesAgent",
             "onPremisesAgentGroup",
             "onPremisesPublishingProfile",
+            "privateAccessSensor",
             "publishedResource",
             "ipApplicationSegment",
             "webApplicationSegment",
@@ -514,12 +515,13 @@
             "cloudPcOnPremisesConnection",
             "cloudPcOrganizationSettings",
             "cloudPcProvisioningPolicy",
-            "cloudPcReports",
+            "cloudPcReport",
             "cloudPcServicePlan",
             "cloudPcSnapshot",
             "cloudPcSupportedRegion",
             "cloudPcUserSetting",
             "virtualEndpoint"
+            "cloudPcReports",
           ],
           "complexTypes": [
             "appScope",
@@ -585,8 +587,10 @@
             "cloudPcSubscription",
             "cloudPcUserRoleScopeTagInfo",
             "cloudPcUserSettingAssignment",
+            "cloudPcUserSettingsPersistenceConfiguration",
             "cloudPcWindowsSetting",
             "cloudPcWindowsSettings",
+            "frontlineCloudPcDetail",
             "keyValuePair",
             "microsoftManagedDesktop",
             "unifiedRolePermission"
@@ -1554,6 +1558,16 @@
           ],
           "childNodes": [
             {
+              "name": "Sign-in identifiers",
+              "resources": [
+                "signInIdentifierBase",
+                "customUsernameSignInIdentifier",
+                "emailSignInIdentifier",
+                "upnSignInIdentifier",
+                "usernameSignInIdentifier"
+              ]
+            },
+            {
               "name": "Authentication event listeners",
               "resources": [
                 "authenticationEventListener",
@@ -1566,7 +1580,17 @@
                 "onInteractiveAuthFlowStartListener",
                 "onPhoneMethodLoadStartListener",
                 "onTokenIssuanceStartListener",
-                "onUserCreateStartListener"
+                "onUserCreateStartListener",
+                "webApplicationFirewallProvider",
+                "cloudFlareWebApplicationFirewallProvider",
+                "akamaiWebApplicationFirewallProvider",
+                "webApplicationFirewallVerificationModel"
+              ]
+            },
+            {
+              "name": "Verified ID",
+              "resources": [
+                "verifiedIdProfile"                
               ]
             },
             {
@@ -1615,6 +1639,7 @@
                 "temporaryAccessPassAuthenticationMethodConfiguration",
                 "softwareOathAuthenticationMethodConfiguration",
                 "voiceAuthenticationMethodConfiguration",
+                "verifiableCredentialsAuthenticationMethodConfiguration",
                 "x509CertificateAuthenticationMethodConfiguration",
                 "qrCodePinAuthenticationMethodConfiguration"
               ]
@@ -2053,6 +2078,7 @@
                 "microsoft.graph.networkaccess.filteringPolicyLink",
                 "microsoft.graph.networkaccess.filteringRule",
                 "microsoft.graph.networkaccess.fqdnFilteringRule",
+                "microsoft.graph.networkaccess.urlDestinationFilteringRule",
                 "microsoft.graph.networkaccess.webCategoryFilteringRule",
                 "microsoft.graph.networkAccess.threatIntelligencePolicy",
                 "microsoft.graph.networkAccess.threatIntelligencePolicyLink",
@@ -2823,7 +2849,8 @@
             "microsoft.graph.security.identityAccounts",
             "microsoft.graph.security.user",
             "microsoft.graph.security.sensorCandidate",
-            "microsoft.graph.security.sensorCandidateActivationConfiguration"
+            "microsoft.graph.security.sensorCandidateActivationConfiguration",
+            "microsoft.graph.security.autoAuditingConfiguration"
           ],
           "complexTypes": [
             "microsoft.graph.security.deploymentAccessKeyType",
@@ -2884,6 +2911,16 @@
                 "microsoft.graph.security.filePlanReference"
               ]
             }
+          ]
+        },
+        {
+          "name": "Security Copilot",
+          "resources": [
+            "microsoft.graph.security.securitycopilot.workspace",
+            "microsoft.graph.security.securitycopilot.session",
+            "microsoft.graph.security.securitycopilot.prompt",
+            "microsoft.graph.security.securitycopilot.evaluation",
+            "microsoft.graph.security.securitycopilot.plugin"
           ]
         },
         {
@@ -3046,6 +3083,7 @@
         "businessScenarioGroupTarget",
         "businessScenarioProperties",
         "businessScenarioTaskTargetBase",
+        "contentSensitivityLabelAssignment",
         "identity",
         "identitySet",
         "itemBody",
@@ -3087,8 +3125,10 @@
         "plannerTaskRecurrence",
         "plannerTeamsPublicationInfo",
         "plannerUserIds",
+        "planUsageRight",
         "recurrencePattern",
-        "sensitivityLabelAssignment"
+        "sensitivityLabelAssignment",
+        "usageRightsInfo"
       ],
       "childNodes": [
         {
