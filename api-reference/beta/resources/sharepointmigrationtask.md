@@ -16,8 +16,8 @@ This entity captures a specific intent to do a crossOrganizationMigration operat
 
 ## Methods
 
-| Method        | Return type                | Description |
-|:------------- |:-------------------------- |:-----------------------------------------------|
+| Method | Return type | Description |
+|:-------------|:--------------------------|:-----------------------------------------------|
 | [Get](../api/sharepointmigrationtask-get.md) | SharePointMigrationTask[] | Attempt to get the specified sharePointMigrationTask by ID and return its status after this attempt. |
 | [Create](../api/sharepointmigrationtask-create.md) | SharePointMigrationTask[] | Attempt to create the specified sharePointMigrationTask. |
 | [Cancel](../api/sharepointmigrationtask-cancel.md) | SharePointMigrationTask[] | Attempt to cancel the specified sharePointMigrationTask by ID and return its status after this attempt. |
@@ -25,11 +25,10 @@ This entity captures a specific intent to do a crossOrganizationMigration operat
 | [GetBySourceUserPrincipalName](../api/sharepointmigrationtask-getbysourceuserprincipalname.md) | SharePointMigrationTask[] | Returns the status of the sharePointMigrationTask for a user given the source user principal name. |
 | [GetBySourceGroupMailNickname](../api/sharepointmigrationtask-getbysourcegroupmailnickname.md) | SharePointMigrationTask[] | Returns the status of the sharePointMigrationTask for a group given the source group mail nickname. |
 
-
 ## Properties
 
-| Property            | Type                     | Description |
-|:------------------- |:------------------------ |:-----------------------------------------------|
+| Property | Type | Description |
+|:-------------------|:------------------------|:-----------------------------------------------|
 | ID | string | Unique ID of the crossOrganizationMigration operation for the source organization and resource defined in the parameters. Key. Omit this property during creation. The service returns it automatically. Only on OneDrive and SharePoint. |
 | parameters | [sharePointMigrationTaskParameters](../resources/sharepointmigrationtaskparameters.md) | Identifies the source resource and org. Defines the target org and includes settings that control the migration process. They need to be specified during task creation but are also replayed back in every query about this task, for tracking and identification. Only on OneDrive and SharePoint. |
 | status | [sharePointMigrationTaskStatus](../resources/enums.md#sharepointmigrationtaskstatus-values) | Enumeration value that indicates the status of the migration activity that this task represents. Omit this property during creation. The service returns it automatically. Only on OneDrive and SharePoint. |
@@ -37,7 +36,6 @@ This entity captures a specific intent to do a crossOrganizationMigration operat
 | lastUpdatedDateTime | DateTimeOffset | DateTime when the sharePointMigrationTask was last updated, executed, or touched in any way, if available. Use this property to find tasks that stopped processing for a long time. Read-only. Optional. Only on OneDrive and SharePoint. |
 | finishedDateTime | DateTimeOffset | DateTime when the sharePointMigrationTask ended, if available. (The task might complete successfully or fail, but it ends execution at this time.) Read-only. Optional. Only on OneDrive and SharePoint. |
 | errors | [publicError](../resources/publicerror.md)[] | The error information to provide context for failures. Optional. Read-only. Only on OneDrive and SharePoint. |
-
 
 ## JSON Representation
 
