@@ -270,6 +270,14 @@ items:
       href: ../../api/place-get.md
     - name: Update place
       href: ../../api/place-update.md
+  - name: Check-in claim
+    items:
+    - name: Check-in claim
+      href: ../../resources/checkinclaim.md
+    - name: Create
+      href: ../../api/place-post-checkins.md
+    - name: Get
+      href: ../../api/checkinclaim-get.md
   - name: Room
     items:
     - name: Room

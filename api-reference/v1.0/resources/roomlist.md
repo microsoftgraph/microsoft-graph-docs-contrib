@@ -25,9 +25,6 @@ Inherits from [place](place.md).
 | [List places](../api/place-list.md) | A collection of the requested, derived type of [place](place.md) | Get a collection of the specified type of **place** object defined in the tenant. For example, you can get all the rooms, all the workspaces, all the room lists, the workspaces in a specific room list, or the rooms in a specific room list in the tenant.|
 | [Get place](../api/place-get.md)    | The requested, derived type of [place](place.md)            | Get the properties and relationships of the specified **place** object, such as a room list. |
 | [Update place](../api/place-update.md)    | The requested, derived type of [place](place.md)            | Update the properties and relationships of a specified **place** object. |
-<!-- |[Delete](../api/roomlist-delete.md)|None|Delete a roomList object.| -->
-<!-- |[descendants](../api/roomlist-descendants.md)|[place](../resources/place.md) collection| Get all descendants of a room list. | -->
-|[List workspaces](../api/roomlist-list-workspaces.md)|[workspace](../resources/workspace.md) collection|Get all workspaces of a room list.|
 
 For more supported methods, see [place](./place.md).
 

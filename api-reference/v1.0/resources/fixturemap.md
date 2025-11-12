@@ -21,8 +21,6 @@ Inherits from [baseMapFeature](../resources/basemapfeature.md).
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List](../api/levelmap-list-fixtures.md)|[fixtureMap](../resources/fixturemap.md) collection|Get a list of the fixtureMap objects and their properties.|
-|[Create](../api/levelmap-post-fixtures.md)|[fixtureMap](../resources/fixturemap.md)|Create a new fixtureMap object.|
-|[Get](../api/fixturemap-get.md)|[fixtureMap](../resources/fixturemap.md)|Read the properties and relationships of [fixtureMap](../resources/fixturemap.md) object.|
 |[Update](../api/fixturemap-update.md)|[fixtureMap](../resources/fixturemap.md)|Update the properties of a fixtureMap object.|
 |[Delete](../api/levelmap-delete-fixtures.md)|None|Delete a fixtureMap object.|
 

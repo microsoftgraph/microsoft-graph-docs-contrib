@@ -22,7 +22,7 @@ Inherits from [baseMapFeature](../resources/basemapfeature.md).
 |:---|:---|:---|
 |[List](../api/levelmap-list-units.md)|[unitMap](../resources/unitmap.md) collection|Get a list of the unitMap objects and their properties.|
 |[Update](../api/unitmap-update.md)|[unitMap](../resources/unitmap.md)|Update the properties of an unitMap object.|
-|[Delete](../api/levelmap-delete-units.md)|None|Delete an unitMap object.|
+|[Delete](../api/unitmap-delete.md)|None|Delete an unitMap object.|
 
 ## Properties
 |Property|Type|Description|

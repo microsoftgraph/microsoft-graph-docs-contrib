@@ -21,9 +21,6 @@ Inherits from [baseMapFeature](../resources/basemapfeature.md).
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List](../api/footprintmap-list.md)|[footprintMap](../resources/footprintmap.md) collection|Get a list of the footprintMap objects and their properties.|
-|[Get](../api/footprintmap-get.md)|[footprintMap](../resources/footprintmap.md)|Read the properties and relationships of [footprintMap](../resources/footprintmap.md) object.|
-|[Update](../api/footprintmap-update.md)|[footprintMap](../resources/footprintmap.md)|Update the properties of a footprintMap object.|
-|[Delete](../api/footprintmap-delete.md)|None|Delete a footprintMap object.|
 
 ## Properties
 |Property|Type|Description|

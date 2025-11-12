@@ -21,15 +21,9 @@ Inherits from [baseMapFeature](../resources/basemapfeature.md).
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List](../api/levelmap-list.md)|[levelMap](../resources/levelmap.md) collection|Get a list of the levelMap objects and their properties.|
-|[Get](../api/levelmap-get.md)|[levelMap](../resources/levelmap.md)|Read the properties and relationships of [levelMap](../resources/levelmap.md) object.|
-|[Update](../api/levelmap-update.md)|[levelMap](../resources/levelmap.md)|Update the properties of a levelMap object.|
-|[Delete](../api/levelmap-delete.md)|None|Delete a levelMap object.|
 |[List fixtures](../api/levelmap-list-fixtures.md)|[fixtureMap](../resources/fixturemap.md) collection|Get a list of the [fixtureMap](../resources/fixturemap.md) objects and their properties.|
-|[Create fixtureMap](../api/levelmap-post-fixtures.md)|[fixtureMap](../resources/fixturemap.md)|Create a new fixtureMap object.|
 |[List sections](../api/levelmap-list-sections.md)|[sectionMap](../resources/sectionmap.md) collection|Get a list of the [sectionMap](../resources/sectionmap.md) objects and their properties.|
-|[Create sectionMap](../api/levelmap-post-sections.md)|[sectionMap](../resources/sectionmap.md)|Create a new sectionMap object.|
 |[List units](../api/levelmap-list-units.md)|[unitMap](../resources/unitmap.md) collection|Get a list of the [unitMap](../resources/unitmap.md) objects and their properties.|
-|[Create unitMap](../api/levelmap-post-units.md)|[unitMap](../resources/unitmap.md)|Create a new unitMap object.|
 
 ## Properties
 |Property|Type|Description|

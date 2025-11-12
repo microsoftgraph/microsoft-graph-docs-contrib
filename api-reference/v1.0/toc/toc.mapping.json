@@ -226,7 +226,8 @@
           "resources": [
             "place",
             "room",
-            "roomList"
+            "roomList",
+            "checkInClaim"
           ]
         }
       ]

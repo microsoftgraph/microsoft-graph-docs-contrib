@@ -4,7 +4,7 @@ description: "Represents details about a mailbox, including its unique directory
 author: tiwarisakshi02
 ms.date: 11/11/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice: outlook
 doc_type: resourcePageType
 ---
 
@@ -12,7 +12,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents details about a [mailbox](./mailbox.md), including its unique directory identifier and associated email address.
+Represents details about a mailbox, including its unique directory identifier and associated email address.
 
 Mailboxes are associated with reservable or drop-in Places objects such as [desk](./desk.md).
 
