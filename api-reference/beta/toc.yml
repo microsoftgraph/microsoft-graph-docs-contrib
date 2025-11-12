@@ -110,3 +110,9 @@ items:
   - name: Teamwork and communications
     href: toc/teamwork-and-communications/toc.yml
     displayName: Microsoft Teams
+  - name: To-do tasks
+    href: toc/to-do-tasks/toc.yml
+    displayName: Microsoft To Do
+  - name: Workbooks and charts
+    href: toc/workbooks-and-charts/toc.yml
+    displayName: Excel

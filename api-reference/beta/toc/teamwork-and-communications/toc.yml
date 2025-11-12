@@ -1211,983 +1211,307 @@ items:
       href: ../../api/userteamwork-sendactivitynotification.md
     - name: Send notification to multiple users in bulk
       href: ../../api/teamwork-sendactivitynotificationtorecipients.md
-    - name: Complex types
-      items:
-      - name: Forward to chat result
-        href: ../../resources/forwardtochatresult.md
-  - name: Shift management
-    items:
-    - name: Day note
-      items:
-      - name: Day note
-        href: ../../resources/daynote.md
-      - name: List
-        href: ../../api/daynote-list.md
-      - name: Create
-        href: ../../api/daynote-create.md
-      - name: Get
-        href: ../../api/daynote-get.md
-      - name: Update
-        href: ../../api/daynote-update.md
-      - name: Delete
-        href: ../../api/daynote-delete.md
-    - name: Offer shift request
-      items:
-      - name: Offer shift request
-        href: ../../resources/offershiftrequest.md
-      - name: Create
-        href: ../../api/offershiftrequest-post.md
-      - name: Get
-        href: ../../api/offershiftrequest-get.md
-      - name: List
-        href: ../../api/offershiftrequest-list.md
-      - name: Approve
-        href: ../../api/offershiftrequest-approve.md
-      - name: Approve for user
-        href: ../../api/schedulechangerequest-approveforuser.md
-      - name: Decline
-        href: ../../api/offershiftrequest-decline.md
-      - name: Decline for user
-        href: ../../api/schedulechangerequest-declineforuser.md
-    - name: Open shift
-      items:
-      - name: Open shift
-        href: ../../resources/openshift.md
-      - name: List
-        href: ../../api/openshift-list.md
-      - name: Create
-        href: ../../api/openshift-post.md
-      - name: Get
-        href: ../../api/openshift-get.md
-      - name: Update
-        href: ../../api/openshift-update.md
-      - name: Delete
-        href: ../../api/openshift-delete.md
-      - name: Get open shifts across all joined teams
-        href: ../../api/team-getopenshifts.md
-      - name: Stage for deletion
-        href: ../../api/changetrackedentity-stagefordeletion.md
-    - name: Open shift change request
-      items:
-      - name: Open shift change request
-        href: ../../resources/openshiftchangerequest.md
-      - name: Create
-        href: ../../api/openshiftchangerequest-post.md
-      - name: List
-        href: ../../api/openshiftchangerequest-list.md
-      - name: Get
-        href: ../../api/openshiftchangerequest-get.md
-      - name: Approve
-        href: ../../api/openshiftchangerequest-approve.md
-      - name: Approve for user
-        href: ../../api/schedulechangerequest-approveforuser.md
-      - name: Decline
-        href: ../../api/openshiftchangerequest-decline.md
-      - name: Decline for user
-        href: ../../api/schedulechangerequest-declineforuser.md
-    - name: Schedule
-      items:
-      - name: Schedule
-        href: ../../resources/schedule.md
-      - name: Create or replace
-        href: ../../api/team-put-schedule.md
-      - name: Get
-        href: ../../api/schedule-get.md
-      - name: Share
-        href: ../../api/schedule-share.md
-    - name: Schedule change request
-      items:
-      - name: Schedule change request
-        href: ../../resources/schedulechangerequest.md
-      - name: Approve for user
-        href: ../../api/schedulechangerequest-approveforuser.md
-      - name: Decline for user
-        href: ../../api/schedulechangerequest-declineforuser.md
-    - name: Scheduling group
-      items:
-      - name: Scheduling group
-        href: ../../resources/schedulinggroup.md
-      - name: Create
-        href: ../../api/schedule-post-schedulinggroups.md
-      - name: List
-        href: ../../api/schedule-list-schedulinggroups.md
-      - name: Get
-        href: ../../api/schedulinggroup-get.md
-      - name: Replace
-        href: ../../api/schedulinggroup-put.md
-      - name: Delete
-        href: ../../api/schedulinggroup-delete.md
-    - name: Shift
-      items:
-      - name: Shift
-        href: ../../resources/shift.md
-      - name: Create
-        href: ../../api/schedule-post-shifts.md
-      - name: List
-        href: ../../api/schedule-list-shifts.md
-      - name: Get
-        href: ../../api/shift-get.md
-      - name: Replace
-        href: ../../api/shift-put.md
-      - name: Delete
-        href: ../../api/shift-delete.md
-      - name: Stage for deletion
-        href: ../../api/changetrackedentity-stagefordeletion.md
-    - name: Shift preferences
-      items:
-      - name: Shift preferences
-        href: ../../resources/shiftpreferences.md
-      - name: Get
-        href: ../../api/shiftpreferences-get.md
-      - name: Update
-        href: ../../api/shiftpreferences-put.md
-    - name: Shifts role definition
-      items:
-      - name: Shifts role definition
-        href: ../../resources/shiftsroledefinition.md
-      - name: Get
-        href: ../../api/shiftsroledefinition-get.md
-      - name: Update
-        href: ../../api/shiftsroledefinition-update.md
-    - name: Swap shifts change request
-      items:
-      - name: Swap shifts change request
-        href: ../../resources/swapshiftschangerequest.md
-      - name: List
-        href: ../../api/swapshiftschangerequest-list.md
-      - name: Create
-        href: ../../api/swapshiftschangerequest-post.md
-      - name: Get
-        href: ../../api/swapshiftschangerequest-get.md
-      - name: Approve
-        href: ../../api/swapshiftschangerequest-approve.md
-      - name: Approve for user
-        href: ../../api/schedulechangerequest-approveforuser.md
-      - name: Decline
-        href: ../../api/swapshiftschangerequest-decline.md
-      - name: Decline for user
-        href: ../../api/schedulechangerequest-declineforuser.md
-    - name: Time card
-      items:
-      - name: Time card
-        href: ../../resources/timecard.md
-      - name: List
-        href: ../../api/timecard-list.md
-      - name: Create
-        href: ../../api/timecard-post.md
-      - name: Get
-        href: ../../api/timecard-get.md
-      - name: Replace
-        href: ../../api/timecard-replace.md
-      - name: Delete
-        href: ../../api/timecard-delete.md
-      - name: Clock in
-        href: ../../api/timecard-clockin.md
-      - name: Clock out
-        href: ../../api/timecard-clockout.md
-      - name: Start break
-        href: ../../api/timecard-startbreak.md
-      - name: End break
-        href: ../../api/timecard-endbreak.md
-      - name: Confirm
-        href: ../../api/timecard-confirm.md
-      - name: Confirm for user
-        href: ../../api/timecard-confirmforuser.md
-    - name: Time off
-      items:
-      - name: Time off
-        href: ../../resources/timeoff.md
-      - name: List
-        href: ../../api/schedule-list-timesoff.md
-      - name: Create
-        href: ../../api/schedule-post-timesoff.md
-      - name: Get
-        href: ../../api/timeoff-get.md
-      - name: Replace
-        href: ../../api/timeoff-put.md
-      - name: Delete
-        href: ../../api/timeoff-delete.md
-      - name: Stage for deletion
-        href: ../../api/changetrackedentity-stagefordeletion.md
-    - name: Time off reason
-      items:
-      - name: Time off reason
-        href: ../../resources/timeoffreason.md
-      - name: Create
-        href: ../../api/schedule-post-timeoffreasons.md
-      - name: List
-        href: ../../api/schedule-list-timeoffreasons.md
-      - name: Get
-        href: ../../api/timeoffreason-get.md
-      - name: Replace
-        href: ../../api/timeoffreason-put.md
-      - name: Delete
-        href: ../../api/timeoffreason-delete.md
-    - name: Time off request
-      items:
-      - name: Time off request
-        href: ../../resources/timeoffrequest.md
-      - name: List
-        href: ../../api/timeoffrequest-list.md
-      - name: Create
-        href: ../../api/timeoffrequest-post.md
-      - name: Get
-        href: ../../api/timeoffrequest-get.md
-      - name: Delete
-        href: ../../api/timeoffrequest-delete.md
-      - name: Approve
-        href: ../../api/timeoffrequest-approve.md
-      - name: Approve for user
-        href: ../../api/schedulechangerequest-approveforuser.md
-      - name: Decline
-        href: ../../api/timeoffrequest-decline.md
-      - name: Decline for user
-        href: ../../api/schedulechangerequest-declineforuser.md
-    - name: Workforce integration
-      items:
-      - name: Workforce integration
-        href: ../../resources/workforceintegration.md
-      - name: List
-        href: ../../api/workforceintegration-list.md
-      - name: Create
-        href: ../../api/workforceintegration-post.md
-      - name: Get
-        href: ../../api/workforceintegration-get.md
-      - name: Update
-        href: ../../api/workforceintegration-update.md
-      - name: Delete
-        href: ../../api/workforceintegration-delete.md
-    - name: Working time schedule
-      items:
-      - name: Working time schedule
-        href: ../../resources/workingtimeschedule.md
-      - name: Get
-        href: ../../api/workingtimeschedule-get.md
-      - name: Start working time
-        href: ../../api/workingtimeschedule-startworkingtime.md
-      - name: End working time
-        href: ../../api/workingtimeschedule-endworkingtime.md
-    - name: Complex types
-      items:
-      - name: Geo coordinates
-        href: ../../resources/geocoordinates.md
-      - name: Identity
-        href: ../../resources/identity.md
-      - name: Identity set
-        href: ../../resources/identityset.md
-      - name: Item body
-        href: ../../resources/itembody.md
-      - name: Open shift item
-        href: ../../resources/openshiftitem.md
-      - name: Patterned recurrence
-        href: ../../resources/patternedrecurrence.md
-      - name: Recurrence pattern
-        href: ../../resources/recurrencepattern.md
-      - name: Recurrence range
-        href: ../../resources/recurrencerange.md
-      - name: Scheduling group info
-        href: ../../resources/schedulinggroupinfo.md
-      - name: Shift activity
-        href: ../../resources/shiftactivity.md
-      - name: Shift availability
-        href: ../../resources/shiftavailability.md
-      - name: Shift item
-        href: ../../resources/shiftitem.md
-      - name: Shifts role permission
-        href: ../../resources/shiftsrolepermission.md
-      - name: Shifts team info
-        href: ../../resources/shiftsteaminfo.md
-      - name: Shifts user info
-        href: ../../resources/shiftsuserinfo.md
-      - name: Time card break
-        href: ../../resources/timecardbreak.md
-      - name: Time card entry
-        href: ../../resources/timecardentry.md
-      - name: Time card event
-        href: ../../resources/timecardevent.md
-      - name: Time clock settings
-        href: ../../resources/timeclocksettings.md
-      - name: Time off item
-        href: ../../resources/timeoffitem.md
-      - name: Time range
-        href: ../../resources/timerange.md
-      - name: User solution root
-        href: ../../resources/usersolutionroot.md
-      - name: Workforce integration encryption
-        href: ../../resources/workforceintegrationencryption.md
-- name: To-do tasks
-  displayName: Microsoft To Do
-  items:
-  - name: Overview
-    href: ../../resources/todo-overview.md
-  - name: To-do task list
-    items:
-    - name: To-do task list
-      href: ../../resources/todotasklist.md
-    - name: List task lists
-      href: ../../api/todo-list-lists.md
-    - name: Create task list
-      href: ../../api/todo-post-lists.md
-    - name: Get task list
-      href: ../../api/todotasklist-get.md
-    - name: Update task list
-      href: ../../api/todotasklist-update.md
-    - name: Delete task list
-      href: ../../api/todotasklist-delete.md
-    - name: List tasks
-      href: ../../api/todotasklist-list-tasks.md
-    - name: Create task
-      href: ../../api/todotasklist-post-tasks.md
-  - name: To-do task
-    items:
-    - name: To-do task
-      href: ../../resources/todotask.md
-    - name: List tasks
-      href: ../../api/todotasklist-list-tasks.md
-    - name: Create task
-      href: ../../api/todotasklist-post-tasks.md
-    - name: Get task
-      href: ../../api/todotask-get.md
-    - name: Update task
-      href: ../../api/todotask-update.md
-    - name: Delete task
-      href: ../../api/todotask-delete.md
-    - name: List checklistItems
-      href: ../../api/todotask-list-checklistitems.md
-    - name: Create checklistItem
-      href: ../../api/todotask-post-checklistitems.md
-    - name: List linkedResources
-      href: ../../api/todotask-list-linkedresources.md
-    - name: Create linkedResources
-      href: ../../api/todotask-post-linkedresources.md
-  - name: Task file attachment
-    items:
-    - name: Task file attachment
-      href: ../../resources/taskfileattachment.md
-    - name: List
-      href: ../../api/todotask-list-attachments.md
-    - name: Attach small file
-      href: ../../api/todotask-post-attachments.md
-    - name: Attach all file sizes
-      href: ../../api/taskfileattachment-createuploadsession.md
-    - name: Get
-      href: ../../api/taskfileattachment-get.md
-    - name: Delete
-      href: ../../api/taskfileattachment-delete.md
-  - name: Checklist item
-    items:
-    - name: Checklist item
-      href: ../../resources/checklistitem.md
-    - name: List
-      href: ../../api/todotask-list-checklistitems.md
-    - name: Create
-      href: ../../api/todotask-post-checklistitems.md
-    - name: List checklistItems
-      href: ../../api/basetask-list-checklistitems.md
-    - name: Create checklistItem
-      href: ../../api/basetask-post-checklistitems.md
-    - name: Get
-      href: ../../api/checklistitem-get.md
-    - name: Update
-      href: ../../api/checklistitem-update.md
-    - name: Delete
-      href: ../../api/checklistitem-delete.md
-  - name: Linked resource
-    items:
-    - name: Linked resource
-      href: ../../resources/linkedresource.md
-    - name: List
-      href: ../../api/todotask-list-linkedresources.md
-    - name: Create
-      href: ../../api/todotask-post-linkedresources.md
-    - name: Get
-      href: ../../api/linkedresource-get.md
-    - name: Update
-      href: ../../api/linkedresource-update.md
-    - name: Delete
-      href: ../../api/linkedresource-delete.md
-  - name: Deprecated Task APIs
-    items:
-    - name: To-do API with base tasks
-      href: ../../resources/tasks-overview.md
-    - name: Outlook tasks
-      items:
-      - name: Outlook task (deprecated)
-        items:
-        - name: Outlook task (deprecated)
-          href: ../../resources/outlooktask.md
-        - name: Get
-          href: ../../api/outlooktask-get.md
-        - name: Update
-          href: ../../api/outlooktask-update.md
-        - name: Delete
-          href: ../../api/outlooktask-delete.md
-        - name: Permanently delete
-          href: ../../api/outlooktask-permanentdelete.md
-        - name: Complete
-          href: ../../api/outlooktask-complete.md
-        - name: Attachments
-          items:
-          - name: List attachments
-            href: ../../api/outlooktask-list-attachments.md
-          - name: Add attachment
-            href: ../../api/outlooktask-post-attachments.md
-        - name: Extended properties
-          items:
-          - name: Create single-value property
-            href: ../../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md
-          - name: Get single-value property
-            href: ../../api/singlevaluelegacyextendedproperty-get.md
-          - name: Create multi-value property
-            href: ../../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
-          - name: Get multi-value property
-            href: ../../api/multivaluelegacyextendedproperty-get.md
-      - name: Outlook task group (deprecated)
-        items:
-        - name: Outlook task group (deprecated)
-          href: ../../resources/outlooktaskgroup.md
-        - name: Get
-          href: ../../api/outlooktaskgroup-get.md
-        - name: Update
-          href: ../../api/outlooktaskgroup-update.md
-        - name: Delete
-          href: ../../api/outlooktaskgroup-delete.md
-        - name: List task folders
-          href: ../../api/outlooktaskgroup-list-taskfolders.md
-        - name: Create task folder
-          href: ../../api/outlooktaskgroup-post-taskfolders.md
-- name: Workbooks and charts
-  displayName: Excel
-  items:
-  - name: Overview
-    href: ../../resources/excel.md
-  - name: Workbook
-    items:
-    - name: Workbook
-      href: ../../resources/workbook.md
-    - name: Create
-      href: ../../api/workbook-createsession.md
-    - name: Close session
-      href: ../../api/workbook-closesession.md
-    - name: Refresh session
-      href: ../../api/workbook-refreshsession.md
-  - name: Application
-    items:
-    - name: Application
-      href: ../../resources/workbookapplication.md
-    - name: Get
-      href: ../../api/workbookapplication-get.md
-    - name: Calculate
-      href: ../../api/workbookapplication-calculate.md
-  - name: Chart
-    items:
-    - name: Chart
-      href: ../../resources/workbookchart.md
-    - name: List
-      href: ../../api/chart-list.md
-    - name: Get
-      href: ../../api/chart-get.md
-    - name: Update
-      href: ../../api/chart-update.md
-    - name: Delete
-      href: ../../api/chart-delete.md
-    - name: List chart series
-      href: ../../api/chart-list-series.md
-    - name: Create chart series
-      href: ../../api/chart-post-series.md
-    - name: Add chart
-      href: ../../api/chartcollection-add.md
-    - name: Get chart at
-      href: ../../api/chartcollection-itemat.md
-    - name: Get chart image
-      href: ../../api/chart-image.md
-    - name: Reset data
-      href: ../../api/chart-setdata.md
-    - name: Set position data
-      href: ../../api/chart-setposition.md
-  - name: Chart axis
-    items:
-    - name: Chart axis
-      href: ../../resources/workbookchartaxis.md
-    - name: Get
-      href: ../../api/chartaxis-get.md
-    - name: Update
-      href: ../../api/chartaxis-update.md
-  - name: Chart axis title
-    items:
-    - name: Chart axis title
-      href: ../../resources/workbookchartaxistitle.md
-    - name: Get
-      href: ../../api/chartaxistitle-get.md
-    - name: Update
-      href: ../../api/chartaxistitle-update.md
-  - name: Chart data labels
-    items:
-    - name: Chart data labels
-      href: ../../resources/workbookchartdatalabels.md
-    - name: Get
-      href: ../../api/chartdatalabels-get.md
-    - name: Update
-      href: ../../api/chartdatalabels-update.md
-  - name: Chart fill
-    items:
-    - name: Chart fill
-      href: ../../resources/workbookchartfill.md
-    - name: Set clear fill
-      href: ../../api/chartfill-clear.md
-    - name: Set solid fill
-      href: ../../api/chartfill-setsolidcolor.md
-  - name: Chart font
-    items:
-    - name: Chart font
-      href: ../../resources/workbookchartfont.md
-    - name: Get
-      href: ../../api/chartfont-get.md
-    - name: Update
-      href: ../../api/chartfont-update.md
-  - name: Chart gridlines
-    items:
-    - name: Chart gridlines
-      href: ../../resources/workbookchartgridlines.md
-    - name: Get
-      href: ../../api/chartgridlines-get.md
-    - name: Update
-      href: ../../api/chartgridlines-update.md
-  - name: Chart legend
-    items:
-    - name: Chart legend
-      href: ../../resources/workbookchartlegend.md
-    - name: Get
-      href: ../../api/chartlegend-get.md
-    - name: Update
-      href: ../../api/chartlegend-update.md
-  - name: Chart line format
-    items:
-    - name: Chart line format
-      href: ../../resources/workbookchartlineformat.md
-    - name: Get
-      href: ../../api/chartlineformat-get.md
-    - name: Update
-      href: ../../api/chartlineformat-update.md
-    - name: Clear
-      href: ../../api/chartlineformat-clear.md
-  - name: Chart point
-    items:
-    - name: Chart point
-      href: ../../resources/workbookchartpoint.md
-    - name: List
-      href: ../../api/chartpoint-list.md
-    - name: Get
-      href: ../../api/chartpoint-get.md
-    - name: Get chart point at
-      href: ../../api/chartpointscollection-itemat.md
-  - name: Chart series
-    items:
-    - name: Chart series
-      href: ../../resources/workbookchartseries.md
-    - name: List
-      href: ../../api/chartseries-list.md
-    - name: Get
-      href: ../../api/chartseries-get.md
-    - name: Update
-      href: ../../api/chartseries-update.md
-    - name: Create chart points
-      href: ../../api/chartseries-post-points.md
-    - name: List chart points
-      href: ../../api/chartseries-list-points.md
-    - name: Get series at
-      href: ../../api/chartseriescollection-itemat.md
-  - name: Chart title
-    items:
-    - name: Chart title
-      href: ../../resources/workbookcharttitle.md
-    - name: Get
-      href: ../../api/charttitle-get.md
-    - name: Update
-      href: ../../api/charttitle-update.md
-  - name: Comment
-    items:
-    - name: Comment
-      href: ../../resources/workbookcomment.md
-    - name: List
-      href: ../../api/workbook-list-comments.md
-    - name: Get
-      href: ../../api/workbookcomment-get.md
-  - name: Comment reply
-    items:
-    - name: Comment reply
-      href: ../../resources/workbookcommentreply.md
-    - name: List
-      href: ../../api/workbookcomment-list-replies.md
-    - name: Create
-      href: ../../api/workbookcomment-post-replies.md
-    - name: Get
-      href: ../../api/workbookcommentreply-get.md
-  - name: Document task
-    items:
-    - name: Document task
-      href: ../../resources/workbookdocumenttask.md
-    - name: List workbookDocumentTasks
-      href: ../../api/workbookdocumenttask-get.md
-    - name: Get workbookDocumentTask
-      href: ../../api/workbookdocumenttask-get.md
-    - name: List workbookDocumentTaskChanges
-      href: ../../api/workbookdocumenttask-list-changes.md
-  - name: Document task change
-    items:
-    - name: Document task change
-      href: ../../resources/workbookdocumenttaskchange.md
-    - name: Get
-      href: ../../api/workbookdocumenttaskchange-get.md
-    - name: List
-      href: ../../api/workbookdocumenttask-list-changes.md
-  - name: Filter
-    items:
-    - name: Filter
-      href: ../../resources/workbookfilter.md
-    - name: Apply
-      href: ../../api/filter-apply.md
-    - name: Clear
-      href: ../../api/filter-clear.md
-  - name: Workbook format protection
-    items:
-    - name: Workbook format protection
-      href: ../../resources/workbookformatprotection.md
-    - name: Get
-      href: ../../api/workbookformatprotection-get.md
-    - name: Update
-      href: ../../api/workbookformatprotection-update.md
-  - name: Workbook icon
-    items:
-    - name: Workbook icon
-      href: ../../resources/workbookicon.md
-    - name: Get
-      href: ../../api/icon-get.md
-    - name: Update
-      href: ../../api/icon-update.md
-  - name: Named item
-    items:
-    - name: Named item
-      href: ../../resources/workbooknameditem.md
-    - name: List
-      href: ../../api/nameditem-list.md
-    - name: Add
-      href: ../../api/nameditem-add.md
-    - name: Get
-      href: ../../api/nameditem-get.md
-    - name: Update
-      href: ../../api/nameditem-update.md
-    - name: Delete
-      href: ../../api/nameditem-delete.md
-    - name: Add named item to collection
-      href: ../../api/nameditem-addformulalocal.md
-    - name: List range
-      href: ../../api/nameditem-range.md
-  - name: Operation
-    items:
-    - name: Operation
-      href: ../../resources/workbookoperation.md
-    - name: Get
-      href: ../../api/workbookoperation-get.md
-  - name: Pivot table
-    items:
-    - name: Pivot table
-      href: ../../resources/workbookpivottable.md
-    - name: Get
-      href: ../../api/workbookpivottable-get.md
-    - name: Refresh a pivot table
-      href: ../../api/workbookpivottable-refresh.md
-    - name: Refresh all pivot tables
-      href: ../../api/workbookpivottable-refreshall.md
-  - name: Range
-    items:
-    - name: Range
-      href: ../../resources/workbookrange.md
-    - name: Get
-      href: ../../api/range-get.md
-    - name: Update
-      href: ../../api/range-update.md
-    - name: Delete
-      href: ../../api/range-delete.md
-    - name: Clear
-      href: ../../api/range-clear.md
-    - name: Get boundingrect
-      href: ../../api/range-boundingrect.md
-    - name: Get cell
-      href: ../../api/range-cell.md
-    - name: Get column
-      href: ../../api/range-column.md
-    - name: Get columns after
-      href: ../../api/workbookrange-columnsafter.md
-    - name: Get columns before
-      href: ../../api/workbookrange-columnsbefore.md
-    - name: Get entire column
-      href: ../../api/range-entirecolumn.md
-    - name: Get entire row
-      href: ../../api/range-entirerow.md
-    - name: Get intersection
-      href: ../../api/range-intersection.md
-    - name: Get last cell
-      href: ../../api/range-lastcell.md
-    - name: Get last column
-      href: ../../api/range-lastcolumn.md
-    - name: Get last row
-      href: ../../api/range-lastrow.md
-    - name: Get offset range
-      href: ../../api/range-offsetrange.md
-    - name: Get resized range
-      href: ../../api/workbookrange-resizedrange.md
-    - name: Get row
-      href: ../../api/range-row.md
-    - name: Get rows above
-      href: ../../api/workbookrange-rowsabove.md
-    - name: Get rows below
-      href: ../../api/workbookrange-rowsbelow.md
-    - name: Get used range
-      href: ../../api/range-usedrange.md
-    - name: Get visible view
-      href: ../../api/workbookrange-visibleview.md
-    - name: Insert range
-      href: ../../api/range-insert.md
-    - name: Merge
-      href: ../../api/range-merge.md
-    - name: Unmerge
-      href: ../../api/range-unmerge.md
-  - name: Range border
-    items:
-    - name: Range border
-      href: ../../resources/workbookrangeborder.md
-    - name: List
-      href: ../../api/rangeborder-list.md
-    - name: Get
-      href: ../../api/rangeborder-get.md
-    - name: Update
-      href: ../../api/rangeborder-update.md
-    - name: Get range border at
-      href: ../../api/rangebordercollection-itemat.md
-  - name: Range fill
-    items:
-    - name: Range fill
-      href: ../../resources/workbookrangefill.md
-    - name: Get
-      href: ../../api/rangefill-get.md
-    - name: Update
-      href: ../../api/rangefill-update.md
-    - name: Clear
-      href: ../../api/rangefill-clear.md
-  - name: Range font
-    items:
-    - name: Range font
-      href: ../../resources/workbookrangefont.md
-    - name: Get
-      href: ../../api/rangefont-get.md
-    - name: Update
-      href: ../../api/rangefont-update.md
-  - name: Range format
-    items:
-    - name: Range format
-      href: ../../resources/workbookrangeformat.md
-    - name: Get
-      href: ../../api/rangeformat-get.md
-    - name: Update range format
-      href: ../../api/rangeformat-update.md
-    - name: List range borders
-      href: ../../api/rangeformat-list-borders.md
-    - name: Create range borders
-      href: ../../api/rangeformat-post-borders.md
-    - name: Autofit columns
-      href: ../../api/rangeformat-autofitcolumns.md
-    - name: Autofit rows
-      href: ../../api/rangeformat-autofitrows.md
-  - name: Range sort
-    items:
-    - name: Range sort
-      href: ../../resources/workbookrangesort.md
-    - name: Apply
-      href: ../../api/rangesort-apply.md
-  - name: Range view
-    items:
-    - name: Range view
-      href: ../../resources/workbookrangeview.md
-    - name: List rows
-      href: ../../api/workbookrangeview-list-rows.md
-    - name: Get item at
-      href: ../../api/workbookrangeview-itemat.md
-    - name: Get ange
-      href: ../../api/workbookrangeview-range.md
-  - name: Table
-    items:
-    - name: Table
-      href: ../../resources/workbooktable.md
-    - name: List
-      href: ../../api/table-list.md
-    - name: Add
-      href: ../../api/tablecollection-add.md
-    - name: Get
-      href: ../../api/table-get.md
-    - name: Update
-      href: ../../api/table-update.md
-    - name: Delete
-      href: ../../api/table-delete.md
-    - name: List columns
-      href: ../../api/table-list-columns.md
-    - name: Create column
-      href: ../../api/table-post-columns.md
-    - name: List rows
-      href: ../../api/table-list-rows.md
-    - name: Create row
-      href: ../../api/table-post-rows.md
-    - name: Get data body range
-      href: ../../api/table-databodyrange.md
-    - name: Get header row range
-      href: ../../api/table-headerrowrange.md
-    - name: Get table range
-      href: ../../api/table-range.md
-    - name: Get total row range
-      href: ../../api/table-totalrowrange.md
-    - name: Clear filters
-      href: ../../api/table-clearfilters.md
-    - name: Convert to range
-      href: ../../api/table-converttorange.md
-    - name: Reapply filters
-      href: ../../api/table-reapplyfilters.md
-  - name: Workbook table column
-    items:
-    - name: Workbook table column
-      href: ../../resources/workbooktablecolumn.md
-    - name: List
-      href: ../../api/tablecolumn-list.md
-    - name: Add
-      href: ../../api/tablecolumncollection-add.md
-    - name: Get
-      href: ../../api/tablecolumn-get.md
-    - name: Update
-      href: ../../api/tablecolumn-update.md
-    - name: Delete
-      href: ../../api/tablecolumn-delete.md
-    - name: Get column range
-      href: ../../api/tablecolumn-range.md
-    - name: Get data body range
-      href: ../../api/tablecolumn-databodyrange.md
-    - name: Get header row range
-      href: ../../api/tablecolumn-headerrowrange.md
-    - name: Get item at
-      href: ../../api/tablecolumncollection-itemat.md
-    - name: Get total row range
-      href: ../../api/tablecolumn-totalrowrange.md
-  - name: Table row
-    items:
-    - name: Table row
-      href: ../../resources/workbooktablerow.md
-    - name: List
-      href: ../../api/tablerow-list.md
-    - name: Add
-      href: ../../api/tablerowcollection-add.md
-    - name: Get
-      href: ../../api/tablerow-get.md
-    - name: Update
-      href: ../../api/tablerow-update.md
-    - name: Delete
-      href: ../../api/tablerow-delete.md
-    - name: Add rows
-      href: ../../api/table-post-rows.md
-    - name: Get item at
-      href: ../../api/tablerowcollection-itemat.md
-    - name: Get row range
-      href: ../../api/tablerow-range.md
-  - name: Table sort
-    items:
-    - name: Table sort
-      href: ../../resources/workbooktablesort.md
-    - name: Get
-      href: ../../api/tablesort-get.md
-    - name: Apply sort
-      href: ../../api/tablesort-apply.md
-    - name: Clear sort
-      href: ../../api/tablesort-clear.md
-    - name: Reapply sort
-      href: ../../api/tablesort-reapply.md
-  - name: Worksheet
-    items:
-    - name: Worksheet
-      href: ../../resources/workbookworksheet.md
-    - name: List
-      href: ../../api/worksheet-list.md
-    - name: Add
-      href: ../../api/worksheetcollection-add.md
-    - name: Get
-      href: ../../api/worksheet-get.md
-    - name: Update
-      href: ../../api/worksheet-update.md
-    - name: Delete
-      href: ../../api/worksheet-delete.md
-    - name: List charts
-      href: ../../api/worksheet-list-charts.md
-    - name: Add chart
-      href: ../../api/worksheet-post-charts.md
-    - name: List names
-      href: ../../api/worksheet-list-names.md
-    - name: List pivot tables
-      href: ../../api/workbookworksheet-list-pivottables.md
-    - name: List tables
-      href: ../../api/worksheet-list-tables.md
-    - name: Add table
-      href: ../../api/worksheet-post-tables.md
-    - name: List tasks
-      href: ../../api/workbookworksheet-list-tasks.md
-    - name: Get cell
-      href: ../../api/worksheet-cell.md
-    - name: Get range
-      href: ../../api/worksheet-range.md
-    - name: Get used range
-      href: ../../api/worksheet-usedrange.md
-  - name: Worksheet protection
-    items:
-    - name: Worksheet protection
-      href: ../../resources/workbookworksheetprotection.md
-    - name: Get
-      href: ../../api/worksheetprotection-get.md
-    - name: Protect worksheet
-      href: ../../api/worksheetprotection-protect.md
-    - name: Unprotect worksheet
-      href: ../../api/worksheetprotection-unprotect.md
   - name: Complex types
     items:
-    - name: Json
-      href: ../../resources/json.md
-    - name: Workbook chart area format
-      href: ../../resources/workbookchartareaformat.md
-    - name: Workbook chart axes
-      href: ../../resources/workbookchartaxes.md
-    - name: Workbook chart axis format
-      href: ../../resources/workbookchartaxisformat.md
-    - name: Workbook chart axis title format
-      href: ../../resources/workbookchartaxistitleformat.md
-    - name: Workbook chart data label format
-      href: ../../resources/workbookchartdatalabelformat.md
-    - name: Workbook chart gridlines format
-      href: ../../resources/workbookchartgridlinesformat.md
-    - name: Workbook chart legend format
-      href: ../../resources/workbookchartlegendformat.md
-    - name: Workbook chart point format
-      href: ../../resources/workbookchartpointformat.md
-    - name: Workbook chart series format
-      href: ../../resources/workbookchartseriesformat.md
-    - name: Workbook chart title format
-      href: ../../resources/workbookcharttitleformat.md
-    - name: Workbook document task schedule
-      href: ../../resources/workbookdocumenttaskschedule.md
-    - name: Workbook email identity
-      href: ../../resources/workbookemailidentity.md
-    - name: Workbook filter criteria
-      href: ../../resources/workbookfiltercriteria.md
-    - name: Workbook filter datetime
-      href: ../../resources/filterdatetime.md
-    - name: Workbook operation error
-      href: ../../resources/workbookoperationerror.md
-    - name: Workbook session info
-      href: ../../resources/workbooksessioninfo.md
-    - name: Workbook sort field
-      href: ../../resources/workbooksortfield.md
-    - name: Workbook worksheet protection options
-      href: ../../resources/workbookworksheetprotectionoptions.md
+    - name: Forward to chat result
+      href: ../../resources/forwardtochatresult.md
+- name: Shift management
+  items:
+  - name: Day note
+    items:
+    - name: Day note
+      href: ../../resources/daynote.md
+    - name: List
+      href: ../../api/daynote-list.md
+    - name: Create
+      href: ../../api/daynote-create.md
+    - name: Get
+      href: ../../api/daynote-get.md
+    - name: Update
+      href: ../../api/daynote-update.md
+    - name: Delete
+      href: ../../api/daynote-delete.md
+  - name: Offer shift request
+    items:
+    - name: Offer shift request
+      href: ../../resources/offershiftrequest.md
+    - name: Create
+      href: ../../api/offershiftrequest-post.md
+    - name: Get
+      href: ../../api/offershiftrequest-get.md
+    - name: List
+      href: ../../api/offershiftrequest-list.md
+    - name: Approve
+      href: ../../api/offershiftrequest-approve.md
+    - name: Approve for user
+      href: ../../api/schedulechangerequest-approveforuser.md
+    - name: Decline
+      href: ../../api/offershiftrequest-decline.md
+    - name: Decline for user
+      href: ../../api/schedulechangerequest-declineforuser.md
+  - name: Open shift
+    items:
+    - name: Open shift
+      href: ../../resources/openshift.md
+    - name: List
+      href: ../../api/openshift-list.md
+    - name: Create
+      href: ../../api/openshift-post.md
+    - name: Get
+      href: ../../api/openshift-get.md
+    - name: Update
+      href: ../../api/openshift-update.md
+    - name: Delete
+      href: ../../api/openshift-delete.md
+    - name: Get open shifts across all joined teams
+      href: ../../api/team-getopenshifts.md
+    - name: Stage for deletion
+      href: ../../api/changetrackedentity-stagefordeletion.md
+  - name: Open shift change request
+    items:
+    - name: Open shift change request
+      href: ../../resources/openshiftchangerequest.md
+    - name: Create
+      href: ../../api/openshiftchangerequest-post.md
+    - name: List
+      href: ../../api/openshiftchangerequest-list.md
+    - name: Get
+      href: ../../api/openshiftchangerequest-get.md
+    - name: Approve
+      href: ../../api/openshiftchangerequest-approve.md
+    - name: Approve for user
+      href: ../../api/schedulechangerequest-approveforuser.md
+    - name: Decline
+      href: ../../api/openshiftchangerequest-decline.md
+    - name: Decline for user
+      href: ../../api/schedulechangerequest-declineforuser.md
+  - name: Schedule
+    items:
+    - name: Schedule
+      href: ../../resources/schedule.md
+    - name: Create or replace
+      href: ../../api/team-put-schedule.md
+    - name: Get
+      href: ../../api/schedule-get.md
+    - name: Share
+      href: ../../api/schedule-share.md
+  - name: Schedule change request
+    items:
+    - name: Schedule change request
+      href: ../../resources/schedulechangerequest.md
+    - name: Approve for user
+      href: ../../api/schedulechangerequest-approveforuser.md
+    - name: Decline for user
+      href: ../../api/schedulechangerequest-declineforuser.md
+  - name: Scheduling group
+    items:
+    - name: Scheduling group
+      href: ../../resources/schedulinggroup.md
+    - name: Create
+      href: ../../api/schedule-post-schedulinggroups.md
+    - name: List
+      href: ../../api/schedule-list-schedulinggroups.md
+    - name: Get
+      href: ../../api/schedulinggroup-get.md
+    - name: Replace
+      href: ../../api/schedulinggroup-put.md
+    - name: Delete
+      href: ../../api/schedulinggroup-delete.md
+  - name: Shift
+    items:
+    - name: Shift
+      href: ../../resources/shift.md
+    - name: Create
+      href: ../../api/schedule-post-shifts.md
+    - name: List
+      href: ../../api/schedule-list-shifts.md
+    - name: Get
+      href: ../../api/shift-get.md
+    - name: Replace
+      href: ../../api/shift-put.md
+    - name: Delete
+      href: ../../api/shift-delete.md
+    - name: Stage for deletion
+      href: ../../api/changetrackedentity-stagefordeletion.md
+  - name: Shift preferences
+    items:
+    - name: Shift preferences
+      href: ../../resources/shiftpreferences.md
+    - name: Get
+      href: ../../api/shiftpreferences-get.md
+    - name: Update
+      href: ../../api/shiftpreferences-put.md
+  - name: Shifts role definition
+    items:
+    - name: Shifts role definition
+      href: ../../resources/shiftsroledefinition.md
+    - name: Get
+      href: ../../api/shiftsroledefinition-get.md
+    - name: Update
+      href: ../../api/shiftsroledefinition-update.md
+  - name: Swap shifts change request
+    items:
+    - name: Swap shifts change request
+      href: ../../resources/swapshiftschangerequest.md
+    - name: List
+      href: ../../api/swapshiftschangerequest-list.md
+    - name: Create
+      href: ../../api/swapshiftschangerequest-post.md
+    - name: Get
+      href: ../../api/swapshiftschangerequest-get.md
+    - name: Approve
+      href: ../../api/swapshiftschangerequest-approve.md
+    - name: Approve for user
+      href: ../../api/schedulechangerequest-approveforuser.md
+    - name: Decline
+      href: ../../api/swapshiftschangerequest-decline.md
+    - name: Decline for user
+      href: ../../api/schedulechangerequest-declineforuser.md
+  - name: Time card
+    items:
+    - name: Time card
+      href: ../../resources/timecard.md
+    - name: List
+      href: ../../api/timecard-list.md
+    - name: Create
+      href: ../../api/timecard-post.md
+    - name: Get
+      href: ../../api/timecard-get.md
+    - name: Replace
+      href: ../../api/timecard-replace.md
+    - name: Delete
+      href: ../../api/timecard-delete.md
+    - name: Clock in
+      href: ../../api/timecard-clockin.md
+    - name: Clock out
+      href: ../../api/timecard-clockout.md
+    - name: Start break
+      href: ../../api/timecard-startbreak.md
+    - name: End break
+      href: ../../api/timecard-endbreak.md
+    - name: Confirm
+      href: ../../api/timecard-confirm.md
+    - name: Confirm for user
+      href: ../../api/timecard-confirmforuser.md
+  - name: Time off
+    items:
+    - name: Time off
+      href: ../../resources/timeoff.md
+    - name: List
+      href: ../../api/schedule-list-timesoff.md
+    - name: Create
+      href: ../../api/schedule-post-timesoff.md
+    - name: Get
+      href: ../../api/timeoff-get.md
+    - name: Replace
+      href: ../../api/timeoff-put.md
+    - name: Delete
+      href: ../../api/timeoff-delete.md
+    - name: Stage for deletion
+      href: ../../api/changetrackedentity-stagefordeletion.md
+  - name: Time off reason
+    items:
+    - name: Time off reason
+      href: ../../resources/timeoffreason.md
+    - name: Create
+      href: ../../api/schedule-post-timeoffreasons.md
+    - name: List
+      href: ../../api/schedule-list-timeoffreasons.md
+    - name: Get
+      href: ../../api/timeoffreason-get.md
+    - name: Replace
+      href: ../../api/timeoffreason-put.md
+    - name: Delete
+      href: ../../api/timeoffreason-delete.md
+  - name: Time off request
+    items:
+    - name: Time off request
+      href: ../../resources/timeoffrequest.md
+    - name: List
+      href: ../../api/timeoffrequest-list.md
+    - name: Create
+      href: ../../api/timeoffrequest-post.md
+    - name: Get
+      href: ../../api/timeoffrequest-get.md
+    - name: Delete
+      href: ../../api/timeoffrequest-delete.md
+    - name: Approve
+      href: ../../api/timeoffrequest-approve.md
+    - name: Approve for user
+      href: ../../api/schedulechangerequest-approveforuser.md
+    - name: Decline
+      href: ../../api/timeoffrequest-decline.md
+    - name: Decline for user
+      href: ../../api/schedulechangerequest-declineforuser.md
+  - name: Workforce integration
+    items:
+    - name: Workforce integration
+      href: ../../resources/workforceintegration.md
+    - name: List
+      href: ../../api/workforceintegration-list.md
+    - name: Create
+      href: ../../api/workforceintegration-post.md
+    - name: Get
+      href: ../../api/workforceintegration-get.md
+    - name: Update
+      href: ../../api/workforceintegration-update.md
+    - name: Delete
+      href: ../../api/workforceintegration-delete.md
+  - name: Working time schedule
+    items:
+    - name: Working time schedule
+      href: ../../resources/workingtimeschedule.md
+    - name: Get
+      href: ../../api/workingtimeschedule-get.md
+    - name: Start working time
+      href: ../../api/workingtimeschedule-startworkingtime.md
+    - name: End working time
+      href: ../../api/workingtimeschedule-endworkingtime.md
+  - name: Complex types
+    items:
+    - name: Geo coordinates
+      href: ../../resources/geocoordinates.md
+    - name: Identity
+      href: ../../resources/identity.md
+    - name: Identity set
+      href: ../../resources/identityset.md
+    - name: Item body
+      href: ../../resources/itembody.md
+    - name: Open shift item
+      href: ../../resources/openshiftitem.md
+    - name: Patterned recurrence
+      href: ../../resources/patternedrecurrence.md
+    - name: Recurrence pattern
+      href: ../../resources/recurrencepattern.md
+    - name: Recurrence range
+      href: ../../resources/recurrencerange.md
+    - name: Scheduling group info
+      href: ../../resources/schedulinggroupinfo.md
+    - name: Shift activity
+      href: ../../resources/shiftactivity.md
+    - name: Shift availability
+      href: ../../resources/shiftavailability.md
+    - name: Shift item
+      href: ../../resources/shiftitem.md
+    - name: Shifts role permission
+      href: ../../resources/shiftsrolepermission.md
+    - name: Shifts team info
+      href: ../../resources/shiftsteaminfo.md
+    - name: Shifts user info
+      href: ../../resources/shiftsuserinfo.md
+    - name: Time card break
+      href: ../../resources/timecardbreak.md
+    - name: Time card entry
+      href: ../../resources/timecardentry.md
+    - name: Time card event
+      href: ../../resources/timecardevent.md
+    - name: Time clock settings
+      href: ../../resources/timeclocksettings.md
+    - name: Time off item
+      href: ../../resources/timeoffitem.md
+    - name: Time range
+      href: ../../resources/timerange.md
+    - name: User solution root
+      href: ../../resources/usersolutionroot.md
+    - name: Workforce integration encryption
+      href: ../../resources/workforceintegrationencryption.md

@@ -416,10 +416,6 @@ items:
       href: ../../api/virtualendpoint-list-supportedregions.md
     - name: List service plans
       href: ../../api/virtualendpoint-list-serviceplans.md
-    - name: List external partner settings (deprecated)
-      href: ../../api/virtualendpoint-list-externalpartnersettings.md
-    - name: Create external partner setting (deprecated)
-      href: ../../api/virtualendpoint-post-externalpartnersettings.md
     - name: List external partners
       href: ../../api/virtualendpoint-list-externalpartners.md
     - name: Create external partner
@@ -434,6 +430,10 @@ items:
       href: ../../api/virtualendpoint-retrievetenantencryptionsetting.md
     - name: List cloud apps
       href: ../../api/virtualendpoint-list-cloudapps.md
+    - name: List external partner settings (deprecated)
+      href: ../../api/virtualendpoint-list-externalpartnersettings.md
+    - name: Create external partner setting (deprecated)
+      href: ../../api/virtualendpoint-post-externalpartnersettings.md
   - name: Alert monitoring
     items:
     - name: Monitoring

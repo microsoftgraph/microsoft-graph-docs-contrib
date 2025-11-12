@@ -1549,10 +1549,8 @@ items:
         href: ../../api/identitygovernance-insights-workflowsprocessedbycategory.md
     - name: Complex types
       items:
-      - name: attribute Change Trigger
-        href: ../../resources/identitygovernance-attributechangetrigger.md
       - name: Custom callout extension
-        href: ../../resources/customcalloutextension.md  
+        href: ../../resources/customcalloutextension.md
       - name: Custom extension authentication configuration
         href: ../../resources/customextensionauthenticationconfiguration.md
       - name: Custom extension callback configuration
@@ -2084,16 +2082,16 @@ items:
       href: ../../resources/onauthenticationmethodloadstartlistener.md
     - name: On email OTP send listener
       href: ../../resources/onemailotpsendlistener.md
+    - name: On fraud protection load start listener
+      href: ../../resources/onfraudprotectionloadstartlistener.md
     - name: On interactive auth flow start listener
       href: ../../resources/oninteractiveauthflowstartlistener.md
+    - name: On phone method load start listener
+      href: ../../resources/onphonemethodloadstartlistener.md
     - name: On token issuance start listener
       href: ../../resources/ontokenissuancestartlistener.md
     - name: On user create start listener
       href: ../../resources/onusercreatestartlistener.md
-    - name: On phone method load start listener
-      href: ../../resources/onphonemethodloadstartlistener.md
-    - name: On fraud protection load start listener
-      href: ../../resources/onfraudprotectionloadstartlistener.md
   - name: Authentication methods
     items:
     - name: Overview
@@ -2564,12 +2562,12 @@ items:
         href: ../../api/conditionalaccesspolicy-update.md
       - name: Delete
         href: ../../api/conditionalaccesspolicy-delete.md
-      - name: Restore
-        href: ../../api/conditionalaccesspolicy-restore.md
       - name: List deleted policies
         href: ../../api/policydeletableitem-list.md
       - name: Get deleted policy
         href: ../../api/policydeletableitem-get.md
+      - name: Restore
+        href: ../../api/conditionalaccesspolicy-restore.md
       - name: Permanently delete a soft deleted policy
         href: ../../api/policydeletableitem-delete.md
     - name: What If evaluation
@@ -2588,12 +2586,12 @@ items:
         href: ../../api/namedlocation-get.md
       - name: Delete
         href: ../../api/namedlocation-delete.md
-      - name: Restore
-        href: ../../api/namedlocation-restore.md
       - name: List deleted named locations
         href: ../../api/policydeletableitem-list.md
-      - name: Get deleted named locations
+      - name: Get deleted named location
         href: ../../api/policydeletableitem-get.md
+      - name: Restore deleted named location
+        href: ../../api/namedlocation-restore.md
       - name: Permanently delete a soft deleted named location
         href: ../../api/policydeletableitem-delete.md
       - name: Country named location
@@ -2869,6 +2867,10 @@ items:
         href: ../../api/fraudprotectionprovider-update.md
       - name: Delete
         href: ../../api/riskpreventioncontainer-delete-fraudprotectionproviders.md
+    - name: Arkose fraud protection provider
+      href: ../../resources/arkosefraudprotectionprovider.md
+    - name: Human security fraud protection provider
+      href: ../../resources/humansecurityfraudprotectionprovider.md
   - name: Identity provider
     items:
     - name: External identities
@@ -4516,6 +4518,8 @@ items:
   items:
   - name: Partner security alert
     items:
+    - name: Overview
+      href: ../../resources/partner-security-partnersecurityalert-api-overview.md
     - name: Partner security alert
       href: ../../resources/partner-security-partnersecurityalert.md
     - name: List
