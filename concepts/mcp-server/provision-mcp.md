@@ -4,7 +4,7 @@ description: "Learn how to provision and manage the Microsoft MCP Server for Ent
 author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: Licantrop0
-ms.service: entra-id
+ms.subservice: entra-id
 ms.topic: install-set-up-deploy
 ms.date: 10/28/2025
 
