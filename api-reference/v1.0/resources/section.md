@@ -27,7 +27,7 @@ For the list of supported methods, see [place](./place.md).
 |address|[physicalAddress](../resources/physicaladdress.md)|The physical address of the **section**, including the street, city, state, country or region, and postal code. Inherited from [place](./place.md).|
 |displayName|String|The display name of the **section**. Inherited from [place](../resources/place.md).|
 |geoCoordinates|[outlookGeoCoordinates](../resources/outlookgeocoordinates.md)|Specifies the **section** location in latitude, longitude, and (optionally) altitude coordinates. Inherited from [place](../resources/place.md).|
-|id|String|The unique identifier for the section. Read-only. This identifier isn't immutable and can change if the mailbox or tenant configuration changes. Inherited from [entity](../resources/entity.md). Inherits from [entity](../resources/entity.md)|
+|id|String|The unique identifier for the section. Read-only. This identifier isn't immutable and can change if the mailbox or tenant configuration changes. Inherited from [entity](../resources/entity.md). |
 |isWheelChairAccessible|Boolean|Indicates whether the **section** is wheelchair accessible. Inherited from [place](../resources/place.md).|
 |label|String|User-defined description of the **section**. Inherited from [place](../resources/place.md).|
 |parentId|String|The ID of a parent [floor](./floor.md) or [building](./building.md). Inherited from [place](../resources/place.md).|

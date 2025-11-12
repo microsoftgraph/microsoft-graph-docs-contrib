@@ -33,15 +33,15 @@ Inherits from [baseMapFeature](../resources/basemapfeature.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md). Inherits from [entity](../resources/entity.md)|
-|placeId|String|**TODO: Add Description**|
-|properties|String|**TODO: Add Description** Inherited from [baseMapFeature](../resources/basemapfeature.md).|
+|id|String|Unique identifier for the **buildingMapFeature** object. Inherited from [baseMapFeature](./basemapfeature.md). |
+|placeId|String|Identifier for the [building](./building.md) to which this **buildingMap** belongs. |
+|properties|String|Concatenated key-value pair of all properties of a GeoJSON file for this **buildingMap**. Inherited from [baseMapFeature](./basemapfeature.md).|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|footprints|[footprintMap](../resources/footprintmap.md) collection|**TODO: Add Description**|
-|levels|[levelMap](../resources/levelmap.md) collection|**TODO: Add Description**|
+|footprints|[footprintMap](./footprintmap.md) collection|Represents the approximate physical extent of a referenced [building](./building.md). It corresponds to footprint.geojson in IMDF format.|
+|levels|[levelMap](./levelmap.md) collection|Represents a physical floor structure within a building. It corresponds to level.geojson in IMDF format.|
 
 ## JSON representation
 The following JSON representation shows the resource type.

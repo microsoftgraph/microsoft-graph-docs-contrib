@@ -4,7 +4,7 @@ description: "Represents a group of rooms created by the company."
 author: tiwarisakshi02
 ms.date: 11/11/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice: outlook
 doc_type: resourcePageType
 ---
 

@@ -12,8 +12,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Represents a map file associated with a [building](./building.md) in Places. This object is the IMDF-format representation of building.geojson.
 
 Inherits from [baseMapFeature](./basemapfeature.md).
