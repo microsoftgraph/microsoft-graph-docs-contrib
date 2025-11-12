@@ -1671,6 +1671,96 @@
       "CreatedDateTime": "2025-11-12T19:39:06.5266811Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "0c110ad8-0d59-4879-afde-cfcde225ffac",
+          "ApiChange": "Resource",
+          "ChangedApiName": "fraudProtectionConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [fraudProtectionConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/fraudprotectionconfiguration?view=graph-rest-1.0) resource.",
+          "Target": "fraudProtectionConfiguration"
+        },
+        {
+          "Id": "0c110ad8-0d59-4879-afde-cfcde225ffac",
+          "ApiChange": "Resource",
+          "ChangedApiName": "fraudProtectionProviderConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [fraudProtectionProviderConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/fraudprotectionproviderconfiguration?view=graph-rest-1.0) resource.",
+          "Target": "fraudProtectionProviderConfiguration"
+        },
+        {
+          "Id": "0c110ad8-0d59-4879-afde-cfcde225ffac",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onFraudProtectionLoadStartExternalUsersAuthHandler",
+          "ChangeType": "Addition",
+          "Description": "Added the [onFraudProtectionLoadStartExternalUsersAuthHandler](https://learn.microsoft.com/en-us/graph/api/resources/onfraudprotectionloadstartexternalusersauthhandler?view=graph-rest-1.0) resource.",
+          "Target": "onFraudProtectionLoadStartExternalUsersAuthHandler"
+        },
+        {
+          "Id": "0c110ad8-0d59-4879-afde-cfcde225ffac",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onFraudProtectionLoadStartHandler",
+          "ChangeType": "Addition",
+          "Description": "Added the [onFraudProtectionLoadStartHandler](https://learn.microsoft.com/en-us/graph/api/resources/onfraudprotectionloadstarthandler?view=graph-rest-1.0) resource.",
+          "Target": "onFraudProtectionLoadStartHandler"
+        },
+        {
+          "Id": "0c110ad8-0d59-4879-afde-cfcde225ffac",
+          "ApiChange": "Resource",
+          "ChangedApiName": "arkoseFraudProtectionProvider",
+          "ChangeType": "Addition",
+          "Description": "Added the [arkoseFraudProtectionProvider](https://learn.microsoft.com/en-us/graph/api/resources/arkosefraudprotectionprovider?view=graph-rest-1.0) resource.",
+          "Target": "arkoseFraudProtectionProvider"
+        },
+        {
+          "Id": "0c110ad8-0d59-4879-afde-cfcde225ffac",
+          "ApiChange": "Property",
+          "ChangedApiName": "displayName",
+          "ChangeType": "Addition",
+          "Description": "Added the **displayName** property to the [authenticationEventListener](https://learn.microsoft.com/en-us/graph/api/resources/authenticationeventlistener?view=graph-rest-1.0) resource.",
+          "Target": "authenticationEventListener"
+        },
+        {
+          "Id": "0c110ad8-0d59-4879-afde-cfcde225ffac",
+          "ApiChange": "Resource",
+          "ChangedApiName": "fraudProtectionProvider",
+          "ChangeType": "Addition",
+          "Description": "Added the [fraudProtectionProvider](https://learn.microsoft.com/en-us/graph/api/resources/fraudprotectionprovider?view=graph-rest-1.0) resource.",
+          "Target": "fraudProtectionProvider"
+        },
+        {
+          "Id": "0c110ad8-0d59-4879-afde-cfcde225ffac",
+          "ApiChange": "Resource",
+          "ChangedApiName": "humanSecurityFraudProtectionProvider",
+          "ChangeType": "Addition",
+          "Description": "Added the [humanSecurityFraudProtectionProvider](https://learn.microsoft.com/en-us/graph/api/resources/humansecurityfraudprotectionprovider?view=graph-rest-1.0) resource.",
+          "Target": "humanSecurityFraudProtectionProvider"
+        },
+        {
+          "Id": "0c110ad8-0d59-4879-afde-cfcde225ffac",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onFraudProtectionLoadStartListener",
+          "ChangeType": "Addition",
+          "Description": "Added the [onFraudProtectionLoadStartListener](https://learn.microsoft.com/en-us/graph/api/resources/onfraudprotectionloadstartlistener?view=graph-rest-1.0) resource.",
+          "Target": "onFraudProtectionLoadStartListener"
+        },
+        {
+          "Id": "0c110ad8-0d59-4879-afde-cfcde225ffac",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "fraudProtectionProviders",
+          "ChangeType": "Addition",
+          "Description": "Added the **fraudProtectionProviders** relationship to the [riskPreventionContainer](https://learn.microsoft.com/en-us/graph/api/resources/riskpreventioncontainer?view=graph-rest-1.0) resource.",
+          "Target": "riskPreventionContainer"
+        }
+      ],
+      "Id": "0c110ad8-0d59-4879-afde-cfcde225ffac",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-11-12T17:23:49.4323075Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
     }
   ]
 }
