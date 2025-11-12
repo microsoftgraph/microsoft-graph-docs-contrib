@@ -51,8 +51,7 @@ You can specify the following properties when creating an **authenticationEventL
 |:---|:---|:---|
 |conditions|[authenticationConditions](../resources/authenticationconditions.md)|The conditions on which this authenticationEventListener should trigger. Optional.|
 |displayName|String|The display name of the authentication event listener policy. Optional.|
-|handler|[onTokenIssuanceStartHandler](../resources/ontokenissuancestarthandler.md)|The handler to invoke when conditions are met. Can be set for the **onTokenIssuanceStartListener** listener type.|
-|handler|[onFraudProtectionLoadStartHandler](../resources/onfraudprotectionloadstarthandler.md) | The handler to invoke when conditions are met. Can be set for the **onFraudProtectionLoadStartListener** type. |
+|handler|[onTokenIssuanceStartHandler](../resources/ontokenissuancestarthandler.md) or [onFraudProtectionLoadStartHandler](../resources/onfraudprotectionloadstarthandler.md)|The handler to invoke when conditions are met. For **onTokenIssuanceStartListener**, set to [onTokenIssuanceStartHandler](../resources/ontokenissuancestarthandler.md). For **onFraudProtectionLoadStartListener**, set to [onFraudProtectionLoadStartHandler](../resources/onfraudprotectionloadstarthandler.md).|
 
 ## Response
 
