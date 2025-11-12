@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PATCH /policies/permissionGrantPreApprovalPolicies/{id}
 ```
 
@@ -64,7 +64,7 @@ If successful, this method returns a `200 OK` response code and an updated [perm
   "name": "update_permissiongrantpreapprovalpolicy"
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/policies/permissionGrantPreApprovalPolicies/71ba13dc-5947-4e59-bcc5-0ad5c339a853
 Content-Type: application/json
 
@@ -146,6 +146,6 @@ Content-Type: application/json
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```

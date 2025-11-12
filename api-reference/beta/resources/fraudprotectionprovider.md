@@ -20,6 +20,8 @@ This is an abstract type that serves as the base resource for specific provider 
 - [arkosefraudprotectionprovider](../resources/arkosefraudprotectionprovider.md) resource type
 - [humanSecurityFraudProtectionProvider](../resources/humansecurityfraudprotectionprovider.md) resource type
 
+For more information, see [Integrate Microsoft Entra External ID with Arkose Labs and HUMAN Security for fraud protection (preview)](/entra/external-id/customers/how-to-integrate-fraud-protection).
+
 Inherits from [entity](../resources/entity.md).
 
 
@@ -29,7 +31,7 @@ Inherits from [entity](../resources/entity.md).
 |[List](../api/riskpreventioncontainer-list-fraudprotectionproviders.md)|[fraudProtectionProvider](../resources/fraudprotectionprovider.md) collection|Get a list of the fraudProtectionProviders and their properties.|
 |[Create](../api/riskpreventioncontainer-post-fraudprotectionproviders.md)|[fraudProtectionProvider](../resources/fraudprotectionprovider.md)|Create a new fraudProtectionProvider object.|
 |[Get](../api/fraudprotectionprovider-get.md)|[fraudProtectionProvider](../resources/fraudprotectionprovider.md)|Read the properties and relationships of [fraudProtectionProvider](../resources/fraudprotectionprovider.md) object.|
-|[Update](../api/fraudprotectionprovider-update.md)|[fraudProtectionProvider](../resources/fraudprotectionprovider.md)|Update the properties of a fraudProtectionProvider object.|
+|[Update](../api/fraudprotectionprovider-update.md)|None|Update the properties of a fraudProtectionProvider object.|
 |[Delete](../api/riskpreventioncontainer-delete-fraudprotectionproviders.md)|None|Delete a fraudProtectionProvider object.|
 
 ## Properties

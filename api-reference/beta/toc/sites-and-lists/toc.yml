@@ -8,9 +8,11 @@ items:
   items:
   - name: Site
     href: ../../resources/site.md
-  - name: Get root site
+  - name: Create
+    href: ../../api/site-post-sites.md
+  - name: Get
     href: ../../api/site-get.md
-  - name: Get site
+  - name: Get root site
     href: ../../api/site-get.md
   - name: Get site by path
     href: ../../api/site-getbypath.md
@@ -64,6 +66,8 @@ items:
     href: ../../api/site-post-documentprocessingjobs.md
   - name: List operations
     href: ../../api/site-list-operations.md
+  - name: Get operation status
+    href: ../../api/site-getoperationstatus.md
   - name: Get site settings
     href: ../../api/sitesettings-get.md
   - name: Get delta
@@ -224,8 +228,8 @@ items:
     href: ../../api/recyclebin-list-items.md
   - name: Delete
     href: ../../api/recyclebinitem-delete.md
-  - name: Restore
-    href: ../../api/recyclebinitem-restore.md
+  - name: Restore recycleBinItem by driveItemId
+    href: ../../api/filestoragecontainer-restore-recyclebinitem.md
 - name: Rich long running operation
   items:
   - name: Rich long running operation
@@ -458,3 +462,7 @@ items:
       href: ../../api/termstore-term-list-relations.md
     - name: Create
       href: ../../api/termstore-relation-post.md
+- name: Complex types
+  items:
+  - name: Identity input
+    href: ../../resources/identityinput.md

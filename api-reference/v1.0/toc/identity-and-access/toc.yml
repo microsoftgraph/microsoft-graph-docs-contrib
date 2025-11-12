@@ -48,36 +48,6 @@ items:
         href: ../../api/directory-deleteditems-get.md
       - name: Restore
         href: ../../api/directory-deleteditems-restore.md
-  - name: App role assignment
-    items:
-    - name: App role assignment
-      href: ../../resources/approleassignment.md
-    - name: List app role assignments for a group
-      href: ../../api/group-list-approleassignments.md
-    - name: List app role assignments for a user
-      href: ../../api/user-list-approleassignments.md
-    - name: List app role assignments for a client service principal
-      href: ../../api/serviceprincipal-list-approleassignments.md
-    - name: List app role assignments for users, groups, and client service principals for a resource service principal
-      href: ../../api/serviceprincipal-list-approleassignedto.md
-    - name: Grant app role to a group
-      href: ../../api/group-post-approleassignments.md
-    - name: Grant app role to a user
-      href: ../../api/user-post-approleassignments.md
-    - name: Grant app role to a client service principal
-      href: ../../api/serviceprincipal-post-approleassignments.md
-    - name: Grant app role assignment to user, group, or client service principal for a resource service principal
-      href: ../../api/serviceprincipal-post-approleassignedto.md
-    - name: Get app role assignment
-      href: ../../api/approleassignment-get.md
-    - name: Delete app role assignment for a group
-      href: ../../api/group-delete-approleassignments.md
-    - name: Delete app role assignment for a user
-      href: ../../api/user-delete-approleassignments.md
-    - name: Delete app role assignment for a client service principal
-      href: ../../api/serviceprincipal-delete-approleassignments.md
-    - name: Delete app role assignment for user, group, or client service principal to a resource service principal
-      href: ../../api/serviceprincipal-delete-approleassignedto.md
   - name: BitLocker recovery key
     items:
     - name: BitLocker recovery key
@@ -979,6 +949,8 @@ items:
         href: ../../api/identitygovernance-workflow-delete.md
       - name: Activate
         href: ../../api/identitygovernance-workflow-activate.md
+      - name: Activate with scope
+        href: ../../api/identitygovernance-workflow-activatewithscope.md
       - name: List users in scope
         href: ../../api/workflow-list-executionscope.md
       - name: Deleted workflows
@@ -1030,6 +1002,10 @@ items:
             href: ../../api/identitygovernance-userprocessingresult-summary.md
           - name: List task processing results
             href: ../../api/identitygovernance-userprocessingresult-list-taskprocessingresults.md
+          - name: List reprocessedRuns
+            href: ../../api/identitygovernance-userprocessingresult-list-reprocessedruns.md
+          - name: Remove reprocessedRuns
+            href: ../../api/identitygovernance-userprocessingresult-delete-reprocessedruns.md
         - name: Task report
           items:
           - name: Task report
@@ -1052,6 +1028,10 @@ items:
             href: ../../api/identitygovernance-run-summary.md
           - name: List task processing results
             href: ../../api/identitygovernance-run-list-taskprocessingresults.md
+          - name: List reprocessedRuns
+            href: ../../api/identitygovernance-run-list-reprocessedruns.md
+          - name: Remove reprocessedRuns
+            href: ../../api/identitygovernance-run-delete-reprocessedruns.md
         - name: Task processing result
           items:
           - name: Task processing result
@@ -1449,6 +1429,36 @@ items:
         href: ../../resources/termsexpiration.md
 - name: Identity and sign-in
   items:
+  - name: App role assignment
+    items:
+    - name: App role assignment
+      href: ../../resources/approleassignment.md
+    - name: List app role assignments for a group
+      href: ../../api/group-list-approleassignments.md
+    - name: List app role assignments for a user
+      href: ../../api/user-list-approleassignments.md
+    - name: List app role assignments for a client service principal
+      href: ../../api/serviceprincipal-list-approleassignments.md
+    - name: List app role assignments for users, groups, and client service principals for a resource service principal
+      href: ../../api/serviceprincipal-list-approleassignedto.md
+    - name: Grant app role to a group
+      href: ../../api/group-post-approleassignments.md
+    - name: Grant app role to a user
+      href: ../../api/user-post-approleassignments.md
+    - name: Grant app role to a client service principal
+      href: ../../api/serviceprincipal-post-approleassignments.md
+    - name: Grant app role assignment to user, group, or client service principal for a resource service principal
+      href: ../../api/serviceprincipal-post-approleassignedto.md
+    - name: Get app role assignment
+      href: ../../api/approleassignment-get.md
+    - name: Delete app role assignment for a group
+      href: ../../api/group-delete-approleassignments.md
+    - name: Delete app role assignment for a user
+      href: ../../api/user-delete-approleassignments.md
+    - name: Delete app role assignment for a client service principal
+      href: ../../api/serviceprincipal-delete-approleassignments.md
+    - name: Delete app role assignment for user, group, or client service principal to a resource service principal
+      href: ../../api/serviceprincipal-delete-approleassignedto.md
   - name: Authentication event listeners
     items:
     - name: Authentication event listener

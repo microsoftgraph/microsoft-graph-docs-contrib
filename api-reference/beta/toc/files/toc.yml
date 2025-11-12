@@ -52,6 +52,8 @@ items:
     href: ../../api/driveitem-get-content-format.md
   - name: Delete item
     href: ../../api/driveitem-delete.md
+  - name: Restore item
+    href: ../../api/driveitem-restore.md
   - name: Permanently delete item
     href: ../../api/driveitem-permanentdelete.md
   - name: Move item
@@ -112,6 +114,18 @@ items:
       href: ../../api/opentypeextension-post-opentypeextension.md
     - name: Get open extension
       href: ../../api/opentypeextension-get.md
+- name: Drive item version
+  items:
+  - name: Drive item version
+    href: ../../resources/driveitemversion.md
+  - name: List
+    href: ../../api/driveitem-list-versions.md
+  - name: Get
+    href: ../../api/driveitemversion-get.md
+  - name: Download version
+    href: ../../api/driveitemversion-get-contents.md
+  - name: Restore version
+    href: ../../api/driveitemversion-restoreversion.md
 - name: Bundle
   items:
   - name: Bundle
@@ -183,7 +197,7 @@ items:
   - name: Update recycle bin settings
     href: ../../api/filestoragecontainer-update-recyclebinsettings.md
   - name: Restore recycle bin items
-    href: ../../api/recyclebinitem-restore.md
+    href: ../../api/filestoragecontainer-restore-recyclebinitem.md
   - name: Delete recycle bin items
     href: ../../api/recyclebinitem-delete.md
   - name: List recycle bin items
@@ -276,8 +290,8 @@ items:
     href: ../../api/recyclebin-list-items.md
   - name: Delete
     href: ../../api/recyclebinitem-delete.md
-  - name: Restore
-    href: ../../api/recyclebinitem-restore.md
+  - name: Restore recycleBinItem by driveItemId
+    href: ../../api/filestoragecontainer-restore-recyclebinitem.md
 - name: Shared drive item
   items:
   - name: Shared drive item

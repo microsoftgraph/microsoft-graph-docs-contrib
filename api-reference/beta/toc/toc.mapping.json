@@ -13,8 +13,7 @@
       "overview": "../../resources/groups-overview.md",
       "resources": [
         "group",
-        "groupLifecyclePolicy",
-        "onPremisesSyncBehavior"
+        "groupLifecyclePolicy"
       ]
     },
     {
@@ -91,6 +90,7 @@
             "onPremisesAgent",
             "onPremisesAgentGroup",
             "onPremisesPublishingProfile",
+            "privateAccessSensor",
             "publishedResource",
             "ipApplicationSegment",
             "webApplicationSegment",
@@ -511,15 +511,17 @@
             "cloudPcExternalPartner",
             "cloudPcFrontLineServicePlan",
             "cloudPcGalleryImage",
+            "cloudPcManagedLicense",
             "cloudPcOnPremisesConnection",
             "cloudPcOrganizationSettings",
             "cloudPcProvisioningPolicy",
-            "cloudPcReports",
+            "cloudPcReport",
             "cloudPcServicePlan",
             "cloudPcSnapshot",
             "cloudPcSupportedRegion",
             "cloudPcUserSetting",
             "virtualEndpoint"
+            "cloudPcReports",
           ],
           "complexTypes": [
             "appScope",
@@ -558,6 +560,7 @@
             "cloudPcForensicStorageAccount",
             "cloudPcFrontlineSharedDeviceDetail",
             "cloudPcHealthCheckItem",
+            "cloudPcLaunchDetail",            
             "cloudPcLaunchInfo",
             "cloudPcLoginResult",
             "cloudPcManagementAssignmentTarget",
@@ -573,16 +576,21 @@
             "cloudPcRestorePointSetting",
             "cloudPcReviewStatus",
             "cloudPcScopedPermission",
+            "cloudPcSnapshotImportActionDetail",
+            "cloudPcSnapshotImportActionResult",
             "cloudPcSourceDeviceImage",
             "cloudPcStatusDetails",
             "cloudPcStatusDetail",
             "cloudPcStatusSummary",
+            "cloudPcStorageBlobDetail",
             "cloudPcSupportedRegionRestrictionDetail",
             "cloudPcSubscription",
             "cloudPcUserRoleScopeTagInfo",
             "cloudPcUserSettingAssignment",
+            "cloudPcUserSettingsPersistenceConfiguration",
             "cloudPcWindowsSetting",
             "cloudPcWindowsSettings",
+            "frontlineCloudPcDetail",
             "keyValuePair",
             "microsoftManagedDesktop",
             "unifiedRolePermission"
@@ -929,10 +937,10 @@
           "overview": "../../resources/engagement-api-overview.md",
           "resources": [
             "community",
+            "employeeExperienceUser",
             "engagementAsyncOperation",
             "engagementRole",
-            "engagementRoleMember",
-            "employeeExperienceUser"
+            "engagementRoleMember"
           ],
           "complexTypes": [
             "engagementConversationMessageAttachment",
@@ -1004,11 +1012,13 @@
         "OneDrive for Business",
         "OneDrive business",
         "OneDrive personal",
-        "SharePoint"
+        "SharePoint",
+        "SharePoint Embedded"
       ],
       "resources": [
         "drive",
         "driveItem",
+        "driveItemVersion",
         "bundle",
         "fileStorageContainer",
         "fileStorageContainerType",
@@ -1093,7 +1103,6 @@
           "shouldSort": true,
           "resources": [
             "administrativeUnit",
-            "appRoleAssignment",
             "contract",
             "directory",
             "device",
@@ -1541,12 +1550,23 @@
           "name": "Identity and sign-in",
           "shouldSort": true,
           "resources": [
+            "appRoleAssignment",            
             "dataPolicyOperation",
             "oAuth2PermissionGrant",
             "certificateBasedAuthConfiguration",
             "externalIdentitiesPolicy"
           ],
           "childNodes": [
+            {
+              "name": "Sign-in identifiers",
+              "resources": [
+                "signInIdentifierBase",
+                "customUsernameSignInIdentifier",
+                "emailSignInIdentifier",
+                "upnSignInIdentifier",
+                "usernameSignInIdentifier"
+              ]
+            },
             {
               "name": "Authentication event listeners",
               "resources": [
@@ -1560,7 +1580,17 @@
                 "onInteractiveAuthFlowStartListener",
                 "onPhoneMethodLoadStartListener",
                 "onTokenIssuanceStartListener",
-                "onUserCreateStartListener"
+                "onUserCreateStartListener",
+                "webApplicationFirewallProvider",
+                "cloudFlareWebApplicationFirewallProvider",
+                "akamaiWebApplicationFirewallProvider",
+                "webApplicationFirewallVerificationModel"
+              ]
+            },
+            {
+              "name": "Verified ID",
+              "resources": [
+                "verifiedIdProfile"                
               ]
             },
             {
@@ -1609,6 +1639,7 @@
                 "temporaryAccessPassAuthenticationMethodConfiguration",
                 "softwareOathAuthenticationMethodConfiguration",
                 "voiceAuthenticationMethodConfiguration",
+                "verifiableCredentialsAuthenticationMethodConfiguration",
                 "x509CertificateAuthenticationMethodConfiguration",
                 "qrCodePinAuthenticationMethodConfiguration"
               ]
@@ -2047,6 +2078,7 @@
                 "microsoft.graph.networkaccess.filteringPolicyLink",
                 "microsoft.graph.networkaccess.filteringRule",
                 "microsoft.graph.networkaccess.fqdnFilteringRule",
+                "microsoft.graph.networkaccess.urlDestinationFilteringRule",
                 "microsoft.graph.networkaccess.webCategoryFilteringRule",
                 "microsoft.graph.networkAccess.threatIntelligencePolicy",
                 "microsoft.graph.networkAccess.threatIntelligencePolicyLink",
@@ -2817,7 +2849,8 @@
             "microsoft.graph.security.identityAccounts",
             "microsoft.graph.security.user",
             "microsoft.graph.security.sensorCandidate",
-            "microsoft.graph.security.sensorCandidateActivationConfiguration"
+            "microsoft.graph.security.sensorCandidateActivationConfiguration",
+            "microsoft.graph.security.autoAuditingConfiguration"
           ],
           "complexTypes": [
             "microsoft.graph.security.deploymentAccessKeyType",
@@ -2878,6 +2911,16 @@
                 "microsoft.graph.security.filePlanReference"
               ]
             }
+          ]
+        },
+        {
+          "name": "Security Copilot",
+          "resources": [
+            "microsoft.graph.security.securitycopilot.workspace",
+            "microsoft.graph.security.securitycopilot.session",
+            "microsoft.graph.security.securitycopilot.prompt",
+            "microsoft.graph.security.securitycopilot.evaluation",
+            "microsoft.graph.security.securitycopilot.plugin"
           ]
         },
         {
@@ -2973,6 +3016,9 @@
         "permission",
         "sharepointSettings"
       ],
+      "complexTypes": [
+        "identityInput"
+      ],
       "childNodes": [
         {
           "name": "Pages",
@@ -3037,6 +3083,7 @@
         "businessScenarioGroupTarget",
         "businessScenarioProperties",
         "businessScenarioTaskTargetBase",
+        "contentSensitivityLabelAssignment",
         "identity",
         "identitySet",
         "itemBody",
@@ -3078,8 +3125,10 @@
         "plannerTaskRecurrence",
         "plannerTeamsPublicationInfo",
         "plannerUserIds",
+        "planUsageRight",
         "recurrencePattern",
-        "sensitivityLabelAssignment"
+        "sensitivityLabelAssignment",
+        "usageRightsInfo"
       ],
       "childNodes": [
         {
@@ -3205,8 +3254,11 @@
             {
               "name": "Call events",
               "resources": [
-                "microsoft.graph.callEvent",
-                "microsoft.graph.emergencyCallEvent"
+                "callEvent",
+                "emergencyCallEvent"
+              ],
+              "complexTypes": [
+                "emergencyCallerInfo"
               ]
             },
             {
