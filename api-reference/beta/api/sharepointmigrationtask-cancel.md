@@ -10,7 +10,7 @@ ms.date: 11/02/2025
 
 # Cancel sharepointMigrationTask by ID
 
-Attempt to Cancel a sharepointMigrationTask that specifies the move of a specific object from a source organization to a target organization. You can cancel the sharepointMigrationTask only before it starts execution and while it is in a state where reverting won't cause system instability.
+Attempt to Cancel a sharepointMigrationTask that specifies the move of a specific object from a source organization to a target organization. Cancel the sharePointMigrationTask only before it starts and when reverting does not cause system instability.
 
 ### Permissions
 
@@ -50,7 +50,7 @@ Don't supply a request body for this method.
 #### Response
 
 If successful, this method directly returns `204 No Content` response code and there's no content to return in the response body.
-If not, it may return a `404 NOT FOUND` when there's no such task, or a `409 CONFLICT` if the cancel can't proceed for some reason, with the errors in the sharepointMigrationTask containing the explanation, more error handling cases are listed below.
+If the cancel fails, the service returns `404 NOT FOUND` for a missing task or `409 CONFLICT` when the cancel cannot proceed. The sharePointMigrationTask contains error details. See the error conditions section for more cases.
 
 <!-- {
 "blockType": "ignored"
