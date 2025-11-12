@@ -161,6 +161,8 @@ items:
       href: ../../api/agentidentity-get.md
     - name: Update
       href: ../../api/agentidentity-update.md
+    - name: Delete
+      href: ../../api/agentidentity-delete.md
     - name: App role assignments
       items:
       - name: List appRoleAssignedTo
