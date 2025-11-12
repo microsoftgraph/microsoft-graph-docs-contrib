@@ -22,6 +22,13 @@ Delete an [insiderRiskyUserApproval](../resources/insiderriskyuserapproval.md) o
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
+<!-- {
+  "blockType": "permissions",
+  "name": "insiderriskyuserapproval-delete-permissions"
+}
+-->
+[!INCLUDE [permissions-table](../includes/permissions/insiderriskyuserapproval-delete-permissions.md)]
+
 ## HTTP request
 
 <!-- {
@@ -58,7 +65,7 @@ The following example shows a request.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/insiderRiskyUserApprovals/{insiderRiskyUserApprovalId}
+DELETE https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/insiderRiskyUserApprovals/9e1ac495-f808-4e8b-8772-b4930b3de70b
 ```
 
 ### Response

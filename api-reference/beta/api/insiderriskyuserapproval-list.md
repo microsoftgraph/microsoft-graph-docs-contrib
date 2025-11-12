@@ -22,6 +22,13 @@ Get a list of the [insiderRiskyUserApproval](../resources/insiderriskyuserapprov
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
+<!-- {
+  "blockType": "permissions",
+  "name": "insiderriskyuserapproval-list-permissions"
+}
+-->
+[!INCLUDE [permissions-table](../includes/permissions/insiderriskyuserapproval-list-permissions.md)]
+
 ## HTTP request
 
 <!-- {
@@ -86,7 +93,7 @@ Content-Type: application/json
   "value": [
     {
       "@odata.type": "#microsoft.graph.insiderRiskyUserApproval",
-      "id": "4d884175-61aa-a7a3-242a-6d62761ae2db",
+      "id": "83171707-5e38-41b5-967e-8542684ecc6c",
       "isEnabled": true,
       "createdBy": "admin@contoso.com",
       "createdDateTime": "2025-11-01T10:00:00Z",

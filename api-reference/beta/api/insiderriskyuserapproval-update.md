@@ -22,6 +22,13 @@ Update the properties of an [insiderRiskyUserApproval](../resources/insiderrisky
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
+<!-- {
+  "blockType": "permissions",
+  "name": "insiderriskyuserapproval-update-permissions"
+}
+-->
+[!INCLUDE [permissions-table](../includes/permissions/insiderriskyuserapproval-update-permissions.md)]
+
 ## HTTP request
 
 <!-- {
@@ -67,7 +74,7 @@ The following example shows a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/insiderRiskyUserApprovals/{insiderRiskyUserApprovalId}
+PATCH https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/insiderRiskyUserApprovals/12c97a0b-be3a-4802-bddd-aaef83e35c09
 Content-Type: application/json
 
 {
@@ -94,13 +101,14 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#controlConfigurations/microsoft.graph.insiderRiskyUserApproval/$entity",
   "@odata.type": "#microsoft.graph.insiderRiskyUserApproval",
-  "id": "4d884175-61aa-a7a3-242a-6d62761ae2db",
+  "id": "12c97a0b-be3a-4802-bddd-aaef83e35c09",
   "isEnabled": true,
-  "createdBy": "admin@contoso.com",
-  "createdDateTime": "2025-11-01T10:00:00Z",
-  "modifiedBy": "admin@contoso.com",
-  "modifiedDateTime": "2025-11-10T15:00:00Z",
+  "createdBy": "kayat@elmdev.com",
+  "createdDateTime": "2025-11-04T11:00:00Z",
+  "modifiedBy": "kayat@elmdev.com",
+  "modifiedDateTime": "2025-11-09T09:40:00Z",
   "isApprovalRequired": true,
   "minimumRiskLevel": "elevated"
 }
