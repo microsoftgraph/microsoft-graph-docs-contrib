@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 The API calls happen on source site, and only add list items on my site root web, for example, contoso-my.sharepoint.com. Then it triggers a multi-geo site move job in backend, enqueue, and orchestrate a handful of tenant workflow jobs like backup, restore, and cleanup backed by TJ infra.
 
-The OData type of `sharePointResourceMigrationParameters` differentiates user migration from site migration, instead of using different subpaths. If this migration task is an user's OneDrive migration, specify `sharePointUserMigrationParameters`. If this migration task is a regular SharePoint site migration, specify `sharePointSiteMigrationParameters`. If this migration task is a group-connected site migration, specify `sharePointGroupMigrationParameters`.
+The OData type of `sharePointResourceMigrationParameters` differentiates user migration from site migration, instead of using different subpaths. If this migration task is a user's OneDrive migration, specify `sharePointUserMigrationParameters`. If this migration task is a regular SharePoint site migration, specify `sharePointSiteMigrationParameters`. If this migration task is a group-connected site migration, specify `sharePointGroupMigrationParameters`.
 
 We allow customer to create user migration task by two options - create by userPrincipalName, or create by userObjectId
 
@@ -339,7 +339,7 @@ Content-Type: application/json
 
 ### 5. Create a user migration task with **ValidateOnly=true** parameter
 
-Set ValidateOnly to true to validate whether the move can occur. The request checks feasibility but does not execute the migration.
+Set ValidateOnly to true to validate whether the move can occur. The request checks feasibility but doesn't execute the migration.
 
 #### HTTP request
 

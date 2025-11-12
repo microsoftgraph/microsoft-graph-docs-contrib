@@ -1,16 +1,16 @@
 ---
 author: xiaoqwan
-title: Get sharepointMigrationTask by Id
+title: Get sharepointMigrationTask by ID
 ms.localizationpriority: medium
-description: Gets the sharepointMigrationTask that was previously created, given the task's id, when invoked at the source organization
+description: Gets the sharepointMigrationTask that was previously created, given the task's ID, when invoked at the source organization
 ms.subservice: "sharepoint"
 doc_type: apiPageType
 ms.date: 11/02/2025
 ---
 
-# Get sharePointMigrationTask by Id
+# Get sharePointMigrationTask by ID
 
-Gets the sharePointMigrationTask that was previously created, given the task's id. The returned sharePointMigration task contains a copy of the parameters used earlier to create this task, the status of the migration, optional properties like the startedDateTime and finishedDateTime of the task, and also errors that give detailed information about the issues encountered during the execution of the sharePointMigrationTask.
+Gets the sharePointMigrationTask that was previously created, given the task's ID. The returned sharePointMigrationTask includes the source and target site URLs, migration status, optional timestamps (startedDateTime and finishedDateTime), and error details about issues during execution.
 
 ### Permissions
 
@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 #### HTTP request
 
 ``` http
-GET /solutions/sharePoint/migrations/crossOrganizationMigrationTasks/{id}
+GET /solutions/sharePoint/migrations/crossOrganizationMigrationTasks/{ID}
 ```
 
 #### Request headers
@@ -45,7 +45,7 @@ GET /solutions/sharePoint/migrations/crossOrganizationMigrationTasks/{id}
 
 #### Request Body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 #### Response
 
@@ -71,7 +71,7 @@ Content-Type: application/json
 
 | Scenario                                                                      | Method    | Code | Message                                                                                          |
 | ----------------------------------------------------------------------------- | --------- | ---- | ------------------------------------------------------------------------------------------------ |
-| Caller didn't provide the required parameters                                 | GET | 400  | Cannot process the request because the required parameter {paramName} is missing.                |
+| Caller didn't provide the required parameters                                 | GET | 400  | Can't process the request because the required parameter {paramName} is missing.                |
 | Caller has insufficient permission                                            | GET | 403  | Access denied                                                                                    |
-| Trust relationship is not set up on target tenant                             | GET      | 422  | There is no Cross-Tenant relationship established for partner {siteUrl} and role {soure/target}. |
-| Migration task doesn't exist                                                  | GET | 404  | The migration task {id} could not be found.                                                      |
+| Trust relationship isn't set up on target tenant                             | GET      | 422  | There's no Cross-Tenant relationship established for partner {siteUrl} and role {soure/target}. |
+| Migration task doesn't exist                                                  | GET | 404  | The migration task {ID} couldn't be found.                                                      |

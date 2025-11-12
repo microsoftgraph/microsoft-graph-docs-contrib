@@ -18,7 +18,7 @@ The **GroupIdentity** resource represents an identity of a group-connected site.
 | Property         | Type                        | Description
 |:------------     |:----------------------------|:---------------------------------
 | mailNickname     | String                      | The mail nick name, also known as group alias of the group-connected site.
-| id               | String                      | Unique identifier for the identity.
+| ID               | String                      | Unique identifier for the identity.
 | displayName      | String                      | Display name for the identity.
 
 ## JSON representation

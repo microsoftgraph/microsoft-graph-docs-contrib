@@ -10,7 +10,7 @@ ms.date: 11/02/2025
 
 # Get sharepointMigrationTask by source site url
 
-Gets the sharepointMigrationTask that was previously created for a regular site, given the source site url. The returned sharepointMigrationTask contains source and target site url, the status of the migration, optional properties like the startedDateTime and finishedDateTime of the task, and also errors that give detailed information about the issues encountered during the execution of the sharepointMigrationTask.
+Gets the sharepointMigrationTask that was previously created for a regular site, given the source site url. The returned sharePointMigrationTask includes the source and target site URLs, migration status, optional timestamps (startedDateTime and finishedDateTime), and error details about issues during execution.
 
 ### Permissions
 
@@ -45,7 +45,7 @@ GET /solutions/sharePoint/migrations/crossOrganizationMigrationTasks/getBySource
 
 #### Request Body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 #### Response
 
@@ -71,7 +71,7 @@ Content-Type: application/json
 
 | Scenario                                                                      | Method    | Code | Message                                                                                          |
 | ----------------------------------------------------------------------------- | --------- | ---- | ------------------------------------------------------------------------------------------------ |
-| Caller didn't provide the required parameters                                 | GET | 400  | Cannot process the request because the required parameter {paramName} is missing.                |
+| Caller didn't provide the required parameters                                 | GET | 400  | Can't process the request because the required parameter {paramName} is missing.                |
 | Caller has insufficient permission                                            | GET | 403  | Access denied                                                                                    |
-| Trust relationship is not set up on target tenant                             | GET      | 422  | There is no Cross-Tenant relationship established for partner {siteUrl} and role {soure/target}. |
-| Migration task doesn't exist                                                  | GET | 404  | The migration task {id} could not be found.                                                      |
+| Trust relationship isn't set up on target tenant                             | GET      | 422  | There's no Cross-Tenant relationship established for partner {siteUrl} and role {soure/target}. |
+| Migration task doesn't exist                                                  | GET | 404  | The migration task {ID} couldn't be found.                                                      |

@@ -17,20 +17,20 @@ This complex type encapsulates the parameters necessary to migrate a specific gr
 
 | Property               | Type              | Description
 |:---------------------- |:----------------- |:-----------------------------------------------
-| targetOrganizationId     | guid              | The unique Entra companyId of the target organization to which the source resource needs to be migrated. Only on OneDrive for Business and SharePoint.
-| targetOrganizationHost   | string            | The root, admin or mysite host of the specific multigeo instance of the target organization where the resource needs to be migrated (to ensure data residency and compliance). Not required for single-geo target organizations or if the migration is to the default GEO of a multi-geo target organization. Optional. Only on OneDrive for Business and SharePoint.
-| targetDataLocationCode   | string            | The string in Entra representing the geographic location (eg. `JPN`, `NAM`) of the target organization where the resource needs to be migrated (to ensure data residency and compliance).  Not required for single-geo target organizations or if the migration is to the default GEO of a multi-geo target organization. Optional. Only on OneDrive for Business and SharePoint.
-| preferredStartDateTime | dateTimeOffset    | Allows the sharePointMigrationTask to start some time in future as opposed to as-soon-as-possible (default). Optional. Only on OneDrive for Business and SharePoint.
-| preferredLatestStartDateTime | dateTimeOffset    | If the sharePointMigrationTask does not start by this time, it is automatically cancelled. Must be greater than the preferredStartDateTime if present. Optional. Only on OneDrive for Business and SharePoint.
-| validateOnly           | boolean           | Indicates if this is an actual migration task or is it doing validation only. If not present, it is assumed to be false (i.e., the default is a real migration). Optional. Only on OneDrive for Business and SharePoint.
-| sourceSiteUrl            | string            | The SharePoint URL of the source site. Optional. Exactly one of sourceSiteId or sourceUrl must be specified. If both or neither are specified, it is an error. Only on OneDrive for Business and SharePoint.
-| targetSiteUrl            | string            | The SharePoint URL of the target site. Only on OneDrive for Business and SharePoint.
+| targetOrganizationId     | guid              | The unique Microsoft Entra companyId of the target organization to which the source resource needs to be migrated. Only on OneDrive and SharePoint.
+| targetOrganizationHost   | string            | The root, admin, or my site host of the specific multigeo instance of the target organization where the resource needs to be migrated (to ensure data residency and compliance). Not required for single-geo target organizations or if the migration is to the default GEO of a multi-geo target organization. Optional. Only on OneDrive and SharePoint.
+| targetDataLocationCode   | string            | The string in Microsoft Entra representing the geographic location (for example, `JPN`, `NAM`) of the target organization where the resource needs to be migrated (to ensure data residency and compliance).  Not required for single-geo target organizations or if the migration is to the default GEO of a multi-geo target organization. Optional. Only on OneDrive and SharePoint.
+| preferredStartDateTime | dateTimeOffset    | Allows the sharePointMigrationTask to start some time in future as opposed to as-soon-as-possible (default). Optional. Only on OneDrive and SharePoint.
+| preferredLatestStartDateTime | dateTimeOffset    | If the sharePointMigrationTask doesn't start by this time, it's automatically canceled. Must be greater than the preferredStartDateTime if present. Optional. Only on OneDrive and SharePoint.
+| validateOnly           | boolean           | Indicates if this task is an actual migration task or is it doing validation only. If not present, it's assumed to be false (that is, the default is a real migration). Optional. Only on OneDrive and SharePoint.
+| sourceSiteUrl            | string            | The SharePoint URL of the source site. Optional. Exactly one of sourceSiteId or sourceUrl must be specified. If both or neither are specified, it's an error. Only on OneDrive and SharePoint.
+| targetSiteUrl            | string            | The SharePoint URL of the target site. Only on OneDrive and SharePoint.
 | sourceGroupIdentity      | [groupIdentity]   | The identity of the source group in the source tenant, it includes mail nickname.
 | targetGroupIdentity      | [groupIdentity]   | The identity of the target group in the target tenant, it includes mail nickname.
 
 ## JSON Representation
 
-Here is a JSON representation of a **SharePointGroupMigrationTaskParameters** resource.
+Here's a JSON representation of a **SharePointGroupMigrationTaskParameters** resource.
 
 ```json
 {
