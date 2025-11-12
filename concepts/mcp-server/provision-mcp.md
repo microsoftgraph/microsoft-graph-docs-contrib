@@ -1,10 +1,10 @@
 ---
 title: Set Up and Manage the Microsoft MCP Server for Enterprise in Your Tenant
 description: "Learn how to provision and manage the Microsoft MCP Server for Enterprise in your tenant and supported Microsoft-owned MCP Clients."
-author: ombongifaith
-ms.author: FaithOmbongi
+author: FaithOmbongi
+ms.author: ombongifaith
 ms.reviewer: Licantrop0
-ms.service: enterprise-mcp-server
+ms.service: entra-id
 ms.topic: install-set-up-deploy
 ms.date: 10/28/2025
 
