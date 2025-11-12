@@ -27,7 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/webapplicationfirewallprovider-get-permissions.md)]
 
-[!INCLUDE [rbac-riskprevention-apis-read](../includes/rbac-for-apis/rbac-riskprevention-apis-read.md)]
+[!INCLUDE [rbac-wafprotection-apis-read](../includes/rbac-for-apis/rbac-wafprotection-apis-read.md)]
 
 ## HTTP request
 

@@ -30,7 +30,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/riskpreventioncontainer-post-webapplicationfirewallproviders-permissions.md)]
 
-[!INCLUDE [rbac-riskprevention-apis-write](../includes/rbac-for-apis/rbac-riskprevention-apis-write.md)]
+[!INCLUDE [rbac-wafprotection-apis-write](../includes/rbac-for-apis/rbac-wafprotection-apis-write.md)]
 
 ## HTTP request
 
