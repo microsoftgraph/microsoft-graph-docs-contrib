@@ -4,9 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Notes
+Import-Module Microsoft.Graph.Sites
 
-# A UPN can also be used as -UserId.
-Remove-MgUserOnenotePage -UserId $userId -OnenotePageId $onenotePageId
+Remove-MgSitePage -SiteId $siteId -BaseSitePageId $baseSitePageId
 
 ```

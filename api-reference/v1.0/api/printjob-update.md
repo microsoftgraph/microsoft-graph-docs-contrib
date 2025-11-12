@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PATCH /print/printers/{printerId}/jobs/{printJobId}
 ```
 
@@ -58,7 +58,7 @@ If successful, this method returns a `200 OK` response code with an updated [pri
   "name": "update_printjob"
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/v1.0/print/printers/{printerId}/jobs/{printJobId}
 Content-Type: application/json
 
@@ -135,7 +135,7 @@ Content-Type: application/json
   "@odata.type": "microsoft.graph.printJob"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
