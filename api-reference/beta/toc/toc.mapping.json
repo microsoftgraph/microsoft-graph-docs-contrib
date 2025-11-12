@@ -3358,6 +3358,8 @@
                   "name": "Send notification to multiple users in bulk",
                   "href": "../../api/teamwork-sendactivitynotificationtorecipients.md"
                 }
+              ]
+            }
           ],
           "complexTypes": [
             "forwardToChatResult"
@@ -3516,7 +3518,7 @@
       ]
     }
   ],
-      "resourceOverviews": [
+  "resourceOverviews": [
     {
       "resource": "federatedIdentityCredential",
       "overview": "../../resources/federatedidentitycredentials-overview.md"
@@ -3524,7 +3526,8 @@
     {
       "resource": "subjectRightsRequest",
       "overview": "../../resources/subjectrightsrequest-subjectrightsrequestapioverview.md"
-    },
+    }
+    ,
     {
       "resource": "partnerSecurityAlert",
       "overview": "../../resources/partner-security-partnersecurityalert-api-overview.md"
