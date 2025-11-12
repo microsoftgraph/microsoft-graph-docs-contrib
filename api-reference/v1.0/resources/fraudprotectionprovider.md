@@ -2,7 +2,7 @@
 title: "fraudProtectionProvider resource type"
 description: "Represents the configuration details for a third-party fraud protection provider."
 author: "more-rasika"
-ms.date: 10/06/2025
+ms.date: 10/23/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
@@ -12,18 +12,15 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Represents the configuration details for a third-party fraud protection provider that integrates with Microsoft Entra External ID to help protect against fraudulent activities during authentication events.
 This is an abstract type that serves as the base resource for specific provider implementations. The following derived types are currently supported.
 
-- [arkosefraudprotectionprovider](../resources/arkosefraudprotectionprovider.md) resource type
+- [arkoseFraudProtectionProvider](../resources/arkosefraudprotectionprovider.md) resource type
 - [humanSecurityFraudProtectionProvider](../resources/humansecurityfraudprotectionprovider.md) resource type
 
 For more information, see [Integrate Microsoft Entra External ID with Arkose Labs and HUMAN Security for fraud protection (preview)](/entra/external-id/customers/how-to-integrate-fraud-protection).
 
 Inherits from [entity](../resources/entity.md).
-
 
 ## Methods
 |Method|Return type|Description|

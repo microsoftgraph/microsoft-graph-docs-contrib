@@ -1,8 +1,8 @@
 ---
 title: "Delete fraudProtectionProviders"
-description: "Delete a fraudProtectionProviders object."
+description: "Delete a fraudProtectionProvider object."
 author: "more-rasika"
-ms.date: 10/06/2025
+ms.date: 10/23/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
@@ -11,8 +11,6 @@ doc_type: apiPageType
 # Delete fraudProtectionProviders
 
 Namespace: microsoft.graph
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete a [fraudProtectionProvider](../resources/fraudprotectionprovider.md) object.
 
@@ -33,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-```http
+``` http
 DELETE /identity/riskPrevention/fraudProtectionProviders/{id}
 ```
 
@@ -56,52 +54,26 @@ If successful, this method returns a `204 No Content` response code.
 ### Request
 
 The following example shows a request.
-# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "delete_fraudprotectionprovider"
 }
 -->
-```http
-DELETE https://graph.microsoft.com/beta/identity/riskprevention/fraudprotectionproviders/d474f94f-0fcf-4224-a165-c1c5bad1600f
+``` http
+DELETE https://graph.microsoft.com/v1.0/identity/riskPrevention/fraudProtectionProviders/d474f94f-0fcf-4224-a165-c1c5bad1600f
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/delete-fraudprotectionprovider-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/delete-fraudprotectionprovider-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/delete-fraudprotectionprovider-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/delete-fraudprotectionprovider-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/delete-fraudprotectionprovider-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/delete-fraudprotectionprovider-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true
 }
 -->
-```http
+``` http
 HTTP/1.1 204 No Content
 ```
 

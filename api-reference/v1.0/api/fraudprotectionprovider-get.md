@@ -2,7 +2,7 @@
 title: "Get fraudProtectionProvider"
 description: "Read the properties and relationships of fraudProtectionProvider object."
 author: "more-rasika"
-ms.date: 08/05/2025
+ms.date: 10/31/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
@@ -11,8 +11,6 @@ doc_type: apiPageType
 # Get fraudProtectionProvider
 
 Namespace: microsoft.graph
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Read the properties and relationships of [fraudProtectionProvider](../resources/fraudprotectionprovider.md) object. The following derived types are currently supported.
 
@@ -36,8 +34,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-```http
-GET /identity/riskprevention/fraudprotectionproviders/{fraudProtectionProviderId}
+``` http
+GET /identity/riskPrevention/fraudProtectionProviders/{fraudProtectionProviderId}
 ```
 
 ## Optional query parameters
@@ -63,41 +61,15 @@ If successful, this method returns a `200 OK` response code and a [fraudProtecti
 ### Request
 
 The following example shows a request.
-# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_fraudprotectionprovider"
 }
 -->
-```http
-GET https://graph.microsoft.com/beta/identity/riskprevention/fraudprotectionproviders/0bb2618b-51f7-4e83-bcb8-84e70f7cf84d
+``` http
+GET https://graph.microsoft.com/v1.0/identity/riskPrevention/fraudProtectionProviders/0bb2618b-51f7-4e83-bcb8-84e70f7cf84d
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-fraudprotectionprovider-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-fraudprotectionprovider-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-fraudprotectionprovider-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-fraudprotectionprovider-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/get-fraudprotectionprovider-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/get-fraudprotectionprovider-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### Response
 
@@ -109,12 +81,12 @@ The following example shows the response with Arkose Fraud Protection Provider.
   "@odata.type": "microsoft.graph.fraudProtectionProvider"
 }
 -->
-```http
+``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/riskPrevention/fraudProtectionProviders/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identity/riskPrevention/fraudProtectionProviders/$entity",
     "@odata.type": "#microsoft.graph.arkoseFraudProtectionProvider",
     "id": "0bb2618b-51f7-4e83-bcb8-84e70f7cf84d",
     "displayName": "Arkose Sign-Up Protection",
@@ -132,12 +104,12 @@ The following example shows the response with HUMAN Security Fraud Protection Pr
   "@odata.type": "microsoft.graph.fraudProtectionProvider"
 }
 -->
-```http
+``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/riskPrevention/fraudProtectionProviders/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identity/riskPrevention/fraudProtectionProviders/$entity",
     "@odata.type": "#microsoft.graph.humanSecurityFraudProtectionProvider",
     "id": "0bb2618b-51f7-4e83-bcb8-84e70f7cf84d",
     "displayName": "HUMAN Security Sign-Up Protection",
