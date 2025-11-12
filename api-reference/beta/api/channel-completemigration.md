@@ -1,5 +1,5 @@
 ---
-title: "channel: completeMigration"
+title: "Channel: completeMigration"
 description: "Complete the migration of external messages by removing migration mode from a channel."
 ms.localizationpriority: medium
 author: "RamjotSingh"
@@ -8,7 +8,7 @@ doc_type: apiPageType
 ms.date: 04/05/2024
 ---
 
-# channel: completeMigration
+# Channel: completeMigration
 
 Namespace: microsoft.graph
 
@@ -18,10 +18,10 @@ Complete migration on existing channels or new channels. Previously, users were 
 
 **Points to note:**
 
-1) When a channel is created in migration mode for the initial import flow, the new API `Migration mode` from a [channel](../resources/channel.md) in a team is updated to **Completed** instead of being dropped, and the state is marked to chat/channels permanently. `Migration mode` is a special state that prevents certain operations, like sending messages and adding members, during the data migration process. Parent team will not be marked with migration mode.
-As team cannot enter migration mode. its children channels can (general, standard, private and shared).
+1) When a channel is created in migration mode for the initial import flow, the new API `Migration mode` from a [channel](../resources/channel.md) in a team is updated to **Completed** instead of being dropped, and the state is marked to chat/channels permanently. `Migration mode` is a special state that prevents certain operations, like sending messages and adding members, during the data migration process. Parent team won't be marked with migration mode.
+As team can't enter migration mode. its children channels can (general, standard, private and shared).
 
-2) For **existing** channels which are already in migration mode, the API completes the message migration process by populating `migration mode` to `Completed` for a [channel](../resources/channel.md) in a team.
+2) For **existing** channels, which are already in migration mode, the API completes the message migration process by populating `migration mode` to `Completed` for a [channel](../resources/channel.md) in a team.
 
 After a **completeMigration** request is made for existing or new channels, you can still import more messages into the team by calling [start migration on channel](channel-startmigration.md).
 
@@ -84,7 +84,7 @@ The following example shows the response.
 HTTP/1.1 204 No Content
 ```
 
-## Example 2: Complete migration when channel is not in migration mode
+## Example 2: Complete migration when channel isn't in migration mode
 
 #### Request
 
