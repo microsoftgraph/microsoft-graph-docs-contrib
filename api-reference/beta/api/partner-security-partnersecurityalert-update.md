@@ -16,7 +16,7 @@ Namespace: microsoft.graph.partner.security
 
 Update the properties of a [partnerSecurityAlert](../resources/partner-security-partnersecurityalert.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

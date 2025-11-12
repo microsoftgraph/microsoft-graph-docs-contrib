@@ -6,6 +6,7 @@ ms.localizationpriority: high
 ms.custom: scenarios:getting-started
 doc_type: conceptualPageType
 ms.date: 03/14/2025
+ms.topic: concept-article
 ---
 
 # Using app folder in OneDrive and SharePoint

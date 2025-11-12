@@ -3,6 +3,170 @@
       {
         "ChangeList": [
           {
+            "Id": "51bec7fb-1c22-4485-bef5-4ac72a4b8258",
+            "ApiChange": "Member",
+            "ChangedApiName": "updateRequested",
+            "ChangeType": "Addition",
+            "Description": "Added the `updateRequested` member to the **protectionRuleStatus** enumeration.",
+            "Target": "protectionRuleStatus"
+          },
+          {
+            "Id": "51bec7fb-1c22-4485-bef5-4ac72a4b8258",
+            "ApiChange": "Member",
+            "ChangedApiName": "deleteRequested",
+            "ChangeType": "Addition",
+            "Description": "Added the `deleteRequested` member to the **protectionRuleStatus** enumeration.",
+            "Target": "protectionRuleStatus"
+          },
+          {
+            "Id": "51bec7fb-1c22-4485-bef5-4ac72a4b8258",
+            "ApiChange": "Enumeration",
+            "ChangedApiName": "protectionSource",
+            "ChangeType": "Addition",
+            "Description": "Added the **protectionSource** enumeration type.",
+            "Target": "protectionSource"
+          },
+          {
+            "Id": "51bec7fb-1c22-4485-bef5-4ac72a4b8258",
+            "ApiChange": "Property",
+            "ChangedApiName": "protectionSources",
+            "ChangeType": "Addition",
+            "Description": "Added the **protectionSources** property to the [protectionUnitBase](https://learn.microsoft.com/en-us/graph/api/resources/protectionUnitBase?view=graph-rest-1.0) resource.",
+            "Target": "protectionUnitBase"
+          },
+          {
+            "Id": "51bec7fb-1c22-4485-bef5-4ac72a4b8258",
+            "ApiChange": "Property",
+            "ChangedApiName": "protectionSources",
+            "ChangeType": "Addition",
+            "Description": "Added the **protectionSources** property to the [driveProtectionUnit](https://learn.microsoft.com/en-us/graph/api/resources/driveProtectionUnit?view=graph-rest-1.0) resource.",
+            "Target": "driveProtectionUnit"
+          },
+          {
+            "Id": "51bec7fb-1c22-4485-bef5-4ac72a4b8258",
+            "ApiChange": "Property",
+            "ChangedApiName": "protectionSources",
+            "ChangeType": "Addition",
+            "Description": "Added the **protectionSources** property to the [mailboxProtectionUnit](https://learn.microsoft.com/en-us/graph/api/resources/mailboxProtectionUnit?view=graph-rest-1.0) resource.",
+            "Target": "mailboxProtectionUnit"
+          },
+          {
+            "Id": "51bec7fb-1c22-4485-bef5-4ac72a4b8258",
+            "ApiChange": "Property",
+            "ChangedApiName": "protectionSources",
+            "ChangeType": "Addition",
+            "Description": "Added the **protectionSources** property to the [siteProtectionUnit](https://learn.microsoft.com/en-us/graph/api/resources/siteProtectionUnit?view=graph-rest-1.0) resource.",
+            "Target": "siteProtectionUnit"
+          },
+          {
+            "Id": "51bec7fb-1c22-4485-bef5-4ac72a4b8258",
+            "ApiChange": "Method",
+            "ChangedApiName": "deleteAndUnprotect",
+            "ChangeType": "Addition",
+            "Description": "Added the [deleteAndUnprotect](https://learn.microsoft.com/en-us/graph/api/protectionRuleBase-deleteAndUnprotect?view=graph-rest-1.0) method to the [protectionRuleBase](https://learn.microsoft.com/en-us/graph/api/resources/protectionRuleBase?view=graph-rest-1.0) resource.",
+            "Target": "protectionRuleBase"
+          },
+          {
+            "Id": "51bec7fb-1c22-4485-bef5-4ac72a4b8258",
+            "ApiChange": "Method",
+            "ChangedApiName": "protectionRuleBase",
+            "ChangeType": "Addition",
+            "Description": "Added the [update](https://learn.microsoft.com/en-us/graph/api/protectionrulebase-update?view=graph-rest-1.0) operation to the [protectionRuleBase](https://learn.microsoft.com/en-us/graph/api/resources/protectionRuleBase?view=graph-rest-1.0) resource.",
+            "Target": "protectionRuleBase"
+          }
+        ],
+        "Id": "51bec7fb-1c22-4485-bef5-4ac72a4b8258",
+        "Cloud": "Prod",
+        "Version": "v1.0",
+        "CreatedDateTime": "2025-10-06T09:04:09.9482742Z",
+        "WorkloadArea": "Backup restore",
+        "SubArea": ""
+      },
+      {
+        "ChangeList": [
+          {
+            "Id": "4cf82b20-c864-4b2b-b34a-17d6dc80dccc",
+            "ApiChange": "Resource",
+            "ChangedApiName": "protectionPolicyArtifactCount",
+            "ChangeType": "Addition",
+            "Description": "Added the [protectionPolicyArtifactCount](https://learn.microsoft.com/en-us/graph/api/resources/protectionPolicyArtifactCount?view=graph-rest-beta) resource type.",
+            "Target": "protectionPolicyArtifactCount"
+          },
+          {
+            "Id": "4cf82b20-c864-4b2b-b34a-17d6dc80dccc",
+            "ApiChange": "Property",
+            "ChangedApiName": "isEnabled",
+            "ChangeType": "Addition",
+            "Description": "Added the **isEnabled** property to the [protectionPolicyBase](https://learn.microsoft.com/en-us/graph/api/resources/protectionPolicyBase?view=graph-rest-beta) resource.",
+            "Target": "protectionPolicyBase"
+          },
+          {
+            "Id": "4cf82b20-c864-4b2b-b34a-17d6dc80dccc",
+            "ApiChange": "Property",
+            "ChangedApiName": "protectionPolicyArtifactCount",
+            "ChangeType": "Addition",
+            "Description": "Added the **protectionPolicyArtifactCount** property to the [protectionPolicyBase](https://learn.microsoft.com/en-us/graph/api/resources/protectionPolicyBase?view=graph-rest-beta) resource.",
+            "Target": "protectionPolicyBase"
+          },
+          {
+            "Id": "4cf82b20-c864-4b2b-b34a-17d6dc80dccc",
+            "ApiChange": "Property",
+            "ChangedApiName": "isEnabled",
+            "ChangeType": "Addition",
+            "Description": "Added the **isEnabled** property to the [exchangeProtectionPolicy](https://learn.microsoft.com/en-us/graph/api/resources/exchangeProtectionPolicy?view=graph-rest-beta) resource.",
+            "Target": "exchangeProtectionPolicy"
+          },
+          {
+            "Id": "4cf82b20-c864-4b2b-b34a-17d6dc80dccc",
+            "ApiChange": "Property",
+            "ChangedApiName": "protectionPolicyArtifactCount",
+            "ChangeType": "Addition",
+            "Description": "Added the **protectionPolicyArtifactCount** property to the [exchangeProtectionPolicy](https://learn.microsoft.com/en-us/graph/api/resources/exchangeProtectionPolicy?view=graph-rest-beta) resource.",
+            "Target": "exchangeProtectionPolicy"
+          },
+          {
+            "Id": "4cf82b20-c864-4b2b-b34a-17d6dc80dccc",
+            "ApiChange": "Property",
+            "ChangedApiName": "isEnabled",
+            "ChangeType": "Addition",
+            "Description": "Added the **isEnabled** property to the [oneDriveForBusinessProtectionPolicy](https://learn.microsoft.com/en-us/graph/api/resources/oneDriveForBusinessProtectionPolicy?view=graph-rest-beta) resource.",
+            "Target": "oneDriveForBusinessProtectionPolicy"
+          },
+          {
+            "Id": "4cf82b20-c864-4b2b-b34a-17d6dc80dccc",
+            "ApiChange": "Property",
+            "ChangedApiName": "protectionPolicyArtifactCount",
+            "ChangeType": "Addition",
+            "Description": "Added the **protectionPolicyArtifactCount** property to the [oneDriveForBusinessProtectionPolicy](https://learn.microsoft.com/en-us/graph/api/resources/oneDriveForBusinessProtectionPolicy?view=graph-rest-beta) resource.",
+            "Target": "oneDriveForBusinessProtectionPolicy"
+          },
+          {
+            "Id": "4cf82b20-c864-4b2b-b34a-17d6dc80dccc",
+            "ApiChange": "Property",
+            "ChangedApiName": "isEnabled",
+            "ChangeType": "Addition",
+            "Description": "Added the **isEnabled** property to the [sharePointProtectionPolicy](https://learn.microsoft.com/en-us/graph/api/resources/sharePointProtectionPolicy?view=graph-rest-beta) resource.",
+            "Target": "sharePointProtectionPolicy"
+          },
+          {
+            "Id": "4cf82b20-c864-4b2b-b34a-17d6dc80dccc",
+            "ApiChange": "Property",
+            "ChangedApiName": "protectionPolicyArtifactCount",
+            "ChangeType": "Addition",
+            "Description": "Added the **protectionPolicyArtifactCount** property to the [sharePointProtectionPolicy](https://learn.microsoft.com/en-us/graph/api/resources/sharePointProtectionPolicy?view=graph-rest-beta) resource.",
+            "Target": "sharePointProtectionPolicy"
+          }
+        ],
+        "Id": "4cf82b20-c864-4b2b-b34a-17d6dc80dccc",
+        "Cloud": "Prod",
+        "Version": "beta",
+        "CreatedDateTime": "2025-08-21T06:57:08.0896659Z",
+        "WorkloadArea": "Backup storage",
+        "SubArea": ""
+      },
+      {
+        "ChangeList": [
+          {
             "Id": "85511b11-30c4-4fb6-a4f7-c73ea38321a6",
             "ApiChange": "Enumeration",
             "ChangedApiName": "restoreJobType",
@@ -1581,6 +1745,88 @@
       "CreatedDateTime": "2025-06-27T01:08:05.3436315Z",
       "WorkloadArea": "EnhancedRestore",
       "SubArea": "Backup and Restore"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "8662c176-3414-42a2-bf63-99822f367120",
+          "ApiChange": "Member",
+          "ChangedApiName": "offboardRequested",
+          "ChangeType": "Addition",
+          "Description": "Added the `offboardRequested` member to the **protectionUnitStatus** enumeration.",
+          "Target": "protectionUnitStatus"
+        },
+        {
+          "Id": "8662c176-3414-42a2-bf63-99822f367120",
+          "ApiChange": "Member",
+          "ChangedApiName": "offboarded",
+          "ChangeType": "Addition",
+          "Description": "Added the `offboarded` member to the **protectionUnitStatus** enumeration.",
+          "Target": "protectionUnitStatus"
+        },
+        {
+          "Id": "8662c176-3414-42a2-bf63-99822f367120",
+          "ApiChange": "Member",
+          "ChangedApiName": "cancelOffboardRequested",
+          "ChangeType": "Addition",
+          "Description": "Added the `cancelOffboardRequested` member to the **protectionUnitStatus** enumeration.",
+          "Target": "protectionUnitStatus"
+        },
+        {
+          "Id": "8662c176-3414-42a2-bf63-99822f367120",
+          "ApiChange": "Property",
+          "ChangedApiName": "offboardRequestedDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **offboardRequestedDateTime** property to the [protectionUnitBase](https://learn.microsoft.com/en-us/graph/api/resources/protectionUnitBase?view=graph-rest-1.0) resource.",
+          "Target": "protectionUnitBase"
+        },
+        {
+          "Id": "8662c176-3414-42a2-bf63-99822f367120",
+          "ApiChange": "Property",
+          "ChangedApiName": "offboardRequestedDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **offboardRequestedDateTime** property to the [siteProtectionUnit](https://learn.microsoft.com/en-us/graph/api/resources/siteProtectionUnit?view=graph-rest-1.0) resource.",
+          "Target": "siteProtectionUnit"
+        },
+        {
+          "Id": "8662c176-3414-42a2-bf63-99822f367120",
+          "ApiChange": "Property",
+          "ChangedApiName": "offboardRequestedDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **offboardRequestedDateTime** property to the [mailboxProtectionUnit](https://learn.microsoft.com/en-us/graph/api/resources/mailboxProtectionUnit?view=graph-rest-1.0) resource.",
+          "Target": "mailboxProtectionUnit"
+        },
+        {
+          "Id": "8662c176-3414-42a2-bf63-99822f367120",
+          "ApiChange": "Property",
+          "ChangedApiName": "offboardRequestedDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **offboardRequestedDateTime** property to the [driveProtectionUnit](https://learn.microsoft.com/en-us/graph/api/resources/driveProtectionUnit?view=graph-rest-1.0) resource.",
+          "Target": "driveProtectionUnit"
+        },
+        {
+          "Id": "8662c176-3414-42a2-bf63-99822f367120",
+          "ApiChange": "Method",
+          "ChangedApiName": "cancelOffboard",
+          "ChangeType": "Addition",
+          "Description": "Added the [cancelOffboard](https://learn.microsoft.com/en-us/graph/api/protectionUnitBase-cancelOffboard?view=graph-rest-1.0) method to the [protectionUnitBase](https://learn.microsoft.com/en-us/graph/api/resources/protectionUnitBase?view=graph-rest-1.0) resource.",
+          "Target": "protectionUnitBase"
+        },
+        {
+          "Id": "8662c176-3414-42a2-bf63-99822f367120",
+          "ApiChange": "Method",
+          "ChangedApiName": "offboard",
+          "ChangeType": "Addition",
+          "Description": "Added the [offboard](https://learn.microsoft.com/en-us/graph/api/protectionUnitBase-offboard?view=graph-rest-1.0) method to the [protectionUnitBase](https://learn.microsoft.com/en-us/graph/api/resources/protectionUnitBase?view=graph-rest-1.0) resource.",
+          "Target": "protectionUnitBase"
+        }
+      ],
+      "Id": "8662c176-3414-42a2-bf63-99822f367120",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-09-24T01:08:05.3436315Z",
+      "WorkloadArea": "Backup storage",
+      "SubArea": ""
     }
   ]
 }

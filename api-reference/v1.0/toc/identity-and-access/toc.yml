@@ -576,9 +576,9 @@ items:
         href: ../../resources/serviceprincipalidentity.md
       - name: User identity
         href: ../../resources/useridentity.md
-      - name: User last sign in recommendation insight setting
+      - name: User last sign-in recommendation insight setting
         href: ../../resources/userlastsigninrecommendationinsightsetting.md
-      - name: User sign in insight
+      - name: User sign-in insight
         href: ../../resources/usersignininsight.md
   - name: Consent requests
     items:
@@ -1473,6 +1473,8 @@ items:
       href: ../../resources/onattributecollectionsubmitlistener.md
     - name: On authentication method load start listener
       href: ../../resources/onauthenticationmethodloadstartlistener.md
+    - name: On email OTP send listener
+      href: ../../resources/onemailotpsendlistener.md
     - name: On interactive auth flow start listener
       href: ../../resources/oninteractiveauthflowstartlistener.md
     - name: On token issuance start listener
@@ -1900,6 +1902,8 @@ items:
       href: ../../resources/onattributecollectionstartcustomextension.md
     - name: On attribute collection submit custom extension
       href: ../../resources/onattributecollectionsubmitcustomextension.md
+    - name: On OTP send custom extension
+      href: ../../resources/onotpsendcustomextension.md
     - name: On token issuance start custom extension
       href: ../../resources/ontokenissuancestartcustomextension.md
   - name: Data policy operation

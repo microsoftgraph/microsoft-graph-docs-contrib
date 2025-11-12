@@ -52,7 +52,7 @@ An app can subscribe to changes on the Microsoft Graph resources listed in the t
 > [!NOTE]
 > Many resources have limits or quotas on how many subscriptions can be made against that resource.  When exceeding that limit, attempts to create a subscription will result in a `403 Forbidden` error response. The **message** property of the error response will explain the limit that has been exceeded.
 
-Some of these resources support rich notifications (notifications with resource data). For more information about resources that support rich notifications, see [Set up change notifications that include resource data](/graph/webhooks-with-resource-data#supported-resources).
+Some of these resources support rich notifications (notifications with resource data). For their details, see [Set up change notifications that include resource data](/graph/change-notifications-with-resource-data#supported-resources).
 
 [aiInteraction]: /graph/api/resources/aiinteraction
 [channel]: /graph/api/resources/channel

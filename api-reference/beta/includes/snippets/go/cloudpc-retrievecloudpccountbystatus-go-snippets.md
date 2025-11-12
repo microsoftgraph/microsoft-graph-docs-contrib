@@ -18,15 +18,15 @@ import (
 
 requestCustomFilter := "contains(tolower(managedDeviceName), 'a') or contains(tolower(imageDisplayName), 'a') or contains(tolower(userPrincipalName), 'a')"
 
-requestParameters := &graphdevicemanagement.VirtualEndpointCloudPCsItemRequestBuilderGetQueryParameters{
+requestParameters := &graphdevicemanagement.VirtualEndpointCloudPCsRetrieveCloudPcCountByStatusRequestBuilderGetQueryParameters{
 	CustomFilter: &requestCustomFilter,
 }
-configuration := &graphdevicemanagement.VirtualEndpointCloudPCsItemRequestBuilderGetRequestConfiguration{
+configuration := &graphdevicemanagement.VirtualEndpointCloudPCsRetrieveCloudPcCountByStatusRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
-cloudPCs, err := graphClient.DeviceManagement().VirtualEndpoint().CloudPCs().ByCloudPCId("cloudPC-id").Get(context.Background(), configuration)
+retrieveCloudPcCountByStatus, err := graphClient.DeviceManagement().VirtualEndpoint().CloudPCs().RetrieveCloudPcCountByStatus().GetAsRetrieveCloudPcCountByStatusGetResponse(context.Background(), configuration)
 
 
 ```

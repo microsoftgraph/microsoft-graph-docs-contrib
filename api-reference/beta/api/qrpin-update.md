@@ -23,9 +23,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { 
   "blockType": "permissions", 
+  "name": "qrpin_update", 
   "requestUrls": ["PATCH /users/{id}/authentication/qrCodePinMethod/pin"]
-} -->
-[!INCLUDE [permissions-table](../includes/permissions/qrpin-update-2-permissions.md)]
+ } -->
+[!INCLUDE [permissions-table](../includes/permissions/qrpin-update-permissions.md)]
 
 [!INCLUDE [rbac-authentication-methods-apis-write-others](../includes/rbac-for-apis/rbac-authentication-methods-apis-write-others.md)]
 

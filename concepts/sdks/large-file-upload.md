@@ -4,6 +4,7 @@ description: "Provides guidance for uploading large files using the Microsoft Gr
 ms.localizationpriority: medium
 author: DarrelMiller
 ms.date: 11/07/2024
+ms.topic: article
 ---
 
 <!-- markdownlint-disable MD024 MD051 -->

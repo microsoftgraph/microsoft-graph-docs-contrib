@@ -24,7 +24,7 @@ For performance reasons, the [create](../api/group-post-groups.md), [get](../api
 This resource supports:
 
 - Adding your data to custom properties as [extensions](/graph/extensibility-overview).
-- Subscribing to [change notifications](/graph/webhooks).
+- Subscribing to [change notifications](/graph/change-notifications-overview).
 - Using [delta query](/graph/delta-query-overview) to track incremental additions, deletions, and updates, by providing a [delta](../api/group-delta.md) function.
 
 > **Microsoft Teams and Microsoft 365 groups support group collaboration**. You can use most of the Microsoft 365 groups API with Microsoft Teams. To create a [team](team.md), first [create group](../api/group-post-groups.md) and then [add a team to it](../api/team-put-teams.md). For details, see the [Microsoft Teams overview](teams-api-overview.md).
@@ -37,9 +37,9 @@ This resource supports:
 | [Create](../api/group-post-groups.md) | [group](group.md) | Create a new group as specified. It can be a Microsoft 365 group, dynamic group, security group, or team. |
 | [Get](../api/group-get.md) | [group](group.md) | Read properties and relationships of group object. |
 | [Update](../api/group-update.md) | None | Update the properties of a group object. |
+| [Upsert](../api/group-upsert.md) | [group](group.md) | Create a new group if it doesn't exist, or update the properties of an existing group. |
 | [Delete](../api/group-delete.md) | None | Delete group object. |
 | [Get delta](../api/group-delta.md) | [group](group.md) collection | Get incremental changes for groups. |
-| [Upsert](../api/group-upsert.md) | [group](group.md) | Create a new group if it doesn't exist, or update the properties of an existing group. |
 | **Group management** |  |  |
 | [List members](../api/group-list-members.md) | [directoryObject](directoryobject.md) collection | Get the users and groups that are direct members of this group from the **members** navigation property. |
 | [Add member](../api/group-post-members.md) | [directoryObject](directoryobject.md) | Add a member to this group by posting to the **members** navigation property (supported for security groups and Microsoft 365 groups only). |

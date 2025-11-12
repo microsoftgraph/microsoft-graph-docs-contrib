@@ -21,7 +21,7 @@ The maximum number of attendees included in an **event**, and the maximum number
 This resource supports:
 
 - Adding your own data to custom properties as [extensions](/graph/extensibility-overview).
-- Subscribing to [change notifications](/graph/webhooks).
+- Subscribing to [change notifications](/graph/change-notifications-overview).
 - Using [delta query](/graph/delta-query-overview) to track incremental additions, deletions, and updates, by providing a [delta](../api/event-delta.md) function.
 
 > **Note:** There are a few minor differences in the way you can interact with user calendars, group calendars, and their events:

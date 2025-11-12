@@ -5,6 +5,7 @@ author: "MSGraphDocsVteam"
 ms.localizationpriority: high
 ms.date: 07/08/2024
 ms.custom: sfi-ga-nochange
+ms.topic: article
 ---
 
 # Changelog for Microsoft Graph (Archive)
@@ -127,9 +128,9 @@ This article contains archived changelog entries for Microsoft Graph. For curren
 
 | **Change type** | **Version** | **Description**                                                                                                             |
 |:----------------|:------------|:----------------------------------------------------------------------------------------------------------------------------|
-| Addition        | beta        | Added the **state** property to the [externalConnection](/graph/api/resources/externalconnection?view=graph-rest-beta&preserve-view=true) resource. |
-| Addition        | beta        | Added the [externalGroup](/graph/api/resources/externalgroup?view=graph-rest-beta&preserve-view=true) resource.                                 |
-| Addition        | beta        | Added the [externalGroupMember](/graph/api/resources/externalgroupmember?view=graph-rest-beta&preserve-view=true) resource.                     |
+| Addition        | beta        | Added the **state** property to the [externalConnection](/graph/api/resources/externalconnectors-externalconnection?view=graph-rest-1.0) resource. |
+| Addition        | beta        | Added the [externalGroup](/graph/api/resources/externalconnectors-externalgroup?view=graph-rest-1.0) resource.                                 |
+| Addition        | beta        | Added the [externalGroupMember](/graph/api/resources/externalconnectors-externalgroupmember?view=graph-rest-beta) resource.                     |
 | Addition        | beta | Search more types in OneDrive and SharePoint: **drive**, **list**, **listItem**, and **site**. See [more details here](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true#scope-search-based-on-entity-types).|
 | Addition        | beta | Identify [selected properties](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true#get-selected-properties) to return in search results.|
 | Addition        | beta | [Sort](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true#sort-search-results) search results from OneDrive and SharePoint by specifying **sortProperties** in a [searchRequest](/graph/api/resources/searchRequest?view=graph-rest-beta&preserve-view=true) resource.|
@@ -418,7 +419,7 @@ Adding PSTN and Direct Routing call reports to Microsoft Graph (beta).
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | beta | Added the **profileCardProperties** navigation property to the [organizationSettings](/graph/api/resources/organizationsettings?view=graph-rest-beta&preserve-view=true) entity. |
-| Addition | beta | Added the **profileCardProperty** entity and the following operations: <br/> [List](/graph/api/organizationsettings-list-profilecardproperties) <br/> [Create](/graph/api/organizationsettings-post-profilecardproperties) <br/> [Get](/graph/api/profilecardproperty-get?view=graph-rest-beta&preserve-view=true) <br/> [Update](/graph/api/profilecardproperty-update?view=graph-rest-beta&preserve-view=true) <br/> [Delete](/graph/api/profilecardproperty-delete). |
+| Addition | beta | Added the **profileCardProperty** entity and the following operations: <br/> [List](/graph/api/peopleadminsettings-list-profilecardproperties?view=graph-rest-1.0) <br/> [Create](/graph/api/peopleadminsettings-post-profilecardproperties?view=graph-rest-1.0) <br/> [Get](/graph/api/profilecardproperty-get?view=graph-rest-beta&preserve-view=true) <br/> [Update](/graph/api/profilecardproperty-update?view=graph-rest-beta&preserve-view=true) <br/> [Delete](/graph/api/profilecardproperty-delete). |
 
 ### Sites and lists | Taxonomy
 
@@ -574,9 +575,9 @@ Adding PSTN and Direct Routing call reports to Microsoft Graph (beta).
 
 | **Change type** | **Version** | **Description**                                                                                                                                 |
 |:----------------|:------------|:------------------------------------------------------------------------------------------------------------------------------------------------|
-| Addition        | beta        | Added the **aliases**, **isRefinable**, and **labels** properties to the [property](/graph/api/resources/property?view=graph-rest-beta&preserve-view=true) entity. |
-| Changed         | beta        | The maximum number of properties on a [schema](/graph/api/resources/schema?view=graph-rest-beta&preserve-view=true) entity has been increased to 128.              |
-| Addition        | beta        | Added the [get externalItem](/graph/api/externalitem-get?view=graph-rest-beta&preserve-view=true) operation.                                                       |
+| Addition        | beta        | Added the **aliases**, **isRefinable**, and **labels** properties to the [property](/graph/api/resources/externalconnectors-property?view=graph-rest-1.0) entity. |
+| Changed         | beta        | The maximum number of properties on a [schema](/graph/api/resources/externalconnectors-schema?view=graph-rest-1.0) entity has been increased to 128.              |
+| Addition        | beta        | Added the [get externalItem](/graph/api/externalconnectors-externalitem-get?view=graph-rest-1.0) operation.                                                       |
 
 
 ### Security
@@ -610,8 +611,8 @@ Adding PSTN and Direct Routing call reports to Microsoft Graph (beta).
 | Addition | beta | Added the [regionalAndLanguageSettings-update](/graph/api/regionalandlanguagesettings-update) function on the [regionalAndLanguageSettings](/graph/api/resources/regionalandlanguagesettings) resource.|
 | Change | beta | Added the [regionalAndLanguageSettings](/graph/api/resources/regionalandlanguagesettings) relationship to the [userSettings](/graph/api/resources/userSettings) resource.|
 | Change | beta | Updated [User](/graph/api/resources/user?view=graph-rest-beta&preserve-view=true) resource with clarification between [mailboxSettings](/graph/api/resources/mailboxsettings?view=graph-rest-beta&preserve-view=true) and [regionalAndLanguageSettings](/graph/api/resources/regionalandlanguagesettings).|
-|Addition | Beta | Added the new **userPurpose** property to [mailboxSettings](/graph/api/resources/mailboxsettings?view=graph-rest-beta&preserve-view=true). See [userPurpose resource type](/graph/api/resources/userPurpose?view=graph-rest-beta&preserve-view=true) for information on the supported use cases.|
-|Addition | Beta | Added new [userPurpose](/graph/api/resources/userPurpose?view=graph-rest-beta&preserve-view=true) complex type.|
+|Addition | Beta | Added the new **userPurpose** property to [mailboxSettings](/graph/api/resources/mailboxsettings?view=graph-rest-beta&preserve-view=true). See [userPurpose resource type](/graph/api/resources/mailboxsettings?view=graph-rest-1.0) for information on the supported use cases.|
+|Addition | Beta | Added new [userPurpose](/graph/api/resources/mailboxsettings?view=graph-rest-1.0) complex type.|
 
 ### Devices and apps | Cloud printing
 
@@ -648,7 +649,7 @@ Added new APIs and resources for subscribing to and retrieving call records from
 | Addition | v1.0 | Added support for [webhook](change-notifications-overview.md) subscriptions to call records.|
 | Change | v1.0 | Added `frequency60GHz` and `unknownFutureValue` to the **microsoft.graph.callRecords.wifiBand** enum.|
 | Change | v1.0 | Added `voicemail` to the **microsoft.graph.callRecords.serviceRole** enum.|
-| Addition | v1.0 | Added the [List sessions](/graph/api/callrecords-session-list?view=graph-rest-beta&preserve-view=true) API. |
+| Addition | v1.0 | Added the [List sessions](/graph/api/callrecords-callrecord-list-sessions?view=graph-rest-1.0) API. |
 
 ### Devices and apps | Cloud printing
 
@@ -1364,9 +1365,9 @@ Introduced version 1.1 of the Microsoft Graph Toolkit.
 | Addition | v1.0 | Added new delegated and application permissions [GroupMember.Read.All](permissions-reference.md) and [GroupMember.ReadWrite.All](permissions-reference.md) to get and update the [group](/graph/api/resources/group?view=graph-rest-1.0&preserve-view=true) resource.
 | Addition | v1.0 | Added new application permission [Group.Create](permissions-reference.md) to create the **group** resource.
 | Addition | beta and v1.0 | Added the **creationType** property to the [user](/graph/api/resources/user?view=graph-rest-1.0&preserve-view=true) resource.|
-| Addition | v1.0 | Added the [checkMemberObjects](/graph/api/device-checkmemberobjects?view=graph-rest-1.0&preserve-view=true) operation for the [device](/graph/api/resources/device?view=graph-rest-1.0&preserve-view=true) resource. |
-| Addition | v1.0 | Added the [checkMemberObjects](/graph/api/group-checkmemberobjects?view=graph-rest-1.0&preserve-view=true) operation for the [group](/graph/api/resources/group?view=graph-rest-1.0&preserve-view=true) resource. |
-| Addition | v1.0 | Added the [checkMemberObjects](/graph/api/user-checkmemberobjects?view=graph-rest-1.0&preserve-view=true) operation for the [user](/graph/api/resources/user?view=graph-rest-1.0&preserve-view=true) resource. |
+| Addition | v1.0 | Added the [checkMemberObjects](/graph/api/directoryobject-checkmemberobjects?view=graph-rest-1.0) operation for the [device](/graph/api/resources/device?view=graph-rest-1.0&preserve-view=true) resource. |
+| Addition | v1.0 | Added the [checkMemberObjects](/graph/api/directoryobject-checkmemberobjects?view=graph-rest-1.0) operation for the [group](/graph/api/resources/group?view=graph-rest-1.0&preserve-view=true) resource. |
+| Addition | v1.0 | Added the [checkMemberObjects](/graph/api/directoryobject-checkmemberobjects?view=graph-rest-1.0) operation for the [user](/graph/api/resources/user?view=graph-rest-1.0&preserve-view=true) resource. |
 
 ### Identity and access | Identity and sign-in
 
@@ -1406,7 +1407,7 @@ Microsoft Search is now exposing a way to search and index data in Microsoft Gra
 | Addition        | beta        | Added the [Microsoft Search API](search-concept-overview.md) that constitutes [querying](/graph/api/search-query?view=graph-rest-beta&preserve-view=true) and [indexing](/graph/api/resources/indexing-api-overview) capabilities. |
 | Addition        | beta        | Added the [query](/graph/api/search-query?view=graph-rest-beta&preserve-view=true) action. |
 | Addition        | beta        | Added the [searchRequest](/graph/api/resources/searchrequest?view=graph-rest-beta&preserve-view=true), [searchQuery](/graph/api/resources/searchquery?view=graph-rest-beta&preserve-view=true), [searchQueryString](/graph/api/resources/searchquerystring?view=graph-rest-beta&preserve-view=true),[searchResponse](/graph/api/resources/searchresponse?view=graph-rest-beta&preserve-view=true), [searchHitsContainer](/graph/api/resources/searchhitscontainer?view=graph-rest-beta&preserve-view=true), and [searchHit](/graph/api/resources/searchhit?view=graph-rest-beta&preserve-view=true) complex types. |
-| Addition        | beta        | Added the [externalConnection](/graph/api/resources/externalconnection?view=graph-rest-beta&preserve-view=true), [schema](/graph/api/resources/schema?view=graph-rest-beta&preserve-view=true), [externalItem](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true), and [externalFile](/graph/api/resources/externalfile?view=graph-rest-beta&preserve-view=true) entities, and methods exposed by these entities. |
+| Addition        | beta        | Added the [externalConnection](/graph/api/resources/externalconnectors-externalconnection?view=graph-rest-1.0), [schema](/graph/api/resources/externalconnectors-schema?view=graph-rest-1.0), [externalItem](/graph/api/resources/externalconnectors-externalitem?view=graph-rest-1.0), and [externalFile](/graph/api/resources/externalfile?view=graph-rest-beta&preserve-view=true) entities, and methods exposed by these entities. |
 
 ### Teamwork
 
@@ -2958,7 +2959,7 @@ Debut of the places API, which provides rich details for locations in apps.
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | v1.0 | Added the **isMultipleDataLocationsForServicesEnabled** property to the [organization](/graph/api/resources/organization?view=graph-rest-beta&preserve-view=true) resource, which allows apps to verify that a tenant is enabled for multi-geo capabilities. Added the **preferredDataLocation** property to the [group](/graph/api/resources/group?view=graph-rest-beta&preserve-view=true) resource, which allows for setting a preferred data location for a group.|
 | Addition | v1.0 | Added  [onPremisesProvisioningErrors](/graph/api/resources/onpremisesprovisioningerror?view=graph-rest-1.0&preserve-view=true) property to the [User](/graph/api/resources/user?view=graph-rest-1.0&preserve-view=true) and [Group](/graph/api/resources/group?view=graph-rest-1.0&preserve-view=true) entities that represents directory synchronization errors when synchronizing on-premises directories to Azure Active Directory when using Microsoft synchronization product (including Azure AD Connect, DirSync and MIM + Connector).|
-| Addition | v1.0 | Added  [onPremisesExtensionAttributes](/graph/api/resources/onpremisesextensionattributes?view=graph-rest-1.0&preserve-view=true) property to the [User](/graph/api/resources/user?view=graph-rest-1.0&preserve-view=true) entity that contains 15 custom extension attribute properties. For an onPremisesSyncEnabled user, this set of properties is mastered in on-premises Active Directory and synchronized to Azure AD, and is read-only. For a cloud-only user (where onPremisesSyncEnabled is false), these properties may be set during creation or update.|
+| Addition | v1.0 | Added  [onPremisesExtensionAttributes](/graph/api/resources/onpremisesextensionattributes?view=graph-rest-1.0&preserve-view=true) property to the [User](/graph/api/resources/user?view=graph-rest-1.0&preserve-view=true) entity that contains 15 custom extension attribute properties. For an onPremisesSyncEnabled user, this set of properties is mastered in on-premises Active Directory and synchronized to Azure AD, and is read-only. For a cloud-only user (where onPremisesSyncEnabled is false), these properties can be set during creation or update.|
 |Addition|v1.0|Added the **onPremisesDomainName**, **onPremisesSamAccountName**, and **onPremisesUserPrincipalName** properties to the [User](/graph/api/resources/user?view=graph-rest-1.0&preserve-view=true) entity|
 
 ### Mail
@@ -4817,7 +4818,7 @@ Debut of the places API, which provides rich details for locations in apps.
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Addition        | Beta        | Introduced the new preview API for Microsoft 365 reports. You can use it to get usage reports of how people in your business are using Microsoft 365 services. For example, you can identify who is using a service a lot and reaching quotas, or who may not need a Microsoft 365 license at all. For more information, see [report](/graph/api/resources/report?view=graph-rest-beta&preserve-view=true). |
+| Addition        | Beta        | Introduced the new preview API for Microsoft 365 reports. You can use it to get usage reports of how people in your business are using Microsoft 365 services. For example, you can identify who is using a service a lot and reaching quotas, or who does not need a Microsoft 365 license at all. For more information, see [report](/graph/api/resources/report?view=graph-rest-beta&preserve-view=true). |
 
 
 ## February 2017

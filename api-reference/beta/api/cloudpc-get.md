@@ -166,6 +166,8 @@ Content-Type: application/json
 
 ### Example 2: Get the selected properties of a Cloud PC
 
+The following example shows how to get selected properties of a [cloudPC](../resources/cloudpc.md) object using the `$select` OData query parameter.
+
 #### Request
 
 The following example shows a request.
@@ -178,7 +180,7 @@ The following example shows a request.
 -->
 
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/40cee9d2-03fb-4066-8d35-dbdf2875c33f?$select=id,displayName,imageDisplayName,lastModifiedDateTime,lastRemoteActionResult,lastLoginResult,connectivityResult,allotmentDisplayName,deviceRegionName,productType,provisionedDateTime,sharedDeviceDetail
+GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/40cee9d2-03fb-4066-8d35-dbdf2875c33f?$select=id,displayName,imageDisplayName,lastModifiedDateTime,lastRemoteActionResult,lastLoginResult,connectivityResult,allotmentDisplayName,deviceRegionName,productType,provisionedDateTime,sharedDeviceDetail,groupDetail,userDetail
 ```
 
 # [C#](#tab/csharp)
@@ -194,7 +196,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/4
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-cloudpc-selected-properties-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
@@ -263,6 +265,14 @@ Content-Type: application/json
     "provisionedDateTime": "2025-04-23T10:29:57Z",
     "sharedDeviceDetail": {
       "assignedToUserPrincipalName": "john.doe@contoso.onmicrosoft.com"
+    },
+    "groupDetail": {
+        "groupId": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+        "groupDisplayName": "Contoso Cloud PC Users"
+    },
+    "userDetail": {
+        "userId": "e798de27-1806-4433-9ac3-4db7a985a12b",
+        "userDisplayName": "Peter Mitchell"
     }
 }
 ```

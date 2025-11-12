@@ -62,8 +62,12 @@ items:
       href: ../../api/security-incidenttask-executeresponseaction.md
   - name: Complex types
     items:
+    - name: Security group evidence
+      href: ../../resources/security-securitygroupevidence.md
     - name: Teams message evidence
       href: ../../resources/security-teamsmessageevidence.md
+    - name: User account
+      href: ../../resources/security-useraccount.md
 - name: Attack simulation and training
   items:
   - name: Simulation
@@ -252,7 +256,7 @@ items:
       href: ../../api/tenantdatasecurityandgovernance-list-sensitivitylabels.md
     - name: Get a data security and compliance sensitivity label
       href: ../../api/sensitivitylabel-get.md
-    - name: List rights
+    - name: Get usage rights included
       href: ../../api/usagerightsincluded-get.md
   - name: Tenant data security and governance
     items:
@@ -570,6 +574,8 @@ items:
       href: ../../api/security-ediscoveryholdpolicy-update.md
     - name: Delete
       href: ../../api/security-ediscoverycase-delete-legalholds.md
+    - name: Retry policy
+      href: ../../api/security-ediscoveryholdpolicy-retrypolicy.md
     - name: Site sources
       items:
       - name: List
@@ -764,12 +770,44 @@ items:
       href: ../../api/security-sensor-getdeploymentpackageuri.md
     - name: Regenerate deployment access key
       href: ../../api/security-sensor-regeneratedeploymentaccesskey.md
+  - name: Identity accounts
+    items:
+    - name: Identity accounts
+      href: ../../resources/security-identityaccounts.md
+    - name: List
+      href: ../../api/security-identitycontainer-list-identityaccounts.md
+    - name: Get
+      href: ../../api/security-identityaccounts-get.md
+    - name: invokeAction
+      href: ../../api/security-identityaccounts-invokeaction.md
+  - name: User
+    href: ../../resources/security-user.md
+  - name: Sensor candidate
+    items:
+    - name: Sensor candidate
+      href: ../../resources/security-sensorcandidate.md
+    - name: List
+      href: ../../api/security-identitycontainer-list-sensorcandidates.md
+    - name: activate
+      href: ../../api/security-sensorcandidate-activate.md
+  - name: Sensor candidate activation configuration
+    items:
+    - name: Sensor candidate activation configuration
+      href: ../../resources/security-sensorcandidateactivationconfiguration.md
+    - name: Get
+      href: ../../api/security-sensorcandidateactivationconfiguration-get.md
+    - name: Update
+      href: ../../api/security-identitycontainer-post-sensorcandidateactivationconfiguration.md
   - name: Complex types
     items:
+    - name: Account
+      href: ../../resources/security-account.md
     - name: Deployment access key type
       href: ../../resources/security-deploymentaccesskeytype.md
     - name: Identity container
       href: ../../resources/security-identitycontainer.md
+    - name: Invoke action result
+      href: ../../resources/security-invokeactionresult.md
     - name: Network adapter
       href: ../../resources/security-networkadapter.md
     - name: Sensor deployment package
@@ -818,7 +856,7 @@ items:
       href: ../../api/tenantdatasecurityandgovernance-list-sensitivitylabels.md
     - name: Get a data security and compliance sensitivity label
       href: ../../api/sensitivitylabel-get.md
-    - name: List rights
+    - name: Get usage rights included
       href: ../../api/usagerightsincluded-get.md
   - name: Information protection policy setting
     items:

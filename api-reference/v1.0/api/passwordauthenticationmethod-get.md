@@ -24,13 +24,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { 
   "blockType": "permissions", 
+  "name": "passwordauthenticationmethod_get", 
   "requestUrls": ["GET /users/{id | userPrincipalName}/authentication/passwordMethods/{passwordMethods-id}"]
  } -->
-|Permission type|Least privileged permissions|Higher privileged permissions|
-|:---|:---|:---|
-|Delegated (work or school account)|UserAuthenticationMethod.Read.All|UserAuthenticationMethod.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|UserAuthenticationMethod.Read.All|UserAuthenticationMethod.ReadWrite.All|
+[!INCLUDE [permissions-table](../includes/permissions/passwordauthenticationmethod-get-permissions.md)]
 
 [!INCLUDE [rbac-authentication-methods-apis-read-others](../includes/rbac-for-apis/rbac-authentication-methods-apis-read-others.md)]
 

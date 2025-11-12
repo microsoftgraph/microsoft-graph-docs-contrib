@@ -4,6 +4,7 @@ description: "Learn about the Microsoft Graph integration pattern for bringing c
 author: "OlgaPodo"
 ms.localizationpriority: medium
 ms.date: 11/07/2024
+ms.topic: article
 ---
 
 # Use Microsoft Graph to augment Microsoft Search with custom data

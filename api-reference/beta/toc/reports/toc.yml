@@ -150,9 +150,9 @@ items:
       items:
       - name: Overview
         href: ../../resources/authenticationmethods-usage-insights-overview.md
-      - name: Credential usage summary
+      - name: Credential usage summary (deprecated)
         items:
-        - name: Credential usage summary
+        - name: Credential usage summary (deprecated)
           href: ../../resources/credentialusagesummary.md
         - name: List
           href: ../../api/reportroot-getcredentialusagesummary.md
@@ -168,9 +168,9 @@ items:
           href: ../../resources/credentialuserregistrationdetails.md
         - name: List
           href: ../../api/reportroot-list-credentialuserregistrationdetails.md
-      - name: User credential usage details
+      - name: User credential usage details (deprecated)
         items:
-        - name: User credential usage details
+        - name: User credential usage details (deprecated)
           href: ../../resources/usercredentialusagedetails.md
         - name: List
           href: ../../api/reportroot-list-usercredentialusagedetails.md
@@ -194,6 +194,36 @@ items:
           href: ../../resources/userregistrationmethodsummary.md
         - name: List
           href: ../../api/authenticationmethodsroot-usersregisteredbymethod.md
+      - name: User events summary
+        items:
+        - name: User events summary
+          href: ../../resources/usereventssummary.md
+        - name: List
+          href: ../../api/authenticationmethodsroot-list-usereventssummary.md
+      - name: User MFA sign in summary
+        items:
+        - name: User MFA sign in summary
+          href: ../../resources/usermfasigninsummary.md
+        - name: List
+          href: ../../api/authenticationmethodsroot-list-usermfasigninsummary.md
+      - name: User password resets and changes summary
+        items:
+        - name: User password resets and changes summary
+          href: ../../resources/userpasswordresetsandchangessummary.md
+        - name: List
+          href: ../../api/authenticationmethodsroot-list-userpasswordresetsandchangessummary.md
+      - name: User registration activity summary
+        items:
+        - name: User registration activity summary
+          href: ../../resources/userregistrationactivitysummary.md
+        - name: List
+          href: ../../api/authenticationmethodsroot-userregistrationactivity.md
+      - name: User sign in usage by auth method activity
+        items:
+        - name: User sign in usage by auth method activity
+          href: ../../resources/usersigninusagebyauthmethodactivity.md
+        - name: List
+          href: ../../api/authenticationmethodsroot-usersigninsbyauthmethodsummary.md
     - name: Microsoft Entra Health (preview)
       items:
       - name: SLA attainment
@@ -304,6 +334,12 @@ items:
     items:
     - name: Overview
       href: ../../resources/azure-ad-auditlog-overview.md
+    - name: Audit activity type
+      items:
+      - name: Audit activity type
+        href: ../../resources/auditactivitytype.md
+      - name: List
+        href: ../../api/auditlogroot-list-auditactivitytypes.md
     - name: Custom security attribute audit (preview)
       items:
       - name: Custom security attribute audit (preview)
@@ -334,9 +370,21 @@ items:
         href: ../../api/auditlogroot-list-signups.md
       - name: Get
         href: ../../api/selfservicesignup-get.md
-    - name: Sign in
+    - name: Sign in events activity
       items:
-      - name: Sign in
+      - name: Sign in events activity
+        href: ../../resources/signineventsactivity.md
+      - name: List
+        href: ../../api/auditlogroot-list-signineventssummary.md
+    - name: Sign in events app activity
+      items:
+      - name: Sign in events app activity
+        href: ../../resources/signineventsappactivity.md
+      - name: List
+        href: ../../api/auditlogroot-list-signineventsappsummary.md
+    - name: Sign-in
+      items:
+      - name: Sign-in
         href: ../../resources/signin.md
       - name: List
         href: ../../api/signin-list.md
@@ -348,6 +396,16 @@ items:
         href: ../../api/signin-confirmsafe.md
       - name: Dismiss
         href: ../../api/signin-dismiss.md
+    - name: Summarized sign in
+      items:
+      - name: Summarized sign in
+        href: ../../resources/summarizedsignin.md
+      - name: Get summarized MSI sign-ins
+        href: ../../api/auditlogroot-getsummarizedmsisignins.md
+      - name: Get summarized non-interactive sign-ins
+        href: ../../api/auditlogroot-getsummarizednoninteractivesignins.md
+      - name: Get summarized service principal sign-ins
+        href: ../../api/auditlogroot-getsummarizedserviceprincipalsignins.md
 - name: Microsoft 365 monitoring reports (preview)
   items:
   - name: Overview

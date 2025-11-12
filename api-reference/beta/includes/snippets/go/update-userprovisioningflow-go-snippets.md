@@ -25,12 +25,10 @@ additionalAttributes := []graphmodelsindustrydata.AdditionalUserAttributesable {
 }
 managementOptions.SetAdditionalAttributes(additionalAttributes)
 additionalOptions := graphmodelsindustrydata.NewAdditionalUserOptions()
+studentAgeGroup := graphmodels.MINOR_STUDENTAGEGROUP 
+additionalOptions.SetStudentAgeGroup(&studentAgeGroup) 
 allowStudentContactAssociation := true
 additionalOptions.SetAllowStudentContactAssociation(&allowStudentContactAssociation) 
-additionalData := map[string]interface{}{
-	"studentAgeGroup" : "minor", 
-}
-additionalOptions.SetAdditionalData(additionalData)
 managementOptions.SetAdditionalOptions(additionalOptions)
 requestBody.SetManagementOptions(managementOptions)
 creationOptions := graphmodelsindustrydata.NewUserCreationOptions()

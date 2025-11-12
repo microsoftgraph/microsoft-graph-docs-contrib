@@ -554,7 +554,13 @@ Content-Type: application/json
             "displayName": "Remove all access package assignments for user",
             "id": "42ae2956-193d-4f39-be06-691b8ac4fa1d",
             "version": 1,
-            "parameters": []
+            "parameters": [
+                {
+                    "name": "daysUntilExpiration",
+                    "values": [],
+                    "valueType": "string"
+                }    
+            ]
         },
         {
             "category": "leaver",

@@ -22,6 +22,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { 
   "blockType": "permissions", 
+  "name": "authentication_post_temporaryaccesspassmethods", 
   "requestUrls": ["GET /users/{id | userPrincipalName}/authentication/temporaryAccessPassMethods"]
  } -->
 [!INCLUDE [permissions-table](../includes/permissions/authentication-post-temporaryaccesspassmethods-permissions.md)]

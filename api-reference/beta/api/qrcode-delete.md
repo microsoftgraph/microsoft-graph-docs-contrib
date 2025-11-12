@@ -23,9 +23,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { 
   "blockType": "permissions", 
+  "name": "qrcode_delete", 
   "requestUrls": ["DELETE /users/{id}/authentication/qrCodePinMethod/standardQRCode", "DELETE /users/{id}/authentication/qrCodePinMethod/temporaryQRCode"]
  } -->
-[!INCLUDE [permissions-table](../includes/permissions/authentication-delete-qrcodepinmethod-2-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/qrcode-delete-permissions.md)]
 
 [!INCLUDE [rbac-authentication-methods-apis-write-others](../includes/rbac-for-apis/rbac-authentication-methods-apis-write-others.md)]
 

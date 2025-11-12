@@ -23,9 +23,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { 
   "blockType": "permissions", 
+  "name": "qrcodepinauthenticationmethod_get", 
   "requestUrls": ["GET /users/{id}/authentication/qrCodePinMethod"]
-} -->
-[!INCLUDE [permissions-table](../includes/permissions/qrcodepinauthenticationmethod-get-2-permissions.md)]
+ } -->
+[!INCLUDE [permissions-table](../includes/permissions/qrcodepinauthenticationmethod-get-permissions.md)]
 
 [!INCLUDE [rbac-authentication-methods-apis-read-others](../includes/rbac-for-apis/rbac-authentication-methods-apis-read-others.md)]
 

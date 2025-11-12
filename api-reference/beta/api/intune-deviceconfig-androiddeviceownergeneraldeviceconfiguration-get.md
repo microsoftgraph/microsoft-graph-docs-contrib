@@ -68,7 +68,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 11470
+Content-Length: 11833
 
 {
   "value": {
@@ -166,8 +166,12 @@ Content-Length: 11470
     ],
     "factoryResetBlocked": true,
     "globalProxy": {
-      "@odata.type": "microsoft.graph.androidDeviceOwnerGlobalProxyAutoConfig",
-      "proxyAutoConfigURL": "Proxy Auto Config URL value"
+      "@odata.type": "microsoft.graph.androidDeviceOwnerGlobalProxyDirect",
+      "host": "Host value",
+      "port": 4,
+      "excludedHosts": [
+        "Excluded Hosts value"
+      ]
     },
     "googleAccountsBlocked": true,
     "kioskCustomizationDeviceSettingsBlocked": true,
@@ -238,6 +242,15 @@ Content-Length: 11470
       }
     ],
     "kioskModeManagedHomeScreenAutoSignout": true,
+    "kioskModeManagedHomeScreenAppSettings": [
+      {
+        "@odata.type": "microsoft.graph.androidDeviceOwnerKioskModeApp",
+        "package": "Package value",
+        "className": "Class Name value",
+        "offlineAppAccessEnabled": true,
+        "preSignInAppAccessEnabled": true
+      }
+    ],
     "kioskModeManagedHomeScreenInactiveSignOutDelayInSeconds": 7,
     "kioskModeManagedHomeScreenInactiveSignOutNoticeInSeconds": 8,
     "kioskModeManagedHomeScreenPinComplexity": "simple",

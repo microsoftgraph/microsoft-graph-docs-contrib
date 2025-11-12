@@ -6,6 +6,7 @@ author: "sharad-sharma-msft"
 ms.subservice: "education"
 doc_type: conceptualPageType
 ms.date: 11/07/2024
+ms.topic: how-to
 ---
 
 # Upload files for education assignments and submissions using the Microsoft Graph API
