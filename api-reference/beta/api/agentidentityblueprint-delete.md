@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete an [agentIdentityBlueprint](../resources/agentidentityblueprint.md) object.
+Delete an [agentIdentityBlueprint](../resources/agentidentityblueprint.md) object. When deleted, agent identity blueprints are moved to a temporary container and can be restored within 30 days. After that time, they are permanently deleted.
 
 ## Permissions
 

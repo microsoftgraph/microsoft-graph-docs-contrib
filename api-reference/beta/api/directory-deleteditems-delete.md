@@ -16,12 +16,15 @@ Namespace: microsoft.graph
 
 Permanently delete a recently deleted directory object from [deleted items](../resources/directory.md). The following types are supported:
 - [application](../resources/application.md)
+- [agentIdentityBlueprint](../resources/agentidentityblueprint.md)
 - [certificateBasedAuthPki](../resources/certificatebasedauthpki.md)
 - [certificateAuthorityDetail](../resources/certificateauthoritydetail.md
 - [externalUserProfile](../resources/externaluserprofile.md)
 - [group](../resources/group.md)
 - [pendingExternalUserProfile](../resources/pendingexternaluserprofile.md)
 - [servicePrincipal](../resources/serviceprincipal.md)
+- [agentIdentity](../resources/agentidentity.md)
+- [agentIdentityBlueprintPrincipal](../resources/agentidentityblueprintprincipal.md)
 - [user](../resources/user.md)
 
 After an item is permanently deleted, it **cannot** be restored.
@@ -37,12 +40,15 @@ The following table shows the least privileged permission or permissions require
 | Supported resource | Delegated (work or school account) | Delegated (personal Microsoft account) | Application |
 |:-|:-|:-|:-|
 | [application](../resources/application.md) | Application.ReadWrite.All | Not supported. | Application.ReadWrite.OwnedBy |
+| [agentIdentityBlueprint](../resources/agentidentityblueprint.md) | AgentIdentityBlueprint.DeleteRestore.All | Not supported. | AgentIdentityBlueprint.DeleteRestore.All |
 | [externalUserProfile](../resources/externaluserprofile.md) | ExternalUserProfile.ReadWrite.All | Not supported | ExternalUserProfile.ReadWrite.All |
 | [certificateBasedAuthPki](../resources/certificatebasedauthpki.md) | PublicKeyInfrastructure.Read.All | Not supported. | PublicKeyInfrastructure.Read.All |
 | [certificateAuthorityDetail](../resources/certificateauthoritydetail.md) | PublicKeyInfrastructure.Read.All | Not supported. | PublicKeyInfrastructure.Read.All |
 | [group](../resources/group.md) | Group.ReadWrite.All | Not supported. | Not supported. |
 | [pendingExternalUserProfile](../resources/pendingexternaluserprofile.md) | PendingExternalUserProfile.ReadWrite.All | Not supported | PendingExternalUserProfile.ReadWrite.All |
 | [servicePrincipal](../resources/serviceprincipal.md) | Application.ReadWrite.All | Not supported. | Application.ReadWrite.OwnedBy |
+| [agentIdentity](../resources/agentidentity.md) | AgentIdentity.DeleteRestore.All | Not supported. | AgentIdentity.DeleteRestore.All |
+| [agentIdentityBlueprintPrincipal](../resources/agentidentityblueprintprincipal.md) | AgentIdentityBlueprintPrincipal.DeleteRestore.All | Not supported. | AgentIdentityBlueprintPrincipal.DeleteRestore.All |
 | [user](../resources/user.md) | User.DeleteRestore.All | Not supported. |  User.DeleteRestore.All |
 
 [!INCLUDE [rbac-directory-deleted-items-apis](../includes/rbac-for-apis/rbac-directory-deleted-items-apis.md)]
