@@ -22,7 +22,7 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ### Identity and access | Directory management
 
-Deleted security groups can now be restored from [deleted items](https://learn.microsoft.com/graph/api/resources/directory) within 30 days of deletion, similar to Microsoft 365 groups. Use the [Restore deleted item](/graph/api/directory-deleteditems-restore) API to restore a deleted security group.
+Deleted security groups can now be restored from [deleted items](../api-reference/v1.0/resources/directory.md) within 30 days of deletion, similar to Microsoft 365 groups. Use the [Restore deleted item](../api-reference/v1.0/api/directory-deleteditems-restore.md) API to restore a deleted security group.
 
 ### Backup storage
 
