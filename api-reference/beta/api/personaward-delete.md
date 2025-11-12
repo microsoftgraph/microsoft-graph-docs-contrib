@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 DELETE /me/profile/awards/{id}
 DELETE /users/{id | userPrincipalName}/profile/awards/{id}
 ```
@@ -55,7 +55,7 @@ If successful, this method returns a `204 No Content` response code.
   "name": "delete_personaward"
 }
 -->
-``` http
+```http
 DELETE https://graph.microsoft.com/beta/users/{userId}/profile/awards/{personAwardId}
 ```
 
@@ -96,7 +96,7 @@ DELETE https://graph.microsoft.com/beta/users/{userId}/profile/awards/{personAwa
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 

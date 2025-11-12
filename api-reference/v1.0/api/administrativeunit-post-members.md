@@ -168,7 +168,7 @@ The following example shows a request.
   "blockType": "request",
   "name": "post_administrativeunits_members"
 } -->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/directory/administrativeUnits/{id}/members
 Content-type: application/json
 
@@ -229,7 +229,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.group",
   "name": "post_administrativeunits_members"
 } -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 

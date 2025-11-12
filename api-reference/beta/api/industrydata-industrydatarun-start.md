@@ -106,7 +106,7 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 202 Accepted
 Location: https://graph.microsoft.com/beta/external/industryData/operations/171bf0b4-14e9-408f-71dd-08dcd2a15d23
 ```

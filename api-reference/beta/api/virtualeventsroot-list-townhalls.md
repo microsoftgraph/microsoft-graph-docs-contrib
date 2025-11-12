@@ -36,7 +36,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 
-``` http
+```http
 GET /solutions/virtualEvents/townhalls
 ```
 
@@ -64,7 +64,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 The following example shows a request.
 
-``` http
+```http
 GET https://graph.microsoft.com/beta/solutions/virtualEvents/townhalls
 ```
 
@@ -78,7 +78,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.virtualEventTownhall)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
