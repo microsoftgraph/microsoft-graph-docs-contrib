@@ -10,8 +10,8 @@ ms.date: 11/02/2025
 
 # Create sharePointMigrationTask
 
-Create a sharePointMigrationTask that specifies the migration of a specific resource from a source organization to a target organization as indicated by the specified crossOrganizationMigrationParameters in the sharePointMigrationTask. The resource can be a User, a Group or a Site.
-NOTE: Per the OData standard, the whole sharePointMigrationTask structure needs to be specified in the request body even though only the crossOrganizationMigrationParameters are used to instantiate the task. For required properties like id and status, empty or default values can be used - they are ignored during initial task creation.
+Create a sharePointMigrationTask to migrate a resource from the source organization to the target organization, using the crossOrganizationMigrationParameters. The resource can be a User, a Group, or a Site.
+NOTE: Per the OData standard, the whole sharePointMigrationTask structure needs to be specified in the request body even though only the crossOrganizationMigrationParameters are used to instantiate the task. For required properties like ID and status, empty or default values can be used - they're ignored during initial task creation.
 
 When an existing sharePointMigrationTask is retrieved, it may contain not only the specifics of the source and target organizations and resources, but also the status of the migration and errors encountered during the migration operation.
 
@@ -32,11 +32,11 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/sharepointmigrationtask-create-permissions.md)]
 
-The API calls happen on source site, and only add list items on my site root web, e.g., contoso-my.sharepoint.com. Then it will trigger a multi-geo site move job in SPO backend, enqueue and orchestrate a handful of tenant workflow jobs like backup, restore and cleanup backed by TJ infra.
+The API calls happen on source site, and only add list items on my site root web, for example, contoso-my.sharepoint.com. Then it triggers a multi-geo site move job in backend, enqueue, and orchestrate a handful of tenant workflow jobs like backup, restore, and cleanup backed by TJ infra.
 
-User or site migration is differentiated by the OData type of `sharePointResourceMigrationParameters`, as opposed to using different sub-paths. If this is user's OneDrive migration, specify `sharePointUserMigrationParameters`. If this is regular SharePoint site migration, specify `sharePointSiteMigrationParameters`. If this is group-connected site migration, specify `sharePointGroupMigrationParameters`.
+The OData type of `sharePointResourceMigrationParameters` differentiates user migration from site migration, instead of using different subpaths. If this migration task is an user's OneDrive migration, specify `sharePointUserMigrationParameters`. If this migration task is a regular SharePoint site migration, specify `sharePointSiteMigrationParameters`. If this migration task is a group-connected site migration, specify `sharePointGroupMigrationParameters`.
 
-We allow customer to create user migration task by 2 options - create by userPrincipalName, or create by userObjectId
+We allow customer to create user migration task by two options - create by userPrincipalName, or create by userObjectId
 
 ### 1. Create a user migration task
 
@@ -141,7 +141,7 @@ Content-Type: application/json
 
 ### 1.3. Create a user migration task by **userObjectId** and with specific "targetDataLocationCode"
 
-The parameter - `targetDataLocationCode` represents the geographic location of the target organization, it's not required for **single-geo** tenants; if location code is null, then it goes to default geo location. For **multi-geo** tenant move, we also supports customer to specify the `targetOrganizationId`targetOrganizationId and `targetDataLocationCode` in case of customer is inconvenient to retrieve the host name, for example -
+The parameter - `targetDataLocationCode` represents the geographic location of the target organization, it's not required for **single-geo** tenants; if location code is null, then it goes to default geo location. For **multi-geo** tenant move, we also support customer to specify the `targetOrganizationId`targetOrganizationId and `targetDataLocationCode` if customer is inconvenient to retrieve the host name, for example -
 
 #### HTTP request
 
@@ -283,9 +283,9 @@ Content-Type: application/json
 }
 ```
 
-### 4. Create a user migration task with **PreferedStartTime** paramter
+### 4. Create a user migration task with **PreferedStartTime** parameter
 
-If customer specifies the 'preferredStartDateTime' paratemer when creating a migration task, then the task will be created but will NOT be executed until e.g. 2025/09/01
+If the customer specifies the preferredStartDateTime parameter when the customer is creating a migration task, the task will be created, however, it will not execute until the specified date, for example, December 1, 2025.
 
 #### HTTP request
 
@@ -337,9 +337,9 @@ Content-Type: application/json
 }
 ```
 
-### 5. Create a user migration task with **ValidateOnly=true** paramter
+### 5. Create a user migration task with **ValidateOnly=true** parameter
 
-If customer specifies the 'ValidateOnly' paratemer to be true, it indicates that this is a request to validate if a this move is possible given the appropriate arguments above, but does not do any moves.
+Set ValidateOnly to true to validate whether the move can occur. The request checks feasibility but does not execute the migration.
 
 #### HTTP request
 
@@ -394,10 +394,9 @@ Content-Type: application/json
 
 | Scenario                                                                      | Method    | Code | Message                                                                                          |
 | ----------------------------------------------------------------------------- | --------- | ---- | ------------------------------------------------------------------------------------------------ |
-| Caller didn't provide the required parameters                                 | POST | 400  | Cannot process the request because the required parameter {paramName} is missing.                |
+| Caller didn't provide the required parameters                                 | POST | 400  | Can't process the request because the required parameter {paramName} is missing.                |
 | Caller has insufficient permission                                            | POST | 403  | Access denied                                                                                    |
-| Trust relationship is not set up on target tenant                             | POST      | 422  | There is no Cross-Tenant relationship established for partner {siteUrl} and role {soure/target}. |
-| Source user's OneDrive does not exist                                         | POST      | 422  | Unable to get a OneDrive URL for source user UPN {sourceUserUpn}.                                |
-| Identity mapping is not configured on target tenant                           | POST      | 422  | Identity map entry for source UPN {sourceUserUpn} does not exist on the target tenant.           |
-| Source and target tenant are on the same farm                                 | POST      | 501  | It has been detected that partners reside in the same SPO location that prevents them from migrating. Please contact MS to resolve this issue. Once the issue has been resolved, please try running the migration again. |
-
+| Trust relationship isn't set up on target tenant                             | POST      | 422  | There's no Cross-Tenant relationship established for partner {siteUrl} and role {soure/target}. |
+| Source user's OneDrive doesn't exist                                         | POST      | 422  | Unable to get a OneDrive URL for source user principal name {sourceUserUpn}.                                |
+| Identity mapping isn't configured on target tenant                           | POST      | 422  | Identity map entry for source user principal name {sourceUserUpn} doesn't exist on the target tenant.           |
+| Source and target tenant are on the same farm                                 | POST      | 501  | It has been detected that partners reside in the same SPO location that prevents them from migrating. Contact MS to resolve this issue. Resolve the issue, then rerun the migration. |

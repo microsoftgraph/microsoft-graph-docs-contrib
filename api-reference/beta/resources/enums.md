@@ -5597,13 +5597,13 @@ Possible values for user account types (group membership), per Windows definitio
 |sts|
 |unknownFutureValue|
 
-### sharePointMigrationTaskStatus values 
+### sharePointMigrationTaskStatus values
 
-| Member             | Description
-|:------------------ |:-----------------------------------------------
-| notStarted         | The crossOrganizationMigrationTask is not started yet.
-| inProgress         | The crossOrganizationMigrationTask is in progress at this time (including retries) and not reached a final/terminal state.
-| completed          | The crossOrganizationMigrationTask has completed successfully and is no longer executing.
-| cancelled          | The crossOrganizationMigrationTask is cancelled and the source resource is restored to it's initial state before the crossOrganizationMigrationTask was attempted.
-| failed             | The crossOrganizationMigrationTask has failed and will not be retried (it is a final/terminal state unlike the error state).
-| unknownFutureValue | For future compatibility
+| Member             | Description |
+|:------------------ |:-----------------------------------------------|
+| notStarted         | The crossOrganizationMigrationTask is not started yet. |
+| inProgress         | The crossOrganizationMigrationTask is in progress at this time (including retries) and not reached a final/terminal state. |
+| completed          | The crossOrganizationMigrationTask has completed successfully and is no longer executing. |
+| cancelled          | The crossOrganizationMigrationTask is cancelled and the source resource is restored to it's initial state before the crossOrganizationMigrationTask was attempted. |
+| failed             | The crossOrganizationMigrationTask has failed and will not be retried (it is a final/terminal state unlike the error state). |
+| unknownFutureValue | For future compatibility. |
