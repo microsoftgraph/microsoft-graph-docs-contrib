@@ -12,7 +12,7 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 > [!CAUTION]
-> The recent API is deprecated and will stop returning data after November, 2026.
+> The recent API is deprecated and will stop returning data after November, 2027.
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
