@@ -55,8 +55,7 @@ You must specify the **@odata.type** property and the value of the [authenticati
 |:---|:---|:---|
 |conditions|[authenticationConditions](../resources/authenticationconditions.md)|The conditions on which this authenticationEventListener should trigger. Optional.|
 |displayName|String|The display name of the authentication event listener policy. Optional.|
-|handler|[onTokenIssuanceStartHandler](../resources/ontokenissuancestarthandler.md)|The handler to invoke when conditions are met. Can be updated for the **onTokenIssuanceStartListener** listener type.|
-|handler|[onFraudProtectionLoadStartHandler](../resources/onfraudprotectionloadstarthandler.md) | The handler to invoke when conditions are met. Can be updated for the **onFraudProtectionLoadStartListener** type. |
+|handler|[onTokenIssuanceStartHandler](../resources/ontokenissuancestarthandler.md) &#124; [onFraudProtectionLoadStartHandler](../resources/onfraudprotectionloadstarthandler.md)|The handler to invoke when conditions are met. The type of handler depends on the listener type:<br/>- For **onTokenIssuanceStartListener**, use [onTokenIssuanceStartHandler](../resources/ontokenissuancestarthandler.md).<br/>- For **onFraudProtectionLoadStartListener**, use [onFraudProtectionLoadStartHandler](../resources/onfraudprotectionloadstarthandler.md).|
 
 ## Response
 
