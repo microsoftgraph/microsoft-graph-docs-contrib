@@ -2422,6 +2422,18 @@ items:
         href: ../../api/temporaryaccesspassauthenticationmethodconfiguration-update.md
       - name: Delete
         href: ../../api/temporaryaccesspassauthenticationmethodconfiguration-delete.md
+    - name: Verifiable credentials authentication method configuration
+      items:
+      - name: Verifiable credentials authentication method configuration
+        href: ../../resources/verifiablecredentialsauthenticationmethodconfiguration.md
+      - name: List
+        href: ../../api/verifiablecredentialsauthenticationmethodconfiguration-list.md
+      - name: Get
+        href: ../../api/verifiablecredentialsauthenticationmethodconfiguration-get.md
+      - name: Update
+        href: ../../api/verifiablecredentialsauthenticationmethodconfiguration-update.md
+      - name: Delete
+        href: ../../api/verifiablecredentialsauthenticationmethodconfiguration-delete.md
     - name: Voice
       items:
       - name: Voice
@@ -3547,6 +3559,22 @@ items:
         href: ../../api/identityuserflow-get.md
       - name: Delete
         href: ../../api/identityuserflow-delete.md
+  - name: Verified ID
+    items:
+    - name: Verified ID profile (preview)
+      items:
+      - name: Verified ID profile (preview)
+        href: ../../resources/verifiedidprofile.md
+      - name: List
+        href: ../../api/identityverifiedidroot-list-profiles.md
+      - name: Create
+        href: ../../api/identityverifiedidroot-post-profiles.md
+      - name: Get
+        href: ../../api/verifiedidprofile-get.md
+      - name: Update
+        href: ../../api/verifiedidprofile-update.md
+      - name: Delete
+        href: ../../api/identityverifiedidroot-delete-profiles.md
 - name: Multicloud permissions management (deprecated)
   items:
   - name: Overview

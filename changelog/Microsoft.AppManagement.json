@@ -1,6 +1,208 @@
 {
   "changelog": [
-    {
+     {
+      "ChangeList": [
+        {
+          "Id": "1be5e4f5-10bd-4c3c-bb13-9a7583f8557d",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "applicationDataType",
+          "ChangeType": "Addition",
+          "Description": "Added the **applicationDataType** enumeration type.",
+          "Target": "applicationDataType"
+        },
+        {
+          "Id": "1be5e4f5-10bd-4c3c-bb13-9a7583f8557d",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "csaStarLevel",
+          "ChangeType": "Addition",
+          "Description": "Added the **csaStarLevel** enumeration type.",
+          "Target": "csaStarLevel"
+        },
+        {
+          "Id": "1be5e4f5-10bd-4c3c-bb13-9a7583f8557d",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "dataProtection",
+          "ChangeType": "Addition",
+          "Description": "Added the **dataProtection** enumeration type.",
+          "Target": "dataProtection"
+        },
+        {
+          "Id": "1be5e4f5-10bd-4c3c-bb13-9a7583f8557d",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "dataRetentionLevel",
+          "ChangeType": "Addition",
+          "Description": "Added the **dataRetentionLevel** enumeration type.",
+          "Target": "dataRetentionLevel"
+        },
+        {
+          "Id": "1be5e4f5-10bd-4c3c-bb13-9a7583f8557d",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "fedRampLevel",
+          "ChangeType": "Addition",
+          "Description": "Added the **fedRampLevel** enumeration type.",
+          "Target": "fedRampLevel"
+        },
+        {
+          "Id": "1be5e4f5-10bd-4c3c-bb13-9a7583f8557d",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "holdType",
+          "ChangeType": "Addition",
+          "Description": "Added the **holdType** enumeration type.",
+          "Target": "holdType"
+        },
+        {
+          "Id": "1be5e4f5-10bd-4c3c-bb13-9a7583f8557d",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "passwordPolicy",
+          "ChangeType": "Addition",
+          "Description": "Added the **passwordPolicy** enumeration type.",
+          "Target": "passwordPolicy"
+        },
+        {
+          "Id": "1be5e4f5-10bd-4c3c-bb13-9a7583f8557d",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "pciVersion",
+          "ChangeType": "Addition",
+          "Description": "Added the **pciVersion** enumeration type.",
+          "Target": "pciVersion"
+        },
+        {
+          "Id": "1be5e4f5-10bd-4c3c-bb13-9a7583f8557d",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "restEncryptionType",
+          "ChangeType": "Addition",
+          "Description": "Added the **restEncryptionType** enumeration type.",
+          "Target": "restEncryptionType"
+        },
+        {
+          "Id": "1be5e4f5-10bd-4c3c-bb13-9a7583f8557d",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "sslVersion",
+          "ChangeType": "Addition",
+          "Description": "Added the **sslVersion** enumeration type.",
+          "Target": "sslVersion"
+        },
+        {
+          "Id": "1be5e4f5-10bd-4c3c-bb13-9a7583f8557d",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "userOwnership",
+          "ChangeType": "Addition",
+          "Description": "Added the **userOwnership** enumeration type.",
+          "Target": "userOwnership"
+        },
+        {
+          "Id": "1be5e4f5-10bd-4c3c-bb13-9a7583f8557d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "applicationLocation",
+          "ChangeType": "Addition",
+          "Description": "Added the [applicationLocation](https://learn.microsoft.com/en-us/graph/api/resources/applicationLocation?view=graph-rest-beta) resource.",
+          "Target": "applicationLocation"
+        },
+        {
+          "Id": "1be5e4f5-10bd-4c3c-bb13-9a7583f8557d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "applicationRiskFactorCertificateInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [applicationRiskFactorCertificateInfo](https://learn.microsoft.com/en-us/graph/api/resources/applicationRiskFactorCertificateInfo?view=graph-rest-beta) resource.",
+          "Target": "applicationRiskFactorCertificateInfo"
+        },
+        {
+          "Id": "1be5e4f5-10bd-4c3c-bb13-9a7583f8557d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "applicationRiskFactorGeneralInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [applicationRiskFactorGeneralInfo](https://learn.microsoft.com/en-us/graph/api/resources/applicationRiskFactorGeneralInfo?view=graph-rest-beta) resource.",
+          "Target": "applicationRiskFactorGeneralInfo"
+        },
+        {
+          "Id": "1be5e4f5-10bd-4c3c-bb13-9a7583f8557d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "applicationRiskFactorLegalInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [applicationRiskFactorLegalInfo](https://learn.microsoft.com/en-us/graph/api/resources/applicationRiskFactorLegalInfo?view=graph-rest-beta) resource.",
+          "Target": "applicationRiskFactorLegalInfo"
+        },
+        {
+          "Id": "1be5e4f5-10bd-4c3c-bb13-9a7583f8557d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "applicationRiskFactorLegalInfoGdpr",
+          "ChangeType": "Addition",
+          "Description": "Added the [applicationRiskFactorLegalInfoGdpr](https://learn.microsoft.com/en-us/graph/api/resources/applicationRiskFactorLegalInfoGdpr?view=graph-rest-beta) resource.",
+          "Target": "applicationRiskFactorLegalInfoGdpr"
+        },
+        {
+          "Id": "1be5e4f5-10bd-4c3c-bb13-9a7583f8557d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "applicationRiskFactors",
+          "ChangeType": "Addition",
+          "Description": "Added the [applicationRiskFactors](https://learn.microsoft.com/en-us/graph/api/resources/applicationRiskFactors?view=graph-rest-beta) resource.",
+          "Target": "applicationRiskFactors"
+        },
+        {
+          "Id": "1be5e4f5-10bd-4c3c-bb13-9a7583f8557d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "applicationRiskFactorSecurityInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [applicationRiskFactorSecurityInfo](https://learn.microsoft.com/en-us/graph/api/resources/applicationRiskFactorSecurityInfo?view=graph-rest-beta) resource.",
+          "Target": "applicationRiskFactorSecurityInfo"
+        },
+        {
+          "Id": "1be5e4f5-10bd-4c3c-bb13-9a7583f8557d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "applicationRiskScore",
+          "ChangeType": "Addition",
+          "Description": "Added the [applicationRiskScore](https://learn.microsoft.com/en-us/graph/api/resources/applicationRiskScore?view=graph-rest-beta) resource.",
+          "Target": "applicationRiskScore"
+        },
+        {
+          "Id": "1be5e4f5-10bd-4c3c-bb13-9a7583f8557d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "applicationSecurityCompliance",
+          "ChangeType": "Addition",
+          "Description": "Added the [applicationSecurityCompliance](https://learn.microsoft.com/en-us/graph/api/resources/applicationSecurityCompliance?view=graph-rest-beta) resource.",
+          "Target": "applicationSecurityCompliance"
+        },
+        {
+          "Id": "1be5e4f5-10bd-4c3c-bb13-9a7583f8557d",
+          "ApiChange": "Property",
+          "ChangedApiName": "endpoints",
+          "ChangeType": "Addition",
+          "Description": "Added the **endpoints** property to the [applicationTemplate](https://learn.microsoft.com/en-us/graph/api/resources/applicationTemplate?view=graph-rest-beta) resource.",
+          "Target": "applicationTemplate"
+        },
+        {
+          "Id": "1be5e4f5-10bd-4c3c-bb13-9a7583f8557d",
+          "ApiChange": "Property",
+          "ChangedApiName": "lastModifiedDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **lastModifiedDateTime** property to the [applicationTemplate](https://learn.microsoft.com/en-us/graph/api/resources/applicationTemplate?view=graph-rest-beta) resource.",
+          "Target": "applicationTemplate"
+        },
+        {
+          "Id": "1be5e4f5-10bd-4c3c-bb13-9a7583f8557d",
+          "ApiChange": "Property",
+          "ChangedApiName": "riskFactors",
+          "ChangeType": "Addition",
+          "Description": "Added the **riskFactors** property to the [applicationTemplate](https://learn.microsoft.com/en-us/graph/api/resources/applicationTemplate?view=graph-rest-beta) resource.",
+          "Target": "applicationTemplate"
+        },
+        {
+          "Id": "1be5e4f5-10bd-4c3c-bb13-9a7583f8557d",
+          "ApiChange": "Property",
+          "ChangedApiName": "riskScore",
+          "ChangeType": "Addition",
+          "Description": "Added the **riskScore** property to the [applicationTemplate](https://learn.microsoft.com/en-us/graph/api/resources/applicationTemplate?view=graph-rest-beta) resource.",
+          "Target": "applicationTemplate"
+        }
+      ],
+      "Id": "1be5e4f5-10bd-4c3c-bb13-9a7583f8557d",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-11-10T09:17:12.3788634Z",
+      "WorkloadArea": "Applications",
+      "SubArea": "Service principal"
+        },
+      {
       "ChangeList": [
         {
           "Id": "1416cd4d-87dd-43c5-93c1-2f9fac460404",

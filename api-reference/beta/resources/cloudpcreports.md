@@ -1,18 +1,22 @@
 ---
-title: "cloudPcReports resource type"
+title: "cloudPcReports resource type (deprecated)"
 description: "Represents the Windows 365 Cloud PC-related reports, including the Windows 365 Cloud PC remote connections report."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: resourcePageType
 ms.date: 10/21/2024
+toc.title: "Cloud PC reports (deprecated)"
 ---
 
-# cloudPcReports resource type
+# cloudPcReports resource type (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+> [!CAUTION]
+> The **cloudPcReports** resource is deprecated and will stop returning data on December 31, 2026. Going forward, use the [cloudPcReport](cloudpcreport.md) resource instead.
 
 Represents the Windows 365 Cloud PC-related reports, including the Windows 365 Cloud PC remote connections report.
 
@@ -31,7 +35,6 @@ Use a method in the [Methods](#methods) section to get the corresponding report 
 |[Get real-time remote connection status reports](../api/cloudpcreports-getrealtimeremoteconnectionstatus.md)|Stream|Get the real-time remote connection status reports like sign-in status or days since the last use of a Cloud PC.|
 |[Get remote connection historical reports](../api/cloudpcreports-getremoteconnectionhistoricalreports.md)|Stream|Get a Cloud PC's remote connection historical reports, such as **signInDateTime**, **signOutDateTime**, or **usageInHour**, in a given period.|
 |[Get total aggregated remote connection reports](../api/cloudpcreports-gettotalaggregatedremoteconnectionreports.md)|Stream|Get the total aggregated remote connection reports, like usage and **daysSinceLastUse**, in a given period.|
-|[Retrieve Cloud PC recommendation reports](../api/cloudpcreports-retrievecloudpcrecommendationreports.md)|Stream|Get the device recommendation reports for Cloud PCs, such as the usage category report.|
 |[Retrieve Cloud PC tenant metrics report](../api/cloudpcreports-retrievecloudpctenantmetricsreport.md)|Stream|Get a report related to the performance of Cloud PCs.|
 |[Retrieve cross-region disaster recovery report](../api/cloudpcreports-retrievecrossregiondisasterrecoveryreport.md)|Stream| Retrieve the Windows 365 cross-region disaster recovery report, including cloudPcId, userId, deviceId, cloudPCDeviceDisplayName, userPrincipalName, enabledDRType, disasterRecoveryStatus, licenseType, drHealthStatus, currentRestorePointDateTime, backupCloudPcStatus, and activationExpirationDateTime.|
 |[Retrieve connection quality reports](../api/cloudpcreports-retrieveconnectionqualityreports.md)|Stream|Get the overall connection quality reports for all devices in the current tenant, the regional connection quality trend report, and the regional connection quality insight report, including round trip time, available bandwidth, UPD usage, and dropped connections.|
@@ -40,6 +43,7 @@ Use a method in the [Methods](#methods) section to get the corresponding report 
 |[Get Cloud PC recommendation reports (deprecated)](../api/cloudpcreports-getcloudpcrecommendationreports.md)|Stream|Get the device recommendation reports for Cloud PCs, such as the usage category report. This API is deprecated and will stop returning data on July 01, 2025. Going forward, use the [retrieveCloudPcRecommendationReports](../api/cloudpcreports-retrievecloudpcrecommendationreports.md) API.|
 |[Get connection quality reports (deprecated)](../api/cloudpcreports-gettotalaggregatedremoteconnectionreports.md)|Stream|Get the overall connection quality reports for all devices within a current tenant during a given period, including metrics like the average round trip time (P50), average available bandwidth, and UDP connection percentage. Also get other real-time metrics such as last connection round trip time, last connection client IP, last connection gateway, and last connection protocol. This API is deprecated and stopped returning data on December 31, 2024. Going forward, use the [retrieveConnectionQualityReports](../api/cloudpcreports-retrieveconnectionqualityreports.md) API.|
 |[Get shared use license usage report (deprecated)](../api/cloudpcreports-getshareduselicenseusagereport.md) |Stream| Get the shared use license usage reports, such as **servicePlanId**, **licenseCount**, and **claimedLicenseCount**, for real-time, 7 days, or 28 days trend.|
+|[Retrieve Cloud PC recommendation reports (deprecated)](../api/cloudpcreports-retrievecloudpcrecommendationreports.md)|Stream|Get the device recommendation reports for Cloud PCs, such as the usage category report. This API is deprecated and will stop returning data on December 31, 2025. Going forward, use the [cloudPcReport: retrieveCloudPcRecommendationReports](../api/cloudpcreport-retrievecloudpcrecommendationreports.md) API.|
 
 ## Properties
 
@@ -64,13 +68,6 @@ Use a method in the [Methods](#methods) section to get the corresponding report 
 | troubleshootRegionalReport    | The daily regional aggregated report that shows network quality issues by region, including round-trip time issues, connection quality issues, and reliability issues.|
 | unknownFutureValue            | Evolvable enumeration sentinel value. Don't use.|
 | troubleshootIssueCountReport  | The aggregated report over 28 days that shows the number of performance issues, network issues, and reliability issues.|
-
-### cloudPcRecommendationReportType values
-
-| Member                        | Description       |
-| :---------------------------- | :---------------- |
-| cloudPcUsageCategoryReports   | Indicates the report that shows the usage of Cloud PCs along with their associated categories. The possible report columns for these categories are `Undersized`, `Oversized`, `Rightsized`, or `Underutilized` based on usage.|
-| unknownFutureValue            | Evolvable enumeration sentinel value. Don't use.|
 
 ## Relationships
 
