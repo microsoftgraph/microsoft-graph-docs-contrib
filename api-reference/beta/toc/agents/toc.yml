@@ -48,6 +48,31 @@ items:
         href: ../../api/agentidentityblueprint-post-owners.md
       - name: Remove owners
         href: ../../api/agentidentityblueprint-delete-owners.md
+    - name: Verified publisher
+      items:
+      - name: Set
+        href: ../../api/agentidentityblueprint-setverifiedpublisher.md
+      - name: Unset
+        href: ../../api/agentidentityblueprint-unsetverifiedpublisher.md
+    - name: Federated identity credential
+      displayName: Workload identity federation, workload identities
+      items:
+      - name: Overview
+        href: ../../resources/federatedidentitycredentials-overview.md
+      - name: Federated identity credential
+        href: ../../resources/federatedidentitycredential.md
+      - name: List
+        href: ../../api/agentidentityblueprint-list-federatedidentitycredentials.md
+      - name: Create
+        href: ../../api/agentidentityblueprint-post-federatedidentitycredentials.md
+      - name: Get
+        href: ../../api/agentidentityblueprint-federatedidentitycredential-get.md
+      - name: Update
+        href: ../../api/agentidentityblueprint-federatedidentitycredential-update.md
+      - name: Upsert
+        href: ../../api/agentidentityblueprint-federatedidentitycredential-upsert.md
+      - name: Delete
+        href: ../../api/agentidentityblueprint-federatedidentitycredential-delete.md
     - name: Sponsors
       items:
       - name: List sponsors

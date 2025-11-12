@@ -95,10 +95,7 @@ Content-type: application/json
       "accountEnabled": true,
       "disabledByMicrosoftStatus": null,
       "servicePrincipalType": "ServiceIdentity",
-      "tags": [],
-      "lifecycle": {
-        "expirationDateTime": "2024-12-31T23:59:59Z"
-      }
+      "tags": []
     }
   ]
 }
