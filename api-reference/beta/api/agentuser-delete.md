@@ -36,8 +36,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-DELETE /users/{id | userPrincipalName}
+DELETE /users/microsoft.graph.agentUser/userId
 ```
+Note: An agent user can be deleted through the standard users' endpoint as well: DELETE /users/userId. No special odata type needs to be specified in the request. 
 
 ## Request headers
 
@@ -64,7 +65,7 @@ The following example shows a request.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/users/ba9a3254-9f18-4209-aeb3-9e42a35b5be4 
+DELETE https://graph.microsoft.com/beta/users/microsoft.graph.agentUser/ba9a3254-9f18-4209-aeb3-9e42a35b5be4 
 ```
 
 
