@@ -4,7 +4,7 @@ description: "Microsoft MCP Server for Enterprise enables AI agents to query ent
 author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: Licantrop0
-ms.subservice: enterprise-mcp-server
+ms.subservice: entra-id
 ms.topic: overview
 ms.date: 11/11/2025
 
@@ -100,4 +100,4 @@ MicrosoftGraphActivityLogs
 
 ## Next step
 
-- [Provision the MCP Server for Enterprise](/mcp-server/provision-mcp.md)
+- [Provision the MCP Server for Enterprise](provision-mcp.md)

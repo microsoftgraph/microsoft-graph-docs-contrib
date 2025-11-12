@@ -4,7 +4,7 @@ description: "As a developer, I want to configure my AI client to connect to the
 author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: luca.spolidoro
-ms.service: enterprise-mcp-server
+ms.service: entra-id
 ms.topic: install-set-up-deploy
 ms.date: 11/05/2025
 zone_pivot_groups: enterprise-mcp-server-client-setup
