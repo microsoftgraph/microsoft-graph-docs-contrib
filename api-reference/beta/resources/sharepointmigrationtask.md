@@ -30,12 +30,12 @@ This is an entity - it captures a specific intent to do a crossOrganizationMigra
 | Property            | Type                     | Description
 |:------------------- |:------------------------ |:-----------------------------------------------
 | id                  | string                   | Unique ID of the crossOrganizationMigration operation for the specific source organization and resource identified by the parameters below. Key. Should not be specified during create - it is returned by the service. Only on OneDrive for Business and SharePoint.
-| parameters          | [sharePointMigrationTaskParameters] | Complex type that clearly indicates the source resource and organization, the target organization to which the resource needs to be migrated and other parameters that control the migration process. They need to be specified during task creation but are also replayed back in every query about this task, for tracking and identification. Only on OneDrive for Business and SharePoint.
-| status              | [sharePointMigrationTaskStatus] | Enumeration value that indicates the status of the migration activity that this task represents. Should not be specified during create - it is returned by the service. Only on OneDrive for Business and SharePoint.
-| startedDateTime     | dateTimeOffset           | DateTime when the sharePointMigrationTask started, if available. Read-only. Optional. Only on OneDrive for Business and SharePoint.
-| lastUpdatedDateTime | dateTimeOffset           | DateTime when the sharePointMigrationTask was last updated, executed or touched in any way, if available. This can help spot stuck tasks that have not been processed for a while. Read-only. Optional. Only on OneDrive for Business and SharePoint.
-| finishedDateTime    | dateTimeOffset           | DateTime when the sharePointMigrationTask ended, if available. (The task may have completed successfully or failed, but it finished execution at this time.) Read-only. Optional. Only on OneDrive for Business and SharePoint.
-| errors              | [microsoft.graph.error][] collection | The error information to provide context for failures. Optional. Read-only. Only on OneDrive for Business and SharePoint.
+| parameters          | [sharePointMigrationTaskParameters](./sharepointmigrationtaskparameters.md) | Complex type that clearly indicates the source resource and organization, the target organization to which the resource needs to be migrated and other parameters that control the migration process. They need to be specified during task creation but are also replayed back in every query about this task, for tracking and identification. Only on OneDrive for Business and SharePoint.
+| status              | [sharePointMigrationTaskStatus](./enums.md#sharepointmigrationtaskstatus-values) | Enumeration value that indicates the status of the migration activity that this task represents. Should not be specified during create - it is returned by the service. Only on OneDrive for Business and SharePoint.
+| startedDateTime     | DateTimeOffset           | DateTime when the sharePointMigrationTask started, if available. Read-only. Optional. Only on OneDrive for Business and SharePoint.
+| lastUpdatedDateTime | DateTimeOffset           | DateTime when the sharePointMigrationTask was last updated, executed or touched in any way, if available. This can help spot stuck tasks that have not been processed for a while. Read-only. Optional. Only on OneDrive for Business and SharePoint.
+| finishedDateTime    | DateTimeOffset           | DateTime when the sharePointMigrationTask ended, if available. (The task may have completed successfully or failed, but it finished execution at this time.) Read-only. Optional. Only on OneDrive for Business and SharePoint.
+| errors              | [publicError](../resources/publicerror.md)[] | The error information to provide context for failures. Optional. Read-only. Only on OneDrive for Business and SharePoint.
 
 ## JSON Representation
 
@@ -52,19 +52,3 @@ Here is a JSON representation of a **microsoft.graph.sharePointMigrationTask** r
   "errors": [{ "@odata.type": "microsoft.graph.error" }] 
 }
 ```
-
-[sharePointMigrationTaskParameters]: ./sharepointmigrationtaskparameters.md
-
-[sharePointMigrationTaskStatus]: ./enums.md#sharepointmigrationtaskstatus-values
-
-[Get]: ../api/sharepointmigrationtask-get.md
-
-[Create]: ../api/sharepointmigrationtask-create.md
-
-[Cancel]: ../api/sharepointmigrationtask-cancel.md
-
-[GetBySourceSiteUrl]: ../api/sharepointmigrationtask-getbysourcesiteurl.md
-
-[GetBySourceUserPrincipalName]: ../api/sharepointmigrationtask-getbysourceuserprincipalname.md
-
-[GetBySourceGroupMailNickname]: ../api/sharepointmigrationtask-getbysourcegroupmailnickname.md
