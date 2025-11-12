@@ -63,7 +63,6 @@ The following JSON representation shows the resource type.
     "@odata.type": "microsoft.graph.customDataProvidedResourceUploadStats"
   },
   "createdDateTime": "String (timestamp)",
-  "expirationDateTime": "String (timestamp)",
   "source": "String",
   "type": "String",
   "data": {
