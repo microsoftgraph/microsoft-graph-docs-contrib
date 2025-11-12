@@ -1,13 +1,13 @@
 ---
 author: spgraph-docs-team
 ms.date: 09/10/2017
-title: List Recent Files
+title: "List Recent Files (deprecated)"
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 description: "List a set of items that have been recently used by the signed in user."
 doc_type: apiPageType
 ---
-# List recent files
+# List recent files (deprecated)
 
 Namespace: microsoft.graph
 

@@ -1,14 +1,14 @@
 ---
 author: "spgraph-docs-team"
 description: "Get a list of driveItem objects shared with the owner of a drive."
-title: "drive: sharedWithMe"
+title: "drive: sharedWithMe (deprecated)"
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: apiPageType
 ms.date: 04/05/2024
 ---
 
-# drive: sharedWithMe
+# drive: sharedWithMe (deprecated)
 
 Namespace: microsoft.graph
 
