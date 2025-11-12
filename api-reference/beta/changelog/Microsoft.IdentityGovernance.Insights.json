@@ -54,9 +54,9 @@
       "Id": "f1cb09f8-0e5b-4fb1-9882-e9017e36754e",
       "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2025-10-29T21:42:59.7433741Z",
-      "WorkloadArea": "Microsoft.IdentityGovernance.Insights",
-      "SubArea": ""
+      "CreatedDateTime": "2025-11-12T21:42:59.7433741Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
     }
   ]
 }
