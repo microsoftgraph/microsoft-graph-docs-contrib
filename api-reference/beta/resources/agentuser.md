@@ -3,7 +3,7 @@ title: "agentUser resource type"
 description: "Represents a specialized subtype of user identity in Microsoft Entra ID designed for AI-powered applications (agents) that need to function as digital workers."
 author: "yyuank"
 ms.reviewer: "iamut"
-ms.date: 11/11/2025
+ms.date: 11/12/2025
 ms.localizationpriority: medium
 ms.subservice: entra-users
 doc_type: resourcePageType
@@ -33,23 +33,18 @@ This resource is an open type that allows additional properties beyond those doc
 | [Update](../api/agentuser-update.md) | [agentUser](agentuser.md) | Update **agentUser** object. |
 | [Delete](../api/agentuser-delete.md) | None | Delete **agentUser** object. |
 | **App role assignments** | | |
-| [List appRoleAssignments](../api/agentuser-list-approleassignments.md) | [appRoleAssignment](../resources/approleassignment.md) collection | Get the app role assignments for this agent user. |
-| [Create appRoleAssignment](../api/agentuser-post-approleassignments.md) | [appRoleAssignment](../resources/approleassignment.md) | Create a new app role assignment for this agent user. |
+| [List app role assignments](../api/agentuser-list-approleassignments.md) | [appRoleAssignment](../resources/approleassignment.md) collection | Get the app role assignments for this agent user. |
+| [Create app role assignment](../api/agentuser-post-approleassignments.md) | [appRoleAssignment](../resources/approleassignment.md) | Create a new app role assignment for this agent user. |
+| **Directory objects** | | |
+| [List owned objects](../api/agentuser-list-ownedobjects.md) | [directoryObject](../resources/directoryobject.md) collection | Get the directory objects owned by the agent user. |
 | **Organizational relationships** | | |
-| [List createdObjects](../api/agentuser-list-createdobjects.md) | [directoryObject](../resources/directoryobject.md) collection | Get the directory objects created by the agent user. |
-| [List directReports](../api/agentuser-list-directreports.md) | [directoryObject](../resources/directoryobject.md) collection | Get the users and contacts that report to the agent user. |
+| [List direct reports](../api/agentuser-list-directreports.md) | [directoryObject](../resources/directoryobject.md) collection | Get the users and contacts that report to the agent user. |
 | [List manager](../api/agentuser-list-manager.md) | [directoryObject](../resources/directoryobject.md) | Get the user or contact that is this agent user's manager. |
 | [Add manager](../api/agentuser-post-manager.md) | None | Assign the agent user's manager. |
 | [Remove manager](../api/agentuser-delete-manager.md) | None | Remove the agent user's manager. |
-| [List memberOf](../api/agentuser-list-memberof.md) | [directoryObject](../resources/directoryobject.md) collection | Get the groups, directory roles, and administrative units that the agent user is a member of. |
-| [List transitiveMemberOf](../api/agentuser-list-transitivememberof.md) | [directoryObject](../resources/directoryobject.md) collection | Get the groups, directory roles, and administrative units that the agent user is a member of, including nested group memberships. |
-| [List transitiveReports](../api/agentuser-list-transitivereports.md) | [directoryObject](../resources/directoryobject.md) collection | Get the transitive reports for the agent user. |
-| **Devices** | | |
-| [List ownedDevices](../api/agentuser-list-owneddevices.md) | [directoryObject](../resources/directoryobject.md) collection | Get the devices owned by the agent user. |
-| [List ownedObjects](../api/agentuser-list-ownedobjects.md) | [directoryObject](../resources/directoryobject.md) collection | Get the directory objects owned by the agent user. |
-| [List registeredDevices](../api/agentuser-list-registereddevices.md) | [directoryObject](../resources/directoryobject.md) collection | Get the devices registered to the agent user. |
-| **Roles** | | |
-| [List scopedRoleMemberOf](../api/agentuser-list-scopedrolememberof.md) | [scopedRoleMembership](../resources/scopedrolemembership.md) collection | Get the scoped-role administrative unit memberships for this agent user. |
+| [List direct memberships](../api/agentuser-list-memberof.md) | [directoryObject](../resources/directoryobject.md) collection | Get the groups, directory roles, and administrative units that the agent user is a member of. |
+| [List transitive memberships](../api/agentuser-list-transitivememberof.md) | [directoryObject](../resources/directoryobject.md) collection | Get the groups, directory roles, and administrative units that the agent user is a member of, including nested group memberships. |
+| [List transitive reports](../api/agentuser-list-transitivereports.md) | [directoryObject](../resources/directoryobject.md) collection | Get the transitive reports for the agent user. |
 | **Sponsors** | | |
 | [List sponsors](../api/agentuser-list-sponsors.md) | [directoryObject](../resources/directoryobject.md) collection | Get the users and groups responsible for this agent user's privileges. |
 | [Add sponsors](../api/agentuser-post-sponsors.md) | None | Add sponsors for the agent user. |
@@ -58,7 +53,7 @@ This resource is an open type that allows additional properties beyond those doc
 ## Properties
 
 > [!IMPORTANT]
-> While this resource type inherits many properties from the **user** resource type, some properties are not applicable to agent users and will always return `null` or default values. These properties are excluded from the table below for clarity.
+> While this resource type inherits all properties from the **user** resource type, some properties are not applicable to agent users and will always return `null` or default values. These properties are excluded from the table below for clarity.
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -114,17 +109,17 @@ This resource is an open type that allows additional properties beyond those doc
 |userType|String|A String value that can be used to classify agent user types in your directory. The possible values are `Member` and `Guest`. **NOTE:** For more information about the permissions for member and guest users, see [What are the default user permissions in Microsoft Entra ID?](/azure/active-directory/fundamentals/users-default-permissions?context=graph/context#member-and-guest-users) Inherited from [user](../resources/user.md).|
 
 ## Relationships
+
+> [!IMPORTANT]
+> While this resource type inherits all relationships from the **user** resource type, some relationships are not applicable to agent users and will always return `null` or default values. These relationships are excluded from the table below for clarity.
+
 |Relationship|Type|Description|
 |:---|:---|:---|
 |appRoleAssignments|[appRoleAssignment](../resources/approleassignment.md) collection|Represents the app roles an agent user has been granted for an application. Inherited from [user](../resources/user.md)|
-|createdObjects|[directoryObject](../resources/directoryobject.md) collection|Directory objects that the agent user created. Read-only. Nullable. Inherited from [user](../resources/user.md)|
 |directReports|[directoryObject](../resources/directoryobject.md) collection|The users and contacts that report to the agent user. (The users and contacts with their manager property set to this user.) Read-only. Nullable. Inherited from [user](../resources/user.md)|
 |manager|[directoryObject](../resources/directoryobject.md)|The user or contact that is this agent user's manager. Read-only. Inherited from [user](../resources/user.md)|
 |memberOf|[directoryObject](../resources/directoryobject.md) collection|The groups, directory roles, and administrative units that the agent user is a member of. Read-only. Nullable. Inherited from [user](../resources/user.md)|
-|ownedDevices|[directoryObject](../resources/directoryobject.md) collection|Devices owned by the agent user. Read-only. Nullable. Inherited from [user](../resources/user.md)|
 |ownedObjects|[directoryObject](../resources/directoryobject.md) collection|Directory objects owned by the agent user. Read-only. Nullable. Inherited from [user](../resources/user.md)|
-|registeredDevices|[directoryObject](../resources/directoryobject.md) collection|Devices that are registered for the agent user. Read-only. Nullable. Inherited from [user](../resources/user.md)|
-|scopedRoleMemberOf|[scopedRoleMembership](../resources/scopedrolemembership.md) collection|The scoped-role administrative unit memberships for this agent user. Read-only. Nullable. Inherited from [user](../resources/user.md)|
 |sponsors|[directoryObject](../resources/directoryobject.md) collection|The [users](../resources/user.md) and [groups](../resources/group.md) responsible for this agent user's privileges in the tenant and keep the agent user's information and access updated. (HTTP Methods: GET, POST, DELETE.). Inherited from [user](../resources/user.md)|
 |transitiveMemberOf|[directoryObject](../resources/directoryobject.md) collection|The groups, including nested groups and directory roles that the agent user is a member of. Nullable. Inherited from [user](../resources/user.md)|
 |transitiveReports|[directoryObject](../resources/directoryobject.md) collection|The transitive reports for an agent user. Read-only. Inherited from [user](../resources/user.md)|
@@ -157,7 +152,12 @@ The following JSON representation shows the resource type.
     "passwordPolicies",
     "passwordProfile",
     "serviceProvisioningErrors"
-  ]
+  ],
+  "optionalRelationships": [
+    "createdObjects",
+    "scopedRoleMemberOf",
+    "ownedDevices",
+    "registeredDevices"
 }
 -->
 ``` json

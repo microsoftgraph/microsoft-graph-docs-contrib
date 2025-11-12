@@ -1,15 +1,15 @@
 ---
-title: "List a agent user's direct memberships"
+title: "List agentUser direct memberships"
 description: "Get groups, directory roles, and administrative units that the agent user is a direct member of. This operation isn't transitive."
 author: "yyuank"
 ms.reviewer: "iamut"
-ms.date: 11/06/2025
+ms.date: 11/12/2025
 ms.localizationpriority: medium
 ms.subservice: entra-id
 doc_type: apiPageType
 ---
 
-# List memberOf (for agentUser)
+# List agentUser direct memberships
 
 Namespace: microsoft.graph
 

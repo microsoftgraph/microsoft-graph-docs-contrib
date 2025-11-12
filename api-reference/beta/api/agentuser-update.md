@@ -3,7 +3,7 @@ title: "Update agentUser"
 description: "Update the properties of an agentUser object."
 author: "yyuank"
 ms.reviewer: "iamut"
-ms.date: 11/06/2025
+ms.date: 11/12/2025
 ms.localizationpriority: medium
 ms.subservice: entra-id
 doc_type: apiPageType

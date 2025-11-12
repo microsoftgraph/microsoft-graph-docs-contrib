@@ -3,7 +3,7 @@ title: "List agentUser objects"
 description: "Get a list of the agentUser objects and their properties."
 author: "yyuank"
 ms.reviewer: "iamut"
-ms.date: 11/11/2025
+ms.date: 11/12/2025
 ms.localizationpriority: medium
 ms.subservice: entra-id
 doc_type: apiPageType
@@ -35,7 +35,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET ** users/microsoft.graph.AgentUser
+GET /users/microsoft.graph.AgentUser
 ```
 
 ## Optional query parameters
