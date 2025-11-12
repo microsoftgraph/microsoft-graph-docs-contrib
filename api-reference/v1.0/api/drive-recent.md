@@ -4,7 +4,7 @@ ms.date: 09/10/2017
 title: "drive: recent (deprecated)"
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
-description: "List a set of items that have been recently used by the signed in user."
+description: "List a set of items recently used by the signed-in user."
 doc_type: apiPageType
 ---
 
@@ -13,9 +13,9 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 > [!CAUTION]
-> The **recent** API is deprecated and will stop returning data after November, 2027.
+> The **recent** API is deprecated and will stop returning data after November 2027.
 
-List a set of items that have been recently used by the signed in user.
+List a set of items recently used by the signed-in user.
 This collection includes items that are in the user's drive and items they have access to from other drives.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
@@ -135,7 +135,7 @@ Content-Type: application/json
 ## Remarks
 
 Some driveItems returned from the **recent** action includes the **remoteItem** facet that indicates that items are from another drive.
-To access the original driveItem object, you'll need to make a request using the information provided in **remoteItem** in the following format:
+To access the original **driveItem** object, you need to make a request using the information provided in **remoteItem** in the following format:
 
 <!-- { "blockType": "ignored", "name": "drives-get-remoteitem" } -->
 
