@@ -22,6 +22,13 @@ Delete an [entraIdProtectionRiskyUserApproval](../resources/entraidprotectionris
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
+<!-- {
+  "blockType": "permissions",
+  "name": "entraidprotectionriskyuserapproval-delete-permissions"
+}
+-->
+[!INCLUDE [permissions-table](../includes/permissions/entraidprotectionriskyuserapproval-delete-permissions.md)]
+
 ## HTTP request
 
 <!-- {
@@ -58,7 +65,7 @@ The following example shows a request.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/entraIdProtectionRiskyUserApprovals/{entraIdProtectionRiskyUserApprovalId}
+DELETE https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/entraIdProtectionRiskyUserApprovals/ae8b838e-59bf-4aab-ba64-358d4c8ae153
 ```
 
 ### Response

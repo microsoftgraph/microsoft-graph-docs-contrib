@@ -22,6 +22,13 @@ Get a list of the [entraIdProtectionRiskyUserApproval](../resources/entraidprote
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
+<!-- {
+  "blockType": "permissions",
+  "name": "entraidprotectionriskyuserapproval-list-permissions"
+}
+-->
+[!INCLUDE [permissions-table](../includes/permissions/entraidprotectionriskyuserapproval-list-permissions.md)]
+
 ## HTTP request
 
 <!-- {
@@ -85,12 +92,13 @@ Content-Type: application/json
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/entitlementManagement/entraIdProtectionRiskyUserApprovals",
   "value": [
     {
+      "@odata.context": "https://localhost:44319/api/v1/$metadata#controlConfigurations/microsoft.graph.entraIdProtectionRiskyUserApproval/$entity",
       "@odata.type": "#microsoft.graph.entraIdProtectionRiskyUserApproval",
-      "id": "12345678-1234-1234-1234-123456789012",
+      "id": "1e927ee9-93b1-4814-9606-50877c55b4c3",
       "isEnabled": true,
-      "createdBy": "admin@contoso.com",
+      "createdBy": "kayat@elmdev.com",
       "createdDateTime": "2025-11-01T10:00:00Z",
-      "modifiedBy": "admin@contoso.com",
+      "modifiedBy": "kayat@elmdev.com",
       "modifiedDateTime": "2025-11-06T15:30:00Z",
       "isApprovalRequired": true,
       "minimumRiskLevel": "medium"
