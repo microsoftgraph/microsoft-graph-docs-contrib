@@ -5574,6 +5574,13 @@ Possible values for user account types (group membership), per Windows definitio
 |expired|
 |unknownFutureValue|
 
+### principalType values 
+
+|Member|
+|:---|
+|entraIdUser|
+|unknownFutureValue|
+
 ### claimBindingSource values 
 
 |Member|
