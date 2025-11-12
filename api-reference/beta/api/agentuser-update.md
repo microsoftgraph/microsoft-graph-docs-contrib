@@ -36,8 +36,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-PATCH /users/userId
+PATCH /users/microsoft.graph.agentUser/userId
 ```
+Note: Agent user can be updated through the standard users' endpoint: PATCH /users/userId. No special odata type needs to be specified in the request body.  
 
 ## Request headers
 
@@ -109,7 +110,7 @@ The following example shows a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/users/userId
+PATCH https://graph.microsoft.com/beta/users/microsoft.graph.agentUser/userId
 Content-Type: application/json
 
 {
