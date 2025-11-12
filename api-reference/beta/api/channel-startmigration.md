@@ -16,18 +16,13 @@ Namespace: microsoft.graph
 
 The API allows users to enable migration mode on existing channels. Previously, users were only allowed to initiate import operations on newly created Standard Channels in the empty state ([import-external-messages-to-teams](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)).
 
-Starts the message migration process by populating `migration mode` to `inProgress` for a [channel](../resources/channel.md) in a team.
-
 Users are also allowed to define a minimum timestamp for content to be migrated, allowing them to import messages in the past. Provided timestamp is required to be older than the current `createdDateTime` for a [channel](../resources/channel.md).
 
 Provided timestamp is used to replace the existing `createdDateTime` of the [channel](../resources/channel.md).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
-**Supported types of channels**
-
-1) New Channels (Standard, Private, and Shared)
-2) Existing Channels (Standard, Private, and Shared).
+[!INCLUDE [channel-support](../../includes/supported-channels-for-import.md)]
 
 ## Permissions
 
@@ -62,7 +57,7 @@ You can optionally provide a request body to specify the minimum timestamp for t
 
 If successful, this method returns a `204 No Content` response code. It doesn't return anything in the response body.
 
-## Example
+## Example1: Start Migration on an existing channel with a specific timestamp
 
 ### Request
 
@@ -93,6 +88,34 @@ The following example shows the response.
 ```http
 HTTP/1.1 204 No Content
 ```
+
+## Example 2: Start migration when channel is already in migration mode.
+
+#### Request
+
+The following example shows a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "startMigration_channel1",
+  "sampleKeys": ["57fb72d0-d811-46f4-8947-305e6072eaa5", "19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2"]
+}-->
+
+```msgraph-interactive
+POST https://graph.microsoft.com/beta/teams/57fb72d0-d811-46f4-8947-305e6072eaa5/channels/19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2/startMigration
+```
+
+#### Response
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.channel"
+} -->
+```http
+HTTP/1.1 400 Bad Request
+```
+
 
 <!-- uuid: 5793eec6-0e5a-11eb-adc1-0242ac120002
 2020-10-14 20:22:11 UTC -->

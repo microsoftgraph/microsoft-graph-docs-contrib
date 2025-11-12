@@ -14,13 +14,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Completes the migration of external messages by removing migration mode from a chat. Previously, users were only allowed to initiate complete migration operations on newly created standard channels, which were created for the initial migration flow. ([import-external-messages-to-teams](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)).
+Completes the ongoing migration of external messages on the target chat. Previously, users were only allowed to initiate complete migration operations on newly created standard channels, which were created for the initial migration flow. ([import-external-messages-to-teams](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)).
 
-For chat, which is already in migration mode, the API completes the message migration process by populating `migration mode` to `completed` for a [chat](../resources/chat.md).
-
-After a **completeMigration** request is made for existing or new chat, you can still import more messages into the team by calling [start migration on chat](chat-startmigration.md).
+After a **completeMigration** request is made for existing or new chat, Users can start a new migration session by calling [start migration on chat](chat-startmigration.md).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
+[!INCLUDE [chat-support](../../includes/supported-chats-for-import.md)]
 
 ## Permissions
 
@@ -49,7 +49,7 @@ Don't supply a request body for this method.
 
 If successful, this method returns a `204 No Content` response code. It doesn't return anything in the response body.
 
-## Example
+## Example 1: Complete migration of external messages in a chat
 
 ### Request
 
@@ -64,7 +64,7 @@ The following example shows a request.
 }-->
 
 ```msgraph-interactive
-POST https://graph.microsoft.com/beta/teams/57fb72d0-d811-46f4-8947-305e6072eaa5/channels/19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2/completeMigration
+POST https://graph.microsoft.com/beta/chats/19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2/completeMigration
 ```
 
 ---
@@ -81,6 +81,32 @@ The following example shows the response.
 
 ```http
 HTTP/1.1 204 No Content
+```
+
+## Example 2: Complete migration when chat is already in migration mode
+
+#### Request
+
+The following example shows a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "completeMigration_chat1",
+  "sampleKeys": ["57fb72d0-d811-46f4-8947-305e6072eaa5", "19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2"]
+}-->
+
+```msgraph-interactive
+POST https://graph.microsoft.com/beta/chats/19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2/completeMigration
+```
+
+#### Response
+
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
+```http
+HTTP/1.1 400 Bad Request
 ```
 
 <!-- uuid: 5793eec6-0e5a-11eb-adc1-0242ac120002

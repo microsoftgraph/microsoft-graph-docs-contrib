@@ -3089,6 +3089,78 @@
       "CreatedDateTime": "2025-07-31T16:03:44.5549271Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": "Messaging"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "24e2cf0f-cc2d-4bc1-8dce-7fd083e5db51",
+          "ApiChange": "Property",
+          "ChangedApiName": "migrationMode",
+          "ChangeType": "Addition",
+          "Description": "Added the **migrationMode** property to the [chat](https://learn.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-beta) resource.",
+          "Target": "chat"
+        }
+      ],
+      "Id": "24e2cf0f-cc2d-4bc1-8dce-7fd083e5db51",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-05-29T22:24:27.0548997Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Messaging"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "24e2cf0f-cc2d-4bc1-8dce-7fd083e5db52",
+          "ApiChange": "Property",
+          "ChangedApiName": "originalCreatedDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **originalCreatedDateTime** property to the [chat](https://learn.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-beta) resource.",
+          "Target": "chat"
+        }
+      ],
+      "Id": "24e2cf0f-cc2d-4bc1-8dce-7fd083e5db52",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-05-29T22:24:27.0548997Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Messaging"
+    },
+     {
+      "ChangeList": [
+        {
+          "Id": "24e2cf0f-cc2d-4bc1-8dce-7fd083e5db53",
+          "ApiChange": "Property",
+          "ChangedApiName": "originalCreatedDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **originalCreatedDateTime** property to the [channel](https://learn.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) resource.",
+          "Target": "chat"
+        }
+      ],
+      "Id": "24e2cf0f-cc2d-4bc1-8dce-7fd083e5db53",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-05-29T22:24:27.0548997Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Messaging"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "24e2cf0f-cc2d-4bc1-8dce-7fd083e5db54",
+          "ApiChange": "Property",
+          "ChangedApiName": "migrationMode",
+          "ChangeType": "Addition",
+          "Description": "Added the **migrationMode** property to the [channel](https://learn.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) resource.",
+          "Target": "chat"
+        }
+      ],
+      "Id": "24e2cf0f-cc2d-4bc1-8dce-7fd083e5db54",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-05-29T22:24:27.0548997Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Messaging"
     }
   ]
 }

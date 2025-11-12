@@ -16,18 +16,17 @@ Namespace: microsoft.graph
 
 Start the migration of external messages by enabling migration mode in an existing chat. Previously, users were only allowed to initiate import operations on newly created standard channels in an empty state ([import-external-messages-to-teams](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams).
 
-Starts the message migration process by populating `migration mode` to `inProgress` for a [chat](../resources/chat.md).
+Users can simply start migration mode by invoking startMigration endpoint.
 
-Users are also allowed to define a minimum timestamp for contents to be migrated, allowing them to import messages in the past. Provided timestamp is required to be older than the current `createdDateTime` for a [chat](../resources/chat.md).
+Users can define a minimum timestamp for content migration, enabling the import of messages from the past. The specified timestamp must be earlier than the current `createdDateTime` of the [chat](../resources/chat.md). Imported content is always bounded by the target thread’s `createdDateTime`.
+An optional `createdDateTime` property in the payload allows updating this value, but with strict rules:
 
-The provided timestamp is  to replace the existing `createdDateTime` of the [chat](../resources/chat.md).
+- The `createdDateTime` can only be moved towards the past.
+- It cannot be updated to a value newer than the current `createdDateTime`.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
-**Supported types of chats**
-
-1) New chats (Group, 1:1, and Federated).
-2) Existing chats (Group, 1:1, and Federated).
+[!INCLUDE [chat-support](../../includes/supported-chats-for-import.md)]
 
 ## Permissions
 
@@ -62,7 +61,7 @@ You can optionally provide a request body to specify the minimum timestamp for t
 
 If successful, this method returns a `204 No Content` response code. It doesn't return anything in the response body.
 
-## Example
+## Example 1: Start migration in a chat
 
 ### Request
 
@@ -93,6 +92,33 @@ The following example shows the response.
 
 ```http
 HTTP/1.1 204 No Content
+```
+
+## Example 2: Start migration when chat is already in migration mode
+
+#### Request
+
+The following example shows a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "startMigration_chat1",
+  "sampleKeys": ["57fb72d0-d811-46f4-8947-305e6072eaa5", "19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2"]
+}-->
+
+```msgraph-interactive
+POST https://graph.microsoft.com/beta/chats/19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2/startMigration
+```
+
+#### Response
+
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
+
+```http
+HTTP/1.1 400 Bad Request
 ```
 
 <!-- uuid: 5793eec6-0e5a-11eb-adc1-0242ac120002

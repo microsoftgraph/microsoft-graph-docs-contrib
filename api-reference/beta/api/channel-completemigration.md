@@ -14,22 +14,20 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Complete migration on existing channels or new channels. Previously, users were only allowed to initiate complete migration operations on newly created standard channels, which were created for the initial migration flow. ([import-external-messages-to-teams](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)).
+Complete migration on existing channels or new channels. Previously, users were only allowed to initiate complete migration operations on newly created standard channels by creating migration templates, which were created for the initial migration flow. ([import-external-messages-to-teams](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)).
 
 **Points to note:**
 
-1) When a channel is created in migration mode for the initial import flow, the new API `Migration mode` from a [channel](../resources/channel.md) in a team is updated to **Completed** instead of being dropped, and the state is marked to chat/channels permanently. `Migration mode` is a special state that prevents certain operations, like sending messages and adding members, during the data migration process.
+1) When a channel is created in migration mode for the initial import flow, the new API `Migration mode` from a [channel](../resources/channel.md) in a team is updated to **Completed** instead of being dropped, and the state is marked to chat/channels permanently. `Migration mode` is a special state that prevents certain operations, like sending messages and adding members, during the data migration process. Parent team will not be marked with migration mode.
+As team cannot enter migration mode. its children channels can (general, standard, private and shared).
 
 2) For **existing** channels which are already in migration mode, the API completes the message migration process by populating `migration mode` to `Completed` for a [channel](../resources/channel.md) in a team.
 
-After a **completeMigration** request is made for existing or new channels, you can still import more messages into the team by calling [start migration on channel](channel-startmigration.md). 
+After a **completeMigration** request is made for existing or new channels, you can still import more messages into the team by calling [start migration on channel](channel-startmigration.md).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
-**Supported types of channels**
-
-1) New channels (standard, private, and shared) created in migration mode for the initial import flow.
-2) Existing channels (standard, private, and shared) that are already in migration mode.
+[!INCLUDE [channel-support](../../includes/supported-channels-for-import.md)]
 
 ## Permissions
 
@@ -58,57 +56,22 @@ Don't supply a request body for this method.
 
 If successful, this method returns a `204 No Content` response code. It doesn't return anything in the response body.
 
-## Example
+## Example 1: Complete Migration when channel is in migration mode.
 
 ### Request
 
 The following example shows a request.
-<!-- markdownlint-disable MD025 -->
-<!-- markdownlint-disable MD022 -->
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "completeMigration_channel",
   "sampleKeys": ["57fb72d0-d811-46f4-8947-305e6072eaa5", "19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2"]
 }-->
 
-```http
+```msgraph-interactive
 POST https://graph.microsoft.com/beta/teams/57fb72d0-d811-46f4-8947-305e6072eaa5/channels/19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2/completeMigration
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/completemigration-channel-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/completemigration-channel-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/completemigration-channel-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/completemigration-channel-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/completemigration-channel-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/completemigration-channel-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/completemigration-channel-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-<!-- markdownlint-disable MD001 -->
-<!-- markdownlint-disable MD024 -->
 ### Response
 
 The following example shows the response.
@@ -119,6 +82,33 @@ The following example shows the response.
 
 ```http
 HTTP/1.1 204 No Content
+```
+
+## Example 2: Complete migration when channel is not in migration mode
+
+#### Request
+
+The following example shows a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "completeMigration_channel1",
+  "sampleKeys": ["57fb72d0-d811-46f4-8947-305e6072eaa5", "19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2"]
+}-->
+
+```msgraph-interactive
+POST https://graph.microsoft.com/beta/teams/57fb72d0-d811-46f4-8947-305e6072eaa5/channels/19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2/completeMigration
+```
+
+#### Response
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.channel"
+} -->
+```http
+HTTP/1.1 400 Bad Request
 ```
 
 <!-- uuid: 5793eec6-0e5a-11eb-adc1-0242ac120002
