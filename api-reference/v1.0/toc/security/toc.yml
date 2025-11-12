@@ -578,6 +578,22 @@ items:
       href: ../../api/security-sensor-getdeploymentpackageuri.md
     - name: Regenerate deployment access key
       href: ../../api/security-sensor-regeneratedeploymentaccesskey.md
+  - name: Sensor candidate
+    items:
+    - name: Sensor candidate
+      href: ../../resources/security-sensorcandidate.md
+    - name: List
+      href: ../../api/security-identitycontainer-list-sensorcandidates.md
+    - name: Activate
+      href: ../../api/security-sensorcandidate-activate.md
+  - name: Sensor candidate activation configuration
+    items:
+    - name: Sensor candidate activation configuration
+      href: ../../resources/security-sensorcandidateactivationconfiguration.md
+    - name: Get
+      href: ../../api/security-sensorcandidateactivationconfiguration-get.md
+    - name: Update
+      href: ../../api/security-identitycontainer-post-sensorcandidateactivationconfiguration.md
   - name: Complex types
     items:
     - name: Deployment access key type
