@@ -2,7 +2,7 @@
 title: "Create fraudProtectionProviders"
 description: "Create a new fraudProtectionProviders object."
 author: "more-rasika"
-ms.date: 08/05/2025
+ms.date: 10/23/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
@@ -12,11 +12,9 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Create a new [fraudProtectionProvider](../resources/fraudprotectionprovider.md) object. You can create one of the following subtypes that are derived from **fraudProtectionProvider**.
 
-- [arkoseFraudProtectionProvider](../resources/arkoseFraudProtectionProvider.md)
+- [arkoseFraudProtectionProvider](../resources/arkosefraudprotectionprovider.md)
 - [humanSecurityFraudProtectionProvider](../resources/humansecurityfraudprotectionprovider.md)
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
@@ -36,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-```http
+``` http
 POST /identity/riskPrevention/fraudProtectionProviders
 ```
 
@@ -60,8 +58,8 @@ You can specify the following properties when creating a **fraudProtectionProvid
 |publicKey|String|The public key available on the Arkose Portal. Contact your Arkose Customer Success Manager for assistance with your keys. Supported for Arkose only. Required.|
 |verifySubDomain|String|Used to invoke the Arkose service from the Microsoft authentication server. Request from your Arkose Customer Success Manager or use the default `verify-api` value. Supported for Arkose only. Required.|
 |clientSubDomain|String|Used to invoke the Arkose service from the client application. Request from your Arkose Customer Success Manager or use the default `client-api` value. Supported for Arkose only. Required.|
-|appId|String|Unique identifier for an individual application. You can retrieve this from the HUMAN Security Admin Console or request it from your HUMAN Security Customer Success Manager. Supported for HUMAN Security only. Required.|
-|serverToken|String| Unique identifier used to authenticate API calls between the Server side integration and the HUMAN platform. You can retrieve this from the HUMAN Security Admin Console or request it from your HUMAN Security Customer Success Manager. Supported for HUMAN Security only. Required.|
+|appId|String|Unique identifier for an individual application. You can retrieve this from the HUMAN Security admin console or request it from your HUMAN Security Customer Success Manager. Supported for HUMAN Security only. Required.|
+|serverToken|String| Unique identifier used to authenticate API calls between the Server side integration and the HUMAN platform. You can retrieve this from the HUMAN Security admin console or request it from your HUMAN Security Customer Success Manager. Supported for HUMAN Security only. Required.|
 
 
 ## Response
@@ -75,14 +73,14 @@ If successful, this method returns a `201 Created` response code and a [fraudPro
 #### Request
 
 The following example shows a request to create a new Arkose fraudProtectionProvider object.
-# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create_fraudprotectionprovider_from_arkose"
 }
 -->
-```http
-POST https://graph.microsoft.com/beta/identity/riskPrevention/fraudProtectionProviders
+``` http
+POST https://graph.microsoft.com/v1.0/identity/riskPrevention/fraudProtectionProviders
 Content-Type: application/json
 
 {
@@ -95,31 +93,6 @@ Content-Type: application/json
 }
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-fraudprotectionprovider-from-arkose-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/create-fraudprotectionprovider-from-arkose-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-fraudprotectionprovider-from-arkose-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-fraudprotectionprovider-from-arkose-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/create-fraudprotectionprovider-from-arkose-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/create-fraudprotectionprovider-from-arkose-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 #### Response
 
@@ -131,12 +104,12 @@ The following example shows the response with Arkose fraudProtectionProvider obj
   "@odata.type": "microsoft.graph.fraudProtectionProvider"
 }
 -->
-```http
+``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/riskPrevention/fraudProtectionProviders/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identity/riskPrevention/fraudProtectionProviders/$entity",
     "@odata.type": "#microsoft.graph.arkoseFraudProtectionProvider",
     "id": "d474f94f-0fcf-4224-a165-c1c5bad1600f",
     "displayName": "Arkose Sign-Up Protection",
@@ -152,14 +125,14 @@ Content-Type: application/json
 #### Request
 
 The following example shows a request to create a new HUMAN Security fraudProtectionProvider object.
-# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create_fraudprotectionprovider_from_human"
 }
 -->
-```http
-POST https://graph.microsoft.com/beta/identity/riskPrevention/fraudProtectionProviders
+``` http
+POST https://graph.microsoft.com/v1.0/identity/riskPrevention/fraudProtectionProviders
 Content-Type: application/json
 
 {
@@ -170,31 +143,6 @@ Content-Type: application/json
 }
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-fraudprotectionprovider-from-human-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/create-fraudprotectionprovider-from-human-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-fraudprotectionprovider-from-human-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-fraudprotectionprovider-from-human-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/create-fraudprotectionprovider-from-human-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/create-fraudprotectionprovider-from-human-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 #### Response
 
@@ -206,12 +154,12 @@ The following example shows the response with Human Security fraudProtectionProv
   "@odata.type": "microsoft.graph.fraudProtectionProvider"
 }
 -->
-```http
+``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/riskPrevention/fraudProtectionProviders/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identity/riskPrevention/fraudProtectionProviders/$entity",
     "@odata.type": "#microsoft.graph.humanSecurityFraudProtectionProvider",
     "id": "6b09e36f-7e92-4448-842a-3959bcbc4f9f",
     "displayName": "HUMAN security Sign-Up provider",
