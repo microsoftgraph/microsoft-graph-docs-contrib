@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Beta.WindowsUpdates
 
-Find-MgBetaWindowsUpdatesProductByCatalogId -ExpandProperty "revisions(`$expand=catalogEntry,knowledgeBaseArticle),knownIssues(`$expand=originatingKnowledgeBaseArticle,resolvingKnowledgeBaseArticle)"  -CatalogID $catalogIDId 
+Find-MgBetaWindowsUpdatesProductByKbNumber -ExpandProperty "revisions(`$expand=catalogEntry,knowledgeBaseArticle),knownIssues"  -KbNumber $kbNumberId 
 
 ```

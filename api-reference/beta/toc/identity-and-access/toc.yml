@@ -2436,6 +2436,18 @@ items:
         href: ../../api/temporaryaccesspassauthenticationmethodconfiguration-update.md
       - name: Delete
         href: ../../api/temporaryaccesspassauthenticationmethodconfiguration-delete.md
+    - name: Verifiable credentials authentication method configuration
+      items:
+      - name: Verifiable credentials authentication method configuration
+        href: ../../resources/verifiablecredentialsauthenticationmethodconfiguration.md
+      - name: List
+        href: ../../api/verifiablecredentialsauthenticationmethodconfiguration-list.md
+      - name: Get
+        href: ../../api/verifiablecredentialsauthenticationmethodconfiguration-get.md
+      - name: Update
+        href: ../../api/verifiablecredentialsauthenticationmethodconfiguration-update.md
+      - name: Delete
+        href: ../../api/verifiablecredentialsauthenticationmethodconfiguration-delete.md
     - name: Voice
       items:
       - name: Voice
@@ -3283,6 +3295,50 @@ items:
         href: ../../api/directory-deleteditems-restore.md
       - name: Permanently delete item
         href: ../../api/directory-deleteditems-delete.md
+  - name: Sign-in identifiers
+    items:
+    - name: Sign in identifier base
+      items:
+      - name: Sign in identifier base
+        href: ../../resources/signinidentifierbase.md
+      - name: Get
+        href: ../../api/signinidentifierbase-get.md
+      - name: Update
+        href: ../../api/signinidentifierbase-update.md
+    - name: Custom username sign in identifier
+      items:
+      - name: Custom username sign in identifier
+        href: ../../resources/customusernamesigninidentifier.md
+      - name: Get
+        href: ../../api/customusernamesigninidentifier-get.md
+      - name: Update
+        href: ../../api/customusernamesigninidentifier-update.md
+      - name: Delete
+        href: ../../api/customusernamesigninidentifier-delete.md
+    - name: Email sign in identifier
+      items:
+      - name: Email sign in identifier
+        href: ../../resources/emailsigninidentifier.md
+      - name: Get
+        href: ../../api/emailsigninidentifier-get.md
+      - name: Update
+        href: ../../api/emailsigninidentifier-update.md
+    - name: Upn sign in identifier
+      items:
+      - name: Upn sign in identifier
+        href: ../../resources/upnsigninidentifier.md
+      - name: Get
+        href: ../../api/upnsigninidentifier-get.md
+      - name: Update
+        href: ../../api/upnsigninidentifier-update.md
+    - name: Username sign in identifier
+      items:
+      - name: Username sign in identifier
+        href: ../../resources/usernamesigninidentifier.md
+      - name: Get
+        href: ../../api/usernamesigninidentifier-get.md
+      - name: Update
+        href: ../../api/usernamesigninidentifier-update.md
   - name: Trusted certificate authorities for apps (preview)
     items:
     - name: Certificate-based application configuration
@@ -3517,6 +3573,22 @@ items:
         href: ../../api/identityuserflow-get.md
       - name: Delete
         href: ../../api/identityuserflow-delete.md
+  - name: Verified ID
+    items:
+    - name: Verified ID profile (preview)
+      items:
+      - name: Verified ID profile (preview)
+        href: ../../resources/verifiedidprofile.md
+      - name: List
+        href: ../../api/identityverifiedidroot-list-profiles.md
+      - name: Create
+        href: ../../api/identityverifiedidroot-post-profiles.md
+      - name: Get
+        href: ../../api/verifiedidprofile-get.md
+      - name: Update
+        href: ../../api/verifiedidprofile-update.md
+      - name: Delete
+        href: ../../api/identityverifiedidroot-delete-profiles.md
 - name: Multicloud permissions management (deprecated)
   items:
   - name: Overview
@@ -4428,6 +4500,8 @@ items:
         href: ../../api/networkaccess-connectivity-getwebcategorybyurl.md
     - name: FQDN filtering rule
       href: ../../resources/networkaccess-fqdnfilteringrule.md
+    - name: URL filtering rule
+      href: ../../resources/networkaccess-urldestinationfilteringrule.md
     - name: Web category filtering rule
       href: ../../resources/networkaccess-webcategoryfilteringrule.md
     - name: Threat intelligence policy

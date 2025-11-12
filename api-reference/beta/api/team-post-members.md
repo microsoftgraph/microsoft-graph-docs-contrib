@@ -37,7 +37,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /teams/{team-id}/members
 ```
 
@@ -71,7 +71,7 @@ For best results, stagger calls with a 2-second buffer.
   "name": "create_conversationmember_from_"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/teams/ee0f5ae2-8bc6-4ae5-8466-7daeebbfa062/members
 Content-type: application/json
 
@@ -120,7 +120,7 @@ Content-type: application/json
   "@odata.type": "microsoft.graph.conversationMember"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 
@@ -147,7 +147,7 @@ Content-type: application/json
   "name": "create_conversationmember_upn"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/teams/ee0f5ae2-8bc6-4ae5-8466-7daeebbfa062/members
 Content-type: application/json
 
@@ -196,7 +196,7 @@ Content-type: application/json
   "@odata.type": "microsoft.graph.conversationMember"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 

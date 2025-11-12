@@ -36,7 +36,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 
-``` http
+```http
 DELETE /identity/b2cUserFlows/{id}/languages/{id}
 ```
 
@@ -69,7 +69,7 @@ The following example shows a request.
 }
 -->
 
-``` http
+```http
 DELETE https://graph.microsoft.com/beta/identity/b2cUserFlows/B2C_1_Customer/languages/es-ES
 ```
 
@@ -113,6 +113,6 @@ The following example shows the response.
 }
 -->
 
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
