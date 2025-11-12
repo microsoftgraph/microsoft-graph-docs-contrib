@@ -22,6 +22,13 @@ Update the properties of a [controlConfiguration](../resources/controlconfigurat
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
+<!-- {
+  "blockType": "permissions",
+  "name": "controlconfiguration-update-permissions"
+}
+-->
+[!INCLUDE [permissions-table](../includes/permissions/controlconfiguration-update-permissions.md)]
+
 ## HTTP request
 
 <!-- {
@@ -65,7 +72,7 @@ The following example shows a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/controlConfigurations/{controlConfigurationId}
+PATCH https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/controlConfigurations/5fd3ef31-a26f-415a-a06c-6cf5064935ce
 Content-Type: application/json
 
 {
@@ -90,12 +97,13 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#controlConfigurations/microsoft.graph.controlConfiguration/$entity",
   "@odata.type": "#microsoft.graph.controlConfiguration",
   "id": "12345678-1234-1234-1234-123456789012",
   "isEnabled": false,
-  "createdBy": "admin@contoso.com",
-  "createdDateTime": "2025-11-01T10:00:00Z",
-  "modifiedBy": "admin@contoso.com",
-  "modifiedDateTime": "2025-11-10T12:30:00Z"
+  "createdBy": "kayat@fimdev.com",
+  "createdDateTime": "2025-10-30T08:00:00Z",
+  "modifiedBy": "kayat@fimdev.com",
+  "modifiedDateTime": "2025-11-05T03:45:00Z"
 }
 ```
