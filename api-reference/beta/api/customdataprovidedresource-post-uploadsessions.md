@@ -56,7 +56,7 @@ You can specify the following properties when creating a **customDataProvidedRes
 |:---|:---|:---|
 |source|String|The name of the Custom Data Provided Resource for which the customer is uploading data. Required.|
 |type|String| The odata type representing the columns of the CSV that are expected to be uploaded in this session. The possible values are: `accessReviewDataUploadTriggerCallbackData`. Required.|
-|data|[accessReviewDataUploadSessionContextData](../resources/accessreviewdatauploadsessioncontextdata.md)| Contains information about the access review definition and access review instance for which the data is being uploaded. Required.|
+|data|[accessReviewResourceDataUploadSessionContextData](../resources/accessreviewresourcedatauploadsessioncontextdata.md)| Contains information about the access review definition and access review instance for which the data is being uploaded. Required.|
 
 ## Response
 
