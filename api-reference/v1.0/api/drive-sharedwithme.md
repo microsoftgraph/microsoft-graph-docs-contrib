@@ -12,6 +12,9 @@ ms.date: 04/04/2024
 
 Namespace: microsoft.graph
 
+> [!CAUTION]
+> The sharedWithMe API is deprecated and will stop returning data after November, 2026.
+
 Get a list of [driveItem](../resources/driveitem.md) objects shared with the owner of a [drive](../resources/drive.md).
 
 The **driveItems** returned from the **sharedWithMe** method always include the [**remoteItem**](../resources/remoteitem.md) facet that indicates they are items from a different drive.

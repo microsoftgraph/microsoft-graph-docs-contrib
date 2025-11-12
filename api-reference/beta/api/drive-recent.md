@@ -11,6 +11,9 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
+> [!CAUTION]
+> The recent API is deprecated and will stop returning data after November, 2026.
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 List a set of items recently used by the signed-in user.
