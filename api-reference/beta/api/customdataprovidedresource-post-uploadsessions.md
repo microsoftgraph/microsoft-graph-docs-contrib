@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create Create a new [customDataProvidedResourceUploadSession](../resources/customdataprovidedresourceuploadsession.md) object.
+Create a new [customDataProvidedResourceUploadSession](../resources/customdataprovidedresourceuploadsession.md) object.
 
 ## Permissions
 
@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
-<!-- {[accesspackageresource-list-uploadsessions.md](accesspackageresource-list-uploadsessions.md)
+<!-- {
   "blockType": "ignored"
 }
 -->
