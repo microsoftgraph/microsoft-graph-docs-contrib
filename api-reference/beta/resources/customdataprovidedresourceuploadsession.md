@@ -33,7 +33,6 @@ Inherits from [entity](../resources/entity.md).
 |:---|:---|:------------|
 |createdDateTime|DateTimeOffset| DateTime when the upload session was created. Read-only.|
 |data|[customExtensionData](../resources/customextensiondata.md)|An object containing the context for which this data is being uploaded. Currently the only possible concrete type is [accessReviewResourceDataUploadSessionContextData](../resources/accessreviewresourcedatauploadsessioncontextdata.md)|
-|expirationDateTime|DateTimeOffset| DateTime when the session automatically expires. No further file uploads are allowed as part of this session after this time.|
 |id|String| Unique identifier of the upload session. Read-only.|
 |isUploadDone|Boolean| Indicates if all the necessary files have been uploaded to this session.|
 |source|String| The source of the access data. This should be set to the customdataprovidedresource's name when creating the session.|

@@ -35,11 +35,19 @@ Inherits from [accessPackageResource](../resources/accesspackageresource.md).
 |displayName|String|The display name of the resource, such as the application name, group name, or site name.|
 |id|String| Read-only.|
 |isPendingOnboarding|Boolean|`True` if the resource isn't yet available for assignment. Read-only. |
+|notificationEndpointConfiguration|[customExtensionEndpointConfiguration](../resources/customextensionendpointconfiguration.md)| The endpoint configuration of the logic app that should be triggered when this access review goes into an initializing state.|
 |originId|String|The unique identifier of the resource in the origin system. If the resource is a  Microsoft Entra group, originId is the identifier of the group. Supports `$filter` (`eq`).|
 |originSystem|String|The type of the resource in the origin system. For a customDataProvidedResource, the value of the originSystem should be set to "CustomDataProvidedResource."  Supports `$filter` (`eq`).|
 |resourceType|String|The type of the resource.|
 |url|String|A unique resource locator for the resource, such as the URL for signing a user into an application.|
 
+## Relationships
+
+| Relationship | Type        | Description |
+|:-------------|:------------|:------------|
+|accessPackageResourceEnvironment|[accessPackageResourceEnvironment](../resources/accesspackageresourceenvironment.md)|Contains the environment information for the resource. This environment can be set using either the `@odata.bind` annotation or the environment's *originId*. Supports `$expand`.|
+|accessPackageResourceRoles|[accessPackageResourceRole](accesspackageresourcerole.md) collection| Read-only. Nullable. Supports `$expand`.|
+|accessPackageResourceScopes|[accessPackageResourceScope](accesspackageresourcescope.md) collection| Read-only. Nullable. Supports `$expand`.|
 
 ## JSON representation
 The following JSON representation shows the resource type.
