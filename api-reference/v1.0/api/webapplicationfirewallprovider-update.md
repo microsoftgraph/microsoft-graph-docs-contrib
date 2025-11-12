@@ -49,7 +49,7 @@ PATCH /identity/riskPrevention/webApplicationFirewallProviders/{webApplicationFi
 ## Request body
 
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
-
+You must specify the **@odata.type** property to specify the type of [webApplicationFirewallProvider](../resources/webapplicationfirewallprovider.md) object to update. For example, "@odata.type": "#microsoft.graph.akamaiWebApplicationFirewallProvider".
 
 |Property|Type|Description|
 |:---|:---|:---|

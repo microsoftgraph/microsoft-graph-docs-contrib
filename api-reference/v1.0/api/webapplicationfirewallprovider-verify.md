@@ -157,10 +157,11 @@ The following example shows a request.
 -->
 ```http
 POST https://graph.microsoft.com/v1.0/identity/riskPrevention/webApplicationFirewallProviders/{webApplicationFirewallProviderId}/verify?$expand=provider
-```
+
 {
     hostName: "www.contoso.com"
 }
+```
 
 #### Response
 

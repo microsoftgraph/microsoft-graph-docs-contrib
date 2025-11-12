@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 
 
-Represents the entry point for risk prevention features in [External Identities](/azure/active-directory/external-identities/) for Microsoft Entra External ID tenants.
+Represents the entry point for risk prevention features in [Microsoft Entra External ID](/entra/external-id/external-identities-overview).
 
 Inherits from [entity](../resources/entity.md).
 
