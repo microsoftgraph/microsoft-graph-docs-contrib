@@ -24,9 +24,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 |Permission type      | Least privileged permission | Higher privileged permissions |
 |:--------------------|:---------------------------|:-----------------------------|
-|Delegated (work or school account) | User.ReadWrite.All | Not available. |
+|Delegated (work or school account) | AgentIdUser.ReadWrite.IdentityParentedBy | AgentIdUser.ReadWrite.All, User.ReadWrite.All |
 |Delegated (personal Microsoft account) | Not supported. | Not supported.|
-|Application | User.ReadWrite.All | Not available. |
+|Application | AgentIdUser.ReadWrite.IdentityParentedBy | AgentIdUser.ReadWrite.All, User.ReadWrite.All |
+
 
 ## HTTP request
 
@@ -35,7 +36,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-PATCH /agentUser/agentUser
+PATCH /users/userId
 ```
 
 ## Request headers
@@ -59,7 +60,6 @@ You must specify the **@odata.type** as `#microsoft.graph.agentUser` in the requ
 |city|String|The city in which the agent user is located.|
 | companyName | String | The name of the company that the agent user is associated with. This property can be useful for describing the company that an external agent user comes from. The maximum length is 64 characters. |
 |country|String|The country/region in which the agent user is located; for example, `US` or `UK`.|
-|customSecurityAttributes|[customSecurityAttributeValue](../resources/customsecurityattributevalue.md)|An open complex type that holds the value of a custom security attribute that is assigned to a directory object.|
 |department|String|The name for the department in which the agent user works.|
 |displayName|String|The name displayed in the address book for the agent user. This property is required when an agent user is created and it can't be cleared during updates.|
 |employeeId|String|The employee identifier assigned to the agent user by the organization. The maximum length is 16 characters.|
@@ -109,7 +109,7 @@ The following example shows a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/agentuser/agentuser
+PATCH https://graph.microsoft.com/beta/users/userId
 Content-Type: application/json
 
 {
@@ -126,9 +126,6 @@ Content-Type: application/json
   "city": "Seattle",
   "companyName": "Contoso",
   "country": "United States",
-  "customSecurityAttributes": {
-    "@odata.type": "microsoft.graph.customSecurityAttributeValue"
-  },
   "department": "Sales",
   "displayName": "Sales Agent",
   "employeeId": "12345",
@@ -178,167 +175,142 @@ Content-Type: application/json
 {
   "@odata.type": "#microsoft.graph.agentUser",
   "id": "929393ae-1e1d-159f-0d83-29f7df42e7b9",
-  "deletedDateTime": "String (timestamp)",
   "signInActivity": {
     "@odata.type": "microsoft.graph.signInActivity"
   },
-  "cloudLicensing": {
-    "@odata.type": "microsoft.graph.cloudLicensing.userCloudLicensing"
-  },
-  "accountEnabled": "Boolean",
-  "ageGroup": "String",
-  "assignedLicenses": [
-    {
-      "@odata.type": "microsoft.graph.assignedLicense"
-    }
-  ],
-  "assignedPlans": [
-    {
-      "@odata.type": "microsoft.graph.assignedPlan"
-    }
-  ],
-  "authorizationInfo": {
-    "@odata.type": "microsoft.graph.authorizationInfo"
-  },
-  "businessPhones": [
-    "String"
-  ],
-  "city": "String",
-  "cloudRealtimeCommunicationInfo": {
-    "@odata.type": "microsoft.graph.cloudRealtimeCommunicationInfo"
-  },
-  "companyName": "String",
-  "consentProvidedForMinor": "String",
-  "country": "String",
-  "createdDateTime": "String (timestamp)",
-  "creationType": "String",
-  "customSecurityAttributes": {
-    "@odata.type": "microsoft.graph.customSecurityAttributeValue"
-  },
-  "department": "String",
-  "deviceKeys": [
-    {
-      "@odata.type": "microsoft.graph.deviceKey"
-    }
-  ],
-  "displayName": "String",
-  "employeeHireDate": "String (timestamp)",
-  "employeeId": "String",
-  "employeeOrgData": {
-    "@odata.type": "microsoft.graph.employeeOrgData"
-  },
-  "employeeType": "String",
-  "employeeLeaveDateTime": "String (timestamp)",
-  "faxNumber": "String",
-  "givenName": "String",
-  "identities": [
-    {
-      "@odata.type": "microsoft.graph.objectIdentity"
-    }
-  ],
-  "imAddresses": [
-    "String"
-  ],
-  "infoCatalogs": [
-    "String"
-  ],
-  "isLicenseReconciliationNeeded": "Boolean",
-  "isManagementRestricted": "Boolean",
-  "isResourceAccount": "Boolean",
-  "jobTitle": "String",
-  "lastPasswordChangeDateTime": "String (timestamp)",
-  "legalAgeGroupClassification": "String",
-  "licenseAssignmentStates": [
-    {
-      "@odata.type": "microsoft.graph.licenseAssignmentState"
-    }
-  ],
-  "mail": "String",
-  "mailNickname": "String",
-  "mobilePhone": "String",
-  "onPremisesDistinguishedName": "String",
-  "onPremisesExtensionAttributes": {
-    "@odata.type": "microsoft.graph.onPremisesExtensionAttributes"
-  },
-  "onPremisesImmutableId": "String",
-  "onPremisesLastSyncDateTime": "String (timestamp)",
-  "onPremisesProvisioningErrors": [
-    {
-      "@odata.type": "microsoft.graph.onPremisesProvisioningError"
-    }
-  ],
-  "onPremisesSecurityIdentifier": "String",
-  "onPremisesSipInfo": {
-    "@odata.type": "microsoft.graph.onPremisesSipInfo"
-  },
-  "onPremisesSyncEnabled": "Boolean",
-  "onPremisesDomainName": "String",
-  "onPremisesSamAccountName": "String",
-  "onPremisesUserPrincipalName": "String",
-  "otherMails": [
-    "String"
-  ],
-  "passwordPolicies": "String",
-  "passwordProfile": {
-    "@odata.type": "microsoft.graph.passwordProfile"
-  },
-  "officeLocation": "String",
-  "postalCode": "String",
-  "preferredDataLocation": "String",
-  "preferredLanguage": "String",
-  "provisionedPlans": [
-    {
-      "@odata.type": "microsoft.graph.provisionedPlan"
-    }
-  ],
-  "proxyAddresses": [
-    "String"
-  ],
-  "refreshTokensValidFromDateTime": "String (timestamp)",
-  "securityIdentifier": "String",
-  "serviceProvisioningErrors": [
-    {
-      "@odata.type": "microsoft.graph.serviceProvisioningXmlError"
-    }
-  ],
-  "showInAddressList": "Boolean",
-  "signInSessionsValidFromDateTime": "String (timestamp)",
-  "state": "String",
-  "streetAddress": "String",
-  "surname": "String",
-  "usageLocation": "String",
-  "userPrincipalName": "String",
-  "externalUserState": "String",
-  "externalUserStateChangeDateTime": "String",
-  "userType": "String",
-  "identityParentId": "String",
-  "mailboxSettings": {
-    "@odata.type": "microsoft.graph.mailboxSettings"
-  },
-  "deviceEnrollmentLimit": "Integer",
-  "print": {
-    "@odata.type": "microsoft.graph.userPrint"
-  },
-  "aboutMe": "String",
-  "birthday": "String (timestamp)",
-  "hireDate": "String (timestamp)",
-  "interests": [
-    "String"
-  ],
-  "mySite": "String",
-  "pastProjects": [
-    "String"
-  ],
-  "preferredName": "String",
-  "responsibilities": [
-    "String"
-  ],
-  "schools": [
-    "String"
-  ],
-  "skills": [
-    "String"
-  ]
+ "cloudLicensing": {
+      "@odata.type": "microsoft.graph.cloudLicensing.userCloudLicensing"
+    },
+    "accountEnabled": "Boolean",
+    "ageGroup": null,
+    "assignedLicenses": [
+      {
+        "@odata.type": "microsoft.graph.assignedLicense"
+      }
+    ],
+    "assignedPlans": [
+      {
+        "@odata.type": "microsoft.graph.assignedPlan"
+      }
+    ],
+    "authorizationInfo": null,
+    "businessPhones": [
+      "String"
+    ],
+    "city": "String",
+    "cloudRealtimeCommunicationInfo": {
+      "@odata.type": "microsoft.graph.cloudRealtimeCommunicationInfo"
+    },
+    "companyName": "String",
+    "consentProvidedForMinor": null,
+    "country": "String",
+    "createdDateTime": "String (timestamp)",
+    "creationType": "String",
+    "department": "String",
+    "displayName": "String",
+    "employeeHireDate": "String (timestamp)",
+    "employeeId": "String",
+    "employeeOrgData": {
+      "@odata.type": "microsoft.graph.employeeOrgData"
+    },
+    "employeeType": "String",
+    "employeeLeaveDateTime": "String (timestamp)",
+    "faxNumber": "String",
+    "givenName": "String",
+    "identities": [
+      {
+        "@odata.type": "microsoft.graph.objectIdentity"
+      }
+    ],
+    "imAddresses": [
+      "String"
+    ],
+    "infoCatalogs": [
+      "String"
+    ],
+    "isLicenseReconciliationNeeded": "Boolean",
+    "isManagementRestricted": "Boolean",
+    "isResourceAccount": "Boolean",
+    "jobTitle": "String",
+    "lastPasswordChangeDateTime": null,
+    "legalAgeGroupClassification": null,
+    "licenseAssignmentStates": [
+      {
+        "@odata.type": "microsoft.graph.licenseAssignmentState"
+      }
+    ],
+    "mail": "String",
+    "mailNickname": "String",
+    "mobilePhone": "String",
+    "onPremisesDistinguishedName": null,
+    "onPremisesExtensionAttributes": null,
+    "onPremisesImmutableId": null,
+    "onPremisesLastSyncDateTime": null,
+    "onPremisesProvisioningErrors": null,
+    "onPremisesSecurityIdentifier": null,
+    "onPremisesSipInfo": null,
+    "onPremisesSyncEnabled": null,
+    "onPremisesDomainName": null,
+    "onPremisesSamAccountName": null,
+    "onPremisesUserPrincipalName": null,
+    "otherMails": [
+      "String"
+    ],
+    "passwordPolicies": null,
+    "passwordProfile": null,
+    "officeLocation": "String",
+    "postalCode": "String",
+    "preferredDataLocation": "String",
+    "preferredLanguage": "String",
+    "provisionedPlans": [
+      {
+        "@odata.type": "microsoft.graph.provisionedPlan"
+      }
+    ],
+    "proxyAddresses": [
+      "String"
+    ],
+    "refreshTokensValidFromDateTime": "String (timestamp)",
+    "securityIdentifier": "String",
+    "serviceProvisioningErrors": [
+      {
+        "@odata.type": "microsoft.graph.serviceProvisioningXmlError"
+      }
+    ],
+    "showInAddressList": "Boolean",
+    "signInSessionsValidFromDateTime": "String (timestamp)",
+    "state": "String",
+    "streetAddress": "String",
+    "surname": "String",
+    "usageLocation": "String",
+    "userPrincipalName": "String",
+    "externalUserState": null,
+    "externalUserStateChangeDateTime": null,
+    "userType": "String",
+    "identityParentId": "String",
+    "mailboxSettings": {
+      "@odata.type": "microsoft.graph.mailboxSettings"
+    },
+    "aboutMe": "String",
+    "birthday": "String (timestamp)",
+    "interests": [
+      "String"
+    ],
+    "mySite": "String",
+    "pastProjects": [
+      "String"
+    ],
+    "preferredName": "String",
+    "responsibilities": [
+      "String"
+    ],
+    "schools": [
+      "String"
+    ],
+    "skills": [
+      "String"
+    ]
+  }
 }
 ```
 
