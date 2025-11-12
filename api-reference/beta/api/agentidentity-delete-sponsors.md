@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Remove a sponsor from a [agentIdentity](../resources/agentidentity.md) object. AgentIdentities require at least one sponsor to manage the agent identity.
+Remove a sponsor from a [agentIdentity](../resources/agentidentity.md) object. Agent identities require at least one sponsor to manage the agent identity.
 
 ## Permissions
 
@@ -36,7 +36,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-DELETE /servicePrincipals/{id}/Microsoft.Graph.AgentIdentity/sponsors/{sponsorObjectId}/$ref
+DELETE /servicePrincipals/{id}/microsoft.graph.agentIdentity/sponsors/{sponsorObjectId}/$ref
 ```
 
 ## Request headers
@@ -64,14 +64,13 @@ The following example shows a request.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/servicePrincipals/{id}/Microsoft.Graph.AgentIdentity/sponsors/{sponsorObjectId}/$ref
+DELETE https://graph.microsoft.com/beta/servicePrincipals/{id}/microsoft.graph.agentIdentity/sponsors/{sponsorObjectId}/$ref
 ```
 
 
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true

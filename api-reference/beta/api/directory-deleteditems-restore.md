@@ -18,14 +18,14 @@ Restore a recently deleted directory object from [deleted items](../resources/di
 - [administrativeUnit](../resources/administrativeunit.md)
 - [application](../resources/application.md)
 - [agentIdentityBlueprint](../resources/agentidentityblueprint.md)
+- [agentIdentity](../resources/agentidentity.md)
+- [agentIdentityBlueprintPrincipal](../resources/agentidentityblueprintprincipal.md)
 - [certificateBasedAuthPki](../resources/certificatebasedauthpki.md)
 - [certificateAuthorityDetail](../resources/certificateauthoritydetail.md)
 - [externalUserProfile](../resources/externaluserprofile.md)
 - [group](../resources/group.md)
 - [pendingExternalUserProfile](../resources/pendingexternaluserprofile.md)
 - [servicePrincipal](../resources/serviceprincipal.md)
-- [agentIdentity](../resources/agentidentity.md)
-- [agentIdentityBlueprintPrincipal](../resources/agentidentityblueprintprincipal.md)
 - [user](../resources/user.md)
 
 

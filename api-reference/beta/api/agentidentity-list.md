@@ -20,10 +20,14 @@ Retrieve a list of [agentIdentity](../resources/agentidentity.md) objects. Does 
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "permissions", "name": "serviceprincipal_list" } -->
-[!INCLUDE [permissions-table](../includes/permissions/serviceprincipal-list-permissions.md)]
+<!-- {
+  "blockType": "permissions",
+  "name": "agentidentity-list-permissions"
+}
+-->
+[!INCLUDE [permissions-table](../includes/permissions/agentidentity-list-permissions.md)]
 
-[!INCLUDE [rbac-serviceprincipal-apis-read](../includes/rbac-for-apis/rbac-serviceprincipal-apis-read.md)]
+[!INCLUDE [rbac-agentid-apis-write](../includes/rbac-for-apis/rbac-agentid-apis-write.md)]
 
 ## HTTP request
 

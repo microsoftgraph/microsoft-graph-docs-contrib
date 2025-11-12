@@ -27,7 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ## HTTP request
 
 ```http
-DELETE /servicePrincipals/{id}/Microsoft.Graph.AgentIdentity
+DELETE /servicePrincipals/{id}/microsoft.graph.agentIdentity
 ```
 
 ## Request headers
@@ -53,7 +53,7 @@ The following example shows a request.
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/beta/servicePrincipals/{id}/Microsoft.Graph.AgentIdentity
+DELETE https://graph.microsoft.com/beta/servicePrincipals/{id}/microsoft.graph.agentIdentity
 ```
 
 ### Response

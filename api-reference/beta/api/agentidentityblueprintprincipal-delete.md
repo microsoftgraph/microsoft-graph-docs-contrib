@@ -29,8 +29,6 @@ You can address the agent identity blueprint principal using either its **id** o
 
 ```http
 DELETE /servicePrincipals/{id}/microsoft.graph.agentIdentityBlueprintPrincipal
-```
-```http
 DELETE /servicePrincipals(appId='{appId}')/microsoft.graph.agentIdentityBlueprintPrincipal
 ```
 

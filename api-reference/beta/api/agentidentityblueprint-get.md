@@ -36,7 +36,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /applications/{id}/Microsoft.Graph.AgentIdentityBlueprint
+GET /applications/{id}/microsoft.graph.agentIdentityBlueprint
 ```
 
 ## Optional query parameters
@@ -90,9 +90,9 @@ Content-Type: application/json
   "value": {
     "@odata.type": "#microsoft.graph.agentIdentityBlueprint",
     "id": "08be1f79-37a1-49c0-b444-3075e74d1e8c",
-    "appId": "11f8f3e9-97df-4bef-84a8-1aa86d5dbc3f",
+    "appId": "00001111-aaaa-2222-bbbb-3333cccc4444",
     "identifierUris": [
-        "api://11f8f3e9-97df-4bef-84a8-1aa86d5dbc3f"
+        "api://00001111-aaaa-2222-bbbb-3333cccc4444"
     ],
     "createdByAppId": "14d82eec-204b-4c2f-b7e8-296a70dab67e",
     "createdDateTime": "2025-09-10T17:04:20Z",

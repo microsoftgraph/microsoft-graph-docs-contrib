@@ -38,7 +38,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /applications/{id}/Microsoft.Graph.AgentIdentityBlueprint/owners
+GET /applications/{id}/microsoft.graph.agentIdentityBlueprint/owners
 ```
 
 ## Optional query parameters

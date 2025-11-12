@@ -61,7 +61,7 @@ The following example shows the request.
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/beta/servicePrincipals/{id}/Microsoft.Graph.AgentIdentity/owners/1511d5e7-c324-4362-ad4b-16c20076e5aa/$ref
+DELETE https://graph.microsoft.com/beta/servicePrincipals/{id}/microsoft.graph.agentIdentity/owners/1511d5e7-c324-4362-ad4b-16c20076e5aa/$ref
 
 ```
 

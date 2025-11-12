@@ -17,7 +17,6 @@ Namespace: microsoft.graph
 
 Create a new [agentIdentity](../resources/agentidentity.md) object from the specified [agent identity blueprint](../resources/agentidentityblueprint.md).
 
-
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
@@ -50,7 +49,7 @@ If successful, this method returns a `201 Created` response code and a [agentIde
 The following example shows a request.
 
 ```http
-POST https://graph.microsoft.com/beta/servicePrincipals/Microsoft.Graph.AgentIdentity
+POST https://graph.microsoft.com/beta/servicePrincipals/microsoft.graph.agentIdentity
 Content-type: application/json
 
 {
