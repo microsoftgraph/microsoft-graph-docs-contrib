@@ -41,6 +41,8 @@ The following JSON representation shows the resource type.
 {
   "@odata.type": "#microsoft.graph.agentic.agentSignIn",
   "agentType": "String",
-  "parentAppId": "String"
+  "parentAppId": "String",
+  "agentSubjectType": "String",
+  "agentSubjectParentId": "String"
 }
 ```
