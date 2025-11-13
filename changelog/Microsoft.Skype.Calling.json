@@ -28,6 +28,7 @@
       },    
     {
       "ChangeList": [
+        {
           "Id": "20a311ad-fe97-407a-948c-9a171ad5984e",
           "ApiChange": "Property",
           "ChangedApiName": "email",
