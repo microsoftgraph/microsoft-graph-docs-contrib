@@ -37,7 +37,7 @@ Suppose an administrator asks: "*How many users do we have in our Microsoft Entr
 
 1. **Query selection**: The LLM evaluates the list of API calls and selects the API call with the highest relevance score as the best fit to fulfill the request, which is `GET /users/$count`.
 
-1. **Execution**: The LLM determines from the list of running Enterprise MCP Server tools, to use the  `make_graph_call_readonly` tool to execute the `GET /users/$count` call. It honors the user's privileges when making the call.
+1. **Execution**: The LLM determines from the list of running Enterprise MCP Server tools, to use the  `microsoft_graph_get` tool to execute the `GET /users/$count` call. It honors the user's privileges when making the call.
 
 1. **API Processing**: The MCP Server processes the request and:
    - Forwards the request to the Microsoft Graph service to execute the call.
