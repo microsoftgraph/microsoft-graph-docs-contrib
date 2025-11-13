@@ -22,7 +22,7 @@ At a minimum, you must specify the required properties. You can optionally speci
 This operation returns by default only a subset of the properties for each **user** and **agentUser**. These default properties are noted in the [Properties](../resources/user.md#properties) section. To get properties that are not returned by default, do a [GET operation](user-get.md) and specify the properties in a `$select` OData query option.
 
 >[!NOTE]
->To create external users as part of B2B collaboration with your organization, use the [invitation API](invitation-post.md). To create a customer, citizen, or business partner in Microsoft Entra External ID in external tenants, see [Example 3: Create a customer account](#example-3-create-a-customer-account-in-external-tenants).
+>To create external users as part of B2B collaboration with your organization, use the [invitation API](invitation-post.md). To create a customer, citizen, or business partner in Microsoft Entra External ID in external tenants, see [Example 4: Create a customer account](#example-4-create-a-customer-account-in-external-tenants).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

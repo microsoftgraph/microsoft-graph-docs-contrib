@@ -235,6 +235,7 @@ Content-Type: application/json
   }
 }
 ```
+
 ### Example 2: list all the non-agent users and only show the display name of the users
 
 #### Request
@@ -248,12 +249,6 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/beta/users?$count=true&$filter=not isof('microsoft.graph.agentUser')&$select=displayName
 ```
-## Request headers
-
-|Name|Description|
-|:---|:---|
-|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
-|ConsistencyLevel|eventual. Required.|
 
 #### Response
 
@@ -270,7 +265,6 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#users(displayName)",
     "@odata.count": 3,
     "value": [
@@ -288,3 +282,4 @@ Content-Type: application/json
         }
   ]
 }
+```

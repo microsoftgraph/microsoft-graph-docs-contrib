@@ -129,6 +129,7 @@ Content-type: application/json
     "identityParentId": "a1b2c3d4-e5f6-7890-abcd-ef1234567890"
 }
 ```
+
 ### Example 2: Create an agent user through users' endpoint
 
 #### Request
@@ -181,6 +182,7 @@ Content-type: application/json
     "userPrincipalName": "salesagent@contoso.com",
     "identityParentId": "7a94d794-5271-4c3a-9364-3dbb0f085a1r"
 }
+```
 
 ## Related content
 
