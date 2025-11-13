@@ -21,11 +21,9 @@ For agentic [sign-ins](../resources/signin.md), provides information about the a
 |Property|Type|Description|
 |:---|:---|:---|
 |agentSubjectParentId|String|The subject's parent id. This will either be the id of the agent identity or agent Blueprint|
-|agentSubjectType|microsoft.graph.agentic.agentType|The identity of the subject of the token which was requested.|The possible values are: `notAgentic`, `agenticAppBuilder`, `agenticApp`, `agenticAppInstance`, `unknownFutureValue`.|
-|agentType|microsoft.graph.agentic.agentType|Indicates whether the identity is agentic. Values typically distinguish between agentic and non-agentic roles|The possible values are: `notAgentic`, `agenticAppBuilder`, `agenticApp`, `agenticAppInstance`, `unknownFutureValue`.|
+|agentSubjectType|microsoft.graph.agentic.agentType|The identity of the subject of the token which was requested.|The possible values are: `notAgentic`, `agenticAppBuilder`, `agenticApp`, `agenticAppInstance`, `agentIdentityBlueprintPrincipal`, `agentIDuser`, `unknownFutureValue`.|
+|agentType|microsoft.graph.agentic.agentType|Indicates whether the identity is agentic. Values typically distinguish between agentic and non-agentic roles|The possible values are: `notAgentic`, `agenticAppBuilder`, `agenticApp`, `agenticAppInstance`, `agentIdentityBlueprintPrincipal`, `agentIDuser`, `unknownFutureValue`.|
 |parentAppId|String|The id of the parent of the value within agentType|
-|agentServicePrincipalId|String|**TODO: Add Description**|
-
 
 ## Relationships
 
