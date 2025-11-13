@@ -520,8 +520,8 @@
             "cloudPcSnapshot",
             "cloudPcSupportedRegion",
             "cloudPcUserSetting",
-            "virtualEndpoint"
-            "cloudPcReports",
+            "virtualEndpoint",
+            "cloudPcReports"
           ],
           "complexTypes": [
             "appScope",
