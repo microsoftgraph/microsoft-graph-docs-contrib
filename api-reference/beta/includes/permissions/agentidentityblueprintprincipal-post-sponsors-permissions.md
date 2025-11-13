@@ -8,5 +8,5 @@ ms.localizationpriority: medium
 |:---|:---|:---|
 |Delegated (work or school account)| Not yet available. | Not yet available. |
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application| Not yet available. | Not yet available. |
+|Application| AgentIdentityBlueprintPrincipal.ReadWrite.All. | Not yet available. |
 

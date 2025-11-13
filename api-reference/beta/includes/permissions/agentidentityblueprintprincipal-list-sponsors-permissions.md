@@ -8,4 +8,4 @@ ms.localizationpriority: medium
 |:---|:---|:---|
 |Delegated (work or school account)| Not yet available. | Not yet available. |
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application| Not yet available. | Not yet available. |
+|Application| Application.Read.All. | Not yet available. |
