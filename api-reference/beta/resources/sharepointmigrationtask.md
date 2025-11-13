@@ -18,7 +18,7 @@ This entity captures a specific intent to do a crossOrganizationMigration operat
 
 | Method | Return type | Description |
 |:-------------|:--------------------------|:-----------------------------------------------|
-| [Get](../api/sharepointmigrationtask-get.md) | SharePointMigrationTask[] | Attempt to get the specified sharePointMigrationTask by ID and return its status after this attempt. |
+| [Get] | SharePointMigrationTask[] | Attempt to get the specified sharePointMigrationTask by ID and return its status after this attempt. |
 
 ## Properties
 
@@ -41,3 +41,5 @@ Here's a JSON representation of a **microsoft.graph.sharePointMigrationTask** re
   "errors": [{ "@odata.type": "microsoft.graph.error" }] 
 }
 ```
+
+[Get]: ../api/sharepointmigrationtask-get.md
