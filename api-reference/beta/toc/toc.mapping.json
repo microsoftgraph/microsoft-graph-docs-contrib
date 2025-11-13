@@ -1055,7 +1055,7 @@
         },
         {
           "name": "SharePoint cross-tenant migration (preview)",
-          "overview": "../../resources/sharepoint-crossorganization-overview.md",
+          "overview": "../../resources/sharepoint-crossorganization-api-overview.md",
           "resources": [
             "sharePointGroupIdentityMapping",
             "sharePointUserIdentityMapping"
