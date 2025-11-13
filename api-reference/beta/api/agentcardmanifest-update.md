@@ -65,7 +65,7 @@ PATCH /agentRegistry/agentCardManifests/{agentCardManifestId}
 |capabilities|[agentCapabilities](../resources/agentcapabilities.md)|Specific capabilities supported by the agent. Optional.|
 |skills|[agentSkill](../resources/agentskill.md) collection|Skills/capabilities that the agent can perform. Optional.|
 |supportsAuthenticatedExtendedCard|Boolean|Whether agent supports authenticated extended card retrieval. Optional.|
-|ownerIds|String collection|List of owner identifiers. Optional.|
+|ownerIds|String collection|List of owner identifiers for the agent card manifest, can be users or service principals. Optional.|
 |managedBy|String|Application identifier managing this manifest. Optional.|
 |originatingStore|String|Name of the store/system where agent originated. Optional.|
 

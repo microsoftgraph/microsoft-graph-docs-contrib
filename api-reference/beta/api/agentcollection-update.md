@@ -51,7 +51,7 @@ PATCH /agentRegistry/agentCollections/{agentCollectionId}
 
 |Property|Type|Description|
 |:---|:---|:---|
-|ownerIds|String collection|IDs of owners allowed to manage the collection. Required.|
+|ownerIds|String collection|List of owner identifiers for the agent collection, can be users or service principals. Required.|
 |managedBy|String|Application (service principal) id managing the collection. Optional.|
 |originatingStore|String| Source system/store where the collection originated. Optional.|
 |createdBy|String|User who created the collection. Optional.|
@@ -81,15 +81,7 @@ PATCH https://graph.microsoft.com/beta/agentRegistry/agentCollections/{agentColl
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.agentCollection",
-  "ownerIds": [
-    "String"
-  ],
-  "managedBy": "String",
-  "originatingStore": "String",
-  "createdBy": "String",
-  "displayName": "String",
-  "description": "String"
+  "displayName": "New Display Name"
 }
 ```
 
@@ -104,22 +96,7 @@ The following example shows the response.
 }
 -->
 ``` http
-HTTP/1.1 200 OK
+HTTP/1.1 204 No Content
 Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.agentCollection",
-  "id": "c2d9e3ff-01a4-890c-f2bc-8edd3bc2eb24",
-  "ownerIds": [
-    "String"
-  ],
-  "managedBy": "String",
-  "originatingStore": "String",
-  "createdBy": "String",
-  "displayName": "String",
-  "description": "String",
-  "createdDateTime": "String (timestamp)",
-  "lastModifiedDateTime": "String (timestamp)"
-}
 ```
 

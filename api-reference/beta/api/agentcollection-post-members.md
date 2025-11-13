@@ -1,6 +1,6 @@
 ---
 title: "Add agentInstance"
-description: "Add members by posting to the members collection."
+description: "Add members by posting to the agent collection."
 author: "jasondou"
 ms.date: 11/06/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Add members by posting to the members collection.
+Add agentInstance by posting to the agent collection. To add multiple agentInstance in batch, consider using [MS Graph JSON batching](https://learn.microsoft.com/graph/json-batching).
 
 ## Permissions
 

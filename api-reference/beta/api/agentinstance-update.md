@@ -51,7 +51,7 @@ PATCH /agentRegistry/agentInstances/{agentInstanceId}
 
 |Property|Type|Description|
 |:---|:---|:---|
-|ownerIds|String collection|List of owner identifiers for the agent instance. Required.|
+|ownerIds|String collection|List of owner identifiers for the agent instance, can be users or service principals. Required.|
 |managedBy|String|Application identifier managing this agent. Optional.|
 |originatingStore|String|Name of the store/system where agent originated. Optional.|
 |createdBy|String|User who created the agent instance (read-only). Optional.|
@@ -75,7 +75,8 @@ If successful, this method returns a `200 OK` response code and an updated [agen
 
 ## Examples
 
-### Request
+### Example 1: Update to reference an existing agentCardManifest
+#### Request
 
 The following example shows a request.
 <!-- {
@@ -88,30 +89,69 @@ PATCH https://graph.microsoft.com/beta/agentRegistry/agentInstances/{agentInstan
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.agentInstance",
-  "ownerIds": [
-    "String"
-  ],
-  "managedBy": "String",
-  "originatingStore": "String",
-  "createdBy": "String",
-  "displayName": "String",
-  "sourceAgentId": "String",
-  "agentIdentityBlueprintId": "String",
-  "agentIdentityId": "String",
-  "agentUserId": "String",
-  "url": "String",
-  "preferredTransport": "String",
-  "additionalInterfaces": [
-    {
-      "@odata.type": "microsoft.graph.agentInterface"
-    }
-  ],
-  "signatures": [
-    {
-      "@odata.type": "microsoft.graph.agentCardSignature"
-    }
-  ]
+  "agentCardManifest": {
+    "ownerIds": [
+      "0ef68a76-e247-41dd-947b-41282760a2ac"
+    ],
+    "originatingStore": "Copilot Studio",
+    "displayName": "Conditional Access Agent Card",
+    "description": "Manages organizational conditional access policies",
+    "iconUrl": "https://example.com/icon.png",
+    "provider": {
+      "organization": "Test Organization",
+      "url": "https://test.com"
+    },
+    "protocolVersion": "1.0",
+    "version": "1.0.0",
+    "documentationUrl": "https://example.com/docs",
+    "capabilities": {
+      "streaming": false,
+      "pushNotifications": false,
+      "stateTransitionHistory": true,
+      "extensions": [
+        {
+          "uri": "https://contoso.example.com/a2a/capabilities/secureMessaging",
+          "description": null,
+          "required": false,
+          "params": {
+            "useHttps": true
+          }
+        }
+      ]
+    },
+    "defaultInputModes": [
+      "application/json"
+    ],
+    "defaultOutputModes": [
+      "application/json",
+      "text/html"
+    ],
+    "supportsAuthenticatedExtendedCard": true,
+    "skills": [
+      {
+        "id": "threat-detection",
+        "displayName": "Threat Detection",
+        "description": "Detect security threats in real-time",
+        "tags": [
+          "security",
+          "threat",
+          "detection"
+        ],
+        "examples": [
+          "Analyze this log for threats",
+          "Check for malware"
+        ],
+        "inputModes": [
+          "application/json",
+          "text/plain"
+        ],
+        "outputModes": [
+          "application/json",
+          "text/html"
+        ]
+      }
+    ]
+  }
 }
 ```
 
@@ -126,36 +166,75 @@ The following example shows the response.
 }
 -->
 ``` http
-HTTP/1.1 200 OK
+HTTP/1.1 204 No Content
+Content-Type: application/json
+
+```
+
+### Example 2: Update to reference an existing agentCardManifest
+#### Request
+
+The following example shows a request.
+<!-- {
+  "blockType": "request",
+  "name": "update_agentinstance"
+}
+-->
+``` http
+PATCH https://graph.microsoft.com/beta/agentRegistry/agentInstances/{agentInstanceId}
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.agentInstance",
-  "id": "3d562f1c-8afe-22af-1edb-f273075e268e",
-  "ownerIds": [
-    "String"
-  ],
-  "managedBy": "String",
-  "originatingStore": "String",
-  "createdBy": "String",
-  "displayName": "String",
-  "sourceAgentId": "String",
-  "agentIdentityBlueprintId": "String",
-  "agentIdentityId": "String",
-  "agentUserId": "String",
-  "createdDateTime": "String (timestamp)",
-  "lastModifiedDateTime": "String (timestamp)",
-  "url": "String",
-  "preferredTransport": "String",
-  "additionalInterfaces": [
-    {
-      "@odata.type": "microsoft.graph.agentInterface"
-    }
-  ],
-  "signatures": [
-    {
-      "@odata.type": "microsoft.graph.agentCardSignature"
-    }
-  ]
+  "agentCardManifest@odata.bind": "https://graph.microsoft.com/beta/agentRegistry/agentCardManifests('employee-assistant')"
 }
+```
+
+
+### Response
+
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
+``` http
+HTTP/1.1 204 No Content
+Content-Type: application/json
+
+```
+
+### Example 3: Update displayName
+#### Request
+
+The following example shows a request.
+<!-- {
+  "blockType": "request",
+  "name": "update_agentinstance"
+}
+-->
+``` http
+PATCH https://graph.microsoft.com/beta/agentRegistry/agentInstances/{agentInstanceId}
+Content-Type: application/json
+
+{
+  "displayName": "Teams Meeting Scheduler Agent"
+}
+```
+
+
+### Response
+
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
+``` http
+HTTP/1.1 204 No Content
+Content-Type: application/json
+
 ```

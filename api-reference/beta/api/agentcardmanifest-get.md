@@ -85,50 +85,112 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.agentCardManifest",
-    "id": "5d1d9ba4-36ed-2e0c-c182-9da69c5e398d",
-    "ownerIds": [
-      "String"
-    ],
-    "managedBy": "String",
-    "originatingStore": "String",
-    "createdBy": "String",
-    "createdDateTime": "String (timestamp)",
-    "lastModifiedDateTime": "String (timestamp)",
-    "protocolVersion": "String",
-    "displayName": "String",
-    "description": "String",
-    "iconUrl": "String",
-    "provider": {
-      "@odata.type": "microsoft.graph.agentProvider"
-    },
-    "version": "String",
-    "documentationUrl": "String",
-    "capabilities": {
-      "@odata.type": "microsoft.graph.agentCapabilities"
-    },
-    "securitySchemes": {
-      "@odata.type": "microsoft.graph.securitySchemes"
-    },
-    "security": [
+  "id": "Security Copilot Platform Agent Card Manifest: 00223",
+  "ownerIds": [
+    "daf58b0e-44e1-433c-b6b0-ca70cae320b8",
+    "b9108c41-d2d2-4e78-b073-92f57b752bd0"
+  ],
+  "managedBy": "719cc904-9700-4e08-9941-fd826cc84c60",
+  "originatingStore": "Microsoft Security Copilot",
+  "createdBy": "d47bffae-411a-4de9-8548-05e79bc01f0d",
+  "protocolVersion": "0.2.9",
+  "createdDateTime": "2025-01-01T00:00:00.1234567Z",
+  "lastModifiedDateTime": "2025-01-01T00:00:00.1234567Z",
+  "displayName": "Conditional Access Agent",
+  "description": "The Conditional Access optimization agent helps you ensure all users and applications are protected by Conditional Access policies.",
+  "iconUrl": "https://conditional-access-agent.example.com/icon",
+  "provider": {
+    "organization": "Microsoft Inc.",
+    "url": "https://www.microsoft.com"
+  },
+  "version": "1.2.0",
+  "documentationUrl": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/agent-optimization",
+  "capabilities": {
+    "streaming": true,
+    "pushNotifications": true,
+    "stateTransitionHistory": false,
+    "extensions": [
       {
-        "@odata.type": "microsoft.graph.securityRequirement"
+        "uri": "https://contoso.example.com/a2a/capabilities/secureMessaging",
+        "description": null,
+        "required": false,
+        "params": {
+          "useHttps": true,
+          "info": {
+            "version": "1.0.0"
+          }
+        }
       }
-    ],
-    "defaultInputModes": [
-      "String"
-    ],
-    "defaultOutputModes": [
-      "String"
-    ],
-    "skills": [
-      {
-        "@odata.type": "microsoft.graph.agentSkill"
+    ]
+  },
+  "securitySchemes": {
+    "google": {
+      "@odata.type": "#microsoft.graph.apiKeySecurityScheme",
+      "type": "apiKey",
+      "description": "Use an api key",
+      "name": "key",
+      "in": "cookie"
+    },
+    "entra": {
+      "@odata.type": "#microsoft.graph.oAuth2SecurityScheme",
+      "type": "oauth2",
+      "description": "Use oauth",
+      "flows": {
+        "clientCredentials": {
+          "tokenUrl": "https://login.microsoftonline.com",
+          "refreshUrl": null,
+          "scopes": {
+            "agent.run": "run the agent"
+          }
+        }
       }
-    ],
-    "supportsAuthenticatedExtendedCard": "Boolean"
-  }
+    }
+  },
+  "security": [
+    {
+      "google": []
+    },
+    {
+      "entra": []
+    }
+  ],
+  "defaultInputModes": [
+    "application/json"
+  ],
+  "defaultOutputModes": [
+    "application/json",
+    "text/html"
+  ],
+  "skills": [
+    {
+      "id": "analyze-conditional-access",
+      "displayName": "CA Optimizer",
+      "description": "The agent can recommend new policies and update existing conditional access policies.",
+      "tags": [
+        "security",
+        "optimize",
+        "conditional-access"
+      ],
+      "examples": [
+        "Find policies that need updating."
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "application/vnd.geo+json",
+        "text/html"
+      ],
+      "security": [
+        {
+          "entra": []
+        }
+      ]
+    }
+  ],
+  "supportsAuthenticatedExtendedCard": false
 }
 ```
 

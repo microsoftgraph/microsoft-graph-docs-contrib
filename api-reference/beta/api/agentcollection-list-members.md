@@ -73,7 +73,7 @@ GET https://graph.microsoft.com/beta/agentRegistry/agentInstances/{agentInstance
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
+>**Note:** Only the below properties are returned. Attempting to select more properties than the above example will yield a 400 Bad Request.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -87,13 +87,22 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.agentInstance",
-      "id": "3d562f1c-8afe-22af-1edb-f273075e268e",
-      "originatingStore": "String",
-      "displayName": "String",
-      "agentIdentityBlueprintId": "String",
-      "agentIdentityId": "String",
-      "agentUserId": "String"
+      "id": "Security Copilot Platform Agent: 00123",
+      "managedBy": "719cc904-9700-4e08-9941-fd826cc84c60",
+      "originatingStore": "Microsoft Security Copilot",
+      "displayName": "Conditional Access Agent",
+      "agentIdentityBlueprintId": "cc08c41-d2d2-4e78-b073-92f57b752bd0",
+      "agentIdentityId": "cd108c41-d2d2-4e78-b073-92f57b752bd0",
+      "agentUserId": null
+    },
+    {
+      "id": "Security Copilot Platform Agent: 00222",
+      "managedBy": "719cc904-9700-4e08-9941-fd826cc84c60",
+      "originatingStore": "Microsoft Security Copilot",
+      "displayName": "Conditional Access Agent",
+      "agentIdentityBlueprintId": "ab108c41-d2d2-4e78-b073-92f57b752bd0",
+      "agentIdentityId": "ac108c41-d2d2-4e78-b073-92f57b752bd0",
+      "agentUserId": null
     }
   ]
 }
