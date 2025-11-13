@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the completeAfterDateTime of a [crossTenantMigrationJob](../resources/crosstenantmigrationjob.md) object. Only updates to the completeAfterDateTime are supported. Use this to change when the [crossTenantMigrationJob](../resources/crosstenantmigrationjob.md) will begin processing. If completeAfterDateTime is set to the past, the [crossTenantMigrationJob](../resources/crosstenantmigrationjob.md) will begin processing.
+Update the completeAfterDateTime of a [crossTenantMigrationJob](../resources/crosstenantmigrationjob.md) object. Only updates to the completeAfterDateTime are supported. Use this function to change when the [crossTenantMigrationJob](../resources/crosstenantmigrationjob.md) starts processing. If completeAfterDateTime is set to the past, the [crossTenantMigrationJob](../resources/crosstenantmigrationjob.md) starts processing.
 
 ## Permissions
 

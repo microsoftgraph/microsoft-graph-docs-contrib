@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Cancel a specific [crossTenantMigrationTask](../resources/crosstenantmigrationtask.md) for a User within a CrossTenantMigrationJob. 
 
-If the User migration cannot be cancelled or is in a terminal state, a a `409 CONFLICT` response code is returned, and the migration will continue.
+If the User migration can't be canceled or is in a terminal state, a `409 CONFLICT` response code is returned, and the migration continues.
 
 ## Permissions
 
@@ -55,7 +55,7 @@ Don't supply a request body for this method.
 
 If successful, this action returns a `202 Accepted` response code and a [crossTenantMigrationCancelResponse](../resources/crosstenantmigrationcancelresponse.md) in the response body.
 
-If not successful, a `409 CONFLICT` response code is returned, and the migration will continue.
+If not successful, a `409 CONFLICT` response code is returned, and the migration continues.
 
 ## Examples
 

@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Validate the configuration of a [crossTenantMigrationJob](../resources/crosstenantmigrationjob.md). This does not migrate any content, but goes through validation for the specified workloads to find any errors or misconfigurations that would affect an actual migration job. 
+Validate the configuration of a [crossTenantMigrationJob](../resources/crosstenantmigrationjob.md). This function doesn't migrate any content, but goes through validation for the specified workloads to find any errors or misconfigurations that would affect an actual migration job. 
 
 ## Permissions
 
@@ -54,7 +54,7 @@ The following table lists the parameters that are required when you call this ac
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|displayName|String|Name of the crossTenantMigrationJob to validate the configuratio of.|
+|displayName|String|Name of the crossTenantMigrationJob to validate|
 |completeAfterDateTime|String|When the CrossTenantMigrationJob|
 |sourceTenantId|String|Source tenant for the CrossTenantMigrationJob|
 |exchangeSettings|[exchangeOnlineCrossTenantMigrationSettings](../resources/exchangeonlinecrosstenantmigrationsettings.md)|Exchange migration settings for the CrossTenantMigrationJob|

@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Cancel a [crossTenantMigrationJob](../resources/crosstenantmigrationjob.md). All tasks within the job which were in a sync state will be cancelled. If the job cannot be cancelled, a `409 Conflict` response will be returned and the migrations will continue. This happens when a migration has already begun or reached a terminal state.
+Cancel a [crossTenantMigrationJob](../resources/crosstenantmigrationjob.md). All tasks within the job that were in a `Sync` state are canceled. If the job cannot be cancelled, a `409 Conflict` response is returned and the migrations continue. This response happens when a migration has started or reached a terminal state.
 
 ## Permissions
 
@@ -51,7 +51,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this action returns a `202 ACCEPTED` response code and a [crossTenantMigrationCancelResponse](../resources/crosstenantmigrationcancelresponse.md) in the response body. If not successful, a `409 CONFLICT` response code is returned, and the migration will continue.
+If successful, this action returns a `202 ACCEPTED` response code and a [crossTenantMigrationCancelResponse](../resources/crosstenantmigrationcancelresponse.md) in the response body. If not successful, a `409 CONFLICT` response code is returned, and the migration continues.
 
 ## Examples
 
