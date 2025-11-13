@@ -20,12 +20,6 @@ This entity captures a specific intent to do a crossOrganizationMigration operat
 |:-------------|:--------------------------|:-----------------------------------------------|
 | [Get] | SharePointMigrationTask[] | Attempt to get the specified sharePointMigrationTask by ID and return its status after this attempt. |
 
-## Properties
-
-| Property | Type | Description |
-|:-------------------|:------------------------|:-----------------------------------------------|
-| ID | string | Unique ID of the crossOrganizationMigration operation for the source organization and resource defined in the parameters. Key. Omit this property during creation. The service returns it automatically. Only on OneDrive and SharePoint. |
-
 ## JSON Representation
 
 Here's a JSON representation of a **microsoft.graph.sharePointMigrationTask** resource.
