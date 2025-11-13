@@ -20,7 +20,7 @@ Inherits from [baseMapFeature](../resources/basemapfeature.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/levelmap-list.md)|[levelMap](../resources/levelmap.md) collection|Get a list of the levelMap objects and their properties.|
+|[List](../api/buildingmap-list-levels.md)|[levelMap](../resources/levelmap.md) collection|Get a list of the levelMap objects and their properties.|
 |[List fixtures](../api/levelmap-list-fixtures.md)|[fixtureMap](../resources/fixturemap.md) collection|Get a list of the [fixtureMap](../resources/fixturemap.md) objects and their properties.|
 |[List sections](../api/levelmap-list-sections.md)|[sectionMap](../resources/sectionmap.md) collection|Get a list of the [sectionMap](../resources/sectionmap.md) objects and their properties.|
 |[List units](../api/levelmap-list-units.md)|[unitMap](../resources/unitmap.md) collection|Get a list of the [unitMap](../resources/unitmap.md) objects and their properties.|
