@@ -68,7 +68,7 @@ The following example shows a request.
   "name": "reportsthis.getapplicationusageanalytics"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/networkAccess/reports/getApplicationUsageAnalytics(startDateTime={startDateTime},endDateTime={endDateTime},aggregatedBy={aggregatedBy})
 ```
 

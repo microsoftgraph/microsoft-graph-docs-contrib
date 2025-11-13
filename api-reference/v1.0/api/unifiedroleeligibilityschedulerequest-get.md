@@ -58,7 +58,7 @@ If successful, this method returns a `200 OK` response code and an [unifiedRoleE
   "name": "get_unifiedroleeligibilityschedulerequest"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/roleManagement/directory/roleEligibilityScheduleRequests/f341269e-c926-41fa-a905-cef3b01b2a67
 ```
 

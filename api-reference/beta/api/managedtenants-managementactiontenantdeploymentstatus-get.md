@@ -58,7 +58,7 @@ If successful, this method returns a `200 OK` response code and a [managementAct
   "name": "get_managementactiontenantdeploymentstatus"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/managementActionTenantDeploymentStatuses/{managementActionTenantDeploymentStatusId}
 ```
 

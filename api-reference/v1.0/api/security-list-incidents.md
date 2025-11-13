@@ -81,7 +81,7 @@ The following example shows a request.
   "name": "list_incident_for_defender"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/security/incidents
 ```
 
@@ -178,7 +178,7 @@ Content-Type: application/json
   "name": "list_incident_with_their_alerts"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/security/incidents?$expand=alerts
 ```
 

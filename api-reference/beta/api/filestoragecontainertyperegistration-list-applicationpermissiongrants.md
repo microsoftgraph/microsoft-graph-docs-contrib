@@ -71,7 +71,7 @@ The following example shows how to list permission grants associated with a **fi
   "name": "list_filestoragecontainertypeapppermissiongrant"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/storage/fileStorage/containerTypeRegistrations/21b52d99-7114-4c47-80b3-362b6a0bba3a/applicationPermissionGrants
 ```
 
