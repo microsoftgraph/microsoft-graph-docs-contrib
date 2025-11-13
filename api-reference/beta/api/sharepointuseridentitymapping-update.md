@@ -1,6 +1,6 @@
 ---
 title: "Update sharePointUserIdentityMapping"
-description: "Performs delta patch operations on user identity mappings for cross-organization migration."
+description: "Perform delta patch operations on user identity mappings for cross-organization migration."
 author: "hongyangwan"
 ms.date: 10/30/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Performs delta patch operations on user identity mappings for cross-organization migration. Supports bulk add, update, and delete operations in a single request. Maximum of **50** items allowed in the value array.
+Perform delta patch operations on [user identity mappings](../resources/sharepointuseridentitymapping.md) for cross-organization migration. Supports bulk add, update, and delete operations in a single request. Maximum of 50 items allowed in the value array.
 
 ## Permissions
 
@@ -51,13 +51,11 @@ PATCH /solutions/sharePoint/migrations/crossOrganizationUserMappings
 
 |Property|Type|Description|
 |:---|:---|:---|
-|sourceOrganizationId|Guid|The unique identifier of the source organization in the migration. Inherited from [sharePointIdentityMapping](../resources/sharepointidentitymapping.md).|
-|userType|sharePointIdentityMappingUserType|Indicates the type of user. The possible values are: `none`, `regularUser`, `adminUser`, `guestUser`, `unknownFutureValue`.|
 |sourceUserIdentity|[userIdentity](../resources/useridentity.md)|The identity information of the source user.|
+|sourceOrganizationId|Guid|The unique identifier of the source organization in the migration. Inherited from [sharePointIdentityMapping](../resources/sharepointidentitymapping.md).|
 |targetUserIdentity|[userIdentity](../resources/useridentity.md)|The identity information of the target user.|
 |targetUserMigrationData|[sharePointIdentityMappingUserMigrationData](../resources/sharepointidentitymappingusermigrationdata.md)|Additional migration-specific data for the target user.|
-
-
+|userType|sharePointIdentityMappingUserType|Indicates the type of user. The possible values are: `none`, `regularUser`, `adminUser`, `guestUser`, `unknownFutureValue`.|
 
 ## Response
 
