@@ -377,22 +377,22 @@ items:
 - name: SharePoint cross-tenant migration (preview)
   items:
   - name: Overview
-    href: ../../resources/sharepoint-crossorganization-overview.md
+    href: ../../resources/sharepoint-crossorganization-api-overview.md
   - name: SharePoint group identity mapping
     items:
     - name: SharePoint group identity mapping
       href: ../../resources/sharepointgroupidentitymapping.md
-    - name: Get sharePointGroupIdentityMapping
+    - name: Get
       href: ../../api/sharepointgroupidentitymapping-get.md
-    - name: Update sharePointGroupIdentityMapping
+    - name: Update
       href: ../../api/sharepointgroupidentitymapping-update.md
   - name: SharePoint user identity mapping
     items:
     - name: SharePoint user identity mapping
       href: ../../resources/sharepointuseridentitymapping.md
-    - name: Get sharePointUserIdentityMapping
+    - name: Get
       href: ../../api/sharepointuseridentitymapping-get.md
-    - name: Update sharePointUserIdentityMapping
+    - name: Update
       href: ../../api/sharepointuseridentitymapping-update.md
   - name: Complex types
     items:
