@@ -30,10 +30,11 @@ Before you begin, make sure you:
 
 ## Set up the Microsoft MCP Server for Enterprise
 
-1. Select the following button to install the Microsoft MCP Server for Enterprise extension for VS Code. Alternatively, install the extension manually by downloading it from the [VS Code marketplace](https://marketplace.visualstudio.com/items?itemName=ms-graph.vscode-graph-mcp-server), or search for and install **Microsoft MCP Server for Enterprise** in the Extensions view of VS Code.
+<!--1. Select the following button to install the Microsoft MCP Server for Enterprise extension for VS Code. Alternatively, install the extension manually by downloading it from the [VS Code marketplace](https://marketplace.visualstudio.com/items?itemName=ms-graph.vscode-graph-mcp-server), or search for and install **Microsoft MCP Server for Enterprise** in the Extensions view of VS Code.
 
-    [Icon](https://vscode.dev/redirect/mcp/install?name=MicrosoftGraph&config=%7B%22name%22%3A%22MicrosoftGraph%22%2C%22type%22%3A%22http%22%2C%22url%22%3A%22https%3A%2F%2Fmcp.graph.microsoft.com%22%7D)
+    [Icon](https://vscode.dev/redirect/mcp/install?name=MicrosoftGraph&config=%7B%22name%22%3A%22MicrosoftGraph%22%2C%22type%22%3A%22http%22%2C%22url%22%3A%22https%3A%2F%2Fmcp.graph.microsoft.com%22%7D) -->
 
+1. Click [Install Microsoft MCP Server for Enterprise](https://vscode.dev/redirect/mcp/install?name=Microsoft%20MCP%20Server%20for%20Enterprise&config=%7b%22name%22:%22Microsoft%20MCP%20Server%20for%20Enterprise%22%2c%22type%22:%22http%22%2c%22url%22:%22https://mcp.svc.cloud.microsoft/enterprise%22%7d) to launch VS Code's MCP install page.
 1. After you install the extension, open GitHub Copilot and switch to **Agent** mode in the context window.
 1. Select the **Configure Tools** icon to see the list of available tools. Check or search for **MCP Server: MicrosoftGraph**, and expand the menu to see the list of its available tools.
    1. If the **MCP Server: MicrosoftGraph** tool isn't listed, select the refresh button on the context window, then retry.
