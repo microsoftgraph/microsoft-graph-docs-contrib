@@ -5,7 +5,7 @@ description: "Use Microsoft Entra Agent ID APIs in Microsoft Graph to create, se
 author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: dastrock,yukarppa,etbasser,kvenkit 
-ms.subservice: entra-id
+ms.subservice: applications
 ms.topic: overview
 ms.date: 11/13/2025
 
@@ -18,7 +18,7 @@ Microsoft Entra Agent ID APIs in Microsoft Graph help you create, secure, and ma
 
 In this article, you learn about the key concepts and APIs for managing agent identities in Microsoft Graph, including the components that make up an agent identity, how to apply security and governance policies to agents, and the permissions required to manage agents programmatically.
 
-To learn more about the Microsoft Entra Agent ID platform, see [What is Microsoft Entra Agent ID](/entra/agent-id/identity-professional/microsoft-entra-agent-identities-for-ai-agents).
+To learn more about the Microsoft Entra Agent ID, see [What is Microsoft Entra Agent ID](/entra/agent-id/identity-professional/microsoft-entra-agent-identities-for-ai-agents).
 
 ## Building blocks of agent identities
 
@@ -118,7 +118,7 @@ For more information about the listed permissions available through both Microso
 
 Agent identities use the same Microsoft Graph permission model as other app identities. Therefore, they can be granted delegated or application permissions to access Microsoft Graph APIs.
 
-Because of the autonomous nature of agents and the potential risks they pose, the following high-risk Microsoft Graph API permissions are explicitly blocked for agents to prevent misuse or unintended access to sensitive data. These permissions can't be granted to agent identities through Microsoft Graph or Microsoft Entra admin center.
+However, because of the autonomous nature of agents and the potential risks they pose, the following high-risk Microsoft Graph API permissions are explicitly blocked for agents to prevent misuse or unintended access to sensitive data. These permissions can't be granted to agent identities through Microsoft Graph or Microsoft Entra admin center. <!-- Lwearn more in [Authorization in Microsoft Entra Agent ID](/entra/agent-id/identity-professional/authorization-agent-id) -->
 
 | Blocked permission | Notes |
 |:-------------------|:------|
