@@ -22,8 +22,8 @@ Inherits from [sharePointIdentityMapping](../resources/sharepointidentitymapping
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get](../api/sharepointgroupidentitymapping-get.md)|[sharePointGroupIdentityMapping](../resources/sharepointgroupidentitymapping.md)|Read the properties and relationships of [sharePointGroupIdentityMapping](../resources/sharepointgroupidentitymapping.md) object.|
-|[Update](../api/sharepointgroupidentitymapping-update.md)|[sharePointGroupIdentityMapping](../resources/sharepointgroupidentitymapping.md)|Update the properties of a [sharePointGroupIdentityMapping](../resources/sharepointgroupidentitymapping.md) object.|
+|[Get](../api/sharepointgroupidentitymapping-get.md)|[sharePointGroupIdentityMapping](../resources/sharepointgroupidentitymapping.md)|Retrieve a specific cross-organization [group identity mapping](../resources/sharepointgroupidentitymapping.md) based on the Microsoft Entra ID object ID of the source group.|
+|[Update](../api/sharepointgroupidentitymapping-update.md)|[sharePointGroupIdentityMapping](../resources/sharepointgroupidentitymapping.md)|Perform delta patch operations on [group identity mappings](../resources/sharepointgroupidentitymapping.md) for cross-organization migration.|
 
 ## Properties
 |Property|Type|Description|
