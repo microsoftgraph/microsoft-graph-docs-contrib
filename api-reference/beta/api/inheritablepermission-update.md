@@ -1,6 +1,6 @@
 ---
-title: "Delete inheritablePermission"
-description: "Delete an inheritablePermission object."
+title: "Update inheritablePermission"
+description: "Update an inheritablePermission object for an agent identity blueprint."
 author: "zallison22"
 ms.date: 11/13/2025
 ms.localizationpriority: medium
