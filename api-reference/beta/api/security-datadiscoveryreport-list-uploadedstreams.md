@@ -64,7 +64,7 @@ The following example shows a request.
   "name": "list_uploadedstreams"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/security/dataDiscovery/cloudAppDiscovery/uploadedStreams
 ```
 

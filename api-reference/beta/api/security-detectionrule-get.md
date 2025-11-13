@@ -61,7 +61,7 @@ The following example shows a request.
   "name": "get_detectionrule"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/security/rules/detectionRules/7506
 ```
 

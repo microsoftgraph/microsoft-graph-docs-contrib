@@ -63,7 +63,7 @@ The following example shows a request.
   "name": "list_channel"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/teams/893075dd-2487-4122-925f-022c42e20265/incomingChannels
 ```
 

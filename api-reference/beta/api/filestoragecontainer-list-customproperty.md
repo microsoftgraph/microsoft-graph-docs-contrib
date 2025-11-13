@@ -54,7 +54,7 @@ The following example shows how to get a custom property named `clientUniquieId`
   "name": "list_filestoragecontainer_customproperty_1"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/customProperties/clientUniqueId
 ```
 
@@ -90,7 +90,7 @@ The following example shows how to get all the custom properties of a **fileStor
   "name": "list_filestoragecontainer_customproperty_2"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/customProperties
 ```
 

@@ -78,7 +78,7 @@ The following example shows how to retrieve all the course activities for a give
 }
 -->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/7ba2228a-e020-11ec-9d64-0242ac120002/employeeExperience/learningCourseActivities
 ```
 

@@ -63,7 +63,7 @@ The following example shows a request.
   "name": "restoresessionbase_get"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/solutions/backupRestore/restoreSessions/959ba739-70b5-43c4-8c90-b2c22014f18b
 ```
 

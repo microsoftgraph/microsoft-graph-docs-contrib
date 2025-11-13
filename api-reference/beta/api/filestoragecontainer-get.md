@@ -57,7 +57,7 @@ The following example shows a request.
   "name": "get_filestoragecontainer"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/storage/fileStorage/containers/{containerId}
 ```
 

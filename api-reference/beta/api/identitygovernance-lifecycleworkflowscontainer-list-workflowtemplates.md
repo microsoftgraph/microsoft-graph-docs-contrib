@@ -69,7 +69,7 @@ The following example shows a request.
   "name": "lifecycleworkflows_list_workflowtemplate"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workflowTemplates
 ```
 
@@ -678,7 +678,7 @@ The following example shows a request.
   "name": "lifecycleworkflows_list_workflowtemplate_filter_category"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workflowTemplates?$filter=category eq 'leaver'
 ```
 
