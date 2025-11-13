@@ -123,8 +123,8 @@ Agent identities use the same Microsoft Graph permission model as other identiti
 However, because of the autonomous nature of agents and the potential risks they pose, the following high-risk Microsoft Graph API permissions are explicitly blocked for agents to prevent misuse or unintended access to sensitive data. These permissions can't be granted to agent identities through Microsoft Graph or Microsoft Entra admin center. <!-- Learn more in [Authorization in Microsoft Entra Agent ID](/entra/agent-id/identity-professional/authorization-agent-id) -->
 
 **Legend:**
-❌ indicates the permission is blocked in that category
-➖ indicates the permission is not applicable/blocked in that category
+- ❌ indicates the permission is blocked in that category
+- ➖ indicates the permission is not applicable/blocked in that category
 
 | Permission name                                                                                                     | Delegated | Application |
 |---------------------------------------------------------------------------------------------------------------------|-----------|-------------|
