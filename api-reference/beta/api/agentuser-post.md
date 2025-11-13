@@ -42,7 +42,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ```http
 POST /users/microsoft.graph.agentUser
 ```
-Note: Agent users can be created directly through the users' endpoint as well using POST /users without specifying the microsoft.graph.agentUser type. However, "@odata.type": "Microsoft.Graph.AgentUser" must be specified in the request body together with other required properties for user creation. See example below.
+
+> [!TIP]
+> You can also create agent users through the [POST /users](../api/user-post.md) without specifying the `microsoft.graph.agentUser` type. However, `"@odata.type": "microsoft.graph.agentUser"` must be specified in the request body together with other required properties for user creation.
 
 ## Request headers
 
@@ -143,7 +145,7 @@ POST https://graph.microsoft.com/beta/users
 Content-type: application/json
 
 {
-  "@odata.type": "Microsoft.Graph.AgentUser",
+  "@odata.type": "microsoft.graph.agentUser",
   "accountEnabled": true,
   "displayName": "Review Agent",
   "mailNickname": "ReviewAgent",

@@ -28,7 +28,13 @@ Choose the permission or permissions marked as least privileged for this API. Us
 |Delegated (personal Microsoft account) | Not supported. | Not supported.|
 |Application | User.ReadBasic.All | User.Read.All, AgentIdUser.ReadWrite.IdentityParentedBy, AgentIdUser.ReadWrite.All, User.ReadWrite.All |
 
-[!INCLUDE [rbac-agent-user-apis-write](../includes/rbac-for-apis/rbac-agent-user-apis-write.md)]
+#### Permissions for specific scenarios
+- To read the **employeeLeaveDateTime** property:
+  - In delegated scenarios, the signed-in user needs at least one of the following Microsoft Entra roles: *Lifecycle Workflows Administrator* (least privilege), *Global Reader*; the app must be granted the *User-LifeCycleInfo.Read.All* delegated permission.
+  - In app-only scenarios with Microsoft Graph permissions, the app must be granted the *User-LifeCycleInfo.Read.All* permission.
+- To read the **customSecurityAttributes** property:
+  - In delegated scenarios, the signed-in user must be assigned the *Attribute Assignment Administrator* role and the app granted the *CustomSecAttributeAssignment.Read.All* permission.
+  - In app-only scenarios with Microsoft Graph permissions, the app must be granted the *CustomSecAttributeAssignment.Read.All* permission.
 
 ## HTTP request
 

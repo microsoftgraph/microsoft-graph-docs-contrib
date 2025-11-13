@@ -28,7 +28,19 @@ Choose the permission or permissions marked as least privileged for this API. Us
 |Delegated (personal Microsoft account) | Not supported. | Not supported.|
 |Application | AgentIdUser.ReadWrite.IdentityParentedBy | AgentIdUser.ReadWrite.All, User.ReadWrite.All |
 
-[!INCLUDE [rbac-agent-user-apis-write](../includes/rbac-for-apis/rbac-agent-user-apis-write.md)]
+#### Permissions for specific scenarios
+- Your personal Microsoft account must be tied to a Microsoft Entra tenant to update your profile with the *User.ReadWrite* delegated permission on a personal Microsoft account.
+- To update the **employeeLeaveDateTime** property:
+  - In delegated scenarios, the admin needs the *Global Administrator* role; the app must be granted the *User.Read.All* and *User-LifeCycleInfo.ReadWrite.All* delegated permissions.
+  - In app-only scenarios with Microsoft Graph permissions, the app must be granted the *User.Read.All* and *User-LifeCycleInfo.ReadWrite.All* permissions. 
+- To update the **customSecurityAttributes** property:
+  - In delegated scenarios, the admin must be assigned the *Attribute Assignment Administrator* role and the app granted the *CustomSecAttributeAssignment.ReadWrite.All* permission.
+  - In app-only scenarios with Microsoft Graph permissions, the app must be granted the *CustomSecAttributeAssignment.ReadWrite.All* permission.
+- *User-Mail.ReadWrite.All* is the least privileged permission to update the **otherMails** property.
+- *User-PasswordProfile.ReadWrite.All* is the least privileged permission to update the **passwordProfile** property.
+- *User-Phone.ReadWrite.All* is the least privileged permission to update the **businessPhones** and **mobilePhone** properties.
+- *User.EnableDisableAccount.All* + *User.Read.All* is the least privileged combination of permissions to update the **accountEnabled** property.
+- *User.ManageIdentities.All* is *required* to update the **identities** property.
 
 ## HTTP request
 
@@ -37,9 +49,11 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-PATCH /users/microsoft.graph.agentUser/userId
+PATCH /users/microsoft.graph.agentUser/{userId}
 ```
-Note: Agent user can be updated through the standard users' endpoint: PATCH /users/userId. No special odata type needs to be specified in the request body.  
+
+> [!TIP]
+> You can also update agent users through the [PATCH /users/{id}](../api/user-update.md) endpoint without specifying the `microsoft.graph.agentUser` type.
 
 ## Request headers
 
@@ -111,7 +125,7 @@ The following example shows a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/users/microsoft.graph.agentUser/userId
+PATCH https://graph.microsoft.com/beta/users/microsoft.graph.agentUser/{userId}
 Content-Type: application/json
 
 {

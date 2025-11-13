@@ -28,7 +28,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 |Delegated (personal Microsoft account) | Not supported. | Not supported.|
 |Application | User.Read.All | AgentIdUser.ReadWrite.IdentityParentedBy, AgentIdUser.ReadWrite.All, User.ReadWrite.All |
 
-[!INCLUDE [rbac-agent-user-apis-write](../includes/rbac-for-apis/rbac-agent-user-apis-write.md)]
+[!INCLUDE [rbac-user-sponsors-apis-read](../includes/rbac-for-apis/rbac-user-sponsors-apis-read.md)]
 
 ## HTTP request
 
