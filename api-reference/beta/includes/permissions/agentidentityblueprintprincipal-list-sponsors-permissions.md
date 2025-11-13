@@ -6,6 +6,6 @@ ms.localizationpriority: medium
 
 |Permission type|Least privileged permission|Higher privileged permissions|
 |:---|:---|:---|
-|Delegated (work or school account)| AgentIdentityBlueprintPrincipal.Read.All | Application.Read.All, Directory.Read.All |
+|Delegated (work or school account)| Not available. | Not available. |
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|AgentIdentityBlueprintPrincipal.Read.All| Application.Read.All, Directory.Read.All|
+|Application| Application.Read.All. | Not available. |
