@@ -43,9 +43,9 @@ GET /applications/microsoft.graph.agentIdentityBlueprint
 
 This method supports the `$count`, `$expand`, `$filter`, `$orderby`, `$search`, `$select`, and `$top` [OData query parameters](/graph/query-parameters) to help customize the response. The default and maximum page size is 100 agent identity objects. Some queries are supported only when you use the **ConsistencyLevel** header set to `eventual` and `$count`. For more information, see [Advanced query capabilities on directory objects](/graph/aad-advanced-queries).
 
-By default, this API doesn't return the value of the **key** thumbprint in the **keyCredentials** property when listing all applications. To retrieve the **key** thumbprint, the **keyCredentials** property must be specified in a `$select` query. For example, `$select=id,appId,keyCredentials`.
+By default, this API doesn't return the value of the **key** thumbprint in the **keyCredentials** property when listing all agentIdentityBlueprints. To retrieve the **key** thumbprint, the **keyCredentials** property must be specified in a `$select` query. For example, `$select=id,appId,keyCredentials`.
 
-The use of `$select` to get **keyCredentials** for applications has a throttling limit of 150 requests per minute for every tenant.
+The use of `$select` to get **keyCredentials** for agentIdentityBlueprints has a throttling limit of 150 requests per minute for every tenant.
 
 ## Request headers
 
@@ -94,59 +94,63 @@ Content-Type: application/json
   "value": [
     {
       "@odata.type": "#microsoft.graph.agentIdentityBlueprint",
-      "id": "ff2a4f4e-945d-6918-40a8-844dcdc2d315",
-      "deletedDateTime": "String (timestamp)",
-      "api": {
-        "@odata.type": "microsoft.graph.apiApplication"
-      },
-      "appId": "String",
-      "appRoles": [
-        {
-          "@odata.type": "microsoft.graph.appRole"
-        }
-      ],
-      "certification": {
-        "@odata.type": "microsoft.graph.certification"
-      },
-      "createdByAppId": "String",
-      "createdDateTime": "String (timestamp)",
-      "description": "String",
-      "disabledByMicrosoftStatus": "String",
+      "id": "08be1f79-37a1-49c0-b444-3075e74d1e8c",
+      "appId": "00001111-aaaa-2222-bbbb-3333cccc4444",
       "identifierUris": [
-        "String"
+          "api://00001111-aaaa-2222-bbbb-3333cccc4444"
       ],
-      "displayName": "String",
-      "groupMembershipClaims": "String",
+      "createdByAppId": "14d82eec-204b-4c2f-b7e8-296a70dab67e",
+      "createdDateTime": "2025-09-10T17:04:20Z",
+      "description": null,
+      "disabledByMicrosoftStatus": null,
+      "displayName": "My Agent Blueprint",
+      "groupMembershipClaims": null,
+      "publisherDomain": "contoso.onmicrosoft.com",
+      "signInAudience": "AzureADMyOrg",
+      "tags": [],
+      "tokenEncryptionKeyId": null,
+      "uniqueName": null,
+      "serviceManagementReference": null,
+      "optionalClaims": null,
+      "api": {
+          "requestedAccessTokenVersion": 2,
+          "acceptMappedClaims": null,
+          "knownClientApplications": [],
+          "oauth2PermissionScopes": [],
+          "preAuthorizedApplications": [],
+          "tokenEncryptionSetting": {
+              "scheme": null,
+              "audience": null,
+              "automatedTokenVersion": {
+                  "current": null,
+                  "available": []
+              }
+          }
+      },
+      "appRoles": [],
       "info": {
-        "@odata.type": "microsoft.graph.informationalUrl"
+          "termsOfServiceUrl": null,
+          "supportUrl": null,
+          "privacyStatementUrl": null,
+          "marketingUrl": null,
+          "logoUrl": null
       },
-      "keyCredentials": [
-        {
-          "@odata.type": "microsoft.graph.keyCredential"
-        }
-      ],
-      "logo": "Stream",
-      "optionalClaims": {
-        "@odata.type": "microsoft.graph.optionalClaims"
-      },
-      "passwordCredentials": [
-        {
-          "@odata.type": "microsoft.graph.passwordCredential"
-        }
-      ],
-      "publisherDomain": "String",
-      "serviceManagementReference": "String",
-      "signInAudience": "String",
-      "tags": [
-        "String"
-      ],
-      "tokenEncryptionKeyId": "Guid",
-      "uniqueName": "String",
+      "keyCredentials": [],
+      "passwordCredentials": [],
       "verifiedPublisher": {
-        "@odata.type": "microsoft.graph.verifiedPublisher"
+          "displayName": null,
+          "verifiedPublisherId": null,
+          "addedDateTime": null
       },
       "web": {
-        "@odata.type": "microsoft.graph.webApplication"
+          "redirectUris": [],
+          "homePageUrl": null,
+          "logoutUrl": null,
+          "redirectUriSettings": [],
+          "implicitGrantSettings": {
+              "enableIdTokenIssuance": false,
+              "enableAccessTokenIssuance": false
+          }
       }
     }
   ]

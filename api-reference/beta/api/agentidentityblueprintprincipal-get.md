@@ -94,9 +94,9 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.type": "Microsoft.Graph.AgentIdentityBlueprintPrincipal",
+    "@odata.type": "microsoft.graph.agentIdentityBlueprintPrincipal",
     "id": "f7c938db-8c3d-4d04-937b-456c3242ed95",
-    "appId": "1d8b4e28-7e5e-4a9f-8e8c-0fa3b7d70e7e",
+    "appId": "00001111-aaaa-2222-bbbb-3333cccc4444",
     "createdDateTime": "2019-09-17T19:10:35.2742618Z",
     "accountEnabled": true,
     "appDisplayName": "My Sample App",

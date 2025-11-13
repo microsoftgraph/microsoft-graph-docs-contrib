@@ -53,7 +53,7 @@ In the request body, supply the values for relevant fields that should be update
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [agentIdentityBlueprint](../resources/agentidentityblueprint.md) object in the response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
@@ -78,71 +78,10 @@ Content-Type: application/json
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
-
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.agentIdentityBlueprint"
-}
--->
-``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.agentIdentityBlueprint",
-  "id": "ff2a4f4e-945d-6918-40a8-844dcdc2d315",
-  "deletedDateTime": "String (timestamp)",
-  "api": {
-    "@odata.type": "microsoft.graph.apiApplication"
-  },
-  "appId": "String",
-  "appRoles": [
-    {
-      "@odata.type": "microsoft.graph.appRole"
-    }
-  ],
-  "createdByAppId": "String",
-  "createdDateTime": "String (timestamp)",
-  "description": "String",
-  "disabledByMicrosoftStatus": "String",
-  "identifierUris": [
-    "String"
-  ],
-  "displayName": "String",
-  "groupMembershipClaims": "String",
-  "info": {
-    "@odata.type": "microsoft.graph.informationalUrl"
-  },
-  "keyCredentials": [
-    {
-      "@odata.type": "microsoft.graph.keyCredential"
-    }
-  ],
-  "logo": "Stream",
-  "optionalClaims": {
-    "@odata.type": "microsoft.graph.optionalClaims"
-  },
-  "passwordCredentials": [
-    {
-      "@odata.type": "microsoft.graph.passwordCredential"
-    }
-  ],
-  "publisherDomain": "String",
-  "serviceManagementReference": "String",
-  "signInAudience": "String",
-  "tags": [
-    "String"
-  ],
-  "tokenEncryptionKeyId": "Guid",
-  "uniqueName": "String",
-  "verifiedPublisher": {
-    "@odata.type": "microsoft.graph.verifiedPublisher"
-  },
-  "web": {
-    "@odata.type": "microsoft.graph.webApplication"
-  },
-}
+  "blockType": "response"
+} -->
+```http
+HTTP/1.1 204 No Content
 ```
 

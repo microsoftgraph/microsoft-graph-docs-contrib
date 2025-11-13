@@ -1,6 +1,6 @@
 ---
-title: "List agentIdentityBlueprintPrincipal owners"
-description: "Retrieve a list of owners of the agent identity blueprint principal."
+title: "List agentIdentityBlueprint owners"
+description: "Retrieve a list of owners of the agent identity blueprint."
 author: "zallison22"
 ms.date: 10/27/2025
 ms.localizationpriority: medium
@@ -8,13 +8,15 @@ ms.subservice: "entra-applications"
 doc_type: apiPageType
 ---
 
-# List agentIdentityBlueprintPrincipal owners
+# List agentIdentityBlueprint owners
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of owners of the [agentIdentityBlueprintPrincipal](../resources/agentidentityblueprintprincipal.md).
+Retrieve a list of owners of the [agentIdentityBlueprint](../resources/agentidentityblueprint.md).
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -22,10 +24,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "agentidentityblueprintprincipal-list-owners-permissions"
+  "name": "agentidentityblueprint-list-owners-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/agentidentityblueprintprincipal-list-owners-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/agentidentityblueprint-list-owners-permissions.md)]
 
 [!INCLUDE [rbac-agentid-apis-write](../includes/rbac-for-apis/rbac-agentid-apis-write.md)]
 
@@ -36,7 +38,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /servicePrincipals/{id}/microsoft.graph.agentIdentityBlueprintPrincipal/owners
+GET /applications/{id}/microsoft.graph.agentIdentityBlueprint/owners
 ```
 
 ## Optional query parameters
@@ -64,11 +66,11 @@ If successful, this method returns a `200 OK` response code and a collection of 
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "list_agentidentityblueprintprincipal_owners"
+  "name": "list_agentidentityblueprint_owners"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/serviceprincipals/bbec3106-565f-4907-941e-96b4dbfef21c/microsoft.graph.agentIdentityBlueprintPrincipal/owners
+GET https://graph.microsoft.com/beta/applications/bbec3106-565f-4907-941e-96b4dbfef21c/microsoft.graph.agentIdentityBlueprint/owners
 ```
 
 ### Response

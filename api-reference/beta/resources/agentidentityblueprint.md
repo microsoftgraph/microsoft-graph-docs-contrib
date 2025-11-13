@@ -29,16 +29,24 @@ This resource is an open type that allows additional properties beyond those doc
 |[Update](../api/agentidentityblueprint-update.md)|[agentIdentityBlueprint](../resources/agentidentityblueprint.md)|Update the properties of an agentIdentityBlueprint object.|
 |[Upsert](../api/agentidentityblueprint-upsert.md) | [agentIdentityBlueprint](../resources/agentidentityblueprint.md) | Create a new agent identity blueprint if it doesn't exist, or update the properties of an existing blueprint.|
 |[Delete](../api/agentidentityblueprint-delete.md)|None|Delete an agentIdentityBlueprint object.|
+|**Credentials**|||
 |[Add password](../api/agentidentityblueprint-addpassword.md)|[passwordCredential](../resources/passwordcredential.md)|Add a strong password or secret to an agent identity blueprint.|
 |[Remove password](../api/agentidentityblueprint-removepassword.md)|[passwordCredential](../resources/passwordcredential.md)|Remove a password or secret from an agent identity blueprint.|
 |[Add key](../api/agentidentityblueprint-addkey.md)|[keyCredential](../resources/keycredential.md)|Add a key credential to an agent identity blueprint.|
 |[Remove key](../api/agentidentityblueprint-removekey.md)|None|Remove a key credential from an agent identity blueprint.|
+|**Deleted items**|||
+|[List](../api/directory-deleteditems-list.md) | [directoryObject](directoryobject.md) collection | Retrieve a list of recently deleted agent identities. |
+|[Get](../api/directory-deleteditems-get.md) | [directoryObject](directoryobject.md) | Retrieve the properties of a recently deleted agent identity. |
+|[Restore](../api/directory-deleteditems-restore.md) | [directoryObject](directoryobject.md) | Restore a recently deleted agent identity. |
+|[Permanently delete](../api/directory-deleteditems-delete.md) | None | Permanently delete an agent identity. |
+|**Owners**|||
+|[List owners](../api/agentidentityblueprint-list-owners.md)|[directoryObject](../resources/directoryobject.md) collection|Get the owners of this agent identity blueprint principal.|
+|[Add owners](../api/agentidentityblueprint-post-owners.md)|[directoryObject](../resources/directoryobject.md)|Assign an owner to this agent identity blueprint principal.|
+|[Remove owners](../api/agentidentityblueprint-delete-owners.md)|None|Remove an owner from this agent identity blueprint principal.|
+|**Sponsors**|||
 |[List sponsors](../api/agentidentityblueprint-list-sponsors.md)|[directoryObject](../resources/directoryobject.md) collection|Get the sponsors for this agent identity blueprint. Sponsors are users or service principals who can authorize and manage the lifecycle of agent identity instances.|
 |[Add sponsors](../api/agentidentityblueprint-post-sponsors.md)|[directoryObject](../resources/directoryobject.md)|Add sponsors by posting to the sponsors collection.|
 |[Remove sponsors](../api/agentidentityblueprint-delete-sponsors.md)|None|Remove a [directoryObject](../resources/directoryobject.md) object.|
-|[List owners](../api/agentidentityblueprintprincipal-list-owners.md)|[directoryObject](../resources/directoryobject.md) collection|Get the owners of this agent identity blueprint principal.|
-|[Add owners](../api/agentidentityblueprintprincipal-post-owners.md)|[directoryObject](../resources/directoryobject.md)|Assign an owner to this agent identity blueprint principal.|
-|[Remove owners](../api/agentidentityblueprintprincipal-delete-owners.md)|None|Remove an owner from this agent identity blueprint principal.|
 
 ## Properties
 |Property|Type|Description|
@@ -47,7 +55,7 @@ This resource is an open type that allows additional properties beyond those doc
 |appId|String|The unique identifier for the agent identity blueprint that is assigned by Microsoft Entra ID. Not nullable. Read-only. Inherited from [application](../resources/application.md).|
 |appRoles|[appRole](../resources/approle.md) collection|The collection of roles defined for the agent identity blueprint. With app role assignments, these roles can be assigned to users, groups, or service principals associated with other applications. Not nullable. Inherited from [application](../resources/application.md).|
 |certification|[certification](../resources/certification.md)|Specifies the certification status of the agent identity blueprint. Inherited from [application](../resources/application.md).|
-|createdByAppId|String|The unique identifier of the application that created this agent identity blueprint. Set internally by Microsoft Enctra ID. Read-only. Inherited from [application](../resources/application.md).|
+|createdByAppId|String|The unique identifier of the application that created this agent identity blueprint. Set internally by Microsoft Entra ID. Read-only. Inherited from [application](../resources/application.md).|
 |createdDateTime|DateTimeOffset|The date and time the agent identity blueprint was registered. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. Read-only. Inherited from [application](../resources/application.md).|
 |createdByAppId|String|The **appId** (called **Application (client) ID** on the Microsoft Entra admin center) of the application that created this agent identity blueprint. Set internally by Microsoft Entra ID. Read-only. Inherited from [application](../resources/application.md).|
 |description|String|Free text field to provide a description of the agent identity blueprint to end users. The maximum allowed size is 1,024 characters. Inherited from [application](../resources/application.md).|
@@ -75,10 +83,10 @@ This resource is an open type that allows additional properties beyond those doc
 |appManagementPolicies|[appManagementPolicy](../resources/appmanagementpolicy.md) collection|The appManagementPolicy applied to this agent identity blueprint. Inherited from [microsoft.graph.application](../resources/application.md)|
 |federatedIdentityCredentials|[federatedIdentityCredential](../resources/federatedidentitycredential.md) collection|Federated identities for agent identity blueprints. Inherited from [microsoft.graph.application](../resources/application.md)|
 |owners|[directoryObject](../resources/directoryobject.md) collection|Directory objects that are owners of this agent identity blueprint. The owners are a set of nonadmin users or service principals allowed to modify this object. Read-only. Nullable. Inherited from [microsoft.graph.application](../resources/application.md)|
-|sponsors|[directoryObject](../resources/directoryobject.md) collection|The sponsors for this agent identity blueprint. Sponsors are users or service principals who can authorize and manage the lifecycle of agent identity instances.|
+|sponsors|[directoryObject](../resources/directoryobject.md) collection|The sponsors for this agent identity blueprint. Sponsors are users or groups who can authorize and manage the lifecycle of agent identity instances.|
 
 ## JSON representation
-The following JSON representation shows the resource type. Only a subset of all properties are returned by default. All other properties can only be retrieved using $select.
+The following JSON representation shows the resource type. Only a subset of all properties are returned by default. All other properties can only be retrieved using `$select`.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

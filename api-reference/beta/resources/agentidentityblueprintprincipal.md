@@ -28,19 +28,30 @@ This resource is an open type that allows additional properties beyond those doc
 |[Get](../api/agentidentityblueprintprincipal-get.md)|[agentIdentityBlueprintPrincipal](../resources/agentidentityblueprintprincipal.md)|Read the properties and relationships of [agentIdentityBlueprintPrincipal](../resources/agentidentityblueprintprincipal.md) object.|
 |[Update](../api/agentidentityblueprintprincipal-update.md)|[agentIdentityBlueprintPrincipal](../resources/agentidentityblueprintprincipal.md)|Update the properties of an agentIdentityBlueprintPrincipal object.|
 |[Delete](../api/agentidentityblueprintprincipal-delete.md)|None|Delete an agentIdentityBlueprintPrincipal object.|
+|**App role assignments**|||
 |[List appRoleAssignedTo](../api/serviceprincipal-list-approleassignedto.md)|[appRoleAssignment](../resources/approleassignment.md) collection|Get the users, groups, and agent identities assigned app roles for this agent identity blueprint principal.|
 |[Add appRoleAssignedTo](../api/serviceprincipal-post-approleassignedto.md)|[appRoleAssignment](../resources/approleassignment.md)|Assign an app role for this agent identity blueprint principal to a user, group, or service principal.|
 |[Remove appRoleAssignedTo](../api/serviceprincipal-delete-approleassignedto.md)|None|Remove an app role assignment for this agent identity blueprint principal from a user, group, or service principal.|
 |[List appRoleAssignments](../api/serviceprincipal-list-approleassignments.md)|[appRoleAssignment](../resources/approleassignment.md) collection|Get the app roles that this agent identity blueprint principal is assigned.|
 |[Add appRoleAssignment](../api/serviceprincipal-post-approleassignments.md)|[appRoleAssignment](../resources/approleassignment.md)|Assign an app role to this agent identity blueprint principal.|
 |[Remove appRoleAssignment](../api/serviceprincipal-delete-approleassignments.md)|None|Remove an app role assignment from this agent identity blueprint principal.|
-|[List memberOf](../api/agentidentityblueprintprincipal-list-memberof.md)|[directoryObject](../resources/directoryobject.md) collection|Get the groups that this agent identity blueprint principal is a direct member of.|
+|**Delegated permission grants**|||
 |[List oauth2PermissionGrants](../api/serviceprincipal-list-oauth2permissiongrants.md)|[oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) collection|Get the delegated permission grants authorizing this agent identity blueprint principal to access an API on behalf of a signed-in user.|
+|**Deleted items**|||
+|[List](../api/directory-deleteditems-list.md) | [directoryObject](directoryobject.md) collection | Retrieve a list of recently deleted agent identities. |
+|[Get](../api/directory-deleteditems-get.md) | [directoryObject](directoryobject.md) | Retrieve the properties of a recently deleted agent identity. |
+|[Restore](../api/directory-deleteditems-restore.md) | [directoryObject](directoryobject.md) | Restore a recently deleted agent identity. |
+|[Permanently delete](../api/directory-deleteditems-delete.md) | None | Permanently delete an agent identity. |
+|**Directory objects**|||
 |[List ownedObjects](../api/agentidentityblueprintprincipal-list-ownedobjects.md)|[directoryObject](../resources/directoryobject.md) collection|Get directory objects owned by this agent identity blueprint principal.|
-|[List owners](../api/agentidentityblueprintprincipal-list-owners.md)|[directoryObject](../resources/directoryobject.md) collection|Get the owners of this agent identity blueprint principal.|
-|[Add owners](../api/agentidentityblueprintprincipal-post-owners.md)|[directoryObject](../resources/directoryobject.md)|Assign an owner to this agent identity blueprint principal.|
-|[Remove owners](../api/agentidentityblueprintprincipal-delete-owners.md)|None|Remove an owner from this agent identity blueprint principal.|
 |[List createdObjects](../api/agentidentityblueprintprincipal-list-createdobjects.md)|[directoryObject](../resources/directoryobject.md) collection|Get directory objects created by this agent identity blueprint principal.|
+|**Memberships**|||
+|[List memberOf](../api/agentidentityblueprintprincipal-list-memberof.md)|[directoryObject](../resources/directoryobject.md) collection|Get the groups that this agent identity blueprint principal is a direct member of.|
+|**Owners**|||
+|[List owners](../api/agentidentityblueprintprincipal-list-owners.md)|[directoryObject](../resources/directoryobject.md) collection|Get the owners of this agent identity blueprint principal.|
+|[Add owners](../api/agentidentityblueprintprincipal-post-owners.md)|None|Assign an owner to this agent identity blueprint principal.|
+|[Remove owners](../api/agentidentityblueprintprincipal-delete-owners.md)|None|Remove an owner from this agent identity blueprint principal.|
+|**Sponsors**|||
 |[List sponsors](../api/agentidentityblueprintprincipal-list-sponsors.md)|[directoryObject](../resources/directoryobject.md) collection|Get the sponsors for this agent identity blueprint principal.|
 |[Add sponsors](../api/agentidentityblueprintprincipal-post-sponsors.md)|[directoryObject](../resources/directoryobject.md)|Add sponsors by posting to the sponsors collection.|
 |[Remove sponsors](../api/agentidentityblueprintprincipal-delete-sponsors.md)|None|Remove a [directoryObject](../resources/directoryobject.md) object.|

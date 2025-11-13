@@ -53,7 +53,7 @@ In the request body, supply a reference to the [directoryObject](../resources/di
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code and a [directoryObject](../resources/directoryobject.md) object in the response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 

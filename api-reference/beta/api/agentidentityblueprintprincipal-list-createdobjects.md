@@ -68,7 +68,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/servicePrincipals/{id}/createdObjects
+GET https://graph.microsoft.com/beta/servicePrincipals/{id}/microsoft.graph.agentIdentityBlueprint/createdObjects
 ```
 
 
@@ -91,7 +91,7 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.directoryObject",
       "id": "a6c034b8-621b-dee3-6abb-52cbce801fe9",
-      "deletedDateTime": "String (timestamp)"
+      "deletedDateTime": null
     }
   ]
 }
