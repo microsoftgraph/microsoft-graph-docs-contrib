@@ -60,7 +60,7 @@ The following example shows a request.
   "name": "get_permissionsrequestchange"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/permissionsManagement/permissionsRequestChanges/00000000-0000-0000-0000-000000000001
 ```
 

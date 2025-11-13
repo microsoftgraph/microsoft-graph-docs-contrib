@@ -72,7 +72,7 @@ The following example shows a request.
   "name": "teamspolicyassignmentthis.getpolicyid"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/admin/teams/policy/getPolicyId(type='TeamsMeetingPolicy',name='AllOn')
 ```
 

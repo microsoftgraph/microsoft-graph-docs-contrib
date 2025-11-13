@@ -67,7 +67,7 @@ The following example shows a request.
   "name": "get_userregistrationdetails"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/reports/authenticationMethods/userRegistrationDetails/86462606-fde0-4fc4-9e0c-a20eb73e54c6
 ```
 

@@ -58,7 +58,7 @@ Here's an example of a request.
   "name": "get_authoritytemplate"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/security/labels/authorities/a94af2e3-853b-6fcc-c898-d61d3a6d9efc
 ```
 

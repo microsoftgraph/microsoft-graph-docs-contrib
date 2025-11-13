@@ -67,7 +67,7 @@ The following example shows a request.
   "name": "lifecycleworkflows_get_customtaskextension"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/customTaskExtensions/ffcc4c85-5a14-448e-a390-77abf2700369
 ```
 

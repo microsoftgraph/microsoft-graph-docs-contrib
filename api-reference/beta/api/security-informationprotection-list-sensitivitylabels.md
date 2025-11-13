@@ -78,7 +78,7 @@ The following example shows a request.
 }
 -->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/bob@contoso.com/security/informationProtection/sensitivityLabels
 ```
 

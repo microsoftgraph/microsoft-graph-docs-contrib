@@ -59,7 +59,7 @@ If successful, this method returns a `200 OK` response code and a [permissionGra
   "name": "get_permissiongrantpreapprovalpolicies"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/policies/permissionGrantPreApprovalPolicies/71ba13dc-5947-4e59-bcc5-0ad5c339a853
 ```
 

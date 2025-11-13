@@ -66,7 +66,7 @@ If successful, this method returns a `200 OK` response code and a [unifiedRoleSc
   "name": "rbacapplication_rolescheduleinstances"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/roleManagement/directory/roleScheduleInstances(directoryScopeId='parameterValue',appScopeId='parameterValue',principalId='parameterValue',roleDefinitionId='parameterValue')
 ```
 

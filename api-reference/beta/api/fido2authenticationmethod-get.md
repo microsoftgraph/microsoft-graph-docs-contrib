@@ -75,7 +75,7 @@ The following example shows a request.
   "sampleKeys": ["-2_GRUg2-HYz6_1YG4YRAQ2"]
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/authentication/fido2Methods/-2_GRUg2-HYz6_1YG4YRAQ2
 ```
 

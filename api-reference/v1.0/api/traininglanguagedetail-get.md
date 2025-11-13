@@ -63,7 +63,7 @@ The following example shows a request.
   "name": "get_traininglanguagedetail"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/security/attackSimulation/trainings/3f5548d1-0dd8-4cc8-9de0-e0d6ec7ea3dc/languageDetails/2f5548d1-0dd8-4cc8-9de0-e0d6ec7ea3dc?$filter=locale eq 'en'
 ```
 

@@ -68,7 +68,7 @@ The following example shows a request.
   "sampleKeys": ["ZmI5NjU1MTUwNWYxZWRiMjRkZDNiMzZmY2ZmZGI3NjU4MzNiODExOA=="]
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/security/threatIntelligence/sslCertificates/ZmI5NjU1MTUwNWYxZWRiMjRkZDNiMzZmY2ZmZGI3NjU4MzNiODExOA==
 ```
 

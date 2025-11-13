@@ -60,7 +60,7 @@ The following example shows a request that gets the tenant-wide settings for all
   "name": "get_teamsappsettings"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/teamwork/teamsAppSettings
 ```
 

@@ -58,7 +58,7 @@ The following example shows a request.
   "name": "list_targetdevicegroup"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/servicePrincipals/00af5dfb-85da-4b41-a677-0c6b86dd34f8/remoteDesktopSecurityConfiguration/targetDeviceGroups
 ```
 

@@ -560,7 +560,7 @@ The following example retrieves details of all role management policy assignment
   "name": "list_unifiedrolemanagementpolicyassignment_azureADGroup"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/policies/roleManagementPolicyAssignments?$filter=scopeId eq '60bba733-f09d-49b7-8445-32369aa066b3' and scopeType eq 'Group'
 ```
 

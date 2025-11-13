@@ -107,7 +107,7 @@ The following example shows a request.
   "name": "get_authentication_signInPreferences"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/071cc716-8147-4397-a5ba-b2105951cc0b/authentication/signInPreferences
 ```
 
@@ -171,7 +171,7 @@ The following example shows a request.
   "name": "get_authentication_strongAuthenticationRequirements"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/071cc716-8147-4397-a5ba-b2105951cc0b/authentication/requirements
 ```
 

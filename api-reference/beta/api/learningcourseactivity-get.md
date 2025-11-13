@@ -94,7 +94,7 @@ The following examples shows a request to get an learning course activity using 
   "name": "get_learning_courseactivity_details_id"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/employeeExperience/learningCourseActivities/8ba2228a-e020-11ec-9d64-0242ac120003
 ```
 
@@ -173,7 +173,7 @@ The following example shows a request to get the details of a learning course ac
   "name": "get_learning_courseactivity_details_externalId"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/employeeExperience/learningProviders/01e8f81b-3060-4dec-acf0-0389665a0a38/learningCourseActivities(externalCourseActivityId=12a2228a-e020-11ec-9d64-0242ac120002)
 ```
 
@@ -253,7 +253,7 @@ The following example shows a request to get the details of a learning course ac
   "name": "get_learning_courseactivity_details"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/7ba2228a-e020-11ec-9d64-0242ac120002/employeeExperience/learningCourseActivities/8ba2228a-e020-11ec-9d64-0242ac120003
 ```
 

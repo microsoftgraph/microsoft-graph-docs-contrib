@@ -61,7 +61,7 @@ The following example shows a request.
   "name": "get_filteringpolicy"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/networkAccess/filteringPolicies/161760b2-7053-4045-b886-3bce286989ae
 ```
 

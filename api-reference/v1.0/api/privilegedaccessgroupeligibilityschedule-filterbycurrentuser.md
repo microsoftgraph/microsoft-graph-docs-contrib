@@ -67,7 +67,7 @@ The following example shows a request.
   "name": "privilegedaccessgroupeligibilityschedulethis.filterbycurrentuser_v1_e1"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/identityGovernance/privilegedAccess/group/eligibilitySchedules/filterByCurrentUser(on='principal')
 ```
 
@@ -151,7 +151,7 @@ Content-Type: application/json
   "name": "privilegedaccessgroupeligibilityschedulethis.filterbycurrentuser_v1_e2"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/identityGovernance/privilegedAccess/group/eligibilitySchedules/filterByCurrentUser(on='principal')?$filter=groupId eq 'd5f0ad2e-6b34-401b-b6da-0c8fc2c5a3fc' and accessId eq 'member'
 ```
 
