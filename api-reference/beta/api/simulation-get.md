@@ -30,7 +30,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /security/attackSimulation/simulations/{simulationId}
 ```
 
@@ -66,7 +66,7 @@ The following example shows a request.
   "name": "get_simulation"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/security/attackSimulation/simulations/f1b13829-3829-f1b1-2938-b1f12938b1a
 ```
 
@@ -111,7 +111,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.simulation"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -156,7 +156,7 @@ The following example shows a request.
   "name": "get_simulation_includedAccountTarget"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/security/attackSimulation/simulations/f1b13829-3829-f1b1-2938-b1f12938b1a/includedAccountTarget
 ```
 
@@ -201,7 +201,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.accountTargetContent"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -228,7 +228,7 @@ The following example shows a request.
   "name": "get_simulation_excludedAccountTarget"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/security/attackSimulation/simulations/f1b13829-3829-f1b1-2938-b1f12938b1a/excludedAccountTarget
 ```
 
@@ -273,7 +273,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.accountTargetContent"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -300,7 +300,7 @@ The following example shows a request.
   "name": "get_simulation_trainingSetting"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/security/attackSimulation/simulations/f1b13829-3829-f1b1-2938-b1f12938b1a/trainingSetting
 ```
 
@@ -345,7 +345,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.trainingSetting"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -371,7 +371,7 @@ The following example shows a request.
   "name": "get_simulation_endUserNotificationSetting"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/security/attackSimulation/simulations/f1b13829-3829-f1b1-2938-b1f12938b1a/endUserNotificationSetting
 ```
 
@@ -416,7 +416,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.endUserNotificationSetting"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

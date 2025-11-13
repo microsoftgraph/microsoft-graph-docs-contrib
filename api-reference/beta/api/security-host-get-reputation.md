@@ -32,7 +32,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /security/threatIntelligence/hosts/{hostId}/reputation
 ```
 
@@ -66,7 +66,7 @@ The following example shows a request.
   "sampleKeys": ["fake-malicious.site"]
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/security/threatIntelligence/hosts/fake-malicious.site/reputation
 ```
 

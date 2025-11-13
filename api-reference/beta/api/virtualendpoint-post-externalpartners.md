@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /deviceManagement/virtualEndpoint/externalPartners
 ```
 
@@ -67,7 +67,7 @@ The following example shows a request.
   "name": "create_cloudpcexternalpartner_from_"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/externalPartners
 Content-Type: application/json
 
@@ -115,7 +115,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.cloudPcExternalPartner"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 

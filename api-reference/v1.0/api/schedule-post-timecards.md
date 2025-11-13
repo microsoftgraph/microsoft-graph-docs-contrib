@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /teams/{teamsId}/schedule/timeCards
 ```
 
@@ -60,7 +60,7 @@ The following example shows a request.
   "name": "create_timecard_from_"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/teams/871dbd5c-3a6a-4392-bfe1-042452793a50/schedule/timeCards
 Content-Type: application/json
 
@@ -121,7 +121,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.timeCard"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 

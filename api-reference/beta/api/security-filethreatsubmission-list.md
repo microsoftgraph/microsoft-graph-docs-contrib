@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /security/threatSubmission/fileThreats
 ```
 
@@ -58,7 +58,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
   "name": "list_filethreatsubmission"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/security/threatSubmission/fileThreats
 ```
 
@@ -102,7 +102,7 @@ GET https://graph.microsoft.com/beta/security/threatSubmission/fileThreats
   "@odata.type": "Collection(microsoft.graph.security.fileThreatSubmission)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

@@ -15,7 +15,10 @@ const fileStorageContainer = {
   description: 'Description of My Application Storage Container',
   containerTypeId: '91710488-5756-407f-9046-fbe5f0b4de73',
   settings: {
-    isOcrEnabled: true
+    isOcrEnabled: true,
+    itemMajorVersionLimit: 50,
+    isItemVersioningEnabled: true,
+    itemDefaultSensitivityLabelId: '3d8789ae-7375-4ded-8eeb-d6bc226e42fb'
   }
 };
 

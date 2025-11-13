@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /identityGovernance/entitlementManagement/assignments/{accessPackageAssignmentId}
 ```
 
@@ -63,7 +63,7 @@ If successful, this method returns a `200 OK` response code and the requested [a
   "name": "get_accesspackageassignment"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/assignments/{accessPackageAssignmentId}
 ```
 
@@ -105,7 +105,7 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/as
   "@odata.type": "microsoft.graph.accessPackageAssignment"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
