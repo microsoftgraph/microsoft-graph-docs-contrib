@@ -2,7 +2,7 @@
 title: "riskyAgent resource type"
 description: Represents the Microsoft Entra agents that are at risk as evaluated by Microsoft Entra ID Protection based on various signals and machine learning.
 author: jiayle27
-ms.date: 10/24/2025
+ms.date: 11/13/2025
 ms.localizationpriority: medium
 ms.subservice: entra-sign-in
 doc_type: resourcePageType
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the Microsoft Entra agents that are at riskas evaluated by Microsoft Entra ID Protection based on various signals and machine learning. This API provides programmatic access to all at-risk agents in your Microsoft Entra tenant, the @odata.type indicates the exact type of this agent. The supported types are [riskyAgentIdentity](../resources/riskyagentidentity.md), [riskyAgentIdentityBlueprintPrincipal](../resources/riskyagentidentityblueprintprincipal.md), and [riskyAgentUser](../resources/riskyagentuser.md).
+Represents the Microsoft Entra agents that are at risk as evaluated by Microsoft Entra ID Protection based on various signals and machine learning. This API provides programmatic access to all at-risk agents in your Microsoft Entra tenant, the **@odata.type** indicates the exact type of this agent. The supported types are [riskyAgentIdentity](../resources/riskyagentidentity.md), [riskyAgentIdentityBlueprintPrincipal](../resources/riskyagentidentityblueprintprincipal.md), and [riskyAgentUser](../resources/riskyagentuser.md).
 
 Inherits from [entity](../resources/entity.md).
 
@@ -31,7 +31,7 @@ Inherits from [entity](../resources/entity.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |agentDisplayName|String|Name of the agent. <br/><br/> Supports `$filter` (`eq`, `startsWith`).|
-|id|String|The unique identifier for the agent. This is equivalent to 'id' to the specific agent type. See [riskyAgentIdentity](../resources/riskyagentidentity.md), [riskyAgentIdentityBlueprintPrincipal](../resources/riskyagentidentityblueprintprincipal.md), and [riskyAgentUser](../resources/riskyagentuser.md). Inherited from [entity](../resources/entity.md). <br/><br/> Supports `$filter` (`eq`, `startsWith`).|
+|id|String|The object **id** of the [riskyAgentIdentity](../resources/riskyagentidentity.md), [riskyAgentIdentityBlueprintPrincipal](../resources/riskyagentidentityblueprintprincipal.md) or [riskyAgentUser](../resources/riskyagentuser.md). Inherited from [entity](../resources/entity.md). <br/><br/> Supports `$filter` (`eq`, `startsWith`).|
 |isDeleted|Boolean|Indicates whether the agent is deleted.|
 |isEnabled|Boolean|Indicates whether the agent is enabled.|
 |isProcessing|Boolean|Indicates whether an agent's risky state is processing in the backend.|
