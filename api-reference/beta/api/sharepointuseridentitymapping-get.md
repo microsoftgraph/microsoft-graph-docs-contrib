@@ -1,6 +1,6 @@
 ---
 title: "Get sharePointUserIdentityMapping"
-description: "Retrieves a specific user identity mapping by source user principal name (UPN)."
+description: "Retrieve a specific user identity mapping by the source user principal name (UPN)."
 author: "hongyangwan"
 ms.date: 10/30/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieves a specific user identity mapping by source user principal name (UPN). Used to look up existing user mappings and verify migration configuration.
+Retrieve a specific [user identity mapping](../resources/sharepointuseridentitymapping.md) by the source user principal name (UPN). This method looks up existing user mappings and verifies migration configuration.
 
 ## Permissions
 
@@ -68,7 +68,6 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/beta/solutions/sharePoint/migrations/crossOrganizationUserMappings(sourceUserPrincipalName='user1@contoso.com')
 ```
-
 
 ### Response
 
