@@ -26,6 +26,48 @@
       "WorkloadArea": "Reports",
       "SubArea": "Identity and access reports"
     },
+     {
+      "ChangeList": [
+        {
+          "Id": "e47691c4-0416-4bcd-be07-f706d5d5350d",
+          "ApiChange": "Member",
+          "ChangedApiName": "agentIdentityBlueprintPrincipal",
+          "ChangeType": "Addition",
+          "Description": "Added the `agentIdentityBlueprintPrincipal` member to the **agentType** enumeration.",
+          "Target": "agentType"
+        },
+        {
+          "Id": "e47691c4-0416-4bcd-be07-f706d5d5350d",
+          "ApiChange": "Member",
+          "ChangedApiName": "agentIDuser",
+          "ChangeType": "Addition",
+          "Description": "Added the `agentIDuser` member to the **agentType** enumeration.",
+          "Target": "agentType"
+        },
+        {
+          "Id": "e47691c4-0416-4bcd-be07-f706d5d5350d",
+          "ApiChange": "Property",
+          "ChangedApiName": "agentSubjectParentId",
+          "ChangeType": "Addition",
+          "Description": "Added the **agentSubjectParentId** property to the [agentSignIn](https://learn.microsoft.com/en-us/graph/api/resources/agentic-agentSignIn?view=graph-rest-beta) resource.",
+          "Target": "agentSignIn"
+        },
+        {
+          "Id": "e47691c4-0416-4bcd-be07-f706d5d5350d",
+          "ApiChange": "Property",
+          "ChangedApiName": "agentSubjectType",
+          "ChangeType": "Addition",
+          "Description": "Added the **agentSubjectType** property to the [agentSignIn](https://learn.microsoft.com/en-us/graph/api/resources/agentic-agentSignIn?view=graph-rest-beta) resource.",
+          "Target": "agentSignIn"
+        }
+      ],
+      "Id": "e47691c4-0416-4bcd-be07-f706d5d5350d",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-11-13T02:31:16.6909577Z",
+      "WorkloadArea": "Reports",
+      "SubArea": "Identity and access reports"
+    },
     {
       "ChangeList": [
         {
