@@ -12,8 +12,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Represents a floor within a [building](./building.md). A [building](./building.md) is always the parent of a [floor](./floor.md).
 
 Inherits from [place](./place.md).

@@ -12,8 +12,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Represents an abstract base type for modes of [desk](./desk.md) and [workspace](./workspace.md) objects.
 
 Base type of [assignedPlaceMode](./assignedplacemode.md), [dropInPlaceMode](./dropinplacemode.md), [offlinePlaceMode](./offlineplacemode.md), and [reservablePlaceMode](./reservableplacemode.md).

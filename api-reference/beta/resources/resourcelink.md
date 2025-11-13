@@ -12,8 +12,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Represents external links that should be associated with a [building](./building.md) in Places, such as a dining menu or a link to other services.
 
 For more information on how to set up services in Places, see [Add services to buildings](/microsoft-365/places/services-in-places).

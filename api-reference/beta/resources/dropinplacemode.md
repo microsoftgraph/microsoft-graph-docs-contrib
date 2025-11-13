@@ -12,8 +12,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Indicates that the desk or workspace is a drop-in [place](../resources/place.md); that means it's first come, first served.
 
 These [places](../resources/place.md) are reservable, but can't be booked in advance. The [place](../resources/place.md) is automatically booked for you when you connect your Windows or macOS device to a configured peripheral on the [place](../resources/place.md).

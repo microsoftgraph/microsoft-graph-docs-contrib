@@ -12,8 +12,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Defines the user to whom a [desk](./desk.md) is assigned. This mode is only supported for **desk** objects. All the assigned **desk** objects must be assigned to a user. Either property can be used to assign a **desk** to a user.
 
 Inherits from [placeMode](../resources/placemode.md).

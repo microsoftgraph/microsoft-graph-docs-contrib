@@ -12,8 +12,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Delete a [place](../resources/place.md) object.
 
 You can also use this method to delete the following child object types: [building](../resources/building.md), [floor](../resources/floor.md), [section](../resources/section.md), or [desk](../resources/desk.md).

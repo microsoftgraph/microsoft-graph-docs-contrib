@@ -10,8 +10,6 @@ doc_type: resourcePageType
 
 # Working with the Places API in Microsoft Graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 The Places API in Microsoft Graph provides a unified way to manage and interact with physical spaces, such as buildings, rooms, desks, and workspaces, within an organization.
 
 ## Supported types

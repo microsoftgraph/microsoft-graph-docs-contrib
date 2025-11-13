@@ -12,8 +12,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Represents different space types within a tenant. For more information, see [Working with the Places API in Microsoft Graph](./places-api-overview.md). 
 
 Base type of [building](../resources/building.md), [desk](../resources/desk.md), [floor](../resources/floor.md), [room](../resources/room.md), [roomList](../resources/roomlist.md), [section](../resources/section.md), and [workspace](../resources/workspace.md).

@@ -12,8 +12,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Read the properties of a [place](../resources/place.md) object specified by its ID.
 
 The **place** object can be one of the following types:

@@ -12,8 +12,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Describes why a desk or a workspace has been marked as offline and unavailable for booking.
 
 This mode is supported for [desk](./desk.md), [workspace](./workspace.md) objects.

@@ -12,8 +12,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Represents a collection of desks. A [workspace](./workspace.md) can be added to a [floor](./floor.md) or a [section](./section.md).
 
 Inherits from [place](./place.md).

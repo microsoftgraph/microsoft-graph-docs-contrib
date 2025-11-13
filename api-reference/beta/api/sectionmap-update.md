@@ -12,8 +12,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Update the properties of an existing [sectionMap](../resources/sectionmap.md) object in IMDF format on a specified floor, or create one if it doesn't exist.
 
 ## Permissions

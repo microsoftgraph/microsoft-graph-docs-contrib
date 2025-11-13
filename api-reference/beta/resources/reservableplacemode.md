@@ -12,8 +12,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Indicates whether a desk or workspace is allowed to be booked in advance.
 
 Inherits from [placeMode](../resources/placemode.md).
