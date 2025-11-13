@@ -40,8 +40,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /users
+POST /users/microsoft.graph.agentUser
 ```
+Note: Agent users can be created directly through the users' endpoint as well using POST /users without specifying the microsoft.graph.agentUser type. However, "@odata.type": "Microsoft.Graph.AgentUser" must be specified in the request body together with other required properties for user creation. See example below.
 
 ## Request headers
 
@@ -58,7 +59,6 @@ The following table lists the properties that are *required* when you create an 
 
 | Parameter | Type | Description|
 |:---------------|:--------|:----------|
-| @odata.type | String | Must be `#microsoft.graph.agentUser` to create an **agentUser**. |
 |accountEnabled |Boolean |True if the account is enabled; otherwise, false.|
 |displayName |String |The name to display in the address book for the agent user.|
 |mailNickname |String |The mail alias for the agent user.|
@@ -87,11 +87,10 @@ The following example shows a request.
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/users
+POST https://graph.microsoft.com/beta/users/microsoft.graph.agentUser
 Content-type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.agentUser",
   "accountEnabled": true,
   "displayName": "Sales Agent",
   "mailNickname": "SalesAgent",
@@ -128,6 +127,58 @@ Content-type: application/json
     "identityParentId": "a1b2c3d4-e5f6-7890-abcd-ef1234567890"
 }
 ```
+### Example 2: Create an agent user through users' endpoint
+
+#### Request
+
+The following example shows a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "create_agentuser_agentuser"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/users
+Content-type: application/json
+
+{
+  "@odata.type": "Microsoft.Graph.AgentUser",
+  "accountEnabled": true,
+  "displayName": "Review Agent",
+  "mailNickname": "ReviewAgent",
+  "userPrincipalName": "reviewagent@contoso.com",
+  "identityParentId": "7a94d794-5271-4c3a-9364-3dbb0f085a1r"
+}
+```
+
+### Response
+
+The following example shows the response.
+
+>[!NOTE]
+>The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.agentUser"
+} -->
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users/$entity",
+    "@odata.type": "#microsoft.graph.agentUser",
+    "id": "a62a22ca-d21b-4a92-be5f-12193fe63304",
+    "businessPhones": [],
+    "displayName": "Review Agent",
+    "mail": "reviewsagent@contoso.com",
+    "mailNickname": "reviewAgent",
+    "userPrincipalName": "salesagent@contoso.com",
+    "identityParentId": "7a94d794-5271-4c3a-9364-3dbb0f085a1r"
+}
 
 ## Related content
 

@@ -37,8 +37,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /users/{id}
+GET /users/microsoft.graph.agentUser/{userId}
 ```
+Note: You can get an agent user's information through the standard users' endpoint GET /users/userId. No special odata type needs to be specified in the request. 
 
 ## Optional query parameters
 
@@ -65,11 +66,11 @@ If successful, this method returns a `200 OK` response code and an [agentUser](.
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "get_user"
+  "name": "get_AgentUser"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/users/929393ae-1e1d-159f-0d83-29f7df42e7b9
+GET https://graph.microsoft.com/beta/users/microsoft.graph.agentUser/929393ae-1e1d-159f-0d83-29f7df42e7b9
 ```
 
 

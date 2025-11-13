@@ -64,7 +64,9 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Request
+### Example 1: list all the agent users 
+
+#### Request
 
 The following example shows a request.
 <!-- {
@@ -77,7 +79,7 @@ GET https://graph.microsoft.com/beta/users/microsoft.graph.agentUser
 ```
 
 
-### Response
+#### Response
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
@@ -235,4 +237,56 @@ Content-Type: application/json
   }
 }
 ```
+### Example 2: list all the non-agent users and only show the display name of the users
 
+#### Request
+
+The following example shows a request.
+<!-- {
+  "blockType": "request",
+  "name": "list_users"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/users?$count=true&$filter=not isof('microsoft.graph.agentUser')&$select=displayName
+```
+## Request headers
+
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+|ConsistencyLevel|eventual. Required.|
+
+#### Response
+
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#users(displayName)",
+    "@odata.count": 3,
+    "value": [
+        {
+            "displayName": "Adrian Smith",
+            "id": "04b9f5a2-ee41-4d0e-b500-8de414d178c9"
+        },
+        {
+            "displayName": "Lewis Richardson",
+            "id": "0d03514d-35b0-4ffd-9ed9-d8052757e1c4"
+        },
+        {
+            "displayName": "Fung Lu",
+            "id": "146f9fcb-64c9-4b6e-b92f-bd4892fabdcd"
+        }
+  ]
+}
