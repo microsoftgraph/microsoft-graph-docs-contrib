@@ -6,6 +6,7 @@ ms.date: 10/30/2025
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
 doc_type: resourcePageType
+toc.title: SharePoint user identity mapping
 ---
 
 # sharePointUserIdentityMapping resource type
