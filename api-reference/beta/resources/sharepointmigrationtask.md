@@ -14,6 +14,17 @@ ms.date: 11/02/2025
 This entity encapsulates the intent and parameters necessary to migrate a specific source resource in a source organization to a target organization, and the status of that migration operation.
 This entity captures a specific intent to do a crossOrganizationMigration operation, has a unique ID, can exist independently, have a lifetime, and be retrieved using the ID.
 
+## Methods
+
+| Method | Return type | Description |
+|:-------------|:--------------------------|:-----------------------------------------------|
+| [Get](../api/sharepointmigrationtask-get.md) | SharePointMigrationTask[] | Attempt to get the specified sharePointMigrationTask by ID and return its status after this attempt. |
+| [Create](../api/sharepointmigrationtask-create.md) | SharePointMigrationTask[] | Attempt to create the specified sharePointMigrationTask. |
+| [Cancel](../api/sharepointmigrationtask-cancel.md) | SharePointMigrationTask[] | Attempt to cancel the specified sharePointMigrationTask by ID and return its status after this attempt. |
+| [GetBySourceSiteUrl](../api/sharepointmigrationtask-getbysourcesiteurl.md) | SharePointMigrationTask[] | Returns the status of the sharePointMigrationTask for a site given the source site URL. |
+| [GetBySourceUserPrincipalName](../api/sharepointmigrationtask-getbysourceuserprincipalname.md) | SharePointMigrationTask[] | Returns the status of the sharePointMigrationTask for a user given the source user principal name. |
+| [GetBySourceGroupMailNickname](../api/sharepointmigrationtask-getbysourcegroupmailnickname.md) | SharePointMigrationTask[] | Returns the status of the sharePointMigrationTask for a group given the source group mail nickname. |
+
 ## JSON Representation
 
 Here's a JSON representation of a **microsoft.graph.sharePointMigrationTask** resource.
