@@ -67,7 +67,10 @@ Microsoft Entra [signIn logs](../resources/signin.md) capture activities perform
 
 ## Permissions for managing agent identities
 
-Microsoft Graph provides granular permissions to manage agent identities and their associated components. However, some of these permissions aren't currently available through the API Permissions picker on the Microsoft Entra admin center. Instead, you can programmatically assign these permissions using Microsoft Graph API or Microsoft Graph PowerShell. See [Grant or revoke API permissions using Microsoft Graph REST API](/graph/permissions-grant-via-msgraph) and [Grant or revoke API permissions using Microsoft Graph PowerShell](/powershell/microsoftgraph/how-to-grant-revoke-api-permissions).
+Microsoft Graph provides granular permissions to manage agent identities and their associated components. However, some of these permissions aren't currently available through the API Permissions picker on the Microsoft Entra admin center. Instead, you can programmatically assign these permissions using Microsoft Graph API or PowerShell. See the following articles for guidance:
+- [Grant or revoke API permissions using Microsoft Graph REST API](/graph/permissions-grant-via-msgraph)
+- [Grant or revoke API permissions using Microsoft Graph PowerShell](/powershell/microsoftgraph/how-to-grant-revoke-api-permissions)
+- [Grant and revoke API permissions using Microsoft Entra PowerShell](/powershell/entra-powershell/how-to-grant-revoke-api-permissions)
 
 The following permissions are available:
 
