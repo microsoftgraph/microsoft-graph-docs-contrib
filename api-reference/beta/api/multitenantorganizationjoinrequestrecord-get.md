@@ -62,7 +62,7 @@ The following example gets the status of a tenant joining a multi-tenant organiz
   "name": "get_multitenantorganizationjoinrequestrecord"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/tenantRelationships/multiTenantOrganization/joinRequest
 ```
 

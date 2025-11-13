@@ -66,7 +66,7 @@ The following example shows a request.
   "name": "get_hardwareoathtokenauthenticationmethoddevice"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/directory/authenticationMethodDevices/hardwareOathDevices/{hardwareOathTokenAuthenticationMethodDeviceId}
 ```
 

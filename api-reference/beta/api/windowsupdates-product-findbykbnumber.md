@@ -71,7 +71,7 @@ The following example shows a request.
   "name": "windowsupdates.findByCatalogId"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/admin/windows/updates/products/FindByKbNumber(kbNumber=5029332)?expand=revisions($expand=catalogEntry,knowledgeBaseArticle),knownIssues
 ```
 

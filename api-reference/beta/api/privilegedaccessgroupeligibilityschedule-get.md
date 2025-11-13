@@ -60,7 +60,7 @@ The following example shows a request.
   "name": "get_privilegedaccessgroupeligibilityschedule"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/privilegedAccess/group/eligibilitySchedules/37bf27ec-70a7-60e0-8239-aa3ffa7719ac
 ```
 

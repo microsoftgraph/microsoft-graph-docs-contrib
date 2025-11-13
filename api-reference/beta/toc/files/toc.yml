@@ -26,6 +26,10 @@ items:
     href: ../../api/driveitem-search.md
   - name: Get special folder
     href: ../../api/drive-get-specialfolder.md
+  - name: Recent (deprecated)
+    href: ../../api/drive-recent.md
+  - name: Shared with me (deprecated)
+    href: ../../api/drive-sharedwithme.md
 - name: Drive item
   items:
   - name: Drive item

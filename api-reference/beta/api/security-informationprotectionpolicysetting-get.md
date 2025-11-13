@@ -77,7 +77,7 @@ The following example shows a request.
   "sampleKeys": ["bob@contoso.com"]
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/bob@contoso.com/security/informationProtection/labelPolicySettings
 ```
 

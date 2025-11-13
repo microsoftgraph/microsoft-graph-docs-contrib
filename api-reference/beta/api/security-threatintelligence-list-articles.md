@@ -68,7 +68,7 @@ The following example shows a request.
   "name": "get_article"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/security/threatIntelligence/articles
 ```
 

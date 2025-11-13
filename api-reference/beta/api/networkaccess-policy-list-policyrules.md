@@ -60,7 +60,7 @@ The following example shows a request.
   "name": "list_policyrule"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/networkaccess/forwardingPolicies/{forwardingPolicyId}/policyRules
 ```
 

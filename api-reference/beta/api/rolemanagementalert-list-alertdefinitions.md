@@ -60,7 +60,7 @@ The following example shows a request.
   "name": "list_unifiedrolemanagementalertdefinition"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/roleManagementAlerts/alertDefinitions?$filter=scopeId eq '/' and scopeType eq 'DirectoryRole'
 ```
 
