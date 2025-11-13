@@ -5784,3 +5784,13 @@ Possible values for user account types (group membership), per Windows definitio
 |finalizing|
 |forceComplete|
 |unknownFutureValue|
+
+### scopeCollectionKind values 
+
+|Member|
+|:---|
+|allAllowed|
+|enumerated|
+|none|
+|scopeKindNotSet|
+|unknownFutureValue|
