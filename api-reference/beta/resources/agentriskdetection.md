@@ -22,7 +22,7 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/agentriskdetection-list.md)|[agentRiskDetection](../resources/agentriskdetection.md) collection|Get a list of the agentRiskDetection objects and their properties.|
+|[List](../api/identityprotectionroot-list-agentriskdetections.md)|[agentRiskDetection](../resources/agentriskdetection.md) collection|Get a list of the agentRiskDetection objects and their properties.|
 |[Get](../api/agentriskdetection-get.md)|[agentRiskDetection](../resources/agentriskdetection.md)|Read the properties and relationships of [agentRiskDetection](../resources/agentriskdetection.md) object.|
 
 ## Properties

@@ -27,6 +27,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/agentriskdetection-get-permissions.md)]
 
+[!INCLUDE [rbac-identity-protection-apis-read](../includes/rbac-for-apis/rbac-identity-protection-apis-read.md)]
+
 ## HTTP request
 
 <!-- {
@@ -66,9 +68,8 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityProtection/agentRiskDetections/{agentRiskDetectionId}
+GET https://graph.microsoft.com/beta/identityProtection/agentRiskDetections({agentRiskDetectionId})
 ```
-
 
 ### Response
 
@@ -87,19 +88,19 @@ Content-Type: application/json
 {
   "value": {
     "@odata.type": "#microsoft.graph.agentRiskDetection",
-    "id": "0a2e6958-46cc-353d-8a02-5fe656267792",
-    "agentId": "String",
-    "agentDisplayName": "String",
-    "activityDateTime": "String (timestamp)",
-    "detectedDateTime": "String (timestamp)",
-    "detectionTimingType": "String",
-    "lastModifiedDateTime": "String (timestamp)",
-    "riskDetail": "String",
-    "riskLevel": "String",
-    "riskState": "String",
-    "riskEventType": "String",
-    "riskEvidence": "String",
-    "additionalInfo": "String"
+    "id": "1e384c2b0799b01834c0f886560a9a64e433135fe5b8607c535ebbfb03d2ee67",
+    "agentId": "229da549-7a91-4365-900f-d4ef49a759a0",
+    "agentDisplayName": "Ask HR Agent Identity",
+    "activityDateTime": "2025-07-30T15:38:56.9594972Z",
+    "detectedDateTime": "2025-07-30T15:38:56.9594972Z",
+    "detectionTimingType": "offline",
+    "lastModifiedDateTime": "2025-07-30T15:38:56Z",
+    "riskDetail": "none",
+    "riskLevel": "high",
+    "riskState": "atRisk",
+    "riskEventType": "unfamiliarResourceAccess",
+    "riskEvidence": "Agent targeted resources that it does not usually access.",
+    "additionalInfo": ""
   }
 }
 ```

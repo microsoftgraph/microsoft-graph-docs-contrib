@@ -27,6 +27,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/riskyagent-get-permissions.md)]
 
+[!INCLUDE [rbac-identity-protection-apis-read](../includes/rbac-for-apis/rbac-identity-protection-apis-read.md)]
+
 ## HTTP request
 
 <!-- {
@@ -66,13 +68,13 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityProtection/riskyAgents/{riskyAgentId}
+GET https://graph.microsoft.com/beta/identityProtection/riskyAgent({riskyAgentId})
 ```
 
 
 ### Response
 
-The following example shows the response.
+The following example shows the response. The property @odata.type indicates the type of agent, see [riskyAgentIdentity](../resources/riskyagentidentity.md), [riskyAgentIdentityBlueprintPrincipal](../resources/riskyagentidentityblueprintprincipal.md), and [riskyAgentUser](../resources/riskyagentuser.md) to learn more about the supported types.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -86,16 +88,16 @@ Content-Type: application/json
 
 {
   "value": {
-    "@odata.type": "#microsoft.graph.riskyAgent",
-    "id": "ccdc88ee-d0bb-86b5-3500-1d38195c4d6f",
-    "agentDisplayName": "String",
-    "isDeleted": "Boolean",
-    "isEnabled": "Boolean",
-    "isProcessing": "Boolean",
-    "riskLastModifiedDateTime": "String (timestamp)",
-    "riskDetail": "String",
-    "riskLevel": "String",
-    "riskState": "String"
+    "@odata.type": "#microsoft.graph.riskyAgentUser",
+    "id": "229da549-7a91-4365-900f-d4ef49a759a0",
+    "agentDisplayName": "RiskyUserFirstPartyApp2",
+    "isDeleted": false,
+    "isEnabled": true,
+    "isProcessing": true,
+    "riskLastModifiedDateTime": "2025-10-10T22:40:15.7281572Z",
+    "riskState": "atRisk",
+    "riskLevel": "high",
+    "riskDetail": "none"
   }
 }
 ```

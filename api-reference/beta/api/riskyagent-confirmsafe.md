@@ -27,6 +27,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/riskyagent-confirmsafe-permissions.md)]
 
+[!INCLUDE [rbac-identity-protection-apis-write](../includes/rbac-for-apis/rbac-identity-protection-apis-write.md)]
+
 ## HTTP request
 
 <!-- {
