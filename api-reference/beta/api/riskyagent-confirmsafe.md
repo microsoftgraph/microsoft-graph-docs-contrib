@@ -1,6 +1,6 @@
 ---
 title: "riskyAgent: confirmSafe"
-description: 'Identity Protection of agents - confirmSafe of a riskyAgent'
+description: Confirm one or more riskyAgent objects as safe.
 author: jiayle27
 ms.date: 10/24/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Confirm one or more [riskyAgent](../resources/riskyagent.md) objects as safe. This action sets the targeted agent's risk level to none.
+Confirm one or more [riskyAgent](../resources/riskyagent.md) objects as safe. This action sets the targeted agent's **riskLevel** to `none`.
 
 ## Permissions
 
@@ -54,7 +54,7 @@ The following table lists the parameters that are required when you call this ac
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|agentIds|String collection|Specify the risky agent IDs to mark as safe.|
+|agentIds|String collection|Specify the unique identifiers for the agents to mark as safe. The unique identifier of an agent is equivalent to 'id' to the specific agent type. See [riskyAgentIdentity](../resources/riskyagentidentity.md), [riskyAgentIdentityBlueprintPrincipal](../resources/riskyagentidentityblueprintprincipal.md), and [riskyAgentUser](../resources/riskyagentuser.md).|
 
 
 
@@ -88,7 +88,6 @@ Content-Type: application/json
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true

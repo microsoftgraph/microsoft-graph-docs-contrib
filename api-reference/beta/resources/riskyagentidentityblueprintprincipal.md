@@ -25,15 +25,15 @@ None.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|agentDisplayName|String|Name of the agent. Inherited from [riskyAgent](../resources/riskyagent.md).|
-|id|String|The unique identifier for the agent identity. This is equivalent to 'id' from [Agent Identity Blueprint Principal](../resources/agentidentityblueprintprincipal.md). Inherited from [entity](../resources/entity.md). Inherits from [entity](../resources/entity.md)|
+|agentDisplayName|String|Name of the agent. Inherited from [riskyAgent](../resources/riskyagent.md). <br/><br/> Supports `$filter` (`eq`, `startsWith`).|
+|id|String|The unique identifier for the agent identity. This is equivalent to 'id' from [Agent Identity Blueprint Principal](../resources/agentidentityblueprintprincipal.md). Inherited from [entity](../resources/entity.md). <br/><br/> Supports `$filter` (`eq`, `startsWith`).|
 |isDeleted|Boolean|Indicates whether the agent is deleted. Inherited from [riskyAgent](../resources/riskyagent.md).|
 |isEnabled|Boolean|Indicates whether the agent is enabled. Inherited from [riskyAgent](../resources/riskyagent.md).|
 |isProcessing|Boolean|Indicates whether an agent's risky state is processing in the backend. Inherited from [riskyAgent](../resources/riskyagent.md).|
-|riskDetail|riskDetail|Details of the detected risk of the agent. Inherited from [riskyAgent](../resources/riskyagent.md). The possible values are: `none`, `adminConfirmedAgentSafe`, `adminConfirmedAgentCompromised`, `adminDismissedRiskForAgent`.|
-|riskLastModifiedDateTime|DateTimeOffset|The date and time that the risky agent was last updated. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Inherited from [riskyAgent](../resources/riskyagent.md).|
-|riskLevel|riskLevel|Level of the detected risky agent. Inherited from [riskyAgent](../resources/riskyagent.md). The possible values are: `low`, `medium`, `high`, `hidden`, `none`, `unknownFutureValue`.|
-|riskState|riskState|State of the agent's risk. Inherited from [riskyAgent](../resources/riskyagent.md). The possible values are: `none`, `confirmedSafe`, `remediated`, `dismissed`, `atRisk`, `confirmedCompromised`, `unknownFutureValue`.|
+|riskDetail|riskDetail|Details of the detected risk of the agent. Inherited from [riskyAgent](../resources/riskyagent.md). The possible values are: `none`, `adminConfirmedAgentSafe`, `adminConfirmedAgentCompromised`, `adminDismissedRiskForAgent`. <br/><br/> Supports `$filter` (`eq`).|
+|riskLastModifiedDateTime|DateTimeOffset|The date and time that the risky agent was last updated. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Inherited from [riskyAgent](../resources/riskyagent.md). <br/><br/> Supports `$filter` (`eq`, `le`, and `ge`).|
+|riskLevel|riskLevel|Level of the detected risky agent. Inherited from [riskyAgent](../resources/riskyagent.md). The possible values are: `low`, `medium`, `high`, `hidden`, `none`, `unknownFutureValue`. <br/><br/> Supports `$filter` (`eq`).|
+|riskState|riskState|State of the agent's risk. Inherited from [riskyAgent](../resources/riskyagent.md). The possible values are: `none`, `confirmedSafe`, `remediated`, `dismissed`, `atRisk`, `confirmedCompromised`, `unknownFutureValue`. <br/><br/> Supports `$filter` (`eq`).|
 
 ## Relationships
 None.
