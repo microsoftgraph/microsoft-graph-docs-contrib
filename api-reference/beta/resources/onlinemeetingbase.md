@@ -51,6 +51,7 @@ Inherits from [entity](../resources/entity.md).
 | joinWebUrl | String | The join URL of the online meeting. Read-only. |
 | lobbyBypassSettings | [lobbyBypassSettings](lobbybypasssettings.md) | Specifies which participants can bypass the meeting lobby. |
 | recordAutomatically | Boolean | Indicates whether to record the meeting automatically. |
+| sensitivityLabelAssignment|[onlineMeetingSensitivityLabelAssignment](../resources/onlinemeetingsensitivitylabelassignment.md)|Specifies the sensitivity label applied to the Teams meeting.|
 | shareMeetingChatHistoryDefault | [meetingChatHistoryDefaultMode](#meetingchathistorydefaultmode-values) |Specifies whether meeting chat history is shared with participants.  Possible values are: `all`, `none`, `unknownFutureValue`.|
 | subject | String | The subject of the online meeting. |
 | videoTeleconferenceId | String | The video teleconferencing ID. Read-only. |
@@ -145,6 +146,9 @@ The following JSON representation shows the resource type.
   "joinWebUrl": "String",
   "lobbyBypassSettings": {"@odata.type": "microsoft.graph.lobbyBypassSettings"},
   "recordAutomatically": "Boolean",
+  "sensitivityLabelAssignment": {
+      "@odata.type": "microsoft.graph.onlineMeetingSensitivityLabelAssignment"
+  },
   "shareMeetingChatHistoryDefault": "String",
   "subject": "String",
   "videoTeleconferenceId": "String",
