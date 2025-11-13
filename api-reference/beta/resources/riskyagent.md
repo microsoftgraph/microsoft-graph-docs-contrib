@@ -44,5 +44,25 @@ Inherits from [entity](../resources/entity.md).
 None.
 
 ## JSON representation
-riskyAgent is the base type. See [riskyAgentIdentity](../resources/riskyagentidentity.md), [riskyAgentIdentityBlueprintPrincipal](../resources/riskyagentidentityblueprintprincipal.md), and [riskyAgentUser](../resources/riskyagentuser.md) for the correspoding JSON representation.
-
+The following JSON representation shows the resource type.
+<!-- {
+  "blockType": "resource",
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.riskyAgent",
+  "openType": false
+}
+-->
+``` json
+{
+  "@odata.type": "#microsoft.graph.riskyAgent",
+  "id": "String (identifier)",
+  "agentDisplayName": "String",
+  "isDeleted": "Boolean",
+  "isEnabled": "Boolean",
+  "isProcessing": "Boolean",
+  "riskLastModifiedDateTime": "String (timestamp)",
+  "riskState": "String",
+  "riskLevel": "String",
+  "riskDetail": "String"
+}
+```

@@ -68,7 +68,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityProtection/agentRiskDetections({agentRiskDetectionId})
+GET https://graph.microsoft.com/beta/identityProtection/agentRiskDetections/{agentRiskDetectionId}
 ```
 
 ### Response

@@ -50,15 +50,15 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.riskyAgentUser",
-  "id": "5d715079-984a-49c5-9467-e1d6626cc321",
-  "agentDisplayName": "Ask HR Agent",
-  "isDeleted": false,
-  "isEnabled": true,
-  "isProcessing": false,
-  "riskLastModifiedDateTime": "2025-10-10T22:40:15.7281572Z",
-  "riskState": "atRisk",
-  "riskLevel": "high",
-  "riskDetail": "none"
+  "id": "String (identifier)",
+  "agentDisplayName": "String",
+  "isDeleted": "Boolean",
+  "isEnabled": "Boolean",
+  "isProcessing": "Boolean",
+  "riskLastModifiedDateTime": "String (timestamp)",
+  "riskState": "String",
+  "riskLevel": "String",
+  "riskDetail": "String"
 }
 ```
 

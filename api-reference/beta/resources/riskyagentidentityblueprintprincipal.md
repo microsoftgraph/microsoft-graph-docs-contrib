@@ -51,15 +51,15 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.riskyAgentIdentityBlueprintPrincipal",
-  "id": "9adec27e-ffbb-4f7f-b06b-445a330985b2",
-  "agentDisplayName": "CopilotBlueprintPrincipal",
-  "isDeleted": false,
-  "isEnabled": true,
-  "isProcessing": true,
-  "riskLastModifiedDateTime": "2025-10-10T22:40:15.7281572Z",
-  "riskState": "atRisk",
-  "riskLevel": "high",
-  "riskDetail": "none"
+  "id": "String (identifier)",
+  "agentDisplayName": "String",
+  "isDeleted": "Boolean",
+  "isEnabled": "Boolean",
+  "isProcessing": "Boolean",
+  "riskLastModifiedDateTime": "String (timestamp)",
+  "riskState": "String",
+  "riskLevel": "String",
+  "riskDetail": "String"
 }
 ```
 
