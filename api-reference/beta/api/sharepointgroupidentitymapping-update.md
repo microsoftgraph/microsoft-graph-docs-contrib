@@ -1,6 +1,6 @@
 ---
 title: "Update sharePointGroupIdentityMapping"
-description: "Performs delta patch operations on group identity mappings for cross-organization migration."
+description: "Perform delta patch operations on group identity mappings for cross-organization migration."
 author: "hongyangwan"
 ms.date: 10/30/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Performs delta patch operations on group identity mappings for cross-organization migration. This operation supports bulk add, update, and delete actions for both Microsoft 365 groups and regular Azure AD groups. Maximum of **50** items allowed in the value array.
+Perform delta patch operations on group identity mappings for cross-organization migration. This operation supports bulk add, update, and delete actions for both Microsoft 365 groups and regular Microsoft Entra groups. Maximum of 50 items allowed in the value array.
 
 ## Permissions
 
@@ -48,16 +48,13 @@ PATCH /solutions/sharePoint/migrations/crossOrganizationGroupMappings
 
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
-
 |Property|Type|Description|
 |:---|:---|:---|
-|sourceOrganizationId|Guid|The unique identifier of the source organization in the migration. Inherited from [sharePointIdentityMapping](../resources/sharepointidentitymapping.md).|
 |groupType|sharePointIdentityMappingGroupType|Indicates the type of group. The possible values are: `none`, `regularGroup`, `m365Group`, `unknownFutureValue`.|
 |sourceGroupIdentity|[identity](../resources/identity.md)|The identity information of the source group.|
+|sourceOrganizationId|Guid|The unique identifier of the source organization in the migration. Inherited from [sharePointIdentityMapping](../resources/sharepointidentitymapping.md).|
 |targetGroupIdentity|[identity](../resources/identity.md)|The identity information of the target group.|
 |targetGroupMigrationData|[sharePointIdentityMappingGroupMigrationData](../resources/sharepointidentitymappinggroupmigrationdata.md)|Additional migration-specific data for the target group.|
-
-
 
 ## Response
 
