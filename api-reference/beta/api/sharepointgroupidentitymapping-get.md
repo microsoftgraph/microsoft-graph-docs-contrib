@@ -1,6 +1,6 @@
 ---
 title: "Get sharePointGroupIdentityMapping"
-description: "Retrieves a specific cross-organization group identity mapping based on the source group's Azure AD object ID."
+description: "Retrieve a specific cross-organization group identity mapping based on the Microsoft Entra ID object ID of the source group."
 author: "hongyangwan"
 ms.date: 10/30/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieves a specific cross-organization group identity mapping based on the source group's Azure AD object ID. This method allows clients to verify existing group migration configurations and confirm that mappings are correctly established prior to or during cross-tenant migration operations.
+Retrieve a specific cross-organization [group identity mapping](../resources/sharepointgroupidentitymapping.md) based on the Microsoft Entra ID object ID of the source group. This method allows clients to verify existing group migration configurations and confirm that mappings are correctly established prior to or during cross-tenant migration operations.
 
 ## Permissions
 
