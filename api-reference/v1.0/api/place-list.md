@@ -29,7 +29,7 @@ You can do the following for a given tenant:
 > * Before you can use this API, ensure that the Places settings are properly configured. For more information, see [Prerequisites for Places list and descendant APIs](../resources/places-api-overview.md#prerequisites-for-places-list-and-descendant-apis).
 > * By default, this operation returns up to 100 rooms, workspaces, and room lists per page, and 1,000 buildings, floors, sections, and desks per page.
 
-Compared with the [findRooms](../api/user-findrooms.md) and [findRoomLists](../api/user-findroomlists.md) functions, this operation returns a richer payload for rooms and room lists. For details about how they compare, see [Using the places API](../resources/places-api-overview.md#using-the-places-api).
+Compared with the findRooms and findRoomLists functions, this operation returns a richer payload for rooms and room lists. For details about how they compare, see [Using the places API](../resources/places-api-overview.md#using-the-places-api).
 
 
 ## Permissions
