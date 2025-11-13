@@ -27,7 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /security/labels/categories/{categoryTemplateId}
 GET /security/labels/retentionLabels/{retentionLabelId}/descriptors/categoryTemplate
 ```
@@ -58,7 +58,7 @@ Here's an example of a request.
   "name": "get_categorytemplate"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/security/labels/categories/e2c79762-34a9-75ba-b6f0-a7c9a57978ef
 ```
 
@@ -101,7 +101,7 @@ Here's an example of the response.
   "@odata.type": "microsoft.graph.security.categoryTemplate"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

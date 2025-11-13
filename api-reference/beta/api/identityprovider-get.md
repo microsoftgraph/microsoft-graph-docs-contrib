@@ -66,7 +66,7 @@ The following example shows a request.
 }
 -->
 
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityProviders/{id}
 ```
 
@@ -137,7 +137,7 @@ The following example shows a request.
 }
 -->
 
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityProviders/{id}
 ```
 

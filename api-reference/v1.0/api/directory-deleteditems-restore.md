@@ -22,8 +22,8 @@ Restore a recently deleted directory object from [deleted items](../resources/di
 - [group](../resources/group.md)
 - [servicePrincipal](../resources/serviceprincipal.md)
 - [user](../resources/user.md)
-- 
-If an item was accidentally deleted, you can fully restore the item. However, security groups can't be restored. Also, restoring an application doesn't restore the associated service principal automatically. You must call this API to explicitly restore the deleted service principal.
+
+If an item is accidentally deleted, you can fully restore the item. Additionally, restoring an application doesn't automatically restore the associated service principal automatically. You must call this API to explicitly restore the deleted service principal.
 
 A recently deleted item remains available for up to 30 days. After 30 days, the item is permanently deleted.
 
