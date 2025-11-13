@@ -5587,11 +5587,28 @@ Possible values for user account types (group membership), per Windows definitio
 |warning|
 |failure|
 |unknownFutureValue|
+
 ### claimBindingSource values 
 
 |Member|
 |:---|
 |directory|
+|unknownFutureValue|
+
+### customDataProvidedResourceUploadStatus values 
+
+|Member|
+|:---|
+|active|
+|complete|
+|expired|
+|unknownFutureValue|
+
+### principalType values 
+
+|Member|
+|:---|
+|entraIdUser|
 |unknownFutureValue|
 
 ### verifiedIdProfileState values 
@@ -5610,6 +5627,7 @@ Possible values for user account types (group membership), per Windows definitio
 |onboarding|
 |all|
 |unknownFutureValue|
+
 
 ### siteTemplateType values 
 
