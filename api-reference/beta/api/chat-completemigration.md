@@ -1,5 +1,5 @@
 ---
-title: "chat: completeMigration"
+title: "Chat: completeMigration"
 description: "Completes the migration of external messages by removing migration mode from a chat."
 ms.localizationpriority: medium
 author: "MehakAgarwal"
@@ -8,7 +8,7 @@ doc_type: apiPageType
 ms.date: 06/12/2025
 ---
 
-# chat: completeMigration
+# Chat: completeMigration
 
 Namespace: microsoft.graph
 

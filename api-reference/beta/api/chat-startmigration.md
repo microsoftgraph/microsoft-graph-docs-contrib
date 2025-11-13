@@ -1,5 +1,5 @@
 ---
-title: "chat: startMigration"
+title: "Chat: startMigration"
 description: "Start the migration of external messages by enabling migration mode in an existing chat."
 ms.localizationpriority: medium
 author: "MehakAgarwal"
@@ -8,13 +8,13 @@ doc_type: apiPageType
 ms.date: 06/12/2025
 ---
 
-# chat: startMigration
+# Chat: startMigration
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Start the migration of external messages by enabling migration mode in an existing chat. Previously, users were only allowed to initiate import operations on newly created standard channels in an empty state ([import-external-messages-to-teams](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams).
+Start the migration of external messages by enabling migration mode in an existing chat. Previously, users were only allowed to initiate import operations on newly created standard channels in an empty state ([import-external-messages-to-teams](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)).
 
 Users can simply start migration mode by invoking startMigration endpoint.
 

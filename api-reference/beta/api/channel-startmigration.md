@@ -1,5 +1,5 @@
 ---
-title: "channel: startMigration"
+title: "Channel: startMigration"
 description: "Start the migration of external messages by enabling migration mode in the existing channel"
 ms.localizationpriority: medium
 author: "MehakAgarwal"
@@ -8,7 +8,7 @@ doc_type: apiPageType
 ms.date: 06/12/2025
 ---
 
-# channel: startMigration
+# Channel: startMigration
 
 Namespace: microsoft.graph
 
