@@ -27,14 +27,14 @@ The following core components comprise Microsoft Entra Agent ID's architecture:
 | Component | Purpose | Microsoft Graph resource |
 |--|--|--|
 | **Blueprint** | Template defining the agent identity type | [agentIdentityBlueprint](../resources/agentidentityblueprint.md) |
-| **Blueprint principal** | Service principal for authorization and tokens | [agentIdentityBlueprintPrincipal](../resources/agentidentityblueprintprincipal.md) |
+| **Blueprint principal** | Record of blueprint's addition to a tenant. | [agentIdentityBlueprintPrincipal](../resources/agentidentityblueprintprincipal.md) |
 | **Agent identity** | Primary identity for authentication | [agentIdentity](../resources/agentidentity.md) |
 | **Agent user** | Optional account for scenarios that require a user account | [agentUser](../resources/agentUser.md) |
 | **Agent registry** | Centralized repository for agent management | [agentRegistry](../resources/agentregistry.md) |
 
 <!--[Learn more about agent identity architecture](/entra/agent-id/identity-platform/key-concepts).-->
 
-## APIs for security and governance for agents
+## Related APIs for security and governance for agents
 
 Microsoft Entra Agent ID extends the comprehensive security and governance capabilities of Microsoft Entra to AI agents, including Conditional Access, Identity Protection, and audit logs.
 
@@ -47,6 +47,8 @@ Each agent identity should have a designated party accountable for the agent's a
 | owner    | agentIdentityBlueprint, agentIdentityBlueprintPrincipal, agentIdentity            |
 | sponsor  | agentIdentityBlueprint, agentIdentityBlueprintPrincipal, agentIdentity, agentUser |
 | manager  | agentUser                                                                         |
+
+See [Administrative relationships in Microsoft Entra Agent ID (owners, sponsors, and managers)](/entra/agent-id/identity-platform/agent-owners-sponsors-managers) for more information.
 
 ### Conditional Access
 
@@ -61,7 +63,7 @@ Microsoft Entra ID Protection continuously evaluates agent risk based on various
 
 ### Audit Logs
 
-Microsoft Entra audit logs capture activities performed by agent identities, providing visibility into agent operations for compliance and security monitoring. From creation of agent identities to configuration changes on agents including assignments of roles and permissions, all activities are logged and can be queried programmatically in the [signIn logs](../resources/signin.md).
+Microsoft Entra [signIn logs](../resources/signin.md) capture activities performed by agent identities, providing visibility into agent operations for compliance and security monitoring - from creation of agent identities to configuration changes on agents including assignments of roles and permissions.
 
 ## Permissions for managing agent identities
 
@@ -116,16 +118,79 @@ For more information about the listed permissions available through both Microso
 
 ## Microsoft Graph permissions blocked for agents
 
-Agent identities use the same Microsoft Graph permission model as other app identities. Therefore, they can be granted delegated or application permissions to access Microsoft Graph APIs.
+Agent identities use the same Microsoft Graph permission model as other identities. Therefore, they can be granted delegated or application permissions to access Microsoft Graph APIs.
 
-However, because of the autonomous nature of agents and the potential risks they pose, the following high-risk Microsoft Graph API permissions are explicitly blocked for agents to prevent misuse or unintended access to sensitive data. These permissions can't be granted to agent identities through Microsoft Graph or Microsoft Entra admin center. <!-- Lwearn more in [Authorization in Microsoft Entra Agent ID](/entra/agent-id/identity-professional/authorization-agent-id) -->
+However, because of the autonomous nature of agents and the potential risks they pose, the following high-risk Microsoft Graph API permissions are explicitly blocked for agents to prevent misuse or unintended access to sensitive data. These permissions can't be granted to agent identities through Microsoft Graph or Microsoft Entra admin center. <!-- Learn more in [Authorization in Microsoft Entra Agent ID](/entra/agent-id/identity-professional/authorization-agent-id) -->
 
-| Blocked permission | Notes |
-|:-------------------|:------|
-| [Application.ReadWrite.All](/graph/permissions-reference#applicationreadwriteall) | Lets you manage all applications. |
-| [RoleManagement.ReadWrite.All](/graph/permissions-reference#rolemanagementreadwriteall) | Includes full control over users, groups, roles, directory settings, and other critical operations. |
-| [User.ReadWrite.All](/graph/permissions-reference#userreadwriteall) | Grants full control of all user accounts. |
-| [Directory.AccessAsUser.All](/graph/permissions-reference#directoryaccessasuserall) | Grants access to information in the directory as the signed-in user. Ensures that an agent can't circumvent security by asking for sweeping Microsoft Graph access—even an administrator can't consent to give an agent those permissions. |
+**Legend:**
+❌ indicates the permission is blocked in that category
+➖ indicates the permission is not applicable/blocked in that category
+
+| Permission name                                                                                                     | Delegated | Application |
+|---------------------------------------------------------------------------------------------------------------------|-----------|-------------|
+| AgentIdentity.Create                                                                                                | ➖        | ❌           |
+| AgentIdentity.Create.All                                                                                            | ➖        | ❌           |
+| AgentIdentity.CreateAsManager                                                                                       | ➖        | ❌           |
+| AgentIdentityBlueprint.Create                                                                                       | ➖        | ❌           |
+| AgentIdentityBlueprint.CreateAsManager                                                                              | ➖        | ❌           |
+| AgentIdentityBlueprint.ReadWrite.All                                                                                | ➖        | ❌           |
+| AgentIdentityBlueprintPrincipal.Create                                                                              | ➖        | ❌           |
+| [Application.ReadWrite.All](/graph/permissions-reference#applicationreadwriteall)                                   | ➖        | ❌           |
+| [Application.ReadWrite.OwnedBy](/graph/permissions-reference#applicationreadwriteownedby)                           | ➖        | ❌           |
+| [AppRoleAssignment.ReadWrite.All](/graph/permissions-reference#approleassignmentreadwriteall)                       | ➖        | ❌           |
+| AuthorizationSystem.ReadWrite.All                                                                                   | ➖        | ❌           |
+| AuthorizationSystemOnboarding.ReadWrite.All                                                                         | ➖        | ❌           |
+| [BitlockerKey.Read.All](/graph/permissions-reference#bitlockerkeyreadall)                                           | ➖        | ❌           |
+| [Calendars.Read](/graph/permissions-reference#calendarsread)                                                        | ➖        | ❌           |
+| [ChannelMessage.Read.All](/graph/permissions-reference#channelmessagereadall)                                       | ➖        | ❌           |
+| [ChannelMessage.Read.Group](/graph/permissions-reference#channelmessagereadgroup)                                   | ➖        | ❌           |
+| [Chat.Read.All](/graph/permissions-reference#chatreadall)                                                           | ➖        | ❌           |
+| [Chat.ReadWrite.All](/graph/permissions-reference#chatreadwriteall)                                                 | ➖        | ❌           |
+| [ConsentRequest.ReadWrite.All](/graph/permissions-reference#consentrequestreadwriteall)                             | ➖        | ❌           |
+| [CustomSecAttributeAssignment.ReadWrite.All](/graph/permissions-reference#customsecattributeassignmentreadwriteall) | ❌        | ❌           |
+| [CustomSecAttributeDefinition.ReadWrite.All](/graph/permissions-reference#customsecattributedefinitionreadwriteall) | ❌        | ❌           |
+| [DelegatedPermissionGrant.ReadWrite.All](/graph/permissions-reference#delegatedpermissiongrantreadwriteall)         | ❌        | ❌           |
+| [Device.ReadWrite.All](/graph/permissions-reference#devicereadwriteall)                                             | ➖        | ❌           |
+| [Device.Write.Restricted](/graph/permissions-reference#devicewriterestricted)                                       | ❌        | ❌           |
+| [DeviceManagementConfiguration.Read.All](/graph/permissions-reference#devicemanagementconfigurationreadall)         | ➖        | ❌           |
+| [Directory.AccessAsUser.All](/graph/permissions-reference#directoryaccessasuserall)                                 | ❌        | ➖           |
+| [Directory.ReadWrite.All](/graph/permissions-reference#directoryreadwriteall)                                       | ❌        | ❌           |
+| [Directory.Write.Restricted](/graph/permissions-reference#directorywriterestricted)                                 | ❌        | ❌           |
+| [Domain.ReadWrite.All](/graph/permissions-reference#domainreadwriteall)                                             | ❌        | ❌           |
+| [EduRoster.ReadWrite.All](/graph/permissions-reference#edurosterreadwriteall)                                       | ➖        | ❌           |
+| [EntitlementManagement.ReadWrite.All](/graph/permissions-reference#entitlementmanagementreadwriteall)               | ➖        | ❌           |
+| [Files.Read.All](/graph/permissions-reference#filesreadall)                                                         | ➖        | ❌           |
+| [Files.ReadWrite.All](/graph/permissions-reference#filesreadwriteall)                                               | ➖        | ❌           |
+| [Group.Create](/graph/permissions-reference#groupcreate)                                                            | ➖        | ❌           |
+| [Group.ReadWrite.All](/graph/permissions-reference#groupreadwriteall)                                               | ❌        | ❌           |
+| [Group.Write.Restricted](/graph/permissions-reference#groupwriterestricted)                                         | ❌        | ➖           |
+| [GroupMember.ReadWrite.All](/graph/permissions-reference#groupmemberreadwriteall)                                   | ❌        | ❌           |
+| [IdentityProvider.ReadWrite.All](/graph/permissions-reference#identityproviderreadwriteall)                         | ➖        | ❌           |
+| [LifecycleManagement.ReadWrite.All](/graph/permissions-reference#lifecyclemanagementreadwriteall)                   | ➖        | ❌           |
+| [Organization.ReadWrite.All](/graph/permissions-reference#organizationreadwriteall)                                 | ➖        | ❌           |
+| [Policy.ReadWrite.AuthenticationMethod](/graph/permissions-reference#policyreadwriteauthenticationmethod)           | ➖        | ❌           |
+| [Policy.ReadWrite.CrossTenantAccess](/graph/permissions-reference#policyreadwritecrosstenantaccess)                 | ➖        | ❌           |
+| [Policy.ReadWrite.PermissionGrant](/graph/permissions-reference#policyreadwritepermissiongrant)                     | ➖        | ❌           |
+| [Policy.ReadWrite.SecurityDefaults](/graph/permissions-reference#policyreadwritesecuritydefaults)                   | ➖        | ❌           |
+| [PrintJob.ReadWrite.All](/graph/permissions-reference#printjobreadwriteall)                                         | ➖        | ❌           |
+| [PrivilegedAccess.ReadWrite.AzureAD](/graph/permissions-reference#privilegedaccessreadwriteazuread)                 | ➖        | ❌           |
+| [PrivilegedAccess.ReadWrite.AzureResources](/graph/permissions-reference#privilegedaccessreadwriteazureresources)   | ➖        | ❌           |
+| [RoleManagement.ReadWrite.All](/graph/permissions-reference#rolemanagementreadwriteall)                             | ❌        | ➖           |
+| [RoleManagement.ReadWrite.Directory](/graph/permissions-reference#rolemanagementreadwritedirectory)                 | ❌        | ❌           |
+| [Sites.FullControl.All](/graph/permissions-reference#sitesfullcontrolall)                                           | ➖        | ❌           |
+| [Sites.Manage.All](/graph/permissions-reference#sitesmanageall)                                                     | ➖        | ❌           |
+| [Sites.Read.All](/graph/permissions-reference#sitesreadall)                                                         | ➖        | ❌           |
+| [Sites.ReadWrite.All](/graph/permissions-reference#sitesreadwriteall)                                               | ➖        | ❌           |
+| [Tasks.ReadWrite.All](/graph/permissions-reference#tasksreadwriteall)                                               | ➖        | ❌           |
+| [User-PasswordProfile.ReadWrite.All](/graph/permissions-reference#user-passwordprofilereadwriteall)                 | ❌        | ❌           |
+| [User.DeleteRestore.All](/graph/permissions-reference#userdeleterestoreall)                                         | ❌        | ❌           |
+| [User.EnableDisableAccount.All](/graph/permissions-reference#userenabledisableaccountall)                           | ❌        | ❌           |
+| [User.Invite.All](/graph/permissions-reference#userinviteall)                                                       | ➖        | ❌           |
+| [User.ManageCreds.All](/graph/permissions-reference#usermanagecredsall)                                             | ❌        | ➖           |
+| [User.ReadWrite.All](/graph/permissions-reference#userreadwriteall)                                                 | ❌        | ❌           |
+| [User.Write.Restricted](/graph/permissions-reference#userwriterestricted)                                           | ❌        | ➖           |
+| [UserAuthenticationMethod.Read.All](/graph/permissions-reference#userauthenticationmethodreadall)                   | ❌        | ➖           |
+| [UserAuthenticationMethod.ReadWrite.All](/graph/permissions-reference#userauthenticationmethodreadwriteall)         | ❌        | ❌           |
 
 ## Related content
 
