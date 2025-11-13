@@ -4787,7 +4787,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "sharePointGroupIdentityMapping",
           "ChangeType": "Addition",
-          "Description": "Added the [sharePointGroupIdentityMapping](https://learn.microsoft.com/en-us/graph/api/resources/sharePointGroupIdentityMapping?view=graph-rest-beta) resource.",
+          "Description": "Added the [sharePointGroupIdentityMapping](https://learn.microsoft.com/en-us/graph/api/resources/sharePointGroupIdentityMapping?view=graph-rest-beta) resource and associated methods.",
           "Target": "sharePointGroupIdentityMapping"
         },
         {
@@ -4819,15 +4819,15 @@
           "ApiChange": "Resource",
           "ChangedApiName": "sharePointUserIdentityMapping",
           "ChangeType": "Addition",
-          "Description": "Added the [sharePointUserIdentityMapping](https://learn.microsoft.com/en-us/graph/api/resources/sharePointUserIdentityMapping?view=graph-rest-beta) resource.",
+          "Description": "Added the [sharePointUserIdentityMapping](https://learn.microsoft.com/en-us/graph/api/resources/sharePointUserIdentityMapping?view=graph-rest-beta) resource and associated methods.",
           "Target": "sharePointUserIdentityMapping"
         },
         {
           "Id": "740b0c9e-2233-4e80-9db5-aec9b447ee0b",
-          "ApiChange": "Resource",
+          "ApiChange": "Relationship",
           "ChangedApiName": "solutionsRoot",
           "ChangeType": "Addition",
-          "Description": "Updated the [solutionsRoot](https://learn.microsoft.com/en-us/graph/api/resources/solutionsRoot?view=graph-rest-beta) resource.",
+          "Description": "Added the **sharePoint** relationship to the [solutionsRoot](https://learn.microsoft.com/en-us/graph/api/resources/solutionsRoot?view=graph-rest-beta) resource.",
           "Target": "solutionsRoot"
         }
       ],
