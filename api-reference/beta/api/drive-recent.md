@@ -2,16 +2,20 @@
 author: spgraph-docs-team
 description: "List a set of items recently used by the signed-in user."
 ms.date: 09/10/2017
-title: List Recent Files
+title: "drive: recent (deprecated)"
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
-# List recent files
+
+# drive: recent (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+> [!CAUTION]
+> The **recent** API is deprecated and will stop returning data after November, 2027.
 
 List a set of items recently used by the signed-in user.
 This collection includes items that are in the user's drive and items they have access to from other drives.
