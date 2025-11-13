@@ -69,7 +69,7 @@ PATCH /users/{id | userPrincipalName}
 ## Request body
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
-To update an agentUser, you must specify the **@odata.type** as `#microsoft.graph.agentUser` in the request body.
+To use this API to update an [agentUser](../resources/agentUser.md), you must specify the **@odata.type** as `#microsoft.graph.agentUser` in the request body.
 
 | Property       | Type    |Description|
 |:---------------|:--------|:----------|
@@ -136,7 +136,7 @@ Use this API to manage the directory, schema, and open extensions and their data
 
 If successful, this method returns a `204 No Content` response code.
 
-If the ID is an agentUser and you don't specify the **@odata.type** as `#microsoft.graph.agentUser` in the request body, this method returns a `400 Bad Request` error code.
+If the ID belongs to an [agentUser](../resources/agentUser.md) and you don't specify the **@odata.type** as `#microsoft.graph.agentUser` in the request body, this method returns a `400 Bad Request` error code.
 
 ## Example
 
@@ -207,7 +207,7 @@ HTTP/1.1 204 No Content
 
 #### Request
 
-The following example shows a request. Because the request doesn't contain the **@odata.type** property, Microsoft Graph expects the {id} of a user object and not an agentUser object.
+The following example shows a request. Because the request doesn't contain the **@odata.type** property, Microsoft Graph expects the {id} of a user object and not an **agentUser** object.
 
 
 # [HTTP](#tab/http)
@@ -264,44 +264,6 @@ Content-type: application/json
 
 #### Response
 
-The following example shows the response.
-<!-- {
-  "blockType": "response"
-} -->
-```http
-HTTP/1.1 204 No Content
-```
-
-### Example 4: Update an agentUser
-
-#### Request
-
-The following example shows a request. Because the request doesn't contain the **@odata.type** property, Microsoft Graph expects the {id} of a user object and not an agentUser object.
-
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "update_other_user"
-}-->
-```http
-PATCH https://graph.microsoft.com/beta/users/{id}
-Content-type: application/json
-
-{
-    "@odata.type": "#microsoft.graph.user",
-    "businessPhones": [
-        "+1 425 555 0109"
-    ],
-    "officeLocation": "18/2111",
-    "authorizationInfo": {
-        "certificateUserIds": [
-            "5432109876543210@mil"
-        ]
-    }
-}
-```
-
-#### Response
 The following example shows the response.
 <!-- {
   "blockType": "response"

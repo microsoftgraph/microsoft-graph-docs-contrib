@@ -1,6 +1,6 @@
 ---
-title: "List users and agentUsers"
-description: "Retrieve a list of user and agentUser objects."
+title: "List users"
+description: "Retrieve a list of user objects."
 author: "yyuank"
 ms.reviewer: "iamut"
 ms.localizationpriority: high
@@ -9,13 +9,13 @@ doc_type: apiPageType
 ms.date: 11/07/2025
 ---
 
-# List users and agentUsers
+# List users
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of [user](../resources/user.md) and [agentUser](../resources/agentuser.md) objects.
+Retrieve a list of [user](../resources/user.md) objects. This API also returns [agentUser](../resources/agentuser.md) objects.
 
 This operation returns by default only a subset of the more commonly used properties for each **user** and **agentUser**. These _default_ properties are noted in the [Properties](../resources/user.md#properties) section. To get properties that are _not_ returned by default, do a [GET operation](user-get.md) and specify the properties in a `$select` OData query option.
 
@@ -27,8 +27,6 @@ This operation returns by default only a subset of the more commonly used proper
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
-
-### Permissions to list users
 
 <!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 |Permission type|Least privileged permission|Higher privileged permissions|
@@ -43,18 +41,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 - *User-Phone.ReadWrite.All* is the least privileged permission to read and write the **businessPhones** and **mobilePhone** properties; also allows to read some identifier-related properties on the user object.
 - *User.EnableDisableAccount.All* + *User.Read.All* is the least privileged combination of permissions to read and write the **accountEnabled** property.
 
-### Permissions to list agent users
-
-<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
-|Permission type|Least privileged permission|Higher privileged permissions|
-|:---|:---|:---|
-|Delegated (work or school account)|User.ReadWrite.All|Not available.|
-|Delegated (personal Microsoft account)|User.ReadWrite.All|Not available.|
-|Application|User.ReadWrite.All|Not available.|
-
 ## HTTP request
 
-The following URL returns a list of user and agentUser objects, with agentUser objects containing an **@odata.type** property of `#microsoft.graph.agentUser`.
+The following URL returns a list of **user** and **agentUser** objects, with **agentUser** objects containing an **@odata.type** property of `#microsoft.graph.agentUser`.
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users
@@ -102,11 +91,11 @@ Attempting to use `$select` on the `/users` collection to retrieve properties th
 
 ## Examples
 
-### Example 1: Get all users and agent users
+### Example 1: Get all users
 
 #### Request
 
-The following example shows a request.
+The following example shows a request. The response includes agent users.
 
 ```http
 GET https://graph.microsoft.com/beta/users
@@ -212,6 +201,7 @@ Content-type: application/json
 {
   "value":[
     {
+      "@odata.type":"#microsoft.graph.agentUser",      
       "displayName":"contoso1",
       "mail":"'contoso1@gmail.com",
       "mailNickname":"contoso1_gmail.com#EXT#",

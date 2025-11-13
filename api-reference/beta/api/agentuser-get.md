@@ -28,6 +28,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 |Delegated (personal Microsoft account) | Not supported. | Not supported.|
 |Application | User.ReadBasic.All | User.Read.All, AgentIdUser.ReadWrite.IdentityParentedBy, AgentIdUser.ReadWrite.All, User.ReadWrite.All |
 
+[!INCLUDE [rbac-agent-user-apis-write](../includes/rbac-for-apis/rbac-agent-user-apis-write.md)]
 
 ## HTTP request
 
@@ -36,12 +37,12 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /user/id
+GET /users/{id}
 ```
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` and `$expand` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 

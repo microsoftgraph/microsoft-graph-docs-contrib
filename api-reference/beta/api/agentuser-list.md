@@ -28,6 +28,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 |Delegated (personal Microsoft account) | Not supported. | Not supported.|
 |Application | User.ReadBasic.All | User.Read.All, AgentIdUser.ReadWrite.IdentityParentedBy, AgentIdUser.ReadWrite.All, User.ReadWrite.All |
 
+[!INCLUDE [rbac-agent-user-apis-write](../includes/rbac-for-apis/rbac-agent-user-apis-write.md)]
+
 ## HTTP request
 
 <!-- {
@@ -40,7 +42,11 @@ GET /users/microsoft.graph.AgentUser
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports [OData query parameters](/graph/query-parameters) to help customize the response:
+
+- `$count`, `$expand`, `$filter`, `$orderby`, `$search`, `$select`, `$top`. `$skip` is not supported.
+- **Page size limits:** The default page size is 100 objects. The maximum page size is 999 objects, except when using `$select=signInActivity` or `$filter=signInActivity`, the maximum page size is 500.
+- Some queries require the **ConsistencyLevel** header set to `eventual` and `$count`. For more information, see [Advanced query capabilities on directory objects](/graph/aad-advanced-queries).
 
 ## Request headers
 

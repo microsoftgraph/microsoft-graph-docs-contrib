@@ -28,6 +28,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 |Delegated (personal Microsoft account) | Not supported. | Not supported.|
 |Application | User.Read.All | AgentIdUser.ReadWrite.IdentityParentedBy, AgentIdUser.ReadWrite.All, User.ReadWrite.All |
 
+[!INCLUDE [rbac-agent-user-apis-write](../includes/rbac-for-apis/rbac-agent-user-apis-write.md)]
+
 ## HTTP request
 
 <!-- {
@@ -40,7 +42,7 @@ GET /users/{usersId}/directReports
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select`, `$count`, `$expand`, and `$filter` [OData query parameters](/graph/query-parameters) to help customize the response. You can use `$select` nested in the `$expand` expression. For example, `me?$expand=($select=id,displayName)`. Some queries are supported only when you use the **ConsistencyLevel** header set to `eventual` and `$count`. For more information, see [Advanced query capabilities on directory objects](/graph/aad-advanced-queries).
 
 ## Request headers
 

@@ -27,6 +27,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 |Delegated (work or school account) | User.Read.All | AgentIdUser.ReadWrite.IdentityParentedBy, AgentIdUser.ReadWrite.All, User.ReadWrite.All |
 |Delegated (personal Microsoft account) | Not supported. | Not supported.|
 |Application | User.Read.All | AgentIdUser.ReadWrite.IdentityParentedBy, AgentIdUser.ReadWrite.All, User.ReadWrite.All |
+
+[!INCLUDE [rbac-agent-user-apis-write](../includes/rbac-for-apis/rbac-agent-user-apis-write.md)]
+
 ## HTTP request
 
 <!-- {
@@ -39,7 +42,13 @@ GET /users/{usersId}/manager
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` and `$expand` [OData query parameters](/graph/query-parameters) to help customize the response. When using the `$expand` query parameter:
+
++ The `n` value of `$levels` can be `max` (to return all managers) or a number between 1 and 1000.
++ When the `$levels` parameter is not specified, only the immediate manager is returned.
++ You can specify `$select` inside `$expand` to select the individual manager's properties: `$expand=manager($levels=max;$select=id,displayName)`.
++ `$levels` parameter is only supported on a single user (`/users/{id}` or `me` endpoints) and not on the entire list of users.
++ Use of `$levels` requires the **ConsistencyLevel** header set to `eventual`. For more information about the use of **ConsistencyLevel**, see [Advanced query capabilities on directory objects](/graph/aad-advanced-queries).
 
 ## Request headers
 

@@ -28,6 +28,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 |Delegated (personal Microsoft account) | Not supported. | Not supported.|
 |Application | AgentIdUser.ReadWrite.IdentityParentedBy | AgentIdUser.ReadWrite.All, User.ReadWrite.All |
 
+[!INCLUDE [rbac-agent-user-apis-write](../includes/rbac-for-apis/rbac-agent-user-apis-write.md)]
+
 ## HTTP request
 
 <!-- {
@@ -70,7 +72,6 @@ DELETE https://graph.microsoft.com/beta/users/{usersId}/sponsors/{id}/$ref
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true

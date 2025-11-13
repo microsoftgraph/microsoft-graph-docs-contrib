@@ -1,6 +1,6 @@
 ---
-title: "Get user or agentUser"
-description: "Retrieve the properties and relationships of user or agentUser object."
+title: "Get user"
+description: "Retrieve the properties and relationships of a user object."
 author: "yyuank"
 ms.reviewer: "iamut"
 ms.localizationpriority: high
@@ -9,13 +9,13 @@ doc_type: apiPageType
 ms.date: 12/23/2024
 ---
 
-# Get user or agentUser
+# Get user
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of [user](../resources/user.md) or [agentUser](../resources/agentuser.md) object.
+Retrieve the properties and relationships of a [user](../resources/user.md) object. If the ID specified is that of an [agentUser](../resources/agentuser.md), the API returns the properties of the **agentUser** object.
 
 This operation returns by default only a subset of the more commonly used properties. These _default_ properties are noted in the [Properties](../resources/user.md#properties) section. To get properties that are _not_ returned by default, do a [GET operation](user-get.md) and specify the properties in a `$select` OData query option. Because the **user** resource supports [extensions](/graph/extensibility-overview), you can also use the `GET` operation to get custom properties and extension data in a **user** instance.
 
@@ -26,7 +26,6 @@ Customers through Microsoft Entra ID for customers can also use this API operati
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-### Permissions to get a user
 <!-- { "blockType": "ignored", "name": "user_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/user-get-permissions.md)]
 
@@ -45,15 +44,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 - *User-Phone.ReadWrite.All* is the least privileged permission to read and write the **businessPhones** and **mobilePhone** properties; also allows to read some identifier-related properties on the user object.
 - *User.EnableDisableAccount.All* + *User.Read.All* is the least privileged combination of permissions to read and write the **accountEnabled** property.
 
-### Permissions to get an agentUser
-
-<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
-|Permission type      | Least privileged permission | Higher privileged permissions |
-|:--------------------|:---------------------------|:-----------------------------|
-|Delegated (work or school account) | User.ReadWrite.All | Not available. |
-|Delegated (personal Microsoft account) | Not supported. | Not supported.|
-|Application | User.ReadWrite.All | Not available. |
-
 ## HTTP request
 
 For the signed-in user:
@@ -64,7 +54,7 @@ GET /me
 
 [!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
 
-For a specified user or agentUser:
+For a specified **user** or **agentUser**:
 ```
 GET /users/{id | userPrincipalName}
 ```
@@ -173,11 +163,11 @@ Content-type: application/json
 }
 ```
 
-### Example 2: Get the properties of the specified user or agentUser by their ID
+### Example 2: Get the properties of the specified user
 
 #### Request
 
-The following example shows a request.
+The following example shows a request. If the ID specified is that of an [agentUser](../resources/agentuser.md), the API returns the properties of the **agentUser** object.
 
 # [HTTP](#tab/http)
 <!-- {

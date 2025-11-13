@@ -28,6 +28,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 |Delegated (personal Microsoft account) | Not supported. | Not supported.|
 |Application | User.Read.All | AgentIdUser.ReadWrite.IdentityParentedBy, AgentIdUser.ReadWrite.All, User.ReadWrite.All |
 
+[!INCLUDE [rbac-agent-user-apis-write](../includes/rbac-for-apis/rbac-agent-user-apis-write.md)]
+
 ## HTTP request
 
 <!-- {
@@ -40,7 +42,7 @@ GET /users/{usersId}/sponsors
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` and `$expand` [OData query parameters](/graph/query-parameters) to help customize the response. You can specify `$select` inside `$expand` to select the individual sponsor's properties: `$expand=sponsors($select=id,displayName)`.
 
 ## Request headers
 

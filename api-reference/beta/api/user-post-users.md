@@ -1,6 +1,6 @@
 ---
-title: "Create user or agentUser"
-description: "Create a new user or agentUser."
+title: "Create user"
+description: "Create a new user."
 author: "yyuank"
 ms.reviewer: "iamut"
 ms.localizationpriority: medium
@@ -9,13 +9,13 @@ doc_type: apiPageType
 ms.date: 10/22/2024
 ---
 
-# Create user or agentUser
+# Create user
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [user](../resources/user.md) or [agentUser](../resources/agentuser.md) object.
+Create a new [user](../resources/user.md). If you specify an **@odata.type** property with a value of `#microsoft.graph.agentUser` with the required properties, this API creates an [agentUser](../resources/agentuser.md) object.
 
 At a minimum, you must specify the required properties. You can optionally specify any other writable properties.
 
@@ -30,8 +30,6 @@ This operation returns by default only a subset of the properties for each **use
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-### Permissions to create a user
-
 <!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 |Permission type      | Least privileged permission | Higher privileged permissions |
 |:--------------------|:---------------------------|:-----------------------------|
@@ -39,14 +37,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 |Delegated (personal Microsoft account) | Not supported. | |
 |Application | User.ReadWrite.All | Directory.ReadWrite.All |
 
-### Permissions to create an agentUser
-
 <!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
-|Permission type      | Least privileged permission | Higher privileged permissions |
-|:--------------------|:---------------------------|:-----------------------------|
-|Delegated (work or school account) | User.ReadWrite.All | Not available. |
-|Delegated (personal Microsoft account) | Not supported. | Not supported.|
-|Application | User.ReadWrite.All | Not available. |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -75,7 +66,7 @@ The following table lists the properties that are *required* when you create a *
 |mailNickname |String |The mail alias for the user.|
 |passwordProfile|[PasswordProfile](../resources/passwordprofile.md) |The password profile for the user.|
 |userPrincipalName |String |The user principal name (someuser@contoso.com). It's an Internet-style login name for the user based on the Internet standard RFC 822. By convention, this should map to the user's email name. The general format is alias@domain, where domain must be present in the tenant's collection of verified domains. The verified domains for the tenant can be accessed from the **verifiedDomains** property of [organization](../resources/organization.md). <br>NOTE: This property cannot contain accent characters. Only the following characters are allowed `A - Z`, `a - z`, `0 - 9`, ` ' . - _ ! # ^ ~`. For the complete list of allowed characters, see [username policies](/azure/active-directory/authentication/concept-sspr-policy#userprincipalname-policies-that-apply-to-all-user-accounts).|
-| identityParentId | String | The object ID of the associated agent identity. Required for agentUser and ignored for regular users if **@odata.type** of `#microsoft.graph.agentUser` isn't set. If not set, a regular user is created.|
+| identityParentId | String | The object ID of the associated [agent identity](../resources/agentidentity.md). Required for **agentUser** where **@odata.type** of `#microsoft.graph.agentUser` must be set and ignored for regular users. If not set, a regular user is created.|
 
 Because this resource supports [extensions](/graph/extensibility-overview), you can use the `POST` operation and add custom properties with your own data to the user instance while creating it.
 
@@ -88,7 +79,7 @@ Federated users created via this API must sign in every 12 hours by default. For
 
 If successful, this method returns a `201 Created` response code and a [user](../resources/user.md) or [agentUser](../resources/agentuser.md) object in the response body.
 
-Omitting the `@odata.type` property of `#microsoft.graph.agentUser` creates a user object, even if the **identityParentId** is specified. Attempting to create an agentUser with a **identityParentId** already linked to another agentUser returns a `400 Bad Request` error.
+Omitting the `@odata.type` property of `#microsoft.graph.agentUser` creates a user object, even if the **identityParentId** is specified. Attempting to create an **agentUser** with a **identityParentId** already linked to another agentUser returns a `400 Bad Request` error.
 
 ## Example
 
@@ -225,6 +216,7 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#users/$entity",
+    "@odata.type": "#microsoft.graph.agentUser",
     "id": "87d349ed-44d7-43e1-9a83-5f2406dee5bd",
     "businessPhones": [],
     "displayName": "Adele Vance",
