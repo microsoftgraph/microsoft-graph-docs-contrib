@@ -73,7 +73,7 @@ The following example shows a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/applications(uniqueName='app-65278')/microsoft.graph.agentIdentityBlueprint/federatedIdentityCredentials(name='fic01-app-65278')
+PATCH https://graph.microsoft.com/beta/applications/bdbb39c8-eb51-46ef-b89b-5151deeb77b2/microsoft.graph.agentIdentityBlueprint/federatedIdentityCredentials(name='fic01-app-65278')
 Content-Type: application/json
 
 {
@@ -127,7 +127,7 @@ The following example shows a request.
 -->
 
 ``` http
-PATCH https://graph.microsoft.com/beta/applications(uniqueName='app-65278')/microsoft.graph.agentIdentityBlueprint/federatedIdentityCredentials(name='fic01-app-65278')
+PATCH https://graph.microsoft.com/beta/applications/bdbb39c8-eb51-46ef-b89b-5151deeb77b2/microsoft.graph.agentIdentityBlueprint/federatedIdentityCredentials(name='fic01-app-65278')
 Content-Type: application/json
 Prefer: create-if-missing
 
