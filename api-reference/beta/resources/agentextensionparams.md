@@ -16,11 +16,10 @@ Namespace: microsoft.graph
 
 Extension-specific configuration parameters.
 
-This resource is an open type.
+This resource is an open type that allows additional properties beyond those documented here.
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+None.
 
 ## Relationships
 None.

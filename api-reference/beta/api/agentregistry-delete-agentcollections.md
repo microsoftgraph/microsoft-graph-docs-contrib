@@ -1,6 +1,6 @@
 ---
-title: "Remove agentInstance from agentCollection"
-description: "Remove an agentInstance object from an agentCollection."
+title: "Delete agentCollection"
+description: "Delete an agentCollection object."
 author: "jasondou"
 ms.date: 11/06/2025
 ms.localizationpriority: medium
@@ -8,13 +8,13 @@ ms.subservice: "entra-id"
 doc_type: apiPageType
 ---
 
-# Remove agentInstance from agentCollection
+# Delete agentCollection
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Remove an [agentInstance](../resources/agentinstance.md) object from an [agentCollection](../resources/agentcollection.md).
+Delete an [agentCollection](../resources/agentcollection.md) object.
 
 ## Permissions
 
@@ -22,10 +22,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "agentcollection-delete-members-permissions"
+  "name": "agentregistry-delete-agentcollections-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/agentcollection-delete-members-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/agentregistry-delete-agentcollections-permissions.md)]
 
 [!INCLUDE [rbac-agentregistry-apis](../includes/rbac-for-apis/rbac-agentregistry-apis.md)]
 
@@ -36,7 +36,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-DELETE /agentRegistry/agentInstances/{agentInstanceId}/collections/{agentCollectionId}/members/{id}/$ref
+DELETE /agentRegistry/agentCollections/{agentCollectionId}
 ```
 
 ## Request headers
@@ -60,17 +60,18 @@ If successful, this method returns a `204 No Content` response code.
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "delete_members_from_agentcollection"
+  "name": "delete_agentcollection"
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/agentRegistry/agentInstances/{agentInstanceId}/collections/{agentCollectionId}/members/{id}/$ref
+DELETE https://graph.microsoft.com/beta/agentRegistry/agentCollections/{agentCollectionId}
 ```
 
 
 ### Response
 
 The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true

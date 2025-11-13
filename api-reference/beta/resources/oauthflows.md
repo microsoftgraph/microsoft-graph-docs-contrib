@@ -14,8 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Allows configuration of the supported OAuth Flows.
-
+Allows configuration of the supported OAuth Flows for an [OAuth 2.0 security scheme](../resources/oauth2securityscheme.md) used for authenticating API requests.
 
 ## Properties
 |Property|Type|Description|

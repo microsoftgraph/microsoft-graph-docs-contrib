@@ -1,6 +1,11 @@
 ---
+<<<<<<< HEAD
 title: "Add agentInstance"
 description: "Add members by posting to the agent collection."
+=======
+title: "Add agentInstance to agentCollection"
+description: "Add an agentInstance to an agentCollection."
+>>>>>>> 3a6e02f9ff2ce3b39a37a769b4864bf4630a0305
 author: "jasondou"
 ms.date: 11/06/2025
 ms.localizationpriority: medium
@@ -8,13 +13,13 @@ ms.subservice: "entra-id"
 doc_type: apiPageType
 ---
 
-# Add agentInstance
+# Add agentInstance to agentCollection
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Add agentInstance by posting to the agent collection. To add multiple agentInstance in batch, consider using [MS Graph JSON batching](https://learn.microsoft.com/graph/json-batching).
+Add an [agentInstance](../resources/agentinstance.md) to an [agentCollection](../resources/agentcollection.md).To add multiple agentInstance in batch, consider using [MS Graph JSON batching](https://learn.microsoft.com/graph/json-batching).
 
 ## Permissions
 
@@ -26,6 +31,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 [!INCLUDE [permissions-table](../includes/permissions/agentcollection-post-members-permissions.md)]
+
+[!INCLUDE [rbac-agentregistry-apis](../includes/rbac-for-apis/rbac-agentregistry-apis.md)]
 
 ## HTTP request
 
@@ -50,7 +57,7 @@ In the request body, supply a JSON object that contains a **@odata.id** property
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code and an [agentInstance](../resources/agentinstance.md) object in the response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
@@ -75,7 +82,6 @@ Content-Type: application/json
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

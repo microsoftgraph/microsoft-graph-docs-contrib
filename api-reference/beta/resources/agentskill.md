@@ -14,8 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a distinct capability or function that an agent can perform.
-
+Represents a distinct capability or function that an agent can perform, as defined in the [agentCardManifest](../resources/agentcardmanifest.md). 
 
 ## Properties
 |Property|Type|Description|
@@ -24,7 +23,7 @@ Represents a distinct capability or function that an agent can perform.
 |displayName|String|A human-readable name for the skill.|
 |examples|String collection|Example prompts or scenarios that this skill can handle. Provides a hint to the client on how to use the skill.|
 |id|String|A unique identifier for the agent's skill.|
-|inputModes|String collection|The set of supported input MIME types for this skill, overriding the agent's defaults.
+|inputModes|String collection|The set of supported input MIME types for this skill, overriding the agent's defaults.|
 |outputModes|String collection|The set of supported output MIME types for this skill, overriding the agent's defaults.|
 |security|[securityRequirement](../resources/securityrequirement.md) collection|Security schemes necessary for the agent to leverage this skill.|
 |tags|String collection|A set of keywords describing the skill's capabilities.|

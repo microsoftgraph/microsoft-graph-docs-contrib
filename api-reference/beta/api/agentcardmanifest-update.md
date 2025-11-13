@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of an agentCardManifest object.
+Update the properties of an [agentCardManifest](../resources/agentcardmanifest.md) object.
 
 ## Permissions
 
@@ -26,6 +26,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 [!INCLUDE [permissions-table](../includes/permissions/agentcardmanifest-update-permissions.md)]
+
+[!INCLUDE [rbac-agentregistry-apis](../includes/rbac-for-apis/rbac-agentregistry-apis.md)]
 
 ## HTTP request
 

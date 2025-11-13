@@ -2,7 +2,7 @@
 title: "List agentInstance objects"
 description: "Get a list of the agentInstance objects and their properties."
 author: "jasondou"
-ms.date: 11/06/2025
+ms.date: 11/11/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-id"
 doc_type: apiPageType
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the agentInstance objects and their properties.
+Get a list of the [agentInstance](../resources/agentinstance.md) objects and their properties.
 
 ## Permissions
 
@@ -26,6 +26,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 [!INCLUDE [permissions-table](../includes/permissions/agentregistry-list-agentinstances-permissions.md)]
+
+[!INCLUDE [rbac-agentregistry-apis](../includes/rbac-for-apis/rbac-agentregistry-apis.md)]
 
 ## HTTP request
 
@@ -39,7 +41,7 @@ GET /agentRegistry/agentInstances
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select`, `$count`, `$expand` and `$filter` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 

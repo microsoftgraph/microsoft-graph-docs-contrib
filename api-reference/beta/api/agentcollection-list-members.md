@@ -1,6 +1,6 @@
 ---
-title: "List agent collection members"
-description: "Returns the list of agent instance members for the specified collection."
+title: "List agentCollection members"
+description: "Return the list of agent instance members for the specified collection."
 author: "jasondou"
 ms.date: 11/06/2025
 ms.localizationpriority: medium
@@ -8,13 +8,13 @@ ms.subservice: "entra-id"
 doc_type: apiPageType
 ---
 
-# List agent collection members
+# List agentCollection members
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Returns the list of agent instance members for the specified collection.
+Return the list of [agent instances](../resources/agentinstance.md) that are members for the specified [agentCollection](../resources/agentcollection.md).
 
 ## Permissions
 
@@ -26,6 +26,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 [!INCLUDE [permissions-table](../includes/permissions/agentcollection-list-members-permissions.md)]
+
+[!INCLUDE [rbac-agentregistry-apis](../includes/rbac-for-apis/rbac-agentregistry-apis.md)]
 
 ## HTTP request
 
@@ -39,7 +41,7 @@ GET /agentRegistry/agentInstances/{agentInstanceId}/collections/{agentCollection
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` and `$count` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 

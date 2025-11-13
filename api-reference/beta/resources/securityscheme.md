@@ -14,9 +14,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Defines a security scheme that can be used by the operations.
-This is an abstract type.
+Defines a security scheme that can be used by the operations, as defined in the [agentCardManifest](../resources/agentcardmanifest.md).
 
+This is an abstract type from which the following types inherit:
+
+- [apiKeySecurityScheme](../resources/apikeySecurityscheme.md)
+- [httpAuthSecurityScheme](../resources/httpauthsecurityscheme.md)
+- [mutualTLSSecurityScheme](../resources/mutualtlssecurityscheme.md)
+- [oAuth2SecurityScheme](../resources/oauth2securityscheme.md)
+- [openIdConnectSecurityScheme](../resources/openidconnectsecurityscheme.md)
 
 ## Properties
 |Property|Type|Description|

@@ -14,13 +14,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The available scopes for the OAuth2 security scheme. A map between the scope name and a short description for it. The map MAY be empty.
+The available scopes for the [OAuth2 security scheme](../resources/oauth2securityscheme.md). A map between the scope name and a short description for it. The map MAY be empty.
 
-This resource is an open type.
+This resource is an open type that allows additional properties beyond those documented here.
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+None.
 
 ## Relationships
 None.
