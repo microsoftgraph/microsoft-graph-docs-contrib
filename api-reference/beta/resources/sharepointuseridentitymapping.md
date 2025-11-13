@@ -22,8 +22,8 @@ Inherits from [sharePointIdentityMapping](../resources/sharepointidentitymapping
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get](../api/sharepointuseridentitymapping-get.md)|[sharePointUserIdentityMapping](../resources/sharepointuseridentitymapping.md)|Read the properties and relationships of [sharePointUserIdentityMapping](../resources/sharepointuseridentitymapping.md) object.|
-|[Update](../api/sharepointuseridentitymapping-update.md)|[sharePointUserIdentityMapping](../resources/sharepointuseridentitymapping.md)|Update the properties of a [sharePointUserIdentityMapping](../resources/sharepointuseridentitymapping.md) object.|
+|[Get](../api/sharepointuseridentitymapping-get.md)|[sharePointUserIdentityMapping](../resources/sharepointuseridentitymapping.md)|Retrieve a specific [user identity mapping](../resources/sharepointuseridentitymapping.md) by the source user principal name (UPN).|
+|[Update](../api/sharepointuseridentitymapping-update.md)|[sharePointUserIdentityMapping](../resources/sharepointuseridentitymapping.md)|Perform delta patch operations on [user identity mappings](../resources/sharepointuseridentitymapping.md) for cross-organization migration.|
 
 ## Properties
 |Property|Type|Description|
