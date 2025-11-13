@@ -81,12 +81,12 @@ None.
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
+|approvalItems|[approvalItem](approvalitem.md) collection | A collection of approval items.|
 |bookingBusinesses|[bookingBusiness](bookingbusiness.md) collection | A collection of businesses in Microsoft Bookings. Read-only. Nullable.|
 |bookingCurrencies|[bookingCurrency](bookingcurrency.md) collection | A collection of monetary currencies supported by a [bookingBusiness](bookingbusiness.md). Read-only. Nullable.|
 |businessScenarios|[businessScenario](businessscenario.md) collection | A collection of scenarios that contain relevant data and configuration information for a specific problem domain.|
+|sharePoint|[sharePointRoot](sharepointroot.md) | Container for SharePoint resources that include cross-organization migration operations.|
 |virtualEvents|[virtualEventsRoot](virtualeventsroot.md) collection | A collection of virtual events.|
-|approvalItems|[approvalItem](approvalitem.md) collection | A collection of approval items.|
-|sharePoint|[sharePointRoot](sharepointroot.md) | Container for SharePoint resources including cross-organization migration operations.|
 
 ## JSON representation
 The following JSON representation shows the resource type.
