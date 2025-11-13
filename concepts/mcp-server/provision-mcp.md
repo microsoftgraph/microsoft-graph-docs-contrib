@@ -92,6 +92,47 @@ The MCP Server supports a limited set of Microsoft Graph read-only delegated sco
 
 The MCP Server doesn't support app-only permissions and app-only scenarios.
 
+<details>
+
+<summary>Supported MCP Server scopes</summary>
+
+To understand what operations each scope allows, refer to the original name in the [Microsoft Graph permissions reference](../permissions-reference.md).
+
+- MCP.AccessReview.Read.All
+- MCP.AdministrativeUnit.Read.All
+- MCP.Application.Read.All
+- MCP.AuditLog.Read.All
+- MCP.AuthenticationContext.Read.All
+- MCP.Device.Read.All
+- MCP.DirectoryRecommendations.Read.All
+- MCP.Domain.Read.All
+- MCP.EntitlementManagement.Read.All
+- MCP.GroupMember.Read.All
+- MCP.HealthMonitoringAlert.Read.All
+- MCP.IdentityRiskEvent.Read.All
+- MCP.IdentityRiskyServicePrincipal.Read.All
+- MCP.IdentityRiskyUser.Read.All
+- MCP.LicenseAssignment.Read.All
+- MCP.LifecycleWorkflows.Read.All
+- MCP.LifecycleWorkflows-CustomExt.Read.All
+- MCP.LifecycleWorkflows-Reports.Read.All
+- MCP.LifecycleWorkflows-Workflow.Read.All
+- MCP.LifecycleWorkflows-Workflow.ReadBasic.All
+- MCP.NetworkAccess.Read.All
+- MCP.NetworkAccess-Reports.Read.All
+- MCP.Organization.Read.All
+- MCP.Policy.Read.All
+- MCP.Policy.Read.ConditionalAccess
+- MCP.ProvisioningLog.Read.All
+- MCP.Reports.Read.All
+- MCP.RoleAssignmentSchedule.Read.Directory
+- MCP.RoleEligibilitySchedule.Read.Directory
+- MCP.RoleManagement.Read.Directory
+- MCP.Synchronization.Read.All
+- MCP.User.Read.All
+- MCP.UserAuthenticationMethod.Read.All
+</details>
+
 #### Supported MCP Server actions
 
 The MCP Server supports the following actions when you run the management script:

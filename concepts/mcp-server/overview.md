@@ -37,7 +37,7 @@ Suppose an administrator asks: "*How many users do we have in our Microsoft Entr
 
 1. **Query selection**: The LLM evaluates the list of API calls and selects the API call with the highest relevance score as the best fit to fulfill the request, which is `GET /users/$count`.
 
-1. **Execution**: The LLM determines from the list of running Enterprise MCP Server tools, to use the  `make_graph_call_readonly` tool to execute the `GET /users/$count` call. It honors the user's privileges when making the call.
+1. **Execution**: The LLM determines from the list of running Enterprise MCP Server tools, to use the  `microsoft_graph_get` tool to execute the `GET /users/$count` call. It honors the user's privileges when making the call.
 
 1. **API Processing**: The MCP Server processes the request and:
    - Forwards the request to the Microsoft Graph service to execute the call.
@@ -49,11 +49,9 @@ Suppose an administrator asks: "*How many users do we have in our Microsoft Entr
 
 The Microsoft MCP Server for Enterprise exposes the following tools that an AI agent can invoke:
 
-- **search_for_graph_examples** - Uses retrieval-augmented generation (RAG) methodologies to search for Microsoft Graph API calls that match the user's intent. It has a semantic index of example queries mapped to natural language and returns a list of candidate queries to the AI model.
-
-- **make_graph_call_readonly** - Executes read-only Microsoft Graph API calls and returns the results. This tool respects all existing Microsoft Graph permission models and throttling limits.
-
-- **get_graph_entity_properties** - Retrieves properties of specific Microsoft Graph entities to help the AI model understand the data structure.
+- **search_for_graph_examples**: Uses retrieval-augmented generation (RAG) methodologies to search for Microsoft Graph API calls that match the user's intent. It has a semantic index of example queries mapped to natural language and returns a list of candidate queries to the AI model.
+- **microsoft_graph_get**: Executes read-only Microsoft Graph API calls, respecting user roles, scopes granted to the MCP Client, and throttling limits.
+- **get_graph_entity_properties**: Retrieves properties of specific Microsoft Graph entities to help the AI model understand the data structure.
 
 ## Usage scenarios
 

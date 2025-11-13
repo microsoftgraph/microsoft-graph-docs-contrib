@@ -30,18 +30,19 @@ Before you begin, make sure you:
 
 ## Set up the Microsoft MCP Server for Enterprise
 
-1. Select the following button to install the Microsoft MCP Server for Enterprise extension for VS Code. Alternatively, install the extension manually by downloading it from the [VS Code marketplace](https://marketplace.visualstudio.com/items?itemName=ms-graph.vscode-graph-mcp-server), or search for and install **Microsoft MCP Server for Enterprise** in the Extensions view of VS Code.
+<!--1. Select the following button to install the Microsoft MCP Server for Enterprise extension for VS Code. Alternatively, install the extension manually by downloading it from the [VS Code marketplace](https://marketplace.visualstudio.com/items?itemName=ms-graph.vscode-graph-mcp-server), or search for and install **Microsoft MCP Server for Enterprise** in the Extensions view of VS Code.
 
-    [Icon](https://vscode.dev/redirect/mcp/install?name=MicrosoftGraph&config=%7B%22name%22%3A%22MicrosoftGraph%22%2C%22type%22%3A%22http%22%2C%22url%22%3A%22https%3A%2F%2Fmcp.graph.microsoft.com%22%7D)
+    [Icon](https://vscode.dev/redirect/mcp/install?name=MicrosoftGraph&config=%7B%22name%22%3A%22MicrosoftGraph%22%2C%22type%22%3A%22http%22%2C%22url%22%3A%22https%3A%2F%2Fmcp.graph.microsoft.com%22%7D) -->
 
+1. Click [Install Microsoft MCP Server for Enterprise](https://vscode.dev/redirect/mcp/install?name=Microsoft%20MCP%20Server%20for%20Enterprise&config=%7b%22name%22:%22Microsoft%20MCP%20Server%20for%20Enterprise%22%2c%22type%22:%22http%22%2c%22url%22:%22https://mcp.svc.cloud.microsoft/enterprise%22%7d) to launch VS Code's MCP install page.
 1. After you install the extension, open GitHub Copilot and switch to **Agent** mode in the context window.
-1. Select the **Configure Tools** icon to see the list of available tools. Check or search for **MCP Server: MicrosoftGraph**, and expand the menu to see the list of its available tools.
-   1. If the **MCP Server: MicrosoftGraph** tool isn't listed, select the refresh button on the context window, then retry.
+1. Select the **Configure Tools** icon to see the list of available tools. Check or search for **Microsoft MCP Server for Enterprise**, and expand the menu to see the list of its available tools.
+   1. If the **Microsoft MCP Server for Enterprise** tool isn't listed, select the refresh button on the context window, then retry.
 
 ## Run the Microsoft MCP Server for Enterprise
 
-1. In the GitHub Copilot window, select the **Configure chat...** cog wheel at the top right > **MCP Servers**. The Extensions pane shows the list of installed MCP Servers, including `MicrosoftGraph`.
-1. Select the cog wheel for **MicrosoftGraph** > **Start Server**.
+1. In the GitHub Copilot window, select the **Configure chat...** cog wheel at the top right > **MCP Servers**. The Extensions pane shows the list of installed MCP Servers, including `Microsoft MCP Server for Enterprise`.
+1. Select the cog wheel for **Microsoft MCP Server for Enterprise** > **Start Server**.
 
     > [!NOTE]
     > You can also start the MCP Server from the actions inline the *mcp.json* configuration file. For more information, see [Manage MCP servers](https://code.visualstudio.com/docs/copilot/customization/mcp-servers#_manage-mcp-servers).
