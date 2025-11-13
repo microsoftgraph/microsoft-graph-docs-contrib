@@ -96,7 +96,7 @@ The following example shows a request.
   "name": "list_sslcertificates"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/security/threatIntelligence/sslCertificates?$search="subject/commonName:microsoft.com"&$count=true&$top=1
 ```
 

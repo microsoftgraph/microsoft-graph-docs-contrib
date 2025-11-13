@@ -151,7 +151,7 @@ Based on the same scenario, the following examples show the counts that are retu
   "name": "unifiedroledefinition_assignedprincipals_scope_role"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions/644ef478-e28f-4e28-b9dc-3fdde9aa0b1f/assignedPrincipals(directoryScopeType='administrativeUnit', directoryScopeId ='d0c2e067-9ae9-4dbf-a280-51a51c46f432')
 ```
 
@@ -194,7 +194,7 @@ Content-Type: application/json
   "name": "unifiedroledefinition_assignedprincipals_allscopes"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions/644ef478-e28f-4e28-b9dc-3fdde9aa0b1f/assignedPrincipals
 ```
 
@@ -254,7 +254,7 @@ Content-Type: application/json
   "name": "unifiedroledefinition_assignedprincipals_scope"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions/644ef478-e28f-4e28-b9dc-3fdde9aa0b1f/assignedPrincipals(directoryScopeType='tenant')/microsoft.graph.user
 ```
 
@@ -300,7 +300,7 @@ The following example gets the directly assigned principals and displays an inli
   "name": "unifiedroledefinition_assignedprincipals_minimumpermission_count"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions/644ef478-e28f-4e28-b9dc-3fdde9aa0b1f/assignedPrincipals?$count=true
 ```
 

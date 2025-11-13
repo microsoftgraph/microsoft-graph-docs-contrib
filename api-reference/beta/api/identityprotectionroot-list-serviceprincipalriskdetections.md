@@ -66,7 +66,7 @@ The following example shows a request.
   "name": "list_serviceprincipalriskdetection"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityProtection/servicePrincipalRiskDetections
 ```
 
@@ -159,7 +159,7 @@ The following example shows how to use `$filter` to get the collection of servic
   "name": "list_filter_serviceprincipalriskdetection"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityProtection/servicePrincipalRiskDetections?$filter=riskEventType eq 'investigationsThreatIntelligence' or riskLevel eq 'medium'
 ```
 

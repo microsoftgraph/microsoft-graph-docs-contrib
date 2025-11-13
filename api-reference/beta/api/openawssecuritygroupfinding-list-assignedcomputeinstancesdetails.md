@@ -59,7 +59,7 @@ The following example shows a request.
   "name": "list_assignedcomputeinstancedetails"
 }
 -->
-```http
+```msgraph-interactive
 GET  https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/MSxPcGVuQXdzU2VjdXJpdHlHcm91cEZpbmRpbmcsNzE3MTg1/microsoft.graph.openAwsSecurityGroupFinding/assignedComputeInstancesDetails
 ```
 

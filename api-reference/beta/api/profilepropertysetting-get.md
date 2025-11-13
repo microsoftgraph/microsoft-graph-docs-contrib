@@ -64,7 +64,7 @@ The following example shows a request.
   "name": "get_profilepropertysetting"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/admin/people/profilePropertySettings/00000000-0000-0000-0000-000000000001
 ```
 

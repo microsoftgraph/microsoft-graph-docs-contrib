@@ -77,7 +77,7 @@ The following example shows a request.
   "name": "lifecycleworkflows_userprocessingresultthis.summary"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/IdentityGovernance/lifecycleWorkflows/workflows/14879e66-9ea9-48d0-804d-8fea672d0341/userProcessingResults/summary(startDateTime=2022-07-20T00:00:00Z,endDateTime=2022-07-23T00:00:00Z)
 ```
 

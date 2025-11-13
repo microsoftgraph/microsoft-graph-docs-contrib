@@ -89,7 +89,6 @@ DELETE https://graph.microsoft.com/v1.0/education/classes/37d99af7-cfc5-4e3b-856
 
 ---
 
-
 ### Response
 
 The following example shows the response.

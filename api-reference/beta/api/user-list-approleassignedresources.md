@@ -66,7 +66,7 @@ The following example shows a request.
   "name": "list_approleassignedresources_users"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/appRoleAssignedResources?$select=displayName,accountEnabled,servicePrincipalType,signInAudience
 ConsistencyLevel: eventual
 ```

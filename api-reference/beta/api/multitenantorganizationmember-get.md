@@ -64,7 +64,7 @@ The following example gets a tenant and its properties in the multi-tenant organ
   "name": "get_multitenantorganizationmember"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/tenantRelationships/multiTenantOrganization/tenants/1fd6544e-e994-4de2-9f1b-787b51c7d325
 ```
 

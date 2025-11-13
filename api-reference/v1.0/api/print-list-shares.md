@@ -69,7 +69,7 @@ You can get additional properties via a [Get printerShare](printershare-get.md) 
   "name": "list_printershare_1"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/print/shares
 ```
 

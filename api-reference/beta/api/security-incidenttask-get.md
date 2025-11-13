@@ -62,7 +62,7 @@ If successful, this method returns a `200 OK` response code and the [security-in
   "name": "get_incidenttask"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/security/incidentTasks/213213
 ```
 

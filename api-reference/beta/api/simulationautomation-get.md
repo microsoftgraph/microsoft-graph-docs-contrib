@@ -61,7 +61,7 @@ The following example shows a request.
   "name": "get_simulationautomation"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/security/attackSimulation/simulationAutomations/fbad62b0-b32d-b6ac-9f48-d84bbea08f96
 ```
 
