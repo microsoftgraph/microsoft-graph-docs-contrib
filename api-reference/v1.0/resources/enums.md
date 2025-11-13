@@ -5284,13 +5284,31 @@ Possible values for user account types (group membership), per Windows definitio
 | bullseye         |
 | unknownFutureValue |
 
-### notificationEventsType values 
+### webApplicationFirewallDnsRecordType values 
 
 |Member|
 |:---|
-|none|
-|restoreAndPolicyUpdates|
+|cname|
 |unknownFutureValue|
+
+### webApplicationFirewallProviderType values 
+
+|Member|
+|:---|
+|akamai|
+|cloudflare|
+|unknownFutureValue|
+
+### webApplicationFirewallVerificationStatus values 
+
+|Member|
+|:---|
+|success|
+|warning|
+|failure|
+|unknownFutureValue|
+
+### callEventType values
 
 ### notificationRecipientsType values 
 

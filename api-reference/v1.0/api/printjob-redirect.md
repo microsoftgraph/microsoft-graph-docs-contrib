@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /print/printers/{printerId}/jobs/{printJobId}/redirect
 ```
 
@@ -62,7 +62,7 @@ If successful, this method returns a `200 OK` response code and a [printJob](../
   "name": "printjob_redirect"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/print/printers/{printerId}/jobs/{printJobId}/redirect
 Content-Type: application/json
 
@@ -140,7 +140,7 @@ Content-Type: application/json
   "@odata.type": "microsoft.graph.printJob"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

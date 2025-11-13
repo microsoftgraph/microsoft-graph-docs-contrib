@@ -228,8 +228,8 @@ items:
     href: ../../api/recyclebin-list-items.md
   - name: Delete
     href: ../../api/recyclebinitem-delete.md
-  - name: Restore
-    href: ../../api/recyclebinitem-restore.md
+  - name: Restore recycleBinItem by driveItemId
+    href: ../../api/filestoragecontainer-restore-recyclebinitem.md
 - name: Rich long running operation
   items:
   - name: Rich long running operation

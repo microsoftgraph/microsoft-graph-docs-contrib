@@ -91,7 +91,7 @@ Depending on the resource and the permission type (delegated or application) req
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /subscriptions/{subscriptionsId}/reauthorize
 ```
 
@@ -117,7 +117,7 @@ The following example shows a request.
   "name": "subscriptionthis.reauthorize"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/subscriptions/{subscriptionsId}/reauthorize
 ```
 
@@ -159,7 +159,7 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 
