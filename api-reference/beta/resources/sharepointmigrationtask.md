@@ -16,8 +16,6 @@ This entity captures a specific intent to do a crossOrganizationMigration operat
 
 ## Methods
 
-## Methods
-
 | Method | Return type | Description |
 |:-------------|:--------------------------|:-----------------------------------------------|
 | [Get](../api/sharepointmigrationtask-get.md) | SharePointMigrationTask[] | Attempt to get the specified sharePointMigrationTask by ID and return its status after this attempt. |
