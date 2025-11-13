@@ -96,7 +96,7 @@ The following example shows a request.
   "name": "get_longrunningoperation_roleManagementalerts_running"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/roleManagementAlerts/operations/refresh:DirectoryRole_19356be4-7e93-4ed6-a7c6-0ae28454d125_StaleSignInAlert
 ```
 
@@ -164,7 +164,7 @@ The following example shows a request.
   "name": "get_longrunningoperation_roleManagementalerts_succeeded"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/roleManagementAlerts/operations/refresh:DirectoryRole_19356be4-7e93-4ed6-a7c6-0ae28454d125_StaleSignInAlert
 ```
 

@@ -63,7 +63,7 @@ The following example shows a request.
   "name": "list_authorizationsystemtypeservice3"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/external/authorizationSystems/{id}/microsoft.graph.gcpAuthorizationSystem/services
 ```
 

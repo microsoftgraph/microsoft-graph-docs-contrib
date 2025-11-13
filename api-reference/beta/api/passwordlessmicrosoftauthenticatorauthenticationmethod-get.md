@@ -76,7 +76,7 @@ If successful, this method returns a `200 OK` response code and the requested [p
   "sampleKeys": ["R18B3t8Ogh9XIOGmPt81d6p_KXJs1YTxfGgGqeVFJSM1"]
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/authentication/passwordlessMicrosoftAuthenticatorMethods/R18B3t8Ogh9XIOGmPt81d6p_KXJs1YTxfGgGqeVFJSM1
 ```
 

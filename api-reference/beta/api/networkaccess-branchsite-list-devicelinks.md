@@ -65,7 +65,7 @@ The following example shows a request.
   "name": "list_devicelink"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/networkAccess/connectivity/branches/{branchSiteId}/deviceLinks
 ```
 

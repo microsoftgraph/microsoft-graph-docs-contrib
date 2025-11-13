@@ -59,7 +59,7 @@ The following example shows a request.
   "name": "get_secretinformationaccessawsserverlessfunctionfinding"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/MSxTZWNyZXRJbmZvcm1hdGlvbkFjY2Vzc0F3c1NlcnZlcmxlc3NGdW5jdGlvbkZpbmRpbmcsNzQyNg/microsoft.graph.secretInformationAccessAwsServerlessFunctionFinding
 ```
 

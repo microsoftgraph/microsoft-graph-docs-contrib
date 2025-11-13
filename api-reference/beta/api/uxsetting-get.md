@@ -71,7 +71,7 @@ The following example shows a request.
   "name": "get_uxsetting"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/admin/entra/uxSetting
 ```
 

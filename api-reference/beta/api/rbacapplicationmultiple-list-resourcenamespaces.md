@@ -63,7 +63,7 @@ The following example gets all resource namespaces.
   "name": "list_unifiedrbacresourcenamespace"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/roleManagement/directory/resourceNamespaces
 ```
 

@@ -72,7 +72,7 @@ The following example shows a request to get a list of all telephone numbers, in
   "name": "get_numberassignment1"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/admin/teams/telephoneNumberManagement/numberAssignments
 ```
 
@@ -187,7 +187,7 @@ The following example shows a request to get a list of telephone numbers based o
   "name": "get_numberAssignments2",
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/admin/teams/telephoneNumberManagement/numberAssignments?$filter=assignmentStatus eq 'unassigned' and capabilities/any(c:c eq 'userAssignment')
 ```
 
@@ -275,7 +275,7 @@ Content-Type: application/json
   "name": "get_numberAssignments3",
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/admin/teams/telephoneNumberManagement/numberAssignments?$top=100&$skip=200
 ```
 
@@ -390,7 +390,7 @@ Content-Type: application/json
   "name": "get_numberAssignments4",
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/admin/teams/telephoneNumberManagement/numberAssignments?$filter=telephoneNumber eq '+12052582895'
 ```
 

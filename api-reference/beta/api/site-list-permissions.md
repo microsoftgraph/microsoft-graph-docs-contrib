@@ -60,7 +60,7 @@ The following example shows a request.
   "name": "list_permission_site_nav_property"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/sites/f2d90359-865b-4b6c-8848-d2722dd630e5/permissions
 ```
 
