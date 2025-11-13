@@ -64,7 +64,7 @@ The following example gets the action with the identifier `microsoft.directory-a
   "sampleKeys": ["microsoft.directory-accessReviews-allProperties-read-get", "microsoft.directory"]
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/roleManagement/directory/resourceNamespaces/microsoft.directory/resourceActions/microsoft.directory-accessReviews-allProperties-read-get
 ```
 

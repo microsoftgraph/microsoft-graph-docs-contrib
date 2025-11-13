@@ -2098,6 +2098,20 @@ items:
       href: ../../resources/ontokenissuancestartlistener.md
     - name: On user create start listener
       href: ../../resources/onusercreatestartlistener.md
+    - name: Cloud flare web application firewall provider
+      href: ../../resources/cloudflarewebapplicationfirewallprovider.md
+    - name: Akamai web application firewall provider
+      href: ../../resources/akamaiwebapplicationfirewallprovider.md
+    - name: Web application firewall verification model
+      items:
+      - name: Web application firewall verification model
+        href: ../../resources/webapplicationfirewallverificationmodel.md
+      - name: List
+        href: ../../api/riskpreventioncontainer-list-webapplicationfirewallverifications.md
+      - name: Get
+        href: ../../api/webapplicationfirewallverificationmodel-get.md
+      - name: Delete
+        href: ../../api/riskpreventioncontainer-delete-webapplicationfirewallverifications.md
   - name: Authentication methods
     items:
     - name: Overview

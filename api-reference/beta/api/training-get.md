@@ -67,7 +67,7 @@ The following example shows a request.
   "name": "get_training"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/security/attackSimulation/trainings/21b2b7d1-11ae-a7a8-99c8-9029a4e70cc9
 ```
 

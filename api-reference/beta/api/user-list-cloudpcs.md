@@ -61,7 +61,7 @@ The following example shows a request.
   "name": "list_cloudpc"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/cloudPCs
 ```
 

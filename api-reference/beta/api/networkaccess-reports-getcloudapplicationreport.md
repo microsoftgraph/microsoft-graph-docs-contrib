@@ -64,7 +64,7 @@ The following example shows a request.
   "name": "reportsthis.getcloudapplicationreport"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/networkAccess/reports/getCloudApplicationReport(startDateTime={startDateTime},endDateTime={endDateTime},userId={userId})
 ```
 

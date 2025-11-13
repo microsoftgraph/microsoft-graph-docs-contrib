@@ -59,7 +59,7 @@ If successful, this method returns a `200 OK` response code and a [fido2Authenti
   "name": "get_fido2authenticationmethodconfiguration"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/fido2
 ```
 

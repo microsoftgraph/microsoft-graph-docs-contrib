@@ -58,7 +58,7 @@ If successful, this method returns a `200 OK` response code and a [tenant](../re
   "name": "get_tenant"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/tenants/{tenantId}
 ```
 

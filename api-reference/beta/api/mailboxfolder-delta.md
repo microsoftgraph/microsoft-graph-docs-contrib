@@ -83,7 +83,7 @@ For a similar example that shows how to use the state tokens to track changes in
   "sampleKeys": ["MBX:e0643f21@a7809c93"]
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/admin/exchange/mailboxes/MBX:e0643f21@a7809c93/folders/delta
 Prefer: odata.maxpagesize=2
 ```

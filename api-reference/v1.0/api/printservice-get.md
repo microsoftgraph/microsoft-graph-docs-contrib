@@ -65,7 +65,7 @@ If successful, this method returns a `200 OK` response code and a [printService]
   "name": "get_printservice"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/print/services/{printServiceId}
 ```
 

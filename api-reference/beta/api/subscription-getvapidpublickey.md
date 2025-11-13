@@ -156,7 +156,7 @@ The following example shows a request.
   "name": "subscriptionthis.getvapidpublickey"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/subscriptions/getVapidPublicKey
 ```
 
