@@ -40,8 +40,6 @@ items:
       href: ../../api/agentcollection-get.md
     - name: Update
       href: ../../api/agentcollection-update.md
-    - name: Delete
-      href: ../../api/agentregistry-delete-agentcollections.md
     - name: List members of agentCollection
       href: ../../api/agentcollection-list-members.md
     - name: Add to collection
