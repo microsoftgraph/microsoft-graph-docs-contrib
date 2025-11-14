@@ -53,7 +53,7 @@ This resource is an open type that allows additional properties beyond those doc
 ## Properties
 
 > [!IMPORTANT]
-> While this resource type inherits all properties from the **user** resource type, some properties are not applicable to agent users and will always return `null` or default values. These properties are excluded from the table below for clarity.
+> While this resource inherits from **user**, some properties are not applicable and return `null` or default values. These properties are excluded from the table below.
 
 |Property|Type|Description|
 |:---|:---|:---|

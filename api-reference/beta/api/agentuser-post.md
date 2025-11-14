@@ -44,7 +44,7 @@ POST /users/microsoft.graph.agentUser
 ```
 
 > [!TIP]
-> You can also create agent users through the [POST /users](../api/user-post.md) without specifying the `microsoft.graph.agentUser` type. However, `"@odata.type": "microsoft.graph.agentUser"` must be specified in the request body together with other required properties for user creation.
+> You can also create agent users through the [POST /users](../api/user-post-users.md) without specifying the `microsoft.graph.agentUser` type. However, `"@odata.type": "microsoft.graph.agentUser"` must be specified in the request body together with other required properties for user creation.
 
 ## Request headers
 
