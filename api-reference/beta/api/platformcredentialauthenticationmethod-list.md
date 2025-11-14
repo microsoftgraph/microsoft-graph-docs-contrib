@@ -38,7 +38,7 @@ Retrieve details of your own Platform Credential authentication methods.
 [!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
 
 <!-- { "blockType": "ignored" } -->
-``` http
+```http
 GET /me/authentication/platformCredentialMethods
 ```
 
@@ -47,7 +47,7 @@ Retrieve details of your own or another user's Platform Credential authenticatio
 [!INCLUDE [authentication-methods-apis-users-selfservice](../includes/authentication-methods-apis-users-selfservice.md)]
 
 <!-- { "blockType": "ignored" } -->
-``` http
+```http
 GET /users/{id | userPrincipalName}/authentication/platformCredentialMethods
 ```
 
@@ -79,7 +79,7 @@ The following example shows a request.
   "name": "get_platformcredentialauthenticationmethod_2"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/authentication/platformCredentialMethods
 ```
 
@@ -125,7 +125,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.platformCredentialAuthenticationMethod)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 

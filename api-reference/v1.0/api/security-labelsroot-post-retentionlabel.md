@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /security/labels/retentionLabels
 ```
 
@@ -74,7 +74,7 @@ Here's an example of a request.
   "name": "create_retentionlabel_from_"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/security/labels/retentionLabels
 Content-Type: application/json
 Content-length: 555
@@ -147,7 +147,7 @@ Here's an example of the response.
   "@odata.type": "microsoft.graph.security.retentionLabel"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 

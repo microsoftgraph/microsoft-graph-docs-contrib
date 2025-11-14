@@ -30,7 +30,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 
-``` http
+```http
 GET /termStore/groups/{groupId}/sets
 ```
 
@@ -59,7 +59,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
   "name": "get_set_1"
 }-->
 
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/termStore/groups/{groupId}/sets
 ```
 
@@ -99,7 +99,7 @@ GET https://graph.microsoft.com/beta/termStore/groups/{groupId}/sets
   "@odata.type": "collection(microsoft.graph.termStore.set)"
 } -->
 
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

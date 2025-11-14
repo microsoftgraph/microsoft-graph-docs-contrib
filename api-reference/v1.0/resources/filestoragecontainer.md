@@ -38,8 +38,8 @@ Represents a location where multiple users or a group of users can store files a
 |[Update custom property](../api/filestoragecontainer-update-customproperty.md)|[filestoragecontainercustompropertyvalue](../resources/filestoragecontainercustompropertyvalue.md)|Update custom property on a fileStorageContainer.|
 |[Delete custom property](../api/filestoragecontainer-delete-customproperty.md)|[filestoragecontainercustompropertyvalue](../resources/filestoragecontainercustompropertyvalue.md)|Delete custom property from a fileStorageContainer.|
 |[Update recycle bin settings](../api/filestoragecontainer-update-recyclebinsettings.md)|[recyclebinsettings](../resources/recyclebinsettings.md)|Update recycleBin settings for a fileStorageContainer.|
-|[Restore recycle bin items](../api/filestoragecontainer-restore-recyclebinitem.md)|[recycleBinItem](../resources/recyclebinitem.md) collection|Restore recycle bin items in a fileStorageContainer.|
 |[Delete recycle bin items](../api/filestoragecontainer-delete-recyclebinitem.md)|None|Delete recycle bin items from a fileStorageContainer.|
+|[Restore recycle bin items](../api/filestoragecontainer-restore-recyclebinitem.md)|[recycleBinItem](../resources/recyclebinitem.md) collection|Restore recycle bin items in a fileStorageContainer.|
 |[Get recycle bin items](../api/filestoragecontainer-list-recyclebinitem.md)|[recycleBinItem](../resources/recyclebinitem.md) collection|List recycle bin items in a fileStorageContainer.|
 |[Lock](../api/filestoragecontainer-lock.md)|None|Lock a [fileStorageContainer](../resources/filestoragecontainer.md).|
 |[Unlock](../api/filestoragecontainer-unlock.md)|None|Unlock a [fileStorageContainer](../resources/filestoragecontainer.md).|

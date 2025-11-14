@@ -30,7 +30,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /solutions/backupRestore
 ```
 
@@ -60,7 +60,7 @@ The following example shows a request.
   "name": "backuprestoreroot_get"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/solutions/backupRestore
 ```
 
@@ -104,7 +104,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.backupRestoreRoot"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

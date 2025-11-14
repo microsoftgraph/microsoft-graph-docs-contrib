@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /admin/windows/updates/resourceConnections/{operationalInsightsConnectionId}
 ```
 
@@ -61,7 +61,7 @@ The following example shows a request.
   "name": "get_operationalinsightsconnection"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/admin/windows/updates/resourceConnections/fbb71b85-4173-0bf6-d2bc-ee7921b80cb0
 ```
 
@@ -104,7 +104,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.windowsUpdates.operationalInsightsConnection"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

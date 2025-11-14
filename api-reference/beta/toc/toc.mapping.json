@@ -90,6 +90,7 @@
             "onPremisesAgent",
             "onPremisesAgentGroup",
             "onPremisesPublishingProfile",
+            "privateAccessSensor",
             "publishedResource",
             "ipApplicationSegment",
             "webApplicationSegment",
@@ -514,12 +515,13 @@
             "cloudPcOnPremisesConnection",
             "cloudPcOrganizationSettings",
             "cloudPcProvisioningPolicy",
-            "cloudPcReports",
+            "cloudPcReport",
             "cloudPcServicePlan",
             "cloudPcSnapshot",
             "cloudPcSupportedRegion",
             "cloudPcUserSetting",
-            "virtualEndpoint"
+            "virtualEndpoint",
+            "cloudPcReports"
           ],
           "complexTypes": [
             "appScope",
@@ -585,6 +587,7 @@
             "cloudPcSubscription",
             "cloudPcUserRoleScopeTagInfo",
             "cloudPcUserSettingAssignment",
+            "cloudPcUserSettingsPersistenceConfiguration",
             "cloudPcWindowsSetting",
             "cloudPcWindowsSettings",
             "frontlineCloudPcDetail",
@@ -1055,7 +1058,7 @@
         },
         {
           "name": "SharePoint cross-tenant migration (preview)",
-          "overview": "../../resources/sharepoint-crossorganization-overview.md",
+          "overview": "../../resources/sharepoint-crossorganization-api-overview.md",
           "resources": [
             "sharePointGroupIdentityMapping",
             "sharePointUserIdentityMapping"
@@ -1302,6 +1305,7 @@
                 "accessPackageCatalog",
                 "accessPackageResourceRole",
                 "accessPackageResource",
+                "customDataProvidedResource",
                 "accessPackageResourceEnvironment",
                 "accessPackageResourceRequest",
                 "accessPackageAssignmentRequestWorkflowExtension",
@@ -1309,7 +1313,8 @@
                 "accessPackageSubject",
                 "connectedOrganization",
                 "entitlementManagementSettings",
-                "customAccessPackageWorkflowExtension"
+                "customAccessPackageWorkflowExtension",
+                "customDataProvidedResourceUploadSession"
               ],
               "complexTypes": [
                 "accessPackageAnswer",
@@ -1374,7 +1379,10 @@
                 "verifiableCredentialType",
                 "verifiableCredentialVerified",
                 "verifiedCredentialClaims",
-                "verifiedCredentialData"
+                "verifiedCredentialData",
+                "customDataProvidedResourceUploadSessionRequest",
+                "accessReviewDataUploadTriggerCallbackData",
+                "customDataProvidedResourceFile"
               ]
             },
             {
@@ -1567,6 +1575,16 @@
           ],
           "childNodes": [
             {
+              "name": "Sign-in identifiers",
+              "resources": [
+                "signInIdentifierBase",
+                "customUsernameSignInIdentifier",
+                "emailSignInIdentifier",
+                "upnSignInIdentifier",
+                "usernameSignInIdentifier"
+              ]
+            },
+            {
               "name": "Authentication event listeners",
               "resources": [
                 "authenticationEventListener",
@@ -1579,7 +1597,17 @@
                 "onInteractiveAuthFlowStartListener",
                 "onPhoneMethodLoadStartListener",
                 "onTokenIssuanceStartListener",
-                "onUserCreateStartListener"
+                "onUserCreateStartListener",
+                "webApplicationFirewallProvider",
+                "cloudFlareWebApplicationFirewallProvider",
+                "akamaiWebApplicationFirewallProvider",
+                "webApplicationFirewallVerificationModel"
+              ]
+            },
+            {
+              "name": "Verified ID",
+              "resources": [
+                "verifiedIdProfile"                
               ]
             },
             {
@@ -1628,6 +1656,7 @@
                 "temporaryAccessPassAuthenticationMethodConfiguration",
                 "softwareOathAuthenticationMethodConfiguration",
                 "voiceAuthenticationMethodConfiguration",
+                "verifiableCredentialsAuthenticationMethodConfiguration",
                 "x509CertificateAuthenticationMethodConfiguration",
                 "qrCodePinAuthenticationMethodConfiguration"
               ]
@@ -2066,6 +2095,7 @@
                 "microsoft.graph.networkaccess.filteringPolicyLink",
                 "microsoft.graph.networkaccess.filteringRule",
                 "microsoft.graph.networkaccess.fqdnFilteringRule",
+                "microsoft.graph.networkaccess.urlDestinationFilteringRule",
                 "microsoft.graph.networkaccess.webCategoryFilteringRule",
                 "microsoft.graph.networkAccess.threatIntelligencePolicy",
                 "microsoft.graph.networkAccess.threatIntelligencePolicyLink",
@@ -2901,6 +2931,16 @@
           ]
         },
         {
+          "name": "Security Copilot",
+          "resources": [
+            "microsoft.graph.security.securitycopilot.workspace",
+            "microsoft.graph.security.securitycopilot.session",
+            "microsoft.graph.security.securitycopilot.prompt",
+            "microsoft.graph.security.securitycopilot.evaluation",
+            "microsoft.graph.security.securitycopilot.plugin"
+          ]
+        },
+        {
           "name": "Threat intelligence (preview)",
           "overview": "../../resources/security-threatintelligence-overview.md",
           "resources": [
@@ -3060,6 +3100,7 @@
         "businessScenarioGroupTarget",
         "businessScenarioProperties",
         "businessScenarioTaskTargetBase",
+        "contentSensitivityLabelAssignment",
         "identity",
         "identitySet",
         "itemBody",
@@ -3101,8 +3142,10 @@
         "plannerTaskRecurrence",
         "plannerTeamsPublicationInfo",
         "plannerUserIds",
+        "planUsageRight",
         "recurrencePattern",
-        "sensitivityLabelAssignment"
+        "sensitivityLabelAssignment",
+        "usageRightsInfo"
       ],
       "childNodes": [
         {

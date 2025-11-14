@@ -511,6 +511,7 @@
         "educationFeedbackOutcome",
         "educationFeedbackResourceOutcome",
         "educationGradingCategory",
+        "educationGradingScheme",
         "educationModule",
         "educationModuleResource",
         "educationOutcome",
@@ -543,6 +544,7 @@
         "educationExternalResource",
         "educationFeedback",
         "educationFileResource",
+        "educationGradingSchemeGrade",
         "educationLinkResource",
         "educationLinkedAssignmentResource",
         "educationMediaResource",
@@ -1014,9 +1016,14 @@
                 "onAttributeCollectionSubmitListener",
                 "onAuthenticationMethodLoadStartListener",
                 "onEmailOtpSendListener",
+                "onFraudProtectionLoadStartListener",
                 "onInteractiveAuthFlowStartListener",
                 "onTokenIssuanceStartListener",
-                "onUserCreateStartListener"
+                "onUserCreateStartListener",
+                "webApplicationFirewallProvider",
+                "cloudFlareWebApplicationFirewallProvider",
+                "akamaiWebApplicationFirewallProvider",
+                "webApplicationFirewallVerificationModel"
               ]
             },
             {
@@ -1108,7 +1115,10 @@
                 "riskyUser",
                 "riskyUserHistoryItem",
                 "servicePrincipalRiskDetection",
-                "riskyServicePrincipal"
+                "riskyServicePrincipal",
+                "fraudProtectionProvider",
+                "arkoseFraudProtectionProvider",
+                "humanSecurityFraudProtectionProvider"
               ]
             },
             {
@@ -1628,7 +1638,9 @@
           "name": "Identities",
           "resources": [
             "microsoft.graph.security.healthIssue",
-            "microsoft.graph.security.sensor"
+            "microsoft.graph.security.sensor",
+            "microsoft.graph.security.sensorCandidate",
+            "microsoft.graph.security.sensorCandidateActivationConfiguration"
           ],
           "complexTypes": [
             "microsoft.graph.security.deploymentAccessKeyType",
