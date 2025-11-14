@@ -120,7 +120,8 @@ The following JSON representation shows the resource type.
   "ownershipType": {"@odata.type": "microsoft.graph.fileStorageContainerOwnershipType"},
   "expiryDateTime": "string (timestamp)",
   "lockState": {"@odata.type": "microsoft.graph.siteLockState"},
-  "settings": { "@odata.type": "microsoft.graph.fileStorageContainerSettings" }
+  "settings": { "@odata.type": "microsoft.graph.fileStorageContainerSettings" },
+  "informationBarrier": { "@odata.type": "microsoft.graph.informationBarrier" }
 }
 ```
 
