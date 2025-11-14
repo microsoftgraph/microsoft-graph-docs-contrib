@@ -114,6 +114,7 @@ The following JSON representation shows the resource type.
 ```json
 {
   "contentType": { "@odata.type": "microsoft.graph.contentTypeInfo" },
+  "deleted": { "@odata.type": "microsoft.graph.deleted" },
   "fields": { "@odata.type": "microsoft.graph.fieldValueSet" },
   "sharepointIds": { "@odata.type": "microsoft.graph.sharepointIds" },
 
