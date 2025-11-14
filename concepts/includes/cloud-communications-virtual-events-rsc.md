@@ -6,9 +6,9 @@ Resource-specific consent (RSC) allows apps to request permissions scoped to a s
 
 | **RSC Permission**                               | **Resource**                                  | **Description**                                                                 |
 |--------------------------------------------------|-------------------------------------------|---------------------------------------------------------------------------------|
-| **VirtualEvent.Read.Chat**                       | [Webinar](/api-reference/v1.0/resources/virtualeventwebinar.md) & [Townhall](/api-reference/v1.0/resources/virtualeventtownhall.md)                         | Read information for this webinar or town hall, including schedules, speakers, event settings, and webinar registrations. |
-| **OnlineMeetingArtifact.Read.Chat**              | [Attendance report](/api-reference/v1.0/resources/meetingattendancereport.md) & [attendance record](/api-reference/v1.0/resources/attendancerecord.md)     | Read attendance reports and attendance records for this webinar or town hall.  |
-| **VirtualEventRegistration-Anon.ReadWrite.Chat** | [Virtual event registrations](/api-reference/v1.0/resources/virtualeventregistration.md)               | Register attendees and cancel registrations for this webinar.                  |
+| **VirtualEvent.Read.Chat**                       | [Webinar](/graph/api/resources/virtualeventwebinar) & [Townhall](/graph/api/resources/virtualeventtownhall)                         | Read information for this webinar or town hall, including schedules, speakers, event settings, and webinar registrations. |
+| **OnlineMeetingArtifact.Read.Chat**              | [Attendance report](/graph/api/resources/meetingattendancereport) & [attendance record](/graph/api/resources/attendancerecord)     | Read attendance reports and attendance records for this webinar or town hall.  |
+| **VirtualEventRegistration-Anon.ReadWrite.Chat** | [Virtual event registrations](/graph/api/resources/virtualeventregistration)               | Register attendees and cancel registrations for this webinar.                  |
 
 #### Traditional authentication flow
 
