@@ -1,18 +1,16 @@
 ---
 title: "cloudPC: reprovision"
 description: "Reprovision a specific Cloud PC."
-author: "AshleyYangSZ"
+author: "wx2486"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: apiPageType
-ms.date: 04/04/2024
+ms.date: 11/14/2025
 ---
 
 # cloudPC: reprovision
 
 Namespace: microsoft.graph
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Reprovision a specific Cloud PC.
 
@@ -84,7 +82,7 @@ If successful, this method returns a `204 No Content` response code.
 -->
 
 ``` http
-POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/4b5ad5e0-6a0b-4ffc-818d-36bb23cf4dbd/reprovision
+POST https://graph.microsoft.com/v1.0/deviceManagement/virtualEndpoint/cloudPCs/4b5ad5e0-6a0b-4ffc-818d-36bb23cf4dbd/reprovision
 Content-Type: application/json
 Content-length: 61
 
@@ -145,7 +143,7 @@ HTTP/1.1 204 No Content
 -->
 
 ``` http
-POST https://graph.microsoft.com/beta/me/cloudPCs/36bd4942-0ca8-11ed-861d-0242ac120002/reprovision
+POST https://graph.microsoft.com/v1.0/me/cloudPCs/36bd4942-0ca8-11ed-861d-0242ac120002/reprovision
 ```
 
 # [C#](#tab/csharp)
