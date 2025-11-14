@@ -148,6 +148,12 @@ $grant.Scope -split ' ' | ForEach-Object {     [pscustomobject]@{ Scope = $_ } }
    1. Grant admin consent for the permissions you added.
 1. Test your MCP client to ensure it can connect to the MCP Server for Enterprise and perform the intended operations.
 
+To manage scopes on custom MCP clients:
+
+```powershell
+Grant-EntraBetaMCPServerPermission -ApplicationId "<Your_MCP_Client_Application_Id>" -Scopes "<Scope1>", "<Scope2>", "<...>"
+Revoke-EntraBetaMCPServerPermission -ApplicationId "<Your_MCP_Client_Application_Id>" -Scopes "<Scope1>", "<Scope2>", "<...>"
+```
 ---
 
 ## View supported MCP Server scopes
