@@ -39,7 +39,7 @@ GET /solutions/sharePoint/migrations/crossOrganizationUserMappings(sourceUserPri
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` OData query parameter to help customize the response. You can use `$select` to choose specific properties such as `targetUserIdentity`, `sourceUserIdentity`, or `userType`. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -86,19 +86,20 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.sharePointUserIdentityMapping",
-  "id": "String (base64-encoded identifier)",
-  "sourceOrganizationId": "Guid",
-  "userType": "String",
+  "id": "AQAAAAEAAAB1c2VyMUBjb250b3NvLmNvbQ",
+  "sourceOrganizationId": "11111111-1111-1111-1111-111111111111",
+  "userType": "regularUser",
   "sourceUserIdentity": {
     "@odata.type": "microsoft.graph.userIdentity",
-    "userPrincipalName": "String"
+    "userPrincipalName": "user1@contoso.com"
   },
   "targetUserIdentity": {
     "@odata.type": "microsoft.graph.userIdentity",
-    "userPrincipalName": "String"
+    "userPrincipalName": "admin@a830edad9050849ken005.onmicrosoft.com"
   },
   "targetUserMigrationData": {
-    "@odata.type": "microsoft.graph.sharePointIdentityMappingUserMigrationData"
+    "@odata.type": "microsoft.graph.sharePointIdentityMappingUserMigrationData",
+    "email": "admin@a830edad9050849ken005.onmicrosoft.com"
   }
 }
 ```

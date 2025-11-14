@@ -61,7 +61,7 @@ PATCH /solutions/sharePoint/migrations/crossOrganizationUserMappings
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [sharePointUserIdentityMapping](../resources/sharepointuseridentitymapping.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a collection of updated [sharePointUserIdentityMapping](../resources/sharepointuseridentitymapping.md) objects in the response body.
 
 ## Examples
 
@@ -82,29 +82,24 @@ Content-Type: application/json
   "@context": "#$delta",
   "value": [
     {
-      "@odata.type": "#microsoft.graph.sharePointUserIdentityMapping",
-      "sourceOrganizationId": "Guid",
-      "userType": "String",
+      "sourceOrganizationId": "11111111-1111-1111-1111-111111111111",
+      "userType": "regularUser",
       "sourceUserIdentity": {
-        "@odata.type": "microsoft.graph.userIdentity",
-        "userPrincipalName": "String"
+        "userPrincipalName": "user1@contoso.com"
       },
       "targetUserIdentity": {
-        "@odata.type": "microsoft.graph.userIdentity",
-        "userPrincipalName": "String"
+        "userPrincipalName": "admin@a830edad9050849ken005.onmicrosoft.com"
       },
       "targetUserMigrationData": {
-        "@odata.type": "microsoft.graph.sharePointIdentityMappingUserMigrationData"
+        "email": "admin@a830edad9050849ken005.onmicrosoft.com"
       }
     },
     {
-      "@odata.type": "#microsoft.graph.sharePointUserIdentityMapping",
       "@removed": {
         "reason": "deleted"
       },
       "sourceUserIdentity": {
-        "@odata.type": "microsoft.graph.userIdentity",
-        "userPrincipalName": "String"
+        "userPrincipalName": "user1@contoso.com"
       }
     }
   ]
@@ -126,31 +121,26 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#solutions/sharePoint/migrations/crossOrganizationUserMappings",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#solutions/sharePoint/migrations/crossOrganizationUserMappings/$delta",
   "value": [
     {
-      "@odata.type": "#microsoft.graph.sharePointUserIdentityMapping",
-      "id": "String (base64-encoded identifier)",
-      "sourceOrganizationId": "Guid",
-      "userType": "String",
+      "id": "AQAAAAEAAAB1c2VyMUBjb250b3NvLmNvbQ",
+      "sourceOrganizationId": "11111111-1111-1111-1111-111111111111",
+      "userType": "regularUser",
       "sourceUserIdentity": {
-        "@odata.type": "microsoft.graph.userIdentity",
-        "userPrincipalName": "String"
+        "userPrincipalName": "user1@contoso.com"
       },
       "targetUserIdentity": {
-        "@odata.type": "microsoft.graph.userIdentity",
-        "userPrincipalName": "String"
+        "userPrincipalName": "admin@a830edad9050849ken005.onmicrosoft.com"
       },
       "targetUserMigrationData": {
-        "@odata.type": "microsoft.graph.sharePointIdentityMappingUserMigrationData"
+        "email": "admin@a830edad9050849ken005.onmicrosoft.com"
       }
     },
     {
-      "@odata.type": "#microsoft.graph.sharePointUserIdentityMapping",
-      "id": "String (base64-encoded identifier)",
+      "id": "AQAAAAEAAAB1c2VyMUBjb250b3NvLmNvbQ",
       "sourceUserIdentity": {
-        "@odata.type": "microsoft.graph.userIdentity",
-        "userPrincipalName": "String"
+        "userPrincipalName": "user1@contoso.com"
       }
     }
   ]

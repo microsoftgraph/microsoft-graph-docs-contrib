@@ -61,7 +61,7 @@ PATCH /solutions/sharePoint/migrations/crossOrganizationGroupMappings
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [sharePointGroupIdentityMapping](../resources/sharepointgroupidentitymapping.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a collection of updated [sharePointGroupIdentityMapping](../resources/sharepointgroupidentitymapping.md) objects in the response body.
 
 ## Examples
 
@@ -82,29 +82,24 @@ Content-Type: application/json
   "@context": "#$delta",
   "value": [
     {
-      "@odata.type": "#microsoft.graph.sharePointGroupIdentityMapping",
-      "sourceOrganizationId": "Guid",
-      "groupType": "String",
+      "sourceOrganizationId": "11111111-1111-1111-1111-111111111111",
+      "groupType": "m365Group",
       "sourceGroupIdentity": {
-        "@odata.type": "microsoft.graph.identity",
-        "id": "String"
+        "id": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa"
       },
       "targetGroupIdentity": {
-        "@odata.type": "microsoft.graph.identity",
-        "id": "String"
+        "id": "bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb"
       },
       "targetGroupMigrationData": {
-        "@odata.type": "microsoft.graph.sharePointIdentityMappingGroupMigrationData"
+        "mailNickname": "targetGroup"
       }
     },
     {
-      "@odata.type": "#microsoft.graph.sharePointGroupIdentityMapping",
       "@removed": {
         "reason": "deleted"
       },
       "sourceGroupIdentity": {
-        "@odata.type": "microsoft.graph.identity",
-        "id": "String"
+        "id": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa"
       }
     }
   ]
@@ -126,31 +121,26 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#solutions/sharePoint/migrations/crossOrganizationGroupMappings",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#solutions/sharePoint/migrations/crossOrganizationGroupMappings/$delta",
   "value": [
     {
-      "@odata.type": "#microsoft.graph.sharePointGroupIdentityMapping",
-      "id": "String (base64-encoded identifier)",
-      "sourceOrganizationId": "Guid",
-      "groupType": "String",
+      "id": "AQAAAAIAAABhYWFhYWFhYS1hYWFhLWFhYWEtYWFhYS1hYWFhYWFhYWFhYWE",
+      "sourceOrganizationId": "11111111-1111-1111-1111-111111111111",
+      "groupType": "m365Group",
       "sourceGroupIdentity": {
-        "@odata.type": "microsoft.graph.identity",
-        "id": "String"
+        "id": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa"
       },
       "targetGroupIdentity": {
-        "@odata.type": "microsoft.graph.identity",
-        "id": "String"
+        "id": "bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb"
       },
       "targetGroupMigrationData": {
-        "@odata.type": "microsoft.graph.sharePointIdentityMappingGroupMigrationData"
+        "mailNickname": "targetGroup"
       }
     },
     {
-      "@odata.type": "#microsoft.graph.sharePointGroupIdentityMapping",
-      "id": "String (base64-encoded identifier)",
+      "id": "AQAAAAIAAABhYWFhYWFhYS1hYWFhLWFhYWEtYWFhYS1hYWFhYWFhYWFhYWE",
       "sourceGroupIdentity": {
-        "@odata.type": "microsoft.graph.identity",
-        "id": "String"
+        "id": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa"
       }
     }
   ]

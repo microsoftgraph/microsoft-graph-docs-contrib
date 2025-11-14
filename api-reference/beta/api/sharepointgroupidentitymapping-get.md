@@ -39,7 +39,7 @@ GET /solutions/sharePoint/migrations/crossOrganizationGroupMappings(sourceGroupO
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` OData query parameter to help customize the response. You can use `$select` to choose specific properties such as `targetGroupIdentity`, `sourceGroupIdentity`, or `groupType`. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -66,7 +66,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/solutions/sharePoint/migrations/crossOrganizationGroupMappings(sourceGroupObjectId='sourceGroupObjectId')
+GET https://graph.microsoft.com/beta/solutions/sharePoint/migrations/crossOrganizationGroupMappings(sourceGroupObjectId='aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa')
 ```
 
 
@@ -85,21 +85,19 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.sharePointGroupIdentityMapping",
-  "id": "String (base64-encoded identifier)",
-  "sourceOrganizationId": "Guid",
-  "groupType": "String",
-  "sourceGroupIdentity": {
-    "@odata.type": "microsoft.graph.identity",
-    "id": "String"
-  },
-  "targetGroupIdentity": {
-    "@odata.type": "microsoft.graph.identity",
-    "id": "String"
-  },
-  "targetGroupMigrationData": {
-    "@odata.type": "microsoft.graph.sharePointIdentityMappingGroupMigrationData"
-  }
+    "@odata.context": "https://graph.microsoft.com/stagingbeta/$metadata#solutions/sharePoint/migrations/crossOrganizationGroupMappings/$entity",
+    "id": "AQAAAAIAAABhYWFhYWFhYS1hYWFhLWFhYWEtYWFhYS1hYWFhYWFhYWFhYWE",
+    "sourceOrganizationId": "11111111-1111-1111-1111-111111111111",
+    "groupType": "m365Group",
+    "sourceGroupIdentity": {
+        "id": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa"
+    },
+    "targetGroupIdentity": {
+        "id": "bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb"
+    },
+    "targetGroupMigrationData": {
+        "mailNickname": "targetGroup"
+    }
 }
 ```
 
