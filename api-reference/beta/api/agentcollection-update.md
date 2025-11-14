@@ -27,6 +27,11 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/agentcollection-update-permissions.md)]
 
+> [!IMPORTANT]
+> In addition to the permissions listed in the preceding table, the following lesser-privileged delegated permissions scoped to the special collections are supported for this API:
+> - *AgentCollection.ReadWrite.Global* for **Global** collection
+> - *AgentCollection.ReadWrite.Quarantined* for **Quarantined** collection
+
 [!INCLUDE [rbac-agentregistry-apis](../includes/rbac-for-apis/rbac-agentregistry-apis.md)]
 
 ## HTTP request
@@ -66,7 +71,7 @@ PATCH /agentRegistry/agentCollections/{agentCollectionId}
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [agentCollection](../resources/agentcollection.md) object in the response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
@@ -91,7 +96,6 @@ Content-Type: application/json
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -99,6 +103,5 @@ The following example shows the response.
 -->
 ``` http
 HTTP/1.1 204 No Content
-Content-Type: application/json
 ```
 

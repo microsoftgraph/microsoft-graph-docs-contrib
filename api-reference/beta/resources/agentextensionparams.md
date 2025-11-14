@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Extension-specific configuration parameters.
+Extension-specific configuration parameters for an [agentExtension](../resources/agentextension.md).
 
 This resource is an open type that allows additional properties beyond those documented here.
 

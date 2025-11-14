@@ -76,6 +76,7 @@ If successful, this method returns a `201 Created` response code and an [agentIn
 ## Examples
 
 ### Example 1: Create an agentInstance with a new agentCardManifest
+
 #### Request
 
 The following example shows a request.
@@ -256,7 +257,8 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: Create an agentInstance with referencing an agentCardManifest
+### Example 2: Create an agentInstance and reference an existing agentCardManifest
+
 #### Request
 
 The following example shows a request.
@@ -375,10 +377,11 @@ Content-Type: application/json
 }
 ```
 
-### Example 3: Create an agentInstance without agentCardManifest
+### Example 3: Create an agentInstance without the agentCardManifest
+
 #### Request
 
-The following example shows a request.
+The following example shows a request. To add an agentCardManifest later, use the [Update agentInstance API](/beta/api/agentinstance-update).
 <!-- {
   "blockType": "request",
   "name": "create_agentinstance_from_"

@@ -28,7 +28,8 @@ None.
 The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.securitySchemes"
+  "@odata.type": "microsoft.graph.securitySchemes",
+  "openType": true
 }
 -->
 ``` json

@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Return the list of [agent instances](../resources/agentinstance.md) that are members for the specified [agentCollection](../resources/agentcollection.md).
+Return the list of [agent instances](../resources/agentinstance.md) that are members for the specified [agentCollection](../resources/agentcollection.md). This API returns only the **agentCollection** and doesn't support using $select to return other properties. Attempting to select more properties returns a `400 Bad Request` error code.
 
 ## Permissions
 
@@ -26,6 +26,11 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 [!INCLUDE [permissions-table](../includes/permissions/agentcollection-list-members-permissions.md)]
+
+> [!IMPORTANT]
+> In addition to the permissions listed in the preceding table, the following lesser-privileged permissions scoped to the special collections are supported for this API:
+> - *AgentCollection.Read.Global* and *AgentCollection.ReadWrite.Global* for the **Global** collection
+> - *AgentCollection.Read.Quarantined* and *AgentCollection.ReadWrite.Quarantined* for the **Quarantined** collection
 
 [!INCLUDE [rbac-agentregistry-apis](../includes/rbac-for-apis/rbac-agentregistry-apis.md)]
 
@@ -75,7 +80,7 @@ GET https://graph.microsoft.com/beta/agentRegistry/agentInstances/{agentInstance
 ### Response
 
 The following example shows the response.
->**Note:** Only the below properties are returned. Attempting to select more properties than the above example will yield a 400 Bad Request.
+
 <!-- {
   "blockType": "response",
   "truncated": true,

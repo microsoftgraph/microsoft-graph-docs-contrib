@@ -7,7 +7,7 @@ title: "Add agentInstance to agentCollection"
 description: "Add an agentInstance to an agentCollection."
 >>>>>>> 3a6e02f9ff2ce3b39a37a769b4864bf4630a0305
 author: "jasondou"
-ms.date: 11/06/2025
+ms.date: 11/14/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-id"
 doc_type: apiPageType
@@ -32,6 +32,11 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/agentcollection-post-members-permissions.md)]
 
+> [!IMPORTANT]
+> In addition to the permissions listed in the preceding table, the following lesser-privileged permissions scoped to the special collections are supported for this API:
+> - For the **Global** collection: *AgentCollection.ReadWrite.Global* and *AgentInstance.Read.All*; *AgentCollection.ReadWrite.Global* and *AgentInstance.ReadWrite.All*
+> - For the **Quarantined** collection: *AgentCollection.ReadWrite.Quarantined* and *AgentInstance.Read.All*; *AgentCollection.ReadWrite.Quarantined* and *AgentInstance.ReadWrite.All*
+
 [!INCLUDE [rbac-agentregistry-apis](../includes/rbac-for-apis/rbac-agentregistry-apis.md)]
 
 ## HTTP request
@@ -53,7 +58,7 @@ POST /agentRegistry/agentInstances/{agentInstanceId}/collections/{agentCollectio
 
 ## Request body
 
-In the request body, supply a JSON object that contains a **@odata.id** property with a reference by ID to an agent instance.
+In the request body, supply a JSON object that contains a **@odata.id** property with a reference by ID to an [agentInstance](../resources/agentinstance.md).
 
 ## Response
 

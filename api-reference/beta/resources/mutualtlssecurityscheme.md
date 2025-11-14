@@ -16,9 +16,7 @@ Namespace: microsoft.graph
 
 Represents a mutual TLS security scheme used for authenticating API requests. This resource is configured in the **securitySchemes** property of the [agentCardManifest](../resources/agentcardmanifest.md).
 
-
 Inherits from [securityScheme](../resources/securityscheme.md).
-
 
 ## Properties
 |Property|Type|Description|

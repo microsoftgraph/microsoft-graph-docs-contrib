@@ -27,6 +27,11 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/agentregistry-post-agentcollections-permissions.md)]
 
+> [!IMPORTANT]
+> In addition to the permissions listed in the preceding table, the following lesser-privileged delegated and application permissions scoped to the special collections are supported for this API:
+> - *AgentCollection.ReadWrite.Global* for **Global** collection
+> - *AgentCollection.ReadWrite.Quarantined* for **Quarantined** collection
+
 [!INCLUDE [rbac-agentregistry-apis](../includes/rbac-for-apis/rbac-agentregistry-apis.md)]
 
 ## HTTP request

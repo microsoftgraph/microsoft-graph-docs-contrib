@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of an [agentInstance](../resources/agentinstance.md) object.
+Update the properties of an [agentInstance](../resources/agentinstance.md) object. You can also update the [agentCardManifest](../resources/agentcardmanifest.md) associated with the agent instance by including the manifest in the request body.
 
 ## Permissions
 
@@ -77,10 +77,12 @@ If successful, this method returns a `200 OK` response code and an updated [agen
 
 ## Examples
 
-### Example 1: Update to reference an existing agentCardManifest
+### Example 1: Update the agentCardManifest in an agentInstance
+
 #### Request
 
-The following example shows a request.
+The following example shows a request. The request also creates the agentCardManifest if it does not already exist.
+
 <!-- {
   "blockType": "request",
   "name": "update_agentinstance"
@@ -161,7 +163,6 @@ Content-Type: application/json
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -169,11 +170,11 @@ The following example shows the response.
 -->
 ``` http
 HTTP/1.1 204 No Content
-Content-Type: application/json
 
 ```
 
-### Example 2: Update to reference an existing agentCardManifest
+### Example 2: Update an agentInstance to reference an existing agentCardManifest
+
 #### Request
 
 The following example shows a request.
@@ -192,10 +193,9 @@ Content-Type: application/json
 ```
 
 
-### Response
+#### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -203,11 +203,10 @@ The following example shows the response.
 -->
 ``` http
 HTTP/1.1 204 No Content
-Content-Type: application/json
-
 ```
 
 ### Example 3: Update displayName
+
 #### Request
 
 The following example shows a request.
@@ -226,10 +225,9 @@ Content-Type: application/json
 ```
 
 
-### Response
+#### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -237,6 +235,4 @@ The following example shows the response.
 -->
 ``` http
 HTTP/1.1 204 No Content
-Content-Type: application/json
-
 ```
