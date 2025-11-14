@@ -370,6 +370,36 @@ items:
     items:
     - name: SharePoint migration container info
       href: ../../resources/sharepointmigrationcontainerinfo.md
+- name: SharePoint cross-tenant migration (preview)
+  items:
+  - name: Overview
+    href: ../../resources/sharepoint-crossorganization-api-overview.md
+  - name: SharePoint migration task
+    items:
+    - name: SharePoint migration task
+      href: ../../resources/sharepointmigrationtask.md
+    - name: Create
+      href: ../../api/sharepointmigrationtask-create.md
+    - name: GetByID
+      href: ../../api/sharepointmigrationtask-get.md
+    - name: GetBySourceUserPrincipalName
+      href: ../../api/sharepointmigrationtask-getbysourceuserprincipalname.md
+    - name: GetBySourceSiteUrl
+      href: ../../api/sharepointmigrationtask-getbysourcesiteurl.md
+    - name: GetBySourceGroupObjectId
+      href: ../../api/sharepointmigrationtask-getbysourcegroupobjectid.md
+    - name: CancelByID
+      href: ../../api/sharepointmigrationtask-cancel.md
+  - name: Complex types
+    items:
+    - name: SharePoint migration task parameters
+      href: ../../resources/sharepointmigrationtaskparameters.md
+    - name: SharePoint user migration  task parameters
+      href: ../../resources/sharepointusermigrationtaskparameters.md
+    - name: SharePoint site migration task parameters
+      href: ../../resources/sharepointsitemigrationtaskparameters.md
+    - name: SharePoint group migration task parameters
+      href: ../../resources/sharepointgroupmigrationtaskparameters.md
 - name: Complex types
   items:
   - name: File storage container type agent settings
