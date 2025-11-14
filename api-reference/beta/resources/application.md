@@ -21,6 +21,8 @@ Inherits from [directoryObject](directoryobject.md).
 
 This resource is an open type that allows other properties to be passed in.
 
+The [agentIdentityBlueprint](../resources/agentidentityblueprint.md) resource inherits from this object.
+
 This resource supports:
 
 - Adding your own data to custom properties as [extensions](/graph/extensibility-overview).

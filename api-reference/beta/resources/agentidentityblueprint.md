@@ -49,6 +49,10 @@ This resource is an open type that allows additional properties beyond those doc
 |[Remove sponsors](../api/agentidentityblueprint-delete-sponsors.md)|None|Remove a [directoryObject](../resources/directoryobject.md) object.|
 
 ## Properties
+
+> [!IMPORTANT]
+> While this resource inherits from **application**, some properties are not applicable and return `null` or default values. These properties are excluded from the table below.
+
 |Property|Type|Description|
 |:---|:---|:---|
 |api|[apiApplication](../resources/apiapplication.md)|Specifies settings for an agent identity blueprint that implements a web API. Inherited from [application](../resources/application.md).|

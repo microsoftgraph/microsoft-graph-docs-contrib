@@ -57,6 +57,10 @@ This resource is an open type that allows additional properties beyond those doc
 |[Remove sponsors](../api/agentidentityblueprintprincipal-delete-sponsors.md)|None|Remove a [directoryObject](../resources/directoryobject.md) object.|
 
 ## Properties
+
+> [!IMPORTANT]
+> While this resource inherits from **servicePrincipal**, some properties are not applicable and return `null` or default values. These properties are excluded from the table below.
+
 |Property|Type|Description|
 |:---|:---|:---|
 |accountEnabled|Boolean|`true` if the agent identity blueprint principal account is enabled; otherwise, `false`. If set to `false`, then no users are able to sign in to this app, even if they're assigned to it. Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
