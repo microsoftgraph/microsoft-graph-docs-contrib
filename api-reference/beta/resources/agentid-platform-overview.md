@@ -32,7 +32,9 @@ The following core components comprise Microsoft Entra Agent ID's architecture:
 | **Agent user** | Optional account for scenarios that require a user account | [agentUser](../resources/agentUser.md) |
 | **Agent registry** | Centralized repository for agent management | [agentRegistry](../resources/agentregistry.md) |
 
-<!--[Learn more about agent identity architecture](/entra/agent-id/identity-platform/key-concepts).-->
+Learn more about the agent identity architecture in the following articles:
+- [Agent identity and blueprint concepts in Microsoft Entra ID](/entra/agent-id/identity-platform/key-concepts)
+- [Agent identities, service principals, and applications](/entra/agent-id/identity-platform/agent-service-principals)
 
 ## Related APIs for security and governance for agents
 
