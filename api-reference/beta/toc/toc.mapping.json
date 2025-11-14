@@ -1559,7 +1559,11 @@
             "dataPolicyOperation",
             "oAuth2PermissionGrant",
             "certificateBasedAuthConfiguration",
-            "externalIdentitiesPolicy"
+            "externalIdentitiesPolicy",
+            "webApplicationFirewallProvider",
+            "cloudFlareWebApplicationFirewallProvider",
+            "akamaiWebApplicationFirewallProvider",
+            "webApplicationFirewallVerificationModel"
           ],
           "childNodes": [
             {
@@ -1585,11 +1589,7 @@
                 "onInteractiveAuthFlowStartListener",
                 "onPhoneMethodLoadStartListener",
                 "onTokenIssuanceStartListener",
-                "onUserCreateStartListener",
-                "webApplicationFirewallProvider",
-                "cloudFlareWebApplicationFirewallProvider",
-                "akamaiWebApplicationFirewallProvider",
-                "webApplicationFirewallVerificationModel"
+                "onUserCreateStartListener"
               ]
             },
             {
