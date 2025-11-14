@@ -1,3 +1,12 @@
+---
+ms.localizationpriority: medium
+author: garchiro7
+ms.author: garchiro7
+ms.subservice: "cloud-communications"
+ms.topic: include
+ms.date: 11/15/2025
+---
+
 ### Resource-specific consent (RSC) for virtual events
 
 Resource-specific consent (RSC) allows apps to request permissions scoped to a specific webinar or town hall instead of requiring global admin privileges. The RSC permissions improves security, simplifies consent flows, and enables developers to build integrations that respect organizational boundaries.
