@@ -249,6 +249,8 @@ items:
       href: mcp-server/provision-mcp.md
     - name: Get started
       href: mcp-server/install-mcp-server.md
+    - name: MCP server repository
+      href: https://github.com/microsoft/Microsoft-MCP-Server-for-Enterprise
 - name: Services and features
   expanded: true
   items:
