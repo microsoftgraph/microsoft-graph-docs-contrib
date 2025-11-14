@@ -1,11 +1,6 @@
 ---
-<<<<<<< HEAD
-title: "Add agentInstance"
-description: "Add members by posting to the agent collection."
-=======
 title: "Add agentInstance to agentCollection"
 description: "Add an agentInstance to an agentCollection."
->>>>>>> 3a6e02f9ff2ce3b39a37a769b4864bf4630a0305
 author: "jasondou"
 ms.date: 11/14/2025
 ms.localizationpriority: medium
