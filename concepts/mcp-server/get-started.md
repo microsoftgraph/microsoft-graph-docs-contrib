@@ -66,13 +66,13 @@ By using the globally unique **appId**:
   "name": "provision-mcp-verify-provisioning-appid-filter"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/servicePrincipals?$filter=appId eq 'e8c77dc2-69b3-43f4-bc51-3213c9d915b4'&$select=oauth2PermissionScopes,appId,displayName
+GET https://graph.microsoft.com/v1.0/servicePrincipals?$filter=appId eq 'e8c77dc2-69b3-43f4-bc51-3213c9d915b4'
 ```
 
 # [Microsoft Entra PowerShell](#tab/powershell)
 
 ```powershell
-(Get-MgServicePrincipal -Property "Oauth2PermissionScopes" -Filter "AppId eq 'e8c77dc2-69b3-43f4-bc51-3213c9d915b4'").Oauth2PermissionScopes.value | Sort-Object
+Get-EntraServicePrincipal -Filter "displayName eq 'Microsoft MCP Server for Enterprise'
 ```
 
 # [Admin portal](#tab/portal)
@@ -80,7 +80,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals?$filter=appId eq 'e8c77dc
 1. Sign in to the [Microsoft Entra portal](https://entra.microsoft.com/).
 1. Expand **Entra ID** >  **Enterprise apps**.
 1. Under the **Manage** group, select **All applications**.
-1. Search the MCP server either by name or client ID and navigate to the **Permissions** page to view the permissions it exposes.
+1. Search the MCP server either by name or client ID.
 
 ---
 
