@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [federatedIdentityCredential](../resources/federatedidentitycredential.md) object.
+Update the properties of a [federatedIdentityCredential](../resources/federatedidentitycredential.md) object for an [agentIdentityBlueprint](../resources/agentidentityblueprint.md).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

@@ -23,7 +23,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "agentidentityblueprint-federatedidentitycredential_delete" } -->
 [!INCLUDE [permissions-table](../includes/permissions/agentidentityblueprint-federatedidentitycredential-delete-permissions.md)]
 
-[!INCLUDE [rbac-apps-serviceprincipal-creds-apis](../includes/rbac-for-apis/rbac-agentid-apis-write.md)]
+[!INCLUDE [rbac-agentid-apis-write](../includes/rbac-for-apis/rbac-agentid-apis-write.md)]
 
 ## HTTP request
 

@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [federatedIdentityCredential](../resources/federatedidentitycredential.md) objects and their properties.
+Get a list of the [federatedIdentityCredential](../resources/federatedidentitycredential.md) objects and their properties for an [agentIdentityBlueprint](../resources/agentidentityblueprint.md).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

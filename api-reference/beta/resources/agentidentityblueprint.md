@@ -34,6 +34,12 @@ This resource is an open type that allows additional properties beyond those doc
 |[Remove password](../api/agentidentityblueprint-removepassword.md)|[passwordCredential](../resources/passwordcredential.md)|Remove a password or secret from an agent identity blueprint.|
 |[Add key](../api/agentidentityblueprint-addkey.md)|[keyCredential](../resources/keycredential.md)|Add a key credential to an agent identity blueprint.|
 |[Remove key](../api/agentidentityblueprint-removekey.md)|None|Remove a key credential from an agent identity blueprint.|
+|[List federatedIdentityCredential](../api/agentidentityblueprint-list-federatedidentitycredentials.md)|[federatedIdentityCredential](../resources/federatedidentitycredential.md) collection|Get a list of the [federatedIdentityCredential](../resources/federatedidentitycredential.md) objects and their properties.|
+|[Create federatedIdentityCredential](../api/agentidentityblueprint-post-federatedidentitycredentials.md)|[federatedIdentityCredential](../resources/federatedidentitycredential.md)|Create a new [federatedIdentityCredential](../resources/federatedidentitycredential.md) object.|
+|[Get federatedIdentityCredential](../api/agentidentityblueprint-federatedidentitycredential-get.md)|[federatedIdentityCredential](../resources/federatedidentitycredential.md)|Get the properties of a [federatedIdentityCredential](../resources/federatedidentitycredential.md) object.|
+|[Update federatedIdentityCredential](../api/agentidentityblueprint-federatedidentitycredential-update.md)|None|Update the properties of a [federatedIdentityCredential](../resources/federatedidentitycredential.md) object.|
+|[Upsert federatedIdentityCredential](../api/agentidentityblueprint-federatedidentitycredential-upsert.md)|[federatedIdentityCredential](../resources/federatedidentitycredential.md)|Create a new [federatedIdentityCredential](../resources/federatedidentitycredential.md) if it doesn't exist, or update the properties of an existing [federatedIdentityCredential](../resources/federatedidentitycredential.md) object.|
+|[Delete federatedIdentityCredential](../api/agentidentityblueprint-federatedidentitycredential-delete.md)|None|Deletes a [federatedIdentityCredential](../resources/federatedidentitycredential.md) object.|
 |**Deleted items**|||
 |[List](../api/directory-deleteditems-list.md) | [directoryObject](directoryobject.md) collection | Retrieve a list of recently deleted agent identities. |
 |[Get](../api/directory-deleteditems-get.md) | [directoryObject](directoryobject.md) | Retrieve the properties of a recently deleted agent identity. |
@@ -47,6 +53,9 @@ This resource is an open type that allows additional properties beyond those doc
 |[List sponsors](../api/agentidentityblueprint-list-sponsors.md)|[directoryObject](../resources/directoryobject.md) collection|Get the sponsors for this agent identity blueprint. Sponsors are users or service principals who can authorize and manage the lifecycle of agent identity instances.|
 |[Add sponsors](../api/agentidentityblueprint-post-sponsors.md)|[directoryObject](../resources/directoryobject.md)|Add sponsors by posting to the sponsors collection.|
 |[Remove sponsors](../api/agentidentityblueprint-delete-sponsors.md)|None|Remove a [directoryObject](../resources/directoryobject.md) object.|
+|**Verified publisher**| | |
+|[Set](../api/agentidentityblueprint-setverifiedpublisher.md)| None | Set the verified publisher of an application.|
+|[Unset](../api/agentidentityblueprint-unsetverifiedpublisher.md)| None | Unset the verified publisher of an application.|
 
 ## Properties
 
