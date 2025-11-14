@@ -192,7 +192,8 @@ Content-type: application/json
 ### Example 2: Retrieve an application by its appId and only specific properties
 
 #### Request
-The following example shows a request.
+
+The following example shows a request to retrieve an application and some of its properties.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -200,7 +201,7 @@ The following example shows a request.
   "name": "get_application_by_appId_select"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/applications(appId='46e6adf4-a9cf-4b60-9390-0ba6fb00bf6b')?$select=id,appId,displayName,requiredResourceAccess
+GET https://graph.microsoft.com/beta/applications(appId='46e6adf4-a9cf-4b60-9390-0ba6fb00bf6b')?$select=id,appId,displayName,signInAudience,signInAudienceRestrictions
 ```
 
 # [C#](#tab/csharp)
@@ -247,33 +248,15 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#applications(id,appId,displayName,requiredResourceAccess)/$entity",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#applications(id,appId,displayName,signInAudience,signInAudienceRestrictions)/$entity",
     "id": "7bec5fd1-a25f-474c-a6ca-5492082c6a9b",
     "appId": "46e6adf4-a9cf-4b60-9390-0ba6fb00bf6b",
     "displayName": "PostmanWeb",
-    "requiredResourceAccess": [
-        {
-            "resourceAppId": "00000003-0000-0000-c000-000000000000",
-            "resourceAccess": [
-                {
-                    "id": "ad902697-1014-4ef5-81ef-2b4301988e8c",
-                    "type": "Scope"
-                },
-                {
-                    "id": "572fea84-0151-49b2-9301-11cb16974376",
-                    "type": "Scope"
-                },
-                {
-                    "id": "e1fe6dd8-ba31-4d61-89e7-88639da4683d",
-                    "type": "Scope"
-                },
-                {
-                    "id": "7e823077-d88e-468f-a337-e18f1f0e6c7c",
-                    "type": "Scope"
-                }
-            ]
-        }
-    ]
+    "signInAudience": "AzureADMultipleOrgs",
+    "signInAudienceRestrictions": {
+        "@odata.type": "#microsoft.graph.unrestrictedAudience",
+        "kind": "unrestricted"
+    }
 }
 ```
 
