@@ -31,7 +31,6 @@ Inherits from [sharePointIdentityMapping](../resources/sharepointidentitymapping
 |groupType|sharePointIdentityMappingGroupType|Indicates the type of group. The possible values are: `none`, `regularGroup`, `m365Group`, `unknownFutureValue`.|
 |id|String|Unique identifier for the group identity mapping. Base64-encoded String. Generated automatically. Inherited from [sharePointIdentityMapping](../resources/sharepointidentitymapping.md).|
 |sourceGroupIdentity|[identity](../resources/identity.md)|The identity information of the source group in the originating organization. Contains the ID of the source group.|
-|sourceGroupObjectId|String|The Azure AD object ID of the source group. Used as an alternate key for querying. Internal only.|
 |sourceOrganizationId|Guid|The unique identifier of the source organization in the migration. Inherited from [sharePointIdentityMapping](../resources/sharepointidentitymapping.md).|
 |targetGroupIdentity|[identity](../resources/identity.md)|The identity information of the target group in the destination organization. Contains the ID of the target group.|
 |targetGroupMigrationData|[sharePointIdentityMappingGroupMigrationData](../resources/sharepointidentitymappinggroupmigrationdata.md)|Additional migration-specific data for the target group.|
@@ -55,7 +54,6 @@ The following JSON representation shows the resource type.
   "groupType": "String",
   "id": "String (identifier)",
   "sourceGroupIdentity": {"@odata.type": "microsoft.graph.identity"},
-  "sourceGroupObjectId": "String",
   "sourceOrganizationId": "Guid",
   "targetGroupIdentity": {"@odata.type": "microsoft.graph.identity"},
   "targetGroupMigrationData": {"@odata.type": "microsoft.graph.sharePointIdentityMappingGroupMigrationData"}
