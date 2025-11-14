@@ -98,4 +98,4 @@ MicrosoftGraphActivityLogs
 
 ## Next step
 
-- [Provision the MCP Server for Enterprise](provision-mcp.md)
+- [Get started with MCP Server for Enterprise](get-started.md)

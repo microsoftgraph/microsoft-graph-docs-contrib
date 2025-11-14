@@ -4,7 +4,7 @@ description: "Microsoft Graph MCP Server: Learn how to install, configure, and r
 author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: Licantrop0
-ms.service: graph-mcp
+ms.service: enterprise-mcp-server
 ms.topic: get-started
 ms.date: 11/14/2025
 
@@ -31,8 +31,8 @@ This article describes how to provision the MCP server and to configure VS Code 
    Connect-Entra -Scopes 'Application.ReadWrite.All', 'DelegatedPermissionGrant.ReadWrite.All'
    ```
 
-> [!TIP]
-> Running `Get-MgContext` after authentication will show you the account and tenant you are currently authenticated against and the scopes you have consented to.
+  > [!TIP]
+  > Run `Get-MgContext` after authentication to confirm the account and tenant you are currently authenticated against and the scopes you have consented to.
 
 1. Register the Microsoft MCP Server for Enterprise in your tenant and grant all permissions to Visual Studio Code:
 
@@ -154,6 +154,7 @@ To manage scopes on custom MCP clients:
 Grant-EntraBetaMCPServerPermission -ApplicationId "<Your_MCP_Client_Application_Id>" -Scopes "<Scope1>", "<Scope2>", "<...>"
 Revoke-EntraBetaMCPServerPermission -ApplicationId "<Your_MCP_Client_Application_Id>" -Scopes "<Scope1>", "<Scope2>", "<...>"
 ```
+
 ---
 
 ## View supported MCP Server scopes
@@ -189,8 +190,9 @@ $mcpServer.Oauth2PermissionScopes | Select-Object Value
 ---
 
 <details>
-  <summary>List of MCP Server scopes</summary>
-The naming of scopes follows the pattern: `MCP.<microsoft-graph-scope-name>`. For example, the [User.Read.All](../permissions-reference.md#userreadall) Microsoft Graph scope is exposed as `MCP.User.Read.All` on the MCP Server. To understand what operations each scope allows, refer to the original name in the [Microsoft Graph permissions reference](../permissions-reference.md).
+<summary>**List of MCP Server scopes**</summary>
+
+The naming of scopes follows the pattern: "MCP.{microsoft-graph-scope-name}". For example, the [User.Read.All](../permissions-reference.md#userreadall) Microsoft Graph scope is exposed as `MCP.User.Read.All` on the MCP Server. To understand what operations each scope allows, refer to the original name in the [Microsoft Graph permissions reference](../permissions-reference.md).
 
 - MCP.AccessReview.Read.All
 - MCP.AdministrativeUnit.Read.All
@@ -228,6 +230,8 @@ The naming of scopes follows the pattern: `MCP.<microsoft-graph-scope-name>`. Fo
 - MCP.GroupSettings.Read.All
 
 </details>
+
+---
 
 ## Disable the MCP Server for Enterprise
 
