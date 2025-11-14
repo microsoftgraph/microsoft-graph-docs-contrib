@@ -54,6 +54,10 @@ This resource is an open type that allows additional properties beyond those doc
 |[Remove sponsors](../api/agentidentity-delete-sponsors.md)|None|Remove a [directoryObject](../resources/directoryobject.md) object.|
 
 ## Properties
+
+> [!IMPORTANT]
+> While this resource inherits from **servicePrincipal**, some properties are not applicable.
+
 |Property|Type|Description|
 |:---|:---|:---|
 |odata.type|String| `#microsoft.graph.agentIdentity`. Distinguishes this object as an agent identity. Can be used to identify this object as an agent identity, instead of another kind of service principal. |
