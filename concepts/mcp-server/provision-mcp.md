@@ -6,25 +6,16 @@ ms.author: ombongifaith
 ms.reviewer: Licantrop0
 ms.subservice: entra-id
 ms.topic: install-set-up-deploy
-ms.date: 10/28/2025
+ms.date: 11/14/2025
 
 #customer intent: As an IT admin, I want to provision and manage the Microsoft MCP Server for Enterprise so that I can enable and manage MCP Clients in my tenant.
-
 ---
 
 # Set up and manage the Microsoft MCP Server for Enterprise in your tenant
 
 To start using the Microsoft MCP Server for Enterprise, you must enable it in your tenant. This process provisions both the MCP Server and Microsoft-owned MCP Clients: Visual Studio Code, Visual Studio, and Visual Studio with MSAL.
 
-<!-- Confirm M365 Copilot -->
-
 After you enable the service, you can manage it by granting or revoking scopes to the MCP Clients as needed or disabling the service entirely.
-
-<!--
-Qs:
-- Meaning of setting an exact scope list
-- Need to understand if the GARSD operations apply to custom clients as well.
--->
 
 This article guides you on how to provision and manage the Microsoft MCP Server for Enterprise in your tenant.
 
@@ -86,17 +77,106 @@ After signing in, the script does the following during its execution:
 
 <!--I can't tell if the output is because of COpilot Agent or the script itself.-->
 
-#### Supported MCP Server scopes
+#### Supported MCP Server actions
 
-The MCP Server supports a limited set of Microsoft Graph read-only delegated scopes. The naming of scopes are transformed to follow the pattern: `MCP.<microsoft-graph-scope-name>`. For example, the [User.Read.All](../permissions-reference.md#userreadall) Microsoft Graph scope is exposed as `MCP.User.Read.All` on the MCP Server.
+The MCP Server supports the following actions when you run the management script:
 
-The MCP Server doesn't support app-only permissions and app-only scenarios.
+| Action                                     | Description                                                  | Command |
+|--------------------------------------------|--------------------------------------------------------------|---------|
+| Grant ALL scopes to the MCP Clients        | You can't grant scopes to only some MCP Clients.             | `G`     |
+| Add scopes to the MCP Clients              | You can't add scopes to only some MCP Clients.               | `A`     |
+| Remove scopes from the MCP Clients         | You can't remove scopes from only some MCP Clients.          | `R`     |
+| Set an exact scope list to the MCP Clients | You can't set an exact scope list for only some MCP Clients. | `S`     |
+| Delete ALL scopes from the MCP Clients     | You can't delete scopes from only some MCP Clients.          | `D`     |
 
-<details>
+<!--QQ: What about custom clients if you had already installed them? Do these actions apply to them as well?-->
+<!-- QQ: Revisit the provisioning steps to confirm if you can authorize for select users only. oauth2PermissionGrants showed that the grants were applied to all MCP Clients. -->
 
-<summary>Supported MCP Server scopes</summary>
+---
 
-To understand what operations each scope allows, refer to the original name in the [Microsoft Graph permissions reference](../permissions-reference.md).
+### Step 4: Verify the MCP Server provisioning
+
+To verify that the MCP Server has been successfully provisioned, you can query Microsoft Graph or check the Enterprise Applications menu in the Microsoft Entra portal. The three applications have the following names and globally unique **appId**s (client ID on the Microsoft Entra portal):
+
+| Name                                | Globally unique **appId** (Client ID)  |
+|-------------------------------------|----------------------------------------|
+| Microsoft MCP Server for Enterprise | `e8c77dc2-69b3-43f4-bc51-3213c9d915b4` |
+| Visual Studio Code                  | `aebc6443-996d-45c2-90f0-388ff96faa56` |
+| Visual Studio                       | `04f0c124-f2bc-4f59-8241-bf6df9866bbd` |
+
+# [Microsoft Graph](#tab/http)
+
+Sign in to [Graph Explorer](https://aka.ms/ge) using the same admin account you used to run the script, and execute the following query:
+
+By using the application names:
+<!-- {
+  "blockType": "request",
+  "name": "provision-mcp-verify-provisioning-displayname-filter"
+}-->
+```http
+GET https://graph.microsoft.com/v1.0/servicePrincipals?$filter=displayName eq 'Microsoft MCP Server for Enterprise' OR displayName eq 'Visual Studio Code' OR displayName eq 'Visual Studio'
+```
+
+By using the globally unique **appId**:
+<!-- {
+  "blockType": "request",
+  "name": "provision-mcp-verify-provisioning-appid-filter"
+}-->
+```http
+GET https://graph.microsoft.com/v1.0/servicePrincipals?$filter=appId eq 'e8c77dc2-69b3-43f4-bc51-3213c9d915b4' OR appId eq 'aebc6443-996d-45c2-90f0-388ff96faa56' OR appId eq '04f0c124-f2bc-4f59-8241-bf6df9866bbd'
+```
+
+From the service principal object for the MCP Server, you can also query the delegated permissions that the server exposes and are available to grant to the MCP Clients.
+<!-- {
+  "blockType": "request",
+  "name": "provision-mcp-verify-provisioning-server-oauth2PermissionScopes"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/servicePrincipals(appId ='e8c77dc2-69b3-43f4-bc51-3213c9d915b4')/oauth2PermissionScopes
+```
+
+# [Microsoft Entra PowerShell](#tab/entra-powershell)
+
+
+# [Admin center](#tab/entra-portal)
+
+1. Sign in to the [Microsoft Entra portal](https://entra.microsoft.com/).
+1. Expand **Entra ID** >  **Enterprise apps**.
+1. Under the **Manage** group, select **All applications**.
+1. Search the service principals either by name or client ID.
+
+---
+
+### Supported MCP Server scopes
+
+The MCP Server doesn't support app-only permissions and app-only scenarios, only a limited set of delegated permissions and scenarios. You can view the delegated permissions that it exposes and are available to grant to MCP Clients by following these steps:
+
+# [Microsoft Graph](#tab/http)
+
+The following request returns the list of MCP Clients authorized to call the MCP Server along with the granted scopes. *DelegatedPermissionGrant.Read.All* delegated permission is the least privilege permission supported to perform this action.
+
+<!-- {
+  "blockType": "request",
+  "name": "provision-mcp-verify-provisioning-availablescopes"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='e8c77dc2-69b3-43f4-bc51-3213c9d915b4')/oauth2PermissionScopes
+```
+
+# [Microsoft Entra PowerShell](#tab/entra-powershell)
+
+
+# [Admin center](#tab/entra-portal)
+
+1. Sign in to the [Microsoft Entra portal](https://entra.microsoft.com/).
+1. Expand **Entra ID** >  **Enterprise apps**.
+1. Under the **Manage** group, select **All applications**.
+1. Search either by name `Microsoft MCP Server for Enterprise` or appId (`e8c77dc2-69b3-43f4-bc51-3213c9d915b4`) > open the application.
+1. Navigate to the **Security** group and select **Permissions**. The list shows all delegated permissions (scopes) that the MCP Server exposes.
+
+---
+
+The naming of scopes are transformed to follow the pattern: `MCP.<microsoft-graph-scope-name>`. For example, the [User.Read.All](../permissions-reference.md#userreadall) Microsoft Graph scope is exposed as `MCP.User.Read.All` on the MCP Server. To understand what operations each scope allows, refer to the original name in the [Microsoft Graph permissions reference](../permissions-reference.md).
 
 - MCP.AccessReview.Read.All
 - MCP.AdministrativeUnit.Read.All
@@ -131,75 +211,7 @@ To understand what operations each scope allows, refer to the original name in t
 - MCP.Synchronization.Read.All
 - MCP.User.Read.All
 - MCP.UserAuthenticationMethod.Read.All
-</details>
 
-#### Supported MCP Server actions
-
-The MCP Server supports the following actions when you run the management script:
-
-| Action                                     | Description                                                  | Command |
-|--------------------------------------------|--------------------------------------------------------------|---------|
-| Grant ALL scopes to the MCP Clients        | You can't grant scopes to only some MCP Clients.             | `G`     |
-| Add scopes to the MCP Clients              | You can't add scopes to only some MCP Clients.               | `A`     |
-| Remove scopes from the MCP Clients         | You can't remove scopes from only some MCP Clients.          | `R`     |
-| Set an exact scope list to the MCP Clients | You can't set an exact scope list for only some MCP Clients. | `S`     |
-| Delete ALL scopes from the MCP Clients     | You can't delete scopes from only some MCP Clients.          | `D`     |
-
-<!--QQ: What about custom clients if you had already installed them? Do these actions apply to them as well?-->
-<!-- QQ: Revisit the provisioning steps to confirm if you can authorize for select users only. oauth2PermissionGrants showed that the grants were applied to all MCP Clients. -->
-
----
-
-### Step 4: Verify the MCP Server provisioning
-
-To verify that the MCP Server has been successfully provisioned, you can query the Microsoft Graph API or check the Enterprise Applications menu in the Microsoft Entra portal. The three applications have the following names and globally unique **appId**s (client ID on the Microsoft Entra portal):
-
-| Name               | Globally unique appId (Client ID)      |
-|--------------------|----------------------------------------|
-| Microsoft MCP Server for Enterprise   | `e8c77dc2-69b3-43f4-bc51-3213c9d915b4` |
-| Visual Studio Code | `aebc6443-996d-45c2-90f0-388ff96faa56` |
-| Visual Studio      | `04f0c124-f2bc-4f59-8241-bf6df9866bbd` |
-
-# [Microsoft Graph](#tab/http)
-
-Sign in to [Graph Explorer](https://aka.ms/ge) using the same admin account you used to run the script, and execute the following query:
-
-By using the application names:
-<!-- {
-  "blockType": "request",
-  "name": "provision-mcp-verify-provisioning-displayname-filter"
-}-->
-```http
-GET https://graph.microsoft.com/v1.0/servicePrincipals?$filter=displayName eq 'Microsoft MCP Server for Enterprise' OR displayName eq 'Visual Studio Code' OR displayName eq 'Visual Studio'
-```
-
-By using the globally unique **appId**:
-<!-- {
-  "blockType": "request",
-  "name": "provision-mcp-verify-provisioning-appid-filter"
-}-->
-```http
-GET https://graph.microsoft.com/v1.0/servicePrincipals?$filter=appId eq 'e8c77dc2-69b3-43f4-bc51-3213c9d915b4' OR appId eq 'aebc6443-996d-45c2-90f0-388ff96faa56' OR appId eq '04f0c124-f2bc-4f59-8241-bf6df9866bbd'
-```
-
-From the service principal object for the MCP Server, you can also query the delegated permissions that the server exposes and are available to grant to the MCP Clients.
-<!-- {
-  "blockType": "request",
-  "name": "provision-mcp-verify-provisioning-server-oauth2PermissionScopes"
-}-->
-```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/servicePrincipals(appId ='e8c77dc2-69b3-43f4-bc51-3213c9d915b4')/oauth2PermissionScopes
-```
-
-
-# [Admin center](#tab/entra-portal)
-
-1. Sign in to the [Microsoft Entra portal](https://entra.microsoft.com/).
-1. Expand **Entra ID** >  **Enterprise apps**.
-1. Under the **Manage** group, select **All applications**.
-1. Search the service principals either by name or client ID.
-
----
 
 ### Step 5: Verify permissions granted to the MCP Clients
 
@@ -237,6 +249,9 @@ Content-type: application/json
 }
 ```
 
+# [Microsoft Entra PowerShell](#tab/entra-powershell)
+
+
 # [Admin center](#tab/entra-portal)
 
 1. Sign in to the [Microsoft Entra portal](https://entra.microsoft.com/).
@@ -249,28 +264,27 @@ Content-type: application/json
 
 ## Disable the MCP Server for Enterprise
 
-To disable the MCP Server for Enterprise, you need to remove the service principals associated with the MCP Server from the Enterprise Applications in the Microsoft Entra portal.
+Because the MCP Server for Enterprise is a Microsoft-owned service, you can't delete it from your tenant. However, you can disable it.
 
 # [Microsoft Graph](#tab/http)
 
-Sign in to [Graph Explorer](https://aka.ms/ge) using the same admin account you used to run the script, and execute the following query, replacing `{id}` with the object ID of MCP Server for Enterprise in your tenant.
+Sign in to [Graph Explorer](https://aka.ms/ge) using the same admin account you used to run the script and execute the following query.
 
 <!-- {
   "blockType": "request",
   "name": "provision-mcp-delete-enterprisemcpserver"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/servicePrincipals/{id}
-```
-<!-- Disable the SP without deleting; Not live yet.
-```http
-PATCH https://graph.microsoft.com/v1.0/servicePrincipals/{id}
+PATCH https://graph.microsoft.com/v1.0/servicePrincipals(appId='e8c77dc2-69b3-43f4-bc51-3213c9d915b4')
 
 {
-    "isDisabled": true
+    "accountEnabled": false
 }
 ```
--->
+
+# [Microsoft Entra PowerShell](#tab/entra-powershell)
+
+
 
 # [Admin center](#tab/entra-portal)
 
@@ -278,20 +292,12 @@ PATCH https://graph.microsoft.com/v1.0/servicePrincipals/{id}
 2. Expand **Entra ID** >  **Enterprise apps**.
 1. Under the **Manage** group, select **All applications**.
 1. Search the applications either by name or client ID and navigate to each of them.
-1. Under the **Manage** group, toggle the **IsDisabled** switch on.
+1. Under the **Manage** group, toggle the **Enabled for users to sign-in?** switch to **No**.
 
 ---
 
-## Troubleshoot your installation
-
-### 403 Forbidden error when running the management script in PowerShell
-
-Verify that you signed in with an account that has either required roles and granted the required permissions. Run the `Get-MgContext` command and verify the values for **Account** and **Scopes**.
-
-<!--
 ## Next step
 
 > [!div class="nextstepaction"]
-> [Use Visual Studio Code as an MCP Client](link.md)
--->
+> [Use the Visual Studio Code MCP Client](get-started-vscode.md)
 
