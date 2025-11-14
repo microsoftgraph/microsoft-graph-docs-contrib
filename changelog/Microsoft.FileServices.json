@@ -23,7 +23,7 @@
           "ApiChange": "Annotation",
           "ChangedApiName": "Org.OData.Core.V1.Revisions",
           "ChangeType": "Deprecation",
-          "Description": "Removed the **Org.OData.Core.V1.Revisions** resource.",
+          "Description": "Deprecated the **recent** property on the [drive](https://learn.microsoft.com/en-us/graph/api/resources/drive?view=graph-rest-1.0) resource.",
           "Target": "recent"
         },
         {
@@ -31,7 +31,7 @@
           "ApiChange": "Annotation",
           "ChangedApiName": "Org.OData.Core.V1.Revisions",
           "ChangeType": "Deprecation",
-          "Description": "Removed the **Org.OData.Core.V1.Revisions** resource.",
+          "Description": "Deprecated the **sharedWithMe** property on the [drive](https://learn.microsoft.com/en-us/graph/api/resources/drive?view=graph-rest-1.0) resource.",
           "Target": "sharedWithMe"
         }
       ],
@@ -65,7 +65,7 @@
           "ApiChange": "Annotation",
           "ChangedApiName": "Org.OData.Core.V1.Revisions",
           "ChangeType": "Deprecation",
-          "Description": "Removed the **Org.OData.Core.V1.Revisions** resource.",
+          "Description": "Deprecated the **recent** property on the [drive](https://learn.microsoft.com/en-us/graph/api/resources/drive?view=graph-rest-1.0) resource.",
           "Target": "recent"
         },
         {
@@ -73,7 +73,7 @@
           "ApiChange": "Annotation",
           "ChangedApiName": "Org.OData.Core.V1.Revisions",
           "ChangeType": "Deprecation",
-          "Description": "Removed the **Org.OData.Core.V1.Revisions** resource.",
+          "Description": "Deprecated the **sharedWithMe** property on the [drive](https://learn.microsoft.com/en-us/graph/api/resources/drive?view=graph-rest-1.0) resource.",
           "Target": "sharedWithMe"
         }
       ],
