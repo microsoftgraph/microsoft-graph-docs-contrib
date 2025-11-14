@@ -179,7 +179,7 @@ $mcpServer = Get-EntraServicePrincipal -Filter "displayName eq 'Microsoft MCP Se
 $mcpServer.Oauth2PermissionScopes | Select-Object Value
 ```
 
-# [Admin center](#tab/entra-portal)
+# [Admin center](#tab/portal)
 
 1. Sign in to the [Microsoft Entra portal](https://entra.microsoft.com/).
 1. Expand **Entra ID** >  **Enterprise apps**.
@@ -190,7 +190,7 @@ $mcpServer.Oauth2PermissionScopes | Select-Object Value
 ---
 
 <details>
-<summary>**List of MCP Server scopes**</summary>
+<summary>List of MCP Server scopes</summary>
 
 The naming of scopes follows the pattern: "MCP.{microsoft-graph-scope-name}". For example, the [User.Read.All](../permissions-reference.md#userreadall) Microsoft Graph scope is exposed as `MCP.User.Read.All` on the MCP Server. To understand what operations each scope allows, refer to the original name in the [Microsoft Graph permissions reference](../permissions-reference.md).
 
