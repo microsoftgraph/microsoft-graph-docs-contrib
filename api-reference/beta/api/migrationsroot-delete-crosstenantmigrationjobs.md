@@ -78,8 +78,7 @@ The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "resourceType": "Edm.String"
+  "truncated": true
 }
 -->
 ``` http
@@ -87,8 +86,7 @@ HTTP/1.1 202 Accepted
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Edm.String",
-  "value": "Delete in progress."
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#solutions/migrations/crossTenantMigrationJobs/$entity",
 }
 ```
 
