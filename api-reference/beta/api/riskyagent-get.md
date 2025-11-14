@@ -55,7 +55,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [riskyAgent](../resources/riskyagent.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [riskyAgent](../resources/riskyagent.md) object in the response body. The **odata.type** property indicates the type of risky agent which might be one of the following types: [riskyAgentIdentity](../resources/riskyagentidentity.md), [riskyAgentIdentityBlueprintPrincipal](../resources/riskyagentidentityblueprintprincipal.md), or [riskyAgentUser](../resources/riskyagentuser.md).
 
 ## Examples
 
@@ -68,13 +68,13 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityProtection/riskyAgent({riskyAgentId})
+GET https://graph.microsoft.com/beta/identityProtection/riskyAgents/{riskyAgentId}
 ```
 
 
 ### Response
 
-The following example shows the response. The property @odata.type indicates the type of agent, see [riskyAgentIdentity](../resources/riskyagentidentity.md), [riskyAgentIdentityBlueprintPrincipal](../resources/riskyagentidentityblueprintprincipal.md), and [riskyAgentUser](../resources/riskyagentuser.md) to learn more about the supported types.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

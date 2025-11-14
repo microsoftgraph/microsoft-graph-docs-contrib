@@ -2,7 +2,7 @@
 title: "riskyAgentIdentityBlueprintPrincipal resource type"
 description: 'Identity Protection of agents - riskyAgentIdentityBlueprintPrincipal resource type'
 author: jiayle27
-ms.date: 10/24/2025
+ms.date: 11/13/2025
 ms.localizationpriority: medium
 ms.subservice: entra-sign-in
 doc_type: resourcePageType
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a Microsoft Entra [Agent Identity Blueprint Principal](../resources/agentidentityblueprintprincipal.md) that is at risk. Microsoft Entra ID Protection continually evaluates agentic risk based on various signals and machine learning.
+Represents a Microsoft Entra [agent identity blueprint principal](../resources/agentidentityblueprintprincipal.md) that is at risk. Microsoft Entra ID Protection continually evaluates agentic risk based on various signals and machine learning.
 
 Inherits from [riskyAgent](../resources/riskyagent.md).
 
@@ -26,7 +26,7 @@ None.
 |Property|Type|Description|
 |:---|:---|:---|
 |agentDisplayName|String|Name of the agent. Inherited from [riskyAgent](../resources/riskyagent.md). <br/><br/> Supports `$filter` (`eq`, `startsWith`).|
-|id|String|The unique identifier for the agent identity. This is equivalent to 'id' from [Agent Identity Blueprint Principal](../resources/agentidentityblueprintprincipal.md). Inherited from [entity](../resources/entity.md). <br/><br/> Supports `$filter` (`eq`, `startsWith`).|
+|id|String|The object **id** of the [agent identity blueprint principal](../resources/agentidentityblueprintprincipal.md). Inherited from [entity](../resources/entity.md). <br/><br/> Supports `$filter` (`eq`, `startsWith`).|
 |isDeleted|Boolean|Indicates whether the agent is deleted. Inherited from [riskyAgent](../resources/riskyagent.md).|
 |isEnabled|Boolean|Indicates whether the agent is enabled. Inherited from [riskyAgent](../resources/riskyagent.md).|
 |isProcessing|Boolean|Indicates whether an agent's risky state is processing in the backend. Inherited from [riskyAgent](../resources/riskyagent.md).|
@@ -51,15 +51,15 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.riskyAgentIdentityBlueprintPrincipal",
-  "id": "9adec27e-ffbb-4f7f-b06b-445a330985b2",
-  "agentDisplayName": "CopilotBlueprintPrincipal",
-  "isDeleted": false,
-  "isEnabled": true,
-  "isProcessing": true,
-  "riskLastModifiedDateTime": "2025-10-10T22:40:15.7281572Z",
-  "riskState": "atRisk",
-  "riskLevel": "high",
-  "riskDetail": "none"
+  "id": "String (identifier)",
+  "agentDisplayName": "String",
+  "isDeleted": "Boolean",
+  "isEnabled": "Boolean",
+  "isProcessing": "Boolean",
+  "riskLastModifiedDateTime": "String (timestamp)",
+  "riskState": "String",
+  "riskLevel": "String",
+  "riskDetail": "String"
 }
 ```
 

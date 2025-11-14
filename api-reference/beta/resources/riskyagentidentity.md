@@ -2,7 +2,7 @@
 title: "riskyAgentIdentity resource type"
 description: 'Identity Protection of agents - riskyAgentIdentity resource type'
 author: jiayle27
-ms.date: 10/24/2025
+ms.date: 11/13/2025
 ms.localizationpriority: medium
 ms.subservice: entra-sign-in
 doc_type: resourcePageType
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a Microsoft Entra [Agent Identity](../resources/agentidentity.md) that is at risk. Microsoft Entra ID Protection continually evaluates agentic risk based on various signals and machine learning.
+Represents a Microsoft Entra [agent identity](../resources/agentidentity.md) that is at risk. Microsoft Entra ID Protection continually evaluates agentic risk based on various signals and machine learning.
 
 Inherits from [riskyAgent](../resources/riskyagent.md).
 
@@ -25,7 +25,7 @@ None.
 |Property|Type|Description|
 |:---|:---|:---|
 |agentDisplayName|String|Name of the agent. Inherited from [riskyAgent](../resources/riskyagent.md). <br/><br/> Supports `$filter` (`eq`, `startsWith`).|
-|id|String|The unique identifier for the agent identity. This is equivalent to 'id' from [Agent Identity](../resources/agentidentity.md). Inherited from [entity](../resources/entity.md). <br/><br/> Supports `$filter` (`eq`, `startsWith`).|
+|id|String|The object **id** of the [agent identity](../resources/agentidentity.md). Inherited from [entity](../resources/entity.md). <br/><br/> Supports `$filter` (`eq`, `startsWith`).|
 |isDeleted|Boolean|Indicates whether the agent is deleted. Inherited from [riskyAgent](../resources/riskyagent.md).|
 |isEnabled|Boolean|Indicates whether the agent is enabled. Inherited from [riskyAgent](../resources/riskyagent.md).|
 |isProcessing|Boolean|Indicates whether an agent's risky state is processing in the backend. Inherited from [riskyAgent](../resources/riskyagent.md).|
@@ -50,15 +50,15 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.riskyAgentIdentity",
-  "id": "929da549-7a91-4365-900f-d4ef49a759a0",
-  "agentDisplayName": "AgenticRiskyServicePrincipal",
-  "isDeleted": false,
-  "isEnabled": true,
-  "isProcessing": true,
-  "riskLastModifiedDateTime": "2025-10-10T22:19:10.1921572Z",
-  "riskState": "atRisk",
-  "riskLevel": "high",
-  "riskDetail": "none"
+  "id": "String (identifier)",
+  "agentDisplayName": "String",
+  "isDeleted": "Boolean",
+  "isEnabled": "Boolean",
+  "isProcessing": "Boolean",
+  "riskLastModifiedDateTime": "String (timestamp)",
+  "riskState": "String",
+  "riskLevel": "String",
+  "riskDetail": "String"
 }
 ```
 
