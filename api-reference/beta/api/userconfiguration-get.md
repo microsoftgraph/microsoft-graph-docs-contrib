@@ -67,7 +67,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/me/mailFolders/{mailFolderId}/userConfigurations/{userConfigurationId}
+GET https://graph.microsoft.com/beta/me/mailFolders/inbox/userConfigurations/MyApp
 ```
 
 ### Response
@@ -85,13 +85,81 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.userConfiguration",
-  "id": "a10e39d7-5dd4-6dbf-42b0-794e8429ed0f",
-  "binaryData": "Binary",
-  "xmlData": "Binary",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('f42c50f8-1300-48a0-93d4-6481acda7efb')/mailFolders('inbox')/userConfigurations/$entity",
+  "id": "MyApp",
+  "binaryData": "SGVsbG8=",
+  "xmlData": "V29ybGQ=",
   "structuredData": [
     {
-      "@odata.type": "microsoft.graph.structuredDataEntry"
+      "keyEntry": {
+        "type": "byte",
+        "values": [
+          "100"
+        ]
+      },
+      "valueEntry": {
+        "type": "boolean",
+        "values": [
+          "True"
+        ]
+      }
+    },
+    {
+      "keyEntry": {
+        "type": "integer32",
+        "values": [
+          "-32"
+        ]
+      },
+      "valueEntry": {
+        "type": "integer64",
+        "values": [
+          "64"
+        ]
+      }
+    },
+    {
+      "keyEntry": {
+        "type": "unsignedInteger32",
+        "values": [
+          "32"
+        ]
+      },
+      "valueEntry": {
+        "type": "unsignedInteger64",
+        "values": [
+          "64"
+        ]
+      }
+    },
+    {
+      "keyEntry": {
+        "type": "string",
+        "values": [
+          "DateTime"
+        ]
+      },
+      "valueEntry": {
+        "type": "dateTime",
+        "values": [
+          "2025-10-23T01:23:45.0000000+00:00"
+        ]
+      }
+    },
+    {
+      "keyEntry": {
+        "type": "byteArray",
+        "values": [
+          "AQECAwUI"
+        ]
+      },
+      "valueEntry": {
+        "type": "stringArray",
+        "values": [
+          "Hello",
+          "World"
+        ]
+      }
     }
   ]
 }

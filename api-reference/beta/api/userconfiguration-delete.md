@@ -63,7 +63,7 @@ The following example shows a request.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/me/mailFolders/{mailFolderId}/userConfigurations/{userConfigurationId}
+DELETE https://graph.microsoft.com/beta/me/mailFolders/inbox/userConfigurations/MyApp
 ```
 
 ### Response

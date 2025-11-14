@@ -64,22 +64,33 @@ If successful, this method returns a `200 OK` response code and an updated [user
 ### Request
 
 The following example shows a request.
+>**Note:** The structuredData will be updated as a whole.
 <!-- {
   "blockType": "request",
   "name": "update_userconfiguration"
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/me/mailFolders/{mailFolderId}/userConfigurations/{userConfigurationId}
+PATCH https://graph.microsoft.com/beta/me/mailFolders/inbox/userConfigurations/MyApp
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.userConfiguration",
-  "binaryData": "Binary",
-  "xmlData": "Binary",
   "structuredData": [
     {
-      "@odata.type": "microsoft.graph.structuredDataEntry"
+      "keyEntry":
+      {
+        "type": "string",
+        "values": [
+          "name"
+        ]
+      },
+      "valueEntry":
+      {
+        "type": "string",
+        "values": [
+          "Snow"
+        ]
+      }
     }
   ]
 }
@@ -100,10 +111,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.userConfiguration",
-  "id": "a10e39d7-5dd4-6dbf-42b0-794e8429ed0f",
-  "binaryData": "Binary",
-  "xmlData": "Binary",
+   "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('f42c50f8-1300-48a0-93d4-6481acda7efb')/mailFolders('inbox')/userConfigurations/$entity",
   "structuredData": [
     {
       "@odata.type": "microsoft.graph.structuredDataEntry"
