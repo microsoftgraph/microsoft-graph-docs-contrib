@@ -1004,7 +1004,11 @@
             "appRoleAssignment",
             "dataPolicyOperation",
             "oAuth2PermissionGrant",
-            "certificateBasedAuthConfiguration"
+            "certificateBasedAuthConfiguration",
+            "webApplicationFirewallProvider",
+            "cloudFlareWebApplicationFirewallProvider",
+            "akamaiWebApplicationFirewallProvider",
+            "webApplicationFirewallVerificationModel"
           ],
           "childNodes": [
             {
@@ -1019,11 +1023,7 @@
                 "onFraudProtectionLoadStartListener",
                 "onInteractiveAuthFlowStartListener",
                 "onTokenIssuanceStartListener",
-                "onUserCreateStartListener",
-                "webApplicationFirewallProvider",
-                "cloudFlareWebApplicationFirewallProvider",
-                "akamaiWebApplicationFirewallProvider",
-                "webApplicationFirewallVerificationModel"
+                "onUserCreateStartListener"
               ]
             },
             {
