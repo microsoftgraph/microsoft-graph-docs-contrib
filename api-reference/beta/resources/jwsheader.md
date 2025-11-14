@@ -28,7 +28,7 @@ None.
 The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.jwsHeader"
+  "@odata.type": "microsoft.graph.jwsHeader",
   "openType": true
 }
 -->
