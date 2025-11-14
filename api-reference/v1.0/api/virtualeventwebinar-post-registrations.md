@@ -22,6 +22,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "virtualeventwebinar_post_registrations" } -->
 [!INCLUDE [permissions-table](../includes/permissions/virtualeventwebinar-post-registrations-permissions.md)]
 
+> [!NOTE]
+>
+> - The VirtualEventRegistration-Anon.ReadWrite.Chat permission use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
+
 ## HTTP request
 
 <!-- {
