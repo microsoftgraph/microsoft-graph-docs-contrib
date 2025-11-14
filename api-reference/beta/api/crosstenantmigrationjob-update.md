@@ -52,7 +52,7 @@ PATCH /solutions/migrations/crossTenantMigrationJobs/{crossTenantMigrationJobId}
 
 |Property|Type|Description|
 |:---|:---|:---|
-|completeAfterDateTime|DateTimeOffset|When the  Required.|
+|completeAfterDateTime|DateTimeOffset|When the CrossTenantMigrationJob should start processing. Required.|
 
 ## Response
 
@@ -82,7 +82,14 @@ Content-Type: application/json
 
 The following example shows the response.
 
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
+
 ``` http
 HTTP/1.1 Success 204 No Content
+Content-Type: text/plain
 ```
 

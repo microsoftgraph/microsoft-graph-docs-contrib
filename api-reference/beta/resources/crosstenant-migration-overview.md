@@ -6,7 +6,9 @@ ms.author: danielabo
 ms.date: 11/04/2025
 ms.topic: overview
 ms.prod: microsoft-graph
+ms.subservice: t2t-migration
 ms.localizationpriority: high
+doc_type: conceptualPageType
 ---
 
 # Cross-tenant migration API overview
