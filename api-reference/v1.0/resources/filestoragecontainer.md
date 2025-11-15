@@ -48,6 +48,7 @@ Represents a location where multiple users or a group of users can store files a
 
 |Property|Type|Description|
 |:---|:---|:---|
+|assignedSensitivityLabel|[assignedLabel](../resources/assignedlabel.md)|Sensitivity label assigned to the **fileStorageContainer**. Read-write.|
 |containerTypeId|Guid|Container type ID of the **fileStorageContainer**. For details about container types, see [Container Types](/sharepoint/dev/embedded/concepts/app-concepts/containertypes). Each container must have only one container type. Read-only.|
 |createdDateTime|DateTimeOffset|Date and time of the **fileStorageContainer** creation. Read-only.|
 |customProperties|[fileStorageContainerCustomPropertyDictionary](../resources/filestoragecontainercustompropertydictionary.md)|Custom property collection for the **fileStorageContainer**. Read-write.|
@@ -92,6 +93,9 @@ The following JSON representation shows the resource type.
   "displayName": "String",
   "description": "String",
   "containerTypeId": "Guid",
+  "assignedSensitivityLabel": {
+    "@odata.type": "microsoft.graph.assignedLabel"
+  },
   "customProperties": {
     "@odata.type": "microsoft.graph.fileStorageContainerCustomPropertyDictionary"
   },
