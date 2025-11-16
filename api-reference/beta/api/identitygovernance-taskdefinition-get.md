@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /identityGovernance/lifecycleWorkflows/taskDefinitions/{taskDefinitionId}
 ```
 
@@ -67,7 +67,7 @@ The following example shows a request.
   "name": "lifecycleworkflows_get_taskdefinition"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/taskDefinitions/1dfdfcc7-52fa-4c2e-bf3a-e3919cc12950
 ```
 
@@ -111,7 +111,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.identityGovernance.taskDefinition"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

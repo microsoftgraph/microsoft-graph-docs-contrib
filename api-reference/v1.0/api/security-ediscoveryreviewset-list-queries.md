@@ -28,7 +28,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /security/cases/ediscoveryCases/{ediscoveryCaseId}/reviewSets/{ediscoveryReviewSetId}/queries
 ```
 
@@ -58,7 +58,7 @@ The following example shows a request.
   "name": "list_ediscoveryreviewsetquery"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/security/cases/ediscoveryCases/58399dff-cebe-478f-b1af-d3227f1fd645/reviewSets/273f11a1-17aa-419c-981d-ff10d33e420f/queries
 ```
 
@@ -101,7 +101,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.security.ediscoveryReviewSetQuery)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

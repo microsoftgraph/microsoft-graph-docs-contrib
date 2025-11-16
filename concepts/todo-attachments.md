@@ -45,7 +45,7 @@ The following example shows a request to create an upload session.
   "sampleKeys": ["AAMDiFkfh=", "AAMkADliMm="]
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/me/todo/lists/AAMDiFkfh=/tasks/AAMkADliMm=/attachments/createUploadSession
 Content-Type: application/json
 
@@ -98,7 +98,7 @@ The following example shows the **uploadSession** resource returned for the task
   "@odata.type": "microsoft.graph.uploadSession"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

@@ -28,7 +28,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /sites/{siteId}/operations
 ```
 
@@ -61,7 +61,7 @@ The following example shows a request.
   "sampleKeys": ["root"]
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/sites/root/operations
 ```
 
@@ -107,7 +107,7 @@ The following example shows the response.
   "isCollection": true
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

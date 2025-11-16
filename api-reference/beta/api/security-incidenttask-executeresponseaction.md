@@ -35,7 +35,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /security/incidentTasks/{incidentTaskId}/executeResponseAction
 ```
 
@@ -64,7 +64,7 @@ If successful, this method returns a `204 No Content` response code. If a status
   "name": "postincidenttaskexecuteresponseaction"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/security/incidentTasks/213213/executeResponseAction
 ```
 
@@ -106,6 +106,6 @@ POST https://graph.microsoft.com/beta/security/incidentTasks/213213/executeRespo
   "noContent": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```

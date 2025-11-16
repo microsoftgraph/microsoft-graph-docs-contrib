@@ -67,7 +67,7 @@ The following example shows a request.
   "name": "list_tokenlifetimepolicies_on_serviceprincipal"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/servicePrincipals/2a8f9e7a-af01-413a-9592-c32ec0e5c1a7/tokenLifetimePolicies
 ```
 
@@ -111,7 +111,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.tokenLifetimePolicy)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

@@ -28,7 +28,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /me/profile/account
 POST /users/{id | userPrincipalName}/profile/account
 ```
@@ -65,7 +65,7 @@ If successful, this method returns a `201 Created` response code and a [userAcco
   "name": "create_useraccountinformation_from_profile"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/me/profile/account
 Content-Type: application/json
 
@@ -113,7 +113,7 @@ Content-Type: application/json
   "@odata.type": "microsoft.graph.userAccountInformation"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 

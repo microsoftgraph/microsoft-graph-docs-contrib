@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 
-``` http
+```http
 GET /directory/federationConfigurations/graph.samlOrWsFedExternalDomainFederation
 ```
 
@@ -63,7 +63,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 }
 -->
 
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/directory/federationConfigurations/graph.samlOrWsFedExternalDomainFederation
 ```
 
@@ -107,7 +107,7 @@ GET https://graph.microsoft.com/beta/directory/federationConfigurations/graph.sa
 }
 -->
 
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

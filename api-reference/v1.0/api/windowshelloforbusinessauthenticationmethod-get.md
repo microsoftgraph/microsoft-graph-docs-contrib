@@ -36,7 +36,7 @@ Read details of your own Windows Hello For Business authentication method.
 [!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
 
 <!-- { "blockType": "ignored" } -->
-``` http
+```http
 GET /me/authentication/windowsHelloForBusinessMethods/{windowsHelloForBusinessAuthenticationMethodId}
 ```
 
@@ -45,7 +45,7 @@ Read details of your own or another user's Windows Hello For Business authentica
 [!INCLUDE [authentication-methods-apis-users-selfservice](../includes/authentication-methods-apis-users-selfservice.md)]
 
 <!-- { "blockType": "ignored" } -->
-``` http
+```http
 GET /users/{id | userPrincipalName}/authentication/windowsHelloForBusinessMethods/{windowsHelloForBusinessAuthenticationMethodId}
 ```
 
@@ -78,7 +78,7 @@ If successful, this method returns a `200 OK` response code and a [windowsHelloF
   "sampleKeys": ["annie@contoso.com", "_jpuR-TGZtk6aQCLF3BQjA2"]
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users/annie@contoso.com/authentication/windowsHelloForBusinessMethods/_jpuR-TGZtk6aQCLF3BQjA2
 ```
 
@@ -120,7 +120,7 @@ GET https://graph.microsoft.com/v1.0/users/annie@contoso.com/authentication/wind
   "@odata.type": "microsoft.graph.windowsHelloForBusinessAuthenticationMethod"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
