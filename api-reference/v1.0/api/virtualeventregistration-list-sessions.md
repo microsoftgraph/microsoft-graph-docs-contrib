@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 [!INCLUDE [permissions-table](../includes/permissions/virtualeventregistration-list-sessions-permissions.md)]
 
 > [!NOTE]
-> - The VirtualEvent.Read.Chat permission use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
+> - The `VirtualEvent.Read.Chat` permission uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 ## HTTP request
 
