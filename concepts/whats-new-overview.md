@@ -28,6 +28,10 @@ The [driveItem: restore](/graph/api/driveitem-restore) method was expanded to en
 
 Deprecated the [drive: recent](/graph/api/drive-recent) and [drive: sharedWithMe](/graph/api/drive-sharedwithme) methods of the [drive](/graph/api/resources/drive) resource.
 
+### Security
+
+Added [activeDirectoryDomainEvidence](/graph/api/resources/security-activedirectorydomainevidence)
+
 ## November 2025: New in preview only
 
 ### Files

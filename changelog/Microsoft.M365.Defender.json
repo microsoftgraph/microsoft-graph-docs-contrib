@@ -3303,6 +3303,24 @@
       "CreatedDateTime": "2025-11-03T14:39:53.8840974Z",
       "WorkloadArea": "Security",
       "SubArea": ""
+      },
+      {
+      "ChangeList": [
+        {
+          "Id": "4150af3b-be39-4935-8d5b-4ec8a284a005",
+          "ApiChange": "Resource",
+          "ChangedApiName": "activeDirectoryDomainEvidence",
+          "ChangeType": "Addition",
+          "Description": "Added the [activeDirectoryDomainEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-activeDirectoryDomainEvidence?view=graph-rest-1.0) resource.",
+          "Target": "activeDirectoryDomainEvidence"
+        }
+      ],
+      "Id": "4150af3b-be39-4935-8d5b-4ec8a284a005",
+      "Cloud": "Review",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-07-21T13:31:06.799148Z",
+      "WorkloadArea": "Security",
+      "SubArea": ""
     }
   ]
 }
