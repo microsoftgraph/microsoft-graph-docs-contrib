@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /tenantRelationships/managedTenants/tenantGroups/tenantSearch
 ```
 
@@ -64,7 +64,7 @@ If successful, this action returns a `200 OK` response code and a [microsoft.gra
   "name": "tenantgroup_tenantsearch"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/tenantRelationships/managedTenants/tenantGroups/tenantSearch
 Content-Type: application/json
 
@@ -107,7 +107,7 @@ Content-Type: application/json
   "@odata.type": "Collection(microsoft.graph.managedTenants.tenantGroup)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

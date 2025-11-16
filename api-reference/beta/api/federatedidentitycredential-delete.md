@@ -63,7 +63,7 @@ If successful, this method returns a `204 No Content` response code.
   "name": "delete_federatedidentitycredential"
 }
 -->
-``` http
+```http
 DELETE https://graph.microsoft.com/beta/applications/bcd7c908-1c4d-4d48-93ee-ff38349a75c8/federatedIdentityCredentials/d9b7bf1e-429e-4678-8132-9b00c9846cc4
 ```
 
@@ -103,7 +103,7 @@ DELETE https://graph.microsoft.com/beta/applications/bcd7c908-1c4d-4d48-93ee-ff3
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 
