@@ -1040,6 +1040,14 @@ Namespace: microsoft.graph.security
 |audit|
 |block|
 
+### sensorCandidateActivationMode values
+
+|Member|
+|:---|
+|manual|
+|automated|
+|unknownFutureValue|
+
 
 ### action values
 

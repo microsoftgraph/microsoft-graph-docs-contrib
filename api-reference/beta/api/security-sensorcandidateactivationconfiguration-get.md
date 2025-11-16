@@ -16,7 +16,7 @@ Namespace: microsoft.graph.security
 
 Read the properties and relationships of [microsoft.graph.security.sensorCandidateActivationConfiguration](../resources/security-sensorcandidateactivationconfiguration.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /security/identities/sensorCandidateActivationConfiguration
 ```
 
@@ -66,7 +66,7 @@ The following example shows a request.
   "name": "get_sensorcandidateactivationconfiguration"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/security/identities/sensorCandidateActivationConfiguration
 ```
 
@@ -106,7 +106,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.security.sensorCandidateActivationConfiguration"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

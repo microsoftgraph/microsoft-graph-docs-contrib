@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /security/incidents
 ```
 
@@ -48,7 +48,7 @@ The following are examples of their use:
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /security/incidents?$count=true
 GET /security/incidents?$filter={property}+eq+'{property-value}'
 GET /security/incidents?$top=10
@@ -81,7 +81,7 @@ The following example shows a request.
   "name": "list_incident_for_defender"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/security/incidents
 ```
 
@@ -128,7 +128,7 @@ The following example shows the response.
 }
 -->
 
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -178,7 +178,7 @@ Content-Type: application/json
   "name": "list_incident_with_their_alerts"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/security/incidents?$expand=alerts
 ```
 
@@ -220,7 +220,7 @@ GET https://graph.microsoft.com/v1.0/security/incidents?$expand=alerts
   "@odata.type": "Collection(microsoft.graph.security.incident)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

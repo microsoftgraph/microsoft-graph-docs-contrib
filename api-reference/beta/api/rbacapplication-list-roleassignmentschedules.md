@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /roleManagement/directory/roleAssignmentSchedules
 ```
 
@@ -60,7 +60,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
   "name": "list_unifiedroleassignmentschedule"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignmentSchedules
 ```
 
@@ -105,7 +105,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.unifiedRoleAssignmentSchedule)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

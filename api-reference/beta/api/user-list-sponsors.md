@@ -67,7 +67,7 @@ The following example shows a request to get the sponsors.
   "name": "get_sponsors"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/025e5e3e-e5b7-4eb4-ba1f-4e5b0579f1a2/sponsors
 ```
 

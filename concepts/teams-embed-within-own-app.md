@@ -45,7 +45,7 @@ Before sending a new [chatMessage](/graph/api/resources/chatmessage), you must c
   "blockType": "request",
   "name": "step_2"
 }-->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/chats
 Content-Type: application/json
 
@@ -114,7 +114,7 @@ Content-Type: application/json
   "@odata.type": "microsoft.graph.chat"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 

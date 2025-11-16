@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /policies/accessReviewPolicy
 GET /identityGovernance/accessReviews/policy
 ```
@@ -58,7 +58,7 @@ If successful, this method returns a `200 OK` response code and an [accessReview
   "name": "get_accessreviewpolicy"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/policies/accessReviewPolicy
 ```
 
@@ -100,7 +100,7 @@ GET https://graph.microsoft.com/beta/policies/accessReviewPolicy
   "@odata.type": "microsoft.graph.accessReviewPolicy"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -122,7 +122,7 @@ Content-Type: application/json
   "name": "get_accessreviewpolicy_2"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/policy
 ```
 
@@ -164,7 +164,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/policy
   "@odata.type": "microsoft.graph.accessReviewPolicy"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

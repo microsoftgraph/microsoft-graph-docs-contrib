@@ -30,7 +30,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /identityGovernance/permissionsAnalytics/aws/findings/{id}/microsoft.graph.openAwsSecurityGroupFinding
 ```
 
@@ -59,7 +59,7 @@ The following example shows a request.
   "name": "get_openawssecuritygroupfinding"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/MSxPcGVuQXdzU2VjdXJpdHlHcm91cEZpbmRpbmcsMjIyNjk2/microsoft.graph.openAwsSecurityGroupFinding
 ```
 
@@ -78,7 +78,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.openAwsSecurityGroupFinding"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

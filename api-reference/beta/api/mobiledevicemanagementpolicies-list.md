@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 
-``` http
+```http
 GET /policies/mobileDeviceManagementPolicies
 ```
 
@@ -74,7 +74,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 }
 -->
 
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/policies/mobileDeviceManagementPolicies
 ```
 
@@ -118,7 +118,7 @@ GET https://graph.microsoft.com/beta/policies/mobileDeviceManagementPolicies
 }
 -->
 
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
