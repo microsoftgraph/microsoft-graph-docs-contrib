@@ -37,7 +37,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /admin/windows/updates/updatableAssets/{updatableAssetGroupId}/addMembers
 ```
 
@@ -70,7 +70,7 @@ If successful, this action returns a `202 Accepted` response code. It doesn't re
   "name": "updatableassetgroup_addmembers"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/admin/windows/updates/updatableAssets/f5ba7065-7065-f5ba-6570-baf56570baf5/addMembers
 Content-Type: application/json
 
@@ -121,6 +121,6 @@ Content-Type: application/json
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 202 Accepted
 ```

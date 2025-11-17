@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /admin/windows/updates/resourceConnections/{resourceConnectionId}
 ```
 
@@ -61,7 +61,7 @@ The following example shows a request.
   "name": "get_resourceconnection"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/admin/windows/updates/resourceConnections/85fbecb2-e407-34e9-9298-4d587857795d
 ```
 
@@ -104,7 +104,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.windowsUpdates.resourceConnection"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

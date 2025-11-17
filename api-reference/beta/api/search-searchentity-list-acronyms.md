@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /search/acronyms
 ```
 
@@ -65,7 +65,7 @@ The following example shows a request.
   "name": "list_acronym"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/search/acronyms
 ```
 
@@ -110,7 +110,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.search.acronym)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

@@ -17,6 +17,9 @@ Namespace: microsoft.graph
 Restore a recently deleted directory object from [deleted items](../resources/directory.md). The following types are supported:
 - [administrativeUnit](../resources/administrativeunit.md)
 - [application](../resources/application.md)
+- [agentIdentityBlueprint](../resources/agentidentityblueprint.md)
+- [agentIdentity](../resources/agentidentity.md)
+- [agentIdentityBlueprintPrincipal](../resources/agentidentityblueprintprincipal.md)
 - [certificateBasedAuthPki](../resources/certificatebasedauthpki.md)
 - [certificateAuthorityDetail](../resources/certificateauthoritydetail.md)
 - [externalUserProfile](../resources/externaluserprofile.md)
@@ -26,7 +29,7 @@ Restore a recently deleted directory object from [deleted items](../resources/di
 - [user](../resources/user.md)
 
 
-If an item was accidentally deleted, you can fully restore the item. This isn't applicable to security groups, which are deleted permanently. Also, restoring an application doesn't restore the associated service principal automatically. You must call this API to explicitly restore the deleted service principal.
+If an item is accidentally deleted, you can fully restore the item. Additionally, restoring an application doesn't automatically restore the associated service principal automatically. You must call this API to explicitly restore the deleted service principal.
 
 A recently deleted item remains available for up to 30 days. After 30 days, the item is permanently deleted.
 
@@ -40,12 +43,15 @@ The following table shows the least privileged permission or permissions require
 |:-|:-|:-|:-|
 | [administrativeUnit](../resources/administrativeunit.md) | AdministrativeUnit.ReadWrite.All | Not supported. | AdministrativeUnit.ReadWrite.All |
 | [application](../resources/application.md) | Application.ReadWrite.All | Not supported. | Application.ReadWrite.OwnedBy |
+| [agentIdentityBlueprint](../resources/agentidentityblueprint.md) | AgentIdentityBlueprint.DeleteRestore.All | Not supported. | AgentIdentityBlueprint.DeleteRestore.All |
 | [certificateBasedAuthPki](../resources/certificatebasedauthpki.md) | PublicKeyInfrastructure.Read.All | Not supported. | PublicKeyInfrastructure.Read.All |
 | [certificateAuthorityDetail](../resources/certificateauthoritydetail.md) | PublicKeyInfrastructure.Read.All | Not supported. | PublicKeyInfrastructure.Read.All |
 | [externalUserProfile](../resources/externaluserprofile.md) | ExternalUserProfile.ReadWrite.All | Not supported | ExternalUserProfile.ReadWrite.All |
 | [group](../resources/group.md) | Group.ReadWrite.All | Not supported. | Group.ReadWrite.All |
 | [pendingExternalUserProfile](../resources/pendingexternaluserprofile.md) | PendingExternalUserProfile.ReadWrite.All | Not supported | PendingExternalUserProfile.ReadWrite.All |
 | [servicePrincipal](../resources/serviceprincipal.md) | Application.ReadWrite.All | Not supported. | Application.ReadWrite.OwnedBy |
+| [agentIdentity](../resources/agentidentity.md) | AgentIdentity.DeleteRestore.All | Not supported. | AgentIdentity.DeleteRestore.All |
+| [agentIdentityBlueprintPrincipal](../resources/agentidentityblueprintprincipal.md) | AgentIdentityBlueprintPrincipal.DeleteRestore.All | Not supported. | AgentIdentityBlueprintPrincipal.DeleteRestore.All |
 | [user](../resources/user.md) | User.DeleteRestore.All | Not supported. | User.DeleteRestore.All |
 
 [!INCLUDE [rbac-directory-deleted-items-apis](../includes/rbac-for-apis/rbac-directory-deleted-items-apis.md)]

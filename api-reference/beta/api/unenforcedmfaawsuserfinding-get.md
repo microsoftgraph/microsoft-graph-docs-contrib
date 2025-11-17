@@ -30,7 +30,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /identityGovernance/permissionsAnalytics/aws/findings/{id}/microsoft.graph.unenforcedMfaAwsUserFinding
 ```
 
@@ -59,7 +59,7 @@ The following example shows a request.
   "name": "get_unenforcedmfaawsuserfinding"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/MSxVbmVuZm9yY2VkTWZhQXdzVXNlckZpbmRpbmcsNjUzMjU/microsoft.graph.unenforcedMfaAwsUserFinding
 ```
 
@@ -78,7 +78,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.unenforcedMfaAwsUserFinding"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

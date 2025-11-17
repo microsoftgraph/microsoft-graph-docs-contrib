@@ -27,7 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PATCH /solutions/backupRestore/oneDriveForBusinessProtectionPolicies/{oneDriveForBusinessProtectionPolicyId}/driveInclusionRules/{driveProtectionRuleId}
 PATCH /solutions/backupRestore/exchangeProtectionPolicies/{exchangeProtectionPolicyId}/mailboxInclusionRules/{mailboxProtectionRuleId}
 ```
@@ -69,7 +69,7 @@ The following example shows a request.
   "name": "update_driveInclusionRule"
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/v1.0/solutions/backupRestore/oneDriveForBusinessProtectionPolicies/e267a763-ca81-4a98-8c1a-f407143cffe1/driveInclusionRules/c31adc5c-b65d-4a85-8eda-976947a24124
 Content-Type: application/json
 
@@ -94,7 +94,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.driveProtectionRule"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -138,7 +138,7 @@ The following example shows a request.
   "name": "update_mailboxInclusionRule"
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/v1.0/solutions/backupRestore/exchangeProtectionPolicies/e267a763-ca81-4a98-8c1a-f407143cffe1/mailboxInclusionRules/c31adc5c-b65d-4a85-8eda-976947a24124
 Content-Type: application/json
 
@@ -163,7 +163,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.mailboxProtectionRule"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

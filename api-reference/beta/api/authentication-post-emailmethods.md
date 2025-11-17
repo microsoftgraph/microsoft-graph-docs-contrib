@@ -32,7 +32,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 Add an email authentication method to another user's account.
 <!-- {  "blockType": "ignored" } -->
-``` http
+```http
 POST /users/{id | userPrincipalName}/authentication/emailMethods
 ```
 
@@ -68,7 +68,7 @@ If successful, this method returns a `201 Created` response code and a new [emai
   "sampleKeys": ["kim@contoso.com"]
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/users/kim@contoso.com/authentication/emailMethods
 Content-Type: application/json
 
@@ -117,7 +117,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.emailAuthenticationMethod"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 

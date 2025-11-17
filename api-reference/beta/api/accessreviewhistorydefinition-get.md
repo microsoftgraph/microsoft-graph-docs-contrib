@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 
-``` http
+```http
 GET /identityGovernance/accessReviews/historyDefinitions/{definition-id}
 ```
 ## Optional query parameters
@@ -67,7 +67,7 @@ If successful, this method returns a `200 OK` response code and an [accessReview
 }
 -->
 
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/historyDefinitions/b2cb022f-b7e1-40f3-9854-c65a40861c38
 ```
 
@@ -111,7 +111,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/historyDef
 }
 -->
 
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

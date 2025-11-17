@@ -38,7 +38,7 @@ Deactivate a hardware OATH authentication method assigned to you.
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /me/authentication/hardwareOathMethods/{hardwareOathAuthenticationMethodId}/deactivate
 ```
 
@@ -49,7 +49,7 @@ Deactivate a hardware OATH authentication method assigned to another user.
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /users/{usersId}/authentication/hardwareOathMethods/{hardwareOathAuthenticationMethodId}/deactivate
 ```
 
@@ -78,7 +78,7 @@ The following example shows a request.
   "name": "hardwareoathauthenticationmethodthis.deactivate"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/me/authentication/hardwareOathMethods/{hardwareOathAuthenticationMethodId}/deactivate
 ```
 
@@ -120,7 +120,7 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 

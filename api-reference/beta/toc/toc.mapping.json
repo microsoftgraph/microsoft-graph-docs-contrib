@@ -140,16 +140,16 @@
       ]
     },
     {
-      "name": "Agents (preview)",
+      "name": "Agents",
       "overview": "",
       "resources": [],
       "childNodes": [
           {
-            "name": "Agent registry",
+            "name": "Agent identities (preview)",
             "resources": [
-              "agentInstance",
-              "agentCardManifest",
-              "agentCollection"
+              "agentIdentityBlueprint",
+              "agentIdentityBlueprintPrincipal",
+              "agentIdentity"
             ]
           }
       ]
@@ -530,12 +530,13 @@
             "cloudPcOnPremisesConnection",
             "cloudPcOrganizationSettings",
             "cloudPcProvisioningPolicy",
-            "cloudPcReports",
+            "cloudPcReport",
             "cloudPcServicePlan",
             "cloudPcSnapshot",
             "cloudPcSupportedRegion",
             "cloudPcUserSetting",
-            "virtualEndpoint"
+            "virtualEndpoint",
+            "cloudPcReports"
           ],
           "complexTypes": [
             "appScope",
@@ -1307,6 +1308,7 @@
                 "accessPackageCatalog",
                 "accessPackageResourceRole",
                 "accessPackageResource",
+                "customDataProvidedResource",
                 "accessPackageResourceEnvironment",
                 "accessPackageResourceRequest",
                 "accessPackageAssignmentRequestWorkflowExtension",
@@ -1314,7 +1316,8 @@
                 "accessPackageSubject",
                 "connectedOrganization",
                 "entitlementManagementSettings",
-                "customAccessPackageWorkflowExtension"
+                "customAccessPackageWorkflowExtension",
+                "customDataProvidedResourceUploadSession"
               ],
               "complexTypes": [
                 "accessPackageAnswer",
@@ -1379,7 +1382,10 @@
                 "verifiableCredentialType",
                 "verifiableCredentialVerified",
                 "verifiedCredentialClaims",
-                "verifiedCredentialData"
+                "verifiedCredentialData",
+                "customDataProvidedResourceUploadSessionRequest",
+                "accessReviewDataUploadTriggerCallbackData",
+                "customDataProvidedResourceFile"
               ]
             },
             {
@@ -1568,7 +1574,11 @@
             "dataPolicyOperation",
             "oAuth2PermissionGrant",
             "certificateBasedAuthConfiguration",
-            "externalIdentitiesPolicy"
+            "externalIdentitiesPolicy",
+            "webApplicationFirewallProvider",
+            "cloudFlareWebApplicationFirewallProvider",
+            "akamaiWebApplicationFirewallProvider",
+            "webApplicationFirewallVerificationModel"
           ],
           "childNodes": [
             {
@@ -1595,6 +1605,12 @@
                 "onPhoneMethodLoadStartListener",
                 "onTokenIssuanceStartListener",
                 "onUserCreateStartListener"
+              ]
+            },
+            {
+              "name": "Verified ID",
+              "resources": [
+                "verifiedIdProfile"                
               ]
             },
             {
@@ -1643,6 +1659,7 @@
                 "temporaryAccessPassAuthenticationMethodConfiguration",
                 "softwareOathAuthenticationMethodConfiguration",
                 "voiceAuthenticationMethodConfiguration",
+                "verifiableCredentialsAuthenticationMethodConfiguration",
                 "x509CertificateAuthenticationMethodConfiguration",
                 "qrCodePinAuthenticationMethodConfiguration"
               ]
@@ -3086,6 +3103,7 @@
         "businessScenarioGroupTarget",
         "businessScenarioProperties",
         "businessScenarioTaskTargetBase",
+        "contentSensitivityLabelAssignment",
         "identity",
         "identitySet",
         "itemBody",
@@ -3127,8 +3145,10 @@
         "plannerTaskRecurrence",
         "plannerTeamsPublicationInfo",
         "plannerUserIds",
+        "planUsageRight",
         "recurrencePattern",
-        "sensitivityLabelAssignment"
+        "sensitivityLabelAssignment",
+        "usageRightsInfo"
       ],
       "childNodes": [
         {
