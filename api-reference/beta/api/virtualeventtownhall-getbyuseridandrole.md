@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /solutions/virtualEvents/townhalls/getByUserIdAndRole(userId='{userId}', role='{role}')
 ```
 
@@ -72,7 +72,7 @@ The following example shows a request.
   "name": "virtualeventtownhallthis.getbyuseridandrole"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/solutions/virtualEvents/townhalls/getByUserIdAndRole(userId='b7ef013a-c73c-4ec7-8ccb-e56290f45f68', role='organizer')
 ```
 
@@ -116,7 +116,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.virtualEventTownhall)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

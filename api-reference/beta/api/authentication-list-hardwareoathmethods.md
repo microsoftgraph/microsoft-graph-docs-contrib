@@ -38,7 +38,7 @@ Get details of your own hardware OATH methods.
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /me/authentication/hardwareOathMethods
 ```
 
@@ -49,7 +49,7 @@ Get details of another user's hardware OATH methods.
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /users/{usersId}/authentication/hardwareOathMethods
 ```
 
@@ -82,7 +82,7 @@ The following example shows a request to retrieve the hardware tokens for the si
   "name": "list_hardwareoathauthenticationmethod"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/authentication/hardwareOathMethods
 ```
 
@@ -126,7 +126,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.hardwareOathAuthenticationMethod"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

@@ -35,6 +35,10 @@ const cloudPcProvisioningPolicy = {
     devicePreparationProfileId: '59e5d3d2-ec68-4bfe-9693-27975b318990',
     applicationTimeoutInMinutes: 30,
     onFailureDeviceAccessDenied: false
+  },
+  userSettingsPersistenceConfiguration: {
+    userSettingsPersistenceEnabled: false,
+    userSettingsPersistenceStorageSizeCategory: 'fourGB'
   }
 };
 

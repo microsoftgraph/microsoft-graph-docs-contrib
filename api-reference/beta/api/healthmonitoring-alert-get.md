@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /reports/healthMonitoring/alerts/{alertId}
 ```
 
@@ -71,7 +71,7 @@ The following example shows a request.
   "name": "get_alert1"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/reports/healthMonitoring/alerts/{id}
 ```
 
@@ -115,7 +115,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.healthMonitoring.alert"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -168,7 +168,7 @@ The following example shows a request.
   "name": "get_alert2"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/reports/healthMonitoring/alerts/{id}?$select=alertType, state, createdDateTime, signals
 ```
 
@@ -212,7 +212,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.healthMonitoring.alert"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -238,7 +238,7 @@ The following example shows a request.
   "name": "get_alert3"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/reports/healthMonitoring/alerts/{id}?$expand=enrichment/impacts/microsoft.graph.healthmonitoring.directoryobjectimpactsummary/resourceSampling&$select=alertType, createdDateTime, enrichment'
 ```
 
@@ -282,7 +282,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.healthMonitoring.alert"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

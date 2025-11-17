@@ -38,7 +38,7 @@ Retrieve your own QR Code.
 [!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
 
 <!-- { "blockType": "ignored" } -->
-``` http
+```http
 GET /me/authentication/qrCodePinMethod/standardQRCode
 GET /me/authentication/qrCodePinMethod/temporaryQRCode
 ```
@@ -48,7 +48,7 @@ Retrieve another user's QR Code.
 [!INCLUDE [authentication-methods-apis-users-selfservice](../includes/authentication-methods-apis-users-selfservice.md)]
 
 <!-- { "blockType": "ignored" } -->
-``` http
+```http
 GET /users/{id}/authentication/qrCodePinMethod/standardQRCode
 GET /users/{id}/authentication/qrCodePinMethod/temporaryQRCode
 ```
@@ -82,7 +82,7 @@ The following example shows a request.
   "name": "get_qrcode"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/7c4999f7-9c25-4f8e-8b84-766eb28a1b49/authentication/qrCodePinMethod/standardQRCode
 ```
 
@@ -126,7 +126,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.qrCode"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /admin/windows/updates/catalog/entries
 ```
 ## Optional query parameters
@@ -65,7 +65,7 @@ The following example shows a request.
   "name": "list_catalogentry"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/admin/windows/updates/catalog/entries
 ```
 
@@ -109,7 +109,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.windowsUpdates.catalogEntry)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
