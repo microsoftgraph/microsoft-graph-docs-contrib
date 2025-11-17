@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Add an [agentInstance](../resources/agentinstance.md) to an [agentCollection](../resources/agentcollection.md).To add multiple agentInstance in batch, consider using [MS Graph JSON batching](https://learn.microsoft.com/graph/json-batching).
+Add an [agentInstance](../resources/agentinstance.md) to an [agentCollection](../resources/agentcollection.md).To add multiple agentInstance in batch, consider using [JSON batching](/graph/json-batching).
 
 ## Permissions
 
