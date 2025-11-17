@@ -1093,6 +1093,18 @@ Namespace: microsoft.graph.security
 |automated|
 |unknownFutureValue|
 
+### serviceStatus values
+
+|Member|
+|:---|
+|stopped|
+|starting|
+|running|
+|disabled|
+|onboarding|
+|unknown|
+|unknownFutureValue|
+
 <!--
 {
   "type": "#page.annotation",
