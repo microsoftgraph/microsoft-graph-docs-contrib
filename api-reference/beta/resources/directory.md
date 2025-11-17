@@ -22,6 +22,7 @@ Currently, deleted items functionality is supported for the following resources:
 - [agentIdentityBlueprint](../resources/agentidentityblueprint.md)
 - [agentIdentity](../resources/agentidentity.md)
 - [agentIdentityBlueprintPrincipal](../resources/agentidentityblueprintprincipal.md)
+- [agentUser](../resources/agentuser.md)
 - [application](application.md)
 - [certificateAuthorityDetail](../resources/certificateauthoritydetail.md)
 - [certificateBasedAuthPki](../resources/certificatebasedauthpki.md)
