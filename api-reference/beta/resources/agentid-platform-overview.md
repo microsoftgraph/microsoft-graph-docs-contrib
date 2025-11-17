@@ -69,15 +69,13 @@ Microsoft Entra [signIn logs](../resources/signin.md) capture activities perform
 
 ## Permissions for managing agent identities
 
-Microsoft Graph provides granular permissions to manage agent identities and their associated components. However, some of these permissions aren't currently available through the API Permissions picker on the Microsoft Entra admin center. Instead, you can programmatically assign these permissions using Microsoft Graph API or PowerShell. See the following articles for guidance:
-- [Grant or revoke API permissions using Microsoft Graph REST API](/graph/permissions-grant-via-msgraph)
-- [Grant or revoke API permissions using Microsoft Graph PowerShell](/powershell/microsoftgraph/how-to-grant-revoke-api-permissions)
-- [Grant and revoke API permissions using Microsoft Entra PowerShell](/powershell/entra-powershell/how-to-grant-revoke-api-permissions)
+Microsoft Graph provides the following granular permissions to manage agent identities and their associated components.
 
-The following permissions are available:
-
-> [!TIP]
-> To grant delegated permissions, you need the permission (**scope**) name, while for app-only permissions, you need the ID.
+> [!IMPORTANT]
+> Some of these permissions aren't currently available through the **API Permissions** picker on the Microsoft Entra admin center. Instead, you can programmatically assign these permissions using Microsoft Graph API or PowerShell. To grant delegated permissions, you need the permission (**scope**) name, while for app-only permissions, you need the ID. See the following articles for guidance:
+> - [Grant or revoke API permissions using Microsoft Graph REST API](/graph/permissions-grant-via-msgraph)
+> - [Grant or revoke API permissions using Microsoft Graph PowerShell](/powershell/microsoftgraph/how-to-grant-revoke-api-permissions)
+> - [Grant and revoke API permissions using Microsoft Entra PowerShell](/powershell/entra-powershell/how-to-grant-revoke-api-permissions)
 
 | Permission name                                   | Delegated ID                         | App-only ID                          |
 |---------------------------------------------------|--------------------------------------|--------------------------------------|
@@ -143,8 +141,6 @@ However, because of the autonomous nature of agents and the potential risks they
 | [Application.ReadWrite.All](/graph/permissions-reference#applicationreadwriteall)                                   | ➖        | ❌           |
 | [Application.ReadWrite.OwnedBy](/graph/permissions-reference#applicationreadwriteownedby)                           | ➖        | ❌           |
 | [AppRoleAssignment.ReadWrite.All](/graph/permissions-reference#approleassignmentreadwriteall)                       | ➖        | ❌           |
-| AuthorizationSystem.ReadWrite.All                                                                                   | ➖        | ❌           |
-| AuthorizationSystemOnboarding.ReadWrite.All                                                                         | ➖        | ❌           |
 | [BitlockerKey.Read.All](/graph/permissions-reference#bitlockerkeyreadall)                                           | ➖        | ❌           |
 | [Calendars.Read](/graph/permissions-reference#calendarsread)                                                        | ➖        | ❌           |
 | [ChannelMessage.Read.All](/graph/permissions-reference#channelmessagereadall)                                       | ➖        | ❌           |
@@ -191,9 +187,7 @@ However, because of the autonomous nature of agents and the potential risks they
 | [User.DeleteRestore.All](/graph/permissions-reference#userdeleterestoreall)                                         | ❌        | ❌           |
 | [User.EnableDisableAccount.All](/graph/permissions-reference#userenabledisableaccountall)                           | ❌        | ❌           |
 | [User.Invite.All](/graph/permissions-reference#userinviteall)                                                       | ➖        | ❌           |
-| [User.ManageCreds.All](/graph/permissions-reference#usermanagecredsall)                                             | ❌        | ➖           |
 | [User.ReadWrite.All](/graph/permissions-reference#userreadwriteall)                                                 | ❌        | ❌           |
-| [User.Write.Restricted](/graph/permissions-reference#userwriterestricted)                                           | ❌        | ➖           |
 | [UserAuthenticationMethod.Read.All](/graph/permissions-reference#userauthenticationmethodreadall)                   | ❌        | ➖           |
 | [UserAuthenticationMethod.ReadWrite.All](/graph/permissions-reference#userauthenticationmethodreadwriteall)         | ❌        | ❌           |
 
