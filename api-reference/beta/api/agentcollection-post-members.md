@@ -66,7 +66,7 @@ If successful, this method returns a `204 No Content` response code.
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "create_agentinstance_from_"
+  "name": "add_agentinstance_to_agentcollection"
 }
 -->
 ``` http

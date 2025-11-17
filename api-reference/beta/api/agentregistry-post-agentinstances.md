@@ -82,7 +82,7 @@ If successful, this method returns a `201 Created` response code and an [agentIn
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "create_agentinstance_from_"
+  "name": "create_agentinstance_new_agentcardmanifest"
 }
 -->
 ``` http
@@ -264,7 +264,7 @@ Content-Type: application/json
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "create_agentinstance_from_"
+  "name": "create_agentinstance_reference_existing_agentcardmanifest"
 }
 -->
 ``` http
@@ -384,7 +384,7 @@ Content-Type: application/json
 The following example shows a request. To add an agentCardManifest later, use the [Update agentInstance API](../api/agentinstance-update.md).
 <!-- {
   "blockType": "request",
-  "name": "create_agentinstance_from_"
+  "name": "create_agentinstance_without_agentcardmanifest"
 }
 -->
 ``` http

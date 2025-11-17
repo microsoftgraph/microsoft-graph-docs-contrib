@@ -85,7 +85,7 @@ The following example shows a request. The request also creates the agentCardMan
 
 <!-- {
   "blockType": "request",
-  "name": "update_agentinstance"
+  "name": "update_agentinstance_add_agentcardmanifest"
 }
 -->
 ``` http
@@ -180,7 +180,7 @@ HTTP/1.1 204 No Content
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "update_agentinstance"
+  "name": "update_agentinstance_add_agentcardmanifest_reference"
 }
 -->
 ``` http
@@ -212,7 +212,7 @@ HTTP/1.1 204 No Content
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "update_agentinstance"
+  "name": "update_agentinstance_displayname"
 }
 -->
 ``` http
