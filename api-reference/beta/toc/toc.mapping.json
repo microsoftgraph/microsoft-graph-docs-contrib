@@ -145,7 +145,7 @@
       "resources": [],
       "childNodes": [
           {
-            "name": "Agent identities (Preview)",
+            "name": "Agent identities (preview)",
             "resources": [
               "agentIdentityBlueprint",
               "agentIdentityBlueprintPrincipal",
