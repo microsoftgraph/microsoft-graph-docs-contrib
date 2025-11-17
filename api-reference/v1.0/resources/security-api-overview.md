@@ -114,6 +114,9 @@ The Defender for Identity sensors management APIs allows you to:
 - Identify sensors that are ready to be activated.
 - Define whether the sensors in your infrastructure are to be activated automatically or manually.
 
+### identityAccounts
+The [identityAccounts resource and related APIs](../resources/security-identityaccounts.md) allows you to retrieve details of users that are flagged by Microsoft Defender for Identity alerts, and apply actions such as disabling accounts and resetting the user password for the compromised user.
+
 ## Incidents
 
 An [incident](security-incident.md) is a collection of correlated  [alerts](security-alert.md) and associated data that make up the story of an attack. Incident management is part of Microsoft 365 Defender and is available in the Microsoft 365 Defender portal (https://security.microsoft.com/). 

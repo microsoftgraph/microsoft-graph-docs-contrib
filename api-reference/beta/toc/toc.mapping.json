@@ -140,6 +140,29 @@
       ]
     },
     {
+      "name": "Agents (preview)",
+      "overview": "",
+      "resources": [],
+      "childNodes": [
+          {
+            "name": "Agent identities",
+            "resources": [
+              "agentIdentityBlueprint",
+              "agentIdentityBlueprintPrincipal",
+              "agentIdentity"
+            ]
+          },
+          {
+            "name": "Agent registry",
+            "resources": [
+              "agentInstance",
+              "agentCardManifest",
+              "agentCollection"
+            ]
+          }
+      ]
+    },
+    {
       "name": "Backup storage",
       "shouldSort": true,
       "keywords": [
