@@ -55,7 +55,7 @@ Take note of the following items:
   "blockType": "request",
   "name": "delta-query-users-initial-request"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users/delta?$select=displayName,givenName,surname
 ```
 
@@ -150,7 +150,7 @@ The second request specifies the `skipToken` returned from the previous response
   "blockType": "request",
   "name": "delta-query-users-nextlink-request"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users/delta?$skiptoken=oEBwdSP6uehIAxQOWq_3Ksh_TLol6KIm3stvdc6hGhZRi1hQ7Spe__dpvm3U4zReE4CYXC2zOtaKdi7KHlUtC2CbRiBIUwOxPKLa
 ```
 
@@ -227,7 +227,7 @@ The third request uses the latest `skipToken` returned from the last sync reques
   "blockType": "request",
   "name": "delta-query-users-nextlink-request2"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users/delta?$skiptoken=pqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjtQ5LOhVoS7qQG_wdVCHHlbQpga7
 ```
 
@@ -304,7 +304,7 @@ Using the `deltatoken` from the [last response](#final-nextlink-response), you g
   "blockType": "request",
   "name": "delta-query-users-deltalink-request"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users/delta?$deltatoken=oEcOySpF_hWYmTIUZBOIfPzcwisr_rPe8o9M54L45qEXQGmvQC6T2dbL-9O7nSU-njKhFiGlAZqewNAThmCVnNxqPu5gOBegrm1CaVZ-ZtFZ2tPOAO98OD9y0ao460
 ```
 

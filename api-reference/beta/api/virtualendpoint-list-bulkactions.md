@@ -58,7 +58,7 @@ The following example shows a request.
   "name": "list_cloudpcbulkaction"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/bulkActions
 ```
 

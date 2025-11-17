@@ -63,7 +63,7 @@ The following example shows a request.
   "name": "get_superawsresourcefinding"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/c3VwZXJSZXNvdXJjZUZpbmRpbmc0/microsoft.graph.superAwsResourceFinding
 ```
 

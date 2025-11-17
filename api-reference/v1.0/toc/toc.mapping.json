@@ -1004,7 +1004,11 @@
             "appRoleAssignment",
             "dataPolicyOperation",
             "oAuth2PermissionGrant",
-            "certificateBasedAuthConfiguration"
+            "certificateBasedAuthConfiguration",
+            "webApplicationFirewallProvider",
+            "cloudFlareWebApplicationFirewallProvider",
+            "akamaiWebApplicationFirewallProvider",
+            "webApplicationFirewallVerificationModel"
           ],
           "childNodes": [
             {

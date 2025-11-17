@@ -60,7 +60,7 @@ The following example shows a request.
   "name": "serviceapps_list"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/solutions/backupRestore/serviceApps
 ```
 

@@ -67,7 +67,7 @@ The following example shows a request.
   "name": "reportsthis.entitiessummaries"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/networkAccess/reports/entitiesSummaries(startDateTime=2023-01-01T00:00:00Z,endDateTime=2023-01-31T00:00:00Z) 
 ```
 

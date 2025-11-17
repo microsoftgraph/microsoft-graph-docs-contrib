@@ -73,7 +73,7 @@ The following example shows a request.
   "name": "list_alert1"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/reports/healthMonitoring/alerts
 ```
 
@@ -174,7 +174,7 @@ The following example shows a request.
   "name": "list_alert2"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/reports/healthMonitoring/alerts?$filter=state eq microsoft.graph.healthmonitoring.alertState'active'&$select=id, alertType
 ```
 
@@ -248,7 +248,7 @@ The following example shows a request.
   "name": "list_alert3"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/reports/healthMonitoring/alerts?$filter=createdDateTime gt 2024-06-10T11:23:44Z&$select=id, alertType, createdDateTime, state
 ```
 
@@ -326,7 +326,7 @@ The following example shows a request.
   "name": "list_alert4"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/reports/healthMonitoring/alerts?$expand=enrichment/impacts/microsoft.graph.healthmonitoring.directoryobjectimpactsummary/resourceSampling&$select=alertType, createdDateTime, enrichment'
 ```
 

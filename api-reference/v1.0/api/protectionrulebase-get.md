@@ -69,7 +69,7 @@ The following example shows a request.
 }
 -->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/solutions/backupRestore/sharePointProtectionPolicies/71633878-8321-4950-bfaf-ed285bdd1461/siteInclusionRules/61633878-8321-4950-bfaf-ed285bdd1461
 ```
 
@@ -159,7 +159,7 @@ The following example shows a request.
 }
 -->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/solutions/backupRestore/oneDriveForBusinessProtectionPolicies/71633878-8321-4950-bfaf-ed285bdd1461/driveInclusionRules/61633878-8321-4950-bfaf-ed285bdd1461
 ```
 
@@ -249,7 +249,7 @@ The following example shows a request.
   "name": "exchangeprotectionpolicy_get_mailboxinclusionrule"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/solutions/backupRestore/exchangeProtectionPolicies/71633878-8321-4950-bfaf-ed285bdd1461/mailboxInclusionRules/61633878-8321-4950-bfaf-ed285bdd1461
 ```
 
