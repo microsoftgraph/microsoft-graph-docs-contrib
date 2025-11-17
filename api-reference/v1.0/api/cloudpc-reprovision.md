@@ -12,7 +12,7 @@ ms.date: 11/17/2025
 
 Namespace: microsoft.graph
 
-Reprovision a specific Cloud PC.
+Reprovision a specific [Cloud PC](../resources/cloudpc.md).
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
