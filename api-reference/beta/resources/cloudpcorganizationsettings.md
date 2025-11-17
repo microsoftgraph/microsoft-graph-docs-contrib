@@ -36,17 +36,17 @@ Represents the Cloud PC organization settings for a tenant. A tenant has only on
 
 |Member|Description|
 |:---|:---|
-|windows10|Default. Indicates the Cloud PC is associated Windows 10 operating system.|
-|windows11|Indicates the Cloud PC is associated Windows 11 operating system.|
-|unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
+|windows10|The Windows 10 operating system.|
+|windows11|The Windows 11 operating system.|
+|unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
 
 ### cloudPcUserAccountType values
 
 |Member|Description|
 |:---|:---|
-|standardUser|Default. Indicates a user without local administrator permissions on the Cloud PC. This type of account will have permission to install content from the Microsoft Store app. This account type is not allowed to modify Windows settings that requires local administrator privileges.|
-|administrator|Indicates a user with full local administrator permissions on the Cloud PC. This type of account will have permission to install any software and modify any file or setting on the Cloud PC.|
-|unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
+|standardUser|A user without local administrative permissions on the Cloud PC. Standard users can only install content from the Microsoft Store app but they can't modify Windows settings that require local administrative privileges.|
+|administrator|A user with full local administrative permissions on the Cloud PC. Administrators can install any software and modify any file or setting on the Cloud PC.|
+|unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
 
 ## Relationships
 None.
