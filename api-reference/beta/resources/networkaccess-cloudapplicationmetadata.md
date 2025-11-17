@@ -20,7 +20,7 @@ Represents data related to a SaaS application in Global Secure Access [network t
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|category|microsoft.graph.networkaccess.cloudApplicationCategory|The category of the SaaS application. The possible values are: `hostingServices`, `itServices`, `accountingAndFinance`, `businessManagement`, `productivity`, `eCommerce`, `education`, `marketing`, `humanResourceManagement`, `health`, `security`, `generativeAi`, `newsAndEntertainment`, `operationsManagement`, `contentManagement`, `developmentTools`, `collaboration`, `crm`, `communications`, `dataAnalytics`, `advertising`, `supplyChainAndLogistics`, `projectManagement`, `transportationAndTravel`, `cloudComputingPlatform`, `businessIntelligence`, `cloudStorage`, `propertyManagement`, `contentSharing`, `customerSupport`, `sales`, `productDesign`, `socialNetwork`, `onlineMeetings`, `webmail`, `internetOfThings`, `forums`, `webAnalytics`, `websiteMonitoring`, `vendorManagementSystem`, `personalInstantMessaging`, `codeHosting`, `unknownFutureValue`.|
+|categories|String collection| The list of categories for the application. Supported values are: `Collaboration`, `Business Management`, `Consumer`, `Content management`, `CRM`, `Data services`, `Developer services`, `E-commerce`, `Education`, `ERP`, `Finance`, `Health`, `Human resources`, `IT infrastructure`, `Mail`, `Management`, `Marketing`, `Media`, `Productivity`, `Project management`, `Telecommunications`, `Tools`, `Travel`, and `Web design & hosting`. |
 |cloudApplicationCatalogId|String|The ID of the application in the SaaS application catalog.|
 |complianceScore|Int32|The compliance score of the application.|
 |generalScore|Int32|The general score of the application.|
@@ -45,7 +45,7 @@ The following JSON representation shows the resource type.
   "@odata.type": "#microsoft.graph.networkaccess.cloudApplicationMetadata",
   "cloudApplicationCatalogId": "String",
   "name": "String",
-  "category": "String",
+  "categories": [ "String" ],
   "generalScore": "Integer",
   "riskScore": "Integer",
   "complianceScore": "Integer",
