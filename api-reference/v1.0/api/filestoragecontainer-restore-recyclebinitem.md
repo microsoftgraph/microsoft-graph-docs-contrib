@@ -58,7 +58,7 @@ The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "restore_filestoragecontainer_recyclebinitem",
+  "name": "restore_filestoragecontainer_recyclebinitem1",
   "@odata.type": "Collection(microsoft.graph.recycleBinItem)"
 }
 -->
@@ -106,4 +106,3 @@ Content-Type: application/json
   ]
 }
 ```
-

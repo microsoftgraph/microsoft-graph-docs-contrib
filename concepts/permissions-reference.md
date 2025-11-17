@@ -7,7 +7,7 @@ ms.localizationpriority: high
 ms.topic: reference
 ms.subservice: entra-applications
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.date: 10/27/2025
+ms.date: 11/03/2025
 #Customer intent: As a developer, I want to learn more about the permissions available in Microsoft Graph, so that I understand the impact of granting specific permissions to my app.
 ---
 
@@ -1700,6 +1700,17 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 ---
 
+### CopilotConversation.Delete
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | - | ed510a02-ac32-45f9-93e6-04864f7f7e47 |
+| DisplayText | - | Delete Microsoft 365 Copilot conversations |
+| Description | - | Allows the app to delete Microsoft 365 Copilot conversations on behalf of the signed-in user. |
+| AdminConsentRequired | - | No |
+
+---
+
 ### CopilotSettings-LimitedMode.Read
 
 | Category | Application | Delegated |
@@ -3377,6 +3388,28 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Identifier | db06fb33-1953-4b7b-a2ac-f1e2c854f7ae | 9e4862a5-b68f-479e-848a-4e07e25c9916 |
 | DisplayText | Read and write all risk detection information | Read and write risk event information |
 | Description | Allows the app to read and update identity risk detection information for your organization without a signed-in user. Update operations include confirming risk event detections.  | Allows the app to read and update identity risk event information for all users in your organization on behalf of the signed-in user. Update operations include confirming risk event detections.  |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### IdentityRiskyAgent.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 4aadfb66-d49a-414a-a883-d8c240b6fa33 | 3215c57f-3faa-4295-95c2-6f14a5bc6124 |
+| DisplayText | Read all risky agents information | Read risky agents information |
+| Description | Allows the app to read the risky agents information in your organization without a signed-in user. | Allows the app to read risky agents information in your organization, on behalf of the signed-in user. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### IdentityRiskyAgent.ReadWrite.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | dca4e4fd-a7cf-4e6f-86d1-d1ec094d766e | d343bdeb-db6a-4e06-97da-9dafc2d61c60 |
+| DisplayText | Read and write risky agents information | Read and write risky agents information |
+| Description | Allows the app to read and update risky agents information in your organization without a signed-in user. | Allows the app to read and update identity risky agents information for all agents in your organization on behalf of the signed-in user. Update operations include dismissing risky agents. |
 | AdminConsentRequired | Yes | Yes |
 
 ---

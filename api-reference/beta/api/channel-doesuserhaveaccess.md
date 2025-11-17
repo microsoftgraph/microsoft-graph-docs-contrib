@@ -1,6 +1,6 @@
 ---
 title: "channel: doesUserHaveAccess"
-description: "Determine whether a user has access to a shared channel."
+description: "Determine whether a user has access to a channel."
 author: "devjha-ms"
 ms.localizationpriority: medium
 ms.subservice: "teams"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Determine whether a [user](../resources/useridentity.md) has access to a shared [channel](../resources/channel.md).
+Determine whether a [user](../resources/useridentity.md) has access to a [channel](../resources/channel.md).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -60,7 +60,7 @@ If successful, this function returns a `200 OK` response code and a Boolean in t
 
 ### Example 1: Check access for an internal user
 
-The following example shows a request that checks whether an internal user has access to a shared channel.
+The following example shows a request that checks whether an internal user has access to a channel.
 
 #### Request
 
@@ -114,9 +114,9 @@ Content-Type: application/json
 ```
 
 
-### Example 2: Check access for a guest
+### Example 2: Check access for an external user
 
-The following example shows a request that uses the **tenantId** property to check whether a guest has access to a shared channel.
+The following example shows a request that uses the **tenantId** property to check whether an external user has access to a shared channel.
 
 #### Request
 
@@ -172,7 +172,7 @@ Content-Type: application/json
 
 ### Example 3: Check user access for a user using the user principal name
 
-The following example shows a request that uses the **userPrincipalName** property to check whether an internal user has access to a shared channel.
+The following example shows a request that uses the **userPrincipalName** property to check whether an internal user has access to a channel.
 
 #### Request
 

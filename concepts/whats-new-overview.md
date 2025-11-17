@@ -18,6 +18,12 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 > [!IMPORTANT]
 > Features in _preview_ status are subject to change without notice, and might not be promoted to generally available (GA) status. Don't use preview features in production apps.
 
+## November 2025
+
+### Backup storage
+
+- [driveItem: restore](/graph/api/driveitem-restore) was expanded to enable restoring a **driveItem** deleted from a **fileStorageContainer** without mapping it to a **recycleBinItem**. This complements existing functionality in [recycleBinItem: restore](/graph/api/filestoragecontainer-restore-recyclebinitem) which continues to work as expected.
+
 ## October 2025: New and generally available
 
 ### Backup storage
@@ -32,20 +38,12 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ### Education
 
+- [Add](/graph/api/educationassignment-put-gradingscheme) an existing [educationGradingScheme](/graph/api/resources/educationgradingscheme) to an existing [educationAssignment](/graph/api/resources/educationassignment).
+- [Add](/graph/api/educationassignmentsettings-put-defaultgradingscheme) the default [educationGradingScheme](/graph/api/resources/educationgradingscheme) to an [educationAssignmentSettings](/graph/api/resources/educationassignmentsettings) object.
+- Use the **languageTag** property on [educationAssignment](/graph/api/resources/educationassignment) to specify the language in which UI notifications for an assignment are displayed.
+- Create and manage a [custom scheme for grading](/graph/api/resources/educationgradingscheme).
 - [List the dependent education assignment resources](/graph/api/educationassignmentresource-list-dependentresources) for a given education assignment resource.
 - [List the dependent education submission resources](/graph/api/educationsubmissionresource-list-dependentresources) for a given education submission resource.
-
-### Employee experience | Employee engagement
-
-Viva Engage now supports new APIs for managing roles, allowing you to list, assign, and remove roles for users. For more information, see [Use the Microsoft Graph API to work with Viva Engage](/graph/api/resources/engagement-api-overview#role-management).
-
-### Files
-
-Added the following new endpoints as supported request URLs for the [driveItem: createUploadSession](/graph/api/driveitem-createuploadsession) API:
-- `POST /drives/{driveId}/items/{parentItemId}:/{fileName}:/createUploadSession`
-- `POST /groups/{groupId}/drive/items/{parentItemId}:/{fileName}:/createUploadSession` 
-- `POST /sites/{siteId}/drive/items/{parentItemId}:/{fileName}:/createUploadSession`
-- `POST /users/{userId}/drive/items/{parentItemId}:/{fileName}:/createUploadSession`
 
 ### Identity and access | Directory management
 
@@ -110,9 +108,17 @@ Microsoft Graph now supports new delegated and application permissions scoped to
 | UserAuthMethod-WindowsHello.ReadWrite | Windows Hello for Business | ![Available](./images/yesandnosymbols/greencheck.svg) | ![Not available](./images/yesandnosymbols/no.svg) |
 | UserAuthMethod-WindowsHello.ReadWrite.All | Windows Hello for Business | ![Available](./images/yesandnosymbols/greencheck.svg) | ![Available](./images/yesandnosymbols/greencheck.svg) |
 
+### Security | Alerts and incidents
+
+Use the **investigationState** property on [alert](/graph/api/resources/security-alert) to get the current status of an investigation.
+
 ### Teamwork and communications | Calls and online meetings
 
 Use the [callEvent](/graph/api/resources/callevent) and [emergencyCallEvent](/graph/api/resources/emergencycallevent) resources to provide detailed information about both standard and emergency call events. For more information, see [Change notification for active meeting call events](/graph/changenotifications-for-onlinemeeting) and [change notification for emergency call events](/graph/changenotifications-for-emergencycalls).
+
+### Teamwork and communications | Messaging
+
+Use the **originalSourceMembershipUrl** annotation with the [List allMembers](/graph/api/channel-list-allmembers) API to identify the source of a member's membership and distinguish between direct and indirect members.
 
 ## October 2025: New in preview only
 
@@ -138,11 +144,16 @@ Use the [callEvent](/graph/api/resources/callevent) and [emergencyCallEvent](/gr
 
 ### Files
 
+Use the **itemDefaultSensitivityLabelId** property on [fileStorageContainerSettings](/graph/api/resources/filestoragecontainersettings?view=graph-rest-beta&preserve-view=true) to get or set the ID of the default sensitivity label for items in the container.
 Added the following new endpoints as supported request URLs for the [driveItem: createUploadSession](/graph/api/driveitem-createuploadsession?view=graph-rest-beta&preserve-view=true) API:
 - `POST /drives/{driveId}/items/{parentItemId}:/{fileName}:/createUploadSession`
 - `POST /groups/{groupId}/drive/items/{parentItemId}:/{fileName}:/createUploadSession` 
 - `POST /sites/{siteId}/drive/items/{parentItemId}:/{fileName}:/createUploadSession`
 - `POST /users/{userId}/drive/items/{parentItemId}:/{fileName}:/createUploadSession`
+
+### Security | Alerts and incidents
+
+Use the **investigationState** property on [alert](/graph/api/resources/security-alert?view=graph-rest-beta&preserve-view=true) to get the current status of an investigation.
 
 ### Sites and lists
 
