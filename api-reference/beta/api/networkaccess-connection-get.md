@@ -65,7 +65,7 @@ If successful, this method returns a `200 OK` response code and a [microsoft.gra
   "name": "get_connection"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/networkAccess/logs/connections/6e3f9793-04a3-9473-f647-29adc069debb
 ```
 

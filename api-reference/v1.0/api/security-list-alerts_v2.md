@@ -76,7 +76,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
   "name": "security_list_alerts"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/security/alerts_v2
 ```
 

@@ -65,7 +65,7 @@ The following example shows a request.
   "name": "list_privilegedaccessgroupeligibilityschedule_beta_e1"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/privilegedAccess/group/eligibilitySchedules?$filter=groupId eq '2b5ed229-4072-478d-9504-a047ebd4b07d' and principalId eq '3cce9d87-3986-4f19-8335-7ed075408ca2'
 ```
 
@@ -149,7 +149,7 @@ The following example shows a request.
   "name": "list_privilegedaccessgroupeligibilityschedule_beta_e2"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/privilegedAccess/group/eligibilitySchedules?$filter=groupId eq '2b5ed229-4072-478d-9504-a047ebd4b07d' and principalId eq '3cce9d87-3986-4f19-8335-7ed075408ca2'&$select=accessId,principalId,groupId
 ```
 

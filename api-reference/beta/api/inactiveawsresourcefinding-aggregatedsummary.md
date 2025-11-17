@@ -64,7 +64,7 @@ The following example shows a request.
   "name": "inactiveawsresourcefindingthis.aggregatedsummary"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/microsoft.graph.inactiveAwsResourceFinding/aggregatedSummary(authorizationSystemIds=['377596131774'])
 ```
 

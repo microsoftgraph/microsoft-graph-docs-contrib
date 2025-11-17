@@ -5580,11 +5580,51 @@ Possible values for user account types (group membership), per Windows definitio
 |d1|
 |unknownFutureValue|
 
+### webApplicationFirewallDnsRecordType values 
+
+|Member|
+|:---|
+|cname|
+|unknownFutureValue|
+
+### webApplicationFirewallProviderType values 
+
+|Member|
+|:---|
+|akamai|
+|cloudflare|
+|unknownFutureValue|
+
+### webApplicationFirewallVerificationStatus values 
+
+|Member|
+|:---|
+|success|
+|warning|
+|failure|
+|unknownFutureValue|
+
 ### claimBindingSource values 
 
 |Member|
 |:---|
 |directory|
+|unknownFutureValue|
+
+### customDataProvidedResourceUploadStatus values 
+
+|Member|
+|:---|
+|active|
+|complete|
+|expired|
+|unknownFutureValue|
+
+### principalType values 
+
+|Member|
+|:---|
+|entraIdUser|
 |unknownFutureValue|
 
 ### verifiedIdProfileState values 
@@ -5603,6 +5643,7 @@ Possible values for user account types (group membership), per Windows definitio
 |onboarding|
 |all|
 |unknownFutureValue|
+
 
 ### siteTemplateType values 
 

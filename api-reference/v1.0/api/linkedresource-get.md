@@ -56,7 +56,7 @@ The following example shows a request.
   "name": "get_linkedresource_1"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/todo/lists/dfsdc-f9dfdfs-dcsda9/tasks/e2dc-f9cce2-dce29/linkedResources/f9cddce2-dce2-f9cd-e2dc-cdf9e2dccdf9
 ```
 

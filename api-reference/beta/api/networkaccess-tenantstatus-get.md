@@ -60,7 +60,7 @@ The following example shows a request.
   "name": "get_tenantstatus"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/networkAccess/tenantStatus
 ```
 

@@ -59,7 +59,7 @@ The following example shows a request.
   "name": "list_gcpidentity"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/external/authorizationSystems/{id}/microsoft.graph.gcpAuthorizationSystem/associatedIdentities/all
 ```
 

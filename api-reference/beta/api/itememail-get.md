@@ -59,7 +59,7 @@ If successful, this method returns a `200 OK` response code and an [itemEmail](.
   "name": "get_itememail"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/{userId}/profile/emails/{id}
 ```
 

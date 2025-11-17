@@ -65,7 +65,7 @@ The following example shows a request.
   "name": "reportsthis.crosstenantaccessreport"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/networkaccess/reports/crossTenantAccessReport(startDateTime=2023-08-20T12:12:59.076Z, endDateTime=2023-08-21T12:12:59.076Z) 
 ```
 

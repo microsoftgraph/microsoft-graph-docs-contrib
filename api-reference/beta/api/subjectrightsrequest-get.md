@@ -62,7 +62,7 @@ If successful, this method returns a `200 OK` response code and a [subjectRights
   "name": "get_subjectRightsRequest"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/privacy/subjectRightsRequests/{subjectRightsRequestId}
 ```
 

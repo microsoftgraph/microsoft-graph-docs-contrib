@@ -62,7 +62,7 @@ The following example shows a request.
   "name": "list_windowssettinginstance"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/settings/windows/{windowsSettingId}/instances
 ```
 

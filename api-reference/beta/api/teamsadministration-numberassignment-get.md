@@ -65,7 +65,7 @@ The following request shows how to get assignment details for a single telephone
   "name": "get_numberAssignments",
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/admin/teams/telephoneNumberManagement/numberAssignments/YmMyNjMyZTMtNzUwYy00N2Q3LWFlYWUtOWZlZTAzNWJjMGM3fCsxMjAyMzQ1Njc4OQ
 ```
 

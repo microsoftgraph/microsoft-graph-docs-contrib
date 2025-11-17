@@ -64,7 +64,7 @@ The following example shows a request.
   "name": "inactiveazureserviceprincipalfindingthis.aggregatedsummary"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/azure/findings/microsoft.graph.superAzureServicePrincipalFinding/microsoft.graph.aggregatedSummary(authorizationSystemIds=['00f7dcae-97f9-492b-af2e-36eb35b613af'])
 ```
 

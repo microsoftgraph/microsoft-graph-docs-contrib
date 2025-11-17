@@ -56,7 +56,7 @@ The following example shows a request.
   "name": "list_deletedteam"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/teamwork/deletedTeams
 ```
 

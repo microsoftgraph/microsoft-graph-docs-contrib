@@ -59,7 +59,7 @@ If successful, this method returns a `200 OK` response code and a [riskyServiceP
 }
 -->
 
- ```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/identityProtection/riskyServicePrincipals/9089a539-a539-9089-39a5-899039a58990
 ```
 
