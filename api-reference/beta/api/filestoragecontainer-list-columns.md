@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 
-``` http
+```http
 GET /storage/fileStorage/containers/{containerId}/columns
 ```
 
@@ -64,7 +64,7 @@ The following example shows a request.
 }
 -->
 
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/columns
 ```
 
@@ -106,7 +106,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.columnDefinition)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
