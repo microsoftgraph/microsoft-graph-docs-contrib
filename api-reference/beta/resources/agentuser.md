@@ -163,6 +163,7 @@ The following JSON representation shows the resource type.
     "scopedRoleMemberOf",
     "ownedDevices",
     "registeredDevices"
+  ]
 }
 -->
 ``` json
