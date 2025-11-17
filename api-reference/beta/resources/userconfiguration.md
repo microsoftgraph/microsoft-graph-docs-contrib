@@ -30,10 +30,10 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|binaryData|Binary|Arbitrary binary data.|
+|binaryData|Edm.Binary|Arbitrary binary data.|
 |id|String|The unique identifier for the **userConfiguration** object. Inherited from [entity](../resources/entity.md).|
 |structuredData|[structuredDataEntry](../resources/structureddataentry.md) collection|Key-value pairs of supported data types.|
-|xmlData|Binary|Binary data for storing serialized XML.|
+|xmlData|Edm.Binary|Binary data for storing serialized XML.|
 
 ## Relationships
 None.
@@ -51,9 +51,9 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.userConfiguration",
-  "binaryData": "Binary",
-  "id": "String (identifier)",
+  "binaryData": "string (binary)",
+  "id": "string (identifier)",
   "structuredData": [{"@odata.type": "microsoft.graph.structuredDataEntry"}],
-  "xmlData": "Binary"
+  "xmlData": "string (binary)"
 }
 ```
