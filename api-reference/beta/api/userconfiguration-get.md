@@ -63,7 +63,8 @@ If successful, this method returns a `200 OK` response code and a [userConfigura
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "get_userconfiguration"
+  "name": "get_userconfiguration",
+  "sampleKeys": ["inbox", "MyApp"]
 }
 -->
 ``` http

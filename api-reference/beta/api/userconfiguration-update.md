@@ -67,7 +67,8 @@ The following example shows a request.
 >**Note:** The structuredData will be updated as a whole.
 <!-- {
   "blockType": "request",
-  "name": "update_userconfiguration"
+  "name": "update_userconfiguration",
+  "sampleKeys": ["inbox", "MyApp"]
 }
 -->
 ``` http

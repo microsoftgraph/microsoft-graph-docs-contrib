@@ -69,7 +69,8 @@ If successful, this method returns a `201 Created` response code and a [userConf
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "create_userconfiguration_from_"
+  "name": "create_userconfiguration_from_",
+  "sampleKeys": ["inbox"]
 }
 -->
 ``` http
