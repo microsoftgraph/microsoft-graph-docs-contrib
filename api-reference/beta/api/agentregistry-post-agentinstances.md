@@ -381,7 +381,7 @@ Content-Type: application/json
 
 #### Request
 
-The following example shows a request. To add an agentCardManifest later, use the [Update agentInstance API](/beta/api/agentinstance-update.md).
+The following example shows a request. To add an agentCardManifest later, use the [Update agentInstance API](../api/agentinstance-update.md).
 <!-- {
   "blockType": "request",
   "name": "create_agentinstance_from_"
