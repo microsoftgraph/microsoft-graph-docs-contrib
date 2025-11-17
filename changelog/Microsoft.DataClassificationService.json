@@ -1,6 +1,24 @@
 ﻿{
   "changelog": [
     {
+      "ChangeList": [
+        {
+          "Id": "1bcf0683-8da5-49e2-ad7b-939947ea200d",
+          "ApiChange": "Property",
+          "ChangedApiName": "hasProtection",
+          "ChangeType": "Addition",
+          "Description": "Added the **hasProtection** property to the [sensitivityLabel](https://learn.microsoft.com/en-us/graph/api/resources/sensitivityLabel?view=graph-rest-beta) resource.",
+          "Target": "sensitivityLabel"
+        }
+      ],
+      "Id": "1bcf0683-8da5-49e2-ad7b-939947ea200d",
+      "Cloud": "Review",
+      "Version": "beta",
+      "CreatedDateTime": "2025-11-14T17:52:44.8032878Z",
+      "WorkloadArea": "Security",
+      "SubArea": ""
+    },
+    {
         "ChangeList": [
         {
           "Id": "f772b158-7bd6-4602-8f3d-5cbeca16c806",
