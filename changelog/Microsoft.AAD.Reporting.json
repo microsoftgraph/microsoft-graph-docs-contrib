@@ -4087,6 +4087,120 @@
       "CreatedDateTime": "2025-11-17T20:59:47.2623688Z",
       "WorkloadArea": "Reports",
       "SubArea": "Identity and access reports"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "03a1d61d-c6e1-44e8-b13d-84ec258a0dc5",
+          "ApiChange": "Method",
+          "ChangedApiName": "getMetricsForNetworkAccessInternetAppPolicyAllowedApps",
+          "ChangeType": "Addition",
+          "Description": "Added the [getMetricsForNetworkAccessInternetAppPolicyAllowedApps](https://learn.microsoft.com/en-us/graph/api/serviceActivity-getMetricsForNetworkAccessInternetAppPolicyAllowedApps?view=graph-rest-beta) method to the [serviceActivity](https://learn.microsoft.com/en-us/graph/api/resources/serviceActivity?view=graph-rest-beta) resource.",
+          "Target": "serviceActivity"
+        },
+        {
+          "Id": "03a1d61d-c6e1-44e8-b13d-84ec258a0dc5",
+          "ApiChange": "Method",
+          "ChangedApiName": "getMetricsForNetworkAccessInternetAppPolicyAllowedUsers",
+          "ChangeType": "Addition",
+          "Description": "Added the [getMetricsForNetworkAccessInternetAppPolicyAllowedUsers](https://learn.microsoft.com/en-us/graph/api/serviceActivity-getMetricsForNetworkAccessInternetAppPolicyAllowedUsers?view=graph-rest-beta) method to the [serviceActivity](https://learn.microsoft.com/en-us/graph/api/resources/serviceActivity?view=graph-rest-beta) resource.",
+          "Target": "serviceActivity"
+        },
+        {
+          "Id": "03a1d61d-c6e1-44e8-b13d-84ec258a0dc5",
+          "ApiChange": "Method",
+          "ChangedApiName": "getMetricsForNetworkAccessInternetAppPolicyBlockedApps",
+          "ChangeType": "Addition",
+          "Description": "Added the [getMetricsForNetworkAccessInternetAppPolicyBlockedApps](https://learn.microsoft.com/en-us/graph/api/serviceActivity-getMetricsForNetworkAccessInternetAppPolicyBlockedApps?view=graph-rest-beta) method to the [serviceActivity](https://learn.microsoft.com/en-us/graph/api/resources/serviceActivity?view=graph-rest-beta) resource.",
+          "Target": "serviceActivity"
+        },
+        {
+          "Id": "03a1d61d-c6e1-44e8-b13d-84ec258a0dc5",
+          "ApiChange": "Method",
+          "ChangedApiName": "getMetricsForNetworkAccessInternetAppPolicyBlockedUsers",
+          "ChangeType": "Addition",
+          "Description": "Added the [getMetricsForNetworkAccessInternetAppPolicyBlockedUsers](https://learn.microsoft.com/en-us/graph/api/serviceActivity-getMetricsForNetworkAccessInternetAppPolicyBlockedUsers?view=graph-rest-beta) method to the [serviceActivity](https://learn.microsoft.com/en-us/graph/api/resources/serviceActivity?view=graph-rest-beta) resource.",
+          "Target": "serviceActivity"
+        },
+        {
+          "Id": "03a1d61d-c6e1-44e8-b13d-84ec258a0dc5",
+          "ApiChange": "Method",
+          "ChangedApiName": "getMetricsForNetworkAccessPrivateAppsAllowedByConnector",
+          "ChangeType": "Addition",
+          "Description": "Added the [getMetricsForNetworkAccessPrivateAppsAllowedByConnector](https://learn.microsoft.com/en-us/graph/api/serviceActivity-getMetricsForNetworkAccessPrivateAppsAllowedByConnector?view=graph-rest-beta) method to the [serviceActivity](https://learn.microsoft.com/en-us/graph/api/resources/serviceActivity?view=graph-rest-beta) resource.",
+          "Target": "serviceActivity"
+        },
+        {
+          "Id": "03a1d61d-c6e1-44e8-b13d-84ec258a0dc5",
+          "ApiChange": "Method",
+          "ChangedApiName": "getMetricsForNetworkAccessPrivateAppsBlockedByConnector",
+          "ChangeType": "Addition",
+          "Description": "Added the [getMetricsForNetworkAccessPrivateAppsBlockedByConnector](https://learn.microsoft.com/en-us/graph/api/serviceActivity-getMetricsForNetworkAccessPrivateAppsBlockedByConnector?view=graph-rest-beta) method to the [serviceActivity](https://learn.microsoft.com/en-us/graph/api/resources/serviceActivity?view=graph-rest-beta) resource.",
+          "Target": "serviceActivity"
+        },
+        {
+          "Id": "03a1d61d-c6e1-44e8-b13d-84ec258a0dc5",
+          "ApiChange": "Method",
+          "ChangedApiName": "getMetricsForNetworkAccessPrivateAppUsersAllowedByConnector",
+          "ChangeType": "Addition",
+          "Description": "Added the [getMetricsForNetworkAccessPrivateAppUsersAllowedByConnector](https://learn.microsoft.com/en-us/graph/api/serviceActivity-getMetricsForNetworkAccessPrivateAppUsersAllowedByConnector?view=graph-rest-beta) method to the [serviceActivity](https://learn.microsoft.com/en-us/graph/api/resources/serviceActivity?view=graph-rest-beta) resource.",
+          "Target": "serviceActivity"
+        },
+        {
+          "Id": "03a1d61d-c6e1-44e8-b13d-84ec258a0dc5",
+          "ApiChange": "Method",
+          "ChangedApiName": "getMetricsForNetworkAccessPrivateAppUsersBlockedByConnector",
+          "ChangeType": "Addition",
+          "Description": "Added the [getMetricsForNetworkAccessPrivateAppUsersBlockedByConnector](https://learn.microsoft.com/en-us/graph/api/serviceActivity-getMetricsForNetworkAccessPrivateAppUsersBlockedByConnector?view=graph-rest-beta) method to the [serviceActivity](https://learn.microsoft.com/en-us/graph/api/resources/serviceActivity?view=graph-rest-beta) resource.",
+          "Target": "serviceActivity"
+        },
+        {
+          "Id": "03a1d61d-c6e1-44e8-b13d-84ec258a0dc5",
+          "ApiChange": "Method",
+          "ChangedApiName": "getMetricsForNetworkAccessRemoteNetworkBranchesAlive",
+          "ChangeType": "Addition",
+          "Description": "Added the [getMetricsForNetworkAccessRemoteNetworkBranchesAlive](https://learn.microsoft.com/en-us/graph/api/serviceActivity-getMetricsForNetworkAccessRemoteNetworkBranchesAlive?view=graph-rest-beta) method to the [serviceActivity](https://learn.microsoft.com/en-us/graph/api/resources/serviceActivity?view=graph-rest-beta) resource.",
+          "Target": "serviceActivity"
+        },
+        {
+          "Id": "03a1d61d-c6e1-44e8-b13d-84ec258a0dc5",
+          "ApiChange": "Method",
+          "ChangedApiName": "getMetricsForNetworkAccessRemoteNetworkBranchesBGPConnected",
+          "ChangeType": "Addition",
+          "Description": "Added the [getMetricsForNetworkAccessRemoteNetworkBranchesBGPConnected](https://learn.microsoft.com/en-us/graph/api/serviceActivity-getMetricsForNetworkAccessRemoteNetworkBranchesBGPConnected?view=graph-rest-beta) method to the [serviceActivity](https://learn.microsoft.com/en-us/graph/api/resources/serviceActivity?view=graph-rest-beta) resource.",
+          "Target": "serviceActivity"
+        },
+        {
+          "Id": "03a1d61d-c6e1-44e8-b13d-84ec258a0dc5",
+          "ApiChange": "Method",
+          "ChangedApiName": "getMetricsForNetworkAccessRemoteNetworkBranchesBGPDisconnected",
+          "ChangeType": "Addition",
+          "Description": "Added the [getMetricsForNetworkAccessRemoteNetworkBranchesBGPDisconnected](https://learn.microsoft.com/en-us/graph/api/serviceActivity-getMetricsForNetworkAccessRemoteNetworkBranchesBGPDisconnected?view=graph-rest-beta) method to the [serviceActivity](https://learn.microsoft.com/en-us/graph/api/resources/serviceActivity?view=graph-rest-beta) resource.",
+          "Target": "serviceActivity"
+        },
+        {
+          "Id": "03a1d61d-c6e1-44e8-b13d-84ec258a0dc5",
+          "ApiChange": "Method",
+          "ChangedApiName": "getMetricsForNetworkAccessRemoteNetworkBranchesTunnelConnected",
+          "ChangeType": "Addition",
+          "Description": "Added the [getMetricsForNetworkAccessRemoteNetworkBranchesTunnelConnected](https://learn.microsoft.com/en-us/graph/api/serviceActivity-getMetricsForNetworkAccessRemoteNetworkBranchesTunnelConnected?view=graph-rest-beta) method to the [serviceActivity](https://learn.microsoft.com/en-us/graph/api/resources/serviceActivity?view=graph-rest-beta) resource.",
+          "Target": "serviceActivity"
+        },
+        {
+          "Id": "03a1d61d-c6e1-44e8-b13d-84ec258a0dc5",
+          "ApiChange": "Method",
+          "ChangedApiName": "getMetricsForNetworkAccessRemoteNetworkBranchesTunnelDisconnected",
+          "ChangeType": "Addition",
+          "Description": "Added the [getMetricsForNetworkAccessRemoteNetworkBranchesTunnelDisconnected](https://learn.microsoft.com/en-us/graph/api/serviceActivity-getMetricsForNetworkAccessRemoteNetworkBranchesTunnelDisconnected?view=graph-rest-beta) method to the [serviceActivity](https://learn.microsoft.com/en-us/graph/api/resources/serviceActivity?view=graph-rest-beta) resource.",
+          "Target": "serviceActivity"
+        }
+      ],
+      "Id": "03a1d61d-c6e1-44e8-b13d-84ec258a0dc5",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-11-17T02:41:02.1904173Z",
+      "WorkloadArea": "Reports",
+      "SubArea": "Identity and access reports"
     }
   ]
 }
