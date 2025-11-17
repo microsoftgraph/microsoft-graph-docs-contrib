@@ -1735,6 +1735,9 @@ Namespace: microsoft.graph
 | userChangedPasswordOnPremises |
 | adminDismissedRiskForSignIn |
 | adminConfirmedAccountSafe |
+| adminConfirmedAgentSafe |
+| adminConfirmedAgentCompromised |
+| adminDismissedRiskForAgent |
 
 <!-- maintenance comment: Do not delete enum delcaration for riskEventType until all properties of this type are marked as deleted. Dec 28, 2021: Pending eventTypes (in riskUserActivity) and riskType (in riskDetection)-->
 ### riskEventType values
