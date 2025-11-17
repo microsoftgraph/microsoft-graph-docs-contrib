@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [agentUser](../resources/agentuser.md) object.
+Create a new [agentUser](../resources/agentuser.md) object. You can also create an agent user by using the [POST /users](../api/user-post-users.md) endpoint and specifying the `microsoft.graph.agentUser` type in the request body.
 
 At a minimum, you must specify the required properties. You can optionally specify any other writable properties.
 
@@ -77,9 +77,7 @@ Attempting to create an agentUser with an **identityParentId** already linked to
 
 ## Examples
 
-### Example 1: Create an agent user
-
-#### Request
+### Request
 
 The following example shows a request.
 
@@ -127,60 +125,6 @@ Content-type: application/json
     "mailNickname": "SalesAgent",
     "userPrincipalName": "salesagent@contoso.com",
     "identityParentId": "a1b2c3d4-e5f6-7890-abcd-ef1234567890"
-}
-```
-
-### Example 2: Create an agent user through users' endpoint
-
-#### Request
-
-The following example shows a request.
-
-<!-- {
-  "blockType": "request",
-  "name": "create_agentuser_agentuser"
-}-->
-
-```http
-POST https://graph.microsoft.com/beta/users
-Content-type: application/json
-
-{
-  "@odata.type": "microsoft.graph.agentUser",
-  "accountEnabled": true,
-  "displayName": "Review Agent",
-  "mailNickname": "ReviewAgent",
-  "userPrincipalName": "reviewagent@contoso.com",
-  "identityParentId": "7a94d794-5271-4c3a-9364-3dbb0f085a1r"
-}
-```
-
-### Response
-
-The following example shows the response.
-
->[!NOTE]
->The response object shown here might be shortened for readability.
-
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.agentUser"
-} -->
-```http
-HTTP/1.1 201 Created
-Content-type: application/json
-
-{
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users/$entity",
-    "@odata.type": "#microsoft.graph.agentUser",
-    "id": "a62a22ca-d21b-4a92-be5f-12193fe63304",
-    "businessPhones": [],
-    "displayName": "Review Agent",
-    "mail": "reviewsagent@contoso.com",
-    "mailNickname": "reviewAgent",
-    "userPrincipalName": "salesagent@contoso.com",
-    "identityParentId": "7a94d794-5271-4c3a-9364-3dbb0f085a1r"
 }
 ```
 

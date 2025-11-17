@@ -70,7 +70,7 @@ If successful, this method returns a `204 No Content` response code.
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "delete_user"
+  "name": "delete_agentuser"
 }
 -->
 ``` http
