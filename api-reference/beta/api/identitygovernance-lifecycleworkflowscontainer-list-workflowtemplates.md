@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /identityGovernance/lifecycleWorkflows/workflowTemplates
 ```
 
@@ -69,7 +69,7 @@ The following example shows a request.
   "name": "lifecycleworkflows_list_workflowtemplate"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workflowTemplates
 ```
 
@@ -112,7 +112,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.identityGovernance.workflowTemplate)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -678,7 +678,7 @@ The following example shows a request.
   "name": "lifecycleworkflows_list_workflowtemplate_filter_category"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workflowTemplates?$filter=category eq 'leaver'
 ```
 

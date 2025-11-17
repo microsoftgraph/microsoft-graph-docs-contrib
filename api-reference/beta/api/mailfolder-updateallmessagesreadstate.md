@@ -32,7 +32,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /me/mailFolders/{mailFolderId}/updateAllMessagesReadState
 POST /users/{userId}/mailFolders/{mailFolderId}/updateAllMessagesReadState
 ```
@@ -71,7 +71,7 @@ The following example shows a request.
   "sampleKeys": ["AAMkAGVmMDEzM"]
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzM/updateAllMessagesReadState
 Content-Type: application/json
 
@@ -120,6 +120,6 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```

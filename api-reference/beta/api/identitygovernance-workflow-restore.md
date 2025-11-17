@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /identityGovernance/lifecycleWorkflows/deletedItems/workflows/{workflowId}/restore
 ```
 
@@ -63,7 +63,7 @@ The following example shows a request.
   "name": "lifecycleworkflows_workflowthis.restore"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/deletedItems/workflows/4c9c57b9-e1e9-4bed-a936-4fad9d8f5638/restore
 ```
 
@@ -106,7 +106,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.identityGovernance.workflow"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
