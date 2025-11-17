@@ -69,7 +69,7 @@ If successful, this method returns a `201 Created` response code and a [federate
   "name": "create_federatedidentitycredential_from_"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/applications/bcd7c908-1c4d-4d48-93ee-ff38349a75c8/federatedIdentityCredentials/
 Content-Type: application/json
 
@@ -121,7 +121,7 @@ Content-Type: application/json
   "@odata.type": "microsoft.graph.federatedIdentityCredential"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 

@@ -37,6 +37,10 @@ $params = @{
 		locale = "en-US"
 	}
 	provisioningType = "dedicated"
+	userSettingsPersistenceConfiguration = @{
+		userSettingsPersistenceEnabled = $true
+		userSettingsPersistenceStorageSizeCategory = "fourGB"
+	}
 }
 
 New-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy -BodyParameter $params

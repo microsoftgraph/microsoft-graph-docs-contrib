@@ -33,7 +33,7 @@ When calling on behalf of a user, the user needs to belong to one of the followi
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /admin/sharepoint/settings
 ```
 
@@ -65,7 +65,7 @@ The following example shows a request.
   "name": "get_settings_at_tenant_level"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/admin/sharepoint/settings
 ```
 
@@ -110,7 +110,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.sharepointSettings"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

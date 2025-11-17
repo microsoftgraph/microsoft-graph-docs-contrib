@@ -31,20 +31,20 @@ To use application permission for this API, tenant administrators must create an
 
 To get attendance records of an attendance report with delegated (`/me`) and app (`/users/{userId}`) permission:
 <!-- {"blockType": "ignored"}-->
-``` http
+```http
 GET /me/onlineMeetings/{meetingId}/attendanceReports/{reportId}/attendanceRecords
 GET /users/{userId}/onlineMeetings/{meetingId}/attendanceReports/{reportId}/attendanceRecords
 ```
 
 To get attendance records from the attendance report for a webinar session using delegated and application permissions:
 <!-- {"blockType": "ignored"}-->
-``` http
+```http
 GET /solutions/virtualEvents/webinars/{webinarId}/sessions/{sessionId}/attendanceReports/{reportId}/attendanceRecords
 ```
 
 To get attendance records from the attendance report for a town hall session using delegated and application permissions:
 <!-- {"blockType": "ignored"}-->
-``` http
+```http
 GET /solutions/virtualEvents/townhalls/{townhallId}/sessions/{sessionId}/attendanceReports/{reportId}/attendanceRecords
 ```
 
@@ -91,7 +91,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 }
 -->
 
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZ/attendanceReports/c9b6db1c-d5eb-427d-a5c0-20088d9b22d7/attendanceRecords
 ```
 
@@ -136,7 +136,7 @@ GET https://graph.microsoft.com/v1.0/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZ
 }
 -->
 
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -193,7 +193,7 @@ The following example shows a request.
   "sampleKeys": ["336f94f4-3a81-5130-43e9-88f3-fcb3582cde37", "8d62dd52-4dff-4c75-96a9-f905cc3ff942", "2c2454-7613-4d6e-9c7c-4c8"]
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/solutions/virtualEvents/webinars/336f94f4-3a81-5130-43e9-88f3-fcb3582cde37/sessions/8d62dd52-4dff-4c75-96a9-f905cc3ff942/attendanceReports/2c2454-7613-4d6e-9c7c-4c8/attendanceRecords
 ```
 
@@ -237,7 +237,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.attendanceRecord)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -309,7 +309,7 @@ The following example shows a request.
   "sampleKeys": ["f8ce2a5f-0e6a-4186-aa90-1f64bc023566", "8d62dd52-4dff-4c75-96a9-f905cc3ff942", "2c2454-7613-4d6e-9c7c-4c8"]
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/solutions/virtualEvents/townhalls/f8ce2a5f-0e6a-4186-aa90-1f64bc023566/sessions/8d62dd52-4dff-4c75-96a9-f905cc3ff942/attendanceReports/2c2454-7613-4d6e-9c7c-4c8/attendanceRecords
 ```
 
@@ -353,7 +353,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.attendanceRecord)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
