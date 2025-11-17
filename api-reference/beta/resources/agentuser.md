@@ -3,7 +3,7 @@ title: "agentUser resource type"
 description: "Represents a specialized subtype of user identity in Microsoft Entra ID designed for AI-powered applications (agents) that need to function as digital workers."
 author: "yyuank"
 ms.reviewer: "iamut"
-ms.date: 11/12/2025
+ms.date: 11/17/2025
 ms.localizationpriority: medium
 ms.subservice: entra-users
 doc_type: resourcePageType
@@ -35,6 +35,11 @@ This resource is an open type that allows additional properties beyond those doc
 | **App role assignments** | | |
 | [List app role assignments](../api/agentuser-list-approleassignments.md) | [appRoleAssignment](../resources/approleassignment.md) collection | Get the app role assignments for this agent user. |
 | [Create app role assignment](../api/agentuser-post-approleassignments.md) | [appRoleAssignment](../resources/approleassignment.md) | Create a new app role assignment for this agent user. |
+|**Deleted items**|||
+|[List](../api/directory-deleteditems-list.md) | [directoryObject](directoryobject.md) collection | Retrieve a list of recently deleted agent user objects. |
+|[Get](../api/directory-deleteditems-get.md) | [directoryObject](directoryobject.md) | Retrieve the properties of a recently deleted agent user. |
+|[Restore](../api/directory-deleteditems-restore.md) | [directoryObject](directoryobject.md) | Restore a recently deleted agent user. |
+|[Permanently delete](../api/directory-deleteditems-delete.md) | None | Permanently delete an agent user. |
 | **Directory objects** | | |
 | [List owned objects](../api/agentuser-list-ownedobjects.md) | [directoryObject](../resources/directoryobject.md) collection | Get the directory objects owned by the agent user. |
 | **Organizational relationships** | | |
