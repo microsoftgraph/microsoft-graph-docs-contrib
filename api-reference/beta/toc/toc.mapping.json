@@ -140,16 +140,24 @@
       ]
     },
     {
-      "name": "Agents",
+      "name": "Agents (preview)",
       "overview": "",
       "resources": [],
       "childNodes": [
           {
-            "name": "Agent identities (preview)",
+            "name": "Agent identities",
             "resources": [
               "agentIdentityBlueprint",
               "agentIdentityBlueprintPrincipal",
               "agentIdentity"
+            ]
+          },
+          {
+            "name": "Agent registry",
+            "resources": [
+              "agentInstance",
+              "agentCardManifest",
+              "agentCollection"
             ]
           }
       ]

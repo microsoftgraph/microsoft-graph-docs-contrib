@@ -8,5 +8,5 @@ ms.localizationpriority: medium
 |:---|:---|:---|
 |Delegated (work or school account)|AgentInstance.Read.All|AgentInstance.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|AgentInstance.Read.All|gentInstance.ReadWrite.ManagedBy, AgentInstance.ReadWrite.All|
+|Application|AgentInstance.Read.All|AgentInstance.ReadWrite.ManagedBy, AgentInstance.ReadWrite.All|
 
