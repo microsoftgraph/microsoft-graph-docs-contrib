@@ -284,27 +284,9 @@
       "Id": "e6489c84-2e85-44d7-9a06-65d6a751d1e9",
       "Cloud": "Prod",
       "Version": "v1.0",
-      "CreatedDateTime": "2025-11-02T15:17:52.4104503Z",
+      "CreatedDateTime": "2025-11-17T15:17:52.4104503Z",
       "WorkloadArea": "Security",
       "SubArea": "Identities"
-    },
-    {
-      "ChangeList": [
-        {
-          "Id": "79e93597-d64c-49e3-aae7-4cd13608f015",
-          "ApiChange": "Resource",
-          "ChangedApiName": "user",
-          "ChangeType": "Addition",
-          "Description": "Added the [user](https://learn.microsoft.com/en-us/graph/api/resources/security-user?view=graph-rest-1.0) resource.",
-          "Target": "user"
-        }
-      ],
-      "Id": "79e93597-d64c-49e3-aae7-4cd13608f015",
-      "Cloud": "Prod",
-      "Version": "v1.0",
-      "CreatedDateTime": "2025-11-02T15:17:52.4107125Z",
-      "WorkloadArea": "Identity and access",
-      "SubArea": "Directory management"
     }
   ]
 }
