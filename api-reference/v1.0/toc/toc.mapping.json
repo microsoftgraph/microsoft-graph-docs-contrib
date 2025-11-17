@@ -511,6 +511,7 @@
         "educationFeedbackOutcome",
         "educationFeedbackResourceOutcome",
         "educationGradingCategory",
+        "educationGradingScheme",
         "educationModule",
         "educationModuleResource",
         "educationOutcome",
@@ -543,6 +544,7 @@
         "educationExternalResource",
         "educationFeedback",
         "educationFileResource",
+        "educationGradingSchemeGrade",
         "educationLinkResource",
         "educationLinkedAssignmentResource",
         "educationMediaResource",
@@ -1002,7 +1004,11 @@
             "appRoleAssignment",
             "dataPolicyOperation",
             "oAuth2PermissionGrant",
-            "certificateBasedAuthConfiguration"
+            "certificateBasedAuthConfiguration",
+            "webApplicationFirewallProvider",
+            "cloudFlareWebApplicationFirewallProvider",
+            "akamaiWebApplicationFirewallProvider",
+            "webApplicationFirewallVerificationModel"
           ],
           "childNodes": [
             {
@@ -1014,6 +1020,7 @@
                 "onAttributeCollectionSubmitListener",
                 "onAuthenticationMethodLoadStartListener",
                 "onEmailOtpSendListener",
+                "onFraudProtectionLoadStartListener",
                 "onInteractiveAuthFlowStartListener",
                 "onTokenIssuanceStartListener",
                 "onUserCreateStartListener"
@@ -1108,7 +1115,10 @@
                 "riskyUser",
                 "riskyUserHistoryItem",
                 "servicePrincipalRiskDetection",
-                "riskyServicePrincipal"
+                "riskyServicePrincipal",
+                "fraudProtectionProvider",
+                "arkoseFraudProtectionProvider",
+                "humanSecurityFraudProtectionProvider"
               ]
             },
             {
@@ -1628,7 +1638,9 @@
           "name": "Identities",
           "resources": [
             "microsoft.graph.security.healthIssue",
-            "microsoft.graph.security.sensor"
+            "microsoft.graph.security.sensor",
+            "microsoft.graph.security.sensorCandidate",
+            "microsoft.graph.security.sensorCandidateActivationConfiguration"
           ],
           "complexTypes": [
             "microsoft.graph.security.deploymentAccessKeyType",

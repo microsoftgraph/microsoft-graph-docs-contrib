@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvisioningConfigurationId}/assignments
 ```
 
@@ -61,7 +61,7 @@ If successful, this method returns a `201 Created` response code and a [iosLobAp
 Here is an example of the request.
 
 <!-- { "blockType": "ignored" , "name" : "intune_apps_ioslobappprovisioningconfigurationassignment_create_create_ioslobappprovisioningconfigurationassignment" }-->
-``` http
+```http
 POST https://graph.microsoft.com/beta/deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvisioningConfigurationId}/assignments
 Content-type: application/json
 Content-length: 351
@@ -80,7 +80,7 @@ Content-length: 351
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 
 <!-- { "blockType": "response" , "@odata.type" : "microsoft.graph.iosLobAppProvisioningConfigurationAssignment" }-->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 Content-Length: 400

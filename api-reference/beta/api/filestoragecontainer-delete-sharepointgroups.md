@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 DELETE /storage/fileStorage/containers/{fileStorageContainerId}/sharePointGroups/{sharePointGroupId}
 ```
 
@@ -67,7 +67,7 @@ The following example shows a request.
   "blockType": "request",
   "name": "delete_sharepointgroup"
 }-->
-``` http
+```http
 DELETE https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/sharePointGroups/10
 ```
 
@@ -106,7 +106,7 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 
@@ -121,7 +121,7 @@ The following example attempts to delete a **sharePointGroup** identified by the
   "blockType": "request",
   "name": "delete_nonexisting_sharepointgroup"
 }-->
-``` http
+```http
 DELETE https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/sharePointGroups/11
 ```
 
@@ -163,7 +163,7 @@ The following example shows the response. Only existing SharePoint groups can be
   "@odata.type": "microsoft.graph.publicError"
 }
 -->
-``` http
+```http
 HTTP/1.1 404 Not Found
 Content-Type: application/json
 

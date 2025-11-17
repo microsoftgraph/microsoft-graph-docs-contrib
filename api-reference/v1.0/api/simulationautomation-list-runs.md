@@ -27,7 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /security/attackSimulation/simulationAutomations/{simulationAutomationId}/runs
 ```
 
@@ -42,7 +42,7 @@ The following are examples of their use:
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /security/attackSimulation/simulationAutomations/{simulationAutomationId}/runs?$count=true
 GET /security/attackSimulation/simulationAutomations/{simulationAutomationId}/runs?$skipToken={skipToken}
 GET /security/attackSimulation/simulationAutomations/{simulationAutomationId}/runs?$top=1
@@ -74,7 +74,7 @@ The following example shows a request.
   "name": "list_simulationautomationrun"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/security/attackSimulation/simulationAutomations/fbad62b0-b32d-b6ac-9f48-d84bbea08f96/runs
 ```
 
@@ -120,7 +120,7 @@ The following example shows the response.
   "isCollection": true
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

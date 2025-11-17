@@ -31,7 +31,7 @@ Get AWS super serverless functions:
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /identityGovernance/permissionsAnalytics/aws/findings/{id}/microsoft.graph.superServerlessFunctionFinding
 ```
 
@@ -40,7 +40,7 @@ Get Azure super serverless functions:
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /identityGovernance/permissionsAnalytics/azure/findings/{id}/microsoft.graph.superServerlessFunctionFinding
 ```
 
@@ -49,7 +49,7 @@ Get GCP super serverless functions:
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /identityGovernance/permissionsAnalytics/gcp/findings/{id}/microsoft.graph.superServerlessFunctionFinding
 ```
 
@@ -78,7 +78,7 @@ The following example shows a request.
   "name": "get_superserverlessfunctionfinding"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/azure/findings/c3VwZXJTZXJ2ZXJsZXNzRnVuY3Rpb25GaW5kaW4z/microsoft.graph.superServerlessFunctionFinding
 ```
 
@@ -97,7 +97,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.superServerlessFunctionFinding"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 

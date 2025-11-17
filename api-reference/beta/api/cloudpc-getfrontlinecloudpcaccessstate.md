@@ -36,13 +36,13 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 To get the frontline Cloud PC access state of the signed-in user using delegated permission:
 
-``` http
+```http
 GET /me/cloudPCs/{cloudPCId}/getFrontlineCloudPcAccessState
 ```
 
 To get the frontline Cloud PC access state of a signed-in administrator using delegated permission or application permission:
 
-``` http
+```http
 GET /deviceManagement/virtualEndpoint/cloudPCs/{cloudPCId}/getFrontlineCloudPcAccessState
 ```
 
@@ -74,7 +74,7 @@ The following example shows a request.
   "name": "user_cloudpc.getFrontlineCloudPcAccessState"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/cloudPCs/b0a9cde2-e170-4dd9-97c3-ad1d3328a711/getFrontlineCloudPcAccessState
 ```
 
@@ -114,7 +114,7 @@ The following example shows the response.
   "@odata.type": "string"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -136,7 +136,7 @@ The following example shows a request.
   "name": "cloudpc.getFrontlineCloudPcAccessState"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/b0a9cde2-e170-4dd9-97c3-ad1d3328a711/getFrontlineCloudPcAccessState
 ```
 
@@ -176,7 +176,7 @@ The following example shows the response.
   "@odata.type": "string"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

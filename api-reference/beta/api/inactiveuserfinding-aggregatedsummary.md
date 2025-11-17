@@ -31,7 +31,7 @@ Example of an AWS request
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /identityGovernance/permissionsAnalytics/aws/findings/microsoft.graph.inactiveUserFinding/aggregatedSummary(authorizationSystemIds=['awsAuthSystemId'])
 ```
 
@@ -40,7 +40,7 @@ Example of an Azure request
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/azure/findings/microsoft.graph.inactiveUserFinding/aggregatedSummary(authorizationSystemIds=['azureAuthSystemId'])
 ```
 
@@ -49,7 +49,7 @@ Example of a GCP request
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/gcp/findings/microsoft.graph.inactiveUserFinding/aggregatedSummary(authorizationSystemIds=['gcpAuthSystemId'])
 ```
 
@@ -83,7 +83,7 @@ The following example shows a request.
   "name": "inactiveuserfindingthis.aggregatedsummary"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/microsoft.graph.inactiveUserFinding/aggregatedSummary(authorizationSystemIds=['377596131774'])
 ```
 
@@ -102,7 +102,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.permissionsAnalyticsAggregatedIdentitySummary"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
