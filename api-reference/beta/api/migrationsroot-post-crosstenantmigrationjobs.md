@@ -55,12 +55,12 @@ You can specify the following properties when creating a **crossTenantMigrationJ
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|Name of the crossTenantMigrationJob. Must be unique per tenant. Required.|
-|completeAfterDateTime|DateTimeOffset|Time when the migration batch should begin processing.  Required.|
+|completeAfterDateTime|DateTimeOffset|Time when the migration batch should begin processing. Required.|
 |sourceTenantId|String|Tenant ID (GUID) of the source tenant for the migration. Required.|
-|exchangeSettings|[exchangeOnlineCrossTenantMigrationSettings](../resources/exchangeonlinecrosstenantmigrationsettings.md)|Settings for Exchange Online migrations. Optional, but required if Exchange is a specfied workload.|
-|workloads|String collection|Workloads to migrate on the resources. Optional. If excluded, all available workloads will be included in the migration.|
+|exchangeSettings|[exchangeOnlineCrossTenantMigrationSettings](../resources/exchangeonlinecrosstenantmigrationsettings.md)|Settings for Exchange Online migrations. Optional, but required if Exchange is a specified workload.|
+|workloads|String collection|Workloads to migrate on the resources. Optional. If excluded, all available workloads are included in the migration.|
 |resourceType|String|Type of resources to migrate. Only `Users` is supported at this time. Required.|
-|resources|String collection|Object IDs (GUID) of the resources to migrate. Limit of 2000 resources per [crossTenantMigrationJob](../resources/crosstenantmigrationjob.md) Required.|
+|resources|String collection|Object IDs (GUID) of the resources to migrate. Limit of 2,000 resources per [crossTenantMigrationJob](../resources/crosstenantmigrationjob.md) Required.|
 
 
 

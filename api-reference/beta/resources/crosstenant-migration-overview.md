@@ -39,8 +39,8 @@ Organizations often need to consolidate or reorganize Microsoft 365 environments
 - **Scope**: User content migration only.
 - **Limitations**:
   - Job names must be unique per tenant.
-  - Jobs in progress cannot be deleted.
-  - `completeAfterDateTime` cannot be set in the past.
+  - Jobs in progress can't be deleted.
+  - `completeAfterDateTime` can't be set in the past.
 
 ## Permissions
 

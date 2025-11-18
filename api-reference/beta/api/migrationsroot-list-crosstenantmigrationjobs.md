@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [crossTenantMigrationJob](../resources/crosstenantmigrationjob.md) objects and their properties. By default 20 objects are returned. More can be retrieved by querying the url of the `@odata.nextLink` provided in the response.
+Get a list of the [crossTenantMigrationJob](../resources/crosstenantmigrationjob.md) objects and their properties. By default 20 objects are returned. More can be retrieved through the `@odata.nextLink` url provided in the response.
 
 ## Permissions
 

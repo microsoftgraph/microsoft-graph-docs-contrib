@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of [crossTenantMigrationTask](../resources/crosstenantmigrationtask.md). This shows the details of the migration task for a single user of a [crossTenantMigrationJob](../resources/crosstenantmigrationjob.md). The [crossTenantMigrationTask](../resources/crosstenantmigrationtask.md) contains the [status details](../resources/crosstenantmigrationservicestatusdetails.md) of migrations for the workloads specified in the crossTenantMigrationJob. 
+Read the properties and relationships of [crossTenantMigrationTask](../resources/crosstenantmigrationtask.md), which shows the details of the migration task for a single user of a [crossTenantMigrationJob](../resources/crosstenantmigrationjob.md). The [crossTenantMigrationTask](../resources/crosstenantmigrationtask.md) contains the [status details](../resources/crosstenantmigrationservicestatusdetails.md) of migrations for the workloads specified in the crossTenantMigrationJob. 
 
 ## Permissions
 

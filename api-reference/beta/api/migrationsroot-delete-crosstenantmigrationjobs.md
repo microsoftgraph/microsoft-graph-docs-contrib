@@ -14,9 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a [crossTenantMigrationJob](../resources/crosstenantmigrationjob.md) object. Delete requests are long running but will be completed within 48 hours. 
+Delete a [crossTenantMigrationJob](../resources/crosstenantmigrationjob.md) object. Delete requests are long running and finish within 48 hours. 
 
-A [crossTenantMigrationJob](../resources/crosstenantmigrationjob.md) that is currently in progress cannot be deleted. The [crossTenantMigrationJob](../resources/crosstenantmigrationjob.md) must reach a final state before deletion can be performed. If a [crossTenantMigrationJob](../resources/crosstenantmigrationjob.md) is not in a final state, a `409 Conflict` response is returned.
+A [crossTenantMigrationJob](../resources/crosstenantmigrationjob.md) that is currently in progress can't be deleted. The [crossTenantMigrationJob](../resources/crosstenantmigrationjob.md) must reach a final state before deletion can be performed. If a [crossTenantMigrationJob](../resources/crosstenantmigrationjob.md) isn't in a final state, a `409 Conflict` response is returned.
 
 ## Permissions
 
@@ -55,7 +55,7 @@ Don't supply a request body for this method.
 
 If successful, this method returns a `202 Accepted` response code.
 
-If the [crossTenantMigrationJob](../resources/crosstenantmigrationjob.md) is not in a terminal or final state, a `409 Conflict` response is returned. 
+If the [crossTenantMigrationJob](../resources/crosstenantmigrationjob.md) isn't in a terminal or final state, a `409 Conflict` response is returned. 
 
 ## Examples
 

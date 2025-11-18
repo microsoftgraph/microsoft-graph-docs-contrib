@@ -52,7 +52,7 @@ PATCH /solutions/migrations/crossTenantMigrationJobs/{crossTenantMigrationJobId}
 
 |Property|Type|Description|
 |:---|:---|:---|
-|completeAfterDateTime|DateTimeOffset|When the CrossTenantMigrationJob should start processing. Required.|
+|completeAfterDateTime|DateTimeOffset|Required. The time when the CrossTenantMigrationJob should start processing.|
 
 ## Response
 

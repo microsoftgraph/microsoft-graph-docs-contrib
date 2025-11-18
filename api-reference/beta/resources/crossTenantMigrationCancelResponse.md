@@ -14,14 +14,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Contains cancel request response details from a request to cancel a CrossTenantMigrationJob. 
+Contains cancellation request response details from a request to cancel a CrossTenantMigrationJob. 
 
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|status|String|The cancel request status|
-|message|String|The customer facing description of the cancel request|
+|status|String|The cancellation request status|
+|message|String|The customer facing description of the cancellation request|
 
 ## Relationships
 None.

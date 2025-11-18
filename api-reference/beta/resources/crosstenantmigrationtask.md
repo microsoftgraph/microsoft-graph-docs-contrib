@@ -30,8 +30,8 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|currentStatus|[crossTenantMigrationServiceStatusDetails](../resources/crosstenantmigrationservicestatusdetails.md) collection|Most recent status of this |
-|id|String|ID (GUID) of the resource being migrated with this task|
+|currentStatus|[crossTenantMigrationServiceStatusDetails](../resources/crosstenantmigrationservicestatusdetails.md) collection|Most recent status of this migration task|
+|ID|String|ID (GUID) of the resource being migrated with this task|
 |lastUpdatedDateTime|DateTimeOffset|Time the task was last updated|
 |taskType|String|Type of migration task. Only Users are supported at this time.|
 

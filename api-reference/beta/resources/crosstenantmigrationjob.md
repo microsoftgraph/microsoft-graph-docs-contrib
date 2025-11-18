@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A Cross Tenant Migration Job. This represents a job that will migrate user data from a source tenant to a target tenant. 
+A Cross Tenant Migration Job. Represents a long running job that migrates user data from a source tenant to a target tenant. 
 
 
 Inherits from [entity](../resources/entity.md).
@@ -30,7 +30,7 @@ Inherits from [entity](../resources/entity.md).
 |[Delete](../api/migrationsroot-delete-crosstenantmigrationjobs.md)|None|Delete a crossTenantMigrationJob object.|
 |[cancel](../api/crosstenantmigrationjob-cancel.md)|[crossTenantMigrationCancelResponse](../resources/crosstenantmigrationcancelresponse.md)|Cancels a Cross tenant Migration Job.|
 |[validate](../api/crosstenantmigrationjob-validate.md)|[crossTenantMigrationJob](../resources/crosstenantmigrationjob.md)|Validate a Cross Tenant Migration Job|
-|[List users](../api/crosstenantmigrationjob-list-users.md)|[crossTenantMigrationTask](../resources/crosstenantmigrationtask.md) collection|List the users being migrated and the status of thier migration|
+|[List users](../api/crosstenantmigrationjob-list-users.md)|[crossTenantMigrationTask](../resources/crosstenantmigrationtask.md) collection|List the users being migrated and the status of their migration|
 
 ## Properties
 |Property|Type|Description|
@@ -40,7 +40,7 @@ Inherits from [entity](../resources/entity.md).
 |createdDateTime|DateTimeOffset|When the job what created|
 |displayName|String|Display name of the job. Must be unique per tenant|
 |exchangeSettings|[exchangeOnlineCrossTenantMigrationSettings](../resources/exchangeonlinecrosstenantmigrationsettings.md)|Settings to use for migration of Exchange workload|
-|id|String|ID (GUID) of the mgiration job|
+|ID|String|ID (GUID) of the migration job|
 |jobType|crossTenantMigrationJobType|Type of the migration job. The possible values are: `validate` (only validation is performed, no migration), `migrate` (Content is migrated)|
 |lastUpdatedDateTime|DateTimeOffset|When this migration job was last updated|
 |message|String|Status message of the migration job|
