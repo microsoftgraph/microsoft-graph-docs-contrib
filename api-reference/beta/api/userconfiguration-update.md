@@ -64,7 +64,7 @@ If successful, this method returns a `200 OK` response code and an updated [user
 ### Request
 
 The following example shows a request.
->**Note:** The structuredData will be updated as a whole.
+>**Note:** The entire **structuredData** object is updated.
 <!-- {
   "blockType": "request",
   "name": "update_userconfiguration",
