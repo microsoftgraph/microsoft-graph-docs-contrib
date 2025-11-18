@@ -1,5 +1,5 @@
 ---
-title: "error resource type"
+title: "Error resource type"
 description: "Error resource"
 author: "danguilliams"
 ms.date: 10/30/2025
@@ -8,7 +8,7 @@ ms.subservice: "t2t-migration"
 doc_type: resourcePageType
 ---
 
-# error resource type
+# Error resource type
 
 Namespace: microsoft.graph
 

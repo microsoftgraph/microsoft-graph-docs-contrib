@@ -29,7 +29,7 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|migrations root id. Inherited from [entity](../resources/entity.md). Inherits from [entity](../resources/entity.md)|
+|ID|String|migrations root ID. Inherited from [entity](../resources/entity.md). Inherits from [entity](../resources/entity.md)|
 
 ## Relationships
 |Relationship|Type|Description|
