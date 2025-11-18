@@ -64,7 +64,7 @@ You can specify the following properties when creating an **inheritablePermissio
 |Property|Type|Description|
 |:---|:---|:---|
 |resourceAppId|String| The appId of the resource application who publishes the scopes. Required.|
-|inheritableScopes|[inheritableScopes](../resources/inheritablescopes.md)|**TODO: Add Description** Required.|
+|inheritableScopes|[inheritableScopes](../resources/inheritablescopes.md)|Inheritance configuration defining which delegated permission scopes from the resource application may be automatically inherited by agent identities. Specify one of the patterns: `allAllowedScopes` (all scopes), `enumeratedScopes` (only listed `scopes` collection; must be present and non‑empty), or `noScopes` (inherit none). Required.|
 
 
 
