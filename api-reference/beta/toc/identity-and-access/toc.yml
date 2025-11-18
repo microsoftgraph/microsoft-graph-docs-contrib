@@ -384,38 +384,38 @@ items:
       href: ../../api/uxsetting-get.md
     - name: Update
       href: ../../api/uxsetting-update.md
-  - name: Mobility management policy
+  - name: Mobile app management policy
     items:
-    - name: Mobility management policy
-      href: ../../resources/mobilitymanagementpolicy.md
-    - name: Mobile device management policy
-      items:
-      - name: List
-        href: ../../api/mobiledevicemanagementpolicies-list.md
-      - name: Get
-        href: ../../api/mobiledevicemanagementpolicies-get.md
-      - name: Update
-        href: ../../api/mobiledevicemanagementpolicies-update.md
-      - name: List included groups
-        href: ../../api/mobiledevicemanagementpolicies-list-includedgroups.md
-      - name: Add group to policy
-        href: ../../api/mobiledevicemanagementpolicies-post-includedgroups.md
-      - name: Delete group from policy
-        href: ../../api/mobiledevicemanagementpolicies-delete-includedgroups.md
     - name: Mobile app management policy
-      items:
-      - name: List
-        href: ../../api/mobileappmanagementpolicies-list.md
-      - name: Get
-        href: ../../api/mobileappmanagementpolicies-get.md
-      - name: Update
-        href: ../../api/mobileappmanagementpolicies-update.md
-      - name: List included groups
-        href: ../../api/mobileappmanagementpolicies-list-includedgroups.md
-      - name: Add group to policy
-        href: ../../api/mobileappmanagementpolicies-post-includedgroups.md
-      - name: Delete group from policy
-        href: ../../api/mobileappmanagementpolicies-delete-includedgroups.md
+      href: ../../resources/mobileappmanagementpolicy.md
+    - name: List
+      href: ../../api/mobileappmanagementpolicies-list.md
+    - name: Get
+      href: ../../api/mobileappmanagementpolicies-get.md
+    - name: Update
+      href: ../../api/mobileappmanagementpolicies-update.md
+    - name: List included groups
+      href: ../../api/mobileappmanagementpolicies-list-includedgroups.md
+    - name: Add group to policy
+      href: ../../api/mobileappmanagementpolicies-post-includedgroups.md
+    - name: Delete group from policy
+      href: ../../api/mobileappmanagementpolicies-delete-includedgroups.md
+  - name: Mobile device management policy
+    items:
+    - name: Mobile device management policy
+      href: ../../resources/mobiledevicemanagementpolicy.md
+    - name: List
+      href: ../../api/mobiledevicemanagementpolicies-list.md
+    - name: Get
+      href: ../../api/mobiledevicemanagementpolicies-get.md
+    - name: Update
+      href: ../../api/mobiledevicemanagementpolicies-update.md
+    - name: List included groups
+      href: ../../api/mobiledevicemanagementpolicies-list-includedgroups.md
+    - name: Add group to policy
+      href: ../../api/mobiledevicemanagementpolicies-post-includedgroups.md
+    - name: Delete group from policy
+      href: ../../api/mobiledevicemanagementpolicies-delete-includedgroups.md
   - name: Mutual TLS OAuth configuration
     items:
     - name: Mutual TLS OAuth configuration
@@ -1940,7 +1940,7 @@ items:
           href: ../../api/approvalstep-get.md
         - name: Update
           href: ../../api/approvalstep-update.md
-  - name: Privileged Identity Management iteration 2
+  - name: Privileged Identity Management iteration 2 (deprecated)
     items:
     - name: Overview
       href: ../../resources/privilegedidentitymanagement-root.md

@@ -1,5 +1,5 @@
 ---
-title: "governanceResource resource type"
+title: "governanceResource resource type (deprecated)"
 description: "Represents resources that are managed Privileged Identity Management (PIM). For Azure resources, it can be a subscription, a resource group, and a resource such as a virtual machine, etc."
 ms.localizationpriority: medium
 doc_type: resourcePageType
@@ -9,7 +9,7 @@ ROBOTS: NOINDEX
 ms.date: 04/03/2024
 ---
 
-# governanceResource resource type
+# governanceResource resource type (deprecated)
 
 Namespace: microsoft.graph
 

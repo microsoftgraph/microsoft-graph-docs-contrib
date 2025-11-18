@@ -1147,7 +1147,8 @@
             "bitlockerRecoveryKey",
             "deviceLocalCredentialInfo",
             "featureRolloutPolicy",
-            "mobilityManagementPolicy",
+            "mobileAppManagementPolicy",
+            "mobileDeviceManagementPolicy",
             "organizationSettings",
             "uxSetting",
             "deviceTemplate",
@@ -1547,7 +1548,7 @@
               ]
             },
             {
-              "name": "Privileged Identity Management iteration 2",
+              "name": "Privileged Identity Management iteration 2 (deprecated)",
               "overview": "../../resources/privilegedidentitymanagement-root.md",
               "childNodes": [
                 {
