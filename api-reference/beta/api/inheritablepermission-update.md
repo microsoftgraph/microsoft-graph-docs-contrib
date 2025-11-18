@@ -90,26 +90,15 @@ Content-Type: application/json
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true
 }
 -->
 ```http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#applications('bc057821-f236-49d6-9f2c-1ebf43e9437a')/inheritablePermissions/$entity",
-  "@odata.type": "#microsoft.graph.inheritablePermission",
-  "resourceAppId": "00000003-0000-0ff1-ce00-000000000000",
-  "inheritableScopes": {
-    "@odata.type": "microsoft.graph.allAllowedScopes",
-    "kind": "allAllowed"
-  }
-}
+HTTP/1.1 204 No Content
 ```
+
 
 ### Example 2: Update inheritablePermission to use enumeratedScopes pattern
 
@@ -142,30 +131,15 @@ Content-Type: application/json
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true
 }
 -->
 ```http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#applications('bc057821-f236-49d6-9f2c-1ebf43e9437a')/inheritablePermissions/$entity",
-  "@odata.type": "#microsoft.graph.inheritablePermission",
-  "resourceAppId": "00000003-0000-0000-c000-000000000000",
-  "inheritableScopes": {
-    "@odata.type": "microsoft.graph.enumeratedScopes",
-    "kind": "enumerated",
-    "scopes": [
-      "User.Read",
-      "Mail.Read"
-    ]
-  }
-}
+HTTP/1.1 204 No Content
 ```
+
 
 ### Example 3: Update inheritablePermission to use noScopes pattern
 This example updates an existing inheritablePermission to use the noScopes inheritance pattern, preventing any delegated permission scopes from the resource application from being inheritable by agent identities.
@@ -192,23 +166,11 @@ Content-Type: application/json
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true
 }
 -->
 ```http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#applications('bc057821-f236-49d6-9f2c-1ebf43e9437a')/inheritablePermissions/$entity",
-  "@odata.type": "#microsoft.graph.inheritablePermission",
-  "resourceAppId": "00000003-0000-0000-c000-000000000000",
-  "inheritableScopes": {
-    "@odata.type": "microsoft.graph.noScopes",
-    "kind": "noScopes"
-  }
-}
+HTTP/1.1 204 No Content
 ```
