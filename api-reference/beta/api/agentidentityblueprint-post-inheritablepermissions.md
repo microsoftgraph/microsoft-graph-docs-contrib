@@ -112,9 +112,6 @@ The following example shows the response.
 HTTP/1.1 201 Created
 Content-Type: application/json
 
-HTTP/1.1 201 Created
-Content-Type: application/json
-
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#applications('bc057821-f236-49d6-9f2c-1ebf43e9437a')/inheritablePermissions/$entity",
   "resourceAppId": "00000003-0000-0000-c000-000000000000",
@@ -167,9 +164,6 @@ The following example shows the response.
 HTTP/1.1 201 Created
 Content-Type: application/json
 
-HTTP/1.1 201 Created
-Content-Type: application/json
-
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#applications('bc057821-f236-49d6-9f2c-1ebf43e9437a')/inheritablePermissions/$entity",
   "resourceAppId": "00000003-0000-0000-c000-000000000000",
@@ -219,9 +213,6 @@ The following example shows the response.
 }
 -->
 ``` http
-HTTP/1.1 201 Created
-Content-Type: application/json
-
 HTTP/1.1 201 Created
 Content-Type: application/json
 
