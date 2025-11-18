@@ -90,10 +90,9 @@ Explicitly select this property to include it in the response, for example:
 
 ## API reference
 
-- [API reference overview in Microsoft Graph beta](https://learn.microsoft.com/graph/api/resources/filestoragecontainer)
+- [API reference overview in Microsoft Graph beta](/graph/api/resources/filestoragecontainer)
 
 ## Related content
 
-- [Information barriers in Microsoft 365](https://learn.microsoft.com/microsoft-365/compliance/information-barriers)
+- [Information barriers in Microsoft 365](/microsoft-365/compliance/information-barriers)
 - [Authentication and authorization basics](/graph/auth/auth-concepts)
-- [Microsoft Graph overview](https://learn.microsoft.com/graph/overview)
