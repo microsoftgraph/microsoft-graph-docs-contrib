@@ -1,5 +1,5 @@
 ---
-title: "Remove appliesTo"
+title: "Remove b2bManagementPolicy appliesTo"
 description: "Remove a directoryObject object."
 author: "akshukla"
 ms.date: 10/27/2025
@@ -8,7 +8,7 @@ ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
-# Remove appliesTo
+# Remove b2bManagementPolicy appliesTo
 
 Namespace: microsoft.graph
 
