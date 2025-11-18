@@ -937,251 +937,41 @@ Use the **administrativeUnitInfos** property on [participant](/graph/api/resourc
 
 ## November 2024: New in preview only
 
-### Agents
-
-- Added the [agentCapabilities](https://learn.microsoft.com/en-us/graph/api/resources/agentCapabilities?view=graph-rest-beta) resource.
-- Added the [agentCardSignature](https://learn.microsoft.com/en-us/graph/api/resources/agentCardSignature?view=graph-rest-beta) resource.
-- Added the [agentExtension](https://learn.microsoft.com/en-us/graph/api/resources/agentExtension?view=graph-rest-beta) resource.
-- Added the [agentExtensionParams](https://learn.microsoft.com/en-us/graph/api/resources/agentExtensionParams?view=graph-rest-beta) resource.
-- Added the [agentInterface](https://learn.microsoft.com/en-us/graph/api/resources/agentInterface?view=graph-rest-beta) resource.
-- Added the [agentProvider](https://learn.microsoft.com/en-us/graph/api/resources/agentProvider?view=graph-rest-beta) resource.
-- Added the [agentSkill](https://learn.microsoft.com/en-us/graph/api/resources/agentSkill?view=graph-rest-beta) resource.
-- Added the [apiKeySecurityScheme](https://learn.microsoft.com/en-us/graph/api/resources/apiKeySecurityScheme?view=graph-rest-beta) resource.
-- Added the [httpAuthSecurityScheme](https://learn.microsoft.com/en-us/graph/api/resources/httpAuthSecurityScheme?view=graph-rest-beta) resource.
-- Added the [jwsHeader](https://learn.microsoft.com/en-us/graph/api/resources/jwsHeader?view=graph-rest-beta) resource.
-
-### Application
-
-- Added the **sensorStatus** enumeration type.
-- Added the **sensors** relationship to the [onPremisesPublishingProfile](https://learn.microsoft.com/en-us/graph/api/resources/onPremisesPublishingProfile?view=graph-rest-beta) resource.
-- Added the [privateAccessSensor](https://learn.microsoft.com/en-us/graph/api/resources/privateAccessSensor?view=graph-rest-beta) resource.
-- Added the CRUD operations to the [corsConfiguration_v2](https://learn.microsoft.com/graph/api/resources/corsConfiguration_v2?view=graph-rest-beta) resource. The resource represents the CORS settings for an on-premises wildcard application published through Microsoft Entra application proxy and accessed via HTTP.
-- Added the [ipApplicationSegment](https://learn.microsoft.com/en-us/graph/api/resources/ipApplicationSegment?view=graph-rest-beta) resource and its associated API operations.The resource represents the CORS settings for an on-premises nonweb application published through Microsoft Entra application proxy and accessed via HTTP.
-- Added the CRUD operations to the [webApplicationSegment](https://learn.microsoft.com/graph/api/resources/webApplicationSegment?view=graph-rest-beta) resource. The resource represents the CORS settings for an on-premises wildcard application published through Microsoft Entra application proxy and accessed via HTTP.
-- Added the [ipSegmentConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/ipSegmentConfiguration?view=graph-rest-beta) resource.
-- Added the **privateNetworkDestinationType** enumeration type.
-- Added the **privateNetworkProtocol** enumeration type.
-- Added the `isDnsResolutionEnabled` property to the [onPremisesPublishing](https://learn.microsoft.com/en-us/graph/api/resources/onPremisesPublishing?view=graph-rest-beta) resource.
-
-### Applications
-
-- Added the **isContinuousAccessEvaluationEnabled** property to the [onPremisesPublishing](https://learn.microsoft.com/en-us/graph/api/resources/onPremisesPublishing?view=graph-rest-beta) resource.
-- From the end of September 2025, the maximum page size for the [List servicePrincipals](https://learn.microsoft.com/en-us/graph/api/serviceprincipal-list?view=graph-rest-beta) API will be 100 objects from the previous 999 objects.
-- Added the **uriAdditionWithoutUniqueTenantIdentifier** property to the [identifierUriConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/identifierUriConfiguration?view=graph-rest-beta) resource.
-
-### Applications | Service principal
-
-- Introduced new methods: instantiate.
-- Added the [applicationLocation](https://learn.microsoft.com/en-us/graph/api/resources/applicationLocation?view=graph-rest-beta) resource.
-- Added the [applicationRiskFactorCertificateInfo](https://learn.microsoft.com/en-us/graph/api/resources/applicationRiskFactorCertificateInfo?view=graph-rest-beta) resource.
-- Added the [applicationRiskFactorGeneralInfo](https://learn.microsoft.com/en-us/graph/api/resources/applicationRiskFactorGeneralInfo?view=graph-rest-beta) resource.
-
-### Backup restore
-
-- Introduced new methods: deleteAndUnprotect.
-- Added the **protectionSources** property to the [mailboxProtectionUnit](https://learn.microsoft.com/en-us/graph/api/resources/mailboxProtectionUnit?view=graph-rest-1.0) resource.
-- Added the `updateRequested` member to the **protectionRuleStatus** enumeration.
-- Added the `deleteRequested` member to the **protectionRuleStatus** enumeration.
-- Added the **protectionSource** enumeration type.
-- Added the **protectionSources** property to the [protectionUnitBase](https://learn.microsoft.com/en-us/graph/api/resources/protectionUnitBase?view=graph-rest-1.0) resource.
-- Added the **protectionSources** property to the [driveProtectionUnit](https://learn.microsoft.com/en-us/graph/api/resources/driveProtectionUnit?view=graph-rest-1.0) resource.
-
-### Backup storage
-
-- Added new resource types: protectionPolicyArtifactCount, notificationRecipients.
-- Added 8 new methods for enhanced operations.
-- Added the [protectionPolicyArtifactCount](https://learn.microsoft.com/en-us/graph/api/resources/protectionPolicyArtifactCount?view=graph-rest-beta) resource type.
-- Added the **isEnabled** property to the [protectionPolicyBase](https://learn.microsoft.com/en-us/graph/api/resources/protectionPolicyBase?view=graph-rest-beta) resource.
-- Added the **protectionPolicyArtifactCount** property to the [protectionPolicyBase](https://learn.microsoft.com/en-us/graph/api/resources/protectionPolicyBase?view=graph-rest-beta) resource.
-
-### Calendars | Places
-
-- Introduced 7 new resource types to expand functionality, including placeMode, reservablePlaceMode, offlinePlaceMode, and more.
-- Added 8 new methods for enhanced operations.
-- Added the [placeMode](https://learn.microsoft.com/en-us/graph/api/resources/placeMode?view=graph-rest-beta) resource type.
-- Added the [assignedPlaceMode](https://learn.microsoft.com/en-us/graph/api/resources/assignedPlaceMode?view=graph-rest-beta) resource type.
-- Added the [dropInPlaceMode](https://learn.microsoft.com/en-us/graph/api/resources/dropInPlaceMode?view=graph-rest-beta) resource type.
-
 ### Device and app management | Cloud PC
 
-- Introduced 10 new resource types to expand functionality, including cloudPcAgentHealthCheckSummary, cloudPcBulkDisasterRecovery, cloudPcStatusSummary, and more.
-- Added 10 new methods for enhanced operations.
-- Added the **sessionStartDateTime** property to the [cloudPcFrontlineSharedDeviceDetail](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcfrontlineshareddevicedetail?view=graph-rest-beta) resource.
-- Added the [cloudPCUserSettingsPersistenceDetail](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcusersettingspersistencedetail?view=graph-rest-beta) resource type.
-- Added the [cloudPCUserSettingsPersistenceProfile](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcusersettingspersistenceprofile?view=graph-rest-beta) resource type.
-
-### Device and app management | Cloud licensing
-
-- Added new resource types: groupCloudLicensing, userCloudLicensing, service.
-- Introduced new methods: usageRight.
-- Added the [groupCloudLicensing](https://learn.microsoft.com/en-us/graph/api/resources/cloudLicensing-groupCloudLicensing?view=graph-rest-beta) resource type.
-- Added the **usageRights** relationship to the [groupCloudLicensing](https://learn.microsoft.com/en-us/graph/api/resources/cloudLicensing-groupCloudLicensing?view=graph-rest-beta) resource.
-- Added the [service](https://learn.microsoft.com/en-us/graph/api/resources/cloudLicensing-service?view=graph-rest-beta) resource type.
-
-### Device and app management | Corporate management
-
-- Added the **associatedDomains** property to the iosDdmLobAppAssignmentSettings resource.
-- Added the **associatedDomainsDirectDownloadAllowed** property to the iosDdmLobAppAssignmentSettings resource.
-- Added the macOSManagedDeviceLocalAdminAccountDetail resource.
+- Added new endpoints that support application permissions in the following methods of the [cloudPC](/graph/api/resources/cloudpc?view=graph-rest-beta&preserve-view=true) resource:
+  - [cloudPC: getCloudPcLaunchInfo](/graph/api/cloudpc-getcloudpclaunchinfo?view=graph-rest-beta&preserve-view=true)
+  - [cloudPC: start](/graph/api/cloudpc-start?view=graph-rest-beta&preserve-view=true)
+  - [cloudPC: stop](/graph/api/cloudpc-stop?view=graph-rest-beta&preserve-view=true)
+- Use the **reservePercentage** property in the [cloudPcProvisioningPolicy: apply] method to specify the percentage of Cloud PCs to keep available for frontline shared scenarios.
+- Use the [getCloudPCPerformanceReport](/graph/api/cloudpcreports-getcloudpcperformancereport?view=graph-rest-beta&preserve-view=true) method to get reports related to the performance of Cloud PCs.
+- Use the **reportName** parameter with the [getInaccessibleCloudPcReports](/graph/api/cloudpcreports-getinaccessiblecloudpcreports?view=graph-rest-beta&preserve-view=true) method to specify the Cloud PC report type.
+- Enabled the `performanceTrendReport` and `inaccessibleCloudPcTrendReport` options for the **reportName** parameter in the [Create cloudPcExportJob](/graph/api/cloudpcreports-post-exportjobs?view=graph-rest-beta&preserve-view=true) method.
 
 ### Device and app management | Device updates
 
-- Added new resource types: remediationUpdateFilter, qualityUpdateFilter.
-- Added the [remediationUpdateFilter](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-remediationupdatefilter?view=graph-rest-beta) resource type.
-- Added the **isHotpatchUpdate** property to the [productRevision](https://learn.microsoft.com/en-us/graph/api/resources/windowsUpdates-productRevision?view=graph-rest-beta) resource.
-- Added the **isHotpatchEnabled** property to the [userExperienceSettings](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-userexperiencesettings?view=graph-rest-beta) resource.
-
-### Devices and app management | Cloud PC
-
-- Added new resource types: frontlineCloudPcDetail.
-- Introduced new methods: retrieveFrontlineCloudPcDetail.
-- Added the [frontlineCloudPcDetail](https://learn.microsoft.com/en-us/graph/api/resources/frontlinecloudpcdetail?view=graph-rest-beta) resource type.
-- Deprecated the **frontlineCloudPcAvailability** property of the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource.
-- Added the [retrieveFrontlineCloudPcDetail](https://learn.microsoft.com/en-us/graph/api/cloudpc-retrievefrontlinecloudpcdetail?view=graph-rest-beta) method to the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource.
-
-### Devices and apps | Corporate management
-
-- Added the retrieveEnrollmentTimeGroupingFailureReport method to the deviceManagementReports resource.
-- Added the windowsQualityUpdateCveDetail resource.
-- Added the retrieveAppleOSUpdateFailures method to the deviceManagementReports resource.
-
-### Education
-
-- Introduced 10 new resource types to expand functionality, including educationAiFeedbackAudienceEngagementSettings, educationSpeakerCoachAudienceEngagementSettings, educationAiFeedbackSettings, and more.
-- Added 6 new methods for enhanced operations.
-- Removed the **educationIdentityDomain** resource.
-- Removed the **synchronizationProfiles** relationship from the [educationRoot](https://learn.microsoft.com/en-us/graph/api/resources/educationRoot?view=graph-rest-beta) resource.
-- Removed the **pause** method from the [educationSynchronizationProfile](https://learn.microsoft.com/en-us/graph/api/resources/educationSynchronizationProfile?view=graph-rest-beta) resource.
-
-### Employee experience | Employee engagement
-
-- Introduced 8 new resource types to expand functionality, including engagementConversationDiscussionMessage, engagementConversationQuestionMessage, engagementConversationMessage, and more.
-- Introduced new methods: engagementConversationMessageReaction, engagementRoleMember, engagementRole, getAllOnlineMeetingMessages.
-- Added the **roles** relationship to the [employeeExperience](https://learn.microsoft.com/en-us/graph/api/resources/employeeExperience?view=graph-rest-beta) resource.
-- Added the [engagementRole](https://learn.microsoft.com/en-us/graph/api/resources/engagementRole?view=graph-rest-beta) resource and associated methods.
-- Added the [engagementRoleMember](https://learn.microsoft.com/en-us/graph/api/resources/engagementRoleMember?view=graph-rest-beta) resource and associated methods.
-
-### EnhancedRestore | Backup and Restore
-
-- Introduced new methods: cancelOffboard, offboard.
-- Added the [mailboxProtectionUnitsBulkAdditionJob](https://learn.microsoft.com/en-us/graph/api/resources/mailboxProtectionUnitsBulkAdditionJob?view=graph-rest-1.0) resource.
-- Added the **mailboxType** enumeration type.
-- Added the **offboardRequestedDateTime** property to the [protectionUnitBase](https://learn.microsoft.com/en-us/graph/api/resources/protectionUnitBase?view=graph-rest-beta) resource.
+- [Deploy a hotpatch quality update](/graph/windowsupdates-hotpatch-update) using Windows Autopatch.
+- Use the **isHotpatchUpdate** property on [productRevision](/graph/api/resources/windowsupdates-productrevision?view=graph-rest-beta&preserve-view=true) to identify whether the content is hotpatchable.
+- Use the **isHotpatchEnabled** property on [userExperienceSettings](/graph/api/resources/windowsupdates-userexperiencesettings?view=graph-rest-beta&preserve-view=true) to identify whether the update is offered as a hotpatch.
 
 ### Files
 
-- Added new resource types: fileStorageContainerTypeSettings, fileStorageContainerTypeRegistrationSettings, extension.
-- Added 10 new methods for enhanced operations.
-- Deprecated the [sharedWithMe](https://learn.microsoft.com/en-us/graph/api/drive-sharedwithme?view=graph-rest-beta) method on the [drive](https://learn.microsoft.com/en-us/graph/api/resources/drive?view=graph-rest-beta) resource. This API is deprecated and will stop returning data after November, 2027.
-- Deprecated the [recent](https://learn.microsoft.com/en-us/graph/api/drive-recent?view=graph-rest-beta) method on the [drive](https://learn.microsoft.com/en-us/graph/api/resources/drive?view=graph-rest-beta) resource. This API is deprecated and will stop returning data after November, 2027.
-- Added the `if-none-match` header to the [driveItem: createUploadSession](https://learn.microsoft.com/en-us/graph/api/driveitem-createuploadsession?view=graph-rest-beta) method.
-
-### Identity and access | Directory management
-
-- Added new resource types: entra.
-- Introduced new methods: uxSetting, restore, deviceTemplate, createDeviceFromTemplate, mutualTlsOauthConfiguration.
-- Added the [entra](https://learn.microsoft.com/en-us/graph/api/resources/entra?view=graph-rest-beta) resource type.
-- Added the [uxSetting](https://learn.microsoft.com/en-us/graph/api/resources/uxSetting?view=graph-rest-beta) resource and supported methods. Use the supported APIs to configure whether nonadmins can access the Microsoft Entra admin center.
-- Added the **entra** relationship to the [admin](https://learn.microsoft.com/en-us/graph/api/resources/admin?view=graph-rest-beta) resource.
-
-### Identity and access | Governance
-
-- Introduced new methods: accessPackageResource, uploadFile, activateWithScope.
-- Added the [accessReviewAccessPackageAssignmentPolicyScope](https://learn.microsoft.com/en-us/graph/api/resources/accessReviewAccessPackageAssignmentPolicyScope?view=graph-rest-beta) resource.
-- Added the [accessReviewInstanceDecisionItemCustomDataProvidedResource](https://learn.microsoft.com/en-us/graph/api/resources/accessReviewInstanceDecisionItemCustomDataProvidedResource?view=graph-rest-beta) resource.
-- Added the [accessReviewInstanceDecisionItemPermission](https://learn.microsoft.com/en-us/graph/api/resources/accessReviewInstanceDecisionItemPermission?view=graph-rest-beta) resource.
-
-### Identity and access | Identity and sign in
-
-- Added the [appManagementApplicationConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/appManagementApplicationConfiguration?view=graph-rest-beta) resource.
-- Added the [appManagementServicePrincipalConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/appManagementServicePrincipalConfiguration?view=graph-rest-beta) resource.
-- Added the [customAppManagementApplicationConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/customAppManagementApplicationConfiguration?view=graph-rest-beta) resource.
+[Lock](/graph/api/filestoragecontainer-lock?view=graph-rest-beta&preserve-view=true) or [unlock](/graph/api/filestoragecontainer-unlock?view=graph-rest-beta&preserve-view=true) a [fileStorageContainer](/graph/api/resources/filestoragecontainer?view=graph-rest-beta&preserve-view=true).
 
 ### Identity and access | Identity and sign-in
 
-- Added 10 new methods for enhanced operations.
-- Added the **hardwareOathMethods** relationship to the [authentication](https://learn.microsoft.com/en-us/graph/api/resources/authentication?view=graph-rest-beta) resource.
-- Added the [authenticationMethodDevice](https://learn.microsoft.com/en-us/graph/api/resources/authenticationMethodDevice?view=graph-rest-beta) resource.
-- Added the **hardwareOathDevices** relationship to the [authenticationMethodDevice](https://learn.microsoft.com/en-us/graph/api/resources/authenticationMethodDevice?view=graph-rest-beta) resource.
+- Use the [oidcIdentityProvider](/graph/api/resources/oidcidentityprovider?view=graph-rest-beta&preserve-view=true) resource and its methods to interact with OpenID Connect identity providers in a Microsoft Entra external tenant.
+- Added the [certificateBasedAuthPki](/graph/api/resources/certificatebasedauthpki?view=graph-rest-beta&preserve-view=true) resource to manage the collection of public key infrastructure (PKI) instances for the [certificate-based authentication method](/graph/api/resources/x509certificateauthenticationmethodconfiguration?view=graph-rest-beta&preserve-view=true), and the [certificateAuthorityDetail](/graph/api/resources/certificateauthoritydetail?view=graph-rest-beta&preserve-view=true) resource to access the properties of each certificate authority object within a **certificateBasedAuthPki**.
 
 ### Identity and access | Network access
 
-- Added new resource types: connectivity, fqdnFilteringRule, webCategoryFilteringRule.
-- Introduced new methods: getCloudApplicationReport, getEnterpriseApplicationReport, getApplicationUsageAnalytics, getWebCategoryByUrl, getConnectionSummaries.
-- Added the [connectionSummary](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-connectionSummary?view=graph-rest-beta) resource.
-- Added the [connection](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-connection?view=graph-rest-beta) resource.
-- Added the **connections** relationship to the [logs](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-logs?view=graph-rest-beta) resource.
-
-### Mail
-
-- Added new resource types: mailFolderOperation, updateAllMessagesReadStateOperation.
-- Introduced new methods: reportMessage, updateAllMessagesReadState, permanentDelete.
-- Added the **mailFolderOperationStatus** enumeration type.
-- Added the **operations** relationship to the [mailFolder](https://learn.microsoft.com/en-us/graph/api/resources/mailfolder?view=graph-rest-beta) resource.
-- Added the [mailFolderOperation](https://learn.microsoft.com/en-us/graph/api/resources/mailfolderoperation?view=graph-rest-beta) resource type.
-
-### Mailbox import and export
-
-- Added new resource types: mailboxItemImportSession, exchangeAdmin, exportItemResponse, exchangeSettings.
-- Added 6 new methods for enhanced operations.
-- Added the [exportItemResponse](https://learn.microsoft.com/en-us/graph/api/resources/exportItemResponse?view=graph-rest-beta) resource type.
-- Added the [mailboxItemImportSession](https://learn.microsoft.com/en-us/graph/api/resources/mailboxItemImportSession?view=graph-rest-beta) resource type.
-- Added the **exchange** relationship to the [admin](https://learn.microsoft.com/en-us/graph/api/resources/admin?view=graph-rest-beta) resource.
-
-### People and workplace intelligence | People admin settings
-
-- Added new resource types: profileSource.
-- Introduced new methods: namePronunciationSettings, profilePropertySetting.
-- Added the [profileSourceLocalization](https://learn.microsoft.com/en-us/graph/api/resources/profileSourceLocalization?view=graph-rest-beta) resource.
-- Added the **profileSources** relationship to the [peopleAdminSettings](https://learn.microsoft.com/en-us/graph/api/resources/peopleAdminSettings?view=graph-rest-beta) resource.
-- Added the [profileSource](https://learn.microsoft.com/en-us/graph/api/resources/profileSource?view=graph-rest-beta) resource type.
-
-### People and workplace intelligence | Profile
-
-- Added new resource types: originTenantInfo.
-- Added the **costCenter** property to the [companyDetail](https://learn.microsoft.com/en-us/graph/api/resources/companyDetail?view=graph-rest-beta) resource.
-- Added the **division** property to the [companyDetail](https://learn.microsoft.com/en-us/graph/api/resources/companyDetail?view=graph-rest-beta) resource.
-- Added the [originTenantInfo](https://learn.microsoft.com/en-us/graph/api/resources/originTenantInfo?view=graph-rest-beta) resource type.
+List, create, get, update, and delete [fqdnFilteringRule](/graph/api/resources/networkaccess-fqdnfilteringrule?view=graph-rest-beta&preserve-view=true) and [webCategoryFilteringRule](/graph/api/resources/networkaccess-webcategoryfilteringrule?view=graph-rest-beta&preserve-view=true) resources that are derived types of [filteringRule](/graph/api/resources/networkaccess-filteringrule?view=graph-rest-beta&preserve-view=true).
 
 ### Reports | Identity and access reports
 
-- Added new resource types: alert, alertConfiguration.
-- Added 10 new methods for enhanced operations.
-- Added the `samlSignInFailure` member to the **alertType** enumeration.
-- Added the **agentSubjectParentId** property to the [agentSignIn](https://learn.microsoft.com/en-us/graph/api/resources/agentic-agentSignIn?view=graph-rest-beta) resource.
-- Added the **agentSubjectType** property to the [agentSignIn](https://learn.microsoft.com/en-us/graph/api/resources/agentic-agentSignIn?view=graph-rest-beta) resource.
-
-### Reports | Microsoft 365 monitoring reports
-
-- Added 10 new methods for enhanced operations.
-- Added the [serviceActivityPerformanceMetric](https://learn.microsoft.com/en-us/graph/api/resources/serviceActivityPerformanceMetric?view=graph-rest-beta) resource.
-- Added the [getActiveUserMetricsForDesktopMailByReadEmail](https://learn.microsoft.com/en-us/graph/api/serviceActivity-getActiveUserMetricsForDesktopMailByReadEmail?view=graph-rest-beta) method to the [serviceActivity](https://learn.microsoft.com/en-us/graph/api/resources/serviceActivity?view=graph-rest-beta) resource.
-- Added the [getActiveUserMetricsForEmailByModernAuthentication](https://learn.microsoft.com/en-us/graph/api/serviceActivity-getActiveUserMetricsForEmailByModernAuthentication?view=graph-rest-beta) method to the [serviceActivity](https://learn.microsoft.com/en-us/graph/api/resources/serviceActivity?view=graph-rest-beta) resource.
-
-### Reports | Partner billing reports
-
-- Added new resource types: unbilledReconciliation.
-- Introduced new methods: export.
-- Added the **unbilled** relationship to the [billingReconciliation](https://learn.microsoft.com/en-us/graph/api/resources/partners-billing-billingReconciliation?view=graph-rest-beta) resource.
-- Added the [unbilledReconciliation](https://learn.microsoft.com/en-us/graph/api/resources/partners-billing-unbilledReconciliation?view=graph-rest-beta) resource type.
-- Added the [export](https://learn.microsoft.com/en-us/graph/api/partners-billing-unbilledReconciliation-export?view=graph-rest-beta) method to the [unbilledReconciliation](https://learn.microsoft.com/en-us/graph/api/resources/partners-billing-unbilledReconciliation?view=graph-rest-beta) resource.
-
-### Security
-
-- Added new resource types: teamsMessageEvidence.
-- Added 10 new methods for enhanced operations.
-- Added the `aiModelProvider` member to the **appCategory** enumeration.
-- Added the `clientAiApp` member to the **appCategory** enumeration.
-- Added the **dataDiscovery** relationship to the [security](https://learn.microsoft.com/en-us/graph/api/resources/security?view=graph-rest-beta) resource.
-
-### Security | Alerts and incidents
-
-- Added the **activeDirectoryObjectGuid** property to the [securityGroupEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-securitygroupevidence?view=graph-rest-beta) resource.
-- Added the **distinguishedName** property to the [securityGroupEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-securitygroupevidence?view=graph-rest-beta) resource.
-- Added the **friendlyName** property to the [securityGroupEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-securitygroupevidence?view=graph-rest-beta) resource.
+Use the **sessionId** property on [signIn](/graph/api/resources/signin?view=graph-rest-beta&preserve-view=true) to get the identifier of the session that was generated during a sign-in.
 
 ### Security | Discovered cloud apps
-
 
 The new Microsoft Defender for Cloud apps API in Microsoft Graph is designed to provide an efficient and reliable way to query discovered apps information, making it easier for you to analyze the risks associated with the discovered apps. Use the following resources and their methods to get data and insights across the discovered SaaS apps ecosystem:
 
@@ -1193,117 +983,20 @@ The new Microsoft Defender for Cloud apps API in Microsoft Graph is designed to 
 - [discoveredCloudAppDevice](/graph/api/resources/security-discoveredcloudappdevice?view=graph-rest-beta&preserve-view=true)
 - [endpointDiscoveredCloudAppDetail](/graph/api/resources/security-endpointdiscoveredcloudappdetail?view=graph-rest-beta&preserve-view=true)
 
-
-### Security | Identities
-
-- Added 7 new methods for enhanced operations.
-- Added the [deploymentAccessKeyType](https://learn.microsoft.com/en-us/graph/api/resources/security-deploymentAccessKeyType?view=graph-rest-beta) resource.
-- Added the [sensorDeploymentPackage](https://learn.microsoft.com/en-us/graph/api/resources/security-sensorDeploymentPackage?view=graph-rest-beta) resource.
-- Added the [sensorSettings](https://learn.microsoft.com/en-us/graph/api/resources/security-sensorSettings?view=graph-rest-beta) resource.
-
-### Security | Security Copilot
-
-- Added the [securityCopilot](https://learn.microsoft.com/en-us/graph/api/resources/securityCopilot?view=graph-rest-beta) resource.
-- Added the **evaluationResultType** enumeration type.
-- Added the **evaluationState** enumeration type.
-- Added the **pluginAuthTypes** enumeration type.
-- Added the **pluginCatalogScope** enumeration type.
-- Added the **pluginCategory** enumeration type.
-- Added the **pluginPreviewStates** enumeration type.
-- Added the **pluginSettingDisplayType** enumeration type.
-- Added the **pluginSettingType** enumeration type.
-- Added the **promptType** enumeration type.
-
 ### Security | eDiscovery
 
-- Added new resource types: ediscoverySearchExportOperation.
-- Added 9 new methods for enhanced operations.
-- Added the **description** property to the [ediscoveryReviewSet](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoveryreviewset?view=graph-rest-beta) resource.
-- Added the **description** property to the [dataSet](https://learn.microsoft.com/en-us/graph/api/resources/security-dataset?view=graph-rest-beta) resource.
-- Added the [update](https://learn.microsoft.com/en-us/graph/api/security-ediscoveryreviewset-update?view=graph-rest-beta) method to the [ediscoveryReviewSet](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoveryreviewset?view=graph-rest-beta) resource.
-
-### Sites and lists
-
-- Added new resource types: identityInput.
-- Added 8 new methods for enhanced operations.
-- Enabled the `$filter` query parameter for the [List](https://learn.microsoft.com/en-us/graph/api/listitem-list?view=graph-rest-beta) method of the [listItem](https://learn.microsoft.com/en-us/graph/api/resources/listitem?view=graph-rest-beta) resource.
-- Added support for the application permission `Sites.Archive.All` to the [site: archive](https://learn.microsoft.com/en-us/graph/api/site-archive?view=graph-rest-beta) method.
-- Added support for the application permission `Sites.Archive.All` to the [site: unarchive](https://learn.microsoft.com/en-us/graph/api/site-unarchive?view=graph-rest-beta) method.
-
-### Tasks and plans
-
-- Added new resource types: usageRightsInfo, planUsageRight, singleValueExtendedProperty, contentSensitivityLabelAssignment.
-- Introduced new methods: getUsageRights.
-- Added the [contentSensitivityLabelAssignment](https://learn.microsoft.com/en-us/graph/api/resources/contentSensitivityLabelAssignment?view=graph-rest-beta) resource type.
-- Added the [planUsageRight](https://learn.microsoft.com/en-us/graph/api/resources/planUsageRight?view=graph-rest-beta) resource type.
-- Added the [usageRightsInfo](https://learn.microsoft.com/en-us/graph/api/resources/usageRightsInfo?view=graph-rest-beta) resource type.
-
-### Teamwork
-
-- Introduced new methods: clockOut, clockIn, endBreak, startBreak, post.
-- Added the **isAtApprovedLocation** property to the [timeCardEvent](https://learn.microsoft.com/en-us/graph/api/resources/timeCardEvent?view=graph-rest-beta) resource.
-- Added the **isActivitiesIncludedWhenCopyingShiftsEnabled** property to the [schedule](https://learn.microsoft.com/en-us/graph/api/resources/schedule?view=graph-rest-beta) resource.
-- Added the `isAtApprovedLocation` parameter to the [clockIn](https://learn.microsoft.com/en-us/graph/api/timecard-clockin?view=graph-rest-beta&tabs=http) method.
+Added application authentication for Microsoft Purview eDiscovery Graph APIs. For more information about setting up app-only access, see [Set up application authentication](/graph/security-ediscovery-appauthsetup).
 
 ### Teamwork and communications | AI interactions
 
-- Introduced 9 new resource types to expand functionality, including aiUser, aiInteractionHistory, aiInteractionContext, and more.
-- Added 9 new methods for enhanced operations.
-- Added the **aiInteractionType** enumeration type.
-- Added the [aiInteractionAttachment](https://learn.microsoft.com/en-us/graph/api/resources/aiInteractionAttachment?view=graph-rest-beta) resource.
-- Added the [aiInteractionContext](https://learn.microsoft.com/en-us/graph/api/resources/aiInteractionContext?view=graph-rest-beta) resource.
-
-### Teamwork and communications | Administration
-
-- Added new resource types: policyIdentifierDetail.
-- Added 10 new methods for enhanced operations.
-- Added the [telephoneNumberLongRunningOperationDetails](https://learn.microsoft.com/en-us/graph/api/resources/teamsAdministration-telephoneNumberLongRunningOperationDetails?view=graph-rest-beta) resource and its methods.
-- Added the [numberAssignment](https://learn.microsoft.com/en-us/graph/api/resources/teamsAdministration-numberAssignment?view=graph-rest-beta) resource and its methods.
-- Added the [telephoneNumberLongRunningOperation](https://learn.microsoft.com/en-us/graph/api/resources/teamsAdministration-telephoneNumberLongRunningOperation?view=graph-rest-beta) resource and its methods.
+Use the [getAllEnterpriseInteractions](/microsoft-365-copilot/extensibility/api/ai-services/interaction-export/aiinteractionhistory-getallenterpriseinteractions?pivots=graph-preview) method to get Microsoft 365 Copilot interaction data, including user prompts to Copilot and Copilot responses.
 
 ### Teamwork and communications | Calls and online meetings
 
-- Introduced 10 new resource types to expand functionality, including callSettings, callEvent, virtualEventExternalInformation, and more.
-- Added 10 new methods for enhanced operations.
-- Added the [copilotAdmin](https://learn.microsoft.com/en-us/graph/api/resources/copilotAdmin?view=graph-rest-beta) resource.
-- Added the [copilotAdminLimitedMode](https://learn.microsoft.com/en-us/graph/api/resources/copilotAdminLimitedMode?view=graph-rest-beta) resource and its methods.
-- Added the [copilotAdminSetting](https://learn.microsoft.com/en-us/graph/api/resources/copilotAdminSetting?view=graph-rest-beta) resource.
-
-### Teamwork and communications | Messaging
-
-- Added new resource types: phoneUserConversationMember, forwardToChatResult.
-- Added 6 new methods for enhanced operations.
-- Added the [phoneUserConversationMember](https://learn.microsoft.com/en-us/graph/api/resources/phoneUserConversationMember?view=graph-rest-beta) resource type.
-- Added the [remove](https://learn.microsoft.com/en-us/graph/api/conversationmember-remove?view=graph-rest-beta) method to the [conversationMember](https://learn.microsoft.com/en-us/graph/api/resources/conversationMember?view=graph-rest-beta) resource.
-- Added the [getAllRetainedMessages](https://learn.microsoft.com/en-us/graph/api/channel-getallretainedmessages?view=graph-rest-1.0) method to the [channel](https://learn.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-1.0) resource.
-
-### Teamwork and communications | Shift management
-
-- Introduced new methods: stageForDeletion, approveForUser, confirmForUser, declineForUser.
-- Added the [confirmForUser](https://learn.microsoft.com/en-us/graph/api/timeCard-confirmForUser?view=graph-rest-beta) method to the [timeCard](https://learn.microsoft.com/en-us/graph/api/resources/timeCard?view=graph-rest-beta) resource.
-- Added the [approveForUser](https://learn.microsoft.com/en-us/graph/api/scheduleChangeRequest-approveForUser?view=graph-rest-beta) method to the [scheduleChangeRequest](https://learn.microsoft.com/en-us/graph/api/resources/scheduleChangeRequest?view=graph-rest-beta) resource.
-- Added the [declineForUser](https://learn.microsoft.com/en-us/graph/api/scheduleChangeRequest-declineForUser?view=graph-rest-beta) method to the [scheduleChangeRequest](https://learn.microsoft.com/en-us/graph/api/resources/scheduleChangeRequest?view=graph-rest-beta) resource.
-
-### Teamwork and communications | Teams administration
-
-- Added the **teams** relationship to the [admin](https://learn.microsoft.com/en-us/graph/api/resources/admin?view=graph-rest-beta) resource.
-- Deprecated the [admin](https://learn.microsoft.com/en-us/graph/api/resources/admin?view=graph-rest-beta) resource.
-- Added the **userConfigurations** relationship to the [teamsAdminRoot](https://learn.microsoft.com/en-us/graph/api/resources/teamsadministration-teamsadminroot?view=graph-rest-beta) resource.
-
-### Workbooks and charts
-
-- Added the [workbookCommentMention](https://learn.microsoft.com/en-us/graph/api/resources/workbookCommentMention?view=graph-rest-beta) resource.
-- Added the **cellAddress** property to the [workbookComment](https://learn.microsoft.com/en-us/graph/api/resources/workbookComment?view=graph-rest-beta) resource.
-- Added the **mentions** property to the [workbookComment](https://learn.microsoft.com/en-us/graph/api/resources/workbookComment?view=graph-rest-beta) resource.
-
-### eDiscovery | eDiscovery
-
-- Introduced new methods: Create, Delete, ediscoveryHoldPolicy, List.
-- Added the **legalHolds** relationship to the [ediscoveryCase](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoveryCase?view=graph-rest-1.0) resource.
-- Added the [List](https://learn.microsoft.com/en-us/graph/api/security-ediscoverycase-list-legalholds?view=graph-rest-1.0) method to the [ediscoveryCase](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoveryCase?view=graph-rest-1.0) resource.
-- Added the [Create](https://learn.microsoft.com/en-us/graph/api/security-ediscoverycase-post-legalholds?view=graph-rest-1.0) method to the [ediscoveryCase](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoveryCase?view=graph-rest-1.0) resource.
-- Added the [Delete](https://learn.microsoft.com/en-us/graph/api/security-ediscoverycase-delete-legalholds?view=graph-rest-1.0) method to the [ediscoveryCase](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoveryCase?view=graph-rest-1.0) resource.
-- Added the [ediscoveryHoldPolicy](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoveryHoldPolicy?view=graph-rest-1.0) resource and its methods.
+- [Link](/graph/api/virtualevent-setexternaleventinformation?view=graph-rest-beta&preserve-view=true) external event information to a [virtualEventTownhall](/graph/api/resources/virtualeventtownhall?view=graph-rest-beta&preserve-view=true) or [virtualEventWebinar](/graph/api/resources/virtualeventwebinar?view=graph-rest-beta&preserve-view=true) by setting an **externalEventId**.
+- Use the **externalEventInformation** on [virtualEventTownhall](/graph/api/resources/virtualeventtownhall?view=graph-rest-beta&preserve-view=true) and [virtualEventWebinar](/graph/api/resources/virtualeventwebinar?view=graph-rest-beta&preserve-view=true) to identify the external event information of a virtual event.
+- Use the **allowedLobbyAdmitters** property on [onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true) to get or set the users who can admit from the lobby.
+- [Get](/graph/api/copilotadminlimitedmode-get?view=graph-rest-beta&preserve-view=true) or [set](/graph/api/copilotadminlimitedmode-update?view=graph-rest-beta&preserve-view=true) whether users of Microsoft 365 Copilot in Teams meetings can receive responses to sentiment-related prompts.
 
 ## October 2024: New and generally available
 
