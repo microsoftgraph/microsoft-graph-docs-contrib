@@ -102,6 +102,7 @@ Content-Type: application/json
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#applications('bc057821-f236-49d6-9f2c-1ebf43e9437a')/inheritablePermissions/$entity",
+  "@odata.type": "#microsoft.graph.inheritablePermission",
   "resourceAppId": "00000003-0000-0ff1-ce00-000000000000",
   "inheritableScopes": {
     "@odata.type": "microsoft.graph.allAllowedScopes",
@@ -153,6 +154,7 @@ Content-Type: application/json
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#applications('bc057821-f236-49d6-9f2c-1ebf43e9437a')/inheritablePermissions/$entity",
+  "@odata.type": "#microsoft.graph.inheritablePermission",
   "resourceAppId": "00000003-0000-0000-c000-000000000000",
   "inheritableScopes": {
     "@odata.type": "microsoft.graph.enumeratedScopes",
@@ -202,6 +204,7 @@ Content-Type: application/json
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#applications('bc057821-f236-49d6-9f2c-1ebf43e9437a')/inheritablePermissions/$entity",
+  "@odata.type": "#microsoft.graph.inheritablePermission",
   "resourceAppId": "00000003-0000-0000-c000-000000000000",
   "inheritableScopes": {
     "@odata.type": "microsoft.graph.noScopes",
