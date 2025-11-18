@@ -40,7 +40,7 @@ GET /users/{usersId}/mailFolders/{mailFolderId}/userConfigurations/{userConfigur
 
 ## Optional query parameters
 
-This method does not support any OData query parameter as explained in [OData query parameters](/graph/query-parameters).
+This method doesn't support [OData query parameters](/graph/query-parameters) to customize the response.
 
 ## Request headers
 
@@ -101,7 +101,7 @@ Content-Type: application/json
       "valueEntry": {
         "type": "boolean",
         "values": [
-          "True"
+          "true"
         ]
       }
     },
