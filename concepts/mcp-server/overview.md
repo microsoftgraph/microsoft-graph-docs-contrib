@@ -6,7 +6,7 @@ ms.author: ombongifaith
 ms.reviewer: Licantrop0
 ms.subservice: entra-id
 ms.topic: overview
-ms.date: 11/17/2025
+ms.date: 11/18/2025
 
 #customer intent: As a developer or IT administrator, I want to understand the Microsoft MCP Server for Enterprise so that I can effectively use natural language to query and manage my organization's identity and device data.
 ---
@@ -75,7 +75,7 @@ All operations respect Microsoft Graph permissions and privileges and security p
 
 You **don't need an extra cost or separate license** to use the Microsoft MCP Server for Enterprise. 
 
-However, you still need the right licenses for the data you're accessing. For example, you need a Microsoft Entra ID P2 license to access user sign-in logs.
+However, you still need the right licenses for the data you're accessing. For example, you need a Microsoft Entra ID Governance or Microsoft Entra ID P2 license to access Privileged Identity Management (PIM) data.
 
 The MCP server follows the same throttling limits as Microsoft Graph APIs.
 
