@@ -7,6 +7,8 @@ ms.reviewer: dastrock,yukarppa,etbasser,kvenkit
 ms.subservice: applications
 ms.topic: overview
 ms.date: 11/18/2025
+doc_type: conceptualPageType
+ms.localizationpriority: high
 
 #customer intent: As a developer, I want to understand how to use Microsoft Graph APIs for Microsoft Entra Agent ID so that I can manage agent identities effectively.
 ---
