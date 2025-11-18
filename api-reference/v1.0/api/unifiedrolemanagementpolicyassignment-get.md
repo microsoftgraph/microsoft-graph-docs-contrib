@@ -46,7 +46,7 @@ To retrieve the details of a policy assignment made in PIM for Microsoft Entra r
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /policies/roleManagementPolicyAssignments/{unifiedRoleManagementPolicyAssignmentId}
 ```
 
@@ -122,7 +122,7 @@ GET https://graph.microsoft.com/v1.0/policies/roleManagementPolicyAssignments/Di
   "@odata.type": "microsoft.graph.unifiedRoleManagementPolicyAssignment"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -192,7 +192,7 @@ GET https://graph.microsoft.com/v1.0/policies/roleManagementPolicyAssignments/Di
   "@odata.type": "microsoft.graph.unifiedRoleManagementPolicyAssignment"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -531,7 +531,7 @@ The following example shows a request.
   "name": "get_unifiedrolemanagementpolicyassignment_azureADGroup"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/policies/roleManagementPolicyAssignments/Group_60bba733-f09d-49b7-8445-32369aa066b3_f21b26d9-9ff9-4af1-b1d4-bddf28591369_member
 ```
 
@@ -576,7 +576,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.unifiedRoleManagementPolicyAssignment"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

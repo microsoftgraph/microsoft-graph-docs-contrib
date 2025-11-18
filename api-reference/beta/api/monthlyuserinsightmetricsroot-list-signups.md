@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /reports/userInsights/monthly/signUps
 ```
 
@@ -60,7 +60,7 @@ The following example shows a request.
   "name": "list_monthlyusersignupmetric"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/reports/userInsights/monthly/signUps
 ```
 
@@ -103,7 +103,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.userSignUpMetric)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

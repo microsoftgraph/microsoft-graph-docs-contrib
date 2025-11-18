@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [application](../resources/application.md) object.
+Create a new [application](../resources/application.md) object. This API can also create an [agentIdentityBlueprint](../resources/agentidentityblueprint.md) object when the **@odata.type** property is set to `#microsoft.graph.agentIdentityBlueprint`.
 
 > [!IMPORTANT]
 >
@@ -44,11 +44,11 @@ POST /applications
 | Content-Type   | application/json. Required.|
 
 ## Request body
-In the request body, supply a JSON representation of [application](../resources/application.md) object. The request body must contain  **displayName**, which is a required property.
+In the request body, supply a JSON representation of [application](../resources/application.md) object. The request body must contain  **displayName**, which is a required property. To create an [agentIdentityBlueprint](../resources/agentidentityblueprint.md), also set the **@odata.type** property to `#microsoft.graph.agentIdentityBlueprint`.
 
 ## Response
 
-If successful, this method returns `201 Created` response code and an [application](../resources/application.md) object in the response body.
+If successful, this method returns `201 Created` response code and an [application](../resources/application.md) or [agentIdentityBlueprint](../resources/agentidentityblueprint.md) object in the response body.
 
 ## Examples
 

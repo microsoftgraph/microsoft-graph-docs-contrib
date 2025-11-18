@@ -22,9 +22,9 @@ highlightedContent:
     - title: Microsoft Graph REST API
       itemType: reference
       url: /graph/api/overview?view=graph-rest-1.0&preserve-view=true
-    - title: Build connectors for Microsoft 365 Copilot
-      itemType: concept
-      url: /graph/connecting-external-content-experiences#microsoft-365-copilot
+    - title: Microsoft MCP Server for Enterprise
+      itemType: whats-new
+      url: /graph/mcp-server/overview
     - title: API Changelog
       itemType: whats-new
       url: https://developer.microsoft.com/en-us/graph/changelog
@@ -111,6 +111,10 @@ tools:
     - title: IaC templates
       imageSrc: ./images/hub/icon02-quickstart.svg
       url: /graph/templates/
+      # Card
+    - title: Microsoft MCP Server for Enterprise
+      imageSrc: ./images/index/i_backlog.svg
+      url: /graph/mcp-server/overview
 
 additionalContent:
   sections:

@@ -35,7 +35,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /security/incidentTasks/{incidentTaskId}
 ```
 
@@ -62,7 +62,7 @@ If successful, this method returns a `200 OK` response code and the [security-in
   "name": "get_incidenttask"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/security/incidentTasks/213213
 ```
 
@@ -103,7 +103,7 @@ GET https://graph.microsoft.com/beta/security/incidentTasks/213213
   "@odata.type": "microsoft.graph.security.incidentTask"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 

@@ -60,7 +60,7 @@ The following example shows a request.
   "name": "list_inactivegcpserviceaccountfinding"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/gcp/findings/microsoft.graph.inactiveGcpServiceAccountFinding
 ```
 
@@ -103,7 +103,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.inactiveGcpServiceAccountFinding)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
