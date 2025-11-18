@@ -5640,3 +5640,24 @@ Possible values for user account types (group membership), per Windows definitio
 |group|
 |sts|
 |unknownFutureValue|
+
+### accessReviewPrincipalScopeType values
+
+|Member|
+|:---|
+|allUsers|
+|guestUsers|
+|inactiveUsers|
+|inactiveGuestUsers|
+|unknownFutureValue|
+
+### accessReviewResourceScopeType values
+
+|Member|
+|:---|
+|group|
+|catalog|
+|servicePrincipal|
+|directoryRole|
+|accessPackageAssignmentPolicy|
+|unknownFutureValue|
