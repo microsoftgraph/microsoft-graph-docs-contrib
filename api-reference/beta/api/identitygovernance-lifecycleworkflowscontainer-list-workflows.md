@@ -69,7 +69,7 @@ The following example shows a request.
   "name": "lifecycleworkflows_list_workflow"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workflows
 ```
 
@@ -202,7 +202,7 @@ The following example shows a request.
   "name": "lifecycleworkflows_list_workflow_select"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workflows?$filter=category eq 'leaver'&$select=id,category,displayName,isEnabled,isSchedulingEnabled
 ```
 

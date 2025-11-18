@@ -62,7 +62,7 @@ The following example shows a request.
   "name": "get_trustframeworkkey_v2"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/trustFramework/keySets/{trustFrameworkKeySetId}/keys_v2/{aTREvwojOB9ph3fr2r6eTf_5eD5fmQsfsapVMwYI3o}
 ```
 

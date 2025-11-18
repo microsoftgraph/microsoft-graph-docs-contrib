@@ -58,7 +58,7 @@ If successful, this method returns a `200 OK` response code and a [personAnnotat
   "name": "get_personannotation"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/profile/notes/{id}
 ```
 

@@ -65,7 +65,7 @@ The following example shows a request.
   "name": "get_sitesettings"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/sites/03164a2b-a288-486a-993e-c41454113e2a/settings
 ```
 

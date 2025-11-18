@@ -59,7 +59,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
   "name": "list_agreementfilelocalization"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/identityGovernance/termsOfUse/agreements/94410bbf-3d3e-4683-8149-f034e55c39dd?$expand=files
 ```
 

@@ -63,7 +63,7 @@ The following example shows a request.
   "name": "serviceactivitythis.getactiveusermetricsforoutlookwebbyreademail"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/reports/serviceActivity/getActiveUserMetricsForOutlookWebByReadEmail(inclusiveIntervalStartDateTime=2024-10-02T10:30:00Z,exclusiveIntervalEndDateTime=2024-10-02T10:59:59Z,aggregationIntervalInMinutes=10)
 ```
 

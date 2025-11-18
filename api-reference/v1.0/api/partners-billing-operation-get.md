@@ -72,7 +72,7 @@ The following example shows a request that returns a [microsoft.graph.partners.b
   "name": "get_billing_operation"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/reports/partners/billing/operations/6fe687d7-1e0f-4bd6-9091-4672691f64bc
 ```
 
@@ -144,7 +144,7 @@ The following example shows a request that returns a [microsoft.graph.partners.b
   "name": "get_billing_operation_failed"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/reports/partners/billing/operations/6fe687d7-1e0f-4bd6-9091-4672691f64bc
 ```
 
@@ -219,7 +219,7 @@ The following example shows a request that returns a [microsoft.graph.partners.b
   "name": "get_billing_operation_running"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/reports/partners/billing/operations/6fe687d7-1e0f-4bd6-9091-4672691f64bc
 ```
 

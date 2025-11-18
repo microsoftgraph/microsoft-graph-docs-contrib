@@ -68,7 +68,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 }
 -->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/061b9a92-8926-4bd9-b41d-abf35edc7583/operations
 ```
 
