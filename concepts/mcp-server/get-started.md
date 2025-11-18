@@ -72,7 +72,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals?$filter=appId eq 'e8c77dc
 # [Microsoft Entra PowerShell](#tab/powershell)
 
 ```powershell
-Get-EntraServicePrincipal -Filter "displayName eq 'Microsoft MCP Server for Enterprise'
+Get-EntraServicePrincipal -Filter "displayName eq 'Microsoft MCP Server for Enterprise'"
 ```
 
 # [Admin portal](#tab/portal)
