@@ -46,14 +46,13 @@ Describes the information protection label that details how to properly apply a 
 | contentFormats | String collection | Returns the supported content formats for the label.                                                       |
 | description    | String            | The admin-defined description for the label.                                                               |
 | displayName    | String            | The display name of the sensitivity label. |
-| hasProtection  | Boolean           | Indicates whether the label has protection actions configured.                                             |
+| hasProtection  | Boolean           | Indicates whether the label has protection actions (Encryption, DoNotForward etc) configured.                                             |
 | id             | String            | The label ID is a globally unique identifier (GUID).                                                       |
 | isActive       | Boolean           | Indicates whether the label is active or not. Active labels should be hidden or disabled in the UI.        |
 | isAppliable    | Boolean           | Indicates whether the label can be applied to content. `False` if the label is a parent with child labels. |
 | isDefault      | Boolean           | `true` if the label is the default label for the policy; `false` otherwise. |
 | isEnabled      | Boolean           | `true` if the label is currently enabled; `false` otherwise. |
 | isEndpointProtectionEnabled | Boolean | `true` if the label provides protection settings enforced by endpoint Data Loss Prevention; `false` otherwise. |
-| hasProtection  | Boolean           | Indicates whether the label has rights based protection actions configured.                                |
 | isScopedToUser | Boolean           | Indicates if the label is scoped to specific users or groups (`true`) or available to the entire tenant (`false`). |
 | labelActions   | [labelActionBase](../resources/labelactionbase.md) collection | The actions that are associated with the label.                                                                 |
 | locale         | String | The locale associated with the label's localized properties (for example, 'en-US'). Used in the context of listing labels scoped to user/locale. |
