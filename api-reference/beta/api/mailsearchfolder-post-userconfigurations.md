@@ -53,8 +53,8 @@ You can specify the following properties when you create a **userConfiguration**
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The unique key.|
 |binaryData|Binary|Arbitrary binary data. Optional.|
+|id|String|The unique key.|
 |structuredData|[structuredDataEntry](../resources/structureddataentry.md) collection|Key-value pairs of supported data types. Optional.|
 |xmlData|Binary|Binary data for storing serialized XML. Optional.|
 
@@ -92,7 +92,7 @@ Content-Type: application/json
       "valueEntry": {
         "type": "boolean",
         "values": [
-          "True"
+          "true"
         ]
       }
     },
@@ -187,7 +187,7 @@ Content-Type: application/json
       "valueEntry": {
         "type": "boolean",
         "values": [
-          "True"
+          "true"
         ]
       }
     },
