@@ -27,6 +27,7 @@ Represents a defined collection of provisioning policy assignments.
 |Relationship|Type|Description|
 |:---|:---|:---|
 |assignedUsers|[user](../resources/user.md) collection|The assignment targeted users for the provisioning policy. This list of users is computed based on assignments, licenses, group memberships, and policies. This property is read-only. Supports` $expand`.|
+|userSettingsPersistenceDetail|[cloudPCUserSettingsPersistenceDetail](../resources/cloudpcusersettingspersistencedetail.md) | The assignment targeted user settings persistence for the provisioning policy. It allows user application data and Windows settings to be saved and applied between sessions.|
 
 ## JSON representation
 
