@@ -22,9 +22,9 @@
       "Id": "74822189-e8aa-4771-a4e0-47479b51dfe9",
       "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2025-08-06T22:31:35.6882835Z",
-      "WorkloadArea": "Microsoft.MobilityService",
-      "SubArea": ""
+      "CreatedDateTime": "2025-11-18T22:31:35.6882835Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
     },
     {
       "ChangeList": [

@@ -3,24 +3,6 @@
     {
       "ChangeList": [
         {
-          "Id": "4bd57b38-2da3-442a-99d5-a0b760c82a10",
-          "ApiChange": "Property",
-          "ChangedApiName": "isAgenticExperienceEnabled",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **isAgenticExperienceEnabled** property from the [assignmentReviewSettings](https://learn.microsoft.com/en-us/graph/api/resources/assignmentReviewSettings?view=graph-rest-beta) resource.",
-          "Target": "assignmentReviewSettings"
-        }
-      ],
-      "Id": "4bd57b38-2da3-442a-99d5-a0b760c82a10",
-      "Cloud": "Prod",
-      "Version": "beta",
-      "CreatedDateTime": "2025-08-07T17:40:11.9922416Z",
-      "WorkloadArea": "Identity and access",
-      "SubArea": "Governance"
-    },
-    {
-      "ChangeList": [
-        {
           "Id": "2e9689f1-ac83-4805-bd3e-6916503a87d1",
           "ApiChange": "Resource",
           "ChangedApiName": "targetUserSponsors",
@@ -1419,6 +1401,40 @@
       "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2024-04-24T15:31:43.4884252Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "dc5589d3-376b-440c-90d7-516a238f5202",
+          "ApiChange": "Resource",
+          "ChangedApiName": "customDataProvidedResource",
+          "ChangeType": "Addition",
+          "Description": "Added the [customDataProvidedResource](https://learn.microsoft.com/en-us/graph/api/resources/customDataProvidedResource?view=graph-rest-beta) resource.",
+          "Target": "customDataProvidedResource"
+        },
+        {
+          "Id": "dc5589d3-376b-440c-90d7-516a238f5202",
+          "ApiChange": "Property",
+          "ChangedApiName": "notificationEndpointConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the **notificationEndpointConfiguration** property to the [customDataProvidedResource](https://learn.microsoft.com/en-us/graph/api/resources/customDataProvidedResource?view=graph-rest-beta) resource.",
+          "Target": "customDataProvidedResource"
+        },
+        {
+          "Id": "dc5589d3-376b-440c-90d7-516a238f5202",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "catalogs",
+          "ChangeType": "Addition",
+          "Description": "Added the **catalogs** relationship to the [identityGovernance](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance?view=graph-rest-beta) resource.",
+          "Target": "identityGovernance"
+        }
+      ],
+      "Id": "dc5589d3-376b-440c-90d7-516a238f5202",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-11-12T21:42:59.7441469Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Governance"
     }
