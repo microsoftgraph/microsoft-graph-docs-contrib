@@ -78,7 +78,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
   "sampleKeys": ["sandeep@contoso.com"]
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users/sandeep@contoso.com/authentication/microsoftAuthenticatorMethods
 ```
 

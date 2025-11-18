@@ -60,7 +60,7 @@ The following example shows a request.
   "name": "list_privilegeescalationgcpserviceaccountfinding"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/gcp/findings/microsoft.graph.privilegeEscalationGcpServiceAccountFinding
 ```
 

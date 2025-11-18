@@ -56,6 +56,8 @@ The following table shows the properties accepted to update an `accessReviewInst
 |:-------------|:------------|:------------|
 | decision  | String | Access decision for the entity being reviewed. Possible values are: `Approve` `Deny` `NotReviewed` `DontKnow`. Required.  |
 |  justification | String | Context of the review provided to admins. Required if justificationRequiredOnApproval is True on the accessReviewScheduleDefinition.  |
+| applyResult | String| The result of the apply action. Only supported for BYOD scenarios. Possible values: `New`, `AppliedSuccessfully`, `AppliedWithUnknownFailure`, `AppliedSuccessfullyButObjectNotFound`, and `ApplyNotSupported`. |
+| applyDescription | String | A description of the applyResult |
 
 ## Response
 If successful, this method returns a `204 No Content` response code and no response body.
@@ -174,6 +176,38 @@ Content-Type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
+
+#### Response
+
+<!-- {
+  "blockType": "response"
+} -->
+```http
+HTTP/1.1 204 Accepted
+```
+
+### Example 3: Update a applyResult on an accessReviewInstance
+
+#### Request
+
+The following is an example of updating the applyResult on a BYOD decision.
+
+
+
+<!-- {
+  "blockType": "request",
+  "name": "update_accessReviewDefinitionInstanceDecisionsItem_3"
+}-->
+``` http
+PATCH https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/5eac5a70-7cd7-4f20-92b0-f9dba70dd7f0/instances/6444d4fd-ab55-4608-8cf9-c6702d172bcc/decisions/e6cafba0-cbf0-4748-8868-0810c7f4cc06
+Content-Type: application/json
+
+{
+  "applyResult": "AppliedSuccessfully",
+  "applyDescription": "Completed by John Doe",
+}
+```
+
 
 #### Response
 

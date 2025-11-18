@@ -60,7 +60,7 @@ The following example shows a request.
   "name": "get_inactivegcpserviceaccountfinding"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/gcp/findings/MSxJbmFjdGl2ZUdjcFNlcnZpY2VBY2NvdW50RmluZGluZywxNDM1NjM/microsoft.graph.inactiveGcpServiceAccountFinding
 ```
 

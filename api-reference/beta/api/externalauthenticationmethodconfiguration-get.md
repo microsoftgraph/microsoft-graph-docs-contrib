@@ -66,7 +66,7 @@ The following example shows a request.
   "name": "get_externalauthenticationmethodconfiguration"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/b3107ab7-68c7-4553-a167-48c1e9c24d52
 ```
 

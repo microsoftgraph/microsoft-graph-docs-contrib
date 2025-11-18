@@ -66,7 +66,7 @@ The following example shows a request.
   "name": "lifecycleworkflows_get_lifecyclemanagementsettings"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/settings
 ```
 

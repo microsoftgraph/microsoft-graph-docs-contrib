@@ -868,3 +868,150 @@ Content-type: application/json
   }
 }
 ```
+
+### Example 6: Create a single stage access review on a catalog
+
+The following example creates an access review with the following settings:
++ The review reviews all users who have access to the resources specified within a catalog.
++ The resource owner is the reviewer.
++ It recurs weekly and continues indefinitely.
++ For catalogs with custom data provided resources, the data should be uploaded after the access review instance reaches an `Initializing` state.
+
+#### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "create_accessReviewScheduleDefinition_catalog"
+}-->
+```http
+POST https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions
+Content-type: application/json
+
+{
+  "displayName": "Review of catalog",
+  "descriptionForAdmins": "Review of all resources in a catalog",
+  "descriptionForReviewers": "If you have any questions, contact jerry@contoso.com",
+  "scope": {
+    "@odata.type": "#microsoft.graph.accessReviewResourceScope",
+    "resourceScopes": [
+      {
+        "resourceId": "a45681aa-35f2-47c6-958b-741d6b09a033",
+        "displayName": "My Catalog",
+        "scopeType": "catalog"
+      }
+    ],
+    "principalScopes": [
+      {
+        "@odata.type": "#microsoft.graph.accessReviewPrincipalScope",
+        "scopeType": "allUsers"
+      }
+    ]
+  },
+  "reviewers": [
+    {
+      "@odata.type": "#microsoft.graph.accessReviewReviewerScope",
+      "scopeType": "resourceOwner"
+    }
+  ],  
+  "settings": {
+    "mailNotificationsEnabled": true,
+    "reminderNotificationsEnabled": true,
+    "justificationRequiredOnApproval": true,
+    "defaultDecisionEnabled": false,
+    "defaultDecision": "None",
+    "instanceDurationInDays": 1,
+    "recommendationsEnabled": true,
+    "recurrence": {
+      "pattern": {
+        "type": "weekly",
+        "interval": 1
+      },
+      "range": {
+        "type": "noEnd",
+        "startDate": "2020-09-08T12:02:30.667Z"
+      }
+    }
+  }
+}
+```
+
+
+#### Response
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessReviewScheduleDefinition"
+} -->
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+  "id": "29f2d16e-9ca6-4052-bbfe-802c48944448",
+  "displayName": "Test create",
+  "createdDateTime": "0001-01-01T00:00:00Z",
+  "lastModifiedDateTime": "0001-01-01T00:00:00Z",
+  "status": "NotStarted",
+  "descriptionForAdmins": "Test create",
+  "descriptionForReviewers": "Test create",
+  "instanceEnumerationScope": null,
+  "createdBy": {
+    "id": "957f1027-c0ee-460d-9269-b8444459e0fe",
+    "displayName": "MOD Administrator",
+    "userPrincipalName": "admin@contoso.com"
+  },
+  "scope": {
+    "@odata.type": "#microsoft.graph.accessReviewResourceScope",
+    "resourceScopes": [
+      {
+        "resourceId": "a45681aa-35f2-47c6-958b-741d6b09a033",
+        "displayName": "My Catalog",
+        "scopeType": "catalog"
+      }
+    ],
+    "principalScopes": [
+      {
+        "@odata.type": "#microsoft.graph.accessReviewPrincipalScope",
+        "scopeType": "allUsers"
+      }
+    ]
+  },
+  "reviewers": [
+    {
+      "@odata.type": "#microsoft.graph.accessReviewReviewerScope",
+      "scopeType": "resourceOwner"
+    }
+  ],  
+  "settings": {
+    "mailNotificationsEnabled": true,
+    "reminderNotificationsEnabled": true,
+    "justificationRequiredOnApproval": true,
+    "defaultDecisionEnabled": false,
+    "defaultDecision": "None",
+    "instanceDurationInDays": 1,
+    "autoApplyDecisionsEnabled": false,
+    "recommendationsEnabled": true,
+    "recurrence": {
+      "pattern": {
+        "type": "weekly",
+        "interval": 1,
+        "month": 0,
+        "dayOfMonth": 0,
+        "daysOfWeek": [],
+        "firstDayOfWeek": "sunday",
+        "index": "first"
+      },
+      "range": {
+        "type": "noEnd",
+        "numberOfOccurrences": 0,
+        "recurrenceTimeZone": null,
+        "startDate": "2020-09-08",
+        "endDate": null
+      }
+    },
+  "applyActions": []
+  },
+  "additionalNotificationRecipients": []
+}
+```

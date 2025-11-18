@@ -65,7 +65,7 @@ The following example shows a request to retrieve a changelog of a scheduled per
   "name": "list_permissionsrequestchange"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/permissionsManagement/permissionsRequestChanges?$filter=modificationDateTime gt {t}
 ```
 

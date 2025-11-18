@@ -1735,6 +1735,9 @@ Namespace: microsoft.graph
 | userChangedPasswordOnPremises |
 | adminDismissedRiskForSignIn |
 | adminConfirmedAccountSafe |
+| adminConfirmedAgentSafe |
+| adminConfirmedAgentCompromised |
+| adminDismissedRiskForAgent |
 
 <!-- maintenance comment: Do not delete enum delcaration for riskEventType until all properties of this type are marked as deleted. Dec 28, 2021: Pending eventTypes (in riskUserActivity) and riskType (in riskDetection)-->
 ### riskEventType values
@@ -5564,11 +5567,51 @@ Possible values for user account types (group membership), per Windows definitio
 |d1|
 |unknownFutureValue|
 
+### webApplicationFirewallDnsRecordType values 
+
+|Member|
+|:---|
+|cname|
+|unknownFutureValue|
+
+### webApplicationFirewallProviderType values 
+
+|Member|
+|:---|
+|akamai|
+|cloudflare|
+|unknownFutureValue|
+
+### webApplicationFirewallVerificationStatus values 
+
+|Member|
+|:---|
+|success|
+|warning|
+|failure|
+|unknownFutureValue|
+
 ### claimBindingSource values 
 
 |Member|
 |:---|
 |directory|
+|unknownFutureValue|
+
+### customDataProvidedResourceUploadStatus values 
+
+|Member|
+|:---|
+|active|
+|complete|
+|expired|
+|unknownFutureValue|
+
+### principalType values 
+
+|Member|
+|:---|
+|entraIdUser|
 |unknownFutureValue|
 
 ### verifiedIdProfileState values 
@@ -5588,6 +5631,7 @@ Possible values for user account types (group membership), per Windows definitio
 |all|
 |unknownFutureValue|
 
+
 ### siteTemplateType values 
 
 |Member|
@@ -5595,4 +5639,25 @@ Possible values for user account types (group membership), per Windows definitio
 |sitepagepublishing|
 |group|
 |sts|
+|unknownFutureValue|
+
+### accessReviewPrincipalScopeType values
+
+|Member|
+|:---|
+|allUsers|
+|guestUsers|
+|inactiveUsers|
+|inactiveGuestUsers|
+|unknownFutureValue|
+
+### accessReviewResourceScopeType values
+
+|Member|
+|:---|
+|group|
+|catalog|
+|servicePrincipal|
+|directoryRole|
+|accessPackageAssignmentPolicy|
 |unknownFutureValue|

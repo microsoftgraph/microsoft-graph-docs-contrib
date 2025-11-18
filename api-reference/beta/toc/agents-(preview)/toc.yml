@@ -1,0 +1,48 @@
+#
+# GENERATED FILE - DO NOT EDIT
+#
+items:
+- name: Agent registry
+  items:
+  - name: Agent instance
+    items:
+    - name: Agent instance
+      href: ../../resources/agentinstance.md
+    - name: List
+      href: ../../api/agentregistry-list-agentinstances.md
+    - name: Create
+      href: ../../api/agentregistry-post-agentinstances.md
+    - name: Get
+      href: ../../api/agentinstance-get.md
+    - name: Update
+      href: ../../api/agentinstance-update.md
+    - name: Delete
+      href: ../../api/agentregistry-delete-agentinstances.md
+  - name: Agent card manifest
+    items:
+    - name: Agent card manifest
+      href: ../../resources/agentcardmanifest.md
+    - name: List
+      href: ../../api/agentinstance-list-agentcardmanifest.md
+    - name: Get
+      href: ../../api/agentcardmanifest-get.md
+    - name: Update
+      href: ../../api/agentcardmanifest-update.md
+  - name: Agent collection
+    items:
+    - name: Agent collection
+      href: ../../resources/agentcollection.md
+    - name: List
+      href: ../../api/agentinstance-list-collections.md
+    - name: Create
+      href: ../../api/agentregistry-post-agentcollections.md
+    - name: Get
+      href: ../../api/agentcollection-get.md
+    - name: Update
+      href: ../../api/agentcollection-update.md
+    - name: List members of agentCollection
+      href: ../../api/agentcollection-list-members.md
+    - name: Add to collection
+      href: ../../api/agentcollection-post-members.md
+    - name: Remove from collection
+      href: ../../api/agentcollection-delete-members.md
