@@ -38,7 +38,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 DELETE /places/{id}
 ```
 
@@ -70,7 +70,7 @@ The following example shows a request.
   "name": "delete_place"
 }
 -->
-``` http
+```http
 DELETE https://graph.microsoft.com/beta/places/5e19bbf6-067c-4a92-9685-1f01545f02e4
 ```
 
@@ -112,7 +112,7 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 

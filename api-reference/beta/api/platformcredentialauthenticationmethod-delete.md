@@ -38,7 +38,7 @@ Delete your own Platform Credential authentication method.
 [!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
 
 <!-- { "blockType": "ignored" } -->
-``` http
+```http
 DELETE /me/authentication/platformCredentialMethods/{platformCredentialAuthenticationMethodId}
 ```
 
@@ -47,7 +47,7 @@ Delete your own or another user's Platform Credential authentication method.
 [!INCLUDE [authentication-methods-apis-users-selfservice](../includes/authentication-methods-apis-users-selfservice.md)]
 
 <!-- { "blockType": "ignored" } -->
-``` http
+```http
 DELETE /users/{id | userPrincipalName}/authentication/platformCredentialMethods/{platformCredentialAuthenticationMethodId}
 ```
 
@@ -76,7 +76,7 @@ The following example shows a request.
   "sampleKeys": ["kim@contoso.com", "R18B3t8Ogh9XIOGmPt81d6p_KXJs1YTxfGgGqeVFJSM1"]
 }
 -->
-``` http
+```http
 DELETE https://graph.microsoft.com/beta/users/kim@contoso.com/authentication/platformCredentialMethods/R18B3t8Ogh9XIOGmPt81d6p_KXJs1YTxfGgGqeVFJSM1
 ```
 
@@ -118,6 +118,6 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```

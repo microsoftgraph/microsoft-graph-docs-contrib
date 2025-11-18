@@ -33,6 +33,10 @@ autopilotConfiguration.setDevicePreparationProfileId("59e5d3d2-ec68-4bfe-9693-27
 autopilotConfiguration.setApplicationTimeoutInMinutes(30);
 autopilotConfiguration.setOnFailureDeviceAccessDenied(false);
 cloudPcProvisioningPolicy.setAutopilotConfiguration(autopilotConfiguration);
+CloudPcUserSettingsPersistenceConfiguration userSettingsPersistenceConfiguration = new CloudPcUserSettingsPersistenceConfiguration();
+userSettingsPersistenceConfiguration.setUserSettingsPersistenceEnabled(false);
+userSettingsPersistenceConfiguration.setUserSettingsPersistenceStorageSizeCategory(CloudPcUserSettingsPersistenceStorageSizeCategory.FourGB);
+cloudPcProvisioningPolicy.setUserSettingsPersistenceConfiguration(userSettingsPersistenceConfiguration);
 HashMap<String, Object> additionalData = new HashMap<String, Object>();
 additionalData.put("onPremisesConnectionId", "4e47d0f6-6f77-44f0-8893-c0fe1701ffff");
 cloudPcProvisioningPolicy.setAdditionalData(additionalData);
