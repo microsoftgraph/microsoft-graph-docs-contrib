@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 Represents a group of functionalities provided by the Privileged Identity Management (PIM) iteration 2 service. Different instances of `privilegedAccess` represent different providers managed by PIM; for example, `privilegedAccess/azureResources` represents PIM managing privileged access to Azure resources.
 
-`privilegedAccess` is read-only for now. No `POST`, `PUT`, `PATCH`, or `DELETE` operations are supported on the `privilegedAccess` entity set.
+`privilegedAccess` is read-only.
 
 ## Properties
 | Property	| Type	    |Description|
