@@ -1,6 +1,6 @@
 ---
-title: "Chat: completeMigration"
-description: "Completes the migration of external messages by removing migration mode from a chat."
+title: "chat: completeMigration"
+description: "Complete the migration of external messages by removing migration mode from a chat."
 ms.localizationpriority: medium
 author: "MehakAgarwal"
 ms.subservice: "teams"
@@ -8,15 +8,15 @@ doc_type: apiPageType
 ms.date: 06/12/2025
 ---
 
-# Chat: completeMigration
+# chat: completeMigration
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Completes the ongoing migration of external messages on the target chat. Previously, users were only allowed to initiate complete migration operations on newly created standard channels, which were created for the initial migration flow. ([import-external-messages-to-teams](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)).
+Complete the migration of external messages by removing migration mode from a [chat](../resources/chat.md). Previously, users were only allowed to initiate complete migration operations on newly created standard channels that were created for the initial migration flow. For more information, see [Import third-party platform messages to Teams using Microsoft Graph](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams).
 
-After a **completeMigration** request is made for existing or new chat, Users can start a new migration session by calling [start migration on chat](chat-startmigration.md).
+After a **completeMigration** request is made for an existing or new chat, you can start a migration session by calling [chat: startMigration](chat-startmigration.md).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -49,13 +49,15 @@ Don't supply a request body for this method.
 
 If successful, this method returns a `204 No Content` response code. It doesn't return anything in the response body.
 
-## Example 1: Complete migration of external messages in a chat
+## Examples
 
-### Request
+### Example 1: Complete the migration of external messages in a chat
+
+The following example shows how to complete the migration of external messages in a chat.
+
+#### Request
 
 The following example shows a request.
-<!-- markdownlint-disable MD025 -->
-<!-- markdownlint-disable MD022 -->
 
 <!-- {
   "blockType": "request",
@@ -67,11 +69,7 @@ The following example shows a request.
 POST https://graph.microsoft.com/beta/chats/19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2/completeMigration
 ```
 
----
-
-<!-- markdownlint-disable MD001 -->
-<!-- markdownlint-disable MD024 -->
-### Response
+#### Response
 
 The following example shows the response.
 <!-- {
@@ -83,8 +81,8 @@ The following example shows the response.
 HTTP/1.1 204 No Content
 ```
 
-## Example 2: Complete migration when chat is already in migration mode
-
+### Example 2: Complete the migration when a chat is already in migration mode
+The following example shows how to complete the migration when a chat is already in migration mode.
 #### Request
 
 The following example shows a request.
@@ -100,7 +98,7 @@ POST https://graph.microsoft.com/beta/chats/19:4b6bed8d24574f6a9e436813cb2617d8@
 ```
 
 #### Response
-
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true
