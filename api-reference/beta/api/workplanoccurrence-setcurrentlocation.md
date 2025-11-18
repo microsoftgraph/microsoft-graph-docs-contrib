@@ -1,6 +1,6 @@
 ---
 title: "workPlanOccurrence: setCurrentLocation"
-description: "Updates your work location for the current day or current active segment."
+description: "Update your work location for the current day or current active segment."
 author: "emilbekj"
 ms.localizationpriority: medium
 ms.subservice: "outlook"
@@ -70,7 +70,7 @@ If successful, this action returns a `204 No Content` response code.
 
 ### Example 1: Set current location to office
 
-### Request
+#### Request
 
 The following example shows a request.
 
@@ -90,7 +90,7 @@ Content-type: application/json
 }
 ```
 
-### Response
+#### Response
 
 The following example shows the response.
 
@@ -105,7 +105,7 @@ HTTP/1.1 204 No Content
 
 ### Example 2: Set current location to remote
 
-### Request
+#### Request
 
 The following example shows a request.
 
@@ -124,7 +124,7 @@ Content-type: application/json
 }
 ```
 
-### Response
+#### Response
 
 The following example shows the response.
 
