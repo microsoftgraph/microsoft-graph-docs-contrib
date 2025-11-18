@@ -160,6 +160,8 @@ Content-Type: application/json
 
 ### Example 2: Add members in bulk to a team using user principal name
 
+> **Note:** You can’t add a guest user to a team by using the user principal name (UPN).
+
 #### Request
 
 The following example shows a request to add multiple members to a team using user principal name of the members.
