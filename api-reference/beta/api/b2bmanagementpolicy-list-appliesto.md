@@ -1,5 +1,5 @@
 ---
-title: "List appliesTo"
+title: "List b2bManagementPolicy appliesTo"
 description: "Get a list of directoryObject objects that a b2bManagementPolicy object has been applied to."
 author: "akshukla"
 ms.date: 10/27/2025
@@ -8,7 +8,7 @@ ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
-# List appliesTo
+# List b2bManagementPolicy appliesTo
 
 Namespace: microsoft.graph
 
