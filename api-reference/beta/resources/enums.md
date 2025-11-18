@@ -5240,6 +5240,8 @@ Possible values for user account types (group membership), per Windows definitio
 |insiderRisk|
 |authenticationFlow|
 |unknownFutureValue|
+|agentIdRisk|
+|agentIdentities|
 
 ### insiderRiskLevel values
 
@@ -5249,6 +5251,25 @@ Possible values for user account types (group membership), per Windows definitio
 |minor|
 |moderate|
 |elevated|
+|unknownFutureValue|
+
+### conditionalAccessAgentIdRiskLevels values 
+
+|Member|
+|:---|
+|low|
+|medium|
+|high|
+|unknownFutureValue|
+
+### agentIdRiskLevel values 
+
+|Member|
+|:---|
+|none|
+|low|
+|medium|
+|high|
 |unknownFutureValue|
 
 ### userAction values
