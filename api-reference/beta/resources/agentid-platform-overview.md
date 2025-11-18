@@ -1,5 +1,5 @@
 ---
-title: Microsoft Entra Agent ID APIs in Microsoft Graph
+title: Microsoft Entra Agent ID APIs in Microsoft Graph (preview)
 ms.service: entra-id
 description: "Use Microsoft Entra Agent ID APIs in Microsoft Graph to create, secure, and monitor AI agent identities."
 author: FaithOmbongi
@@ -7,12 +7,12 @@ ms.author: ombongifaith
 ms.reviewer: dastrock,yukarppa,etbasser,kvenkit 
 ms.subservice: applications
 ms.topic: overview
-ms.date: 11/17/2025
+ms.date: 11/18/2025
 
 #customer intent: As a developer, I want to understand how to use Microsoft Graph APIs for Microsoft Entra Agent ID so that I can manage agent identities effectively.
 ---
 
-# Microsoft Entra Agent ID APIs in Microsoft Graph overview
+# Microsoft Entra Agent ID APIs in Microsoft Graph overview (preview)
 
 Microsoft Entra Agent ID APIs in Microsoft Graph help you create, secure, and manage AI agent identities operating in your organization. You can programmatically create agent identities, control their access to resources, and monitor their activities through a centralized platform.
 
@@ -54,10 +54,10 @@ See [Administrative relationships in Microsoft Entra Agent ID (owners, sponsors,
 
 ### Conditional Access
 
-You can programmatically apply Conditional Access policies to ensure that only approved agents can access specific resources, analyze potential agent risk, or detect and block risky agents from accessing resources.
+You can programmatically apply Conditional Access policies to enforce access policies on AI agents, based on agent identity, risk and other contextual factors.
 
 - Use the [What If evaluation API](../api/conditionalaccessroot-evaluate.md) to simulate how Conditional Access policies would affect agent identities trying to access resources.
-- Use the [Conditional Access policy APIs](../resources/conditionalaccesspolicy.md) to apply or manage Conditional Access policies to agents, including agent users. You can apply these policies based on various conditions such as location, device compliance, and risk level, or attributes.
+- Use the [Conditional Access policy APIs](../resources/conditionalaccesspolicy.md) to apply or manage Conditional Access policies for AI agents accessing organizational resources. You can apply these policies based on agent risk level, or custom security attributes assigned to the agents.
 
 ### Identity Protection
 
