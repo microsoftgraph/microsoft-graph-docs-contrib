@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Complete migration on existing channels or new channels. Previously, users were allowed to initiate complete migration operations only on newly created standard channels by creating migration templates, which were designed for the initial migration flow. For more information, see [Import third-party platform messages to Teams using Microsoft Graph](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams).
+Complete migration on existing [channels](../resources/channel.md) or new channels. Previously, users were allowed to initiate complete migration operations only on newly created standard channels by creating migration templates, which were designed for the initial migration flow. For more information, see [Import third-party platform messages to Teams using Microsoft Graph](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams).
 
 Consider the following points when completing migration for new and existing channels:
 
