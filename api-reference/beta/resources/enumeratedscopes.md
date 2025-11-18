@@ -1,6 +1,6 @@
 ---
 title: "enumeratedScopes resource type"
-description: "Inheritance pattern specifying an explicit allow-list of delegated permission scopes for a resource application that agent identities of an agent identity blueprint may acquire automatically without additional consent." 
+description: "Inheritance pattern specifying an explicit allow-list of delegated permission scopes for a resource application that agent identities of an agent identity blueprint may acquire automatically without enabling consent for each agent identity." 
 author: "zallison22"
 ms.date: 11/13/2025
 ms.localizationpriority: medium
@@ -24,7 +24,7 @@ Inherits from [inheritableScopes](../resources/inheritablescopes.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |kind|scopeCollectionKind|Always `enumerated` for this derived type. Inherited from [inheritableScopes](../resources/inheritablescopes.md).|
-|scopes|String collection|Required. Non‑empty list of delegated permission scope identifiers published by the resource application to inherit. Entries must be unique, conform to naming conventions (no whitespace; typically `Resource.Operation[.Constraint]`), and exclude any globally blocked scopes.|
+|scopes|String collection|Required. Nonempty list of delegated permission scope identifiers published by the resource application to inherit. Entries must be unique, conform to naming conventions (no whitespace; typically `Resource.Operation[.Constraint]`), and exclude any globally blocked scopes.|
 
 ## Relationships
 None.
