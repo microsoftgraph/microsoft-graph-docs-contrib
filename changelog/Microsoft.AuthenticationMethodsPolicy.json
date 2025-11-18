@@ -1007,6 +1007,12 @@
       "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2025-11-18T21:09:42.1591906Z",
+       "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+       "ChangeList": [
+         {
           "Id": "6ce1df57-2f89-4556-b0f0-f99d3429cf83",
           "ApiChange": "Resource",
           "ChangedApiName": "verifiableCredentialAuthenticationMethodTarget",
