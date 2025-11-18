@@ -23,8 +23,6 @@ requestBody.SetDescription(&description)
 settings := graphmodels.NewFileStorageContainerSettings()
 isOcrEnabled := false
 settings.SetIsOcrEnabled(&isOcrEnabled) 
-itemDefaultSensitivityLabelId := "3d8789ae-7375-4ded-8eeb-d6bc226e42fb"
-settings.SetItemDefaultSensitivityLabelId(&itemDefaultSensitivityLabelId) 
 requestBody.SetSettings(settings)
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go

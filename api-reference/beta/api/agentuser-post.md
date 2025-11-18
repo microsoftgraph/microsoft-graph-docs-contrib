@@ -81,6 +81,7 @@ Attempting to create an agentUser with an **identityParentId** already linked to
 
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_agentuser_agentuser"
@@ -98,6 +99,12 @@ Content-type: application/json
   "identityParentId": "a1b2c3d4-e5f6-7890-abcd-ef1234567890"
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-agentuser-agentuser-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 
