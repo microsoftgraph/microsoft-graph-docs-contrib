@@ -41,6 +41,7 @@ POST /solutions/virtualEvents/townhalls
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
+|Accept-Language| [Acceptable human languages for the response](/concepts/search-concept-acceptlanguage-header.md). Required. |
 
 ## Request body
 
@@ -69,7 +70,6 @@ If successful, this method returns a `201 Created` response code and a [virtualE
 ### Request
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_virtualeventtownhall"
@@ -78,6 +78,7 @@ The following example shows a request.
 ```http
 POST https://graph.microsoft.com/beta/solutions/virtualEvents/townhalls
 Content-Type: application/json
+Accept-Language: en-US
 
 {     
     "displayName": "The Impact of Tech on Our Lives",
@@ -106,12 +107,6 @@ Content-Type: application/json
 }
 ```
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-virtualeventtownhall-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 ### Response
 
 The following example shows the response.
@@ -125,6 +120,7 @@ The following example shows the response.
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
+Accept-Language: en-US
 
 { 
     "id": "bce9a3ca-a310-48fa-baf3-1cedcd04bb3f@4aa05bcc-1cac-4a83-a9ae-0db84b88f4ba",
