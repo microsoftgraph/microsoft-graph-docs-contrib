@@ -141,8 +141,9 @@
     },
     {
       "name": "Agents (preview)",
-      "overview": "",
-      "resources": [],
+      "overview": "../../resources/agentid-platform-overview.md",
+      "resources": ["agentUser"],
+      "shouldSort": true,
       "childNodes": [
           {
             "name": "Agent identities",
