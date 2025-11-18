@@ -31,6 +31,10 @@ The [driveItem: restore](/graph/api/driveitem-restore) method was expanded to en
   - [Retrieve user settings persistence profiles](/graph/api/cloudpcusersettingspersistencedetail-retrieveusersettingspersistenceprofiles?view=graph-rest-beta&preserve-view=true).
   - [Retrieve user settings persistence usage](/graph/api/cloudpcusersettingspersistencedetail-retrieveusersettingspersistenceprofileusage?view=graph-rest-beta&preserve-view=true).
 
+### Security | Alerts and incidents
+
+Use [aiAgentEvidence](/graph/api/resources/security-aiagentevidence) as a newly supported [alertEvidence](/graph/api/resources/security-alertevidence) type.
+
 ## November 2025: New in preview only
 
 ### Files
