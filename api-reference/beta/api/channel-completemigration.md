@@ -1,5 +1,5 @@
 ---
-title: "Channel: completeMigration"
+title: "channel: completeMigration"
 description: "Complete the migration of external messages by removing migration mode from a channel."
 ms.localizationpriority: medium
 author: "RamjotSingh"
@@ -8,22 +8,20 @@ doc_type: apiPageType
 ms.date: 04/05/2024
 ---
 
-# Channel: completeMigration
+# channel: completeMigration
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Complete migration on existing channels or new channels. Previously, users were only allowed to initiate complete migration operations on newly created standard channels by creating migration templates, which were created for the initial migration flow. ([import-external-messages-to-teams](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)).
+Complete migration on existing channels or new channels. Previously, users were allowed to initiate complete migration operations only on newly created standard channels by creating migration templates, which were designed for the initial migration flow. For more information, see [Import third-party platform messages to Teams using Microsoft Graph](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams).
 
-**Points to note:**
+Consider the following points when completing migration for new and existing channels:
 
-1) When a channel is created in migration mode for the initial import flow, the new API `Migration mode` from a [channel](../resources/channel.md) in a team is updated to **Completed** instead of being dropped, and the state is marked to chat/channels permanently. `Migration mode` is a special state that prevents certain operations, like sending messages and adding members, during the data migration process. Parent team won't be marked with migration mode.
-As team can't enter migration mode. its children channels can (general, standard, private and shared).
+- When a channel is created in migration mode for the initial import flow, the property **migrationMode** for a [channel](../resources/channel.md) in a team is updated to `completed` instead of being dropped, and the state is permanently marked for chats or channels. Migration mode is a special state that prevents certain operations, such as sending messages and adding members, during the data migration process. The parent team isn't marked with migration mode, as teams can't enter migration mode; only their child channels (general, standard, private, and shared) can.
+- For *existing* channels that are already in migration mode, the API completes the message migration process by updating **migrationMode** to `completed` for a [channel](../resources/channel.md) in a team.
 
-2) For **existing** channels, which are already in migration mode, the API completes the message migration process by populating `migration mode` to `Completed` for a [channel](../resources/channel.md) in a team.
-
-After a **completeMigration** request is made for existing or new channels, you can still import more messages into the team by calling [start migration on channel](channel-startmigration.md).
+After a **completeMigration** request is made for existing or new channels, you can still import more messages into the team by calling [channel: startMigration](channel-startmigration.md).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -56,9 +54,13 @@ Don't supply a request body for this method.
 
 If successful, this method returns a `204 No Content` response code. It doesn't return anything in the response body.
 
-## Example 1: Complete Migration when channel is in migration mode.
+## Examples
 
-### Request
+### Example 1: Complete the migration when a channel is in migration mode
+
+The following example shows how to complete the migration when a channel is in migration mode.
+
+#### Request
 
 The following example shows a request.
 
@@ -72,7 +74,7 @@ The following example shows a request.
 POST https://graph.microsoft.com/beta/teams/57fb72d0-d811-46f4-8947-305e6072eaa5/channels/19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2/completeMigration
 ```
 
-### Response
+#### Response
 
 The following example shows the response.
 <!-- {
@@ -84,8 +86,8 @@ The following example shows the response.
 HTTP/1.1 204 No Content
 ```
 
-## Example 2: Complete migration when channel isn't in migration mode
-
+### Example 2: Complete the migration when a channel isn't in migration mode
+The following example shows how to complete the migration when a channel isn't in migration mode
 #### Request
 
 The following example shows a request.
@@ -101,7 +103,7 @@ POST https://graph.microsoft.com/beta/teams/57fb72d0-d811-46f4-8947-305e6072eaa5
 ```
 
 #### Response
-
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
