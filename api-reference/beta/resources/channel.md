@@ -94,8 +94,8 @@ where files are shared, and where tabs are added.
 
 | Member             | Description                                                                       |
 |:-------------------|:----------------------------------------------------------------------------------|
-| inProgress           | The channel entered migration mode.                          |
-| completed            | The channel is out of migration mode. |
+| inProgress           | The channel or chat entered migration mode.                          |
+| completed            | The channel or chat is out of migration mode. |
 | unknownFutureValue | Evolvable enumeration sentinel value. Don't use.                                 |
 
 ### Instance attributes
