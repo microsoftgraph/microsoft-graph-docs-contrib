@@ -32,7 +32,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 To get a label as the signed-in user (delegated permission) or a specified user (application permission):
 
-``` http
+```http
 GET /users/{usersId}/security/informationProtection/sensitivityLabels/{sensitivityLabelId}
 GET /me/security/informationProtection/sensitivityLabels/{sensitivityLabelId}
 ```
@@ -74,7 +74,7 @@ The following example shows a request.
   "sampleKeys": ["bob@contoso.com", "5aa3cb3c-f0bd-9d1f-bc54-af399bed88e2"]
 }
 -->
-``` http
+```http
 GET https://graph.microsoft.com/beta/users/bob@contoso.com/security/informationProtection/sensitivityLabel/5aa3cb3c-f0bd-9d1f-bc54-af399bed88e2
 ```
 
@@ -90,7 +90,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.security.sensitivityLabel"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

@@ -35,7 +35,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 
-``` http
+```http
 GET /directory/inboundSharedUserProfiles/{userId}
 ```
 
@@ -64,7 +64,7 @@ If successful, this method returns a `200 OK` response code and a [inboundShared
 }
 -->
 
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/directory/inboundSharedUserProfiles/c228b2ae-c4fb-4eda-9620-7e73dddd1cac
 ```
 
@@ -107,7 +107,7 @@ GET https://graph.microsoft.com/beta/directory/inboundSharedUserProfiles/c228b2a
 }
 -->
 
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

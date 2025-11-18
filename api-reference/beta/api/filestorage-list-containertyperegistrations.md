@@ -39,7 +39,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /storage/fileStorage/containerTypeRegistrations
 ```
 
@@ -71,7 +71,7 @@ The following example shows how to list **fileStorageContainerTypeRegistration**
   "name": "list_filestoragecontainertyperegistration"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/storage/fileStorage/containerTypeRegistrations
 ```
 
@@ -110,7 +110,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.fileStorageContainerTypeRegistration)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

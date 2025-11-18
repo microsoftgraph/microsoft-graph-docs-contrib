@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /planner/rosters/{plannerRosterId}/plans
 ```
 
@@ -61,7 +61,7 @@ The following example shows a request.
   "name": "list_plannerplan_1"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/planner/rosters/6519868f-868f-6519-8f86-19658f861965/plans
 ```
 
@@ -106,7 +106,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.plannerPlan)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

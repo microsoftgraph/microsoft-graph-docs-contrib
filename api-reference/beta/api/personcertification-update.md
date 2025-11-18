@@ -28,7 +28,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PATCH /me/profile/certifications/{id}
 PATCH /users/{id | userPrincipalName}/profile/certifications/{id}
 ```
@@ -71,7 +71,7 @@ If successful, this method returns a `200 OK` response code and an updated [pers
   "name": "update_personcertification"
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/users/{userId}/profile/certifications/{id}
 Content-Type: application/json
 
@@ -119,7 +119,7 @@ Content-Type: application/json
   "@odata.type": "microsoft.graph.personCertification"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

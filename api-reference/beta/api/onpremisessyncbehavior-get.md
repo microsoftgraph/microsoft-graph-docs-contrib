@@ -38,7 +38,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /contacts/{id}/onPremisesSyncBehavior
 GET /groups/{id}/onPremisesSyncBehavior
 GET /users/{id}/onPremisesSyncBehavior
@@ -73,7 +73,7 @@ The following example shows a request.
   "name": "get_onpremisessyncbehavior"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/groups/673f83c9-7e84-4db8-9a63-b8a8c309fdad/onPremisesSyncBehavior
 ```
 
@@ -113,7 +113,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.onPremisesSyncBehavior"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

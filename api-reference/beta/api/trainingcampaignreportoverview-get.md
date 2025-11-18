@@ -27,7 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /security/attackSimulation/trainingCampaigns/{trainingCampaignId}/report/overview
 ```
 
@@ -52,7 +52,7 @@ The following example shows a request.
   "blockType": "request"
 }
 -->
-``` http
+```http
 GET https://graph.microsoft.com/beta/security/attackSimulation/trainingCampaigns/f1b13829-3829-f1b1-2938-b1f12938b1a/report/overview
 ```
 
@@ -69,7 +69,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.trainingCampaignReportOverview"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

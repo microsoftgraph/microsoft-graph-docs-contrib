@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 DELETE /solutions/backupRestore/exchangeRestoreSessions/{exchangeRestoreSessionId}/mailboxRestoreArtifactsBulkAdditionRequests/{mailboxRestoreArtifactsBulkAdditionRequestId}
 ```
 
@@ -65,7 +65,7 @@ The following example shows a request.
   "name": "delete_mailboxrestoreartifactsbulkadditionrequest"
 }
 -->
-``` http
+```http
 DELETE https://graph.microsoft.com/v1.0/solutions/backupRestore/exchangeRestoreSessions/d8078599-3b3c-568d-b6ff-adf161a42760/mailboxRestoreArtifactsBulkAdditionRequests/4437afcf-e520-463c-90a7-ca96401d8039
 ```
 
@@ -107,6 +107,6 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
