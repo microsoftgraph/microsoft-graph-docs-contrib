@@ -14,15 +14,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Start the migration of external messages by enabling migration mode in an existing chat. Previously, users were only allowed to initiate import operations on newly created standard channels in an empty state ([import-external-messages-to-teams](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)).
+Start the migration of external messages by enabling migration mode in an existing [chat](../resources/chat.md). Previously, users were only allowed to initiate import operations on newly created standard channels in an empty state. For more information, see [Import third-party platform messages to Teams using Microsoft Graph](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams).
 
-Users can simply start migration mode by invoking startMigration endpoint.
+You can define a minimum timestamp for content migration that enables the import of messages from the past. The specified timestamp must be earlier than the current **createdDateTime** of the [chat](../resources/chat.md). Imported content is always limited by the **createdDateTime** of the target thread. An optional **createdDateTime** property in the payload allows you to update this value, but with strict rules:
 
-Users can define a minimum timestamp for content migration, enabling the import of messages from the past. The specified timestamp must be earlier than the current `createdDateTime` of the [chat](../resources/chat.md). Imported content is always bounded by the target thread’s `createdDateTime`.
-An optional `createdDateTime` property in the payload allows updating this value, but with strict rules:
-
-- The `createdDateTime` can only be moved towards the past.
-- It cannot be updated to a value newer than the current `createdDateTime`.
+- The **createdDateTime** can only be moved towards the past.
+- The **createdDateTime** can't be updated to a value newer than the current **createdDateTime**.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -38,7 +35,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST   /chats/{chat-id}/startMigration
+POST /chats/{chat-id}/startMigration
 ```
 
 ## Request headers
@@ -47,7 +44,7 @@ POST   /chats/{chat-id}/startMigration
 |:---------------|:--------|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
-## Optional Request body
+## Request body
 
 You can optionally provide a request body to specify the minimum timestamp for the messages to be migrated. If you don't provide a request body, the API will use the current date and time as the minimum timestamp.
 
@@ -61,13 +58,13 @@ You can optionally provide a request body to specify the minimum timestamp for t
 
 If successful, this method returns a `204 No Content` response code. It doesn't return anything in the response body.
 
-## Example 1: Start migration in a chat
+## Examples
 
-### Request
+### Example 1: Start the migration in a chat
+The following example shows how to start the migration in a chat.
+#### Request
 
 The following example shows a request.
-<!-- markdownlint-disable MD025 -->
-<!-- markdownlint-disable MD022 -->
 
 <!-- {
   "blockType": "request",
@@ -79,10 +76,7 @@ The following example shows a request.
 POST https://graph.microsoft.com/beta/chats/19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2/startMigration
 ```
 
-<!-- markdownlint-disable MD001 -->
-<!-- markdownlint-disable MD024 -->
-
-### Response
+#### Response
 
 The following example shows the response.
 <!-- {
@@ -94,8 +88,8 @@ The following example shows the response.
 HTTP/1.1 204 No Content
 ```
 
-## Example 2: Start migration when chat is already in migration mode
-
+### Example 2: Start the migration when a chat is already in migration mode
+The following example shows how to start the migration when a chat is already in migration mode.
 #### Request
 
 The following example shows a request.
@@ -111,7 +105,7 @@ POST https://graph.microsoft.com/beta/chats/19:4b6bed8d24574f6a9e436813cb2617d8@
 ```
 
 #### Response
-
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -137,8 +131,8 @@ HTTP/1.1 400 Bad Request
 
 ## Related content
 
-- [chat-completeMigration](chat-completemigration.md)
-- [Import-message-with-older-timestamp](channel-post-messages.md#example-2-import-messages)
-- [get-message-import-status](chatmessage-get.md)
-- [channel-completeMigration](channel-completemigration.md)
-- [channel-startMigration](channel-startmigration.md)
+- [chat: completeMigration](chat-completemigration.md)
+- [Import message with older timestamp](channel-post-messages.md#example-2-import-messages)
+- [Get message import status](chatmessage-get.md)
+- [channel: completeMigration](channel-completemigration.md)
+- [channel: startMigration](channel-startmigration.md)
