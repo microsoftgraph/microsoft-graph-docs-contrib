@@ -30,9 +30,9 @@
       "Id": "fcda7807-b752-40fb-9a05-786f9ea09f57",
       "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2025-10-08T08:09:18.7181928Z",
+      "CreatedDateTime": "2025-11-18T08:09:18.7181928Z",
       "WorkloadArea": "Identity and access",
-      "SubArea": "Directory management"
+      "SubArea": "Identity and sign-in"
     },
     {
       "ChangeList": [
