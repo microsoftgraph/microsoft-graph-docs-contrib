@@ -1,5 +1,5 @@
 ---
-title: "Chat: startMigration"
+title: "chat: startMigration"
 description: "Start the migration of external messages by enabling migration mode in an existing chat."
 ms.localizationpriority: medium
 author: "MehakAgarwal"
@@ -8,7 +8,7 @@ doc_type: apiPageType
 ms.date: 06/12/2025
 ---
 
-# Chat: startMigration
+# chat: startMigration
 
 Namespace: microsoft.graph
 
