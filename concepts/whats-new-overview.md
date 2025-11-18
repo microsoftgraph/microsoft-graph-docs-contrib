@@ -28,12 +28,6 @@ The [driveItem: restore](/graph/api/driveitem-restore) method was expanded to en
 
 Use [aiAgentEvidence](/graph/api/resources/security-aiagentevidence) as a newly supported [alertEvidence](/graph/api/resources/security-alertevidence) type.
 
-## November 2025: New in preview only
-
-### Security | Alerts and incidents
-
-Use [aiAgentEvidence](/graph/api/resources/security-aiagentevidence?view=graph-rest-beta&preserve-view=true) as a newly supported [alertEvidence](/graph/api/resources/security-alertevidence?view=graph-rest-beta&preserve-view=true) type.
-
 ## October 2025: New and generally available
 
 ### Backup storage
