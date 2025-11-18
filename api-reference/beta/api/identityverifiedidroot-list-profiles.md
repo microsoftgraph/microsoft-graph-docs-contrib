@@ -98,7 +98,6 @@ GET https://graph.microsoft.com/beta/identity/verifiedId/profiles
 
 ---
 
-
 ### Response
 
 The following example shows the response.
