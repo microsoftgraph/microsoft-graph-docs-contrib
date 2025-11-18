@@ -40,7 +40,7 @@ The following JSON representation shows the resource type.
   "blockType": "resource",
   "keyProperty": "resourceAppId",
   "@odata.type": "microsoft.graph.inheritablePermission",
-  "openType": "resourceAppId"
+  "openType": true
 }
 -->
 ``` json
