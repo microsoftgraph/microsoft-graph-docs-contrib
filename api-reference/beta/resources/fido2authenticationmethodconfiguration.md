@@ -62,6 +62,7 @@ The following JSON representation shows the resource type.
   "@odata.type": "#microsoft.graph.fido2AuthenticationMethodConfiguration",
   "id": "String (identifier)",
   "state": "String",
+  "defaultPasskeyProfile": "String",
   "excludeTargets": [
     {
       "@odata.type": "microsoft.graph.excludeTarget"
