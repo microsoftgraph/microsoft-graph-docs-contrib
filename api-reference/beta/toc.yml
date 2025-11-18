@@ -40,6 +40,8 @@ items:
     href: toc/groups/toc.yml
   - name: Applications
     href: toc/applications/toc.yml
+  - name: Agents (preview)
+    href: toc/agents-(preview)/toc.yml
   - name: Backup storage
     href: toc/backup-storage/toc.yml
     displayName: M365 Backup Storage, Microsoft 365 Backup Storage, Enhanced Restore

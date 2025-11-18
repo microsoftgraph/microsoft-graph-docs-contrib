@@ -10,3 +10,4 @@ ms.topic: include
 > - Directory Readers
 > - Directory Writers
 > - User Administrator
+> - Agent ID Administrator - For agent users

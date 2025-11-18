@@ -1735,6 +1735,9 @@ Namespace: microsoft.graph
 | userChangedPasswordOnPremises |
 | adminDismissedRiskForSignIn |
 | adminConfirmedAccountSafe |
+| adminConfirmedAgentSafe |
+| adminConfirmedAgentCompromised |
+| adminDismissedRiskForAgent |
 
 <!-- maintenance comment: Do not delete enum delcaration for riskEventType until all properties of this type are marked as deleted. Dec 28, 2021: Pending eventTypes (in riskUserActivity) and riskType (in riskDetection)-->
 ### riskEventType values
@@ -5237,6 +5240,8 @@ Possible values for user account types (group membership), per Windows definitio
 |insiderRisk|
 |authenticationFlow|
 |unknownFutureValue|
+|agentIdRisk|
+|agentIdentities|
 
 ### insiderRiskLevel values
 
@@ -5246,6 +5251,25 @@ Possible values for user account types (group membership), per Windows definitio
 |minor|
 |moderate|
 |elevated|
+|unknownFutureValue|
+
+### conditionalAccessAgentIdRiskLevels values 
+
+|Member|
+|:---|
+|low|
+|medium|
+|high|
+|unknownFutureValue|
+
+### agentIdRiskLevel values 
+
+|Member|
+|:---|
+|none|
+|low|
+|medium|
+|high|
 |unknownFutureValue|
 
 ### userAction values
@@ -5564,6 +5588,30 @@ Possible values for user account types (group membership), per Windows definitio
 |d1|
 |unknownFutureValue|
 
+### attestationEnforcement values 
+
+|Member|
+|:---|
+|disabled|
+|registrationOnly|
+|unknownFutureValue|
+
+### passkeyType values 
+
+|Member|
+|:---|
+|deviceBound|
+|synced|
+|unknownFutureValue|
+
+### passkeyTypes values 
+
+|Member|
+|:---|
+|deviceBound|
+|synced|
+|unknownFutureValue|
+
 ### webApplicationFirewallDnsRecordType values 
 
 |Member|
@@ -5636,4 +5684,25 @@ Possible values for user account types (group membership), per Windows definitio
 |sitepagepublishing|
 |group|
 |sts|
+|unknownFutureValue|
+
+### accessReviewPrincipalScopeType values
+
+|Member|
+|:---|
+|allUsers|
+|guestUsers|
+|inactiveUsers|
+|inactiveGuestUsers|
+|unknownFutureValue|
+
+### accessReviewResourceScopeType values
+
+|Member|
+|:---|
+|group|
+|catalog|
+|servicePrincipal|
+|directoryRole|
+|accessPackageAssignmentPolicy|
 |unknownFutureValue|

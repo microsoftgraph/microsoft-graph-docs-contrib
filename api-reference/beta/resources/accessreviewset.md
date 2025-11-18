@@ -32,6 +32,7 @@ None.
 |:---|:---|:---|
 |decisions|[accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) collection| Represents a Microsoft Entra access review decision on an instance of a review.|
 |definitions|[accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) collection| Represents the template and scheduling for an access review. |
+|instances|[accessReviewInstance](../resources/accessreviewinstance.md) collection| Represents the instance of a review.|
 |historyDefinitions|[accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) collection| Represents a collection of access review history data and the scopes used to collect that data.|
 |policy|[accessReviewPolicy](../resources/accessreviewpolicy.md)| Resource that enables administrators to manage directory-level access review policies in their tenant.|
 
