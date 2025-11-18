@@ -130,6 +130,25 @@ Namespace: microsoft.graph.externalConnectors
 | iconUrl
 | containerName
 | containerUrl
+| personEmails
+| personAddresses
+| personAnniversaries
+| personName
+| personNote
+| personPhones
+| personCurrentPosition
+| personWebAccounts
+| personWebSite
+| personSkills
+| personProjects
+| personAccount
+| personAwards
+| personCertifications
+| personAssistants
+| personColleagues
+| personManager
+| personAlternateContacts
+| personEmergencyContacts
 
 
 ### propertyType values
