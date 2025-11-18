@@ -30,13 +30,13 @@ Deprecated the [drive: recent](/graph/api/drive-recent) and [drive: sharedWithMe
 
 ## November 2025: New in preview only
 
-### Mail
-
-Use the [userConfiguration](/graph/api/resources/userconfiguration?view=graph-rest-beta&preserve-view=true) resource and its associated methods to manage user-specific settings, metadata, or application data tied to mailbox folders, using XML, binary, or dictionary formats.
-
 ### Files
 
 Deprecated the [drive: recent](/graph/api/drive-recent?view=graph-rest-beta&preserve-view=true) and [drive: sharedWithMe](/graph/api/drive-sharedwithme?view=graph-rest-beta&preserve-view=true) methods of the [drive](/graph/api/resources/drive?view=graph-rest-beta&preserve-view=true) resource.
+
+### Mail
+
+Use the [userConfiguration](/graph/api/resources/userconfiguration?view=graph-rest-beta&preserve-view=true) resource and its associated methods to manage user-specific settings, metadata, or application data tied to mailbox folders, using XML, binary, or dictionary formats.
 
 ### Tasks and plans
 
