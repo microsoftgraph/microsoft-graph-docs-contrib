@@ -1,6 +1,6 @@
 ---
 title: "b2bManagementPolicy resource type"
-description: "Represents a policy to manage B2B features"
+description: "Represents Microsoft Entra B2B features in Microsoft Entra External ID for workforce tenants, including restricting/allowing which domains can be used to invite users, if auto redemption of invitations is allowed, and opt-in of preview features."
 author: "akshukla"
 ms.date: 10/27/2025
 toc.title: B2B management policy
@@ -15,8 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-It allows customers to manage B2B features including restricting/allowing which domains can be used to invite users, if auto redemption of invitations is allowed, and opt-in of preview features.
-
+Represents Microsoft Entra B2B features in Microsoft Entra External ID for workforce tenants, including restricting/allowing which domains can be used to invite users, if auto redemption of invitations is allowed, and opt-in of preview features.
 
 Inherits from [stsPolicy](../resources/stspolicy.md).
 
