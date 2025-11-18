@@ -129,8 +129,8 @@ HTTP/1.1 400 Bad Request
 
 ## Related content
 
-- [channel-completeMigration](channel-completemigration.md)
-- [Import-message-with-older-timestamp](channel-post-messages.md#example-2-import-messages)
-- [get-channel-migration-status](channel-get.md#example-1-get-a-channel)
-- [chat-completeMigration](chat-completemigration.md)
-- [chat-startMigration](chat-startmigration.md)
+- [channel: completeMigration](channel-completemigration.md)
+- [Import message with older timestamp](channel-post-messages.md#example-2-import-messages).
+- [Get channel migration status](channel-get.md#example-1-get-a-channel).
+- [chat: completeMigration](chat-completemigration.md)
+- [chat: startMigration](chat-startmigration.md)
