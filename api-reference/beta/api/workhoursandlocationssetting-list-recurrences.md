@@ -1,6 +1,6 @@
 ---
 title: "List recurrences"
-description: "Get the workPlanRecurrence resources from your own work plan's recurrences navigation property."
+description: "Get the recurrences from your own work plan via the recurrences navigation property."
 author: "emilbekj"
 ms.localizationpriority: medium
 ms.subservice: "outlook"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the recurrences from your own work plan via the recurrences navigation property.
+Get the recurrences from your own work plan via the **recurrences** navigation property.
 
 ## Permissions
 
@@ -43,7 +43,7 @@ GET /users/{id | userPrincipalName}/settings/workHoursAndLocations/recurrences
 
 ## Optional query parameters
 
-This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
+This method supports the `$select` and `$top` [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 

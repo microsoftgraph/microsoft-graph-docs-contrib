@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a workPlanOccurrence object in your own work plan. Updates require the full occurrence object to be provided (PUT semantics). PATCH isn't supported.
+Update the properties of a [workPlanOccurrence](../resources/workplanoccurrence.md) object in your own work plan. Updates require the full occurrence object to be provided (PUT semantics). PATCH isn't supported.
 
 ## Permissions
 
@@ -64,7 +64,7 @@ The following example shows a request.
 } -->
 
 ```http
-PUT https://graph.microsoft.com/beta/me/settings/workHoursAndLocations/occurrences/{id}
+PUT https://graph.microsoft.com/beta/me/settings/workHoursAndLocations/occurrences/QAAuAAAAAB2EAxGqZhHNm8gAqgAvxFoNAOtpUxZW-2ZHr9tjSZTO0jMAA2iQN2IAABA=
 Content-type: application/json
 
 {

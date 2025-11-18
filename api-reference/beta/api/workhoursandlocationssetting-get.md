@@ -39,6 +39,10 @@ When using the `/users/{id}` endpoint, the ID must be your own user ID.
 GET /users/{id | userPrincipalName}/settings/workHoursAndLocations
 ```
 
+## Optional query parameters
+
+This method supports the `$select` [OData query parameter](/graph/query-parameters) to help customize the response.
+
 ## Request headers
 
 | Name | Description |
@@ -55,7 +59,7 @@ If successful, this method returns a `200 OK` response code and a [workHoursAndL
 
 ## Examples
 
-#### Request
+### Request
 
 The following example shows a request to get basic work hours and location settings.
 
@@ -63,7 +67,7 @@ The following example shows a request to get basic work hours and location setti
 GET https://graph.microsoft.com/beta/me/settings/workHoursAndLocations
 ```
 
-#### Response
+### Response
 
 The following example shows the response.
 

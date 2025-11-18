@@ -1,6 +1,6 @@
 ---
 title: "workHoursAndLocationsSetting resource type"
-description: "Represents your working hours and location preferences for effective scheduling and availability management."
+description: "Represents your working hours and location preferences for modern hybrid work scenarios."
 author: "emilbekj"
 ms.localizationpriority: medium
 ms.subservice: "outlook"
@@ -24,15 +24,28 @@ You can set different work locations and schedules to accommodate your flexible 
 
 | Method | Return Type | Description |
 |:-------|:------------|:------------|
-| [Get workHoursAndLocationsSetting](../api/workhoursandlocationssetting-get.md) | [workHoursAndLocationsSetting](workhoursandlocationssetting.md) | Get the user's working hours and location settings. |
-| [Update workHoursAndLocationsSetting](../api/workhoursandlocationssetting-update.md) | [workHoursAndLocationsSetting](workhoursandlocationssetting.md) | Update the user's working hours and location settings. |
+| [Get](../api/workhoursandlocationssetting-get.md) | [workHoursAndLocationsSetting](workhoursandlocationssetting.md) | Get the user's working hours and location settings. |
+| [List recurrences](../api/workhoursandlocationssetting-list-recurrences.md) | [workPlanRecurrence](workplanrecurrence.md) collection | Get the recurrences from the recurrences navigation property. |
+| [Create occurrence](../api/workhoursandlocationssetting-post-occurrences.md) | [workPlanOccurrence](workplanoccurrence.md) | Create a new workPlanOccurrence object (time-off only). |
+| [Create recurrence](../api/workhoursandlocationssetting-post-recurrences.md) | [workPlanRecurrence](workplanrecurrence.md) | Create a new workPlanRecurrence object. |
 | [occurrencesView](../api/workhoursandlocationssetting-occurrencesview.md) | [workPlanOccurrence](workplanoccurrence.md) collection | Retrieves work plan occurrences within a specified date range. |
+| [Update](../api/workhoursandlocationssetting-update.md) | [workHoursAndLocationsSetting](workhoursandlocationssetting.md) | Update the user's working hours and location settings. |
 
 ## Properties
 
 | Property | Type | Description |
 |:---------|:-----|:------------|
-| maxSharedWorkLocationDetails | [maxWorkLocationDetails](maxworklocationdetails.md) | Controls the level of location detail that can be shared with colleagues. |
+| maxSharedWorkLocationDetails | maxWorkLocationDetails | Controls the level of location detail that can be shared with colleagues. See [maxWorkLocationDetails values](#maxworklocationdetails-values). |
+
+### maxWorkLocationDetails values
+
+| Member | Description |
+|:-------|:------------|
+| unknown | The level of location details to share is unknown. |
+| none | No location details are shared. |
+| approximate | Only general work location type is shared, such as "Office" or "Remote." |
+| specific | Detailed location information is shared, such as building and desk information. |
+| unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
 
 ## Relationships
 

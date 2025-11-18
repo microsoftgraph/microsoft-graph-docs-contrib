@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new workPlanRecurrence object in your own work plan.
+Create a new [workPlanRecurrence](../resources/workplanrecurrence.md) object in your own work plan.
 
 ## Permissions
 

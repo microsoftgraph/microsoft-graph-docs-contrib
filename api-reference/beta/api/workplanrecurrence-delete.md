@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a workPlanRecurrence object from your own work plan.
+Delete a [workPlanRecurrence](../resources/workplanrecurrence.md) object from your own work plan.
 
 ## Permissions
 
@@ -63,7 +63,7 @@ The following example shows a request.
 } -->
 
 ```http
-DELETE https://graph.microsoft.com/beta/me/settings/workHoursAndLocations/recurrences/{id}
+DELETE https://graph.microsoft.com/beta/me/settings/workHoursAndLocations/recurrences/AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A62lTFlb-Zkev22NJlM7SMwADaJA3YgAA
 ```
 
 ### Response

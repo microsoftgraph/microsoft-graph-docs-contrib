@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieves work plan occurrences from your own work plan within a specified date range. This function requires startDateTime and endDateTime parameters.
+Retrieves work plan occurrences from your own work plan within a specified date range. This function requires **startDateTime** and **endDateTime** parameters.
 
 ## Permissions
 
@@ -47,8 +47,12 @@ In the request URL, provide the following required function parameters with valu
 
 | Parameter | Type | Description |
 |:----------|:-----|:------------|
-| startDateTime | String | The start date and time of the time range, represented in ISO 8601 format. |
 | endDateTime | String | The end date and time of the time range, represented in ISO 8601 format. |
+| startDateTime | String | The start date and time of the time range, represented in ISO 8601 format. |
+
+## Optional query parameters
+
+This method supports the `$select` and `$top` [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 

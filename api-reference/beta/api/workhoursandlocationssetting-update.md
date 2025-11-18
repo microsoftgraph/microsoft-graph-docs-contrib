@@ -54,7 +54,7 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property | Type | Description |
 |:---------|:-----|:------------|
-| maxSharedWorkLocationDetails | [maxWorkLocationDetails](../resources/maxworklocationdetails.md) | Controls the level of work location details that can be shared with colleagues. |
+| maxSharedWorkLocationDetails | [maxWorkLocationDetails](../resources/workhoursandlocationssetting.md#maxworklocationdetails-values) | Controls the level of work location details that can be shared with colleagues. |
 
 ## Response
 
@@ -62,9 +62,7 @@ If successful, this method returns a `200 OK` response code and an updated [work
 
 ## Examples
 
-### Example 1: Update shared location details mode
-
-#### Request
+### Request
 
 The following example shows a request to update the maximum level of work location details that can be shared.
 
@@ -77,7 +75,7 @@ Content-Type: application/json
 }
 ```
 
-#### Response
+### Response
 
 The following example shows the response.
 
@@ -97,19 +95,6 @@ Content-type: application/json
   "maxSharedWorkLocationDetails": "approximate"
 }
 ```
-
-## Error responses
-
-If the request fails, the API returns standard HTTP error codes. Common error scenarios include:
-
-- **400 Bad Request**: Invalid property values or malformed request body
-- **403 Forbidden**: User doesn't have permission to update work hours and locations
-- **422 Unprocessable Entity**: Invalid enum value for maxSharedWorkLocationDetails
-
-## Remarks
-
-- Only the maxSharedWorkLocationDetails property can be updated on the workHoursAndLocationsSetting entity
-- Changes to this setting control the level of work location information that can be shared with colleagues
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2024-12-20 14:57:30 UTC -->

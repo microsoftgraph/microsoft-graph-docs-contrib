@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a workPlanRecurrence object in your own work plan. Updates require the full recurrence object to be provided (PUT semantics). PATCH isn't supported.
+Update the properties of a [workPlanRecurrence](../resources/workplanrecurrence.md) object in your own work plan. Updates require the full recurrence object to be provided (PUT semantics). PATCH isn't supported.
 
 ## Permissions
 
@@ -64,7 +64,7 @@ The following example shows a request.
 } -->
 
 ```http
-PUT https://graph.microsoft.com/beta/me/settings/workHoursAndLocations/recurrences/{id}
+PUT https://graph.microsoft.com/beta/me/settings/workHoursAndLocations/recurrences/AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A62lTFlb-Zkev22NJlM7SMwADaJA3YgAA
 Content-type: application/json
 
 {

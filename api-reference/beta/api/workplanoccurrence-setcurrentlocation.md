@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Updates your work location for the current day or current active segment. This action allows you to quickly update your work location without modifying individual occurrences.
+Update your work location for the current day or current active segment. This action allows you to quickly update your work location without modifying individual occurrences.
 
 ## Permissions
 
@@ -50,9 +50,17 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter | Type | Description |
 |:----------|:-----|:------------|
-| updateScope | workLocationUpdateScope | The scope of the update. Possible values are: `currentSegment`, `currentDay`, `unknownFutureValue`. |
-| workLocationType | workLocationType | The new work location type to set. Possible values are: `office`, `remote`. |
-| workLocationDetails | [place](../resources/place.md) | The place entity representing the work location. Can be bound using @odata.bind when workLocationType is office. |
+| updateScope | workLocationUpdateScope | The scope of the update. See [workLocationUpdateScope values](#worklocationupdatescope-values). |
+| workLocationDetails | [place](../resources/place.md) | The place entity representing the work location. Can be bound using @odata.bind when **workLocationType** is `office`. |
+| workLocationType | workLocationType | The new work location type to set. Accepted values are: `office`, `remote`. For all possible values, see [workLocationType values](../resources/workplanoccurrence.md#worklocationtype-values). |
+
+### workLocationUpdateScope values
+
+| Member | Description |
+|:-------|:------------|
+| currentSegment | Update only the current time segment. |
+| currentDay | Update the entire current day. |
+| unknownFutureValue | Reserved for future use. |
 
 ## Response
 
@@ -62,7 +70,7 @@ If successful, this action returns a `204 No Content` response code.
 
 ### Example 1: Set current location to office
 
-#### Request
+### Request
 
 The following example shows a request.
 
@@ -82,7 +90,7 @@ Content-type: application/json
 }
 ```
 
-#### Response
+### Response
 
 The following example shows the response.
 
@@ -97,7 +105,7 @@ HTTP/1.1 204 No Content
 
 ### Example 2: Set current location to remote
 
-#### Request
+### Request
 
 The following example shows a request.
 
@@ -116,7 +124,7 @@ Content-type: application/json
 }
 ```
 
-#### Response
+### Response
 
 The following example shows the response.
 
