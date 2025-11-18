@@ -32,7 +32,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /teams/{teamsId}/schedule/timeCards/{timeCardId}/confirm
 ```
 
@@ -61,7 +61,7 @@ The following example shows a request.
   "name": "timecardthis.confirm"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/teams/{teamsId}/schedule/timeCards/{timeCardId}/confirm
 ```
 

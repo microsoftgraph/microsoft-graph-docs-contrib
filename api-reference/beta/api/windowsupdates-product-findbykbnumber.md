@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /admin/windows/updates/products/FindByKbNumber(kbNumber={kbNumber})
 ```
 
@@ -71,7 +71,7 @@ The following example shows a request.
   "name": "windowsupdates.findByCatalogId"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/admin/windows/updates/products/FindByKbNumber(kbNumber=5029332)?expand=revisions($expand=catalogEntry,knowledgeBaseArticle),knownIssues
 ```
 
@@ -117,7 +117,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.windowsUpdates.product)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

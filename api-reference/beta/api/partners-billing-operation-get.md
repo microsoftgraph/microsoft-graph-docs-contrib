@@ -33,7 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /reports/partners/billing/operations/{id}
 ```
 
@@ -73,7 +73,7 @@ The following example shows a request that returns a [microsoft.graph.partners.b
   "name": "get_billing_operation"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/reports/partners/billing/operations/6fe687d7-1e0f-4bd6-9091-4672691f64bc
 ```
 
@@ -119,7 +119,7 @@ The following example shows the response for an operation that completed success
   "@odata.type": "microsoft.graph.partners.billing.exportSuccessOperation"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -145,7 +145,7 @@ The following example shows a request that returns a [microsoft.graph.partners.b
   "name": "get_billing_operation_failed"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/reports/partners/billing/operations/6fe687d7-1e0f-4bd6-9091-4672691f64bc
 ```
 
@@ -191,7 +191,7 @@ The following example shows the response for an operation that failed.
   "@odata.type": "microsoft.graph.partners.billing.failedOperation"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -220,7 +220,7 @@ The following example shows a request that returns a [microsoft.graph.partners.b
   "name": "get_billing_operation_running"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/reports/partners/billing/operations/6fe687d7-1e0f-4bd6-9091-4672691f64bc
 ```
 
@@ -266,7 +266,7 @@ The following example shows the response for an operation that is still running.
   "@odata.type": "microsoft.graph.partners.billing.runningOperation"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

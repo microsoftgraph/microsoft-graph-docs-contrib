@@ -41,7 +41,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /solutions/backupRestore/sharePointRestoreSessions/{sharePointRestoreSessionId}/siteRestoreArtifactsBulkAdditionRequests
 ```
 
@@ -81,7 +81,7 @@ The following example shows a request that adds a list of sites to the specified
   "name": "create_siterestoreartifactsbulkadditionrequest_from_"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/solutions/backupRestore/sharePointRestoreSessions/959ba739-70b5-43c4-8c90-b2c22014f18b/siteRestoreArtifactsBulkAdditionRequests
 Content-Type: application/json
 
@@ -141,7 +141,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.siteRestoreArtifactsBulkAdditionRequest"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 

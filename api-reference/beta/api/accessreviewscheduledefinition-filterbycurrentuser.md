@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /identityGovernance/accessReviews/definitions/filterByCurrentUser(on='reviewer')
 ```
 
@@ -61,7 +61,7 @@ Returns all review definitions where the calling user is a reviewer.
   "name": "accessreviewscheduledefinition_filterbycurrentuser"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/filterByCurrentUser(on='reviewer')
 ```
 
@@ -103,7 +103,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definition
   "@odata.type": "Collection(microsoft.graph.accessReviewScheduleDefinition)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

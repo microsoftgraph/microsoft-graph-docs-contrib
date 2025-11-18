@@ -32,7 +32,7 @@ If the signed-in user doesn't have at least the Global Reader directory role mem
 }
 -->
 
-``` http
+```http
 GET /identityGovernance/accessReviews/historyDefinitions
 ```
 
@@ -67,7 +67,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 }
 -->
 
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/historyDefinitions
 ```
 
@@ -112,7 +112,7 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/historyDef
 }
 -->
 
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
