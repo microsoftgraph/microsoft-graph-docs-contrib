@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 
-``` http
+```http
 GET /print/services/{printServiceId}/endpoints
 ```
 
@@ -65,7 +65,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
   "name": "list_printserviceendpoint"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/print/services/{printServiceId}/endpoints
 ```
 
@@ -109,7 +109,7 @@ GET https://graph.microsoft.com/v1.0/print/services/{printServiceId}/endpoints
 }
 -->
 
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

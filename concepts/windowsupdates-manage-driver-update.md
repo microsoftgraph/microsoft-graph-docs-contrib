@@ -24,7 +24,7 @@ Devices must meet the [prerequisites for Windows Autopatch](windowsupdates-conce
 When you enroll a device in driver management, Windows Autopatch becomes the authority for driver updates coming from Windows Update. As a result, devices do not receive drivers from Windows Update until a deployment is created or they are added to a driver update policy with approvals. To enroll a device, you must provide an [azureADDevice](/graph/api/resources/windowsupdates-azureaddevice) ID.
 
 ### Request
-``` http
+```http
 POST https://graph.microsoft.com/beta/admin/windows/updates/updatableAssets/enrollAssets
 Content-Type: application/json
 {
@@ -48,7 +48,7 @@ Content-Type: application/json
 
 ### Response
 
-``` http
+```http
 HTTP/1.1 202 Accepted
 ```
 
@@ -332,7 +332,7 @@ When you [unenroll](/graph/api/windowsupdates-updatableasset-unenrollassets) a d
 
 ### Request
 
-``` http
+```http
 POST https://graph.microsoft.com/beta/admin/windows/updates/updatableAssets/unenrollAssets
 Content-Type: application/json
 {
@@ -348,6 +348,6 @@ Content-Type: application/json
 
 ### Response
 
-``` http
+```http
 HTTP/1.1 202 Accepted
 ```

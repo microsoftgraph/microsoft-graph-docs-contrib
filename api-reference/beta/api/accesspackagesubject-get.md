@@ -60,7 +60,7 @@ If successful, this method returns a `200 OK` response code and the requested [a
   "name": "get_accesspackagesubject"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/subjects(objectId='{objectIdOfUser}')
 ```
 

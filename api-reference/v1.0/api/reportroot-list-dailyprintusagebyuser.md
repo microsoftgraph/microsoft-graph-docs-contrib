@@ -27,7 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /reports/dailyPrintUsageByUser
 ```
 
@@ -56,7 +56,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
   "name": "list_printusagebyuser_1"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/reports/dailyPrintUsageByUser
 ```
 
@@ -98,7 +98,7 @@ GET https://graph.microsoft.com/v1.0/reports/dailyPrintUsageByUser
   "@odata.type": "Collection(microsoft.graph.printUsageByUser)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
