@@ -71,6 +71,7 @@ The following JSON representation shows the resource type.
     "String"
   ],
   "attestationLevel": "String",
+  "passkeyType": "String",
   "publicKeyCredential": {
     "@odata.type": "microsoft.graph.webauthnPublicKeyCredential"
   }
