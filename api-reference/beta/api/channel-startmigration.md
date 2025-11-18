@@ -1,6 +1,6 @@
 ---
 title: "channel: startMigration"
-description: "Start the migration of external messages by enabling migration mode in the existing channel."
+description: "Start the migration of external messages by enabling migration mode in an existing channel."
 ms.localizationpriority: medium
 author: "MehakAgarwal"
 ms.subservice: "teams"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Start the migration of external messages by enabling migration mode in the existing [channel](../resources/channel.md). Previously, users were only allowed to initiate import operations on newly created standard channels in an empty state. For more information, see [Import third-party platform messages to Teams using Microsoft Graph](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams).
+Start the migration of external messages by enabling migration mode in an existing [channel](../resources/channel.md). Previously, users were only allowed to initiate import operations on newly created standard channels in an empty state. For more information, see [Import third-party platform messages to Teams using Microsoft Graph](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams).
 
 Users are also allowed to define a minimum timestamp for content to be migrated, allowing them to import messages from the past. The provided timestamp must be older than the current **createdDateTime** for a [channel](../resources/channel.md). The provided timestamp is used to replace the existing **createdDateTime** of the [channel](../resources/channel.md).
 
