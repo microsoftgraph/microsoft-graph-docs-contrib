@@ -4,7 +4,7 @@ description: "Microsoft Graph MCP Server: Learn how to install, configure, and r
 author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: Licantrop0
-ms.service: enterprise-mcp-server
+ms.subservice: enterprise-mcp-server
 ms.topic: get-started
 ms.date: 11/17/2025
 
