@@ -32,7 +32,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /users/{user-id}/authentication/fido2Methods/creationOptions(challengeTimeoutInMinutes={challengeTimeoutInMinutes})
 ```
 
@@ -73,7 +73,7 @@ The following example shows a request.
   "name": "fido2authenticationmethodthis.creationoptions"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/{usersId}/authentication/fido2Methods/creationOptions(challengeTimeoutInMinutes=10)
 ```
 
@@ -107,7 +107,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.webauthnCredentialCreationOptions"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

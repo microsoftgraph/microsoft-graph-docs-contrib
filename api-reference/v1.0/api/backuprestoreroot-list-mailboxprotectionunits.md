@@ -30,7 +30,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /solutions/backupRestore/protectionUnits/microsoft.graph.mailboxProtectionUnit
 GET /solutions/backupRestore/exchangeProtectionPolicies/{exchangeProtectionPolicyId}/mailboxProtectionUnits/
 ```
@@ -69,7 +69,7 @@ The following example shows a request.
   "name": "list_all_mailboxprotectionunit"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/solutions/backupRestore/protectionUnits/microsoft.graph.mailboxProtectionUnit
 ```
 
@@ -113,7 +113,7 @@ The following example shows the response.
 }
 -->
 
-``` http
+```http
 HTTP/1.1 200 OK
 
 {
@@ -312,7 +312,7 @@ The following example shows a request.
   "name": "mailboxprotectionunit_list"
 }
 -->
-``` http
+```http
 GET https://graph.microsoft.com/v1.0/solutions/solutions/backupRestore/exchangeProtectionPolicies/845457dc-4bb2-4815-bef3-8628ebd1952e/mailboxProtectionUnits
 ```
 
@@ -325,7 +325,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.mailboxProtectionUnit)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 
 {

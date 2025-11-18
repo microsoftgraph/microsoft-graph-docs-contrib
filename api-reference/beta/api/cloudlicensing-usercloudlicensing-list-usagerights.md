@@ -29,7 +29,7 @@ To get all usage rights for the signed-in user using delegated (`/me`) permissio
 
 <!-- { "blockType": "ignored" }
 -->
-``` http
+```http
 GET /me/cloudLicensing/usageRights
 ```
 
@@ -37,7 +37,7 @@ To get all usage rights for a specific user using either delegated or applicatio
 
 <!-- { "blockType": "ignored" }
 -->
-``` http
+```http
 GET /users/{userId}/cloudLicensing/usageRights
 ```
 
@@ -51,7 +51,7 @@ The following examples show how to get usage rights information for users based 
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /users/48fbdf70-9e09-40df-9dbe-17af483ab113/cloudLicensing/usageRights?$filter=skuId eq 639dec6b-bb19-468b-871c-c5c441c4b0cb
 GET /users/48fbdf70-9e09-40df-9dbe-17af483ab113/cloudLicensing/usageRights?$filter=skuId in (639dec6b-bb19-468b-871c-c5c441c4b0cb, a403ebcc-fae0-4ca2-8c8c-7a907fd6c235)
 GET /users/48fbdf70-9e09-40df-9dbe-17af483ab113/cloudLicensing/usageRights?$filter=services/any(c:c/planId eq 113feb6c-3fe4-4440-bddc-54d774bf0318)
@@ -87,7 +87,7 @@ The following example shows a request.
   "name": "cloudlicensing-userusageright-list-example-1"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/48fbdf70-9e09-40df-9dbe-17af483ab113/cloudLicensing/usageRights
 ```
 
@@ -107,7 +107,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.cloudLicensing.usageRight)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -144,7 +144,7 @@ The following example shows a request.
   "name": "cloudlicensing-userusageright-list-example-2"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/48fbdf70-9e09-40df-9dbe-17af483ab113/cloudLicensing/usageRights?$filter=services/any(c:c/planId eq 113feb6c-3fe4-4440-bddc-54d774bf0318)
 ```
 
@@ -164,7 +164,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.cloudLicensing.usageRight)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

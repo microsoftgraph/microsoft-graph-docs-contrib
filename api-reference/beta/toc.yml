@@ -23,6 +23,8 @@ items:
   href: /graph/toolkit/overview?context=graph/api/beta
 - name: Deploy with Bicep
   href: /graph/templates?context=graph/api/beta
+- name: Use the MCP Server for Enterprise
+  href: /graph/mcp-server/overview?context=graph/api/beta
 - name: Known issues
   href: https://developer.microsoft.com/graph/known-issues
 - name: Errors
@@ -40,6 +42,8 @@ items:
     href: toc/groups/toc.yml
   - name: Applications
     href: toc/applications/toc.yml
+  - name: Agents (preview)
+    href: toc/agents-(preview)/toc.yml
   - name: Backup storage
     href: toc/backup-storage/toc.yml
     displayName: M365 Backup Storage, Microsoft 365 Backup Storage, Enhanced Restore
