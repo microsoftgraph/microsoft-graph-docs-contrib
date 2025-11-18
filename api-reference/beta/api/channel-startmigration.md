@@ -1,6 +1,6 @@
 ---
-title: "Channel: startMigration"
-description: "Start the migration of external messages by enabling migration mode in the existing channel"
+title: "channel: startMigration"
+description: "Start the migration of external messages by enabling migration mode in the existing channel."
 ms.localizationpriority: medium
 author: "MehakAgarwal"
 ms.subservice: "teams"
@@ -8,17 +8,15 @@ doc_type: apiPageType
 ms.date: 06/12/2025
 ---
 
-# Channel: startMigration
+# channel: startMigration
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The API allows users to enable migration mode on existing channels. Previously, users were only allowed to initiate import operations on newly created Standard Channels in the empty state ([import-external-messages-to-teams](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)).
+Start the migration of external messages by enabling migration mode in the existing [channel](../resources/channel.md). Previously, users were only allowed to initiate import operations on newly created standard channels in an empty state. For more information, see [Import third-party platform messages to Teams using Microsoft Graph](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams).
 
-Users are also allowed to define a minimum timestamp for content to be migrated, allowing them to import messages in the past. Provided timestamp is required to be older than the current `createdDateTime` for a [channel](../resources/channel.md).
-
-Provided timestamp is used to replace the existing `createdDateTime` of the [channel](../resources/channel.md).
+Users are also allowed to define a minimum timestamp for content to be migrated, allowing them to import messages from the past. The provided timestamp must be older than the current **createdDateTime** for a [channel](../resources/channel.md). The provided timestamp is used to replace the existing **createdDateTime** of the [channel](../resources/channel.md).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -57,13 +55,13 @@ You can optionally provide a request body to specify the minimum timestamp for t
 
 If successful, this method returns a `204 No Content` response code. It doesn't return anything in the response body.
 
-## Example1: Start Migration on an existing channel with a specific timestamp
+## Examples
 
-### Request
+### Example 1: Start the migration on an existing channel with a specific timestamp
+The following example shows how to start the migration on an existing channel with a specific timestamp.
+#### Request
 
 The following example shows a request.
-<!-- markdownlint-disable MD025 -->
-<!-- markdownlint-disable MD022 -->
 
 <!-- {
   "blockType": "request",
@@ -75,9 +73,7 @@ The following example shows a request.
 POST https://graph.microsoft.com/beta/teams/57fb72d0-d811-46f4-8947-305e6072eaa5/channels/19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2/startMigration
 ```
 
-<!-- markdownlint-disable MD001 -->
-<!-- markdownlint-disable MD024 -->
-### Response
+#### Response
 
 The following example shows the response.
 <!-- {
@@ -89,8 +85,8 @@ The following example shows the response.
 HTTP/1.1 204 No Content
 ```
 
-## Example 2: Start migration when channel is already in migration mode.
-
+### Example 2: Start the migration when a channel is already in migration mode
+The following example shows how to start the migration when a channel is already in migration mode.
 #### Request
 
 The following example shows a request.
@@ -106,7 +102,7 @@ POST https://graph.microsoft.com/beta/teams/57fb72d0-d811-46f4-8947-305e6072eaa5
 ```
 
 #### Response
-
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
