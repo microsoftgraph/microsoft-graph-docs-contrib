@@ -3113,6 +3113,34 @@ items:
         href: ../../api/organizationalbrandinglocalization-update.md
       - name: Delete
         href: ../../api/organizationalbrandinglocalization-delete.md
+    - name: Organizational branding theme
+      items:
+      - name: Organizational branding theme
+        href: ../../resources/organizationalbrandingtheme.md
+      - name: List
+        href: ../../api/organizationalbranding-list-themes.md
+      - name: Create
+        href: ../../api/organizationalbranding-post-themes.md
+      - name: Get
+        href: ../../api/organizationalbrandingtheme-get.md
+      - name: Update
+        href: ../../api/organizationalbrandingtheme-update.md
+      - name: Delete
+        href: ../../api/organizationalbranding-delete-themes.md
+    - name: Organizational branding theme localization
+      items:
+      - name: Organizational branding theme localization
+        href: ../../resources/organizationalbrandingthemelocalization.md
+      - name: List
+        href: ../../api/organizationalbrandingtheme-list-localizations.md
+      - name: Create
+        href: ../../api/organizationalbrandingtheme-post-localizations.md
+      - name: Get
+        href: ../../api/organizationalbrandingthemelocalization-get.md
+      - name: Update
+        href: ../../api/organizationalbrandingthemelocalization-update.md
+      - name: Delete
+        href: ../../api/organizationalbrandingtheme-delete-localizations.md
   - name: Policies
     items:
     - name: Overview
