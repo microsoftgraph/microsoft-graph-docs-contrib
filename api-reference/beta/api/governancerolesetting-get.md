@@ -1,5 +1,5 @@
 ---
-title: "Get governanceRoleSetting"
+title: "Get governanceRoleSetting (deprecated)"
 description: "Retrieve the properties and relationships of a governanceRoleSetting."
 ms.localizationpriority: medium
 doc_type: apiPageType
@@ -9,7 +9,7 @@ ROBOTS: NOINDEX
 ms.date: 08/13/2024
 --- 
 
-# Get governanceRoleSetting
+# Get governanceRoleSetting (deprecated)
 
 Namespace: microsoft.graph
 
