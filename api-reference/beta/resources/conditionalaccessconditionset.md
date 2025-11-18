@@ -21,7 +21,7 @@ Represents the type of conditions that govern when the policy applies.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|agentIdRiskLevels|conditionalAccessAgentIdRiskLevels| Agent identity risk levels included in the policy. Possible values are: `low`, `medium`, `high`, `unknownFutureValue`.|
+|agentIdRiskLevels|conditionalAccessAgentIdRiskLevels| Agent identity risk levels included in the policy. Possible values are: `low`, `medium`, `high`, `unknownFutureValue`. This enumeration is multivalued.|
 |applications|[conditionalAccessApplications](conditionalaccessapplications.md)| Applications and user actions included in and excluded from the policy. Required. |
 |authenticationFlows|[conditionalAccessAuthenticationFlows](conditionalaccessauthenticationflows.md)| Authentication flows included in the policy scope. For more information, see [Conditional Access: Authentication flows](/entra/identity/conditional-access/concept-authentication-flows). |
 |users|[conditionalAccessUsers](conditionalaccessusers.md)| Users, groups, and roles included in and excluded from the policy. Either **users** or **clientApplications** is required. |
