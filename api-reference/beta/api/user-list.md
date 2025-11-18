@@ -6,7 +6,7 @@ ms.reviewer: "iamut"
 ms.localizationpriority: high
 ms.subservice: entra-users
 doc_type: apiPageType
-ms.date: 05/16/2025
+ms.date: 11/07/2025
 ---
 
 # List users
@@ -15,23 +15,25 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of [user](../resources/user.md) objects.
+Retrieve a list of [user](../resources/user.md) objects. This API also returns [agentUser](../resources/agentuser.md) objects.
 
-This operation returns by default only a subset of the more commonly used properties for each user. These _default_ properties are noted in the [Properties](../resources/user.md#properties) section. To get properties that are _not_ returned by default, do a [GET operation](user-get.md) for the user and specify the properties in a `$select` OData query option.
+This operation returns by default only a subset of the more commonly used properties for each **user** and **agentUser**. These _default_ properties are noted in the [Properties](../resources/user.md#properties) section. To get properties that are _not_ returned by default, do a [GET operation](user-get.md) and specify the properties in a `$select` OData query option.
+
+> [!IMPORTANT]
+> Guest users cannot call this API. For more information about the permissions for member and guest users, see [What are the default user permissions in Microsoft Entra ID?](/azure/active-directory/fundamentals/users-default-permissions?context=graph/context#member-and-guest-users).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
-<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | User.ReadBasic.All, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-Guest users cannot call this API. For more information about the permissions for member and guest users, see [What are the default user permissions in Microsoft Entra ID?](/azure/active-directory/fundamentals/users-default-permissions?context=graph/context#member-and-guest-users).
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
+|Permission type|Least privileged permission|Higher privileged permissions|
+|:---|:---|:---|
+|Delegated (work or school account)|User.ReadBasic.All|User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|Not supported.|
+|Application|User.Read.All|User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All|
 
 ### Permissions for specific scenarios
 - *User-Mail.ReadWrite.All* is the least privileged permission to read and write the **otherMails** property; also allows to read some identifier-related properties on the user object.
@@ -41,28 +43,34 @@ Guest users cannot call this API. For more information about the permissions for
 
 ## HTTP request
 
+The following URL returns a list of **user** and **agentUser** objects, with **agentUser** objects containing an **@odata.type** property of `#microsoft.graph.agentUser`.
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users
 ```
 
 ## Optional query parameters
+This method supports [OData query parameters](/graph/query-parameters) to help customize the response:
 
-This method supports the `$count`, `$expand`, `$filter`, `$orderby`, `$search`, `$select`, and `$top` [OData query parameters](/graph/query-parameters) to help customize the response. `$skip` isn't supported. The default and maximum page sizes are 100 and 999 user objects respectively, except when you specify `$select=signInActivity` or `$filter=signInActivity`. When `signInActivity` is selected or filtered on, the maximum page size is 500. Some queries are supported only when you use the **ConsistencyLevel** header set to `eventual` and `$count`. For more information, see [Advanced query capabilities on directory objects](/graph/aad-advanced-queries). The `$count` and `$search` parameters are currently not available in Azure AD B2C tenants.
-
+- `$count`, `$expand`, `$filter`, `$orderby`, `$search`, `$select`, `$top`. `$skip` is not supported.
+- **Page size limits:** The default page size is 100 objects. The maximum page size is 999 objects, except when using `$select=signInActivity` or `$filter=signInActivity`, the maximum page size is 500.
+- Some queries require the **ConsistencyLevel** header set to `eventual` and `$count`. For more information, see [Advanced query capabilities on directory objects](/graph/aad-advanced-queries).
+- The `$count` and `$search` parameters are not available in Azure AD B2C tenants.
 
 Extension properties also support query parameters as follows:
 
-| Extension type                     | Comments                                                                                  |
-|------------------------------------|-------------------------------------------------------------------------------------------|
+| Extension type | Comments |
+|--|--|
 | onPremisesExtensionAttributes 1-15 | Returned only with `$select`. Supports `$filter` (`eq`, `ne`, and `eq` on `null` values). |
-| Schema extensions                  | Returned only with `$select`. Supports `$filter` (`eq`, `ne`, and `eq` on `null` values). |
-| Open extensions                    | Returned only with `$expand`, that is, `users?$expand=extensions`.                        |
-| Directory extensions               | Returned only with `$select`. Supports `$filter` (`eq`, `ne`, and `eq` on `null` values). |
+| Schema extensions | Returned only with `$select`. Supports `$filter` (`eq`, `ne`, and `eq` on `null` values). |
+| Open extensions | Returned only with `$expand`, that is, `users?$expand=extensions`. |
+| Directory extensions | Returned only with `$select`. Supports `$filter` (`eq`, `ne`, and `eq` on `null` values). |
+
+For agentUser objects, non-applicable properties are always `null`.
 
 Certain properties cannot be returned within a user collection. The following properties are only supported when [retrieving a single user](./user-get.md): **aboutMe**, **birthday**, **hireDate**, **interests**, **mySite**, **pastProjects**, **preferredName**, **responsibilities**, **schools**, **skills**, **mailboxSettings**.
 
-The following properties are not supported in personal Microsoft accounts and will be `null`: **aboutMe**, **birthday**, **interests**, **mySite**, **pastProjects**, **preferredName**, **responsibilities**, **schools**, **skills**, **streetAddress**.
+The following properties are not supported in personal Microsoft accounts and are always `null`: **aboutMe**, **birthday**, **interests**, **mySite**, **pastProjects**, **preferredName**, **responsibilities**, **schools**, **skills**, **streetAddress**.
 
 ## Request headers
 
@@ -77,9 +85,9 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and collection of [user](../resources/user.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [user](../resources/user.md) and [agentUser](../resources/agentuser.md) objects in the response body. **agentUser** objects include an **@odata.type** property with the value `#microsoft.graph.agentUser` to differentiate them from user objects.
 
-Attempting to use `$select` on the `/users` collection to retrieve properties that cannot be returned within a user collection (for example, the request `../users?$select=aboutMe`) returns a `501 Not Implemented` error code.
+Attempting to use `$select` on the `/users` collection to retrieve properties that cannot be returned within a collection (for example, the request `../users?$select=aboutMe`) returns a `501 Not Implemented` error code.
 
 ## Examples
 
@@ -87,7 +95,11 @@ Attempting to use `$select` on the `/users` collection to retrieve properties th
 
 #### Request
 
-The following example shows a request.
+The following example shows a request. The response includes agent users.
+
+```http
+GET https://graph.microsoft.com/beta/users
+```
 
 # [HTTP](#tab/http)
 <!-- {
@@ -157,7 +169,82 @@ Content-type: application/json
 }
 ```
 
-### Example 2: Get a user account using a sign-in name
+### Example 2: Get only agent users
+
+#### Request
+
+The following example shows a request.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_agentusers"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/users/microsoft.graph.agentUser
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-agentusers-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-agentusers-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-agentusers-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-agentusers-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-agentusers-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-agentusers-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-agentusers-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "value":[
+    {
+      "@odata.type":"#microsoft.graph.agentUser",      
+      "displayName":"contoso1",
+      "mail":"'contoso1@gmail.com",
+      "mailNickname":"contoso1_gmail.com#EXT#",
+      "otherMails":["contoso1@gmail.com"],
+      "proxyAddresses":["SMTP:contoso1@gmail.com"],
+      "userPrincipalName":"contoso1_gmail.com#EXT#@contoso.com"
+    }
+  ]
+}
+```
+
+### Example 3: Get a user account using a sign-in name
 
 Find a user account using a sign-in name (also known as a local account).
 
@@ -231,7 +318,7 @@ Content-type: application/json
 }
 ```
 
-### Example 3: Get guest (B2B) users from a specific tenant or domain by userPrincipalName
+### Example 4: Get guest (B2B) users from a specific tenant or domain by userPrincipalName
 
 #### Request
 
@@ -316,7 +403,7 @@ Content-type: application/json
 }
 ```
 
-### Example 4: List the last sign-in time of users with a specific display name
+### Example 5: List the last sign-in time of users with a specific display name
 
 #### Request
 
@@ -398,7 +485,7 @@ Content-type: application/json
 }
 ```
 
-### Example 5: List the last sign-in time of users in a specific time range
+### Example 6: List the last sign-in time of users in a specific time range
 
 #### Request
 
@@ -461,7 +548,7 @@ Content-type: application/json
 }
 ```
 
-### Example 6: Get only a count of users
+### Example 7: Get only a count of users
 
 #### Request
 
@@ -525,7 +612,7 @@ Content-type: text/plain
 893
 ```
 
-### Example 7: Use $filter and $top to get one user with a display name that starts with 'a' including a count of returned objects
+### Example 8: Use $filter and $top to get one user with a display name that starts with 'a' including a count of returned objects
 
 #### Request
 
@@ -573,7 +660,7 @@ Content-type: application/json
 }
 ```
 
-### Example 8: Use $filter to get all users with a mail that ends with 'a@contoso.com', including a count of returned objects, with the results ordered by userPrincipalName
+### Example 9: Use $filter to get all users with a mail that ends with 'a@contoso.com', including a count of returned objects, with the results ordered by userPrincipalName
 
 #### Request
 
@@ -653,7 +740,7 @@ Content-type: application/json
 }
 ```
 
-### Example 9: Use $search to get users with display names that contain the letters 'wa' including a count of returned objects
+### Example 10: Use $search to get users with display names that contain the letters 'wa' including a count of returned objects
 
 #### Request
 
@@ -732,7 +819,7 @@ Content-type: application/json
 
 ```
 
-### Example 10: Use $search to get users with display names that contain the letters 'wa' or the letters 'ad' including a count of returned objects
+### Example 11: Use $search to get users with display names that contain the letters 'wa' or the letters 'ad' including a count of returned objects
 
 #### Request
 
@@ -819,7 +906,7 @@ Content-type: application/json
 ```
 
 
-### Example 11: Use $filter to get users who are assigned a specific license
+### Example 12: Use $filter to get users who are assigned a specific license
 
 #### Request
 
@@ -907,7 +994,7 @@ Content-type: application/json
 }
 ```
 
-### Example 12: Get the value of a schema extension for all users
+### Example 13: Get the value of a schema extension for all users
 
 In this example, the ID of the schema extension is `ext55gb1l09_msLearnCourses`.
 
@@ -984,7 +1071,7 @@ Content-type: application/json
 
 > **Note:** You can also apply `$filter` on the schema extension property to retrieve objects where a property in the collection matches a specified value. The syntax is `/users?$filter={schemaPropertyID}/{propertyName} eq 'value'`. For example, `GET /users?$select=ext55gb1l09_msLearnCourses&$filter=ext55gb1l09_msLearnCourses/courseType eq 'Developer'`. The `eq` and `not` operators are supported.
 
-### Example 13: List all users with a custom security attribute assignment that equals a value
+### Example 14: List all users with a custom security attribute assignment that equals a value
 
 The following example shows how to list all users with a custom security attribute assignment that equals a value. The example retrieves users with a custom security attribute named `AppCountry` with a value that equals `Canada`. The filter value is case sensitive. You must add `ConsistencyLevel=eventual` in the request or the header. You must also include `$count=true` to ensure the request is routed correctly.
 
@@ -1103,7 +1190,7 @@ HTTP/1.1 200 OK
 }
 ```
 
-### Example 14: List all users whose management is restricted
+### Example 15: List all users whose management is restricted
 The following example shows how to list all users whose management is restricted.
 #### Request
 The following example shows a request.
@@ -1173,7 +1260,7 @@ Content-type: application/json
 }
 ```
 
-### Example 15: Use $filter and endsWith to get users with a specified top-level domain in otherMails
+### Example 16: Use $filter and endsWith to get users with a specified top-level domain in otherMails
 
 #### Request
 The following example shows a request. This request requires the **ConsistencyLevel** header set to `eventual` because `$count` is in the request. For more information about the use of **ConsistencyLevel** and `$count`, see [Advanced query capabilities on directory objects](/graph/aad-advanced-queries).
