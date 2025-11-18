@@ -6,7 +6,7 @@ ms.localizationpriority: medium
 
 | Permission type                        | Least privileged permission | Higher privileged permissions |
 |:---------------------------------------|:----------------------------|:------------------------------|
-| Delegated (work or school account)     | MailboxConfigItem.ReadWrite | Not supported.                |
-| Delegated (personal Microsoft account) | MailboxConfigItem.ReadWrite | Not supported.                |
-| Application                            | MailboxConfigItem.ReadWrite | Not supported.                |
+| Delegated (work or school account)     | MailboxConfigItem.ReadWrite | Not available.                |
+| Delegated (personal Microsoft account) | MailboxConfigItem.ReadWrite | Not available.                |
+| Application                            | MailboxConfigItem.ReadWrite | Not available.                |
 
