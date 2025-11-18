@@ -1,5 +1,5 @@
 ---
-title: "Add appliesTo"
+title: "Assign b2bManagementPolicy appliesTo"
 description: "Assign directory objects on which b2bManagementPolicy needs to be applied."
 author: "akshukla"
 ms.date: 10/27/2025
@@ -8,7 +8,7 @@ ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ---
 
-# Add appliesTo
+# Assign b2bManagementPolicy appliesTo
 
 Namespace: microsoft.graph
 
