@@ -28,7 +28,7 @@ This article describes how to provision the MCP server and to configure VS Code 
 1. Authenticate into the tenant you'd like to register the MCP Server. You must be assigned either the *Application Administrator* and *Cloud Application Administrator* roles to consent to the required permissions:
 
    ```powershell
-   Connect-Entra -Scopes 'Application.ReadWrite.All', 'DelegatedPermissionGrant.ReadWrite.All'
+   Connect-Entra -Scopes 'Application.ReadWrite.All', 'Directory.Read.All', 'DelegatedPermissionGrant.ReadWrite.All'
    ```
 
   > [!TIP]
