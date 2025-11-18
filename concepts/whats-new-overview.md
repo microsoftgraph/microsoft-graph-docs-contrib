@@ -24,20 +24,31 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 The [driveItem: restore](/graph/api/driveitem-restore) method was expanded to enable restoring a **driveItem** deleted from a **fileStorageContainer** without mapping it to a **recycleBinItem**. This complements existing functionality in [recycleBinItem: restore](/graph/api/filestoragecontainer-restore-recyclebinitem) which continues to work as expected.
 
-### Files
+### Device and app management | Cloud PC
 
-Deprecated the [drive: recent](/graph/api/drive-recent) and [drive: sharedWithMe](/graph/api/drive-sharedwithme) methods of the [drive](/graph/api/resources/drive) resource.
+- Use the [cloudPCUserSettingsPersistenceDetail](/graph/api/resources/cloudpcusersettingspersistencedetail?view=graph-rest-beta&preserve-view=true) resource and its associated methods to determine whether Cloud PC user settings persistence is enabled. When enabled, Windows 365 saves user-specific application data in a central location and reconnects users to their storage during each session. The following methods are supported:
+  - [Batch delete user settings persistence profile](/graph/api/cloudpcusersettingspersistencedetail-batchcleanupusersettingspersistenceprofile?view=graph-rest-beta&preserve-view=true).
+  - [Retrieve user settings persistence profiles](/graph/api/cloudpcusersettingspersistencedetail-retrieveusersettingspersistenceprofiles?view=graph-rest-beta&preserve-view=true).
+  - [Retrieve user settings persistence usage](/graph/api/cloudpcusersettingspersistencedetail-retrieveusersettingspersistenceprofileusage?view=graph-rest-beta&preserve-view=true).
+
+### Security | Alerts and incidents
+
+Use [aiAgentEvidence](/graph/api/resources/security-aiagentevidence) as a newly supported [alertEvidence](/graph/api/resources/security-alertevidence) type.
 
 ## November 2025: New in preview only
 
 ### Files
-
+Deprecated the [drive: recent](/graph/api/drive-recent) and [drive: sharedWithMe](/graph/api/drive-sharedwithme) methods of the [drive](/graph/api/resources/drive) resource.
 Deprecated the [drive: recent](/graph/api/drive-recent?view=graph-rest-beta&preserve-view=true) and [drive: sharedWithMe](/graph/api/drive-sharedwithme?view=graph-rest-beta&preserve-view=true) methods of the [drive](/graph/api/resources/drive?view=graph-rest-beta&preserve-view=true) resource.
 
 ### Tasks and plans
 
 - [Get](/graph/api/plannerplan-getusagerights?view=graph-rest-beta&preserve-view=true) the usage rights for a specific [plan](/graph/api/resources/plannerplan?view=graph-rest-beta&preserve-view=true) based on its sensitivity label assignment and the requesting user's permissions.
 - Use the **contentSensitivityLabelAssignment** property on [plannerPlan](/graph/api/resources/plannerplan?view=graph-rest-beta&preserve-view=true) to get or set the sensitivity label assignment for a plan.
+
+### Teamwork and communications | Calls and online meetings
+
+Use the `Accept-Language` header with the [Create virtualEventWebinar](/graph/api/virtualeventsroot-post-webinars?view=graph-rest-beta&preserve-view=true) and [Create virtualEventTownhall](/graph/api/virtualeventsroot-post-townhalls?view=graph-rest-beta&preserve-view=true) methods to specify an acceptable human language for the response.
 
 ## October 2025: New and generally available
 

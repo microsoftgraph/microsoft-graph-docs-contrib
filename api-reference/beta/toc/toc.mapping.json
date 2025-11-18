@@ -141,8 +141,9 @@
     },
     {
       "name": "Agents (preview)",
-      "overview": "",
-      "resources": [],
+      "overview": "../../resources/agentid-platform-overview.md",
+      "resources": ["agentUser"],
+      "shouldSort": true,
       "childNodes": [
           {
             "name": "Agent identities",
@@ -543,6 +544,7 @@
             "cloudPcSnapshot",
             "cloudPcSupportedRegion",
             "cloudPcUserSetting",
+            "cloudPCUserSettingsPersistenceDetail",
             "virtualEndpoint",
             "cloudPcReports"
           ],
@@ -611,6 +613,8 @@
             "cloudPcUserRoleScopeTagInfo",
             "cloudPcUserSettingAssignment",
             "cloudPcUserSettingsPersistenceConfiguration",
+            "cloudPCUserSettingsPersistenceProfile",
+            "cloudPCUserSettingsPersistenceUsageResult",
             "cloudPcWindowsSetting",
             "cloudPcWindowsSettings",
             "frontlineCloudPcDetail",
@@ -1821,7 +1825,9 @@
               ],
               "resources": [
                 "organizationalBranding",
-                "organizationalBrandingLocalization"
+                "organizationalBrandingLocalization",
+                "organizationalBrandingTheme",
+                "organizationalBrandingThemeLocalization"
               ]
             },
             {
@@ -2726,6 +2732,7 @@
             "microsoft.graph.security.incidentTask"
           ],
           "complexTypes": [
+            "microsoft.graph.security.aiAgentEvidence",
             "microsoft.graph.security.securityGroupEvidence",
             "microsoft.graph.security.teamsMessageEvidence",
             "microsoft.graph.security.userAccount"

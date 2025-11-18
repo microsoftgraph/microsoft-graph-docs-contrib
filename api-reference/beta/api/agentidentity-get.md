@@ -58,6 +58,7 @@ If successful, this method returns a `200 OK` response code and an [agentIdentit
 ### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_agentidentity"
@@ -66,6 +67,12 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/beta/servicePrincipals/{id}/microsoft.graph.agentIdentity
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-agentidentity-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 
 ### Response
