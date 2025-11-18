@@ -79,7 +79,7 @@ Represents a chat that is a collection of [chatMessages](chatmessage.md) between
 | id| String| The chat's unique identifier. Read-only.|
 | isHiddenForAllMembers | Boolean | Indicates whether the chat is hidden for all its members. Read-only.|
 | lastUpdatedDateTime| dateTimeOffset|  Date and time at which the chat was renamed or list of members were last changed. Read-only.|
-| migrationMode|[migrationMode](../resources/channel.md#migrationmode-values)|Indicates whether a chat is in migration mode. This value is `null` for chats that never entered migration mode.|
+| migrationMode|[migrationMode](../resources/channel.md#migrationmode-values)|Indicates whether a chat is in migration mode. This value is `null` for chats that never entered migration mode. The possible values are: `inProgress`, `completed`, `unknownFutureValue`.|
 | onlineMeetingInfo | [teamworkOnlineMeetingInfo](../resources/teamworkonlinemeetinginfo.md) | Represents details about an online meeting. If the chat isn't associated with an online meeting, the property is empty. Read-only.|
 | originalCreatedDateTime|dateTimeOffset|Timestamp of the original creation time for the chat. The value is `null` if the chat never entered migration mode.|
 | tenantId| String | The identifier of the tenant in which the chat was created. Read-only.|
