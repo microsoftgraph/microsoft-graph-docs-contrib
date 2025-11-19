@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get all transcripts from [adhoc call](../resources/adhoccall.md) instances initiated by a specific user.
+Get all transcripts from [adhoc call](../resources/adhoccall.md) instances that a specific user initiates.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -36,7 +36,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /communications/adhocCalls/getAllTranscripts
 GET /users/{usersId}/adhocCalls/getAllTranscripts
 ```
 
@@ -75,7 +74,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/communications/adhocCalls/getAllTranscripts(userId=d4220f1b-4c12-436c-8a03-dc3e362f9d54,startDateTime=2025-10-07T07:25:21.9730833Z,endDateTime=2025-10-07T07:25:52.4130833Z)
+GET https://graph.microsoft.com/beta/adhocCalls/getAllTranscripts(userId=d4220f1b-4c12-436c-8a03-dc3e362f9d54,startDateTime=2025-10-07T07:25:21.9730833Z,endDateTime=2025-10-07T07:25:52.4130833Z)
 ```
 
 ### Response
@@ -97,10 +96,10 @@ Content-Type: application/json
   "@odata.count": 2,
   value: [
     {
-      ID: "ktVizJ7GAAAAoPCPlATZWzE5OmNkYWQ5MTQ4LWQ5MjYtNDczMS04NjE4LTM3MWU1ODdkZGVkMF9kNDIyMGYxYi00YzEyLTQzNmMtOGEwMy1kYzNlMzYyZjlkNTRAdW5xLmdibC5zcGFjZXOg2TxmYjdlNWMxZS04YWI4LTQ2NDctOTdhMS03Mzk5MDhkNDE3YjMtMTc1OTgyMTkyMS1UcmFuc2NyaXB0VjI=",
-      meetingID: null,
-      callID: "fb7e5c1e-8ab8-4647-97a1-739908d417b3",
-      contentCorrelationID: "7cc3ae2a-0aa9-4e47-9d85-e98e607d1af2-20251007_072521",
+      id: "ktVizJ7GAAAAoPCPlATZWzE5OmNkYWQ5MTQ4LWQ5MjYtNDczMS04NjE4LTM3MWU1ODdkZGVkMF9kNDIyMGYxYi00YzEyLTQzNmMtOGEwMy1kYzNlMzYyZjlkNTRAdW5xLmdibC5zcGFjZXOg2TxmYjdlNWMxZS04YWI4LTQ2NDctOTdhMS03Mzk5MDhkNDE3YjMtMTc1OTgyMTkyMS1UcmFuc2NyaXB0VjI=",
+      meetingId: null,
+      callId: "fb7e5c1e-8ab8-4647-97a1-739908d417b3",
+      contentCorrelationId: "7cc3ae2a-0aa9-4e47-9d85-e98e607d1af2-20251007_072521",
       transcriptContentUrl: "https://graph.microsoft.com/beta/users/d4220f1b-4c12-436c-8a03-dc3e362f9d54/adhocCalls/fb7e5c1e-8ab8-4647-97a1-739908d417b3/transcripts/ktVizJ7GAAAAoPCPlATZWzE5OmNkYWQ5MTQ4LWQ5MjYtNDczMS04NjE4LTM3MWU1ODdkZGVkMF9kNDIyMGYxYi00YzEyLTQzNmMtOGEwMy1kYzNlMzYyZjlkNTRAdW5xLmdibC5zcGFjZXOg2TxmYjdlNWMxZS04YWI4LTQ2NDctOTdhMS03Mzk5MDhkNDE3YjMtMTc1OTgyMTkyMS1UcmFuc2NyaXB0VjI=/content",
       createdDateTime: "2025-10-07T07:25:21.9730833Z",
       endDateTime: "2025-10-07T07:25:52.4130833Z",
@@ -109,18 +108,18 @@ Content-Type: application/json
         device: null,
         user: {
           "@odata.type": "#microsoft.graph.teamworkUserIdentity",
-          ID: "d4220f1b-4c12-436c-8a03-dc3e362f9d54",
+          id: "d4220f1b-4c12-436c-8a03-dc3e362f9d54",
           displayName: null,
           userIdentityType: "aadUser",
-          tenantID: "2432b57b-0abd-43db-aa7b-16eadd115d34",
+          tenantId: "2432b57b-0abd-43db-aa7b-16eadd115d34",
         },
       },
     },
     {
-      ID: "ktVizJ7GAAAAoPCPlATZWzE5OmNkYWQ5MTQ4LWQ5MjYtNDczMS04NjE4LTM3MWU1ODdkZGVkMF9kNDIyMGYxYi00YzEyLTQzNmMtOGEwMy1kYzNlMzYyZjlkNTRAdW5xLmdibC5zcGFjZXOg2TwwNTQ3ZDUzOS0wNTExLTRiZDEtODRjZi01YTA3M2ZhYjcxMmQtMTc1OTgxODY3My1UcmFuc2NyaXB0VjI=",
-      meetingID: null,
-      callID: "0547d539-0511-4bd1-84cf-5a073fab712d",
-      contentCorrelationID: "94c3eb48-4271-4b60-b7b7-121b9d798eb3-20251007_063113",
+      id: "ktVizJ7GAAAAoPCPlATZWzE5OmNkYWQ5MTQ4LWQ5MjYtNDczMS04NjE4LTM3MWU1ODdkZGVkMF9kNDIyMGYxYi00YzEyLTQzNmMtOGEwMy1kYzNlMzYyZjlkNTRAdW5xLmdibC5zcGFjZXOg2TwwNTQ3ZDUzOS0wNTExLTRiZDEtODRjZi01YTA3M2ZhYjcxMmQtMTc1OTgxODY3My1UcmFuc2NyaXB0VjI=",
+      meetingId: null,
+      callId: "0547d539-0511-4bd1-84cf-5a073fab712d",
+      contentCorrelationId: "94c3eb48-4271-4b60-b7b7-121b9d798eb3-20251007_063113",
       transcriptContentUrl: "https://graph.microsoft.com/beta/users/d4220f1b-4c12-436c-8a03-dc3e362f9d54/adhocCalls/0547d539-0511-4bd1-84cf-5a073fab712d/transcripts/ktVizJ7GAAAAoPCPlATZWzE5OmNkYWQ5MTQ4LWQ5MjYtNDczMS04NjE4LTM3MWU1ODdkZGVkMF9kNDIyMGYxYi00YzEyLTQzNmMtOGEwMy1kYzNlMzYyZjlkNTRAdW5xLmdibC5zcGFjZXOg2TwwNTQ3ZDUzOS0wNTExLTRiZDEtODRjZi01YTA3M2ZhYjcxMmQtMTc1OTgxODY3My1UcmFuc2NyaXB0VjI=/content",
       createdDateTime: "2025-10-07T06:31:13.1759028Z",
       endDateTime: "2025-10-07T06:31:26.5759028Z",
@@ -129,13 +128,13 @@ Content-Type: application/json
         device: null,
         user: {
           "@odata.type": "#microsoft.graph.teamworkUserIdentity",
-          ID: "d4220f1b-4c12-436c-8a03-dc3e362f9d54",
+          id: "d4220f1b-4c12-436c-8a03-dc3e362f9d54",
           displayName: null,
           userIdentityType: "aadUser",
-          tenantID: "2432b57b-0abd-43db-aa7b-16eadd115d34",
+          tenantId: "2432b57b-0abd-43db-aa7b-16eadd115d34",
         },
       },
     },
-  ]
+  ],
 }
 ```
