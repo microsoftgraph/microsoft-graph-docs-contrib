@@ -21,8 +21,8 @@ For agentic [sign-ins](../resources/signin.md), provides information about the a
 |Property|Type|Description|
 |:---|:---|:---|
 |agentSubjectParentId|String|The subject's parent object ID. This is either the **id** of the **agentIdentity** or **agentIdentityBlueprint**.|
-|agentSubjectType|microsoft.graph.agentic.agentType|The type of the subject that requested the token. The possible values are: `notAgentic`, `agenticAppBuilder`, `agenticApp`, `agenticAppInstance`, `agentIdentityBlueprintPrincipal`, `agentIDuser`, `unknownFutureValue`.|
-|agentType|microsoft.graph.agentic.agentType|Indicates whether the identity is agentic or nonagentic. The possible values are: `notAgentic`, `agenticAppBuilder`, `agenticApp`, `agenticAppInstance`, `agentIdentityBlueprintPrincipal`, `agentIDuser`, `unknownFutureValue`.|
+|agentSubjectType|microsoft.graph.agentic.agentType|The type of the subject that requested the token. The possible values are: `notAgentic`, `agenticApp`, `agenticAppInstance`, `unknownFutureValue`, `agentIdentityBlueprintPrincipal`, `agentIDuser`. Use the `Prefer: include-unknown-enum-members` request header to get the following value or values in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `agentIdentityBlueprintPrincipal`, `agentIDuser`.|
+|agentType|microsoft.graph.agentic.agentType|Indicates whether the identity is agentic or nonagentic. The possible values are: `notAgentic`, `agenticApp`, `agenticAppInstance`, `unknownFutureValue`, `agentIdentityBlueprintPrincipal`, `agentIDuser`. Use the `Prefer: include-unknown-enum-members` request header to get the following value or values in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `agentIdentityBlueprintPrincipal`, `agentIDuser`. |
 |parentAppId|String|The **appId** of the parent agent where the **agentType** is agentic.|
 
 ## Relationships
