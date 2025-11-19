@@ -251,7 +251,7 @@ Added the following new endpoints as supported request URLs for the [driveItem: 
 - `POST /sites/{siteId}/drive/items/{parentItemId}:/{fileName}:/createUploadSession`
 - `POST /users/{userId}/drive/items/{parentItemId}:/{fileName}:/createUploadSession`
 
-Use the SharePoint cross-tenant migration task APIs in Microsoft Graph to enable organizations to manage the tasks during tenant-to-tenant migrations. For more information, see [sharePointMigrationTask](/graph/api/resources/sharepointmigrationtask?view=graph-rest-beta&preserve-view=true).
+Use the SharePoint cross-tenant migration task APIs in Microsoft Graph to enable organizations to manage the tasks during tenant-to-tenant migrations. For more information, see [sharePointMigrationTask](/graph/api/resources/sharepointmigrationtask).
 
 ### Security | Alerts and incidents
 

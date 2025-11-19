@@ -389,7 +389,7 @@ items:
     - name: GetBySourceUserPrincipalName
       href: ../../api/sharepointmigrationtask-getbysourceuserprincipalname.md
     - name: GetBySourceSiteUrl
-    href: ../../api/sharepointmigrationtask-getbysourcesiteurl.md
+      href: ../../api/sharepointmigrationtask-getbysourcesiteurl.md
     - name: GetBySourceGroupMailNickName
       href: ../../api/sharepointmigrationtask-getbysourcegroupmailnickname.md
     - name: Cancel

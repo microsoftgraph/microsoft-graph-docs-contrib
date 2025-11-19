@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 The **GroupIdentity** resource represents an identity of a group-connected site. Inherits from [identity](identity.md).
 
-Inherits from [identity](../resources/intune-identity.md).
+Inherits from [identity](../resources/identity.md).
 
 This resource is an open type.
 
