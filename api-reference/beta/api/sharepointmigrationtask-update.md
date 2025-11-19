@@ -66,7 +66,7 @@ If successful, this method returns a `200 OK` response code and an updated [shar
 The following example shows a request to create a user migration task by **userPrincipalName**.
 <!-- {
   "blockType": "request",
-  "name": "update_sharepointmigrationtask"
+  "name": "update_sharepointmigrationtask_by_userprincipalname"
 }
 -->
 ``` http
@@ -95,7 +95,8 @@ The following example shows the response.
 
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.sharePointMigrationTask"
 }
 -->
 ``` http
@@ -125,7 +126,7 @@ Content-Type: application/json
 The following example shows a request to create a user migration task by **userObjectId**.
 <!-- {
   "blockType": "request",
-  "name": "update_sharepointmigrationtask"
+  "name": "update_sharepointmigrationtask_by_userobjectid"
 }
 -->
 ``` http
@@ -154,7 +155,8 @@ The following example shows the response.
 
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.sharePointMigrationTask"
 }
 -->
 ``` http
@@ -184,7 +186,7 @@ Content-Type: application/json
 The following example shows a request to create a user migration task by **userObjectId** and with specific **targetDataLocationCode**.
 <!-- {
   "blockType": "request",
-  "name": "update_sharepointmigrationtask"
+  "name": "update_sharepointmigrationtask_with_targetdatalocationcode"
 }
 -->
 ``` http
@@ -214,7 +216,8 @@ The following example shows the response.
 
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.sharePointMigrationTask"
 }
 -->
 ``` http
@@ -247,7 +250,7 @@ Content-Type: application/json
 The following example shows a request to create a regular site migration task.
 <!-- {
   "blockType": "request",
-  "name": "update_sharepointmigrationtask"
+  "name": "update_sharepointmigrationtask_by_siteurl"
 }
 -->
 ``` http
@@ -270,7 +273,8 @@ The following example shows the response.
 
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.sharePointMigrationTask"
 }
 -->
 ``` http
@@ -294,7 +298,7 @@ Content-Type: application/json
 The following example shows a request to create a group-connected site migration task by **MailNickname**.
 <!-- {
   "blockType": "request",
-  "name": "update_sharepointmigrationtask"
+  "name": "update_sharepointmigrationtask_by_mailnickname"
 }
 -->
 ``` http
@@ -323,7 +327,8 @@ The following example shows the response.
 
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.sharePointMigrationTask"
 }
 -->
 ``` http
@@ -353,7 +358,7 @@ Content-Type: application/json
 The following example shows a request to create a user migration task with **preferredStartDateTime** parameter.
 <!-- {
   "blockType": "request",
-  "name": "update_sharepointmigrationtask"
+  "name": "update_sharepointmigrationtask_with_preferredstartdatetime"
 }
 -->
 ``` http
@@ -383,11 +388,14 @@ The following example shows the response.
 
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.sharePointMigrationTask"
 }
 -->
 ``` http
+HTTP/1.1 200 OK
 Content-Type: application/json
+
 {
   "id": "3ed6d46d-13a3-4995-b6ea-a74a20b1fac0",
   "status": "notStarted",
@@ -412,7 +420,7 @@ Content-Type: application/json
 The following example shows a request to create a user migration task with **ValidateOnly=true** parameter.
 <!-- {
   "blockType": "request",
-  "name": "update_sharepointmigrationtask"
+  "name": "update_sharepointmigrationtask_with_validateonly"
 }
 -->
 ``` http
@@ -442,11 +450,14 @@ The following example shows the response.
 
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.sharePointMigrationTask"
 }
 -->
 ``` http
+HTTP/1.1 200 OK
 Content-Type: application/json
+
 {
   "status": "Completed",
   "parameters": {
