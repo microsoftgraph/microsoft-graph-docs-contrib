@@ -81,7 +81,7 @@ POST https://graph.microsoft.com/beta/drives/b!s8RqPCGh0ESQS2EYnKM0IKS3lM7GxjdAv
 Content-Type: application/json
 
 {
-  "grantedToIdentitiesV2": {
+  "grantedToV2": {
     "application": {
       "id": "89ea5c94-7736-4e25-95ad-3fa95f62b66e",
       "displayName": "Contoso Time Manager App"
@@ -141,22 +141,18 @@ Content-Type: application/json
   "roles": [
     "write"
   ],
-  "grantedToIdentities": [
-    {
-      "application": {
-        "id": "89ea5c94-7736-4e25-95ad-3fa95f62b66e",
-        "displayName": "Contoso Time Manager App"
-      }
+  "grantedTo": {
+    "application": {
+      "id": "89ea5c94-7736-4e25-95ad-3fa95f62b66e",
+      "displayName": "Contoso Time Manager App"
     }
-  ],
-  "grantedToIdentitiesV2": [
-    {
-      "application": {
-        "id": "89ea5c94-7736-4e25-95ad-3fa95f62b66e",
-        "displayName": "Contoso Time Manager App"
-      }
+  },
+  "grantedToV2": {
+    "application": {
+      "id": "89ea5c94-7736-4e25-95ad-3fa95f62b66e",
+      "displayName": "Contoso Time Manager App"
     }
-  ]
+  }
 }
 ```
 
