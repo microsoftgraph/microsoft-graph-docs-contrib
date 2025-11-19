@@ -446,6 +446,10 @@ items:
       href: ../../api/onpremauthenticationpolicy-delete.md
     - name: List appliesTo
       href: ../../api/onpremauthenticationpolicy-list-appliesto.md
+    - name: Create applies to
+      href: ../../api/onpremauthenticationpolicy-post-appliesto.md
+    - name: Delete applies to
+      href: ../../api/onpremauthenticationpolicy-delete-appliesto.md
   - name: On-premises directory synchronization
     items:
     - name: On-premises directory synchronization
@@ -3323,6 +3327,10 @@ items:
         href: ../../api/onpremauthenticationpolicy-delete.md
       - name: List appliesTo
         href: ../../api/onpremauthenticationpolicy-list-appliesto.md
+      - name: Create applies to
+        href: ../../api/onpremauthenticationpolicy-post-appliesto.md
+      - name: Delete applies to
+        href: ../../api/onpremauthenticationpolicy-delete-appliesto.md
     - name: Permission grant policy
       items:
       - name: Permission grant policy
