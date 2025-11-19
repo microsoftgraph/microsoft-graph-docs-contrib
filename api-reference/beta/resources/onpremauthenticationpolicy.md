@@ -28,6 +28,8 @@ Inherits from [stsPolicy](../resources/stspolicy.md).
 |[Update](../api/onpremauthenticationpolicy-update.md)|[onPremAuthenticationPolicy](../resources/onpremauthenticationpolicy.md)|Update the properties of an onPremAuthenticationPolicy object.|
 |[Delete](../api/onpremauthenticationpolicy-delete.md)|None|Delete an onPremAuthenticationPolicy object.|
 |[List appliesTo](../api/onpremauthenticationpolicy-list-appliesto.md)|[directoryObject](../resources/directoryobject.md) collection|Get the list of directoryObjects that this policy has been applied to.|
+|[Add appliesTo](../api/onpremauthenticationpolicy-post-appliesto.md)|[directoryObject](../resources/directoryobject.md)|Add appliesTo by posting to the appliesTo collection.|
+|[Remove appliesTo](../api/onpremauthenticationpolicy-delete-appliesto.md)|None|Remove a [directoryObject](../resources/directoryobject.md) object.|
 
 ## Properties
 |Property|Type|Description|
