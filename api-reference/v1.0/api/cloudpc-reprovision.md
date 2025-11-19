@@ -52,7 +52,7 @@ POST /deviceManagement/virtualEndpoint/cloudPCs/{id}/reprovision
 
 ## Request body
 
-> **Note**: Only the APIs for **admin** support request body.
+> **Note**: Only the APIs for *admin* support request body.
 
 In the request body, supply a JSON representation of the parameters.
 
@@ -69,13 +69,13 @@ If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
-The following example shows how to reprovision the Cloud PC for the administrator.
-
 ### Example 1: Reprovision the cloudPC for the administrator
 
-The following example shows a request.
+The following example shows how to reprovision the Cloud PC for the administrator.
 
 #### Request
+
+The following example shows a request.
 
 <!-- {
   "blockType": "request",
@@ -94,8 +94,6 @@ Content-length: 61
 }
 ```
 
-The following example shows the response.
-
 #### Response
 
 <!-- {
@@ -112,9 +110,11 @@ The following example shows how to reprovision the Cloud PC for the signed-in us
 
 ### Example 2: Reprovision the cloudPC for the signed-in user
 
-The following example shows a request.
+The following example shows how to reprovision the Cloud PC for the signed-in user.
 
 #### Request
+
+The following example shows a request.
 
 <!-- {
   "blockType": "request",
@@ -126,9 +126,9 @@ The following example shows a request.
 POST https://graph.microsoft.com/v1.0/me/cloudPCs/36bd4942-0ca8-11ed-861d-0242ac120002/reprovision
 ```
 
-The following example shows the response.
-
 #### Response
+
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
