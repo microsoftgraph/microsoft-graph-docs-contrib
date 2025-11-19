@@ -68,7 +68,7 @@ The following example shows a request.
   "name": "list_corsconfiguration_v2"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/applications/{applicationObjectId}/onPremisesPublishing/segmentsConfiguration/microsoft.graph.webSegmentConfiguration/applicationSegments/{segmentId}/corsConfigurations
 ```
 

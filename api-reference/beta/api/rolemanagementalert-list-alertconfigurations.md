@@ -68,7 +68,7 @@ The following example shows a request that retrieves all the alert configuration
   "name": "list_unifiedrolemanagementalertconfiguration"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/roleManagementAlerts/alertConfigurations?$filter=scopeId eq '/' and scopeType eq 'DirectoryRole'&$expand=alertDefinition
 ```
 

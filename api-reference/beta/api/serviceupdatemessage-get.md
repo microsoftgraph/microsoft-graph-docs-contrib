@@ -62,7 +62,7 @@ If successful, this method returns a `200 OK` response code and a [serviceUpdate
 }
 -->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/admin/serviceAnnouncement/messages/MC172851
 ```
 

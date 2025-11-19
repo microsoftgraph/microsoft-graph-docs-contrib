@@ -66,7 +66,7 @@ If successful, this method returns a `200 OK` response code and a [federatedIden
   "name": "get_federatedidentitycredential"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/applications/acd7c908-1c4d-4d48-93ee-ff38349a75c8/federatedIdentityCredentials/bdad0963-4a7a-43ae-b569-e67e1da3f2c0
 ```
 

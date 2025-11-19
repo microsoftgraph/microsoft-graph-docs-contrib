@@ -68,7 +68,7 @@ The following example shows a request.
   "name": "get_identityaccounts"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/security/identities/identityAccounts/0104216-0539-4838-88b1-55baafdc296b
 ```
 
@@ -157,7 +157,7 @@ The following example shows a request.
   "name": "get_identityaccounts_selected"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/security/identities/identityAccounts/0104216-0539-4838-88b1-55baafdc296b?$select=accounts
 ```
 

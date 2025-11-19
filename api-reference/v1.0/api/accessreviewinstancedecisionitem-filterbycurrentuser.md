@@ -81,7 +81,7 @@ If successful, this function returns a `200 OK` response code and a [accessRevie
   "name": "accessreviewinstancedecisionitem_filterbycurrentuser"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitions/0185aab8-9a7e-44b5-ae36-41b923c3bf87/instances/1234aab8-9a7e-5678-ae36-41b923c3bf87/decisions/filterByCurrentUser(on='reviewer')
 ```
 
@@ -182,7 +182,7 @@ Content-Type: application/json
   "name": "accessreviewinstancedecisionitem_filterbycurrentuser_2"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitions/0185aab8-9a7e-44b5-ae36-41b923c3bf87/instances/1234aab8-9a7e-5678-ae36-41b923c3bf87/stages/9458f255-dff2-4d86-9a05-69438f49d7f8/decisions/filterByCurrentUser(on='reviewer')?$select=accessReviewId,reviewedDateTime,decision,justification,recommendation,reviewedBy,target
 ```
 

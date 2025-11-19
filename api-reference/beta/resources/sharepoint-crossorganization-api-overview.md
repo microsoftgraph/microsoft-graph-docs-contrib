@@ -1,7 +1,7 @@
 ---
 title: "Use the SharePoint cross-tenant migration API (preview)"
 description: "Learn how to use the SharePoint cross-tenant migration APIs in Microsoft Graph to perform identity mapping operations during tenant-to-tenant migrations."
-author: "xiaoqwan"
+author: "Joey-King"
 ms.date: 11/04/2025
 ms.localizationpriority: medium
 ms.subservice: "onedrive"

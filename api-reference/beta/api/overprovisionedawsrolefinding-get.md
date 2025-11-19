@@ -62,7 +62,7 @@ The following example shows a request.
   "name": "get_overprovisionedawsrolefinding"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/MSxPdmVycHJvdmlzaW9uZWRBd3NSb2xlRmluZGluZywxNzYzMTk/microsoft.graph.overprovisionedAwsRoleFinding
 ```
 
