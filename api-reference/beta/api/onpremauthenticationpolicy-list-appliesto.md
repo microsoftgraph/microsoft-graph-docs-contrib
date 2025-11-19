@@ -1,5 +1,5 @@
 ---
-title: "List appliesTo"
+title: "List onPremAuthenticationPolicy appliesTo"
 description: "List directory objects that are assigned onPremAuthenticationPolicy"
 author: "maheshwaria"
 ms.date: 09/10/2025
@@ -8,7 +8,7 @@ ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
-# List appliesTo
+# List onPremAuthenticationPolicy appliesTo
 
 Namespace: microsoft.graph
 
