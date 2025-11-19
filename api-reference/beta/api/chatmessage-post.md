@@ -1810,71 +1810,17 @@ Content-type: application/json
 
 The following example shows how to send a message with a code block.
 
+> [!NOTE]
+> - To specify a language for syntax highlighting in a code block, use the `class` attribute in the `<codeblock>` HTML element.
+> - If no language is specified, the code block defaults to plaintext formatting.
+> - Supported languages include: `bash`, `c`, `cpp`, `csharp`, `css`, `dart`, `dockerfile`, `dos`, `go`, `graphql`, `html`, `http`, `java`, `javascript`, `json`, `jsp`, `jsx`, `kotlin`, `markdown`, `objectivec`, `octave`, `perl`, `php`, `powershell`, `python`, `r`, `ruby`, `rust`, `scala`, `scss`, `shell`, `sql`, `swift`, `typescript`, `vbnet`, `vbscript`, `verilog`, `vhdl`, `xml`, `yaml`, and `plaintext`.
 
-#### Code block syntax
-
-To specify a language for syntax highlighting in a code block, use the `class` attribute in the `<codeblock>` HTML element:
-
-```html
-<codeblock class="{language}">
-    <code>YOUR_CODE_HERE</code>
-</codeblock>
-```
-
-#### Supported languages
-
-The following languages are supported for syntax highlighting in code blocks:
-
-| Language | Class value |
-|----------|------------|
-| Bash | `bash` |
-| C | `c` |
-| C++ | `cpp` |
-| C# | `csharp` |
-| CSS | `css` |
-| Dart | `dart` |
-| Dockerfile | `dockerfile` |
-| DOS | `dos` |
-| Go | `go` |
-| GraphQL | `graphql` |
-| HTML | `html` |
-| HTTP | `http` |
-| Java | `java` |
-| JavaScript | `javascript` |
-| JSON | `json` |
-| JSP | `jsp` |
-| JSX | `jsx` |
-| Kotlin | `kotlin` |
-| Markdown | `markdown` |
-| Objective-C | `objectivec` |
-| Octave | `octave` |
-| Perl | `perl` |
-| PHP | `php` |
-| PowerShell | `powershell` |
-| Python | `python` |
-| R | `r` |
-| Ruby | `ruby` |
-| Rust | `rust` |
-| Scala | `scala` |
-| SCSS | `scss` |
-| Shell | `shell` |
-| SQL | `sql` |
-| Swift | `swift` |
-| TypeScript | `typescript` |
-| VB.NET | `vbnet` |
-| VBScript | `vbscript` |
-| Verilog | `verilog` |
-| VHDL | `vhdl` |
-| XML | `xml` |
-| YAML | `yaml` |
-| Plain text | `plaintext` |
 
 #### Request
 
 The following example shows a request.
 
 > [!NOTE]
-> - If no language is specified, the code block defaults to plaintext formatting
 > - Highlighted code isn't supported when sending chat messages with code blocks
 
 # [HTTP](#tab/http)
