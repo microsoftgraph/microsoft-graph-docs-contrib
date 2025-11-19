@@ -180,8 +180,8 @@ Content-Type: application/json
       Expected type String but actual was Byte. Property: type, actual value: 'byte'",
     "Error: get_userconfiguration/structuredData/member/valueEntry:
       Schema validation failed on property 'valueEntry' ['microsoft.graph.structuredDataEntryTypedValue']",
-    "Error: get_userconfiguration/structuredData/member/keyEntry/type:
-      Expected type String but actual was Byte. Property: type, actual value: 'byte'"
+    "Error: get_userconfiguration/structuredData/member/valueEntry/type:
+      Expected type String but actual was Boolean. Property: type, actual value: 'boolean'"
   ]
 }
 -->
