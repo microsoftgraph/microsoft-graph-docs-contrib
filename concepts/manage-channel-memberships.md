@@ -9,7 +9,7 @@ ms.date: 10/28/2025
 
 # Managing channel memberships
 
-The [allMembers](TODO) API in Microsoft Graph provides a unified way to retrieve and manage channel memberships across *standard*, *shared*, and *private* channels in Microsoft Teams. It ensures accurate representation of both *direct* and *indirect* members, helping developers build solutions that respect permissions and membership hierarchies.
+The [allMembers](../api-reference/beta/api/channel-list-allmembers.md) API in Microsoft Graph provides a unified way to retrieve and manage channel memberships across *standard*, *shared*, and *private* channels in Microsoft Teams. It ensures accurate representation of both *direct* and *indirect* members, helping developers build solutions that respect permissions and membership hierarchies.
 
 For an overview of Microsoft Teams APIs, see [Microsoft Graph overview for Teams](/graph/teams-concept-overview).
 
@@ -24,17 +24,19 @@ The following key capabilities highlight the functionality provided by this API:
 
 ## Working with the allMembers API
 
-The **allMembers** API returns a comprehensive list of members for a given channel that includes:
+The `allMembers` API returns a comprehensive list of members for a given channel that includes:
 
 - **Direct members**: Users explicitly added to the channel.
 - **Indirect members**: Users who gain access through teams that share the channel.
 
-### Important properties
+### The originalSourceMembershipUrl property
 
-- **@microsoft.graph.originalSourceMembershipUrl**  
-  Indicates the source of a user’s membership:
-  - Points to channel membership for direct members.
-  - Points to team membership for indirect members.
+You can identify whether a member of a shared or private channel is direct or indirect by checking the **`@microsoft.graph.originalSourceMembershipUrl`** property. This property identifies the source of a member’s access to the channels.
+
+|Member  | @microsoft.graph.originalSourceMembershipUrl Scope |
+|---------|---------|
+|Direct member |Shows that the user is directly added to the channels    |
+|Indirect member |Includes a URL that points to the source team and indicates indirect membership.|
 
 Use the [sharedWithChannelTeamInfo](/graph/api/resources/sharedwithchannelteaminfo) resource and [List allowedMembers](/graph/api/sharedwithchannelteaminfo-list-allowedmembers) API to determine which teams grant access and which members are eligible.
 
@@ -55,9 +57,9 @@ You can subscribe to membership changes using the Microsoft Graph change notific
 | Shared channel membership changes | `/teams/{team-id}/channels/getAllMembers?notifyOnIndirectMembershipUpdate=true&suppressNotificationWhenSharedUnsharedWithTeam=true` |
 
 > [!IMPORTANT]
-> When a channel is shared or unshared, refresh the [allMembers](TODO) API and use the [sharedWithTeams](TODO) and [List allowedMembers](/graph/api/sharedwithchannelteaminfo-list-allowedmembers) APIs for efficient updates.
+> When a channel is shared or unshared, refresh the [allMembers](../api-reference/beta/api/channel-list-allmembers.md) API, use the `sharedWithTeams` subscription resource and [allowedMembers](/graph/api/sharedwithchannelteaminfo-list-allowedmembers) APIs for efficient updates.
 
-For more information, see [Get change notifications for channel membership](/graph/teams-changenotifications-channelmembership).
+For more information, see [Get change notifications for channel membership](/graph/teams-changenotifications-channelmembership) and [Apps in Shared and Private Channels](/microsoftteams/platform/build-apps-for-shared-private-channels?tabs=tabs%2Cexternal-users%2Csharedchannel)
 
 ## Related APIs and integration
 
