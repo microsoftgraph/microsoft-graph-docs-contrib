@@ -44,7 +44,7 @@ In order for an app with Group.Create permission to create a group with owners o
 
 <!-- { "blockType": "ignored" } -->
 
-``` http
+```http
 PATCH /groups(uniqueName='uniqueName')
 ```
 
@@ -417,7 +417,7 @@ The following example shows the response. The value of the **preferredDataLocati
   "blockType": "response"
 } -->
 
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 

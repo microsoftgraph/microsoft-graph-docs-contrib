@@ -33,7 +33,7 @@ Forward a **chatMessage** in a **chat** to a **chat**:
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /chats/{chatId}/messages/forwardToChat
 ```
 
@@ -43,7 +43,7 @@ Forward a **chatMessage** in a **channel** to a **chat**:
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /teams/{teamId}/channels/{channelId}/messages/forwardToChat
 POST /teams/{teamId}/channels/{channelId}/messages/{messageId}/replies/forwardToChat
 ```
@@ -151,7 +151,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.forwardToChatResult)"
 } -->
 
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -243,7 +243,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.forwardToChatResult)"
 } -->
 
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -334,7 +334,7 @@ The following example shows the response.
   "truncated": true,
   "@odata.type": "Collection(microsoft.graph.forwardToChatResult)"
 } -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

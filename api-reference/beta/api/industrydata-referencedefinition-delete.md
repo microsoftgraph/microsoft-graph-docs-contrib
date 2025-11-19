@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 DELETE /external/industryData/referenceDefinitions/{referenceDefinitionId}
 ```
 
@@ -60,7 +60,7 @@ The following example shows a request.
   "name": "delete_referencedefinition"
 }
 -->
-``` http
+```http
 DELETE https://graph.microsoft.com/beta/external/industryData/referenceDefinitions/RefAcademicSubject-TestGrade
 ```
 
@@ -103,7 +103,7 @@ The following example shows the response.
 }
 -->
 
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 
