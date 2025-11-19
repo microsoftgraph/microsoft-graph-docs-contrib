@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Complete the migration of external messages by removing migration mode from a [chat](../resources/chat.md). Previously, users were only allowed to initiate complete migration operations on newly created standard channels that were created for the initial migration flow. For more information, see [Import third-party platform messages to Teams using Microsoft Graph](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams).
+Complete the migration of external messages by removing migration mode from a [chat](../resources/chat.md). Complete migration operations were initially restricted to newly created standard channels using migration templates specifically designed for the initial migration process. For more information, see [Import third-party platform messages to Teams using Microsoft Graph](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams).
 
 After a **completeMigration** request is made for an existing or new chat, you can start a migration session by calling [chat: startMigration](chat-startmigration.md).
 
@@ -82,7 +82,8 @@ HTTP/1.1 204 No Content
 ```
 
 ### Example 2: Complete the migration when a chat is already in migration mode
-The following example shows how to complete the migration when a chat is already in migration mode.
+
+The following example shows how to complete the migration when a chat is already in migration mode. This request will fail with 400 Bad Request.
 #### Request
 
 The following example shows a request.
@@ -98,6 +99,7 @@ POST https://graph.microsoft.com/beta/chats/19:4b6bed8d24574f6a9e436813cb2617d8@
 ```
 
 #### Response
+
 The following example shows the response.
 <!-- {
   "blockType": "response",

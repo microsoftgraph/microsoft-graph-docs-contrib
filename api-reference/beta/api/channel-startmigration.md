@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Start the migration of external messages by enabling migration mode in an existing [channel](../resources/channel.md). Previously, users were only allowed to initiate import operations on newly created standard channels in an empty state. For more information, see [Import third-party platform messages to Teams using Microsoft Graph](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams).
+Start the migration of external messages by enabling migration mode in an existing [channel](../resources/channel.md).Import operations were limited to newly created standard channels that were in an empty state. For more information, see [Import third-party platform messages to Teams using Microsoft Graph](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams).
 
 Users are also allowed to define a minimum timestamp for content to be migrated, allowing them to import messages from the past. The provided timestamp must be older than the current **createdDateTime** for a [channel](../resources/channel.md). The provided timestamp is used to replace the existing **createdDateTime** of the [channel](../resources/channel.md).
 
@@ -40,16 +40,15 @@ POST  /teams/{team-id}/channels/{channel-id}/startMigration
 | Header       | Value |
 |:---------------|:--------|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+|Content-Type|application/json. Optional|
 
-## Optional request body
+## Request body
 
-You can optionally provide a request body to specify the minimum timestamp for the messages to be migrated. If you don't provide a request body, the API uses the current date and time as the minimum timestamp.
+In the request body, supply a JSON representation of the following parameters.
 
-```json
-{
-  "conversationCreationDateTime": "2024-01-01T00:00:00Z"
-}
-```
+| Parameter       | Type | Description |
+|:---------------|:--------|:--------|
+|conversationCreationDateTime|DateTimeOffset|The minimum timestamp for the messages to be migrated. The timestamp must be older than the current **createdDateTime** of the channel. If not provided, the current date and time is used.|
 
 ## Response
 
@@ -86,7 +85,9 @@ HTTP/1.1 204 No Content
 ```
 
 ### Example 2: Start the migration when a channel is already in migration mode
-The following example shows how to start the migration when a channel is already in migration mode.
+
+The following example shows how to start the migration when a channel is already in migration mode. This request will fail with 400 Bad Request.
+
 #### Request
 
 The following example shows a request.

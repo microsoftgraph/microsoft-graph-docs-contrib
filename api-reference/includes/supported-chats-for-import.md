@@ -12,7 +12,7 @@ This API supportes the following channel types.
 |Chats | Group, 1:1 | New and existing | Meeting chats aren't supported. External members are supported.|
 
 >**Notes**:
+
 >- Chat types aren't allowed in initial imports.
->- Federated chats aren't supported. Federated chats supported but users will not be able to create federated resources.
-i.e., import message on behalf of federated user, or target chat must belong to the tenant of the initiator app.
-Users can only import contents into the tenant it's authenticated into.
+
+>- Federated chats are supported, but users can't create federated resources. For example, they can't import messages on behalf of a federated user, and the target chat must belong to the tenant of the initiator app. Users can import content only into the tenant to which they are authenticated.

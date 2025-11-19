@@ -1,6 +1,6 @@
 ---
 title: "channel: completeMigration"
-description: "Complete the migration of external messages by removing migration mode from a channel."
+description: "Complete migration on existing channels or new channels."
 ms.localizationpriority: medium
 author: "RamjotSingh"
 ms.subservice: "teams"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Complete migration on existing [channels](../resources/channel.md) or new channels. Previously, users were allowed to initiate complete migration operations only on newly created standard channels by creating migration templates, which were designed for the initial migration flow. For more information, see [Import third-party platform messages to Teams using Microsoft Graph](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams).
+Complete migration on existing channels or new channels. Complete migration operations were initially restricted to newly created standard channels using migration templates specifically designed for the initial migration process. For more information, see [Import third-party platform messages to Teams using Microsoft Graph](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams).
 
 Consider the following points when completing migration for new and existing channels:
 
@@ -87,7 +87,9 @@ HTTP/1.1 204 No Content
 ```
 
 ### Example 2: Complete the migration when a channel isn't in migration mode
-The following example shows how to complete the migration when a channel isn't in migration mode
+
+The following example shows how to complete the migration when a channel isn't in migration mode. This request will fail with 400 Bad Request.
+
 #### Request
 
 The following example shows a request.
