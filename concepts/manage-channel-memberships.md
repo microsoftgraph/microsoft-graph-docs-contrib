@@ -9,7 +9,7 @@ ms.date: 10/28/2025
 
 # Managing channel memberships
 
-The [allMembers](../api-reference/beta/api/channel-list-allmembers.md) API in Microsoft Graph provides a unified way to retrieve and manage channel memberships across *standard*, *shared*, and *private* channels in Microsoft Teams. It ensures accurate representation of both *direct* and *indirect* members, helping developers build solutions that respect permissions and membership hierarchies.
+The `allMembers` [List allMembers](../api-reference/beta/api/channel-list-allmembers.md) API in Microsoft Graph provides a unified way to retrieve and manage channel memberships across *standard*, *shared*, and *private* channels in Microsoft Teams. It ensures accurate representation of both *direct* and *indirect* members, helping developers build solutions that respect permissions and membership hierarchies.
 
 For an overview of Microsoft Teams APIs, see [Microsoft Graph overview for Teams](/graph/teams-concept-overview).
 
