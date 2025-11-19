@@ -174,9 +174,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='e8c77dc2-69b3-43f4
 # [Microsoft Entra PowerShell](#tab/entra-powershell)
 
 ```powershell
-$mcpServer = Get-EntraServicePrincipal -Filter "displayName eq 'Microsoft MCP Server for Enterprise'"
-
-$mcpServer.Oauth2PermissionScopes | Select-Object Value
+(Get-EntraBetaServicePrincipal -Property "PublishedPermissionScopes" -Filter "AppId eq 'e8c77dc2-69b3-43f4-bc51-3213c9d915b4'").PublishedPermissionScopes | Where-Object { $_.IsEnabled -eq $true -and $_.AdditionalProperties["isPrivate"] -ne $true } | Select-Object Value, AdminConsentDisplayName | Sort-Object
 ```
 
 # [Admin center](#tab/portal)
