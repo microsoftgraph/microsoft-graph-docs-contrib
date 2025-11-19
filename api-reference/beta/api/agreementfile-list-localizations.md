@@ -60,7 +60,7 @@ The following example shows a request.
   "name": "list_agreementfile_localization"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/agreements/94410bbf-3d3e-4683-8149-f034e55c39dd/file/localizations
 ```
 

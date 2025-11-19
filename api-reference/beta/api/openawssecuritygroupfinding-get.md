@@ -59,7 +59,7 @@ The following example shows a request.
   "name": "get_openawssecuritygroupfinding"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/MSxPcGVuQXdzU2VjdXJpdHlHcm91cEZpbmRpbmcsMjIyNjk2/microsoft.graph.openAwsSecurityGroupFinding
 ```
 

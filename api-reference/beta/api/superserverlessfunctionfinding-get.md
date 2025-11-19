@@ -78,7 +78,7 @@ The following example shows a request.
   "name": "get_superserverlessfunctionfinding"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/azure/findings/c3VwZXJTZXJ2ZXJsZXNzRnVuY3Rpb25GaW5kaW4z/microsoft.graph.superServerlessFunctionFinding
 ```
 

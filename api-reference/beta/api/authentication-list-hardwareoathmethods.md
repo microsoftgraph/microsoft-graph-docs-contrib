@@ -82,7 +82,7 @@ The following example shows a request to retrieve the hardware tokens for the si
   "name": "list_hardwareoathauthenticationmethod"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/authentication/hardwareOathMethods
 ```
 

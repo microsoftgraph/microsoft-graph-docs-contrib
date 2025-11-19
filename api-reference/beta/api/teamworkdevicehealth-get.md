@@ -64,7 +64,7 @@ The following example shows a request.
   "name": "get_teamworkdevicehealth"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/teamwork/devices/d8214fe3-4fe3-d821-e34f-21d8e34f21d8/health
 ```
 

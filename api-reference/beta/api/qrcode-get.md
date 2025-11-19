@@ -82,7 +82,7 @@ The following example shows a request.
   "name": "get_qrcode"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/7c4999f7-9c25-4f8e-8b84-766eb28a1b49/authentication/qrCodePinMethod/standardQRCode
 ```
 

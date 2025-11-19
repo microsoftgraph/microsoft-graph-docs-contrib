@@ -68,7 +68,7 @@ The following example shows a request.
   "name": "get_speakerAssignmentSubmissions_1"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/education/reports/speakerAssignmentSubmissions
 ```
 
@@ -201,7 +201,7 @@ The following example shows a request.
   "name": "get_speakerAssignmentSubmissions_2"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/education/reports/speakerAssignmentSubmissions?$filter=submissionDateTime gt 2025-05-28T00:00:00Z and submissionDateTime lt 2025-05-29T00:00:00Z
 ```
 

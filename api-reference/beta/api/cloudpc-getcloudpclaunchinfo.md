@@ -71,7 +71,7 @@ If successful, this function returns a `200 OK` response code and a [cloudPcLaun
   "name": "cloudpc.getcloudpclaunchinfo"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/cloudPCs/{cloudPCId}/getCloudPcLaunchInfo
 ```
 

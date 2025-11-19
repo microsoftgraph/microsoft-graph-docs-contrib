@@ -67,7 +67,7 @@ The following example shows a request.
   "name": "get_readingCoachPassages_1"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/education/reports/readingCoachPassages
 ```
 
@@ -164,7 +164,7 @@ The following example shows a request.
   "name": "get_readingCoachPassages_2"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/education/reports/readingCoachPassages?$filter=practicedAtDateTime gt 2025-06-22T00:00:00Z and practicedAtDateTime lt 2025-06-23T00:00:00Z
 ```
 

@@ -58,7 +58,7 @@ The following example shows a request.
   "name": "securityreportsrootthis.getattacksimulationrepeatoffenders"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/reports/security/getAttackSimulationRepeatOffenders
 ```
 

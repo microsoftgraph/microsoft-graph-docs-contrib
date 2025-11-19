@@ -59,7 +59,7 @@ The following example shows a request.
   "name": "get_securitytoolawsuseradministratorfinding"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/MSxTZWN1cml0eVRvb2xBd3NVc2VyQWRtaW5pc3RyYXRvckZpbmRpbmcsNTM3NDA/microsoft.graph.securityToolAwsUserAdministratorFinding
 ```
 

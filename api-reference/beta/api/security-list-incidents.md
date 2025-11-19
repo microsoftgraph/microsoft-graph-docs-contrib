@@ -85,7 +85,7 @@ The following example shows a request.
   "name": "list_incident_for_defender"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/security/incidents
 ```
 
@@ -191,7 +191,7 @@ The following example shows a request.
   "name": "list_incident_with_theri_alerts"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/security/incidents?$expand=alerts
 ```
 

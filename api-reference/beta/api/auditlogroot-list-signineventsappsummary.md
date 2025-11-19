@@ -69,7 +69,7 @@ The following example shows a request.
   "name": "list_signineventsappactivity"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/auditLogs/signInEventsAppSummary
 ```
 

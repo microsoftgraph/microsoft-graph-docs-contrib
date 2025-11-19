@@ -62,7 +62,7 @@ The following example shows a request.
   "name": "siterestoreartifact_list"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/solutions/backupRestore/sharePointRestoreSessions/845457dc-4bb2-4815-bef3-8628ebd1952e/siteRestoreArtifacts
 ```
 
