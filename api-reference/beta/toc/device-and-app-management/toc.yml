@@ -356,6 +356,16 @@ items:
       href: ../../api/cloudpcusersetting-delete.md
     - name: Assign
       href: ../../api/cloudpcusersetting-assign.md
+  - name: Cloud PC user settings persistence detail
+    items:
+    - name: Cloud PC user settings persistence detail
+      href: ../../resources/cloudpcusersettingspersistencedetail.md
+    - name: Batch delete user settings persistence profile
+      href: ../../api/cloudpcusersettingspersistencedetail-batchcleanupusersettingspersistenceprofile.md
+    - name: Retrieve user settings persistence profiles
+      href: ../../api/cloudpcusersettingspersistencedetail-retrieveusersettingspersistenceprofiles.md
+    - name: Retrieve user settings persistence usage
+      href: ../../api/cloudpcusersettingspersistencedetail-retrieveusersettingspersistenceprofileusage.md
   - name: Virtual endpoint
     items:
     - name: Virtual endpoint
@@ -609,6 +619,10 @@ items:
       href: ../../resources/cloudpcusersettingassignment.md
     - name: Cloud PC user settings persistence configuration
       href: ../../resources/cloudpcusersettingspersistenceconfiguration.md
+    - name: Cloud PC user settings persistence profile
+      href: ../../resources/cloudpcusersettingspersistenceprofile.md
+    - name: Cloud PC user settings persistence usage result
+      href: ../../resources/cloudpcusersettingspersistenceusageresult.md
     - name: Cloud PC Windows setting
       href: ../../resources/cloudpcwindowssetting.md
     - name: Cloud PC Windows settings

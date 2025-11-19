@@ -98,7 +98,6 @@ GET https://graph.microsoft.com/beta/onPremisesPublishingProfiles/privateAccess/
 
 ---
 
-
 ### Response
 
 The following example shows the response.

@@ -4817,6 +4817,40 @@
       "CreatedDateTime": "2025-09-09T00:00:00.0365478Z",
       "WorkloadArea": "Files",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "93afe618-17e6-47bb-af98-de2281461ad2",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "informationBarrierMode",
+          "ChangeType": "Addition",
+          "Description": "Added the **informationBarrierMode** enumeration type.",
+          "Target": "informationBarrierMode"
+        },
+        {
+          "Id": "93afe618-17e6-47bb-af98-de2281461ad2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "informationBarrier",
+          "ChangeType": "Addition",
+          "Description": "Added the [informationBarrier](https://learn.microsoft.com/en-us/graph/api/resources/informationBarrier?view=graph-rest-beta) resource.",
+          "Target": "informationBarrier"
+        },
+        {
+          "Id": "93afe618-17e6-47bb-af98-de2281461ad2",
+          "ApiChange": "Property",
+          "ChangedApiName": "informationBarrier",
+          "ChangeType": "Addition",
+          "Description": "Added the **informationBarrier** property to the [fileStorageContainer](https://learn.microsoft.com/en-us/graph/api/resources/fileStorageContainer?view=graph-rest-beta) resource.",
+          "Target": "fileStorageContainer"
+        }
+      ],
+      "Id": "93afe618-17e6-47bb-af98-de2281461ad2",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-11-18T18:12:05.945322Z",
+      "WorkloadArea": "Files",
+      "SubArea": ""
     }
   ]
 }
