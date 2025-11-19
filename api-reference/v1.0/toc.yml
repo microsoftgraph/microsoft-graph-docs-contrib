@@ -23,8 +23,6 @@ items:
   href: /graph/toolkit/overview?context=graph/api/1.0
 - name: Deploy with Bicep
   href: /graph/templates?context=graph/api/1.0
-- name: Use the MCP Server for Enterprise
-  href: /graph/mcp-server/overview?context=graph/api/1.0
 - name: Known issues
   href: https://developer.microsoft.com/graph/known-issues
 - name: Errors
