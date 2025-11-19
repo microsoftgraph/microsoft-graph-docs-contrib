@@ -5,7 +5,6 @@ author: danipocket
 ms.author: danielabo
 ms.date: 11/04/2025
 ms.topic: overview
-ms.prod: microsoft-graph
 ms.subservice: t2t-migration
 ms.localizationpriority: high
 doc_type: conceptualPageType
@@ -48,7 +47,6 @@ To use this API, the calling app must have appropriate Microsoft Graph permissio
 
 ## Related content
 
-- [Microsoft Graph overview](https://learn.microsoft.com/graph/overview)
-- [Cross-tenant content migration in Microsoft 365](https://learn.microsoft.com/microsoft-365/enterprise/cross-tenant-content-migration)
-- [Cross-tenant migration job resource type](https://learn.microsoft.com/graph/api/resources/crosstenantmigrationjob)
-- [Microsoft Graph permissions reference](https://learn.microsoft.com/graph/permissions-reference)
+- [Microsoft Graph overview](/graph/overview)
+- [Cross-tenant migration job resource type](crosstenantmigrationjob.md)
+- [Microsoft Graph permissions reference](/graph/permissions-reference)
