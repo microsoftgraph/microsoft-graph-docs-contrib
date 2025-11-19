@@ -32,6 +32,10 @@ Deprecated the [drive: recent](/graph/api/drive-recent) and [drive: sharedWithMe
 
 Added [activeDirectoryDomainEvidence](/graph/api/resources/security-activedirectorydomainevidence)
 
+Added [mailboxConfigurationEvidence](/graph/api/resources/security-mailboxconfigurationevidence)
+
+Added **resourceAccessEvents** property to [deviceEvidence](/graph/api/resources/security-deviceevidence)
+
 ## November 2025: New in preview only
 
 ### Files

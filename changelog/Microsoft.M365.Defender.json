@@ -3321,6 +3321,42 @@
       "CreatedDateTime": "2025-07-21T13:31:06.799148Z",
       "WorkloadArea": "Security",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "ae392fe5-2982-425d-965b-53bf3be765fb",
+          "ApiChange": "Property",
+          "ChangedApiName": "resourceAccessEvents",
+          "ChangeType": "Addition",
+          "Description": "Added the **resourceAccessEvents** property to the [deviceEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-deviceEvidence?view=graph-rest-beta) resource.",
+          "Target": "deviceEvidence"
+        }
+      ],
+      "Id": "ae392fe5-2982-425d-965b-53bf3be765fb",
+      "Cloud": "Review",
+      "Version": "beta",
+      "CreatedDateTime": "2025-11-19T08:26:45.0756446Z",
+      "WorkloadArea": "Security",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "b63ca52d-d944-4362-b086-cd97eaa4e064",
+          "ApiChange": "Property",
+          "ChangedApiName": "resourceAccessEvents",
+          "ChangeType": "Addition",
+          "Description": "Added the **resourceAccessEvents** property to the [deviceEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-deviceEvidence?view=graph-rest-1.0) resource.",
+          "Target": "deviceEvidence"
+        }
+      ],
+      "Id": "b63ca52d-d944-4362-b086-cd97eaa4e064",
+      "Cloud": "Review",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-11-19T08:26:45.0760072Z",
+      "WorkloadArea": "Security",
+      "SubArea": ""
     }
   ]
 }

@@ -38,6 +38,7 @@ Inherits from [alertEvidence](../resources/security-alertevidence.md).
 |rbacGroupId|Int32|The ID of the role-based access control device group.|
 |rbacGroupName|String|The name of the role-based access control device group.|
 |riskScore|[microsoft.graph.security.deviceRiskScore](#deviceriskscore-values)|Risk score as evaluated by Microsoft Defender for Endpoint. The possible values are: `none`, `informational`, `low`, `medium`, `high`, `unknownFutureValue`.|
+|resourceAccessEvents|[microsoft.graph.security.resourceAccessEvent](../resources/security-resourceaccessevent.md) collection | Information on resource access attempts made by the user account. |
 |version|String|The version of the operating system platform.|
 |vmMetadata|[microsoft.graph.security.vmMetadata](../resources/security-vmmetadata.md)|Metadata of the virtual machine (VM) on which Microsoft Defender for Endpoint is running.|
 
@@ -124,6 +125,11 @@ The following JSON representation shows the resource type.
   "rbacGroupName": "String",
   "remediationStatus": "String",
   "remediationStatusDetails": "String",
+  "resourceAccessEvents": [
+    {
+      "@odata.type": "microsoft.graph.security.resourceAccessEvent"
+    }
+  ],
   "riskScore": "String",
   "roles": ["String"],
   "tags": ["String"],
