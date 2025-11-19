@@ -60,7 +60,7 @@ The following example shows a request.
   "name": "securityreportsrootthis.getattacksimulationtrainingusercoverage"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/reports/security/getAttackSimulationTrainingUserCoverage
 ```
 

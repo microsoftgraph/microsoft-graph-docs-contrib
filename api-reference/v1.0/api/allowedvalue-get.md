@@ -76,7 +76,7 @@ The following example gets the properties of a predefined value for a custom sec
   "sampleKeys": ["Engineering_Project", "Alpine"]
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/directory/customSecurityAttributeDefinitions/Engineering_Project/allowedValues/Alpine
 ```
 

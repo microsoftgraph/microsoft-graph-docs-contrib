@@ -82,7 +82,7 @@ The following example shows a request.
   "name": "get_overprovisionedserverlessfunctionfinding"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/MSxPdmVycHJvdmlzaW9uZWRTZXJ2ZXJsZXNzRnVuY3Rpb25GaW5kaW5nLDQ3MDQ/microsoft.graph.overprovisionedServerlessFunctionFinding
 ```
 

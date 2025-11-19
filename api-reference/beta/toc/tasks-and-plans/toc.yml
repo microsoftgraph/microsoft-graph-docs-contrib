@@ -28,6 +28,8 @@ items:
     href: ../../api/plannerplan-list-tasks.md
   - name: Get delta
     href: ../../api/plannerplan-delta.md
+  - name: Get usage rights
+    href: ../../api/plannerplan-getusagerights.md
 - name: Planner task
   items:
   - name: Planner task
@@ -228,12 +230,16 @@ items:
     href: ../../resources/businessscenarioproperties.md
   - name: Business scenario task target base
     href: ../../resources/businessscenariotasktargetbase.md
+  - name: Content sensitivity label assignment
+    href: ../../resources/contentsensitivitylabelassignment.md
   - name: Identity
     href: ../../resources/identity.md
   - name: Identity set
     href: ../../resources/identityset.md
   - name: Item body
     href: ../../resources/itembody.md
+  - name: Plan usage right
+    href: ../../resources/planusageright.md
   - name: Planner applied categories
     href: ../../resources/plannerappliedcategories.md
   - name: Planner assignment
@@ -314,3 +320,5 @@ items:
     href: ../../resources/recurrencepattern.md
   - name: Sensitivity label assignment
     href: ../../resources/sensitivitylabelassignment.md
+  - name: Usage rights info
+    href: ../../resources/usagerightsinfo.md

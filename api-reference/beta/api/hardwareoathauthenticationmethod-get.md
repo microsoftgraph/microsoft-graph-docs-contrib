@@ -83,7 +83,7 @@ The following example shows a request.
   "name": "get_hardwareoathauthenticationmethod"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/authentication/hardwareOathMethods/{hardwareOathAuthenticationMethodId}
 ```
 

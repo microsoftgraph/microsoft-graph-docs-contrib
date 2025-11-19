@@ -74,7 +74,7 @@ The following example gets the status of access package assignment requests targ
   "name": "accesspackageassignmentrequest_filterbycurrentuser_ontarget"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignmentRequests/filterByCurrentUser(on='target')
 ```
 

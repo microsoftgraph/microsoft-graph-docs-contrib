@@ -62,7 +62,7 @@ The following example lists the tenants and their properties in the multitenant 
   "name": "list_multitenantorganizationmember"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/tenantRelationships/multiTenantOrganization/tenants
 ```
 

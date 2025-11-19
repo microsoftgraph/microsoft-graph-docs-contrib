@@ -92,7 +92,7 @@ The following example shows a request.
   "name": "get_externalauthenticationmethod"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/authentication/externalAuthenticationMethods/{externalAuthenticationMethodId}
 ```
 

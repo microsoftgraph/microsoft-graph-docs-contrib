@@ -14,6 +14,8 @@ use Microsoft\Graph\Beta\Generated\Models\MicrosoftManagedDesktop;
 use Microsoft\Graph\Beta\Generated\Models\MicrosoftManagedDesktopType;
 use Microsoft\Graph\Beta\Generated\Models\CloudPcProvisioningPolicyAutopatch;
 use Microsoft\Graph\Beta\Generated\Models\CloudPcAutopilotConfiguration;
+use Microsoft\Graph\Beta\Generated\Models\CloudPcUserSettingsPersistenceConfiguration;
+use Microsoft\Graph\Beta\Generated\Models\CloudPcUserSettingsPersistenceStorageSizeCategory;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
@@ -43,6 +45,10 @@ $autopilotConfiguration->setDevicePreparationProfileId('59e5d3d2-ec68-4bfe-9693-
 $autopilotConfiguration->setApplicationTimeoutInMinutes(30);
 $autopilotConfiguration->setOnFailureDeviceAccessDenied(false);
 $requestBody->setAutopilotConfiguration($autopilotConfiguration);
+$userSettingsPersistenceConfiguration = new CloudPcUserSettingsPersistenceConfiguration();
+$userSettingsPersistenceConfiguration->setUserSettingsPersistenceEnabled(false);
+$userSettingsPersistenceConfiguration->setUserSettingsPersistenceStorageSizeCategory(new CloudPcUserSettingsPersistenceStorageSizeCategory('fourGB'));
+$requestBody->setUserSettingsPersistenceConfiguration($userSettingsPersistenceConfiguration);
 $additionalData = [
 	'onPremisesConnectionId' => '4e47d0f6-6f77-44f0-8893-c0fe1701ffff',
 ];

@@ -72,7 +72,7 @@ The following example shows a request.
   "name": "get_goalsexportjob1"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/employeeExperience/goals/exportJobs/j!eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiI4MzIxMjc1In0
 ```
 
@@ -139,7 +139,7 @@ The following example shows a request.
   "name": "get_goalsexportjob2"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/employeeExperience/goals/exportJobs/j!eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiI4MzIxMjc1In0
 ```
 
@@ -207,7 +207,7 @@ The following example shows a request.
   "name": "get_goalsexportjob3"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/employeeExperience/goals/exportJobs/j!eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiI4MzIxMjc1In0
 ```
 
@@ -273,7 +273,7 @@ The following example shows a request.
   "name": "get_goalsexportjob4"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/employeeExperience/goals/exportJobs/j!eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiI4MzIxMjc1In1
 ```
 
@@ -340,7 +340,7 @@ The following example shows a request.
   "name": "get_goalsexportjob"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/employeeExperience/goals/exportJobs/j!eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiI4MzIxMj
 ```
 
@@ -407,7 +407,7 @@ The following example shows a request.
   "name": "get_goalsexportjob_content"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/employeeExperience/goals/exportJobs/j!eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiI4MzIxMjc1In0/content
 ```
 

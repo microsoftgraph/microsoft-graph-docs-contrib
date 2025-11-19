@@ -1,5 +1,5 @@
 ---
-title: "Get governanceResource"
+title: "Get governanceResource (deprecated)"
 description: "Retrieve the properties and relationships of a governanceResource object."
 ms.localizationpriority: medium
 doc_type: apiPageType
@@ -9,7 +9,7 @@ ROBOTS: NOINDEX
 ms.date: 08/02/2024
 ---
 
-# Get governanceResource
+# Get governanceResource (deprecated)
 
 Namespace: microsoft.graph
 

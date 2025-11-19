@@ -68,7 +68,7 @@ In this request, you list all **userConsentRequest** objects for which the curre
   "name": "userconsentrequest_filterbycurrentuser"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/appConsent/appConsentRequests/ee245379-e3bb-4944-a997-24115f0b8b5e/userConsentRequests/filterByCurrentUser(on='reviewer')?$filter= (status eq 'Completed')
 ```
 
