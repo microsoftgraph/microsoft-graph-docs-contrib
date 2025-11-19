@@ -28,7 +28,7 @@ Namespace: microsoft.graph
 |stringArray|
 |byteArray|
 
-### accessReviewPrincipalScopeType
+### accessReviewPrincipalScopeType values
 
 |Member|
 |:---|
@@ -5722,23 +5722,54 @@ Possible values for user account types (group membership), per Windows definitio
 |sts|
 |unknownFutureValue|
 
-### accessReviewPrincipalScopeType values
+### crossTenantMigrationJobStatus values 
 
 |Member|
 |:---|
-|allUsers|
-|guestUsers|
-|inactiveUsers|
-|inactiveGuestUsers|
+|submitted|
+|approved|
+|processing|
+|cuttingOver|
+|inProgress|
+|completed|
+|completedWithErrors|
+|failed|
+|cancelled|
+|pendingCancel|
+|adminActionRequired|
+|validateSubmitted|
+|validateProcessing|
+|validateInProgress|
+|validatePassed|
+|validateFailed|
+|pendingDelete|
+|deleted|
 |unknownFutureValue|
 
-### accessReviewResourceScopeType values
+### crossTenantMigrationJobType values 
 
 |Member|
 |:---|
-|group|
-|catalog|
-|servicePrincipal|
-|directoryRole|
-|accessPackageAssignmentPolicy|
+|validate|
+|migrate|
 |unknownFutureValue|
+
+### crossTenantMigrationServiceStatus values 
+
+|Member|
+|:---|
+|notStarted|
+|valid|
+|invalid|
+|error|
+|inProgress|
+|completed|
+|failed|
+|cancelled|
+|pendingCancel|
+|syncing|
+|synced|
+|finalizing|
+|forceComplete|
+|unknownFutureValue|
+
