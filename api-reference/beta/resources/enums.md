@@ -13,7 +13,7 @@ ms.custom: sfi-ropc-nochange
 
 Namespace: microsoft.graph
 
-### accessReviewPrincipalScopeType
+### accessReviewPrincipalScopeType values
 
 |Member|
 |:---|
