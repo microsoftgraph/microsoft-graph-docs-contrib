@@ -84,13 +84,13 @@ Content-Type: application/json
   "structuredData": [
     {
       "keyEntry": {
-        "type": "bytes",
+        "type": "byte",
         "values": [
           "100"
         ]
       },
       "valueEntry": {
-        "type": "booleans",
+        "type": "boolean",
         "values": [
           "true"
         ]
@@ -179,13 +179,13 @@ Content-Type: application/json
   "structuredData": [
     {
       "keyEntry": {
-        "type": "bytes",
+        "type": "byte",
         "values": [
           "100"
         ]
       },
       "valueEntry": {
-        "type": "booleans",
+        "type": "boolean",
         "values": [
           "true"
         ]
