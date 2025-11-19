@@ -16,6 +16,7 @@ Namespace: microsoft.graph
 ### accessReviewPrincipalScopeType
 
 |Member|
+|:---|
 |allUsers|
 |guestUsers|
 |inactiveUsers|
