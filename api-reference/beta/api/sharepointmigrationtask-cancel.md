@@ -1,26 +1,24 @@
 ---
-author: xiaoqwan
-title: Cancel sharepointMigrationTask by ID
+title: "sharePointMigrationTask: cancel"
+description: "Cancels the sharepointMigrationTask that was previously created, given the task's ID, when invoked at the source organization"
+author: "Joey-King"
+ms.date: 11/12/2025
 ms.localizationpriority: medium
-description: Cancels the sharepointMigrationTask that was previously created, given the task's ID, when invoked at the source organization
 ms.subservice: "sharepoint"
 doc_type: apiPageType
-ms.date: 11/02/2025
 ---
 
-# Cancel sharepointMigrationTask by ID
+# sharePointMigrationTask: cancel
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Attempt to Cancel a sharepointMigrationTask that specifies the move of a specific object from a source organization to a target organization. Cancel the sharePointMigrationTask only before it starts and when reverting does not cause system instability.
 
-### Permissions
+## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
-
-| Permission type                        | Permissions                               |
-| -------------------------------------- | ----------------------------------------- |
-| Delegated (personal Microsoft account) | N/A                                       |
-| Delegated (work or school account)     | SharePointCrossTenantMigration.Manage.All |
-| Application                            | SharePointCrossTenantMigration.Manage.All |
 
 <!-- {
   "blockType": "permissions",
@@ -29,38 +27,52 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/sharepointmigrationtask-cancel-permissions.md)]
 
-### Examples
+## HTTP request
 
-#### HTTP request
-
-```http
-POST /solutions/sharePoint/migrations/crossOrganizationMigrationTasks/{ID}/cancel
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+POST /solutions/sharePoint/migrations/crossOrganizationMigrationTasks/{sharePointMigrationTaskId}/cancel
 ```
 
-#### Request headers
+## Request headers
 
-|Name          |Description              |
-|:-------------|:------------------------|
-|Authorization |Bearer {token}. Required.|
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
-#### Request Body
+## Request body
 
 Don't supply a request body for this method.
 
-#### Response
+## Response
 
-If successful, this method directly returns `204 No Content` response code and there's no content to return in the response body.
-If the cancel fails, the service returns `404 NOT FOUND` for a missing task or `409 CONFLICT` when the cancel cannot proceed. The sharePointMigrationTask contains error details. See the error conditions section for more cases.
+If successful, this action returns a `204 No Content` response code.
 
+## Examples
+
+### Request
+
+The following example shows a request.
 <!-- {
-"blockType": "ignored"
-}-->
+  "blockType": "request",
+  "name": "sharepointmigrationtaskthis.cancel"
+}
+-->
+``` http
+POST https://graph.microsoft.com/beta/solutions/sharePoint/migrations/crossOrganizationMigrationTasks/{sharePointMigrationTaskId}/cancel
+```
 
-### Error Conditions for **Cancel** API
+### Response
 
-| Scenario                                                   | Method    | Code | Message                                                                                          |
-| ---------------------------------------------------------- | --------- | ---- | ------------------------------------------------------------------------------------------------ |
-| Caller didn't provide the required parameters              | POST      | 400  | Can't process the request because the required parameter {paramName} is missing.                |
-| Trust relationship isn't set up on target tenant          | POST      | 422  | There's no Cross-Tenant relationship established for partner {siteUrl} and role {soure/target}. |
-| Migration task doesn't exist                               | POST      | 404  | The migration task {ID} couldn't be found.                                                      |
-| An in-progress migration task can't be canceled           | POST      | 409  | Can't process the canceled request because the task is in progress                               |
+The following example shows the response.
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
+``` http
+HTTP/1.1 204 No Content
+```

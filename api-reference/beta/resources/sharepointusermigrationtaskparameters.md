@@ -1,17 +1,22 @@
 ---
-author: xiaoqwan
-title: sharePointUserMigrationTaskParameters resource type
-ms.localizationpriority: medium
+title: "sharePointUserMigrationTaskParameters resource type"
 description: "Represents the parameters necessary to migrate a specific user in a source organization to a target organization."
+author: "Joey-King"
+ms.date: 11/12/2025
+ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: resourcePageType
-toc.title: "SharePoint User Migration Task Parameters"
-ms.date: 11/02/2025
 ---
 
 # sharePointUserMigrationTaskParameters resource type
 
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 This complex type encapsulates the parameters necessary to migrate a specific user in a source tenant to a target tenant. Must be specified when creating a new migration task using POST.
+
+Inherits from [sharePointMigrationTaskParameters](../resources/sharepointmigrationtaskparameters.md).
 
 ## Properties
 
@@ -28,23 +33,34 @@ This complex type encapsulates the parameters necessary to migrate a specific us
 | sourceUserIdentity       | [userIdentity]    | The source user in the source tenant, it includes user object ID and user principal name.
 | targetUserIdentity       | [userIdentity]    | The target user in the target tenant, it includes user object ID and user principal name.
 
-## JSON Representation
+## Relationships
 
-Here's a JSON representation of a **crossOrganizationUserMigrationTaskParameters** resource.
+None.
 
-```json
+## JSON representation
+
+The following JSON representation shows the resource type.
+<!-- {
+  "blockType": "resource",
+  "@odata.type": "microsoft.graph.sharePointUserMigrationTaskParameters"
+}
+-->
+``` json
 {
-  "targetOrganizationId": { "@odata.type": "guid" },
-  "targetOrganizationHost": "string",
-  "targetDataLocationCode": "string",
-  "preferredStartDateTime": "string (timestamp)",
-  "preferredLatestStartDateTime": "string (timestamp)",
-  "validateOnly": "boolean",
-  "sourceSiteUrl": "string",
-  "targetSiteUrl": "string",
-  "sourceUserIdentity": { "@odata.type": "microsoft.graph.userIdentity" },
-  "targetUserIdentity": { "@odata.type": "microsoft.graph.userIdentity" }
+  "@odata.type": "#microsoft.graph.sharePointUserMigrationTaskParameters",
+  "targetOrganizationId": "Guid",
+  "targetDataLocationCode": "String",
+  "targetOrganizationHost": "String",
+  "validateOnly": "Boolean",
+  "preferredStartDateTime": "String (timestamp)",
+  "preferredLatestStartDateTime": "String (timestamp)",
+  "sourceSiteUrl": "String",
+  "targetSiteUrl": "String",
+  "sourceUserIdentity": {
+    "@odata.type": "microsoft.graph.userIdentity"
+  },
+  "targetUserIdentity": {
+    "@odata.type": "microsoft.graph.userIdentity"
+  }
 }
 ```
-
-[userIdentity]: ./userIdentity.md

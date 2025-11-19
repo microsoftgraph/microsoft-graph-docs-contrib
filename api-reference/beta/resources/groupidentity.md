@@ -1,35 +1,51 @@
 ---
-author: xiaoqwan
-title: GroupIdentity resource type
-ms.localizationpriority: medium
+title: "groupIdentity resource type"
 description: "Represents the identity of a group-connected site."
+author: "Joey-King"
+ms.date: 11/12/2025
+ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: resourcePageType
-toc.title: "Group Identity"
-ms.date: 11/02/2025
 ---
 
-# GroupIdentity resource type
+# groupIdentity resource type
 
-The **GroupIdentity** resource represents an identity of a group-connected site.
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+The **GroupIdentity** resource represents an identity of a group-connected site. Inherits from [identity](identity.md).
+
+Inherits from [identity](../resources/intune-identity.md).
+
+This resource is an open type.
 
 ## Properties
 
-| Property         | Type                        | Description
-|:------------     |:----------------------------|:---------------------------------
-| mailNickname     | String                      | The mail nick name, also known as group alias of the group-connected site.
-| ID               | String                      | Unique identifier for the identity.
-| displayName      | String                      | Display name for the identity.
+|Property|Type|Description|
+|:---|:---|:---|
+|displayName|String|The mail nick name, also known as group alias of the group-connected site. Inherited from [identity](../resources/identity.md).|
+|id|String|Unique identifier for the identity. Inherited from [identity](../resources/identity.md).|
+|mailNickname|String|The mail nick name, also known as group alias of the group-connected site.|
+
+## Relationships
+
+None.
 
 ## JSON representation
 
-<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.GroupIdentity",
-  "baseType": "microsoft.graph.identity",
-  "openType": true} -->
-```json
+The following JSON representation shows the resource type.
+<!-- {
+  "blockType": "resource",
+  "@odata.type": "microsoft.graph.groupIdentity"
+}
+-->
+``` json
 {
-  "mailNickname": "string",
-  "id": "string",
-  "displayName": "string"
+  "@odata.type": "#microsoft.graph.groupIdentity",
+  "displayName": "String",
+  "id": "String",
+  "mailNickname": "String"
 }
 ```
+

@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 
 |Permission type|Least privileged permission|Higher privileged permissions|
 |:---|:---|:---|
+|Delegated (work or school account)|Not supported.|Not supported.|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Delegated (work or school account)|SharePointCrossTenantMigration.Manage.All|Not supported.|
-|Application|SharePointCrossTenantMigration.Manage.All|Not supported.|
+|Application|Not supported.|Not supported.|
+

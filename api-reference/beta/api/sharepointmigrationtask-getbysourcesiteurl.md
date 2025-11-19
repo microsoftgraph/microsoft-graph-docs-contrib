@@ -1,26 +1,24 @@
 ---
-author: xiaoqwan
-title: Get sharepointMigrationTask by source site url
-description: Gets the sharepointMigrationTask that was previously created for a regular site, given the source site url, when invoked at the source organization.
+title: "sharePointMigrationTask: getBySourceSiteUrl"
+description: "Gets the sharepointMigrationTask that was previously created for a regular site, given the source site url, when invoked at the source organization"
+author: "Joey-King"
+ms.date: 11/12/2025
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: apiPageType
-ms.date: 11/02/2025
 ---
 
-# Get sharepointMigrationTask by source site url
+# sharePointMigrationTask: getBySourceSiteUrl
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Gets the sharepointMigrationTask that was previously created for a regular site, given the source site url. The returned sharePointMigrationTask includes the source and target site URLs, migration status, optional timestamps (startedDateTime and finishedDateTime), and error details about issues during execution.
 
-### Permissions
+## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
-
-|Permission type|Least privileged permission|Higher privileged permissions|
-|:---|:---|:---|
-|Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Delegated (work or school account)|SharePointCrossTenantMigration.Read.All|Not supported.|
-|Application|SharePointCrossTenantMigration.Read.All|Not supported.|
 
 <!-- {
   "blockType": "permissions",
@@ -29,28 +27,64 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/sharepointmigrationtask-getbysourcesiteurl-permissions.md)]
 
-### Examples
+## HTTP request
 
-#### HTTP request
-
+<!-- {
+  "blockType": "ignored"
+}
+-->
 ``` http
 GET /solutions/sharePoint/migrations/crossOrganizationMigrationTasks/getBySourceSiteUrl(sourcesiteurl={sourcesiteurl})
 ```
 
-#### Request headers
+## Function parameters
+In the request URL, provide the following query parameters with values.
 
-|Name          |Description              |
-|:-------------|:------------------------|
-|Authorization |Bearer {token}. Required.|
+|Parameter|Type|Description|
+|:---|:---|:---|
+|sourceSiteUrl|String|Source site url|
 
-#### Request Body
+## Request headers
+
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+
+## Request body
 
 Don't supply a request body for this method.
 
-#### Response
+## Response
 
-```JSON
+If successful, this function returns a `200 OK` response code and a [sharePointMigrationTask](../resources/sharepointmigrationtask.md) in the response body.
+
+## Examples
+
+### Request
+
+The following example shows a request.
+<!-- {
+  "blockType": "request",
+  "name": "sharepointmigrationtaskthis.getbysourcesiteurl"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/solutions/sharePoint/migrations/crossOrganizationMigrationTasks/getBySourceSiteUrl(sourcesiteurl=@url)?@url='https://contoso.sharepoint.com/sites/IT'
+```
+
+### Response
+
+The following example shows the response.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.sharePointMigrationTask"
+}
+-->
+``` http
+HTTP/1.1 200 OK
 Content-Type: application/json
+
 {
   "id": "3ed6d46d-13a3-4995-b6ea-a74a20b1fac0",
   "status": "success",
@@ -66,12 +100,3 @@ Content-Type: application/json
   }
 }
 ```
-
-### Error Conditions for **Get** API
-
-| Scenario                                                                      | Method    | Code | Message                                                                                          |
-| ----------------------------------------------------------------------------- | --------- | ---- | ------------------------------------------------------------------------------------------------ |
-| Caller didn't provide the required parameters                                 | GET | 400  | Can't process the request because the required parameter {paramName} is missing.                |
-| Caller has insufficient permission                                            | GET | 403  | Access denied                                                                                    |
-| Trust relationship isn't set up on target tenant                             | GET      | 422  | There's no Cross-Tenant relationship established for partner {siteUrl} and role {soure/target}. |
-| Migration task doesn't exist                                                  | GET | 404  | The migration task {ID} couldn't be found.                                                      |

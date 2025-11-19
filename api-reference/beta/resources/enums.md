@@ -5597,7 +5597,7 @@ Possible values for user account types (group membership), per Windows definitio
 |sts|
 |unknownFutureValue|
 
-### sharePointMigrationTaskStatus values
+### sharePointMigrationTaskStatus values 
 
 | Member             | Description |
 |:------------------ |:-----------------------------------------------|
@@ -5607,3 +5607,4 @@ Possible values for user account types (group membership), per Windows definitio
 | cancelled          | The crossOrganizationMigrationTask is cancelled and the source resource is restored to it's initial state before the crossOrganizationMigrationTask was attempted. |
 | failed             | The crossOrganizationMigrationTask has failed and will not be retried (it is a final/terminal state unlike the error state). |
 | unknownFutureValue | For future compatibility. |
+

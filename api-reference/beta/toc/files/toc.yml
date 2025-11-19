@@ -378,17 +378,17 @@ items:
     items:
     - name: SharePoint migration task
       href: ../../resources/sharepointmigrationtask.md
-    - name: Create
-      href: ../../api/sharepointmigrationtask-create.md
-    - name: GetByID
+    - name: Create or Update
+      href: ../../api/sharepointmigrationtask-update.md
+    - name: Get
       href: ../../api/sharepointmigrationtask-get.md
     - name: GetBySourceUserPrincipalName
       href: ../../api/sharepointmigrationtask-getbysourceuserprincipalname.md
     - name: GetBySourceSiteUrl
-      href: ../../api/sharepointmigrationtask-getbysourcesiteurl.md
-    - name: GetBySourceGroupObjectId
-      href: ../../api/sharepointmigrationtask-getbysourcegroupobjectid.md
-    - name: CancelByID
+    href: ../../api/sharepointmigrationtask-getbysourcesiteurl.md
+    - name: GetBySourceGroupMailNickName
+      href: ../../api/sharepointmigrationtask-getbysourcegroupmailnickname.md
+    - name: Cancel
       href: ../../api/sharepointmigrationtask-cancel.md
   - name: Complex types
     items:
