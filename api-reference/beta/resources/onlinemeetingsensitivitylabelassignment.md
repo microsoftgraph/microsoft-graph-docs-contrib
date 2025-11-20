@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Contains information about the sensitivity label applied to the Teams meeting in Microsoft Graph. This object corresponds to the label that is created and managed by admins in Microsoft Purview and is used to enforce data protection and meeting governance.
 
-For more information, see [Teams meetings with protection for sensitive data.](https://learn.microsoft.com/microsoftteams/configure-meetings-sensitive-protection).
+For more information, see [Teams meetings with protection for sensitive data.](/microsoftteams/configure-meetings-sensitive-protection).
 
 
 ## Properties
