@@ -1548,7 +1548,7 @@
               ]
             },
             {
-              "name": "Privileged Identity Management iteration 2",
+              "name": "Privileged Identity Management iteration 2 (deprecated)",
               "overview": "../../resources/privilegedidentitymanagement-root.md",
               "childNodes": [
                 {
@@ -1746,6 +1746,20 @@
                 "onAttributeCollectionSubmitCustomExtension",
                 "onOtpSendCustomExtension",
                 "onTokenIssuanceStartCustomExtension"
+              ]
+            },
+            {
+              "name": "Cross-tenant migration",
+              "overview": "../../resources/cross-tenant-migration-overview.md",
+              "resources":[
+                "crossTenantMigrationJob",
+                "crossTenantMigrationTask",
+                "migrationsRoot"
+              ],
+              "complexTypes":[
+                "crossTenantMigrationServiceStatusDetails",
+                "error",
+                "exchangeOnlineCrossTenantMigrationSettings"
               ]
             },
             {
