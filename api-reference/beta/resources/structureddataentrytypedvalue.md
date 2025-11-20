@@ -4,7 +4,7 @@ description: "Represents the typed value for the key or value in a userConfigura
 author: "daiyue-microsoft"
 ms.date: 11/05/2025
 ms.localizationpriority: medium
-ms.subservice: "exchange"
+ms.subservice: "outlook"
 doc_type: resourcePageType
 ---
 

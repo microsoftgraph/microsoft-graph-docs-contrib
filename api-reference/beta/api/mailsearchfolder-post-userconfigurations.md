@@ -4,7 +4,7 @@ description: "Create a new userConfiguration object."
 author: "daiyue-microsoft"
 ms.date: 11/06/2025
 ms.localizationpriority: medium
-ms.subservice: "exchange"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 

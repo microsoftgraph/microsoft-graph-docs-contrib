@@ -4,7 +4,7 @@ description: "Represents a user configuration object."
 author: "daiyue-microsoft"
 ms.date: 11/05/2025
 ms.localizationpriority: medium
-ms.subservice: "exchange"
+ms.subservice: "outlook"
 doc_type: resourcePageType
 toc.title: User configuration (preview)
 ---

@@ -4,7 +4,7 @@ description: "Represents a single key-value pair of userConfiguration objects."
 author: "daiyue-microsoft"
 ms.date: 11/05/2025
 ms.localizationpriority: medium
-ms.subservice: "exchange"
+ms.subservice: "outlook"
 doc_type: resourcePageType
 ---
 

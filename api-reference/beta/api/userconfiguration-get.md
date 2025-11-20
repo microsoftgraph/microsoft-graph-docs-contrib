@@ -4,7 +4,7 @@ description: "Read the properties and relationships of userConfiguration object.
 author: "daiyue-microsoft"
 ms.date: 11/05/2025
 ms.localizationpriority: medium
-ms.subservice: "exchange"
+ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
