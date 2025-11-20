@@ -299,7 +299,7 @@
             "assignedPlaceMode",
             "dropInPlaceMode",
             "mailboxDetails",
-            "offlinePlaceMode",
+            "unavailablePlaceMode",
             "placeMode",
             "reservablePlaceMode",
             "resourceLink"
@@ -1551,6 +1551,7 @@
                     "privilegedAccessGroupEligibilityScheduleRequest",
                     "privilegedAccessGroupEligibilitySchedule",
                     "privilegedAccessGroupEligibilityScheduleInstance",
+                    "groupResource",
                     "unifiedRoleManagementPolicy",
                     "unifiedRoleManagementPolicyRule",
                     "unifiedRoleManagementPolicyAssignment",
@@ -1759,6 +1760,20 @@
                 "onAttributeCollectionSubmitCustomExtension",
                 "onOtpSendCustomExtension",
                 "onTokenIssuanceStartCustomExtension"
+              ]
+            },
+            {
+              "name": "Cross-tenant migration",
+              "overview": "../../resources/crosstenant-migration-overview.md",
+              "resources":[
+                "crossTenantMigrationJob",
+                "crossTenantMigrationTask",
+                "migrationsRoot"
+              ],
+              "complexTypes":[
+                "crossTenantMigrationServiceStatusDetails",
+                "error",
+                "exchangeOnlineCrossTenantMigrationSettings"
               ]
             },
             {
