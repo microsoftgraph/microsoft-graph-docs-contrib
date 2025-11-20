@@ -1,6 +1,6 @@
 ---
 title: "sharePointMigrationTask: getBySourceUserPrincipalName"
-description: "Gets the sharepointMigrationTask that was previously created for a user, given the source userPrincipalName, when invoked at the source organization."
+description: "Get a sharePointMigrationTask that was previously created for a user, using the source user principal name."
 author: "Joey-King"
 ms.date: 11/12/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Gets the sharepointMigrationTask that was previously created for a user, gigiven the source userPrincipalNamee. The returned sharePointMigrationTask includes the source and target site URLs, migration status, optional timestamps (startedDateTime and finishedDateTime), and error details about issues during execution.
+Get a [sharePointMigrationTask](../resources/sharepointmigrationtask.md) that was previously created for a user, using the source **userPrincipalName**. The returned **sharePointMigrationTask** object includes the source and target site URLs, migration status, optional timestamps (**startedDateTime** and **finishedDateTime**), and error details about issues during processing.
 
 ## Permissions
 
@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /solutions/sharePoint/migrations/crossOrganizationMigrationTasks/getBySourceUserPrincipalName(sourceprincipalname={sourceprincipalname})
+GET /solutions/sharePoint/migrations/crossOrganizationMigrationTasks/getBySourceUserPrincipalName(sourcePrincipalName={sourcePrincipalName})
 ```
 
 ## Function parameters
@@ -42,7 +42,7 @@ In the request URL, provide the following query parameters with values.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|sourcePrincipalName|String|Source user principal name|
+|sourcePrincipalName|String|Source user principal name.|
 
 ## Request headers
 
@@ -69,7 +69,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/solutions/sharePoint/migrations/crossOrganizationMigrationTasks/getBySourceUserPrincipalName(sourceprincipalname=@upn)?@upn='contoso'
+GET https://graph.microsoft.com/beta/solutions/sharePoint/migrations/crossOrganizationMigrationTasks/getBySourceUserPrincipalName(sourcePrincipalName=@upn)?@upn='contoso'
 ```
 
 ### Response
@@ -96,7 +96,7 @@ Content-Type: application/json
     "targetOrganizationId": "3ef4e46d-13a3-4895-b6ea-a74a20hu728h",
     "targetOrganizationHost": "https://fabrico-my.sharepoint.com",
     "sourceSiteUrl": "https://contoso.sharepoint.com/sites/IT",
-    "targetSiteUrl": "https://fabrico.sharepoint.com/sites/IT",
+    "targetSiteUrl": "https://fabrico.sharepoint.com/sites/IT"
   }
 }
 ```
