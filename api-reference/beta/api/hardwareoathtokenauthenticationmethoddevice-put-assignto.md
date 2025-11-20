@@ -37,7 +37,7 @@ Assign a hardware OATH authentication method for yourself.
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PUT /me/authentication/hardwareOathMethods/{hardwareOathAuthenticationMethodId}/device/assignTo/$ref
 ```
 
@@ -46,7 +46,7 @@ Assign a hardware OATH authentication method for another user.
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PUT /users/{usersId}/authentication/hardwareOathMethods/{hardwareOathAuthenticationMethodId}/device/assignTo/$ref
 ```
 
@@ -82,7 +82,7 @@ The following example shows a request.
   "name": "create_user_from_users"
 }
 -->
-``` http
+```http
 PUT https://graph.microsoft.com/beta/users/{usersId}/authentication/hardwareOathMethods/{hardwareOathAuthenticationMethodId}/device/assignTo/$ref
 Content-Type: application/json
 
@@ -106,6 +106,6 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```

@@ -39,13 +39,13 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 To list all sessions of a webinar:
 
-``` http
+```http
 GET /solutions/virtualEvents/webinars/{webinarId}/sessions
 ```
 
 To list all sessions of a town hall:
 
-``` http
+```http
 GET /solutions/virtualEvents/townhalls/{townhallId}/sessions
 ```
 
@@ -89,7 +89,7 @@ The following example shows a request.
   "sampleKeys": ["f8ce2a5f-0e6a-4186-aa90-1f64bc023566@5466a424-aadf-425c-9b24-034ca28d4bdd"]
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/solutions/virtualEvents/webinars/f8ce2a5f-0e6a-4186-aa90-1f64bc023566@5466a424-aadf-425c-9b24-034ca28d4bdd/sessions
 ```
 
@@ -133,7 +133,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.virtualEventSession)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

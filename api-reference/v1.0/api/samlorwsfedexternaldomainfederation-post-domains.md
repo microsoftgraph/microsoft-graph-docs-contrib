@@ -28,7 +28,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 
-``` http
+```http
 POST /directory/federationConfigurations/{samlOrWsFedExternalDomainFederation ID}/microsoft.graph.samlOrWsFedExternalDomainFederation/domains
 ```
 
@@ -65,7 +65,7 @@ If successful, this method returns a `201 Created` response code and an [externa
 }
 -->
 
-``` http
+```http
 POST https://graph.microsoft.com/beta/directory/federationConfigurations/d5a56845-6845-d5a5-4568-a5d54568a5d5/microsoft.graph.samlOrWsFedExternalDomainFederation/domains
 Content-Type: application/json
 
@@ -91,7 +91,7 @@ The following example shows the response.
 }
 -->
 
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 

@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /teamwork/devices
 ```
 
@@ -72,7 +72,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
   "name": "list_teamworkdevice"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/teamwork/devices
 ```
 
@@ -115,7 +115,7 @@ GET https://graph.microsoft.com/beta/teamwork/devices
   "isCollection": true
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

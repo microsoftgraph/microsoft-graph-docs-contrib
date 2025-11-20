@@ -949,6 +949,8 @@ items:
         href: ../../api/identitygovernance-workflow-delete.md
       - name: Activate
         href: ../../api/identitygovernance-workflow-activate.md
+      - name: Activate with scope
+        href: ../../api/identitygovernance-workflow-activatewithscope.md
       - name: List users in scope
         href: ../../api/workflow-list-executionscope.md
       - name: Deleted workflows
@@ -1000,6 +1002,10 @@ items:
             href: ../../api/identitygovernance-userprocessingresult-summary.md
           - name: List task processing results
             href: ../../api/identitygovernance-userprocessingresult-list-taskprocessingresults.md
+          - name: List reprocessedRuns
+            href: ../../api/identitygovernance-userprocessingresult-list-reprocessedruns.md
+          - name: Remove reprocessedRuns
+            href: ../../api/identitygovernance-userprocessingresult-delete-reprocessedruns.md
         - name: Task report
           items:
           - name: Task report
@@ -1022,6 +1028,10 @@ items:
             href: ../../api/identitygovernance-run-summary.md
           - name: List task processing results
             href: ../../api/identitygovernance-run-list-taskprocessingresults.md
+          - name: List reprocessedRuns
+            href: ../../api/identitygovernance-run-list-reprocessedruns.md
+          - name: Remove reprocessedRuns
+            href: ../../api/identitygovernance-run-delete-reprocessedruns.md
         - name: Task processing result
           items:
           - name: Task processing result
@@ -1475,12 +1485,44 @@ items:
       href: ../../resources/onauthenticationmethodloadstartlistener.md
     - name: On email OTP send listener
       href: ../../resources/onemailotpsendlistener.md
+    - name: On fraud protection load start listener
+      href: ../../resources/onfraudprotectionloadstartlistener.md
     - name: On interactive auth flow start listener
       href: ../../resources/oninteractiveauthflowstartlistener.md
     - name: On token issuance start listener
       href: ../../resources/ontokenissuancestartlistener.md
     - name: On user create start listener
       href: ../../resources/onusercreatestartlistener.md
+    - name: Web application firewall provider
+      items:
+      - name: Web application firewall provider
+        href: ../../resources/webapplicationfirewallprovider.md
+      - name: List
+        href: ../../api/riskpreventioncontainer-list-webapplicationfirewallproviders.md
+      - name: Create
+        href: ../../api/riskpreventioncontainer-post-webapplicationfirewallproviders.md
+      - name: Get
+        href: ../../api/webapplicationfirewallprovider-get.md
+      - name: Update
+        href: ../../api/webapplicationfirewallprovider-update.md
+      - name: Delete
+        href: ../../api/riskpreventioncontainer-delete-webapplicationfirewallproviders.md
+      - name: Verify
+        href: ../../api/webapplicationfirewallprovider-verify.md
+    - name: Cloud flare web application firewall provider
+      href: ../../resources/cloudflarewebapplicationfirewallprovider.md
+    - name: Akamai web application firewall provider
+      href: ../../resources/akamaiwebapplicationfirewallprovider.md
+    - name: Web application firewall verification model
+      items:
+      - name: Web application firewall verification model
+        href: ../../resources/webapplicationfirewallverificationmodel.md
+      - name: List
+        href: ../../api/riskpreventioncontainer-list-webapplicationfirewallverifications.md
+      - name: Get
+        href: ../../api/webapplicationfirewallverificationmodel-get.md
+      - name: Delete
+        href: ../../api/riskpreventioncontainer-delete-webapplicationfirewallverifications.md
   - name: Authentication methods
     items:
     - name: Overview
@@ -1970,6 +2012,24 @@ items:
         href: ../../api/riskyserviceprincipal-confirmcompromised.md
       - name: List history
         href: ../../api/riskyserviceprincipal-list-history.md
+    - name: Fraud protection provider
+      items:
+      - name: Fraud protection provider
+        href: ../../resources/fraudprotectionprovider.md
+      - name: List
+        href: ../../api/riskpreventioncontainer-list-fraudprotectionproviders.md
+      - name: Create
+        href: ../../api/riskpreventioncontainer-post-fraudprotectionproviders.md
+      - name: Get
+        href: ../../api/fraudprotectionprovider-get.md
+      - name: Update
+        href: ../../api/fraudprotectionprovider-update.md
+      - name: Delete
+        href: ../../api/riskpreventioncontainer-delete-fraudprotectionproviders.md
+    - name: Arkose fraud protection provider
+      href: ../../resources/arkosefraudprotectionprovider.md
+    - name: Human security fraud protection provider
+      href: ../../resources/humansecurityfraudprotectionprovider.md
   - name: Identity provider
     items:
     - name: External identities

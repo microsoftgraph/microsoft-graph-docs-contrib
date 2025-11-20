@@ -30,7 +30,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /roleManagement/directory/roleAssignmentSchedules
 ```
 
@@ -101,7 +101,7 @@ GET https://graph.microsoft.com/v1.0/roleManagement/directory/roleAssignmentSche
   "@odata.type": "Collection(microsoft.graph.unifiedRoleAssignmentSchedule)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /identityGovernance/lifecycleWorkflows/deletedItems/workflows/{workflowId}/
 ```
 
@@ -69,7 +69,7 @@ The following example shows a request.
   "name": "lifecycleworkflows_get_deleteditemcontainer"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/deletedItems/workflows/4557805a-1af5-4c29-b271-2cd7fb5de9bf
 ```
 
@@ -113,7 +113,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.identityGovernance.workflow"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -165,7 +165,7 @@ The following example shows a request.
   "name": "lifecycleworkflows_get_deleteditemcontainer_select"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/deletedItems/workflows/952b23c5-cc25-48c9-8848-95da4dd9dc6d?$select=id,category,displayName,description,version,executionConditions
 ```
 
@@ -209,7 +209,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.identityGovernance.workflow"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

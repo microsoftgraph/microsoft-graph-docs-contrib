@@ -30,7 +30,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /print/printers/{printerId}/jobs/{printJobId}/abort
 ```
 
@@ -60,7 +60,7 @@ If successful, this method returns a `204 No Content` response code. It doesn't 
   "name": "printjob_abort"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/print/printers/{printerId}/jobs/{printJobId}/abort
 Content-Type: application/json
 
@@ -105,7 +105,7 @@ Content-Type: application/json
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 

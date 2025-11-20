@@ -20,19 +20,18 @@ name := "Communication Site Test"
 requestBody.SetName(&name) 
 webUrl := "https://contoso.sharepoint.com/sites/commsite1"
 requestBody.SetWebUrl(&webUrl) 
+locale := "en-US"
+requestBody.SetLocale(&locale) 
+shareByEmailEnabled := false
+requestBody.SetShareByEmailEnabled(&shareByEmailEnabled) 
 description := "Test Site Description"
 requestBody.SetDescription(&description) 
-additionalData := map[string]interface{}{
-	"locale" : "en-US", 
-	shareByEmailEnabled := false
-requestBody.SetShareByEmailEnabled(&shareByEmailEnabled) 
-	"template" : "sitepagepublishing", 
-ownerIdentityToResolve := graph.New()
+template := graphmodels.SITEPAGEPUBLISHING_SITETEMPLATETYPE 
+requestBody.SetTemplate(&template) 
+ownerIdentityToResolve := graphmodels.NewIdentityInput()
 email := "ryan@contoso.com"
 ownerIdentityToResolve.SetEmail(&email) 
-	requestBody.SetOwnerIdentityToResolve(ownerIdentityToResolve)
-}
-requestBody.SetAdditionalData(additionalData)
+requestBody.SetOwnerIdentityToResolve(ownerIdentityToResolve)
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 sites, err := graphClient.Sites().Post(context.Background(), requestBody, nil)

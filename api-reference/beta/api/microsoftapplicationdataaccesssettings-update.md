@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PATCH /organization/{organizationId}/settings/microsoftApplicationDataAccess
 ```
 
@@ -66,7 +66,7 @@ The following example request shows how an admin updates the **disabledForGroup*
   "name": "update_microsoftapplicationdataaccesssettings"
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/organization/{organizationId}/settings/microsoftApplicationDataAccess
 Content-Type: application/json
 
@@ -115,7 +115,7 @@ Content-Type: application/json
   "name": "update_microsoftapplicationdataaccesssettings"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

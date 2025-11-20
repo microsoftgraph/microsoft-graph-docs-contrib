@@ -36,7 +36,7 @@ Get details of your own FIDO2 authentication method.
 
 [!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
 
-``` http
+```http
 GET /me/authentication/fido2Methods/{id}
 ```
 
@@ -44,7 +44,7 @@ Get details of your own or another user's FIDO2 authentication method.
 
 [!INCLUDE [authentication-methods-apis-users-selfservice](../includes/authentication-methods-apis-users-selfservice.md)]
 
-``` http
+```http
 GET /users/{id | userPrincipalName}/authentication/fido2Methods/{id}
 ```
 
@@ -75,7 +75,7 @@ The following example shows a request.
   "sampleKeys": ["-2_GRUg2-HYz6_1YG4YRAQ2"]
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/authentication/fido2Methods/-2_GRUg2-HYz6_1YG4YRAQ2
 ```
 
@@ -120,7 +120,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.fido2AuthenticationMethod"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 

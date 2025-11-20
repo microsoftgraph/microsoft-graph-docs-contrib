@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /security/subjectRightsRequests
 GET /privacy/subjectRightsRequests
 ```
@@ -63,7 +63,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
   "name": "list_subjectRightsRequest"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/privacy/subjectRightsRequests
 ```
 
@@ -105,7 +105,7 @@ GET https://graph.microsoft.com/beta/privacy/subjectRightsRequests
   "@odata.type": "Collection(microsoft.graph.subjectRightsRequest)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

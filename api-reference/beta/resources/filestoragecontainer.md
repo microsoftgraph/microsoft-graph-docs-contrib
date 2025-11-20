@@ -43,7 +43,7 @@ Represents a location where multiple users or a group of users can store files a
 |[Delete file storage container column](../api/filestoragecontainer-delete-column.md)|None|Delete a column from a fileStorageContainer.|
 |[Get column](../api/filestoragecontainer-get-column.md)|[columnDefinition](../resources/columndefinition.md)|Get a column from a fileStorageContainer.|
 |[Update recycle bin settings](../api/filestoragecontainer-update-recyclebinsettings.md)|[recyclebinsettings](../resources/recyclebinsettings.md)|Update recycleBin settings for a fileStorageContainer.|
-|[Restore recycle bin items](../api/recyclebinitem-restore.md)|[recycleBinItem](../resources/recyclebinitem.md) collection|Restore [recycleBinItem](../resources/recyclebinitem.md) objects from the [recycleBin](../resources/recyclebin.md) of a [fileStorageContainer](../resources/filestoragecontainer.md).|
+|[Restore recycle bin items](../api/filestoragecontainer-restore-recyclebinitem.md)|[recycleBinItem](../resources/recyclebinitem.md) collection|Restore recycle bin items in a fileStorageContainer.|
 |[Delete recycle bin items](../api/recyclebinitem-delete.md)|None|Delete [recycleBinItem](../resources/recyclebinitem.md) objects permanently from the [recycleBin](../resources/recyclebin.md) of a [fileStorageContainer](../resources/filestoragecontainer.md).|
 |[List recycle bin items](../api/filestoragecontainer-list-recyclebinitem.md)|[recycleBinItem](../resources/recyclebinitem.md) collection|List recycle bin items in a fileStorageContainer.|
 |[Lock](../api/filestoragecontainer-lock.md)|None|Lock a [fileStorageContainer](../resources/filestoragecontainer.md) to prevent modifications to its content.|

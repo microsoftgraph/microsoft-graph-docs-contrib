@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /roleManagement/directory/roleAssignmentScheduleInstances/{unifiedRoleAssignmentScheduleInstancesId}
 ```
 
@@ -61,7 +61,7 @@ If successful, this method returns a `200 OK` response code and an [unifiedRoleA
   "sampleKeys": ["4-PYiFWPHkqVOpuYmLiHa_8KmpPnrkhHmG41_UYRbUY-1"]
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignmentScheduleInstances/4-PYiFWPHkqVOpuYmLiHa_8KmpPnrkhHmG41_UYRbUY-1
 ```
 
@@ -105,7 +105,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.unifiedRoleAssignmentScheduleInstance"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

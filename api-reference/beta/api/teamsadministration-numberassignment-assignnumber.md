@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /admin/teams/telephoneNumberManagement/numberAssignments/assignNumber
 ```
 
@@ -71,7 +71,7 @@ The following example shows a request.
   "name": "numberassignmentthis.assignnumber"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/admin/teams/telephoneNumberManagement/numberAssignments/assignNumber
 Content-Type: application/json
 
@@ -118,7 +118,7 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 202 Accepted
 Location: https://graph.microsoft.com/beta/admin/teams/telephoneNumberManagement/operations('QXNzaWdubWVudHw2Y2E4Yjc0Ni00YzgxLTRhY2EtOTUyNi1jZmNjNGRiYWYyMmI')
 ```

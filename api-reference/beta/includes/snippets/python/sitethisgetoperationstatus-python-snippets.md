@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 from msgraph_beta import GraphServiceClient
 # To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 
-result = await graph_client.sites.by_site_id('site-id').get()
+result = await graph_client.sites.get_operation_status_with_operation_id("{operationId}").get()
 
 
 ```

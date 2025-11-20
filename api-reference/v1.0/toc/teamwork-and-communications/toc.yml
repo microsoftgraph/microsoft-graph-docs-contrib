@@ -290,6 +290,14 @@ items:
         href: ../../api/onlinemeeting-list-transcripts.md
       - name: List recordings
         href: ../../api/onlinemeeting-list-recordings.md
+    - name: Online meeting engagement conversation
+      items:
+      - name: Online meeting engagement conversation
+        href: ../../resources/onlinemeetingengagementconversation.md
+      - name: Get all online meeting messages
+        href: ../../api/cloudcommunications-getallonlinemeetingmessages.md
+      - name: List reactions
+        href: ../../api/engagementconversationdiscussionmessage-list-reactions.md
     - name: Call recording
       items:
       - name: Call recording

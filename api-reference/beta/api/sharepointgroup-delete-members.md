@@ -30,7 +30,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
-``` http
+```http
 DELETE /storage/fileStorage/containers/{containerId}/sharePointGroups/{sharePointGroupId}/members/{groupMemberId}
 ```
 
@@ -59,7 +59,7 @@ The following example shows a request.
   "blockType": "request",
   "name": "delete_sharepointgroup_member"
 }-->
-``` http
+```http
 DELETE https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/sharePointGroups/10/members/aTowIy5mfG1lbWJlcnNoaXB8YWRtaW5AYTgzMGVkYWQ5MDUwODQ5c3Bncm91cHRlc3QyLm9ubWljcm9zb2Z0LmNvbQ
 ```
 
@@ -98,6 +98,6 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```

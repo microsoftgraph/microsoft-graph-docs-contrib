@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /identityGovernance/lifecycleWorkflows/workflows
 ```
 
@@ -82,7 +82,7 @@ The following example shows a request that creates a workflow with the following
   "name": "lifecycleworkflows_create_workflow_from_"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workflows
 Content-Type: application/json
 
@@ -165,7 +165,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.identityGovernance.workflow"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 
@@ -212,7 +212,7 @@ The following example shows a request that creates a workflow with the following
   "name": "lifecycleworkflows_create_workflow_from_attribute"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workflows
 Content-Type: application/json
 Content-length: 631
@@ -292,7 +292,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.identityGovernance.workflow"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -345,7 +345,7 @@ The following example shows a request that creates a workflow with the following
   "name": "lifecycleworkflows_create_workflow_from_group"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workflows
 Content-Type: application/json
 
@@ -433,7 +433,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.identityGovernance.workflow"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 

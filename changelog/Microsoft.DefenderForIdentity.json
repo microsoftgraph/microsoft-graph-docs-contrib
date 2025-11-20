@@ -163,6 +163,64 @@
       "CreatedDateTime": "2024-11-04T05:10:40.1623416Z",
       "WorkloadArea": "Security",
       "SubArea": "Identities"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "1bf9b1cc-de33-46b4-91d4-c450a2743e0b",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "sensorCandidateActivationMode",
+          "ChangeType": "Addition",
+          "Description": "Added the **sensorCandidateActivationMode** enumeration type.",
+          "Target": "sensorCandidateActivationMode"
+        },
+        {
+          "Id": "1bf9b1cc-de33-46b4-91d4-c450a2743e0b",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "sensorCandidateActivationConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the **sensorCandidateActivationConfiguration** relationship to the [identityContainer](https://learn.microsoft.com/en-us/graph/api/resources/security-identityContainer?view=graph-rest-1.0) resource.",
+          "Target": "identityContainer"
+        },
+        {
+          "Id": "1bf9b1cc-de33-46b4-91d4-c450a2743e0b",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "sensorCandidates",
+          "ChangeType": "Addition",
+          "Description": "Added the **sensorCandidates** relationship to the [identityContainer](https://learn.microsoft.com/en-us/graph/api/resources/security-identityContainer?view=graph-rest-1.0) resource.",
+          "Target": "identityContainer"
+        },
+        {
+          "Id": "1bf9b1cc-de33-46b4-91d4-c450a2743e0b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sensorCandidate",
+          "ChangeType": "Addition",
+          "Description": "Added the [sensorCandidate](https://learn.microsoft.com/en-us/graph/api/resources/security-sensorCandidate?view=graph-rest-1.0) resource.",
+          "Target": "sensorCandidate"
+        },
+        {
+          "Id": "1bf9b1cc-de33-46b4-91d4-c450a2743e0b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sensorCandidateActivationConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [sensorCandidateActivationConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/security-sensorCandidateActivationConfiguration?view=graph-rest-1.0) resource.",
+          "Target": "sensorCandidateActivationConfiguration"
+        },
+        {
+          "Id": "1bf9b1cc-de33-46b4-91d4-c450a2743e0b",
+          "ApiChange": "Method",
+          "ChangedApiName": "activate",
+          "ChangeType": "Addition",
+          "Description": "Added the [activate](https://learn.microsoft.com/en-us/graph/api/security-sensorCandidate-activate?view=graph-rest-1.0) method to the [sensorCandidate](https://learn.microsoft.com/en-us/graph/api/resources/security-sensorCandidate?view=graph-rest-1.0) resource.",
+          "Target": "sensorCandidate"
+        }
+      ],
+      "Id": "1bf9b1cc-de33-46b4-91d4-c450a2743e0b",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-11-10T13:31:57.3043175Z",
+      "WorkloadArea": "Security",
+      "SubArea": ""
     }
   ]
 }

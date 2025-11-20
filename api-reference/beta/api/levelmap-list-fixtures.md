@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /places/{buildingPlaceId}/microsoft.graph.building/map/levels/{levelMapId}/fixtures
 ```
 > **Note:**
@@ -65,7 +65,7 @@ The following example shows a request.
   "sampleKeys": ["151e85a7-c0b8-4519-997e-1a0858255704","e537d463-475b-43c3-a650-184566c68bc9"]
 }
 -->
-``` http
+```http
 GET https://graph.microsoft.com/beta/places/151e85a7-c0b8-4519-997e-1a0858255704/microsoft.graph.building/map/levels/e537d463-475b-43c3-a650-184566c68bc9/fixtures
 ```
 
@@ -79,7 +79,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.fixtureMap)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/fido2
 ```
 
@@ -59,7 +59,7 @@ If successful, this method returns a `200 OK` response code and a [fido2Authenti
   "name": "get_fido2authenticationmethodconfiguration"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/fido2
 ```
 
@@ -103,7 +103,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.fido2AuthenticationMethodConfiguration"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 

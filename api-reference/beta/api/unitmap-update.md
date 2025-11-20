@@ -32,7 +32,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PATCH /places/{buildingPlaceId}/microsoft.graph.building/map/levels/{levelImdfID}/units/{unitImdfID}
 ```
 
@@ -75,7 +75,7 @@ The following example shows a request.
   "name": "update_unitmap"
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/places/30ca79af-ecb7-46c2-a14b-afe264a91543/microsoft.graph.building/map/levels/81e9fd76-b34a-45f6-a6dc-1f172f01e849/units/005eb3b8-c95d-4d35-a8a0-22d3cb4d6542
 Content-Type: application/json
 
@@ -95,7 +95,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.unitMap"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -118,7 +118,7 @@ The following example shows a request.
   "name": "create_unitmap_from_"
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/places/151e85a7-c0b8-4519-997e-1a0858255704/microsoft.graph.building/map/levels/e537d463-475b-43c3-a650-184566c68bc9/units/test0613-c95d-4d35-a8a0-22d3cb4d6542
 Content-Type: application/json
 
@@ -137,7 +137,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.unitMap"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 

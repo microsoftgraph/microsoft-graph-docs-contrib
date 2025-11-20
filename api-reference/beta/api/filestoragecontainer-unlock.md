@@ -33,7 +33,7 @@ When delegated permissions are used, only members in the `owner` role can call t
 
 ## HTTP request
 
-``` http
+```http
 POST /storage/fileStorage/containers/{containerId}/unlock
 ```
 
@@ -55,14 +55,14 @@ If successful, this method returns a `204 No Content` response code.
 ### Request
 The following example shows how to unlock a **fileStorageContainer**.
 
-``` http
+```http
 POST https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/unlock
 ```
 
 ### Response
 The following example shows the response.
 
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 

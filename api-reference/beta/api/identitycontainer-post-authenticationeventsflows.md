@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /identity/authenticationEventsFlows
 ```
 
@@ -79,7 +79,7 @@ The following example shows a request. In this example, you create a user flow n
   "name": "create_authenticationeventsflow_selfservicesignup"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/identity/authenticationEventsFlows
 Content-Type: application/json
 
@@ -188,7 +188,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.authenticationEventsFlow"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 
@@ -267,7 +267,7 @@ The following example shows a request. In this example, you create a user flow n
   "name": "create_authenticationeventsflow_selfservicesignup_includeapplications"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/identity/authenticationEventsFlows
 Content-Type: application/json
 
@@ -385,7 +385,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.authenticationEventsFlow"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 
@@ -469,7 +469,7 @@ The following example shows a request. In this example, you create a user flow n
   "name": "create_authenticationeventsflow__selfservicesignup_socialproviders_customattribute"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/identity/authenticationEventsFlows
 Content-Type: application/json
 
@@ -600,7 +600,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.authenticationEventsFlow"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 

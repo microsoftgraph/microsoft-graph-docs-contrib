@@ -32,7 +32,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /solutions/virtualEvents/webinars/{webinarId}/registrations
 ```
 
@@ -64,7 +64,7 @@ The following example shows a request.
   "name": "list_virtualeventregistration"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/solutions/virtualEvents/webinars/f4b39f1c-520e-4e75-805a-4b0f2016a0c6@a1a56d21-a8a6-4a6b-97f8-ced53d30f143/registrations
 ```
 
@@ -107,7 +107,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.virtualEventRegistration)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
