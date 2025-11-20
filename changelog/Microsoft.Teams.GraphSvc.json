@@ -3,6 +3,32 @@
     {
       "ChangeList": [
         {
+          "Id": "747e8341-3a86-4f11-90d9-25fe9ea311a5",
+          "ApiChange": "Method",
+          "ChangedApiName": "getAllRecordings",
+          "ChangeType": "Addition",
+          "Description": "Added the [getAllRecordings](https://learn.microsoft.com/en-us/graph/api/adhocCall-getAllRecordings?view=graph-rest-beta) method to the [adhocCall](https://learn.microsoft.com/en-us/graph/api/resources/adhocCall?view=graph-rest-beta) resource.",
+          "Target": "adhocCall"
+        },
+        {
+          "Id": "747e8341-3a86-4f11-90d9-25fe9ea311a5",
+          "ApiChange": "Method",
+          "ChangedApiName": "getAllTranscripts",
+          "ChangeType": "Addition",
+          "Description": "Added the [getAllTranscripts](https://learn.microsoft.com/en-us/graph/api/adhocCall-getAllTranscripts?view=graph-rest-beta) method to the [adhocCall](https://learn.microsoft.com/en-us/graph/api/resources/adhocCall?view=graph-rest-beta) resource.",
+          "Target": "adhocCall"
+        }
+      ],
+      "Id": "747e8341-3a86-4f11-90d9-25fe9ea311a5",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-11-20T06:46:06.0526299Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": "Microsoft.Teams.Shifts"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "dad933e5-3a75-415d-9f4c-90f57bc5a12b",
           "ApiChange": "Resource",
           "ChangedApiName": "adhocCall",
