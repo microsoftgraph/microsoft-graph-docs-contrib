@@ -22,10 +22,8 @@ Inherits from [controlConfiguration](../resources/controlconfiguration.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/insiderriskyuserapproval-list.md)|[insiderRiskyUserApproval](../resources/insiderriskyuserapproval.md) collection|Get a list of the insiderRiskyUserApproval objects and their properties.|
 |[Get](../api/insiderriskyuserapproval-get.md)|[insiderRiskyUserApproval](../resources/insiderriskyuserapproval.md)|Read the properties and relationships of [insiderRiskyUserApproval](../resources/insiderriskyuserapproval.md) object.|
 |[Update](../api/insiderriskyuserapproval-update.md)|[insiderRiskyUserApproval](../resources/insiderriskyuserapproval.md)|Update the properties of an insiderRiskyUserApproval object.|
-|[Delete](../api/insiderriskyuserapproval-delete.md)|None|Delete an insiderRiskyUserApproval object.|
 
 ## Properties
 |Property|Type|Description|

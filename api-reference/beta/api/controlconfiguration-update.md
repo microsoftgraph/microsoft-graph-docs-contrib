@@ -38,7 +38,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-PATCH /identityGovernance/entitlementManagement/controlConfigurations/{controlConfigurationId}
+Put /identityGovernance/entitlementManagement/controlConfigurations/{controlConfigurationId}
 ```
 
 ## Request headers
@@ -74,11 +74,14 @@ The following example shows a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/controlConfigurations/5fd3ef31-a26f-415a-a06c-6cf5064935ce
+PUT https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/controlConfigurations/insiderRiskyUserApproval
 Content-Type: application/json
 
 {
-  "isEnabled": false
+  "@odata.type": "#microsoft.graph.insiderRiskyUserApproval",
+    "id": "InsiderRiskyUserApproval",
+    "isApprovalRequired": true,
+    "minimumRiskLevel": "moderate"
 }
 ```
 
@@ -99,13 +102,15 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#controlConfigurations/microsoft.graph.controlConfiguration/$entity",
-  "@odata.type": "#microsoft.graph.controlConfiguration",
-  "id": "12345678-1234-1234-1234-123456789012",
-  "isEnabled": false,
-  "createdBy": "kayat@fimdev.com",
-  "createdDateTime": "2025-10-30T08:00:00Z",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#controlConfigurations/microsoft.graph.insiderRiskyUserApproval/$entity",
+  "@odata.type": "#microsoft.graph.insiderRiskyUserApproval",
+  "id": "InsiderRiskyUserApproval",
+  "isEnabled": true,
+  "createdBy": "Azure AD",
+  "createdDateTime": "2025-10-27T18:42:37.163-07:00",
   "modifiedBy": "kayat@fimdev.com",
-  "modifiedDateTime": "2025-11-05T03:45:00Z"
+  "modifiedDateTime": "2025-10-28T13:58:38.983-07:00",
+  "isApprovalRequired": true,
+  "minimumRiskLevel": "moderate"
 }
 ```

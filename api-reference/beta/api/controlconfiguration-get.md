@@ -38,7 +38,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /identityGovernance/entitlementManagement/controlConfigurations/{controlConfigurationId}
+GET /identityGovernance/entitlementManagement/controlConfigurations/insiderRiskyUserApproval
 ```
 
 ## Optional query parameters
@@ -91,13 +91,15 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#controlConfigurations/microsoft.graph.controlConfiguration/$entity",
-  "@odata.type": "#microsoft.graph.controlConfiguration",
-  "id": "12345678-1234-1234-1234-123456789012",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#controlConfigurations/microsoft.graph.insiderRiskyUserApproval/$entity",
+  "@odata.type": "#microsoft.graph.insiderRiskyUserApproval",
+  "id": "InsiderRiskyUserApproval",
   "isEnabled": true,
-  "createdBy": "kayat@fimdev.com",
-  "createdDateTime": "2025-11-01T11:00:00Z",
+  "createdBy": "Azure AD",
+  "createdDateTime": "2025-10-27T18:42:37.163-07:00",
   "modifiedBy": "kayat@fimdev.com",
-  "modifiedDateTime": "2025-11-07T15:30:00Z"
+  "modifiedDateTime": "2025-10-28T13:58:38.983-07:00",
+  "isApprovalRequired": true,
+  "minimumRiskLevel": "moderate"
 }
 ```

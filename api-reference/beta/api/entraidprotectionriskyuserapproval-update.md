@@ -38,7 +38,13 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-PATCH /identityGovernance/entitlementManagement/entraIdProtectionRiskyUserApprovals/{entraIdProtectionRiskyUserApprovalId}
+PATCH /identityGovernance/entitlementManagement/entraIdProtectionRiskyUserApprovals/
+Content-Type: application/json
+
+{
+  "isApprovalRequired": true,
+  "minimumRiskLevel": "elevated"
+}
 ```
 
 ## Request headers
@@ -76,11 +82,10 @@ The following example shows a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/entraIdProtectionRiskyUserApprovals/637f56eb-0126-4cec-8e39-26d78fb978ff
+PATCH https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/entraIdProtectionRiskyUserApprovals
 Content-Type: application/json
 
 {
-  "isEnabled": true,
   "isApprovalRequired": true,
   "minimumRiskLevel": "medium"
 }
@@ -106,7 +111,6 @@ Content-Type: application/json
   "@odata.context": "https://localhost:44319/api/v1/$metadata#controlConfigurations/microsoft.graph.entraIdProtectionRiskyUserApproval/$entity",
   "@odata.type": "#microsoft.graph.entraIdProtectionRiskyUserApproval",
   "id": "637f56eb-0126-4cec-8e39-26d78fb978ff2",
-  "isEnabled": true,
   "createdBy": "kayat@elmdev.com",
   "createdDateTime": "2025-10-29T09:50:23Z",
   "modifiedBy": "kayat@elmdev.com",

@@ -80,7 +80,6 @@ PATCH https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/
 Content-Type: application/json
 
 {
-  "isEnabled": true,
   "isApprovalRequired": true,
   "minimumRiskLevel": "elevated"
 }
@@ -106,7 +105,6 @@ Content-Type: application/json
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#controlConfigurations/microsoft.graph.insiderRiskyUserApproval/$entity",
   "@odata.type": "#microsoft.graph.insiderRiskyUserApproval",
   "id": "12c97a0b-be3a-4802-bddd-aaef83e35c09",
-  "isEnabled": true,
   "createdBy": "kayat@elmdev.com",
   "createdDateTime": "2025-11-04T11:00:00Z",
   "modifiedBy": "kayat@elmdev.com",

@@ -38,7 +38,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /identityGovernance/entitlementManagement/entraIdProtectionRiskyUserApprovals/{entraIdProtectionRiskyUserApprovalId}
+GET /identityGovernance/entitlementManagement/entraIdProtectionRiskyUserApprovals/
 ```
 
 ## Optional query parameters
@@ -71,7 +71,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/entraIdProtectionRiskyUserApprovals/bc6996a1-a992-49f1-bb7d-9dde64f6657a
+GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/entraIdProtectionRiskyUserApprovals/
 ```
 
 ### Response

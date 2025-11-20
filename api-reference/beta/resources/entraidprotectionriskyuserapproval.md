@@ -22,10 +22,9 @@ Inherits from [controlConfiguration](../resources/controlconfiguration.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/entraidprotectionriskyuserapproval-list.md)|[entraIdProtectionRiskyUserApproval](../resources/entraidprotectionriskyuserapproval.md) collection|Get a list of the entraIdProtectionRiskyUserApproval objects and their properties.|
 |[Get](../api/entraidprotectionriskyuserapproval-get.md)|[entraIdProtectionRiskyUserApproval](../resources/entraidprotectionriskyuserapproval.md)|Read the properties and relationships of [entraIdProtectionRiskyUserApproval](../resources/entraidprotectionriskyuserapproval.md) object.|
 |[Update](../api/entraidprotectionriskyuserapproval-update.md)|[entraIdProtectionRiskyUserApproval](../resources/entraidprotectionriskyuserapproval.md)|Update the properties of an entraIdProtectionRiskyUserApproval object.|
-|[Delete](../api/entraidprotectionriskyuserapproval-delete.md)|None|Delete an entraIdProtectionRiskyUserApproval object.|
+
 
 ## Properties
 |Property|Type|Description|
