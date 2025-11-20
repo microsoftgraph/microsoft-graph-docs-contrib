@@ -81,6 +81,8 @@ items:
       href: ../../api/cloudpc-reboot.md
     - name: Rename
       href: ../../api/cloudpc-rename.md
+    - name: Reprovision
+      href: ../../api/cloudpc-reprovision.md
     - name: Resize
       href: ../../api/cloudpc-resize.md
     - name: Restore
