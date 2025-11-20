@@ -70,7 +70,7 @@ POST https://graph.microsoft.com/beta/policies/onPremAuthenticationPolicies/{onP
 Content-Type: application/json
 
 {
-  "@odata.id": " https://graph.microsoft.com/beta/directoryObjects/2441b489-4f12-4882-b039-8f6006bd66da"
+  "@odata.id": "https://graph.microsoft.com/beta/directoryObjects/2441b489-4f12-4882-b039-8f6006bd66da"
 }
 ```
 
