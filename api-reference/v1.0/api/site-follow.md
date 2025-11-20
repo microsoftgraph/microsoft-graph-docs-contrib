@@ -27,8 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /users/{user-id}/followedSites/add
-POST /users/{userPrincipalName}/followedSites/add
+POST /users/{user-id | userPrincipalName}/followedSites/add
 ```
 
 ## Request headers
