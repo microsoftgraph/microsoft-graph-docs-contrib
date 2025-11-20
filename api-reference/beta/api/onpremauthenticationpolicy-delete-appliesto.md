@@ -1,6 +1,6 @@
 ---
-title: "Remove appliesTo"
-description: "Remove a directoryObject object."
+title: "Remove onPremAuthenticationPolicy appliesTo"
+description: "Remove a directoryObject object that's in scope for onPremAuthenticationPolicy."
 author: "maheshwaria"
 ms.date: 11/11/2025
 ms.localizationpriority: medium
@@ -8,13 +8,13 @@ ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
-# Remove appliesTo
+# Remove onPremAuthenticationPolicy appliesTo
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Remove a [directoryObject](../resources/directoryobject.md) object.
+Remove a [directoryObject](../resources/directoryobject.md) object that's in scope for [onPremAuthenticationPolicy](../resources/onPremAuthenticationPolicy.md).
 
 ## Permissions
 
@@ -71,7 +71,6 @@ DELETE https://graph.microsoft.com/beta/policies/onPremAuthenticationPolicies/{o
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true
