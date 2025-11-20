@@ -44,8 +44,8 @@ where files are shared, and where tabs are added.
 |[Unarchive channel](../api/channel-unarchive.md) | None | Unarchive a channel.|
 |[Update channel member's role](../api/channel-update-members.md) | [conversationMember](conversationmember.md) | Update the properties of a member of the channel. Only supported for channels with a **membershipType** of `private` or `shared`.|
 |[Remove channel member](../api/channel-delete-members.md) | None | Delete a member from a channel. Only supported for channels with a **membershipType** of `private` or `shared`.|
-|[Complete migration](../api/channel-completemigration.md)|[channel](channel.md)| Complete migration on existing channels or new channels.|
-|[Start migration](../api/channel-startmigration.md)|[channel](channel.md)| Start the migration of external messages by enabling migration mode in an existing channel.|
+|[Start migration](../api/channel-startmigration.md)|[channel](channel.md)| Start the migration of external messages by enabling migration mode in an existing [channel](../resources/channel.md).|
+|[Complete migration](../api/channel-completemigration.md)|[channel](channel.md)| Complete migration on existing [channels](../resources/channel.md) or new channels.|
 |[List tabs in channel](../api/channel-list-tabs.md) | [teamsTab](teamstab.md) | List tabs pinned to a channel.|
 |[Add tab to channel](../api/channel-post-tabs.md) | [teamsTab](teamstab.md) | Add (pin) a tab to a channel.|
 |[Get tab in channel](../api/channel-get-tabs.md) | [teamsTab](teamstab.md) | Get a specific tab pinned to a channel.|

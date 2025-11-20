@@ -38,8 +38,8 @@ Represents a chat that is a collection of [chatMessages](chatmessage.md) between
 |[Mark chat as unread](../api/chat-markchatunreadforuser.md) |None| Mark chat as unread for a user.|
 |[Hide chat](../api/chat-hideforuser.md)|None|Hide a chat for a user.|
 |[Unhide chat](../api/chat-unhideforuser.md)|None|Unhide a chat for a user.|
-|[Start migration](../api/chat-startmigration.md)|[chat](chat.md)| Start the migration of external messages by enabling migration mode in an existing chat.|
-|[Complete migration](../api/chat-completemigration.md)|[chat](chat.md)| Complete the migration of external messages by removing migration mode from a chat.|
+|[Start migration](../api/chat-startmigration.md)|[chat](chat.md)| Start the migration of external messages by enabling migration mode in an existing [chat](../resources/chat.md).|
+|[Complete migration](../api/chat-completemigration.md)|[chat](chat.md)| Complete the migration of external messages by removing migration mode from a [chat](../resources/chat.md).|
 | **Messages** |||
 |[List messages in a chat](../api/chat-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | Get messages in a chat. |
 |[Get message reply](../api/chatmessage-get.md)  | [chatMessage](../resources/chatmessage.md) | Get a single message in a chat. |
