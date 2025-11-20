@@ -35,6 +35,8 @@ The following table lists some solutions you can build by using the Teams client
 > [!NOTE]
 > To build any Microsoft Graph solutions, you need to register and give the right permissions to your application. For more information, see [Authentication and authorization basics](/graph/auth/auth-concepts).
 
+[!INCLUDE [cloud-communications-virtual-events-permissions](./includes/cloud-communications-virtual-events-permissions.md)]
+
 ### Create/update/cancel 
 
 - Use the [Create townhall API](/graph/api/virtualeventsroot-post-townhalls) to create a draft of the event, followed by the [Publish townhall API](/graph/api/virtualeventtownhall-publish) to complete the creation and make it visible to its audience.

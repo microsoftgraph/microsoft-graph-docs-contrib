@@ -106,8 +106,10 @@ The last column indicates whether updating this property takes effect for an in-
 | isEndToEndEncryptionEnabled | Boolean                                                    | Indicates whether end-to-end encryption (E2EE) is enabled for the meeting.          | No                                  |
 | isEntryExitAnnounced        | Boolean                                                    | Whether or not to announce when callers join or leave.                              | Yes                                 |
 | lobbyBypassSettings         | [lobbyBypassSettings](../resources/lobbybypasssettings.md) | Specifies which participants can bypass the meeting lobby.                          | Yes                                 |
+| meetingSpokenLanguageTag | String | Specifies the spoken language used during the meeting for recording and transcription purposes. |  No                                  |
 | participants                | [meetingParticipants](../resources/meetingparticipants.md) | The participants associated with the online meeting. Only attendees can be updated. | No                                  |
 | recordAutomatically         | Boolean                                                    | Indicates whether to record the meeting automatically.                              | No                                  |
+|sensitivityLabelAssignment|[onlineMeetingSensitivityLabelAssignment](../resources/onlinemeetingsensitivitylabelassignment.md)|Specifies the sensitivity label applied to the Teams meeting.| No                                  |
 | startDateTime               | DateTime                                                   | The meeting start time in UTC.                                                      | No                                  |
 | subject                     | String                                                     | The subject of the online meeting.                                                  | No                                  |
 | watermarkProtection         | [watermarkProtectionValues](../resources/watermarkprotectionvalues.md)  | Specifies whether the client application should apply a watermark to a content type. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |No                                  |
@@ -220,7 +222,10 @@ Content-Type: application/json
       "tollNumber":"+1-900-555-0100",
       "tollFreeNumber":"+1-800-555-0100",
       "dialinUrl":"url"
-   }
+   },
+    "sensitivityLabelAssignment": {
+      "sensitivityLabelId": "c7f2d7a7-6a36-4a41-9a6b-0d2761a9f4f0"
+    }
 }
 ```
 

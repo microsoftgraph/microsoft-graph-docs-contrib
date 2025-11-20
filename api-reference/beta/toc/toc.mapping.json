@@ -140,6 +140,30 @@
       ]
     },
     {
+      "name": "Agents (preview)",
+      "overview": "../../resources/agentid-platform-overview.md",
+      "resources": ["agentUser"],
+      "shouldSort": true,
+      "childNodes": [
+          {
+            "name": "Agent identities",
+            "resources": [
+              "agentIdentityBlueprint",
+              "agentIdentityBlueprintPrincipal",
+              "agentIdentity"
+            ]
+          },
+          {
+            "name": "Agent registry",
+            "resources": [
+              "agentInstance",
+              "agentCardManifest",
+              "agentCollection"
+            ]
+          }
+      ]
+    },
+    {
       "name": "Backup storage",
       "shouldSort": true,
       "keywords": [
@@ -275,7 +299,7 @@
             "assignedPlaceMode",
             "dropInPlaceMode",
             "mailboxDetails",
-            "offlinePlaceMode",
+            "unavailablePlaceMode",
             "placeMode",
             "reservablePlaceMode",
             "resourceLink"
@@ -520,6 +544,7 @@
             "cloudPcSnapshot",
             "cloudPcSupportedRegion",
             "cloudPcUserSetting",
+            "cloudPCUserSettingsPersistenceDetail",
             "virtualEndpoint",
             "cloudPcReports"
           ],
@@ -588,6 +613,8 @@
             "cloudPcUserRoleScopeTagInfo",
             "cloudPcUserSettingAssignment",
             "cloudPcUserSettingsPersistenceConfiguration",
+            "cloudPCUserSettingsPersistenceProfile",
+            "cloudPCUserSettingsPersistenceUsageResult",
             "cloudPcWindowsSetting",
             "cloudPcWindowsSettings",
             "frontlineCloudPcDetail",
@@ -1132,7 +1159,8 @@
             "bitlockerRecoveryKey",
             "deviceLocalCredentialInfo",
             "featureRolloutPolicy",
-            "mobilityManagementPolicy",
+            "mobileAppManagementPolicy",
+            "mobileDeviceManagementPolicy",
             "organizationSettings",
             "uxSetting",
             "deviceTemplate",
@@ -1522,6 +1550,7 @@
                     "privilegedAccessGroupEligibilityScheduleRequest",
                     "privilegedAccessGroupEligibilitySchedule",
                     "privilegedAccessGroupEligibilityScheduleInstance",
+                    "groupResource",
                     "unifiedRoleManagementPolicy",
                     "unifiedRoleManagementPolicyRule",
                     "unifiedRoleManagementPolicyAssignment",
@@ -1532,7 +1561,7 @@
               ]
             },
             {
-              "name": "Privileged Identity Management iteration 2",
+              "name": "Privileged Identity Management iteration 2 (deprecated)",
               "overview": "../../resources/privilegedidentitymanagement-root.md",
               "childNodes": [
                 {
@@ -1571,7 +1600,11 @@
             "dataPolicyOperation",
             "oAuth2PermissionGrant",
             "certificateBasedAuthConfiguration",
-            "externalIdentitiesPolicy"
+            "externalIdentitiesPolicy",
+            "webApplicationFirewallProvider",
+            "cloudFlareWebApplicationFirewallProvider",
+            "akamaiWebApplicationFirewallProvider",
+            "webApplicationFirewallVerificationModel"
           ],
           "childNodes": [
             {
@@ -1597,11 +1630,7 @@
                 "onInteractiveAuthFlowStartListener",
                 "onPhoneMethodLoadStartListener",
                 "onTokenIssuanceStartListener",
-                "onUserCreateStartListener",
-                "webApplicationFirewallProvider",
-                "cloudFlareWebApplicationFirewallProvider",
-                "akamaiWebApplicationFirewallProvider",
-                "webApplicationFirewallVerificationModel"
+                "onUserCreateStartListener"
               ]
             },
             {
@@ -1733,6 +1762,20 @@
               ]
             },
             {
+              "name": "Cross-tenant migration",
+              "overview": "../../resources/crosstenant-migration-overview.md",
+              "resources":[
+                "crossTenantMigrationJob",
+                "crossTenantMigrationTask",
+                "migrationsRoot"
+              ],
+              "complexTypes":[
+                "crossTenantMigrationServiceStatusDetails",
+                "error",
+                "exchangeOnlineCrossTenantMigrationSettings"
+              ]
+            },
+            {
               "name": "Identity protection",
               "overview": "../../resources/identityprotection-overview.md",
               "resources": [
@@ -1810,7 +1853,9 @@
               ],
               "resources": [
                 "organizationalBranding",
-                "organizationalBrandingLocalization"
+                "organizationalBrandingLocalization",
+                "organizationalBrandingTheme",
+                "organizationalBrandingThemeLocalization"
               ]
             },
             {
@@ -2715,6 +2760,7 @@
             "microsoft.graph.security.incidentTask"
           ],
           "complexTypes": [
+            "microsoft.graph.security.aiAgentEvidence",
             "microsoft.graph.security.securityGroupEvidence",
             "microsoft.graph.security.teamsMessageEvidence",
             "microsoft.graph.security.userAccount"
