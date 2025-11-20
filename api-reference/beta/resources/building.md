@@ -12,6 +12,8 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Represents a building within the tenant.
 
 Inherits from [place](./place.md).

@@ -12,6 +12,8 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 An abstract type that represents different map types within a tenant.
 
 Base type of [buildingMap](../resources/buildingmap.md), [fixtureMap](../resources/fixturemap.md), [footprintMap](../resources/footprintmap.md), [levelMap](../resources/levelmap.md), [sectionMap](../resources/sectionmap.md), and [unitMap](../resources/unitmap.md).

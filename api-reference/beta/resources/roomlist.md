@@ -12,6 +12,8 @@ ms.date: 03/22/2024
 
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Represents a group of [room](room.md) or [workspace](workspace.md) resources defined in the tenant. A **roomList** can contain a mix of **room** and **workspace** resources. 
 
 In Exchange Online, each **roomList** is associated with a mailbox.

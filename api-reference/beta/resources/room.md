@@ -12,6 +12,8 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Represents a room within a tenant. A room can be added to a [floor](./floor.md) or to a [section](./section.md).
 
 Inherits from [place](./place.md).

@@ -12,6 +12,8 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Get a collection of the specified type of [place](../resources/place.md) objects defined in a tenant.
 
 You can do the following for a given tenant:
