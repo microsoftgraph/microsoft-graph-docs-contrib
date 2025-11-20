@@ -60,7 +60,7 @@ The following example gets the user synchronization settings of the template.
   "name": "get_multitenantorganizationidentitysyncpolicytemplate"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/policies/crossTenantAccessPolicy/templates/multiTenantOrganizationIdentitySynchronization
 ```
 

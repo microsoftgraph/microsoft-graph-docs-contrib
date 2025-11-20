@@ -60,7 +60,7 @@ The following example shows a request.
   "name": "get_todotask_1"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/todo/lists/AAMkADA1MTHgwAAA=/tasks/721a35e2-35e2-721a-e235-1a72e2351a72
 ```
 

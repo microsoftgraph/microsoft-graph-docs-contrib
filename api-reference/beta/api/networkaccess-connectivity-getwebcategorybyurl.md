@@ -66,7 +66,7 @@ The following example shows a request.
   "name": "connectivity.getwebcategorybyurl"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/networkaccess/connectivity/getWebCategoryByUrl(url='@url')?@url=msn.com/en-us/sports
 ```
 

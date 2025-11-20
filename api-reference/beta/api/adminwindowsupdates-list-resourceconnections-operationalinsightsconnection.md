@@ -61,7 +61,7 @@ The following example shows a request.
   "name": "list_operationalinsightsconnection"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/admin/windows/updates/resourceConnections/microsoft.graph.windowsUpdates.operationalInsightsConnection
 ```
 

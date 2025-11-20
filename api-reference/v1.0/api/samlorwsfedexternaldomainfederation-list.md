@@ -61,7 +61,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 }
 -->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/directory/federationConfigurations/graph.samlOrWsFedExternalDomainFederation
 ```
 

@@ -1,5 +1,5 @@
 ---
-title: "Export governanceRoleAssignmentRequests"
+title: "Export governanceRoleAssignmentRequests (deprecated)"
 description: "Retrieve a collection of governanceRoleAssignmentRequests in the format `application/octet-stream`, which can be parsed as a .csv file in the browser."
 ms.localizationpriority: medium
 doc_type: apiPageType
@@ -9,7 +9,7 @@ ROBOTS: NOINDEX
 ms.date: 08/02/2024
 ---
 
-# Export governanceRoleAssignmentRequests
+# Export governanceRoleAssignmentRequests (deprecated)
 
 Namespace: microsoft.graph
 

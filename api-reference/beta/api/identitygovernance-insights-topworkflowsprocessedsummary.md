@@ -75,7 +75,7 @@ The following example shows a request.
   "name": "insightsthis.topworkflowsprocessedsummary"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/insights/topWorkflowsProcessedSummary(startDateTime=2023-01-01T00:00:00Z,endDateTime=2023-01-31T00:00:00Z)
 ```
 

@@ -63,7 +63,7 @@ The following example shows a request.
   "name": "cloudpc.getCloudPcConnectivityHistory"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/{id}/getCloudPcConnectivityHistory
 ```
 

@@ -58,7 +58,7 @@ Here's an example of a request.
   "name": "get_categorytemplate"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/security/labels/categories/e2c79762-34a9-75ba-b6f0-a7c9a57978ef
 ```
 

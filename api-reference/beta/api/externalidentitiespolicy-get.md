@@ -58,7 +58,7 @@ If successful, this method returns a `200 OK` response code and an [externalIden
   "name": "get_externalidentitiespolicy"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/policies/externalIdentitiesPolicy
 ```
 

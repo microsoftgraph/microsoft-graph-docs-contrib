@@ -59,7 +59,7 @@ The following example shows a request.
   "name": "get_externallyaccessibleazureblobcontainerfinding"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/azure/findings/MSxFeHRlcm5hbGx5QWNjZXNzaWJsZUF6dXJlQmxvYkNvbnRhaW5lckZpbmRpbmcsNzIzNg/microsoft.graph.externallyAccessibleAzureBlobContainerFinding
 ```
 

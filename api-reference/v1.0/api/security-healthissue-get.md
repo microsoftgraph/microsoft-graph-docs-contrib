@@ -61,7 +61,7 @@ The following example shows a request.
   "name": "get_healthissue"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/security/identities/healthIssues/bf600aba-e975-0274-d332-c0f79dc75740
 ```
 

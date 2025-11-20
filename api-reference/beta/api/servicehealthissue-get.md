@@ -61,7 +61,7 @@ If successful, this method returns a `200 OK` response code and a [serviceHealth
   "name": "get_servicehealthissue"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/admin/serviceAnnouncement/issues/MO226784
 ```
 

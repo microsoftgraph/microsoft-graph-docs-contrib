@@ -17,10 +17,11 @@ Namespace: microsoft.graph.agentic
 |Member|
 |:---|
 |notAgentic|
-|agenticAppBuilder|
 |agenticApp|
 |agenticAppInstance|
 |unknownFutureValue|
+|agentIdentityBlueprintPrincipal|
+|agentIDuser|
 
 <!-- {
   "type": "#page.annotation",

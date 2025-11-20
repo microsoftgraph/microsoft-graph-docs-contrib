@@ -69,7 +69,7 @@ The following example shows a request.
 }
 -->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/deviceManagement/virtualEndpoint/cloudPCs
 ```
 
@@ -158,7 +158,7 @@ The following example shows a request.
 }
 -->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/deviceManagement/virtualEndpoint/cloudPCs?$top=2
 ```
 

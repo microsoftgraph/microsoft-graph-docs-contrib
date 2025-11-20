@@ -64,6 +64,8 @@ items:
       href: ../../api/security-incidenttask-executeresponseaction.md
   - name: Complex types
     items:
+    - name: AI agent evidence
+      href: ../../resources/security-aiagentevidence.md
     - name: Security group evidence
       href: ../../resources/security-securitygroupevidence.md
     - name: Teams message evidence

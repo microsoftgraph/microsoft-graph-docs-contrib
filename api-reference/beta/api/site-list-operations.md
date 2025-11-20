@@ -58,7 +58,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
   "name": "list_richlongrunningoperation_for_site"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/sites/{site-ID}/operations
 ```
 

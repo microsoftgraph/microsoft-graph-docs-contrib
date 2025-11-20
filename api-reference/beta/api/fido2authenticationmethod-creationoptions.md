@@ -73,7 +73,7 @@ The following example shows a request.
   "name": "fido2authenticationmethodthis.creationoptions"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/{usersId}/authentication/fido2Methods/creationOptions(challengeTimeoutInMinutes=10)
 ```
 

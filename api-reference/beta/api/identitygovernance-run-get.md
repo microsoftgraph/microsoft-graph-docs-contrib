@@ -69,7 +69,7 @@ The following example shows a request.
   "name": "lifecycleworkflows_get_workflow_run_e1"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/IdentityGovernance/lifecycleWorkflows/workflows/14879e66-9ea9-48d0-804d-8fea672d0341/runs/dad77a47-6eda-4de7-bc37-fe8eb5aaf17d
 ```
 
@@ -147,7 +147,7 @@ The following example shows a request.
   "name": "lifecycleworkflows_get_workflow_run_e2"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workflows/15239232-66ed-445b-8292-2f5bbb2eb833/runs/e65e08a0-d68d-41dc-915b-8c4019af5cc2?$select=id,failedTasksCount,failedUsersCount,processingStatus,totalTasksCount,totalUnprocessedTasksCount,totalUsersCount
 ```
 

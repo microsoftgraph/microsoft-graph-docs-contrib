@@ -605,6 +605,8 @@ items:
         href: ../../api/chat-delete-members.md
       - name: Get chat between user and app
         href: ../../api/userscopeteamsappinstallation-get-chat.md
+      - name: Remove all access for user
+        href: ../../api/chat-removeallaccessforuser.md
     - name: Messages
       items:
       - name: List messages in a chat

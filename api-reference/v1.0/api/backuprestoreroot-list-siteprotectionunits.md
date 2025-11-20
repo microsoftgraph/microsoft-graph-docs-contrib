@@ -71,7 +71,7 @@ The following example shows a request.
   "name": "list_all_siteprotectionunit"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/solutions/backupRestore/protectionUnits/microsoft.graph.siteProtectionUnit
 ```
 
@@ -317,7 +317,7 @@ The following example shows a request.
   "name": "list_siteprotectionunit"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/solutions/backupRestore/sharePointProtectionPolicies/845457dc-4bb2-4815-bef3-8628ebd1952e/siteProtectionUnits
 ```
 

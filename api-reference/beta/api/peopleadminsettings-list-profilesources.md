@@ -64,7 +64,7 @@ The following example shows a request.
   "name": "list_profilesource"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/admin/people/profileSources
 ```
 

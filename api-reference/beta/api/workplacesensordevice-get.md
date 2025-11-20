@@ -58,7 +58,7 @@ The following example shows a request.
   "name": "get_workplacesensordevice"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/workplace/sensorDevices/ade7078f-4bf5-4239-bfde-95a7c4225df7
 ```
 

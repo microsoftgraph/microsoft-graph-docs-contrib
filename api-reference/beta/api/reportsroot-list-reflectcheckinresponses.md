@@ -69,7 +69,7 @@ The following example shows a request.
   "name": "get_reflectCheckinResponses_1"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/education/reports/reflectCheckInResponses
 ```
 
@@ -163,7 +163,7 @@ The following example shows a request.
   "name": "get_reflectCheckinResponses_2"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/education/reports/reflectCheckInResponses?$filter=submitDateTime gt 2023-10-10T00:00:00.000Z and submitDateTime lt 2023-10-11T00:00:00.000Z
 ```
 

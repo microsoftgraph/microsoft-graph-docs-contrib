@@ -60,7 +60,7 @@ Here's an example of a request.
   "name": "get_retentionlabel"
 }
 -->
-```http
+```msgraph-interactive
 GET  https://graph.microsoft.com/beta/security/labels/retentionLabels/{retentionLabelId}
 ```
 

@@ -62,7 +62,7 @@ The following example gets the partner configuration settings of the template.
   "name": "get_multitenantorganizationpartnerconfigurationtemplate"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/policies/crossTenantAccessPolicy/templates/multiTenantOrganizationPartnerConfiguration
 ```
 

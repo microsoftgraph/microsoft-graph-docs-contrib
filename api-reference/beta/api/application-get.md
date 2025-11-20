@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the properties and relationships of an [application](../resources/application.md) object.
+Get the properties and relationships of an [application](../resources/application.md) object. This API can be used to get [agentIdentityBlueprint](../resources/agentidentityblueprint.md) objects as well by their ID.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -54,7 +54,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an [application](../resources/application.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an [application](../resources/application.md) or [agentIdentityBlueprint](../resources/agentidentityblueprint.md) object in the response body.
 
 ## Examples
 

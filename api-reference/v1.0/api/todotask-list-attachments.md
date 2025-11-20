@@ -59,7 +59,7 @@ The following example shows a request.
   "sampleKeys": ["AAMehdkfuhgAAA=", "AAMkAGUzY5QKjAAA="]
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/todo/lists/AAMehdkfuhgAAA=/tasks/AAMkAGUzY5QKjAAA=/attachments
 ```
 

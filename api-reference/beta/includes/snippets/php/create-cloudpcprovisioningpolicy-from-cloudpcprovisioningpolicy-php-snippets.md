@@ -13,6 +13,8 @@ use Microsoft\Graph\Beta\Generated\Models\CloudPcProvisioningPolicyImageType;
 use Microsoft\Graph\Beta\Generated\Models\CloudPcWindowsSettings;
 use Microsoft\Graph\Beta\Generated\Models\CloudPcWindowsSetting;
 use Microsoft\Graph\Beta\Generated\Models\CloudPcProvisioningType;
+use Microsoft\Graph\Beta\Generated\Models\CloudPcUserSettingsPersistenceConfiguration;
+use Microsoft\Graph\Beta\Generated\Models\CloudPcUserSettingsPersistenceStorageSizeCategory;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
@@ -43,6 +45,10 @@ $windowsSetting = new CloudPcWindowsSetting();
 $windowsSetting->setLocale('en-US');
 $requestBody->setWindowsSetting($windowsSetting);
 $requestBody->setProvisioningType(new CloudPcProvisioningType('dedicated'));
+$userSettingsPersistenceConfiguration = new CloudPcUserSettingsPersistenceConfiguration();
+$userSettingsPersistenceConfiguration->setUserSettingsPersistenceEnabled(true);
+$userSettingsPersistenceConfiguration->setUserSettingsPersistenceStorageSizeCategory(new CloudPcUserSettingsPersistenceStorageSizeCategory('fourGB'));
+$requestBody->setUserSettingsPersistenceConfiguration($userSettingsPersistenceConfiguration);
 $additionalData = [
 'domainJoinConfiguration' => [
 	'domainJoinType' => 'hybridAzureADJoin',

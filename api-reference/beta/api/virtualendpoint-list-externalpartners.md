@@ -62,7 +62,7 @@ The following example shows a request.
   "name": "list_cloudpcexternalpartner_properties"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/externalPartners
 ```
 
@@ -141,7 +141,7 @@ The following example shows a request.
   "name": "list_cloudpcexternalpartner_usingselect"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/externalPartners?$select=id,partnerId,enableConnection
 ```
 

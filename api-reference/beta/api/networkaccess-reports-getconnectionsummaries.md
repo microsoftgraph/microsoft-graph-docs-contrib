@@ -73,7 +73,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
   "name": "get_connection_summaries"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/networkAccess/reports/getConnectionSummaries(startDateTime='2025-04-19T00:00:00Z',endDateTime='2025-04-20T00:00:00Z')
 ```
 

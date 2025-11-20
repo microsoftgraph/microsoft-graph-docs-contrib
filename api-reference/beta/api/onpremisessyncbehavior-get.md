@@ -73,7 +73,7 @@ The following example shows a request.
   "name": "get_onpremisessyncbehavior"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/groups/673f83c9-7e84-4db8-9a63-b8a8c309fdad/onPremisesSyncBehavior
 ```
 

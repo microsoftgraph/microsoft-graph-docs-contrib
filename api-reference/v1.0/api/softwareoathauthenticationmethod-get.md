@@ -72,7 +72,7 @@ If successful, this method returns a `200 OK` response code and a [softwareOathA
   "name": "get_softwareoathauthenticationmethod"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/authentication/softwareOathMethods/b172893e-893e-b172-3e89-72b13e8972b1
 ```
 

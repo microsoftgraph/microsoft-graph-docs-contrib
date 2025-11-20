@@ -60,7 +60,7 @@ The following example shows a request.
   "name": "get_privilegeescalationawsrolefinding"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/MSxQcml2aWxlZ2VFc2NhbGF0aW9uQXdzUm9sZUZpbmRpbmcsOTg0MzI/microsoft.graph.privilegeEscalationAwsRoleFinding
 ```
 

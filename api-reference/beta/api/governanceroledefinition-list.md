@@ -1,5 +1,5 @@
 ---
-title: "List governanceRoleDefinitions"
+title: "List governanceRoleDefinitions (deprecated)"
 description: "Get a collection of governanceRoleDefinitions on a resource."
 ms.localizationpriority: medium
 doc_type: apiPageType
@@ -9,7 +9,7 @@ ROBOTS: NOINDEX
 ms.date: 08/13/2024
 ---
 
-# List governanceRoleDefinitions
+# List governanceRoleDefinitions (deprecated)
 
 Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

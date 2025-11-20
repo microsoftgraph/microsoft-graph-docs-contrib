@@ -59,7 +59,7 @@ The following example shows a request.
   "name": "list_externallyaccessiblegcpstoragebucketfinding"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/gcp/findings/microsoft.graph.externallyAccessibleGcpStorageBucketFinding
 ```
 

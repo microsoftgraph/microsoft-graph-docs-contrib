@@ -71,7 +71,7 @@ The following example shows how to get a **fileStorageContainerTypeRegistration*
   "name": "get_filestoragecontainertyperegistration"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/storage/fileStorage/containerTypeRegistrations/de988700-d700-020e-0a00-0831f3042f00
 ```
 

@@ -384,38 +384,38 @@ items:
       href: ../../api/uxsetting-get.md
     - name: Update
       href: ../../api/uxsetting-update.md
-  - name: Mobility management policy
+  - name: Mobile app management policy
     items:
-    - name: Mobility management policy
-      href: ../../resources/mobilitymanagementpolicy.md
-    - name: Mobile device management policy
-      items:
-      - name: List
-        href: ../../api/mobiledevicemanagementpolicies-list.md
-      - name: Get
-        href: ../../api/mobiledevicemanagementpolicies-get.md
-      - name: Update
-        href: ../../api/mobiledevicemanagementpolicies-update.md
-      - name: List included groups
-        href: ../../api/mobiledevicemanagementpolicies-list-includedgroups.md
-      - name: Add group to policy
-        href: ../../api/mobiledevicemanagementpolicies-post-includedgroups.md
-      - name: Delete group from policy
-        href: ../../api/mobiledevicemanagementpolicies-delete-includedgroups.md
     - name: Mobile app management policy
-      items:
-      - name: List
-        href: ../../api/mobileappmanagementpolicies-list.md
-      - name: Get
-        href: ../../api/mobileappmanagementpolicies-get.md
-      - name: Update
-        href: ../../api/mobileappmanagementpolicies-update.md
-      - name: List included groups
-        href: ../../api/mobileappmanagementpolicies-list-includedgroups.md
-      - name: Add group to policy
-        href: ../../api/mobileappmanagementpolicies-post-includedgroups.md
-      - name: Delete group from policy
-        href: ../../api/mobileappmanagementpolicies-delete-includedgroups.md
+      href: ../../resources/mobileappmanagementpolicy.md
+    - name: List
+      href: ../../api/mobileappmanagementpolicies-list.md
+    - name: Get
+      href: ../../api/mobileappmanagementpolicies-get.md
+    - name: Update
+      href: ../../api/mobileappmanagementpolicies-update.md
+    - name: List included groups
+      href: ../../api/mobileappmanagementpolicies-list-includedgroups.md
+    - name: Add group to policy
+      href: ../../api/mobileappmanagementpolicies-post-includedgroups.md
+    - name: Delete group from policy
+      href: ../../api/mobileappmanagementpolicies-delete-includedgroups.md
+  - name: Mobile device management policy
+    items:
+    - name: Mobile device management policy
+      href: ../../resources/mobiledevicemanagementpolicy.md
+    - name: List
+      href: ../../api/mobiledevicemanagementpolicies-list.md
+    - name: Get
+      href: ../../api/mobiledevicemanagementpolicies-get.md
+    - name: Update
+      href: ../../api/mobiledevicemanagementpolicies-update.md
+    - name: List included groups
+      href: ../../api/mobiledevicemanagementpolicies-list-includedgroups.md
+    - name: Add group to policy
+      href: ../../api/mobiledevicemanagementpolicies-post-includedgroups.md
+    - name: Delete group from policy
+      href: ../../api/mobiledevicemanagementpolicies-delete-includedgroups.md
   - name: Mutual TLS OAuth configuration
     items:
     - name: Mutual TLS OAuth configuration
@@ -1129,6 +1129,12 @@ items:
         href: ../../api/accesspackagecatalog-list-accesspackageresources.md
       - name: Refresh
         href: ../../api/accesspackageresource-refresh.md
+    - name: Custom data provided resource
+      items:
+      - name: Custom data provided resource
+        href: ../../resources/customdataprovidedresource.md
+      - name: Create
+        href: ../../api/customdataprovidedresource-post-uploadsessions.md
     - name: Access package resource environment
       items:
       - name: Access package resource environment
@@ -1233,6 +1239,18 @@ items:
         href: ../../api/customaccesspackageworkflowextension-update.md
       - name: Delete
         href: ../../api/customaccesspackageworkflowextension-delete.md
+    - name: Custom data provided resource upload session
+      items:
+      - name: Custom data provided resource upload session
+        href: ../../resources/customdataprovidedresourceuploadsession.md
+      - name: Create
+        href: ../../api/customdataprovidedresource-post-uploadsessions.md
+      - name: Get
+        href: ../../api/customdataprovidedresourceuploadsession-get.md
+      - name: Update
+        href: ../../api/customdataprovidedresourceuploadsession-update.md
+      - name: uploadFile
+        href: ../../api/customdataprovidedresourceuploadsession-uploadfile.md
     - name: Complex types
       items:
       - name: Access package answer
@@ -1267,6 +1285,8 @@ items:
         href: ../../resources/accesspackagetextinputquestion.md
       - name: Access package user directory attribute store
         href: ../../resources/accesspackageuserdirectoryattributestore.md
+      - name: Access review data upload trigger callback data
+        href: ../../resources/accessreviewdatauploadtriggercallbackdata.md
       - name: Approval settings
         href: ../../resources/approvalsettings.md
       - name: Approval stage
@@ -1283,6 +1303,10 @@ items:
         href: ../../resources/crosscloudazureactivedirectorytenant.md
       - name: Custom callout extension
         href: ../../resources/customcalloutextension.md
+      - name: Custom data provided resource file
+        href: ../../resources/customdataprovidedresourcefile.md
+      - name: Custom data provided resource upload session request
+        href: ../../resources/customdataprovidedresourceuploadsessionrequest.md
       - name: Custom extension authentication configuration
         href: ../../resources/customextensionauthenticationconfiguration.md
       - name: Custom extension callback configuration
@@ -1864,6 +1888,14 @@ items:
           href: ../../api/privilegedaccessgroupeligibilityscheduleinstance-get.md
         - name: Filter by current user
           href: ../../api/privilegedaccessgroupeligibilityscheduleinstance-filterbycurrentuser.md
+      - name: Group resource
+        items:
+        - name: Group resource
+          href: ../../resources/groupresource.md
+        - name: List
+          href: ../../api/privilegedaccessgroup-list-resources.md
+        - name: Get
+          href: ../../api/groupresource-get.md
       - name: Policy
         items:
         - name: Policy
@@ -1916,7 +1948,7 @@ items:
           href: ../../api/approvalstep-get.md
         - name: Update
           href: ../../api/approvalstep-update.md
-  - name: Privileged Identity Management iteration 2
+  - name: Privileged Identity Management iteration 2 (deprecated)
     items:
     - name: Overview
       href: ../../resources/privilegedidentitymanagement-root.md
@@ -2032,6 +2064,8 @@ items:
         href: ../../resources/termsexpiration.md
 - name: Identity and sign-in
   items:
+  - name: Akamai web application firewall provider
+    href: ../../resources/akamaiwebapplicationfirewallprovider.md
   - name: App role assignment
     items:
     - name: App role assignment
@@ -2098,20 +2132,6 @@ items:
       href: ../../resources/ontokenissuancestartlistener.md
     - name: On user create start listener
       href: ../../resources/onusercreatestartlistener.md
-    - name: Cloud flare web application firewall provider
-      href: ../../resources/cloudflarewebapplicationfirewallprovider.md
-    - name: Akamai web application firewall provider
-      href: ../../resources/akamaiwebapplicationfirewallprovider.md
-    - name: Web application firewall verification model
-      items:
-      - name: Web application firewall verification model
-        href: ../../resources/webapplicationfirewallverificationmodel.md
-      - name: List
-        href: ../../api/riskpreventioncontainer-list-webapplicationfirewallverifications.md
-      - name: Get
-        href: ../../api/webapplicationfirewallverificationmodel-get.md
-      - name: Delete
-        href: ../../api/riskpreventioncontainer-delete-webapplicationfirewallverifications.md
   - name: Authentication methods
     items:
     - name: Overview
@@ -2578,6 +2598,8 @@ items:
       href: ../../api/certificatebasedauthconfiguration-post-certificatebasedauthconfiguration.md
     - name: Delete
       href: ../../api/certificatebasedauthconfiguration-delete.md
+  - name: Cloud flare web application firewall provider
+    href: ../../resources/cloudflarewebapplicationfirewallprovider.md
   - name: Conditional access
     items:
     - name: Conditional access policy
@@ -2763,6 +2785,56 @@ items:
         href: ../../api/policydeletableitem-delete.md
       - name: Restore deleted policy
         href: ../../api/crosstenantidentitysyncpolicypartner-restore.md
+  - name: Cross-tenant migration
+    items:
+    - name: Overview
+      href: ../../resources/crosstenant-migration-overview.md
+    - name: Cross-tenant migration job
+      items:
+      - name: Cross-tenant migration job
+        href: ../../resources/crosstenantmigrationjob.md
+      - name: List
+        href: ../../api/migrationsroot-list-crosstenantmigrationjobs.md
+      - name: Create
+        href: ../../api/migrationsroot-post-crosstenantmigrationjobs.md
+      - name: Get
+        href: ../../api/crosstenantmigrationjob-get.md
+      - name: Update
+        href: ../../api/crosstenantmigrationjob-update.md
+      - name: Delete
+        href: ../../api/migrationsroot-delete-crosstenantmigrationjobs.md
+      - name: cancel
+        href: ../../api/crosstenantmigrationjob-cancel.md
+      - name: validate
+        href: ../../api/crosstenantmigrationjob-validate.md
+      - name: List users
+        href: ../../api/crosstenantmigrationjob-list-users.md
+    - name: Cross-tenant migration task
+      items:
+      - name: Cross-tenant migration task
+        href: ../../resources/crosstenantmigrationtask.md
+      - name: List
+        href: ../../api/crosstenantmigrationjob-list-users.md
+      - name: Get
+        href: ../../api/crosstenantmigrationtask-get.md
+      - name: cancel
+        href: ../../api/crosstenantmigrationtask-cancel.md
+    - name: Migrations root
+      items:
+      - name: Migrations root
+        href: ../../resources/migrationsroot.md
+      - name: List crossTenantMigrationJobs
+        href: ../../api/migrationsroot-list-crosstenantmigrationjobs.md
+      - name: Create crossTenantMigrationJob
+        href: ../../api/migrationsroot-post-crosstenantmigrationjobs.md
+    - name: Complex types
+      items:
+      - name: Cross-tenant migration service status details
+        href: ../../resources/crosstenantmigrationservicestatusdetails.md
+      - name: Error
+        href: ../../resources/error.md
+      - name: Exchange online Cross-tenant migration settings
+        href: ../../resources/exchangeonlinecrosstenantmigrationsettings.md
   - name: Cross-tenant shared user profiles
     items:
     - name: Inbound shared user profile
@@ -3099,6 +3171,34 @@ items:
         href: ../../api/organizationalbrandinglocalization-update.md
       - name: Delete
         href: ../../api/organizationalbrandinglocalization-delete.md
+    - name: Organizational branding theme
+      items:
+      - name: Organizational branding theme
+        href: ../../resources/organizationalbrandingtheme.md
+      - name: List
+        href: ../../api/organizationalbranding-list-themes.md
+      - name: Create
+        href: ../../api/organizationalbranding-post-themes.md
+      - name: Get
+        href: ../../api/organizationalbrandingtheme-get.md
+      - name: Update
+        href: ../../api/organizationalbrandingtheme-update.md
+      - name: Delete
+        href: ../../api/organizationalbranding-delete-themes.md
+    - name: Organizational branding theme localization
+      items:
+      - name: Organizational branding theme localization
+        href: ../../resources/organizationalbrandingthemelocalization.md
+      - name: List
+        href: ../../api/organizationalbrandingtheme-list-localizations.md
+      - name: Create
+        href: ../../api/organizationalbrandingtheme-post-localizations.md
+      - name: Get
+        href: ../../api/organizationalbrandingthemelocalization-get.md
+      - name: Update
+        href: ../../api/organizationalbrandingthemelocalization-update.md
+      - name: Delete
+        href: ../../api/organizationalbrandingtheme-delete-localizations.md
   - name: Policies
     items:
     - name: Overview
@@ -3589,6 +3689,32 @@ items:
         href: ../../api/verifiedidprofile-update.md
       - name: Delete
         href: ../../api/identityverifiedidroot-delete-profiles.md
+  - name: Web application firewall provider
+    items:
+    - name: Web application firewall provider
+      href: ../../resources/webapplicationfirewallprovider.md
+    - name: List
+      href: ../../api/riskpreventioncontainer-list-webapplicationfirewallproviders.md
+    - name: Create
+      href: ../../api/riskpreventioncontainer-post-webapplicationfirewallproviders.md
+    - name: Get
+      href: ../../api/webapplicationfirewallprovider-get.md
+    - name: Update
+      href: ../../api/webapplicationfirewallprovider-update.md
+    - name: Delete
+      href: ../../api/riskpreventioncontainer-delete-webapplicationfirewallproviders.md
+    - name: Verify
+      href: ../../api/webapplicationfirewallprovider-verify.md
+  - name: Web application firewall verification model
+    items:
+    - name: Web application firewall verification model
+      href: ../../resources/webapplicationfirewallverificationmodel.md
+    - name: List
+      href: ../../api/riskpreventioncontainer-list-webapplicationfirewallverifications.md
+    - name: Get
+      href: ../../api/webapplicationfirewallverificationmodel-get.md
+    - name: Delete
+      href: ../../api/riskpreventioncontainer-delete-webapplicationfirewallverifications.md
 - name: Multicloud permissions management (deprecated)
   items:
   - name: Overview

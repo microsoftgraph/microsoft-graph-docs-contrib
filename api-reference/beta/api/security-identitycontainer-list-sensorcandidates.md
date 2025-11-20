@@ -66,7 +66,7 @@ The following example shows a request.
   "name": "list_sensorcandidate"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/security/identities/sensorCandidates
 ```
 
@@ -117,7 +117,8 @@ Content-Type: application/json
       "id": "c0633ebb-8cfb-f17a-0b9e-83aa661f53a3",
       "computerDnsName": "win-11.def.defensor.local",
       "senseClientVersion": "10.8780.27711.1000",
-      "lastSeenDateTime": "2024-10-29T19:55:10.9452778Z"
+      "lastSeenDateTime": "2024-10-29T19:55:10.9452778Z",
+      "domainName": "def.defensor.local"
     }
   ]
 }
