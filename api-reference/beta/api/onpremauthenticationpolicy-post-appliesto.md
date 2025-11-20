@@ -1,6 +1,6 @@
 ---
-title: "Add appliesTo"
-description: "Add appliesTo by posting to the appliesTo collection."
+title: "Assign onPremAuthenticationPolicy to directoryObject"
+description: "Assign onPremAuthenticationPolicy to a directoryObject."
 author: "maheshwaria"
 ms.date: 11/11/2025
 ms.localizationpriority: medium
@@ -8,13 +8,13 @@ ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
-# Add appliesTo
+# Assign onPremAuthenticationPolicy to directoryObject
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Add appliesTo by posting to the appliesTo collection.
+Assign an [onPremAuthenticationPolicy](../resources/onpremauthenticationpolicy.md) to a [directory object](../resources/directoryobject].
 
 ## Permissions
 
