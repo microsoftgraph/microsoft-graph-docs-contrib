@@ -65,7 +65,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/places/4bff9586-c9ee-401d-9d35-c476231a33e6/microsoft.graph.building/map/levels
+GET https://graph.microsoft.com/v1.0/places/4bff9586-c9ee-401d-9d35-c476231a33e6/microsoft.graph.building/map/levels
 ```
 
 
