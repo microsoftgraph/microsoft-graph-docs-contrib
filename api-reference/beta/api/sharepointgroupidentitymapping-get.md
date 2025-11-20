@@ -39,7 +39,7 @@ GET /solutions/sharePoint/migrations/crossOrganizationGroupMappings(sourceGroupO
 
 ## Optional query parameters
 
-This method supports the `$select` OData query parameter to help customize the response. You can use `$select` to choose specific properties such as `targetGroupIdentity`, `sourceGroupIdentity`, or `groupType`. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` OData query parameter to help customize the response. You can use `$select` to choose specific properties such as **targetGroupIdentity**, **sourceGroupIdentity**, or **groupType**. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -68,7 +68,6 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/beta/solutions/sharePoint/migrations/crossOrganizationGroupMappings(sourceGroupObjectId='aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa')
 ```
-
 
 ### Response
 
