@@ -57,7 +57,7 @@ You can subscribe to membership changes using the Microsoft Graph change notific
 | Shared channel membership changes | `/teams/{team-id}/channels/getAllMembers?notifyOnIndirectMembershipUpdate=true&suppressNotificationWhenSharedUnsharedWithTeam=true` |
 
 > [!IMPORTANT]
-> When a channel is shared or unshared, refresh the [List allMembers](/graph/api/channel-list-allmembers) API, and use the [List sharedWithChannelTeamInfo](graph/api/sharedwithchannelteaminfo-list) subscription resource and the [List allowedMembers](/graph/api/sharedwithchannelteaminfo-list-allowedmembers) APIs for efficient updates.
+> When a channel is shared or unshared, refresh the [List allMembers](/graph/api/channel-list-allmembers) API, and use the [List sharedWithChannelTeamInfo](/graph/api/sharedwithchannelteaminfo-list) subscription resource and the [List allowedMembers](/graph/api/sharedwithchannelteaminfo-list-allowedmembers) APIs for efficient updates.
 
 For more information, see [Get change notifications for channel membership](/graph/teams-changenotifications-channelmembership) and [Apps in shared and private channels](/microsoftteams/platform/build-apps-for-shared-private-channels)
 
