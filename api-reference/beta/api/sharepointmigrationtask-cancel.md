@@ -1,6 +1,6 @@
 ---
 title: "sharePointMigrationTask: cancel"
-description: "Cancels the sharepointMigrationTask that was previously created, given the task's ID, when invoked at the source organization"
+description: "Cancel a sharepointMigrationTask that was previously created, given the task's ID, when invoked at the source organization"
 author: "Joey-King"
 ms.date: 11/12/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Attempt to Cancel a sharepointMigrationTask that specifies the move of a specific object from a source organization to a target organization. Cancel the sharePointMigrationTask only before it starts and when reverting does not cause system instability.
+Cancel a [sharePointMigrationTask](../resources/sharepointmigrationtask.md) that moves a specific object from a source organization to a target organization. Only cancel the **sharePointMigrationTask** before it starts and when reverting doesn't cause system instability.
 
 ## Permissions
 
