@@ -12,6 +12,8 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Delete a [unitMap](../resources/unitmap.md) object.
 
 ## Permissions

@@ -12,6 +12,8 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Update the properties of an existing [unitMap](../resources/unitmap.md) object in IMDF format on a specified floor, or create one if it doesn't exist.
 
 ## Permissions

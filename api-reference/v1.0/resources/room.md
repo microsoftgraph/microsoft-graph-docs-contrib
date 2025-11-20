@@ -17,11 +17,7 @@ Represents a room in a tenant.
 In Exchange Online, each room is associated with a room mailbox. Derived from [place](place.md).
 
 ## Methods
-
-| Method                              | Return Type                  | Description |
-|:------------------------------------|:-----------------------------|:--------|
-| [List places](../api/place-list.md) | A collection of the requested, derived type of [place](place.md) | Get a collection of the specified type of **place** object defined in the tenant. For example, you can get all the rooms, all the room lists, or the rooms in a specific room list in the tenant. |
-| [Get place](../api/place-get.md)    | The requested, derived type of [place](place.md)            | Get the properties and relationships of the specified **place** object, such as a room. |
+For the list of supported methods, see [place](./place.md).
 
 ## Properties
 

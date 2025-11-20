@@ -16,10 +16,8 @@ Represents a floor within a [building](./building.md). A [building](./building.m
 
 Inherits from [place](../resources/place.md).
 
-
 ## Methods
 For the list of supported methods, see [place](./place.md).
-
 
 ## Properties
 |Property|Type|Description|
