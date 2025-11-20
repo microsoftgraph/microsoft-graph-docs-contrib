@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Gets the sharepointMigrationTask that was previously created for a group, given the source group mail nickname. The returned sharePointMigrationTask includes the source and target site URLs, migration status, optional timestamps (startedDateTime and finishedDateTime), and error details about issues during execution.
+Get a [sharePointMigrationTask](../resources/sharepointmigrationtask.md) that was previously created for a group, using the source group mail nickname. The returned **sharePointMigrationTask** object includes the source and target site URLs, migration status, optional timestamps (**startedDateTime** and **finishedDateTime**), and error details about issues during processing.
 
 ## Permissions
 
@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /solutions/sharePoint/migrations/crossOrganizationMigrationTasks/getBySourceGroupMailNickname(sourcegroupmailnickname={sourcegroupmailnickname})
+GET /solutions/sharePoint/migrations/crossOrganizationMigrationTasks/getBySourceGroupMailNickname(sourceGroupMailNickname={sourceGroupMailNickname})
 ```
 
 ## Function parameters
@@ -42,7 +42,7 @@ In the request URL, provide the following query parameters with values.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|sourceGroupMailNickname|String|Source group mail nickname or alias|
+|sourceGroupMailNickname|String|Source group mail nickname or alias.|
 
 ## Request headers
 
@@ -96,7 +96,7 @@ Content-Type: application/json
     "targetOrganizationId": "3ef4e46d-13a3-4895-b6ea-a74a20hu728h",
     "targetOrganizationHost": "https://fabrico-my.sharepoint.com",
     "sourceSiteUrl": "https://contoso.sharepoint.com/sites/IT",
-    "targetSiteUrl": "https://fabrico.sharepoint.com/sites/IT",
+    "targetSiteUrl": "https://fabrico.sharepoint.com/sites/IT"
   }
 }
 ```
