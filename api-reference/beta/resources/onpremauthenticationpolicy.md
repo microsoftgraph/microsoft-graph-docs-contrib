@@ -6,6 +6,7 @@ ms.date: 09/10/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
+toc.title: On-prem authentication policy
 ---
 
 # onPremAuthenticationPolicy resource type
@@ -14,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a policy that controls how authentication requests from on-premises environments are managed in Microsoft Graph. This resource allows administrators to define and enforce rules for on-premises authentication scenarios.
+Represents a policy that controls how authentication requests from on-premises environments are managed. This resource allows administrators to define and enforce rules for on-premises authentication scenarios.
 
 Inherits from [stsPolicy](../resources/stspolicy.md).
 
