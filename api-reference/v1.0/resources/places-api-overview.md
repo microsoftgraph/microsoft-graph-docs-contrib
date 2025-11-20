@@ -77,13 +77,6 @@ The following table lists some of the common uses for the Places API.
 | Create and manage a **fixtureMap**  | [fixtureMap](../resources/fixturemap.md) | [fixtureMap methods](../resources/fixturemap.md#methods) |
 | Create and manage a **sectionMap**  | [sectionMap](../resources/sectionmap.md) | [sectionMap methods](../resources/sectionmap.md#methods) |
 
-<!-- ## Comparing Places APIs with findRooms and findRoomLists 
-
-The [findRooms](../api/user-findrooms.md) and [findRoomLists](../api/user-findroomlists.md) functions support similar lookups for rooms and room lists in a tenant. The following table compares the places API and these functions.
-
-> [!NOTE]
-> The **findRooms** and **findRoomLists** functions are deprecated. -->
- 
 |Places API |findRooms and findRoomLists functions (deprecated) |
 |:--|:--|
 |Gets all the rooms or room lists in a tenant, and all the rooms in a room list. |Gets all the rooms or room lists in a tenant, and all the rooms in a room list.
