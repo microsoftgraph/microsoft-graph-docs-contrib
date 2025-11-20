@@ -227,8 +227,6 @@ HTTP/1.1 204 No Content
 
 The following request shows an example updating an application's **signInAudience** from single-tenant (`AzureADMyOrg`) to multitenant (`AzureADMultipleOrgs`) and at the same time setting **signInAudienceRestrictions** so that the app can only be used in two allowed tenants (and the tenant where the app is registered).
 
-# [HTTP](#tab/http)
-
 <!-- {
   "blockType": "request",
   "name": "update_application_signinaudiencerestrictions"
@@ -251,8 +249,6 @@ Content-type: application/json
 }
 ```
 
----
-
 #### Response
 
 <!-- {
@@ -267,8 +263,6 @@ HTTP/1.1 204 No Content
 #### Request
 
 The following request shows an example updating an application's **signInAudience** to single-tenant (`AzureADMyOrg`) and at the same time removing  **signInAudienceRestrictions**. It's recommended to do this at the same time to avoid any period of time where the application is multitenant and is *not* limited, which the organization's policies may require.
-
-# [HTTP](#tab/http)
 
 <!-- {
   "blockType": "request",
@@ -286,8 +280,6 @@ Content-type: application/json
   }
 }
 ```
-
----
 
 #### Response
 

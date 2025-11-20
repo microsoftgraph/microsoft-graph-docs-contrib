@@ -277,11 +277,10 @@ Content-type: application/json
 
 ### Example 3: Create a new multitenant application limited to only some tenants
 
-The following example creates a multitenant application that can only be used in two allowed Microsoft Entra tenants (and the tenant where the app is registered).
-
 #### Request
 
-# [HTTP](#tab/http)
+The following example creates a multitenant application that can only be used in two allowed Microsoft Entra tenants (and the tenant where the app is registered).
+
 <!-- {
   "blockType": "request",
   "name": "create_application_with_signinaudiencerestrictions"
@@ -303,8 +302,6 @@ Content-type: application/json
   }
 }
 ```
-
----
 
 #### Response
 
