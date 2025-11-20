@@ -14,12 +14,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The base type for values used in an [application](application.md) resource's **signInAudienceRestrictions** property. This abstract type has two derived types that may be used:
+The base type for values used in an [application](application.md) resource's **signInAudienceRestrictions** property. This abstract type has two derived types that can be used:
 
-- [unrestrictedAudience](unrestrictedaudience.md): Used to indicate that there are no restrictions to the **signInAudience** value. Single-tenant applications (`AzureADMyOrg`) can only be used in the tenant where the app is registered, and multi-tenant applications (`AzureADMultipleOrgs` and `AzureADandPersonalMicrosoftAccount`) can be used in *any* Entra tenant.
-- [allowedTenantsAudience](allowedtenantsaudience.md): For multi-tenant applications with **signInAudience** set to `AzureADMultipleOrgs`, used to indicate that the  application (representing a client app or an API) can only be used in the given list of Entra tenants.
+- [unrestrictedAudience](unrestrictedaudience.md): Used to indicate that there are no restrictions to the **signInAudience** value. Single-tenant applications (`AzureADMyOrg`) can only be used in the tenant where the app is registered, and multitenant applications (`AzureADMultipleOrgs` and `AzureADandPersonalMicrosoftAccount`) can be used in *any* Microsoft Entra tenant.
+- [allowedTenantsAudience](allowedtenantsaudience.md): For multitenant applications with **signInAudience** set to `AzureADMultipleOrgs`, used to indicate that the  application (representing a client app or an API) can only be used in the given list of Microsoft Entra tenants.
 
-This is an abstract type.
+This type is an abstract type.
 
 ## Properties
 
