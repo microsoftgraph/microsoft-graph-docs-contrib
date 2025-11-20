@@ -42,6 +42,10 @@ The [driveItem: restore](/graph/api/driveitem-restore) method was expanded to en
 - Added the **domainName** property to the [sensorCandidate](/graph/api/resources/security-sensorcandidate?view=graph-rest-beta&preserve-view=true) resource.
 - Added the **serviceStatus** property to the [sensor](/graph/api/resources/security-sensor?view=graph-rest-beta&preserve-view=true) resource.
 
+### Teamwork and communications | Calls and online meetings
+
+Use resource-specific consent (RSC) permissions for virtual events. For more information, see [Virtual events town hall API use cases](/graph/cloud-communications-virtual-events-townhall-usecases#resource-specific-consent-rsc-for-virtual-events) and [Virtual events webinar API use cases](/graph/cloud-communications-virtual-events-webinar-usecases#resource-specific-consent-rsc-for-virtual-events).
+
 ## November 2025: New in preview only
 
 ### Agents
@@ -120,6 +124,11 @@ Introducing the Microsoft MCP Server for Enterprise - the official MCP server fo
 ### Teamwork and communications | Calls and online meetings
 - Added the **sensitivityLabelAssignment** property to the [onlineMeeting](/graph/api/resources/onlineMeeting?view=graph-rest-beta), which represents the meeting’s sensitivity level. This ID corresponds to the identifier configured in the Microsoft Purview portal.
 - Use the `Accept-Language` header with the [Create virtualEventWebinar](/graph/api/virtualeventsroot-post-webinars?view=graph-rest-beta&preserve-view=true) and [Create virtualEventTownhall](/graph/api/virtualeventsroot-post-townhalls?view=graph-rest-beta&preserve-view=true) methods to specify an acceptable human language for the response.
+
+- Use the **expiryDateTime** property on [onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true) and [virtualEventSession](/graph/api/resources/virtualeventsession?view=graph-rest-beta&preserve-view=true) to indicate the date and time when the meeting resource expires.
+- Use the **meetingSpokenLanguageTag** property on [onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true) and [virtualEventSession](/graph/api/resources/virtualeventsession?view=graph-rest-beta&preserve-view=true) to specify the spoken language used during the meeting for recording and transcription purposes.
+- Use the `Accept-Language` header with the [Create virtualEventWebinar](/graph/api/virtualeventsroot-post-webinars?view=graph-rest-beta&preserve-view=true) and [Create virtualEventTownhall](/graph/api/virtualeventsroot-post-townhalls?view=graph-rest-beta&preserve-view=true) methods to specify an acceptable human language for the response.
+
 
 ## October 2025: New and generally available
 

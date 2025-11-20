@@ -106,6 +106,7 @@ The last column indicates whether updating this property takes effect for an in-
 | isEndToEndEncryptionEnabled | Boolean                                                    | Indicates whether end-to-end encryption (E2EE) is enabled for the meeting.          | No                                  |
 | isEntryExitAnnounced        | Boolean                                                    | Whether or not to announce when callers join or leave.                              | Yes                                 |
 | lobbyBypassSettings         | [lobbyBypassSettings](../resources/lobbybypasssettings.md) | Specifies which participants can bypass the meeting lobby.                          | Yes                                 |
+| meetingSpokenLanguageTag | String | Specifies the spoken language used during the meeting for recording and transcription purposes. |  No                                  |
 | participants                | [meetingParticipants](../resources/meetingparticipants.md) | The participants associated with the online meeting. Only attendees can be updated. | No                                  |
 | recordAutomatically         | Boolean                                                    | Indicates whether to record the meeting automatically.                              | No                                  |
 |sensitivityLabelAssignment|[onlineMeetingSensitivityLabelAssignment](../resources/onlinemeetingsensitivitylabelassignment.md)|Specifies the sensitivity label applied to the Teams meeting.| No                                  |

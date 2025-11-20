@@ -288,6 +288,7 @@ Content-Length: 1574
   },
   "creationDateTime": "2018-05-30T00:12:19.0726086Z",
   "endDateTime": "2018-05-30T01:00:00Z",
+  "expiryDateTime": "2025-04-12T23:57:47.6388574Z",
   "id": "112f7296-5fa4-42ca-bae8-6a692b15d4b8_19:cbee7c1c860e465f8258e3cebf7bee0d@thread.skype",
   "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3a:meeting_NTg0NmQ3NTctZDVkZDZk@thread.v2/0?context=%7b%22Tid%22%3a%aa674c-875-432d-bd41-3720e0a%22%2c%22Oid%22%3a%2f7296-5fa4-42ca-bae8-6a4b8%22%7d",
   "participants": {
@@ -332,6 +333,7 @@ Content-Length: 1574
     "joinMeetingId": "1234567890",
     "passcode": null
   },
+  "meetingSpokenLanguageTag": "en-US",
   "isEntryExitAnnounced": true,
   "allowedPresenters": "everyone",
   "allowMeetingChat": "enabled",
@@ -380,6 +382,7 @@ The following example shows the response.
     "creationDateTime": "2020-09-29T22:35:33.1594516Z",
     "startDateTime": "2020-09-29T22:35:31.389759Z",
     "endDateTime": "2020-09-29T23:35:31.389759Z",
+    "expiryDateTime": "2025-04-12T23:57:47.6388574Z",
     "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_MGQ4YxODYzMmY2%40thread.v2/0?context=%7b%22Tid%22%3a%22c581-5130-43e9-88f3-fc82cde37%22%2c%22Oid%22%3a%22674c-81d9-4adb-bb2-8f62e4622%22%7d",
     "subject": null,
     "autoAdmittedUsers": "EveryoneInCompany",
@@ -416,7 +419,8 @@ The following example shows the response.
         "isPasscodeRequired": false,
         "joinMeetingId": "1234567890",
         "passcode": null
-    }
+    },
+    "meetingSpokenLanguageTag": "en-US"
 }
 ```
 

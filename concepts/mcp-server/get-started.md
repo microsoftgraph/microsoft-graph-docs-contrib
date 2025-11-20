@@ -1,17 +1,17 @@
 ---
-title: Get Started With Microsoft Graph MCP Server
-description: "Microsoft Graph MCP Server: Learn how to install, configure, and run the MCP Server in your MCP clients to query Microsoft Graph using natural language."
+title: Get Started With the Microsoft MCP Server for Enterprise
+description: "Microsoft MCP Server for Enterprise: Learn how to install, configure, and run the MCP Server in your MCP clients to query Microsoft Graph using natural language."
 author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: Licantrop0
 ms.subservice: enterprise-mcp-server
 ms.topic: get-started
-ms.date: 11/17/2025
+ms.date: 11/18/2025
 
 #customer intent: As a developer, I want to configure my AI client to connect to the Microsoft MCP Server so that I can integrate enterprise data into my applications.
 ---
 
-# Get started with Microsoft Graph MCP Server
+# Get started with the Microsoft MCP Server for Enterprise
 
 To start using the Microsoft MCP Server for Enterprise, you must enable it in your tenant. This process currently provisions both the MCP Server and Visual Studio Code. After provisioning, you can configure your MCP client to connect to the MCP Server.
 
@@ -174,9 +174,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='e8c77dc2-69b3-43f4
 # [Microsoft Entra PowerShell](#tab/entra-powershell)
 
 ```powershell
-$mcpServer = Get-EntraServicePrincipal -Filter "displayName eq 'Microsoft MCP Server for Enterprise'"
-
-$mcpServer.Oauth2PermissionScopes | Select-Object Value
+(Get-EntraBetaServicePrincipal -Property "PublishedPermissionScopes" -Filter "AppId eq 'e8c77dc2-69b3-43f4-bc51-3213c9d915b4'").PublishedPermissionScopes | Where-Object { $_.IsEnabled -eq $true -and $_.AdditionalProperties["isPrivate"] -ne $true } | Select-Object Value, AdminConsentDisplayName | Sort-Object
 ```
 
 # [Admin center](#tab/portal)
