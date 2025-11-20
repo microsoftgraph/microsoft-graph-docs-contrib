@@ -20,7 +20,7 @@ Inherits from [baseMapFeature](../resources/basemapfeature.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/buildingmap-list-footprints.md)|[footprintMap](../resources/footprintmap.md) collection|Get a list of the footprintMap objects and their properties.|
+|[List](../api/buildingmap-list-footprints.md)|[footprintMap](./footprintmap.md) collection|Get a list of [footprintMap](../resources/footprintmap.md) objects for [building](../resources/building.md) footprints and their properties.|
 
 ## Properties
 |Property|Type|Description|

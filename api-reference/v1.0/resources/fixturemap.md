@@ -20,9 +20,9 @@ Inherits from [baseMapFeature](../resources/basemapfeature.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/levelmap-list-fixtures.md)|[fixtureMap](../resources/fixturemap.md) collection|Get a list of the fixtureMap objects and their properties.|
-|[Update](../api/fixturemap-update.md)|[fixtureMap](../resources/fixturemap.md)|Update the properties of a fixtureMap object.|
-|[Delete](../api/levelmap-delete-fixtures.md)|None|Delete a fixtureMap object.|
+|[List](../api/levelmap-list-fixtures.md)|[fixtureMap](./fixturemap.md) collection|Get a list of the [fixtureMap](../resources/fixturemap.md) objects and their properties.|
+|[Update](../api/fixturemap-update.md)|[fixtureMap](./fixturemap.md)|Update the properties of an existing [fixtureMap](../resources/fixturemap.md) object in IMDF format on a specified floor, or create one if it doesn't exist.|
+|[Delete](../api/fixturemap-delete.md)|None|Delete a [fixture](../resources/fixturemap.md) on a specified floor.|
 
 ## Properties
 |Property|Type|Description|

@@ -20,9 +20,9 @@ Inherits from [baseMapFeature](../resources/basemapfeature.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/levelmap-list-units.md)|[unitMap](../resources/unitmap.md) collection|Get a list of the unitMap objects and their properties.|
-|[Update](../api/unitmap-update.md)|[unitMap](../resources/unitmap.md)|Update the properties of an unitMap object.|
-|[Delete](../api/unitmap-delete.md)|None|Delete an unitMap object.|
+|[List](../api/levelmap-list-units.md)|[unitMap](./unitmap.md) collection|Get a list of the [unitMap](../resources/unitmap.md) objects and their properties.|
+|[Update](../api/unitmap-update.md)|[unitMap](../resources/unitmap.md)|Update the properties of an existing [unitMap](../resources/unitmap.md) object in IMDF format on a specified floor, or create one if it doesn't exist.|
+|[Delete](../api/unitmap-delete.md)|None|Delete a [unitMap](../resources/unitmap.md) object.|
 
 ## Properties
 |Property|Type|Description|
