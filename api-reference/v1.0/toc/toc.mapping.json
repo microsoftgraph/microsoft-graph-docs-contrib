@@ -1004,7 +1004,11 @@
             "appRoleAssignment",
             "dataPolicyOperation",
             "oAuth2PermissionGrant",
-            "certificateBasedAuthConfiguration"
+            "certificateBasedAuthConfiguration",
+            "webApplicationFirewallProvider",
+            "cloudFlareWebApplicationFirewallProvider",
+            "akamaiWebApplicationFirewallProvider",
+            "webApplicationFirewallVerificationModel"
           ],
           "childNodes": [
             {
@@ -1016,6 +1020,7 @@
                 "onAttributeCollectionSubmitListener",
                 "onAuthenticationMethodLoadStartListener",
                 "onEmailOtpSendListener",
+                "onFraudProtectionLoadStartListener",
                 "onInteractiveAuthFlowStartListener",
                 "onTokenIssuanceStartListener",
                 "onUserCreateStartListener"
@@ -1110,7 +1115,10 @@
                 "riskyUser",
                 "riskyUserHistoryItem",
                 "servicePrincipalRiskDetection",
-                "riskyServicePrincipal"
+                "riskyServicePrincipal",
+                "fraudProtectionProvider",
+                "arkoseFraudProtectionProvider",
+                "humanSecurityFraudProtectionProvider"
               ]
             },
             {
@@ -1517,6 +1525,7 @@
             "microsoft.graph.security.incident"
           ],
           "complexTypes": [
+            "microsoft.graph.security.aiAgentEvidence",
             "microsoft.graph.security.securityGroupEvidence",
             "microsoft.graph.security.teamsMessageEvidence",
             "microsoft.graph.security.userAccount"
@@ -1630,14 +1639,19 @@
           "name": "Identities",
           "resources": [
             "microsoft.graph.security.healthIssue",
-            "microsoft.graph.security.sensor"
+            "microsoft.graph.security.sensor",
+            "microsoft.graph.security.sensorCandidate",
+            "microsoft.graph.security.sensorCandidateActivationConfiguration",
+            "microsoft.graph.security.identityAccounts"
           ],
           "complexTypes": [
             "microsoft.graph.security.deploymentAccessKeyType",
             "microsoft.graph.security.identityContainer",
             "microsoft.graph.security.networkAdapter",
             "microsoft.graph.security.sensorDeploymentPackage",
-            "microsoft.graph.security.sensorSettings"
+            "microsoft.graph.security.sensorSettings",
+            "microsoft.graph.security.invokeActionResult",
+            "microsoft.graph.security.account"
           ]
         },
         {

@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /admin/serviceAnnouncement/issues/{serviceHealthIssueId}
 ```
 
@@ -61,7 +61,7 @@ If successful, this method returns a `200 OK` response code and a [serviceHealth
   "name": "get_servicehealthissue"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/admin/serviceAnnouncement/issues/MO226784
 ```
 
@@ -103,7 +103,7 @@ GET https://graph.microsoft.com/beta/admin/serviceAnnouncement/issues/MO226784
   "@odata.type": "microsoft.graph.serviceHealthIssue"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

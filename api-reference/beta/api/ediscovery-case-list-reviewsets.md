@@ -35,7 +35,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 
-``` http
+```http
 GET /compliance/ediscovery/cases/{caseId}/reviewSets
 ```
 
@@ -69,7 +69,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 }
 -->
 
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/{caseId}/reviewSets
 ```
 
@@ -113,7 +113,7 @@ GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/{caseId}/review
 }
 -->
 
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

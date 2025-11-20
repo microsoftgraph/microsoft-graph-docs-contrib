@@ -1,5 +1,5 @@
 ---
-title: "Update governanceRoleAssignmentRequests"
+title: "Update governanceRoleAssignmentRequests (deprecated)"
 description: "Enable administrators to update their decisions (`AdminApproved` or `AdminDenied`) on governanceRoleAssignmentRequests that are in status of `PendingAdminDecision`."
 ms.localizationpriority: medium
 doc_type: apiPageType
@@ -9,7 +9,7 @@ ROBOTS: NOINDEX
 ms.date: 08/02/2024
 ---
 
-# Update governanceRoleAssignmentRequests
+# Update governanceRoleAssignmentRequests (deprecated)
 
 Namespace: microsoft.graph
 

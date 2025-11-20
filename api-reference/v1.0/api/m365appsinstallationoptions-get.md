@@ -31,7 +31,7 @@ When calling on behalf of a user, the user needs to belong to the following [Mic
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /admin/microsoft365Apps/installationOptions
 ```
 
@@ -60,7 +60,7 @@ The following example shows a request.
   "name": "get_m365AppsInstallationOptions"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/admin/microsoft365Apps/installationOptions
 ```
 
@@ -99,7 +99,7 @@ The following example shows a response.
   "@odata.type": "microsoft.graph.m365AppsInstallationOptions"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

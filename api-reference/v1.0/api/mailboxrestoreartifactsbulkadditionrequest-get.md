@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /solutions/backupRestore/exchangeRestoreSessions/{exchangeRestoreSessionId}/mailboxRestoreArtifactsBulkAdditionRequests/{mailboxRestoreArtifactsBulkAdditionRequestId}
 ```
 
@@ -69,7 +69,7 @@ The following example shows a request.
   "name": "get_mailboxrestoreartifactsbulkadditionrequest"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/solutions/backupRestore/exchangeRestoreSessions/dc3a3fc8-eb4b-45eb-9ca6-4955696344b8/mailboxRestoreArtifactsBulkAdditionRequests/b4318e3a-3eae-4ce5-87f3-bad51e1527c4
 ```
 
@@ -112,7 +112,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.mailboxRestoreArtifactsBulkAdditionRequest"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
