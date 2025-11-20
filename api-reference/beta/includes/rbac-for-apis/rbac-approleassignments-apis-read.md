@@ -17,3 +17,4 @@ ms.topic: include
 > - User Administrator
 > - Application Administrator
 > - Cloud Application Administrator
+> - Agent ID Administrator - For agent users only

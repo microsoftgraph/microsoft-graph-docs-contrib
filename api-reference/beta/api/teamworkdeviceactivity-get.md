@@ -62,7 +62,7 @@ If successful, this method returns a `200 OK` response code and a [teamworkDevic
   "name": "get_teamworkdeviceactivity"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/teamwork/devices/1ae3fe60-fe60-1ae3-60fe-e31a60fee31a/activity
 ```
 

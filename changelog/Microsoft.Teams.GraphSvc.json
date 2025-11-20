@@ -1,6 +1,24 @@
 {
   "changelog": [
     {
+      "ChangeList":  [
+        {
+          "Id": "b3f8a7e2-4d6c-4c9a-9f3e-8a2d7c1f5b91",
+          "ApiChange": "Method",
+          "ChangedApiName": "removeAllAccessForUser",
+          "ChangeType": "Addition",
+          "Description": "Added the [removeAllAccessForUser](https://learn.microsoft.com/en-us/graph/api/chat-removeallaccessforuser?view=graph-rest-v1.0) method to the [chat](https://learn.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-v1.0) resource.",
+          "Target": "chat"
+        }
+      ],
+       "Id": "b3f8a7e2-4d6c-4c9a-9f3e-8a2d7c1f5b91",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-11-19T19:29:18.2759291Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+    },
+    {
       "ChangeList": [
         {
           "Id": "dad933e5-3a75-415d-9f4c-90f57bc5a12b",

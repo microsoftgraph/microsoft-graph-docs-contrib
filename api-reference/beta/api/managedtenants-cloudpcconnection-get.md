@@ -59,7 +59,7 @@ If successful, this method returns a `200 OK` response code and a [cloudPcConnec
   "name": "get_cloudpcconnection"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/cloudPcConnections/86789ee0-e31d-4bee-98e6-6f310bd327bb
 ```
 

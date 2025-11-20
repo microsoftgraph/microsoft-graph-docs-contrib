@@ -55,7 +55,7 @@ The following example shows a request.
   "name": "list_ediscoverynoncustodialdatasource_and_properties"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/security/cases/ediscoveryCases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/noncustodialdatasources?$expand=dataSource
 ```
 

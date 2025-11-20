@@ -70,7 +70,7 @@ The following example shows a request.
   "name": "list_myrole"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/myRoles
 ```
 

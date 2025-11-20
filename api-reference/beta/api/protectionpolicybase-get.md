@@ -66,7 +66,7 @@ The following example shows a request.
   "name": "protectionpolicybase_get"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/solutions/backupRestore/ProtectionPolicies/845457dc-4bb2-4815-bef3-8628ebd1952e
 Authorization: Bearer <Access-Token>
 ```
@@ -171,7 +171,7 @@ The following example shows a request.
   "name": "protectionpolicybase_get_selectAttributes"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/solutions/backupRestore/ProtectionPolicies/845457dc-4bb2-4815-bef3-8628ebd1952e?$select=id,displayName,status,protectionPolicyArtifactCount
 Authorization: Bearer <Access-Token>
 ```

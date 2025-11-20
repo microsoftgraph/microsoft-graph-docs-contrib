@@ -60,7 +60,7 @@ The following example shows a request.
   "name": "list_detectionrule"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/security/rules/detectionRules?$top=3
 ```
 
