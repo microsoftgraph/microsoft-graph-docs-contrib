@@ -3670,6 +3670,7 @@ Possible values for user account types (group membership), per Windows definitio
 |sharedWithObject|
 |invalid|
 |unknownFutureValue|
+
 ### protectionSource values 
 
 |Member|

@@ -4945,6 +4945,12 @@
       "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2025-11-07T23:45:13.6390792Z",
+      "WorkloadArea": "Files",
+      "SubArea": ""
+    },
+    {
+        "ChangeList": [
+        {  
           "Id": "93afe618-17e6-47bb-af98-de2281461ad2",
           "ApiChange": "Enumeration",
           "ChangedApiName": "informationBarrierMode",
