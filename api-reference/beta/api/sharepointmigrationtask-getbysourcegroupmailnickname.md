@@ -69,7 +69,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/solutions/sharePoint/migrations/crossOrganizationMigrationTasks/getBySourceGroupMailNickname(sourcegroupmailnickname=@nickname)?@nickname='contoso'
+GET https://graph.microsoft.com/beta/solutions/sharePoint/migrations/crossOrganizationMigrationTasks/getBySourceGroupMailNickname(sourceGroupMailNickname=@nickname)?@nickname='contoso'
 ```
 
 ### Response
