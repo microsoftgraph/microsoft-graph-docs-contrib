@@ -42,6 +42,10 @@ The [driveItem: restore](/graph/api/driveitem-restore) method was expanded to en
 - Added the **domainName** property to the [sensorCandidate](/graph/api/resources/security-sensorcandidate?view=graph-rest-beta&preserve-view=true) resource.
 - Added the **serviceStatus** property to the [sensor](/graph/api/resources/security-sensor?view=graph-rest-beta&preserve-view=true) resource.
 
+### Teamwork and communications | Calls and online meetings
+
+Use resource-specific consent (RSC) permissions for virtual events. For more information, see [Virtual events town hall API use cases](/graph/cloud-communications-virtual-events-townhall-usecases#resource-specific-consent-rsc-for-virtual-events) and [Virtual events webinar API use cases](/graph/cloud-communications-virtual-events-webinar-usecases#resource-specific-consent-rsc-for-virtual-events).
+
 ## November 2025: New in preview only
 
 ### Agents
