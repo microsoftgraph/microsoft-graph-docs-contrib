@@ -885,10 +885,10 @@ items:
       href: ../../api/channel-update-members.md
     - name: Remove channel member
       href: ../../api/channel-delete-members.md
-    - name: Complete migration
-      href: ../../api/channel-completemigration.md
     - name: Start migration
       href: ../../api/channel-startmigration.md
+    - name: Complete migration
+      href: ../../api/channel-completemigration.md
     - name: List tabs in channel
       href: ../../api/channel-list-tabs.md
     - name: Add tab to channel
