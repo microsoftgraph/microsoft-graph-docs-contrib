@@ -1,6 +1,6 @@
 ---
-title: "Create or Update sharePointMigrationTask"
-description: "Create or Update the properties of a sharePointMigrationTask object."
+title: "Create or update sharePointMigrationTask"
+description: "Create or update the properties of a sharePointMigrationTask object."
 author: "Joey-King"
 ms.date: 11/12/2025
 ms.localizationpriority: medium
@@ -8,16 +8,17 @@ ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
 
-# Create or Update sharePointMigrationTask
+# Create or update sharePointMigrationTask
 
-Create or update a sharePointMigrationTask to migrate a resource from the source organization to the target organization, using the crossOrganizationMigrationParameters. The resource can be a User, a Group, or a Site.
-NOTE: Per the OData standard, the whole sharePointMigrationTask structure needs to be specified in the request body even though only the crossOrganizationMigrationParameters are used to instantiate the task. For required properties like ID and status, empty or default values can be used - they're ignored during initial task creation.
+Create or update a [sharePointMigrationTask](../resources/sharepointmigrationtask.md) to migrate a resource from the source organization to the target organization, using the crossOrganizationMigrationParameters. The resource can be a user, a group, or a site.
 
-When an existing sharePointMigrationTask is retrieved, it may contain not only the specifics of the source and target organizations and resources, but also the status of the migration and errors encountered during the migration operation.
+>**Note:** Based on the OData standard, the entire **sharePointMigrationTask** structure must be included in the request body, although only **crossOrganizationMigrationParameters** are used to instantiate the task. For required properties such as **id** and **status**, empty or default values can be provided because they're ignored during initial task creation.
 
-The API calls happen on source site, and only add list items on my site root web, for example, contoso-my.sharepoint.com. Then it triggers a multi-geo site move job in backend, enqueue, and orchestrate a handful of tenant workflow jobs like backup, restore, and cleanup backed by TJ infra.
+When an existing **sharePointMigrationTask** is retrieved, it might contain not only the specifics of the source and target organizations and resources, but also the status of the migration and errors encountered during the migration operation.
 
-The OData type of `sharePointResourceMigrationParameters` differentiates user migration from site migration, instead of using different subpaths. If this migration task is a user's OneDrive migration, specify `sharePointUserMigrationParameters`. If this migration task is a regular SharePoint site migration, specify `sharePointSiteMigrationParameters`. If this migration task is a group-connected site migration, specify `sharePointGroupMigrationParameters`.
+The API calls occur on the source site and only add list items to the my site root web, for example, `contoso-my.sharepoint.com`. Then, it triggers a multi-geo site move job in the backend to enqueue and orchestrate several tenant workflow jobs, such as backup, restore, and cleanup, supported by TJ infrastructure.
+
+The OData type of **sharePointResourceMigrationParameters** differentiates user migration from site migration, rather than using different subpaths. For a user's OneDrive migration, specify **sharePointUserMigrationParameters**. If this migration task is a regular SharePoint site migration, specify **sharePointSiteMigrationParameters**. If this migration task is a group-connected site migration, specify **sharePointGroupMigrationParameters**.
 
 ## Permissions
 
@@ -53,7 +54,7 @@ POST /solutions/sharePoint/migrations/crossOrganizationMigrationTasks
 
 |Property|Type|Description|
 |:---|:---|:---|
-|parameters|[sharePointMigrationTaskParameters](../resources/sharepointmigrationtaskparameters.md)|Encapsulates the parameters necessary to migrate a specific source resource|
+|parameters|[sharePointMigrationTaskParameters](../resources/sharepointmigrationtaskparameters.md)|Encapsulates the parameters necessary to migrate a specific source resource.|
 
 ## Response
 
