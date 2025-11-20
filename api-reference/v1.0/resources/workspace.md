@@ -12,7 +12,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents a collection of desks. A [workspace](./workspace.md) can be added to a [floor](./floor.md) or a [section](./placesSection.md).
+Represents a collection of desks. A [workspace](./workspace.md) can be added to a [section](./placesSection.md).
 
 Inherits from [place](../resources/place.md).
 
