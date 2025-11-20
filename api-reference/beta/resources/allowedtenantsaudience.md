@@ -26,7 +26,7 @@ Inherits from [signInAudienceRestrictionsBase](../resources/signinaudiencerestri
 |:---|:---|:---|
 |allowedTenantIds|String collection|The list of Entra tenant IDs where the application can be used as either a client application or a resource application (API). Must contain at least one value. The tenant ID where the application is registered may be included, but is not required (see **isHomeTenantAllowed**). Required.|
 |isHomeTenantAllowed|Boolean|Whether the tenant where the application is registered is allowed. Currently, only `true` is supported. Default is `true`.|
-|kind|kind|Must be `allowedTenants`, which is only supported when the application's **signInAudience** is `AzureADMultipleOrgs`. Inherited from [signInAudienceRestrictionsBase](../resources/signinaudiencerestrictionsbase.md).|
+|kind|kind|If provided, must be `allowedTenants`. Optional. Inherited from [signInAudienceRestrictionsBase](../resources/signinaudiencerestrictionsbase.md).|
 
 ## Relationships
 

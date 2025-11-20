@@ -22,7 +22,7 @@ Inherits from [signInAudienceRestrictionsBase](../resources/signinaudiencerestri
 
 |Property|Type|Description|
 |:---|:---|:---|
-|kind|kind|**TODO: Add Description** Inherited from [signInAudienceRestrictionsBase](../resources/signinaudiencerestrictionsbase.md). The possible values are: `unrestricted`, `allowedTenants`, `unknownFutureValue`.|
+|kind|kind|If provided, must be `unrestricted`. Optional. Inherited from [signInAudienceRestrictionsBase](../resources/signinaudiencerestrictionsbase.md).|
 
 ## Relationships
 
