@@ -42,7 +42,7 @@ In the request URL, provide the following query parameters with values.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|sourceSiteUrl|String|Source site url|
+|sourceSiteUrl|String|Source site URL.|
 
 ## Request headers
 
