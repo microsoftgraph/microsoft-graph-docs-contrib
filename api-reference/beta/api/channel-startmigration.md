@@ -57,6 +57,7 @@ If successful, this method returns a `204 No Content` response code. It doesn't 
 ## Examples
 
 ### Example 1: Start the migration on an existing channel with a specific timestamp
+
 The following example shows how to start the migration on an existing channel with a specific timestamp.
 #### Request
 
@@ -76,10 +77,8 @@ POST https://graph.microsoft.com/beta/teams/57fb72d0-d811-46f4-8947-305e6072eaa5
 
 The following example shows the response.
 <!-- {
-  "blockType": "response",
-  "truncated": true
+  "blockType": "response"
 } -->
-
 ```http
 HTTP/1.1 204 No Content
 ```
