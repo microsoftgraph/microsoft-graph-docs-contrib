@@ -179,7 +179,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "deletedItems",
           "ChangeType": "Addition",
-          "Description": "Added the **deletedItems** relationship to the [policyRoot](https://learn.microsoft.com/en-us/graph/api/resources/policyRoot?view=graph-rest-beta) resource.",
+          "Description": "Added the **deletedItems** relationship to the [policyRoot](https://learn.microsoft.com/en-us/graph/api/resources/policyroot?view=graph-rest-beta) resource.",
           "Target": "policyRoot"
         },
         {
@@ -7859,7 +7859,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "externalIdentitiesPolicy",
           "ChangeType": "Addition",
-          "Description": "Added the **externalIdentitiesPolicy** relationship to the [policyRoot](https://learn.microsoft.com/en-us/graph/api/resources/policyRoot?view=graph-rest-beta) resource.",
+          "Description": "Added the **externalIdentitiesPolicy** relationship to the [policyRoot](https://learn.microsoft.com/en-us/graph/api/resources/policyroot?view=graph-rest-beta) resource.",
           "Target": "policyRoot"
         }
       ],
@@ -13725,7 +13725,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "permissionGrantPreApprovalPolicies",
           "ChangeType": "Addition",
-          "Description": "Added the **permissionGrantPreApprovalPolicies** relationship to the [policyRoot](https://learn.microsoft.com/en-us/graph/api/resources/policyRoot?view=graph-rest-beta) resource.",
+          "Description": "Added the **permissionGrantPreApprovalPolicies** relationship to the [policyRoot](https://learn.microsoft.com/en-us/graph/api/resources/policyroot?view=graph-rest-beta) resource.",
           "Target": "policyRoot"
         },
         {
@@ -14785,7 +14785,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "onPremAuthenticationPolicies",
           "ChangeType": "Addition",
-          "Description": "Added the **onPremAuthenticationPolicies** relationship to the [policyRoot](https://learn.microsoft.com/en-us/graph/api/resources/policyRoot?view=graph-rest-beta) resource.",
+          "Description": "Added the **onPremAuthenticationPolicies** relationship to the [policyRoot](https://learn.microsoft.com/en-us/graph/api/resources/policyroot?view=graph-rest-beta) resource.",
           "Target": "policyRoot"
         }
       ],
