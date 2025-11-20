@@ -14777,7 +14777,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "onPremAuthenticationPolicy",
           "ChangeType": "Addition",
-          "Description": "Added the [onPremAuthenticationPolicy](https://learn.microsoft.com/en-us/graph/api/resources/onPremAuthenticationPolicy?view=graph-rest-beta) resource.",
+          "Description": "Added the [onPremAuthenticationPolicy](https://learn.microsoft.com/en-us/graph/api/resources/onpremauthenticationpolicy?view=graph-rest-beta) resource.",
           "Target": "onPremAuthenticationPolicy"
         },
         {
