@@ -3,7 +3,7 @@
     {
       "ChangeList": [
         {
-          "Id": "d53c79c3-526c-4ee6-a847-40b4868374fb",
+          "Id": "8f70e7ce-d948-4dfc-a6d2-a3a9d56e2930",
           "ApiChange": "Enumeration",
           "ChangedApiName": "structuredDataEntryValueType",
           "ChangeType": "Addition",
@@ -11,43 +11,43 @@
           "Target": "structuredDataEntryValueType"
         },
         {
-          "Id": "d53c79c3-526c-4ee6-a847-40b4868374fb",
+          "Id": "8f70e7ce-d948-4dfc-a6d2-a3a9d56e2930",
           "ApiChange": "Resource",
           "ChangedApiName": "structuredDataEntry",
           "ChangeType": "Addition",
-          "Description": "Added the [structuredDataEntry](https://learn.microsoft.com/en-us/graph/api/resources/structuredDataEntry?view=graph-rest-beta) resource type.",
+          "Description": "Added the [structuredDataEntry](https://learn.microsoft.com/en-us/graph/api/resources/structuredDataEntry?view=graph-rest-beta) resource.",
           "Target": "structuredDataEntry"
         },
         {
-          "Id": "d53c79c3-526c-4ee6-a847-40b4868374fb",
+          "Id": "8f70e7ce-d948-4dfc-a6d2-a3a9d56e2930",
           "ApiChange": "Resource",
           "ChangedApiName": "structuredDataEntryTypedValue",
           "ChangeType": "Addition",
-          "Description": "Added the [structuredDataEntryTypedValue](https://learn.microsoft.com/en-us/graph/api/resources/structuredDataEntryTypedValue?view=graph-rest-beta) resource type.",
+          "Description": "Added the [structuredDataEntryTypedValue](https://learn.microsoft.com/en-us/graph/api/resources/structuredDataEntryTypedValue?view=graph-rest-beta) resource.",
           "Target": "structuredDataEntryTypedValue"
         },
         {
-          "Id": "d53c79c3-526c-4ee6-a847-40b4868374fb",
+          "Id": "8f70e7ce-d948-4dfc-a6d2-a3a9d56e2930",
           "ApiChange": "Property",
-          "ChangedApiName": "userConfiguration",
+          "ChangedApiName": "structuredData",
           "ChangeType": "Addition",
-          "Description": "Added the [userConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/userConfiguration?view=graph-rest-beta) resource and associated methods.",
+          "Description": "Added the **structuredData** property to the [userConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/userConfiguration?view=graph-rest-beta) resource.",
           "Target": "userConfiguration"
         },
         {
-          "Id": "d53c79c3-526c-4ee6-a847-40b4868374fb",
-          "ApiChange": "Relationship",
-          "ChangedApiName": "userConfigurations",
+          "Id": "8f70e7ce-d948-4dfc-a6d2-a3a9d56e2930",
+          "ApiChange": "Property",
+          "ChangedApiName": "xmlData",
           "ChangeType": "Addition",
-          "Description": "Added the **userConfigurations** relationship to the [mailFolder](https://learn.microsoft.com/en-us/graph/api/resources/mailFolder?view=graph-rest-beta) resource.",
+          "Description": "Added the **xmlData** property to the [userConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/userConfiguration?view=graph-rest-beta) resource.",
           "Target": "userConfiguration"
         }
       ],
-      "Id": "d53c79c3-526c-4ee6-a847-40b4868374fb",
+      "Id": "8f70e7ce-d948-4dfc-a6d2-a3a9d56e2930",
       "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2025-11-05T02:37:14.0811605Z",
-      "WorkloadArea": "Mail",
+      "CreatedDateTime": "2025-11-20T10:36:11.9898019Z",
+      "WorkloadArea": "Calendar, mail, personal contacts",
       "SubArea": ""
     },
     {
