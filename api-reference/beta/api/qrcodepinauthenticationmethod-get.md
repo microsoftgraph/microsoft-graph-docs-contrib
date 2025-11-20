@@ -37,7 +37,7 @@ Retrieve your own QR Code + PIN authentication method.
 [!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
 
 <!-- { "blockType": "ignored" } -->
-``` http
+```http
 GET /me/authentication/qrCodePinMethod
 ```
 
@@ -46,7 +46,7 @@ Retrieve another user's QR Code + PIN authentication method.
 [!INCLUDE [authentication-methods-apis-users-selfservice](../includes/authentication-methods-apis-users-selfservice.md)]
 
 <!-- { "blockType": "ignored" } -->
-``` http
+```http
 GET /users/{id}/authentication/qrCodePinMethod
 ```
 
@@ -79,7 +79,7 @@ The following example shows a request.
   "name": "get_qrcodepinauthenticationmethod"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/7c4999f7-9c25-4f8e-8b84-766eb28a1b49/authentication/qrCodePinMethod
 ```
 
@@ -123,12 +123,13 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.qrCodePinAuthenticationMethod"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
     "id": "d29518d4-b99a-4c88-b40c-92fd12959724",
+    "lastUsedDateTime": "2022-11-06T23:16:12Z",
     "standardQRCode": {
         "id": "1a253da5-3f9a-457d-bd9c-de1aab9a2e59",
         "expireDateTime": "2025-12-19T12:00:00Z",

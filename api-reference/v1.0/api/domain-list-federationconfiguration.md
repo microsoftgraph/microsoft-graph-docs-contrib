@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /domains/{domainsId}/federationConfiguration
 ```
 
@@ -58,7 +58,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
   "name": "list_internaldomainfederation",
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/domains/{domainsId}/federationConfiguration
 ```
 
@@ -101,7 +101,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.internalDomainFederation)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

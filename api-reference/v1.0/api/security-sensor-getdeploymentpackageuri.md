@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 Get the [sensor](../resources/security-sensor.md) deployment package URL and version. You can use this URL to download the installer to install the sensor on a server.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /security/identities/sensors/getDeploymentPackageUri
 ```
 
@@ -57,7 +57,7 @@ The following example shows a request.
   "name": "sensorthis.getdeploymentpackageuri"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/security/identities/sensors/getDeploymentPackageUri
 ```
 
@@ -101,7 +101,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.security.sensorDeploymentPackage"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

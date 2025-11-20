@@ -34,14 +34,14 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 To get the [cloudPC](../resources/cloudpc.md) of the specified user (who is the signed-in user) in the organization using delegated permission:
 
-``` http
+```http
 GET /me/cloudPCs/{id}
 GET /users/{userId}/cloudPCs/{id}
 ```
 
 To get the specified [cloudPC](../resources/cloudpc.md) in the organization, using either delegated permission (the signed-in user should be the administrator) or application permission:
 
-``` http
+```http
 GET /deviceManagement/virtualEndpoint/cloudPCs/{id}
 ```
 
@@ -79,7 +79,7 @@ The following example shows a request.
 }
 -->
 
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/9ec90ff8-fd63-4fb9-ab5a-aa4fdcc43ec9
 ```
 
@@ -125,7 +125,7 @@ The following example shows the response.
 }
 -->
 
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -179,7 +179,7 @@ The following example shows a request.
 }
 -->
 
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/40cee9d2-03fb-4066-8d35-dbdf2875c33f?$select=id,displayName,imageDisplayName,lastModifiedDateTime,lastRemoteActionResult,lastLoginResult,connectivityResult,allotmentDisplayName,deviceRegionName,productType,provisionedDateTime,sharedDeviceDetail,groupDetail,userDetail
 ```
 
@@ -196,7 +196,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/4
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-cloudpc-selected-properties-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
@@ -225,7 +225,7 @@ The following example shows the response.
 }
 -->
 
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -264,7 +264,8 @@ Content-Type: application/json
     "productType": null,
     "provisionedDateTime": "2025-04-23T10:29:57Z",
     "sharedDeviceDetail": {
-      "assignedToUserPrincipalName": "john.doe@contoso.onmicrosoft.com"
+      "assignedToUserPrincipalName": "john.doe@contoso.onmicrosoft.com",
+      "sessionStartDateTime": "2025-09-08T10:10:00Z"
     },
     "groupDetail": {
         "groupId": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
@@ -291,7 +292,7 @@ The following example shows a request.
 }
 -->
 
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/cloudPCs/36bd4942-0ca8-11ed-861d-0242ac120002
 ```
 
@@ -337,7 +338,7 @@ The following example shows the response.
 }
 -->
 
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

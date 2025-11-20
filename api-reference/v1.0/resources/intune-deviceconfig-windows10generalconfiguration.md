@@ -5,7 +5,7 @@ author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
-ms.date: 09/13/2024
+ms.date: 08/01/2024
 ---
 
 # windows10GeneralConfiguration resource type
@@ -37,22 +37,10 @@ Inherits from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfi
 |description|String|Admin provided description of the Device Configuration. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|enterpriseCloudPrintDiscoveryEndPoint|String|Endpoint for discovering cloud printers.|
-|enterpriseCloudPrintOAuthAuthority|String|Authentication endpoint for acquiring OAuth tokens.|
-|enterpriseCloudPrintOAuthClientIdentifier|String|GUID of a client application authorized to retrieve OAuth tokens from the OAuth Authority.|
-|enterpriseCloudPrintResourceIdentifier|String|OAuth resource URI for print service as configured in the Azure portal.|
-|enterpriseCloudPrintDiscoveryMaxLimit|Int32|Maximum number of printers that should be queried from a discovery endpoint. This is a mobile only setting. Valid values 1 to 65535|
-|enterpriseCloudPrintMopriaDiscoveryResourceIdentifier|String|OAuth resource URI for printer discovery service as configured in Azure portal.|
-|searchBlockDiacritics|Boolean|Specifies if search can use diacritics.|
-|searchDisableAutoLanguageDetection|Boolean|Specifies whether to use automatic language detection when indexing content and properties.|
-|searchDisableIndexingEncryptedItems|Boolean|Indicates whether or not to block indexing of WIP-protected items to prevent them from appearing in search results for Cortana or Explorer.|
-|searchEnableRemoteQueries|Boolean|Indicates whether or not to block remote queries of this computer’s index.|
-|searchDisableIndexerBackoff|Boolean|Indicates whether or not to disable the search indexer backoff feature.|
-|searchDisableIndexingRemovableDrive|Boolean|Indicates whether or not to allow users to add locations on removable drives to libraries and to be indexed.|
-|searchEnableAutomaticIndexSizeManangement|Boolean|Specifies minimum amount of hard drive space on the same drive as the index location before indexing stops.|
-|diagnosticsDataSubmissionMode|[diagnosticDataSubmissionMode](../resources/intune-deviceconfig-diagnosticdatasubmissionmode.md)|Gets or sets a value allowing the device to send diagnostic and usage telemetry data, such as Watson. Possible values are: `userDefined`, `none`, `basic`, `enhanced`, `full`.|
-|oneDriveDisableFileSync|Boolean|Gets or sets a value allowing IT admins to prevent apps and features from working with files on OneDrive.|
-|smartScreenEnableAppInstallControl|Boolean|This property will be deprecated in July 2019 and will be replaced by property SmartScreenAppInstallControl. Allows IT Admins to control whether users are allowed to install apps from places other than the Store.|
+|networkProxyApplySettingsDeviceWide|Boolean|If set, proxy settings will be applied to all processes and accounts in the device. Otherwise, it will be applied to the user account that’s enrolled into MDM.|
+|networkProxyDisableAutoDetect|Boolean|Disable automatic detection of settings. If enabled, the system will try to find the path to a proxy auto-config (PAC) script.|
+|networkProxyAutomaticConfigurationUrl|String|Address to the proxy auto-config (PAC) script you want to use.|
+|networkProxyServer|[windows10NetworkProxyServer](../resources/intune-deviceconfig-windows10networkproxyserver.md)|Specifies manual proxy server settings.|
 |personalizationDesktopImageUrl|String|A http or https Url to a jpg, jpeg or png image that needs to be downloaded and used as the Desktop Image or a file Url to a local image on the file system that needs to used as the Desktop Image.|
 |personalizationLockScreenImageUrl|String|A http or https Url to a jpg, jpeg or png image that neeeds to be downloaded and used as the Lock Screen Image or a file Url to a local image on the file system that needs to be used as the Lock Screen Image.|
 |bluetoothAllowedServices|String collection|Specify a list of allowed Bluetooth services and profiles in hex formatted strings.|
@@ -104,6 +92,12 @@ Inherits from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfi
 |defenderFileExtensionsToExclude|String collection|File extensions to exclude from scans and real time protection.|
 |defenderFilesAndFoldersToExclude|String collection|Files and folder to exclude from scans and real time protection.|
 |defenderProcessesToExclude|String collection|Processes to exclude from scans and real time protection.|
+|enterpriseCloudPrintDiscoveryEndPoint|String|Endpoint for discovering cloud printers.|
+|enterpriseCloudPrintOAuthAuthority|String|Authentication endpoint for acquiring OAuth tokens.|
+|enterpriseCloudPrintOAuthClientIdentifier|String|GUID of a client application authorized to retrieve OAuth tokens from the OAuth Authority.|
+|enterpriseCloudPrintResourceIdentifier|String|OAuth resource URI for print service as configured in the Azure portal.|
+|enterpriseCloudPrintDiscoveryMaxLimit|Int32|Maximum number of printers that should be queried from a discovery endpoint. This is a mobile only setting. Valid values 1 to 65535|
+|enterpriseCloudPrintMopriaDiscoveryResourceIdentifier|String|OAuth resource URI for printer discovery service as configured in Azure portal.|
 |lockScreenAllowTimeoutConfiguration|Boolean|Specify whether to show a user-configurable setting to control the screen timeout while on the lock screen of Windows 10 Mobile devices. If this policy is set to Allow, the value set by lockScreenTimeoutInSeconds is ignored.|
 |lockScreenBlockActionCenterNotifications|Boolean|Indicates whether or not to block action center notifications over lock screen.|
 |lockScreenBlockCortana|Boolean|Indicates whether or not the user can interact with Cortana using speech while the system is locked.|
@@ -122,6 +116,26 @@ Inherits from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfi
 |privacyAdvertisingId|[stateManagementSetting](../resources/intune-deviceconfig-statemanagementsetting.md)|Enables or disables the use of advertising ID. Added in Windows 10, version 1607. Possible values are: `notConfigured`, `blocked`, `allowed`.|
 |privacyAutoAcceptPairingAndConsentPrompts|Boolean|Indicates whether or not to allow the automatic acceptance of the pairing and privacy user consent dialog when launching apps.|
 |privacyBlockInputPersonalization|Boolean|Indicates whether or not to block the usage of cloud based speech services for Cortana, Dictation, or Store applications.|
+|searchBlockDiacritics|Boolean|Specifies if search can use diacritics.|
+|searchDisableAutoLanguageDetection|Boolean|Specifies whether to use automatic language detection when indexing content and properties.|
+|searchDisableIndexingEncryptedItems|Boolean|Indicates whether or not to block indexing of WIP-protected items to prevent them from appearing in search results for Cortana or Explorer.|
+|searchEnableRemoteQueries|Boolean|Indicates whether or not to block remote queries of this computer’s index.|
+|searchDisableIndexerBackoff|Boolean|Indicates whether or not to disable the search indexer backoff feature.|
+|searchDisableIndexingRemovableDrive|Boolean|Indicates whether or not to allow users to add locations on removable drives to libraries and to be indexed.|
+|searchEnableAutomaticIndexSizeManangement|Boolean|Specifies minimum amount of hard drive space on the same drive as the index location before indexing stops.|
+|settingsBlockSettingsApp|Boolean|Indicates whether or not to block access to Settings app.|
+|settingsBlockSystemPage|Boolean|Indicates whether or not to block access to System in Settings app.|
+|settingsBlockDevicesPage|Boolean|Indicates whether or not to block access to Devices in Settings app.|
+|settingsBlockNetworkInternetPage|Boolean|Indicates whether or not to block access to Network & Internet in Settings app.|
+|settingsBlockPersonalizationPage|Boolean|Indicates whether or not to block access to Personalization in Settings app.|
+|settingsBlockAccountsPage|Boolean|Indicates whether or not to block access to Accounts in Settings app.|
+|settingsBlockTimeLanguagePage|Boolean|Indicates whether or not to block access to Time & Language in Settings app.|
+|settingsBlockEaseOfAccessPage|Boolean|Indicates whether or not to block access to Ease of Access in Settings app.|
+|settingsBlockPrivacyPage|Boolean|Indicates whether or not to block access to Privacy in Settings app.|
+|settingsBlockUpdateSecurityPage|Boolean|Indicates whether or not to block access to Update & Security in Settings app.|
+|settingsBlockAppsPage|Boolean|Indicates whether or not to block access to Apps in Settings app.|
+|settingsBlockGamingPage|Boolean|Indicates whether or not to block access to Gaming in Settings app.|
+|smartScreenEnableAppInstallControl|Boolean|This property will be deprecated in July 2019 and will be replaced by property SmartScreenAppInstallControl. Allows IT Admins to control whether users are allowed to install apps from places other than the Store.|
 |startBlockUnpinningAppsFromTaskbar|Boolean|Indicates whether or not to block the user from unpinning apps from taskbar.|
 |startMenuAppListVisibility|[windowsStartMenuAppListVisibilityType](../resources/intune-deviceconfig-windowsstartmenuapplistvisibilitytype.md)|Setting the value of this collapses the app list, removes the app list entirely, or disables the corresponding toggle in the Settings app. Possible values are: `userDefined`, `collapse`, `remove`, `disableSettingsApp`.|
 |startMenuHideChangeAccountSettings|Boolean|Enabling this policy hides the change account setting from appearing in the user tile in the start menu.|
@@ -150,18 +164,8 @@ Inherits from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfi
 |startMenuPinnedFolderPictures|[visibilitySetting](../resources/intune-deviceconfig-visibilitysetting.md)|Enforces the visibility (Show/Hide) of the Pictures folder shortcut on the Start menu. Possible values are: `notConfigured`, `hide`, `show`.|
 |startMenuPinnedFolderSettings|[visibilitySetting](../resources/intune-deviceconfig-visibilitysetting.md)|Enforces the visibility (Show/Hide) of the Settings folder shortcut on the Start menu. Possible values are: `notConfigured`, `hide`, `show`.|
 |startMenuPinnedFolderVideos|[visibilitySetting](../resources/intune-deviceconfig-visibilitysetting.md)|Enforces the visibility (Show/Hide) of the Videos folder shortcut on the Start menu. Possible values are: `notConfigured`, `hide`, `show`.|
-|settingsBlockSettingsApp|Boolean|Indicates whether or not to block access to Settings app.|
-|settingsBlockSystemPage|Boolean|Indicates whether or not to block access to System in Settings app.|
-|settingsBlockDevicesPage|Boolean|Indicates whether or not to block access to Devices in Settings app.|
-|settingsBlockNetworkInternetPage|Boolean|Indicates whether or not to block access to Network & Internet in Settings app.|
-|settingsBlockPersonalizationPage|Boolean|Indicates whether or not to block access to Personalization in Settings app.|
-|settingsBlockAccountsPage|Boolean|Indicates whether or not to block access to Accounts in Settings app.|
-|settingsBlockTimeLanguagePage|Boolean|Indicates whether or not to block access to Time & Language in Settings app.|
-|settingsBlockEaseOfAccessPage|Boolean|Indicates whether or not to block access to Ease of Access in Settings app.|
-|settingsBlockPrivacyPage|Boolean|Indicates whether or not to block access to Privacy in Settings app.|
-|settingsBlockUpdateSecurityPage|Boolean|Indicates whether or not to block access to Update & Security in Settings app.|
-|settingsBlockAppsPage|Boolean|Indicates whether or not to block access to Apps in Settings app.|
-|settingsBlockGamingPage|Boolean|Indicates whether or not to block access to Gaming in Settings app.|
+|diagnosticsDataSubmissionMode|[diagnosticDataSubmissionMode](../resources/intune-deviceconfig-diagnosticdatasubmissionmode.md)|Gets or sets a value allowing the device to send diagnostic and usage telemetry data, such as Watson. Possible values are: `userDefined`, `none`, `basic`, `enhanced`, `full`.|
+|oneDriveDisableFileSync|Boolean|Gets or sets a value allowing IT admins to prevent apps and features from working with files on OneDrive.|
 |windowsSpotlightBlockConsumerSpecificFeatures|Boolean|Allows IT admins to block experiences that are typically for consumers only, such as Start suggestions, Membership notifications, Post-OOBE app install and redirect tiles.|
 |windowsSpotlightBlocked|Boolean|Allows IT admins to turn off all Windows Spotlight features|
 |windowsSpotlightBlockOnActionCenter|Boolean|Block suggestions from Microsoft that show after each OS clean install, upgrade or in an on-going basis to introduce users to what is new or changed|
@@ -170,10 +174,6 @@ Inherits from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfi
 |windowsSpotlightBlockWelcomeExperience|Boolean|Block Windows Spotlight Windows welcome experience|
 |windowsSpotlightBlockWindowsTips|Boolean|Allows IT admins to turn off the popup of Windows Tips.|
 |windowsSpotlightConfigureOnLockScreen|[windowsSpotlightEnablementSettings](../resources/intune-deviceconfig-windowsspotlightenablementsettings.md)|Specifies the type of Spotlight. Possible values are: `notConfigured`, `disabled`, `enabled`.|
-|networkProxyApplySettingsDeviceWide|Boolean|If set, proxy settings will be applied to all processes and accounts in the device. Otherwise, it will be applied to the user account that’s enrolled into MDM.|
-|networkProxyDisableAutoDetect|Boolean|Disable automatic detection of settings. If enabled, the system will try to find the path to a proxy auto-config (PAC) script.|
-|networkProxyAutomaticConfigurationUrl|String|Address to the proxy auto-config (PAC) script you want to use.|
-|networkProxyServer|[windows10NetworkProxyServer](../resources/intune-deviceconfig-windows10networkproxyserver.md)|Specifies manual proxy server settings.|
 |accountsBlockAddingNonMicrosoftAccountEmail|Boolean|Indicates whether or not to Block the user from adding email accounts to the device that are not associated with a Microsoft account.|
 |antiTheftModeBlocked|Boolean|Indicates whether or not to block the user from selecting an AntiTheft mode preference (Windows 10 Mobile only).|
 |bluetoothBlocked|Boolean|Whether or not to Block the user from using bluetooth.|
@@ -266,22 +266,17 @@ Here is a JSON representation of the resource.
   "description": "String",
   "displayName": "String",
   "version": 1024,
-  "enterpriseCloudPrintDiscoveryEndPoint": "String",
-  "enterpriseCloudPrintOAuthAuthority": "String",
-  "enterpriseCloudPrintOAuthClientIdentifier": "String",
-  "enterpriseCloudPrintResourceIdentifier": "String",
-  "enterpriseCloudPrintDiscoveryMaxLimit": 1024,
-  "enterpriseCloudPrintMopriaDiscoveryResourceIdentifier": "String",
-  "searchBlockDiacritics": true,
-  "searchDisableAutoLanguageDetection": true,
-  "searchDisableIndexingEncryptedItems": true,
-  "searchEnableRemoteQueries": true,
-  "searchDisableIndexerBackoff": true,
-  "searchDisableIndexingRemovableDrive": true,
-  "searchEnableAutomaticIndexSizeManangement": true,
-  "diagnosticsDataSubmissionMode": "String",
-  "oneDriveDisableFileSync": true,
-  "smartScreenEnableAppInstallControl": true,
+  "networkProxyApplySettingsDeviceWide": true,
+  "networkProxyDisableAutoDetect": true,
+  "networkProxyAutomaticConfigurationUrl": "String",
+  "networkProxyServer": {
+    "@odata.type": "microsoft.graph.windows10NetworkProxyServer",
+    "address": "String",
+    "exceptions": [
+      "String"
+    ],
+    "useForLocalAddresses": true
+  },
   "personalizationDesktopImageUrl": "String",
   "personalizationLockScreenImageUrl": "String",
   "bluetoothAllowedServices": [
@@ -347,6 +342,12 @@ Here is a JSON representation of the resource.
   "defenderProcessesToExclude": [
     "String"
   ],
+  "enterpriseCloudPrintDiscoveryEndPoint": "String",
+  "enterpriseCloudPrintOAuthAuthority": "String",
+  "enterpriseCloudPrintOAuthClientIdentifier": "String",
+  "enterpriseCloudPrintResourceIdentifier": "String",
+  "enterpriseCloudPrintDiscoveryMaxLimit": 1024,
+  "enterpriseCloudPrintMopriaDiscoveryResourceIdentifier": "String",
   "lockScreenAllowTimeoutConfiguration": true,
   "lockScreenBlockActionCenterNotifications": true,
   "lockScreenBlockCortana": true,
@@ -365,6 +366,26 @@ Here is a JSON representation of the resource.
   "privacyAdvertisingId": "String",
   "privacyAutoAcceptPairingAndConsentPrompts": true,
   "privacyBlockInputPersonalization": true,
+  "searchBlockDiacritics": true,
+  "searchDisableAutoLanguageDetection": true,
+  "searchDisableIndexingEncryptedItems": true,
+  "searchEnableRemoteQueries": true,
+  "searchDisableIndexerBackoff": true,
+  "searchDisableIndexingRemovableDrive": true,
+  "searchEnableAutomaticIndexSizeManangement": true,
+  "settingsBlockSettingsApp": true,
+  "settingsBlockSystemPage": true,
+  "settingsBlockDevicesPage": true,
+  "settingsBlockNetworkInternetPage": true,
+  "settingsBlockPersonalizationPage": true,
+  "settingsBlockAccountsPage": true,
+  "settingsBlockTimeLanguagePage": true,
+  "settingsBlockEaseOfAccessPage": true,
+  "settingsBlockPrivacyPage": true,
+  "settingsBlockUpdateSecurityPage": true,
+  "settingsBlockAppsPage": true,
+  "settingsBlockGamingPage": true,
+  "smartScreenEnableAppInstallControl": true,
   "startBlockUnpinningAppsFromTaskbar": true,
   "startMenuAppListVisibility": "String",
   "startMenuHideChangeAccountSettings": true,
@@ -393,18 +414,8 @@ Here is a JSON representation of the resource.
   "startMenuPinnedFolderPictures": "String",
   "startMenuPinnedFolderSettings": "String",
   "startMenuPinnedFolderVideos": "String",
-  "settingsBlockSettingsApp": true,
-  "settingsBlockSystemPage": true,
-  "settingsBlockDevicesPage": true,
-  "settingsBlockNetworkInternetPage": true,
-  "settingsBlockPersonalizationPage": true,
-  "settingsBlockAccountsPage": true,
-  "settingsBlockTimeLanguagePage": true,
-  "settingsBlockEaseOfAccessPage": true,
-  "settingsBlockPrivacyPage": true,
-  "settingsBlockUpdateSecurityPage": true,
-  "settingsBlockAppsPage": true,
-  "settingsBlockGamingPage": true,
+  "diagnosticsDataSubmissionMode": "String",
+  "oneDriveDisableFileSync": true,
   "windowsSpotlightBlockConsumerSpecificFeatures": true,
   "windowsSpotlightBlocked": true,
   "windowsSpotlightBlockOnActionCenter": true,
@@ -413,17 +424,6 @@ Here is a JSON representation of the resource.
   "windowsSpotlightBlockWelcomeExperience": true,
   "windowsSpotlightBlockWindowsTips": true,
   "windowsSpotlightConfigureOnLockScreen": "String",
-  "networkProxyApplySettingsDeviceWide": true,
-  "networkProxyDisableAutoDetect": true,
-  "networkProxyAutomaticConfigurationUrl": "String",
-  "networkProxyServer": {
-    "@odata.type": "microsoft.graph.windows10NetworkProxyServer",
-    "address": "String",
-    "exceptions": [
-      "String"
-    ],
-    "useForLocalAddresses": true
-  },
   "accountsBlockAddingNonMicrosoftAccountEmail": true,
   "antiTheftModeBlocked": true,
   "bluetoothBlocked": true,

@@ -16,15 +16,13 @@ Namespace: microsoft.graph
 
 Get a list of [migration events](../resources/sharepointmigrationevent.md) for a particular job in a [fileStorageContainer](../resources/filestoragecontainer.md). The migration events remain valid for four days and can be queried as frequently as needed within the validity period.
 
+[!INCLUDE [national-cloud-support](../../includes/global-china.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "sharepointmigrationjob_list_progressevents"
-}
--->
+<!-- { "blockType": "permissions", "name": "sharepointmigrationjob_list_progressevents" } -->
 [!INCLUDE [permissions-table](../includes/permissions/sharepointmigrationjob-list-progressevents-permissions.md)]
 
 ## HTTP request
@@ -33,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /storage/fileStorage/containers/{fileStorageContainerId}/migrationJobs/{migrationJobId}/progressEvents
 ```
 
@@ -61,14 +59,41 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 The following example shows how to retrieve a list of **sharePointMigrationEvent** instances that are related to the **sharePointMigrationJob** identified by the ID `7b04bfdd-5f8c-4bd9-97faa166a7922c61` that runs on the **fileStorageContainer** identified by the container ID `b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z`.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_progressevents"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/migrationJobs/7b04bfdd-5f8c-4bd9-97faa166a7922c61/progressEvents
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-progressevents-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-progressevents-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-progressevents-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-progressevents-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/list-progressevents-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-progressevents-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 
@@ -79,7 +104,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.sharePointMigrationEvent"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

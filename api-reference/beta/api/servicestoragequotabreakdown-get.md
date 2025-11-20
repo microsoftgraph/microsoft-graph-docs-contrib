@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /me/settings/storage/quota/services/{serviceStorageQuotaBreakdownId}
 GET /users/{usersId}/settings/storage/quota/services/{serviceStorageQuotaBreakdownId}
 ```
@@ -59,7 +59,7 @@ Here's an example  of a request.
   "name": "get_servicestoragequotabreakdown"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/settings/storage/quota/services/OneDrive
 ```
 
@@ -102,7 +102,7 @@ Here's an example  of the response
   "@odata.type": "microsoft.graph.serviceStorageQuotaBreakdown"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

@@ -23,16 +23,16 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementServiceConfig.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All|
+|Application|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /deviceManagement/windowsAutopilotDeviceIdentities
 ```
 
@@ -76,10 +76,7 @@ If successful, this method returns a `201 Created` response code and a [windowsA
 
 ### Request
 Here is an example of the request.
-
-# [HTTP](#tab/http)
-<!-- { "blockType": "request" , "name" : "intune_enrollment_windowsautopilotdeviceidentity_create_create_windowsautopilotdeviceidentity" }-->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/deviceManagement/windowsAutopilotDeviceIdentities
 Content-type: application/json
 Content-length: 814
@@ -105,41 +102,9 @@ Content-length: 814
 }
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/intune-enrollment-windowsautopilotdeviceidentity-create-create-windowsautopilotdeviceidentity-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/intune-enrollment-windowsautopilotdeviceidentity-create-create-windowsautopilotdeviceidentity-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/intune-enrollment-windowsautopilotdeviceidentity-create-create-windowsautopilotdeviceidentity-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/intune-enrollment-windowsautopilotdeviceidentity-create-create-windowsautopilotdeviceidentity-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/intune-enrollment-windowsautopilotdeviceidentity-create-create-windowsautopilotdeviceidentity-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/intune-enrollment-windowsautopilotdeviceidentity-create-create-windowsautopilotdeviceidentity-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/intune-enrollment-windowsautopilotdeviceidentity-create-create-windowsautopilotdeviceidentity-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-
-<!-- { "blockType": "response" , "@odata.type" : "microsoft.graph.windowsAutopilotDeviceIdentity" }-->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 Content-Length: 863

@@ -30,7 +30,6 @@ You can use the following resource types to build your webinar solution:
 - [attendanceRecord](/graph/api/resources/attendancerecord) – Provides webinar attendee data in the attendance report.  
 - [virtual event webhooks](/graph/changenotifications-for-virtualevent) – Can receive notifications for changes to a webinar, webinar registration, session, attendance report, and so on.  
 
-
 ## Solutions you can build 
 The following table lists some solutions you can build by using the Teams client and Microsoft Graph webinar APIs and webhooks. 
 
@@ -43,6 +42,8 @@ The following table lists some solutions you can build by using the Teams client
 
 > [!NOTE]
 > To build any Microsoft Graph solutions, you need to register and give the right permissions to your application. For more information, see [Authentication and authorization basics](/graph/auth/auth-concepts).
+
+[!INCLUDE [cloud-communications-virtual-events-permissions](./includes/cloud-communications-virtual-events-permissions.md)]
 
 ### Create/update/cancel 
 

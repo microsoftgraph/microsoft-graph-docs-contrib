@@ -241,6 +241,12 @@ items:
       href: toolkit/upgrade.md
   - name: Deploy in IaC with templates
     href: /graph/templates?toc=/graph/toc.json
+  - name: Use the MCP Server for Enterprise
+    items:
+    - name: Overview
+      href: mcp-server/overview.md
+    - name: Get started
+      href: mcp-server/get-started.md
 - name: Services and features
   expanded: true
   items:
@@ -338,6 +344,8 @@ items:
     items:
     - name: Overview
       href: backup-storage-concept-overview.md
+    - name: Managing information barriers for file storage containers
+      href: information-barrier-for-file-storage-containers.md
     - name: Error codes
       href: backup-storage-error-codes.md
   - name: Calendar
@@ -907,6 +915,8 @@ items:
         href: cloud-communications-online-meeting-artifacts.md
       - name: Identify large gallery view participants
         href: cloud-communications-identifylargegalleryview.md
+      - name: Manage presence state
+        href: cloud-communications-manage-presence-state.md
       - name: Manage watermarks for sensitive meetings
         href: cloud-communications-watermark-meeting.md
       - name: Virtual events

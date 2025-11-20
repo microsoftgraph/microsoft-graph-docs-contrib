@@ -32,7 +32,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 
-``` http
+```http
 GET /deviceManagement/virtualEndpoint/deviceImages
 ```
 
@@ -67,7 +67,7 @@ The following example shows a request.
 }
 -->
 
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/deviceImages
 ```
 
@@ -113,7 +113,7 @@ The following example shows the response.
 }
 -->
 
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -134,7 +134,8 @@ Content-Type: application/json
       "statusDetails": null,
       "errorCode": null,
       "osVersionNumber": "10.0.22631.3593",
-      "sizeInGB": 64
+      "sizeInGB": 64,
+      "osArchitecture": "x64"
     }
   ]
 }

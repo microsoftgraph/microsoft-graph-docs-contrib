@@ -1127,6 +1127,50 @@
       "CreatedDateTime": "2025-08-26T07:42:57.8177927Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Network access"
+    },
+    {
+      "ChangeList": [
+      {
+        "Id": "6e4d580d-8ec9-4c61-aca3-9ba57418e6df",
+        "ApiChange": "Member",
+        "ChangedApiName": "enabled",
+        "ChangeType": "Addition",
+        "Description": "Added the `enabled` member to the **tlsCertificateStatus** enumeration.",
+        "Target": "tlsCertificateStatus"
+      },
+      {
+        "Id": "6e4d580d-8ec9-4c61-aca3-9ba57418e6df",
+        "ApiChange": "Member",
+        "ChangedApiName": "disabled",
+        "ChangeType": "Addition",
+        "Description": "Added the `disabled` member to the **tlsCertificateStatus** enumeration.",
+        "Target": "tlsCertificateStatus"
+      }
+    ],
+    "Id": "6e4d580d-8ec9-4c61-aca3-9ba57418e6df",
+    "Cloud": "Prod",
+    "Version": "beta",
+    "CreatedDateTime": "2025-10-14T18:12:45.537745Z",
+    "WorkloadArea": "Identity and access",
+    "SubArea": "Network access"
+  },
+  {
+    "ChangeList": [
+        {
+          "Id": "8f995a7e-d92f-42ad-a744-5de10b241fe3",
+          "ApiChange": "Resource",
+          "ChangedApiName": "urlDestinationFilteringRule",
+          "ChangeType": "Addition",
+          "Description": "Added the [urlDestinationFilteringRule](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-urlDestinationFilteringRule?view=graph-rest-beta) resource.",
+          "Target": "urlDestinationFilteringRule"
+        }
+      ],
+      "Id": "8f995a7e-d92f-42ad-a744-5de10b241fe3",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-11-03T15:22:46.6349195Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Network access"
     }
   ]
 }

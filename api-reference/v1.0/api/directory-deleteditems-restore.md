@@ -23,7 +23,7 @@ Restore a recently deleted directory object from [deleted items](../resources/di
 - [servicePrincipal](../resources/serviceprincipal.md)
 - [user](../resources/user.md)
 
-If an item is accidentally deleted, you can fully restore it. Additionally, restoring an application doesn't automatically restore the associated service principal. You must call this API to restore the deleted service principal explicitly.
+If an item is accidentally deleted, you can fully restore the item. Additionally, restoring an application doesn't automatically restore the associated service principal automatically. You must call this API to explicitly restore the deleted service principal.
 
 A recently deleted item remains available for up to 30 days. After 30 days, the item is permanently deleted.
 

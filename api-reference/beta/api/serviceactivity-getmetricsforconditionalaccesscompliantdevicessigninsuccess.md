@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /reports/serviceActivity/getMetricsForConditionalAccessCompliantDevicesSignInSuccess
 ```
 
@@ -64,7 +64,7 @@ The following example shows a request.
   "name": "serviceactivitythis.getmetricsforconditionalaccesscompliantdevicessigninsuccess"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/reports/serviceActivity/getMetricsForConditionalAccessCompliantDevicesSignInSuccess(inclusiveIntervalStartDateTime=2023-01-01T00:00:00Z,exclusiveIntervalEndDateTime=2023-01-01T00:20:00Z,aggregationIntervalInMinutes=10)
 ```
 
@@ -107,7 +107,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.serviceActivityValueMetric)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

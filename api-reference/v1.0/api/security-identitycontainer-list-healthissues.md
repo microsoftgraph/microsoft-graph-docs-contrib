@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 Get a list of [healthIssue](../resources/security-healthissue.md) objects and their properties.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /security/identities/healthIssues
 ```
 
@@ -44,7 +44,7 @@ The following examples show how to use optional query parameters.
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /security/identities/healthIssues?$filter=Status eq 'open'
 ```
 
@@ -53,7 +53,7 @@ GET /security/identities/healthIssues?$filter=Status eq 'open'
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /security/identities/healthIssues?$filter=Status eq 'open'&$top=5
 ```
 
@@ -62,7 +62,7 @@ GET /security/identities/healthIssues?$filter=Status eq 'open'&$top=5
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /security/identities/healthIssues?$filter=Status eq 'open' and healthIssueType eq 'global'
 GET /security/identities/healthIssues?$filter=Status eq 'open' and healthIssueType eq 'sensor'
 ```
@@ -72,7 +72,7 @@ GET /security/identities/healthIssues?$filter=Status eq 'open' and healthIssueTy
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /security/identities/healthIssues?$filter=Status eq 'open' and severity eq 'medium'
 GET /security/identities/healthIssues?$filter=Status eq 'open' and severity eq 'low'
 ```
@@ -85,7 +85,7 @@ The following example shows how to get global health alerts where the domain nam
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /security/identities/healthissues?$filter=Status eq 'open' and healthIssueType eq 'global' and domainNames/any(s:endswith(s,'contoso.com'))
 GET /security/identities/healthissues?$filter=Status eq 'open' and healthIssueType eq 'global' and sensorDNSNames/any(s:endswith(s,'contoso.com'))
 ```
@@ -115,7 +115,7 @@ The following example shows a request.
   "name": "list_healthissues"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/security/identities/healthIssues
 ```
 
@@ -159,7 +159,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.security.healthIssue)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

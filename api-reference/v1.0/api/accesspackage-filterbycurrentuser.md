@@ -26,7 +26,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /identityGovernance/entitlementManagement/accessPackages/filterByCurrentUser(on='allowedRequestor')
 ```
 
@@ -61,7 +61,7 @@ If successful, this method returns a `200 OK` response code and an [accessPackag
   "name": "accesspackage_filterbycurrentuser"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/accessPackages/filterByCurrentUser(on='allowedRequestor')
 ```
 
@@ -103,7 +103,7 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/ac
   "@odata.type": "Collection(microsoft.graph.accessPackage)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

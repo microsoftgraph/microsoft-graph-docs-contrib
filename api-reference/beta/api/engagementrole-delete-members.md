@@ -61,7 +61,7 @@ The following example shows a request.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/employeeExperience/roles/{engagementRoleId}/members/{engagementRoleMemberId}
+DELETE https://graph.microsoft.com/beta/employeeExperience/roles/5f3c2d11-8a9b-4d6e-b214-7c1f2b9a6d55/members/a40473a5-0fb4-a250-e029-f6fe33d07733
 ```
 
 # [C#](#tab/csharp)
@@ -93,7 +93,7 @@ DELETE https://graph.microsoft.com/beta/employeeExperience/roles/{engagementRole
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true

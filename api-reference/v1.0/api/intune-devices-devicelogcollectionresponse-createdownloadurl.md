@@ -1,6 +1,6 @@
 ---
 title: "createDownloadUrl action"
-description: "Not yet documented"
+description: "Intune Devices Devicelogcollectionresponse Createdownloadurl Api ."
 author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
@@ -14,7 +14,9 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Not yet documented
+
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -30,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDeviceId}/logCollectionRequests/{deviceLogCollectionResponseId}/createDownloadUrl
 ```
 
@@ -50,13 +52,13 @@ If successful, this action returns a `200 OK` response code and a String in the 
 
 ### Request
 Here is an example of the request.
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDeviceId}/logCollectionRequests/{deviceLogCollectionResponseId}/createDownloadUrl
 ```
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 Content-Length: 57

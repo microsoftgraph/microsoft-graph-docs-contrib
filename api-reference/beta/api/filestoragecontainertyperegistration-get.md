@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Read the properties and relationships of a [fileStorageContainerTypeRegistration](../resources/filestoragecontainertyperegistration.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -39,7 +39,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /storage/fileStorage/containerTypeRegistrations/{fileStorageContainerTypeRegistrationId}
 ```
 
@@ -71,7 +71,7 @@ The following example shows how to get a **fileStorageContainerTypeRegistration*
   "name": "get_filestoragecontainertyperegistration"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/storage/fileStorage/containerTypeRegistrations/de988700-d700-020e-0a00-0831f3042f00
 ```
 
@@ -110,7 +110,7 @@ GET https://graph.microsoft.com/beta/storage/fileStorage/containerTypeRegistrati
   "@odata.type": "microsoft.graph.fileStorageContainerTypeRegistration"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
