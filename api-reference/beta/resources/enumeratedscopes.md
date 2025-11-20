@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a constrained inheritance configuration for delegated permission scopes. When an [inheritablePermission](../resources/inheritablepermission.md) entry uses `enumeratedScopes`, only the scopes explicitly listed in the `scopes` collection are inheritable by agent identities. This pattern provides fine‑grained control and supports gradual permission expansion without broad elevation.
+Defines that an explicit list of scopes of a resource application defined on the **agentIdentityBlueprint** are inheritable by agent identities through the [inheritablePermissions](../resources/inheritablepermission.md) object. This constrained inheritance configuration for delegated permission scopes provides fine‑grained control and supports gradual permission expansion without broad elevation.
 
 
 Inherits from [inheritableScopes](../resources/inheritablescopes.md).
@@ -24,7 +24,7 @@ Inherits from [inheritableScopes](../resources/inheritablescopes.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |kind|scopeCollectionKind|Always `enumerated` for this derived type. Inherited from [inheritableScopes](../resources/inheritablescopes.md).|
-|scopes|String collection|Required. Nonempty list of delegated permission scope identifiers published by the resource application to inherit. Entries must be unique, conform to naming conventions (no whitespace; typically `Resource.Operation[.Constraint]`), and exclude any globally blocked scopes.|
+|scopes|String collection|Required. Nonempty list of delegated permission scope identifiers published by the resource application to inherit. Entries must be unique and must not include any [globally blocked scopes](../resources/agentid-platform-overview#microsoft-graph-permissions-blocked-for-agents).|
 
 ## Relationships
 None.

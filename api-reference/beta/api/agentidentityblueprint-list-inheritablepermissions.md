@@ -1,5 +1,5 @@
 ---
-title: "List inheritablePermission"
+title: "List inheritablePermission objects"
 description: "Get a list of inheritablePermission objects for an agent identity blueprint."
 author: "zallison22"
 ms.date: 11/13/2025
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the inheritablePermission objects and their properties for an agent identity blueprint.
+Get a list of the [inheritablePermission](../resources/inheritablepermission.md) objects and their properties for an agent identity blueprint.
 
 ## Permissions
 

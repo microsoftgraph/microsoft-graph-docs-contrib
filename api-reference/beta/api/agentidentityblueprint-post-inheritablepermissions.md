@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new inheritablePermission object for an agent identity blueprint.
+Create a new [inheritablePermission](../resources/inheritablepermission.md) object for an [agent identity blueprint](../resources/agentidentityblueprint.md).
 
 ## Permissions
 
@@ -37,15 +37,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 ``` http
 POST /applications/{id}/graph.agentIdentityBlueprint/inheritablePermissions
-
-Content-Type: application/json
-
-{
-  "resourceAppId": "String",
-  "inheritableScopes": {
-    "@odata.type": "microsoft.graph.inheritableScopes"
-  }
-}
 ```
 
 ## Request headers
@@ -63,7 +54,7 @@ You can specify the following properties when creating an **inheritablePermissio
 
 |Property|Type|Description|
 |:---|:---|:---|
-|resourceAppId|String| The appId of the resource application who publishes the scopes. Required.|
+|resourceAppId|String| The appId of the resource application that publishes the scopes. Required.|
 |inheritableScopes|[inheritableScopes](../resources/inheritablescopes.md)|Inheritance configuration defining which delegated permission scopes from the resource application may be automatically inherited by agent identities. Specify one of the patterns: `allAllowedScopes` (all scopes), `enumeratedScopes` (only listed `scopes` collection; must be present and non‑empty), or `noScopes` (inherit none). Required.|
 
 
@@ -77,7 +68,7 @@ If successful, this method returns a `201 Created` response code and an [inherit
 ### Example 1: Create inheritablePermission with allAllowedScopes pattern
 This example creates an inheritablePermission that allows all delegated permission scopes from the resource application to be inheritable by agent identities.
 
-### Request
+#### Request
 
 The following example shows a request.
 <!-- {
@@ -98,7 +89,7 @@ Content-Type: application/json
 ```
 
 
-### Response
+#### Response
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
@@ -126,7 +117,7 @@ Content-Type: application/json
 ### Example 2: Create inheritablePermission with enumeratedScopes pattern
 This example creates an inheritablePermission that allows only the specified delegated permission scopes from the resource application to be inheritable by agent identities.
 
-### Request
+#### Request
 
 The following example shows a request.
 <!-- {
@@ -151,7 +142,7 @@ Content-Type: application/json
 ```
 
 
-### Response
+#### Response
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
@@ -183,7 +174,7 @@ Content-Type: application/json
 ### Example 3: Create inheritablePermission with noScopes pattern
 This example creates an inheritablePermission that blocks all delegated permission scopes from the resource application from being inheritable by agent identities.
 
-### Request
+#### Request
 
 The following example shows a request.
 <!-- {
@@ -204,7 +195,7 @@ Content-Type: application/json
 ```
 
 
-### Response
+#### Response
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.

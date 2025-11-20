@@ -99,7 +99,7 @@ This resource is an open type that allows additional properties beyond those doc
 |:---|:---|:---|
 |appManagementPolicies|[appManagementPolicy](../resources/appmanagementpolicy.md) collection|The appManagementPolicy applied to this agent identity blueprint. Inherited from [microsoft.graph.application](../resources/application.md)|
 |federatedIdentityCredentials|[federatedIdentityCredential](../resources/federatedidentitycredential.md) collection|Federated identities for agent identity blueprints. Inherited from [microsoft.graph.application](../resources/application.md)|
-|inheritablePermissions|[inheritablePermission](../resources/inheritablepermission.md) collection|Defines inheritable delegated permission scope configuration for an agent identity blueprint, using collection subset patterns to specify which scopes published by a resource application may be automatically granted to agent identities without additional consent.|
+|inheritablePermissions|[inheritablePermission](../resources/inheritablepermission.md) collection|Defines scopes of a resource application that may be automatically granted to agent identities without additional consent.|
 |owners|[directoryObject](../resources/directoryobject.md) collection|Directory objects that are owners of this agent identity blueprint. The owners are a set of nonadmin users or service principals allowed to modify this object. Read-only. Nullable. Inherited from [microsoft.graph.application](../resources/application.md)|
 |sponsors|[directoryObject](../resources/directoryobject.md) collection|The sponsors for this agent identity blueprint. Sponsors are users or groups who can authorize and manage the lifecycle of agent identity instances.|
 
@@ -148,11 +148,6 @@ The following JSON representation shows the resource type. Only a subset of all 
   "info": {
     "@odata.type": "microsoft.graph.informationalUrl"
   },
-  "inheritablePermissions": [
-    {
-      "@odata.type": "microsoft.graph.inheritablePermission"
-    }
-  ],
   "keyCredentials": [
     {
       "@odata.type": "microsoft.graph.keyCredential"

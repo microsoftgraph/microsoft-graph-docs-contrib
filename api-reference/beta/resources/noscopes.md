@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the most restrictive inheritance configuration for delegated permission scopes. When an [inheritablePermission](../resources/inheritablepermission.md) entry uses `noScopes`, no scopes from the referenced resource application are inheritable by agent identities. Use this pattern to create explicit security boundaries for sensitive resources or to override broader defaults.
+Defines that no scopes of a resource application defined on the **agentIdentityBlueprint** are inheritable by agent identities through the [inheritablePermissions](../resources/inheritablepermission.md) object. This configuration is the most restrictive inheritance configuration for delegated permission scopes. and can be used to create explicit security boundaries for sensitive resources or to override broader defaults.
 
 
 Inherits from [inheritableScopes](../resources/inheritablescopes.md).

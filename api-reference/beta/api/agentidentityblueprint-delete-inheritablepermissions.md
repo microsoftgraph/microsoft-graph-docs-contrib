@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete an inheritablePermission object from an agent identity blueprint.
+Delete an [inheritablePermission](../resources/inheritablepermission.md) object from an [agent identity blueprint](../resources/agentidentityblueprint.md). When a permission is deleted, agent identities created from the blueprint will no longer automatically inherit the delegated permission scopes defined in the deleted inheritablePermission object. If the agent identiy requires those scopes, they must request consent again.
 
 ## Permissions
 
@@ -71,7 +71,6 @@ DELETE https://graph.microsoft.com/beta/applications/bc057821-f236-49d6-9f2c-1eb
 ### Response
 
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true

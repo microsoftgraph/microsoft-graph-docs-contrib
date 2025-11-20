@@ -1,6 +1,6 @@
 ---
 title: "inheritablePermission resource type"
-description: "Defines inheritable delegated permission scope configuration for an agent identity blueprint, using collection subset patterns to specify which scopes published by a resource application may be automatically granted to agent identities without additional consent."
+description: "Defines scopes of a resource application that are configured on an agent identity blueprint and that may be automatically granted to agent identities without additional consent."
 author: "zallison22"
 ms.date: 11/13/2025
 ms.localizationpriority: medium
@@ -14,7 +14,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Defines inheritable delegated permission scope configuration for an agent identity blueprint, using collection subset patterns to specify which scopes published by a resource application may be automatically granted to agent identities without additional consent.
+Defines scopes of a resource application that are configured on an [agent identity blueprint](../resources/agentidentityblueprint.md) and that may be automatically granted to [agent identities](../resources/agentidentity.md) without additional consent. For more information, see [Configure inheritable permissions for blueprints](/entra/agent-id/identity-professional/configure-inheritable-permissions-blueprints).
+
 
 ## Methods
 |Method|Return type|Description|
@@ -29,7 +30,7 @@ Defines inheritable delegated permission scope configuration for an agent identi
 |Property|Type|Description|
 |:---|:---|:---|
 |inheritableScopes|[inheritableScopes](../resources/inheritablescopes.md)|Inheritance configuration for delegated permission scopes published by the resource application. Supports three patterns: `allAllowedScopes` (inherit all available scopes), `enumeratedScopes` (inherit only the listed scopes), and `noScopes` (inherit none). Each pattern exposes a `kind` discriminator for filtering.|
-|resourceAppId|String| The AppId of the resource application who publishes these scopes.|
+|resourceAppId|String| The **appId** of the resource [application](../resources/application.md) that publishes these scopes. Primary key. |
 
 ## Relationships
 None.

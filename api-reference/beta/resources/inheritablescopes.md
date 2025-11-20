@@ -14,15 +14,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the inheritance pattern applied to delegated permission scopes published by a resource application and exposed on an agent identity blueprint via its [inheritablePermissions](../resources/inheritablepermission.md) collection. This abstract type is realized by the following derived types:
+Represents the inheritance pattern applied to delegated permission scopes published by a resource application and exposed on an [agent identity blueprint](../resources/agentidentityblueprint.md) via its [inheritablePermissions](../resources/inheritablepermission.md) collection. This abstract type is realized by the following derived types:
 
 - [allAllowedScopes](../resources/allallowedscopes.md) – inherit all scopes currently defined for the resource application (future scopes automatically become inheritable).
 - [enumeratedScopes](../resources/enumeratedscopes.md) – inherit only the explicitly listed scopes.
 - [noScopes](../resources/noscopes.md) – inherit none of the scopes for the resource application.
 
 Use the `kind` discriminator to identify the active inheritance pattern and to filter results.
-This is an abstract type.
-
 
 ## Properties
 |Property|Type|Description|
