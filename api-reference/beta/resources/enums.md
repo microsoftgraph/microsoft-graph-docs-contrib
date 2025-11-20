@@ -27,6 +27,7 @@ Namespace: microsoft.graph
 |unsignedInteger64|
 |stringArray|
 |byteArray|
+|unknownFutureValue|
 
 ### accessReviewPrincipalScopeType values
 
