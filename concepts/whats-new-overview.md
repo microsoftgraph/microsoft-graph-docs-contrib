@@ -18,11 +18,15 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 > [!IMPORTANT]
 > Features in _preview_ status are subject to change without notice, and might not be promoted to generally available (GA) status. Don't use preview features in production apps.
 
-## November 2025
+## November 2025: New and generally available
 
 ### Backup storage
 
 - [driveItem: restore](/graph/api/driveitem-restore) was expanded to enable restoring a **driveItem** deleted from a **fileStorageContainer** without mapping it to a **recycleBinItem**. This complements existing functionality in [recycleBinItem: restore](/graph/api/filestoragecontainer-restore-recyclebinitem) which continues to work as expected.
+
+### Device and app management | Cloud PC
+
+[Reprovision](/graph/api/cloudpc-reprovision) a specific Cloud PC.
 
 ## October 2025: New and generally available
 
