@@ -2780,7 +2780,7 @@ items:
   - name: Cross-tenant migration
     items:
     - name: Overview
-      href: ../../resources/crosstenant-migration-overview.md
+      href: ../../resources/cross-tenant-migration-overview.md
     - name: Cross-tenant migration job
       items:
       - name: Cross-tenant migration job
