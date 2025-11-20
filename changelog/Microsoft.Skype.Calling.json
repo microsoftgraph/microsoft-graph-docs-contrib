@@ -1,5 +1,63 @@
 {
   "changelog": [
+       {
+      "ChangeList": [
+        {
+          "Id": "27f09bdb-b642-4beb-8aee-3192c7c6cd0f",
+          "ApiChange": "Property",
+          "ChangedApiName": "meetingSpokenLanguageTag",
+          "ChangeType": "Addition",
+          "Description": "Added the **meetingSpokenLanguageTag** property to the [onlineMeetingBase](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeetingBase?view=graph-rest-beta) resource.",
+          "Target": "onlineMeetingBase"
+        },
+        {
+          "Id": "27f09bdb-b642-4beb-8aee-3192c7c6cd0f",
+          "ApiChange": "Property",
+          "ChangedApiName": "expiryDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **expiryDateTime** property to the [onlineMeetingBase](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeetingBase?view=graph-rest-beta) resource.",
+          "Target": "onlineMeetingBase"
+        },
+        {
+          "Id": "27f09bdb-b642-4beb-8aee-3192c7c6cd0f",
+          "ApiChange": "Property",
+          "ChangedApiName": "meetingSpokenLanguageTag",
+          "ChangeType": "Addition",
+          "Description": "Added the **meetingSpokenLanguageTag** property to the [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeeting?view=graph-rest-beta) resource.",
+          "Target": "onlineMeeting"
+        },
+        {
+          "Id": "27f09bdb-b642-4beb-8aee-3192c7c6cd0f",
+          "ApiChange": "Property",
+          "ChangedApiName": "expiryDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **expiryDateTime** property to the [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeeting?view=graph-rest-beta) resource.",
+          "Target": "onlineMeeting"
+        },
+        {
+          "Id": "27f09bdb-b642-4beb-8aee-3192c7c6cd0f",
+          "ApiChange": "Property",
+          "ChangedApiName": "meetingSpokenLanguageTag",
+          "ChangeType": "Addition",
+          "Description": "Added the **meetingSpokenLanguageTag** property to the [virtualEventSession](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventSession?view=graph-rest-beta) resource.",
+          "Target": "virtualEventSession"
+        },
+        {
+          "Id": "27f09bdb-b642-4beb-8aee-3192c7c6cd0f",
+          "ApiChange": "Property",
+          "ChangedApiName": "expiryDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **expiryDateTime** property to the [virtualEventSession](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventSession?view=graph-rest-beta) resource.",
+          "Target": "virtualEventSession"
+        }
+      ],
+      "Id": "27f09bdb-b642-4beb-8aee-3192c7c6cd0f",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-11-19T17:05:23.3008252Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+    },
      {
       "ChangeList": [
         {
@@ -41,6 +99,7 @@
       "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2025-11-13T17:05:23.3008252Z",
+
       "WorkloadArea": "Teamwork and communications",
       "SubArea": "Calls and online meetings"
     },
@@ -83,6 +142,40 @@
       "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2025-10-14T20:21:16.9977147Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "f008e001-d158-496f-b292-2efc0fb21476",
+          "ApiChange": "Property",
+          "ChangedApiName": "meetingOptionsWebUrl",
+          "ChangeType": "Addition",
+          "Description": "Add the **meetingOptionsWebUrl** property from the [onlineMeetingBase](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeetingBase?view=graph-rest-beta) resource.",
+          "Target": "onlineMeetingBase"
+        },
+        {
+          "Id": "f008e001-d158-496f-b292-2efc0fb21476",
+          "ApiChange": "Property",
+          "ChangedApiName": "meetingOptionsWebUrl",
+          "ChangeType": "Addition",
+          "Description": "Add the **meetingOptionsWebUrl** property from the [virtualEventSession](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventSession?view=graph-rest-beta) resource.",
+          "Target": "virtualEventSession"
+        },
+        {
+          "Id": "f008e001-d158-496f-b292-2efc0fb21476",
+          "ApiChange": "Property",
+          "ChangedApiName": "meetingOptionsWebUrl",
+          "ChangeType": "Addition",
+          "Description": "Add the **meetingOptionsWebUrl** property from the [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeeting?view=graph-rest-beta) resource.",
+          "Target": "onlineMeeting"
+        }
+      ],
+      "Id": "f008e001-d158-496f-b292-2efc0fb21476",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-11-19T14:50:41.9023303Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": "Calls and online meetings"
     },
