@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List directory objects that are assigned [onPremAuthenticationPolicy](../resources/onpremauthenticationpolicy.md)
+List directory objects that are assigned an [onPremAuthenticationPolicy](../resources/onpremauthenticationpolicy.md).
 
 ## Permissions
 
