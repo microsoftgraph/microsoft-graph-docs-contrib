@@ -24,10 +24,6 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 The [driveItem: restore](/graph/api/driveitem-restore) method was expanded to enable restoring a **driveItem** deleted from a **fileStorageContainer** without mapping it to a **recycleBinItem**. This complements existing functionality in [recycleBinItem: restore](/graph/api/filestoragecontainer-restore-recyclebinitem) which continues to work as expected.
 
-### Device and app management | Cloud PC
-
-[Reprovision](/graph/api/cloudpc-reprovision) a specific Cloud PC.
-
 ### Files
 
 Removed the endpoint `/driveitem/retentionLabel` as a supported request URL from the following API topics:
