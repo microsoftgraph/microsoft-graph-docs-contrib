@@ -1750,7 +1750,7 @@
             },
             {
               "name": "Cross-tenant migration",
-              "overview": "../../resources/cross-tenant-migration-overview.md",
+              "overview": "../../resources/crosstenant-migration-overview.md",
               "resources":[
                 "crossTenantMigrationJob",
                 "crossTenantMigrationTask",
