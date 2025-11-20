@@ -31,6 +31,12 @@ The [driveItem: restore](/graph/api/driveitem-restore) method was expanded to en
 - [Get](/graph/api/plannerplan-getusagerights?view=graph-rest-beta&preserve-view=true) the usage rights for a specific [plan](/graph/api/resources/plannerplan?view=graph-rest-beta&preserve-view=true) based on its sensitivity label assignment and the requesting user's permissions.
 - Use the **contentSensitivityLabelAssignment** property on [plannerPlan](/graph/api/resources/plannerplan?view=graph-rest-beta&preserve-view=true) to get or set the sensitivity label assignment for a plan.
 
+### Teamwork and communications | Messaging
+
+- [Start](https://learn.microsoft.com/en-us/graph/api/channel-startmigration?view=graph-rest-beta) the migration of external messages by enabling migration mode in an existing channel.
+- [Start](https://learn.microsoft.com/en-us/graph/api/chat-startmigration?view=graph-rest-beta) the migration of external messages by enabling migration mode in an existing chat.
+- [Complete](https://learn.microsoft.com/en-us/graph/api/chat-completemigration?view=graph-rest-beta) the migration of external messages by removing migration mode from a chat.
+
 ## October 2025: New and generally available
 
 ### Backup storage
