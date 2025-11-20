@@ -299,7 +299,7 @@
             "assignedPlaceMode",
             "dropInPlaceMode",
             "mailboxDetails",
-            "offlinePlaceMode",
+            "unavailablePlaceMode",
             "placeMode",
             "reservablePlaceMode",
             "resourceLink"
@@ -1538,6 +1538,7 @@
                     "privilegedAccessGroupEligibilityScheduleRequest",
                     "privilegedAccessGroupEligibilitySchedule",
                     "privilegedAccessGroupEligibilityScheduleInstance",
+                    "groupResource",
                     "unifiedRoleManagementPolicy",
                     "unifiedRoleManagementPolicyRule",
                     "unifiedRoleManagementPolicyAssignment",
@@ -1750,7 +1751,7 @@
             },
             {
               "name": "Cross-tenant migration",
-              "overview": "../../resources/cross-tenant-migration-overview.md",
+              "overview": "../../resources/crosstenant-migration-overview.md",
               "resources":[
                 "crossTenantMigrationJob",
                 "crossTenantMigrationTask",

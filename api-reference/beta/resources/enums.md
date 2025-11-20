@@ -29,6 +29,15 @@ Namespace: microsoft.graph
 |byteArray|
 |unknownFutureValue|
 
+### placeFeatureEnablement values
+
+|Member|
+|:---|
+|unknown|
+|enabled|
+|disabled|
+|unknownFutureValue|
+
 ### accessReviewPrincipalScopeType values
 
 |Member|
