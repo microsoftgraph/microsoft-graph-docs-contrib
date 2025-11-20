@@ -3,6 +3,88 @@
     {
       "ChangeList": [
         {
+          "Id": "32395157-c113-44fb-8f3c-80f8da0f2c3f",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "placeFeatureEnablement",
+          "ChangeType": "Addition",
+          "Description": "Added the **placeFeatureEnablement** enumeration type.",
+          "Target": "placeFeatureEnablement"
+        },
+        {
+          "Id": "32395157-c113-44fb-8f3c-80f8da0f2c3f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "offlinePlaceMode",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **offlinePlaceMode** resource.",
+          "Target": "offlinePlaceMode"
+        },
+        {
+          "Id": "32395157-c113-44fb-8f3c-80f8da0f2c3f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "unavailablePlaceMode",
+          "ChangeType": "Addition",
+          "Description": "Added the [unavailablePlaceMode](https://learn.microsoft.com/en-us/graph/api/resources/unavailablePlaceMode?view=graph-rest-beta) resource.",
+          "Target": "unavailablePlaceMode"
+        },
+        {
+          "Id": "32395157-c113-44fb-8f3c-80f8da0f2c3f",
+          "ApiChange": "Property",
+          "ChangedApiName": "wifiState",
+          "ChangeType": "Addition",
+          "Description": "Added the **wifiState** property to the [building](https://learn.microsoft.com/en-us/graph/api/resources/building?view=graph-rest-beta) resource.",
+          "Target": "building"
+        },
+        {
+          "Id": "32395157-c113-44fb-8f3c-80f8da0f2c3f",
+          "ApiChange": "Property",
+          "ChangedApiName": "heightAdjustableState",
+          "ChangeType": "Addition",
+          "Description": "Added the **heightAdjustableState** property to the [desk](https://learn.microsoft.com/en-us/graph/api/resources/desk?view=graph-rest-beta) resource.",
+          "Target": "desk"
+        },
+        {
+          "Id": "32395157-c113-44fb-8f3c-80f8da0f2c3f",
+          "ApiChange": "Property",
+          "ChangedApiName": "placeId",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **placeId** property from the [place](https://learn.microsoft.com/en-us/graph/api/resources/place?view=graph-rest-beta) resource.",
+          "Target": "place"
+        },
+        {
+          "Id": "32395157-c113-44fb-8f3c-80f8da0f2c3f",
+          "ApiChange": "Property",
+          "ChangedApiName": "placeId",
+          "ChangeType": "Addition",
+          "Description": "Added the **placeId** property to the [room](https://learn.microsoft.com/en-us/graph/api/resources/room?view=graph-rest-beta) resource.",
+          "Target": "room"
+        },
+        {
+          "Id": "32395157-c113-44fb-8f3c-80f8da0f2c3f",
+          "ApiChange": "Property",
+          "ChangedApiName": "teamsEnabledState",
+          "ChangeType": "Addition",
+          "Description": "Added the **teamsEnabledState** property to the [room](https://learn.microsoft.com/en-us/graph/api/resources/room?view=graph-rest-beta) resource.",
+          "Target": "room"
+        },
+        {
+          "Id": "32395157-c113-44fb-8f3c-80f8da0f2c3f",
+          "ApiChange": "Property",
+          "ChangedApiName": "placeId",
+          "ChangeType": "Addition",
+          "Description": "Added the **placeId** property to the [workspace](https://learn.microsoft.com/en-us/graph/api/resources/workspace?view=graph-rest-beta) resource.",
+          "Target": "workspace"
+        }
+      ],
+      "Id": "32395157-c113-44fb-8f3c-80f8da0f2c3f",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-11-20T04:28:14.4935787Z",
+      "WorkloadArea": "Calendar",
+      "SubArea": "Places"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
           "ApiChange": "Enum type",
           "ChangedApiName": "wifi",

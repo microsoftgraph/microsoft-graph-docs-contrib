@@ -38,7 +38,6 @@ Inherits from [place](place.md).
 | geoCoordinates | [outlookGeoCoordinates](outlookgeocoordinates.md) | Specifies the roomlist location in latitude, longitude, and (optionally) altitude coordinates. |
 | id             | String                                            | Unique identifier for the room list. Read-only. This identifier isn't immutable and can change if there are changes to the mailbox or to the tenant configuration. |
 | phone          | String                                            | The phone number of the room list. |
-| placeId        | String                                            | Unique, immutable identifier for the room list. Read-only. The value of this identifier is equal to the ExternalDirectoryObjectId returned from the Get-Mailbox cmdlet. |
 
 ## Relationships
 
@@ -71,8 +70,7 @@ The following JSON representation shows the resource type.
   "address": {
     "@odata.type": "microsoft.graph.physicalAddress"
   },
-  "emailAddress": "String",
-  "placeId": "String (alternate identifier)"
+  "emailAddress": "String"
 }
 ```
 

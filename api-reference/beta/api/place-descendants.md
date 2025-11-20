@@ -102,7 +102,7 @@ Content-Type: application/json
       "parentId": "ca163ae1-14a3-4e2a-8a97-5f82d672186f",
       "isWheelChairAccessible": false,
       "mode": {
-        "@odata.type": "#microsoft.graph.offlinePlaceMode",
+        "@odata.type": "#microsoft.graph.unavailablePlaceMode",
         "reason": "New"
       }
     },

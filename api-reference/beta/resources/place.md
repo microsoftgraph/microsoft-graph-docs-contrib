@@ -42,7 +42,6 @@ Base type of [building](../resources/building.md), [desk](../resources/desk.md),
 |isWheelChairAccessible |Boolean |Indicates whether the **place** is wheelchair accessible. |
 |parentId |String |The ID of a parent **place**. |
 |phone |String |The phone number of the **place**. |
-|placeId |String |An alternate immutable unique identifier of the **place**. Read-only. |
 |tags |String collection |Custom tags that are associated with the **place** for categorization or filtering. |
 
 ## Relationships
@@ -72,7 +71,6 @@ The following JSON representation shows the resource type.
   "label": "String",
   "parentId": "String",
   "phone": "String",
-  "placeId": "String",
   "tags": ["String"]
 }
 ```
