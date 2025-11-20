@@ -79,6 +79,7 @@ Inherits from [onlineMeetingBase](../resources/onlinemeetingbase.md).
 | meetingTemplateId | String | The ID of the [meeting template](/microsoftteams/create-custom-meeting-template). |
 | participants | [meetingParticipants](meetingparticipants.md) | The participants associated with the online meeting, including the organizer and the attendees. |
 | recordAutomatically | Boolean | Indicates whether to record the meeting automatically. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
+|sensitivityLabelAssignment|[onlineMeetingSensitivityLabelAssignment](../resources/onlinemeetingsensitivitylabelassignment.md)|Specifies the sensitivity label applied to the Teams meeting.|
 | startDateTime | DateTime | The meeting start time in UTC. Required when you create an online meeting. |
 | shareMeetingChatHistoryDefault | [meetingChatHistoryDefaultMode](#meetingchathistorydefaultmode-values) | Specifies whether meeting chat history is shared with participants. Possible values are: `all`, `none`, `unknownFutureValue`. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
 | subject | String | The subject of the online meeting. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
@@ -198,6 +199,9 @@ The following JSON representation shows the resource type.
   "meetingOptionsWebUrl": "String",
   "meetingSpokenLanguageTag": "String",
   "meetingTemplateId": "String",
+  "sensitivityLabelAssignment": {
+      "@odata.type": "microsoft.graph.onlineMeetingSensitivityLabelAssignment"
+  },
   "participants": {"@odata.type": "microsoft.graph.meetingParticipants"},
   "recordAutomatically": "Boolean",
   "shareMeetingChatHistoryDefault": "String",

@@ -13,6 +13,15 @@ ms.custom: sfi-ropc-nochange
 
 Namespace: microsoft.graph
 
+### placeFeatureEnablement values
+
+|Member|
+|:---|
+|unknown|
+|enabled|
+|disabled|
+|unknownFutureValue|
+
 ### accessReviewPrincipalScopeType values
 
 |Member|
