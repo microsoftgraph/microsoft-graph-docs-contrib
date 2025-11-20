@@ -73,6 +73,7 @@ Content-Type: application/json
   },
   "roles": ["write"]
 }
+```
 ---
 
 ### Response
