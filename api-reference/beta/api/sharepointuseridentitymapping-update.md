@@ -65,7 +65,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-The following example shows a request that includes both updates and removals using the `@removed` annotation.
+The following example shows a request that includes both updates and removals using the **@removed** annotation.
 
 <!-- {
   "blockType": "request",
