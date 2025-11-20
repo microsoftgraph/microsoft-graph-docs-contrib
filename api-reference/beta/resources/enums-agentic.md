@@ -19,9 +19,9 @@ Namespace: microsoft.graph.agentic
 |notAgentic|
 |agenticApp|
 |agenticAppInstance|
+|unknownFutureValue|
 |agentIdentityBlueprintPrincipal|
 |agentIDuser|
-|unknownFutureValue|
 
 <!-- {
   "type": "#page.annotation",
