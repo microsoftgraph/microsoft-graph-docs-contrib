@@ -51,7 +51,7 @@ In the request body, supply a JSON representation of the following parameters.
 
 | Parameter       | Type | Description |
 |:---------------|:--------|:--------|
-|conversationCreationDateTime|DateTimeOffset|The minimum timestamp for the messages to be migrated. The timestamp must be older than the current **createdDateTime** of the channel. If not provided, the current date and time is used.|
+|conversationCreationDateTime|DateTimeOffset|The minimum timestamp for the messages to be migrated. The timestamp must be older than the current **createdDateTime** of the channel. If not provided, the current date and time is used. Optional.|
 
 ## Response
 
