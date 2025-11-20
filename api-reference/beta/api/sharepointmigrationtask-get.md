@@ -1,6 +1,6 @@
 ---
 title: "Get sharePointMigrationTask"
-description: "Get sharepointMigrationTask by ID."
+description: "Get a sharePointMigrationTask that was previously created, using the task ID."
 author: "Joey-King"
 ms.date: 11/12/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Gets the sharePointMigrationTask that was previously created, given the task's ID. The returned sharePointMigrationTask includes the source and target site URLs, migration status, optional timestamps (startedDateTime and finishedDateTime), and error details about issues during execution.
+Get a [sharePointMigrationTask](../resources/sharepointmigrationtask.md) that was previously created, using the task ID. The returned **sharePointMigrationTask** object includes the source and target site URLs, migration status, optional timestamps (**startedDateTime** and **finishedDateTime**), and error details about issues during processing.
 
 ## Permissions
 
@@ -93,7 +93,7 @@ Content-Type: application/json
     "targetOrganizationId": "3ef4e46d-13a3-4895-b6ea-a74a20hu728h",
     "targetOrganizationHost": "https://fabrico-my.sharepoint.com",
     "sourceSiteUrl": "https://contoso.sharepoint.com/sites/IT",
-    "targetSiteUrl": "https://fabrico.sharepoint.com/sites/IT",
+    "targetSiteUrl": "https://fabrico.sharepoint.com/sites/IT"
   }
 }
 ```
