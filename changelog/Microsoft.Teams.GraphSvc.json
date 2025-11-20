@@ -3141,6 +3141,30 @@
           "ChangeType": "Addition",
           "Description": "Added the **migrationMode** property to the [channel](https://learn.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) resource.",
           "Target": "channel"
+        },
+        {
+          "Id": "3e5eeaf8-7046-4713-ac62-2ddf24eb26f0",
+          "ApiChange": "Method",
+          "ChangedApiName": "startMigration",
+          "ChangeType": "Addition",
+          "Description": "Added the [channel: startMigration](https://learn.microsoft.com/en-us/graph/api/channel-startmigration?view=graph-rest-beta) method to the [channel](https://learn.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) resource.",
+          "Target": "channel"
+        },
+        {
+          "Id": "3e5eeaf8-7046-4713-ac62-2ddf24eb26f0",
+          "ApiChange": "Method",
+          "ChangedApiName": "startMigration",
+          "ChangeType": "Addition",
+          "Description": "Added the [chat: startMigration](https://learn.microsoft.com/en-us/graph/api/chat-startmigration?view=graph-rest-beta) method to the [chat](https://learn.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-beta) resource.",
+          "Target": "chat"
+        },
+        {
+          "Id": "3e5eeaf8-7046-4713-ac62-2ddf24eb26f0",
+          "ApiChange": "Method",
+          "ChangedApiName": "completeMigration",
+          "ChangeType": "Addition",
+          "Description": "Added the [chat: completeMigration](https://learn.microsoft.com/en-us/graph/api/chat-completemigration?view=graph-rest-beta) method to the [chat](https://learn.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-beta) resource.",
+          "Target": "chat"
         }
       ],
       "Id": "24e2cf0f-cc2d-4bc1-8dce-7fd083e5db51",
