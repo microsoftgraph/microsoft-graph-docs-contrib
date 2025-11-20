@@ -31,7 +31,7 @@ The [List allMembers](/graph/api/channel-list-allmembers) API returns a comprehe
 
 ### The originalSourceMembershipUrl property
 
-You can check the **`@microsoft.graph.originalSourceMembershipUrl`** property to identify whether a member of a shared or private channel is direct or indirect. This property identifies the source of a member’s access to the channels.
+You can check the **@microsoft.graph.originalSourceMembershipUrl** property to identify whether a member of a shared or private channel is direct or indirect. This property identifies the source of a member’s access to the channels.
 
 | Member | @microsoft.graph.originalSourceMembershipUrl scope |
 |:-------|:--------|
@@ -59,7 +59,7 @@ You can subscribe to membership changes using the Microsoft Graph change notific
 > [!IMPORTANT]
 > When a channel is shared or unshared, refresh the [List allMembers](/graph/api/channel-list-allmembers) API, use the [List sharedWithChannelTeamInfo](graph/api/sharedwithchannelteaminfo-list) subscription resource and [List allowedMembers](/graph/api/sharedwithchannelteaminfo-list-allowedmembers) APIs for efficient updates.
 
-For more information, see [Get change notifications for channel membership](/graph/teams-changenotifications-channelmembership) and [Apps in Shared and Private Channels](/microsoftteams/platform/build-apps-for-shared-private-channels?tabs=tabs%2Cexternal-users%2Csharedchannel)
+For more information, see [Get change notifications for channel membership](/graph/teams-changenotifications-channelmembership) and [Apps in shared and private channels](/microsoftteams/platform/build-apps-for-shared-private-channels)
 
 ## Related APIs and integration
 
@@ -70,4 +70,4 @@ For more information, see [Get change notifications for channel membership](/gra
 ## Related content
 
 - [Microsoft Graph overview for Teams](/graph/teams-concept-overview)
-- [Set up notifications for changes in resource data](change-notifications-overview.md).
+- [Set up notifications for changes in resource data](change-notifications-overview.md)
