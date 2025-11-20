@@ -20,6 +20,7 @@ Namespace: microsoft.graph
 |unknown|
 |enabled|
 |disabled|
+|unknownFutureValue|
 
 ### accessReviewPrincipalScopeType values
 
