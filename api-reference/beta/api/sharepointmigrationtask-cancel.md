@@ -1,6 +1,6 @@
 ---
 title: "sharePointMigrationTask: cancel"
-description: "Cancel a sharepointMigrationTask that was previously created, given the task's ID, when invoked at the source organization"
+description: "Cancel a sharePointMigrationTask that moves a specific object from a source organization to a target organization."
 author: "Joey-King"
 ms.date: 11/12/2025
 ms.localizationpriority: medium
