@@ -69,7 +69,7 @@ If successful, this method returns a `200 OK` response code and an [identityUser
 }
 -->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identity/b2cUserFlows/{id}/userAttributeAssignments/{id}
 ```
 
@@ -146,7 +146,7 @@ Content-Type: application/json
 }
 -->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identity/b2cUserFlows/{id}/userAttributeAssignments/{id}?$expand=userAttribute
 ```
 

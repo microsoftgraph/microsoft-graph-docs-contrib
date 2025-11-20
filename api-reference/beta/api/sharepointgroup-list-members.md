@@ -70,7 +70,7 @@ The following example shows a request.
   "blockType": "request",
   "name": "list_sharepointgroup_members"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/sharePointGroups/10/members
 ```
 

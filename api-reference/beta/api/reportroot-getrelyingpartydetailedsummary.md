@@ -78,7 +78,7 @@ The following example shows a request.
   "name": "reportrootthis.getrelyingpartydetailedsummary"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/reports/getRelyingPartyDetailedSummary(period='D7')
 ```
 

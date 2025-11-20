@@ -59,7 +59,7 @@ The following example shows a request.
   "name": "get_ediscoverysearch"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/security/cases/ediscoveryCases/58399dff-cebe-478f-b1af-d3227f1fd645/searches/60150269-9758-4439-9bc4-453c864d082f
 ```
 

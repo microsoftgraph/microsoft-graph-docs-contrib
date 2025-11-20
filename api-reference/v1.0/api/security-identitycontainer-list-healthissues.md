@@ -115,7 +115,7 @@ The following example shows a request.
   "name": "list_healthissues"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/security/identities/healthIssues
 ```
 

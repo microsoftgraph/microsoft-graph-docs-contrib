@@ -1,7 +1,7 @@
 ---
 title: "List fido2AuthenticationMethod"
 description: "Retrieve a list of the fido2AuthenticationMethod objects and their properties."
-author: "calvinlui"
+author: "hanki71"
 ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
@@ -75,7 +75,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
   "name": "get_fido2authenticationmethod_2"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/authentication/fido2Methods
 ```
 
@@ -134,7 +134,8 @@ Content-type: application/json
       "attestationCertificates": [
           "dbe793efdf1945e2df25d93653a1e8a3268a9075"
       ],
-      "attestationLevel": "attested"
+      "attestationLevel": "attested",
+      "passkeyType": "deviceBound"
     },
     {
       "id": "_jpuR-TGZgk6aQCLF3BQjA2",
@@ -145,7 +146,8 @@ Content-type: application/json
       "attestationCertificates": [
           "b479e7652167f574296e76bfa76731b8ccd22ed7"
       ],
-      "attestationLevel": "attested"
+      "attestationLevel": "attested",
+      "passkeyType": "deviceBound"
     }
   ]
 }

@@ -66,7 +66,7 @@ If successful, this method returns a `200 OK` response code and a [caseSettings]
 }
 -->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/5b840b94-f821-4c4a-8cad-3a90062bf51a/settings
 ```
 

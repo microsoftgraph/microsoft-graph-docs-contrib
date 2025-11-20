@@ -60,7 +60,7 @@ If successful, this method returns a `200 OK` response code and a [richLongRunni
   "name": "get_richlongrunningoperation"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/sites/{siteId}/operations/{richLongRunningOperation-ID}
 ```
 

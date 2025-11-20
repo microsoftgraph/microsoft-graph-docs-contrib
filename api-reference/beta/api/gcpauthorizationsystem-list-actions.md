@@ -65,7 +65,7 @@ The following example shows a request.
   "name": "list_gcpauthorizationsystemtypeaction"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/external/authorizationSystems/{id}/microsoft.graph.gcpAuthorizationSystem/actions
 ```
 
@@ -135,7 +135,7 @@ The following example shows a request.
   "name": "list_gcpauthorizationsystemtypeaction2"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/external/authorizationSystems/{id}/microsoft.graph.gcpAuthorizationSystem/actions?$filter=service/id eq 'compute'
 ```
 

@@ -69,7 +69,7 @@ The following example shows a request.
   "name": "placethis.descendants"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/places/ca163ae1-14a3-4e2a-8a97-5f82d672186f/descendants/microsoft.graph.desk
 ```
 

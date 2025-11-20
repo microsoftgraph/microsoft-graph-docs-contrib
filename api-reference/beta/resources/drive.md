@@ -31,7 +31,8 @@ Users without a OneDrive license may not have a default drive available.
 | [List changes][item-changes]                               | [driveItem][] collection    | List changes for all driveItems in the drive.|
 | [Search][item-search]                                      | [driveItem][] collection    | Search for driveItems in a drive.|
 | [Get special folder](../api/drive-get-specialfolder.md)    | [driveItem][]               | Access a special folder by its canonical name.|
-
+| [Recent (deprecated)](../api/drive-recent.md)    | [driveItem](../resources/driveitem.md) collection    | List a set of items recently used by the signed-in user.|
+| [Shared with me (deprecated)](../api/drive-sharedwithme.md)    | [driveItem](../resources/driveitem.md) collection  | Get a list of [driveItem](../resources/driveitem.md) objects shared with the owner of a [drive](../resources/drive.md). |
 
 ## Properties
 

@@ -62,7 +62,7 @@ The following example shows a request.
   "name": "protectionunitbase_get"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/solutions/backupRestore/protectionUnits/89014d8c-71fe-4d00-a01a-31850bc5b32c
 ```
 

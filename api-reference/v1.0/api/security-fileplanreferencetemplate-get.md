@@ -58,7 +58,7 @@ Here's an example of a request.
   "name": "get_fileplanreferencetemplate"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/security/labels/filePlanReferences/b1f7b518-a44f-1d4b-c6f1-ab8771d3907c
 ```
 

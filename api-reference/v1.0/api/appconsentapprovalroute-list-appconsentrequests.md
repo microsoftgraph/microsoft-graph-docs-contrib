@@ -62,7 +62,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
   "name": "list_appconsentrequest"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/identityGovernance/appConsent/appConsentRequests
 ```
 
@@ -150,7 +150,7 @@ Content-Type: application/json
   "name": "list_appconsentrequest_userconsentrequest_InProgress"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/identityGovernance/appConsent/appConsentRequests?$filter=userConsentRequests/any (u:u/status eq 'InProgress')
 ```
 

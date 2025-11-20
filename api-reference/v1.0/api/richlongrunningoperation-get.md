@@ -62,7 +62,7 @@ The following example shows a request.
   "sampleKeys": ["contentTypeCopy,0x010100298A15181454D84EBB62EDD7559FCBFE", "root"]
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/sites/root/operations/contentTypeCopy,0x010100298A15181454D84EBB62EDD7559FCBFE
 ```
 
