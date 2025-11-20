@@ -125,6 +125,11 @@ Introducing the Microsoft MCP Server for Enterprise - the official MCP server fo
 
 Use the `Accept-Language` header with the [Create virtualEventWebinar](/graph/api/virtualeventsroot-post-webinars?view=graph-rest-beta&preserve-view=true) and [Create virtualEventTownhall](/graph/api/virtualeventsroot-post-townhalls?view=graph-rest-beta&preserve-view=true) methods to specify an acceptable human language for the response.
 
+### Teamwork and communications | Channel Members
+
+- [Get](/graph/api/channel-get-allmember?view=graph-rest-beta&preserve-view=true) a specific member from a channel's allMembers collection using the new endpoint `GET /teams/{team-id}/channels/{channel-id}/allMembers/{membership-id}`. This API provides unified access to both direct and indirect members across all channel types, including shared channels.
+- Use the **@microsoft.graph.originalSourceMembershipUrl** property on [conversationMember](/graph/api/resources/conversationmember?view=graph-rest-beta&preserve-view=true) to identify the source team for indirect members in shared channels.
+
 ## October 2025: New and generally available
 
 ### Backup storage
