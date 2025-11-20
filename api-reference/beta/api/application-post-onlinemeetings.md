@@ -196,7 +196,8 @@ Content-Type: application/json
     "isPasscodeRequired": false,
     "joinMeetingId": "1234567890",
     "passcode": null
-  }
+  },
+  "meetingSpokenLanguageTag": "en-US"
 }
 ```
 >**Note:** If 'Accept-Language: ja' is specified to indicate Japanese, for example, the response will include the following.
