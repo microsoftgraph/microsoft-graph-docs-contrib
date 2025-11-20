@@ -337,7 +337,8 @@ Content-Length: 1574
   "isEntryExitAnnounced": true,
   "allowedPresenters": "everyone",
   "allowMeetingChat": "enabled",
-  "allowTeamworkReactions": true
+  "allowTeamworkReactions": true,
+  "meetingOptionsWebUrl": "https://teams.microsoft.com/meetingOptions/?meetingId=abc123"
 }
 ```
 >**Note:** If 'Accept-Language: ja' is specified to indicate Japanese, for example, the response will include the following.
@@ -417,6 +418,7 @@ The following example shows the response.
         "joinMeetingId": "1234567890",
         "passcode": null
     },
+    "meetingOptionsWebUrl": "https://teams.microsoft.com/meetingOptions/?meetingId=abc123"
     "meetingSpokenLanguageTag": "en-US"
 }
 ```
@@ -487,7 +489,8 @@ The following example shows the response.
                 "isPasscodeRequired": false,
                 "joinMeetingId": "1234567890",
                 "passcode": null
-            }
+            },
+            "meetingOptionsWebUrl": "https://teams.microsoft.com/meetingOptions/?meetingId=abc123"
         }
     ]
 }
@@ -597,7 +600,8 @@ Content-Type: application/json
                 "isPasscodeRequired": false,
                 "joinMeetingId": "1234567890",
                 "passcode": null
-            }
+            },
+            "meetingOptionsWebUrl": "https://teams.microsoft.com/meetingOptions/?meetingId=abc123"
         }
     ]
 }
