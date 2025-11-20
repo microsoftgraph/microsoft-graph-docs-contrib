@@ -85,7 +85,7 @@ HTTP/1.1 204 No Content
 
 ### Example 2: Start the migration when a channel is already in migration mode
 
-The following example shows how to start the migration when a channel is already in migration mode. This request will fail with 400 Bad Request.
+The following example shows how to start the migration when a channel is already in migration mode. This request fails with a `400 Bad Request` response.
 
 #### Request
 

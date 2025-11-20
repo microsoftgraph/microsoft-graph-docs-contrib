@@ -83,7 +83,8 @@ HTTP/1.1 204 No Content
 
 ### Example 2: Complete the migration when a chat is already in migration mode
 
-The following example shows how to complete the migration when a chat is already in migration mode. This request will fail with 400 Bad Request.
+The following example shows how to complete the migration when a chat is already in migration mode. This request fails with a `400 Bad Request` response.
+
 #### Request
 
 The following example shows a request.
