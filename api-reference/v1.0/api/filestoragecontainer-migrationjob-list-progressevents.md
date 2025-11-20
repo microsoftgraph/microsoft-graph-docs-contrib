@@ -12,7 +12,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Get a list of the sharePointMigrationEvent objects and their properties. The migration events remain valid for 4 days and can be queried as frequently as needed within validity period.
+Get a list of the sharePointMigrationEvent objects and their properties. The migration events remain valid for four days and can be queried as frequently as needed within validity period.
 
 ## Permissions
 

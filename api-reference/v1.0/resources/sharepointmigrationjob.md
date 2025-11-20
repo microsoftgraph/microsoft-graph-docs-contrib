@@ -1,6 +1,6 @@
 ---
 title: "sharePointMigrationJob resource type"
-description: "Represents a SharePoint migration timer job that is queued for later processing."
+description: "Represents a SharePoint migration timer job that's queued for later processing."
 author: "wenzhou"
 ms.date: 11/17/2025
 ms.localizationpriority: medium
@@ -13,7 +13,7 @@ toc.title: SharePoint migration job
 
 Namespace: microsoft.graph
 
-Represents a SharePoint migration timer job that is queued for later processing. A migration import job moves content to SharePoint. An asynchronous metadata read (AMR) job, on the contrary, exports content from SharePoint.
+Represents a SharePoint migration timer job that's queued for later processing. A migration import job moves content to SharePoint. An asynchronous metadata read (AMR) job, on the contrary, exports content from SharePoint.
 
 The job might take anywhere from a few minutes to several hours to complete and is automatically removed from the queue upon completion; however, progress events remain accessible for up to four days.
 

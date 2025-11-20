@@ -642,7 +642,20 @@
         "fileStorageContainer",
         "sharedDriveItem",
         "recycleBin",
-        "recycleBinItem"
+        "recycleBinItem",
+        "sharePointMigrationEvent",
+        "sharePointMigrationFinishManifestFileUploadEvent",
+        "sharePointMigrationJob",
+        "sharePointMigrationJobCancelledEvent",
+        "sharePointMigrationJobDeletedEvent",
+        "sharePointMigrationJobErrorEvent",
+        "sharePointMigrationJobPostponedEvent",
+        "sharePointMigrationJobProgressEvent",
+        "sharePointMigrationJobQueuedEvent",
+        "sharePointMigrationJobStartEvent"
+      ],
+      "complexTypes": [
+        "sharePointMigrationContainerInfo"
       ]
     },
     {
