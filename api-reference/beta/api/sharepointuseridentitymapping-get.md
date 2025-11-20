@@ -39,7 +39,7 @@ GET /solutions/sharePoint/migrations/crossOrganizationUserMappings(sourceUserPri
 
 ## Optional query parameters
 
-This method supports the `$select` OData query parameter to help customize the response. You can use `$select` to choose specific properties such as `targetUserIdentity`, `sourceUserIdentity`, or `userType`. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` OData query parameter to help customize the response. You can use `$select` to choose specific properties such as **targetUserIdentity**, **sourceUserIdentity**, or **userType**. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
