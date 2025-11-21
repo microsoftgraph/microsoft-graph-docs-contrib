@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the recurrences from your own work plan via the **recurrences** navigation property.
+Get the [recurrences](../resources/workplanrecurrence.md) from your own work plan via the **recurrences** navigation property.
 
 ## Permissions
 
@@ -65,6 +65,10 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 The following example shows a request.
 
+<!-- {
+  "blockType": "request",
+  "name": "workhoursandlocationssetting_list_recurrences"
+} -->
 ```http
 GET https://graph.microsoft.com/beta/me/settings/workHoursAndLocations/recurrences
 ```
