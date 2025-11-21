@@ -66,6 +66,10 @@ If successful, this method returns a `200 OK` response code and an updated [work
 
 The following example shows a request to update the maximum level of work location details that can be shared.
 
+<!-- {
+  "blockType": "request",
+  "name": "workhoursandlocationssetting_update"
+} -->
 ```http
 PATCH https://graph.microsoft.com/beta/me/settings/workHoursAndLocations
 Content-Type: application/json
