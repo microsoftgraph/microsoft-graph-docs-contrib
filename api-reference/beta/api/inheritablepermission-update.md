@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of an [inheritablePermission](../resources/inheritablepermission.md) object on an agent identity blueprint.
+Update the properties of an [inheritablePermission](../resources/inheritablepermission.md) object on an agent identity blueprint. When moving to a more restrictive inheritance pattern, such as from `allAllowedScopes` to `enumeratedScopes` or `noScopes`, any agent identities that require access will require new consent grant to acquire the newly restricted scopes.
 
 
 ## Permissions
