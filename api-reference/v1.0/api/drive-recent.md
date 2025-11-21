@@ -13,7 +13,7 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 > [!CAUTION]
-> The **recent** API is deprecated and will stop returning data after November, 2027.
+> The **recent** API is deprecated and will operate in a degraded state until November, 2026 after which it will stop returning data.
 
 List a set of items recently used by the signed-in user.
 This collection includes items that are in the user's drive and items they have access to from other drives.

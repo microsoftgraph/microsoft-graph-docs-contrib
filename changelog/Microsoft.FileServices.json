@@ -7,7 +7,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "sharedWithMe",
           "ChangeType": "Deprecation",
-          "Description": "Deprecated the [sharedWithMe](https://learn.microsoft.com/en-us/graph/api/drive-sharedwithme) method on the [drive](https://learn.microsoft.com/en-us/graph/api/resources/drive) resource. This API is deprecated and will stop returning data after November, 2027.",
+          "Description": "Deprecated the [sharedWithMe](https://learn.microsoft.com/en-us/graph/api/drive-sharedwithme) method on the [drive](https://learn.microsoft.com/en-us/graph/api/resources/drive) resource. This API is deprecated and will operate in a degraded state until November, 2026 after which it will stop returning data.",
           "Target": "drive"
         },
         {
@@ -15,7 +15,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "recent",
           "ChangeType": "Deprecation",
-          "Description": "Deprecated the [recent](https://learn.microsoft.com/en-us/graph/api/drive-recent) method on the [drive](https://learn.microsoft.com/en-us/graph/api/resources/drive) resource. This API is deprecated and will stop returning data after November, 2027.",
+          "Description": "Deprecated the [recent](https://learn.microsoft.com/en-us/graph/api/drive-recent) method on the [drive](https://learn.microsoft.com/en-us/graph/api/resources/drive) resource. This API is deprecated and will operate in a degraded state until November, 2026 after which it will stop returning data.",
           "Target": "drive"
         }
       ],
@@ -33,7 +33,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "sharedWithMe",
           "ChangeType": "Deprecation",
-          "Description": "Deprecated the [sharedWithMe](https://learn.microsoft.com/en-us/graph/api/drive-sharedwithme?view=graph-rest-beta) method on the [drive](https://learn.microsoft.com/en-us/graph/api/resources/drive?view=graph-rest-beta) resource. This API is deprecated and will stop returning data after November, 2027.",
+          "Description": "Deprecated the [sharedWithMe](https://learn.microsoft.com/en-us/graph/api/drive-sharedwithme?view=graph-rest-beta) method on the [drive](https://learn.microsoft.com/en-us/graph/api/resources/drive?view=graph-rest-beta) resource. This API is deprecated and will operate in a degraded state until November, 2026 after which it will stop returning data.",
           "Target": "drive"
         },
         {
@@ -41,7 +41,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "recent",
           "ChangeType": "Deprecation",
-          "Description": "Deprecated the [recent](https://learn.microsoft.com/en-us/graph/api/drive-recent?view=graph-rest-beta) method on the [drive](https://learn.microsoft.com/en-us/graph/api/resources/drive?view=graph-rest-beta) resource. This API is deprecated and will stop returning data after November, 2027.",
+          "Description": "Deprecated the [recent](https://learn.microsoft.com/en-us/graph/api/drive-recent?view=graph-rest-beta) method on the [drive](https://learn.microsoft.com/en-us/graph/api/resources/drive?view=graph-rest-beta) resource. This API is deprecated and will operate in a degraded state until November, 2026 after which it will stop returning data.",
           "Target": "drive"
         }
       ],
