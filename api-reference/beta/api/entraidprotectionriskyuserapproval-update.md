@@ -38,7 +38,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-PATCH /identityGovernance/entitlementManagement/entraIdProtectionRiskyUserApprovals/
+PUT /identityGovernance/entitlementManagement/controlConfigurations/entraIdProtectionRiskyUserApproval
 Content-Type: application/json
 
 {
@@ -62,7 +62,6 @@ The following table shows the properties that can be updated for an [entraIdProt
 
 |Property|Type|Description|
 |:---|:---|:---|
-|isEnabled|Boolean|Indicates whether the control configuration is enabled.|
 |isApprovalRequired|Boolean|Indicates whether approval is required for risky users.|
 |minimumRiskLevel|riskLevel|The minimum risk level for which approval is required. The possible values are: `low`, `medium`, `high`, `hidden`, `none`, `unknownFutureValue`.|
 
@@ -82,10 +81,12 @@ The following example shows a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/entraIdProtectionRiskyUserApprovals
+PUT https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/controlConfigurations/entraIdProtectionRiskyUserApproval
 Content-Type: application/json
 
 {
+  "@odata.type": "#microsoft.graph.entraIdProtectionRiskyUserApproval",
+  "id": "EntraIdProtectionRiskyUserApproval",
   "isApprovalRequired": true,
   "minimumRiskLevel": "medium"
 }
@@ -108,9 +109,9 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://localhost:44319/api/v1/$metadata#controlConfigurations/microsoft.graph.entraIdProtectionRiskyUserApproval/$entity",
+  "@odata.context": "https://graph.microsoft.com/stagingbeta/$metadata#identityGovernance/entitlementManagement/controlConfigurations/$entity",
   "@odata.type": "#microsoft.graph.entraIdProtectionRiskyUserApproval",
-  "id": "637f56eb-0126-4cec-8e39-26d78fb978ff2",
+  "id": "EntraIdProtectionRiskyUserApproval",
   "createdBy": "kayat@elmdev.com",
   "createdDateTime": "2025-10-29T09:50:23Z",
   "modifiedBy": "kayat@elmdev.com",

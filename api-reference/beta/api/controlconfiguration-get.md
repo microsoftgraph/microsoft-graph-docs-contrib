@@ -71,7 +71,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/controlConfigurations/12345678-1234-1234-1234-123456789012
+GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/controlConfigurations/insiderriskyapproval
 ```
 
 ### Response
@@ -91,7 +91,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#controlConfigurations/microsoft.graph.insiderRiskyUserApproval/$entity",
+  "@odata.context": "https://graph.microsoft.com/sbeta/$metadata#identityGovernance/entitlementManagement/controlConfigurations/$entity",
   "@odata.type": "#microsoft.graph.insiderRiskyUserApproval",
   "id": "InsiderRiskyUserApproval",
   "isEnabled": true,

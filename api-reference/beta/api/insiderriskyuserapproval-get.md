@@ -38,7 +38,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /identityGovernance/entitlementManagement/insiderRiskyUserApprovals/
+GET /identityGovernance/entitlementManagement/controlConfigurations/insiderRiskUserApproval
 ```
 
 ## Optional query parameters
@@ -71,7 +71,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/insiderRiskyUserApprovals/
+GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/controlConfigurations/insiderRiskUserApproval
 ```
 
 ### Response
@@ -91,9 +91,9 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#controlConfigurations/microsoft.graph.insiderRiskyUserApproval/$entity",
+  "@odata.context": "https://graph.microsoft.com/stagingbeta/$metadata#identityGovernance/entitlementManagement/controlConfigurations/$entity",
   "@odata.type": "#microsoft.graph.insiderRiskyUserApproval",
-  "id": "9c83db23-df66-4769-92a8-5c13d30e0bec",
+  "id": "InsiderRiskUserApproval",
   "isEnabled": true,
   "createdBy": "kayat@elmdev.com",
   "createdDateTime": "2025-10-20T13:34:00Z",

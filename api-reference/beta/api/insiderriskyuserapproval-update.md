@@ -38,7 +38,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-PATCH /identityGovernance/entitlementManagement/insiderRiskyUserApprovals/{insiderRiskyUserApprovalId}
+PUT /identityGovernance/entitlementManagement/controlConfigurations/insiderRiskUserApproval
 ```
 
 ## Request headers
@@ -56,7 +56,6 @@ The following table shows the properties that can be updated for an [insiderRisk
 
 |Property|Type|Description|
 |:---|:---|:---|
-|isEnabled|Boolean|Indicates whether the control configuration is enabled. Inherited from [controlConfiguration](../resources/controlconfiguration.md).|
 |isApprovalRequired|Boolean|Indicates whether approval is required for risky users.|
 |minimumRiskLevel|purviewInsiderRiskManagementLevel|The minimum risk level for which approval is required. The possible values are: `none`, `minor`, `moderate`, `elevated`, `unknownFutureValue`.|
 
@@ -76,10 +75,12 @@ The following example shows a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/insiderRiskyUserApprovals/12c97a0b-be3a-4802-bddd-aaef83e35c09
+PUT https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/controlConfigurations/insiderRiskUserApproval
 Content-Type: application/json
 
 {
+  "@odata.type": "#microsoft.graph.insiderRiskUserApproval",
+  "id": "InsiderRiskUserApproval ",
   "isApprovalRequired": true,
   "minimumRiskLevel": "elevated"
 }
@@ -102,9 +103,9 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#controlConfigurations/microsoft.graph.insiderRiskyUserApproval/$entity",
+  "@odata.context": "https://graph.microsoft.com/stagingbeta/$metadata#identityGovernance/entitlementManagement/controlConfigurations/$entity",
   "@odata.type": "#microsoft.graph.insiderRiskyUserApproval",
-  "id": "12c97a0b-be3a-4802-bddd-aaef83e35c09",
+  "id": "InsiderRiskUserApproval",
   "createdBy": "kayat@elmdev.com",
   "createdDateTime": "2025-11-04T11:00:00Z",
   "modifiedBy": "kayat@elmdev.com",

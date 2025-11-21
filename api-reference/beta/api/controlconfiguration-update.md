@@ -38,7 +38,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-Put /identityGovernance/entitlementManagement/controlConfigurations/{controlConfigurationId}
+PUT /identityGovernance/entitlementManagement/controlConfigurations/{controlConfigurationId}
 ```
 
 ## Request headers
@@ -78,10 +78,10 @@ PUT https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/co
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.insiderRiskyUserApproval",
-    "id": "InsiderRiskyUserApproval",
-    "isApprovalRequired": true,
-    "minimumRiskLevel": "moderate"
+  "@odata.type": "https://graph.microsoft.com/beta/$metadata#identityGovernance/entitlementManagement/controlConfigurations/$entity",
+  "id": "InsiderRiskyUserApproval",
+  "isApprovalRequired": true,
+  "minimumRiskLevel": "moderate"
 }
 ```
 
