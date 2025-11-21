@@ -24,7 +24,7 @@ Inherits from [inheritableScopes](../resources/inheritablescopes.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |kind|scopeCollectionKind|Always `enumerated` for this derived type. Inherited from [inheritableScopes](../resources/inheritablescopes.md).|
-|scopes|String collection|Required. Nonempty list of delegated permission scope identifiers published by the resource application to inherit. Entries must be unique and must not include any [globally blocked scopes](../resources/agentid-platform-overview#microsoft-graph-permissions-blocked-for-agents).|
+|scopes|String collection|Required. Nonempty list of delegated permission scope identifiers published by the resource application to inherit. Entries must be unique and must not include any [globally blocked scopes](../resources/agentid-platform-overview.md).|
 
 ## Relationships
 None.
