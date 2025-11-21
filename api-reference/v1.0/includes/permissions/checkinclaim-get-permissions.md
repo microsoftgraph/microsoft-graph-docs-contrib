@@ -7,5 +7,5 @@ ms.localizationpriority: medium
 |Permission type|Least privileged permissions|Higher privileged permissions|
 |:---|:---|:---|
 |Delegated (work or school account)|Calendars.ReadWrite|Not available.|
-|Delegated (personal Microsoft account)|Calendars.ReadWrite|Not available.|
-|Application|Calendars.ReadWrite|Not available.|
+|Delegated (personal Microsoft account)|Not supported.|Not available.|
+|Application|Not supported.|Not available.|
