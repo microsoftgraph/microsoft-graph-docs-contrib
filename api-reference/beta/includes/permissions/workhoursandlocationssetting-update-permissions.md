@@ -4,7 +4,6 @@ ms.topic: include
 ms.localizationpriority: medium
 ---
 
-<!-- markdownlint-disable MD041-->
 
 | Permission type | Least privileged permissions | Higher privileged permissions |
 |:----------------|:-----------------------------|:------------------------------|
