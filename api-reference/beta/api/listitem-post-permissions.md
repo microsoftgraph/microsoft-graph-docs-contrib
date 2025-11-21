@@ -56,7 +56,8 @@ The following example shows a request.
 
 <!-- {
   "blockType": "request",
-  "name": "create_permission_from_"
+  "name": "listitem_post_permissions",
+  "sampleKeys": ["contoso.sharepoint.com,48f1898f-77d9-4a1b-bddc-1f49bb6dc134,7206fc09-e4af-48b3-8730-ed7321396d7a"]
 }
 -->
 ```http
