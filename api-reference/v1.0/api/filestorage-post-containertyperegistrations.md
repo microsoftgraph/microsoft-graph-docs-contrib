@@ -89,7 +89,7 @@ The following example shows a request.
 }
 -->
 ```http
-PUT https://graph.microsoft.com/beta/storage/fileStorage/containerTypeRegistrations/de988700-d700-020e-0a00-0831f3042f00
+PUT https://graph.microsoft.com/v1.0/storage/fileStorage/containerTypeRegistrations/de988700-d700-020e-0a00-0831f3042f00
 Content-Type: application/json
 
 {
@@ -176,7 +176,7 @@ The following example shows a request.
 }
 -->
 ```http
-PUT https://graph.microsoft.com/beta/storage/fileStorage/containerTypeRegistrations/52a2630c-5e6a-41ff-8645-15406bafe66a
+PUT https://graph.microsoft.com/v1.0/storage/fileStorage/containerTypeRegistrations/52a2630c-5e6a-41ff-8645-15406bafe66a
 Content-Type: application/json
 
 {

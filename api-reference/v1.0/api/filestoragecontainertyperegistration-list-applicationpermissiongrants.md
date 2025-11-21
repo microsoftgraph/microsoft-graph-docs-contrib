@@ -71,7 +71,7 @@ The following example shows how to list permission grants associated with a **fi
 }
 -->
 ```http
-GET https://graph.microsoft.com/beta/storage/fileStorage/containerTypeRegistrations/21b52d99-7114-4c47-80b3-362b6a0bba3a/applicationPermissionGrants
+GET https://graph.microsoft.com/v1.0/storage/fileStorage/containerTypeRegistrations/21b52d99-7114-4c47-80b3-362b6a0bba3a/applicationPermissionGrants
 ```
 
 # [C#](#tab/csharp)

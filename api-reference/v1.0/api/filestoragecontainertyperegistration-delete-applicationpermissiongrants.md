@@ -67,7 +67,7 @@ The following example shows how to delete a permission grant in a storage contai
 }
 -->
 ```http
-DELETE https://graph.microsoft.com/beta/storage/fileStorage/containerTypeRegistrations/21b52d99-7114-4c47-80b3-362b6a0bba3a/applicationPermissionGrants/11335700-9a00-4c00-84dd-0c210f203f00
+DELETE https://graph.microsoft.com/v1.0/storage/fileStorage/containerTypeRegistrations/21b52d99-7114-4c47-80b3-362b6a0bba3a/applicationPermissionGrants/11335700-9a00-4c00-84dd-0c210f203f00
 ```
 
 # [C#](#tab/csharp)

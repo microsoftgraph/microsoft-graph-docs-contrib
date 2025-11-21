@@ -20,7 +20,6 @@ Represents the settings associated with a [fileStorageContainerTypeRegistration]
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|agent|[fileStorageContainerTypeAgentSettings](../resources/filestoragecontainertypeagentsettings.md)|Contains agent-related settings.|
 |isDiscoverabilityEnabled|Boolean|Indicates whether items from containers are surfaced in experiences such as **My Activity** or Microsoft 365.|
 |isItemVersioningEnabled|Boolean|Indicates whether item versioning is enabled.|
 |isSearchEnabled|Boolean|Indicates whether search is enabled.|
@@ -50,9 +49,6 @@ The following JSON representation shows the resource type.
   "itemMajorVersionLimit": "Int64",
   "maxStoragePerContainerInBytes": "Int64",
   "sharingCapability": "String",
-  "urlTemplate": "String",
-  "agent": {
-    "@odata.type": "microsoft.graph.fileStorageContainerTypeAgentSettings"
-  }
+  "urlTemplate": "String"
 }
 ```

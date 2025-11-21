@@ -70,7 +70,7 @@ The following example shows how to get a specific app permission grant.
 }
 -->
 ```http
-GET https://graph.microsoft.com/beta/storage/fileStorage/containerTypeRegistrations/33225700-9a00-4c00-84dd-0c210f203f01/applicationPermissionGrants/11335700-9a00-4c00-84dd-0c210f203f00
+GET https://graph.microsoft.com/v1.0/storage/fileStorage/containerTypeRegistrations/33225700-9a00-4c00-84dd-0c210f203f01/applicationPermissionGrants/11335700-9a00-4c00-84dd-0c210f203f00
 ```
 
 # [C#](#tab/csharp)

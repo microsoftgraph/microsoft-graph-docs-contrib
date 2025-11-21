@@ -70,7 +70,7 @@ The following example shows how to list **fileStorageContainerTypeRegistration**
 }
 -->
 ```http
-GET https://graph.microsoft.com/beta/storage/fileStorage/containerTypeRegistrations
+GET https://graph.microsoft.com/v1.0/storage/fileStorage/containerTypeRegistrations
 ```
 
 # [C#](#tab/csharp)

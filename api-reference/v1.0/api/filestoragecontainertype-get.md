@@ -66,7 +66,7 @@ The following example shows how to get a **fileStorageContainerType** using the 
 }
 -->
 ```http
-GET https://graph.microsoft.com/beta/storage/fileStorage/containerTypes/de988700-d700-020e-0a00-0831f3042f00
+GET https://graph.microsoft.com/v1.0/storage/fileStorage/containerTypes/de988700-d700-020e-0a00-0831f3042f00
 ```
 
 # [C#](#tab/csharp)

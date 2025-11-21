@@ -4941,6 +4941,130 @@
       "CreatedDateTime": "2025-11-18T18:12:05.945322Z",
       "WorkloadArea": "Files",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "a45003b4-33a7-4510-aa4d-1e0fe2f9dd63",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "fileStorageContainerBillingClassification",
+          "ChangeType": "Addition",
+          "Description": "Added the **fileStorageContainerBillingClassification** enumeration type.",
+          "Target": "fileStorageContainerBillingClassification"
+        },
+        {
+          "Id": "a45003b4-33a7-4510-aa4d-1e0fe2f9dd63",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "fileStorageContainerBillingStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **fileStorageContainerBillingStatus** enumeration type.",
+          "Target": "fileStorageContainerBillingStatus"
+        },
+        {
+          "Id": "a45003b4-33a7-4510-aa4d-1e0fe2f9dd63",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "fileStorageContainerTypeAppPermission",
+          "ChangeType": "Addition",
+          "Description": "Added the **fileStorageContainerTypeAppPermission** enumeration type.",
+          "Target": "fileStorageContainerTypeAppPermission"
+        },
+        {
+          "Id": "a45003b4-33a7-4510-aa4d-1e0fe2f9dd63",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "fileStorageContainerTypeSettingsOverride",
+          "ChangeType": "Addition",
+          "Description": "Added the **fileStorageContainerTypeSettingsOverride** enumeration type.",
+          "Target": "fileStorageContainerTypeSettingsOverride"
+        },
+        {
+          "Id": "a45003b4-33a7-4510-aa4d-1e0fe2f9dd63",
+          "ApiChange": "Resource",
+          "ChangedApiName": "fileStorageContainerTypeRegistrationSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [fileStorageContainerTypeRegistrationSettings](https://learn.microsoft.com/en-us/graph/api/resources/fileStorageContainerTypeRegistrationSettings?view=graph-rest-1.0) resource.",
+          "Target": "fileStorageContainerTypeRegistrationSettings"
+        },
+        {
+          "Id": "a45003b4-33a7-4510-aa4d-1e0fe2f9dd63",
+          "ApiChange": "Resource",
+          "ChangedApiName": "fileStorageContainerTypeSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [fileStorageContainerTypeSettings](https://learn.microsoft.com/en-us/graph/api/resources/fileStorageContainerTypeSettings?view=graph-rest-1.0) resource.",
+          "Target": "fileStorageContainerTypeSettings"
+        },
+        {
+          "Id": "a45003b4-33a7-4510-aa4d-1e0fe2f9dd63",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "containerTypeRegistrations",
+          "ChangeType": "Addition",
+          "Description": "Added the **containerTypeRegistrations** relationship to the [fileStorage](https://learn.microsoft.com/en-us/graph/api/resources/fileStorage?view=graph-rest-1.0) resource.",
+          "Target": "fileStorage"
+        },
+        {
+          "Id": "a45003b4-33a7-4510-aa4d-1e0fe2f9dd63",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "containerTypes",
+          "ChangeType": "Addition",
+          "Description": "Added the **containerTypes** relationship to the [fileStorage](https://learn.microsoft.com/en-us/graph/api/resources/fileStorage?view=graph-rest-1.0) resource.",
+          "Target": "fileStorage"
+        },
+        {
+          "Id": "a45003b4-33a7-4510-aa4d-1e0fe2f9dd63",
+          "ApiChange": "Property",
+          "ChangedApiName": "assignedSensitivityLabel",
+          "ChangeType": "Addition",
+          "Description": "Added the **assignedSensitivityLabel** property to the [fileStorageContainer](https://learn.microsoft.com/en-us/graph/api/resources/fileStorageContainer?view=graph-rest-1.0) resource.",
+          "Target": "fileStorageContainer"
+        },
+        {
+          "Id": "a45003b4-33a7-4510-aa4d-1e0fe2f9dd63",
+          "ApiChange": "Resource",
+          "ChangedApiName": "fileStorageContainerType",
+          "ChangeType": "Addition",
+          "Description": "Added the [fileStorageContainerType](https://learn.microsoft.com/en-us/graph/api/resources/fileStorageContainerType?view=graph-rest-1.0) resource.",
+          "Target": "fileStorageContainerType"
+        },
+        {
+          "Id": "a45003b4-33a7-4510-aa4d-1e0fe2f9dd63",
+          "ApiChange": "Resource",
+          "ChangedApiName": "fileStorageContainerTypeAppPermissionGrant",
+          "ChangeType": "Addition",
+          "Description": "Added the [fileStorageContainerTypeAppPermissionGrant](https://learn.microsoft.com/en-us/graph/api/resources/fileStorageContainerTypeAppPermissionGrant?view=graph-rest-1.0) resource.",
+          "Target": "fileStorageContainerTypeAppPermissionGrant"
+        },
+        {
+          "Id": "a45003b4-33a7-4510-aa4d-1e0fe2f9dd63",
+          "ApiChange": "Resource",
+          "ChangedApiName": "fileStorageContainerTypeRegistration",
+          "ChangeType": "Addition",
+          "Description": "Added the [fileStorageContainerTypeRegistration](https://learn.microsoft.com/en-us/graph/api/resources/fileStorageContainerTypeRegistration?view=graph-rest-1.0) resource.",
+          "Target": "fileStorageContainerTypeRegistration"
+        }
+      ],
+      "Id": "a45003b4-33a7-4510-aa4d-1e0fe2f9dd63",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-11-12T22:34:31.5185968Z",
+      "WorkloadArea": "Files",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "2f4890d2-4944-4380-b7a1-14cb69b1906a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "assignedLabel",
+          "ChangeType": "Addition",
+          "Description": "Added the [assignedLabel](https://learn.microsoft.com/en-us/graph/api/resources/assignedLabel?view=graph-rest-1.0) resource.",
+          "Target": "assignedLabel"
+        }
+      ],
+      "Id": "2f4890d2-4944-4380-b7a1-14cb69b1906a",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-11-12T22:34:31.5190498Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
     }
   ]
 }

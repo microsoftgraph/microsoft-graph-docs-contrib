@@ -81,7 +81,7 @@ The following example shows how to create a trial [fileStorageContainerType](../
 }
 -->
 ```http
-POST https://graph.microsoft.com/beta/storage/fileStorage/containerTypes
+POST https://graph.microsoft.com/v1.0/storage/fileStorage/containerTypes
 Content-Type: application/json
 
 {

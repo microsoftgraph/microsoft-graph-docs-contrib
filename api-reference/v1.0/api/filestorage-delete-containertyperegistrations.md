@@ -70,7 +70,7 @@ The following example shows a request to delete a **fileStorageContainerTypeRegi
 }
 -->
 ```http
-DELETE https://graph.microsoft.com/beta/storage/fileStorage/containerTypeRegistrations/de988700-d700-020e-0a00-0831f3042f00
+DELETE https://graph.microsoft.com/v1.0/storage/fileStorage/containerTypeRegistrations/de988700-d700-020e-0a00-0831f3042f00
 ```
 
 # [C#](#tab/csharp)

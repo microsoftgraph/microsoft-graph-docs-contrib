@@ -71,7 +71,7 @@ The following example shows how to delete a **fileStorageContainerType**.
 }
 -->
 ```http
-DELETE https://graph.microsoft.com/beta/storage/fileStorage/containerTypes/de988700-d700-020e-0a00-0831f3042f00
+DELETE https://graph.microsoft.com/v1.0/storage/fileStorage/containerTypes/de988700-d700-020e-0a00-0831f3042f00
 ```
 
 # [C#](#tab/csharp)
