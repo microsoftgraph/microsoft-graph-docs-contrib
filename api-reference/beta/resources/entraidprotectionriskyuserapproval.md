@@ -23,7 +23,7 @@ Inherits from [controlConfiguration](../resources/controlconfiguration.md).
 |Method|Return type|Description|
 |:---|:---|:---|
 |[Get](../api/entraidprotectionriskyuserapproval-get.md)|[entraIdProtectionRiskyUserApproval](../resources/entraidprotectionriskyuserapproval.md)|Read the properties and relationships of [entraIdProtectionRiskyUserApproval](../resources/entraidprotectionriskyuserapproval.md) object.|
-|[Update](../api/entraidprotectionriskyuserapproval-update.md)|[entraIdProtectionRiskyUserApproval](../resources/entraidprotectionriskyuserapproval.md)|Update the properties of an entraIdProtectionRiskyUserApproval object.|
+|[Update](../api/entraidprotectionriskyuserapproval-update.md)|[entraIdProtectionRiskyUserApproval](../resources/entraidprotectionriskyuserapproval.md)|Update the properties of an [entraIdProtectionRiskyUserApproval](../resources/entraidprotectionriskyuserapproval.md) object.|
 
 
 ## Properties

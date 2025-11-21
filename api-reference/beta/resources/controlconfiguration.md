@@ -23,7 +23,7 @@ Inherits from [entity](../resources/entity.md).
 |Method|Return type|Description|
 |:---|:---|:---|
 |[Get](../api/controlconfiguration-get.md)|[controlConfiguration](../resources/controlconfiguration.md)|Read the properties and relationships of [controlConfiguration](../resources/controlconfiguration.md) object.|
-|[Update](../api/controlconfiguration-update.md)|[controlConfiguration](../resources/controlconfiguration.md)|Update the properties of a controlConfiguration object.|
+|[Update](../api/controlconfiguration-update.md)|[controlConfiguration](../resources/controlconfiguration.md)|Update the properties of a [controlConfiguration](../resources/controlconfiguration.md) object.|
 
 
 ## Properties

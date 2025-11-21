@@ -23,7 +23,7 @@ Inherits from [controlConfiguration](../resources/controlconfiguration.md).
 |Method|Return type|Description|
 |:---|:---|:---|
 |[Get](../api/insiderriskyuserapproval-get.md)|[insiderRiskyUserApproval](../resources/insiderriskyuserapproval.md)|Read the properties and relationships of [insiderRiskyUserApproval](../resources/insiderriskyuserapproval.md) object.|
-|[Update](../api/insiderriskyuserapproval-update.md)|[insiderRiskyUserApproval](../resources/insiderriskyuserapproval.md)|Update the properties of an insiderRiskyUserApproval object.|
+|[Update](../api/insiderriskyuserapproval-update.md)|[insiderRiskyUserApproval](../resources/insiderriskyuserapproval.md)|Update the properties of an [insiderRiskyUserApproval](../resources/insiderriskyuserapproval.md) object.|
 
 ## Properties
 |Property|Type|Description|
