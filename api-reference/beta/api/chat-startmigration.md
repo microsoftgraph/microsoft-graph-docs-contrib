@@ -99,7 +99,7 @@ The following example shows a request.
 
 <!-- {
   "blockType": "request",
-  "name": "startMigration_chat1",
+  "name": "startMigration_chat_fail",
   "sampleKeys": ["19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2"]
 }-->
 
