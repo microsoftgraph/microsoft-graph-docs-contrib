@@ -90,6 +90,7 @@ The following properties are inherited from **[baseItem][]**.
 
 [baseItem]: baseitem.md
 [contentTypeInfo]: contenttypeinfo.md
+[deleted]: deleted.md
 [driveItem]: driveitem.md
 [fieldValueSet]: fieldvalueset.md
 [identitySet]: identityset.md
