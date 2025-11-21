@@ -1,6 +1,6 @@
 ---
 title: "timeOffDetails resource type"
-description: "Details about a time off entry."
+description: "Represents details about a time-off entry."
 author: "emilbekj"
 ms.localizationpriority: medium
 ms.subservice: "outlook"
@@ -14,14 +14,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Details about a time off entry.
+Represents details about a time-off entry.
 
 ## Properties
 
 | Property | Type | Description |
 |:---------|:-----|:------------|
-| subject | String | The subject or reason for the time off. |
-| isAllDay | Boolean | Indicates whether the time off is all day. |
+| isAllDay | Boolean | Indicates whether the time-off entry spans the entire day. |
+| subject | String | The subject or reason for the time-off entry. |
 
 ## Relationships
 
@@ -38,8 +38,8 @@ The following JSON representation shows the resource type.
 
 ```json
 {
-  "subject": "String",
-  "isAllDay": "Boolean"
+  "isAllDay": "Boolean",
+  "subject": "String"
 }
 ```
 
