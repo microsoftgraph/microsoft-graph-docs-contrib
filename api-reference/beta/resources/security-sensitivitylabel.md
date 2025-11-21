@@ -46,7 +46,7 @@ Describes the information protection label that details how to properly apply a 
 | contentFormats | String collection | Returns the supported content formats for the label.                                                       |
 | description    | String            | The admin-defined description for the label.                                                               |
 | displayName    | String            | The display name of the sensitivity label. |
-| hasProtection  | Boolean           | Indicates whether the label has protection actions (Encryption, DoNotForward etc) configured.                                             |
+| hasProtection  | Boolean           | Indicates whether the label has protection actions (such as *encryption* or *do not forward*) configured. |
 | id             | String            | The label ID is a globally unique identifier (GUID).                                                       |
 | isActive       | Boolean           | Indicates whether the label is active or not. Active labels should be hidden or disabled in the UI.        |
 | isAppliable    | Boolean           | Indicates whether the label can be applied to content. `False` if the label is a parent with child labels. |
@@ -219,36 +219,26 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.security.sensitivityLabel",
-  "id": "String (identifier)",
-  "name": "String",
-  "displayName": "String",
+  "actionSource": "String",
+  "applicableTo": "String",
+  "applicationMode": "String",
+  "assignedPolicies": [{"@odata.type": "microsoft.graph.labelPolicy"}],
+  "autoLabeling": {"@odata.type": "microsoft.graph.autoLabeling"},
+  "autoTooltip": "String",
+  "color": "String",
   "description": "String",
-  "toolTip": "String",
+  "displayName": "String",
+  "hasProtection": "Boolean",
+  "id": "String (identifier)",
+  "isDefault": "Boolean",
   "isEnabled": "Boolean",
   "isEndpointProtectionEnabled": "Boolean",
-  "hasProtection": "Boolean",
-  "isDefault": "Boolean",
-  "applicationMode": "String",
-  "labelActions": [
-    {
-      "@odata.type": "microsoft.graph.encryptWithUserDefinedRights"
-    }
-  ],
-  "assignedPolicies": [
-    {
-      "@odata.type": "microsoft.graph.labelPolicy"
-    }
-  ],
-  "priority": "Integer",
-  "autoLabeling": {
-    "@odata.type": "microsoft.graph.autoLabeling"
-  },
-  "applicableTo": "String",
-  "color": "String",
-  "autoTooltip": "String",
-  "locale": "String",
   "isScopedToUser": "Boolean",
-  "actionSource": "String"
+  "labelActions": [{"@odata.type": "microsoft.graph.encryptWithUserDefinedRights"}],
+  "locale": "String",
+  "name": "String",
+  "priority": "Int32",
+  "toolTip": "String"
 }
 ```
 
