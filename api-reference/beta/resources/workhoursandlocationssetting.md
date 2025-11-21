@@ -25,11 +25,11 @@ You can set different work locations and schedules to accommodate your flexible 
 | Method | Return Type | Description |
 |:-------|:------------|:------------|
 | [Get](../api/workhoursandlocationssetting-get.md) | [workHoursAndLocationsSetting](workhoursandlocationssetting.md) | Get the user's working hours and location settings. |
-| [List recurrences](../api/workhoursandlocationssetting-list-recurrences.md) | [workPlanRecurrence](workplanrecurrence.md) collection | Get the recurrences from the recurrences navigation property. |
-| [Create occurrence](../api/workhoursandlocationssetting-post-occurrences.md) | [workPlanOccurrence](workplanoccurrence.md) | Create a new workPlanOccurrence object (time-off only). |
-| [Create recurrence](../api/workhoursandlocationssetting-post-recurrences.md) | [workPlanRecurrence](workplanrecurrence.md) | Create a new workPlanRecurrence object. |
-| [occurrencesView](../api/workhoursandlocationssetting-occurrencesview.md) | [workPlanOccurrence](workplanoccurrence.md) collection | Retrieves work plan occurrences within a specified date range. |
 | [Update](../api/workhoursandlocationssetting-update.md) | [workHoursAndLocationsSetting](workhoursandlocationssetting.md) | Update the user's working hours and location settings. |
+| [Occurrences view](../api/workhoursandlocationssetting-occurrencesview.md) | [workPlanOccurrence](workplanoccurrence.md) collection | Retrieves work plan occurrences within a specified date range. |
+| [List recurrences](../api/workhoursandlocationssetting-list-recurrences.md) | [workPlanRecurrence](workplanrecurrence.md) collection | Get the recurrences from the recurrences navigation property. |
+| [Create recurrence](../api/workhoursandlocationssetting-post-recurrences.md) | [workPlanRecurrence](workplanrecurrence.md) | Create a new workPlanRecurrence object. |
+| [Create occurrence](../api/workhoursandlocationssetting-post-occurrences.md) | [workPlanOccurrence](workplanoccurrence.md) | Create a new workPlanOccurrence object (time-off only). |
 
 ## Properties
 
