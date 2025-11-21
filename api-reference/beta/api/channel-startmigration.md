@@ -93,7 +93,7 @@ The following example shows a request.
 
 <!-- {
   "blockType": "request",
-  "name": "startMigration_channel1",
+  "name": "startMigration_channel_fail",
   "sampleKeys": ["57fb72d0-d811-46f4-8947-305e6072eaa5", "19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2"]
 }-->
 
@@ -105,8 +105,7 @@ POST https://graph.microsoft.com/beta/teams/57fb72d0-d811-46f4-8947-305e6072eaa5
 The following example shows the response.
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.channel"
+  "truncated": true
 } -->
 ```http
 HTTP/1.1 400 Bad Request
