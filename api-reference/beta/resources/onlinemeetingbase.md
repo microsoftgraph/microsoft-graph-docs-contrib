@@ -54,6 +54,7 @@ Inherits from [entity](../resources/entity.md).
 | meetingOptionsWebUrl | String | Provides the URL to the Teams meeting options page for the specified meeting. This link allows *only the organizer* to configure meeting settings. |
 | meetingSpokenLanguageTag | String | Specifies the spoken language used during the meeting for recording and transcription purposes. |
 | recordAutomatically | Boolean | Indicates whether to record the meeting automatically. |
+| sensitivityLabelAssignment|[onlineMeetingSensitivityLabelAssignment](../resources/onlinemeetingsensitivitylabelassignment.md)|Specifies the sensitivity label applied to the Teams meeting.|
 | shareMeetingChatHistoryDefault | [meetingChatHistoryDefaultMode](#meetingchathistorydefaultmode-values) |Specifies whether meeting chat history is shared with participants.  Possible values are: `all`, `none`, `unknownFutureValue`.|
 | subject | String | The subject of the online meeting. |
 | videoTeleconferenceId | String | The video teleconferencing ID. Read-only. |
@@ -151,6 +152,9 @@ The following JSON representation shows the resource type.
   "meetingOptionsWebUrl": "String",
   "meetingSpokenLanguageTag": "String",
   "recordAutomatically": "Boolean",
+  "sensitivityLabelAssignment": {
+      "@odata.type": "microsoft.graph.onlineMeetingSensitivityLabelAssignment"
+  },
   "shareMeetingChatHistoryDefault": "String",
   "subject": "String",
   "videoTeleconferenceId": "String",

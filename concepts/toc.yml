@@ -872,6 +872,10 @@ items:
     - name: Overview
       href: teams-concept-overview.md
       displayName: teams, team, teamwork, Microsoft Teams
+    - name: Channel
+      items:
+      - name: Managing channel memberships
+        href: manage-channel-memberships.md
     - name: Messaging APIs
       items:
       - name: Working with Microsoft Teams messaging

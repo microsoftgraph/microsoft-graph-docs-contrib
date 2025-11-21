@@ -13,6 +13,15 @@ ms.custom: sfi-ropc-nochange
 
 Namespace: microsoft.graph
 
+### placeFeatureEnablement values
+
+|Member|
+|:---|
+|unknown|
+|enabled|
+|disabled|
+|unknownFutureValue|
+
 ### accessReviewPrincipalScopeType values
 
 |Member|
@@ -5697,7 +5706,6 @@ Possible values for user account types (group membership), per Windows definitio
 |all|
 |unknownFutureValue|
 
-
 ### siteTemplateType values 
 
 |Member|
@@ -5705,6 +5713,25 @@ Possible values for user account types (group membership), per Windows definitio
 |sitepagepublishing|
 |group|
 |sts|
+|unknownFutureValue|
+
+### sharePointIdentityMappingGroupType values 
+
+|Member|
+|:---|
+|none|
+|regularGroup|
+|m365Group|
+|unknownFutureValue|
+
+### sharePointIdentityMappingUserType values 
+
+|Member|
+|:---|
+|none|
+|regularUser|
+|adminUser|
+|guestUser|
 |unknownFutureValue|
 
 ### crossTenantMigrationJobStatus values 
@@ -5757,4 +5784,3 @@ Possible values for user account types (group membership), per Windows definitio
 |finalizing|
 |forceComplete|
 |unknownFutureValue|
-

@@ -1888,6 +1888,14 @@ items:
           href: ../../api/privilegedaccessgroupeligibilityscheduleinstance-get.md
         - name: Filter by current user
           href: ../../api/privilegedaccessgroupeligibilityscheduleinstance-filterbycurrentuser.md
+      - name: Group resource
+        items:
+        - name: Group resource
+          href: ../../resources/groupresource.md
+        - name: List
+          href: ../../api/privilegedaccessgroup-list-resources.md
+        - name: Get
+          href: ../../api/groupresource-get.md
       - name: Policy
         items:
         - name: Policy
