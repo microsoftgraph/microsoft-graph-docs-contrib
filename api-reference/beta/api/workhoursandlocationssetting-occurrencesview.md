@@ -1,6 +1,6 @@
 ---
 title: "workHoursAndLocationsSetting: occurrencesView"
-description: "Retrieves work plan occurrences from your own work plan within a specified date range."
+description: "Get work plan occurrences from your own work plan within a specified date range."
 author: "emilbekj"
 ms.localizationpriority: medium
 ms.subservice: "outlook"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieves work plan occurrences from your own work plan within a specified date range. This function requires **startDateTime** and **endDateTime** parameters.
+Get [work plan occurrences](../resources/workplanoccurrence.md) from your own work plan within a specified date range. This function requires the **startDateTime** and **endDateTime** parameters.
 
 ## Permissions
 
