@@ -30,6 +30,7 @@ Represents a legal hold policy. Legal holds are holds that are tied to an eDisco
 |[List](../api/security-ediscoveryholdpolicy-list-usersources.md)|[microsoft.graph.security.userSource](../resources/security-usersource.md) collection|Get a list of the [userSource](../resources/security-usersource.md) objects associated with an [ediscoveryHoldPolicy](../resources/security-ediscoveryholdpolicy.md).|
 |[Create](../api/security-ediscoveryholdpolicy-post-usersources.md)|[microsoft.graph.security.userSource](../resources/security-usersource.md)|Create a new [userSource](../resources/security-usersource.md) object.|
 |[Delete](../api/security-ediscoveryholdpolicy-delete-usersources.md)|None|Delete a [userSource](../resources/security-usersource.md) object associated with an [ediscoveryHoldPolicy](../resources/security-ediscoveryholdpolicy.md).|
+|[Retry policy](../api/security-ediscoveryholdpolicy-retrypolicy.md)|None|Retry policy triggers the hold process to restamp all mailboxes/sites in the policy to enforce hold.|
 
 ## Properties
 |Property|Type|Description|
