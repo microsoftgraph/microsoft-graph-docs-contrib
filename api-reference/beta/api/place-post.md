@@ -353,7 +353,7 @@ Content-Type: application/json
   "tags": [],
   "isWheelChairAccessible": false,
   "mode": {
-    "@odata.type": "#microsoft.graph.offlinePlaceMode",
+    "@odata.type": "#microsoft.graph.unavailablePlaceMode",
     "reason": "New"
   }
 }
@@ -514,7 +514,7 @@ Content-Type: application/json
   "emailAddress": "testSpace0015d9988631755150528582@contoso.com",
   "nickname": "testSpace001",
   "mode": {
-    "@odata.type": "#microsoft.graph.offlinePlaceMode",
+    "@odata.type": "#microsoft.graph.unavailablePlaceMode",
     "reason": "New"
   }
 }
