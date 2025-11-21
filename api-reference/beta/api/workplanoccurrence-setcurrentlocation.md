@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update your work location for the current day or current active segment. This action allows you to quickly update your work location without modifying individual occurrences.
+Update your [work[(../resources/workplanoccurrence.md) location for the current day or current active segment. This action allows you to quickly update your work location without modifying individual occurrences.
 
 ## Permissions
 
@@ -50,9 +50,9 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter | Type | Description |
 |:----------|:-----|:------------|
-| updateScope | workLocationUpdateScope | The scope of the update. See [workLocationUpdateScope values](#worklocationupdatescope-values). |
-| workLocationDetails | [place](../resources/place.md) | The place entity representing the work location. Can be bound using @odata.bind when **workLocationType** is `office`. |
-| workLocationType | workLocationType | The new work location type to set. Accepted values are: `office`, `remote`. For all possible values, see [workLocationType values](../resources/workplanoccurrence.md#worklocationtype-values). |
+| updateScope | [workLocationUpdateScope](#worklocationupdatescope-values) | The scope of the update. The possible values are: `currentSegment`, `currentDay`, `unknownFutureValue`. |
+| workLocationDetails | [place](../resources/place.md) | The place entity that represents the work location. It can be bound using **@odata.bind** when **workLocationType** is set to `office`. |
+| workLocationType | [workLocationType](../resources/workplanoccurrence.md#worklocationtype-values) | The new work location type to set. Support a subset of the values of **workLocationType**. The possible values are: `office`, `remote`. |
 
 ### workLocationUpdateScope values
 
@@ -60,7 +60,7 @@ In the request body, provide a JSON object with the following parameters.
 |:-------|:------------|
 | currentSegment | Update only the current time segment. |
 | currentDay | Update the entire current day. |
-| unknownFutureValue | Reserved for future use. |
+| unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
 
 ## Response
 
@@ -68,7 +68,9 @@ If successful, this action returns a `204 No Content` response code.
 
 ## Examples
 
-### Example 1: Set current location to office
+### Example 1: Set the current location to office
+
+The following example shows how to set the current location to office.
 
 #### Request
 
@@ -104,6 +106,8 @@ HTTP/1.1 204 No Content
 ```
 
 ### Example 2: Set current location to remote
+
+The following example shows how to set the current location to remote.
 
 #### Request
 
