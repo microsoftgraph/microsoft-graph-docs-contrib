@@ -39,6 +39,19 @@ Use resource-specific consent (RSC) permissions for virtual events. For more inf
 
 ## November 2025: New in preview only
 
+### Agents
+
+Use the [Microsoft Entra Agent ID APIs](/graph/api/resources/agentid-platform-overview?view=graph-rest-beta&preserve-view=true) to manage identities for AI agents using the same identity and access management capabilities that protect human users. The APIs include capabilities to manage the following objects:
+- Agent registrations
+- Agent users
+- The Microsoft Entra agent registry
+
+Additionally, the first-class Microsoft Entra experience allows you to leverage the familiar automation capabilities in Conditional Access, ID Governance, and Identity Protection.
+
+### Applications
+
+Added the **riskFactors** and **riskScore** properties to the [applicationTemplate](/graph/api/resources/applicationtemplate?view=graph-rest-beta&preserve-view=true) resource type which represents apps on the Microsoft Entra app gallery. These properties provide insights into the security posture of application templates.
+
 ### Calendars | Places
 
 - Use the **wifiState** property on [building](/graph/api/resources/building?view=graph-rest-beta&preserve-view=true) to indicate whether a building has Wi-Fi.
@@ -51,6 +64,9 @@ Use resource-specific consent (RSC) permissions for virtual events. For more inf
 
 - Use the SharePoint cross-tenant migration APIs in Microsoft Graph to enable organizations to manage identity mappings during tenant-to-tenant migrations. For more information, see [sharePointUserIdentityMapping](/graph/api/resources/sharePointUserIdentityMapping?view=graph-rest-beta&preserve-view=true) and [sharePointGroupIdentityMapping](/graph/api/resources/sharePointGroupIdentityMapping?view=graph-rest-beta&preserve-view=true).
 - Deprecated the [drive: recent](/graph/api/drive-recent?view=graph-rest-beta&preserve-view=true) and [drive: sharedWithMe](/graph/api/drive-sharedwithme?view=graph-rest-beta&preserve-view=true) methods of the [drive](/graph/api/resources/drive?view=graph-rest-beta&preserve-view=true) resource.
+
+### Identity and access | Governance
+Added the [customDataProvidedResource](https://learn.microsoft.com/en-us/graph/api/resources/customdataprovidedresource?view=graph-rest-beta&preserve-view=true) resource to support ser-centric access reviews.
 
 ### Identity and access | Identity and sign-in
 
