@@ -62,7 +62,7 @@ The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "completeMigration_chat",
-  "sampleKeys": ["57fb72d0-d811-46f4-8947-305e6072eaa5", "19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2"]
+  "sampleKeys": ["19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2"]
 }-->
 
 ```msgraph-interactive
@@ -91,8 +91,8 @@ The following example shows a request.
 
 <!-- {
   "blockType": "request",
-  "name": "completeMigration_chat1",
-  "sampleKeys": ["57fb72d0-d811-46f4-8947-305e6072eaa5", "19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2"]
+  "name": "completeMigration_chat_fail",
+  "sampleKeys": ["19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2"]
 }-->
 
 ```msgraph-interactive
