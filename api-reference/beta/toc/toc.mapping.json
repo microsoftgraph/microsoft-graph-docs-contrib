@@ -1082,6 +1082,18 @@
           "complexTypes": [
             "sharePointMigrationContainerInfo"
           ]
+        },
+        {
+          "name": "SharePoint cross-tenant migration (preview)",
+          "overview": "../../resources/sharepoint-crossorganization-api-overview.md",
+          "resources": [
+            "sharePointGroupIdentityMapping",
+            "sharePointUserIdentityMapping"
+          ],
+          "complexTypes": [
+            "sharePointIdentityMappingGroupMigrationData",
+            "sharePointIdentityMappingUserMigrationData"
+          ]
         }
       ]
     },
