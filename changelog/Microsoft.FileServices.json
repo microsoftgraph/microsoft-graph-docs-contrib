@@ -7,7 +7,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "sharedWithMe",
           "ChangeType": "Deprecation",
-          "Description": "Deprecated the [sharedWithMe](https://learn.microsoft.com/en-us/graph/api/drive-sharedwithme) method on the [drive](https://learn.microsoft.com/en-us/graph/api/resources/drive) resource. This API is deprecated and will stop returning data after November, 2027.",
+          "Description": "Deprecated the [sharedWithMe](https://learn.microsoft.com/en-us/graph/api/drive-sharedwithme?view=graph-rest-1.0) method on the [drive](https://learn.microsoft.com/en-us/graph/api/resources/drive?view=graph-rest-1.0) resource. This API is deprecated and will stop returning data after November, 2027.",
           "Target": "drive"
         },
         {
@@ -15,23 +15,23 @@
           "ApiChange": "Method",
           "ChangedApiName": "recent",
           "ChangeType": "Deprecation",
-          "Description": "Deprecated the [recent](https://learn.microsoft.com/en-us/graph/api/drive-recent) method on the [drive](https://learn.microsoft.com/en-us/graph/api/resources/drive) resource. This API is deprecated and will stop returning data after November, 2027.",
+          "Description": "Deprecated the [recent](https://learn.microsoft.com/en-us/graph/api/drive-recent?view=graph-rest-1.0) method on the [drive](https://learn.microsoft.com/en-us/graph/api/resources/drive?view=graph-rest-1.0) resource. This API is deprecated and will stop returning data after November, 2027.",
           "Target": "drive"
         },
         {
-          "Id": "4cf863b7-a101-40f1-a03d-8c7744c6f033",
+          "Id": "cfd328aa-a83a-49ed-982e-f25c37a312d2",
           "ApiChange": "Annotation",
           "ChangedApiName": "Org.OData.Core.V1.Revisions",
           "ChangeType": "Deprecation",
-          "Description": "Deprecated the **recent** property on the [drive](https://learn.microsoft.com/en-us/graph/api/resources/drive?view=graph-rest-1.0) resource.",
+          "Description": "Removed the **Org.OData.Core.V1.Revisions** resource.",
           "Target": "recent"
         },
         {
-          "Id": "4cf863b7-a101-40f1-a03d-8c7744c6f033",
+          "Id": "cfd328aa-a83a-49ed-982e-f25c37a312d2",
           "ApiChange": "Annotation",
           "ChangedApiName": "Org.OData.Core.V1.Revisions",
           "ChangeType": "Deprecation",
-          "Description": "Deprecated the **sharedWithMe** property on the [drive](https://learn.microsoft.com/en-us/graph/api/resources/drive?view=graph-rest-1.0) resource.",
+          "Description": "Removed the **Org.OData.Core.V1.Revisions** resource.",
           "Target": "sharedWithMe"
         }
       ],
@@ -61,19 +61,19 @@
           "Target": "drive"
         },
         {
-          "Id": "97aebd3e-98e3-4e55-8f3e-4c6a07cbdda7",
+          "Id": "f3a53290-debd-4e11-a89e-fa38a7063991",
           "ApiChange": "Annotation",
           "ChangedApiName": "Org.OData.Core.V1.Revisions",
           "ChangeType": "Deprecation",
-          "Description": "Deprecated the **recent** property on the [drive](https://learn.microsoft.com/en-us/graph/api/resources/drive?view=graph-rest-1.0) resource.",
+          "Description": "Removed the **Org.OData.Core.V1.Revisions** resource.",
           "Target": "recent"
         },
         {
-          "Id": "97aebd3e-98e3-4e55-8f3e-4c6a07cbdda7",
+          "Id": "f3a53290-debd-4e11-a89e-fa38a7063991",
           "ApiChange": "Annotation",
           "ChangedApiName": "Org.OData.Core.V1.Revisions",
           "ChangeType": "Deprecation",
-          "Description": "Deprecated the **sharedWithMe** property on the [drive](https://learn.microsoft.com/en-us/graph/api/resources/drive?view=graph-rest-1.0) resource.",
+          "Description": "Removed the **Org.OData.Core.V1.Revisions** resource.",
           "Target": "sharedWithMe"
         }
       ],
