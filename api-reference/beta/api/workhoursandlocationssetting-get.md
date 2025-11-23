@@ -1,6 +1,6 @@
 ---
 title: "Get workHoursAndLocationsSetting"
-description: "Get the properties and relationships of your own work hours and location settings."
+description: "Get the properties and relationships of your own workHoursAndLocationsSetting."
 author: "emilbekj"
 ms.localizationpriority: medium
 ms.subservice: "outlook"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the properties and relationships of your own [workHoursAndLocationsSetting](../resources/workhoursandlocationssetting.md). The settings include the location sharing preferences and navigation properties to your work plan recurrences. To retrieve work plan occurrences, use the [occurrencesView](workhoursandlocationssetting-occurrencesview.md) function.
+Get the properties and relationships of your own [workHoursAndLocationsSetting](../resources/workhoursandlocationssetting.md). The settings include the location sharing preferences and navigation properties to your work plan recurrences. To retrieve work plan occurrences, use the [occurrencesView](workhoursandlocationssetting-occurrencesview.md) API.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
