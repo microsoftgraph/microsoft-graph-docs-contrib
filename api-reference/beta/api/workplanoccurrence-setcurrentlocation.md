@@ -52,7 +52,7 @@ In the request body, provide a JSON object with the following parameters.
 |:----------|:-----|:------------|
 | updateScope | [workLocationUpdateScope](#worklocationupdatescope-values) | The scope of the update. The possible values are: `currentSegment`, `currentDay`, `unknownFutureValue`. |
 | workLocationDetails | [place](../resources/place.md) | The place entity that represents the work location. It can be bound using **@odata.bind** when **workLocationType** is set to `office`. |
-| workLocationType | [workLocationType](../resources/workplanoccurrence.md#worklocationtype-values) | The new work location type to set. Support a subset of the values of **workLocationType**. The possible values are: `office`, `remote`. |
+| workLocationType | [workLocationType](../resources/workplanoccurrence.md#worklocationtype-values) | The new work location type to set. Supports a subset of the values of **workLocationType**. The possible values are: `office`, `remote`. |
 
 ### workLocationUpdateScope values
 
