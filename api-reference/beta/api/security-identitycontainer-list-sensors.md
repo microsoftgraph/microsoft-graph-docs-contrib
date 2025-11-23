@@ -132,7 +132,8 @@ Content-Type: application/json
             "DC1.domain1.test.local"
         ],
         "isDelayedDeploymentEnabled": true
-      }
+      },
+      "serviceStatus": "running"
     }
   ]
 }

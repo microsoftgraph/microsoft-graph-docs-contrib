@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of a [servicePrincipal](../resources/serviceprincipal.md) object.
+Retrieve the properties and relationships of a [servicePrincipal](../resources/serviceprincipal.md) object. This API can be used to get [agentIdentityBlueprintPrincipal](../resources/agentidentityblueprintprincipal.md) objects as well by their ID.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -65,7 +65,7 @@ Providing the **Accept-Language** header with a supported language code, such as
 Don't supply a request body for this method.
 
 ## Response
-If successful, this method returns a `200 OK` response code and a [servicePrincipal](../resources/serviceprincipal.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [servicePrincipal](../resources/serviceprincipal.md) or [agentIdentityBlueprintPrincipal](../resources/agentidentityblueprintprincipal.md) object in the response body.
 
 ## Examples
 

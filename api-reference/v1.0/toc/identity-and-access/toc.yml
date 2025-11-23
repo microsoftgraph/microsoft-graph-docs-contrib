@@ -1429,6 +1429,8 @@ items:
         href: ../../resources/termsexpiration.md
 - name: Identity and sign-in
   items:
+  - name: Akamai web application firewall provider
+    href: ../../resources/akamaiwebapplicationfirewallprovider.md
   - name: App role assignment
     items:
     - name: App role assignment
@@ -1493,36 +1495,6 @@ items:
       href: ../../resources/ontokenissuancestartlistener.md
     - name: On user create start listener
       href: ../../resources/onusercreatestartlistener.md
-    - name: Web application firewall provider
-      items:
-      - name: Web application firewall provider
-        href: ../../resources/webapplicationfirewallprovider.md
-      - name: List
-        href: ../../api/riskpreventioncontainer-list-webapplicationfirewallproviders.md
-      - name: Create
-        href: ../../api/riskpreventioncontainer-post-webapplicationfirewallproviders.md
-      - name: Get
-        href: ../../api/webapplicationfirewallprovider-get.md
-      - name: Update
-        href: ../../api/webapplicationfirewallprovider-update.md
-      - name: Delete
-        href: ../../api/riskpreventioncontainer-delete-webapplicationfirewallproviders.md
-      - name: Verify
-        href: ../../api/webapplicationfirewallprovider-verify.md
-    - name: Cloud flare web application firewall provider
-      href: ../../resources/cloudflarewebapplicationfirewallprovider.md
-    - name: Akamai web application firewall provider
-      href: ../../resources/akamaiwebapplicationfirewallprovider.md
-    - name: Web application firewall verification model
-      items:
-      - name: Web application firewall verification model
-        href: ../../resources/webapplicationfirewallverificationmodel.md
-      - name: List
-        href: ../../api/riskpreventioncontainer-list-webapplicationfirewallverifications.md
-      - name: Get
-        href: ../../api/webapplicationfirewallverificationmodel-get.md
-      - name: Delete
-        href: ../../api/riskpreventioncontainer-delete-webapplicationfirewallverifications.md
   - name: Authentication methods
     items:
     - name: Overview
@@ -1794,6 +1766,8 @@ items:
       href: ../../api/certificatebasedauthconfiguration-get.md
     - name: Delete
       href: ../../api/certificatebasedauthconfiguration-delete.md
+  - name: Cloud flare web application firewall provider
+    href: ../../resources/cloudflarewebapplicationfirewallprovider.md
   - name: Conditional access
     items:
     - name: Conditional access policy
@@ -2502,6 +2476,32 @@ items:
         href: ../../api/identityapiconnector-delete.md
     - name: User flows in Azure AD B2C (deprecated)
       href: ../../resources/identityuserflow.md
+  - name: Web application firewall provider
+    items:
+    - name: Web application firewall provider
+      href: ../../resources/webapplicationfirewallprovider.md
+    - name: List
+      href: ../../api/riskpreventioncontainer-list-webapplicationfirewallproviders.md
+    - name: Create
+      href: ../../api/riskpreventioncontainer-post-webapplicationfirewallproviders.md
+    - name: Get
+      href: ../../api/webapplicationfirewallprovider-get.md
+    - name: Update
+      href: ../../api/webapplicationfirewallprovider-update.md
+    - name: Delete
+      href: ../../api/riskpreventioncontainer-delete-webapplicationfirewallproviders.md
+    - name: Verify
+      href: ../../api/webapplicationfirewallprovider-verify.md
+  - name: Web application firewall verification model
+    items:
+    - name: Web application firewall verification model
+      href: ../../resources/webapplicationfirewallverificationmodel.md
+    - name: List
+      href: ../../api/riskpreventioncontainer-list-webapplicationfirewallverifications.md
+    - name: Get
+      href: ../../api/webapplicationfirewallverificationmodel-get.md
+    - name: Delete
+      href: ../../api/riskpreventioncontainer-delete-webapplicationfirewallverifications.md
 - name: Granular delegated admin privileges
   displayName: GDAP, Partner Center, CSP, VAR
   items:

@@ -4817,6 +4817,130 @@
       "CreatedDateTime": "2025-09-09T00:00:00.0365478Z",
       "WorkloadArea": "Files",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "740b0c9e-2233-4e80-9db5-aec9b447ee0b",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "sharePointIdentityMappingGroupType",
+          "ChangeType": "Addition",
+          "Description": "Added the **sharePointIdentityMappingGroupType** enumeration type.",
+          "Target": "sharePointIdentityMappingGroupType"
+        },
+        {
+          "Id": "740b0c9e-2233-4e80-9db5-aec9b447ee0b",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "sharePointIdentityMappingUserType",
+          "ChangeType": "Addition",
+          "Description": "Added the **sharePointIdentityMappingUserType** enumeration type.",
+          "Target": "sharePointIdentityMappingUserType"
+        },
+        {
+          "Id": "740b0c9e-2233-4e80-9db5-aec9b447ee0b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sharePointIdentityMappingGroupMigrationData",
+          "ChangeType": "Addition",
+          "Description": "Added the [sharePointIdentityMappingGroupMigrationData](https://learn.microsoft.com/en-us/graph/api/resources/sharePointIdentityMappingGroupMigrationData?view=graph-rest-beta) resource.",
+          "Target": "sharePointIdentityMappingGroupMigrationData"
+        },
+        {
+          "Id": "740b0c9e-2233-4e80-9db5-aec9b447ee0b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sharePointIdentityMappingUserMigrationData",
+          "ChangeType": "Addition",
+          "Description": "Added the [sharePointIdentityMappingUserMigrationData](https://learn.microsoft.com/en-us/graph/api/resources/sharePointIdentityMappingUserMigrationData?view=graph-rest-beta) resource.",
+          "Target": "sharePointIdentityMappingUserMigrationData"
+        },
+        {
+          "Id": "740b0c9e-2233-4e80-9db5-aec9b447ee0b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sharePointGroupIdentityMapping",
+          "ChangeType": "Addition",
+          "Description": "Added the [sharePointGroupIdentityMapping](https://learn.microsoft.com/en-us/graph/api/resources/sharePointGroupIdentityMapping?view=graph-rest-beta) resource and associated methods.",
+          "Target": "sharePointGroupIdentityMapping"
+        },
+        {
+          "Id": "740b0c9e-2233-4e80-9db5-aec9b447ee0b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sharePointIdentityMapping",
+          "ChangeType": "Addition",
+          "Description": "Added the [sharePointIdentityMapping](https://learn.microsoft.com/en-us/graph/api/resources/sharePointIdentityMapping?view=graph-rest-beta) resource.",
+          "Target": "sharePointIdentityMapping"
+        },
+        {
+          "Id": "740b0c9e-2233-4e80-9db5-aec9b447ee0b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sharePointMigrationsRoot",
+          "ChangeType": "Addition",
+          "Description": "Added the [sharePointMigrationsRoot](https://learn.microsoft.com/en-us/graph/api/resources/sharePointMigrationsRoot?view=graph-rest-beta) resource.",
+          "Target": "sharePointMigrationsRoot"
+        },
+        {
+          "Id": "740b0c9e-2233-4e80-9db5-aec9b447ee0b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sharePointRoot",
+          "ChangeType": "Addition",
+          "Description": "Added the [sharePointRoot](https://learn.microsoft.com/en-us/graph/api/resources/sharePointRoot?view=graph-rest-beta) resource.",
+          "Target": "sharePointRoot"
+        },
+        {
+          "Id": "740b0c9e-2233-4e80-9db5-aec9b447ee0b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sharePointUserIdentityMapping",
+          "ChangeType": "Addition",
+          "Description": "Added the [sharePointUserIdentityMapping](https://learn.microsoft.com/en-us/graph/api/resources/sharePointUserIdentityMapping?view=graph-rest-beta) resource and associated methods.",
+          "Target": "sharePointUserIdentityMapping"
+        },
+        {
+          "Id": "740b0c9e-2233-4e80-9db5-aec9b447ee0b",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "solutionsRoot",
+          "ChangeType": "Addition",
+          "Description": "Added the **sharePoint** relationship to the [solutionsRoot](https://learn.microsoft.com/en-us/graph/api/resources/solutionsRoot?view=graph-rest-beta) resource.",
+          "Target": "solutionsRoot"
+        }
+      ],
+      "Id": "740b0c9e-2233-4e80-9db5-aec9b447ee0b",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-11-21T02:05:21.8844184Z",
+      "WorkloadArea": "Files",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "93afe618-17e6-47bb-af98-de2281461ad2",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "informationBarrierMode",
+          "ChangeType": "Addition",
+          "Description": "Added the **informationBarrierMode** enumeration type.",
+          "Target": "informationBarrierMode"
+        },
+        {
+          "Id": "93afe618-17e6-47bb-af98-de2281461ad2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "informationBarrier",
+          "ChangeType": "Addition",
+          "Description": "Added the [informationBarrier](https://learn.microsoft.com/en-us/graph/api/resources/informationBarrier?view=graph-rest-beta) resource.",
+          "Target": "informationBarrier"
+        },
+        {
+          "Id": "93afe618-17e6-47bb-af98-de2281461ad2",
+          "ApiChange": "Property",
+          "ChangedApiName": "informationBarrier",
+          "ChangeType": "Addition",
+          "Description": "Added the **informationBarrier** property to the [fileStorageContainer](https://learn.microsoft.com/en-us/graph/api/resources/fileStorageContainer?view=graph-rest-beta) resource.",
+          "Target": "fileStorageContainer"
+        }
+      ],
+      "Id": "93afe618-17e6-47bb-af98-de2281461ad2",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-11-18T18:12:05.945322Z",
+      "WorkloadArea": "Files",
+      "SubArea": ""
     }
   ]
 }

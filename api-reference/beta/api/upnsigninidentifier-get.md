@@ -100,7 +100,6 @@ GET https://graph.microsoft.com/beta/identity/signInIdentifiers/UPN
 
 ---
 
-
 ### Response
 
 The following example shows the response.

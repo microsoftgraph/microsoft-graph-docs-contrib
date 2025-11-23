@@ -102,7 +102,6 @@ DELETE https://graph.microsoft.com/beta/identity/signInIdentifiers/CustomUsernam
 
 ---
 
-
 ### Response
 
 The following example shows the response.

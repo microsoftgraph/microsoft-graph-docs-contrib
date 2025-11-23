@@ -100,7 +100,6 @@ GET https://graph.microsoft.com/beta/identity/signInIdentifiers/CustomUsername1
 
 ---
 
-
 ### Response
 
 The following example shows the response.

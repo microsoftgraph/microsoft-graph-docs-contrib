@@ -98,7 +98,6 @@ GET https://graph.microsoft.com/beta/identity/verifiedId/profiles/ca15ec56-7adf-
 
 ---
 
-
 ### Response
 
 

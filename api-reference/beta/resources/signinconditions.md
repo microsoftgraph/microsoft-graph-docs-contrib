@@ -19,6 +19,7 @@ Represents sign-in parameters of the authenticating identity as defined in [Cond
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
+|agentIdRiskLevel|agentIdRiskLevel| Agent identity risk levels included in the policy. Possible values are: `none`, `low`, `medium`, `high`, `unknownFutureValue`. This enumeration is multivalued.|
 |authenticationFlow|[authenticationFlow](../resources/authenticationflow.md)| Type of authentication flow. The possible value is: `deviceCodeFlow` or `authenticationTransfer`. Default value is `none`.|
 |clientAppType|conditionalAccessClientApp|Client application type. The possible value is: `all`, `browser`, `mobileAppsAndDesktopClients`, `exchangeActiveSync`, `easSupported`, `other`, `unknownFutureValue`. Default value is `all`. |
 |country|String|Country from where the identity is authenticating.|
@@ -29,6 +30,7 @@ Represents sign-in parameters of the authenticating identity as defined in [Cond
 |servicePrincipalRiskLevel|riskLevel|Risk associated with the service principal. The possible value is: `low`, `medium`, `high`, `hidden`, `none`, `unknownFutureValue`. Default value is `none`.|
 |signInRiskLevel|riskLevel|Sign-in risk associated with the user. The possible value is: `low`, `medium`, `high`, `hidden`, `none`, `unknownFutureValue`. Default value is `none`.|
 |userRiskLevel|riskLevel|The authenticating user's risk level. The possible value is: `low`, `medium`, `high`, `hidden`, `none`, `unknownFutureValue`. Default value is `none`.|
+
 
 ## Relationships
 None.
@@ -56,7 +58,8 @@ The following JSON representation shows the resource type.
   "insiderRiskLevel": "String",
   "authenticationFlow": {
     "@odata.type": "microsoft.graph.authenticationFlow"
-  }
+  },
+  "agentIdRiskLevel": "String",
 }
 ```
 

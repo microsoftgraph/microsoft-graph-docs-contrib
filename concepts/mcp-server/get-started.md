@@ -1,0 +1,269 @@
+---
+title: Get Started With the Microsoft MCP Server for Enterprise
+description: "Microsoft MCP Server for Enterprise: Learn how to install, configure, and run the MCP Server in your MCP clients to query Microsoft Graph using natural language."
+author: FaithOmbongi
+ms.author: ombongifaith
+ms.reviewer: Licantrop0
+ms.subservice: enterprise-mcp-server
+ms.topic: get-started
+ms.date: 11/18/2025
+
+#customer intent: As a developer, I want to configure my AI client to connect to the Microsoft MCP Server so that I can integrate enterprise data into my applications.
+---
+
+# Get started with the Microsoft MCP Server for Enterprise
+
+To start using the Microsoft MCP Server for Enterprise, you must enable it in your tenant. This process currently provisions both the MCP Server and Visual Studio Code. After provisioning, you can configure your MCP client to connect to the MCP Server.
+
+This article describes how to provision the MCP server and to configure VS Code and custom MCP clients to connect to the Microsoft MCP Server for Enterprise.
+
+## Provision the MCP Server and VS Code
+
+1. Start PowerShell in Administrator mode and install **Microsoft.Entra.Beta** PowerShell module (version 1.0.13 or later):
+
+   ```powershell
+   Install-Module Microsoft.Entra.Beta -Force -AllowClobber
+   ```
+
+1. Authenticate into the tenant you'd like to register the MCP Server. You must be assigned either the *Application Administrator* and *Cloud Application Administrator* roles to consent to the required permissions:
+
+   ```powershell
+   Connect-Entra -Scopes 'Application.ReadWrite.All', 'Directory.Read.All', 'DelegatedPermissionGrant.ReadWrite.All'
+   ```
+
+  > [!TIP]
+  > Run `Get-MgContext` after authentication to confirm the account and tenant you are currently authenticated against and the scopes you have consented to.
+
+1. Register the Microsoft MCP Server for Enterprise in your tenant and grant all permissions to Visual Studio Code:
+
+   ```powershell
+   Grant-EntraBetaMCPServerPermission -ApplicationName VisualStudioCode
+   ```
+
+## Confirm the MCP server registration
+
+To verify successful provisioning, look for the following applications in the Enterprise Applications in the Microsoft Entra portal, by using Microsoft Graph, or Microsoft Entra PowerShell.
+
+| Name                                | Globally unique **appId** (Client ID)  |
+|-------------------------------------|----------------------------------------|
+| Microsoft MCP Server for Enterprise | `e8c77dc2-69b3-43f4-bc51-3213c9d915b4` |
+| Visual Studio Code                  | `aebc6443-996d-45c2-90f0-388ff96faa56` |
+
+# [Microsoft Graph](#tab/http)
+
+By using the application names:
+<!-- {
+  "blockType": "request",
+  "name": "provision-mcp-verify-provisioning-displayname-filter"
+}-->
+```http
+GET https://graph.microsoft.com/v1.0/servicePrincipals?$filter=displayName eq 'Microsoft MCP Server for Enterprise' OR displayName eq 'Visual Studio Code'
+```
+
+By using the globally unique **appId**:
+<!-- {
+  "blockType": "request",
+  "name": "provision-mcp-verify-provisioning-appid-filter"
+}-->
+```http
+GET https://graph.microsoft.com/v1.0/servicePrincipals?$filter=appId eq 'e8c77dc2-69b3-43f4-bc51-3213c9d915b4'
+```
+
+# [Microsoft Entra PowerShell](#tab/powershell)
+
+```powershell
+Get-EntraServicePrincipal -Filter "displayName eq 'Microsoft MCP Server for Enterprise'"
+```
+
+# [Admin portal](#tab/portal)
+
+1. Sign in to the [Microsoft Entra portal](https://entra.microsoft.com/).
+1. Expand **Entra ID** >  **Enterprise apps**.
+1. Under the **Manage** group, select **All applications**.
+1. Search the MCP server either by name or client ID.
+
+---
+
+## Confirm permissions granted to your MCP Clients
+
+To verify the permissions granted to your MCP clients, you can use Microsoft Graph, Microsoft Entra PowerShell, or the Microsoft Entra portal.
+
+# [Microsoft Graph](#tab/http)
+
+<!-- {
+  "blockType": "request",
+  "name": "provision-mcp-verify-provisioning-clients-oauth2permissiongrants"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/oauth2PermissionGrants
+```
+
+# [Microsoft Entra PowerShell](#tab/powershell)
+
+```powershell
+$mcpClientId = (Get-EntraServicePrincipal -Filter "displayName eq 'Visual Studio Code'").Id
+ 
+$grant = Get-EntraServicePrincipalOAuth2PermissionGrant  -ServicePrincipalId $mcpClientId
+ 
+$grant.Scope -split ' ' | ForEach-Object {     [pscustomobject]@{ Scope = $_ } } | Format-Table
+```
+
+# [Admin portal](#tab/portal)
+
+1. Sign in to the [Microsoft Entra portal](https://entra.microsoft.com/).
+1. Expand **Entra ID** >  **Enterprise apps**.
+1. Under the **Manage** group, select **All applications**.
+1. Search the service principals either by name or client ID and select it.
+1. Select **Permissions** to view all the Microsoft MCP Server permissions that are granted to the MCP client.
+
+---
+
+## Connect your MCP client to the MCP Server
+
+# [VS Code](#tab/vscode)
+
+1. Click [Install Microsoft MCP Server for Enterprise](https://vscode.dev/redirect/mcp/install?name=Microsoft%20MCP%20Server%20for%20Enterprise&config=%7b%22name%22:%22Microsoft%20MCP%20Server%20for%20Enterprise%22%2c%22type%22:%22http%22%2c%22url%22:%22https://mcp.svc.cloud.microsoft/enterprise%22%7d) to launch VS Code's MCP install page.
+
+1. Click the Install button in VS Code and authenticate with the admin account.
+
+1. Open Copilot Chat in **Agent** mode and ask a question about your tenant, for example, "How many users are in my tenant?".
+    1. Review the response from the MCP Server, which should indicate:
+    1. The tools that were invoked to identify the intent
+    1. The REST API call that was made to Microsoft Graph
+    1. A response in natural language showing the number of users in your tenant. 
+
+# [Custom MCP clients](#tab/custom-clients)
+
+1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com) with an account that has privileges to register applications in the tenant. *Application Administrator* or *Cloud Application Administrator* roles are sufficient.
+1. Complete the steps to register an application and consider the following settings:
+   1. The name.
+   1. The redirect URI and platform.
+   1. The supported account types.
+
+1. Record the following values for the app registration for use when configuring your custom MCP client:
+       - **Application (client) ID**
+       - **Directory (tenant) ID**
+1. To grant permissions:
+   1. Select **Delegated permissions** and add the required permissions based on your use case. For the sample request to get the number of users in your tenant, add the `MCP.User.Read.All` permission. 
+   1. Grant admin consent for the permissions you added.
+1. Test your MCP client to ensure it can connect to the MCP Server for Enterprise and perform the intended operations.
+
+To manage scopes on custom MCP clients:
+
+```powershell
+Grant-EntraBetaMCPServerPermission -ApplicationId "<Your_MCP_Client_Application_Id>" -Scopes "<Scope1>", "<Scope2>", "<...>"
+Revoke-EntraBetaMCPServerPermission -ApplicationId "<Your_MCP_Client_Application_Id>" -Scopes "<Scope1>", "<Scope2>", "<...>"
+```
+
+---
+
+## View supported MCP Server scopes
+
+The MCP Server supports only delegated permissions for user-interactive scenarios and doesn't support app-only permissions or app-only scenarios. To view the available delegated permissions that can be granted to MCP clients, follow these steps. *DelegatedPermissionGrant.Read.All* permission is the least privilege permission supported to perform this action.
+
+# [Microsoft Graph](#tab/http)
+
+<!-- {
+  "blockType": "request",
+  "name": "provision-mcp-verify-provisioning-availablescopes"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='e8c77dc2-69b3-43f4-bc51-3213c9d915b4')/oauth2PermissionScopes
+```
+
+# [Microsoft Entra PowerShell](#tab/entra-powershell)
+
+```powershell
+(Get-EntraBetaServicePrincipal -Property "PublishedPermissionScopes" -Filter "AppId eq 'e8c77dc2-69b3-43f4-bc51-3213c9d915b4'").PublishedPermissionScopes | Where-Object { $_.IsEnabled -eq $true -and $_.AdditionalProperties["isPrivate"] -ne $true } | Select-Object Value, AdminConsentDisplayName | Sort-Object
+```
+
+# [Admin center](#tab/portal)
+
+1. Sign in to the [Microsoft Entra portal](https://entra.microsoft.com/).
+1. Expand **Entra ID** >  **Enterprise apps**.
+1. Under the **Manage** group, select **All applications**.
+1. Search either by name `Microsoft MCP Server for Enterprise` or appId (`e8c77dc2-69b3-43f4-bc51-3213c9d915b4`) > open the application.
+1. Navigate to the **Security** group and select **Permissions**. The list shows all delegated permissions (scopes) that the MCP Server exposes.
+
+---
+
+<details>
+<summary>List of MCP Server scopes</summary>
+
+The naming of scopes follows the pattern: "MCP.{microsoft-graph-scope-name}". For example, the [User.Read.All](../permissions-reference.md#userreadall) Microsoft Graph scope is exposed as `MCP.User.Read.All` on the MCP Server. To understand what operations each scope allows, refer to the original name in the [Microsoft Graph permissions reference](../permissions-reference.md).
+
+- MCP.AccessReview.Read.All
+- MCP.AdministrativeUnit.Read.All
+- MCP.Application.Read.All
+- MCP.AuditLog.Read.All
+- MCP.AuthenticationContext.Read.All
+- MCP.Device.Read.All
+- MCP.DirectoryRecommendations.Read.All
+- MCP.Domain.Read.All
+- MCP.EntitlementManagement.Read.All
+- MCP.GroupMember.Read.All
+- MCP.HealthMonitoringAlert.Read.All
+- MCP.IdentityRiskEvent.Read.All
+- MCP.IdentityRiskyServicePrincipal.Read.All
+- MCP.IdentityRiskyUser.Read.All
+- MCP.LicenseAssignment.Read.All
+- MCP.LifecycleWorkflows.Read.All
+- MCP.LifecycleWorkflows-CustomExt.Read.All
+- MCP.LifecycleWorkflows-Reports.Read.All
+- MCP.LifecycleWorkflows-Workflow.Read.All
+- MCP.LifecycleWorkflows-Workflow.ReadBasic.All
+- MCP.NetworkAccess.Read.All
+- MCP.NetworkAccess-Reports.Read.All
+- MCP.Organization.Read.All
+- MCP.Policy.Read.All
+- MCP.Policy.Read.ConditionalAccess
+- MCP.ProvisioningLog.Read.All
+- MCP.Reports.Read.All
+- MCP.RoleAssignmentSchedule.Read.Directory
+- MCP.RoleEligibilitySchedule.Read.Directory
+- MCP.RoleManagement.Read.Directory
+- MCP.Synchronization.Read.All
+- MCP.User.Read.All
+- MCP.UserAuthenticationMethod.Read.All
+- MCP.GroupSettings.Read.All
+
+</details>
+
+---
+
+## Disable the MCP Server for Enterprise
+
+Because the MCP Server for Enterprise is a Microsoft-owned service, you can't delete it from your tenant. However, you can disable it.
+
+# [Microsoft Graph](#tab/http)
+
+<!-- {
+  "blockType": "request",
+  "name": "provision-mcp-delete-enterprisemcpserver"
+}-->
+```http
+PATCH https://graph.microsoft.com/v1.0/servicePrincipals(appId='e8c77dc2-69b3-43f4-bc51-3213c9d915b4')
+
+{
+    "accountEnabled": false
+}
+```
+
+# [Microsoft Entra PowerShell](#tab/entra-powershell)
+
+```powershell
+$mcpServer = Get-EntraServicePrincipal -Filter "displayName eq 'Microsoft MCP Server for Enterprise'"
+ 
+Set-EntraServicePrincipal -ServicePrincipalId $mcpServer.Id -AccountEnabled $false
+```
+
+# [Admin center](#tab/entra-portal)
+
+1. Sign in to the [Microsoft Entra portal](https://entra.microsoft.com/).
+2. Expand **Entra ID** >  **Enterprise apps**.
+1. Under the **Manage** group, select **All applications**.
+1. Search the applications either by name or client ID and navigate to each of them.
+1. Under the **Manage** group, toggle the **Enabled for users to sign-in?** switch to **No**.
+
+---
+

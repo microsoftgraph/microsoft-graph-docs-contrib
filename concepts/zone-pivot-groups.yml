@@ -36,3 +36,13 @@ groups:
     title: AWS
   - id: gcp-authorization-systems
     title: GCP
+- id: enterprise-mcp-server-client-setup
+  title: Set up your AI Client to use the Microsoft MCP Server for Enterprise
+  prompt: Choose your AI client
+  pivots:
+  - id: vs-code
+    title: Visual Studio Code
+  - id: custom-app
+    title: Custom AI Client
+  - id: chat-gpt
+    title: Chat GPT
