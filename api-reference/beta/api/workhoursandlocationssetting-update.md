@@ -1,6 +1,6 @@
 ---
 title: "Update workHoursAndLocationsSetting"
-description: "Update the properties of your own work hours and location settings."
+description: "Update the properties of your own workHoursAndLocationsSetting."
 author: "emilbekj"
 ms.localizationpriority: medium
 ms.subservice: "outlook"
@@ -14,9 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of your own [workHoursAndLocationsSetting](../resources/workhoursandlocationssetting.md) settings.
-
-This API allows you to update your own work hours and location settings. When using the `/users/{id}` endpoint, the ID must be your own user ID.
+Update the properties of your own [workHoursAndLocationsSetting](../resources/workhoursandlocationssetting.md).
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
