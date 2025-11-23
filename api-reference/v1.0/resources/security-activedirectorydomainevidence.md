@@ -44,6 +44,9 @@ The following JSON representation shows the resource type.
   "roles": [
     "String"
   ],
+  "detailedRoles": [
+    "String"
+  ],
   "tags": [
     "String"
   ],
