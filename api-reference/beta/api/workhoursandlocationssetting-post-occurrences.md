@@ -1,6 +1,6 @@
 ---
 title: "Create workPlanOccurrence"
-description: "Create a new workPlanOccurrence object in your own work plan (time-off only)."
+description: "Create a new workPlanOccurrence object in your own work plan."
 author: "emilbekj"
 ms.localizationpriority: medium
 ms.subservice: "outlook"
