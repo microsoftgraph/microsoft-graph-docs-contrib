@@ -93,7 +93,7 @@ Content-Type: application/json
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/entitlementManagement/controlConfigurations/$entity",
   "@odata.type": "#microsoft.graph.insiderRiskyUserApproval",
-  "id": "InsiderRiskUserApproval",
+  "id": "insiderRiskyUserApproval",
   "isEnabled": true,
   "createdBy": "kayat@elmdev.com",
   "createdDateTime": "2025-10-20T13:34:00Z",

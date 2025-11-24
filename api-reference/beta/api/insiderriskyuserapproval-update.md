@@ -79,8 +79,8 @@ PUT https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/co
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.insiderRiskUserApproval",
-  "id": "InsiderRiskUserApproval ",
+  "@odata.type": "#microsoft.graph.insiderRiskyUserApproval",
+  "id": "insiderRiskyUserApproval ",
   "isApprovalRequired": true,
   "minimumRiskLevel": "elevated"
 }
@@ -105,7 +105,7 @@ Content-Type: application/json
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/entitlementManagement/controlConfigurations/$entity",
   "@odata.type": "#microsoft.graph.insiderRiskyUserApproval",
-  "id": "InsiderRiskUserApproval",
+  "id": "insiderRiskyUserApproval",
   "createdBy": "kayat@elmdev.com",
   "createdDateTime": "2025-11-04T11:00:00Z",
   "modifiedBy": "kayat@elmdev.com",
