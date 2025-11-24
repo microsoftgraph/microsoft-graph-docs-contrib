@@ -65,7 +65,7 @@ If successful, this method returns a `201 Created` response code and a [fileStor
 
 ### Request
 The following example shows how to add a new permission grant to a registration.
-# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create_filestoragecontainertypeapppermissiongrant_from_"
@@ -80,12 +80,6 @@ Content-Type: application/json
   "applicationPermissions": ["full"]
 }
 ```
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-filestoragecontainertypeapppermissiongrant-from--javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### Response
 The following example shows the response.

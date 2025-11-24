@@ -82,7 +82,6 @@ The following example shows how to create a **fileStorageContainerTypeRegistrati
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_filestoragecontainertyperegistration"
@@ -107,12 +106,6 @@ Content-Type: application/json
   ]
 }
 ```
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-filestoragecontainertyperegistration-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 #### Response
 The following example shows the response.
@@ -169,7 +162,7 @@ The following example shows how to create a **fileStorageContainerTypeRegistrati
 
 #### Request
 The following example shows a request.
-# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create_filestoragecontainertyperegistration_no_billing"
@@ -189,12 +182,6 @@ Content-Type: application/json
   ]
 }
 ```
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-filestoragecontainertyperegistration-no-billing-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 #### Response
 The following example shows the response.

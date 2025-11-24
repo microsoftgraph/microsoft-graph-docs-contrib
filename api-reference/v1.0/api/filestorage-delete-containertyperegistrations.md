@@ -39,7 +39,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-```http
+``` http
 DELETE /storage/fileStorage/containerTypeRegistrations/{fileStorageContainerTypeRegistrationId}
 ```
 
@@ -63,41 +63,14 @@ If successful, this method returns a `204 No Content` response code.
 
 The following example shows a request to delete a **fileStorageContainerTypeRegistration**.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_filestoragecontainertyperegistration"
 }
 -->
-```http
+``` http
 DELETE https://graph.microsoft.com/v1.0/storage/fileStorage/containerTypeRegistrations/de988700-d700-020e-0a00-0831f3042f00
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/delete-filestoragecontainertyperegistration-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/delete-filestoragecontainertyperegistration-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/delete-filestoragecontainertyperegistration-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/delete-filestoragecontainertyperegistration-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/delete-filestoragecontainertyperegistration-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/delete-filestoragecontainertyperegistration-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### Response
 The following example shows the response.
@@ -106,7 +79,6 @@ The following example shows the response.
   "truncated": true
 }
 -->
-```http
+``` http
 HTTP/1.1 204 No Content
 ```
-
