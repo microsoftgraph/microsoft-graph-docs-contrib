@@ -12,7 +12,7 @@ ms.date: 06/21/2024
 
 Namespace: microsoft.graph
 
-Retrieve the properties and relationships of a [onenoteSection](../resources/section.md) object.
+Retrieve the properties and relationships of a [onenoteSection](../resources/onenotesection.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -46,7 +46,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [onenoteSection](../resources/section.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [onenoteSection](../resources/onenotesection.md) object in the response body.
 ## Example
 ##### Request
 The following example shows a request.
