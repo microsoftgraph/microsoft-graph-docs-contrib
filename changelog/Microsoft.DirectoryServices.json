@@ -14769,6 +14769,32 @@
       "CreatedDateTime": "2025-11-17T23:52:29.3280091Z",
       "WorkloadArea": "Applications",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "39f10270-454d-4d4b-81dc-26552aab1dd7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "b2bManagementPolicy",
+          "ChangeType": "Addition",
+          "Description": "Added the [b2bManagementPolicy](https://learn.microsoft.com/en-us/graph/api/resources/b2bManagementPolicy?view=graph-rest-beta) resource.",
+          "Target": "b2bManagementPolicy"
+        },
+        {
+          "Id": "39f10270-454d-4d4b-81dc-26552aab1dd7",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "b2bManagementPolicies",
+          "ChangeType": "Addition",
+          "Description": "Added the **b2bManagementPolicies** relationship to the [policyRoot](https://learn.microsoft.com/en-us/graph/api/resources/policyRoot?view=graph-rest-beta) resource.",
+          "Target": "policyRoot"
+        }
+      ],
+      "Id": "39f10270-454d-4d4b-81dc-26552aab1dd7",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-11-18T17:35:49.5146879Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
     }
   ]
 }
