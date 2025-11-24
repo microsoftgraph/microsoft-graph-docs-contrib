@@ -109,7 +109,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/stagingbeta/$metadata#identityGovernance/entitlementManagement/controlConfigurations/$entity",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/entitlementManagement/controlConfigurations/$entity",
   "@odata.type": "#microsoft.graph.entraIdProtectionRiskyUserApproval",
   "id": "EntraIdProtectionRiskyUserApproval",
   "createdBy": "kayat@elmdev.com",
