@@ -126,6 +126,7 @@ Content-Type: application/json
       "toolTip": "Apply this label to general non-public data.",
       "isEnabled": true,
       "isEndpointProtectionEnabled": true,
+      "hasProtection": true,
       "autoTooltip": "",
       "actionSource": "manual",
       "applicableTo": "email,teamwork,file",
