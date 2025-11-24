@@ -1,6 +1,6 @@
 ---
 title: "b2bManagementPolicy resource type"
-description: "Represents Microsoft Entra B2B features in Microsoft Entra External ID for workforce tenants, including restricting/allowing which domains can be used to invite users, if auto redemption of invitations is allowed, and opt-in of preview features."
+description: "Represents Microsoft Entra B2B features in Microsoft Entra External ID for workforce tenants, including restricting/allowing which domains can be used to invite users, if auto redemption of invitations is allowed, and opt in of preview features."
 author: "akshukla"
 ms.date: 10/27/2025
 toc.title: B2B management policy
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents Microsoft Entra B2B features in Microsoft Entra External ID for workforce tenants, including restricting/allowing which domains can be used to invite users, if auto redemption of invitations is allowed, and opt-in of preview features.
+Represents Microsoft Entra B2B features in Microsoft Entra External ID for workforce tenants, including restricting/allowing which domains can be used to invite users, if auto redemption of invitations is allowed, and opt in of preview features.
 
 Inherits from [stsPolicy](../resources/stspolicy.md).
 
@@ -28,9 +28,9 @@ Inherits from [stsPolicy](../resources/stspolicy.md).
 |[Get](../api/b2bmanagementpolicy-get.md)|[b2bManagementPolicy](../resources/b2bmanagementpolicy.md)|Read the properties and relationships of [b2bManagementPolicy](../resources/b2bmanagementpolicy.md) object.|
 |[Update](../api/b2bmanagementpolicy-update.md)|[b2bManagementPolicy](../resources/b2bmanagementpolicy.md)|Update the properties of a b2bManagementPolicy object.|
 |[Delete](../api/policyroot-delete-b2bmanagementpolicies.md)|None|Delete a b2bManagementPolicy object.|
-|[List appliesTo](../api/b2bmanagementpolicy-list-appliesto.md)|[directoryObject](../resources/directoryobject.md) collection| Get the list of directoryObjects that this policy has been applied to.|
+|[List appliesTo](../api/b2bmanagementpolicy-list-appliesto.md)|[directoryObject](../resources/directoryobject.md) collection| Get the list of directoryObjects that this policy is applied to.|
 |[Add appliesTo](../api/b2bmanagementpolicy-post-appliesto.md)|[directoryObject](../resources/directoryobject.md)|Add appliesTo by posting to the appliesTo collection.|
-|[Remove appliesTo](../api/b2bmanagementpolicy-delete-appliesto.md)|None|Remove a [directoryObject](../resources/directoryobject.md) object that this policy has been applied to.|
+|[Remove appliesTo](../api/b2bmanagementpolicy-delete-appliesto.md)|None|Remove a [directoryObject](../resources/directoryobject.md) object that this policy is applied to.|
 
 ## Properties
 |Property|Type|Description|
@@ -45,7 +45,7 @@ Inherits from [stsPolicy](../resources/stspolicy.md).
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|appliesTo|[directoryObject](../resources/directoryobject.md) collection| The directoryObject collection that this policy has been applied to. Read-only. Inherited from [microsoft.graph.stsPolicy](../resources/stspolicy.md)|
+|appliesTo|[directoryObject](../resources/directoryobject.md) collection| The directoryObject collection that this policy is applied to. Read-only. Inherited from [microsoft.graph.stsPolicy](../resources/stspolicy.md)|
 
 ## JSON representation
 The following JSON representation shows the resource type.
