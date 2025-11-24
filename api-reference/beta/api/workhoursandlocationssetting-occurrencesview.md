@@ -74,6 +74,10 @@ If successful, this function returns a `200 OK` response code and a collection o
 
 The following example shows a request.
 
+<!-- {
+  "blockType": "request",
+  "name": "workhoursandlocationssetting_occurrencesview"
+} -->
 ```http
 GET https://graph.microsoft.com/beta/me/settings/workHoursAndLocations/occurrencesView(startDateTime='2024-01-01T00:00:00Z',endDateTime='2024-01-07T23:59:59Z')
 ```
