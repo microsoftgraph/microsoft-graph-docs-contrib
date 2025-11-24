@@ -328,8 +328,8 @@
              }
            ]
          },
-        {
-          "name": "Work hours and locations",
+         {
+          "name": "Work hours and locations (preview)",
           "overview": "../../resources/workhoursandlocationssetting.md",
           "resources": [
             "workHoursAndLocationsSetting",
