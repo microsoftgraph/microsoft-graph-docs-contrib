@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Represents a specific work schedule instance for a particular day or time period in your work plan.
 
-Your work plan occurrences can be automatically generated from recurring work patterns or manually created for special arrangements. These occurrences are useful for handling exceptions to your regular schedules. Examples include:
+Your work plan occurrences can be automatically generated from recurring work patterns or manually created for special arrangements. These occurrences are useful for handling exceptions to your regular schedules. The following list shows possible examples:
 
 - Working different hours for a specific day
 - Working from a different location 
@@ -28,11 +28,11 @@ When a work plan occurrence exists for the same time period as a recurring patte
 
 | Method | Return Type | Description |
 |:-------|:------------|:------------|
-| [List occurrences](../api/workhoursandlocationssetting-occurrencesview.md) | [workPlanOccurrence](workplanoccurrence.md) collection | Retrieves work plan occurrences within a specified date range. |
-| [Create](../api/workhoursandlocationssetting-post-occurrences.md) | [workPlanOccurrence](workplanoccurrence.md) | Create a new workPlanOccurrence object (time-off only). |
-| [Update](../api/workplanoccurrence-update.md) | [workPlanOccurrence](workplanoccurrence.md) | Update the properties of a workPlanOccurrence object. |
-| [Delete](../api/workplanoccurrence-delete.md) | None | Delete a workPlanOccurrence object (time-off only). |
-| [setCurrentLocation](../api/workplanoccurrence-setcurrentlocation.md) | None | Update your work location for the current day or current active segment. |
+| [List](../api/workhoursandlocationssetting-occurrencesview.md) | [workPlanOccurrence](workplanoccurrence.md) collection | Get [work plan occurrences](../resources/workplanoccurrence.md) from your own work plan within a specified date range. |
+| [Create](../api/workhoursandlocationssetting-post-occurrences.md) | [workPlanOccurrence](workplanoccurrence.md) | Create a new [workPlanOccurrence](../resources/workplanoccurrence.md) object in your own work plan. |
+| [Update](../api/workplanoccurrence-update.md) | [workPlanOccurrence](workplanoccurrence.md) | Update the properties of a [workPlanOccurrence](../resources/workplanoccurrence.md) object in your own work plan. |
+| [Delete](../api/workplanoccurrence-delete.md) | None | Delete a [workPlanOccurrence](../resources/workplanoccurrence.md) object from your own work plan. |
+| [Set current location](../api/workplanoccurrence-setcurrentlocation.md) | None | Update your [work](../resources/workplanoccurrence.md) location for the current day or current active segment. |
 
 ## Properties
 
@@ -40,26 +40,26 @@ When a work plan occurrence exists for the same time period as a recurring patte
 |:---------|:-----|:------------|
 | end | [dateTimeTimeZone](datetimetimezone.md) | The end date and time for this occurrence. |
 | id | String | Unique identifier for the occurrence. |
-| recurrenceId | String | Identifier of the parent recurrence pattern that generated this occurrence. Is null for time-off occurrences since they don't have a parent recurrence. |
+| recurrenceId | String | The identifier of the parent recurrence pattern that generated this occurrence. The value is `null` for time-off occurrences because they don't have a parent recurrence. |
 | start | [dateTimeTimeZone](datetimetimezone.md) | The start date and time for this occurrence. |
-| timeOffDetails | [timeOffDetails](timeoffdetails.md) | Details about the time off. Only applicable when **workLocationType** is `timeOff`. |
-| workLocationType | workLocationType | The type of work location. See [workLocationType values](#worklocationtype-values). |
+| timeOffDetails | [timeOffDetails](timeoffdetails.md) | Details about the time off. Only applicable when **workLocationType** is set to `timeOff`. |
+| workLocationType | [workLocationType](../resources/workplanoccurrence.md#worklocationtype-values) | The type of work location. The possible values are: `unspecified`, `office`, `remote`, `timeOff`, `unknownFutureValue`. |
 
 ### workLocationType values
 
 | Member | Description |
 |:-------|:------------|
-| unspecified | Indicates the user didn't specify the location. |
-| office | Indicates the user is working from an office location. |
-| remote | Indicates the user is working remotely. |
-| timeOff | Indicates the user is on time off. |
-| unknownFutureValue | Reserved for future use. |
+| unspecified | Indicates that the user didn't specify the location. |
+| office | Indicates that the user works from an office location. |
+| remote | Indicates that the user works remotely. |
+| timeOff | Indicates that the user is on time-off. |
+| unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
 
 ## Relationships
 
 | Relationship | Type | Description |
 |:-------------|:-----|:------------|
-| workLocationDetails | [place](place.md) | Navigation property to a place entity from the Microsoft Graph Places Directory API. Only applicable when **workLocationType** is `office`. |
+| workLocationDetails | [place](place.md) | Details about the work location. Only applicable when **workLocationType** is set to `office`. |
 
 ## JSON representation
 
@@ -73,18 +73,12 @@ The following JSON representation shows the resource type.
 
 ```json
 {
+  "end": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
   "id": "String (identifier)",
   "recurrenceId": "String",
-  "start": {
-    "@odata.type": "microsoft.graph.dateTimeTimeZone"
-  },
-  "end": {
-    "@odata.type": "microsoft.graph.dateTimeTimeZone"
-  },
-  "workLocationType": "String",
-  "timeOffDetails": {
-    "@odata.type": "microsoft.graph.timeOffDetails"
-  }
+  "start": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
+  "timeOffDetails": {"@odata.type": "microsoft.graph.timeOffDetails"},
+  "workLocationType": "String"
 }
 ```
 
