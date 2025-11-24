@@ -165,7 +165,7 @@ Content-Type: application/json
       "bytesProcessedOnlyCurrentVersion": 12
     }
   ],
-  "@odata.nextLink": "https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/migrationJobs/7b04bfdd-5f8c-4bd9-97fa-a166a7922c61/progressEvents?$skiptoken=ODY4MA"
+  "@odata.nextLink": "https://graph.microsoft.com/v1.0/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/migrationJobs/7b04bfdd-5f8c-4bd9-97fa-a166a7922c61/progressEvents?$skiptoken=ODY4MA"
 }
 ```
 
