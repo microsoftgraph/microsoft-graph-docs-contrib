@@ -76,6 +76,7 @@ The following example shows a request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/report/retrieveCloudPcClientAppUsageReport
 Content-Type: application/json
+
 {
     "filter": "",
     "reportType":"microsoftRemoteDesktopClientUsageReport",
@@ -101,6 +102,7 @@ The following example shows the response.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
+
 {
     "TotalRowCount": 3,
     "Schema": [
