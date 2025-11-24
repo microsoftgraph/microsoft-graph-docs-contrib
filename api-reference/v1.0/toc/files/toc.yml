@@ -230,7 +230,7 @@ items:
   - name: SharePoint migration event
     href: ../../resources/sharepointmigrationevent.md
   - name: List progress events
-    href: ../../api/filestoragecontainer-migrationjob-list-progressevents.md
+    href: ../../api/sharepointmigrationjob-list-progressevents.md
 - name: SharePoint migration job
   items:
   - name: SharePoint migration job
@@ -238,9 +238,9 @@ items:
   - name: Create
     href: ../../api/filestoragecontainer-post-migrationjobs.md
   - name: Delete
-    href: ../../api/filestoragecontainer-delete-migrationjobs.md
+    href: ../../api/sharepointmigrationjob-delete.md
   - name: List progress events
-    href: ../../api/filestoragecontainer-migrationjob-list-progressevents.md
+    href: ../../api/sharepointmigrationjob-list-progressevents.md
   - name: Provision migration containers
     href: ../../api/filestoragecontainer-provisionmigrationcontainers.md
 - name: SharePoint migration job cancelled event
