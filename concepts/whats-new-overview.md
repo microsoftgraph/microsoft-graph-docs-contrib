@@ -26,11 +26,12 @@ The [driveItem: restore](/graph/api/driveitem-restore) method was expanded to en
 
 ### Files
 
-Removed the endpoint `/driveitem/retentionLabel` as a supported request URL from the following API topics:
-- [driveItem: getRetentionLabel](/graph/api/driveitem-getretentionlabel)
-- [driveItem: lockOrUnlockRecorddriveItem: lockOrUnlockRecord](/graph/api/driveitem-lockorunlockrecord)
-- [driveItem: removeRetentionLabel](/graph/api/driveitem-removeretentionlabel)
-- [driveItem: setRetentionLabel](/graph/api/driveitem-setretentionlabel)
+- The new SharePoint Embedded migration API enables you to programmatically schedule [SharePoint migration jobs](/graph/api/resources/sharepointmigrationjob) for bulk-migrating content from intermediary Azure blob storage containers to the target [fileStorageContainer](/graph/api/resources/filestoragecontainer).
+- Removed the endpoint `/driveitem/retentionLabel` as a supported request URL from the following API topics:
+  - [driveItem: getRetentionLabel](/graph/api/driveitem-getretentionlabel)
+  - [driveItem: lockOrUnlockRecorddriveItem: lockOrUnlockRecord](/graph/api/driveitem-lockorunlockrecord)
+  - [driveItem: removeRetentionLabel](/graph/api/driveitem-removeretentionlabel)
+  - [driveItem: setRetentionLabel](/graph/api/driveitem-setretentionlabel)
 
 ### Teamwork and communications | Calls and online meetings
 
