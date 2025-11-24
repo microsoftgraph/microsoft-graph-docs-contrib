@@ -4631,7 +4631,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "sharePointMigrationJob",
           "ChangeType": "Addition",
-          "Description": "Added the [sharePointMigrationJob](https://learn.microsoft.com/en-us/graph/api/resources/sharePointMigrationJob?view=graph-rest-beta) resource.",
+          "Description": "Added the [sharePointMigrationJob](https://learn.microsoft.com/en-us/graph/api/resources/sharePointMigrationJob?view=graph-rest-beta) resource and associated methods.",
           "Target": "sharePointMigrationJob"
         },
         {
@@ -4981,7 +4981,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "sharePointMigrationContainerInfo",
           "ChangeType": "Addition",
-          "Description": "Added the [sharePointMigrationContainerInfo](https://learn.microsoft.com/en-us/graph/api/resources/sharePointMigrationContainerInfo?view=graph-rest-1.0) resource.",
+          "Description": "Added the [sharePointMigrationContainerInfo](https://learn.microsoft.com/en-us/graph/api/resources/sharePointMigrationContainerInfo?view=graph-rest-1.0) resource type.",
           "Target": "sharePointMigrationContainerInfo"
         },
         {
@@ -4989,7 +4989,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "sharePointMigrationEvent",
           "ChangeType": "Addition",
-          "Description": "Added the [sharePointMigrationEvent](https://learn.microsoft.com/en-us/graph/api/resources/sharePointMigrationEvent?view=graph-rest-1.0) resource.",
+          "Description": "Added the [sharePointMigrationEvent](https://learn.microsoft.com/en-us/graph/api/resources/sharePointMigrationEvent?view=graph-rest-1.0) resource and an associated method.",
           "Target": "sharePointMigrationEvent"
         },
         {
@@ -4997,7 +4997,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "sharePointMigrationFinishManifestFileUploadEvent",
           "ChangeType": "Addition",
-          "Description": "Added the [sharePointMigrationFinishManifestFileUploadEvent](https://learn.microsoft.com/en-us/graph/api/resources/sharePointMigrationFinishManifestFileUploadEvent?view=graph-rest-1.0) resource.",
+          "Description": "Added the [sharePointMigrationFinishManifestFileUploadEvent](https://learn.microsoft.com/en-us/graph/api/resources/sharePointMigrationFinishManifestFileUploadEvent?view=graph-rest-1.0) resource type.",
           "Target": "sharePointMigrationFinishManifestFileUploadEvent"
         },
         {
@@ -5005,7 +5005,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "sharePointMigrationJob",
           "ChangeType": "Addition",
-          "Description": "Added the [sharePointMigrationJob](https://learn.microsoft.com/en-us/graph/api/resources/sharePointMigrationJob?view=graph-rest-1.0) resource.",
+          "Description": "Added the [sharePointMigrationJob](https://learn.microsoft.com/en-us/graph/api/resources/sharePointMigrationJob?view=graph-rest-1.0) resource type.",
           "Target": "sharePointMigrationJob"
         },
         {
@@ -5013,7 +5013,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "sharePointMigrationJobCancelledEvent",
           "ChangeType": "Addition",
-          "Description": "Added the [sharePointMigrationJobCancelledEvent](https://learn.microsoft.com/en-us/graph/api/resources/sharePointMigrationJobCancelledEvent?view=graph-rest-1.0) resource.",
+          "Description": "Added the [sharePointMigrationJobCancelledEvent](https://learn.microsoft.com/en-us/graph/api/resources/sharePointMigrationJobCancelledEvent?view=graph-rest-1.0) resource type.",
           "Target": "sharePointMigrationJobCancelledEvent"
         },
         {
@@ -5021,7 +5021,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "sharePointMigrationJobDeletedEvent",
           "ChangeType": "Addition",
-          "Description": "Added the [sharePointMigrationJobDeletedEvent](https://learn.microsoft.com/en-us/graph/api/resources/sharePointMigrationJobDeletedEvent?view=graph-rest-1.0) resource.",
+          "Description": "Added the [sharePointMigrationJobDeletedEvent](https://learn.microsoft.com/en-us/graph/api/resources/sharePointMigrationJobDeletedEvent?view=graph-rest-1.0) resource type.",
           "Target": "sharePointMigrationJobDeletedEvent"
         },
         {
@@ -5029,7 +5029,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "sharePointMigrationJobErrorEvent",
           "ChangeType": "Addition",
-          "Description": "Added the [sharePointMigrationJobErrorEvent](https://learn.microsoft.com/en-us/graph/api/resources/sharePointMigrationJobErrorEvent?view=graph-rest-1.0) resource.",
+          "Description": "Added the [sharePointMigrationJobErrorEvent](https://learn.microsoft.com/en-us/graph/api/resources/sharePointMigrationJobErrorEvent?view=graph-rest-1.0) resource type.",
           "Target": "sharePointMigrationJobErrorEvent"
         },
         {
@@ -5037,7 +5037,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "sharePointMigrationJobPostponedEvent",
           "ChangeType": "Addition",
-          "Description": "Added the [sharePointMigrationJobPostponedEvent](https://learn.microsoft.com/en-us/graph/api/resources/sharePointMigrationJobPostponedEvent?view=graph-rest-1.0) resource.",
+          "Description": "Added the [sharePointMigrationJobPostponedEvent](https://learn.microsoft.com/en-us/graph/api/resources/sharePointMigrationJobPostponedEvent?view=graph-rest-1.0) resource type.",
           "Target": "sharePointMigrationJobPostponedEvent"
         },
         {
@@ -5045,7 +5045,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "sharePointMigrationJobProgressEvent",
           "ChangeType": "Addition",
-          "Description": "Added the [sharePointMigrationJobProgressEvent](https://learn.microsoft.com/en-us/graph/api/resources/sharePointMigrationJobProgressEvent?view=graph-rest-1.0) resource.",
+          "Description": "Added the [sharePointMigrationJobProgressEvent](https://learn.microsoft.com/en-us/graph/api/resources/sharePointMigrationJobProgressEvent?view=graph-rest-1.0) resource type.",
           "Target": "sharePointMigrationJobProgressEvent"
         },
         {
@@ -5053,7 +5053,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "sharePointMigrationJobQueuedEvent",
           "ChangeType": "Addition",
-          "Description": "Added the [sharePointMigrationJobQueuedEvent](https://learn.microsoft.com/en-us/graph/api/resources/sharePointMigrationJobQueuedEvent?view=graph-rest-1.0) resource.",
+          "Description": "Added the [sharePointMigrationJobQueuedEvent](https://learn.microsoft.com/en-us/graph/api/resources/sharePointMigrationJobQueuedEvent?view=graph-rest-1.0) resource type.",
           "Target": "sharePointMigrationJobQueuedEvent"
         },
         {
@@ -5061,7 +5061,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "sharePointMigrationJobStartEvent",
           "ChangeType": "Addition",
-          "Description": "Added the [sharePointMigrationJobStartEvent](https://learn.microsoft.com/en-us/graph/api/resources/sharePointMigrationJobStartEvent?view=graph-rest-1.0) resource.",
+          "Description": "Added the [sharePointMigrationJobStartEvent](https://learn.microsoft.com/en-us/graph/api/resources/sharePointMigrationJobStartEvent?view=graph-rest-1.0) resource type.",
           "Target": "sharePointMigrationJobStartEvent"
         }
       ],
