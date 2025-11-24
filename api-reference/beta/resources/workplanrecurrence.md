@@ -16,23 +16,20 @@ Namespace: microsoft.graph
 
 Represents a recurring work schedule pattern that defines when and where you work regularly in your work plan.
 
-Your work plan recurrence allows you to establish repeating weekly work schedules. Examples include:
-
+Your work plan recurrence allows you to establish repeating weekly work schedules. The following list shows examples:
 - Office work every Monday, Wednesday, and Friday from 9 AM to 5 PM
 - Remote work on Tuesdays and Thursdays
 
-You can create multiple recurrences to accommodate different work patterns throughout the week.
-
-Time-off entries can't be set as recurring patterns and must be added as individual [workPlanOccurrence](workplanoccurrence.md) objects.
+You can create multiple recurrences to accommodate different work patterns throughout the week. Time-off entries can't be set as recurring patterns and must be added as individual [workPlanOccurrence](workplanoccurrence.md) objects.
 
 ## Methods
 
 | Method | Return Type | Description |
 |:-------|:------------|:------------|
-| [List recurrences](../api/workhoursandlocationssetting-list-recurrences.md) | [workPlanRecurrence](workplanrecurrence.md) collection | Get the recurrences from the recurrences navigation property. |
-| [Create](../api/workhoursandlocationssetting-post-recurrences.md) | [workPlanRecurrence](workplanrecurrence.md) | Create a new workPlanRecurrence object. |
-| [Update](../api/workplanrecurrence-update.md) | [workPlanRecurrence](workplanrecurrence.md) | Update the properties of a workPlanRecurrence object. |
-| [Delete](../api/workplanrecurrence-delete.md) | None | Delete a workPlanRecurrence object. |
+| [List](../api/workhoursandlocationssetting-list-recurrences.md) | [workPlanRecurrence](workplanrecurrence.md) collection | Get the [recurrences](../resources/workplanrecurrence.md) from your own work plan via the **recurrences** navigation property. |
+| [Create](../api/workhoursandlocationssetting-post-recurrences.md) | [workPlanRecurrence](workplanrecurrence.md) | Create a new [workPlanRecurrence](../resources/workplanrecurrence.md) object in your own work plan. |
+| [Update](../api/workplanrecurrence-update.md) | [workPlanRecurrence](workplanrecurrence.md) | Update the properties of a [workPlanRecurrence](../resources/workplanrecurrence.md) object in your own work plan. |
+| [Delete](../api/workplanrecurrence-delete.md) | None | Delete a [workPlanRecurrence](../resources/workplanrecurrence.md) object from your own work plan. |
 
 ## Properties
 
@@ -40,25 +37,15 @@ Time-off entries can't be set as recurring patterns and must be added as individ
 |:---------|:-----|:------------|
 | end | [dateTimeTimeZone](datetimetimezone.md) | The end date and time for the recurring work plan. |
 | id | String | Unique identifier for the recurrence. |
-| recurrence | [patternedRecurrence](patternedrecurrence.md) | The recurrence pattern defining when this work plan repeats. |
+| recurrence | [patternedRecurrence](patternedrecurrence.md) | The recurrence pattern that defines when this work plan repeats. |
 | start | [dateTimeTimeZone](datetimetimezone.md) | The start date and time for the recurring work plan. |
-| workLocationType | workLocationType | The type of work location. Can't be set to `timeOff`. See [workLocationType values](#worklocationtype-values). |
-
-### workLocationType values
-
-| Member | Description |
-|:-------|:------------|
-| unspecified | Indicates the user didn't specify the location. |
-| office | Indicates the user is working from an office location. |
-| remote | Indicates the user is working remotely. |
-| timeOff | Indicates the user is on time off. |
-| unknownFutureValue | Reserved for future use. |
+| workLocationType | [workLocationType](../resources/workplanoccurrence.md#worklocationtype-values) | The type of work location. It can't be set to `timeOff`. Supports a subset of the values for **workLocationType**. The possible values are: `unspecified`, `office`, `remote`, `unknownFutureValue`. |
 
 ## Relationships
 
 | Relationship | Type | Description |
 |:-------------|:-----|:------------|
-| workLocationDetails | [place](place.md) | Navigation property to a place entity from the Microsoft Graph Places Directory API. |
+| workLocationDetails | [place](place.md) | Details about the work location. |
 
 ## JSON representation
 
@@ -72,17 +59,11 @@ The following JSON representation shows the resource type.
 
 ```json
 {
+  "end": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
   "id": "String (identifier)",
-  "start": {
-    "@odata.type": "microsoft.graph.dateTimeTimeZone"
-  },
-  "end": {
-    "@odata.type": "microsoft.graph.dateTimeTimeZone"
-  },
-  "workLocationType": "String",
-  "recurrence": {
-    "@odata.type": "microsoft.graph.patternedRecurrence"
-  }
+  "recurrence": {"@odata.type": "microsoft.graph.patternedRecurrence"},
+  "start": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
+  "workLocationType": "String"
 }
 ```
 
