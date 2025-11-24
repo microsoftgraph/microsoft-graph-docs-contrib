@@ -392,6 +392,9 @@ The following example shows the response.
     "allowMeetingChat": "enabled",
     "allowTeamworkReactions": true,
     "videoTeleconferenceId": "(redacted)",
+    "sensitivityLabelAssignment": {
+      "sensitivityLabelId": "c7f2d7a7-6a36-4a41-9a6b-0d2761a9f4f0"
+    },
     "participants": {
         "organizer": {
             "upn": "(redacted)",
@@ -490,6 +493,9 @@ The following example shows the response.
                 "joinMeetingId": "1234567890",
                 "passcode": null
             },
+            "sensitivityLabelAssignment": {
+              "sensitivityLabelId": "c7f2d7a7-6a36-4a41-9a6b-0d2761a9f4f0"
+            }
             "meetingOptionsWebUrl": "https://teams.microsoft.com/meetingOptions/?meetingId=abc123"
         }
     ]
@@ -600,6 +606,9 @@ Content-Type: application/json
                 "isPasscodeRequired": false,
                 "joinMeetingId": "1234567890",
                 "passcode": null
+            },
+            "sensitivityLabelAssignment": {
+              "sensitivityLabelId": "c7f2d7a7-6a36-4a41-9a6b-0d2761a9f4f0"
             },
             "meetingOptionsWebUrl": "https://teams.microsoft.com/meetingOptions/?meetingId=abc123"
         }
