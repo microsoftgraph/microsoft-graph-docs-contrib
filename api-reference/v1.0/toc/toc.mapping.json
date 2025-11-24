@@ -673,7 +673,7 @@
           ],
           "complexTypes": [
             "sharePointMigrationContainerInfo",
-            "sharePointMigrationJob",
+            "sharePointMigrationJob"
           ]
         }
       ]
