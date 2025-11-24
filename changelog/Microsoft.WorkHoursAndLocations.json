@@ -87,8 +87,8 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2025-11-17T00:00:00Z",
-      "WorkloadArea": "Work hours and locations",
-      "SubArea": ""
+      "WorkloadArea": "Calendars",
+      "SubArea": "Work hours and locations"
     }
   ]
 }
