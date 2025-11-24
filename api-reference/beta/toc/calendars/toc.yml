@@ -448,8 +448,6 @@ items:
     items:
     - name: Work plan occurrence
       href: ../../resources/workplanoccurrence.md
-    - name: List
-      href: ../../api/workhoursandlocationssetting-occurrencesview.md
     - name: Create
       href: ../../api/workhoursandlocationssetting-post-occurrences.md
     - name: Update
@@ -458,6 +456,8 @@ items:
       href: ../../api/workplanoccurrence-delete.md
     - name: Set current location
       href: ../../api/workplanoccurrence-setcurrentlocation.md
+    - name: Occurrences view
+      href: ../../api/workhoursandlocationssetting-occurrencesview.md
   - name: Work plan recurrence
     items:
     - name: Work plan recurrence
