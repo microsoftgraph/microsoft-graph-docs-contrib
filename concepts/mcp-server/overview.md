@@ -53,7 +53,7 @@ The Microsoft MCP Server for Enterprise enables several key scenarios:
 
 ## Current scope and capabilities
 
-Microsoft MCP Server for Enterprise is currently in private preview. It focuses on Microsoft Entra identity and directory **read-only** scenarios such as user, group, application, and device insights, plus administrative reporting. All operations respect existing Microsoft Graph permissions, user privileges, and tenant security policies.
+Microsoft MCP Server for Enterprise is currently in public preview. It focuses on Microsoft Entra identity and directory **read-only** scenarios such as user, group, application, and device insights, plus administrative reporting. All operations respect existing Microsoft Graph permissions, user privileges, and tenant security policies.
 
 ## Licensing and costs
 
