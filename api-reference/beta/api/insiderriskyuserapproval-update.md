@@ -38,7 +38,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-PUT /identityGovernance/entitlementManagement/controlConfigurations/insiderRiskUserApproval
+PUT /identityGovernance/entitlementManagement/controlConfigurations/insiderRiskyUserApproval
 ```
 
 ## Request headers
@@ -75,7 +75,7 @@ The following example shows a request.
 }
 -->
 ``` http
-PUT https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/controlConfigurations/insiderRiskUserApproval
+PUT https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/controlConfigurations/insiderRiskyUserApproval
 Content-Type: application/json
 
 {
