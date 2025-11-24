@@ -63,6 +63,10 @@ If successful, this method returns a `200 OK` response code and a [workHoursAndL
 
 The following example shows a request to get basic work hours and location settings.
 
+<!-- {
+  "blockType": "request",
+  "name": "workhoursandlocationssetting_get"
+} -->
 ```http
 GET https://graph.microsoft.com/beta/me/settings/workHoursAndLocations
 ```
