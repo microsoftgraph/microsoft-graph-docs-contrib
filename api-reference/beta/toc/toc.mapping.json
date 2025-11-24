@@ -1065,7 +1065,7 @@
       ],
       "childNodes": [
         {
-          "name": "SharePoint migration (preview)",
+          "name": "SharePoint migration",
           "overview": "../../resources/sharepointmigration-api-overview.md",
           "resources": [
             "sharePointMigrationEvent",
