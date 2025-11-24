@@ -332,7 +332,7 @@ items:
     href: ../../api/sharepointgroupmember-get.md
   - name: Delete
     href: ../../api/sharepointgroup-delete-members.md
-- name: SharePoint migration (preview)
+- name: SharePoint migration
   items:
   - name: Overview
     href: ../../resources/sharepointmigration-api-overview.md
@@ -344,18 +344,6 @@ items:
       href: ../../api/sharepointmigrationjob-list-progressevents.md
   - name: SharePoint migration finish manifest file upload event
     href: ../../resources/sharepointmigrationfinishmanifestfileuploadevent.md
-  - name: SharePoint migration job
-    items:
-    - name: SharePoint migration job
-      href: ../../resources/sharepointmigrationjob.md
-    - name: Create
-      href: ../../api/filestoragecontainer-post-migrationjobs.md
-    - name: Delete
-      href: ../../api/sharepointmigrationjob-delete.md
-    - name: List progress events
-      href: ../../api/sharepointmigrationjob-list-progressevents.md
-    - name: Provision migration containers
-      href: ../../api/filestoragecontainer-provisionmigrationcontainers.md
   - name: SharePoint migration job cancelled event
     href: ../../resources/sharepointmigrationjobcancelledevent.md
   - name: SharePoint migration job deleted event
@@ -374,6 +362,18 @@ items:
     items:
     - name: SharePoint migration container info
       href: ../../resources/sharepointmigrationcontainerinfo.md
+    - name: SharePoint migration job
+      items:
+      - name: SharePoint migration job
+        href: ../../resources/sharepointmigrationjob.md
+      - name: Create
+        href: ../../api/filestoragecontainer-post-migrationjobs.md
+      - name: Delete
+        href: ../../api/sharepointmigrationjob-delete.md
+      - name: List progress events
+        href: ../../api/sharepointmigrationjob-list-progressevents.md
+      - name: Provision migration containers
+        href: ../../api/filestoragecontainer-provisionmigrationcontainers.md
 - name: SharePoint cross-tenant migration (preview)
   items:
   - name: Overview
