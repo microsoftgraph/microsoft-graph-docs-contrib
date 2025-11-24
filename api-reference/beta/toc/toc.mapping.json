@@ -1070,6 +1070,7 @@
           "resources": [
             "sharePointMigrationEvent",
             "sharePointMigrationFinishManifestFileUploadEvent",
+            "sharePointMigrationJob",
             "sharePointMigrationJobCancelledEvent",
             "sharePointMigrationJobDeletedEvent",
             "sharePointMigrationJobErrorEvent",
@@ -1079,8 +1080,7 @@
             "sharePointMigrationJobStartEvent"
           ],
           "complexTypes": [
-            "sharePointMigrationContainerInfo",
-            "sharePointMigrationJob"
+            "sharePointMigrationContainerInfo"
           ]
         },
         {
