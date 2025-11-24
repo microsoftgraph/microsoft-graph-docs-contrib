@@ -264,6 +264,26 @@ items:
     items:
     - name: Place
       href: ../../resources/place.md
+    - name: List
+      href: ../../api/place-list.md
+    - name: Create
+      href: ../../api/place-post.md
+    - name: Get
+      href: ../../api/place-get.md
+    - name: Update
+      href: ../../api/place-update.md
+    - name: Delete
+      href: ../../api/place-delete.md
+    - name: Descendants
+      href: ../../api/place-descendants.md
+    - name: Create check-in claim
+      href: ../../api/place-post-checkins.md
+  - name: Room
+    href: ../../resources/room.md
+  - name: Room list
+    items:
+    - name: Room list
+      href: ../../resources/roomlist.md
     - name: List places
       href: ../../api/place-list.md
     - name: Get place
@@ -278,21 +298,3 @@ items:
       href: ../../api/place-post-checkins.md
     - name: Get
       href: ../../api/checkinclaim-get.md
-  - name: Room
-    items:
-    - name: Room
-      href: ../../resources/room.md
-    - name: List places
-      href: ../../api/place-list.md
-    - name: Get place
-      href: ../../api/place-get.md
-  - name: Room list
-    items:
-    - name: Room list
-      href: ../../resources/roomlist.md
-    - name: List places
-      href: ../../api/place-list.md
-    - name: Get place
-      href: ../../api/place-get.md
-    - name: Update place
-      href: ../../api/place-update.md
