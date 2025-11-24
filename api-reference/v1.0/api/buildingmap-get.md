@@ -61,13 +61,13 @@ If successful, this method returns a `200 OK` response code and a [buildingMap](
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "get_buildingmap"
+  "name": "get_buildingmap",
+  "sampleKeys": ["30ca79af-ecb7-46c2-a14b-afe264a91543"]
 }
 -->
 ``` http
 GET https://graph.microsoft.com/v1.0/places/30ca79af-ecb7-46c2-a14b-afe264a91543/microsoft.graph.building/map
 ```
-
 
 ### Response
 
