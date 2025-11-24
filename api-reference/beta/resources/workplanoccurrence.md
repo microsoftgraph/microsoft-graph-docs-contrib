@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Represents a specific work schedule instance for a particular day or time period in your work plan.
 
-Your work plan occurrences can be automatically generated from recurring work patterns or manually created for special arrangements. These occurrences are useful for handling exceptions to your regular schedules. The following list shows possible examples:
+Your work plan occurrences can be automatically generated from recurring work patterns or manually created for special arrangements. These occurrences are useful for handling exceptions to your regular schedules. The following list shows examples:
 
 - Working different hours for a specific day
 - Working from a different location 
@@ -28,11 +28,11 @@ When a work plan occurrence exists for the same time period as a recurring patte
 
 | Method | Return Type | Description |
 |:-------|:------------|:------------|
-| [List](../api/workhoursandlocationssetting-occurrencesview.md) | [workPlanOccurrence](workplanoccurrence.md) collection | Get [work plan occurrences](../resources/workplanoccurrence.md) from your own work plan within a specified date range. |
 | [Create](../api/workhoursandlocationssetting-post-occurrences.md) | [workPlanOccurrence](workplanoccurrence.md) | Create a new [workPlanOccurrence](../resources/workplanoccurrence.md) object in your own work plan. |
 | [Update](../api/workplanoccurrence-update.md) | [workPlanOccurrence](workplanoccurrence.md) | Update the properties of a [workPlanOccurrence](../resources/workplanoccurrence.md) object in your own work plan. |
 | [Delete](../api/workplanoccurrence-delete.md) | None | Delete a [workPlanOccurrence](../resources/workplanoccurrence.md) object from your own work plan. |
 | [Set current location](../api/workplanoccurrence-setcurrentlocation.md) | None | Update your [work](../resources/workplanoccurrence.md) location for the current day or current active segment. |
+| [Occurrences view](../api/workhoursandlocationssetting-occurrencesview.md) | [workPlanOccurrence](workplanoccurrence.md) collection | Get [work plan occurrences](../resources/workplanoccurrence.md) from your own work plan within a specified date range. |
 
 ## Properties
 
