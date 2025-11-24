@@ -3131,9 +3131,9 @@
         {
           "Id": "c7d3f892-4e61-4b28-9a5c-8f2d1e3b4c7a",
           "ApiChange": "Method",
-          "ChangedApiName": "allMembers: get",
+          "ChangedApiName": "allMembers: get member",
           "ChangeType": "Addition",
-          "Description": "Added the [allMembers: get](https://learn.microsoft.com/en-us/graph/api/channel-get-allmember?view=graph-rest-beta) method to retrieve a specific member from a channel's allMembers collection. This method provides unified access to both direct and indirect members across all channel types, including shared channels.",
+          "Description": "Added the [allMembers: get member](https://learn.microsoft.com/en-us/graph/api/channel-allmembers-get-member?view=graph-rest-beta) method to retrieve a specific member from a channel using the allMembers collection. This API supports all channel types, including shared channels.",
           "Target": "channel"
         }
       ],
