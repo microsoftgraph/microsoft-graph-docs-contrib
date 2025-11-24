@@ -70,7 +70,7 @@ Represents a location where multiple users or a group of users can store files a
 |recycleBin|[recycleBin](../resources/recyclebin.md)|Recycle bin of the **fileStorageContainer**. Read-only.|
 |migrationJobs|[sharePointMigrationJob](../resources/sharepointmigrationjob.md) collection|The collection of **sharePointMigrationJob** objects local to the container. Read-write.|
 
-### Roles property values
+### roles property values
 
 |Value|Description|
 |:---|:---|

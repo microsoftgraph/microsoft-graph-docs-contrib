@@ -12,7 +12,9 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Get a list of the sharePointMigrationEvent objects and their properties. The migration events remain valid for four days and can be queried as frequently as needed within validity period.
+Get a list of [migration events](../resources/sharepointmigrationevent.md) for a particular job in a [fileStorageContainer](../resources/filestoragecontainer.md). The migration events remain valid for four days and can be queried as frequently as needed within the validity period.
+
+[!INCLUDE [national-cloud-support](../../includes/global-china.md)]
 
 ## Permissions
 
@@ -32,12 +34,12 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /storage/fileStorage/containers/{fileStorageContainerId}/migrationJobs/{sharePointMigrationJobId}/progressEvents
+GET /storage/fileStorage/containers/{fileStorageContainerId}/migrationJobs/{migrationJobId}/progressEvents
 ```
 
 ## Optional query parameters
 
-This method supports $skipToken OData query parameter to help paginate results. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports `$skipToken` OData query parameter to help paginate results. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -58,15 +60,42 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Request
 
 The following example shows how to get a list of **sharePointMigrationEvent** objects pertaining to the **sharePointMigrationJob** identified by job ID `7b04bfdd-5f8c-4bd9-97fa-a166a7922c61` that runs on the **fileStorageContainer** identified by the container ID `b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z`.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_sharepointmigrationevent"
+  "name": "list_progressevents"
 }
 -->
-``` http
-GET https://graph.microsoft.com/v1.0/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/migrationJobs/7b04bfdd-5f8c-4bd9-97fa-a166a7922c61/progressEvents
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/migrationJobs/7b04bfdd-5f8c-4bd9-97faa166a7922c61/progressEvents
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-progressevents-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-progressevents-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-progressevents-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-progressevents-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/list-progressevents-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-progressevents-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 

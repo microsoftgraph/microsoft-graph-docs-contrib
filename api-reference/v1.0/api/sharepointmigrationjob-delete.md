@@ -12,7 +12,9 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Delete an existing [sharePointMigrationJob](../resources/sharepointmigrationjob.md) object.
+Delete an existing [sharePointMigrationJob](../resources/sharepointmigrationjob.md) object from a [fileStorageContainer](../resources/filestoragecontainer.md).
+
+[!INCLUDE [national-cloud-support](../../includes/global-china.md)]
 
 ## Permissions
 
@@ -23,7 +25,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "name": "filestoragecontainer-delete-migrationjobs-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/filestoragecontainer-delete-migrationjobs-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/sharepointmigrationjob-delete-permissions.md)]
 
 ## HTTP request
 
@@ -32,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-DELETE /storage/fileStorage/containers/{fileStorageContainerId}/migrationJobs/{sharePointMigrationJobId}/$ref
+DELETE /storage/fileStorage/containers/{fileStorageContainerId}/migrationJobs/{sharePointMigrationJobId}
 ```
 
 ## Request headers
