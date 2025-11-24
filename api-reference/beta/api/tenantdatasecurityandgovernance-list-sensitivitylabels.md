@@ -58,7 +58,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 Get tenant labels filtered by content format and ID with an application permission.
 
-#### Request
+### Request
 
 The following example shows a request to get labels for the tenant, filtered for the `File` content format and specific IDs.
 
@@ -99,9 +99,9 @@ Client-Request-Id: a0b9c8d7-e6f5-a4b3-c2d1-e0f9a8b7c6d5
 
 ---
 
-#### Response
+### Response
 
-The following example shows the response containing only the labels matching the filters.
+The following example shows the response that contains only the labels matching the filters.
 
 <!-- {
   "blockType": "response",
@@ -124,6 +124,7 @@ Content-Type: application/json
       "toolTip": "Apply this label to general non-public data.",
       "isEnabled": true,
       "isEndpointProtectionEnabled": true,
+      "hasProtection": true,
       "autoTooltip": "",
       "actionSource": "manual",
       "applicableTo": "email,teamwork,file",
