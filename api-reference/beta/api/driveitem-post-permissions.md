@@ -5,7 +5,7 @@ author: "BarrySh"
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: apiPageType
-ms.date: 07/25/2025
+ms.date: 11/21/2025
 ---
 
 # Create permission on a driveItem
@@ -55,6 +55,11 @@ POST /users/{userId}/drive/items/{itemId}/permissions
 ## Request body
 In the request body, supply a JSON representation of the [permission](../resources/permission.md) object.
 
+> [!IMPORTANT]
+>
+> - This API only accepts `grantedToV2` as input for the **permission** object. Other properties such as `grantedToIdentitiesV2` or the deprecated `grantedTo` and `grantedToIdentities` are not accepted.
+> - For SharePoint Embedded, when creating a new [sharePointGroup](../resources/sharepointgroup.md) permission, the request body must include both the `id` and `displayName` of the **sharePointGroup** referenced in the `grantedToV2.siteGroup` property. See [Example 2](#example-2-add-a-sharepoint-group-permission-to-a-driveitem-in-a-sharepoint-embedded-container).
+
 ## Response
 
 If successful, this method returns a `201 Created` response code and a [permission](../resources/permission.md) object in the response body.
@@ -63,7 +68,7 @@ If successful, this method returns a `201 Created` response code and a [permissi
 
 ### Example 1: Add an application permission to a driveItem in OneDrive or SharePoint Online
 
-The following example shows how to add a `write` [permission](../resources/permission.md) for the `Contoso Time Manager App` [application](../resources/identity.md) on a [driveItem](../resources/driveitem.md) identified by `1` in a [drive](../resources/drive.md) identified by `b!s8RqPCGh0ESQS2EYnKM0IKS3lM7GxjdAviiob7oc5pXv_0LiL-62Qq3IXyrXnEop`.
+The following example shows how to add a `write` [permission](../resources/permission.md) for the `Contoso Time Manager App` [application](../resources/identity.md) identified by `89ea5c94-7736-4e25-95ad-3fa95f62b66e`, on a [driveItem](../resources/driveitem.md) identified by `01V4EPHZNV2OJQJNBPWNCKDTXCQ5TSVBJU` in a [drive](../resources/drive.md) identified by `b!s8RqPCGh0ESQS2EYnKM0IKS3lM7GxjdAviiob7oc5pXv_0LiL-62Qq3IXyrXnEop`.
 
 #### Request
 
@@ -77,14 +82,13 @@ The following example shows a request.
   "target": "action"
 } -->
 ```http
-POST https://graph.microsoft.com/beta/drives/b!s8RqPCGh0ESQS2EYnKM0IKS3lM7GxjdAviiob7oc5pXv_0LiL-62Qq3IXyrXnEop/items/1/permissions
+POST https://graph.microsoft.com/beta/drives/b!s8RqPCGh0ESQS2EYnKM0IKS3lM7GxjdAviiob7oc5pXv_0LiL-62Qq3IXyrXnEop/items/01V4EPHZNV2OJQJNBPWNCKDTXCQ5TSVBJU/permissions
 Content-Type: application/json
 
 {
   "grantedToV2": {
     "application": {
-      "id": "89ea5c94-7736-4e25-95ad-3fa95f62b66e",
-      "displayName": "Contoso Time Manager App"
+      "id": "89ea5c94-7736-4e25-95ad-3fa95f62b66e"
     }
   },
   "roles": ["write"]
@@ -136,8 +140,7 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "id": "1",
-  "@deprecated.GrantedToIdentities": "GrantedToIdentities has been deprecated. Refer to GrantedToIdentitiesV2",
+  "id": "aTowaS50fG1zLnNwLmV4dHw4OWVhNWM5NC03NzM2LTRlMjUtOTVhZC0zZmE5NWY2MmI2NmVAZDljZTBmYzEtNjFkOC00YTJlLWI1ZDMtMTg3NzBkZjA2NzJj",
   "roles": [
     "write"
   ],
@@ -151,6 +154,14 @@ Content-Type: application/json
     "application": {
       "id": "89ea5c94-7736-4e25-95ad-3fa95f62b66e",
       "displayName": "Contoso Time Manager App"
+  "grantedToV2": {
+    "application": {
+      "id": "89ea5c94-7736-4e25-95ad-3fa95f62b66e"
+    }
+  },
+  "grantedTo": {
+    "application": {
+      "id": "89ea5c94-7736-4e25-95ad-3fa95f62b66e"
     }
   }
 }
@@ -158,7 +169,7 @@ Content-Type: application/json
 
 ### Example 2: Add a SharePoint group permission to a driveItem in a SharePoint Embedded container
 
-The following example shows how to add a `write` [permission](../resources/permission.md) for the `Internal Collaborators` [sharePointGroup](../resources/sharepointgroup.md) on a [driveItem](../resources/driveitem.md) identified by `1` in a SharePoint Embedded [fileStorageContainer](../resources/filestoragecontainer.md) identified by `b!s8RqPCGh0ESQS2EYnKM0IKS3lM7GxjdAviiob7oc5pXv_0LiL-62Qq3IXyrXnEop`.
+The following example shows how to add a `write` [permission](../resources/permission.md) for the `Internal Collaborators` [sharePointGroup](../resources/sharepointgroup.md) on a [driveItem](../resources/driveitem.md) identified by `01V4EPHZNV2OJQJNBPWNCKDTXCQ5TSVBJU` in a SharePoint Embedded [fileStorageContainer](../resources/filestoragecontainer.md) identified by `b!s8RqPCGh0ESQS2EYnKM0IKS3lM7GxjdAviiob7oc5pXv_0LiL-62Qq3IXyrXnEop`.
 
 #### Request
 
@@ -172,11 +183,11 @@ The following example shows a request.
   "target": "action"
 } -->
 ```http
-POST https://graph.microsoft.com/beta/drives/b!s8RqPCGh0ESQS2EYnKM0IKS3lM7GxjdAviiob7oc5pXv_0LiL-62Qq3IXyrXnEop/items/1/permissions
+POST https://graph.microsoft.com/beta/drives/b!s8RqPCGh0ESQS2EYnKM0IKS3lM7GxjdAviiob7oc5pXv_0LiL-62Qq3IXyrXnEop/items/01V4EPHZNV2OJQJNBPWNCKDTXCQ5TSVBJU/permissions
 Content-Type: application/json
 
 {
-  "grantedToIdentitiesV2": {
+  "grantedToV2": {
     "siteGroup": {
       "id": "10",
       "displayName": "Internal Collaborators"
@@ -231,27 +242,22 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "id": "1",
-  "@deprecated.GrantedToIdentities": "GrantedToIdentities has been deprecated. Refer to GrantedToIdentitiesV2",
+  "id": "aTowaS50fG1zLnNwLmV4dHwxMEBkOWNlMGZjMS02MWQ4LTRhMmUtYjVkMy0xODc3MGRmMDY3MmM=",
   "roles": [
     "write"
   ],
-  "grantedToIdentities": [
-    {
-      "siteGroup": {
-        "id": "10",
-        "displayName": "Internal Collaborators"
-      }
+  "grantedToV2": {
+    "siteGroup": {
+      "id": "10",
+      "displayName": "Internal Collaborators"
     }
-  ],
-  "grantedToIdentitiesV2": [
-    {
-      "siteGroup": {
-        "id": "10",
-        "displayName": "Internal Collaborators"
-      }
+  },
+  "grantedTo": {
+    "siteGroup": {
+      "id": "10",
+      "displayName": "Internal Collaborators"
     }
-  ]
+  }
 }
 ```
 

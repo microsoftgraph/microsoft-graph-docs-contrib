@@ -299,7 +299,7 @@
             "assignedPlaceMode",
             "dropInPlaceMode",
             "mailboxDetails",
-            "offlinePlaceMode",
+            "unavailablePlaceMode",
             "placeMode",
             "reservablePlaceMode",
             "resourceLink"
@@ -1082,6 +1082,18 @@
           "complexTypes": [
             "sharePointMigrationContainerInfo"
           ]
+        },
+        {
+          "name": "SharePoint cross-tenant migration (preview)",
+          "overview": "../../resources/sharepoint-crossorganization-api-overview.md",
+          "resources": [
+            "sharePointGroupIdentityMapping",
+            "sharePointUserIdentityMapping"
+          ],
+          "complexTypes": [
+            "sharePointIdentityMappingGroupMigrationData",
+            "sharePointIdentityMappingUserMigrationData"
+          ]
         }
       ]
     },
@@ -1538,6 +1550,7 @@
                     "privilegedAccessGroupEligibilityScheduleRequest",
                     "privilegedAccessGroupEligibilitySchedule",
                     "privilegedAccessGroupEligibilityScheduleInstance",
+                    "groupResource",
                     "unifiedRoleManagementPolicy",
                     "unifiedRoleManagementPolicyRule",
                     "unifiedRoleManagementPolicyAssignment",
@@ -1746,6 +1759,20 @@
                 "onAttributeCollectionSubmitCustomExtension",
                 "onOtpSendCustomExtension",
                 "onTokenIssuanceStartCustomExtension"
+              ]
+            },
+            {
+              "name": "Cross-tenant migration",
+              "overview": "../../resources/crosstenant-migration-overview.md",
+              "resources":[
+                "crossTenantMigrationJob",
+                "crossTenantMigrationTask",
+                "migrationsRoot"
+              ],
+              "complexTypes":[
+                "crossTenantMigrationServiceStatusDetails",
+                "error",
+                "exchangeOnlineCrossTenantMigrationSettings"
               ]
             },
             {
