@@ -25,33 +25,30 @@ This overview explains how Microsoft MCP Server for Enterprise works and how you
 
 ## How it works
 
-![MCP Server Workflow](../images/mcp-server-workflow.svg)
-
-When the AI client starts, it automatically locates the Microsoft Graph MCP Server endpoint at `mcp.svc.cloud.microsoft/enterprise` from the list of installed MCP Servers and retrieves the available tools. This step is the **automatic discovery** phase.
+The Microsoft MCP Server for Enterprise acts as an intermediary between AI Agents and Microsoft Graph APIs. It enables AI agents to understand and execute user requests by translating natural language queries into appropriate Microsoft Graph API calls.
 
 Suppose an administrator asks: "*How many users do we have in our Microsoft Entra tenant?*" Here's an example showing the workflow when you query information through an MCP-enabled AI agent:
 
-1. **NLP Processing**: The LLM processes the query by using Natural Language Processing (NLP) techniques to extract intent. It might conclude the intent is "count the number of users in the Microsoft Entra tenant." From the MCP server connections actively running in the agent, it determines to use the `search_for_graph_examples` tool of the Enterprise MCP Server.
+1. **NLP Processing**: The Large Language Model (LLM) extracts the user intent based on the current question and chat history. It might conclude the intent is "*count the number of users in the Microsoft Entra tenant*". The LLM determines to use the `microsoft_graph_suggest_queries` tool of the Enterprise MCP Server.
 
-1. **Semantic search**: The `search_for_graph_examples` tool converts the question into an embedding and searches its library of example Graph queries mapped to natural language. It finds matches like "count total number of users," "count guest users," and "get all users" which correspond to the user intent, and returns the corresponding queries to the Large Language Model (LLM).
+2. **Semantic search**: The `microsoft_graph_suggest_queries` tool converts the question into embeddings and searches its library of Microsoft Graph queries examples mapped to natural language. It finds matches like "*count total number of users*", "*count guest users*", and "*get all users*", similar to the user intent, and returns the corresponding Microsoft Graph queries to the LLM.
 
-1. **Query selection**: The LLM evaluates the list of API calls and selects the API call with the highest relevance score as the best fit to fulfill the request, which is `GET /users/$count`.
+3. **Execution**: The LLM determines that it needs to execute a Microsoft Graph API call, and uses the list of previous examples to generate the input for `microsoft_graph_get` tool, in this case `GET /users/$count`.
 
-1. **Execution**: The LLM determines from the list of running Enterprise MCP Server tools, to use the  `microsoft_graph_get` tool to execute the `GET /users/$count` call. It honors the user's privileges when making the call.
-
-1. **API Processing**: The MCP Server processes the request and:
+4. **API Processing**: The MCP Server processes the request and:
    - Forwards the request to the Microsoft Graph service to execute the call.
-   - Microsoft Graph returns the results in standard Microsoft Graph response payload format to the MCP Server, which then forwards the response to the LLM.
+   - It honors the user's privileges and MCP Client permission scopes when making the call.
+   - It returns the Microsoft Graph response (JSON) to the MCP Client.
 
-1. **Natural Language Response Generation**: The LLM interprets the JSON payload and converts it into a natural language response for the user. In this case, it might simply respond: "There are 10,930 users in the directory."
+5. **Natural Language Response Generation**: The LLM interprets the JSON payload and converts it into a natural language response for the user. In this case, it might simply respond: "There are 10,930 users in the directory."
 
 ## Tools
 
 The Microsoft MCP Server for Enterprise exposes the following tools that an AI agent can invoke:
 
-- **search_for_graph_examples**: Uses retrieval-augmented generation (RAG) methodologies to search for Microsoft Graph API calls that match the user's intent. It has a semantic index of example queries mapped to natural language and returns a list of candidate queries to the AI model.
+- **microsoft_graph_suggest_queries**: Uses retrieval-augmented generation (RAG) methodologies to search for Microsoft Graph API calls that match the user's intent. It has a semantic index of example queries mapped to natural language and returns a list of candidate queries to the AI model.
 - **microsoft_graph_get**: Executes read-only Microsoft Graph API calls, respecting user roles, scopes granted to the MCP Client, and throttling limits.
-- **get_graph_entity_properties**: Retrieves properties of specific Microsoft Graph entities to help the AI model understand the data structure.
+- **microsoft_graph_list_properties**: Retrieves properties of specific Microsoft Graph entities to help the AI model understand the data structure.
 
 ## Usage scenarios
 
@@ -67,17 +64,15 @@ The Microsoft MCP Server for Enterprise enables several key scenarios:
 
 ## Current scope and capabilities
 
-The Microsoft MCP Server for Enterprise is currently in private preview and supports only read-only enterprise IT scenarios focused on Microsoft Entra identity and directory read-only operations including user management, group management, application management, device information, and administrative actions.
+The Microsoft MCP Server for Enterprise is currently in private preview and supports enterprise IT scenarios focused on Microsoft Entra identity and directory **read-only** operations including user management, group management, application management, device information, and administrative actions.
 
 All operations respect Microsoft Graph permissions and privileges and security policies.
 
 ## Licensing and costs
 
-You **don't need an extra cost or separate license** to use the Microsoft MCP Server for Enterprise. 
-
-However, you still need the right licenses for the data you're accessing. For example, you need a Microsoft Entra ID P2 license to access user sign-in logs.
-
-The MCP server follows the same throttling limits as Microsoft Graph APIs.
+- The MCP Server for Enterprise doesn't require extra cost or separate license.
+- You need the right licenses for the data you access (for example, Microsoft Entra ID Governance or Microsoft Entra ID P2 license for Privileged Identity Management (PIM) data).
+- Any request to this MCP server is limited to 100 requests per minute per user. Requests to `microsoft_graph_get` are also subject to [Microsoft Graph Throttling limits](../concepts/throttling.md#identity-and-access-service-limits).
 
 ## Cloud availability
 
