@@ -13,7 +13,7 @@ ms.date: 11/18/2025
 
 # Overview of Microsoft MCP Server for Enterprise (preview)
 
-The Microsoft MCP Server for Enterprise is a programmatic interface for AI agents to query enterprise data in your Microsoft Entra tenant by using natural language. Built on the [Model Context Protocol (MCP)](https://modelcontextprotocol.io/), an open standard that specifies how AI models interact with external tools and services, it translates natural language requests into Microsoft Graph API calls.
+The Microsoft MCP Server for Enterprise `https://mcp.svc.cloud.microsoft/enterprise` is a programmatic interface for AI agents to query enterprise data in your Microsoft Entra tenant by using natural language. Built on the [Model Context Protocol (MCP)](https://modelcontextprotocol.io/), an open standard that specifies how AI models interact with external tools and services, it translates natural language requests into Microsoft Graph API calls.
 
 This overview explains how Microsoft MCP Server for Enterprise works and how you can integrate it into your AI-powered workflows.
 
@@ -25,18 +25,14 @@ This overview explains how Microsoft MCP Server for Enterprise works and how you
 
 ## How it works
 
-![MCP Server Workflow](../images/mcp-server-workflow.svg)
-
-When the AI client starts, it automatically locates the Microsoft Graph MCP Server endpoint at `mcp.svc.cloud.microsoft/enterprise` from the list of installed MCP servers and retrieves the available tools. This is the **automatic discovery** phase.
-
 Suppose an administrator asks, "*How many users do we have in our Microsoft Entra tenant?*" The following steps show the workflow that runs inside an MCP-enabled AI agent:
 
 1. **NLP processing**: The Large Language Model (LLM) analyzes the current prompt and chat history to extract intent (for example, "count the number of users in the tenant"). It decides to call the `microsoft_graph_suggest_queries` tool that ships with the Enterprise MCP Server.
-1. **Semantic search**: `microsoft_graph_suggest_queries` converts the question into embeddings and searches its semantic index of Microsoft Graph query examples. It returns matches such as "count total number of users" or "count guest users," which map to candidate Graph API calls.
-1. **Query selection**: The LLM evaluates the returned examples, selects the most relevant API call (for example, `GET /users/$count`), and determines the tool parameters that it needs.
-1. **Execution**: The LLM invokes the `microsoft_graph_get` tool to run the `GET /users/$count` request. The MCP Server enforces the user's privileges and the scopes granted to the MCP client.
-1. **API processing**: The MCP Server forwards the request to Microsoft Graph, receives the JSON response, and returns it to the MCP client.
-1. **Natural language response**: The LLM interprets the JSON payload and converts it into a natural language answer such as, "There are 10,930 users in the directory."
+2. **Semantic search**: `microsoft_graph_suggest_queries` converts the question into embeddings and searches its semantic index of Microsoft Graph query examples. It returns matches such as "count total number of users" or "count guest users," which map to candidate Graph API calls.
+3. **Query selection**: The LLM evaluates the returned examples, selects the most relevant API call (for example, `GET /users/$count`), and determines the tool parameters that it needs.
+4. **Execution**: The LLM invokes the `microsoft_graph_get` tool to run the `GET /users/$count` request. The MCP Server enforces the user's privileges and the scopes granted to the MCP client.
+5. **API processing**: The MCP Server forwards the request to Microsoft Graph, receives the JSON response, and returns it to the MCP client.
+6. **Natural language response**: The LLM interprets the JSON payload and converts it into a natural language answer such as, "There are 10,930 users in the directory."
 
 ## Tools
 
