@@ -1,6 +1,6 @@
 ---
-title: "List sharePointMigrationEvent objects"
-description: "Get a list of the sharePointMigrationEvent objects and their properties."
+title: "List progressEvents"
+description: "Get a list of migration events for a particular job in a fileStorageContainer."
 author: "wenzhou"
 ms.date: 11/07/2025
 ms.localizationpriority: medium
@@ -8,7 +8,7 @@ ms.subservice: "onedrive"
 doc_type: apiPageType
 ---
 
-# List sharePointMigrationEvent objects
+# List progressEvents
 
 Namespace: microsoft.graph
 
@@ -39,7 +39,7 @@ GET /storage/fileStorage/containers/{fileStorageContainerId}/migrationJobs/{migr
 
 ## Optional query parameters
 
-This method supports `$skipToken` OData query parameter to help paginate results. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$skipToken` OData query parameter to help paginate results. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -59,7 +59,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-The following example shows how to get a list of **sharePointMigrationEvent** objects pertaining to the **sharePointMigrationJob** identified by job ID `7b04bfdd-5f8c-4bd9-97fa-a166a7922c61` that runs on the **fileStorageContainer** identified by the container ID `b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z`.
+The following example shows how to retrieve a list of **sharePointMigrationEvent** instances that are related to the **sharePointMigrationJob** identified by the ID `7b04bfdd-5f8c-4bd9-97faa166a7922c61` that runs on the **fileStorageContainer** identified by the container ID `b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z`.
 
 <!-- {
   "blockType": "request",
