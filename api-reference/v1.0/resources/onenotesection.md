@@ -69,7 +69,7 @@ The following JSON representation shows the resource type.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get section](../api/section-get.md) | [OnenoteSection](section.md) |Read the properties and relationships of the section.|
+|[Get section](../api/onenotesection-get.md) | [OnenoteSection](section.md) |Read the properties and relationships of the section.|
 |[Create page](../api/section-post-pages.md) |[Page](page.md)| Create a page by posting to the pages collection in the specified section.|
 |[List pages](../api/section-list-pages.md) |[Page](page.md) collection| Get a collection of pages in the specified section.|
 |[Copy to notebook](../api/section-copytonotebook.md)|None|Copy the section to a specific notebook.|
