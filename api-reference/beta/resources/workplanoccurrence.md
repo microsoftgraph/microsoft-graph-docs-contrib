@@ -42,7 +42,7 @@ When a work plan occurrence exists for the same time period as a recurring patte
 | id | String | Unique identifier for the occurrence. |
 | recurrenceId | String | The identifier of the parent recurrence pattern that generated this occurrence. The value is `null` for time-off occurrences because they don't have a parent recurrence. |
 | start | [dateTimeTimeZone](datetimetimezone.md) | The start date and time for this occurrence. |
-| timeOffDetails | [timeOffDetails](timeoffdetails.md) | Details about the time off. Only applicable when **workLocationType** is set to `timeOff`. |
+| timeOffDetails | [timeOffDetails](timeoffdetails.md) | The details about the time off. Only applicable when **workLocationType** is set to `timeOff`. |
 | workLocationType | [workLocationType](../resources/workplanoccurrence.md#worklocationtype-values) | The type of work location. The possible values are: `unspecified`, `office`, `remote`, `timeOff`, `unknownFutureValue`. |
 
 ### workLocationType values
