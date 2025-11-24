@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-AuthenticationEventListener authenticationEventListener = new AuthenticationEventListener();
+OnPhoneMethodLoadStartListener authenticationEventListener = new OnPhoneMethodLoadStartListener();
 authenticationEventListener.setOdataType("#microsoft.graph.onPhoneMethodLoadStartListener");
 AuthenticationConditions conditions = new AuthenticationConditions();
 AuthenticationConditionsApplications applications = new AuthenticationConditionsApplications();
@@ -17,20 +17,18 @@ includeApplications.add("3dfff01b-0afb-4a07-967f-d1ccbd81102a");
 applications.setIncludeApplications(includeApplications);
 conditions.setApplications(applications);
 authenticationEventListener.setConditions(conditions);
-HashMap<String, Object> additionalData = new HashMap<String, Object>();
-additionalData.put("priority", 500);
- handler = new ();
+authenticationEventListener.setPriority(500);
+OnPhoneMethodLoadStartExternalUsersAuthHandler handler = new OnPhoneMethodLoadStartExternalUsersAuthHandler();
 handler.setOdataType("#microsoft.graph.onPhoneMethodLoadStartExternalUsersAuthHandler");
- smsOptions = new ();
+PhoneOptions smsOptions = new PhoneOptions();
 LinkedList<Number> includeAdditionalRegions = new LinkedList<Number>();
 includeAdditionalRegions.add(222);
 includeAdditionalRegions.add(998);
 smsOptions.setIncludeAdditionalRegions(includeAdditionalRegions);
-LinkedList<Object> excludeRegions = new LinkedList<Object>();
+LinkedList<Number> excludeRegions = new LinkedList<Number>();
 smsOptions.setExcludeRegions(excludeRegions);
 handler.setSmsOptions(smsOptions);
-additionalData.put("handler", handler);
-authenticationEventListener.setAdditionalData(additionalData);
+authenticationEventListener.setHandler(handler);
 AuthenticationEventListener result = graphClient.identity().authenticationEventListeners().post(authenticationEventListener);
 
 

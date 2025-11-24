@@ -202,6 +202,7 @@ Content-type: application/json
 **Properties:**
 - List in alphabetical order
 - Use noun phrases with periods
+- If the table is empty but still shows the table header, replace the table with the text "None." to indicate no properties are defined at this level.
 - Style property references with **bold**
 - Style resource references with **bold** or link to resource
 - Style enum values with inline code (backticks)
@@ -228,9 +229,9 @@ Content-type: application/json
 - Same Id value across related changes
 
 **Additional Properties:**
-- Correct Cloud values: `Prod`
-- Proper Version: `v1.0` or `beta`
-- Proper UTC DateTime format for CreatedDateTime
+- Allowed **Cloud** values: `Prod`
+- Allowed **Version** values: `v1.0` or `beta`
+- Proper UTC DateTime format for **CreatedDateTime** properties
 
 **Link Format:**
 - Use full HTTP URLs with en-us locale

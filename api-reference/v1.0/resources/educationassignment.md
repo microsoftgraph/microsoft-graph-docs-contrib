@@ -45,10 +45,11 @@ Inherits from [entity](../resources/entity.md).
 |[Attach rubric](../api/educationassignment-put-rubric.md)|None|Attach an existing **educationRubric** to this assignment.|
 |[Remove rubric](../api/educationassignment-delete-rubric.md)|None|Detach the **educationRubric** from this assignment.|
 |[Get delta](../api/educationassignment-delta.md)|[educationAssignment](../resources/educationassignment.md) collection|Get a list of newly created or updated **educationAssignment** objects without having to perform a full read of the collection.|
-|[Add educationGradingCategory](../api/educationassignment-post-gradingcategory.md)|[educationGradingCategory](../resources/educationgradingcategory.md)|Add an [educationGradingCategory](../resources/educationgradingcategory.md) to the **educationGradingCategory** collection.|
-|[Remove educationGradingCategory](../api/educationassignment-delete-gradingcategory.md)|None|Remove an [educationGradingCategory](../resources/educationgradingcategory.md) object from the **educationGradingCategory** collection.|
+|[Add grading category](../api/educationassignment-post-gradingcategory.md)|[educationGradingCategory](../resources/educationgradingcategory.md)|Add a [gradingCategory](../resources/educationgradingcategory.md) to an [educationAssignment](../resources/educationassignment.md).|
+|[Remove grading category](../api/educationassignment-delete-gradingcategory.md)|None|Remove a [gradingCategory](../resources/educationgradingcategory.md) from an [educationAssignment](../resources/educationassignment.md).|
 |[Activate assignment](../api/educationassignment-activate.md) |[educationAssignment](educationassignment.md) | Activate an `inactive` **educationAssignment** to signal that the assignment has further action items for teachers or students.|
 |[Deactivate assignment](../api/educationassignment-deactivate.md) |[educationAssignment](educationassignment.md) | Mark an `assigned` **educationAssignment** as `inactive` to signal that the assignment has no further action items for teachers and students.|
+|[Add grading scheme](../api/educationassignment-put-gradingscheme.md)|[educationGradingScheme](../resources/educationgradingscheme.md)|Add an existing [educationGradingScheme](../resources/educationgradingscheme.md) to an existing [educationAssignment](../resources/educationassignment.md).|
 
 ## Properties
 | Property	   | Type	|Description|
@@ -70,6 +71,7 @@ Inherits from [entity](../resources/entity.md).
 |grading|[educationAssignmentGradeType](educationassignmentgradetype.md)|How the **assignment** will be graded. |
 |id|String| The unique identifier for the **assignment**. Inherited from [entity](../resources/entity.md). Read-only.|
 |instructions|[itemBody](itembody.md)| Instructions for the assignment. The instructions and the display name tell the student what to do. |
+|languageTag|String| Specifies the language in which UI notifications for the assignment are displayed. If **languageTag** isn't provided, the default language is `en-US`. Optional. |
 |lastModifiedBy|[identitySet](identityset.md)| Who last modified the **assignment**. |
 |lastModifiedDateTime|DateTimeOffset|The date and time on which the **assignment** was modified. A student submission doesn't modify the assignment; only teachers can update assignments. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |moduleUrl|string| The URL of the module from which to access the **assignment**.|
@@ -82,10 +84,11 @@ Inherits from [entity](../resources/entity.md).
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |categories|[educationCategory](educationcategory.md) collection| When set, enables users to easily find **assignments** of a given type. Read-only. Nullable.|
+|gradingCategory|[educationGradingCategory](educationgradingcategory.md) collection| When set, enables users to weight assignments differently when computing a class average grade.|
+|gradingScheme|[educationGradingScheme](educationgradingscheme.md) | When set, enables users to configure custom string grades based on the percentage of total points earned on this **assignment**.|
 |resources|[educationAssignmentResource](educationassignmentresource.md) collection| Learning objects that are associated with this assignment. Only teachers can modify this list. Nullable.|
 |rubric|[educationRubric](educationrubric.md)|When set, the grading rubric attached to this **assignment**.|
 |submissions|[educationSubmission](educationsubmission.md) collection| Once published, there's a **submission** object for each student representing their work and grade. Read-only. Nullable.|
-|gradingCategory|[educationGradingCategory](educationgradingcategory.md) collection| When set, enables users to weight assignments differently when computing a class average grade.|
 
 ## JSON representation
 
@@ -119,6 +122,7 @@ The following JSON representation shows the resource type.
   "grading": {"@odata.type": "microsoft.graph.educationAssignmentGradeType"},
   "id": "String (identifier)",
   "instructions": {"@odata.type": "microsoft.graph.itemBody"},
+  "languageTag": "String",
   "lastModifiedBy": {"@odata.type": "microsoft.graph.identitySet"},
   "lastModifiedDateTime": "String (timestamp)",
   "moduleUrl": "String",

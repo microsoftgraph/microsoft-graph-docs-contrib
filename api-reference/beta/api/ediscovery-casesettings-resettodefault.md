@@ -32,7 +32,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 
-``` http
+```http
 POST /compliance/ediscovery/cases/{caseId}/settings/resetToDefault
 ```
 
@@ -62,7 +62,7 @@ If successful, this action returns a `200 OK` response code.
 }
 -->
 
-``` http
+```http
 POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/{caseId}/settings/resetToDefault
 ```
 
@@ -106,7 +106,7 @@ POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/{caseId}/setti
 }
 -->
 
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

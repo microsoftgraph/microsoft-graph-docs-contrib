@@ -34,7 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PATCH /deviceManagement/comanagementEligibleDevices/{comanagementEligibleDeviceId}
 ```
 
@@ -57,7 +57,7 @@ The following table shows the properties that are required when you create the [
 |clientRegistrationStatus|[deviceRegistrationState](../resources/intune-devices-deviceregistrationstate.md)|ClientRegistrationStatus. Possible values are: `notRegistered`, `registered`, `revoked`, `keyConflict`, `approvalPending`, `certificateReset`, `notRegisteredPendingEnrollment`, `unknown`.|
 |ownerType|[ownerType](../resources/intune-shared-ownertype.md)|OwnerType. Possible values are: `unknown`, `company`, `personal`.|
 |managementAgents|[managementAgentType](../resources/intune-shared-managementagenttype.md)|ManagementAgents. Possible values are: `eas`, `mdm`, `easMdm`, `intuneClient`, `easIntuneClient`, `configurationManagerClient`, `configurationManagerClientMdm`, `configurationManagerClientMdmEas`, `unknown`, `jamf`, `googleCloudDevicePolicyController`, `microsoft365ManagedMdm`, `msSense`, `intuneAosp`, `google`, `unknownFutureValue`.|
-|managementState|[managementState](../resources/intune-devices-managementstate.md)|ManagementState. Possible values are: `managed`, `retirePending`, `retireFailed`, `wipePending`, `wipeFailed`, `unhealthy`, `deletePending`, `retireIssued`, `wipeIssued`, `wipeCanceled`, `retireCanceled`, `discovered`.|
+|managementState|[managementState](../resources/intune-devices-managementstate.md)|ManagementState. Possible values are: `managed`, `retirePending`, `retireFailed`, `wipePending`, `wipeFailed`, `unhealthy`, `deletePending`, `retireIssued`, `wipeIssued`, `wipeCanceled`, `retireCanceled`, `discovered`, `unknownFutureValue`.|
 |referenceId|String|ReferenceId|
 |mdmStatus|String|MDMStatus|
 |osVersion|String|OSVersion|
@@ -81,7 +81,7 @@ If successful, this method returns a `200 OK` response code and an updated [coma
 
 ### Request
 Here is an example of the request.
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/deviceManagement/comanagementEligibleDevices/{comanagementEligibleDeviceId}
 Content-type: application/json
 Content-length: 714
@@ -112,7 +112,7 @@ Content-length: 714
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 Content-Length: 763

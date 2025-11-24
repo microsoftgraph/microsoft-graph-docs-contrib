@@ -44,6 +44,12 @@ items:
     href: ../../api/todotask-list-linkedresources.md
   - name: Create linkedResources
     href: ../../api/todotask-post-linkedresources.md
+  - name: Extended properties
+    items:
+    - name: Create single-value property
+      href: ../../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md
+    - name: Get single-value property
+      href: ../../api/singlevaluelegacyextendedproperty-get.md
 - name: Task file attachment
   items:
   - name: Task file attachment

@@ -34,7 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /deviceAppManagement/mobileApps
 ```
 
@@ -89,10 +89,10 @@ If successful, this method returns a `201 Created` response code and a [macOSDmg
 
 ### Request
 Here is an example of the request.
-``` http
+```http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 Content-type: application/json
-Content-length: 1605
+Content-length: 1625
 
 {
   "@odata.type": "#microsoft.graph.macOSDmgApp",
@@ -147,17 +147,18 @@ Content-length: 1605
     "v12_0": true,
     "v13_0": true,
     "v14_0": true,
-    "v15_0": true
+    "v15_0": true,
+    "v26_0": true
   }
 }
 ```
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1777
+Content-Length: 1797
 
 {
   "@odata.type": "#microsoft.graph.macOSDmgApp",
@@ -215,7 +216,8 @@ Content-Length: 1777
     "v12_0": true,
     "v13_0": true,
     "v14_0": true,
-    "v15_0": true
+    "v15_0": true,
+    "v26_0": true
   }
 }
 ```

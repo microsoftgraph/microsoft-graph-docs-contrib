@@ -4,7 +4,7 @@ description: "Delete servicePrincipal."
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.subservice: "entra-applications"
-author: "sureshja"
+author: "Jackson-Woods"
 ms.date: 04/19/2024
 ---
 
@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete a [servicePrincipal](../resources/serviceprincipal.md) object.
+
+This API can also delete an [agentIdentityBlueprintPrincipal](../resources/agentidentityblueprintprincipal.md) object by its ID.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

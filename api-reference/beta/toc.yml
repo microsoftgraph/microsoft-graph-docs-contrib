@@ -23,8 +23,6 @@ items:
   href: /graph/toolkit/overview?context=graph/api/beta
 - name: Deploy with Bicep
   href: /graph/templates?context=graph/api/beta
-- name: Use the MCP Server for Enterprise
-  href: /graph/mcp-server/overview?context=graph/api/beta
 - name: Known issues
   href: https://developer.microsoft.com/graph/known-issues
 - name: Errors
@@ -42,6 +40,8 @@ items:
     href: toc/groups/toc.yml
   - name: Applications
     href: toc/applications/toc.yml
+  - name: Agents (preview)
+    href: toc/agents-(preview)/toc.yml
   - name: Backup storage
     href: toc/backup-storage/toc.yml
     displayName: M365 Backup Storage, Microsoft 365 Backup Storage, Enhanced Restore
@@ -73,7 +73,7 @@ items:
     href: toc/external-data-connections/toc.yml
   - name: Files
     href: toc/files/toc.yml
-    displayName: OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint
+    displayName: OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint, SharePoint Embedded
   - name: Financials (preview)
     href: toc/financials-(preview)/toc.yml
   - name: Identity and access

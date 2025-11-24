@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /identityGovernance/entitlementManagement/accessPackageResourceEnvironments/{accessPackageResourceEnvironmentId}
 ```
 
@@ -60,7 +60,7 @@ If successful, this method returns a `200 OK` response code and an [accessPackag
   "name": "get_accesspackageresourceenvironment"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageResourceEnvironments/{accessPackageResourceEnvironmentId}
 ```
 
@@ -102,7 +102,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
   "@odata.type": "microsoft.graph.accessPackageResourceEnvironment"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

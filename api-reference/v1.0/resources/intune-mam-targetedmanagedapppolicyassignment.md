@@ -5,7 +5,7 @@ author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
-ms.date: 10/14/2024
+ms.date: 08/01/2024
 ---
 
 # targetedManagedAppPolicyAssignment resource type
@@ -46,8 +46,9 @@ Here is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.targetedManagedAppPolicyAssignment",
   "id": "String (identifier)",
   "target": {
-    "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
-    "collectionId": "String"
+    "@odata.type": "microsoft.graph.scopeTagGroupAssignmentTarget",
+    "targetType": "String",
+    "entraObjectId": "String"
   }
 }
 ```

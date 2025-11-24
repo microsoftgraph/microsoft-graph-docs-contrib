@@ -24,6 +24,10 @@ items:
     href: ../../api/driveitem-search.md
   - name: Get special folder
     href: ../../api/drive-get-specialfolder.md
+  - name: Recent (deprecated)
+    href: ../../api/drive-recent.md
+  - name: Shared with me (deprecated)
+    href: ../../api/drive-sharedwithme.md
 - name: Drive item
   items:
   - name: Drive item
@@ -50,6 +54,8 @@ items:
     href: ../../api/driveitem-get-content-format.md
   - name: Delete item
     href: ../../api/driveitem-delete.md
+  - name: Restore item
+    href: ../../api/driveitem-restore.md
   - name: Permanently delete item
     href: ../../api/driveitem-permanentdelete.md
   - name: Move item
@@ -98,6 +104,18 @@ items:
     href: ../../api/driveitem-lockorunlockrecord.md
   - name: Create upload session
     href: ../../api/driveitem-createuploadsession.md
+- name: Drive item version
+  items:
+  - name: Drive item version
+    href: ../../resources/driveitemversion.md
+  - name: List
+    href: ../../api/driveitem-list-versions.md
+  - name: Get
+    href: ../../api/driveitemversion-get.md
+  - name: Download version
+    href: ../../api/driveitemversion-get-contents.md
+  - name: Restore version
+    href: ../../api/driveitemversion-restoreversion.md
 - name: Bundle
   items:
   - name: Bundle
@@ -116,22 +134,6 @@ items:
     href: ../../api/bundle-update.md
   - name: Delete bundle
     href: ../../api/bundle-delete.md
-- name: Permission
-  items:
-  - name: Permission
-    href: ../../resources/permission.md
-  - name: List permissions
-    href: ../../api/driveitem-list-permissions.md
-  - name: Get permission
-    href: ../../api/permission-get.md
-  - name: Add permissions
-    href: ../../api/driveitem-invite.md
-  - name: Update permission
-    href: ../../api/permission-update.md
-  - name: Delete permission
-    href: ../../api/permission-delete.md
-  - name: Grant access to sharing link
-    href: ../../api/permission-grant.md
 - name: File storage container
   items:
   - name: File storage container
@@ -176,22 +178,32 @@ items:
     href: ../../api/filestoragecontainer-delete-customproperty.md
   - name: Update recycle bin settings
     href: ../../api/filestoragecontainer-update-recyclebinsettings.md
-  - name: Restore recycle bin items
-    href: ../../api/filestoragecontainer-restore-recyclebinitem.md
   - name: Delete recycle bin items
     href: ../../api/filestoragecontainer-delete-recyclebinitem.md
+  - name: Restore recycle bin items
+    href: ../../api/filestoragecontainer-restore-recyclebinitem.md
   - name: Get recycle bin items
     href: ../../api/filestoragecontainer-list-recyclebinitem.md
   - name: Lock
     href: ../../api/filestoragecontainer-lock.md
   - name: Unlock
     href: ../../api/filestoragecontainer-unlock.md
-- name: Shared drive item
+- name: Permission
   items:
-  - name: Shared drive item
-    href: ../../resources/shareddriveitem.md
-  - name: Use sharing links
-    href: ../../api/shares-get.md
+  - name: Permission
+    href: ../../resources/permission.md
+  - name: List permissions
+    href: ../../api/driveitem-list-permissions.md
+  - name: Get permission
+    href: ../../api/permission-get.md
+  - name: Add permissions
+    href: ../../api/driveitem-invite.md
+  - name: Update permission
+    href: ../../api/permission-update.md
+  - name: Delete permission
+    href: ../../api/permission-delete.md
+  - name: Grant access to sharing link
+    href: ../../api/permission-grant.md
 - name: Recycle bin
   items:
   - name: Recycle bin
@@ -206,5 +218,11 @@ items:
     href: ../../api/recyclebin-list-items.md
   - name: Delete
     href: ../../api/filestoragecontainer-delete-recyclebinitem.md
-  - name: Restore
+  - name: Restore recycleBinItem by driveItemId
     href: ../../api/filestoragecontainer-restore-recyclebinitem.md
+- name: Shared drive item
+  items:
+  - name: Shared drive item
+    href: ../../resources/shareddriveitem.md
+  - name: Use sharing links
+    href: ../../api/shares-get.md

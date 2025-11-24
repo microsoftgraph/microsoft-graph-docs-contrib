@@ -4,7 +4,7 @@ description: "Represents an instance of an application in a directory. Inherits 
 ms.localizationpriority: high
 doc_type: resourcePageType
 ms.subservice: "entra-applications"
-author: "sureshja"
+author: "Jackson-Woods"
 ms.date: 10/01/2024
 ---
 

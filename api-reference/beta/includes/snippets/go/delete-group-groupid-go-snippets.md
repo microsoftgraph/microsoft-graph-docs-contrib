@@ -16,7 +16,7 @@ import (
 
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
-graphClient.Policies().MobileAppManagementPolicies().ByMobilityManagementPolicyId("mobilityManagementPolicy-id").IncludedGroups().ByGroupId("group-id").Ref().Delete(context.Background(), nil)
+graphClient.Policies().MobileAppManagementPolicies().ByMobileAppManagementPolicyId("mobileAppManagementPolicy-id").IncludedGroups().ByGroupId("group-id").Ref().Delete(context.Background(), nil)
 
 
 ```

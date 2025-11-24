@@ -92,6 +92,16 @@ items:
   items:
   - name: Overview
     href: ../../resources/communications-api-overview.md
+  - name: Call events
+    items:
+    - name: Call event
+      href: ../../resources/callevent.md
+    - name: Emergency call event
+      href: ../../resources/emergencycallevent.md
+    - name: Complex types
+      items:
+      - name: Emergency caller info
+        href: ../../resources/emergencycallerinfo.md
   - name: Call records
     items:
     - name: Overview
@@ -280,6 +290,14 @@ items:
         href: ../../api/onlinemeeting-list-transcripts.md
       - name: List recordings
         href: ../../api/onlinemeeting-list-recordings.md
+    - name: Online meeting engagement conversation
+      items:
+      - name: Online meeting engagement conversation
+        href: ../../resources/onlinemeetingengagementconversation.md
+      - name: Get all online meeting messages
+        href: ../../api/cloudcommunications-getallonlinemeetingmessages.md
+      - name: List reactions
+        href: ../../api/engagementconversationdiscussionmessage-list-reactions.md
     - name: Call recording
       items:
       - name: Call recording
@@ -587,6 +605,8 @@ items:
         href: ../../api/chat-delete-members.md
       - name: Get chat between user and app
         href: ../../api/userscopeteamsappinstallation-get-chat.md
+      - name: Remove all access for user
+        href: ../../api/chat-removeallaccessforuser.md
     - name: Messages
       items:
       - name: List messages in a chat

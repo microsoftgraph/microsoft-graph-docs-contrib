@@ -16,6 +16,11 @@ FileStorageContainerTypeSettings settings = new FileStorageContainerTypeSettings
 settings.setIsItemVersioningEnabled(true);
 settings.setIsSharingRestricted(false);
 settings.setConsumingTenantOverridables(EnumSet.of(FileStorageContainerTypeSettingsOverride.IsSearchEnabled, FileStorageContainerTypeSettingsOverride.ItemMajorVersionLimit));
+FileStorageContainerTypeAgentSettings agent = new FileStorageContainerTypeAgentSettings();
+LinkedList<String> chatEmbedAllowedHosts = new LinkedList<String>();
+chatEmbedAllowedHosts.add("https://localhost:3000");
+agent.setChatEmbedAllowedHosts(chatEmbedAllowedHosts);
+settings.setAgent(agent);
 fileStorageContainerType.setSettings(settings);
 FileStorageContainerType result = graphClient.storage().fileStorage().containerTypes().post(fileStorageContainerType);
 

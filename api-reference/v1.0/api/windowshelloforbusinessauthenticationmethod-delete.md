@@ -23,7 +23,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { 
   "blockType": "permissions", 
   "name": "windowshelloforbusinessauthenticationmethod_delete", 
-  "requestUrls": ["DELETE /users/{id | userPrincipalName}/authentication/temporaryAccessPassMethods/{id}"]
+  "requestUrls": ["DELETE /users/{id | userPrincipalName}/authentication/windowsHelloForBusinessMethods/{windowsHelloForBusinessAuthenticationMethodId}"]
  } -->
 [!INCLUDE [permissions-table](../includes/permissions/windowshelloforbusinessauthenticationmethod-delete-permissions.md)]
 
@@ -31,22 +31,22 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
-Delete your own temporary access pass authentication method.
+Delete your own Windows Hello for Business authentication method.
 
 [!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
 
 <!-- { "blockType": "ignored" } -->
-``` http
-DELETE /me/authentication/temporaryAccessPassMethods/{id}
+```http
+DELETE /me/authentication/windowsHelloForBusinessMethods/{windowsHelloForBusinessAuthenticationMethodId}
 ```
 
-Delete your own or another user's temporary access pass authentication method.
+Delete your own or another user's Windows Hello for Business authentication method.
 
 [!INCLUDE [authentication-methods-apis-users-selfservice](../includes/authentication-methods-apis-users-selfservice.md)]
 
 <!-- { "blockType": "ignored" } -->
-``` http
-DELETE /users/{id | userPrincipalName}/authentication/temporaryAccessPassMethods/{id}
+```http
+DELETE /users/{id | userPrincipalName}/authentication/windowsHelloForBusinessMethods/{windowsHelloForBusinessAuthenticationMethodId}
 ```
 
 ## Request headers
@@ -72,7 +72,7 @@ If successful, this method returns a `204 No Content` response code.
   "sampleKeys": ["kim@contoso.com", "_jpuR-TGZtk6aQCLF3BQjA2"]
 }
 -->
-``` http
+```http
 DELETE https://graph.microsoft.com/v1.0/users/kim@contoso.com/authentication/windowsHelloForBusinessMethods/_jpuR-TGZtk6aQCLF3BQjA2
 ```
 
@@ -113,7 +113,7 @@ DELETE https://graph.microsoft.com/v1.0/users/kim@contoso.com/authentication/win
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 

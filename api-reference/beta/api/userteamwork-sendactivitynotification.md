@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /users/{userId | user-principal-name}/teamwork/sendActivityNotification
 ```
 
@@ -77,7 +77,7 @@ If successful, this action returns a `204 No Content` response code.
   "name": "userteamwork_sendactivitynotification"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/users/{userId}/teamwork/sendActivityNotification
 Content-Type: application/json
 
@@ -135,7 +135,7 @@ Content-Type: application/json
   "truncated": false
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 
@@ -151,7 +151,7 @@ If you want to link an aspect that Microsoft Graph doesn't represent, or you wan
   "name": "team_sendactivitynotification_for_customer_topic"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/users/{userId}/teamwork/sendActivityNotification
 Content-Type: application/json
 
@@ -211,7 +211,7 @@ Content-Type: application/json
   "truncated": false
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 
@@ -293,7 +293,7 @@ The following example shows the response.
   "truncated": false
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 

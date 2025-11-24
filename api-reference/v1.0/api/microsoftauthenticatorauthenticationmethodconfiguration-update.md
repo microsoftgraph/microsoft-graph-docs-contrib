@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PATCH /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/microsoftAuthenticator
 ```
 
@@ -62,7 +62,7 @@ If successful, this method returns a `204 No Content` response code. It doesn't 
   "name": "update_microsoftauthenticatorauthenticationmethodconfiguration"
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/v1.0/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/microsoftAuthenticator
 Content-Type: application/json
 
@@ -109,6 +109,6 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```

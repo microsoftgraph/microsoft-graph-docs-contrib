@@ -2,7 +2,7 @@
 title: "keyCredentialConfiguration resource type"
 description: "Represents a key credential configuration object that contains properties to configure application certificate restrictions."
 ms.localizationpriority: medium
-author: "madansr7"
+author: "Jackson-Woods"
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ms.date: 09/13/2024

@@ -11,6 +11,8 @@ ms.date: 04/04/2024
 # Get teamworkDeviceHealth
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-deprecation-disclaimer](../../includes/beta-deprecation-disclaimer.md)]
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get the [health](../resources/teamworkdevicehealth.md) details of a Microsoft Teams-enabled [device](../resources/teamworkdevice.md). Device health is calculated based on the device configuration and other device parameters.
@@ -31,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /teamwork/devices/{teamworkDeviceId}/health
 ```
 
@@ -62,7 +64,7 @@ The following example shows a request.
   "name": "get_teamworkdevicehealth"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/teamwork/devices/d8214fe3-4fe3-d821-e34f-21d8e34f21d8/health
 ```
 
@@ -107,7 +109,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.teamworkDeviceHealth"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

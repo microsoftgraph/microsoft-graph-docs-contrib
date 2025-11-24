@@ -38,7 +38,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 Update another user's phone authentication method. Users can't update their own phone authentication method.
 <!-- { "blockType": "ignored" } -->
-``` http
+```http
 PATCH /users/{id | userPrincipalName}/authentication/phoneMethods/{phoneMethodId}
 ```
 

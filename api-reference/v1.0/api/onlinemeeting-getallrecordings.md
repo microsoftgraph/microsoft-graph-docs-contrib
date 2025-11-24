@@ -29,13 +29,13 @@ To learn more about using the Microsoft Teams export APIs to export content, see
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
+<!-- { "blockType": "permissions", "name": "onlinemeeting_getallrecordings" } -->
 [!INCLUDE [permissions-table](../includes/permissions/onlinemeeting-getallrecordings-permissions.md)]
 
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
-``` http
+```http
 GET /users/{usersId}/onlineMeetings/getAllRecordings(meetingOrganizerUserId='{userId}',startDateTime={startDateTime},endDateTime={endDateTime})
 ```
 >**Note:** The request fails if you don't pass the function parameter **meetingOrganizerUserId** or a filter clause with **MeetingOrganizer/User/Id**.

@@ -1,11 +1,11 @@
 ---
 title: "deviceConfigurationDeviceStatus resource type"
-description: "Not yet documented"
+description: "Support for this Entity is being deprecated starting May 2026 & will no longer be supported."
 author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
-ms.date: 09/13/2024
+ms.date: 08/01/2024
 ---
 
 # deviceConfigurationDeviceStatus resource type
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Not yet documented
+Support for this Entity is being deprecated starting May 2026 & will no longer be supported.
 
 ## Methods
 |Method|Return Type|Description|

@@ -4,7 +4,7 @@ description: "Retrieve a list of owners of the servicePrincipal."
 ms.localizationpriority: high
 doc_type: apiPageType
 ms.subservice: "entra-applications"
-author: "sureshja"
+author: "Jackson-Woods"
 ms.date: 08/21/2024
 ---
 

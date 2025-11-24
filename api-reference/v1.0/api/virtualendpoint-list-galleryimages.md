@@ -30,7 +30,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 
-``` http
+```http
 GET /deviceManagement/virtualEndpoint/galleryImages
 ```
 
@@ -64,7 +64,7 @@ The following example shows a request.
   "name": "list_cloudpcgalleryimage"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/deviceManagement/virtualEndpoint/galleryImages
 ```
 
@@ -110,7 +110,7 @@ The following example shows the response.
 }
 -->
 
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -118,28 +118,28 @@ Content-Type: application/json
   "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#deviceManagement/virtualEndpoint/galleryImages",
   "value": [
     {
-      "id": "MicrosoftWindowsDesktop_windows-ent-cpc_19h2-ent-cpc-os",
-      "displayName": "Windows 10 Enterprise + OS Optimizations 1909",
-      "publisherName": "MicrosoftWindowsDesktop",
+      "id": "microsoftwindowsdesktop_windows-ent-cpc_win11-23h2-ent-cpc",
+      "displayName": "Windows 11 Enterprise 23H2",
+      "publisherName": "microsoftwindowsdesktop",
       "offerName": "windows-ent-cpc",
-      "skuName": "19h2-ent-cpc-os",
+      "skuName": "win11-23h2-ent-cpc",
       "status": "supported",
       "sizeInGB": 64,
-      "startDate": "2019-11-12",
-      "endDate": "2022-05-10",
-      "expirationDate": "2022-11-10"
+      "startDate": "2023-10-31",
+      "endDate": "2026-11-10",
+      "expirationDate": "2027-05-10"
     },
     {
-      "id": "MicrosoftWindowsDesktop_windows-ent-cpc_20h1-ent-cpc-os",
-      "displayName": "Windows 10 Enterprise + OS Optimizations 2004",
-      "publisherName": "MicrosoftWindowsDesktop",
+      "id": "microsoftwindowsdesktop_windows-ent-cpc_win11-24H2-ent-cpc",
+      "displayName": "Windows 11 Enterprise 24H2",
+      "publisherName": "microsoftwindowsdesktop",
       "offerName": "windows-ent-cpc",
-      "skuName": "20h1-ent-cpc-os",
+      "skuName": "win11-24H2-ent-cpc",
       "status": "supported",
       "sizeInGB": 64,
-      "startDate": "2020-05-27",
-      "endDate": "2021-12-14",
-      "expirationDate": "2022-06-14"
+      "startDate": "2024-09-30",
+      "endDate": "2027-10-11",
+      "expirationDate": "2028-04-11"
     }
   ]
 }

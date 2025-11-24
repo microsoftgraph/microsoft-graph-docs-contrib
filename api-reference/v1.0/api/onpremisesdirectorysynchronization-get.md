@@ -2,7 +2,7 @@
 title: "Get onPremisesDirectorySynchronization"
 description: "Read the properties and relationships of an onPremisesDirectorySynchronization object."
 author: dhanyahk
-ms.reviewer: damaiya
+ms.reviewer: damaiya,vifernan,awsdev
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: apiPageType
@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /directory/onPremisesSynchronization
 ```
 
@@ -68,7 +68,7 @@ The following example shows a request.
   "name": "get_onpremisesdirectorysynchronization"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/directory/onPremisesSynchronization/{id}
 ```
 
@@ -112,7 +112,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.onPremisesDirectorySynchronization"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

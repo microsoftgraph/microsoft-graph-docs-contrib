@@ -13,6 +13,15 @@ ms.custom: sfi-ropc-nochange
 
 Namespace: microsoft.graph
 
+### readingCoachStoryType values
+
+|Member|
+|:---|
+|aiGenerated|
+|readWorks|
+|userProvided|
+|unknownFutureValue|
+
 ### responseFeedbackType values
 
 | Member |
@@ -795,6 +804,15 @@ Namespace: microsoft.graph
 | ------------------ |
 | draft |
 | published |
+
+### educationSpeechType values
+
+|Member|
+|:---|
+|informative|
+|personal|
+|persuasive|
+|unknownFutureValue|
 
 ### fido2RestrictionEnforcementType values
 
@@ -3627,3 +3645,81 @@ Possible values for user account types (group membership), per Windows definitio
 |standard|
 |bulk|
 |unknownFutureValue|
+
+### protectionSource values 
+
+|Member|
+|:---|
+|none|
+|manual|
+|dynamicRule|
+|unknownFutureValue|
+
+### engagementConversationMessageReactionType values
+
+| Member           |
+|:-----------------|
+| like             |
+| love             |
+| celebrate        |
+| thank            |
+| laugh            |
+| sad              |
+| happy            |
+| excited          |
+| smile            |
+| silly            |
+| intenseLaugh     |
+| starStruck       |
+| goofy            |
+| thinking         |
+| surprised        |
+| mindBlown        |
+| scared           |
+| crying           |
+| shocked          |
+| angry            |
+| agree            |
+| praise           |
+| takingNotes      |
+| heartBroken      |
+| support          |
+| confirmed        |
+| watching         |
+| brain            |
+| medal            |
+| bullseye         |
+| unknownFutureValue |
+
+### webApplicationFirewallDnsRecordType values 
+
+|Member|
+|:---|
+|cname|
+|unknownFutureValue|
+
+### webApplicationFirewallProviderType values 
+
+|Member|
+|:---|
+|akamai|
+|cloudflare|
+|unknownFutureValue|
+
+### webApplicationFirewallVerificationStatus values 
+
+|Member|
+|:---|
+|success|
+|warning|
+|failure|
+|unknownFutureValue|
+
+### callEventType values
+
+| Member |
+| ------------------ |
+| callStarted |
+| callEnded |
+| unknownFutureValue |
+| rosterUpdated |

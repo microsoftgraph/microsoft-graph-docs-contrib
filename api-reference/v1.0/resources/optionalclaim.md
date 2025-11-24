@@ -2,7 +2,7 @@
 title: "optionalClaim resource type"
 description: "PROVIDE DESCRIPTION HERE"
 ms.localizationpriority: medium
-author: "sureshja"
+author: "Jackson-Woods"
 ms.subservice: "entra-applications"
 doc_type: "resourcePageType"
 ms.date: 07/22/2024

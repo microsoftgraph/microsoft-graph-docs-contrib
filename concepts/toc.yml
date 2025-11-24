@@ -129,7 +129,7 @@ items:
         href: /powershell/microsoftgraph/navigating?toc=/graph/toc.json
       - name: App-only authentication
         href: /powershell/microsoftgraph/app-only?toc=/graph/toc.json
-  - name: Use the toolkit
+  - name: Use the toolkit (deprecated)
     items:
     - name: Overview
       href: toolkit/overview.md
@@ -247,6 +247,8 @@ items:
       href: mcp-server/overview.md
     - name: Get started
       href: mcp-server/get-started.md
+    - name: Explore the repository
+      href: https://github.com/mcp/microsoft/EnterpriseMCP
 - name: Services and features
   expanded: true
   items:
@@ -344,6 +346,8 @@ items:
     items:
     - name: Overview
       href: backup-storage-concept-overview.md
+    - name: Managing information barriers for file storage containers
+      href: information-barrier-for-file-storage-containers.md
     - name: Error codes
       href: backup-storage-error-codes.md
   - name: Calendar
@@ -506,7 +510,7 @@ items:
         href: embed-teams-app-in-assignment.md
       - name: Work with grading categories
         href: work-with-grading-categories.md
-      - name: Create assignment with Speaker Progress resource (preview)
+      - name: Create assignment with Speaker Progress resource
         href: create-assignment-with-speaker-progress-resource.md
   - name: External data connections
     items:
@@ -868,6 +872,10 @@ items:
     - name: Overview
       href: teams-concept-overview.md
       displayName: teams, team, teamwork, Microsoft Teams
+    - name: Channel
+      items:
+      - name: Managing channel memberships
+        href: manage-channel-memberships.md
     - name: Messaging APIs
       items:
       - name: Working with Microsoft Teams messaging
@@ -913,6 +921,8 @@ items:
         href: cloud-communications-online-meeting-artifacts.md
       - name: Identify large gallery view participants
         href: cloud-communications-identifylargegalleryview.md
+      - name: Manage presence state
+        href: cloud-communications-manage-presence-state.md
       - name: Manage watermarks for sensitive meetings
         href: cloud-communications-watermark-meeting.md
       - name: Virtual events
@@ -1091,8 +1101,6 @@ items:
       href: change-notifications-with-resource-data.md
     - name: Notifications for cloud printing
       href: universal-print-webhook-notifications.md
-    - name: Notifications for Copilot AI interactions
-      href: aiinteraction-changenotifications-overview.md
     - name: Notifications for Microsoft Teams resources
       items:
       - name: Notification types and payloads

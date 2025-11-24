@@ -26,7 +26,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ### Permissions to read system-preferred MFA
 
-<!-- { "blockType": "permissions", "name": "authentication_get" } -->
+<!-- { "blockType": "permissions", "name": "authentication_get", "requestUrls": ["GET /users/{id | userPrincipalName}/authentication/signInPreferences"] } -->
 [!INCLUDE [permissions-table](../includes/permissions/authentication-get-permissions.md)]
 
 [!INCLUDE [rbac-authentication-methods-apis-read-others](../includes/rbac-for-apis/rbac-authentication-methods-apis-read-others.md)]
@@ -35,12 +35,20 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 #### Permissions acting on self
 
-<!-- { "blockType": "permissions", "name": "authentication_get_2" } -->
+<!-- { 
+  "blockType": "permissions", 
+  "name": "authentication_get_2", 
+  "requestUrls": ["GET /me/authentication/requirements"]
+ } -->
 [!INCLUDE [permissions-table](../includes/permissions/authentication-get-2-permissions.md)]
 
-#### Permissions acting on others
+#### Permissions acting on other users
 
-<!-- { "blockType": "permissions", "name": "authentication_get_3" } -->
+<!-- { 
+  "blockType": "permissions", 
+  "name": "authentication_get_3", 
+  "requestUrls": ["GET /users/{id | userPrincipalName}/authentication/requirements"]
+ } -->
 [!INCLUDE [permissions-table](../includes/permissions/authentication-get-3-permissions.md)]
 
 [!INCLUDE [rbac-authentication-methods-policy-apis-read](../includes/rbac-for-apis/rbac-authentication-methods-policy-apis-read.md)]
@@ -51,7 +59,7 @@ To retrieve the sign-in preferences (system-preferred MFA) for a user:
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /users/{id | userPrincipalName}/authentication/signInPreferences
 ```
 
@@ -60,7 +68,7 @@ To retrieve the per-user multifactor authentication state for the signed-in user
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /me/authentication/requirements
 ```
 
@@ -71,7 +79,7 @@ To retrieve the per-user multifactor authentication state for a user:
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /users/{id | userPrincipalName}/authentication/requirements
 ```
 
@@ -99,7 +107,7 @@ The following example shows a request.
   "name": "get_authentication_signInPreferences"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/071cc716-8147-4397-a5ba-b2105951cc0b/authentication/signInPreferences
 ```
 
@@ -142,7 +150,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.signInPreferences"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -163,7 +171,7 @@ The following example shows a request.
   "name": "get_authentication_strongAuthenticationRequirements"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/071cc716-8147-4397-a5ba-b2105951cc0b/authentication/requirements
 ```
 
@@ -206,7 +214,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.strongAuthenticationRequirements"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

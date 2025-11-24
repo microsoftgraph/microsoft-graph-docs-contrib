@@ -9,6 +9,9 @@ ms.topic: article
 
 # Microsoft Graph Toolkit caching
 
+> [!CAUTION]
+> The Microsoft Graph Toolkit is deprecated. The retirement period begins September 1, 2025, with full retirement planned for August 28, 2026. Developers should migrate to using the Microsoft Graph SDKs or other supported Microsoft Graph tools for building web experiences. For more information, see the [deprecation announcement](https://devblogs.microsoft.com/microsoft365dev/microsoft-graph-toolkit-retirement/).
+
 The Microsoft Graph Toolkit supports caching of select Microsoft Graph API calls. Calls are cached per entity, such as people, contact, photo. This allows one component to retrieve the data and other components to reuse it without calling Microsoft Graph.
 
 > [!TIP]

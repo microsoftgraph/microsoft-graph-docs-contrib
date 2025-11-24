@@ -28,7 +28,7 @@ To retrieve decisions for an instance of an access review for which the calling 
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitionId}/instances/{accessReviewInstanceId}/decisions/filterByCurrentUser(on='reviewer')
 ```
 
@@ -37,7 +37,7 @@ To retrieve decisions for a stage in an instance of an multi-stage access review
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitionId}/instances/{accessReviewInstanceId}/stages/{accessReviewStageId}/decisions/filterByCurrentUser(on='reviewer')
 ```
 
@@ -81,7 +81,7 @@ If successful, this function returns a `200 OK` response code and a [accessRevie
   "name": "accessreviewinstancedecisionitem_filterbycurrentuser"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitions/0185aab8-9a7e-44b5-ae36-41b923c3bf87/instances/1234aab8-9a7e-5678-ae36-41b923c3bf87/decisions/filterByCurrentUser(on='reviewer')
 ```
 
@@ -123,7 +123,7 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definition
   "@odata.type": "Collection(microsoft.graph.accessReviewInstanceDecisionItem)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -182,7 +182,7 @@ Content-Type: application/json
   "name": "accessreviewinstancedecisionitem_filterbycurrentuser_2"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitions/0185aab8-9a7e-44b5-ae36-41b923c3bf87/instances/1234aab8-9a7e-5678-ae36-41b923c3bf87/stages/9458f255-dff2-4d86-9a05-69438f49d7f8/decisions/filterByCurrentUser(on='reviewer')?$select=accessReviewId,reviewedDateTime,decision,justification,recommendation,reviewedBy,target
 ```
 
@@ -224,7 +224,7 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definition
   "@odata.type": "Collection(microsoft.graph.accessReviewInstanceDecisionItem)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

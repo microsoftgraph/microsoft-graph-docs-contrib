@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /teams/{teamsId}/schedule/timeCards/{timeCardId}
 ```
 
@@ -61,7 +61,7 @@ The following example shows a request.
   "name": "get_timecard"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/teams/fd15cad8-80f6-484f-9666-3caf695fbf32/schedule/timeCards/TCK_3e74d9a1-f45f-4da3-95df-be72a8af448d
 ```
 
@@ -106,7 +106,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.timeCard"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

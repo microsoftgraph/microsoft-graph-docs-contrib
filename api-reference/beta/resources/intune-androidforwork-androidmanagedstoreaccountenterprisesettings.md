@@ -31,6 +31,8 @@ Enterprise settings for an Android managed store account.
 |[createGooglePlayWebToken action](../api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-creategoogleplaywebtoken.md)|String|Generates a web token that is used in an embeddable component.|
 |[setAndroidDeviceOwnerFullyManagedEnrollmentState action](../api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-setandroiddeviceownerfullymanagedenrollmentstate.md)|None|Sets the AndroidManagedStoreAccountEnterpriseSettings AndroidDeviceOwnerFullyManagedEnrollmentEnabled to the given value.|
 |[addApps action](../api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-addapps.md)|None||
+|[retrieveStoreLayout function](../api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-retrievestorelayout.md)|[androidManagedStoreLayoutType](../resources/intune-androidforwork-androidmanagedstorelayouttype.md)|Gets the Managed Google Play store layout type from Google EMM API.|
+|[setStoreLayout action](../api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-setstorelayout.md)|None|Sets the Managed Google Play store layout type via Google EMM API.|
 
 ## Properties
 |Property|Type|Description|

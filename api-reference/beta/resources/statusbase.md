@@ -13,8 +13,9 @@ ms.date: 07/22/2024
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 >[!CAUTION] 
-> The statusBase API is deprecated and will stop returning data om December 31, 2021. Please use the new [provisioningStatusInfo](provisioningstatusinfo.md) type.
+> The statusBase API is deprecated and stopped returning data on December 31, 2021. Going forward, use the new [provisioningStatusInfo](provisioningstatusinfo.md) type.
 
 Describes the status of the provisioning summary event. 
 

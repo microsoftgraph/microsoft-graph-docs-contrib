@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /deviceAppManagement
 ```
 
@@ -58,7 +58,7 @@ Here is an example of the request.
 
 # [HTTP](#tab/http)
 <!-- { "blockType": "request" , "name" : "intune_policyset_deviceappmanagement_get_get_deviceappmanagement" }-->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/deviceAppManagement
 ```
 
@@ -96,7 +96,7 @@ GET https://graph.microsoft.com/v1.0/deviceAppManagement
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 
 <!-- { "blockType": "response" , "@odata.type" : "microsoft.graph.deviceAppManagement" }-->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 Content-Length: 133

@@ -119,9 +119,18 @@ Content-Type: application/json
   "isEnabled": true,
   "additionalEvents": "restoreAndPolicyUpdates",
   "recipients": {
-    "recipients": {
-      "role": "globalAdmins"
-    }
+    "role": "custom",
+    "customRecipients": [
+      {
+        "email": "amala@contoso.com"
+      },
+      {
+        "email": "conrad@contoso.com"
+      },
+      {
+        "email": "lothar@contoso.com"
+      }
+    ]
   }
 }
 ```

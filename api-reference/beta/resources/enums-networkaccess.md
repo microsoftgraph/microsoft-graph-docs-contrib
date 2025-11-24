@@ -578,9 +578,6 @@ Namespace: microsoft.graph.networkaccess
 |reportOnly|
 |unknownFutureValue|
 
-
-
-
 <!--
 {
   "type": "#page.annotation",

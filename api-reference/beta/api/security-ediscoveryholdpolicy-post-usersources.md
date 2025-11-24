@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/legalHolds/{ediscoveryHoldPolicyId}/userSources
 ```
 
@@ -65,7 +65,7 @@ The following example shows a request.
   "name": "create_usersource_and_include_sources"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/{ediscoveryCaseId}/legalHolds/{ediscoveryHoldPolicyId}/userSources
 Content-Type: application/json
 
@@ -114,7 +114,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.security.userSource"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 

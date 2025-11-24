@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/custodians/{custodianId}/unifiedGroupSources
 ```
 
@@ -68,7 +68,7 @@ The following example shows a request.
   "name": "create_unifiedgroupsource_for_associated_custodain"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/custodians/0053a61a3b6c42738f7606791716a22a/unifiedGroupSources
 Content-Type: application/json
 
@@ -119,7 +119,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.security.unifiedGroupSource"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 
@@ -155,7 +155,7 @@ The following example shows a request.
   "name": "create_unifiedgroupsource_withgroup_odata_bind"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/custodians/0053a61a3b6c42738f7606791716a22a/unifiedGroupSources
 Content-Type: application/json
 
@@ -204,7 +204,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.security.unifiedGroupSource"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 

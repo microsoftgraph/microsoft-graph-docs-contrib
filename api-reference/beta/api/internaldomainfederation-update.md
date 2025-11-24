@@ -24,9 +24,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "internaldomainfederation_update" } -->
 [!INCLUDE [permissions-table](../includes/permissions/internaldomainfederation-update-permissions.md)]
 
-> [!IMPORTANT]
-> This method has a [known permissions issue](https://developer.microsoft.com/en-us/graph/known-issues/?search=21445) and might require consenting to the *Directory.AccessAsUser.All* permission for delegated scenarios.
-
 [!INCLUDE [rbac-domainfederation-apis-write](../includes/rbac-for-apis/rbac-domainfederation-apis-write.md)]
 
 ## HTTP request
@@ -35,7 +32,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PATCH /domains/{domainsId}/federationConfiguration/{internalDomainFederationId}
 ```
 
@@ -51,7 +48,7 @@ PATCH /domains/{domainsId}/federationConfiguration/{internalDomainFederationId}
 
 |Property|Type|Description|
 |:---|:---|:---|
-|activeSignInUri|String|URL of the endpoint used by active clients when authenticating with federated domains set up for single sign-on in Microsoft Entra ID. Corresponds to the **ActiveLogOnUri** property of the [Set-MsolDomainFederationSettings MSOnline v1 PowerShell cmdlet](/powershell/module/msonline/set-msoldomainfederationsettings).|
+|activeSignInUri|String|URL of the endpoint used by active clients when authenticating with federated domains set up for single sign-on in Microsoft Entra ID.|
 |displayName|String|The display name of the federated identity Provider (IdP). |
 |federatedIdpMfaBehavior|federatedIdpMfaBehavior|Determines whether Microsoft Entra ID accepts the MFA performed by the federated IdP when a federated user accesses an application that is governed by a conditional access policy that requires MFA. The possible values are: `acceptIfMfaDoneByFederatedIdp`, `enforceMfaByFederatedIdp`, `rejectMfaByFederatedIdp`, `unknownFutureValue`. For more information, see [federatedIdpMfaBehavior values](#federatedidpmfabehavior-values).|
 |isSignedAuthenticationRequestRequired|Boolean|If `true`, when SAML authentication requests are sent to the federated SAML IdP, Microsoft Entra ID sign in those requests using the OrgID signing key. If `false` (default), the SAML authentication requests sent to the federated IdP aren't signed.|
@@ -64,9 +61,7 @@ PATCH /domains/{domainsId}/federationConfiguration/{internalDomainFederationId}
 |promptLoginBehavior|promptLoginBehavior|Sets the preferred behavior for the sign-in prompt. The possible values are: `translateToFreshPasswordAuthentication`, `nativeSupport`, `disabled`, `unknownFutureValue`.|
 |signingCertificate|String|Current certificate used to sign tokens passed to the Microsoft identity platform. The certificate is formatted as a Base 64 encoded string of the public portion of the federated IdP's token signing certificate and must be compatible with the X509Certificate2 class. <br>This property is used in the following scenarios: <li> If a rollover is required outside of the autorollover update <li> A new federation service is being set up <li> If the new token signing certificate isn't present in the federation properties after the federation service certificate has been updated.<br>Microsoft Entra ID updates certificates via an autorollover process in which it attempts to retrieve a new certificate from the federation service metadata, 30 days before expiry of the current certificate. If a new certificate isn't available, Microsoft Entra ID monitors the metadata daily and updates the federation settings for the domain when a new certificate is available. Inherited from [samlOrWsFedProvider](../resources/samlorwsfedprovider.md).|
 |signingCertificateUpdateStatus|[signingCertificateUpdateStatus](../resources/signingcertificateupdatestatus.md)|Provides status and timestamp of the last update of the signing certificate.|
-|signOutUri|String|URI that clients are redirected to when they sign out of Microsoft Entra services. Corresponds to the **LogOffUri** property of the [Set-MsolDomainFederationSettings MSOnline v1 PowerShell cmdlet](/powershell/module/msonline/set-msoldomainfederationsettings).|
-
-[!INCLUDE [Azure AD PowerShell deprecation note](~/../reusable-content/msgraph-powershell/includes/aad-powershell-deprecation-note.md)]
+|signOutUri|String|URI that clients are redirected to when they sign out of Microsoft Entra services.|
 
 ### federatedIdpMfaBehavior values
 
@@ -76,11 +71,12 @@ PATCH /domains/{domainsId}/federationConfiguration/{internalDomainFederationId}
 | enforceMfaByFederatedIdp | Microsoft Entra ID accepts MFA that's performed by federated identity provider. If the federated identity provider didn't perform MFA, it redirects the request to federated identity provider to perform MFA. |
 | rejectMfaByFederatedIdp | Microsoft Entra ID always performs MFA and rejects MFA that's performed by the federated identity provider. |
 
-**Note:** **federatedIdpMfaBehavior** is an evolved version of the **SupportsMfa** property of the [Set-MsolDomainFederationSettings MSOnline v1 PowerShell cmdlet](/powershell/module/msonline/set-msoldomainfederationsettings). 
-+ Switching between **federatedIdpMfaBehavior** and **SupportsMfa** isn't supported.
-+ Once **federatedIdpMfaBehavior** property is set, Microsoft Entra ID ignores the **SupportsMfa** setting.
-+ If the **federatedIdpMfaBehavior** property is never set, Microsoft Entra ID continues to honor the **SupportsMfa** setting.
-+ If neither **federatedIdpMfaBehavior** nor **SupportsMfa** is set, Microsoft Entra ID defaults to `acceptIfMfaDoneByFederatedIdp` behavior.
+>[!NOTE]
+>**federatedIdpMfaBehavior** is an evolved version of the **SupportsMfa** property of the `Set-MsolDomainFederationSettings` cmdlet of the retired MSOnline PowerShell module.
+>+ Switching between **federatedIdpMfaBehavior** and **SupportsMfa** is not supported.
+>+ When **federatedIdpMfaBehavior** property is set, Microsoft Entra ID ignores the **SupportsMfa** setting.
+>+ If the **federatedIdpMfaBehavior** property is never set, Microsoft Entra ID will continue to honor the **SupportsMfa** setting.
+>+ If neither **federatedIdpMfaBehavior** nor **SupportsMfa** is set, Microsoft Entra ID will default to `acceptIfMfaDoneByFederatedIdp` behavior.
 
 ## Response
 
@@ -97,7 +93,7 @@ If successful, this method returns a `204 No Content` response code.
   "sampleKeys": ["contoso.com", "6601d14b-d113-8f64-fda2-9b5ddda18ecc"]
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/domains/contoso.com/federationConfiguration/6601d14b-d113-8f64-fda2-9b5ddda18ecc
 Content-Type: application/json
 
@@ -144,7 +140,7 @@ Content-Type: application/json
 }
 -->
 
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 

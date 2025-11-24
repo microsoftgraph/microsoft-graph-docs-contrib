@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /identityGovernance/appConsent/appConsentRequests/filterByCurrentUser(on='parameterValue')
 ```
 
@@ -74,7 +74,7 @@ The following example shows a request.
   "name": "appconsentrequest_filterbycurrentuser"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/appConsent/appConsentRequests/filterByCurrentUser(on='reviewer')?$filter=userConsentRequests/any(u:u/status eq 'InProgress')
 ```
 
@@ -116,7 +116,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/appConsent/appConsentReq
   "@odata.type": "Collection(microsoft.graph.appConsentRequest)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

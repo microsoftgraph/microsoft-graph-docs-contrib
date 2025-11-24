@@ -38,7 +38,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /users/{id | userPrincipalName}/authentication/temporaryAccessPassMethods
 ```
 
@@ -122,7 +122,7 @@ Content-Type: application/json
   "@odata.type": "microsoft.graph.temporaryAccessPassAuthenticationMethod"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 

@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /policies/externalIdentitiesPolicy
 ```
 
@@ -58,7 +58,7 @@ If successful, this method returns a `200 OK` response code and an [externalIden
   "name": "get_externalidentitiespolicy"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/policies/externalIdentitiesPolicy
 ```
 
@@ -100,7 +100,7 @@ GET https://graph.microsoft.com/beta/policies/externalIdentitiesPolicy
   "@odata.type": "microsoft.graph.externalIdentitiesPolicy"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

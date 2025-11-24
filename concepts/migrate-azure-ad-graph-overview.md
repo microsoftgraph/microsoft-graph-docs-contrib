@@ -7,29 +7,29 @@ ms.reviewer: krbash
 ms.topic: concept-article
 ms.localizationpriority: medium
 ms.subservice: entra-applications
-ms.date: 08/16/2024
+ms.date: 09/29/2025
 #customer intent: As a developer currently using Azure AD Graph, I want to know why I should migrate my applications to Microsoft Graph.
 ---
 
 # Migrate your apps from Azure AD Graph to Microsoft Graph
 
 > [!CAUTION]
-> Azure Active Directory (Azure AD) Graph is deprecated and is currently in its retirement path. We recommend that you migrate your apps to Microsoft Graph.
+> Azure Active Directory (Azure AD) Graph is deprecated and is currently in its retirement path. Migrate your apps to Microsoft Graph.
 
-Azure Active Directory (Azure AD) Graph is deprecated and is currently in its retirement path. Going forward, we will make no further investment in Azure AD Graph, and Azure AD Graph APIs have no SLA or maintenance commitment beyond security-related fixes. Investments in new features and functionalities will only be made in Microsoft Graph. **We recommend that you migrate your apps to Microsoft Graph.**
+Azure Active Directory (Azure AD) Graph is deprecated and is currently in its retirement path. Going forward, we make no further investment in Azure AD Graph. Azure AD Graph APIs have no SLA or maintenance commitment beyond security-related fixes. Investments in new features and functionalities go only to Microsoft Graph. **Migrate your apps to Microsoft Graph.**
 
-Key timelines in the retirement of Azure AD Graph is as follows:
+Key timelines in the retirement of Azure AD Graph are as follows:
 - 2019: Initial announcement of the deprecation of Azure AD Graph. Retirement set for June 30, 2023.
 - June 30, 2023: End of the three-year notice period for deprecation of Azure AD Graph. Azure AD Graph enters its retirement cycle.
-- August 31, 2024: New applications created after this date will not be able to use Azure AD Graph [unless they explicitly opt in for extended access](applications-authenticationbehaviors.md#allow-extended-azure-ad-graph-access-until-june-30-2025). Existing applications will continue to work.
-- February 1, 2025: **All new and existing apps must** [explicitly opt in for extended access](applications-authenticationbehaviors.md#allow-extended-azure-ad-graph-access-until-june-30-2025) to use Azure AD Graph, *including* apps created before August 31, 2024.
-- June 30, 2025: End of extended access to Azure AD Graph. Azure AD Graph will be fully retired.
+- August 31, 2024: New applications created after this date can't use Azure AD Graph [unless they explicitly opt in for extended access](applications-authenticationbehaviors.md#allow-extended-azure-ad-graph-access-until-june-30-2025). Existing applications continue to work.
+- February 1, 2025: **All new and existing apps must** [explicitly opt in for extended access](applications-authenticationbehaviors.md#allow-extended-azure-ad-graph-access-until-august-31-2025) to use Azure AD Graph, *including* apps created before August 31, 2024.
+- August 31, 2025: End of extended access to Azure AD Graph. Azure AD Graph will be fully retired.
 
-For more information on the latest announcement, see [Important: Update on Azure AD Graph API retirement](https://aka.ms/aadgraphupdate).
+For more information on the latest announcement, see [Important: Update on Azure AD Graph API retirement](https://techcommunity.microsoft.com/blog/microsoft-entra-blog/important-update-azure-ad-graph-retirement/4364990).
 
 ## Why use Microsoft Graph?
 
-Microsoft Graph represents our best-in-breed API surface. It offers a single unified endpoint to access Microsoft Entra services and Microsoft 365 services such as Microsoft Teams and Microsoft Intune. Microsoft Graph's API surface [has more than doubled that of Azure AD Graph](https://developer.microsoft.com/en-us/graph/changelog). All new functionalities will only be available through the Microsoft Graph.
+Microsoft Graph represents our best-in-breed API surface. It offers a single unified endpoint to access Microsoft Entra services and Microsoft 365 services such as Microsoft Teams and Microsoft Intune. Microsoft Graph's API surface [has more than doubled that of Azure AD Graph](https://developer.microsoft.microsoft.com/en-us/graph/changelog). All new functionalities are only available through Microsoft Graph.
 
 Microsoft Graph is also more secure and resilient than Azure AD Graph.
 
@@ -39,7 +39,7 @@ Switch to Microsoft Graph to take advantage of these enhanced capabilities and:
 
 - [Microsoft 365 group management](/graph/microsoft365-groups-concept-overview).
 - [External user invitations](/graph/api/resources/invitation).
-- The ability to [restore users, Microsoft 365 groups, applications, and service principals](/graph/api/resources/directory) after they've been deleted.
+- The ability to [restore users, groups, applications, and service principals](/graph/api/resources/directory) after they're deleted.
 - [Webhook notifications on users and groups](/graph/change-notifications-overview).
 - Advanced license management features including [group-based licensing](/graph/api/group-assignlicense).
 - Identity governance features such as:
@@ -53,7 +53,7 @@ Switch to Microsoft Graph to take advantage of these enhanced capabilities and:
 - [Client libraries and samples](/graph/) available on many more platforms and languages. Microsoft Graph SDKs provide a discoverable interface to easily access your data while transparently handling token acquisition, retry handling due to errors and throttling, secure redirect handling and model serialization and deserialization.
 - More [OData query capabilities](/graph/query-parameters) supported by resources such as users, groups, applications, and service principals.
 
-The rest of the articles in this section help you migrate your app from Azure AD Graph to Microsoft Graph. It includes:
+The rest of the articles in this section help you migrate your app from Azure AD Graph to Microsoft Graph. They include:
 
 - A checklist to help you plan the migration.
 - Guidance describing specific differences between the APIs.

@@ -4,7 +4,7 @@ description: "Get the groups and directory roles that this service principal is 
 ms.localizationpriority: high
 doc_type: apiPageType
 ms.subservice: "entra-applications"
-author: "sureshja"
+author: "Jackson-Woods"
 ms.date: 06/21/2024
 ---
 

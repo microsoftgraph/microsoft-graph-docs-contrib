@@ -20,7 +20,7 @@ Create a new [fileStorageContainerType](../resources/filestoragecontainertype.md
 > * The tenant must own the application that is assigned as the owner of the **fileStorageContainerType** (**owningAppId**).
 > * The registration of a container type in a newly created tenant can fail if the tenant isn't yet fully ready. You might need to wait at least an hour before you can register a container type in a new tenant.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -42,7 +42,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /storage/fileStorage/containerTypes
 ```
 
@@ -74,13 +74,14 @@ If successful, this method returns a `201 Created` response code and a [fileStor
 
 ### Request
 The following example shows how to create a trial [fileStorageContainerType](../resources/filestoragecontainertype.md).
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_filestoragecontainertype_from_"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/storage/fileStorage/containerTypes
 Content-Type: application/json
 
@@ -91,7 +92,10 @@ Content-Type: application/json
   "settings": {
     "isItemVersioningEnabled": true,
     "isSharingRestricted": false,
-    "consumingTenantOverridables": "isSearchEnabled,itemMajorVersionLimit"
+    "consumingTenantOverridables": "isSearchEnabled,itemMajorVersionLimit",
+    "agent": {
+      "chatEmbedAllowedHosts": ["https://localhost:3000"]
+    }
   }
 }
 ```
@@ -131,7 +135,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.fileStorageContainerType"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 
@@ -153,7 +157,10 @@ Content-Type: application/json
     "itemMajorVersionLimit": 50,
     "maxStoragePerContainerInBytes": 104857600,
     "isSharingRestricted": false,
-    "consumingTenantOverridables": "isSearchEnabled,itemMajorVersionLimit"
+    "consumingTenantOverridables": "isSearchEnabled,itemMajorVersionLimit",
+    "agent": {
+      "chatEmbedAllowedHosts": ["https://localhost:3000"]
+    }
   }
 }
 ```

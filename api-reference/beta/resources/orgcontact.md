@@ -37,6 +37,9 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
 |[Get member objects](../api/directoryobject-checkmemberobjects.md) | String collection | Return all groups, administrative units, and directory roles that the organizational contact is a member of. The check is transitive. |
 |[Retry service provisioning](../api/orgcontact-retryserviceprovisioning.md) | None | Retry the orgContact service provisioning. |
 | [Get transitive reports](../api/orgcontact-get-transitivereports.md) | Integer | Get the count of transitive reports for an organization contact from the transitiveReports navigation property. |
+| **On-premises sync behavior (Source of Authority)** |||
+|[Get](../api/onpremisessyncbehavior-get.md)|[onPremisesSyncBehavior](../resources/onpremisessyncbehavior.md)|Check whether the contact object's source of authority (SOA) is the cloud or on-premises Active Directory.|
+|[Update](../api/onpremisessyncbehavior-update.md)|[onPremisesSyncBehavior](../resources/onpremisessyncbehavior.md)|Update the contact object's source of authority (SOA) to the cloud or on-premises Active Directory.|
 | **Organizational hierarchy** |
 | [Get manager](../api/orgcontact-get-manager.md) | [directoryObject](directoryobject.md) | Get the contact's manager. |
 | [List direct reports](../api/orgcontact-list-directreports.md) | [directoryObject](directoryobject.md) collection | List the contact's direct reports. |
@@ -72,6 +75,7 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
 | directReports | [directoryObject](directoryobject.md) collection | The contact's direct reports. (The users and contacts that have their manager property set to this contact.) Read-only. Nullable. Supports `$expand`. |
 | manager | [directoryObject](directoryobject.md) | The user or contact that is this contact's manager. Read-only. Supports `$expand` and `$filter` (`eq`) by **id**. |
 | memberOf | [directoryObject](directoryobject.md) collection | Groups that this contact is a member of. Read-only. Nullable. Supports `$expand`. |
+| onPremisesSyncBehavior | [onPremisesSyncBehavior](../resources/onpremisessyncbehavior.md)  | Indicates the state of synchronization for an orgContact between the cloud and on-premises Active Directory. Supports `$filter` only with advanced query capabilities, for example, `$filter=onPremisesSyncBehavior/isCloudManaged eq true&$count=true`.|
 | transitiveReports | [directoryObject](directoryobject.md) collection | The transitive reports for a contact. Read-only. |
 
 ## JSON representation

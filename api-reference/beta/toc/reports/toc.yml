@@ -298,6 +298,32 @@ items:
               href: ../../api/serviceactivity-getmetricsforconditionalaccesscompliantdevicessigninsuccess.md
             - name: Get SAML sign-in metrics
               href: ../../api/serviceactivity-getmetricsforsamlsigninsuccess.md
+            - name: Get network access internet app policy blocked users metrics
+              href: ../../api/serviceactivity-getmetricsfornetworkaccessinternetapppolicyblockedusers.md
+            - name: Get network access internet app policy blocked apps metrics
+              href: ../../api/serviceactivity-getmetricsfornetworkaccessinternetapppolicyblockedapps.md
+            - name: Get network access internet app policy allowed users metrics
+              href: ../../api/serviceactivity-getmetricsfornetworkaccessinternetapppolicyallowedusers.md
+            - name: Get network access internet app policy allowed apps metrics
+              href: ../../api/serviceactivity-getmetricsfornetworkaccessinternetapppolicyallowedapps.md
+            - name: Get network access private app users blocked by connector metrics
+              href: ../../api/serviceactivity-getmetricsfornetworkaccessprivateappusersblockedbyconnector.md
+            - name: Get network access private apps blocked by connector metrics
+              href: ../../api/serviceactivity-getmetricsfornetworkaccessprivateappsblockedbyconnector.md
+            - name: Get network access private app users allowed by connector metrics
+              href: ../../api/serviceactivity-getmetricsfornetworkaccessprivateappusersallowedbyconnector.md
+            - name: Get network access private apps allowed by connector metrics
+              href: ../../api/serviceactivity-getmetricsfornetworkaccessprivateappsallowedbyconnector.md
+            - name: Get network access remote network branches alive metrics
+              href: ../../api/serviceactivity-getmetricsfornetworkaccessremotenetworkbranchesalive.md
+            - name: Get network access remote network branches tunnel disconnected metrics
+              href: ../../api/serviceactivity-getmetricsfornetworkaccessremotenetworkbranchestunneldisconnected.md
+            - name: Get network access remote network branches tunnel connected metrics
+              href: ../../api/serviceactivity-getmetricsfornetworkaccessremotenetworkbranchestunnelconnected.md
+            - name: Get network access remote network branches BGP disconnected metrics
+              href: ../../api/serviceactivity-getmetricsfornetworkaccessremotenetworkbranchesbgpdisconnected.md
+            - name: Get network access remote network branches BGP connected metrics
+              href: ../../api/serviceactivity-getmetricsfornetworkaccessremotenetworkbranchesbgpconnected.md
       - name: Health monitoring
         items:
         - name: Overview
@@ -334,6 +360,12 @@ items:
     items:
     - name: Overview
       href: ../../resources/azure-ad-auditlog-overview.md
+    - name: Audit activity type
+      items:
+      - name: Audit activity type
+        href: ../../resources/auditactivitytype.md
+      - name: List
+        href: ../../api/auditlogroot-list-auditactivitytypes.md
     - name: Custom security attribute audit (preview)
       items:
       - name: Custom security attribute audit (preview)
@@ -364,9 +396,21 @@ items:
         href: ../../api/auditlogroot-list-signups.md
       - name: Get
         href: ../../api/selfservicesignup-get.md
-    - name: Sign in
+    - name: Sign in events activity
       items:
-      - name: Sign in
+      - name: Sign in events activity
+        href: ../../resources/signineventsactivity.md
+      - name: List
+        href: ../../api/auditlogroot-list-signineventssummary.md
+    - name: Sign in events app activity
+      items:
+      - name: Sign in events app activity
+        href: ../../resources/signineventsappactivity.md
+      - name: List
+        href: ../../api/auditlogroot-list-signineventsappsummary.md
+    - name: Sign-in
+      items:
+      - name: Sign-in
         href: ../../resources/signin.md
       - name: List
         href: ../../api/signin-list.md
@@ -378,6 +422,16 @@ items:
         href: ../../api/signin-confirmsafe.md
       - name: Dismiss
         href: ../../api/signin-dismiss.md
+    - name: Summarized sign in
+      items:
+      - name: Summarized sign in
+        href: ../../resources/summarizedsignin.md
+      - name: Get summarized MSI sign-ins
+        href: ../../api/auditlogroot-getsummarizedmsisignins.md
+      - name: Get summarized non-interactive sign-ins
+        href: ../../api/auditlogroot-getsummarizednoninteractivesignins.md
+      - name: Get summarized service principal sign-ins
+        href: ../../api/auditlogroot-getsummarizedserviceprincipalsignins.md
 - name: Microsoft 365 monitoring reports (preview)
   items:
   - name: Overview
@@ -444,6 +498,32 @@ items:
         href: ../../api/serviceactivity-getmetricsforconditionalaccesscompliantdevicessigninsuccess.md
       - name: Get SAML sign-in metrics
         href: ../../api/serviceactivity-getmetricsforsamlsigninsuccess.md
+      - name: Get network access internet app policy blocked users metrics
+        href: ../../api/serviceactivity-getmetricsfornetworkaccessinternetapppolicyblockedusers.md
+      - name: Get network access internet app policy blocked apps metrics
+        href: ../../api/serviceactivity-getmetricsfornetworkaccessinternetapppolicyblockedapps.md
+      - name: Get network access internet app policy allowed users metrics
+        href: ../../api/serviceactivity-getmetricsfornetworkaccessinternetapppolicyallowedusers.md
+      - name: Get network access internet app policy allowed apps metrics
+        href: ../../api/serviceactivity-getmetricsfornetworkaccessinternetapppolicyallowedapps.md
+      - name: Get network access private app users blocked by connector metrics
+        href: ../../api/serviceactivity-getmetricsfornetworkaccessprivateappusersblockedbyconnector.md
+      - name: Get network access private apps blocked by connector metrics
+        href: ../../api/serviceactivity-getmetricsfornetworkaccessprivateappsblockedbyconnector.md
+      - name: Get network access private app users allowed by connector metrics
+        href: ../../api/serviceactivity-getmetricsfornetworkaccessprivateappusersallowedbyconnector.md
+      - name: Get network access private apps allowed by connector metrics
+        href: ../../api/serviceactivity-getmetricsfornetworkaccessprivateappsallowedbyconnector.md
+      - name: Get network access remote network branches alive metrics
+        href: ../../api/serviceactivity-getmetricsfornetworkaccessremotenetworkbranchesalive.md
+      - name: Get network access remote network branches tunnel disconnected metrics
+        href: ../../api/serviceactivity-getmetricsfornetworkaccessremotenetworkbranchestunneldisconnected.md
+      - name: Get network access remote network branches tunnel connected metrics
+        href: ../../api/serviceactivity-getmetricsfornetworkaccessremotenetworkbranchestunnelconnected.md
+      - name: Get network access remote network branches BGP disconnected metrics
+        href: ../../api/serviceactivity-getmetricsfornetworkaccessremotenetworkbranchesbgpdisconnected.md
+      - name: Get network access remote network branches BGP connected metrics
+        href: ../../api/serviceactivity-getmetricsfornetworkaccessremotenetworkbranchesbgpconnected.md
 - name: Microsoft 365 usage reports
   items:
   - name: Overview

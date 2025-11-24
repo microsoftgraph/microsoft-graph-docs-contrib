@@ -25,6 +25,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 > [!NOTE]
 > - Use delegated permissions to cancel a registration record for a person who has a [Microsoft Entra ID](/entra/fundamentals/whatis).
 > - Use application permissions to cancel a registration record for an anonymous user. 
+> - The `VirtualEventRegistration-Anon.ReadWrite.Chat` permission uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 ## HTTP request
 
@@ -32,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /solutions/virtualEvents/webinars/{webinarId}/registrations/{registrationId}/cancel
 ```
 
@@ -58,7 +59,7 @@ The following example shows a request.
   "name": "virtualeventregistrationthis.cancel"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/solutions/virtualEvents/webinars/f4b39f1c-520e-4e75-805a-4b0f2016a0c6@a1a56d21-a8a6-4a6b-97f8-ced53d30f143/registrations/127962bb-84e1-7b62-fd98-1c9d39def7b6/cancel
 ```
 
@@ -102,6 +103,6 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```

@@ -1,7 +1,7 @@
 ---
 title: "Update serviceprincipal"
 description: "Update the properties of serviceprincipal object."
-author: "sureshja"
+author: "Jackson-Woods"
 ms.localizationpriority: high
 doc_type: apiPageType
 ms.subservice: "entra-applications"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of [servicePrincipal](../resources/serviceprincipal.md) object.
+Update the properties of [servicePrincipal](../resources/serviceprincipal.md) object. This API can also update an [agentIdentityBlueprintPrincipal](../resources/agentidentityblueprintprincipal.md) object when the **@odata.type** property is set to `#microsoft.graph.agentIdentityBlueprintPrincipal`.
 
 > [!IMPORTANT]
 > - Using PATCH to set [**passwordCredential**](../resources/passwordcredential.md) is not supported. Use the [addPassword](./serviceprincipal-addpassword.md) and [removePassword](./serviceprincipal-removepassword.md) methods to update the password or secret for a servicePrincipal.

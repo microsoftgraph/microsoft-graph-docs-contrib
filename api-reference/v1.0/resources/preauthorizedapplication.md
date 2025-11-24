@@ -4,7 +4,7 @@ description: "Lists the preauthorized client applications"
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "entra-applications"
-author: "psignoret"
+author: "eringreenlee"
 ms.date: 04/03/2024
 ---
 

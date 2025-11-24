@@ -1,7 +1,7 @@
 ---
 title: "Assign tokenLifetimePolicy"
 description: "Assign a tokenLifetimePolicy to a service principal."
-author: "sureshja"
+author: "aricrowe57"
 ms.localizationpriority: medium
 ms.subservice: "entra-applications"
 doc_type: apiPageType
@@ -65,7 +65,7 @@ The following example shows a request.
   "name": "assign_tokenlifetimepolicy_to_serviceprincipal"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/servicePrincipals/2a8f9e7a-af01-413a-9592-c32ec0e5c1a7/tokenLifetimePolicies/$ref
 Content-Type: application/json
 
@@ -112,7 +112,7 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 

@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Delete a group from the list of groups included in a mobile app management policy.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 
-``` http
+```http
 DELETE /policies/mobileAppManagementPolicies/{id}/includedGroups/{id}/$ref
 ```
 
@@ -102,6 +102,6 @@ DELETE https://graph.microsoft.com/beta/policies/mobileAppManagementPolicies/ab9
 }
 -->
 
-``` http
+```http
 HTTP/1.1 204 No Content
 ```

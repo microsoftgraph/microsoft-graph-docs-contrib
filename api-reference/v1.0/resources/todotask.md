@@ -53,6 +53,8 @@ This resource supports the following:
 |status|taskStatus|Indicates the state or progress of the task. Possible values are: `notStarted`, `inProgress`, `completed`, `waitingOnOthers`, `deferred`.|
 |title|String|A brief description of the task.|
 
+Tasks can be exported using the PST download described in [Export content search results from the Microsoft Purview portal](/purview/ediscovery-export-search-results). You can reference the mapping between `todoTask` properties and the properties in the exported PST file in [To Do API overview](/graph/todo-concept-overview).
+
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
@@ -100,6 +102,7 @@ The following JSON representation shows the resource type.
   "bodyLastModifiedDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

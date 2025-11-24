@@ -24,6 +24,7 @@ Represents a legal hold policy. Legal holds are holds that are tied to an eDisco
 |[Get](../api/security-ediscoveryholdpolicy-get.md)|[microsoft.graph.security.ediscoveryHoldPolicy](../resources/security-ediscoveryholdpolicy.md)|Read the properties and relationships of an [ediscoveryHoldPolicy](../resources/security-ediscoveryholdpolicy.md) object.|
 |[Update](../api/security-ediscoveryholdpolicy-update.md)|[microsoft.graph.security.ediscoveryHoldPolicy](../resources/security-ediscoveryholdpolicy.md)|Update the properties of an [ediscoveryHoldPolicy](../resources/security-ediscoveryholdpolicy.md) object.|
 |[Delete](../api/security-ediscoverycase-delete-legalholds.md)|None|Delete an [ediscoveryHoldPolicy](../resources/security-ediscoveryholdpolicy.md) object.|
+|[Retry policy](../api/security-ediscoveryholdpolicy-retrypolicy.md)|None|Trigger a retry of an [eDiscovery hold policy](../resources/security-ediscoveryholdpolicy.md).|
 | **Site sources** |||
 |[List](../api/security-ediscoveryholdpolicy-list-sitesources.md)|[microsoft.graph.security.siteSource](../resources/security-sitesource.md) collection|Get a list of the [siteSource](../resources/security-sitesource.md) objects associated with an [ediscoveryHoldPolicy](../resources/security-ediscoveryholdpolicy.md).|
 |[Create](../api/security-ediscoveryholdpolicy-post-sitesources.md)|[microsoft.graph.security.siteSource](../resources/security-sitesource.md)|Create a new [siteSource](../resources/security-sitesource.md) object.|
@@ -94,4 +95,3 @@ The following JSON representation shows the resource type.
   ]
 }
 ```
-

@@ -28,7 +28,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PATCH /me/profile/notes/{id}
 PATCH /users/{id | userPrincipalName}/profile/notes/{id}
 ```
@@ -65,7 +65,7 @@ If successful, this method returns a `200 OK` response code and an updated [pers
   "name": "update_personannotation"
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/users/{userId}/profile/notes/{id}
 Content-Type: application/json
 
@@ -112,7 +112,7 @@ Content-Type: application/json
     "@odata.type": "microsoft.graph.personAnnotation"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

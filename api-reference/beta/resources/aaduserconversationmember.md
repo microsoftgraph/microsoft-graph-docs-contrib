@@ -47,8 +47,8 @@ Inherits from [conversationMember](conversationmember.md).
 |email| String  | The email address of the user. |
 |id| String | Read-only. Unique ID of the user.|
 |roles| String collection | The roles of the user such as owner, member, or guest. |
-|tenantId| string  | TenantId which the Microsoft Entra user belongs to. |
-|userId| String | The GUID of the user. |
+|tenantId| string  | The tenant ID of the Microsoft Entra user. |
+|userId| string | The user ID of the Microsoft Entra user. |
 |visibleHistoryStartDateTime| DateTimeOffset  | The timestamp that denotes how far back the history of a conversation is shared with the conversation member. This property is settable only for members of a chat.|
 
 ### Instance attributes
