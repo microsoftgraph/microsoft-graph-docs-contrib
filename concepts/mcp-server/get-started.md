@@ -19,13 +19,13 @@ This article describes how to provision the MCP server and configure both VS Cod
 
 ## Provision the MCP Server and VS Code (only required once per tenant)
 
-1. Start PowerShell in Administrator mode and install the **Microsoft.Entra.Beta** PowerShell module (version 1.0.13 or later):
+1. Start PowerShell in Administrator mode and install **Microsoft.Entra.Beta** PowerShell module (version 1.0.13 or later):
 
    ```powershell
    Install-Module Microsoft.Entra.Beta -Force -AllowClobber
    ```
 
-1. Authenticate into the tenant where you'd like to register the MCP Server. You must be assigned either the *Application Administrator* or *Cloud Application Administrator* role to consent to the required permissions:
+2. Authenticate into the tenant where you'd like to register the MCP Server. You must be assigned either the *Application Administrator* or *Cloud Application Administrator* role to consent to the required permissions:
 
    ```powershell
    Connect-Entra -Scopes 'Application.ReadWrite.All', 'Directory.Read.All', 'DelegatedPermissionGrant.ReadWrite.All'
@@ -34,7 +34,7 @@ This article describes how to provision the MCP server and configure both VS Cod
    > [!TIP]
    > Run `Get-MgContext` after authentication to confirm the account, tenant, and scopes currently in use.
 
-1. Register the Microsoft MCP Server for Enterprise in your tenant and grant all permissions to Visual Studio Code:
+3. Register the Microsoft MCP Server for Enterprise in your tenant and grant all permissions to Visual Studio Code:
 
    ```powershell
    Grant-EntraBetaMCPServerPermission -ApplicationName VisualStudioCode
@@ -50,18 +50,6 @@ Verify that both applications exist by using Microsoft Graph, Microsoft Entra Po
 | Visual Studio Code                  | `aebc6443-996d-45c2-90f0-388ff96faa56` |
 
 # [Microsoft Graph - verify registration](#tab/http)
-
-By application name:
-
-<!-- {
-  "blockType": "request",
-  "name": "provision-mcp-verify-provisioning-displayname-filter"
-}-->
-```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/servicePrincipals?$filter=displayName eq 'Microsoft MCP Server for Enterprise' or displayName eq 'Visual Studio Code'
-```
-
-By appId:
 
 <!-- {
   "blockType": "request",
