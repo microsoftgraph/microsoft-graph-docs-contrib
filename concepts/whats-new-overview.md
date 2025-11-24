@@ -27,6 +27,7 @@ The [driveItem: restore](/graph/api/driveitem-restore) method was expanded to en
 ### Files
 
 - The new SharePoint Embedded migration API enables you to programmatically schedule [SharePoint migration jobs](/graph/api/resources/sharepointmigrationjob) for bulk-migrating content from intermediary Azure blob storage containers to the target [fileStorageContainer](/graph/api/resources/filestoragecontainer).
+- Deprecated the [drive: recent](/graph/api/drive-recent) and [drive: sharedWithMe](/graph/api/drive-sharedwithme) methods of the [drive](/graph/api/resources/drive) resource.
 - Removed the endpoint `/driveitem/retentionLabel` as a supported request URL from the following API topics:
   - [driveItem: getRetentionLabel](/graph/api/driveitem-getretentionlabel)
   - [driveItem: lockOrUnlockRecorddriveItem: lockOrUnlockRecord](/graph/api/driveitem-lockorunlockrecord)
