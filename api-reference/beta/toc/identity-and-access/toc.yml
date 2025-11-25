@@ -1888,6 +1888,14 @@ items:
           href: ../../api/privilegedaccessgroupeligibilityscheduleinstance-get.md
         - name: Filter by current user
           href: ../../api/privilegedaccessgroupeligibilityscheduleinstance-filterbycurrentuser.md
+      - name: Group resource
+        items:
+        - name: Group resource
+          href: ../../resources/groupresource.md
+        - name: List
+          href: ../../api/privilegedaccessgroup-list-resources.md
+        - name: Get
+          href: ../../api/groupresource-get.md
       - name: Policy
         items:
         - name: Policy
@@ -2777,6 +2785,56 @@ items:
         href: ../../api/policydeletableitem-delete.md
       - name: Restore deleted policy
         href: ../../api/crosstenantidentitysyncpolicypartner-restore.md
+  - name: Cross-tenant migration
+    items:
+    - name: Overview
+      href: ../../resources/crosstenant-migration-overview.md
+    - name: Cross-tenant migration job
+      items:
+      - name: Cross-tenant migration job
+        href: ../../resources/crosstenantmigrationjob.md
+      - name: List
+        href: ../../api/migrationsroot-list-crosstenantmigrationjobs.md
+      - name: Create
+        href: ../../api/migrationsroot-post-crosstenantmigrationjobs.md
+      - name: Get
+        href: ../../api/crosstenantmigrationjob-get.md
+      - name: Update
+        href: ../../api/crosstenantmigrationjob-update.md
+      - name: Delete
+        href: ../../api/migrationsroot-delete-crosstenantmigrationjobs.md
+      - name: cancel
+        href: ../../api/crosstenantmigrationjob-cancel.md
+      - name: validate
+        href: ../../api/crosstenantmigrationjob-validate.md
+      - name: List users
+        href: ../../api/crosstenantmigrationjob-list-users.md
+    - name: Cross-tenant migration task
+      items:
+      - name: Cross-tenant migration task
+        href: ../../resources/crosstenantmigrationtask.md
+      - name: List
+        href: ../../api/crosstenantmigrationjob-list-users.md
+      - name: Get
+        href: ../../api/crosstenantmigrationtask-get.md
+      - name: cancel
+        href: ../../api/crosstenantmigrationtask-cancel.md
+    - name: Migrations root
+      items:
+      - name: Migrations root
+        href: ../../resources/migrationsroot.md
+      - name: List crossTenantMigrationJobs
+        href: ../../api/migrationsroot-list-crosstenantmigrationjobs.md
+      - name: Create crossTenantMigrationJob
+        href: ../../api/migrationsroot-post-crosstenantmigrationjobs.md
+    - name: Complex types
+      items:
+      - name: Cross-tenant migration service status details
+        href: ../../resources/crosstenantmigrationservicestatusdetails.md
+      - name: Error
+        href: ../../resources/error.md
+      - name: Exchange online Cross-tenant migration settings
+        href: ../../resources/exchangeonlinecrosstenantmigrationsettings.md
   - name: Cross-tenant shared user profiles
     items:
     - name: Inbound shared user profile
@@ -3177,6 +3235,26 @@ items:
         href: ../../api/authorizationpolicy-get.md
       - name: Update
         href: ../../api/authorizationpolicy-update.md
+    - name: B2B management policy
+      items:
+      - name: B2B management policy
+        href: ../../resources/b2bmanagementpolicy.md
+      - name: List
+        href: ../../api/policyroot-list-b2bmanagementpolicies.md
+      - name: Create
+        href: ../../api/policyroot-post-b2bmanagementpolicies.md
+      - name: Get
+        href: ../../api/b2bmanagementpolicy-get.md
+      - name: Update
+        href: ../../api/b2bmanagementpolicy-update.md
+      - name: Delete
+        href: ../../api/policyroot-delete-b2bmanagementpolicies.md
+      - name: List appliesTo
+        href: ../../api/b2bmanagementpolicy-list-appliesto.md
+      - name: Add appliesTo
+        href: ../../api/b2bmanagementpolicy-post-appliesto.md
+      - name: Remove appliesTo
+        href: ../../api/b2bmanagementpolicy-delete-appliesto.md
     - name: B2C authentication methods policy
       items:
       - name: B2C authentication methods policy

@@ -416,11 +416,11 @@ items:
       href: ../../resources/dropinplacemode.md
     - name: Mailbox details
       href: ../../resources/mailboxdetails.md
-    - name: Offline place mode
-      href: ../../resources/offlineplacemode.md
     - name: Place mode
       href: ../../resources/placemode.md
     - name: Reservable place mode
       href: ../../resources/reservableplacemode.md
     - name: Resource link
       href: ../../resources/resourcelink.md
+    - name: Unavailable place mode
+      href: ../../resources/unavailableplacemode.md

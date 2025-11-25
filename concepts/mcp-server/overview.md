@@ -27,6 +27,8 @@ This overview explains how Microsoft MCP Server for Enterprise works and how you
 
 ![MCP Server Workflow](../images/mcp-server-workflow.svg)
 
+<!-- ![MCP Server Workflow](../includes/mcp-server-workflow.mmd) Learn platform doesn't render raw Mermaid-->
+
 When the AI client starts, it automatically locates the Microsoft Graph MCP Server endpoint at `mcp.svc.cloud.microsoft/enterprise` from the list of installed MCP Servers and retrieves the available tools. This step is the **automatic discovery** phase.
 
 Suppose an administrator asks: "*How many users do we have in our Microsoft Entra tenant?*" Here's an example showing the workflow when you query information through an MCP-enabled AI agent:
