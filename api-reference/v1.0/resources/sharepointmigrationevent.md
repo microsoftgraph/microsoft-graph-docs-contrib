@@ -2,7 +2,7 @@
 title: "sharepointMigrationEvent resource type"
 description: "Represents the common information of a SharePoint migration event."
 author: "wenzhou"
-ms.date: 06/04/2025
+ms.date: 11/17/2025
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
 doc_type: resourcePageType
@@ -12,8 +12,6 @@ toc.title: SharePoint migration event
 # sharePointMigrationEvent resource type
 
 Namespace: microsoft.graph
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the common information of a SharePoint migration event.
 
