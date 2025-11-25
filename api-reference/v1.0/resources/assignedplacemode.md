@@ -35,8 +35,8 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.assignedPlaceMode",
-  "assignedUserId": "String",
-  "assignedUserEmailAddress": "String"
+  "assignedUserEmailAddress": "String",
+  "assignedUserId": "String"
 }
 ```
 
