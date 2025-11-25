@@ -51,6 +51,7 @@ This article shows the data about API requests that's available for Microsoft Gr
 - Build detections and behavioral analysis to spot suspicious or unusual use of Microsoft Graph APIs.
 - Investigate unexpected or suspicious privileged assignment of application permissions.
 - Spot problematic or unexpected behaviors for client applications, like extreme call volumes.
+- Monitor AI client interactions with Microsoft Graph APIs, including requests from AI applications and the [Microsoft MCP Server for Enterprise](./mcp-server/overview.md).
 - Correlate Microsoft Graph requests made by a user or app with sign-in information.
 
 ## Set up Microsoft Graph activity logs
