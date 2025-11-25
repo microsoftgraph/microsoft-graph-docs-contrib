@@ -147,7 +147,7 @@ The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "cloudpcdeviceimage_getsourceimages"
+  "name": "cloudpcdeviceimage_getsourceimageswithcategory"
 }
 -->
 
