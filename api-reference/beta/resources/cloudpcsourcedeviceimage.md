@@ -25,7 +25,7 @@ Represents the source image associated with your Azure subscription.
 |subscriptionDisplayName|String|The display name of the subscription that hosts the source image. Read-only.|
 |subscriptionId|String|The unique identifier (ID) of the subscription that hosts the source image. Read-only.|
 |id (deprecated)|String|The unique identifier (ID) of the source image. Read-only. The **id** property is deprecated and will stop returning data on January 31, 2024. Going forward, use the **resourceId** property.|
-|category|[cloudPcSourceImageCategory](#cloudpcsourceimagecategory-values)|The category of the source image. Possible values are: `managedImage`, `azureComputeGallery`, and `unknownFutureValue`. Read-only.|
+|category|[cloudPcSourceImageCategory](#cloudpcsourceimagecategory-values)|The category of the source image that is being requested. Possible values are: `managedImage`, `azureComputeGallery`, and `unknownFutureValue`. Default value is `managedImage`. Read-only.|
 
 ### cloudPcSourceImageCategory values
 

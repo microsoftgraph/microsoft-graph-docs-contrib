@@ -155,18 +155,6 @@ The following example shows a request.
 GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/deviceImages/getSourceImages?$filter=category eq 'managedImage'
 ```
 
-# [C#](#tab/csharp)
-
-# [Go](#tab/go)
-
-# [Java](#tab/java)
-
-# [JavaScript](#tab/javascript)
-
-# [PHP](#tab/php)
-
-# [Python](#tab/python)
-
 ---
 
 ### Response
