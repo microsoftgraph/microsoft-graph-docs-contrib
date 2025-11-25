@@ -1065,7 +1065,7 @@
       ],
       "childNodes": [
         {
-          "name": "SharePoint migration (preview)",
+          "name": "SharePoint migration",
           "overview": "../../resources/sharepointmigration-api-overview.md",
           "resources": [
             "sharePointMigrationEvent",
@@ -1151,6 +1151,7 @@
             "directorySetting",
             "directorySettingTemplate",
             "domain",
+            "onPremAuthenticationPolicy",
             "onPremisesDirectorySynchronization",
             "onPremisesSyncBehavior",
             "organization",
@@ -1324,8 +1325,10 @@
               "resources": [
                 "accessPackage",
                 "accessPackageAssignment",
+                "accessPackageSuggestion",
                 "approval",
                 "approvalStep",
+                "availableAccessPackage",
                 "accessPackageResourceRoleScope",
                 "accessPackageAssignmentPolicy",
                 "accessPackageAssignmentRequest",
@@ -1340,6 +1343,7 @@
                 "accessPackageAssignmentWorkflowExtension",
                 "accessPackageSubject",
                 "connectedOrganization",
+                "endUserSettings",
                 "entitlementManagementSettings",
                 "customAccessPackageWorkflowExtension",
                 "customDataProvidedResourceUploadSession"
@@ -1359,6 +1363,9 @@
                 "accessPackageResourceAttributeQuestion",
                 "accessPackageResourceAttributeSource",
                 "accessPackageResourceScope",
+                "accessPackageSuggestionReason",
+                "accessPackageSuggestionRelatedPeopleBased",
+                "accessPackageSuggestionSelfAssignmentHistoryBased",
                 "accessPackageTextInputQuestion",
                 "accessPackageUserDirectoryAttributeStore",
                 "approvalSettings",
@@ -1874,7 +1881,8 @@
                 "b2cAuthenticationMethodsPolicy",
                 "featureRolloutPolicy",
                 "identitySecurityDefaultsEnforcementPolicy",
-                "deviceRegistrationPolicy"
+                "deviceRegistrationPolicy",
+                "onPremAuthenticationPolicy"
               ]
             },
             {
@@ -2814,6 +2822,8 @@
             "userDataSecurityAndGovernance"
            ],
             "complexTypes": [
+              "aiAgentInfo",
+              "aiInteractionEntity",
               "activityMetadata",
               "aiInteractionPlugin",
               "autoLabeling",
@@ -2851,6 +2861,7 @@
               "processingError",
               "protectedApplicationMetadata",
               "protectedContent",
+              "resourceAccessDetail",
               "restrictAccessAction",
               "restrictAccessActionBase",
               "scopeBase",
@@ -3284,7 +3295,8 @@
             "presence"
           ],
           "complexTypes": [
-            "outOfOfficeSettings"
+            "outOfOfficeSettings",
+            "userWorkLocation"
           ],
           "childNodes": [
             {

@@ -1,6 +1,6 @@
 ---
 title: "processContentMetadataBase resource type"
-description: "Abstract base type representing metadata for a content entry being processed, including identifiers, content details, and timestamps."
+description: "An abstract base type that represents metadata for a content entry being processed, including identifiers, content details, and timestamps."
 author: "ArunGedela"
 ms.date: 04/08/2025
 ms.localizationpriority: medium
@@ -14,11 +14,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Abstract base type representing metadata for a content entry being processed, including identifiers, content details, and timestamps. Use [processConversationMetadata](./processconversationmetadata.md) for conversation content and [processFileMetadata](./processfilemetadata.md) for file content.
+An abstract base type that represents metadata for a content entry being processed, including identifiers, content details, and timestamps. Use [processConversationMetadata](./processconversationmetadata.md) for conversation content and [processFileMetadata](./processfilemetadata.md) for file content.
 
 This is an abstract type from which the following resources derive:
 - [processConversationMetadata](../resources/processconversationmetadata.md)
 - [processFileMetadata](../resources/processfilemetadata.md)
+
+Base type of [processConversationMetadata](./processconversationmetadata.md) and [processFileMetadata](./processfilemetadata.md).
 
 ## Properties
 
