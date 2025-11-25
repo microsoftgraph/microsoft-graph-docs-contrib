@@ -1908,6 +1908,14 @@ items:
           href: ../../api/privilegedaccessgroupeligibilityscheduleinstance-get.md
         - name: Filter by current user
           href: ../../api/privilegedaccessgroupeligibilityscheduleinstance-filterbycurrentuser.md
+      - name: Group resource
+        items:
+        - name: Group resource
+          href: ../../resources/groupresource.md
+        - name: List
+          href: ../../api/privilegedaccessgroup-list-resources.md
+        - name: Get
+          href: ../../api/groupresource-get.md
       - name: Policy
         items:
         - name: Policy
@@ -3247,6 +3255,26 @@ items:
         href: ../../api/authorizationpolicy-get.md
       - name: Update
         href: ../../api/authorizationpolicy-update.md
+    - name: B2B management policy
+      items:
+      - name: B2B management policy
+        href: ../../resources/b2bmanagementpolicy.md
+      - name: List
+        href: ../../api/policyroot-list-b2bmanagementpolicies.md
+      - name: Create
+        href: ../../api/policyroot-post-b2bmanagementpolicies.md
+      - name: Get
+        href: ../../api/b2bmanagementpolicy-get.md
+      - name: Update
+        href: ../../api/b2bmanagementpolicy-update.md
+      - name: Delete
+        href: ../../api/policyroot-delete-b2bmanagementpolicies.md
+      - name: List appliesTo
+        href: ../../api/b2bmanagementpolicy-list-appliesto.md
+      - name: Add appliesTo
+        href: ../../api/b2bmanagementpolicy-post-appliesto.md
+      - name: Remove appliesTo
+        href: ../../api/b2bmanagementpolicy-delete-appliesto.md
     - name: B2C authentication methods policy
       items:
       - name: B2C authentication methods policy

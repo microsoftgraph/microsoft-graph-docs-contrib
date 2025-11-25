@@ -20,27 +20,22 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ## November 2025: New and generally available
 
+### Identity and access | Directory management
+
+Deleted security groups can now be restored from [deleted items](/graph/api/resources/directory) within 30 days of deletion, similar to Microsoft 365 groups. Use the [Restore deleted item](/graph/api/directory-deleteditems-restore) API to restore a deleted security group.
+
 ### Backup storage
 
 The [driveItem: restore](/graph/api/driveitem-restore) method was expanded to enable restoring a **driveItem** deleted from a **fileStorageContainer** without mapping it to a **recycleBinItem**. This complements existing functionality in [recycleBinItem: restore](/graph/api/filestoragecontainer-restore-recyclebinitem) which continues to work as expected.
 
-### Device and app management | Cloud PC
+### Files
 
-- Use the [cloudPCUserSettingsPersistenceDetail](/graph/api/resources/cloudpcusersettingspersistencedetail?view=graph-rest-beta&preserve-view=true) resource and its associated methods to determine whether Cloud PC user settings persistence is enabled. When enabled, Windows 365 saves user-specific application data in a central location and reconnects users to their storage during each session. The following methods are supported:
-  - [Batch delete user settings persistence profile](/graph/api/cloudpcusersettingspersistencedetail-batchcleanupusersettingspersistenceprofile?view=graph-rest-beta&preserve-view=true).
-  - [Retrieve user settings persistence profiles](/graph/api/cloudpcusersettingspersistencedetail-retrieveusersettingspersistenceprofiles?view=graph-rest-beta&preserve-view=true).
-  - [Retrieve user settings persistence usage](/graph/api/cloudpcusersettingspersistencedetail-retrieveusersettingspersistenceprofileusage?view=graph-rest-beta&preserve-view=true).
-
-### Identity and access | Identity and sign-in
-
-- Use the [fraudProtectionProvider](/graph/api/resources/fraudprotectionprovider?view=graph-rest-beta&preserve-view=true) resource to manage third-party fraud protection providers such as HUMAN and Arkose Labs that are integrated with Microsoft Entra External ID for external tenants. These providers offer comprehensive fraud protection solutions that enable you to detect and block automated attacks, such as bot-driven registrations, during the user sign-up process.
-- Use the [webApplicationFirewallProvider](/graph/api/resources/webapplicationfirewallprovider?view=graph-rest-beta&preserve-view=true) resource to manage third-party web application firewall (WAF) providers such as Akamai and Cloudflare that are integrated with Microsoft Entra External ID for external tenants. These providers help to protect your organization from attacks, such as distributed denial of service (DDoS), malicious bots, Open Worldwide Application Security Project (OWASP) Top-10 security risks, and others.
-
-### Security
-
-- Use [aiAgentEvidence](/graph/api/resources/security-aiagentevidence?view=graph-rest-beta&preserve-view=true) as a newly supported [alertEvidence](/graph/api/resources/security-alertevidence?view=graph-rest-beta&preserve-view=true) type.
-- Added the **domainName** property to the [sensorCandidate](/graph/api/resources/security-sensorcandidate?view=graph-rest-beta&preserve-view=true) resource.
-- Added the **serviceStatus** property to the [sensor](/graph/api/resources/security-sensor?view=graph-rest-beta&preserve-view=true) resource.
+- Deprecated the [drive: recent](/graph/api/drive-recent) and [drive: sharedWithMe](/graph/api/drive-sharedwithme) methods of the [drive](/graph/api/resources/drive) resource.
+- Removed the endpoint `/driveitem/retentionLabel` as a supported request URL from the following API topics:
+  - [driveItem: getRetentionLabel](/graph/api/driveitem-getretentionlabel)
+  - [driveItem: lockOrUnlockRecorddriveItem: lockOrUnlockRecord](/graph/api/driveitem-lockorunlockrecord)
+  - [driveItem: removeRetentionLabel](/graph/api/driveitem-removeretentionlabel)
+  - [driveItem: setRetentionLabel](/graph/api/driveitem-setretentionlabel)
 
 ### Teamwork and communications | Calls and online meetings
 
@@ -61,9 +56,27 @@ Additionally, the first-class Microsoft Entra experience allows you to leverage 
 
 Added the **riskFactors** and **riskScore** properties to the [applicationTemplate](/graph/api/resources/applicationtemplate?view=graph-rest-beta&preserve-view=true) resource type which represents apps on the Microsoft Entra app gallery. These properties provide insights into the security posture of application templates.
 
+### Calendars | Places
+
+- Use the **wifiState** property on [building](/graph/api/resources/building?view=graph-rest-beta&preserve-view=true) to indicate whether a building has Wi-Fi.
+- Use the **heightAdjustableState** property on [desk](/graph/api/resources/desk?view=graph-rest-beta&preserve-view=true) to indicate whether a desk is height adjustable.
+- Use the **teamsEnabledState** property on [room](/graph/api/resources/room?view=graph-rest-beta&preserve-view=true) to indicate whether a room is enabled for Microsoft Teams.
+- Removed the **placeId** property from the [place](/graph/api/resources/place?view=graph-rest-beta&preserve-view=true) resource and its derived types. Going forward only the following derived types of **place** have the **placeId** property: [room](/graph/api/resources/room?view=graph-rest-beta&preserve-view=true) and [workspace](/graph/api/resources/workspace?view=graph-rest-beta&preserve-view=true).
+- Removed the [offlinePlaceMode](/graph/api/resources/offlineplacemode?view=graph-rest-beta&preserve-view=true) resource in favor of the [unavailablePlaceMode](/graph/api/resources/unavailableplacemode?view=graph-rest-beta&preserve-view=true) resource.
+
 ### Files
-Deprecated the [drive: recent](/graph/api/drive-recent) and [drive: sharedWithMe](/graph/api/drive-sharedwithme) methods of the [drive](/graph/api/resources/drive) resource.
-Deprecated the [drive: recent](/graph/api/drive-recent?view=graph-rest-beta&preserve-view=true) and [drive: sharedWithMe](/graph/api/drive-sharedwithme?view=graph-rest-beta&preserve-view=true) methods of the [drive](/graph/api/resources/drive?view=graph-rest-beta&preserve-view=true) resource.
+
+- Use the SharePoint cross-tenant migration APIs in Microsoft Graph to enable organizations to manage identity mappings during tenant-to-tenant migrations. For more information, see [sharePointUserIdentityMapping](/graph/api/resources/sharePointUserIdentityMapping?view=graph-rest-beta&preserve-view=true) and [sharePointGroupIdentityMapping](/graph/api/resources/sharePointGroupIdentityMapping?view=graph-rest-beta&preserve-view=true).
+- Deprecated the [drive: recent](/graph/api/drive-recent?view=graph-rest-beta&preserve-view=true) and [drive: sharedWithMe](/graph/api/drive-sharedwithme?view=graph-rest-beta&preserve-view=true) methods of the [drive](/graph/api/resources/drive?view=graph-rest-beta&preserve-view=true) resource.
+- Removed the endpoint `/driveitem/retentionLabel` as a supported request URL from the following API topics:
+  - [driveItem: getRetentionLabel](/graph/api/driveitem-getretentionlabel?view=graph-rest-beta&preserve-view=true)
+  - [driveItem: lockOrUnlockRecord](/graph/api/driveitem-lockorunlockrecord?view=graph-rest-beta&preserve-view=true)
+  - [driveItem: removeRetentionLabel](/graph/api/driveitem-removeretentionlabel?view=graph-rest-beta&preserve-view=true)
+  - [driveItem: setRetentionLabel](/graph/api/driveitem-setretentionlabel?view=graph-rest-beta&preserve-view=true)
+
+### Identity and access | Governance
+
+Added the [customDataProvidedResource](/graph/api/resources/customdataprovidedresource?view=graph-rest-beta&preserve-view=true) resource to support user-centric access reviews.
 
 ### Identity and access | Identity and sign-in
 
@@ -116,6 +129,10 @@ Introducing the Microsoft MCP Server for Enterprise - the official MCP server fo
 - Use the [Security Copilot APIs](/graph/api/resources/security-api-overview?view=graph-rest-beta&preserve-view=true#security-copilot-preview) to integrate advanced AI assistance related to Microsoft Entra into your custom portals and applications. The APIs provide capabilities to create sessions, prompts, and evaluations using the available plugins, enabling tailored AI-driven security workflows for your line-of-business applications.
 - Added the [identityAccounts](/graph/api/resources/security-identityaccounts?view=graph-rest-beta&preserve-view=true) resource type to represent user and service accounts associated with an identity in the context of security investigations and alerts in Microsoft Defender for Identity.
 
+### Security | Data security and compliance
+
+Use the **hasProtection** property on [sensitivityLabel](/graph/api/resources/security-sensitivitylabel?view=graph-rest-beta&preserve-view=true) to indicate whether the label has protection actions.
+
 ### Tasks and plans
 
 - [Get](/graph/api/plannerplan-getusagerights?view=graph-rest-beta&preserve-view=true) the usage rights for a specific [plan](/graph/api/resources/plannerplan?view=graph-rest-beta&preserve-view=true) based on its sensitivity label assignment and the requesting user's permissions.
@@ -123,7 +140,10 @@ Introducing the Microsoft MCP Server for Enterprise - the official MCP server fo
 
 ### Teamwork and communications | Calls and online meetings
 
-Use the `Accept-Language` header with the [Create virtualEventWebinar](/graph/api/virtualeventsroot-post-webinars?view=graph-rest-beta&preserve-view=true) and [Create virtualEventTownhall](/graph/api/virtualeventsroot-post-townhalls?view=graph-rest-beta&preserve-view=true) methods to specify an acceptable human language for the response.
+- Added the **sensitivityLabelAssignment** property to the [onlineMeeting](/graph/api/resources/onlineMeeting?view=graph-rest-beta&preserve-view=true), which represents the meeting’s sensitivity level. This ID corresponds to the identifier configured in the Microsoft Purview portal.
+- Use the `Accept-Language` header with the [Create virtualEventWebinar](/graph/api/virtualeventsroot-post-webinars?view=graph-rest-beta&preserve-view=true) and [Create virtualEventTownhall](/graph/api/virtualeventsroot-post-townhalls?view=graph-rest-beta&preserve-view=true) methods to specify an acceptable human language for the response.
+- Use the **expiryDateTime** property on [onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true) and [virtualEventSession](/graph/api/resources/virtualeventsession?view=graph-rest-beta&preserve-view=true) to indicate the date and time when the meeting resource expires.
+- Use the **meetingSpokenLanguageTag** property on [onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true) and [virtualEventSession](/graph/api/resources/virtualeventsession?view=graph-rest-beta&preserve-view=true) to specify the spoken language used during the meeting for recording and transcription purposes.
 
 ## October 2025: New and generally available
 
@@ -225,7 +245,7 @@ Use the **originalSourceMembershipUrl** annotation with the [List allMembers](/g
 
 ### Calendars | Places
 
-- Apply the following [prerequisites for the Places list and descendant APIs](/graph/api/resources/places-api-overview?view=graph-rest-beta&preserve-view=true#prerequisites-for-places-list-and-descendant-apis) before you can use these APIs; otherwise, they don't return any places.
+- Applied the following [prerequisites for the Places list and descendant APIs](/graph/api/resources/places-api-overview?view=graph-rest-beta&preserve-view=true#prerequisites-for-places-list-and-descendant-apis) before you can use these APIs; otherwise, they don't return any places.
 - Added `wifi` as a new supported value for the **sensorType** property of the [workplaceSensor](/graph/api/resources/workplacesensor?view=graph-rest-beta&preserve-view=true) and [workplaceSensorDeviceTelemetry](/graph/api/resources/workplacesensordevicetelemetry?view=graph-rest-beta&preserve-view=true) resources.
 
 ### Device and app management | Cloud PC
@@ -245,6 +265,10 @@ Use the **originalSourceMembershipUrl** annotation with the [List allMembers](/g
 
 - [List the dependent education assignment resources](/graph/api/educationassignmentresource-list-dependentresources?view=graph-rest-beta&preserve-view=true) for a given education assignment resource.
 - [List the dependent education submission resources](/graph/api/educationsubmissionresource-list-dependentresources?view=graph-rest-beta&preserve-view=true) for a given education submission resource.
+
+### Teamwork and communications | Calls and online meetings
+
+Use the **meetingOptionsWebUrl** property on [onlineMeeting](/graph/api/resources/onlinemeeting) and [virtualEventSession](/graph/api/resources/virtualeventsession) to get the URL to the Teams meeting options page for the specified meeting.
 
 ### Files
 

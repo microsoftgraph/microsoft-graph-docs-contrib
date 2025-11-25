@@ -7,7 +7,7 @@ ms.reviewer: krbash
 ms.topic: concept-article
 ms.localizationpriority: high
 ms.subservice: non-product-specific
-ms.date: 09/05/2025
+ms.date: 11/25/2025
 
 #customer intent: As an administrator, I want to learn how to track all API activities in my tenant so that I can have full visibility into tenant activities and monitor and investigate suspicious activities.
 ---
@@ -16,7 +16,7 @@ ms.date: 09/05/2025
 
 **Microsoft Graph activity logs** provide an audit trail of all HTTP requests that the Microsoft Graph service receives and processes for a tenant. Tenant admins can turn on log collection and set up downstream destinations by using diagnostic settings in Azure Monitor. The logs go to Log Analytics for analysis. You can export them to Azure Storage for long-term storage, or stream them with Azure Event Hubs to external SIEM tools for alerting, analysis, or archiving.
 
-You get logs for API requests from line-of-business apps, API clients, SDKs, and Microsoft apps like Outlook, Microsoft Teams, or the Microsoft admin portals.
+You get logs for API requests from line-of-business apps, API clients, SDKs, AI Clients querying the [Microsoft MCP Server for Enterprise](./mcp-server/overview.md), and Microsoft apps like Outlook, Microsoft Teams, or the Microsoft admin portals.
 
 This service is available in these [national cloud deployments](/graph/deployments).
 
@@ -39,6 +39,9 @@ To use Microsoft Graph activity logs, you need the following privileges.
 
 This article shows the data about API requests that's available for Microsoft Graph activity logs in the Logs Analytics interface.
 
+> [!TIP]
+> Requests to the [Microsoft MCP Server for Enterprise](./mcp-server/overview.md) have a **RequestUri** that includes `/enterprise`.
+
 [!INCLUDE [microsoftgraphactivitylogs](~/../reusable-content/ce-skilling/azure/includes/azure-monitor/reference/tables/microsoftgraphactivitylogs-include.md)]
 
 ## Common use cases for Microsoft Graph activity logs
@@ -48,6 +51,7 @@ This article shows the data about API requests that's available for Microsoft Gr
 - Build detections and behavioral analysis to spot suspicious or unusual use of Microsoft Graph APIs.
 - Investigate unexpected or suspicious privileged assignment of application permissions.
 - Spot problematic or unexpected behaviors for client applications, like extreme call volumes.
+- Monitor AI client interactions with Microsoft Graph APIs, including requests from AI applications and the [Microsoft MCP Server for Enterprise](./mcp-server/overview.md).
 - Correlate Microsoft Graph requests made by a user or app with sign-in information.
 
 ## Set up Microsoft Graph activity logs

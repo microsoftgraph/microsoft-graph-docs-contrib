@@ -946,14 +946,6 @@
         },
         {
           "Id": "04a25de5-d4f1-4e01-994a-bc226a8302bd",
-          "ApiChange": "Resource",
-          "ChangedApiName": "fido2AuthenticationMethodConfiguration",
-          "ChangeType": "Deprecation",
-          "Description": "Deprecated the [fido2AuthenticationMethodConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/fido2AuthenticationMethodConfiguration?view=graph-rest-beta) resource.",
-          "Target": "fido2AuthenticationMethodConfiguration"
-        },
-        {
-          "Id": "04a25de5-d4f1-4e01-994a-bc226a8302bd",
           "ApiChange": "Relationship",
           "ChangedApiName": "passkeyProfiles",
           "ChangeType": "Addition",
@@ -982,32 +974,6 @@
       "Version": "beta",
       "CreatedDateTime": "2025-11-18T21:09:42.1591906Z",
       "WorkloadArea": "Identity and access",
-      "SubArea": "Identity and sign-in"
-    },
-    {
-      "ChangeList": [
-        {
-          "Id": "9d3cbb13-db2e-4f12-a8f4-e812e748bc8d",
-          "ApiChange": "Resource",
-          "ChangedApiName": "fido2AuthenticationMethodConfiguration",
-          "ChangeType": "Deprecation",
-          "Description": "Deprecated the [fido2AuthenticationMethodConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/fido2AuthenticationMethodConfiguration?view=graph-rest-1.0) resource.",
-          "Target": "fido2AuthenticationMethodConfiguration"
-        },
-        {
-          "Id": "9d3cbb13-db2e-4f12-a8f4-e812e748bc8d",
-          "ApiChange": "Resource",
-          "ChangedApiName": "fido2AuthenticationMethodConfiguration",
-          "ChangeType": "Deprecation",
-          "Description": "Deprecated the [fido2AuthenticationMethodConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/fido2AuthenticationMethodConfiguration?view=graph-rest-1.0) resource.",
-          "Target": "fido2AuthenticationMethodConfiguration"
-        }
-      ],
-      "Id": "9d3cbb13-db2e-4f12-a8f4-e812e748bc8d",
-      "Cloud": "Prod",
-      "Version": "v1.0",
-      "CreatedDateTime": "2025-11-18T21:09:42.1591906Z",
-       "WorkloadArea": "Identity and access",
       "SubArea": "Identity and sign-in"
     },
     {
