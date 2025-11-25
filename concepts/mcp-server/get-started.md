@@ -4,7 +4,7 @@ description: "Microsoft MCP Server for Enterprise: Learn how to install, configu
 author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: Licantrop0
-ms.subservice: enterprise-mcp-server
+ms.subservice: ent-mcp-server
 ms.topic: get-started
 ms.date: 11/18/2025
 
