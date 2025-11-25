@@ -12,11 +12,9 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-An abstract type representing an abstract base type for modes of [desk](./desk.md) and [workspace](./workspace.md) objects.
+Represents an abstract base type for modes of [desk](./desk.md) and [workspace](./workspace.md) objects.
 
 Base type of [assignedPlaceMode](./assignedplacemode.md), [dropInPlaceMode](./dropinplacemode.md), and [reservablePlaceMode](./reservableplacemode.md).
-This is an abstract type.
-
 
 ## Properties
 None.
@@ -36,4 +34,3 @@ The following JSON representation shows the resource type.
   "@odata.type": "#microsoft.graph.placeMode"
 }
 ```
-
