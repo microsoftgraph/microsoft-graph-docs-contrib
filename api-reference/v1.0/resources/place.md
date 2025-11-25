@@ -61,21 +61,18 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.place",
-  "id": "String (identifier)",
+  "address": {"@odata.type": "microsoft.graph.physicalAddress"},
   "displayName": "String",
-  "geoCoordinates": {
-    "@odata.type": "microsoft.graph.outlookGeoCoordinates"
-  },
-  "phone": "String",
-  "address": {
-    "@odata.type": "microsoft.graph.physicalAddress"
-  },
-  "parentId": "String",
-  "tags": [
-    "String"
-  ],
+  "geoCoordinates": {"@odata.type": "microsoft.graph.outlookGeoCoordinates"},
+  "id": "String (identifier)",
   "isWheelChairAccessible": "Boolean",
-  "label": "String"
+  "label": "String",
+  "parentId": "String",
+  "phone": "String",
+  "tags": ["String"]
 }
 ```
 
+## Related content
+
+[Working with the Places API in Microsoft Graph](./places-api-overview.md)
