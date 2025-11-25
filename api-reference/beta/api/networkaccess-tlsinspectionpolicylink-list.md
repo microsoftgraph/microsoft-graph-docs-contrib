@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /networkAccess/filteringProfiles/{filteringProfileId}/policies?$filter=isof('microsoft.graph.networkaccess.tlsInspectionPolicyLink')
 ```
 
@@ -66,7 +66,7 @@ The following example shows a request.
   "sampleKeys": ["d734d2de-f2df-4b4a-8c4c-5111f8878275"]
 }
 -->
-``` http
+```http
 GET https://graph.microsoft.com/beta/networkAccess/filteringProfiles/d734d2de-f2df-4b4a-8c4c-5111f8878275/policies?$filter=isof('microsoft.graph.networkaccess.securityProviderPolicyLink')
 ```
 
@@ -80,7 +80,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.networkaccess.tlsInspectionPolicyLink"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

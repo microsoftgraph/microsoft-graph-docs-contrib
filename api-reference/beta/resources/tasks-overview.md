@@ -32,28 +32,28 @@ Before starting with the To Do API, take a look at the resources and how they re
 
 In this API set, a task list is represented by [baseTaskList](./basetasklist.md) which is a logical container of [baseTask](./basetask.md) resources. You can currently create tasks only in a task list. Tasks created without specifying list get created in the default Tasks list. To [get all your task lists](../api/basetasklist-get.md), make the following HTTP request:
 
-``` http
+```http
 GET /me/tasks/lists
 ```
 
 ## Task
 
 In this API set, a task is represented by a [baseTask](./basetask.md) resource which is a piece of work or personal item that can be tracked and completed. To get your tasks from a task list, make the following HTTP request:
-``` http
+```http
 GET /me/tasks/lists/{taskListId}/tasks
 ```
 
 ## Checklist item 
 
 A [checklistItem](checklistitem.md) represents an item that helps break down complex task in much smaller steps. To get a **checklistItem** from a task, make the following HTTP request:
-``` http
+```http
 GET /me/tasks/lists/{taskListId}/tasks/{taskId}/checklistItems/{checklistItems}
 ```
 
 ## Linked resource
 
 A [linkedResource](linkedresource_v2.md) represents any item from a partner application related to the task; for example, an email from where a task was created. You can use it to store information and the link back to the related item in your app. To get a linked resource from a task, make the following HTTP request:
-``` http
+```http
 GET /me/tasks/lists/{taskListId}/tasks/{taskId}/linkedresources/{linkedResourceId}
 ```
 

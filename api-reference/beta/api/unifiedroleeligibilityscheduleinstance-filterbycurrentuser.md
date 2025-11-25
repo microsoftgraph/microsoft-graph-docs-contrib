@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /roleManagement/directory/roleEligibilityScheduleInstances/filterByCurrentUser(on='principal')
 ```
 
@@ -68,7 +68,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
   "name": "unifiedroleeligibilityscheduleinstance_filterbycurrentuser"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/roleManagement/directory/roleEligibilityScheduleInstances/filterByCurrentUser(on='principal')
 ```
 
@@ -112,7 +112,7 @@ The following is an example of the response showing an instance of a roleEligibi
   "@odata.type": "Collection(microsoft.graph.unifiedRoleEligibilityScheduleInstance)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

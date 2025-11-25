@@ -35,7 +35,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
-``` http
+```http
 GET /users/{usersId}/onlineMeetings/getAllTranscripts(meetingOrganizerUserId='{userId}',startDateTime={startDateTime},endDateTime={endDateTime})
 ```
 >**Note:** The request fails if you don't pass the function parameter **meetingOrganizerUserId**, or a filter clause with **MeetingOrganizer/User/Id**.

@@ -43,7 +43,7 @@ To retrieve the approval resources in entitlement management:
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /identityGovernance/entitlementManagement/accessPackageAssignmentApprovals/filterByCurrentUser(on='approver')
 ```
 
@@ -52,7 +52,7 @@ To retrieve the approval resources in PIM for Groups:
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /identityGovernance/privilegedAccess/group/assignmentApprovals/filterByCurrentUser(on='approver')
 ```
 
@@ -87,7 +87,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
   "name": "approvalthis-filterbycurrentuser"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/accessPackageAssignmentApprovals/filterByCurrentUser(on='approver')
 ```
 
@@ -129,7 +129,7 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/ac
   "@odata.type": "Collection(microsoft.graph.approval)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -153,7 +153,7 @@ Content-Type: application/json
   "name": "approvalthis-filterbycurrentuser_azureADGroup"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/identityGovernance/privilegedAccess/group/assignmentApprovals/filterByCurrentUser(on='approver')
 ```
 
@@ -195,7 +195,7 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/privilegedAccess/group/a
   "@odata.type": "Collection(microsoft.graph.approval)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/searches/{ediscoverySearchId}/exportResult
 POST /security/cases/ediscoveryCases('{ediscoveryCaseId}')/searches('{ediscoverySearchId}')/exportResult
 ```
@@ -83,7 +83,7 @@ The following example shows a request.
   "name": "export_result1"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/dbc06feb-a6a5-46a2-8e4e-534353b071e4/searches/6c2ab774-2d2a-46b9-a601-3130f518757b/exportResult
 Content-Type: application/json
 
@@ -135,7 +135,7 @@ The following example shows the response.
   "name": "export_result1"
 }
 -->
-``` http
+```http
 HTTP/1.1 202 Accepted
 Content-Length: 0
 Location: https://graph.microsoft.com/beta/security/cases/ediscoverycases('dbc06feb-a6a5-46a2-8e4e-534353b071e4')/operations('01826ce3-43a3-4235-a121-81d05926efae')
@@ -155,7 +155,7 @@ The following example shows a request.
   "name": "export_result2"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/dbc06feb-a6a5-46a2-8e4e-534353b071e4/searches/6c2ab774-2d2a-46b9-a601-3130f518757b/exportResult
 Content-Type: application/json
 
@@ -208,7 +208,7 @@ The following example shows the response.
   "name": "export_result2"
 }
 -->
-``` http
+```http
 HTTP/1.1 202 Accepted
 Content-Length: 0
 Location: https://graph.microsoft.com/beta/security/cases/ediscoverycases('dbc06feb-a6a5-46a2-8e4e-534353b071e4')/operations('c74d3039-5c79-4093-8e45-2abb94e32ba9')
@@ -228,7 +228,7 @@ The following example shows a request.
   "name": "export_result3"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/dbc06feb-a6a5-46a2-8e4e-534353b071e4/searches/6c2ab774-2d2a-46b9-a601-3130f518757b/exportResult
 Content-Type: application/json
 
@@ -281,7 +281,7 @@ The following example shows the response.
   "name": "export_result3"
 }
 -->
-``` http
+```http
 HTTP/1.1 202 Accepted
 Content-Length: 0
 Location: https://graph.microsoft.com/beta/security/cases/ediscoverycases('dbc06feb-a6a5-46a2-8e4e-534353b071e4')/operations('4bf812e0-44ad-4856-a302-b4ea79725573')
@@ -301,7 +301,7 @@ The following example shows a request.
   "name": "export_result4"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/dbc06feb-a6a5-46a2-8e4e-534353b071e4/searches/6c2ab774-2d2a-46b9-a601-3130f518757b/exportResult
 Content-Type: application/json
 
@@ -354,7 +354,7 @@ The following example shows the response.
   "name": "export_result4"
 }
 -->
-``` http
+```http
 HTTP/1.1 202 Accepted
 Content-Length: 0
 Location: https://graph.microsoft.com/beta/security/cases/ediscoverycases('dbc06feb-a6a5-46a2-8e4e-534353b071e4')/operations('05b5c707-ed0d-4f5c-bbfd-e4941137baf1')
@@ -374,7 +374,7 @@ The following example shows a request.
   "name": "export_result5"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/dbc06feb-a6a5-46a2-8e4e-534353b071e4/searches/6c2ab774-2d2a-46b9-a601-3130f518757b/exportResult
 Content-Type: application/json
 
@@ -429,7 +429,7 @@ The following example shows the response.
   "name": "export_result5"
 }
 -->
-``` http
+```http
 HTTP/1.1 202 Accepted
 Content-Length: 0
 Location: https://graph.microsoft.com/beta/security/cases/ediscoverycases('dbc06feb-a6a5-46a2-8e4e-534353b071e4')/operations('d488f23e-f3cb-4a1c-9b9f-88ac4342f534')

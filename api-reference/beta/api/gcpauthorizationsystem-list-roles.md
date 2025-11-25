@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /external/authorizationSystems/{id}/microsoft.graph.gcpAuthorizationSystem/roles
 ```
 
@@ -63,7 +63,7 @@ The following example shows a request.
   "name": "list_gcprole"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/external/authorizationSystems/{id}/microsoft.graph.gcpAuthorizationSystem/roles
 ```
 
@@ -82,7 +82,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.gcpRole)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

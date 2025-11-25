@@ -35,7 +35,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /places
 ```
 
@@ -118,7 +118,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.building"
 } -->
 
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 
@@ -190,7 +190,7 @@ The following example shows the response.
   "truncated": true,
   "@odata.type": "microsoft.graph.floor"
 } -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 
@@ -265,7 +265,7 @@ The following example shows the response.
   "truncated": true,
   "@odata.type": "microsoft.graph.section"
 } -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 
@@ -340,7 +340,7 @@ The following example shows the response.
   "truncated": true,
   "@odata.type": "microsoft.graph.desk"
 } -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 
@@ -353,7 +353,7 @@ Content-Type: application/json
   "tags": [],
   "isWheelChairAccessible": false,
   "mode": {
-    "@odata.type": "#microsoft.graph.offlinePlaceMode",
+    "@odata.type": "#microsoft.graph.unavailablePlaceMode",
     "reason": "New"
   }
 }
@@ -420,7 +420,7 @@ The following example shows the response.
   "truncated": true,
   "@odata.type": "microsoft.graph.room"
 } -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 
@@ -514,7 +514,7 @@ Content-Type: application/json
   "emailAddress": "testSpace0015d9988631755150528582@contoso.com",
   "nickname": "testSpace001",
   "mode": {
-    "@odata.type": "#microsoft.graph.offlinePlaceMode",
+    "@odata.type": "#microsoft.graph.unavailablePlaceMode",
     "reason": "New"
   }
 }

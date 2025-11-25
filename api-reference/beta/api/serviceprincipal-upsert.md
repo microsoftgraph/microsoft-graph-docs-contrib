@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 
 Create a new [servicePrincipal](../resources/serviceprincipal.md) object if it doesn't exist, or update the properties of an existing [servicePrincipal](../resources/serviceprincipal.md) object.
 
+This API can also create an [agentIdentityBlueprintPrincipal](../resources/agentidentityblueprintprincipal.md) object from an [agentIdentityBlueprint](../resources/agentidentityblueprint.md) if it doesn't exist, or update properties of an existing [agentIdentityBlueprintPrincipal](../resources/agentidentityblueprintprincipal.md), when the **@odata.type** property is set to `#microsoft.graph.agentIdentityBlueprintPrincipal`.
+
 > [!IMPORTANT]
 > Adding [**passwordCredential**](../resources/passwordcredential.md) when creating servicePrincipals is not supported. Use the [addPassword](serviceprincipal-addpassword.md) method to add passwords or secrets for a servicePrincipal.
 
@@ -49,9 +51,9 @@ In the request body, supply a JSON representation of a [servicePrincipal](../res
 
 ## Response
 
-If successful, if a servicePrincipal with **appId** doesn't exist, this method returns a `201 Created` response code and a new [servicePrincipal](../resources/servicePrincipal.md) object in the response body.
+If successful, if a servicePrincipal or agentIdentityBlueprintPrincipal with **appId** doesn't exist, this method returns a `201 Created` response code and a new [servicePrincipal](../resources/servicePrincipal.md) or [agentIdentityBlueprintPrincipal](../resources/agentidentityblueprintprincipal.md) object in the response body.
 
-If a servicePrincipal with **appId** already exists, this method updates the [servicePrincipal](../resources/servicePrincipal.md) object and returns a `204 No Content` response code.
+If a servicePrincipal or agentIdentityBlueprintPrincipal with **appId** already exists, this method updates the [servicePrincipal](../resources/servicePrincipal.md) or [agentIdentityBlueprintPrincipal](../resources/agentidentityblueprintprincipal.md) object and returns a `204 No Content` response code.
 
 ## Examples
 
@@ -222,7 +224,7 @@ The following example shows the response.
 }
 -->
 
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 

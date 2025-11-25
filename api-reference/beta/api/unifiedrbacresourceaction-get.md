@@ -32,7 +32,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /roleManagement/directory/resourceNamespaces/{unifiedRbacResourceNamespaceId}/resourceActions/{unifiedRbacResourceActionId}
 ```
 
@@ -64,7 +64,7 @@ The following example gets the action with the identifier `microsoft.directory-a
   "sampleKeys": ["microsoft.directory-accessReviews-allProperties-read-get", "microsoft.directory"]
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/roleManagement/directory/resourceNamespaces/microsoft.directory/resourceActions/microsoft.directory-accessReviews-allProperties-read-get
 ```
 
@@ -105,7 +105,7 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/resourceNamespaces
   "@odata.type": "microsoft.graph.unifiedRbacResourceAction"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

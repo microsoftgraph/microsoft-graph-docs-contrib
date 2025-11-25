@@ -27,7 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /me/profile/certifications
 POST /users/{id | userPrincipalName}/profile/certifications
 ```
@@ -71,7 +71,7 @@ If successful, this method returns a `201 Created` response code and an [personC
   "name": "create_personCertification_from_"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/me/profile/certifications
 Content-Type: application/json
 
@@ -122,7 +122,7 @@ Content-Type: application/json
   "@odata.type": "microsoft.graph.personCertification"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 

@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PATCH networkAccess/filteringProfiles({filteringProfile_id})/policies({Policy_link_id})
 ```
 
@@ -63,7 +63,7 @@ The following example shows a request.
   "name": "update_filteringpolicylink"
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/networkaccess/filteringProfiles/9020f79d-71f6-4650-83a9-6b532479578f/policies/d00cf227-8645-4ab8-bd99-a9b455fd83a3
 Content-Type: application/json
 
@@ -80,7 +80,7 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 

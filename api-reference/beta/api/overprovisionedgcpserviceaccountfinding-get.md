@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /identityGovernance/permissionsAnalytics/gcp/findings/{id}/microsoft.graph.overprovisionedGcpServiceAccountFinding
 ```
 
@@ -63,7 +63,7 @@ The following example shows a request.
   "name": "get_overprovisionedgcpserviceaccountfinding"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/gcp/findings/MSxPdmVycHJvdmlzaW9uZWRHY3BTZXJ2aWNlQWNjb3VudEZpbmRpbmcsODM1Mw/microsoft.graph.overprovisionedGcpServiceAccountFinding
 ```
 
@@ -83,7 +83,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.overprovisionedGcpServiceAccountFinding"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 

@@ -33,7 +33,7 @@ One of the following permissions is required to call this API. Choose the permis
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /security/identities/identityAccounts/{identityAccountsId}
 ```
 
@@ -68,7 +68,7 @@ The following example shows a request.
   "name": "get_identityaccounts"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/security/identities/identityAccounts/0104216-0539-4838-88b1-55baafdc296b
 ```
 
@@ -112,7 +112,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.security.identityAccounts"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -157,7 +157,7 @@ The following example shows a request.
   "name": "get_identityaccounts_selected"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/security/identities/identityAccounts/0104216-0539-4838-88b1-55baafdc296b?$select=accounts
 ```
 
@@ -201,7 +201,7 @@ The following example shows the response of the identityAccount using the select
   "@odata.type": "microsoft.graph.security.identityAccounts"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

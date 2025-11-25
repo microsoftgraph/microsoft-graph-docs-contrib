@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /security/threatIntelligence/passiveDnsRecords/{passiveDnsRecordId}
 ```
 
@@ -67,7 +67,7 @@ The following example shows a request.
   "sampleKeys": ["Y29udG9zby5jb20kJDIwLjEwMy44NS4zMyQkZmFsc2U="]
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/security/threatIntelligence/passiveDnsRecords/Y29udG9zby5jb20kJDIwLjEwMy44NS4zMyQkZmFsc2U=
 ```
 

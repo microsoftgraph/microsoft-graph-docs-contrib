@@ -35,7 +35,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /admin/people/profileSources(sourceId='{sourceId}')
 ```
 
@@ -76,7 +76,7 @@ The following example shows a request.
   "name": "get_profilesource"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/admin/people/profileSources(sourceId='bamboohr1')
 ```
 
@@ -116,7 +116,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.profileSource"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
