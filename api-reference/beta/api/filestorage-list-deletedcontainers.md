@@ -63,7 +63,7 @@ The following example shows a request.
   "name": "list_deleted_filestoragecontainer"
 }
 -->
-```http
+```msgraph-interactive
 GET  https://graph.microsoft.com/beta/storage/fileStorage/deletedContainers?$filter=containerTypeId eq e2756c4d-fa33-4452-9c36-2325686e1082
 ```
 

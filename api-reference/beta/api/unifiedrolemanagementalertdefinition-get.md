@@ -61,7 +61,7 @@ The following example shows a request.
   "name": "get_unifiedrolemanagementalertdefinition"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/roleManagementAlerts/alertDefinitions/DirectoryRole_19356be4-7e93-4ed6-a7c6-0ae28454d125_TooManyGlobalAdminsAssignedToTenantAlert
 ```
 

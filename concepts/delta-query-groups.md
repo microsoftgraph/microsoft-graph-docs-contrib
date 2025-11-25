@@ -145,7 +145,7 @@ The second request uses the `@odata.nextLink` from the previous response, which 
   "blockType": "request",
   "name": "delta-query-groups-nextlink-request"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/groups/delta?$skiptoken=pqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjvB7XnF_yllFsCrZJ
 ```
 
@@ -236,7 +236,7 @@ The third request uses the latest `@odata.nextLink` returned from the last sync 
   "blockType": "request",
   "name": "delta-query-groups-nextlink-request2"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/groups/delta?$skiptoken=ppqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjtQ5LOhVoS7qQG_wdVCHHlbQpga7
 ```
 
@@ -315,7 +315,7 @@ Using the `@odata.deltaLink` from the [last response](#final-nextlink-response),
   "blockType": "request",
   "name": "delta-query-groups-deltalink-request"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/groups/delta?$deltatoken=sZwAFZibx-LQOdZIo1hHhmmDhHzCY0Hs6snoIHJCSIfCHdqKdWNZ2VX3kErpyna9GygROwBk-rqWWMFxJC3pw
 ```
 
@@ -442,7 +442,7 @@ Let's assume you're running the following delta query - either to capture the in
   "blockType": "request",
   "name": "delta-query-groups-delta-paging-request"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/groups/delta?$select=displayName,description,members
 ```
 

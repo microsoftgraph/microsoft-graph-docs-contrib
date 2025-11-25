@@ -61,7 +61,7 @@ If successful, this method returns a `200 OK` response code and a [riskDetection
   "name": "get_riskdetection_1"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/identityProtection/riskDetections/c2b6c2b9-dddc-acd0-2b39-d519d803dbc3
 ```
 

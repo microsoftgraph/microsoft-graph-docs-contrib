@@ -62,7 +62,7 @@ The following example gets properties of the multitenant organization.
   "name": "get_multitenantorganization"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/tenantRelationships/multiTenantOrganization
 ```
 

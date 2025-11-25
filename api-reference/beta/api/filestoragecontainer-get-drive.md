@@ -60,7 +60,7 @@ The following example shows a request.
   "name": "list_drive"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/storage/fileStorage/containers/{containerId}/drive
 ```
 

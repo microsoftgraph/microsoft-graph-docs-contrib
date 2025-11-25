@@ -83,7 +83,7 @@ The following example shows a request.
   "name": "list_cloudclipboarditem"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/cloudClipboard/items
 ```
 

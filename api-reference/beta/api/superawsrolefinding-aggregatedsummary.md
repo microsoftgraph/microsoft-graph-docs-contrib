@@ -64,7 +64,7 @@ The following example shows a request.
   "name": "superawsrolefindingthis.aggregatedsummary"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/microsoft.graph.superAwsRoleFinding/aggregatedSummary(authorizationSystemIds=['377596131774'])
 ```
 

@@ -60,7 +60,7 @@ The following example shows a request.
   "name": "get_unifiedstoragequota"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/settings/storage/quota
 ```
 
@@ -129,7 +129,7 @@ The following example shows a request.
   "sampleKeys": ["1234BBS1121YY95"]
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/1234BBS1121YY95/settings/storage/quota
 ```
 
@@ -197,7 +197,7 @@ The following example shows a request.
   "name": "get_unifiedstoragequotaandservices"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/settings/storage/quota?$expand=services
 ```
 

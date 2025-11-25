@@ -59,7 +59,7 @@ The following example shows a request.
   "name": "get_supergcpserviceaccountfinding"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/gcp/findings/MSxTdXBlckdjcFNlcnZpY2VBY2NvdW50RmluZGluZyw3MDc4/microsoft.graph.superGcpServiceAccountFinding
 ```
 

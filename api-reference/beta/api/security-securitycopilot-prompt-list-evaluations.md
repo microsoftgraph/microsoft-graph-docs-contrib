@@ -100,7 +100,6 @@ GET https://graph.microsoft.com/beta/security/securityCopilot/workspaces/default
 
 ---
 
-
 ### Response
 
 The following example shows the response.

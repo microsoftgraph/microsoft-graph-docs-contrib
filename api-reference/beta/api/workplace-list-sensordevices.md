@@ -69,7 +69,7 @@ The following example shows a request.
   "name": "list_workplacesensordevice"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/workplace/sensorDevices
 ```
 

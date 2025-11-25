@@ -64,7 +64,7 @@ The following example shows a request.
   "name": "get_qrcodepinauthenticationmethodconfiguration"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/policies/authenticationmethodspolicy/authenticationmethodconfigurations/qrcodepin
 ```
 

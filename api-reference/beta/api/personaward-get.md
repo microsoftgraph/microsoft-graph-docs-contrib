@@ -59,7 +59,7 @@ If successful, this method returns a `200 OK` response code and an [personAward]
   "name": "get_personAward"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/profile/awards/{id}
 ```
 

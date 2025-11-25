@@ -65,7 +65,7 @@ The following example shows a request.
   "name": "get_manifest"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/reports/partners/billing/manifests/6fe687d7-1e0f-4bd6-9091-4672691f64bc
 ```
 

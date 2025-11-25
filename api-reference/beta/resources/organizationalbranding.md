@@ -1,11 +1,11 @@
 ---
 title: "organizationalBranding resource type"
 description: "Contains details of the organization's default branding."
-author: nanguil
+author: alexanderMars
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
-ms.date: 07/22/2024
+ms.date: 10/30/2025
 ---
 
 # organizationalBranding resource type
@@ -80,6 +80,7 @@ You can't change your original configuration's language. However, companies can 
 |Relationship|Type|Description|
 |:---|:---|:---|
 | localizations | [organizationalBrandingLocalization](organizationalbrandinglocalization.md) collection | Add different branding based on a locale. |
+|themes|[organizationalBrandingTheme](../resources/organizationalbrandingtheme.md) collection|Collection of branding themes for the tenant.|
 
 ## JSON representation
 The following JSON representation shows the resource type.
@@ -109,14 +110,9 @@ The following JSON representation shows the resource type.
   "squareLogoDark": "Stream",
   "squareLogoDarkRelativeUrl": "String",
   "usernameHintText": "String",
-  "contentCustomization": {
-    "@odata.type": "microsoft.graph.contentCustomization"
-  },  
   "customAccountResetCredentialsUrl": "String",
   "customCannotAccessYourAccountText": "String",
   "customCannotAccessYourAccountUrl": "String",
-  "customCSS": "Stream",
-  "customCSSRelativeUrl": "String",
   "customForgotMyPasswordText": "String",
   "customPrivacyAndCookiesText": "String",
   "customPrivacyAndCookiesUrl": "String",
@@ -125,14 +121,19 @@ The following JSON representation shows the resource type.
   "customTermsOfUseUrl": "String",
   "favicon": "Stream",
   "faviconRelativeUrl": "String",
+  "customCSS": "Stream",
+  "customCSSRelativeUrl": "String",
   "headerBackgroundColor": "String",
+  "loginPageTextVisibilitySettings": {
+    "@odata.type": "microsoft.graph.loginPageTextVisibilitySettings"
+  },
+  "contentCustomization": {
+    "@odata.type": "microsoft.graph.contentCustomization"
+  },
   "headerLogo": "Stream",
   "headerLogoRelativeUrl": "String",
   "loginPageLayoutConfiguration": {
     "@odata.type": "microsoft.graph.loginPageLayoutConfiguration"
-  },
-  "loginPageTextVisibilitySettings": {
-    "@odata.type": "microsoft.graph.loginPageTextVisibilitySettings"
   }
 }
 ```

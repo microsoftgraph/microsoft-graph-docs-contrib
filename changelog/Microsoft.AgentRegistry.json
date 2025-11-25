@@ -1,0 +1,198 @@
+﻿{
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "8b5e57c5-6231-4cb0-a647-ce71f3c4dc78",
+          "ApiChange": "Resource",
+          "ChangedApiName": "agentCapabilities",
+          "ChangeType": "Addition",
+          "Description": "Added the [agentCapabilities](https://learn.microsoft.com/en-us/graph/api/resources/agentCapabilities?view=graph-rest-beta) resource.",
+          "Target": "agentCapabilities"
+        },
+        {
+          "Id": "8b5e57c5-6231-4cb0-a647-ce71f3c4dc78",
+          "ApiChange": "Resource",
+          "ChangedApiName": "agentCardSignature",
+          "ChangeType": "Addition",
+          "Description": "Added the [agentCardSignature](https://learn.microsoft.com/en-us/graph/api/resources/agentCardSignature?view=graph-rest-beta) resource.",
+          "Target": "agentCardSignature"
+        },
+        {
+          "Id": "8b5e57c5-6231-4cb0-a647-ce71f3c4dc78",
+          "ApiChange": "Resource",
+          "ChangedApiName": "agentExtension",
+          "ChangeType": "Addition",
+          "Description": "Added the [agentExtension](https://learn.microsoft.com/en-us/graph/api/resources/agentExtension?view=graph-rest-beta) resource.",
+          "Target": "agentExtension"
+        },
+        {
+          "Id": "8b5e57c5-6231-4cb0-a647-ce71f3c4dc78",
+          "ApiChange": "Resource",
+          "ChangedApiName": "agentExtensionParams",
+          "ChangeType": "Addition",
+          "Description": "Added the [agentExtensionParams](https://learn.microsoft.com/en-us/graph/api/resources/agentExtensionParams?view=graph-rest-beta) resource.",
+          "Target": "agentExtensionParams"
+        },
+        {
+          "Id": "8b5e57c5-6231-4cb0-a647-ce71f3c4dc78",
+          "ApiChange": "Resource",
+          "ChangedApiName": "agentInterface",
+          "ChangeType": "Addition",
+          "Description": "Added the [agentInterface](https://learn.microsoft.com/en-us/graph/api/resources/agentInterface?view=graph-rest-beta) resource.",
+          "Target": "agentInterface"
+        },
+        {
+          "Id": "8b5e57c5-6231-4cb0-a647-ce71f3c4dc78",
+          "ApiChange": "Resource",
+          "ChangedApiName": "agentProvider",
+          "ChangeType": "Addition",
+          "Description": "Added the [agentProvider](https://learn.microsoft.com/en-us/graph/api/resources/agentProvider?view=graph-rest-beta) resource.",
+          "Target": "agentProvider"
+        },
+        {
+          "Id": "8b5e57c5-6231-4cb0-a647-ce71f3c4dc78",
+          "ApiChange": "Resource",
+          "ChangedApiName": "agentSkill",
+          "ChangeType": "Addition",
+          "Description": "Added the [agentSkill](https://learn.microsoft.com/en-us/graph/api/resources/agentSkill?view=graph-rest-beta) resource.",
+          "Target": "agentSkill"
+        },
+        {
+          "Id": "8b5e57c5-6231-4cb0-a647-ce71f3c4dc78",
+          "ApiChange": "Resource",
+          "ChangedApiName": "apiKeySecurityScheme",
+          "ChangeType": "Addition",
+          "Description": "Added the [apiKeySecurityScheme](https://learn.microsoft.com/en-us/graph/api/resources/apiKeySecurityScheme?view=graph-rest-beta) resource.",
+          "Target": "apiKeySecurityScheme"
+        },
+        {
+          "Id": "8b5e57c5-6231-4cb0-a647-ce71f3c4dc78",
+          "ApiChange": "Resource",
+          "ChangedApiName": "httpAuthSecurityScheme",
+          "ChangeType": "Addition",
+          "Description": "Added the [httpAuthSecurityScheme](https://learn.microsoft.com/en-us/graph/api/resources/httpAuthSecurityScheme?view=graph-rest-beta) resource.",
+          "Target": "httpAuthSecurityScheme"
+        },
+        {
+          "Id": "8b5e57c5-6231-4cb0-a647-ce71f3c4dc78",
+          "ApiChange": "Resource",
+          "ChangedApiName": "jwsHeader",
+          "ChangeType": "Addition",
+          "Description": "Added the [jwsHeader](https://learn.microsoft.com/en-us/graph/api/resources/jwsHeader?view=graph-rest-beta) resource.",
+          "Target": "jwsHeader"
+        },
+        {
+          "Id": "8b5e57c5-6231-4cb0-a647-ce71f3c4dc78",
+          "ApiChange": "Resource",
+          "ChangedApiName": "mutualTLSSecurityScheme",
+          "ChangeType": "Addition",
+          "Description": "Added the [mutualTLSSecurityScheme](https://learn.microsoft.com/en-us/graph/api/resources/mutualTLSSecurityScheme?view=graph-rest-beta) resource.",
+          "Target": "mutualTLSSecurityScheme"
+        },
+        {
+          "Id": "8b5e57c5-6231-4cb0-a647-ce71f3c4dc78",
+          "ApiChange": "Resource",
+          "ChangedApiName": "oAuth2SecurityScheme",
+          "ChangeType": "Addition",
+          "Description": "Added the [oAuth2SecurityScheme](https://learn.microsoft.com/en-us/graph/api/resources/oAuth2SecurityScheme?view=graph-rest-beta) resource.",
+          "Target": "oAuth2SecurityScheme"
+        },
+        {
+          "Id": "8b5e57c5-6231-4cb0-a647-ce71f3c4dc78",
+          "ApiChange": "Resource",
+          "ChangedApiName": "oAuthFlow",
+          "ChangeType": "Addition",
+          "Description": "Added the [oAuthFlow](https://learn.microsoft.com/en-us/graph/api/resources/oAuthFlow?view=graph-rest-beta) resource.",
+          "Target": "oAuthFlow"
+        },
+        {
+          "Id": "8b5e57c5-6231-4cb0-a647-ce71f3c4dc78",
+          "ApiChange": "Resource",
+          "ChangedApiName": "oAuthFlows",
+          "ChangeType": "Addition",
+          "Description": "Added the [oAuthFlows](https://learn.microsoft.com/en-us/graph/api/resources/oAuthFlows?view=graph-rest-beta) resource.",
+          "Target": "oAuthFlows"
+        },
+        {
+          "Id": "8b5e57c5-6231-4cb0-a647-ce71f3c4dc78",
+          "ApiChange": "Resource",
+          "ChangedApiName": "oAuthScopeDictionary",
+          "ChangeType": "Addition",
+          "Description": "Added the [oAuthScopeDictionary](https://learn.microsoft.com/en-us/graph/api/resources/oAuthScopeDictionary?view=graph-rest-beta) resource.",
+          "Target": "oAuthScopeDictionary"
+        },
+        {
+          "Id": "8b5e57c5-6231-4cb0-a647-ce71f3c4dc78",
+          "ApiChange": "Resource",
+          "ChangedApiName": "openIdConnectSecurityScheme",
+          "ChangeType": "Addition",
+          "Description": "Added the [openIdConnectSecurityScheme](https://learn.microsoft.com/en-us/graph/api/resources/openIdConnectSecurityScheme?view=graph-rest-beta) resource.",
+          "Target": "openIdConnectSecurityScheme"
+        },
+        {
+          "Id": "8b5e57c5-6231-4cb0-a647-ce71f3c4dc78",
+          "ApiChange": "Resource",
+          "ChangedApiName": "securityRequirement",
+          "ChangeType": "Addition",
+          "Description": "Added the [securityRequirement](https://learn.microsoft.com/en-us/graph/api/resources/securityRequirement?view=graph-rest-beta) resource.",
+          "Target": "securityRequirement"
+        },
+        {
+          "Id": "8b5e57c5-6231-4cb0-a647-ce71f3c4dc78",
+          "ApiChange": "Resource",
+          "ChangedApiName": "securityScheme",
+          "ChangeType": "Addition",
+          "Description": "Added the [securityScheme](https://learn.microsoft.com/en-us/graph/api/resources/securityScheme?view=graph-rest-beta) resource.",
+          "Target": "securityScheme"
+        },
+        {
+          "Id": "8b5e57c5-6231-4cb0-a647-ce71f3c4dc78",
+          "ApiChange": "Resource",
+          "ChangedApiName": "securitySchemes",
+          "ChangeType": "Addition",
+          "Description": "Added the [securitySchemes](https://learn.microsoft.com/en-us/graph/api/resources/securitySchemes?view=graph-rest-beta) resource.",
+          "Target": "securitySchemes"
+        },
+        {
+          "Id": "8b5e57c5-6231-4cb0-a647-ce71f3c4dc78",
+          "ApiChange": "Resource",
+          "ChangedApiName": "agentCardManifest",
+          "ChangeType": "Addition",
+          "Description": "Added the [agentCardManifest](https://learn.microsoft.com/en-us/graph/api/resources/agentCardManifest?view=graph-rest-beta) resource.",
+          "Target": "agentCardManifest"
+        },
+        {
+          "Id": "8b5e57c5-6231-4cb0-a647-ce71f3c4dc78",
+          "ApiChange": "Resource",
+          "ChangedApiName": "agentCollection",
+          "ChangeType": "Addition",
+          "Description": "Added the [agentCollection](https://learn.microsoft.com/en-us/graph/api/resources/agentCollection?view=graph-rest-beta) resource.",
+          "Target": "agentCollection"
+        },
+        {
+          "Id": "8b5e57c5-6231-4cb0-a647-ce71f3c4dc78",
+          "ApiChange": "Resource",
+          "ChangedApiName": "agentInstance",
+          "ChangeType": "Addition",
+          "Description": "Added the [agentInstance](https://learn.microsoft.com/en-us/graph/api/resources/agentInstance?view=graph-rest-beta) resource.",
+          "Target": "agentInstance"
+        },
+        {
+          "Id": "8b5e57c5-6231-4cb0-a647-ce71f3c4dc78",
+          "ApiChange": "Resource",
+          "ChangedApiName": "agentRegistry",
+          "ChangeType": "Addition",
+          "Description": "Added the [agentRegistry](https://learn.microsoft.com/en-us/graph/api/resources/agentRegistry?view=graph-rest-beta) resource.",
+          "Target": "agentRegistry"
+        }
+      ],
+      "Id": "8b5e57c5-6231-4cb0-a647-ce71f3c4dc78",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-11-17T17:38:10.4694969Z",
+      "WorkloadArea": "Agents",
+      "SubArea": ""
+    }
+  ]
+}

@@ -69,7 +69,7 @@ The following example shows a request.
   "name": "lifecycleworkflows_list_deleteditemcontainer"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/deletedItems/workflows
 ```
 
@@ -156,7 +156,7 @@ The following example shows a request.
   "name": "lifecycleworkflows_list_deleteditemcontainer_select"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/deletedItems/workflows?$select=id,category,displayName,description,version&$filter=category eq 'leaver'
 ```
 

@@ -26,6 +26,10 @@ items:
     href: ../../api/driveitem-search.md
   - name: Get special folder
     href: ../../api/drive-get-specialfolder.md
+  - name: Recent (deprecated)
+    href: ../../api/drive-recent.md
+  - name: Shared with me (deprecated)
+    href: ../../api/drive-sharedwithme.md
 - name: Drive item
   items:
   - name: Drive item
@@ -370,6 +374,32 @@ items:
     items:
     - name: SharePoint migration container info
       href: ../../resources/sharepointmigrationcontainerinfo.md
+- name: SharePoint cross-tenant migration (preview)
+  items:
+  - name: Overview
+    href: ../../resources/sharepoint-crossorganization-api-overview.md
+  - name: SharePoint group identity mapping
+    items:
+    - name: SharePoint group identity mapping
+      href: ../../resources/sharepointgroupidentitymapping.md
+    - name: Get
+      href: ../../api/sharepointgroupidentitymapping-get.md
+    - name: Update
+      href: ../../api/sharepointgroupidentitymapping-update.md
+  - name: SharePoint user identity mapping
+    items:
+    - name: SharePoint user identity mapping
+      href: ../../resources/sharepointuseridentitymapping.md
+    - name: Get
+      href: ../../api/sharepointuseridentitymapping-get.md
+    - name: Update
+      href: ../../api/sharepointuseridentitymapping-update.md
+  - name: Complex types
+    items:
+    - name: SharePoint identity mapping group migration data
+      href: ../../resources/sharepointidentitymappinggroupmigrationdata.md
+    - name: SharePoint identity mapping user migration data
+      href: ../../resources/sharepointidentitymappingusermigrationdata.md
 - name: Complex types
   items:
   - name: File storage container type agent settings

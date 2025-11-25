@@ -69,7 +69,7 @@ The following example shows a request.
   "name": "lifecycleworkflows_list_taskdefinition"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/taskDefinitions
 ```
 
@@ -661,7 +661,7 @@ The following example shows a request. Because the **category** is a flagged enu
   "name": "lifecycleworkflows_list_taskdefinition_filter_category"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/taskDefinitions?$filter=category has 'joiner'
 ```
 

@@ -62,7 +62,7 @@ If successful, this method returns a `200 OK` response code and an [appConsentRe
   "name": "get_appconsentrequest"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/identityGovernance/appConsent/appConsentRequests/7322e5f3-0f15-4eb8-9e82-2029e8622f5d
 ```
 

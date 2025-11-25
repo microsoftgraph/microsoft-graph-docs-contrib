@@ -64,7 +64,7 @@ The following example shows a request.
   "name": "get_securityscorehistory"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/security/partner/securityScore/history/{securityScoreHistoryId}
 ```
 

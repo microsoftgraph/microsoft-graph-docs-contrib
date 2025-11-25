@@ -65,7 +65,7 @@ The following example gets the resource namespace with the identifier of `micros
   "sampleKeys": ["microsoft.aad.b2c"]
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/roleManagement/directory/resourceNamespaces/microsoft.aad.b2c
 ```
 

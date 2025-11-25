@@ -65,7 +65,7 @@ The following example shows a request.
   "name": "get_bookmark"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/search/bookmarks/733b26d5-af76-4eea-ac69-1a0ce8716897
 ```
 

@@ -70,7 +70,7 @@ The following example shows a request.
   "name": "virtualeventwebinarthis.getbyuseridandrole"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/solutions/virtualEvents/webinars/getByUserIdAndRole(userId='b7ef013a-c73c-4ec7-8ccb-e56290f45f68', role='organizer')
 ```
 

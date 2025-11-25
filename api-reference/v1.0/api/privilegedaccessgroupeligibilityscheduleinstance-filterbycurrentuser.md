@@ -64,7 +64,7 @@ The following example shows a request.
   "name": "privilegedaccessgroupeligibilityscheduleinstancethis.filterbycurrentuser"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/identityGovernance/privilegedAccess/group/eligibilityScheduleInstances/filterByCurrentUser(on='principal')
 ```
 

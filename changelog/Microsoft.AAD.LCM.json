@@ -1183,7 +1183,7 @@
     {
       "ChangeList": [
         {
-          "Id": "4688a713-d9d5-4db3-9894-aafdcbe17694",
+          "Id": "d53f0bcf-c527-4b0f-9705-430fc5fb0dc3",
           "ApiChange": "Enumeration",
           "ChangedApiName": "activationTaskScopeType",
           "ChangeType": "Addition",
@@ -1191,13 +1191,145 @@
           "Target": "activationTaskScopeType"
         },
         {
-          "Id": "4688a713-d9d5-4db3-9894-aafdcbe17694",
+          "Id": "d53f0bcf-c527-4b0f-9705-430fc5fb0dc3",
           "ApiChange": "Enumeration",
           "ChangedApiName": "activationUserScopeType",
           "ChangeType": "Addition",
           "Description": "Added the **activationUserScopeType** enumeration type.",
           "Target": "activationUserScopeType"
         },
+        {
+          "Id": "d53f0bcf-c527-4b0f-9705-430fc5fb0dc3",
+          "ApiChange": "Member",
+          "ChangedApiName": "activatedWithScope",
+          "ChangeType": "Addition",
+          "Description": "Added the `activatedWithScope` member to the **workflowExecutionType** enumeration.",
+          "Target": "workflowExecutionType"
+        },
+        {
+          "Id": "d53f0bcf-c527-4b0f-9705-430fc5fb0dc3",
+          "ApiChange": "Resource",
+          "ChangedApiName": "activateGroupScope",
+          "ChangeType": "Addition",
+          "Description": "Added the [activateGroupScope](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-activateGroupScope?view=graph-rest-1.0) resource.",
+          "Target": "activateGroupScope"
+        },
+        {
+          "Id": "d53f0bcf-c527-4b0f-9705-430fc5fb0dc3",
+          "ApiChange": "Resource",
+          "ChangedApiName": "activateProcessingResultScope",
+          "ChangeType": "Addition",
+          "Description": "Added the [activateProcessingResultScope](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-activateProcessingResultScope?view=graph-rest-1.0) resource.",
+          "Target": "activateProcessingResultScope"
+        },
+        {
+          "Id": "d53f0bcf-c527-4b0f-9705-430fc5fb0dc3",
+          "ApiChange": "Resource",
+          "ChangedApiName": "activateRunScope",
+          "ChangeType": "Addition",
+          "Description": "Added the [activateRunScope](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-activateRunScope?view=graph-rest-1.0) resource.",
+          "Target": "activateRunScope"
+        },
+        {
+          "Id": "d53f0bcf-c527-4b0f-9705-430fc5fb0dc3",
+          "ApiChange": "Resource",
+          "ChangedApiName": "activateUserScope",
+          "ChangeType": "Addition",
+          "Description": "Added the [activateUserScope](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-activateUserScope?view=graph-rest-1.0) resource.",
+          "Target": "activateUserScope"
+        },
+        {
+          "Id": "d53f0bcf-c527-4b0f-9705-430fc5fb0dc3",
+          "ApiChange": "Resource",
+          "ChangedApiName": "activationScope",
+          "ChangeType": "Addition",
+          "Description": "Added the [activationScope](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-activationScope?view=graph-rest-1.0) resource.",
+          "Target": "activationScope"
+        },
+        {
+          "Id": "d53f0bcf-c527-4b0f-9705-430fc5fb0dc3",
+          "ApiChange": "Property",
+          "ChangedApiName": "activatedOnScope",
+          "ChangeType": "Addition",
+          "Description": "Added the **activatedOnScope** property to the [run](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-run?view=graph-rest-1.0) resource.",
+          "Target": "run"
+        },
+        {
+          "Id": "d53f0bcf-c527-4b0f-9705-430fc5fb0dc3",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "reprocessedRuns",
+          "ChangeType": "Addition",
+          "Description": "Added the **reprocessedRuns** relationship to the [run](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-run?view=graph-rest-1.0) resource.",
+          "Target": "run"
+        },
+        {
+          "Id": "d53f0bcf-c527-4b0f-9705-430fc5fb0dc3",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "reprocessedRuns",
+          "ChangeType": "Addition",
+          "Description": "Added the **reprocessedRuns** relationship to the [userProcessingResult](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-userProcessingResult?view=graph-rest-1.0) resource.",
+          "Target": "userProcessingResult"
+        },
+        {
+          "Id": "d53f0bcf-c527-4b0f-9705-430fc5fb0dc3",
+          "ApiChange": "Method",
+          "ChangedApiName": "activateWithScope",
+          "ChangeType": "Addition",
+          "Description": "Added the [activateWithScope](https://learn.microsoft.com/en-us/graph/api/identityGovernance-workflow-activateWithScope?view=graph-rest-1.0) method to the [workflow](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-workflow?view=graph-rest-1.0) resource.",
+          "Target": "workflow"
+        }
+      ],
+      "Id": "d53f0bcf-c527-4b0f-9705-430fc5fb0dc3",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-11-10T17:19:41.0532923Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "07fd25a4-9a54-44e0-9c8e-9ca34e24bc1f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "activationScope",
+          "ChangeType": "Addition",
+          "Description": "Added the [activationScope](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-activationScope?view=graph-rest-beta) resource.",
+          "Target": "activationScope"
+        },
+	{
+          "Id": "07fd25a4-9a54-44e0-9c8e-9ca34e24bc1f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "activateGroupScope",
+          "ChangeType": "Addition",
+          "Description": "Added the [activateGroupScope](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-activateGroupScope?view=graph-rest-beta) resource.",
+          "Target": "activateGroupScope"
+        },
+        {
+          "Id": "07fd25a4-9a54-44e0-9c8e-9ca34e24bc1f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "activateProcessingResultScope",
+          "ChangeType": "Addition",
+          "Description": "Added the [activateProcessingResultScope](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-activateProcessingResultScope?view=graph-rest-beta) resource.",
+          "Target": "activateProcessingResultScope"
+        },
+        {
+          "Id": "07fd25a4-9a54-44e0-9c8e-9ca34e24bc1f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "activateRunScope",
+          "ChangeType": "Addition",
+          "Description": "Added the [activateRunScope](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-activateRunScope?view=graph-rest-beta) resource.",
+          "Target": "activateRunScope"
+        }
+  ],
+      "Id": "07fd25a4-9a54-44e0-9c8e-9ca34e24bc1f",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-11-10T17:20:41.0433933Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
         {
           "Id": "4688a713-d9d5-4db3-9894-aafdcbe17694",
           "ApiChange": "Property",
@@ -1243,6 +1375,24 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2025-09-19T18:43:33.810421Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "b9849e63-3834-4a35-a4a1-15d7d1980bad",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "administrationScopeTargets",
+          "ChangeType": "Addition",
+          "Description": "Added the **administrationScopeTargets** relationship to the [workflowBase](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-workflowBase?view=graph-rest-beta) resource.",
+          "Target": "workflowBase"
+        }
+      ],
+      "Id": "b9849e63-3834-4a35-a4a1-15d7d1980bad",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-11-24T17:17:39.0761212Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Governance"
     },

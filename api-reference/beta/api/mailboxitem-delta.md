@@ -87,7 +87,7 @@ For an example that shows a round of delta query calls, see [Get incremental cha
   "sampleKeys": ["MBX:e0643f21@a7809c93", "AAMkAGUwNjQ4ZyTAAA="]
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/admin/exchange/mailboxes/MBX:e0643f21@a7809c93/folders/AAMkAGUwNjQ4ZyTAAA=/items/delta
 Prefer: odata.maxpagesize=2
 ```

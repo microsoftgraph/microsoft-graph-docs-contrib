@@ -63,7 +63,7 @@ If successful, this function returns a `200 OK` response code and a [accessRevie
   "name": "accessreviewstage_filterbycurrentuser"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitions/08531375-eff6-4e21-b1a8-de0eb37ec913/instances/86889534-b102-4226-bfce-0c2aeee845df/stages/filterByCurrentUser(on='reviewer')
 ```
 

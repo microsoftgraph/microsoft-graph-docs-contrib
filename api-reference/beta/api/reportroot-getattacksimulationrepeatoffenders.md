@@ -59,7 +59,7 @@ If successful, this function returns a `200 OK` response code and a [attackSimul
   "name": "reportroot_getattacksimulationrepeatoffenders"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/reports/getAttackSimulationRepeatOffenders
 ```
 

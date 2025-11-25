@@ -59,7 +59,7 @@ The following example shows a request.
   "name": "get_virtualmachinewithawsstoragebucketaccessfinding"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/MSxWaXJ0dWFsTWFjaGluZVdpdGhBd3NTdG9yYWdlQnVja2V0QWNjZXNzRmluZGluZyw0MzUwMg/microsoft.graph.virtualMachineWithAwsStorageBucketAccessFinding
 ```
 

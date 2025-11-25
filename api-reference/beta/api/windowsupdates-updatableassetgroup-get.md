@@ -60,7 +60,7 @@ If successful, this method returns a `200 OK` response code and an [updatableAss
   "name": "get_updatableassetgroup"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/admin/windows/updates/updatableAssets/5c55730b-730b-5c55-0b73-555c0b73555c
 ```
 

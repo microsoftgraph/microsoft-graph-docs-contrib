@@ -58,7 +58,7 @@ If successful, this method returns a `200 OK` response code and a [managementTem
   "name": "get_managementtemplate"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/managementTemplates/{managementTemplateId}
 ```
 

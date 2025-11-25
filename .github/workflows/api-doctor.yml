@@ -1,0 +1,47 @@
+name: API Doctor validation
+# cSpell:ignore apidoctor longpaths apidoc
+
+on:
+   workflow_dispatch
+#  pull_request:
+#    branches:
+#    - main
+#    - live
+#    paths:
+#    - api-reference/**
+
+permissions:
+  contents: read
+
+env:
+  APIDOCTOR_VERSION: 1.2.2312.152
+
+jobs:
+  validate-docs:
+    name: Validate reference docs
+    # Must be Windows because NuGet-published ApiDoctor
+    # is Windows only.
+    runs-on: windows-latest
+    steps:
+    # Also required by Windows
+    - run: git config --global core.longpaths true
+    - name: Checkout docs repo
+      uses: actions/checkout@v4
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v5
+      with:
+        dotnet-version: |
+          6.x
+          8.x
+    - name: Install NuGet
+      uses: NuGet/setup-nuget@v2
+    - name: Install ApiDoctor from NuGet
+      run: nuget install ApiDoctor -Version $Env:APIDOCTOR_VERSION -OutputDirectory ./nuget -NonInteractive -DisableParallelProcessing
+    - name: Validate v1.0 docs
+      run: |
+        $apidoc = ".\nuget\ApiDoctor." + $Env:APIDOCTOR_VERSION + "\tools\apidoc.exe"
+        & $apidoc check-all --path .\api-reference\v1.0 --ignore-warnings
+    - name: Validate beta docs
+      run: |
+        $apidoc = ".\nuget\ApiDoctor." + $Env:APIDOCTOR_VERSION + "\tools\apidoc.exe"
+        & $apidoc check-all --path .\api-reference\beta --ignore-warnings

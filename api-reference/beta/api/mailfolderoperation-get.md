@@ -66,7 +66,7 @@ The following example shows a request.
   "sampleKeys": ["AAMkAGVmMDEzM", "a384ae19-4f06-3576-81fc-795707bb498b"]
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzM/operations/a384ae19-4f06-3576-81fc-795707bb498b
 ```
 
