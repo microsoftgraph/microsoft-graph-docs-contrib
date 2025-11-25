@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 DELETE /security/labels/citations/{citationTemplateId}
 DELETE /security/labels/retentionLabels/{retentionLabelId}/descriptors/citationTemplate
 ```
@@ -56,7 +56,7 @@ The following example shows a request.
   "name": "delete_citationtemplate"
 }
 -->
-``` http
+```http
 DELETE https://graph.microsoft.com/beta/security/labels/citations/f44dkle55-6baf-44ff-5dcc-08d8de97b1d5
 
 # [C#](#tab/csharp)
@@ -101,7 +101,7 @@ Here's an example of the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 

@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 DELETE /sites/{sitesId}/permissions/{permissionId}
 ```
 
@@ -57,7 +57,7 @@ The following example shows a request.
   "name": "delete_permission_2"
 }
 -->
-``` http
+```http
 DELETE https://graph.microsoft.com/beta/sites/f2d90359-865b-4b6c-8848-d2722dd630e5/permissions/2
 ```
 

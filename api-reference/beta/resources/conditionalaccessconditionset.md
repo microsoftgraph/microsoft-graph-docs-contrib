@@ -21,6 +21,7 @@ Represents the type of conditions that govern when the policy applies.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
+|agentIdRiskLevels|conditionalAccessAgentIdRiskLevels| Agent identity risk levels included in the policy. Possible values are: `low`, `medium`, `high`, `unknownFutureValue`. This enumeration is multivalued.|
 |applications|[conditionalAccessApplications](conditionalaccessapplications.md)| Applications and user actions included in and excluded from the policy. Required. |
 |authenticationFlows|[conditionalAccessAuthenticationFlows](conditionalaccessauthenticationflows.md)| Authentication flows included in the policy scope. For more information, see [Conditional Access: Authentication flows](/entra/identity/conditional-access/concept-authentication-flows). |
 |users|[conditionalAccessUsers](conditionalaccessusers.md)| Users, groups, and roles included in and excluded from the policy. Either **users** or **clientApplications** is required. |
@@ -34,6 +35,7 @@ Represents the type of conditions that govern when the policy applies.
 |signInRiskLevels|riskLevel collection| Sign-in risk levels included in the policy. Possible values are: `low`, `medium`, `high`, `hidden`, `none`, `unknownFutureValue`. Required.|
 |userRiskLevels|riskLevel collection| User risk levels included in the policy. Possible values are: `low`, `medium`, `high`, `hidden`, `none`, `unknownFutureValue`. Required.|
 |insiderRiskLevels|conditionalAccessInsiderRiskLevels| Insider risk levels included in the policy. The possible values are: `minor`, `moderate`, `elevated`, `unknownFutureValue`.|
+
 
 ## Relationships
 
@@ -71,8 +73,10 @@ The following JSON representation shows the resource type.
   "platforms": {"@odata.type": "microsoft.graph.conditionalAccessPlatforms"},
   "servicePrincipalRiskLevels": ["String"],
   "signInRiskLevels": ["String"],
+  "userRiskLevels": ["String"],
   "authenticationFlows": {"@odata.type": "microsoft.graph.conditionalAccessAuthenticationFlows"},
-  "insiderRiskLevels": "String"
+  "insiderRiskLevels": "String",
+  "agentIdRiskLevels": "String"
 }
 ```
 

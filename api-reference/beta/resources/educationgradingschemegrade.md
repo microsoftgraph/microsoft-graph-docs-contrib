@@ -20,7 +20,7 @@ Represents an individual grade range that contributes to a grading scheme.
 |Property|Type|Description|
 |:---|:---|:---|
 |defaultPercentage|Int32|The midpoint of the grade range. |
-|displayName|String|The name of the grading scheme.|
+|displayName|String|The name of this individual grade.|
 |minPercentage|Int32|The minimum percentage of the total points needed to achieve this grade.|
 
 ## Relationships
@@ -36,9 +36,8 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.educationGradingSchemeGrade",
+  "defaultPercentage": "Int32",
   "displayName": "String",
-  "minPercentage": "Int32",
-  "defaultPercentage": "Int32"
+  "minPercentage": "Int32"
 }
 ```
-

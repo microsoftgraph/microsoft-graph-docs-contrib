@@ -38,7 +38,7 @@ Retrieve details of your own software OATH token authentication method.
 [!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
 
 <!-- { "blockType": "ignored" } -->
-``` http
+```http
 GET /me/authentication/softwareOathMethods/{id}
 ```
 
@@ -47,7 +47,7 @@ Retrieve details of your own or another user's software OATH token authenticatio
 [!INCLUDE [authentication-methods-apis-users-selfservice](../includes/authentication-methods-apis-users-selfservice.md)]
 
 <!-- { "blockType": "ignored" } -->
-``` http
+```http
 GET /users/{id | userPrincipalName}/authentication/softwareOathMethods/{id}
 ```
 
@@ -73,7 +73,7 @@ If successful, this method returns a `200 OK` response code and a [softwareOathA
   "name": "get_softwareoathauthenticationmethod"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/authentication/softwareOathMethods/b172893e-893e-b172-3e89-72b13e8972b1
 ```
 
@@ -115,7 +115,7 @@ GET https://graph.microsoft.com/beta/me/authentication/softwareOathMethods/b1728
   "@odata.type": "microsoft.graph.softwareOathAuthenticationMethod"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -123,7 +123,8 @@ Content-Type: application/json
   "value": {
     "@odata.type": "#microsoft.graph.softwareOathAuthenticationMethod",
     "id": "b172893e-893e-b172-3e89-72b13e8972b1",
-    "secretKey": "String"
+    "secretKey": "String",
+    "lastUsedDateTime": "2022-11-06T23:16:12Z"
   }
 }
 ```

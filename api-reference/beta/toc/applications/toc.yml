@@ -225,6 +225,14 @@ items:
       href: ../../api/onpremisespublishingprofile-get.md
     - name: Update
       href: ../../api/onpremisespublishingprofile-update.md
+  - name: Private access sensor
+    items:
+    - name: Private access sensor
+      href: ../../resources/privateaccesssensor.md
+    - name: List
+      href: ../../api/onpremisespublishingprofile-list-sensors.md
+    - name: Get
+      href: ../../api/privateaccesssensor-get.md
   - name: Published resource
     items:
     - name: Published resource

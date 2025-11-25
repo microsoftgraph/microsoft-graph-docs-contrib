@@ -30,7 +30,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /admin/serviceAnnouncement/messages/{serviceUpdateMessageId}/attachments
 ```
 
@@ -62,7 +62,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
   "sampleKeys" : ["MC54091"]
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/admin/serviceAnnouncement/messages/MC54091/attachments
 ```
 
@@ -104,7 +104,7 @@ GET https://graph.microsoft.com/beta/admin/serviceAnnouncement/messages/MC54091/
   "@odata.type": "Collection(microsoft.graph.serviceAnnouncementAttachment)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -142,7 +142,7 @@ Content-Type: application/json
   "sampleKeys" : ["MC54091"]
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/admin/serviceAnnouncement/messages/MC54091/attachmentsArchive
 ```
 
@@ -184,7 +184,7 @@ GET https://graph.microsoft.com/beta/admin/serviceAnnouncement/messages/MC54091/
   "@odata.type": "Edm.Stream"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

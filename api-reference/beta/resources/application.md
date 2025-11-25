@@ -5,7 +5,7 @@ ms.localizationpriority: high
 author: "Jackson-Woods"
 ms.subservice: "entra-applications"
 doc_type: resourcePageType
-ms.date: 11/26/2024
+ms.date: 11/10/2025
 ms.custom: sfi-ropc-nochange
 ---
 
@@ -21,11 +21,13 @@ Inherits from [directoryObject](directoryobject.md).
 
 This resource is an open type that allows other properties to be passed in.
 
+The [agentIdentityBlueprint](../resources/agentidentityblueprint.md) resource inherits from this object.
+
 This resource supports:
 
 - Adding your own data to custom properties as [extensions](/graph/extensibility-overview).
 - Using [delta query](/graph/delta-query-overview) to track incremental additions, deletions, and updates, by providing a [delta](../api/user-delta.md) function.
-- Alternate key syntax.  The `appId` property is a supported alternate key.  For more information, see [Get application](../api/application-get.md).
+- Alternate key syntax. The **appId** property is a supported alternate key.  For more information, see [Get application](../api/application-get.md).
 
 ## Methods
 
@@ -71,6 +73,7 @@ This resource supports:
 | appRoles | [appRole](approle.md) collection | The collection of roles defined for the application. With [app role assignments](approleassignment.md), these roles can be assigned to users, groups, or service principals associated with other applications. Not nullable. |
 |authenticationBehaviors|[authenticationBehaviors](../resources/authenticationbehaviors.md)| The collection of breaking change behaviors related to token issuance that are configured for the application. Authentication behaviors are unset by default (`null`) and must be explicitly enabled or disabled. Nullable. Returned only on `$select`. <br/><br/> For more information about authentication behaviors, see [Manage application authenticationBehaviors to avoid unverified use of email claims for user identification or authorization](/graph/applications-authenticationbehaviors).|
 |certification|[certification](certification.md)|Specifies the certification status of the application.|
+|createdByAppId|String|The globally unique **appId** (called **Application (client) ID** on the Microsoft Entra admin center) of the application that created this application. Set internally by Microsoft Entra ID. Read-only.|
 | createdDateTime | DateTimeOffset | The date and time the application was registered. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only. <br><br> Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, and `eq` on `null` values) and `$orderby`. |
 |defaultRedirectUri|String|The default redirect URI. If specified and there's no explicit redirect URI in the sign-in request for SAML and OIDC flows, Microsoft Entra ID sends the token to this redirect URI. Microsoft Entra ID also sends the token to this default URI in SAML IdP-initiated single sign-on. The value must match one of the configured redirect URIs for the application.|
 | deletedDateTime | DateTimeOffset | The date and time the application was deleted. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only. |
@@ -163,6 +166,7 @@ The following JSON representation shows the resource type.
   "authenticationBehaviors": {"@odata.type": "microsoft.graph.authenticationBehaviors"},
   "certification": {"@odata.type": "microsoft.graph.certification"},
   "createdDateTime": "String (timestamp)",
+  "createdByAppId": "String",
   "deletedDateTime": "String (timestamp)",
   "disabledByMicrosoftStatus": "String",
   "displayName": "String",

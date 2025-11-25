@@ -1,29 +1,35 @@
----
+﻿---
 title: "policyRoot resource type"
 description: "Resource type exposing navigation properties for the policies singleton."
-author: "dkershaw10"
+author: "ashyasingh"
+ms.date: 08/11/2025
 ms.localizationpriority: medium
-ms.subservice: "non-product-specific"
+ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
-ms.date: 10/18/2024
 ---
 
 # policyRoot resource type
 
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Resource type exposing navigation properties for the policies singleton.
 
+Inherits from [entity](../resources/entity.md).
+
+
 ## Methods
-None
+None.
 
 ## Properties
-None
+| Property     | Type        | Description |
+|:-------------|:------------|:------------|
+|id|String| The identifier for a policy singleton. Inherits from [entity](../resources/entity.md).|
 
 ## Relationships
-
-| Relationship                              | Type                                                                                                      | Description                                                                                                                                                          |
-|:------------------------------------------|:----------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|Relationship|Type|Description|
+|:---|:---|:---|
 | accessReviewPolicy                        | [accessReviewPolicy](accessreviewpolicy.md)                                                               | The policy that contains directory-level access review settings.                                                                                                     |
 | activityBasedTimeoutPolicies              | [activityBasedTimeoutPolicy](activitybasedtimeoutpolicy.md) collection                                    | The policy that controls the idle time-out for web sessions for applications.                                                                                        |
 | adminConsentRequestPolicy                 | [adminConsentRequestPolicy](adminconsentrequestpolicy.md)                                                 | The policy by which consent requests are created and managed for the entire tenant.                                                                                  |
@@ -32,6 +38,7 @@ None
 | authenticationMethodsPolicy               | [authenticationMethodsPolicy](authenticationmethodspolicy.md)                                             | The authentication methods and the users that are allowed to use them to sign in and perform multifactor authentication (MFA) in Microsoft Entra ID. |
 | authenticationStrengthPolicies | [authenticationStrengthPolicy](authenticationstrengthpolicy.md) collection                                           | The authentication method combinations that are to be used in scenarios defined by Microsoft Entra Conditional Access.                                                        |
 | authorizationPolicy                       | [authorizationPolicy](authorizationpolicy.md) collection                                                  | The policy that controls Microsoft Entra authorization settings.                                                                                                            |
+| b2bManagementPolicies                     | [b2bManagementPolicy](b2bmanagementpolicy.md) collection                                                  | The policy to manage Microsoft Entra B2B features in Microsoft Entra External ID for workforce tenants.                                                                                                                                          |
 | b2cAuthenticationMethodsPolicy            | [b2cAuthenticationMethodsPolicy](b2cauthenticationmethodspolicy.md)                                       | The Azure AD B2C policies that define how end users register via local accounts.                                                                                     |
 | claimsMappingPolicies                     | [claimsMappingPolicy](claimsmappingpolicy.md) collection                                                  | The claim-mapping policies for WS-Fed, SAML, OAuth 2.0, and OpenID Connect protocols, for tokens issued to a specific application.                                   |
 | conditionalAccessPolicies                 | [conditionalAccessPolicy](conditionalaccesspolicy.md)                                                     | The custom rules that define an access scenario.                                                                                                                     |
@@ -58,11 +65,14 @@ The following JSON representation shows the resource type.
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.policyRoot",
+  "baseType": "microsoft.graph.entity",
   "openType": false
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.policyRoot"
+  "@odata.type": "#microsoft.graph.policyRoot",
+  "id": "String (identifier)"
 }
 ```
+

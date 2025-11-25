@@ -37,7 +37,7 @@ By default, Global Administrator and other administrator roles do not have permi
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /directory/customSecurityAttributeDefinitions/{customSecurityAttributeDefinitionId}/allowedValues/{allowedValueId}
 ```
 
@@ -76,7 +76,7 @@ The following example gets the properties of a predefined value for a custom sec
   "sampleKeys": ["Engineering_Project", "Alpine"]
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/directory/customSecurityAttributeDefinitions/Engineering_Project/allowedValues/Alpine
 ```
 
@@ -120,7 +120,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.allowedValue"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

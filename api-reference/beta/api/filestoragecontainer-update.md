@@ -1,6 +1,5 @@
 ---
 title: "Update fileStorageContainer"
-
 description: "Update the properties of a fileStorageContainer object."
 author: "tonchan-msft"
 ms.localizationpriority: medium
@@ -35,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PATCH /storage/fileStorage/containers/{containerId}
 ```
 
@@ -55,13 +54,14 @@ If successful, this method returns a `200 OK` response code and an updated [file
 
 ### Request
 The following example shows a request.
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_filestoragecontainer"
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z
 Content-Type: application/json
 
@@ -69,7 +69,8 @@ Content-Type: application/json
   "displayName": "Updated Name",
   "description": "Updated Description",
   "settings": {
-    "isOcrEnabled": false
+    "isOcrEnabled": false,
+    "itemDefaultSensitivityLabelId": "3d8789ae-7375-4ded-8eeb-d6bc226e42fb"
   }
 }
 ```
@@ -109,7 +110,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.fileStorageContainer"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -124,7 +125,8 @@ Content-type: application/json
   "settings": {
     "isOcrEnabled": false,
     "itemMajorVersionLimit": 50,
-    "isItemVersioningEnabled": true
+    "isItemVersioningEnabled": true,
+    "itemDefaultSensitivityLabelId": "3d8789ae-7375-4ded-8eeb-d6bc226e42fb"
   }
 }
 ```

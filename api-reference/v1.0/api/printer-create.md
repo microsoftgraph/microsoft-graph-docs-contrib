@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /print/printers/create
 ```
 
@@ -69,7 +69,7 @@ You make a GET request to the linked URL to get the status of an ongoing printer
   "name": "printer_create"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/print/printers/create
 Content-Type: application/json
 
@@ -124,7 +124,7 @@ Content-Type: application/json
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 202 Accepted
 Operation-Location: https://graph.microsoft.com/v1.0/print/operations/f221760a-52e8-4c11-b8c5-5dfaef3a49db
 Retry-After: 5

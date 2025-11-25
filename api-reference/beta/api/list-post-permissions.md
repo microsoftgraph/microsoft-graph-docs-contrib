@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /sites/f2d90359-865b-4b6c-8848-d2722dd630e5/lists/1d702d60-503c-4924-abfd-028c65fc89ed/permissions
 ```
 
@@ -56,10 +56,25 @@ The following example shows a request.
 
 <!-- {
   "blockType": "request",
-  "name": "create_permission_from_"
+  "name": "list_post_permissions",
+  "sampleKeys": ["contoso.sharepoint.com,48f1898f-77d9-4a1b-bddc-1f49bb6dc134,7206fc09-e4af-48b3-8730-ed7321396d7a"]
 }
 -->
 
+```http
+POST https://graph.microsoft.com/beta/sites/contoso.sharepoint.com,48f1898f-77d9-4a1b-bddc-1f49bb6dc134,7206fc09-e4af-48b3-8730-ed7321396d7a/lists/44ca0d29-33d3-47c9-8f12-eb0c46e3c7ad/permissions
+Content-Type: application/json
+
+{
+  "grantedToV2": {
+    "application": {
+      "id": "89ea5c94-7736-4e25-95ad-3fa95f62b66e",
+      "displayName": "Contoso Time Manager App"
+    }
+  },
+  "roles": ["write"]
+}
+```
 ---
 
 ### Response
@@ -72,7 +87,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.permission"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 
@@ -82,22 +97,18 @@ Content-Type: application/json
   "roles": [
     "write"
   ],
-  "grantedToIdentities": [
-    {
-      "application": {
-        "id": "89ea5c94-7736-4e25-95ad-3fa95f62b66e",
-        "displayName": "Contoso Time Manager App"
-      }
+  "grantedTo": {
+    "application": {
+      "id": "89ea5c94-7736-4e25-95ad-3fa95f62b66e",
+      "displayName": "Contoso Time Manager App"
     }
-  ],
-  "grantedToIdentitiesV2": [
-    {
-      "application": {
-        "id": "89ea5c94-7736-4e25-95ad-3fa95f62b66e",
-        "displayName": "Contoso Time Manager App"
-      }
+  },
+  "grantedToV2": {
+    "application": {
+      "id": "89ea5c94-7736-4e25-95ad-3fa95f62b66e",
+      "displayName": "Contoso Time Manager App"
     }
-  ]
+  }
 }
 ```
 

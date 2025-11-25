@@ -26,7 +26,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /me/responsibilities
 POST /users/{id | userPrincipalName}/responsibilities
 ```
@@ -65,7 +65,7 @@ If successful, this method returns a `201 Created` response code and a [personRe
   "name": "create_personresponsibility_from_profile"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/me/responsibilities
 Content-Type: application/json
 
@@ -92,7 +92,7 @@ Content-Type: application/json
   "@odata.type": "microsoft.graph.personResponsibility"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 

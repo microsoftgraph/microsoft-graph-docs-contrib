@@ -1,11 +1,11 @@
 ---
 title: "settingSource resource type"
-description: "Not yet documented"
+description: "Intune Deviceconfig Settingsource Resources ."
 author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
-ms.date: 09/13/2024
+ms.date: 08/01/2024
 ---
 
 # settingSource resource type
@@ -14,14 +14,14 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Not yet documented
+
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Not yet documented|
-|displayName|String|Not yet documented|
-|sourceType|[settingSourceType](../resources/intune-deviceconfig-settingsourcetype.md)|Not yet documented. Possible values are: `deviceConfiguration`, `deviceIntent`.|
+|id|String||
+|displayName|String||
+|sourceType|[settingSourceType](../resources/intune-deviceconfig-settingsourcetype.md)|. Possible values are: `deviceConfiguration`, `deviceIntent`.|
 
 ## Relationships
 None

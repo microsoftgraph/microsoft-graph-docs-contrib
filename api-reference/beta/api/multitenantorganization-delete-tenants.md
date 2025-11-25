@@ -38,7 +38,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 DELETE /tenantRelationships/multiTenantOrganization/tenants/{tenantId}
 ```
 
@@ -66,7 +66,7 @@ The following example removes a tenant from a multi-tenant organization.
   "name": "delete_multitenantorganizationmember"
 }
 -->
-``` http
+```http
 DELETE https://graph.microsoft.com/beta/tenantRelationships/multiTenantOrganization/tenants/5036a0a0-a7a4-4933-9086-5dd54535dd6e
 ```
 
@@ -107,7 +107,7 @@ DELETE https://graph.microsoft.com/beta/tenantRelationships/multiTenantOrganizat
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 

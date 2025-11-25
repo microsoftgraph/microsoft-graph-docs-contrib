@@ -33,7 +33,7 @@ To retrieve the course activity list for a signed-in user:
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /me/employeeExperience/learningCourseActivities
 ```
 
@@ -43,7 +43,7 @@ To retrieve the course activity list for a user:
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /users/{user-id}/employeeExperience/learningCourseActivities
 ```
 
@@ -78,7 +78,7 @@ The following example shows how to retrieve all the course activities for a give
 }
 -->
 
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/7ba2228a-e020-11ec-9d64-0242ac120002/employeeExperience/learningCourseActivities
 ```
 
@@ -121,7 +121,7 @@ The following example shows the response.
 }
 -->
 
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /organization/{organizationId}/settings/contactInsights
 ```
 
@@ -58,7 +58,7 @@ The following example shows a request.
   "name": "get_insightssettingscontactrequest"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/organization/{organizationId}/settings/contactInsights
 ```
 
@@ -101,7 +101,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.insightsSettings",
   "name": "get_insightssettingscontactrequest"
 } -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

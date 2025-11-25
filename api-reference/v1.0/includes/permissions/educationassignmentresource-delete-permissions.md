@@ -8,5 +8,5 @@ ms.localizationpriority: medium
 |:---|:---|:---|
 |Delegated (work or school account)|EduAssignments.ReadWriteBasic|EduAssignments.ReadWrite|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|Not supported.|Not supported.|
+|Application|EduAssignments.ReadWriteBasic.All|EduAssignments.ReadWrite.All|
 

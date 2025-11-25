@@ -1775,6 +1775,58 @@
       "CreatedDateTime": "2025-09-04T21:21:47.9769966Z",
       "WorkloadArea": "Compliance",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "6277d224-ec34-4bd9-8466-45e30230ac03",
+          "ApiChange": "Member",
+          "ChangedApiName": "holdPolicySync",
+          "ChangeType": "Addition",
+          "Description": "Added the `holdPolicySync` member to the **caseAction** enumeration.",
+          "Target": "caseAction"
+        },
+        {
+          "Id": "6277d224-ec34-4bd9-8466-45e30230ac03",
+          "ApiChange": "Resource",
+          "ChangedApiName": "ediscoveryHoldPolicySyncOperation",
+          "ChangeType": "Addition",
+          "Description": "Added the [ediscoveryHoldPolicySyncOperation](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoveryHoldPolicySyncOperation?view=graph-rest-beta) resource.",
+          "Target": "ediscoveryHoldPolicySyncOperation"
+        }
+      ],
+      "Id": "6277d224-ec34-4bd9-8466-45e30230ac03",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-10-10T23:21:27.4853763Z",
+      "WorkloadArea": "Security",
+      "SubArea": "eDiscovery"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "473cf35f-a067-41ea-aded-175089d3bfdb",
+          "ApiChange": "Member",
+          "ChangedApiName": "holdPolicySync",
+          "ChangeType": "Addition",
+          "Description": "Added the `holdPolicySync` member to the **caseAction** enumeration.",
+          "Target": "caseAction"
+        },
+        {
+          "Id": "473cf35f-a067-41ea-aded-175089d3bfdb",
+          "ApiChange": "Resource",
+          "ChangedApiName": "ediscoveryHoldPolicySyncOperation",
+          "ChangeType": "Addition",
+          "Description": "Added the [ediscoveryHoldPolicySyncOperation](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoveryHoldPolicySyncOperation?view=graph-rest-1.0) resource.",
+          "Target": "ediscoveryHoldPolicySyncOperation"
+        }
+      ],
+      "Id": "473cf35f-a067-41ea-aded-175089d3bfdb",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-10-10T23:21:27.4857021Z",
+      "WorkloadArea": "Security",
+      "SubArea": "eDiscovery"
     }
   ]
 }

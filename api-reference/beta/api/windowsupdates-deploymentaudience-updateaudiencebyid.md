@@ -41,7 +41,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /admin/windows/updates/deployments/{deploymentId}/audience/updateAudienceById
 ```
 
@@ -81,7 +81,7 @@ If successful, this action returns a `202 Accepted` response code. It doesn't re
   "name": "deploymentaudience_updateaudiencebyid"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/admin/windows/updates/deployments/b5171742-1742-b517-4217-17b5421717b5/audience/updateAudienceById
 Content-Type: application/json
 
@@ -139,6 +139,6 @@ Content-Type: application/json
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 202 Accepted
 ```

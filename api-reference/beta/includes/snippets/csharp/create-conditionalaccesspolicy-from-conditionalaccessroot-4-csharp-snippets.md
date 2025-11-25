@@ -11,7 +11,7 @@ using Microsoft.Graph.Beta.Models;
 
 var requestBody = new ConditionalAccessPolicy
 {
-	DisplayName = "Require MFA to EXO from non-complaint devices.",
+	DisplayName = "Require MFA to EXO from non-compliant devices.",
 	State = ConditionalAccessPolicyState.Enabled,
 	Conditions = new ConditionalAccessConditionSet
 	{

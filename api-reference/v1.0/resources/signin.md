@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
 ms.date: 08/29/2024
+toc.title: Sign-in
 ---
 
 # signIn resource type

@@ -50,7 +50,7 @@ Get details of your own or another user's password authentication method.
 [!INCLUDE [authentication-methods-apis-users-selfservice](../includes/authentication-methods-apis-users-selfservice.md)]
 
 <!-- { "blockType": "ignored" } -->
-``` http
+```http
 GET /users/{id | userPrincipalName}/authentication/passwordMethods/{passwordMethods-id}
 ```
 
@@ -137,7 +137,8 @@ Content-type: application/json
 {
   "id": "28c10230-6103-485e-b985-444c60001490",
   "password": null,
-  "createdDateTime": null
+  "createdDateTime": null,
+  "lastUsedDateTime": null
 }
 ```
 

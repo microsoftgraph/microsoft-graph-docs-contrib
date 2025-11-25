@@ -5,7 +5,7 @@ author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
-ms.date: 03/14/2024
+ms.date: 08/01/2024
 ---
 
 # Get reportRoot
@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /reports
 ```
 
@@ -55,17 +55,13 @@ If successful, this method returns a `200 OK` response code and [reportRoot](../
 
 ### Request
 Here is an example of the request.
-
-<!-- { "blockType": "request" , "name" : "intune_troubleshooting_reportroot_get_get_reportroot" }-->
-``` http
-GET https://graph.microsoft.com/v1/reports
+```http
+GET https://graph.microsoft.com/v1.0/reports
 ```
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-
-<!-- { "blockType": "response" , "@odata.type" : "microsoft.graph.reportRoot" }-->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 Content-Length: 124
@@ -77,7 +73,3 @@ Content-Length: 124
   }
 }
 ```
-
-
-
-

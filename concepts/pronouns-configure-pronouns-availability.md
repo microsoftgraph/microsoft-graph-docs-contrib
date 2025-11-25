@@ -99,13 +99,13 @@ Use the [get](/graph/api/peopleadminsettings-list-pronouns?view=graph-rest-1.0&p
 
 The following example gets the current display settings that have pronouns disabled.
 
-``` http
+```http
 GET https://graph.microsoft.com/v1.0/admin/people/pronouns
 ```
 
 If successful, the response returns a `200 OK` response code and a [pronounsSettings](/graph/api/resources/pronounssettings?view=graph-rest-1.0&preserve-view=true) object in the response body.
 
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -118,7 +118,7 @@ Content-Type: application/json
 
 Use the [update](/graph/api/pronounssettings-update?view=graph-rest-1.0&preserve-view=true) operation to enable pronouns in your organization.
 
-``` http
+```http
 PATCH https://graph.microsoft.com/v1.0/admin/people/pronouns
 Content-Type: application/json
 
@@ -129,7 +129,7 @@ Content-Type: application/json
 
 If successful, the response returns a `200 OK` response code and a [pronounsSettings](/graph/api/resources/pronounssettings?view=graph-rest-1.0&preserve-view=true) object in the response body.
 
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -142,7 +142,7 @@ Content-Type: application/json
 
 Use the update operation to make pronouns unavailable in your organization.
 
-``` http
+```http
 PATCH https://graph.microsoft.com/v1.0/admin/people/pronouns
 Content-Type: application/json
 
@@ -153,7 +153,7 @@ Content-Type: application/json
 
 If successful, the response returns a `200 OK` response code and a [pronounsSettings](/graph/api/resources/pronounssettings?view=graph-rest-1.0&preserve-view=true) object in the response body.
 
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

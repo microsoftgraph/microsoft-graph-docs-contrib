@@ -17,6 +17,9 @@ var requestBody = new FileStorageContainer
 	Settings = new FileStorageContainerSettings
 	{
 		IsOcrEnabled = true,
+		ItemMajorVersionLimit = 50,
+		IsItemVersioningEnabled = true,
+		ItemDefaultSensitivityLabelId = "3d8789ae-7375-4ded-8eeb-d6bc226e42fb",
 	},
 };
 
