@@ -16,7 +16,6 @@ Represents a collection of desks. A [workspace](./workspace.md) can be added to 
 
 Inherits from [place](../resources/place.md).
 
-
 ## Methods
 For the list of supported methods, see [place](./place.md).
 
@@ -55,28 +54,20 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.workspace",
-  "id": "String (identifier)",
-  "displayName": "String",
-  "geoCoordinates": {
-    "@odata.type": "microsoft.graph.outlookGeoCoordinates"
-  },
-  "phone": "String",
-  "address": {
-    "@odata.type": "microsoft.graph.physicalAddress"
-  },
-  "parentId": "String",
-  "tags": [
-    "String"
-  ],
-  "isWheelChairAccessible": "Boolean",
-  "label": "String",
-  "emailAddress": "String",
-  "nickname": "String",
+  "address": {"@odata.type": "microsoft.graph.physicalAddress"},
   "capacity": "Integer",
   "displayDeviceName": "String",
-  "mode": {
-    "@odata.type": "microsoft.graph.placeMode"
-  }
+  "displayName": "String",
+  "emailAddress": "String",
+  "geoCoordinates": {"@odata.type": "microsoft.graph.outlookGeoCoordinates"},
+  "id": "String (identifier)",
+  "isWheelChairAccessible": "Boolean",
+  "label": "String",
+  "mode": {"@odata.type": "microsoft.graph.placeMode"},
+  "nickname": "String",
+  "parentId": "String",
+  "phone": "String",
+  "tags": ["String"]
 }
 ```
 
