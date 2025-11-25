@@ -1180,6 +1180,24 @@
       "WorkloadArea": "Identity and access",
       "SubArea": "Governance"
     },
+     {
+      "ChangeList": [
+        {
+          "Id": "0955ba80-0bb6-47da-a37c-006dd0df80a6",
+          "ApiChange": "Resource",
+          "ChangedApiName": "userInactivityTrigger",
+          "ChangeType": "Addition",
+          "Description": "Added the [userInactivityTrigger](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-userInactivityTrigger?view=graph-rest-1.0) resource.",
+          "Target": "userInactivityTrigger"
+        }
+      ],
+      "Id": "0955ba80-0bb6-47da-a37c-006dd0df80a6",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-11-25T14:56:47.2907094Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
     {
       "ChangeList": [
         {
