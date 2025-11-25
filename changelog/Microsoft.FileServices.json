@@ -4977,7 +4977,7 @@
     {
       "ChangeList": [
         {
-          "Id": "a45003b4-33a7-4510-aa4d-1e0fe2f9dd63",
+          "Id": "19362fa8-e1c9-43ce-bdd2-25b75e31dacf",
           "ApiChange": "Enumeration",
           "ChangedApiName": "fileStorageContainerBillingClassification",
           "ChangeType": "Addition",
@@ -4985,7 +4985,7 @@
           "Target": "fileStorageContainerBillingClassification"
         },
         {
-          "Id": "a45003b4-33a7-4510-aa4d-1e0fe2f9dd63",
+          "Id": "19362fa8-e1c9-43ce-bdd2-25b75e31dacf",
           "ApiChange": "Enumeration",
           "ChangedApiName": "fileStorageContainerBillingStatus",
           "ChangeType": "Addition",
@@ -4993,7 +4993,7 @@
           "Target": "fileStorageContainerBillingStatus"
         },
         {
-          "Id": "a45003b4-33a7-4510-aa4d-1e0fe2f9dd63",
+          "Id": "19362fa8-e1c9-43ce-bdd2-25b75e31dacf",
           "ApiChange": "Enumeration",
           "ChangedApiName": "fileStorageContainerTypeAppPermission",
           "ChangeType": "Addition",
@@ -5001,7 +5001,7 @@
           "Target": "fileStorageContainerTypeAppPermission"
         },
         {
-          "Id": "a45003b4-33a7-4510-aa4d-1e0fe2f9dd63",
+          "Id": "19362fa8-e1c9-43ce-bdd2-25b75e31dacf",
           "ApiChange": "Enumeration",
           "ChangedApiName": "fileStorageContainerTypeSettingsOverride",
           "ChangeType": "Addition",
@@ -5009,7 +5009,7 @@
           "Target": "fileStorageContainerTypeSettingsOverride"
         },
         {
-          "Id": "a45003b4-33a7-4510-aa4d-1e0fe2f9dd63",
+          "Id": "19362fa8-e1c9-43ce-bdd2-25b75e31dacf",
           "ApiChange": "Resource",
           "ChangedApiName": "fileStorageContainerTypeRegistrationSettings",
           "ChangeType": "Addition",
@@ -5017,7 +5017,7 @@
           "Target": "fileStorageContainerTypeRegistrationSettings"
         },
         {
-          "Id": "a45003b4-33a7-4510-aa4d-1e0fe2f9dd63",
+          "Id": "19362fa8-e1c9-43ce-bdd2-25b75e31dacf",
           "ApiChange": "Resource",
           "ChangedApiName": "fileStorageContainerTypeSettings",
           "ChangeType": "Addition",
@@ -5025,7 +5025,7 @@
           "Target": "fileStorageContainerTypeSettings"
         },
         {
-          "Id": "a45003b4-33a7-4510-aa4d-1e0fe2f9dd63",
+          "Id": "19362fa8-e1c9-43ce-bdd2-25b75e31dacf",
           "ApiChange": "Relationship",
           "ChangedApiName": "containerTypeRegistrations",
           "ChangeType": "Addition",
@@ -5033,7 +5033,7 @@
           "Target": "fileStorage"
         },
         {
-          "Id": "a45003b4-33a7-4510-aa4d-1e0fe2f9dd63",
+          "Id": "19362fa8-e1c9-43ce-bdd2-25b75e31dacf",
           "ApiChange": "Relationship",
           "ChangedApiName": "containerTypes",
           "ChangeType": "Addition",
@@ -5041,7 +5041,7 @@
           "Target": "fileStorage"
         },
         {
-          "Id": "a45003b4-33a7-4510-aa4d-1e0fe2f9dd63",
+          "Id": "19362fa8-e1c9-43ce-bdd2-25b75e31dacf",
           "ApiChange": "Property",
           "ChangedApiName": "assignedSensitivityLabel",
           "ChangeType": "Addition",
@@ -5049,7 +5049,7 @@
           "Target": "fileStorageContainer"
         },
         {
-          "Id": "a45003b4-33a7-4510-aa4d-1e0fe2f9dd63",
+          "Id": "19362fa8-e1c9-43ce-bdd2-25b75e31dacf",
           "ApiChange": "Resource",
           "ChangedApiName": "fileStorageContainerType",
           "ChangeType": "Addition",
@@ -5057,7 +5057,7 @@
           "Target": "fileStorageContainerType"
         },
         {
-          "Id": "a45003b4-33a7-4510-aa4d-1e0fe2f9dd63",
+          "Id": "19362fa8-e1c9-43ce-bdd2-25b75e31dacf",
           "ApiChange": "Resource",
           "ChangedApiName": "fileStorageContainerTypeAppPermissionGrant",
           "ChangeType": "Addition",
@@ -5065,7 +5065,7 @@
           "Target": "fileStorageContainerTypeAppPermissionGrant"
         },
         {
-          "Id": "a45003b4-33a7-4510-aa4d-1e0fe2f9dd63",
+          "Id": "19362fa8-e1c9-43ce-bdd2-25b75e31dacf",
           "ApiChange": "Resource",
           "ChangedApiName": "fileStorageContainerTypeRegistration",
           "ChangeType": "Addition",
@@ -5073,30 +5073,16 @@
           "Target": "fileStorageContainerTypeRegistration"
         }
       ],
-      "Id": "a45003b4-33a7-4510-aa4d-1e0fe2f9dd63",
+      "Id": "19362fa8-e1c9-43ce-bdd2-25b75e31dacf",
       "Cloud": "Prod",
       "Version": "v1.0",
-      "CreatedDateTime": "2025-11-25T22:34:31.5185968Z",
+      "CreatedDateTime": "2025-11-25T20:50:59.3108648Z",
       "WorkloadArea": "Files",
       "SubArea": ""
     },
     {
       "ChangeList": [
         {
-          "Id": "2f4890d2-4944-4380-b7a1-14cb69b1906a",
-          "ApiChange": "Resource",
-          "ChangedApiName": "assignedLabel",
-          "ChangeType": "Addition",
-          "Description": "Added the [assignedLabel](https://learn.microsoft.com/en-us/graph/api/resources/assignedLabel?view=graph-rest-1.0) resource.",
-          "Target": "assignedLabel"
-        }
-      ],
-      "Id": "2f4890d2-4944-4380-b7a1-14cb69b1906a",
-      "Cloud": "Prod",
-      "Version": "v1.0",
-      "CreatedDateTime": "2025-11-25T22:34:31.5190498Z",
-      "WorkloadArea": "Identity and access",
-      "SubArea": "Directory management"
           "Id": "8c90bcec-9f17-47e9-b335-2665b8a53abc",
           "ApiChange": "Relationship",
           "ChangedApiName": "migrationJobs",
