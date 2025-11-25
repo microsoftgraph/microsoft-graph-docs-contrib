@@ -1,3 +1,4 @@
+---
 title: "riskDetection resource type"
 description: "Represents all risk detections in a Microsoft Entra tenant."
 author: "tracyshi"
