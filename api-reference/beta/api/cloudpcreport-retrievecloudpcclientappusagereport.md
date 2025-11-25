@@ -14,7 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get related reports for Cloud PC usage with client application used by users to sign in to the Cloud PC device.
+The Remote Desktop client standalone installer (MSI) for Windows will reach end of support on March 27, 2026. Before that date, IT administrators should migrate users to Windows App to ensure continued access to remote resources through Azure Virtual Desktop, Windows 365, and Microsoft Dev Box. [Learn more about preparing for the Remote Desktop Client for Windows end of support.](https://techcommunity.microsoft.com/blog/windows-itpro-blog/prepare-for-the-remote-desktop-client-for-windows-end-of-support/4397724)
+
+The API `retrieveCloudPcClientAppUsageReport` enables IT administrators to check migration status by confirming whether users are still using the legacy Remote Desktop client and identifying their last sign-in dates, thereby helping monitor progress and ensure compliance with migration requirements.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -126,3 +128,11 @@ Content-Type: application/octet-stream
     ]
 }
 ```
+
+The following table explains the schema in the reponse.
+
+|Column          |Type     |Description|
+|:---------------|:--------|:----------|
+|UPN             |String   |The user principal name.|
+|LastSignOn      |String   |The date when the user last signed in through the legacy Remote Desktop client.|
+|DaysWithUsage   |String   |The total number of days that the user signed in through the legacy Remote Desktop client in the last 28 days.|
