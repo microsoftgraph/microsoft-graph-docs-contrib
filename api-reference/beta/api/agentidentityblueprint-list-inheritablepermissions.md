@@ -36,12 +36,12 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /applications/{id}/graph.agentIdentityBlueprint/inheritablePermissions
+GET /applications/{id}/microsoft.graph.agentIdentityBlueprint/inheritablePermissions
 ```
 
 ## Optional query parameters
 
-This method supports the $select and $filter OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` and `$filter` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -68,7 +68,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/applications/bc057821-f236-49d6-9f2c-1ebf43e9437a/graph.agentIdentityBlueprint/inheritablePermissions
+GET https://graph.microsoft.com/beta/applications/bc057821-f236-49d6-9f2c-1ebf43e9437a/microsoft.graph.agentIdentityBlueprint/inheritablePermissions
 ```
 
 

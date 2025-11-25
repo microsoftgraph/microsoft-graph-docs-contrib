@@ -38,7 +38,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-PATCH /applications/{id}/graph.agentIdentityBlueprint/inheritablePermissions/{resourceAppId}
+PATCH /applications/{id}/microsoft.graph.agentIdentityBlueprint/inheritablePermissions/{resourceAppId}
 ```
 
 ## Request headers
@@ -77,7 +77,7 @@ The following example shows a request.
 }
 -->
 ```http
-PATCH https://graph.microsoft.com/beta/applications/bc057821-f236-49d6-9f2c-1ebf43e9437a/graph.agentIdentityBlueprint/inheritablePermissions/00000003-0000-0ff1-ce00-000000000000
+PATCH https://graph.microsoft.com/beta/applications/bc057821-f236-49d6-9f2c-1ebf43e9437a/microsoft.graph.agentIdentityBlueprint/inheritablePermissions/00000003-0000-0ff1-ce00-000000000000
 Content-Type: application/json
 
 {
@@ -115,7 +115,7 @@ The following example shows a request.
 }
 -->
 ```http
-PATCH https://graph.microsoft.com/beta/applications/bc057821-f236-49d6-9f2c-1ebf43e9437a/graph.agentIdentityBlueprint/inheritablePermissions/00000003-0000-0000-c000-000000000000
+PATCH https://graph.microsoft.com/beta/applications/bc057821-f236-49d6-9f2c-1ebf43e9437a/microsoft.graph.agentIdentityBlueprint/inheritablePermissions/00000003-0000-0000-c000-000000000000
 Content-Type: application/json
 
 {
@@ -154,7 +154,7 @@ The following example shows a request.
 }
 -->
 ```http
-PATCH https://graph.microsoft.com/beta/applications/bc057821-f236-49d6-9f2c-1ebf43e9437a/graph.agentIdentityBlueprint/inheritablePermissions/00000003-0000-0000-c000-000000000000
+PATCH https://graph.microsoft.com/beta/applications/bc057821-f236-49d6-9f2c-1ebf43e9437a/microsoft.graph.agentIdentityBlueprint/inheritablePermissions/00000003-0000-0000-c000-000000000000
 Content-Type: application/json
 
 {
