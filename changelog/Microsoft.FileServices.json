@@ -4663,7 +4663,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "sharePointMigrationJob",
           "ChangeType": "Addition",
-          "Description": "Added the [sharePointMigrationJob](https://learn.microsoft.com/en-us/graph/api/resources/sharePointMigrationJob?view=graph-rest-beta) resource.",
+          "Description": "Added the [sharePointMigrationJob](https://learn.microsoft.com/en-us/graph/api/resources/sharePointMigrationJob?view=graph-rest-beta) resource and associated methods.",
           "Target": "sharePointMigrationJob"
         },
         {
@@ -4971,6 +4971,136 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2025-11-18T18:12:05.945322Z",
+      "WorkloadArea": "Files",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "8c90bcec-9f17-47e9-b335-2665b8a53abc",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "migrationJobs",
+          "ChangeType": "Addition",
+          "Description": "Added the **migrationJobs** relationship to the [fileStorageContainer](https://learn.microsoft.com/en-us/graph/api/resources/fileStorageContainer?view=graph-rest-1.0) resource.",
+          "Target": "fileStorageContainer"
+        },
+        {
+          "Id": "8c90bcec-9f17-47e9-b335-2665b8a53abc",
+          "ApiChange": "Method",
+          "ChangedApiName": "provisionMigrationContainers",
+          "ChangeType": "Addition",
+          "Description": "Added the [provisionMigrationContainers](https://learn.microsoft.com/en-us/graph/api/fileStorageContainer-provisionMigrationContainers?view=graph-rest-1.0) method to the [fileStorageContainer](https://learn.microsoft.com/en-us/graph/api/resources/fileStorageContainer?view=graph-rest-1.0) resource.",
+          "Target": "fileStorageContainer"
+        },
+        {
+          "Id": "8c90bcec-9f17-47e9-b335-2665b8a53abc",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "sharePointMigrationJobErrorLevel",
+          "ChangeType": "Addition",
+          "Description": "Added the **sharePointMigrationJobErrorLevel** enumeration type.",
+          "Target": "sharePointMigrationJobErrorLevel"
+        },
+        {
+          "Id": "8c90bcec-9f17-47e9-b335-2665b8a53abc",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "sharePointMigrationObjectType",
+          "ChangeType": "Addition",
+          "Description": "Added the **sharePointMigrationObjectType** enumeration type.",
+          "Target": "sharePointMigrationObjectType"
+        },
+        {
+          "Id": "8c90bcec-9f17-47e9-b335-2665b8a53abc",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sharePointMigrationContainerInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [sharePointMigrationContainerInfo](https://learn.microsoft.com/en-us/graph/api/resources/sharePointMigrationContainerInfo?view=graph-rest-1.0) resource type.",
+          "Target": "sharePointMigrationContainerInfo"
+        },
+        {
+          "Id": "8c90bcec-9f17-47e9-b335-2665b8a53abc",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sharePointMigrationEvent",
+          "ChangeType": "Addition",
+          "Description": "Added the [sharePointMigrationEvent](https://learn.microsoft.com/en-us/graph/api/resources/sharePointMigrationEvent?view=graph-rest-1.0) resource and an associated method.",
+          "Target": "sharePointMigrationEvent"
+        },
+        {
+          "Id": "8c90bcec-9f17-47e9-b335-2665b8a53abc",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sharePointMigrationFinishManifestFileUploadEvent",
+          "ChangeType": "Addition",
+          "Description": "Added the [sharePointMigrationFinishManifestFileUploadEvent](https://learn.microsoft.com/en-us/graph/api/resources/sharePointMigrationFinishManifestFileUploadEvent?view=graph-rest-1.0) resource type.",
+          "Target": "sharePointMigrationFinishManifestFileUploadEvent"
+        },
+        {
+          "Id": "8c90bcec-9f17-47e9-b335-2665b8a53abc",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sharePointMigrationJob",
+          "ChangeType": "Addition",
+          "Description": "Added the [sharePointMigrationJob](https://learn.microsoft.com/en-us/graph/api/resources/sharePointMigrationJob?view=graph-rest-1.0) resource and associated methods.",
+          "Target": "sharePointMigrationJob"
+        },
+        {
+          "Id": "8c90bcec-9f17-47e9-b335-2665b8a53abc",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sharePointMigrationJobCancelledEvent",
+          "ChangeType": "Addition",
+          "Description": "Added the [sharePointMigrationJobCancelledEvent](https://learn.microsoft.com/en-us/graph/api/resources/sharePointMigrationJobCancelledEvent?view=graph-rest-1.0) resource type.",
+          "Target": "sharePointMigrationJobCancelledEvent"
+        },
+        {
+          "Id": "8c90bcec-9f17-47e9-b335-2665b8a53abc",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sharePointMigrationJobDeletedEvent",
+          "ChangeType": "Addition",
+          "Description": "Added the [sharePointMigrationJobDeletedEvent](https://learn.microsoft.com/en-us/graph/api/resources/sharePointMigrationJobDeletedEvent?view=graph-rest-1.0) resource type.",
+          "Target": "sharePointMigrationJobDeletedEvent"
+        },
+        {
+          "Id": "8c90bcec-9f17-47e9-b335-2665b8a53abc",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sharePointMigrationJobErrorEvent",
+          "ChangeType": "Addition",
+          "Description": "Added the [sharePointMigrationJobErrorEvent](https://learn.microsoft.com/en-us/graph/api/resources/sharePointMigrationJobErrorEvent?view=graph-rest-1.0) resource type.",
+          "Target": "sharePointMigrationJobErrorEvent"
+        },
+        {
+          "Id": "8c90bcec-9f17-47e9-b335-2665b8a53abc",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sharePointMigrationJobPostponedEvent",
+          "ChangeType": "Addition",
+          "Description": "Added the [sharePointMigrationJobPostponedEvent](https://learn.microsoft.com/en-us/graph/api/resources/sharePointMigrationJobPostponedEvent?view=graph-rest-1.0) resource type.",
+          "Target": "sharePointMigrationJobPostponedEvent"
+        },
+        {
+          "Id": "8c90bcec-9f17-47e9-b335-2665b8a53abc",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sharePointMigrationJobProgressEvent",
+          "ChangeType": "Addition",
+          "Description": "Added the [sharePointMigrationJobProgressEvent](https://learn.microsoft.com/en-us/graph/api/resources/sharePointMigrationJobProgressEvent?view=graph-rest-1.0) resource type.",
+          "Target": "sharePointMigrationJobProgressEvent"
+        },
+        {
+          "Id": "8c90bcec-9f17-47e9-b335-2665b8a53abc",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sharePointMigrationJobQueuedEvent",
+          "ChangeType": "Addition",
+          "Description": "Added the [sharePointMigrationJobQueuedEvent](https://learn.microsoft.com/en-us/graph/api/resources/sharePointMigrationJobQueuedEvent?view=graph-rest-1.0) resource type.",
+          "Target": "sharePointMigrationJobQueuedEvent"
+        },
+        {
+          "Id": "8c90bcec-9f17-47e9-b335-2665b8a53abc",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sharePointMigrationJobStartEvent",
+          "ChangeType": "Addition",
+          "Description": "Added the [sharePointMigrationJobStartEvent](https://learn.microsoft.com/en-us/graph/api/resources/sharePointMigrationJobStartEvent?view=graph-rest-1.0) resource type.",
+          "Target": "sharePointMigrationJobStartEvent"
+        }
+      ],
+      "Id": "8c90bcec-9f17-47e9-b335-2665b8a53abc",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-11-25T23:45:13.6390792Z",
       "WorkloadArea": "Files",
       "SubArea": ""
     }

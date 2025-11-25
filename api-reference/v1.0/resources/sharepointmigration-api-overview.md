@@ -10,8 +10,6 @@ ms.date: 09/27/2025
 
 # Use the SharePoint Embedded migration API
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 The SharePoint Embedded migration API enables developers to programmatically migrate large volumes of content from external sources (for example, Azure blob storage) into SharePoint Embedded containers. This API is designed for applications that require scalable, secure, and automated migration workflows.
 
 ## How to use the SharePoint Embedded migration API
