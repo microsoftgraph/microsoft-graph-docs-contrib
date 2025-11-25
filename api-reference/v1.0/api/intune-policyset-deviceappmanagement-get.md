@@ -58,7 +58,7 @@ Here is an example of the request.
 
 # [HTTP](#tab/http)
 <!-- { "blockType": "request" , "name" : "intune_policyset_deviceappmanagement_get_get_deviceappmanagement" }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/deviceAppManagement
 ```
 

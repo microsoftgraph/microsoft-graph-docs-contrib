@@ -64,7 +64,7 @@ The following example shows a request.
   "name": "list_endusernotifications"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/security/attackSimulation/endUserNotifications?$filter=source eq 'global'
 ```
 

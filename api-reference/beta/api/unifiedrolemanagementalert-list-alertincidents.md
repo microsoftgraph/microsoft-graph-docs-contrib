@@ -69,7 +69,7 @@ The following example shows a request that retrieves the top five alert incident
   "name": "list_unifiedrolemanagementalertincident"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/roleManagementAlerts/alerts/DirectoryRole_67b47f38-0f0b-4e62-a3be-859140c2061f_TooManyGlobalAdminsAssignedToTenantAlert/alertIncidents?$top=5
 ```
 

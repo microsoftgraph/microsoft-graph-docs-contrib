@@ -63,7 +63,7 @@ If successful, this function returns a `200 OK` response code and a [assignmentO
 }
 -->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identity/b2cUserFlows/{id}/userAttributeAssignments/getOrder
 ```
 

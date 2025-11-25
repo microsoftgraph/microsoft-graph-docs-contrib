@@ -69,7 +69,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
   "name": "list_teamworkdeviceoperation"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/teamwork/devices/0f3ce432-e432-0f3c-32e4-3c0f32e43c0f/operations
 ```
 

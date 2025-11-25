@@ -196,7 +196,7 @@ The following request queries the signed-in user's appRoleAssignments.
   "name": "get_approleassignment"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/appRoleAssignments/Lo6gEKI-4EyAy9X91LBepo6Aq0Rt6QxBjWRl76txk8I
 ```
 

@@ -79,7 +79,7 @@ The following example shows a request.
   "name": "get_platformcredentialauthenticationmethod_2"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/authentication/platformCredentialMethods
 ```
 

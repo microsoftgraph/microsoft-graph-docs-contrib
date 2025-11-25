@@ -58,7 +58,7 @@ If successful, this method returns a `200 OK` response code and a [deviceComplia
   "name": "get_devicecompliancepolicysettingstatesummary"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/deviceCompliancePolicySettingStateSummaries/{deviceCompliancePolicySettingStateSummaryId}
 ```
 

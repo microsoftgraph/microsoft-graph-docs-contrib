@@ -65,7 +65,7 @@ The following example shows a request.
   "name": "serviceactivitythis.getaudiostreamqoemetricsforteams"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/reports/serviceActivity/getAudioStreamQoEMetricsForTeams(inclusiveIntervalStartDateTime=2024-10-02T10:30:00Z,exclusiveIntervalEndDateTime=2024-10-02T10:59:59Z,aggregationIntervalInMinutes=10)
 ```
 

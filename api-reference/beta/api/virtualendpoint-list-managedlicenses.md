@@ -64,7 +64,7 @@ The following example shows a request.
   "name": "list_cloudpcmanagedlicense"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/managedLicenses
 ```
 

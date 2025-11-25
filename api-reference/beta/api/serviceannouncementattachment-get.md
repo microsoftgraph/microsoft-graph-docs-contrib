@@ -64,7 +64,7 @@ The following request returns a [serviceAnnouncementAttachment](../resources/ser
   "sampleKeys" : ["MC54091", "30356a46-ffad-47e1-acf6-40a99b1538c1"]
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/admin/serviceAnnouncement/messages/MC54091/attachments/30356a46-ffad-47e1-acf6-40a99b1538c1
 ```
 
@@ -134,7 +134,7 @@ Content-Type: application/json
   "sampleKeys" : ["MC54091", "30356a46-ffad-47e1-acf6-40a99b1538c1"]
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/admin/serviceAnnouncement/messages/MC54091/attachments/30356a46-ffad-47e1-acf6-40a99b1538c1/content
 ```
 

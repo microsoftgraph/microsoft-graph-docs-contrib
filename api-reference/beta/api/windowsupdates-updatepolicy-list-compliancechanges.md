@@ -60,7 +60,7 @@ The following example shows a request.
   "name": "list_compliancechange"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/admin/windows/updates/updatePolicies/a7aa99c1-34a2-850c-5223-7816fde70713/complianceChanges
 ```
 

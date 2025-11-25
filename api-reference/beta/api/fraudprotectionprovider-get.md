@@ -69,7 +69,7 @@ The following example shows a request.
   "name": "get_fraudprotectionprovider"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identity/riskprevention/fraudprotectionproviders/0bb2618b-51f7-4e83-bcb8-84e70f7cf84d
 ```
 

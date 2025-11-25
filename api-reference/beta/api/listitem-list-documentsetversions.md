@@ -62,7 +62,7 @@ The following example shows a request.
   "sampleKeys": ["1", "root", "Documents"]
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/sites/root/lists/Documents/items/1/documentSetVersions
 ```
 

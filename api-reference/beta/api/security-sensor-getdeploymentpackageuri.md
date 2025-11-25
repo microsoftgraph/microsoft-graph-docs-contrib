@@ -59,7 +59,7 @@ The following example shows a request.
   "name": "sensorthis.getdeploymentpackageuri"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/security/identities/sensors/getDeploymentPackageUri
 ```
 

@@ -68,7 +68,7 @@ The following example shows a request.
   "name": "get_selfservicesignup"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/auditLogs/signUps/eff4eb53-712f-778d-8754-3b851876413a
 ```
 

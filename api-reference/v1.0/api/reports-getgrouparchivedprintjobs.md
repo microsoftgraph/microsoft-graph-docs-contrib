@@ -62,7 +62,7 @@ If successful, this function returns a `200 OK` response code and a [archivedPri
   "name": "reports_getgrouparchivedprintjobs"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/reports/getGroupArchivedPrintJobs(groupId='{id}',startDateTime=<timestamp>,endDateTime=<timestamp>)
 ```
 

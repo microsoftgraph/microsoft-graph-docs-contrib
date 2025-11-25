@@ -69,7 +69,7 @@ The following example shows a request.
   "name": "get_privilegeescalationuserfinding"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/MSxQcml2aWxlZ2VFc2NhbGF0aW9uVXNlckZpbmRpbmcsNjI4MzQ/microsoft.graph.privilegeEscalationUserFinding
 ```
 

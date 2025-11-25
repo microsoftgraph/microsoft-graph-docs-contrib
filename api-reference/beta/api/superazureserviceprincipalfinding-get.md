@@ -63,7 +63,7 @@ The following example shows a request.
   "name": "get_superazureserviceprincipalfinding"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/azure/findings/MSxTdXBlckF6dXJlU2VydmljZVByaW5jaXBhbEZpbmRpbmcsMjI2ODM/microsoft.graph.superAzureServicePrincipalFinding
 ```
 

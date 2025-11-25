@@ -76,7 +76,7 @@ If successful, this method returns a `200 OK` response code and a [printerShare]
   "name": "get_printershare"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/print/shares/{printerShareId}
 ```
 
@@ -198,7 +198,7 @@ Content-Type: application/json
   "name": "get_printershare_capabilities"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/print/shares/{printerShareId}?$select=id,displayName,capabilities
 ```
 

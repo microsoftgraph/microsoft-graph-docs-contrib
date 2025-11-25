@@ -64,7 +64,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
   "name": "list_azureaddevice"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/admin/windows/updates/updatableAssets/microsoft.graph.windowsUpdates.azureADDevice
 ```
 

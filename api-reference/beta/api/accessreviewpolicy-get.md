@@ -58,7 +58,7 @@ If successful, this method returns a `200 OK` response code and an [accessReview
   "name": "get_accessreviewpolicy"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/policies/accessReviewPolicy
 ```
 
@@ -122,7 +122,7 @@ Content-Type: application/json
   "name": "get_accessreviewpolicy_2"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/policy
 ```
 

@@ -39,6 +39,7 @@ None.
 
 |Relationship|Type|Description|
 |:---|:---|:---|
+|administrationScopeTargets|[microsoft.graph.directoryObject](../resources/directoryobject.md) collection|The [administrative units](../resources/administrativeunit.md) in the scope of the workflow. Optional. <br><br>Supports `$expand`.|
 |createdBy|[user](../resources/user.md)|The user who created the workflow.|
 |lastModifiedBy|[user](../resources/user.md)|The user who last modified the workflow.|
 |tasks|[microsoft.graph.identityGovernance.task](../resources/identitygovernance-task.md) collection|The tasks in the workflow.|

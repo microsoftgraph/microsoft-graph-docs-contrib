@@ -65,7 +65,7 @@ If successful, this method returns a `200 OK` response code and a [serviceHealth
 }
 -->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/admin/serviceAnnouncement/healthOverviews/Microsoft 365 suite
 ```
 
@@ -131,7 +131,7 @@ Content-Type: application/json
 }
 -->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/admin/serviceAnnouncement/healthOverviews/Microsoft 365 suite?$expand=issues
 ```
 

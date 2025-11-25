@@ -1381,6 +1381,24 @@
     {
       "ChangeList": [
         {
+          "Id": "b9849e63-3834-4a35-a4a1-15d7d1980bad",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "administrationScopeTargets",
+          "ChangeType": "Addition",
+          "Description": "Added the **administrationScopeTargets** relationship to the [workflowBase](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-workflowBase?view=graph-rest-beta) resource.",
+          "Target": "workflowBase"
+        }
+      ],
+      "Id": "b9849e63-3834-4a35-a4a1-15d7d1980bad",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-11-24T17:17:39.0761212Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "c072ab02-1b08-431a-8d73-649b335dc867",
           "ApiChange": "Resource",
           "ChangedApiName": "emailSettings",

@@ -58,7 +58,7 @@ If successful, this method returns a `200 OK` response code and a [credentialUse
   "name": "get_credentialuserregistrationssummary"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/credentialUserRegistrationsSummaries/{credentialUserRegistrationsSummaryId}
 ```
 

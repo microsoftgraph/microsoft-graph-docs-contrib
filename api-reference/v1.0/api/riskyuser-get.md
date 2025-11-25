@@ -60,7 +60,7 @@ If successful, this method returns a `200 OK` response code and a [riskyUser](..
   "name": "get_riskyuser_1"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/identityProtection/riskyUsers/c2b6c2b9-dddc-acd0-2b39-d519d803dbc3
 ```
 

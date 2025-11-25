@@ -67,7 +67,7 @@ The following example shows how to get a **fileStorageContainerType** using the 
   "name": "get_filestoragecontainertype"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/storage/fileStorage/containerTypes/de988700-d700-020e-0a00-0831f3042f00
 ```
 

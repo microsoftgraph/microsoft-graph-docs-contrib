@@ -59,7 +59,7 @@ Here's an example  of a request.
   "name": "get_emailthreatsubmissionpolicy"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/security/threatSubmission/emailThreatSubmissionPolicies/{emailThreatSubmissionPoliciesId}
 ```
 

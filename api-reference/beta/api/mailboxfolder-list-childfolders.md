@@ -70,7 +70,7 @@ The following example shows how to get the mailbox folder collection under a spe
   "sampleKeys": ["MBX:e0643f21@a7809c93", "NJWt2LeVEAAAIBDAAAAA=="]
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/admin/exchange/mailboxes/MBX:e0643f21@a7809c93/folders/NJWt2LeVEAAAIBDAAAAA==/childFolders
 ```
 

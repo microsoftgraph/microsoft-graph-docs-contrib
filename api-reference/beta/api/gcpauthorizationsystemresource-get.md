@@ -64,7 +64,7 @@ The following example shows a request.
   "name": "get_gcpauthorizationsystemresource"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/external/authorizationSystems/{id}/microsoft.graph.gcpAuthorizationSystem/resources/cHJvamVjdHMvaGVsbG8td29ybGQtMjMxMTA3L3pvbmVzL3VzLWNlbnRyYWwxLWEvaW5zdGFuY2VzL2luc3RhbmNlLTE
 ```
 

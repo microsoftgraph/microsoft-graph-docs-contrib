@@ -55,7 +55,7 @@ Here is an example of the request.
 
 # [HTTP](#tab/http)
 <!-- { "blockType": "request" , "name" : "intune_remoteassistance_remoteassistancepartner_list_list_remoteassistancepartners" }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/deviceManagement/remoteAssistancePartners
 ```
 

@@ -64,7 +64,7 @@ The following example shows a request.
   "name": "list_loginpages"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/security/attackSimulation/loginPages?$filter=source eq 'tenant'
 ```
 

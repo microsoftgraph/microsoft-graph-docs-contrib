@@ -68,6 +68,7 @@ Represents a location where multiple users or a group of users can store files a
 |viewpoint|[fileStorageContainerViewpoint](../resources/filestoragecontainerviewpoint.md)|Data specific to the current user. Read-only.|
 |lockState|siteLockState|Indicates the lock state of the **fileStorageContainer**. The possible values are `unlocked` and `lockedReadOnly`. Read-only.|
 |settings|[fileStorageContainerSettings](../resources/filestoragecontainersettings.md)|Settings associated with a **fileStorageContainer**. Read-write.|
+|informationBarrier|[informationBarrier](../resources/informationBarrier.md)|Information barrier of a **fileStorageContainer**. Read-write.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -119,7 +120,8 @@ The following JSON representation shows the resource type.
   "ownershipType": {"@odata.type": "microsoft.graph.fileStorageContainerOwnershipType"},
   "expiryDateTime": "string (timestamp)",
   "lockState": {"@odata.type": "microsoft.graph.siteLockState"},
-  "settings": { "@odata.type": "microsoft.graph.fileStorageContainerSettings" }
+  "settings": { "@odata.type": "microsoft.graph.fileStorageContainerSettings" },
+  "informationBarrier": { "@odata.type": "microsoft.graph.informationBarrier" }
 }
 ```
 

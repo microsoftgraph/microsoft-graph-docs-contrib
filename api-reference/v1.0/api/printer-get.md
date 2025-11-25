@@ -69,7 +69,7 @@ By default, the response doesn't contain [printerCapabilities](../resources/prin
   "name": "get_printer"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/print/printers/{printerId}
 ```
 
@@ -193,7 +193,7 @@ Content-Type: application/json
   "name": "get_printer_capabilities"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/print/printers/{printerId}?$select=id,displayName,capabilities
 ```
 

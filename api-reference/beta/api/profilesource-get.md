@@ -76,7 +76,7 @@ The following example shows a request.
   "name": "get_profilesource"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/admin/people/profileSources(sourceId='bamboohr1')
 ```
 

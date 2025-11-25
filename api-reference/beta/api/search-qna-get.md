@@ -65,7 +65,7 @@ The following example shows a request.
   "name": "get_qna"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/search/qnas/733b26d5-af76-4eea-ac69-1a0ce8716897
 ```
 

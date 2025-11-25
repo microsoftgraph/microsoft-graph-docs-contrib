@@ -69,7 +69,7 @@ The following example shows a request.
   "sampleKeys": ["megan@contoso.com"]
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/megan@contoso.com/settings/exchange
 ```
 

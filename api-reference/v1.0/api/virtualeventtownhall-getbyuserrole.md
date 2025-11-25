@@ -67,7 +67,7 @@ The following example shows a request.
   "name": "virtualeventtownhallthis.getbyuserrole"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/solutions/virtualEvents/townhalls/getByUserRole(role='organizer')
 ```
 
