@@ -28,6 +28,10 @@ Deleted security groups can now be restored from [deleted items](/graph/api/reso
 
 The [driveItem: restore](/graph/api/driveitem-restore) method was expanded to enable restoring a **driveItem** deleted from a **fileStorageContainer** without mapping it to a **recycleBinItem**. This complements existing functionality in [recycleBinItem: restore](/graph/api/filestoragecontainer-restore-recyclebinitem) which continues to work as expected.
 
+### Device and app management | Cloud PC
+
+[Get](/graph/api/cloudpc-retrievecloudpclaunchdetail) the [cloudPcLaunchDetail](/graph/api//resources/cloudpclaunchdetail.md) for a specific Cloud PC that belongs to the current signed-in user.
+
 ### Files
 
 - Deprecated the [drive: recent](/graph/api/drive-recent) and [drive: sharedWithMe](/graph/api/drive-sharedwithme) methods of the [drive](/graph/api/resources/drive) resource.
