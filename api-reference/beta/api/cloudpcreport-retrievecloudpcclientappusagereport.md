@@ -129,7 +129,7 @@ Content-Type: application/octet-stream
 }
 ```
 
-The following table explains the schema in the reponse.
+The following table explains the schema in the response.
 
 |Column          |Type     |Description|
 |:---------------|:--------|:----------|
