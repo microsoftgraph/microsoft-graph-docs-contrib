@@ -14,9 +14,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The Remote Desktop client standalone installer (MSI) for Windows will reach end of support on March 27, 2026. Before that date, IT administrators should migrate users to Windows App to ensure continued access to remote resources through Azure Virtual Desktop, Windows 365, and Microsoft Dev Box. [Learn more about preparing for the Remote Desktop Client for Windows end of support.](https://techcommunity.microsoft.com/blog/windows-itpro-blog/prepare-for-the-remote-desktop-client-for-windows-end-of-support/4397724)
+Retrieve related [reports](../resources/cloudpcreport.md) on Cloud PC usage, including the client application used by users to sign in to the Cloud PC device.
 
-The API `retrieveCloudPcClientAppUsageReport` enables IT administrators to check migration status by confirming whether users are still using the legacy Remote Desktop client and identifying their last sign-in dates, thereby helping monitor progress and ensure compliance with migration requirements.
+The Remote Desktop client standalone installer (MSI) for Windows will reach end of support on March 27, 2026. Before that date, IT administrators should migrate users to Windows App to ensure continued access to remote resources through Azure Virtual Desktop, Windows 365, and Microsoft Dev Box. [Learn](https://techcommunity.microsoft.com/blog/windows-itpro-blog/prepare-for-the-remote-desktop-client-for-windows-end-of-support/4397724) more about preparing for the Remote Desktop Client for Windows end of support.
+
+This API enables IT administrators to check the migration status by confirming whether users are still using the legacy Remote Desktop client and identifying their last sign-in dates, thereby helping monitor progress and ensure compliance with migration requirements.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -98,8 +100,6 @@ Content-Type: application/json
 }
 ```
 
----
-
 ### Response
 
 The following example shows the response.
@@ -131,9 +131,9 @@ Content-Type: application/octet-stream
         }
     ],
     "Values" :[
-        ["test001@w365testshself01.onmicrosoft.com", "2025-10-28", 10],
-        ["test002@w365testshself01.onmicrosoft.com", "2025-10-30",  5],
-        ["test003@w365testshself01.onmicrosoft.com", "2025-10-31", 19]
+        ["test001@contoso.onmicrosoft.com", "2025-10-28", 10],
+        ["test002@contoso.onmicrosoft.com", "2025-10-30",  5],
+        ["test003@contoso.onmicrosoft.com", "2025-10-31", 19]
     ]
 }
 ```
