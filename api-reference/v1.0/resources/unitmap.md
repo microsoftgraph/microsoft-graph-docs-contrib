@@ -48,8 +48,8 @@ The following JSON representation shows the resource type.
 {
   "@odata.type": "#microsoft.graph.unitMap",
   "id": "String (identifier)",
-  "properties": "String",
-  "placeId": "String"
+  "placeId": "String",
+  "properties": "String"
 }
 ```
 
