@@ -2,7 +2,7 @@
 title: "mailboxDetails resource type"
 description: "Represents details about a mailbox, including its unique directory identifier and associated email address."
 author: tiwarisakshi02
-ms.date: 11/11/2025
+ms.date: 06/11/2025
 ms.localizationpriority: medium
 ms.subservice: outlook
 doc_type: resourcePageType
@@ -12,7 +12,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents details about a mailbox, including its unique directory identifier and associated email address.
+Represents details about a [mailbox](./mailbox.md), including its unique directory identifier and associated email address.
 
 Mailboxes are associated with reservable or drop-in Places objects such as [desk](./desk.md).
 
@@ -35,8 +35,7 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.mailboxDetails",
-  "externalDirectoryObjectId": "String",
-  "emailAddress": "String"
+  "emailAddress": "String",
+  "externalDirectoryObjectId": "String"
 }
 ```
-
