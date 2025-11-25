@@ -139,6 +139,14 @@ Use the **hasProtection** property on [sensitivityLabel](/graph/api/resources/se
 - [Get](/graph/api/plannerplan-getusagerights?view=graph-rest-beta&preserve-view=true) the usage rights for a specific [plan](/graph/api/resources/plannerplan?view=graph-rest-beta&preserve-view=true) based on its sensitivity label assignment and the requesting user's permissions.
 - Use the **contentSensitivityLabelAssignment** property on [plannerPlan](/graph/api/resources/plannerplan?view=graph-rest-beta&preserve-view=true) to get or set the sensitivity label assignment for a plan.
 
+### Teamwork and communications | Presence
+
+Use the following new endpoints to enable the management of work location for a user:
+- [Clear](/graph/api/presence-clearautomaticlocation?view=graph-rest-beta&preserve-view=true) the automatic work location value for a user.
+- [Clear](/graph/api/presence-clearlocation?view=graph-rest-beta&preserve-view=true) the work location signals for a user, including both the manual and automatic layers for the current date.
+- [Update](/graph/api/presence-setautomaticlocation?view=graph-rest-beta&preserve-view=true) the automatic work location for a user.
+- [Set](/graph/api/presence-setmanuallocation?view=graph-rest-beta&preserve-view=true) the user’s manual work location signal.
+
 ### Teamwork and communications | Calls and online meetings
 
 - Added the **sensitivityLabelAssignment** property to the [onlineMeeting](/graph/api/resources/onlineMeeting?view=graph-rest-beta&preserve-view=true), which represents the meeting’s sensitivity level. This ID corresponds to the identifier configured in the Microsoft Purview portal.
