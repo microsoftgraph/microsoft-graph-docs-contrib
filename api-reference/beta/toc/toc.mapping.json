@@ -1151,6 +1151,7 @@
             "directorySetting",
             "directorySettingTemplate",
             "domain",
+            "onPremAuthenticationPolicy",
             "onPremisesDirectorySynchronization",
             "onPremisesSyncBehavior",
             "organization",
@@ -1880,7 +1881,8 @@
                 "b2cAuthenticationMethodsPolicy",
                 "featureRolloutPolicy",
                 "identitySecurityDefaultsEnforcementPolicy",
-                "deviceRegistrationPolicy"
+                "deviceRegistrationPolicy",
+                "onPremAuthenticationPolicy"
               ]
             },
             {
