@@ -23,7 +23,7 @@ Use a method in the [Methods](#methods) section to get the corresponding report 
 |Method|Return type|Description|
 |:---|:---|:---|
 |[Retrieve Cloud PC recommendation reports](../api/cloudpcreport-retrievecloudpcrecommendationreports.md)|Stream|Retrieve Cloud PC recommendation [reports](../resources/cloudpcreport.md) for usage optimization and cost savings.|
-|[Retrieve Cloud PC client app usage reports](../api/cloudpcreport-retrievecloudpcclientappusagereport.md)|Stream|Retrieve related reports for Cloud PC usage with client application used by users to sign in to the Cloud PC device.|
+|[Retrieve Cloud PC client app usage reports](../api/cloudpcreport-retrievecloudpcclientappusagereport.md)|Stream|Retrieve related [reports](../resources/cloudpcreport.md) on Cloud PC usage, including the client application used by users to sign in to the Cloud PC device. |
 
 ## Properties
 
