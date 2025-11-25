@@ -55,26 +55,16 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.building",
-  "id": "String (identifier)",
+  "address": {"@odata.type": "microsoft.graph.physicalAddress"},
   "displayName": "String",
-  "geoCoordinates": {
-    "@odata.type": "microsoft.graph.outlookGeoCoordinates"
-  },
-  "phone": "String",
-  "address": {
-    "@odata.type": "microsoft.graph.physicalAddress"
-  },
-  "parentId": "String",
-  "tags": [
-    "String"
-  ],
+  "geoCoordinates": {"@odata.type": "microsoft.graph.outlookGeoCoordinates"},
+  "id": "String (identifier)",
   "isWheelChairAccessible": "Boolean",
   "label": "String",
-  "resourceLinks": [
-    {
-      "@odata.type": "microsoft.graph.resourceLink"
-    }
-  ]
+  "parentId": "String",
+  "phone": "String",
+  "resourceLinks": [{"@odata.type": "microsoft.graph.resourceLink"}],
+  "tags": ["String"]
 }
 ```
 
