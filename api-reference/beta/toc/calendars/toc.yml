@@ -313,7 +313,7 @@ items:
     - name: Update place
       href: ../../api/place-update.md
   - name: Section
-    href: ../../resources/placesSection.md
+    href: ../../resources/section.md
   - name: Workspace
     href: ../../resources/workspace.md
   - name: Check-in claim (preview)

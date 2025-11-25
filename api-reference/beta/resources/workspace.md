@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a collection of desks. A [workspace](./workspace.md) can be added to a [section](./placesSection.md).
+Represents a collection of desks. A [workspace](./workspace.md) can be added to a [section](./section.md).
 
 Inherits from [place](./place.md).
 
@@ -38,7 +38,7 @@ For the list of supported methods, see [place](./place.md).
 |label |String |User-defined description of the **workspace**. Inherited from [place](../resources/place.md).|
 |mode|[placeMode](./placemode.md) |The mode for a **workspace**. The supported modes are:<ul><li>[reservablePlaceMode](./reservableplacemode.md) - Workspaces that can be booked in advance using desk pool reservation tools.</li><li>[dropInPlaceMode](./dropinplacemode.md) - First come, first served desks. When you plug into a peripheral on one of these desks in the workspace, the desk is booked for you, assuming that the peripheral has been associated with the desk in the Microsoft Teams Rooms Pro management portal.</li><li>[unavailablePlaceMode](./unavailableplacemode.md) - Workspaces that are taken down for maintenance or marked as not reservable.</li></ul> |
 |nickname|String|A short, friendly name for the **workspace**, often used for easier identification or display in the UI. |
-|parentId|String|The ID of a parent [section](./placesSection.md). Inherited from [place](./place.md). |
+|parentId|String|The ID of a parent [section](./section.md). Inherited from [place](./place.md). |
 |phone|String|The phone number of the **workspace**. Inherited from [place](./place.md). |
 |placeId|String|An alternate immutable unique identifier of the **workspace**. Read-only.|
 |tags|String collection|Custom tags that are associated with the **workspace** for categorization or filtering. Inherited from [place](./place.md). |

@@ -12,7 +12,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents a section within a [floor](./floor.md). A [floor](./floor.md) is always the parent of a [section](./placesSection.md).
+Represents a section within a [floor](./floor.md). A [floor](./floor.md) is always the parent of a [section](./section.md).
 
 Inherits from [place](../resources/place.md).
 

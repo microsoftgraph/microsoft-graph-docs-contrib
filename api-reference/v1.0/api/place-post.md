@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Create a new [place](../resources/place.md) object.
 
-You can also use this method to create the following child object types: [building](../resources/building.md), [floor](../resources/floor.md), [section](../resources/placesSection.md), [room](../resources/room.md), [workspace](../resources/workspace.md), or [desk](../resources/desk.md).
+You can also use this method to create the following child object types: [building](../resources/building.md), [floor](../resources/floor.md), [section](../resources/section.md), [room](../resources/room.md), [workspace](../resources/workspace.md), or [desk](../resources/desk.md).
 
 ## Permissions
 

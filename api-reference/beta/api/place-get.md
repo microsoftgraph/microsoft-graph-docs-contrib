@@ -20,7 +20,7 @@ The **place** object can be one of the following types:
 
 * A [building](../resources/building.md), which includes rich properties such as resource links and has a wireless network.
 * A [floor](../resources/floor.md), which includes rich properties such as sort order.
-* A [section](../resources/placesSection.md).
+* A [section](../resources/section.md).
 * A [desk](../resources/desk.md), which includes rich properties such as mailbox details and mode.
 * A [room](../resources/room.md), which includes rich properties such as an email address for the room, and accessibility, capacity, and device support. 
 * A [workspace](../resources/workspace.md), which includes properties such as an email address for the workspace, and accessibility and capacity. 
@@ -171,7 +171,7 @@ Content-Type: application/json
 ```
 
 ### Example 3: Get a section
-The following example shows a request to get a [section](../resources/placesSection.md).
+The following example shows a request to get a [section](../resources/section.md).
 #### Request
 The following example shows a request.
 

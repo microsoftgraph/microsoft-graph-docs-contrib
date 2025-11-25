@@ -215,7 +215,7 @@ Content-Type: application/json
 
 ### Example 3: List all sections defined in the tenant
 
-The following example shows how to get all the [section](../resources/placesSection.md) objects in the tenant.
+The following example shows how to get all the [section](../resources/section.md) objects in the tenant.
 
 #### Request
 

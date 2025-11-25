@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a room within a tenant. A room can be added to a [floor](./floor.md) or to a [section](./placesSection.md).
+Represents a room within a tenant. A room can be added to a [floor](./floor.md) or to a [section](./section.md).
 
 Inherits from [place](./place.md).
 
@@ -40,7 +40,7 @@ For the list of supported methods, see [place](./place.md).
 |isWheelChairAccessible |Boolean |Indicates whether the **room** is wheelchair accessible. Inherited from [place](../resources/place.md).|
 |label |String |User-defined description of the **room**. Inherited from [place](../resources/place.md). |
 |nickname |String |A short, friendly name for the **room**, often used for easier identification or display in UI. |
-|parentId |String |The ID of a parent [floor](./floor.md) or [section](./placesSection.md). Inherited from [place](../resources/place.md). |
+|parentId |String |The ID of a parent [floor](./floor.md) or [section](./section.md). Inherited from [place](../resources/place.md). |
 |phone |String |The phone number of the **room**. Inherited from [place](../resources/place.md).|
 |placeId |String |An alternate immutable unique identifier of the **room**. Read-only.|
 |tags |String collection |Custom tags that are associated with the **room** for categorization or filtering. Inherited from [place](../resources/place.md).|

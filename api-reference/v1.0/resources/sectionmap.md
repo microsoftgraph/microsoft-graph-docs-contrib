@@ -28,7 +28,7 @@ Inherits from [baseMapFeature](../resources/basemapfeature.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Unique identifier for the **sectionMap** object. Inherited from [baseMapFeature](../resources/basemapfeature.md). |
-|placeId|String|Identifier of the [section](./placesSection.md) to which this **sectionMap** belongs.|
+|placeId|String|Identifier of the [section](./section.md) to which this **sectionMap** belongs.|
 |properties|String|Concatenated key-value pair of all properties of a GeoJSON file for this **sectionMap**. Inherited from [baseMapFeature](../resources/basemapfeature.md).|
 
 ## Relationships

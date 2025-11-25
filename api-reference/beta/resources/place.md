@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Represents different space types within a tenant. For more information, see [Working with the Places API in Microsoft Graph](./places-api-overview.md). 
 
-Base type of [building](../resources/building.md), [desk](../resources/desk.md), [floor](../resources/floor.md), [room](../resources/room.md), [roomList](../resources/roomlist.md), [section](../resources/placesSection.md), and [workspace](../resources/workspace.md).
+Base type of [building](../resources/building.md), [desk](../resources/desk.md), [floor](../resources/floor.md), [room](../resources/room.md), [roomList](../resources/roomlist.md), [section](../resources/section.md), and [workspace](../resources/workspace.md).
 
 ## Methods
 
@@ -25,7 +25,7 @@ Base type of [building](../resources/building.md), [desk](../resources/desk.md),
 |[List](../api/place-list.md) |[place](./place.md) collection |Get a collection of the specified type of [place](../resources/place.md) objects defined in a tenant. |
 |[Create](../api/place-post.md) |[place](./place.md) |Create a new [place](../resources/place.md) object.| 
 |[Get](../api/place-get.md) |[place](./place.md) |Read the properties of a [place](../resources/place.md) object. Returns the requested, derived type of **place**.|
-|[Update](../api/place-update.md) |[place](./place.md) |Update the properties of [place](../resources/place.md) object that can be a [building](../resources/building.md), [floor](../resources/floor.md), [section](../resources/placesSection.md), [desk](../resources/desk.md), [room](../resources/room.md), [workspace](../resources/workspace.md), or [roomList](../resources/roomlist.md). |
+|[Update](../api/place-update.md) |[place](./place.md) |Update the properties of [place](../resources/place.md) object that can be a [building](../resources/building.md), [floor](../resources/floor.md), [section](../resources/section.md), [desk](../resources/desk.md), [room](../resources/room.md), [workspace](../resources/workspace.md), or [roomList](../resources/roomlist.md). |
 |[Delete](../api/place-delete.md) |None |Delete a [place](../resources/place.md) object. |
 |[Descendants](../api/place-descendants.md) |[place](./place.md) collection|Get all the descendants of a specific type under a [place](../resources/place.md). | 
 |[Create check-in claim](../api/place-post-checkins.md)|[checkInClaim](../resources/checkinclaim.md)|Create a new [checkInClaim](../resources/checkinclaim.md) object to record the check-in status for a specific place, such as a [desk](../resources/desk.md) or a [room](../resources/room.md), associated with a specific calendar reservation.|

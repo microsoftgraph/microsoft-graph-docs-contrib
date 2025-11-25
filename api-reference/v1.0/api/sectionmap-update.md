@@ -57,7 +57,7 @@ PATCH /places/{buildingPlaceId}/microsoft.graph.building/map/levels/{levelImdfID
 
 |Property|Type|Description|
 |:---|:---|:---|
-|placeId|String|Identifier for the [section](../resources/placesSection.md) to which this section map belongs. Optional.|
+|placeId|String|Identifier for the [section](../resources/section.md) to which this section map belongs. Optional.|
 |properties|String|Concatenated key-value pair of all properties of a GeoJSON file for this section. Inherited from [baseMapFeature](../resources/basemapfeature.md). Optional.|
 
 
