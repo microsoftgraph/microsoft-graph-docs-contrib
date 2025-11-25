@@ -1,5 +1,5 @@
 ---
-title: "List sectionMap objects"
+title: "List sections"
 description: "Get a list of the sectionMap objects and their properties."
 author: tiwarisakshi02
 ms.date: 11/11/2025
@@ -8,7 +8,7 @@ ms.subservice: outlook
 doc_type: apiPageType
 ---
 
-# List sectionMap objects
+# List sections
 
 Namespace: microsoft.graph
 
@@ -63,7 +63,8 @@ If successful, this method returns a `200 OK` response code and a collection of 
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "list_sectionmap"
+  "name": "list_sectionmap",
+  "sampleKeys": ["151e85a7-c0b8-4519-997e-1a0858255704", "e537d463-475b-43c3-a650-184566c68bc9"]
 }
 -->
 ``` http
@@ -78,7 +79,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.sectionMap"
+  "@odata.type": "Collection(microsoft.graph.sectionMap)"
 }
 -->
 ``` http
