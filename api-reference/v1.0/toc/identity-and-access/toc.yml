@@ -977,6 +977,8 @@ items:
         items:
         - name: Workflow version
           href: ../../resources/identitygovernance-workflowversion.md
+        - name: Create
+          href: ../../api/identitygovernance-workflow-createnewversion.md
         - name: List
           href: ../../api/identitygovernance-workflow-list-versions.md
         - name: Get
