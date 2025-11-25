@@ -24,7 +24,8 @@ The API `retrieveCloudPcClientAppUsageReport` enables IT administrators to check
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "permissions", "name": "cloudpcreport_retrieveCloudPcClientAppUsageReport" } -->
+<!-- { "blockType": "permissions", "name": "cloudpcreport_retrievecloudpcclientappusagereport" } -->
+[!INCLUDE [permissions-table](../includes/permissions/cloudpcreport-retrievecloudpcclientappusagereport-permissions.md)]
 
 ## HTTP request
 
@@ -63,6 +64,14 @@ The following table shows the parameters that can be used with this method.
 ## Response
 
 If successful, this method returns a `200 OK` response code and a Stream object in the response body.
+
+The following table explains the schema in the response.
+
+|Column          |Type     |Description|
+|:---------------|:--------|:----------|
+|UPN             |String   |The user principal name.|
+|LastSignOn      |String   |The date when the user last signed in through the legacy Remote Desktop client.|
+|DaysWithUsage   |String   |The total number of days that the user signed in through the legacy Remote Desktop client in the last 28 days.|
 
 ## Examples
 
@@ -128,11 +137,3 @@ Content-Type: application/octet-stream
     ]
 }
 ```
-
-The following table explains the schema in the response.
-
-|Column          |Type     |Description|
-|:---------------|:--------|:----------|
-|UPN             |String   |The user principal name.|
-|LastSignOn      |String   |The date when the user last signed in through the legacy Remote Desktop client.|
-|DaysWithUsage   |String   |The total number of days that the user signed in through the legacy Remote Desktop client in the last 28 days.|

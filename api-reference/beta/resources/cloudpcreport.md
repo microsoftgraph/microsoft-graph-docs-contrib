@@ -45,7 +45,7 @@ Indicates the type of client application used by users to sign in to the Cloud P
 
 | Member                                       | Description                                                                                           |
 | :------------------------------------------- | :------------------------------------------------------------------------------------------------------------ |
-| microsoftRemoteDesktopClientUsageReport      | Indicates the report which shows the Cloud PC usage with Microsoft Remote Desktop Client. Cloud PC team recommends the migration to Windows App to experience the full benefits Windows App has to offer, and to avoid losing access to remote resources on March 27, 2026. [Learn more about preparing for the Remote Desktop Client for Windows end of support.](https://techcommunity.microsoft.com/blog/windows-itpro-blog/prepare-for-the-remote-desktop-client-for-windows-end-of-support/4397724)  |
+| microsoftRemoteDesktopClientUsageReport      | Indicates the report which shows the Cloud PC usage with Microsoft Remote Desktop Client. We recommend the migration to Windows App to experience the full benefits Windows App has to offer, and to avoid losing access to remote resources on March 27, 2026. [Learn more about preparing for the Remote Desktop Client for Windows end of support.](https://techcommunity.microsoft.com/blog/windows-itpro-blog/prepare-for-the-remote-desktop-client-for-windows-end-of-support/4397724)  |
 | unknownFutureValue                           | Evolvable enumeration sentinel value. Do not use.                                                     |
 
 ## Relationships
