@@ -13,7 +13,7 @@ ms.date: 04/03/2024
 
 Namespace: microsoft.graph
 
-Represents a sensitivity label assigned to a Microsoft 365 group. Sensitivity labels allow administrators to enforce specific group settings on a group by assigning a classification to the group (such as Confidential, Highly Confidential or General). Sensitivity labels are published by administrators in Microsoft 365 Security and Compliance Center as part of Microsoft Purview Information Protection capabilities. For more information about sensitivity labels, see [Sensitivity labels overview](/microsoft-365/compliance/sensitivity-labels).
+Represents a sensitivity label assigned to a Microsoft 365 group. Administrators publish sensitivity labels in the Microsoft 365 Security and Compliance Center as part of Microsoft Purview Information Protection capabilities. For more information about sensitivity labels, see [Sensitivity labels overview](/microsoft-365/compliance/sensitivity-labels).
 
 ## Properties
 
