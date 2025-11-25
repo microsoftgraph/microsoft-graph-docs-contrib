@@ -61,7 +61,8 @@ If successful, this method returns a `200 OK` response code and a collection of 
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "list_levelmap"
+  "name": "list_levelmap",
+  "sampleKeys": ["4bff9586-c9ee-401d-9d35-c476231a33e6"]
 }
 -->
 ``` http
@@ -76,7 +77,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.levelMap"
+  "@odata.type": "Collection(microsoft.graph.levelMap)"
 }
 -->
 ``` http
