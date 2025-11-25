@@ -1324,8 +1324,10 @@
               "resources": [
                 "accessPackage",
                 "accessPackageAssignment",
+                "accessPackageSuggestion",
                 "approval",
                 "approvalStep",
+                "availableAccessPackage",
                 "accessPackageResourceRoleScope",
                 "accessPackageAssignmentPolicy",
                 "accessPackageAssignmentRequest",
@@ -1340,6 +1342,7 @@
                 "accessPackageAssignmentWorkflowExtension",
                 "accessPackageSubject",
                 "connectedOrganization",
+                "endUserSettings",
                 "entitlementManagementSettings",
                 "customAccessPackageWorkflowExtension",
                 "customDataProvidedResourceUploadSession"
@@ -1359,6 +1362,9 @@
                 "accessPackageResourceAttributeQuestion",
                 "accessPackageResourceAttributeSource",
                 "accessPackageResourceScope",
+                "accessPackageSuggestionReason",
+                "accessPackageSuggestionRelatedPeopleBased",
+                "accessPackageSuggestionSelfAssignmentHistoryBased",
                 "accessPackageTextInputQuestion",
                 "accessPackageUserDirectoryAttributeStore",
                 "approvalSettings",

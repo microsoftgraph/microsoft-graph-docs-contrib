@@ -1019,6 +1019,8 @@ items:
         href: ../../api/accesspackageassignment-reprocess.md
       - name: Check other access
         href: ../../api/accesspackageassignment-additionalaccess.md
+    - name: Access package suggestion
+      href: ../../resources/accesspackagesuggestion.md
     - name: Approval
       items:
       - name: Approval
@@ -1037,6 +1039,12 @@ items:
         href: ../../api/approvalstep-get.md
       - name: Update
         href: ../../api/approvalstep-update.md
+    - name: Available access package
+      items:
+      - name: Available access package
+        href: ../../resources/availableaccesspackage.md
+      - name: List
+        href: ../../api/availableaccesspackage-list-resourcerolescopes.md
     - name: Access package resource role scope
       items:
       - name: Access package resource role scope
@@ -1217,6 +1225,14 @@ items:
           href: ../../api/connectedorganization-post-internalsponsors.md
         - name: Remove internal sponsors
           href: ../../api/connectedorganization-delete-internalsponsors.md
+    - name: End user settings
+      items:
+      - name: End user settings
+        href: ../../resources/endusersettings.md
+      - name: Get
+        href: ../../api/endusersettings-get.md
+      - name: Update
+        href: ../../api/endusersettings-update.md
     - name: Entitlement management settings
       items:
       - name: Entitlement management settings
@@ -1281,6 +1297,12 @@ items:
         href: ../../resources/accesspackageresourceattributesource.md
       - name: Access package resource scope
         href: ../../resources/accesspackageresourcescope.md
+      - name: Access package suggestion reason
+        href: ../../resources/accesspackagesuggestionreason.md
+      - name: Access package suggestion related people based
+        href: ../../resources/accesspackagesuggestionrelatedpeoplebased.md
+      - name: Access package suggestion self assignment history based
+        href: ../../resources/accesspackagesuggestionselfassignmenthistorybased.md
       - name: Access package text input question
         href: ../../resources/accesspackagetextinputquestion.md
       - name: Access package user directory attribute store
@@ -1337,6 +1359,8 @@ items:
         href: ../../resources/externalsponsors.md
       - name: Group members
         href: ../../resources/groupmembers.md
+      - name: Identity
+        href: ../../resources/identity.md
       - name: Identity source
         href: ../../resources/identitysource.md
       - name: Internal sponsors

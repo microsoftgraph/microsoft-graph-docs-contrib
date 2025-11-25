@@ -772,6 +772,24 @@ Namespace: microsoft.graph
 | governed |
 | unknownFutureValue |
 
+### accessPackageSuggestionFilterByCurrentUserOptions values
+
+| Member |
+| ---- |
+| none |
+| relatedPeopleAssignments |
+| assignmentHistory |
+| unknownFutureValue |
+
+### accessPackageSuggestionRelatedPeopleInsightLevel values
+
+| Member |
+| ---- |
+| disabled |
+| count |
+| countAndNames |
+| unknownFutureValue |
+
 ### customExtensionCalloutInstanceStatus values
 
 | Member |
@@ -909,6 +927,15 @@ Namespace: microsoft.graph
 | unknownFutureValue |
 | remoteDesktopToken |
 | refreshToken       |
+
+### approverInformationVisibilityvalues
+
+| Member |
+| ---- |
+| no |
+| yes |
+| default |
+| unknownFutureValue |
 
 ### protocolType values
 
