@@ -16,7 +16,6 @@ Represents individual desks.
 
 Inherits from [place](../resources/place.md).
 
-
 ## Methods
 For the list of supported methods, see [place](./place.md).
 
@@ -52,28 +51,18 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.desk",
-  "id": "String (identifier)",
+  "address": {"@odata.type": "microsoft.graph.physicalAddress"},
+  "displayDeviceName": "String",
   "displayName": "String",
-  "geoCoordinates": {
-    "@odata.type": "microsoft.graph.outlookGeoCoordinates"
-  },
-  "phone": "String",
-  "address": {
-    "@odata.type": "microsoft.graph.physicalAddress"
-  },
-  "parentId": "String",
-  "tags": [
-    "String"
-  ],
+  "geoCoordinates": {"@odata.type": "microsoft.graph.outlookGeoCoordinates"},
+  "id": "String (identifier)",
   "isWheelChairAccessible": "Boolean",
   "label": "String",
-  "displayDeviceName": "String",
-  "mailboxDetails": {
-    "@odata.type": "microsoft.graph.mailboxDetails"
-  },
-  "mode": {
-    "@odata.type": "microsoft.graph.placeMode"
-  }
+  "mailboxDetails": {"@odata.type": "microsoft.graph.mailboxDetails"},
+  "mode": {"@odata.type": "microsoft.graph.placeMode"},
+  "parentId": "String",
+  "phone": "String",
+  "tags": ["String"]
 }
 ```
 
