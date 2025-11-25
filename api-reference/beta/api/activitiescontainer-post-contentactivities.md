@@ -88,7 +88,33 @@ Content-Type: application/json
              "sequenceNumber": 0, 
              "isTruncated": false,
              "createdDateTime": "2025-05-27T17:23:20",
-             "modifiedDateTime": "2025-05-27T17:23:20"
+             "modifiedDateTime": "2025-05-27T17:23:20",
+             "agents": [
+              {
+                "identifier": "b262a092-6a2b-4682-9c7f-00baf80dbd84",
+                "name": "Copilot Agent",
+                "version": "1.2",
+                "blueprintId": "c262a092-6a2b-4682-9c7f-00baf80dbd94"
+              }
+            ],
+            "plugins": [
+              {
+                "identifier": "f1a2b3c4-d5e6-7890-abcd-ef1234567890",
+                "name": "Microsoft Purview Data Scanner",
+                "version": "1.1"
+              }
+            ],
+            "accessedResources_v2": [
+              {
+                "identifier": "3f2d6e5b-98d4-4f2a-9a61-45c0a8b7d123",
+                "name": "Report.xlsx",
+                "url": "https://contoso.sharepoint.com/sites/finance",
+                "labelId": "a7b4f8c9-1e2d-4f45-89b1-23456789abcd",
+                "accessType": "read",
+                "status": "success",
+                "isCrossPromptInjectionDetected": false
+              }
+            ]
           }
        ],
        "activityMetadata": { 

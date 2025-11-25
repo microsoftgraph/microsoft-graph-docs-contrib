@@ -5803,3 +5803,22 @@ Possible values for user account types (group membership), per Windows definitio
 |finalizing|
 |forceComplete|
 |unknownFutureValue|
+
+### resourceAccessStatus values
+
+|Member|
+|:---|
+|none|
+|failure|
+|success|
+|unknownFutureValue|
+
+### resourceAccessType values
+
+|Member|
+|:---|
+|none|
+|read|
+|write|
+|create|
+|unknownFutureValue|
