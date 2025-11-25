@@ -28,8 +28,6 @@ Contains information about an ad hoc call, including Public Switched Telephone N
 
 | Method | Return Type |Description |
 | :------ | :----------- | :---------- |
-| Get callRecording| [adhocCall resource type](callrecording.md) | Get a single callRecording object for an ad hoc call. |
-| Get callTranscript | [adhocCall resource type](calltranscript.md) | Get a single callTranscript object for an ad hoc call. |
 |[getAllRecordings](../api/adhoccall-getallrecordings.md)|[callRecording](callrecording.md) collection|Get all recordings from adhoc call instances initiated by a specific user.|
 |[getAllTranscripts](../api/adhoccall-getalltranscripts.md)|[callTranscript](calltranscript.md) collection|Get all transcripts from adhoc call instances initiated by a specific user.|
 
