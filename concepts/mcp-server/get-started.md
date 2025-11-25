@@ -32,7 +32,7 @@ This article describes how to provision the MCP server and configure both VS Cod
    ```
 
    > [!TIP]
-   > Run `Get-MgContext` after authentication to confirm the account, tenant, and scopes currently in use.
+   > Run `Get-EntraContext` after authentication to confirm the account, tenant, and scopes currently in use.
 
 3. Register the Microsoft MCP Server for Enterprise in your tenant and grant all permissions to Visual Studio Code:
 
