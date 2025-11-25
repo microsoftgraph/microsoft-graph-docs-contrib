@@ -59,7 +59,7 @@ Microsoft MCP Server for Enterprise is currently in public preview. It focuses o
 
 - There is no additional cost or separate license required to enable the MCP Server for Enterprise.
 - You must have the appropriate licenses for the data you access (for example, Microsoft Entra ID Governance or Microsoft Entra ID P2 for Privileged Identity Management (PIM) content).
-- Requests are limited to 100 calls per minute per user. Calls made through `microsoft_graph_get` are also subject to the standard [Microsoft Graph throttling limits](../throttling.md#identity-and-access-service-limits).
+- Requests are limited to 100 calls per minute per user. Calls made through `microsoft_graph_get` are also subject to the standard [Microsoft Graph throttling limits](../throttling-limits.md#identity-and-access-service-limits).
 
 ## Cloud availability
 
