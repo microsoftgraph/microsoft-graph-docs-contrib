@@ -117,7 +117,6 @@
       "SubArea": "Data security and compliance"
     },
     {
-        "ChangeList": [
       "ChangeList": [
         {
           "Id": "f772b158-7bd6-4602-8f3d-5cbeca16c806",
@@ -723,7 +722,7 @@
       "WorkloadArea": "Identity and access",
       "SubArea": "Directory management"
     },
-    {
+        {
       "ChangeList": [
         {
           "Id": "abaf3cec-126a-4e1d-9630-833b4c693eff",
@@ -813,7 +812,7 @@
           "Description": "Added the [blockAccessAction](https://learn.microsoft.com/en-us/graph/api/resources/blockAccessAction?view=graph-rest-beta) resource.",
           "Target": "blockAccessAction"
         },
-        {
+                {
           "Id": "abaf3cec-126a-4e1d-9630-833b4c693eff",
           "ApiChange": "Resource",
           "ChangedApiName": "classifcationErrorBase",
@@ -821,7 +820,7 @@
           "Description": "Added the [classifcationErrorBase](https://learn.microsoft.com/en-us/graph/api/resources/classifcationErrorBase?view=graph-rest-beta) resource.",
           "Target": "classifcationErrorBase"
         },
-        {
+                {
           "Id": "abaf3cec-126a-4e1d-9630-833b4c693eff",
           "ApiChange": "Resource",
           "ChangedApiName": "classificationError",
@@ -829,7 +828,7 @@
           "Description": "Added the [classificationError](https://learn.microsoft.com/en-us/graph/api/resources/classificationError?view=graph-rest-beta) resource.",
           "Target": "classificationError"
         },
-        {
+                {
           "Id": "abaf3cec-126a-4e1d-9630-833b4c693eff",
           "ApiChange": "Resource",
           "ChangedApiName": "classificationInnerError",
@@ -837,7 +836,7 @@
           "Description": "Added the [classificationInnerError](https://learn.microsoft.com/en-us/graph/api/resources/classificationInnerError?view=graph-rest-beta) resource.",
           "Target": "classificationInnerError"
         },
-        {
+                {
           "Id": "abaf3cec-126a-4e1d-9630-833b4c693eff",
           "ApiChange": "Resource",
           "ChangedApiName": "customMetadataDictionary",
@@ -909,7 +908,7 @@
           "Description": "Added the **isDefault** property to the [sensitivityLabel](https://learn.microsoft.com/en-us/graph/api/resources/security-sensitivitylabel?view=graph-rest-beta) resource.",
           "Target": "sensitivityLabel"
         },
-        {
+                {
           "Id": "abaf3cec-126a-4e1d-9630-833b4c693eff",
           "ApiChange": "Property",
           "ChangedApiName": "isEnabled",
@@ -917,7 +916,7 @@
           "Description": "Added the **isEnabled** property to the [sensitivityLabel](https://learn.microsoft.com/en-us/graph/api/resources/security-sensitivitylabel?view=graph-rest-beta) resource.",
           "Target": "sensitivityLabel"
         },
-        {
+                {
           "Id": "abaf3cec-126a-4e1d-9630-833b4c693eff",
           "ApiChange": "Property",
           "ChangedApiName": "isEndpointProtectionEnabled",
@@ -925,7 +924,7 @@
           "Description": "Added the **isEndpointProtectionEnabled** property to the [sensitivityLabel](https://learn.microsoft.com/en-us/graph/api/resources/security-sensitivitylabel?view=graph-rest-beta) resource.",
           "Target": "sensitivityLabel"
         },
-        {
+                {
           "Id": "abaf3cec-126a-4e1d-9630-833b4c693eff",
           "ApiChange": "Property",
           "ChangedApiName": "labelActions",
@@ -933,7 +932,7 @@
           "Description": "Added the **labelActions** property to the [sensitivityLabel](https://learn.microsoft.com/en-us/graph/api/resources/security-sensitivitylabel?view=graph-rest-beta) resource.",
           "Target": "sensitivityLabel"
         },
-        {
+                {
           "Id": "abaf3cec-126a-4e1d-9630-833b4c693eff",
           "ApiChange": "Property",
           "ChangedApiName": "priority",
