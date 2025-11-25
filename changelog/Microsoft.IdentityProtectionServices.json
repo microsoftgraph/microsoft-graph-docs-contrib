@@ -1,5 +1,23 @@
 {
   "changelog": [
+        {
+      "ChangeList": [
+        {
+          "Id": "06d86e7b-9fb6-48a1-aeb3-dfaadb79d9f9",
+          "ApiChange": "Member",
+          "ChangedApiName": "microsoftRevokedSessions",
+          "ChangeType": "Addition",
+          "Description": "Added the `microsoftRevokedSessions` member to the **riskDetail** enumeration.",
+          "Target": "riskDetail"
+        }
+      ],
+      "Id": "06d86e7b-9fb6-48a1-aeb3-dfaadb79d9f9",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-11-17T21:02:03.4253054Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
     {
       "ChangeList": [
         {
