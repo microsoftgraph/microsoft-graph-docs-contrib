@@ -19,10 +19,10 @@ Inherits from [baseMapFeature](../resources/basemapfeature.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get](../api/buildingmap-get.md)|[buildingMap](../resources/buildingmap.md)|Read the properties and relationships of [buildingMap](../resources/buildingmap.md) object.|
-|[Delete](../api/buildingmap-delete.md)|None|Delete a buildingMap object.|
-|[List footprints](../api/buildingmap-list-footprints.md)|[footprintMap](../resources/footprintmap.md) collection|Get a list of [footprintMap](../resources/footprintmap.md) objects for [building](../resources/building.md) footprints and their properties.|
-|[List levels](../api/buildingmap-list-levels.md)|[levelMap](../resources/levelmap.md) collection|Get a list of the [levelMap](../resources/levelmap.md) objects and their properties.|
+|[Get](../api/buildingmap-get.md)|[buildingMap](./buildingmap.md)|Get the [map](../resources/buildingmap.md) of a building in IMDF format.|
+|[Delete](../api/buildingmap-delete.md)|None|Delete the [map](../resources/buildingmap.md) of a specific building.|
+|[List footprints](../api/buildingmap-list-footprints.md)|[footprintMap](./footprintmap.md) collection|Get a list of [footprintMap](../resources/footprintmap.md) objects for [building](../resources/building.md) footprints and their properties.|
+|[List levels](../api/buildingmap-list-levels.md)|[levelMap](./levelmap.md) collection|Get a list of the [levelMap](../resources/levelmap.md) objects and their properties.|
 
 ## Properties
 |Property|Type|Description|
@@ -51,8 +51,8 @@ The following JSON representation shows the resource type.
 {
   "@odata.type": "#microsoft.graph.buildingMap",
   "id": "String (identifier)",
-  "properties": "String",
   "placeId": "String"
+  "properties": "String"
 }
 ```
 
