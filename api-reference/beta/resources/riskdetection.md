@@ -1,4 +1,3 @@
-<img width="965" height="383" alt="image" src="https://github.com/user-attachments/assets/1e242c4f-e797-4f34-be82-242102daf748" />---
 title: "riskDetection resource type"
 description: "Represents all risk detections in a Microsoft Entra tenant."
 author: "tracyshi"
