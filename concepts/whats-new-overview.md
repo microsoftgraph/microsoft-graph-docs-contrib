@@ -142,11 +142,10 @@ Use the **hasProtection** property on [sensitivityLabel](/graph/api/resources/se
 ### Teamwork and communications | Presence
 
 Use the following new endpoints to enable the management of work location for a user:
-
-- [Clear](../api-reference/beta/api/presence-clearautomaticlocation.md?view=graph-rest-beta&preserve-view=true) the automatic work location value for a user.
-- [Clear](../api-reference/beta/api/presence-clearlocation.md?view=graph-rest-beta&preserve-view=true) the work location signals for a user, including both the manual and automatic layers for the current date.
-- [Update](../api-reference/beta/api/presence-setautomaticlocation.md?view=graph-rest-beta&preserve-view=true) the automatic work location for a user.
-- [Set](../api-reference/beta/api/presence-setmanuallocation.md?view=graph-rest-beta&preserve-view=true) the user's manual work location signal.
+- [Clear](/graph/api/presence-clearautomaticlocation?view=graph-rest-beta&preserve-view=true) the automatic work location value for a user.
+- [Clear](/graph/api/presence-clearlocation?view=graph-rest-beta&preserve-view=true) the work location signals for a user, including both the manual and automatic layers for the current date.
+- [Update](/graph/api/presence-setautomaticlocation?view=graph-rest-beta&preserve-view=true) the automatic work location for a user.
+- [Set](/graph/api/presence-setmanuallocation?view=graph-rest-beta&preserve-view=true) the user’s manual work location signal.
 
 ### Teamwork and communications | Calls and online meetings
 
