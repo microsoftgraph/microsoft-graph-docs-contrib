@@ -41,12 +41,10 @@ Use a method in the [Methods](#methods) section to get the corresponding report 
 
 ### cloudPcClientAppUsageReportType values
 
-Indicates the type of client application used by users to sign in to the Cloud PC device. For example, Microsoft Remote Desktop Client, Window App.
-
 | Member                                       | Description                                                                                           |
 | :------------------------------------------- | :------------------------------------------------------------------------------------------------------------ |
-| microsoftRemoteDesktopClientUsageReport      | Indicates the report which shows the Cloud PC usage with Microsoft Remote Desktop Client. We recommend the migration to Windows App to experience the full benefits Windows App has to offer, and to avoid losing access to remote resources on March 27, 2026. [Learn more about preparing for the Remote Desktop Client for Windows end of support.](https://techcommunity.microsoft.com/blog/windows-itpro-blog/prepare-for-the-remote-desktop-client-for-windows-end-of-support/4397724)  |
-| unknownFutureValue                           | Evolvable enumeration sentinel value. Do not use.                                                     |
+| microsoftRemoteDesktopClientUsageReport      | Indicates the report that shows the Cloud PC usage with Microsoft Remote Desktop client. We recommend that you migrate to Windows App to experience its full benefits and to avoid losing access to remote resources on March 27, 2026. [Learn](https://techcommunity.microsoft.com/blog/windows-itpro-blog/prepare-for-the-remote-desktop-client-for-windows-end-of-support/4397724) more about preparing for the Remote Desktop client for Windows end of support.  |
+| unknownFutureValue                           | Evolvable enumeration sentinel value. Don't use.                                                     |
 
 ## Relationships
 None.
