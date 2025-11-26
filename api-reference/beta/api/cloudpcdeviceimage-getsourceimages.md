@@ -58,7 +58,7 @@ If successful, this function returns a `200 OK` response code and a [cloudPcSour
 
 ### Example 1: Get cloudPcSourceDeviceImage objects without any query parameters
 
-### Request
+#### Request
 
 The following example shows a request.
 
@@ -99,7 +99,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/deviceImag
 
 ---
 
-### Response
+#### Response
 
 The following example shows the response.
 
@@ -140,7 +140,7 @@ Content-Type: application/json
 
 ### Example 2: Get cloudPcSourceDeviceImage objects with a specific category
 
-### Request
+#### Request
 
 The following example shows a request.
 
@@ -157,7 +157,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/deviceImag
 
 ---
 
-### Response
+#### Response
 
 The following example shows the response.
 
