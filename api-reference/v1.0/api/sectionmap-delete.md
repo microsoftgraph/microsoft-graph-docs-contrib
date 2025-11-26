@@ -25,6 +25,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/levelmap-delete-sections-permissions.md)]
 
+> [!NOTE]
+> The Exchange Admin role is required to delete a **sectionMap**.
+
 ## HTTP request
 
 <!-- {

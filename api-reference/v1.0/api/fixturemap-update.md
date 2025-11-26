@@ -25,6 +25,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/fixturemap-update-permissions.md)]
 
+> [!NOTE]
+> The Exchange Admin role is required to create or update a **fixtureMap**.
+
 ## HTTP request
 
 <!-- {

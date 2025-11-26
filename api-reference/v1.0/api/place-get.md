@@ -226,10 +226,7 @@ Content-Type: application/json
   "placeId": "df7dd4ef-04c4-41dd-816e-35475f4dd546",
   "displayName": "Desk6",
   "parentId": "ca163ae1-14a3-4e2a-8a97-5f82d672186f",
-  "mode": {
-    "@odata.type": "#microsoft.graph.offlinePlaceMode",
-    "reason": "New"
-  }
+  "mode": { "@odata.type": "#microsoft.graph.dropInPlaceMode" }
 }
 ```
 

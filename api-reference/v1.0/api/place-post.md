@@ -245,10 +245,7 @@ Content-Type: application/json
   "parentId": "1ad0f725-6885-49c5-9a47-3b22a1f9409d",
   "tags": [],
   "isWheelChairAccessible": false,
-  "mode": {
-    "@odata.type": "#microsoft.graph.offlinePlaceMode",
-    "reason": "New"
-  }
+  "mode": { "@odata.type": "#microsoft.graph.dropInPlaceMode" }
 }
 ```
 
@@ -354,10 +351,7 @@ Content-Type: application/json
   ],
   "emailAddress": "testSpace0015d9988631755150528582@contoso.com",
   "nickname": "testSpace001",
-  "mode": {
-    "@odata.type": "#microsoft.graph.offlinePlaceMode",
-    "reason": "New"
-  }
+  "mode": { }
 }
 ```
 

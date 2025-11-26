@@ -25,7 +25,7 @@ For the list of supported methods, see [place](./place.md).
 |:-----------------------|:--------------------------------------------------|:--|
 | address                | [physicalAddress](physicaladdress.md)             | The street address of the room. |
 | audioDeviceName        | String                                            | Specifies the name of the audio device in the room. |
-| bookingType            | [bookingType](#bookingtype-values)                | Type of room. Possible values are `standard`, and `reserved`. |
+| bookingType            | [bookingType](#bookingtype-values)                | Type of room. Possible values are `standard`, `reserved` and `unknown`. |
 | building               | String                                            | Specifies the building name or building number that the room is in. |
 | capacity               | Int32                                             | Specifies the capacity of the room. |
 | displayDeviceName      | String                                            | Specifies the name of the display device in the room. |
@@ -38,6 +38,7 @@ For the list of supported methods, see [place](./place.md).
 | isWheelChairAccessible | Boolean                                           | Specifies whether the room is wheelchair accessible. Inherited from [place](./place.md). |
 | label                  | String                                            | Specifies a descriptive label for the room, for example, a number or name. Inherited from [place](./place.md). |
 | nickname               | String                                            | Specifies a nickname for the room, for example, "conf room". |
+|parentId |String |The ID of a parent [floor](./floor.md) or [section](./section.md). Inherited from [place](../resources/place.md). |
 | phone                  | String                                            | The phone number of the room. |
 | tags | String collection | Specifies other features of the room, for example, details like the type of view or furniture type. Inherited from [place](./place.md). |
 | videoDeviceName        | String                                            | Specifies the name of the video device in the room. |
@@ -82,6 +83,7 @@ The following JSON representation shows the resource type.
   "isWheelChairAccessible": true,
   "label": "String",
   "nickname": "String",
+  "parentId": "String",
   "phone": "String",
   "tags": ["String"],
   "videoDeviceName": "String"

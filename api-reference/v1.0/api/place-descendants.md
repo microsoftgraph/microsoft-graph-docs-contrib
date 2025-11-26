@@ -92,10 +92,7 @@ Content-Type: application/json
       "displayName": "desk 5",
       "parentId": "ca163ae1-14a3-4e2a-8a97-5f82d672186f",
       "isWheelChairAccessible": false,
-      "mode": {
-        "@odata.type": "#microsoft.graph.offlinePlaceMode",
-        "reason": "New"
-      }
+      "mode": { "@odata.type": "#microsoft.graph.dropInPlaceMode" }
     },
     {
       "id": "57289959-4add-4270-872b-cc93ca099ce5",

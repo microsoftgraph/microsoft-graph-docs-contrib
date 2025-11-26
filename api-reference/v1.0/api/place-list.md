@@ -29,9 +29,6 @@ You can do the following for a given tenant:
 > * Before you can use this API, ensure that the Places settings are properly configured. For more information, see [Prerequisites for Places list and descendant APIs](../resources/places-api-overview.md#prerequisites-for-places-list-and-descendant-apis).
 > * By default, this operation returns up to 100 rooms, workspaces, and room lists per page, and 1,000 buildings, floors, sections, and desks per page.
 
-Compared with the findRooms and findRoomLists functions, this operation returns a richer payload for rooms and room lists. For details about how they compare, see [Using the places API](../resources/places-api-overview.md#using-the-places-api).
-
-
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -294,10 +291,7 @@ Content-Type: application/json
       "displayName": "desk 5",
       "parentId": "ca163ae1-14a3-4e2a-8a97-5f82d672186f",
       "isWheelChairAccessible": true,
-      "mode": {
-        "@odata.type": "#microsoft.graph.offlinePlaceMode",
-        "reason": "New"
-      }
+      "mode": { "@odata.type": "#microsoft.graph.dropInPlaceMode" }
     }
   ]
 }

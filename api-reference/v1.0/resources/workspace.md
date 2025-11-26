@@ -35,7 +35,6 @@ For the list of supported methods, see [place](./place.md).
 |nickname|String|A short, friendly name for the **workspace**, often used for easier identification or display in the UI. |
 |parentId|String|The ID of a parent [section](./section.md). Inherited from [place](./place.md). |
 |phone|String|The phone number of the **workspace**. Inherited from [place](./place.md). |
-|placeId|String|An alternate immutable unique identifier of the **workspace**. Read-only. Inherited from [place](../resources/place.md).|
 |tags|String collection|Custom tags that are associated with the **workspace** for categorization or filtering. Inherited from [place](./place.md). |
 
 ## Relationships
