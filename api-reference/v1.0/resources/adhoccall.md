@@ -21,7 +21,7 @@ This resource supports subscribing to [change notifications](/graph/change-notif
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The unique identifier for the ad hoc call. Read-only.|
+| ID |String|The unique identifier for the ad hoc call. Read-only.|
 
 ## Relationships
 

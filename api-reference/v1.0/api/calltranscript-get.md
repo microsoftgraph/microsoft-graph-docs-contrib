@@ -73,6 +73,7 @@ GET /users/{userId}/onlineMeetings/{meetingId}/transcripts/{transcriptId}/conten
 
 Get a single transcript
 
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/adhocCalls/{callId}/transcripts/{transcriptId}
 GET /users/{userId}/adhocCalls/{callId}/transcripts/{transcriptId}
@@ -80,6 +81,7 @@ GET /users/{userId}/adhocCalls/{callId}/transcripts/{transcriptId}
 
 Get the content of a single transcript
 
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/adhocCalls/{callId}/transcripts/{transcriptId}/content
 GET /users/{userId}/adhocCalls/{callId}/transcripts/{transcriptId}/content
@@ -121,6 +123,7 @@ The following example shows how to get a single transcript of an online meeting.
   "sampleKeys": ["ba321e0d-79ee-478d-8e28-85a19507f456", "MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ", "MSMjMCMjNzU3ODc2ZDYtOTcwMi00MDhkLWFkNDItOTE2ZDNmZjkwZGY4"]
 }
 -->
+
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users/ba321e0d-79ee-478d-8e28-85a19507f456/onlineMeetings/MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ/transcripts/MSMjMCMjNzU3ODc2ZDYtOTcwMi00MDhkLWFkNDItOTE2ZDNmZjkwZGY4
 ```

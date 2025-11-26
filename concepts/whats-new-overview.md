@@ -142,11 +142,11 @@ Use the **hasProtection** property on [sensitivityLabel](/graph/api/resources/se
 ### Teamwork and communications | Presence
 
 Use the following new endpoints to enable the management of work location for a user:
-- [Clear](/graph/api/presence-clearautomaticlocation?view=graph-rest-beta&preserve-view=true) the automatic work location value for a user.
-- [Clear](/graph/api/presence-clearlocation?view=graph-rest-beta&preserve-view=true) the work location signals for a user, including both the manual and automatic layers for the current date.
-- [Update](/graph/api/presence-setautomaticlocation?view=graph-rest-beta&preserve-view=true) the automatic work location for a user.
-- [Set](/graph/api/presence-setmanuallocation?view=graph-rest-beta&preserve-view=true) the user’s manual work location signal.
 
+- [Clear](../api-reference/beta/api/presence-clearautomaticlocation.md)) the automatic work location value for a user.
+- [Clear](../api-reference/beta/api/presence-clearlocation.md) the work location signals for a user, including both the manual and automatic layers for the current date.
+- [Update](../api-reference/beta/api/presence-setautomaticlocation.md) the automatic work location for a user.
+- [Set](../api-reference/beta/api/presence-setmanuallocation.md) the user’s manual work location signal.
 ### Teamwork and communications | Calls and online meetings
 
 - Added the **sensitivityLabelAssignment** property to the [onlineMeeting](/graph/api/resources/onlineMeeting?view=graph-rest-beta&preserve-view=true), which represents the meeting’s sensitivity level. This ID corresponds to the identifier configured in the Microsoft Purview portal.
@@ -156,7 +156,7 @@ Use the following new endpoints to enable the management of work location for a 
 
 ### Teamwork and communications | Calls and online meetings
 
-- Use the [adhocCall](../api-reference/v1.0/resources/adhoccall.md) resource to subscribe to transcripts and recordings at the tenant level, for a specific call, or per user. For more information, see [Get change notifications for transcripts and recordings using Microsoft Graph](/graph/teams-changenotifications-callrecording-and-calltranscript).
+- Use the [adhocCall](../api-reference/beta/resources/adhoccall.md) resource to subscribe to transcripts and recordings at the tenant level, for a specific call, or per user. For more information, see [Get change notifications for transcripts and recordings using Microsoft Graph](/graph/teams-changenotifications-callrecording-and-calltranscript).
 
 ## October 2025: New and generally available
 

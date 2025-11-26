@@ -228,7 +228,7 @@ Content-type: application/json
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('f2e8e111-3887-4936-87f8-639292c70d34')/adhocCalls('1c9ddbc9-82be-46b6-8edd-bf833fe33a03')/recordings/$entity",
     "id": "MyMjMTk6NWFiOWQ2OGUxNDhlNDgyNThmYmMzOWYwOGUzOTkyN2NAdGhyZWFkLnYyIyM1ZjM2NDBlNy1hNTljLTRiZWMtODJjYS1lNjYyNTFmNzk1YjctMTc1NDg5MjIyMi1UcmFuc2NyaXB0VjIjIzA=",
-    "callId": "1c9ddbc9-82be-46b6-8edd-bf833fe33a03",	 
+    "callId": "1c9ddbc9-82be-46b6-8edd-bf833fe33a03",
     "createdDateTime": "2025-08-11T06:57:17.4065904Z",
     "endDateTime": "2025-08-11T06:57:28.2265904Z",
     "contentCorrelationId": "58cfc66a-710f-4be7-adc0-1ca5a28f2c0c-0",
