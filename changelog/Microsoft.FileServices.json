@@ -5083,6 +5083,24 @@
     {
       "ChangeList": [
         {
+          "Id": "2f4890d2-4944-4380-b7a1-14cb69b1906a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "assignedLabel",
+          "ChangeType": "Addition",
+          "Description": "Added the [assignedLabel](https://learn.microsoft.com/en-us/graph/api/resources/assignedLabel?view=graph-rest-1.0) resource.",
+          "Target": "assignedLabel"
+        }
+      ],
+      "Id": "2f4890d2-4944-4380-b7a1-14cb69b1906a",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-11-12T22:34:31.5190498Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "8c90bcec-9f17-47e9-b335-2665b8a53abc",
           "ApiChange": "Relationship",
           "ChangedApiName": "migrationJobs",
