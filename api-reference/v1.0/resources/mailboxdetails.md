@@ -12,7 +12,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents details about a [mailbox](./mailbox.md), including its unique directory identifier and associated email address.
+Represents details about a mailbox, including its unique directory identifier and associated email address.
 
 Mailboxes are associated with reservable or drop-in Places objects such as [desk](./desk.md).
 
