@@ -187,6 +187,17 @@ Namespace: microsoft.graph.security
 |unknown|
 |unknownFutureValue|
 
+### mailboxConfigurationType values
+
+|Member|
+|:---|
+|mailForwardingRule|Mail forwarding rule configuration.|
+|owaSettings|Outlook on the web (OWA) settings configuration.|
+|ewsSettings|Exchange Web Services (EWS) settings configuration.|
+|mailDelegation|Mail delegation configuration.|
+|userInboxRule|User inbox rule configuration.|
+|unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
+
 ### logDataProvider values 
 
 |Member|
