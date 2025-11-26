@@ -1,6 +1,50 @@
 {
   "changelog": [
     {
+      "ChangeList": [
+        {
+          "Id": "ce1c767e-c906-4117-bb0f-80a11b8949f0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "adhocCall",
+          "ChangeType": "Addition",
+          "Description": "Added the [adhocCall](https://learn.microsoft.com/en-us/graph/api/resources/adhocCall?view=graph-rest-1.0) resource.",
+          "Target": "adhocCall"
+        },
+        {
+          "Id": "ce1c767e-c906-4117-bb0f-80a11b8949f0",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "adhocCalls",
+          "ChangeType": "Addition",
+          "Description": "Added the **adhocCalls** relationship to the [cloudCommunications](https://learn.microsoft.com/en-us/graph/api/resources/cloudCommunications?view=graph-rest-1.0) resource.",
+          "Target": "cloudCommunications"
+        }
+      ],
+      "Id": "ce1c767e-c906-4117-bb0f-80a11b8949f0",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-11-25T19:30:25.6003569Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": "Microsoft.Teams.Shifts"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "2139f9e1-e0a4-47df-9905-ec16b82a0bf0",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "adhocCalls",
+          "ChangeType": "Addition",
+          "Description": "Added the **adhocCalls** relationship to the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-1.0) resource.",
+          "Target": "user"
+        }
+      ],
+      "Id": "2139f9e1-e0a4-47df-9905-ec16b82a0bf0",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-11-25T19:30:25.6008288Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
       "ChangeList":  [
         {
           "Id": "b3f8a7e2-4d6c-4c9a-9f3e-8a2d7c1f5b91",
