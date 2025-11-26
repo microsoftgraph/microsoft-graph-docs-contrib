@@ -1040,7 +1040,11 @@ items:
       - name: Check other access
         href: ../../api/accesspackageassignment-additionalaccess.md
     - name: Access package suggestion
-      href: ../../resources/accesspackagesuggestion.md
+      items:
+      - name: Access package suggestion
+        href: ../../resources/accesspackagesuggestion.md
+      - name: filterByCurrentUser
+        href: ../../api/accesspackagesuggestions-filterbycurrentuser.md
     - name: Approval
       items:
       - name: Approval
@@ -1379,8 +1383,6 @@ items:
         href: ../../resources/externalsponsors.md
       - name: Group members
         href: ../../resources/groupmembers.md
-      - name: Identity
-        href: ../../resources/identity.md
       - name: Identity source
         href: ../../resources/identitysource.md
       - name: Internal sponsors
@@ -2832,7 +2834,7 @@ items:
   - name: Cross-tenant migration
     items:
     - name: Overview
-      href: ../../resources/cross-tenant-migration-overview.md
+      href: ../../resources/crosstenant-migration-overview.md
     - name: Cross-tenant migration job
       items:
       - name: Cross-tenant migration job
