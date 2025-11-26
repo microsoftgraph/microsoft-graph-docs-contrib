@@ -32,7 +32,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /reports/getAttackSimulationTrainingUserCoverage
 ```
 
@@ -58,7 +58,7 @@ If successful, this function returns a `200 OK` response code and a [attackSimul
   "name": "reportroot_getattacksimulationtrainingusercoverage"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/reports/getAttackSimulationTrainingUserCoverage
 ```
 
@@ -100,7 +100,7 @@ GET https://graph.microsoft.com/beta/reports/getAttackSimulationTrainingUserCove
   "@odata.type": "Collection(microsoft.graph.attackSimulationTrainingUserCoverage)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

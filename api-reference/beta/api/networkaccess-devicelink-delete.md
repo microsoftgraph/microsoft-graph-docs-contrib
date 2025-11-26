@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 DELETE /networkAccess/connectivity/remotenetworks/{remoteNetworkId}/deviceLinks/{deviceLinkId}
 ```
 
@@ -57,7 +57,7 @@ The following is an example of a request.
   "name": "delete_devicelink"
 }
 -->
-``` http
+```http
 DELETE https://graph.microsoft.com/beta/networkAccess/connectivity/remoteNetworks/335d3a94-b5a9-41fd-b6dd-ae9a8d31a002/deviceLinks/17cb9017-4a33-424b-85fa-e62ff19531a9
 ```
 
@@ -68,7 +68,7 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 

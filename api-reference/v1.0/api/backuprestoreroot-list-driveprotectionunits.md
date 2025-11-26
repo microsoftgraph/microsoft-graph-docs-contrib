@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /solutions/backupRestore/protectionUnits/microsoft.graph.driveProtectionUnit
 GET /solutions/backupRestore/oneDriveForBusinessProtectionPolicies/{oneDriveForBusinessProtectionPolicyId}/driveProtectionUnits
 ```
@@ -70,7 +70,7 @@ The following example shows a request.
   "name": "list_all_driveprotectionunit"
 }
 -->
-``` http
+```msgraph-interactive
 GET /solutions/backupRestore/protectionUnits/microsoft.graph.driveProtectionUnit
 ```
 
@@ -113,7 +113,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.driveProtectionUnit)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 
 {
@@ -313,7 +313,7 @@ The following example shows a request.
   "name": "list_driveprotectionunit"
 }
 -->
-``` http
+```msgraph-interactive
 GET /solutions/backupRestore/oneDriveForBusinessProtectionPolicies/845457dc-4bb2-4815-bef3-8628ebd1952e/driveProtectionUnits
 ```
 
@@ -356,7 +356,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.driveProtectionUnit)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 
 {

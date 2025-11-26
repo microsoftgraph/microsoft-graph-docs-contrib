@@ -28,7 +28,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "fraudprotectionprovider_update" } -->
 [!INCLUDE [permissions-table](../includes/permissions/fraudprotectionprovider-update-permissions.md)]
 
-[!INCLUDE [rbac-fraudprovider-apis-write](../includes/rbac-for-apis/rbac-fraudprovider-apis-write.md)]
+[!INCLUDE [rbac-fraudprotection-apis-write](../includes/rbac-for-apis/rbac-fraudprotection-apis-write.md)]
 
 ## HTTP request
 
@@ -36,7 +36,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PATCH /identity/riskprevention/fraudprotectionproviders/{fraudProtectionProviderId}
 ```
 
@@ -78,7 +78,7 @@ The following example shows a request to update Arkose fraud protection provider
   "name": "update_fraudprotectionprovider"
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/identity/riskprevention/fraudprotectionproviders/9826466a-5275-438d-98e1-f3df6470a4b5
 Content-Type: application/json
 
@@ -123,7 +123,7 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 

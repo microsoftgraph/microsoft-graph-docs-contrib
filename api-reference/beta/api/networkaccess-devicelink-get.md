@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /networkAccess/connectivity/branches/{branchSiteId}/deviceLinks/{deviceLinkId}
 GET /networkAccess/connectivity/remoteNetworks/{remoteNetworkId}/deviceLinks/{deviceLinkId}
 ```
@@ -61,7 +61,7 @@ The following example shows a request.
   "name": "get_devicelink"
 }
 -->
-``` http
+```http
 GET https://graph.microsoft.com/beta/networkAccess/connectivity/remoteNetworks/dc6a7efd-6b2b-4c6a-84e7-5dcf97e62e04/deviceLinks/47aab2e9-7f5c-42ba-bbfc-1b049193126a
 ```
 
@@ -74,7 +74,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.networkaccess.deviceLink"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

@@ -60,7 +60,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
   "name": "list_federatedidentitycredential"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/applications/bcd7c908-1c4d-4d48-93ee-ff38349a75c8/federatedIdentityCredentials/
 ```
 
@@ -103,7 +103,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.federatedIdentityCredential)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

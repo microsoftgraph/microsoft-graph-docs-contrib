@@ -40,7 +40,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /identity/authenticationEventListeners/{authenticationEventListenerId}
 ```
 
@@ -69,7 +69,7 @@ The following example shows a request.
   "name": "get_authenticationeventlistener"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identity/customAuthenticationExtensions/6fc5012e-7665-43d6-9708-4370863f4e6e
 ```
 
@@ -112,7 +112,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.authenticationEventListener"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

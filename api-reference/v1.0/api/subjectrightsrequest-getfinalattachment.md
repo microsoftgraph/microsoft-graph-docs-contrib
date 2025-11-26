@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /security/subjectRightsRequests/{subjectRightsRequestId}/getFinalAttachment
 GET /privacy/subjectRightsRequests/{subjectRightsRequestId}/getFinalAttachment
 ```
@@ -56,7 +56,7 @@ If successful, this function will redirect to the Microsoft Azure blob storage l
   "name": "subjectRightsRequest_getfinalattachment"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/privacy/subjectRightsRequests/4ef5e3e6-545b-4b5f-a8b4-ff4f9980d7a9/getFinalAttachment
 ```
 
@@ -97,7 +97,7 @@ GET https://graph.microsoft.com/v1.0/privacy/subjectRightsRequests/4ef5e3e6-545b
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 ```
 

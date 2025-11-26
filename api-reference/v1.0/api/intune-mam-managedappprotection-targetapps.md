@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /deviceAppManagement/managedAppPolicies/{managedAppPolicyId}/targetApps
 POST /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/appliedPolicies/{managedAppPolicyId}/targetApps
 POST /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/intendedPolicies/{managedAppPolicyId}/targetApps
@@ -62,7 +62,7 @@ If successful, this action returns a `204 No Content` response code.
 
 ### Request
 Here is an example of the request.
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/deviceAppManagement/managedAppPolicies/{managedAppPolicyId}/targetApps
 
 Content-type: application/json
@@ -85,6 +85,6 @@ Content-length: 335
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-``` http
+```http
 HTTP/1.1 204 No Content
 ```

@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /solutions/backupRestore/sharePointProtectionPolicies/{sharePointProtectionPolicyId}/siteInclusionRules/{siteProtectionRuleId}
 GET /solutions/backupRestore/oneDriveForBusinessProtectionPolicies/{oneDriveForBusinessProtectionPolicyId}/driveInclusionRules/{driveProtectionRuleId}
 GET /solutions/backupRestore/exchangeProtectionPolicies/{exchangeProtectionPolicyId}/mailboxInclusionRules/{mailboxProtectionRuleId}
@@ -70,7 +70,7 @@ The following example shows a request.
 }
 -->
 
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/solutions/backupRestore/sharePointProtectionPolicies/71633878-8321-4950-bfaf-ed285bdd1461/siteInclusionRules/61633878-8321-4950-bfaf-ed285bdd1461
 ```
 
@@ -114,7 +114,7 @@ The following example shows the response.
 }
 -->
 
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Location: https://graph.microsoft.com/beta/solutions/backupRestore/sharePointProtectionPolicies/71633878-8321-4950-bfaf-ed285bdd1461/siteInclusionRules('61633878-8321-4950-bfaf-ed285bdd1461')
 
@@ -160,7 +160,7 @@ The following example shows a request.
 }
 -->
 
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/solutions/backupRestore/oneDriveForBusinessProtectionPolicies/71633878-8321-4950-bfaf-ed285bdd1461/driveInclusionRules/61633878-8321-4950-bfaf-ed285bdd1461
 ```
 
@@ -205,7 +205,7 @@ The following example shows the response.
 }
 -->
 
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Location: https://graph.microsoft.com/beta/solutions/backupRestore/oneDriveForBusinessProtectionPolicies/71633878-8321-4950-bfaf-ed285bdd1461/driveInclusionRules('61633878-8321-4950-bfaf-ed285bdd1461')
 
@@ -249,7 +249,7 @@ The following example shows a request.
   "name": "exchangeprotectionpolicy_get_mailboxinclusionrule"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/solutions/backupRestore/exchangeProtectionPolicies/71633878-8321-4950-bfaf-ed285bdd1461/mailboxInclusionRules/61633878-8321-4950-bfaf-ed285bdd1461
 ```
 
@@ -292,7 +292,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.mailboxProtectionRule"
 }
 -->
-``` http
+```http
 Http/1.1 200 OK
 Content-Location: https://graph.microsoft.com/beta/solutions/backupRestore/exchangeProtectionPolicies/71633878-8321-4950-bfaf-ed285bdd1461/mailboxInclusionRules('61633878-8321-4950-bfaf-ed285bdd1461')
 

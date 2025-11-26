@@ -29,7 +29,7 @@ To get a specific learning course activity based on its ID (primary key):
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /employeeExperience/learningCourseActivities/{Id}
 ```
 
@@ -38,7 +38,7 @@ To get a specific learning course activity based on its **externalCourseActivity
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /employeeExperience/learningProviders/{registrationId}/learningCourseActivities(externalCourseActivityId='{externalCourseActivityId}')
 ```
 
@@ -47,7 +47,7 @@ To get the details of a learning course activity for a user:
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET users/{user-id}/employeeExperience/learningCourseActivities/{id}
 ```
 
@@ -56,7 +56,7 @@ To get the details of a learning course activity for the signed-in user:
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET me/employeeExperience/learningCourseActivities/{id}
 ```
 
@@ -107,7 +107,7 @@ The following examples show a request to get a learning course activity using an
   "name": "get_learning_courseactivity_details_id"
 }-->
 
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/employeeExperience/learningCourseActivities/8ba2228a-e020-11ec-9d64-0242ac120003
 ```
 
@@ -146,7 +146,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.learningAssignment"
 }-->
 
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -186,7 +186,7 @@ The following example shows a request to get the details of a learning course ac
   "name": "get_learning_courseactivity_details_externalId"
 }-->
 
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/employeeExperience/learningProviders/01e8f81b-3060-4dec-acf0-0389665a0a38/learningCourseActivities(externalCourseActivityId='12a2228a-e020-11ec-9d64-0242ac120002')
 ```
 
@@ -225,7 +225,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.learningAssignment"
 }-->
 
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -266,7 +266,7 @@ The following example shows a request to get the details of a learning course ac
   "name": "get_learning_courseactivity_details"
 }-->
 
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users/7ba2228a-e020-11ec-9d64-0242ac120002/employeeExperience/learningCourseActivities/8ba2228a-e020-11ec-9d64-0242ac120003
 ```
 
@@ -306,7 +306,7 @@ The following example shows the response.
 }-->
 
 
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

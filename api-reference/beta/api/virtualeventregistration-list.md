@@ -35,7 +35,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /solutions/virtualEvents/webinars/{webinarId}/registrations
 GET /solutions/virtualEvents/webinars/{webinarId}/registrations?$filter=userId eq '{userId}'
 GET /solutions/virtualEvents/webinars/{webinarId}/registrations?$filter=email eq '{email}'
@@ -83,7 +83,7 @@ The following example shows a request.
   "sampleKeys": ["f4b39f1c-520e-4e75-805a-4b0f2016a0c6@a1a56d21-a8a6-4a6b-97f8-ced53d30f143"]
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/solutions/virtualEvents/webinars/f4b39f1c-520e-4e75-805a-4b0f2016a0c6@a1a56d21-a8a6-4a6b-97f8-ced53d30f143/registrations
 ```
 
@@ -128,7 +128,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.virtualEventRegistration)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -240,7 +240,7 @@ The following example shows the response.
   "truncated": true,
   "@odata.type": "Collection(microsoft.graph.virtualEventRegistration)"
 } -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -352,7 +352,7 @@ The following example shows the response.
   "truncated": true,
   "@odata.type": "Collection(microsoft.graph.virtualEventRegistration)"
 } -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

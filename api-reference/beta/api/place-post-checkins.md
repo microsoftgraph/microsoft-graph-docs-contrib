@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /places/{placesId}/checkIns
 ```
 
@@ -68,7 +68,7 @@ The following example shows a request.
   "name": "create_checkinclaim_from_"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/places/c8aaf4d8-6c73-46c4-bf28-b2adadafb5be/checkIns
 Content-Type: application/json
 
@@ -115,7 +115,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.checkInClaim"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 

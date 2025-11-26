@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /identityGovernance/entitlementManagement/accessPackages/{id}/getApplicablePolicyRequirements
 ```
 
@@ -64,7 +64,7 @@ The following example shows a request.
   "name": "accesspackage_getapplicablepolicyrequirements"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackages/fb449cf8-3a59-4d86-bdfd-a1b7299681de/getApplicablePolicyRequirements
 ```
 

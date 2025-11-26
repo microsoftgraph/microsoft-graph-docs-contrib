@@ -7,7 +7,7 @@ ms.localizationpriority: high
 ms.topic: reference
 ms.subservice: entra-applications
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.date: 11/03/2025
+ms.date: 11/24/2025
 #Customer intent: As a developer, I want to learn more about the permissions available in Microsoft Graph, so that I understand the impact of granting specific permissions to my app.
 ---
 
@@ -93,24 +93,178 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 ---
 
-### AgentApplication.Create
+### AgentCard.Read.All
 
 | Category | Application | Delegated |
 |--|--|--|
-| Identifier | 2f479c7e-27df-4053-826b-57d8ce55be3e | - |
-| DisplayText | Create agent applications. | - |
-| Description | Allows creating new agent applications and their associated service principals. | - |
+| Identifier | aec9e0a0-6f46-4150-a9f7-05e9e3e87399 | 73ea6732-992c-4292-98f7-9feff18d3ade |
+| DisplayText | Read all agent cards in Agent Registry | Read agent cards in Agent Registry |
+| Description | Allows the app to read all agent cards and their skills in your organization's Agent Registry without a signed-in user. | Allows the app to read agent cards and their skills in your organization's Agent Registry on behalf of the signed-in user. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### AgentCard.ReadWrite.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | ef566853-42d6-45a5-bed9-5ccb82c98b4f | b0f726a8-0fa2-4ce2-937b-fd17a446261f |
+| DisplayText | Read and write all agent cards in Agent Registry | Read and write agent cards in Agent Registry |
+| Description | Allows the app to create, read, update, and delete all agent cards and manage their skills in your organization's Agent Registry without a signed-in user. | Allows the app to create, read, update, and delete agent cards and manage their skills in your organization's Agent Registry on behalf of the signed-in user. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### AgentCard.ReadWrite.ManagedBy
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 9c4a07db-e0c1-4fb0-8e85-dfd8ae3b8201 | - |
+| DisplayText | Read and write managed-by agent cards in Agent Registry | - |
+| Description | Allows the app to read and update agent cards that designate the calling app as their manager and manage their skills in your organization's Agent Registry without a signed-in user. | - |
 | AdminConsentRequired | Yes | - |
 
 ---
 
-### AgentIdentity.Create
+### AgentCardManifest.Read.All
 
 | Category | Application | Delegated |
 |--|--|--|
-| Identifier | 2c4c43c7-1903-4658-a911-b8f2bb31e32e | - |
-| DisplayText | Create agent identities linked to itself. | - |
-| Description | Allows the app to create linked agent identities without a signed-in user. | - |
+| Identifier | 3ee18438-e6e5-4858-8f1c-d7b723b45213 | ada96a26-9579-4c29-a578-c3482a765716 |
+| DisplayText | Read all agent card manifests in Agent Registry | Read agent card manifests in Agent Registry |
+| Description | Allows the app to read all agent card manifests in your organization's Agent Registry without a signed-in user. | Allows the app to read agent card manifests in your organization's Agent Registry on behalf of the signed-in user. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### AgentCardManifest.ReadWrite.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 228b1a03-f7ca-4348-b50d-e8a547ab61af | 80151b1a-1c31-4846-ae0d-c79939ee13d1 |
+| DisplayText | Read and write all agent card manifests in Agent Registry | Read and write agent card manifests in Agent Registry |
+| Description | Allows the app to read and write to all agent card manifests in your organization's Agent Registry without a signed-in user. | Allows the app to read and write agent card manifests in your organization's Agent Registry on behalf of the signed-in user. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### AgentCardManifest.ReadWrite.ManagedBy
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 77f6034c-52f5-4526-9fa1-d55a67e72cc4 | - |
+| DisplayText | Read and write managed-by agent card manifests in Agent Registry | - |
+| Description | Allows the app to read and write agent card manifests that name it as manager in your organization's Agent Registry without a signed-in user. | - |
+| AdminConsentRequired | Yes | - |
+
+---
+
+### AgentCollection.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | e65ee1da-d1d5-467b-bdd0-3e9bb94e6e0c | fa50be38-fdff-469c-96dc-ef5fce3c64bf |
+| DisplayText | Read all collections in Agent Registry | Read collections in Agent Registry |
+| Description | Allows the app to read all collections and their membership in your organization's Agent Registry without a signed-in user. | Allows the app to read collections and their membership in your organization's Agent Registry on behalf of the signed-in user. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### AgentCollection.Read.Global
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | - | b14924c8-87f1-438a-81f2-dc370ba2f45d |
+| DisplayText | - | Read global collection in Agent Registry |
+| Description | - | Allows the app to read global collection and its membership in your organization's Agent Registry on behalf of the signed-in user. |
+| AdminConsentRequired | - | Yes |
+
+---
+
+### AgentCollection.Read.Quarantined
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | - | 43acfda3-daf3-4aa4-955d-b051d0024e82 |
+| DisplayText | - | Read quarantined collection in Agent Registry |
+| Description | - | Allows the app to read quarantined collection and its membership in your organization's Agent Registry on behalf of the signed-in user. |
+| AdminConsentRequired | - | Yes |
+
+---
+
+### AgentCollection.ReadWrite.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | feb31d7d-a227-4487-898c-e014840d07b3 | 6d8a7002-a05e-4b95-a768-0e6f0badc6c8 |
+| DisplayText | Read and write all collections in Agent Registry | Read and write collections in Agent Registry |
+| Description | Allows the app to create, read, update, and delete all collections and manage their membership in your organization's Agent Registry without a signed-in user. | Allows the app to create, read, update, and delete collections and manage their membership in your organization's Agent Registry on behalf of the signed-in user. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### AgentCollection.ReadWrite.Global
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | - | c001dd65-8a6b-4349-ab0c-4e8a410d28d2 |
+| DisplayText | - | Read and write global collection in Agent Registry |
+| Description | - | Allows the app to read and update global collection and manage its membership in your organization's Agent Registry on behalf of the signed-in user. |
+| AdminConsentRequired | - | Yes |
+
+---
+
+### AgentCollection.ReadWrite.ManagedBy
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 2e0fb698-9996-479f-926b-ce63f4397829 | - |
+| DisplayText | Read and write managed-by collections in Agent Registry | - |
+| Description | Allows the app to create, read, update, and delete collections that designate the calling app as their manager and manage their membership in your organization's Agent Registry without a signed-in user. | - |
+| AdminConsentRequired | Yes | - |
+
+---
+
+### AgentCollection.ReadWrite.Quarantined
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | - | ae331cc9-9f51-484b-a90b-124f2e4a6398 |
+| DisplayText | - | Read and write quarantined collection in Agent Registry |
+| Description | - | Allows the app to read and update quarantined collection and manage its membership in your organization's Agent Registry on behalf of the signed-in user. |
+| AdminConsentRequired | - | Yes |
+
+---
+
+### AgentInstance.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 799a4732-85b8-4c67-b048-75f0e88a232b | 4c3c738a-2df0-4877-bf4a-f796950ff34c |
+| DisplayText | Read all agent instances in Agent Registry | Read agent instances in Agent Registry |
+| Description | Allows the app to read all agent instances and their related collections in your organization's Agent Registry without a signed-in user. | Allows the app to read agent instances and their related collections in your organization's Agent Registry on behalf of the signed-in user. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### AgentInstance.ReadWrite.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 07abdd95-78dc-4353-bd32-09f880ea43d0 | fc79e324-da24-497a-b5ec-e7de08320375 |
+| DisplayText | Read and write all agent instances in Agent Registry | Read and write agent instances in Agent Registry |
+| Description | Allows the app to create, read, update, and delete all agent instances in your organization's Agent Registry without a signed-in user. | Allows the app to create, read, update, and delete agent instances in your organization's Agent Registry on behalf of the signed-in user. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### AgentInstance.ReadWrite.ManagedBy
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 782ab1bf-24f1-4c27-8bbc-2006d42792a6 | - |
+| DisplayText | Read and write managed-by agent instances in Agent Registry | - |
+| Description | Allows the app to create, read, update, and delete agent instances that designate the calling app as their manager in your organization's Agent Registry without a signed-in user. | - |
 | AdminConsentRequired | Yes | - |
 
 ---
@@ -4151,6 +4305,28 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 ---
 
+### MailboxConfigItem.Read
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 27d9d776-f4d2-426d-80ad-5f22f2b01b0a | dce2e6fc-0f4b-40da-94e2-14b4477f3d92 |
+| DisplayText | Read all users' UserConfiguration objects | Read user's UserConfiguration objects |
+| Description | Allows the app to read all users' UserConfiguration objects. | Allows the app to read user's UserConfiguration objects, on behalf of the signed-in user. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### MailboxConfigItem.ReadWrite
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | aa6d92d4-b25a-4640-aefe-3e3231e5e736 | 7d461784-7715-4b09-9f90-91a6d8722652 |
+| DisplayText | Read and write all users' UserConfiguration objects | Read and write user's UserConfiguration objects |
+| Description | Allows the app to create, read, update and delete all users' UserConfiguration objects. | Allows the app to create, read, update and delete user's UserConfiguration objects, on behalf of the signed-in user. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
 ### MailboxFolder.Read
 
 | Category | Application | Delegated |
@@ -6819,6 +6995,17 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 ---
 
+### Sites.Create.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 80819dd8-2b3b-4551-a1ad-2700fc44f533 | 0e2e68e1-3f32-4e10-9281-f749e097fcbe |
+| DisplayText | Create Site Collections without a signed in user. | Create Site Collections, on behalf of the signed-in user |
+| Description | Allow the application to create site collections without a signed in user. Upon creation the application will be granted Sites.Selected(application) + FullControl to the newly created site. | Allow the application to create site collections on behalf of the signed in user. Upon creation the application will be granted Sites.Selected(delegated) + FullControl to the newly created site. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
 ### Sites.FullControl.All
 
 | Category | Application | Delegated |
@@ -8580,6 +8767,17 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 ---
 
+### UserAuthMethod-Email.ReadWrite
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | - | 696aa421-62dc-4c99-be16-015b23444089 |
+| DisplayText | - | Read and write the signed-in user's email authentication methods |
+| Description | - | Allows the app to read and write the signed-in user's email authentication methods. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. |
+| AdminConsentRequired | - | Yes |
+
+---
+
 ### UserAuthMethod-Email.ReadWrite.All
 
 | Category | Application | Delegated |
@@ -8610,6 +8808,17 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | DisplayText | Read all users' external authentication methods | Read all users' external authentication methods |
 | Description | Allows the app to read external authentication methods of all users in your organization, without a signed-in user. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. | Allows the app to read external authentication methods of all users in your organization that the signed-in user has access to. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. |
 | AdminConsentRequired | Yes | Yes |
+
+---
+
+### UserAuthMethod-External.ReadWrite
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | - | 28c2e8f9-828a-4691-a090-f2f0b7fc07b3 |
+| DisplayText | - | Read and write the signed-in user's external authentication methods |
+| Description | - | Allows the app to read and write the signed-in user's external authentication methods. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. |
+| AdminConsentRequired | - | Yes |
 
 ---
 

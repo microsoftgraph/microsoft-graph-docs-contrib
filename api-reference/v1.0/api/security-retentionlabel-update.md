@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PATCH /security/labels/retentionLabels/{retentionLabelId}
 
 ```
@@ -70,7 +70,7 @@ Here's an example of a request.
   "name": "update_retentionlabel"
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/security/labels/retentionLabels/9563a605-e827-4324-a5a9-09efddff1e50
 Content-Type: application/json
 Content-length: 555
@@ -121,7 +121,7 @@ Here's an example of the response.
   "blockType": "response"
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 

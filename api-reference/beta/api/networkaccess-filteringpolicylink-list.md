@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /filteringProfiles/{filteringProfileId}/policies
 ```
 
@@ -57,7 +57,7 @@ The following example shows a request.
   "name": "list_filteringpolicylink"
 }
 -->
-``` http
+```http
 GET https://graph.microsoft.com/beta/networkaccess/filteringProfiles/519085fd-efb2-437c-af22-04bff0c2b571/policies
 ```
 
@@ -70,7 +70,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.networkaccess.filteringPolicyLink)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

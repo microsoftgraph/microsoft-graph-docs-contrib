@@ -59,7 +59,7 @@ To retrieve the sign-in preferences (system-preferred MFA) for a user:
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /users/{id | userPrincipalName}/authentication/signInPreferences
 ```
 
@@ -68,7 +68,7 @@ To retrieve the per-user multifactor authentication state for the signed-in user
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /me/authentication/requirements
 ```
 
@@ -79,7 +79,7 @@ To retrieve the per-user multifactor authentication state for a user:
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /users/{id | userPrincipalName}/authentication/requirements
 ```
 
@@ -107,7 +107,7 @@ The following example shows a request.
   "name": "get_authentication_signInPreferences"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/071cc716-8147-4397-a5ba-b2105951cc0b/authentication/signInPreferences
 ```
 
@@ -150,7 +150,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.signInPreferences"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -171,7 +171,7 @@ The following example shows a request.
   "name": "get_authentication_strongAuthenticationRequirements"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/071cc716-8147-4397-a5ba-b2105951cc0b/authentication/requirements
 ```
 
@@ -214,7 +214,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.strongAuthenticationRequirements"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
