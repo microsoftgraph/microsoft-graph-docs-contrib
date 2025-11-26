@@ -5,6 +5,7 @@ author: "Joey-King"
 ms.date: 11/12/2025
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
+toc.title: SharePoint user migration task parameters
 doc_type: resourcePageType
 ---
 
@@ -14,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This complex type encapsulates the parameters necessary to migrate a specific user in a source tenant to a target tenant. Must be specified when creating a new migration task using POST.
+Represents the parameters necessary to migrate a specific user in a source organization to a target organization. Must be specified when creating a new migration task using POST.
 
 Inherits from [sharePointMigrationTaskParameters](../resources/sharepointmigrationtaskparameters.md).
 
@@ -22,8 +23,8 @@ Inherits from [sharePointMigrationTaskParameters](../resources/sharepointmigrati
 
 |Property|Type|Description|
 |:---|:---|:---|
-|preferredLatestStartDateTime|DateTimeOffset|If the crossOrganizationMigrationTask doesn't start by this time, it's automatically canceled. Must be greater than the preferredStartDateTime if present. Optional. Only on OneDrive and SharePoint. Inherited from [sharePointMigrationTaskParameters](../resources/sharepointmigrationtaskparameters.md).|
-|preferredStartDateTime|DateTimeOffset|Allows the crossOrganizationMigrationTask to start some time in future as opposed to as-soon-as-possible (default). Optional. Only on OneDrive and SharePoint. Inherited from [sharePointMigrationTaskParameters](../resources/sharepointmigrationtaskparameters.md).|
+|preferredLatestStartDateTime|DateTimeOffset|If the sharePointMigrationTask doesn't start by this time, it's automatically canceled. Must be greater than the preferredStartDateTime if present. Optional. Only on OneDrive and SharePoint. Inherited from [sharePointMigrationTaskParameters](../resources/sharepointmigrationtaskparameters.md).|
+|preferredStartDateTime|DateTimeOffset|Allows the sharePointMigrationTask to start some time in future as opposed to as-soon-as-possible (default). Optional. Only on OneDrive and SharePoint. Inherited from [sharePointMigrationTaskParameters](../resources/sharepointmigrationtaskparameters.md).|
 |sourceSiteUrl|String|The SharePoint URL of the source site. Optional. Exactly one of sourceSiteId or sourceUrl must be specified. If both or neither are specified, it's an error. Only on OneDrive and SharePoint. Inherited from [sharePointMigrationTaskParameters](../resources/sharepointmigrationtaskparameters.md).|
 |sourceUserIdentity|[userIdentity](../resources/useridentity.md)|The source user in the source tenant, it includes user object ID and user principal name.|
 |targetDataLocationCode|String|The string in Microsoft Entra representing the geographic location (for example, `JPN`, `NAM`)  the target organization where the resource must be migrated to ensure data residency and compliance. Not required for single-geo target organizations or if the migration is to the default GEO of a multi-geo target organization. Optional. Only on OneDrive and SharePoint. Inherited from [sharePointMigrationTaskParameters](../resources/sharepointmigrationtaskparameters.md).|

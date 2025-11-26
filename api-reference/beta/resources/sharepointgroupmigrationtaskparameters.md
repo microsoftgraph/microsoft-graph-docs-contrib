@@ -5,6 +5,7 @@ author: "Joey-King"
 ms.date: 11/12/2025
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
+toc.title: SharePoint group migration task parameters
 doc_type: resourcePageType
 ---
 
@@ -14,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This complex type encapsulates the parameters necessary to migrate a specific group-connected site in a source tenant to a target tenant. Must be specified when creating a new migration task using POST.
+Represents the parameters necessary to migrate a specific group-connected site in a source organization to a target organization. Must be specified when creating a new migration task using POST.
 
 Inherits from [sharePointMigrationTaskParameters](../resources/sharepointmigrationtaskparameters.md).
 
@@ -29,7 +30,7 @@ Inherits from [sharePointMigrationTaskParameters](../resources/sharepointmigrati
 |targetDataLocationCode|String|The string in Microsoft Entra representing the geographic location (for example, `JPN`, `NAM`) of the target organization where the resource must be migrated to ensure data residency and compliance.  Not required for single-geo target organizations or if the migration is to the default GEO of a multi-geo target organization. Optional. Only on OneDrive and SharePoint. Inherited from [sharePointMigrationTaskParameters](../resources/sharepointmigrationtaskparameters.md).|
 |targetGroupIdentity|[groupIdentity](../resources/groupidentity.md)|The identity of the target group in the target tenant, it includes mail nickname.|
 |targetOrganizationHost|String|The root, admin, or my site host of the specific multigeo instance of the target organization where the resource needs to be migrated (to ensure data residency and compliance). Not required for single-geo target organizations or if the migration is to the default GEO of a multi-geo target organization. Optional. Only on OneDrive and SharePoint. Inherited from [sharePointMigrationTaskParameters](../resources/sharepointmigrationtaskparameters.md).|
-|targetOrganizationId|Guid|The unique Microsoft Entra companyId of the target organization to which the source resource needs to be migrated. Only on OneDrive and SharePoint. nherited from [sharePointMigrationTaskParameters](../resources/sharepointmigrationtaskparameters.md).|
+|targetOrganizationId|Guid|The unique Microsoft Entra companyId of the target organization to which the source resource needs to be migrated. Only on OneDrive and SharePoint. Inherited from [sharePointMigrationTaskParameters](../resources/sharepointmigrationtaskparameters.md).|
 |targetSiteUrl|String|The SharePoint URL of the target site. Only on OneDrive and SharePoint. Inherited from [sharePointMigrationTaskParameters](../resources/sharepointmigrationtaskparameters.md).|
 |validateOnly|Boolean|Indicates if this task is an actual migration task or is it doing validation only. When the parameter is missing, the system treats it as false. The default behavior is a real migration. Optional. Only on OneDrive and SharePoint. Inherited from [sharePointMigrationTaskParameters](../resources/sharepointmigrationtaskparameters.md).|
 

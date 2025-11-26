@@ -44,6 +44,10 @@ In the request URL, provide the following query parameters with values.
 |:---|:---|:---|
 |sourceGroupMailNickname|String|Source group mail nickname or alias.|
 
+## Optional query parameters
+
+This method supports the `$select` OData query parameter to help customize the response. You can use `$select` to choose specific properties such as **id**, **status**, or **startedDateTime**. For general information, see [OData query parameters](/graph/query-parameters).
+
 ## Request headers
 
 |Name|Description|
@@ -69,7 +73,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/solutions/sharePoint/migrations/crossOrganizationMigrationTasks/getBySourceGroupMailNickname(sourceGroupMailNickname=@nickname)?@nickname='contoso'
+GET https://graph.microsoft.com/beta/solutions/sharePoint/migrations/crossOrganizationMigrationTasks/getBySourceGroupMailNickname(sourceGroupMailNickname='contoso')
 ```
 
 ### Response
@@ -87,7 +91,7 @@ Content-Type: application/json
 
 {
   "id": "3ed6d46d-13a3-4995-b6ea-a74a20b1fac0",
-  "status": "success",
+  "status": "completed",
   "startedDateTime": "2025-7-18T09:08:04.451Z",
   "lastUpdatedDateTime": "2025-7-18T09:13:46.028Z",
   "finishedDateTime": "2025-7-18T09:13:46.028Z",

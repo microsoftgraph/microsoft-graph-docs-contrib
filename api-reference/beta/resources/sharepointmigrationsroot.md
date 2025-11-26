@@ -26,13 +26,13 @@ None.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Unique identifier for the **sharePointRoot** resource. Inherited from [entity](../resources/entity.md).|
+|id|String|Unique identifier for the **sharePointMigrationsRoot** resource. Inherited from [entity](../resources/entity.md).|
 
 ## Relationships
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|crossOrganizationMigrationTasks|[sharePointMigrationTask](../resources/sharepointmigrationtask.md) collection|Share point migration task entity|
+|crossOrganizationMigrationTasks|[sharePointMigrationTask](../resources/sharepointmigrationtask.md) collection|A collection of sharePointMigrationTask resources representing cross-organization migration tasks.|
 
 ## JSON representation
 

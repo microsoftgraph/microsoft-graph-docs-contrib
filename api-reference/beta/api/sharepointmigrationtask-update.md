@@ -62,6 +62,8 @@ If successful, this method returns a `200 OK` response code and an updated [shar
 
 ## Examples
 
+### Example 1: Create user migration task by user principal name
+
 ### Request
 
 The following example shows a request to create a user migration task by **userPrincipalName**.
@@ -122,6 +124,8 @@ Content-Type: application/json
 }
 ```
 
+### Example 2: Create user migration task by user object id
+
 ### Request
 
 The following example shows a request to create a user migration task by **userObjectId**.
@@ -140,11 +144,11 @@ Content-Type: application/json
     "targetOrganizationHost": "https://fabrico-my.sharepoint.com",
     "sourceUserIdentity":
     {
-      "id": "da157a29-f793-4dd6-9c73-41d2c73c2546",
+      "id": "da157a29-f793-4dd6-9c73-41d2c73c2546"
     },
     "targetUserIdentity":
     {
-      "id": "cb53ea98-6151-44cc-9c21-098a3c3e3988",
+      "id": "cb53ea98-6151-44cc-9c21-098a3c3e3988"
     }
   }
 }
@@ -182,6 +186,8 @@ Content-Type: application/json
 }
 ```
 
+### Example 3: Create user migration task by user object id and target data location code
+
 ### Request
 
 The following example shows a request to create a user migration task by **userObjectId** and with specific **targetDataLocationCode**.
@@ -201,11 +207,11 @@ Content-Type: application/json
     "targetDataLocationCode": null,
     "sourceUserIdentity":
     {
-      "id": "da157a29-f793-4dd6-9c73-41d2c73c2546",
+      "id": "da157a29-f793-4dd6-9c73-41d2c73c2546"
     },
     "targetUserIdentity":
     {
-      "id": "cb53ea98-6151-44cc-9c21-098a3c3e3988",
+      "id": "cb53ea98-6151-44cc-9c21-098a3c3e3988"
     }
   }
 }
@@ -246,6 +252,8 @@ Content-Type: application/json
 }
 ```
 
+### Example 4: Create site migration task
+
 ### Request
 
 The following example shows a request to create a regular site migration task.
@@ -263,7 +271,7 @@ Content-Type: application/json
     "@odata.type": "#microsoft.graph.sharePointSiteMigrationTaskParameters",
     "targetOrganizationHost": "https://fabrico-my.sharepoint.com",
     "sourceSiteUrl": "https://contoso.sharepoint.com/sites/IT",
-    "targetSiteUrl": "https://fabrico.sharepoint.com/sites/IT",
+    "targetSiteUrl": "https://fabrico.sharepoint.com/sites/IT"
   }
 }
 ```
@@ -289,10 +297,12 @@ Content-Type: application/json
     "@odata.type": "#microsoft.graph.sharePointSiteMigrationTaskParameters",
     "targetOrganizationHost": "https://fabrico-my.sharepoint.com",
     "sourceSiteUrl": "https://contoso.sharepoint.com/sites/IT",
-    "targetSiteUrl": "https://fabrico.sharepoint.com/sites/IT",
+    "targetSiteUrl": "https://fabrico.sharepoint.com/sites/IT"
   }
 }
 ```
+
+### Example 5: Create group migration task
 
 ### Request
 
@@ -353,6 +363,8 @@ Content-Type: application/json
   }
 }
 ```
+
+### Example 6: Create user migration task with preferred start date time
 
 ### Request
 
@@ -416,6 +428,8 @@ Content-Type: application/json
 }
 ```
 
+### Example 7: Create user migration task with validateOnly
+
 ### Request
 
 The following example shows a request to create a user migration task with **ValidateOnly=true** parameter.
@@ -460,7 +474,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "status": "Completed",
+  "status": "completed",
   "parameters": {
     "@odata.type": "#microsoft.graph.sharePointUserMigrationTaskParameters",
     "targetOrganizationHost": "https://fabrico-my.sharepoint.com",

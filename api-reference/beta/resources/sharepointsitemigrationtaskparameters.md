@@ -5,6 +5,7 @@ author: "Joey-King"
 ms.date: 11/12/2025
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
+toc.title: SharePoint site migration task parameters
 doc_type: resourcePageType
 ---
 
@@ -14,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This complex type encapsulates the parameters necessary to migrate a specific regular site in a source tenant to a target tenant. Must be specified when creating a new migration task using POST.
+Represents the parameters necessary to migrate a specific regular site in a source organization to a target organization. Must be specified when creating a new migration task using POST.
 
 Inherits from [sharePointMigrationTaskParameters](../resources/sharepointmigrationtaskparameters.md).
 

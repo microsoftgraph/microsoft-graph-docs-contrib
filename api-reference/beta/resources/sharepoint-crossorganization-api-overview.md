@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The SharePoint cross-tenant migration APIs enable organizations to manage the tasks during tenant-to-tenant migrations. These APIs is used to migrate a specific source resource in a source organization to a target organization.
+The SharePoint cross-tenant migration APIs enable organizations to manage the tasks during tenant-to-tenant migrations. These APIs are used to migrate a specific source resource in a source organization to a target organization.
 
 ## How to use the SharePoint migration task API
 
