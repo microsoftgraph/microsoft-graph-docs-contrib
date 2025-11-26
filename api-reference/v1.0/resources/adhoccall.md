@@ -1,6 +1,6 @@
 ---
 title: "adhocCall resource type"
-description: "Contains information about an ad hoc call, including PSTN, 1:1, and group calls."
+description: "Represents an ad hoc call, including PSTN calls, one-to-one calls, and group calls."
 author: "kanchm"
 ms.date: 11/06/2025
 ms.localizationpriority: medium
@@ -13,7 +13,7 @@ toc.title: "Ad hoc call (preview)"
 
 Namespace: microsoft.graph
 
-Contains information about an ad hoc call, including PSTN, 1:1, and group calls.
+Represents an ad hoc call, including PSTN calls, one-to-one calls, and group calls.
 
 This resource supports subscribing to [change notifications](/graph/change-notifications-overview).
 
@@ -21,7 +21,7 @@ This resource supports subscribing to [change notifications](/graph/change-notif
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The unique identifier for the ad hoc call, including PSTN, 1:1, and group calls. Read-only.|
+|id|String|The unique identifier for the ad hoc call. Read-only.|
 
 ## Relationships
 

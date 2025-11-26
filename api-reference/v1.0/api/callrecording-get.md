@@ -52,12 +52,20 @@ To use application permissions for this API, tenant administrators must create a
 
 ## HTTP request
 
-Get the content of a single recording for an online meeting
+Get a single recording for an online meeting
 
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/onlineMeetings/{meetingId}/recordings/{recordingId}
 GET /users/{userId}/onlineMeetings/{meetingId}/recordings/{recordingId}
+```
+
+Get the content of a single recording for an online meeting
+
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me/onlineMeetings/{meetingId}/recordings/{recordingId}/content
+GET /users/{userId}/onlineMeetings/{meetingId}/recordings/{recordingId}/content
 ```
 
 To get a single recording for an ad hoc call
@@ -345,9 +353,6 @@ Content-Type: video/mp4
 The following example shows how to get a single recording of an online meeting corresponding to a transcript using the **contentCorrelationId** property.
 
 #### Request
-
-``` http
-GET https://graph.microsoft.com/v1.0/me/onlineMeetings/MSoxMjczYTAxNi0yMDFkLTRmOTUtODA4My0xYjdmOTliM2VkZWIqMCoqMTk6bWVldGluZ19OV1EwWm1GbFpEY3RORFJqTmkwMFlXRm1MV0U1WXpBdE9UZzJNMk0yTm1Nd1pERTNAdGhyZWFkLnYy/recordings?$filter=contentcorrelationId+eq+'e87c8cf8-50f7-4252-8b9c-ad08ac0fa88d-0'
 
 The following example shows a request.
 

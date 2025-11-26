@@ -65,8 +65,8 @@ Get the content of a single transcript
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET me/onlineMeetings/{meetingId}/transcripts/{transcriptId}/content
-GET users/{userId}/onlineMeetings/{meetingId}/transcripts/{transcriptId}/content
+GET /me/onlineMeetings/{meetingId}/transcripts/{transcriptId}/content
+GET /users/{userId}/onlineMeetings/{meetingId}/transcripts/{transcriptId}/content
 ```
 
 ### For an ad hoc call
@@ -81,7 +81,7 @@ GET /users/{userId}/adhocCalls/{callId}/transcripts/{transcriptId}
 Get the content of a single transcript
 
 ```http
-GET me/adhocCalls/{callId}/transcripts/{transcriptId}/content
+GET /me/adhocCalls/{callId}/transcripts/{transcriptId}/content
 GET /users/{userId}/adhocCalls/{callId}/transcripts/{transcriptId}/content
 ```
 
@@ -227,13 +227,13 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context": "<https://graph.microsoft.com/v1.0/$metadata#users('f2e8e111-3887-4936-87f8-639292c70d34')/adhocCalls('5f3640e7-a59c-4bec-82ca-e66251f795b7')/transcripts/$entity>",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('f2e8e111-3887-4936-87f8-639292c70d34')/adhocCalls('5f3640e7-a59c-4bec-82ca-e66251f795b7')/transcripts/$entity",
   "id": "MyMjMTk6NWFiOWQ2OGUxNDhlNDgyNThmYmMzOWYwOGUzOTkyN2NAdGhyZWFkLnYyIyM1ZjM2NDBlNy1hNTljLTRiZWMtODJjYS1lNjYyNTFmNzk1YjctMTc1NDg5MjIyMi1UcmFuc2NyaXB0VjIjIzA=",
   "callId": "5f3640e7-a59c-4bec-82ca-e66251f795b7",
   "createdDateTime": "2025-08-11T06:03:42.9757215Z",
   "endDateTime": "2025-08-11T06:04:21.2551933Z",
   "contentCorrelationId": "c316fb26-aed9-4476-8827-b5be74f74051-10002",
-  "transcriptContentUrl": "<https://graph.microsoft.com/v1.0/users/f2e8e111-3887-4936-87f8-639292c70d34/adhocCalls/5f3640e7-a59c-4bec-82ca-e66251f795b7/transcripts('MyMjMTk6NWFiOWQ2OGUxNDhlNDgyNThmYmMzOWYwOGUzOTkyN2NAdGhyZWFkLnYyIyM1ZjM2NDBlNy1hNTljLTRiZWMtODJjYS1lNjYyNTFmNzk1YjctMTc1NDg5MjIyMi1UcmFuc2NyaXB0VjIjIzA=')/content>",
+  "transcriptContentUrl": "https://graph.microsoft.com/v1.0/users/f2e8e111-3887-4936-87f8-639292c70d34/adhocCalls/5f3640e7-a59c-4bec-82ca-e66251f795b7/transcripts('MyMjMTk6NWFiOWQ2OGUxNDhlNDgyNThmYmMzOWYwOGUzOTkyN2NAdGhyZWFkLnYyIyM1ZjM2NDBlNy1hNTljLTRiZWMtODJjYS1lNjYyNTFmNzk1YjctMTc1NDg5MjIyMi1UcmFuc2NyaXB0VjIjIzA=')/content",
   "meetingOrganizer": {
       "application": null,
       "device": null,
@@ -265,6 +265,29 @@ The following example shows how to get the content of a single transcript of an 
 GET https://graph.microsoft.com/v1.0/users/ba321e0d-79ee-478d-8e28-85a19507f456/onlineMeetings/MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ/transcripts/MSMjMCMjNzU3ODc2ZDYtOTcwMi00MDhkLWFkNDItOTE2ZDNmZjkwZGY4/content
 ```
 
+#### Response
+
+The response contains the transcript content in the body as bytes. The `content-type` header specifies the type of the transcript content. Negative offsets indicate that the transcription began while the conversation was ongoing.
+
+> [!NOTE]
+> The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "stream"
+}
+-->
+```http
+HTTP/1.1 200 OK
+Content-type: text/vtt
+
+WEBVTT
+
+00:00:16.246 --> 00:00:17.726
+<v User Name>This is a transcript test.</v>
+```
+
 ### Example 4: Get a callTranscript content for an ad hoc call
 
 #### Request
@@ -272,7 +295,7 @@ GET https://graph.microsoft.com/v1.0/users/ba321e0d-79ee-478d-8e28-85a19507f456/
 <!-- {
   "blockType": "request",
   "name": "get_callTranscript_content_adhoc",
-  "sampleKeys": ["f2e8e111-3887-4936-87f8-639292c70d34/adhocCalls/5f3640e7-a59c-4bec-82ca-e66251f795b7", "MyMjMTk6NWFiOWQ2OGUxNDhlNDgyNThmYmMzOWYwOGUzOTkyN2NAdGhyZWFkLnYyIyM1ZjM2NDBlNy1hNTljLTRiZWMtODJjYS1lNjYyNTFmNzk1YjctMTc1NDg5MjIyMi1UcmFuc2NyaXB0VjIjIzA=/"]
+  "sampleKeys": ["f2e8e111-3887-4936-87f8-639292c70d34", "5f3640e7-a59c-4bec-82ca-e66251f795b7", "MyMjMTk6NWFiOWQ2OGUxNDhlNDgyNThmYmMzOWYwOGUzOTkyN2NAdGhyZWFkLnYyIyM1ZjM2NDBlNy1hNTljLTRiZWMtODJjYS1lNjYyNTFmNzk1YjctMTc1NDg5MjIyMi1UcmFuc2NyaXB0VjIjIzA="]
 }
 -->
 
@@ -322,8 +345,10 @@ GET https://graph.microsoft.com/v1.0/users/ba321e0d-79ee-478d-8e28-85a19507f456/
 
 #### Response
 
-Response contains bytes for the transcript in the body. The `content-type` header specifies the type of the transcript content.
->**Note:** The response object shown here might be shortened for readability.
+The response contains bytes for the transcript in the body. The `content-type` header specifies the type of the transcript content.
+
+> **Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
