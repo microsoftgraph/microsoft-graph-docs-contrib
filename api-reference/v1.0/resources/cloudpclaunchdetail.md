@@ -51,3 +51,4 @@ The following JSON representation shows the resource type.
   "windows365SwitchCompatible": "Boolean"
 }
 ```
+
