@@ -332,7 +332,7 @@ items:
     href: ../../api/sharepointgroupmember-get.md
   - name: Delete
     href: ../../api/sharepointgroup-delete-members.md
-- name: SharePoint migration (preview)
+- name: SharePoint migration
   items:
   - name: Overview
     href: ../../resources/sharepointmigration-api-overview.md
@@ -394,8 +394,28 @@ items:
       href: ../../api/sharepointmigrationtask-getbysourcegroupmailnickname.md
     - name: Cancel
       href: ../../api/sharepointmigrationtask-cancel.md
+  - name: SharePoint group identity mapping
+    items:
+    - name: SharePoint group identity mapping
+      href: ../../resources/sharepointgroupidentitymapping.md
+    - name: Get
+      href: ../../api/sharepointgroupidentitymapping-get.md
+    - name: Update
+      href: ../../api/sharepointgroupidentitymapping-update.md
+  - name: SharePoint user identity mapping
+    items:
+    - name: SharePoint user identity mapping
+      href: ../../resources/sharepointuseridentitymapping.md
+    - name: Get
+      href: ../../api/sharepointuseridentitymapping-get.md
+    - name: Update
+      href: ../../api/sharepointuseridentitymapping-update.md
   - name: Complex types
     items:
+    - name: SharePoint identity mapping group migration data
+      href: ../../resources/sharepointidentitymappinggroupmigrationdata.md
+    - name: SharePoint identity mapping user migration data
+      href: ../../resources/sharepointidentitymappingusermigrationdata.md
     - name: SharePoint migration task parameters
       href: ../../resources/sharepointmigrationtaskparameters.md
     - name: SharePoint user migration  task parameters
