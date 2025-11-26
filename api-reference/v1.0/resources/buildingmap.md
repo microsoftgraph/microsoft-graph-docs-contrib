@@ -51,7 +51,7 @@ The following JSON representation shows the resource type.
 {
   "@odata.type": "#microsoft.graph.buildingMap",
   "id": "String (identifier)",
-  "placeId": "String"
+  "placeId": "String",
   "properties": "String"
 }
 ```
