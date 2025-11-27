@@ -84,7 +84,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.sharePointUserIdentityMapping",
+  "@odata.context": "https://graph.microsoft.com/stagingbeta/$metadata#solutions/sharePoint/migrations/crossOrganizationUserMappings/$entity",
   "id": "AQAAAAEAAAB1c2VyMUBjb250b3NvLmNvbQ",
   "sourceOrganizationId": "11111111-1111-1111-1111-111111111111",
   "userType": "regularUser",
