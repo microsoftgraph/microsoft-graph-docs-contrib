@@ -89,15 +89,12 @@ Content-Type: application/json
   "sourceOrganizationId": "11111111-1111-1111-1111-111111111111",
   "userType": "regularUser",
   "sourceUserIdentity": {
-    "@odata.type": "microsoft.graph.userIdentity",
     "userPrincipalName": "user1@contoso.com"
   },
   "targetUserIdentity": {
-    "@odata.type": "microsoft.graph.userIdentity",
     "userPrincipalName": "admin@a830edad9050849ken005.onmicrosoft.com"
   },
   "targetUserMigrationData": {
-    "@odata.type": "microsoft.graph.sharePointIdentityMappingUserMigrationData",
     "email": "admin@a830edad9050849ken005.onmicrosoft.com"
   }
 }
