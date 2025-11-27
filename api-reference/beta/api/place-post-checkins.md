@@ -1,6 +1,6 @@
 ---
 title: "Create checkInClaim"
-description: "Create a new checkInClaim object to record the check-in status for a specific place, such as a desk, room, or workspace, associated with a specific calendar reservation."
+description: "Create a new checkInClaim object to record the check-in status for a specific place, such as a desk or a room, associated with a specific calendar reservation."
 author: "shijieyao"
 ms.date: 08/06/2025
 ms.localizationpriority: medium
