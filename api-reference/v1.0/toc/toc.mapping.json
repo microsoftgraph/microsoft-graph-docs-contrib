@@ -233,6 +233,14 @@
             "section",
             "workspace",
             "checkInClaim"
+          ],
+          "complexTypes": [
+            "assignedPlaceMode",
+            "dropInPlaceMode",
+            "mailboxDetails",
+            "placeMode",
+            "reservablePlaceMode",
+            "resourceLink"
           ]
         }
       ]
