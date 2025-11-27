@@ -28,6 +28,7 @@ Inherits from [sharePointIdentityMapping](../resources/sharepointidentitymapping
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
+|deleted|[deleted](../resources/deleted.md)|Indicate that an identity mapping has been successfully deleted. Inherited from [sharePointIdentityMapping](../resources/sharepointidentitymapping.md).|
 |groupType|sharePointIdentityMappingGroupType|Indicates the type of group. The possible values are: `none`, `regularGroup`, `m365Group`, `unknownFutureValue`.|
 |id|String|Unique identifier for the group identity mapping. Base64-encoded String. Generated automatically. Inherited from [sharePointIdentityMapping](../resources/sharepointidentitymapping.md).|
 |sourceGroupIdentity|[identity](../resources/identity.md)|The identity information of the source group in the originating organization. Contains the ID of the source group.|
@@ -53,6 +54,7 @@ The following JSON representation shows the resource type.
   "@odata.type": "#microsoft.graph.sharePointGroupIdentityMapping",
   "groupType": "String",
   "id": "String (identifier)",
+  "deleted": {"@odata.type": "microsoft.graph.deleted"},
   "sourceGroupIdentity": {"@odata.type": "microsoft.graph.identity"},
   "sourceOrganizationId": "Guid",
   "targetGroupIdentity": {"@odata.type": "microsoft.graph.identity"},

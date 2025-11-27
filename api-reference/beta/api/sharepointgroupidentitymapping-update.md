@@ -138,6 +138,9 @@ Content-Type: application/json
       "id": "AQAAAAIAAABhYWFhYWFhYS1hYWFhLWFhYWEtYWFhYS1hYWFhYWFhYWFhYWE",
       "sourceGroupIdentity": {
         "id": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa"
+      },
+      "deleted": {
+        "state": "deleted"
       }
     }
   ]

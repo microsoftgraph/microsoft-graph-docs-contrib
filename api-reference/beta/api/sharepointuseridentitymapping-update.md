@@ -139,6 +139,9 @@ Content-Type: application/json
       "id": "AQAAAAEAAAB1c2VyMUBjb250b3NvLmNvbQ",
       "sourceUserIdentity": {
         "userPrincipalName": "user1@contoso.com"
+      },
+      "deleted": {
+        "state": "deleted"
       }
     }
   ]

@@ -27,6 +27,7 @@ None.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
+|deleted|[deleted](../resources/deleted.md)|Indicate that an identity mapping has been successfully deleted.|
 |id|String|Unique identifier for the identity mapping. Base64-encoded String. Generated automatically. Inherited from [entity](../resources/entity.md).|
 |sourceOrganizationId|Guid|The unique identifier of the source organization in the migration.|
 
@@ -47,7 +48,8 @@ The following JSON representation shows the resource type.
 {
   "@odata.type": "#microsoft.graph.sharePointIdentityMapping",
   "id": "String (identifier)",
-  "sourceOrganizationId": "Guid"
+  "sourceOrganizationId": "Guid",
+  "deleted": {"@odata.type": "microsoft.graph.deleted"}
 }
 ```
 
