@@ -2841,6 +2841,17 @@
             "microsoft.graph.security.defaultAuditData"
           ]
         },
+                {
+          "name": "Cloude scopes / zones (preview)",
+          "resources": [
+            "microsoft.graph.security.zone",
+            "microsoft.graph.security.environment",
+            "microsoft.graph.security.aggregatedEnvironment"
+          ],
+          "complexTypes": [
+              "microsoft.graph.security.auditInfo"
+          ]
+        },
         {
           "name": "Data security and compliance",
           "resources": [
