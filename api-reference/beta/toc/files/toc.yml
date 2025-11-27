@@ -332,7 +332,7 @@ items:
     href: ../../api/sharepointgroupmember-get.md
   - name: Delete
     href: ../../api/sharepointgroup-delete-members.md
-- name: SharePoint migration (preview)
+- name: SharePoint migration
   items:
   - name: Overview
     href: ../../resources/sharepointmigration-api-overview.md
