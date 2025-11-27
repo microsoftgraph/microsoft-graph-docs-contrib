@@ -28,7 +28,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /me/todo/lists/{todoTaskListId}/tasks
 POST /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks
 ```
@@ -80,7 +80,7 @@ The following example creates a **todoTask** in the specified task list, and inc
   "name": "create_todotask_from_tasks"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/me/todo/lists/AQMkADAwATM0MDAAMS0yMDkyLWVjMzYtM/tasks
 Content-Type: application/json
 
@@ -135,7 +135,7 @@ Content-Type: application/json
   "@odata.type": "microsoft.graph.todoTask"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 

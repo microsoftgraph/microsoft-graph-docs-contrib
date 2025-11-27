@@ -268,6 +268,14 @@ items:
       href: ../../api/presence-clearuserpreferredpresence.md
     - name: Set user status message
       href: ../../api/presence-setstatusmessage.md
+    - name: Set automatic location
+      href: ../../api/presence-setautomaticlocation.md
+    - name: Set manual location
+      href: ../../api/presence-setmanuallocation.md
+    - name: Clear automatic location
+      href: ../../api/presence-clearautomaticlocation.md
+    - name: Clear location
+      href: ../../api/presence-clearlocation.md
   - name: Ad hoc call
     items:
     - name: Ad hoc call (preview)
@@ -428,6 +436,10 @@ items:
       href: ../../resources/callevent.md
     - name: Emergency call event
       href: ../../resources/emergencycallevent.md
+    - name: Complex types
+      items:
+      - name: Emergency caller info
+        href: ../../resources/emergencycallerinfo.md
   - name: Call records
     items:
     - name: Overview
@@ -700,6 +712,8 @@ items:
     items:
     - name: Out of office settings
       href: ../../resources/outofofficesettings.md
+    - name: User work location
+      href: ../../resources/userworklocation.md
 - name: Devices (preview)
   items:
   - name: Teamwork device

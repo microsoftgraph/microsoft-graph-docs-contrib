@@ -37,7 +37,7 @@ Get details of your own email authentication method.
 [!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
 
 <!-- { "blockType": "ignored" } -->
-``` http
+```http
 GET /me/authentication/emailMethods
 ```
 
@@ -46,7 +46,7 @@ Get details of your own or another user's email authentication method.
 [!INCLUDE [authentication-methods-apis-users-selfservice](../includes/authentication-methods-apis-users-selfservice.md)]
 
 <!-- { "blockType": "ignored" } -->
-``` http
+```http
 GET /users/{id | userPrincipalName}/authentication/emailMethods
 ```
 
@@ -75,7 +75,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
   "name": "get_emailauthenticationmethod_2"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/authentication/emailMethods
 ```
 
@@ -119,7 +119,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.emailAuthenticationMethod)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 

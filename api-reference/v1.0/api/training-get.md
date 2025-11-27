@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /security/attackSimulation/trainings/{trainingId}
 ```
 
@@ -62,7 +62,7 @@ The following example shows a request.
   "name": "get_training"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/security/attackSimulation/trainings/21b2b7d1-11ae-a7a8-99c8-9029a4e70cc9
 ```
 
@@ -108,7 +108,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.training"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

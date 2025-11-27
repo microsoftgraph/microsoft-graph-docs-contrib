@@ -27,7 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /print/connectors/{printConnectorId}
 ```
 
@@ -56,7 +56,7 @@ If successful, this method returns a `200 OK` response code and a [printConnecto
   "name": "get_printconnector"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/print/connectors/{printConnectorId}
 ```
 
@@ -98,7 +98,7 @@ GET https://graph.microsoft.com/v1.0/print/connectors/{printConnectorId}
   "@odata.type": "microsoft.graph.printConnector"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

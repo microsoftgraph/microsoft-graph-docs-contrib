@@ -107,7 +107,15 @@ The Microsoft Defender for Identity health issues API allows you to monitor the 
 > **Note:** The Microsoft Defender for Identity health issues API is only available on the Defender for Identity plan or Microsoft 365 E5/A5/G5/F5 Security service plans.
 
 ### Sensors
-The Defender for Identity sensors management API allows you to create detailed reports of the sensors in your workspace, including information about the server name, sensor version, type, state, and health status. It also enables you to manage sensor settings, such as adding descriptions, enabling or disabling delayed updates, and specifying the domain controller that the sensor connects to for querying Entra ID.
+
+The Defender for Identity sensors management APIs allows you to:
+- Create detailed reports of the sensors in your workspace, including information about the server name, sensor version, type, state, and health status.
+- Manage sensor settings, such as adding descriptions, enabling or disabling delayed updates, and specifying the domain controller that the sensor connects to for querying Entra ID.
+- Identify sensors that are ready to be activated.
+- Define whether the sensors in your infrastructure are to be activated automatically or manually.
+
+### identityAccounts
+The [identityAccounts resource and related APIs](../resources/security-identityaccounts.md) allows you to retrieve details of users that are flagged by Microsoft Defender for Identity alerts, and apply actions such as disabling accounts and resetting the user password for the compromised user.
 
 ## Incidents
 

@@ -87,6 +87,8 @@ items:
       href: ../../api/cloudpc-restore.md
     - name: Troubleshoot
       href: ../../api/cloudpc-troubleshoot.md
+    - name: List for user
+      href: ../../api/user-list-cloudpcs.md
   - name: Cloud PC audit event
     items:
     - name: Cloud PC audit event

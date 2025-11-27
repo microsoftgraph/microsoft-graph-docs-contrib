@@ -26,6 +26,7 @@ For the list of API operations for managing this resource type, see the [authent
 |:---|:---|:---|
 |id|String|Required. Inherited from [entity](../resources/entity.md).|
 |conditions|[authenticationConditions](../resources/authenticationconditions.md)|Required. Inherited from [authenticationEventListener](../resources/authenticationeventlistener.md).|
+|displayName|String|The display name of the listener. Inherited from [authenticationEventListener](../resources/authenticationeventlistener.md).|
 |authenticationEventsFlowId|String| Inherited from [authenticationEventListener](../resources/authenticationeventlistener.md).|
 |handler|[onUserCreateStartHandler](../resources/onusercreatestarthandler.md)|Required. Configuration for what to invoke if the event resolves to this listener. This lets us define potential handler configurations per-event.|
 
@@ -47,6 +48,7 @@ The following JSON representation shows the resource type.
 {
   "@odata.type": "#microsoft.graph.onUserCreateStartListener",
   "id": "String (identifier)",
+  "displayName": "String",
   "conditions": {
     "@odata.type": "microsoft.graph.authenticationConditions"
   },

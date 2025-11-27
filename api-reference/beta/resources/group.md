@@ -57,6 +57,8 @@ This resource supports:
 | [Evaluate dynamic membership](../api/group-evaluatedynamicmembership.md) | [evaluateDynamicMembershipResult](evaluatedynamicmembershipresult.md) | Evaluate whether a user or device is or would be a member of a dynamic group. |
 | [Renew](../api/group-renew.md) | Boolean | Renews a group's expiration. When a group is renewed, the group expiration is extended by the number of days defined in the policy. |
 | [Validate properties](../api/group-validateproperties.md) | JSON | Validate a Microsoft 365 group's display name or mail nickname that complies with naming policies. |
+|[Get source of authority (SOA)](../api/onpremisessyncbehavior-get.md)|[onPremisesSyncBehavior](../resources/onpremisessyncbehavior.md)|Check whether the group object's source of authority (SOA) is the cloud or on-premises Active Directory.|
+|[Update source of authority (SOA)](../api/onpremisessyncbehavior-update.md)|[onPremisesSyncBehavior](../resources/onpremisessyncbehavior.md)|Update the group object's source of authority (SOA) to the cloud or on-premises Active Directory.|
 | **App role assignments** |  |  |
 | [List](../api/group-list-approleassignments.md) | [appRoleAssignment](approleassignment.md) collection | Get the apps and app roles to which this group has been assigned. |
 | [Add](../api/group-post-approleassignments.md) | [appRoleAssignment](approleassignment.md) | Assign an app role to this group. |

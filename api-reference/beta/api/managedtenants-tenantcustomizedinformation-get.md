@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /tenantRelationships/managedTenants/tenantsCustomizedInformation/{tenantCustomizedInformationId}
 ```
 
@@ -58,7 +58,7 @@ If successful, this method returns a `200 OK` response code and a [tenantCustomi
   "name": "get_tenantcustomizedinformation"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/tenantsCustomizedInformation/{tenantCustomizedInformationId}
 ```
 
@@ -100,7 +100,7 @@ GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/tenantsC
   "@odata.type": "microsoft.graph.managedTenants.tenantCustomizedInformation"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

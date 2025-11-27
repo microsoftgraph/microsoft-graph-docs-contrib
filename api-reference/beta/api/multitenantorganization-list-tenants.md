@@ -33,7 +33,7 @@ If called with MultiTenantOrganization.Read.All or MultiTenantOrganization.ReadW
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /tenantRelationships/multiTenantOrganization/tenants
 ```
 
@@ -64,7 +64,7 @@ The following example lists the tenants and their properties in the multi-tenant
   "name": "list_multitenantorganizationmember"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/tenantRelationships/multiTenantOrganization/tenants
 ```
 
@@ -106,7 +106,7 @@ GET https://graph.microsoft.com/beta/tenantRelationships/multiTenantOrganization
   "@odata.type": "Collection(microsoft.graph.multiTenantOrganizationMember)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

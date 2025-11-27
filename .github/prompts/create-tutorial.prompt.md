@@ -1,7 +1,7 @@
 ---
-mode: agent
+agent: agent
 model: GPT-4.1
-tools: ['runCommands', 'editFiles', 'search', 'usages', 'problems', 'fetch', 'githubRepo']
+tools: ['edit/createFile', 'edit/createDirectory', 'edit/editFiles', 'search', 'runCommands', 'usages', 'problems', 'fetch', 'githubRepo']
 description: Generate a tutorial article for Microsoft Graph
 ---
 

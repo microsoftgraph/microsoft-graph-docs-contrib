@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Update the properties of a [fileStorageContainerTypeAppPermissionGrant](../resources/filestoragecontainertypeapppermissiongrant.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -39,7 +39,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PATCH /storage/fileStorage/containerTypeRegistrations/{fileStorageContainerTypeRegistrationId}/applicationPermissionGrants/{appId}
 ```
 
@@ -73,7 +73,7 @@ The following example shows how to update app-only permissions in an existing ap
   "name": "update_filestoragecontainertypeapppermissiongrant"
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/storage/fileStorage/containerTypeRegistrations/21b52d99-7114-4c47-80b3-362b6a0bba3a/applicationPermissionGrants/11335700-9a00-4c00-84dd-0c210f203f00
 Content-Type: application/json
 
@@ -117,7 +117,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.fileStorageContainerTypeAppPermissionGrant"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

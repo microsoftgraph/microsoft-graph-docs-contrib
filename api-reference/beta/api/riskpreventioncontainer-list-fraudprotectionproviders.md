@@ -28,7 +28,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "riskpreventioncontainer_list_fraudprotectionproviders" } -->
 [!INCLUDE [permissions-table](../includes/permissions/riskpreventioncontainer-list-fraudprotectionproviders-permissions.md)]
 
-[!INCLUDE [rbac-fraudprovider-apis-read](../includes/rbac-for-apis/rbac-fraudprovider-apis-read.md)]
+[!INCLUDE [rbac-fraudprotection-apis-read](../includes/rbac-for-apis/rbac-fraudprotection-apis-read.md)]
 
 ## HTTP request
 
@@ -36,7 +36,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /identity/riskPrevention/fraudProtectionProviders
 ```
 
@@ -69,16 +69,35 @@ The following example shows a request.
   "name": "list_fraudprotectionprovider"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identity/riskprevention/fraudprotectionproviders
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-fraudprotectionprovider-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-fraudprotectionprovider-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-fraudprotectionprovider-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/list-fraudprotectionprovider-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/list-fraudprotectionprovider-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-fraudprotectionprovider-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 
@@ -90,7 +109,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.fraudProtectionProvider"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

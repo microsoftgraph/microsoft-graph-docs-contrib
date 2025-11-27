@@ -37,7 +37,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /admin/windows/updates/updatableAssets/enrollAssets
 ```
 
@@ -71,7 +71,7 @@ If successful, this action returns a `202 Accepted` response code. It doesn't re
   "name": "updatableasset_enrollassets"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/admin/windows/updates/updatableAssets/enrollAssets
 Content-Type: application/json
 
@@ -123,6 +123,6 @@ Content-Type: application/json
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 202 Accepted
 ```

@@ -30,17 +30,14 @@ includeApplications := []graphmodels.AuthenticationConditionApplicationable {
 applications.SetIncludeApplications(includeApplications)
 conditions.SetApplications(applications)
 requestBody.SetConditions(conditions)
-additionalData := map[string]interface{}{
-handler := graph.New()
-signUp := graph.New()
-fraudProtectionProvider := graph.New()
+handler := graphmodels.NewOnFraudProtectionLoadStartExternalUsersAuthHandler()
+signUp := graphmodels.NewFraudProtectionProviderConfiguration()
+fraudProtectionProvider := graphmodels.NewArkoseFraudProtectionProvider()
 id := "6fedd01b-0afb-4a07-967f-d1ccbd81102b"
 fraudProtectionProvider.SetId(&id) 
-	signUp.SetFraudProtectionProvider(fraudProtectionProvider)
-	handler.SetSignUp(signUp)
-	requestBody.SetHandler(handler)
-}
-requestBody.SetAdditionalData(additionalData)
+signUp.SetFraudProtectionProvider(fraudProtectionProvider)
+handler.SetSignUp(signUp)
+requestBody.SetHandler(handler)
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 authenticationEventListeners, err := graphClient.Identity().AuthenticationEventListeners().Post(context.Background(), requestBody, nil)

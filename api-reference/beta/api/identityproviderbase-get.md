@@ -73,7 +73,7 @@ The following example shows a request.
 }    
 -->
 
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identity/identityProviders/Amazon-OAUTH
 ```
 
@@ -147,7 +147,7 @@ The following example shows a request.
 }
 -->
 
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identity/identityProviders/MSASignup-OAUTH
 ```
 
@@ -217,7 +217,7 @@ The following example shows a request.
 }
 -->
 
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identity/identityProviders/Apple-Managed-OIDC
 ```
 
@@ -289,7 +289,7 @@ The following example shows a request.
 }
 -->
 
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identity/identityProviders/Contoso-00001111-aaaa-2222-bbbb-3333cccc4444
 ```
 
@@ -370,7 +370,7 @@ The following example shows a request.
   "name": "get_oidcidentityprovider_from_identityproviderbase",
 }    
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identity/identityProviders/12345678-abcd-1234-cdef-aaaaaaaaaaaa
 ```
 

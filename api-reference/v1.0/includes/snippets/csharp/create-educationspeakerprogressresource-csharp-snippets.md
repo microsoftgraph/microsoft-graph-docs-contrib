@@ -8,71 +8,37 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Dependencies
 using Microsoft.Graph.Models;
-using Microsoft.Kiota.Abstractions.Serialization;
 
 var requestBody = new EducationAssignmentResource
 {
 	DistributeForStudentWork = true,
-	Resource = new EducationResource
+	Resource = new EducationSpeakerProgressResource
 	{
 		OdataType = "microsoft.graph.educationSpeakerProgressResource",
 		DisplayName = "speakerProgressTestResource",
-		AdditionalData = new Dictionary<string, object>
+		RecordingTimeLimitInMinutes = 5,
+		ShowRehearsalReportToStudentBeforeMediaUpload = true,
+		MaxRecordingAttempts = 1,
+		IsVideoRequired = true,
+		IsAiFeedbackEnabled = true,
+		PresentationTitle = "speakerProgressTestResource",
+		SpokenLanguageLocale = "en-US",
+		SpeakerCoachSettings = new EducationSpeakerCoachSettings
 		{
+			DeliverySettings = new EducationSpeakerCoachDeliverySettings
 			{
-				"recordingTimeLimitInMinutes" , 5
+				IsPronunciationEnabled = true,
 			},
+		},
+		AiFeedbackCriteria = new EducationAiFeedbackCriteria
+		{
+			SpeechType = EducationSpeechType.Informative,
+			AiFeedbackSettings = new EducationAiFeedbackSettings
 			{
-				"showRehearsalReportToStudentBeforeMediaUpload" , true
-			},
-			{
-				"maxRecordingAttempts" , 1
-			},
-			{
-				"isVideoRequired" , true
-			},
-			{
-				"isAiFeedbackEnabled" , true
-			},
-			{
-				"presentationTitle" , "speakerProgressTestResource"
-			},
-			{
-				"spokenLanguageLocale" , "en-US"
-			},
-			{
-				"speakerCoachSettings" , new UntypedObject(new Dictionary<string, UntypedNode>
+				DeliverySettings = new EducationAiFeedbackDeliverySettings
 				{
-					{
-						"deliverySettings", new UntypedObject(new Dictionary<string, UntypedNode>
-						{
-							{
-								"isPronunciationEnabled", new UntypedBoolean(true)
-							},
-						})
-					},
-				})
-			},
-			{
-				"aiFeedbackCriteria" , new UntypedObject(new Dictionary<string, UntypedNode>
-				{
-					{
-						"speechType", new UntypedString("informative")
-					},
-					{
-						"aiFeedbackSettings", new UntypedObject(new Dictionary<string, UntypedNode>
-						{
-							{
-								"deliverySettings", new UntypedObject(new Dictionary<string, UntypedNode>
-								{
-									{
-										"isStyleEnabled", new UntypedBoolean(true)
-									},
-								})
-							},
-						})
-					},
-				})
+					IsStyleEnabled = true,
+				},
 			},
 		},
 	},

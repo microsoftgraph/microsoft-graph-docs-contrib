@@ -37,7 +37,7 @@ Retrieve details of your own temporary access pass authentication method.
 [!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
 
 <!-- { "blockType": "ignored" } -->
-``` http
+```http
 GET /me/authentication/temporaryAccessPassMethods/{temporaryAccessPassAuthenticationMethodId}
 ```
 
@@ -46,7 +46,7 @@ Retrieve details of your own or another user's temporary access pass authenticat
 [!INCLUDE [authentication-methods-apis-users-selfservice](../includes/authentication-methods-apis-users-selfservice.md)]
 
 <!-- { "blockType": "ignored" } -->
-``` http
+```http
 GET /users/{id | userPrincipalName}/authentication/temporaryAccessPassMethods/{temporaryAccessPassAuthenticationMethodId}
 ```
 
@@ -115,7 +115,7 @@ GET https://graph.microsoft.com/beta/users/071cc716-8147-4397-a5ba-b2105951cc0b/
   "@odata.type": "microsoft.graph.temporaryAccessPassAuthenticationMethod"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -124,6 +124,7 @@ Content-Type: application/json
     "id": "6f1967b7-15e8-4935-ac26-d50770ed07a7",
     "temporaryAccessPass": null,
     "createdDateTime": "2022-06-02T16:21:09.5893903Z",
+    "lastUsedDateTime": null,
     "startDateTime": "2022-06-05T00:00:00Z",
     "lifetimeInMinutes": 60,
     "isUsableOnce": false,

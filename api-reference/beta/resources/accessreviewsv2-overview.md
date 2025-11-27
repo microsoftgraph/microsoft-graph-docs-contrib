@@ -23,6 +23,7 @@ Typical customer scenarios for access reviews include:
 - Customers can review and certify guest user access to groups through group memberships. Reviewers can use the insights that are provided to efficiently decide whether guests should have continued access.
 - Customers can review and certify employee access to Microsoft Entra resources.
 - Customers can review and audit assignments to Microsoft Entra ID privileged roles. This supports organizations in the management of privileged access.
+- Customers can review access to resources specified in a catalog. For external resources in the catalog, the customer can upload the entitlement data for the external resource after the access review instance has reached an `Initializing` state. To perform or query an access review to resources within a catalog, the customer must also pass in the header `x-accessreviews-version: vnext` when using any of the below methods.
 
 The tenant where an access review is being created or managed via the API must have sufficient purchased or trial licenses. For more information about the license requirements, see [Access reviews license requirements](/azure/active-directory/governance/access-reviews-overview#license-requirements).
 

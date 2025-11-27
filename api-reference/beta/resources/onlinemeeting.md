@@ -65,6 +65,7 @@ Inherits from [onlineMeetingBase](../resources/onlinemeetingbase.md).
 | chatRestrictions      | [chatRestrictions](../resources/chatrestrictions.md) | Specifies the configuration settings for meeting chat restrictions. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
 | creationDateTime      | DateTime | The meeting creation time in UTC. Read-only.     |
 | endDateTime           | DateTime | The meeting end time in UTC. Required when you create an online meeting. |
+| expiryDateTime | DateTimeOffset | Indicates the date and time when the meeting resource expires. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
 | externalId            | String | The external ID that is a custom identifier. Optional. |
 | id | String | The default ID associated with the online meeting. Read-only. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md).    |
 | isEndToEndEncryptionEnabled | Boolean | Indicates whether end-to-end encryption (E2EE) is enabled for the online meeting. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
@@ -73,9 +74,12 @@ Inherits from [onlineMeetingBase](../resources/onlinemeetingbase.md).
 | joinMeetingIdSettings | [joinMeetingIdSettings](joinmeetingidsettings.md) | Specifies the **joinMeetingId**, the meeting passcode, and the requirement for the passcode. Once an **onlineMeeting** is created, the **joinMeetingIdSettings** can't be modified. To make any changes to this property, the meeting needs to be canceled and a new one needs to be created. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
 | joinWebUrl | String | The join URL of the online meeting. The format of the URL might change; therefore, users shouldn't rely on any information extracted from parsing the URL. Read-only. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
 | lobbyBypassSettings | [lobbyBypassSettings](lobbybypasssettings.md) | Specifies which participants can bypass the meeting lobby. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
+| meetingOptionsWebUrl | String | Provides the URL to the Teams meeting options page for the specified meeting. This link allows *only the organizer* to configure meeting settings. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
+| meetingSpokenLanguageTag | String | Specifies the spoken language used during the meeting for recording and transcription purposes. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
 | meetingTemplateId | String | The ID of the [meeting template](/microsoftteams/create-custom-meeting-template). |
 | participants | [meetingParticipants](meetingparticipants.md) | The participants associated with the online meeting, including the organizer and the attendees. |
 | recordAutomatically | Boolean | Indicates whether to record the meeting automatically. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
+|sensitivityLabelAssignment|[onlineMeetingSensitivityLabelAssignment](../resources/onlinemeetingsensitivitylabelassignment.md)|Specifies the sensitivity label applied to the Teams meeting.|
 | startDateTime | DateTime | The meeting start time in UTC. Required when you create an online meeting. |
 | shareMeetingChatHistoryDefault | [meetingChatHistoryDefaultMode](#meetingchathistorydefaultmode-values) | Specifies whether meeting chat history is shared with participants. Possible values are: `all`, `none`, `unknownFutureValue`. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
 | subject | String | The subject of the online meeting. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
@@ -183,6 +187,7 @@ The following JSON representation shows the resource type.
   "chatRestrictions":{"@odata.type": "microsoft.graph.chatRestrictions"},
   "creationDateTime": "String (timestamp)",
   "endDateTime": "String (timestamp)",
+  "expiryDateTime": "String (timestamp)",
   "externalId": "String",
   "id": "String (identifier)",
   "isEndToEndEncryptionEnabled": "Boolean",
@@ -191,7 +196,12 @@ The following JSON representation shows the resource type.
   "joinMeetingIdSettings": {"@odata.type": "microsoft.graph.joinMeetingIdSettings"},
   "joinWebUrl": "String",
   "lobbyBypassSettings": {"@odata.type": "microsoft.graph.lobbyBypassSettings"},
+  "meetingOptionsWebUrl": "String",
+  "meetingSpokenLanguageTag": "String",
   "meetingTemplateId": "String",
+  "sensitivityLabelAssignment": {
+      "@odata.type": "microsoft.graph.onlineMeetingSensitivityLabelAssignment"
+  },
   "participants": {"@odata.type": "microsoft.graph.meetingParticipants"},
   "recordAutomatically": "Boolean",
   "shareMeetingChatHistoryDefault": "String",
