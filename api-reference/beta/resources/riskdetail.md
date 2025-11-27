@@ -1,0 +1,44 @@
+---
+title: "riskDetail enum type"
+description: "Represents the reason behind a specific state of a risky user, sign-in, service principal, or agent."
+author: "FaithOmbongi"
+ms.localizationpriority: medium
+ms.subservice: "entra-sign-in"
+doc_type: enumPageType
+---
+
+# riskDetail enum type
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Represents the reason behind a specific state of a risky user, sign-in, service principal, or agent.
+
+This enumeration is used by multiple resources. The possible values are: `none`, `adminGeneratedTemporaryPassword`, `userPerformedSecuredPasswordChange`, `userPerformedSecuredPasswordReset`, `adminConfirmedSigninSafe`, `aiConfirmedSigninSafe`, `userPassedMFADrivenByRiskBasedPolicy`, `adminDismissedAllRiskForUser`, `adminConfirmedSigninCompromised`, `hidden`, `adminConfirmedUserCompromised`, `unknownFutureValue`, `adminConfirmedServicePrincipalCompromised`, `adminDismissedAllRiskForServicePrincipal`, `m365DAdminDismissedDetection`, `userChangedPasswordOnPremises`, `adminDismissedRiskForSignIn`, `adminConfirmedAccountSafe`, `adminConfirmedAgentSafe`, `adminConfirmedAgentCompromised`, `adminDismissedRiskForAgent`. Use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `adminConfirmedServicePrincipalCompromised`, `adminDismissedAllRiskForServicePrincipal`, `m365DAdminDismissedDetection`, `userChangedPasswordOnPremises`, `adminDismissedRiskForSignIn`, `adminConfirmedAccountSafe`, `adminConfirmedAgentSafe`, `adminConfirmedAgentCompromised`, `adminDismissedRiskForAgent`.
+
+## Members
+
+| Member | Value | Description |
+|:---|:---|:---|
+| none | 0 | No details are available for the risk state.<br/><br/>Applies to:<li>[agentRiskDetection](../resources/agentriskdetection.md)</li><li>[riskDetection](../resources/riskdetection.md)</li><li>[riskServicePrincipalActivity](../resources/riskserviceprincipalactivity.md)</li><li>[riskUserActivity](../resources/riskuseractivity.md)</li><li>[riskyAgent](../resources/riskyagent.md)</li><li>[riskyServicePrincipal](../resources/riskyserviceprincipal.md)</li><li>[riskyUser](../resources/riskyuser.md)</li><li>[servicePrincipalRiskDetection](../resources/serviceprincipalriskdetection.md)</li><li>[signIn](../resources/signin.md)</li> |
+| adminGeneratedTemporaryPassword | 1 | An admin generated a temporary password for the user.<br/><br/>Applies to:<li>[riskDetection](../resources/riskdetection.md)</li><li>[riskUserActivity](../resources/riskuseractivity.md)</li><li>[riskyUser](../resources/riskyuser.md)</li><li>[signIn](../resources/signin.md)</li> |
+| userPerformedSecuredPasswordChange | 2 | The user performed a secure password change.<br/><br/>Applies to:<li>[riskDetection](../resources/riskdetection.md)</li><li>[riskUserActivity](../resources/riskuseractivity.md)</li><li>[riskyUser](../resources/riskyuser.md)</li><li>[signIn](../resources/signin.md)</li> |
+| userPerformedSecuredPasswordReset | 3 | The user performed a secure password reset.<br/><br/>Applies to:<li>[riskDetection](../resources/riskdetection.md)</li><li>[riskUserActivity](../resources/riskuseractivity.md)</li><li>[riskyUser](../resources/riskyuser.md)</li><li>[signIn](../resources/signin.md)</li> |
+| adminConfirmedSigninSafe | 4 | An admin confirmed the sign-in as safe.<br/><br/>Applies to:<li>[riskDetection](../resources/riskdetection.md)</li><li>[riskUserActivity](../resources/riskuseractivity.md)</li><li>[riskyUser](../resources/riskyuser.md)</li><li>[signIn](../resources/signin.md)</li> |
+| aiConfirmedSigninSafe | 5 | AI confirmed the sign-in as safe.<br/><br/>Applies to:<li>[riskDetection](../resources/riskdetection.md)</li><li>[riskUserActivity](../resources/riskuseractivity.md)</li><li>[riskyUser](../resources/riskyuser.md)</li><li>[signIn](../resources/signin.md)</li> |
+| userPassedMFADrivenByRiskBasedPolicy | 6 | The user passed multifactor authentication (MFA) driven by a risk-based policy.<br/><br/>Applies to:<li>[riskDetection](../resources/riskdetection.md)</li><li>[riskUserActivity](../resources/riskuseractivity.md)</li><li>[riskyUser](../resources/riskyuser.md)</li><li>[signIn](../resources/signin.md)</li> |
+| adminDismissedAllRiskForUser | 7 | An admin dismissed all risk for the user.<br/><br/>Applies to:<li>[riskDetection](../resources/riskdetection.md)</li><li>[riskUserActivity](../resources/riskuseractivity.md)</li><li>[riskyUser](../resources/riskyuser.md)</li><li>[signIn](../resources/signin.md)</li> |
+| adminConfirmedSigninCompromised | 8 | An admin confirmed the sign-in as compromised.<br/><br/>Applies to:<li>[riskDetection](../resources/riskdetection.md)</li><li>[riskUserActivity](../resources/riskuseractivity.md)</li><li>[riskyUser](../resources/riskyuser.md)</li><li>[signIn](../resources/signin.md)</li> |
+| hidden | 9 | The risk state is hidden.<br/><br/>Applies to:<li>[riskDetection](../resources/riskdetection.md)</li><li>[riskServicePrincipalActivity](../resources/riskserviceprincipalactivity.md)</li><li>[riskUserActivity](../resources/riskuseractivity.md)</li><li>[riskyServicePrincipal](../resources/riskyserviceprincipal.md)</li><li>[riskyUser](../resources/riskyuser.md)</li><li>[servicePrincipalRiskDetection](../resources/serviceprincipalriskdetection.md)</li><li>[signIn](../resources/signin.md)</li> |
+| adminConfirmedUserCompromised | 10 | An admin confirmed the user as compromised.<br/><br/>Applies to:<li>[riskDetection](../resources/riskdetection.md)</li><li>[riskUserActivity](../resources/riskuseractivity.md)</li><li>[riskyUser](../resources/riskyuser.md)</li><li>[signIn](../resources/signin.md)</li> |
+| unknownFutureValue | 11 | Evolvable enumeration sentinel value. Don't use.<br/><br/>Applies to:<li>[agentRiskDetection](../resources/agentriskdetection.md)</li><li>[riskDetection](../resources/riskdetection.md)</li><li>[riskServicePrincipalActivity](../resources/riskserviceprincipalactivity.md)</li><li>[riskUserActivity](../resources/riskuseractivity.md)</li><li>[riskyAgent](../resources/riskyagent.md)</li><li>[riskyServicePrincipal](../resources/riskyserviceprincipal.md)</li><li>[riskyUser](../resources/riskyuser.md)</li><li>[servicePrincipalRiskDetection](../resources/serviceprincipalriskdetection.md)</li><li>[signIn](../resources/signin.md)</li> |
+| adminConfirmedServicePrincipalCompromised | 12 | An admin confirmed the service principal as compromised.<br/><br/>Applies to:<li>[riskDetection](../resources/riskdetection.md)</li><li>[riskServicePrincipalActivity](../resources/riskserviceprincipalactivity.md)</li><li>[riskyServicePrincipal](../resources/riskyserviceprincipal.md)</li><li>[riskyUser](../resources/riskyuser.md)</li><li>[servicePrincipalRiskDetection](../resources/serviceprincipalriskdetection.md)</li><li>[signIn](../resources/signin.md)</li> |
+| adminDismissedAllRiskForServicePrincipal | 13 | An admin dismissed all risk for the service principal.<br/><br/>Applies to:<li>[riskDetection](../resources/riskdetection.md)</li><li>[riskServicePrincipalActivity](../resources/riskserviceprincipalactivity.md)</li><li>[riskyServicePrincipal](../resources/riskyserviceprincipal.md)</li><li>[riskyUser](../resources/riskyuser.md)</li><li>[servicePrincipalRiskDetection](../resources/serviceprincipalriskdetection.md)</li><li>[signIn](../resources/signin.md)</li> |
+| m365DAdminDismissedDetection | 14 | A Microsoft 365 Defender admin dismissed the detection.<br/><br/>Applies to:<li>[riskDetection](../resources/riskdetection.md)</li><li>[riskyUser](../resources/riskyuser.md)</li><li>[signIn](../resources/signin.md)</li> |
+| userChangedPasswordOnPremises | 15 | The user changed their password on-premises.<br/><br/>Applies to:<li>[riskyUser](../resources/riskyuser.md)</li><li>[signIn](../resources/signin.md)</li> |
+| adminDismissedRiskForSignIn | 16 | An admin dismissed the risk for the sign-in.<br/><br/>Applies to:<li>[riskyUser](../resources/riskyuser.md)</li><li>[signIn](../resources/signin.md)</li> |
+| adminConfirmedAccountSafe | 17 | An admin confirmed the account as safe.<br/><br/>Applies to:<li>[riskyUser](../resources/riskyuser.md)</li><li>[signIn](../resources/signin.md)</li> |
+| adminConfirmedAgentSafe | 18 | An admin confirmed the agent as safe.<br/><br/>Applies to:<li>[agentRiskDetection](../resources/agentriskdetection.md)</li><li>[riskyAgent](../resources/riskyagent.md)</li> |
+| adminConfirmedAgentCompromised | 19 | An admin confirmed the agent as compromised.<br/><br/>Applies to:<li>[agentRiskDetection](../resources/agentriskdetection.md)</li><li>[riskyAgent](../resources/riskyagent.md)</li> |
+| adminDismissedRiskForAgent | 20 | An admin dismissed the risk for the agent.<br/><br/>Applies to:<li>[agentRiskDetection](../resources/agentriskdetection.md)</li><li>[riskyAgent](../resources/riskyagent.md)</li> |
