@@ -13,7 +13,7 @@ ms.date: 04/04/2024
 Namespace: microsoft.graph
 
 > [!CAUTION]
-> The **sharedWithMe** API is deprecated and will operate in a degraded state until November, 2026 after which it will stop returning data.
+> The **sharedWithMe** API is deprecated and will operate in a degraded state until November, 2026, after which it will stop returning data.
 
 Get a list of [driveItem](../resources/driveitem.md) objects shared with the owner of a [drive](../resources/drive.md).
 
