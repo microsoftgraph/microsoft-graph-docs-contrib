@@ -1063,40 +1063,6 @@
       "CreatedDateTime": "2025-02-20T18:48:10.5721975Z",
       "WorkloadArea": "Security",
       "SubArea": "eDiscovery"
-    },
-    {
-      "ChangeList": [
-        {
-          "Id": "bbf1bc12-f27a-4c86-865b-392c7bd14976",
-          "ApiChange": "Enumeration",
-          "ChangedApiName": "recipientType",
-          "ChangeType": "Addition",
-          "Description": "Added the **recipientType** enumeration type.",
-          "Target": "recipientType"
-        },
-        {
-          "Id": "bbf1bc12-f27a-4c86-865b-392c7bd14976",
-          "ApiChange": "Relationship",
-          "ChangedApiName": "caseMembers",
-          "ChangeType": "Addition",
-          "Description": "Added the **caseMembers** relationship to the [ediscoveryCase](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoveryCase?view=graph-rest-1.0) resource.",
-          "Target": "ediscoveryCase"
-        },
-        {
-          "Id": "bbf1bc12-f27a-4c86-865b-392c7bd14976",
-          "ApiChange": "Resource",
-          "ChangedApiName": "ediscoveryCaseMember",
-          "ChangeType": "Addition",
-          "Description": "Added the [ediscoveryCaseMember](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoveryCaseMember?view=graph-rest-1.0) resource.",
-          "Target": "ediscoveryCaseMember"
-        }
-      ],
-      "Id": "bbf1bc12-f27a-4c86-865b-392c7bd14976",
-      "Cloud": "Prod",
-      "Version": "v1.0",
-      "CreatedDateTime": "2025-11-25T21:34:30.6183597Z",
-      "WorkloadArea": "Compliance",
-      "SubArea": ""
     }
   ]
 }
