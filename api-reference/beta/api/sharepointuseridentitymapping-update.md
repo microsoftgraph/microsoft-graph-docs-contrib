@@ -51,6 +51,7 @@ PATCH /solutions/sharePoint/migrations/crossOrganizationUserMappings
 
 |Property|Type|Description|
 |:---|:---|:---|
+|deleted|[deleted](../resources/deleted.md)|Indicate that an identity mapping has been successfully deleted. Inherited from [sharePointIdentityMapping](../resources/sharepointidentitymapping.md). Optional.|
 |sourceUserIdentity|[userIdentity](../resources/useridentity.md)|The identity information of the source user.|
 |sourceOrganizationId|Guid|The unique identifier of the source organization in the migration. Inherited from [sharePointIdentityMapping](../resources/sharepointidentitymapping.md).|
 |targetUserIdentity|[userIdentity](../resources/useridentity.md)|The identity information of the target user.|
