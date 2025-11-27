@@ -25,7 +25,7 @@ For the list of supported methods, see [place](./place.md).
 |:-----------------------|:--------------------------------------------------|:--|
 | address                | [physicalAddress](physicaladdress.md)             | The street address of the room. |
 | audioDeviceName        | String                                            | Specifies the name of the audio device in the room. |
-| bookingType            | [bookingType](#bookingtype-values)                | Type of room. Possible values are `standard`, `reserved` and `unknown`. |
+| bookingType            | [bookingType](#bookingtype-values)                | Type of room. Possible values are: `unknown`, `standard`, `reserved`. |
 | building               | String                                            | Specifies the building name or building number that the room is in. |
 | capacity               | Int32                                             | Specifies the capacity of the room. |
 | displayDeviceName      | String                                            | Specifies the name of the display device in the room. |
@@ -47,6 +47,7 @@ For the list of supported methods, see [place](./place.md).
 
 | Value    | Description                                               |
 |:---------|:----------------------------------------------------------|
+| unknown  | Unspecified booking behavior. We don't recommend that you use this value. |
 | reserved | The room is available only on a first-come, first-served basis. It can't be reserved.|
 | standard | The room is available and can be reserved. This value is the default. |
 
