@@ -77,4 +77,5 @@ The following JSON representation shows the resource type.
   "upn": "String",
   "configurationId": "String",
   "externalDirectoryObjectId": "String"
+}
 ```
