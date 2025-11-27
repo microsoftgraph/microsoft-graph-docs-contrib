@@ -18,6 +18,14 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 > [!IMPORTANT]
 > Features in _preview_ status are subject to change without notice, and might not be promoted to generally available (GA) status. Don't use preview features in production apps.
 
+## December 2025: New and generally available
+
+### Security | eDiscovery
+
+[Retry Hold Policy API](../api-reference/v1.0/api/security-ediscoveryholdpolicy-retrypolicy.md): Trigger a retry of an [eDiscovery hold policy](../api-reference/v1.0/resources/security-ediscoveryholdpolicy.md).
+
+[Case Member API](../api-reference/v1.0/resources/security-ediscoverycasemember.md): Represents an eDiscovery case member. In the context of eDiscovery, case members are granted access to an ediscoveryCase and its data. These cases are accessible to case members via the eDiscovery UX portal or through the eDiscovery case Microsoft Graph APIs.
+
 ## November 2025: New and generally available
 
 ### Backup storage

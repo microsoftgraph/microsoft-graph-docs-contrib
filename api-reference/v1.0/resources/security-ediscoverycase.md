@@ -78,6 +78,7 @@ In the context of eDiscovery, contains custodians, searches, review sets. For de
 |searches|[microsoft.graph.security.ediscoverySearch](../resources/security-ediscoverysearch.md) collection|Returns a list of **eDiscoverySearch** objects associated with this case.|
 |settings|[microsoft.graph.security.ediscoveryCaseSettings](../resources/security-ediscoverycasesettings.md)|Returns a list of **eDIscoverySettings** objects in the case.|
 |tags|[microsoft.graph.security.ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md) collection|Returns a list of **ediscoveryReviewTag** objects associated to this case.|
+|caseMembers|[microsoft.graph.security.ediscoveryCaseMember](../resources/security-ediscoverycasemember.md) collection|Returns a list of **ediscoveryCaseMember** objects associated to this case.|
 
 ## JSON representation
 The following JSON representation shows the resource type.
