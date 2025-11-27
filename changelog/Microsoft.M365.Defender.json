@@ -3357,20 +3357,44 @@
       "SubArea": "Alerts and incidents"
       },
       {
-      "ChangeList": [
-        {
-          "Id": "4150af3b-be39-4935-8d5b-4ec8a284a005",
-          "ApiChange": "Resource",
-          "ChangedApiName": "activeDirectoryDomainEvidence",
-          "ChangeType": "Addition",
-          "Description": "Added the [activeDirectoryDomainEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-activeDirectoryDomainEvidence?view=graph-rest-1.0) resource.",
-          "Target": "activeDirectoryDomainEvidence"
-        }
+	      "ChangeList": [
+	        {
+	          "Id": "4150af3b-be39-4935-8d5b-4ec8a284a005",
+	          "ApiChange": "Resource",
+	          "ChangedApiName": "activeDirectoryDomainEvidence",
+	          "ChangeType": "Addition",
+	          "Description": "Added the [activeDirectoryDomainEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-activeDirectoryDomainEvidence?view=graph-rest-1.0) resource.",
+	          "Target": "activeDirectoryDomainEvidence"
+	        },
+			{
+	          "Id": "b63ca52d-d944-4362-b086-cd97eaa4e064",
+	          "ApiChange": "Property",
+	          "ChangedApiName": "resourceAccessEvents",
+	          "ChangeType": "Addition",
+	          "Description": "Added the **resourceAccessEvents** property to the [deviceEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-deviceEvidence?view=graph-rest-1.0) resource.",
+	          "Target": "deviceEvidence"
+	        },
+			{
+	          "Id": "c1f5d8e9-a3b2-4c6d-8f7e-9a1b2c3d4e5f",
+	          "ApiChange": "Resource",
+	          "ChangedApiName": "mailboxConfigurationEvidence",
+	          "ChangeType": "Addition",
+	          "Description": "Added the [mailboxConfigurationEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-mailboxConfigurationEvidence?view=graph-rest-1.0) resource.",
+	          "Target": "mailboxConfigurationEvidence"
+	        },
+			{
+	          "Id": "c1f5d8e9-a3b2-4c6d-8f7e-9a1b2c3d4e5f",
+	          "ApiChange": "Enumeration",
+	          "ChangedApiName": "mailboxConfigurationType",
+	          "ChangeType": "Addition",
+	          "Description": "Added the mailboxConfigurationType enumeration type.",
+	          "Target": "mailboxConfigurationType"
+	        },
       ],
       "Id": "4150af3b-be39-4935-8d5b-4ec8a284a005",
-      "Cloud": "Review",
+      "Cloud": "Prod",
       "Version": "v1.0",
-      "CreatedDateTime": "2025-07-21T13:31:06.799148Z",
+      "CreatedDateTime": "2025-11-19T08:26:45.0756446Z",
       "WorkloadArea": "Security",
       "SubArea": ""
     },
@@ -3383,68 +3407,38 @@
           "ChangeType": "Addition",
           "Description": "Added the **resourceAccessEvents** property to the [deviceEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-deviceEvidence?view=graph-rest-beta) resource.",
           "Target": "deviceEvidence"
-        }
-      ],
-      "Id": "ae392fe5-2982-425d-965b-53bf3be765fb",
-      "Cloud": "Review",
-      "Version": "beta",
-      "CreatedDateTime": "2025-11-19T08:26:45.0756446Z",
-      "WorkloadArea": "Security",
-      "SubArea": ""
-    },
-    {
-      "ChangeList": [
-        {
+        },
+		{
           "Id": "d2e8f9a0-b4c5-4f6a-9b7e-1c2d3e4f5a6b",
           "ApiChange": "Resource",
           "ChangedApiName": "mailboxConfigurationEvidence",
           "ChangeType": "Addition",
           "Description": "Added the [mailboxConfigurationEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-mailboxConfigurationEvidence?view=graph-rest-beta) resource.",
           "Target": "mailboxConfigurationEvidence"
-        }
-      ],
-      "Id": "d2e8f9a0-b4c5-4f6a-9b7e-1c2d3e4f5a6b",
-      "Cloud": "Review",
-      "Version": "beta",
-      "CreatedDateTime": "2025-11-19T12:00:00.0000000Z",
-      "WorkloadArea": "Security",
-      "SubArea": ""
-    },
-    {
-      "ChangeList": [
-        {
-          "Id": "b63ca52d-d944-4362-b086-cd97eaa4e064",
-          "ApiChange": "Property",
-          "ChangedApiName": "resourceAccessEvents",
-          "ChangeType": "Addition",
-          "Description": "Added the **resourceAccessEvents** property to the [deviceEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-deviceEvidence?view=graph-rest-1.0) resource.",
-          "Target": "deviceEvidence"
-        }
-      ],
-      "Id": "b63ca52d-d944-4362-b086-cd97eaa4e064",
-      "Cloud": "Review",
-      "Version": "v1.0",
-      "CreatedDateTime": "2025-11-19T08:26:45.0760072Z",
-      "WorkloadArea": "Security",
-      "SubArea": ""
-    },
-    {
-      "ChangeList": [
-        {
-          "Id": "c1f5d8e9-a3b2-4c6d-8f7e-9a1b2c3d4e5f",
+        },
+		  {
+          "Id": "d2e8f9a0-b4c5-4f6a-9b7e-1c2d3e4f5a6b",
           "ApiChange": "Resource",
-          "ChangedApiName": "mailboxConfigurationEvidence",
+          "ChangedApiName": "activeDirectoryDomainEvidence",
           "ChangeType": "Addition",
-          "Description": "Added the [mailboxConfigurationEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-mailboxConfigurationEvidence?view=graph-rest-1.0) resource.",
-          "Target": "mailboxConfigurationEvidence"
-        }
+          "Description": "Added the [activeDirectoryDomainEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-activeDirectoryDomainEvidence?view=graph-rest-beta) resource.",
+          "Target": "activeDirectoryDomainEvidence"
+        },
+		{
+	        "Id": "c1f5d8e9-a3b2-4c6d-8f7e-9a1b2c3d4e5f",
+	        "ApiChange": "Enumeration",
+	        "ChangedApiName": "mailboxConfigurationType",
+	        "ChangeType": "Addition",
+	        "Description": "Added the mailboxConfigurationType enumeration type.",
+	        "Target": "mailboxConfigurationType"
+	    },
       ],
-      "Id": "c1f5d8e9-a3b2-4c6d-8f7e-9a1b2c3d4e5f",
-      "Cloud": "Review",
-      "Version": "v1.0",
-      "CreatedDateTime": "2025-11-19T12:00:00.0000000Z",
+      "Id": "ae392fe5-2982-425d-965b-53bf3be765fb",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-11-19T08:26:45.0756446Z",
       "WorkloadArea": "Security",
       "SubArea": ""
     }
-  ]
+   ]
 }
