@@ -44,7 +44,6 @@ Represents the image resource on a Cloud PC.
 |sourceImageResourceId|String|The unique identifier (ID) of the source image resource on Azure. The required ID format is: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/images/{imageName}". Read-only.|
 |status|[cloudPcDeviceImageStatus](#cloudpcdeviceimagestatus-values)|The status of the image on the Cloud PC. Possible values are: `pending`, `ready`, `warning`, `failed`, `unknownFutureValue`. Read-only.|
 |version|String|The image version. For example, `0.0.1` and `1.5.13`. Read-only.|
-|osArchitecture|[cloudPcImageOsArchitectureType](#cloudpcimageosarchitecturetype-values)|Indicates the OS architecture of the image. Possible values are x64, arm64. Default value is x64. Read-only.|
 |statusDetails (deprecated)|[cloudPcDeviceImageStatusDetails](#cloudpcdeviceimagestatusdetails-values)|The details of the status of the image that indicates why the upload failed, if applicable. Possible values are: `internalServerError`, `sourceImageNotFound`, `osVersionNotSupported`, `sourceImageInvalid`, `sourceImageNotGeneralized`, `unknownFutureValue`, `vmAlreadyAzureAdJoined`, `paidSourceImageNotSupport`, `sourceImageNotSupportCustomizeVMName`, `sourceImageSizeExceedsLimitation`. Use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `vmAlreadyAzureAdJoined`, `paidSourceImageNotSupport`, `sourceImageNotSupportCustomizeVMName`, `sourceImageSizeExceedsLimitation`. Read-only. The **statusDetails** property is deprecated and will stop returning data on January 31, 2024. Going forward, use the **errorCode** property.|
 
 ### cloudPcDeviceImageErrorCode values
@@ -99,14 +98,6 @@ Represents the image resource on a Cloud PC.
 |sourceImageNotSupportCustomizeVMName|A computer name setting issue exists on the resultant generalized image, which prevents the customization of the VM name with the provided image.|
 |sourceImageSizeExceedsLimitation|The size of the customer-uploaded source image exceeds the shared image gallery (SIG) limitations, which results in image creation failure.|
 
-### cloudPcImageOsArchitectureType values
-
-|Member|Description|
-|:---|:---|
-|x64|Default. Indicates the Cloud PC device image is associated with x64 operating system architecture.  |
-|arm64|Indicates the Cloud PC device image is associated with arm64 operating system architecture, where Arm64-based VMs provide up to 50% better price-performance than comparable x64 VMs.|
-|unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
-
 ## Relationships
 
 None.
@@ -139,7 +130,6 @@ The following JSON representation shows the resource type.
   "sourceImageResourceId": "String",
   "status": "String",
   "statusDetails": "String",
-  "version": "String",
-  "osArchitecture": "String"
+  "version": "String"
 }
 ```
