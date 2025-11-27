@@ -78,3 +78,4 @@ The following JSON representation shows the resource type.
   "configurationId": "String",
   "externalDirectoryObjectId": "String"
 }
+```
