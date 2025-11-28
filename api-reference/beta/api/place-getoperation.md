@@ -56,7 +56,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this function returns a `200 OK` response code and a [placeOperation](../resources/placeoperation.md) in the response body.
+If successful, this function returns a `200 OK` response code and a [placeOperation](../resources/placeoperation.md) object in the response body.
 
 ## Examples
 
