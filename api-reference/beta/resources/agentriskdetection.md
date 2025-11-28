@@ -2,7 +2,7 @@
 title: "agentRiskDetection resource type"
 description: Represents the agentic risk detections as evaluated by Microsoft Entra ID Protection based on various signals and machine learning.
 author: jiayle27
-ms.date: 10/24/2025
+ms.date: 11/27/2025
 ms.localizationpriority: medium
 ms.subservice: entra-sign-in
 doc_type: resourcePageType
@@ -35,7 +35,7 @@ Inherits from [entity](../resources/entity.md).
 |detectionTimingType|riskDetectionTimingType|Timing of the detected risk (real-time/offline). The possible values are: `notDefined`, `realtime`, `nearRealtime`, `offline`, `unknownFutureValue`.|
 |id|String| Unique ID of the risk detection. Inherited from [entity](../resources/entity.md).|
 |lastModifiedDateTime|DateTimeOffset|Date and time that the risk detection was last updated. <br/><br/> Supports `$filter` (`eq`, `le`, and `ge`).|
-|riskDetail|riskDetail|Details of the detected risk. The possible values are: `none`, `adminConfirmedAgentSafe`, `adminConfirmedAgentCompromised`, `adminDismissedRiskForAgent`. <br/><br/> Supports `$filter` (`eq`).|
+|riskDetail|[riskDetail](../resources/riskdetail.md)|Details of the detected risk. <br/><br/> Supports `$filter` (`eq`).|
 |riskEventType|String|The type of risk event detected. <br/><br/> Supports `$filter` (`eq`).|
 |riskEvidence|String|Evidence on the risky activity occurred. <br/><br/> Supports `$filter` (`eq`).|
 |riskLevel|riskLevel|Level of the detected risk. The possible values are: `low`, `medium`, `high`, `hidden`, `none`, `unknownFutureValue`. <br/><br/> Supports `$filter` (`eq`).|
