@@ -4570,6 +4570,14 @@ items:
       href: ../../api/networkaccess-alert-getalertfrequencies.md
     - name: Get alert summaries
       href: ../../api/networkaccess-alert-getalertsummaries.md
+  - name: Deployment
+    items:
+    - name: Deployment
+      href: ../../resources/networkaccess-deployment.md
+    - name: List
+      href: ../../api/networkaccess-networkaccessroot-list-deployments.md
+    - name: Get
+      href: ../../api/networkaccess-networkaccessroot-get-deployments.md
   - name: Settings
     items:
     - name: Cross-tenant access settings
