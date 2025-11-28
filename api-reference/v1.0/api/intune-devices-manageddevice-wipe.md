@@ -51,11 +51,11 @@ The following table shows the parameters that can be used with this action.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|keepEnrollmentData|Boolean||
-|keepUserData|Boolean||
-|macOsUnlockCode|String||
-|obliterationBehavior|[obliterationBehavior](../resources/intune-devices-obliterationbehavior.md)||
-|persistEsimDataPlan|Boolean||
+|keepEnrollmentData|Boolean|uses doWipePersistProvisionedData|
+|keepUserData|Boolean|uses doWipePersistUserData|
+|macOsUnlockCode|String|A six-digit recovery PIN used when remotely wiping a Mac via MDM|
+|obliterationBehavior|[obliterationBehavior](../resources/intune-devices-obliterationbehavior.md)|This setting controls the fallback wipe method on modern Macs during a remote wipe|
+|persistEsimDataPlan|Boolean|This setting controls whether an eSIM cellular data plan is retained or wiped during a device wipe|
 
 
 
