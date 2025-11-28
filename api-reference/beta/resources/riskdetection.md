@@ -5,7 +5,7 @@ author: "tracyshi"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
-ms.date: 07/19/2024
+ms.date: 11/27/2025
 ---
 
 # riskDetection resource type
@@ -46,7 +46,7 @@ For more information about risk detection, see [Microsoft Entra ID Protection](/
 |location|[signInLocation](signinlocation.md)|Location of the sign-in. |
 |requestId|string|Request ID of the sign-in associated with the risk detection. This property is null if the risk detection is not associated with a sign-in.|
 |riskEventType|String|The type of risk event detected. The possible values are `adminConfirmedUserCompromised`, `anomalousUserActivity`, `anomalousToken`, `anonymizedIPAddress`,`attackerinTheMiddle`,`attemptedPRTAccess`, `generic`, `investigationsThreatIntelligence`, `investigationsThreatIntelligenceSigninLinked`,`leakedCredentials`, `maliciousIPAddress`, `maliciousIPAddressValidCredentialsBlockedIP`, `malwareInfectedIPAddress`, `mcasImpossibleTravel`,`mcasFinSuspiciousFileAccess`, `mcasSuspiciousInboxManipulationRules`,`nationStateIP`, `newCountry`, `passwordSpray`, `riskyIPAddress`, `suspiciousAPITraffic`, `suspiciousBrowser`, `suspiciousInboxForwarding`, `suspiciousIPAddress`,`suspiciousSendingPatterns`, `tokenIssuerAnomaly`,  `unfamiliarFeatures`, `unlikelyTravel`, `userReportedSuspiciousActivity`. <br/> For more information about each value, see [Risk types and detection](/entra/id-protection/concept-identity-protection-risks#risk-types-and-detection).|
-|riskDetail|riskDetail|Details of the detected risk. The possible values are `none`, `adminGeneratedTemporaryPassword`, `userPerformedSecuredPasswordChange`, `userPerformedSecuredPasswordReset`, `adminConfirmedSigninSafe`, `aiConfirmedSigninSafe`, `userPassedMFADrivenByRiskBasedPolicy`, `adminDismissedAllRiskForUser`, `adminConfirmedSigninCompromised`, `hidden`, `adminConfirmedUserCompromised`, `unknownFutureValue`, `adminConfirmedServicePrincipalCompromised`, `adminDismissedAllRiskForServicePrincipal`, `m365DAdminDismissedDetection`, `userChangedPasswordOnPremises`, `adminDismissedRiskForSignIn`, `adminConfirmedAccountSafe`, `microsoftRevokedSessions`.  Use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `adminConfirmedServicePrincipalCompromised`, `adminDismissedAllRiskForServicePrincipal`, `m365DAdminDismissedDetection`, `userChangedPasswordOnPremises`, `adminDismissedRiskForSignIn`, `adminConfirmedAccountSafe`, `microsoftRevokedSessions`.|
+|riskDetail|[riskDetail](../resources/riskdetail.md)|Details of the detected risk. <br/><br />**Note:** Details for this property are only available for Microsoft Entra ID P2 customers. P1 customers will be returned `hidden`.|
 |riskLevel|riskLevel|Level of the detected risk. The possible values are `low`, `medium`, `high`, `hidden`, `none`, `unknownFutureValue`. <br />**Note:** Details for this property are only available for Microsoft Entra ID P2 customers. P1 customers will be returned `hidden`.|
 |riskState|riskState|The state of a detected risky user or sign-in. The possible values are `none`, `confirmedSafe`, `remediated`, `dismissed`, `atRisk`, `confirmedCompromised`, and `unknownFutureValue`. |
 |source|string|Source of the risk detection. For example, `activeDirectory`. |

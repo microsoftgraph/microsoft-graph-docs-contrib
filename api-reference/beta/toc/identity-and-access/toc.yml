@@ -384,38 +384,38 @@ items:
       href: ../../api/uxsetting-get.md
     - name: Update
       href: ../../api/uxsetting-update.md
-  - name: Mobility management policy
+  - name: Mobile app management policy
     items:
-    - name: Mobility management policy
-      href: ../../resources/mobilitymanagementpolicy.md
-    - name: Mobile device management policy
-      items:
-      - name: List
-        href: ../../api/mobiledevicemanagementpolicies-list.md
-      - name: Get
-        href: ../../api/mobiledevicemanagementpolicies-get.md
-      - name: Update
-        href: ../../api/mobiledevicemanagementpolicies-update.md
-      - name: List included groups
-        href: ../../api/mobiledevicemanagementpolicies-list-includedgroups.md
-      - name: Add group to policy
-        href: ../../api/mobiledevicemanagementpolicies-post-includedgroups.md
-      - name: Delete group from policy
-        href: ../../api/mobiledevicemanagementpolicies-delete-includedgroups.md
     - name: Mobile app management policy
-      items:
-      - name: List
-        href: ../../api/mobileappmanagementpolicies-list.md
-      - name: Get
-        href: ../../api/mobileappmanagementpolicies-get.md
-      - name: Update
-        href: ../../api/mobileappmanagementpolicies-update.md
-      - name: List included groups
-        href: ../../api/mobileappmanagementpolicies-list-includedgroups.md
-      - name: Add group to policy
-        href: ../../api/mobileappmanagementpolicies-post-includedgroups.md
-      - name: Delete group from policy
-        href: ../../api/mobileappmanagementpolicies-delete-includedgroups.md
+      href: ../../resources/mobileappmanagementpolicy.md
+    - name: List
+      href: ../../api/mobileappmanagementpolicies-list.md
+    - name: Get
+      href: ../../api/mobileappmanagementpolicies-get.md
+    - name: Update
+      href: ../../api/mobileappmanagementpolicies-update.md
+    - name: List included groups
+      href: ../../api/mobileappmanagementpolicies-list-includedgroups.md
+    - name: Add group to policy
+      href: ../../api/mobileappmanagementpolicies-post-includedgroups.md
+    - name: Delete group from policy
+      href: ../../api/mobileappmanagementpolicies-delete-includedgroups.md
+  - name: Mobile device management policy
+    items:
+    - name: Mobile device management policy
+      href: ../../resources/mobiledevicemanagementpolicy.md
+    - name: List
+      href: ../../api/mobiledevicemanagementpolicies-list.md
+    - name: Get
+      href: ../../api/mobiledevicemanagementpolicies-get.md
+    - name: Update
+      href: ../../api/mobiledevicemanagementpolicies-update.md
+    - name: List included groups
+      href: ../../api/mobiledevicemanagementpolicies-list-includedgroups.md
+    - name: Add group to policy
+      href: ../../api/mobiledevicemanagementpolicies-post-includedgroups.md
+    - name: Delete group from policy
+      href: ../../api/mobiledevicemanagementpolicies-delete-includedgroups.md
   - name: Mutual TLS OAuth configuration
     items:
     - name: Mutual TLS OAuth configuration
@@ -430,6 +430,26 @@ items:
       href: ../../api/mutualtlsoauthconfiguration-update.md
     - name: Delete
       href: ../../api/mutualtlsoauthconfiguration-delete.md
+  - name: On-prem authentication policy
+    items:
+    - name: On-prem authentication policy
+      href: ../../resources/onpremauthenticationpolicy.md
+    - name: List
+      href: ../../api/policyroot-list-onpremauthenticationpolicies.md
+    - name: Create
+      href: ../../api/policyroot-post-onpremauthenticationpolicies.md
+    - name: Get
+      href: ../../api/onpremauthenticationpolicy-get.md
+    - name: Update
+      href: ../../api/onpremauthenticationpolicy-update.md
+    - name: Delete
+      href: ../../api/onpremauthenticationpolicy-delete.md
+    - name: List applies to
+      href: ../../api/onpremauthenticationpolicy-list-appliesto.md
+    - name: Assign to
+      href: ../../api/onpremauthenticationpolicy-post-appliesto.md
+    - name: Remove applies to
+      href: ../../api/onpremauthenticationpolicy-delete-appliesto.md
   - name: On-premises directory synchronization
     items:
     - name: On-premises directory synchronization
@@ -1019,6 +1039,12 @@ items:
         href: ../../api/accesspackageassignment-reprocess.md
       - name: Check other access
         href: ../../api/accesspackageassignment-additionalaccess.md
+    - name: Access package suggestion
+      items:
+      - name: Access package suggestion
+        href: ../../resources/accesspackagesuggestion.md
+      - name: filterByCurrentUser
+        href: ../../api/accesspackagesuggestions-filterbycurrentuser.md
     - name: Approval
       items:
       - name: Approval
@@ -1037,6 +1063,12 @@ items:
         href: ../../api/approvalstep-get.md
       - name: Update
         href: ../../api/approvalstep-update.md
+    - name: Available access package
+      items:
+      - name: Available access package
+        href: ../../resources/availableaccesspackage.md
+      - name: List
+        href: ../../api/availableaccesspackage-list-resourcerolescopes.md
     - name: Access package resource role scope
       items:
       - name: Access package resource role scope
@@ -1217,6 +1249,14 @@ items:
           href: ../../api/connectedorganization-post-internalsponsors.md
         - name: Remove internal sponsors
           href: ../../api/connectedorganization-delete-internalsponsors.md
+    - name: End user settings
+      items:
+      - name: End user settings
+        href: ../../resources/endusersettings.md
+      - name: Get
+        href: ../../api/endusersettings-get.md
+      - name: Update
+        href: ../../api/endusersettings-update.md
     - name: Entitlement management settings
       items:
       - name: Entitlement management settings
@@ -1281,6 +1321,12 @@ items:
         href: ../../resources/accesspackageresourceattributesource.md
       - name: Access package resource scope
         href: ../../resources/accesspackageresourcescope.md
+      - name: Access package suggestion reason
+        href: ../../resources/accesspackagesuggestionreason.md
+      - name: Access package suggestion related people based
+        href: ../../resources/accesspackagesuggestionrelatedpeoplebased.md
+      - name: Access package suggestion self assignment history based
+        href: ../../resources/accesspackagesuggestionselfassignmenthistorybased.md
       - name: Access package text input question
         href: ../../resources/accesspackagetextinputquestion.md
       - name: Access package user directory attribute store
@@ -1888,6 +1934,14 @@ items:
           href: ../../api/privilegedaccessgroupeligibilityscheduleinstance-get.md
         - name: Filter by current user
           href: ../../api/privilegedaccessgroupeligibilityscheduleinstance-filterbycurrentuser.md
+      - name: Group resource
+        items:
+        - name: Group resource
+          href: ../../resources/groupresource.md
+        - name: List
+          href: ../../api/privilegedaccessgroup-list-resources.md
+        - name: Get
+          href: ../../api/groupresource-get.md
       - name: Policy
         items:
         - name: Policy
@@ -1940,7 +1994,7 @@ items:
           href: ../../api/approvalstep-get.md
         - name: Update
           href: ../../api/approvalstep-update.md
-  - name: Privileged Identity Management iteration 2
+  - name: Privileged Identity Management iteration 2 (deprecated)
     items:
     - name: Overview
       href: ../../resources/privilegedidentitymanagement-root.md
@@ -2777,6 +2831,56 @@ items:
         href: ../../api/policydeletableitem-delete.md
       - name: Restore deleted policy
         href: ../../api/crosstenantidentitysyncpolicypartner-restore.md
+  - name: Cross-tenant migration
+    items:
+    - name: Overview
+      href: ../../resources/crosstenant-migration-overview.md
+    - name: Cross-tenant migration job
+      items:
+      - name: Cross-tenant migration job
+        href: ../../resources/crosstenantmigrationjob.md
+      - name: List
+        href: ../../api/migrationsroot-list-crosstenantmigrationjobs.md
+      - name: Create
+        href: ../../api/migrationsroot-post-crosstenantmigrationjobs.md
+      - name: Get
+        href: ../../api/crosstenantmigrationjob-get.md
+      - name: Update
+        href: ../../api/crosstenantmigrationjob-update.md
+      - name: Delete
+        href: ../../api/migrationsroot-delete-crosstenantmigrationjobs.md
+      - name: cancel
+        href: ../../api/crosstenantmigrationjob-cancel.md
+      - name: validate
+        href: ../../api/crosstenantmigrationjob-validate.md
+      - name: List users
+        href: ../../api/crosstenantmigrationjob-list-users.md
+    - name: Cross-tenant migration task
+      items:
+      - name: Cross-tenant migration task
+        href: ../../resources/crosstenantmigrationtask.md
+      - name: List
+        href: ../../api/crosstenantmigrationjob-list-users.md
+      - name: Get
+        href: ../../api/crosstenantmigrationtask-get.md
+      - name: cancel
+        href: ../../api/crosstenantmigrationtask-cancel.md
+    - name: Migrations root
+      items:
+      - name: Migrations root
+        href: ../../resources/migrationsroot.md
+      - name: List crossTenantMigrationJobs
+        href: ../../api/migrationsroot-list-crosstenantmigrationjobs.md
+      - name: Create crossTenantMigrationJob
+        href: ../../api/migrationsroot-post-crosstenantmigrationjobs.md
+    - name: Complex types
+      items:
+      - name: Cross-tenant migration service status details
+        href: ../../resources/crosstenantmigrationservicestatusdetails.md
+      - name: Error
+        href: ../../resources/error.md
+      - name: Exchange online Cross-tenant migration settings
+        href: ../../resources/exchangeonlinecrosstenantmigrationsettings.md
   - name: Cross-tenant shared user profiles
     items:
     - name: Inbound shared user profile
@@ -3177,6 +3281,26 @@ items:
         href: ../../api/authorizationpolicy-get.md
       - name: Update
         href: ../../api/authorizationpolicy-update.md
+    - name: B2B management policy
+      items:
+      - name: B2B management policy
+        href: ../../resources/b2bmanagementpolicy.md
+      - name: List
+        href: ../../api/policyroot-list-b2bmanagementpolicies.md
+      - name: Create
+        href: ../../api/policyroot-post-b2bmanagementpolicies.md
+      - name: Get
+        href: ../../api/b2bmanagementpolicy-get.md
+      - name: Update
+        href: ../../api/b2bmanagementpolicy-update.md
+      - name: Delete
+        href: ../../api/policyroot-delete-b2bmanagementpolicies.md
+      - name: List appliesTo
+        href: ../../api/b2bmanagementpolicy-list-appliesto.md
+      - name: Add appliesTo
+        href: ../../api/b2bmanagementpolicy-post-appliesto.md
+      - name: Remove appliesTo
+        href: ../../api/b2bmanagementpolicy-delete-appliesto.md
     - name: B2C authentication methods policy
       items:
       - name: B2C authentication methods policy
@@ -3241,6 +3365,26 @@ items:
         href: ../../api/identitysecuritydefaultsenforcementpolicy-get.md
       - name: Update
         href: ../../api/identitysecuritydefaultsenforcementpolicy-update.md
+    - name: On-prem authentication policy
+      items:
+      - name: On-prem authentication policy
+        href: ../../resources/onpremauthenticationpolicy.md
+      - name: List
+        href: ../../api/policyroot-list-onpremauthenticationpolicies.md
+      - name: Create
+        href: ../../api/policyroot-post-onpremauthenticationpolicies.md
+      - name: Get
+        href: ../../api/onpremauthenticationpolicy-get.md
+      - name: Update
+        href: ../../api/onpremauthenticationpolicy-update.md
+      - name: Delete
+        href: ../../api/onpremauthenticationpolicy-delete.md
+      - name: List applies to
+        href: ../../api/onpremauthenticationpolicy-list-appliesto.md
+      - name: Assign to
+        href: ../../api/onpremauthenticationpolicy-post-appliesto.md
+      - name: Remove applies to
+        href: ../../api/onpremauthenticationpolicy-delete-appliesto.md
     - name: Permission grant policy
       items:
       - name: Permission grant policy
@@ -4426,6 +4570,14 @@ items:
       href: ../../api/networkaccess-alert-getalertfrequencies.md
     - name: Get alert summaries
       href: ../../api/networkaccess-alert-getalertsummaries.md
+  - name: Deployment
+    items:
+    - name: Deployment
+      href: ../../resources/networkaccess-deployment.md
+    - name: List
+      href: ../../api/networkaccess-networkaccessroot-list-deployments.md
+    - name: Get
+      href: ../../api/networkaccess-networkaccessroot-get-deployments.md
   - name: Settings
     items:
     - name: Cross-tenant access settings

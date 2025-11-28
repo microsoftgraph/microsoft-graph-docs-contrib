@@ -1,5 +1,5 @@
 ---
-title: profile resource type
+title: profile resource type (for networkAccess)
 description: "Represents a container for forwarding policies."
 author: "Moti-ba"
 ms.localizationpriority: medium
@@ -8,7 +8,7 @@ doc_type: resourcePageType
 ms.date: 04/06/2024
 ---
 
-# profile resource type
+# profile resource type (for networkAccess)
 
 Namespace: microsoft.graph.networkaccess
 
@@ -16,8 +16,7 @@ Namespace: microsoft.graph.networkaccess
 
 Represents a container for forwarding policies. It's an abstract type from which the [microsoft.graph.networkaccess.forwardingProfile](networkaccess-forwardingprofile.md) resource type is derived.
 
-
-Inherits from [microsoft.graph.entity](../resources/entity.md).
+Inherits from [microsoft.graph.networkaccess.baseEntity](../resources/baseEntity.md).
 
 ## Methods
 
@@ -28,7 +27,7 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 |description|String|Description.|
 |id|String|The identifier for the profile. Inherited from [microsoft.graph.entity](../resources/entity.md).|
 |lastModifiedDateTime|DateTimeOffset|The date and time when the profile was last modified.|
-|name|String|The name of the profile.|
+|name|String|The name of the profile. Inherited from [microsoft.graph.networkaccess.baseEntity](../resources/baseentity.md).|
 |state|microsoft.graph.networkaccess.status|the status of the profile. Possible values are: `enabled` and `disabled`.|
 |version|String|Profile version.|
 

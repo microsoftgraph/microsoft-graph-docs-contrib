@@ -5,13 +5,43 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.subservice: "non-product-specific"
 author: "MSGraphDocsvTeam"
-ms.date: 08/06/2025
+ms.date: 11/18/2025
 ms.custom: sfi-ropc-nochange
 ---
 
 # Enum values
 
 Namespace: microsoft.graph
+
+### placeFeatureEnablement values
+
+|Member|
+|:---|
+|unknown|
+|enabled|
+|disabled|
+|unknownFutureValue|
+
+### accessReviewPrincipalScopeType values
+
+|Member|
+|:---|
+|allUsers|
+|guestUsers|
+|inactiveUsers|
+|inactiveGuestUsers|
+|unknownFutureValue|
+
+### accessReviewResourceScopeType values
+
+|Member|
+|:---|
+|group|
+|catalog|
+|servicePrincipal|
+|directoryRole|
+|accessPackageAssignmentPolicy|
+|unknownFutureValue|
 
 ### applicationDataType values
 
@@ -742,6 +772,24 @@ Namespace: microsoft.graph
 | governed |
 | unknownFutureValue |
 
+### accessPackageSuggestionFilterByCurrentUserOptions values
+
+| Member |
+| ---- |
+| none |
+| relatedPeopleAssignments |
+| assignmentHistory |
+| unknownFutureValue |
+
+### accessPackageSuggestionRelatedPeopleInsightLevel values
+
+| Member |
+| ---- |
+| disabled |
+| count |
+| countAndNames |
+| unknownFutureValue |
+
 ### customExtensionCalloutInstanceStatus values
 
 | Member |
@@ -879,6 +927,15 @@ Namespace: microsoft.graph
 | unknownFutureValue |
 | remoteDesktopToken |
 | refreshToken       |
+
+### approverInformationVisibilityvalues
+
+| Member |
+| ---- |
+| no |
+| yes |
+| default |
+| unknownFutureValue |
 
 ### protocolType values
 
@@ -5589,6 +5646,30 @@ Possible values for user account types (group membership), per Windows definitio
 |d1|
 |unknownFutureValue|
 
+### attestationEnforcement values 
+
+|Member|
+|:---|
+|disabled|
+|registrationOnly|
+|unknownFutureValue|
+
+### passkeyType values 
+
+|Member|
+|:---|
+|deviceBound|
+|synced|
+|unknownFutureValue|
+
+### passkeyTypes values 
+
+|Member|
+|:---|
+|deviceBound|
+|synced|
+|unknownFutureValue|
+
 ### webApplicationFirewallDnsRecordType values 
 
 |Member|
@@ -5653,7 +5734,6 @@ Possible values for user account types (group membership), per Windows definitio
 |all|
 |unknownFutureValue|
 
-
 ### siteTemplateType values 
 
 |Member|
@@ -5663,23 +5743,110 @@ Possible values for user account types (group membership), per Windows definitio
 |sts|
 |unknownFutureValue|
 
-### accessReviewPrincipalScopeType values
-
+### workLocationSource values 
 |Member|
 |:---|
-|allUsers|
-|guestUsers|
-|inactiveUsers|
-|inactiveGuestUsers|
+|none|
+|manual|
+|scheduled|
+|automatic|
 |unknownFutureValue|
 
-### accessReviewResourceScopeType values
+### workLocationType values 
 
 |Member|
 |:---|
-|group|
-|catalog|
-|servicePrincipal|
-|directoryRole|
-|accessPackageAssignmentPolicy|
+|unspecified|
+|office|
+|remote|
+|timeOff|
+|unknownFutureValue|
+
+### sharePointIdentityMappingGroupType values 
+
+|Member|
+|:---|
+|none|
+|regularGroup|
+|m365Group|
+|unknownFutureValue|
+
+### sharePointIdentityMappingUserType values 
+
+|Member|
+|:---|
+|none|
+|regularUser|
+|adminUser|
+|guestUser|
+|unknownFutureValue|
+
+### crossTenantMigrationJobStatus values 
+
+|Member|
+|:---|
+|submitted|
+|approved|
+|processing|
+|cuttingOver|
+|inProgress|
+|completed|
+|completedWithErrors|
+|failed|
+|cancelled|
+|pendingCancel|
+|adminActionRequired|
+|validateSubmitted|
+|validateProcessing|
+|validateInProgress|
+|validatePassed|
+|validateFailed|
+|pendingDelete|
+|deleted|
+|unknownFutureValue|
+
+### crossTenantMigrationJobType values 
+
+|Member|
+|:---|
+|validate|
+|migrate|
+|unknownFutureValue|
+
+### crossTenantMigrationServiceStatus values 
+
+|Member|
+|:---|
+|notStarted|
+|valid|
+|invalid|
+|error|
+|inProgress|
+|completed|
+|failed|
+|cancelled|
+|pendingCancel|
+|syncing|
+|synced|
+|finalizing|
+|forceComplete|
+|unknownFutureValue|
+
+### resourceAccessStatus values
+
+|Member|
+|:---|
+|none|
+|failure|
+|success|
+|unknownFutureValue|
+
+### resourceAccessType values
+
+|Member|
+|:---|
+|none|
+|read|
+|write|
+|create|
 |unknownFutureValue|

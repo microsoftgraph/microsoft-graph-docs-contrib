@@ -25,6 +25,7 @@ Used for the **stages** property of approval settings in an [access package assi
 |escalationApprovers|[subjectSet](../resources/subjectset.md) collection|If escalation is enabled and the primary approvers do not respond before the escalation time, the escalationApprovers are the users who will be asked to approve requests. |
 |fallbackEscalationApprovers|[subjectSet](../resources/subjectset.md) collection|The subjects, typically users, who are the fallback escalation approvers.|
 |fallbackPrimaryApprovers|[subjectSet](../resources/subjectset.md) collection|The subjects, typically users, who are the fallback primary approvers.|
+|approverInformationVisibility|[approverInformationVisibility](approverInformationVisibility.md)|Indicates whether approver information is visible to the requestor. The possible values are: `no`, `yes`, `default`, `unknownFutureValue`.|
 |isApproverJustificationRequired|Boolean|Indicates whether the approver is required to provide a justification for approving a request.|
 |isEscalationEnabled|Boolean|If `true`, then one or more **escalationApprovers** are configured in this approval stage.|
 |primaryApprovers|[subjectSet](../resources/subjectset.md) collection|The subjects, typically users, who will be asked to approve requests. A collection of [singleUser](singleuser.md), [groupMembers](groupmembers.md), [requestorManager](requestormanager.md), [internalSponsors](internalsponsors.md), [externalSponsors](externalsponsors.md), or [targetUserSponsors](targetusersponsors.md).|
@@ -43,6 +44,7 @@ The following JSON representation shows the resource type.
 {
   "@odata.type": "#microsoft.graph.accessPackageApprovalStage",
   "durationBeforeAutomaticDenial": "String (duration)",
+  "approverInformationVisibility": "String",
   "isApproverJustificationRequired": "Boolean",
   "isEscalationEnabled": "Boolean",
   "durationBeforeEscalation": "String (duration)",
