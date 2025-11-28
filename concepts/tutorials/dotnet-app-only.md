@@ -106,7 +106,36 @@ Add the details of your app registration to the project.
 
 1. Create a file in the **GraphAppOnlyTutorial** directory named **Settings.cs** and add the following code.
 
-    :::code language="csharp" source="includes/dotnet/src/app-auth/GraphAppOnlyTutorial/Settings.cs" id="SettingsSnippet":::
+    ```csharp
+    using Microsoft.Extensions.Configuration;
+
+    namespace GraphAppOnlyTutorial;
+
+    public class Settings
+    {
+        public string? ClientId { get; set; }
+
+        public string? ClientSecret { get; set; }
+
+        public string? TenantId { get; set; }
+
+        public static Settings LoadSettings()
+        {
+            // Load settings
+            IConfiguration config = new ConfigurationBuilder()
+                /* appsettings.json is required */
+                .AddJsonFile("appsettings.json", optional: false)
+                /* appsettings.Development.json" is optional, values override appsettings.json */
+                .AddJsonFile($"appsettings.Development.json", optional: true)
+                /* User secrets are optional, values override both JSON files */
+                .AddUserSecrets<Program>()
+                .Build();
+
+            return config.GetRequiredSection("Settings").Get<Settings>() ??
+                throw new Exception("Could not load app settings. See README for configuration instructions.");
+        }
+    }
+    ```
 
 ## Design the app
 
