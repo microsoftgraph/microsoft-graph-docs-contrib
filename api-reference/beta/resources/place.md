@@ -53,7 +53,7 @@ Base type of [building](../resources/building.md), [desk](../resources/desk.md),
 |Relationship|Type|Description|
 |:---|:---|:---|
 |checkIns| [checkInClaim](../resources/checkinclaim.md) collection | A subresource of a **place** object that indicates the check-in status of an Outlook calendar event booked at the place. |
-|children|[place](../resources/place.md) collection|A collection of children places, which is only used in bulk upsert API.|
+|children|[place](../resources/place.md) collection|A collection of children places that is only used in the [Bulk upsert](../api/place-patch-places.md) API.|
 
 ## JSON representation
 The following JSON representation shows the resource type.
