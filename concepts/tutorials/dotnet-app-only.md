@@ -143,7 +143,6 @@ Create a console-based menu.
 
 1. Open **./Program.cs** and replace its entire contents with the following code.
 
-    :::code language="csharp" source="includes/dotnet/src/app-auth/GraphAppOnlyTutorial/Program.cs" id="ProgramSnippet":::
     ```csharp
     using GraphAppOnlyTutorial;
 
