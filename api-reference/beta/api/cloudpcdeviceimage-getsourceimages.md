@@ -38,7 +38,7 @@ GET /deviceManagement/virtualEndpoint/deviceImages/getSourceImages
 
 ## Optional query parameters
 
-This method supports `$filter` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$filter` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -144,7 +144,6 @@ Content-Type: application/json
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "cloudpcdeviceimage_getsourceimageswithcategory"
@@ -155,7 +154,6 @@ The following example shows a request.
 GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/deviceImages/getSourceImages?$filter=category eq 'managedImage'
 ```
 
----
 
 #### Response
 
