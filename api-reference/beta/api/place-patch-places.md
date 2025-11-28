@@ -48,7 +48,7 @@ PATCH /places
 
 In the request body, supply a JSON representation of the [place](../resources/place.md) delta set.
 
-The same properties can be specified as when [creating](../api/place-post.md) or [updating](../api/place-update.md) the place objects.
+The same properties can be specified as when you [create](../api/place-post.md) or [update(../api/place-update.md) the **place** objects.
 
 ## Response
 
@@ -100,8 +100,7 @@ The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.place"
+  "truncated": true
 }
 -->
 ``` http
@@ -116,8 +115,6 @@ Location: /places/getOperation(id='882a6bfd-45d1-4d4b-a382-6db80a249b61')
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-      "Error: createplacefrom_places:
-      Body missing from response (expected response includes a body or a response type was provided)."
   ]
 }
 -->
