@@ -3,6 +3,7 @@ title: "riskDetail enum type"
 description: "Represents the reason behind a specific state of a risky user, sign-in, service principal, or agent."
 author: "FaithOmbongi"
 ms.localizationpriority: medium
+ms.date: 11/27/2025
 ms.subservice: "entra-sign-in"
 doc_type: enumPageType
 ---
@@ -21,7 +22,7 @@ This enumeration is used by multiple resources. The possible values are: `none`,
 
 | Member | Value | Description |
 |:---|:---|:---|
-| none | 0 | No details are available for the risk state.<br/><br/>Applies to:<li>[agentRiskDetection](../resources/agentriskdetection.md)</li><li>[riskDetection](../resources/riskdetection.md)</li><li>[riskServicePrincipalActivity](../resources/riskserviceprincipalactivity.md)</li><li>[riskUserActivity](../resources/riskuseractivity.md)</li><li>[riskyAgent](../resources/riskyagent.md)</li><li>[riskyServicePrincipal](../resources/riskyserviceprincipal.md)</li><li>[riskyUser](../resources/riskyuser.md)</li><li>[servicePrincipalRiskDetection](../resources/serviceprincipalriskdetection.md)</li><li>[signIn](../resources/signin.md)</li> |
+| none | 0 | No details are available for the risk state.<br/><br/>Applies to:<ul><li>[agentRiskDetection](../resources/agentriskdetection.md)</li><li>[riskDetection](../resources/riskdetection.md)</li><li>[riskServicePrincipalActivity](../resources/riskserviceprincipalactivity.md)</li><li>[riskUserActivity](../resources/riskuseractivity.md)</li><li>[riskyAgent](../resources/riskyagent.md)</li><li>[riskyServicePrincipal](../resources/riskyserviceprincipal.md)</li><li>[riskyUser](../resources/riskyuser.md)</li><li>[servicePrincipalRiskDetection](../resources/serviceprincipalriskdetection.md)</li><li>[signIn](../resources/signin.md)</li></ul> |
 | adminGeneratedTemporaryPassword | 1 | An admin generated a temporary password for the user.<br/><br/>Applies to:<li>[riskDetection](../resources/riskdetection.md)</li><li>[riskUserActivity](../resources/riskuseractivity.md)</li><li>[riskyUser](../resources/riskyuser.md)</li><li>[signIn](../resources/signin.md)</li> |
 | userPerformedSecuredPasswordChange | 2 | The user performed a secure password change.<br/><br/>Applies to:<li>[riskDetection](../resources/riskdetection.md)</li><li>[riskUserActivity](../resources/riskuseractivity.md)</li><li>[riskyUser](../resources/riskyuser.md)</li><li>[signIn](../resources/signin.md)</li> |
 | userPerformedSecuredPasswordReset | 3 | The user performed a secure password reset.<br/><br/>Applies to:<li>[riskDetection](../resources/riskdetection.md)</li><li>[riskUserActivity](../resources/riskuseractivity.md)</li><li>[riskyUser](../resources/riskyuser.md)</li><li>[signIn](../resources/signin.md)</li> |
@@ -35,10 +36,36 @@ This enumeration is used by multiple resources. The possible values are: `none`,
 | unknownFutureValue | 11 | Evolvable enumeration sentinel value. Don't use.<br/><br/>Applies to:<li>[agentRiskDetection](../resources/agentriskdetection.md)</li><li>[riskDetection](../resources/riskdetection.md)</li><li>[riskServicePrincipalActivity](../resources/riskserviceprincipalactivity.md)</li><li>[riskUserActivity](../resources/riskuseractivity.md)</li><li>[riskyAgent](../resources/riskyagent.md)</li><li>[riskyServicePrincipal](../resources/riskyserviceprincipal.md)</li><li>[riskyUser](../resources/riskyuser.md)</li><li>[servicePrincipalRiskDetection](../resources/serviceprincipalriskdetection.md)</li><li>[signIn](../resources/signin.md)</li> |
 | adminConfirmedServicePrincipalCompromised | 12 | An admin confirmed the service principal as compromised.<br/><br/>Applies to:<li>[riskDetection](../resources/riskdetection.md)</li><li>[riskServicePrincipalActivity](../resources/riskserviceprincipalactivity.md)</li><li>[riskyServicePrincipal](../resources/riskyserviceprincipal.md)</li><li>[riskyUser](../resources/riskyuser.md)</li><li>[servicePrincipalRiskDetection](../resources/serviceprincipalriskdetection.md)</li><li>[signIn](../resources/signin.md)</li> |
 | adminDismissedAllRiskForServicePrincipal | 13 | An admin dismissed all risk for the service principal.<br/><br/>Applies to:<li>[riskDetection](../resources/riskdetection.md)</li><li>[riskServicePrincipalActivity](../resources/riskserviceprincipalactivity.md)</li><li>[riskyServicePrincipal](../resources/riskyserviceprincipal.md)</li><li>[riskyUser](../resources/riskyuser.md)</li><li>[servicePrincipalRiskDetection](../resources/serviceprincipalriskdetection.md)</li><li>[signIn](../resources/signin.md)</li> |
-| m365DAdminDismissedDetection | 14 | A Microsoft 365 Defender admin dismissed the detection.<br/><br/>Applies to:<li>[riskDetection](../resources/riskdetection.md)</li><li>[riskyUser](../resources/riskyuser.md)</li><li>[signIn](../resources/signin.md)</li> |
+| m365DAdminDismissedDetection | 14 | A Microsoft Defender XDR admin dismissed the detection.<br/><br/>Applies to:<li>[riskDetection](../resources/riskdetection.md)</li><li>[riskyUser](../resources/riskyuser.md)</li><li>[signIn](../resources/signin.md)</li> |
 | userChangedPasswordOnPremises | 15 | The user changed their password on-premises.<br/><br/>Applies to:<li>[riskyUser](../resources/riskyuser.md)</li><li>[signIn](../resources/signin.md)</li> |
 | adminDismissedRiskForSignIn | 16 | An admin dismissed the risk for the sign-in.<br/><br/>Applies to:<li>[riskyUser](../resources/riskyuser.md)</li><li>[signIn](../resources/signin.md)</li> |
 | adminConfirmedAccountSafe | 17 | An admin confirmed the account as safe.<br/><br/>Applies to:<li>[riskyUser](../resources/riskyuser.md)</li><li>[signIn](../resources/signin.md)</li> |
 | adminConfirmedAgentSafe | 18 | An admin confirmed the agent as safe.<br/><br/>Applies to:<li>[agentRiskDetection](../resources/agentriskdetection.md)</li><li>[riskyAgent](../resources/riskyagent.md)</li> |
 | adminConfirmedAgentCompromised | 19 | An admin confirmed the agent as compromised.<br/><br/>Applies to:<li>[agentRiskDetection](../resources/agentriskdetection.md)</li><li>[riskyAgent](../resources/riskyagent.md)</li> |
 | adminDismissedRiskForAgent | 20 | An admin dismissed the risk for the agent.<br/><br/>Applies to:<li>[agentRiskDetection](../resources/agentriskdetection.md)</li><li>[riskyAgent](../resources/riskyagent.md)</li> |
+
+## JSON representation
+
+The following JSON representation shows the resource type.
+
+<!-- {
+  "blockType": "resource",
+  "@odata.type": "microsoft.graph.riskDetail"
+}-->
+
+```json
+{
+  "@odata.type": "#microsoft.graph.riskDetail"
+}
+```
+
+
+
+:::row:::
+   :::column span="":::
+      Content...
+   :::column-end:::
+   :::column span="":::
+      More content...
+   :::column-end:::
+:::row-end:::
