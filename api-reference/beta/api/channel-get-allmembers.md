@@ -1,6 +1,6 @@
 ---
 title: "Get member from allMembers"
-description: "Retrieve a single channel member (direct or indirect) from the allMembers collection using the membershipId."
+description: "Retrieve a single [conversationMember](../resources/conversationmember.md) (direct or indirect) from the allMembers collection using the membershipId."
 author: "jsinghmokha"
 ms.localizationpriority: high
 ms.subservice: "teams"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a specific [conversationMember](../resources/conversationmember.md) from a [channel](../resources/channel.md) using the allMembers API. This API supports all channel types, including shared channels.
+Retrieve a single [conversationMember](../resources/conversationmember.md) (direct or indirect) from the allMembers collection using the membershipId.
 
 This API provides access to both:
 - **Direct members**: Users who are added directly to the channel, including users from other tenants (cross-tenant).
@@ -32,7 +32,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 
 <!-- { "blockType": "permissions", "name": "channel_get_allmember" } -->
-[!INCLUDE [permissions-table](../includes/permissions/channel-list-allmembers-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/channel-get-allmembers-permissions.md)]
 
 ## HTTP request
 
@@ -69,7 +69,6 @@ The following example shows how to get a direct member of a channel.
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "channel-allmembers-get-member-direct",
@@ -119,7 +118,6 @@ The following example shows how to get an indirect member of a shared channel.
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "channel-allmembers-get-member-indirect",
@@ -168,7 +166,6 @@ The following example shows how to use the `$select` query parameter to retrieve
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "channel-allmembers-get-member-select",

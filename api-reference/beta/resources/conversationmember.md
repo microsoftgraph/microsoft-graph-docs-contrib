@@ -55,6 +55,14 @@ Base type for the following supported conversation member types:
 |roles| string collection | The roles for that user. This property contains additional qualifiers only when relevant - for example, if the member has `owner` privileges, the **roles** property contains `owner` as one of the values. Similarly, if the member is an in-tenant guest, the **roles** property contains `guest` as one of the values. A basic member should not have any values specified in the **roles** property. An Out-of-tenant external member is assigned the `owner` role.|
 |visibleHistoryStartDateTime| DateTimeOffset | The timestamp denoting how far back a conversation's history is shared with the conversation member. This property is settable only for members of a chat. |
 
+### Instance attributes
+
+Instance attributes are properties with special behaviors. These properties are temporary and either a) define behavior the service should perform or b) provide short-term property values, like a download URL for an item that expires.
+
+| Property name| Type   | Description
+|:---|:---|:---|
+|@microsoft.graph.originalSourceMembershipUrl|String|This annotation represents the URL of the original source membership that distinguishes between direct and indirect members. Use this annotation with the [List allMembers](../api/channel-list-allmembers.md) and [Get member from allMembers](../api/channel-get-allmembers.md) APIs. |
+
 ## Relationships
 None.
 
