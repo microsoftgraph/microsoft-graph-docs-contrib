@@ -6,7 +6,7 @@
           "Id": "f178819f-70f1-4489-811a-9bb2a9c79086",
           "ApiChange": "Enumeration",
           "ChangedApiName": "cloudPcImageOsArchitectureType",
-          "ChangeType": "Removal",
+          "ChangeType": "Deletion",
           "Description": "Removed the **cloudPcImageOsArchitectureType** enumeration type.",
           "Target": "cloudPcImageOsArchitectureType"
         },
