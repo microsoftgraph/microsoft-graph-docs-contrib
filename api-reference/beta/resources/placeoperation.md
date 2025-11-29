@@ -1,6 +1,6 @@
 ---
 title: "placeOperation resource type"
-description: "Represents a place bulk upsert operation"
+description: "Represents a place bulk upsert operation."
 author: "Dongjing-MSIT"
 ms.date: 11/10/2025
 ms.localizationpriority: medium
@@ -14,8 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a place bulk upsert operation.
-
+Represents a [place](../resources/place.md) bulk upsert operation.
 
 ## Methods
 |Method|Return type|Description|
@@ -26,8 +25,8 @@ Represents a place bulk upsert operation.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|details|[placeExecutionResult](../resources/placeexecutionresult.md) collection|The detailed execution result of the operation, including errors and succeeded places.|
-|id|String|The id of the operation.|
+|details|[placeExecutionResult](../resources/placeexecutionresult.md) collection|The detailed result of the operation, including errors and successful places.|
+|id|String|The ID of the operation.|
 |progress|[placeOperationProgress](../resources/placeoperationprogress.md)|The progress of the operation.|
 |status|placeOperationStatus|The status of the operation. The possible values are: `created`, `inProgress`, `succeeded`, `failed`, `partiallySucceeded`, `expired`, `unknownFutureValue`.|
 
@@ -47,15 +46,10 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.placeOperation",
+  "details": [{"@odata.type": "microsoft.graph.placeExecutionResult"}]
   "id": "String (identifier)",
-  "status": "String",
-  "progress": {
-    "@odata.type": "microsoft.graph.placeOperationProgress"
-  },
-  "details": [
-    {
-      "@odata.type": "microsoft.graph.placeExecutionResult"
-    }
-  ]
+  "progress": {"@odata.type": "microsoft.graph.placeOperationProgress"},
+  "status": "String"
 }
 ```
+
