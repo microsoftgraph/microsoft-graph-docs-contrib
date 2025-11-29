@@ -1,6 +1,6 @@
 ---
 title: "Bulk upsert places"
-description: "Bulk upsert places in async mode"
+description: "Bulk upsert places in async mode."
 author: "Dongjing-MSIT"
 ms.date: 11/10/2025
 ms.localizationpriority: medium
@@ -48,17 +48,18 @@ PATCH /places
 
 In the request body, supply a JSON representation of the [place](../resources/place.md) delta set.
 
-The same properties can be specified as when you [create](../api/place-post.md) or [update(../api/place-update.md) the **place** objects.
+The same properties can be specified as when you [create](../api/place-post.md) or [update](../api/place-update.md) a **place** object.
 
 ## Response
 
-If successful, this method returns a `202 Accepted` response code and an operation id in the location response header, which can be used to [get operation](../api/place-getoperation.md).
+If successful, this method returns a `202 Accepted` response code and an operation ID in the `Location` response header that you can use to [get](../api/place-getoperation.md) the operation.
 
 ## Examples
 
 ### Request
 
-The following example shows a request to create a building, create a floor under the building and update a desk.
+The following example shows a request to create a building, add a floor to the building, and update a desk.
+
 <!-- {
   "blockType": "request",
   "name": "create_place_from_places"
