@@ -46,7 +46,7 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.placeOperation",
-  "details": [{"@odata.type": "microsoft.graph.placeExecutionResult"}]
+  "details": [{"@odata.type": "microsoft.graph.placeExecutionResult"}],
   "id": "String (identifier)",
   "progress": {"@odata.type": "microsoft.graph.placeOperationProgress"},
   "status": "String"
