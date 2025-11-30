@@ -19,8 +19,8 @@ Represents a [place](../resources/place.md) bulk upsert operation.
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/place-listoperations.md)|[placeOperation](../resources/placeoperation.md) collection|Get a list of the placeOperation objects and their properties. Details aren't listed.|
-|[Get](../api/place-getoperation.md)|[placeOperation](../resources/placeoperation.md)|Read the properties and relationships of [placeOperation](../resources/placeoperation.md) object.|
+|[List](../api/place-listoperations.md)|[placeOperation](../resources/placeoperation.md) collection|List all existing [placeOperation](../resources/placeoperation.md) objects.|
+|[Get](../api/place-getoperation.md)|[placeOperation](../resources/placeoperation.md)|Get a [placeOperation](../resources/placeoperation.md) by ID.|
 
 ## Properties
 |Property|Type|Description|
