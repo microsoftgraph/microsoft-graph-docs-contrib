@@ -62,11 +62,12 @@ If successful, this method returns a `200 OK` response code and an updated [shar
 
 ## Examples
 
-### Example 1: Create user migration task by user principal name
+### Example 1: Create a user migration task by using the user principal name
 
-### Request
+The following example shows how to create a user migration task by **userPrincipalName**.
 
-The following example shows a request to create a user migration task by **userPrincipalName**.
+#### Request
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "update_sharepointmigrationtask_by_userprincipalname"
@@ -80,19 +81,17 @@ Content-Type: application/json
   "parameters": {
     "@odata.type": "#microsoft.graph.sharePointUserMigrationTaskParameters",
     "targetOrganizationHost": "https://fabrico-my.sharepoint.com",
-    "sourceUserIdentity":
-    {
+    "sourceUserIdentity": {
       "userPrincipalName": "source-user@contoso.onmicrosoft.com"
     },
-    "targetUserIdentity":
-    {
+    "targetUserIdentity": {
       "userPrincipalName": "target-user@fabrico.onmicrosoft.com"
     }
   }
 }
 ```
 
-### Response
+#### Response
 
 The following example shows the response.
 
@@ -112,23 +111,22 @@ Content-Type: application/json
   "parameters": {
     "@odata.type": "#microsoft.graph.sharePointUserMigrationTaskParameters",
     "targetOrganizationHost": "https://fabrico-my.sharepoint.com",
-    "sourceUserIdentity":
-    {
+    "sourceUserIdentity": {
       "userPrincipalName": "source-user@contoso.onmicrosoft.com"
     },
-    "targetUserIdentity":
-    {
+    "targetUserIdentity": {
       "userPrincipalName": "target-user@fabrico.onmicrosoft.com"
     }
   }
 }
 ```
 
-### Example 2: Create user migration task by user object id
+### Example 2: Create a user migration task by using the user object ID
 
-### Request
+The following example shows how to create a user migration task by **userObjectId**.
 
-The following example shows a request to create a user migration task by **userObjectId**.
+#### Request
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "update_sharepointmigrationtask_by_userobjectid"
@@ -142,19 +140,17 @@ Content-Type: application/json
   "parameters": {
     "@odata.type": "#microsoft.graph.sharePointUserMigrationTaskParameters",
     "targetOrganizationHost": "https://fabrico-my.sharepoint.com",
-    "sourceUserIdentity":
-    {
+    "sourceUserIdentity": {
       "id": "da157a29-f793-4dd6-9c73-41d2c73c2546"
     },
-    "targetUserIdentity":
-    {
+    "targetUserIdentity": {
       "id": "cb53ea98-6151-44cc-9c21-098a3c3e3988"
     }
   }
 }
 ```
 
-### Response
+#### Response
 
 The following example shows the response.
 
@@ -174,23 +170,22 @@ Content-Type: application/json
   "parameters": {
     "@odata.type": "#microsoft.graph.sharePointUserMigrationTaskParameters",
     "targetOrganizationHost": "https://fabrico-my.sharepoint.com",
-    "sourceUserIdentity":
-    {
+    "sourceUserIdentity": {
       "id": "da157a29-f793-4dd6-9c73-41d2c73c2546"
     },
-    "targetUserIdentity":
-    {
+    "targetUserIdentity": {
       "id": "cb53ea98-6151-44cc-9c21-098a3c3e3988"
     }
   }
 }
 ```
 
-### Example 3: Create user migration task by user object id and target data location code
+### Example 3: Create a user migration task by using the user object ID and the target data location code
 
-### Request
+The following example shows how to create a user migration task by **userObjectId** and with specific **targetDataLocationCode**.
 
-The following example shows a request to create a user migration task by **userObjectId** and with specific **targetDataLocationCode**.
+#### Request
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "update_sharepointmigrationtask_with_targetdatalocationcode"
@@ -205,19 +200,17 @@ Content-Type: application/json
     "@odata.type": "#microsoft.graph.sharePointUserMigrationTaskParameters",
     "targetOrganizationId": "78d010af-72cb-412f-8779-18ce9b5f553b",
     "targetDataLocationCode": null,
-    "sourceUserIdentity":
-    {
+    "sourceUserIdentity": {
       "id": "da157a29-f793-4dd6-9c73-41d2c73c2546"
     },
-    "targetUserIdentity":
-    {
+    "targetUserIdentity": {
       "id": "cb53ea98-6151-44cc-9c21-098a3c3e3988"
     }
   }
 }
 ```
 
-### Response
+#### Response
 
 The following example shows the response.
 
@@ -238,13 +231,11 @@ Content-Type: application/json
     "@odata.type": "#microsoft.graph.sharePointUserMigrationTaskParameters",
     "targetOrganizationId": "78d010af-72cb-412f-8779-18ce9b5f553b",
     "targetDataLocationCode": "FRA",
-    "sourceUserIdentity":
-    {
+    "sourceUserIdentity": {
       "id": "da157a29-f793-4dd6-9c73-41d2c73c2546",
       "userPrincipalName": "source-user@contoso.onmicrosoft.com"
     },
-    "targetUserIdentity":
-    {
+    "targetUserIdentity": {
       "id": "cb53ea98-6151-44cc-9c21-098a3c3e3988",
       "userPrincipalName": "target-user@fabrico.onmicrosoft.com"
     }
@@ -252,11 +243,12 @@ Content-Type: application/json
 }
 ```
 
-### Example 4: Create site migration task
+### Example 4: Create a site migration task
 
-### Request
+The following example shows how to create a regular site migration task.
 
-The following example shows a request to create a regular site migration task.
+#### Request
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "update_sharepointmigrationtask_by_siteurl"
@@ -276,7 +268,7 @@ Content-Type: application/json
 }
 ```
 
-### Response
+#### Response
 
 The following example shows the response.
 
@@ -302,11 +294,12 @@ Content-Type: application/json
 }
 ```
 
-### Example 5: Create group migration task
+### Example 5: Create a group migration task
 
-### Request
+The following example shows how to create a group-connected site migration task by **mailNickname**.
 
-The following example shows a request to create a group-connected site migration task by **MailNickname**.
+#### Request
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "update_sharepointmigrationtask_by_mailnickname"
@@ -320,19 +313,17 @@ Content-Type: application/json
   "parameters": {
     "@odata.type": "#microsoft.graph.sharePointGroupMigrationTaskParameters",
     "targetOrganizationHost": "https://fabrico-my.sharepoint.com",
-    "sourceGroupIdentity":
-    {
+    "sourceGroupIdentity": {
       "mailNickname": "source-group"
     },
-    "targetGroupIdentity":
-    {
+    "targetGroupIdentity": {
       "mailNickname": "target-group"
     }
   }
 }
 ```
 
-### Response
+#### Response
 
 The following example shows the response.
 
@@ -352,23 +343,22 @@ Content-Type: application/json
   "parameters": {
     "@odata.type": "#microsoft.graph.sharePointGroupMigrationTaskParameters",
     "targetOrganizationHost": "https://fabrico-my.sharepoint.com",
-    "sourceGroupIdentity":
-    {
+    "sourceGroupIdentity": {
       "mailNickname": "source-group"
     },
-    "targetGroupIdentity":
-    {
+    "targetGroupIdentity": {
       "mailNickname": "target-group"
     }
   }
 }
 ```
 
-### Example 6: Create user migration task with preferred start date time
+### Example 6: Create a user migration task with a preferred start date and time
 
-### Request
+The following example shows how to create a user migration task with the **preferredStartDateTime** parameter.
 
-The following example shows a request to create a user migration task with **preferredStartDateTime** parameter.
+#### Request
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "update_sharepointmigrationtask_with_preferredstartdatetime"
@@ -382,12 +372,10 @@ Content-Type: application/json
   "parameters": {
     "@odata.type": "#microsoft.graph.sharePointUserMigrationTaskParameters",
     "targetOrganizationHost": "https://fabrico-my.sharepoint.com",
-    "sourceUserIdentity":
-    {
+    "sourceUserIdentity": {
       "userPrincipalName": "source-user@contoso.onmicrosoft.com"
     },
-    "targetUserIdentity":
-    {
+    "targetUserIdentity": {
       "userPrincipalName": "target-user@fabrico.onmicrosoft.com"
     },
     "preferredStartDateTime": "2024-08-31T16:00:00Z"
@@ -395,7 +383,7 @@ Content-Type: application/json
 }
 ```
 
-### Response
+#### Response
 
 The following example shows the response.
 
@@ -415,12 +403,10 @@ Content-Type: application/json
   "parameters": {
     "@odata.type": "#microsoft.graph.sharePointUserMigrationTaskParameters",
     "targetOrganizationHost": "https://fabrico-my.sharepoint.com",
-    "sourceUserIdentity":
-    {
+    "sourceUserIdentity": {
       "userPrincipalName": "source-user@contoso.onmicrosoft.com"
     },
-    "targetUserIdentity":
-    {
+    "targetUserIdentity": {
       "userPrincipalName": "target-user@fabrico.onmicrosoft.com"
     },
     "preferredStartDateTime": "2024-08-31T16:00:00Z"
@@ -430,9 +416,10 @@ Content-Type: application/json
 
 ### Example 7: Create user migration task with validateOnly
 
-### Request
+The following example shows how to create a user migration task with `"validateOnly": true` parameter.
 
-The following example shows a request to create a user migration task with **ValidateOnly=true** parameter.
+#### Request
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "update_sharepointmigrationtask_with_validateonly"
@@ -447,19 +434,17 @@ Content-Type: application/json
     "@odata.type": "#microsoft.graph.sharePointUserMigrationTaskParameters",
     "targetOrganizationHost": "https://fabrico-my.sharepoint.com",
     "validateOnly": true,
-    "sourceUserIdentity":
-    {
+    "sourceUserIdentity": {
       "userPrincipalName": "source-user@contoso.onmicrosoft.com"
     },
-    "targetUserIdentity":
-    {
+    "targetUserIdentity": {
       "userPrincipalName": "target-user@fabrico.onmicrosoft.com"
     }
   }
 }
 ```
 
-### Response
+#### Response
 
 The following example shows the response.
 
@@ -479,12 +464,10 @@ Content-Type: application/json
     "@odata.type": "#microsoft.graph.sharePointUserMigrationTaskParameters",
     "targetOrganizationHost": "https://fabrico-my.sharepoint.com",
     "validateOnly": true,
-    "sourceUserIdentity":
-    {
+    "sourceUserIdentity": {
       "userPrincipalName": "source-user@contoso.onmicrosoft.com"
     },
-    "targetUserIdentity":
-    {
+    "targetUserIdentity": {
       "userPrincipalName": "target-user@fabrico.onmicrosoft.com"
     }
   }
