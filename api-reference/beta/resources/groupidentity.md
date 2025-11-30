@@ -14,11 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The **groupIdentity** resource represents an identity of a group-connected site. Inherits from [identity](identity.md).
+Represents the identity of a group-connected site. This resource is an open type.
 
 Inherits from [identity](../resources/identity.md).
-
-This resource is an open type.
 
 ## Properties
 
