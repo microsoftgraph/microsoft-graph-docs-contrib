@@ -16,7 +16,6 @@ Namespace: microsoft.graph
 
 Represents the progress of an operation.
 
-
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
@@ -37,8 +36,8 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.placeOperationProgress",
-  "totalPlaceCount": "Integer",
-  "succeededPlaceCount": "Integer",
-  "failedPlaceCount": "Integer"
+  "failedPlaceCount": "Int32",
+  "succeededPlaceCount": "Int32",
+  "totalPlaceCount": "Int32"
 }
 ```
