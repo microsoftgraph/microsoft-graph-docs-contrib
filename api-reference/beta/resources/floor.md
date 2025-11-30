@@ -39,7 +39,7 @@ For the list of supported methods, see [place](./place.md).
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|children|[place](../resources/place.md) collection|A collection of children places, which is only used in bulk upsert API. Inherited from [microsoft.graph.place](../resources/place.md). The children of a floor should be of type [Section](../resources/section.md).|
+|children|[place](../resources/place.md) collection|A collection of children places that is only used in the [Bulk upsert](../api/place-patch-places.md) API. The children of a floor should be of type [section](../resources/section.md). Inherited from [place](../resources/place.md).|
 
 ## JSON representation
 The following JSON representation shows the resource type.
