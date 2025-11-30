@@ -280,6 +280,10 @@ items:
     items:
     - name: Activity metadata
       href: ../../resources/activitymetadata.md
+    - name: Ai agent info
+      href: ../../resources/aiagentinfo.md
+    - name: Ai interaction entity
+      href: ../../resources/aiinteractionentity.md
     - name: Ai interaction plugin
       href: ../../resources/aiinteractionplugin.md
     - name: Auto labeling
@@ -350,6 +354,8 @@ items:
       href: ../../resources/protectedapplicationmetadata.md
     - name: Protected content
       href: ../../resources/protectedcontent.md
+    - name: Resource access detail
+      href: ../../resources/resourceaccessdetail.md
     - name: Restrict access action
       href: ../../resources/restrictaccessaction.md
     - name: Restrict access action base

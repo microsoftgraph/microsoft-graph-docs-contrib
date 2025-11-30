@@ -772,6 +772,24 @@ Namespace: microsoft.graph
 | governed |
 | unknownFutureValue |
 
+### accessPackageSuggestionFilterByCurrentUserOptions values
+
+| Member |
+| ---- |
+| none |
+| relatedPeopleAssignments |
+| assignmentHistory |
+| unknownFutureValue |
+
+### accessPackageSuggestionRelatedPeopleInsightLevel values
+
+| Member |
+| ---- |
+| disabled |
+| count |
+| countAndNames |
+| unknownFutureValue |
+
 ### customExtensionCalloutInstanceStatus values
 
 | Member |
@@ -909,6 +927,15 @@ Namespace: microsoft.graph
 | unknownFutureValue |
 | remoteDesktopToken |
 | refreshToken       |
+
+### approverInformationVisibilityvalues
+
+| Member |
+| ---- |
+| no |
+| yes |
+| default |
+| unknownFutureValue |
 
 ### protocolType values
 
@@ -5715,6 +5742,25 @@ Possible values for user account types (group membership), per Windows definitio
 |sts|
 |unknownFutureValue|
 
+### workLocationSource values 
+|Member|
+|:---|
+|none|
+|manual|
+|scheduled|
+|automatic|
+|unknownFutureValue|
+
+### workLocationType values 
+
+|Member|
+|:---|
+|unspecified|
+|office|
+|remote|
+|timeOff|
+|unknownFutureValue|
+
 ### sharePointIdentityMappingGroupType values 
 
 |Member|
@@ -5783,4 +5829,23 @@ Possible values for user account types (group membership), per Windows definitio
 |synced|
 |finalizing|
 |forceComplete|
+|unknownFutureValue|
+
+### resourceAccessStatus values
+
+|Member|
+|:---|
+|none|
+|failure|
+|success|
+|unknownFutureValue|
+
+### resourceAccessType values
+
+|Member|
+|:---|
+|none|
+|read|
+|write|
+|create|
 |unknownFutureValue|

@@ -3,6 +3,136 @@
     {
       "ChangeList": [
         {
+          "Id": "ea679487-f221-4111-955b-f3b581261ada",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "accessPackageSuggestionFilterByCurrentUserOptions",
+          "ChangeType": "Addition",
+          "Description": "Added the **accessPackageSuggestionFilterByCurrentUserOptions** enumeration type.",
+          "Target": "accessPackageSuggestionFilterByCurrentUserOptions"
+        },
+        {
+          "Id": "ea679487-f221-4111-955b-f3b581261ada",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "accessPackageSuggestionRelatedPeopleInsightLevel",
+          "ChangeType": "Addition",
+          "Description": "Added the **accessPackageSuggestionRelatedPeopleInsightLevel** enumeration type.",
+          "Target": "accessPackageSuggestionRelatedPeopleInsightLevel"
+        },
+        {
+          "Id": "ea679487-f221-4111-955b-f3b581261ada",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "approverInformationVisibility",
+          "ChangeType": "Addition",
+          "Description": "Added the **approverInformationVisibility** enumeration type.",
+          "Target": "approverInformationVisibility"
+        },
+        {
+          "Id": "ea679487-f221-4111-955b-f3b581261ada",
+          "ApiChange": "Property",
+          "ChangedApiName": "approverInformationVisibility",
+          "ChangeType": "Addition",
+          "Description": "Added the **approverInformationVisibility** property to the [accessPackageApprovalStage](https://learn.microsoft.com/en-us/graph/api/resources/accessPackageApprovalStage?view=graph-rest-beta) resource.",
+          "Target": "accessPackageApprovalStage"
+        },
+        {
+          "Id": "ea679487-f221-4111-955b-f3b581261ada",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessPackageSuggestionReason",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessPackageSuggestionReason](https://learn.microsoft.com/en-us/graph/api/resources/accessPackageSuggestionReason?view=graph-rest-beta) resource.",
+          "Target": "accessPackageSuggestionReason"
+        },
+        {
+          "Id": "ea679487-f221-4111-955b-f3b581261ada",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessPackageSuggestionRelatedPeopleBased",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessPackageSuggestionRelatedPeopleBased](https://learn.microsoft.com/en-us/graph/api/resources/accessPackageSuggestionRelatedPeopleBased?view=graph-rest-beta) resource.",
+          "Target": "accessPackageSuggestionRelatedPeopleBased"
+        },
+        {
+          "Id": "ea679487-f221-4111-955b-f3b581261ada",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessPackageSuggestionSelfAssignmentHistoryBased",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessPackageSuggestionSelfAssignmentHistoryBased](https://learn.microsoft.com/en-us/graph/api/resources/accessPackageSuggestionSelfAssignmentHistoryBased?view=graph-rest-beta) resource.",
+          "Target": "accessPackageSuggestionSelfAssignmentHistoryBased"
+        },
+        {
+          "Id": "ea679487-f221-4111-955b-f3b581261ada",
+          "ApiChange": "Property",
+          "ChangedApiName": "approverInformationVisibility",
+          "ChangeType": "Addition",
+          "Description": "Added the **approverInformationVisibility** property to the [approvalStage](https://learn.microsoft.com/en-us/graph/api/resources/approvalStage?view=graph-rest-beta) resource.",
+          "Target": "approvalStage"
+        },
+        {
+          "Id": "ea679487-f221-4111-955b-f3b581261ada",
+          "ApiChange": "Resource",
+          "ChangedApiName": "identity",
+          "ChangeType": "Addition",
+          "Description": "Added the [identity](https://learn.microsoft.com/en-us/graph/api/resources/identity?view=graph-rest-beta) resource.",
+          "Target": "identity"
+        },
+        {
+          "Id": "ea679487-f221-4111-955b-f3b581261ada",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessPackageSuggestion",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessPackageSuggestion](https://learn.microsoft.com/en-us/graph/api/resources/accessPackageSuggestion?view=graph-rest-beta) resource.",
+          "Target": "accessPackageSuggestion"
+        },
+        {
+          "Id": "ea679487-f221-4111-955b-f3b581261ada",
+          "ApiChange": "Resource",
+          "ChangedApiName": "availableAccessPackage",
+          "ChangeType": "Addition",
+          "Description": "Added the [availableAccessPackage](https://learn.microsoft.com/en-us/graph/api/resources/availableAccessPackage?view=graph-rest-beta) resource.",
+          "Target": "availableAccessPackage"
+        },
+        {
+          "Id": "ea679487-f221-4111-955b-f3b581261ada",
+          "ApiChange": "Resource",
+          "ChangedApiName": "endUserSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [endUserSettings](https://learn.microsoft.com/en-us/graph/api/resources/endUserSettings?view=graph-rest-beta) resource.",
+          "Target": "endUserSettings"
+        },
+        {
+          "Id": "ea679487-f221-4111-955b-f3b581261ada",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "accessPackageSuggestions",
+          "ChangeType": "Addition",
+          "Description": "Added the **accessPackageSuggestions** relationship to the [entitlementManagement](https://learn.microsoft.com/en-us/graph/api/resources/entitlementManagement?view=graph-rest-beta) resource.",
+          "Target": "entitlementManagement"
+        },
+        {
+          "Id": "ea679487-f221-4111-955b-f3b581261ada",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "availableAccessPackages",
+          "ChangeType": "Addition",
+          "Description": "Added the **availableAccessPackages** relationship to the [entitlementManagement](https://learn.microsoft.com/en-us/graph/api/resources/entitlementManagement?view=graph-rest-beta) resource.",
+          "Target": "entitlementManagement"
+        },
+        {
+          "Id": "ea679487-f221-4111-955b-f3b581261ada",
+          "ApiChange": "Method",
+          "ChangedApiName": "filterByCurrentUser",
+          "ChangeType": "Addition",
+          "Description": "Added the [filterByCurrentUser](https://learn.microsoft.com/en-us/graph/api/accessPackageSuggestion-filterByCurrentUser?view=graph-rest-beta) method to the [accessPackageSuggestion](https://learn.microsoft.com/en-us/graph/api/resources/accessPackageSuggestion?view=graph-rest-beta) resource.",
+          "Target": "accessPackageSuggestion"
+        }
+      ],
+      "Id": "ea679487-f221-4111-955b-f3b581261ada",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-11-25T19:41:12.4626196Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "2e9689f1-ac83-4805-bd3e-6916503a87d1",
           "ApiChange": "Resource",
           "ChangedApiName": "targetUserSponsors",
