@@ -58,7 +58,7 @@ The following example shows a request.
   "name": "get_insightssettingscontactrequest"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/organization/{organizationId}/settings/contactInsights
 ```
 

@@ -63,7 +63,7 @@ The following example shows a request.
   "name": "virtualeventwebinarthis.getbyuserrole"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/solutions/virtualEvents/webinars/getByUserRole(role='organizer')
 ```
 

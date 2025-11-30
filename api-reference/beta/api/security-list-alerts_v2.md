@@ -80,7 +80,7 @@ The following example shows a request.
   "name": "security_list_alerts"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/security/alerts_v2
 ```
 

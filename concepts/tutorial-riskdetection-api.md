@@ -46,7 +46,7 @@ When **MyTestUser1** signed in to the Microsoft Entra admin center using the ano
   "blockType": "request",
   "name": "tutorial_riskdetection_get_riskdetections"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/identityProtection/riskDetections?$filter=userDisplayName eq 'MyTestUser1'
 ```
 

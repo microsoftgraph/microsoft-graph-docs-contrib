@@ -71,7 +71,7 @@ The following example shows a request.
   "name": "lifecycleworkflows_list_executionScope_e1"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identitygovernance/lifecycleWorkflows/workflows/8696088c-1aef-4f65-afe9-acd55343e327/executionScope
 ```
 

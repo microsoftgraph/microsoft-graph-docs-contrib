@@ -65,7 +65,7 @@ The following example shows a request.
   "name": "list_authenticationeventsflow"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identity/authenticationEventsFlows
 ```
 
@@ -349,7 +349,7 @@ The following example shows a request.
   "name": "list_authenticationeventsflow_selfservicesignup_identityproviders"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identity/authenticationEventsFlows?$filter=microsoft.graph.externalUsersSelfServiceSignUpEventsFlow/onAuthenticationMethodLoadStart/microsoft.graph.onAuthenticationMethodLoadStartExternalUsersSelfServiceSignUp/identityProviders/any(idp:idp/id eq 'Google-OAUTH')
 ```
 
@@ -541,7 +541,7 @@ The following example shows a request.
   "name": "list_authenticationeventsflow_filter_selfservicesignup_attributes"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identity/authenticationEventsFlows?$filter=microsoft.graph.externalUsersSelfServiceSignUpEventsFlow/onAttributeCollection/microsoft.graph.onAttributeCollectionExternalUsersSelfServiceSignUp/attributes/any(attribute:attribute/id eq 'city')
 ```
 
@@ -866,7 +866,7 @@ The following example shows a request.
   "name": "list_authenticationeventsflow_filter_includeapplications"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identity/authenticationEventsFlows?$filter=microsoft.graph.externalUsersSelfServiceSignUpEventsFlow/conditions/applications/includeApplications/any(appId:appId/appId eq '63856651-13d9-4784-9abf-20758d509e19')
 ```
 

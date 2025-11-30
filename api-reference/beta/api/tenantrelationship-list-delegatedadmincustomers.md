@@ -62,7 +62,7 @@ Each **delegatedAdminCustomer** object contains an **@odata.etag** property as p
   "name": "list_delegatedadmincustomer"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/tenantRelationships/delegatedAdminCustomers
 ```
 

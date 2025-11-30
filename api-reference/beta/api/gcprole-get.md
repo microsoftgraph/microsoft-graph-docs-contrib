@@ -64,7 +64,7 @@ The following example shows a request.
   "name": "get_gcprole"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/external/authorizationSystems/{id}/microsoft.graph.gcpAuthorizationSystem/roles/cm9sZXMvYmFja3VwZHIuY29tcHV0ZUVuZ2luZU9wZXJhdG9y
 ```
 

@@ -62,7 +62,7 @@ The following example shows a request.
   "sampleKeys": ["f1b13829-3829-f1b1-2938-b1f12938b1a"]
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/security/attackSimulation/payloads/f1b13829-3829-f1b1-2938-b1f12938b1a/detail
 ```
 

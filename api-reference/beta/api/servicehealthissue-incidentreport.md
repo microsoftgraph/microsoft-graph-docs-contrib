@@ -58,7 +58,7 @@ If successful, this function returns a `200 OK` response code and a file stream 
   "name": "servicehealthissue_incidentreport"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/admin/serviceAnnouncement/issues/MO248163/incidentReport
 ```
 

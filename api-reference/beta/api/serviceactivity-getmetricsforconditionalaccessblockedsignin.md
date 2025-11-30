@@ -64,7 +64,7 @@ The following example shows a request.
   "name": "serviceactivitythis.getmetricsforconditionalaccessblockedsignin"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/reports/serviceActivity/getMetricsForConditionalAccessBlockedSignIn(inclusiveIntervalStartDateTime=2023-01-01T00:00:00Z,exclusiveIntervalEndDateTime=2023-01-01T00:20:00Z,aggregationIntervalInMinutes=10)
 ```
 

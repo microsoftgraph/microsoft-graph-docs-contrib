@@ -64,7 +64,7 @@ The following example shows a request.
   "name": "list_ipapplicationsegment"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/applications/dcc40202-6223-488b-8e64-28aa1a803d6c/onPremisesPublishing/segmentsConfiguration/microsoft.graph.IpSegmentConfiguration/ApplicationSegments
 ```
 

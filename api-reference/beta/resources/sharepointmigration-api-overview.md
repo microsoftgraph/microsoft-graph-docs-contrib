@@ -1,5 +1,5 @@
 ---
-title: "Use the SharePoint Embedded migration API (preview)"
+title: "Use the SharePoint Embedded migration API"
 description: "Learn how to use the SharePoint Embedded migration APIs in Microsoft Graph to import content to SharePoint Embedded containers."
 ms.localizationpriority: medium
 author: "shiongzuo"
@@ -8,7 +8,7 @@ doc_type: conceptualPageType
 ms.date: 09/27/2025
 ---
 
-# Use the SharePoint Embedded migration API (preview)
+# Use the SharePoint Embedded migration API
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

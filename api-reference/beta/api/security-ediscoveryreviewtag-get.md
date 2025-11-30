@@ -62,7 +62,7 @@ The following example shows a request.
   "name": "get_ediscoveryreviewtag"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/security/cases/ediscoveryCases/58399dff-cebe-478f-b1af-d3227f1fd645/tags/062de822f17a4a2e9b833aa3f6c37108
 ```
 

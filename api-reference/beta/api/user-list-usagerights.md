@@ -69,7 +69,7 @@ Additionally, if there are more pages in the response an @odata.nextLink is retu
   "name": "list_usageright_3"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/{userId}/usageRights
 ```
 
@@ -136,7 +136,7 @@ Content-Type: application/json
   "name": "list_usageright_4"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/{userId}/usageRights?$filter=state in ('active', 'suspended') and serviceIdentifier in ('ABCD')
 ```
 

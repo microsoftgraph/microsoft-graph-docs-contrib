@@ -69,7 +69,7 @@ The following example shows a request.
   "name": "list_all_mailboxprotectionunit"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/solutions/backupRestore/protectionUnits/microsoft.graph.mailboxProtectionUnit
 ```
 

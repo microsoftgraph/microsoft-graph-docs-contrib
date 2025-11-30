@@ -60,7 +60,7 @@ The following example shows a request.
   "name": "get_targetdevicegroup"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/servicePrincipals/00af5dfb-85da-4b41-a677-0c6b86dd34f8/remoteDesktopSecurityConfiguration/targetDeviceGroups/b9e4eae4-b781-45a1-ce65-f2dd8ac3b696
 ```
 

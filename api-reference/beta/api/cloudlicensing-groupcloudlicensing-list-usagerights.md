@@ -79,7 +79,7 @@ The following example shows a request.
   "name": "cloudlicensing-groupusageright-list-example-1"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/groups/0003985b-dfc1-4f42-97d4-65f70a335ca8/cloudLicensing/usageRights
 ```
 
@@ -136,7 +136,7 @@ The following example shows a request.
   "name": "cloudlicensing-groupusageright-list-example-2"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/groups/0003985b-dfc1-4f42-97d4-65f70a335ca8/cloudLicensing/usageRights?$filter=services/any(c:c/planId eq 113feb6c-3fe4-4440-bddc-54d774bf0318)
 ```
 

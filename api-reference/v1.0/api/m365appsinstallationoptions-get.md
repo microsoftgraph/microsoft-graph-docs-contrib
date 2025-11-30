@@ -60,7 +60,7 @@ The following example shows a request.
   "name": "get_m365AppsInstallationOptions"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/admin/microsoft365Apps/installationOptions
 ```
 

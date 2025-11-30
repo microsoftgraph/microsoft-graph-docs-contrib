@@ -60,7 +60,7 @@ The following example shows a request.
   "name": "list_deployment"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/admin/windows/updates/deploymentAudiences
 ```
 

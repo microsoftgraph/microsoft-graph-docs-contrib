@@ -69,7 +69,7 @@ The following example shows a request.
   "name": "list_all_channel"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/teams/893075dd-2487-4122-925f-022c42e20265/allChannels
 ```
 
@@ -155,7 +155,7 @@ The following example shows a request.
   "name": "list_all_shared_channel"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/teams/893075dd-2487-4122-925f-022c42e20265/allChannels?$filter=membershipType eq 'shared'
 ```
 

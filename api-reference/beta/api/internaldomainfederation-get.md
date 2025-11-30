@@ -61,7 +61,7 @@ If successful, this method returns a `200 OK` response code and an [internalDoma
   "sampleKeys": ["contoso.com", "6601d14b-d113-8f64-fda2-9b5ddda18ecc"]
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/domains/contoso.com/federationConfiguration/6601d14b-d113-8f64-fda2-9b5ddda18ecc
 ```
 

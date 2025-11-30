@@ -66,7 +66,7 @@ The following example shows a request.
   "name": "list_intelligenceprofile"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/security/threatIntelligence/intelProfiles
 ```
 

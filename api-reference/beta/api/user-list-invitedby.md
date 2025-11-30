@@ -67,7 +67,7 @@ The following example shows a request.
   "name": "list_directoryobject"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/37b16a99-97fe-47fe-9a58-4257059b3463/invitedBy
 ```
 

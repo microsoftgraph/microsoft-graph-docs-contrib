@@ -79,7 +79,7 @@ The following example shows a request.
 }
 -->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/9ec90ff8-fd63-4fb9-ab5a-aa4fdcc43ec9
 ```
 
@@ -179,7 +179,7 @@ The following example shows a request.
 }
 -->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/40cee9d2-03fb-4066-8d35-dbdf2875c33f?$select=id,displayName,imageDisplayName,lastModifiedDateTime,lastRemoteActionResult,lastLoginResult,connectivityResult,allotmentDisplayName,deviceRegionName,productType,provisionedDateTime,sharedDeviceDetail,groupDetail,userDetail
 ```
 
@@ -292,7 +292,7 @@ The following example shows a request.
 }
 -->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/cloudPCs/36bd4942-0ca8-11ed-861d-0242ac120002
 ```
 

@@ -55,7 +55,7 @@ The following example shows a request.
   "name": "recommendationthis.tenantsecurescores"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/directory/recommendations/tenantSecureScores
 ```
 

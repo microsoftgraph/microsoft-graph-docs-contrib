@@ -561,7 +561,7 @@ The following example retrieves policies that are scoped to the group and apply 
   "name": "list_unifiedrolemanagementpolicy_azureADGroup"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/policies/roleManagementPolicies?$filter=scopeId eq '60bba733-f09d-49b7-8445-32369aa066b3' and scopeType eq 'Group'&$expand=rules($select=id)
 ```
 

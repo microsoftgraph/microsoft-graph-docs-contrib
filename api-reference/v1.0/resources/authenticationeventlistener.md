@@ -22,6 +22,7 @@ To customize the authentication process, listeners can be registered which speci
 - [onAttributeCollectionStartListener](../resources/onattributecollectionstartlistener.md) resource type
 - [onAttributeCollectionSubmitListener](../resources/onattributecollectionsubmitlistener.md) resource type
 - [onEmailOtpSendListener](../resources/onemailotpsendlistener.md) resource type
+- [onFraudProtectionLoadStartListener](../resources/onfraudprotectionloadstartlistener.md) resource type
 
 > [!NOTE]
 >
@@ -44,6 +45,7 @@ Inherits from [entity](../resources/entity.md).
 |:---|:---|:---|
 |authenticationEventsFlowId|String|The identifier of the [authenticationEventsFlow](../resources/authenticationeventsflow.md) object.|
 |conditions|[authenticationConditions](../resources/authenticationconditions.md)|The conditions on which this authenticationEventListener should trigger.|
+|displayName|String|The display name of the listener.|
 |id|String|Identifier for this authenticationEventListener. Inherited from [entity](../resources/entity.md).|
 
 ## Relationships
@@ -63,6 +65,7 @@ The following JSON representation shows the resource type.
 {
   "@odata.type": "#microsoft.graph.authenticationEventListener",
   "id": "String (identifier)",
+  "displayName": "String",
   "conditions": {
     "@odata.type": "microsoft.graph.authenticationConditions"
   },

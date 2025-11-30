@@ -60,7 +60,7 @@ The following example shows a request.
   "name": "get_filteringpolicylink"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/networkaccess/filteringPolicies/bb4e13cd-656b-499a-929f-d16bf16951ba?$expand=policyRules
 ```
 

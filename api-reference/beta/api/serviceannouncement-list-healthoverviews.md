@@ -62,7 +62,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
   "name": "list_healthoverviews"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/admin/serviceAnnouncement/healthOverviews
 ```
 
@@ -142,7 +142,7 @@ Content-Type: application/json
 }
 -->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/admin/serviceAnnouncement/healthOverviews?$expand=issues
 ```
 

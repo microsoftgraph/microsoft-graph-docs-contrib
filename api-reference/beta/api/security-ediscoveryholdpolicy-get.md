@@ -59,7 +59,7 @@ The following example shows a request.
   "name": "get_ediscoveryholdpolicy"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/security/cases/ediscoveryCases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/legalholds/783c3ea4-d474-4051-9c13-08707ce8c8b6
 ```
 

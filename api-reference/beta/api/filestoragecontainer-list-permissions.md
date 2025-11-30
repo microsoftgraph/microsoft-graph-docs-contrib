@@ -61,7 +61,7 @@ The following example shows a request.
   "name": "list_permission"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/permissions
 ```
 

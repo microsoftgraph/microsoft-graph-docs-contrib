@@ -70,7 +70,7 @@ The following example shows a request.
   "name": "get_accesspackageassignmentpolicy"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/assignmentPolicies/{accessPackageAssignmentPolicyId}
 ```
 

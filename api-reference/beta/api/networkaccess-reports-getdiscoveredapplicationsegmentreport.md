@@ -74,7 +74,7 @@ The following example shows a request.
   "name": "reportsthis.getdiscoveredapplicationsegmentreport"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/networkAccess/reports/getDiscoveredApplicationSegmentReport(startDateTime=2023-01-01T00:00:00Z,endDateTime=2023-01-31T23:59:59Z,userId=null)
 ```
 

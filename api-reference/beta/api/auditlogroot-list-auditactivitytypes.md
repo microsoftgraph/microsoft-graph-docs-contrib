@@ -69,7 +69,7 @@ The following example shows a request.
   "name": "list_auditactivitytype"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/auditLogs/auditActivityTypes
 ```
 

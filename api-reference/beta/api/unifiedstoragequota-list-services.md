@@ -59,7 +59,7 @@ Here's an example  of a request.
   "name": "list_servicestoragequotabreakdown"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/settings/storage/quota/services
 ```
 

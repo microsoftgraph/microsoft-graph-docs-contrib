@@ -3646,6 +3646,31 @@ Possible values for user account types (group membership), per Windows definitio
 |bulk|
 |unknownFutureValue|
 
+### sharePointMigrationJobErrorLevel values
+
+|Member|
+|:---|
+|important|
+|warning|
+|error|
+|fatalError|
+|unknownFutureValue|
+
+### sharePointMigrationObjectType values
+
+|Member|
+|:---|
+|site|
+|web|
+|folder|
+|list|
+|listItem|
+|file|
+|alert|
+|sharedWithObject|
+|invalid|
+|unknownFutureValue|
+
 ### protectionSource values 
 
 |Member|
@@ -3690,6 +3715,30 @@ Possible values for user account types (group membership), per Windows definitio
 | medal            |
 | bullseye         |
 | unknownFutureValue |
+
+### webApplicationFirewallDnsRecordType values 
+
+|Member|
+|:---|
+|cname|
+|unknownFutureValue|
+
+### webApplicationFirewallProviderType values 
+
+|Member|
+|:---|
+|akamai|
+|cloudflare|
+|unknownFutureValue|
+
+### webApplicationFirewallVerificationStatus values 
+
+|Member|
+|:---|
+|success|
+|warning|
+|failure|
+|unknownFutureValue|
 
 ### callEventType values
 

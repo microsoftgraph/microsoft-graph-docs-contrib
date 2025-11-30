@@ -54,7 +54,7 @@ If the label is not found, doesn't have admin-defined protection, or the user do
 
 ## Examples
 
-Request to get the rights for a specific sensitivity label for the user `4e4234dd-377b-42a3-935b-0e42f138fa23`
+Request to get the rights for a specific sensitivity label `4e4234dd-377b-42a3-935b-0e42f138fa23` for the user.
 
 ### Request
 

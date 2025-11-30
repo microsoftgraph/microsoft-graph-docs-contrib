@@ -59,7 +59,7 @@ The following example shows a request.
   "name": "list_browsersitelist"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/admin/edge/internetExplorerMode/siteLists
 ```
 

@@ -71,7 +71,7 @@ The following example shows a request.
   "name": "get_alert1"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/reports/healthMonitoring/alerts/{id}
 ```
 
@@ -168,7 +168,7 @@ The following example shows a request.
   "name": "get_alert2"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/reports/healthMonitoring/alerts/{id}?$select=alertType, state, createdDateTime, signals
 ```
 
@@ -238,7 +238,7 @@ The following example shows a request.
   "name": "get_alert3"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/reports/healthMonitoring/alerts/{id}?$expand=enrichment/impacts/microsoft.graph.healthmonitoring.directoryobjectimpactsummary/resourceSampling&$select=alertType, createdDateTime, enrichment'
 ```
 

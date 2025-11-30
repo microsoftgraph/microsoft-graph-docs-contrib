@@ -64,7 +64,7 @@ The following example shows a request.
   "name": "list_driverestoreartifact"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/solutions/backupRestore/oneDriveForBusinessRestoreSessions/845457dc-4bb2-4815-bef3-8628ebd1952e/driveRestoreArtifacts
 ```
 

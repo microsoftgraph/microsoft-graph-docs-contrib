@@ -59,7 +59,7 @@ The following example shows a request.
   "name": "get_citationtemplate"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/security/labels/citations/c0475d01-d532-8a53-6e26-14ea58c640bf
 ```
 

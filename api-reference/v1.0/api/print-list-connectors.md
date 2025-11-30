@@ -61,7 +61,7 @@ The following example shows a request.
   "name": "list_printconnector_1"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/print/connectors
 ```
 

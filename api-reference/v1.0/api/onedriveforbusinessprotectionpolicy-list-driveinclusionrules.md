@@ -62,7 +62,7 @@ The following example shows a request.
   "name": "onedriveforbusinessprotectionpolicy_list_driveinclusionrule"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/solutions/backupRestore/oneDriveForBusinessProtectionPolicies/71633878-8321-4950-bfaf-ed285bdd1461/driveInclusionRules
 ```
 

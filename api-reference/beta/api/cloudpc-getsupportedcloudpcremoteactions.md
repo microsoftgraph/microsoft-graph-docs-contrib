@@ -64,7 +64,7 @@ The following example shows a request.
 }
 -->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/831dd62e-cfa1-4d49-a3b4-58d4e9920f8e/getSupportedCloudPcRemoteActions
 ```
 

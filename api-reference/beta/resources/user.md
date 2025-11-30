@@ -6,7 +6,7 @@ ms.reviewer: "iamut"
 ms.localizationpriority: high
 ms.subservice: entra-users
 doc_type: resourcePageType
-ms.date: 01/10/2025
+ms.date: 11/07/2025
 ms.custom: sfi-ga-blocked
 ---
 
@@ -16,9 +16,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a Microsoft Entra user account. This resource is an open type that allows other properties to be passed in. Inherits from [directoryObject](directoryobject.md).
-
-The **user** resource lets apps specify user preferences for languages and date/time formats for the user's primary Exchange mailboxes and Microsoft Entra profile. For more information, see [user preferences for languages and regional formats](#user-preferences-for-languages-and-regional-formats).
+Represents a Microsoft Entra user account. This resource is an open type that allows additional properties beyond those documented here. Inherits from [directoryObject](directoryobject.md).
 
 For performance reasons, the [create](../api/user-post-users.md), [get](../api/user-get.md), and [list](../api/user-list.md) operations return only a subset of more commonly used properties by default. These default properties are noted in the [Properties](#properties) section. To get any of the properties not returned by default, specify them in a `$select` OData query option.
 
@@ -27,6 +25,8 @@ This resource supports:
 - Adding your data to custom properties as [extensions](/graph/extensibility-overview).
 - Subscribing to [change notifications](/graph/change-notifications-overview).
 - Using [delta query](/graph/delta-query-overview) to track incremental additions, deletions, and updates, by providing a [delta](../api/user-delta.md) function.
+
+The [agentUser](../resources/agentuser.md) resource inherits from this resource.
 
 ## Methods
 
@@ -199,7 +199,7 @@ This resource supports:
 | Property       | Type    | Description |
 |:---------------|:--------|:------------|
 | aboutMe | String | A freeform text entry field for users to describe themselves. <br><br>Returned only on `$select`. |
-| accountEnabled | Boolean | `true` if the account is enabled; otherwise, `false`. This property is required when a user is created. <br><br>Supports `$filter` (`eq`, `ne`, `not`, and `in`). |
+| accountEnabled | Boolean | `true` if the account is enabled; otherwise, `false`. This property is required when creating the object. <br><br>Supports `$filter` (`eq`, `ne`, `not`, and `in`). |
 | ageGroup | [ageGroup](#agegroup-values) | Sets the age group of the user. Allowed values: `null`, `Minor`, `NotAdult`, and `Adult`. For more information, see [legal age group property definitions](#legal-age-group-property-definitions). <br><br>Supports `$filter` (`eq`, `ne`, `not`, and `in`). |
 | assignedLicenses | [assignedLicense](assignedlicense.md) collection | The licenses that are assigned to the user, including inherited (group-based) licenses. This property doesn't differentiate between directly assigned and inherited licenses. Use the **licenseAssignmentStates** property to identify the directly assigned and inherited licenses. <br><br>Not nullable. Supports `$filter` (`eq`, `not`, `/$count eq 0`, `/$count ne 0`). |
 | assignedPlans | [assignedPlan](assignedplan.md) collection | The plans that are assigned to the user. Read-only. Not nullable.<br><br>Supports `$filter` (`eq` and `not`). |
@@ -231,6 +231,7 @@ This resource supports:
 | hireDate | DateTimeOffset | The hire date of the user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. <br><br> Returned only on `$select`. <br> **Note:** This property is specific to SharePoint Online. We recommend using the native **employeeHireDate** property to set and update hire date values using Microsoft Graph APIs. |
 | id | String | The unique identifier for the user. It should be treated as an opaque identifier. Inherited from [directoryObject](directoryobject.md). Not nullable. Read-only. <br><br>Supports `$filter` (`eq`, `ne`, `not`, `in`). |
 | identities | [objectIdentity](objectIdentity.md) collection | Represents the identities that can be used to sign in to this user account. An identity can be provided by Microsoft (also known as a local account), by organizations, or by social identity providers such as Facebook, Google, and Microsoft and tied to a user account. It may contain multiple items with the same **signInType** value. <br><br> Supports `$filter` (`eq`) with limitations. <!--Supports `$filter` (`eq`) including on `null` values, only where the **signInType** is not `userPrincipalName`.--> |
+| identityParentId | String | The object ID of the parent identity for agent users. Always `null` for regular user accounts. For [agentUser](../resources/agentuser.md) resources, this property references the object ID of the associated agent identity. |
 | imAddresses | String collection | The instant message voice-over IP (VOIP) session initiation protocol (SIP) addresses for the user. Read-only. Supports `$filter` (`eq`, `not`, `ge`, `le`, `startsWith`).|
 | infoCatalogs | String collection | Identifies the info segments assigned to the user.  Supports `$filter` (`eq`, `not`, `ge`, `le`, `startsWith`). |
 | interests | String collection | A list for users to describe their interests. <br><br>Returned only on `$select`. |
@@ -486,6 +487,7 @@ The following JSON representation shows the resource type.
   "hireDate": "String (timestamp)",
   "id": "String (identifier)",
   "identities": [{"@odata.type": "microsoft.graph.objectIdentity"}],
+  "identityParentId": "String",
   "interests": ["String"],
   "isLicenseReconciliationNeeded": "Boolean",
   "isManagementRestricted": "Boolean",

@@ -64,7 +64,7 @@ The following example shows a request.
   "name": "list_plannerrostermember"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/planner/rosters/6519868f-868f-6519-8f86-19658f861965/members
 ```
 

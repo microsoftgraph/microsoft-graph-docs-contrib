@@ -63,7 +63,7 @@ The following example shows a request.
   "name": "list_overprovisionedgcpserviceaccountfinding"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/gcp/findings/microsoft.graph.overprovisionedGcpServiceAccountFinding
 ```
 

@@ -80,7 +80,7 @@ The following example shows a request.
   "name": "get_permissionscreepindexdistribution"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/permissionsCreepIndexDistributions/MSxQZXJtaXNzaW9uc0NyZWVwSW5kZXhEaXN0cmlidXRpb24sMjM3ODMyLTIzNzgzMy0yMzc4MzQ
 ```
 

@@ -67,7 +67,7 @@ The following example shows a request.
   "sampleKeys": ["c2VjdXJlbWFpbC5jb250b3NvLmNvbSQkT0lEQyQkc2VjdXJlbWFpbC5jb250b3NvLmNvbQ=="]
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/security/threatIntelligence/hostCookies/c2VjdXJlbWFpbC5jb250b3NvLmNvbSQkT0lEQyQkc2VjdXJlbWFpbC5jb250b3NvLmNvbQ==
 ```
 
