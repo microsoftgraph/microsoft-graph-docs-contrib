@@ -649,7 +649,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "children",
           "ChangeType": "Addition",
-          "Description": "Added the **children** relationship to the [place](https://learn.microsoft.com/en-us/graph/api/resources/place?view=graph-rest-beta) resource.",
+          "Description": "Added the **children** relationship to the [place](https://learn.microsoft.com/en-us/graph/api/resources/place?view=graph-rest-beta) resource and its derived types.",
           "Target": "place"
         },
         {
@@ -657,7 +657,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "placeOperation",
           "ChangeType": "Addition",
-          "Description": "Added the [placeOperation](https://learn.microsoft.com/en-us/graph/api/resources/placeOperation?view=graph-rest-beta) resource.",
+          "Description": "Added the [placeOperation](https://learn.microsoft.com/en-us/graph/api/resources/placeOperation?view=graph-rest-beta) resource and associated methods.",
           "Target": "placeOperation"
         },
         {
