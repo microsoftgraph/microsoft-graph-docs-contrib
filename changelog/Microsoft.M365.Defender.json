@@ -3408,7 +3408,7 @@
           "Description": "Added the **resourceAccessEvents** property to the [deviceEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-deviceEvidence?view=graph-rest-beta) resource.",
           "Target": "deviceEvidence"
         },
-		{
+		    {
           "Id": "d2e8f9a0-b4c5-4f6a-9b7e-1c2d3e4f5a6b",
           "ApiChange": "Resource",
           "ChangedApiName": "mailboxConfigurationEvidence",
@@ -3416,7 +3416,7 @@
           "Description": "Added the [mailboxConfigurationEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-mailboxConfigurationEvidence?view=graph-rest-beta) resource.",
           "Target": "mailboxConfigurationEvidence"
         },
-		  {
+		    {
           "Id": "d2e8f9a0-b4c5-4f6a-9b7e-1c2d3e4f5a6b",
           "ApiChange": "Resource",
           "ChangedApiName": "activeDirectoryDomainEvidence",
@@ -3424,14 +3424,14 @@
           "Description": "Added the [activeDirectoryDomainEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-activeDirectoryDomainEvidence?view=graph-rest-beta) resource.",
           "Target": "activeDirectoryDomainEvidence"
         },
-		{
+		    {
 	        "Id": "c1f5d8e9-a3b2-4c6d-8f7e-9a1b2c3d4e5f",
 	        "ApiChange": "Enumeration",
 	        "ChangedApiName": "mailboxConfigurationType",
 	        "ChangeType": "Addition",
 	        "Description": "Added the mailboxConfigurationType enumeration type.",
 	        "Target": "mailboxConfigurationType"
-	    },
+	      }
       ],
       "Id": "ae392fe5-2982-425d-965b-53bf3be765fb",
       "Cloud": "Prod",
