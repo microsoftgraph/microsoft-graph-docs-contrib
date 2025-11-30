@@ -27,7 +27,7 @@ Inherits from [alertEvidence](../resources/security-alertevidence.md).
 |remediationStatusDetails|String|Details about the remediation status. Inherited from [alertEvidence](../resources/security-alertevidence.md).|
 |roles|[microsoft.graph.security.evidenceRole](../resources/security-alertevidence.md#evidencerole-values) collection|One or more roles that an evidence entity represents in an alert. For example, an IP address that is associated with an attacker has the evidence role `Attacker`. Inherited from [alertEvidence](../resources/security-alertevidence.md).|
 |tags|String collection|Array of custom tags associated with an evidence instance. For example, to denote a group of devices or high value assets. Inherited from [alertEvidence](../resources/security-alertevidence.md).|
-|trustedDomains|[microsoft.graph.security.activeDirectoryDomainEvidence](./security-activedirectorydomainevidence.md) collection|List of trusted domains.|
+|trustedDomains|[microsoft.graph.security.activeDirectoryDomainEvidence](./) collection|List of trusted domains.|
 |verdict|[microsoft.graph.security.evidenceVerdict](../resources/security-alertevidence.md#evidenceverdict-values)|The decision reached by automated investigation. The possible values are: `unknown`, `suspicious`, `malicious`, `noThreatsFound`, `unknownFutureValue`. Inherited from [alertEvidence](../resources/security-alertevidence.md).|
 
 ## Relationships
