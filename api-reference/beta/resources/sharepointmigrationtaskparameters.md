@@ -1,6 +1,6 @@
 ---
 title: "sharePointMigrationTaskParameters resource type"
-description: "Represents the parameters necessary to migrate a specific source resource in a source organization to a target organization."
+description: "Represents the parameters required to migrate a specific source resource in a source organization to a target organization, and other parameters that control the migration process."
 author: "Joey-King"
 ms.date: 11/12/2025
 ms.localizationpriority: medium
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the parameters necessary to migrate a specific source resource in a source organization to a target organization, and other parameters that control the migration process. Must be specified when creating a new sharePointMigrationTask using POST.
+Represents the parameters required to migrate a specific source resource in a source organization to a target organization, and other parameters that control the migration process. You must specify this resource when you create a new **sharePointMigrationTask** using POST.
 
 ## Properties
 
