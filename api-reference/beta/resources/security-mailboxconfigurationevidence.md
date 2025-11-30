@@ -33,17 +33,6 @@ Inherits from [alertEvidence](../resources/security-alertevidence.md).
 |upn|String|The user principal name (UPN) of the mailbox.|
 |verdict|[microsoft.graph.security.evidenceVerdict](../resources/security-alertevidence.md#evidenceverdict-values)|The decision reached by automated investigation. The possible values are: `unknown`, `suspicious`, `malicious`, `noThreatsFound`, `unknownFutureValue`. Inherited from [alertEvidence](../resources/security-alertevidence.md).|
 
-### mailboxConfigurationType values
-
-|Member|Description|
-|:---|:---|
-|mailForwardingRule|Mail forwarding rule configuration.|
-|owaSettings|Outlook on the web (OWA) settings configuration.|
-|ewsSettings|Exchange Web Services (EWS) settings configuration.|
-|mailDelegation|Mail delegation configuration.|
-|userInboxRule|User inbox rule configuration.|
-|unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
-
 ## Relationships
 None.
 
