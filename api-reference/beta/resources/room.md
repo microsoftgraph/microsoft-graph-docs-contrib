@@ -57,7 +57,7 @@ For the list of supported methods, see [place](./place.md).
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|children|[place](../resources/place.md) collection|A collection of children places, which is only used in bulk upsert API. Inherited from [microsoft.graph.place](../resources/place.md). A room cannot have children.|
+|children|[place](../resources/place.md) collection|A collection of children places that is only used in the [Bulk upsert](../api/place-patch-places.md) API. A room doesn't have children. Inherited from [place](../resources/place.md). |
 
 ## JSON representation
 The following JSON representation shows the resource type.
