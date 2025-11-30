@@ -1,6 +1,6 @@
 ---
 title: "sharePointMigrationTask resource type"
-description: "Represents the migration task used for migrating a specific source resource to a target organization."
+description: "Represents the migration task for migrating a specific source resource to a target organization and indicates the status of that migration operation."
 author: "Joey-King"
 ms.date: 11/12/2025
 ms.localizationpriority: medium
@@ -15,8 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the migration task used for migrating a specific source resource to a target organization, and the status of that migration operation.
-This entity captures a specific intent to do a sharePointMigrationTask operation, has a unique ID, can exist independently, have a lifetime, and be retrieved using the ID.
+Represents the migration task for migrating a specific source resource to a target organization and indicates the status of that migration operation. This entity captures a specific intent to perform a **sharePointMigrationTask** operation, has a unique ID, can exist independently, has a defined lifetime, and can be retrieved using the ID.
 
 Inherits from [entity](../resources/entity.md).
 
@@ -27,7 +26,7 @@ Inherits from [entity](../resources/entity.md).
 |[Get](../api/sharepointmigrationtask-get.md)|[sharePointMigrationTask](../resources/sharepointmigrationtask.md)|Read the properties and relationships of [sharePointMigrationTask](../resources/sharepointmigrationtask.md) object.|
 |[Update](../api/sharepointmigrationtask-update.md)|[sharePointMigrationTask](../resources/sharepointmigrationtask.md)|Create or Update the properties of a sharePointMigrationTask object.|
 |[Get by source user principal name](../api/sharepointmigrationtask-getbysourceuserprincipalname.md)|[sharePointMigrationTask](../resources/sharepointmigrationtask.md)|Returns the status of the sharePointMigrationTask for a user given the source user principal name.|
-|[Get by source site url](../api/sharepointmigrationtask-getbysourcesiteurl.md)|[sharePointMigrationTask](../resources/sharepointmigrationtask.md)|Returns the status of the sharePointMigrationTask for a site given the source site URL.|
+|[Get by source site URL](../api/sharepointmigrationtask-getbysourcesiteurl.md)|[sharePointMigrationTask](../resources/sharepointmigrationtask.md)|Returns the status of the sharePointMigrationTask for a site given the source site URL.|
 |[Get by source group mail nickname](../api/sharepointmigrationtask-getbysourcegroupmailnickname.md)|[sharePointMigrationTask](../resources/sharepointmigrationtask.md)|Returns the status of the sharePointMigrationTask for a group given the source group mail nickname.|
 |[Cancel](../api/sharepointmigrationtask-cancel.md)|None|Cancel the specified sharePointMigrationTask by ID and return its status after this attempt.|
 
