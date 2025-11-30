@@ -18,11 +18,11 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 > [!IMPORTANT]
 > Features in _preview_ status are subject to change without notice, and might not be promoted to generally available (GA) status. Don't use preview features in production apps.
 
-## November 2025: New in preview only
+## December 2025: New in preview only
 
 ### Calendars | Places
 
-The [bulk upsert places API](/graph/api/place-patch-places).
+[Bulk upsert](/graph/api/place-patch-places?view=graph-rest-beta&preserve-view=true) places in async mode.
 
 ## November 2025: New and generally available
 
