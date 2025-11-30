@@ -1,5 +1,5 @@
 ---
-title: "zone resource type"
+title: "Zone resource type"
 description: "Represents a zone (also known as cloud scopes) which is an aggregate of cloud native environments used to manage security and access at scale in Microsoft Defender for Cloud."
 author: "Yarinle4"
 ms.date: 11/26/2025
@@ -8,7 +8,7 @@ ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
-# zone resource type
+# Zone resource type
 
 Namespace: microsoft.graph.security
 
@@ -21,13 +21,11 @@ Inherits from [entity](../resources/entity.md)
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/security-list-zones.md)|[microsoft.graph.security.zone](../resources/security-zone.md) collection|Get a list of the zone objects and their properties.|
 |[Create](../api/security-post-zones.md)|[microsoft.graph.security.zone](../resources/security-zone.md)|Create a new zone object.|
 |[Get](../api/security-zone-get.md)|[microsoft.graph.security.zone](../resources/security-zone.md)|Read the properties and relationships of [microsoft.graph.security.zone](../resources/security-zone.md) object.|
+|[List](../api/security-list-zones.md)|[microsoft.graph.security.zone](../resources/security-zone.md) collection|Get a list of the zone objects and their properties.|
 |[Update](../api/security-zone-update.md)|[microsoft.graph.security.zone](../resources/security-zone.md)|Update the properties of a zone object.|
 |[Delete](../api/security-delete-zones.md)|None|Delete a zone object.|
-|[List environments](../api/security-zone-list-environments.md)|[microsoft.graph.security.environment](../resources/security-environment.md) collection|Get a list of environments attached to the zone.|
-|[Create environment](../api/security-zone-post-environments.md)|[microsoft.graph.security.environment](../resources/security-environment.md)|Create a new environment object.|
 
 ## Properties
 |Property|Type|Description|
@@ -50,7 +48,6 @@ The following JSON representation shows the resource type.
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.security.zone",
-  "openType": "id"
 }
 -->
 ``` json

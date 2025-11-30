@@ -1,5 +1,5 @@
 ---
-title: "environment resource type"
+title: "Environment resource type"
 description: "Represents a cloud environment that can be attached to a zone for security management purposes."
 author: "Yarinle4"
 ms.date: 11/26/2025
@@ -8,7 +8,7 @@ ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
-# environment resource type
+# Environment resource type
 
 Namespace: microsoft.graph.security
 
@@ -21,10 +21,10 @@ Inherits from [entity](../resources/entity.md)
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/security-zone-list-environments.md)|[microsoft.graph.security.environment](../resources/security-environment.md) collection|Get a list of the environment objects and their properties.|
 |[Create](../api/security-zone-post-environments.md)|[microsoft.graph.security.environment](../resources/security-environment.md)|Create a new environment object.|
 |[Get](../api/security-environment-get.md)|[microsoft.graph.security.environment](../resources/security-environment.md)|Read the properties and relationships of [microsoft.graph.security.environment](../resources/security-environment.md) object.|
-|[Delete](../api/security-zone-delete-environments.md)|None|Delete a environment object.|
+|[List](../api/security-zone-list-environments.md)|[microsoft.graph.security.environment](../resources/security-environment.md) collection|Get a list of the environment objects and their properties.|
+|[Delete](../api/security-zone-delete-environments.md)|None|Delete an environment object.|
 
 ## Properties
 |Property|Type|Description|
@@ -41,7 +41,6 @@ The following JSON representation shows the resource type.
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.security.environment",
-  "openType": "id"
 }
 -->
 ``` json

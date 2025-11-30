@@ -32,7 +32,6 @@ The following JSON representation shows the resource type.
   "blockType": "resource",
   "keyProperty": "kind",
   "@odata.type": "microsoft.graph.security.aggregatedEnvironment",
-  "openType": "kind"
 }
 -->
 ``` json
