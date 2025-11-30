@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the parameters necessary to migrate a specific regular site in a source organization to a target organization. Must be specified when creating a new migration task using POST.
+Represents the parameters necessary to migrate a specific regular site in a source organization to a target organization. You must specify this resource when you create a new migration task using POST.
 
 Inherits from [sharePointMigrationTaskParameters](../resources/sharepointmigrationtaskparameters.md).
 
