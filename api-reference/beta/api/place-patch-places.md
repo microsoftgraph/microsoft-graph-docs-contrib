@@ -1,5 +1,5 @@
 ---
-title: "Bulk upsert places"
+title: "Bulk upsert"
 description: "Bulk upsert places in async mode."
 author: "Dongjing-MSIT"
 ms.date: 11/10/2025
@@ -8,7 +8,7 @@ ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
-# Bulk upsert places
+# Bulk upsert
 
 Namespace: microsoft.graph
 
