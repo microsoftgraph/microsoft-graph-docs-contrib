@@ -3131,18 +3131,26 @@
         {
           "Id": "c7d3f892-4e61-4b28-9a5c-8f2d1e3b4c7a",
           "ApiChange": "Method",
-          "ChangedApiName": "allMembers: get member",
+          "ChangedApiName": "channel",
           "ChangeType": "Addition",
-          "Description": "Added the [allMembers: get member](https://learn.microsoft.com/en-us/graph/api/channel-allmembers-get-member?view=graph-rest-beta) method to retrieve a specific member from a channel using the allMembers collection. This API supports all channel types, including shared channels.",
+          "Description": "Added the [Get member from allMembers](https://learn.microsoft.com/en-us/graph/api/channel-get-allmembers?view=graph-rest-beta) method to the [channel](https://learn.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) resource.",
           "Target": "channel"
+        },
+        {
+          "Id": "c7d3f892-4e61-4b28-9a5c-8f2d1e3b4c7a",
+          "ApiChange": "Term",
+          "ChangedApiName": "originalSourceMembershipUrl",
+          "ChangeType": "Addition",
+          "Description": "Added the **originalSourceMembershipUrl** as an instance attribute that you can use with the [conversationMember](https://learn.microsoft.com/en-us/graph/api/resources/conversationMember?view=graph-rest-beta) resource.",
+          "Target": "conversationMember"
         }
       ],
       "Id": "c7d3f892-4e61-4b28-9a5c-8f2d1e3b4c7a",
       "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2024-11-20T00:00:00.0000000Z",
+      "CreatedDateTime": "2025-11-20T00:00:00.0000000Z",
       "WorkloadArea": "Teamwork and communications",
-      "SubArea": "Channels"
+      "SubArea": "Messaging"
     }
   ]
 }
