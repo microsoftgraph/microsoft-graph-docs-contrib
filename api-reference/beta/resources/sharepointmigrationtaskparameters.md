@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Represents the parameters required to migrate a specific source resource in a source organization to a target organization, and other parameters that control the migration process. You must specify this resource when you create a new [sharePointMigrationTask](../resources/sharepointmigrationtask.md) using POST.
 
-Base type of [sharePointGroupMigrationTaskParameters](../resources/sharepointgroupmigrationtaskparameters.md) and [sharePointUserMigrationTaskParameters](../resources/sharePointusermigrationtaskparameters.md).
+Base type of [sharePointGroupMigrationTaskParameters](../resources/sharepointgroupmigrationtaskparameters.md), [sharePointSiteMigrationTaskParameters](../resources/sharePointsitemigrationtaskparameters.md), and [sharePointUserMigrationTaskParameters](../resources/sharePointusermigrationtaskparameters.md).
 
 ## Properties
 
