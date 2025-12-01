@@ -23,24 +23,24 @@ Inherits from [entity](../resources/entity.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get](../api/sharepointmigrationtask-get.md)|[sharePointMigrationTask](../resources/sharepointmigrationtask.md)|Read the properties and relationships of [sharePointMigrationTask](../resources/sharepointmigrationtask.md) object.|
-|[Update](../api/sharepointmigrationtask-update.md)|[sharePointMigrationTask](../resources/sharepointmigrationtask.md)|Create or Update the properties of a sharePointMigrationTask object.|
-|[Get by source user principal name](../api/sharepointmigrationtask-getbysourceuserprincipalname.md)|[sharePointMigrationTask](../resources/sharepointmigrationtask.md)|Returns the status of the sharePointMigrationTask for a user given the source user principal name.|
-|[Get by source site URL](../api/sharepointmigrationtask-getbysourcesiteurl.md)|[sharePointMigrationTask](../resources/sharepointmigrationtask.md)|Returns the status of the sharePointMigrationTask for a site given the source site URL.|
-|[Get by source group mail nickname](../api/sharepointmigrationtask-getbysourcegroupmailnickname.md)|[sharePointMigrationTask](../resources/sharepointmigrationtask.md)|Returns the status of the sharePointMigrationTask for a group given the source group mail nickname.|
-|[Cancel](../api/sharepointmigrationtask-cancel.md)|None|Cancel the specified sharePointMigrationTask by ID and return its status after this attempt.|
+|[Get](../api/sharepointmigrationtask-get.md)|[sharePointMigrationTask](../resources/sharepointmigrationtask.md)|Get a [sharePointMigrationTask](../resources/sharepointmigrationtask.md) that was previously created, using the task ID.|
+|[Create or update](../api/sharepointmigrationtask-update.md)|[sharePointMigrationTask](../resources/sharepointmigrationtask.md)|Create or update a [sharePointMigrationTask](../resources/sharepointmigrationtask.md) to migrate a resource from the source organization to the target organization, using the crossOrganizationMigrationParameters.|
+|[Get by source user principal name](../api/sharepointmigrationtask-getbysourceuserprincipalname.md)|[sharePointMigrationTask](../resources/sharepointmigrationtask.md)|Get a [sharePointMigrationTask](../resources/sharepointmigrationtask.md) that was previously created for a user, using the source **userPrincipalName**.|
+|[Get by source site URL](../api/sharepointmigrationtask-getbysourcesiteurl.md)|[sharePointMigrationTask](../resources/sharepointmigrationtask.md)|Get a [sharePointMigrationTask](../resources/sharepointmigrationtask.md) that was previously created for a regular site, using the source site URL.|
+|[Get by source group mail nickname](../api/sharepointmigrationtask-getbysourcegroupmailnickname.md)|[sharePointMigrationTask](../resources/sharepointmigrationtask.md)|Get a [sharePointMigrationTask](../resources/sharepointmigrationtask.md) that was previously created for a group, using the source group mail nickname.|
+|[Cancel](../api/sharepointmigrationtask-cancel.md)|None|Cancel a [sharePointMigrationTask](../resources/sharepointmigrationtask.md) that moves a specific object from a source organization to a target organization.|
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
-|error|[publicError](../resources/publicerror.md)|The error information to provide context for failures. Optional. Read-only. Only on OneDrive and SharePoint|
-|finishedDateTime|DateTimeOffset|DateTime when the sharePointMigrationTask ended, if available. (The task might complete successfully or fail, but it ends execution at this time.) Read-only. Optional. Only on OneDrive and SharePoint.|
-|id|String|Unique ID of the sharePointMigrationTask operation for the source organization and resource defined in the parameters. Omit this property during creation. The service returns it automatically. Inherits from [entity](../resources/entity.md).|
-|lastUpdatedDateTime|DateTimeOffset|DateTime when the sharePointMigrationTask was last updated, executed, or touched in any way, if available. Use this property to find tasks that stopped processing for a long time. Read-only. Optional.|
-|parameters|[sharePointMigrationTaskParameters](../resources/sharepointmigrationtaskparameters.md)|Identifies the source resource and org. Defines the target org and includes settings that control the migration process. They need to be specified during task creation but are also replayed back in every query about this task, for tracking and identification.|
-|startedDateTime|DateTimeOffset|DateTime when the sharePointMigrationTask started, if available. Read-only. Optional.|
-|status|sharePointMigrationTaskStatus|Enumeration value that indicates the status of the migration activity that this task represents. Omit this property during creation. The service returns it automatically. The possible values are: `notStarted`, `inProgress`, `completed`, `cancelled`, `failed`, `unknownFutureValue`.|
+|error|[publicError](../resources/publicerror.md)|The error information to provide context for failures. Optional. Read-only. Only on OneDrive and SharePoint.|
+|finishedDateTime|DateTimeOffset|Date and time when the **sharePointMigrationTask** ended, if available. The task might complete successfully or fail, but it ends at that time. Read-only. Only on OneDrive and SharePoint. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+|id|String|The unique ID of the **sharePointMigrationTask** operation for the source organization and resource defined in the parameters. Omit this property during creation. The service returns it automatically. Inherited from [entity](../resources/entity.md).|
+|lastUpdatedDateTime|DateTimeOffset|Date and time when the **sharePointMigrationTask** was last updated or processed, if available. Use this property to find tasks that stopped processing for a long time. Read-only. Optional. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+|parameters|[sharePointMigrationTaskParameters](../resources/sharepointmigrationtaskparameters.md)|Identifies the source resource and organization, defines the target organization, and includes settings that control the migration process. These settings must be specified during task creation and are also returned in every query about this task for tracking and identification.|
+|startedDateTime|DateTimeOffset|Date and time when the **sharePointMigrationTask** started, if available. Read-only. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+|status|sharePointMigrationTaskStatus|Indicates the status of the migration activity that this task represents. Omit this property during creation. The service returns it automatically. The possible values are: `notStarted`, `inProgress`, `completed`, `cancelled`, `failed`, `unknownFutureValue`.|
 
 ## Relationships
 
@@ -60,16 +60,12 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.sharePointMigrationTask",
-  "id": "String (identifier)",
-  "parameters": {
-    "@odata.type": "microsoft.graph.sharePointMigrationTaskParameters"
-  },
-  "status": "String",
-  "startedDateTime": "String (timestamp)",
-  "lastUpdatedDateTime": "String (timestamp)",
+  "error": {"@odata.type": "microsoft.graph.publicError"},
   "finishedDateTime": "String (timestamp)",
-  "error": {
-    "@odata.type": "microsoft.graph.publicError"
-  }
+  "id": "String (identifier)",
+  "lastUpdatedDateTime": "String (timestamp)",
+  "parameters": {"@odata.type": "microsoft.graph.sharePointMigrationTaskParameters"},
+  "startedDateTime": "String (timestamp)",
+  "status": "String"
 }
 ```
