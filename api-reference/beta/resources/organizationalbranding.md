@@ -6,7 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ms.date: 12/01/2025
-toc.title: Deafult tenant branding
+toc.title: Default tenant branding
 ---
 
 # organizationalBranding resource type
