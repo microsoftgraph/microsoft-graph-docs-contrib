@@ -20,7 +20,7 @@ Represents the source image associated with your Azure subscription.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|category|[cloudPcSourceImageCategory](#cloudpcsourceimagecategory-values)|The category of the source image that is being requested. Possible values are: `managedImage`, `azureComputeGallery`, and `unknownFutureValue`. Default value is `managedImage`. Read-only.|
+|category|[cloudPcSourceImageCategory](#cloudpcsourceimagecategory-values)|The category of the source image that is requested. Possible values are: `managedImage`, `azureComputeGallery`, `unknownFutureValue`. The default value is `managedImage`. Read-only.|
 |displayName|String|The display name for the source image. Read-only.|
 |resourceId|String| The fully qualified unique identifier (ID) of the source image resource in Azure. The ID format is: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/images/{imageName}". Read-only.|
 |subscriptionDisplayName|String|The display name of the subscription that hosts the source image. Read-only.|
@@ -31,9 +31,9 @@ Represents the source image associated with your Azure subscription.
 
 |Member|Description|
 |:---|:---|
-|managedImage|Indicates the source image is from a managed image.|
-|azureComputeGallery|Indicates the source image is from an Azure Compute Gallery.|
-|unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
+|managedImage|Indicates that the source image is from a managed image.|
+|azureComputeGallery|Indicates that the source image is from an Azure compute gallery.|
+|unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
 
 ## Relationships
 
