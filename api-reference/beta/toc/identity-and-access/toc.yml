@@ -3195,9 +3195,9 @@ items:
   - name: Organizational branding
     displayName: Tenant branding, UX customization
     items:
-    - name: Deafult tenant branding
+    - name: Default tenant branding
       items:
-      - name: Deafult tenant branding
+      - name: Default tenant branding
         href: ../../resources/organizationalbranding.md
       - name: Get
         href: ../../api/organizationalbranding-get.md
