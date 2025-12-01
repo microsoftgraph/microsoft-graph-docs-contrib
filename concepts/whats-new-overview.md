@@ -18,6 +18,13 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 > [!IMPORTANT]
 > Features in _preview_ status are subject to change without notice, and might not be promoted to generally available (GA) status. Don't use preview features in production apps.
 
+## December 2025: New in preview only
+
+### Teamwork and communications | Messaging
+
+- [Get](/graph/api/channel-get-allmembers?view=graph-rest-beta&preserve-view=true) a specific member from the **allMembers** collection of a channel. This API provides unified access to both direct and indirect members across all channel types, including shared channels.
+- Use the **@microsoft.graph.originalSourceMembershipUrl** property on [conversationMember](/graph/api/resources/conversationmember?view=graph-rest-beta&preserve-view=true) to identify the source team for indirect members in shared channels.
+
 ## November 2025: New and generally available
 
 ### Backup storage
@@ -124,11 +131,6 @@ Introducing the Microsoft MCP Server for Enterprise - the official MCP server fo
 ### Teamwork and communications | Calls and online meetings
 
 Use the `Accept-Language` header with the [Create virtualEventWebinar](/graph/api/virtualeventsroot-post-webinars?view=graph-rest-beta&preserve-view=true) and [Create virtualEventTownhall](/graph/api/virtualeventsroot-post-townhalls?view=graph-rest-beta&preserve-view=true) methods to specify an acceptable human language for the response.
-
-### Teamwork and communications | Channel Members
-
-- [Get](/graph/api/channel-allmembers-get-member?view=graph-rest-beta&preserve-view=true) a specific member from a channel's allMembers collection using the new endpoint `GET /teams/{team-id}/channels/{channel-id}/allMembers/{membership-id}`. This API provides unified access to both direct and indirect members across all channel types, including shared channels.
-- Use the **@microsoft.graph.originalSourceMembershipUrl** property on [aadUserConversationMember](/graph/api/resources/aadUserConversationMember?view=graph-rest-beta&preserve-view=true) to identify the source team for indirect members in shared channels.
 
 ## October 2025: New and generally available
 
