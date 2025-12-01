@@ -5029,7 +5029,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "sharePointMigrationTask",
           "ChangeType": "Addition",
-          "Description": "Added the [sharePointMigrationTask](https://learn.microsoft.com/en-us/graph/api/resources/sharePointMigrationTask?view=graph-rest-beta) resource.",
+          "Description": "Added the [sharePointMigrationTask](https://learn.microsoft.com/en-us/graph/api/resources/sharePointMigrationTask?view=graph-rest-beta) resource and associated methods.",
           "Target": "sharePointMigrationTask"
         },
         {
