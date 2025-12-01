@@ -1,6 +1,6 @@
 ---
 title: "connection resource type"
-description: "Represents a connection which consists of multiple transactions sharing single Flow Correlation Id."
+description: "Represents a connection that consists of multiple transactions sharing single Flow Correlation Id."
 author: "miritsadon"
 ms.date: 04/20/2025
 ms.localizationpriority: medium
@@ -48,7 +48,7 @@ In Global Secure Access (GSA) a connection represents multiple [networkAccessTra
 |sourcePort|Int32|The source port of the connection.|
 |status|microsoft.graph.networkaccess.connectionStatus|Status of the connection. The possible values are: `open`, `active`, `closed`, `unknownFutureValue`.|
 |tenantId|String|The ID of the tenant where the connection was initiated.|
-|trafficType|microsoft.graph.networkaccess.trafficType| The type of traffic. The possible values are: `internet`, `private`, `microsoft365`, `all`, `unknownFutureValue`, `microsoft`.  Use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `microsoft`.|
+|trafficType|microsoft.graph.networkaccess.trafficType| The type of traffic. The possible values are: `internet`, `private`, `microsoft365`, `all`, `unknownFutureValue`, `microsoft`. Use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `microsoft`.|
 |transactionBlockCount|Int32|The number of blocked transactions belonging to the connection.|
 |transactionCount|Int32|The number of transactions belonging to the connection.|
 |transportProtocol|microsoft.graph.networkaccess.networkingProtocol|The transport protocol of the connection. The possible values are: `ip`, `icmp`, `igmp`, `ggp`, `ipv4`, `tcp`, `pup`, `udp`, `idp`, `ipv6`, `ipv6RoutingHeader`, `ipv6FragmentHeader`, `ipSecEncapsulatingSecurityPayload`, `ipSecAuthenticationHeader`, `icmpV6`, `ipv6NoNextHeader`, `ipv6DestinationOptions`, `nd`, `raw`, `ipx`, `spx`, `spxII`, `unknownFutureValue`.|
