@@ -17,6 +17,7 @@ Represents details about a mailbox, including its unique directory identifier an
 Mailboxes are associated with reservable or drop-in Places objects such as [desk](./desk.md).
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
 |emailAddress|String|The primary SMTP address associated with the mailbox.|
