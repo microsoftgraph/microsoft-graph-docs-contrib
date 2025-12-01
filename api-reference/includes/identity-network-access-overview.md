@@ -170,3 +170,13 @@ For detailed information about licensing for different features, see [Microsoft 
 - [Implement identity standards with Microsoft Entra ID](/entra/standards/)
 - [Microsoft Entra ID Guide for independent software developers](/entra/architecture/guide-for-independent-software-developers)
 - Review the [Microsoft Entra deployment plans](/entra/architecture/deployment-plans) to help you build your plan to deploy the Microsoft Entra suite of capabilities.
+
+<!-- {
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /resources/identity-network-access-overview.md:
+        Exception processing links.
+        Link Definition was null. Link text: !div class='mx-tableFixed' (Parameter 'Definition')"
+  ]
+}-->
+
