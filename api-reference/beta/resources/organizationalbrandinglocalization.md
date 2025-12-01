@@ -18,11 +18,6 @@ Resource that supports managing language-specific branding. While you can't chan
 
 Inherits from [organizationalBrandingProperties](organizationalbrandingproperties.md).
 
-> [!TIP]
-> [![Try it now](/graph/try-it-now.png)](https://woodgrovedemo.com/#usecase=CompanyBranding)
-> 
-> To try out this feature, go to the Woodgrove Groceries demo and explore the "User experience" user case.
-
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
