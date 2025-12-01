@@ -15,6 +15,7 @@ Namespace: microsoft.graph.networkaccess
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 In Global Secure Access (GSA) a connection represents multiple [networkAccessTraffic](../resources/networkaccess-networkaccesstraffic.md) occurring and sharing single connection ID. Provides information about network connections including source and destination details, traffic statistics, and connection status.
+
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
