@@ -1615,6 +1615,15 @@
           ],
           "childNodes": [
             {
+              "name": "Web application firewall",
+              "resources": [
+                "webApplicationFirewallProvider",
+                "akamaiWebApplicationFirewallProvider",
+                "cloudFlareWebApplicationFirewallProvider",
+                "webApplicationFirewallVerificationModel"
+              ]
+            },
+            {
               "name": "Sign-in identifiers",
               "resources": [
                 "signInIdentifierBase",
