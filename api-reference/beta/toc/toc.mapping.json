@@ -2203,12 +2203,6 @@
                 "delegatedAdminRelationshipRequest",
                 "delegatedAdminRelationshipOperation",
                 "delegatedAdminCustomer"
-              ],
-              "complexTypes": [
-                "delegatedAdminAccessContainer",
-                "delegatedAdminAccessDetails",
-                "delegatedAdminRelationshipCustomerParticipant",
-                "unifiedRole"
               ]
             }
           ]
