@@ -4,7 +4,7 @@ description: "Use the Microsoft Search API in Microsoft Graph to search across e
 author: "njerigrevious"
 ms.localizationpriority: medium
 ms.subservice: "search"
-ms.date: 11/07/2024
+ms.date: 12/01/2025
 ms.topic: how-to
 ---
 
