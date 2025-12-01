@@ -1024,17 +1024,22 @@
           "resources": [
             "appRoleAssignment",
             "dataPolicyOperation",
-            "oAuth2PermissionGrant",
-            "webApplicationFirewallProvider",
-            "cloudFlareWebApplicationFirewallProvider",
-            "akamaiWebApplicationFirewallProvider",
-            "webApplicationFirewallVerificationModel"
+            "oAuth2PermissionGrant"
           ],
           "childNodes": [
             {
               "name": "Certificate-based authentication (CBA)",
               "resources": [
                 "certificateBasedAuthConfiguration"
+              ]
+            },
+            {
+              "name": "Web application firewall",
+              "resources": [
+                "webApplicationFirewallProvider",
+                "akamaiWebApplicationFirewallProvider",
+                "cloudFlareWebApplicationFirewallProvider",
+                "webApplicationFirewallVerificationModel"
               ]
             },
             {
