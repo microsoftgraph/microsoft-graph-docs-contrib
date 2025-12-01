@@ -1,6 +1,6 @@
 ---
 title: "Get member from allMembers"
-description: "Retrieve a single conversationMember (direct or indirect) from the allMembers collection using the membershipId."
+description: "Retrieve a single conversationMember (direct or indirect) from the allMembers collection using the membership ID."
 author: "jsinghmokha"
 ms.localizationpriority: high
 ms.subservice: "teams"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a single [conversationMember](../resources/conversationmember.md) (direct or indirect) from the allMembers collection using the **membershipId**.
+Retrieve a single [conversationMember](../resources/conversationmember.md) (direct or indirect) from the allMembers collection using the membership ID.
 
 This API provides access to the following member types:
 - *Direct members*: Users who are added directly to the channel, including users from other tenants (cross-tenant).
@@ -25,13 +25,11 @@ This API provides access to the following member types:
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
-
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-
-<!-- { "blockType": "permissions", "name": "channel_get_allmember" } -->
+<!-- { "blockType": "permissions", "name": "channel_get_allmembers" } -->
 [!INCLUDE [permissions-table](../includes/permissions/channel-get-allmembers-permissions.md)]
 
 ## HTTP request
@@ -202,7 +200,7 @@ Content-type: application/json
 - [List allMembers](channel-list-allmembers.md)
 - [Get member of channel](channel-get-members.md)
 - [Get member of team](team-get-members.md)
-- [Conversationmember Resource](../resources/conversationmember.md)
+- [conversationMember](../resources/conversationmember.md) resource
 - [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
