@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a single [conversationMember](../resources/conversationmember.md) (direct or indirect) from the allMembers collection using the membership ID.
+Retrieve a single [conversationMember](../resources/conversationmember.md) (direct or indirect) from the **allMembers** collection using the membership ID.
 
 This API provides access to the following member types:
 - *Direct members*: Users who are added directly to the channel, including users from other tenants (cross-tenant).
