@@ -24,7 +24,7 @@ You can't change your original configuration's language. However, companies can 
 For more information, see [Customize the neutral branding in your external tenant](/entra/external-id/customers/how-to-customize-branding-customers).
 
 >[!NOTE]
->Adding custom branding requires you to have either Microsoft Entra ID P1 or P2, Premium 2, or Office 365 (for Office 365 apps) licenses. For more information about licensing and editions, see [Sign up for Microsoft Entra ID P1 or P2](/azure/active-directory/fundamentals/active-directory-get-started-premium).
+>Adding custom branding requires you to have either Microsoft Entra ID P1 or P2, Premium 2, or Office 365 (for Office 365 apps) licenses. For more information about licensing and editions, see [Sign up for Microsoft Entra ID P1 or P2](/entra/fundamentals/get-started-premium).
 >
 >Microsoft Entra ID P1 or P2 editions are available for customers in China using the worldwide instance of Microsoft Entra ID. Microsoft Entra ID P1 or P2 editions aren't currently supported in the Azure service operated by 21Vianet in China. For more information, talk to us using the [Microsoft Entra Forum](https://feedback.azure.com/forums/169401-azure-active-directory/).
 
