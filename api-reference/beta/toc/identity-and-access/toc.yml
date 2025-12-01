@@ -3195,17 +3195,17 @@ items:
   - name: Organizational branding
     displayName: Tenant branding, UX customization
     items:
-    - name: Organizational branding
+    - name: Default tenant branding
       items:
-      - name: Organizational branding
+      - name: Default tenant branding
         href: ../../resources/organizationalbranding.md
       - name: Get
         href: ../../api/organizationalbranding-get.md
       - name: Update
         href: ../../api/organizationalbranding-update.md
-    - name: Organizational branding localization
+    - name: Language-specific tenant branding
       items:
-      - name: Organizational branding localization
+      - name: Language-specific tenant branding
         href: ../../resources/organizationalbrandinglocalization.md
       - name: List
         href: ../../api/organizationalbranding-list-localizations.md
@@ -3217,9 +3217,9 @@ items:
         href: ../../api/organizationalbrandinglocalization-update.md
       - name: Delete
         href: ../../api/organizationalbrandinglocalization-delete.md
-    - name: Organizational branding theme
+    - name: Tenant branding theme
       items:
-      - name: Organizational branding theme
+      - name: Tenant branding theme
         href: ../../resources/organizationalbrandingtheme.md
       - name: List
         href: ../../api/organizationalbranding-list-themes.md
@@ -3231,9 +3231,9 @@ items:
         href: ../../api/organizationalbrandingtheme-update.md
       - name: Delete
         href: ../../api/organizationalbranding-delete-themes.md
-    - name: Organizational branding theme localization
+    - name: Language-specific tenant branding theme
       items:
-      - name: Organizational branding theme localization
+      - name: Language-specific tenant branding theme
         href: ../../resources/organizationalbrandingthemelocalization.md
       - name: List
         href: ../../api/organizationalbrandingtheme-list-localizations.md
@@ -3775,6 +3775,38 @@ items:
         href: ../../api/verifiedidprofile-update.md
       - name: Delete
         href: ../../api/identityverifiedidroot-delete-profiles.md
+  - name: Web application firewall
+    items:
+    - name: Web application firewall provider
+      items:
+      - name: Web application firewall provider
+        href: ../../resources/webapplicationfirewallprovider.md
+      - name: List
+        href: ../../api/riskpreventioncontainer-list-webapplicationfirewallproviders.md
+      - name: Create
+        href: ../../api/riskpreventioncontainer-post-webapplicationfirewallproviders.md
+      - name: Get
+        href: ../../api/webapplicationfirewallprovider-get.md
+      - name: Update
+        href: ../../api/webapplicationfirewallprovider-update.md
+      - name: Delete
+        href: ../../api/riskpreventioncontainer-delete-webapplicationfirewallproviders.md
+      - name: Verify
+        href: ../../api/webapplicationfirewallprovider-verify.md
+    - name: Akamai web application firewall provider
+      href: ../../resources/akamaiwebapplicationfirewallprovider.md
+    - name: Cloud flare web application firewall provider
+      href: ../../resources/cloudflarewebapplicationfirewallprovider.md
+    - name: Web application firewall verification model
+      items:
+      - name: Web application firewall verification model
+        href: ../../resources/webapplicationfirewallverificationmodel.md
+      - name: List
+        href: ../../api/riskpreventioncontainer-list-webapplicationfirewallverifications.md
+      - name: Get
+        href: ../../api/webapplicationfirewallverificationmodel-get.md
+      - name: Delete
+        href: ../../api/riskpreventioncontainer-delete-webapplicationfirewallverifications.md
   - name: Web application firewall provider
     items:
     - name: Web application firewall provider

@@ -1025,13 +1025,18 @@
             "appRoleAssignment",
             "dataPolicyOperation",
             "oAuth2PermissionGrant",
-            "certificateBasedAuthConfiguration",
-            "webApplicationFirewallProvider",
-            "cloudFlareWebApplicationFirewallProvider",
-            "akamaiWebApplicationFirewallProvider",
-            "webApplicationFirewallVerificationModel"
+            "certificateBasedAuthConfiguration"
           ],
           "childNodes": [
+            {
+              "name": "Web application firewall",
+              "resources": [
+                "webApplicationFirewallProvider",
+                "akamaiWebApplicationFirewallProvider",
+                "cloudFlareWebApplicationFirewallProvider",
+                "webApplicationFirewallVerificationModel"
+              ]
+            },
             {
               "name": "Authentication event listeners",
               "resources": [

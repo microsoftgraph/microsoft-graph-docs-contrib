@@ -1160,18 +1160,19 @@
             "bitlockerRecoveryKey",
             "deviceLocalCredentialInfo",
             "featureRolloutPolicy",
-            "mobileAppManagementPolicy",
-            "mobileDeviceManagementPolicy",
             "organizationSettings",
             "uxSetting",
             "deviceTemplate",
             "mutualTlsOauthConfiguration"
           ],
-          "complexTypes": [
-            "template",
-            "trustedCertificateAuthorityBase"
-          ],
           "childNodes": [
+            {
+              "name": "Mobility management policy",
+              "resources": [
+                "mobileAppManagementPolicy",
+                "mobileDeviceManagementPolicy"
+              ]
+            },
             {
               "name": "Custom security attributes",
               "overview": "../../resources/custom-security-attributes-overview.md",
@@ -1614,6 +1615,15 @@
             "webApplicationFirewallVerificationModel"
           ],
           "childNodes": [
+            {
+              "name": "Web application firewall",
+              "resources": [
+                "webApplicationFirewallProvider",
+                "akamaiWebApplicationFirewallProvider",
+                "cloudFlareWebApplicationFirewallProvider",
+                "webApplicationFirewallVerificationModel"
+              ]
+            },
             {
               "name": "Sign-in identifiers",
               "resources": [
