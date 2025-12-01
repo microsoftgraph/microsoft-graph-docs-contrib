@@ -51,9 +51,7 @@ To use application permission for this API, tenant administrators must create an
 
 ## HTTP request
 
-### For an online meeting
-
-Get a single transcript
+Get a single transcript for an online meeting
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -61,7 +59,7 @@ GET /me/onlineMeetings/{meetingId}/transcripts/{transcriptId}
 GET /users/{userId}/onlineMeetings/{meetingId}/transcripts/{transcriptId}
 ```
 
-Get the content of a single transcript
+Get the content of a single transcript for an online meeting
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -69,9 +67,7 @@ GET /me/onlineMeetings/{meetingId}/transcripts/{transcriptId}/content
 GET /users/{userId}/onlineMeetings/{meetingId}/transcripts/{transcriptId}/content
 ```
 
-### For an ad hoc call
-
-Get a single transcript
+Get a single transcript for an ad hoc call
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -79,7 +75,7 @@ GET /me/adhocCalls/{callId}/transcripts/{transcriptId}
 GET /users/{userId}/adhocCalls/{callId}/transcripts/{transcriptId}
 ```
 
-Get the content of a single transcript
+Get the content of a single transcript for an ad hoc call
 
 <!-- { "blockType": "ignored" } -->
 ```http
