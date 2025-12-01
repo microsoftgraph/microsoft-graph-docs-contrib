@@ -164,7 +164,7 @@ Content-Type: application/json
 The following example shows how to add multiple members to a team using the user principal name of the members.
 
 > [!NOTE]
-> You can’t add a guest user to a team by using the user principal name (UPN).
+> You can’t use the user principal name (UPN) to add a guest user to a team.
 
 #### Request
 
