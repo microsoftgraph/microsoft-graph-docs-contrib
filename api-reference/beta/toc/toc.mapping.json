@@ -1087,8 +1087,8 @@
           "name": "SharePoint cross-tenant migration (preview)",
           "overview": "../../resources/sharepoint-crossorganization-api-overview.md",
           "resources": [
-            "sharePointMigrationTask",
             "sharePointGroupIdentityMapping",
+            "sharePointMigrationTask",
             "sharePointUserIdentityMapping"
           ],
           "complexTypes": [
