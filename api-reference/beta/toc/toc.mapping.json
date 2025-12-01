@@ -1606,7 +1606,6 @@
             "appRoleAssignment",            
             "dataPolicyOperation",
             "oAuth2PermissionGrant",
-            "certificateBasedAuthConfiguration",
             "externalIdentitiesPolicy",
             "webApplicationFirewallProvider",
             "cloudFlareWebApplicationFirewallProvider",
@@ -1614,6 +1613,14 @@
             "webApplicationFirewallVerificationModel"
           ],
           "childNodes": [
+            {
+              "name": "Certificate-based authentication (CBA)",
+              "resources": [
+                "certificateBasedAuthConfiguration",
+                "certificateBasedAuthPki",
+                "certificateAuthorityDetail"
+              ]
+            },
             {
               "name": "Sign-in identifiers",
               "resources": [
@@ -1884,13 +1891,6 @@
                 "deviceRegistrationPolicy",
                 "onPremAuthenticationPolicy"
               ]
-            },
-            {
-              "name": "Public key infrastructure",
-              "resources": [
-                "certificateBasedAuthPki",
-                "certificateAuthorityDetail"
-               ]
             },
             {
               "name": "Trusted certificate authorities for apps (preview)",

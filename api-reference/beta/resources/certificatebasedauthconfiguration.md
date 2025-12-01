@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+Represents the classic certificate-based authentication (CBA) trust store.
+
 Certificate-based authentication enables you to be authenticated by Microsoft Entra ID with a client certificate on a Windows, Android, or iOS device when connecting your Exchange Online account to:
 
 - Microsoft mobile applications such as Outlook and Word
@@ -24,10 +26,10 @@ Configuring this feature eliminates the need to enter a username and password co
 
 Certificate-based authentication configuration is provided through a collection of certificate authorities. The certificate authorities are used to establish a trusted certificate chain which enables clients to be authenticated by Microsoft Entra ID with a client certificate.
 
-Learn more about [certificate-based authentication in Microsoft Entra ID](/azure/active-directory/authentication/active-directory-certificate-based-authentication-get-started).
+Learn more about [Get started with certificate-based authentication in Microsoft Entra ID with federation](/entra/identity/authentication/certificate-based-authentication-federation-get-started).
 
->[!NOTE]
->Administrators are highly recommended to configure the new scalable platform for [PKI (Public Key Infrastructure) based store](certificatebasedauthpki.md). This new PKI based CA store has higher limits for the number of CAs that supports up to 250CAs as well as the size of up to 8KB for each CA file and also supports new functionality such as issuer hints.  
+> [!IMPORTANT]
+> We highly recommend you use the new [PKI-based trust store](certificatebasedauthpki.md) which is more scalable than this classic trust store. It supports up to 250 CAs with up to 8KB per CA file and also supports new functionality such as issuer hints.
 
 ## Methods
 
