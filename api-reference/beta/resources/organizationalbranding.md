@@ -5,7 +5,8 @@ author: alexanderMars
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
-ms.date: 10/30/2025
+ms.date: 12/01/2025
+toc.title: Deafult tenant branding
 ---
 
 # organizationalBranding resource type
@@ -18,7 +19,9 @@ Contains details about the organization's default branding. Inherits from [organ
 
 Organizations can customize their Microsoft Entra sign-in pages which appear when users sign in to their organization's tenant-specific apps, or when Microsoft Entra ID identifies the user's tenant from their username. A developer can also read the company's branding information and customize their app experience to tailor it specifically for the signed-in user using their company's branding.
 
-You can't change your original configuration's language. However, companies can add different branding based on locale. For language-specific branding, see the [organizationalBrandingLocalization](organizationalbrandingproperties.md) object.
+You can't change your original configuration's language. However, companies can add different branding based on locale. For language-specific branding, see the [organizationalBrandingLocalization](organizationalbrandinglocalization.md) object.
+
+For more information, see [Customize the neutral branding in your external tenant](/entra/external-id/customers/how-to-customize-branding-customers).
 
 >[!NOTE]
 >Adding custom branding requires you to have either Microsoft Entra ID P1 or P2, Premium 2, or Office 365 (for Office 365 apps) licenses. For more information about licensing and editions, see [Sign up for Microsoft Entra ID P1 or P2](/azure/active-directory/fundamentals/active-directory-get-started-premium).
@@ -30,7 +33,6 @@ You can't change your original configuration's language. However, companies can 
 |:---|:---|:---|
 | [Get](../api/organizationalbranding-get.md) | [organizationalBranding](../resources/organizationalbranding.md) | Read the properties and relationships of an [organizationalBranding](../resources/organizationalbranding.md) object. |
 | [Update](../api/organizationalbranding-update.md) | None | Update the properties of an [organizationalBranding](../resources/organizationalbranding.md) object. |
-<!--| [Delete organizationalBranding](../api/organizationalbranding-delete.md) | None | Delete an [organizationalBranding](../resources/organizationalbranding.md) object. |-->
 
 ## Properties
 
