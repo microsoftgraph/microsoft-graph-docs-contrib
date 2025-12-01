@@ -52,11 +52,13 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this function returns a `200 OK` response code and a [cloudPcSourceDeviceImage](../resources/cloudpcsourcedeviceimage.md) collection in the response body.
+If successful, this function returns a `200 OK` response code and a collection of [cloudPcSourceDeviceImage](../resources/cloudpcsourcedeviceimage.md) objects in the response body.
 
 ## Examples
 
 ### Example 1: Get cloudPcSourceDeviceImage objects without any query parameters
+
+The following example shows how to get **cloudPcSourceDeviceImage** objects without any query parameters.
 
 #### Request
 
@@ -140,6 +142,8 @@ Content-Type: application/json
 
 ### Example 2: Get cloudPcSourceDeviceImage objects with a specific category
 
+The following example shows how to get **cloudPcSourceDeviceImage** objects with a specific category.
+
 #### Request
 
 The following example shows a request.
@@ -149,11 +153,9 @@ The following example shows a request.
   "name": "cloudpcdeviceimage_getsourceimageswithcategory"
 }
 -->
-
 ``` http
 GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/deviceImages/getSourceImages?$filter=category eq 'managedImage'
 ```
-
 
 #### Response
 
