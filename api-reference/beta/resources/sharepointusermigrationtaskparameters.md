@@ -23,16 +23,17 @@ Inherits from [sharePointMigrationTaskParameters](../resources/sharepointmigrati
 
 |Property|Type|Description|
 |:---|:---|:---|
-|preferredLatestStartDateTime|DateTimeOffset|If the sharePointMigrationTask doesn't start by this time, it's automatically canceled. Must be greater than the preferredStartDateTime if present. Optional. Only on OneDrive and SharePoint. Inherited from [sharePointMigrationTaskParameters](../resources/sharepointmigrationtaskparameters.md).|
-|preferredStartDateTime|DateTimeOffset|Allows the sharePointMigrationTask to start some time in future as opposed to as-soon-as-possible (default). Optional. Only on OneDrive and SharePoint. Inherited from [sharePointMigrationTaskParameters](../resources/sharepointmigrationtaskparameters.md).|
-|sourceSiteUrl|String|The SharePoint URL of the source site. Optional. Exactly one of sourceSiteId or sourceUrl must be specified. If both or neither are specified, it's an error. Only on OneDrive and SharePoint. Inherited from [sharePointMigrationTaskParameters](../resources/sharepointmigrationtaskparameters.md).|
-|sourceUserIdentity|[userIdentity](../resources/useridentity.md)|The source user in the source tenant, it includes user object ID and user principal name.|
-|targetDataLocationCode|String|The string in Microsoft Entra representing the geographic location (for example, `JPN`, `NAM`)  the target organization where the resource must be migrated to ensure data residency and compliance. Not required for single-geo target organizations or if the migration is to the default GEO of a multi-geo target organization. Optional. Only on OneDrive and SharePoint. Inherited from [sharePointMigrationTaskParameters](../resources/sharepointmigrationtaskparameters.md).|
-|targetOrganizationHost|String|The root, admin, or my site host of the specific multigeo instance of the target organization where the resource needs to be migrated (to ensure data residency and compliance). Not required for single-geo target organizations or if the migration is to the default GEO of a multi-geo target organization. Optional. Only on OneDrive and SharePoint. Inherited from [sharePointMigrationTaskParameters](../resources/sharepointmigrationtaskparameters.md).|
-|targetOrganizationId|Guid|The unique Microsoft Entra companyId of the target organization to which the source resource needs to be migrated. Only on OneDrive and SharePoint. Inherited from [sharePointMigrationTaskParameters](../resources/sharepointmigrationtaskparameters.md).|
+|preferredLatestStartDateTime|DateTimeOffset|The preferred latest start date and time. The system cancels the **sharePointMigrationTask** if it doesn't start by this time. The value must be greater than the **preferredStartDateTime**, if present. Optional. Only on OneDrive and SharePoint. Inherited from [sharePointMigrationTaskParameters](../resources/sharepointmigrationtaskparameters.md).|
+|preferredStartDateTime|DateTimeOffset|The preferred start date and time that allows the **sharePointMigrationTask** to start at a future time instead of as soon as possible (default). Optional. Only on OneDrive and SharePoint. Inherited from [sharePointMigrationTaskParameters](../resources/sharepointmigrationtaskparameters.md).|
+|sourceUserIdentity|[userIdentity](../resources/useridentity.md)|The source user in the source tenant, including the user object ID and the user principal name.|
+|sourceSiteUrl|String|The SharePoint URL of the source site. Optional. Exactly one of **sourceSiteId** or **sourceUrl** must be specified. If both or neither are specified, it's an error. Only on OneDrive and SharePoint. Inherited from [sharePointMigrationTaskParameters](../resources/sharepointmigrationtaskparameters.md).|
+|targetDataLocationCode|String| In Microsoft Entra, this value represents the geographic location (for example, `JPN`, `NAM`) of the target organization where the resource must be migrated to ensure data residency and compliance. This property isn't required for single-geo target organizations or when the migration is to the default GEO of a multi-geo target organization. Optional. Only on OneDrive and SharePoint. Inherited from [sharePointMigrationTaskParameters](../resources/sharepointmigrationtaskparameters.md).|
+|targetGroupIdentity|[groupIdentity](../resources/groupidentity.md)|The identity of the target group in the target tenant, including its mail nickname.|
+|targetOrganizationHost|String|The root, admin, or my site host of the specific multi-geo instance of the target organization where the resource must be migrated to ensure data residency and compliance. This property isn't required for single-geo target organizations or when the migration is to the default GEO of a multi-geo target organization. Optional. Only on OneDrive and SharePoint. Inherited from [sharePointMigrationTaskParameters](../resources/sharepointmigrationtaskparameters.md).|
+|targetOrganizationId|Guid|The unique Microsoft Entra company ID of the target organization to which the source resource must be migrated. Only on OneDrive and SharePoint. Inherited from [sharePointMigrationTaskParameters](../resources/sharepointmigrationtaskparameters.md).|
 |targetSiteUrl|String|The SharePoint URL of the target site. Only on OneDrive and SharePoint. Inherited from [sharePointMigrationTaskParameters](../resources/sharepointmigrationtaskparameters.md).|
-|targetUserIdentity|[userIdentity](../resources/useridentity.md)|The target user in the target tenant, it includes user object ID and user principal name.|
-|validateOnly|Boolean|Indicates if this task is an actual migration task or is it doing validation only. If not present, it's assumed to be false (that is, the default is a real migration). Optional. Only on OneDrive and SharePoint. Inherited from [sharePointMigrationTaskParameters](../resources/sharepointmigrationtaskparameters.md).|
+|targetUserIdentity|[userIdentity](../resources/useridentity.md)|The target user in the target tenant, including the user object ID and the user principal name.|
+|validateOnly|Boolean|Indicates whether this task is an actual migration or only a validation. If the parameter is missing, the system treats it as `false`. The default behavior is a real migration. Optional. Only on OneDrive and SharePoint. Inherited from [sharePointMigrationTaskParameters](../resources/sharepointmigrationtaskparameters.md).|
 
 ## Relationships
 
@@ -49,19 +50,15 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.sharePointUserMigrationTaskParameters",
-  "targetOrganizationId": "Guid",
+  "preferredLatestStartDateTime": "String (timestamp)",
+  "preferredStartDateTime": "String (timestamp)",
+  "sourceSiteUrl": "String",
+  "sourceUserIdentity": {"@odata.type": "microsoft.graph.userIdentity"},
   "targetDataLocationCode": "String",
   "targetOrganizationHost": "String",
-  "validateOnly": "Boolean",
-  "preferredStartDateTime": "String (timestamp)",
-  "preferredLatestStartDateTime": "String (timestamp)",
-  "sourceSiteUrl": "String",
+  "targetOrganizationId": "Guid",
   "targetSiteUrl": "String",
-  "sourceUserIdentity": {
-    "@odata.type": "microsoft.graph.userIdentity"
-  },
-  "targetUserIdentity": {
-    "@odata.type": "microsoft.graph.userIdentity"
-  }
+  "targetUserIdentity": {"@odata.type": "microsoft.graph.userIdentity"},
+  "validateOnly": "Boolean"
 }
 ```
