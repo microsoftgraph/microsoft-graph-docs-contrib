@@ -1607,14 +1607,17 @@
             "appRoleAssignment",            
             "dataPolicyOperation",
             "oAuth2PermissionGrant",
-            "certificateBasedAuthConfiguration",
-            "externalIdentitiesPolicy",
-            "webApplicationFirewallProvider",
-            "cloudFlareWebApplicationFirewallProvider",
-            "akamaiWebApplicationFirewallProvider",
-            "webApplicationFirewallVerificationModel"
+            "externalIdentitiesPolicy"
           ],
           "childNodes": [
+            {
+              "name": "Certificate-based authentication (CBA)",
+              "resources": [
+                "certificateBasedAuthConfiguration",
+                "certificateBasedAuthPki",
+                "certificateAuthorityDetail"
+              ]
+            },
             {
               "name": "Web application firewall",
               "resources": [
@@ -1896,13 +1899,6 @@
               ]
             },
             {
-              "name": "Public key infrastructure",
-              "resources": [
-                "certificateBasedAuthPki",
-                "certificateAuthorityDetail"
-               ]
-            },
-            {
               "name": "Trusted certificate authorities for apps (preview)",
               "resources": [
                 "certificateBasedApplicationConfiguration",
@@ -2117,12 +2113,8 @@
           "resources": [
             "microsoft.graph.networkaccess.tenantStatus",
             "microsoft.graph.networkaccess.branchSite",
-            "microsoft.graph.networkaccess.enrichedAuditLogs",
-            "microsoft.graph.networkaccess.logs",
-            "microsoft.graph.networkaccess.reports",
             "microsoft.graph.networkaccess.remoteNetwork",
-            "microsoft.graph.networkaccess.alert",
-            "microsoft.graph.networkaccess.deployment"
+            "microsoft.graph.networkaccess.alert"
           ],
           "childNodes": [
             {
@@ -2176,19 +2168,22 @@
               ]
             },
             {
-              "name": "Traffic logs",
-              "resources": [
-                "microsoft.graph.networkaccess.networkAccessTraffic",
-                "microsoft.graph.networkaccess.remoteNetworkHealthEvent"
-              ]
-            },
-            {
               "name": "TLS inspection",
               "resources": [
                 "microsoft.graph.networkaccess.externalCertificateAuthorityCertificate",
                 "microsoft.graph.networkaccess.tlsInspectionPolicy",
                 "microsoft.graph.networkaccess.tlsInspectionPolicyLink",
                 "microsoft.graph.networkaccess.tlsInspectionRule"
+              ]
+            },
+            {
+              "name": "Logs and monitoring",
+              "resources": [
+              "microsoft.graph.networkaccess.reports",
+              "microsoft.graph.networkaccess.alert",
+              "microsoft.graph.networkaccess.deployment",
+              "microsoft.graph.networkaccess.networkAccessTraffic",
+              "microsoft.graph.networkaccess.remoteNetworkHealthEvent"
               ]
             }
           ]
@@ -2214,12 +2209,6 @@
                 "delegatedAdminRelationshipRequest",
                 "delegatedAdminRelationshipOperation",
                 "delegatedAdminCustomer"
-              ],
-              "complexTypes": [
-                "delegatedAdminAccessContainer",
-                "delegatedAdminAccessDetails",
-                "delegatedAdminRelationshipCustomerParticipant",
-                "unifiedRole"
               ]
             }
           ]
