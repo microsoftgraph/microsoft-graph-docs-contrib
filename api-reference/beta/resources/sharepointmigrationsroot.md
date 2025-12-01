@@ -46,8 +46,8 @@ Inherits from [entity](../resources/entity.md).
 |Relationship|Type|Description|
 |:---|:---|:---|
 |crossOrganizationGroupMappings|[sharePointGroupIdentityMapping](../resources/sharepointgroupidentitymapping.md) collection|Collection of group identity mappings for cross-organization migration.|
+|crossOrganizationMigrationTasks|[sharePointMigrationTask](../resources/sharepointmigrationtask.md) collection|A collection of **sharePointMigrationTask** resources that represent cross-organization migration tasks.|
 |crossOrganizationUserMappings|[sharePointUserIdentityMapping](../resources/sharepointuseridentitymapping.md) collection|Collection of user identity mappings for cross-organization migration.|
-|crossOrganizationMigrationTasks|[sharePointMigrationTask](../resources/sharepointmigrationtask.md) collection|A collection of sharePointMigrationTask resources representing cross-organization migration tasks.|
 
 ## JSON representation
 
