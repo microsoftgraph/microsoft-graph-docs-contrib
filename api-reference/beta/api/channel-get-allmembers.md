@@ -1,6 +1,6 @@
 ---
 title: "Get member from allMembers"
-description: "Retrieve a single [conversationMember](../resources/conversationmember.md) (direct or indirect) from the allMembers collection using the membershipId."
+description: "Retrieve a single conversationMember (direct or indirect) from the allMembers collection using the membershipId."
 author: "jsinghmokha"
 ms.localizationpriority: high
 ms.subservice: "teams"
@@ -14,11 +14,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a single [conversationMember](../resources/conversationmember.md) (direct or indirect) from the allMembers collection using the membershipId.
+Retrieve a single [conversationMember](../resources/conversationmember.md) (direct or indirect) from the allMembers collection using the **membershipId**.
 
-This API provides access to both:
-- **Direct members**: Users who are added directly to the channel, including users from other tenants (cross-tenant).
-- **Indirect members**: Users who are members of a team with which the channel is shared, including teams in the same tenant or in a different tenant (cross-tenant). When retrieving an indirect member, the **@microsoft.graph.originalSourceMembershipUrl** property identifies the original source team, indicating that the user is an indirect member of the shared channel.
+This API provides access to the following member types:
+- *Direct members*: Users who are added directly to the channel, including users from other tenants (cross-tenant).
+- *Indirect members*: Users who are members of a team with which the channel is shared, including teams in the same tenant or in a different tenant (cross-tenant). When you retrieve an indirect member, the **@microsoft.graph.originalSourceMembershipUrl** property identifies the original source team, which indicates that the user is an indirect member of the shared channel.
 
 > [!NOTE]
 > The membership IDs returned by the server must be treated as opaque strings. Users shouldn't try to parse or make any assumptions about these resource IDs.
@@ -78,8 +78,6 @@ The following example shows a request.
 GET https://graph.microsoft.com/beta/teams/2ab9c796-2902-45f8-b712-7c5a63cf41c4/channels/19:jf9aA0iokhbhXLZNDmc3u6YlNK4zp8XNJzEre9N6D_U1@thread.tacv2/allMembers/MCMjMyMjMjQzMmI1N2ItMGFiZC00M2RiLWFhN2ItMTZlYWRkMTE1ZDM0IyMxOTpqZjlhQTBpb2toYmhYTFpORG1jM3U2WWxOSzR6cDhYTkp6RXJlOU42RF9VMUB0aHJlYWQudGFjdjIjIzQ1OTVkMmYyLTdiMzEtNDQ2Yy04NGZkLTliNzk1ZTYzMTE0Yg==
 ```
 
----
-
 #### Response
 
 The following example shows the response for a direct member.
@@ -127,11 +125,9 @@ The following example shows a request.
 GET https://graph.microsoft.com/beta/teams/2ab9c796-2902-45f8-b712-7c5a63cf41c4/channels/19:jf9aA0iokhbhXLZNDmc3u6YlNK4zp8XNJzEre9N6D_U1@thread.tacv2/allMembers/MCMjNCMjMjQzMmI1N2ItMGFiZC00M2RiLWFhN2ItMTZlYWRkMTE1ZDM0IyMzYzgxODVhNy04ZDA5LTRkODQtYTY0MS1lYjhlODBjOWZkYTZfXzE5OmpmOWFBMGlva2hiaFhMWk5EbWMzdTZZbE5LNHpwOFhOSnpFcmU5TjZEX1UxQHRocmVhZC50YWN2MiMjNDU5NWQyZjItN2IzMS00NDZjLTg0ZmQtOWI3OTVlNjMxMTRi
 ```
 
----
-
 #### Response
 
-The following example shows the response for an indirect member. Note the **@microsoft.graph.originalSourceMembershipUrl** property that identifies the source team.
+The following example shows the response for an indirect member. The **@microsoft.graph.originalSourceMembershipUrl** property identifies the source team.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -174,8 +170,6 @@ The following example shows a request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/teams/2ab9c796-2902-45f8-b712-7c5a63cf41c4/channels/19:jf9aA0iokhbhXLZNDmc3u6YlNK4zp8XNJzEre9N6D_U1@thread.tacv2/allMembers/MCMjMyMjMjQzMmI1N2ItMGFiZC00M2RiLWFhN2ItMTZlYWRkMTE1ZDM0IyMxOTpqZjlhQTBpb2toYmhYTFpORG1jM3U2WWxOSzR6cDhYTkp6RXJlOU42RF9VMUB0aHJlYWQudGFjdjIjIzQ1OTVkMmYyLTdiMzEtNDQ2Yy04NGZkLTliNzk1ZTYzMTE0Yg==?$select=id,displayName,roles
 ```
-
----
 
 #### Response
 
