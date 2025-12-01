@@ -5,7 +5,7 @@ author: "tracyshi"
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "entra-sign-in"
-ms.date: 08/01/2024
+ms.date: 11/27/2025
 ---
 
 # riskyUser resource type
@@ -43,7 +43,7 @@ For more information about risk events, see [Microsoft Entra ID Protection](/azu
 |riskLastUpdatedDateTime|DateTimeOffset|The date and time that the risky user was last updated.  The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |riskLevel|riskLevel| Level of the detected risky user. The possible values are `low`, `medium`, `high`, `hidden`, `none`, `unknownFutureValue`.  |
 |riskState|riskState| State of the user's risk. Possible values are: `none`, `confirmedSafe`, `remediated`, `dismissed`, `atRisk`, `confirmedCompromised`, `unknownFutureValue`.  |
-|riskDetail|riskDetail| The possible values are `none`, `adminGeneratedTemporaryPassword`, `userPerformedSecuredPasswordChange`, `userPerformedSecuredPasswordReset`, `adminConfirmedSigninSafe`, `aiConfirmedSigninSafe`, `userPassedMFADrivenByRiskBasedPolicy`, `adminDismissedAllRiskForUser`, `adminConfirmedSigninCompromised`, `hidden`, `adminConfirmedUserCompromised`, `unknownFutureValue`, `adminConfirmedServicePrincipalCompromised`, `adminDismissedAllRiskForServicePrincipal`, `m365DAdminDismissedDetection`, `userChangedPasswordOnPremises`, `adminDismissedRiskForSignIn`, `adminConfirmedAccountSafe`.  Use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `adminConfirmedServicePrincipalCompromised`, `adminDismissedAllRiskForServicePrincipal`, `m365DAdminDismissedDetection`, `userChangedPasswordOnPremises`, `adminDismissedRiskForSignIn`, `adminConfirmedAccountSafe`.|
+|riskDetail|[riskDetail](../resources/riskdetail.md)|Details of the detected risk. <br/>**Note:** Details for this property are only available for Microsoft Entra ID P2 customers. All other customers are returned `hidden`.|
 |userDisplayName|string|Risky user display name.|
 |userPrincipalName|string|Risky user principal name.|
 

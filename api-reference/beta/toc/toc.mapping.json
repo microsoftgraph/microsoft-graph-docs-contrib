@@ -2111,7 +2111,8 @@
             "microsoft.graph.networkaccess.logs",
             "microsoft.graph.networkaccess.reports",
             "microsoft.graph.networkaccess.remoteNetwork",
-            "microsoft.graph.networkaccess.alert"
+            "microsoft.graph.networkaccess.alert",
+            "microsoft.graph.networkaccess.deployment"
           ],
           "childNodes": [
             {
