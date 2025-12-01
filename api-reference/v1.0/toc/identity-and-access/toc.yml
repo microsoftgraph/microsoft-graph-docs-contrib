@@ -1753,19 +1753,21 @@ items:
         href: ../../api/authenticationstrengthroot-list-authenticationmethodmodes.md
       - name: Get authentication method modes
         href: ../../api/authenticationmethodmodedetail-get.md
-  - name: Certificate-based auth configuration
-    displayName: CBA
+  - name: Certificate-based authentication (CBA)
     items:
     - name: Certificate-based auth configuration
-      href: ../../resources/certificatebasedauthconfiguration.md
-    - name: List
-      href: ../../api/certificatebasedauthconfiguration-list.md
-    - name: Create
-      href: ../../api/certificatebasedauthconfiguration-post-certificatebasedauthconfiguration.md
-    - name: Get
-      href: ../../api/certificatebasedauthconfiguration-get.md
-    - name: Delete
-      href: ../../api/certificatebasedauthconfiguration-delete.md
+      displayName: CBA
+      items:
+      - name: Certificate-based auth configuration
+        href: ../../resources/certificatebasedauthconfiguration.md
+      - name: List
+        href: ../../api/certificatebasedauthconfiguration-list.md
+      - name: Create
+        href: ../../api/certificatebasedauthconfiguration-post-certificatebasedauthconfiguration.md
+      - name: Get
+        href: ../../api/certificatebasedauthconfiguration-get.md
+      - name: Delete
+        href: ../../api/certificatebasedauthconfiguration-delete.md
   - name: Conditional access
     items:
     - name: Conditional access policy
