@@ -138,13 +138,13 @@ Content-type: application/json
 
 ### Example 2: Add a member to a team using user principal name
 
+The following example shows how to add a member to a team using the user principal name.
+
 > [!NOTE]
->
-> You can’t add a guest user to a team by using the user principal name (UPN).
+> You can’t use the user principal name (UPN) to add a guest user to a team.
 
 #### Request
-
-
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
