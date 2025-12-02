@@ -3,7 +3,7 @@ title: "What's new in Microsoft Graph"
 description: "Find out what's new in Microsoft Graph APIs, SDKs, documentation, and other resources."
 author: "lauragra"
 ms.localizationpriority: high
-ms.date: 11/18/2025
+ms.date: 12/02/2025
 ms.topic: whats-new
 ---
 
@@ -20,10 +20,6 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ## November 2025: New and generally available
 
-### Identity and access | Directory management
-
-Deleted security groups can now be restored from [deleted items](/graph/api/resources/directory) within 30 days of deletion, similar to Microsoft 365 groups. Use the [Restore deleted item](/graph/api/directory-deleteditems-restore) API to restore a deleted security group.
-
 ### Backup storage
 
 The [driveItem: restore](/graph/api/driveitem-restore) method was expanded to enable restoring a **driveItem** deleted from a **fileStorageContainer** without mapping it to a **recycleBinItem**. This complements existing functionality in [recycleBinItem: restore](/graph/api/filestoragecontainer-restore-recyclebinitem) which continues to work as expected.
@@ -38,13 +34,22 @@ The [driveItem: restore](/graph/api/driveitem-restore) method was expanded to en
   - [driveItem: removeRetentionLabel](/graph/api/driveitem-removeretentionlabel)
   - [driveItem: setRetentionLabel](/graph/api/driveitem-setretentionlabel)
 
-### Teamwork and communications | Calls and online meetings
+### Identity and access | Directory management
 
-Use resource-specific consent (RSC) permissions for virtual events. For more information, see [Virtual events town hall API use cases](/graph/cloud-communications-virtual-events-townhall-usecases#resource-specific-consent-rsc-for-virtual-events) and [Virtual events webinar API use cases](/graph/cloud-communications-virtual-events-webinar-usecases#resource-specific-consent-rsc-for-virtual-events).
+Deleted security groups can now be restored from [deleted items](/graph/api/resources/directory) within 30 days of deletion, similar to Microsoft 365 groups. Use the [Restore deleted item](/graph/api/directory-deleteditems-restore) API to restore a deleted security group.
 
 ### Identity and access | Governance
 
 - Added the [userInactivityTrigger](/graph/api/resources/userinactivitytrigger) resource to support automatic triggering of access reviews based on user inactivity.
+
+### Identity and access | Identity and sign-in
+
+- Added the [webApplicationFirewallProvider](/graph/api/resources/webapplicationfirewallprovider) and [webApplicationFirewallVerificationModel](/graph/api/resources/webapplicationfirewallverificationmodel) resource types and their associated APIs for configuring and managing Web Application Firewall providers and shield external-facing authentication endpoints from threats such as distributed denial of service (DDoS) attacks, OWASP Top-10 risks, malicious bots, and more. This feature is supported in Microsoft Entra External ID for external tenants.
+- Added the [fraudProtectionProvider](/graph/api/resources/fraudprotectionprovider) resource type and its associated APIs to enbale integration with third-party fraud protection providers for sign-up fraud defense. This feature is part of Microsoft Entra Identity Protection capabilities in Microsoft Entra External ID for external tenants.
+
+### Teamwork and communications | Calls and online meetings
+
+Use resource-specific consent (RSC) permissions for virtual events. For more information, see [Virtual events town hall API use cases](/graph/cloud-communications-virtual-events-townhall-usecases#resource-specific-consent-rsc-for-virtual-events) and [Virtual events webinar API use cases](/graph/cloud-communications-virtual-events-webinar-usecases#resource-specific-consent-rsc-for-virtual-events).
 
 ## November 2025: New in preview only
 
