@@ -21,8 +21,8 @@ Represents the filter type and evalaution result of the filter.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|assignmentFilterType|[deviceAndAppManagementAssignmentFilterType](../resources/intune-shared-deviceandappmanagementassignmentfiltertype.md)|Represents the filter type. Possible values are: `none`, `include`, `exclude`.|
-|evaluationResult|[assignmentFilterEvaluationResult](../resources/intune-policyset-assignmentfilterevaluationresult.md)|Represents the evalaution result of the filter. Possible values are: `unknown`, `match`, `notMatch`, `inconclusive`, `failure`, `notEvaluated`.|
+|assignmentFilterType|[deviceAndAppManagementAssignmentFilterType](../resources/intune-shared-deviceandappmanagementassignmentfiltertype.md)|Represents the filter type. The possible values are: `none`, `include`, `exclude`.|
+|evaluationResult|[assignmentFilterEvaluationResult](../resources/intune-policyset-assignmentfilterevaluationresult.md)|Represents the evalaution result of the filter. The possible values are: `unknown`, `match`, `notMatch`, `inconclusive`, `failure`, `notEvaluated`.|
 
 ## Relationships
 None

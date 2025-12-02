@@ -61,7 +61,7 @@ The following JSON representation shows the resource type.
 |sectionGroupsUrl|String|The URL for the `sectionGroups` navigation property, which returns all the section groups in the notebook. Read-only.|
 |sectionsUrl|String|The URL for the `sections` navigation property, which returns all the sections in the notebook. Read-only.|
 |self|String|The endpoint where you can get details about the notebook. Read-only.|
-|userRole|onenoteUserRole|Possible values are: `Owner`, `Contributor`, `Reader`, `None`. Owner represents owner-level access to the notebook. Contributor represents read/write access to the notebook. Reader represents read-only access to the notebook. Read-only.|
+|userRole|onenoteUserRole|The possible values are: `Owner`, `Contributor`, `Reader`, `None`. Owner represents owner-level access to the notebook. Contributor represents read/write access to the notebook. Reader represents read-only access to the notebook. Read-only.|
 
 ## Relationships
 | Relationship | Type	|Description|

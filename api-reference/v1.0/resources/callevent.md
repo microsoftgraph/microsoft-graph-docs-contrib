@@ -20,7 +20,7 @@ None.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-| callEventType | callEventType| The event type of the call. Possible values are: `callStarted`, `callEnded`, `unknownFutureValue`, `rosterUpdated`. You must use the `Prefer: include-unknown-enum-members` request header to get the following members in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `rosterUpdated`.|
+| callEventType | callEventType| The event type of the call. The possible values are: `callStarted`, `callEnded`, `unknownFutureValue`, `rosterUpdated`. You must use the `Prefer: include-unknown-enum-members` request header to get the following members in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `rosterUpdated`.|
 | eventDateTime | DateTimeOffset | The date and time when the event occurred. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. |
 | id | String | The unique identifier for the call event. |
 

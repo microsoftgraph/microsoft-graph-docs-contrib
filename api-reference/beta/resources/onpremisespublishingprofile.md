@@ -31,7 +31,7 @@ Various Azure services (for example, Microsoft Entra Connect [Passthrough Authen
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |hybridAgentUpdaterConfiguration|[hybridAgentUpdaterConfiguration](hybridagentupdaterconfiguration.md)| Represents a **hybridAgentUpdaterConfiguration** object.|
-|id|String| Represents a publishing type. Possible values are: `applicationProxy`, `exchangeOnline`, `authentication`, `provisioning`, `adAdministration`. Read-only.|
+|id|String| Represents a publishing type. The possible values are: `applicationProxy`, `exchangeOnline`, `authentication`, `provisioning`, `adAdministration`. Read-only.|
 |isDefaultAccessEnabled|Boolean|Specifies whether default access for app proxy is enabled or disabled.|
 |isEnabled|Boolean| Represents if [Microsoft Entra application proxy](/entra/identity/app-proxy/) is enabled for the tenant. |
 

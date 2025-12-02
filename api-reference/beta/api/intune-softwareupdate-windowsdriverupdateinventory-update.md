@@ -58,8 +58,8 @@ The following table shows the properties that are required when you create the [
 |releaseDateTime|DateTimeOffset|The release date time of the driver.|
 |driverClass|String|The class of the driver.|
 |applicableDeviceCount|Int32|The number of devices for which this driver is applicable.|
-|approvalStatus|[driverApprovalStatus](../resources/intune-softwareupdate-driverapprovalstatus.md)|The approval status for this driver. Possible values are: `needsReview`, `declined`, `approved`, `suspended`.|
-|category|[driverCategory](../resources/intune-softwareupdate-drivercategory.md)|The category for this driver. Possible values are: `recommended`, `previouslyApproved`, `other`.|
+|approvalStatus|[driverApprovalStatus](../resources/intune-softwareupdate-driverapprovalstatus.md)|The approval status for this driver. The possible values are: `needsReview`, `declined`, `approved`, `suspended`.|
+|category|[driverCategory](../resources/intune-softwareupdate-drivercategory.md)|The category for this driver. The possible values are: `recommended`, `previouslyApproved`, `other`.|
 |deployDateTime|DateTimeOffset|The date time when a driver should be deployed if approvalStatus is approved.|
 
 

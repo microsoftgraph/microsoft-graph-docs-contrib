@@ -53,7 +53,7 @@ The following table shows the properties that are required when you create the d
 |:---|:---|:---|
 |id|String|Key of this setting within the policy which contains it. Automatically generated.|
 |gracePeriodHours|Int32|Number of hours to wait till the action will be enforced. Valid values 0 to 8760|
-|actionType|[deviceManagementComplianceActionType](../resources/intune-deviceconfigv2-devicemanagementcomplianceactiontype.md)|What action to take. Possible values are: `noAction`, `notification`, `block`, `retire`, `wipe`, `removeResourceAccessProfiles`, `pushNotification`, `remoteLock`.|
+|actionType|[deviceManagementComplianceActionType](../resources/intune-deviceconfigv2-devicemanagementcomplianceactiontype.md)|What action to take. The possible values are: `noAction`, `notification`, `block`, `retire`, `wipe`, `removeResourceAccessProfiles`, `pushNotification`, `remoteLock`.|
 |notificationTemplateId|String|What notification Message template to use|
 |notificationMessageCCList|String collection|A list of group IDs to speicify who to CC this notification message to. This collection can contain a maximum of 100 elements.|
 

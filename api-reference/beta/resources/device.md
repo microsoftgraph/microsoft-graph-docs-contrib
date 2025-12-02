@@ -67,12 +67,12 @@ This resource supports:
 |deviceCategory|String|User-defined property set by Intune to automatically add devices to groups and simplify managing devices.|
 |deviceId|String| Unique identifier set by Azure Device Registration Service at the time of registration. This ID is an alternate key that can be used to reference the device object. Also supports `$filter` (`eq`, `ne`, `not`, `startsWith`). |
 |deviceMetadata|String| For internal use only. Set to `null`. |
-|deviceOwnership|String|Ownership of the device. Intune sets this property. Possible values are: `unknown`, `company`, `personal`.|
+|deviceOwnership|String|Ownership of the device. Intune sets this property. The possible values are: `unknown`, `company`, `personal`.|
 |deviceVersion|Int32| For internal use only. |
 |displayName|String| The display name for the device. Maximum length is 256 characters. Required. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, and `eq` on `null` values), `$search`, and `$orderby`.  |
 |domainName|String|The on-premises domain name of Microsoft Entra hybrid joined devices. Intune sets this property.|
 |enrollmentProfileName|String|Enrollment profile applied to the device. For example, `Apple Device Enrollment Profile`, `Device enrollment - Corporate device identifiers`, or `Windows Autopilot profile name`. Intune sets this property.|
-|enrollmentType|String|Enrollment type of the device. Intune sets this property. Possible values are: `unknown`, `userEnrollment`, `deviceEnrollmentManager`, `appleBulkWithUser`, `appleBulkWithoutUser`, `windowsAzureADJoin`, `windowsBulkUserless`, `windowsAutoEnrollment`, `windowsBulkAzureDomainJoin`, `windowsCoManagement`, `windowsAzureADJoinUsingDeviceAuth`,`appleUserEnrollment`, `appleUserEnrollmentWithServiceAccount`. <br/><br/>**NOTE:** This property might return other values apart from those listed.|
+|enrollmentType|String|Enrollment type of the device. Intune sets this property. The possible values are: `unknown`, `userEnrollment`, `deviceEnrollmentManager`, `appleBulkWithUser`, `appleBulkWithoutUser`, `windowsAzureADJoin`, `windowsBulkUserless`, `windowsAutoEnrollment`, `windowsBulkAzureDomainJoin`, `windowsCoManagement`, `windowsAzureADJoinUsingDeviceAuth`,`appleUserEnrollment`, `appleUserEnrollmentWithServiceAccount`. <br/><br/>**NOTE:** This property might return other values apart from those listed.|
 | extensionAttributes | [onPremisesExtensionAttributes](onpremisesextensionattributes.md) | Contains extension attributes 1-15 for the device. The individual extension attributes aren't selectable. These properties are mastered in cloud and can be set during creation or update of a device object in Microsoft Entra ID. <br><br>Supports `$filter` (`eq`, `not`, `startsWith`, and `eq` on `null` values).|
 |hostnames|String collection| List of host names for the device.|
 |id|String|The unique identifier for the device. Inherited from [directoryObject](directoryobject.md). Key, Not nullable. Read-only. Supports `$filter` (`eq`, `ne`, `not`, `in`). |
@@ -81,7 +81,7 @@ This resource supports:
 |isManagementRestricted|Boolean|Indicates whether the device is a member of a restricted management administrative unit. If not set, the default value is `null` and the default behavior is false. Read-only. <br/><br/> To manage a device that's a member of a restricted management administrative unit, the administrator or calling app must be assigned a Microsoft Entra role at the scope of the restricted management administrative unit.|
 |isRooted|Boolean|`true` if the device is rooted or jail-broken. This property can only be updated by Intune.|
 |kind| String| Form factor of the device. Only returned if the user signs in with a Microsoft account as part of Project Rome. |
-|managementType|String|Management channel of the device. Intune sets this property. Possible values are: `eas`, `mdm`, `easMdm`, `intuneClient`, `easIntuneClient`, `configurationManagerClient`, `configurationManagerClientMdm`, `configurationManagerClientMdmEas`, `unknown`, `jamf`, `googleCloudDevicePolicyController`.|
+|managementType|String|Management channel of the device. Intune sets this property. The possible values are: `eas`, `mdm`, `easMdm`, `intuneClient`, `easIntuneClient`, `configurationManagerClient`, `configurationManagerClientMdm`, `configurationManagerClientMdmEas`, `unknown`, `jamf`, `googleCloudDevicePolicyController`.|
 |manufacturer| String| Manufacturer of the device. Read-only. |
 |mdmAppId|String|Application identifier used to register device into MDM. Read-only. Supports `$filter` (`eq`, `ne`, `not`, `startsWith`).|
 |model| String| Model of the device. Read-only. |

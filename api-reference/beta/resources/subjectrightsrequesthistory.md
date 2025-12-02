@@ -22,7 +22,7 @@ Represents the history for a subject rights request.
 |changedBy|[identitySet](../resources/identityset.md)|Identity of the user who changed the  subject rights request.|
 |eventDateTime|DateTimeOffset|Data and time when the entity was changed.|
 |stage|[subjectRightsRequestStage](../resources/subjectrightsrequeststage.md)|The stage when the entity was changed.|
-|stageStatus|subjectRightsRequestStageStatus|The status of the stage when the entity was changed. Possible values are: `notStarted`, `current`, `completed`, `failed`, `unknownFutureValue`.|
+|stageStatus|subjectRightsRequestStageStatus|The status of the stage when the entity was changed. The possible values are: `notStarted`, `current`, `completed`, `failed`, `unknownFutureValue`.|
 |type|String|Type of history.|
 
 ## Relationships
