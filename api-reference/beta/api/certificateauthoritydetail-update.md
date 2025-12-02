@@ -1,7 +1,7 @@
 ---
 title: "Update certificateAuthorityDetail"
 description: "Update the properties of a certificateAuthorityDetail object."
-author: "suawat"
+author: "vimrang"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
