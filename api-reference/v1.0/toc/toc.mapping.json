@@ -225,8 +225,22 @@
           "name": "Places",
           "resources": [
             "place",
+            "building",
+            "desk",
+            "floor",
             "room",
-            "roomList"
+            "roomList",
+            "section",
+            "workspace",
+            "checkInClaim"
+          ],
+          "complexTypes": [
+            "assignedPlaceMode",
+            "dropInPlaceMode",
+            "mailboxDetails",
+            "placeMode",
+            "reservablePlaceMode",
+            "resourceLink"
           ]
         }
       ]

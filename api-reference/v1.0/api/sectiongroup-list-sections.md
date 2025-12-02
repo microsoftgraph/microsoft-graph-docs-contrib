@@ -12,7 +12,7 @@ ms.date: 06/21/2024
 
 Namespace: microsoft.graph
 
-Retrieve a list of [onenoteSection](../resources/section.md) objects from the specified section group.
+Retrieve a list of [onenoteSection](../resources/onenotesection.md) objects from the specified section group.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -49,7 +49,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [onenoteSection](../resources/section.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [onenoteSection](../resources/onenotesection.md) objects in the response body.
 ## Example
 ##### Request
 The following example shows a request.

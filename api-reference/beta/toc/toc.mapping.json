@@ -299,10 +299,10 @@
             "assignedPlaceMode",
             "dropInPlaceMode",
             "mailboxDetails",
-            "unavailablePlaceMode",
             "placeMode",
             "reservablePlaceMode",
-            "resourceLink"
+            "resourceLink",
+            "unavailablePlaceMode"
           ],
            "childNodes": [
             {
