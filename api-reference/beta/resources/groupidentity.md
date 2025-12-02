@@ -22,7 +22,7 @@ Inherits from [identity](../resources/identity.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|The mail nick name, also known as group alias of the group-connected site. Inherited from [identity](../resources/identity.md).|
+|displayName|String|The display name of the identity. For drive items, the display name might not always be available or up to date. For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user don't show up as changed when using [delta](../api/driveitem-delta.md). Inherited from [identity](../resources/identity.md).|
 |id|String|Unique identifier for the identity. Inherited from [identity](../resources/identity.md).|
 |mailNickname|String|The mail nick name, also known as group alias of the group-connected site.|
 

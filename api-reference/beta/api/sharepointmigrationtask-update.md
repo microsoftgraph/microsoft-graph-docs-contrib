@@ -10,9 +10,9 @@ doc_type: apiPageType
 
 # Create or update sharePointMigrationTask
 
-Create or update a [sharePointMigrationTask](../resources/sharepointmigrationtask.md) to migrate a resource from the source organization to the target organization, using the crossOrganizationMigrationParameters. The resource can be a user, a group, or a site.
+Create or update a [sharePointMigrationTask](../resources/sharepointmigrationtask.md) to migrate a resource from the source organization to the target organization, using the sharePointMigrationTaskParameters. The resource can be a user, a group, or a site.
 
->**Note:** Based on the OData standard, the entire **sharePointMigrationTask** structure must be included in the request body, although only **crossOrganizationMigrationParameters** are used to instantiate the task. For required properties such as **id** and **status**, empty or default values can be provided because they're ignored during initial task creation.
+>**Note:** Based on the OData standard, the entire **sharePointMigrationTask** structure must be included in the request body, although only **sharePointMigrationTaskParameters** are used to instantiate the task. For required properties such as **id** and **status**, empty or default values can be provided because they're ignored during initial task creation.
 
 When an existing **sharePointMigrationTask** is retrieved, it might contain not only the specifics of the source and target organizations and resources, but also the status of the migration and errors encountered during the migration operation.
 
