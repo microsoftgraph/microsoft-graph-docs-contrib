@@ -1,5 +1,5 @@
 ---
-title: "user resource type - Microsoft Entra"
+title: "user resource type"
 description: "Represents a Microsoft Entra user account. Inherits from directoryObject."
 author: "yyuank"
 ms.reviewer: "iamut"
