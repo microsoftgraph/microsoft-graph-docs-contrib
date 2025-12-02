@@ -56,7 +56,7 @@ In the request body, supply a JSON representation of a [phoneAuthenticationMetho
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |phoneNumber|String|The phone number to text or call for authentication. Phone numbers use the format `+{country code} {number}x{extension}`, with extension optional. For example, `+1 5555551234` or `+1 5555551234x123` are valid. Numbers are rejected when creating or updating if they don't match the required format.|
-|phoneType|String|Possible values are: `mobile`, `alternateMobile`, and `office`.|
+|phoneType|String|The possible values are: `mobile`, `alternateMobile`, and `office`.|
 
 ## Response
 

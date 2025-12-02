@@ -12,15 +12,13 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-
-
 Represents the configuration of a web application firewall (WAF) provider in a Microsoft Entra External ID tenant. This abstract resource defines common properties for WAF providers integrated with Microsoft services.
 
 This resource is an abstract type from which the following WAF provider resources derive:
 - [akamaiWebApplicationFirewallProvider](../resources/akamaiwebapplicationfirewallprovider.md)
 - [cloudFlareWebApplicationFirewallProvider](../resources/cloudflarewebapplicationfirewallprovider.md)
-Inherits from [entity](../resources/entity.md).
 
+Inherits from [entity](../resources/entity.md).
 
 ## Methods
 |Method|Return type|Description|

@@ -62,7 +62,7 @@ The following table lists the properties you can change for a self-initiated lea
 |:---|:---|:---|
 |completedDateTime|DateTimeOffset|Date and time when the assignment was completed. Optional.|
 |completionPercentage|Int32|The percentage of the course completed by the user. If a value is provided, it must be between `0` and `100` (inclusive). Optional.|
-|status|courseStatus|The status of the course activity. Possible values are: `inProgress`, `completed`. Required.|
+|status|courseStatus|The status of the course activity. The possible values are: `inProgress`, `completed`. Required.|
 |startedDateTime|DateTimeOffset|The date and time when the learner started the self-initiated course.|
 
 

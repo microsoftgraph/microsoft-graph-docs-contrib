@@ -27,7 +27,7 @@ Represents details about the review status of a Cloud PC.
 |reviewStartDateTime|DateTimeOffset|The specific date and time when the Cloud PC was set to in review. The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC). For example, midnight UTC on Jan 1, 2014 appears as `2014-01-01T00:00:00Z`.|
 |subscriptionId|String|The ID of the Azure subscription in which the Cloud PC snapshot is being saved, in GUID format.|
 |subscriptionName|String|The name of the Azure subscription in which the Cloud PC snapshot is being saved.|
-|userAccessLevel|[cloudPcUserAccessLevel](#cloudpcuseraccesslevel-values)|The access level of the end user on the Cloud PC. Possible values are: `unrestricted`, `restricted`.|
+|userAccessLevel|[cloudPcUserAccessLevel](#cloudpcuseraccesslevel-values)|The access level of the end user on the Cloud PC. The possible values are: `unrestricted`, `restricted`.|
 |accessTier|[cloudPcBlobAccessTier](#cloudpcblobaccesstier-values)| The blob access tier of the Azure Storage account in which the Cloud PC snapshot is saved with. Possible values are `hot`, `cool`, `cold`, and `archive`, default value is `hot`.|
 
 ### cloudPcUserAccessLevel values

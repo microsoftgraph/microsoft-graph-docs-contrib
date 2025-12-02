@@ -56,12 +56,12 @@ The following table shows the properties that are required when you create the d
 |description|String|The description.|
 |createdDateTime|DateTimeOffset|The created date.|
 |dueDateTime|DateTimeOffset|The due date.|
-|category|[deviceAppManagementTaskCategory](../resources/intune-partnerintegration-deviceappmanagementtaskcategory.md)|The category. Possible values are: `unknown`, `advancedThreatProtection`.|
-|priority|[deviceAppManagementTaskPriority](../resources/intune-partnerintegration-deviceappmanagementtaskpriority.md)|The priority. Possible values are: `none`, `high`, `low`.|
+|category|[deviceAppManagementTaskCategory](../resources/intune-partnerintegration-deviceappmanagementtaskcategory.md)|The category. The possible values are: `unknown`, `advancedThreatProtection`.|
+|priority|[deviceAppManagementTaskPriority](../resources/intune-partnerintegration-deviceappmanagementtaskpriority.md)|The priority. The possible values are: `none`, `high`, `low`.|
 |creator|String|The email address of the creator.|
 |creatorNotes|String|Notes from the creator.|
 |assignedTo|String|The name or email of the admin this task is assigned to.|
-|status|[deviceAppManagementTaskStatus](../resources/intune-partnerintegration-deviceappmanagementtaskstatus.md)|The status. Possible values are: `unknown`, `pending`, `active`, `completed`, `rejected`.|
+|status|[deviceAppManagementTaskStatus](../resources/intune-partnerintegration-deviceappmanagementtaskstatus.md)|The status. The possible values are: `unknown`, `pending`, `active`, `completed`, `rejected`.|
 
 
 
