@@ -3,7 +3,7 @@ title: "Enum values"
 description: "Microsoft Graph enumeration values."
 ms.localizationpriority: medium
 ms.subservice: "non-product-specific"
-ms.date: 06/23/2025
+ms.date: 12/02/2025
 author: "MSGraphDocsvTeam"
 doc_type: enumPageType
 ms.custom: sfi-ropc-nochange
@@ -1180,15 +1180,6 @@ Namespace: microsoft.graph
 | external |
 | externalPartner |
 | externalNonPartner |
-
-### activityType values
-
-| Member |
-| ------------------ |
-| signin |
-| user |
-| unknownFutureValue |
-| servicePrincipal |
 
 ### riskDetectionTimingType values
 
@@ -2522,18 +2513,6 @@ Possible values for user account types (group membership), per Windows definitio
 | high |
 | critical |
 | unknownFutureValue |
-
-### subjectRightsRequestStage values
-
-| Member |
-| ------------------ |
-| contentRetrieval |
-| contentReview |
-| generateReport |
-| contentDeletion |
-| caseResolved |
-| unknownFutureValue |
-| approval |
 
 ### subjectRightsRequestStageStatus values
 
