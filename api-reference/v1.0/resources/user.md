@@ -10,7 +10,7 @@ ms.date: 01/10/2025
 ms.custom: sfi-ga-blocked
 ---
 
-# user resource type - Microsoft Entra
+# user resource type
 
 Namespace: microsoft.graph
 
