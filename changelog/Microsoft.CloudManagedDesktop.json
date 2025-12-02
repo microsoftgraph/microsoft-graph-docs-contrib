@@ -7,7 +7,7 @@
           "ApiChange": "Enum type",
           "ChangedApiName": "cloudPcReportName",
           "ChangeType": "Change",
-          "Description": "Added the `cloudPCInventoryReport` member to the **cloudPcReportName** enumeration type.",
+          "Description": "Added the `cloudPcInventoryReport` member to the **cloudPcReportName** enumeration type.",
           "Target": "cloudPcReportName"
         }
       ],
@@ -126,7 +126,7 @@
       "Id": "e5e9c350-a6b9-4e42-9e8f-7d14f2b82db8",
       "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2025-10-20T07:00:05.4340622Z",
+      "CreatedDateTime": "2025-12-02T07:00:05.4340622Z",
       "WorkloadArea": "Device and app management",
       "SubArea": "Cloud PC"
     },

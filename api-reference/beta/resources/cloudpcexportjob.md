@@ -79,7 +79,7 @@ Represents the export job for downloading a specified Cloud PC report.
 | cloudPcInsightReport                     | Indicates Cloud PC-level configuration data and troubleshooting data with insights, including client version, client operating system, host region, Teams media, error source, error code symbolic, and error message. |
 | regionalInaccessibleCloudPcTrendReport      | The weekly regional aggregated report of inaccessible Cloud PC trends.    |
 | cloudPcUsageCategoryReport | The usage category reports of Cloud PCs. |
-| cloudPCInventoryReport | The inventory of Cloud PC list. |
+| cloudPcInventoryReport | The inventory of Cloud PC list. |
 
 ## Relationships
 
