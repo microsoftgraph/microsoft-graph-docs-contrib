@@ -19,7 +19,7 @@ Delete a [place](../resources/place.md) object.
 You can also use this method to delete the following child object types: [building](../resources/building.md), [floor](../resources/floor.md), [section](../resources/section.md), or [desk](../resources/desk.md).
 
 > **Note:**
-> [room](../resources/room.md), [roomList](../resources/roomlist.md), and [workspace](../resources/workspace.md) can't be deleted.
+> [roomList](../resources/roomlist.md) can't be deleted.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
