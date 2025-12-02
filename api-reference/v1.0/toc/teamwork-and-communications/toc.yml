@@ -92,6 +92,10 @@ items:
   items:
   - name: Overview
     href: ../../resources/communications-api-overview.md
+  - name: Ad hoc call
+    items:
+    - name: Ad hoc call (preview)
+      href: ../../resources/adhoccall.md
   - name: Call events
     items:
     - name: Call event
@@ -256,10 +260,6 @@ items:
         href: ../../resources/addlargegalleryviewoperation.md
       - name: Get large gallery view operation status
         href: ../../api/addlargegalleryviewoperation-get.md
-  - name: Ad hoc calls
-    items:
-    - name: Ad hoc call (preview)
-      href: ../../resources/adhoccall.md
   - name: Online meetings
     items:
     - name: Meeting attendance report
@@ -309,11 +309,13 @@ items:
       - name: List
         href: ../../api/onlinemeeting-list-recordings.md
       - name: Get
-        items:
-        - name: Get delta by organizer
-          href: ../../api/callrecording-delta.md
-        - name: List recordings by organizer
-          href: ../../api/onlinemeeting-getallrecordings.md
+        href: ../../api/callrecording-get.md
+      - name: Get
+        href: ../../api/callrecording-get.md
+      - name: Get delta by organizer
+        href: ../../api/callrecording-delta.md
+      - name: List recordings by organizer
+        href: ../../api/onlinemeeting-getallrecordings.md
     - name: Call transcript
       items:
       - name: Call transcript
