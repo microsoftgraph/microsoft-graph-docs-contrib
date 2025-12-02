@@ -38,7 +38,7 @@ Inherits from [authenticationMethodConfiguration](../resources/authenticationmet
 |isAttestationEnforced|Boolean|Determines whether attestation must be enforced for FIDO2 passkey registration.|
 |isSelfServiceRegistrationAllowed|Boolean|Determines if users can register new FIDO2 passkeys.|
 |keyRestrictions|[fido2KeyRestrictions](../resources/fido2keyrestrictions.md)|Controls whether key restrictions are enforced on FIDO2 passkeys, either allowing or disallowing certain key types as defined by Authenticator Attestation GUID (AAGUID), an identifier that indicates the type (for example, make and model) of the authenticator.|
-|state|authenticationMethodState|Possible values are: `enabled`, `disabled`.|
+|state|authenticationMethodState|The possible values are: `enabled`, `disabled`.|
 
 ## Relationships
 |Relationship|Type|Description|

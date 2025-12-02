@@ -19,7 +19,7 @@ Represents the properties of the stages of a subject rights request.
 |:---|:---|:---|
 |error|[publicError](../resources/publicerror.md)|Describes the error, if any, for the current stage.|
 |stage|[subjectRightsRequestStage](../resources/subjectrightsrequeststage.md)|The stage of the subject rights request.|
-|status|subjectRightsRequestStageStatus|Status of the current stage. Possible values are: `notStarted`, `current`, `completed`, `failed`, `unknownFutureValue`.|
+|status|subjectRightsRequestStageStatus|Status of the current stage. The possible values are: `notStarted`, `current`, `completed`, `failed`, `unknownFutureValue`.|
 
 ## Relationships
 None.

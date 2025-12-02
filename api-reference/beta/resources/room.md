@@ -26,7 +26,7 @@ For the list of supported methods, see [place](./place.md).
 |:--|:--|:--|
 |address |[physicalAddress](./physicaladdress.md) |The physical address of the **room**, including the street, city, state, country or region, and postal code. Inherited from [place](../resources/place.md).|
 |audioDeviceName |String |The name of the audio device that is available in the **room**. |
-|bookingType |[bookingType](#bookingtype-values) |Specifies how the **room** can be booked. Possible values are:<ul><li>`unknown` - Unspecified booking behavior. We don't recommend that you use this value.</li><li>`standard` - Available for general booking.</li><li>`reserved` - Reserved for specific users or purposes.</li></ul> |
+|bookingType |[bookingType](#bookingtype-values) |Specifies how the **room** can be booked. The possible values are:<ul><li>`unknown` - Unspecified booking behavior. We don't recommend that you use this value.</li><li>`standard` - Available for general booking.</li><li>`reserved` - Reserved for specific users or purposes.</li></ul> |
 |building |String |The name or identifier of the [building](./building.md) where the **room** is located. |
 |capacity |Int32 |The maximum number of people the **room** can accommodate. |
 |displayDeviceName |String |The name of the display device (for example, `monitor` or `projector`) that is available in the **room**. |

@@ -21,7 +21,7 @@ The playPrompt operation to obtain the result of the playPrompt action.
 | clientContext       | String                      | Unique Client Context string. Max limit is 256 chars.                              |
 | id                  | String                      | Read-only.                                                                         |
 | resultInfo          | [resultInfo](resultinfo.md) | The result information. Read-only.                                |
-| status              | String                      | Possible values are: `notStarted`, `running`, `completed`, `failed`.               |
+| status              | String                      | The possible values are: `notStarted`, `running`, `completed`, `failed`.               |
 
 ## Relationships
 None

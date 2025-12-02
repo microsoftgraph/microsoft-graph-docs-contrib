@@ -19,7 +19,7 @@ Session control used to enforce cloud app security checks. Inehrits from [Condit
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|cloudAppSecurityType|cloudAppSecuritySessionControlType| Possible values are: `mcasConfigured`, `monitorOnly`, `blockDownloads`, `unknownFutureValue`. For more information, see [Deploy Conditional Access App Control for featured apps](/cloud-app-security/proxy-deployment-aad). |
+|cloudAppSecurityType|cloudAppSecuritySessionControlType| The possible values are: `mcasConfigured`, `monitorOnly`, `blockDownloads`, `unknownFutureValue`. For more information, see [Deploy Conditional Access App Control for featured apps](/cloud-app-security/proxy-deployment-aad). |
 |isEnabled     |Boolean      | Specifies whether the session control is enabled. |
 
 ## Relationships
