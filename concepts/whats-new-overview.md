@@ -44,7 +44,7 @@ Deleted security groups can now be restored from [deleted items](/graph/api/reso
 
 ### Identity and access | Identity and sign-in
 
-- Added the [webApplicationFirewallProvider](/resources/webapplicationfirewallprovider) and [webApplicationFirewallVerificationModel](/graph/api/resources/webapplicationfirewallverificationmodel) resource types and their associated APIs for configuring and managing Web Application Firewall providers and shield external-facing authentication endpoints from threats such as distributed denial of service (DDoS) attacks, OWASP Top-10 risks, malicious bots, and more. This feature is supported in Microsoft Entra External ID for external tenants.
+- Added the [webApplicationFirewallProvider](/graph/api/resources/webapplicationfirewallprovider) and [webApplicationFirewallVerificationModel](/graph/api/resources/webapplicationfirewallverificationmodel) resource types and their associated APIs for configuring and managing Web Application Firewall providers and shield external-facing authentication endpoints from threats such as distributed denial of service (DDoS) attacks, OWASP Top-10 risks, malicious bots, and more. This feature is supported in Microsoft Entra External ID for external tenants.
 - Added the [fraudProtectionProvider](/graph/api/resources/fraudprotectionprovider) resource type and its associated APIs to enbale integration with third-party fraud protection providers for sign-up fraud defense. This feature is part of Microsoft Entra Identity Protection capabilities in Microsoft Entra External ID for external tenants.
 
 ### Teamwork and communications | Calls and online meetings
