@@ -16,9 +16,15 @@ Namespace: microsoft.graph
 
 Get a [placeOperation](../resources/placeoperation.md) by ID.
 
-Operations are stored for 15 days after creation. After 15 days, the operation is deleted and can no longer be retrieved.
+## Data Retention
 
-This API is subject to throttling limits. Operation progress is updated approximately every 30 seconds, so you should not call this API more frequently than once per 30 seconds. The API enforces a rate limit of 1 call per second.
+- Completed operation results are retained for 15 days from creation.
+
+## API Level Throttling
+
+- This API has a throttling limit of 3 calls per second. 
+- The progress of long-running operations is updated every 30 seconds; therefore, there is no need to get an operation more frequently than once per 30 seconds.
+
 
 ## Permissions
 
@@ -62,9 +68,21 @@ Don't supply a request body for this method.
 
 If successful, this function returns a `200 OK` response code and a [placeOperation](../resources/placeoperation.md) object in the response body.
 
+### Response structure
+
+The operation response mirrors the hierarchical structure of the request payload:
+
+- Each top-level place in the request appears as a top-level entry in the `details` array
+- The hierarchy specified using `children@delta` in the request is preserved in the `children` array of the response
+- Successfully created or updated places are returned in the `succeededPlace` property
+- Any errors encountered during processing are returned in the `error` property
+- The `progress` object provides summary counts of total, succeeded, and failed places across the entire operation
+
 ## Examples
 
-### Example 1: Get a successfully completed operation
+### Example 1: Get a succeeded operation
+
+This example demonstrates the operation response for the bulk upsert request shown in [Example 1 of the bulk upsert API](place-patch-places.md#example-1-mixed-create-and-update-operations). The response structure mirrors the request hierarchy, with each top-level place from the request appearing in the `details` array and child places nested in the `children` arrays.
 
 #### Request
 
@@ -108,8 +126,7 @@ Content-Type: application/json
 						"@odata.type": "#microsoft.graph.floor",
 						"id": "5f54d496-7328-415a-930e-990be3a98766",
 						"displayName": "Demo Floor 1",
-						"parentId": "25e5905a-7fee-4f36-ba31-29e85c14bf18",
-						"isWheelChairAccessible": false
+						"parentId": "25e5905a-7fee-4f36-ba31-29e85c14bf18"
 					}
 				}
 			],
@@ -117,7 +134,6 @@ Content-Type: application/json
 				"@odata.type": "#microsoft.graph.building",
 				"id": "25e5905a-7fee-4f36-ba31-29e85c14bf18",
 				"displayName": "Demo Building A",
-				"isWheelChairAccessible": false,
 				"hasWiFi": true,
 				"wifiState": "enabled"
 			}
@@ -134,8 +150,6 @@ Content-Type: application/json
 										"id": "211ffb37-e880-475a-b73a-43f484609536",
 										"displayName": "desk1",
 										"parentId": "f5b54c22-5474-47aa-878a-0bfdc72e30f1",
-										"isWheelChairAccessible": false,
-										"heightAdjustableState": "unknown",
 										"mode": {
 											"@odata.type": "#microsoft.graph.unavailablePlaceMode",
 											"reason": "New"
@@ -149,12 +163,8 @@ Content-Type: application/json
 										"placeId": "9112a87a-7994-4f73-9037-0939ef1c7d55",
 										"displayName": "Demo Room 1",
 										"parentId": "f5b54c22-5474-47aa-878a-0bfdc72e30f1",
-										"isWheelChairAccessible": false,
 										"emailAddress": "DemoRoom19975d7971764579926925@a830edad9050849gxpstcaadhoc.onmicrosoft.com",
-										"nickname": "Demo Room 1",
-										"capacity": 0,
-										"isTeamsEnabled": false,
-										"teamsEnabledState": "unknown"
+										"nickname": "Demo Room 1"
 									}
 								}
 							],
@@ -162,8 +172,7 @@ Content-Type: application/json
 								"@odata.type": "#microsoft.graph.section",
 								"id": "f5b54c22-5474-47aa-878a-0bfdc72e30f1",
 								"displayName": "Demo Section A",
-								"parentId": "23bfdc52-59d6-419d-ab18-54a51fe060f6",
-								"isWheelChairAccessible": false
+								"parentId": "23bfdc52-59d6-419d-ab18-54a51fe060f6"
 							}
 						}
 					],
@@ -171,18 +180,14 @@ Content-Type: application/json
 						"@odata.type": "#microsoft.graph.floor",
 						"id": "23bfdc52-59d6-419d-ab18-54a51fe060f6",
 						"displayName": "Demo Floor 1",
-						"parentId": "15369a66-e9f4-4803-8e7e-fa6b811fbd92",
-						"isWheelChairAccessible": false
+						"parentId": "15369a66-e9f4-4803-8e7e-fa6b811fbd92"
 					}
 				}
 			],
 			"succeededPlace": {
 				"@odata.type": "#microsoft.graph.building",
 				"id": "15369a66-e9f4-4803-8e7e-fa6b811fbd92",
-				"displayName": "Demo Building B",
-				"isWheelChairAccessible": false,
-				"hasWiFi": false,
-				"wifiState": "unknown"
+				"displayName": "Demo Building B"
 			}
 		},
 		{
@@ -192,10 +197,8 @@ Content-Type: application/json
 				"placeId": "ebbc6ed0-8fda-41d2-9d07-c0f990337515",
 				"displayName": "Demo Workspace 1",
 				"parentId": "2cb2701d-0896-4c69-91bb-582d82d7c68c",
-				"isWheelChairAccessible": false,
 				"emailAddress": "DemoWorkspace1bb13cf171764579932835@a830edad9050849gxpstcaadhoc.onmicrosoft.com",
 				"nickname": "Demo Workspace 1",
-				"capacity": 0,
 				"mode": {
 					"@odata.type": "#microsoft.graph.reservablePlaceMode"
 				}
@@ -210,8 +213,7 @@ Content-Type: application/json
 				"tags": [
 					"test",
 					"test1"
-				],
-				"isWheelChairAccessible": false
+				]
 			}
 		}
 	]
@@ -234,7 +236,7 @@ GET https://graph.microsoft.com/beta/places/getOperation(id='116d12e4-3361-43f9-
 
 #### Response
 
-The following example shows the response. The error indicates that one child of "Demo Building 1" failed to be created because a place with the same name, type, parentId, and address already exists.
+The following example shows the response with `partiallySucceeded`. The operation partially succeeded with 1 place created and 2 places failed. One child of "Demo Building 3" failed to be created because a place with the same name, type, parentId, and address already exists. Additionally, one top-level place failed for the same reason.
 
 <!-- {
   "blockType": "response",
@@ -248,122 +250,39 @@ Content-Type: application/json
 
 {
 	"@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.placeOperation",
-	"id": "116d12e4-3361-43f9-b722-af5b510760c9",
+	"id": "15cc23bd-f215-42bf-92ad-bb84fbcd6606",
 	"status": "partiallySucceeded",
 	"progress": {
-		"totalPlaceCount": 9,
-		"succeededPlaceCount": 8,
-		"failedPlaceCount": 1
+		"totalPlaceCount": 3,
+		"succeededPlaceCount": 1,
+		"failedPlaceCount": 2
 	},
 	"details": [
 		{
+			"error": null,
 			"children": [
 				{
 					"error": {
 						"code": "BadRequest",
 						"message": "A Place with the same name, type, parentId and address already exists with ID 94eb964a-b166-4f0a-953d-54dc9032d9d5."
-					}
+					},
+					"children": [],
+					"succeededPlace": null
 				}
 			],
 			"succeededPlace": {
 				"@odata.type": "#microsoft.graph.building",
 				"id": "25e5905a-7fee-4f36-ba31-29e85c14bf18",
-				"displayName": "Demo Building 1",
-				"isWheelChairAccessible": false,
-				"hasWiFi": true,
-				"wifiState": "enabled"
+				"displayName": "Demo Building 3"
 			}
 		},
 		{
-			"children": [
-				{
-					"children": [
-						{
-							"children": [
-								{
-									"succeededPlace": {
-										"@odata.type": "#microsoft.graph.desk",
-										"id": "211ffb37-e880-475a-b73a-43f484609536",
-										"displayName": "desk1",
-										"parentId": "c802c24c-7ac4-4f91-9357-dde2e8b0ce62",
-										"isWheelChairAccessible": false,
-										"heightAdjustableState": "unknown",
-										"mode": {
-											"@odata.type": "#microsoft.graph.unavailablePlaceMode",
-											"reason": "New"
-										}
-									}
-								},
-								{
-									"succeededPlace": {
-										"@odata.type": "#microsoft.graph.room",
-										"id": "4a008786-bb35-4bf1-85c7-0a15b174f2e7",
-										"placeId": "8f417a8a-b7b8-4986-b379-f3ee10d88d35",
-										"displayName": "Room 1",
-										"parentId": "c802c24c-7ac4-4f91-9357-dde2e8b0ce62",
-										"isWheelChairAccessible": false,
-										"emailAddress": "Room15a15bcef1764578891632@a830edad9050849gxpstcaadhoc.onmicrosoft.com",
-										"nickname": "Room 1",
-										"capacity": 0,
-										"isTeamsEnabled": false,
-										"teamsEnabledState": "unknown"
-									}
-								}
-							],
-							"succeededPlace": {
-								"@odata.type": "#microsoft.graph.section",
-								"id": "c802c24c-7ac4-4f91-9357-dde2e8b0ce62",
-								"displayName": "Section A",
-								"parentId": "550470a8-a866-458a-a4f6-c1c71ed5ae46",
-								"isWheelChairAccessible": false
-							}
-						}
-					],
-					"succeededPlace": {
-						"@odata.type": "#microsoft.graph.floor",
-						"id": "550470a8-a866-458a-a4f6-c1c71ed5ae46",
-						"displayName": "F2",
-						"parentId": "2081cd7a-bd3d-40ed-899b-9b2754c4d9b0",
-						"isWheelChairAccessible": false
-					}
-				}
-			],
-			"succeededPlace": {
-				"@odata.type": "#microsoft.graph.building",
-				"id": "2081cd7a-bd3d-40ed-899b-9b2754c4d9b0",
-				"displayName": "Demo Building 2",
-				"isWheelChairAccessible": false,
-				"hasWiFi": false,
-				"wifiState": "unknown"
-			}
-		},
-		{
-			"succeededPlace": {
-				"@odata.type": "#microsoft.graph.workspace",
-				"id": "b215ceaa-7218-4a7b-a556-03514f52cf74",
-				"placeId": "4ca349b2-e2ca-4eee-aeee-ca2c4d11ff74",
-				"displayName": "Workspace 1",
-				"parentId": "2cb2701d-0896-4c69-91bb-582d82d7c68c",
-				"isWheelChairAccessible": false,
-				"emailAddress": "Workspace1522d34ef1764578899704@a830edad9050849gxpstcaadhoc.onmicrosoft.com",
-				"nickname": "Workspace 1",
-				"capacity": 0,
-				"mode": {
-					"@odata.type": "#microsoft.graph.reservablePlaceMode"
-				}
-			}
-		},
-		{
-			"succeededPlace": {
-				"@odata.type": "#microsoft.graph.section",
-				"id": "2cb2701d-0896-4c69-91bb-582d82d7c68c",
-				"displayName": "s1",
-				"parentId": "94eb964a-b166-4f0a-953d-54dc9032d9d5",
-				"tags": [
-					"test"
-				],
-				"isWheelChairAccessible": false
-			}
+			"error": {
+				"code": "BadRequest",
+				"message": "A Place with the same name, type, parentId and address already exists with ID 4ca349b2-e2ca-4eee-aeee-ca2c4d11ff74."
+			},
+			"children": [],
+			"succeededPlace": null
 		}
 	]
 }

@@ -16,9 +16,14 @@ Namespace: microsoft.graph
 
 List all existing [placeOperation](../resources/placeoperation.md) objects. This API doesn't return operation details.
 
-Operations are stored for 15 days after creation. After 15 days, the operation is deleted and can no longer be retrieved.
+## Data Retention
 
-This API is subject to throttling limits. Operation progress is updated approximately every 30 seconds, so you should not call this API more frequently than once per 30 seconds. The API enforces a rate limit of 1 call per second.
+- Completed operation results are retained for 15 days from creation.
+
+## API Level Throttling
+
+- This API has a throttling limit of 3 calls per second. 
+- The progress of long-running operations is updated every 30 seconds; therefore, there is no need to get an operation more frequently than once per 30 seconds.
 
 ## Permissions
 
@@ -86,15 +91,25 @@ Content-Type: application/json
 {
   "value": [
     {
-        "@odata.type": "#microsoft.graph.placeOperation",
-        "id": "35842361-d2dd-479f-9f4d-8889a4b0d317",
-        "status": "succeeded",
-        "progress": {
-            "totalPlaceCount": 2,
-            "succeededPlaceCount": 2,
-            "failedPlaceCount": 0
-        }
-    }
+			"id": "15cc23bd-f215-42bf-92ad-bb84fbcd6606",
+			"status": "partiallySucceeded",
+			"progress": {
+				"totalPlaceCount": 3,
+				"succeededPlaceCount": 1,
+				"failedPlaceCount": 2
+			},
+			"details": []
+		},
+		{
+			"id": "0f5d3cc5-d1bd-4cba-9b0e-e9ad68527ab5",
+			"status": "succeeded",
+			"progress": {
+				"totalPlaceCount": 9,
+				"succeededPlaceCount": 9,
+				"failedPlaceCount": 0
+			},
+			"details": []
+		},
   ]
 }
 ```
