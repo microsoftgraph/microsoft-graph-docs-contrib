@@ -20,10 +20,9 @@ The SharePoint cross-tenant migration APIs enable organizations to manage the ta
 
 The migration process involves four key steps using the following operations:
 
-1. The SharePoint cross-tenant migration APIs enable organizations to manage identity mappings during tenant-to-tenant migrations. These APIs map user and group identities between source and target organizations.
-2. Create a [sharePointMigrationTask](sharePointmigrationtask.md) to migrate a resource from the source organization to the target organization.
-3. Get the **sharePointMigrationTask** that was previously created, using the ID, **sourceUserPrincipalName**, **sourceSiteUrl**, or **sourceGroupObjectId** of the task.
-4. Cancel the migration task queued for processing.
+1. Create a [sharePointMigrationTask](sharePointmigrationtask.md) to migrate a resource from the source organization to the target organization.
+2. Get the **sharePointMigrationTask** that was previously created, using the ID, **sourceUserPrincipalName**, **sourceSiteUrl**, or **sourceGroupObjectId** of the task.
+3. Cancel the migration task queued for processing.
 
 ## Common use cases
 
