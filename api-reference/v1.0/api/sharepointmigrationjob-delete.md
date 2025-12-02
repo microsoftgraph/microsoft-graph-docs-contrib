@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Delete an existing [sharePointMigrationJob](../resources/sharepointmigrationjob.md) object from a [fileStorageContainer](../resources/filestoragecontainer.md).
 
-[!INCLUDE [national-cloud-support](../../includes/global-china.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
