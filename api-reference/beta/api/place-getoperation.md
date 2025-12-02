@@ -18,7 +18,7 @@ Get a [placeOperation](../resources/placeoperation.md) by ID.
 
 ## Data Retention
 
-- Completed operation results are retained for 15 days from creation.
+- Operation results are retained for 15 days from creation.
 
 ## API Level Throttling
 
@@ -68,21 +68,20 @@ Don't supply a request body for this method.
 
 If successful, this function returns a `200 OK` response code and a [placeOperation](../resources/placeoperation.md) object in the response body.
 
-### Response structure
+### Operation details structure
 
-The operation response mirrors the hierarchical structure of the request payload:
+The operation details in response mirrors the hierarchical structure of the request payload:
 
 - Each top-level place in the request appears as a top-level entry in the `details` array
 - The hierarchy specified using `children@delta` in the request is preserved in the `children` array of the response
 - Successfully created or updated places are returned in the `succeededPlace` property
 - Any errors encountered during processing are returned in the `error` property
-- The `progress` object provides summary counts of total, succeeded, and failed places across the entire operation
 
 ## Examples
 
 ### Example 1: Get a succeeded operation
 
-This example demonstrates the operation response for the bulk upsert request shown in [Example 1 of the bulk upsert API](place-patch-places.md#example-1-mixed-create-and-update-operations). The response structure mirrors the request hierarchy, with each top-level place from the request appearing in the `details` array and child places nested in the `children` arrays.
+This example demonstrates the operation response for the bulk upsert request shown in [Example of the bulk upsert API](place-patch-places.md#example-mixed-create-and-update-operations). The response structure mirrors the request hierarchy, with each top-level place from the request appearing in the `details` array and child places nested in the `children` arrays.
 
 #### Request
 
@@ -163,8 +162,7 @@ Content-Type: application/json
 										"placeId": "9112a87a-7994-4f73-9037-0939ef1c7d55",
 										"displayName": "Demo Room 1",
 										"parentId": "f5b54c22-5474-47aa-878a-0bfdc72e30f1",
-										"emailAddress": "DemoRoom19975d7971764579926925@a830edad9050849gxpstcaadhoc.onmicrosoft.com",
-										"nickname": "Demo Room 1"
+										"emailAddress": "DemoRoom19975d7971764579926925@a830edad9050849gxpstcaadhoc.onmicrosoft.com"
 									}
 								}
 							],
@@ -197,8 +195,7 @@ Content-Type: application/json
 				"placeId": "ebbc6ed0-8fda-41d2-9d07-c0f990337515",
 				"displayName": "Demo Workspace 1",
 				"parentId": "2cb2701d-0896-4c69-91bb-582d82d7c68c",
-				"emailAddress": "DemoWorkspace1bb13cf171764579932835@a830edad9050849gxpstcaadhoc.onmicrosoft.com",
-				"nickname": "Demo Workspace 1",
+				"emailAddress": "DemoWorkspace1bb13cf171764579932835@a830edad9050849gxpstcaadhoc.onmicrosoft.com"
 				"mode": {
 					"@odata.type": "#microsoft.graph.reservablePlaceMode"
 				}
@@ -211,8 +208,8 @@ Content-Type: application/json
 				"displayName": "s1",
 				"parentId": "94eb964a-b166-4f0a-953d-54dc9032d9d5",
 				"tags": [
-					"test",
-					"test1"
+					"Working Section",
+					"CVP"
 				]
 			}
 		}
@@ -279,10 +276,8 @@ Content-Type: application/json
 		{
 			"error": {
 				"code": "BadRequest",
-				"message": "A Place with the same name, type, parentId and address already exists with ID 4ca349b2-e2ca-4eee-aeee-ca2c4d11ff74."
-			},
-			"children": [],
-			"succeededPlace": null
+				"message": "AssignedPerson identity should not be null."
+			}
 		}
 	]
 }

@@ -16,26 +16,28 @@ Namespace: microsoft.graph
 
 Bulk upsert places in async mode.
 
-All requests require the `OData-Version: 4.01` header.
+> **Note:**
+> All requests require the `OData-Version: 4.01` header.
 
-## Supported Scenarios
+## Supported scenarios
 
-The following scenarios are supported:
-- Bulk create: Create multiple new places in a single request
-- Bulk update: Update multiple existing places in a single request
-- Hierarchical operations: Create or update places with parent-child relationships using the `children@delta` property. `parentId` are automatically assigned for child places created within a parent structure.
-- Hierarchical updates: Move existing places to different parents, including newly created parents. `parentId` are automatically updated.
-- Mixed operations: Combine create and update operations in one request
+This API supports the following operations:
 
-## Operation Types
+- Create multiple new places in a single request.
+- Update multiple existing places in a single request.
+- Create or update places with parent-child relationships using the `children@delta` property. The `parentId` property is automatically assigned for child places created within a parent structure.
+- Move existing places to different parents, including newly created parents. The `parentId` property is automatically updated.
 
-- **Create**: Places without an `id` field are treated as create operations
-- **Update**: Places with an `id` field are treated as update operations
-- **Hierarchical operations**: Use the `children@delta` property to create or update child places within a parent place.
+## Understand request payload
+
+The request payload structure supports two key concepts:
+
+1. **Create vs. Update operations**: Places without an `id` property are treated as create operations, while places with an `id` property are treated as update operations.
+2. **Place hierarchy**: Use the `children@delta` property to create or update child places within a parent place. The `parentId` property is automatically assigned or updated for child places.
 
 ## Data Retention
 
-- Completed operation results are retained for 15 days from creation.
+- Operation results are retained for 15 days from creation.
 
 ## Job-level Concurrency
 
@@ -45,7 +47,6 @@ The following scenarios are supported:
 ## API Level Throttling
 
 - This API has a throttling limit of 3 calls per second. 
-- The progress of long-running operations is updated every 30 seconds; therefore, there is no need to get an operation more frequently than once per 30 seconds.
 
 ## Permissions
 
@@ -86,16 +87,14 @@ The same properties can be specified as when you [create](../api/place-post.md) 
 
 If successful, this method returns a `202 Accepted` response code and an operation ID in the `Location` response header that you can use to [get](../api/place-getoperation.md) the operation.
 
-## Examples
-
-### Example 1: Mixed create and update operations
+## Example: mixed create and update operations
 
 #### Request
 
-The following example shows a request that combines create and update operations:
+The following example combines all supported scenarios:
 
 1. Update an existing building to set the display name to "Demo Building A" and enable Wi-Fi and create a new floor "Demo Floor 1" as a child of the updated building
-2. Create a new building "Demo Building B" with a child floor "Demo Floor 1", which contains a new section "Demo Section A" with a new room "Demo Room 1" and an existing desk
+2. Create a new building "Demo Building B" with a child floor "Demo Floor 1", which contains a new section "Demo Section A" with an existing desk and a new room "Demo Room 1"
 3. Create a new workspace with reservable mode under an existing parent
 4. Update an existing section to add a tag "test1"
 

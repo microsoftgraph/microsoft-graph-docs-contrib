@@ -18,12 +18,11 @@ List all existing [placeOperation](../resources/placeoperation.md) objects. This
 
 ## Data Retention
 
-- Completed operation results are retained for 15 days from creation.
+- Operation results are retained for 15 days from creation.
 
 ## API Level Throttling
 
 - This API has a throttling limit of 3 calls per second. 
-- The progress of long-running operations is updated every 30 seconds; therefore, there is no need to get an operation more frequently than once per 30 seconds.
 
 ## Permissions
 
@@ -97,8 +96,7 @@ Content-Type: application/json
 				"totalPlaceCount": 3,
 				"succeededPlaceCount": 1,
 				"failedPlaceCount": 2
-			},
-			"details": []
+			}
 		},
 		{
 			"id": "0f5d3cc5-d1bd-4cba-9b0e-e9ad68527ab5",
@@ -107,8 +105,7 @@ Content-Type: application/json
 				"totalPlaceCount": 9,
 				"succeededPlaceCount": 9,
 				"failedPlaceCount": 0
-			},
-			"details": []
+			}
 		},
   ]
 }
