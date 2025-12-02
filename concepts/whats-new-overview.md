@@ -44,7 +44,7 @@ Use resource-specific consent (RSC) permissions for virtual events. For more inf
 
 ### Identity and access | Governance
 
-- Added the [userInactivityTrigger](../api-reference/v1.0/resources/identitygovernance-userinactivitytrigger.md) resource to support automatic triggering of access reviews based on user inactivity.
+- Added the [userInactivityTrigger](../api-reference/beta/resources/identitygovernance-userinactivitytrigger.md) resource to support automatic triggering of access reviews based on user inactivity.
 
 ## November 2025: New in preview only
 
@@ -82,7 +82,7 @@ Added the **riskFactors** and **riskScore** properties to the [applicationTempla
 ### Identity and access | Governance
 
 - Added the [customDataProvidedResource](/graph/api/resources/customdataprovidedresource?view=graph-rest-beta&preserve-view=true) resource to support user-centric access reviews.
-- Added the **administrationScopeTargets** relationship to the [workflowBase](../api-reference/v1.0/resources/identitygovernance-workflowbase.md) resource and its derived types to support scoping lifecycle workflows to specific administrative units.
+- Added the **administrationScopeTargets** relationship to the [workflowBase](../api-reference/beta/resources/identitygovernance-workflowbase.md) resource and its derived types to support scoping lifecycle workflows to specific administrative units.
 
 ### Identity and access | Identity and sign-in
 
@@ -164,7 +164,7 @@ Use the following new endpoints to enable the management of work location for a 
 
 ### Teamwork and communications | Calls and online meetings
 
-- Use the [adhocCall](../api-reference/v1.0/resources/adhoccall.md) resource to subscribe to transcripts and recordings at the tenant level, for a specific call, or per user. For more information, see [Get change notifications for transcripts and recordings using Microsoft Graph](/graph/teams-changenotifications-callrecording-and-calltranscript).
+- Use the [adhocCall](../api-reference/beta/resources/adhoccall.md) resource to subscribe to transcripts and recordings at the tenant level, for a specific call, or per user. For more information, see [Get change notifications for transcripts and recordings using Microsoft Graph](/graph/teams-changenotifications-callrecording-and-calltranscript).
 
 ## October 2025: New and generally available
 

@@ -1,5 +1,5 @@
 ---
-title: "user resource type"
+title: "user resource type - Microsoft Entra"
 description: "Represents a Microsoft Entra user account. Inherits from directoryObject."
 author: "yyuank"
 ms.reviewer: "iamut"
@@ -10,7 +10,7 @@ ms.date: 01/10/2025
 ms.custom: sfi-ga-blocked
 ---
 
-# user resource type
+# user resource type - Microsoft Entra
 
 Namespace: microsoft.graph
 
