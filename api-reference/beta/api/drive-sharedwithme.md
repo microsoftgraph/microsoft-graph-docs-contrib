@@ -71,14 +71,8 @@ The following example gets a collection of [driveItem](../resources/driveitem.md
 The following example shows a request.
 
 # [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "get_driveItems_shared_with_me"
-}
--->
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/me/drive/sharedWithMe
-```
+[!INCLUDE [sample-code](../includes/snippets/http/get-driveitems-shared-with-me-http-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-driveitems-shared-with-me-csharp-snippets.md)]

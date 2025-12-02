@@ -47,11 +47,8 @@ This method returns a collection of [DriveItem](../resources/driveitem.md) resou
 The following example shows a request.
 
 # [HTTP](#tab/http)
-<!-- { "blockType": "request", "name": "view-recent-files" } -->
-
-```msgraph-interactive
-GET /me/drive/recent
-```
+[!INCLUDE [sample-code](../includes/snippets/http/view-recent-files-http-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/view-recent-files-csharp-snippets.md)]
