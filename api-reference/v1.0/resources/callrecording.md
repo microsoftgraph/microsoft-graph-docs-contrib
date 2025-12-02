@@ -5,7 +5,7 @@ author: "v-sdhakshina"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: resourcePageType
-ms.date: 11/05/2025
+ms.date: 12/02/2025
 ---
 
 # callRecording resource type

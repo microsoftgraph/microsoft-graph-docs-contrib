@@ -2,7 +2,7 @@
 title: "adhocCall resource type"
 description: "Represents an ad hoc call, including PSTN calls, one-to-one calls, and group calls."
 author: "kanchm"
-ms.date: 11/06/2025
+ms.date: 12/02/2025
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: resourcePageType

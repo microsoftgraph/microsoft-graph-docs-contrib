@@ -5,7 +5,7 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 author: "bkeerthivasa"
 ms.subservice: "teams"
-ms.date: 10/31/2025
+ms.date: 12/02/2025
 ---
 
 # callRecording: delta
