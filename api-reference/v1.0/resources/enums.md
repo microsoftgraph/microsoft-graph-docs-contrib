@@ -3734,3 +3734,23 @@ Possible values for user account types (group membership), per Windows definitio
 |:---|
 |url|
 |unknownFutureValue|
+
+### workLocationSource values 
+
+|Member|
+|:---|
+|none|
+|manual|
+|scheduled|
+|automatic|
+|unknownFutureValue|
+
+### workLocationType values
+
+|Member|
+|:---|
+|unspecified|
+|office|
+|remote|
+|timeOff|
+|unknownFutureValue|

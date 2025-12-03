@@ -1,5 +1,79 @@
 {
   "changelog": [
+        {
+      "ChangeList": [
+        {
+          "Id": "16233155-22b1-43c8-bc48-1546a2b8ce31",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "workLocationSource",
+          "ChangeType": "Addition",
+          "Description": "Added the **workLocationSource** enumeration type.",
+          "Target": "workLocationSource"
+        },
+        {
+          "Id": "16233155-22b1-43c8-bc48-1546a2b8ce31",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "workLocationType",
+          "ChangeType": "Addition",
+          "Description": "Added the **workLocationType** enumeration type.",
+          "Target": "workLocationType"
+        },
+        {
+          "Id": "16233155-22b1-43c8-bc48-1546a2b8ce31",
+          "ApiChange": "Resource",
+          "ChangedApiName": "userWorkLocation",
+          "ChangeType": "Addition",
+          "Description": "Added the [userWorkLocation](https://learn.microsoft.com/en-us/graph/api/resources/userWorkLocation?view=graph-rest-1.0) resource.",
+          "Target": "userWorkLocation"
+        },
+        {
+          "Id": "16233155-22b1-43c8-bc48-1546a2b8ce31",
+          "ApiChange": "Property",
+          "ChangedApiName": "workLocation",
+          "ChangeType": "Addition",
+          "Description": "Added the **workLocation** property to the [presence](https://learn.microsoft.com/en-us/graph/api/resources/presence?view=graph-rest-1.0) resource.",
+          "Target": "presence"
+        },
+        {
+          "Id": "16233155-22b1-43c8-bc48-1546a2b8ce31",
+          "ApiChange": "Method",
+          "ChangedApiName": "clearAutomaticLocation",
+          "ChangeType": "Addition",
+          "Description": "Added the [clearAutomaticLocation](https://learn.microsoft.com/en-us/graph/api/presence-clearAutomaticLocation?view=graph-rest-1.0) method to the [presence](https://learn.microsoft.com/en-us/graph/api/resources/presence?view=graph-rest-1.0) resource.",
+          "Target": "presence"
+        },
+        {
+          "Id": "16233155-22b1-43c8-bc48-1546a2b8ce31",
+          "ApiChange": "Method",
+          "ChangedApiName": "clearLocation",
+          "ChangeType": "Addition",
+          "Description": "Added the [clearLocation](https://learn.microsoft.com/en-us/graph/api/presence-clearLocation?view=graph-rest-1.0) method to the [presence](https://learn.microsoft.com/en-us/graph/api/resources/presence?view=graph-rest-1.0) resource.",
+          "Target": "presence"
+        },
+        {
+          "Id": "16233155-22b1-43c8-bc48-1546a2b8ce31",
+          "ApiChange": "Method",
+          "ChangedApiName": "setAutomaticLocation",
+          "ChangeType": "Addition",
+          "Description": "Added the [setAutomaticLocation](https://learn.microsoft.com/en-us/graph/api/presence-setAutomaticLocation?view=graph-rest-1.0) method to the [presence](https://learn.microsoft.com/en-us/graph/api/resources/presence?view=graph-rest-1.0) resource.",
+          "Target": "presence"
+        },
+        {
+          "Id": "16233155-22b1-43c8-bc48-1546a2b8ce31",
+          "ApiChange": "Method",
+          "ChangedApiName": "setManualLocation",
+          "ChangeType": "Addition",
+          "Description": "Added the [setManualLocation](https://learn.microsoft.com/en-us/graph/api/presence-setManualLocation?view=graph-rest-1.0) method to the [presence](https://learn.microsoft.com/en-us/graph/api/resources/presence?view=graph-rest-1.0) resource.",
+          "Target": "presence"
+        }
+      ],
+      "Id": "16233155-22b1-43c8-bc48-1546a2b8ce31",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-11-25T16:02:03.2817806Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+    },
     {
       "ChangeList": [
         {
