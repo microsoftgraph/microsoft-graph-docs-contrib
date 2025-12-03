@@ -77,9 +77,9 @@ In the request body, supply the values for relevant fields that should be update
 |officeLocation|String|The location of the contact's office.|
 |parentFolderId|String|The ID of the contact's parent folder.|
 |personalNotes|String|The user's notes about the contact.|
-|primaryEmailAddress|[emailAddress](../resources/emailaddress.md)|The primary email address of the contact. Optional.|
 |phones |[phone](../resources/phone.md) collection |Phone numbers associated with the contact, for example, home phone, mobile phone, and business phone. |
 |postalAddresses |[physicalAddress](../resources/physicaladdress.md) collection |Addresses associated with the contact, for example, home address and business address. |
+|primaryEmailAddress|[emailAddress](../resources/emailaddress.md)|The primary email address of the contact. Optional.|
 |profession|String|The contact's profession.|
 |secondaryEmailAddress|[emailAddress](../resources/emailaddress.md)|The secondary email address of the contact. Optional.|
 |spouseName|String|The name of the contact's spouse/partner.|
