@@ -7,7 +7,7 @@
           "ApiChange": "Enum type",
           "ChangedApiName": "cloudPcReportName",
           "ChangeType": "Change",
-          "Description": "Added the `cloudPcInventoryReport` member to the **cloudPcReportName** enumeration type.",
+          "Description": "Added the `cloudPCInventoryReport` member to the **cloudPcReportName** enumeration type.",
           "Target": "cloudPcReportName"
         }
       ],
