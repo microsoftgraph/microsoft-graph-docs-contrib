@@ -16,13 +16,10 @@ Namespace: microsoft.graph
 
 List all existing [placeOperation](../resources/placeoperation.md) objects. This API doesn't return operation details.
 
-## Data Retention
-
-- Operations are retained for 15 days from creation.
-
-## API Level Throttling
-
-- This API has a throttling limit of three calls per second. 
+>[!NOTE]
+>The following aspects apply when you work with this API:
+>- Operations are retained for 15 days from creation.
+>- This API has a throttling limit of three calls per second. For more information, see [Microsoft Graph service-specific throttling limits](/graph/throttling-limits).
 
 ## Permissions
 
