@@ -24,14 +24,14 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ### Permissions for an application
 
-<!-- { "blockType": "permissions", "name": "federatedidentitycredentials_post" } -->
-[!INCLUDE [permissions-table](../includes/permissions/federatedidentitycredentials-post-permissions.md)]
+<!-- { "blockType": "permissions", "name": "federatedidentitycredential_post" } -->
+[!INCLUDE [permissions-table](../includes/permissions/federatedidentitycredential-post-permissions.md)]
 
 [!INCLUDE [rbac-apps-serviceprincipal-creds-apis](../includes/rbac-for-apis/rbac-apps-serviceprincipal-creds-apis.md)]
 
 ### Permissions for an agentIdentityBlueprint
-<!-- { "blockType": "permissions", "name": "federatedidentitycredentials_post_2" } -->
-[!INCLUDE [permissions-table](../includes/permissions/federatedidentitycredentials-post-2-permissions.md)]
+<!-- { "blockType": "permissions", "name": "federatedidentitycredential_post_2" } -->
+[!INCLUDE [permissions-table](../includes/permissions/federatedidentitycredential-post-2-permissions.md)]
 
 [!INCLUDE [rbac-agentid-apis-write](../includes/rbac-for-apis/rbac-agentid-apis-write.md)]
 

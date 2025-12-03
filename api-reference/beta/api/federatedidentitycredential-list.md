@@ -1,5 +1,5 @@
 ---
-title: "List federatedIdentityCredentials"
+title: "List federatedIdentityCredential objects"
 description: "Get a list of the federatedIdentityCredential objects and their properties assigned to an application or an agentIdentityBlueprint."
 author: "nickludwig"
 ms.localizationpriority: medium
@@ -8,7 +8,7 @@ doc_type: apiPageType
 ms.date: 12/03/2025
 ---
 
-# List federatedIdentityCredentials
+# List federatedIdentityCredential objects
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -22,14 +22,14 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ### Permissions for an application
 
-<!-- { "blockType": "permissions", "name": "federatedidentitycredentials_list" } -->
-[!INCLUDE [permissions-table](../includes/permissions/federatedidentitycredentials-list-permissions.md)]
+<!-- { "blockType": "permissions", "name": "federatedidentitycredential_list" } -->
+[!INCLUDE [permissions-table](../includes/permissions/federatedidentitycredential-list-permissions.md)]
 
 [!INCLUDE [rbac-apps-serviceprincipal-creds-apis](../includes/rbac-for-apis/rbac-apps-serviceprincipal-creds-apis.md)]
 
 ### Permissions for an agentIdentityBlueprint
-<!-- { "blockType": "permissions", "name": "federatedidentitycredentials_list_2" } -->
-[!INCLUDE [permissions-table](../includes/permissions/federatedidentitycredentials-list-2-permissions.md)]
+<!-- { "blockType": "permissions", "name": "federatedidentitycredential_list_2" } -->
+[!INCLUDE [permissions-table](../includes/permissions/federatedidentitycredential-list-2-permissions.md)]
 
 [!INCLUDE [rbac-agentid-apis-write](../includes/rbac-for-apis/rbac-agentid-apis-write.md)]
 
