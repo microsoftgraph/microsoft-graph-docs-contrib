@@ -106,36 +106,7 @@ Add the details of your app registration to the project.
 
 1. Create a file in the **GraphAppOnlyTutorial** directory named **Settings.cs** and add the following code.
 
-    ```csharp
-    using Microsoft.Extensions.Configuration;
-
-    namespace GraphAppOnlyTutorial;
-
-    public class Settings
-    {
-        public string? ClientId { get; set; }
-
-        public string? ClientSecret { get; set; }
-
-        public string? TenantId { get; set; }
-
-        public static Settings LoadSettings()
-        {
-            // Load settings
-            IConfiguration config = new ConfigurationBuilder()
-                /* appsettings.json is required */
-                .AddJsonFile("appsettings.json", optional: false)
-                /* appsettings.Development.json" is optional, values override appsettings.json */
-                .AddJsonFile($"appsettings.Development.json", optional: true)
-                /* User secrets are optional, values override both JSON files */
-                .AddUserSecrets<Program>()
-                .Build();
-
-            return config.GetRequiredSection("Settings").Get<Settings>() ??
-                throw new Exception("Could not load app settings. See README for configuration instructions.");
-        }
-    }
-    ```
+    :::code language="csharp" source="includes/dotnet/src/app-auth/GraphAppOnlyTutorial/Settings.cs" id="SettingsSnippet":::
 
 ## Design the app
 
@@ -143,60 +114,7 @@ Create a console-based menu.
 
 1. Open **./Program.cs** and replace its entire contents with the following code.
 
-    ```csharp
-    using GraphAppOnlyTutorial;
-
-    Console.WriteLine(".NET Graph App-only Tutorial\n");
-
-    var settings = Settings.LoadSettings();
-
-    // Initialize Graph
-    InitializeGraph(settings);
-
-    int choice = -1;
-
-    while (choice != 0)
-    {
-        Console.WriteLine("Please choose one of the following options:");
-        Console.WriteLine("0. Exit");
-        Console.WriteLine("1. Display access token");
-        Console.WriteLine("2. List users");
-        Console.WriteLine("3. Make a Graph call");
-
-        try
-        {
-            choice = int.Parse(Console.ReadLine() ?? string.Empty);
-        }
-        catch (System.FormatException)
-        {
-            // Set to invalid value
-            choice = -1;
-        }
-
-        switch (choice)
-        {
-            case 0:
-                // Exit the program
-                Console.WriteLine("Goodbye...");
-                break;
-            case 1:
-                // Display access token
-                await DisplayAccessTokenAsync();
-                break;
-            case 2:
-                // List users
-                await ListUsersAsync();
-                break;
-            case 3:
-                // Run any Graph code
-                await MakeGraphCallAsync();
-                break;
-            default:
-                Console.WriteLine("Invalid choice! Please try again.");
-                break;
-        }
-    }
-    ```
+    :::code language="csharp" source="includes/dotnet/src/app-auth/GraphAppOnlyTutorial/Program.cs" id="ProgramSnippet":::
 
 1. Add the following placeholder methods at the end of the file. You implement them in later steps.
 
