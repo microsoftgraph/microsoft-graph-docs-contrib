@@ -13,7 +13,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the total number of transactions and the number of blocked transactions, grouped by traffic type.
+Get the total number of transactions and the number of blocked transactions in [Global Secure Access](../resources/networkaccess-global-secure-access-api-overview.md), grouped by traffic type.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 

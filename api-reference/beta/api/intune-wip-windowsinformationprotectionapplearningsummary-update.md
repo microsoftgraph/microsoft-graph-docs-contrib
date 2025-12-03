@@ -53,7 +53,7 @@ The following table shows the properties that are required when you create the [
 |:---|:---|:---|
 |id|String|Unique Identifier for the WindowsInformationProtectionAppLearningSummary.|
 |applicationName|String|Application Name|
-|applicationType|[applicationType](../resources/intune-wip-applicationtype.md)|Application Type. Possible values are: `universal`, `desktop`.|
+|applicationType|[applicationType](../resources/intune-wip-applicationtype.md)|Application Type. The possible values are: `universal`, `desktop`.|
 |deviceCount|Int32|Device Count|
 
 

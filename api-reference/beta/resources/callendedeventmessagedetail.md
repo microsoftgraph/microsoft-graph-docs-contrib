@@ -24,7 +24,7 @@ Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |callDuration|Duration|Duration of the call.|
-|callEventType|teamworkCallEventType|Represents the call event type. Possible values are: `call`, `meeting`, `screenShare`, `unknownFutureValue`.|
+|callEventType|teamworkCallEventType|Represents the call event type. The possible values are: `call`, `meeting`, `screenShare`, `unknownFutureValue`.|
 |callId|String|Unique identifier of the call.|
 |callParticipants|[callParticipantInfo](../resources/callparticipantinfo.md) collection|List of call participants.|
 |initiator|[identitySet](../resources/identityset.md)|Initiator of the event.|

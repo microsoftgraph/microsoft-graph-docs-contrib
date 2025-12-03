@@ -21,7 +21,7 @@ Represents the registration count and status for users in your tenant.
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 | registrationCount | Int64 | Provides the registration count for your tenant. |
-| registrationStatus | String | Represents the status of user registration. Possible values are: `registered`, `enabled`, `capable`, and `mfaRegistered`. |
+| registrationStatus | String | Represents the status of user registration. The possible values are: `registered`, `enabled`, `capable`, and `mfaRegistered`. |
 
 ## JSON representation
 

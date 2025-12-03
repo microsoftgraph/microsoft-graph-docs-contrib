@@ -19,7 +19,7 @@ Represents target resource types associated with audit activity.
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |displayName|String|Indicates the visible name defined for the resource. Typically specified when the resource is created.|
-|groupType|groupType|When **type** is set to `Group`, this indicates the group type. Possible values are: `unifiedGroups`, `azureAD`, and `unknownFutureValue`|
+|groupType|groupType|When **type** is set to `Group`, this indicates the group type. The possible values are: `unifiedGroups`, `azureAD`, and `unknownFutureValue`|
 |id|String|Indicates the unique ID of the resource.|
 |modifiedProperties|[modifiedProperty](modifiedproperty.md) collection|Indicates name, old value and new value of each attribute that changed. Property values depend on the operation **type**.|
 |type|String|Describes the resource type.  Example values include `Application`, `Group`, `ServicePrincipal`, and `User`.|

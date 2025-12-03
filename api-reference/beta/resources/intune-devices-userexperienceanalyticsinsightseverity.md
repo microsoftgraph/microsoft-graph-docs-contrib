@@ -1,6 +1,6 @@
 ---
 title: "userExperienceAnalyticsInsightSeverity enum type"
-description: "Indicates severity of insights. Possible values are: None, Informational, Warning, Error."
+description: "Indicates severity of insights. The possible values are: None, Informational, Warning, Error."
 author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Indicates severity of insights. Possible values are: None, Informational, Warning, Error.
+Indicates severity of insights. The possible values are: None, Informational, Warning, Error.
 
 ## Members
 |Member|Value|Description|
