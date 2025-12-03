@@ -288,13 +288,13 @@
             "place",
             "building",
             "checkInClaim",
-            "desk",
-            "floor",
             "placeOperation",
-            "room",
-            "roomList",
+            "floor",
             "section",
-            "workspace"
+            "workspace",
+            "desk",
+            "room",
+            "roomList"
           ],
           "complexTypes": [
             "assignedPlaceMode",
