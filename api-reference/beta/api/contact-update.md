@@ -64,9 +64,6 @@ In the request body, supply the values for relevant fields that should be update
 |department|String|The contact's department.|
 |displayName|String|The contact's display name. Note that later updates to other properties may cause an automatically generated value to overwrite the displayName value you have specified. To preserve a pre-existing value, always include it as displayName in an update operation.|
 |emailAddresses|[typedEmailAddress](../resources/typedemailaddress.md) collection|The contact's email addresses.|
-|primaryEmailAddress|[emailAddress](../resources/emailaddress.md)|The primary email address of the contact. Optional.|
-|secondaryEmailAddress|[emailAddress](../resources/emailaddress.md)|The secondary email address of the contact. Optional.|
-|tertiaryEmailAddress|[emailAddress](../resources/emailaddress.md)|The tertiary email address of the contact. Optional.|
 |fileAs|String|The name the contact is filed under.|
 |gender |String |The contact's gender. |
 |generation|String|The contact's generation.|
@@ -80,11 +77,14 @@ In the request body, supply the values for relevant fields that should be update
 |officeLocation|String|The location of the contact's office.|
 |parentFolderId|String|The ID of the contact's parent folder.|
 |personalNotes|String|The user's notes about the contact.|
+|primaryEmailAddress|[emailAddress](../resources/emailaddress.md)|The primary email address of the contact. Optional.|
 |phones |[phone](../resources/phone.md) collection |Phone numbers associated with the contact, for example, home phone, mobile phone, and business phone. |
 |postalAddresses |[physicalAddress](../resources/physicaladdress.md) collection |Addresses associated with the contact, for example, home address and business address. |
 |profession|String|The contact's profession.|
+|secondaryEmailAddress|[emailAddress](../resources/emailaddress.md)|The secondary email address of the contact. Optional.|
 |spouseName|String|The name of the contact's spouse/partner.|
 |surname|String|The contact's surname.|
+|tertiaryEmailAddress|[emailAddress](../resources/emailaddress.md)|The tertiary email address of the contact. Optional.|
 |title|String|The contact's title.|
 |websites |[website](../resources/website.md) collection|Web sites associated with the contact. |
 |weddingAnniversary |Date |The contact's wedding anniversary. |
@@ -99,7 +99,7 @@ add, update, or delete your own app-specific data in custom properties of an ext
 
 If successful, this method returns a `200 OK` response code and updated [contact](../resources/contact.md) object in the response body.
 ## Example
-##### Request
+### Request
 The following example updates the personal email address of the specified contact.
 
 # [HTTP](#tab/http)
@@ -159,8 +159,9 @@ Content-type: application/json
 
 ---
 
-##### Response
-The following example shows the response. Note: The response object shown here might be shortened for readability.
+### Response
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
