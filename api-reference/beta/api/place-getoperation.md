@@ -22,8 +22,8 @@ Get a [placeOperation](../resources/placeoperation.md) by ID.
 
 ## API Level Throttling
 
-- This API has a throttling limit of 3 calls per second. 
-- The progress of long-running operations is updated every 30 seconds; therefore, there is no need to get an operation more frequently than once per 30 seconds.
+- This API has a throttling limit of three calls per second. 
+- The progress of long-running operations is updated as every 30 seconds; therefore, there's no need to get an operation more frequently than once per 30 seconds.
 
 
 ## Permissions
@@ -70,7 +70,7 @@ If successful, this function returns a `200 OK` response code and a [placeOperat
 
 ### Operation details structure
 
-The operation details in response mirrors the hierarchical structure of the request payload:
+The operation details in response mirror the hierarchical structure of the request payload:
 
 - Each top-level place in the request appears as a top-level entry in the `details` array
 - The hierarchy specified using `children@delta` in the request is preserved in the `children` array of the response
@@ -234,7 +234,7 @@ GET https://graph.microsoft.com/beta/places/getOperation(id='116d12e4-3361-43f9-
 
 #### Response
 
-The following example shows the response with `partiallySucceeded`. The operation partially succeeded with 1 place created and 2 places failed. One child of "Demo Building 3" failed to be created because a place with the same name, type, parentId, and address already exists. Additionally, one top-level place failed for another reason.
+The following example shows the response with `partiallySucceeded`. The operation partially succeeded with one place created and two places failed. One child of "Demo Building 3" failed to be created because a place with the same name, type, parentId, and address already exists. Additionally, one top-level place failed for another reason.
 
 <!-- {
   "blockType": "response",

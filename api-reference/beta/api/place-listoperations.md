@@ -22,7 +22,7 @@ List all existing [placeOperation](../resources/placeoperation.md) objects. This
 
 ## API Level Throttling
 
-- This API has a throttling limit of 3 calls per second. 
+- This API has a throttling limit of three calls per second. 
 
 ## Permissions
 

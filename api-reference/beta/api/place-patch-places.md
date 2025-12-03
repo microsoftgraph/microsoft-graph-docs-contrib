@@ -42,12 +42,12 @@ The request payload structure supports two key concepts:
 
 ## Job-level Concurrency
 
-- Only 3 concurrent bulk upsert operations are allowed at the tenant level.
-- If there are already 3 operations created or in progress, another PATCH API call is rejected with a `429 Too Many Requests` status code
+- Only three concurrent bulk upsert operations are allowed at the tenant level.
+- If there are already three operations created or in progress, another PATCH API call is rejected with a `429 Too Many Requests` status code
 
 ## API Level Throttling
 
-- This API has a throttling limit of 3 calls per second. 
+- This API has a throttling limit of three calls per second. 
 
 ## Permissions
 
