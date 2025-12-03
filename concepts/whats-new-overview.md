@@ -18,6 +18,12 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 > [!IMPORTANT]
 > Features in _preview_ status are subject to change without notice, and might not be promoted to generally available (GA) status. Don't use preview features in production apps.
 
+## December 2025: New and generally available
+
+### Files
+
+Use the **deleted** property on [listItem](/graph/api/resources/listitem) to indicate that the item was deleted when it appears in the result of a delta enumeration.
+
 ## November 2025: New and generally available
 
 ### Backup storage
