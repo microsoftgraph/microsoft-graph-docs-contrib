@@ -302,18 +302,24 @@ items:
       href: ../../resources/building.md
     - name: Ingest map file
       href: ../../api/building-ingestmapfile.md
-  - name: Check-in claim (preview)
+  - name: Floor
+    href: ../../resources/floor.md
+  - name: Section
+    href: ../../resources/section.md
+  - name: Room
+    href: ../../resources/room.md
+  - name: Desk
+    href: ../../resources/desk.md
+  - name: Workspace
+    href: ../../resources/workspace.md
+  - name: Check-in claim
     items:
-    - name: Check-in claim (preview)
+    - name: Check-in claim
       href: ../../resources/checkinclaim.md
     - name: Create
       href: ../../api/place-post-checkins.md
     - name: Get
       href: ../../api/checkinclaim-get.md
-  - name: Desk
-    href: ../../resources/desk.md
-  - name: Floor
-    href: ../../resources/floor.md
   - name: Place operation
     items:
     - name: Place operation
@@ -322,8 +328,6 @@ items:
       href: ../../api/place-listoperations.md
     - name: Get
       href: ../../api/place-getoperation.md
-  - name: Room
-    href: ../../resources/room.md
   - name: Room list
     items:
     - name: Room list
@@ -334,10 +338,6 @@ items:
       href: ../../api/place-get.md
     - name: Update place
       href: ../../api/place-update.md
-  - name: Section
-    href: ../../resources/section.md
-  - name: Workspace
-    href: ../../resources/workspace.md
   - name: Devices (preview)
     items:
     - name: Workplace sensor device
