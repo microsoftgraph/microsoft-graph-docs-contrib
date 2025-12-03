@@ -992,13 +992,13 @@ Enabled the **description**, **displayName**, **resolvingComment**, and **severi
 
 ### Teamwork and communications | Calls and online meetings
 
-- Use the following new methods for virtual events that are of the [virtualEventTownhall](/graph/api/resources/virtualeventtownhall&preserve-view=true) type:
-  - [List](/graph/api/virtualeventsroot-list-townhalls&preserve-view=true) all virtual event town halls created in a tenant.
-  - [Get](/graph/api/virtualeventtownhall-getbyuseridandrole&preserve-view=true) the virtual event town halls where a specified user is an organizer or coorganizer.
-  - [Get](/graph/api/virtualeventtownhall-getbyuserrole&preserve-view=true) the virtual event town halls where the signed-in user is an organizer or coorganizer.
-- [Link](/graph/api/virtualevent-setexternaleventinformation&preserve-view=true) external event information to a [virtualEventTownhall](/graph/api/resources/virtualeventtownhall&preserve-view=true) or [virtualEventWebinar](/graph/api/resources/virtualeventwebinar&preserve-view=true) by setting an **externalEventId**.
-- Use the **externalEventInformation** on [virtualEventTownhall](/graph/api/resources/virtualeventtownhall&preserve-view=true) and [virtualEventWebinar](/graph/api/resources/virtualeventwebinar&preserve-view=true) to identify the external event information of a virtual event.
-- Use the **externalRegistrationInformation** property on [virtualEventRegistration](/graph/api/resources/virtualeventregistration&preserve-view=true) to get or set the external information for a virtual event registration.
+- Use the following new methods for virtual events that are of the [virtualEventTownhall](/graph/api/resources/virtualeventtownhall) type:
+  - [List](/graph/api/virtualeventsroot-list-townhalls) all virtual event town halls created in a tenant.
+  - [Get](/graph/api/virtualeventtownhall-getbyuseridandrole) the virtual event town halls where a specified user is an organizer or coorganizer.
+  - [Get](/graph/api/virtualeventtownhall-getbyuserrole) the virtual event town halls where the signed-in user is an organizer or coorganizer.
+- [Link](/graph/api/virtualevent-setexternaleventinformation) external event information to a [virtualEventTownhall](/graph/api/resources/virtualeventtownhall) or [virtualEventWebinar](/graph/api/resources/virtualeventwebinar) by setting an **externalEventId**.
+- Use the **externalEventInformation** on [virtualEventTownhall](/graph/api/resources/virtualeventtownhall) and [virtualEventWebinar](/graph/api/resources/virtualeventwebinar) to identify the external event information of a virtual event.
+- Use the **externalRegistrationInformation** property on [virtualEventRegistration](/graph/api/resources/virtualeventregistration) to get or set the external information for a virtual event registration.
 
 ### Teamwork and communications | Shift management
 
@@ -2051,7 +2051,7 @@ For details, see the [related changelog section](https://developer.microsoft.com
 Pricing updates for the Teams meeting APIs apply starting January 1, 2024. For more information, see [Payment models and licensing requirements for Microsoft Teams APIs](/graph/teams-licenses#payment-requirements-for-meeting-apis).
 
 ### Teamwork and communications | Calls and online meetings
-Manage change notifications for virtual events using the [Create](/graph/api/subscription-post-subscriptions&preserve-view=true), [Get](/graph/api/subscription-get&preserve-view=true), [Update](/graph/api/subscription-update&preserve-view=true), and [Delete](/graph/api/subscription-delete&preserve-view=true) operations of the [subscription](/graph/api/resources/subscription&preserve-view=true) resource.
+Manage change notifications for virtual events using the [Create](/graph/api/subscription-post-subscriptions), [Get](/graph/api/subscription-get), [Update](/graph/api/subscription-update), and [Delete](/graph/api/subscription-delete) operations of the [subscription](/graph/api/resources/subscription) resource.
 
 ## December 2023: New in preview only
 
@@ -4580,7 +4580,7 @@ Production apps can now subscribe to lifecycle notifications of Outlook [message
 - GA of lifecycle notifications for Teams [chatMessage](/graph/api/resources/chatmessage) resources, to [reduce missing subscriptions and change notifications](change-notifications-lifecycle-events.md).
 
 ### To-do tasks
-GA of the [Microsoft To Do API](/graph/api/resources/todo-overview&preserve-view=true) - use the to-do API in a production app to create and manage tasks that are part of a user's workflow, such as creating a task off an email.
+GA of the [Microsoft To Do API](/graph/api/resources/todo-overview) - use the to-do API in a production app to create and manage tasks that are part of a user's workflow, such as creating a task off an email.
 
 ### Users
 Get new properties applicable to a [user](/graph/api/resources/user) who is corporate employee: hire date, organizational association such as division and cost center, and employee type such as consultant, contractor, or vendor. These properties require specifying the `$select` OData query parameter in the GET operation.
@@ -4781,7 +4781,7 @@ Get [content hosted in a chat message](/graph/api/resources/chatmessagehostedcon
 ## July 2020: New and generally available
 
 ### Calendar
-GA of the feature that allows organizers to allow alternate meeting time proposals, and invitees to [propose new times for a meeting](outlook-calendar-meeting-proposals.md) when they [tentatively accept](/graph/api/event-tentativelyaccept&preserve-view=true&preserve-view=true) or [decline](/graph/api/event-decline&preserve-view=true&preserve-view=true) an event.
+GA of the feature that allows organizers to allow alternate meeting time proposals, and invitees to [propose new times for a meeting](outlook-calendar-meeting-proposals.md) when they [tentatively accept](/graph/api/event-tentativelyaccept&preserve-view=true) or [decline](/graph/api/event-decline&preserve-view=true) an event.
 
 ### Change notifications
 Removed the erroneously introduced **sequenceNumber** property from the [changeNotification](/graph/api/resources/changenotification) resource.
@@ -4856,8 +4856,8 @@ Access the SharePoint [term store](/graph/api/resources/termstore-store?view=gra
 ## June 2020: New and generally available
 
 ### Cloud communications | Online meeting
-- Use the `Accept-Language` HTTP header when [creating an online meeting](/graph/api/application-post-onlinemeetings&preserve-view=true&preserve-view=true) to provide locale-based join information.
-- Use [createOrGet](/graph/api/onlinemeeting-createorget&preserve-view=true&preserve-view=true) to return an online meeting that has a specified **externalId** value, or create one if none already exists, to streamline embedding the resultant meeting in a third-party calendar.
+- Use the `Accept-Language` HTTP header when [creating an online meeting](/graph/api/application-post-onlinemeetings&preserve-view=true) to provide locale-based join information.
+- Use [createOrGet](/graph/api/onlinemeeting-createorget&preserve-view=true) to return an online meeting that has a specified **externalId** value, or create one if none already exists, to streamline embedding the resultant meeting in a third-party calendar.
 
 ### Files
 - Enhanced synchronization support:
@@ -4876,16 +4876,16 @@ Use application permissions `Group.Read.All` and `Group.ReadWrite.All` to get gr
 - GA of two sets of API for [identity protection](/graph/api/resources/identityprotectionroot): [risk detection](/graph/api/resources/riskdetection) and [risky user](/graph/api/resources/riskyuser) APIs.
 
 ### Security
-- Track the following as properties of an [alert](/graph/api/resources/alert&preserve-view=true&preserve-view=true):
+- Track the following as properties of an [alert](/graph/api/resources/alert&preserve-view=true):
   - IDs of incidents related to the alert.
-  - Identify a [resource](/graph/api/resources/securityResource&preserve-view=true#securityresourcetype-values) as attacked or as a related resource in the alert.
-  - Specify the source and destination locations of a [network connection](/graph/api/resources/networkconnection&preserve-view=true) related to the alert.
+  - Identify a [resource](/graph/api/resources/securityResource#securityresourcetype-values) as attacked or as a related resource in the alert.
+  - Specify the source and destination locations of a [network connection](/graph/api/resources/networkconnection) related to the alert.
 
 ### Sites and lists
 Specify geolocation data in a [column definition](/graph/api/resources/columndefinition) for a SharePoint [list](/graph/api/resources/list) resource.
 
 ### Teamwork
-- Use the delegated permission AppCatalog.Read.All to list [apps](/graph/api/resources/teamsapp&preserve-view=true) from the Microsoft Teams app catalog.
+- Use the delegated permission AppCatalog.Read.All to list [apps](/graph/api/resources/teamsapp) from the Microsoft Teams app catalog.
 - [Get information about the folder](/graph/api/channel-get-filesfolder) that maps to the **Files** tab of a Teams [channel](/graph/api/resources/channel).
 - [Get the default channel](/graph/api/team-get-primarychannel), labelled as **General**, of a [team](/graph/api/resources/team).
 
@@ -4958,7 +4958,7 @@ GA of the [places API](/graph/api/resources/place) in v1.0 - use this API in pro
 - Subscribe to change notifications in Microsoft Cloud for US Government.
 
 ### Cloud communications | Call records
-- GA of the [call records API](/graph/api/resources/callrecords-api-overview&preserve-view=true) - use the [callRecord](/graph/api/resources/callrecords-callrecord) resource to get the metadata of calls and online meetings on Microsoft Teams and Skype.
+- GA of the [call records API](/graph/api/resources/callrecords-api-overview) - use the [callRecord](/graph/api/resources/callrecords-callrecord) resource to get the metadata of calls and online meetings on Microsoft Teams and Skype.
 - Subscribe to [change notifications](./change-notifications-overview.md) for changes to all **callRecord** resources in an organization.
 - [List sessions](/graph/api/callrecords-callrecord-list-sessions) in a **callRecord**, and optionally [expand each session to list segments](/graph/api/callrecords-callrecord-list-sessions#example-2-get-session-list-with-segments) in the call record.
 - Support for 60-GHz (`frequency60GHz`) and `unknownFutureValue` WiFi band values of a media endpoint in a segment.
@@ -4975,12 +4975,12 @@ Use the many new features of [Graph Explorer](https://developer.microsoft.com/en
 See [New Graph Explorer is now GA](https://developer.microsoft.com/graph/blogs/new-graph-explorer-is-now-ga/) for more details.
 
 ### Groups
-- Synchronizing on-premises directory to Azure Active Directory via Azure AD Connect now returns the **onPremisesDomainName**, **onPremisesNetBiosName** and **onPremisesSamAccountName** properties as part of the [group](/graph/api/resources/group&preserve-view=true) resource.
+- Synchronizing on-premises directory to Azure Active Directory via Azure AD Connect now returns the **onPremisesDomainName**, **onPremisesNetBiosName** and **onPremisesSamAccountName** properties as part of the [group](/graph/api/resources/group) resource.
 - Subscribe to change notifications for [group](/graph/api/resources/group) resources in Microsoft Cloud China operated by 21Vianet.
 
 ### Identity and access
-- GA of the service principals API in v1.0 - use the [servicePrincipal](/graph/api/resources/serviceprincipal&preserve-view=true) resource in production apps to programmatically manage instances of applications and control what an application can do within your tenant. You can control who can use an application, what resources the application has access to, such as adding password credentials, rolling expiring certificates, and managing delegated permission grants and application role assignments.
-- GA of the [appRoleAssignment](/graph/api/resources/appRoleAssignment&preserve-view=true) API, which records the assignment of an [appRole](/graph/api/resources/approle&preserve-view=true) (representing the `roles` claim in ID tokens and access tokens) to a [user](/graph/api/resources/user&preserve-view=true), [group](/graph/api/resources/group&preserve-view=true), or [servicePrincipal](/graph/api/resources/serviceprincipal&preserve-view=true).
+- GA of the service principals API in v1.0 - use the [servicePrincipal](/graph/api/resources/serviceprincipal) resource in production apps to programmatically manage instances of applications and control what an application can do within your tenant. You can control who can use an application, what resources the application has access to, such as adding password credentials, rolling expiring certificates, and managing delegated permission grants and application role assignments.
+- GA of the [appRoleAssignment](/graph/api/resources/appRoleAssignment) API, which records the assignment of an [appRole](/graph/api/resources/approle) (representing the `roles` claim in ID tokens and access tokens) to a [user](/graph/api/resources/user), [group](/graph/api/resources/group), or [servicePrincipal](/graph/api/resources/serviceprincipal).
 - Use Facebook as an identity provider on Azure Active Directory.
 - Use the delegated or application permission of `AppRoleAssignment.ReadWrite.All` to allow an app to manage grants for application permissions to any API (including Microsoft Graph) and application assignments for any app, respectively with or without the signed-in user.
 
@@ -4994,15 +4994,15 @@ See new SDK guidance on the following:
 
 ### Teamwork
 - If your scenario involves online meetings on Teams, see new guidance on [how to choose](choose-online-meeting-api.md) between the [calendar API](outlook-calendar-online-meetings.md) and [cloud communications API](cloud-communications-online-meetings.md) to create and join online meetings.
-- [Send](/graph/api/channel-post-messages&preserve-view=true) and [reply](/graph/api/channel-post-messagereply&preserve-view=true) to messages in a [channel](/graph/api/resources/channel&preserve-view=true).
-- Get the OneDrive for Business location of the files for a [channel](/graph/api/resources/channel&preserve-view=true), by using the **fileFolder** navigation property.
+- [Send](/graph/api/channel-post-messages) and [reply](/graph/api/channel-post-messagereply) to messages in a [channel](/graph/api/resources/channel).
+- Get the OneDrive for Business location of the files for a [channel](/graph/api/resources/channel), by using the **fileFolder** navigation property.
 
 ### Teamwork | Shifts
-GA of the [shifts API](/graph/api/resources/shift&preserve-view=true) in v1.0 - use this API in production apps to create, update, and manage schedules of firstline workers, to let them stay in touch and collaborate effectively.
+GA of the [shifts API](/graph/api/resources/shift) in v1.0 - use this API in production apps to create, update, and manage schedules of firstline workers, to let them stay in touch and collaborate effectively.
 
 ### Users
 - Subscribe to change notifications for [user](/graph/api/resources/user) resources in Microsoft Cloud China operated by 21Vianet.
-- Track the status and date/time of the last status change of an external user, who has been [invited](/graph/api/invitation-post&preserve-view=true) to join the organization, by using the **externalUserState** and **externalUserStateChangeDateTime** properties of the **user** resource.
+- Track the status and date/time of the last status change of an external user, who has been [invited](/graph/api/invitation-post) to join the organization, by using the **externalUserState** and **externalUserStateChangeDateTime** properties of the **user** resource.
 
 ## May 2020: New in preview only
 
@@ -5042,32 +5042,32 @@ of these entities, and use OData cast to trim **directoryObject** results to cer
 
 ### Calendar
 - [Share or delegate calendars](outlook-share-or-delegate-calendar.md) programmatically, in closer parity with the Outlook user experience. In addition to tracking the current user's permissions and sharing status for a calendar:
-  - For each [calendar](/graph/api/resources/calendar&preserve-view=true), you can now manage the [permissions](/graph/api/resources/calendarpermission&preserve-view=true) of each user with whom the calendar is shared.
-  - For each [mailbox](/graph/api/resources/mailboxsettings&preserve-view=true), you can now specify whether a delegate, mailbox owner, or both receive meeting messages and meeting responses.
+  - For each [calendar](/graph/api/resources/calendar), you can now manage the [permissions](/graph/api/resources/calendarpermission) of each user with whom the calendar is shared.
+  - For each [mailbox](/graph/api/resources/mailboxsettings), you can now specify whether a delegate, mailbox owner, or both receive meeting messages and meeting responses.
 - [Create or update an event as an online meeting](outlook-calendar-online-meetings.md):
   - For each **calendar**, specify the allowed and the default online meeting providers.
-  - Create or update an [event](/graph/api/resources/event&preserve-view=true) to be available online, and provide details for attendees to join the meeting online.
+  - Create or update an [event](/graph/api/resources/event) to be available online, and provide details for attendees to join the meeting online.
   - In particular, use the new **onlineMeetingProvider** and **onlineMeeting** properties of **event** to set or identify Microsoft Teams as an online meeting provider, a workaround for a known issue with the **onlineMeetingUrl** property.
-- Add [file attachments up to 150MB](outlook-large-attachments.md) to an [event](/graph/api/resources/event&preserve-view=true).
+- Add [file attachments up to 150MB](outlook-large-attachments.md) to an [event](/graph/api/resources/event).
 
 ### Files
-- [Check out](/graph/api/driveitem-checkout&preserve-view=true) or [check in](/graph/api/driveitem-checkin&preserve-view=true) a file to OneDrive to manage updating the file and making updates available to others when the updates are ready.
-- Apply optional password and expiration date/time as parameters of the [invite](/graph/api/driveitem-invite&preserve-view=true) and [create sharing link](/graph/api/driveitem-createlink&preserve-view=true) actions to share a [driveItem](/graph/api/resources/driveitem&preserve-view=true).
-- Get or set password and expiration date/time of a [permission](/graph/api/resources/permission&preserve-view=true), and track the [identitySet](/graph/api/resources/identityset&preserve-view=true) of users granted the permission to share a **driveItem**.
-- Get the [permission](/graph/api/resources/permission&preserve-view=true) of a [shared drive item](/graph/api/resources/shareddriveitem&preserve-view=true) by using the **permission** navigation property.
-- Limit users with a [sharing link](/graph/api/resources/sharinglink&preserve-view=true) to only view and might not download the contents of a shared**driveItem** on OneDrive for Business or SharePoint.
+- [Check out](/graph/api/driveitem-checkout) or [check in](/graph/api/driveitem-checkin) a file to OneDrive to manage updating the file and making updates available to others when the updates are ready.
+- Apply optional password and expiration date/time as parameters of the [invite](/graph/api/driveitem-invite) and [create sharing link](/graph/api/driveitem-createlink) actions to share a [driveItem](/graph/api/resources/driveitem).
+- Get or set password and expiration date/time of a [permission](/graph/api/resources/permission), and track the [identitySet](/graph/api/resources/identityset) of users granted the permission to share a **driveItem**.
+- Get the [permission](/graph/api/resources/permission) of a [shared drive item](/graph/api/resources/shareddriveitem) by using the **permission** navigation property.
+- Limit users with a [sharing link](/graph/api/resources/sharinglink) to only view and might not download the contents of a shared**driveItem** on OneDrive for Business or SharePoint.
 
 ### Identity and access
-- To manage roles and assign access to resources in role-based access control (RBAC) providers such as Microsoft Intune, use [unifiedRoleAssignmentMultiple](/graph/api/resources/unifiedroleassignmentmultiple&preserve-view=true). The **unifiedRoleAssignmentMultiple** resource supports defining a single role over an array of scopes, and assigning the role to multiple principals (such as users).
-- Access specific types of [policies for an organization](/graph/api/resources/policy-overview&preserve-view=true) using the `/policies` URL segment and specifying the policy type. For example, an organization can enforce a policy to automatically sign a user out from a web session after a period of inactivity; see CRUD operations for instances of [activityBasedTimeoutPolicy](/graph/api/resources/activitybasedtimeoutpolicy&preserve-view=true). This is a breaking change to make it easier to discover all policies, by grouping all typed policies under the `/policies` segment. Access other typed policies in a similar approach: [claimsMappingPolicy](/graph/api/resources/claimsmappingpolicy&preserve-view=true), [homeRealmDiscoveryPolicy](/graph/api/resources/homerealmdiscoverypolicy&preserve-view=true), [tokenLifetimePolicy](/graph/api/resources/tokenlifetimepolicy&preserve-view=true), and [tokenIssuancePolicy](/graph/api/resources/tokenissuancepolicy).
+- To manage roles and assign access to resources in role-based access control (RBAC) providers such as Microsoft Intune, use [unifiedRoleAssignmentMultiple](/graph/api/resources/unifiedroleassignmentmultiple). The **unifiedRoleAssignmentMultiple** resource supports defining a single role over an array of scopes, and assigning the role to multiple principals (such as users).
+- Access specific types of [policies for an organization](/graph/api/resources/policy-overview) using the `/policies` URL segment and specifying the policy type. For example, an organization can enforce a policy to automatically sign a user out from a web session after a period of inactivity; see CRUD operations for instances of [activityBasedTimeoutPolicy](/graph/api/resources/activitybasedtimeoutpolicy). This is a breaking change to make it easier to discover all policies, by grouping all typed policies under the `/policies` segment. Access other typed policies in a similar approach: [claimsMappingPolicy](/graph/api/resources/claimsmappingpolicy), [homeRealmDiscoveryPolicy](/graph/api/resources/homerealmdiscoverypolicy), [tokenLifetimePolicy](/graph/api/resources/tokenlifetimepolicy), and [tokenIssuancePolicy](/graph/api/resources/tokenissuancepolicy).
 
 ### Mail
-Add [file attachments up to 150MB](outlook-large-attachments.md) to a [message](/graph/api/resources/message&preserve-view=true).
+Add [file attachments up to 150MB](outlook-large-attachments.md) to a [message](/graph/api/resources/message).
 
 ### Sites and lists
-- [List sites](/graph/api/sites-list-followed&preserve-view=true) that the signed-in user has followed.
-- Identify the geographic region of a [site collection](/graph/api/resources/sitecollection&preserve-view=true) by using the **dataLocationCode** property.
-- Identify the tenant of a file, folder, or other item on SharePoint by accessing the **tenantId** property that is part of the **sharepointIds** of a [driveItem](/graph/api/resources/driveitem&preserve-view=true).
+- [List sites](/graph/api/sites-list-followed) that the signed-in user has followed.
+- Identify the geographic region of a [site collection](/graph/api/resources/sitecollection) by using the **dataLocationCode** property.
+- Identify the tenant of a file, folder, or other item on SharePoint by accessing the **tenantId** property that is part of the **sharepointIds** of a [driveItem](/graph/api/resources/driveitem).
 
 ## April 2020: New in preview only
 
@@ -5096,29 +5096,29 @@ View **Meeting Created** and **Meeting Interacted** data in CSV reports for [ema
 ## March 2020: New and generally available
 
 ### Cloud communications
-- Get the call routing and incoming context of a [call](/graph/api/resources/call&preserve-view=true).
-- [Update the recording status](/graph/api/call-updaterecordingstatus&preserve-view=true) of a call.
-- Specify recording information for a [participant](/graph/api/resources/participant&preserve-view=true), including the initiator and status of the recording.
-- Uniquely identify participants in a conference or participant-to-participant [call](/graph/api/resources/call&preserve-view=true) using the **callChainId** property.
-- Identify as part of [participantInfo](/graph/api/resources/participantinfo&preserve-view=true) the country code and endpoint type (such as Skype for Business, or Skype for Business VOIP) of the participant.
-- Third-party video teleconferencing (VTC) device partners can log and provide media quality data for their video teleconferencing devices through a Cloud Video Interop (CVI) bot and using the [logTeleconferenceDeviceQuality](/graph/api/call-logteleconferencedevicequality&preserve-view=true) function. Media quality includes open-type data for [audio](/graph/api/resources/teleconferencedeviceaudioquality&preserve-view=true), [video](/graph/api/resources/teleconferencedevicevideoquality&preserve-view=true), and [screen-sharing](/graph/api/resources/teleconferencedevicescreensharingquality&preserve-view=true).
+- Get the call routing and incoming context of a [call](/graph/api/resources/call).
+- [Update the recording status](/graph/api/call-updaterecordingstatus) of a call.
+- Specify recording information for a [participant](/graph/api/resources/participant), including the initiator and status of the recording.
+- Uniquely identify participants in a conference or participant-to-participant [call](/graph/api/resources/call) using the **callChainId** property.
+- Identify as part of [participantInfo](/graph/api/resources/participantinfo) the country code and endpoint type (such as Skype for Business, or Skype for Business VOIP) of the participant.
+- Third-party video teleconferencing (VTC) device partners can log and provide media quality data for their video teleconferencing devices through a Cloud Video Interop (CVI) bot and using the [logTeleconferenceDeviceQuality](/graph/api/call-logteleconferencedevicequality) function. Media quality includes open-type data for [audio](/graph/api/resources/teleconferencedeviceaudioquality), [video](/graph/api/resources/teleconferencedevicevideoquality), and [screen-sharing](/graph/api/resources/teleconferencedevicescreensharingquality).
 
 ### Files
-- [Remote items](/graph/api/resources/remoteitem&preserve-view=true) that are shared with a user, added to the user's OneDrive, or returned as a search result can contain metadata for an image or video.
-- [Follow](/graph/api/driveitem-follow&preserve-view=true) a [driveItem](/graph/api/resources/driveitem&preserve-view=true) for convenient access, or for faciliating actions such as move, copy, and save-as. Use [unfollow](/graph/api/driveitem-unfollow&preserve-view=true) to stop following the drive item.
-- [Grant](/graph/api/permission-grant&preserve-view=true) permissions to users to access a sharing link, in order to share the corresponding drive item.
+- [Remote items](/graph/api/resources/remoteitem) that are shared with a user, added to the user's OneDrive, or returned as a search result can contain metadata for an image or video.
+- [Follow](/graph/api/driveitem-follow) a [driveItem](/graph/api/resources/driveitem) for convenient access, or for faciliating actions such as move, copy, and save-as. Use [unfollow](/graph/api/driveitem-unfollow) to stop following the drive item.
+- [Grant](/graph/api/permission-grant) permissions to users to access a sharing link, in order to share the corresponding drive item.
 
 ### Identity and access
-- [Track changes](/graph/api/orgcontact-delta&preserve-view=true) for [organizational contacts](/graph/api/resources/orgcontact&preserve-view=true).
-- Use the **riskEventTypes_v2** property to get the risk event types associated with a [sign-in](/graph/api/resources/signin&preserve-view=true).
-- Use the `User.ManageIdentities.All` delegated permission to allow an app to read, update, or delete identities that are associated with a user's account, that the signed-in user has access to. Use that permission at the application-level without a signed-in user present. This allows the app to [manage](/graph/api/user-update&preserve-view=true) which identities a user can sign-in with.
+- [Track changes](/graph/api/orgcontact-delta) for [organizational contacts](/graph/api/resources/orgcontact).
+- Use the **riskEventTypes_v2** property to get the risk event types associated with a [sign-in](/graph/api/resources/signin).
+- Use the `User.ManageIdentities.All` delegated permission to allow an app to read, update, or delete identities that are associated with a user's account, that the signed-in user has access to. Use that permission at the application-level without a signed-in user present. This allows the app to [manage](/graph/api/user-update) which identities a user can sign-in with.
 
 ### Reports
 Use Teams Service Administrator and Teams Communications Administrator as accepted user roles to allow apps to read Microsoft 365 service usage reports on behalf of a user, as [forms of user-delegated authorization](reportroot-authorization.md).
 
 ### Sites
-- Let users [follow](/graph/api/site-follow&preserve-view=true) or [unfollow](/graph/api/site-unfollow&preserve-view=true) SharePoint sites.
-- [Subscribe to change notifications](/graph/api/resources/subscription&preserve-view=true) for a SharePoint [list](/graph/api/resources/list&preserve-view=true).
+- Let users [follow](/graph/api/site-follow) or [unfollow](/graph/api/site-unfollow) SharePoint sites.
+- [Subscribe to change notifications](/graph/api/resources/subscription) for a SharePoint [list](/graph/api/resources/list).
 
 ## March 2020: New in preview only
 
@@ -5163,10 +5163,10 @@ Walk through an example of [creating an event in a shared or delegated calendar]
 
 ### Identity and access
 - To improve security when subscribing to [change notifications of user data](change-notifications-overview.md), [enforce Transport Layer Security (TLS) 1.2](/configmgr/core/plan-design/security/enable-tls-1-2) or higher on clients and site servers used in the notification process. The new requirement is rolled out in stages starting February 15 2020. By May 15, 2020, all notification endpoints must meet the new TLS requirement. [Find out the stages of the rollout](https://developer.microsoft.com/graph/blogs/microsoft-graph-subscriptions-deprecating-tls-1-0-and-1-1/) and if necessary, use the new **latestSupportedTlsVersion** property as a temporary workaround to avoid subscription failures, before completing the TLS upgrade.
-- Use respective types of [threat assessment request](/graph/api/resources/threatAssessmentRequest&preserve-view=true) to track threats from [mail](/graph/api/resources/mailassessmentrequest&preserve-view=true), an [email message file](/graph/api/resources/emailfileassessmentrequest&preserve-view=true) (.EML file), [email attachment file](/graph/api/resources/fileassessmentrequest&preserve-view=true) (text, Word, or binary file), or [URL](/graph/api/resources/urlassessmentrequest&preserve-view=true).
+- Use respective types of [threat assessment request](/graph/api/resources/threatAssessmentRequest) to track threats from [mail](/graph/api/resources/mailassessmentrequest), an [email message file](/graph/api/resources/emailfileassessmentrequest) (.EML file), [email attachment file](/graph/api/resources/fileassessmentrequest) (text, Word, or binary file), or [URL](/graph/api/resources/urlassessmentrequest).
 
 ### Users
-[Reprocess](/graph/api/user-reprocesslicenseassignment&preserve-view=true) all group-based license assignments for a [user](/graph/api/resources/user&preserve-view=true).
+[Reprocess](/graph/api/user-reprocesslicenseassignment) all group-based license assignments for a [user](/graph/api/resources/user).
 
 
 ## February 2020: New in preview only
@@ -5197,13 +5197,13 @@ Use the [assignLicense](/graph/api/group-assignlicense?view=graph-rest-beta&pres
 ## January 2020: New and generally available
 
 ### Security
-As part of customer alert management, use the [update alert](/graph/api/alert-update&preserve-view=true) method and update the **comments** field as either `Closed in IPC` or `Closed in MCAS`.
+As part of customer alert management, use the [update alert](/graph/api/alert-update) method and update the **comments** field as either `Closed in IPC` or `Closed in MCAS`.
 
 ### Teamwork
-Use the **primaryChannel** navigation property of a [team](/graph/api/resources/team&preserve-view=true) to access its default channel, **General**.
+Use the **primaryChannel** navigation property of a [team](/graph/api/resources/team) to access its default channel, **General**.
 
 ### Users
-Use the **identities** property to access one or more identities that a [user](/graph/api/resources/user&preserve-view=true) can use to sign in to an Azure AD user account. The identities can be provided by Microsoft, organizations, or social identity providers such as Facebook, Google, or Microsoft. This property allows the user to sign in to the user account with any of these identities.
+Use the **identities** property to access one or more identities that a [user](/graph/api/resources/user) can use to sign in to an Azure AD user account. The identities can be provided by Microsoft, organizations, or social identity providers such as Facebook, Google, or Microsoft. This property allows the user to sign in to the user account with any of these identities.
 
 ## January 2020: New in preview
 
@@ -5214,20 +5214,20 @@ Intune [January](https://developer.microsoft.com/graph/changelog#january-2020) u
 ## December 2019: New and generally available
 
 ### Cloud communications
-The cloud communications API has GA'd and APIs for [call](/graph/api/resources/call&preserve-view=true) and [onlineMeeting](/graph/api/resources/onlinemeeting&preserve-view=true) are [available in v1.0](/graph/api/resources/communications-api-overview&preserve-view=true).
+The cloud communications API has GA'd and APIs for [call](/graph/api/resources/call) and [onlineMeeting](/graph/api/resources/onlinemeeting) are [available in v1.0](/graph/api/resources/communications-api-overview).
 
 ### Education
-Use the **classSettings** property to manage class-specific settings, such as enabling the sending of weekly assignment digests. This property is available on the [team](/graph/api/resources/team&preserve-view=true) resource when the team represents an [education class](/graph/api/resources/educationclass&preserve-view=true).
+Use the **classSettings** property to manage class-specific settings, such as enabling the sending of weekly assignment digests. This property is available on the [team](/graph/api/resources/team) resource when the team represents an [education class](/graph/api/resources/educationclass).
 
 ### Identity and access
-[Attempting to get container objects with limited permissions returns partial data](permissions-overview.md#limited-information-returned-for-inaccessible-member-objects). An example is a [group](/graph/api/resources/group&preserve-view=true) instance that's associated with a [user](/graph/api/resources/user&preserve-view=true), another **group**, and a [device](/graph/api/resources/device&preserve-view=true). An app having only the permissions User.Read.All and Group.Read.All and attempting to access this **group** instance would get the **user** and **group** objects, but limited data for the **device** object (only data type and object ID and not property values).
+[Attempting to get container objects with limited permissions returns partial data](permissions-overview.md#limited-information-returned-for-inaccessible-member-objects). An example is a [group](/graph/api/resources/group) instance that's associated with a [user](/graph/api/resources/user), another **group**, and a [device](/graph/api/resources/device). An app having only the permissions User.Read.All and Group.Read.All and attempting to access this **group** instance would get the **user** and **group** objects, but limited data for the **device** object (only data type and object ID and not property values).
 
 ### People and workplace intelligence
 The insights API has GA'd. Use the API in production apps to identify the most relevant documents that are:
 
-- [Trending around](/graph/api/insights-list-trending&preserve-view=true) a user
-- [Used by](/graph/api/insights-list-used&preserve-view=true) a user
-- [Shared with or shared by](/graph/api/insights-list-shared&preserve-view=true) a user
+- [Trending around](/graph/api/insights-list-trending) a user
+- [Used by](/graph/api/insights-list-used) a user
+- [Shared with or shared by](/graph/api/insights-list-shared) a user
 
 ### Reports
 To get Microsoft 365 usage reports using permissions delegated by a user, administrators must have assigned the user an Azure AD limited administrator role. This can be one of the following roles: company administrator, Exchange administrator, SharePoint administrator, Lync administrator, global reader, or reports reader. See [Authorization for APIs to read Microsoft 365 usage reports](reportroot-authorization.md) for details.
@@ -5261,18 +5261,18 @@ Intune [December](https://developer.microsoft.com/graph/changelog#december-2019)
 ### Groups
 - Use delegated or application permissions, GroupMember.Read.All and GroupMember.ReadWrite.All, to list groups, read basic group properties, read (and update if read/write permission) the membership of the groups the app has access to.
 - Use the application permission, Group.Create, to create groups without a signed-in user.
-- For a specified [group](/graph/api/resources/group&preserve-view=true), [check for membership](/graph/api/directoryobject-checkmemberobjects) in other groups or directory roles.
+- For a specified [group](/graph/api/resources/group), [check for membership](/graph/api/directoryobject-checkmemberobjects) in other groups or directory roles.
 
 ### Identity and access
-- Register [applications](/graph/api/resources/application&preserve-view=true) that authenticate with Azure Active Directory (Azure AD). Use delegated permissions, Application.Read.All and Application.ReadWrite.All, or application permission, Application.Read.All, as appropriate.
-- For a specified [device](/graph/api/resources/device&preserve-view=true), [check for membership](/graph/api/directoryobject-checkmemberobjects) in other groups or directory roles.
+- Register [applications](/graph/api/resources/application) that authenticate with Azure Active Directory (Azure AD). Use delegated permissions, Application.Read.All and Application.ReadWrite.All, or application permission, Application.Read.All, as appropriate.
+- For a specified [device](/graph/api/resources/device), [check for membership](/graph/api/directoryobject-checkmemberobjects) in other groups or directory roles.
 
 ### Mail
 - Use the **conversationIndex** property to get the position of a message in an Outlook email conversation.
-- Use the delegated permission, Mail.ReadBasic, and application permission, Mail.ReadBasic.All, to get [message](/graph/api/resources/message&preserve-view=true) or [mail folder](/graph/api/resources/mailfolder&preserve-view=true) resources, track their changes, and manage [subscriptions](/graph/api/resources/subscription&preserve-view=true) for change notifications on messages.
+- Use the delegated permission, Mail.ReadBasic, and application permission, Mail.ReadBasic.All, to get [message](/graph/api/resources/message) or [mail folder](/graph/api/resources/mailfolder) resources, track their changes, and manage [subscriptions](/graph/api/resources/subscription) for change notifications on messages.
 
 ### Users
-- [Check for group memberships](/graph/api/directoryobject-checkmemberobjects) for a specified [user](/graph/api/resources/user&preserve-view=true).
+- [Check for group memberships](/graph/api/directoryobject-checkmemberobjects) for a specified [user](/graph/api/resources/user).
 - Use the **creationType** property to find how a user account was created, for example, whether the account was created as a regular school or work account or as an external account, etc.
 
 ## November 2019: New in preview
@@ -5325,12 +5325,12 @@ Use the **creationType** property to find how a user account was created, for ex
 ## October 2019: New and generally available
 
 ### Identity and access
-- Use [organization contacts](/graph/api/resources/orgcontact&preserve-view=true) in production apps. Organization contacts are managed by organization administrators, synchronized either from an on-premises Active Directory or from Exchange Online.
-- Configure [certificate-based authentication](/azure/active-directory/authentication/active-directory-certificate-based-authentication-get-started) in an [organization](/graph/api/resources/organization&preserve-view=true).
-- Add and remove [password credentials](/graph/api/resources/passwordcredential&preserve-view=true) for [applications](/graph/api/resources/application&preserve-view=true).
+- Use [organization contacts](/graph/api/resources/orgcontact) in production apps. Organization contacts are managed by organization administrators, synchronized either from an on-premises Active Directory or from Exchange Online.
+- Configure [certificate-based authentication](/azure/active-directory/authentication/active-directory-certificate-based-authentication-get-started) in an [organization](/graph/api/resources/organization).
+- Add and remove [password credentials](/graph/api/resources/passwordcredential) for [applications](/graph/api/resources/application).
 
 ### Mail
-Use the new **message** parameter to update any writeable [message](/graph/api/resources/message&preserve-view=true) properties when [replying](/graph/api/message-reply&preserve-view=true) to a message, for example, [adding a recipient to the reply](/graph/api/message-reply#example&preserve-view=true).
+Use the new **message** parameter to update any writeable [message](/graph/api/resources/message) properties when [replying](/graph/api/message-reply) to a message, for example, [adding a recipient to the reply](/graph/api/message-reply#example).
 
 ### Microsoft Graph data connect
 Developers and data scientists can now use [tools to translate Office 365 data into Common Data Model format](https://github.com/OfficeDev/MS-Graph-Data-Connect/blob/master/Common-Data-Model/README.md), making it schematically consistent with other Open Data Initiative (ODI)-ready datasets.
@@ -5341,8 +5341,8 @@ Developers and data scientists can now use [tools to translate Office 365 data i
 - Read about [making API calls using the SDKs](./sdks/create-requests.md).
 
 ### Users
-- [Get](/graph/api/user-get-mailboxsettings&preserve-view=true) or [set](/graph/api/user-update-mailboxsettings&preserve-view=true) a user's preferred date and time format [settings for the user's mailbox](/graph/api/resources/mailboxsettings&preserve-view=true).
-- Track the date/time of the last password change on a [user](/graph/api/resources/user&preserve-view=true).
+- [Get](/graph/api/user-get-mailboxsettings) or [set](/graph/api/user-update-mailboxsettings) a user's preferred date and time format [settings for the user's mailbox](/graph/api/resources/mailboxsettings).
+- Track the date/time of the last password change on a [user](/graph/api/resources/user).
 
 ## October 2019: New in preview
 
@@ -5396,19 +5396,19 @@ Developers and IT professionals can note the coming of the [Microsoft Graph Powe
 ## September 2019: New and generally available
 
 ### Calendar, mail, and group
-[Get the raw content of a file, or the MIME content of an item](/graph/api/attachment-get&preserve-view=true#get-the-raw-contents-of-a-file-or-item-attachment) that has been added as an [attachment](/graph/api/resources/attachment&preserve-view=true) to an [event](/graph/api/resources/event&preserve-view=true), [message](/graph/api/resources/message&preserve-view=true), or group [post](/graph/api/resources/post&preserve-view=true).
+[Get the raw content of a file, or the MIME content of an item](/graph/api/attachment-get#get-the-raw-contents-of-a-file-or-item-attachment) that has been added as an [attachment](/graph/api/resources/attachment) to an [event](/graph/api/resources/event), [message](/graph/api/resources/message), or group [post](/graph/api/resources/post).
 
 ### Calendar, mail, Outlook task, personal contact
-Use the [translateExchangeId](/graph/api/user-translateexchangeids&preserve-view=true) function to convert an Outlook item ID between supported [formats](/graph/api/user-translateexchangeids&preserve-view=true#exchangeidformat-values), including the Microsoft Graph default ID format and immutable ID format.
+Use the [translateExchangeId](/graph/api/user-translateexchangeids) function to convert an Outlook item ID between supported [formats](/graph/api/user-translateexchangeids#exchangeidformat-values), including the Microsoft Graph default ID format and immutable ID format.
 
 The following resources support ID format conversion:
 
-- [attachment](/graph/api/resources/attachment&preserve-view=true)
-- [contact](/graph/api/resources/contact&preserve-view=true)
-- [event](/graph/api/resources/event&preserve-view=true)
-- [eventMessage](/graph/api/resources/eventmessage&preserve-view=true)
-- [message](/graph/api/resources/message&preserve-view=true)
-- [outlookTask](/graph/api/resources/outlooktask&preserve-view=true)
+- [attachment](/graph/api/resources/attachment)
+- [contact](/graph/api/resources/contact)
+- [event](/graph/api/resources/event)
+- [eventMessage](/graph/api/resources/eventmessage)
+- [message](/graph/api/resources/message)
+- [outlookTask](/graph/api/resources/outlooktask)
 
 ### Mail
 [Get the MIME content of a message](outlook-get-mime-message.md).
@@ -5450,10 +5450,10 @@ Use the **General** channel of a [team](/graph/api/resources/team?view=graph-res
 ## August 2019: New and generally available
 
 ### Reports
-- Get additional [mailbox usage data](/graph/api/reportroot-getmailboxusagedetail&preserve-view=true) about deleted item count and size.
-- Track Microsoft 365 group IDs when [getting group activity details](/graph/api/reportroot-getoffice365groupsactivitydetail&preserve-view=true).
-- Track the owner principal name when getting [OneDrive usage account detail](/graph/api/reportroot-getonedriveusageaccountdetail&preserve-view=true) and [SharePoint site usaged detail](/graph/api/reportroot-getsharepointsiteusagedetail&preserve-view=true).
-- Get the number of active and inactive users on Microsoft 365, when [getting a report on user counts per Microsoft 365 service](/graph/api/reportroot-getoffice365servicesusercounts&preserve-view=true).
+- Get additional [mailbox usage data](/graph/api/reportroot-getmailboxusagedetail) about deleted item count and size.
+- Track Microsoft 365 group IDs when [getting group activity details](/graph/api/reportroot-getoffice365groupsactivitydetail).
+- Track the owner principal name when getting [OneDrive usage account detail](/graph/api/reportroot-getonedriveusageaccountdetail) and [SharePoint site usaged detail](/graph/api/reportroot-getsharepointsiteusagedetail).
+- Get the number of active and inactive users on Microsoft 365, when [getting a report on user counts per Microsoft 365 service](/graph/api/reportroot-getoffice365servicesusercounts).
 
 ### Security
 - Use the new [Microsoft Graph security API add-on for Splunk](https://aka.ms/graphsecuritysplunkaddon) to stream security alerts and insights from many partner products into Splunk, enabling easier real-time correlation of their security data. See the [announcement](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Introducing-the-new-Microsoft-Graph-Security-API-add-on-for/ba-p/815972) for more information.
@@ -5486,19 +5486,19 @@ End users have been able to use the Microsoft 365 [MyAnalytics](social-intel-con
 ## July 2019: New and generally available
 
 ### Example code snippets
-There are now Objective-C code snippets in all API topics in the v1.0 and beta references. See the Objective-C example for [getting an event](/graph/api/event-get&preserve-view=true&tabs=objective-c#example).
+There are now Objective-C code snippets in all API topics in the v1.0 and beta references. See the Objective-C example for [getting an event](/graph/api/event-get&tabs=objective-c#example).
 
 ### Group
-- Use the [validateProperties](/graph/api/group-validateproperties&preserve-view=true) function to make sure the display name or mail nickname of an existing Microsoft 365 group complies with naming policies.
-- Alternatively, before creating the group, you can use the [validateProperties](/graph/api/directoryobject-validateproperties&preserve-view=true) function for a [directoryObject](/graph/api/resources/directoryobject&preserve-view=true) to validate the names first.
+- Use the [validateProperties](/graph/api/group-validateproperties) function to make sure the display name or mail nickname of an existing Microsoft 365 group complies with naming policies.
+- Alternatively, before creating the group, you can use the [validateProperties](/graph/api/directoryobject-validateproperties) function for a [directoryObject](/graph/api/resources/directoryobject) to validate the names first.
 
 ### Identity and access
-- Use [new delegated and application permissions](permissions-reference.md), _Organization.Read.All_ and _Organization.ReadWrite.All_, to access an [organization](/graph/api/resources/organization&preserve-view=true) and related resources such as [subscribed SKUs](/graph/api/resources/subscribedsku&preserve-view=true).
+- Use [new delegated and application permissions](permissions-reference.md), _Organization.Read.All_ and _Organization.ReadWrite.All_, to access an [organization](/graph/api/resources/organization) and related resources such as [subscribed SKUs](/graph/api/resources/subscribedsku).
 - Use [new delegated and application permissions](permissions-reference.md), _RoleManagement.Read.Directory_ and _RoleManagement.ReadWrite.Directory_, for role-based access control (RBAC) for your company's directory:
 
-  - Use the read/write permission to first [activate](/graph/api/directoryrole-post-directoryroles&preserve-view=true) a directory role.
-  - With the role activated, you can use the read permission to [read directory roles](/graph/api/directoryrole-list&preserve-view=true), [list role members](/graph/api/directoryrole-list-members&preserve-view=true), and [list directory role templates](/graph/api/directoryroletemplate-list&preserve-view=true).
-  - You can also use the read/write permission to [add](/graph/api/directoryrole-post-members&preserve-view=true) and [remove](/graph/api/directoryrole-delete-member&preserve-view=true) role members.
+  - Use the read/write permission to first [activate](/graph/api/directoryrole-post-directoryroles) a directory role.
+  - With the role activated, you can use the read permission to [read directory roles](/graph/api/directoryrole-list), [list role members](/graph/api/directoryrole-list-members), and [list directory role templates](/graph/api/directoryroletemplate-list).
+  - You can also use the read/write permission to [add](/graph/api/directoryrole-post-members) and [remove](/graph/api/directoryrole-delete-member) role members.
 
 
 ## July 2019: New in preview
@@ -5538,7 +5538,7 @@ Use more granular application permission, _Mail.ReadBasic.All_, to read a user's
 Exchange administrators can grant application permissions to an app and [limit the app to access only a subset of mailboxes](auth-limit-mailbox-access.md), instead of the default which is access to all mailboxes in the organization. Such restricted access would apply to any application permissions granted to the app for [calendars](permissions-reference.md), [contacts](permissions-reference.md), and [mail and mailbox settings](permissions-reference.md). See related [blog announcement](https://developer.microsoft.com/graph/blogs/scoping-microsoft-graph-application-permissions-to-specific-exchange-online-mailboxes/).
 
 ### Mail
-Use [mail search folders](/graph/api/resources/mailsearchfolder&preserve-view=true) API to search messages and access Outlook email search results. See related [blog announcement](https://developer.microsoft.com/graph/blogs/mail-search-folder-support-for-microsoft-graph-apis/).
+Use [mail search folders](/graph/api/resources/mailsearchfolder) API to search messages and access Outlook email search results. See related [blog announcement](https://developer.microsoft.com/graph/blogs/mail-search-folder-support-for-microsoft-graph-apis/).
 
 ### Postman
 As an alternative to Graph Explorer, try the Microsoft Graph API on the [Microsoft Graph Postman collection](use-postman.md) to learn the API behavior and speed up app development.
@@ -5547,7 +5547,7 @@ As an alternative to Graph Explorer, try the Microsoft Graph API on the [Microso
 Try the new [tutorial to build a Java console app](tutorials/java.md) to get information about a user calendar.
 
 ### User
-Administrators or users can [revoke](/graph/api/user-revokesigninsessions&preserve-view=true) all issued refresh tokens for a user. This is usually used to prevent apps on a lost or stolen device from accessing an organization's data.
+Administrators or users can [revoke](/graph/api/user-revokesigninsessions) all issued refresh tokens for a user. This is usually used to prevent apps on a lost or stolen device from accessing an organization's data.
 
 
 ## May - June, 2019: New in preview
@@ -5596,7 +5596,7 @@ Let users [follow](/graph/api/site-follow?view=graph-rest-beta&preserve-view=tru
 [Get free-busy schedule](outlook-get-free-busy-schedule.md)
 
 ### Identity and access
-[Identity providers](/graph/api/resources/identityprovider&preserve-view=true)
+[Identity providers](/graph/api/resources/identityprovider)
 [Improved auth guides](./auth/index.yml)
 [Migrating apps from Azure AD Graph to Microsoft Graph](migrate-azure-ad-graph-planning-checklist.md)
 
@@ -5604,10 +5604,10 @@ Let users [follow](/graph/api/site-follow?view=graph-rest-beta&preserve-view=tru
 
 [SDK guides](/graph/sdks/sdks-overview)
 
-API snippets ([example](/graph/api/user-get&preserve-view=true&tabs=cs#sdk-sample-code))
+API snippets ([example](/graph/api/user-get&tabs=cs#sdk-sample-code))
 
 ### Security
-[Tenant secure score](/graph/api/resources/securescore&preserve-view=true)
+[Tenant secure score](/graph/api/resources/securescore)
 
 ## January - April, 2019: New in preview
 
