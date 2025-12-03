@@ -18,7 +18,7 @@ Bulk upsert places in async mode.
 
 > **Note:**
 > - All requests require the `OData-Version: 4.01` header.
-> - Assigned mode is not supported in bulk upsert yet.
+> - Assigned mode isn't supported in bulk upsert yet.
 
 ## Supported scenarios
 
@@ -32,8 +32,8 @@ Bulk upsert places in async mode.
 
 - Create vs. Update: Places without an id property will be created, while places with an id property will be updated by id.
 - Place hierarchy: Use the children[@delta](https://github.com/delta) property to create or update children places within a parent place. The parentId property is automatically set for children places.
-- Assigned mode is not supported in bulk upsert yet.
-- It is not supported to update an existing child place under an existing parent place using children[@delta](https://github.com/delta) property. They should be updated separately.
+- Assigned mode isn't supported in bulk upsert yet.
+- It isn't supported to update an existing child place under an existing parent place using children[@delta](https://github.com/delta) property. They should be updated separately.
 
 ## Data Retention
 
