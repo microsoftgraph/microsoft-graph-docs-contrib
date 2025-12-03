@@ -195,7 +195,7 @@ Content-Type: application/json
 				"placeId": "ebbc6ed0-8fda-41d2-9d07-c0f990337515",
 				"displayName": "Demo Workspace 1",
 				"parentId": "2cb2701d-0896-4c69-91bb-582d82d7c68c",
-				"emailAddress": "DemoWorkspace1bb13cf171764579932835@a830edad9050849gxpstcaadhoc.onmicrosoft.com"
+				"emailAddress": "DemoWorkspace1bb13cf171764579932835@a830edad9050849gxpstcaadhoc.onmicrosoft.com",
 				"mode": {
 					"@odata.type": "#microsoft.graph.reservablePlaceMode"
 				}
@@ -234,7 +234,7 @@ GET https://graph.microsoft.com/beta/places/getOperation(id='116d12e4-3361-43f9-
 
 #### Response
 
-The following example shows the response with `partiallySucceeded`. The operation partially succeeded with 1 place created and 2 places failed. One child of "Demo Building 3" failed to be created because a place with the same name, type, parentId, and address already exists. Additionally, one top-level place failed for AssignedPerson identity is null.
+The following example shows the response with `partiallySucceeded`. The operation partially succeeded with 1 place created and 2 places failed. One child of "Demo Building 3" failed to be created because a place with the same name, type, parentId, and address already exists. Additionally, one top-level place failed for another reason.
 
 <!-- {
   "blockType": "response",
@@ -277,7 +277,7 @@ Content-Type: application/json
 		{
 			"error": {
 				"code": "BadRequest",
-				"message": "AssignedPerson identity should not be null."
+				"message": "Mailbox parameter is not supported for room or workspace creation."
 			}
 		}
 	]
