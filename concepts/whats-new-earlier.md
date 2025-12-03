@@ -5486,7 +5486,7 @@ End users have been able to use the Microsoft 365 [MyAnalytics](social-intel-con
 ## July 2019: New and generally available
 
 ### Example code snippets
-There are now Objective-C code snippets in all API topics in the v1.0 and beta references. See the Objective-C example for [getting an event](/graph/api/event-get&tabs=objective-c#example).
+There are now Objective-C code snippets in all API topics in the v1.0 and beta references. See the Objective-C example for [getting an event](/graph/api/event-get?tabs=objective-c#example).
 
 ### Group
 - Use the [validateProperties](/graph/api/group-validateproperties) function to make sure the display name or mail nickname of an existing Microsoft 365 group complies with naming policies.
