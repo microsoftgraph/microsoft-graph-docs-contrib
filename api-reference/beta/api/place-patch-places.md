@@ -17,7 +17,8 @@ Namespace: microsoft.graph
 Bulk upsert places in async mode.
 
 > **Note:**
-> All requests require the `OData-Version: 4.01` header.
+> - All requests require the `OData-Version: 4.01` header.
+> - The bulk upsert API doesn't support creating or updating desks with assigned place mode.
 
 ## Supported scenarios
 
