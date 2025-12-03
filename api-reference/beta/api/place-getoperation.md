@@ -16,11 +16,12 @@ Namespace: microsoft.graph
 
 Get a [placeOperation](../resources/placeoperation.md) by ID.
 
-The following aspects apply when you work with this API:
- - Data retention: Operations are retained for 15 days from creation.
- - API-level throttling:
-   - This API has a throttling limit of three calls per second.
-   - The progress of long-running operations updates every 30 seconds; therefore, you shouldn't retrieve an operation more frequently than once every 30 seconds. 
+>[!NOTE]
+>The following aspects apply when you work with this API:
+>- Operations are retained for 15 days from creation.
+>- API-level throttling:
+>   - This API has a throttling limit of three calls per second. For more information, see [Microsoft Graph service-specific throttling limits](/graph/throttling-limits).
+>   - The progress of long-running operations updates every 30 seconds; therefore, you shouldn't retrieve an operation more frequently than once every 30 seconds. 
 
 ## Permissions
 
@@ -279,3 +280,4 @@ Content-Type: application/json
   ]
 }
 ```
+
