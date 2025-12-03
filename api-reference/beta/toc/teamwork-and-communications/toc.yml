@@ -280,6 +280,10 @@ items:
     items:
     - name: Ad hoc call (preview)
       href: ../../resources/adhoccall.md
+    - name: Get all recordings
+      href: ../../api/adhoccall-getallrecordings.md
+    - name: Get all transcripts
+      href: ../../api/adhoccall-getalltranscripts.md
   - name: Calls
     items:
     - name: Call

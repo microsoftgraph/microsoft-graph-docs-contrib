@@ -73,8 +73,6 @@ GET https://graph.microsoft.com/beta/onPremisesPublishingProfiles/privateAccess/
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/list-privateaccesssensor-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-privateaccesssensor-go-snippets.md)]
@@ -99,7 +97,6 @@ GET https://graph.microsoft.com/beta/onPremisesPublishingProfiles/privateAccess/
 ---
 
 ### Response
-
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
