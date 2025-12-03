@@ -64,7 +64,7 @@ The following properties are inherited from **[baseItem][]**.
 |:---------------------|:------------------|:-------------------------------------------------------------------------|
 | createdBy            | [identitySet][]   | Identity of the creator of this item. Read-only.                         |
 | createdDateTime      | DateTimeOffset    | The date and time the item was created. Read-only.                       |
-| deleted              | [deleted][]       | If present in the result of a delta enumeration, indicates the item was deleted. Read-only. |
+| deleted              | [deleted][]       | If present in the result of a delta enumeration, indicates that the item was deleted. Read-only. |
 | description          | string            | The descriptive text for the item.                                       |
 | eTag                 | string            | ETag for the item. Read-only.                                            |
 | id                   | string            | The unique identifier of the item. Read-only.                            |
