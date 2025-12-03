@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Bulk upsert places in async mode.
+Bulk upsert one or more [place](../resources/place.md) objects in async mode.
 
 > **Note:**
 > - All requests require the `OData-Version: 4.01` header.
