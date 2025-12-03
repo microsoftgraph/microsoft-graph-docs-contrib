@@ -80,7 +80,7 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.insiderRiskyUserApproval",
-  "id": "insiderRiskyUserApproval ",
+  "id": "insiderRiskyUserApproval",
   "isApprovalRequired": true,
   "minimumRiskLevel": "elevated"
 }
