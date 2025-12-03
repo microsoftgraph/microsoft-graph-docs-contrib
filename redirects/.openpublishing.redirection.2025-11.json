@@ -19,7 +19,6 @@
       "source_path_from_root": "/api-reference/beta/api/agentidentityblueprint-list-federatedidentitycredentials.md",
       "redirect_url": "https://learn.microsoft.com/en-us/graph/api/federatedidentitycredentials-list?view=graph-rest-beta",
       "redirect_document_id": false
-    }
     },
     {
       "source_path_from_root": "/api-reference/beta/api/agentidentityblueprint-post-federatedidentitycredentials.md",
