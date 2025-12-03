@@ -21,7 +21,7 @@ Configuration manager client health state
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|state|[configurationManagerClientState](../resources/intune-devices-configurationmanagerclientstate.md)|Current configuration manager client state. Possible values are: `unknown`, `installed`, `healthy`, `installFailed`, `updateFailed`, `communicationError`.|
+|state|[configurationManagerClientState](../resources/intune-devices-configurationmanagerclientstate.md)|Current configuration manager client state. The possible values are: `unknown`, `installed`, `healthy`, `installFailed`, `updateFailed`, `communicationError`.|
 |errorCode|Int32|Error code for failed state.|
 |lastSyncDateTime|DateTimeOffset|Datetime for last sync with configuration manager management point.|
 

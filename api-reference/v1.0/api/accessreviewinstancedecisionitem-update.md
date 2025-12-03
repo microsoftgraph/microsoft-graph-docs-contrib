@@ -51,7 +51,7 @@ The following table shows the properties accepted to update an `accessReviewInst
 
 | Property     | Type       | Description |
 |:-------------|:------------|:------------|
-| decision  | String | Access decision for the entity being reviewed. Possible values are: `Approve` `Deny` `NotReviewed` `DontKnow`. Required.  |
+| decision  | String | Access decision for the entity being reviewed. The possible values are: `Approve` `Deny` `NotReviewed` `DontKnow`. Required.  |
 |  justification | String | Context of the review provided to admins. Required if justificationRequiredOnApproval is True on the accessReviewScheduleDefinition.  |
 
 ## Response

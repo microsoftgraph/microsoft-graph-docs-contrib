@@ -12,7 +12,7 @@ ms.date: 06/21/2024
 
 Namespace: microsoft.graph
 
-Retrieve the properties and relationships of a [onenoteSection](../resources/section.md) object.
+Retrieve the properties and relationships of a [onenoteSection](../resources/onenotesection.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -20,7 +20,7 @@ Retrieve the properties and relationships of a [onenoteSection](../resources/sec
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 <!-- { "blockType": "permissions", "name": "section_get" } -->
-[!INCLUDE [permissions-table](../includes/permissions/section-get-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/onenotesection-get-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -46,7 +46,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [onenoteSection](../resources/section.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [onenoteSection](../resources/onenotesection.md) object in the response body.
 ## Example
 ##### Request
 The following example shows a request.

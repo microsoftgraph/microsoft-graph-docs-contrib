@@ -20,8 +20,8 @@ Represents the action name and capability of a supported Cloud PC remote action.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|actionCapability|[actionCapability](#actioncapability-values)|Indicates the state of the supported action capability to perform a Cloud PC remote action. Possible values are: `enabled`, `disabled`. Default value is `enabled`.|
-|actionName|[cloudPcRemoteActionName](#cloudpcremoteactionname-values)|The name of the supported Cloud PC remote action. Possible values are: `unknown`, `restart`, `rename`, `restore`, `resize`, `reprovision`, `troubleShoot`, `changeUserAccountType`, `placeUnderReview`. Default value is `unknown`.|
+|actionCapability|[actionCapability](#actioncapability-values)|Indicates the state of the supported action capability to perform a Cloud PC remote action. The possible values are: `enabled`, `disabled`. Default value is `enabled`.|
+|actionName|[cloudPcRemoteActionName](#cloudpcremoteactionname-values)|The name of the supported Cloud PC remote action. The possible values are: `unknown`, `restart`, `rename`, `restore`, `resize`, `reprovision`, `troubleShoot`, `changeUserAccountType`, `placeUnderReview`. Default value is `unknown`.|
 
 ### cloudPcRemoteActionName values
 

@@ -33,9 +33,9 @@ A format object that encapsulates the range's font, fill, borders, alignment, an
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |columnWidth|double|The width of all columns within the range. If the column widths aren't uniform, null will be returned.|
-|horizontalAlignment|string|The horizontal alignment for the specified object. Possible values are: `General`, `Left`, `Center`, `Right`, `Fill`, `Justify`, `CenterAcrossSelection`, `Distributed`.|
+|horizontalAlignment|string|The horizontal alignment for the specified object. The possible values are: `General`, `Left`, `Center`, `Right`, `Fill`, `Justify`, `CenterAcrossSelection`, `Distributed`.|
 |rowHeight|double|The height of all rows in the range. If the row heights aren't uniform null will be returned.|
-|verticalAlignment|string|The vertical alignment for the specified object. Possible values are: `Top`, `Center`, `Bottom`, `Justify`, `Distributed`.|
+|verticalAlignment|string|The vertical alignment for the specified object. The possible values are: `Top`, `Center`, `Bottom`, `Justify`, `Distributed`.|
 |wrapText|Boolean|Indicates whether Excel wraps the text in the object. A null value indicates that the entire range doesn't have a uniform wrap setting.|
 
 ## Relationships

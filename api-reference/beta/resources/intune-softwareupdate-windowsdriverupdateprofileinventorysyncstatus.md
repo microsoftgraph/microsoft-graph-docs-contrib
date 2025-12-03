@@ -22,7 +22,7 @@ A complex type to store the status of a driver and firmware profile inventory sy
 |Property|Type|Description|
 |:---|:---|:---|
 |lastSuccessfulSyncDateTime|DateTimeOffset|The last successful sync date and time in UTC.|
-|driverInventorySyncState|[windowsDriverUpdateProfileInventorySyncState](../resources/intune-softwareupdate-windowsdriverupdateprofileinventorysyncstate.md)|The state of the latest sync. Possible values are: `pending`, `success`, `failure`.|
+|driverInventorySyncState|[windowsDriverUpdateProfileInventorySyncState](../resources/intune-softwareupdate-windowsdriverupdateprofileinventorysyncstate.md)|The state of the latest sync. The possible values are: `pending`, `success`, `failure`.|
 
 ## Relationships
 None

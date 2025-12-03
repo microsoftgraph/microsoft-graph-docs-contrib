@@ -5,7 +5,7 @@ author: "ebasseri"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
-ms.date: 10/29/2024
+ms.date: 12/02/2025
 ---
 
 # servicePrincipalRiskDetection resource type
@@ -30,7 +30,7 @@ For more information about risk events, see [Microsoft Entra ID Protection](/azu
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|activity|activityType|Indicates the activity type the detected risk is linked to.  The possible values are: `signin`, `servicePrincipal`. Use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `servicePrincipal`. |
+|activity|[activityType](../resources/activitytype.md)|Indicates the activity type the detected risk is linked to.|
 |activityDateTime|DateTimeOffset|Date and time when the risky activity occurred. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |additionalInfo|String|Additional information associated with the risk detection. This string value is represented as a JSON object with the quotations escaped. |
 |appId|String|The unique identifier for the associated application.|

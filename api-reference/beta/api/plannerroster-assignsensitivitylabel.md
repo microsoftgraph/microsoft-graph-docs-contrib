@@ -44,7 +44,7 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter    | Type        | Description |
 |:-------------|:------------|:------------|
-| assignmentMethod | [sensitivityLabelAssignmentMethod](../resources/sensitivitylabelassignment.md#sensitivitylabelassignmentmethod-values) | The method that is used to apply the sensitivity label to the roster. Possible values are: `standard`, `privileged`, `auto`, `unknownFutureValue`.|
+| assignmentMethod | [sensitivityLabelAssignmentMethod](../resources/sensitivitylabelassignment.md#sensitivitylabelassignmentmethod-values) | The method that is used to apply the sensitivity label to the roster. The possible values are: `standard`, `privileged`, `auto`, `unknownFutureValue`.|
 | sensitivityLabelId | String | The ID of the label that's applied to the roster. |
 
 ## Response

@@ -44,7 +44,7 @@ Inherits from [policyDeletableItem](../resources/policydeletableitem.md).
 |id|String| Specifies the identifier of a conditionalAccessPolicy object. Read-only.|
 |modifiedDateTime| DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Readonly. |
 |sessionControls|[conditionalAccessSessionControls](conditionalaccesssessioncontrols.md)| Specifies the session controls that are enforced after sign-in. |
-|state|conditionalAccessPolicyState| Specifies the state of the conditionalAccessPolicy object. Possible values are: `enabled`, `disabled`, `enabledForReportingButNotEnforced`. Required. |
+|state|conditionalAccessPolicyState| Specifies the state of the conditionalAccessPolicy object. The possible values are: `enabled`, `disabled`, `enabledForReportingButNotEnforced`. Required. |
 |deletedDateTime|DateTimeOffset|Shows the last date and time the policy was deleted.Inherited from [policyDeletableItem](../resources/policydeletableitem.md).|
 
 ## Relationships
