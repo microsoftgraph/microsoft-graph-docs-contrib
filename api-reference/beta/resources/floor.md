@@ -38,7 +38,7 @@ For the list of supported methods, see [place](./place.md).
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|children|[place](../resources/place.md) collection|A collection of child places that is only used in the [Bulk upsert](../api/place-patch-places.md) API. The children of a floor can be of type [section](../resources/section.md), or [room](../resources/room.md). Inherited from [place](../resources/place.md).|
+|children|[place](../resources/place.md) collection|A collection of child places that is only used in the [Bulk upsert](../api/place-patch-places.md) API. The children of a floor can be of type [section](../resources/section.md) or [room](../resources/room.md). Inherited from [place](../resources/place.md).|
 
 ## JSON representation
 The following JSON representation shows the resource type.
