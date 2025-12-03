@@ -66,7 +66,7 @@ The following table lists the parameters that are required when you call this ac
 
 ## Response
 
-If successful, this action returns a `200 OK` response code.
+If successful, this action returns a `200 OK` response code. It doesn't return anything in the response body.
 
 ## Examples
 
