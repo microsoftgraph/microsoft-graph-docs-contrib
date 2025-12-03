@@ -4781,7 +4781,7 @@ Get [content hosted in a chat message](/graph/api/resources/chatmessagehostedcon
 ## July 2020: New and generally available
 
 ### Calendar
-GA of the feature that allows organizers to allow alternate meeting time proposals, and invitees to [propose new times for a meeting](outlook-calendar-meeting-proposals.md) when they [tentatively accept](/graph/api/event-tentativelyaccept&preserve-view=true) or [decline](/graph/api/event-decline&preserve-view=true) an event.
+GA of the feature that allows organizers to allow alternate meeting time proposals, and invitees to [propose new times for a meeting](outlook-calendar-meeting-proposals.md) when they [tentatively accept](/graph/api/event-tentativelyaccept) or [decline](/graph/api/event-decline) an event.
 
 ### Change notifications
 Removed the erroneously introduced **sequenceNumber** property from the [changeNotification](/graph/api/resources/changenotification) resource.
@@ -4856,8 +4856,8 @@ Access the SharePoint [term store](/graph/api/resources/termstore-store?view=gra
 ## June 2020: New and generally available
 
 ### Cloud communications | Online meeting
-- Use the `Accept-Language` HTTP header when [creating an online meeting](/graph/api/application-post-onlinemeetings&preserve-view=true) to provide locale-based join information.
-- Use [createOrGet](/graph/api/onlinemeeting-createorget&preserve-view=true) to return an online meeting that has a specified **externalId** value, or create one if none already exists, to streamline embedding the resultant meeting in a third-party calendar.
+- Use the `Accept-Language` HTTP header when [creating an online meeting](/graph/api/application-post-onlinemeetings) to provide locale-based join information.
+- Use [createOrGet](/graph/api/onlinemeeting-createorget) to return an online meeting that has a specified **externalId** value, or create one if none already exists, to streamline embedding the resultant meeting in a third-party calendar.
 
 ### Files
 - Enhanced synchronization support:
@@ -4876,7 +4876,7 @@ Use application permissions `Group.Read.All` and `Group.ReadWrite.All` to get gr
 - GA of two sets of API for [identity protection](/graph/api/resources/identityprotectionroot): [risk detection](/graph/api/resources/riskdetection) and [risky user](/graph/api/resources/riskyuser) APIs.
 
 ### Security
-- Track the following as properties of an [alert](/graph/api/resources/alert&preserve-view=true):
+- Track the following as properties of an [alert](/graph/api/resources/alert):
   - IDs of incidents related to the alert.
   - Identify a [resource](/graph/api/resources/securityResource#securityresourcetype-values) as attacked or as a related resource in the alert.
   - Specify the source and destination locations of a [network connection](/graph/api/resources/networkconnection) related to the alert.
@@ -5604,7 +5604,7 @@ Let users [follow](/graph/api/site-follow?view=graph-rest-beta&preserve-view=tru
 
 [SDK guides](/graph/sdks/sdks-overview)
 
-API snippets ([example](/graph/api/user-get&tabs=cs#sdk-sample-code))
+API snippets ([example](/graph/api/user-get?tabs=cs#sdk-sample-code))
 
 ### Security
 [Tenant secure score](/graph/api/resources/securescore)
