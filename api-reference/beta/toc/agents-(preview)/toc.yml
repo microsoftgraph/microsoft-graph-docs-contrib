@@ -32,6 +32,10 @@ items:
         href: ../../api/agentidentityblueprint-addkey.md
       - name: Remove key
         href: ../../api/agentidentityblueprint-removekey.md
+      - name: List federatedIdentityCredential
+        href: ../../api/federatedidentitycredential-list.md
+      - name: Create federatedIdentityCredential
+        href: ../../api/federatedidentitycredential-post.md
       - name: Get federatedIdentityCredential
         href: ../../api/federatedidentitycredential-get.md
       - name: Update federatedIdentityCredential
