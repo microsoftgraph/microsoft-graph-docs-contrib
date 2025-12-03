@@ -356,7 +356,7 @@ items:
         href: ../../api/reportroot-list-serviceprincipalsigninactivities.md
       - name: Get
         href: ../../api/serviceprincipalsigninactivity-get.md
-  - name: Microsoft Entra audit logs
+  - name: Microsoft Entra logs
     items:
     - name: Overview
       href: ../../resources/azure-ad-auditlog-overview.md
