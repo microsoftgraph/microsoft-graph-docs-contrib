@@ -45,7 +45,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ``` http
 POST /me/presence/clearAutomaticLocation
 POST /users/{usersId}/presence/clearAutomaticLocation
-POST /communications/presences/{presenceId}/clearAutomaticLocation
 ```
 
 ## Request headers
@@ -60,7 +59,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this action returns a `204 No Content` response code.
+If successful, this action returns a `200 OK` response code.
 
 ## Examples
 

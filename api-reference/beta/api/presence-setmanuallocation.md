@@ -42,7 +42,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ``` http
 POST /me/presence/setManualLocation
 POST /users/{usersId}/presence/setManualLocation
-POST /communications/presences/{presenceId}/setManualLocation
 ```
 
 ## Request headers
@@ -61,11 +60,11 @@ The following table lists the parameters that are required when you call this ac
 |Parameter|Type|Description|
 |:---|:---|:---|
 |placeId|String| Identifier of the place (when applicable). |
-|workLocationType|workLocationType| Semantic type of the location. The possible values are: `unspecified`, `office`, `remote`, `timeOff`, `unknownFutureValue`.|
+|workLocationType|workLocationType| Semantic type of the location. The possible values are: `unspecified`, `office`, `remote`, `timeOff`.|
 
 ## Response
 
-If successful, this action returns a `204 No Content` response code.
+If successful, this action returns a `200 OK` response code.
 
 ## Examples
 
