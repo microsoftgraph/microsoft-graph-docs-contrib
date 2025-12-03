@@ -5828,3 +5828,14 @@ Possible values for user account types (group membership), per Windows definitio
 |write|
 |create|
 |unknownFutureValue|
+
+### sharePointMigrationTaskStatus values
+
+| Member             |
+|:------------------ |
+| notStarted         |
+| inProgress         |
+| completed          |
+| cancelled          |
+| failed             |
+| unknownFutureValue |

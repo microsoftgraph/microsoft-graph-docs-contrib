@@ -1088,11 +1088,16 @@
           "overview": "../../resources/sharepoint-crossorganization-api-overview.md",
           "resources": [
             "sharePointGroupIdentityMapping",
+            "sharePointMigrationTask",
             "sharePointUserIdentityMapping"
           ],
           "complexTypes": [
             "sharePointIdentityMappingGroupMigrationData",
-            "sharePointIdentityMappingUserMigrationData"
+            "sharePointIdentityMappingUserMigrationData",
+            "sharePointMigrationTaskParameters",
+            "sharePointUserMigrationTaskParameters",
+            "sharePointSiteMigrationTaskParameters",
+            "sharePointGroupMigrationTaskParameters"
           ]
         }
       ]
