@@ -85,7 +85,7 @@ The same properties can be specified as when you [create](../api/place-post.md) 
 
 ## Response
 
-If successful, this method returns a `202 Accepted` response code and an operation ID in the `Location` response header that you can use to [get](../api/place-getoperation.md) the operation.
+If successful, this method returns a `202 Accepted` response code and an operation URL in the `Location` response header that you can use to [get](../api/place-getoperation.md) the operation.
 
 ## Examples
 
