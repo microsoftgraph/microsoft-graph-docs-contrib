@@ -753,9 +753,9 @@
         {
           "Id": "2ee695d4-18dc-45f9-a9f2-74677efd4fd5",
           "ApiChange": "Method",
-          "ChangedApiName": "patch",
+          "ChangedApiName": "place",
           "ChangeType": "Addition",
-          "Description": "Added the [patch](https://learn.microsoft.com/en-us/graph/api/place-patch-places?view=graph-rest-beta) method to the [place](https://learn.microsoft.com/en-us/graph/api/resources/place?view=graph-rest-beta) resource.",
+          "Description": "Added the [Bulk upsert](https://learn.microsoft.com/en-us/graph/api/place-patch-places?view=graph-rest-beta) method to the [place](https://learn.microsoft.com/en-us/graph/api/resources/place?view=graph-rest-beta) resource.",
           "Target": "place"
         },
         {
