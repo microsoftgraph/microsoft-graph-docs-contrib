@@ -5,7 +5,7 @@ author: "nickludwig"
 ms.localizationpriority: medium
 ms.subservice: "entra-applications"
 doc_type: apiPageType
-ms.date: 10/02/2024
+ms.date: 12/03/2025
 ---
 
 # Create federatedIdentityCredential
@@ -160,7 +160,6 @@ Content-Type: application/json
 
 #### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "agentidentityblueprint_create_federatedidentitycredential"
@@ -179,12 +178,6 @@ Content-Type: application/json
     ]
 }
 ```
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/agentidentityblueprint-create-federatedidentitycredential-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 #### Response
 >**Note:** The response object shown here might be shortened for readability.

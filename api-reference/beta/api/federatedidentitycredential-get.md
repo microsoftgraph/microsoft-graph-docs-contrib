@@ -153,7 +153,6 @@ Content-Type: application/json
 
 #### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "agentidentityblueprint_get_federatedidentitycredential"
@@ -162,12 +161,6 @@ Content-Type: application/json
 ``` http
 GET https://graph.microsoft.com/beta/applications/acd7c908-1c4d-4d48-93ee-ff38349a75c8/microsoft.graph.agentIdentityBlueprint/federatedIdentityCredentials/bdad0963-4a7a-43ae-b569-e67e1da3f2c0
 ```
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/agentidentityblueprint-get-federatedidentitycredential-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 #### Response
 The following example shows the response.

@@ -5,7 +5,7 @@ author: "nickludwig"
 ms.localizationpriority: medium
 ms.subservice: "entra-applications"
 doc_type: apiPageType
-ms.date: 04/05/2024
+ms.date: 12/03/2025
 ---
 
 # List federatedIdentityCredentials
@@ -144,7 +144,6 @@ Content-Type: application/json
 
 #### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "agentidentityblueprint_list_federatedidentitycredentials"
@@ -153,12 +152,6 @@ Content-Type: application/json
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/applications/bcd7c908-1c4d-4d48-93ee-ff38349a75c8/microsoft.graph.agentIdentityBlueprint/federatedIdentityCredentials/
 ```
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/agentidentityblueprint-list-federatedidentitycredentials-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 #### Response
 The following example shows the response.
@@ -188,3 +181,4 @@ Content-Type: application/json
     }
   ]
 }
+```

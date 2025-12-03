@@ -5,7 +5,7 @@ author: "nickludwig"
 ms.localizationpriority: medium
 ms.subservice: "entra-applications"
 doc_type: apiPageType
-ms.date: 04/05/2024
+ms.date: 12/03/2025
 ---
 
 # Delete federatedIdentityCredential
@@ -130,7 +130,6 @@ HTTP/1.1 204 No Content
 
 #### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "agentidentityblueprint_delete_federatedidentitycredential"
@@ -139,12 +138,6 @@ HTTP/1.1 204 No Content
 ```http
 DELETE https://graph.microsoft.com/beta/applications/bcd7c908-1c4d-4d48-93ee-ff38349a75c8/microsoft.graph.agentIdentityBlueprint/federatedIdentityCredentials/d9b7bf1e-429e-4678-8132-9b00c9846cc4
 ```
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/agentidentityblueprint-delete-federatedidentitycredential-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 #### Response
 <!-- {

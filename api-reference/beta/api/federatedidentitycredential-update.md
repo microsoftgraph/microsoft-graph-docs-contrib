@@ -5,7 +5,7 @@ author: "nickludwig"
 ms.localizationpriority: medium
 ms.subservice: "entra-applications"
 doc_type: apiPageType
-ms.date: 12/03/2024
+ms.date: 12/03/2025
 ---
 
 # Update federatedIdentityCredential
@@ -153,7 +153,6 @@ HTTP/1.1 204 No Content
 
 #### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "agentidentityblueprint_update_federatedidentitycredential"
@@ -173,12 +172,6 @@ Content-Type: application/json
     ]
 }
 ```
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/agentidentityblueprint-update-federatedidentitycredential-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 #### Response
 <!-- {
