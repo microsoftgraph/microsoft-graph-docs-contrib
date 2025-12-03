@@ -221,7 +221,8 @@ Content-Type: application/json
 
 #### Request
 
-The following example shows a request for an operation that partially succeeded.
+The following example shows an operation that partially succeeded.
+
 <!-- {
   "blockType": "request",
   "name": "placethis.getoperation_partiallysucceeded"
@@ -233,7 +234,7 @@ GET https://graph.microsoft.com/beta/places/getOperation(id='116d12e4-3361-43f9-
 
 #### Response
 
-The following example shows the response with `partiallySucceeded`. The operation partially succeeded with 1 place created and 2 places failed. One child of "Demo Building 3" failed to be created because a place with the same name, type, parentId, and address already exists. Additionally, one top-level place failed for the same reason.
+The following example shows the response with `partiallySucceeded`. The operation partially succeeded with 1 place created and 2 places failed. One child of "Demo Building 3" failed to be created because a place with the same name, type, parentId, and address already exists. Additionally, one top-level place failed for AssignedPerson identity is null.
 
 <!-- {
   "blockType": "response",
