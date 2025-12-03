@@ -299,10 +299,10 @@
             "assignedPlaceMode",
             "dropInPlaceMode",
             "mailboxDetails",
-            "unavailablePlaceMode",
             "placeMode",
             "reservablePlaceMode",
-            "resourceLink"
+            "resourceLink",
+            "unavailablePlaceMode"
           ],
            "childNodes": [
             {
@@ -2623,7 +2623,7 @@
               ]
             },
             {
-              "name": "Microsoft Entra audit logs",
+              "name": "Microsoft Entra logs",
               "overview": "../../resources/azure-ad-auditlog-overview.md",
               "shouldSort": true,
               "resources": [

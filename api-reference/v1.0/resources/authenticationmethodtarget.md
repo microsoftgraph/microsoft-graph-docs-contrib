@@ -25,7 +25,7 @@ The following types are derived from this resource type:
 |:---|:---|:---|
 |id|String|Object Id of a Microsoft Entra user or group.|
 |isRegistrationRequired|Boolean|Determines if the user is enforced to register the authentication method.|
-|targetType|authenticationMethodTargetType|Possible values are: `user`, `group`.|
+|targetType|authenticationMethodTargetType|The possible values are: `user`, `group`.|
 
 ## Relationships
 None.

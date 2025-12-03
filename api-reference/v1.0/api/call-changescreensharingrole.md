@@ -41,7 +41,7 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter      | Type    |Description|
 |:---------------|:--------|:----------|
-|role|String|Possible values are: 'viewer', 'sharer'|
+|role|String|The possible values are: 'viewer', 'sharer'|
 
 ## Response
 If successful, this method returns a `202 Accepted` response code, and all participants will receive a roster update.

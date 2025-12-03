@@ -31,7 +31,7 @@ Unsupported Group Policy Extension.
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String||
-|settingScope|[groupPolicySettingScope](../resources/intune-gpanalyticsservice-grouppolicysettingscope.md)|Setting Scope of the unsupported extension. Possible values are: `unknown`, `device`, `user`.|
+|settingScope|[groupPolicySettingScope](../resources/intune-gpanalyticsservice-grouppolicysettingscope.md)|Setting Scope of the unsupported extension. The possible values are: `unknown`, `device`, `user`.|
 |namespaceUrl|String|Namespace Url of the unsupported extension.|
 |extensionType|String|ExtensionType of the unsupported extension.|
 |nodeName|String|Node name of the unsupported extension.|

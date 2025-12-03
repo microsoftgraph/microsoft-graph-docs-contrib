@@ -28,7 +28,7 @@ Inherits from [microsoft.graph.networkaccess.baseEntity](../resources/baseEntity
 |id|String|The identifier for the profile. Inherited from [microsoft.graph.entity](../resources/entity.md).|
 |lastModifiedDateTime|DateTimeOffset|The date and time when the profile was last modified.|
 |name|String|The name of the profile. Inherited from [microsoft.graph.networkaccess.baseEntity](../resources/baseentity.md).|
-|state|microsoft.graph.networkaccess.status|the status of the profile. Possible values are: `enabled` and `disabled`.|
+|state|microsoft.graph.networkaccess.status|the status of the profile. The possible values are: `enabled` and `disabled`.|
 |version|String|Profile version.|
 
 ## Relationships

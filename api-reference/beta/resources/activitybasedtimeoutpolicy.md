@@ -58,7 +58,7 @@ The properties below form the JSON object that represents an activity-based time
 | Property       | Type    |Description|
 |:-------------|:------|:---------|
 |Version|Integer|Policy version. Set value of 1. Required.|
-|ApplicationPolicies|JSON object|Collection of application policy. An application policy, is a combination of an ApplicationId and a WebSessionIdleTimeout: <br> <ul><li>**ApplicationId**: Allowed values:<ul><li> default: applies the policy to all applications that support activity-based timeout functionality but don't have application-specific override</li><li> c44b4083-3bb0-49c1-b47d-974e53cbdf3c: applies the policy to the Azure portal</li></ul></li><li>**WebSessionIdleTimeout**: The period of user inactivity after which the user's web session is considered expired. The minimum value is 5 minutes; the maximum value is one day.</li></ul> |
+|ApplicationPolicies|JSON object|Collection of application policy. An application policy, is a combination of an ApplicationId and a WebSessionIdleTimeout: <br> <ul><li>**ApplicationId**: Allowed values:<ul></li><li> default: applies the policy to all applications that support activity-based timeout functionality but don't have application-specific override</li><li> c44b4083-3bb0-49c1-b47d-974e53cbdf3c: applies the policy to the Azure portal</li></ul></li><li>**WebSessionIdleTimeout**: The period of user inactivity after which the user's web session is considered expired. The minimum value is 5 minutes; the maximum value is one day.</li></ul> |
 
 
 ## Relationships

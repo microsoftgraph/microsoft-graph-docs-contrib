@@ -47,7 +47,7 @@ PATCH /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/v
 |:---|:---|:---|
 |excludeTargets|[excludeTarget](../resources/excludetarget.md) collection|Groups of users that are excluded from the policy.|
 |isOfficePhoneAllowed|Boolean|`true` if users can register office phones, otherwise, `false`.|
-|state|authenticationMethodState|Possible values are: `enabled`, `disabled`.|
+|state|authenticationMethodState|The possible values are: `enabled`, `disabled`.|
 
 >**Note:** The `@odata.type` property with a value of `#microsoft.graph.voiceAuthenticationMethodConfiguration` must be included in the body.
 
