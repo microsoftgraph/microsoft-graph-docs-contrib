@@ -1,6 +1,6 @@
 ---
 title: "Delete federatedIdentityCredential"
-description: "Deletes a federatedIdentityCredential object."
+description: "Delete a federatedIdentityCredential object from an application or an agentIdentityBlueprint."
 author: "nickludwig"
 ms.localizationpriority: medium
 ms.subservice: "entra-applications"
@@ -13,23 +13,31 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Deletes a [federatedIdentityCredential](../resources/federatedidentitycredential.md) object from an application.
+Delete a [federatedIdentityCredential](../resources/federatedidentitycredential.md) object from an [application](../resources/application.md) or an [agentIdentityBlueprint](../resources/agentidentityblueprint.md).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
+### Permissions for an application
+
 <!-- { "blockType": "permissions", "name": "federatedidentitycredential_delete" } -->
 [!INCLUDE [permissions-table](../includes/permissions/federatedidentitycredential-delete-permissions.md)]
 
 [!INCLUDE [rbac-apps-serviceprincipal-creds-apis](../includes/rbac-for-apis/rbac-apps-serviceprincipal-creds-apis.md)]
 
+### Permissions for an agentIdentityBlueprint
+<!-- { "blockType": "permissions", "name": "federatedidentitycredential_delete_2" } -->
+[!INCLUDE [permissions-table](../includes/permissions/federatedidentitycredential-delete-2-permissions.md)]
+
+[!INCLUDE [rbac-agentid-apis-write](../includes/rbac-for-apis/rbac-agentid-apis-write.md)]
+
 ## HTTP request
 
-You can address the application using either its **id** or **appId**. **id** and **appId** are referred to as the **Object ID** and **Application (Client) ID**, respectively, in app registrations in the Microsoft Entra admin center.
-
-You can also address the federated identity credential with either its **id** or **name**.
+For an **application**:
+- You can address the application using either its **id** or **appId**. **id** and **appId** are referred to as the **Object ID** and **Application (Client) ID**, respectively, in app registrations in the Microsoft Entra admin center.
+- You can also address the federated identity credential with either its **id** or **name**.
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /applications/{id}/federatedIdentityCredentials/{federatedIdentityCredentialId}
@@ -39,6 +47,15 @@ DELETE /applications/{id}/federatedIdentityCredentials/{federatedIdentityCredent
 DELETE /applications(appId='{appId}')/federatedIdentityCredentials/{federatedIdentityCredentialId}
 
 DELETE /applications(appId='{appId}')/federatedIdentityCredentials/{federatedIdentityCredentialName}
+```
+
+For an **agentIdentityBlueprint**:
+- You can address the federated identity credential with either its **id** or **name**.
+<!-- { "blockType": "ignored" } -->
+```http
+DELETE /applications/{id}/microsoft.graph.agentIdentityBlueprint/federatedIdentityCredentials/{federatedIdentityCredentialId}
+
+DELETE /applications/{id}/microsoft.graph.agentIdentityBlueprint/federatedIdentityCredentials/{federatedIdentityCredentialName}
 ```
 
 ## Request headers
@@ -55,7 +72,9 @@ If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
-### Request
+### Example 1: Delete a federated identity credential from an application
+
+#### Request
 
 # [HTTP](#tab/http)
 <!-- {
@@ -97,7 +116,7 @@ DELETE https://graph.microsoft.com/beta/applications/bcd7c908-1c4d-4d48-93ee-ff3
 
 ---
 
-### Response
+#### Response
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -107,3 +126,32 @@ DELETE https://graph.microsoft.com/beta/applications/bcd7c908-1c4d-4d48-93ee-ff3
 HTTP/1.1 204 No Content
 ```
 
+### Example 2: Delete a federated identity credential from an agentIdentityBlueprint
+
+#### Request
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "agentidentityblueprint_delete_federatedidentitycredential"
+}
+-->
+```http
+DELETE https://graph.microsoft.com/beta/applications/bcd7c908-1c4d-4d48-93ee-ff38349a75c8/microsoft.graph.agentIdentityBlueprint/federatedIdentityCredentials/d9b7bf1e-429e-4678-8132-9b00c9846cc4
+```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/agentidentityblueprint-delete-federatedidentitycredential-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
+```http
+HTTP/1.1 204 No Content
+```
