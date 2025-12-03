@@ -18,7 +18,7 @@ The SharePoint cross-tenant migration APIs enable organizations to manage the ta
 
 ## How to use the SharePoint migration task API
 
-The migration process involves four key steps using the following operations:
+The migration process involves three key steps using the following operations:
 
 1. Create a [sharePointMigrationTask](sharePointmigrationtask.md) to migrate a resource from the source organization to the target organization.
 2. Get the **sharePointMigrationTask** that was previously created, using the ID, **sourceUserPrincipalName**, **sourceSiteUrl**, or **sourceGroupObjectId** of the task.
