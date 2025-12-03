@@ -18,7 +18,7 @@ Bulk upsert places in async mode.
 
 > **Note:**
 > - All requests require the `OData-Version: 4.01` header.
-> - The bulk upsert API doesn't support creating or updating desks with assigned place mode.
+> - Not support assigned mode.
 
 ## Supported scenarios
 
@@ -35,6 +35,7 @@ The request payload structure supports two key concepts:
 
 1. **Create vs. Update operations**: Places without an `id` property are treated as create operations, while places with an `id` property are treated as update operations.
 2. **Place hierarchy**: Use the `children@delta` property to create or update child places within a parent place. The `parentId` property is automatically assigned or updated for child places.
+3. Not support assigned mode.
 
 ## Data Retention
 
