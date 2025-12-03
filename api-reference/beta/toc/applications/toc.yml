@@ -66,9 +66,9 @@ items:
     - name: Federated identity credential
       href: ../../resources/federatedidentitycredential.md
     - name: List
-      href: ../../api/application-list-federatedidentitycredentials.md
+      href: ../../api/federatedidentitycredentials-list.md
     - name: Create
-      href: ../../api/application-post-federatedidentitycredentials.md
+      href: ../../api/federatedidentitycredentials-post.md
     - name: Get
       href: ../../api/federatedidentitycredential-get.md
     - name: Update
