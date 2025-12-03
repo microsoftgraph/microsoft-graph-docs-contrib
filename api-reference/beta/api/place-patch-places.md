@@ -89,14 +89,14 @@ If successful, this method returns a `202 Accepted` response code and an operati
 
 ## Examples
 
-#### Request
+### Request
 
-The example request tries to do the following:
+The following example shows a request that tries to perform these operations:
 
-1. Update an existing building to set the display name to "Demo Building A" and enable Wi-Fi and create a new floor "Demo Floor 1" as a child of the updated building
-2. Create a new building "Demo Building B" with a child floor "Demo Floor 1", which contains a new section "Demo Section A" with an existing desk and a new room "Demo Room 1"
-3. Create a new workspace with reservable mode under an existing parent
-4. Update an existing section to add a tag "CVP"
+- Update an existing building to set the display name to `Demo Building A`, enable Wi-Fi, and create a new floor `Demo Floor 1` as a child of the updated building.
+- Create a new building `Demo Building B` with a child floor `Demo Floor 1` that contains a new section `Demo Section A` with an existing desk and a new room `Demo Room 1`.
+- Create a new workspace in reservable mode under an existing parent.
+- Update an existing section to add the tag `CVP`.
 
 <!-- {
   "blockType": "request",
@@ -168,7 +168,7 @@ OData-Version: 4.01
 }
 ```
 
-#### Response
+### Response
 
 The following example shows the response.
 
