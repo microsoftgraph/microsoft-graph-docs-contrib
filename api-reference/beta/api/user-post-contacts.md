@@ -5,7 +5,7 @@ author: "kevinbellinger"
 ms.localizationpriority: medium
 ms.subservice: "outlook"
 doc_type: apiPageType
-ms.date: 04/05/2024
+ms.date: 12/03/2025
 ---
 
 # Create contact
@@ -181,6 +181,15 @@ Content-type: application/json
             "address":"pavelb@contoso.com"
         }
     ],
+    "primaryEmailAddress": {
+            "name":"Pavel Bansky",
+            "address":"pavelb@contoso.com"
+    },
+    "secondaryEmailAddress": {
+            "name":"Pavel Bansky",
+            "address":"pavelb@contoso.com"
+    },
+    "tertiaryEmailAddress": null,
     "websites":[
 
     ],

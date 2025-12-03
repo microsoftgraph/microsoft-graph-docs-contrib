@@ -5,7 +5,7 @@ author: "kevinbellinger"
 ms.localizationpriority: medium
 ms.subservice: "outlook"
 doc_type: apiPageType
-ms.date: 04/05/2024
+ms.date: 12/03/2025
 ---
 
 # Get contact
@@ -152,6 +152,15 @@ Content-type: application/json
       "type": "personal"
     }
   ],
+  "primaryEmailAddress": {
+    "name": "Garth",
+    "address": "garth@contoso.com"
+  },
+  "secondaryEmailAddress": {
+    "name": "Garth",
+    "address": "garth@contoso.com"
+  },
+  "tertiaryEmailAddress": null,
   "imAddresses": [
     "sip:garthf@contoso.com"
   ],

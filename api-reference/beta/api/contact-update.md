@@ -5,7 +5,7 @@ author: "kevinbellinger"
 ms.localizationpriority: medium
 ms.subservice: "outlook"
 doc_type: apiPageType
-ms.date: 04/05/2024
+ms.date: 12/03/2025
 ---
 
 # Update contact
@@ -64,6 +64,9 @@ In the request body, supply the values for relevant fields that should be update
 |department|String|The contact's department.|
 |displayName|String|The contact's display name. Note that later updates to other properties may cause an automatically generated value to overwrite the displayName value you have specified. To preserve a pre-existing value, always include it as displayName in an update operation.|
 |emailAddresses|[typedEmailAddress](../resources/typedemailaddress.md) collection|The contact's email addresses.|
+|primaryEmailAddress|[emailAddress](../resources/emailaddress.md)|The primary email address of the contact. Optional.|
+|secondaryEmailAddress|[emailAddress](../resources/emailaddress.md)|The secondary email address of the contact. Optional.|
+|tertiaryEmailAddress|[emailAddress](../resources/emailaddress.md)|The tertiary email address of the contact. Optional.|
 |fileAs|String|The name the contact is filed under.|
 |gender |String |The contact's gender. |
 |generation|String|The contact's generation.|
@@ -221,6 +224,15 @@ Content-type: application/json
             "address":"pavelb@contoso.com"
         }
     ],
+    "primaryEmailAddress": {
+        "name": "Pavel Bansky",
+        "address": "pavelb@contoso.com"
+    },
+    "secondaryEmailAddress": {
+        "name": "Pavel Bansky",
+        "address": "pavelb@contoso.com"
+    },
+    "tertiaryEmailAddress": null,
     "websites":[
 
     ],
