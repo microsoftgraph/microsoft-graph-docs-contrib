@@ -22,7 +22,7 @@ Inherits from [deviceAndAppManagementAssignmentTarget](../resources/intune-share
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|targetType|[scopeTagTargetType](../resources/intune-shared-scopetagtargettype.md)|The Scope Tag Target Type to Apply the Assignment too. Possible values are: `none`, `user`, `device`, `unknownFutureValue`.|
+|targetType|[scopeTagTargetType](../resources/intune-shared-scopetagtargettype.md)|The Scope Tag Target Type to Apply the Assignment too. The possible values are: `none`, `user`, `device`, `unknownFutureValue`.|
 |entraObjectId|String|The Entra Object Id that is the target of the assignment.|
 
 ## Relationships

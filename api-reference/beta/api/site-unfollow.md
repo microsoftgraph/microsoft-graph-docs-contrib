@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /users/{user-id}/followedSites/remove
+POST /users/{user-id | userPrincipalName}/followedSites/remove
 ```
 
 ## Request body

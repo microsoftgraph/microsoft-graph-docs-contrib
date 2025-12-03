@@ -34,7 +34,7 @@ For more information about risk detection, see [Microsoft Entra ID Protection](/
 
 | Property   | Type|Description|
 |:---------------|:--------|:----------|
-|activity|activityType|Indicates the activity type the detected risk is linked to. The possible values are `signin`, `user`, `unknownFutureValue`. |
+|activity|[activityType](../resources/activitytype.md)|Indicates the activity type the detected risk is linked to.|
 |activityDateTime|DateTimeOffset|Date and time that the risky activity occurred. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |additionalInfo|string|Additional information associated with the risk detection in JSON format. |
 |correlationId|string|Correlation ID of the sign-in associated with the risk detection. This property is null if the risk detection is not associated with a sign-in. |

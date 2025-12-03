@@ -5,7 +5,7 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.subservice: "non-product-specific"
 author: "MSGraphDocsvTeam"
-ms.date: 11/18/2025
+ms.date: 12/02/2025
 ms.custom: sfi-ropc-nochange
 ---
 
@@ -3076,15 +3076,6 @@ Possible values for user account types (group membership), per Windows definitio
 | offline |
 | unknownFutureValue |
 
-### activityType values
-
-| Member |
-| ------------------ |
-| signin |
-| user |
-| unknownFutureValue |
-| servicePrincipal |
-
 ### chatMessagePolicyViolationUserActionType values
 
 | Member              | Int value | Description                                                                                                        |
@@ -4016,18 +4007,6 @@ Possible values for user account types (group membership), per Windows definitio
 | ------ |
 | or |
 | and |
-
-### subjectRightsRequestStage values
-
-| Member |
-| ------------------ |
-| contentRetrieval |
-| contentReview |
-| generateReport |
-| contentDeletion |
-| caseResolved |
-| unknownFutureValue |
-| approval |
 
 ### subjectRightsRequestStageStatus values
 
@@ -5823,3 +5802,14 @@ Possible values for user account types (group membership), per Windows definitio
 |write|
 |create|
 |unknownFutureValue|
+
+### sharePointMigrationTaskStatus values
+
+| Member             |
+|:------------------ |
+| notStarted         |
+| inProgress         |
+| completed          |
+| cancelled          |
+| failed             |
+| unknownFutureValue |

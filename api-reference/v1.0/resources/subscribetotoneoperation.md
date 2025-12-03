@@ -20,7 +20,7 @@ Describes the response format of creation of subscription to receive DTMF tones.
 | :----------------------------- | :---------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------|
 | clientContext                  | String                      | The client context.                                                                                                                               |
 | id                             | String                      | The server operation ID. Read-only.                                                                                             |
-| status                         | String                      | Possible values are: `notStarted`, `running`, `completed`, `failed`. Read-only.                                                 |
+| status                         | String                      | The possible values are: `notStarted`, `running`, `completed`, `failed`. Read-only.                                                 |
 
 ## Relationships
 None

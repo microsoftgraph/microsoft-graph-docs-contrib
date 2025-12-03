@@ -51,7 +51,7 @@ The following table lists the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|childSelectability|[microsoft.graph.ediscovery.childSelectability](../resources/ediscovery-tag.md#childselectability-values)|Indicates whether a single or multiple child tags can be associated with a document. Possible values are: `One`, `Many`.  This value controls whether the UX presents the tags as checkboxes or a radio button group. Required.|
+|childSelectability|[microsoft.graph.ediscovery.childSelectability](../resources/ediscovery-tag.md#childselectability-values)|Indicates whether a single or multiple child tags can be associated with a document. The possible values are: `One`, `Many`.  This value controls whether the UX presents the tags as checkboxes or a radio button group. Required.|
 |displayName|String|Display name of the tag. Required.|
 
 ## Response

@@ -31,7 +31,7 @@ Represents a deployment event within the Global Secure Access services, includin
 |initiatedBy|String|Identifies the user or system that initiated the deployment.|
 |lastModifiedDateTime|DateTimeOffset|Specifies the date and time when the deployment was last modified.|
 |requestId|String|A unique identifier for the deployment request. Primary key.|
-|status|[microsoft.graph.networkaccess.deploymentStatus](../resources/networkaccess-deploymentstatus.md)|Represents the current status of the deployment, including its stage and any related messages.|
+|status|[microsoft.graph.networkaccess.deploymentStatus](../resources/networkaccess-deploymentstatus.md)|Represents the current status of the deployment, including its stage and any related messages. Supports `$filter` (`eq`) for **status/deploymentState**. For example, `status/deploymentStage eq 'succeeded'`.|
 
 
 ## Relationships
