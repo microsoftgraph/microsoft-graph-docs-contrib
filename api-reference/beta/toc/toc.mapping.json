@@ -299,10 +299,10 @@
             "assignedPlaceMode",
             "dropInPlaceMode",
             "mailboxDetails",
-            "unavailablePlaceMode",
             "placeMode",
             "reservablePlaceMode",
-            "resourceLink"
+            "resourceLink",
+            "unavailablePlaceMode"
           ],
            "childNodes": [
             {
@@ -1160,18 +1160,19 @@
             "bitlockerRecoveryKey",
             "deviceLocalCredentialInfo",
             "featureRolloutPolicy",
-            "mobileAppManagementPolicy",
-            "mobileDeviceManagementPolicy",
             "organizationSettings",
             "uxSetting",
             "deviceTemplate",
             "mutualTlsOauthConfiguration"
           ],
-          "complexTypes": [
-            "template",
-            "trustedCertificateAuthorityBase"
-          ],
           "childNodes": [
+            {
+              "name": "Mobility management policy",
+              "resources": [
+                "mobileAppManagementPolicy",
+                "mobileDeviceManagementPolicy"
+              ]
+            },
             {
               "name": "Custom security attributes",
               "overview": "../../resources/custom-security-attributes-overview.md",
@@ -1606,14 +1607,26 @@
             "appRoleAssignment",            
             "dataPolicyOperation",
             "oAuth2PermissionGrant",
-            "certificateBasedAuthConfiguration",
-            "externalIdentitiesPolicy",
-            "webApplicationFirewallProvider",
-            "cloudFlareWebApplicationFirewallProvider",
-            "akamaiWebApplicationFirewallProvider",
-            "webApplicationFirewallVerificationModel"
+            "externalIdentitiesPolicy"
           ],
           "childNodes": [
+            {
+              "name": "Certificate-based authentication (CBA)",
+              "resources": [
+                "certificateBasedAuthConfiguration",
+                "certificateBasedAuthPki",
+                "certificateAuthorityDetail"
+              ]
+            },
+            {
+              "name": "Web application firewall",
+              "resources": [
+                "webApplicationFirewallProvider",
+                "akamaiWebApplicationFirewallProvider",
+                "cloudFlareWebApplicationFirewallProvider",
+                "webApplicationFirewallVerificationModel"
+              ]
+            },
             {
               "name": "Sign-in identifiers",
               "resources": [
@@ -1886,13 +1899,6 @@
               ]
             },
             {
-              "name": "Public key infrastructure",
-              "resources": [
-                "certificateBasedAuthPki",
-                "certificateAuthorityDetail"
-               ]
-            },
-            {
               "name": "Trusted certificate authorities for apps (preview)",
               "resources": [
                 "certificateBasedApplicationConfiguration",
@@ -2107,9 +2113,6 @@
           "resources": [
             "microsoft.graph.networkaccess.tenantStatus",
             "microsoft.graph.networkaccess.branchSite",
-            "microsoft.graph.networkaccess.enrichedAuditLogs",
-            "microsoft.graph.networkaccess.logs",
-            "microsoft.graph.networkaccess.reports",
             "microsoft.graph.networkaccess.remoteNetwork",
             "microsoft.graph.networkaccess.alert"
           ],
@@ -2165,19 +2168,22 @@
               ]
             },
             {
-              "name": "Traffic logs",
-              "resources": [
-                "microsoft.graph.networkaccess.networkAccessTraffic",
-                "microsoft.graph.networkaccess.remoteNetworkHealthEvent"
-              ]
-            },
-            {
               "name": "TLS inspection",
               "resources": [
                 "microsoft.graph.networkaccess.externalCertificateAuthorityCertificate",
                 "microsoft.graph.networkaccess.tlsInspectionPolicy",
                 "microsoft.graph.networkaccess.tlsInspectionPolicyLink",
                 "microsoft.graph.networkaccess.tlsInspectionRule"
+              ]
+            },
+            {
+              "name": "Logs and monitoring",
+              "resources": [
+              "microsoft.graph.networkaccess.reports",
+              "microsoft.graph.networkaccess.alert",
+              "microsoft.graph.networkaccess.deployment",
+              "microsoft.graph.networkaccess.networkAccessTraffic",
+              "microsoft.graph.networkaccess.remoteNetworkHealthEvent"
               ]
             }
           ]
@@ -2203,12 +2209,6 @@
                 "delegatedAdminRelationshipRequest",
                 "delegatedAdminRelationshipOperation",
                 "delegatedAdminCustomer"
-              ],
-              "complexTypes": [
-                "delegatedAdminAccessContainer",
-                "delegatedAdminAccessDetails",
-                "delegatedAdminRelationshipCustomerParticipant",
-                "unifiedRole"
               ]
             }
           ]
@@ -2623,7 +2623,7 @@
               ]
             },
             {
-              "name": "Microsoft Entra audit logs",
+              "name": "Microsoft Entra logs",
               "overview": "../../resources/azure-ad-auditlog-overview.md",
               "shouldSort": true,
               "resources": [

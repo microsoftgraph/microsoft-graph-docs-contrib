@@ -13,7 +13,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a summary of device onboarding and offboarding within a specified timeframe. This summary includes the total number of devices, active devices, and inactive devices.
+Get a summary of device onboarding and offboarding within a specified timeframe as logged in [Global Secure Access](../resources/networkaccess-global-secure-access-api-overview.md). This summary includes the total number of devices, active devices, and inactive devices.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 

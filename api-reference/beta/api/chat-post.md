@@ -49,7 +49,7 @@ The following table lists the properties that are required to create a chat obje
 |Property|Type|Description|
 |:---|:---|:---|
 |topic|(Optional) String|The title of the chat. The chat title can be provided only if the chat is of `group` type.|
-|chatType|[chatType](../resources/chat.md#chattype-values)| Specifies the type of chat. Possible values are: `group` and `oneOnOne`. |
+|chatType|[chatType](../resources/chat.md#chattype-values)| Specifies the type of chat. The possible values are: `group` and `oneOnOne`. |
 |members|[conversationMember](../resources/conversationmember.md) collection|List of conversation members that should be added. Every user who participates in the chat, including the user who initiates the created request, must be specified in this list. Each member must be assigned a role of `owner` or `guest`. In-tenant guests must be assigned the `guest` role. Out-of-tenant guests must be assigned the `owner` role.|
 |installedApps| [teamsApp](../resources/teamsapp.md) collection|List of apps that should be installed in the chat.|
 

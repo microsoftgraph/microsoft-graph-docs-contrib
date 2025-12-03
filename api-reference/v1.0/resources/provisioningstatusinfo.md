@@ -20,7 +20,7 @@ Describes the status of the provisioning summary event.
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |errorInformation|[provisioningErrorInfo](provisioningErrorInfo.md)| If status isn't success/ skipped details for the error are contained in this.|
-|status|provisioningResult| Possible values are: `success`, `warning`, `failure`, `skipped`, `unknownFutureValue`.|
+|status|provisioningResult| The possible values are: `success`, `warning`, `failure`, `skipped`, `unknownFutureValue`.|
 
 ## JSON representation
 

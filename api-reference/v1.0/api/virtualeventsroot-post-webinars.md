@@ -52,7 +52,7 @@ You can specify the following properties when you create a [virtualEventWebinar]
 
 |Property|Type|Description|
 |:---|:---|:---|
-| audience | meetingAudience | The audience to whom the webinar is visible. Possible values are: `everyone`, `organization`, and `unknownFutureValue`. |
+| audience | meetingAudience | The audience to whom the webinar is visible. The possible values are: `everyone`, `organization`, and `unknownFutureValue`. |
 | coOrganizers  | [communicationsUserIdentity](../resources/communicationsuseridentity.md) collection | The identity information of coorganizers of the webinar. |
 | description | [itemBody](../resources/itembody.md) | A description of the webinar. |
 | displayName | String | The display name of the webinar. |

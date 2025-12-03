@@ -1,6 +1,6 @@
 ---
 title: "deviceScopeOperator enum type"
-description: "Device scope configuration query operator. Possible values are: equals, notEquals, contains, notContains, greaterThan, lessThan. Default value: equals."
+description: "Device scope configuration query operator. The possible values are: equals, notEquals, contains, notContains, greaterThan, lessThan. Default value: equals."
 author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Device scope configuration query operator. Possible values are: equals, notEquals, contains, notContains, greaterThan, lessThan. Default value: equals.
+Device scope configuration query operator. The possible values are: equals, notEquals, contains, notContains, greaterThan, lessThan. Default value: equals.
 
 ## Members
 |Member|Value|Description|

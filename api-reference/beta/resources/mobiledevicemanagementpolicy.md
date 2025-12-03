@@ -31,7 +31,7 @@ Inherits from [mobilityManagementPolicy](../resources/mobilitymanagementpolicy.m
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|appliesTo|policyScope|Indicates the user scope of the MDM policy. Possible values are: `none`, `all`, `selected`. Inherited from [mobilityManagementPolicy](../resources/mobilitymanagementpolicy.md). The possible values are: `none`, `all`, `selected`, `unknownFutureValue`.|
+|appliesTo|policyScope|Indicates the user scope of the MDM policy. The possible values are: `none`, `all`, `selected`. Inherited from [mobilityManagementPolicy](../resources/mobilitymanagementpolicy.md). The possible values are: `none`, `all`, `selected`, `unknownFutureValue`.|
 |isMdmEnrollmentDuringRegistrationDisabled|Boolean|Controls the option if users in an automatic enrollment configuration on Microsoft Entra registered devices are prompted to MDM enroll their device in the Entra account registration flow.|
 |complianceUrl|String| Compliance URL of the mobility management application. Inherited from [mobilityManagementPolicy](../resources/mobilitymanagementpolicy.md).|
 |description|String|Description of the MDM application. Inherited from [mobilityManagementPolicy](../resources/mobilitymanagementpolicy.md).|

@@ -28,9 +28,9 @@ Describes the information protection label that details how to properly apply a 
 
 | Property       | Type              | Description                                                                                                |
 | :------------- | :---------------- | :--------------------------------------------------------------------------------------------------------- |
-| actionSource   | microsoft.graph.security.labelActionSource | Indicates the source of the action that resulted in the label being applied. Possible values are: `manual`, `automatic`, `recommended`, `none`.|
+| actionSource   | microsoft.graph.security.labelActionSource | Indicates the source of the action that resulted in the label being applied. The possible values are: `manual`, `automatic`, `recommended`, `none`.|
 | applicableTo   | microsoft.graph.security.sensitivityLabelTarget | Specifies the workloads where the label can be applied. Possible values: `email`, `site`, `unifiedGroup`, `teamwork`, `file`, `schematizedData`. |
-| applicationMode | microsoft.graph.security.applicationMode | Specifies how the label should be applied or recommended. Possible values are: `manual`, `automatic`, `recommended`. |
+| applicationMode | microsoft.graph.security.applicationMode | Specifies how the label should be applied or recommended. The possible values are: `manual`, `automatic`, `recommended`. |
 | autoTooltip    | String | The tooltip displayed to users for recommended or automatically applied labels. |
 | color          | String            | The color that the UI should display for the label, if configured.                                         |
 | contentFormats | String collection | Returns the supported content formats for the label.                                                       |

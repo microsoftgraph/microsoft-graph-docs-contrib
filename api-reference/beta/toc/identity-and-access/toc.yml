@@ -384,38 +384,40 @@ items:
       href: ../../api/uxsetting-get.md
     - name: Update
       href: ../../api/uxsetting-update.md
-  - name: Mobile app management policy
+  - name: Mobility management policy
     items:
     - name: Mobile app management policy
-      href: ../../resources/mobileappmanagementpolicy.md
-    - name: List
-      href: ../../api/mobileappmanagementpolicies-list.md
-    - name: Get
-      href: ../../api/mobileappmanagementpolicies-get.md
-    - name: Update
-      href: ../../api/mobileappmanagementpolicies-update.md
-    - name: List included groups
-      href: ../../api/mobileappmanagementpolicies-list-includedgroups.md
-    - name: Add group to policy
-      href: ../../api/mobileappmanagementpolicies-post-includedgroups.md
-    - name: Delete group from policy
-      href: ../../api/mobileappmanagementpolicies-delete-includedgroups.md
-  - name: Mobile device management policy
-    items:
+      items:
+      - name: Mobile app management policy
+        href: ../../resources/mobileappmanagementpolicy.md
+      - name: List
+        href: ../../api/mobileappmanagementpolicies-list.md
+      - name: Get
+        href: ../../api/mobileappmanagementpolicies-get.md
+      - name: Update
+        href: ../../api/mobileappmanagementpolicies-update.md
+      - name: List included groups
+        href: ../../api/mobileappmanagementpolicies-list-includedgroups.md
+      - name: Add group to policy
+        href: ../../api/mobileappmanagementpolicies-post-includedgroups.md
+      - name: Delete group from policy
+        href: ../../api/mobileappmanagementpolicies-delete-includedgroups.md
     - name: Mobile device management policy
-      href: ../../resources/mobiledevicemanagementpolicy.md
-    - name: List
-      href: ../../api/mobiledevicemanagementpolicies-list.md
-    - name: Get
-      href: ../../api/mobiledevicemanagementpolicies-get.md
-    - name: Update
-      href: ../../api/mobiledevicemanagementpolicies-update.md
-    - name: List included groups
-      href: ../../api/mobiledevicemanagementpolicies-list-includedgroups.md
-    - name: Add group to policy
-      href: ../../api/mobiledevicemanagementpolicies-post-includedgroups.md
-    - name: Delete group from policy
-      href: ../../api/mobiledevicemanagementpolicies-delete-includedgroups.md
+      items:
+      - name: Mobile device management policy
+        href: ../../resources/mobiledevicemanagementpolicy.md
+      - name: List
+        href: ../../api/mobiledevicemanagementpolicies-list.md
+      - name: Get
+        href: ../../api/mobiledevicemanagementpolicies-get.md
+      - name: Update
+        href: ../../api/mobiledevicemanagementpolicies-update.md
+      - name: List included groups
+        href: ../../api/mobiledevicemanagementpolicies-list-includedgroups.md
+      - name: Add group to policy
+        href: ../../api/mobiledevicemanagementpolicies-post-includedgroups.md
+      - name: Delete group from policy
+        href: ../../api/mobiledevicemanagementpolicies-delete-includedgroups.md
   - name: Mutual TLS OAuth configuration
     items:
     - name: Mutual TLS OAuth configuration
@@ -683,12 +685,6 @@ items:
       href: ../../api/tenantrelationship-findtenantinformationbydomainname.md
     - name: Find tenant by tenant ID
       href: ../../api/tenantrelationship-findtenantinformationbytenantid.md
-  - name: Complex types
-    items:
-    - name: Template
-      href: ../../resources/template.md
-    - name: Trusted certificate authority base
-      href: ../../resources/trustedcertificateauthoritybase.md
 - name: Governance
   displayName: Identity Governance, Access reviews, Entitlement Management, Terms of Use, Privileged Identity Management, Microsoft Entra ID Governance
   items:
@@ -2110,8 +2106,6 @@ items:
         href: ../../resources/termsexpiration.md
 - name: Identity and sign-in
   items:
-  - name: Akamai web application firewall provider
-    href: ../../resources/akamaiwebapplicationfirewallprovider.md
   - name: App role assignment
     items:
     - name: App role assignment
@@ -2631,21 +2625,67 @@ items:
         href: ../../api/trustframework-put-trustframeworkpolicy.md
       - name: Delete
         href: ../../api/trustframeworkpolicy-delete.md
-  - name: Certificate-based auth configuration
-    displayName: CBA
+  - name: Certificate-based authentication (CBA)
     items:
     - name: Certificate-based auth configuration
-      href: ../../resources/certificatebasedauthconfiguration.md
-    - name: List
-      href: ../../api/certificatebasedauthconfiguration-list.md
-    - name: Get
-      href: ../../api/certificatebasedauthconfiguration-get.md
-    - name: Create
-      href: ../../api/certificatebasedauthconfiguration-post-certificatebasedauthconfiguration.md
-    - name: Delete
-      href: ../../api/certificatebasedauthconfiguration-delete.md
-  - name: Cloud flare web application firewall provider
-    href: ../../resources/cloudflarewebapplicationfirewallprovider.md
+      displayName: CBA
+      items:
+      - name: Certificate-based auth configuration
+        href: ../../resources/certificatebasedauthconfiguration.md
+      - name: List
+        href: ../../api/certificatebasedauthconfiguration-list.md
+      - name: Get
+        href: ../../api/certificatebasedauthconfiguration-get.md
+      - name: Create
+        href: ../../api/certificatebasedauthconfiguration-post-certificatebasedauthconfiguration.md
+      - name: Delete
+        href: ../../api/certificatebasedauthconfiguration-delete.md
+    - name: Certificate-based auth PKI
+      items:
+      - name: Certificate-based auth PKI
+        href: ../../resources/certificatebasedauthpki.md
+      - name: List
+        href: ../../api/publickeyinfrastructureroot-list-certificatebasedauthconfigurations.md
+      - name: Create
+        href: ../../api/publickeyinfrastructureroot-post-certificatebasedauthconfigurations.md
+      - name: Get
+        href: ../../api/certificatebasedauthpki-get.md
+      - name: Update
+        href: ../../api/certificatebasedauthpki-update.md
+      - name: Delete
+        href: ../../api/publickeyinfrastructureroot-delete-certificatebasedauthconfigurations.md
+      - name: Upload
+        href: ../../api/certificatebasedauthpki-upload.md
+      - name: List deleted items
+        href: ../../api/directory-deleteditems-list.md
+      - name: Get deleted item
+        href: ../../api/directory-deleteditems-get.md
+      - name: Restore deleted item
+        href: ../../api/directory-deleteditems-restore.md
+      - name: Permanently delete item
+        href: ../../api/directory-deleteditems-delete.md
+    - name: Certificate authority detail
+      items:
+      - name: Certificate authority detail
+        href: ../../resources/certificateauthoritydetail.md
+      - name: List
+        href: ../../api/certificatebasedauthpki-list-certificateauthorities.md
+      - name: Create
+        href: ../../api/certificatebasedauthpki-post-certificateauthorities.md
+      - name: Get
+        href: ../../api/certificateauthoritydetail-get.md
+      - name: Update
+        href: ../../api/certificateauthoritydetail-update.md
+      - name: Delete
+        href: ../../api/certificatebasedauthpki-delete-certificateauthorities.md
+      - name: List deleted items
+        href: ../../api/directory-deleteditems-list.md
+      - name: Get deleted item
+        href: ../../api/directory-deleteditems-get.md
+      - name: Restore deleted item
+        href: ../../api/directory-deleteditems-restore.md
+      - name: Permanently delete item
+        href: ../../api/directory-deleteditems-delete.md
   - name: Conditional access
     items:
     - name: Conditional access policy
@@ -3195,17 +3235,17 @@ items:
   - name: Organizational branding
     displayName: Tenant branding, UX customization
     items:
-    - name: Organizational branding
+    - name: Default tenant branding
       items:
-      - name: Organizational branding
+      - name: Default tenant branding
         href: ../../resources/organizationalbranding.md
       - name: Get
         href: ../../api/organizationalbranding-get.md
       - name: Update
         href: ../../api/organizationalbranding-update.md
-    - name: Organizational branding localization
+    - name: Language-specific tenant branding
       items:
-      - name: Organizational branding localization
+      - name: Language-specific tenant branding
         href: ../../resources/organizationalbrandinglocalization.md
       - name: List
         href: ../../api/organizationalbranding-list-localizations.md
@@ -3217,9 +3257,9 @@ items:
         href: ../../api/organizationalbrandinglocalization-update.md
       - name: Delete
         href: ../../api/organizationalbrandinglocalization-delete.md
-    - name: Organizational branding theme
+    - name: Tenant branding theme
       items:
-      - name: Organizational branding theme
+      - name: Tenant branding theme
         href: ../../resources/organizationalbrandingtheme.md
       - name: List
         href: ../../api/organizationalbranding-list-themes.md
@@ -3231,9 +3271,9 @@ items:
         href: ../../api/organizationalbrandingtheme-update.md
       - name: Delete
         href: ../../api/organizationalbranding-delete-themes.md
-    - name: Organizational branding theme localization
+    - name: Language-specific tenant branding theme
       items:
-      - name: Organizational branding theme localization
+      - name: Language-specific tenant branding theme
         href: ../../resources/organizationalbrandingthemelocalization.md
       - name: List
         href: ../../api/organizationalbrandingtheme-list-localizations.md
@@ -3433,54 +3473,6 @@ items:
         href: ../../api/serviceprincipal-post-permissiongrantpreapprovalpolicies.md
       - name: Unassign from service principal
         href: ../../api/serviceprincipal-delete-permissiongrantpreapprovalpolicies.md
-  - name: Public key infrastructure
-    items:
-    - name: Certificate-based auth pki
-      items:
-      - name: Certificate-based auth pki
-        href: ../../resources/certificatebasedauthpki.md
-      - name: List
-        href: ../../api/publickeyinfrastructureroot-list-certificatebasedauthconfigurations.md
-      - name: Create
-        href: ../../api/publickeyinfrastructureroot-post-certificatebasedauthconfigurations.md
-      - name: Get
-        href: ../../api/certificatebasedauthpki-get.md
-      - name: Update
-        href: ../../api/certificatebasedauthpki-update.md
-      - name: Delete
-        href: ../../api/publickeyinfrastructureroot-delete-certificatebasedauthconfigurations.md
-      - name: Upload
-        href: ../../api/certificatebasedauthpki-upload.md
-      - name: List deleted items
-        href: ../../api/directory-deleteditems-list.md
-      - name: Get deleted item
-        href: ../../api/directory-deleteditems-get.md
-      - name: Restore deleted item
-        href: ../../api/directory-deleteditems-restore.md
-      - name: Permanently delete item
-        href: ../../api/directory-deleteditems-delete.md
-    - name: Certificate authority detail
-      items:
-      - name: Certificate authority detail
-        href: ../../resources/certificateauthoritydetail.md
-      - name: List
-        href: ../../api/certificatebasedauthpki-list-certificateauthorities.md
-      - name: Create
-        href: ../../api/certificatebasedauthpki-post-certificateauthorities.md
-      - name: Get
-        href: ../../api/certificateauthoritydetail-get.md
-      - name: Update
-        href: ../../api/certificateauthoritydetail-update.md
-      - name: Delete
-        href: ../../api/certificatebasedauthpki-delete-certificateauthorities.md
-      - name: List deleted items
-        href: ../../api/directory-deleteditems-list.md
-      - name: Get deleted item
-        href: ../../api/directory-deleteditems-get.md
-      - name: Restore deleted item
-        href: ../../api/directory-deleteditems-restore.md
-      - name: Permanently delete item
-        href: ../../api/directory-deleteditems-delete.md
   - name: Sign-in identifiers
     items:
     - name: Sign in identifier base
@@ -3775,32 +3767,38 @@ items:
         href: ../../api/verifiedidprofile-update.md
       - name: Delete
         href: ../../api/identityverifiedidroot-delete-profiles.md
-  - name: Web application firewall provider
+  - name: Web application firewall
     items:
     - name: Web application firewall provider
-      href: ../../resources/webapplicationfirewallprovider.md
-    - name: List
-      href: ../../api/riskpreventioncontainer-list-webapplicationfirewallproviders.md
-    - name: Create
-      href: ../../api/riskpreventioncontainer-post-webapplicationfirewallproviders.md
-    - name: Get
-      href: ../../api/webapplicationfirewallprovider-get.md
-    - name: Update
-      href: ../../api/webapplicationfirewallprovider-update.md
-    - name: Delete
-      href: ../../api/riskpreventioncontainer-delete-webapplicationfirewallproviders.md
-    - name: Verify
-      href: ../../api/webapplicationfirewallprovider-verify.md
-  - name: Web application firewall verification model
-    items:
+      items:
+      - name: Web application firewall provider
+        href: ../../resources/webapplicationfirewallprovider.md
+      - name: List
+        href: ../../api/riskpreventioncontainer-list-webapplicationfirewallproviders.md
+      - name: Create
+        href: ../../api/riskpreventioncontainer-post-webapplicationfirewallproviders.md
+      - name: Get
+        href: ../../api/webapplicationfirewallprovider-get.md
+      - name: Update
+        href: ../../api/webapplicationfirewallprovider-update.md
+      - name: Delete
+        href: ../../api/riskpreventioncontainer-delete-webapplicationfirewallproviders.md
+      - name: Verify
+        href: ../../api/webapplicationfirewallprovider-verify.md
+    - name: Akamai web application firewall provider
+      href: ../../resources/akamaiwebapplicationfirewallprovider.md
+    - name: Cloud flare web application firewall provider
+      href: ../../resources/cloudflarewebapplicationfirewallprovider.md
     - name: Web application firewall verification model
-      href: ../../resources/webapplicationfirewallverificationmodel.md
-    - name: List
-      href: ../../api/riskpreventioncontainer-list-webapplicationfirewallverifications.md
-    - name: Get
-      href: ../../api/webapplicationfirewallverificationmodel-get.md
-    - name: Delete
-      href: ../../api/riskpreventioncontainer-delete-webapplicationfirewallverifications.md
+      items:
+      - name: Web application firewall verification model
+        href: ../../resources/webapplicationfirewallverificationmodel.md
+      - name: List
+        href: ../../api/riskpreventioncontainer-list-webapplicationfirewallverifications.md
+      - name: Get
+        href: ../../api/webapplicationfirewallverificationmodel-get.md
+      - name: Delete
+        href: ../../api/riskpreventioncontainer-delete-webapplicationfirewallverifications.md
 - name: Multicloud permissions management (deprecated)
   items:
   - name: Overview
@@ -4480,48 +4478,6 @@ items:
         href: ../../resources/networkaccess-connectivityconfigurationlink.md
       - name: Get
         href: ../../api/networkaccess-branchconnectivityconfiguration-get.md
-  - name: Traffic logs
-    items:
-    - name: Traffic logs
-      href: ../../resources/networkaccess-logs.md
-    - name: List traffic
-      href: ../../api/networkaccess-logs-list-traffic.md
-    - name: Network access traffic
-      items:
-      - name: Network access traffic
-        href: ../../resources/networkaccess-networkaccesstraffic.md
-      - name: List
-        href: ../../api/networkaccess-logs-list-traffic.md
-      - name: Get
-        href: ../../api/networkaccess-networkaccesstraffic-get.md
-    - name: Remote network health event
-      items:
-      - name: Remote network health event
-        href: ../../resources/networkaccess-remotenetworkhealthevent.md
-      - name: List
-        href: ../../api/networkaccess-logs-list-remotenetworks.md
-  - name: Traffic reports
-    items:
-    - name: Traffic reports
-      href: ../../resources/networkaccess-reports.md
-    - name: Get transaction summaries
-      href: ../../api/networkaccess-reports-transactionsummaries.md
-    - name: Get entities summary
-      href: ../../api/networkaccess-reports-entitiessummaries.md
-    - name: Get cross-tenant access summary
-      href: ../../api/networkaccess-reports-getcrosstenantsummary.md
-    - name: Get cross-tenant access report
-      href: ../../api/networkaccess-reports-crosstenantaccessreport.md
-    - name: Get device usage summary
-      href: ../../api/networkaccess-reports-getdeviceusagesummary.md
-    - name: Get device usage report
-      href: ../../api/networkaccess-reports-devicereport.md
-    - name: Get destination summary
-      href: ../../api/networkaccess-reports-getdestinationsummaries.md
-    - name: Get destination report
-      href: ../../api/networkaccess-reports-destinationreport.md
-    - name: Get user usage report
-      href: ../../api/networkaccess-reports-userreport.md
   - name: Remote network
     items:
     - name: Remote network
@@ -4820,6 +4776,64 @@ items:
         href: ../../api/networkaccess-tlsinspectionrule-update.md
       - name: Delete
         href: ../../api/networkaccess-tlsinspectionrule-delete.md
+  - name: Logs and monitoring
+    items:
+    - name: Traffic reports
+      items:
+      - name: Traffic reports
+        href: ../../resources/networkaccess-reports.md
+      - name: Get transaction summaries
+        href: ../../api/networkaccess-reports-transactionsummaries.md
+      - name: Get entities summary
+        href: ../../api/networkaccess-reports-entitiessummaries.md
+      - name: Get cross-tenant access summary
+        href: ../../api/networkaccess-reports-getcrosstenantsummary.md
+      - name: Get cross-tenant access report
+        href: ../../api/networkaccess-reports-crosstenantaccessreport.md
+      - name: Get device usage summary
+        href: ../../api/networkaccess-reports-getdeviceusagesummary.md
+      - name: Get device usage report
+        href: ../../api/networkaccess-reports-devicereport.md
+      - name: Get destination summary
+        href: ../../api/networkaccess-reports-getdestinationsummaries.md
+      - name: Get destination report
+        href: ../../api/networkaccess-reports-destinationreport.md
+      - name: Get user usage report
+        href: ../../api/networkaccess-reports-userreport.md
+    - name: Alert
+      items:
+      - name: Alert
+        href: ../../resources/networkaccess-alert.md
+      - name: List
+        href: ../../api/networkaccess-networkaccessroot-list-alerts.md
+      - name: Get alert severity summaries
+        href: ../../api/networkaccess-alert-getalertseveritysummaries.md
+      - name: Get alert frequencies
+        href: ../../api/networkaccess-alert-getalertfrequencies.md
+      - name: Get alert summaries
+        href: ../../api/networkaccess-alert-getalertsummaries.md
+    - name: Deployment
+      items:
+      - name: Deployment
+        href: ../../resources/networkaccess-deployment.md
+      - name: List
+        href: ../../api/networkaccess-deployments-list.md
+      - name: Get
+        href: ../../api/networkaccess-deployments-get.md
+    - name: Network access traffic
+      items:
+      - name: Network access traffic
+        href: ../../resources/networkaccess-networkaccesstraffic.md
+      - name: List
+        href: ../../api/networkaccess-logs-list-traffic.md
+      - name: Get
+        href: ../../api/networkaccess-networkaccesstraffic-get.md
+    - name: Remote network health event
+      items:
+      - name: Remote network health event
+        href: ../../resources/networkaccess-remotenetworkhealthevent.md
+      - name: List
+        href: ../../api/networkaccess-logs-list-remotenetworks.md
 - name: Partner customer administration
   items:
   - name: Partner security alert
@@ -4893,16 +4907,6 @@ items:
         href: ../../api/tenantrelationship-list-delegatedadmincustomers.md
       - name: Get
         href: ../../api/delegatedadmincustomer-get.md
-    - name: Complex types
-      items:
-      - name: Delegated admin access container
-        href: ../../resources/delegatedadminaccesscontainer.md
-      - name: Delegated admin access details
-        href: ../../resources/delegatedadminaccessdetails.md
-      - name: Delegated admin relationship customer participant
-        href: ../../resources/delegatedadminrelationshipcustomerparticipant.md
-      - name: Unified role
-        href: ../../resources/unifiedrole.md
 - name: Partner Center security
   items:
   - name: Partner security score

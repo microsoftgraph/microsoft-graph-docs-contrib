@@ -75,7 +75,7 @@ Aside from a meeting request, an **eventMessage** instance can be found in an in
 |hasAttachments|Boolean|Indicates whether the message has attachments.|
 |id|String| Unique identifier for the message. [!INCLUDE [outlook-beta-id](../../includes/outlook-immutable-id.md)] Read-only. |
 |importance|String| The importance of the message: `low`, `normal`, `high`.|
-|inferenceClassification|String| Possible values are: `focused`, `other`.|
+|inferenceClassification|String| The possible values are: `focused`, `other`.|
 |internetMessageHeaders | [internetMessageHeader](internetmessageheader.md) collection | The collection of message headers, defined by [RFC5322](https://www.ietf.org/rfc/rfc5322.txt), that provide details of the network path taken by a message from the sender to the recipient. Read-only.|
 |internetMessageId |String |The message ID in the format specified by [RFC5322](https://www.ietf.org/rfc/rfc5322.txt). |
 |isAllDay |Boolean|Indicates whether the event lasts the entire day. Adjusting this property requires adjusting the **startDateTime** and **endDateTime** properties of the event as well.|

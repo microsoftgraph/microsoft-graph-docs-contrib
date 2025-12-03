@@ -19,7 +19,7 @@ Represents a single DTMF event.
 | Property       | Type    | Description|
 |:---------------|:--------|:----------|
 | lastModifiedDateTime | DateTime | The state modified time in UTC. |
-| state | String | Possible values are: `notStarted`, `active`, `inactive`. |
+| state | String | The possible values are: `notStarted`, `active`, `inactive`. |
 
 ## JSON representation
 

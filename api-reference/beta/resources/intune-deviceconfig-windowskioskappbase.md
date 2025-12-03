@@ -21,9 +21,9 @@ The base class for a type of apps
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|startLayoutTileSize|[windowsAppStartLayoutTileSize](../resources/intune-deviceconfig-windowsappstartlayouttilesize.md)|The app tile size for the start layout. Possible values are: `hidden`, `small`, `medium`, `wide`, `large`.|
+|startLayoutTileSize|[windowsAppStartLayoutTileSize](../resources/intune-deviceconfig-windowsappstartlayouttilesize.md)|The app tile size for the start layout. The possible values are: `hidden`, `small`, `medium`, `wide`, `large`.|
 |name|String|Represents the friendly name of an app|
-|appType|[windowsKioskAppType](../resources/intune-deviceconfig-windowskioskapptype.md)|The app type. Possible values are: `unknown`, `store`, `desktop`, `aumId`.|
+|appType|[windowsKioskAppType](../resources/intune-deviceconfig-windowskioskapptype.md)|The app type. The possible values are: `unknown`, `store`, `desktop`, `aumId`.|
 |autoLaunch|Boolean|Allow the app to be auto-launched in multi-app kiosk mode|
 
 ## Relationships
