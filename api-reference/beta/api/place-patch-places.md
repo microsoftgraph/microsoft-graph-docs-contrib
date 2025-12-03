@@ -1,6 +1,6 @@
 ---
 title: "Bulk upsert"
-description: "Bulk upsert places in async mode."
+description: "Bulk upsert one or more place objects in async mode."
 author: "Dongjing-MSIT"
 ms.date: 11/10/2025
 ms.localizationpriority: medium
@@ -16,9 +16,11 @@ Namespace: microsoft.graph
 
 Bulk upsert one or more [place](../resources/place.md) objects in async mode.
 
-> **Note:**
+>The following aspects apply when you work with this API:
+>- Operations are retained for 15 days from creation.
+>- This API has a throttling limit of three calls per second. For more information, see [Microsoft Graph service-specific throttling limits](/graph/throttling-limits).
 > - All requests require the `OData-Version: 4.01` header.
-> - Assigned mode isn't supported in bulk upsert yet.
+> - Curently, you can't use assigned mode with this API.
 
 ## Supported scenarios
 
@@ -36,18 +38,10 @@ The following scenarios are supported, and you can also combine them as needed:
 - Assigned mode isn't supported in bulk upsert yet.
 - It isn't supported to update an existing child place under an existing parent place using children[@delta](https://github.com/delta) property. They should be updated separately.
 
-## Data Retention
-
-- Operations are retained for 15 days from creation.
-
 ## Job-level Concurrency
 
 - Only three concurrent bulk upsert operations are allowed at the tenant level.
 - If there are already three operations created or in progress, another PATCH API call is rejected with a `429 Too Many Requests` status code
-
-## API Level Throttling
-
-- This API has a throttling limit of three calls per second. 
 
 ## Permissions
 
