@@ -18,28 +18,26 @@ Bulk upsert places in async mode.
 
 > **Note:**
 > - All requests require the `OData-Version: 4.01` header.
-> - Not support assigned mode.
+> - Assigned mode is not supported in bulk upsert yet.
 
 ## Supported scenarios
 
-This API supports the following operations:
-
-- Create multiple new places in a single request.
-- Update multiple existing places in a single request.
-- Create or update places with parent-child relationships using the `children@delta` property. The `parentId` property is automatically assigned for child places created within a parent structure.
-- Move existing places to different parents, including newly created parents. The `parentId` property is automatically updated.
+- Create multiple independent places.
+- Create places with hierarchy, including create new children places under an existing place.
+- Update multiple independent places.
+- Update the hierarchy of places, including move an existing place to under a new place.
+- Combinations of above scenarios.
 
 ## Understand request payload
 
-The request payload structure supports two key concepts:
-
-1. **Create vs. Update operations**: Places without an `id` property are treated as create operations, while places with an `id` property are treated as update operations.
-2. **Place hierarchy**: Use the `children@delta` property to create or update child places within a parent place. The `parentId` property is automatically assigned or updated for child places.
-3. Not support assigned mode.
+- Create vs. Update: Places without an id property will be created, while places with an id property will be updated by id.
+- Place hierarchy: Use the children[@delta](https://github.com/delta) property to create or update children places within a parent place. The parentId property is automatically set for children places.
+- Assigned mode is not supported in bulk upsert yet.
+- It is not supported to update an existing child place under an existing parent place using children[@delta](https://github.com/delta) property. They should be updated separately.
 
 ## Data Retention
 
-- Operation results are retained for 15 days from creation.
+- Operations are retained for 15 days from creation.
 
 ## Job-level Concurrency
 
@@ -89,11 +87,11 @@ The same properties can be specified as when you [create](../api/place-post.md) 
 
 If successful, this method returns a `202 Accepted` response code and an operation ID in the `Location` response header that you can use to [get](../api/place-getoperation.md) the operation.
 
-## Example: mixed create and update operations
+## Examples
 
 #### Request
 
-The following example combines all supported scenarios:
+The example request tries to do the following:
 
 1. Update an existing building to set the display name to "Demo Building A" and enable Wi-Fi and create a new floor "Demo Floor 1" as a child of the updated building
 2. Create a new building "Demo Building B" with a child floor "Demo Floor 1", which contains a new section "Demo Section A" with an existing desk and a new room "Demo Room 1"

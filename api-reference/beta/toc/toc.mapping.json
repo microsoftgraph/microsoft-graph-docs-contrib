@@ -287,25 +287,25 @@
           "resources": [
             "place",
             "building",
-            "checkInClaim",
-            "placeOperation",
             "floor",
             "section",
-            "workspace",
-            "desk",
             "room",
+            "desk",
+            "workspace",
+            "checkInClaim",
+            "placeOperation",
             "roomList"
           ],
-          "complexTypes": [
+          "complexTypes": [            
+            "mailboxDetails",
+            "placeMode",
             "assignedPlaceMode",
             "dropInPlaceMode",
-            "mailboxDetails",
-            "placeExecutionResult",
-            "placeMode",
-            "placeOperationProgress",
             "reservablePlaceMode",
+            "unavailablePlaceMode",
             "resourceLink",
-            "unavailablePlaceMode"
+            "placeExecutionResult",
+            "placeOperationProgress"
           ],
            "childNodes": [
             {

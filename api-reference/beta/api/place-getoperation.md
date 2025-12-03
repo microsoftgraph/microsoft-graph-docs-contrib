@@ -18,7 +18,7 @@ Get a [placeOperation](../resources/placeoperation.md) by ID.
 
 ## Data Retention
 
-- Operation results are retained for 15 days from creation.
+- Operations are retained for 15 days from creation.
 
 ## API Level Throttling
 
@@ -72,8 +72,8 @@ If successful, this function returns a `200 OK` response code and a [placeOperat
 
 The operation details in response mirror the hierarchical structure of the request payload:
 
-- Each top-level place in the request appears as a top-level entry in the `details` array
-- The hierarchy specified using `children@delta` in the request is preserved in the `children` array of the response
+- Each top-level place in the request appears as a top-level entry in the `details` array in the same order as in the request
+- The hierarchy specified using `children@delta` in the request is preserved in the `children` array of the response in the same order as in the request
 - Successfully created or updated places are returned in the `succeededPlace` property
 - Any errors encountered during processing are returned in the `error` property
 
@@ -81,7 +81,7 @@ The operation details in response mirror the hierarchical structure of the reque
 
 ### Example 1: Get a succeeded operation
 
-This example demonstrates the operation response for the bulk upsert request shown in [Example of the bulk upsert API](place-patch-places.md#example-mixed-create-and-update-operations). The response structure mirrors the request hierarchy, with each top-level place from the request appearing in the `details` array and child places nested in the `children` arrays.
+This example demonstrates the operation response for the bulk upsert request shown in [Example of the bulk upsert API](place-patch-places.md#examples). The response structure mirrors the request hierarchy, with each top-level place from the request appearing in the `details` array and child places nested in the `children` arrays.
 
 #### Request
 
@@ -234,7 +234,7 @@ GET https://graph.microsoft.com/beta/places/getOperation(id='116d12e4-3361-43f9-
 
 #### Response
 
-The following example shows the response with `partiallySucceeded`. The operation partially succeeded with one place created and two places failed. One child of "Demo Building 3" failed to be created because a place with the same name, type, parentId, and address already exists. Additionally, one top-level place failed for another reason.
+The following example shows the response with `partiallySucceeded`. The operation partially succeeded with one place created and two places failed.
 
 <!-- {
   "blockType": "response",
@@ -277,7 +277,7 @@ Content-Type: application/json
 		{
 			"error": {
 				"code": "BadRequest",
-				"message": "Mailbox parameter is not supported for room or workspace creation."
+				"message": "A Place with the same name, type, parentId and address already exists with ID 9ba9753e-181a-471f-aa84-9ed238afae58."
 			}
 		}
 	]

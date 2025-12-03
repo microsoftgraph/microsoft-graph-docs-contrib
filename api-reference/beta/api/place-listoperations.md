@@ -18,7 +18,7 @@ List all existing [placeOperation](../resources/placeoperation.md) objects. This
 
 ## Data Retention
 
-- Operation results are retained for 15 days from creation.
+- Operations are retained for 15 days from creation.
 
 ## API Level Throttling
 
