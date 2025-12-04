@@ -1,84 +1,102 @@
-{
+﻿{
   "changelog": [
     {
       "ChangeList": [
         {
-          "Id": "5faccc0b-eb4c-475d-a3f6-bf89dc8f127c",
-          "ApiChange": "Relationship",
-          "ChangedApiName": "teams",
+          "Id": "7241844a-a568-419a-8f8e-161e8db6e0b8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "user",
           "ChangeType": "Addition",
-          "Description": "Added the **teams** relationship to the [admin](https://learn.microsoft.com/en-us/graph/api/resources/admin?view=graph-rest-beta) resource.",
-          "Target": "admin"
-        },
+          "Description": "Added the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-1.0) resource.",
+          "Target": "user"
+        }
+      ],
+      "Id": "7241844a-a568-419a-8f8e-161e8db6e0b8",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-12-03T08:16:32.1692598Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
         {
-          "Id": "5faccc0b-eb4c-475d-a3f6-bf89dc8f127c",
+          "Id": "dbf8b99d-aa70-4819-9f4d-6ec10a59f6b3",
           "ApiChange": "Resource",
           "ChangedApiName": "admin",
-          "ChangeType": "Deprecation",
-          "Description": "Deprecated the [admin](https://learn.microsoft.com/en-us/graph/api/resources/admin?view=graph-rest-beta) resource.",
+          "ChangeType": "Addition",
+          "Description": "Added the [admin](https://learn.microsoft.com/en-us/graph/api/resources/admin?view=graph-rest-1.0) resource.",
           "Target": "admin"
         },
         {
-          "Id": "5faccc0b-eb4c-475d-a3f6-bf89dc8f127c",
-          "ApiChange": "Member",
-          "ChangedApiName": "ineligibleUser",
-          "ChangeType": "Deletion",
-          "Description": "Removed the `ineligibleUser` member from the **accountType** enumeration.",
-          "Target": "accountType"
-        },
-        {
-          "Id": "5faccc0b-eb4c-475d-a3f6-bf89dc8f127c",
-          "ApiChange": "Annotation",
-          "ChangedApiName": "ineligibleUser",
-          "ChangeType": "Deprecation",
-          "Description": "Removed the **ineligibleUser** resource.",
-          "Target": "accountType"
-        },
-        {
-          "Id": "5faccc0b-eb4c-475d-a3f6-bf89dc8f127c",
-          "ApiChange": "Resource",
-          "ChangedApiName": "allPolicyAssignment",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **allPolicyAssignment** resource.",
-          "Target": "allPolicyAssignment"
-        },
-        {
-          "Id": "5faccc0b-eb4c-475d-a3f6-bf89dc8f127c",
-          "ApiChange": "Relationship",
-          "ChangedApiName": "userConfigurations",
+          "Id": "dbf8b99d-aa70-4819-9f4d-6ec10a59f6b3",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "accountType",
           "ChangeType": "Addition",
-          "Description": "Added the **userConfigurations** relationship to the [teamsAdminRoot](https://learn.microsoft.com/en-us/graph/api/resources/teamsadministration-teamsadminroot?view=graph-rest-beta) resource.",
-          "Target": "teamsAdminRoot"
+          "Description": "Added the **accountType** enumeration type.",
+          "Target": "accountType"
         },
         {
-          "Id": "5faccc0b-eb4c-475d-a3f6-bf89dc8f127c",
+          "Id": "dbf8b99d-aa70-4819-9f4d-6ec10a59f6b3",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "assignmentCategory",
+          "ChangeType": "Addition",
+          "Description": "Added the **assignmentCategory** enumeration type.",
+          "Target": "assignmentCategory"
+        },
+        {
+          "Id": "dbf8b99d-aa70-4819-9f4d-6ec10a59f6b3",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "assignmentType",
+          "ChangeType": "Addition",
+          "Description": "Added the **assignmentType** enumeration type.",
+          "Target": "assignmentType"
+        },
+        {
+          "Id": "dbf8b99d-aa70-4819-9f4d-6ec10a59f6b3",
+          "ApiChange": "Resource",
+          "ChangedApiName": "assignedTelephoneNumber",
+          "ChangeType": "Addition",
+          "Description": "Added the [assignedTelephoneNumber](https://learn.microsoft.com/en-us/graph/api/resources/teamsAdministration-assignedTelephoneNumber?view=graph-rest-1.0) resource.",
+          "Target": "assignedTelephoneNumber"
+        },
+        {
+          "Id": "dbf8b99d-aa70-4819-9f4d-6ec10a59f6b3",
+          "ApiChange": "Resource",
+          "ChangedApiName": "effectivePolicyAssignment",
+          "ChangeType": "Addition",
+          "Description": "Added the [effectivePolicyAssignment](https://learn.microsoft.com/en-us/graph/api/resources/teamsAdministration-effectivePolicyAssignment?view=graph-rest-1.0) resource.",
+          "Target": "effectivePolicyAssignment"
+        },
+        {
+          "Id": "dbf8b99d-aa70-4819-9f4d-6ec10a59f6b3",
+          "ApiChange": "Resource",
+          "ChangedApiName": "policyAssignment",
+          "ChangeType": "Addition",
+          "Description": "Added the [policyAssignment](https://learn.microsoft.com/en-us/graph/api/resources/teamsAdministration-policyAssignment?view=graph-rest-1.0) resource.",
+          "Target": "policyAssignment"
+        },
+        {
+          "Id": "dbf8b99d-aa70-4819-9f4d-6ec10a59f6b3",
           "ApiChange": "Resource",
           "ChangedApiName": "teamsAdminRoot",
-          "ChangeType": "Deprecation",
-          "Description": "Deprecated the [teamsAdminRoot](https://learn.microsoft.com/en-us/graph/api/resources/teamsAdministration-teamsAdminRoot?view=graph-rest-beta) resource.",
+          "ChangeType": "Addition",
+          "Description": "Added the [teamsAdminRoot](https://learn.microsoft.com/en-us/graph/api/resources/teamsAdministration-teamsAdminRoot?view=graph-rest-1.0) resource.",
           "Target": "teamsAdminRoot"
         },
         {
-          "Id": "5faccc0b-eb4c-475d-a3f6-bf89dc8f127c",
+          "Id": "dbf8b99d-aa70-4819-9f4d-6ec10a59f6b3",
           "ApiChange": "Resource",
           "ChangedApiName": "teamsUserConfiguration",
           "ChangeType": "Addition",
-          "Description": "Added the [teamsUserConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/teamsAdministration-teamsUserConfiguration?view=graph-rest-beta) resource.",
-          "Target": "teamsUserConfiguration"
-        },
-        {
-          "Id": "5faccc0b-eb4c-475d-a3f6-bf89dc8f127c",
-          "ApiChange": "Property",
-          "ChangedApiName": "effectivePolicyAssignments",
-          "ChangeType": "Addition",
-          "Description": "Added the **effectivePolicyAssignments** property to the [teamsUserConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/teamsAdministration-teamsUserConfiguration?view=graph-rest-beta) resource.",
+          "Description": "Added the [teamsUserConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/teamsAdministration-teamsUserConfiguration?view=graph-rest-1.0) resource.",
           "Target": "teamsUserConfiguration"
         }
       ],
-      "Id": "5faccc0b-eb4c-475d-a3f6-bf89dc8f127c",
+      "Id": "dbf8b99d-aa70-4819-9f4d-6ec10a59f6b3",
       "Cloud": "Prod",
-      "Version": "beta",
-      "CreatedDateTime": "2025-04-16T14:06:16.659448Z",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-12-03T08:16:32.1697008Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": "Teams administration"
     }
