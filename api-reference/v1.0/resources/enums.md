@@ -578,7 +578,7 @@ Namespace: microsoft.graph
 | allDirectoryServicePrincipals |
 | allConfiguredConnectedOrganizationUsers |
 | allExternalUsers |
-|allDirectoryAgentIdentities|
+| allDirectoryAgentIdentities |
 | unknownFutureValue |
 
 ### accessPackageAssignmentFilterByCurrentUserOptions values
