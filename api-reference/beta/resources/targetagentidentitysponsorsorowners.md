@@ -1,7 +1,7 @@
 ---
 title: "targetAgentIdentitySponsorsOrOwners resource type"
 description: "Defines the sponsors and owners of a targeted agent identity. Also defines if the sponsors and owners are the primary, or backup sponsor or owner for an agent identity."
-author: "vikama-msft"
+author: "vikama-microsoft"
 ms.date: 12/03/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
