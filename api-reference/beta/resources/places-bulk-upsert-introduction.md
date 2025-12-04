@@ -5,6 +5,7 @@ author: "Dongjing-MSIT"
 ms.date: 12/04/2025
 ms.localizationpriority: medium
 ms.subservice: "outlook"
+doc_type: resourcePageType
 ---
 
 # Working with the Places Bulk Upsert API in Microsoft Graph
