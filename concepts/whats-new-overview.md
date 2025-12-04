@@ -18,6 +18,14 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 > [!IMPORTANT]
 > Features in _preview_ status are subject to change without notice, and might not be promoted to generally available (GA) status. Don't use preview features in production apps.
 
+## December 2025: New in preview only
+
+### Teamwork and communications | Presence
+
+The next endpoints are no longer supported for management of [work location](/graph/resources/userworklocation) for a user:
+- `/users/{usersId}/presence`
+- `/communications/presences/{presenceId}`
+
 ## November 2025: New and generally available
 
 ### Backup storage
