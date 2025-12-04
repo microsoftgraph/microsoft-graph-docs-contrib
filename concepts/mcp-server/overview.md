@@ -46,7 +46,7 @@ The Microsoft MCP Server for Enterprise exposes the following tools that an AI a
 
 The Microsoft MCP Server for Enterprise enables several key scenarios:
 
-- **IT helpdesk and support**: Support staff can answer questions like "*Which users didn't sign in last month?*" or "*Is MFA enabled for all administrators?*" without memorizing Graph endpoints. Multi-step questions such as "List all inactive user accounts that have Copilot licenses assigned" can also be handled.
+- **IT helpdesk and support**: Support staff can answer questions like "*Which users didn't sign in last month?*" or "*Is MFA enabled for all administrators?*" without memorizing Graph endpoints. Multi-step questions such as "*List all inactive user accounts that have Copilot licenses assigned*" can also be handled.
 - **Administrative reporting**: Administrators can generate reports conversationally (for example, "*Show me the unassigned licenses in my tenant*" or "*How many guest users do we have?*").
 - **API discovery and prototyping**: Developers can explore and test Microsoft Graph APIs using natural language before integrating them into applications. The MCP server surfaces the underlying API calls so developers can reuse them in scripts or code.
 - **Automation and scripting**: Scripted solutions, Power Platform flows, or Logic Apps can call the MCP server to execute delegated, natural-language-driven queries over Microsoft Entra data.

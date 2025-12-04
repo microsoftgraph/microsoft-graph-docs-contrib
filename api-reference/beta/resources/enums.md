@@ -1770,32 +1770,6 @@ Namespace: microsoft.graph
 | scopeBasedAuthRequirementPolicy |
 | authenticationStrengths |
 
-### riskDetail values
-
-| Member |
-| ----------------------------------------- |
-| none |
-| adminGeneratedTemporaryPassword |
-| userPerformedSecuredPasswordChange |
-| userPerformedSecuredPasswordReset |
-| adminConfirmedSigninSafe |
-| aiConfirmedSigninSafe |
-| userPassedMFADrivenByRiskBasedPolicy |
-| adminDismissedAllRiskForUser |
-| adminConfirmedSigninCompromised |
-| hidden |
-| adminConfirmedUserCompromised |
-| unknownFutureValue |
-| adminConfirmedServicePrincipalCompromised |
-| adminDismissedAllRiskForServicePrincipal |
-| m365DAdminDismissedDetection |
-| userChangedPasswordOnPremises |
-| adminDismissedRiskForSignIn |
-| adminConfirmedAccountSafe |
-| adminConfirmedAgentSafe |
-| adminConfirmedAgentCompromised |
-| adminDismissedRiskForAgent |
-
 <!-- maintenance comment: Do not delete enum delcaration for riskEventType until all properties of this type are marked as deleted. Dec 28, 2021: Pending eventTypes (in riskUserActivity) and riskType (in riskDetection)-->
 ### riskEventType values
 
@@ -2939,14 +2913,14 @@ Possible values for user account types (group membership), per Windows definitio
 
 ### riskLevel values
 
-| Member |
-| ------------------ |
-| low |
-| medium |
-| high |
-| hidden |
-| none |
-| unknownFutureValue |
+|Member|
+|:---|
+|low|
+|medium|
+|high|
+|hidden|
+|none|
+|unknownFutureValue|
 
 ### riskState values
 
@@ -4509,6 +4483,16 @@ Possible values for user account types (group membership), per Windows definitio
 | sharedContent |
 | unknownFutureValue |
 
+### purviewInsiderRiskManagementLevel values
+
+|Member|
+|:---|
+|none|
+|minor|
+|moderate|
+|elevated|
+|unknownFutureValue|
+
 ### chatMessageActions values
 
 | Member |
@@ -5841,3 +5825,14 @@ Possible values for user account types (group membership), per Windows definitio
 |write|
 |create|
 |unknownFutureValue|
+
+### sharePointMigrationTaskStatus values
+
+| Member             |
+|:------------------ |
+| notStarted         |
+| inProgress         |
+| completed          |
+| cancelled          |
+| failed             |
+| unknownFutureValue |
