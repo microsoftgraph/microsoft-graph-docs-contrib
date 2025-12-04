@@ -87,23 +87,23 @@ Content-Type: application/json
 {
   "value": [
     {
-			"id": "15cc23bd-f215-42bf-92ad-bb84fbcd6606",
-			"status": "partiallySucceeded",
-			"progress": {
-				"totalPlaceCount": 3,
-				"succeededPlaceCount": 1,
-				"failedPlaceCount": 2
-			}
-		},
-		{
-			"id": "0f5d3cc5-d1bd-4cba-9b0e-e9ad68527ab5",
-			"status": "succeeded",
-			"progress": {
-				"totalPlaceCount": 9,
-				"succeededPlaceCount": 9,
-				"failedPlaceCount": 0
-			}
-		},
+      "id": "15cc23bd-f215-42bf-92ad-bb84fbcd6606",
+      "status": "partiallySucceeded",
+      "progress": {
+        "totalPlaceCount": 3,
+        "succeededPlaceCount": 1,
+        "failedPlaceCount": 2
+      }
+    },
+    {
+      "id": "0f5d3cc5-d1bd-4cba-9b0e-e9ad68527ab5",
+      "status": "succeeded",
+      "progress": {
+        "totalPlaceCount": 9,
+        "succeededPlaceCount": 9,
+        "failedPlaceCount": 0
+      }
+    }
   ]
 }
 ```
