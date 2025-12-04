@@ -42,7 +42,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 ``` http
 POST /me/presence/clearAutomaticLocation
-POST /users/{usersId}/presence/clearAutomaticLocation
 ```
 
 ## Request headers

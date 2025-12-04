@@ -25,7 +25,7 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 Use the following new endpoints to enable the management of work location for a user:
 - [Clear](/graph/api/presence-clearautomaticlocation) the automatic work location value for a user.
 - [Clear](/graph/api/presence-clearlocation) the work location signals for a user, including both the manual and automatic layers for the current date.
-- [Update](/graph/api/presence-setautomaticlocation) the automatic work location for a user.
+- [Set](/graph/api/presence-setautomaticlocation) the automatic work location for a user.
 - [Set](/graph/api/presence-setmanuallocation) the user’s manual work location signal.
 
 ## November 2025: New and generally available
