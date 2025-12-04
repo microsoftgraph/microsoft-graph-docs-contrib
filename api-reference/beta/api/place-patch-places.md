@@ -63,7 +63,7 @@ The same properties can be specified as when you [create](../api/place-post.md) 
 
 If successful, this method returns a `202 Accepted` response code and an operation URL in the `Location` response header that you can use to [get](../api/place-getoperation.md) the operation.
 
-## Example: mixed create and update operations
+## Example
 
 The following example shows a request that combines multiple operations including updating an existing building, creating new places with hierarchy, and updating properties:
 - Update an existing building to set the display name to "Demo Building A" and enable Wi-Fi and create a new floor "Demo Floor 1" as a child of the updated building.
