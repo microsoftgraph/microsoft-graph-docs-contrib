@@ -1,5 +1,5 @@
 ---
-title: "agentIdentityBlueprint setVerifiedPublisher"
+title: "agentIdentityBlueprint: setVerifiedPublisher"
 description: "Set the verified publisher of an agentIdentityBlueprint."
 ms.localizationpriority: medium
 author: "xurobertMSFT"
@@ -8,7 +8,7 @@ doc_type: "apiPageType"
 ms.date: 04/05/2024
 ---
 
-# agentIdentityBlueprint setVerifiedPublisher
+# agentIdentityBlueprint: setVerifiedPublisher
 
 Namespace: microsoft.graph
 
