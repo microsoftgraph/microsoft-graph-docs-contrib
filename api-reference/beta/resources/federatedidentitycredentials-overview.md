@@ -40,7 +40,7 @@ The combination of **issuer** and **subject** must be unique on the app.  When t
 
 ## Design considerations
 
-A maximum of 20 federated identity credentials can be added per application object or user-assigned managed identity.
+A maximum of 20 federated identity credentials can be added per application object or user-assigned managed identity or agentIdentityBlueprint.
 
 ## Related content
 
