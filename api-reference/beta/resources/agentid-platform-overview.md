@@ -31,7 +31,7 @@ The following core components comprise Microsoft Entra Agent ID's architecture:
 | **Blueprint principal** | Record of blueprint's addition to a tenant. | [agentIdentityBlueprintPrincipal](../resources/agentidentityblueprintprincipal.md) |
 | **Agent identity** | Primary identity for authentication | [agentIdentity](../resources/agentidentity.md) |
 | **Agent user** | Optional account for scenarios that require a user account | [agentUser](../resources/agentUser.md) |
-| **Agent registry** | Centralized repository for agent management | [agentRegistry](../resources/agentregistry.md) |
+| **Agent registry** | Centralized repository for agent management that serves as the platform for managing agent card manifests, agent instances, and agent collections. | [agentRegistry](../resources/agentregistry.md) |
 
 Learn more about the agent identity architecture in the following articles:
 - [Agent identity and blueprint concepts in Microsoft Entra ID](/entra/agent-id/identity-platform/key-concepts)
