@@ -22,11 +22,7 @@ Update the properties of a [b2bManagementPolicy](../resources/b2bmanagementpolic
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "b2bmanagementpolicy-update-permissions"
-}
--->
+<!-- { "blockType": "permissions", "name": "b2bmanagementpolicy_update" } -->
 [!INCLUDE [permissions-table](../includes/permissions/b2bmanagementpolicy-update-permissions.md)]
 
 [!INCLUDE [rbac-b2bmanagementPolicy-apis-write](../includes/rbac-for-apis/rbac-b2bmanagementpolicy-apis-write.md)]
