@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Bulk upsert one or more [place](../resources/place.md) objects in async mode. This API allows you to create and update multiple places efficiently in a single request.
 
-For detailed guidance on using this API, including scenarios, best practices, and concurrency limits, see [Working with the Bulk Upsert Places in Microsoft Graph](/graph/places-bulk-upsert-introduction).
+For more information on how to use this API, including scenarios, best practices, and concurrency limits, see [Working with the Places bulk upsert API in Microsoft Graph](/graph/places-bulk-upsert-overview).
 
 > [!NOTE]
 > - Operations are retained for 15 days from creation.
