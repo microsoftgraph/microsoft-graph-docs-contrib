@@ -5066,21 +5066,7 @@ Possible values for user account types (group membership), per Windows definitio
 | samAccountName |
 | unknownFutureValue |
 
-### allowedTargetScope values
 
-|Member|
-|:---|
-|notSpecified|
-|specificDirectoryUsers|
-|specificConnectedOrganizationUsers|
-|specificDirectoryServicePrincipals|
-|allMemberUsers|
-|allDirectoryUsers|
-|allDirectoryServicePrincipals|
-|allConfiguredConnectedOrganizationUsers|
-|allExternalUsers|
-|allDirectoryAgentIdentities|
-|unknownFutureValue|
 
 ### samlAttributeNameFormat values
 
