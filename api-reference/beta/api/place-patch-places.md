@@ -14,39 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Bulk upsert places in async mode.
+Bulk upsert [places](../resources/place.md) in async mode. This API allows you to create and update multiple places efficiently in a single request.
 
-> **Note:**
-> - All requests require the `OData-Version: 4.01` header.
-> - Assigned mode isn't supported in bulk upsert yet.
-
-## Supported scenarios
-
-- Create multiple independent places.
-- Create places with hierarchy, including create new children places under an existing place.
-- Update multiple independent places.
-- Update the hierarchy of places, including move an existing place to under a new place.
-- Combinations of above scenarios.
-
-## Understand request payload
-
-- Create vs. Update: Places without an id property will be created, while places with an id property will be updated by id.
-- Place hierarchy: Use the children[@delta](https://github.com/delta) property to create or update children places within a parent place. The parentId property is automatically set for children places.
-- Assigned mode isn't supported in bulk upsert yet.
-- It isn't supported to update an existing child place under an existing parent place using children[@delta](https://github.com/delta) property. They should be updated separately.
-
-## Data Retention
-
-- Operations are retained for 15 days from creation.
-
-## Job-level Concurrency
-
-- Only three concurrent bulk upsert operations are allowed at the tenant level.
-- If there are already three operations created or in progress, another PATCH API call is rejected with a `429 Too Many Requests` status code
-
-## API Level Throttling
-
-- This API has a throttling limit of three calls per second. 
+For detailed guidance on using this API, including scenarios, best practices, and concurrency limits, see [Working with the Bulk Upsert Places in Microsoft Graph](../../../concepts/places-bulk-upsert-introduction.md). 
 
 ## Permissions
 
@@ -89,14 +59,9 @@ If successful, this method returns a `202 Accepted` response code and an operati
 
 ## Examples
 
-#### Request
+### Example 1: Mixed create and update operations
 
-The example request tries to do the following:
-
-1. Update an existing building to set the display name to "Demo Building A" and enable Wi-Fi and create a new floor "Demo Floor 1" as a child of the updated building
-2. Create a new building "Demo Building B" with a child floor "Demo Floor 1", which contains a new section "Demo Section A" with an existing desk and a new room "Demo Room 1"
-3. Create a new workspace with reservable mode under an existing parent
-4. Update an existing section to add a tag "CVP"
+The following example shows a request that combines multiple operations including updating an existing building, creating new places with hierarchy, and updating properties.
 
 <!-- {
   "blockType": "request",
