@@ -14,34 +14,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Bulk upsert one or more [place](../resources/place.md) objects in async mode.
+Bulk upsert one or more [place](../resources/place.md) objects in async mode. This API allows you to create and update multiple places efficiently in a single request.
 
->The following aspects apply when you work with this API:
->- Operations are retained for 15 days from creation.
->- This API has a throttling limit of three calls per second. For more information, see [Microsoft Graph service-specific throttling limits](/graph/throttling-limits).
+For detailed guidance on using this API, including scenarios, best practices, and concurrency limits, see [Working with the Bulk Upsert Places in Microsoft Graph](../../../concepts/places-bulk-upsert-introduction.md).
+
+> [!NOTE]
+> - Operations are retained for 15 days from creation.
+> - This API has a throttling limit of three calls per second. For more information, see [Microsoft Graph service-specific throttling limits](/graph/throttling-limits).
 > - All requests require the `OData-Version: 4.01` header.
-> - Curently, you can't use assigned mode with this API.
-
-## Supported scenarios
-
-The following scenarios are supported, and you can also combine them as needed:
-
-- Create multiple independent places.
-- Create places with hierarchy, including new child places under an existing place.
-- Update multiple independent places.
-- Update the hierarchy of places, including the move an existing place under a new place.
-
-## Understand request payload
-
-- Create vs. Update: Places without an **id** property are created and places with an **id** property are updated by ID.
-- Place hierarchy: Use the children[@delta](https://github.com/delta) property to create or update children places within a parent place. The **parentId** property is automatically set for children places.
-- Assigned mode isn't supported in bulk upsert yet.
-- It isn't supported to update an existing child place under an existing parent place using children[@delta](https://github.com/delta) property. They should be updated separately.
-
-## Job-level Concurrency
-
-- Only three concurrent bulk upsert operations are allowed at the tenant level.
-- If there are already three operations created or in progress, another PATCH API call is rejected with a `429 Too Many Requests` status code
+> - Currently, you can't use assigned mode with this API.
 
 ## Permissions
 
@@ -84,6 +65,7 @@ If successful, this method returns a `202 Accepted` response code and an operati
 
 ## Examples
 
+<<<<<<< HEAD
 ### Request
 
 The following example shows a request that tries to perform these operations:
@@ -92,6 +74,11 @@ The following example shows a request that tries to perform these operations:
 - Create a new building `Demo Building B` with a child floor `Demo Floor 1` that contains a new section `Demo Section A` with an existing desk and a new room `Demo Room 1`.
 - Create a new workspace in reservable mode under an existing parent.
 - Update an existing section to add the tag `CVP`.
+=======
+### Example 1: Mixed create and update operations
+
+The following example shows a request that combines multiple operations including updating an existing building, creating new places with hierarchy, and updating properties.
+>>>>>>> 0f2a914cd86 (Update the introduction)
 
 <!-- {
   "blockType": "request",
