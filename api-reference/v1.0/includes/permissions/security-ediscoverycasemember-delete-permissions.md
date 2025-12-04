@@ -6,6 +6,6 @@ ms.localizationpriority: medium
 
 |Permission type|Least privileged permission|Higher privileged permissions|
 |:---|:---|:---|
-|Delegated (work or school account)|eDiscovery.Read.All|eDiscovery.ReadWrite.All|
+|Delegated (work or school account)|eDiscovery.ReadWrite.All|eDiscovery.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|eDiscovery.Read.All|eDiscovery.ReadWrite.All|
+|Application|eDiscovery.ReadWrite.All|eDiscovery.ReadWrite.All|
