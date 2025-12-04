@@ -22,11 +22,7 @@ Get a list of the [organizationalBrandingTheme](../resources/organizationalbrand
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "organizationalbranding-list-themes-permissions"
-}
--->
+<!-- { "blockType": "permissions", "name": "organizationalbranding_list_themes" } -->
 [!INCLUDE [permissions-table](../includes/permissions/organizationalbranding-list-themes-permissions.md)]
 
 [!INCLUDE [rbac-org-branding-apis-read](../includes/rbac-for-apis/rbac-org-branding-apis-read.md)]
