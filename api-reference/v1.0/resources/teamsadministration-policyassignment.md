@@ -1,10 +1,10 @@
 ---
 title: "policyAssignment resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+description: "Represents the details of a policy instance, such as displayName and groupId."
+author: "praspatil05"
 ms.date: 12/03/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 
@@ -14,16 +14,16 @@ Namespace: microsoft.graph.teamsAdministration
 
 
 
-**TODO: Add Description**
+Represents the details of a policy instance, such as **displayName** and **groupId**.
 
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|assignmentType|microsoft.graph.teamsAdministration.assignmentType|**TODO: Add Description**. The possible values are: `direct`, `group`, `unknownFutureValue`.|
-|displayName|String|**TODO: Add Description**|
-|groupId|String|**TODO: Add Description**|
-|policyId|String|**TODO: Add Description**|
+|assignmentType|microsoft.graph.teamsAdministration.assignmentType|The type of assignment: `group` for group-based assignment, `direct` for user-based assignment. The possible values are: `direct`, `group`, `unknownFutureValue`.|
+|displayName|String|Represents the name of the policy.|
+|groupId|String|Represents the group identifier.|
+|policyId|String|Represents the unique identifier for the policy. |
 
 ## Relationships
 None.

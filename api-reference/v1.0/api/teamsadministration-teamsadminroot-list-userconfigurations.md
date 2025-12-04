@@ -1,10 +1,10 @@
 ---
-title: "List teamsUserConfiguration objects"
-description: "Get a list of the teamsUserConfiguration objects and their properties."
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+title: "List userConfigurations"
+description: "Get user configurations for all Teams users who belong to a tenant."
+author: ""praspatil05"
 ms.date: 12/03/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.teamsAdministration
 
 
 
-Get a list of the teamsUserConfiguration objects and their properties.
+Get [user configurations](../resources/teamsadministration-teamsuserconfiguration.md) for all Teams users who belong to a tenant.
 
 ## Permissions
 
@@ -39,7 +39,7 @@ GET /admin/teams/userConfigurations
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select`, `$filter`, `$top`, `$expand`, and `$orderBy` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -87,27 +87,43 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.teamsAdministration.teamsUserConfiguration",
+      "@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/teams/userConfigurations",
       "id": "5c802b19-3600-83f1-1767-7b9edc7f38ab",
-      "userPrincipalName": "String",
-      "tenantId": "String",
+      "userPrincipalName": "AdeleV@contoso.com",
+      "tenantId": "87d349ed-44d7-43e1-9a83-5f2406dee5bd",
       "effectivePolicyAssignments": [
         {
-          "@odata.type": "microsoft.graph.teamsAdministration.effectivePolicyAssignment"
+          "policyType": "TeamsCallingPolicy",
+          "policyAssignment": {
+            "displayName": "AllOn",
+            "assignmentType": "group",
+            "policyId": "f7593e81-772a-4455-88a3-fc9e5ebc1e4a",
+            "groupId": "75ae6229-35fe-4b01-ae7f-7c50439d239c"
+          }
+        },
+        {
+          "policyType": "TeamsMeetingPolicy",
+          "policyAssignment": {
+            "displayName": "CustomPolicy",
+            "assignmentType": "direct",
+            "policyId": "J93PmFHwFcLZhWfYcBlv9pn-hG-kUWkcxmkDvpwgacw"
+          }
         }
       ],
       "telephoneNumbers": [
         {
-          "@odata.type": "microsoft.graph.teamsAdministration.assignedTelephoneNumber"
+          "telephoneNumber": "+13235533696",
+          "assignmentCategory": "primary"
         }
       ],
-      "isEnterpriseVoiceEnabled": "Boolean",
+      "isEnterpriseVoiceEnabled": false,
       "featureTypes": [
-        "String"
+        "Teams",
+        "CallingPlan"
       ],
-      "accountType": "String",
-      "createdDateTime": "String (timestamp)",
-      "modifiedDateTime": "String (timestamp)"
+      "accountType": "user",
+      "createdDateTime": "2025-01-07T09:08:50.9115993Z",
+      "modifiedDateTime": "2025-01-07T09:08:50.9115993Z"
     }
   ]
 }

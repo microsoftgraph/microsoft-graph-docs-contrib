@@ -1,10 +1,10 @@
 ---
 title: "effectivePolicyAssignment resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+description: "Represents the effective policies associated with a user."
+author: "praspatil05"
 ms.date: 12/03/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 
@@ -14,14 +14,14 @@ Namespace: microsoft.graph.teamsAdministration
 
 
 
-**TODO: Add Description**
+Represents the effective policies associated with a user.
 
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|policyAssignment|[microsoft.graph.teamsAdministration.policyAssignment](../resources/teamsadministration-policyassignment.md)|**TODO: Add Description**|
-|policyType|String|**TODO: Add Description**|
+|policyAssignment|[microsoft.graph.teamsAdministration.policyAssignment](../resources/teamsadministration-policyassignment.md)|Represents details about the policy instance, including **assignmentType**, **displayName**, **groupId**, and **policyID**.|
+|policyType|String|The type of the assigned policy; for example, `TeamsMeetingPolicy` and `TeamsCallingPolicy`.|
 
 ## Relationships
 None.

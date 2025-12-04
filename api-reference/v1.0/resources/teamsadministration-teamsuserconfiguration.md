@@ -1,10 +1,10 @@
 ---
 title: "teamsUserConfiguration resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+description: "Contains information of users who have accounts hosted on Microsoft Teams."
+author: "praspatil05"
 ms.date: 12/03/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.teamsAdministration
 
 
 
-**TODO: Add Description**
+Contains information of users who have accounts hosted on Microsoft Teams.
 
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).
@@ -23,33 +23,28 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/teamsadministration-teamsadminroot-list-userconfigurations.md)|[microsoft.graph.teamsAdministration.teamsUserConfiguration](../resources/teamsadministration-teamsuserconfiguration.md) collection|Get a list of the teamsUserConfiguration objects and their properties.|
-|[Create](../api/teamsadministration-teamsadminroot-post-userconfigurations.md)|[microsoft.graph.teamsAdministration.teamsUserConfiguration](../resources/teamsadministration-teamsuserconfiguration.md)|Create a new teamsUserConfiguration object.|
-|[Get](../api/teamsadministration-teamsuserconfiguration-get.md)|[microsoft.graph.teamsAdministration.teamsUserConfiguration](../resources/teamsadministration-teamsuserconfiguration.md)|Read the properties and relationships of [microsoft.graph.teamsAdministration.teamsUserConfiguration](../resources/teamsadministration-teamsuserconfiguration.md) object.|
-|[Update](../api/teamsadministration-teamsuserconfiguration-update.md)|[microsoft.graph.teamsAdministration.teamsUserConfiguration](../resources/teamsadministration-teamsuserconfiguration.md)|Update the properties of a teamsUserConfiguration object.|
-|[Delete](../api/teamsadministration-teamsadminroot-delete-userconfigurations.md)|None|Delete a teamsUserConfiguration object.|
-|[List user](../api/teamsadministration-teamsuserconfiguration-list-user.md)|[microsoft.graph.user](../resources/user.md) collection|**TODO: Add a useful description.**|
-|[Add user](../api/teamsadministration-teamsuserconfiguration-post-user.md)|[microsoft.graph.user](../resources/user.md)|Add user by posting to the user collection.|
-|[Remove user](../api/teamsadministration-teamsuserconfiguration-delete-user.md)|None|Remove a [user](../resources/user.md) object.|
+|[List](../api/teamsadministration-teamsadminroot-list-userconfigurations.md)|[microsoft.graph.teamsAdministration.teamsUserConfiguration](../resources/teamsadministration-teamsuserconfiguration.md) collection|Get user configurations for all Teams users who belong to a tenant.|
+|[Get](../api/teamsadministration-teamsuserconfiguration-get.md)|[microsoft.graph.teamsAdministration.teamsUserConfiguration](../resources/teamsadministration-teamsuserconfiguration.md)|Read the Teams user configurations for a specific user using their ID (the user's identifier).|
+
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|accountType|microsoft.graph.teamsAdministration.accountType|**TODO: Add Description**. The possible values are: `user`, `resourceAccount`, `guest`, `sfbOnPremUser`, `unknown`, `unknownFutureValue`, `ineligibleUser`. Use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `ineligibleUser`.|
-|createdDateTime|DateTimeOffset|**TODO: Add Description**|
-|effectivePolicyAssignments|[microsoft.graph.teamsAdministration.effectivePolicyAssignment](../resources/teamsadministration-effectivepolicyassignment.md) collection|**TODO: Add Description**|
-|featureTypes|String collection|**TODO: Add Description**|
-|id|String|**TODO: Add Description** Inherited from [microsoft.graph.entity](../resources/entity.md). Inherits from [entity](../resources/entity.md)|
-|isEnterpriseVoiceEnabled|Boolean|**TODO: Add Description**|
-|modifiedDateTime|DateTimeOffset|**TODO: Add Description**|
-|telephoneNumbers|[microsoft.graph.teamsAdministration.assignedTelephoneNumber](../resources/teamsadministration-assignedtelephonenumber.md) collection|**TODO: Add Description**|
-|tenantId|String|**TODO: Add Description**|
-|userPrincipalName|String|**TODO: Add Description**|
+|accountType|microsoft.graph.teamsAdministration.accountType|The type of the account in the Teams context. The possible values are: `user`, `resourceAccount`, `guest`, `sfbOnPremUser`, `unknown`, `unknownFutureValue`, `ineligibleUser`. Use the `Prefer: include-unknown-enum-members` request header to get the following value from this enum [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `ineligibleUser`.|
+|createdDateTime|DateTimeOffset|The date and time when the user was created. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+|effectivePolicyAssignments|[microsoft.graph.teamsAdministration.effectivePolicyAssignment](../resources/teamsadministration-effectivepolicyassignment.md) collection|Contains the user's effective policy assignments, with each assignment including **policyType** and **policyAssignment** details.|
+|featureTypes|String collection|The Teams features enabled for a given user based on licensing or service plan.|
+|id|String|The unique identifier (GUID) for a user in Microsoft Entra. Inherits from [entity](../resources/entity.md).|
+|isEnterpriseVoiceEnabled|Boolean|Indicates whether voice capability is enabled.|
+|modifiedDateTime|DateTimeOffset|The date and time when the user's details were last modified. The system updates this value each time the user's details are changed. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+|telephoneNumbers|[microsoft.graph.teamsAdministration.assignedTelephoneNumber](../resources/teamsadministration-assignedtelephonenumber.md) collection|Includes both the phone number and its corresponding assignment category. The assignment category can include values such as `primary`, `private`, and `alternate`.|
+|tenantId|String|The unique identifier of the tenant in Entra to which this user is assigned.|
+|userPrincipalName|String|The sign-in address of the user.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|user|[user](../resources/user.md)|**TODO: Add Description**|
+|user|[user](../resources/user.md)|Represents an Entra user account.|
 
 ## JSON representation
 The following JSON representation shows the resource type.
@@ -64,26 +59,15 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.teamsAdministration.teamsUserConfiguration",
-  "id": "String (identifier)",
-  "userPrincipalName": "String",
-  "tenantId": "String",
-  "effectivePolicyAssignments": [
-    {
-      "@odata.type": "microsoft.graph.teamsAdministration.effectivePolicyAssignment"
-    }
-  ],
-  "telephoneNumbers": [
-    {
-      "@odata.type": "microsoft.graph.teamsAdministration.assignedTelephoneNumber"
-    }
-  ],
-  "isEnterpriseVoiceEnabled": "Boolean",
-  "featureTypes": [
-    "String"
-  ],
   "accountType": "String",
   "createdDateTime": "String (timestamp)",
-  "modifiedDateTime": "String (timestamp)"
+  "effectivePolicyAssignments": [{"@odata.type": "microsoft.graph.teamsAdministration.effectivePolicyAssignment"}],
+  "featureTypes": ["String"],
+  "id": "String (identifier)",
+  "isEnterpriseVoiceEnabled": "Boolean",
+  "modifiedDateTime": "String (timestamp)",
+  "telephoneNumbers": [{"@odata.type": "microsoft.graph.teamsAdministration.assignedTelephoneNumber"}],
+  "tenantId": "String",
+  "userPrincipalName": "String"
 }
 ```
-

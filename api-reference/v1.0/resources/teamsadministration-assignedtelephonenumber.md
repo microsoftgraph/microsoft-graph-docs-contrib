@@ -1,10 +1,10 @@
 ---
 title: "assignedTelephoneNumber resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+description: "Provides details about the phone number and its corresponding assignment category."
+author: "praspatil05"
 ms.date: 12/03/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 
@@ -14,14 +14,14 @@ Namespace: microsoft.graph.teamsAdministration
 
 
 
-**TODO: Add Description**
+Provides details about the phone number and its corresponding assignment category. The assignment category can include values such as `primary`, `private`, and `alternate`.
 
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|assignmentCategory|microsoft.graph.teamsAdministration.assignmentCategory|**TODO: Add Description**. The possible values are: `primary`, `private`, `alternate`, `unknownFutureValue`.|
-|telephoneNumber|String|**TODO: Add Description**|
+|assignmentCategory|microsoft.graph.teamsAdministration.assignmentCategory|The category of the assigned phone number. The possible values are: `primary`, `private`, `alternate`, `unknownFutureValue`.|
+|telephoneNumber|String|The assigned phone number.|
 
 ## Relationships
 None.
