@@ -78,7 +78,7 @@ The operation details in the response mirror the hierarchical structure of the r
 
 ### Example 1: Get a succeeded operation
 
-The following example demonstrates the operation response for the bulk upsert request shown in the [Example section of the bulk upsert API](place-patch-places.md#example). The response structure mirrors the request hierarchy, with each top-level place from the request appearing in the **details** array and child places nested in the **children** arrays.
+The following example demonstrates the operation response for the bulk upsert request shown in the [example section of the bulk upsert API](place-patch-places.md#example). The response structure mirrors the request hierarchy, with each top-level place from the request appearing in the **details** array and child places nested in the **children** arrays.
 
 #### Request
 
