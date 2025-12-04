@@ -156,6 +156,7 @@
           {
             "name": "Agent registry",
             "resources": [
+              "agentRegistry",
               "agentInstance",
               "agentCardManifest",
               "agentCollection"

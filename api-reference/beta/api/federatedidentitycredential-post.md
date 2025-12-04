@@ -1,11 +1,11 @@
 ---
 title: "Create federatedIdentityCredential"
-description: "Create a new federatedIdentityCredential object for an application."
+description: "Create a new federatedIdentityCredential object for an application or an agentIdentityBlueprint."
 author: "nickludwig"
 ms.localizationpriority: medium
 ms.subservice: "entra-applications"
 doc_type: apiPageType
-ms.date: 10/02/2024
+ms.date: 12/03/2025
 ---
 
 # Create federatedIdentityCredential
@@ -13,25 +13,42 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [federatedIdentityCredential](../resources/federatedidentitycredential.md) object for an application. By [configuring a trust relationship](/azure/active-directory/develop/workload-identity-federation-create-trust) between your Microsoft Entra application registration and the identity provider for your compute platform, you can use tokens issued by that platform to authenticate with Microsoft identity platform and call APIs in the Microsoft ecosystem. Maximum of 20 objects can be added to an application.
+Create a new [federatedIdentityCredential](../resources/federatedidentitycredential.md) object for an [application](../resources/application.md) or an [agentIdentityBlueprint](../resources/agentidentityblueprint.md).
+
+By [configuring a trust relationship](/azure/active-directory/develop/workload-identity-federation-create-trust) between your Microsoft Entra application registration or agent identity blueprint and the identity provider for your compute platform, you can use tokens issued by that platform to authenticate with Microsoft identity platform and call APIs in the Microsoft ecosystem. Maximum of 20 objects can be added to an application or agent identity blueprint.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "permissions", "name": "application_post_federatedidentitycredentials" } -->
-[!INCLUDE [permissions-table](../includes/permissions/application-post-federatedidentitycredentials-permissions.md)]
+### Permissions for an application
+
+<!-- { "blockType": "permissions", "name": "federatedidentitycredential_post" } -->
+[!INCLUDE [permissions-table](../includes/permissions/federatedidentitycredential-post-permissions.md)]
 
 [!INCLUDE [rbac-apps-serviceprincipal-creds-apis](../includes/rbac-for-apis/rbac-apps-serviceprincipal-creds-apis.md)]
 
+### Permissions for an agentIdentityBlueprint
+<!-- { "blockType": "permissions", "name": "federatedidentitycredential_post_2" } -->
+[!INCLUDE [permissions-table](../includes/permissions/federatedidentitycredential-post-2-permissions.md)]
+
+[!INCLUDE [rbac-agentid-apis-write](../includes/rbac-for-apis/rbac-agentid-apis-write.md)]
+
 ## HTTP request
 
-You can address the application using either its **id** or **appId**. **id** and **appId** are referred to as the **Object ID** and **Application (Client) ID**, respectively, in app registrations in the Microsoft Entra admin center.
+For an **application**:
+- You can address the application using either its **id** or **appId**. **id** and **appId** are referred to as the **Object ID** and **Application (Client) ID**, respectively, in app registrations in the Microsoft Entra admin center.
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /applications/{id}/federatedIdentityCredentials
 POST /applications(appId='{appId}')/federatedIdentityCredentials
+```
+
+For an **agentIdentityBlueprint**:
+<!-- { "blockType": "ignored" } -->
+```http
+POST /applications/{id}/microsoft.graph.agentIdentityBlueprint/federatedIdentityCredentials
 ```
 
 ## Request headers
@@ -53,15 +70,15 @@ The following table lists the properties that are required when you create the [
 |name|String|Required. The unique identifier for the federated identity credential, which has a limit of 120 characters and must be URL friendly. It is immutable once created.|
 |subject|String|Nullable. Defaults to `null` if not set. The identifier of the external software workload within the external identity provider. Like the audience value, it has no fixed format, as each identity provider uses their own - sometimes a GUID, sometimes a colon delimited identifier, sometimes arbitrary strings. The value here must match the sub claim within the token presented to Microsoft Entra ID. It has a limit of 600 characters. The combination of **issuer** and **subject** must be unique on the app. If **subject** is defined, **claimsMatchingExpression** must be `null`.|
 
-
-
 ## Response
 
 If successful, this method returns a `201 Created` response code and a [federatedIdentityCredential](../resources/federatedidentitycredential.md) object in the response body.
 
 ## Examples
 
-### Request
+### Example 1: Create a federated identity credential for an application
+
+#### Request
 
 # [HTTP](#tab/http)
 <!-- {
@@ -113,7 +130,56 @@ Content-Type: application/json
 
 ---
 
-### Response
+#### Response
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.federatedIdentityCredential"
+}
+-->
+```http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#applications('bcd7c908-1c4d-4d48-93ee-ff38349a75c8')/federatedIdentityCredentials/$entity",
+    "@odata.id": "https://graph.microsoft.com/v2/3d1e2be9-a10a-4a0c-8380-7ce190f98ed9/directoryObjects/$/Microsoft.DirectoryServices.Application('bcd7c908-1c4d-4d48-93ee-ff38349a75c8')/federatedIdentityCredentials/d9b7bf1e-429e-4678-8132-9b00c9846cc4",
+    "id": "d9b7bf1e-429e-4678-8132-9b00c9846cc4",
+    "name": "testing02",
+    "issuer": "https://login.microsoftonline.com/3d1e2be9-a10a-4a0c-8380-7ce190f98ed9/v2.0",
+    "subject": "a7d388c3-5e3f-4959-ac7d-786b3383006a",
+    "description": null,
+    "audiences": [
+        "api://AzureADTokenExchange"
+    ]
+}
+```
+
+### Example 2: Create a federated identity credential for an agentIdentityBlueprint
+
+#### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "agentidentityblueprint_create_federatedidentitycredential"
+}
+-->
+```http
+POST https://graph.microsoft.com/beta/applications/bcd7c908-1c4d-4d48-93ee-ff38349a75c8/microsoft.graph.agentIdentityBlueprint/federatedIdentityCredentials/
+Content-Type: application/json
+
+{
+    "name": "testing02",
+    "issuer": "https://login.microsoftonline.com/3d1e2be9-a10a-4a0c-8380-7ce190f98ed9/v2.0",
+    "subject": "a7d388c3-5e3f-4959-ac7d-786b3383006a",
+    "audiences": [
+        "api://AzureADTokenExchange"
+    ]
+}
+```
+
+#### Response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
