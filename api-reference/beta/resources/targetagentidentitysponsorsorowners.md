@@ -14,15 +14,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Defines the sponsors, or owners, of a specific agent identity.
+Defines the sponsors, or owners, of a specific [agentIdentity](../resources/agentidentity.md).
 
 Inherits from [userSet](../resources/userset.md).
-
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|isBackup|Boolean| Defines whether or not the listed sponsors and owners of the agent identity is not the primary sponsor or owner for an agent identity. Inherited from [userSet](../resources/userset.md).|
+|isBackup|Boolean| Defines whether or not the listed sponsors and owners of the agent identity is not the primary sponsor or owner for an [agentIdentity](../resources/agentidentity.md). Inherited from [userSet](../resources/userset.md).|
 
 ## Relationships
 None.
