@@ -30,7 +30,7 @@ The following scenarios are supported when using the **bulk upsert** API:
 ## Job-level concurrency
 
 - Only three concurrent bulk upsert operations are allowed at the tenant level.
-- If three operations are already created or in progress, another PATCH API call is rejected with a `429 Too Many Requests` response code.
+- If three operations are already created or in progress, another `PATCH` API call is rejected with a `429 Too Many Requests` response code.
 
 ## Related content
 
