@@ -65,13 +65,15 @@ If successful, this method returns a `202 Accepted` response code and an operati
 
 ## Example
 
-The following example shows a request that combines multiple operations including updating an existing building, creating new places with hierarchy, and updating properties:
-- Update an existing building to set the display name to "Demo Building A" and enable Wi-Fi and create a new floor "Demo Floor 1" as a child of the updated building.
-- Create a new building "Demo Building B" with a child floor "Demo Floor 1", which contains a new section "Demo Section A" with an existing desk and a new room "Demo Room 1".
-- Create a new workspace with reservable mode under an existing parent.
-- Update an existing section to add a tag "CVP".
-
 ### Request
+
+The following example shows a request that combines multiple operations, including updating an existing building, creating new places with a hierarchy, and updating properties:
+
+- Update an existing building to set the display name to `Demo Building A`, enable Wi-Fi, and create a new floor `Demo Floor 1` as a child of the updated building.
+- Create a new building `Demo Building B` with a child floor `Demo Floor 1` that contains a new section `Demo Section A` with an existing desk and a new room `Demo Room 1`.
+- Create a new workspace in reservable mode under an existing parent.
+- Update an existing section to add the tag `CVP`.
+
 <!-- {
   "blockType": "request",
   "name": "mixed_create_update"
@@ -143,7 +145,7 @@ OData-Version: 4.01
 ```
 
 ### Response
-
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true
