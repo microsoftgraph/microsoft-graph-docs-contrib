@@ -65,6 +65,11 @@ If successful, this method returns a `202 Accepted` response code and an operati
 
 ## Example: mixed create and update operations
 
+<<<<<<< HEAD
+=======
+### Example 1: Mixed create and update operations
+
+>>>>>>> ed331173340b08384266acf43bb0bfc750215456
 The following example shows a request that combines multiple operations including updating an existing building, creating new places with hierarchy, and updating properties.
 
 ### Request
