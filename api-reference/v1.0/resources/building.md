@@ -36,6 +36,7 @@ For more supported methods, see [place](./place.md).
 |phone|String|The phone number of the **building**. Inherited from [place](./place.md). |
 |resourceLinks|[resourceLink](../resources/resourcelink.md) collection|A set of links to external resources that are associated with the **building**. Inherited from [place](./place.md). |
 |tags|String collection|Custom tags that are associated with the building for categorization or filtering. Inherited from [place](./place.md).|
+|wifiState|placeFeatureEnablement|Specifies if Wi-Fi is enabled for the **building**. The possible values are: `disabled`, `enabled` and `unknown`.|
 
 ## Relationships
 |Relationship|Type|Description|

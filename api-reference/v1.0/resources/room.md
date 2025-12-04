@@ -12,12 +12,11 @@ ms.date: 03/22/2024
 
 Namespace: microsoft.graph
 
-Represents a room in a tenant. 
+Represents a room within a tenant. A room can be added to a [floor](./floor.md) or to a [section](./section.md).
 
-In Exchange Online, each room is associated with a room mailbox. Derived from [place](place.md).
+Inherits from [place](./place.md).
 
 ## Methods
-
 For the list of supported methods, see [place](./place.md).
 
 ## Properties
@@ -35,13 +34,15 @@ For the list of supported methods, see [place](./place.md).
 | floorLabel             | String                                            | Specifies a descriptive label for the floor, for example, P. |
 | floorNumber            | Int32                                             | Specifies the floor number that the room is on. |
 | geoCoordinates         | [outlookGeoCoordinates](outlookgeocoordinates.md) | Specifies the room location in latitude, longitude, and optionally, altitude coordinates. |
-| id                     | String                                            | Unique identifier for the room. Read-only. This identifier isn't immutable and can change if there are changes to the mailbox or the tenant configuration. The beta version of this API has a new property added called **placeId**, which provides an immutable ID. |
+|id |String |The unique identifier for the **room**. Read-only. This identifier isn't immutable and can change if the mailbox or tenant configuration changes. Inherited from [place](../resources/place.md).|
 | isWheelChairAccessible | Boolean                                           | Specifies whether the room is wheelchair accessible. Inherited from [place](./place.md). |
 | label                  | String                                            | Specifies a descriptive label for the room, for example, a number or name. Inherited from [place](./place.md). |
 | nickname               | String                                            | Specifies a nickname for the room, for example, "conf room". |
 | parentId |String | The ID of a parent [floor](./floor.md) or [section](./section.md). Inherited from [place](../resources/place.md). |
 | phone                  | String                                            | The phone number of the room. |
+|placeId |String |An alternate immutable unique identifier of the **room**. Read-only.|
 | tags | String collection | Specifies other features of the room, for example, details like the type of view or furniture type. Inherited from [place](./place.md). |
+|teamsEnabledState|placeFeatureEnablement|Specifies if Microsoft Teams Meeting is enabled for the **room**. The possible values are: `disabled`, `enabled` and `unknown`.|
 | videoDeviceName        | String                                            | Specifies the name of the video device in the room. |
 
 ### bookingType values
