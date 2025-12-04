@@ -63,23 +63,11 @@ The same properties can be specified as when you [create](../api/place-post.md) 
 
 If successful, this method returns a `202 Accepted` response code and an operation URL in the `Location` response header that you can use to [get](../api/place-getoperation.md) the operation.
 
-## Examples
-
-<<<<<<< HEAD
-### Request
-
-The following example shows a request that tries to perform these operations:
-
-- Update an existing building to set the display name to `Demo Building A`, enable Wi-Fi, and create a new floor `Demo Floor 1` as a child of the updated building.
-- Create a new building `Demo Building B` with a child floor `Demo Floor 1` that contains a new section `Demo Section A` with an existing desk and a new room `Demo Room 1`.
-- Create a new workspace in reservable mode under an existing parent.
-- Update an existing section to add the tag `CVP`.
-=======
-### Example 1: Mixed create and update operations
+## Example: mixed create and update operations
 
 The following example shows a request that combines multiple operations including updating an existing building, creating new places with hierarchy, and updating properties.
->>>>>>> 0f2a914cd86 (Update the introduction)
 
+### Request
 <!-- {
   "blockType": "request",
   "name": "mixed_create_update"
@@ -151,8 +139,6 @@ OData-Version: 4.01
 ```
 
 ### Response
-
-The following example shows the response.
 
 <!-- {
   "blockType": "response",
