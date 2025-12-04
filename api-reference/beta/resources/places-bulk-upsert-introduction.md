@@ -1,5 +1,5 @@
 ---
-title: "Working with the Bulk Upsert Places in Microsoft Graph"
+title: "Working with the Places Bulk Upsert API in Microsoft Graph"
 description: "Learn how to use the bulk upsert API to create and update multiple places efficiently in Microsoft Graph."
 author: "Dongjing-MSIT"
 ms.date: 12/04/2025
@@ -7,7 +7,7 @@ ms.localizationpriority: medium
 ms.subservice: "outlook"
 ---
 
-# Working with the Bulk Upsert Places in Microsoft Graph
+# Working with the Places Bulk Upsert API in Microsoft Graph
 
 The bulk upsert API allows you to efficiently create and update multiple [places](/graph/api/resources/place?view=graph-rest-beta) in a single asynchronous operation.
 
