@@ -1,16 +1,15 @@
 ---
 title: "Delete federatedIdentityCredential"
-description: "Delete a federatedIdentityCredential object."
+description: "Delete a federatedIdentityCredential object from an application."
 author: "nickludwig"
 ms.localizationpriority: medium
 ms.subservice: "entra-applications"
 doc_type: apiPageType
-ms.date: 04/04/2024
+ms.date: 12/04/2025
 ---
 
 # Delete federatedIdentityCredential
 Namespace: microsoft.graph
-
 
 Delete a [federatedIdentityCredential](../resources/federatedidentitycredential.md) object from an application.
 
@@ -32,8 +31,11 @@ You can also address the federated identity credential with either its **id** or
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /applications/{id}/federatedIdentityCredentials/{federatedIdentityCredentialId}
+
 DELETE /applications/{id}/federatedIdentityCredentials/{federatedIdentityCredentialName}
+
 DELETE /applications(appId='{appId}')/federatedIdentityCredentials/{federatedIdentityCredentialId}
+
 DELETE /applications(appId='{appId}')/federatedIdentityCredentials/{federatedIdentityCredentialName}
 ```
 
@@ -52,8 +54,6 @@ If successful, this method returns a `204 No Content` response code.
 ## Examples
 
 ### Request
-
-
 
 # [HTTP](#tab/http)
 <!-- {
