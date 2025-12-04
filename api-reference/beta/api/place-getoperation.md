@@ -261,7 +261,7 @@ Content-Type: application/json
         {
           "error": {
             "code": "BadRequest",
-            "message": "A Place with the same name, type, parentId and address already exists with ID 94eb964a-b166-4f0a-953d-54dc9032d9d5."
+            "message": "Requested Place not found: 881a74c1-a092-4f67-b354-174ca814df8b"
           }
         }
       ],
