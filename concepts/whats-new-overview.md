@@ -20,6 +20,12 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ## December 2025: New in preview only
 
+### Identity and access | Governance
+
+- Added the [controlConfiguration](/graph/api/resources/controlconfiguration?view=graph-rest-beta&preserve-view=true) resource and the **controlConfigurations** relationship to the [entitlementManagement](/graph/api/resources/entitlementmanagement?view=graph-rest-beta&preserve-view=true) resource to represent the policies that control lifecycle and access to access packages across the organization.
+- Added the [entraIdProtectionRiskyUserApproval](/graph/api/resources/entraidprotectionriskyuserapproval?view=graph-rest-beta&preserve-view=true) resource to represent the approval configuration for risky users detected by Microsoft Entra ID Protection.
+- Added the [insiderRiskyUserApproval](/graph/api/resources/insiderriskyuserapproval?view=graph-rest-beta&preserve-view=true) resource to represent the approval configuration for risky users detected by Microsoft Purview Insider Risk Management.
+
 ### Identity and access | Identity and sign-in
 
 Added the `microsoftRevokedSessions` value to the [riskDetail](/graph/api/resources/riskdetail?view=graph-rest-beta&preserve-view=true) enumeration to indicate that Microsoft revoked sessions. This enumeration member applies to the following Microsoft Entra Identity Protection resources: [riskDetection](/graph/api/resources/riskdetection?view=graph-rest-beta&preserve-view=true), [riskUserActivity](/graph/api/resources/riskuseractivity?view=graph-rest-beta&preserve-view=true), [riskyUser](/graph/api/resources/riskyuser?view=graph-rest-beta&preserve-view=true), and [signIn](/graph/api/resources/signin?view=graph-rest-beta&preserve-view=true).
@@ -109,6 +115,11 @@ Removed the **osArchitecture** property from the [cloudPcDeviceImage](/graph/api
   - [driveItem: lockOrUnlockRecord](/graph/api/driveitem-lockorunlockrecord?view=graph-rest-beta&preserve-view=true)
   - [driveItem: removeRetentionLabel](/graph/api/driveitem-removeretentionlabel?view=graph-rest-beta&preserve-view=true)
   - [driveItem: setRetentionLabel](/graph/api/driveitem-setretentionlabel?view=graph-rest-beta&preserve-view=true)
+
+### Identity and access | Directory management
+
+- Added the [b2bManagementPolicy](/graph/api/resources/b2bmanagementpolicy?view=graph-rest-beta&preserve-view=true) resource and the **b2bManagementPolicies** relationship to the [policyRoot](/graph/api/resources/policyroot?view=graph-rest-beta&preserve-view=true) resource to manage Microsoft Entra B2B features in Microsoft Entra External ID for workforce tenants.
+- Added the [onPremAuthenticationPolicy](/graph/api/resources/onpremauthenticationpolicy?view=graph-rest-beta&preserve-view=true) resource and the **onPremAuthenticationPolicies** relationship to the [policyRoot](/graph/api/resources/policyroot?view=graph-rest-beta&preserve-view=true) resource to manage how authentication requests from on-premises environments are handled for users and applications.
 
 ### Identity and access | Governance
 
