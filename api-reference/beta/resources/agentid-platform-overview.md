@@ -4,7 +4,7 @@ description: "Use Microsoft Entra Agent ID APIs in Microsoft Graph to create, se
 author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: dastrock,yukarppa,etbasser,kvenkit 
-ms.subservice: applications
+ms.subservice: entra-applications
 ms.topic: overview
 ms.date: 11/18/2025
 doc_type: conceptualPageType
