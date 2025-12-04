@@ -1,12 +1,12 @@
 ---
-description: Automatically generated file. DO NOT MODIFY
+description: "Automatically generated file. DO NOT MODIFY"
 ms.topic: include
 ms.localizationpriority: medium
 ---
 
 |Permission type|Least privileged permissions|Higher privileged permissions|
 |:---|:---|:---|
-|Delegated (work or school account)|Place.ReadWrite.All|Not available.|
+|Delegated (work or school account)|SharePointCrossTenantMigration.Read.All|Not available.|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|Not supported.|Not supported.|
+|Application|SharePointCrossTenantMigration.Read.All|Not available.|
 
