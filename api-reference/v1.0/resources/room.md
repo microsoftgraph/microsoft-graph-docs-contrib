@@ -34,13 +34,13 @@ For the list of supported methods, see [place](./place.md).
 | floorLabel             | String                                            | Specifies a descriptive label for the floor, for example, P. |
 | floorNumber            | Int32                                             | Specifies the floor number that the room is on. |
 | geoCoordinates         | [outlookGeoCoordinates](outlookgeocoordinates.md) | Specifies the room location in latitude, longitude, and optionally, altitude coordinates. |
-|id |String |The unique identifier for the **room**. Read-only. This identifier isn't immutable and can change if the mailbox or tenant configuration changes. Inherited from [place](../resources/place.md).|
+|id |String |The unique identifier for the **room**. Read-only. This identifier isn't immutable and can change if the mailbox or tenant configuration changes. Inherited from [place](../place.md).|
 | isWheelChairAccessible | Boolean                                           | Specifies whether the room is wheelchair accessible. Inherited from [place](./place.md). |
 | label                  | String                                            | Specifies a descriptive label for the room, for example, a number or name. Inherited from [place](./place.md). |
 | nickname               | String                                            | Specifies a nickname for the room, for example, "conf room". |
-| parentId |String | The ID of a parent [floor](./floor.md) or [section](./section.md). Inherited from [place](../resources/place.md). |
-| phone                  | String                                            | The phone number of the room. |
+| parentId |String | The ID of a parent [floor](./floor.md) or [section](./section.md). Inherited from [place](./place.md). |
 |placeId |String |An alternate immutable unique identifier of the **room**. Read-only.|
+| phone                  | String                                            | The phone number of the room. |
 | tags | String collection | Specifies other features of the room, for example, details like the type of view or furniture type. Inherited from [place](./place.md). |
 |teamsEnabledState|placeFeatureEnablement|Specifies if Microsoft Teams Meeting is enabled for the **room**. The possible values are: `disabled`, `enabled` and `unknown`.|
 | videoDeviceName        | String                                            | Specifies the name of the video device in the room. |
