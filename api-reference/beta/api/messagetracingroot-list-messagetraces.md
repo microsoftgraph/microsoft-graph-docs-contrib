@@ -39,7 +39,7 @@ GET /admin/exchange/tracing/messageTraces
 ## Optional query parameters
 This method supports the `$filter`, `$top` and `$skipToken` OData query parameters of the [OData query parameters](/graph/query-parameters) to help customize the response.
 
-The default page size for this API is 1000 **exchangeMessageTrace** objects. Use `$top` to customize the page size, within the range of 1 and 5000. To get the next page of message traces, simply apply the entire URL returned in `@odata.nextLink` to the next get-messagetraces request. This URL includes any query parameters you may have specified in the initial request. For more information, see Paging Microsoft Graph data in your app. For more information, see [Paging Microsoft Graph data in your app](/graph/paging).
+The default page size for this API is 1000 **exchangeMessageTrace** objects. Use `$top` to customize the page size, within the range of 1 and 5000. To get the next page of message traces, simply apply the entire URL returned in `@odata.nextLink` to the next get-messagetraces request. This URL includes any query parameters you may have specified in the initial request. For more information, see [Paging Microsoft Graph data in your app](/graph/paging).
 
 ## Request headers
 
