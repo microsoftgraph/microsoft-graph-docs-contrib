@@ -198,6 +198,7 @@ The following example shows a request.
 ``` http
 POST https://graph.microsoft.com/v1.0/security/cases/ediscoveryCases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/caseMembers
 Content-Type: application/json
+
 {
     "recipientType": "roleGroup",
     "id": "b9fb4f22-5f90-47a0-b309-44fe96a959fd"
