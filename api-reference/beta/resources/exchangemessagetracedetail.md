@@ -25,7 +25,7 @@ Represents a detailed trace event for an email message as it passes through the 
 |dateTime|DateTimeOffset|The date and time when the event occurred. The timestamp is in UTC format.|
 |description|String|A detailed description that provides context about what happened during message processing.|
 |event|String|The event that occurred during message processing.|
-|id|String|The unique identifier for the message trace detail record. |
+|id|String|The unique identifier for the message trace detail record.|
 |messageId|String|The Message-ID header field of the message. The format depends on the messaging server that sent the message.|
 
 ## Relationships
