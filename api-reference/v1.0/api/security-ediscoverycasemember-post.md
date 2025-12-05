@@ -144,7 +144,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 3: Add a case member of type **user** using **ID*
+### Example 3: Add a case member of type **user** using **ID**
 #### Request
 
 The following example shows a request.
