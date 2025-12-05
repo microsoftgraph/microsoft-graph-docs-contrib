@@ -1,5 +1,5 @@
 ---
-title: "List ediscoveryCaseMember"
+title: "List ediscoveryCaseMember objects"
 description: "Get a list of the ediscoveryCaseMember objects and their properties."
 author: "kylefk"
 ms.date: 11/26/2025
@@ -8,7 +8,7 @@ ms.subservice: "ediscovery"
 doc_type: apiPageType
 ---
 
-# List ediscoveryCaseMember
+# List ediscoveryCaseMember objects
 
 Namespace: microsoft.graph.security
 
