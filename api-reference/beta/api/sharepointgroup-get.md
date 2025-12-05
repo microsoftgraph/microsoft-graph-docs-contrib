@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Read the properties and relationships of a [sharePointGroup](../resources/sharepointgroup.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -71,7 +71,7 @@ The following example shows a request.
   "blockType": "request",
   "name": "get_sharepointgroup_1"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/sharePointGroups/10
 ```
 
@@ -135,7 +135,7 @@ The following example shows a request.
   "blockType": "request",
   "name": "get_sharepointgroup_2"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/sharePointGroups/12
 ```
 

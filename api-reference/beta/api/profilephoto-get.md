@@ -85,7 +85,7 @@ GET /me/contacts/{id}/photo/$value
 GET /users/{id | userPrincipalName}/contacts/{id}/photo/$value
 GET /me/contactfolders/{contactFolderId}/contacts/{id}/photo/$value
 GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{id}/photo/$value
-GET /team/{id}/photo/$value
+GET /teams/{id}/photo/$value
 ```
 
 ### Get the metadata of the photo
@@ -100,7 +100,7 @@ GET /me/contacts/{id}/photo
 GET /users/{id | userPrincipalName}/contacts/{id}/photo
 GET /me/contactfolders/{contactFolderId}/contacts/{id}/photo
 GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{id}/photo
-GET /team/{id}/photo
+GET /teams/{id}/photo
 ```
 
 ### Get the metadata for a specific photo size

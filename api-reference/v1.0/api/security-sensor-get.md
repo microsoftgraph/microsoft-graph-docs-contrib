@@ -63,7 +63,7 @@ The following example shows a request.
   "name": "get_sensor"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/security/identities/sensors/d31dd827-92cd-4cd6-b269-c151a0eec55d
 ```
 

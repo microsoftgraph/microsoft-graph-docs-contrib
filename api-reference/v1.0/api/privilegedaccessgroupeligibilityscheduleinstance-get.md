@@ -59,7 +59,7 @@ If successful, this method returns a `200 OK` response code and a [privilegedAcc
   "name": "get_privilegedaccessgroupeligibilityscheduleinstance"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/identityGovernance/privilegedAccess/group/eligibilityScheduleInstances/d5f0ad2e-6b34-401b-b6da-0c8fc2c5a3fc
 ```
 

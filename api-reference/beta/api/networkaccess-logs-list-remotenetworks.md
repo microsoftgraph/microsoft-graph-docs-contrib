@@ -14,7 +14,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the remoteNetworkHealthEvent objects and their properties.
+Get a list of the [remoteNetworkHealthEvent](../resources/networkaccess-remotenetworkhealthevent.md) objects and their properties.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -74,7 +74,7 @@ The following example shows a request.
   "name": "list_remotenetworkhealthevent"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/networkAccess/logs/remoteNetworks
 ```
 

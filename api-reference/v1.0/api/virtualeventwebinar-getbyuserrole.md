@@ -38,7 +38,7 @@ In the request URL, provide the following query parameters with values.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|role|String|User role of the signed-in user in the webinar. Possible values are: `organizer`, `coOrganizer`.|
+|role|String|User role of the signed-in user in the webinar. The possible values are: `organizer`, `coOrganizer`.|
 
 
 ## Request headers
@@ -63,7 +63,7 @@ The following example shows a request.
   "name": "virtualeventwebinarthis.getbyuserrole"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/solutions/virtualEvents/webinars/getByUserRole(role='organizer')
 ```
 

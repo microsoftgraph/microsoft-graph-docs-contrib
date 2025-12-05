@@ -67,7 +67,7 @@ The following example shows a request.
 }
 -->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/deviceImages
 ```
 
@@ -134,8 +134,7 @@ Content-Type: application/json
       "statusDetails": null,
       "errorCode": null,
       "osVersionNumber": "10.0.22631.3593",
-      "sizeInGB": 64,
-      "osArchitecture": "x64"
+      "sizeInGB": 64
     }
   ]
 }

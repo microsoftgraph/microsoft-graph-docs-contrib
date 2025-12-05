@@ -62,7 +62,7 @@ If successful, this method returns a `200 OK` response code and a [microsoft.gra
 }
 -->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/security/collaboration/analyzedEmails/{analyzedEmailId}
 ```
 
@@ -212,7 +212,7 @@ Content-Type: application/json
   "name": "get_analyzedemail_urls"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/security/collaboration/analyzedEmails/{analyzedEmailId}/Urls
 ```
 
@@ -289,7 +289,7 @@ Content-Type: application/json
   "name": "get_analyzedemail_attachments"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/security/collaboration/analyzedEmails/{analyzedEmailId}/attachments
 ```
 

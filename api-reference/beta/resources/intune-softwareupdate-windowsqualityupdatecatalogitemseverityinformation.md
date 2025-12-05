@@ -21,7 +21,7 @@ CVE information of QU catalog item
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|maxSeverity|[windowsQualityUpdateCatalogItemSeverityMaxSeverity](../resources/intune-softwareupdate-windowsqualityupdatecatalogitemseveritymaxseverity.md)|Max severity of CVE. Possible values are: `critical`, `important`, `moderate`, `unknownFutureValue`.|
+|maxSeverity|[windowsQualityUpdateCatalogItemSeverityMaxSeverity](../resources/intune-softwareupdate-windowsqualityupdatecatalogitemseveritymaxseverity.md)|Max severity of CVE. The possible values are: `critical`, `important`, `moderate`, `unknownFutureValue`.|
 |maxBaseScore|Double|Max base score of CVE|
 |exploitedCves|[windowsQualityUpdateCatalogItemExploitedCve](../resources/intune-softwareupdate-windowsqualityupdatecatalogitemexploitedcve.md) collection|Exploit cve details|
 

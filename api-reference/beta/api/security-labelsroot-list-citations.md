@@ -58,7 +58,7 @@ The following example shows a request.
   "name": "list_citationtemplate"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/security/labels/citations
 ```
 

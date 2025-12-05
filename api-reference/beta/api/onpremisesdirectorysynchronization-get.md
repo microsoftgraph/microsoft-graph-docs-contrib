@@ -70,7 +70,7 @@ The following example shows a request.
   "name": "get_onpremisesdirectorysynchronization_e1"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/directory/onPremisesSynchronization/{id}
 ```
 

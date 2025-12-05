@@ -21,7 +21,7 @@ Base Profile Type for Authentication Certificates (SCEP or PFX Create)
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|sanType|[subjectAlternativeNameType](../resources/intune-shared-subjectalternativenametype.md)|Custom SAN Type. Possible values are: `none`, `emailAddress`, `userPrincipalName`, `customAzureADAttribute`, `domainNameService`, `universalResourceIdentifier`.|
+|sanType|[subjectAlternativeNameType](../resources/intune-shared-subjectalternativenametype.md)|Custom SAN Type. The possible values are: `none`, `emailAddress`, `userPrincipalName`, `customAzureADAttribute`, `domainNameService`, `universalResourceIdentifier`.|
 |name|String|Custom SAN Name|
 
 ## Relationships

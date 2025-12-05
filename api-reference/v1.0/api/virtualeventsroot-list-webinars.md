@@ -68,7 +68,7 @@ The following example shows a request.
   "name": "list_virtualeventwebinars"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/solutions/virtualEvents/webinars
 ```
 

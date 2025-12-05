@@ -70,7 +70,7 @@ The following example shows the request.
 }
 -->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/retrieveScopedPermissions
 ```
 
@@ -154,7 +154,7 @@ The following example shows a request with a filter.
 }
 -->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/retrieveScopedPermissions?$filter=permission in ('Microsoft.CloudPC/ProvisioningPolicies/Update','Microsoft.CloudPC/ProvisioningPolicies/Create')
 ```
 
@@ -229,7 +229,7 @@ When the signed-in user has an admin role such as the Intune admin or the Window
 }
 -->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/retrieveScopedPermissions
 ```
 

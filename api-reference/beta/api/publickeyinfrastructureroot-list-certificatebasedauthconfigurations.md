@@ -1,7 +1,7 @@
 ---
 title: "List certificateBasedAuthPki objects"
 description: "Get a list of the certificateBasedAuthPki objects and their properties."
-author: "suawat"
+author: "vimrang"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
@@ -69,7 +69,7 @@ The following example shows a request.
 }
 -->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/directory/publicKeyInfrastructure/certificateBasedAuthConfigurations
 ```
 

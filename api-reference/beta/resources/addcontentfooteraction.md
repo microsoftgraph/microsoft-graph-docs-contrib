@@ -22,7 +22,7 @@ Represents an action that specifies the details on the content footer to be adde
 
 | Property      | Type   | Description                                                   |
 | :------------ | :----- | :------------------------------------------------------------ |
-| alignment     | String | Possible values are: `left`, `right`, `center`.               |
+| alignment     | String | The possible values are: `left`, `right`, `center`.               |
 | fontColor     | String | Color of the font to use for the footer.                      |
 | fontName      | String | Name of the font to use for the footer.                       |
 | fontSize      | Int32  | Font size to use for the footer.                              |

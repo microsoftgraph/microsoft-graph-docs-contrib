@@ -60,7 +60,7 @@ If successful, this method returns a `200 OK` response code and the collection o
   "name": "list_permission_that_match_query"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/sites?search={query}
 ```
 

@@ -66,7 +66,7 @@ The following example shows a request.
   "name": "list_customsecurityattributeaudit"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/auditLogs/customSecurityAttributeAudits?$top=1
 ```
 

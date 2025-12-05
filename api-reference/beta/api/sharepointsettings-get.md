@@ -65,7 +65,7 @@ The following example shows a request.
   "name": "get_settings_at_tenant_level"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/admin/sharepoint/settings
 ```
 

@@ -65,7 +65,7 @@ The following example shows a request.
   "name": "list_devicetemplate"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/directory/templates/deviceTemplates
 ```
 

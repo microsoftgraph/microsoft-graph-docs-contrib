@@ -58,7 +58,7 @@ If successful, this method returns a `200 OK` response code and a [windowsProtec
   "name": "get_windowsprotectionstate"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/windowsProtectionStates/{windowsProtectionStateId}
 ```
 

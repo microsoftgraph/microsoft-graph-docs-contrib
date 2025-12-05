@@ -61,7 +61,7 @@ The following example shows a request.
   "name": "list_privilegedaccessgroupeligibilityscheduleinstance"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/identityGovernance/privilegedAccess/group/eligibilityScheduleInstances?$filter=groupId eq '2b5ed229-4072-478d-9504-a047ebd4b07d'
 ```
 

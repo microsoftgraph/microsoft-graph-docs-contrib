@@ -43,7 +43,7 @@ In the request URL, provide the following query parameters with values.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|role|String|User role of the specified user in the **virtualEventTownhall**. Possible values are: `organizer`, `coOrganizer`.|
+|role|String|User role of the specified user in the **virtualEventTownhall**. The possible values are: `organizer`, `coOrganizer`.|
 |userId|String|The ID of the specified user in Microsoft Entra.|
 
 ## Request headers
@@ -72,7 +72,7 @@ The following example shows a request.
   "name": "virtualeventtownhallthis.getbyuseridandrole"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/solutions/virtualEvents/townhalls/getByUserIdAndRole(userId='b7ef013a-c73c-4ec7-8ccb-e56290f45f68', role='organizer')
 ```
 

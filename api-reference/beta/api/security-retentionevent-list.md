@@ -59,7 +59,7 @@ Here's an example of a request.
   "name": "list_retentionevent"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/security/triggers/retentionEvents
 ```
 

@@ -63,7 +63,7 @@ The following example shows a request.
   "name": "list_pronounssettings"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/admin/people/pronouns
 ```
 

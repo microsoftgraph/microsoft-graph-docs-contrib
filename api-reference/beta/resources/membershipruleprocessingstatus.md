@@ -21,7 +21,7 @@ Represents the current status of dynamic group processing.
 | :-------------------- | :------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | errorMessage          | String                                                                                 | Detailed error message if dynamic group processing ran into an error. <br><br> Optional. Read-only.                                                                        |
 | lastMembershipUpdated | edm.DateTime                                                                           | Most recent date and time when membership of a dynamic group was updated. <br><br> Optional. Read-only.                                                                    |
-| status                | [membershipRuleProcessingStatusDetails](#membershipruleprocessingstatusdetails-values) | Current status of a dynamic group processing. Possible values are: `NotStarted`, `Running`, `Succeeded`, `Failed`, and `UnknownFutureValue`. <br><br> Required. Read-only. |
+| status                | [membershipRuleProcessingStatusDetails](#membershipruleprocessingstatusdetails-values) | Current status of a dynamic group processing. The possible values are: `NotStarted`, `Running`, `Succeeded`, `Failed`, and `UnknownFutureValue`. <br><br> Required. Read-only. |
 
 ### membershipRuleProcessingStatusDetails values
 

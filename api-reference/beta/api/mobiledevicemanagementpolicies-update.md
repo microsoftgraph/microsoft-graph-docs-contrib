@@ -53,14 +53,15 @@ In the request body, supply the values for fields listed below that should be up
 
 |Property|Type|Description|
 |:---|:---|:---|
-|appliesTo|policyScope|Determines the groups this policy setting applies to. Possible values are: `none`, `all`, `selected` **Important:** `selected` cannot be used when specifying this property. Use [includedGroups](../api/mobiledevicemanagementpolicies-post-includedgroups.md) to add specific groups. Using `all` will remove any existing groups.|
+|appliesTo|policyScope|Determines the groups this policy setting applies to. The possible values are: `none`, `all`, `selected` **Important:** `selected` cannot be used when specifying this property. Use [includedGroups](../api/mobiledevicemanagementpolicies-post-includedgroups.md) to add specific groups. Using `all` will remove any existing groups.|
+|isMdmEnrollmentDuringRegistrationDisabled|Boolean|Controls the option if users in an automatic enrollment configuration on Microsoft Entra registered devices are prompted to MDM enroll their device in the Entra account registration flow.|
 |complianceUrl|String|Compliance URL of the mobility management application|
 |discoveryUrl|String|Discovery URL of the mobility management application|
 |termsOfUseUrl|String|Terms of Use URL of the mobility management application|
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [mobilityManagementPolicy](../resources/mobilitymanagementpolicy.md) object in the response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
@@ -79,7 +80,7 @@ PATCH https://graph.microsoft.com/beta/policies/mobileDeviceManagementPolicies/a
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.mobilityManagementPolicy",
+  "@odata.type": "#microsoft.graph.mobileDeviceManagementPolicy",
   "complianceUrl": "https://portal.uem.contoso.com/?portalAction=Compliance",
   "discoveryUrl": "https://enrollment.uem.contoso.com/enrollmentserver/discovery.svc",
   "termsOfUseUrl": "https://portal.uem.contoso.com/TermsofUse.aspx"

@@ -79,7 +79,7 @@ The following example shows a request to retrieve AWS inactive users.
   "name": "list_inactiveuserfinding"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/microsoft.graph.inactiveUserFinding
 ```
 

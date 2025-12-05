@@ -32,7 +32,6 @@ Namespace: microsoft.graph.externalConnectors
 | externalGroup
 | unknownFutureValue
 
-
 ### connectionOperationStatus values
 
 | Member
@@ -42,7 +41,6 @@ Namespace: microsoft.graph.externalConnectors
 | completed
 | failed
 | unknownFutureValue
-
 
 ### connectionState values
 
@@ -54,7 +52,28 @@ Namespace: microsoft.graph.externalConnectors
 | limitExceeded
 | unknownFutureValue
 
+### contentCategory values
+
+| Member
+|:----------
+| uncategorized
+| knowledgeBase
+| wikis
+| fileRepository
+| qna
+| crm
+| dashboard
+| people
+| media
+| email
+| messaging
+| meetingTranscripts
+| taskManagement
+| learningManagement
+| unknownFutureValue
+
 ### contentExperienceType values
+
 | Member
 |:--------------
 | search
@@ -164,6 +183,7 @@ Namespace: microsoft.graph.externalConnectors
 | int64Collection
 | doubleCollection
 | dateTimeCollection
+| principal
 | unknownFutureValue
 
 ### ruleOperation values

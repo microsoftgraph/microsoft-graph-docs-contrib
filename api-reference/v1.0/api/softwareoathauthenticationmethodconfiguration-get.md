@@ -56,7 +56,7 @@ The following example shows a request.
   "name": "get_softwareoathauthenticationmethodconfiguration"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/softwareOath
 ```
 

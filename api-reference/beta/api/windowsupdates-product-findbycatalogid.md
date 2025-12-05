@@ -70,7 +70,7 @@ The following example shows a request.
   "name": "windowsupdates.FindByCatalogId"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/admin/windows/updates/products/FindByCatalogId(catalogID='10cb1ba292c5586e22c9991be3f12fbd39f2ebf231cb5d201c67f42fbaccc567')?expand=revisions($expand=catalogEntry,knowledgeBaseArticle),knownIssues($expand=originatingKnowledgeBaseArticle,resolvingKnowledgeBaseArticle)
 ```
 

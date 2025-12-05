@@ -60,7 +60,7 @@ Here's an example  of a request.
   "name": "get_conditionalaccesssettings"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/networkAccess/settings/conditionalAccess
 ```
 

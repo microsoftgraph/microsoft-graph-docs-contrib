@@ -70,7 +70,7 @@ The following example shows a request.
   "name": "list_all_driveprotectionunit"
 }
 -->
-```http
+```msgraph-interactive
 GET /solutions/backupRestore/protectionUnits/microsoft.graph.driveProtectionUnit
 ```
 
@@ -313,7 +313,7 @@ The following example shows a request.
   "name": "list_driveprotectionunit"
 }
 -->
-```http
+```msgraph-interactive
 GET /solutions/backupRestore/oneDriveForBusinessProtectionPolicies/845457dc-4bb2-4815-bef3-8628ebd1952e/driveProtectionUnits
 ```
 

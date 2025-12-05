@@ -35,14 +35,14 @@ Inherits from [caseOperation](../resources/ediscovery-caseoperation.md).
 |createdBy|[identitySet](../resources/identityset.md)| The user who initiated the export operation. Inherited from [caseOperation](../resources/ediscovery-caseoperation.md).|
 |createdDateTime|DateTimeOffset| The date and time the export was created. Inherited from [caseOperation](../resources/ediscovery-caseoperation.md).|
 |description|String| The description provided for the export. |
-|exportOptions|microsoft.graph.ediscovery.exportOptions| The options provided for the export. For more information, see [reviewSet: export](../api/ediscovery-reviewset-export.md). Possible values are: `originalFiles`, `text`, `pdfReplacement`, `fileInfo`, `tags`.|
-|exportStructure|microsoft.graph.ediscovery.exportFileStructure|The options provided specify the structure of the export. For more information, see [reviewSet: export](../api/ediscovery-reviewset-export.md). Possible values are: `none`, `directory`, `pst`.|
+|exportOptions|microsoft.graph.ediscovery.exportOptions| The options provided for the export. For more information, see [reviewSet: export](../api/ediscovery-reviewset-export.md). The possible values are: `originalFiles`, `text`, `pdfReplacement`, `fileInfo`, `tags`.|
+|exportStructure|microsoft.graph.ediscovery.exportFileStructure|The options provided specify the structure of the export. For more information, see [reviewSet: export](../api/ediscovery-reviewset-export.md). The possible values are: `none`, `directory`, `pst`.|
 |id|String| The ID for the operation. Read-only. Inherited from [caseOperation](../resources/ediscovery-caseoperation.md).|
 |outputFolderId|String|The output folder ID.|
 |outputName|String| The name provided for the export.|
 |percentProgress|Int32| The progress of the operation. Inherited from [caseOperation](../resources/ediscovery-caseoperation.md).|
 |resultInfo|[resultInfo](../resources/resultinfo.md)|Contains success and failure-specific result information. Inherited from [caseOperation](../resources/ediscovery-caseoperation.md).|
-|status|[microsoft.graph.ediscovery.caseOperationStatus](../resources/ediscovery-caseoperation.md#caseoperationstatus-values)|The status of the case operation. Inherited from [caseOperation](../resources/ediscovery-caseoperation.md). Possible values are: `notStarted`, `submissionFailed`, `running`, `succeeded`, `partiallySucceeded`, `failed`.|
+|status|[microsoft.graph.ediscovery.caseOperationStatus](../resources/ediscovery-caseoperation.md#caseoperationstatus-values)|The status of the case operation. Inherited from [caseOperation](../resources/ediscovery-caseoperation.md). The possible values are: `notStarted`, `submissionFailed`, `running`, `succeeded`, `partiallySucceeded`, `failed`.|
 
 ### exportOptions values
 

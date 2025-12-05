@@ -67,9 +67,9 @@ items:
 - name: OneNote section
   items:
   - name: OneNote section
-    href: ../../resources/section.md
+    href: ../../resources/onenotesection.md
   - name: Get section
-    href: ../../api/section-get.md
+    href: ../../api/onenotesection-get.md
   - name: Create page
     href: ../../api/section-post-pages.md
   - name: List pages

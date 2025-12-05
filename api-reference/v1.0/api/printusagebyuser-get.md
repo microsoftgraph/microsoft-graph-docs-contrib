@@ -57,7 +57,7 @@ If successful, this method returns a `200 OK` response code and a [printUsageByU
   "name": "get_printusagebyuser"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/reports/dailyPrintUsageByUser/{id}
 ```
 

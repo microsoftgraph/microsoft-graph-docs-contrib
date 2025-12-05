@@ -36,7 +36,7 @@ The group policy configuration entity contains the configured values for one or 
 |displayName|String|User provided name for the resource object.|
 |description|String|User provided description for the resource object.|
 |roleScopeTagIds|String collection|The list of scope tags for the configuration.|
-|policyConfigurationIngestionType|[groupPolicyConfigurationIngestionType](../resources/intune-grouppolicy-grouppolicyconfigurationingestiontype.md)|Type of definitions configured for this policy. Possible values are: `unknown`, `custom`, `builtIn`, `mixed`, `unknownFutureValue`.|
+|policyConfigurationIngestionType|[groupPolicyConfigurationIngestionType](../resources/intune-grouppolicy-grouppolicyconfigurationingestiontype.md)|Type of definitions configured for this policy. The possible values are: `unknown`, `custom`, `builtIn`, `mixed`, `unknownFutureValue`.|
 |id|String|Key of the entity.|
 |lastModifiedDateTime|DateTimeOffset|The date and time the entity was last modified.|
 

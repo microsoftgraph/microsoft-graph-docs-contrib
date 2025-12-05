@@ -31,6 +31,7 @@ For the list of API operations for managing this resource type, see the [authent
 |:---|:---|:---|
 |authenticationEventsFlowId|String|The identifier of the [authenticationEventsFlow](../resources/authenticationeventsflow.md) object. Inherited from [authenticationEventListener](../resources/authenticationeventlistener.md).|
 |conditions|[authenticationConditions](../resources/authenticationconditions.md)|The conditions on which this authenticationEventListener should trigger. Inherited from [authenticationEventListener](../resources/authenticationeventlistener.md).|
+|displayName|String|The display name of the listener. Inherited from [authenticationEventListener](../resources/authenticationeventlistener.md).|
 |handler|[onOtpSendHandler](../resources/onotpsendhandler.md)|Used to configure what to invoke if the onEmailOTPSend event resolves to this listener. This base class serves as a generic OTP event handler used for both email and SMS OTP messages.|
 |id|String|The unique identifier for the onEmailOtpSendCustomExtension object. Inherited from [entity](../resources/entity.md).|
 [authenticationEventListener](../resources/authenticationeventlistener.md).|
@@ -52,6 +53,7 @@ The following JSON representation shows the resource type.
 {
   "@odata.type": "#microsoft.graph.onEmailOtpSendListener",
   "id": "String (identifier)",
+  "displayName": "String",
   "conditions": {
     "@odata.type": "microsoft.graph.authenticationConditions"
   },

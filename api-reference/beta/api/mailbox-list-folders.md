@@ -69,7 +69,7 @@ The following example shows a request.
   "sampleKeys": ["MBX:e0643f21@a7809c93"]
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/admin/exchange/mailboxes/MBX:e0643f21@a7809c93/folders
 ```
 
@@ -156,7 +156,7 @@ The following example shows a request.
   "sampleKeys": ["MBX:e0643f21@a7809c93"]
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/admin/exchange/mailboxes/MBX:e0643f21@a7809c93/folders?$filter=type eq 'IPF.Appointment'&$select=displayName,type&$top=5
 ```
 

@@ -39,7 +39,8 @@ The **fido2AuthenticationMethod** resource is a derived type that inherits from 
 |aaGuid|String|Authenticator Attestation GUID, an identifier that indicates the type (such as make and model) of the authenticator.|
 |model|String|The manufacturer-assigned model of the FIDO2 security key.|
 |attestationCertificates|String collection|The attestation certificate or certificates attached to this security key.|
-|attestationLevel|attestationLevel|The attestation level of this FIDO2 security key. Possible values are: `attested`, `notAttested`, `unknownFutureValue`.|
+|attestationLevel|attestationLevel|The attestation level of this FIDO2 security key. The possible values are: `attested`, `notAttested`, `unknownFutureValue`.|
+|passkeyType|passkeyType|The type of passkey allowed in the passkey profile. The possible values are: `deviceBound`, `synced`, `unknownFutureValue`.|
 |publicKeyCredential|[webauthnPublicKeyCredential](../resources/webauthnpublickeycredential.md)|Contains the WebAuthn public key credential information being registered. Only used for write requests. This property isn't returned on read operations.|
 
 
@@ -70,6 +71,7 @@ The following JSON representation shows the resource type.
     "String"
   ],
   "attestationLevel": "String",
+  "passkeyType": "String",
   "publicKeyCredential": {
     "@odata.type": "microsoft.graph.webauthnPublicKeyCredential"
   }

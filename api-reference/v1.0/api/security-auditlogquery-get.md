@@ -54,7 +54,7 @@ The following example shows a request.
   "name": "get_auditlogquery"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/security/auditLog/queries/{auditLogQueryId}
 ```
 

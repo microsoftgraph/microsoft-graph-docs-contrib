@@ -69,7 +69,7 @@ The following example shows a request.
   "name": "list_restorepoint"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/solutions/backupRestore/restorePoints?$expand=protectionUnit($filter=id eq 'd234cf54-e0fb-49b7-9c8a-5bcd1439e853')&$filter=protectionDateTime lt 2024-05-12T10:01:00Z
 ```
 

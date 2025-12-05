@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 
 Delete a [servicePrincipal](../resources/serviceprincipal.md) object.
 
+This API can also delete an [agentIdentityBlueprintPrincipal](../resources/agentidentityblueprintprincipal.md) object by its ID.
+
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions

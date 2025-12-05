@@ -108,7 +108,7 @@ The following example shows a request.
   "name": "reportroot_getmicrosoft365copilotusercountsummary_csv"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/reports/getMicrosoft365CopilotUserCountSummary(period='D7')?$format=text/csv
 ```
 
@@ -181,7 +181,7 @@ The following example shows a request.
   "name": "reportroot_getmicrosoft365copilotusercountsummary_json"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/reports/getMicrosoft365CopilotUserCountSummary(period='D7')?$format=application/json
 ```
 

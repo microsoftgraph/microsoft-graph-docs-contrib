@@ -87,7 +87,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
   "name": "approvalthis-filterbycurrentuser"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/accessPackageAssignmentApprovals/filterByCurrentUser(on='approver')
 ```
 
@@ -153,7 +153,7 @@ Content-Type: application/json
   "name": "approvalthis-filterbycurrentuser_azureADGroup"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/identityGovernance/privilegedAccess/group/assignmentApprovals/filterByCurrentUser(on='approver')
 ```
 

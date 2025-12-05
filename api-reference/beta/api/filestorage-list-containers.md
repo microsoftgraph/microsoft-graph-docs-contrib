@@ -71,7 +71,7 @@ The following example enumerates all containers of a given container type.
   "name": "list_filestoragecontainer"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/storage/fileStorage/containers?$filter=containerTypeId eq e2756c4d-fa33-4452-9c36-2325686e1082
 ```
 

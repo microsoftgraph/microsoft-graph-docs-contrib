@@ -59,7 +59,7 @@ In the request body, supply the values for relevant fields that should be update
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |phoneNumber|String|The phone number to text or call for authentication. Phone numbers use the format `+{country code} {number}x{extension}`, with extension optional. For example, `+1 5555551234` or `+1 5555551234x123` are valid. Numbers are rejected when creating or updating if they do not match the required format.|
-|phoneType|string| Possible values are: `mobile`, `alternateMobile`, or `office`.|
+|phoneType|string| The possible values are: `mobile`, `alternateMobile`, or `office`.|
 
 ## Response
 

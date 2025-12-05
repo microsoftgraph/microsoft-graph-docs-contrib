@@ -67,7 +67,7 @@ If successful, this function returns a `200 OK` response code and a [unifiedRole
   "name": "unifiedroleeligibilityscheduleinstancethis.filterbycurrentuser"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/roleManagement/directory/roleEligibilityScheduleInstances/filterByCurrentUser(on='principal')
 ```
 

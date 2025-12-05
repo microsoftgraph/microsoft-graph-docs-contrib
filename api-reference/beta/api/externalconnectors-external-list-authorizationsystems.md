@@ -67,7 +67,7 @@ The following example shows a request.
   "name": "list_authorizationsystem"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/external/authorizationSystems
 ```
 
@@ -193,7 +193,7 @@ The following example shows a request.
   "name": "list_authorizationsystem_filter"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/external/authorizationSystems?$filter=dataCollectionInfo/entitlements/microsoft.graph.entitlementsDataCollection/permissionsModificationCapability eq 'enabled' and dataCollectionInfo/entitlements/microsoft.graph.entitlementsDataCollection/status eq 'online'
 ```
 

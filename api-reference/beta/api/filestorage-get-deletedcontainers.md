@@ -60,7 +60,7 @@ The following example shows a request.
   "name": "get_deleted_filestoragecontainer"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/storage/fileStorage/deletedContainers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z?$select=*,members
 ```
 

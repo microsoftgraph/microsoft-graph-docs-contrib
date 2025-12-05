@@ -66,7 +66,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 }
 -->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/directory/outboundSharedUserProfiles/c228b2ae-c4fb-4eda-9620-7e73dddd1cac/tenants
 ```
 

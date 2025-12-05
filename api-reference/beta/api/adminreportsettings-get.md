@@ -67,7 +67,7 @@ The following example shows a request.
   "name": "get_adminreportsettings"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/admin/reportSettings
 ```
 

@@ -68,7 +68,7 @@ If successful, this method returns a `200 OK` response code and a [tenantInforma
 }
 -->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/tenantRelationships/findTenantInformationByTenantId(tenantId='6babcaad-604b-40ac-a9d7-9fd97c0b779f')
 ```
 

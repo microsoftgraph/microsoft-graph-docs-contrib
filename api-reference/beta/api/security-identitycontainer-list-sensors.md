@@ -64,7 +64,7 @@ The following example shows a request.
   "name": "list_sensor"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/security/identities/sensors
 ```
 
@@ -132,7 +132,8 @@ Content-Type: application/json
             "DC1.domain1.test.local"
         ],
         "isDelayedDeploymentEnabled": true
-      }
+      },
+      "serviceStatus": "running"
     }
   ]
 }
