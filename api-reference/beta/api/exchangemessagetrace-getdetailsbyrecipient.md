@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of [exchangeMessageTraceDetail](../resources/accesspackageassignmentrexchangeMessageTraceDetailequest.md) objects filtered on the recipient.
+Get a list of [exchangeMessageTraceDetail](../resources/exchangemessagetracedetail.md) objects filtered on the recipient.
 
 ## Permissions
 
