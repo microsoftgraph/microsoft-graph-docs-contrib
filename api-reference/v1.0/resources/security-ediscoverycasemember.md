@@ -27,7 +27,7 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |recipientType|microsoft.graph.security.recipientType|Specifies the recipient type of the eDiscovery case member. The possible values are: `user`, `roleGroup`, `unknownFutureValue`.|
-|ID|String|The ID of the eDiscovery case member.|
+|id|String|The ID of the eDiscovery case member.|
 |displayName|String|The display name of the eDiscovery case member. Allowed only for case members of type **roleGroup**. |
 |smtpAddress|String|The smtp address of the eDiscovery case member. Allowed only for case members of type **user**. |
 
