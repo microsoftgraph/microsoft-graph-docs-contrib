@@ -26,7 +26,7 @@ Describes status of an asynchronous request to create a Microsoft Search connect
 |:---|:---|:---|
 |error|publicError| If `status` is `failed`, provides more information about the error that caused the failure.|
 |id|String| Unique identifier for the connectionOperation. Read-only. |
-|status|microsoft.graph.externalConnectors.connectionOperationStatus| Indicates the status of the asynchronous operation. Possible values are: `unspecified`, `inprogress`, `completed`, `failed`, `unknownFutureValue`.|
+|status|microsoft.graph.externalConnectors.connectionOperationStatus| Indicates the status of the asynchronous operation. The possible values are: `unspecified`, `inprogress`, `completed`, `failed`, `unknownFutureValue`.|
 
 ## Relationships
 None.

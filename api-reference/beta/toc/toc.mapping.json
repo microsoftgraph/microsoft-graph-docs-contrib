@@ -156,6 +156,7 @@
           {
             "name": "Agent registry",
             "resources": [
+              "agentRegistry",
               "agentInstance",
               "agentCardManifest",
               "agentCollection"
@@ -299,10 +300,10 @@
             "assignedPlaceMode",
             "dropInPlaceMode",
             "mailboxDetails",
-            "unavailablePlaceMode",
             "placeMode",
             "reservablePlaceMode",
-            "resourceLink"
+            "resourceLink",
+            "unavailablePlaceMode"
           ],
            "childNodes": [
             {
@@ -1065,7 +1066,7 @@
       ],
       "childNodes": [
         {
-          "name": "SharePoint migration (preview)",
+          "name": "SharePoint migration",
           "overview": "../../resources/sharepointmigration-api-overview.md",
           "resources": [
             "sharePointMigrationEvent",
@@ -1081,6 +1082,23 @@
           ],
           "complexTypes": [
             "sharePointMigrationContainerInfo"
+          ]
+        },
+        {
+          "name": "SharePoint cross-tenant migration (preview)",
+          "overview": "../../resources/sharepoint-crossorganization-api-overview.md",
+          "resources": [
+            "sharePointGroupIdentityMapping",
+            "sharePointMigrationTask",
+            "sharePointUserIdentityMapping"
+          ],
+          "complexTypes": [
+            "sharePointIdentityMappingGroupMigrationData",
+            "sharePointIdentityMappingUserMigrationData",
+            "sharePointMigrationTaskParameters",
+            "sharePointUserMigrationTaskParameters",
+            "sharePointSiteMigrationTaskParameters",
+            "sharePointGroupMigrationTaskParameters"
           ]
         }
       ]
@@ -1139,6 +1157,7 @@
             "directorySetting",
             "directorySettingTemplate",
             "domain",
+            "onPremAuthenticationPolicy",
             "onPremisesDirectorySynchronization",
             "onPremisesSyncBehavior",
             "organization",
@@ -1147,18 +1166,19 @@
             "bitlockerRecoveryKey",
             "deviceLocalCredentialInfo",
             "featureRolloutPolicy",
-            "mobileAppManagementPolicy",
-            "mobileDeviceManagementPolicy",
             "organizationSettings",
             "uxSetting",
             "deviceTemplate",
             "mutualTlsOauthConfiguration"
           ],
-          "complexTypes": [
-            "template",
-            "trustedCertificateAuthorityBase"
-          ],
           "childNodes": [
+            {
+              "name": "Mobility management policy",
+              "resources": [
+                "mobileAppManagementPolicy",
+                "mobileDeviceManagementPolicy"
+              ]
+            },
             {
               "name": "Custom security attributes",
               "overview": "../../resources/custom-security-attributes-overview.md",
@@ -1312,8 +1332,10 @@
               "resources": [
                 "accessPackage",
                 "accessPackageAssignment",
+                "accessPackageSuggestion",
                 "approval",
                 "approvalStep",
+                "availableAccessPackage",
                 "accessPackageResourceRoleScope",
                 "accessPackageAssignmentPolicy",
                 "accessPackageAssignmentRequest",
@@ -1328,8 +1350,12 @@
                 "accessPackageAssignmentWorkflowExtension",
                 "accessPackageSubject",
                 "connectedOrganization",
+                "endUserSettings",
                 "entitlementManagementSettings",
                 "customAccessPackageWorkflowExtension",
+                "controlConfiguration",
+                "insiderRiskyUserApproval",
+                "entraIdProtectionRiskyUserApproval"
                 "customDataProvidedResourceUploadSession"
               ],
               "complexTypes": [
@@ -1347,6 +1373,9 @@
                 "accessPackageResourceAttributeQuestion",
                 "accessPackageResourceAttributeSource",
                 "accessPackageResourceScope",
+                "accessPackageSuggestionReason",
+                "accessPackageSuggestionRelatedPeopleBased",
+                "accessPackageSuggestionSelfAssignmentHistoryBased",
                 "accessPackageTextInputQuestion",
                 "accessPackageUserDirectoryAttributeStore",
                 "approvalSettings",
@@ -1587,14 +1616,26 @@
             "appRoleAssignment",            
             "dataPolicyOperation",
             "oAuth2PermissionGrant",
-            "certificateBasedAuthConfiguration",
-            "externalIdentitiesPolicy",
-            "webApplicationFirewallProvider",
-            "cloudFlareWebApplicationFirewallProvider",
-            "akamaiWebApplicationFirewallProvider",
-            "webApplicationFirewallVerificationModel"
+            "externalIdentitiesPolicy"
           ],
           "childNodes": [
+            {
+              "name": "Certificate-based authentication (CBA)",
+              "resources": [
+                "certificateBasedAuthConfiguration",
+                "certificateBasedAuthPki",
+                "certificateAuthorityDetail"
+              ]
+            },
+            {
+              "name": "Web application firewall",
+              "resources": [
+                "webApplicationFirewallProvider",
+                "akamaiWebApplicationFirewallProvider",
+                "cloudFlareWebApplicationFirewallProvider",
+                "webApplicationFirewallVerificationModel"
+              ]
+            },
             {
               "name": "Sign-in identifiers",
               "resources": [
@@ -1853,6 +1894,7 @@
               "resources": [
                 "activityBasedTimeoutPolicy",
                 "authorizationPolicy",
+                "b2bManagementPolicy",
                 "homeRealmDiscoveryPolicy",
                 "permissionGrantPolicy",
                 "permissionGrantPreApprovalPolicy",
@@ -1861,15 +1903,9 @@
                 "b2cAuthenticationMethodsPolicy",
                 "featureRolloutPolicy",
                 "identitySecurityDefaultsEnforcementPolicy",
-                "deviceRegistrationPolicy"
+                "deviceRegistrationPolicy",
+                "onPremAuthenticationPolicy"
               ]
-            },
-            {
-              "name": "Public key infrastructure",
-              "resources": [
-                "certificateBasedAuthPki",
-                "certificateAuthorityDetail"
-               ]
             },
             {
               "name": "Trusted certificate authorities for apps (preview)",
@@ -2086,9 +2122,6 @@
           "resources": [
             "microsoft.graph.networkaccess.tenantStatus",
             "microsoft.graph.networkaccess.branchSite",
-            "microsoft.graph.networkaccess.enrichedAuditLogs",
-            "microsoft.graph.networkaccess.logs",
-            "microsoft.graph.networkaccess.reports",
             "microsoft.graph.networkaccess.remoteNetwork",
             "microsoft.graph.networkaccess.alert"
           ],
@@ -2144,19 +2177,22 @@
               ]
             },
             {
-              "name": "Traffic logs",
-              "resources": [
-                "microsoft.graph.networkaccess.networkAccessTraffic",
-                "microsoft.graph.networkaccess.remoteNetworkHealthEvent"
-              ]
-            },
-            {
               "name": "TLS inspection",
               "resources": [
                 "microsoft.graph.networkaccess.externalCertificateAuthorityCertificate",
                 "microsoft.graph.networkaccess.tlsInspectionPolicy",
                 "microsoft.graph.networkaccess.tlsInspectionPolicyLink",
                 "microsoft.graph.networkaccess.tlsInspectionRule"
+              ]
+            },
+            {
+              "name": "Logs and monitoring",
+              "resources": [
+              "microsoft.graph.networkaccess.reports",
+              "microsoft.graph.networkaccess.alert",
+              "microsoft.graph.networkaccess.deployment",
+              "microsoft.graph.networkaccess.networkAccessTraffic",
+              "microsoft.graph.networkaccess.remoteNetworkHealthEvent"
               ]
             }
           ]
@@ -2182,12 +2218,6 @@
                 "delegatedAdminRelationshipRequest",
                 "delegatedAdminRelationshipOperation",
                 "delegatedAdminCustomer"
-              ],
-              "complexTypes": [
-                "delegatedAdminAccessContainer",
-                "delegatedAdminAccessDetails",
-                "delegatedAdminRelationshipCustomerParticipant",
-                "unifiedRole"
               ]
             }
           ]
@@ -2602,7 +2632,7 @@
               ]
             },
             {
-              "name": "Microsoft Entra audit logs",
+              "name": "Microsoft Entra logs",
               "overview": "../../resources/azure-ad-auditlog-overview.md",
               "shouldSort": true,
               "resources": [
@@ -2801,6 +2831,8 @@
             "userDataSecurityAndGovernance"
            ],
             "complexTypes": [
+              "aiAgentInfo",
+              "aiInteractionEntity",
               "activityMetadata",
               "aiInteractionPlugin",
               "autoLabeling",
@@ -2838,6 +2870,7 @@
               "processingError",
               "protectedApplicationMetadata",
               "protectedContent",
+              "resourceAccessDetail",
               "restrictAccessAction",
               "restrictAccessActionBase",
               "scopeBase",
@@ -3271,7 +3304,8 @@
             "presence"
           ],
           "complexTypes": [
-            "outOfOfficeSettings"
+            "outOfOfficeSettings",
+            "userWorkLocation"
           ],
           "childNodes": [
             {

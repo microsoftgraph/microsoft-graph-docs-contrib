@@ -20,7 +20,7 @@ Represents the abstract base type for all resource types in the [profile](profil
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|allowedAudiences|allowedAudiences|The audiences that are able to see the values contained within the associated entity. Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|allowedAudiences|allowedAudiences|The audiences that are able to see the values contained within the associated entity. The possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
 |createdBy|[identitySet](../resources/identityset.md)|Provides the identifier of the user and/or application that created the entity.|
 |createdDateTime|DateTimeOffset|Provides the dateTimeOffset for when the entity was created.|
 |id|String|Identifier used for individually addressing an entity. Inherited from [entity](../resources/entity.md)|

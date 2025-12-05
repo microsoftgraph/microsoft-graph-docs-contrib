@@ -21,9 +21,9 @@ Entity to record approval settings for windows quality update policies
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|windowsQualityUpdateCadence|[windowsQualityUpdateCadence](../resources/intune-softwareupdate-windowsqualityupdatecadence.md)|The publishing cadence of a quality update catalog item. Possible values are: `monthly`, `outOfBand`, `unknownFutureValue`.|
-|windowsQualityUpdateCategory|[windowsQualityUpdateCategory](../resources/intune-softwareupdate-windowsqualityupdatecategory.md)|The category of a Windows quality update catalog item. Possible values are: `all`, `security`, `nonSecurity`, `unknownFutureValue`, `quickMachineRecovery`.|
-|approvalMethodType|[windowsQualityUpdatePolicyApprovalMethodType](../resources/intune-softwareupdate-windowsqualityupdatepolicyapprovalmethodtype.md)|The approval type of specific gourp of quality updates. Possible values are: `manual`, `automatic`, `unknownFutureValue`.|
+|windowsQualityUpdateCadence|[windowsQualityUpdateCadence](../resources/intune-softwareupdate-windowsqualityupdatecadence.md)|The publishing cadence of a quality update catalog item. The possible values are: `monthly`, `outOfBand`, `unknownFutureValue`.|
+|windowsQualityUpdateCategory|[windowsQualityUpdateCategory](../resources/intune-softwareupdate-windowsqualityupdatecategory.md)|The category of a Windows quality update catalog item. The possible values are: `all`, `security`, `nonSecurity`, `unknownFutureValue`, `quickMachineRecovery`.|
+|approvalMethodType|[windowsQualityUpdatePolicyApprovalMethodType](../resources/intune-softwareupdate-windowsqualityupdatepolicyapprovalmethodtype.md)|The approval type of specific gourp of quality updates. The possible values are: `manual`, `automatic`, `unknownFutureValue`.|
 |deferredDeploymentInDay|Int32|The deferral days for auto approval type, not applicable for manual approve|
 
 ## Relationships

@@ -13,7 +13,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get counts of the visits to the top destination aggregations.
+Get counts of the visits to the top destination aggregations as logged in [Global Secure Access](../resources/networkaccess-global-secure-access-api-overview.md)
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 

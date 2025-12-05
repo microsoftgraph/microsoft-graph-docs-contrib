@@ -158,7 +158,7 @@ Users are subscribed to the following objects.
 
 | Planner resource type | Subscribed instances                                                                                                                                                                                    |
 | :-------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **tasks**                 | <ul><li>Created by the user</li><li>Assigned to the user</li><li>Belong to a plan that the user owns</li><li>Contained in a plan shared with the user through the plan's **sharedWith** collection</li> |
+| **tasks**                 | <ul><li>Created by the user</li><li>Assigned to the user</li><li>Belong to a plan that the user owns</li><li>Contained in a plan shared with the user through the plan's **sharedWith** collection</li></ul> |
 | **plans**                 | <ul><li>Shared with the user through the plan's **sharedWith** collection</li></ul>                                                                                                                     |
 | **buckets**               | <ul><li>Contained in a plan shared with the user through the plan's **sharedWith** collection</li></ul>                                                                                                 |
 

@@ -59,7 +59,7 @@ The following table shows the properties that are required when you create the g
 |lastModifiedDateTime|DateTimeOffset|The date and time at which the GroupPolicyMigrationReport was last modified.|
 |groupPolicyCreatedDateTime|DateTimeOffset|The date and time at which the GroupPolicyMigrationReport was created.|
 |groupPolicyLastModifiedDateTime|DateTimeOffset|The date and time at which the GroupPolicyMigrationReport was last modified.|
-|migrationReadiness|[groupPolicyMigrationReadiness](../resources/intune-gpanalyticsservice-grouppolicymigrationreadiness.md)|The Intune coverage for the associated Group Policy Object file. Possible values are: `none`, `partial`, `complete`, `error`, `notApplicable`.|
+|migrationReadiness|[groupPolicyMigrationReadiness](../resources/intune-gpanalyticsservice-grouppolicymigrationreadiness.md)|The Intune coverage for the associated Group Policy Object file. The possible values are: `none`, `partial`, `complete`, `error`, `notApplicable`.|
 |targetedInActiveDirectory|Boolean|The Targeted in AD property from GPO Xml Content|
 |totalSettingsCount|Int32|The total number of Group Policy Settings from GPO file.|
 |supportedSettingsCount|Int32|The number of Group Policy Settings supported by Intune.|

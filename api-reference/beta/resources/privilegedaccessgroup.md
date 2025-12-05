@@ -33,7 +33,7 @@ None.
 |eligibilityScheduleInstances|[privilegedAccessGroupEligibilityScheduleInstance](../resources/privilegedaccessgroupeligibilityscheduleinstance.md) collection|The instances of eligibility schedules to activate a just-in-time access.|
 |eligibilityScheduleRequests|[privilegedAccessGroupEligibilityScheduleRequest](../resources/privilegedaccessgroupeligibilityschedulerequest.md) collection|The schedule requests for operations to create, update, delete, extend, and renew an eligibility.|
 |eligibilitySchedules|[privilegedAccessGroupEligibilitySchedule](../resources/privilegedaccessgroupeligibilityschedule.md) collection|The eligibility schedules to activate a just-in-time access.|
-|resources|[groupResource](../resources/privilegedaccessgroupeligibilityschedule.md) collection|The privileged groups in PIM for Groups.|
+|resources|[groupResource](../resources/groupresource.md) collection|The privileged groups in PIM for Groups.|
 
 ## JSON representation
 The following JSON representation shows the resource type.
