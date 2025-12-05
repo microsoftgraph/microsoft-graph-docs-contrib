@@ -23,7 +23,6 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 ### Teamwork and communications | Messaging
 
 - [Get](/graph/api/channel-get-allmembers?view=graph-rest-beta&preserve-view=true) a specific member from the **allMembers** collection of a channel. This API provides unified access to both direct and indirect members across all channel types, including shared channels.
-- Use the **@microsoft.graph.originalSourceMembershipUrl** property on [conversationMember](/graph/api/resources/conversationmember?view=graph-rest-beta&preserve-view=true) to identify the source team for indirect members in shared channels.
 
 ## November 2025: New and generally available
 
