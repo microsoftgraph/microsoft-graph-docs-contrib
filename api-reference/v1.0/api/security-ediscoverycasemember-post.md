@@ -156,6 +156,7 @@ The following example shows a request.
 ``` http
 POST https://graph.microsoft.com/v1.0/security/cases/ediscoveryCases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/caseMembers
 Content-Type: application/json
+
 {
     "recipientType": "user",
     "id": "c4af6f9d-37f6-43f9-9e17-601544234146"
