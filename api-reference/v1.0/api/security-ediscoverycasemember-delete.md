@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-DELETE security/cases/ediscoveryCases/{ediscoveryCaseId}/caseMembers/{eDiscoveryCaseMemberId}
+DELETE /security/cases/ediscoveryCases/{ediscoveryCaseId}/caseMembers/{eDiscoveryCaseMemberId}
 ```
 
 ## Request headers
