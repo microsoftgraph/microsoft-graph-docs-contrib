@@ -1,7 +1,7 @@
 ---
 title: "exchangeMessageTrace: getDetailsByRecipient"
 description: "Get a list of exchangeMessageTraceDetail objects filtered on the recipient."
-author: "Huajian_MSIT"    
+author: "Huajian-MSIT"    
 ms.date: 12/04/2025            
 ms.localizationpriority: medium
 ms.subservice: "outlook"
