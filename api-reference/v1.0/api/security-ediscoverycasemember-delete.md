@@ -50,7 +50,7 @@ DELETE /security/cases/ediscoveryCases/{ediscoveryCaseId}/caseMembers/{eDiscover
 
 |Property|Type|Description|
 |:---|:---|:---|
-|ID|String|The ID of the eDiscovery case member. Can be obtained by calling **GET /caseMembers**. Required.|
+|id|String|The ID of the eDiscovery case member. Can be obtained by calling [GET /caseMembers](../api/security-ediscoverycasemember-list.md). Required.|
 
 ## Response
 
