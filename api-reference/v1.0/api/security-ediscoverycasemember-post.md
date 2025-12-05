@@ -51,7 +51,7 @@ POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/caseMembers
 |Property|Type|Description|
 |:---|:---|:---|
 |recipientType|microsoft.graph.security.recipientType|Specifies the recipient type of the eDiscovery case member. The possible values are: `user`, `roleGroup`, `unknownFutureValue`. Required.|
-|ID|String|The ID of the eDiscovery case member. If not specified, then either **displayName** (for role group) or **smtpAddress** (for user) must be provided.|
+|id|String|The ID of the eDiscovery case member. If not specified, then either **displayName** (for role group) or **smtpAddress** (for user) must be provided.|
 |displayName|String|The display name of the eDiscovery case member. Allowed only for case members of type **roleGroup**. If not specified, then **ID** must be provided. |
 |smtpAddress|String|The smtp address of the eDiscovery case member. Allowed only for case members of type **user**. If not specified, then **ID** must be provided. |
 
