@@ -22,7 +22,7 @@ Represents the trace information for an email message as it passes through the E
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List message traces](../api/messagetracingroot-list-messagetraces.md)|[exchangeMessageTrace](../resources/exchangemessagetrace.md) collection|Get a list of [exchangeMessageTrace](../resources/exchangeMessageTrace.md) objects.|
-|[getDetailsByRecipient](../api/exchangemessagetrace-getdetailsbyrecipient.md)|[exchangeMessageTraceDetail](../resources/exchangemessagetracedetail.md) collection|Get a list of [exchangeMessageTraceDetail](../resources/accesspackageassignmentrexchangeMessageTraceDetailequest.md) objects filtered on the recipient.|
+|[getDetailsByRecipient](../api/exchangemessagetrace-getdetailsbyrecipient.md)|[exchangeMessageTraceDetail](../resources/exchangemessagetracedetail.md) collection|Get a list of [exchangeMessageTraceDetail](../resources/exchangemessagetracedetail.md) objects filtered on the recipient.|
 
 ## Properties
 
