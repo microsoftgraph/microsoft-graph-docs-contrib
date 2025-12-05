@@ -22,9 +22,8 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ### Security | eDiscovery
 
-[Retry Hold Policy API](../api-reference/v1.0/api/security-ediscoveryholdpolicy-retrypolicy.md): Trigger a retry of an [eDiscovery hold policy](../api-reference/v1.0/resources/security-ediscoveryholdpolicy.md).
-
-[Case Member API](../api-reference/v1.0/resources/security-ediscoverycasemember.md): Represents an eDiscovery case member. In the context of eDiscovery, case members are granted access to an ediscoveryCase and its data. These cases are accessible to case members via the eDiscovery UX portal or through the eDiscovery case Microsoft Graph APIs.
+- Added the [retry hold policy API](/graph/api/api/security-ediscoveryholdpolicy-retrypolicy) for triggering a retry of an [eDiscovery hold policy](/graph/api/resources/security-ediscoveryholdpolicy).
+- Added the [eDiscoveryCaseMember resource type and its associated APIs](/graph/api/resources/security-ediscoverycasemember) for managing members of an eDiscovery case.
 
 ## November 2025: New and generally available
 
