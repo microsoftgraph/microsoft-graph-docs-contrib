@@ -2,7 +2,7 @@
 title: "riskyAgent resource type"
 description: Represents the Microsoft Entra agents that are at risk as evaluated by Microsoft Entra ID Protection based on various signals and machine learning.
 author: jiayle27
-ms.date: 11/13/2025
+ms.date: 11/27/2025
 ms.localizationpriority: medium
 ms.subservice: entra-sign-in
 doc_type: resourcePageType
@@ -35,7 +35,7 @@ Inherits from [entity](../resources/entity.md).
 |isDeleted|Boolean|Indicates whether the agent is deleted.|
 |isEnabled|Boolean|Indicates whether the agent is enabled.|
 |isProcessing|Boolean|Indicates whether an agent's risky state is processing in the backend.|
-|riskDetail|riskDetail|Details of the detected risk of the agent. The possible values are: `none`, `adminConfirmedAgentSafe`, `adminConfirmedAgentCompromised`, `adminDismissedRiskForAgent`. <br/><br/> Supports `$filter` (`eq`).|
+|riskDetail|[riskDetail](../resources/riskdetail.md)|Details of the detected risk of the agent. <br/><br/> Supports `$filter` (`eq`).|
 |riskLastModifiedDateTime|DateTimeOffset|The date and time that the risky agent was last updated. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. <br/><br/> Supports `$filter` (`eq`, `le`, and `ge`).|
 |riskLevel|riskLevel|Level of the detected risky agent. The possible values are: `low`, `medium`, `high`, `hidden`, `none`, `unknownFutureValue`. <br/><br/> Supports `$filter` (`eq`).|
 |riskState|riskState|State of the agent's risk. The possible values are: `none`, `confirmedSafe`, `dismissed`, `atRisk`, `confirmedCompromised`, `unknownFutureValue`. <br/><br/> Supports `$filter` (`eq`).|

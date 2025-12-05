@@ -46,7 +46,7 @@ In the request body, supply a JSON representation of the values for relevant fie
 |:---------------|:--------|:----------|
 |assignedTo|String|Name of the analyst the control is assigned to for triage, implementation, or remediation.|
 |comment|String|Analyst comments on the control (for customer control management).|
-|state| String|Analyst driven setting on the control. Possible values are: `Default`, `Ignored`, `ThirdParty`, `Reviewed`.|
+|state| String|Analyst driven setting on the control. The possible values are: `Default`, `Ignored`, `ThirdParty`, `Reviewed`.|
 | vendorInformation | [securityVendorInformation](../resources/securityvendorinformation.md) | Complex type containing details about the security product/service vendor, provider, and subprovider (for example, vendor=Microsoft; provider=SecureScore;). **Provider and vendor fields are required.** |
 
 

@@ -21,7 +21,7 @@ The EnrollmentTimeDeviceMembershipTarget entity represents the targets that devi
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|targetType|[enrollmentTimeDeviceMembershipTargetType](../resources/intune-shared-enrollmenttimedevicemembershiptargettype.md)|The type of the targets that devices will become members of when enrolled with the asociated profile. Possible values are staticSecurityGroup. Default value : unknown. Possible values are: `unknown`, `staticSecurityGroup`, `unknownFutureValue`.|
+|targetType|[enrollmentTimeDeviceMembershipTargetType](../resources/intune-shared-enrollmenttimedevicemembershiptargettype.md)|The type of the targets that devices will become members of when enrolled with the asociated profile. Possible values are staticSecurityGroup. Default value : unknown. The possible values are: `unknown`, `staticSecurityGroup`, `unknownFutureValue`.|
 |targetId|String|The unique identifiers of the targets that devices will become members of when enrolled with the asociated profile.|
 
 ## Relationships

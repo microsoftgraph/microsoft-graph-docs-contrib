@@ -26,7 +26,7 @@ Entity representing setting comparison result
 |definitionId|String|The ID of the setting definition for this instance|
 |currentValueJson|String|JSON representation of current intent (or) template setting's value|
 |newValueJson|String|JSON representation of new template setting's value|
-|comparisonResult|[deviceManagementComparisonResult](../resources/intune-deviceintent-devicemanagementcomparisonresult.md)|Setting comparison result. Possible values are: `unknown`, `equal`, `notEqual`, `added`, `removed`.|
+|comparisonResult|[deviceManagementComparisonResult](../resources/intune-deviceintent-devicemanagementcomparisonresult.md)|Setting comparison result. The possible values are: `unknown`, `equal`, `notEqual`, `added`, `removed`.|
 
 ## Relationships
 None

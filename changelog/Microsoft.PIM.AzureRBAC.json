@@ -3,12 +3,38 @@
     {
       "ChangeList": [
         {
-          "Id": "227a43c4-0bad-4d36-a29e-d65d62ce02fe",
-          "ApiChange": "Resource",
-          "ChangedApiName": "privilegedAccess",
-          "ChangeType": "Deprecation",
-          "Description": "Deprecated the **privilegedAccess** resource and all the associated APIs that are part of the Privileged Identity Management (PIM) iteration 2 APIs for Azure resources. These APIs are deprecated and will stop returning data on October 28, 2026. Use the new [Azure REST PIM API for Azure resource roles](https://learn.microsoft.com/en-us/graph/api/resources/privilegedidentitymanagement-root#migrate-from-pim-v2-to-pim-v3-apis).",
-          "Target": "privilegedAccess"
+          "Id": "c87ef6a5-2b8c-4d1f-9e3a-7f4b2e6d8c91",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "isApproverInformationVisible",
+          "ChangeType": "Addition",
+          "Description": "Added the **isApproverInformationVisible** enumeration type to control the visibility of approver information to requestors.",
+          "Target": "isApproverInformationVisible"
+        },
+        {
+          "Id": "c87ef6a5-2b8c-4d1f-9e3a-7f4b2e6d8c91",
+          "ApiChange": "Property",
+          "ChangedApiName": "isApproverInformationVisible",
+          "ChangeType": "Addition",
+          "Description": "Added the **isApproverInformationVisible** property to the [unifiedApprovalStage](https://learn.microsoft.com/en-us/graph/api/resources/unifiedApprovalStage?view=graph-rest-beta) resource for PIM role activation requests to control whether approver information is visible to requestors.",
+          "Target": "unifiedApprovalStage"
+        }
+      ],
+      "Id": "c87ef6a5-2b8c-4d1f-9e3a-7f4b2e6d8c91",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-11-25T00:00:00.0000000Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+      },
+      {
+      "ChangeList": [
+        {
+      "Id": "227a43c4-0bad-4d36-a29e-d65d62ce02fe",
+      "ApiChange": "Resource",
+      "ChangedApiName": "privilegedAccess",
+      "ChangeType": "Deprecation",
+      "Description": "Deprecated the **privilegedAccess** resource and all the associated APIs that are part of the Privileged Identity Management (PIM) iteration 2 APIs for Azure resources. These APIs are deprecated and will stop returning data on October 28, 2026. Use the new [Azure REST PIM API for Azure resource roles](https://learn.microsoft.com/en-us/graph/api/resources/privilegedidentitymanagement-root#migrate-from-pim-v2-to-pim-v3-apis).",
+      "Target": "privilegedAccess"
         }
       ],
       "Id": "227a43c4-0bad-4d36-a29e-d65d62ce02fe",
@@ -1125,6 +1151,32 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2023-05-05T00:00:00.0000000Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "3e5f5eb7-1ab2-4761-a64d-5574089b794b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "groupResource",
+          "ChangeType": "Addition",
+          "Description": "Added the [groupResource](https://learn.microsoft.com/en-us/graph/api/resources/groupResource?view=graph-rest-beta) resource.",
+          "Target": "groupResource"
+        },
+        {
+          "Id": "3e5f5eb7-1ab2-4761-a64d-5574089b794b",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "resources",
+          "ChangeType": "Addition",
+          "Description": "Added the **resources** relationship to the [privilegedAccessGroup](https://learn.microsoft.com/en-us/graph/api/resources/privilegedAccessGroup?view=graph-rest-beta) resource.",
+          "Target": "privilegedAccessGroup"
+        }
+      ],
+      "Id": "3e5f5eb7-1ab2-4761-a64d-5574089b794b",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-11-20T00:00:00.0000000Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Governance"
     }

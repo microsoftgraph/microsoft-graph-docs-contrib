@@ -21,7 +21,7 @@ Describes the response format of a call start transcription operation.
 | Property                       | Type                        | Description |                                                                                                                                      
 | :----------------------------- | :---------------------------| :----------------------------------|
 | clientContext                  | String                      | Unique client context string. It can have a maximum of 256 characters. |                                                                              
-| status                         | String                      | Possible values are: `notStarted`, `running`, `completed`, `failed`. Read-only. |                                                
+| status                         | String                      | The possible values are: `notStarted`, `running`, `completed`, `failed`. Read-only. |                                                
 
 ## Relationships
 None.

@@ -1,5 +1,137 @@
 {
   "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "3cdabea4-6923-4c02-b014-2c4cdd22dfd4",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "workLocationSource",
+          "ChangeType": "Addition",
+          "Description": "Added the **workLocationSource** enumeration type.",
+          "Target": "workLocationSource"
+        },
+        {
+          "Id": "3cdabea4-6923-4c02-b014-2c4cdd22dfd4",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "workLocationType",
+          "ChangeType": "Addition",
+          "Description": "Added the **workLocationType** enumeration type.",
+          "Target": "workLocationType"
+        },
+        {
+          "Id": "3cdabea4-6923-4c02-b014-2c4cdd22dfd4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "userWorkLocation",
+          "ChangeType": "Addition",
+          "Description": "Added the [userWorkLocation](https://learn.microsoft.com/en-us/graph/api/resources/userWorkLocation?view=graph-rest-beta) resource.",
+          "Target": "userWorkLocation"
+        },
+        {
+          "Id": "3cdabea4-6923-4c02-b014-2c4cdd22dfd4",
+          "ApiChange": "Property",
+          "ChangedApiName": "workLocation",
+          "ChangeType": "Addition",
+          "Description": "Added the **workLocation** property to the [presence](https://learn.microsoft.com/en-us/graph/api/resources/presence?view=graph-rest-beta) resource.",
+          "Target": "presence"
+        },
+        {
+          "Id": "3cdabea4-6923-4c02-b014-2c4cdd22dfd4",
+          "ApiChange": "Method",
+          "ChangedApiName": "clearAutomaticLocation",
+          "ChangeType": "Addition",
+          "Description": "Added the [clearAutomaticLocation](https://learn.microsoft.com/en-us/graph/api/presence-clearAutomaticLocation?view=graph-rest-beta) method to the [presence](https://learn.microsoft.com/en-us/graph/api/resources/presence?view=graph-rest-beta) resource.",
+          "Target": "presence"
+        },
+        {
+          "Id": "3cdabea4-6923-4c02-b014-2c4cdd22dfd4",
+          "ApiChange": "Method",
+          "ChangedApiName": "clearLocation",
+          "ChangeType": "Addition",
+          "Description": "Added the [clearLocation](https://learn.microsoft.com/en-us/graph/api/presence-clearLocation?view=graph-rest-beta) method to the [presence](https://learn.microsoft.com/en-us/graph/api/resources/presence?view=graph-rest-beta) resource.",
+          "Target": "presence"
+        },
+        {
+          "Id": "3cdabea4-6923-4c02-b014-2c4cdd22dfd4",
+          "ApiChange": "Method",
+          "ChangedApiName": "setAutomaticLocation",
+          "ChangeType": "Addition",
+          "Description": "Added the [setAutomaticLocation](https://learn.microsoft.com/en-us/graph/api/presence-setAutomaticLocation?view=graph-rest-beta) method to the [presence](https://learn.microsoft.com/en-us/graph/api/resources/presence?view=graph-rest-beta) resource.",
+          "Target": "presence"
+        },
+        {
+          "Id": "3cdabea4-6923-4c02-b014-2c4cdd22dfd4",
+          "ApiChange": "Method",
+          "ChangedApiName": "setManualLocation",
+          "ChangeType": "Addition",
+          "Description": "Added the [setManualLocation](https://learn.microsoft.com/en-us/graph/api/presence-setManualLocation?view=graph-rest-beta) method to the [presence](https://learn.microsoft.com/en-us/graph/api/resources/presence?view=graph-rest-beta) resource.",
+          "Target": "presence"
+        }
+      ],
+      "Id": "3cdabea4-6923-4c02-b014-2c4cdd22dfd4",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-11-25T16:02:03.2817806Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "27f09bdb-b642-4beb-8aee-3192c7c6cd0f",
+          "ApiChange": "Property",
+          "ChangedApiName": "meetingSpokenLanguageTag",
+          "ChangeType": "Addition",
+          "Description": "Added the **meetingSpokenLanguageTag** property to the [onlineMeetingBase](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeetingBase?view=graph-rest-beta) resource.",
+          "Target": "onlineMeetingBase"
+        },
+        {
+          "Id": "27f09bdb-b642-4beb-8aee-3192c7c6cd0f",
+          "ApiChange": "Property",
+          "ChangedApiName": "expiryDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **expiryDateTime** property to the [onlineMeetingBase](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeetingBase?view=graph-rest-beta) resource.",
+          "Target": "onlineMeetingBase"
+        },
+        {
+          "Id": "27f09bdb-b642-4beb-8aee-3192c7c6cd0f",
+          "ApiChange": "Property",
+          "ChangedApiName": "meetingSpokenLanguageTag",
+          "ChangeType": "Addition",
+          "Description": "Added the **meetingSpokenLanguageTag** property to the [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeeting?view=graph-rest-beta) resource.",
+          "Target": "onlineMeeting"
+        },
+        {
+          "Id": "27f09bdb-b642-4beb-8aee-3192c7c6cd0f",
+          "ApiChange": "Property",
+          "ChangedApiName": "expiryDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **expiryDateTime** property to the [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeeting?view=graph-rest-beta) resource.",
+          "Target": "onlineMeeting"
+        },
+        {
+          "Id": "27f09bdb-b642-4beb-8aee-3192c7c6cd0f",
+          "ApiChange": "Property",
+          "ChangedApiName": "meetingSpokenLanguageTag",
+          "ChangeType": "Addition",
+          "Description": "Added the **meetingSpokenLanguageTag** property to the [virtualEventSession](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventSession?view=graph-rest-beta) resource.",
+          "Target": "virtualEventSession"
+        },
+        {
+          "Id": "27f09bdb-b642-4beb-8aee-3192c7c6cd0f",
+          "ApiChange": "Property",
+          "ChangedApiName": "expiryDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **expiryDateTime** property to the [virtualEventSession](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventSession?view=graph-rest-beta) resource.",
+          "Target": "virtualEventSession"
+        }
+      ],
+      "Id": "27f09bdb-b642-4beb-8aee-3192c7c6cd0f",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-11-19T17:05:23.3008252Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+    },
      {
       "ChangeList": [
         {
@@ -26,6 +158,32 @@
       "WorkloadArea": "Teamwork and communications",
       "SubArea": "Calls and online meetings"
     },
+    {
+      "ChangeList": [
+        {
+          "Id": "55aeecb0-d2cf-48d1-82b2-c42a18084e4e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onlineMeetingSensitivityLabelAssignment",
+          "ChangeType": "Addition",
+          "Description": "Added the [onlineMeetingSensitivityLabelAssignment](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeetingSensitivityLabelAssignment?view=graph-rest-beta) resource.",
+          "Target": "onlineMeetingSensitivityLabelAssignment"
+        },
+        {
+          "Id": "c58e1809-898c-4314-986e-2fb6cd09ab4e",
+          "ApiChange": "Property",
+          "ChangedApiName": "sensitivityLabelAssignment",
+          "ChangeType": "Addition",
+          "Description": "Added the **sensitivityLabelAssignment** property to the [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeeting?view=graph-rest-beta) resource.",
+          "Target": "onlineMeeting"
+        }
+      ],
+      "Id": "55aeecb0-d2cf-48d1-82b2-c42a18084e4e",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-11-19T17:53:57.8764356Z",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": "Call"
+      },    
     {
       "ChangeList": [
         {
@@ -83,6 +241,40 @@
       "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2025-10-14T20:21:16.9977147Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "f008e001-d158-496f-b292-2efc0fb21476",
+          "ApiChange": "Property",
+          "ChangedApiName": "meetingOptionsWebUrl",
+          "ChangeType": "Addition",
+          "Description": "Add the **meetingOptionsWebUrl** property from the [onlineMeetingBase](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeetingBase?view=graph-rest-beta) resource.",
+          "Target": "onlineMeetingBase"
+        },
+        {
+          "Id": "f008e001-d158-496f-b292-2efc0fb21476",
+          "ApiChange": "Property",
+          "ChangedApiName": "meetingOptionsWebUrl",
+          "ChangeType": "Addition",
+          "Description": "Add the **meetingOptionsWebUrl** property from the [virtualEventSession](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventSession?view=graph-rest-beta) resource.",
+          "Target": "virtualEventSession"
+        },
+        {
+          "Id": "f008e001-d158-496f-b292-2efc0fb21476",
+          "ApiChange": "Property",
+          "ChangedApiName": "meetingOptionsWebUrl",
+          "ChangeType": "Addition",
+          "Description": "Add the **meetingOptionsWebUrl** property from the [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeeting?view=graph-rest-beta) resource.",
+          "Target": "onlineMeeting"
+        }
+      ],
+      "Id": "f008e001-d158-496f-b292-2efc0fb21476",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-11-19T14:50:41.9023303Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": "Calls and online meetings"
     },

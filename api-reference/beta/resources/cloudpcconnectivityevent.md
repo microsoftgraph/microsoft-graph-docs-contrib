@@ -22,8 +22,8 @@ Describes a user connection record, including when and how the Cloud PC was conn
 |activityId|string|The unique identifier (GUID) that represents the activity associated with this event. When the event type is `userConnection`, this value is the activity identifier for this event. For any other event types, this value is `00000000-0000-0000-0000-000000000000`.|
 |eventDateTime|DateTimeOffset|Indicates the date and time when this event was created. The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC). For example, midnight UTC on Jan 1, 2014 appears as `2014-01-01T00:00:00Z`.|
 |eventName|string|Name of the event.|
-|eventResult|[cloudPcConnectivityEventResult](#cloudpcconnectivityeventresult-values)|Result of this event. Possible values are: `unknown`, `success`, `failure`, and `unknownFutureValue`.|
-|eventType|[cloudPcConnectivityEventType](#cloudpcconnectivityeventtype-values)|Type of this event. Possible values are: `unknown`, `userConnection`, `userTroubleshooting`, `deviceHealthCheck`, and `unknownFutureValue`.|
+|eventResult|[cloudPcConnectivityEventResult](#cloudpcconnectivityeventresult-values)|Result of this event. The possible values are: `unknown`, `success`, `failure`, and `unknownFutureValue`.|
+|eventType|[cloudPcConnectivityEventType](#cloudpcconnectivityeventtype-values)|Type of this event. The possible values are: `unknown`, `userConnection`, `userTroubleshooting`, `deviceHealthCheck`, and `unknownFutureValue`.|
 |message|string|Additional message for this event.|
 
 ### cloudPcConnectivityEventResult values
