@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-POST security/cases/ediscoveryCases/{ediscoveryCaseId}/caseMembers
+POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/caseMembers
 ```
 
 ## Request headers
