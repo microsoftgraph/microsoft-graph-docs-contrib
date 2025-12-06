@@ -34,7 +34,7 @@ Use the SharePoint cross-tenant migration task APIs in Microsoft Graph to enable
 
 Added the `microsoftRevokedSessions` value to the [riskDetail](/graph/api/resources/riskdetail?view=graph-rest-beta&preserve-view=true) enumeration to indicate that Microsoft revoked sessions. This enumeration member applies to the following Microsoft Entra Identity Protection resources: [riskDetection](/graph/api/resources/riskdetection?view=graph-rest-beta&preserve-view=true), [riskUserActivity](/graph/api/resources/riskuseractivity?view=graph-rest-beta&preserve-view=true), [riskyUser](/graph/api/resources/riskyuser?view=graph-rest-beta&preserve-view=true), and [signIn](/graph/api/resources/signin?view=graph-rest-beta&preserve-view=true).
 
-### Teamwork and communications | Presence
+### Teamwork and communications | Calls and online meetings
 
 The following endpoints are no longer supported for managing [work location](/graph/resources/userworklocation) for a user:
 - `POST /users/{usersId}/presence/clearAutomaticLocation`
