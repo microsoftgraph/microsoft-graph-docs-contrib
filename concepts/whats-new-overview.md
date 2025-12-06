@@ -20,12 +20,6 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ## December 2025: New in preview only
 
-### Teamwork and communications | Presence
-
-The next endpoints are no longer supported for management of [work location](/graph/resources/userworklocation) for a user:
-- `/users/{usersId}/presence`
-- `/communications/presences/{presenceId}`
-- 
 ### Identity and access | Governance
 
 - Added the [controlConfiguration](/graph/api/resources/controlconfiguration?view=graph-rest-beta&preserve-view=true) resource and the **controlConfigurations** relationship to the [entitlementManagement](/graph/api/resources/entitlementmanagement?view=graph-rest-beta&preserve-view=true) resource to represent the policies that control lifecycle and access to access packages across the organization.
@@ -35,6 +29,12 @@ The next endpoints are no longer supported for management of [work location](/gr
 ### Identity and access | Identity and sign-in
 
 Added the `microsoftRevokedSessions` value to the [riskDetail](/graph/api/resources/riskdetail?view=graph-rest-beta&preserve-view=true) enumeration to indicate that Microsoft revoked sessions. This enumeration member applies to the following Microsoft Entra Identity Protection resources: [riskDetection](/graph/api/resources/riskdetection?view=graph-rest-beta&preserve-view=true), [riskUserActivity](/graph/api/resources/riskuseractivity?view=graph-rest-beta&preserve-view=true), [riskyUser](/graph/api/resources/riskyuser?view=graph-rest-beta&preserve-view=true), and [signIn](/graph/api/resources/signin?view=graph-rest-beta&preserve-view=true).
+
+### Teamwork and communications | Presence
+
+The following endpoints are no longer supported for managing [work location](/graph/resources/userworklocation) for a user:
+- `/users/{usersId}/presence`
+- `/communications/presences/{presenceId}`
 
 ## November 2025: New and generally available
 
