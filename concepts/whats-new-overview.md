@@ -37,8 +37,14 @@ Added the `microsoftRevokedSessions` value to the [riskDetail](/graph/api/resour
 ### Teamwork and communications | Presence
 
 The following endpoints are no longer supported for managing [work location](/graph/resources/userworklocation) for a user:
-- `/users/{usersId}/presence`
-- `/communications/presences/{presenceId}`
+- `POST /users/{usersId}/presence/clearAutomaticLocation`
+- `POST /communications/presences/{presenceId}/clearAutomaticLocation`
+- `POST /users/{usersId}/presence/clearLocation`
+- `POST /communications/presences/{presenceId}/clearLocation`
+- `POST /users/{usersId}/presence/setAutomaticLocation`
+- `POST /communications/presences/{presenceId}/setAutomaticLocation`
+- `POST /users/{usersId}/presence/setManualLocation`
+- `POST /communications/presences/{presenceId}/setManualLocation`
 
 ## November 2025: New and generally available
 
