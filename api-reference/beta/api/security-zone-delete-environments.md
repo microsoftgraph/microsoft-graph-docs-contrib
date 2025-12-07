@@ -1,5 +1,5 @@
 ---
-title: "Detach environment"
+title: "Delete environment"
 description: "Detach an environment from a Zone by providing the environment ID. Environment ID should be URL encoded."
 author: "Yarinle4"
 ms.date: 11/26/2025
