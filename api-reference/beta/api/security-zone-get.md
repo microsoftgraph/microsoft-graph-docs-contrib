@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of [microsoft.graph.security.zone](../resources/security-zone.md) object.
+Get a [Zone](../resources/security-zone.md) object by a spcific Zone Id.
 
 ## Permissions
 

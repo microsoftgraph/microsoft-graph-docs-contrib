@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the zone objects and their properties.
+Get a list of the [Zone](../resources/security-zone.md) objects and their properties.
 
 ## Permissions
 

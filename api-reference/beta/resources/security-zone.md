@@ -16,16 +16,18 @@ Namespace: microsoft.graph.security
 
 Represents a zone (also known as cloud scopes) which is an aggregate of cloud native environments used to manage security and access at scale in Microsoft Defender for Cloud. Zones provide logical grouping for access control management, filtering experiences, and security configuration.
 
+After creating a new Zone, you can assign a role to it. For more details, see [RBAC application multiple](../resources/rbacapplicationmultiple.md).
+
 Inherits from [entity](../resources/entity.md)
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
 |[Create](../api/security-post-zones.md)|[microsoft.graph.security.zone](../resources/security-zone.md)|Create a new zone object.|
-|[Get](../api/security-zone-get.md)|[microsoft.graph.security.zone](../resources/security-zone.md)|Read the properties and relationships of [microsoft.graph.security.zone](../resources/security-zone.md) object.|
+|[Get](../api/security-zone-get.md)|[microsoft.graph.security.zone](../resources/security-zone.md)|Get a Zone object by a spcific Zone Id.|
 |[List](../api/security-list-zones.md)|[microsoft.graph.security.zone](../resources/security-zone.md) collection|Get a list of the zone objects and their properties.|
 |[Update](../api/security-zone-update.md)|[microsoft.graph.security.zone](../resources/security-zone.md)|Update the properties of a zone object.|
-|[Delete](../api/security-delete-zones.md)|None|Delete a zone object.|
+|[Delete](../api/security-delete-zones.md)|None|Delete a Zone object by providing the Zone ID.|
 
 ## Properties
 |Property|Type|Description|

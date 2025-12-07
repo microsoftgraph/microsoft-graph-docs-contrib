@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Detach an environment from a Zone by providing the environment ID. Environment ID should be URL encoded.
+Detach an [Environment](../resources/security-Environment.md) object from a [Zone](../resources/security-zone.md) object by providing the environment ID. Environment ID should be URL encoded.
 
 ## Permissions
 

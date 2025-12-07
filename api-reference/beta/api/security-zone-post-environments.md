@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Attach an environment to a Zone by providing the environment ID.
+Attach an [Environment](../resources/security-Environment.md) object to a [Zone](../resources/security-zone.md) object by providing the environment ID.
 
 ## Permissions
 

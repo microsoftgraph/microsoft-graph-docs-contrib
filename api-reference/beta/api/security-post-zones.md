@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new zone object.
+Create a new [Zone](../resources/security-zone.md) object. there is an option to provide a list of [Environment](../resources/security-Environment.md) objects to be included in the new Zone.
 
 ## Permissions
 

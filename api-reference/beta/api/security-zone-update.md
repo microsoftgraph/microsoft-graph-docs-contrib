@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a zone object.
+Update the properties of a [Zone](../resources/security-zone.md) object.
 
 ## Permissions
 
