@@ -34,7 +34,7 @@ Inherits from [entity](../resources/entity.md).
 | :------- | :-------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | emphasis | [sectionEmphasisType](../resources/horizontalsection.md#sectionemphasistype-values)                 | Enumeration value that indicates the emphasis of the section background. The possible values are: `none`, `netural`, `soft`, `strong`, `unknownFutureValue`.                            |
 | id       | String                                                                                              | Unique identifier of the resource. Inherited from [entity](../resources/entity.md).                                                                                                     |
-| layout   | [horizontalSectionLayoutType](../resources/horizontalsection.md#horizontalsectionlayouttype-values) | Layout type of the section. The possible values are: `none`, `oneColumn`, `twoColumns`, `threeColumns`, `oneThirdLeftColumn`, `oneThirdRightColumn`, `fullWidth`, `unknownFutureValue`. |
+| layout   | [horizontalSectionLayoutType](../resources/horizontalsection.md#horizontalsectionlayouttype-values) | Layout type of the section. The possible values are: `none`, `oneColumn`, `twoColumns`, `threeColumns`, `oneThirdLeftColumn`, `oneThirdRightColumn`, `fullWidth`, `flexible`, `unknownFutureValue`. |
 
 ### sectionEmphasisType values
 
