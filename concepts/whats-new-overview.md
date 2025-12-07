@@ -59,7 +59,7 @@ Use resource-specific consent (RSC) permissions for virtual events. For more inf
 
 ### Security
 
-Added support for [mailboxConfigurationEvidence](/graph/api/resources/security-mailboxconfigurationevidence) and [activeDirectoryDomainEvidence](/graph/api/resources/security-activedirectorydomainevidence) evidence types in [securityAlerts](/graph/api/resources/security-alert)
+Added support for [mailboxConfigurationEvidence](/graph/api/resources/security-mailboxconfigurationevidence) and [activeDirectoryDomainEvidence](/graph/api/resources/security-activedirectorydomainevidence) evidence types in [security alerts](/graph/api/resources/security-alert)
 
 
 ## November 2025: New in preview only
