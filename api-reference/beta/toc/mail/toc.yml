@@ -196,6 +196,14 @@ items:
     href: ../../api/messagerule-update.md
   - name: Delete rule
     href: ../../api/messagerule-delete.md
+- name: Message trace (preview)
+  items:
+  - name: Message trace (preview)
+    href: ../../resources/exchangemessagetrace.md
+  - name: List messageTraces
+    href: ../../api/messagetracingroot-list-messagetraces.md
+  - name: getDetailsByRecipient
+    href: ../../api/exchangemessagetrace-getdetailsbyrecipient.md
 - name: Focused Inbox
   items:
   - name: Overview

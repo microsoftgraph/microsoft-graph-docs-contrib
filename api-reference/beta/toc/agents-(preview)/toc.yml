@@ -208,6 +208,8 @@ items:
         href: ../../api/agentidentity-delete-sponsors.md
 - name: Agent registry
   items:
+  - name: Agent registry
+    href: ../../resources/agentregistry.md
   - name: Agent instance
     items:
     - name: Agent instance
