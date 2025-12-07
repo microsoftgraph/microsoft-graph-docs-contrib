@@ -1,5 +1,5 @@
 ---
-title: "List message traces"
+title: "List messageTraces"
 description: "Get a list of exchangeMessageTrace objects."
 author: "Huajian-MSIT"
 ms.date: 12/04/2025
@@ -8,7 +8,7 @@ ms.subservice: "outlook"
 doc_type: apiPageType
 ---
 
-# List message traces
+# List messageTraces
 
 Namespace: microsoft.graph
 
