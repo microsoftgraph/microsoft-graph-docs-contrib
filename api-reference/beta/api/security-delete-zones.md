@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a zone object.
+Delete a zone object by providing the Zone ID.
 
 ## Permissions
 

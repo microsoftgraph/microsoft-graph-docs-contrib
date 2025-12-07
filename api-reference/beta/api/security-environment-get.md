@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of [microsoft.graph.security.environment](../resources/security-environment.md) object.
+Get a specific environment associated with a Zone.
 
 ## Permissions
 

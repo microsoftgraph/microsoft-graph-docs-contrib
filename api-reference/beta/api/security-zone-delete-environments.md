@@ -1,6 +1,6 @@
 ---
-title: "Delete environment"
-description: "Delete a environment object."
+title: "Detach environment"
+description: "Detach an environment from a Zone by providing the environment ID. Environment ID should be URL encoded."
 author: "Yarinle4"
 ms.date: 11/26/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a environment object.
+Detach an environment from a Zone by providing the environment ID. Environment ID should be URL encoded.
 
 ## Permissions
 

@@ -1,5 +1,5 @@
 ---
-title: "Create environment"
+title: "Attach Environment to Zone"
 description: "Create a new environment object."
 author: "Yarinle4"
 ms.date: 11/26/2025
@@ -8,13 +8,13 @@ ms.subservice: "security"
 doc_type: apiPageType
 ---
 
-# Create environment
+# Attach Environment to Zone
 
 Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new environment object.
+Attach an environment to a Zone by providing the environment ID.
 
 ## Permissions
 
