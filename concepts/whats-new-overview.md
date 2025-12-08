@@ -22,7 +22,7 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ### Agents
 
-- Added the [targetagentidentitysponsorsorowners](../api-reference/beta/resources/targetagentidentitysponsorsorowners.md) resource that represents either the sponsor or owner of an [agentIdentity](../api-reference/beta/resources/agentidentity.md).
+- Added the [targetagentidentitysponsorsorowners](/graph/api/resources/targetagentidentitysponsorsorowners.md) resource that represents either the sponsor or owner of an [agentIdentity](/graph/api/resources//agentidentity.md).
 
 ## December 2025: New in preview only
 
