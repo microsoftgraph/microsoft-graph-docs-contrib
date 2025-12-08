@@ -36,7 +36,7 @@ Added the `microsoftRevokedSessions` value to the [riskDetail](/graph/api/resour
 
 ### Teamwork and communications | Messaging
 
-- [Get](/graph/api/channel-get-allmembers?view=graph-rest-beta&preserve-view=true) a specific member from the **allMembers** collection of a channel. This API provides unified access to both direct and indirect members across all channel types, including shared channels.
+- [Get](/graph/api/channel-get-allmembers?view=graph-rest-beta&preserve-view=true) a specific member from the channel **allMembers** collection. This API provides unified access to both direct and indirect members across all channel types, including shared channels.
 
 ## November 2025: New and generally available
 

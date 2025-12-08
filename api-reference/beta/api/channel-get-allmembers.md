@@ -1,5 +1,5 @@
 ---
-title: "Get member from allMembers"
+title: "Get member from channel allMembers collection"
 description: "Retrieve a single conversationMember (direct or indirect) from the allMembers collection using the membership ID."
 author: "jsinghmokha"
 ms.localizationpriority: high
@@ -8,7 +8,7 @@ doc_type: apiPageType
 ms.date: 11/19/2025
 ---
 
-# Get member from allMembers
+# Get member from channel allMembers collection
 
 Namespace: microsoft.graph
 

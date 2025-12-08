@@ -38,7 +38,7 @@ where files are shared, and where tabs are added.
 |[List tabs](../api/channel-list-tabs.md) | [teamsTab](teamstab.md) | Lists tabs pinned to a channel.|
 |[List channel members](../api/channel-list-members.md) | [conversationMember](conversationmember.md) collection | Get a list of [members](../resources/conversationmember.md) in a [channel](../resources/channel.md), including direct members of standard, private, and shared channels.|
 |[List all members](../api/channel-list-allmembers.md) | [conversationMember](conversationmember.md) collection | Get a list of all [members](../resources/conversationmember.md) in a [channel](../resources/channel.md). |
-|[Get member from all members](../api/channel-get-allmembers.md) | [conversationMember](../resources/conversationmember.md) | Retrieve a single [conversationMember](../resources/conversationmember.md) (direct or indirect) from the **allMembers** collection using the membership ID. |
+|[Get member from channel allMembers](../api/channel-get-allmembers.md) | [conversationMember](../resources/conversationmember.md) | Retrieve a single [conversationMember](../resources/conversationmember.md) (direct or indirect) from the **allMembers** collection using the membership ID. |
 |[Add channel member](../api/channel-post-members.md) | [conversationMember](conversationmember.md) | Add a member to a channel. Only supported for channels with a **membershipType** of `private` or `shared`.|
 |[Get channel member](../api/channel-get-members.md) | [conversationMember](conversationmember.md) collection | Get a member in a channel.|
 |[Archive channel](../api/channel-archive.md) | None | Archive a channel.|
