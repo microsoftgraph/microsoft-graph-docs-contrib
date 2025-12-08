@@ -76,6 +76,14 @@ items:
         href: ../../api/agentidentityblueprint-setverifiedpublisher.md
       - name: Unset
         href: ../../api/agentidentityblueprint-unsetverifiedpublisher.md
+    - name: Inheritable permissions
+      items:
+      - name: List inheritable permissions
+        href: ../../api/agentidentityblueprint-list-inheritablepermissions.md
+      - name: Add inheritable permission
+        href: ../../api/agentidentityblueprint-post-inheritablepermissions.md
+      - name: Delete inheritable permission
+        href: ../../api/agentidentityblueprint-delete-inheritablepermissions.md
   - name: Agent identity blueprint principal
     items:
     - name: Agent identity blueprint principal

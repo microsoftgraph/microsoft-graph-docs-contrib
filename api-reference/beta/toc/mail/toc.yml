@@ -200,11 +200,11 @@ items:
   items:
   - name: Message trace (preview)
     href: ../../resources/exchangemessagetrace.md
-  - name: List messageTraces
+  - name: List message traces
     href: ../../api/messagetracingroot-list-messagetraces.md
-  - name: getDetailsByRecipient
+  - name: Get details by recipient
     href: ../../api/exchangemessagetrace-getdetailsbyrecipient.md
-- name: Focused Inbox
+- name: Focused inbox
   items:
   - name: Overview
     href: ../../resources/manage-focused-inbox.md
@@ -238,5 +238,9 @@ items:
       href: ../../api/multivaluelegacyextendedproperty-get.md
 - name: Complex types
   items:
+  - name: Structured data entry
+    href: ../../resources/structureddataentry.md
+  - name: Structured data entry typed value
+    href: ../../resources/structureddataentrytypedvalue.md
   - name: Update all messages read state operation
     href: ../../resources/updateallmessagesreadstateoperation.md
