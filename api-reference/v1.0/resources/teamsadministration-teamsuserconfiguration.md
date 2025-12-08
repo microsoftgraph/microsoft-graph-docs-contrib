@@ -12,20 +12,15 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.teamsAdministration
 
-
-
 Contains information of users who have accounts hosted on Microsoft Teams.
 
-
-Inherits from [microsoft.graph.entity](../resources/entity.md).
-
+Inherits from [entity](../resources/entity.md).
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List](../api/teamsadministration-teamsadminroot-list-userconfigurations.md)|[microsoft.graph.teamsAdministration.teamsUserConfiguration](../resources/teamsadministration-teamsuserconfiguration.md) collection|Get user configurations for all Teams users who belong to a tenant.|
 |[Get](../api/teamsadministration-teamsuserconfiguration-get.md)|[microsoft.graph.teamsAdministration.teamsUserConfiguration](../resources/teamsadministration-teamsuserconfiguration.md)|Read the Teams user configurations for a specific user using their ID (the user's identifier).|
-
 
 ## Properties
 |Property|Type|Description|
@@ -53,7 +48,7 @@ The following JSON representation shows the resource type.
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.teamsAdministration.teamsUserConfiguration",
   "baseType": "microsoft.graph.entity",
-  "openType": "id"
+  "openType": false
 }
 -->
 ``` json
