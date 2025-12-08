@@ -21,8 +21,8 @@ Represents the trace information for an email message as it passes through the E
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List messageTraces](../api/messagetracingroot-list-messagetraces.md)|[exchangeMessageTrace](../resources/exchangemessagetrace.md) collection|Get a list of [exchangeMessageTrace](../resources/exchangemessagetrace.md) objects.|
-|[getDetailsByRecipient](../api/exchangemessagetrace-getdetailsbyrecipient.md)|[exchangeMessageTraceDetail](../resources/exchangemessagetracedetail.md) collection|Get a list of [exchangeMessageTraceDetail](../resources/exchangemessagetracedetail.md) objects filtered on the recipient.|
+|[List message traces](../api/messagetracingroot-list-messagetraces.md)|[exchangeMessageTrace](../resources/exchangemessagetrace.md) collection|Get a list of [exchangeMessageTrace](../resources/exchangemessagetrace.md) objects.|
+|[Get details by recipient](../api/exchangemessagetrace-getdetailsbyrecipient.md)|[exchangeMessageTraceDetail](../resources/exchangemessagetracedetail.md) collection|Get a list of [exchangeMessageTraceDetail](../resources/exchangemessagetracedetail.md) objects filtered on the recipient.|
 
 ## Properties
 
