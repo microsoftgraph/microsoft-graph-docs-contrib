@@ -1,18 +1,16 @@
 ---
 title: "List userConfigurations"
 description: "Get user configurations for all Teams users who belong to a tenant."
-author: ""praspatil05"
+author: "praspatil05"
 ms.date: 12/03/2025
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
-# List teamsUserConfiguration objects
+# List userConfigurations
 
 Namespace: microsoft.graph.teamsAdministration
-
-
 
 Get [user configurations](../resources/teamsadministration-teamsuserconfiguration.md) for all Teams users who belong to a tenant.
 
@@ -53,7 +51,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [teamsUserConfiguration](../resources/teamsuserconfiguration.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [teamsUserConfiguration](../resources/teamsadministration-teamsuserconfiguration.md) objects in the response body.
 
 ## Examples
 
