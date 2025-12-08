@@ -13,6 +13,22 @@ ms.custom: sfi-ropc-nochange
 
 Namespace: microsoft.graph
 
+### structuredDataEntryValueType values
+
+|Member|
+|:---|
+|dateTime|
+|boolean|
+|byte|
+|string|
+|integer32|
+|unsignedInteger32|
+|integer64|
+|unsignedInteger64|
+|stringArray|
+|byteArray|
+|unknownFutureValue|
+
 ### placeFeatureEnablement values
 
 |Member|
