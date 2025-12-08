@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 Represents a mailbox configuration entity that is reported as part of the security detection alert.
 
-Inherits from [alertEvidence](../resources/security-alertevidence.md).
+Inherits from [alertEvidence](../resources/security-alertevidence.md), which represents evidence related to an [alert](security-alert.md).
 
 ## Properties
 |Property|Type|Description|

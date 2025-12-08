@@ -15,7 +15,7 @@ Namespace: microsoft.graph.security
 
 A file that is reported in the alert as evidence.
 
-Inherits from [alertEvidence](../resources/security-alertevidence.md).
+Inherits from [alertEvidence](../resources/security-alertevidence.md), which represents evidence related to an [alert](security-alert.md).
 
 ## Properties
 
