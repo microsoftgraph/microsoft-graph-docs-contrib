@@ -18,6 +18,12 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 > [!IMPORTANT]
 > Features in _preview_ status are subject to change without notice, and might not be promoted to generally available (GA) status. Don't use preview features in production apps.
 
+## December 2025: New and generally available
+
+### Agents
+
+- Added the [targetagentidentitysponsorsorowners](../api-reference/beta/resources/targetagentidentitysponsorsorowners.md) resource that represents either the sponsor or owner of an [agentIdentity](../api-reference/beta/resources/agentidentity.md).
+
 ## December 2025: New in preview only
 
 ### Identity and access | Governance
