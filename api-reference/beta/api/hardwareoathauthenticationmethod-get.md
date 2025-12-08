@@ -39,7 +39,7 @@ Get details of a hardware OATH authentication method assigned to you.
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /me/authentication/hardwareOathMethods/{hardwareOathAuthenticationMethodId}
 ```
 
@@ -50,7 +50,7 @@ Get details of a hardware OATH authentication method assigned to another user.
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /users/{usersId}/authentication/hardwareOathMethods/{hardwareOathAuthenticationMethodId}
 ```
 
@@ -83,7 +83,7 @@ The following example shows a request.
   "name": "get_hardwareoathauthenticationmethod"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/authentication/hardwareOathMethods/{hardwareOathAuthenticationMethodId}
 ```
 
@@ -127,7 +127,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.hardwareOathAuthenticationMethod"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

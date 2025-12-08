@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitionId}/instances/{accessReviewInstanceId}/resetDecisions
 ```
 
@@ -55,7 +55,7 @@ If successful, this action returns a `204 No Content` response code.
   "name": "accessreviewinstance_resetdecisions"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitions/8564a649-4f67-4e09-88e7-55def6530e88/instances/1234a649-4f67-1234-88e7-55def6530e88/resetDecisions
 ```
 
@@ -95,6 +95,6 @@ POST https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitio
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```

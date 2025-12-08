@@ -43,7 +43,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /places/{id}
 ```
 
@@ -77,7 +77,7 @@ The following example shows a request.
   "name": "get_building"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/places/ca147fcf-ae27-43bb-9d91-f11e626e58bf
 ```
 
@@ -96,7 +96,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.place"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -137,7 +137,7 @@ The following example shows a request.
   "name": "get_floor"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/places/49558ad4-6ede-46d7-8254-3ca9f90fc4e2
 ```
 
@@ -156,7 +156,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.place"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -181,7 +181,7 @@ The following example shows a request.
   "name": "place_get_section"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/places/ca163ae1-14a3-4e2a-8a97-5f82d672186f
 ```
 
@@ -200,7 +200,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.place"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -223,7 +223,7 @@ The following example shows a request.
   "name": "get_desk"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/places/df7dd4ef-04c4-41dd-816e-35475f4dd546
 ```
 
@@ -242,7 +242,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.place"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -253,7 +253,7 @@ Content-Type: application/json
   "displayName": "Desk6",
   "parentId": "ca163ae1-14a3-4e2a-8a97-5f82d672186f",
   "mode": {
-    "@odata.type": "#microsoft.graph.offlinePlaceMode",
+    "@odata.type": "#microsoft.graph.unavailablePlaceMode",
     "reason": "New"
   }
 }
@@ -269,7 +269,7 @@ The following example shows a request.
   "name": "get_room"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/places/0be387a4-d53b-410f-9daf-f4fa07e5b05a
 ```
 
@@ -288,7 +288,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.place"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -316,7 +316,7 @@ The following example shows a request.
   "name": "get_workspace"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/places/ec10ce32-2065-40ba-aa2f-ecd5ea175420
 ```
 
@@ -335,7 +335,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.place"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -361,7 +361,7 @@ The following example shows a request.
   "name": "get_roomlist"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/places/bldg1@contoso.com
 ```
 
@@ -380,7 +380,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.place"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

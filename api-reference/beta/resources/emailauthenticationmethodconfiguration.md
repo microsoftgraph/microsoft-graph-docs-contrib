@@ -32,10 +32,10 @@ Inherits from [authenticationMethodConfiguration](../resources/authenticationmet
 
 |Property|Type|Description|
 |:---|:---|:---|
-|allowExternalIdToUseEmailOtp|externalEmailOtpState|Determines whether email OTP is usable by external users for authentication. Possible values are: `default`, `enabled`, `disabled`, `unknownFutureValue`. Tenants in the `default` state who didn't use the *beta* API automatically have email OTP enabled beginning in October 2021.|
+|allowExternalIdToUseEmailOtp|externalEmailOtpState|Determines whether email OTP is usable by external users for authentication. The possible values are: `default`, `enabled`, `disabled`, `unknownFutureValue`. Tenants in the `default` state who didn't use the *beta* API automatically have email OTP enabled beginning in October 2021.|
 |excludeTargets|[excludeTarget](../resources/excludetarget.md) collection|Groups of users that are excluded from the policy.|
 |id|String|The authentication method policy identifier. Inherited from [authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md).|
-|state|authenticationMethodState|Indicates whether this authentication method is enabled or not. Possible values are: `enabled`, `disabled`.|
+|state|authenticationMethodState|Indicates whether this authentication method is enabled or not. The possible values are: `enabled`, `disabled`.|
 
 ## Relationships
 

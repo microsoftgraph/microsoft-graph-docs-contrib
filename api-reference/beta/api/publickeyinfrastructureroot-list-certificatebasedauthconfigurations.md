@@ -1,7 +1,7 @@
 ---
 title: "List certificateBasedAuthPki objects"
 description: "Get a list of the certificateBasedAuthPki objects and their properties."
-author: "suawat"
+author: "vimrang"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 
-``` http
+```http
 GET /directory/publicKeyInfrastructure/certificateBasedAuthConfigurations
 ```
 
@@ -69,7 +69,7 @@ The following example shows a request.
 }
 -->
 
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/directory/publicKeyInfrastructure/certificateBasedAuthConfigurations
 ```
 
@@ -113,7 +113,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.certificateBasedAuthPki)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

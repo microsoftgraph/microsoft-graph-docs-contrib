@@ -13,7 +13,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a report of all users who had network traffic that Global Secure Access captured during a specified time period.
+Get a report of all users who had network traffic that [Global Secure Access](../resources/networkaccess-global-secure-access-api-overview.md) captured during a specified time period.
 
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /networkAccessRoot/reports/userReport(startDateTime={startDateTime},endDateTime={endDateTime})
 ```
 
@@ -64,7 +64,7 @@ The following example shows a request.
   "name": "reportsthis.userreport"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/networkaccess/reports/userReport(startDateTime=2023-08-20T12:12:59.076Z, endDateTime=2023-08-21T12:12:59.076Z) 
 ```
 
@@ -83,7 +83,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.networkaccess.user)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

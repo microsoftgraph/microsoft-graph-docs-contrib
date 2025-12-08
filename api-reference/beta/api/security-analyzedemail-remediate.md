@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /security/collaboration/analyzedEmails/remediate
 ```
 
@@ -76,7 +76,7 @@ The following example shows a request.
   "name": "analyzedemailthis.remediate"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/security/collaboration/analyzedEmails/remediate
 Content-Type: application/json
 
@@ -138,7 +138,7 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 202 Accepted
 Location: https://security.microsoft.com/action-center/history?filters={"bulkId":["{bulkId}"]}&tid={tid}
 Content-Type: application/json;text/plain

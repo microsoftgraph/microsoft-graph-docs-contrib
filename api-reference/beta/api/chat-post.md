@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /chats
 ```
 
@@ -49,7 +49,7 @@ The following table lists the properties that are required to create a chat obje
 |Property|Type|Description|
 |:---|:---|:---|
 |topic|(Optional) String|The title of the chat. The chat title can be provided only if the chat is of `group` type.|
-|chatType|[chatType](../resources/chat.md#chattype-values)| Specifies the type of chat. Possible values are: `group` and `oneOnOne`. |
+|chatType|[chatType](../resources/chat.md#chattype-values)| Specifies the type of chat. The possible values are: `group` and `oneOnOne`. |
 |members|[conversationMember](../resources/conversationmember.md) collection|List of conversation members that should be added. Every user who participates in the chat, including the user who initiates the created request, must be specified in this list. Each member must be assigned a role of `owner` or `guest`. In-tenant guests must be assigned the `guest` role. Out-of-tenant guests must be assigned the `owner` role.|
 |installedApps| [teamsApp](../resources/teamsapp.md) collection|List of apps that should be installed in the chat.|
 
@@ -75,7 +75,7 @@ If successful, this method returns a `202 Accepted` response code and Location h
   "name": "create_chat_oneOnOne"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/chats
 Content-Type: application/json
 
@@ -134,7 +134,7 @@ Content-Type: application/json
   "@odata.type": "microsoft.graph.chat"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 
@@ -174,7 +174,7 @@ Content-Type: application/json
   "name": "create_a_group_chat"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/chats
 Content-Type: application/json
 
@@ -239,7 +239,7 @@ Content-Type: application/json
   "@odata.type": "microsoft.graph.chat"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 
@@ -284,7 +284,7 @@ The following example shows how to create a one-on-one [chat](../resources/chat.
   "name": "create_chat_oneOnOne_with_installed_apps"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/chats
 Content-Type: application/json
 
@@ -346,7 +346,7 @@ Content-Type: application/json
   "blockType": "response"
 }
 -->
-``` http
+```http
 HTTP/1.1 202 Accepted
 Content-Type: application/json
 Location: /chats('19:82fe7758-5bb3-4f0d-a43f-e555fd399c6f_bfb5bb25-3a8d-487d-9828-7875ced51a30@unq.gbl.spaces')/operations('2432b57b-0abd-43db-aa7b-16eadd115d34-861f06db-0208-4815-b67a-965df0d28b7f-10adc8a6-60db-42e2-9761-e56a7e4c7bc9')
@@ -371,7 +371,7 @@ The following example shows a request.
   "name": "create_chat_oneonone_with_rsc_granted_apps"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/chats
 Content-Type: application/json
 
@@ -462,7 +462,7 @@ Location: /chats('19:82fe7758-5bb3-4f0d-a43f-e555fd399c6f_bfb5bb25-3a8d-487d-982
   "name": "create_chat_oneOnOne_upn"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/chats
 Content-Type: application/json
 
@@ -521,7 +521,7 @@ Content-Type: application/json
   "@odata.type": "microsoft.graph.chat"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 
@@ -561,7 +561,7 @@ Content-Type: application/json
   "name": "create_chat_group_with_tenant_guest_user"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/chats
 Content-Type: application/json
 
@@ -626,7 +626,7 @@ Content-Type: application/json
   "@odata.type": "microsoft.graph.chat"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 
@@ -668,7 +668,7 @@ Content-Type: application/json
   "name": "create_chat_oneOnOne_federated"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/chats
 Content-Type: application/json
 
@@ -728,7 +728,7 @@ Content-Type: application/json
   "@odata.type": "microsoft.graph.chat"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 

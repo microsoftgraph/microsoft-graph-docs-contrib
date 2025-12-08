@@ -32,7 +32,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 
-``` http
+```http
 POST /deviceManagement/virtualEndpoint/deviceImages
 ```
 
@@ -72,7 +72,7 @@ The following example shows a request.
 }
 -->
 
-``` http
+```http
 POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/deviceImages
 Content-Type: application/json
 
@@ -125,7 +125,7 @@ The following example shows the response.
 }
 -->
 
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 
@@ -144,7 +144,6 @@ Content-Type: application/json
   "osStatus": null,
   "expirationDate": null,
   "osVersionNumber": null,
-  "sizeInGB": 64,
-  "osArchitecture": "x64"
+  "sizeInGB": 64
 }
 ```

@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /tenantRelationships/managedTenants/managementActionTenantDeploymentStatuses/{managementActionTenantDeploymentStatusId}
 ```
 
@@ -58,7 +58,7 @@ If successful, this method returns a `200 OK` response code and a [managementAct
   "name": "get_managementactiontenantdeploymentstatus"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/managementActionTenantDeploymentStatuses/{managementActionTenantDeploymentStatusId}
 ```
 
@@ -100,7 +100,7 @@ GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/manageme
   "@odata.type": "microsoft.graph.managedTenants.managementActionTenantDeploymentStatus"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

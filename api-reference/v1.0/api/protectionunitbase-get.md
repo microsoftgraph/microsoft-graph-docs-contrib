@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /solutions/backupRestore/protectionUnits/{protectionUnitBaseId}
 ```
 
@@ -61,7 +61,7 @@ The following example shows a request.
   "name": "protectionunitbase_get"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/solutions/backupRestore/protectionUnits/89014d8c-71fe-4d00-a01a-31850bc5b32c
 ```
 
@@ -104,7 +104,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.protectionUnitBase"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 
 {

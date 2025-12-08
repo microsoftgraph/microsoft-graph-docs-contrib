@@ -1,11 +1,12 @@
 ---
 title: "organizationalBranding resource type"
 description: "Contains details of the organization's default branding."
-author: nanguil
+author: alexanderMars
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
-ms.date: 07/22/2024
+ms.date: 12/01/2025
+toc.title: Default tenant branding
 ---
 
 # organizationalBranding resource type
@@ -18,24 +19,20 @@ Contains details about the organization's default branding. Inherits from [organ
 
 Organizations can customize their Microsoft Entra sign-in pages which appear when users sign in to their organization's tenant-specific apps, or when Microsoft Entra ID identifies the user's tenant from their username. A developer can also read the company's branding information and customize their app experience to tailor it specifically for the signed-in user using their company's branding.
 
-You can't change your original configuration's language. However, companies can add different branding based on locale. For language-specific branding, see the [organizationalBrandingLocalization](organizationalbrandingproperties.md) object.
+You can't change your original configuration's language. However, companies can add different branding based on locale. For language-specific branding, see the [organizationalBrandingLocalization](organizationalbrandinglocalization.md) object.
+
+For more information, see [Customize the neutral branding in your external tenant](/entra/external-id/customers/how-to-customize-branding-customers).
 
 >[!NOTE]
->Adding custom branding requires you to have either Microsoft Entra ID P1 or P2, Premium 2, or Office 365 (for Office 365 apps) licenses. For more information about licensing and editions, see [Sign up for Microsoft Entra ID P1 or P2](/azure/active-directory/fundamentals/active-directory-get-started-premium).
+>Adding custom branding requires you to have either Microsoft Entra ID P1 or P2, Premium 2, or Office 365 (for Office 365 apps) licenses. For more information about licensing and editions, see [Sign up for Microsoft Entra ID P1 or P2](/entra/fundamentals/get-started-premium).
 >
 >Microsoft Entra ID P1 or P2 editions are available for customers in China using the worldwide instance of Microsoft Entra ID. Microsoft Entra ID P1 or P2 editions aren't currently supported in the Azure service operated by 21Vianet in China. For more information, talk to us using the [Microsoft Entra Forum](https://feedback.azure.com/forums/169401-azure-active-directory/).
-
-> [!TIP]
-> [![Try it now](/graph/try-it-now.png)](https://woodgrovedemo.com/#usecase=CompanyBranding)
-> 
-> To try out this feature, go to the Woodgrove Groceries demo and explore the "User experience" user case.
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
 | [Get](../api/organizationalbranding-get.md) | [organizationalBranding](../resources/organizationalbranding.md) | Read the properties and relationships of an [organizationalBranding](../resources/organizationalbranding.md) object. |
 | [Update](../api/organizationalbranding-update.md) | None | Update the properties of an [organizationalBranding](../resources/organizationalbranding.md) object. |
-<!--| [Delete organizationalBranding](../api/organizationalbranding-delete.md) | None | Delete an [organizationalBranding](../resources/organizationalbranding.md) object. |-->
 
 ## Properties
 
@@ -80,6 +77,7 @@ You can't change your original configuration's language. However, companies can 
 |Relationship|Type|Description|
 |:---|:---|:---|
 | localizations | [organizationalBrandingLocalization](organizationalbrandinglocalization.md) collection | Add different branding based on a locale. |
+|themes|[organizationalBrandingTheme](../resources/organizationalbrandingtheme.md) collection|Collection of branding themes for the tenant.|
 
 ## JSON representation
 The following JSON representation shows the resource type.
@@ -109,14 +107,9 @@ The following JSON representation shows the resource type.
   "squareLogoDark": "Stream",
   "squareLogoDarkRelativeUrl": "String",
   "usernameHintText": "String",
-  "contentCustomization": {
-    "@odata.type": "microsoft.graph.contentCustomization"
-  },  
   "customAccountResetCredentialsUrl": "String",
   "customCannotAccessYourAccountText": "String",
   "customCannotAccessYourAccountUrl": "String",
-  "customCSS": "Stream",
-  "customCSSRelativeUrl": "String",
   "customForgotMyPasswordText": "String",
   "customPrivacyAndCookiesText": "String",
   "customPrivacyAndCookiesUrl": "String",
@@ -125,14 +118,19 @@ The following JSON representation shows the resource type.
   "customTermsOfUseUrl": "String",
   "favicon": "Stream",
   "faviconRelativeUrl": "String",
+  "customCSS": "Stream",
+  "customCSSRelativeUrl": "String",
   "headerBackgroundColor": "String",
+  "loginPageTextVisibilitySettings": {
+    "@odata.type": "microsoft.graph.loginPageTextVisibilitySettings"
+  },
+  "contentCustomization": {
+    "@odata.type": "microsoft.graph.contentCustomization"
+  },
   "headerLogo": "Stream",
   "headerLogoRelativeUrl": "String",
   "loginPageLayoutConfiguration": {
     "@odata.type": "microsoft.graph.loginPageLayoutConfiguration"
-  },
-  "loginPageTextVisibilitySettings": {
-    "@odata.type": "microsoft.graph.loginPageTextVisibilitySettings"
   }
 }
 ```

@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /networkAccess/reports/getEnterpriseApplicationReport(startDateTime={startDateTime},endDateTime={endDateTime})
 ```
 
@@ -64,7 +64,7 @@ The following example shows a request.
   "name": "reportsthis.getenterpriseapplicationreport"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/networkAccess/reports/getEnterpriseApplicationReport(startDateTime={startDateTime},endDateTime={endDateTime},userId={userId})
 ```
 
@@ -99,7 +99,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.networkaccess.enterpriseApplicationReport)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

@@ -23,7 +23,7 @@ The security baseline compliance state of a setting for a device
 |:---|:---|:---|
 |sourceId|String|Unique identifier of the policy|
 |displayName|String|Name of the policy|
-|sourceType|[securityBaselinePolicySourceType](../resources/intune-deviceintent-securitybaselinepolicysourcetype.md)|Authoring source of the policy. Possible values are: `deviceConfiguration`, `deviceIntent`.|
+|sourceType|[securityBaselinePolicySourceType](../resources/intune-deviceintent-securitybaselinepolicysourcetype.md)|Authoring source of the policy. The possible values are: `deviceConfiguration`, `deviceIntent`.|
 
 ## Relationships
 None

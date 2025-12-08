@@ -28,7 +28,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "riskpreventioncontainer_post_fraudprotectionproviders" } -->
 [!INCLUDE [permissions-table](../includes/permissions/riskpreventioncontainer-post-fraudprotectionproviders-permissions.md)]
 
-[!INCLUDE [rbac-fraudprovider-apis-write](../includes/rbac-for-apis/rbac-fraudprovider-apis-write.md)]
+[!INCLUDE [rbac-fraudprotection-apis-write](../includes/rbac-for-apis/rbac-fraudprotection-apis-write.md)]
 
 ## HTTP request
 
@@ -36,7 +36,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /identity/riskPrevention/fraudProtectionProviders
 ```
 
@@ -81,7 +81,7 @@ The following example shows a request to create a new Arkose fraudProtectionProv
   "name": "create_fraudprotectionprovider_from_arkose"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/identity/riskPrevention/fraudProtectionProviders
 Content-Type: application/json
 
@@ -131,7 +131,7 @@ The following example shows the response with Arkose fraudProtectionProvider obj
   "@odata.type": "microsoft.graph.fraudProtectionProvider"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 
@@ -158,7 +158,7 @@ The following example shows a request to create a new HUMAN Security fraudProtec
   "name": "create_fraudprotectionprovider_from_human"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/identity/riskPrevention/fraudProtectionProviders
 Content-Type: application/json
 
@@ -206,7 +206,7 @@ The following example shows the response with Human Security fraudProtectionProv
   "@odata.type": "microsoft.graph.fraudProtectionProvider"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 

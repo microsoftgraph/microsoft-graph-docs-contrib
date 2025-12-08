@@ -11,6 +11,6 @@ use Microsoft\Graph\Beta\GraphServiceClient;
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 
-$result = $graphServiceClient->sites()->bySiteId('site-id')->get()->wait();
+$result = $graphServiceClient->sites()->getOperationStatusWithOperationId('{operationId}', )->get()->wait();
 
 ```

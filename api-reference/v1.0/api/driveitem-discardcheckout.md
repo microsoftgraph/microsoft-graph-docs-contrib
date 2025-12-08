@@ -32,7 +32,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
-``` http
+```http
 POST /drives/{driveId}/items/{itemId}/discardCheckout
 POST /groups/{groupId}/drive/items/{itemId}/discardCheckout
 POST /me/drive/items/{item-id}/discardCheckout
@@ -69,7 +69,7 @@ The following example shows a discard checkout request on a file identified by `
   "name": "driveitemthis.discardcheckout"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/drives/{drive-id}/items/{item-id}/discardCheckout
 ```
 

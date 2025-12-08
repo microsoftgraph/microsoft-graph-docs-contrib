@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /security/threatIntelligence/hostComponents/{hostComponentId}
 ```
 
@@ -67,7 +67,7 @@ The following example shows a request.
   "sampleKeys": ["TWljcm9zb2Z0LUlJUyQkMTAuMCQkU2VydmVyJCRjMS5taWNyb3NvZnQuY29t"]
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/security/threatIntelligence/hostComponents/TWljcm9zb2Z0LUlJUyQkMTAuMCQkU2VydmVyJCRjMS5taWNyb3NvZnQuY29t
 ```
 

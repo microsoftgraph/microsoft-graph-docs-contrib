@@ -28,7 +28,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "riskpreventioncontainer_list_fraudprotectionproviders" } -->
 [!INCLUDE [permissions-table](../includes/permissions/riskpreventioncontainer-list-fraudprotectionproviders-permissions.md)]
 
-[!INCLUDE [rbac-fraudprovider-apis-read](../includes/rbac-for-apis/rbac-fraudprovider-apis-read.md)]
+[!INCLUDE [rbac-fraudprotection-apis-read](../includes/rbac-for-apis/rbac-fraudprotection-apis-read.md)]
 
 ## HTTP request
 
@@ -36,7 +36,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /identity/riskPrevention/fraudProtectionProviders
 ```
 
@@ -69,7 +69,7 @@ The following example shows a request.
   "name": "list_fraudprotectionprovider"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identity/riskprevention/fraudprotectionproviders
 ```
 
@@ -109,7 +109,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.fraudProtectionProvider"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

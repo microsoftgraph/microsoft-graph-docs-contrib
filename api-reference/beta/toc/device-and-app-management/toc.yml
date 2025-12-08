@@ -310,56 +310,12 @@ items:
       href: ../../api/cloudpcprovisioningpolicy-apply.md
     - name: Apply configuration
       href: ../../api/cloudpcprovisioningpolicy-applyconfig.md
-  - name: Cloud PC reports
+  - name: Cloud PC report
     items:
-    - name: Cloud PC reports
-      href: ../../resources/cloudpcreports.md
-    - name: Get action status reports
-      href: ../../api/cloudpcreports-getactionstatusreports.md
-    - name: Get bulk action status reports
-      href: ../../api/cloudpcreports-retrievebulkactionstatusreport.md
-    - name: Get Cloud PC troubleshooting reports
-      href: ../../api/cloudpcreports-retrievecloudpctroubleshootreports.md
-    - name: Get frontline report
-      href: ../../api/cloudpcreports-getfrontlinereport.md
-    - name: Get inaccessible Cloud PC reports
-      href: ../../api/cloudpcreports-getinaccessiblecloudpcreports.md
-    - name: Get raw remote connection reports
-      href: ../../api/cloudpcreports-getrawremoteconnectionreports.md
-    - name: Get real-time remote connection latency reports
-      href: ../../api/cloudpcreports-getrealtimeremoteconnectionlatency.md
-    - name: Get real-time remote connection status reports
-      href: ../../api/cloudpcreports-getrealtimeremoteconnectionstatus.md
-    - name: Get remote connection historical reports
-      href: ../../api/cloudpcreports-getremoteconnectionhistoricalreports.md
-    - name: Get total aggregated remote connection reports
-      href: ../../api/cloudpcreports-gettotalaggregatedremoteconnectionreports.md
+    - name: Cloud PC report
+      href: ../../resources/cloudpcreport.md
     - name: Retrieve Cloud PC recommendation reports
-      href: ../../api/cloudpcreports-retrievecloudpcrecommendationreports.md
-    - name: Retrieve Cloud PC tenant metrics report
-      href: ../../api/cloudpcreports-retrievecloudpctenantmetricsreport.md
-    - name: Retrieve cross-region disaster recovery report
-      href: ../../api/cloudpcreports-retrievecrossregiondisasterrecoveryreport.md
-    - name: Retrieve connection quality reports
-      href: ../../api/cloudpcreports-retrieveconnectionqualityreports.md
-    - name: Get daily aggregated remote connection reports
-      href: ../../api/cloudpcreports-getdailyaggregatedremoteconnectionreports.md
-    - name: Get Cloud PC performance report (deprecated)
-      href: ../../api/cloudpcreports-getcloudpcperformancereport.md
-    - name: Get Cloud PC recommendation reports (deprecated)
-      href: ../../api/cloudpcreports-getcloudpcrecommendationreports.md
-    - name: Get connection quality reports (deprecated)
-      href: ../../api/cloudpcreports-gettotalaggregatedremoteconnectionreports.md
-    - name: Get shared use license usage report (deprecated)
-      href: ../../api/cloudpcreports-getshareduselicenseusagereport.md
-    - name: Cloud PC export job
-      items:
-      - name: Cloud PC export job
-        href: ../../resources/cloudpcexportjob.md
-      - name: Create export job
-        href: ../../api/cloudpcreports-post-exportjobs.md
-      - name: Get export job
-        href: ../../api/cloudpcexportjob-get.md
+      href: ../../api/cloudpcreport-retrievecloudpcrecommendationreports.md
   - name: Cloud PC service plan
     items:
     - name: Cloud PC service plan
@@ -400,6 +356,16 @@ items:
       href: ../../api/cloudpcusersetting-delete.md
     - name: Assign
       href: ../../api/cloudpcusersetting-assign.md
+  - name: Cloud PC user settings persistence detail
+    items:
+    - name: Cloud PC user settings persistence detail
+      href: ../../resources/cloudpcusersettingspersistencedetail.md
+    - name: Batch delete user settings persistence profile
+      href: ../../api/cloudpcusersettingspersistencedetail-batchcleanupusersettingspersistenceprofile.md
+    - name: Retrieve user settings persistence profiles
+      href: ../../api/cloudpcusersettingspersistencedetail-retrieveusersettingspersistenceprofiles.md
+    - name: Retrieve user settings persistence usage
+      href: ../../api/cloudpcusersettingspersistencedetail-retrieveusersettingspersistenceprofileusage.md
   - name: Virtual endpoint
     items:
     - name: Virtual endpoint
@@ -452,6 +418,48 @@ items:
       href: ../../api/virtualendpoint-list-externalpartnersettings.md
     - name: Create external partner setting (deprecated)
       href: ../../api/virtualendpoint-post-externalpartnersettings.md
+  - name: Cloud PC reports (deprecated)
+    items:
+    - name: Cloud PC reports (deprecated)
+      href: ../../resources/cloudpcreports.md
+    - name: Get action status reports
+      href: ../../api/cloudpcreports-getactionstatusreports.md
+    - name: Get bulk action status reports
+      href: ../../api/cloudpcreports-retrievebulkactionstatusreport.md
+    - name: Get Cloud PC troubleshooting reports
+      href: ../../api/cloudpcreports-retrievecloudpctroubleshootreports.md
+    - name: Get frontline report
+      href: ../../api/cloudpcreports-getfrontlinereport.md
+    - name: Get inaccessible Cloud PC reports
+      href: ../../api/cloudpcreports-getinaccessiblecloudpcreports.md
+    - name: Get raw remote connection reports
+      href: ../../api/cloudpcreports-getrawremoteconnectionreports.md
+    - name: Get real-time remote connection latency reports
+      href: ../../api/cloudpcreports-getrealtimeremoteconnectionlatency.md
+    - name: Get real-time remote connection status reports
+      href: ../../api/cloudpcreports-getrealtimeremoteconnectionstatus.md
+    - name: Get remote connection historical reports
+      href: ../../api/cloudpcreports-getremoteconnectionhistoricalreports.md
+    - name: Get total aggregated remote connection reports
+      href: ../../api/cloudpcreports-gettotalaggregatedremoteconnectionreports.md
+    - name: Retrieve Cloud PC tenant metrics report
+      href: ../../api/cloudpcreports-retrievecloudpctenantmetricsreport.md
+    - name: Retrieve cross-region disaster recovery report
+      href: ../../api/cloudpcreports-retrievecrossregiondisasterrecoveryreport.md
+    - name: Retrieve connection quality reports
+      href: ../../api/cloudpcreports-retrieveconnectionqualityreports.md
+    - name: Get daily aggregated remote connection reports
+      href: ../../api/cloudpcreports-getdailyaggregatedremoteconnectionreports.md
+    - name: Get Cloud PC performance report (deprecated)
+      href: ../../api/cloudpcreports-getcloudpcperformancereport.md
+    - name: Get Cloud PC recommendation reports (deprecated)
+      href: ../../api/cloudpcreports-getcloudpcrecommendationreports.md
+    - name: Get connection quality reports (deprecated)
+      href: ../../api/cloudpcreports-gettotalaggregatedremoteconnectionreports.md
+    - name: Get shared use license usage report (deprecated)
+      href: ../../api/cloudpcreports-getshareduselicenseusagereport.md
+    - name: Retrieve Cloud PC recommendation reports (deprecated)
+      href: ../../api/cloudpcreports-retrievecloudpcrecommendationreports.md
   - name: Alert monitoring
     items:
     - name: Monitoring
@@ -471,6 +479,16 @@ items:
         href: ../../api/devicemanagement-alertrecord-setportalnotificationassent.md
     - name: Alert rule
       href: ../../resources/devicemanagement-alertrule.md
+  - name: Cloud PC reports
+    items:
+    - name: Cloud PC export job
+      items:
+      - name: Cloud PC export job
+        href: ../../resources/cloudpcexportjob.md
+      - name: Create export job
+        href: ../../api/cloudpcreports-post-exportjobs.md
+      - name: Get export job
+        href: ../../api/cloudpcexportjob-get.md
   - name: Complex types
     items:
     - name: App scope
@@ -599,6 +617,12 @@ items:
       href: ../../resources/cloudpcuserrolescopetaginfo.md
     - name: Cloud PC user setting assignment
       href: ../../resources/cloudpcusersettingassignment.md
+    - name: Cloud PC user settings persistence configuration
+      href: ../../resources/cloudpcusersettingspersistenceconfiguration.md
+    - name: Cloud PC user settings persistence profile
+      href: ../../resources/cloudpcusersettingspersistenceprofile.md
+    - name: Cloud PC user settings persistence usage result
+      href: ../../resources/cloudpcusersettingspersistenceusageresult.md
     - name: Cloud PC Windows setting
       href: ../../resources/cloudpcwindowssetting.md
     - name: Cloud PC Windows settings

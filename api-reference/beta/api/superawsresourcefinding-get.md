@@ -32,7 +32,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /identityGovernance/permissionsAnalytics/aws/findings/{id}/microsoft.graph.superAwsResourceFinding
 ```
 
@@ -63,7 +63,7 @@ The following example shows a request.
   "name": "get_superawsresourcefinding"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/c3VwZXJSZXNvdXJjZUZpbmRpbmc0/microsoft.graph.superAwsResourceFinding
 ```
 
@@ -82,7 +82,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.superAwsResourceFinding"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 

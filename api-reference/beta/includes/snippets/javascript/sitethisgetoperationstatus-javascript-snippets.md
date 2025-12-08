@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let site = await client.api('/sites/getOperationStatus(operationId='JXMnaHR0cHMlM0ElMkYlMkZncmFwaC5taWNyb3NvZnQuY29tJTJGc2l0ZXMlMkZ0ZWFtc2l0ZTE=')')
+let richLongRunningOperation = await client.api('/sites/getOperationStatus(operationId='JXMnaHR0cHMlM0ElMkYlMkZncmFwaC5taWNyb3NvZnQuY29tJTJGc2l0ZXMlMkZ0ZWFtc2l0ZTE=')')
 	.version('beta')
 	.get();
 

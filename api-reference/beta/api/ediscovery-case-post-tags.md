@@ -32,7 +32,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 
-``` http
+```http
 POST /compliance/ediscovery/cases/{caseId}/tags
 ```
 
@@ -51,7 +51,7 @@ The following table lists the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|childSelectability|[microsoft.graph.ediscovery.childSelectability](../resources/ediscovery-tag.md#childselectability-values)|Indicates whether a single or multiple child tags can be associated with a document. Possible values are: `One`, `Many`.  This value controls whether the UX presents the tags as checkboxes or a radio button group. Required.|
+|childSelectability|[microsoft.graph.ediscovery.childSelectability](../resources/ediscovery-tag.md#childselectability-values)|Indicates whether a single or multiple child tags can be associated with a document. The possible values are: `One`, `Many`.  This value controls whether the UX presents the tags as checkboxes or a radio button group. Required.|
 |displayName|String|Display name of the tag. Required.|
 
 ## Response
@@ -70,7 +70,7 @@ If successful, this method returns a `201 Created` response code and a [microsof
 }
 -->
 
-``` http
+```http
 POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/47746044-fd0b-4a30-acfc-5272b691ba5b/tags
 Content-Type: application/json
 
@@ -121,7 +121,7 @@ Content-Type: application/json
 }
 -->
 
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 

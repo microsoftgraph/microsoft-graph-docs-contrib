@@ -23,12 +23,16 @@ This resource supports subscribing to [change notifications](/graph/changenotifi
 | Method                                                                               | Return Type                                     | Description                                                                       |
 | :----------------------------------------------------------------------------------- | :---------------------------------------------- | :-------------------------------------------------------------------------------- |
 | [Get presence](../api/presence-get.md)                                               | [presence](../resources/presence.md)            | Get a user's presence information.                                                |
-| [Get presence for multiple users](../api/cloudcommunications-getpresencesbyuserid.md) | [presence](../resources/presence.md) collection | Get the presence information for multiple users.                                  |
+| [Get presence for multiple users](../api/cloudcommunications-getpresencesbyuserid.md) | [presence](../resources/presence.md) collection | Get the presence information for multiple users.                                 |
 | [Set presence](../api/presence-setpresence.md)                                       |                                                 | Set the availability and activity status in a [presence session](/graph/cloud-communications-manage-presence-state#presence-sessions) of an application for a user. |
-| [Clear presence](../api/presence-clearpresence.md)                                   |                                                 | Clear a presence session of an application for a user.                                       |
+| [Clear presence](../api/presence-clearpresence.md)                                   |                                                 | Clear a presence session of an application for a user.                            |
 | [Set user preferred presence](../api/presence-setuserpreferredpresence.md)           |                                                 | Set the preferred availability and activity status for a user.                    |
 | [Clear user preferred presence](../api/presence-clearuserpreferredpresence.md)       |                                                 | Clear the preferred availability and activity status for a user.                  |
-| [Set user status message](../api/presence-setstatusmessage.md) | | Set a presence status message for a user. |
+| [Set user status message](../api/presence-setstatusmessage.md)                       |                                                 | Set a presence status message for a user.                                         |
+| [Set automatic location](../api/presence-setautomaticlocation.md)                    | None                                            | Update the automatic work location for a [user](../resources/user.md).  |
+| [Set manual location](../api/presence-setmanuallocation.md)                          | None                                            | Set the manual work location signal for a [user](../resources/user.md). |
+| [Clear automatic location](../api/presence-clearautomaticlocation.md)                | None                                            | Clear the automatic work location signal for a [user](../resources/user.md). |
+| [Clear location](../api/presence-clearlocation.md)                                   | None                                            | Clear the work location signals for a [user](../resources/user.md), including both the manual and automatic layers for the current date. |
 
 ## Properties
 
@@ -40,6 +44,7 @@ This resource supports subscribing to [change notifications](/graph/changenotifi
 | outOfOfficeSettings | [outOfOfficeSettings](outofofficesettings.md) | The out of office settings for a user.  |
 | sequenceNumber      | String             | The lexicographically sortable String stamp that represents the version of a **presence** object. |
 | statusMessage       | [presenceStatusMessage](presencestatusmessage.md) | The presence status message of a user. |
+| workLocation        | [userWorkLocation](../resources/userworklocation.md) | Represents the user’s aggregated work location state. |
 
 > [!NOTE]
 > * To learn more about the different presence states, see [User presence in Teams](/microsoftteams/presence-admins). 
@@ -66,6 +71,7 @@ The following JSON representation shows the resource type.
   "id": "String (identifier)",
   "outOfOfficeSettings": {"@odata.type": "#microsoft.graph.outOfOfficeSettings"},
   "sequenceNumber": "String",
-  "statusMessage": {"@odata.type": "#microsoft.graph.presenceStatusMessage"}
+  "statusMessage": {"@odata.type": "#microsoft.graph.presenceStatusMessage"},
+  "workLocation": {"@odata.type": "microsoft.graph.userWorkLocation" }
 }
 ```

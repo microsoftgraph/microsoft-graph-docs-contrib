@@ -30,7 +30,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /solutions/backupRestore/serviceApps
 ```
 
@@ -61,7 +61,7 @@ The following example shows a request.
   "name": "create_serviceapp"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/solutions/backupRestore/serviceApps
 Content-type: application/json
 
@@ -109,7 +109,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.serviceApp"
 }
 -->
-``` http
+```http
 HTTP/1.1 202 Accepted
 Content-Type: application/json
 Content-Location: https://graph.microsoft.com/v1.0/solutions/backupRestore/serviceApps/71633878-8321-4950-bfaf-ed285bdd1461

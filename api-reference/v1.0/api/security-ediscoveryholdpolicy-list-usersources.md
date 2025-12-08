@@ -27,7 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /security/cases/ediscoveryCases/{ediscoveryCaseId}/legalHolds/{ediscoveryHoldPolicyId}/userSources
 ```
 
@@ -57,7 +57,7 @@ The following example shows a request.
   "name": "list_usersource_for_legalholds"
 }
 -->
-``` http
+```http
 GET https://graph.microsoft.com/v1.0/security/cases/ediscoveryCases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/legalholds/0053a61a3b6c42738f7606791716a22a/userSources
 ```
 
@@ -70,7 +70,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.security.userSource)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

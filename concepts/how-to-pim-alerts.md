@@ -84,7 +84,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.unifiedRoleManagementAlert)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -218,7 +218,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.unifiedRoleManagementAlert"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -291,7 +291,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.unifiedRoleManagementAlert"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -437,7 +437,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.unifiedRoleManagementAlertIncident)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

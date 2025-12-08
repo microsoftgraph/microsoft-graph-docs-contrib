@@ -26,7 +26,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /me/responsibilities
 POST /users/{id | userPrincipalName}/responsibilities
 ```
@@ -44,7 +44,7 @@ The following table shows the properties that are possible to set within a new [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|allowedAudiences|String|The audiences that are able to see the values contained within the entity. Inherited from [itemFacet](../resources/itemfacet.md). Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|allowedAudiences|String|The audiences that are able to see the values contained within the entity. Inherited from [itemFacet](../resources/itemfacet.md). The possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
 |collaborationTags|String collection|Contains experience scenario tags a user has associated with the interest. Allowed values in the collection are: `askMeAbout`, `ableToMentor`, `wantsToLearn`, `wantsToImprove`.|
 |description|String|Description of the responsibility.|
 |displayName|String|Contains a friendly name for the responsibility. |
@@ -65,7 +65,7 @@ If successful, this method returns a `201 Created` response code and a [personRe
   "name": "create_personresponsibility_from_profile"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/me/responsibilities
 Content-Type: application/json
 
@@ -92,7 +92,7 @@ Content-Type: application/json
   "@odata.type": "microsoft.graph.personResponsibility"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 

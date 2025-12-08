@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /admin/windows/updates/deployments/{deploymentId}
 ```
 
@@ -60,7 +60,7 @@ If successful, this method returns a `200 OK` response code and a [deployment](.
   "name": "get_deployment"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/admin/windows/updates/deployments/b5171742-1742-b517-4217-17b5421717b5
 ```
 
@@ -102,7 +102,7 @@ GET https://graph.microsoft.com/beta/admin/windows/updates/deployments/b5171742-
   "@odata.type": "microsoft.graph.windowsUpdates.deployment"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

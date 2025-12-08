@@ -24,7 +24,7 @@ Namespace: microsoft.graph
 |minOSVersion|String|Min OS version for Applicability Rule.|
 |maxOSVersion|String|Max OS version for Applicability Rule.|
 |name|String|Name for object.|
-|ruleType|[deviceManagementApplicabilityRuleType](../resources/intune-deviceconfig-devicemanagementapplicabilityruletype.md)|Applicability Rule type. Possible values are: `include`, `exclude`.|
+|ruleType|[deviceManagementApplicabilityRuleType](../resources/intune-deviceconfig-devicemanagementapplicabilityruletype.md)|Applicability Rule type. The possible values are: `include`, `exclude`.|
 
 ## Relationships
 None

@@ -27,7 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitionId}/instances/filterByCurrentUser(on='reviewer')
 ```
 
@@ -58,7 +58,7 @@ If successful, this function returns a `200 OK` response code and a [accessRevie
   "name": "accessreviewinstance_filterbycurrentuser"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitions/e6cafba0-cbf0-4748-8868-0810c7f4cc06/instances/filterByCurrentUser(on='reviewer')
 ```
 
@@ -100,7 +100,7 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definition
   "@odata.type": "Collection(microsoft.graph.accessReviewInstance)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

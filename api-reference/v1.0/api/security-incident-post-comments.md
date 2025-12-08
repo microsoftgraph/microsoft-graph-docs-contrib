@@ -25,7 +25,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /security/incidents/{incidentId}/comments
 ```
 
@@ -59,7 +59,7 @@ The following example shows a request.
   "name": "incident_addcomment"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/security/incidents/3962396/comments
 Content-Type: application/json
 
@@ -85,7 +85,7 @@ The following example shows the response.
 }
 -->
 
-``` http
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 

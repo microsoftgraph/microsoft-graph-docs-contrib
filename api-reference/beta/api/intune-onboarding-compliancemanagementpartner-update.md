@@ -34,7 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PATCH /deviceManagement/complianceManagementPartners/{complianceManagementPartnerId}
 ```
 
@@ -53,7 +53,7 @@ The following table shows the properties that are required when you create the [
 |:---|:---|:---|
 |id|String|Id of the entity|
 |lastHeartbeatDateTime|DateTimeOffset|Timestamp of last heartbeat after admin onboarded to the compliance management partner|
-|partnerState|[deviceManagementPartnerTenantState](../resources/intune-onboarding-devicemanagementpartnertenantstate.md)|Partner state of this tenant. Possible values are: `unknown`, `unavailable`, `enabled`, `terminated`, `rejected`, `unresponsive`.|
+|partnerState|[deviceManagementPartnerTenantState](../resources/intune-onboarding-devicemanagementpartnertenantstate.md)|Partner state of this tenant. The possible values are: `unknown`, `unavailable`, `enabled`, `terminated`, `rejected`, `unresponsive`.|
 |displayName|String|Partner display name|
 |macOsOnboarded|Boolean|Partner onboarded for Mac devices.|
 |linuxOnboarded|Boolean|Partner onboarded for Linux devices.|
@@ -73,7 +73,7 @@ If successful, this method returns a `200 OK` response code and an updated [comp
 
 ### Request
 Here is an example of the request.
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/deviceManagement/complianceManagementPartners/{complianceManagementPartnerId}
 Content-type: application/json
 Content-length: 2280
@@ -140,7 +140,7 @@ Content-length: 2280
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 Content-Length: 2329
