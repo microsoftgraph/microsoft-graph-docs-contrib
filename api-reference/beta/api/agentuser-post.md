@@ -110,9 +110,6 @@ Content-type: application/json
 
 The following example shows the response.
 
->[!NOTE]
->The response object shown here might be shortened for readability.
-
 <!-- {
   "blockType": "response",
   "truncated": true,
