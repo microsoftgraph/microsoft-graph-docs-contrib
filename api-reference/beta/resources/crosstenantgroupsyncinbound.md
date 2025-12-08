@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Defines whether groups can be synchronized from a partner tenant.
+Defines whether groups can be synchronized from a partner tenant, as defined in the **groupSyncInbound** property of [crossTenantIdentitySyncPolicyPartner](../resources/crossTenantIdentitySyncPolicyPartner.md) object.
 
 ## Properties
 |Property|Type|Description|
