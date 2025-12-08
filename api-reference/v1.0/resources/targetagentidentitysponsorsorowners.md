@@ -14,6 +14,9 @@ Namespace: microsoft.graph
 
 Defines the sponsors, or owners, of a specific agent identity.
 
+
+Inherits from [subjectSet](../resources/subjectset.md).
+
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
