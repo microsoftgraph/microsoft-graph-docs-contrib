@@ -2,7 +2,7 @@
 title: "activeDirectoryDomainEvidence resource type"
 description: "Represents a Active Directory Domain entity that reported as part of the security detection alert."
 ms.date: 05/14/2025
-author: "t-hareldamti"
+author: "hareldamti"
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: resourcePageType

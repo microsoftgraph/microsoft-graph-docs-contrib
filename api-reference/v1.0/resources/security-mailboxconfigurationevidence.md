@@ -2,7 +2,7 @@
 title: "mailboxConfigurationEvidence resource type"
 description: "Represents a mailbox configuration entity that is reported as part of the security detection alert."
 ms.date: 11/19/2025
-author: "t-hareldamti"
+author: "hareldamti"
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: resourcePageType
