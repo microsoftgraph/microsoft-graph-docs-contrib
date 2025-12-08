@@ -22,7 +22,7 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ### Agents
 
-- Added the [targetagentidentitysponsorsorowners](/graph/api/resources/targetagentidentitysponsorsorowners.md) resource that represents either the sponsor or owner of an [agentIdentity](/graph/api/resources//agentidentity.md).
+- Added the [targetagentidentitysponsorsorowners](/graph/api/resources/targetagentidentitysponsorsorowners) resource that represents either the sponsor or owner of an [agentIdentity](/graph/api/resources/agentidentity).
 
 ## December 2025: New in preview only
 
@@ -42,7 +42,7 @@ Added the `microsoftRevokedSessions` value to the [riskDetail](/graph/api/resour
 
 ### Mail
 
-Use the [userConfiguration](/graph/api/resources/userconfiguration?view=graph-rest-beta&preserve-view=true) resource and its associated methods to manage user-specific settings, metadata, or application data tied to mailbox folders, using XML, binary, or dictionary formats.
+Use the [userConfiguration](/graph/api/resources/teamsadministration-teamsuserconfiguratione) resource and its associated methods to manage user-specific settings, metadata, or application data tied to mailbox folders, using XML, binary, or dictionary formats.
 
 ## November 2025: New and generally available
 
@@ -72,7 +72,7 @@ Deleted security groups can now be restored from [deleted items](/graph/api/reso
 
 ### Identity and access | Governance
 
-Added the [userInactivityTrigger](/graph/api/resources/userinactivitytrigger) resource to support automatic triggering of access reviews based on user inactivity.
+Added the [userInactivityTrigger](/graph/api/resources/identitygovernance-userinactivitytrigger) resource to support automatic triggering of access reviews based on user inactivity.
 
 ### Teamwork and communications | Calls and online meetings
 
@@ -132,7 +132,7 @@ Removed the **osArchitecture** property from the [cloudPcDeviceImage](/graph/api
 ### Identity and access | Governance
 
 - Added the [customDataProvidedResource](/graph/api/resources/customdataprovidedresource?view=graph-rest-beta&preserve-view=true) resource to support user-centric access reviews.
-- Added the **administrationScopeTargets** relationship to the [workflowBase](/graph/api/resources/workflowbase?view=graph-rest-beta&preserve-view=true) resource and its derived types to support scoping lifecycle workflows to specific administrative units.
+- Added the **administrationScopeTargets** relationship to the workflowBase resource and its derived types to support scoping lifecycle workflows to specific administrative units.
 
 ### Identity and access | Identity and sign-in
 
