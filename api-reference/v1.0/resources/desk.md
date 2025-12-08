@@ -26,7 +26,7 @@ For the list of supported methods, see [place](./place.md).
 |displayDeviceName |String |The name of the display device (for example, `monitor` or `projector`) that is available at the **desk**. |
 |displayName|String|The name that is associated with the **desk**. Inherited from [place](./place.md).|
 |geoCoordinates|[outlookGeoCoordinates](./outlookgeocoordinates.md)|Specifies the **desk** location in latitude, longitude, and (optionally) altitude coordinates. Inherited from [place](./place.md).|
-|heightAdjustableState|placeFeatureEnablement|Specifies if the height of the **desk** is adjustable. The possible values are: `disabled`, `enabled` and `unknown`.|
+|heightAdjustableState |placeFeatureEnablement|A state that indicates whether the **desk** is height adjustable. The possible values are: `unknown`, `enabled`, `disabled`, `unknownFutureValue`.|
 |id|String|The unique identifier for the **desk**. Read-only. This identifier isn't immutable and can change if the mailbox or tenant configuration changes. Inherited from [place](./place.md). |
 |isWheelChairAccessible|Boolean|Indicates whether the **desk** is wheelchair accessible. Inherited from [place](./place.md).|
 |label |String |User-defined description of the **desk**. Inherited from [place](../resources/place.md).|
@@ -56,6 +56,7 @@ The following JSON representation shows the resource type.
   "displayDeviceName": "String",
   "displayName": "String",
   "geoCoordinates": {"@odata.type": "microsoft.graph.outlookGeoCoordinates"},
+  "heightAdjustableState": "String",
   "id": "String (identifier)",
   "isWheelChairAccessible": "Boolean",
   "label": "String",
