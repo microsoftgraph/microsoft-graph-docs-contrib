@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 A customDataProvidedResource is a type of [accessPackageResource](../resources/accesspackageresource.md) that represents an external application. The originSystem of a customDataProvidedResource is always `CustomDataProvidedResource`. For more information, see [Include custom data provided resource in the catalog for catalog user Access Reviews (Preview)](/entra/id-governance/custom-data-resource-access-reviews).
-
+See this [sample logic app](https://github.com/Azure/azure-quickstart-templates/tree/master/application-workloads/byod-logic-app) for an example of how you could automate uploads of access data to facilitate access reviews for disconnected applications.  
 
 Inherits from [accessPackageResource](../resources/accesspackageresource.md).
 
