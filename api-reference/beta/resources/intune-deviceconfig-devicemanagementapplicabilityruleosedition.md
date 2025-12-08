@@ -23,7 +23,7 @@ Namespace: microsoft.graph
 |:---|:---|:---|
 |osEditionTypes|[windows10EditionType](../resources/intune-deviceconfig-windows10editiontype.md) collection|Applicability rule OS edition type.|
 |name|String|Name for object.|
-|ruleType|[deviceManagementApplicabilityRuleType](../resources/intune-deviceconfig-devicemanagementapplicabilityruletype.md)|Applicability Rule type. Possible values are: `include`, `exclude`.|
+|ruleType|[deviceManagementApplicabilityRuleType](../resources/intune-deviceconfig-devicemanagementapplicabilityruletype.md)|Applicability Rule type. The possible values are: `include`, `exclude`.|
 
 ## Relationships
 None

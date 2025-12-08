@@ -33,8 +33,8 @@ A class containing the properties used for PolicySet Item.
 |payloadId|String|PayloadId of the PolicySetItem.|
 |itemType|String|policySetType of the PolicySetItem.|
 |displayName|String|DisplayName of the PolicySetItem.|
-|status|[policySetStatus](../resources/intune-policyset-policysetstatus.md)|Status of the PolicySetItem. Possible values are: `unknown`, `validating`, `partialSuccess`, `success`, `error`, `notAssigned`.|
-|errorCode|[errorCode](../resources/intune-policyset-errorcode.md)|Error code if any occured. Possible values are: `noError`, `unauthorized`, `notFound`, `deleted`.|
+|status|[policySetStatus](../resources/intune-policyset-policysetstatus.md)|Status of the PolicySetItem. The possible values are: `unknown`, `validating`, `partialSuccess`, `success`, `error`, `notAssigned`.|
+|errorCode|[errorCode](../resources/intune-policyset-errorcode.md)|Error code if any occured. The possible values are: `noError`, `unauthorized`, `notFound`, `deleted`.|
 |guidedDeploymentTags|String collection|Tags of the guided deployment|
 
 ## Relationships

@@ -60,7 +60,7 @@ The following table lists the properties that are required when you create the [
 | classCode            | String                                         | Class code used by the school to identify the class.               |
 | externalName         | String                                         | Name of the class in the syncing system.                           |
 | externalId           | String                                         | ID of the class from the syncing system.                           |
-| externalSource       | educationExternalSource                        | How this class was created. Possible values are: `sis`, `manual`   |
+| externalSource       | educationExternalSource                        | How this class was created. The possible values are: `sis`, `manual`   |
 | externalSourceDetail | String                                         | The name of the external source this resources was generated from. |
 | grade                | String                                         | Grade level of the class.                                          |
 | term                 | [educationTerm](../resources/educationterm.md) | Term for this class.                                               |

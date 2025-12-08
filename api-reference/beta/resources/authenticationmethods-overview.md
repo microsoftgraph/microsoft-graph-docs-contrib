@@ -41,6 +41,9 @@ We don't recommend using the authentication methods APIs for scenarios where you
 
 ## What authentication methods can be managed in Microsoft Graph?
 
+> [!NOTE]
+> To manage certificate-based authentication (CBA), see [x509CertificateAuthenticationMethodConfiguration](x509CertificateAuthenticationMethodConfiguration.md)
+
 |Authentication method       | Description |Examples     |
 |:---------------------------|:------------|:------------|
 |[emailAuthenticationMethod](emailauthenticationmethod.md)|A user can use an email address as part of the Self-Service Password Reset (SSPR) process.|See a user's authentication email address. Add, update, or remove an email address to a user.|

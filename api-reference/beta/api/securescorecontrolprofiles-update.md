@@ -48,7 +48,7 @@ In the request body, supply a JSON representation of the values for relevant fie
 |:---------------|:--------|:----------|
 |assignedTo|String|Name of the analyst the control is assigned to for triage, implementation, or remediation.|
 |tenantNote|String|Analyst comments on the control (for customer control management).|
-|controlStateUpdates| String|Analyst driven setting on the control. Possible values are: `ignore`, `thirdParty`, `reviewed`.|
+|controlStateUpdates| String|Analyst driven setting on the control. The possible values are: `ignore`, `thirdParty`, `reviewed`.|
 
 
 ## Response
