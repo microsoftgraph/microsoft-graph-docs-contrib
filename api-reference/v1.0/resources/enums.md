@@ -1575,6 +1575,7 @@ Possible types of Windows settings.
 |unknown|
 |enabled|
 |disabled|
+|unknownFutureValue|
 
 ### plannerContainerType values
 
