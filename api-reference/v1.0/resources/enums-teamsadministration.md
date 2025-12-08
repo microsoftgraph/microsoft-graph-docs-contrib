@@ -43,6 +43,6 @@ Namespace: microsoft.graph.teamsAdministration
 
 <!-- {
   "type": "#page.annotation",
-  "namespace": "microsoft.graph.teamsadministration"
+  "namespace": "microsoft.graph.teamsAdministration"
 }
 -->
