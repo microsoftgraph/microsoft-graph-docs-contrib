@@ -31,7 +31,7 @@ None.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|messageTraces|[exchangeMessageTrace](../resources/exchangemessagetrace.md) collection|Represents the trace information of messages that pass through Exchange Online organizations |
+|messageTraces|[exchangeMessageTrace](../resources/exchangemessagetrace.md) collection| Represents the trace information of messages that pass-through Exchange Online organizations. |
 
 ## JSON representation
 The following JSON representation shows the resource type.
