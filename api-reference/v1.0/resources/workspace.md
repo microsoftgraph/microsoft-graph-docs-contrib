@@ -67,6 +67,7 @@ The following JSON representation shows the resource type.
   "nickname": "String",
   "parentId": "String",
   "phone": "String",
+  "placeId": "String",
   "tags": ["String"]
 }
 ```
