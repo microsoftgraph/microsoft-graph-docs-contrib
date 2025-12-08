@@ -240,7 +240,8 @@
             "mailboxDetails",
             "placeMode",
             "reservablePlaceMode",
-            "resourceLink"
+            "resourceLink",
+            "unavailablePlaceMode"
           ]
         }
       ]
