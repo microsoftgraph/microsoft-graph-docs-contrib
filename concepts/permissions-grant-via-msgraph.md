@@ -641,6 +641,25 @@ Content-type: application/json
 }
 ```
 
+### Update the permission grant
+
+To add more permissions or remove some permissions for the client to the resource service principal for the user, update the **oauth2PermissionGrant** object as shown in the following request. The request returns a `204 No Content` response.
+
+<!-- {
+  "blockType": "request",
+  "name": "update-delegated-perms-sp-oauth2permissiongrants"
+}-->
+```msgraph-interactive
+PATCH https://graph.microsoft.com/v1.0/oauth2PermissionGrants/47nZsM8O_UuNq5Jz3QValETpqX7OcT1EgRxx6AR7VXqdkr0_VoxiRIUeDrmns6Kl
+Content-type: application/json
+
+{
+    "scope": "openid profile offline_access DelegatedPermissionGrant.ReadWrite.All AccessReview.ReadWrite.All AgentIdentityBlueprint.ReadWrite.All"
+}
+```
+
+---
+
 ## Step 3: Revoke delegated permissions granted to a service principal on behalf of a user [optional]
 
 If a service principal has been granted multiple delegated permission grants on behalf of a user, you can choose to revoke either specific grants or all grants. Use this method to remove and revoke consent for the delegated permissions that you assigned to the client service principal.
