@@ -1,3 +1,4 @@
+#cSpell:ignore microsoftgraph msgraph
 name: Generate reference TOC
 
 on:
@@ -42,13 +43,13 @@ jobs:
     - name: Setup .NET
       uses: actions/setup-dotnet@v4
       with:
-        dotnet-version: 8.x
+        dotnet-version: 10.x
     - name: Build TOC generation tool
       working-directory: ./tool
       run: dotnet build --configuration Release
     - name: Run cloud support tool
       env:
-        TOOL: ./tool/src/bin/Release/net8.0/GenerateTOC
+        TOOL: ./tool/src/bin/Release/net10.0/GenerateTOC
       run: |
         $TOOL --api-docs ./docs/api-reference/v1.0/api --resource-docs ./docs/api-reference/v1.0/resources --mapping ./docs/api-reference/v1.0/toc/toc.mapping.json --terms-override ./docs/api-reference/toc.terms.overrides.json --toc ./docs/api-reference/v1.0/toc.yml --static-toc ./docs/api-reference/v1.0/toc/static-toc.yml
         $TOOL --api-docs ./docs/api-reference/beta/api --resource-docs ./docs/api-reference/beta/resources --mapping ./docs/api-reference/beta/toc/toc.mapping.json --terms-override ./docs/api-reference/toc.terms.overrides.json --toc ./docs/api-reference/beta/toc.yml --static-toc ./docs/api-reference/beta/toc/static-toc.yml
