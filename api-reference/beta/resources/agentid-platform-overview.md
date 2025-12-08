@@ -4,7 +4,7 @@ description: "Use Microsoft Entra Agent ID APIs in Microsoft Graph to create, se
 author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: dastrock,yukarppa,etbasser,kvenkit 
-ms.subservice: applications
+ms.subservice: entra-applications
 ms.topic: overview
 ms.date: 11/18/2025
 doc_type: conceptualPageType
@@ -31,11 +31,12 @@ The following core components comprise Microsoft Entra Agent ID's architecture:
 | **Blueprint principal** | Record of blueprint's addition to a tenant. | [agentIdentityBlueprintPrincipal](../resources/agentidentityblueprintprincipal.md) |
 | **Agent identity** | Primary identity for authentication | [agentIdentity](../resources/agentidentity.md) |
 | **Agent user** | Optional account for scenarios that require a user account | [agentUser](../resources/agentUser.md) |
-| **Agent registry** | Centralized repository for agent management | [agentRegistry](../resources/agentregistry.md) |
+| **Agent registry** | Centralized repository for agent management that serves as the platform for managing agent card manifests, agent instances, and agent collections. | <ul><li>[agentRegistry](../resources/agentregistry.md)</li><li>[agentCardManifest](../resources/agentcardmanifest.md)</li><li>[agentInstance](../resources/agentinstance.md)</li><li>[agentCollection](../resources/agentcollection.md)</li> |
 
 Learn more about the agent identity architecture in the following articles:
 - [Agent identity and blueprint concepts in Microsoft Entra ID](/entra/agent-id/identity-platform/key-concepts)
 - [Agent identities, service principals, and applications](/entra/agent-id/identity-platform/agent-service-principals)
+- [What is the Microsoft Entra Agent Registry?](/entra/agent-id/identity-platform/what-is-agent-registry)
 
 ## Related APIs for security and governance for agents
 

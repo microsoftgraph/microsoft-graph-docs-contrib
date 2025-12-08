@@ -1093,6 +1093,64 @@
     {
       "ChangeList": [
         {
+          "Id": "7d06c3d8-157a-487f-a6b7-b03757ffe1e3",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "purviewInsiderRiskManagementLevel",
+          "ChangeType": "Addition",
+          "Description": "Added the **purviewInsiderRiskManagementLevel** enumeration type.",
+          "Target": "purviewInsiderRiskManagementLevel"
+        },
+        {
+          "Id": "7d06c3d8-157a-487f-a6b7-b03757ffe1e3",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "riskLevel",
+          "ChangeType": "Addition",
+          "Description": "Added the **riskLevel** enumeration type.",
+          "Target": "riskLevel"
+        },
+        {
+          "Id": "7d06c3d8-157a-487f-a6b7-b03757ffe1e3",
+          "ApiChange": "Resource",
+          "ChangedApiName": "controlConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [controlConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/controlConfiguration?view=graph-rest-beta) resource.",
+          "Target": "controlConfiguration"
+        },
+        {
+          "Id": "7d06c3d8-157a-487f-a6b7-b03757ffe1e3",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "controlConfigurations",
+          "ChangeType": "Addition",
+          "Description": "Added the **controlConfigurations** relationship to the [entitlementManagement](https://learn.microsoft.com/en-us/graph/api/resources/entitlementManagement?view=graph-rest-beta) resource.",
+          "Target": "entitlementManagement"
+        },
+        {
+          "Id": "7d06c3d8-157a-487f-a6b7-b03757ffe1e3",
+          "ApiChange": "Resource",
+          "ChangedApiName": "entraIdProtectionRiskyUserApproval",
+          "ChangeType": "Addition",
+          "Description": "Added the [entraIdProtectionRiskyUserApproval](https://learn.microsoft.com/en-us/graph/api/resources/entraIdProtectionRiskyUserApproval?view=graph-rest-beta) resource.",
+          "Target": "entraIdProtectionRiskyUserApproval"
+        },
+        {
+          "Id": "7d06c3d8-157a-487f-a6b7-b03757ffe1e3",
+          "ApiChange": "Resource",
+          "ChangedApiName": "insiderRiskyUserApproval",
+          "ChangeType": "Addition",
+          "Description": "Added the [insiderRiskyUserApproval](https://learn.microsoft.com/en-us/graph/api/resources/insiderRiskyUserApproval?view=graph-rest-beta) resource.",
+          "Target": "insiderRiskyUserApproval"
+        }
+      ],
+      "Id": "7d06c3d8-157a-487f-a6b7-b03757ffe1e3",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-12-03T23:07:50.8713328Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "d3e7c7ee-a10d-4a6b-a592-3a6af9b8671f",
           "ApiChange": "Enumeration",
           "ChangedApiName": "customExtensionCalloutInstanceStatus",

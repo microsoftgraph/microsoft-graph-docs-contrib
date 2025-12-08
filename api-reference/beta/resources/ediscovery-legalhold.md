@@ -46,7 +46,7 @@ Inherits from [entity](../resources/entity.md).
 |isEnabled|Boolean|Indicates whether the hold is enabled and actively holding content. |
 |lastModifiedBy|[identitySet](../resources/identityset.md)|the user who last modified the legal hold.|
 |lastModifiedDateTime|DateTimeOffset|The date and time the legal hold was last modified. |
-|status|microsoft.graph.ediscovery.legalHoldStatus|The status of the legal hold. Possible values are: `Pending`, `Error`, `Success`, `UnknownFutureValue`.|
+|status|microsoft.graph.ediscovery.legalHoldStatus|The status of the legal hold. The possible values are: `Pending`, `Error`, `Success`, `UnknownFutureValue`.|
 
 ### legalHoldStatus values
 

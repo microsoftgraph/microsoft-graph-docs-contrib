@@ -19,7 +19,7 @@ Represents the resources related to an alert.
 | Property   | Type|Description|
 |:---------------|:--------|:----------|
 |resource|String|Name of the resource that is related to current alert. **Required**.|
-|resourceType|[securityResourceType](#securityresourcetype-values)|Represents type of security resources related to an alert. Possible values are: `attacked`, `related`.|
+|resourceType|[securityResourceType](#securityresourcetype-values)|Represents type of security resources related to an alert. The possible values are: `attacked`, `related`.|
 
 ### securityResourceType values
 

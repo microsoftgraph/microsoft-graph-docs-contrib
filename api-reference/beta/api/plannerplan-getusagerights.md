@@ -16,15 +16,13 @@ Namespace: microsoft.graph
 
 Get the usage rights for a specific [plan](../resources/plannerplan.md) based on its sensitivity label assignment and the requesting user permissions. This method returns information about whether the plan has a sensitivity label applied and which specific actions (view, edit, print, copy, and export) the user is allowed to perform on the plan content, based on Rights Management Services (RMS) evaluation.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "plannerplan-getusagerights-permissions"
-}
--->
+<!-- { "blockType": "permissions", "name": "plannerplan_getusagerights" } -->
 [!INCLUDE [permissions-table](../includes/permissions/plannerplan-getusagerights-permissions.md)]
 
 ## HTTP request

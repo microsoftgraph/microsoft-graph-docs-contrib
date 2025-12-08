@@ -23,7 +23,7 @@ Namespace: microsoft.graph
 |:---|:---|:---|
 |serialNumber|String|Autopilot Device Serial Number|
 |deviceRegistrationId|String|ZTD Device Registration ID .|
-|deletionState|[windowsAutopilotDeviceDeletionState](../resources/intune-enrollment-windowsautopilotdevicedeletionstate.md)|Device deletion state. Possible values are: `unknown`, `failed`, `accepted`, `error`.|
+|deletionState|[windowsAutopilotDeviceDeletionState](../resources/intune-enrollment-windowsautopilotdevicedeletionstate.md)|Device deletion state. The possible values are: `unknown`, `failed`, `accepted`, `error`.|
 |errorMessage|String|Device deletion error message.|
 
 ## Relationships

@@ -18,12 +18,12 @@ Defines whether approver information is visible to the requestor in approval pro
 
 ## Members
 
-| Member             | Value | Description                                                        |
-|:-------------------|:------|:-------------------------------------------------------------------|
-| no                 | 0     | Approver information is not visible to the requestor.             |
-| yes                | 1     | Approver information is visible to the requestor.                 |
-| default            | 2     | Use the default system setting for approver information visibility.|
-| unknownFutureValue | 3     | Evolvable enumeration sentinel value. Don't use.                  |
+| Member             | Description                                                        |
+|:-------------------|:-------------------------------------------------------------------|
+| no                 | Approver information is not visible to the requestor.             |
+| yes                | Approver information is visible to the requestor.                 |
+| default            |Use the default system setting for approver information visibility.|
+| unknownFutureValue | Evolvable enumeration sentinel value. Don't use.                  |
 
 ## JSON representation
 

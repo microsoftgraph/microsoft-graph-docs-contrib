@@ -88,7 +88,7 @@ exposes at https://graph.microsoft.com/v1.0/$metadata.
 | Property | Type | Description |
 |:---------------|:--------|:----------|
 |extensionName|String|A unique text identifier for an open type data extension. Required.|
-|id|String| A fully qualified identifier that concatenates the extension type with the **extensionName**. Read-only. <br/><br/> The **id** must be defined during the *Create* operation via one of the following ways: <ul><li> Explicitly define the **id** property in the request body. <li> Define an **extensionName** property in the request body, and Microsoft Graph automatically assigns the same value to the **id** property. <ul><li> In subsequent updates, you can change the **extensionName** property value to one that's different from the **id** value. <li>In subsequent updates, specifying only the **id** property in the request body automatically deletes the **extensionName** property from the open extension.</ul></ul>|
+|id|String| A fully qualified identifier that concatenates the extension type with the **extensionName**. Read-only. <br/><br/> The **id** must be defined during the *Create* operation via one of the following ways: <ul><li> Explicitly define the **id** property in the request body. </li><li> Define an **extensionName** property in the request body, and Microsoft Graph automatically assigns the same value to the **id** property. <ul><li> In subsequent updates, you can change the **extensionName** property value to one that's different from the **id** value. </li><li>In subsequent updates, specifying only the **id** property in the request body automatically deletes the **extensionName** property from the open extension.</li></ul></li></ul>|
 
 ## Relationships
 
