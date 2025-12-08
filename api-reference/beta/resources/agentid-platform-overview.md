@@ -36,6 +36,7 @@ The following core components comprise Microsoft Entra Agent ID's architecture:
 Learn more about the agent identity architecture in the following articles:
 - [Agent identity and blueprint concepts in Microsoft Entra ID](/entra/agent-id/identity-platform/key-concepts)
 - [Agent identities, service principals, and applications](/entra/agent-id/identity-platform/agent-service-principals)
+- [What is the Microsoft Entra Agent Registry?](/entra/agent-id/identity-platform/what-is-agent-registry)
 
 ## Related APIs for security and governance for agents
 
