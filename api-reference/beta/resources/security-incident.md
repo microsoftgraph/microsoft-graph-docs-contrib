@@ -53,7 +53,7 @@ Because piecing the individual alerts together to gain insight into an attack ca
 |summary|String|The overview of an attack. When applicable, the summary contains details of what occurred, impacted assets, and the type of attack.|
 |systemTags|String collection|The collection of system tags that are associated with the incident.|
 |tenantId|String|The Microsoft Entra tenant in which the alert was created.|
-|priorityScore|Int|The score (0-100) is generated using machine learning and is based on multiple factors, including severity, disruption impact, threat intelligence, alert types, asset criticality, threat analytics, incident rarity, and additional priority signals. The score is designed to help you prioritize the most important incidents. 100 is the highest possible score. The value can also be null which indicates the feature is not open for the tenant or the value of the score is pending calculation.|
+|priorityScore|Int|A priority score for the incident from 0 to 100, with > 85 being the top priority, 15 - 85 medium priority, and < 15 low priority. This score is generated using machine learning and is based on multiple factors, including severity, disruption impact, threat intelligence, alert types, asset criticality, threat analytics, incident rarity, and additional priority signals. The value can also be `null` which indicates the feature is not open for the tenant or the value of the score is pending calculation.|
 
 ### incidentStatus values 
 The following table lists the members of an [evolvable enumeration](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations). Use the `Prefer: include-unknown-enum-members` request header to get the following values in this evolvable enum: `awaitingAction`.
