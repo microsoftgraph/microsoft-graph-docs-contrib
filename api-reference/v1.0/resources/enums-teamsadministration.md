@@ -10,11 +10,9 @@ doc_type: enumTypes
 
 # Microsoft Graph teams administration enumeration values
 
-Namespace: microsoft.graph.teamsadministration
+Namespace: microsoft.graph.teamsAdministration
 
 ### accountType values 
-
-
 
 |Member|
 |:---|
@@ -26,13 +24,7 @@ Namespace: microsoft.graph.teamsadministration
 |unknownFutureValue|
 |ineligibleUser|
 
-# Microsoft Graph teams administration enumeration values
-
-Namespace: microsoft.graph.teamsadministration
-
 ### assignmentCategory values 
-
-
 
 |Member|
 |:---|
@@ -41,13 +33,7 @@ Namespace: microsoft.graph.teamsadministration
 |alternate|
 |unknownFutureValue|
 
-# Microsoft Graph teams administration enumeration values
-
-Namespace: microsoft.graph.teamsadministration
-
 ### assignmentType values 
-
-
 
 |Member|
 |:---|
