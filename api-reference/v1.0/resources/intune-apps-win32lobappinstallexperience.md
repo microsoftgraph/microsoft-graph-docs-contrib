@@ -19,8 +19,8 @@ Contains installation experience properties for a Win32 App
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|runAsAccount|[runAsAccountType](../resources/intune-apps-runasaccounttype.md)|Indicates the type of execution context the app runs in. Possible values are: `system`, `user`.|
-|deviceRestartBehavior|[win32LobAppRestartBehavior](../resources/intune-apps-win32lobapprestartbehavior.md)|Device restart behavior. Possible values are: `basedOnReturnCode`, `allow`, `suppress`, `force`.|
+|runAsAccount|[runAsAccountType](../resources/intune-apps-runasaccounttype.md)|Indicates the type of execution context the app runs in. The possible values are: `system`, `user`.|
+|deviceRestartBehavior|[win32LobAppRestartBehavior](../resources/intune-apps-win32lobapprestartbehavior.md)|Device restart behavior. The possible values are: `basedOnReturnCode`, `allow`, `suppress`, `force`.|
 
 ## Relationships
 None

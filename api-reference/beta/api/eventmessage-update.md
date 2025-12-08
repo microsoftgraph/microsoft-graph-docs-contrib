@@ -47,7 +47,7 @@ In the request body, supply the values for relevant fields that should be update
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |categories|String|The categories associated with the message.|
-|importance|String|The importance of the message. Possible values are: `Low`, `Normal`, `High`.|
+|importance|String|The importance of the message. The possible values are: `Low`, `Normal`, `High`.|
 |isAllDay |Boolean|Indicates whether the event lasts the entire day. Adjusting this property requires adjusting the **startDateTime** and **endDateTime** properties of the event as well.|
 |isDeliveryReceiptRequested|Boolean|Indicates whether a read receipt is requested for the message.|
 |isRead|Boolean|Indicates whether the message has been read.|

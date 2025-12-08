@@ -20,6 +20,7 @@ Inherits from [workflowBase](../resources/identitygovernance-workflowbase.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
+|[Create](../api/identitygovernance-workflow-createnewversion.md)|[microsoft.graph.identityGovernance.workflowVersion](../resources/identitygovernance-workflowversion.md)|Create a new workflowVersion object.|
 |[List](../api/identitygovernance-workflow-list-versions.md)|[microsoft.graph.identityGovernance.workflowVersion](../resources/identitygovernance-workflowversion.md) collection|Get a list of the [workflowVersion](../resources/identitygovernance-workflowversion.md) objects and their properties. Inherited from [workflowBase](../resources/identitygovernance-workflowbase.md).|
 |[Get](../api/identitygovernance-workflowversion-get.md)|[microsoft.graph.identityGovernance.workflowVersion](../resources/identitygovernance-workflowversion.md)|Read the properties and relationships of a [workflowVersion](../resources/identitygovernance-workflowversion.md) object. Inherited from [workflowBase](../resources/identitygovernance-workflowbase.md).|
 |[List tasks for a workflow version](../api/identitygovernance-workflowversion-list-tasks.md)|[microsoft.graph.identityGovernance.task](../resources/identitygovernance-workflowversion.md) collection|Get the task resources from the tasks navigation property. Inherited from [workflowBase](../resources/identitygovernance-workflowbase.md).|

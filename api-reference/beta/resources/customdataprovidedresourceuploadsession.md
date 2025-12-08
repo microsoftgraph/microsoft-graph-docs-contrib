@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a [customDataProvidedResourceUploadSession](../resources/customdataprovidedresourceuploadsession.md) created on a [customDataProvidedResource](../resources/customdataprovidedresource.md)
+Represents a [customDataProvidedResourceUploadSession](../resources/customdataprovidedresourceuploadsession.md) created on a [customDataProvidedResource](../resources/customdataprovidedresource.md). For more information, see [Include custom data provided resource in the catalog for catalog user Access Reviews (Preview)](/entra/id-governance/custom-data-resource-access-reviews).
 
 
 Inherits from [entity](../resources/entity.md).

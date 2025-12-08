@@ -1,7 +1,7 @@
 ---
 title: "List certificateAuthorityDetail objects"
 description: "Get a list of the certificateAuthorityDetail objects and their properties."
-author: "suawat"
+author: "vimrang"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType

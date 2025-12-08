@@ -31,7 +31,7 @@ The type for deployment of groups or apps.
 |:---|:---|:---|
 |id|String|Id|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Identifier for deployment to a group or app|
-|source|[deviceAndAppManagementAssignmentSource](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|Type of resource used for deployment to a group, direct or parcel/policySet. Possible values are: `direct`, `policySets`.|
+|source|[deviceAndAppManagementAssignmentSource](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|Type of resource used for deployment to a group, direct or parcel/policySet. The possible values are: `direct`, `policySets`.|
 |sourceId|String|Identifier for resource used for deployment to a group|
 
 ## Relationships

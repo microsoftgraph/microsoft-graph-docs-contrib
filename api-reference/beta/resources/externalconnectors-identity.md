@@ -27,7 +27,7 @@ Represents an entity used to set permissions on external content added to Micros
 | Property       | Type                    | Description                                                          |
 |:---------------|:------------------------|:---------------------------------------------------------------------|
 | id             | String                  | The unique ID of the identity. It would be the objectId property for Microsoft Entra users or groups and the **id** property of the **externalGroup** in the case of external groups.                                    |
-| type           | microsoft.graph.externalConnectors.identityType | The type of identity. Possible values are: `user` or `group` for Microsoft Entra identities and `externalgroup` for groups in an external system. |
+| type           | microsoft.graph.externalConnectors.identityType | The type of identity. The possible values are: `user` or `group` for Microsoft Entra identities and `externalgroup` for groups in an external system. |
 
 ## Relationships
 

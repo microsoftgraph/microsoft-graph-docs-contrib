@@ -1,6 +1,40 @@
 {
   "changelog": [
-    {
+      {
+      "ChangeList": [
+        {
+          "Id": "f178819f-70f1-4489-811a-9bb2a9c79086",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "cloudPcImageOsArchitectureType",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **cloudPcImageOsArchitectureType** enumeration type.",
+          "Target": "cloudPcImageOsArchitectureType"
+        },
+        {
+          "Id": "f178819f-70f1-4489-811a-9bb2a9c79086",
+          "ApiChange": "Property",
+          "ChangedApiName": "osArchitecture",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **osArchitecture** property from the [cloudPcDeviceImage](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcDeviceImage?view=graph-rest-beta) resource.",
+          "Target": "cloudPcDeviceImage"
+        },
+        {
+          "Id": "f178819f-70f1-4489-811a-9bb2a9c79086",
+          "ApiChange": "Property",
+          "ChangedApiName": "osArchitecture",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **osArchitecture** property from the [cloudPcGalleryImage](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcGalleryImage?view=graph-rest-beta) resource.",
+          "Target": "cloudPcGalleryImage"
+        }
+      ],
+          "Id": "f178819f-70f1-4489-811a-9bb2a9c79086",
+          "Cloud": "Prod",
+          "Version": "beta",
+          "CreatedDateTime": "2025-12-02T09:55:21.2146082Z",
+          "WorkloadArea": "Devices and app management",
+          "SubArea": "Cloud PC"
+      },
+      {
       "ChangeList": [
         {
           "Id": "382c3075-26fc-4093-8518-75389ec935f3",
