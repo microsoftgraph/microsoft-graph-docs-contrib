@@ -18,7 +18,7 @@ Send activity feed notifications to multiple users in bulk.
 
 For more information, see [sending Teams activity notifications](/graph/teams-send-activityfeednotifications).
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

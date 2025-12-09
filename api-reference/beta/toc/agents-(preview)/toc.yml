@@ -33,17 +33,17 @@ items:
       - name: Remove key
         href: ../../api/agentidentityblueprint-removekey.md
       - name: List federatedIdentityCredential
-        href: ../../api/agentidentityblueprint-list-federatedidentitycredentials.md
+        href: ../../api/federatedidentitycredential-list.md
       - name: Create federatedIdentityCredential
-        href: ../../api/agentidentityblueprint-post-federatedidentitycredentials.md
+        href: ../../api/federatedidentitycredential-post.md
       - name: Get federatedIdentityCredential
-        href: ../../api/agentidentityblueprint-federatedidentitycredential-get.md
+        href: ../../api/federatedidentitycredential-get.md
       - name: Update federatedIdentityCredential
-        href: ../../api/agentidentityblueprint-federatedidentitycredential-update.md
+        href: ../../api/federatedidentitycredential-update.md
       - name: Upsert federatedIdentityCredential
-        href: ../../api/agentidentityblueprint-federatedidentitycredential-upsert.md
+        href: ../../api/federatedidentitycredential-upsert.md
       - name: Delete federatedIdentityCredential
-        href: ../../api/agentidentityblueprint-federatedidentitycredential-delete.md
+        href: ../../api/federatedidentitycredential-delete.md
     - name: Deleted items
       items:
       - name: List
@@ -76,6 +76,14 @@ items:
         href: ../../api/agentidentityblueprint-setverifiedpublisher.md
       - name: Unset
         href: ../../api/agentidentityblueprint-unsetverifiedpublisher.md
+    - name: Inheritable permissions
+      items:
+      - name: List inheritable permissions
+        href: ../../api/agentidentityblueprint-list-inheritablepermissions.md
+      - name: Add inheritable permission
+        href: ../../api/agentidentityblueprint-post-inheritablepermissions.md
+      - name: Delete inheritable permission
+        href: ../../api/agentidentityblueprint-delete-inheritablepermissions.md
   - name: Agent identity blueprint principal
     items:
     - name: Agent identity blueprint principal
@@ -208,6 +216,8 @@ items:
         href: ../../api/agentidentity-delete-sponsors.md
 - name: Agent registry
   items:
+  - name: Agent registry
+    href: ../../resources/agentregistry.md
   - name: Agent instance
     items:
     - name: Agent instance

@@ -156,6 +156,7 @@
           {
             "name": "Agent registry",
             "resources": [
+              "agentRegistry",
               "agentInstance",
               "agentCardManifest",
               "agentCollection"
@@ -585,7 +586,7 @@
             "cloudPcForensicStorageAccount",
             "cloudPcFrontlineSharedDeviceDetail",
             "cloudPcHealthCheckItem",
-            "cloudPcLaunchDetail",            
+            "cloudPcLaunchDetail",
             "cloudPcLaunchInfo",
             "cloudPcLoginResult",
             "cloudPcManagementAssignmentTarget",
@@ -1088,11 +1089,16 @@
           "overview": "../../resources/sharepoint-crossorganization-api-overview.md",
           "resources": [
             "sharePointGroupIdentityMapping",
+            "sharePointMigrationTask",
             "sharePointUserIdentityMapping"
           ],
           "complexTypes": [
             "sharePointIdentityMappingGroupMigrationData",
-            "sharePointIdentityMappingUserMigrationData"
+            "sharePointIdentityMappingUserMigrationData",
+            "sharePointMigrationTaskParameters",
+            "sharePointUserMigrationTaskParameters",
+            "sharePointSiteMigrationTaskParameters",
+            "sharePointGroupMigrationTaskParameters"
           ]
         }
       ]
@@ -1347,6 +1353,9 @@
                 "endUserSettings",
                 "entitlementManagementSettings",
                 "customAccessPackageWorkflowExtension",
+                "controlConfiguration",
+                "insiderRiskyUserApproval",
+                "entraIdProtectionRiskyUserApproval",
                 "customDataProvidedResourceUploadSession"
               ],
               "complexTypes": [
@@ -1604,7 +1613,7 @@
           "name": "Identity and sign-in",
           "shouldSort": true,
           "resources": [
-            "appRoleAssignment",            
+            "appRoleAssignment",
             "dataPolicyOperation",
             "oAuth2PermissionGrant",
             "externalIdentitiesPolicy"
@@ -1656,7 +1665,7 @@
             {
               "name": "Verified ID",
               "resources": [
-                "verifiedIdProfile"                
+                "verifiedIdProfile"
               ]
             },
             {
@@ -2335,11 +2344,12 @@
         "mailFolder",
         "mailFolderOperation",
         "mailSearchFolder",
-        "messageRule"
+        "messageRule",
+        "userConfiguration"
       ],
       "childNodes": [
         {
-          "name": "Focused Inbox",
+          "name": "Focused inbox",
           "overview": "../../resources/manage-focused-inbox.md",
           "resources": [
             "inferenceClassificationOverride"
@@ -2355,6 +2365,8 @@
         }
       ],
       "complexTypes":[
+        "structuredDataEntry",
+        "structuredDataEntryTypedValue",
         "updateAllMessagesReadStateOperation"
       ]
     },
