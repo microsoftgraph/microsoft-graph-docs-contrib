@@ -42,7 +42,7 @@ Added the `microsoftRevokedSessions` value to the [riskDetail](/graph/api/resour
 
 ### Mail
 
-Use the [userConfiguration](/graph/api/resources/teamsadministration-teamsuserconfiguration) resource and its associated methods to manage user-specific settings, metadata, or application data tied to mailbox folders, using XML, binary, or dictionary formats.
+Use the [userConfiguration](/graph/api/resources/teamsadministration-teamsuserconfiguration?view=graph-rest-beta&preserve-view=true) resource and its associated methods to manage user-specific settings, metadata, or application data tied to mailbox folders, using XML, binary, or dictionary formats.
 
 ## November 2025: New and generally available
 
