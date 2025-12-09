@@ -132,7 +132,7 @@ Removed the **osArchitecture** property from the [cloudPcDeviceImage](/graph/api
 ### Identity and access | Governance
 
 - Added the [customDataProvidedResource](/graph/api/resources/customdataprovidedresource?view=graph-rest-beta&preserve-view=true) resource to support user-centric access reviews.
-- Added the **administrationScopeTargets** relationship to the workflowBase resource and its derived types to support scoping lifecycle workflows to specific administrative units.
+- Added the **administrationScopeTargets** relationship to the [workflowBase](/graph/api/resources/identitygovernance-workflowbase?view=graph-rest-beta&preserve-view=true) resource and its derived types to support scoping lifecycle workflows to specific administrative units.
 
 ### Identity and access | Identity and sign-in
 
