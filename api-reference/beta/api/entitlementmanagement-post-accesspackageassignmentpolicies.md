@@ -874,17 +874,6 @@ Content-type: application/json
 }
 ```
 
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "Create accessPackageAssignmentPolicy",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->
-
-
 ## Example 7: Create a policy used to determine approvers dynamically from a Logic App
 
 In the following example, the policy is created for an access package assignment that is determining the approver dynamically via a logic app called from a custom extension.
@@ -901,6 +890,7 @@ The following example shows a request.
 ```msgraph-interactive
 POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/assignmentPolicies/
 Content-type: application/json
+
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/entitlementManagement/accessPackageAssignmentPolicies/$entity",
     "displayName": "Dynamic approver policy",
@@ -963,6 +953,7 @@ The following example shows the response. The **customExtensionStageSettings** o
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
+
 {
   "id": "d0324cbb-24a2-4edb-acca-fee5384c6a5e",
   "displayName": "Dynamic approver policy",
@@ -996,3 +987,13 @@ Content-type: application/json
     ]
 }
 ```
+
+<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
+2019-02-04 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "Create accessPackageAssignmentPolicy",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->
