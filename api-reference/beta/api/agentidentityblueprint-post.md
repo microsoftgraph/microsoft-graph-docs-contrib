@@ -39,7 +39,7 @@ POST /applications/microsoft.graph.agentIdentityBlueprint
 | Content-Type   | application/json. Required.|
 
 ## Request body
-In the request body, supply a JSON representation of [agent identity blueprint](../resources/agentidentityblueprint.md) object. The request body must contain  **displayName**, which is a required property.
+In the request body, supply a JSON representation of [agent identity blueprint](../resources/agentidentityblueprint.md) object. You must specify the **displayName** and **sponsors**.
 
 ## Response
 
@@ -55,7 +55,10 @@ POST https://graph.microsoft.com/beta/applications/microsoft.graph.agentIdentity
 Content-type: application/json
 
 {
-  "displayName": "Display name"
+  "displayName": "Display name",
+  "sponsors@odata.bind": [
+    "https://graph.microsoft.com/beta/users/e64405d7-f156-4ce1-b1f5-b0d801c367f3"
+   ]
 }
 ```
 
@@ -69,45 +72,13 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#applications/$entity",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#applications/microsoft.graph.agentIdentityBlueprint/$entity",
     "id": "03ef14b0-ca33-4840-8f4f-d6e91916010e",
-    "deletedDateTime": null,
     "appId": "631a96bc-a705-4eda-9f99-fdaf9f54f6a2",
     "identifierUris": [],
     "createdDateTime": "2019-09-17T19:10:35.2742618Z",
     "displayName": "Display name",
-    "groupMembershipClaims": null,
-    "optionalClaims": null,
     "publisherDomain": "contoso.com",
-    "signInAudience": "AzureADandPersonalMicrosoftAccount",
-    "tags": [],
-    "tokenEncryptionKeyId": null,
-    "api": {
-        "requestedAccessTokenVersion": 2,
-        "acceptMappedClaims": null,
-        "knownClientApplications": [],
-        "oauth2PermissionScopes": [],
-        "preAuthorizedApplications": []
-    },
-    "appRoles": [],
-    "info": {
-        "termsOfServiceUrl": null,
-        "supportUrl": null,
-        "privacyStatementUrl": null,
-        "marketingUrl": null,
-        "logoUrl": null
-    },
-    "keyCredentials": [],
-    "passwordCredentials": [],
-    "uniqueName": null,
-    "web": {
-        "redirectUris": [],
-        "homePageUrl": null,
-        "logoutUrl": null,
-        "implicitGrantSettings": {
-            "enableIdTokenIssuance": false,
-            "enableAccessTokenIssuance": false
-        }
-    },
+    "signInAudience": "AzureADMyOrg"
 }
 ```
