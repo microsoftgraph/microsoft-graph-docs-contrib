@@ -20,7 +20,7 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ## December 2025: New and generally available
 
-### Teamwork and communications | Presence
+### Teamwork and communications | Calls and online meetings
 
 Use the following new endpoints to enable the management of work location for a user:
 - [Clear](/graph/api/presence-clearautomaticlocation) the automatic work location value for a user.
