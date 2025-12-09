@@ -1,6 +1,6 @@
 ---
-title: "List operations"
-description: "Get the list caseOperations from a case object."
+title: "List eDiscovery caseOperation objects"
+description: "Get the list case operations from an eDiscovery case object."
 author: "mahage-msft"
 ms.localizationpriority: medium
 ms.subservice: "ediscovery"
@@ -8,7 +8,7 @@ doc_type: resourcePageType
 ms.date: 06/11/2024
 ---
 
-# List operations
+# LList eDiscovery caseOperation objects
 
 Namespace: microsoft.graph.ediscovery
 
@@ -16,7 +16,7 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [ediscovery-deprecation](../includes/ediscovery-subnamespace-deprecation.md)]
 
-Get the list of [caseOperations](../resources/ediscovery-caseoperation.md) from a [case](../resources/ediscovery-case.md) object.
+Get the list of [caseOperations](../resources/ediscovery-caseoperation.md) from an eDiscovery [case](../resources/ediscovery-case.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
