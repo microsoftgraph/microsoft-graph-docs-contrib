@@ -1,5 +1,5 @@
 ---
-title: "Working with the Places upsert places API in Microsoft Graph"
+title: "Working with the upsert Places API in Microsoft Graph"
 description: "Learn how to use the upsert places API to create and update multiple places efficiently in Microsoft Graph."
 author: "Dongjing-MSIT"
 ms.date: 12/04/2025
@@ -8,7 +8,7 @@ ms.subservice: "outlook"
 ms.topic: article
 ---
 
-# Working with the Places upsert places API in Microsoft Graph
+# Working with the upsert Places API in Microsoft Graph
 
 The [upsert places](/graph/api/place-patch-places?view=graph-rest-beta&preserve-view=true) API allows you to efficiently create and update multiple [places](/graph/api/resources/place?view=graph-rest-beta&preserve-view=true) in a single asynchronous operation.
 
@@ -27,7 +27,7 @@ The following considerations apply when performing bulk create or update operati
 
 - Create vs. update: Places without an **id** property are created and places with an **id** property are updated by ID.
 - Place hierarchy: Use the **children@delta** property to create or update children places within a parent place. The **parentId** property is automatically set for children places.
-- Assigned mode isn't supported in upsert places yet.
+- Assigned mode isn't supported in **upsert places** yet.
 - It isn't supported to update an existing child place under an existing parent place using **children@delta** property. They should be updated separately.
 
 ## Job-level concurrency
