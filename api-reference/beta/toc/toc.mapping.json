@@ -589,7 +589,7 @@
             "cloudPcForensicStorageAccount",
             "cloudPcFrontlineSharedDeviceDetail",
             "cloudPcHealthCheckItem",
-            "cloudPcLaunchDetail",            
+            "cloudPcLaunchDetail",
             "cloudPcLaunchInfo",
             "cloudPcLoginResult",
             "cloudPcManagementAssignmentTarget",
@@ -1358,7 +1358,7 @@
                 "customAccessPackageWorkflowExtension",
                 "controlConfiguration",
                 "insiderRiskyUserApproval",
-                "entraIdProtectionRiskyUserApproval"
+                "entraIdProtectionRiskyUserApproval",
                 "customDataProvidedResourceUploadSession"
               ],
               "complexTypes": [
@@ -1616,7 +1616,7 @@
           "name": "Identity and sign-in",
           "shouldSort": true,
           "resources": [
-            "appRoleAssignment",            
+            "appRoleAssignment",
             "dataPolicyOperation",
             "oAuth2PermissionGrant",
             "externalIdentitiesPolicy"
@@ -1668,7 +1668,7 @@
             {
               "name": "Verified ID",
               "resources": [
-                "verifiedIdProfile"                
+                "verifiedIdProfile"
               ]
             },
             {
@@ -2347,11 +2347,12 @@
         "mailFolder",
         "mailFolderOperation",
         "mailSearchFolder",
-        "messageRule"
+        "messageRule",
+        "userConfiguration"
       ],
       "childNodes": [
         {
-          "name": "Focused Inbox",
+          "name": "Focused inbox",
           "overview": "../../resources/manage-focused-inbox.md",
           "resources": [
             "inferenceClassificationOverride"
@@ -2367,6 +2368,8 @@
         }
       ],
       "complexTypes":[
+        "structuredDataEntry",
+        "structuredDataEntryTypedValue",
         "updateAllMessagesReadStateOperation"
       ]
     },

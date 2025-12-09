@@ -57,7 +57,7 @@ Instance attributes are properties with special behaviors. These properties are 
 
 | Property name| Type   | Description
 |:---|:---|:---|
-|@microsoft.graph.originalSourceMembershipUrl|String|This annotation represents the URL of the original source membership that distinguishes between direct and indirect members. Use this annotation with the [List allMembers](../api/channel-list-allmembers.md) API. |
+|@microsoft.graph.originalSourceMembershipUrl|String|This annotation represents the URL of the original source membership that distinguishes between direct and indirect members. Use this annotation with the [List allMembers](../api/channel-list-allmembers.md) and [Get member from channel allMembers collection](../api/channel-get-allmembers.md) APIs. |
 
 ## Relationships
 None.

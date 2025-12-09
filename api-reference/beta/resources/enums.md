@@ -13,6 +13,22 @@ ms.custom: sfi-ropc-nochange
 
 Namespace: microsoft.graph
 
+### structuredDataEntryValueType values
+
+|Member|
+|:---|
+|dateTime|
+|boolean|
+|byte|
+|string|
+|integer32|
+|unsignedInteger32|
+|integer64|
+|unsignedInteger64|
+|stringArray|
+|byteArray|
+|unknownFutureValue|
+
 ### placeFeatureEnablement values
 
 |Member|
@@ -5824,6 +5840,16 @@ Possible values for user account types (group membership), per Windows definitio
 |read|
 |write|
 |create|
+|unknownFutureValue|
+
+### scopeCollectionKind values 
+
+|Member|
+|:---|
+|allAllowed|
+|enumerated|
+|none|
+|scopeKindNotSet|
 |unknownFutureValue|
 
 ### sharePointMigrationTaskStatus values

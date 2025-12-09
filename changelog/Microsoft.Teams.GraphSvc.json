@@ -3151,6 +3151,24 @@
       "CreatedDateTime": "2025-11-03T16:03:44.5549271Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": "Messaging"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "c7d3f892-4e61-4b28-9a5c-8f2d1e3b4c7a",
+          "ApiChange": "Method",
+          "ChangedApiName": "channel",
+          "ChangeType": "Addition",
+          "Description": "Added the [Get member from channel allMembers collection](https://learn.microsoft.com/en-us/graph/api/channel-get-allmembers?view=graph-rest-beta) method to the [channel](https://learn.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) resource.",
+          "Target": "channel"
+        }
+      ],
+      "Id": "c7d3f892-4e61-4b28-9a5c-8f2d1e3b4c7a",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-12-05T00:00:00.0000000Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Messaging"
     }
   ]
 }
