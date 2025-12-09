@@ -71,7 +71,7 @@ The following table lists some of the common uses for the Places API.
 | :--- | :--- | :--- |
 | Create and manage a place  | [place](../resources/place.md) | [place methods](../resources/place.md#methods) |
 | Interact with place spaces such as building, floor, section, room, room list, workspace, or desk | [place](../resources/place.md) |[place methods](../resources/place.md#methods) |
-| Bulk upsert places  | [place](../resources/place.md) | [Bulk upsert](../api/place-patch-places.md) |
+| Upsert places  | [place](../resources/place.md) | [Upsert places](../api/place-patch-places.md) |
 | Ingest the map file for a building | [building](../resources/building.md) | [Ingest map file](../api/building-ingestmapfile.md) |
 | List levels in a building  | [levelMap](../resources/levelmap.md) | [List levels](../api/buildingmap-list-levels.md) |
 | List footprints in a building  | [footprintMap](../resources/footprintmap.md) | [List footprints](../api/buildingmap-list-footprints.md) |

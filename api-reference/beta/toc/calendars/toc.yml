@@ -290,7 +290,7 @@ items:
       href: ../../api/place-descendants.md
     - name: Create check-in claim
       href: ../../api/place-post-checkins.md
-    - name: Bulk upsert
+    - name: Upsert places
       href: ../../api/place-patch-places.md
     - name: Get operation
       href: ../../api/place-getoperation.md

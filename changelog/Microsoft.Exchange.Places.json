@@ -755,7 +755,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "place",
           "ChangeType": "Addition",
-          "Description": "Added the [Bulk upsert](https://learn.microsoft.com/en-us/graph/api/place-patch-places?view=graph-rest-beta) method to the [place](https://learn.microsoft.com/en-us/graph/api/resources/place?view=graph-rest-beta) resource.",
+          "Description": "Added the [Upsert places](https://learn.microsoft.com/en-us/graph/api/place-patch-places?view=graph-rest-beta) method to the [place](https://learn.microsoft.com/en-us/graph/api/resources/place?view=graph-rest-beta) resource.",
           "Target": "place"
         },
         {

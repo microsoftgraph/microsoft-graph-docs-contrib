@@ -42,7 +42,7 @@ For the list of supported methods, see [place](./place.md).
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|children|[place](../resources/place.md) collection|A collection of children places that is only used in the [Bulk upsert](../api/place-patch-places.md) API. A desk doesn't have children. Inherited from [place](../resources/place.md). |
+|children|[place](../resources/place.md) collection|A collection of children places that is only used in the [Upsert places](../api/place-patch-places.md) API. A desk doesn't have children. Inherited from [place](../resources/place.md). |
 
 ## JSON representation
 The following JSON representation shows the resource type.

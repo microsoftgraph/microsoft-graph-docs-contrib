@@ -22,7 +22,7 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ### Calendars | Places
 
-[Bulk upsert](/graph/api/place-patch-places?view=graph-rest-beta&preserve-view=true) places in async mode.
+[Upsert places](/graph/api/place-patch-places?view=graph-rest-beta&preserve-view=true) places in async mode.
 
 ### Files
 

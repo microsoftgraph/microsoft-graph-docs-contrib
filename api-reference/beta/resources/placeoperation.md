@@ -1,6 +1,6 @@
 ---
 title: "placeOperation resource type"
-description: "Represents a place bulk upsert operation."
+description: "Represents a place upsert places operation."
 author: "Dongjing-MSIT"
 ms.date: 11/10/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a [place](../resources/place.md) bulk upsert operation.
+Represents a [place](../resources/place.md) upsert places operation.
 
 ## Methods
 |Method|Return type|Description|
