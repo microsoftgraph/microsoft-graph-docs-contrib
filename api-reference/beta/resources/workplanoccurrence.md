@@ -40,6 +40,7 @@ When a work plan occurrence exists for the same time period as a recurring patte
 |:---------|:-----|:------------|
 | end | [dateTimeTimeZone](datetimetimezone.md) | The end date and time for this occurrence. |
 | id | String | Unique identifier for the occurrence. |
+| placeId | String | Identifier of a place from the Microsoft Graph Places Directory API. Only applicable when **workLocationType** is set to `office`. |
 | recurrenceId | String | The identifier of the parent recurrence pattern that generated this occurrence. The value is `null` for time-off occurrences because they don't have a parent recurrence. |
 | start | [dateTimeTimeZone](datetimetimezone.md) | The start date and time for this occurrence. |
 | timeOffDetails | [timeOffDetails](timeoffdetails.md) | The details about the time off. Only applicable when **workLocationType** is set to `timeOff`. |
@@ -56,10 +57,7 @@ When a work plan occurrence exists for the same time period as a recurring patte
 | unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
 
 ## Relationships
-
-| Relationship | Type | Description |
-|:-------------|:-----|:------------|
-| workLocationDetails | [place](place.md) | Details about the work location. Only applicable when **workLocationType** is set to `office`. |
+None.
 
 ## JSON representation
 
@@ -75,6 +73,7 @@ The following JSON representation shows the resource type.
 {
   "end": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
   "id": "String (identifier)",
+  "placeId": "String",
   "recurrenceId": "String",
   "start": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
   "timeOffDetails": {"@odata.type": "microsoft.graph.timeOffDetails"},

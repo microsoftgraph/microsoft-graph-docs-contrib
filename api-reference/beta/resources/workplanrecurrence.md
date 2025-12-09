@@ -37,15 +37,13 @@ You can create multiple recurrences to accommodate different work patterns throu
 |:---------|:-----|:------------|
 | end | [dateTimeTimeZone](datetimetimezone.md) | The end date and time for the recurring work plan. |
 | id | String | Unique identifier for the recurrence. |
+| placeId | String | Identifier of a place from the Microsoft Graph Places Directory API. Only applicable when **workLocationType** is set to `office`. |
 | recurrence | [patternedRecurrence](patternedrecurrence.md) | The recurrence pattern that defines when this work plan repeats. |
 | start | [dateTimeTimeZone](datetimetimezone.md) | The start date and time for the recurring work plan. |
 | workLocationType | [workLocationType](../resources/workplanoccurrence.md#worklocationtype-values) | The type of work location. It can't be set to `timeOff`. Supports a subset of the values for **workLocationType**. The possible values are: `unspecified`, `office`, `remote`, `unknownFutureValue`. |
 
 ## Relationships
-
-| Relationship | Type | Description |
-|:-------------|:-----|:------------|
-| workLocationDetails | [place](place.md) | Details about the work location. |
+None.
 
 ## JSON representation
 
@@ -61,6 +59,7 @@ The following JSON representation shows the resource type.
 {
   "end": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
   "id": "String (identifier)",
+  "placeId": "String",
   "recurrence": {"@odata.type": "microsoft.graph.patternedRecurrence"},
   "start": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
   "workLocationType": "String"

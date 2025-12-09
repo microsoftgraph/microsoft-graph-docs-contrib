@@ -50,8 +50,8 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter | Type | Description |
 |:----------|:-----|:------------|
+| placeId | String | Identifier of a place from the Microsoft Graph Places Directory API. Only applicable when **workLocationType** is set to `office`. |
 | updateScope | [workLocationUpdateScope](#worklocationupdatescope-values) | The scope of the update. The possible values are: `currentSegment`, `currentDay`, `unknownFutureValue`. |
-| workLocationDetails | [place](../resources/place.md) | The place entity that represents the work location. It can be bound using **@odata.bind** when **workLocationType** is set to `office`. |
 | workLocationType | [workLocationType](../resources/workplanoccurrence.md#worklocationtype-values) | The new work location type to set. Supports a subset of the values of **workLocationType**. The possible values are: `office`, `remote`. |
 
 ### workLocationUpdateScope values
@@ -88,7 +88,7 @@ Content-type: application/json
 {
   "updateScope": "currentDay",
   "workLocationType": "office",
-  "workLocationDetails@odata.bind": "https://graph.microsoft.com/beta/places/12345678-1234-1234-1234-123456789012"
+  "placeId": "12345678-1234-1234-1234-123456789012"
 }
 ```
 

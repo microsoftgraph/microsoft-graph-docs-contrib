@@ -81,6 +81,7 @@ Content-type: application/json
     "timeZone": "UTC"
   },
   "workLocationType": "office",
+  "placeId": "12345678-1234-1234-1234-123456789012",
   "recurrence": {
     "pattern": {
       "type": "weekly",
@@ -91,8 +92,7 @@ Content-type: application/json
       "type": "noEnd",
       "startDate": "2024-01-01"
     }
-  },
-  "workLocationDetails@odata.bind": "https://graph.microsoft.com/beta/places/12345678-1234-1234-1234-123456789012"
+  }
 }
 ```
 
@@ -123,6 +123,7 @@ Content-type: application/json
     "timeZone": "UTC"
   },
   "workLocationType": "office",
+  "placeId": "12345678-1234-1234-1234-123456789012",
   "recurrence": {
     "pattern": {
       "type": "weekly",
