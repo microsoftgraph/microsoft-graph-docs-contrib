@@ -14,6 +14,8 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [ediscovery-deprecation](../includes/ediscovery-subnamespace-deprecation.md)]
+
 Noncustodial data sources let you add data to a case without having to associate it to a custodian. To learn more, visit [Add noncustodial data sources to an Advanced eDiscovery case
 ](/microsoft-365/compliance/non-custodial-data-sources)
 

@@ -374,7 +374,7 @@
       ],
       "childNodes": [
         {
-          "name": "eDiscovery (preview)",
+          "name": "eDiscovery (deprecated)",
           "overview": "../../resources/ediscovery-ediscoveryapioverview.md",
           "resources": [
             "microsoft.graph.ediscovery.case",
