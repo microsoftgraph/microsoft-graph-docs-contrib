@@ -20,7 +20,7 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ## December 2025: New and generally available
 
-### Agents
+### Identity and access | Governance
 
 - Added the [targetagentidentitysponsorsorowners](/graph/api/resources/targetagentidentitysponsorsorowners) resource that represents either the sponsor or owner of an [agentIdentity](/graph/api/resources/agentidentity).
 
