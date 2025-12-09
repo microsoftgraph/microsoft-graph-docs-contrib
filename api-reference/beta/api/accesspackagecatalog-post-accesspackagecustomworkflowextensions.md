@@ -267,3 +267,77 @@ Content-Type: application/json
 }
 ```
 
+###  Example 3: Create a custom extension for use with an approval stage callback
+
+The following is an example of a access package assignment request custom workflow extension.
+
+#### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "create_accessPackageAssignmentRequestWorkflowExtension_direct_approval"
+}
+-->
+
+``` http
+POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageCatalogs/a9286c9c-7659-4b2e-ba44-4d1f2ce07746/accessPackagecustomWorkflowExtensions
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.accessPackageAssignmentRequestWorkflowExtension",
+  "displayName": "test_action_0124_email",
+  "description": "this is for graph testing only",
+  "endpointConfiguration": {
+    "@odata.type": "#microsoft.graph.logicAppTriggerEndpointConfiguration",
+    "subscriptionId": "38ab2ccc-3747-4567-b36b-9478f5602f0d",
+    "resourceGroupName": "test",
+    "logicAppWorkflowName": "elm-extension-email"
+  },
+  "authenticationConfiguration": {
+    "@odata.type": "#microsoft.graph.azureAdPopTokenAuthentication"
+  },
+  "callbackConfiguration": {
+    "@odata.type": "microsoft.graph.accessPackageRequestApprovalStageCallbackConfiguration",
+    "durationBeforeTimeout": "PT1H"
+  }
+}
+```
+
+#### Response
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.customCalloutExtension"
+}
+-->
+``` http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+   "value":{
+      "@odata.type":"#microsoft.graph.accessPackageAssignmentRequestWorkflowExtension",
+      "id":"5afcb385-d500-450c-bbf6-3b74a44403da",
+      "displayName":"test_action_0124_email",
+      "description":"this is for graph testing only",
+      "createdDateTime":"2022-01-24T21:48:57.15Z",
+      "lastModifiedDateTime":"2022-01-24T21:55:44.953Z",
+      "clientConfiguration":null,
+      "endpointConfiguration":{
+         "@odata.type":"#microsoft.graph.logicAppTriggerEndpointConfiguration",
+         "subscriptionId":"e8eb46ab-626d-451f-8668-9434e73cf43b",
+         "resourceGroupName":"test",
+         "logicAppWorkflowName":"elm-extension-email",
+         "url":"https://prod-31.eastus.logic.azure.com:443/workflows/8ccffea766ae48e680gd9a22d1549bbc/triggers/manual/paths/invoke?api-version=2016-10-01"
+      },
+      "authenticationConfiguration":{
+         "@odata.type":"#microsoft.graph.azureAdPopTokenAuthentication"
+      },
+      "callbackConfiguration":{
+         "@odata.type":"microsoft.graph.accessPackageRequestApprovalStageCallbackConfiguration",
+         "durationBeforeTimeout":"PT1H"
+      }
+   }
+} 
+```
