@@ -42,7 +42,7 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|calculationType|string|Specifies the calculation type to use.  Possible values are: `Recalculate`, `Full`, `FullRebuild`.|
+|calculationType|string|Specifies the calculation type to use.  The possible values are: `Recalculate`, `Full`, `FullRebuild`.|
 
 ## Response
 

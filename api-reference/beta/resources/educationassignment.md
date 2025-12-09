@@ -79,7 +79,7 @@ Inherits from [entity](../resources/entity.md).
 |moduleUrl|string| The URL of the module from which to access the **assignment**.|
 |notificationChannelUrl|String|Optional field to specify the URL of the [channel](channel.md) to post the **assignment** publish notification. If not specified or null, defaults to the `General` channel. This field only applies to **assignments** where the **assignTo** value is [educationAssignmentClassRecipient](educationassignmentclassrecipient.md). Updating the **notificationChannelUrl** isn't allowed after the **assignment** has been published.|
 |resourcesFolderUrl|string| Folder URL where all the file resources for this **assignment** are stored.|
-|status|string| Status of the **assignment**. You can't PATCH this value. Possible values are: `draft`, `scheduled`, `published`, `assigned`, `unknownFutureValue`, `inactive`. Use the `Prefer: include-unknown-enum-members` request header to get the following members in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `inactive`.|
+|status|string| Status of the **assignment**. You can't PATCH this value. The possible values are: `draft`, `scheduled`, `published`, `assigned`, `unknownFutureValue`, `inactive`. Use the `Prefer: include-unknown-enum-members` request header to get the following members in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `inactive`.|
 |webUrl|string| The deep link URL for the given **assignment**.|
 
 ## Relationships

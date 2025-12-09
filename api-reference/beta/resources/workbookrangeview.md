@@ -37,7 +37,7 @@ Represents a set of visible cells of the parent range.
 |numberFormat|Json|Excel's number format code for the given cell. Read-only.	|
 |rowCount|Int32|The number of visible rows. Read-only.	|
 |text|Json|The text values of the specified range. The Text value won't depend on the cell width. The # sign substitution that happens in Excel UI won't affect the text value returned by the API. Read-only.	|
-|valueTypes|Json|The type of data of each cell. Read-only. Possible values are: Unknown, Empty, String, Integer, Double, Boolean, Error.	|
+|valueTypes|Json|The type of data of each cell. Read-only. The possible values are: Unknown, Empty, String, Integer, Double, Boolean, Error.	|
 |values|Json|The raw values of the specified range view. The data returned could be of type string, number, or a Boolean. Cell that contains an error returns the error string.	|
 
 ## Relationships

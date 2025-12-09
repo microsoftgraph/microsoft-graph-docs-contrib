@@ -17,7 +17,7 @@ Metadata for the given object.
 ## Properties
 | Property       | Type    |Description|
 |:---------------|:--------|:----------|
-|key|synchronizationMetadata|Possible values are: `GalleryApplicationIdentifier`, `GalleryApplicationKey`, `IsOAuthEnabled`, `IsSynchronizationAgentAssignmentRequired`, `IsSynchronizationAgentRequired`, `IsSynchronizationInPreview`, `OAuthSettings`, `SynchronizationLearnMoreIbizaFwLink`, `ConfigurationFields`. |
+|key|synchronizationMetadata|The possible values are: `GalleryApplicationIdentifier`, `GalleryApplicationKey`, `IsOAuthEnabled`, `IsSynchronizationAgentAssignmentRequired`, `IsSynchronizationAgentRequired`, `IsSynchronizationInPreview`, `OAuthSettings`, `SynchronizationLearnMoreIbizaFwLink`, `ConfigurationFields`. |
 |value|String|Value of the metadata property.|
 
 ### Supported key-value pairs

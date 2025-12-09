@@ -18,11 +18,37 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 > [!IMPORTANT]
 > Features in _preview_ status are subject to change without notice, and might not be promoted to generally available (GA) status. Don't use preview features in production apps.
 
+## December 2025: New in preview only
+
+### Files
+
+Use the SharePoint cross-tenant migration task APIs in Microsoft Graph to enable organizations to manage the tasks during tenant-to-tenant migrations. For more information, see [sharePointMigrationTask](/graph/api/resources/sharepointmigrationtask?view=graph-rest-beta&preserve-view=true).
+
+### Identity and access | Governance
+
+- Added the [controlConfiguration](/graph/api/resources/controlconfiguration?view=graph-rest-beta&preserve-view=true) resource and the **controlConfigurations** relationship to the [entitlementManagement](/graph/api/resources/entitlementmanagement?view=graph-rest-beta&preserve-view=true) resource to represent the policies that control lifecycle and access to access packages across the organization.
+- Added the [entraIdProtectionRiskyUserApproval](/graph/api/resources/entraidprotectionriskyuserapproval?view=graph-rest-beta&preserve-view=true) resource to represent the approval configuration for risky users detected by Microsoft Entra ID Protection.
+- Added the [insiderRiskyUserApproval](/graph/api/resources/insiderriskyuserapproval?view=graph-rest-beta&preserve-view=true) resource to represent the approval configuration for risky users detected by Microsoft Purview Insider Risk Management.
+
+### Identity and access | Identity and sign-in
+
+Added the `microsoftRevokedSessions` value to the [riskDetail](/graph/api/resources/riskdetail?view=graph-rest-beta&preserve-view=true) enumeration to indicate that Microsoft revoked sessions. This enumeration member applies to the following Microsoft Entra Identity Protection resources: [riskDetection](/graph/api/resources/riskdetection?view=graph-rest-beta&preserve-view=true), [riskUserActivity](/graph/api/resources/riskuseractivity?view=graph-rest-beta&preserve-view=true), [riskyUser](/graph/api/resources/riskyuser?view=graph-rest-beta&preserve-view=true), and [signIn](/graph/api/resources/signin?view=graph-rest-beta&preserve-view=true).
+
+### Mail
+
+Use the [userConfiguration](/graph/api/resources/userconfiguration?view=graph-rest-beta&preserve-view=true) resource and its associated methods to manage user-specific settings, metadata, or application data tied to mailbox folders, using XML, binary, or dictionary formats.
+
 ## November 2025: New and generally available
 
 ### Backup storage
 
 The [driveItem: restore](/graph/api/driveitem-restore) method was expanded to enable restoring a **driveItem** deleted from a **fileStorageContainer** without mapping it to a **recycleBinItem**. This complements existing functionality in [recycleBinItem: restore](/graph/api/filestoragecontainer-restore-recyclebinitem) which continues to work as expected.
+
+### Calendars | Places
+
+- [Create](/graph/api/place-post), [get descendants](/graph/api/place-descendants), and [delete](/graph/api/place-delete) a [place](/graph/api/resources/place) and its derived objects (for example, [building](/graph/api/resources/building), [desk](/graph/api/resources/desk), [floor](/graph/api/resources/floor), or [section](/graph/api/resources/section)). These APIs enable scalable onboarding and management of the Places directory.
+- The new map APIs in Places enable applications with appropriate read or write permissions to interact with map feature objects. For more information, see [Working with the Places API in Microsoft Graph](/graph/api/resources/places-api-overview#map-feature-types).
+- Use the [checkInClaim](/graph/api/resources/checkinclaim) resource to represent the check-in status of an Outlook calendar [event](/graph/api/resources/event) booked at a place. For more information see, [Create checkInClaim](/graph/api/place-post-checkins) and [Get checkInClaim](/graph/api/checkinclaim-get).
 
 ### Files
 
@@ -40,16 +66,15 @@ Deleted security groups can now be restored from [deleted items](/graph/api/reso
 
 ### Identity and access | Governance
 
-- Added the [userInactivityTrigger](/graph/api/resources/identitygovernance-userinactivitytrigger?view=graph-rest-beta&preserve-view=true) resource to support automatic triggering of access reviews based on user inactivity.
-
-### Identity and access | Identity and sign-in
-
-- Added the [webApplicationFirewallProvider](/graph/api/resources/webapplicationfirewallprovider) and [webApplicationFirewallVerificationModel](/graph/api/resources/webapplicationfirewallverificationmodel) resource types and their associated APIs for configuring and managing Web Application Firewall providers and shield external-facing authentication endpoints from threats such as distributed denial of service (DDoS) attacks, OWASP Top-10 risks, malicious bots, and more. This feature is supported in Microsoft Entra External ID for external tenants.
-- Added the [fraudProtectionProvider](/graph/api/resources/fraudprotectionprovider) resource type and its associated APIs to enbale integration with third-party fraud protection providers for sign-up fraud defense. This feature is part of Microsoft Entra Identity Protection capabilities in Microsoft Entra External ID for external tenants.
+Added the [userInactivityTrigger](/graph/api/resources/userinactivitytrigger) resource to support automatic triggering of access reviews based on user inactivity.
 
 ### Teamwork and communications | Calls and online meetings
 
 Use resource-specific consent (RSC) permissions for virtual events. For more information, see [Virtual events town hall API use cases](/graph/cloud-communications-virtual-events-townhall-usecases#resource-specific-consent-rsc-for-virtual-events) and [Virtual events webinar API use cases](/graph/cloud-communications-virtual-events-webinar-usecases#resource-specific-consent-rsc-for-virtual-events).
+
+### Identity and access | Identity and sign-in
+
+- Added the [userInactivityTrigger](/graph/api/resources/identitygovernance-userinactivitytrigger?view=graph-rest-beta&preserve-view=true) resource to support automatic triggering of access reviews based on user inactivity.
 
 ## November 2025: New in preview only
 
@@ -74,6 +99,10 @@ Added the **riskFactors** and **riskScore** properties to the [applicationTempla
 - Removed the **placeId** property from the [place](/graph/api/resources/place?view=graph-rest-beta&preserve-view=true) resource and its derived types. Going forward only the following derived types of **place** have the **placeId** property: [room](/graph/api/resources/room?view=graph-rest-beta&preserve-view=true) and [workspace](/graph/api/resources/workspace?view=graph-rest-beta&preserve-view=true).
 - Removed the [offlinePlaceMode](/graph/api/resources/offlineplacemode?view=graph-rest-beta&preserve-view=true) resource in favor of the [unavailablePlaceMode](/graph/api/resources/unavailableplacemode?view=graph-rest-beta&preserve-view=true) resource.
 
+### Devices and app management | Cloud PC
+
+Removed the **osArchitecture** property from the [cloudPcDeviceImage](/graph/api/resources/cloudpcdeviceimage?view=graph-rest-beta&preserve-view=true) and [cloudPcGalleryImage](/graph/api/resources/cloudpcgalleryimage?view=graph-rest-beta&preserve-view=true) resources.
+
 ### Files
 
 - Use the SharePoint cross-tenant migration APIs in Microsoft Graph to enable organizations to manage identity mappings during tenant-to-tenant migrations. For more information, see [sharePointUserIdentityMapping](/graph/api/resources/sharePointUserIdentityMapping?view=graph-rest-beta&preserve-view=true) and [sharePointGroupIdentityMapping](/graph/api/resources/sharePointGroupIdentityMapping?view=graph-rest-beta&preserve-view=true).
@@ -83,6 +112,11 @@ Added the **riskFactors** and **riskScore** properties to the [applicationTempla
   - [driveItem: lockOrUnlockRecord](/graph/api/driveitem-lockorunlockrecord?view=graph-rest-beta&preserve-view=true)
   - [driveItem: removeRetentionLabel](/graph/api/driveitem-removeretentionlabel?view=graph-rest-beta&preserve-view=true)
   - [driveItem: setRetentionLabel](/graph/api/driveitem-setretentionlabel?view=graph-rest-beta&preserve-view=true)
+
+### Identity and access | Directory management
+
+- Added the [b2bManagementPolicy](/graph/api/resources/b2bmanagementpolicy?view=graph-rest-beta&preserve-view=true) resource and the **b2bManagementPolicies** relationship to the [policyRoot](/graph/api/resources/policyroot?view=graph-rest-beta&preserve-view=true) resource to manage Microsoft Entra B2B features in Microsoft Entra External ID for workforce tenants.
+- Added the [onPremAuthenticationPolicy](/graph/api/resources/onpremauthenticationpolicy?view=graph-rest-beta&preserve-view=true) resource and the **onPremAuthenticationPolicies** relationship to the [policyRoot](/graph/api/resources/policyroot?view=graph-rest-beta&preserve-view=true) resource to manage how authentication requests from on-premises environments are handled for users and applications.
 
 ### Identity and access | Governance
 
@@ -151,14 +185,6 @@ Use the **hasProtection** property on [sensitivityLabel](/graph/api/resources/se
 
 - [Get](/graph/api/plannerplan-getusagerights?view=graph-rest-beta&preserve-view=true) the usage rights for a specific [plan](/graph/api/resources/plannerplan?view=graph-rest-beta&preserve-view=true) based on its sensitivity label assignment and the requesting user's permissions.
 - Use the **contentSensitivityLabelAssignment** property on [plannerPlan](/graph/api/resources/plannerplan?view=graph-rest-beta&preserve-view=true) to get or set the sensitivity label assignment for a plan.
-
-### Teamwork and communications | Presence
-
-Use the following new endpoints to enable the management of work location for a user:
-- [Clear](/graph/api/presence-clearautomaticlocation?view=graph-rest-beta&preserve-view=true) the automatic work location value for a user.
-- [Clear](/graph/api/presence-clearlocation?view=graph-rest-beta&preserve-view=true) the work location signals for a user, including both the manual and automatic layers for the current date.
-- [Update](/graph/api/presence-setautomaticlocation?view=graph-rest-beta&preserve-view=true) the automatic work location for a user.
-- [Set](/graph/api/presence-setmanuallocation?view=graph-rest-beta&preserve-view=true) the user's manual work location signal.
 
 ### Teamwork and communications | Calls and online meetings
 

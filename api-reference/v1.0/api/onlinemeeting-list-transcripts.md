@@ -1,5 +1,5 @@
 ---
-title: "List transcripts-online meetings"
+title: "List transcripts"
 description: "Retrieve the list of transcripts associated with a Microsoft Teams online meeting."
 author: "v-sdhakshina"
 ms.localizationpriority: medium
@@ -201,5 +201,6 @@ Content-Type: application/json
     ]
 }
 ```
+
 
 </details>

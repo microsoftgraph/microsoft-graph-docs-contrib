@@ -19,8 +19,8 @@ Represents the history for a subject rights request.
 |:---|:---|:---|
 |changedBy|[identitySet](../resources/identityset.md)|Identity of the user who changed the  subject rights request.|
 |eventDateTime|DateTimeOffset|Data and time when the entity was changed.|
-|stage|subjectRightsRequestStage|The stage when the entity was changed. Possible values are: `contentRetrieval`, `contentReview`, `generateReport`, `contentDeletion`, `caseResolved`, `unknownFutureValue`, `approval`. Use the `Prefer: include-unknown-enum-members` request header to get the following members in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `approval`.|
-|stageStatus|subjectRightsRequestStageStatus|The status of the stage when the entity was changed. Possible values are: `notStarted`, `current`, `completed`, `failed`, `unknownFutureValue`.|
+|stage|[subjectRightsRequestStage](../resources/subjectrightsrequeststage.md)|The stage when the entity was changed. |
+|stageStatus|subjectRightsRequestStageStatus|The status of the stage when the entity was changed. The possible values are: `notStarted`, `current`, `completed`, `failed`, `unknownFutureValue`.|
 |type|String|Type of history.|
 
 ## Relationships

@@ -316,9 +316,9 @@ items:
     href: ../../resources/section.md
   - name: Workspace
     href: ../../resources/workspace.md
-  - name: Check-in claim (preview)
+  - name: Check-in claim
     items:
-    - name: Check-in claim (preview)
+    - name: Check-in claim
       href: ../../resources/checkinclaim.md
     - name: Create
       href: ../../api/place-post-checkins.md

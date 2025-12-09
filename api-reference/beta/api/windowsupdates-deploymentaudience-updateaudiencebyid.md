@@ -58,7 +58,7 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|memberEntityType|String|The full type of the updatable assets. Possible values are: `#microsoft.graph.windowsUpdates.azureADDevice`, `#microsoft.graph.windowsUpdates.updatableAssetGroup`.|
+|memberEntityType|String|The full type of the updatable assets. The possible values are: `#microsoft.graph.windowsUpdates.azureADDevice`, `#microsoft.graph.windowsUpdates.updatableAssetGroup`.|
 |addMembers|String collection|List of identifiers corresponding to the updatable assets to add as members of the deployment audience.|
 |removeMembers|String collection|List of identifiers corresponding to the updatable assets to remove as members of the deployment audience.|
 |addExclusions|String collection|List of identifiers corresponding to the updatable assets to add as exclusions from the deployment audience.|

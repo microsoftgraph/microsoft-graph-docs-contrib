@@ -51,7 +51,7 @@ The following table shows the parameters that can be used with this action.
 |Parameter|Type|Description|
 |:---|:---|:---|
 |ids|String collection|List of identifiers corresponding to the [updatableAsset](../resources/windowsupdates-updatableasset.md) resources to add as members of the **updatableAssetGroup**.|
-|memberEntityType|String|The full type of the **updatableAsset** resources. Possible values are: `#microsoft.graph.windowsUpdates.azureADDevice`.|
+|memberEntityType|String|The full type of the **updatableAsset** resources. The possible values are: `#microsoft.graph.windowsUpdates.azureADDevice`.|
 
 ## Response
 

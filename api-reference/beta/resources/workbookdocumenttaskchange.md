@@ -40,7 +40,7 @@ Inherits from [entity](../resources/entity.md).
 |priority|Int32|An integer value from `0` to `10` that represents the priority of the task. A lower value indicates a higher priority. `5` indicates the default priority if not set. Only present when the **type** property is `setPriority`. Nullable.|
 |startDateTime|DateTimeOffset|The start date and time for the task. Only present when the **type** property is `setSchedule`. Nullable. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |title|String|The title of the task. Only present when the **type** property is `setTitle`. Nullable.|
-|type|String|The type of the change history. Possible values are: `create`, `assign`, `unassign`, `unassignAll`, `setPriority`, `setTitle`, `setPercentComplete`, `setSchedule`, `remove`, `restore`, `undo`. |
+|type|String|The type of the change history. The possible values are: `create`, `assign`, `unassign`, `unassignAll`, `setPriority`, `setTitle`, `setPercentComplete`, `setSchedule`, `remove`, `restore`, `undo`. |
 |undoChangeId|String| The ID of the **workbookDocumentTaskChange** that was undone for the `undo` change action. Only exists on an undo change history. Nullable.|
 
 ## Relationships

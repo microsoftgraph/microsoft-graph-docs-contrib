@@ -31,7 +31,7 @@ Represents a stored BitLocker key that contains the actual recovery key via the 
 |deviceId|String|ID of the device the BitLocker key is originally backed up from.|
 |id|String|The unique identifier for the BitLocker key.|
 |key|String|The BitLocker recovery key.|
-|volumeType|volumeType|Indicates the type of volume the BitLocker key is associated with. Possible values are: `operatingSystemVolume`, `fixedDataVolume`, `removableDataVolume`, `unknownFutureValue`.|
+|volumeType|volumeType|Indicates the type of volume the BitLocker key is associated with. The possible values are: `operatingSystemVolume`, `fixedDataVolume`, `removableDataVolume`, `unknownFutureValue`.|
 
 ## Relationships
 None.

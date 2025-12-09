@@ -1,6 +1,6 @@
 ---
 title: "Update federatedIdentityCredential"
-description: "Update the properties of a federatedIdentityCredential object."
+description: "Update the properties of a federatedIdentityCredential object assigned to an application."
 author: "nickludwig"
 ms.localizationpriority: medium
 ms.subservice: "entra-applications"
@@ -12,7 +12,7 @@ ms.date: 04/04/2024
 Namespace: microsoft.graph
 
 
-Update the properties of a [federatedIdentityCredential](../resources/federatedidentitycredential.md) object.
+Update the properties of a [federatedIdentityCredential](../resources/federatedidentitycredential.md) object assigned to an [application](../resources/application.md).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -32,8 +32,11 @@ You can also address the federated identity credential with either its **id** or
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /applications/{id}/federatedIdentityCredentials/{federatedIdentityCredentialId}
+
 PATCH /applications/{id}/federatedIdentityCredentials/{federatedIdentityCredentialName}
+
 PATCH /applications(appId='{appId}')/federatedIdentityCredentials/{federatedIdentityCredentialId}
+
 PATCH /applications(appId='{appId}')/federatedIdentityCredentials/{federatedIdentityCredentialName}
 ```
 
