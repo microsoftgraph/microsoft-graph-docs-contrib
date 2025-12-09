@@ -267,7 +267,7 @@ Content-Type: application/json
 }
 ```
 
-###  Example 3: Create a custom extension for use with an approval stage callback
+### Example 3: Create a custom extension for use with an approval stage callback
 
 The following is an example of a access package assignment request custom workflow extension.
 
