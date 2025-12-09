@@ -22,7 +22,7 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ### Identity and access | Governance
 
-- Added the [targetagentidentitysponsorsorowners](/graph/api/resources/targetagentidentitysponsorsorowners) resource that represents either the sponsor or owner of an [agentIdentity](/graph/api/resources/agentidentity).
+Added the [targetAgentIdentitySponsorsOrOwners](/graph/api/resources/targetagentidentitysponsorsorowners) resource. This resource type enables sponsors of an [agentIdentity](/graph/api/resources/agentidentity) to be supported in an [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md), integrating Microsoft Entra Agent ID with Microsoft Entra Entitlement Management as part of governance capabilities for agents.
 
 ## December 2025: New in preview only
 
