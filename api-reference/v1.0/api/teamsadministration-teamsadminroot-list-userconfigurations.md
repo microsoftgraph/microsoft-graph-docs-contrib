@@ -87,7 +87,7 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/teams/userConfigurations",
+      "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#admin/teams/userConfigurations",
       "id": "5c802b19-3600-83f1-1767-7b9edc7f38ab",
       "userPrincipalName": "AdeleV@contoso.com",
       "tenantId": "87d349ed-44d7-43e1-9a83-5f2406dee5bd",
